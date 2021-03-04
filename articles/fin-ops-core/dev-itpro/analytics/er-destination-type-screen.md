@@ -38,3 +38,6 @@ Hvis du setter **Aktivert** til **Ja**, opprettes det en forhåndsvisning av utd
 
 - [Oversikt over elektronisk rapportering (ER)](general-electronic-reporting.md)
 - [Mål for elektronisk rapportering (ER)](electronic-reporting-destinations.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -48,3 +48,6 @@ Du kan sette en produksjonsordre til **Ferdigmeld** ved hjelp av standard oppdat
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

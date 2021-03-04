@@ -190,3 +190,6 @@ Nå kan du bruke dataenhetene **Enhet for ID for Common Data Service for produkt
 ## <a name="related-topic"></a>Relaterte emne
 
 [Søke etter produkter og produktvarianter under ordreregistrering](search-products-product-variants.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

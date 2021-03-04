@@ -59,3 +59,6 @@ Deretter aktiverer du **Behandling av teknisk endring**-konfigurasjonsnøkkelen 
 1. Gå til **Systemadministrasjon \> Oppsett \> Lisenskonfigurasjon**.
 1. Utvid **Handel**-noden, og velg deretter avmerkingsboksen **Behandling av teknisk endring**.
 1. Deaktiver vedlikeholdsmodus, som beskrevet i [Vedlikeholdsmodus](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -68,3 +68,6 @@ Produktene som selges av organisasjon din, kan leveres i ulike varianter differe
     **Totaler**-siden viser detaljer om hele ordren. Dette inkluderer delsumbeløpet, som er summen av alle linjenettobeløp justert for eventuelle linjerabatter, det totale fakturabeløpet, som er en delsum som er justert for eventuell rabatt på ordrenivå, tillegg, merverdiavgift, kundens kredittgrense og mer. Fakturabeløpet er beløpet som skal vises på kundens fakturadokument.  
     
 3. Velg **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

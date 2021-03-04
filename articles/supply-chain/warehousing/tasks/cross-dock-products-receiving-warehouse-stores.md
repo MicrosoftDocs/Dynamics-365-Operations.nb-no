@@ -49,3 +49,6 @@ Denne prosedyren hjelper deg gjennom trinnene med å opprette og behandle en dir
 15. Finn og velg et lager som mottok produktene, i listen.
 16. Klikk Ordre for å vise ordrer som ble opprettet for det valgte lageret.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

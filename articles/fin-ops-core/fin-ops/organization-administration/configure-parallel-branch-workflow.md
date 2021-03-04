@@ -50,3 +50,6 @@ Følg denne fremgangsmåten for å utforme og konfigurere elementene for en para
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Oversikt over å opprette arbeidsflyter](create-workflow.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

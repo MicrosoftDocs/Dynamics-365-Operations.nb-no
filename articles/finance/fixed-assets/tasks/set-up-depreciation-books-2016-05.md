@@ -55,3 +55,6 @@ Denne fremgangsmåten går gjennom prosessen med å opprette et nytt avskrivning
 6. Angi et tall i Levetid-feltet.
     * Legg merke til at verdien i feltet Avskrivningsperioder beregnes etter at levetiden er angitt.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -183,3 +183,6 @@ En godkjenningsprosess består av godkjenningstrinn. Fullfør fremgangsmåten ne
 1. Dobbeltklikk godkjenningsprosessen i redigeringsprogrammet for arbeidsflyt. Redigeringsprogrammet for arbeidsflyt viser trinnene i godkjenningsprosessen.
 2. Hvis du vil legge til et godkjenningstrinn, kan du dra trinnet fra **Arbeidsflytelementer** området til lerretet.
 3. Hvis du vil konfigurere et godkjenningstrinn, kan du se [Konfigurere godkjenningstrinn i en arbeidsflyt](configure-approval-step-workflow.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

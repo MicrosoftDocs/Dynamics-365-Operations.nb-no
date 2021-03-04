@@ -87,3 +87,6 @@ Resultatet er en planlagt bestilling på 25 stk. (= 25 stk. &minus; 0 stk.) for 
 [Vise planhistorikk og planleggingslogger](plan-history-logs.md)
 
 [Annullere en planleggingsjobb](cancel-planning-job.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

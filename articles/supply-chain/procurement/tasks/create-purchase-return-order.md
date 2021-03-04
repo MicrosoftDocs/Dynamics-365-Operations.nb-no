@@ -68,3 +68,6 @@ Denne fremgangsmåten viser hvordan du oppretter en innkjøpsreturordre ved hjel
 4. Skriv inn en verdi i feltet **Produktkvittering**. Dette feltet brukes til å angi en referanse som skal brukes som bilag for produktkvitteringsjournalen.  
 5. Klikk **OK**. Varene er nå registrert som mottatt som sendt i innkjøpsreturordren, og en produktkvitteringsjournal er opprettet. Du kan bruke handlingen Produktmottak for å vise journaler som er opprettet med bestillingen, og se hva som er mottatt eller returnert, og når.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

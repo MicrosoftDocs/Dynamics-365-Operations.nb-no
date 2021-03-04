@@ -38,3 +38,6 @@ Nummerserier brukes til å generere lesbare, unike IDer for hoveddataposter og t
 4. Velg **Neste**.
 5. Velg **Fullfør**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -42,3 +42,6 @@ Merverdiavgiften beregnes og posteres til hovedkontoer som er angitt i finanspos
 11. Velg hovedkontoen for å postere kontorabatt for **mva-koder** knyttet til denne **finansposteringsgruppen**, i feltet **Kundekontantrabatt**. Dette er valgfritt, og hvis ingen kontoer angis, brukes hovedkontoen i **kontantrabattkoder**. Det kan være nyttig å bruke ulike kontoer per **finansposteringsgruppe** hvis du bruker alternativet Tilbakefør merverdiavgift på kontantrabatt på **mva-grupper**.  
 12. Klikk **Lagre**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -60,3 +60,6 @@ Merk **Brukertype**-egenskapen for brukeren. Hvis **Brukertype** er tom, for eks
 ```
 PS C:\>Set-AzureADUser -ObjectId "testUpn@tenant.com" -UserType Member
 ```
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

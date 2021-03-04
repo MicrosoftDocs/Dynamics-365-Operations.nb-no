@@ -69,3 +69,6 @@ Ordren er lagret, men **Ikke behandle**-flagget er angitt på den. Dette flagget
 Hvis du vil vise og behandle ordrene som er på vent for svindelgjennomgang, kan du gå til **Retail og Commerce** \> **Kunder** \> **Ordresperrer**. På siden **Ordresperrer** velger du en oppføring i listen, og deretter klikker du på **Ordresperre** for å se en mer detaljert visning som inneholder informasjon om årsaken til at sperringen. I hurtigkategorien **Svindeldetaljer** kan du vise de systematiske svindelkriteriene som var et treff for bestillingen, og resultatene som ble brukt. Hvis ordren ble satt på vent manuelt, kan du gå gjennom eventuelle kommentarer som ble angitt av brukeren som satte ordren på vent, ved å se på **Svindelmerknader**-delen på **Notater**-hurtigkategorien.
 
 Du finner mer informasjon om hvordan du arbeider med sperreordrer, ved å se [Ordresperrer](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-order-holds).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

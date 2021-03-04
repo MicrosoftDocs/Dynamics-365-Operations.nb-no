@@ -101,3 +101,6 @@ Muligheten for å spore ansattes fravær og forstå hvordan fravær beregnes, hj
 ### <a name="email-support-for-alerts"></a>E-poststøtte for varsler
 
 I platform update 26 for Finance and Operations kan brukere opprette varslingsregler som automatisk leverer e-postmeldinger til kontakter når varslinger utløses av en hendelse.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

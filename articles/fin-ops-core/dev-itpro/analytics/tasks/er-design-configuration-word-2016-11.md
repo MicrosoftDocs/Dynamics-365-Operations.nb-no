@@ -99,3 +99,6 @@ For øyeblikket brukes Excel-dokumentet som en mal til å generere utdataene i O
 16. Klikk **OK**.
 17. Klikk **OK**. Analyser de genererte utdataene. Legg merke til at de opprettede utdataene vises i Word-format og inneholder detaljer for de behandlede betalingene.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

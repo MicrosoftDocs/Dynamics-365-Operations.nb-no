@@ -56,3 +56,6 @@ LCS-installasjonen er nå fullført. Det neste trinnet er å [definere scenarioe
 2. I LCS går du til detaljene for Supply Chain Management-miljøet.
 3. Bla til delen **Miljøtillegg**.
 4. Velg **Avinstaller** for tillegget for IoT-intelligens.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -52,3 +52,6 @@ Systemet avgjør hvilken gren som skal brukes ved evaluering av det sendte dokum
     2. Velg en post i **Valider betingelse**-området i skjemaet.
     3. Klikk **Test**. Systemet evaluerer posten for å finne ut om den oppfyller betingelsene du definerte.
     4. Klikk **OK** eller **Avbryt** for å gå tilbake til **Egenskaper**-skjemaet.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

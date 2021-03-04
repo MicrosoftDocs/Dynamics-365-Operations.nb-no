@@ -62,3 +62,6 @@ Arbeidere kan utføre ulike typer registreringer i produksjonsutførelse for arb
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

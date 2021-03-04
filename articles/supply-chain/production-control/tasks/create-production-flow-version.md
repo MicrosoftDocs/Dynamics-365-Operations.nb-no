@@ -64,3 +64,6 @@ Denne prosedyren fokuserer på å opprette en ny produksjonsflytversjon. For den
     * Angi antall dager i perioden for faktisk syklustid. Perioden for faktisk syklustid er antall dager jobber aggregeres fra det faktiske minuttet bakover for å beregne den faktiske syklustiden. Verdien kan endres når som helst, og brukes bare for beregning av de faktiske syklustider.  
 13. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

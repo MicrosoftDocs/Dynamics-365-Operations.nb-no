@@ -43,3 +43,6 @@ Dette emnet beskriver hvordan du oppretter en postmal slik at verdiene som bruke
 13. Velg **OK**.
 14. Velg **Lukk**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

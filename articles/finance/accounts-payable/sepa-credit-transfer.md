@@ -126,3 +126,6 @@ Når du genererer betalinger, genereres betalingsfilen, og du blir bedt om å la
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

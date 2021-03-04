@@ -94,3 +94,6 @@ En satsvis jobb rydder regelmessig oppføringer i referansetabellen for enheter 
 1. I handlingsruten velger du **Rydd opp klientkonfigurasjoner**.
 1. I dialogboksen **Rydd opp klientkonfigurasjon** angir du **Antall dager**-feltet til antallet dager uten aktivitet (før i dag) som skal vurderes. Du vil fjerne alle konfigurasjoner og påloggingsoppføringer for enheter som ikke er aktive i den perioden.
 1. Velg **OK** for å rydde opp i de relevante konfigurasjonene, basert på innstillingen for **Antall dager**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

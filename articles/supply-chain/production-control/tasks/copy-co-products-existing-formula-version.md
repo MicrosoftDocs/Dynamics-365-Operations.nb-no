@@ -54,3 +54,6 @@ Denne prosedyren viser hvordan du kopierer koprodukter fra en eksisterende forme
 6. Klikk OK.
 7. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

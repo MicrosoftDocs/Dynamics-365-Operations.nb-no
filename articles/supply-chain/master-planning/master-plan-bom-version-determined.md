@@ -44,3 +44,6 @@ En gyldig stykklisteversjon må oppfylle de obligatoriske kriteriene for dato og
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

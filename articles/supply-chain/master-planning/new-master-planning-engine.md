@@ -116,3 +116,6 @@ Jeg bruker versjon 10.0.16 eller nyere, og jeg får følgende feilmelding når j
 > Fyll ut følgende spørreskjema for å komme i gang og hvis det er relevant for forespørselsunntak fra overføring til planleggingsoptimalisering.
 
 **Svar:** Nei, hovedplanlegging er ikke blokkert. Hovedplanleggingskjøringen er fullført, og du kan bruke resultatet på vanlig måte. Hvis du vil unngå å motta denne feilmeldingen under fremtidige hovedplanleggingskjøringer, må du imidlertid enten overføre til planleggingsoptimalisering umiddelbart eller be om et unntak ved hjelp av koblingen i feilmeldingen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

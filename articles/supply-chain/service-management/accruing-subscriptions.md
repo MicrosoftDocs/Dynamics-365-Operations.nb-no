@@ -152,3 +152,6 @@ Du kan styre antallet finanstransaksjoner som opprettes når du posterer påløp
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

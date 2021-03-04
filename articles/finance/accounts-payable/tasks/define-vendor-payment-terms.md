@@ -47,3 +47,6 @@ Dette emnet forklarer hvordan du konfigurerer betalingsbetingelser for leverand�
 16. Angi hovedkontoen som kontantrabatten skal bokføres på for kundefakturaer, og angi deretter hovedkontoen som kontantrabatten skal bokføres på for leverandørfakturaer. Hvis **Motkontoer for rabatt** er satt til **Bruk hovedkonto for leverandørrabatt**, brukes hovedkontoen. Hvis alternativet er satt til **Kontoer på fakturalinjene**, posteres kontantrabatten til anleggsmiddel/utgiftshovedkontoene på fakturalinjene.  
 17. Velg **Lagre**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

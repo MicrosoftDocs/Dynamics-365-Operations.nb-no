@@ -239,3 +239,6 @@ Følg denne fremgangsmåten for å kontrollere om arbeidere bør gjenbruke et ek
 
 > [!NOTE]
 > For å konfigurere etiketten går du til **Lagerstyring \> Oppsett \> Dokumentruting \> Dokumentruting**. Hvis du vil ha mer informasjon, kan du se [Aktivere utskrift av nummerskiltetiketter](../warehousing/tasks/license-plate-label-printing.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -218,3 +218,6 @@ Arbeidsunntak kontrollerer virkemåten til plukking med mangler. Følg disse tri
 1. Velg **Plukk med mangler**.
 1. Velg arbeidsunntakskoden du opprettet for dette scenariet.
 1. Hvis du valgte det riktige unntaket, vil avmerkingsboksen **Annuller og skriv ut på nytt** være tilgjengelig. Merk av i denne boksen og bekreft. Ved bekreftelse blir etikettrullsekvensen som identifiseres av feltet **Etikettversjons-ID**, beregnet på nytt basert på det endrede arbeidslinjeantallet. Den skrives deretter ut på nytt på den angitte skriveren.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -88,3 +88,6 @@ Videoen [Slik bruker du varsler til å overvåke filtrerte data](https://youtu.b
 Videoen [Alternativer for varslingsregler](https://youtu.be/cpzimwOjicM) (vises over) er inkludert i [Finance and Operations-spillelisten](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) som er tilgjengelig på YouTube.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

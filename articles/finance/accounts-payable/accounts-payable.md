@@ -144,3 +144,6 @@ Se instruksjonsvideoene som nå er tilgjengelige på [Microsoft Dynamics 365 You
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

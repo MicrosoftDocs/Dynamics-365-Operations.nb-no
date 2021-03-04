@@ -111,3 +111,6 @@ Produksjonsplanleggeren planlegger materialbehovet for varer som er koprodukter 
 19. Velg Nei i feltet Deaktiver alle planleggingsprosesser.
 20. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

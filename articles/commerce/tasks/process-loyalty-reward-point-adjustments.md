@@ -50,3 +50,6 @@ Denne prosedyren beskriver hvordan du slår opp fordelskortinformasjon og juster
 15. Klikk Korttransaksjoner.
 16. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

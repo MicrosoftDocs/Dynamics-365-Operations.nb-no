@@ -53,3 +53,6 @@ Du kan oppdatere tilordningsdefinisjonene for en kostnadselementdimensjon når s
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

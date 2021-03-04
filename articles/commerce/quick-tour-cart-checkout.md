@@ -107,3 +107,6 @@ Hvis du vil ha mer informasjon om hvordan du redigerer en kasseside, se [Legge t
 [Oversikt over produktdetaljsider](quick-tour-pdp.md)
 
 [Oversikt over kontobehandlingssider](quick-tour-account-management.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

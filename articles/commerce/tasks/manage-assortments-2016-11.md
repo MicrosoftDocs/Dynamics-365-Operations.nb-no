@@ -55,3 +55,6 @@ Denne fremgangsmåten viser hvordan du oppretter og publiserer et nytt produktso
 1. Klikk Publiser.
 2. Klikk Ja.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

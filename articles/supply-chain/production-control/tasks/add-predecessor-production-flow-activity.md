@@ -52,3 +52,6 @@ Hvis du vil ha mer informasjon, kan du se hvitboken Produksjonsflyter og -aktivi
     * Standard syklustidsforhold for en aktivitetsrelasjon er 1. Dette forutsetter at begge aktivitetene kjører med samme hastighet eller takttid. Hvis den foregående aktiviteten kjører med et høyere tempo (lavere takttid), må forholdet være lavere enn 1, og hvis den foregående aktiviteten går langsommere (høyere takttid), er syklustidsforholdet større enn 1.  
 5. Klikk OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

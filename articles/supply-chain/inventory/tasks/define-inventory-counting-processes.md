@@ -85,3 +85,6 @@ Dette emnet beskriver konfigurasjonen av grunnleggende lageropptellingsprosesser
 5. Velg en opptellingsgruppe i rullegardinmenyen for **Opptellingsgruppe**. Du kan velge en bestemt opptellingsgruppe som skal gjelde for varen i det bestemte lageret som du har valgt. Når tellingen blir utført i dette lageret, overstyrer denne opptellingspolicyen den generelle opptellingspolicyen for varen.  
 6. Velg **Lagre**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -256,3 +256,6 @@ Her er et par ting du bør vurdere når du bruker DOM-funksjonen:
 - DOM ser for øyeblikket bare på ordrer som er opprettet fra handelskanaler. Salgsordrer blir identifisert som salgsordrer når alternativet **Handelssalg** er satt til **Ja**.
 - Microsoft har ikke testet DOM med avanserte lagerstyringsfunksjoner. Kunder og partnere må være forsiktige med å fastslå om DOM er kompatibel med de avanserte funksjonene og prosessene for lagerstyring som er relevante for dem.
 - DOM er tilgjengelig bare på skyversjonen av Commerce. Funksjonen støttes ikke i lokale distribusjoner.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

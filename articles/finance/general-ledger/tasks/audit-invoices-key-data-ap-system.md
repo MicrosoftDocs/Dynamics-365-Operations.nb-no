@@ -62,3 +62,6 @@ Denne fremgangsmåten bruker demonstrasjonsfirmaet USMF. Rollen regnskapssjef le
 9. Klikk **Gå gjennom** i handlingsruten.
 10. Klikk **Samsvarende detaljer**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

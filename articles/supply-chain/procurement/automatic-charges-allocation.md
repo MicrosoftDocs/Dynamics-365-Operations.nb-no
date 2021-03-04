@@ -177,3 +177,6 @@ Følgende fremgangsmåte viser hvordan du tildeler gebyrer på hodenivå til en 
         > Når du arbeider med rutenettet **Velg linjer som skal utelates fra tildeling**, må du huske å la rutenettet være åpent til du velger **Tildel**. Hvis du lukker rutenettet før du velger **Tildel**, vil innstillingene i rutenettet gå tapt. Tillegg vil derfor bli fordelt basert på kriteriene du har definert tidligere.
 
 1. Velg **Tildel** for å bruke innstillingene og lukke dialogboksen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

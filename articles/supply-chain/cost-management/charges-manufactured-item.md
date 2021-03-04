@@ -40,3 +40,6 @@ Tilleggene for en produsert vare inkluderes alltid i varens enhetskostnad til st
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -46,3 +46,6 @@ Fremgangsmåten bruker regnskapsførerrollen og demodataene for den juridiske en
     * Angi **Øker levetiden** til **Ja** hvis tillegget øker levetiden for anleggsmidlet.  
     * Dette feltet er kun veiledende. Hvis du vil øke levetiden, kan du endre levetiden for verdimodeller og/eller avskrivningstablåene for aktivaet.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

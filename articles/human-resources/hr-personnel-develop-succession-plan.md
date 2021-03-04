@@ -60,3 +60,6 @@ Siden organisasjonen din vokser og du vurderer vellykket planlegging, ønsker du
 28. Klikk Rapport.
     * Rapporten viser de beste forslagene øverst i rapporten.  Du kan se at det vises et gapelement.  Dette er forskjellen mellom nivået som er oppført i kompetansesøket, og kompetansenivået som er tilordnet til personen.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

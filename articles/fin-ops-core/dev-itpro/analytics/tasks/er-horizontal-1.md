@@ -148,3 +148,6 @@ Denne fremgangsmåten gjelder for en funksjon som ble lagt til i Dynamics 365 fo
 49. Klikk Lagre.
 50. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

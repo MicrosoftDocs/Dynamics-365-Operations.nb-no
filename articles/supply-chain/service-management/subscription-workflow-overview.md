@@ -57,3 +57,6 @@ På slutten av hver måned kan én måneds inntekt avsettes fra kundens abonneme
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

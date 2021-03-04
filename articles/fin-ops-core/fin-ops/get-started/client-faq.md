@@ -54,3 +54,6 @@ Alternativet **Vis detaljer** er tilgjengelig på ulike måter:
 
 - Hvis en kontroll har **Vis detaljer**-funksjonalitet, og hvis kontrollen har en verdi, vises denne verdien som en hyperkobling. Du kan klikke hyperkoblingen for å åpne en side som inneholder flere detaljer.
 - **Vis detaljer** er også et alternativ på hurtigmenyer. Hvis du vil ha mer informasjon om når hurtigmenyer vises når du høyreklikker, kan du se den forrige delen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

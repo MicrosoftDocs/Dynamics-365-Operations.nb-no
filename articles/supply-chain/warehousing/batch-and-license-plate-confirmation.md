@@ -48,3 +48,6 @@ Du kan konfigurere parti- og nummerskiltbekreftelse fra menyelementene på mobil
 
 1. Gå til arbeidsbekreftelsesoppsettet fra menyelementene på mobilenheten.  
 1. Velg alternativet for partibekreftelse eller nummerskiltbekreftelse. Begge alternativene er tilgjengelige for arbeidstypeplukk der automatisk bekreftelse ikke er aktivert.  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -119,3 +119,6 @@ Hvis du vil gjøre det lettere og raskere å angi hvilke handlinger som er knytt
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

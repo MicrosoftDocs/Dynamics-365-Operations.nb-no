@@ -69,3 +69,6 @@ Når initialiseringen er fullført, må du konfigurere tilleggsdata for handel. 
 - Handelskanaler
 - Kasser og enheter
 - Assortement
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -78,3 +78,6 @@ Følg disse trinnene for å legge til åpningstid på utskrevne salgsstedskvitte
 Salgsstedskvitteringer inneholder nå åpningstid. Hvis helligdager er inkludert i malen, vises de på kvitteringen.
 
 ![Kvitteringseksempel](../dev-itpro/media/Storehours3.png "Kvitteringseksempel")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

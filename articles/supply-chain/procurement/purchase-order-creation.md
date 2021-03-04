@@ -96,3 +96,6 @@ Det kan hende du må forsinke fullføringen av en bestilling. Du vil for eksempe
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

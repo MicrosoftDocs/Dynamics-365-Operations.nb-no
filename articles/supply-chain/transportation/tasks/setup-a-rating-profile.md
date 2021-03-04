@@ -61,3 +61,6 @@ På siden **Vurderingsprofiler** kan du se gjennom alle tilgjengelige vurderings
 
 > [!NOTE]
 > Profiler som opprettes på **Transportører**-siden, vises også på **Vurderingsprofiler**-siden.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -59,3 +59,6 @@ Denne veiledningen vil hjelpe deg med å sette opp en definisjon av aldersfordel
 2. Velg en kunde med en saldo.
 3. Vis faktaboksområdet **Aldersfordeling** for å vise de aldersfordelte saldoene. Definisjonen av aldersfordelingsperiode for faktaboksen hentes fra standarddefinisjonen av aldersfordelingsperiode angitt i parameterne. Du kan endre den ved hjelp av Samle inn-menyen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

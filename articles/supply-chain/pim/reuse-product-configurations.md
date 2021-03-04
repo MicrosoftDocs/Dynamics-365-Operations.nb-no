@@ -45,3 +45,6 @@ Når du tilbakestiller gjenbruk av konfigurasjon, tas det ikke lenger hensyn til
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

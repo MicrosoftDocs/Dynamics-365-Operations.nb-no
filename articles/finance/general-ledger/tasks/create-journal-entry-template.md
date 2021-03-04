@@ -63,3 +63,6 @@ Posterte journalbilag kan lagres som bilagsmaler og brukes i et nytt journalbila
 29. I feltet **Beløp** kan du angi beløpet som skal brukes for bilaget. **Beløp**-feltet vises bare hvis bilagsmalen er av typen Prosent.  
 30. Klikk **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

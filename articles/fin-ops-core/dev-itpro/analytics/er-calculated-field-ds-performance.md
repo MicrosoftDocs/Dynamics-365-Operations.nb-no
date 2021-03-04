@@ -300,3 +300,6 @@ Hvis du ha mer informasjon om ER-konfigurasjonsleverandører, kan du se [Opprett
 - [Oversikt over elektronisk rapportering](general-electronic-reporting.md)
 - [Spore kjøringen av ER-formater for å feilsøke ytelsesproblemer](trace-execution-er-troubleshoot-perf.md)
 - [Støtte for parameterkall fra ER-datakilder for Beregnet felt-typen](er-calculated-field-type.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

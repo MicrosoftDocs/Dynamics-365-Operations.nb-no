@@ -48,3 +48,6 @@ Dette emnet beskriver hvordan satsvise avskrivningsforslag fungerer, og forklare
 3. Velg **Linjer**.
 4. Velg **Poster**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

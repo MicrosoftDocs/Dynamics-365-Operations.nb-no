@@ -41,3 +41,6 @@ Dette emnet forklarer hvordan du oppretter en avsetningsplan. Denne oppgaven bru
 10. Angi et nummer i feltet **Antall forekomster etter periode**.
 11. Velg når transaksjonene skal posteres, for eksempel **per måned**, i feltet **Poster transaksjoner**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

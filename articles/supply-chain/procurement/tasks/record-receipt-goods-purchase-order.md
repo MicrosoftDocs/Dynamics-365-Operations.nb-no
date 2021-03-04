@@ -49,3 +49,6 @@ Dette emnet forklarer hvordan du registrerer mottak av varer direkte i en bestil
 6. Sett verdien for **Antall** til 4. Her kan du fortsatt manuelt angi antallet som blir mottatt for hver linje i ordren.  
 7. Velg **OK**. Varene er nå registrert som mottatt i bestillingen, og en produktkvitteringsjournal er opprettet som dokument for å gjenspeile dette. Du kan bruke handlingen Produktmottak for å vise journaler som er opprettet med bestillingen, og se hva som er mottatt og når.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

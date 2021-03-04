@@ -83,3 +83,6 @@ Hvis sjekken som ble tilbakeført, var utstedt for en kunderefundering, skjer og
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

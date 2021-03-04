@@ -67,3 +67,6 @@ Dette emnet forklarer hvordan du utfører behandling av avvik, basert på en eks
 2. Velg **Lukk avvik**.
 3. Velg **Ja**.
 4. Lukk sidene.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

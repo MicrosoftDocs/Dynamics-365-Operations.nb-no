@@ -277,3 +277,6 @@ Hvis du vil vise innholdet i en leverandørbekreftelse eller feilsvar, velger du
 
 - [Definere en ekstern katalog for PunchOut-e-Procurement](set-up-external-catalog-for-punchout.md)
 - [Bruke eksterne kataloger for PunchOut e-Procurement](use-external-catalogs-for-punchout.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

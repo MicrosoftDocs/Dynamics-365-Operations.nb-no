@@ -144,3 +144,6 @@ Følgende plikter og rettigheter er lagt til automatisering av leverandørbetali
 | Forespørsel om tidsplanforekomster | Betalingsassistent for leverandør, sentralisert betalingsassistent for leverandør | Denne plikten gir rett til å vise forekomster av automatisering av betalingsforslag via følgende rettigheter:<ul><li>Se tidsplanforekomster</li><li>Se ukentlig visning av forekomst</li></ul> |
 | Forespørsel om tidsplanserier      | None                                                                       | Denne plikten gir rett til å vise innstillingene for serien og forekomster via følgende rettigheter:<ul><li>Se tidsplanforekomster</li><li>Se listeside over forekomster</li><li>Se ukentlig visning av forekomst</li></ul>|
 | Oppretthold tidsplanforekomster     | None                                                                       | Denne plikten gir rett til å opprette og vedlikeholde en forekomst via følgende rettigheter:<ul><li>Oppretthold tidsplanforekomster</li><li>Se ukentlig visning av forekomst</li></ul> |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

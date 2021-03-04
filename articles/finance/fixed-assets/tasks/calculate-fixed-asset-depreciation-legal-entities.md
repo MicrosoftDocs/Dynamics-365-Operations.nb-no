@@ -51,3 +51,6 @@ Avskrivning av anleggsmidler kan kjøres på tvers av juridiske enheter i ett en
 5. Klikk Opprett journal.
 6. Gå til Anleggsmidler > Journaloppføringer > Anleggsmiddeljournal.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -62,3 +62,6 @@ Denne prosedyren fokuserer på å flytte planlagte kanban-prosessjobber til en a
 2. Klikk **Forover**. Legg merke til at jobben er flyttet én linje ned i listen. 
 
 3. Klikk **Bakover**. Legg merke til at jobben er flyttet én linje opp i listen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

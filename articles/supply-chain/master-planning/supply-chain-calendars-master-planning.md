@@ -143,3 +143,6 @@ Når det gjelder dekningsgruppekalenderen, er det viktig å tenke på at den har
 
 ### <a name="updating-scm-related-calendars"></a>Oppdatere SCM knyttet til kalendere
 Selv om det er viktig at alle relevante kalendere er tilordnet på sine respektive plasser (leverandør, kunde, lager, modus for levering eller dekningsgruppe), er det like viktig å oppdatere dem, slik at de gjenspeiler endringene. Systemet vil definere produksjon, overføring, innkjøp og salgsordredatoer avhengig av kombinasjonen av de tilordnede kalenderne. Det er lurt å avklare hvem som har ansvaret for å tildele og oppdatere kalenderne på de tilsvarende områder. Hvis det oppstår en nedbryting eller annen uvanlig endring i arbeidsdagene, er det viktig å oppdatere kalenderne i henhold til den. Alle aktiviteter som er avhengige av kalendere, for eksempel hovedplanlegging og produksjonsplanlegging, må kjøres på nytt når kalendere oppdateres. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

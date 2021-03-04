@@ -65,3 +65,6 @@ Arbeidsgivere trenger å vite når ansatte blir skadet eller syke på grunn av f
     * Rapporteringsbyråer er kontorer som hendelsen skal rapporteres til. Merk av for byrået som er standardbyrået for rapportering av skade og sykdommer.  
 23. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

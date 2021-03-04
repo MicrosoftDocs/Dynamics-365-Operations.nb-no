@@ -106,3 +106,6 @@ Denne artikkelen beskriver funksjoner som enten er nye eller endret i Microsoft 
 [Startside for Hva er nytt eller endret i Finance and Operations](whats-new-changed.md)
 
 [Nye eller oppdaterte oppgaveveiledninger (mai 2016)](new-updated-task-guides-available-may-2016.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

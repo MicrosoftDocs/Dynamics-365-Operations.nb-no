@@ -43,3 +43,6 @@ Dette problemet kan bare være et spørsmål om tidsberegning. Følg denne fremg
 1. Velg **Rediger** øverst på siden, og angi planlagt startdato/-klokkeslett til en verdi som vil oppdatere analysen slik at den er nærmere gjeldende tidspunkt.
 
 ![Satsvise jobber](media/batch-jobs.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

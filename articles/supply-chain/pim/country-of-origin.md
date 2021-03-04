@@ -91,3 +91,6 @@ Når du genererer en stykklisterapport, kan du ta med opprinnelseslandet for hve
 En rapport som viser informasjon om opprinnelsesland for hver del, genereres og vises. Her er et eksempel på rapporten.
 
 ![Rapport for opprinnelsesland](media/country-of-origin-report.png "Rapport for opprinnelsesland")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

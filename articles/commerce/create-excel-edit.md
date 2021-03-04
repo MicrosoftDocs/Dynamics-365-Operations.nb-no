@@ -78,3 +78,6 @@ Hvis du vil opprette og konfigurere en Excel-arbeidsbok slik at du kan redigere 
 [Redigere finansdimensjoner for detaljhandelstransaksjoner](edit-financial-dim.md)
 
 [Legge til felt i en Excel-arbeidsbok for å redigere detaljhandelstransaksjoner](add-fields-excel.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -64,3 +64,6 @@ Illustrasjonen nedenfor viser kategorien **Oppgavelister**.
 [Opprette oppgavelister og legge til oppgaver](task-mgmt-create-lists.md)
 
 [Tilordne oppgavelister til butikker eller ansatte](task-mgmt-assign-lists.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

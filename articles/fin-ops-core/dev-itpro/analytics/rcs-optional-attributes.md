@@ -130,3 +130,6 @@ Fremgangsmåten nedenfor forklarer hvordan en bruker i rollen Systemansvarlig el
 3. Klikk på **Bla gjennom**, og velg filen **IncomingDocumentToLearnHowToHandleOptionalAttributes.xml**.
 4. Klikk **OK**.
 5. Se gjennom den genererte filen. Vær oppmerksom på at samme fil har blitt importert, siden formatutformingen nå regner «id»-attributtet for «dokument»-elementet for å være valgfritt.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

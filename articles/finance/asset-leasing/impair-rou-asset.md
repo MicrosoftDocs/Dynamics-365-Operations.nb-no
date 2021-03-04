@@ -102,3 +102,6 @@ Tabellene nedenfor viser verdiene som er angitt i fanene **Generelt** og **Linje
 7. Hvis du vil vise nettoinnvirkning for verdiforringelsen, går du til tabellene for gjeld og anleggsmiddeltransaksjoner. Legg merke til at verdiforringelseutgiften har redusert bruksrettseiendelen, men det indirekte beløpet for leieforpliktelse er ikke endret.
 
 Verdiforringelsen har én annen effekt som du bør vurdere. Fordi beløpet for bruksrettseiendelen nå er mye mindre enn leieforpliktelsen, må beløpet avskrives på en annen måte enn før. Spesielt avskrives aktivaet nå på en lineær måte i løpet av de gjenværende 84 månedene i leieavtalen, som begynner på transaksjonsdatoen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

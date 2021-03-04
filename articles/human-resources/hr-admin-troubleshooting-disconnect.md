@@ -52,3 +52,6 @@ Microsoft Dynamics 365 Human Resources kobler fra brukere når to forskjellige �
 Kontroller at bare ett miljø er åpent om gangen for en bestemt webleser. Brukere kan åpne flere økter i samme miljø (det vil si flere faner i samme webleser).
 
 Brukere som vil hoppe mellom to miljøer samtidig, bør åpne hvert miljø i en annen webleser. (For eksempel kan bruker A vise miljø 1 i Chrome og miljø 2 i Microsoft Edge.)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -61,3 +61,6 @@ Når **Begrens for refusjoner uten kvittering** er satt til **Ja**, tillates ikk
 
 Hvis en transaksjon har både en retur med kvittering og en retur uten kvittering, fremtvinges ikke begrensningsbetingelsene, fordi transaksjonen vil være en returarbeidsflyt med kvittering. 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

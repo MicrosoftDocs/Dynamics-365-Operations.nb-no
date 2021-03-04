@@ -51,3 +51,6 @@ Når det gjelder disse dokumentene, kan du også navigere til det faktiske kilde
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -44,3 +44,6 @@ Egenskaper for planlegging av driftstider brukes til å kategorisere tidsinterva
 3. Skriv inn en verdi i Verdi-feltet.
 4. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

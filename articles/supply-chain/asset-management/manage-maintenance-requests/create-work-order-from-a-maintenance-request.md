@@ -55,3 +55,6 @@ Når du har opprettet vedlikeholdsforespørsler, kan du enkelt konvertere dem ti
 
     ![Åpne ny arbeidsordre](media/05-manage-maintenance-requests.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

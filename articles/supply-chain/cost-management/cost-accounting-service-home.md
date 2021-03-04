@@ -37,3 +37,6 @@ Tilleggstjenesten for kostnadsregnskap for Microsoft Dynamics 365 Supply Chain M
 ## <a name="related-resources"></a>Relaterte ressurser
 
 [Komme i gang med kostnadsregnskaptjenesten](cost-accounting-service-get-started.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

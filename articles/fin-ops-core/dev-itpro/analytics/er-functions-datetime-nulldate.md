@@ -53,3 +53,6 @@ Uttrykket `IF( Invoice.DocumentDate = NULLDATE(), true, false)` returnerer **San
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Dato- og klokkeslettfunksjoner](er-functions-category-datetime.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

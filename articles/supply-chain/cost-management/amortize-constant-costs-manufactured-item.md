@@ -47,3 +47,6 @@ Det beregnede beløpet for nedbetaling av en produsert vares konstante kostnader
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

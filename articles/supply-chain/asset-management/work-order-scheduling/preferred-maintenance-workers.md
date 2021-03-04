@@ -68,3 +68,6 @@ Du kan også definere *ansvarlige* vedlikeholdspersoner som kan velges når en v
 
 Under planleggingen av arbeidsordrer beregnes ulike poeng for å bestemme hvilke arbeidere som skal fullføre jobbene for en arbeidsordre (disse resultatene defineres i **Aktivabehandlingsparametere** > **Planlegging av arbeidsordre**-koblingen). Hvis to eller flere foretrukne vedlikeholdsarbeidere eller ansvarlige vedlikeholdsarbeidere får samme resultat under planleggingen av arbeidsordre, blir én arbeider tilfeldig valgt. Ellers er det alltid arbeideren med den høyeste poengsummen som tilordnes for å fullføre en arbeidsordre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

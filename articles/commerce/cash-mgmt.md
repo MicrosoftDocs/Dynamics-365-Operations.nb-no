@@ -62,3 +62,6 @@ I Retail versjon 10.0.3 og senere er følgende funksjoner knyttet til kontanttra
 - Hvis den valgte transaksjonen ikke balanseres under avstemming, må brukeren angi en beskrivelse av årsaken til at den ikke er avstemt. Brukere kan velge en enkelttransaksjon og avstemme den mot relevant årsaksbeskrivelse.
 - Brukere kan fortsette å avstemme og fjerne avstemming av transaksjoner til skiftet er lukket. Når et skift er lukket, kan ikke transaksjonene være uavstemt.
 - Når en bruker velger å lukke et skift, validerer Commerce at det ikke er noen uavstemte kontantstyringstransaksjoner i skiftet. Brukere kan ikke lukke et skift hvis det finnes uavstemte transaksjoner.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

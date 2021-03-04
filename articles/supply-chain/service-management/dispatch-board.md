@@ -54,3 +54,6 @@ Hvis du vil ha informasjon om hvordan du utfører bestemte oppgaver på en forde
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

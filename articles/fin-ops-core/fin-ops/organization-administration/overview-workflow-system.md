@@ -71,3 +71,6 @@ Det er flere fordeler ved å bruke arbeidsflytsystemet i en organisasjon:
 + [Konfigurere parallelle avdelinger i en arbeidsflyt](configure-parallel-branch-workflow.md)
 + [Konfigurere arbeidsflyter for linjeelement](configure-line-item-workflow.md)
 + [Vanlige spørsmål om arbeidsflyt](workflow-FAQ.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

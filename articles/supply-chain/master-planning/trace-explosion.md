@@ -48,3 +48,6 @@ Du kan vise detaljer om termin og handlinger for en valgt ordre. På siden **Ned
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

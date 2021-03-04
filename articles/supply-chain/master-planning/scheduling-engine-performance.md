@@ -329,3 +329,6 @@ Verdien for **Tidsavbrudd for optimaliseringsforsøk** styrer hvor mange sekunde
 
 > [!NOTE]
 > Verdiene som angis for tidsavbruddet, brukes både for planlegging av frigitte produksjonsordrer og planlagte ordrer som en del av MRP. Dermed kan det å sette svært høye verdier øke kjøretiden i MRP betydelig når det kjøres for en plan med mange planlagte produksjonsordrer.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

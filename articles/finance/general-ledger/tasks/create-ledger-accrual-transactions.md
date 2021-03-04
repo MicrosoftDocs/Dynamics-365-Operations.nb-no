@@ -49,3 +49,6 @@ Denne oppgaveveiledningen viser trinn for å generere finansavsetningstransaksjo
 17. Klikk OK.
 18. Klikk Poster.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

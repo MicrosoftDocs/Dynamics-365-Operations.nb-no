@@ -91,3 +91,6 @@ Hvis problemet fremdeles ikke er løst, følger du denne fremgangsmåten.
 4. Åpne **Tabelltilordning**-siden fra **Dobbel skriving**-siden i Finance and Operations-appen.
 5. Hvis attributtet ikke fylles ut automatisk på kartet, legger du det til manuelt ved å klikke **Legg til attributt** og deretter **Lagre**. 
 6. Velg kartet, og klikk **Kjør**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

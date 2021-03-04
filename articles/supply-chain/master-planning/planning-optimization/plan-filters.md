@@ -59,3 +59,6 @@ Et planfilter er definert som inkluderer varer A, B og C. Hovedplanlegging kjør
 [Vise planhistorikk og planleggingslogger](plan-history-logs.md)
 
 [Annullere en planleggingsjobb](cancel-planning-job.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

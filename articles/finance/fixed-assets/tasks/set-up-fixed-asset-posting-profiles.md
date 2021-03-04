@@ -123,3 +123,6 @@ Denne oppgaveveiledninegn definerer posteringsprofiler for anleggsmiddel.  Den b
 88. Angi de ønskede verdiene i **Hovedkonto**-feltet.
 89. Angi ønskede verdier i **Motkonto**-feltet.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -141,3 +141,6 @@ Når en godkjenner ber om en endring i et dokument, sendes det tilbake til avsen
 For eksempel har Erik sendt en reiseregning på NOK 12 000, og dette dokumentet er tilordnet Jorunn. Hvis Jorunn ber om en endring, sendes reiseregningsrapporten tilbake til Erik.
 
 Erik kan deretter sende reiseregningen på nytt. Han kan foreta de forespurte endringer først, eller han kan sende originalversjonen av reiseregningen på nytt. Hvis Erik sender reiseregningsrapporten på nytt, sendes den til Dag for godkjenning, fordi han er den første godkjenneren i godkjenningsprosessen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

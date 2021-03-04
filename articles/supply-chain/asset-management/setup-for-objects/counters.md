@@ -67,3 +67,6 @@ Når aktivatyper legges til for en tellertype i **Tellere**, blir denne telleren
 
 ![Figur 1](media/071-setup-for-objects.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

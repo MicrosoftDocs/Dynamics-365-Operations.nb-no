@@ -62,3 +62,6 @@ Denne prosedyren fokuserer på planlegging av kanban-prosessjobber for en bestem
     * Legg merke til at begge jobber er lagt til den ønskede perioden.  
     * I delen Periodisk kapasitet kan du se belastningen for hver periode. Forbruk-feltet viser det planlagte forbruket i denne perioden. Hvis det planlagte forbruket er høyere enn den tilgjengelige kapasiteten i denne perioden, vil det overbelastede forbruket velges.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

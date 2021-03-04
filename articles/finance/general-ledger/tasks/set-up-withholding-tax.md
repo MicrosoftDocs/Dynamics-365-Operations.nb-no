@@ -49,3 +49,6 @@ Dette emnet forklarer hvordan du definerer kildeskatt. *Kildeskatt* er en levera
 18. Velg **Lagre**.
 19. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

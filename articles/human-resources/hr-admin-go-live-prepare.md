@@ -91,3 +91,5 @@ Når du har sendt inn sjekklisten, vil FastTrack-løsningsarkitekten se gjennom 
 ## <a name="see-also"></a>Se også
 
 [Vanlige spørsmål om aktivering](hr-admin-go-live-faq.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -176,3 +176,6 @@ Programmer er et sett med fordelsplaner som deler et felles sett med rettighetsr
    | **Rettighetsregler** | Velg rettighetsreglene som skal brukes for fordelsprogrammet. Du definerer rettighetsreglene i kategorien **Rettighetsregler** på denne siden. |
    
 4. Velg **Lagre**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

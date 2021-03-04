@@ -43,3 +43,6 @@ Hvis basisprisen for eksempel er EUR 1 000, og indeksen er 110, er salgsprisen E
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

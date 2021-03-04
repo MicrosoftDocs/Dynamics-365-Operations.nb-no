@@ -136,3 +136,6 @@ $DisplayListOfItemsNumbers()[1]$
 ## <a name="more-information-about-how-to-print-labels"></a>Mer informasjon om hvordan du skriver ut etiketter
 
 Hvis du vil ha mer informasjon om hvordan du definerer og skriver ut etiketter, kan du se [Aktivere utskrift av nummerskiltetikett](tasks/license-plate-label-printing.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

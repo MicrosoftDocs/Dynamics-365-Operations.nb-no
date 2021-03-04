@@ -97,3 +97,6 @@ Knappen **Inntektspristildeling** er fremdeles tilgjengelig, og dermed kan du vi
 Den forventede inntektsføringsplanen blir fjernet og erstattet med den endelige inntektsføringsplanen. Detaljene for inntektsplanen beholdes for hver salgsordrelinje, og brukes til å frigi den utsatte inntekten til den faktiske inntekten, fordi kontraktsforpliktelser er oppfylt.
 
 [![Tidsplan for endelig inntektsføring](./media/revenue-recognition-so-revenue-recognition-schedule.png)](./media/revenue-recognition-so-revenue-recognition-schedule.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

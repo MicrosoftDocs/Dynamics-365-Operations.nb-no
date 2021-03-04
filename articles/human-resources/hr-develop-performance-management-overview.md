@@ -163,3 +163,5 @@ Kildetyper for ytelsesjournaler beskriver hvor ytelsesjournalene kommer fra. Du 
 ### <a name="review-types"></a>Vurderingstyper
 
 Ytelsesvurderingstyper kan hjelpe deg med å styre virkemåten til en vurdering. Du kan aktivere eller deaktivere arbeidsflyten for en vurdering. Hvis vurderingen ikke bruker arbeidsflyt, kan du definere standardstatus som skal brukes når vurderingen opprettes. Du kan også bestemme om den ansatte, lederen eller begge må godkjenne vurderingen.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

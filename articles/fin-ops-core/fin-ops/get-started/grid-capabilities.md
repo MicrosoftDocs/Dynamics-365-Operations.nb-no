@@ -263,3 +263,6 @@ Denne delen inneholder en liste over kjente problemer for den nye rutenettkontro
 ### <a name="quality-update-for-1009platform-update-33"></a>Kvalitetsoppdatering for 10.0.9/Platform update 33
 
 - [KB 4550367] Tidsverdier er ikke riktig formatert.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

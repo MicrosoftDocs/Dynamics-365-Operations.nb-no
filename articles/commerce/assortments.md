@@ -107,3 +107,6 @@ Vurder følgende implementeringskrav når du planlegger og behandler sortimenter
 - **Salg og returer utenfor sortimenter** – denne funksjonen hjelper forhandlerne å administrere sortimenter effektiv, ved at de kan begrense antall tilgjengelige produkter til produkter som hører til kjerneutvalget for butikken. Denne funksjonen bidrar også til å håndtere tilfeller der et produkt ved en feiltakelse ble utelatt fra et utvalg, eller der et produkt ble returnert utenfor de effektive datoene for sortimentet.
 
 Hvis produktdataen ikke eksisterer i kanalens database, foretar POS et sanntidsanrop til hovedkontoret for å hente den nødvendige informasjonen, slik at produktet kan solges, returneres eller legges til en kundeordre. Produktinformasjon som hentes på denne måten er bare tilgjengelig i løpet av transaksjonen. Produktet blir ikke lagt til sortimentdefinisjonen. Derfor foretas sanntidsanrop etter behov.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

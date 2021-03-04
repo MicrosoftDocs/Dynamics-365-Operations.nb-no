@@ -80,3 +80,6 @@ Hvis du vil annullere en kredittkortautorisasjon, kan du endre betalingsmåten t
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

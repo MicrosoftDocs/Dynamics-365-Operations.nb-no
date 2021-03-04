@@ -109,3 +109,6 @@ I skjermbildet nedenfor ble **Type** lagt til, og den mest detaljerte beregninge
 >[!NOTE]
 >Hvis du vil ha en oversikt over alle feilregistreringer som er opprettet på arbeidsordrer og vedlikeholdsanmodninger, klikker du **Aktivastyring** > **Forespørsler** > **Aktivumfeil** > **Aktivafeil**. På siden **Aktivafeil** velger du en registrering av aktivafeil og utvider ruten **Beslektet informasjon** for å se informasjon om den beslektede arbeidsordren eller vedlikeholdsanmodningen.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

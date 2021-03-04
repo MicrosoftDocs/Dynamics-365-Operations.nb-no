@@ -49,3 +49,6 @@ Kjører du denne prosedyren krever det at minst én eksisterende produktmodellko
     * Aktiver produktmodellversjonen. Det er bare mulig å ha ett produkt aktivt for en produktmodell om gangen.  
 13. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

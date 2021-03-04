@@ -66,3 +66,6 @@ I dette oppsettet kan du bekrefte en transportlast som inkluderer en full last e
 
 1. Velg **Lagerstyring** \> **Laster** \> **Transportlaster**.
 2. Velg **Transport** i **Send og motta**-kategorien i **Bekreft**-gruppen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -60,3 +60,6 @@ Dette emnet forklarer hvordan du definerer aktivaprodusenter og beslektede model
 2. Velg koblingen for aktivumet i **Aktiva**-kolonnen. Siden **Detaljer** vises.
 3. Velg **Rediger**.
 4. På hurtigfanen **Generelt** velger du verdier i feltene **Produsent** og **Modell**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

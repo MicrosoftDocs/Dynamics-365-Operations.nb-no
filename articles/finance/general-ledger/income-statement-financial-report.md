@@ -71,3 +71,6 @@ Kolonnedefinisjonene inneholder ulike typer kolonner for å angi ulike nivåer a
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

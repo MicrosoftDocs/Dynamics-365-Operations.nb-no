@@ -76,3 +76,6 @@ Oppdateringer publiseres enten automatisk eller manuelt, avhengig av hvilket alt
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

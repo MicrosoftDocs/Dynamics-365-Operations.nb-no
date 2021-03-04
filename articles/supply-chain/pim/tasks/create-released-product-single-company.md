@@ -103,3 +103,6 @@ Denne prosedyren viser hvordan du oppretter ett enkelt frigitt produkt i konteks
 12. Finn og velg ønsket post i listen.
 13. Klikk koblingen i den valgte raden i listen.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

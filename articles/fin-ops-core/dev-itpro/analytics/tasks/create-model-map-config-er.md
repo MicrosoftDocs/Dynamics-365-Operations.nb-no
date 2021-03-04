@@ -65,3 +65,6 @@ Disse trinnene kan fullføres ved hjelp av hvilket som helst datasett. For å fu
     * Eksempeltilordning for Intrastat  
 5. Klikk Opprett konfigurasjon.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

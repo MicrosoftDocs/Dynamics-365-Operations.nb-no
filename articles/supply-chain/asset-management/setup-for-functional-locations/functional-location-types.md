@@ -67,3 +67,6 @@ Nå opprettes standard arbeidsstedstype, som bare skal brukes på et standard ar
 
 >[!NOTE] 
 >På hurtigfanen **Generelt** kan du få en oversikt over antall aktivatyper, vedlikeholdsplaner, krav til aktivaattributter, tillatte typer, attributter og arbeidssteder som er definert for arbeidsstedstypen. Feltet **Arbeidssteder** viser antall arbeidssteder som bruker arbeidsstedstypen. Du kan bruke **Kopier**-knappen til å kopiere innstillinger fra en arbeidsstedstype til den valgte arbeidsstedstypen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

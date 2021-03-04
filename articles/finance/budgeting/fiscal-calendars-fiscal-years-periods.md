@@ -64,3 +64,6 @@ Du kan bruke Finanskalender-siden til å vise detaljene for regnskapskalenderen,
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -83,3 +83,6 @@ Denne oppgaven fokuserer på oppsettet som kreves for å opprette en kanban-rege
     * Legg merke til kanbanen som er opprettet for å levere M0001 for den estimerte produksjonsordren.  
     * Dette er det siste trinnet!  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

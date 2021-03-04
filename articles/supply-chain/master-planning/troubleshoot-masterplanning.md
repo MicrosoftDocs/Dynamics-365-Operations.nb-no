@@ -89,3 +89,6 @@ Dette er et kjent problem med den innebygde hovedplanleggingsmotoren. Det skylde
 
 > [!NOTE]
 > Dette vil begrense perioden for nedbrytinger som utføres for denne hovedplanen, til én enkelt dag.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

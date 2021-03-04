@@ -410,3 +410,6 @@ Når Supply Chain Management genererer jobbene for produksjonen, vil det samle d
 - Hvis du definerer flere ruteoperasjonsrelasjoner som omfatter *Alle*-relasjonen og tilordner veiledninger til disse, vil bare veiledningene fra den mest spesifikke relasjonen vises for jobben.  
 
 ![Diagram for å løse de relevante veiledningene](media/instruction-guides-Resolve.png "Diagram for å løse de relevante veiledningene")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

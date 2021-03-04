@@ -62,3 +62,6 @@ Husk å kjøre en lagerlukking per %3 (31-01-2019) som samsvarer med en periodes
 ## <a name="inventory-aging-report-discrepancies"></a>Avvik i rapport for aldersfordeling for lager
 
 **Rapport for aldersfordeling for lager** viser ulike verdier når de vises i forskjellige lagerdimensjoner (for eksempel område eller lager). Hvis du vil ha mer informasjon om rapporteringslogikken, kan du se [Eksempler og logikk for rapport for aldersfordeling for lager](inventory-aging-report.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

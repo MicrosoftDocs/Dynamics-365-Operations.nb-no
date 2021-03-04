@@ -45,3 +45,6 @@ Denne prosedyren viser deg hvordan du oppretter nye noder i et innkjøpskategori
 4. Velg produktene du vil legge til i innkjøpskategorien.
 5. Velg pilen for å legge til produktene i **Valgt**-tabellen.
 6. Velg **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -147,3 +147,6 @@ For å fullføre disse trinnene, må du først fullføre trinnene i prosedyren "
 4. Klikk Fullført.
 5. Klikk OK.
 ![Siden ER-utforming av modelltilordning](../media/er-financial-dimensions-guides-model-mapping5.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

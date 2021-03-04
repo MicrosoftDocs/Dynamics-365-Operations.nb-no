@@ -82,3 +82,6 @@ En produksjonsplanlegger kan opprette en basislinjeprognose ved å bruke tidsser
 5. Klikk Prognoselinjedetaljer.
     * På denne siden kan du se presisjonsverdier, historisk behov og prognose. Du kan også endre prognosen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

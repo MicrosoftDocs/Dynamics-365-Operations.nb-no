@@ -53,3 +53,6 @@ Saldoene blir enten automatisk oppdaterte eller går gjennom en godkjenningspros
 
 [Oversikt over permisjon og fravær](hr-leave-and-absence-overview.md)</br>
 [Administrere policyer for kjøp og salg av permisjon](hr-leave-and-absence-manage-buy-and-sell-leave-policies.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

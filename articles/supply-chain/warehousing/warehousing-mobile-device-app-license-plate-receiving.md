@@ -105,3 +105,6 @@ Hvis du vil ha mer informasjon om menyelementer for mobilenheter, kan du se [Def
 Hvis du vil ha mer informasjon om *Ferdigmeld*-produksjonsscenariet, kan du se [Oversikt over policyer for lagerarbeid](warehouse-work-policies.md).
 
 For mer informasjon om innkommende lastadministrasjon for lagerstyring, se [Lagerhåndtering av innkommende laster for bestillinger](inbound-load-handling.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

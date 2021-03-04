@@ -75,3 +75,6 @@ Dette er knyttet til en ventende funksjon som er planlagt som en del av støtten
 [Komme i gang med planleggingsoptimalisering](get-started.md)
 
 [Analyse for tilpassing av planleggingsoptimalisering](planning-optimization-fit-analysis.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

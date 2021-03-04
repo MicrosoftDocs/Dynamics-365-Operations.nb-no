@@ -47,3 +47,6 @@ Jobben for satsvis behandling utelukker lukkede tablåer. I en satsvis jobb for 
 Grensen for antall tabler brukes hvis dupliserte aktiva-IDer ikke finnes i samme journal. Hvis aktiva-IDen er den samme som tablå-IDen, kan imidlertid antall tablåer per journal overstiges for å beholde aktiva-IDen i samme journal.
 
 Det finnes for eksempel 5 001 anleggsmiddel-IDer, tre tablåer er knyttet til hver anleggsmiddel-ID, og hvert anleggsmiddeltablå posteres til det samme posteringslaget. Du kjører avskrivning for tre påfølgende måneder, uten sammendrag. Avskrivningsjournalen blir opprettet ved hjelp av en satsvis jobb, og systemet vil opprette sju journaler som har 667 anleggsmiddel-IDer og tre tablåer for hver anleggsmiddel-ID. Resultatet vil være 2 001 tablåer. I løpet av tre måneder vil det derfor være 6 003 journallinjer for å vedlikeholde de samme anleggsmiddel-IDene i samme journal. Systemet vil også opprette én journal som har 332 anleggsmiddel-IDer og tre tablåer for hver anleggsmiddel-ID. I løpet av tre måneder vil det være 2 988 linjer.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

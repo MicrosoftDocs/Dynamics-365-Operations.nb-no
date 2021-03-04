@@ -69,3 +69,6 @@ Spørreskjemastatistikk kan brukes til å beregne gjennomsnitt, totaler og prose
 2. Klikk Resultat.
 3. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

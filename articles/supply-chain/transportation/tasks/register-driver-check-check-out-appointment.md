@@ -46,3 +46,6 @@ Denne prosedyren viser hvordan du registrerer en sjåførinsjekk og en sjåføru
 1. Klikk Sjåførutsjekking.
 2. Klikk OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

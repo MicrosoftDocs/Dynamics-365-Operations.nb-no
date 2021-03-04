@@ -52,3 +52,6 @@ Onboard vil automatisk sende den nyansatte en e-post som indikerer hva endringen
     ![[Overføre endringene i en jobbintroduksjonsmal til alle veiledningene som ble opprettet fra den](./media/onboard-push-changes.png)](./media/onboard-push-changes.png)
 
 Endringene vil være synlige for nyansatte som åpner jobbintroduksjonsveiledningene. Onboard vil imidlertid ikke sende e-postvarsler til nyansatte for å fortelle dem at deres jobbintroduksjonsveiledning er endret. For enkel identifisering vil et rødt **Ny**-merke vises ved siden av hver endring. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

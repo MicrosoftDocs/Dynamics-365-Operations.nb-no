@@ -46,3 +46,6 @@ Dette hjelper med opprettelsen av permisjonsposter for ansatt. Du kan spore perm
     * For eksempel: permisjon ved adopsjon  
 12. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

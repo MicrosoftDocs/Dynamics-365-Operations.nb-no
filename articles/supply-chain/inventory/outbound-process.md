@@ -85,3 +85,6 @@ Lagerbeholdningen som ikke allerede er reservert, er reservert under plukklisteg
 Så snart alle plukklinjer er plukket på siden **Plukklisteregistrering**, er den tilknyttede forsendelsen komplett. Prosessen for pakksedler for salgsordrer kan deretter initialiseres basert det på plukkede inventar.
 
 [![Oppdater ugående forsendelser](./media/outbound-shipments.png)](./media/outbound-shipments.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

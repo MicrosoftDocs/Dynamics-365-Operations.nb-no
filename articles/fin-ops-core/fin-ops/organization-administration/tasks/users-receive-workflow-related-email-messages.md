@@ -41,3 +41,6 @@ Du kan konfigurere systemet slik at det sendes e-postmeldinger til brukere når 
 
 > [!NOTE]
 > E-postmalen for arbeidsflyt hentes enten fra systemets e-postmaler eller organisasjonens e-postmaler, avhengig av om arbeidsflyten er på systemnivå (ikke firmaspesifikk) eller organisasjonsnivå (firmaspesifikk).
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

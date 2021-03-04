@@ -97,3 +97,6 @@ Du må behandle noen av endringene for å aktivere dem.
 - [Behandle rettighet for levetidshendelser](hr-benefits-process-life-event-eligibility.md)
 - [Behandle satsendringer](hr-benefits-process-rate-changes.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

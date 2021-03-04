@@ -68,3 +68,6 @@ Du kan filtrere diagrammer og fliser for disse rapportene, og festes dem på ins
 | Kompetanseanalyse, ansatt  | Sertifisert, nivå, nivådato og kompetanse                                                                    | Ansattnavn, kompetanse |
 | Ytelse              | Vurdering, beskrivelse og vurderingsmodell                                                                      | Gjeldende ansatt, gjeldende stilling, trend for ansatt, jobb– foretrukket kompetanse, tidligere stillingstilordning, stillingstrend, tidligere ansatte |
 | Kompetanse                    | Kompetanse, kompetansetype og vurdering                                                                              | Kompetanseanalyse – ansatt, Jobb – foretrukket kompetanse |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

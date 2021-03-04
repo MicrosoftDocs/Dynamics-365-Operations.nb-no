@@ -500,3 +500,6 @@ Spørringene som vises i eksemplene ovenfor, kan returnere et resultat som dette
 ```
 
 Legg merke til at antall-feltene er strukturert som en ordliste for mål og tilknyttede verdier.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

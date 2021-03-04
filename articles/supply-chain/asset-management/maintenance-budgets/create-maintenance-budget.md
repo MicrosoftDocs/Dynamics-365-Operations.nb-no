@@ -59,3 +59,6 @@ Du kan også opprette et nytt vedlikeholdsbudsjett ved å kopiere et eksisterend
 
 > [!NOTE]
 > Vedlikeholdsbudsjettet beregner bare budsjettkostnader på grunnlag av vedlikeholdsplanlinjer. Hvis du vil beregne faktiske kostnader for samme periode, kan du utføre denne beregningen på siden **Kostnadskontroll for aktivum**. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

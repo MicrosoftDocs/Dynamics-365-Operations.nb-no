@@ -46,3 +46,6 @@ Du kan planlegge fremtidige levetidshendelser i Dynamics 365 Human Resources.
    | Linje | Linjenummeret til den fremtidige levetidshendelsen. |
 
 4. Velg **Lagre**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

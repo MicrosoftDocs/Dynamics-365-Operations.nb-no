@@ -59,3 +59,6 @@ Datakilden **JsonField** inneholder følgende data i JSON-format: **{"BuildNumbe
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Tekstfunksjoner](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

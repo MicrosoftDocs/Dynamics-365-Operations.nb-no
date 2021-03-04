@@ -122,3 +122,6 @@ Følg denne fremgangsmåten for å reaktivere alternativet for **Informasjon**-s
 2. Finn **Informasjon**-skjemaet under skjemaer-noden. 
 3. Velg **Informasjon**-skjemaet, og klikk deretter **Aktiver sikkerhetsroller**. 
 4. Endre sikkerhetsinnstillingen til **Vis til alle**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

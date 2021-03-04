@@ -56,3 +56,6 @@ Hvis feltet **Tilbakefør avsetninger ved kreditering** i skjemaet **Servicestyr
 
 
  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

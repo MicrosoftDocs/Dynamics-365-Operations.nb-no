@@ -49,3 +49,6 @@ Denne prosedyren beskriver konfigurasjoner for butikken som påvirker hvordan Co
 17. Velg Ja i **Del etter utdragsmetode** hvis du vil at utdrag skal opprettes for hver definerte utdragsmetode. Dette kan være nyttig hvis resultatet av posteringen må forbedres for butikker med høye transaksjonsvolumer siden det vil opprette mange mindre utdrag som kan behandles parallelt.  
 18. I hurtigfanen **Generelt** i feltet **Standardkunde** kan du velge kundekontoen som skal brukes for salg til kunder som kommer inn i butikken.  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

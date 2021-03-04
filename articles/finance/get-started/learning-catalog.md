@@ -179,3 +179,6 @@ Finn riktig elektronisk opplæring, personlige workshops og arrangementer for di
 
     :::column-end:::
 :::row-end:::
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

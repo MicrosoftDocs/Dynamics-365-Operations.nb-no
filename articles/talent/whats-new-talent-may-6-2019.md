@@ -93,3 +93,6 @@ Muligheten for å spore ansattes fravær og forstå hvordan fravær beregnes, hj
 ### <a name="indicate-instance-type-when-provisioning-talent"></a>Angi forekomsttype ved klargjøring av Talent
 
 Når du klargjør en ny forekomst av Talent, vil du kunne angi om forekomsttypen er **Produksjon** eller **Sandkasse**, slik at du kan teste nye funksjoner tidlig. Alle eksisterende Talent-forekomster vil bli oppdatert til produksjonsforekomsttypen. Hvis du vil at en av de eksisterende forekomstene skal oppdateres til forekomsttypen sandkasse, kan du kontakte kundestøtte for å starte endringsforespørselen.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

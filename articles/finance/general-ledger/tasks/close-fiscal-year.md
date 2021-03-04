@@ -83,3 +83,6 @@ Denne prosedyren går gjennom årsavslutningsprosessen som overfører saldoer ti
 23. Standardinnstillingen for årsavslutningen er å kjøre satsvis. Det er en anbefalt fremgangsmåte å kjøre langvarige prosesser i satsvis modus. Dette er vanligvis en av disse prosessene, som er grunnen til at standard er å bruke satsvis modus.  
 24. Klikk **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -131,3 +131,6 @@ Ordreoppfyllelse på salgsstedet omfatter filtrering for å hjelpe brukeren med 
 - Opprettet dato
 - Leveringsdato
 - Mottaksdato
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

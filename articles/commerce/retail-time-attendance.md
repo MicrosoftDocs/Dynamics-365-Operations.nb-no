@@ -139,3 +139,6 @@ En Commerce-bruker følger arbeidsflyten for å beregne, godkjenne og overføre 
 - Registrer fravær
 
 Hvis du vil ha mer informasjon om hvordan du behandler registreringer av timeregistrering, kan du se [Behandle registreringer av timeregistrering](https://technet.microsoft.com/library/aa573180.aspx).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

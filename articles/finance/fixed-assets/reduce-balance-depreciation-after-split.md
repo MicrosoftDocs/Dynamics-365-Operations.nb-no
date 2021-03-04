@@ -45,3 +45,6 @@ Følgende betingelser gjelder for eksempel:
 Beløpet som skal avskrives for det opprinnelige aktivaet, er $1822,25. Dette beløpet er lik netto bokført verdi før delingstransaksjonen posteres ($9 111,25), pluss anskaffelsesjusteringen som genereres under postering av delingstransaksjonen (-$8 000), pluss avskrivningsjusteringen som genereres i løpet av delingstransaksjonen ($711). Derfor er avskrivningen for det andre året (1 822,25 × 18 prosent) ÷ 12 = $27,33.
 
 Beløpet som skal avskrives for det nye aktivaet i det første året er (8 000 × 18 prosent) ÷ 12 = $120.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -56,3 +56,6 @@ Nå vil systemet opprette en karanteneordre, og personen eller avdelingen som ut
 
 [Angi hvordan du kvitter deg med returnerte varer](specify-how-to-dispose-of-returned-items.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

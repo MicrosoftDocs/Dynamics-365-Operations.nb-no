@@ -77,3 +77,6 @@ Når du har kontrollert kompensasjonsbeløpene for en ansatt og gjort eventuelle
 Når en eller flere ansatthendelser får statusen oppdatert til Godkjent, kan de lastes til de ansattes faste kompensasjonsposter. Dette kan gjøres ved å velge hver ansatthendelse én om gangen og klikke **Last inn ansattkompensasjon** på siden **Ansattresultater**, eller ved å klikke **Last inn kompensasjon** på siden **Prosessresultater** for å laste inn alle godkjente ansatthendelser samtidig.
 
 Hvis du velger **OK** i dialogboksen **Last inn kompensasjon**, legges kompensasjonshandlingslinjer som ikke er null, til på siden **Fast kompensasjon for ansatt**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

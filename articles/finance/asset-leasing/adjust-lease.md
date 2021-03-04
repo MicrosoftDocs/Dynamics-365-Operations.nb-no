@@ -82,3 +82,6 @@ Hvis en leieavtale er endret, kan du vise de ulike versjonene av den. Du kan ogs
 
 2. Hvis du vil vise historiske tidsplaner, åpner du den endrede leieavtalen fra siden **Leiesammendrag**, velger det ønskede tablået og deretter **Historikk for tablåversjon** i handlingsruten.
 3. På **Tablåversjon**-siden velger du ønsket versjon og ønsket tidsplan du vil vise.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

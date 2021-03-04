@@ -66,3 +66,6 @@ Forskuddsbetalte fakturaer er vanlig forretningspraksis. En leverandør sender f
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

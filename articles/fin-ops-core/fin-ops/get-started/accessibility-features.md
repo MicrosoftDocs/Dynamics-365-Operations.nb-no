@@ -97,3 +97,6 @@ På smarttelefoner og andre små skjermer vil kontrollene og skjemaoppsettet res
 ## <a name="guidance-to-help-developers-and-customers-incorporate-accessible-thinking-in-their-customizations"></a>Veiledning for å hjelpe utviklere og kunder å ta med tilgjengelighetshensyn i sine tilpassinger
 
 Hvis du vil vite mer om Microsofts anbefalte fremgangsmåter for hvordan du aktiverer tilgjengelighet, kan du se [Tilgjengelighet i skjemaer, produkter og kontroller](../../dev-itpro/user-interface/enable-accessibility.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

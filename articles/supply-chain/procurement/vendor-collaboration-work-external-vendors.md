@@ -259,3 +259,6 @@ Brukeren som definerer parametere for tilbudsforespørselsprosessen, kan opprett
 - %createddate%
 
 Hvis en endring er nødvendig, og sendes etter at tilbudsforespørselen er sendt, sendes tilbudsforespørselen på nytt til alle inviterte leverandører. Det publiserte dokumentet oppdateres også på siden **Åpne publiserte tilbudsforespørsler**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

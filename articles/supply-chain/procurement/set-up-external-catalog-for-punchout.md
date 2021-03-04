@@ -114,3 +114,5 @@ Hvis et produkt fra den eksterne leverandørkatalogen er forespurt, kan den ekst
 
 - [Kjøp av cXML-forbedringer](purchasing-cxml-enhancements.md)
 - [Bruke eksterne kataloger for PunchOut e-Procurement](use-external-catalogs-for-punchout.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

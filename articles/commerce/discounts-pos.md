@@ -69,3 +69,6 @@ Følgende illustrasjon viser logikken som brukes når samtidighetskontrollen for
 Følgende illustrasjon viser logikken som brukes når samtidighetskontrollen for rabatt er satt til **Beste pris bare innen prioritet, alltid sammensatt på tvers av prioriteter**.
 
 ![Logikk for Beste pris bare innen prioritet, alltid sammensatt på tvers av prioriteter](./media/Model_2.png "Logikk for Beste pris bare innen prioritet, alltid sammensatt på tvers av prioriteter").
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

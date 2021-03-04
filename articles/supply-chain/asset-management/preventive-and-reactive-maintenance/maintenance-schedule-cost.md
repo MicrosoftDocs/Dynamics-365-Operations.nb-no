@@ -54,3 +54,6 @@ Illustrasjonen nedenfor viser resultatet av en beregning av kostnader for vedlik
 
 ![Figur 1](media/17-preventive-maintenance.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

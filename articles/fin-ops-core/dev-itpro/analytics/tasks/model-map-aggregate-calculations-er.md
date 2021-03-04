@@ -116,3 +116,6 @@ Denne fremgangsmåten er opprettet for brukere med rollen som Systemansvarlig el
 68. Klikk Lagre.
     * Legg merke til at "Utførelse på"-feltet angir at denne grupperingen vil bli utført under kjøring i minnet selv om det ikke er definert noen aggregeringer og den valgte datakilden av typen Tabellposter refererer til den samme Intrastat-tabellen. Dette skyldes at datakilden inneholder enkelte beregnede felt som ennå ikke kan oversettes til SQL-databasenivået.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

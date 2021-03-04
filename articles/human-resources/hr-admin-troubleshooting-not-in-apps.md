@@ -55,3 +55,6 @@ Brukeren må legges til Miljøskaper-rollen for miljøet i Microsoft Power Apps.
     ![Synkroniser-knappen](media/get-more.png)
 
     Når synkroniseringen er fullført, vises Human Resources på startsiden.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

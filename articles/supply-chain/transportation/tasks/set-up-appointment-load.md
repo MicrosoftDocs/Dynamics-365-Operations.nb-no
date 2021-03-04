@@ -47,3 +47,6 @@ Denne prosedyren viser hvordan du konfigurerer og planlegger en mottakssoneavtal
 6. Klikk Lagre.
 7. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

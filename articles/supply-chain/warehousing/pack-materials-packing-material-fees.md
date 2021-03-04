@@ -112,3 +112,6 @@ Du kan skrive ut emballasjematerialets vekten på en faktura og angi hvem som be
 
 1. Gå til **Kunder \> Oppsett \> Kundeparametere**.
 1. På fanen **Oppdateringer**, på hurtigfanen **Faktura**, angir du **Skriv ut emballasjevekt** til **Ja**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

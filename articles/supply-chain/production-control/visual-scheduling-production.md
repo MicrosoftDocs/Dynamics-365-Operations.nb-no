@@ -160,3 +160,6 @@ Gantt-diagrammet kan åpnes fra følgende sider.
 
 [Visuell planlegging for produksjon (demonstrasjonsskript)](https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/how-to-articles/365finoptvisschep)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

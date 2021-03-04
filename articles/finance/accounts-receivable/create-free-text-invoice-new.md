@@ -85,3 +85,6 @@ Når du har kopiert linjene, kan du redigere informasjonen etter behov.
 Du kan opprette en fritekstfaktura fra en mal. Når du velger **Ny fra mal** i kategorien **Faktura**, kan du velge et malnavn og kundekontoen for den nye fritekstfakturaen. Standardverdier, for eksempel betalingsbetingelsene og betalingsmåten, kan fylles inn automatisk fra kunden, eller du kan bruke verdier som ble lagret i malen.
 
 Det opprettes en ny fritekstfaktura, og du kan redigere verdiene etter behov.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

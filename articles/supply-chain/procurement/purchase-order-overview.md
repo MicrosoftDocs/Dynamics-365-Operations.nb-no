@@ -92,3 +92,6 @@ Feltet **Godkjenningsstatus** brukes når en bestilling går gjennom en vurderin
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -76,3 +76,6 @@ Noter nummeret på bestillingen som du oppretter, og noter også varenummeret og
     * Når du har klikket OK, kontrollerer du meldingslinjen. Det skal være en melding om at operasjonen er fullført.  
 5. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -44,3 +44,6 @@ Følg disse trinnene for å tilordne brukere til rollene som brukes i aktivaleie
 1. Gå til **Systemadministrasjon \> Sikkerhet \> Tilordne brukere til roller**.
 2. Velg rollen **Vedlikehold leieavtale**, **Leieassistent** eller **Vis leie**, og velg deretter **Tilordne/utelate brukere manuelt**.
 3. Velg brukeren du vil tilordne til rollen, og velg deretter **Tilordne til rolle**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

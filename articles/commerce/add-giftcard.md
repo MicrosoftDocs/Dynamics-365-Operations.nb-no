@@ -94,3 +94,6 @@ Hvis du vil ha informasjon om hvordan du legger til en gavekortmodul på en kass
 [Støtte for eksterne gavekort](./dev-itpro/gift-card.md)
 
 [Oppdateringer for SDK og modulbibliotek](e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

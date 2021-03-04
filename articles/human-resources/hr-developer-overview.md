@@ -62,3 +62,6 @@ Denne utviklerveiledningen har en referanse til et API og egendefinerte felt. De
 - [Hva er nytt eller endret i Human Resources](hr-admin-whats-new.md)
 - [Administratorveiledning](hr-admin-overview.md)
 - [Brukerveiledning](hr-hrpro-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -55,3 +55,6 @@ Denne prosedyren oppretter konfigurasjonsregler som kan brukes til dimensjonsbas
     * Velg varenummeret som enten skal velges eller oppheves avhengig av den valgte metoden.  
 18. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

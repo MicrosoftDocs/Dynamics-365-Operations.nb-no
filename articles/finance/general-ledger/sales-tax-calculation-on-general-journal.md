@@ -157,3 +157,6 @@ Tabellen nedenfor viser den generelle regelen.
 | Innkommende merverdiavgift | Negativ              | Konto for innkommende merverdiavgift | Negativ (kredit)  |
 | Utgående merverdiavgift    | Positiv              | Konto for utgående merverdiavgift    | Negativ (kredit)  |
 | Utgående merverdiavgift    | Negativ              | Konto for utgående merverdiavgift    | Positive (debet)  |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

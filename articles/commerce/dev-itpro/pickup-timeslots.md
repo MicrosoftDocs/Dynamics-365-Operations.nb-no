@@ -123,3 +123,6 @@ Illustrasjonen nedenfor viser et eksempel på en e-handelsordre der et hentetids
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Henteinformasjonsmodul](../pickup-info-module.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -40,3 +40,6 @@ Siden **Oversikt over aktivaattributt** viser en egen linje for hvert aktivum. L
 3. Velg **OK**. En liste viser alle aktiva som bruker den valgte aktivatypen. For hvert aktivum vises alle tilknyttede attributtyper på samme linje.
 
 Siden **Aktivaattributt** viser en egen linje for hver attributtype som brukes for et aktivum. Du kan åpne denne siden ved å velge **Aktivastyring** \> **Forespørsler** \> **Aktiva** \> **Aktivaattributt**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

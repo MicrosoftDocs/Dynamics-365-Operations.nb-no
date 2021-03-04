@@ -95,3 +95,6 @@ En ordrespesifikk stykklisteberegning er en variant av en stykklisteberegning fo
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

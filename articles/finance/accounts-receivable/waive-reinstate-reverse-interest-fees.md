@@ -95,3 +95,6 @@ Du kan tilbakeføre rentetransaksjoner ved hjelp av **Historikk**-knappen i kate
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

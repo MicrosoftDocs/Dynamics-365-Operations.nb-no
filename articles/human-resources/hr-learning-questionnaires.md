@@ -44,3 +44,6 @@ Tabellen nedenfor inneholder koblinger til informasjon om viktige spørreskjemao
 | [Utforme et spørreskjema](hr-learning-design-questionnaires.md) | Denne artikkelen inneholder informasjon om hvordan du utformer et spørreskjema. Utformingen består av å definere forutsetninger, svar og spørsmål og deretter kombinere dem til et spørreskjema. |
 | [Distribuere og planlegge spørreskjemaer](hr-learning-distribute-questionnaires.md) | Denne artikkelen inneholder informasjon om hvordan du distribuerer et spørreskjema til respondenter, og hvordan du fyller ut spørreskjemaer. |
 | [Vise og evaluere resultatene i et spørreskjema](hr-learning-evaluate-questionnaire-results.md) | Denne artikkelen inneholder informasjon om hvordan du viser og evaluerer resultatene fra utfylte spørreskjemaer. |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

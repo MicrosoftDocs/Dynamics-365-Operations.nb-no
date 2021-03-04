@@ -64,3 +64,6 @@ Du kan også opprette vedlikeholdspersongrupper og knytte vedlikeholdspersoner t
 6. Hvis en ressursgruppe skal knyttes til den valgte vedlikeholdspersongruppen, velger du **Kopier fra ressursgruppe**. I **Gruppe**-feltet velger du ressursgruppen du vil kopiere kalenderinnstillinger fra. I feltet **Arbeidsgruppe** velger du arbeidergruppen du vil kopiere kalenderinnstillingene for ressursgruppen til. Dette trinnet er bare relevant hvis du vil at vedlikeholdspersoner skal bruke kalenderen som er relatert til en ressurs (arbeidssenter) under arbeidsordreplanlegging.
 
     Feltet på hurtigfanen **Detaljer** viser antall vedlikeholdspersoner som er definert for den valgte vedlikeholdspersongruppen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

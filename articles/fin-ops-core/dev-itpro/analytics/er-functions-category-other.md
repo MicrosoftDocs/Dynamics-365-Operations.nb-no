@@ -55,3 +55,6 @@ Domenespesifikke funksjoner for elektronisk rapportering (ER) kan brukes til å 
 [Formeldesigner i elektronisk rapportering](general-electronic-reporting-formula-designer.md)
 
 [Formelspråk i elektronisk rapportering](er-formula-language.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

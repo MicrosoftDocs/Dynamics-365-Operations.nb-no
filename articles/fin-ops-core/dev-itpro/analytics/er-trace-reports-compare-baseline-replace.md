@@ -207,3 +207,6 @@ Hvis du vil importere grunnlinjeinnstillinger fra en XML-fil som er lagret på M
 
 - [Spore genererte rapportresultater og sammenligne dem med grunnlinjeverdier](er-trace-reports-compare-baseline.md)
 - [Ressurser for Oppgaveregistrering](../user-interface/task-recorder.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

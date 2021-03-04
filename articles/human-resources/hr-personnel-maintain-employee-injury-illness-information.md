@@ -93,3 +93,6 @@ Oppgaveveiledningen dekker de grunnleggende trinnene for oppretting av en skade-
 36. Klikk Lagre.
     * Saksstatusen kan oppdateres når som helst.  Sett saken til arbeid pågår hvis behandlingen av skaden eller sykdommen pågår.  Når du lukker hendelsen, kan du bare legge til eller fjerne kostnader, behandlinger eller arkiveringer knyttet til hendelsen.  Hvis du vil endre annen informasjon, åpner du saken på nytt.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

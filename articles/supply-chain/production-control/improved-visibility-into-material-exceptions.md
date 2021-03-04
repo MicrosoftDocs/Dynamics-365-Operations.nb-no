@@ -67,3 +67,6 @@ Når flisen er valgt, åpnes **Alle produksjonsbølger**-siden. Denne siden er f
 Flisen **Åpent lagerarbeid som krever oppmerksomhet** viser antallet stykkliste- og formellinjer som er frigitt til lageret, som har ubehandlet arbeid og en råvaredato som er tidligere enn eller lik arbeidsområdedatoen. Linjene må også brukes av en operasjonsressurs som brukes på filteret i arbeidsområdet.
 
 Når flisen er valgt, åpnes **Alt arbeid**-siden. Denne siden er filtrert etter hvor mange åpne arbeidshoder som inneholder arbeidslinjer fra frigitte stykkliste- og formellinjer som oppfyller kriteriene for flisen. Fra **Alt arbeid**-siden kan du behandle arbeidet manuelt.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

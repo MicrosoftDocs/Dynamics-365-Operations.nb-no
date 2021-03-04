@@ -167,3 +167,6 @@ Følgende felt endrer virkemåten for posteringsprosessen.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

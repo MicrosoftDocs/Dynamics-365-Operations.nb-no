@@ -55,3 +55,6 @@ Denne prosedyren fokuserer på å tilbakestille en ugyldig Kanban-jobbstatus. De
     * Velg den samme jobben.  
     * Legg merke til at jobbstatusen for Kanban-jobben tilbakestilles til Planlagt, som angis av Tøm Kanban-ikonet.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

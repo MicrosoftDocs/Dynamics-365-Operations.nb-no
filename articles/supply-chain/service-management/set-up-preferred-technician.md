@@ -68,3 +68,6 @@ Du kan velge en hvilken som helst arbeider som en foretrukket tekniker for en se
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

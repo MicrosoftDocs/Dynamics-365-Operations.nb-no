@@ -105,3 +105,6 @@ Muligheten til å tilbakekalle en journal i en arbeidsflyt som har statusen uopp
 
 ## <a name="delete-journal-lines"></a>Slett journallinjer
 Muligheten til å slette alle journallinjer raskt aktiveres i en journal under **Funksjoner** > **Slett journallinjer**. Hvis du vil aktivere denne funksjonen, velger du **Slett ytelsesoptimaliseringer for journal** under **Funksjonsbehandling**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

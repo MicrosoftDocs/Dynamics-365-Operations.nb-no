@@ -88,3 +88,6 @@ Hvis du vil ha mer informasjon, kan du se [Lukke økonomimodulen ved periodeslut
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

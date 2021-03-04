@@ -85,3 +85,6 @@ Denne prosedyren fokuserer på å optimalisere kanban-størrelse og -antall for 
     * Legg merke til dette er det faste kanban-antallet på 4 fra beregningen av kanban-antall.  
 5. Klikk kategorien ListPanel.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

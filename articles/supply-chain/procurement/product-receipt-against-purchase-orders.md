@@ -69,3 +69,6 @@ Du får tilgang til denne siden fra handlingsgruppen **Mottak** på siden **Best
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

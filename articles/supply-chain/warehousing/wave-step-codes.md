@@ -93,3 +93,6 @@ Fremgangsmåten nedenfor hjelper deg med å garantere at etterfyllings malen du 
 6. I feltet **Bølgetrinnkode** velger du bølgetrinnkoden du valgte i etterfyllingsmalen.
 
 Du utfører disse trinnene for hver juridiske enhet.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

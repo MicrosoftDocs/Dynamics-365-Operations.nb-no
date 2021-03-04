@@ -92,3 +92,6 @@ Følg denne fremgangsmåten for å spore statusen for alle oppgaver som er tilor
 [Opprette oppgavelister og legge til oppgaver](task-mgmt-create-lists.md)
 
 [Oppgavebehandling på salgsstedet](task-mgmt-POS.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

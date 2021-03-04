@@ -70,3 +70,6 @@ Når du har opprettet de nødvendige livsløpstilstandene for aktiva, kan du def
 
 6. Velg **Oppdateringer av livsløpstilstander** for å definere livsløpstilstander for aktiva som kan følge en valgt livsløpstilstand.
 7. Du bruker hurtigfanen **Aktiva** hvis du håndterer aktiva du mottar for reparasjon. I delen **Innkommende/utgående** kan du velge livsløpstilstander for aktiva for å angi arbeidsflyten for et aktivum du mottar for reparasjon. Hvis du tilbyr lån av aktiva til kunder eller avdelinger i **Lån**-delen, kan du velge livsløpstilstander for lånte aktiva.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

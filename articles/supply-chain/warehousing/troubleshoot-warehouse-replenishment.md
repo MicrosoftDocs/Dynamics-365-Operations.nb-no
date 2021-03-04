@@ -40,3 +40,6 @@ Plukkarbeid er blokkert på grunn av avhengig etterfyllingsarbeid.
 ### <a name="issue-resolution"></a>Problemløsning
 
 Når du bruker etterfylling av bølgebehov, hvis en plukklokasjon må etterfylles for å opofylle kildeordrebehovet, vil systemet opprette både etter fyllingsarbeidet og plukkarbeidet. Det blokkerer imidlertid plukkarbeidet til etterfyllingsarbeidet er fullført. Denne virkemåten er med hensikt, fordi plukklokasjonen ikke har nok lager hvis ikke etterfyllingsarbeidet er fullført. Fullfør etterfyllingsarbeidet, og behandle deretter plukkarbeidet.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -193,3 +193,6 @@ Det er ett unntak på regelen om at partiprdre kun kan partibalanseres hvis form
 Hvis en formel inneholder en aktiv ingrediens for et produkt som er aktivert for lagerstyringsprosessene, men partinummeret er under reservasjonshierarkiet, er partiordren ikke tilgjengelig for partibalansering.
 
 En partiordre som ikke er tilgjengelig for partibalansering går gjennom den vanlige prosessyklusen for partiordrer.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

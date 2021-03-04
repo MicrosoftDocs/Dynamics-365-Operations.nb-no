@@ -51,3 +51,6 @@ Denne oppgaven bruker demonstrasjonsfirmaet USMF.
 16. Velg **Nytt periodeintervall**. Når det første periodeintervallet er angitt, kan du opprette nye perioder automatisk. Du kan gå tilbake og legge til nye periodeintervallene etter behov.  
 17. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

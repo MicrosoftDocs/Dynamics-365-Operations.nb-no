@@ -62,3 +62,6 @@ Denne fremgangsmåten viser hvordan du godkjenner leverandører for bestemte pro
 31. Lukk siden.
 32. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

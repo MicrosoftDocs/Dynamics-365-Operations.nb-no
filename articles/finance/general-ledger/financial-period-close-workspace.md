@@ -108,3 +108,6 @@ Når en avslutningstidsplan er fullført, velger du alternativet **Lukket** for 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

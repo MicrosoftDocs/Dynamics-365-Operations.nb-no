@@ -57,3 +57,6 @@ Bildet nedenfor viser opprettelsen av en ansattadressebok for en detaljhandelsbu
 [Oversikt over skjermoppsett](pos-screen-layouts.md)       
 
 [Konfigurere og installere Retail Hardware Station](retail-hardware-station-configuration-installation.md)  
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

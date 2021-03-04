@@ -117,3 +117,6 @@ Hvis du planlegger å bruke denne fremgangsmåten for en stor mengde transaksjon
 [FIRSTORNULL ER-funksjon](er-functions-list-firstornull.md)
 
 [WHERE ER-funksjonen](er-functions-list-where.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

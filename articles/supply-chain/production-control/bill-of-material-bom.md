@@ -118,3 +118,6 @@ Velg linjetypen **Leverandør** hvis produksjonsprosessen bruker en underleveran
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

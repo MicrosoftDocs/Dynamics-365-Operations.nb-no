@@ -85,3 +85,6 @@ Hvis du vil bruke den integrerte [Microsoft Accessibility Insights](https://acce
 [Supplere en produktside](enrich-product-page.md)
 
 [Supplere en kategorimålside](enrich-category-page.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

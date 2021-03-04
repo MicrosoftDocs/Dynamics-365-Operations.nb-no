@@ -82,3 +82,6 @@ Dette emnet viser hvordan du oppretter en direktelevering for en salgsordre. Du 
     - Direktelevering-siden fungerer som en arbeidsbenk som gir innkjøpsagenten en oversikt over alle salgsordrelinjene som skal leveres direkte, og den gjør det mulig å opprette de respektive bestillingene. I tillegg kan de vise og åpne direkteleveringsordrer og de bekreftede bestillingene i kategoriene Bekreftelse og Levering.  
     - Etter at du har opprettet en direkte leveringsordre, flyttes den automatisk til kategorien Bekreftelse. Du kan velge å bekrefte bestillingen direkte fra denne siden. Når bestillingen er bekreftet, flyttes den automatisk til kategorien Levering, som kan du registrere mottaket fra.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -73,3 +73,6 @@ Hvis du er interessert i å prøve Kundebetalingsinnsikt (forhåndsvisning), kan
 Forhåndsvisninger (1) kan bruke mindre personvern og færre sikkerhetstiltak enn Dynamics 365 Finance and Operations-tjenesten, (2) er ikke inkludert i tjenestenivåavtalen for denne tjenesten, (3) må ikke brukes til å behandle personlige data eller andre data som er underlagt juridiske eller forskriftsmessige krav, og (4) har begrenset støtte.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

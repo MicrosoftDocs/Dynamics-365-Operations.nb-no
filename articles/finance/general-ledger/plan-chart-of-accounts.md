@@ -60,3 +60,6 @@ Hvis du vil ha mer informasjon, se følgende emner:
 
 - [Finansdimensjoner](financial-dimensions.md)
 - [Opprette og tilordne avanserte regelstrukturer](tasks/create-assign-advanced-rule-structures.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

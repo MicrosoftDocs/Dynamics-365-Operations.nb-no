@@ -99,3 +99,6 @@ Hvis du vil rapportere en produksjonsnedetid, følger du prosessen som er beskre
  ## <a name="see-also"></a>Se også
 
  [Klargjøre for aktivering](hr-admin-go-live-prepare.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

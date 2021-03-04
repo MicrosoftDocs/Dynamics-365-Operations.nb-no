@@ -138,3 +138,6 @@ Slik viser og arbeider du med Gantt-diagrammet:
     - Hvis du vil endre planene for en vist arbeidsordre, velger du og drar den til riktig ny dato og nytt klokkeslett.
 
 1. Hvis du har gjort endringer, velger du **Lagre** i handlingsruten for å lagre dem.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

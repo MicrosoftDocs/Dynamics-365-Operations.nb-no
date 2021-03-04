@@ -69,3 +69,6 @@ Denne fremgangsmåten gjelder for en funksjon som ble lagt til i Dynamics 365 fo
 11. Klikk OK.
     * Se gjennom de genererte utdataene. Legg merke til at for hvert vedlegg er det opprettet en enkelt XML-node. Innholdet i vedlegget blir fylt ut i XML-utdataene i MIME (base64)-tekstformat.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

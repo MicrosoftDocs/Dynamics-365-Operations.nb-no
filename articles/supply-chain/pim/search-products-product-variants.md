@@ -87,3 +87,6 @@ For salgsordreregistrering er standard atferd å åpne siden **Produktsøk** nå
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -91,3 +91,6 @@ For hvert regelsett angir du feltet nedenfor:
 - **Alvorsgrad** – Velg alvorsgraden du vil opprette regler for. Du bruker siden **Alvorsgrader for teknisk endring** til å opprette og gi gradene navn. (Se forrige del hvis du vil ha mer informasjon.)
 
 Bruk knappene på **Regler**-hurtigfanen til å legge til eller fjerne en regel for gjeldende innstilling for alvorsgrad. Hver regel har et **Regel**-felt og et **Navn**-felt. Reglene etableres av systemet og angir hvilke typer endringer et produkt kan ha. Navnet angir endringstypen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

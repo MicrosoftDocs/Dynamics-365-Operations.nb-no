@@ -53,3 +53,6 @@ Dette er den tredje fremgangsmåten av åtte som forklarer hvordan du bygger kom
 20. Lukk siden.
 21. Lukk skjemaet **Detaljer om frigitt produkt**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

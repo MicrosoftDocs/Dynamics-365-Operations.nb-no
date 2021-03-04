@@ -131,3 +131,6 @@ Før du kan definere plukklinjegruppering, må du opprette noe kvalifisert utgå
 >    - Arbeidslinjer som har uferdig etterfyllingsarbeid.
 >    - Overplukking.
 >    - Ny tildeling av vare for plukking med mangler
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

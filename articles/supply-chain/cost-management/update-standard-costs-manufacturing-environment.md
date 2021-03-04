@@ -48,3 +48,6 @@ Hvert tilfelle krever nøye overveielse om hvordan standard kostpris skal oppdat
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

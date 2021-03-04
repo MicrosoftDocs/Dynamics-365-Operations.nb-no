@@ -65,3 +65,6 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

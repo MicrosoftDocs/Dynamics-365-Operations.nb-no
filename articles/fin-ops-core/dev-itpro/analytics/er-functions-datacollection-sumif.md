@@ -67,3 +67,6 @@ Hvis du vil ha mer informasjon og eksempler om hvordan du bruker denne funksjone
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Datainnsamlingsfunksjoner](er-functions-category-data-collection.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

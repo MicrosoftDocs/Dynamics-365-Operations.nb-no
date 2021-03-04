@@ -43,3 +43,6 @@ Denne fremgangsmåten viser hvordan du bruker leverandørsamarbeid til å se inf
 1. Gå til Leverandørsamarbeid > Forsendelseslager > Forsendelseslager for beholdning.
     * Siden Forsendelseslager for beholdning viser lageret du eier på kundens lager. Du kan vise flere dimensjoner, for eksempel område og lager, ved å klikke kategorien Visningsdimensjoner.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

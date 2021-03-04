@@ -186,3 +186,6 @@ For mer informasjon, se [Alternativer for beregning av hele beløp og intervall 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

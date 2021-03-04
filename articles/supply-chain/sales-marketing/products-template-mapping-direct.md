@@ -124,3 +124,6 @@ Illustrasjonen nedenfor viser et eksempel på en tilordning av malen i Datainteg
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

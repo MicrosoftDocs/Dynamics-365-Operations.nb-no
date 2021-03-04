@@ -303,3 +303,6 @@ En produksjonsordre på 10 deler opprettes for produkt D8100, "Lakkert kabinett"
     ![Kostnadssammenligningsdiagrammer](./media/subcontract35_cost-comparison-charts.png)
 
 Manglende oppsett i data.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

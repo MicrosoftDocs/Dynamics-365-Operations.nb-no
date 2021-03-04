@@ -90,3 +90,6 @@ Du kan konsolidere dataene ved å bruke alternativet **Eksport av firmasaldoer**
 Hvis du vil ha mer informasjon, se [Revaluering av valuta i et konsolideringsfirma](../general-ledger/currency-revaluation-consolidation-company.md).
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

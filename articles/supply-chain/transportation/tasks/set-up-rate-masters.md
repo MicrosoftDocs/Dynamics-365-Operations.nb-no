@@ -97,3 +97,6 @@ Denne fremgangsmåten viser hvordan du setter opp en vurderingsstandard. Logisti
     * Angi hvilket postnummer denne tilordningen av satsgrunnlag skal være gyldig fra.
 10. I feltet **Land/område for henting** skriver du inn USA.
 11. Velg **Lagre**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

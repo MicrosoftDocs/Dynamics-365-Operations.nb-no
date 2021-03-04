@@ -227,3 +227,6 @@ Leveringstid + Negative dager + Gjeldende dato - Behovsdato
 Systemet bruker bare de planlagte forsyningsordrene som er innenfor denne horisonten, og det oppretter en ny planlagt ordre utenfor den. Fordelen med dynamiske negative dager er at de tar med den individuelle produktleveringstiden, for å bruke eksisterende ordrer på nytt og unngå å opprette nye planlagte ordrer som ender opp med en senere dag på grunn av forsinkelser forårsaket av leveringstiden. 
 
 Hvis du vil ha mer informasjon, kan du se [Negative dager og dynamiske negative dager](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/more-about-dynamic-negative-days).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -85,3 +85,6 @@ Hvis `input`-argumentet er tomt, returneres det en ny, tom liste. Hvis enten `in
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Listefunksjoner](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

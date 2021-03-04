@@ -1373,3 +1373,6 @@ Windows 8 nettbrettapp inneholdt funksjonalitet for utgiftsregistrering og -godk
 |     <strong>Berørte produktområder</strong>     |                                              Økonomimodul                                              |
 |             <strong>Status</strong>             |                                      Fjernet fra og med Dynamics AX 2012                                      |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

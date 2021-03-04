@@ -91,3 +91,6 @@ Hvis **model.RoundOff**-parameteren er satt til **RoundOffType.RoundUp**, return
 [Andre funksjoner (spesifikke for forretningsområder)](er-functions-category-other.md)
 
 [Matematiske funksjoner](er-functions-category-mathematical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

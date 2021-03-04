@@ -62,3 +62,6 @@ Denne fremgangsmåten beskriver hvordan du oppretter en standard produktlivssykl
 > [!NOTE]
 > Anta at du har definert en aktiv tilstand og at du nå kan velge den aktive tilstanden slik at produktet kan brukes i Hovedplanlegging og stykklistenivåberegningen. Åpenbart så gir dette bare mening hvis alle produktdetaljene som kreves for konsekvent planlegging, er angitt.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

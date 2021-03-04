@@ -37,3 +37,6 @@ Eksport av data for en produktkonfigurasjonsmodell krever at du har minst én pr
 5. Klikk Eksporter produktmodell.
     * Nedlastingsvirkemåten varierer fra leser til leser avhengig av hvordan sikkerhetsinnstillingene er definert.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

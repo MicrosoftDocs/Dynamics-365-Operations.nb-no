@@ -813,3 +813,6 @@ Hvis du vil lære hvordan formateringsstrukturen kan synkroniseres med en ER-mal
 [Spore kjøringen av ER-formater for å feilsøke ytelsesproblemer](trace-execution-er-troubleshoot-perf.md)
 
 [Oversikt over administrasjon av forretningsdokument](er-business-document-management.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

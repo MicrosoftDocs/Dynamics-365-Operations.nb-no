@@ -346,3 +346,6 @@ Hvis tildelingsgrunnlaget for det forhåndsdefinerte dimensjonsmedlemmet Strøm,
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Tildelingsgrunnlag](allocation-bases.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

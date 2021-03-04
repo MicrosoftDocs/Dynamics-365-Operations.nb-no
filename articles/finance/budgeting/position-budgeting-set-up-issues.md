@@ -64,3 +64,6 @@ Datoene på prognosestillingens linje for kostnadselement må være innenfor fø
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

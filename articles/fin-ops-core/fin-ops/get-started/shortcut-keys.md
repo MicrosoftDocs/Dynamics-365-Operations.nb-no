@@ -255,3 +255,6 @@ Fra og med plattformoppdatering 11 kan brukere finne hurtigtaster som er tilgjen
 
 [Hurtigtaster for analyse for manglende konto](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

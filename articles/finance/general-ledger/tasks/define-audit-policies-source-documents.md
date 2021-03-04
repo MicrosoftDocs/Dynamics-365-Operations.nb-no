@@ -88,3 +88,6 @@ Dette emnet forklarer hvordan du angir og kjører overvåkingspolicyregler. Ekse
 57. Vis delen **Tilknytninger**.
 58. Finn og velg ønsket post i listen.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

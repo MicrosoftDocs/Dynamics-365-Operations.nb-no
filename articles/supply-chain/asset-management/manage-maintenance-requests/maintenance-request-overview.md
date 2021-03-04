@@ -73,3 +73,6 @@ Knappene i handlingsruten er ordnet i kategorier. Følgende tabell beskriver kor
 | Send ut aktivumlån                  | Velg et aktivumlån som skal være en midlertidig erstatning for aktivumet som er valgt i den valgte vedlikeholdsanmodningen. |
 | Returner lån av gjenstander                | Registrer aktivumlånet som returnert. |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -57,3 +57,6 @@ Hvis du vil ha mer informasjon, kan du se [Avskrivningsmetoder og -konvensjoner]
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

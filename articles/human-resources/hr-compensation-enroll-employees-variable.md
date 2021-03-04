@@ -41,3 +41,6 @@ Kompensasjons- og fordelslederen kan registrere ansatte i variable kompensasjons
 8. Aktiver/deaktiver utvidelsen av delen Organisasjonsmessige overstyringer.
     * Hvis den ansattes ytelse bør ta i betraktning ytelsen til ulike avdelinger eller en annen avdeling enn den som er tilordnet på den ansattes stilling, kan avdelingen overstyres. Prosent-kolonnen skal være 100 totalt.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -133,3 +133,6 @@ Følg denne fremgangsmåten for å opprette en liste over forslag til løsning o
 
 > [!NOTE]
 > Du kan endre navnene på feilsymptomer, områder, typer, årsaker og løsninger etter behov. Navneendringene gjenspeiles automatisk i relaterte feilregistreringer.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

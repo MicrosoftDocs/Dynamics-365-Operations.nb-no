@@ -41,3 +41,6 @@ Definer ansettelsestyper i Dynamics 365 Human Resources for å samsvare med arbe
    | **Beskrivelse** | En beskrivelse av ansettelsestypen. |
 
 4. Velg **Lagre**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

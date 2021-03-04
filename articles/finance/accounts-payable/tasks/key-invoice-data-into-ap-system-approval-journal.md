@@ -54,3 +54,6 @@ Dette emnet forklarer hvordan du bruker ankomstregistreringen til å opprette fa
 10. Velg **Poster**.
 11. Velg **Bilag** for å vise oppføringene som ble postert. Kontoen for fakturaen som venter på godkjenning, tilbakeføres og erstattes med den faktiske utgiftskontoen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

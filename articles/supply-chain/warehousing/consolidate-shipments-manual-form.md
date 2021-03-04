@@ -98,3 +98,5 @@ Følg disse trinnene for å frigi hver salgsordre du har opprettet for dette , t
 
 - [Policyer for forsendelseskonsolidering](about-shipment-consolidation-policies.md)
 - [Konfigurere policyer for forsendelseskonsolidering](configure-shipment-consolidation-policies.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

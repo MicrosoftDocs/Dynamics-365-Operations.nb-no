@@ -109,3 +109,6 @@ Hvis du vil angi godkjennere, følger du denne fremgangsmåten.
 1. På siden **Alternativer** i kategorien **Kontoer**, klikker du **Angi godkjenner**.
 2. I feltet **Bruker-ID for godkjenner** velger du ID-en for brukeren som må signere for en annen brukers endringer.
 3. I feltet **Signer for bruker-ID** velger du ID-en til brukeren som har endringer det må signeres for.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

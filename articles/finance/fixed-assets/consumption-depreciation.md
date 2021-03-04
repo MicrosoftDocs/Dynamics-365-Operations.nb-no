@@ -68,3 +68,6 @@ Avskrivningsforslaget den 31. januar er som følger: estimert antall × prosent 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

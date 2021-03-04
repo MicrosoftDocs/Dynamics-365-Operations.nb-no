@@ -44,3 +44,6 @@ Denne fremgangsmåten definerer en transportbegrensning for å hindre at en valg
 10. Klikk Lagre.
 11. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

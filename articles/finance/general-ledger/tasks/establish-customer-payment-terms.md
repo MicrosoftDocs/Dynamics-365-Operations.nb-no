@@ -57,3 +57,6 @@ Dette definerer et oppsett for kontantrabatt og forfallsdato. Denne oppgaveveile
 26. I feltet **Hovedkonto for leverandørrabatter** angir du hovedkontoen som kontantrabatten skal posteres til for kundefakturaer.
 27. Klikk **Lagre**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

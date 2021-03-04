@@ -260,3 +260,6 @@ Når aktivering er valgt for overlapping, vil resten av innstillingene (jobbstyr
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

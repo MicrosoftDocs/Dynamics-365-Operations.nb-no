@@ -69,3 +69,6 @@ Denne fremgangsmåten oppretter en Kanban-regel ved å bruke hendelsesinnstillin
     * Legg merke til at en Kanban for 27 ble opprettet for å behandle aktiviteten basert på den opprettede Kanban-regelen.  
     * Dette er det siste trinnet.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

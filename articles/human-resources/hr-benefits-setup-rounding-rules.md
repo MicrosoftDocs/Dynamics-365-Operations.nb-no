@@ -36,3 +36,6 @@ Du kan definere avrundings regler i Dynamics 365 Human Resources for å imøteko
 3. Angi verdier for **Avrund til nærmeste**, **Scenario** og **Avrundingsform**.
 
 4. Velg **Lagre**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

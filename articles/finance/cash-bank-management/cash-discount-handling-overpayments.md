@@ -139,3 +139,6 @@ Kontantrabattbeløpet reduseres fra 10,50 til 10,00. Betalingen og fakturaen bet
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -107,3 +107,6 @@ Hvis du vil slette en robots.txt-fil i Commerce, gjør du følgende:
 [Legge til støtte for et innholdsleveringsnettverk (CDN)](add-cdn-support.md)
 
 [Aktivere stedsbasert butikkregistrering](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

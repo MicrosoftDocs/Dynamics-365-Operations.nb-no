@@ -88,3 +88,6 @@ Følgende trinn i produksjonslivssyklusen kan forekomme for alle ordretyper i bl
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

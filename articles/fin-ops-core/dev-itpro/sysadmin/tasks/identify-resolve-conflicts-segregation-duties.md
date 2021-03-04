@@ -43,3 +43,6 @@ Dette emnet forklarer hvordan du identifiserer og løser konflikter i arbeidsdel
 1. Gå til **Navigasjonsrute > Moduler > Systemadministrasjon > Sikkerhet > Arbeidsdeling > Arbeidsdelingsregler.** Velg en regel.  
 2. Velg **Valider plikter og roller**. Hvis noen eksisterende roller bryter en valgt regel, vises en melding som inneholder navnet på rollen og navnene på pliktene som er i konflikt med hverandre. Administratoren må angi reduksjonen for sikkerhetsrisikoen eller endre rollen slik at den ikke er et brudd på regler for arbeidsdeling. Hvis ingen roller bryter en valgt regel, får du en melding som angir at alle roller er i samsvar.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

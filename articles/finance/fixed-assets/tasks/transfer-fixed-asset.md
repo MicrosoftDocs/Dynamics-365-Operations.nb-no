@@ -48,3 +48,6 @@ Denne oppgaveveiledningen overfører den økonomiske informasjonen for et anlegg
     * Se gjennom resultatene før du overfører anleggsmiddeltablåene.  
 10. Klikk på **Overfør**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

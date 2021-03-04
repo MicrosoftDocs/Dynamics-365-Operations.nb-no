@@ -140,3 +140,6 @@ Du kan justere forskjeller i den opptelte verdien og deretter godta den opptelte
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

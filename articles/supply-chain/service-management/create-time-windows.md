@@ -40,3 +40,6 @@ Du kan bruke tidsvinduer for å optimalisere planleggingen av serviceordrelinjen
 ## <a name="related-topics"></a>Relaterte emner
 
 [Tidsvinduer](time-windows.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

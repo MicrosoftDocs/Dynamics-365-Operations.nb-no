@@ -100,3 +100,6 @@ Merk at måleenhet for behovsprognose ikke trenger å ha noen bestemt betydning.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

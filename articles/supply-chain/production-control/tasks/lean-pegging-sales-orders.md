@@ -57,3 +57,6 @@ Denne prosedyren fokuserer på å validere utligningstreet fra en salgslinje der
 5. Velg Salgslinje 000832 \ Kanban 000558\ Problem for L0001\ Kanban 000559 i treet.
     * Jobben for den andre Kanbanen planlegges også fordi hele utligningstreet planlegges. Legg merke til at Kanban-jobbstatusen endres fra Ikke planlagt til Planlagt.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

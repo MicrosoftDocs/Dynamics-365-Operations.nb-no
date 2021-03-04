@@ -157,3 +157,6 @@ Illustrasjonen nedenfor viser virkningene av LIFO-lagermodellen når merking mel
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

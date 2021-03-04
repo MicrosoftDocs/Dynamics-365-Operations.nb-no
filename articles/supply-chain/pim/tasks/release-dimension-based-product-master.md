@@ -41,3 +41,6 @@ Denne fremgangsmåten viser hvordan du frigir en produktstandard som skal brukes
 7. Klikk Neste.
 8. Klikk Finish.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

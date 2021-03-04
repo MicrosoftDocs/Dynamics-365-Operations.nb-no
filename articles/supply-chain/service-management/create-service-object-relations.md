@@ -72,3 +72,6 @@ Bruk følgende fremgangsmåte for opprette en serviceobjektrelasjon for en servi
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

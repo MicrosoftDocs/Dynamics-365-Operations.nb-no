@@ -79,3 +79,6 @@ Denne prosedyren viser hvordan du konfigurerer et fordelsprogram med to fordelsl
 39. Lukk siden.
 40. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

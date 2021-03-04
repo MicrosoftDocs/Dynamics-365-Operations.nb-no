@@ -411,3 +411,6 @@ Produktet kan nå frigis til *USMF*-firmaet og deretter sendes til kunden. Følg
 1. Velg hvert firma du vil frigi produkter til.
 1. Velg **OK** for å lukke dialogboksen **Frigivelser** og gå tilbake til endringsordren.
 1. Velg **Behandle** i handlingsruten i fanen **Endringsordre** i **Produktfrigivelser**-gruppen for å frigi de berørte produktene til de valgte firmaene. Du kan også velge **Frigi produktstruktur** for å starte frigivelsesprosessen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -72,3 +72,6 @@ Hvis du vil ha mer informasjon om hvordan du legger til en navigasjonsmenymodul 
 [Informasjonskapselsamsvar](cookie-compliance.md)
 
 [Topptekstmodul](author-header-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

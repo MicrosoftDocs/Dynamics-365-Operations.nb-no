@@ -55,3 +55,6 @@ Uttrykket `FIRSTORNULL(SPLIT("",1)).Value` returnerer en tom streng (**""**).
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Listefunksjoner](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

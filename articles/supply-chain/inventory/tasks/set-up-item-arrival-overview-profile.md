@@ -54,3 +54,6 @@ Dette emnet fokuserer på oppsettet for en profil for ankomstoversikt. Profil fo
 17. Velg **Lagre**.
 18. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

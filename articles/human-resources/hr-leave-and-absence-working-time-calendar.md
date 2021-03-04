@@ -75,3 +75,6 @@ Hvis du har aktivert forhåndsversjonsfunksjonen for korreksjon for helligdager 
 
 - [Oversikt over permisjon og fravær](hr-leave-and-absence-overview.md)
 - [Konfigurere permisjons- og fraværstyper](hr-leave-and-absence-types.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

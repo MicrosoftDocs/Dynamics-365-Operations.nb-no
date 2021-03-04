@@ -47,3 +47,6 @@ Når du oppretter et servicestadium, kan du opprette flere alternativer, eller g
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

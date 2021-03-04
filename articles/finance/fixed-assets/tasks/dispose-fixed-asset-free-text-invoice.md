@@ -41,3 +41,6 @@ Dette emnet beskriver hvordan du kvitter deg med et anleggsmiddel ved hjelp av f
 10. Angi eller velg en verdi i feltet **Anleggsmiddel**.
 11. Velg **Poster**. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

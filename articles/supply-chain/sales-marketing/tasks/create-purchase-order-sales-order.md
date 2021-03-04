@@ -69,3 +69,6 @@ Denne fremgangsmåten viser hvordan du oppretter en bestilling som er basert på
     - **Referansepartiet** garanterer at kostnadene fra det gjeldende kjøpet belastes den tilknyttede salgsordren.  
     - Du kan navigere til den opprinnelige salgsordren ved å åpne koblingen i feltet **Referansenummer**.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

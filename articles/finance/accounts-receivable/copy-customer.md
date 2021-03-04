@@ -64,3 +64,6 @@ Du kan også kopiere kunder ved hjelp av søkefunksjonen for mva-organisasjonsnu
 
 1. Alternativet **Kopier kunde** vises. Dette alternativet er satt til **Nei** som standard. Hvis du vil kopiere kunden til gjeldende juridisk enhet, setter du alternativet til **Ja**. 
 2. Velg **Velg**. Den nye kunden opprettes.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

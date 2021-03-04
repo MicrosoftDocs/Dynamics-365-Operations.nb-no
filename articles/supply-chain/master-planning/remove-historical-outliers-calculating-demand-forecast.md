@@ -51,3 +51,6 @@ Du kan utelate utestående for å forbedre nøyaktighet av prognosen. Denne oppg
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

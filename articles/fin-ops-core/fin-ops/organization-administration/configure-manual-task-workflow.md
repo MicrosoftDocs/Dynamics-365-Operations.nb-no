@@ -381,3 +381,6 @@ Når den manuelle oppgaven tilordnes en bruker, må brukeren utføre en handling
 5. Merk av for **Deleger** hvis brukeren skal kunne tilordne oppgaven til andre brukere.
 6. Merk av for **Tilordne på nytt** hvis brukeren skal kunne tilordne oppgaven på nytt til andre brukere i arbeidselementkøen.
 7. Merk av for **Frigi** hvis brukeren skal kunne tilordne oppgaven på nytt til arbeidselementkøen. En annen bruker kan deretter fullføre oppgaven.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -43,3 +43,6 @@ Illustrasjonen nedenfor viser et eksempel på listesiden **Vedlikeholdsjobber fo
 
 Hvis du vil ha en kort beskrivelse av knappene på listesiden **Vedlikeholdsjobber for aktive arbeidsordrer**, kan du se [Innføring i arbeidsordrer](../work-orders/introduction-to-work-orders.md), der identiske knapper er beskrevet.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

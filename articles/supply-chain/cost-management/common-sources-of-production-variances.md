@@ -63,3 +63,6 @@ Her er noen vanlige kilder til et avvik i **produksjonserstatning**:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

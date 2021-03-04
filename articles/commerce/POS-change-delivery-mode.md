@@ -47,3 +47,6 @@ Når du har valgt den nye leveringsmåten, vises transaksjonssiden. Hvis du vil 
 [Opprette telefonsenterordrer](tasks/create-call-center-orders.md)
 
 [Tilpasse transaksjons-e-poster etter leveringsmåte](customize-email-delivery-mode.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

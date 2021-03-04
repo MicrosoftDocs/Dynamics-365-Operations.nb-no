@@ -72,3 +72,6 @@ En leveringsadressemodul kan bare legges til i en kassemodul. Hvis du vil ha mer
 [Ordredetaljermodul](order-confirmation-module.md)
 
 [Gavekortmodul](add-giftcard.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

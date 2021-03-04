@@ -430,3 +430,6 @@ Her er et eksempel på en kostnadsdistribusjonsregel hvis formeltildelingsgrunnl
 |    CC002    |     FI      | 3 075,00  | (3 075,00 ÷ 18 162,50) × beløp  |
 |    CC003    |     LO      | 13 250,00 | (13 250,00 ÷ 18 162,50) × beløp |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

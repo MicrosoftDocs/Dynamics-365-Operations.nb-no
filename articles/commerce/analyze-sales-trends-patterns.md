@@ -43,3 +43,6 @@ Brukerne kan også studere salgstrender og -mønstre etter time på tvers av for
 - Arbeidsområdet **Butikkadministrasjon** &gt; **Retail og Commerce** &gt; **Kanaler** &gt; **Butikkadministrasjon** &gt; **Rapporter** &gt; **Rapport for kanalsalg etter time**
 - Arbeidsområdet **Finans for butikk** &gt; **Retail og Commerce** &gt; **Kanaler** &gt; **Finans for butikk** &gt; **Rapporter** &gt; **Rapport for kanalsalg etter time**
 - Delen **Forespørsler og rapporter** &gt; **Retail og Commerce** &gt; **Forespørsler og rapporter** &gt; **Salgsrapporter** &gt; **Rapport for kanalsalg etter time**
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

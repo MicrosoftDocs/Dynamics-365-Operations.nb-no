@@ -134,3 +134,6 @@ Hvis du vil bruke malstykklister, må du angi to nummerserier. Definer en nummer
  
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

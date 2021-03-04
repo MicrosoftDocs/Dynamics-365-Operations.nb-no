@@ -96,3 +96,6 @@ Finansrapporteringskomponentene nedenfor gjør det enkelt å opprette, vise og p
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 [Generer finansrapporter](generate-financial-report.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

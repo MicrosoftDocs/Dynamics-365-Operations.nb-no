@@ -116,3 +116,6 @@ Den følgende illustrasjonen viser avmerkingsboksen **Aktiver kobling til kjøp 
 [Opprette anbefalinger med demonstrasjonsdata](product-recommendations-demo-data.md)
 
 [Vanlige spørsmål om produktanbefalinger](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

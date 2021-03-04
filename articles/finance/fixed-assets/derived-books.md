@@ -48,3 +48,6 @@ Hvis du vil ha mer informasjon, kan du se [Postere med avledede tablåer](post-d
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

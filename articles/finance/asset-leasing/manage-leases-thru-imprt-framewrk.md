@@ -83,3 +83,6 @@ Hvis du bruker rammeverket for import av leieavtale til å oppdatere leieavtaler
 
 1. Gå til **Aktivaleie \> rammeverket for leieimport \> Oppsett \> Oppdater feltvalg**.
 2. På siden som vises, velger du feltene som skal oppdateres, og deretter velger du den grønne pilen for å flytte dem til listen for **Valgte felt**. Bare felt i listen for **Valgte felt** kan oppdateres ved å bruke leieimportserien.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

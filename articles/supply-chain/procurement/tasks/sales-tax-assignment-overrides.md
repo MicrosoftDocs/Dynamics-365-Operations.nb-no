@@ -57,3 +57,6 @@ Denne fremgangsmåten beskriver hvordan du tilordner mva-grupper til handelskana
 21. Klikk koblingen i den valgte raden i listen.
 22. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

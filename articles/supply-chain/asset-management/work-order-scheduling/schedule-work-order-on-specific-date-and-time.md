@@ -56,3 +56,6 @@ Hvis en arbeidsordre må planlegges på en bestemt dato *og* klokkeslett, kan du
 >[!NOTE]
 >Hvis du vil planlegge en vedlikeholdsperson for arbeidsordren, må vedlikeholdspersonen være tilgjengelig på forventet startdato og -klokkeslett. Arbeidertilgjengelighet defineres i [arbeiderkalenderen](../work-order-scheduling/maintenance-worker-calendar-and-scheduling.md). 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

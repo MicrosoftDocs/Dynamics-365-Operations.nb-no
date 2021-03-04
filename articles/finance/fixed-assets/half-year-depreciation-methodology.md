@@ -42,3 +42,6 @@ Det første året i bruk avsluttes i desember 2020, som betyr at slutten av anle
    [![Avskrivningsplan for avskrivningskonvensjon i halvt år](./media/half-yr-dprectn-cnvntn.png)](./media/half-yr-dprectn-cnvntn.png)
 
 De utvidede avskrivningsperiodene som er lagt til av halvårskonvensjonen, gir mer nøyaktig tildeling av avskriving. Avskrivningen på seks måneder representerer avskrivningsutgifter mer likt, som er nyttig for rapportering i resultatregnskapet.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

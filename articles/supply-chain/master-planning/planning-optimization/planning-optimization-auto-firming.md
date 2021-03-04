@@ -67,3 +67,6 @@ Både planleggingsoptimalisering og planleggingsmotoren som er innebygd i Micros
 - Automatisk autorisasjon er basert på behovsdatoen (sluttdato).
 - Hvis du vil ha hjelp til å sikre at ordrer blir autorisert innen forfallstid, må autorisasjonshorisonten være lenger enn leveringstiden.
 - Hvis du vil autorisere alle ordrer som må starte i løpet av den gjeldende uken, må autorisasjonshorisonten være leveringstiden pluss én uke.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -140,3 +140,6 @@ Kjør prosedyren Definere Bankfasilitetene og posteringsprofilene og Opprette en
 3. Klikk koblingen i den valgte raden i listen.
     * Kontroller at forsendelsesstatus = betaling mottatt og saldobeløp = 0,00.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

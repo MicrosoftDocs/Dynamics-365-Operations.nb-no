@@ -44,3 +44,6 @@ Finansfordelingsregler kan brukes for budsjettplaner. Når du bruker finansforde
 > [!NOTE]
 > Du kan ikke bruke konserinterne finansfordelingsregler for budsjettplanlegging.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

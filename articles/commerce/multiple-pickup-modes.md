@@ -86,3 +86,6 @@ Når flere henteleveringsmåter er tilgjengelige for en kanal, gis det en bedre 
 ## <a name="considerations-for-distributed-order-management"></a>Hensyn for behandling av distribuert ordre
 
 Funksjonene [Behandling distribuert ordre (DOM)](https://docs.microsoft.com/dynamics365/commerce/dom) i Commerce ignorerer alle salgslinjer som er merket for henting i butikk. Disse funksjonene er oppdatert for å sikre at salgslinjer som er koblet til konfigurerte henteleveringsmåter, omgår DOM-logikken og ikke blir tilordnet på nytt til et nytt oppfyllelseslager.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -117,3 +117,6 @@ Disse to lagerjournalene støtter bare *Initialiser lager*-scenarioet som en del
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Dataenheter](../../dev-itpro/data-entities/data-entities.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -305,3 +305,6 @@ De systemstyrte arbeidssekvensspørringene er *inklusive*. Det er viktig at du h
 I eksemplet fra dette scenariet ble derfor arbeids-ID *4* også hentet av spørringen. Når den ble opprettet, ble to linjer lagt til: én for 25 ea og en annen for 10 ea. Arbeidet ble fortsatt presentert for brukeren fordi minst én arbeidslinje har et antall på mindre enn 20 ea.
 
 Avhengig av scenariet kan du forhindre denne virkemåten ved å bruke arbeidspauser.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

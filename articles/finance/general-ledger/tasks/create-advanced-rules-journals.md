@@ -58,3 +58,6 @@ Denne fremgangsmåten viser hvordan du oppretter avanserte regler for journaler.
 4. Merk av for gruppen som du vil tillate postering for dette journalnavnet for, i treet.
 5. Klikk **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

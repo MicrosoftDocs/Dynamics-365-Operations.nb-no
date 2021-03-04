@@ -65,3 +65,6 @@ Hver av de standard Common Data Service-enhetene utvides med referanser til **In
 7. Når du har utvidet enheten **Tilbud**, bruker du et filter med `CUSTGROUP !=  "<company>"` som spørrestreng.
 
     :::image type="content" source="media/filter-cust-group-edit.png" alt-text="Salgstilbudshode, rediger spørring":::
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

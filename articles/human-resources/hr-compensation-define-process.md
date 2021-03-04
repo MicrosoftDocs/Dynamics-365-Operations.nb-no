@@ -100,3 +100,6 @@ Kompensasjonsprosesser brukes til å fastslå nye kompensasjonsbeløp og -bonuse
 10. Klikk Godkjent.
     * Etter at posten er godkjent, kan den lastes til den ansattes offisielle kompensasjonspost. Den nye kompensasjonen trer i kraft på transaksjonsdatoen som er angitt i kompensasjonsprosessen.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

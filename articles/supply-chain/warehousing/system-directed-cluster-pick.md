@@ -207,3 +207,6 @@ Før du kan definere systemstyrt gruppeplukking, må du opprette kvalifisert utg
 1. Det siste trinnet på mobilenheten er å **Plassere** gruppen i den endelige plasseringen. Velg **OK**
     - Når plasseringsoperasjonen er bekreftet, lukkes og brytes gruppen, basert på verdien som du angir for **Pausegruppe ved** -feltet i gruppeprofilen. Arbeids-IDer lukkes også.
 1. En "Gruppe fullført"-melding vises på mobilenheten.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

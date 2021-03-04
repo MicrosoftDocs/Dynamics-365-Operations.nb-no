@@ -62,3 +62,6 @@ Følgende data brukes til å fylle ut rapportene i Power BI-innholdet **Opplæri
 | Posisjon         | Posisjon, tittel og fulltidsekvivalente (FTE)                  | Kursagenda, kursdeltakere |
 | Navn på ansatt    | Fornavn, etternavn og fullt navn                             | Kursdeltakere |
 | Ansattittel   | Tittel og ansiennitetsdato                                         | Kursdeltakere |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

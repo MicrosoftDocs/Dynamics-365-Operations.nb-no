@@ -41,3 +41,6 @@ Katalogen nedenfor er ordnet fra kjernekunnskap til bestemte områder, og fra de
 | Innhold  | beskrivelse  | Formater |
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|---------------------------------------------------------------------------|
 | [Grunnleggende om Dynamics 365](https://docs.microsoft.com/learn/certifications/d365-fundamentals?wt.mc_id=learningredirect_certs-web-wwl) | Vis at du forstår Microsoft Dynamics 365: Power Platform, skybegreper, lisensieringsalternativer og alternativer for distribusjon og frigivelse. | Eksamen: kostnaden varierer etter område |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

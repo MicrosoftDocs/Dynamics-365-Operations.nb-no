@@ -43,3 +43,6 @@ Serviceobjekter er en kundes aktiva og produkter som du kan utføre en tjeneste 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

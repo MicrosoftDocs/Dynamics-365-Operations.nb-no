@@ -96,3 +96,6 @@ Arbeidsområdet består av et sammendrag av fliser og to lister. Listen **Åpne 
 ### <a name="manually-creating-a-new-released-product"></a>Manuell oppretting av et nytt frigitt produkt
 
 Du kan manuelt opprette et frigitt produkt i en enkelt kjøring, avhengig av organisasjonens forretningsprosesser og eventuelle regler for hvorvidt denne funksjonen skal brukes. Denne funksjonen oppretter et nytt produkt, og frigjør det automatisk til den gjeldende juridiske enheten. For å opprette et nytt produkt klikker du **Frigitte produkter** i arbeidsområdet **Vedlikehold av frigitt produkt** eller på listesiden **Frigitt produkt**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

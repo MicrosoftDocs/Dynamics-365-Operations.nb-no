@@ -48,3 +48,6 @@ Denne prosedyren hjelper med å opprette finansdimensjoner for salgsstedskasser,
 17. Finn og velg dimensjonsverdien i listen for kassen som oppdateres.
 18. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

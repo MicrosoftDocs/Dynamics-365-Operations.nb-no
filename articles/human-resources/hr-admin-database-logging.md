@@ -87,3 +87,6 @@ Gjør følgende for å konfigurere opprydding i databaselogg:
    - Opprettingsdato og -klokkeslett
 
 3. Bruk kategorien **Opprydding i databaselogg** for å bestemme når du vil kjøre loggoppryddingsoppgaven. Som standard er databaselogger tilgjengelige i 30 dager.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

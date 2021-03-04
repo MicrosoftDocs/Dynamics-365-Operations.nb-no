@@ -73,3 +73,6 @@ Når du bruker Bla antall planer du oppretter opptelling, kan du lede faktiske o
 14. Klikk OK.
 15. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

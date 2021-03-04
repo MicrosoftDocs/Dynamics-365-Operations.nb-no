@@ -62,3 +62,6 @@ I dette eksemplet må bare varenummeret A0001 telles i lager 61.
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Syklustelling](cycle-counting.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

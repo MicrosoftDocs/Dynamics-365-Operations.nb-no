@@ -108,3 +108,6 @@ For leverandørbetalinger bruker forfall til- og forfall fra-transaksjonene i de
 
 ## <a name="withholding-tax"></a>Kildeskatt
 Leverandørkontoen som er knyttet til fakturaen, brukes til å bestemme om kildeskatt skal beregnes. Hvis det brukes kildeskatt, blir den beregnet i den juridiske enheten som er knyttet til fakturaen. Hvis de juridiske enhetene bruker forskjellige valutaer, brukes valutakursen fra den juridiske enheten som er knyttet til fakturaen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

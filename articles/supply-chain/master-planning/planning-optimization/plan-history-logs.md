@@ -47,3 +47,6 @@ I tillegg til å se starttid og status for jobber, kan du vise loggen for en bes
 [Bruke filtre på en plan](plan-filters.md)
 
 [Annullere en planleggingsjobb](cancel-planning-job.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

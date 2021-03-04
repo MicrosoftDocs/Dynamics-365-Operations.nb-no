@@ -81,3 +81,6 @@ Når du oppretter en ny serviceordre for en serviceavtale som en servicenivåavt
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

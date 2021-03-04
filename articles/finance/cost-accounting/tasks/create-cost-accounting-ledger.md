@@ -38,3 +38,6 @@ Kostnadsregnskapsfinans representerer den generelle rapporteringsenheten. Det de
 8. Angi eller velg en verdi i feltet Statistisk dimensjon.
 9. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

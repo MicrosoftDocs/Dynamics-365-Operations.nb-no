@@ -101,3 +101,6 @@ Dette emnet viser hvordan du aktiverer automatisk utskrift av en SSCC-etikett (S
 7. Velg **Lagre**.
 8. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

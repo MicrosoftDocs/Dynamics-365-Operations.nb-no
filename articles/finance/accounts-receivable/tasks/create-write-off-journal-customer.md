@@ -84,3 +84,6 @@ Denne oppgaveveiledningen viser hvordan du definerer parameterne for avskrivning
 5. Klikk **OK**.
 6. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

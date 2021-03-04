@@ -253,3 +253,6 @@ Fullfør fremgangsmåten nedenfor for å opprette en ny leieavtale.
 
    Siden **Transaksjoner for leieforpliktelse** viser den opprinnelige gjenkjenningen, rentebetalingen for leie, leiebetaling og saldo for leieforpliktelse. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -89,3 +89,6 @@ Du vil se tilleggstransaksjoner for rapporteringsvalutabeløpene.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

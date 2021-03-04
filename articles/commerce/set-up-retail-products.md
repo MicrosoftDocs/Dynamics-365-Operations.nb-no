@@ -40,3 +40,6 @@ Før du kan tilby produkter for videresalg i handelskanalene, må du opprette og
 4. **Legg til produkter i sortimenter.** Et sortiment representerer en samling produkter som du tilbyr i kanalene dine. Du kan definere ett eller flere sortimenter, og hvert produkt kan tilordnes til ett eller flere sortimenter. Du kan tilordne produkter til kanaler ved å tilordne sortimentene til disse kanalene. Når du oppretter et sortiment, kan du legge til produkter som ennå ikke er frigitt til en juridisk enhet. Du må imidlertid frigi produktene til en juridisk enhet før de kan gjøres tilgjengelige for kanalene.
 5. **Legge til produkter i navigasjonshierarkier.** Før du kan bla gjennom produkter elektronisk eller på et salgssted, må de kategoriseres i et navigasjonshierarki for handel.
 6. **Legg til produkter i kataloger.** Selv om dette trinnet er valgfritt for salgssted, krever Internett-butikker at produkter skal inkluderes i minst én katalog.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

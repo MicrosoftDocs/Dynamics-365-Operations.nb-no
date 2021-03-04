@@ -52,3 +52,6 @@ Du får en melding om å oppdatere standard betalingsverdier for den tilsvarende
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

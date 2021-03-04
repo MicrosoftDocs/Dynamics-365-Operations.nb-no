@@ -57,3 +57,6 @@ Denne oppgaven ble opprettet med USSI-datasettet.
 21. Skriv inn en verdi i feltet **Kommentar**.
 22. Klikk **Send**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

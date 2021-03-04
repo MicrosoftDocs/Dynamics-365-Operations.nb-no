@@ -102,3 +102,6 @@ Denne fremgangsmåten viser hvordan du setter opp produktnummerterminologi for k
 43. Lukk siden.
 44. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

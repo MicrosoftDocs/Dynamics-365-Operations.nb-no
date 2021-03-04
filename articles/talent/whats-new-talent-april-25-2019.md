@@ -80,3 +80,6 @@ Med denne endringen oppdages duplikater når du angir navnefelt, og statusen vis
 
 ### <a name="email-support-for-alerts"></a>E-poststøtte for varsler
 Med Platform update 26 for Finance and Operations kan brukere opprette varslingsregler som automatisk leverer e-postmeldinger til kontakter når de utløses av en hendelse.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

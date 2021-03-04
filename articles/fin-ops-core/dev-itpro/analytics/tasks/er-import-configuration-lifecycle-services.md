@@ -103,3 +103,6 @@ I dette eksemplet skal du velge ønsket versjon av ER-konfigurasjonen og importe
     For dette eksemplet velger du versjonen av konfigurasjonen som har statusen **Delt**.
 
     Legg merke til at delt versjon 1 av den valgte datamodellkonfigurasjonen nå også er tilgjengelig.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

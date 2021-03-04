@@ -44,3 +44,6 @@ Denne fremgangsmåten viser hvordan du låner ut en vare til en arbeider og regi
 2. Klikk Rediger.
 3. Angi en dato i Faktisk retur-feltet.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

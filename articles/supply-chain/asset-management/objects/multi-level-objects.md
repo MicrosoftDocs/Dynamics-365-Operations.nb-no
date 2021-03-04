@@ -62,3 +62,6 @@ Hvis et aktivum har relaterte underordnede aktiva, kan du bare slette det hvis d
 
 > [!NOTE]
 > Hvis du ikke kan slette et aktivum ved hjelp av denne fremgangsmåten, er det en annen måte å håndtere sletting på, ved å definere en livsløpstilstand for et aktivum Du kan for eksempel definere en **kassert** eller **slettet** livsløpstilstand på siden **Livsløpstilstander for aktiva**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

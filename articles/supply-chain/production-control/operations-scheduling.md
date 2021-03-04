@@ -84,3 +84,6 @@ Hvis du arbeider med begrenset materiale, avhenger planlegging også av tilgjeng
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

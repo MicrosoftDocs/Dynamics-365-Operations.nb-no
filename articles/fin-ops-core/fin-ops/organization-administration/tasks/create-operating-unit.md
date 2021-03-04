@@ -41,3 +41,6 @@ En driftsenhet er en organisasjon som brukes til å fordele kontrollen over øko
     + Angi informasjon om kommunikasjonsmetoder, for eksempel e-postadresse, URL-adresser og telefonnumre. Klikk Ny for å angi en ny kommunikasjonspost. Hvis du vil endre en eksisterende kommunikasjonspost, klikker du på **Flere alternativer > Avansert**.   
 6. Du kan også endre **driftsenhetsnummeret** etter behov. Vær oppmerksom på at dette nummeret er en unik idenitifier for den tilsvarende **Part**-posten, og kan ikke være det samme som en annen driftsenhet.
 7. Velg **Lagre**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

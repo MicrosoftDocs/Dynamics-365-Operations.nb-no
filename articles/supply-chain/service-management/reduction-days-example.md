@@ -121,3 +121,6 @@ Når transaksjonene for mars 2011 blir fakturert, blir salgsprisen på EUR 200 r
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

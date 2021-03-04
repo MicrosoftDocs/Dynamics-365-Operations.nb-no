@@ -239,3 +239,6 @@ En garanti er en tjeneste som er tilgjengelig for et bestemt, unikt produkt. I D
 [Definere sortimenter](set-up-assortments.md)
 
 [Oversikt over nummerserier](../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -115,3 +115,6 @@ Tabellen nedenfor inneholder mer informasjon om flere handlinger som er tilgjeng
 | Tilgjengelighet         | Vis ATP-informasjonen for den valgte variantkombinasjonen for det valgte stedet. |
 | Vis alle lokasjoner   | Bytt til visningen for standard lageroppslag, og uthev lagertilgjengelighetsinformasjon for varevarianten i alle butikkene i butikklokatorgruppen, og også i distribusjonssentre av typen **Standard**. |
 | Vis produktdetaljer | Omdiriger brukeren til **Produktdetaljer**-siden for den tilknyttede produktstandarden. |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

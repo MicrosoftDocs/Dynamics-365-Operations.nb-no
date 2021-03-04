@@ -94,3 +94,6 @@ Forutsetninger:
 12. Klikk Finish.
 13. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

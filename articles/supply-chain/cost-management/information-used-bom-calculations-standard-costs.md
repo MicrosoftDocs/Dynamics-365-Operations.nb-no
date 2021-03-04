@@ -84,3 +84,6 @@ Det kan angis flere kilder til informasjon når en stykklisteberegning initialis
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

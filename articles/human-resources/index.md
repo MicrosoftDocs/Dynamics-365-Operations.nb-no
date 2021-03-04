@@ -78,3 +78,6 @@ Human Resources knytter sammen person- og driftsdata for å hjelpe deg med å op
 [Administrere permisjon og fravær](hr-leave-and-absence-overview.md)</br>
 [Utvikle ansatte](hr-develop-performance-management-overview.md)</br>
 [Opprett kurs](hr-learning-courses.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

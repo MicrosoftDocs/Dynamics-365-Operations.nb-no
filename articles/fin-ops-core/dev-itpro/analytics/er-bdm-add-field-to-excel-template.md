@@ -169,3 +169,6 @@ Den endrede malen brukes til å generere rapporten fritekstfaktura for den valgt
 [Oversikt over administrasjon av forretningsdokument](er-business-document-management.md)
 
 [Utforme en konfigurasjon for generering av rapporter i OPENXML-format](tasks/er-design-reports-openxml-2016-11.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

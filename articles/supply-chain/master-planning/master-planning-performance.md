@@ -162,3 +162,6 @@ Før dekningstrinnet starter, er det et trinn før dekning der varer med dekning
 - **Én krevende rutine om gangen** – Ikke kjør hovedplanlegging sammen med en annen krevende rutine.
 - **Se gjennom øktloggen.**
 - **Filtrering av varer** – Bruk livssyklustilstanden til å utelate varer fra hovedplanleggingskjøringen. (Ikke bruk varenumrene.)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

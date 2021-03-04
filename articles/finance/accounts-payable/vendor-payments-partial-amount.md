@@ -54,3 +54,6 @@ Du kan foreta en delbetaling der beløpet som fremdeles skal utlignes, er svært
 
 
 Hvis du vil ha mer informasjon, kan du se [Oversikt over leverandørbetaling](../cash-bank-management/tasks/vendor-payment-overview.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

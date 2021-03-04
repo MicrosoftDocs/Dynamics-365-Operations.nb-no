@@ -145,3 +145,6 @@ For å fullføre disse trinnene, må du først fullføre trinnene i prosedyren "
 46. Lukk siden.
 ![Side med ER-operasjonsutforming](../media/er-financial-dimensions-guides-format2.png)
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

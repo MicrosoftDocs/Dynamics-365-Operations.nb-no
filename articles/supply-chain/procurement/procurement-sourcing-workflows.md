@@ -80,3 +80,6 @@ Du kan tilordne et godkjenningstrinn til deltakergruppene nedenfor.
 - [Definere arbeidsflyter for forretningsprosesser for innkjøpsrekvisisjoner](https://www.microsoft.com/download/details.aspx?id=101821)
 - [Arbeidsflyt for innkjøpsrekvisisjon](purchase-requisitions-workflow.md)
 - [Ønske leverandører velkommen](vendor-onboarding.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

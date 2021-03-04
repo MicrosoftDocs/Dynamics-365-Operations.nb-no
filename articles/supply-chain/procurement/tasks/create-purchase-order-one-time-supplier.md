@@ -39,3 +39,6 @@ Denne fremgangsmåten viser hvordan du oppretter en bestilling manuelt for en en
 5. Klikk OK.
     * Bestillingen kan nå fullføres og behandles som hvilken som helst ordre. Det finnes ingen spesielle egenskaper som er relatert til hvordan dette gjøres. Fakturaen registrerer en forfallstransaksjon på leverandørkontoen som ble opprettet med ordren, og deretter behandles betalingen.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

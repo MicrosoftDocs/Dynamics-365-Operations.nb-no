@@ -62,3 +62,6 @@ Emnene som er oppført i tabellen nedenfor, er til hjelp når du skal konfigurer
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

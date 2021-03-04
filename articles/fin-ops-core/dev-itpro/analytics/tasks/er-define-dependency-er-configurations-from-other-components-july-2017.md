@@ -139,3 +139,6 @@ Vi skal slette opprettede konfigurasjoner fra systemet og laste dem ned fra LCS 
 26. Utvid 'Sample data model' i treet.
     * Legg merke til at modelltilordningskonfigurasjon "Eksempeltilordning" er lastet ned sammen med konfigurasjonen for de valgte dataene. De to filene lastes ned sammen fordi tilordning av eksemplet er definert som implementerer den valgte datamodellen og fordi den er tilgjengelig for programmet. Eksempel på tilordning (alternativ)-konfigurasjonen er ikke lastet ned fordi betingelsen for den nødvendige programversjonen ikke er oppfylt.   
     * Hvis du logger deg på Finance and Operations, registrerer samme leverandør, får tilgang til samme LCS-prosjekt og laster ned den samme datamodellkonfigurasjonen, lastes "Eksempeltilordning (alternativ)-konfigurasjonen ned, "Eksempeltilordning"-konfigurasjonen vil bli hoppet over.  
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

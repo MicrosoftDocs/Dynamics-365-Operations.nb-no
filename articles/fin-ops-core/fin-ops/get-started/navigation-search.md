@@ -62,3 +62,6 @@ Listen over søkeresultater er begrenset til ti elementer. Hvis du ikke finner d
 ## <a name="development"></a>Utvikling
 
 Fra et utviklingsperspektiv er navigasjonssøkefunksjonaliteten enkel å bruke siden det praktisk talt er ingen forsinkelse mellom distribusjonen av menyelementer og visningen av dem i søkeresultatene. Så lenge det kobles til menyelementene fra navigasjonsruten eller instrumentbordet, blir de søkbare automatisk.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -59,3 +59,6 @@ Hvis **Leverandør** er konfigurert som en ER-datakilde som refererer til VendTa
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Listefunksjoner](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

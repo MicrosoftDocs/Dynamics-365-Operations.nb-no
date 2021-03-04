@@ -98,3 +98,6 @@ Nå kan du tilordne en ansatt til en fast kompensasjonsplan. Åpne **Ansatte**-s
 
 Systemet kontrollerer at kompensasjonsbeløpet som er angitt for en kompensasjonsplan av typen klasse eller segment, er innenfor de minste og største referansepunktene for gitt kompensasjonsnivå i den ansattes jobb. Hvis kompensasjonsbeløpet er utenfor tillatt område, vises en advarsel eller feilmelding, avhengig av toleransenivået som er angitt i den faste kompensasjonsplanen.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

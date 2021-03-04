@@ -114,3 +114,6 @@ Følgende emner går gjennom ulike scenarioer for inntektsføring:
 - [Ny tildeling av inntektsføring – scenario 2](rev-rec-reallocation-scenario-2.md) – To salgsordrer blir angitt, og deretter legger kunden til en vare i kontrakten etter at den første salgsordren er fakturert.
 - [Ny tildeling av inntektsføring – scenario 3](rev-rec-reallocation-scenario-3.md) – En ny linje legges til i en eksisterende, fakturert salgsordre.
 - [Ny tildeling av inntektsføring – scenario 4](rev-rec-reallocation-scenario-4.md) – En linje fjernes fra en eksisterende, delvis fakturert salgsordre.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

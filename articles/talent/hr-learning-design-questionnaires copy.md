@@ -246,3 +246,6 @@ Alternativt kan du definere du et spørreskjema slik at hvis en respondent velge
 
 [Vise og evaluere resultatene i spørreskjemaer](evaluate-questionnaire-results.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

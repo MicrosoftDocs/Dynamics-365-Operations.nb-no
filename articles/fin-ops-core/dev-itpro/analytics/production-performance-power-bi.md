@@ -128,3 +128,6 @@ Tabellen nedenfor viser nøkkeldimensjonene som brukes som filtre for å dele op
 | Enheter                  | ID og navn                                                   |
 | Ressurser                 | Ressurs-ID, ressursnavn, ressurstype og ressursgruppe |
 | Produkter                  | Produktnummer, produktnavn, vare-ID og varegruppe         |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

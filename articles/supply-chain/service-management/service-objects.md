@@ -47,3 +47,6 @@ Firma A opprettholder finanspostene for flere små firmaer. En av kundene til fi
 
 [Opprette serviceobjekter](create-service-objects.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -153,3 +153,6 @@ Du kan vise om et utgitt produkt kan brukes som en komponent eller delkomponent 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

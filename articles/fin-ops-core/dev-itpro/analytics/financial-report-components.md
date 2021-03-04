@@ -126,3 +126,6 @@ Når du åpner en byggeblokk, har andre brukere skrivebeskyttet tilgang til bygg
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Finansrapportering](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

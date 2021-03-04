@@ -163,3 +163,6 @@ Hvis konfigurasjonen utføres på et område, eller med et firma, som er forskje
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

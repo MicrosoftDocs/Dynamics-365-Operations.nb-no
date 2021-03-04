@@ -42,3 +42,6 @@ Varebekreftelse for gruppeplukking fungerer på samme måte som når du bekrefte
 |        Alternativ        |                                    beskrivelse                                    |
 |----------------------|-----------------------------------------------------------------------------------|
 | Produktbekreftelse | Lar deg bekrefte hver del av beholdningen fra den mobile enheten når den skannes. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -41,3 +41,6 @@ Skattemyndighetene er enheter som innsamlet merverdiavgift skal rapporteres og b
 10. Angi et tall i Avrund-feltet.
 11. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

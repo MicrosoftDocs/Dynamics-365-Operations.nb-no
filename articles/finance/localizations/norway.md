@@ -37,3 +37,6 @@ Dette emnet inneholder koblinger til dokumentasjonsressurser for Norge.
 - [Kassefunksjonalitet](../../retail/localizations/emea-nor-cash-registers.md)
 - [Retningslinjer for distribusjon for kassaapparater](../../retail/localizations/emea-nor-loc-deployment-guidelines.md)
 - [Eksport av elektroniske fakturaer for kunde](emea-nor-e-invoices.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

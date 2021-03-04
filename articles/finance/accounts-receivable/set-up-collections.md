@@ -115,3 +115,6 @@ Hvis du vil ha mer informasjon, se følgende emner:
 
  - [Gå gjennom innkrevingsinformasjon](tasks/review-collections-information.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

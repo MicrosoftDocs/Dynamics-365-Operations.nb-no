@@ -72,3 +72,6 @@ Parametere angitt i den globale adresseboken bestemmer hvilke roller som kan se 
     - Hvis du vil laste opp et bilde, velger du **Last opp nytt bilde**.
     - Hvis du vil fjerne et bilde, merker du bildet og velger **Fjern**.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

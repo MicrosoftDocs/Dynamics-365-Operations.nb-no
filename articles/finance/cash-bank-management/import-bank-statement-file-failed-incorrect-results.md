@@ -108,3 +108,6 @@ Tabellen nedenfor inneholder eksempler på definisjonene av tekniske oppsett for
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

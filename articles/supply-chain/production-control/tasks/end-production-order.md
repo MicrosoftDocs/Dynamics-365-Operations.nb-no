@@ -46,3 +46,6 @@ Denne fremgangsmåten viser hvordan du avslutter en produksjonsordre. Demonstras
 1. Klikk Styr kostnader i handlingsruten.
 2. Klikk Vis kostnadssammenligning.
     * Når du har avsluttet produksjonsordren, kan du sammenligne den estimerte kostprisen mot den realiserte kostprisen for å få en oversikt over produksjonsavvikene.  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

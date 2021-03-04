@@ -99,3 +99,6 @@ Du kan bruke **Overstyrer**-fanen til å overstyre bestemte verdier for den ansa
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

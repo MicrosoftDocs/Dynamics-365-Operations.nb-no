@@ -73,3 +73,6 @@ Følg denne fremgangsmåten for å konfigurere e-postmaler for bestemte levering
 [Opprette telefonsenterordrer](tasks/create-call-center-orders.md)
 
 [Endre leveringsmodus i salgssted](pos-change-delivery-mode.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

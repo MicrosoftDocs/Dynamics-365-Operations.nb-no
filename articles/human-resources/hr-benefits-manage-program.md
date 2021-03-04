@@ -64,3 +64,6 @@ Noen ganger stopper en organisasjon å tilby bestemte fordeler. I dette tilfelle
 På samme måte kan du med masseutvidelse av fordel utvide utløpsdatoen for både en fordel og arbeiderregistreringene for denne fordelen hvis du vil tilby en fordel lenger enn opprinnelig planlagt.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

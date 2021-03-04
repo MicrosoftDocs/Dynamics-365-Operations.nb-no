@@ -46,3 +46,6 @@ Gjentakende fakturaer brukes til å fakturere kunder regelmessig for det samme b
 6. Klikk Poster.
     * Poster de valgte fakturaene.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

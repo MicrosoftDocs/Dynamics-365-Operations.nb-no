@@ -35,3 +35,6 @@ Dette emnet forklarer hvordan en bruker med Systemansvarlig-rollen kan angi tids
 5. I **Tidssone**-feltet velger du et alternativ fra rullegardinlisten.
 6. Velg **Lagre**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -51,3 +51,6 @@ Når du oppretter en opprinnelig budsjettpost og bruker budsjettmodellen og dime
     * Klikk Lås opp-ikonet øverst på siden for å gjøre valgfrie valg.  
 18. Klikk Oppdater.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

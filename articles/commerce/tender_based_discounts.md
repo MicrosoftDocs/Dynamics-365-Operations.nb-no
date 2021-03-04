@@ -72,3 +72,6 @@ Forhandlere velger ofte å utelate noen produkter, for eksempel nye varer eller 
 
 > [!NOTE]
 > Når konfigurasjonen **Hindre alle rabatter** er satt til **Ja**, vil det ikke bli brukt noen rabatter på produktet. Ikke engang betalingsbaserte rabatter vil bli brukt.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

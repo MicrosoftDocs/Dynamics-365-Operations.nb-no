@@ -62,3 +62,6 @@ Denne oppgaveveiledningen viser et eksempel på rapportering som ferdig til en l
 18. Klikk Arbeidsdetaljer.
     * Når produksjonsordren ble rapportert som fullført, ble det ikke generert arbeid for plassering. Dette skjer fordi en arbeidspolicy er definert som hindrer at arbeidet blir generert når produktet L0101 rapporteres som ferdig til lokasjon 001.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

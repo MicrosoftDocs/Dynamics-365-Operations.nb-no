@@ -84,3 +84,6 @@ Tabellen nedenfor beskriver kategoriene i en rapportdefinisjon og hvordan inform
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Finansrapportering](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -65,3 +65,6 @@ Egne rapporter inneholder informasjon om hver transaksjonstype. Bruk disse rappo
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

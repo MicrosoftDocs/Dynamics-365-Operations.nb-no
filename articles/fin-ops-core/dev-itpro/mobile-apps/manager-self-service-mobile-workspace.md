@@ -97,3 +97,6 @@ Laste ned og installere Finance and Operations-mobilappen:
 1.  Velg **Send ros**. 
 1. Skriv inn den rosende teksten du vil sende. 
 1. Velg **Ferdig**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

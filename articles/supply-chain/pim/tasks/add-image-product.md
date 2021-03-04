@@ -37,3 +37,6 @@ Denne fremgangsmåten viser hvordan du legger til et bilde til et produkt. Demon
 5. Klikk Ny.
     * Klikk Bla gjennom. Finn bildet du vil bruke, merk det, og lukk deretter dialogboksen.    
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

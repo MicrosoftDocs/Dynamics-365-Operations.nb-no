@@ -62,3 +62,6 @@ Dette emnet beskriver hvordan du bruker funksjoner i modulene Servicestyring og 
 [Oversikt over å utvikle og etablere serviceavtaler](service-agreements.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

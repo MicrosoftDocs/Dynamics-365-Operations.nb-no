@@ -131,3 +131,6 @@ Når du har utformet og distribuert et spørreskjema, kan spørreskjemaet fylles
 Spørreskjemaer kan gjøres tilgjengelige for bestemte brukere eller brukergrupper eller alle brukere i et nettverk.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

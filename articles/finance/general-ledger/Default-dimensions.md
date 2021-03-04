@@ -127,3 +127,6 @@ Noen av følgende ressurser refererer til en tidligere versjon av programvaren. 
 [Dimensjonen som fører til regnskapsdistribusjoner](https://blogs.msdn.microsoft.com/ax_gfm_framework_team_blog/2013/12/16/dimension-defaulting-in-accounting-distributions-part-1-introduction/)
 
 [Dimensjonen som fører til dimensjonsrammeverk](https://docs.microsoft.com/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-part-1-financial-dimensions-discovery)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

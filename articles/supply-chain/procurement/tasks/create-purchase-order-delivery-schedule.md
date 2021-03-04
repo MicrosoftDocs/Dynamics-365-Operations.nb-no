@@ -74,3 +74,6 @@ Bestillingen må bekreftes før produktmottaket kan behandles. I dette eksemplet
 6. Skjul **Linjer**-delen.
 7. Klikk på **OK** for å postere kvitteringen.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

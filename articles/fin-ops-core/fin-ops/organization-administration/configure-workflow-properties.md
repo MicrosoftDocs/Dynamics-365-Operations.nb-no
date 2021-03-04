@@ -179,3 +179,6 @@ Hvis du vil angi kommentarer om endringene du gjorde i arbeidsflyten, følger du
 2. I feltet **Skriv inn kommentarer om arbeidsflyten** angir du kommentarene dine.
 3. Gå gjennom kommentarene dine. Når du har lagt til kommentarer, kan du ikke endre dem.
 4. Klikk **Legg til** for å legge til kommentarene dine i **Kommentarlogg**-området.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -118,3 +118,6 @@ Du velger standardkontoer på siden **Standard kontooppsett** som du kan åpne f
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -209,3 +209,6 @@ I konsolidering for økonomimodul er det lagt til et nytt alternativ for å kons
 -  Du kan nå velge om du vil bruke regnskapsvalutaen eller rapporteringsvalutaen fra kildefirmaet som transaksjonsvalutaen i konsolideringsfirmaet.
 
 - Beløpene for regnskaps- eller rapporteringsvaluta fra kildefirmaet kopieres direkte til beløpene for regnskaps- eller rapporteringsvaluta hvis en av valutaene er den samme. Beløpene for regnskaps- og rapporteringsvaluta i konsolideringsfirmaet beregnes ved hjelp av valutakursen hvis ingen av valutaene er den samme.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -90,3 +90,6 @@ Hvis du vil ha mer informasjon, se [Strømlinjeformet ansattoppføring og naviga
 ### <a name="platform-update-29"></a>Plattform update 29
 
 Hvis du vil ha mer informasjon om Platform update 29, kan du se [Forhåndsvisningsfunksjoner i Dynamics 365 for Finance and Operations Platform Update 29 (oktober 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

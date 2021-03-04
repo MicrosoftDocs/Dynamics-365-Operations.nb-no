@@ -65,3 +65,6 @@ Følgende satsvise jobber bør kjøres om kvelden eller utenom arbeidstid. Pass 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Optimalisere ytelsen med oppgaver for automatisk opprydding](hr-admin-troubleshooting-batch-history.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

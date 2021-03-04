@@ -70,3 +70,6 @@ På hurtigfanen **Målfinanskonto** vil hovedkontoen være den samme kontoen for
 > Du kan eventuelt bruke **Kopier**-knappen til å duplisere den valgte tildelingen.
 
 Når en tildelingsbetingelse opprettes for en hovedkonto, vil systemet automatisk postere et nytt bilag når et bilag posteres som samsvarer med de kildefinansdimensjonene for tildelingsbetingelsene.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

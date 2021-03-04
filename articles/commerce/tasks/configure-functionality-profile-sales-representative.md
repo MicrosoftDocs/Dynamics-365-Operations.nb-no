@@ -37,3 +37,6 @@ Denne fremgangsmåten beskriver hvordan du konfigurerer en butikks funksjonsprof
 4. Velg et alternativ i feltet Be om selger.
 5. I feltet Krev selger velger du Ja.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

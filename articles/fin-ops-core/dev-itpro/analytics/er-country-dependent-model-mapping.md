@@ -496,3 +496,6 @@ Kontroller at den delte modelltilordningskonfigurasjonen ikke er merket som stan
 - Minst én versjon av ER-modellkonfigureringskonfigurasjonen har enten **Fullført** eller **Delt** status. I dette tilfellet vil versjonen med det høyeste versjonsnummeret bli brukt til ER-format-utførelse.
 - Alternativet **Kjøringsutkast** for ER-modelltilordningskonfigurasjonen er aktivert. I dette tilfellet vil versjonen som har **Utkast**-status, bli brukt til ER-format-utførelse.
 > Alternativet **Kjøringsutkast** blir tilgjengelig på **Konfigurasjoner**-siden for hver ER-modelltilordningskonfigurasjon når ER-brukerparameteren **Kjøringsinnstilling** er aktivert.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -46,3 +46,6 @@ Denne oppgaven bruker SSI-datasettet.
 12. Skriv inn en verdi i feltet Kommentar.
 13. Klikk Send.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

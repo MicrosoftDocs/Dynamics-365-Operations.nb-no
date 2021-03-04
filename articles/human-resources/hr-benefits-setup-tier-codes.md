@@ -41,3 +41,6 @@ Dynamics 365 Human Resources bruker lagkoder med fordelssatser som betales av an
    | **Beskrivelse** | En kort beskrivelse av fordelslagkoden. |
 
 4. Velg **Lagre**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

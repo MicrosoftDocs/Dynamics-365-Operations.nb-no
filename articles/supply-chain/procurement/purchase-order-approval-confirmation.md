@@ -99,3 +99,6 @@ Hvis en bestilling er under endringsstyring, må endringer, for eksempel annulle
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

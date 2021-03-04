@@ -74,3 +74,6 @@ Denne prosedyren fokuserer på oppsettet for å opprette en kanban-regel utløse
 2. Klikk Vis utligningstre.
     * Legg merke til at en kanban med samme antall som salgslinjen er opprettet. Du kan også se materialutstedelsene som trengs for å produsere L0050. Dette er det siste trinnet i prosedyren.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

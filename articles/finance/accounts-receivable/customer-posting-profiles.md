@@ -140,3 +140,6 @@ Angi følgende verdier for å definere posteringsprofilen:
 
 Hvis du vil ha mer informasjon, kan du se [Oversikt over kundebetaling](../cash-bank-management/tasks/customer-payment-overview.md).
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

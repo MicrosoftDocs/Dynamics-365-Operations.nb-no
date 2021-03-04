@@ -89,3 +89,6 @@ Klikk på **Aktivabehandling** > **Forespørsler** > **Nedetid ved vedlikehold**
 >[!NOTE]
 >Alle kalendere som brukes i modulen **Aktivastyring**, defineres i **Organisasjonsstyring** > **Oppsett** > **Kalendere** > **Kalendere**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

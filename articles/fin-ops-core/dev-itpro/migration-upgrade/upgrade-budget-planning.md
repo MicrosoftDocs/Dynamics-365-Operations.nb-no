@@ -162,3 +162,6 @@ Flere dataenheter er lagt til for å muliggjøre rask implementering av budsjett
 
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -67,3 +67,6 @@ For implementering av Lean manufacturing har vi valgt tilnærmingen for produksj
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

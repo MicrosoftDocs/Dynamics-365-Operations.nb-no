@@ -86,3 +86,6 @@ For hver kunde som har avtalt å betale ved hjelp av en veksel, kan du definere 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

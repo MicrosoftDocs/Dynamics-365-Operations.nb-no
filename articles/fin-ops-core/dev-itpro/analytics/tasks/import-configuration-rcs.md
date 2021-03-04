@@ -55,3 +55,6 @@ De følgende trinnene forklarer hvordan en bruker i rollen Systemansvarlig eller
 5. Velg **Lukk**. 
 6. Velg ønsket versjon av ER-konfigurasjon, og velg **Importer** for å hente den inn i gjeldende forekomst.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

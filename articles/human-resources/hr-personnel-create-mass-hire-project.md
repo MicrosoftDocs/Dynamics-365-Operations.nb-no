@@ -48,3 +48,6 @@ Dette hjelper med å definere et masseansettelsesprosjekt. En bemanningskonsulen
     * Velg eventuelt avdelingen for de nye stillingene.  
 13. Klikk OK.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -54,3 +54,6 @@ Denne prosedyren viser hvordan fordelsrettighetsprosessen fungerer. Når prosess
 25. Åpne kolonnefilteret for status.
 26. Sorter fra A til Å
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

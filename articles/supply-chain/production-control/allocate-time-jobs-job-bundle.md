@@ -111,3 +111,6 @@ Den korrigerte kostnaden per time og jobbtiden posteres i en produksjonsjournal.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

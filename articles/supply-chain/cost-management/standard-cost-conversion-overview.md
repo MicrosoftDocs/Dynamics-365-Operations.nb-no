@@ -102,3 +102,6 @@ I rapporten **Avviksanalyserapport** kan du analysere revalueringsavvik, og i ra
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

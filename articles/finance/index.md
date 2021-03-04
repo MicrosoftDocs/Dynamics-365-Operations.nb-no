@@ -73,3 +73,6 @@ Bestemmelser for land/område påvirker avgiftsoppsettet og andre områder innen
 
 Funksjonalitet for forsyningskjedeadministrasjon dekker deler av Procure-to-Pay-prosessen, som omfatter rekvisisjon, bestilling, mottak, fakturering og betaling for varer og tjenester som organisasjonen kjøper. Se [startsiden for Supply Chain Management](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md) hvis du vil ha informasjon om funksjoner for styring av innkjøp, lager og produksjon. 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

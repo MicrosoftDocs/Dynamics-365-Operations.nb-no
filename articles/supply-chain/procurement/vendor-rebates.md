@@ -167,3 +167,6 @@ Prosessen for å håndtere leverandørrabatter innebærer flere manuelle sporing
 - Genererer nøyaktige rabattkrav
 - Å påløpe forventet fordring og foreløpig gevinst i hovedboken
 - Oppdaterer leverandørbalansen og resultatregnskapet med godtgjørelse som er forfalt
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

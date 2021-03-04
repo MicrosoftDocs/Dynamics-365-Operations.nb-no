@@ -41,3 +41,6 @@ De følgende alternativene, som finnes på **Handel**-kategorien for frigitte pr
 > Disse innstillingene begrenser ikke operasjonen for prisoverstyring, fordi det angir basisprisen og behandles ikke som en rabatt.
 
 [![Hindre rabatter-felt](./media/prevent-discounts.png)](./media/prevent-discounts.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

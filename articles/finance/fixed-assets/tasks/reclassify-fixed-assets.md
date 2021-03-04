@@ -46,3 +46,6 @@ Følg disse trinnene for å omklassifisere et anleggsmiddel:
 5. Angi en dato i feltet **Omklassifiseringsdato**.
 6. Angi eller velg en verdi i feltet **Bilagsserie**.
 7. Klikk **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

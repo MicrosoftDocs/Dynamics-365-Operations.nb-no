@@ -141,3 +141,6 @@ Tjenesten Orchestrator styrer distribusjonen og den tilknyttede kommunikasjonen 
 ## <a name="virtualization-and-oversubscription"></a>Virtualisering og overabonnering
 
 Bedriftskritiske tjenester som AOS skal ligge på virtuelle verter som har dedikerte ressurser – kjerner, minne og diskplass.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

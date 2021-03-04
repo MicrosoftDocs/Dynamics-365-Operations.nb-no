@@ -71,3 +71,6 @@ Oppgraderingsprosessen flytter eksisterende oppsett og alle eksisterende transak
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

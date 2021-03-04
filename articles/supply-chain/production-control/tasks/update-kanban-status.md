@@ -48,3 +48,6 @@ Når en kanban tømmes ved en feiltakelse eller en mottatt kanban må tømmes, m
 2. Merk den valgte raden i listen.
     * Legg merke til at statusen Håndteringsenhet er Tømt.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

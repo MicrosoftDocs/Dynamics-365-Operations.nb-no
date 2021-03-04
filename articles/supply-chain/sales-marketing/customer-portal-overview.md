@@ -69,3 +69,6 @@ Kundeportalen leveres som en mal for Power Apps-portaler. Den er avhengig av Pow
 ![Avhengigheter for kundeportal](media/customer-portal-elements.png "Avhengigheter for kundeportal")
 
 Kundeportalen fungerer som et utgangspunkt for organisasjoner som vil bruke Power Apps-portaler til å bygge et eksternt-rettet nettsted som bruker data fra organisasjonens Supply Chain Management-installasjon. Den hjelper organisasjoner med å koble sammen dobbeltskriving, Supply Chain Management og Power Apps-portaler.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

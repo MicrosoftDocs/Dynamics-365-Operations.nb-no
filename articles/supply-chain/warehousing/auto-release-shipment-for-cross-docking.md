@@ -179,3 +179,6 @@ Merk at følgende hendelser oppstår:
 - Frigivelsen til et lager utløses for den koblede salgsordren.
 - Det opprettes en forsendelse og direkteoverføring basert på frigivelsen. Dette arbeidet instruerer lageroperatøren til å plukke antallene som kreves for å oppfylle salgsordrelinjen og plassere dem på den utgående lokasjonen som er angitt i direktivet for direkteoverføringslokasjonen.
 - Hvis produksjonsordreantallet er større enn antallet som kreves av salgsordren, opprettes vanlig plasseringsarbeid. Dette arbeidet instruerer lageroperatøren om å plukke antallet ferdigvarer som gjenstår etter direkteoverføring, og flytte det til vanlig lagring i henhold til lokasjonsdirektivet.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

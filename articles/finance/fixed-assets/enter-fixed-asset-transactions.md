@@ -68,3 +68,6 @@ Alle typer anleggsmiddeltransaksjoner kan posteres på siden Økonomijournal. Du
 Den gjenværende verdien for nedskrivningsperioder for anleggsmiddelet oppdateres ikke når en journallinje for avskrivningstransaksjonstype opprettes manuelt eller importeres via en dataenhet. Denne verdien oppdateres når avskrivningsforslagsprosessen brukes til å opprette journallinjen.
 
 Hvis du vil ha mer informasjon, se [Integrering av anleggsmidler](fixed-asset-integration.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

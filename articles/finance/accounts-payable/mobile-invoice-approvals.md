@@ -535,3 +535,6 @@ Følgende variasjoner kan gjøres for scenario 1, basert på kravene for scenari
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

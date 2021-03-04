@@ -72,3 +72,6 @@ En budsjettplanmal opprettes av budsjettansvarlig i Microsoft Word og tilordnes 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

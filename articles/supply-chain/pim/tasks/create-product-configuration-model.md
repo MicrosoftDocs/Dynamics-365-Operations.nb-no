@@ -83,3 +83,6 @@ Denne prosedyren viser hvordan du oppretter en produktkonfigurasjonsmodell og an
 17. Angi et tall i feltet Per serie.
 18. Klikk OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

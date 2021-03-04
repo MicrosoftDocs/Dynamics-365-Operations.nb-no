@@ -1233,3 +1233,6 @@ Legg merke til at bunnteksten i den genererte rapporten ikke inneholder navnet p
 - [IF-funksjonen](er-functions-logical-if.md)
 - [ORDERBY-funksjonen](er-functions-list-orderby.md)
 - [SESSIONNOW-funksjonen](er-functions-datetime-sessionnow.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

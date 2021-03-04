@@ -59,3 +59,6 @@ Standard feltverdi for **Antall arbeidsflytvarer per satsvis oppgave** på siden
 
 ## <a name="what-is-the-workflow-enhanced-error-feature"></a>Hva er funksjonen for forbedret feil i arbeidsflyten?
 Funksjonen for forbedret feil i arbeidsflyten i versjon 10.0.13 legger til feilkoder for å skille ulike klasser av arbeidsflytfeil. Feilmeldingene som rapporteres, vil for det meste være like, med mindre forskjeller for å få dem til å bli klarere.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

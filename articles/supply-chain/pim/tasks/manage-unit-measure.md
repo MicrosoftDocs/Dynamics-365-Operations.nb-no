@@ -63,3 +63,6 @@ Denne fremgangsmåten beskriver hvordan du definerer en målenhet, angir overset
 6. Klikk **OK**.
 7. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

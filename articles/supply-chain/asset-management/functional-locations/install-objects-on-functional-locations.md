@@ -83,3 +83,6 @@ Når oppsettsdataene er tilgjengelige, er du klar til å opprette et aktivum.
 1. På siden **Alle arbeidssteder** må du kontrollere at arbeidsstedet der du vil at aktivaet skal opprettes automatisk, bruker arbeidsstedstypen du opprettet for dette formålet.
 2. Velg arbeidsstedet i listen.
 3. Velg **Oppdater tilstand for arbeidssted**, og velg deretter livsløpstilstanden du opprettet for dette formålet. Ett aktivum installeres nå automatisk på arbeidsstedet. Dette aktivumet har samme navn som arbeidsstedet.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

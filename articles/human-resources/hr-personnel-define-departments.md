@@ -52,3 +52,6 @@ Avdelinger er driftsenheter som representerer et funksjonsområde i et selskap, 
 16. Skriv inn en verdi i feltet Beskriv endringer.
 17. Klikk Publiser.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

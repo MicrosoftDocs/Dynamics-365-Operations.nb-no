@@ -50,3 +50,6 @@ Tjenesten sender e-postvarslinger ved hjelp av forhåndsdefinerte e-postmaler so
 Illustrasjonen nedenfor viser strukturen på varslingene når de mottas via e-post.
 
 [![Malbaserte varslinger for postoppretting, feltendringer og malsletting](./media/Alert-email-templates.png)](./media/Alert-email-templates.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

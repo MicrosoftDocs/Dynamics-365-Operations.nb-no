@@ -66,3 +66,6 @@ Forutsetninger:
 12. Lukk siden.
 13. Oppdater siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

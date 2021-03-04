@@ -41,3 +41,6 @@ Hvis du vil ha mer informasjon, se [Definere hovedkontokategorier](tasks/set-up-
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

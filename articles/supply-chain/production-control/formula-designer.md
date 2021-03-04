@@ -121,3 +121,6 @@ Klikk **Oppsett** for å tilpasse informasjonen som vises i trevisningen i forme
 |     Stykkliste     | Bruk avmerkingsboksene for å velge kriteriene som vises i trestrukturen. Formeldesigneren viser de valgte kriteriene nederst i begge kategorier. |
 |    Rute    |                                           Bruk avmerkingsboksene for å velge kriteriene som vises for rutene.                                           |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

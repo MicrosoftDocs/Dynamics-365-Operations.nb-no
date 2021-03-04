@@ -41,3 +41,6 @@ Følg denne fremgangsmåten for å opprette og postere en journaloppføring for 
 4. Aktiver **Post**-parameteren. Hvis posten skal opprettes, men ikke posteres, lar du denne parameteren være deaktivert.
 5. Aktiver **Forhåndsvis for postering**-parameter for å vise posten før den posteres.
 6. Velg **OK**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

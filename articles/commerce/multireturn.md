@@ -54,3 +54,6 @@ Når ordrene er valgt, vises det en liste over alle returnerbare produkter på t
 
 Hvis ordren er fullstendig returnert, vil beløpet som returneres til kunden, være lik avgiftsbeløpet som opprinnelig ble belastet.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

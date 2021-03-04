@@ -45,3 +45,6 @@ Dette gjør det mulig for en bemanningskonsulent å ansette en søker som sendte
 15. Vis eller skjul delen Kontaktinformasjon.
 16. Vis eller skjul delen Personlige opplysninger.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

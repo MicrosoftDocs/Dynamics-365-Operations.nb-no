@@ -95,3 +95,6 @@ Du kan åpne Kanban-plankortet ved hjelp av menyelementet på følgende sider:
 
 [Kanban-jobbplanlegging for lean manufacturingl](lean-manufacturing-kanban-job-scheduling.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -541,3 +541,6 @@ Hvis sorteringsposisjoner skal lukkes manuelt, må alternativet **Sorteringsposi
 
 > [!IMPORTANT]
 > Etter at bevegelsesarbeidet er opprettet fra sorteringslokasjonen, må du ikke avbryte arbeidet. Hvis ikke blir posisjonen og containerne i den slettet fra systemet og vil ikke være tilgjengelig for videre behandling. Beholdningen blir også fjernet.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

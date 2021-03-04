@@ -67,3 +67,6 @@ Denne veiledningen viser hvordan du oppretter et område for drivstoffindeks, en
 12. Klikk koblingen i den valgte raden i listen.
 13. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

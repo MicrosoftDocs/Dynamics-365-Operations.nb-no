@@ -309,3 +309,6 @@ Hvis du vil lære hvordan du bruker det konfigurerte ER-formatet **Format for å
 [Formeldesigner i elektronisk rapportering](general-electronic-reporting-formula-designer.md)
 
 [Definere parameterne for et ER-format per juridisk enhet](er-app-specific-parameters-set-up.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

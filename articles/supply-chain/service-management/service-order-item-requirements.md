@@ -70,3 +70,6 @@ Hvis et varebehov opprettes på en serviceordre, kan du ikke slette serviceordre
 
 [Varebehov (skjema)](https://technet.microsoft.com/library/aa552021\(v=ax.60\))
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

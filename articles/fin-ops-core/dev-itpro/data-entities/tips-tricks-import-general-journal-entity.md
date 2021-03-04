@@ -65,3 +65,6 @@ Følgende deler beskriver effekten av disse innstillingene. De forklarer også h
 - Hvis feltet **Bilagsnummer** er satt til **Automatisk generert**, kan ikke importen fullføres. Innstillingen **Automatisk generert** for feltet **Bilagsnummer** støttes ikke.
 
 Økonomijournal-enheten bruker settbasert behandling som standard. Når du evaluerer forretningskravene for organisasjonen, kan du endre innstillingen **Settbasert behandling** ved å klikke **Dataenheter** i arbeidsområdet **Databehandling**. Settbasert behandling brukes til å øke hastigheten på importprosessen. Hvis du ikke bruker settbasert behandling, vil import av Økonomijournal-enheten være langsommere.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

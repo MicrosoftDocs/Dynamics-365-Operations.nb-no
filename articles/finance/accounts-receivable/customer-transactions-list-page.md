@@ -97,3 +97,6 @@ Hvert felt har en forskjellig effekt på transaksjonen når du redigerer det:
 - **Rediger vilkårene for kontantrabatt:** Kontantrabattene endres, basert på basisdatoen og vilkårene for kontantrabatt.
 
 Når du er ferdig med å redigere betalingsinnstillingene, velger du **Lukk** for å lagre endringene.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

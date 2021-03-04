@@ -46,3 +46,6 @@ Denne fremgangsmåten viser hvordan du definerer en ny definisjon for strekkode 
 12. Klikk Lagre.
 13. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

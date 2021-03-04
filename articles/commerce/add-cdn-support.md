@@ -163,3 +163,6 @@ CDN skal nå være riktig konfigurert slik at det kan brukes sammen med ditt han
 [Konfigurere flere B2C-leiere i et Commerce-miljø](configure-multi-B2C-tenants.md)
 
 [Aktivere stedsbasert butikkregistrering](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

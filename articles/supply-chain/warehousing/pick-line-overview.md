@@ -69,3 +69,6 @@ Følg disse trinnene for å definere et menyelement for en mobilenhet for å ang
     - Bruk de gjenstående feltene **Visningsfelt** for å legge til opptil sju ekstra visningsfelt, i henhold til hva du trenger. I hvert **Visningsfelt**-felt velger du navnet på et arbeidslinjefelt. Deretter vil hver linje vise en verdi for dette feltet. Verdiene vil bli vist i den rekkefølgen du velger her. Du kan la noen av **Visningsfelt**-feltene stå tomme hvis du ikke har behov for alle de sju verdiene.
 
 1. I handlingsruten velger du **Lagre**, og deretter lukker du siden **Feltliste**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

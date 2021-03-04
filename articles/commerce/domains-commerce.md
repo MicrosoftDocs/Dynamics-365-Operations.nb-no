@@ -173,3 +173,6 @@ Den Commerce-støttede forekomsten av Azure Front Door støtter ikke Apex-domene
   [Legge til støtte for et innholdsleveringsnettverk (CDN)](add-cdn-support.md)
 
   [Aktivere stedsbasert butikkregistrering](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

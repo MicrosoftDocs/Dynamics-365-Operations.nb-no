@@ -41,3 +41,6 @@ Denne fremgangsmåten viser hvordan du definerer kostnadskontrollenheter i kostn
 10. Angi eller velg en verdi i feltet Dimensjon.
 11. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -90,3 +90,6 @@ Denne oppgaveveiledningen beskriver hvordan du oppretter et avtalegiromandat og 
 3. Velg kunden du har lagt til mandatet til.
 4. Angi eller velg en verdi i feltet **ID for avtalegiromandat**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

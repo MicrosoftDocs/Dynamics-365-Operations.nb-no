@@ -69,3 +69,6 @@ Hvis du angir datakilden **DS** for typen *Beregnet felt*, og den inneholder utt
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Listefunksjoner](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

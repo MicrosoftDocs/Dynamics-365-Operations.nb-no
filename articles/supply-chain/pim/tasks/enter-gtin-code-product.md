@@ -42,3 +42,6 @@ GTIN-koder tilordnes av GS1-organisasjonen. I dette eksemplet vil du angi en kod
 11. Skriv inn en verdi i GTIN-feltet.
 12. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

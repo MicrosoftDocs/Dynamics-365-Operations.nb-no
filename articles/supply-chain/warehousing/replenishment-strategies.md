@@ -115,3 +115,6 @@ Resultatene er forskjellige på grunn av informasjonen som er tilgjengelig når 
 [![Eksempel 2](media/ReplenTemp_example_2.png "Eksempel 2")](media/ReplenTemp_example_2_large.png)
 
 For å få maksimumsantallet til etterfyllingslokasjonene må du derfor sette alternativet **Tillat deling** til *Ja* i lokasjonsdirektivene for etterfyllingsplukking.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -151,3 +151,6 @@ Konsolideringsregel for bestillingsopprettelse og behov definerer policyreglene 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -112,3 +112,6 @@ Når du bruker feltet **Returparti-ID** i en returordrelinje for å angi den ret
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

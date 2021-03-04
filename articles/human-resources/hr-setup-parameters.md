@@ -50,3 +50,6 @@ Innstillingene i kategorien **Nummerserie** bestemmer sekvensene som brukes til 
 
 > [!NOTE]
 > Antall timer arbeidet kan ikke overskride 1250, og lengden på ansettelse kan ikke overskride 12 måneder. Disse maksimumsverdier er i overensstemmelse med gjeldende lovgivning i USA. Til slutt bestemmer innstillingene i kategorien **Ansattselvbetjening** opplysningene som ledere kan angi på vegne av de ansatte.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

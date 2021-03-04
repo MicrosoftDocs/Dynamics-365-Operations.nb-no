@@ -157,3 +157,6 @@ For testformål kan du utføre formattilordningen med filen SampleIncomingMessag
 2. Klikk OK.
     * Gå gjennom utdataene i XML-format, som representerer dataene som er importert fra den valgte filen og overført til datamodellen. Vær oppmerksom på at bare 3 linjer i den importerte TXT-filen ble behandlet. IBAN-koden på linje 4 som ikke er gyldig, ble hoppet over, og en feilmelding gis i infologgen.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

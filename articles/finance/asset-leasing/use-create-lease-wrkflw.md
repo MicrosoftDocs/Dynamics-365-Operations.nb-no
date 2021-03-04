@@ -45,3 +45,6 @@ Før du bruker denne fremgangsmåten må du kontrollere at det er opprettet mins
 
 8. Hvis du vil stoppe en arbeidsflyt, velger du **Tilbakekalling** på siden **Arbeidsflytlogg**. I dialogboksen som vises, angir du en kommentar, og deretter velger du **OK**.
 9. Hvis du vil deaktivere en arbeidsflyt, eller aktivere en arbeidsflyt som er opprettet tidligere, kan du gå til **Aktivaleie \> Oppsett \> Leiearbeidsflyt**. Deretter, på siden **Leiearbeidsflyt**, velger du **Arbeidsflyt \> Versjoner**. Hvis du vil gjøre en gjeldende arbeidsflyt inaktiv, velger du den aktive leieavtalen i dialogboksen leieversjon, og deretter velger du **Aktiver**. Hvis du vil at en eksisterende arbeidsflyt skal være aktiv, velger du arbeidsflyten og deretter **Gjør aktiv**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

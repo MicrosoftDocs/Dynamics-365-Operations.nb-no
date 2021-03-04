@@ -37,3 +37,6 @@ Tenk deg for eksempel at du skriver inn informasjon om billeie for leiebilbedrif
 > Du kan bare bruke maler for områder som du har tilgang til. Du kan imidlertid se navnene på alle malene når du oppretter en ny post, og det samme gjelder også for andre brukere hvis du oppretter maler som er tilgjengelige for alle brukere. Husk å ta hensyn til dette når du gir malene navn. Unngå for eksempel å bruke navn som inneholder ord som provisjon hvis det der konfidensielt at enkelte ansatte i firmaet har provisjonsbasert lønn.
 
 Når én eller flere maler som du har tilgang til, finnes for et bestemt skjema og du prøver å opprette en ny post i skjemaet, vises siden **Velg en mal for**. Når du velger en mal fra listen, opprettes den nye posten med standardinformasjon som er basert på malen du velger. Hvis du ikke vil bruke maler når du oppretter nye poster, merker du av for **Ikke spør meg igjen** på siden **Velg en mal for**. Hvis du vil vise dialogboksen for valg av mal på nytt, høyreklikker du på **Postinformasjon** og deretter **Vis malvalg**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -86,3 +86,6 @@ Hvis du vil legge til en karusellmodul på en ny side og angi de nødvendige ege
 [Innholdsblokkmodul](add-hero-module.md)
 
 [Videospillermodul](add-video-player.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -55,3 +55,6 @@ Du kan nå opprette abonnementstransaksjoner for abonnementet.
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -94,3 +94,6 @@ Ved hjelp av konfigurasjonsnøkkelmetadataene som er bygd under enhetslisteoppda
 Når du oppdaterer konfigurasjonsnøkler på enhets-, tabell- og feltnivået, må enhetslisten i rammeverket for databehandling oppdateres. Denne prosessen sikrer at rammeverket henter de nyeste konfigurasjonsnøkkelinnstillingene. Inntil enhetslisten oppdateres, vises følgende advarsel på enhetslistesiden. De oppdaterte konfigurasjonsnøkkelendringene trer i kraft umiddelbart etter at enhetslisten oppdateres. Vi anbefaler at du validerer eksisterende dataprosjekter og jobber for å forsikre deg om at de fungerer som forventet når konfigurasjonsnøkkelendringene trer i kraft.
 
 ![Målfelt](./media/Target_fields_3.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -227,3 +227,6 @@ Verktøylinjen for rapportutformingen gir rask tilgang til kommandoer for å nav
 [Finansrapportering](financial-reporting-intro.md)
 
 [Generer finansrapporter](generate-financial-report.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -80,3 +80,6 @@ Bruk dette emnet for å aktivere prosjektstyringsprosesser for avvik. Et avvik b
 4. Skriv inn en verdi i **Beskrivelse**-feltet.
 5. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

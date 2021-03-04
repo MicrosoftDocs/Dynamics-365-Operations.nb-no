@@ -140,3 +140,6 @@ LIFO-strategien finner lokasjonen som inneholder den nyeste aldersfordelingsdato
 1. Legg merke til at linjen der **Arbeidstype**-verdien er *Plukk*, viser en **Lokasjon**-verdi på *FL-001*. Denne lokasjonen inneholder nummerskiltet som har den nyeste aldersfordelingsdatoen (LIFO).
 
 I disse scenariene har du sett hvordan strategien for aldersfordeling for lokasjon fungerer for lagerlokasjonen som enten har det eldste lageret eller den nyeste lageret, avhengig av den valgte strategien.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

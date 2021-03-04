@@ -94,3 +94,6 @@ Tre serviceordrelinjer er opprettet innenfor tidsrammen du angav i dialogboksen 
 
 [Definere serviceintervaller](set-up-service-intervals.md)  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

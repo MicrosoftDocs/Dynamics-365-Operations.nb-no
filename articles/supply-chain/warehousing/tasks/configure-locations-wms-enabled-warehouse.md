@@ -175,3 +175,6 @@ Denne veiledningen viser deg hvordan du konfigurerer lokasjonsoppsettet for et n
 6. Klikk koblingen i den valgte raden i listen.
 7. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

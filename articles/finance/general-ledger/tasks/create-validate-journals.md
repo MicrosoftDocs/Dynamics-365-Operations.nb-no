@@ -43,3 +43,6 @@ Denne prosedyren oppretter og validerer journaler og journallinjer. Du kan prøv
 12. Klikk **Poster**.
 13. Klikk på **Bilag**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

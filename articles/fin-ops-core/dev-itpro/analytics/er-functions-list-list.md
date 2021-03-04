@@ -73,3 +73,6 @@ I dette tilfellet returnerer uttrykket `LIST('Record 1', 'Record 2')` en ny list
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Listefunksjoner](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

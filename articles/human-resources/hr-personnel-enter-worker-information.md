@@ -45,3 +45,6 @@ Når en bemanningskonsulent har opprettet et masseansettelsesprosjekt og generer
 8. Fjern merket for den valgte raden i listen.
     * Velg den neste prosjektstillingen og fortsett å angi arbeiderinformasjon for hver person du ansetter.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

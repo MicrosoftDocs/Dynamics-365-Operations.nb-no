@@ -86,3 +86,6 @@ Kostnadsatferd er klassifiseringen av kostnader som faste eller variable. En pol
 15. Angi eller velg en verdi i feltet Kostnadskontrollenhet
 16. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

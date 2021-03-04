@@ -36,3 +36,6 @@ Transportstyring lar deg dele geografiske lokasjoner inn i soner. Hvis du vil de
 - **Optimaliser ruteplanlegging** – ved å tilordne bestemte ruteplaner til bestemte soner.
 
 Du definerer soner basert på feltverdiene for metadata (for eksempel land, postnummerintervall eller transportørtjeneste) som kvalifiserer hver sone. Sonedefinisjoner kreves ikke hvis transportprisen ikke bruker et sonekonsept.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

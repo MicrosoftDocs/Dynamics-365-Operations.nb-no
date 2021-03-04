@@ -99,3 +99,6 @@ Metadata for transportbehandlingsmotorer konfigureres forskjellig for ulike type
 | 3        | Første målpostnummer | Tildeling | Streng    | Postnummer    | Valgt  |
 | 4        | Siste målpostnummer   | Tildeling | Streng    | Postnummer    | Valgt  |
 | 5        | Målland           | Tildeling | Streng    | Land/område |           |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

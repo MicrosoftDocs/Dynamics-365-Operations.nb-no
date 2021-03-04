@@ -49,3 +49,6 @@ Tidslinjen oppdateres hver gang siden åpnes. Det inneholder følgende informasj
 - Arbeidsordrer, inkludert bokførte varer og notater
 - Feil
 - Betingelsesvurderinger
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

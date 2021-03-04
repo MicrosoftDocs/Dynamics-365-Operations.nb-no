@@ -129,3 +129,6 @@ Hvis kandidater godtar å dele sin LinkedIn-profil med en bruker i organisasjone
 [Postere jobber til LinkedIn fra Microsoft Dynamics 365 Talent - Attract](./attract-post-jobs-to-linkedin.md)
 
 [Feilsøke integrering med LinkedIn og Microsoft Dynamics 365 Talent - Attract](./attract-troubleshoot-linkedin.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

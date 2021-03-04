@@ -106,3 +106,6 @@ Fullfør følgende prosedyrer i [Oversikt over administrasjon av forretningsdoku
 [Oversikt over elektronisk rapportering (ER)](general-electronic-reporting.md)
 
 [Oversikt over administrasjon av forretningsdokument](er-business-document-management.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

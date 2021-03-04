@@ -90,3 +90,6 @@ Når du oppretter serviceordrer automatisk, kan du bruke serviceoppgaver som et 
 2. I kategorien **Oppsett** velger du **Etter serviceoppgave** i **Kombiner serviceordrer**-feltet.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

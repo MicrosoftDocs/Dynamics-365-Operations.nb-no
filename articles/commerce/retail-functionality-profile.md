@@ -64,3 +64,6 @@ Bildet nedenfor viser et eksempel på en funksjonalitetsprofil.
 [Oversikt over skjermoppsett](pos-screen-layouts.md)       
 
 [Konfigurere og installere Retail Hardware Station](retail-hardware-station-configuration-installation.md) 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

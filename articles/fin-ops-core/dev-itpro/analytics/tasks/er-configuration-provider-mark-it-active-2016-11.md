@@ -44,3 +44,6 @@ Dette emnet forklarer hvordan en bruker som er tilordnet til rollen Systemansvar
 2. Velg **Angi som aktiv**.
 
 ![Arbeidsområdesiden Elektronisk rapportering](../media/GER-Task-ActiveProvider-1.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

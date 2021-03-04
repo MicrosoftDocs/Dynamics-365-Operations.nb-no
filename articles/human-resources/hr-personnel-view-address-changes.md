@@ -128,3 +128,6 @@ Når du velger **Adresseendringer**-flisen, viser en ny side detaljene for alle 
 > Hvis du vil motta et varsel eller en e-postmelding om disse adresseendringene, kan du opprette en ny varslingsregel på **Alternativer**-fanen i handlingsruten. Hvis du vil ha mer informasjon om varslingsregler, kan du se [Opprette varslingsregler](/fin-ops-core/fin-ops/get-started/create-alert-rules.md).<br><br>
 
 > Hvis du vil konfigurere en arbeidsflyt for adresseendringene, kan du velge alternativet **Send eksternt** i varslingsregelen og deretter bruke Power Automate til å utløse forretningshendelsen og konfigurere en arbeidsflyt. Hvis du vil ha mer informasjon, kan du se [Varsler som forretningshendelser](/fin-ops-core/dev-itpro/business-events/alerts-business-events.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

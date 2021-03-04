@@ -198,3 +198,6 @@ Under ett trinn i konfigurasjonsprosessen foreslår systemet en konfigurasjonsve
 
 [Opprette produktnummerterminologi for konfigurerte produktvarianter](tasks/create-product-number-nomenclature-product-variants_2016_11.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

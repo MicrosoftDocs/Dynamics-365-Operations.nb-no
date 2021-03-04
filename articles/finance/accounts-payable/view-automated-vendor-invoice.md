@@ -38,3 +38,6 @@ Hvis den importerte fakturaen er underlagt prosessen for sending til arbeidsflyt
 - **Stoppet midlertidig** – De automatiserte prosessene som er definert på siden **Leverandørparametere**, er kjørt, men minst ett trinn i prosessen mislyktes. Statusen **Stoppet midlertidig** brukes også hvis feltet **Inkluder i automatisert behandling** er satt til **Nei**. Du kan se feilene ved å velge **Vis de siste resultatene**.
 - **I arbeidsflyt** – Den importerte fakturaen er sendt til arbeidsflytsystemet, enten av den automatiserte prosessen for sending til arbeidsflyt eller manuelt.
 - **Arbeidsflyt fullført** – Arbeidsflytprosessen er fullført for den importerte fakturaen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

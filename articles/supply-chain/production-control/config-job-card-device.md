@@ -95,3 +95,6 @@ Men som nevnt tidligere, når du for eksempel bruker en enhetskonfigurasjon med 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Ferdigmeld fra den jobbkortenheten.](report-finished-job-device.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -65,3 +65,5 @@ Du kan finne meninger, nyheter og annen informasjon om kostnadsstyring, i [Dynam
 #### <a name="task-guides"></a>Oppgaveveiledninger
 
 Mer hjelp er tilgjengelig som oppgaveveiledninger. For å få tilgang til oppgaveveiledninger klikker du Hjelp-knappen på en side.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

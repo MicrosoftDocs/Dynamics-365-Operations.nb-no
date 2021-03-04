@@ -144,3 +144,6 @@ Med så mange forskjellige integreringsteknologier tilgjengelige, kan det være 
 <sup>2</sup>Microsoft investerer svært mye i å øke datadekning for Common Data Service-enheter. Vi anbefaler at du bruker Common Data Service når dekning er tilgjengelig. For øyeblikket er Common Data Service-datadekningen liten sammenlignet med DMF- og OData-aktiverte enheter.
 
 <sup>3</sup>SQL-database kan åpnes programmatisk.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

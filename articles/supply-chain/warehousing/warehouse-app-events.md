@@ -78,3 +78,6 @@ Slik tilbakestiller du en mislykket hendelsesmelding for en lagerapp:
 1. Fortsett å arbeide til alle relevante meldinger er tilbakestilt.
 
 Du kan også fjerne en **Mislykket** hendelsesmelding ved hjelp av **Slett**-alternativet på verktøylinjen **Hendelsesmeldinger for lagerapp**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

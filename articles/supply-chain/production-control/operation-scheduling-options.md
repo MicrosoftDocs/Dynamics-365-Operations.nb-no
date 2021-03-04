@@ -134,3 +134,6 @@ Du kan lagre de gjeldende verdiene som standardverdier. Det finnes to alternativ
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

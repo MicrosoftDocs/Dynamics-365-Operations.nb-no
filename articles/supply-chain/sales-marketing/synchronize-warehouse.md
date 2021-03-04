@@ -81,3 +81,6 @@ Følgende illustrasjon viser en tilordning av malen i Dataintegrering.
 ### <a name="warehouses-supply-chain-management-to-field-service-warehouse"></a>Lagre (Supply Chain Management til Field Service): Lagre
 
 [![Maltilordning i Dataintegrering](./media/Warehouse1.png)](./media/Warehouse1.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

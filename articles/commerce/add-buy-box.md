@@ -136,3 +136,6 @@ Hvis du vil legge til en kjøpsboksmodul på en ny side og angi de nødvendige e
 [Beregne lagertilgjengelighet for detaljhandelskanaler](calculated-inventory-retail-channels.md)
 
 [Oppdateringer for SDK og modulbibliotek](e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

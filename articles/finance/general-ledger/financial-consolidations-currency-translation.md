@@ -182,3 +182,6 @@ Her er noen av konsolideringsscenariene som Finansrapportering støtter:
 
 ## <a name="generating-consolidated-financial-statements"></a>Generere konsoliderte regnskapsoppgjør
 For informasjon om situasjoner der du kan generere konsoliderte regnskapsoppgjør, kan du se [Generere konsoliderte regnskapsoppgjør](./generating-consolidated-financial-statements.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

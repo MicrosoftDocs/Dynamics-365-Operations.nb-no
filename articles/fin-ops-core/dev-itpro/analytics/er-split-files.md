@@ -47,3 +47,6 @@ Hvis du vil vite mer om denne funksjonen, spiller du av oppgaveveiledningen **ER
 [Mål for elektronisk rapportering (ER)](electronic-reporting-destinations.md)
 
 [Formeldesigner i elektronisk rapportering (ER)](general-electronic-reporting-formula-designer.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

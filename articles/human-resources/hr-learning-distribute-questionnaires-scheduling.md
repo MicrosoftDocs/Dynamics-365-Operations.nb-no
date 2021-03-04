@@ -129,3 +129,6 @@ Med planlegging av spørreskjema kan du planlegge og distribuere spørreskjemaer
 2. Klikk Avslutt.
 3. Klikk OK.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

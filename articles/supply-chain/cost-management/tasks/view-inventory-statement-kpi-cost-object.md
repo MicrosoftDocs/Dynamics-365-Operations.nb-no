@@ -39,3 +39,6 @@ Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten. Den
 7. Angi en dato i Fra dato-feltet.
 8. Angi en dato i Til dato-feltet.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

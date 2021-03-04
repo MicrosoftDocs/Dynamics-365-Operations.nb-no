@@ -166,3 +166,6 @@ Det er mulig å tilbakeføre, og skrive inn transaksjoner på nytt. Hvis du vil 
 2. Klikk **Ja** når meldingen «Når du tilbakefører denne lønnsoppgaven, opprettes en lønnsoppgave for tilbakeføring for å motregne denne lønnsoppgaven. Ingen lønnsoppgave kan redigeres. Du vil tilbakeføre denne lønnsoppgaven?" vises. 
 
 Når du tilbakefører lønnsoppgaven, kan du generere en ny lønnsoppgave for arbeideren fra inntektsoppgaven som du opprettet tidligere. Husk å rette opp eventuelle ukorrekte linjer på inntekstoppgaven før du genererer den nye lønnsoppgaven, og deretter generere nye lønnsoppgaver med riktig beløp. 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

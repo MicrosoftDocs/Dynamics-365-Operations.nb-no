@@ -96,3 +96,6 @@ Hvis du vil ha mer informasjon om kontobehandlingsmoduler og hvordan du redigere
 
 [Oversikt over sider for handlekurv og kasse](quick-tour-cart-checkout.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

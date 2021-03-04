@@ -74,3 +74,6 @@ Feltene **Alias**, **UPN** og **Ekstern underidentifikator** i kategorien **Comm
 [Opprette en funksjonalitetsprofil for Retail](retail-functionality-profile.md)
 
 [ Konfigurere en arbeider](https://docs.microsoft.com/dynamics365/commerce/tasks/worker)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

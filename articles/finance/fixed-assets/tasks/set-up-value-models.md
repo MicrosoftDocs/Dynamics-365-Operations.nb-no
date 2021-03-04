@@ -54,3 +54,6 @@ Denne fremgangsmåten viser hvordan du oppretter et nytt anleggsmiddeltablå og 
     * Merk at Avskrivningsperioder beregnes etter at levetiden er angitt.  
     * Du kan angi avskrivningskonvensjonen etter behov for skatte-og avgiftsformål.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

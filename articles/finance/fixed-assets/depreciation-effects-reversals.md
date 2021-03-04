@@ -96,3 +96,6 @@ Avskrivningen er undervurdert med 16,95 (983,62 - 966,67).
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -54,3 +54,6 @@ En satsvis jobb er en gruppe oppgaver som sendes til en AOS-forekomst (Applicati
     - **Trekk tilbake**: Angi **tilbakeholdt** for den satsvise jobben, slik at den holdes tilbake fra planleggeren for satsvis jobb. Tilsvarer *stopp*.
     - **Venter**: Angi **venter** for den satsvise jobben, slik at den venter på å bli hentet av planleggeren for satsvis jobb. Tilsvarer *start*.
 5. Klikk **OK**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

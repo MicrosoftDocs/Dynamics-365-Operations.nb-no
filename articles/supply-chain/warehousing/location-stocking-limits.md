@@ -104,3 +104,6 @@ Hvis du vil forklare denne tydelige feilen, må du forstå utvalgskriteriene for
 
 > [!NOTE]
 > Du kan ikke bruke lagringsgrenser for lokasjon til å styre for eksempel etterfylling av varer som har ulike antall på samme lokasjon. I dette tilfellet bruker du en *etterfyllingsmal*.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

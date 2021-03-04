@@ -50,3 +50,6 @@ For å gi deg bedre oversikt over de ulike beløpene for handlekurven, er tre ny
 - **Brukt innbetaling** – Innbetalingsbeløpet som brukes for en transaksjon når brukeren utfører en kundeordrehenting. Hvis det ikke finnes overstyring av innbetaling, og en innbetaling på 10 prosent er konfigurert, vil beløpet i dette feltet være 90 prosent av totalbeløpet for kundeordren.
 - **Utfør beløp** – Det totale beløpet for linjer der leveringsmåten ble satt til **Utfør** når kundeordren ble opprettet eller redigert, eller under en kundeordreutveksling. Beløpet i dette feltet inneholder avgifter og tillegg.
 - **Returbeløp** – Det totale beløpet for linjer som har negative antall under kundeordreutvekslingen. Beløpet i dette feltet inneholder avgifter og tillegg.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

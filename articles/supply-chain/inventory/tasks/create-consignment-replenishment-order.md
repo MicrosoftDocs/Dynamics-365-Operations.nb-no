@@ -62,3 +62,6 @@ Dette emnet forklarer hvordan du oppretter en etterfyllingsordre for forsendelse
 3. Velg **Oversikt**. Varene som er mottatt som forsendelseslager og som eies av leverandøren, er tilgjengelig lagerbeholdning. Restantall på etterfyllingsordren for forsendelsen vises i feltet **Bestilt i alt**.  
 4. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

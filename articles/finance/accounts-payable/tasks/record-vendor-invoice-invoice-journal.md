@@ -49,3 +49,6 @@ Denne oppgaveveiledningen viser hvordan du kan registrere leverandørfakturaer s
 12. Klikk **Poster**.
 13. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

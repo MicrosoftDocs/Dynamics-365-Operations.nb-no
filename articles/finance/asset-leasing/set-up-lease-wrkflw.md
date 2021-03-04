@@ -53,3 +53,6 @@ Emnet beskriver hvordan du definerer en godkjenningsarbeidsflyt som skal kjøres
 14. Velg **Lukk** på siden **Opprett arbeidsflyt**.
 14. Velg den nye arbeidsflyten, og velg deretter **Versjoner**. Velg deretter **Gjør aktiv** for å sikre at arbeidsflyten er aktiv.
 15. Velg **Lukk**. Den nye aktive versjonen vises.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

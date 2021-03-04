@@ -78,3 +78,6 @@ Når du prøver å utligne en transaksjon, kan det hende at du legger merke til 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 - [Utlign rest](settle-remainder.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

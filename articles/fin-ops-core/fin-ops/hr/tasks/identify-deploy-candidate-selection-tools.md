@@ -57,3 +57,6 @@ Det kan være vanskelig finne en kvalifisert samling kandidater til ledige still
 24. Lukk siden.
 25. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

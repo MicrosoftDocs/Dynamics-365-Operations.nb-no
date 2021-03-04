@@ -39,3 +39,6 @@ Illustrasjonen nedenfor gir en oversikt over arbeidsflyten fra oppretting av ved
 
 ![Figur 1](media/01-preventive-maintenance.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

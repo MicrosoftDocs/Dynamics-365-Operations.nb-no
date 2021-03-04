@@ -59,3 +59,6 @@ Dette emnet forklarer hvordan du oppretter og tilordner en avansert regelstruktu
 17. Lukk siden.
 18. Velg **Aktiver**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

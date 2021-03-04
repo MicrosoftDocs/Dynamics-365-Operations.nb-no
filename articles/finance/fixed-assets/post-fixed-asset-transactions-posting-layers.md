@@ -49,3 +49,6 @@ Hvis du vil ha mer informasjon, kan du se [Avledede tablåer](derived-books.md) 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

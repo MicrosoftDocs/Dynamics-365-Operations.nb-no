@@ -128,3 +128,6 @@ I dette eksemplet samsvarer alle kontoer som inngår i Kontostruktur – resulta
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

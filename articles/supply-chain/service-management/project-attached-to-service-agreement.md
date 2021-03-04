@@ -37,3 +37,6 @@ Du registrerer og posterer alle serviceordretransaksjoner via prosjektet du knyt
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

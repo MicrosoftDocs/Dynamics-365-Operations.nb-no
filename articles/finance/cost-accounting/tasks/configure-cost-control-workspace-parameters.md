@@ -59,3 +59,6 @@ Bruk denne fremgangsmåten til å konfigurere kostnadskontrollarbeidsområdet sl
 27. Angi eller velg en verdi i feltet Dimensjonshierarkinode for kostnadsobjekt.
     * Når du har valgt et dimensjonshierarki for kostnadsobjektet, utvid dimensjonshierarkiet for kostnadselementer for å vise de ønskede kostnadsverdier. Du kan for eksempel utvide hierarkiet til indirekte produksjonskostnader hvis du vil vise verdien.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

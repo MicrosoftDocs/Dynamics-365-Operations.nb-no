@@ -150,3 +150,6 @@ For å fullføre disse trinnene må du først fullføre trinnene i fremgangsmåt
 17. I **Bankkonto**-feltet skriver du inn `GBSI OPER`.
 18. Velg **OK**, og velg deretter **OK** på nytt. Se gjennom det opprettede regnearket, inkludert detaljer om betalingslinjer samt totalene for hver valutakode som brukes i denne betalingsmeldingen.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

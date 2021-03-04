@@ -82,3 +82,6 @@ Hvis du vil legge til en modul for sosial deling i en kjøpsboksmodul, gjør du 
 [Kjøpsboksmodul](add-buy-box.md)
 
 [Informasjonskapselsamsvar](cookie-compliance.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -333,3 +333,6 @@ Innstillingene for hierarkiet for tilgangsliste brukes til å styre dataene som 
 > [!NOTE] 
 > - Før hierarkiet for tilgangsliste kan påvirke data i Power BI, må hierarkiet for tilgangsliste og radnivåsikkerhet i Power BI sammenkobles. Hvis du vil ha mer informasjon, kan du se [Definere sikkerhet for innholdspakken Kostnadsregnskap](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
 > - Tilgangslistehierarkiet bidrar ikke til å sikre eksporten av data til Excel. Derfor skal det rapporteringsverktøyet bare brukes av regnskapsførere og ledere som må ha full tilgang til å vise dataene.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

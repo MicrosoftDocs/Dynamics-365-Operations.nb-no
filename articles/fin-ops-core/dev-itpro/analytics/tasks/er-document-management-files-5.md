@@ -96,3 +96,6 @@ Denne fremgangsmåten gjelder for en funksjon som ble lagt til i Dynamics 365 fo
 7. Klikk OK.
     * Se gjennom de genererte utdataene. Vær oppmerksom på at i tillegg til fakturameldingen i XML-format, er det opprettet en enkelt fil for hvert vedlegg. Vedleggsfilene fylles ut med de zippede utdataene i binærformat.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

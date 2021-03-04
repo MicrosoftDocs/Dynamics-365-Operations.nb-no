@@ -53,3 +53,6 @@ Du kan søke i partiattributter når du utfører partireservasjoner for en salgs
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

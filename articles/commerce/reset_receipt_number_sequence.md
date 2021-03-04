@@ -68,3 +68,6 @@ Du kan bruke funksjonen **Fjern tilbakestillingsdato** til å fjerne fremtidige 
 
 > [!NOTE]
 > Avhengig av tilbakestillingsdatoen du velger, og kvitteringsformatet, kan du ha dupliserte mottaksnumre. Selv om salgsstedssystemet kan håndtere disse situasjonene, øker de tiden som kreves for å behandle returer, fordi salgsmedarbeiderne må velge mellom de duplikat kvitteringene. Andre komplikasjoner som er relatert til dataopprydding, kan forekomme hvis de duplikat kvitteringene ikke var en planlagt konsekvens. Derfor anbefaler vi at du bruker dynamiske datotegn (for eksempel **ddd**, **MM**, **DD** og **YY**) som hjelp til å hindre duplikate kvitteringsnumre etter en tilbakestilling.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

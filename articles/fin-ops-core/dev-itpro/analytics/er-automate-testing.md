@@ -380,3 +380,6 @@ Som du har sett, kan derfor virkemåten til alle ER-format evalueres automatisk 
 - [Spore genererte rapportresultater og sammenligne dem med grunnlinjeverdier](er-trace-reports-compare-baseline.md)
 - [ER Oppgradere formatet ved å ta i bruk en ny, grunnleggende versjon av dette formatet](tasks/er-upgrade-format.md)
 - [ER Importere en konfigurasjon fra Lifecycle Services](tasks/er-import-configuration-lifecycle-services.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

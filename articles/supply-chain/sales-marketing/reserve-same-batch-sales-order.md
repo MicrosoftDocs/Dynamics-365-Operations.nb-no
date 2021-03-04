@@ -45,3 +45,6 @@ Når du reserverer beholdning for et produkt på en salgsordrelinje som er defin
 - Partiet har ikke nok holdbarhetsdager igjen, basert på utløpsdatoen og best-før-datoen, i tillegg til eventuelle salgbare dager for kunde.
 
 For varer som er knyttet til en lagringsdimensjonsgruppe som har aktivert **Bruk lagerstyringsprosesser**, kan du reservere bestemte partinumre ved å bruke et reservasjonshierarki med partinummer-lagerdimensjonen som er definert ovenfor lokasjonsdimensjonen. Med **Partireservering**-siden for salgs- og overføringsordrelinjer kan du også velge og reservere flere linjer basert på de tilgjengelige partinumrene. Hvis du vil ha mer informasjon om hva du skal gjøre hvis du bruker et reservasjonshierarki som har partinummerdimensjonen under lokasjonen, kan du se [Fleksibel dimensjonsreservasjonspolicy for lagernivå](../warehousing/flexible-warehouse-level-dimension-reservation.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

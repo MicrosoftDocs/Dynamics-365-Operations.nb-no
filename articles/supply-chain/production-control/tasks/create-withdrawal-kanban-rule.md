@@ -64,3 +64,6 @@ Denne fremgangsmåten viser oppsettet som kreves for å opprette en kanban-regel
     * Dette vil opprette to Kanbaner.  
     * Legg merke til at 2 Kanbaner, for 5 hver, ble opprettet for denne kanban-regelen for uttak.  Dette er det siste trinnet i prosedyren.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

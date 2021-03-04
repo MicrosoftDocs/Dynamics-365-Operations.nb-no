@@ -62,3 +62,6 @@ Hvis du vil ha mer informasjon om topptekstfragmenter og moduler, kan du se [Top
 [Topptekstmodul](author-header-module.md) 
 
 [Informasjonskapselsamsvar](cookie-compliance.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

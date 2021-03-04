@@ -43,3 +43,6 @@ Tabellen nedenfor viser Power BI-innholdet som rapportene kopieres fra, og rappo
 | [Salg og fortjeneste](sales-profitability-performance-content-pack.md) | <ul><li>Inntekt etter område</li><li>De ti viktigste kundene etter inntekt</li><li>De ti viktigste produktene etter inntekt</li></ul> |
 | [Behandling av kreditt og innkrevinger](../../../finance/accounts-receivable/credit-collections-power-bi.md) | <ul><li>Forfalt kunde</li><li>Kunder over kredittgrense</li><li>Aldersfordelte saldoer</li></ul> |
 | [Analyse av innkjøp og forbruk](../../../finance/accounts-receivable/credit-collections-power-bi.md) | <ul><li>Innkjøp etter måned/dag</li><li>De ti viktigste leverandørene etter innkjøp</li><li>De ti viktigste produktene etter innkjøp</li></ul> |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

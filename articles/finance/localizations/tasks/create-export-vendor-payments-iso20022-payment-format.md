@@ -50,3 +50,6 @@ Dette er den femte prosedyren av fem, som illustrerer leverandørbetalingsproses
     3.    Skriv inn en verdi i feltet **Filnavn**. I dette eksemplet blir den genererte filen SEPA-kompatibel på grunn av EUR-betalingen. ISO20022 kredittoverføring i tillegg til andre leverandørbetalingsformater kan også brukes for å generere betalinger i andre valutaer.
     4.    Angi eller velg en verdi i **Bankkonto**-feltet.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

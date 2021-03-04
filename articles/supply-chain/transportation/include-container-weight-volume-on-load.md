@@ -45,3 +45,6 @@ Antall containere som bør vurderes for en last, beregnes ut fra vekt og volum a
 -   For å sette opp vekt og volum for en container, klikk **Lagerstyring** \> **Oppsett** \> **Containere** \> **Containertyper**.
 
 -   For å angi containerutnyttelsesprosenten, klikk **Lagerstyring** \> **Oppsett** \> **Containere** \> **Containergrupper**, og skriv inn en verdi i feltet **Utnyttelsesprosent for container**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

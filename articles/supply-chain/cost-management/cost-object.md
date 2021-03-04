@@ -82,3 +82,6 @@ Tabellen nedenfor viser hva et kostnadsobjekt er, og hva et beholdningsobjekt er
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

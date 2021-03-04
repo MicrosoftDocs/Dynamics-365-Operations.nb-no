@@ -76,3 +76,6 @@ Følgende felter er tilgjengelige for hver prosess som er oppført på hurtigfan
 | Polise | Velg en av følgende verdier for å kontrollere om og hvordan gjeldende prosess skal være tillatt for produkter som er i denne statusen:<ul><li>**Aktivert** – Forretningsprosessen er tillatt.</li><li>**Blokkert** – Prosessen er ikke tillatt. Hvis en bruker prøver å bruke prosessen for et produkt i denne statusen, vil systemet blokkere forsøket og vise en feil i stedet. Du kan for eksempel blokkere at produkter som nærmer seg slutten av levetiden, kan kjøpes.</li><li>**Aktivert med advarsel** – Prosessen er tillatt, men det vil bli vist en advarsel. Det kan for eksempel hende at du vil at et prototypprodukt skal plasseres på en produksjonsordre som opprettes av avdelingen for forskning og utvikling. Andre avdelinger bør imidlertid være oppmerksomme på at de ikke bør produsere produktet ennå.</li></ul> |
 
 Hvis du legger til flere statusregler som en tilpasning, kan du vise disse reglene i brukergrensesnittet (UI) ved å velge **Oppdater prosesser** i den øvre ruten. **Oppdater prosesser**-knappen er bare tilgjengelig for administratorer.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

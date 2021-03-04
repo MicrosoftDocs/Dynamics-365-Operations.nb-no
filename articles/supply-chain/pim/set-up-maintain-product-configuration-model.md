@@ -53,3 +53,6 @@ Denne artikkelen beskriver fremgangsmåten for å sette opp og opprette en produ
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

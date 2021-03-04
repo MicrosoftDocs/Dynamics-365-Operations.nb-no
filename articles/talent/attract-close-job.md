@@ -62,3 +62,6 @@ Du kan lukke en jobb som **Stilling besatt** etter at minst ett prospekt har ful
    > Du kan bare lukke en jobb som **Stilling besatt** når minst ett prospekt har fullført tilbudsfasen. Hvis jobbsøknaden ikke har **Tilbud godtatt** valgt, eller hvis søknaden ikke viser statusen **Godtatt** i tilbudet, vil ikke alternativet for **Stilling besatt** vises i **Årsak**-rullegardinlisten.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -65,3 +65,6 @@ Et kostnadsestimat gir også følgende informasjon:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

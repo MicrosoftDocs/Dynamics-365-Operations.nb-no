@@ -213,3 +213,6 @@ Hvis generering av de elektroniske fakturaene mislykkes på grunn av feil, velge
 Du kan konfigurere ER-målene for elektroniske fakturaformater. I dette tilfellet blir utdata-XML-filer som inneholder elektroniske fakturaer, automatisk sendt til de definerte målene like etter at fakturaene er postert. Når du posterer fakturaene, må du aktivere parameteren **Skriv ut faktura**.
 
 Hvis du vil ha mer informasjon om hvordan du konfigurerer ER-mål, kan du se [Mål for elektronisk rapportering](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

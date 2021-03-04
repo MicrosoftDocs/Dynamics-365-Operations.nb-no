@@ -80,3 +80,6 @@ Kategoriattributtgrupper kan også tilordnes til hver gruppe etter behov.
 [Administrere produktkategorier og produkter ](category-management-product-creation.md)
 
 [Endre sorteringsrekkefølgen for varehandelsenheter](custom-order-categories-nav-retail-prod-hierarchy.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

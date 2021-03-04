@@ -59,3 +59,6 @@ På siden **Planlagt ordre**, i kategorien **Forsinkelser** finnes **Ønsket dat
 --------
 
 [Dekningsinnstillinger](coverage-settings.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

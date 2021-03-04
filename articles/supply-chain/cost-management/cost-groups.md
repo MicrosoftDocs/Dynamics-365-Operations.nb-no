@@ -54,3 +54,6 @@ En kostgruppe kan tilordnes en kostgruppetype og virkemåte for ekstra segmenter
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

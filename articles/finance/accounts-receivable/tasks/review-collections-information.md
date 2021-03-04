@@ -143,3 +143,6 @@ Dette emnet forklarer hvordan du går gjennom innkrevingsinformasjon og forskjel
 5. Velg **Vis liste**.
 - Velg en kundekonto eller godta standardoppføringen. Som standard er dette den valgte kundekontoen på listesiden eller i skjemaet som du åpnet dette skjemaet fra. Hvis du åpnet skjemaet fra en listeside, er kundene i listen kundene som er inkludert i purringspuljen som brukes på listesiden.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

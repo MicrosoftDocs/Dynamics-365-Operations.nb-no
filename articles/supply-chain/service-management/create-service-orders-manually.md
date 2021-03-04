@@ -102,3 +102,6 @@ Du kan opprette en serviceordre fra skjemaet **Salgsordrer** ved å bruke veivis
 
 [Opprette serviceordrer (klasseskjema)](https://technet.microsoft.com/library/aa553901\(v=ax.60\)) 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

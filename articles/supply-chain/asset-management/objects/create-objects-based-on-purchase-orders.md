@@ -70,3 +70,6 @@ Du kan kjøre en **telling av ventende aktiva** for å se etter ventende aktiva.
 3. Du kan angi at denne jobben skal kjøres som en satsvis jobb, for eksempel én gang per dag.
 
 **Forsiktig:** Hvis data endres på en bestilling *etter* at du har opprettet et aktivum basert på den fra varen, gjenspeiles ikke disse endringene på aktivaet.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

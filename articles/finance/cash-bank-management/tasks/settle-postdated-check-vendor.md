@@ -52,3 +52,6 @@ Rollen til denne prosedyren er kasserer. Denne fremgangsmåten bruker demonstras
 10. Klikk Bilag.
 11. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

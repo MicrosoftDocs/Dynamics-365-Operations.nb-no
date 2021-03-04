@@ -49,3 +49,6 @@ Du kan opprette månedlige fakturaer for individuelle leieavtaler, eller du kan 
 6. Etter at transaksjonen er postert, kan du vise transaksjonsinformasjonen og den bokførte verdien til leieforpliktelse ved å velge **Gjeldstransaksjoner** i leietablået.
 
     Det merkes av for **Journal postert** i betalingsplanen, og linjen viser fakturajournalnummeret. Etter at en betalingsjournal og en oppføring for denne journalen er opprettet, må du tilbakeføre oppføringen før den kan opprettes på nytt.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

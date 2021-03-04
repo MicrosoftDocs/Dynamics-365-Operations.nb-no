@@ -111,3 +111,6 @@ Slik definerer du integreringen mellom kostregnskap-tjenesten og Dynamics 365 Su
 ## <a name="related-resources"></a>Relaterte ressurser
 
 [Startside for tjeneste for kostnadsregnskap](cost-accounting-service-home.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

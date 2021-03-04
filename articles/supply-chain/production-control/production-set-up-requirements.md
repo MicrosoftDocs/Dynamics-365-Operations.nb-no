@@ -81,3 +81,6 @@ Hvis du arbeider med ruter, må du definere operasjoner for hver produksjonsrute
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

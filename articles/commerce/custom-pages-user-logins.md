@@ -214,3 +214,6 @@ Når du har oppdatert global.json-filen og publisert endringene, vises den nye k
 [Legge til støtte for et innholdsleveringsnettverk (CDN)](add-cdn-support.md)
 
 [Aktivere stedsbasert butikkregistrering](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

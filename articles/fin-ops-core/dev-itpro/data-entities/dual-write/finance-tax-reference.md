@@ -37,3 +37,6 @@ Alle bedrifter arbeider med et grunnleggende sett med økonomiske data, for ekse
 
 + [Integrert finans](ledger-mapping.md)
 + [Integrert original for avgift](tax-mapping.md)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -67,3 +67,6 @@ Kjører du denne prosedyren krever det at en eksisterende produktmodellkonfigura
 15. Angi eller velg en verdi i feltet Behov.
 16. Klikk OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

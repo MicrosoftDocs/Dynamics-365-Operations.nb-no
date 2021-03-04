@@ -41,3 +41,6 @@ Før du kan opprette Kanban-jobber og aktiviteter kan behandles for en produksjo
 5. Klikk Aktiver.
 6. Klikk OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

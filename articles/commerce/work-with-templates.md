@@ -150,3 +150,6 @@ Når du har forhåndsvist endringene i malen, følger du en av disse fremgangsm�
 [Oversikt over maler og oppsett](templates-layouts-overview.md)
 
 [Arbeide med forhåndsinnstilte oppsett](work-with-layouts.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

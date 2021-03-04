@@ -49,3 +49,6 @@ Dette eksemplet brukte en ekstra kostnadsberegningsversjon til å håndtere oppd
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -98,3 +98,6 @@ Gå til **Leverandører > Oppsett > Fakturakontrolloppsett > Toleranser for fakt
 
 1. Du kan angi toleranser for enkeltleverandører som overstyrer standardtoleransen, ved å velge en **Leverandørkonto**.
 2. Angi avviksprosenten du vil godta for denne leverandøren.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

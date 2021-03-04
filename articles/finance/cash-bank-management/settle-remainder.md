@@ -70,3 +70,6 @@ Hvis du vil utligne resten, gjør du følgende:
 7)  Du kan også opprette en betalingsjournal med utligningsresten eller bare postere den uten en journal. Velg **Ja** for **Rediger i journal** for å opprette en betalingsjournal. Du kan redigere betalingsjournalen som du oppretter.
 8)  Klikk på **Utlign rest**. Hvis du velger å opprette en journal, endres knappen til **Opprett journal**. Klikk på **Opprett journal** i stedet.
 9)  Hvis du har opprettet en betalingsjournal, åpnes journalsiden når du har klikket på **Utlign rest**. En journallinje legges til journalen med utligningsrestbeløpet som beløp og utligningsrestkontoen som motkonto. Hvis du har lagt til en kunde eller leverandør slik at du kan flytte utligningsbeløpet til en annen kunde eller leverandør, legges en ekstra linje til i journalen for å flytte utligningsbeløpet til denne kunden eller leverandøren.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

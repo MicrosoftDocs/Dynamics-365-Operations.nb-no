@@ -68,3 +68,6 @@ Denne artikkelen viser hvordan du oppretter fordelselementer som skal brukes nå
 16. Velg et alternativ i Basis-feltet.
 17. Angi et tall i Beløp eller sats-feltet.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

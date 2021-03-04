@@ -62,3 +62,6 @@ Bruk denne fremgangsmåten til å opprette en bestilling som sjekkes for tilgjen
 4. Klikk Feil eller advarsler for budsjettkontroll.
 5. Klikk Lukk.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

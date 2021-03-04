@@ -61,3 +61,6 @@ Denne veiledningen beskriver hvordan du definerer vilkår som bestemmer hvilket 
 Når det gjelder salgsordrer og Kanban-bestillinger, må beholdning reserveres før ordren frigis til lageret. Hvis ikke, varer eller tildelingslinjer kan ikke behandles i en Bølge. For produksjonsordrer kan du også velge Tillat delvis reservasjon. Dette er for eksempel nyttig hvis du har materialene du trenger for å starte produksjon, og du kan deretter vente til tilleggsmaterialene bli tilgjengelige for å fullføre prosessen. Hvis du velger dette alternativet, må du gjenta prosessen med frigivelse til lager manuelt når tilleggsmaterialene flere blir tilgjengelige.  
 25. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

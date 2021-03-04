@@ -243,3 +243,6 @@ Hvis du vil laste ned den arkiverte kjøringsloggen, går du til arbeidsområdet
 -   DMFSTAGINGLOGDETAILS
 -   DMFSTAGINGVALIDATIONLOG
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

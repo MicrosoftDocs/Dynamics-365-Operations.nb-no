@@ -117,3 +117,6 @@ De to illustrasjonene nedenfor viser en planlagt jobb dialogboksen **Planlegg ve
 - Du kan sette opp en satsvis jobb i hurtigfanen **Kjør i bakgrunnen** for å planlegge runder med jevne mellomrom.  
 - Hvis en runde er inkludert i flere arbeidsordrepuljer (se [Arbeidsordrepuljer](../work-orders/work-order-pools.md)), vises én post for hver pulje i **Åpne vedlikeholdsplanpuljer**. Dette gjøres for å optimalisere filtreringsalternativene for arbeidsordrepuljer.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

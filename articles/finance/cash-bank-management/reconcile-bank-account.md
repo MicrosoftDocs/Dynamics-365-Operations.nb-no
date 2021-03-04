@@ -71,3 +71,6 @@ Med funksjonen Avbryt avstemming av bankkontoutdrag kan du avbryte avstemming av
 Avstemminger av bankkontoutdrag kan bare avbrytes i den kronologiske rekkefølgen de ble angitt. Når en avstemming av et bankkontoutdrag avbrytes, tilbakeføres nye transaksjoner og rettelser, og alle andre transaksjoner merkes som ikke avstemt.
  
 Hvis du vil annullere avstemming av bankkontoutdrag, velger du bankkontoutdraget og velger **Bankkontoutdrag > Avbryt bankavstemming**. På siden **Avbryt bankavstemming** oppgir du **Årsakskode**, **Årsakskommentar** og **Annulleringsdato**. Velg **OK** for å starte annulleringen. Legg merke til at annulleringsdatoen for bankkontoutdraget må være på eller etter bankkontoutdragsdatoen. Etter at avstemmingen av bankkontoutdraget er annullert, blir feltet **Annulleringsdato** for bankkontoutdraget oppdatert med den angitte **annulleringsdatoen**. Velg **Transaksjoner**-knappen for å vise transaksjonene som avstemmingen ble annullert for.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

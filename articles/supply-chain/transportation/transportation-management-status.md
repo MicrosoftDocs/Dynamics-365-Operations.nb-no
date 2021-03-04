@@ -49,3 +49,6 @@ Følg denne fremgangsmåten for å tilordne en transportstatus til en transport�
 1. Velg transportstatuskoden som du vil tilordne til den valgte transportørkoden.
 1. Angi den eksterne koden transportøren bruker.
 1. Lukk siden.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

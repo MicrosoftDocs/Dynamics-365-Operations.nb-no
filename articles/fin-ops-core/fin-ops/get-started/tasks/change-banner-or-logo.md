@@ -39,3 +39,6 @@ Følgende prosedyre viser hvordan systemansvarlige kan oppdatere banneret eller 
 6. Gå til **Navigasjonsrute > Moduler > Felles > Felles > Standard instrumentbord**. Det nye banner- eller logobildet skal vises på instrumentbordet.  
     
     Du må kanskje endre firmaet til det du lastet opp banneret for, ved hjelp av firmavelgeren.  
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

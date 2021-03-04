@@ -103,3 +103,6 @@ Denne fremgangsmåten gjelder for en funksjon som ble lagt til i Dynamics 365 fo
 21. Klikk Åpne.
     * Se gjennom den opprettede XML-filen som inneholder tellings- og summeringsdetaljer som ble samlet inn under kjøringen av den valgte konfigurasjonen.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -93,3 +93,6 @@ Denne oppgaven ble opprettet med demodatafirmaet DEMF med land/område for prim�
 2. Klikk Vis filtre.
 3. Bruk følgende filtre: Angi en filterverdi for "" i feltet "Betalings-ID" ved hjelp av filteroperatoren "er ikke".
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

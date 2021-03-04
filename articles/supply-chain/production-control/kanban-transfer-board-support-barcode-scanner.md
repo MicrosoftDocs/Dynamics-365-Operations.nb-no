@@ -192,3 +192,6 @@ Statusen for den valgte jobben og statusen for tilknyttede jobber for hendelses-
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

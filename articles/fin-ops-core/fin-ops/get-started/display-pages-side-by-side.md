@@ -48,3 +48,6 @@ Før du bruker funksjonen **Åpne i nytt vindu**, konfigurerer du popup-blokkeri
 Funksjonen **Åpne i nytt vindu** er bare tilgjengelig når det er flere sider åpne i vinduet. I tillegg lukkes popup-vinduet automatisk når ingen flere sider er åpne (det vil si når den siste siden lukkes i dette vinduet). Systemet lukker også åpne sider når du går til et annet område i programmet. Hvis du har popup-vinduer åpne og går til et annet område i programmet, lukkes derfor popup-vinduene automatisk fordi sidene i disse vinduene ble lukket av systemet.
 
 Den øverste linjen i popup-vinduene viser informasjon om firmaet siden ble åpnet i, og er skrivebeskyttet. Popup-vinduene er også avhengig av hovednettleservinduet. Hvis hovedvinduet lukkes eller oppdateres, blir alle åpne popup-vinduer skrivebeskyttet. Hvis dette skjer, kan du fortsatt vise informasjonen i disse vinduene, men du kan ikke bruke den.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -58,3 +58,6 @@ Som standard er innstillingen **Maksimal utførelsestid** ikke tilgjengelig. Hvi
 
 - **Modul:** *Lagerstyring*
 - **Funksjonsnavn:** *Maksimal utførelsestid for oppryddingsjobb for lagerbeholdning*
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

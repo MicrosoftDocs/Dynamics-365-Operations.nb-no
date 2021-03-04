@@ -55,3 +55,6 @@ Den resulterende numeriske verdien.
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Matematiske funksjoner](er-functions-category-mathematical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

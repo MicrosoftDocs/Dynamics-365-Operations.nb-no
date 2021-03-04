@@ -103,3 +103,6 @@ Hvis en søknad må vurderes av flere arbeidere, kan du bruke siden **Søknadsru
 ## <a name="hiring-applicants"></a>Ansette søkere
 
 Bruk siden **Søknader** for å ansette en søker. Når du ansetter en søker, vil søknadsposten ha statusen **Ansatt** og søkerens personoppføring for global adressebok knyttes til den nye arbeiderposten. Endringer i den globale adressebokinformasjon for den nye arbeiderposten vises også i søkerposten. Dette kan redusere dataregistrering hvis den nye arbeideren fortsatt søker på en annen jobb innenfor organisasjonen. For å ansette en eksisterende arbeider til en ny stilling velger du **Endre stilling** i rullegardinmenyen **Søknadsstatus** for å starte overføringsprosessen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

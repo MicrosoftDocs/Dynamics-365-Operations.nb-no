@@ -236,3 +236,5 @@ Hvis du vil bruke betingede spørsmål til å opprette et spørsmålshierarki i 
 En juridisk enhet tilbyr både varer og tjenester til kunder. Som vanlig i slike tilfeller kjøper enkelte kunder bare varer, noen bare tjenester og andre både varer og tjenester. Når den juridiske enheten distribuerer en undersøkelse om kundetilfredshet, bruker den en betinget struktur på spørreskjemaet, slik at kunder som bare kjøper tjenester, ikke trenger å svare på spørsmål om varer. 
 
 Alternativt kan du definere du et spørreskjema slik at hvis en respondent velger svar A på spørsmål 1, er spørsmål 2 det neste spørsmålsrekkefølgen. Hvis respondenten i stedet velger svar B på spørsmål 1, er spørsmål 5 det neste spørsmålet.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -100,3 +100,6 @@ Illustrasjonen nedenfor viser et eksempel på siden **Bestilling**, med fokus p�
 
 Hvis du vil vise eller angi aktivitetsnummeret som er knyttet til en linje for arbeidsordreinnkjøpsrekvisisjon, velger du innkjøpsrekvisisjonsposten på listesiden **Innkjøpsrekvisisjon for arbeidsordre**, og deretter velger du koblingen for innkjøpsrekvisisjonen i kolonnen **Innkjøpsrekvisisjon**. Du finner feltet **Aktivitetsnummer** i kategorien **Prosjekt** på hurtigfanen **Linjedetaljer**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

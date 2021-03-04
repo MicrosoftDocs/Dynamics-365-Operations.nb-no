@@ -50,3 +50,6 @@ Dette problemet vil løses ved hjelp av endringer som er distribuert i [KB 45715
 ### <a name="issue-resolution"></a>Problemløsning
 
 Microsoft har evaluert dette problemet og har funnet ut at det er en funksjonsbegrensning. For øyeblikket støtter lagerstyringsprosesser bare lager som eies av den juridiske enheten.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

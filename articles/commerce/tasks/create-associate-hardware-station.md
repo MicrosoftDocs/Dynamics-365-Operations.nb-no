@@ -58,3 +58,6 @@ Denne prosedyren hjelper med å opprette en ny maskinvarestasjon. En ny maskinva
 23. Skriv inn en verdi i feltet EFT-terminal-ID.
 24. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

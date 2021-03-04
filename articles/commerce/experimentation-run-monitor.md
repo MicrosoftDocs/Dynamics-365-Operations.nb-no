@@ -53,3 +53,6 @@ Hvis du av en eller annen grunn må endre variasjonene, følger du fremgangsmåt
 
 ## <a name="next-step"></a>Neste trinn
 [Fremme en variasjon og fullføre et eksperiment](experimentation-review-complete.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

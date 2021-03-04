@@ -47,3 +47,6 @@ Denne fremgangsmåten viser hvordan du oppretter en konsolideringskontogruppe og
 8. Angi en verdi i Konsolideringskonto-feltet.
 9. Skriv inn en verdi i feltet Navn på konsolideringskonto.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

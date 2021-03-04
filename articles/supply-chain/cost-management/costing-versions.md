@@ -68,3 +68,6 @@ Innkjøpsprisposter for varer brukes også som referanseinformasjon. Ved å endr
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

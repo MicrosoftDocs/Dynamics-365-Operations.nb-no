@@ -331,3 +331,6 @@ I dette eksemplet opprettes returordrelinjen ved hjelp av funksjonen **Søk ette
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

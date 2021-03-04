@@ -110,3 +110,6 @@ Arbeidsområdet **Overvåking av utgående arbeid** har to fliser som hjelper de
 ## <a name="deleting-completed-tasks"></a>Slette fullførte oppgaver
 
 Du kan slette utsatte plasseringsoppgaver som er fullført, ved å merke dem og slette dem på siden.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

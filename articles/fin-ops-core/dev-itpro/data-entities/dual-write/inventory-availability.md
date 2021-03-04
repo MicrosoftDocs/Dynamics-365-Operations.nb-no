@@ -57,3 +57,6 @@ Dialogboksen returnerer ATP-informasjonen fra Supply Chain Management. Denne inf
 - Tilgangsantall
 - Avgangsantall
 - Antall på lager
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

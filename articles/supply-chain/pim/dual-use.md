@@ -108,3 +108,6 @@ Du bruker siden for **Sertifikater for flerbruk** til å definere og behandle de
     | Skriv ut på faktura | Merk av i denne avmerkingsboksen for å skrive ut sertifikatnummeret på fakturaer som er adressert til det angitte landet i det angitte datoområdet. |
     | Skrive ut på følgeseddel | Merk av i denne avmerkingsboksen for å skrive ut sertifikatnummeret på følgesedler som er adressert til det angitte landet i det angitte datoområdet. |
     | Skriv ut på salgsordre | Merk av i denne avmerkingsboksen for å skrive ut sertifikatnummeret på salgsordrer som er adressert til det angitte landet i det angitte datoområdet. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

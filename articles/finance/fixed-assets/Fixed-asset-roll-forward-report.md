@@ -67,3 +67,6 @@ Følgende tabell beskriver feltene som er tilgjengelige i rapporten.
 |           Avhendinger: Skrapverdi            |                                                                                               Skrapverdien for anleggsmiddeltablået med en avhending – skraptransaksjon.                                                                                               |
 |           Avhendinger: Resultat            |                                                                                 Resultatverdien som beregnes som en del av avhendingstransaksjonen for anleggsmiddeltablået.                                                                                 |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

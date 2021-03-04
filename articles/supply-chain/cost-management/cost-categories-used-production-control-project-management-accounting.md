@@ -44,3 +44,6 @@ Tilleggsknappene på **Kostnadskategorier**-siden gir tilgang til prosjektrelate
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

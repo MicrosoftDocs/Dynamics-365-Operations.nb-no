@@ -131,3 +131,6 @@ Dokumentet / journalen er satt til Beløp inkludert merverdiavgift = Nei Transak
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

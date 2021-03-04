@@ -157,3 +157,6 @@ De følgende trinnene forklarer hvordan en bruker i rollen systemansvarlig eller
 71. Lukk siden.
 72. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

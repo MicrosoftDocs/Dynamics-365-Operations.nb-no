@@ -59,3 +59,6 @@ For arbeideren som skal ha tillatelse til å flytte reservert beholdning, merker
 Denne funksjonen er også tilbakeført til Microsoft Dynamics AX 2012 R3 og er tilgjengelig som en del av CU12.
 Den kan også lastes ned alene gjennom KB-nummer 3192548. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

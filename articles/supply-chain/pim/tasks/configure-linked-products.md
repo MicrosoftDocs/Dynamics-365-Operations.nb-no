@@ -40,3 +40,6 @@ Denne prosedyren hjelper med å konfigurere koblede produkter. Denne prosedyren 
 10. Angi et tall i feltet Antall.
 11. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

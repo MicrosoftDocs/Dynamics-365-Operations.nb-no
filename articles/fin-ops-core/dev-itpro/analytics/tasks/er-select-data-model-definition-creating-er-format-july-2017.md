@@ -98,3 +98,6 @@ Denne fremgangsmåten er ment for brukere som har den systemansvarlige eller ele
     * Merk at nå er det bare ett rotelement som er tilgjengelig til å tilordne til datakildene til programmet. Når minst én modelltilordning er introdusert, kan bare modellens rotelementer som er tilordnet til programmets datakilder, velges som en modelldefinisjon når ER-formatet er lagt til.   
 5. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

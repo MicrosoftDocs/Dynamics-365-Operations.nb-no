@@ -56,3 +56,6 @@ Når du oppretter en arbeidsordre, vil du kanskje definere servicenivåene og le
 2. Velg **Ny**.
 3. Angi beskrivelsen i **Beskrivelse**-feltet.
 4. Velg **Lagre**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -67,3 +67,6 @@ Denne prosedyren hjelper med å opprette en ny Internett-kanal og legge den til 
 3. Kjør distribusjonsplanen 1070 for å synkronisere endringer i kanaldatabasen. 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -63,3 +63,6 @@ Denne oppgaveveiledningen leder deg gjennom forskjellige metoder som brukes til 
 33. Klikk på **OK** for å generere betalingene.
 34. Klikk på **Poster** hvis alle betalingene er godkjent og generert. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

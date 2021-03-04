@@ -63,3 +63,6 @@ Dette hjelper med å utforme relasjonen mellom organisasjonsenheter. Du må oppr
 29. Klikk Publiser.
 30. Klikk Lukk.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

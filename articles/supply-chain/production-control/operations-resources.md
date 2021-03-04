@@ -85,3 +85,6 @@ Når du definerer en aktivitet, for eksempel en ruteoperasjon eller en prosjektt
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

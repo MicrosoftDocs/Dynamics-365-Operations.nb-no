@@ -102,3 +102,6 @@ Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten. Den
 11. Angi 5 i feltet **Innkjøpstid**.
 12. Klikk **Lagre**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

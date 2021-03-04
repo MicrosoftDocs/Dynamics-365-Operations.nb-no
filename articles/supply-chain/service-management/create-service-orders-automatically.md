@@ -71,3 +71,6 @@ Når du oppretter serviceordrer manuelt eller automatisk fra serviceavtalelinjen
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

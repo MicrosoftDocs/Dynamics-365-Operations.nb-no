@@ -38,3 +38,6 @@ Restriksjonsbaserte produktkonfigurasjonsmodeller bruker komponenter som byggest
 7. Skriv inn en verdi i feltet Beskrivelse.
 8. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

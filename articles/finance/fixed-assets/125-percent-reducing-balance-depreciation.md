@@ -88,3 +88,6 @@ Metoden 125 % saldoavskrivning dividerer 125 prosent med antall levetidsår. Av
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

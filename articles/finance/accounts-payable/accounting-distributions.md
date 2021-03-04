@@ -57,3 +57,6 @@ Generiske funksjoner for regnskapsdistribusjon gir følgende alternativer for be
 I versjon 10.0.13 er det lagt til en funksjon som validerer tabellen for regnskapsdistribusjon for å sikre at nye felt er riktig satt opp. Denne funksjonen kalles **Aktiver ytterligere validering av data for dokumenter som bruker regnskapsrammeverket for kildedokumenter**. Hvis du vil bruke funksjonen, må du aktivere den ved hjelp av arbeidsområdet for **Funksjonsbehandling**. Hvis du vil aktivere funksjonen, kan du søke etter funksjonsnavnet i **Søk**-feltet på siden **Funksjonsbehandling** og deretter velge **Aktiver nå**.
 
 Se [Regnskapsdistribusjoner og underfinansjournaloppføringer for leverandørfakturaer](accounting-distributions-subledger-journal-entries-vendor-invoices.md) for mer informasjon.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

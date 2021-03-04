@@ -145,3 +145,6 @@ Denne virkemåten er standard. Den valgte adressen må klassifiseres som leverin
 ## <a name="can-i-find-the-user-who-canceled-a-purchase-order"></a>Kan jeg finne brukeren som annullerte en bestilling?
 
 Denne informasjonen spores bare hvis bestillingen er underlagt endringsstyring. Hvis du bruker endringsstyring, kan du se hvem som sendte inn endringen (annulleringen), og hvem som godkjente den.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

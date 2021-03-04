@@ -56,3 +56,6 @@ Dette emnet beskriver prosessen med å opprette og postere en lageropptellingsjo
 1. Velg **Lager**.
 2. Velg **Transaksjoner**. Her kan du se relaterte transaksjoner som opprettes når du posterer lageropptellingsjournalen.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -104,3 +104,6 @@ Basert på feltene som du valgte å ta med i diagrammet, viser hver node riktig 
 **Tilleggsalternativ**
 
 I Human Resources kan du også bruke arbeidsområdet **Personer** til å vise informasjon relatert til hierarkiet.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

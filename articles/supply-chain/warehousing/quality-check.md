@@ -397,3 +397,6 @@ For dette scenariet vil pall 3 bli godtatt.
 1. Velg menyknappen (**≡**) øverst på siden, og velg deretter **Avbryt** for å gå tilbake til menyen.
 
 Du kan nå lukke mobilappen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

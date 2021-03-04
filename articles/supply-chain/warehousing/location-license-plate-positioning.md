@@ -281,3 +281,6 @@ Nå når funksjonen *Plassering av lokasjonsnummerskilt* er konfigurert, og beho
     ![Plassering 1-lokasjon](media/LocationLicensePlatePositioning.png "Plassering 1-lokasjon")
 
 1. Angi nummerskilt-ID-en du opprettet for lokasjonen, og følg deretter instruksjonene for å velge salgsordren.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

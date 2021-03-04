@@ -49,3 +49,6 @@ For å fullføre disse trinnene, må du først fullføre trinnene i prosedyren "
 ![Siden ER-konfigurasjoner](../media/er-financial-dimensions-guides-run3.png)
     * Se gjennom de genererte utdataene. For hver transaksjon for det valgte partiet, presenteres finansdimensjonene fra det tilsvarende dimensjonssettet. Kjør denne rapporten, og velg ulike dimensjoner for å se at rapporten ikke er avhengig av antall valgte dimensjoner eller antall dimensjoner som er konfigurert for denne forekomsten.  
 ![Siden ER-konfigurasjoner](../media/er-financial-dimensions-guides-run4.png)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

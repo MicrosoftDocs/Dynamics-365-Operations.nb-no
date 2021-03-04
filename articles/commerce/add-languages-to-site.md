@@ -176,3 +176,6 @@ Språket du la til, vil nå være tilgjengelig slik at du kan konfigurere områd
 [Legge til en opphavsrettserklæring](add-copyright-notice.md)
 
 [Legge til skript kode i områdes ID-er for å støtte telemetri](add-telemetry.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -83,3 +83,6 @@ I tillegg støtter lean-produksjon innkjøps- og faktureringsprosesser for tjene
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

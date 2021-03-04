@@ -65,3 +65,6 @@ Denne fremgangsmåten viser hvordan du oppretter en leveringsplan for en salgsor
 22. Klikk OK.
 23. Klikk Ja.
 24. Lukk siden.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

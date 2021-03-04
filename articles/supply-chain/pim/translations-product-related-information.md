@@ -128,3 +128,6 @@ Oversettelser av produktrelatert informasjon kan håndteres når som helst. Når
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

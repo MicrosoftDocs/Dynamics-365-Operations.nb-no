@@ -164,3 +164,6 @@ Følgende tabell viser nettstedene våre. Områder med en stjerne (\*) ved siden
 | [Dynamics-fellesskap](https://community.dynamics.com/) | Dette området har blogger, forum og videoer. |
 | [Microsoft.com/dynamics365](https://www.microsoft.com/dynamics365/home) | Dette området formidler informasjon om evaluering og salg. |
 | [CustomerSource](https://mbs.microsoft.com/customersource/)\* | Dette området drifter opplæringsressurser, nedlastbare rapporter og hvitbøker og er primærområdet for støtte for serviceplaninnehavere. Tilgang til noen ressurser på dette området krever kanskje en serviceplan. |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

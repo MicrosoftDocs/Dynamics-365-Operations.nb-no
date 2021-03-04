@@ -77,3 +77,6 @@ Bruk denne prosedyren for å definere elektroniske signaturer. En elektronisk si
 10. Klikk Lagre.
 11. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

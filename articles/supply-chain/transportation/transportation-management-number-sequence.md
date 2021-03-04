@@ -49,3 +49,6 @@ Hvis du vil knytte en nummerserie til en transportør, gjør du følgende:
 1. Velg **Rediger**.
 1. I hurtigfanen **Oversikt** velger du et alternativ i feltet **Pronummerserie**.
 1. Lukk siden.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

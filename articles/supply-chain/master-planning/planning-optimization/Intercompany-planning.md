@@ -88,3 +88,6 @@ I dette eksemplet opprettes det et bestillingsforslag i USMF-firmaet for å dekk
 Illustrasjonen nedenfor viser hvordan dette eksemplet kan vises på siden **Utligning med flere nivåer** for den planlagte produksjonsordren.
 
 ![Konserninternt eksempel som omfatter tre firmaer](media/IntercompanyPlanning2.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

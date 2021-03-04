@@ -115,3 +115,6 @@ Følgende enheter vil bli aktivert for egendefinerte felt i Common Data Service:
 - **Permisjonstype**
 - **Bankkonto for arbeider**
 - **Arbeidskalender**
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -78,3 +78,6 @@ På et servicebesøk må du bytte girkasse i heisen EL-S/1000. Når du skal bytt
 
 Hvis du oppretter serviceordrer for serviceavtalen automatisk, opprettes også serviceobjektrelasjonene i avtalen, i serviceordrene.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

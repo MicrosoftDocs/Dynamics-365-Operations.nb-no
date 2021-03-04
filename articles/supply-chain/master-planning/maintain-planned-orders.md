@@ -68,3 +68,6 @@ Hvis du planlegger å autorisere mange ordrer samtidig, kan parallellisering av 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

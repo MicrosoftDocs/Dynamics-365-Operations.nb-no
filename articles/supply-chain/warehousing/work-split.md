@@ -155,3 +155,6 @@ Hvis du prøver å bruke lagerappen til å kjøre plukkarbeid mot en arbeids-ID 
 ## <a name="other-blocked-operations"></a>Andre blokkerte operasjoner
 
 Alle operasjoner som endrer arbeidslinjer, arbeidslagertransaksjoner eller etterfyllingskoblinger som er relatert til arbeid som deles, vil mislykkes, og følgende feilmelding vises: Arbeidet med ID \#\#\#\# deles nå.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

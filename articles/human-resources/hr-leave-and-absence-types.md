@@ -82,3 +82,6 @@ Permisjonstyper i Dynamics 365 Human Resources definerer de ulike typene fravær
 - [Opprette en arbeidstidskalender](hr-leave-and-absence-working-time-calendar.md)
 - [Suspender permisjon](hr-leave-and-absence-suspend-leave.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

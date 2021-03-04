@@ -66,3 +66,6 @@ Det posteres en faktura på USD 1 000 med vilkårene for kontantrabatt på 20D2%
 > [!NOTE]
 > Hvis alternativet Beregn kontantrabatter for delvise betalinger velges på siden Kundeparametere eller Leverandørparametere, brukes valutakursen som er i kraft på datoen for hver delbetaling. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

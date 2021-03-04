@@ -110,3 +110,6 @@ Hvis du vil ha mer informasjon, kan du se [Kredit og innkreving i Kunder](collec
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

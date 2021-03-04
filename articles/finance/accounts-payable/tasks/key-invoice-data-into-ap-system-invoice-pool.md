@@ -68,3 +68,6 @@ Dette emnet beskriver hvordan du bruker ankomstregistrering til å opprette fakt
 13. Velg **Transaksjoner**.
 14. Merk fakturaen som du opprettet. Ankomstregistreringsavsetningen ble tilbakeført og postert til den aktuelle kontoen for utgiften.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

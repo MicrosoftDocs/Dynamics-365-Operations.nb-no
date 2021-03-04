@@ -84,3 +84,6 @@ Du kan opprette varelinjer manuelt for aktiva.
 5. Hvis varen utløper, angir du en sluttdato i **Utløp**-feltet.
 6. Velg varen i **Varenummer**-feltet. Navnet angis automatisk i **Produktnavn**-feltet.
 7. Angi antallet som brukes, i **Antall**-feltet. **Enhet**-feltet oppdateres automatisk.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

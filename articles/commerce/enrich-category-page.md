@@ -65,3 +65,6 @@ Gjør følgende for å gjøre en kategoriside rikere:
 [Supplere en produktside](enrich-product-page.md)
 
 [Kontrollere tilgjengelighet for sideinnhold](verify-accessibility.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

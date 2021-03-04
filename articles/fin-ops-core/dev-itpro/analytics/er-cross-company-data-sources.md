@@ -76,3 +76,6 @@ Last ned følgende filer for å fullføre oppgaveveiledning:
 
 - [ER-modellkonfigurasjon - CrossCompanyDataAccessModel.xml](https://go.microsoft.com/fwlink/?linkid=874111)
 - [ER-formatkonfigurasjon - CrossCompanyDataAccessFormat.xml](https://go.microsoft.com/fwlink/?linkid=874111)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

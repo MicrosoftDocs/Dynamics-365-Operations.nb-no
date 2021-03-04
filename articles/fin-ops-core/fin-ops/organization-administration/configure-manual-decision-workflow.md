@@ -350,3 +350,6 @@ Følg denne fremgangsmåten hvis beslutningen må tas innen et bestemt tidspunkt
     - **År** – Velg dagen, uken og måneden da beslutningen må være tatt. Du vil for eksempel at beslutningen skal tas innen fredag i den tredje uken i desember.
 
 4. Hvis tidsgrensen overskrides, vil systemet ta beslutningen. I listen **Handling** velger du alternativet som systemet skal velge.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

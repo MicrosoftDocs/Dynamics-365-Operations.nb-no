@@ -70,3 +70,6 @@ Du kan angi hvilke beholdningsstatuser som er blokkeringsstatuser ved hjelp av p
 [Kvalitetsstyringsprosesser](quality-management-processes.md)
 
 [Kontrollere varekvaliteten](tasks/inspect-quality-goods.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -55,3 +55,6 @@ Brukere utenfor leieren som miljøet ble distribuert i, må representeres i kata
 4. Velg **Importer brukere**.
 5. Velg **Lukk**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

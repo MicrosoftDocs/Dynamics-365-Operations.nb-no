@@ -48,3 +48,6 @@ Dette emnet forklarer hvordan du oppretter en salgsstedstillatelsesgruppe. Demon
 16. Angi eller velg en verdi i feltet Gruppe for salgsstedstillatelse. Alle arbeidere i stillinger for denne jobben bruker salgsstedstillatelsesgruppens innstillinger med mindre arbeidernes salgsstedstillatelser har blitt overstyrt på stillingsnivået.  
 17. Velg **Lagre**. Når endringene er lagret, må du kjøre stabsdistribusjonsplanen for å overføre endringene til handelskanalene.  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

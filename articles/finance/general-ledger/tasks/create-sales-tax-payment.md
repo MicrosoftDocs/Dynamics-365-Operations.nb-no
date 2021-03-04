@@ -37,3 +37,6 @@ Jobbprosedyren Utlign og poster merverdiavgift utligner mva-saldoer på mva-kont
 5. Angi en dato i feltet **Transaksjonsdato**.
 6. Klikk **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

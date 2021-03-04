@@ -59,3 +59,6 @@ Bruk denne oppgaveveiledningen til å opprette et purreforløp. Denne oppgaven b
 26. Utvid **Merknad**-hurtigfanen.
 27. Angi teksten som skal vises på purringen for valgt purrekode. Du kan oversette denne teksten til flere språk ved hjelp av Oversettelser-menyen over notat-boksen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

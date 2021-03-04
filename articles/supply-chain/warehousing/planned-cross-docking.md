@@ -316,3 +316,6 @@ For øyeblikket har begge arbeids-ID-ene samme målnummerskilt. Hvis du vil full
 Illustrasjonen nedenfor viser hvordan det fullførte direkteoverføringsarbeidet kan vises i Microsoft Dynamics 365 Supply Chain Management.
 
 ![Direkteoverføringsarbeid fullført](media/PlannedCrossDockingWork.png "Direkteoverføringsarbeid fullført")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

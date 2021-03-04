@@ -134,3 +134,6 @@ Hvis du vil begrense tilgangen til Human Resources-appen i Microsoft Teams for o
 [Hjelpesenter for Microsoft Teams](https://support.office.com/teams)</br>
 [Behandle permisjonsforespørsler i Teams](hr-teams-leave-app.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -58,3 +58,6 @@ Du kan finne meninger, nyheter og annen informasjon om lagerstyring og andre lø
 
 ### <a name="task-guides"></a>Oppgaveveiledninger
 Mer hjelp er tilgjengelig som oppgaveveiledninger. For å få tilgang til oppgaveveiledninger klikker du på **Hjelp**-knappen på en side
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

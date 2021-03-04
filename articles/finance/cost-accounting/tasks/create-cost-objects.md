@@ -51,3 +51,6 @@ Denne fremgangsmåten viser hvordan du oppretter kostnadsobjekter ved å importe
 ## <a name="view-the-imported-cost-centers"></a>Vise de importerte kostsentrene
 1. Klikk Vis dimensjonsmedlemmer.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

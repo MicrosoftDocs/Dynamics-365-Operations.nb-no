@@ -96,3 +96,6 @@ Bankkontoutdragstransaksjoner du merket som **Ny** på avstemmingsregnearket, po
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

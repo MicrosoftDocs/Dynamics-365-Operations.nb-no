@@ -102,3 +102,6 @@ Hvis du vil bruke filtrering basert på firmakonteksten i de egendefinerte skjem
 
 :::image type="content" source="media/apply-company-context.png" alt-text="Bruk firmakontekst":::
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

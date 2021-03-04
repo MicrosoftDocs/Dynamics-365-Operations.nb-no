@@ -66,3 +66,6 @@ Hver etterfyllingsmetode tilordnes én av følgende dekningskoder:
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Oversikt over hovedplaner](master-plans.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

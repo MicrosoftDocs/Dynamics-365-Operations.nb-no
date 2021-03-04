@@ -309,3 +309,6 @@ Aktivering av funksjonen for BR-00053 (føderal NF-e) kan kreve sending av begre
 - [Oversikt over tillegget Elektronisk fakturering](e-invoicing-service-overview.md)
 - [Komme i gang med tillegget Elektronisk fakturering](e-invoicing-get-started.md)
 - [Konfigurere tillegget Elektronisk fakturering](e-invoicing-setup.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

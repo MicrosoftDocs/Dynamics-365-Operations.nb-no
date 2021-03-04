@@ -39,3 +39,6 @@ Skjermbildet nedenfor viser et eksempel på en vedlikeholdsperson som er knyttet
 
 Kalenderoppsett for verktøy og aktiva er ikke nødvendig i forbindelse med arbeidsordreplanlegging. Det antas at verktøy og aktiva er tilgjengelige hele døgnet for vedlikehold.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

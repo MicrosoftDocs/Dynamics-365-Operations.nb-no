@@ -126,3 +126,6 @@ Kjør backflush-etterkalkulering for periodisk å verdiberegne VIA og produsere 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

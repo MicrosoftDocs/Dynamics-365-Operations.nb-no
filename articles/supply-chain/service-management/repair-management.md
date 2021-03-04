@@ -113,3 +113,6 @@ Når reparasjonen er fullført, kan du lukke reparasjonslinjen. Set reparasjonss
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

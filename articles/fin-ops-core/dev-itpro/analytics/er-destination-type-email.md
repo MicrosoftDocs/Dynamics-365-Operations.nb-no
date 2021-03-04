@@ -145,3 +145,6 @@ Følgende illustrasjon viser prosessen, som beskrevet i dette emnet, med grupper
 - [Oversikt over elektronisk rapportering (ER)](general-electronic-reporting.md)
 - [Mål for elektronisk rapportering (ER)](electronic-reporting-destinations.md)
 - [Formeldesigner i elektronisk rapportering (ER)](general-electronic-reporting-formula-designer.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

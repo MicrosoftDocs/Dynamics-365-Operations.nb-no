@@ -216,3 +216,6 @@ Hurtigmenyen viser de siste utførelsesresultatene for prosessen. Du kan vise lo
 [Opprette og redigere virtuelle enheter som inneholder data fra en ekstern datakilde](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-virtual-entities)<br>
 [Hva er Power Apps-portaler?](https://docs.microsoft.com/powerapps/maker/portals/overview)<br>
 [Oversikt over oppretting av apper i Power Apps](https://docs.microsoft.com/powerapps/maker/)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -122,3 +122,6 @@ Du kan behandle betalinger uten dekning ved å velge **Betaling uten dekning** p
 [Kredittsperrer for salgsordrer](./cm-sales-order-credit-holds.md)
 
 [Periodiske oppgaver for kundekredittbehandling](./cm-periodic-tasks.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

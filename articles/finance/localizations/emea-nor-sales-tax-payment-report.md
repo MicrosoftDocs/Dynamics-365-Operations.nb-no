@@ -117,3 +117,6 @@ Du kan bruke utformingen for å vise eller endre konfigurasjonen du valgte i mod
 
 > [!NOTE]
 > Du kan kombinere flere mva-betalinger og skrive ut én kombinert rapport/XML-fil som inneholder summerte data for alle valgte oppføringer. Du kan kombinere bare poster som er knyttet til en utligningsperiode, og som har samme verdier for **Fra-dato** og **Til-dato**. Du kan for eksempel kombinere en **Originalversjon**-post med dens **Rettelser/Siste rettelser**-post.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

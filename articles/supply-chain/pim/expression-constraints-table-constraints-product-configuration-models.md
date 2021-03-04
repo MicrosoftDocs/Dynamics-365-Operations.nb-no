@@ -254,3 +254,6 @@ Du kan ikke bruke reserverte nøkkelord som problemløsernavn for attributter, k
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

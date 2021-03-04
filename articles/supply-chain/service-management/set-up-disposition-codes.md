@@ -57,3 +57,6 @@ Du kan også definere en årsakskode som forklarer hvorfor en vare ble returnert
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -95,3 +95,6 @@ Hvis du har definert omfanget av eksperimentet som **hele** i veiviseren **Koble
 
 ## <a name="next-step"></a>Neste trinn
 [Forhåndsvise og publisere et eksperiment](experimentation-preview-publish.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

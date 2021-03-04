@@ -76,3 +76,6 @@ Dette emnet forklarer hvordan du laster ned den nyeste versjonen av [Konfigurasj
 [Oversikt over elektronisk rapportering (ER)](general-electronic-reporting.md)
 
 [Last ned ER-konfigurasjoner fra det globale repositoriet for konfigurasjonstjenesten](er-download-configurations-global-repo.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

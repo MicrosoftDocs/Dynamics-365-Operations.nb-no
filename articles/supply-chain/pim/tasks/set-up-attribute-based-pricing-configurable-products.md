@@ -52,3 +52,6 @@ Dette emnet forklarer hvordan du setter opp attributtbasert prising. Det er en f
 8. Skriv inn en verdi i feltet **Uttrykk**. Skriv for eksempel `50`. 
 9. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

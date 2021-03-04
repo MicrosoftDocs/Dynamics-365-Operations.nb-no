@@ -141,3 +141,6 @@ Bruk følgende fremgangsmåte for å oppdatere den eksisterende malen.
     9. På siden for **Tilordningsoppgave** velger du den nye kolonnen som kilde for å opprette en annen tilordning for HIERARCHYTYPENAME.
 
         [![Tildeling](./media/CDS-Mapping5.png)](./media/CDS-Mapping5.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

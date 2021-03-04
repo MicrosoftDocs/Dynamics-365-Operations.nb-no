@@ -63,3 +63,6 @@ Før et ferdig avskrevet anleggsmiddel deles, skal anleggsmiddelstatusen endres 
     - En anskaffelsestransaksjon er opprettet for det nye anleggsmiddelet for det samme beløpet.
 
 4. Velg **Poster**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

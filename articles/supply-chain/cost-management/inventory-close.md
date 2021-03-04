@@ -87,3 +87,6 @@ Noen ganger kan du bli nødt til å tilbakeføre en fullført lagerlukking for �
 > [!NOTE] 
 > Bare den siste lagerperioden som ble lukket, kan åpnes på nytt. For å tilbakeføre en tidligere lagerlukking må du tilbakeføre hver etterfølgende lagerlukking én om gangen og begynne med den siste lukkingen.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

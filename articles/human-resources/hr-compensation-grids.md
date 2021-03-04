@@ -92,3 +92,6 @@ Kompensasjonsrutenett brukes til å definere og vedlikeholde lønn-strukturer fo
 29. Merk eller fjern merking for alle rader i listen.
 30. Klikk Bruk på rutenett.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -65,3 +65,6 @@ Bonusavskrivning angis som en prosent eller et fast beløp. Når du posterer avs
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -110,3 +110,6 @@ Hver rapport for råbalanse bruker en annen kolonnedefinisjon. Disse kolonnedefi
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

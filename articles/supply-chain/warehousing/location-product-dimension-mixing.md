@@ -239,3 +239,5 @@ Du oppretter en bestilling som har tre linjer: to linjer for samme produktnummer
 
 > [!TIP]
 > Du kan gjenta dette scenariet, men denne gangen angir **Størrelse** - *Nei* under **Tillat kombinasjon av produktdimensjon**-hurtigfanen på *BULK*-**lokasjonsprofiler**, slik at ingen av produktdimensjoner kan blandes. I dette tilfellet vil hver produktvariant bli satt til en ny lokasjon når du mottar bestillingen.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

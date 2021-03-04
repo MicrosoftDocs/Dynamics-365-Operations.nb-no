@@ -124,3 +124,6 @@ Arbeidsflytene for **kredittgrensejusteringer** kan brukes til å sende kredittg
 
 > [!NOTE]
 > Når du oppretter arbeidsflyten **Kredittgrensejusteringer**, kan du konfigurere den slik at justeringene automatisk posteres etter at linjene er godkjent. Du må bare ta med oppgaven **Poster journal automatisk** i arbeidsflyten.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

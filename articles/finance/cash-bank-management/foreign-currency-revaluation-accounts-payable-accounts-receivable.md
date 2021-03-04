@@ -66,3 +66,6 @@ En post opprettholdes hver gang du kjører en revaluering av utenlandsk valuta. 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

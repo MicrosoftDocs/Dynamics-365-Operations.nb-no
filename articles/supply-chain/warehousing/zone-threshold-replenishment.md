@@ -344,3 +344,6 @@ Her er noen få merknader og tips om hvordan du arbeider med funksjonen:
 
 - Hvis du bruker dynamiske lokasjoner, vil etterfyllingsarbeid bli opprettet enten for den første tilgjengelige lokasjonen eller for en lokasjon som allerede inneholder beholdningen, hvis handlingen for lokasjonsdirektivet er definert til å bruke **Konsolidering**-strategien.
 - Hvis du bruker faste lokasjoner i stedet for soner, bør du bruke [standard min./maks. etterfylling](tasks/set-up-min-max-replenishment-process.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

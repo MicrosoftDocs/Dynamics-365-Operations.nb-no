@@ -233,3 +233,6 @@ Flere bilag må angis i journalen for å registrere motregningstransaksjonen for
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

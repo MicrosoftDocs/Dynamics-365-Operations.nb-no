@@ -221,3 +221,6 @@ Du må også tilordne nødvendige hoveddata til forhåndsdefinerte SAF-T-standar
 
 Hvis du vil aktivere spesifikke funksjoner for Norge, må du konfigurere utvidelser for komponenter for kanal. Hvis du vil ha mer informasjon, kan du se [retningslinjene for distribusjon](./emea-nor-loc-deployment-guidelines.md).
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

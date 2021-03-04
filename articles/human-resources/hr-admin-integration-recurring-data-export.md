@@ -205,3 +205,6 @@ Illustrasjonen nedenfor viser hvordan Logic Apps Designer ser ut når alle trinn
 I denne opplæringen lærte du hvordan du bruker en logisk app til å eksportere data fra Human Resources og lagre de eksporterte dataene i en OneDrive for Business-mappe. Du kan endre trinnene i denne opplæringen etter behov for å dekke dine forretningsbehov.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

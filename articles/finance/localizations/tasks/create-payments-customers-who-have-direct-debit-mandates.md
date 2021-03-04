@@ -68,3 +68,6 @@ Dette er den femte av fem prosedyrer, som viser kundebetalingsprosessen ved hjel
 11. Klikk OK.
 12. Klikk OK.
 13. Klikk Opprett betalinger.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

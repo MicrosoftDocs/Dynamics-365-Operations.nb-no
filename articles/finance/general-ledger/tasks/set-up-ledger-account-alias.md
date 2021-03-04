@@ -41,3 +41,6 @@ Denne fremgangsmåten viser hvordan du oppretter et kontoalias som inneholder en
 9. Velg dimensjonen som skal ha fokus når aliaset brukes, i feltet Innledende fokus.
     * Når du har skrevet inn snarveien, og kontoen og dimensjonene er utfylt, flyttes markøren eller fokus til feltet Innledende fokus.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

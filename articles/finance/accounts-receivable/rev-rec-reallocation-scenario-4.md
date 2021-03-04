@@ -77,3 +77,6 @@ Når du velger **Bilag**, viser fakturajournalen den opprinnelige regnskapsoppf�
 Deretter åpner du siden **Alle kunder** (**Kunder \> Kunder \> Alle kunder**), velger kunde **US\_SI\_0003**, og velger deretter **Transaksjoner**. Siden **Kundetransaksjoner** viser bare den opprinnelige fakturaen (000008), sammen med den opprinnelige regnskapsoppføringen. Ettersom alternativer **Poster fakturakorrigeringer til Kunder** er satt til **Nei** på siden **Parametere for økonomimodul**, blir bare økonomimodulen oppdatert. Derfor vises ikke tilbakeførings- og oppdaterte regnskapsoppføringer. Legg merke til at inntektsjusteringstransaksjonene som ble opprettet i [scenario 3](rev-rec-reallocation-scenario-3.md), blir vist.
 
 [![Opprinnelig regnskapsoppføring på siden Kundetransaksjoner](./media/47_rev-rec-scenarios.png)](./media/47_rev-rec-scenarios.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

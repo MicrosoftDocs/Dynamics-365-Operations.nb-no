@@ -120,3 +120,6 @@ Denne fremgangsmåten viser hvordan du definerer en ny etterfyllingprosess som b
 11. Klikk **OK**.
 12. Klikk **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

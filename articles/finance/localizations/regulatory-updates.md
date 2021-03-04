@@ -87,3 +87,6 @@ For de siste forskriftsmessige oppdateringsplanene kan du se tabellen nedenfor.
 - Du finner alle planlagte og frigitte forskriftsmessig oppdateringer på [Lifecycle Service – Problemsøk](https://lcs.dynamics.com/Logon/Index) (pålogging kreves).
 - For en liste over lokaliseringene som støttes for kan du se [veiledning for internasjonal tilgjengelighet](https://aka.ms/dynamics_365_international_availability_deck).
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

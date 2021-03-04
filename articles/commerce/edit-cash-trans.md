@@ -120,3 +120,6 @@ Hvis du vil redigere transaksjoner som ikke er koblet til et utdrag i Commerce H
 [Opprette en Excel-arbeidsbok for å redigere detaljhandelstransaksjoner](create-excel-edit.md)
 
 [Legge til felt i en Excel-arbeidsbok for å redigere detaljhandelstransaksjoner](add-fields-excel.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

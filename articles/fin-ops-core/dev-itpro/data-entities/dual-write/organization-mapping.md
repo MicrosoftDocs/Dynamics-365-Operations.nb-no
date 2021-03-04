@@ -73,3 +73,6 @@ Informasjon om intern organisasjon i Dataverse kommer fra to tabeller, **driftse
 [!include [Legal entities](includes/LegalEntities-msdyn-internalorganizations.md)]
 
 [!include [Legal entities](includes/LegalEntities-Companies.md)]
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

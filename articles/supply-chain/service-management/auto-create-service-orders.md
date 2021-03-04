@@ -59,3 +59,6 @@ Serviceavtalen varer fra 1. januar 2012 til 31. desember 2012. To serviceavtalel
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -182,3 +182,6 @@ Gjør følgende for å konfigurere safer.
 
 [Definere en telefonsenterkanal](channel-setup-callcenter.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

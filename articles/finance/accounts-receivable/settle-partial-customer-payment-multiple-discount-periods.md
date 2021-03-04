@@ -98,3 +98,6 @@ Fakturasaldoen er nå 0,00. Magnus viser informasjonen på siden **Kundetransaks
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

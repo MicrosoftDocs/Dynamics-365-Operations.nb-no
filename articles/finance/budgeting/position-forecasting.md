@@ -218,3 +218,6 @@ For å se hvilke budsjettplaner en prognosestilling er inkludert i kan du genere
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

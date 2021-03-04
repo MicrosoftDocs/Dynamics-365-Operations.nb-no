@@ -81,3 +81,6 @@ Når du har opprettet livsløpstilstandene som kreves for vedlikeholdsanmodninge
 Illustrasjonen nedenfor viser et eksempel på siden **Livsløpsmodeller for vedlikeholdsanmodning**.
 
 ![Siden Livsløpsmodeller for vedlikeholdsanmodning](media/06-setup-for-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

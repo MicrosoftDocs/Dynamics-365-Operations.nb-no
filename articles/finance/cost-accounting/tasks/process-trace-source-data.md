@@ -45,3 +45,6 @@ All databehandling kjøres av jobber. For hver enkelt leverandør for jobb og da
     * I dette eksemplet, velg regnskapsår 2017, periode 9.  
 14. Klikk OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

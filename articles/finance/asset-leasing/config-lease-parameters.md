@@ -46,3 +46,6 @@ Flere konfigurasjonsinnstillinger påvirker hvordan Aktivaleie fungerer. Disse i
 
     > [!NOTE]
     > Vi anbefaler at du lar dette alternativet være satt til **Nei**. Innstillingen for dette alternativet brukes som validering og kontroll til å forhindre at en lukket tablåversjon blir avskrevet ved et uhell. Når du har alternativet satt til **Nei**, bidrar du til å holde netto bokført verdi og fremtidige avskrivningsberegninger nøyaktige.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

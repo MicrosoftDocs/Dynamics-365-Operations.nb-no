@@ -51,3 +51,6 @@ Følgende alternativer blir tilgjengelige når arbeidstypen er plukking og oppte
 | Stykkplukkingsbekreftelse | Tilgjengelig for arbeidstypene plukking og opptelling. Produktbekreftelse velges automatisk. Lar deg bekrefte hver del av beholdningen fra den mobile enheten. |
 |  Maksimalt antall enheter  |                   Tilgjengelig for plukkarbeid hvis stykkplukkingsbekreftelse er aktivert. Angir en grense for hvor mange enheter som du må bekrefte.                   |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -88,3 +88,6 @@ Når du skal ignorere betalinger og kreditnotaer ved beregning av purrekoden, gj
 
 1. Gå til **Navigasjonsrute > Moduler > Kreditt og innkreving > Oppsett > Kundeparametere**, og klikk på **Innkrevinger**-kategorien. 
 2. Ende verdien for **Ignorer betalinger og kreditnotaer for beregning av purrekode** til **Ja**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -70,3 +70,6 @@ Denne fremgangsmåten beskriver hvordan du oppretter og oppdaterer et salgstilbu
 13. Klikk på **Salgsordrer**.
 14. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -67,3 +67,6 @@ Nå kan du tilordne en strategi for lastplanlegging til en mal for lastplanleggi
 1. Se gjennom de foreslåtte lastene og foreslåtte lastlinjene.
 1. Velg **Opprett laster** i handlingsruten for å opprette laster som er basert på kildedokumentlinjene på hurtigfanen **Foreslåtte belastningslinjer** i handlingsruten.
 1. Lukk siden **Arbeidsområde for lastplanlegging**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

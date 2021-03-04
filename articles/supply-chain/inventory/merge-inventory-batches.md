@@ -140,3 +140,6 @@ Du kan godkjenne lagerjournalen for partisammenslåingen fra listesiden **Alle p
 
 ## <a name="after-i-merged-a-catchweight-item-why-cant-i-see-the-catchweight-information-in-the-inventory-journal"></a>Hvorfor kan jeg ikke se informasjon om faktisk vekt i lagerjournalen når jeg har flettet en faktisk vekt-vare?
 Du kan slå sammen partier med faktisk vekt-varer på samme måte som alle andre varer. Informasjon om faktisk vekt vises imidlertid ikke i lagerjournalen. Vi anbefaler at du kontrollerer informasjonen for faktisk vekt før du overfører pafrtisammenslåingen til lagerjournalen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

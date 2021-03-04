@@ -114,3 +114,6 @@ Tabellen nedenfor beskriver hurtigtastene som kan brukes når oppslaget er åpen
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

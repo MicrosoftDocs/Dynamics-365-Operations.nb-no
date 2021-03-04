@@ -622,3 +622,6 @@ Du har definert arbeids- og plasseringsdataene for lager 51 for å sikre at arbe
 
 > [!NOTE]
 > Vurder å legge til kvalitet ut-oppføringen i et menyelement for mobilenhet der aktivitetskoden er *Vis åpen arbeidsliste*. Hvis du vil ha et eksempel, se menyelementet mobilenhet med navnet **Arbeidsliste** i demodataene. Legg først til *Kvalitetsordre*-arbeidsklassen i et brukerstyrt menyelement, fordi denne arbeidsklassen kreves for at arbeid skal vises i arbeidslisten. Legg deretter til *Kvalitetsordre*-arbeidsklassen i menyelementet **Arbeidsliste**. Brukere som har tilgang til arbeidslisten, vil da kunne plukke og behandle arbeidet som genereres automatisk av kvalitetsordrevalidering.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

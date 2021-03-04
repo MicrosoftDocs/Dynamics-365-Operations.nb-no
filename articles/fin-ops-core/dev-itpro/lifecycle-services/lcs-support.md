@@ -68,3 +68,6 @@ Dette emnet forklarer hvordan du får hjelp med Finance and Operations-apper ell
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

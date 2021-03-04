@@ -241,3 +241,6 @@ Vurder følgende anbefalte fremgangsmåter når du implementerer et organisasjon
 - Før du modellerer store omstruktureringsscenarier, bruker du hierarkiets gyldighetsdatoer til å foreta en konsekvensanalyse og en valideringstest.
 - Bruk kladdemodus for å endre et hierarki før du publiserer en ny versjon i et produksjonsmiljø.
 - Begrense antall personer som har tillatelse til å legge til eller fjern organisasjoner fra et hierarki i et produksjonsmiljø. Et mindre antall reduserer sjansen for at kostbare feil kan oppstå, og at det må gjøres rettelser.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

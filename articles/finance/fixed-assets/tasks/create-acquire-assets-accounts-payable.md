@@ -56,3 +56,6 @@ Denne oppgaveveiledningen går gjennom oppretting og anskaffelse av et anleggsmi
 17. Klikk koblingen i den valgte raden i listen.
 18. Klikk **Poster**. Anleggsmidlet opprettes og anskaffes når fakturaen posteres.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

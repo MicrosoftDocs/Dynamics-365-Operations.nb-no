@@ -123,3 +123,6 @@ Du kan definere en standard betalingskonto for debitering per betalingsmetode ua
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

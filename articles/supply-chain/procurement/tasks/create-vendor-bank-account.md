@@ -58,3 +58,6 @@ Denne fremgangsmåten viser hvordan du oppretter en bankkonto for en leverandør
 25. Velg kontoen du nettopp har opprettet i **Bankkonto**-feltet.
 26. Klikk **Lagre**. Adressen kan arves fra bankgruppen, hvis det er angitt, eller du kan legge den til her.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

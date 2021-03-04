@@ -53,3 +53,6 @@ Denne prosedyren viser hvordan du oppretter en prisjustering i Commerce. En pris
 14. Lukk siden.
 15. Oppdater siden.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

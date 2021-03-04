@@ -60,3 +60,5 @@ For å laste ned malen **Power Automate – SQL-tilkobling og kjøring** kan du 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Microsoft Power Platform](https://docs.microsoft.com/power-platform/admin/admin-documentation)</br>
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

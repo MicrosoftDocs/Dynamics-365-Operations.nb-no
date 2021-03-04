@@ -118,3 +118,6 @@ Tabellene nedenfor viser en liste over sidene og feltene som de angitte hurtigka
 |     Parametere for kunde > Automatisering av innkrevingsprosess     |     Poster purringer automatisk           |     Handlingstyper for purringer vil postere purringen i løpet av automatiseringen.                                      |
 |     Parametere for kunde > Automatisering av innkrevingsprosess     |     Opprette aktiviteter for automatisering                |     Opprett og lukk aktiviteter for handlingstyper uten aktivitet hvis du vil vise alle automatiske trinn som er utført på en konto.        |
 |     Parametere for kunde > Automatisering av innkrevingsprosess     |     Dager for å beholde automatisering av innkrevingsprosesser     |     Definerer hvor mange dager det er lagret en innkrevingshistorikk.                                                       |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

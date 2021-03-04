@@ -117,3 +117,6 @@ Delene nedenfor forklarer de samlede målene som brukes i hver enhet.
 | Aggregerte nøkkelmålinger       | Felt               | beskrivelse |
 |---------------------------------|---------------------|-------------|
 | Planlagt kostnad for fullført aktivitet | Sum(TotalCostPrice) | Total kostpris i estimater for alle prosjekttransaksjonstypene med fullførte oppgaver |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

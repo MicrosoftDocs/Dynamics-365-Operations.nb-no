@@ -62,3 +62,6 @@ Hvis du vil ha mer informasjon, kan du se [Leverandørsamarbeid med eksterne lev
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

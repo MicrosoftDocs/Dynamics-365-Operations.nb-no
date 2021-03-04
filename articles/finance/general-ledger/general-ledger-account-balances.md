@@ -51,3 +51,6 @@ Hvis du vil ha mer informasjon, kan du se [Vis finansrapporter](view-financial-r
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -72,3 +72,5 @@ Tilordne Talentbruker-rollen til talentrelasjonsteamet.
 
    1. Logg deg på karriereportalen fra et nytt nettleservindu.
    2. Søk på jobben fra karriereportalen. 
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

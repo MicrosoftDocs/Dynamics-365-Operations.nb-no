@@ -45,3 +45,6 @@ ms.locfileid: "4683144"
 - [Arbeidsområde for leverandørbetalinger](../../../finance/accounts-payable/Vendor-payments-workspace.md)
 - [Power BI-innholdet Lagerytelse](warehouse-power-bi-content.md)
 - [Power BI-innholdet Metrikk for arbeidsstyrke](workforce-analysis-power-bi-content-pack.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

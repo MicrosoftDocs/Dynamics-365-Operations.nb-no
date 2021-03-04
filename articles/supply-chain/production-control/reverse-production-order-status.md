@@ -53,3 +53,6 @@ Når du tilbakefører statusen for en produksjonsordre fra **Startet** til **Fri
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

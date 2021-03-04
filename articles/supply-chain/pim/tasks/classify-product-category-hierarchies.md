@@ -43,3 +43,6 @@ Dette emnet beskriver hvordan du klassifiserer et produkt ved hjelp av kategorih
 11. Angi eller velg en verdi i **Kategori**-feltet.
 12. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

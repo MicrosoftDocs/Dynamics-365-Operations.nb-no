@@ -71,3 +71,6 @@ Skalerbar-funksjone er kun tilgjengelig hvis alle elementkomponentene i formelen
 
 ## <a name="use-step-consumption"></a>Bruk Trinnvist forbruk
 Trinnvist forbruk eliminerer kravet om at du må legge inn en mengde i kategorien **Formellinje** for en ingrediens. I stedet er Trinnvist forbruk konfiguert så den har **Fra serier**-verdi og en **Mengde**-verdi. Informasjonen fra Trinnvist forbruk per serieoppføring som tilfredstiller mengden for batchordren velges. Trinnvist forbruk er nyttig når forbruksrates ikke er lineær med hensyn til batchordrestørrelse og øker kun kravet når en bestemt mengdegrense er oppfylt. For å aktivere denne funksjonen for en ny formel, se under **Forbruksberegning**-gruppen, endre formelinnstillingen for gjeldende ingrediens fra **Standard** til **Trinnvis**. Du spesifiserer forbruksmetoden i kategorien **Oppsett** i siden **Formellinje**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

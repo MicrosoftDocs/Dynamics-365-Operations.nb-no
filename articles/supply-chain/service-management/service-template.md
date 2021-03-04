@@ -58,3 +58,6 @@ Det er enklere å bestemme servicemallinjene som du vil kopiere, hvis du har gru
 ## <a name="related-topics"></a>Relaterte emner
 
 [Kopiere servicemallinjer](copy-service-template-lines.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -83,3 +83,6 @@ Hvis det ikke finnes noen brukerdefinert utligningsprioritet, velges transaksjon
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

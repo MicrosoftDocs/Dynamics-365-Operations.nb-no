@@ -118,3 +118,6 @@ Hvis det er behov for både Adyen- og PayPal-betalingskoblingene, legger du til 
 [Dynamics 365 Payment Connector for PayPal](paypal.md)
 
 [Sterk kundegodkjenning ved hjelp av Adyen](adyen_redirect.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

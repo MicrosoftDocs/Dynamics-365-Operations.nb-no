@@ -37,3 +37,6 @@ Du kan bruke det nye **rå XML**-formatelementet til å utforme elektronisk rapp
 > Vær oppmerksom på at rammeverket ikke kontrollerer om XML-innhold som er plassert i det genererte dokumentet ved hjelp av **Rå XML**-formatelementet, er riktig.
 
 Hvis du vil vite mer om denne funksjonen, kan du spille av veiledningene **ER Bruk rå XML-data til å generere XML-rapporter (del 1: Utforme datamodell)** og **ER Bruk rå XML-data til å generere XML-rapporter (del 2: Utforme og kjøre rapport)**, som er en del av **7.5.4.3 Anskaffe/utvikle komponenter for IT-tjeneste/-løsning (10677)**-forretningsprosenten og kan lastes ned fra [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684). Disse veiledningene forklarer deg prosessen med å konfigurere et ER-format for å sette inn rå XML-data i genererte filer.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

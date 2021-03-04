@@ -68,3 +68,6 @@ Denne prosedyren viser hvordan du oppretter, skriver ut og posterer rentenotaer.
 5. Klikk **OK**.
 6. Velg Postert i **Status**-feltet.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

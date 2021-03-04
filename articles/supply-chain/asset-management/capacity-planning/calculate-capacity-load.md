@@ -61,3 +61,6 @@ Dette er nyttig hvis du vil ha en oversikt over forventet kapasitetsbelastning f
 >[!NOTE]
 >Hvis du bare vil fokusere på kapasitetsplanlegging i forbindelse med planlagte arbeidsordrer, kan du se [Beregne kapasitetsbelastning på planlagte arbeidsordrer](../work-order-scheduling/calculate-capacity-load-on-scheduled-work-orders.md).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

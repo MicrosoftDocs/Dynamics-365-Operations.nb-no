@@ -77,3 +77,6 @@ Følgende illustrasjoner viser en tilordning av malen i Dataintegrering.
 ### <a name="work-orders-with-project-field-service-to-supply-chain-management-workorderservice"></a>Arbeidsordrer med prosjekt (Field Service til Supply Chain Management): WorkOrderService
 
 [![Maltilordning i Dataintegrering](./media/FSWOP4.png)](./media/FSWOP4.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

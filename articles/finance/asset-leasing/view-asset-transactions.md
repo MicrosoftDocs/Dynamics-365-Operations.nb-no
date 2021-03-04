@@ -48,3 +48,6 @@ Siden **Aktivatransaksjon** viser transaksjonene som enten øker eller reduserer
 Hvis du vil vise leieutgiftstransaksjoner, velger du en leieavtale på siden **Leiesammendrag**, og deretter velger du **Tablåer** for å åpne leietablåene som er knyttet til leieposten. Deretter velger du **Utgiftstransaksjoner**.
 
 Siden **Utgiftstransaksjoner** viser alle utgifter som er postert mot leieavtalen, for eksempel renteutgifter, avskrivningsutgifter og eventuelle fullbyrdelseskostnader.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

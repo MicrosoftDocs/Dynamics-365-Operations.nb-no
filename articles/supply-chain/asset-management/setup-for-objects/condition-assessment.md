@@ -66,3 +66,6 @@ Når du har foretatt en tilstandsvurderingsregistrering på et aktivum, kan du s
 
 >[!NOTE]
 >Du kan også registrere en tilsynsvurdering på en arbeidsordre (**Aktivastyring** > **Felles** > **Arbeidsordrer** > **Alle arbeidsordrer** > **Tilstandsvurdering**-knappen.)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

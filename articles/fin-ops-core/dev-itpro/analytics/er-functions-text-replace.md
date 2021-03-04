@@ -81,3 +81,6 @@ Hvis argumentet `regular expression flag` er **USANN**, returnerer denne funksjo
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Tekstfunksjoner](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -41,3 +41,6 @@ Denne fremgangsmåten viser hvordan du frigir en produksjonsordre. Demonstrasjon
 6. Klikk OK.
 7. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

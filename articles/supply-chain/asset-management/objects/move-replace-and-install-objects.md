@@ -91,3 +91,6 @@ Bruk funksjonen **Installer aktivum** til å installere en aktivastruktur på et
 4. Velg det nye arbeidsstedet i **Arbeidssted**-feltet.
 5. Som standard settes feltet **Gyldighet** til gjeldende dato og klokkeslett. Du kan imidlertid velge en annen dato og klokkeslett som installeringen av aktivastrukturen skal være gyldig fra.
 6. Velg **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

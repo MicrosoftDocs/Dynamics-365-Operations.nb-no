@@ -57,3 +57,6 @@ Dette emnet viser hvordan du oppretter en salgsavtale som forplikter en av kunde
 11. Velg **OK**.
 12. Lukk siden. Avtalen er nå gyldig. Du kan begynne å koble kundens ordrer til avtalen for å motregne mot forpliktelsesmålet.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

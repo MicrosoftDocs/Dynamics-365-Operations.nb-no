@@ -49,3 +49,6 @@ Hvis du vil ha mer informasjon, kan du se [Definere og generere positive betalin
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

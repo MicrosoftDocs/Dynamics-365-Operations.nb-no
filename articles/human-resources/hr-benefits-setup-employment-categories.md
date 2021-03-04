@@ -36,3 +36,6 @@ Definer ansettelseskategorier i Dynamics 365 Human Resources for å samsvare med
 3. Angi verdier for **Arbeidertype**, **Ansettelseskategori** og **Beskrivelse**.
 
 4. Velg **Lagre**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -71,3 +71,6 @@ Denne fremgangsmåten viser hvordan du oppretter en produksjonsordre. Demonstras
 6. Klikk Lagre.
 7. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -88,3 +88,6 @@ En av de flotte funksjonene i Power BI er måten alle visuelle effekter på en r
 ## <a name="export-to-excel"></a>Eksporter til Excel
 
 Hvis du vil vise rapportdata i Excel, kan du klikke på Alternativer-menyen (tre prikker) i en visuell effekt og velge **Eksporter underliggende data**. Eksporterte data eksporteres som filtrert, og brukertillatelser i Attract respekteres. Hvis du vil ha mer informasjon, kan du se [Eksportere data fra visuelle effekter](https://docs.microsoft.com/power-bi/visuals/power-bi-visualization-export-data).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -45,3 +45,6 @@ Avhengig av firmaets retningslinjer, kan du sende varene i returforsendelsen til
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

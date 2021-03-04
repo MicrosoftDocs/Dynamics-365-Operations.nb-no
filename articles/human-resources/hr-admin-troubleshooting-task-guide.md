@@ -63,3 +63,6 @@ Følg denne fremgangsmåten for å spille av en oppgaveveiledningen på nytt fra
 2. Velg **Åpne fra LCS**.
 3. Velg biblioteket og BPM-noden som har den lagrede oppgaveveiledningen.
 4. Åpne oppgaveveiledningen.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

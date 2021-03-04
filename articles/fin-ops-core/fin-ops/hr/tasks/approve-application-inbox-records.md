@@ -48,3 +48,6 @@ Denne fremgangsmåten viser hvordan du går gjennom søknader som mottas gjennom
 2. Klikk koblingen i den valgte raden i listen.
 3. Utvid delen Vedlegg.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

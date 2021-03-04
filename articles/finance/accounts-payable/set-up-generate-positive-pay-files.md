@@ -165,3 +165,6 @@ Hvis du må endre en positiv betalingsfil, kan du tilbakekalle den. På siden **
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -43,3 +43,6 @@ Denne fremgangsmåten viser hvordan du endrer prognosen for en vare. Demonstrasj
 1. Klikk på **Åpne** i Microsoft Office.
 2. Klikk på **Rediger behovsprognose** i Excel. I Excel kan du legge til, slette og redigere behovsprognoselinjer. Hvis du ikke kan se dataene i Excel, må du logge på med alternativet "Forbli pålogget" aktivert, og du må klarere datatilkoblingsprogrammet.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

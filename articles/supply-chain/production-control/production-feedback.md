@@ -36,3 +36,6 @@ Tilbakemelding på produksjon gir arbeidere tilbakemelding på produksjonsjobber
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

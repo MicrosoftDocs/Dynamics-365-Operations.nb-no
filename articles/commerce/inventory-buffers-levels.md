@@ -149,3 +149,6 @@ Følg denne fremgangsmåten for å konfigurere responsen fra API-ene for produkt
 [Ta i bruk innstillinger for beholdning](inventory-settings.md)
 
 [Beregne lagertilgjengelighet for detaljhandelskanaler](calculated-inventory-retail-channels.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -121,3 +121,6 @@ Hvis du vil bruke en av utgiftskontrollørene som du definerer i en arbeidsflyt,
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

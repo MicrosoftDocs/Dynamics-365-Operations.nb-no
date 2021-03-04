@@ -35,3 +35,6 @@ Denne prosedyren hjelper deg med å opprette og sende inn mva-rapporten til tysk
 5. Velg Ja i feltet Opprett elektronisk avgiftsdokument.
 6. Klikk OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

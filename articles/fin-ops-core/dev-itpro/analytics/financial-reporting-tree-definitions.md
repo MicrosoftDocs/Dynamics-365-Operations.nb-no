@@ -220,3 +220,6 @@ Eksemplene nedenfor viser mulig informasjon som brukes i en rapporteringstredefi
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Finansrapportering](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

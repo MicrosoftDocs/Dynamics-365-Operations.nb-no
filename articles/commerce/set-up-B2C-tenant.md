@@ -362,3 +362,6 @@ En valgfri, sekundær administratorkonto kan legges til i **Brukere**-delen av B
 [Legge til støtte for et innholdsleveringsnettverk (CDN)](add-cdn-support.md)
 
 [Aktivere stedsbasert butikkregistrering](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

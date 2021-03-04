@@ -64,3 +64,6 @@ Demonstrasjonsdatafirmaet USRT brukes til å opprette dette opptaket. Denne regi
 5. Klikk Eksporter.
 6. Klikk PDF.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

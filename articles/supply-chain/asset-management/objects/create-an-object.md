@@ -116,3 +116,6 @@ På denne hurtigfanen kan du legge til eller fjerne vedlikeholdsrunder som er kn
 ## <a name="financial-dimensions"></a>Finansdimensjoner
 
 Du kan velge en finansdimensjon for aktivaet.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

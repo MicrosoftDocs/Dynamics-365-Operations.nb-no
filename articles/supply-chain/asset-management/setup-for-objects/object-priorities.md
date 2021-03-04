@@ -53,3 +53,6 @@ Hvis du vil ha mer informasjon om oppsettet som er knyttet til beregning av poen
 
 > [!NOTE]
 > Hvis du endrer en post for servicenivå for aktiva på siden **Servicenivåer for aktiva** etter at du allerede har brukt den på en arbeidsordre, oppdateres ikke servicenivået på vedlikeholdsanmodninger og arbeidsordrer i henhold til dette.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

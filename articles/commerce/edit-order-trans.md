@@ -90,3 +90,6 @@ Når ordrene er synkronisert, settes de som standard i en sperrestatus basert p�
 [Opprette en Excel-arbeidsbok for å redigere detaljhandelstransaksjoner](create-excel-edit.md)
 
 [Legge til felt i en Excel-arbeidsbok for å redigere detaljhandelstransaksjoner](add-fields-excel.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

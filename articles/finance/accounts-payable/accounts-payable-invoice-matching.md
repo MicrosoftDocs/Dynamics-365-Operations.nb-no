@@ -194,3 +194,6 @@ Hvis du vil ha mer informasjon, se [Treveis kontrollpolicyer](three-way-matching
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

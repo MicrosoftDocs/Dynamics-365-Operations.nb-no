@@ -132,3 +132,6 @@ Gjør følgende for å vise trender for vurderinger og omtaler i Commerce-områd
 [Konfigurere vurderinger og anmeldelser](configure-ratings-reviews.md)
 
 [Synkronisere produktvurderinger i Dynamics 365 Retail](sync-product-ratings.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

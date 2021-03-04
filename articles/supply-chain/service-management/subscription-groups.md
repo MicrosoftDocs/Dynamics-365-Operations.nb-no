@@ -55,3 +55,6 @@ Du kan også utføre følgende oppgaver for alle abonnementer som er tilknyttet 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

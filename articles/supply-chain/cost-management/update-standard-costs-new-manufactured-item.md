@@ -53,3 +53,6 @@ Hvis du vi legge til nye produksjonsvarer i hele den frosne perioden, kan du gj√
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

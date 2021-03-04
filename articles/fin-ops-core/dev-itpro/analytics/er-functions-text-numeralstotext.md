@@ -88,3 +88,6 @@ Valutakoden er valgfri. Hvis den er definert som en tom streng, brukes firmakode
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Tekstfunksjoner](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

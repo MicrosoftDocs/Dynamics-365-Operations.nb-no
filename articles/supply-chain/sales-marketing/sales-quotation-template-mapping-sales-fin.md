@@ -143,3 +143,6 @@ Følgende illustrasjoner viser et eksempel på en tilordning av malen i datainte
 
 [Kundeemne til kontanter](prospect-to-cash.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

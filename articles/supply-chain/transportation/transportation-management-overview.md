@@ -87,3 +87,6 @@ Supply Chain Management inneholder strategi for bygging av last som heter Volumb
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

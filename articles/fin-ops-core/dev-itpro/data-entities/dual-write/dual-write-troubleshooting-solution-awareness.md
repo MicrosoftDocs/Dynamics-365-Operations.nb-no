@@ -45,3 +45,6 @@ På siden **Dobbel skriving** kan du få en feilmelding som ligner på følgende
 *Finner ikke enheten med\_navnet msdyn dualwriteentitymap med namemapping='Logisk i MetadataCache.*
 
 Hvis du vil løse problemet, må du kontrollere at kjerneløsningen for dobbel skriving er installert i Dataverse. Kjernløsningen for dobbel skriving er en forutsetning for løsningsbevissthet.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

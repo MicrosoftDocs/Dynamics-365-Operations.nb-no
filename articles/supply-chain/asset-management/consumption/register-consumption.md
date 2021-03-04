@@ -95,3 +95,6 @@ Når du utfører forbruksregistreringer, legges finansdimensjoner som er knyttet
 >[!NOTE]
 >For alle tre registreringstypene valideres finansdimensjonskombinasjonen, og ugyldige kombinasjoner er tomme. Dette er standard oppsett med andre Finance and Operations-apper.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -152,3 +152,6 @@ Hvis en produktvariant allerede er frigitt i et firma A, og du prøver å frigi 
 **Ny**-knappen på siden **Frigitte produktvarianter** oppretter varianten og frigir den i firmakonteksten. Hvis varianten allerede er opprettet, kan du ikke bruke **Ny**-knappen til å frigi den i et annet firma.
 
 Du kan løse problemet ved å åpne siden **Produktstandard** og velge **Frigi produkt** for å frigi den eksisterende varianten i ønsket firma.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

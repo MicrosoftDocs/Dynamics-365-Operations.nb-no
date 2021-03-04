@@ -62,3 +62,6 @@ En vare legges til en salgslinje for direkte levering fra et lager som er aktive
 ### <a name="issue-resolution"></a>Problemløsning
 
 Microsoft har evaluert dette problemet og har funnet ut at det er en funksjonsbegrensning. For øyeblikket støtter ikke WMS direkte levering. Hvis du vil bruke direkte levering, må du derfor velge en vare og et lager som ikke er WMS.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

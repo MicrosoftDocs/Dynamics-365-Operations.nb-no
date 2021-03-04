@@ -145,3 +145,6 @@ Laste ned og installere Finance and Operations-mobilappen:
 11. Vise ytelsen til individuelle kostnadselementer.
 12. Du kan også søke etter bestemte kostnadselementer.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

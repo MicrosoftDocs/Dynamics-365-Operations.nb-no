@@ -44,3 +44,6 @@ Hvis du vil gjøre import av medlemmer av kostnadsobjektdimensjon enklere, kan d
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

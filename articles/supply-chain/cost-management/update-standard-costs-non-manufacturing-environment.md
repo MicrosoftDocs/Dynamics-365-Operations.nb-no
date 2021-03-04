@@ -52,3 +52,6 @@ Hvis du skal rette, justere eller oppdatere standardkostnader for mye varer, gj√
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

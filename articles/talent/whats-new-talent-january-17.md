@@ -45,3 +45,6 @@ Med denne endringen er standarden for **Handling ønsket av**-feltet nå brukere
 ### <a name="ideas-portal-updated"></a>Ideer-portalen er oppdatert
 Appkoblinger for å sende en idé til Talent har blitt oppdatert til den nye Ideer-portalen. Alle ideer som ble lagt inn i den gamle portalen, er overført, slik at alle gode ideer fremdeles er der og kan stemmes på av andre.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

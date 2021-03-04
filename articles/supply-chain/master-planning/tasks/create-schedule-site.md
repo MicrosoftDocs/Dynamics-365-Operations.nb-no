@@ -56,3 +56,6 @@ Denne fremgangsmåten viser hvordan du planlegger produksjonsordrer som ennå ik
 4. Klikk Materialer.
     * På denne siden kan du se det forventede materialforbruket for operasjonene i produksjonsordren og gjeldende tilgjengelig lager.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -80,3 +80,6 @@ Denne funksjonaliteten er tilgjengelig for alle roller som kan vedlikeholde salg
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

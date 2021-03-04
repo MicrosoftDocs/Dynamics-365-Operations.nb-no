@@ -111,3 +111,6 @@ Det opprettes en ny malstykkliste ved å bruke linjer som tilsvarer linjene i st
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

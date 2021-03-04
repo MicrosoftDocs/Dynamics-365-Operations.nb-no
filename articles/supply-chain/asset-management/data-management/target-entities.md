@@ -53,3 +53,6 @@ I arbeidsområdet **Databehandling** kan du få en oversikt over målenheter, re
 
     ![Figur 3](media/03-data-management.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

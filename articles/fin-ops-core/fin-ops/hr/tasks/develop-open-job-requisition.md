@@ -65,3 +65,6 @@ Rekrutteringsprosjekter hjelper deg med å administrere rekrutteringsprosessen. 
     * Statusen startet betyr at prosjektet er klar til å motta programmer.  
 33. Klikk OK.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

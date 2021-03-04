@@ -96,3 +96,6 @@ I kategorien **Valutaveksling** definerer du juridisk enhet, konto, valutakursty
 Hvis du vil ha mer informasjon om konsolidering og valutavekslinger, kan du se det overordnede emnet i dette emnet, [Oversikt over finanskonsolideringer og valutaomveksling](./financial-consolidations-currency-translation.md).
 
 For informasjon om situasjoner der du kan generere konsoliderte regnskapsoppgjør, kan du se [Generere konsoliderte regnskapsoppgjør](./generating-consolidated-financial-statements.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

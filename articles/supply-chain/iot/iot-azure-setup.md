@@ -162,3 +162,6 @@ Hvis du vil lagre hemmeligheten for tilkoblingsstrengen for Redis-bufferen, gjø
 > Når du oppdaterer en av tilkoblingsstrengene, må du også oppdatere de hemmelige verdiene.
 
 Du har nå fullført klargjøringen av de obligatoriske Azure-ressursene. Neste trinn er å [installere tillegget for IoT-intelligens i Microsoft Dynamics Lifecycle Services (LCS)](iot-lcs-setup.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

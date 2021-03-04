@@ -113,3 +113,6 @@ Du kan tilbakestille resultatene av revalueringen utenfor datorekkefølgen, men 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

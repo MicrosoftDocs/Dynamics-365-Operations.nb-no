@@ -208,3 +208,6 @@ Følgende scenario bruker lagerappen på en mobilenhet for å lage en *justering
 
     > [!NOTE]
    > Systemet oppretter én arbeids-ID for hver flytting som må fullføres. Hvis du angir en lokasjon som allerede inneholder lager, opprettes bare én arbeids-ID. Hvis du angir en ny lokasjon, opprettes det to arbeids-IDer.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

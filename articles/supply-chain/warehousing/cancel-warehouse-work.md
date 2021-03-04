@@ -45,3 +45,6 @@ Bare arbeid av typen **Salg**, **Utstedelse for overføring**, **Råvareplukking
 Hvis du vil oppheve blokkeringen av arbeidet, avbryter systemet alle gjenværende arbeidslinjer og reparerer lagerdataene som er knyttet til arbeids-IDen som brukeren har angitt. Eventuelle vanlige lagerhåndteringsoperasjoner som involverer det berørte vareantallet, kan deretter fortsette.
 
 Hvis du vil plassere den berørte varen på en bestemt lokasjon etter at arbeidet er annullert, må brukeren bruke en lagerbevegelse eller antallsjusteringsoperasjon på en mobil enhet.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

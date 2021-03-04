@@ -59,3 +59,6 @@ Denne fremgangsmåten viser hvordan du oppretter en leverandørkonto, og legger 
 7. Lukk siden.
 8. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

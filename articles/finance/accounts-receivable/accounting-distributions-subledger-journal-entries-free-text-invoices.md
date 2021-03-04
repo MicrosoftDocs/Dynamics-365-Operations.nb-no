@@ -136,3 +136,6 @@ F√∏r du posterer en fritekstfaktura, kan du vise den fullstendige regnskapsoppf√
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

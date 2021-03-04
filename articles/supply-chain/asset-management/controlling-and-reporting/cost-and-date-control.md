@@ -108,3 +108,6 @@ Skjermbildet nedenfor viser et eksempel på beregningsresultater i **Datokontrol
 ![Eksempel på beregningsresultater for Datokontroll for arbeidsordre](media/03-controlling-and-reporting.png)
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

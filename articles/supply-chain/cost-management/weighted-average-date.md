@@ -196,3 +196,6 @@ Det nye glidende gjennomsnittet av kostprisen gjenspeiler gjennomsnittet av de Ã
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -86,3 +86,6 @@ Dette emnet forklarer hvordan du definerer et enkelt lokasjonsdirektiv. Eksemple
 4. Skriv inn en verdi i **Kriterier**-feltet.
 5. Velg **OK**. Du kan fortsette å legge til direktivlinjer og direktivhandlinger før du dekket alle mulige scenarier i lageret.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

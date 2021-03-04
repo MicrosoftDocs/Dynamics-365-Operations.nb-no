@@ -99,3 +99,6 @@ Hvis du vil ha mer informasjon, se følgende emner:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

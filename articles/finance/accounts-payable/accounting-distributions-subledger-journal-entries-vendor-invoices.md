@@ -250,3 +250,6 @@ Hvis underfinansjournaloppføringen er feil når du forhåndsviser den før du j
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

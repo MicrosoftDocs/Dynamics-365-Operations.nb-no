@@ -76,3 +76,6 @@ Eksemplene som beskrives her, viser at alle tellerregistreringer som er utført 
 
 ![Figur 4](media/12-preventive-maintenance.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

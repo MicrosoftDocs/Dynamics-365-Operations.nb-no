@@ -97,3 +97,6 @@ Følgende eksempel viser hvordan du kan hente listen over unike kundekontonumre 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Listefunksjoner](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

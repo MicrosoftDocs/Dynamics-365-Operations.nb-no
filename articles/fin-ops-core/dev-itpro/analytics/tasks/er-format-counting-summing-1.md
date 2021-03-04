@@ -56,3 +56,6 @@ Denne fremgangsmåten gjelder for en funksjon som ble lagt til i Dynamics 365 fo
 8. Utvid Intrastat-modell i treet.
 9. Velg Intrastat-modell\Intrastat (DE) i treet.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

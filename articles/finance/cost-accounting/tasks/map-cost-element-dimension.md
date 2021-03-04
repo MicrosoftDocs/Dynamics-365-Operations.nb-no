@@ -44,3 +44,6 @@ En kostnadskontroller kan bruke denne fremgangsmåten til å tilordne en kostnad
     * For dette eksemplet, velg dimensjonsmedlemmet 6001004 Telefono.  
 11. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

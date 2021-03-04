@@ -79,3 +79,6 @@ Hver serviceavtalelinje beskriver innholdet i det foreslåtte vedlikeholdsarbeid
 ## <a name="related-topics"></a>Relaterte emner
 
 [Opprette serviceavtaler](create-service-agreements.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

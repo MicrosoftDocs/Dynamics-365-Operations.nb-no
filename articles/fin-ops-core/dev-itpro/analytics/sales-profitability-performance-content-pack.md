@@ -107,3 +107,6 @@ Nøkkeldimensjonene nedenfor i salgskuben brukes som filtre for å dele opp de a
 | Datoer            | Datoer                                                |
 
 Som standard viser innholdspakkedataene for inneværende kalenderår. Du kan imidlertid endre datofilteret i delen for rapportfiltre. Du kan også endre firmafilteret.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

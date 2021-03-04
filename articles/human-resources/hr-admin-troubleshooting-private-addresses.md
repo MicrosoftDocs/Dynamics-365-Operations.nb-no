@@ -39,3 +39,6 @@ For å løse problemet må kunden følge denne fremgangsmåten for den duplisert
 3. Velg **Lagre**.
 
 ![Siden for parametere for global adressebok](media/GAD-parameters.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

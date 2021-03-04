@@ -265,3 +265,6 @@ Salgsordrer som har en tvungen sperreårsak, kan ikke frigis automatisk. Hvis sa
 Kredittbehandling kan bare brukes for salgsordrer for øyeblikket. Fritekstfakturaer, salgsstedsordrer og telefonsenterordrer bruker de midlertidige kredittgrensene og forsikring/garantier du legger til for å justere kredittgrensen. De bruker ikke blokkeringsreglene, og de plasseres ikke i sperrelisten hvis det oppstår et problem med kredittgrensen.
 
 Det er ikke støtte for prosjektfakturaer i kredittbehandling.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

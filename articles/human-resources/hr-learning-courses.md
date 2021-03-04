@@ -137,3 +137,6 @@ Ansatte som registrerer seg for et kurs via siden **Ansattselvbetjening**, kan r
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

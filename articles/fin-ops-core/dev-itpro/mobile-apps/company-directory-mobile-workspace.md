@@ -89,3 +89,6 @@ Laste ned og installere Finance and Operations-mobilappen:
 1.  Velg arbeidsområdet **Firmakatalog** i mobilappen.
 2.  I **Søk**-feltet skriver du inn den ansattes fornavn, etternavn, tittel eller avdeling for å starte søket.
 3.  Velg en ansatt. Siden **Ansattprofil** vises. Informasjonen på denne siden inneholder den ansattes fornavn, etternavn, tittel og avdeling.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

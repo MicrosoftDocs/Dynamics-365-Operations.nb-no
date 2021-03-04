@@ -88,3 +88,6 @@ Salgssted gjør det mulig for brukere å konfigurere knapperutenett, som er inkl
 ## <a name="calculating-commissions"></a>Beregne provisjon
 
 Provisjon beregnes for arbeidere i de angitte salgsgruppene samtidig som postering av utdrag eller salgsordre.Provisjonsbeløpet bestemmes basert på arbeiderens provisjonsandel, som definert i salgsgruppen og tilknyttede provisjon beregningsinnstillingene for kunde og/eller produkter på transaksjonen.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

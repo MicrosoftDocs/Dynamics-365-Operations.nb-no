@@ -73,3 +73,6 @@ Fantomstykklister kan også brukes for en stykkliste som har et rutenettverk. I 
 I illustrasjonen nedenfor (a) er stykklisten for produkt G og del F, og (b) er rutearket for produkt G-og del F.
 
 ![Produkt G og del F med ruteark](media/product-G-part-F-with-route-sheet.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

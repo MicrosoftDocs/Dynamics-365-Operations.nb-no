@@ -60,3 +60,6 @@ Klikk **Servicestyring** \> **Periodisk** \> **Tjenestefordeling**.
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

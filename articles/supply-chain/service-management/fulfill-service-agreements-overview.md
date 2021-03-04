@@ -107,3 +107,6 @@ Tabellen nedenfor viser skjemaene som støtter forretningsprosesskomponentene fo
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

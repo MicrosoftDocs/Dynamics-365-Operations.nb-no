@@ -73,3 +73,6 @@ Dette emnet forklarer hvordan du konfigurerer leverandørfakturapolicyer. Levera
 16. Velg **OK**.
 17. Lukk sidene for å gå tilbake til startsiden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

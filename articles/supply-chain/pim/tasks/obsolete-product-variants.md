@@ -73,3 +73,6 @@ Denne prosedyren viser hvordan du finner foreldede frigitte produkter og produkt
 
 8. Finn og velg ønsket post i listen.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

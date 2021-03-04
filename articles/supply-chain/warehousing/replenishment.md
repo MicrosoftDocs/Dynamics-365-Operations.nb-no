@@ -79,3 +79,6 @@ I stedet for å måtte oppsummere kravet på slutten av en allokasjonsprosess og
 |   Lokasjonsdirektiver   |                                                       Lokasjonsdirektiver kreves for å veilede arbeidet til de lokasjonene hvor etterfylling er nødvendig, og til lokasjonene som beholdningen er hentet fra.                                                        |
 |     Arbeidsmaler      |                                                   Arbeidsmaler av typen <strong>Etterfylling</strong> er nødvendig for å opprette etterfyllingsarbeid, slik at beholdning kan flyttes til ønskede lokasjoner.                                                    |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

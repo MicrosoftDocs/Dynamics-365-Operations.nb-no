@@ -38,3 +38,6 @@ Sett **Aktivert** til **Ja** for å bruke ER-konfigurasjonen for å ordne overf�
 
 - [Oversikt over elektronisk rapportering (ER)](general-electronic-reporting.md)
 - [Mål for elektronisk rapportering (ER)](electronic-reporting-destinations.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

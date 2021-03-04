@@ -140,3 +140,6 @@ På siden **Leverandørtransaksjoner** ser April at den nye saldoen er 200,00.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

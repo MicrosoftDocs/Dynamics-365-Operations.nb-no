@@ -91,3 +91,6 @@ Denne fremgangsmåten gjelder for en funksjon som ble lagt til i Dynamics 365 fo
 26. Klikk Fullført.
 27. Klikk OK.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

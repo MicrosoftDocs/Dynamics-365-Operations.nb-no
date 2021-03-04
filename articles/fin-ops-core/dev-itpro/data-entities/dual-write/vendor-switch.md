@@ -78,3 +78,6 @@ Slik oppretter du nye arbeidsflytprosesser ved hjelp av malene for arbeidsflytpr
 4. Opprett en ny arbeidsflytprosess for **Kontakt**-enheten, og velg arbeidsflytprosess-malen **Oppdatere leverandører av typen Person i tabellen Leverandører**.
 5. Du kan konfigurere arbeidsflytene som sanntids- eller bakgrunns-arbeidsflyter basert på dine behov. Velg **Konverter til en bakgrunnsarbeidsflyt** for å konfigurere en arbeidsflyt som en bakgrunnsarbeidsflyt.
 6. Aktiver arbeidsflytene du opprettet for **Kontakt**- og **Leverandør**-tabellen for å begynne å bruke **Kontakt** -enheten til å lagre informasjon for leverandører av **Person**-typen.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

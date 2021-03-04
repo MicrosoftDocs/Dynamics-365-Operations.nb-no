@@ -54,3 +54,6 @@ Immigration Reform and Control Act krever at arbeidsgivere i USA verifiserer sta
 22. Angi eller velg en verdi i feltet Dokumentnummer.
 23. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

@@ -57,3 +57,6 @@ Denne funksjonen ødelegger ikke bakoverkompatibiliteten til ER-rammeverket. All
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [ER-formelspråk](er-formula-language.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

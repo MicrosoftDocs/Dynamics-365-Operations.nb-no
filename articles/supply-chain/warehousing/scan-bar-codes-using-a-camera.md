@@ -55,3 +55,6 @@ På kamerasiden, når du klikker Kamera-knappen, vises den nedtonet ved forsøk 
 
 Når du holder kameraet på en strekkode, må du justere strekkoden innenfor hakeparentesene for best resultat. Når en strekkode er skannet, blir resultatet behandlet, og du føres til neste trinn. Hvis det neste trinnet inneholder et annet inndatafelt med den foretrukne inndatamodusen satt til Skanning, startes kamerasiden på nytt. Hvis det neste trinnet ikke er et skannefelt, startes ikke kamerasiden.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

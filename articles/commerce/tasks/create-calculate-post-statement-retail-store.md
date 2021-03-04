@@ -48,3 +48,6 @@ Dette emnet beskriver de manuelle trinnene for å opprette, beregne og postere e
 12. Velg **Finans for butikk** på hjemmesiden.
 13. Velg kategorien **Posterte utdrag**.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

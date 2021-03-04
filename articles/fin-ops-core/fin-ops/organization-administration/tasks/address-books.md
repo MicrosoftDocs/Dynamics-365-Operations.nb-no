@@ -41,3 +41,6 @@ Demonstrasjonsdatafirmaet USMF brukes til å opprette denne oppgaven. Denne regi
 7. Klikk pilen for å legge til de valgte tilgjengelige teamene i adresseboken.
 8. Klikk **Lagre**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

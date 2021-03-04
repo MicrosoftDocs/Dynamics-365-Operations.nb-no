@@ -65,3 +65,6 @@ Bruk denne prosedyren til å starte og stoppe tidsregistrering for en serviceord
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

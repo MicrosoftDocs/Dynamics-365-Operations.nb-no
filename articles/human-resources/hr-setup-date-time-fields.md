@@ -95,3 +95,6 @@ Når du bruker eksterne kilder som DMF til å vise eller redigere data, er det v
 
 [Dato og klokkeslett-data](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/date-time-zones)<br></br>
 [Brukerforetrukkede tidssoner](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-users-preferred-time-zone) 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

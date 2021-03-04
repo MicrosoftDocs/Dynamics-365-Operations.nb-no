@@ -185,3 +185,6 @@ Denne endringen skjer etter overføringen fordi de fleksible timene er beregnet 
 | 06:00 PM | 08:00 PM | 2    | 1.5       | 3            |
 | 08:00 PM | 09:00 PM | 1    | 2         | 2            |
 |          |          |      | **Totalt** | **8**        |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

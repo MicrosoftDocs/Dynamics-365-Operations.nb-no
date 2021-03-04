@@ -52,3 +52,6 @@ Bruk fradrag i Microsoft Dynamics 365 Human Resources for å fastslå hvor mye h
 4. Hvis du vil spore og vedlikeholde endringer i fordelssatsoppsettet, velger du **Handlinger** og deretter **Vedlikehold versjoner**.
 
 5. Velg **Lagre**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -53,3 +53,6 @@ Når du oppretter journaloppføringene for avskrivningskostnad mot en leieavtale
 Den endelige avskrivningskostnaden kan beregnes ved å bruke en litt annerledes valutakurs, slik at bruksrettseiendelen avskrives helt i både regnskapsvalutaen og rapporteringsvalutaen.
 
 Hvis leieavtalen er reklassifisert som **Utsatt leie**, fjerner systemet automatisk valutakursene for regnskaps- og rapporteringsvalutaene hvis de allerede er definert.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

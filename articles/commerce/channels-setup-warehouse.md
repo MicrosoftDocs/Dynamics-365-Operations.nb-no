@@ -147,3 +147,6 @@ Følgende bilde viser detaljer for et konfigurert lager.
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

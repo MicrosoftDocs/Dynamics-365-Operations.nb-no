@@ -383,3 +383,6 @@ Prognosesaldo (30) = avsetningsbeløp (10 x 1) + gjeldende saldo (40) – overf�
 - [Oversikt over permisjon og fravær](hr-leave-and-absence-overview.md)
 - [Konfigurere permisjons- og fraværstyper](hr-leave-and-absence-types.md)
 - [Avsette permisjons- og fraværsplaner](hr-leave-and-absence-accrue.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

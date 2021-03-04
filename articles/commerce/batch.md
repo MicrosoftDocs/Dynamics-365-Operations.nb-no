@@ -45,3 +45,6 @@ Hvis du vil definere standard parti-ID som brukes for salgsordrefakturering via 
 
 > [!NOTE]
 > Støtte for forbedret håndtering av satsvise varer under utdragspostering for ikke-avanserte lagerstyringsscenarier ble innført i Retail versjon 10.0.5.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -40,3 +40,6 @@ Denne fremgangsmåten viser hvordan du viser årsakene til høy produksjonsavvik
 6. Klikk Vis kostnadssammenligning.
 7. Klikk Lukk.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

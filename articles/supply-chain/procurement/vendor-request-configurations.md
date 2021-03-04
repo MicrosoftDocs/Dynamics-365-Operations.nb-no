@@ -54,3 +54,6 @@ Du kan også angi en bekreftelsesmelding som skal vises når veiviseren er ferdi
 4.  Åpne fanen **Land/regioner** for å velge landet/regionen som skal brukes for konfigurasjonen.
 5.  Fullfør konfigurasjonen ved å følge retningslinjene for standardkonfigurasjonen.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

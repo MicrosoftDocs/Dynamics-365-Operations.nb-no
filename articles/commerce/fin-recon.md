@@ -62,3 +62,6 @@ Når det brukes fordeling av feedbasert postering, slik at posteringen av transa
 Detaljer om økonomisk avstemming for et skift synkroniseres til Commerce Headquarters ved hjelp av P-jobben.
 
 Finanshandelsutdrag i Commerce Headquarters kan ikke beregne totaler til å vise detaljene på utdragslinjene. I stedet brukes de avsluttende beløpene i salgsstedsklienten til å opprette og postere finanshandelsutdrag.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

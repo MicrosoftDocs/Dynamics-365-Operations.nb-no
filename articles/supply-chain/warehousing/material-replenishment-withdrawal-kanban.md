@@ -87,3 +87,6 @@ I dette scenariet, er overføringsaktiviteten for uttaks-kanbanen konfigurert ti
 
 Når en kanban er forbrukt ved produksjonsinnleveringsstedet, rapporteres kanbanen som tom, og en ny kanban legges til i flyten. Når kanbanen opprettet, legges en bølgelinje til i en kanban-bølge. Når kanban-bølgen er beahandlet, opprettes det lagerarbeid for kanban-plukking. Lagermedarbeideren behandler arbeidet for kanban-plukking og blir ledet av arbeidet til å plukke materialer for kanbanen i en lagerlokasjon. Når denne lagermedarbeideren bekrefter plukkingen, blur kanbanen automatiak fullført, og lagerarbeideren blir ledet til å plassere materialet på produksjonsinnleveringsstedet.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

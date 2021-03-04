@@ -40,3 +40,6 @@ Denne fremgangsmåten viser hvordan du definerer produktkonfigurasjonsgrupper ve
 7. Skriv inn en verdi i Navn-feltet.
 8. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

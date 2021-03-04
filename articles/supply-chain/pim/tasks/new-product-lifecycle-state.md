@@ -35,3 +35,6 @@ Denne fremgangsmåten viser hvordan du oppretter en ny produktlivssyklustilstand
 3. Skriv inn en verdi i feltet Tilstand.
 4. Skriv inn en verdi i feltet Beskrivelse.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

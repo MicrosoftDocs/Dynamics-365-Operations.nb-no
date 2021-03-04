@@ -68,3 +68,6 @@ Denne prosedyren viser hvordan du oppretter en policy for opprullet kost og oppr
     * Fortsett til alle kostsentre er tilordnet de tilhørende sekundære kostnadselementer.  
 16. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

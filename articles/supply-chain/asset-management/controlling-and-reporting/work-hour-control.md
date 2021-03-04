@@ -74,3 +74,6 @@ Skjermbildet nedenfor viser et eksempel på beregning av **timekontroll for akti
 En annen måte å gjøre en timeberegning på er å velge flere aktiva i **Alle aktiva** eller **Aktive aktiva**. Deretter klikker du på knappen **Timekontroll** i hurtigfanen **Generelt**. De valgte anleggsmidlene settes automatisk inn i **Aktivum**-feltet i hurtigfanen **Poster som skal inkluderes**. Klikk på **OK** i dialogboksen **Timekontroll for aktivum**, og beregningen for de valgte anleggsmidlene vises. Den samme fremgangsmåten kan brukes for arbeidssteder i **Alle arbeidssteder** eller **Aktive arbeidssteder**, og for arbeidsordrer i **Alle arbeidsordrer** eller **Aktive arbeidsordrer**.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

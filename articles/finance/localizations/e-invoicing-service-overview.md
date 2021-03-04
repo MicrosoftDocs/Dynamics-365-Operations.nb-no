@@ -113,3 +113,6 @@ Aktivering og bruk av Elektronisk fakturering kan kreve sending av begrensede da
 - [Komme i gang med tillegget Elektronisk fakturering for Mexico](e-invoicing-mex-get-started.md)
 - [Komme i gang med tillegget Elektronisk fakturering for Italia](e-invoicing-ita-get-started.md)
 - [Konfigurere tillegget Elektronisk fakturering](e-invoicing-setup.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

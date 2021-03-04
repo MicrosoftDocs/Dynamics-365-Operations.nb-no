@@ -48,3 +48,6 @@ Dette er den tredje prosedyren av fem, som illustrerer leverandørbetalingsprose
 10. Angi verdiene DEMF OPER i feltet Betalingskonto.
 11. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

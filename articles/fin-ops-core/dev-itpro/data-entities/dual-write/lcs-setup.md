@@ -90,3 +90,6 @@ Hvis du vil konfigurere en tilkobling med dobbel skriving, gjør du følgende.
 
 > [!NOTE]
 > Du kan ikke koble fra miljøer ved hjelp av LCS. Hvis du vil oppheve koblingen til et miljø, åpner du arbeidsområdet **Dataintegrering** i Finance and Operations-miljøet, og deretter velger du **Koble fra**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

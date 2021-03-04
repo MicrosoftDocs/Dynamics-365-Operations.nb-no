@@ -67,3 +67,6 @@ Denne funksjonen fungerer som [ROUND](er-functions-mathematical-round.md), men d
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Matematiske funksjoner](er-functions-category-mathematical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -40,3 +40,6 @@ Dette emnet forklarer hvordan du konfigurerer nummerserier enkeltvis. Nummerseri
 8. Utvid delen **Generelt**. I hurtigfanen Generelt angir du om en nummerserie er manuell, sammenhengende eller ikke-sammenhengende. Angi i tillegg det minste og største tallet som kan brukes i nummerserien. Det anbefales ikke at du endrer ikke-sammenhengende nummerserier til sammenhengende nummerserier. Nummerserien vil ikke være virkelig sammenhengende. Denne endringen kan også føre til duplikatnøkkelbrudd i databasen. Sammenhengende nummerserier har i tillegg en større innvirkning på ytelsen.   
 9. Klikk **Lagre**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

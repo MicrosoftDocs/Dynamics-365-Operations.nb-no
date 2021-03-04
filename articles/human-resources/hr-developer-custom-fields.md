@@ -40,3 +40,5 @@ Pass på at du aktiverer alle egendefinerte felt du oppretter, slik at du kan br
 [Common Data Service-enheter](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities)</br>
 [Opprette og arbeide med egendefinerte felt](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields)</br>
 [Vise egendefinerte felt på dataenheter](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields#exposing-custom-fields-on-data-entities)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

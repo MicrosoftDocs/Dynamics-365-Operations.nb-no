@@ -75,3 +75,6 @@ Konfigurasjonen deles med den eksterne organisasjonen, og er tilgjengelig for de
 ![Konfigurasjon delt med en ekstern organisasjon](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/1_RCS_Repo_for_Share_with_test.com)
 
 6. Hvis du vil oppheve deling av en konfigurasjon som tidligere er delt med en ekstern organisasjon, velger du konfigurasjonen og klikker **Opphev deling**, og deretter velger du **OK**
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -55,3 +55,6 @@ Produksjonsplanleggeren beregner material- og kapasitetsbehovene for produksjone
 2. Klikk Bekreft.
 3. Klikk OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

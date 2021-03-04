@@ -210,3 +210,6 @@ I tillegg til begrensningene som for øyeblikket gjelder for faktisk vekt-produk
 
 > [!NOTE]
 > Informasjonen ovenfor om faktisk vekt-koder er bare gyldig hvis faktisk vekt-produktet har en sporingsmetode for faktisk vekt-kodedimensjon som spores fullstendig (det vil si hvis parameteren **Sporingsmetode for faktisk vekt-kodedimensjon** i policyen for behandling av faktisk vekt-varer settes til **Produktdimensjoner, sporingsdimensjoner og alle lagringsdimensjoner**). Hvis faktisk vekt-varen bare spores delvis av koder (det vil si hvis parameteren **Sporingsmetode for faktisk vekt-kodedimensjon** i policyen for behandling av faktisk vekt-varer settes til **Produktdimensjoner, sporingsdimensjoner og lagerstatus**), gjelder flere begrensninger. Siden synlighet går tapt mellom koden og lageret i dette tilfellet, støttes ikke enkelte andre scenarier.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

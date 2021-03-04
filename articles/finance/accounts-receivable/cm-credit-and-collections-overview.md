@@ -77,3 +77,6 @@ Du finner beskrivelser av disse konseptene under [Nøkkelbegreper for innkreving
 [Kredittsperrer for salgsordrer](./cm-sales-order-credit-holds.md)
 
 [Periodiske oppgaver for kundekredittbehandling](./cm-periodic-tasks.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

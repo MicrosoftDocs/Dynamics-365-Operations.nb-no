@@ -57,3 +57,6 @@ I **Parametere for produksjonskontroll** kan du bruke feltet **Finanspostering**
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

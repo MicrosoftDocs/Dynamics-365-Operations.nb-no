@@ -1033,3 +1033,6 @@ Ingen nye funksjoner er lagt til.
 [Startside for Hva er nytt eller endret i Finance and Operations](whats-new-changed.md)
 
 [Nye oppgaveveiledninger (februar 2016)](new-task-guides-available-february-2016.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

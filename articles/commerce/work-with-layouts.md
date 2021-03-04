@@ -109,3 +109,6 @@ Når du har forhåndsvist endringene i det forhåndsinnstilte oppsettet, følger
 [Oversikt over maler og oppsett](templates-layouts-overview.md)
 
 [Arbeide med maler](work-with-templates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

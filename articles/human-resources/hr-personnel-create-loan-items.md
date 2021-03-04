@@ -59,3 +59,6 @@ Utlånsvarer er poster som hjelper deg med å spore fysiske varer, for eksempel 
 14. Klikk OK.
 15. Oppdater siden.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

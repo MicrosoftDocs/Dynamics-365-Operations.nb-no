@@ -205,3 +205,6 @@ På **Handlinger**-menyen kan du også opprette en ny prosess ved å kopiere en 
 En annen nyttig kommando på **Handlinger**-menyen er **Vis budsjettprosesstatus**. Denne kommandoen viser grafisk budsjettplanene i en prosess, sammen med relevante data, for eksempel planens arbeidsflytstatus, sammendrag etter beløp og enhet, og ettklikksnavigering for budsjettplanene.
 
 [![Status for budsjettplanleggingsprosess](./media/budgetplanningprocessstatus-300x171.png)](./media/budgetplanningprocessstatus.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

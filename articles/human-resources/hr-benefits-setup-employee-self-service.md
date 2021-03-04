@@ -72,3 +72,6 @@ I Microsoft Dynamics 365 Human Resources kan du konfigurere fliser for navigasjo
    | **End** | Sluttdatoen og klokkeslettet flisen skal være tilgjengelig. |
 
 4. Velg **Lagre**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

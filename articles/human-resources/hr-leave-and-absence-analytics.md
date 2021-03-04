@@ -45,3 +45,5 @@ Dynamics 365 Human Resources inneholder analyse for å hjelpe deg med å få inn
 
 - [Oversikt over permisjon og fravær](hr-leave-and-absence-overview.md)
 - [Opprette en permisjons- og fraværsplan](hr-leave-and-absence-plans.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -63,3 +63,6 @@ Følgende illustrasjoner viser en tilordning av malen i Dataintegrering.
 ### <a name="field-service-products-with-inventory-unit-supply-chain-management-to-field-service-products"></a>Field Service-produkter med lagerenhet(Supply Chain Management til Field Service): Produkter
 
 [![Maltilordning i Dataintegrering](./media/FSProduct1.png)](./media/FSProduct1.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

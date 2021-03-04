@@ -61,3 +61,6 @@ Alternativet **Avstem etter import** vil automatisk validere bankkontoutdraget, 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

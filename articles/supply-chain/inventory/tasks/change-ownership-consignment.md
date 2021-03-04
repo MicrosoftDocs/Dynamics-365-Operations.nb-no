@@ -55,3 +55,6 @@ Denne fremgangsmåten viser hvordan du endrer eieren av forsendelseslageret fra 
 2. Klikk OK.
 3. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

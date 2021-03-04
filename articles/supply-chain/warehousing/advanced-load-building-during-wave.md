@@ -250,3 +250,6 @@ Dette scenariet viser hvordan innstillingene som ble beskrevet tidligere i dette
 1. I salgsordren du nettopp opprettet, velger du **Legg til** på **Salgsordrelinjer**-hurtigfanen for å legge til en ny linje.
 1. På den nye linjen angir du **Varenummer**-feltet til *M9200* og **Antall**-feltet til *1*.
 1. Gjenta linjer 6 til og med 9 for å reservere linjen og frigi den til lageret. Som tidligere oppretter systemet en **ny** forsendelse for linjen du la til. Men fordi varen kommer fra **CarAudio**-varegruppen, **kan den ikke overføre betingelsene du angir for samlegruppen for last**. Derfor **legges den til en ny last**. Hvis du ikke hadde angitt en samlegruppe for lastplanleggingsmalen, ville denne forsendelsen ha blitt lagt til i den første lasten.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

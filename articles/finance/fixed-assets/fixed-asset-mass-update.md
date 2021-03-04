@@ -42,3 +42,6 @@ Når du har oppdatert avskrivningskonvensjonen for anleggsmidler, kan du behandl
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

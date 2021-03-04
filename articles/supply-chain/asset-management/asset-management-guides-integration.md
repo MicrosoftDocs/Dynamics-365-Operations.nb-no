@@ -114,3 +114,6 @@ Følg disse trinnene for å knytte en veiledning til en mal for kontrolliste for
 
 - [Oversikt over dobbel skriving](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview.md)
 - [Oversikt over anleggsmiddelbehandling](index.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

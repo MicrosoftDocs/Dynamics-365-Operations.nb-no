@@ -43,3 +43,6 @@ Oppsett av planlagt utførelse, som er knyttet til arbeidsordrer, kan være gene
 6. Velg **Lagre**.
 
 ![Planlagt utførelse](media/20-setup-for-work-orders.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

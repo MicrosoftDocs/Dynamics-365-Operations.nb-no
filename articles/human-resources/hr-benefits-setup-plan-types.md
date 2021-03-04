@@ -63,3 +63,6 @@ En plantype kan definere dekningsalternativer. Dekningsalternativene er definert
    | **Rapporteringsvindu** | Angir rapporteringsvinduet (i dager) for levetidshendelsen. **Obs**! Hvis du ikke angir et beløp, antar systemet at rapporteringsvinduet er null, og livshendelsen behandles ikke. |
 
 5. Velg **Lagre**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

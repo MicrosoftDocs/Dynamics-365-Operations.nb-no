@@ -128,3 +128,6 @@ Følg denne fremgangsmåten for å opprette plukkearbeid.
 
 > [!IMPORTANT]
 > Hvis du avbryter bare en del av antallet for en arbeidslinje, må du også fjerne det foreldede antallet fra lastlinjen. Hvis ikke, med mindre underlevering er konfigurert riktig, kan ikke belastningslinjen leveringsbekreftes.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

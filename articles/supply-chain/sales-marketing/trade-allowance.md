@@ -200,3 +200,6 @@ Hvis du vil ha en mer analytisk oversikt over de ulike ytelsesmål for kampanjen
 
 Hvis du vil ha en mer analytisk oversikt over de ulike ytelsesmål for kampanjen, kan du bruke analysevisningen. For å gå til analysevisningen, klikk **Salg og markedsføring** \> **Handelsrabatter** \> **Handelsrabattavtaler**. Klikk **Analyse** i handlingsruten. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

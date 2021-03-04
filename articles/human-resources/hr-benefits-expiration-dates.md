@@ -46,3 +46,6 @@ Denne fremgangsmåten beskriver hvordan du kan la en fordel utløpe eller utvide
 15. Klikk Fordeler.
 16. Finn fordelen og velg posten i listen. Noter den nye sluttdatoen for dekning.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

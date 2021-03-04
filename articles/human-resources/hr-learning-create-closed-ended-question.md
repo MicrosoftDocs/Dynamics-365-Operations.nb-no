@@ -68,3 +68,6 @@ Med lukkede spørsmål kan du angi alternativer for respondenten å velge blant.
 5. Angi eller velg en verdi i Svargruppe-feltet.
 6. Skriv inn en verdi i Tekst-feltet.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

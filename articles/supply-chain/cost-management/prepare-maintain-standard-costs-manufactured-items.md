@@ -73,3 +73,6 @@ Hvis du vil bruke rutinginformasjon til kostnadsformål, kreves det flere klargj
 
 [Definere produkter som kan være produsert eller fremskaffet](manufactured-items-treated-as-purchased-items.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

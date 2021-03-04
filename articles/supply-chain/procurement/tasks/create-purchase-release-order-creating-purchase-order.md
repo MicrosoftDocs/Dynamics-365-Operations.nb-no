@@ -64,3 +64,6 @@ Denne fremgangsmåten viser hvordan du bruker en kjøpsavtale når du oppretter 
 3. Lukk siden.
 4. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

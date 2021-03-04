@@ -59,3 +59,6 @@ Hvis de nasjonale innstillingene for Microsoft Dynamics 365 Finance-forekomstens
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Tekstfunksjoner](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

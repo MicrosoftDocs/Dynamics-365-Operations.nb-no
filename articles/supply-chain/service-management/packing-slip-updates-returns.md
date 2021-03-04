@@ -49,3 +49,6 @@ Når du oppdaterer en følgeseddel for en returnert vare fra en salgsavtale, opp
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

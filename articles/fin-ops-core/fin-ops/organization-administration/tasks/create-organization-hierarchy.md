@@ -48,3 +48,6 @@ Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
     - Legg til organisasjoner etter behov.  
     - Hvis du vil legge til en organisasjon, klikker du **Rediger** og deretter **Sett inn** for å legge til organisasjonen. Når du er ferdig med endringene, kan du **lagre** en kladd og/eller **publisere** endringene.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

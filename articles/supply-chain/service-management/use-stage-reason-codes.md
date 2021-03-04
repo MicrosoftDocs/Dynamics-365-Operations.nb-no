@@ -73,3 +73,6 @@ Hvis tidsbegrensningen er overskredet på en serviceavtale, må du angi en årsa
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

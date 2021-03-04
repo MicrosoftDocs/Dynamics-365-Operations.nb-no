@@ -48,3 +48,6 @@ Betale inn kundebetalinger. Denne oppgaven bruker demonstrasjonsfirmaet USMF.
 17. Velg **OK**. Den første siden brukes til å opprette betalingsbilaget.  
 18. Velg **OK**. Det andre trinnet er å skrive ut betalingsbilaget, men dette trinnet er ikke nødvendig.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

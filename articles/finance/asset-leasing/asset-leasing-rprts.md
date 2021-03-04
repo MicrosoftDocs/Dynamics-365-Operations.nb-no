@@ -165,3 +165,6 @@ Rapporten om avveid gjennomsnitt for rabattsats oppfyller de amerikanske kravene
 |     Valuta.                          |     Forkortelsen for transaksjonsvalutaen som brukes. Alle rapporter vil konvertere transaksjonsvalutaen til rapporteringsvalutaen.  |
 |     Gjenstående leiebetalinger          |     Totalbeløpet med ubetalte leiebetalinger fra betalingsplanen som gjenstår fra **Per**-datoen.            |
 |     Gjenstående avveide betalinger       |     Leiebetalingene som gjenstår, multiplisert med rabattsatsen som brukes.   |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -150,3 +150,6 @@ Her er relaterte kjernetabelltilordninger for kundeemne til kontanter:
 [!include [sales quotation header](includes/SalesQuotationHeaderCDSEntity-quote.md)]
 
 [!include [sales quotation line](includes/SalesQuotationLineCDSEntity-QuoteDetails.md)]
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

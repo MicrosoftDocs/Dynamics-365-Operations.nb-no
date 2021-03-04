@@ -52,3 +52,6 @@ Denne oppgaveveiledningen går gjennom å legge til en hovedkonto i en eksistere
 21. Velg metoden for å beregne valutakurser for kontoen i **Type valutaveksling**-feltet.
 22. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

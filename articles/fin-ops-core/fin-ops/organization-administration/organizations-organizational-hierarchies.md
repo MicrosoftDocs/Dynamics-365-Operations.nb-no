@@ -67,3 +67,6 @@ Definer organisasjonshierarkier for å vise og rapportere for bedriften fra ulik
 Hvert hierarki er tilordnet et formål. Formålet med et hierarki bestemmer hvilke organisasjonstyper som kan inkluderes i hierarkiet. Formålet bestemmer også bruksscenariene for hierarkiet.
 
 Organisasjoner i et hierarki kan dele parametere, policyer og transaksjoner. En organisasjon kan arve eller overstyre parameterne for den overordnede organisasjonen. Delte hoveddata, for eksempel produkter og adressebøker, gjelder imidlertid for hele organisasjonen og kan ikke overstyres for individuelle organisasjoner. Oppretting av organisasjoner og hierarkier krever nøye planlegging. Hvis du vil ha mer informasjon, kan du se [Planlegge organisasjonshierarkiet](plan-organizational-hierarchy.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

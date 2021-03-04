@@ -79,3 +79,6 @@ Når kulturen ikke er definert som et argument for den kalte funksjonen, definer
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Dato- og klokkeslettfunksjoner](er-functions-category-datetime.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

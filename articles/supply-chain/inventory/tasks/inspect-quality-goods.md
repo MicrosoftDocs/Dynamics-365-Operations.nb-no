@@ -51,3 +51,6 @@ Dette emnet forklarer hvordan du behandler en kvalitetsordre. Du kan bruke denne
 4. Velg **OK**.
 5. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

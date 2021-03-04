@@ -107,3 +107,6 @@ Hvis du vil omadressere en URL-adresse til en annen URL-adresse, følger du diss
 [Konfigurere domenenavnet](configure-your-domain-name.md)
 
 [Legge til språk på området](add-languages-to-site.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

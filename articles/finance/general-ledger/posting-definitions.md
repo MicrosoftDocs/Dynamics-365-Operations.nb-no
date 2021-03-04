@@ -62,3 +62,6 @@ Følgende begrensninger gjelder når du oppretter koblinger i posteringsdefinisj
 Hvis du vil ha mer informasjon, kan du se [Eksempler på posteringsdefinisjoner](example-posting-definitions.md). 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

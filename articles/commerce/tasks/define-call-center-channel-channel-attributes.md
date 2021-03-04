@@ -100,3 +100,6 @@ Dette hjelper med å opprette en ny handelskanal og definere kanalattributter. D
 65. Klikk Lagre.
 66. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

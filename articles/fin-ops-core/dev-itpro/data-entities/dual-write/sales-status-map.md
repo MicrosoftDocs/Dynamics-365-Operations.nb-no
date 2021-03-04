@@ -150,3 +150,6 @@ Følg denne fremgangsmåten for å aktivere attributtet **isIntegrationUser**.
     ![Endre verdien for feltet Integreringsbruker](media/sales-map-user-mode-yes.png)
 
 Salgsordrene er nå tilordnet.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

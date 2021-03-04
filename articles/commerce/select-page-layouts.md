@@ -78,3 +78,6 @@ Hvis du vil velge et annet oppsett for en eksisterende side, følger du disse tr
 
 [Kontrollere tilgjengelighet for sideinnhold](verify-accessibility.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

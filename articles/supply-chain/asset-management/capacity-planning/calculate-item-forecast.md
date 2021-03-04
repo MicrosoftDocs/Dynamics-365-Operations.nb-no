@@ -60,3 +60,6 @@ Dette er nyttig hvis du vil ha en oversikt over forventet vareforbruk (reservede
 8. Klikk **Vis dimensjoner**-knappen hvis du vil se produkt-, lagrings- eller sporingsdimensjonene som er knyttet til varene. Merk av i de aktuelle avmerkingsboksene, og klikk **OK**.
 
 ![Figur 1](media/02-capacity-planning.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

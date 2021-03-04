@@ -43,3 +43,6 @@ Denne fremgangsmåten angir hvordan du viser alle planlagte bestillinger som ska
 8. Utvid delen Detaljer for foregående behov.
     * I denne delen finner du informasjon om hvordan behovet skal oppfylles. Du må kanskje vente på at hovedplanleggingen skal kjøres i forsyningsselskapet før du kan se mer informasjon her.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

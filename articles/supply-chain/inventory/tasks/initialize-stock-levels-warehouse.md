@@ -60,3 +60,6 @@ Denne prosedyren viser hvordan du får lagerbeholdningen oppdatert manuelt ved h
 25. Lukk siden.
 26. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

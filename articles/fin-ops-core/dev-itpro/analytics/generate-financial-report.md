@@ -156,3 +156,6 @@ Når du kjører en analyse for manglende konto, er følgende hurtigtaster tilgje
 [Finansrapportering](financial-reporting-intro.md)
 
 [Grensesnitt for Rapportutforming](report-designer-interface.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

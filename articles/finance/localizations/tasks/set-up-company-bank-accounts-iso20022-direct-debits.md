@@ -60,3 +60,6 @@ Dette er den andre av fem prosedyrer, som viser kundebetalingsprosessen ved hjel
     * For eksempel, velg "DEMF OPER" bankkonto.  
 6. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

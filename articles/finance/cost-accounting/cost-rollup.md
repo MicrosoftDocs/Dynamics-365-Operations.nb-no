@@ -301,3 +301,6 @@ Det klare skillet mellom **Kostnadsfordelinger** og **Policyer for opprullet kos
 -  [Kostnadselementdimensjoner](cost-elements.md)
 -  [Dimensjonshierarki](dimension-hierarchy.md)
 -  [Beregning av indirekte kostnader](overhead-calculation.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

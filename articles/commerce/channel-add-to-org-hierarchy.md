@@ -82,3 +82,6 @@ Det følgende bildet viser et hierarki der ulike kanaler er lagt til.
 [Definere en detaljhandelskanal](channel-setup-retail.md)
     
 [Definere en Internett-kanal](channel-setup-online.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

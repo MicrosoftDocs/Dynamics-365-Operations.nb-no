@@ -57,3 +57,6 @@ Denne prosedyren fokuserer på utfører Kanban-prosessjobber. Den første jobben
 6. Angi et tall i feltet Antall korrekte-antall.
 7. Klikk OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

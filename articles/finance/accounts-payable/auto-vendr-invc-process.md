@@ -69,3 +69,6 @@ Arbeidsområdet **Leverandørfakturaregistrering** lar deg fokusere på leverand
 
 ## <a name="vendor-invoice-automation---resume-automation-processing-for-multiple-invoices"></a>Automatisering av leverandørfaktura – Fortsett automatiseringsbehandling for flere fakturaer
 Når en importert faktura ikke kan sendes til arbeidsflyten gjennom den automatiserte prosessen, vil systemet fjerne den fra ytterligere automatisert behandling. En regnskapsassistent kan se gjennom og redigere fakturaen før den automatiserte prosessen sender den til arbeidsflyten på nytt. Når årsaken til en feil kan løses med samme rettelse for flere fakturaer, kan du starte den automatiserte prosessen på nytt på siden **Gjenoppta automatisert fakturabehandling**. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

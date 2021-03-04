@@ -45,3 +45,6 @@ Demonstrasjonsdatafirmaet USMF brukes til å opprette denne oppgaven. Denne oppg
 13. Finn og velg ønsket post i listen. Trykk på SKIFT-tasten for å velge flere roller som du vil legge til i **Valgte roller**-ruten, og klikk deretter pilen for å legge til de valgte rollene.  
 14. Klikk **Lagre**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

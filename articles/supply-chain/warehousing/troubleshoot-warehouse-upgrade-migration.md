@@ -55,3 +55,6 @@ Hvis du vil ha mer informasjon om prosessen for flytting fra grunnleggende lager
 - [Overføring av Microsoft Dynamics AX WMS til ny R3-lager- og transportfunksjonalitet](https://cloudblogs.microsoft.com/dynamics365/no-audience/2015/08/17/migration-of-microsoft-dynamics-ax-wms-to-new-r3-warehouse-and-transportation-functionality/)
 - [WMSI/WMS2-vareoverføring](https://cloudblogs.microsoft.com/dynamics365/no-audience/2018/05/03/wmsiwms2-item-migration/)
 - [Oppgradere lagerstyring fra Microsoft Dynamics AX 2012 til Supply Chain Management](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/upgrade-migration-warehouse-management-processes)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

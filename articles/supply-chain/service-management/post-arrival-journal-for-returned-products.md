@@ -58,3 +58,6 @@ Når journalen er postert, registreres de returnerte varene på lager, og **Retu
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

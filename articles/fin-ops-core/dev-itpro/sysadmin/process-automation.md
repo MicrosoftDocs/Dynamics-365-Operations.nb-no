@@ -47,3 +47,6 @@ Hver forekomst kan endres uten å påvirke andre forekomster som er definert av 
 ## <a name="developer-documentation"></a>Utviklerdokumentasjon
 
 Rammeverk for prosessautomatisering gjør det mulig for utviklere å utvide rammeverket for prosessautomatisering. Dokumentasjonen for [Rammeverk for prosessautomatisering](../process-automation/process-automation-framework.md) gir informasjon om hvordan du kan opprette egendefinerte prosesser som må kjøres av den satsvise serveren som er planlagt med veiviseren for prosessautomatisering, og som vises automatisk i kalendervisningen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

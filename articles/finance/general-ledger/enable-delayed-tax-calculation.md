@@ -65,3 +65,6 @@ Systemet gir prioritet til innstillingen for journalhodet. Som standard hentes d
 4. I kategorien **Oppsett** setter du alternativet for **Forsinket avgiftsberegning** til **Ja**.
 
 ![Bilde av økonomijournalsiden](media/delayed-tax-calculation-journal-header.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -90,3 +90,6 @@ Figuren nedenfor viser et skjermbilde av en KPI-beregning for fire aktiva.
 - Du kan velge flere aktiva i **Alle aktiva** og klikke knappen **KPI-er for aktiva** i fanen **Generelt**. Deretter klikker du **OK** i dialogboksen **Beregn KPI-er for aktivum** for å beregne KPIer for de valgte aktivaene.  
 - Resultater fra en KPI-beregning kan omfatte [registreringer av nedetid ved vedlikehold](../work-orders/maintenance-downtime.md), avhengig av oppsettet og bruken av årsakskoder for nedetid ved vedlikehold. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

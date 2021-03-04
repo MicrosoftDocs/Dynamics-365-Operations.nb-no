@@ -75,3 +75,6 @@ Du kan deretter legge til følgende beregninger:
 
 - *ResultDecimal* = *inndata* × *prosent* ÷ 100
 - *ResultInteger* = *ResultDecimal*
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -99,3 +99,6 @@ Den neste oppgaven er å opprette en tilbudsforespørsel for å få bud fra leve
 8. Velg siden.
 9. Velg Fullført.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

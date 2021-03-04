@@ -145,3 +145,6 @@ I dette eksemplet skal du opprette en konfigurasjon og laste den opp til LCS for
     ER-konfigurasjonen du lastet opp, bør nå vises.
 
     Vær oppmerksom på at den opplastede LCS-konfigurasjonen kan importeres til en annen forekomst hvis leverandører har tilgang til dette LCS-prosjektet.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

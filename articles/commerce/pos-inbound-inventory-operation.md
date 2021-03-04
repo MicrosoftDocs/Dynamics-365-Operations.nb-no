@@ -221,3 +221,6 @@ Når dokumentet har statusen **Forespurt**, vises det i kategorien **Aktiv**. De
 ## <a name="related-topics"></a>Relaterte emner
 
 [Utgående lageroperasjon på salgsstedet](pos-outbound-inventory-operation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -51,3 +51,6 @@ Bruk følgende fremgangsmåte for å tilbakeføre ulagrede endringer på en ford
  
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

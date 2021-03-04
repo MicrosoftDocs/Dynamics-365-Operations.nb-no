@@ -96,3 +96,6 @@ Tabellen nedenfor viser hvilke salgsordrer brukerne har i hver enkelt nettrolle 
 
 > [!NOTE]
 > Selv om både Stig og Janne er kontakter som arbeider for kunde X, kan de bare se de ordrene de selv har plassert, og ingen andre. Selv om Mari har en ordre i systemet, kan hun ikke se denne ordren i kundeportalen, fordi hun er en uautorisert bruker. (I tillegg må hun ha lagt inn ordren via en annen kanal enn kundeportalen.)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

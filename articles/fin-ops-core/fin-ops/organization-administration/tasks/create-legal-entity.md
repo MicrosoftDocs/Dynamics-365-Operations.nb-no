@@ -45,3 +45,6 @@ En juridisk enhet er en organisasjon som identifiseres via registrering hos en j
 15. Vis delen **Avgiftsregistrering**. I delen **Avgiftsregistrering** skriver du inn registreringsnumrene som brukes til å rapportere til skattemyndighetene.
 16. Vis delen **1099-avgift**. I delen **1099-avgift** skriver du inn 1099-informasjon for den juridiske enheten.  
 17. Klikk **Lagre**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

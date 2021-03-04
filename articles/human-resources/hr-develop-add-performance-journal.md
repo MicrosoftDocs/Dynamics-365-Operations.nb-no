@@ -54,3 +54,6 @@ Ytelsesjournalen inneholder informasjon som er relatert til hvordan du oppfylte 
 20. I Beskrivelse-feltet skriver du "Takk for all hjelp på konferansen!"
 21. Klikk Send.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

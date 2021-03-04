@@ -42,3 +42,6 @@ Følgende alternativer er tilgjengelige for overføring av underfinansbunker.
 I versjon 10.0.8 ble det gjort forbedringer for å forbedre ytelsen til Asynkron-alternativet. Denne funksjonen aktiveres under funksjonsnavnet **Ytelsesoptimalisering for overføring av underfinans til økonomimodul**. 
  
 Denne funksjonen forbedrer overføring av data fra underfinans til økonomimodulen. Den gjør prosessen mer effektiv, og den grupperer sammen sett med mindre transaksjoner som skal overføres. Dette gjør det mulig å bruke partiserveren mer effektivt. Denne funksjonen krever at partiserveren er konfigurert, tilkoblet og fungerer for at alternativet for asynkron overføring skal fungere. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -54,3 +54,6 @@ Dette emnet beskriver hvordan du konfigurerer lastmaler og hvordan du knytter en
 1. I handlingsruten, på **Forsyning og behov**-fanen, i **Legg til**-gruppen, velg **Til ny last**.
 1. I dialogboksen **Lastmal**, i **Lastmal-ID**-feltet, velger du malen som skal brukes.
 1. Velg **OK** for å bruke malen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

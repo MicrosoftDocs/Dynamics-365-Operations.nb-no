@@ -54,3 +54,6 @@ Før du kan definere ansvarlige vedlikeholdsarbeidere, må du definere arbeidere
 Illustrasjonen nedenfor viser et eksempel på siden **Ansarlige vedlikeholdsarbeidere**.
 
 ![Siden Ansvarlige vedlikeholdsarbeidere](media/08-setup-for-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

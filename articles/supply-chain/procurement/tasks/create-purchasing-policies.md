@@ -57,3 +57,6 @@ Dette emnet viser hvordan du oppretter innkjøpspolicyer som er tilpasset forret
 4. Velg **Lukk**.
 - Nå kan du definere andre policyregler for innkjøpspolicyen. Legg merke til at en policyregeltype ikke kan ha overlappende regler som er aktive samtidig i én enkelt innkjøpspolicy.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

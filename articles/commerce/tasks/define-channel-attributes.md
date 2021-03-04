@@ -72,3 +72,6 @@ Forbedre kanalen ved å legge til kanal- og produktattributter. Du må legge til
 33. Klikk OK.
 34. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

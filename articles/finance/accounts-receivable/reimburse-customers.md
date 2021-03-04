@@ -49,3 +49,6 @@ Når du oppretter refusjonstransaksjoner, opprettes en leverandørfaktura for be
 
 5. Hvis du vil vise refusjonstransaksjonene som ble opprettet, bruker du **Refusjon**-rapporten (**Kunder \> Forespørsler og rapporter \> Refusjon-rapporten**).
 6. Opprett en betaling for leverandørfakturaer som ble opprettet av refusjonsprosessen, i Leverandører. Du finner mer informasjon om hvordan du betaler leverandører, i [Oversikt over leverandørbetaling](../accounts-payable/Vendor-payments-workspace.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

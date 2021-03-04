@@ -61,3 +61,6 @@ Når du har minst én foreslått endring, vises det to ytterligere kategorier i 
     Statusen på siden endres til **Endringer som venter på godkjenning**.
 
 Arbeidsflyten følger standard arbeidsflytprosess. Godkjenneren er rettet mot siden **Leverandør**, der endringene kan gjennomgås på siden **Foreslåtte endringer** og deretter velge **Arbeidsflyt \> Godkjenn** for å godkjenne arbeidsflyten. Når alle godkjenninger er fullført, oppdateres feltene med verdier som du har foreslått.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

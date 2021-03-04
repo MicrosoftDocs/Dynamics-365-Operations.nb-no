@@ -43,3 +43,6 @@ Dette emnet beskriver hvordan du anskaffer et anleggsmiddel ved hjelp av anskaff
 - Bare anleggsmidler med anskaffelsesdato og anskaffelsespris som er angitt i tablået, inkluderes i anskaffelsesforslaget.  
 11. Velg kategorien **Tablåer** på siden.
 12. Velg **Poster**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

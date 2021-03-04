@@ -55,3 +55,5 @@ Når rekvisisjonen er klar, kan du bruke handlingen **Arbeidsflyt** > **Send** f
 
 - [Definere en ekstern katalog for PunchOut-e-Procurement](set-up-external-catalog-for-punchout.md)
 - [Kjøp av cXML-forbedringer](purchasing-cxml-enhancements.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

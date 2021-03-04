@@ -62,3 +62,6 @@ Med profiler for kompetansesøk kan du søke etter nåværende ansatte eller kan
 Du kan opprette en analyse av kompetanseprofil for å vise en kompetanseliste for en arbeider, søker eller kontaktperson fra en bestemt dato. Du kan opprette en kompetansegapanalyse hvis du vil sammenligne kompetansen til en person med kompetansen som kreves for en bestemt jobb.  
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

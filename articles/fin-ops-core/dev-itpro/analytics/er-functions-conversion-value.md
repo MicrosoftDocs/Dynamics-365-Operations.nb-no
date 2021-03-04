@@ -63,3 +63,6 @@ Komma og punktum-tegn (.) regnes som desimalskilletegn, og en foranstilt bindest
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Typekonverteringsfunksjoner](er-functions-category-type-conversion.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

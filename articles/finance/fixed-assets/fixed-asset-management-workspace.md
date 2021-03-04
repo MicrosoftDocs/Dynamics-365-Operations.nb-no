@@ -74,3 +74,6 @@ Tabellen nedenfor viser visuaiseringene som er tilgjengelig på hver rapportside
 | Vurderingskart        | Anleggsmiddeldetaljer |
 
 Hvis du vil vise analyse med data, må du først fornye AssetTransactionMeasure samlet målene på siden **Enhetslager**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

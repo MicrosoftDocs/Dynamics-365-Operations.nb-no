@@ -36,3 +36,6 @@ Ved å lage linjer på **Brikkeopptelling**-siden plasserer du et brikkenummer p
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Syklustelling](../warehousing/cycle-counting.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

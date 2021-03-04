@@ -60,3 +60,6 @@ Hvis du planlegger å være borte fra kontoret eller å ikke være tilgjengelig 
 8. Angi dato og klokkeslett i feltet **Sluttdato/-klokkeslett**.
 9. Merk av for **Aktivert** for å aktivere denne delegeringsregelen. 
 10. Angi en kommentar som forklarer hvorfor du delegerer arbeidselementene, i feltet **Kommentar**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

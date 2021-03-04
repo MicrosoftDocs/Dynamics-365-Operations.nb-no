@@ -112,3 +112,6 @@ Slik kontrollerer du arbeidsflytloggen for en journal:
 1. I navigasjonsruten utvider du **Lagerstyring \> Journaloppføringer \> Varer** og velger deretter en lagerjournaltype.
 1. Åpne den relevante journalen.
 1. Velg **Arbeidsflyt**-knappen i handlingsruten for å åpne en dialogboks med en rullegardinliste. Velg **Arbeidsflytlogg**. Hvis du vil ha mer informasjon, kan du se [Vise arbeidsflytlogg](../../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

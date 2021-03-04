@@ -54,3 +54,6 @@ Dette emnet beskriver hvordan du oppretter et fordelingsteam. Når du har oppret
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

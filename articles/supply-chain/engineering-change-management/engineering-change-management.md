@@ -185,3 +185,6 @@ De fleste feltene på ordrer om teknisk endring er de samme som feltene for frig
 | Helse, miljø og sikkerhet | Angi om regler for helse, miljø og sikkerhet gjelder for endringen. Hvis de gjør det, kan du deretter velge gjeldende regler. |
 
 Du kan bruke knappen **Behold/kopier endringsinformasjon** til å kopiere endringsinformasjon mellom berørte produkter.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

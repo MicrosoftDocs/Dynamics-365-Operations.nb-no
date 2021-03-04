@@ -186,3 +186,6 @@ I samsvar med disse kravene er ER-formatet **SAF-T-format (NO)** implementert fo
 - Hver enkelt XML-fil valideres mot skjemaet.
 
 Når rapporten er generert, hvis det genereres mer enn én XML-fil, må brukeren manuelt nummerere de genererte filene i zip-arkivet ved å legge til **\_\<file number of total files\>** i filnavnene. Brukeren må likeledes sikre at det ikke mer enn 10 XML-filer i det samme zip-arkivet. Hvis det er mer enn 10 XML-filer i et arkiv, må brukeren manuelt dele det opp i flere arkiver, som hver har maksimalt 10 XML-filer.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

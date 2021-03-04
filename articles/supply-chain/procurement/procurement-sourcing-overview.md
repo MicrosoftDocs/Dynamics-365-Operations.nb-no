@@ -93,3 +93,6 @@ Fakturerte bestillinger registrerer gjelden i leverandørkontoen i leverandører
 ## <a name="vendor-performance"></a>Leverandørytelse
 
 Ytelse og gjennomgang av innkjøp støttes via *innkjøps- og leverandørrapporter,* som inkluderer forbruksanalyse og analyse av leverandørytelse.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -667,3 +667,6 @@ Du må fylle ut det sorterte lagerplukkingsarbeidet. Når det er fullført, blir
     Arbeidet er fullført.
 
 På dette tidspunktet og fremover gjelder alle andre lagerprosesser.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

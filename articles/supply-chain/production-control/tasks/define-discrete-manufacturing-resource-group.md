@@ -58,3 +58,6 @@ En ressursgruppe er et sett med operasjonsressurser som vanligvis tilsvarer den 
 6. Finn og velg ønsket post i listen.
 7. Klikk koblingen i den valgte raden i listen.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

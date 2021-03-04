@@ -41,3 +41,6 @@ Når du blir bedt om en årsakskode for å forklare hvorfor du oppdaterer et sta
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

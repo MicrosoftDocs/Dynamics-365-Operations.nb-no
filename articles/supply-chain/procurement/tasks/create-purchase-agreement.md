@@ -72,3 +72,6 @@ Dette emnet fører deg gjennom oppretting av en kjøpsavtale. Dette gjøres vanl
 5. Velg **Innkjøpsavtalebekreftelser**. Med alternativet **Forhåndsvis/Skriv ut** kan du generere et dokument for kjøpsavtalen som du deretter kan skrive ut eller sende til leverandøren. Hvis du oppdaterer avtalen senere, og bekrefter den på nytt, vil begge versjoner vises her.  
 6. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

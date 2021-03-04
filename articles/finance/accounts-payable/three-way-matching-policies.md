@@ -145,3 +145,6 @@ Hvis du vil ha mer informasjon, kan du se [Oversikt over samsvar for leverandør
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

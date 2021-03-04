@@ -101,3 +101,6 @@ Det er lurt å definere en unik dokumenttype for rettelser ved hjelp av **Dokume
 [Definere kvalitetsordrer](tasks/set-up-quality-orders.md)
 
 [Kontrollere varekvaliteten](tasks/inspect-quality-goods.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

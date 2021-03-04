@@ -55,3 +55,6 @@ En stykklistemal kan knyttes til en serviceobjektrelasjon. Serviceobjektrelasjon
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

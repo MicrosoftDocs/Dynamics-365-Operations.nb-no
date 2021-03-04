@@ -123,3 +123,6 @@ Fremgangsmåten nedenfor forklarer hvordan en bruker i rollen Systemansvarlig el
 
 > [!NOTE]
 > Den samme filen har blitt importert siden formatutformingen nå regner «id»-attributtet for «dokument»-elementet for å være valgfritt.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -48,3 +48,6 @@ Denne prosedyren beskriver fremgangsmåten for å opprette etterfyllingsregler. 
 14. Angi et tall i Vekt-feltet.
 15. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

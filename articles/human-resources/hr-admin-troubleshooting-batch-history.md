@@ -64,3 +64,6 @@ Planlegg en automatisk oppgave som skal rydde opp i loggen for satsvise jobber. 
 
 8. Endre eventuelle andre parametere under **Kjør i bakgrunnen** etter behov, og velg deretter **OK.**
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

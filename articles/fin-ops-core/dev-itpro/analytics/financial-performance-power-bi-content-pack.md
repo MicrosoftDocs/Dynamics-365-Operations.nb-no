@@ -88,3 +88,6 @@ Følgende enheter ble brukt som grunnlag for PowerBI.com-løsningen **finansresu
 - ChartofAccounts
 
 Disse enhetene ble brukt til å opprette beregnede mål i datamodellen. De beregnede målene brukes til å beregne nøkkelytelsesindikatorene (KPI-ene) og rapportene som brukes i innholdet. Som standard henter innholdet data for de siste tre årene og ett år frem. Hvis du vil ta med flere beregninger i rapportene og på instrumentbord, kan du endre [Microsoft Excel-arbeidsboken](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi). Denne arbeidsboken er standarddatamodellen som ble brukt til å opprette innholdet.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

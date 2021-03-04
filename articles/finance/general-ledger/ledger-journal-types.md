@@ -68,3 +68,6 @@ Dette emnet beskriver journaltypene som du kan definere for finansjournaler. Bru
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

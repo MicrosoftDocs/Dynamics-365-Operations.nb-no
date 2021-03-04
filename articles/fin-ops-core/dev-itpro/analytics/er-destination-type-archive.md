@@ -57,3 +57,6 @@ Når type dokumentplasseringen er satt til **Azure Storage**, kan du lagre en fi
 - [Oversikt over elektronisk rapportering (ER)](general-electronic-reporting.md)
 - [Mål for elektronisk rapportering (ER)](electronic-reporting-destinations.md)
 - [Konfigurere dokumentstyring](../../fin-ops/organization-administration/configure-document-management.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

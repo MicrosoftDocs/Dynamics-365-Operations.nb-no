@@ -64,3 +64,6 @@ Områdevelgermodulen kan legges til i [topptekstmodulen](author-header-module.md
 [Søkebanemodul](add-breadcrumb.md)
 
 [Navigasjonsmenymodul](nav-menu-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

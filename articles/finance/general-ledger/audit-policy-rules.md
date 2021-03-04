@@ -101,3 +101,6 @@ Alle policyreglene for en bestemt overvåkingspolicy deler de samme satsvise par
 [Definere overvåkingspolicyer for kildedokumenter](tasks/define-audit-policies-source-documents.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

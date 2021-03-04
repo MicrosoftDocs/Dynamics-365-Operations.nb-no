@@ -90,3 +90,6 @@ Hvis du vil ha mer informasjon, kan du se [Mva-satser basert på feltene grenseg
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

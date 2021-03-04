@@ -56,3 +56,6 @@ Velg et funksjonsområde du vil finne ut mer om.
 - [Administrere e-handelsområdet ditt](online-store-overview.md)
 - [Svindelbeskyttelse](dev-itpro/DFP.md)
 - [Utvikling og utvidelse av handel](dev-itpro/dev-retail-home-page.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

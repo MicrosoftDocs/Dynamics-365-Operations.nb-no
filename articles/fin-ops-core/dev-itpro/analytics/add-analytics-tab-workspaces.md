@@ -175,3 +175,6 @@ public static void initializeReportControl(
 | showFilterPane   | En boolsk verdi som angir om filtreringsruten skal vises (**true**) eller skjules (**false**).     |
 | showNavPane      | En boolsk verdi som angir om navigasjonsruten skal vises (**true**) eller skjules (**false**). |
 | defaultFilters   | Standardfiltrene for Power BI-rapporten.                                                                 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -50,3 +50,6 @@ Hvis samme person krever tilgang til leverandørportalen for flere leverandørko
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

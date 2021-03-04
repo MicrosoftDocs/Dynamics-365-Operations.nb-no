@@ -101,3 +101,6 @@ Postmaler kan hjelpe deg å opprette poster mer effektivt. Du kan opprette en po
 - [Konfigurere dokumentstyring](configure-document-management.md)
 - [Konfigurere og sende e-post](configure-email.md)
 - [Dato-/klokkeslettdata og tidssoner](date-time-zones.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

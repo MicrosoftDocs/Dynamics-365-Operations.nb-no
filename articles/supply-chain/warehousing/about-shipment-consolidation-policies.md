@@ -135,3 +135,6 @@ Tabellen nedenfor viser hvordan forsendelseskonsolidering fungerer når du ikke 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 - [Konfigurere policyer for forsendelseskonsolidering](configure-shipment-consolidation-policies.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

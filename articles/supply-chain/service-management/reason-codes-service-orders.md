@@ -50,3 +50,6 @@ Hvis du vil vise informasjon om årsakskoder som brukes til å spore fremdriften
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -108,3 +108,6 @@ For å fullføre disse trinnene må du først fullføre trinnene i fremgangsmåt
 
 ![Siden ER-datamodellutforming](../media/er-financial-dimensions-guides-data-model.png)
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

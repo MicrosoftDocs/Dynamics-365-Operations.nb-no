@@ -61,3 +61,6 @@ Opprett en produktstandard for de forhåndsdefinerte variantene. Demonstrasjonsd
 10. Klikk **Lagre**.
 11. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -77,3 +77,6 @@ Til slutt legger du til en automatisert oppgave for tildeling for budsjettplanle
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

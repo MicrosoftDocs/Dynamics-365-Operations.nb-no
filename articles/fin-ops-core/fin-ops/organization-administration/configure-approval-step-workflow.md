@@ -276,3 +276,6 @@ Hvis en bruker ikke gjør noe med et dokument innenfor den tillatte tiden, er do
 
 5. Gjenta trinn 3 og 4 for hver bruker som skal legges til i videresendingsbanen. Du kan endre rekkefølgen på brukerne.
 6. Hvis brukerne i videresendingsbanen ikke svarer innen tidsfristen, vil systemet automatisk utføre en handling med dokumentet. Hvis du vil angi handlingen systemet skal utføre, merker du **Handling**-raden, og velger deretter en handling i kategorien **Avslutt handling**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

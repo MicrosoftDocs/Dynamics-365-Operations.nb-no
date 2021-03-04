@@ -69,3 +69,6 @@ Vi anbefaler at du bruker produksjonstype stykklister for alle produkter for ful
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

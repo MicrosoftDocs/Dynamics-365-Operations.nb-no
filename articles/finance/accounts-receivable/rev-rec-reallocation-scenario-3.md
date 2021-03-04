@@ -81,3 +81,6 @@ Salgsordren faktureres på nytt for varen som ble lagt til. Totalfakturaen som p
 [![Bilagstransaksjonssiden med regnskapsoppføringen som er postert](./media/36_rev-rec-scenarios.png)](./media/36_rev-rec-scenarios.png)
 
 Ettersom summen av inntekten og salget er mer enn USD 319,50, posteres differansen for USD 14,48. Dette beløpet fjerner saldoen fra avsetningskontoen for delvis fakturainntekt. Denne saldoen ble oppdatert i den nye regnskapsoppføringen som ble postert etter den nye tildelingen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

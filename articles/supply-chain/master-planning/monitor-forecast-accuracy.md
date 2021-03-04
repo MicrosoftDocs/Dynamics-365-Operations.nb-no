@@ -50,3 +50,6 @@ Supply Chain Management beregner følgende typer prognosenøyaktighet:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -51,3 +51,6 @@ Denne fremgangsmåten beskriver hvordan du kan legge til et nytt begrensningsutt
 4. Klikk Lukk.
 5. Klikk OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

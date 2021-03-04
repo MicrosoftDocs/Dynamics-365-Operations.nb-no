@@ -41,3 +41,6 @@ Dette emnet viser de mobile arbeidsområdene som er tilgjengelige for bruk med D
 | [Salgsordrer](../../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md)         | Du kan holde deg oppdatert om salgsordrene.                                                                                                                          |  2017. januar                  |
 | [Leverandørsamarbeid](../../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md) | Leverandører kan holde seg oppdatert om bestillinger som er sendt til dem for godkjenning. De kan også vise informasjon om nye og oppdaterte bestillinger og kontakter. |2017. januar    |
 | [Aktivabehandling](../../../supply-chain/asset-management/asset-management-mobile-workspace.md) | Dette arbeidsområdet lar brukere vise og opprette vedlikeholdsforespørsler og arbeidsordrer. Brukere kan også vise tilordnede arbeidsordrejobber i en kalender- eller listevisning. Du kan også vise og søke etter aktiva og arbeidssteder. |2019. oktober    |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -47,3 +47,6 @@ Hvis du vil postere en overgangsjustering i samsvar med de nye regnskapsstandard
 
 5. Du viser journaloppføringen ved å velge **Journaler for leie av anleggsmidler**.
 6. Velg den nye journalen, og velg deretter **Poster**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

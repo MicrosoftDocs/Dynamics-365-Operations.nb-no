@@ -153,3 +153,6 @@ Et tilbud kan trekkes tilbake fra en kandidat når som helst av ulike årsaker.
 ## <a name="closing-an-offer"></a>Lukke et tilbud 
 
 Når et tilbud har blitt godtatt, avslått eller trukket tilbake uten behov for flere handlinger, kan du lukke tilbudet slik at ingen flere endringer kan gjøres i denne tilbudpakken.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

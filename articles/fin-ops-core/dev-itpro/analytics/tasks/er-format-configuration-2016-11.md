@@ -158,3 +158,6 @@ Dette emnet beskriver hvordan en bruker i rollen systemansvarlig eller utvikler 
 42. Klikk **Lagre**.
 43. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

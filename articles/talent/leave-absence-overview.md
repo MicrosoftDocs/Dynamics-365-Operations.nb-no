@@ -66,3 +66,6 @@ Permisjons- og fraværsstyring inneholder følgende funksjoner:
 - **Sende fritidsforespørsler.**
 
     Ansatte kan sende fritidsforespørsler mot tilgjengelige timer. Forespørsler kan være forespørsler for én dag eller for flere dager som inneholder flere permisjons- og fraværstyper. Hvis en arbeidsflyt ikke er aktivert, godtas forespørselen automatisk. Hvis en arbeidsflyt er aktivert, kan godkjenningen utføres automatisk, eller det kan kreve avlogging, avhengig av arbeidsflytkonfigurasjonen.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

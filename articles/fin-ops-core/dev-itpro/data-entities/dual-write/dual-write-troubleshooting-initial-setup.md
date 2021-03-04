@@ -88,3 +88,6 @@ Du kan få følgende feilmelding når du prøver å aktivere tilordninger:
 *Dobbel skriving-feil - Plugin-registrering mislyktes: \[(Kan ikke få partisjonskart for prosjektet DWM-1ae35e60-4bc2-4905-88ea-69efd3b29260-7f12cb89-1550-42e2-858e-4761fc1443ea. Feil Overskrider de maksimale partisjonene som er tillatt for tilordning av DWM-1ae35e60-4bc2-4905-88ea-69efd3b29260-7f12cb89-1550-42e2-858e-4761fc1443ea)\], Det oppstod en eller flere feil.*
 
 Gjeldende grense når du kobler miljøene er omtrent 40 juridiske tabeller. Denne feilen oppstår hvis du prøver å aktivere tilordninger, og flere enn 40 juridiske tabeller er koblet mellom miljøene.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -46,3 +46,6 @@ En konsolidert partiordre kan inneholde en hvilken som helst kombinasjon av føl
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

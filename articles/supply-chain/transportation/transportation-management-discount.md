@@ -33,3 +33,6 @@ Hvis du vil definere rabatter for transportstyring, går du til **Transportstyri
 Du kan velge om du vil overføre rabatten til kunden (ved å angi rabattypen til kunden) eller beholde den i firmaet (ved å angi rabattypen til speditør). Dermed kan du definere et oppsett der du oppnår en margin for de beregnede fraktgebyrene.
 
 Du kan definere flere kvalifikatorer for hver rabatt, for eksempel transportør, transportørtjeneste, leveringsbetingelser, kunde og mål med mer.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

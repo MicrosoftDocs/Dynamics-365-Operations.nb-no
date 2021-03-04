@@ -83,3 +83,6 @@ Brukeren må i stedet fjerne verdien i oppslagskontrollen, åpne rullegardinmeny
 Når filteret er brukt (se bildet nedenfor), kan brukeren søke etter og merke raden som vanlig.
 
 ![Elementoppslag med filterredigering](./media/filtereditemlookup.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

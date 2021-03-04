@@ -62,3 +62,6 @@ Hvis du vil ha mer informasjon om hvordan du definerer forskrifter og verdier fo
 ## <a name="warehouse-management"></a>Lagerstyring
 
 Når du klargjør en forsendelse i Lagerstyring, vil du kunne skrive ut flere nye rapporter som bruker informasjonen du har definert i Behandling av produktinformasjon. Hvis du vil ha mer informasjon om tilgjengelige rapporter og hvordan du bruker dem, kan du se [Forespørsler og rapporter om farlige materialer](hazmat-reports.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

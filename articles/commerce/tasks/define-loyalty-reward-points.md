@@ -46,3 +46,6 @@ Denne prosedyren hjelper med å definere fordelspoeng. Du må definere fordelspo
 10. Velg et alternativ i feltet Enhet for utløpstid.
 11. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

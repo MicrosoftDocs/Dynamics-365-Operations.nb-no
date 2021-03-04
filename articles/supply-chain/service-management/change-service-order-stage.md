@@ -41,3 +41,6 @@ Følg denne fremgangsmåten for å flytte en serviceordre til neste trinn i arbe
 4.  I skjemaet **Endre tjenestestadium** velger du det aktuelle stadiet.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

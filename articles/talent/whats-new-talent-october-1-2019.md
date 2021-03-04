@@ -84,3 +84,6 @@ I denne ukens bygg vises beskrivelsen når du velger jobben på siden **Kompetan
 ### <a name="print-performance-reviews"></a>Skrive ut prestasjonsvurderinger
 
 Ansatte, ledere og personaleksperter kan skrive ut prestasjonsvurderingen for en ansatt.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -98,3 +98,6 @@ Dette emnet forklarer hvordan du importerer oppdaterte versjoner av ER-konfigura
 
 - [Oversikt over elektronisk rapportering (ER)](general-electronic-reporting.md)
 - [Last ned ER-konfigurasjoner fra det globale repositoriet for konfigurasjonstjenesten](er-download-configurations-global-repo.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

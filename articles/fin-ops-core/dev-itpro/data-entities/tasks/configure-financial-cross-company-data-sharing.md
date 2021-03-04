@@ -59,3 +59,6 @@ Denne oppgaveveiledningen krever Dynamics AX-plattform 7.1 eller nyere.
 27. Oppdater siden.
 28. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -46,3 +46,6 @@ Derfor kan du opprette egne budsjetter for de viktigste transaksjonskontoene i i
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

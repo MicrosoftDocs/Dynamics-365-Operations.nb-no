@@ -86,3 +86,6 @@ En *verktøylinje* inneholder verktøy, for eksempel muligheten til å legge til
 En *liste* er navnet på en samling med poster som du kan rulle gjennom. Du kan plassere disse postene på siden ved å velge dem. Ofte vil dette åpne et rutenett.
 
 ![Bildet nedenfor viser eksempler på verktøylinjer, rutenett og lister.](media/user-interface-08.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

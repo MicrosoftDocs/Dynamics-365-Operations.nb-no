@@ -86,3 +86,6 @@ Mer hjelp er tilgjengelig som oppgaveveiledninger. For å få tilgang til oppgav
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

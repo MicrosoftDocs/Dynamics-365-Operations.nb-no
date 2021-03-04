@@ -81,3 +81,6 @@ Derfor settes forsendelsesdatoen til 10 dager fra nå basert på ATP-beregningen
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

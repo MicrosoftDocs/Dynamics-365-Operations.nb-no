@@ -54,3 +54,6 @@ De ansatte kan sende inn avspaseringsforespørsler, og du kan behandle dem i arb
 [Be om fridager](hr-employee-self-service-request-time-off.md)
 [Administrere forespørsler om permisjon og fravær](hr-employee-self-service-manage-requests.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

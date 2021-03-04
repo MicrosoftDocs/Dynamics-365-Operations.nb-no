@@ -78,3 +78,6 @@ Et nytt alternativ lar ledere vise prestasjonen til både direkte underordnede o
 Vi er glad for å annonsere at områdene Canada og Sørøst-Asia er tilgjengelige for Talent 1. august 2019. Med denne endringen kan du opprette miljøer i de kanadiske og asiatiske områdene, og alle Talent-data vil bli oppbevart kun innenfor disse stedene. Du kan opprette et miljø i disse nye områdene ved å velge plasseringen i dialogboksen Nytt miljø og bruke dette miljøet til å klargjøre Talent i LCS som beskrevet her [Klargjøre Talent](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).
 
 Dataoverføring av eksisterende prosjekter fra andre områder til de kanadiske og asiatiske områdene støttes ikke. Bare nye prosjekter kan klargjøres for de nye områdene som støttes.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

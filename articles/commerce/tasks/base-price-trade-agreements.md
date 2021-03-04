@@ -70,3 +70,6 @@ Denne prosedyren hjelper med å opprette kanalspesifikke salgsprisforretningsavt
 38. Klikk Selg i **handlingsruten.**
 39. Klikk **Salgspris**.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

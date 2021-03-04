@@ -78,3 +78,6 @@ Tabellen nedenfor viser visuaiseringene som er tilgjengelig på hver rapportside
 |    Saldo for leverandør mot kunde     |                                                                                                                   <ul><li>Saldo for leverandør mot kunde</li><li>Saldo for leverandør mot kunde per firma</li><li>Detaljer om saldo for leverandør mot kunde</li></ul>                                                                                                                    |
 |    Fakturaer med betalingssperre     |                                                                                         <ul><li>Fakturaer med betalingssperre</li><li>Detaljer om fakturaer med betalingssperre</li><li>Fakturaer med betalingssperre per firma</li><li>Fakturaer med betalingssperre per leverandørgruppe</li></ul>                                                                                          |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

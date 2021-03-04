@@ -57,3 +57,6 @@ Før du kan bruke denne funksjonen, må du aktivere den i systemet. Administrato
     > Skjemaet inkluderer ikke delsummer som er definert i rapportoppsettet.
 
 Ved hjelp av dateenheten **Rapport for aldersfordeling for lager** kan du eksportere utdataene for en **lagring av rapport for aldersfordeling for lager**-rapport ved å bruke et filter for **Prosess-ID – navn**-feltet til et hvilket som helst format som databehandling støtter.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

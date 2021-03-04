@@ -57,3 +57,6 @@ Når du bekrefter salgstilbud, viser de resulterende salgsordrene hele leverings
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

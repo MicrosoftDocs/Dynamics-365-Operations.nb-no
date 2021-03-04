@@ -60,3 +60,6 @@ Jobbstatusen blir **Avbryter** til planleggingsoptimaliserings-tjenesten bekreft
 [Vise planhistorikk og planleggingslogger](plan-history-logs.md)
 
 [Bruke filtre på en plan](plan-filters.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -58,3 +58,6 @@ Bruk følgende fremgangsmåte for å tilordne en aktivitet på nytt til en annen
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

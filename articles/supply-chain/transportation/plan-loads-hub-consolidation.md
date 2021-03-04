@@ -39,3 +39,6 @@ Før du kan bruke hubkonsolidering, må du aktivere alternativet **I transitt-pl
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

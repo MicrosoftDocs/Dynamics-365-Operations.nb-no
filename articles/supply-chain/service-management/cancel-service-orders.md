@@ -78,3 +78,6 @@ De valgte serviceordrene blir enten annullert, eller de får sin fremdriftsstatu
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

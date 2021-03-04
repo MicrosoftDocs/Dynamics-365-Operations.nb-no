@@ -61,3 +61,6 @@ Produkt X er for eksempel tilordnet til produkteiergruppen *Designkabinetter*. P
 ## <a name="product-owners-and-approvals"></a>Produkteiere og godkjenninger
 
 Fordi produkteiere vet om bestemte tekniske endringer som vil dra nytte av produktene deres, er det ofte fornuftig å ta dem med som en del av godkjenningsprosessen under behandling av teknisk endring. Du kan implementere denne fremgangsmåten ved å definere produkteierne som deltakerleverandører i arbeidsflytene som brukes til behandling av teknisk endring. Systemet vil deretter tilordne godkjenningsoppgaver i arbeidsflytene, basert på produktene som er i forespørsler og ordrer om teknisk endring. Hvis du vil ha mer informasjon, kan du se [Behandle endringer i tekniske produkter](engineering-change-management.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -35,3 +35,6 @@ Talent inkluderer Attract, som kan hjelpe deg med å identifisere, intervjue og 
 > [!IMPORTANT]
 > Funksjonaliteten i Dynamics 365 Talent: Core HR er nå en del av Dynamics 365 Human Resources. Du kan vise dokumentasjonen for Human Resources under [Velkommen til Dynamics 365 Human Resources](https://docs.microsoft.com/dynamics365/human-resources/hr-welcome).
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -58,3 +58,6 @@ Det finnes flere måter å opprette kostnadselementer på i kostnadsregnskap. De
 1. Klikk Vis dimensjonsmedlemmer.
     * Vis de importerte finanskontoene som kostnadselementer i bedriften som kostnader kan flyte til.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

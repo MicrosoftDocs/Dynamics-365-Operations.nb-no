@@ -67,3 +67,6 @@ Du kan kassere beholdning som en del av karantenebestillingsprosessen. Når du b
 --------
 
 [Lagerblokkering](inventory-blocking.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

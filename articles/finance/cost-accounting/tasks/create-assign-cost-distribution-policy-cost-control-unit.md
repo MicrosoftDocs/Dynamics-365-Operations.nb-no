@@ -73,3 +73,6 @@ Kostnadsfordelingsregler brukes til å distribuere kostnader som er økonomisk o
 5. Angi eller velg en verdi i feltet Kostnadskontrollenhet
 6. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

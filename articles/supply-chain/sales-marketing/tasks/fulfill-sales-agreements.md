@@ -90,3 +90,6 @@ Denne fremgangsmåten viser hvordan du kan oppfylle en salgsavtale ved å knytte
 23. Klikk Tilknyttet salgsavtalelinje.
 24. Klikk kategorien Oppfyllelse.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

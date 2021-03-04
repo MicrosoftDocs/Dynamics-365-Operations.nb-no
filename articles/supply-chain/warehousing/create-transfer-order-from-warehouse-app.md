@@ -334,3 +334,6 @@ Overføringsordrene opprettes uten bruk av funksjonene for **leveringsdatokontro
 #### <a name="can-i-use-a-license-plate-having-physical-negative-inventory-on-hand"></a>Kan jeg bruke et nummerskilt med fysisk negativ lagerbeholdning?
 
 Funksjonen støtter bare for positive fysiske lagerbeholdninger. Kontroller at du har positive fysiske lagerbeholdninger på lager og lagerstatusnivå før du tilordner nummerskilt til en overføringsordre.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -61,3 +61,6 @@ Hvis du vil ha mer informasjon om Platform update 29 for Finance and Operations,
 Endringer i ansattposter trer sjelden i kraft umiddelbart. Du må oppdatere data fra den ansattes startdato, som ofte er i fremtiden, og du må også oppdatere informasjon i fortiden. Med denne strømlinjeformede navigeringsmodellen kan du oppdatere fremtidige og tidligere data uten å navigere til flere skjemaer eller endre datokonteksten. Denne endringen fremmer også og viser nøkkelinformasjon dynamisk i det øvre bannerområdet i ansattposten.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

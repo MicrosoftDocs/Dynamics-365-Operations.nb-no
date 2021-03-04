@@ -78,3 +78,6 @@ Denne oppgaven bruker demonstrasjonsfirmaet USMF.
 10. Klikk Lagre.
 11. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -44,3 +44,6 @@ Denne prosedyren fokuserer på å opprette en kopi av en eksisterende kanban-reg
 3. Klikk OK.
     * Legg merke til at det opprettes en kopi av Kanban-regel 000017.    
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

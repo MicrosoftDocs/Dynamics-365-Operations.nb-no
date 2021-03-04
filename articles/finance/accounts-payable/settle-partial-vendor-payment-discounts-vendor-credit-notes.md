@@ -71,3 +71,6 @@ April kan gå gjennom leverandørtransaksjonene på **Leverandørtransaksjoner**
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

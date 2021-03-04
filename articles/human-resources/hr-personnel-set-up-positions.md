@@ -67,3 +67,6 @@ Stillinger er et viktig element i det nederste nivået i et organisasjonshierark
 30. Angi eller velg en verdi i feltet Avdeling.
 31. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

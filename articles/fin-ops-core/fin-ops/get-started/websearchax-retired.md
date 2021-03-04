@@ -34,3 +34,6 @@ site:technet.microsoft.com dynamics ax 2012 "søkeord"
 – eller –
 
 site:msdn.microsoft.com dynamics ax 2012 "søkeord"
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

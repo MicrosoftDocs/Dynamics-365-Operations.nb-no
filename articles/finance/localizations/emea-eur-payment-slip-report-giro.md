@@ -63,3 +63,6 @@ Når du har satt opp formatet for betalingsseddelvedlegg for salgsfakturaer, fri
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

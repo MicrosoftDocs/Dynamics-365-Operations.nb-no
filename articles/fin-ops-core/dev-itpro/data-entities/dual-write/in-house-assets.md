@@ -76,3 +76,6 @@ Interne aktiva inkluderer en samling tabelltilordninger for viktige områder som
 [!include [models](includes/AssetManagementModels-msdyn-models.md)]
 
 [!include [warranty](includes/AssetManagementWarranty-msdyn-warranties.md)]
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

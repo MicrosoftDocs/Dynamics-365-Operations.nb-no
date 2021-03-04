@@ -66,3 +66,6 @@ Denne fremgangsmåten viser hvordan du beregner minste dekningsforslag basert p�
 5. Klikk på Plan i **handlingsruten**.
 6. Klikk på **Varedekning**. Legg merke til at **Minimumsantall** er oppdatert med det nye minimumsantallet fra sikkerhetslagerjournalen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

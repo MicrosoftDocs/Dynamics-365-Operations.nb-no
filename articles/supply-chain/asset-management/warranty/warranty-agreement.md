@@ -55,3 +55,6 @@ En garantiavtale kan inkludere flere avtalelinjer for å dekke garantien for arb
     4. I **Prosent**-feltet angir du dekningsprosenten for garantilinjen. Prosentsatsen viser hvor mye som dekkes av firmaet.
 
 ![Garantiside](media/01-warranty.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

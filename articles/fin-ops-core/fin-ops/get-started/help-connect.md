@@ -99,3 +99,6 @@ Hvis du vil samarbeide med Microsoft om verktøy og prosesser for å tilpasse hj
 [Ressurser for Oppgaveregistrering](../../dev-itpro/user-interface/task-recorder.md)  
 [Lage dokumentasjon eller opplæring med Oppgaveregistrering](../../dev-itpro/user-interface/task-recorder-training-docs.md)  
 [Tilpasset hjelp for GitHub-repositorium](https://github.com/microsoft/dynamics356f-o-custom-help)  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

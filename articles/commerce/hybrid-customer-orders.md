@@ -41,3 +41,6 @@ Hvis en handlevognlinje er valgt og **Velg valgt**, **Valgt for forsendelse** el
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Kundeordrer i Modern POS (MPOS)](customer-orders-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

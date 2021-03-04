@@ -67,3 +67,6 @@ Aktivere endringssporing for dataenhetsprosjekter.
 ### <a name="projects-supply-chain-management-to-field-service-projects"></a>Prosjekter (Supply Chain Management til Field Service): Prosjekter
 
 [![Maltilordning i Dataintegrering](./media/FSProject1.png)](./media/FSProject1.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

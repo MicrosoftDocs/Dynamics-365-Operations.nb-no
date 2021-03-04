@@ -245,3 +245,6 @@ På arbeidsbelastningen på skaleringsenheter kan du administrere følgende to j
 
 - Behandle bølgetabellposter
 - Behandle overføringshendelser for kontroll av bølgeutførelse
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

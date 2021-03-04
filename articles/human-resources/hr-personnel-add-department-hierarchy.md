@@ -54,3 +54,6 @@ Bruk følgende fremgangsmåte for å legge til en avdeling i avdelingshierarkiet
 
 ## <a name="steps-for-creating-a-department"></a>Fremgangsmåter for å opprette en avdeling
 Se artikkelen [Definere nye avdelinger](../fin-and-ops/hr/tasks/define-new-departments.md) for trinnvis fremgangsmåte for å opprette en ny avdeling. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

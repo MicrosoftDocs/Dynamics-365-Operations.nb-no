@@ -148,3 +148,6 @@ Denne fremgangsmåten bruker demonstrasjonsfirmaet USMF.
     * Kontroller de posterte journaloppføringene.  
 16. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -180,3 +180,6 @@ Følgende Human Resources-enheter er tilgjengelige i Common Data Service.
 
 [Velge en dataintegreringsteknologi](hr-admin-integration-choose-technology.md)</br>
 [Konfigurere Common Data Service-integrering](hr-admin-integration-common-data-service.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

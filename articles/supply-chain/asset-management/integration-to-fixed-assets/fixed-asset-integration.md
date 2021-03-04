@@ -115,3 +115,6 @@ Gjør følgende for å fjerne en tilknytning mellom en vedlikeholdsgjenstand og 
 1. Finn og åpne anleggsmidlet.
 1. I hurtigfanen **Anleggsmiddel** fjerner du verdien fra **Arbeidssted**-feltet.
 1. Velg **Lagre** i handlingsruten.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

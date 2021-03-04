@@ -59,3 +59,6 @@ Denne prosedyren hjelper deg gjennom prosessen med å opprette og postere en lag
 1. Klikk på **Beholdning**.
 2. Klikk på **Transaksjoner**. Her kan du se transaksjonene som ble opprettet da du posterte journalen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

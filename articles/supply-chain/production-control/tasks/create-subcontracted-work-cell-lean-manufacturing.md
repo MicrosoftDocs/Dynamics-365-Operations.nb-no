@@ -71,3 +71,6 @@ For å modellere underleveransearbeidet for lean manufacturing må du opprette e
 24. Klikk rullegardinknappen i feltet Enhet for å åpne oppslaget.
 25. ResolveChanges enheten.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

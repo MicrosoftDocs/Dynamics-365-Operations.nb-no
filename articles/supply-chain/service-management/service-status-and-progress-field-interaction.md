@@ -95,3 +95,6 @@ Hvis alle linjer i en serviceordre er merket som **Postert**, er fremdriften til
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

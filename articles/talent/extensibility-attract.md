@@ -91,3 +91,6 @@ Webinnhold-aktivitet (iframe) lar deg bygge inn en egendefinert webløsning som 
 
 > [!NOTE]
 > Webinnhold-aktiviteten er bare tilgjengelig med tillegget for omfattende ansettelse.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

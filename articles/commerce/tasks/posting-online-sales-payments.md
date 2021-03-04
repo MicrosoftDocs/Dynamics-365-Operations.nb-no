@@ -109,3 +109,6 @@ Denne prosedyren hjelper med å konfigurere og kjøre en gjentakende satsvis job
 - RetailTransactionMarkupTrans
 - RetailTransactionPaymentTrans
 - RetailTransactionAttributeTrans
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

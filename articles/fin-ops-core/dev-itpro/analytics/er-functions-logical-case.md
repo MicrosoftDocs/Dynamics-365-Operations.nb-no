@@ -83,3 +83,6 @@ Hvis den første resultatverdien og *N*-te resultatverdien er verdier for dataty
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Logiske funksjoner](er-functions-category-logical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

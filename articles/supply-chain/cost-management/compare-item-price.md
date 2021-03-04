@@ -121,3 +121,6 @@ Nedenfor vises et eksempel på hvordan du eksporterer en rapport for **sammenlig
 1. Siden **Kjøringssammendrag** åpnes, der du kan se statusen for eksportjobben og en liste over enheter som ble eksportert. Velg enheten **Sammenlign varepriser** som er oppført i området **Behandlingsstatus for enhet**, og velg deretter **Last ned fil** for å laste ned dataene som er eksportert fra denne enheten.
 
 Hvis du vil ha mer informasjon om hvordan du bruker databehandling til å eksportere data, se [Oversikt over dataimport- og -eksportjobber](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

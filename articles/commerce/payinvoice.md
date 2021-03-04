@@ -45,3 +45,6 @@ Hvis du vil aktivere disse scenariene, må funksjonsprofilen for butikker konfig
 
 > [!NOTE]
 > Betaling eller utligning delvise beløper støttes ikke ennå.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

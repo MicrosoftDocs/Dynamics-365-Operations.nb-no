@@ -54,3 +54,6 @@ Dette emnet forklarer hvordan du definerer garantier for aktiva og aktivatyper i
 
 > [!NOTE]
 > Når du oppretter en arbeidsordre for et anleggsmiddel som dekkes av en leverandørgaranti, får du en varsling om garantiavtalen hvis arbeidsordren har en forventet startdato i løpet av garantiperioden. Du kan deretter annullere arbeidsordren etter behov.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

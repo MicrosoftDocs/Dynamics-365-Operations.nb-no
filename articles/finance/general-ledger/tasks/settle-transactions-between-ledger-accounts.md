@@ -49,3 +49,6 @@ Denne fremgangsmåten viser hvordan du utligner transaksjoner mellom finanskonto
 7. Klikk Utligninger.
 8. Merk den valgte raden i listen.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

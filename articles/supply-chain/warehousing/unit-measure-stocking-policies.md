@@ -50,3 +50,6 @@ Som en del av opprettelsen av frigitte produkter må du velge standardenheter fo
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

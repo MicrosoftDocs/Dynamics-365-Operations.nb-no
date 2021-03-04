@@ -52,3 +52,6 @@ Denne fremgangsmåten viser hvordan du rapporterer en produksjonsordre som ferdi
 4. Klikk koblingen i den valgte raden i listen.
     * Ferdigmeldingsjournalen er postert. Hvis du vil foreta justeringer i journalen, kan du manuelt opprette en ny journal der du kan gjøre endringer.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

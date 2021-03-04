@@ -71,3 +71,6 @@ Denne fremgangsmåten viser hvordan du starter en produksjonsordre i shop floor.
 7. Klikk Poster.
 8. Klikk OK.
     * Tiden som brukes på de enkelte operasjonene er registrert i rutekortjournalen. Antall korrekte og feil kan også rapporteres.  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

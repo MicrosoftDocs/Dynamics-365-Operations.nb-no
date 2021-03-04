@@ -60,3 +60,6 @@ Kunder kan utføre en delbetaling der det restbeløpet ikke blir betalt, men det
 
 
 Hvis du vil ha mer informasjon, kan du se [Betale inn kundebetalinger](tasks/deposit-customer-payments.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

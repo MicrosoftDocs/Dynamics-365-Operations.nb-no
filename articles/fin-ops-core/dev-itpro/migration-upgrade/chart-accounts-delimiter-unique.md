@@ -41,3 +41,6 @@ Hvis det er en konflikt med kontoplanen, kan skilletegn for kontoplanen og forma
 
 ## <a name="how-to-determine-if-your-environment-requires-updated-delimiters"></a>Slik fastslår du om miljøet ditt krever oppdaterte skilletegn 
 Hvis skilletegn i det oppgraderte miljøet er i konflikt, kan du oppleve ustabilitet når du angir verdier i en segmentert angivelseskontroll eller dimensjonsangivelseskontroll. Dette betyr at du alltid må bruke oppslag eller en undermeny når du angir kombinasjoner av konto og dimensjon.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

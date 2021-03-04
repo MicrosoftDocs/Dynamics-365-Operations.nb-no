@@ -72,3 +72,6 @@ Den nye **Kostnadsoppføringer**-siden lar deg vise og styre registrering av ant
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -92,3 +92,6 @@ Når du er ferdig med registreringen, velger du **Ferdig** for å postere journa
 -   Materiale kan overforbrukes. Hvis for eksempel materialet er beregnet til bruk med et antall på 100 kilo, kan det bli overforbrukt med et antall på for eksempel 105 kilo.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

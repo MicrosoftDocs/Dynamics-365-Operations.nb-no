@@ -98,3 +98,6 @@ Du kan definere flere stykklisteberegningsgrupper, avhengig av dine behov for va
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

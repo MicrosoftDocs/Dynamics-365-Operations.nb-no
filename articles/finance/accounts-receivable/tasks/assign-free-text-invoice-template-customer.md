@@ -50,3 +50,6 @@ Denne oppgaven beskriver hvordan du tilordner en mal for fritekstfaktura til en 
     + Årlig – Velg dette alternativet og angi antall år i feltet Per. Hvis du for eksempel angir 2, genereres en faktura annethvert år for denne kunden.  
 14. Angi et tall i feltet **Per**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

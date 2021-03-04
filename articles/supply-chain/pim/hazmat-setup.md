@@ -284,3 +284,6 @@ Hvis du vil definere verdier for denne spesifikasjonen, kan du gå til **Behandl
 Spesifikasjonen *Tunnel for farlig materiale* begrenser typene av tunneler som et farlig materiale kan transporteres gjennom ved å identifisere tunneltypene som må brukes. Tunnelkategorier etableres etter gjeldende bestemmelser for transport av farlig materiale. Denne spesifikasjonen gjelder vanligvis bare for veitransport.
 
 Hvis du vil definere verdier for denne spesifikasjonen, kan du gå til **Behandling av produktinformasjon \> Oppsett \> Forsendelsesdokumentasjon for farlig materiale \> Tunnel for farlig materiale**. På siden **Tunnel for farlig materiale** kan du opprette et hvilket som helst antall tunnelidentifikatorer og konfigurere hver med en identifikasjonskode og en kort beskrivelse.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

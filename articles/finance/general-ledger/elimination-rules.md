@@ -155,3 +155,6 @@ Velg firmaet som er kilden til de konsoliderte dataene, og velg deretter regelen
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

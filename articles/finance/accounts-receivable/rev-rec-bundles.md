@@ -110,3 +110,6 @@ Fakturajournalen som opprettes etter at posteringen skjer, omfatter ikke den ove
 Det er viktig at fakturajournalen ikke inneholder den overordnede varen fra bunten, fordi prosesser som utføres etter at fakturaen er postert, er basert på den fakturajournalen. Hvis du for eksempel oppretter en kreditnota fra fanen **Selge** i handlingsruten, vil kreditnotaen som opprettes, inkludere komponentvarene og ikke den overordnede varen.
 
 [![Kreditnota som viser komponentvarene, men ikke den overordnede varen](./media/bundle-09.png)](./media/bundle-09.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

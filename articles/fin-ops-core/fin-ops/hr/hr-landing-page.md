@@ -93,3 +93,6 @@ Du kan utforme og administrere spørreskjemaer for å samle inn informasjon som 
 - [Utforme spørreskjemaer](../../../talent/design-questionnaires.md)
 - [Distribuere og planlegge spørreskjemaer](../../../talent/distribute-questionnaires.md)
 - [Vise og evaluere resultatene i spørreskjemaer](../../../talent/evaluate-questionnaire-results.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

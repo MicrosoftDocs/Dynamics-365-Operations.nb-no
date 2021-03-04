@@ -111,3 +111,6 @@ Supply Chain Management støtter for øyeblikket ikke beregningen av provisjoner
 Buntvaren er ikke tilgjengelig for bestillingen fordi hvis du undersøker salgsordrelinjene for buntvaren, vil du se at antallet er *0* (null), og at statusen er *Avbrutt*. Denne virkemåten er standard. Salgsordren kjøper bare komponentene til buntvaren. Selve buntvaren kjøpes ikke.
 
 Hvis du må kjøpe en bunt, bør du vurdere om du må merke den som buntelement, fordi denne funksjonaliteten er utformet for scenarier med inntektsføring. Hvis du vil ha mer informasjon om buntvarer, se [Bunter](../../finance/accounts-receivable/revenue-recognition-setup.md#bundles).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

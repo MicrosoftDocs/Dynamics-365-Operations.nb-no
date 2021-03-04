@@ -60,3 +60,6 @@ Servicemallinjene er nå kopiert til den nye serviceordren sammen med de vedlagt
 [Servicemaler](service-template.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -74,3 +74,6 @@ Denne fremgangsmåten viser hvordan du oppretter overføringsdokumenter for flyt
 10. Klikk Følgeseddel.
 11. Klikk OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

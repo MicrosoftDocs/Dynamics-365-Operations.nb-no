@@ -82,3 +82,6 @@ Hvis du vil ha detaljert informasjon om hvordan du konfigurerer en kartmodul på
 [Behandle Bing-kart for organisasjonen](./dev-itpro/manage-bing-maps.md)
 
 [Bing Maps V8-webkontrollen](https://docs.microsoft.com/bingmaps/v8-web-control/)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

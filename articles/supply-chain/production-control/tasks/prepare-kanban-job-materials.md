@@ -42,3 +42,6 @@ Denne oppgaven fokuserer på å klargjøre en kanban-prosessjobb når alle mater
 6. Klikk Klargjør.
     * Klargjøringsprosessen er nå fullført. Den valgte avmerkingsboksen for alle rader i plukklisten angir at forsyningsstatusen er plukket.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

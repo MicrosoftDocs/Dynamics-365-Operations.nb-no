@@ -131,3 +131,6 @@ Hvis du vil bruke tilpassing på en eksisterende anbefalingsliste i områdebygge
 [Opprette anbefalinger med demonstrasjonsdata](product-recommendations-demo-data.md)
 
 [Vanlige spørsmål om produktanbefalinger](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -41,3 +41,6 @@ For å avslutte gyldigheten og behandlingen av en produksjonsflytversjon på en 
 6. Angi dato og klokkeslett i feltet Utløpsdato.
     * For utløpsdatoen, vil ikke en ny versjon starte eller bli aktivert. Det vil heller ikke lenger være mulig å opprette eller starte jobber for denne produksjonsflyten. Du kan fortsatt fullføre startede jobber etter utløpsdatoen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

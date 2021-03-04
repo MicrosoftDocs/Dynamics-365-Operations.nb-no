@@ -80,3 +80,6 @@ Den øvre delen av illustrasjonen nedenfor viser hvordan grensesnittet ser ut so
 Som standard blir grensesnittet for produksjonsutførelse automatisk avlogget hvis ingen bruker det i 12 timer. En bruker av Supply Chain Management må deretter logge på på nytt. Du kan imidlertid forlenge tidsavbruddsgrensen til opptil 90 dager.
 
 Hvis du vil forlenge grensen for tidsavbrudd, logger du på Supply Chain Management og går til **Systemadministrasjon \> Brukere \> Øktutvidelser**. Angi brukerkontoen Supply Chain Management som brukes til å logge på enheten, og hvor mange timer økten skal være aktiv.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

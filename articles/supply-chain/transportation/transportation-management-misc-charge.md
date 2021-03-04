@@ -31,3 +31,6 @@ Som med alle tillegg må transportgenererte tillegg knyttes til en tilleggskode.
 Gå til **Transportstyring > Oppsett > Vurdering > Tillegg** for å definere kvalifiseringskriteriene som bestemmer når en bestemt **tilleggskode** skal brukes på et tillegg.
 
 Du må ha minst ett oppsett for hver relevante **tilleggsmodulinnstilling** (*kunde* og *leverandør*) der **Tilleggstypen** er angitt til *Ingen*. Hvis dette mangler, blir *ikke* tillegget lagt til i ordren.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

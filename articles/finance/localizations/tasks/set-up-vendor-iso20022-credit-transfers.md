@@ -52,3 +52,6 @@ Dette er den fjerde prosedyren av fem, som illustrerer leverandørbetalingsprose
 4. Klikk koblingen i SEPA CT-raden i listen.
 5. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

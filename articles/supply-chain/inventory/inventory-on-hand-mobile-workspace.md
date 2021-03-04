@@ -130,3 +130,6 @@ Laste ned og installere Finance and Operations-mobilappen:
     -   Etter fysisk lager (denne visningen representerer den totale mengden).
     -   Etter fysisk reservert (denne visningen representerer den reserverte mengden).
     -   Etter fysisk tilgjengelig (denne visningen representerer tilgjengelig mengde uten reservasjoner.)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

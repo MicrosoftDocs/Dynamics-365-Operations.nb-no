@@ -76,3 +76,6 @@ Tenk også på at den maksimale motregningen til den fysiske lagerverdien, er be
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

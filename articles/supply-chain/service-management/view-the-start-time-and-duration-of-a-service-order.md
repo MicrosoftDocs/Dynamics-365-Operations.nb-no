@@ -59,3 +59,6 @@ Du kan også vise når tidsregistreringen for en serviceordre startet eller stop
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

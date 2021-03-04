@@ -146,3 +146,6 @@ Versjonsdimensjonen fungerer på samme måte som de andre produktdimensjonene. P
 
 > [!IMPORTANT]
 > Hvis du aktiverer og bruker versjonsdimensjonen, kan det hende at noen løsninger som refererer til beholdningsdimensjonene, slutter å fungere som forventet. Du kan bekrefte og løse disse problemene ved å kontakte den uavhengige programvareleverandøren for de berørte løsningene. Hvis du vil ha mer informasjon, kan du se [Aktivere versjonsdimensjonen](#enable-version-dim).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

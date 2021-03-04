@@ -84,3 +84,6 @@ I henhold til begge SEPA-avtalegiroskjemaer har kunder bestemte rettigheter til 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

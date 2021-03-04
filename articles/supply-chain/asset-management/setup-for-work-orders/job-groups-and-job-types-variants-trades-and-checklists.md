@@ -267,3 +267,6 @@ I Aktivastyring kan du automatisk oppdatere eventuelle endringer i vedlikeholdsj
 2. I dialogboksen **Oppdater prognose for vedlikeholdsjobbtype** i hurtigfanen **Poster som skal inkluderes** kan du legge til valg for bestemte vedlikeholdsjobbtyper etter behov. Velg **Filter**, og velg deretter **Velg** for å utføre valgene.
 3. På hurtigfanen **Kjør i bakgrunnen** kan du definere den automatiske oppdateringen som en satsvis jobb, slik du ønsker.
 4. Velg **OK** for å starte prognoseoppdateringen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

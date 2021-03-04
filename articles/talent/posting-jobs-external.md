@@ -102,3 +102,6 @@ Hvis du har problemer med å postere en jobb til Broadbean, kan du prøve følge
 [Opprette, godkjenne og postere jobber i Attract](./creating-jobs-attract.md)
 
 [Aktivere Broadbean-integrering i Microsoft Dynamics 365 Talent - Attract](./attract-admin-job-board-settings.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

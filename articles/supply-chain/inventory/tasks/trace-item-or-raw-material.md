@@ -60,3 +60,6 @@ Toppnoden i treet representerer beholdningen for den valgte varen og partiet. Du
 9. Klikk på **Leverte salgsordrer**.
 10. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

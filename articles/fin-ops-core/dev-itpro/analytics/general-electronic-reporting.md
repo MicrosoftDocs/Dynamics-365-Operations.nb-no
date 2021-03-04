@@ -367,3 +367,6 @@ ER lar deg automatisk innføre endringer av den nyeste versjonen av basiskompone
 
 - [Opprette en konfigurasjon for elektronisk rapportering (ER)](electronic-reporting-configuration.md)
 - [Administrere livssyklus til konfigurasjoner for elektronisk rapportering (ER)](general-electronic-reporting-manage-configuration-lifecycle.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

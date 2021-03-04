@@ -87,3 +87,6 @@ ER-konfigurasjoner som er utformet i utviklingsmiljøet, kan lastes opp til test
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Oversikt over elektronisk rapportering (ER)](general-electronic-reporting.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

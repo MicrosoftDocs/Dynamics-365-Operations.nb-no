@@ -150,3 +150,6 @@ Følgende funksjon for regnskapsintegrering er også tilgjengelig i detaljhandel
 Følgende eldre funksjonalitet for økonomisk integrasjon som er tilgjengelig i Retail SDK bruker ikke rammeverket for økonomisk integrasjon og vil bli avskrevet i senere oppdateringer:
 
 - [Eksempel på integrering med kontrollenheter for Sverige (eldre)](./retail-sdk-control-unit-sample.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

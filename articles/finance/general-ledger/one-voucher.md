@@ -186,3 +186,6 @@ Hvis en korrigering må utføres i Kunde- eller Leverandørfinanskontoen, må en
 ### <a name="the-system-allows-it"></a>"Systemet tillater det"
 
 Organisasjoner bruker ofte funksjonaliteten Ett bilag bare fordi systemet lar dem bruke den, uten å forstå implikasjonene.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

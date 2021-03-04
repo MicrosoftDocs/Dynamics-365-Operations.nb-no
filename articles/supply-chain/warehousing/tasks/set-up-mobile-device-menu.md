@@ -69,3 +69,6 @@ Dette emnet viser hvordan du definerer et Mobilenhet-menyelement. I dette eksemp
 5. Velg pilen som peker mot høyre.
 6. Velg **Lagre**.
 7. Lukk siden.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

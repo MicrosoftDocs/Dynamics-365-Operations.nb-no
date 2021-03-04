@@ -310,3 +310,6 @@ En **IF/THEN/ELSE**-setning gjør det mulig for alle beregninger å være avheng
 Du kan utforme rapporter ved hjelp av dimensjonsverdier som inneholder et ampersandtegn (&).
 
 I et **Kobling til finansdimensjon**-felt kan du angi en verdi som **'Resultat'**. Hvis du inkluderer enkle anførselstegn (' ') på begge sider av dimensjonsverdien, betyr det at du bruker litteralverdien, for eksempel å inkludere ampersandtegnet (&).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

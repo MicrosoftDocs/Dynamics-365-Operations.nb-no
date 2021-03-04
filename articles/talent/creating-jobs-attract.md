@@ -157,3 +157,6 @@ Hvis du vil opprette en jobb, gjør du følgende:
 
 13. Velg **Aktiver** for å aktivere jobben.
 14. Hvis du vil postere jobben, kan du gå til **Posteringer** og deretter velge **Poster nå** under Talent Careers-området eller LinkedIn.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

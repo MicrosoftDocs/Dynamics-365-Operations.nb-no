@@ -65,3 +65,6 @@ Hvis du angir **Vend** som datakilde for datatypen *postliste* som refererer til
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Listefunksjoner](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

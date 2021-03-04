@@ -40,3 +40,6 @@ Du kan ikke bruke noen rolle unntatt administratorrollen til å få tilgang til 
 ### <a name="issue-resolution"></a>Problemløsning
 
 Emulatoren for mobilenhetsappen er satt til bare å fungere med administratorkontoen. For alle test- og aktiveringsprosesser anbefaler vi at du bruker selve lagerappen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

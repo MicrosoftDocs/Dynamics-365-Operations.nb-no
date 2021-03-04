@@ -78,3 +78,6 @@ Neste dag gir sjefen deg beskjed om at datamaskiner ble redusert med 8 prosent, 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

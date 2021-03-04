@@ -79,3 +79,6 @@ Flere kredittbehandlingsstatistikker er inkludert i faktaboksen **Statistikk for
 ### <a name="number-sequences-and-shared-number-sequence-parameters"></a>Nummerserier og parametere for delt nummerserie
 
 Det kreves en journal-ID for å behandle justeringer av kredittgrense. Du må legge til kredittgrensejusteringsnummeret som skal brukes til å generere journal-ID-en.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

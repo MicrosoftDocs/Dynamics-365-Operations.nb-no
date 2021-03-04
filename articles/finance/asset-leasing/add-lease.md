@@ -89,3 +89,6 @@ Alle journaloppføringer som opprettes i Aktivaleie, befinner seg i journalen fo
 
 > [!NOTE]
 > Du kan ikke opprette journalen for aktivaleie manuelt. Den blir automatisk opprettet når leieplaner opprettes.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

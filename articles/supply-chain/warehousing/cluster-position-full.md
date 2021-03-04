@@ -276,3 +276,6 @@ I dette scenarioet er gruppeplukkingen fullført, og brukeren blir omdirigert ti
     Du mottar meldingen Gruppe fullført.
 
 Du kan nå bruke menyelementet **Salgsplukking** til å plukke restantallet. Du kan deretter bruke menyelementet **Salgslasting** til å flytte varene fra lokasjonsplasseringen til lasterampen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

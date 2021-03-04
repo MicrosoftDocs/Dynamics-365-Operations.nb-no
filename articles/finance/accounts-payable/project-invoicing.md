@@ -132,3 +132,6 @@ Du kan opprette en faktura som har et negativt beløp, som blir en faktura som k
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

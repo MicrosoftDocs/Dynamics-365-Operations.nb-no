@@ -116,3 +116,6 @@ Oppfylling av behovstransaksjonen for sikkerhetslageret er ikke prioritert hvis 
 Under dekningsfasen i hovedplanlegging er ikke etterfylling av sikkerhetslageret lenger underprioritert. Lagerbeholdningen kan brukes før eventuelle andre behovstyper. Under forsinkelsesberegningen legges den nye logikken til over de forsinkede salgslinjene, stykklistelinjebehovene og alle de andre behovstypene, for å bestemme om de kan leveres innen tidsfristen, forutsatt at sikkerhetslageret brukes. Hvis systemet identifiserer at det kan redusere forsinkelser ved å bruke sikkerhetslageret, vil salgslinjene eller stykklistelinjene erstatte den opprinnelige dekningen med sikkerhetslageret, og systemet vil utløse etterfylling for sikkerhetslageret i stedet.
 
 Hvis planen eller varen ikke er definert for forsinket beregning, vil sikkerhetslagerbegrensningen ha samme prioritet som andre behovstyper. Dette betyr at det er en reserve med lagerbeholdning og annen tilgjengelige beholdning før andre behovstyper.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

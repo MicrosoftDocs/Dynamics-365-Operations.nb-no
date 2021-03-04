@@ -107,3 +107,6 @@ Velg dokumenttypene som skal være tilgjengelige for utskrift av vedlegg som er 
 **Nummerserier**-kobling
 
 Velg de nødvendige nummerseriene i denne delen. Det finnes to nummerserier for anleggsmidler: én for manuelt opprettede anleggsmidler, og én for anleggsmidler som er opprettet ved hjelp av ventende anleggsmidler.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

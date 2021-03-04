@@ -44,3 +44,6 @@ Denne prosedyren viser hvordan du endrer rapporteringsrelasjonen for en ansatt. 
 12. Angi eller velg en verdi i feltet Rapporterer til stilling.  Eksempel: 000437
 13. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

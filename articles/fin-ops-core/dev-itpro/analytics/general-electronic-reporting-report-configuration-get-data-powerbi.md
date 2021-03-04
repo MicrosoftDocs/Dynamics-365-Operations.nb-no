@@ -196,3 +196,6 @@ Konfigurer integrering med Power BI. Hvis du vil ha mer informasjon, kan du se [
 [Mål for elektronisk rapportering (ER)](electronic-reporting-destinations.md)
 
 [Oversikt over elektronisk rapportering (ER)](general-electronic-reporting.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

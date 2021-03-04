@@ -88,3 +88,6 @@ Metoden 150 % saldoavskrivning dividerer 150 prosent med antall levetidsår. Av
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

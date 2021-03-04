@@ -138,3 +138,6 @@ Noen ganger må du kanskje manuelt sjekke kundens kredittgrense. For eksempel ka
 1.  Klikk **Salg og markedsføring** \> **Vanlig** \> **Salgsordrer** \> **Alle salgsordrer**. Dobbeltklikk en salgsordre.
 
 2.  I skjemaet **Salgsordre** i Handlingsvinduet, på **Administrer**-kategorien, klikk **Sjekk kredittgrense**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

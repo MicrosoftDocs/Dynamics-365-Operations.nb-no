@@ -83,3 +83,6 @@ For ordrelinjer der henting i butikk eller henting utenfor butikk angitt, vil av
 
 [Beregning av mva-fritak](tax-exempt-price-inclusive.md) 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

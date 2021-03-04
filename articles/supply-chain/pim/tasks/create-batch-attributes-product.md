@@ -55,3 +55,6 @@ Denne prosedyren viser hvordan du oppretter et bunkeattributt, tilordner standar
 22. Klikk Lagre.
 23. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

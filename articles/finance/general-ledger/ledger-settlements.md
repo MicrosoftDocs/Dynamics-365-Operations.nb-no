@@ -75,3 +75,6 @@ Du kan tilbakeføre en utligning som ble gjort ved en feiltakelse.
 ## <a name="update-the-list-of-accounts-that-are-included-in-the-list-of-transactions"></a>Oppdater listen over kontoer som er inkludert i listen over transaksjoner
 
 Velg **Utligningskontoer** for å åpne en dialogboks der du kan redigere kontoene som er inkludert i listen over transaksjoner. Velg **Ny** for å legge til nye kontoer i listen. Denne listen brukes til å filtrere listen over transaksjoner som vises på siden **Utligninger**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

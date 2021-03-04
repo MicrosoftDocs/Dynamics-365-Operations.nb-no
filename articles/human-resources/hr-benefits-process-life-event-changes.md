@@ -52,3 +52,6 @@ Behandle endringer i levetidshendelser i Microsoft Dynamics 365 Human Resources 
    4. Velg **OK**. Prosessen vil kjøre med parameterne du angir.
 
 4. Velg **OK**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

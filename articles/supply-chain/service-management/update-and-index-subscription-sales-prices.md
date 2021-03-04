@@ -55,3 +55,6 @@ Basisprisen eller indeksen for abonnementet er oppdatert med den angitte verdien
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

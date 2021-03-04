@@ -33,3 +33,6 @@ EU-direktiv inneholder bestemmelser som alle medlemslandene skal følge, om regl
 
 > [!NOTE]
 > Kontroller at feltet **Mva-spesifikasjon** er satt til **Registreringsvaluta** eller **Registrerings- og firmavaluta** på siden **Skjemaoppsett** i kategorien **Generelt** (**Kunder > Oppsett > Skjemaer > Skjemaoppsett** eller **Prosjektstyring og regnskap > Oppsett > Skjemaer > Skjemaoppsett**).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

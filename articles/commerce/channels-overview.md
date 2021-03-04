@@ -89,3 +89,6 @@ After you create a channel, you may need to complete some of the below tasks:
 [Definere en telefonsenterkanal](channel-setup-callcenter.md)
 
 [Definere organisasjonshierarkier](channels-org-hierarchies.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

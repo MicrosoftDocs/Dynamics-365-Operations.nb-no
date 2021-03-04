@@ -207,3 +207,6 @@ Nøkkeldimensjonene nedenfor brukes som filtre for å dele opp de aggregerte må
 | Juridiske enheter                                          | Navn på juridiske enheter                              |
 | Økonomiske kalendere                                        | Regnskapskalender, år, kvartal, periode, måned   |
 | Nettsted                                                    | ID, navn, adresse, delstat og land               |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -40,3 +40,6 @@ Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten. Den
 8. Fjern merket for Lokasjon.
 9. Klikk OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

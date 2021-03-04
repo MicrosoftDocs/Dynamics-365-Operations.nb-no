@@ -121,3 +121,6 @@ Hvis du vil ha informasjon om hvordan du administrerer områdeinnhold, kan du se
 [Aktivere stedsbasert butikkregistrering](enable-store-detection.md)
 
 [Definere egendefinerte sider for brukerpålogginger](custom-pages-user-logins.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

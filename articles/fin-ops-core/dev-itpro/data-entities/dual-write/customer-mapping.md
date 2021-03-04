@@ -89,3 +89,6 @@ Betalingsbetingelser            | msdyn_paymentterms              | Denne malen 
 [!include [mapping payment schedules](includes/PaymentSchedules-msdyn-paymentschedules.md)]
 
 [!include [mapping terms of payment](includes/TermsofPayment-msdyn-paymentterms.md)]
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

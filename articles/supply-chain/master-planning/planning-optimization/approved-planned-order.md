@@ -43,3 +43,6 @@ Merk deg at godkjenning av planlagte ordrer er et valgfritt trinn for å opprett
 - **Godkjent:** Hvis du vil beholde endringer eller planlegge å bekrefte en planlagt ordre, endrer du statusen til *Godkjent*. Planlagte ordrer med *Godkjent*-status anses som faste, og det forventes forsyning via hovedplanlegging. Demed blir de ikke endret eller slettet under senere panleggingskjøringer. For å oppnå dette kopierer planleggingslogikken de *godkjente* planlagte bestillingene fra den gamle planversjonen til den nye planversjonen under hovedplanlegging. Legg merke til at planlaget ordrer med statusen *Godkjente* bare regnes som forsyning i den bestemte hovedplanen.
 
 Du kan administrere planlagte ordrer fra arbeidsområdet **Hovedplanlegging**, listen **Planlagt ordre** eller listene **Planlagte produksjonsordrer**, **Planlagte bestillinger** og **Planlagt overføring**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

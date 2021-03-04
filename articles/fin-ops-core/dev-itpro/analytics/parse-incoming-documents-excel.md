@@ -46,3 +46,6 @@ Hvis du ennå ikke har spilt av følgende oppgaveveiledning [ER Opprette nødven
 | Innholdsbeskrivelse    | Fil                                                            |
 |------------------------|-----------------------------------------------------------------|
 | ER-modellkonfigurasjon | [1099model.xml](https://go.microsoft.com/fwlink/?linkid=862266) |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

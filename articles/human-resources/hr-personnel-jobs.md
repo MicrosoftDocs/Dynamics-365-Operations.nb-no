@@ -87,3 +87,6 @@ Du bruker ansvarsområder for å angi arbeidsrollene, prosessene og produktene s
 
 ## <a name="steps-for-creating-a-job"></a>Fremgangsmåter for å opprette en jobb
 Se artikkelen [Definere nye jobber](../fin-and-ops/hr/tasks/define-new-jobs.md) for trinnvis fremgangsmåte for å opprette en ny jobb. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -71,3 +71,6 @@ Denne fremgangsmåten bruker malingsprodukter som eksempel for å vise hvordan d
 8. Bruk hurtigfilteret til å filtrere på feltet Varenummer med verdien P300.
     * Legg merke til at ordrene nå er i rekkefølge i henhold til prioriteten for farge og størrelse, og de planlagte ordrene starter på den tidligste ordredatoen og leveringsdatoen. Valider Ordredato-kolonnen eller Startdato i faktaboksen Tidsplandetaljer.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

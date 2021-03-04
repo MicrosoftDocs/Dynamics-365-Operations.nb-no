@@ -106,3 +106,6 @@ Hvis du vil legge til en videospillermodul på en ny side og angi de nødvendige
 [Tekstblokkmodul](add-content-rich-block.md)
 
 [Innholdsblokkmodul](add-hero-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -100,3 +100,6 @@ En arbeidscelle er en bestemt type ressursgruppe som kan brukes i lean manufactu
 ## <a name="save"></a>Lagre
 1. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

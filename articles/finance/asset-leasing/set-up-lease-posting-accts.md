@@ -84,3 +84,6 @@ Hvis du vil tilordne kontoer til leietablåer og -grupper som er opprettet, må 
     > [!NOTE]
     > Den valgte økonomi- eller driftskontoen blir debitert når fakturaen for den planlagte utgiften posteres.
     > **Motpost for leieutgift** blir brukt som posteringstype for fullbyrdelseskostnadstransaksjoner, men posteres til angitt **Motkonto** i **betalingsplanlinjer for fullbyrdelseskostnader** i leiedetaljer eller leietablåskjema.   
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

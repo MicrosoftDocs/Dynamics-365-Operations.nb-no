@@ -70,3 +70,6 @@ Denne prosedyren hjelper med å definere en fordelsplan. Fordelsplaner er fordel
 27. Klikk Lagre.
     * Hver gang du endrer kanaler for en fordelsplan, må du kjøre Behandle fordelsplaner. På denne måten får kanalene oppdaterte fordelsplaner.  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

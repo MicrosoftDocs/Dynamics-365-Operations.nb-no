@@ -65,3 +65,6 @@ Hvis du vil ha mer informasjon, se følgende emner:
 [Definere bankfasiliteter og posteringsprofiler for garantibrev](tasks/set-up-bank-facilities-posting-profiles.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

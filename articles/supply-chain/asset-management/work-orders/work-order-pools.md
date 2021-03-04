@@ -109,3 +109,6 @@ Som beskrevet i forrige del, kan du legge til arbeidsordrer i en arbeidsordresam
 
 Hvis du vil fjerne en arbeidsordre fra en arbeidsordresamling, gjentar du disse trinnene, men velger **Fjern** i trinn 3.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

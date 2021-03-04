@@ -59,3 +59,6 @@ Denne prosedyren viser hvordan du oppretter salgsprisforretningsavtaler med en k
 24. Klikk kategorien Kategoriprisregler.
     * Kanalspesifikke kategoriprisregler vil vises i denne listen.  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -96,3 +96,6 @@ Denne fremgangsmåten viser hvordan du konfigurerer og aktiverer salgprovisjonsb
 17. Velg provisjonsgruppen du opprettet tidligere, i listen.
 18. Velg **Lagre**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

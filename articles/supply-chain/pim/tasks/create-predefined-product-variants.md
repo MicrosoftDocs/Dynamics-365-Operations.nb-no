@@ -72,3 +72,6 @@ Denne fremgangsmåten veileder deg gjennom oppretting av produktvarianter for en
     * Du kan generere beskrivelser for alle varianter basert på kombinasjonen av produktdimensjonsverdier. Beskrivelser er valgfritt.  
 5. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

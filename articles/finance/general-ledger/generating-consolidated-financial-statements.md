@@ -224,3 +224,6 @@ For korrekt omregnede beløp når valutaer brukes, bruker Finansrapportering fø
 Hvis du vil ha mer informasjon om konsolidering og valutavekslinger, kan du se det overordnede emnet i dette emnet, [Oversikt over finanskonsolideringer og valutaomveksling](./financial-consolidations-currency-translation.md).
 
 Hvis du vil ha mer informasjon om hvordan du registrerer detaljer om konsolideringer på nettet, kan du se [Elektroniske finanskonsolideringer](./consolidate-online.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

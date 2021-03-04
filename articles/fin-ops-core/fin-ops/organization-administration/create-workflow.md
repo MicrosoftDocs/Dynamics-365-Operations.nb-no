@@ -83,3 +83,6 @@ Når du er klar til å lagre og aktivere arbeidsflyten, følger du denne fremgan
 
     - Hvis du vil aktivere denne versjonen av arbeidsflyten, klikker du **Aktiver den nye versjonen**. Når en arbeidsflyt er aktiv, kan brukere sende dokumenter til den for behandling.
     - Hvis du ikke vil aktivere denne versjonen, klikker du **Ikke aktiver den nye versjonen**. Du kan aktivere arbeidsflyten senere.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

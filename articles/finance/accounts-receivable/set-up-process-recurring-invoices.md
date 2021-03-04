@@ -67,3 +67,6 @@ Når gjentakende fakturaer er postert, kan du skrive ut fakturaene på listeside
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

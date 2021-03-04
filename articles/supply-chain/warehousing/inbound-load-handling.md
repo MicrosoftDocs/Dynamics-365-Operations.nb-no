@@ -478,3 +478,6 @@ I dette scenarioet vil mottaksassistenten registrere inngående et antall som ov
     - **Antall** – Angi _7_, som er det gjenstående antallet som leverandøren har tillatelse til å levere som en del av det totale bestillingsantallet på 12 (der 10 er det opprinnelige ordreantallet, og 2 er det tillatte overleveringsantallet på 20 prosent). Husk at 5 stk. allerede er registrert mot den første lasten.
 
 Den andre lasten er nå oppdatert med antallet 7, og produktkvitteringen kan oppdateres basert på dette antallet.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

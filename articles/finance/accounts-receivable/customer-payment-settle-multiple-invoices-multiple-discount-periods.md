@@ -101,3 +101,6 @@ Magnus viser informasjonen på siden **Kundetransaksjoner**.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

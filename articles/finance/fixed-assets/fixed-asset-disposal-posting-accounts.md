@@ -43,3 +43,6 @@ Avhendingstransaksjonen for et anleggsmiddel i en lavverdipulje reduserer den ne
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

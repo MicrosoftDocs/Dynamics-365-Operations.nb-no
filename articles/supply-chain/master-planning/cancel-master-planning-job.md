@@ -53,3 +53,6 @@ Disse bør bare brukes hvis avbrytelse av hovedplanleggingsjobben fra siden **Uf
 4. I **satsvise oppgaver** velger du aktivitetene som skal avsluttes.
 5. Klikk **Endre status**, velg **Avbryt**, og klikk deretter **OK**.
 6. Klikk **Avbryt** i hurtigfanen **Satsvise oppgaver**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

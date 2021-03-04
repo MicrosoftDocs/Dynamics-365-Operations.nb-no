@@ -42,3 +42,6 @@ Hvis du vil ha opplæring om funksjoner som deles med andre Finance and Operatio
 | Innhold  | beskrivelse  | Format  | Lengde    |
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|---------------------------------------------------------------------------|
 | [Distribuere og utvide Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/deploy-dynamics-365-commerce/) | Dette læreprogrammet beskriver hvordan du distribuerer Dynamics 365 Commerce-miljøer og utfører trinn etter klargjøring for vellykkede Commerce-implementeringer ved hjelp av riktig topologi for forhandlers forretningsbehov. | Gratis, selvbetjent elektronisk læringsforløp | 5 timer |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

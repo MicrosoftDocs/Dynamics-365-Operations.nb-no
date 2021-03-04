@@ -128,3 +128,6 @@ Ved å velge **Transaksjonsalternativer \> Gebyrer \> Behandle gebyrer** i POS-a
 [Avanserte automatiske tillegg for omnikanal](omni-auto-charges.md)
 
 [Fordele hodegebyrer til samsvarende salgslinjer](pro-rate-charges-matching-lines.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

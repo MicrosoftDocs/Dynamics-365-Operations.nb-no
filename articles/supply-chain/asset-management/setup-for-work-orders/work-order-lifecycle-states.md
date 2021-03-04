@@ -139,3 +139,6 @@ Når du har opprettet livsløpstilstandene for arbeidsordrer som kreves for arbe
 9. Lagre livssyklusmodellen for arbeidsordrer.
 
 ![Siden Livsløpsmodeller for arbeidsordre](media/15-setup-for-work-orders.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

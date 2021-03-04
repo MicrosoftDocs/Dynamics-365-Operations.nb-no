@@ -143,3 +143,6 @@ De oppdaterte tilordningene skal se slik ut.
 
 ![Endring av Kjønn-feltet](./media/WorkerTransform.png)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

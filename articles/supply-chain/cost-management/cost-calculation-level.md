@@ -57,3 +57,6 @@ En produksjonsordre for produkt C opprettes deretter, og produkt A legges til i 
     - **Produkt C:** 2
 
 Denne virkemåten sikrer at endringer i stykklister for produksjonsordre ikke har innvirkning på etterfølgende kostnadsberegninger.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -150,3 +150,6 @@ Du kan også vise kontantstrømprognosedata for bestemte kontoer, ordrer og vare
 - **Forsyningsprognose**: Velg **Kontantstrømprognoser** for å vise fremtidige kontantstrømmer som er knyttet til den valgte vareforsyningsprognosen.
 - **Behovsprognose**: Velg **Kontantstrømprognoser** for å vise fremtidige kontantstrømmer som er knyttet til den valgte varebehovsprognosen.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

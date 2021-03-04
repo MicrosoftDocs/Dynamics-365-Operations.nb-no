@@ -40,3 +40,6 @@ Denne fremgangsmåten viser hvordan du journalfører posterte journaloppføringe
 9. Klikk på **OK** for å lukke filtersiden.
 10. Klikk på **OK** for å starte journalføringsprosessen. En rapport blir generert når prosessen er fullført.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -57,3 +57,6 @@ Tabellen nedenfor viser detaljer om mål som finnes på hver rapportside i Power
 | Finanskontoer                   | Finanskontoer som kan brukes til å filtrere rapporten til den gjeldende finanskontoen              |
 | Budsjettkoder              | Budsjettkoder rapporter kan filtreres etter                                                |
 | Juridiske enheter            | Juridiske enheter som kan brukes til å filtrere rapporten til den gjeldende juridiske enheten |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

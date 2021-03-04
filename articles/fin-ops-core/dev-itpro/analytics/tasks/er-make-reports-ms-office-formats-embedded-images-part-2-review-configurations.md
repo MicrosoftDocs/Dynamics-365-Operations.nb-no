@@ -91,3 +91,6 @@ Denne fremgangsmåten er ment for brukere som har den systemansvarlige eller ele
     * Enkelte etiketter vises i skjemaet forhåndstrykt sjekk inkluderes i rapporten når den opprettes for testformål. Imidlertid skrives disse ikke ut ved reell utskrift, fordi det forhåndstrykte skjemaet allerede inneholder dem.  
 15. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

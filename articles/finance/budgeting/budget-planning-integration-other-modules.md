@@ -147,3 +147,6 @@ Flere rapporter som er tilgjengelige, inkluderer rapporten **Prognosestillinger 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

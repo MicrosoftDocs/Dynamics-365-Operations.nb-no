@@ -50,3 +50,6 @@ Etter at du har opprettet leiegrupper, kan du tilordne tablåer til hver gruppe.
 1. Gå til **Aktivaleie \> Oppsett \> Leiegruppe**.
 2. Velg en leiegruppe, og velg deretter **Tablåer**.
 3. Velg **Nytt**, og velg deretter tablået som skal tilordnes til leiegruppen, i feltet **Tablåtype**. Du kan tilordne flere tablåer til en leiegruppe hvis en leieavtale må gjøres rede for på forskjellige måter.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

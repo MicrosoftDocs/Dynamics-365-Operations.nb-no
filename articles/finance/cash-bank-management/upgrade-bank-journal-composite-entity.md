@@ -55,3 +55,6 @@ Bruk fremgangsmåten nedenfor for å legge til tilleggsfeltet BankTransactionTyp
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

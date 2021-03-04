@@ -54,3 +54,6 @@ Denne fremgangsmåten viser hvordan du oppretter en konsernintern plan. Demonstr
 2. Klikk koblingen i den valgte raden i listen. Klikk koblingen for StaticPlan. Du må være i selskapet USMF.  
 3. Klikk **Planlagte bestillinger**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

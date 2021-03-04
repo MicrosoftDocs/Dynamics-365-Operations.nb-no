@@ -110,3 +110,6 @@ Du kan sende meldinger til personer når en automatisert oppgave er kjørt eller
     </table>
 
 8. Gjenta trinn 3 til 7 for hver hendelse du valgte i trinn 2.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

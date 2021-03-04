@@ -41,3 +41,6 @@ Denne prosedyren hjelper med å opprette en ny enhet og knytte den til et regist
 9. Klikk koblingen i den valgte raden i listen.
 10. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

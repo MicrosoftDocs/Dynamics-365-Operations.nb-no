@@ -81,3 +81,6 @@ Disse eksemplene viser hvordan du kan opprette forskjellige typer arbeidsflytbet
 ## <a name="see-also"></a>Se også
 
 - [Oversikt over permisjon og fravær](hr-leave-and-absence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

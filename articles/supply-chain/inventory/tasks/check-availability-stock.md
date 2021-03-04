@@ -60,3 +60,6 @@ Denne fremgangsmåten viser hvordan du kontrollerer beholdning og fysisk lagerbe
 5. Klikk **OK**.
 6. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

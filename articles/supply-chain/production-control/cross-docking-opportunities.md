@@ -127,3 +127,6 @@ Når et produkt som er rapportert som fullført på produksjonslinjen overføres
 -   Direkteoverføringsscenariet støttes for parti- og seriekontrollerte varer, både med parti- og serienummerdimensjonene som er definert over, og under lokasjon i reservasjonshierarkiet. 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

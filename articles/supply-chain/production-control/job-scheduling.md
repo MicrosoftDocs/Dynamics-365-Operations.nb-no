@@ -77,3 +77,6 @@ Finplanlegging tar hensyn til effektivitetsprosenter som er angitt for ressursen
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

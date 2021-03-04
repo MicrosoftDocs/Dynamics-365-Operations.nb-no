@@ -160,3 +160,6 @@ Denne virkemåten gjelder bare når et produkt velges direkte for frigivelse. Pr
 Produkt X er for eksempel tilordnet til produkteiergruppen *Designkabinetter*. Produkt X er også en del av stykklisten for produkt Y, som er tilordnet til produkteiergruppen *Designhøyttalere*. Hvis en bruker fra produkteiergruppen *Designhøyttalere* frigir produkt Y og stykklisten, blir produkt X frigitt sammen med produkt Y.
 
 Hvis du vil ha mer informasjon, kan du se [Produkteiere](product-owner.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

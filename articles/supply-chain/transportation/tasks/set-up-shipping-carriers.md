@@ -73,3 +73,6 @@ Dette emnet viser hvordan du konfigurerer en transportør og definere operasjone
 9. I **Transittidmotor**-feltet velger du et alternativ fra rullegardinmenyen.
 10. Velg **Lagre**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

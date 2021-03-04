@@ -247,3 +247,6 @@ C. Gå til Budsjettering &gt; Oppsett &gt; Budsjettplanlegging &gt; Budsjettplan
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

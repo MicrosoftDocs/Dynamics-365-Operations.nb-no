@@ -81,3 +81,6 @@ Når du har angitt den grunnleggende informasjonen om tilbudsforespørselen din,
 4. Lukk siden.
 5. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

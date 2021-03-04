@@ -243,3 +243,6 @@ Hvis du for eksempel må presentere summen av avgiftsverdier i rapportens toppte
 - [Konfigurere format for å utføre telling og summering](./tasks/er-format-counting-summing-1.md)
 - [Spore utførelse av ER-format for å feilsøke ytelsesproblemer](trace-execution-er-troubleshoot-perf.md)
 - [Utsette kjøringen av sekvenselementer i ER-formater](er-defer-sequence-element.md#Example)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

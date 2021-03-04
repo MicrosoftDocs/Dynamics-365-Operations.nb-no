@@ -82,3 +82,6 @@ Stykklisteantallet er 1, og produksjonsantallet er 110. Formelen for forbruket e
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

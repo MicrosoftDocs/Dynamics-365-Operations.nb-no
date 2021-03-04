@@ -88,3 +88,6 @@ Transaksjonen for revaluering av utenlandsk valuta er også delt på tvers av di
 Hvis du må tilbakeføre revalueringstransaksjonen, velger du **Tilbakefør transaksjon** på handlingssiden på siden **Revaluering av utenlandsk valuta**. Det opprettes en ny historisk post for revaluering av utenlandsk valuta for å beholde det historiske revisjonssporet for når revalueringen skjedde eller ble tilbakeført.
 
 Hvis du vil reversere flere revalueringer, må du tilbakeføre den nyeste revalueringen først. Deretter fortsetter du å tilbakeføre eldre revalueringer i datorekkefølgen. Du kan deretter behandle nye revalueringer for periodene som du tilbakeførte.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

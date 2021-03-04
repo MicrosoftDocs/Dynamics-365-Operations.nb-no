@@ -141,3 +141,6 @@ Det siste trinnet er å angi attributtbaserte salgspriser for produktmodellversj
 1. Åpne kategorien **Modell** i handlingsruten, og gå til **Produktmodelldetaljer**-gruppen og velg **Versjoner**.
 1. **Versjoner**-siden åpnes. Kontroller at **Prismetode** er satt til **Attributtbasert**.
     ![Sette prismetode til attributtbasert](media/prod-config-versions.png "Sette prismetode til attributtbasert")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

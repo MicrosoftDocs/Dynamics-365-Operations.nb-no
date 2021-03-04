@@ -51,3 +51,6 @@ April posterer betalingsjournalen. Fakturaen utlignes fullstendig ved hjelp av e
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

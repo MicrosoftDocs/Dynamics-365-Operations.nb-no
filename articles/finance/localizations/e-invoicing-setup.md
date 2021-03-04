@@ -361,3 +361,6 @@ Følg disse trinnene for å behandle livssyklusen for funksjonen for tillegget E
 
     > [!NOTE]
     > Når du velger **Ja**, endres statusen for konfigurasjonsversjoner automatisk fra **Fullført** til **Delt**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

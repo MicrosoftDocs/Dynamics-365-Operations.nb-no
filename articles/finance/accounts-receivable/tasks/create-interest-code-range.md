@@ -51,3 +51,6 @@ Rentekoder kan defineres til å beregne forskjellige rentebeløp basert på et v
 21. Angi renteprosenten per måned som skal brukes til å beregne renten med start i måned 7. I vårt eksempel er det 2,5.
 22. Klikk Lukk for å fullføre oppsettet.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

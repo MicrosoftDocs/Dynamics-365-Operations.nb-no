@@ -221,3 +221,6 @@ Følg denne fremgangsmåten for å kjøre kompatibilitetssjekken.
 1. Velg **Kompatibilitetskontroll** i gruppen **Handlinger** i fanen **Laster**.
 
 Du får en melding som gir deg beskjed om resultatet av sjekken.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

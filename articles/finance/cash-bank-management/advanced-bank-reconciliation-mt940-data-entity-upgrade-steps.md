@@ -64,3 +64,6 @@ Bruk fremgangsmåten nedenfor for å legge til importenheten for bankkontoutdrag
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

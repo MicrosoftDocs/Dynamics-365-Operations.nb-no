@@ -124,3 +124,6 @@ For testformål kan du utføre formattilordningen med filen 1099entriescsv.csv s
     * Gå gjennom utdataene i XML-format, som representerer dataene som er importert fra den valgte filen og overført til datamodellen. Vær oppmerksom på at alle 7 linjene i den importerte CSV-filen ble behandlet. Feltenes titler linje 1 ble hoppet over, 4 transaksjoner ble riktig analysert, og 2 transaksjoner ble gjenkjent som ikke gyldige.
 3. Lukk siden.
 4. Lukk siden.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

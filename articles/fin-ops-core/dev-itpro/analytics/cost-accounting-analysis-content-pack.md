@@ -123,3 +123,6 @@ Nøkkeldimensjonene nedenfor brukes som filtre for å dele opp de aggregerte må
 | Økonomiske kalendere                   | Kalender, kalenderbeskrivelse                                                                                       |
 | Regnskapsår                       | Kalenderår                                                                                                        |
 | Regnskapsperioder                     | Kalenderårperiode                                                                                                 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

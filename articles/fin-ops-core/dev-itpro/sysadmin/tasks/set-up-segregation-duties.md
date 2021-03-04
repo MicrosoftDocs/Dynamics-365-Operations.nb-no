@@ -40,3 +40,6 @@ Du kan definere regler for å skille aktiviteter som må utføres av forskjellig
 12. Skriv inn en verdi i feltet **Sikkerhetsreduksjon**. Angi en beskrivelse av handlingene som du gjøre for å redusere sikkerhetsrisikoen. Du kan for eksempel redusere risikoen ved å utføre mer detaljert gjennomgang av prosessen, utføre en månedlig ledergjennomgang eller ved å dele ressurser med andre avdelinger.     
 13. Klikk **Lagre**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

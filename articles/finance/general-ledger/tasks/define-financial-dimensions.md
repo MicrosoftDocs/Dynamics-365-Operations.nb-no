@@ -55,3 +55,6 @@ Denne oppgaveveiledningen beskriver hvordan du legger til en enhetsstøttet fina
 9. Skriv inn et navn for å beskrive finansdimensjonsverdien i feltet **Dimensjonsverdi**.
 10. Skriv inn en beskrivelse som beskriver finansdimensjonsverdien i **Beskrivelse**-feltet.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

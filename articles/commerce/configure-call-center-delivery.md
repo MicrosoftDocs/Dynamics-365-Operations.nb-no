@@ -95,3 +95,6 @@ Eventuelt kan du knytte en kode for ekspeder til en hvilken som helst leveringsm
 For eksempel for ordrer som skal sendes med fly neste dag, må plukking gjøres i lageret kl. 13:00 hver dag. I dette tilfellet kan du opprette en ekspederingskode, og denne koden kan kobles til en hvilken som helst neste dag-leveringsmåte som er konfigurert i systemet. Når lageret oppretter plukkbølgen sin, kan riktig ekspederingskode i **Ekspeder**-feltet brukes som filter, slik at plukking bare utføres for ordrer som har leveringsmåter som er knyttet til koden.
 
 I tillegg, når det angis en telefonsenterordre, kan en ekspederingskode brukes manuelt på salgsordrehodet eller en individuell salgsordrelinje. Igjen, koden kan brukes til sorterings- eller rapporteringsformål. Noen ganger må en ordre håndteres forsiktig på grunn av problemer med kundeservice. I dette tilfellet kan en bestemt ekspederingskode brukes på ordrehodet eller -linjene for å identifisere og prioritere ordren under prosessen med å utføre.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

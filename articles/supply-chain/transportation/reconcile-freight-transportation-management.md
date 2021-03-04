@@ -47,3 +47,6 @@ Hvis du vil bruke automatisk avstemming, må du angi tidsplanen for avstemming o
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

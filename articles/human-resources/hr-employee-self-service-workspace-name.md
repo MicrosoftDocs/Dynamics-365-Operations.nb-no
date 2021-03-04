@@ -45,3 +45,6 @@ Hvis du har frivillige eller andre ikke-ansatte, kan det hende du vil endre navn
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 - [Oversikt over selvbetjening for ansatte og ledere](hr-employee-manager-self-service-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

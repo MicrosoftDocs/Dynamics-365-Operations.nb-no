@@ -83,3 +83,6 @@ Du kan også aktivere feltene **Starttidspunkt** og **Sluttidspunkt** i **Prosje
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

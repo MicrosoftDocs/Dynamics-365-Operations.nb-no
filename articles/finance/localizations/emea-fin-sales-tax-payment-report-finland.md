@@ -207,3 +207,6 @@ Hvis du definerer snudd avregning i henhold til [Snudd avregning](emea-reverse-c
 Når du har generert den finske mva-rapporten, bruker du dataene på den til å fylle ut den selvvurderte avgiftsrapporten for den finske skatteetaten i det offisielle formatet. Illustrasjonen nedenfor viser for eksempel hva den finske egenvurderte avgiftsrapporten har sett ut siden 2019.
 
 ![Finsk selvvurdert avgiftsrapport](media/5_Finnish_VAT_declaration.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

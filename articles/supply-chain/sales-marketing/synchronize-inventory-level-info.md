@@ -91,3 +91,6 @@ Du kan bruke filtre med avansert spørring og filtrering slik at bare bestemte p
 ### <a name="product-inventory-supply-chain-management-to-field-service-product-inventory"></a>Produktbeholdning (Supply Chain Management til Field Service): Produktbeholdning
 
 [![Maltilordning i Dataintegrering](./media/FSinventoryLevel1.png)](./media/FSinventoryLevel1.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

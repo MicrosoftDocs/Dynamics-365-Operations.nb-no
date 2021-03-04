@@ -32,3 +32,6 @@ Dette emnet forklarer hvordan du endrer datoen for en økt. Som standard brukes 
 2. Angi en dato i **Dato**-feltet.
 3. Velg **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

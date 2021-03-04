@@ -98,3 +98,6 @@ Du kan frigi råvarer for en delvis mengde ferdigvarer eller i en bestemt enhet.
     Enhetene som er tilgjengelige, er definert i enhetssekvensgruppe-ID-en for den ferdige varen.
 
     En ferdigvare har for eksempel følgende enhetsomregning mellom pund (lbs.) og pall (PL): 1 PL = 100 lbs. Hvis du vil opprette en produksjonsordre for 10 000 lbs. med ferdigvare, kan du frigi råvarer for antallet paller som du planlegger å produsere. Velg **PL** som enhet, og velg deretter et tilsvarende tall i **Antall**-feltet.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

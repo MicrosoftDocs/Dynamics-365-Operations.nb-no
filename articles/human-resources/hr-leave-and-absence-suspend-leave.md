@@ -49,3 +49,6 @@ Hvis avsetninger behandles når den ansattes permisjoner blir suspendert, vil de
 - [Konfigurere permisjons- og fraværstyper](hr-leave-and-absence-types.md)
 - [Avsette permisjons- og fraværsplaner](hr-leave-and-absence-accrue.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

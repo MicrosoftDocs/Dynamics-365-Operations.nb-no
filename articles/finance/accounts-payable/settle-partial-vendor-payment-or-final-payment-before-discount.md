@@ -142,3 +142,6 @@ April posterer betalingsjournalen og går gjennom leverandørtransaksjonene på 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

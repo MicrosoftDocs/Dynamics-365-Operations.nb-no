@@ -158,3 +158,6 @@ Tilleggsressurser
 [Definere tilgangsrettigheter for kontrollere for kostnadsobjekt](access-rights-cost-object-controller.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -95,3 +95,6 @@ Hvis du krever at valutapresisjonen for en bestemt valuta er forskjellig fra val
 ### <a name="tables-currency-field"></a>tabeller: Valuta-felt
 
 Antallet desimaler som kan konfigureres for bestemte valutafelt, er begrenset til fire.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

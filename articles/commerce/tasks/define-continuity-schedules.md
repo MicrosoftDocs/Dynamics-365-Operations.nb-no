@@ -64,3 +64,6 @@ Dette emnet hjelper med å konfigurere et kontinuitetsprogram (også kjent som r
     * Når denne varen selges i et telefonsenter, brukes mer forretningslogikk fra det valgte kontinuitetsprogrammet.  
 7. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

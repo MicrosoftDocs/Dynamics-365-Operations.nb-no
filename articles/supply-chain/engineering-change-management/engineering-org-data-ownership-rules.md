@@ -67,3 +67,6 @@ Siden det teknsike firmaet eier teknisk relevante data, kontrollerer det følgen
 
     - Når disse dokumentene frigis til andre juridiske enheter, blir dokumentene beskyttet fra å bli fjernet av driftsfirmaet.
     - Andre juridiske enheter kan legge til helt nye, lokale dokumenter. Driftsfirmaet eier og vedlikeholder disse lokale dokumentene.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

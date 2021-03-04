@@ -65,3 +65,6 @@ Denne prosedyren fokuserer på å opprette en formel som inneholder de samme ing
 5. Klikk Velg.
 6. Klikk OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

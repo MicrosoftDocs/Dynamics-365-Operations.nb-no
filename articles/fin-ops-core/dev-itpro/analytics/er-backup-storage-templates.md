@@ -102,3 +102,6 @@ I Finance and Operations versjon 10.0.5 er funksjonen for sikkerhetskopiering av
 [Oversikt over elektronisk rapportering (ER)](general-electronic-reporting.md)
 
 [Konfigurere rammeverket for elektronisk rapportering (ER)](electronic-reporting-er-configure-parameters.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

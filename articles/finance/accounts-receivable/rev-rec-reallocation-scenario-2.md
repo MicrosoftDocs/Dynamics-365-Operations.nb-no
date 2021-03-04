@@ -90,3 +90,6 @@ Den andre salgsordren er nå fakturert. Totalfakturaen som presenteres for kunde
 [![Bilagstransaksjonssiden med regnskapsoppføringen som er postert](./media/24_rev-rec-scenarios.png)](./media/24_rev-rec-scenarios.png)
 
 Ettersom summen av inntekten og salget er mer enn USD 1 170,44, posteres differansen for USD 130,17. Dette beløpet fjerner saldoen fra avsetningskontoen for delvis fakturainntekt. Denne saldoen posteres i den nye regnskapsoppføringen etter ny tildeling.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

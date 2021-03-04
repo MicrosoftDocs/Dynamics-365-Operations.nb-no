@@ -676,3 +676,6 @@ Ansatte kan deklarere passinformasjon. Denne informasjonen er av **Pass**-identi
 
 Ansatte kan angi flere identifikasjonsnumre for identifikasjonstypen **Pass**. Men bare den gjeldende aktive passoppføringen er integrert i Dayforce. Hvis alle passoppføringer er utløpt, er passet som sist ble utstedt, integrert i Dayforce.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

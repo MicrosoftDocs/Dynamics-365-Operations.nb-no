@@ -102,3 +102,6 @@ Hvis du velger feltet **Arv tilbakemeldingsdeltakere fra ansettelsesteam**, angi
 Intervjuaktiviteten er en valgfri aktivitet med tre komponenter: **Forespørsel om kandidattilgjengelighet**, **Tidsplan** og **Tilbakemelding**. Bruk intervjuaktiviteten i jobbmalen hvis du vil ta med alle kandidatens tilgjengelighetsforespørsler, tidsplan og tilbakemelding som en del av prosessen, i stedet for å bruke dem enkeltvis.
 
 Hvis du vil inkludere eller begrense kandidatene som skal intervjues, kan du velge en verdi i feltet for **Hvem du skal intervjue**. De tilgjengelige alternativene er **Alle kandidater**, **Eksterne kandidater** og **Interne kandidater**. Hvis du for eksempel ønsker å hoppe over interne kandidater i første runde med intervjuer, setter du **Hvem du skal intervjue** til **Eksterne kandidater**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

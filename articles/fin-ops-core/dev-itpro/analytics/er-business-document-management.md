@@ -423,3 +423,6 @@ Sannsynligvis er du logget på den gjeldende forekomsten av appen for Azure AD-d
 
 [Konfigurere elektronisk rapportering (ER) for å hente data til Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

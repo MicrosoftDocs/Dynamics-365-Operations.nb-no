@@ -55,3 +55,6 @@ Hvis du vil ha mer informasjon, kan du se følgende emner:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

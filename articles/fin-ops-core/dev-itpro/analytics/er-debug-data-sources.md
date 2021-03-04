@@ -281,3 +281,6 @@ Hvis noen av de tidligere angitte konfigurasjonene mangler i konfigurasjonstreet
 6. Velg **DEMF OPER** i feltet **Bankkonto**.
 7. Velg **OK** i dialogboksen **Generer betalinger**.
 8. I dialogboksen **Parametere for elektronisk rapport** velger du **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

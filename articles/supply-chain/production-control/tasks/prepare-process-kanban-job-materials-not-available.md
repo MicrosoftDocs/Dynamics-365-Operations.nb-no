@@ -52,3 +52,6 @@ Denne prosedyren fokuserer på å klargjøre en kanban-prosessjobb når noen mat
 6. Klikk Klargjør.
     * Legg merke til at et ikon i jobbstatusen angir at jobben er klar.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

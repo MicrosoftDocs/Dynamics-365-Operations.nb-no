@@ -119,3 +119,6 @@ Angi følgende verdier for å definere posteringsprofilen
 | **Utligning** | Merk av for dette valget for å aktivere automatisk utligning for transaksjoner med denne posteringsprofilen. Hvis merket fjernes for dette valget, må du manuelt utligne transaksjoner ved hjelp av siden **Utlign åpne transaksjoner**. |
 | **Avbryt**     | Merk av for dette valget hvis du ønsker å ha muligheten til å avbryte transaksjoner med denne posteringsprofilen.                                                                                                               |
 | **Lukke**      | Velg en posteringsprofil som du vil bytte til når transaksjoner med denne posteringsprofilen er lukket. En transaksjon anses som lukket når den er fullstendig utlignet.                                       |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -70,3 +70,6 @@ Merk følgende punkt:
 
 - Du kan definere tellere som er relatert til en annen teller. I dette tilfellet oppdateres tilknyttede tellere automatisk samtidig når en teller oppdateres. Hvis du vil ha informasjon om hvordan du definerer relaterte tellere, se [Tellere](../setup-for-objects/counters.md).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

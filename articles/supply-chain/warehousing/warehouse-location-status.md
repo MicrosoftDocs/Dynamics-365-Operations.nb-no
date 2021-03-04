@@ -169,3 +169,6 @@ Eksempelscenarioet krever at du forbereder to lokasjonsprofiler.
 
 > [!NOTE]
 > Lokasjonsfeltene oppdateres bare etter lagertransaksjoner. Hvis du flytter beholdningen ved hjelp av en journal eller andre ikke-WHS-prosesser, oppdateres ikke feltene.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

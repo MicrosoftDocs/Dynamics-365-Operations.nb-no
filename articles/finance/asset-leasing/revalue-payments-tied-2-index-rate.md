@@ -68,3 +68,6 @@ Hvis du vil vise virkningene av prosessen for revaluering av leie i IFRS 16-leie
 Du kan vise den nygenererte betalingsplanen som starter på revalueringsdatoen, og vise det totale oppdaterte betalingsbeløpet. Det er også opprettet en ny nedbetalingsplan for leieforpliktelse og en avskrivningsplan for aktiva for å gjenspeile den justerte betalingsplanen.
 
 Journaloppføringen har automatisk postert justeringsjournaloppføringen til kontoen for endringen i leiebetalinger som er knyttet til revalueringen av indeks.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

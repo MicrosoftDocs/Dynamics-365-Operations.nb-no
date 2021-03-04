@@ -75,3 +75,6 @@ På siden **Vedlikeholdsbudsjettlinjer** kan du manuelt legge til en ny budsjett
 
 - Du vet at reparasjon av enkelte aktiva er for øyeblikket i planleggingsfasen, men tilknyttede jobber er ennå ikke opprettet i Aktivastyring. Du vil imidlertid at budsjettkostnader for disse jobbene skal være med i vedlikeholdsbudsjettet.
 - Det er opprettet nye aktiva eller aktivatyper siden du opprettet vedlikeholdsbudsjettet, men vedlikeholdsplaner er ennå ikke definert for disse aktivaene eller aktivatypene. Du vil imidlertid at budsjettkostnader for disse aktivatypene skal være med i vedlikeholdsbudsjettet.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

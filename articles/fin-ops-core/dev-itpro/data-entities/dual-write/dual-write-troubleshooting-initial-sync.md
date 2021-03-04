@@ -211,3 +211,6 @@ Hvis noen rader i kundeenheten har verdier i feltene **ContactPersonID** og **In
     Den innledende synkroniseringen av radene er nå fullført.
 
 8. I Finance and Operations-appen aktiverer du endringssporing igjen for **Kunder V3**-enheten.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

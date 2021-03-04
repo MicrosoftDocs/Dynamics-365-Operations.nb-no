@@ -41,3 +41,6 @@ Denne prosedyren fokuserer på oppsettet for en disposisjonskode som kan brukes 
 6. Skriv inn en verdi i Returdisposisjonskode-feltet.
     * Returdisposisjonskoden bestemmer resten av ordrereturprosessen for varene som er registrert. Kunden skal motta en kreditnota i dette eksemplet. Legg til en disposisjonskode for returer som inneholder en kredithandling.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

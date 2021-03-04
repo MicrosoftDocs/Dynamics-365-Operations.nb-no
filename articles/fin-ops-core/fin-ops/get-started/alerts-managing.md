@@ -82,3 +82,6 @@ Hvis du setter opp et vindu for satsvis behandling, sendes det et varsel når va
 
 1. Gå til **Systemadministrasjon** &gt; **Periodiske oppgaver** &gt; **Varsler** &gt; **Forfallsdatovarsler**.
 2. I dialogboksen **Forfallsdatovarsler** angir du riktig informasjon.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

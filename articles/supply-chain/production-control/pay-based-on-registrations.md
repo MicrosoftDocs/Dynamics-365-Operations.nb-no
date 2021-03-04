@@ -599,3 +599,6 @@ Hvis arbeideren ikke kommer på jobb i en arbeidsdag, og det er ingen planlagt f
 - Sett inn fravær automatisk
 
 Når de daglige registreringene er beregnet for en arbeider som er aktivert for fleksible timer, brukes fraværskoden som er angitt i feltet **Sett inn fleksitid automatisk**, som en standard fraværskode. Hvis arbeideren ikke er aktivert for fleksible timer, brukes fraværskoden som er angitt i feltet **Sett inn fravær automatisk**. Hvis et firma har en kombinasjon av arbeidere som er aktivert for fleksible timer og arbeidere som ikke er aktivert for fleksible timer, må begge parametere defineres.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

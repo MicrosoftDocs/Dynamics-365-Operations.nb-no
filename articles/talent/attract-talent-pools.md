@@ -149,3 +149,6 @@ Ofte blir flere gode kandidater for en jobb ikke valgt, men du vil ikke miste ov
 1. På søknadssiden velger du **Legg til i talentsamling**. Det vises en liste over talentutvalg som du har tilgang til.
 
 1. Velg eller søke etter talentutvalget, og velg deretter **Legg til** for å legge til kandidaten i talentutvalget.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

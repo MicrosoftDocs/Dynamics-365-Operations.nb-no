@@ -66,3 +66,6 @@ Denne funksjonen er tilgjengelig for juridiske enheter med primæradresse i Danm
 16. Klikk Lagre.
 17. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

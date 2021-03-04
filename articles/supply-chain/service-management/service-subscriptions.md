@@ -38,3 +38,6 @@ En periodekode viser lengen på abonnementavgiftsperioden, det vil si hvor lenge
 Periodekoden er definert i serviceabonnementsgruppen. Det er definert for abonnementene via serviceabonnementsgruppen. Alle nye abonnementsavgifter du oppretter, har en foreslått startdato. Dette er startdatoen for perioden hvis det er første periode som opprettes, eller sluttdatoen for den foregående perioden hvis det er andre eller en senere periode.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -50,3 +50,6 @@ Avskrivning uten avrunding beregnes som 2 444,44. Som følgende tabell viser var
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

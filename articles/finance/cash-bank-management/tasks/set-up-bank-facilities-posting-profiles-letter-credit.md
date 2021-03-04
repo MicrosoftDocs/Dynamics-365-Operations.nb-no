@@ -74,3 +74,6 @@ Denne oppgaven bruker demonstrasjonsfirmaet USMF.
     * Denne kontoen blir debitert når åpningsmarginen blir postert, og kreditert når betalingen blir postert.  
 9. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

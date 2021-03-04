@@ -57,3 +57,6 @@ Denne oppgaven oppretter en bankfasilitetsavtale for å behandle et garantibrev.
 5. Klikk Lagre.
 6. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

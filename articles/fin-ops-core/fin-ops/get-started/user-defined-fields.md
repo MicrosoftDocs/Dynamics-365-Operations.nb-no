@@ -162,3 +162,6 @@ Av ytelsesårsaker og tekniske årsaker er det bare tabeller som oppfyller følg
 ### <a name="can-i-reference-custom-fields-from-the-developer-tools"></a>Kan jeg referere til egendefinerte felt fra utviklerverktøy?  
 
 Egendefinerte felt kan bare administreres gjennom brukergrensesnittet og kan ikke refereres til av koden. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

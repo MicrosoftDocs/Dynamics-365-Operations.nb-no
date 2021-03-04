@@ -95,3 +95,6 @@ Bruk denne fremgangsmåten til å opprette en rapport hierarki for rapportering 
     * Velg dimensjonsmedlemmet som tilsvarer noden.  
 59. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

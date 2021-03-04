@@ -79,3 +79,6 @@ Følgende illustrasjoner viser en tilordning av malen i Dataintegrering.
 ### <a name="inventory-transfer-field-service-to-supply-chain-management-inventory-transfer"></a>Lageroverføring (Field Service til Supply Chain Management): Lageroverføring
 
 [![Maltilordning i Dataintegrering](./media/FSTrans1.png)](./media/FSTrans1.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

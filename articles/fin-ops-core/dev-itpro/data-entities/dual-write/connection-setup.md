@@ -138,3 +138,6 @@ Hvis du vil ha koblinger til et eksempel og en alternativ tilnærming, kan du se
 Hvis du vil ha et eksempel, kan du se [Aktivere tabelltilordningen Kunder V3 til kontakter](enable-entity-map.md#enable-table-map)
 
 Hvis du vil ha en alternativ tilnærming som er basert på datavolumer i hver enhet som må kjøre en innledende synkronisering, kan du se [Hensyn ved innledende synkronisering](initial-sync-guidance.md).
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

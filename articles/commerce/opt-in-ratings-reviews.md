@@ -64,3 +64,6 @@ Følg denne fremgangsmåten for å velge å bruke vurderinger og omtaler på omr
 [Synkronisere produktvurderinger i Dynamics 365 Commerce](sync-product-ratings.md)
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

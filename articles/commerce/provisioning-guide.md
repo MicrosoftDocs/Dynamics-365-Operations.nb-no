@@ -176,3 +176,6 @@ Hvis du vil fortsette prosessen for å klargjøre og konfigurere Commerce-evalue
 [Microsoft Azure-portal](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce-webområde](https://aka.ms/Dynamics365CommerceWebsite)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

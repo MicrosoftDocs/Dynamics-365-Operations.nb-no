@@ -89,3 +89,6 @@ I så fall vurderes de to delene for beholdning av varenummeret KOMP. Fordi det 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

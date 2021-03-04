@@ -110,3 +110,6 @@ Følgende prosedyre viser én måte å reprodusere problemet på.
 ### <a name="issue-resolution"></a>Problemløsning
 
 Dette avhenger av parameterinnstillingene for fakturaer og fakturagrupper. Hvis du vil ha mer informasjon, kan du se følgende blogginnlegg: [Regnskap for innkjøpstillegg og lageravvik](https://cloudblogs.microsoft.com/dynamics365/no-audience/2014/12/15/accounting-for-purchase-charge-and-stock-variation/).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

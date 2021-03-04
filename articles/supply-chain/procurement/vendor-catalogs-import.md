@@ -70,3 +70,6 @@ Filmalen for katalogimport er en XSD-fil som bruker til å opprette en PriKat-fi
 3. Velg plasseringen der du vil lagre katalogfilmalen og filen, i dialogboksen **Lagre som**.
 
 Hvis du vil ha mer informasjon og eksempler, kan du se dette blogginnlegget: [Leverandørkataloger i Dynamics AX](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/05/25/vendor-catalogs-in-dynamics-ax/).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

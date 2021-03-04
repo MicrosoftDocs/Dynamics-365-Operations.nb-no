@@ -145,3 +145,6 @@ Hvis du vil ha mer informasjon, kan du se følgende emner:
 - [Dobbel valuta](dual-currency.md)
 - [Oversikt over merverdiavgift](indirect-taxes-overview.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

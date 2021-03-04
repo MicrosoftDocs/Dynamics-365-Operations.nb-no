@@ -73,3 +73,6 @@ Hvis du vil opprette eller kopiere en mal for forretningsprosessen eller starte 
 
 Hvis du vil vise aktive prosesser og tilknyttede oppgaver, åpner du arbeidsområdet **Forretningsprosesser**.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

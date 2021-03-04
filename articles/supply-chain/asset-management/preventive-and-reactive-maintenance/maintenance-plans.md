@@ -194,3 +194,6 @@ Illustrasjonen nedenfor viser et eksempel på vedlikeholdsplaner for et aktivum 
 
 ![Figur 7](media/08-preventive-maintenance.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

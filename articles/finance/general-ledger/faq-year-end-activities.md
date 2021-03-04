@@ -137,3 +137,6 @@ Dynamics 365 Finance skriver ikke ut det årlige 1096-sammendraget og skjemaet f
 En ny funksjon for offentlig sektor, **Oppdater 1099-informasjon etter hovedkonto**, er lagt til, og du kan aktivere den i arbeidsområdet **Funksjonsbehandling**. Ved hjelp av denne funksjonen kan du knytte 1099-verdiene for en leverandør til hovedkontoen i regnskapsdistribusjonen, i stedet for standardkontoen i leverandørposten.
 
 Hvis du vil ha mer informasjon, kan du se [Definere leverandører for 1099-rapportering](../localizations/noam-usa-set-up-vndrs-1099-rprtg.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

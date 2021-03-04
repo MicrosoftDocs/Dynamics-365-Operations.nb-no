@@ -52,3 +52,6 @@ Denne fremgangsmåten viser hvordan du forhindrer at fysisk lagerbeholdning blir
 2. Klikk **Ja**.
 3. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

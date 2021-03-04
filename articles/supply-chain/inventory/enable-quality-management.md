@@ -504,3 +504,6 @@ Du må definere en kvalitetstilknytning for hver variasjon i en forretningsprose
 [Avviksstyring](enable-nonconformance-management.md)
 
 [Kvalitetsstyring for lagerprosesser](quality-management-for-warehouses-processes.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -64,3 +64,6 @@ Arbeid for råvareplukking genereres under frigivelsen. Arbeid genereres bare fo
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

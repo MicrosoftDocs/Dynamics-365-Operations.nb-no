@@ -230,3 +230,6 @@ Du kan også bekrefte at transaksjonsrelasjoner er oppdatert på følgende måte
 - **Del antall til ny last**-alternativet fungerer også når noen av de gjenværende arbeidshodene har statusen *Pågår*. Derfor kan du fremdeles bruke funksjonaliteten selv om arbeiderne allerede kjører plukkordrene.
 - Hvis du velger **Avbryt ikke-fullført antall** mens det er gjenstående arbeid som har statusen *Åpen* eller *Pågår*, får du følgende feilmelding: Kan ikke avbryte gjenstående antall for last. Arbeid finnes for lasten.
 - Hvis du velger **Avbryt ikke-fullført antall** når det ikke er noe gjenstående arbeid, men det finnes frigitte lastlinjer, får du følgende feilmelding: Kan ikke bekrefte leveringen for lasten fordi antallet for varer overskrider prosenten som er definert for underlevering. For å unngå feilen kan du angi **Underlevering**-prosent på den ikke-frigitte lastlinjen til 100 prosent. Ikke-frigitte linjer vil ikke bli flyttet til en ny last, men gjeldende last vil bli bekreftet med underlevering. I dette tilfellet kan du ikke frigi den opprinnelige ordren på nytt. Derfor må du også håndtere den på en annen måte.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

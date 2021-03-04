@@ -226,3 +226,6 @@ For å aktivere manuell utføring av en utsatt bilagsregistrering bør du legge 
     1. Velg oppsettet som skal oppdateres.
     2. Legg til en ny knapp, og angi **Fullfør bilagsregistreringsprosess**-knappeegenskapen.
     3. På siden **Distribusjonsplan** kjører du **1090**-jobben for å overføre endringene dine til kanaldatabasen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

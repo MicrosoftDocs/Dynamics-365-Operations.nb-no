@@ -103,3 +103,6 @@ Det utgående lageret, og plasseringen av en utsatt ressursgruppe fordeles vanli
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -68,3 +68,6 @@ Erstatningsordrer for varer opprettes vanligvis etter at et produkt er returnert
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -73,3 +73,6 @@ Denne oppgaveveiledningen hjelper deg med å opprette en leverandørfaktura fra 
 19. Klikk **Poster**.
 20. Lukk skjemaet. Legg merke til at bestillingen ikke lenger er oppført som mottatt, men ikke fakturert.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

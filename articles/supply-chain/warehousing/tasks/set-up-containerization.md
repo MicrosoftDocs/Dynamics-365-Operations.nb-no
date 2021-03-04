@@ -81,3 +81,6 @@ Dette emnet beskriver hvordan du automatiserer containerbruken av laster i Lager
 11. Angi eller velg en verdi i feltet **Feltvalg**.
 12. Velg **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -185,3 +185,6 @@ namespace TalentODataPoC
 ```
 
 Når du har hentet et tilgangstoken, sender du tokenet i godkjenningshodet som et bærertoken med hver forespørsel som du sender til data-API-et, som beskrevet ovenfor.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

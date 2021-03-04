@@ -52,3 +52,6 @@ Denne veiledningen viser hvordan du oppretter en forespørsels og knytter den ti
 8. Klikk OK.
 9. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

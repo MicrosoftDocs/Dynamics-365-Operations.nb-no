@@ -63,3 +63,6 @@ Følgende parametere er tilgjengelige:
 
 - **Antall ganger å forsøke automatisk samsvar** – Velg antall ganger som systemet skal prøve å samsvare produktkvitteringer med en fakturalinje før prosessen mislykkes. Når det angitte antallet forsøk er nådd, fjernes fakturaen fra automatiseringsbehandlingen.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

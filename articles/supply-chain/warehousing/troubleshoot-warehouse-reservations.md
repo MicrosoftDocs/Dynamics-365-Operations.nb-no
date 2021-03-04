@@ -78,3 +78,6 @@ Hvis du imidlertid bruker en vare som har et parti under-reservasjonshierarki (m
 Denne virkemåten er standard. Hvis du legger en dimensjon til over **Lokasjon**-dimensjonen i reservasjonshierarkiet, må den angis før frigivelse til lageret. Microsoft har evaluert dette problemet, og har funnet ut at det er en funksjonsbegrensning under frigivelser til lageret fra arbeidsområdet for lastplanlegging. Delvise antall kan ikke frigis hvis én eller flere dimensjoner over **Lokasjon** ikke er angitt.
 
 Hvis du vil ha mer informasjon, kan du se [Fleksibel dimensjonsreservasjonspolicy for lagernivå](flexible-warehouse-level-dimension-reservation.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

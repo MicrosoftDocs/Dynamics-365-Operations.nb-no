@@ -61,3 +61,6 @@ I tillegg til finansrapporter kan du bruke følgende rapporter til å vise økon
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

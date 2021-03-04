@@ -49,3 +49,6 @@ Dette skjemaet oppdaterer avskrivningskonvensjonen for en angitt gruppe anleggsm
 15. Klikk OK.
     *  Resultatene av prosessen vises i masseoppdateringsrapporten.     
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

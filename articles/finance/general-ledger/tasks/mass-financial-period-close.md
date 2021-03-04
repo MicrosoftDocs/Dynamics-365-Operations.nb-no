@@ -42,3 +42,6 @@ Dette emnet viser hvordan du setter en periode på vent eller permanent lukker e
 11. Velg **Oppdater periodestatus** og sett statusen til **På vent**, **Åpen** eller **Lukket permanent**. **Åpen** angir perioden det kan posteres til, gitt at brukeren har tilgang. **På vent** betyr at perioden ikke kan posteres til, men perioden kan åpnes på nytt. **Lukket permanent** betyr at perioden er lukket og aldri kan åpnes. Justeringer kan ikke posteres. Vi anbefaler ikke å sette en periode til **Lukket permanent** før alle justeringer og revisjoner er fullført.  
 12. Velg **Oppdater**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -119,3 +119,6 @@ I dette eksemplet skal du bruke opprettede ER-konfigurasjoner for eksempelfirmae
 23. Klikk OK.
     * Se gjennom de opprettede utdataene. Utdataene er generert som et Word-dokument med innebygde bilder som presenterer firmalogoen, signaturen til en autorisert person og den valgte teksten til vannmerket.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -80,3 +80,6 @@ Når gruppeplukking brukes, er varebekreftelse avgjørende for å bekrefte varen
 1. Åpne oppsettskjemaet for arbeidsbekreftelse på et menyelement for mobilenhet: **Lagerstyring** \> **Lagerstyring** \> **Oppsett** \>  **Mobilenhet** \> **Menyelementer på mobilenheten**.
 
 1. Åpne **Arbeidsbekreftelsesoppsett** fra menyelementet på mobilenheten. Med alternativet **Produktbekreftelse** kan du bekrefte hver del av beholdningen fra den mobile enheten når den skannes.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

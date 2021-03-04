@@ -56,3 +56,6 @@ Denne prosedyren fokuserer på å erstatte en eksisterende kanban-regel med en n
 1. Sett Maksimalt antall til 100.
     * Vis hurtigfanen Antall hvis du vil vise Maksimalt antall-feltet. Hvis du endrer det maksimale antallet til 100, kan opptil 100 Kanbaner behandles.    Dette er det siste trinnet i oppgaven.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

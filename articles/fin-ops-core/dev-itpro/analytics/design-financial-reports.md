@@ -197,3 +197,6 @@ I denne øvelsen skal du opprette en ny rapport. Rapporten er en side-ved-side-r
 [Vis finansrapporter](../../../finance/general-ledger/view-financial-reports.md)
 
 [Dynamics 365 Finance-blogg](https://community.dynamics.com/365/financeandoperations/b/dynamics-365-finance-blog)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -58,3 +58,6 @@ På siden **Aktive lån av gjenstander** kan du vise en liste over alle lånegje
 3. Angi dato og klokkeslett i feltet **Returnert**.
 4. Velg **OK**.
 5. Oppdater listesiden **Aktive lån av gjenstander**, og legg merke til at lånet av gjenstander ikke lenger vises i listen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -154,3 +154,6 @@ Du kan bruke følgende innstillinger hvis materialene alltid skal trekkes fra be
 | Ferdigmeld |   Automatisk stykklisteforbruk    | <strong>Aldri</strong>  |
 | Ferdigmeld | Oppdater ferdig rapport online | <strong>Status</strong> |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

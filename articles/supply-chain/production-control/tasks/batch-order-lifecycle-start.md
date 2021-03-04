@@ -92,3 +92,6 @@ Forutsetningene for å kjøre prosedyren med et annet datasett er et frigitt pro
 12. Lukk siden.
 13. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -56,3 +56,6 @@ Med betingede spørsmål kan du angi hvilket oppfølgingsspørsmål som skal vis
 10. I treet velger du Spørsmål\Jeg betales rettferdig for arbeidet jeg gjør.
     * Legg merke til at spørsmålstreet er oppdatert for å vise avhengigheten.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

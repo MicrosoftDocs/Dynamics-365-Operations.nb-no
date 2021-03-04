@@ -39,3 +39,6 @@ Denne registreringen bruker demonstrasjonsfirmaet DEMF.
 6. I feltet **Kort beskrivelse** skriver du inn en kort beskrivelse for intern bruk.
 7. Klikk **Lagre**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

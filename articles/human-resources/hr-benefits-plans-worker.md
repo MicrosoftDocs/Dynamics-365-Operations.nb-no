@@ -49,3 +49,6 @@ Du kan opprette fordelsplaner for arbeidere i Microsoft Dynamics 365 Human Resou
    | Planer | Hurtigkategorien Planer inneholder planene som oppfyller filtervilkårene du angav. De relevante konfigurasjonsalternativene som ble angitt av personalavdelingen, og registreringsvalgene som ble valgt av de ansatte, inkluderes på hver linje. Kvalifisert-feltet angir om det er en valideringskonflikt med planvalget. |
 
 4. Velg **Lagre**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -101,3 +101,6 @@ Hvis den samme rapporten behandles for **Litware Retail**-kunden 17. desember 20
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Tekstfunksjoner](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

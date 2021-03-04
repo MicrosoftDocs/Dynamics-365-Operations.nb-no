@@ -48,3 +48,6 @@ Denne prosedyren hjelper deg gjennom trinnene med å bruke variantvekter for å 
 17. Sett verdien for Antall til 1000.
 18. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

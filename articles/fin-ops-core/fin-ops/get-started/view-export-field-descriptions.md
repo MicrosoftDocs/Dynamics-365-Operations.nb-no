@@ -107,3 +107,6 @@ Hvis du vil ha informasjon om de forskjellige måtene å finne sider, kan du se 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Tilpasse feltbeskrivelser](../../dev-itpro/user-interface/customize-field-help.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

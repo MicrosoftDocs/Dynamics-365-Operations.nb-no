@@ -109,3 +109,6 @@ Hvis du vil at arbeidere skal kunne utføre denne endringen, kan du opprette et 
 - **Vis beholdningsstatus:** *Ja*
 
 Du kan angi andre felter på siden slik du ønsker.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -63,3 +63,6 @@ Ferdig-trekkprinsippet angir at materiale automatisk brukes når produksjonsordr
 
 ### <a name="available-at-location"></a>Tilgjengelig på lokasjon
 Tilgjengelig på lokasjon-trekkprinsippet angir at materialene automatisk brukes når de er registrert som plukket for produksjon. Materialet er registrert som plukket fra plassering når arbeidet for råvareplukking er fullført, eller når materialet er tilgjengelig på produksjonsinnleveringsstedet og materiallinjen er frigitt til lageret. Plukklisten som genereres under prosessen blir postert i en satsvis jobb. Dette prinsippet er relevant hvis du for eksempel har mange plukkaktivitetene mot én produksjonsordre. I dette tilfellet trenger du ikke å oppdatere plukklisten manuelt, og du kan få et oppdatert bilde av VIA-balansen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

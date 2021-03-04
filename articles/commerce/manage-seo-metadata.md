@@ -95,3 +95,6 @@ Hvis du vil endre sidemetadata, følger du disse trinnene.
 [Supplere en kategorimålside](enrich-category-page.md)
 
 [Kontrollere tilgjengelighet for sideinnhold](verify-accessibility.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

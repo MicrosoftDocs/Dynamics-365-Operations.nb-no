@@ -47,3 +47,6 @@ Du kan også opprette strekkoder manuelt eller automatisk. For å opprette strek
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Definere strekkodemasker](set-up-bar-code-masks.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

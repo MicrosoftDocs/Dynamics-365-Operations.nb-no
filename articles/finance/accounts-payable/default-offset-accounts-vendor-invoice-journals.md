@@ -98,3 +98,6 @@ Bruk tabellen nedenfor for å bestemme hvor du vil tilordne standardkontoer for 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

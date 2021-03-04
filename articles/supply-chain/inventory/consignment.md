@@ -103,3 +103,6 @@ Hvis leverandørene bruker grensesnittet for leverandørsamarbeid, kan de bruke 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

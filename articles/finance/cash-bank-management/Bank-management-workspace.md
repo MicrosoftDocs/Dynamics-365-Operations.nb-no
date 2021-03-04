@@ -64,3 +64,6 @@ Fra delen **Beslektet informasjon** kan du åpne **Økonomijournal**-siden for �
 -   Saldo etter valuta
 
 Du kan vise bankanalyse på tvers av alle firmaer fra arbeidsområdet **Kontantstrømoversikt – alle firmaer**. Hvis du vil ha mer informasjon, kan du se [Power BI-innholdet Kontantstrømoversikt](Cash-Overview-Power-BI-content.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

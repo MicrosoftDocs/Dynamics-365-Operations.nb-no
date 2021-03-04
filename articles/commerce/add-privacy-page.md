@@ -109,3 +109,6 @@ Fragmentet kan nå refereres i malen for andre områdesider. Når det refereres 
 [Informasjonskapselsamsvar](cookie-compliance.md)
 
 [Erstatte bruker-IDer knyttet til sporede innholdsendringer](replace-IDs-tracked-changes.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

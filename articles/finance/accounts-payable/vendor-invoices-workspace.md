@@ -117,3 +117,6 @@ Tabellen nedenfor viser visuaiseringene som er tilgjengelig på hver rapportside
 | Fakturaer som ikke ble importert | <ul><li>Fakturaer som ikke ble importert</li><li>Fakturaer som ikke ble importert av firma</li></ul> |
 | Årsaker til automatiseringsfeil | <ul><li>Fakturaer som mislyktes</li><li>Fakturaer som mislyktes av firma</li><li>Fakturaer som mislyktes av leverandørgruppe</li></ul> |
 | Arbeidsflytstatus                | <ul><li>Fakturaer i arbeidsflyt</li><li>Arbeidsflytforekomster for leverandfaktura</li><li>Tilordning per godkjenner</li><li>Arbeidsflyt for leverandørfaktura per firma</li><li>Gjennomsnittlig antall dager i arbeidsflyt etter godkjenner</li></ul> |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

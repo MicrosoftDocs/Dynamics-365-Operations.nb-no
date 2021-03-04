@@ -274,3 +274,6 @@ Hvis en enhet går tapt eller settes på spill, må du fjerne tilgangen til Supp
 1. Kontroller at klient-ID-en til appen samsvarer med klient-ID-en du noterte i trinn 2.
 1. Velg **Slett** på verktøylinjen.
 1. Velg **Ja** i bekreftelsesmeldingen som vises.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

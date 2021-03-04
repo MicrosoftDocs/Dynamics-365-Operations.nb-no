@@ -79,3 +79,6 @@ Etter at du har utformet alle fanene du trenger, kan du knytte dem til en konfig
 1. Fortsett å legge til flere faner etter behov.
 
 1. Bruk knappene **Flytt opp** og **Flytt ned** på verktøylinjen til å ordne fanene etter behov. Fanene blir vist fra venstre mot høyre i den rekkefølgen som vises i skjermbildet ovenfor (fanen øverst vises til venstre).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

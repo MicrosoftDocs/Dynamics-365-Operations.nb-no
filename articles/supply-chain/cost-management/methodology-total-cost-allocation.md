@@ -62,3 +62,6 @@ Feltet **Kostnadsfordeling for biprodukt** på **Koprodukter**-siden er et oppli
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -206,3 +206,6 @@ GÃ¥ gjennom koden i `BankImport_RU`-klassen i `Application Suite`-modellen for Ã
 
 [API-endringer for ER-rammeverk for Application update 7.3](er-apis-app73.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -70,3 +70,6 @@ Denne fremgangsmåten viser hvordan du aktiverer lønnsprosessen for timeregistr
 7. Klikk Rediger.
 8. Angi eller velg en verdi i Lønnsavtale-feltet.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

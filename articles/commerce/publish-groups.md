@@ -155,3 +155,6 @@ Publiseringsgrupper-funksjonen støtter for øyeblikket bare webområdeinnhold. 
 [Oversikt over maler og oppsett](templates-layouts-overview.md)
 
 [Tilpasse områdenavigering](customize-site-navigation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

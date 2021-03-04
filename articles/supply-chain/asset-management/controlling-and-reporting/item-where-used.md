@@ -71,3 +71,6 @@ I skjermbildet nedenfor ser du et eksempel på en beregning for vare-der-brukt f
 
 ![Eksempel på beregning for vare-der-brukt](media/12-controlling-and-reporting.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

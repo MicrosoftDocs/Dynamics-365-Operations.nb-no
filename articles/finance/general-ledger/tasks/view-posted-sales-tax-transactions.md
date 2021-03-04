@@ -49,3 +49,6 @@ Dette emnet beskriver noen måter å vise posterte mva-transaksjoner på. Du kan
 2. Velg **Mva-kode** i handlingsruten.
 3. Velg **Postert merverdiavgift**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

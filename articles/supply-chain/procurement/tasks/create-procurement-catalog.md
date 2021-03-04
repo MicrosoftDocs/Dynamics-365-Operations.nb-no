@@ -66,3 +66,6 @@ Dette emnet forklarer hvordan du oppretter en innkjøpskatalog. Denne oppgaven v
 7. Velg **Tilføy til linjer**.
 8. Velg **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -61,3 +61,6 @@ Denne fremgangsmåten viser hvordan du vedlikeholder informasjon om søkere og s
 6. Klikk Lagre.
     * Etter at søknaden er lagret, kan du legge ved dokumenter til den, inkludert søkerens erfaring, priser og følgebrev.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

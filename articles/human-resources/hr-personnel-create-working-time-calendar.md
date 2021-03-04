@@ -43,3 +43,6 @@ Kalendere beskriver kapasitet og arbeidstid for operasjonsressurser. Denne artik
 12. Velg **OK**.
 13. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

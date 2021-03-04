@@ -87,3 +87,6 @@ Når du har fullført trinnene i [Definere standardbeskrivelser](#set-up-default
 2. Velg databasetabellen du vil legge til parameterdata i beskrivelsen fra, i **Referansetabell**-feltet.
 3. Velg feltet du vil legge til parameterdata i beskrivelsen fra, i **Referansefelt**-feltet.
 4. Gjenta trinn 1 til og med 3 hvis du vil legge til flere parametere.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -53,3 +53,6 @@ På **Dekningsgrupper**-siden kan du velge handlingsmeldingene som du vil at sys
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

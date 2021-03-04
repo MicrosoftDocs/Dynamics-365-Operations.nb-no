@@ -75,3 +75,6 @@ I det forrige eksemplet viste handlingssøk resultatene fra standardhandlingsrut
 ## <a name="action-search-vs-navigation-search"></a>Handlingssøk kontra navigasjonssøk
 
 Mens handlingssøk skal søke etter og kjøre handlinger på en side, er det en egen søkemekanisme for å finne og navigere til sider. Hvis du vil ha mer informasjon om denne funksjonen, kan du se artikkelen [Navigasjonssøk](navigation-search.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

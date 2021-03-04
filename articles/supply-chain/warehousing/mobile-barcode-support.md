@@ -35,3 +35,6 @@ Dynamics 365 Supply Chain Management – lagerappen har blitt testet med en rekk
 
 Som kunde anbefaler vi at du tester lagermobilappen for skanning på valgt maskinvare før du bestemmer deg for maskinvaren som du vil kjøpe.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

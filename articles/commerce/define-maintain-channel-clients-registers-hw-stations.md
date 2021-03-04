@@ -205,3 +205,6 @@ Aktiveringsrelatert tilleggsinformasjon inkluderer arbeideren som endret aktiver
 ### <a name="client-data-synchronization"></a>Klientdatasynkronisering
 
 Alle endringer i en klient på salgsstedet, unntatt endringer i statusen for enhetsaktivering, må synkroniseres til kanaldatabasen for å tre i kraft. Hvis du vil synkronisere endringer til kanaldatabasen, går du til **Detaljhandel og handel** &gt; **IT for detaljhandel og handel** &gt; **Distribusjonsplan**, og kjører den påkrevde distribusjonsplanen. For klientendringer må du kjøre distribusjonsplanene **Kasser** og **Kanalkonfigurasjon**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

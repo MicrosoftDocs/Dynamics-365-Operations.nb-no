@@ -37,3 +37,6 @@ Denne prosedyren hjelper med å frigi et produkt eller en produktstandard til é
 6. Klikk Neste.
 7. Klikk Finish.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

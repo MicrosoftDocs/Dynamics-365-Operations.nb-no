@@ -210,3 +210,6 @@ Som beskrevet tidligere i dette emnet kan attributene **Etikett** og **Beskrivel
 
 - [Oversikt over elektronisk rapportering](general-electronic-reporting.md)
 - [Funksjoner for elektronisk rapportering](er-formula-language.md#functions)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

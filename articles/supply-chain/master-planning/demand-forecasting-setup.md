@@ -102,3 +102,6 @@ I kategorien **Tilordningsnøkler** kan du angi parameterne **Prognosealgoritmep
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

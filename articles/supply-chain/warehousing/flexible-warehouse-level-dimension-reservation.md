@@ -854,3 +854,6 @@ Følgende tabeller inneholder en oversikt som viser hvordan systemet håndterer 
     - Plukking av overføringsordrer og råvarer
 
 - Regelen for konsolidering av containere for pakking etter direktivenhet har begrensninger. For ordreigangsatte reservasjoner anbefaler vi at du ikke bruker maler for containerbygging i tilfeller der **Pakk etter direktivenhet**-feltet er aktivert. I gjeldende utforming brukes ikke plasseringsdirektiver når det opprettes lagerarbeid. Derfor brukes bare den laveste enheten i enhetssekvensgruppen (beholdningsenheten) under bølgetrinnet containerbruk.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

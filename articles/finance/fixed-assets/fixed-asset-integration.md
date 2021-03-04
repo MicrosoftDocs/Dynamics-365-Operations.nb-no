@@ -95,3 +95,6 @@ Hvis du vil ha mer informasjon, se [Skaffe anleggsmidler ved hjelp av innkjøp](
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

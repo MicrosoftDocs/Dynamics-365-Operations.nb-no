@@ -52,3 +52,6 @@ Dette er den andre prosedyren av fem, som illustrerer leverandørbetalingsproses
 4. Angi eller velg en verdi i Bankkonto-feltet.
 5. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

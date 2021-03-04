@@ -56,3 +56,6 @@ Rollen til denne oppgaveveiledningen er kasserer. Denne oppgaven bruker demonstr
 16. Lukk siden.
 17. Velg kategorien Etterdaterte sjekker.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

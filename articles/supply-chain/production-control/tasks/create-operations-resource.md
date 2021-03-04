@@ -81,3 +81,6 @@ En operasjonsressurs utfører aktivitetene for et prosjekt eller en produksjonsp
 4. Angi eller velg en verdi i Innleveringssted-feltet.
     * Angi lagerlokasjonen der operasjonsressursen forbruker materialer.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

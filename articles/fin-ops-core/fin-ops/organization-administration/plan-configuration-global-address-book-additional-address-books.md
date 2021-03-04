@@ -57,3 +57,6 @@ Når du oppretter den globale adresseboken, kan du opprette flere adressebøker 
 **Beslutning:**
 
 - Hvor mange flere adressebøker vil du opprette?
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

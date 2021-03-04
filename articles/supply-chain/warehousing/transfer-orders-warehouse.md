@@ -53,3 +53,6 @@ Du må også definere leveringstiden for transport mellom lagrene på siden **Tr
 2. I **Mottakspunkt**-feltet velger du **lager**.
 3. Velg **Leverende lager**, **Mottakende lager** og **Transportdager**. 
 4. (Valgfritt) Du kan også angi transporttiden, avhengig av leveringsmåten, under **Transportdager per leveringsmåte**-fanen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

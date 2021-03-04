@@ -45,3 +45,6 @@ Dette er den første av fem oppgaver, som illustrerer leverandørbetalingsproses
     * Hvis Importer-knappen ikke er tilgjengelig, betyr det at konfigurasjonen allerede er importert.  
 9. Klikk Ja.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

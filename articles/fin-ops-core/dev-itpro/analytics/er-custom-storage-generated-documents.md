@@ -175,3 +175,6 @@ public DocuRef insertFile(
 
 - [Mål for elektronisk rapportering (ER)](electronic-reporting-destinations.md)
 - [Startside med utvidelsesmuligheter](../extensibility/extensibility-home-page.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

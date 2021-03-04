@@ -114,3 +114,6 @@ Du kan kopiere finansdimensjoner til dokumenthoder eller enkeltlinjer i en kjøp
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -60,3 +60,5 @@ Når du har opprettet en permisjons- og fraværsplan i Dynamics 365 Human Resour
 
 - [Oversikt over permisjon og fravær](hr-leave-and-absence-overview.md)
 - [Opprette en permisjons- og fraværsplan](hr-leave-and-absence-plans.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

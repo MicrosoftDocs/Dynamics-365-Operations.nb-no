@@ -125,3 +125,6 @@ Denne virkemåten er forventet. Fordi rekvisisjoner ikke alltid er godkjent, ska
 
 Du kan opprette forretningsavtaler for et hvilket som helst svar på en tilbudsforespørsel, uansett om de ble godtatt eller avvist. Hvis du vil ha mer informasjon, se [Oversikt over tilbudsforespørsler](request-quotations.md).
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

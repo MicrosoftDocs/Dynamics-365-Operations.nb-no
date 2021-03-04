@@ -37,3 +37,6 @@ Denne prosedyren hjelper med å laste ned en forhåndsdefinert maskinvarestasjon
 5. Finn og velg ønsket post i listen.
 6. Klikk Last ned.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -90,3 +90,6 @@ Følgende tabell viser eksempler på hvordan ulike innstillinger for et frigitt 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Kjøpsavtaler](../../procurement/purchase-agreements.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

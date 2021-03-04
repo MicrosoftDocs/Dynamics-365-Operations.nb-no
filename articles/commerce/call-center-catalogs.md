@@ -101,3 +101,6 @@ I **Kataloger**-kategorien er også alternativer for konfigurasjon av en **Betal
 ## <a name="additional-notes"></a>Tilleggsmerknader
 
 For øyeblikket, når en kildekode-ID brukes for en salgsordre i telefonsenteret, brukes den til å drive priser, kampanjer, skript og mersalg/kryssalg som er katalogspesifikke. Systemet vil ikke forby eller hindre et produkt som ikke er i katalogen, i å bli bestilt på salgsordren. Hvis en vare er bestilt som ikke er en del av katalogen, bruker systemet først **Prisgruppen** som er definert i telefonsenterkanalen (**Retail og Commerce** \> **Kanaler** \> **Telefonsentre** \> **Alle telefonsentre**), for varepris eller kampanjer. Hvis det ikke finnes noen bestemt kanalpris, brukes basissalgsprisen for varen.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

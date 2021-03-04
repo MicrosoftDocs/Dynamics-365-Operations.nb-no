@@ -227,3 +227,5 @@ Om nødvendig kan du forkaste en kandidat etter å ha ansatt vedkommende. En kan
 [Konfigurere virtuelle enheter for Common Data Service](hr-admin-integration-common-data-service-virtual-entities.md)<br>
 [Organisere arbeidsstyrken](hr-personnel-departments-jobs-positions.md)<br>
 [Definere komponentene for en jobb](hr-personnel-jobs.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

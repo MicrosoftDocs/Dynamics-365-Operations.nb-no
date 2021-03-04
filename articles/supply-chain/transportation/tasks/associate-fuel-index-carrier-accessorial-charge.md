@@ -78,3 +78,6 @@ Denne håndboken beskriver hvordan du oppretter en tilbehørstilordning, transpo
 6. Klikk koblingen i den valgte raden i listen.
 7. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

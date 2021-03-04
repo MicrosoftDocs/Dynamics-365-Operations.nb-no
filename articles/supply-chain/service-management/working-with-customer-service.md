@@ -49,3 +49,6 @@ Emnene i denne delen gir en oversikt over forretningsprosessene for kundeservice
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

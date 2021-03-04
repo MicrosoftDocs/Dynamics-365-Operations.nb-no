@@ -53,3 +53,6 @@ Med denne endringen er det lagt til **Prøveperiode** og **Kalender** på siden 
 
 ### <a name="platform-update-23-for-finance-and-operations"></a>Plattform Update 23 for Finance and Operations
 Mindre feilrettinger er inkludert som en del av Platform Update 23 for Finance and Operations. Hvis du vil ha mer informasjon, se [Hva er nytt eller endret i Dynamics 365 Finance and Operations plattformoppdatering 23 (januar 2019)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-23). 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

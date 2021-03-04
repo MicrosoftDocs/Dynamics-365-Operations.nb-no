@@ -146,3 +146,6 @@ Arbeidere kan åpne et dokument som er knyttet til en jobb, ved å velge **Instr
 1. Arbeideren jobber seg gjennom veiledningen for å lære oppgaven.
 
 Hvis du vil ha mer informasjon om hvordan du oppretter, tilordner og bruker veiledninger for HoloLens, kan du se [Formidle veiledninger for blandet virkelighet for arbeidere i produksjonen](instruction-guides-in-production-overview.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

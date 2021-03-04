@@ -62,3 +62,6 @@ Denne fremgangsmåten hjelper med å selge et kontinuitetsprogram og behandle ti
     * Angi salgsordrenummeret du noterte deg tidligere i denne fremgangsmåten. Dette vil holde behandlingstiden nede på et minimum for denne prosedyren. Salgsordre-feltet er valgfritt – du kan behandle alle ordrer for et hvilken som helst program.  
 21. Klikk OK.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

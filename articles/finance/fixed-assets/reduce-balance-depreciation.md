@@ -85,3 +85,6 @@ Ifølge Saldoverdi-metoden beregnes 30 prosent av avskrivningsgrunnlaget (netto 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

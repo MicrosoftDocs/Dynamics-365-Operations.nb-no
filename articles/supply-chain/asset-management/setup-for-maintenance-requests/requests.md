@@ -42,3 +42,6 @@ Du kan definere ulike typer forespørsler som skal brukes i firmaet. Vedlikehold
 Illustrasjonen nedenfor viser et eksempel på listesiden **Alle vedlikeholdsanmodninger**.
 
 ![Listesiden Alle vedlikeholdsforespørsler](media/01-setup-for-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

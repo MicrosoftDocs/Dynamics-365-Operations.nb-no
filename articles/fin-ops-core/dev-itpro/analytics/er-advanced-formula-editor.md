@@ -171,3 +171,6 @@ Redigeringsprogrammet støttes for øyeblikket i følgende nettlesere:
 - [Oversikt over elektronisk rapportering (ER)](general-electronic-reporting.md)
 - [Formeldesigner i elektronisk rapportering](general-electronic-reporting-formula-designer.md)
 - [Monaco-redigeringsprogram](https://microsoft.github.io/monaco-editor)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -144,3 +144,6 @@ Gjenstående metadata, for eksempel lokasjon, vises ikke på oppgavesiden, men v
 --------
 
 [Oversikt over Installere og konfigurere lagerappen](install-configure-warehousing-app.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

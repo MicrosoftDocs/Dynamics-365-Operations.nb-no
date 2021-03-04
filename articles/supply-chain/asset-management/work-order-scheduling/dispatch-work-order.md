@@ -60,3 +60,6 @@ Figuren nedenfor viser et eksempel på fordelingsvalg i dialogboksen **Planlegge
 [!NOTE]
 Hvis du vil slette tidsplanen for en arbeidsordre, velger du arbeidsordren i **Alle arbeidsordrer**, og deretter klikker du på **Slett tidsplan** i kategorien **Generelt**. Husk å oppdatere livsløpstilstanden for arbeidsordren manuelt hvis du sletter tidsplanen.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

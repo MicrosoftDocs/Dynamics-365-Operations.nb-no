@@ -43,3 +43,6 @@ Denne prosedyren viser hvordan du bruker av bilagstransaksjonsforespørsler for 
 12. Klikk på **Opprinnelig dokument** i handlingsruten.
 13. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

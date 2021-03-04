@@ -58,3 +58,6 @@ Denne prosedyren beskriver hvordan én enkelt arbeider kan registreres i én ell
 14. Klikk koblingen i den valgte raden i listen.
 15. På denne siden kan du se hvilke ansatte som er registrert i fordelen, i tillegg til ansatte som ikke er registrert.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

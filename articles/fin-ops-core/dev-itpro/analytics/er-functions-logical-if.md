@@ -69,3 +69,6 @@ Hvis den første og andre verdien er verdier for datatypen *Container (post)* el
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Logiske funksjoner](er-functions-category-logical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

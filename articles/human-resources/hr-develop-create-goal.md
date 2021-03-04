@@ -58,3 +58,6 @@ Du kan opprette mål, legge til aktiviteter i mål, spore målinger og koble må
     * Det finnes ofte flere mål som er de samme eller ligner for gruppemedlemmer eller alle ansatte.     HR-administratorer eller ledere kan opprette målgrupper som inneholder én eller flere målmaler. Du kan legge til mål fra en målgruppe, og deretter endre dem slik at det samsvarer med tidslinjene.  
     * Når du oppretter en vurdering, kan du legge til mål i vurderingen. Se oppgaveveiledningen for vurderinger for å se hvordan du kan legge til mål i vurderingene.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

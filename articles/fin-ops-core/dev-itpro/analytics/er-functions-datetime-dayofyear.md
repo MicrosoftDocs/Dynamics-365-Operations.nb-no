@@ -59,3 +59,6 @@ Den resulterende numeriske verdien.
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Dato- og klokkeslettfunksjoner](er-functions-category-datetime.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -89,3 +89,6 @@ En *parallellaktivitet* er et arbeidsflytelement som omfatter to eller flere arb
 ### <a name="subworkflow"></a>Underarbeidsflyt
 
 En *underarbeidsflyt* er en arbeidsflyt som kjøres i en annen arbeidsflyt.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

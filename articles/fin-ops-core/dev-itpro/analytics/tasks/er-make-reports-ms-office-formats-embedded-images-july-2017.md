@@ -90,3 +90,6 @@ For å fullføre trinnene i denne prosedyren må du først fullføre prosedyren 
  30. Velg Ja i feltet Tillat oppretting av forhåndsmerknader for inaktive bankkontoer.  
  31. Klikk Lagre.  
  32. Lukk siden.  
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -40,3 +40,6 @@ Hvis du vil vite mer om denne funksjonen, kan du spille av settet med oppgavevei
 - [ER-datamodellkonfigurasjon: Intrastat (modell)](https://go.microsoft.com/fwlink/?linkid=849038)
 - [ER-modelltilordningskonfigurasjon: Intrastat (tilordning)](https://go.microsoft.com/fwlink/?linkid=849038)
 - [ER-formatkonfigurasjon: Intrastat (format)](https://go.microsoft.com/fwlink/?linkid=849038)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

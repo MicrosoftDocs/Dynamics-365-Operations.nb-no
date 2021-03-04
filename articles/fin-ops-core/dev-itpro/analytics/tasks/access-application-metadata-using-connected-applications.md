@@ -113,3 +113,6 @@ De følgende trinnene forklarer hvordan en RCS-bruker (Regulatory Configuration 
 11. Lukk siden. 
 
 Når du må evaluere denne modelltilordningen ved å bruke metadata for en annen versjon av programmet, registrerer du et nytt tilkoblet program, tilordner det til denne modelltilordningen og validerer det mot de nye metadataene.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -51,3 +51,6 @@ Denne oppgaven bruker demonstrasjonsfirmaet USMF.
 18. Velg valutaen for gebyret i **Gebyrvaluta**-feltet. Dette er valutaen som gebyret skal opprettes i.  
 19. Klikk **Lagre**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

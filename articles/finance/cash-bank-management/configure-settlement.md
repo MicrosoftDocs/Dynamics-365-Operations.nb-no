@@ -67,3 +67,6 @@ Hvis du vil unngå ekstra regnskapsoppføringer, debet og kreditt til samme fina
 
 -   Organisasjoner bruker ofte faste dimensjoner til å nullfylle en finansdimensjon som ikke er nødvendig. Dette er vanligvis tilfelle for balansekontoer, for eksempel leverandører/kunder. Kontostrukturer kan brukes til å ikke spore finansdimensjoner som vanligvis nullfylles.  Du kan fjerne finansdimensjonen for balansekontoer og dermed eliminere behovet for å bruke faste dimensjoner.
 -   Hvis organisasjonen din krever faste dimensjoner på kunder/leverandører-hovedkontoen, må du finne en måte å legge den faste dimensjonen til betalingen som standard, slik at den faste dimensjonsverdien lagres på leverandørtransaksjonen for betalingen. Dette gjør at systemet kan rekonstruere kunde/leverandør-hovedkontoen for å inkludere de faste dimensjonsverdiene. Den faste dimensjonsverdien kan defineres som en standard på enten leverandører eller journalnavnet for betalingsjournalen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

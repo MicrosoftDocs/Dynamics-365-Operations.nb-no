@@ -64,3 +64,6 @@ Du kan også kopiere leverandører ved hjelp av søkefunksjonen for mva-organisa
 
 1. Alternativet **Kopier leverandør** vises. Dette alternativet er satt til **Nei** som standard. Hvis du vil kopiere leverandør til gjeldende juridisk enhet, setter du alternativet til **Ja**.
 2. Velg **Velg**. Den nye leverandøren opprettes.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

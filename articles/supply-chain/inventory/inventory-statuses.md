@@ -65,3 +65,6 @@ Du kan endre lagerstatusene enten ved hjelp av siden **Beholdning etter lokasjon
 > - På siden **Beholdning etter lokasjon** kan du gruppere linjer basert på viste dimensjoner, ved hjelp av **Vis dimensjoner**-knappen, og endre statusen for de valgte linjene.
 > - På siden **Beholdning etter lokasjon** kan du velge flere poster og deretter bruke **knappen Beholdningsstatusendring** til å endre alle samtidig.
 > - I den periodiske oppgaven **Beholdningsstatusendring** kan du filtrere etter sporingsdimensjoner.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

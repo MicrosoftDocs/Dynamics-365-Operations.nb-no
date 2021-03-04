@@ -41,3 +41,6 @@ Dynamics 365 Human Resources bruker årsaks koder til å forklare hvorfor en ans
    | **Beskrivelse** | En beskrivelse av årsakskoden. |
 
 4. Velg **Lagre**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

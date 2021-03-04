@@ -408,3 +408,6 @@ Nå kan du plukke salgsordre 2. Blokkeringen for den ble fjernet da etter fyllin
 - Du kan manuelt overstyre tilgjengeligheten av etterfyllingsarbeid for hvert arbeidshode fra siden **Arbeidsdetaljer** hvis du vil.
 - Når systemet angir tilgjengeligheten for etterfyllingsarbeid, vurderes all beholdning som allerede finnes på lokasjonen før noe som helst arbeid fullføres.
 - Hver del av salgsordrearbeid er koblet til et bestemt etterfyllingsarbeid. Det finnes ingen tilsvarende funksjonalitet for tilgjengelighet av salgsarbeid.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

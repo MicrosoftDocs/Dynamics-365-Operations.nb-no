@@ -78,3 +78,6 @@ Når du har bokført forbruk på arbeidsordrer, kan du skrive ut en forbruksrapp
 >[!NOTE]
 >Du kan også generere en [arbeidsordrerapport](../work-orders/work-order-report.md), som inneholder flere arbeidsordredetaljer.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

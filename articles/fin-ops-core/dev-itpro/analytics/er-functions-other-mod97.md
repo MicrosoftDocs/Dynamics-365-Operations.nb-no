@@ -55,3 +55,6 @@ Den resulterende tekstverdien.
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Andre funksjoner (spesifikke for forretningsområder)](er-functions-category-other.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

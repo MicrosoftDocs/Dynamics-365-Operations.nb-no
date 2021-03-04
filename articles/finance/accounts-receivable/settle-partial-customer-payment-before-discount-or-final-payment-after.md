@@ -111,3 +111,6 @@ Magnus endrer verdien i feltet **Bruk kontantrabatt** tilbake til **Normal**, fo
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -70,3 +70,6 @@ Du kan for eksempel definere hvem som skal foreta budsjettering, hva som skal bu
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

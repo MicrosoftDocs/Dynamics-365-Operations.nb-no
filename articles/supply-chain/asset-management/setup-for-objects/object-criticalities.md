@@ -62,3 +62,6 @@ Hvis du vil definere kritikalitet, må du først opprette kritikalitetstypene so
 - Kritikaliteten i en arbeidsordre beregnes på nytt hver gang en arbeidsordrelinje legges til eller slettes fra arbeidsordren.
 - Hvis en arbeidsordre inneholder flere arbeidsordrejobber, brukes alltid den høyeste kritikaliteten i henhold til **Faktor**-feltet på siden **Kritikalitetstyper** i arbeidsordren.
 - Vanligvis kan aktivakritikalitet endres over en periode. Kritikalitet kan påvirkes ved kjøp av nytt utstyr, saneringer, og så videre. Vurder å reevaluere aktivakritikalitetene med jevne mellomrom (for eksempel én gang per år eller hvert annet år) for å sikre at kritikalitetsdefinisjonene samsvarer med det gjeldende produksjonsoppsettet.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

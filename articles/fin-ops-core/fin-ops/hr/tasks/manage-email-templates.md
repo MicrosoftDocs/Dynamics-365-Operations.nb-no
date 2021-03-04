@@ -47,3 +47,6 @@ Du kan overføre informasjon fra databasen for organisasjonens til bokmerker i e
 8. Fortsett å skrive inn din e-postmelding, og sett inn bokmerkfeltene der du trenger dem.
 9. Velg **Lagre**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

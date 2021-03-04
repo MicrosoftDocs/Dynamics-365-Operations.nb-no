@@ -44,3 +44,6 @@ Dette emnet forklarer hvordan du godkjenner leverandører for bestemte innkjøps
 13. Velg **Nei** i feltet **Arv leverandører fra overordnet kategori**.
 14. Velg **Ja** i feltet **Arv leverandører fra overordnet kategori**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

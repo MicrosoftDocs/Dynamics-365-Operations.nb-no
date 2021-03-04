@@ -54,3 +54,6 @@ En fakturalinje vil bli utelatt fra den automatiserte behandlingen hvis en av f√
 - Verdien **Status for automatisert kvitteringssamsvar** for fakturalinjen **Mislyktes**.
 - Fakturaen er i bruk.
 - Fakturaen er i arbeidsflytsystemet.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

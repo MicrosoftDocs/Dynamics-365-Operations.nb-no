@@ -58,3 +58,6 @@ Når importen er fullført, må det tilordnes roller til brukerne.
 ## <a name="run-in-a-sandbox-environment"></a>Kjøre i et sandkassemiljø
 1. Velg **Satsvis import**.
 2. Velg **OK**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

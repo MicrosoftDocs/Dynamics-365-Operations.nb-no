@@ -203,3 +203,6 @@ Hvis du vil ha mer informasjon om hvordan du konfigurerer e-post i Dynamics 365 
 [Definere e-postkvitteringer](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-email-receipts)
 
 [Sende e-postkvitteringer fra Modern POS (MPOS) ](email-receipts.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

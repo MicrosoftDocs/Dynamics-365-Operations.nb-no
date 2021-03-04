@@ -58,3 +58,6 @@ Når du genererer rapporten, er følgende felt tilgjengelige. Du kan bruke disse
 Hvis du vil vise bare ikke-avgiftskontoer i rapporten, definerer du en filter betingelse, for eksempel en stjerne (\*), som vist i illustrasjonen nedenfor.
 
 ![Rapport som viser ikke-avgiftskontoer](media/taxspecperledgertrans.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

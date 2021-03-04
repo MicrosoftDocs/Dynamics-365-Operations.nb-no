@@ -51,3 +51,6 @@ Hvis en returforsendelse inneholder mindre enn hele antallet i en returordrelinj
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -65,3 +65,6 @@ En ny Common Data Service-løsning vil snart være tilgjengelig med følgende en
 [Oppdatere prosess](hr-admin-setup-update-process.md)</br>
 [Behandle funksjoner](hr-admin-manage-features.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

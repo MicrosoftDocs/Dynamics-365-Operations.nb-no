@@ -50,3 +50,6 @@ Denne prosedyren viser hvordan du setter opp en tilbehørstilordning. Dette gjø
 14. Angi et tall i Tilbehørsgebyr-feltet.
 15. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -73,3 +73,6 @@ Følg fremgangsmåten nedenfor hvis du vil konfigurere en grunnleggende arbeidsf
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

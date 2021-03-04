@@ -36,3 +36,6 @@ Når du aktiverer funksjonen for bekreftelse av egendefinert NF-e-sertifikat, ti
 Denne oppdateringen gjør det mulig å bruke en alternativ løsning for sertifikatvalideringen, noe som betyr at det er mulig å opprette sikker kommunikasjon.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

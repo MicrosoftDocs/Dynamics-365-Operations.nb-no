@@ -175,3 +175,6 @@ Ved hjelp av **Slett**-handlingen i registreringsforespørselen om potensiell le
 |         Godkjent         |                                                                               Leverandørforespørselen er godkjent.                                                                               |                                                                                                   Registreringsforespørselen for potensiell leverandør slettes, dataene som ble angitt i registreringsveiviseren for leverandøren, og leverandørforespørselen slettes.                                                                                                    |
 |         Avslått         |                                                                               Leverandørforespørselen er avvist.                                                                               |                                                                                                   Registreringsforespørselen for potensiell leverandør slettes, dataene som ble angitt i registreringsveiviseren for leverandøren, og leverandørforespørselen slettes.                                                                                                    |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

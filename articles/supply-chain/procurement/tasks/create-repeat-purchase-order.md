@@ -70,3 +70,6 @@ I stedet for å kopiere en hel ordre, er det mer vanlig å opprette en ny bestil
 4. Velg linjen for den ønskede bestillingen. Legg merke til at linjen med enkeltordren i denne bestillingen også er valgt.  
 5. Velg **OK**. Den ekstra ordrelinjen er lagt til bestillingen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

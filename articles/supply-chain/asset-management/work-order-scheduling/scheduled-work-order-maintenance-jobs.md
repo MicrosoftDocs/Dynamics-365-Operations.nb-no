@@ -52,3 +52,6 @@ Skjermbildet nedenfor viser et eksempel på siden **Planlagte vedlikeholdsjobber
 
 ![Figur 1](media/07-work-order-scheduling.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

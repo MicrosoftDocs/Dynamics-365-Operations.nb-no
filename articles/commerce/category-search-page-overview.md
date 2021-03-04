@@ -111,3 +111,6 @@ Følgende komponenter er grunnleggende for en søkeresultatside:
 
 [Oversikt over kontobehandlingssider](quick-tour-account-management.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

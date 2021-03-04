@@ -48,3 +48,6 @@ Hvis du vil bruke denne funksjonen, aktiverer du **Egendefinerte koblinger Leder
 ## <a name="see-also"></a>Se også
 
 [Oversikt over selvbetjening for ansatte og ledere](hr-employee-manager-self-service-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

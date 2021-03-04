@@ -255,3 +255,5 @@ Sted-ID-en som brukes for arbeideradresse, er ikke en del av nummerserien. Når 
 Illustrasjonen nedenfor viser et eksempel på en tilordning av malen i Dataintegrator. 
 
 ![Tilordning av mal](./media/IntegrationMapping.png)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

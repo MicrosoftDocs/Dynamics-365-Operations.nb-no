@@ -64,3 +64,6 @@ Denne fremgangsmåten beskriver hvordan du bekrefter salgsordrer. Du vil bli vis
 11. Klikk **OK**.
 12. Klikk **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -195,3 +195,6 @@ For kunder som ennå ikke har aktivert funksjonen [Lagrede visninger](saved-view
 Når du tilpasser oppsettet av lagerdimensjoner på en side, tar du hensyn til innstillingene som er opprettet ved hjelp av alternativet **Visningsdimensjoner**. Du bruker eksempelvis tilpasning for å skjule en kolonne for lagerdimensjonen for partinummer, men kolonnen vises neste gang siden åpnes. Dette skjer fordi **Dimensjonsvisning**-innstillingene kontrollerer lagerdimensjonskolonnene som vises. Innstillingene for **Dimensjonsvisning** gjelder på tvers av alle sider og overstyrer tilpassede oppsett av lagerdimensjonsfelt på enkeltsider.
 
 I eksemplet ovenfor må du derfor fjerne lagerdimensjonen for partinummer som en del av alternativet **Visningsdimensjoner** for en side hvis du ikke vil at kolonnen for denne dimensjonen skal vises på denne siden.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

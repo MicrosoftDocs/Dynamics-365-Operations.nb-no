@@ -93,3 +93,6 @@ Bruk fremgangsmåten i dette emnet til å konfigurere SQL Server Reporting Servi
 13. Klikk **Avslutt** for å lukke **Reporting Services Configuration Manager**.
 
     [![Lukke Rreporting Services Configuration Manager](./media/ssrs-config-manager-14.png)](./media/ssrs-config-manager-14.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

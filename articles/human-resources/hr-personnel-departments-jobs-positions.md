@@ -165,3 +165,6 @@ Du kan endre informasjonen som er nevnt i den forrige tabellen for en stilling e
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

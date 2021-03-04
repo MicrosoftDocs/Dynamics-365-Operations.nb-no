@@ -53,3 +53,6 @@ Denne registreringen bruker demonstrasjonsfirmaet USRT.
     * Velg kontoen safedeponeringsbeløp skal posteres på.  
 8. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

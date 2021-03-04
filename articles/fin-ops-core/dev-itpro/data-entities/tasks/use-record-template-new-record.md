@@ -35,3 +35,6 @@ Denne prosedyren bruker firmaet USMF.
 3. Finn og velg ønsket post i listen.
 4. Klikk **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

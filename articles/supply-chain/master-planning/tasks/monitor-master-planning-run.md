@@ -127,3 +127,6 @@ Fargen vises bare på det laveste nivået i Gantt-diagrammet. Velg **Vis alle** 
 1. I rutenettet velger du raden der **Felt**-feltet er satt til **Varenummer**.
 1. Angi en verdi i **Kriterier**-feltet.
 1. Velg **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -44,3 +44,6 @@ Når du identifiserer et avvik, kan du det hende du må kontakte leverandøren h
 Hvis du vil ha mer informasjon, se [Undersøke/løse unntak](tasks/research-resolve-exceptions.md).
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

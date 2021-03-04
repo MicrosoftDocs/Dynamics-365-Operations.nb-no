@@ -153,3 +153,6 @@ Følg disse trinnene for å legge til linjer som representerer kredittgrensen so
 2. Velg sammenligningsoperatoren som definerer hvordan informasjonen om poengberegningsgruppen skal evalueres.
 3. Angi verdien som skal sammenlignes med verdien som angis for poengberegningsgruppen.
 4. Angi kredittgrensen som skal tilordnes hvis kundeinformasjonen samsvarer med verdien som er angitt for poengberegningsgruppen. Du oppretter for eksempel en automatisk kredittgrense for den **lave** poengberegningsgruppen. Hvis årene i virksomhet er en av poengberegningsgruppene, kan du definere en linje som tilordner en 100 000 kredittgrense hvis kunden har drevet virksomheten i fem år, og en annen linje som tilordner en 200 000 kredittgrense hvis kunden har drevet virksomheten i 10 år.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

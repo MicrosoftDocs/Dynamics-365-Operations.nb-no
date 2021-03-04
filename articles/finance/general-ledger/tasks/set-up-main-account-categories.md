@@ -42,3 +42,6 @@ Dette emnet forklarer hvordan du definerer hovedkontokategorier. Hovedkontokateg
 3. Aktiver eller deaktiver alternativet **Koblet** for å velge hovedkontoene.
 4. Velg **OK**.
 5. Velg **Ja**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

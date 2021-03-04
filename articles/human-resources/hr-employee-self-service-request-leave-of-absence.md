@@ -53,3 +53,6 @@ Du kan sende en permisjonsforespørsel og se statusen på forespørslene i Dynam
 ## <a name="see-also"></a>Se også
 
 [Suspender permisjon](hr-leave-and-absence-suspend-leave.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

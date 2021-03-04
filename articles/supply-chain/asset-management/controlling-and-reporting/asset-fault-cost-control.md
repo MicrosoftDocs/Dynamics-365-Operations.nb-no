@@ -62,3 +62,6 @@ Dette eksemplet viser beregning av kostnadskontroll for aktivumfeil.
     ![Figur 1](media/05-controlling-and-reporting.png)
 
 Se emnet [Feilstyring](../setup-for-work-orders/fault-management.md) hvis du vil ha informasjon om hvordan du definerer feil.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

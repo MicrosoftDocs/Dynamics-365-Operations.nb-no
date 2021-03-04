@@ -65,3 +65,6 @@ Følgende PowerBI.com-løsninger er tilgjengelige fra [Microsoft AppSource](http
 - Kostnadsstyring
 - [Finansresultat](financial-performance-power-bi-content-pack.md)
 - [Resultat for detaljhandelskanal ](retail-channel-performance-dashboard-power-bi-data.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

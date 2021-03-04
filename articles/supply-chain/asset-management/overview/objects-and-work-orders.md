@@ -55,3 +55,6 @@ Du må fylle ut flere trinn når du vil planlegge og kjøre en vedlikeholdsjobb 
 
 > [!NOTE]
 > Generelt, når du arbeider i Dynamics 365 Supply Chain Management og **Aktivastyring**-modulen, velger du **Ny** for å opprette en ny post, du velger **Rediger** for å oppdatere en eksisterende post, og du velger **Lagre** for å lagre nye eller redigerte data.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

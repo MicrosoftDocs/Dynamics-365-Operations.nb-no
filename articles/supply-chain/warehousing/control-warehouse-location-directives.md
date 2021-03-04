@@ -77,3 +77,6 @@ Lokasjonsdirektiver bestemmer *hvor* varene skal plukkes og *hvor* de skal plass
 
 - Video: [Dyp dykk i konfigurasjon av lagerstyring](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
 - Hjelpeemne: [Opprette lokasjonsdirektiver](create-location-directive.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

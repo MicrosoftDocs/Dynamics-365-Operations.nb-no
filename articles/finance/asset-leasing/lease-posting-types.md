@@ -154,3 +154,6 @@ Kontoen som velges for hver utgiftstype, debiteres når det genereres en betalin
 
 > [!NOTE]
 > Motkontoen velges på leienivå på linjene for betalingsplanen for fullbyrdelseskostnad. Denne motkontoen kan knyttes til leverandøren eller til en finanskonto.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

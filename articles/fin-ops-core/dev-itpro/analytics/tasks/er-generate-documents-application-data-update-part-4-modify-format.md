@@ -149,3 +149,6 @@ Trinnene i denne fremgangsmåten forklarer hvordan du utformer elektronisk rappo
 46. Lukk siden.
 47. Lukk siden.
 48. Lukk siden.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

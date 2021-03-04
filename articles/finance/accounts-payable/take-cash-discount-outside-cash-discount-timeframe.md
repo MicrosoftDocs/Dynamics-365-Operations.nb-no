@@ -91,3 +91,6 @@ Rabattinformasjonen vises nederst på siden **Utlign åpne transaksjoner**. Verd
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

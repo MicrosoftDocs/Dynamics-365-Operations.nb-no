@@ -63,3 +63,6 @@ Vi antar at organisasjonen vil begrense tilgang til data. Hvis sikkerhetsparamet
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 Hvis du vil ha mer informasjon om radnivåsikkerhet i Power BI, kan du se [Administrere sikkerhet for modellen i Power BI](https://powerbi.microsoft.com/documentation/powerbi-admin-rls/#manage-security-on-your-model).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

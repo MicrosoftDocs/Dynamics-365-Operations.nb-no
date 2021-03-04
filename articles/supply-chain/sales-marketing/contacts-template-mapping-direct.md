@@ -142,3 +142,6 @@ Følgende illustrasjoner viser et eksempel på en tilordning av malen i Datainte
 [Synkronisere salgsfakturahoder og -linjer direkte fra Supply Chain Management til Sales](sales-invoice-template-mapping-direct.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -53,3 +53,6 @@ Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten. Den
 3. Velg **OK**.
 4. Velg **Planlagte ordrer**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

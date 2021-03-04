@@ -58,3 +58,6 @@ Dette emnet viser hvordan du setter opp produktnummerterminologi for forhåndsde
 5. Angi eller velg en verdi i feltet **Produktvariantnummerterminologi**.
 6. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -94,3 +94,6 @@ Før du kan fullføre fremgangsmåten i dette emnet, må du fullføre følgende 
 [Mål for elektronisk rapportering (ER)](electronic-reporting-destinations.md)
 
 [Utsette kjøringen av XML-elementer i ER-formater](er-defer-xml-element.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

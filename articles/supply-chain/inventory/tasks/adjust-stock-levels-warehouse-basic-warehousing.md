@@ -60,3 +60,6 @@ Denne prosedyren hjelper deg gjennom prosessen med å opprette og postere en beh
 5. Lukk skjemaet.
 6. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

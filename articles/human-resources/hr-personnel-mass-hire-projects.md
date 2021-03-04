@@ -82,3 +82,6 @@ På siden **Masseansettelsesprosjekt** klikker du **Åpne prosjekt** eller **Luk
 </tr>
 </tbody>
 </table>
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -40,3 +40,6 @@ Noen ganger kan ledige stillinger fylles av kandidater som allerede er ansatte i
 9. Klikk Endre stilling.
     * Du kan også endre kompensasjon på dette tidspunktet. Hvis du ikke tilordner kompensasjon på dette tidspunktet, kan du endre den ved å gå til arbeiderskjemaet, velge kategorien Kompensasjon og velge Fast plan. Når du har valgt Endre stilling, oppdateres statusen for søknaden til Ansatt.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

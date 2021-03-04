@@ -127,3 +127,6 @@ Hvis du vil legge til en kassemodul på en ny side og angi de nødvendige egensk
 [Ordredetaljermodul](order-confirmation-module.md)
 
 [Gavekortmodul](add-giftcard.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

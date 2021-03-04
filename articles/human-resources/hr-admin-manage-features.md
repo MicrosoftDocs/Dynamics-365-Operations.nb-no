@@ -94,3 +94,5 @@ Ikke ta med personlige data (informasjon som kan identifisere deg) i tilbakemeld
 
 - [Hva er nytt i Human Resources](hr-admin-whats-new.md)
 - [Lanseringsplan for Dynamics 365 og Power Platform](https://docs.microsoft.com/dynamics365/release-plans/#pivot=products&panel=products1)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

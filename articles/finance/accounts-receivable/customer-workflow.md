@@ -60,3 +60,6 @@ Når du har minst én foreslått endring, vises det to ytterligere menyer i hand
     Statusen på siden endres til **Endringer som venter på godkjenning**.
 
 Arbeidsflyten følger standard arbeidsflytprosessen i appen. Godkjenneren er rettet mot siden **Kunde**, der endringene kan gjennomgås på siden **Foreslåtte endringer** og deretter velge **Arbeidsflyt \> Godkjenn** for å godkjenne arbeidsflyten. Når alle godkjenninger er fullført, oppdateres feltene med verdier som du har foreslått.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

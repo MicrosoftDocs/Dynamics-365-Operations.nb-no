@@ -110,3 +110,6 @@ Hvis du vil se gjennom historikken for produksjonsjobber som er behandlet på en
 ### <a name="manufacturing-hub-to-scale-unit-message-processor-job"></a>Jobben Behandle produksjonssenter til skaleringsenhet
 
 Jobben _Behandle produksjonssenter til skaleringsenhet_ behandler data fra senteret til skaleringsenheten. Denne jobben startes automatisk når arbeidsbelastningen for produksjonskjøring distribueres. Du kan imidlertid kjøre den manuelt når som helst ved å gå til **Produksjonskontroll \> Periodiske oppgaver \> Back-office-arbeidsbelastningsbehandling \> Behandle produksjonssenter til skaleringsenhet**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

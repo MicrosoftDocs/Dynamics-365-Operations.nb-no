@@ -207,3 +207,6 @@ Følgende illustrasjoner viser et eksempel på en tilordning av malen i Datainte
 ## <a name="related-topics"></a>Relaterte emner
 
 [Kundeemne til kontanter](prospect-to-cash.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

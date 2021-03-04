@@ -51,3 +51,6 @@ Denne fremgangsmåten beskriver hvordan du konverterer godkjente og behandlede k
     * Legg merke til at en transaksjon for negativt beløp, som representerer det totale rabattbeløpet, uten fakturareferanse er lagt til i kundesaldoen.   
 15. Klikk Avbryt.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

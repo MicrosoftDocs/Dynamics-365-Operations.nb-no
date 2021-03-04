@@ -73,3 +73,6 @@ Dette emnet forklarer hvordan du oppretter et dataintegratorprosjekt.
 ## <a name="privacy-notice"></a>Personvernerklæring
 
 Forhåndsversjoner (1) kan ha redusert personvern og færre sikkerhetstiltak enn Dynamics 365 Finance and Operations-tjenesten, (2) er ikke inkludert i serviceavtalen (SLA) for denne tjenesten, (3) må ikke brukes til å behandle personlige data eller andre data som er underlagt juridiske eller forskriftsmessige krav, og (4) har begrenset støtte.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

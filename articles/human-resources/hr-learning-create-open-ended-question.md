@@ -38,3 +38,6 @@ ms.locfileid: "4419959"
     * Inndatatypen tekst eller merknad brukes for åpne spørsmål.  
 6. I Tekst-feltet legger du inn spørsmålet.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

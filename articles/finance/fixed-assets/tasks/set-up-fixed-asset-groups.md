@@ -39,3 +39,6 @@ Dette emnet forklarer hvordan du oppretter en ny anleggsmiddelgruppe. Den bruker
 8. Velg et alternativ i feltet **Avskrivningskonvensjon**.
 9. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

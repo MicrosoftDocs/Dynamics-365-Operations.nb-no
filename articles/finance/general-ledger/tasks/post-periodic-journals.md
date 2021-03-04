@@ -58,3 +58,6 @@ Periodiske journaler kalles noen ganger gjentakelsesjournaler fordi beløpet, te
 27. Angi eller velg en verdi i feltet **Nummer på periodisk journal**.
 28. Klikk koblingen i den valgte raden i listen.
 29. Klikk **OK**. Den periodiske journalen kan nå gjennomgås, godkjennes eller posteres avhengig av behov og oppsett.   
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

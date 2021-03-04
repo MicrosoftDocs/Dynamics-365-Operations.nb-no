@@ -209,3 +209,6 @@ I veiviseren angis følgende verdier for Contoso Retailer:
     - **Svar:** "Ja, som definert i denne hovedplanen." **1 dag** angis.
 
     Contoso bruker de godkjente rekvisisjonene fra sine butikker til å opprette bestillingsforslag for å etterfylle disse butikkene. Fordi hovedplanlegging kjøres hver dag, blir rekvisisjonen fra den siste dagen inkludert i planleggingen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

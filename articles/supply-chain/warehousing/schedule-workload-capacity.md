@@ -80,3 +80,6 @@ Hvis denne informasjonen ikke blir korrekt spesifisert, vil du motta en melding 
 3. I feltet **Ordretype** velger du **Planlagt og bekreftet**, **Planlagt** eller **Bekreftet** for å angi hvilke typer ordrer som skal prosjekteres i rapporten.
 4. Velg en belastningstype i **Belastningstype**-feltet for å angi om arbeidsmengdekapasiteten skal prosjekteres for volum eller vekt.
 5. I feltet **Arbeidsmengdekapasitet** velger du et arbeidsmengdekapasitetsoppsett.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

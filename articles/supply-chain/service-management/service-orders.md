@@ -89,3 +89,6 @@ I løpet av årets andre halvdel bestemmer kunden seg for at servicebesøkene er
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

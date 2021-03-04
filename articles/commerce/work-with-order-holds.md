@@ -103,3 +103,6 @@ Hvis brukerne vil fjerne en sperring, men gjør flere endringer i bestillingen f
 ## <a name="reporting-options"></a>Rapporteringsalternativer
 
 Gå til **Retail og Commerce** \> **Forespørsler og rapporter** \> **Telefonsenterrapporter** \> **Rapport for ordresperre** for å kjøre en rapport om ordresperrer etter datointervall, sperrekode eller andre relaterte kriterier.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -61,3 +61,6 @@ Dette emnet beskriver hvordan du definerer en enkel arbeidsmal som skal brukes n
 6. Skriv inn en verdi i feltet **Arbeidsklasse-ID**. Instruksjoner for plukking og plassering er et sett. Hvert plukk/plasser-sett må ha samme arbeidsklasse. Bruk samme arbeidsklasse som du har angitt for plukkinstruksjonen.  
 7. Velg **Lagre**. Legg merke til at det nå merket av for **Gyldig**.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

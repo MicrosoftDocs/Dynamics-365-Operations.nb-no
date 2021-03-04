@@ -43,3 +43,6 @@ Hvis det er mer enn én forsendelse i lasten, kan du generere et hovedfraktbrev.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

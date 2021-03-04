@@ -58,3 +58,6 @@ Kjører du denne prosedyren krever det en eksisterende produktmodellkonfigurasjo
     * Verifiser om noen av produktdimensjonene er aktive, og derfor må ha en verdi eller et attributt tilordnet.  
 9. Klikk OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

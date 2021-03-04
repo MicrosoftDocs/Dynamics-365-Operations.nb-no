@@ -56,3 +56,6 @@ Følg denne fremgangsmåten for å oppheve en tilbakeført transaksjon.
 Når du velger **Tilbakeført sporing**, blir det vist en dialogboks der det vises både de opprinnelige transaksjonene og de tilbakeførte transaksjonene sammen med et koblet sporingsnummer.
 
 Du kan også spore opphevelser ved å bruke den riktige **Tidsplaner**-siden. Merket fjernes i **Tilbakefør**-feltet, mens **Journal postert** velges. I tillegg oppdateres feltet **Siste journalnummer** med journalnummeret til den opphevede transaksjonen, og feltet **Journalnummer** oppdateres med tilbakeføringsjournalnummeret.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

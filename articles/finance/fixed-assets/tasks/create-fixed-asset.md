@@ -55,3 +55,6 @@ Hvis du ikke har definert anleggsmiddelnummeret i malen for Excel-tillegget, ell
 
 > [!WARNING]
 > Anleggsmiddelposten blir ikke slettet hvis transaksjonene ble postert i det tilknyttede tablået, eller hvis det nylig opprettede anleggsmidlet angis på en journallinje, men ikke posteres. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

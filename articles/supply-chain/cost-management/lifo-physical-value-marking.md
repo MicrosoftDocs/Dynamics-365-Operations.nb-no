@@ -151,3 +151,6 @@ Illustrasjonen nedenfor viser virkningen LIFO-lagermodellen på denne transaksjo
 - Lagerlukkinger vises med en rød linje med vannrette streker, og med etiketten *Lagerlukking*.
 - Utligninger som skjer før lagerlukking, vises med prikkede røde diagonale prikkede piler som går diagonalt fra tilgang til avgang.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

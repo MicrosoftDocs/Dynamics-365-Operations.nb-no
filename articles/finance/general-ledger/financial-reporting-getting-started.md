@@ -173,3 +173,6 @@ Problem 3: Du kan fortsette etter påloggingssiden for ClickOnce Rapportutformin
 ## <a name="additional-resources"></a>Tilleggsressurser
 - [Vis finansrapporter](view-financial-reports.md)
 - [Definisjoner av rapporteringstre i finansrapporter](../../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

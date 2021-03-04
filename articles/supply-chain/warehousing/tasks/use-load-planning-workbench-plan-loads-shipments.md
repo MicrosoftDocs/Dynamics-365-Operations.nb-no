@@ -61,3 +61,6 @@ Dette emnet viser hvordan du bruker arbeidsområdet for lastplanlegging til å o
 5. Velg **Tilordne**.
 6. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

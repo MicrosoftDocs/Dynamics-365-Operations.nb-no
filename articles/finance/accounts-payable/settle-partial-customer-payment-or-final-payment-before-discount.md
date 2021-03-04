@@ -149,3 +149,6 @@ Magnus posterer denne journalen og ser gjennom kundetransaksjonene på siden **K
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

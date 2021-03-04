@@ -55,3 +55,6 @@ Følgende regnskapsoppføringer opprettes derfor automatisk for å balansere jou
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

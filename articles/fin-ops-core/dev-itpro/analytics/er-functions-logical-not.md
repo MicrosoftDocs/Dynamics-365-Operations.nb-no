@@ -55,3 +55,6 @@ Den resulterende *boolske* verdien.
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Logiske funksjoner](er-functions-category-logical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

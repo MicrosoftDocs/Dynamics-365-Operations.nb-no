@@ -44,3 +44,6 @@ Dette emnet forklarer hvordan du justerer merverdiavgiften på en leverandørfak
 13. Velg **OK**.
 14. Velg **Lagre**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

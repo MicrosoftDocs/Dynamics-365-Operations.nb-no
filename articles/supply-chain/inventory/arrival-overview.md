@@ -121,3 +121,6 @@ Når alle varene er registrert, kan lagersjefen eller innkjøpssjefen oppdatere 
 
 ## <a name="summary"></a>Sammendrag
 **Ankomstoversikt**-siden kan hjelpe lagersjefen og lagermedarbeidere med å få en oversikt over forventet arbeid som må utføres som en del av en innkommende prosess. Siden kan også brukes til å starte vareankomstprosessen, for å garantere at varer spores på den første posten på lageret.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

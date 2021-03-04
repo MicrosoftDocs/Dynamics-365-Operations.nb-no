@@ -159,3 +159,6 @@ Du kan gi en beskrivelse av planen for å hjelpe de ansatte med sine fordelsvalg
 1. I arbeidsområdet **Fordelsbehandling**, under **Planer**, velger du **Fordelsplaner**.
 
 2. Velg **Fleksible kredittprogrammer**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

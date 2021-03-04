@@ -296,3 +296,6 @@ Fabrikam mottar en betaling på 75,00 fra kunde 4000, Gastronor Delikatesser. Be
 | Kunder (Fabrikam Vest)    |              | 75,00         |
 | Skal betales fra Fabrikam Øst (Fabrikam Vest) | 25,00        |               |
 | Kunder (Fabrikam Vest)    |              | 25,00         |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

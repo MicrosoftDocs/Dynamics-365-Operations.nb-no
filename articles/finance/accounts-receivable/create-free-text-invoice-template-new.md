@@ -68,3 +68,6 @@ For denne gjennomgangen må du bruke demonstrasjonsfirmaet USMF. Denne fremgangs
 
 ## <a name="save-a-free-text-invoice-as-a-template"></a>Lagre en fritekstfaktura som mal
 Du kan også lagre en eksisterende fritekstfaktura som en mal. Når du velger Lagre mal i kategorien Faktura, må du angi et navn og en beskrivelse for malen. Hvis det finnes allerede en mal med det samme navnet, vises en melding om at en mal med dette navnet allerede finnes. Du kan fremdeles klikke OK for å erstatte den. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

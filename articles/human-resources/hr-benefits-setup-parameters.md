@@ -68,3 +68,6 @@ Før du kan definere fordelsplaner i Microsoft Dynamics 365 Human Resources, må
 3. Velg **Lagre**.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

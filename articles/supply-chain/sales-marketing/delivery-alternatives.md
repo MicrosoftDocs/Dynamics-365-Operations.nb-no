@@ -153,3 +153,6 @@ Denne kategorien uthever effekten av det valgte leveringsalternativet. Hvis du k
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

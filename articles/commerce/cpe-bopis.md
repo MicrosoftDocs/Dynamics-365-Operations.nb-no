@@ -164,3 +164,6 @@ For alle generelle problemer bør du alltid se hendelsesloggene for maskinvarest
 [Lagre betalingsmåter på nett med Adyen-koblingen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector-listpi)
 
 [Oversikt over betalinger for omnikanal](https://docs.microsoft.com/dynamics365/commerce/omni-channel-payments)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -48,3 +48,6 @@ Bruk denne fremgangsmåten til å administrere økonomimoduldatakilden for kostn
 14. Velg Gjeldende i feltet Posteringslag.
 15. Klikk OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

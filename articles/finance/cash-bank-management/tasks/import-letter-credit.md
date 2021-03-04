@@ -185,3 +185,6 @@ Denne fremgangsmåten bruker demonstrasjonsfirmaet USMF.
     * Kontroller at rapporten angir transaksjonene med bankdokumentnummer, fasilitetsgrense, brukt beløp og fasilitetssaldobeløp.  
 8. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

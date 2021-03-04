@@ -162,3 +162,6 @@ Tekniske stykklister og ruter opprettes fra den tekniske versjonen der de gjelde
 For produkter der du bruker *versjonsproduktdimensjonen* (sammen med logistikkinnvirkning på transaksjonene), blir også versjonen lagt til i stykklistene og rutene. Denne virkemåten kan skille mellom stykklister og ruter i påfølgende versjoner, uavhengig av innstillingen **Håndhev gyldighet**.
 
 For produkter der du ikke bruker *versjonsproduktdimensjonen* (uten logistikkinnvirkning på transaksjonene), blir ikke versjonen lagt til i stykklistene eller rutene. Det vil derfor ikke være noen forskjell mellom stykklister og ruter i påfølgende versjoner. I dette tilfellet anbefaler vi på det sterkeste at du setter alternativet **Håndhev gyldighet** til *Ja*. På denne måten bidrar du til å forhindre at tekniske versjoner overlapper, og du kan også aktivere stykklisten og ruten til en nyere versjon uten først å deaktivere stykklisten og ruten for den tidligere versjonen. Hvis du setter alternativet **Håndhev gyldighet** til *Ja* i dette tilfellet, må du deaktivere stykklistene og rutene i eldre versjoner manuelt før du kan aktivere den siste versjonen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -55,3 +55,6 @@ Hvis du vil legge til finansdimensjoner i en mal, kreves det ytterligere endring
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

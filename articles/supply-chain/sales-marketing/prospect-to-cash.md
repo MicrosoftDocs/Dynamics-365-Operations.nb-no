@@ -82,3 +82,6 @@ For å bruke Kundeemne til kontanter-løsningen må du installere følgende komp
 
 - Dynamics 365 Sales versjon 1612 (8.2.1.207) (DB 8.2.1.207) online eller en nyere versjon.
 - Kundeemne til kontanter-løsning for Dynamics 365 Sales versjon 1.15.0.0 eller en nyere versjon. Løsningen er tilgjengelig for nedlasting fra AppSource. [Last ned Dynamics 365, kundeemne til kontanter](https://appsource.microsoft.com/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

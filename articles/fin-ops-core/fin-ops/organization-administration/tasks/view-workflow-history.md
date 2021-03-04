@@ -46,3 +46,6 @@ Dette emnet beskriver fremgangsmåten for å vise status for et dokument som er 
     - Med knappen **Tilordne på nytt** åpner du en dialogboks der du kan tilordne et arbeidselement på nytt til en annen bruker.  
     - Kontroller at delen **Sporingsdetaljer** er utvidet. I denne delen kan du vise arbeidsflytloggen for det valgte dokumentet.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

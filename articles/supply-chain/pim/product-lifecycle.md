@@ -109,3 +109,6 @@ Bruk følgende kriterier for å velge og oppdatere de frigitte produktene og pro
 - [Tilordne en tilstand for produktlivssyklus til et utgitt produkt](tasks/product-lifecycle-state-released-product.md)
 - [Finne utdaterte produktvarianter og tilordne en produktlivssyklustilstand](tasks/obsolete-product-variants.md)
 - [Opprette en produktlivssyklustilstand for å utelukke produkter fra hovedplanlegging](tasks/exclude-products-master-planning.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

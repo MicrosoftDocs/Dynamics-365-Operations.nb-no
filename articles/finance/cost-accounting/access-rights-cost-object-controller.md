@@ -106,3 +106,6 @@ Tilleggsressurser
 - [Arbeidsområde for kostnadskontroll](cost-control-workspace.md)
 - [Dimensjonshierarki](dimension-hierarchy.md)
 - [Definere sikkerhet for innholdspakken Kostnadsregnskap](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

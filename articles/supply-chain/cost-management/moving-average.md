@@ -155,3 +155,6 @@ I dette eksemplet med glidende gjennomsnitt skrives lagerverdirapporten ut for �
 
 > [!NOTE]
 > Du kan ikke avstemme økonomi med lager ved hjelp av **Sortering etter transaksjonstidspunkt**. Rapporten må skrives ut ved hjelp av **Posteringsdato**-alternativet.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

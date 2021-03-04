@@ -301,3 +301,6 @@ Hvis du vil ha mer informasjon om menyelementer for mobilenheter, kan du se [Def
 For mer informasjon om nummerskiltmottak og arbeidspolicyer, se [Nummerskiltmottak via lagerappen](warehousing-mobile-device-app-license-plate-receiving.md).
 
 For mer informasjon om innkommende lastadministrasjon for lagerstyring, se [Lagerhåndtering av innkommende laster for bestillinger](inbound-load-handling.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

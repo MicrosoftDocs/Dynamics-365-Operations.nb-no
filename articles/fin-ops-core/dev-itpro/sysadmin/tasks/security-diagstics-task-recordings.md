@@ -49,3 +49,6 @@ Dette emnet inneholder informasjon om hvordan du analyserer og administrerer kra
     - Hvis **Rolle** er valgt, velger du **Legg til rolle for bruker**. Dette vil åpne siden **Tilordne brukere til roller**. Hvis du vil ha mer informasjon, kan du se siden [Tilordne brukere til sikkerhetsroller](assign-users-security-roles.md).
     - Hvis **Plikt** er valgt, velger du **Legg til plikt i rollen**, velger rollene som plikten skal legges til, og velg deretter **OK**.
     - Hvis **Rettighet** er valgt, velger du **Legg til rettighet i plikter**, velger rollene som plikten skal legges til, og velg deretter **OK**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -42,3 +42,6 @@ Dette emnet viser hvordan du setter opp standardmaler for finansdimensjon. Malen
 11. Angi finansdimensjonsverdiene som svarer til den angitte prosenten.
 12. Velg **Lagre**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

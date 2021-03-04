@@ -83,3 +83,6 @@ Denne fremgangsmåten beskriver hvordan du endrer en elektronisk rapportering (E
 ## <a name="use-the-modified-draft-version-of-the-er-format-for-payment-journal-processing"></a>Bruk den endrede utkastversjonen av ER-formatet i journalen for betalingsbehandling
 
 Gå gjennom det opprettede regnearket, inkludert nye detaljer over betalingslinjer – betalingsdato.  
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

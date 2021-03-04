@@ -209,3 +209,6 @@ Følgende kolonner angir hvor operasjonene kan startes:
 § Når salgsstedet er frakoblet, kan bare transaksjoner i gjeldende frakoblede database tilbakekalles for retur.
 
 \*\* Når salgsstedet er frakoblet, kan bare transaksjoner i gjeldende frakoblede kanaldatabase vises i journalen.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

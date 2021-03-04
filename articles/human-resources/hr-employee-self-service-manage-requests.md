@@ -39,3 +39,5 @@ Ledere kan administrere fritidsforespørsler fra arbeidsområdet **Ansattselvbet
 
 - [Oversikt over permisjon og fravær](hr-leave-and-absence-overview.md)
 - [Opprette en permisjons- og fraværsplan](hr-leave-and-absence-plans.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

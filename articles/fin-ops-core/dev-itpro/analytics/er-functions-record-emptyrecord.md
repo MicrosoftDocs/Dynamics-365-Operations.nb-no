@@ -60,3 +60,6 @@ Den resulterende postvedien.
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Registreringsfunksjoner](er-functions-category-record.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

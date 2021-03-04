@@ -187,3 +187,6 @@ Hvis du vil gjøre det enklere å vise kolonnene som du arbeider med i raddefini
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Finansrapportering](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

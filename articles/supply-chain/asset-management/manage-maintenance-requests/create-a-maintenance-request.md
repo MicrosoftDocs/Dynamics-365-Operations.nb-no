@@ -74,3 +74,6 @@ I detaljvisningen kan du oppdatere forskjellig informasjon. Her er noen eksemple
 
 > [!NOTE]
 > Hvis du velger et aktivum når du oppretter en vedlikeholdsforespørsel, kan du legge til én feil i aktivumet. Etter at vedlikeholdsforespørselen er opprettet, kan du legge til flere feil, etter behov. Hvis du vil legge til feil, velger du **Aktivafeil** på siden **Alle vedlikeholdsforespørsler**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

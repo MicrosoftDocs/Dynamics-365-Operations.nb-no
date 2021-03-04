@@ -63,3 +63,6 @@ Dette emnet beskriver hvordan du definerer informasjon om lokasjoner i et lager.
 7. Lukk siden.
 8. Oppdater siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -142,3 +142,6 @@ Du kan ikke rapportere antallet feil i en produksjonsordre med mindre du også r
 ## <a name="can-i-trace-the-serial-numbers-of-finished-goods-against-the-serial-numbers-of-consumed-goods"></a>Kan jeg spore serienumrene på ferdigvarer mot serienumrene for forbrukte varer?
 
 Du kan ikke spore serienumre for ferdigvarer mot de serienumrene til et materiale som en produksjonsordre forbruker for å lage disse ferdigvarene. Dette scenarioet støttes for øyeblikket ikke. Løsningen er å opprette produksjonsordrer for et antall på 1.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

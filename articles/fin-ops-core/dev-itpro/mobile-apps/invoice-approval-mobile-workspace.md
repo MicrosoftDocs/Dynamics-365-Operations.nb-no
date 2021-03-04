@@ -86,3 +86,6 @@ Laste ned og installere Finance and Operations-mobilappen:
 7.  Velg **Vedlegg** for å vise notater eller filer som er knyttet til fakturaen.
 8.  På siden **Fakturadetaljer** velger du riktig handling i arbeidsflyten forl å fullføre gjennomgangen.
 9.  Velg **Ferdig**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

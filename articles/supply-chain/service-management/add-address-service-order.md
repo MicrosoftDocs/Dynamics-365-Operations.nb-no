@@ -75,3 +75,6 @@ Hvis du vil legge til en alternativ adresse i en serviceordre, gjør du følgend
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

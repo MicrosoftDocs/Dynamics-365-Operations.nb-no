@@ -109,3 +109,6 @@ Hvis du vil ha mer informasjon, se [Integrering av anleggsmidler](fixed-asset-in
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

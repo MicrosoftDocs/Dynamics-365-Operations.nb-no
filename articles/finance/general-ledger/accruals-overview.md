@@ -46,3 +46,6 @@ Når du registrerer en journal, kan du klikke **Finansavsetninger** på **Funksj
 
 
 Hvis du vil ha mer informasjon, se [Opprette avsetningsplaner](tasks/create-accrual-schemes.md) og [Opprette finansavsetningstransaksjoner](tasks/create-ledger-accrual-transactions.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

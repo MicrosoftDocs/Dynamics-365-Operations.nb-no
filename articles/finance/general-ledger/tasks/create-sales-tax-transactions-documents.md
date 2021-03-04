@@ -60,3 +60,6 @@ Merverdiavgift på dokumenter blir beregnet ved hjelp av en mva-gruppe og en mva
 29. Klikk Merverdiavgift.
 30. Klikk OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

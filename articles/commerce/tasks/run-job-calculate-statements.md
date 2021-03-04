@@ -45,3 +45,6 @@ Denne prosedyren hjelper med å konfigurere og kjøre gjentakende satsvise jobbe
 11. Klikk OK.
 12. Klikk OK.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

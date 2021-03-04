@@ -49,3 +49,6 @@ Denne fremgangsmåten viser hvordan du oppretter et særskilt avskrivningsfradra
     * Standard for prosenten eller beløpet hentes fra oppsettet for særskilte avskrivningsfradrag.  
 8. Angi et tall i Prioritet-feltet.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -50,3 +50,6 @@ Du kan registrere informasjon i en etterdatert sjekk fra en kunde. Du kan også 
 15. Klikk Poster.
 16. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -61,3 +61,6 @@ Dette emnet beskriver hvordan du viser aktiviteter i en serviceordre som ikke ha
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

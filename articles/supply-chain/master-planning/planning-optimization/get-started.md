@@ -112,3 +112,6 @@ Hvis Planleggingsoptimalisering er aktivert, utføres hovedplanlegging ved hjelp
 [Bruke filtre på en plan](plan-filters.md)
 
 [Annullere en planleggingsjobb](cancel-planning-job.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

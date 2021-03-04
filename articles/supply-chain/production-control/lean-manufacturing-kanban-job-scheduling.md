@@ -73,3 +73,6 @@ Listesiden **Kanban-jobbplanlegging** inneholder en faktaboks som viser tilgjeng
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

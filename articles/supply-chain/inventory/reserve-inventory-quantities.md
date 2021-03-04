@@ -83,3 +83,6 @@ Det finnes to alternativer relatert til reservasjoner for siden **Parametere for
 ### <a name="inventory-reservation-policies-on-the-production-parameters-page"></a>Policyer for lagerreservasjon på siden Produksjonsparametere
 
 Verdien for **Reservering**-feltet i kategorien **Generelt** på siden **Produksjonsparametere** bestemmer standardpunktet i produksjonsprosessen der lageret skal reserveres. Lageret kan for eksempel reserveres når arbeid planlegges eller når arbeid startes.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

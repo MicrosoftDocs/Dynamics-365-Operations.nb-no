@@ -82,3 +82,6 @@ Hvis du bruker to valutaer, eller hvis du bruker én valuta, men transaksjoner p
 Realisert fortjeneste og tap er fortjeneste og tap som kommer fra fullførte transaksjoner. De registreres i resultatregnskapet. Urealisert fortjeneste og tap er fortjeneste og tap som er materialisert, men transaksjonen er ikke fullført. Du har med andre ord for eksempel postert en faktura, men fakturaen er ikke utlignet og betalt ennå. Urealisert fortjeneste og tap registreres i balansen.
 
 Hvis du vil ha mer informasjon om hvordan du bruker to valutaer, kan du se [Dobbel valuta](dual-currency.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

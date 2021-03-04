@@ -58,3 +58,6 @@ Du kan definere standardbeskrivelser for bilagene for utligning på tvers av fir
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

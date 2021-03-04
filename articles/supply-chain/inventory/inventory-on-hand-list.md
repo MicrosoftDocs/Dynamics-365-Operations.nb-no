@@ -146,3 +146,6 @@ Dette er resultatet.
 | IA0001 | 1 | 2 | 2 |
 
 Legg merke til at innstillingene i **Filtre**-ruten gjelder for den detaljerte (ikke oppsamlede) lagertabellen som vises i begynnelsen av denne delen. Vilkåret **Fysisk tilgjengelig** \| **er mindre enn eller lik** \| _1_ finner derfor to rader ra denne tabellen (første og tredje rad, som hver viser en verdi for **Fysisk tilgjengelig** på _1_). I dette scenariet er imidlertid ikke siden **Beholdningsliste** konfigurert til å vise **Lager**-dimensjonen. Derfor samler den de to opprinnelige radene til én resultatrad, fordi begge radene har identiske verdier i alle dimensjonene som vises. Denne raden ser ut til å være et brudd på filtreringskriteriet, fordi verdien for **Fysisk tilgjengelig** vises som _2_. Resultatet er imidlertid riktig, fordi innstillingene i **Filtre**-ruten gjelder for kildetabellen, ikke for den aggregerte tabellen som vises på siden **Beholdningsliste**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

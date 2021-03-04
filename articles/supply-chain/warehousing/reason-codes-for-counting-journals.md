@@ -144,3 +144,6 @@ Følgende felt vil bli lagt til menyelementet for mobilenhet når **Justering in
 - Standard årsakskode for telling
 - Vis årsakskode for telling
 - Rediger årsakskode for telling
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

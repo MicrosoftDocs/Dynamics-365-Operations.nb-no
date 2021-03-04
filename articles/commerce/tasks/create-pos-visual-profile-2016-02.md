@@ -48,3 +48,6 @@ Denne prosedyren hjelper med å opprette en ny visuell profil for salgssted. En 
 17. Klikk koblingen i den valgte raden i listen.
 18. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -58,3 +58,6 @@ Velg **Behandle** for å fullføre ny tildeling. Du blir bedt om å bruke en pos
 > Hvis du vil vise en kontekst om hvorfor disse tilleggsvarene vises, kan du legge til andre kolonner i rutenettet, for eksempel **ID for ny tildeling** og **Salgsordre**.
 > 
 > [![Tilleggskolonner på siden Inntektspristildelinger](./media/11_rev-rec-scenarios.png)](./media/11_rev-rec-scenarios.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

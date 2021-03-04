@@ -58,3 +58,6 @@ Hvis du velger belastningstypene **Kapasitet** eller **Rest** for beregningen, v
 
 Se [Beregne kapasitetsbelastning](../capacity-planning/calculate-capacity-load.md) for informasjon om hvordan du beregner kapasitetsbelastning på vedlikeholdsplanlinjer og ikke planlagte arbeidsordrer.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -52,3 +52,6 @@ En endring er gjort for å angi "Avslutningsårsak"-koden som standard ved avslu
 
 ### <a name="new-entity-created-for-job-compensation-levels"></a>Ny enhet opprettet for jobbkompensasjonsnivåer
 En ny enhet for rammeverk for databehandling (DMF) er opprettet. Enheten muliggjør oppretting og oppdatering til kompensasjonsnivåer, markedsverdier og undersøkelsesinformasjon for hver jobb som er definert i systemet.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -50,3 +50,6 @@ Du må bruke dataenheter til å importere og eksportere produktdata. Tabellen ne
 
 > [!NOTE]
 > Du kan bruke dataenheten **Frigitte produkter v2** til å importere produkter til systemet bare hvis det delte produktet allerede er opprettet. Hvis du vil importere produkter til systemet, må du ellers bruke dataenheten **Produktoppretting**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

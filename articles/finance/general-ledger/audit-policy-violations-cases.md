@@ -61,3 +61,6 @@ Hvis du vil ha mer informasjon, se [Overvåkingspolicyregler](audit-policy-rules
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

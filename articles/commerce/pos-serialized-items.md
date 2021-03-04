@@ -95,3 +95,6 @@ Hvis du vil aktivere for eksempel validering som en forutsetning, må du planleg
 [Inngående lageroperasjon i salgsstedet](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation)
 
 [Utgående lageroperasjon i salgsstedet](https://docs.microsoft.com/dynamics365/commerce/pos-outbound-inventory-operation)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

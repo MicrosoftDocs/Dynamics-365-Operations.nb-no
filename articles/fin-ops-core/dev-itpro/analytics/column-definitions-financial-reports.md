@@ -599,3 +599,6 @@ Du kan dividere beløpet i en kolonne med et bestemt antall perioder. Formelen *
 [Raddefinisjoner i Utforming av finansrapport](row-definitions-financial-reporting.md)
 
 [Avanserte formateringsalternativer i finansrapportering](advanced-formatting-options-financial-reporting.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

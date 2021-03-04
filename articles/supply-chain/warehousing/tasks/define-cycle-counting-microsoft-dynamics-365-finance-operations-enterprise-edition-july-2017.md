@@ -96,3 +96,6 @@ Syklustelling er en lagerprosess som du kan bruke til å overvåke varer i lager
 21. Klikk **OK**.
 22. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

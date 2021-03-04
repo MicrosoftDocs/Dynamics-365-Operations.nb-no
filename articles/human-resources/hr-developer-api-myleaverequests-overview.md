@@ -64,3 +64,5 @@ MyLeaveRequests-enheten i Microsoft Dynamics 365 Human Resources gir listen over
 
 - [Sende en permisjonsforespørsel til arbeidsflyt](hr-developer-api-myleaverequests-submit.md)
 - [Godkjenning](hr-developer-api-authentication.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

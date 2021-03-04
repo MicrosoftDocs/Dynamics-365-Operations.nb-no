@@ -46,3 +46,6 @@ Følg denne fremgangsmåten for å velge sekvensen for kostnad for tilbakefall f
     - **Aktiv kostnad – Varepris** – Organisasjoner kan oppleve ytelsesproblemer hvis de bruker forretningsprosesser der lageret regelmessig blir negativ, og samtidig har et høyt transaksjonsvolum. Denne innstillingen kan bidra til å redusere disse ytelsesproblemene.
 
 ![Parametere for lagerregnskap](media/inventory-accounting-parameters.png "Parametere for lagerregnskap")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

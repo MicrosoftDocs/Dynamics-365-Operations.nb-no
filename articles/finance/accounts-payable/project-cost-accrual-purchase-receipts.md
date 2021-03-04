@@ -83,3 +83,6 @@ Leverandørfakturaen forblir i en ventetilstand til den faktiske leverandørfakt
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

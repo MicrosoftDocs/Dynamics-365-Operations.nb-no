@@ -932,3 +932,6 @@ Du kan vise og skrive ut bølgeetiketter på nytt fra følgende sider:
 - Historikk for bølgeetikett
 
 For de fleste av disse sidene kan du finne den relevante funksjonen ved å velge **Bølgeetiketter** i **Relatert informasjon**-gruppen i kategorien **Forsendelser** i handlingsruten.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

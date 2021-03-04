@@ -49,3 +49,6 @@ Dette er den første av fem prosedyrer, som viser kundebetalingsprosessen ved hj
     * Hvis Importer-knappen ikke er tilgjengelig, betyr det at konfigurasjonen allerede er importert.  
 9. Klikk Ja.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -344,3 +344,6 @@ Resultatene som vises i innsendingsloggen, avhenger av hvordan funksjonen for e-
 - [Komme i gang med tillegget Elektronisk fakturering for Mexico](e-invoicing-mex-get-started.md)
 - [Komme i gang med tillegget Elektronisk fakturering for Italia](e-invoicing-ita-get-started.md)
 - [Konfigurere tillegget Elektronisk fakturering](e-invoicing-setup.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

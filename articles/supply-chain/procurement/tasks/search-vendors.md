@@ -39,3 +39,6 @@ Lær å søke etter leverandører basert på bestemte vilkår. Dette eksemplet v
 6. Skriv inn en verdi i Land/område-feltet.
 7. Klikk OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

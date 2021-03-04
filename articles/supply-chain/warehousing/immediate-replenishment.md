@@ -57,3 +57,6 @@ Hvis umiddelbar etterfylling er valgt for en lokasjonsdirektivlinje, men ikke no
 
 - Kontroller at behovsetterfyllingsmalen som brukes, er konfigurert til å bruke de riktige lokasjonsmalene og arbeidsmalene for **Etterfylling**-typen.
 - Kontroller at det er stor nok lagerbeholdning på stedene der behovsetterfyllingsmalen søker etter lagerbeholdning for etterfylling.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

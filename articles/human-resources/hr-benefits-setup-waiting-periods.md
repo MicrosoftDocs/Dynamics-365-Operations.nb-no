@@ -45,3 +45,6 @@ I Microsoft Dynamics 365 Human Resources etablerer ventedager en milepæl som sk
    | **Ventedag** | Velg ventedagen som skal brukes til å beregne ventedatoen. |
 
 4. Velg **Lagre**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

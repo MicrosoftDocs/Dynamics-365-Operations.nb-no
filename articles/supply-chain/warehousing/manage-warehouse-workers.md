@@ -57,3 +57,6 @@ Analyse av tiden som brukes til å behandle arbeidselementer kan hjelpe oppnå f
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

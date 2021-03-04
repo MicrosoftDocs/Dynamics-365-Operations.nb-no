@@ -38,3 +38,6 @@ På **Målinnstillinger**-siden gjelder følgende: Hvis du setter **Aktivert** t
 
 - [Oversikt over elektronisk rapportering (ER)](general-electronic-reporting.md)
 - [Mål for elektronisk rapportering (ER)](electronic-reporting-destinations.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

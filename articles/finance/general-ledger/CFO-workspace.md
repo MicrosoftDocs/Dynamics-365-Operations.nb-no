@@ -56,3 +56,6 @@ Dette emnet forklarer hvordan du legger til finansdimensjoner i CFO-arbeidsområ
 16. Bygge prosjektet, og åpne deretter programmet for å vise resultatene.
 
     [![Fullført arbeidsområde](./media/workspace.png)](./media/workspace.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

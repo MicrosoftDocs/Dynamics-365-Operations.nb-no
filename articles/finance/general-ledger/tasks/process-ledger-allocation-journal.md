@@ -44,3 +44,6 @@ Dette emnet beskriver hvordan du behandler en tildelingsforespørsel. Bruk siden
 9. Velg **Poster**.
 10. Velg **Poster**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

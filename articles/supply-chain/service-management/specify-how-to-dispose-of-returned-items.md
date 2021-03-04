@@ -183,3 +183,6 @@ Du må velge en disposisjonshandling for hver ny disposisjonskode du angir. Disp
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

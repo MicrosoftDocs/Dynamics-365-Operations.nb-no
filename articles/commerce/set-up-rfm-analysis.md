@@ -97,3 +97,6 @@ Bruk denne fremgangsmåten for å vise eller tømme loggen for en RFM-analysepos
 2. Velg posten du vil vise, på siden **RFM-analyse**.
 3. Hvis du vil vise posthistorikken, velger du hurtigfanen **Historikk**.
 4. Hvis du vil slette historikken for posten, velger du **Tøm historikk**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

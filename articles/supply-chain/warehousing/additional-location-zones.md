@@ -58,3 +58,6 @@ Før du kan bruke *Ekstra lokasjonssone*-funksjonen, må den aktiveres i systeme
 7. Velg **Opprett**.
 8. Du mottar meldinger som angir at nye lokasjoner er lagt til. Velg **Vis meldinger**-knappen for å vise meldingene.
 9. Gå til **Lagerstyring \> Oppsett \> Lager \> Lokasjoner**. De nye lokasjonene vises i listen, og alle sonefeltene er tilgjengelige (det vil si det eksisterende sonefeltet og de nye ekstra sonefeltene).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

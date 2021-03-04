@@ -84,3 +84,6 @@ Du kan konfigurere årsakskoder til å være nødvendige for endringer av et anl
 Til slutt definerer du nummerserier for anleggsmidler i kategorien **Nummerserier**. **Anleggsmiddel**-nummerserien kan overstyres av **Anleggsmiddelgruppe**-nummerserien hvis det er angitt.
 
 Hvis du vil ha mer informasjon, kan du se [Opprette et anleggsmiddel](tasks/create-fixed-asset.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

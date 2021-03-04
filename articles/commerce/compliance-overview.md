@@ -46,3 +46,6 @@ Hvis du vil vite mer om de grunnleggende prinsippene som Microsoft bruker, kan d
 [Legge til en side for personvernpolicy](add-privacy-page.md)
 
 [Erstatte bruker-IDer knyttet til sporede innholdsendringer](replace-IDs-tracked-changes.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

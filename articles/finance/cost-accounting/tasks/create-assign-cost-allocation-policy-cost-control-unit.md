@@ -67,3 +67,6 @@ Bruk denne fremgangsmåten til å opprette og tilordne en policy for tildeling a
 5. Angi eller velg en verdi i feltet Kostnadskontrollenhet
 6. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

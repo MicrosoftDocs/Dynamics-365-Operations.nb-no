@@ -61,3 +61,6 @@ Når du avstemmer en transportørfaktura og et fraktbrev, gjøres dette linje fo
 5. Klikk for å følge koblingen i Referansejournalnummeret-feltet.
 6. Klikk Linjer.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -54,3 +54,6 @@ Tilordne en disposisjonskode når en vare mottas, eller i løpet av den fysiske 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -74,3 +74,6 @@ Dette emnet viser hvordan du oppretter en bestilling manuelt. Det er mer vanlig 
 
 2. Velg **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

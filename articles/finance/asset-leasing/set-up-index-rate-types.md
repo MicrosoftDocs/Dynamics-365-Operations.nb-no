@@ -43,3 +43,6 @@ Du må velge enten **verdidifferanse for indeksrente** eller **indeksrenteverdi*
 
 - Velg metoden for **verdidifferanse for indeksrente** for å beregne en ny leiebetaling basert på forskjellen mellom indeksrenten på startdatoen og den seneste indeksrenten. Indeksrenten er definert i feltet for **indeksrente (%)**.
 - Velg metoden for **indeksrenteverdi** for å beregne leiebetalingen ved å bruke prosenten som er angitt i feltet for **indeksrente (%)**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

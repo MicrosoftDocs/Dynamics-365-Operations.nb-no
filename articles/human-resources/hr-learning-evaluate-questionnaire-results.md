@@ -72,3 +72,5 @@ Du kan bruke spørreskjemastatistikk til å analysere resultatene av et utfylt s
 -   Velg eller kontroller vilkår for å analysere resultatene etter respondent eller spørreskjemaets kjennetegn. Hvis du for eksempel velger **Postnummer**, kan du analysere sammenhengen mellom respondentens plassering og riktige svar.
 
 Innstillingene du definerer, lagres og kan brukes til å beregne resultatene på nytt periodisk.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

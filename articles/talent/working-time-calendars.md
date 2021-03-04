@@ -56,3 +56,6 @@ Følg denne fremgangsmåten for å definere en kalender:
 10. Hvis du vil tilordne en kalender til ansatte, velger du **Tilordne til ansatte** i handlingsruten. Velg de ansatte du vil tilordne denne kalenderen til, og klikk deretter **Tilordne**.
 
 Ansatte trenger ikke å ha kalendere som er tilordnet. Hvis det er definert en arbeidstidskalender, utelates fridager automatisk fra forespørselen. Mengden, i timer eller dager, er som standard arbeidstiden som er definert i kalenderen. Hvis en ansatt ikke har en kalender som er tilordnet, er alle dager tilgjengelige for fritid og fritidsmengden er ikke standard for forespørselen. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

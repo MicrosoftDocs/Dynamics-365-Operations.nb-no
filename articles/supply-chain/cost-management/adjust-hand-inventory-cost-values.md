@@ -44,3 +44,6 @@ Denne varen ble definert med først-inn-først-ut-lagermodellen, og lagerlukking
 -   5. februar: Et antall på 1 til en kostnad på USD 13,00
 
 Når du skal definere disse to varenes kost til USD 15,00, bruker du alternativet for lagerjustering til å justere åpne lagerantall per siste lagerlukkingsperiode. **Obs!** Posteringsdatoen for lagerjusteringstransaksjonen blir datoen for den siste lagerlukkingen. Denne datoen kan ikke endres.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

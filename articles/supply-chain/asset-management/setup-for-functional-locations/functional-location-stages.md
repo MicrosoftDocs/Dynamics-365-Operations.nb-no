@@ -63,3 +63,6 @@ Når du har opprettet livsløpstilstandene som kreves for arbeidsstedene, kan de
 5. Hvis du vil velge alle tilgjengelige tilstander for en modell, klikker du knappen for å ![velge alle tilgjengelige tilstander](media/03-setup-for-functional-locations.png). Alle tilstdnder overføres til delen **Valgte livsløpstilstander**.
 6. Hvis du vil fjerne en valgt tilstand fra modellen, velger du tilstanden i delen **Valgte livsløpstilstander**, og deretter velger du ![tilbakepilen](media/04-setup-for-functional-locations.png).
 7. Velg **Oppdateringer av livsløpstilstander** for å definere hvilke livsløpstilstander som kan følge en valgt tilstand.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

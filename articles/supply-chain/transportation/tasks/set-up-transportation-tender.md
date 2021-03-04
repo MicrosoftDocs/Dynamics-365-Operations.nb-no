@@ -48,3 +48,6 @@ Denne fremgangsmåten viser hvordan du setter opp et transporttilbud. Dette gjø
 7. Klikk Send.
 8. Velg en rute.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

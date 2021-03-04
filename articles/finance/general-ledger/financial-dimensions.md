@@ -140,3 +140,6 @@ Hvis du vil ha mer informasjon, se følgende emner:
 
 - [Definere finansdimensjoner](tasks/define-financial-dimensions.md)
 - [Vedlikeholde standardmaler for finansdimensjon](tasks/maintain-financial-dimension-default-templates.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -46,3 +46,6 @@ Denne prosedyren fokuserer på å definere en konfigurasjonsrute som bestemmer r
 15. Klikk koblingen i den valgte raden i listen.
 16. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

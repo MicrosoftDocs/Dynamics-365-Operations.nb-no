@@ -73,3 +73,6 @@ Det følgende bildet viser et eksempel på en størrelsesgruppe for "vanlige skj
 [Definere detaljhandelsprodukter](set-up-retail-products.md)
 
 [Produktdimensjoner](../supply-chain/pim/product-dimensions.md?toc=/dynamics365/commerce/toc.json)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

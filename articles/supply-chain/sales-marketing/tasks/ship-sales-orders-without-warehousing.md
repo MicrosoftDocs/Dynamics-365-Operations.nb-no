@@ -56,3 +56,6 @@ Dette emnet forklarer hvordan du oppdaterer en salgsordre når produkter sendes 
 19. Klikk **Plukk og pakk** i handlingsruten.
 20. Velg **Følgeseddel**. Siden **Følgeseddeljournal** inneholder alle følgeseddeldokumentene som ble generert for ordren. Du kan se nærmere på detaljene for hvert dokument og skrive dem ut, hvis du ønsker.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

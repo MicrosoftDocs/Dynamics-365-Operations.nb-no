@@ -52,3 +52,6 @@ Når du har planlagt forebyggende vedlikeholdsjobber, er neste trinn å opprette
 
 5. Klikk **OK**. Én eller flere arbeidsordrer opprettes.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

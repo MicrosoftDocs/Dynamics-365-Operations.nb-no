@@ -113,3 +113,6 @@ I stedet for å bruke **Ankomstoversikt**-skjemaet kan du bruke **Registrering**
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

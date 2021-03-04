@@ -54,3 +54,6 @@ Følg disse trinnene for å aktivere behandling av avvik:
 [Kvalitetsstyringsprosesser](quality-management-processes.md)
 
 [Definere forutsetninger for behandling av avvik](tasks/set-up-prerequisites-nonconformance-management.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

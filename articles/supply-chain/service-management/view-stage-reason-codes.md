@@ -45,3 +45,6 @@ Vis og endre listen over stadieårsaker for en serviceordre. Bruk stadieårsaker
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

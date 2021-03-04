@@ -108,3 +108,6 @@ Levetiden for anskaffelsesjusteringen er den samme som den til anleggsmidlet, og
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

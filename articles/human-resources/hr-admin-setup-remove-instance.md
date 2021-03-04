@@ -85,3 +85,6 @@ Slik gjenoppretter du miljøet:
 
 > [!Warning]
 > Power Apps-miljøer lagres bare i sju dager etter sletting. Du må gjenopprette miljøet i løpet av denne perioden på sju dager.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -55,3 +55,6 @@ Denne prosedyren viser hvordan du planlegger en produksjonsordre. Demonstrasjons
 6. Lukk siden.
 7. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

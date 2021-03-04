@@ -61,3 +61,6 @@ Hvis du vil begynne å konfigurere denne informasjonen, oppretter du en forskrif
 ## <a name="warehouse-management"></a>Lagerstyring
 
 Når en forsendelse er klargjort, kan flere nye rapporter skrives ut. Disse rapportene bruker informasjonen du definerer i Administrering av produktinformasjon.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

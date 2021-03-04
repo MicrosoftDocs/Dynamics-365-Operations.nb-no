@@ -58,3 +58,6 @@ Når du endrer jobben for en stilling, vil **Jobbfamilie** nå angis som standar
 
 ### <a name="performance-improvements-when-rendering-workspaces"></a>Ytelsesforbedringer ved gjengivelse av arbeidsområder
 Analyse-kategorier for arbeidsområder lastes nå bare ved tilgang til disse sidene. En indikator vises under den innledende gjengivelsen av siden i øvre venstre hjørne på siden.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

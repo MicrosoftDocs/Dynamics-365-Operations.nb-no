@@ -136,3 +136,5 @@ Denne fremgangsmåten viser hvordan du aktiverer en kvalitetsstyringsprosess der
 
 > [!NOTE]
 > Funksjonen *Kvalitetsstyring for lagerprosesser* inneholder flere alternativer for å definere kvalitetstilknytninger. Den legger til en ny betingelse(**Gjeldende lagertype**) og en ny innstilling **(Policy for kvalitetsbehandling**). Hvis du har aktivert denne funksjonen, kan du se [Kvalitetsstyring for lagerprosesser](../quality-management-for-warehouses-processes.md) for mer informasjon.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -70,3 +70,6 @@ Du kan kjøre denne fremgangsmåten i demonstrasjonsselskapet USMF eller ved hje
     - **Fjern og send**-handlingen gjelder bare når du bruker Telefonsenterfunksjonalitet.  
 8. Klikk på **Fjern sperrer**. Sperringen er nå fjernet fra ordren og fjernet fra listen over aktive sperringer. Hvis du vil se alle sperringene eller delsettet i henhold til en bestemt status, kan du endre verdien i Vis-feltet.     
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -112,3 +112,6 @@ Hvis du vil ha tilgang til Commerce-områdebygger, går du til **e-handel**-fane
 [Legge til støtte for et innholdsleveringsnettverk (CDN)](add-cdn-support.md)
 
 [Aktivere stedsbasert butikkregistrering](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

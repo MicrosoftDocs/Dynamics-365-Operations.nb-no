@@ -74,3 +74,6 @@ Når en økonomisk transaksjon blir postert, er statusen til transaksjonsposten 
 -   Lagerjournaler med negativt antall, for eksempel bevegelse, resultat, opptelling, stykklister og overføring
 
 Transaksjoner som reduserer antallet posteres til løpende gjennomsnittlig kostpris. Prosedyren for lagerlukking er derfor nødvendig for å utligne avgangstransaksjoner mot tilgangstransaksjoner på grunnlag av lagermodellen som er tilordnet hver vare.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

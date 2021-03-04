@@ -64,3 +64,6 @@ Parameteren **Mengde** angir om hele mengden eller den fysisk reserverte mengden
 -   For å angi parametere for overføringsordre, **Mengde** og **Tillate frigivelse av delvis frigitte ordrer**, klikk **Lagerstyring** \> **Frigi til lager** \> **Automatisk frigivelse for overføringsordrer**
 
 -   For å angi parametere for salgsordre, **Mengde** og **Tillate frigivelse av delvis frigitte ordrer**, klikk **Lagerstyring** \> **Frigi til lager** \> **Automatisk frigivelse for salgsordrer**
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

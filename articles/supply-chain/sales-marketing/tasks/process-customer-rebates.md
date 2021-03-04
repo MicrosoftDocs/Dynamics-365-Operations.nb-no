@@ -82,3 +82,6 @@ Denne fremgangsmåten beskriver hvordan du behandler kunderabatter fra kravgener
     - Avsetningskontoen for rabatt er kreditert for å representere fremtidige ansvaret for kunden.
     - Utgiftskontoen for rabatt har blitt debitert for å gjenkjenne kostnaden som er påløpt i forbindelse med salg.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

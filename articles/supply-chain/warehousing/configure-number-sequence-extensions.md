@@ -92,3 +92,6 @@ Følg denne fremgangsmåten for å opprette og redigere nummerserier.
     | Kontrollsiffer | Denne segmenttypen legger til et kontrollsiffer, som er en modulus 10-beregning. (Denne virkemåten samsvarer med den eksisterende logikken for nummerskilt-IDer.) For denne segmenttypen er **Verdi**-feltet alltid satt til et cirkumflekstegn (*^*), og **Lengde**-feltet er alltid satt til *1*. |
 
 1. Hvis du vil vise et eksempel på det endelige tallformatet, kontrollerer du **Format**-feltet nederst i hurtigfanen **Segmenter**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

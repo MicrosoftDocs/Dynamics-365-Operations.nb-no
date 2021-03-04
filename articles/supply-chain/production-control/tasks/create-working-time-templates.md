@@ -79,3 +79,6 @@ Driftstidsmaler definerer arbeidstimene gjennom en uke og brukes til å generere
 3. Utvid delen Søndag.
 4. Velg Ja i feltet Lukket for plukk.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

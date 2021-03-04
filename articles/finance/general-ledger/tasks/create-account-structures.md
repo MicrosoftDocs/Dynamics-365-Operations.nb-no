@@ -61,3 +61,6 @@ Denne oppgaveveiledningen går gjennom oppretting av en kontostruktur. Trinnene 
 29. Klikk **Aktiver** i **handlingsruten**.
 30. Klikk **Aktiver**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

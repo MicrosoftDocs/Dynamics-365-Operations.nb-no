@@ -66,3 +66,6 @@ Denne prosedyren fokuserer på å utføre en kanban-jobb for uttak for å overf�
 2. Klikk Fullført.
     * Dette vil fullføre overføringen av begge jobber.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

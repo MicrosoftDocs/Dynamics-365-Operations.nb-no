@@ -69,3 +69,6 @@ Dette er den fjerde av fem prosedyrer, som viser kundebetalingsprosessen ved hje
 8. Klikk OK.
 9. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

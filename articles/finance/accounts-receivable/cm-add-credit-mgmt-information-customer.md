@@ -102,3 +102,6 @@ Du kan opprette forsikringspoliser og garantier på **Alle kunder**-siden (**Kun
     I dette tilfellet er den effektive kredittgrensen 125 000 (= A + \[B × C\]).
     
     Hvis du imidlertid merker av for **Inkludert i eksponering**, fjernes **Oppdater kredittgrense**-verdien på 50 000 (= 50,00 prosent av 100 000), og eksponeringsverdien er 75 000 (= A + \[B × C\] – B).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

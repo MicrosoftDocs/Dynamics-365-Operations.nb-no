@@ -342,3 +342,6 @@ Du kan importere gjennomgåtte konfigurasjoner fra RCS ved å bruke ER-repositor
 - [Formeldesigner i elektronisk rapportering (ER)](general-electronic-reporting-formula-designer.md)
 - [Forbedre ytelse for ER-løsninger ved å legge til datakilder med parameterisert BEREGNET FELT](er-calculated-field-ds-performance.md)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

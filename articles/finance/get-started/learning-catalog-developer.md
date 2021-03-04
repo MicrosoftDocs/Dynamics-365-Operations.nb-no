@@ -94,3 +94,6 @@ Katalogen nedenfor er ordnet fra kjernekunnskap til bestemte områder, og fra de
 | Innhold | beskrivelse  | Formater  |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
 |[Eksamen MB-500: Microsoft Dynamics 365: Finance and Operations-apper for utvikler](https://docs.microsoft.com/learn/certifications/exams/mb-500) | Denne eksamenen måler din evne til å utføre følgende tekniske oppgaver: planlegge arkitektur og løsningsdesign, bruke utviklerverktøy, utforme og utvikle AOT-elementer, utvikle og teste kode, implementere rapportering, integrere og behandle dataløsninger og implementere sikkerhet og optimalisere ytelsen. | Eksamen: kostnaden varierer etter område |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

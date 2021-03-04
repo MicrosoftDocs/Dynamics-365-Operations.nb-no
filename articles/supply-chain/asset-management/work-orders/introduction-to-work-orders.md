@@ -119,3 +119,6 @@ Knappene i gruppen **Prosjekt** i kategorien **Arbeidsordre** i handlingsruten e
 >[!NOTE]
 >For å inkludere prognoser som er opprettet i en arbeidsordre når du kjører hovedplanlegging, bruker du prognosemodellen som er valgt på siden **Aktivabehandlingsparametere**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

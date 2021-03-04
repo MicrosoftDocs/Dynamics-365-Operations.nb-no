@@ -127,3 +127,6 @@ Følg fremgangsmåten nedenfor for å løse problemet.
 
 3. Kontroller at **externalenvironmentURL**-kolonnen har riktig Dataverse- eller app-URL-adresse. Slett eventuelle duplikate rader som peker til feil Dataverse-URL-adresse. Slett de tilsvarende radene i DUALWRITEPROJECTFIELDCONFIGURATION- og DUALWRITEPROJECTCONFIGURATION-tabellen.
 4. Stopp tabelltilordningen, og start den deretter på nytt
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

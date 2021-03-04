@@ -68,3 +68,6 @@ Du kan eksportere lister over ansatte som ble generert ved hjelp av noen av alte
 Hvis du har behov for å rapportere dekkede enkeltpersoner fordi du gir selforsikret dekning, kan du også vise alle avhengige som dekkes under fordelsplaner som er merket som **ACA-rapporterbare** ved å velge handlingen Vis avhengig dekning i handlingsrutestripen.
 
 **Merk:** Bare fordeler i en plan som er merket som **ACA-rapporterbar**, vises i forespørselsvinduet.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -113,3 +113,6 @@ Serviceordrelinjene blir gruppert ytterligere i serviceordrer i henhold til even
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -53,3 +53,6 @@ Denne oppgaven viser hvordan du oppretter fordelselementer som skal brukes når 
 6. Angi dato og klokkeslett i Gyldig-feltet.
 7. Klikk Opprett fordel.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

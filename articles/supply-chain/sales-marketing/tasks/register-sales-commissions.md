@@ -71,3 +71,6 @@ Noter kunde- og varenumrene du har valgt for provisjonsprosessen, og bruk dem n�
 3. Lukk siden.
 4. Velg **Bilag**. Du kan vise bilagstransaksjonene for provisjonsbeløpene som er postert til de forhåndsdefinerte provisjonsutgifts- og provisjonsbetalingskontoene.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

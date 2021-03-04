@@ -39,3 +39,6 @@ Denne prosedyren hjelper med å opprette et nytt produkt i handelsprodukthierark
 8. Skriv inn en verdi i feltet Produktnummer.
 9. Klikk OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

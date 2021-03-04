@@ -53,3 +53,6 @@ Dette er den tredje av fem prosedyrer, som viser kundebetalingsprosessen ved hje
     * Velg parameteren Krever mandat for kundebetalingsformater, som krever at mandatinformasjon tas med i betalingsmeldingen, som SEPA-avtalegiro.  
 9. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

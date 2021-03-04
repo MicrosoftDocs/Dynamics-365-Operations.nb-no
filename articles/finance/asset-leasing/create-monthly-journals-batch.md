@@ -37,3 +37,6 @@ Hvis du vil konfigurere en satsvis jobb eller behandle betalingsfakturaer, avskr
 > Påfølgende transaksjoner, for eksempel nedbetalingsplaner for gjeld, betalinger, avskrivning og utgifter, posteres bare etter at den opprinnelige føringen for tilsvarende leieavtaler er postert.
 >
 > Journaloppføringene opprettes, men de blir ikke postert før du velger **Kjør**-kommandoen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

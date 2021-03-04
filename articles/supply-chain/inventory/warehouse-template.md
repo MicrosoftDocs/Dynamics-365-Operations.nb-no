@@ -98,3 +98,6 @@ Hvis du vil vite mer om hvordan du bruker lagermalen for å kopiere konfigurasjo
 ## <a name="related-topic"></a>Relaterte emne
 
 [Konfigurasjonsdatamaler](../../dev-itpro/data-entities/configuration-data-templates.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -107,3 +107,6 @@ Du kan angi budet som en leverandør eller en innkjøpsansvarlig. Hvis du vil ha
 ## <a name="view-the-purchase-order-that-is-generated"></a>Vise bestillingen som er generert
 
 Velg **Bestilling** i kategorien **Generelt** i handlingsruten. Siden som vises, angir bestillingen som ble generert da du godtok budet.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

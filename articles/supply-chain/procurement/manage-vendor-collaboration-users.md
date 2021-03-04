@@ -94,3 +94,6 @@ Slik ber du om at sikkerhetsrollene endres for en bruker:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

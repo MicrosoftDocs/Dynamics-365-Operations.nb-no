@@ -253,3 +253,6 @@ For sider med store visningsvelgere (både personlige tilpasninger og spørringe
 
 - Hvis du navigerer til en side fra en flis, vil flisspørring utføres uansett hvilken spørring som er knyttet til standardvisningen. Hvis du opprettet denne flisen etter at visninger var aktivert, vil valg av en flis åpne siden med visningen som er knyttet til flisen.
 - Hvis du navigerer til en side, og det inngangspunktet inkluderer en spørring, vil den opprinnelige spørringen utføres opprinnelig i stedet for standardvisningens spørring. Når dette skjer, skal di bli varslet av en informasjonsmelding når visningen lastes inn. Du kan også bekrefte ved å bytte til denne visningen etter at siden er lastet inn, som gjør at visningsspørringen kan kjøres uansett.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

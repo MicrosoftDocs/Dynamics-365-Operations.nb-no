@@ -48,3 +48,6 @@ ID for arbeidssted / ID for arbeidssted (hvis det er flere arbeidssteder) \> Akt
 Hvis du har valgt et aktivum i trevisningen, kan du velge **Aktive forespørsler** eller **Aktive arbeidsordrer** for å vise vedlikeholdsanmodningene eller arbeidsordrene som er relatert til aktivumet. Du kan også velge **Åpne** \> **Arbeidssted**, **Aktiva** eller **Stykkliste for aktiva** for å åpne den tilknyttede visningen.
 
 Alternativet **Arbeidssteder for aktiva** som du kan velge i **Visning**-feltet, er også tilgjengelig i alle aktivaoppslag der du kan velge et aktivum. Trevisningen vises i kategorien **Aktivavisning**, der du for eksempel [oppretter et aktivum](../objects/create-an-object.md), oppretter en vedlikeholdsanmodning eller oppretter en arbeidsordre.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

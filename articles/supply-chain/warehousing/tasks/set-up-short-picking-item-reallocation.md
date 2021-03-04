@@ -64,3 +64,6 @@ Demonstrasjonsdatafirmaet USMF ble brukt til å opprette denne fremgangsmåten.
 6. Velg en **bruker-ID** i listen. For eksempel 24.
 7. Utvid **Arbeid**-hurtigfanen.
 8. Velg **Ja** i feltet **Tillat manuell ny tildeling av vare**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

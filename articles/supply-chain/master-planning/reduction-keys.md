@@ -227,3 +227,6 @@ Når du velger **Transaksjoner – reduksjonsnøkkel** eller **Transaksjoner –
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Oversikt over hovedplaner](master-plans.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

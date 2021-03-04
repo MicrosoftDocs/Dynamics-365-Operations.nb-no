@@ -93,3 +93,6 @@ Du kan også bruke doble lag. Hvis du velger **Dobbelt lag** for verdien **Bruk 
    | **Røykersats for fleksikreditt** | Antall fleksikreditter fordelen koster, basert på beregningen som er definert for lagnivået for røykere. |
 
 5. Velg **Lagre**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

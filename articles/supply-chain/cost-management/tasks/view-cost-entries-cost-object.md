@@ -39,3 +39,6 @@ Denne prosedyren viser hvordan du viser kostnadsoppføringer for et kostnadsobje
 7. Bruk hurtigfilteret til å filtrere på Nummer-feltet med verdien p000031.
     * Hvis kostnadsoppføringer er tomme, angir du Fra dato som 31. januar 2012 og Til dato som 31. desember 2012.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

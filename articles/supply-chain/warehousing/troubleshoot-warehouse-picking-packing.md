@@ -110,3 +110,6 @@ Når du bruker prosessen *Systemkontrollert gruppeplukking*, hvis du konfigurere
 ### <a name="issue-resolution"></a>Problemløsning
 
 Du kan løse dette problemet ved å redigere gruppeprofilen og sette **Aktiver stillinger**-alternativet til *Nei*.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

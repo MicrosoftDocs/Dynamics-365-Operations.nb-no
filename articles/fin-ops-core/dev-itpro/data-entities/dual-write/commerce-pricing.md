@@ -53,3 +53,6 @@ Når brukere starter et tilbud i Sales, kopierer rammeverket for dobbel skriving
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Kundeemne til kontanter i dobbel skriving](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-prospect-to-cash/)
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

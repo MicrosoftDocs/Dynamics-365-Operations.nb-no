@@ -55,3 +55,6 @@ Hvis en vare skades eller kommer bort, må du registrere en fiktiv returpost. De
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

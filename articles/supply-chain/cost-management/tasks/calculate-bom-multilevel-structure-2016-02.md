@@ -49,3 +49,6 @@ Denne fremgangsmåten viser hvordan du beregner kostnaden av ferdige produkter v
 11. Lukk siden.
 12. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

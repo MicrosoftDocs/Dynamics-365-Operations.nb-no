@@ -42,3 +42,5 @@ For hver organisasjon som tilbyr fordeler, må du konfigurere innstillinger for 
    | **Standard e-postadresse for avsender** | E-postadressen som skal brukes når du sender e-postmeldingen med bekreftelsen. |
 
 3. Velg **Lagre**.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

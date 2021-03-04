@@ -72,3 +72,6 @@ Du kan prosjektere plassutnyttelsen ved å generere rapporten **Utnyttelse av la
 
 4. I feltet **Belastningstype** velger du **Volum** eller **Vekt** for å angi to lagerdriftsenheten du vil prosjektere plass for.
 5. Angi oppsettet for plassbruk som prosjekteringen skal baseres på, i feltet **Plassbrukoppsett**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -132,3 +132,6 @@ Et arbeidssted med beslektede understeder kan slettes hvis ingen aktiva er insta
 
 >[!NOTE]
 >Hvis du ikke kan slette et arbeidssted, kan du i stedet håndtere slettingen ved å definere en livsløpstilstand for arbeidsstedet til dette formålet. Du kan for eksempel definere en "kassert" eller "slettet" fase, som ikke skal være en aktiv fase, i skjemaet **Livsløpstilstander for arbeidssteder**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

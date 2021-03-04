@@ -183,3 +183,6 @@ En vare har for eksempel innledende tid på én dag og en mottaksmargin på tre 
 [Komme i gang med planleggingsoptimalisering](get-started.md)
 
 [Analyse for tilpassing av planleggingsoptimalisering](planning-optimization-fit-analysis.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

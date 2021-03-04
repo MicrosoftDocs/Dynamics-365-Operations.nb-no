@@ -48,3 +48,6 @@ Denne prosedyren viser hvordan du oppretter en prosjektbestilling. Denne oppgave
     * Kontroller at salgs- og kostpriser er tilgjengelig. Hvis de ikke er tilgjengelige, men nødvendige, angir du informasjonen.  
 14. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

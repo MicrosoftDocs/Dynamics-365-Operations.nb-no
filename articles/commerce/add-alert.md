@@ -96,3 +96,6 @@ Hvis du vil legge til en kampanjebannermodul på en side og angi de nødvendige 
 [Innholdsblokkmodul](add-hero-module.md)
 
 [Videospillermodul](add-video-player.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

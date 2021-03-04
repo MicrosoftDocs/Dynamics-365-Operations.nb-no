@@ -106,3 +106,6 @@ Supply Chain Management støtter nå stykklisteberegning som inkluderer transpor
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -80,3 +80,6 @@ Fra listesiden **Alle aktiva** kan du skrive ut en rapport om aktivumfeil som vi
 >[!NOTE]
 >For å skrive ut en feilrapport for flere aktiva eller aktivatyper, velg **Aktivastyring** > **Rapporter** > **Aktiva** > **Aktivafeil**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

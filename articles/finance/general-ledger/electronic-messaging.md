@@ -536,3 +536,6 @@ Du kan nå slette eller oppdatere meldingsstatusen. Hvis du vil oppdatere meldin
 ![Oppdatere meldingsstatusen](media/update-status.png)
 
 Meldingsstatusen oppdateres til **Klargjort**, og du kan nå generere rapporten ved å velge **Generer rapport**. Rapporten genereres, og meldingsstatusen og -loggen oppdateres. Hvis du vil vise den genererte rapporten, velger du **Vedlegg**-knappen (bindersikonet) i øvre høyre hjørne på siden.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

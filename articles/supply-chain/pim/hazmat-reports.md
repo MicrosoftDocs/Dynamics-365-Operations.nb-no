@@ -110,3 +110,6 @@ Når funksjonen for farlige materialer er aktivert i systemet, inneholder rappor
 ## <a name="packing-list-report"></a>Rapporten Følgeseddelliste
 
 Når funksjonen for farlige materialer er aktivert i systemet, inkluderer følgeseddellister tilleggsinformasjon som er knyttet til forsendelsesteksten for en vare. Denne rapporten er tilgjengelig fra siden **Alle laster** som vanlig.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

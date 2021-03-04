@@ -40,3 +40,6 @@ Den **Vis eldre lagerpartier lageret** konfigurasjon er tilgjengelig på mobil e
 
 - Under **Lagerstyring** > **oppsett** > **mobil enhet** > **mobiltelefon menyelementer**, setter **bruker eksisterende arbeid** til **Ja** for menyelementet, og velg **varsel** i den **plukk eldste satsvis** feltet. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

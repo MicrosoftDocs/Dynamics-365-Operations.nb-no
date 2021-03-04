@@ -39,3 +39,6 @@ Kompensasjons- og fordelsansvarlig kan knytte ansatte til faste kompensasjonspla
     * Hvis den faste kompensasjonsplanen er en trinnplan, velger du trinnet som inneholder den riktige lønnssatsen for den ansatte. Hvis den faste kompensasjonsplanen er en klasse- eller segmentplan, angir du lønnssatsen for den ansatte. Lønnssatsen blir validert mot toleranseinnstillinger for planen, og minimum og maksimum referansepunkt for jobbens kompensasjonsnivå.  
 8. Klikk OK.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

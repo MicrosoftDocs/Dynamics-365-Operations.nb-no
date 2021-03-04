@@ -56,3 +56,6 @@ Feltene for omregningsfaktorer identifiserer omregningsfaktoren fra betalingsfre
    | **Timebasert konverteringsfaktor** | Den årlige konverteringsfaktoren for betalingsfrekvensen. Den årlige konverteringsfaktoren for den månedlige betalingsfrekvensen er for eksempel: </br></br>(12 månedlige betalinger / 2080 timer) = 0,005769
 
 4. Velg **Lagre**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -78,3 +78,6 @@ Knappene i handlingsruten er ordnet i kategorier. Følgende tabell beskriver kor
 | Reservedeler          | Vis en liste over godkjente og alternative reservedeler som kan brukes for aktivumet.                                                                               |
 | Aktivumforbruk    | Skriv ut en rapport som viser forbruksregistreringer for aktivumet.                                                                                                |
 | Aktivumfeil          | Skriv ut en rapport som viser feilregistreringer for aktivumet.                                                                                                      |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

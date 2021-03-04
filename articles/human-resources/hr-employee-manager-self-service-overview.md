@@ -214,3 +214,5 @@ Ledere kan se alle mål for teamet ved hjelp av flisen **Ytelsesmål for team** 
 I kategorien **Omtaler** oppsummeres omtalene den ansatte har i hver tilstand: **Pågår**, **Klar til gjennomgang** og **Endelig vurdering**. Hvis du vil ha tilgang til vurderingen av en ansatt, velger du **Detaljer**-knappen og velger deretter vurderinger du vil samarbeide om. Avhengig av hvor en vurdering er i arbeidsflytprosessen, kan du se om vurderingen er tilgjengelig for oppdatering. 
 
 Du kan se alle vurderinger for teamet ved hjelp av flisen **Gjennomgang av teamytelse** i **Sammendrag**-delen i **Mitt team**.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

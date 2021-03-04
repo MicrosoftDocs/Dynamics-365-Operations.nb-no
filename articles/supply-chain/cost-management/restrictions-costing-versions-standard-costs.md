@@ -51,3 +51,6 @@ Varekostnadsdata for standard kostpriser kan kopieres til en annen etterkalkuler
 
 [Forberede vedlikehold av standard kostpris for produserte varer](update-standard-costs-manufacturing-environment.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

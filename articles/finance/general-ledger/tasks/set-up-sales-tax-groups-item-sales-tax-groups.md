@@ -50,3 +50,6 @@ Denne oppgaveregistreringen leder deg gjennom oppsettet av merverdiavgift og mva
 19. Klikk koblingen i den valgte raden i listen.
 20. Klikk **Lagre**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

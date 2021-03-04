@@ -98,3 +98,6 @@ Illustrasjonen nedenfor viser et eksempel på resulterende diagram.
 ![Visualisering av sone kontra arbeidsstatus](media/work-viz-chart.png "Visualisering av sone kontra arbeidsstatus")
 
 Dette diagrammet viser to soner som heter **GULV** og **PARTI**, pluss en sone som har navnet **Tom**. Den **tomme** sonen representerer alle arbeidslinjer som ikke er medlemmer av noen soner. Diagrammet viser alltid alle ikke-relaterte filtrerte data som **tomme**, for å gi så mye synlighet som mulig. I **GULV**-sonen viser diagrammet tre lukkede linjer og fire åpne linjer. I **PARTI**-sonen viser diagrammet fire lukkede linjer, én åpen linje og 24 avbrutte linjer. Til slutt viser diagrammet åtte lukkede linjer som ikke er en del av en sone, og er derfor oppført som **tomme**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

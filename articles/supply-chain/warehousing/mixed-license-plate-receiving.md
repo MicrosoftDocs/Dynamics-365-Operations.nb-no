@@ -49,3 +49,6 @@ Du må opprette et nytt menyelement med modus for arbeid som ikke bruker eksiste
 - Mottak og plassering av kombinerte skiltnumre
 
 Alternativene for å identifisere kildedokumentlinjene er bestillingsvare, bestillingslinje, returordre, overføringsordrevare og overføringsordrelinje. Disse alternativene kan endre mottaksordren på et enkelt nummerskilt. Det siste alternativet er etter lastvare. Du kan legge til flere elementer i et nummerskilt, men du kan ikke bytte mellom flere laster.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

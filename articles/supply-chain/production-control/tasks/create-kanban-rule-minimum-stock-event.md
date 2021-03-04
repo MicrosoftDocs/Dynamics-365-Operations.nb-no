@@ -68,3 +68,6 @@ Denne fremgangsmåten fokuserer på oppsettet for å opprette en Kanban-regel so
 5. Vis delen Kanbaner.
     * Legg merke til at en Kanban ble opprettet for å overføre det nødvendige materialet til lager 12.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

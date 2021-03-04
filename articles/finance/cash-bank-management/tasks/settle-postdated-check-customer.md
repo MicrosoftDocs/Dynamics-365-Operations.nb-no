@@ -56,3 +56,6 @@ Denne fremgangsmåten bruker demonstrasjonsfirmaet USMF.
 10. Klikk Bilag.
 11. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

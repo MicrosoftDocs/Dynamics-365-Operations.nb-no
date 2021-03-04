@@ -71,3 +71,6 @@ Når du har fullført vedlikeholds- eller reparasjonsjobben, kan du registrere a
 2. Velg aktivumet eller vedlikeholdsforespørselen.
 3. Velg **Lever aktiva**.
 4. Angi dato og klokkeslett i feltet **Levert**. Velg deretter **OK**. Posten fjernes fra listesiden **Utgående aktiva**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

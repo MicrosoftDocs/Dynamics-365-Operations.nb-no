@@ -111,3 +111,6 @@ Du kan behandle betalinger uten dekning ved å klikke Betaling uten dekning på 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

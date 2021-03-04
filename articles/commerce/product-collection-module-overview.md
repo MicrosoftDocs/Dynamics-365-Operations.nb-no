@@ -109,3 +109,6 @@ Følgende tabell viser listetypene som er tilgjengelige for valg i dialogboksen 
 [Kjøpsboksmodul](add-buy-box.md)
 
 [Oversikt over produktanbefalinger](product-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

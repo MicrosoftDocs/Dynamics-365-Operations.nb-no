@@ -87,3 +87,6 @@ Klikk **Eksport** i handlingsruten for å eksportere en finansrapport. Rapporten
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

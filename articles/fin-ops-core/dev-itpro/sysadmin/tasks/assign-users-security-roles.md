@@ -57,3 +57,6 @@ Brukere som manuelt tilordnes til sikkerhets roller, må også fjernes manuelt a
 2. I treet velger du en rolle, og i menyen **Tilordne/utelate brukere manuelt** velger du **Tilordne/utelate brukere manuelt**.
 4. I listen **Tilordne brukere til, eller utelat brukere fra rolle** vises brukere som ikke er tilordnet rollen, i modusen **Tilordningsmodus** er angitt til **Ingen**. Velg én eller flere brukere som skal tilordnes rollen.
 5. I **Handlingsrute** velger du **Tilordne til rolle**. **Tilordningsmodus** er oppdatert til **Manuell**, og brukerne har nå en ny rolle tilordnet.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

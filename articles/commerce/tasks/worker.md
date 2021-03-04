@@ -57,3 +57,6 @@ Denne fremgangsmåten beskriver hvordan du konfigurerer en arbeider som en selge
 6. Angi eller velg en verdi i Standardgruppe-feltet.
 7. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

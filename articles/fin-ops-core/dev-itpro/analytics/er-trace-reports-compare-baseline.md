@@ -243,3 +243,6 @@ Grunnlinjen legges til for formatet **Format for å lære ER-grunnlinjer**.
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 - [Konfigurere rammeverket for elektronisk rapportering (ER)](electronic-reporting-er-configure-parameters.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

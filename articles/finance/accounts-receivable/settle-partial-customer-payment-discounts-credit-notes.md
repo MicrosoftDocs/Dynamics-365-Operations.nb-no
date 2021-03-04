@@ -61,3 +61,6 @@ Utligningen skal være 100,00, og inkluderer en betaling på 99,00 og en rabatt 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

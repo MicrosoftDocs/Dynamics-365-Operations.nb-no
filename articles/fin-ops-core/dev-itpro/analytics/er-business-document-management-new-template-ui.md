@@ -64,3 +64,6 @@ Følg disse trinnene for å aktivere denne funksjonen for alle juridiske enheter
 **Nytt dokument**-knappen brukes til å opprette og redigere en mal i en ER-formatkonfigurasjon som leveres av en annen leverandør. I dette eksemplet er leverandøren Microsoft. Når du velger **Nytt dokument**, kan du vise alle malene som eies av gjeldende leverandør og andre leverandører. Når du har valgt malen, åpnes den for redigering. Den redigerte malen blir deretter lagret i en ny ER-formatkonfigurasjon som genereres automatisk.
 
 Hvis du vil ha mer informasjon, kan du se [Oversikt over forretningsdokumentadministrering](er-business-document-management.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -51,3 +51,6 @@ Det er svært viktig at du forstår hvordan avmerkingsboksen **Lagre de manuelle
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

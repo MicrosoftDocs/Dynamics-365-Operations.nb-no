@@ -80,3 +80,6 @@ Avskrivningsbeløpet er det samme hvert år: (anskaffelseskostnad-restverdi) ÷ 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

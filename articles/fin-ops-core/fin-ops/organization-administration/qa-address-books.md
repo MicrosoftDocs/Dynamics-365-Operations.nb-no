@@ -67,3 +67,6 @@ Du kan angi partsposter i den globale adresseboken eller på den rette enhetssid
 ## <a name="can-i-translate-address-information-for-party-records"></a>Kan jeg oversette adresseinformasjon for partsposter?
 
 Du kan definere oversettelser av adresseinformasjon, slik at informasjonen vises på ditt brukerspråk (systemspråk) i programmet, men på et annet språk på dokumenter som salgsordrer. Du kan angi oversettelser for land-/områdenavn, adresseformål og navnerekkefølger. Systemspråket ditt er eksempelvis dansk, og du oppretter en salgsordre for en kunde i Frankrike. I så fall kan du vise kundeposten på dansk i programmet, men vise adresseinformasjonen på fransk på den utskrevne salgsordren. Når du definerer oversettelser, bør du angi en oversettelse for hvert element i listen. Alle elementer som du ikke angir en oversettelse for, vises på systemspråket. Systemspråket ditt er eksempelvis dansk, og du sender et dokument til en kunde i Spania. Hvis du ikke har angitt spanske (ESP) oversettelser for adresseinformasjonen, vil denne informasjonen vises på dansk både i programmet og på det utskrevne dokumentet.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

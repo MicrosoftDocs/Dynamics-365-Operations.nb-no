@@ -101,3 +101,6 @@ Denne fremgangsmåten beskriver hvordan du effektivt oppretter tilbud som tilbyr
 11. Gå til Salg og markedsføring > Salgstilbud > Alle tilbud.
     * Kontroller at tilbud er opprettet for alle kunder som er angitt i rutinen Masseoppdatering, basert på den valgte malen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

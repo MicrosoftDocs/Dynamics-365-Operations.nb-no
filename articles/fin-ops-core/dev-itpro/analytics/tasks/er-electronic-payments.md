@@ -81,3 +81,6 @@ For å fullføre disse trinnene må du først fullføre trinnene i fremgangsmåt
 25. Klikk OK.
     * Analyser den opprettede betalingsfilen i XML-format. Sammenligne den med det utformede dokumentoppsettet og de definerte attributtene for betalingtransaksjonen.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

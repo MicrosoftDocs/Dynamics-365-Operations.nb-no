@@ -376,3 +376,6 @@ Legg merke til at nettleseren tilbyr en zip-fil for nedlasting. Denne filen inne
 
 - [Oversikt over elektronisk rapportering](general-electronic-reporting.md)
 - [Forbedre ytelse for ER-løsninger ved å legge til datakilder med parameterisert BEREGNET FELT](er-calculated-field-ds-performance.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

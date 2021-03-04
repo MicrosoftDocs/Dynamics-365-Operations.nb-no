@@ -60,3 +60,6 @@ Når en salgsordre posteres, er det posterte kostbeløpet USD 10,00, fordi løpe
 
 > [!NOTE]
 > For sammenligning: Hvis du merker av for **Ta med fysisk verdi** for denne varen, når en salgsordre posteres, blir det posterte kostnadsbeløpet USD 12,00.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

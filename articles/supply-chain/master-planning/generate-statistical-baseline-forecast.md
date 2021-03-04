@@ -78,3 +78,6 @@ Hvis prognosen ikke genereres for et stort sett av varer, men, for eksempel for 
 - [Foreta manuelle justeringer i basislinjeprognosen](manual-adjustments-baseline-forecast.md)
 
 - [Autorisere en justert prognose](authorize-adjusted-forecast.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

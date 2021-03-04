@@ -113,3 +113,6 @@ Du kan ikke tilordne en fast kompensasjonsplan til en ansatt før du definerer r
 
 8. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

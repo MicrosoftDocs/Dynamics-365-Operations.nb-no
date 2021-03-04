@@ -65,3 +65,6 @@ Følgende fremgangsmåte beskriver forholdet mellom aktiva, arbeidsordrer, arbei
 
 7. Hvis du vil se en oversikt over prosjektene som er knyttet til et anleggsmiddel, velger du **Anleggsmidler** > **Anleggsmidler** > **Anleggsmidler** og deretter, i feltet **Anleggsmidlets nummer**, velger du koblingen til anleggsmidlet for å åpne detaljvisningen. Utvid ruten **Beslektet informasjon** til høyre på siden, og velg hurtigfanen **Tilknyttede prosjekter**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

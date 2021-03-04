@@ -55,3 +55,6 @@ Denne prosedyren hjelper deg å opprette en finansdimensjon for handelskanaler m
 24. Klikk koblingen i den valgte raden i listen.
 25. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

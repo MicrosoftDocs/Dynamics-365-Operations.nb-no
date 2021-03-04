@@ -140,3 +140,6 @@ Bølgen behandles og oppretter arbeid for de reserverte antallene på lastlinjen
 Hvis en forsendelse har statusen **Bølget** eller høyere, vil ikke oppdateringer av antallet på en salgsordrelinje gjenspeiles på eller valideres mot en lastlinje som er knyttet til forsendelsen. Endringer i antallet på en lastlinje må gjøres direkte på lastlinjen.
 
 Validering utføres etter at arbeid er opprettet for lastlinjen og det er gjort en reservering. En reduksjon av antallet på salgsordrelinjen blir deretter validert mot reservasjonen av arbeidslinjen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

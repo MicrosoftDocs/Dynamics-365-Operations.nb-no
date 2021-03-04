@@ -190,3 +190,6 @@ Følgende detaljer blir importert og inkludert i den nye ansattposten:
 
 [Konfigurere virtuelle enheter for Common Data Service](./hr-admin-integration-common-data-service-virtual-entities.md)<br>
 [Hva er Common Data Service?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

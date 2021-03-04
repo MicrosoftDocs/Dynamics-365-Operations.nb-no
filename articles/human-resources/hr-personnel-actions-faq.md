@@ -92,3 +92,6 @@ For eksempel
 - Ikrafttredelsesdatoen i overskriften til en **Ansett en arbeider**-handling er datoen du anga i feltet  **Startdato for ansettelse**.
 - Ikrafttredelsesdatoen i overskriften til en **Overfør en arbeider**-handling er datoen du anga i feltet  **Startdato for tilordning** for arbeideren.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -67,3 +67,6 @@ Denne fremgangsmåten viser hvordan du oppretter et nytt kategorihierarki og til
 8. Klikk koblingen i den valgte raden i listen.
 9. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

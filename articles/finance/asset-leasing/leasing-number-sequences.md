@@ -36,3 +36,6 @@ Dette emnet beskriver hvordan du oppretter nummerserier for leie-IDer. Det forkl
 3. I sidefeltet velger du **Nummerserier**.
 4. Velg nummerserien for **Leie-ID**-referansen. Denne nummerserien vil bli brukt til å generere den unike IDen for hver leieavtale.
 5. Velg nummerserien for **Prosess-ID**-referansen. Denne nummerserien vil bli brukt til å generere den unike IDen for hver indeksrevalueringsprosess.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

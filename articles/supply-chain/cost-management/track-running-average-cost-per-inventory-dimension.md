@@ -56,3 +56,6 @@ Løpende gjennomsnittlig kostpris for lageret HL og parti AAA er USD 11,20, og d
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

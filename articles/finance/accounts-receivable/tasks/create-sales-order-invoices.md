@@ -68,3 +68,6 @@ Denne oppgaveveiledningen beskriver fakturering av salgsordren, inkludert fletti
 10. Klikk på **Avbryt**.
 11. Klikk **Ja**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

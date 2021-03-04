@@ -240,3 +240,6 @@ I tillegg støtter **bare** prissettingsmotoren følgende prissettingsfunksjoner
 Pris er en av de viktigste faktorene som styrer kjøpsavgjørelsene for mange kunder, og mange kunder sammenligner priser på ulike områder før de gjør et kjøp. For å bidra til å sikre at de gir konkurransedyktige priser, følger forhandleren nøye med på konkurrentene og utfører ofte kampanjer. For å hjelpe disse forhandlerne med å tiltrekke seg kunder, er det svært viktig at produktsøket, bla gjennom-funksjonen, listene og produktlister-siden viser de mest nøyaktige prisene.
 
 I en kommende frigivelse av Commerce vil API-et for **GetActivePrices** returnere priser som inkluderer enkle rabatter (for eksempel rabatter som ikke er avhengige av andre varer i handlekurven). På denne måten er prisene som vises, nær det faktiske beløpet kundene skal betale for varer. Denne API-en inneholder alle typer enkle rabatter: tilknytningsbaserte, lojalitetsbaserte, katalogbaserte og kanalbaserte rabatter. I tillegg vil API-en returnere navnene og gyldighetsinformasjonen for de brukte rabattene, slik at forhandlerne kan gi en mer detaljert beskrivelse av prisen og skape en følelse av viktighet hvis rabattgyldigheten utløper snart.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

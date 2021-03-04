@@ -87,3 +87,6 @@ Hvis du vil legge til en trekkspillmodul på en side med vanlige spørsmål, og 
 [Kategorimodul](add-tab.md)
 
 [Tekstblokkmodul](add-content-rich-block.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

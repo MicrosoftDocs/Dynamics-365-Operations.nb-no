@@ -384,3 +384,6 @@ Når alle nødvendige elementer er på plass, kan du konfigurere sporing til å 
 1. Angi at regelmessigheten skal kjøres automatisk hvis du vil.
 
 For øvelsene i scenarioet må du **ikke** sette opp automatisk sporing.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

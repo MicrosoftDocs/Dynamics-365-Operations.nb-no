@@ -113,3 +113,6 @@ Du vil kjøre den opprettede modelltilordningen for testformål for å se hvorda
     * Velg Bla gjennom og deretter Response4.xml-filen.
 16. Velg OK.
     * Se gjennom de genererte utdataene. Svartypen er nå gjenkjent som lik for Response1.xml-filen.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -71,3 +71,6 @@ Denne oppgaven fokuserer på å opprette en ny jobb. Den vil bli fullført ved h
 33. Aktiver/deaktiver utvidelsen av delen Utdanning.
 34. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

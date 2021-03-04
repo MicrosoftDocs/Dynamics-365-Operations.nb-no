@@ -65,3 +65,6 @@ Salgsstedsbrukerens språkinnstillinger settes fra **Alle arbeidere** på siden 
 | **Firma** | Standard                    | Standard                                                       |
 | **Butikk**   | Overstyrer firma          | Overstyrer firma                                             |
 | **Bruker**    | Overstyrer butikk eller firma | Aldri                                                         |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

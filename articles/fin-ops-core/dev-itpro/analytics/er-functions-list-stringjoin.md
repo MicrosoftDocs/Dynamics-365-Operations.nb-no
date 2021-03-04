@@ -63,3 +63,6 @@ Hvis du angir `SPLIT("abc" , 1)` som datakilde **DS**, returnerer uttrykket `STR
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Listefunksjoner](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

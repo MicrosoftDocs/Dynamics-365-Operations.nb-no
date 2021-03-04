@@ -49,3 +49,6 @@ Du kan annullere en returordre i stedet for å slette den når du ønsker å lag
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

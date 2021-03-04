@@ -201,3 +201,6 @@ En ny bølge ble opprettet for denne forsendelsen, fordi den bruker en annen tra
 1. Velg bølge-ID-en som ble opprettet fra den tredje salgsordren.
 1. Velg bølge-ID-koblingen for å åpne siden for bølgedetaljer.
 1. Legg merke til at forsendelsen er lagt til på **Bølgelinjer**-hurtigfanen sammen med forsendelsen for den første salgsordren.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

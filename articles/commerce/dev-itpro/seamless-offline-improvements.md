@@ -56,3 +56,6 @@ Commerce-parametere bufres vanligvis. Etter at innstillingen for denne parameter
 
 - [Frakoblet salgsstedsfunksjonalitet](https://docs.microsoft.com/dynamics365/retail/pos-offline-functionality)
 - [Tilkoblede og frakoblede salgsstedsoperasjoner (POS)](https://docs.microsoft.com/dynamics365/retail/pos-operations)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

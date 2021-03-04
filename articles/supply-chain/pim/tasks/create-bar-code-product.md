@@ -43,3 +43,6 @@ Dette emnet viser hvordan du oppretter en strekkode manuelt ved hjelp av varenum
 12. Velg **Lagre**.
 13. Lukk siden. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

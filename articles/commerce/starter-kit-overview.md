@@ -66,3 +66,6 @@ Følgende modultyper finnes i modulbiblioteket:
 [Topptekstmodul](author-header-module.md)
 
 [Bunntekstmodul](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -131,3 +131,6 @@ Dette scenariet viser hvordan funksjonen fungerer for lagre som er satt til **Ti
 
 > [!NOTE]
 > Det samme resultatet forventes når den andre linjen er delvis reservert. I dette tilfellet vil arbeidet bli opprettet for det reserverte linjeantallet, men ikke for det ikke-reserverte antallet.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

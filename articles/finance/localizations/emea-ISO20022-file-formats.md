@@ -129,3 +129,6 @@ Hvis du vil ha mer informasjon om elektronisk rapportering, kan du se [Oversikt 
 - [Definere en betalingsmåte for ISO20022-kredittoverføring](./tasks/set-up-method-payment-iso20022-credit-transfer.md)
 - [Definere en betalingsmåte for ISO20022-avtalegiro](./tasks/setup-method-payment-iso20022-direct-debit.md)
 - [Definere leverandørers bankkontoer for ISO20022-kreditoverføringer](./tasks/set-up-vendor-iso20022-credit-transfers.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

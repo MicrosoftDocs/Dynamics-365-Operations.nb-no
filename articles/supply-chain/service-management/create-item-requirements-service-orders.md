@@ -72,3 +72,6 @@ Varebehov for serviceordrer behandles via et prosjekt. Hvis du vil opprette et v
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

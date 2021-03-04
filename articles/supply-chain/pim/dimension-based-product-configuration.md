@@ -88,3 +88,6 @@ Følgende åtte oppgavelinjer er oppført i den rekkefølgen du skal fylle dem u
 7.  [Opprette konfigurasjonsregler](tasks/create-configuration-rules.md)
 8.  [Opprette dimensjonsbaserte konfigurasjoner](tasks/create-dimension-based-configurations.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -97,3 +97,6 @@ Hvis du bruker en betinget mva, utligner du imidlertid med skattemyndighetene n�
 Hvis du bruker etterdatert sjekk som betalingsmåte når betalingen opprettes, blir ikke bankkontoen tømt. I noen land blir mva "realisert" gjeld når betalingen fjerner banken, som betyr at den etterdaterte sjekken er utlignet. Du kan aktivere den ved å velge alternativet for **Realiser betinget merverdiavgift når etterdaterte sjekker trekkes** i **Kontant- og bankbehandling > Oppsett > Parametere for kontant- og bankbehandling > Etterdaterte sjekker**.
 
 Hvis du vil ha mer informasjon, kan du se [Definere kildeskattgrupper](tasks/set-up-withholding-tax.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

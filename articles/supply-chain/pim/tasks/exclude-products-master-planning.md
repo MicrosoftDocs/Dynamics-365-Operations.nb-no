@@ -44,3 +44,6 @@ Denne prosedyren viser hvordan du oppretter en ny produktlivssyklustilstand som 
 5. Merk den valgte raden i listen.
 6. Angi eller velg en verdi i feltet Livssyklustilstand for produkt.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -49,3 +49,6 @@ Denne prosedyren fokuserer på å endre den brukte Kanban-regelen for en gitt Ka
 7. Klikk Finish.
     * Kanban-jobben bruker nå en annen Kanban-regel. Dette kan være nyttig for å nivålaste arbeidsceller.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

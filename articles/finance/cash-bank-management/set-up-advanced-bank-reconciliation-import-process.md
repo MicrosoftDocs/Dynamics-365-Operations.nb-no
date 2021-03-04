@@ -199,3 +199,6 @@ Hvis importen er vellykket, vises en melding om at utdraget ble importert. Hvis 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

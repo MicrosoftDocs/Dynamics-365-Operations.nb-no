@@ -514,3 +514,6 @@ Hvis du vil begynne å bruke den nye funksjonaliteten i versjon 3.3 av **BBS (St
 - [Oversikt over elektronisk rapportering](general-electronic-reporting.md)
 - [Laste ned ER-konfigurasjoner fra Lifecycle Services](download-electronic-reporting-configuration-lcs.md)
 - [Last ned ER-konfigurasjoner fra det globale repositoriet for konfigurasjonstjenesten](er-download-configurations-global-repo.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

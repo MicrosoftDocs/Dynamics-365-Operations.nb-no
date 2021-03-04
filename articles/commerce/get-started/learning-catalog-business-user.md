@@ -52,3 +52,6 @@ Hvis du vil ha opplæring om funksjoner som deles med andre Finance and Operatio
 | Innhold | beskrivelse  | Formater   | Lengde    |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|
 | [Konfigurere og arbeide med e-Handel i Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/configure-work-e-commerce/) | Internett-kanalene og e-handelsområdet i Dynamics 365 Commerce gjør det mulig for forhandlere å skape en tilstedeværelse på nettet for merket sitt. | Gratis, selvbetjent elektronisk læringsforløp | 4 timer   |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

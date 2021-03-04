@@ -49,3 +49,6 @@ Tenk deg følgende: en metallplate er nødvendig for en sveiseoperasjon. Under o
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

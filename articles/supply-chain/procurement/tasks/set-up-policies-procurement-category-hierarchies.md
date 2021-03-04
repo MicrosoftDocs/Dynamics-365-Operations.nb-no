@@ -52,3 +52,6 @@ Bruk denne fremgangsmåten for å konfigurere regler for bestilling av produkter
 6. Velg et alternativ i **Leverandørvalg**-feltet. Velg en regel for å kontrollere hvilke type leverandører som kan velges for kategorien når rekvisisjoner opprettes.  
 7. Klikk **Lukk**. Policyreglene du har definert, har vært for rekvisisjoner av typen Forbruk. Hvis du vil definere policyer for rekvisisjoner av typen Etterfylling, kan du opprette en regel for policyregeltypen kalt Policyregel for tilgang til etterfyllingskategori.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

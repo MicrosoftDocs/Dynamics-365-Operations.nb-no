@@ -49,3 +49,6 @@ Ressursfunksjoner beskriver hva operasjonsressursene kan utføre. Under planlegg
 5. Angi et nummer i Nivå-feltet.
     * Når du angir at en jobb eller operasjon krever en bestemt funksjon, kan du også angi det minste tillatelsesnivå som kreves. Bruk ressursnivået til å skille mellom ressurser som kan utføre den samme jobben, men med forskjellige hastigheter, styrker, størrelser og så videre.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -45,3 +45,6 @@ En produksjonsordre kan opprettes i følgende scenarier:
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

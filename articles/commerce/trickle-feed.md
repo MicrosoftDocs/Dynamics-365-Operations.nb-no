@@ -54,3 +54,6 @@ Med fordeling av feedbasert ordreoppretting, som ble innført i Retail versjon 1
 > Menyelementene **Retail og Commerce > IT for Retail og Commerce > Salgsstedspostering > Beregn utdrag satsvis** og **Retail og Commerce > IT for Retail og Commerce > Salgsstedspostering > Poster utdrag satsvis** blir fjernet med denne nye funksjonen.
 
 Du kan også opprette typer transaksjons- og regnskapsoppgjør manuelt. Gå til **Retail og Commerce > Kanaler > Butikker** og klikk **Utdrag**. Klikk **Ny**, og velg deretter typen utdrag du vil opprette. Felt på siden **Utdrag** og handlinger under **Utdragsgruppe** på siden viser relevante data og handlinger basert på den valgte utdragstypen.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

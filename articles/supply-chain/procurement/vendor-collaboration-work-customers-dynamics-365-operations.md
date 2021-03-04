@@ -147,3 +147,6 @@ Tilgjengelig informasjon er leverandørnavnet, adresser, kontaktinformasjon, kon
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Administrere brukere av leverandørsamarbeid](manage-vendor-collaboration-users.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

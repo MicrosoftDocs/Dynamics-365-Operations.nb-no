@@ -296,3 +296,6 @@ Før varene i gruppen kan plasseres, må gruppen lukkes.
 ## <a name="notes-and-tips"></a>Merknader og tips
 
 For tilfeller der gruppe-ID-en blir det overordnede nummerskiltet for en nestet pall, gis plasseringsposisjonen automatisk når gruppe-ID-en skannes. Det må ikke skannes flere nummerskilter, selv om det er angitt manuell generering av nummerskilter.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -88,3 +88,6 @@ Når du har en rapport som ikke samsvarer med det du forventer i D365, er det no
 2.  Eksporter rapporten til Excel
 
 Du skal nå kunne kopiere dataene fra FR Excel-rapporten til D365-råbalanserapporten og sammenligne sluttsaldokolonnene.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

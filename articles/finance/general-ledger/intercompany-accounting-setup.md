@@ -50,3 +50,6 @@ En motsvarende relasjon kan enkelt defineres på siden **Konserninternt regnskap
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

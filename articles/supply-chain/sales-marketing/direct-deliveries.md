@@ -53,3 +53,6 @@ Når du oppretter en direktelevering, ankommer varene du selger, aldri lageret. 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

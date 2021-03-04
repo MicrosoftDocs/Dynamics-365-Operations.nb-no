@@ -38,3 +38,6 @@ Finansdimensjoner og hovedkontoer er nøkkelkomponentene i planleggingsfasen for
 - Unngå å bruke det valgte skilletegnet for kontoplanen i finansdimensjons- og hovedkontoverdier.
 
 Ved å følge disse anbefalte fremgangsmåtene, kan du hjelpe å garantere konsekvent presentasjon av den brukerdefinerte ordren i hele systemet.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -52,3 +52,6 @@ Hvis du vil ha mer informasjon om livssyklustilstander for arbeidsordrer og pros
 8. Velg **Lagre**.
 
 ![Arbeidsordretyper](media/16-setup-for-work-orders.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

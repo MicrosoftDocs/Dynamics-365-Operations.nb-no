@@ -80,3 +80,6 @@ Når du har annullert bestillinger som var i *Bekreftet* tilstand, vises de annu
 
 Dette problemet oppstår bare for bestillinger som er underlagt endringsadministrasjon. Dette skjer fordi avlysningen regnes som en endring som må godkjennes. Godkjenningen kan gjøres automatisk av systemet. Prosessen er derfor å sende den annullerte bestillingen til godkjenningsarbeidsflyten slik at den kan gå til *Godkjent* tilstand. På dette punktet vises ikke bestillingen lenger i listen over bestillingsforslag i arbeidsområdet **Bestillingsklargjøring**.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

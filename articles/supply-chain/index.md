@@ -106,3 +106,6 @@ Det finnes mange emner om produksjon og forsyningskjedeadministrasjon i [teamblo
 ## <a name="elearning-courses"></a>e-læringskurs
 
 Gå til [Dynamics 365 Supply Chain Management på Microsoft Learn](https://docs.microsoft.com/learn/browse/?products=dynamics-scm&resource_type=learning%20path) for elektroniske kurs og opplæring.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

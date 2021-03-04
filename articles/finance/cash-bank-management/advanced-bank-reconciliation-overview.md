@@ -51,3 +51,6 @@ Funksjonen for avanserte bankavstemming lar deg importere bankkontoutdrag. Det i
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

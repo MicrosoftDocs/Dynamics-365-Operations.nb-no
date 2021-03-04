@@ -48,3 +48,6 @@ Illustrasjonen nedenfor viser hvordan behovsnedbrytningen for hovedplanlegging f
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

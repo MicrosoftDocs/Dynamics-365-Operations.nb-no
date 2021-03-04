@@ -75,3 +75,6 @@ Serviceoppgaverelasjoner som er opprettet i en serviceordre, er tilgjengelige i 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

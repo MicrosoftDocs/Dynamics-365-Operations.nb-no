@@ -53,3 +53,6 @@ Hvis du vil opprette et leietablå, følger du disse trinnene.
     | Korttidsterskel                     | Angi antall måneder som skal brukes som en terskel for kortsiktige leieavtaler. Hvis leieperioden er mindre enn eller lik antallet måneder du angir her, vil systemet klassifisere leieavtalen som en kortsiktig leieavtale, og utsatt leie vil bli brukt. |
     | Terskel for lav verdi                      | Angi et beløp som skal brukes som terskel for lavverdileie. Hvis virkelig verdi for aktivumet er mindre enn eller lik verdien du angir her, vil systemet klassifisere leieavtalen som en lavverdileie, og utsatt leie vil bli brukt. |
     | Betal til leverandør                            | Sett dette alternativet til **Ja** for å tillate at leiebetalinger kan posteres, som en faktura, til leverandørkontoen som er angitt for hver leieavtale. Når en leiebetaling posteres, vil leverandørkontoen bli kreditert. Hvis dette alternativet er satt til **Nei**, vil kontoen som er angitt for **Leiebetaling**-posteringstypen på siden **Parametere for leiepostering**, bli kreditert i stedet. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

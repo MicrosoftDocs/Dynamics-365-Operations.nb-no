@@ -66,3 +66,6 @@ Du kan tilordne serviceobjekter til gruppen ved hjelp av **Serviceobjekter**-skj
 [Opprette serviceobjekter](create-service-objects.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

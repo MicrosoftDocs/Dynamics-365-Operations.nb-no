@@ -74,3 +74,6 @@ Denne prosedyren fokuserer på oppsettet som kreves for å opprette en Kanban-re
     * Dette vil opprette 5 Kanbaner.  
     * Legg merke til at 5 Kanbaner, hver for 10, ble opprettet for denne kanban-regel for produksjon. Dette er det siste trinnet i prosedyren.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

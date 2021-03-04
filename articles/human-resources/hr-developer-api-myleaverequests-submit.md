@@ -108,3 +108,5 @@ Som en del av kallet til innsendings-API-et utfører Human Resources en valideri
 
 - [Oversikt over MyLeaveRequests](hr-developer-api-myleaverequests-overview.md)
 - [Godkjenning](hr-developer-api-authentication.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -50,3 +50,6 @@ Kostarket vises som en del av siden **Beregn varekostnad**. Kostarket kan vises 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

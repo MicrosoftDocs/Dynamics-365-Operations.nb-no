@@ -107,3 +107,6 @@ Hvis du vil eksportere enhetskonverteringer til Excel, velger du **Åpne i Micro
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Administrere måleenhet](tasks/manage-unit-measure.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

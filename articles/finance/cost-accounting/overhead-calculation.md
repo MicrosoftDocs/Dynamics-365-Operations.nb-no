@@ -1415,3 +1415,6 @@ I finansbokføring blir en kostnad på 10 000,00 for strøm postert til en midl
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

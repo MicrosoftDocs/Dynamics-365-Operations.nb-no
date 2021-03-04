@@ -72,3 +72,6 @@ Denne fremgangsmåten viser hvordan du setter opp data for automatisk fraktavste
 11. Angi eller velg en verdi i feltet Årsakskode for underbetaling.
 12. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

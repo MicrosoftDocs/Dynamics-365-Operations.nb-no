@@ -88,3 +88,6 @@ Et firma som bruker funksjonaliteten for budsjettplanlegging, kan opprette og br
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

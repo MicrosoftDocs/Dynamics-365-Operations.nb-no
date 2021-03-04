@@ -51,3 +51,6 @@ Denne oppgaven hjelper deg med å opprette en bankfasilitetsavtale for å behand
 18. Klikk Utvid.
 19. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

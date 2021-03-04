@@ -54,3 +54,6 @@ Anleggsmidlet kan nå avskrives ved hjelp av standard avskrivningsfunksjonalitet
 
 > [!NOTE]
 > Hvis du knytter et anleggsmiddel til en leieavtale, deaktiveres knappene **Avskrivning av anleggsmiddel** og **Verdiforringelse for leieavtale** i Aktivaleie. Du kan vise transaksjoner for avskrivning av aktiva og verdiforringelse for leieavtale fra Anleggsmidler. Knappen **Aktivatransaksjoner**, som brukes til å åpne et forespørselsskjema, blir også deaktivert. Du kan også åpne forespørselsskjemaet **Aktivatransaksjoner** i Anleggsmidler.  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -53,3 +53,6 @@ De følgende opplæringskart viser de store konseptene og oppgavene som utgjør 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

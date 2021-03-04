@@ -247,3 +247,6 @@ I eksemplet nedenfor du kan se den høyeste og laveste statusen på tilbudsfores
 | Godta et av budene. (eller minst én linje) |                          Mottatt                           |                           Godtatt                           |                    Mottatt                    |                    Godtatt                     |                   Mottatt                   |                   Godtatt                    |
 |           Avvis alle de andre budene.           |                          Avslått                           |                           Godtatt                           |                    Avslått                    |                    Godtatt                     |                   Avslått                   |                   Godtatt                    |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -121,3 +121,6 @@ Klikk **Oppsett** for å tilpasse informasjonen som vises i trevisningen i Stykk
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

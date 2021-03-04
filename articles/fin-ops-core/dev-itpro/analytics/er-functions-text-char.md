@@ -59,3 +59,6 @@ Strengen som denne funksjonen returnerer, avhenger av kodingen som er valgt i de
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Tekstfunksjoner](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

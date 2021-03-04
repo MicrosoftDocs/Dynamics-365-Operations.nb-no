@@ -150,3 +150,6 @@ Hvis du vil ha mer informasjon om egendefinerte felt, kan du se [Opprette og arb
 [Fjerne en forekomst](hr-admin-setup-remove-instance.md)</br>
 [Oppdatere prosess](hr-admin-setup-update-process.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

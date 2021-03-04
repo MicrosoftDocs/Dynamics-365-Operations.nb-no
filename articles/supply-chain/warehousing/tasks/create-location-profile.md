@@ -43,3 +43,6 @@ Dette emnet forklarer hvordan du oppretter en lokasjonsprofil i Dynamics 365 Sup
 10. Velg **Ja** i feltet **Tillat syklustelling**.
 11. Velg **Lagre**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

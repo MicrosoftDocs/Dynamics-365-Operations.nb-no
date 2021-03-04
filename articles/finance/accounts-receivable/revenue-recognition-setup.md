@@ -193,3 +193,6 @@ Inntektsføring kan også brukes for salgsordrer som opprettes via et Etter regn
 
 - **Utsatt fakturainntekt** (under **Inntektskontoer**) – angi hovedkontoen for inntektsprisen som posterer til utsatt inntekt (i stedet for inntekt). Inntektsprisen utsettes hvis salgsordrelinjen har en inntektsplan.
 - **Utsatt kostnad** (under **Kostnadskontoer**) – angi hovedkontoen for kostnadene for solgte varers beløp som posterer til utsatt kost for solgte varer hvis inntekten også utsettes.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

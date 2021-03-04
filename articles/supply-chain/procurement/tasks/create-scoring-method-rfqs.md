@@ -47,3 +47,6 @@ Denne fremgangsmåten viser hvordan du oppretter en poengberegningsmetode. En po
 14. Angi et tall i Område fra-feltet.
 15. Angi et tall i Område til-feltet.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -59,3 +59,6 @@ I tillegg til et bankkontoutdrag kan banker gi bestemte meldinger som inneholder
 -   (SVE) BankGirot-retur – returformat for leverandørbetalinger, som tilsvarer Bankgirot-eksportformat
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

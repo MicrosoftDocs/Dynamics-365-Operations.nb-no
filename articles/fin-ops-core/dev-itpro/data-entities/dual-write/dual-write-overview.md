@@ -109,3 +109,6 @@ For å opprette paritet med Finance and Operations-apper, gjør dobbelt skriving
 
 Hvis du vil ha mer informasjon om kommende endringer, kan du se [Nyheter eller endringer i dobbel skriving](whats-new-dual-write.md).
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -140,3 +140,6 @@ Brukeren som signerer sertifiseringen, må manuelt angi antall sider (for bekref
 ### <a name="page-numbers"></a>Sidenumre
 
 Gjeldende side og antall sider skrives ut nederst i dokumentet.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

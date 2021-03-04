@@ -83,3 +83,6 @@ Knappene i handlingsruten er ordnet i kategorier. Følgende tabell beskriver kor
 | Feil                              | Åpne siden **Aktivafeil**, der du kan vise en liste over registreringer av aktivafeil som er knyttet til det valgte arbeidsstedet. |
 | Oppdater tilstand for arbeidssted    | Oppdater tilstanden til det valgte arbeidsstedet.                                                                                        |
 | Logg for livsløpstilstand                 | Vis en logg som viser tilstandene til det valgte arbeidsstedet.                                                                        |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

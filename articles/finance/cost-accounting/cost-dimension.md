@@ -55,3 +55,6 @@ Etter at data er import i Kostnadsregnskap kan du bruke det for å bygge ulike p
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

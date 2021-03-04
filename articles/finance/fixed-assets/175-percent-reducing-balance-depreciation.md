@@ -88,3 +88,6 @@ Avskrivingsmetoden 175 % saldoavskrivning dividerer 175 prosent med antall leve
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

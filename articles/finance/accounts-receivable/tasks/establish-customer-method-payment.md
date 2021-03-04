@@ -46,3 +46,6 @@ Dette emnet forklarer hvordan du oppretter en betalingsmåte for kundebetalinger
 15. Bruk kategorien **Betalingsattributter** til å definere hvilke betalingsattributter du vil bruke for denne betalingsmåten.
 16. Velg **Lagre**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

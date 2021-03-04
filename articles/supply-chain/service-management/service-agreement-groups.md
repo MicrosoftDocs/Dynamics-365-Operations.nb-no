@@ -42,3 +42,6 @@ I feltet **Serviceavtalegruppe** på siden **Servicestyringsparametere** kan du 
 ## <a name="related-topics"></a>Relaterte emner
 
 [Opprette serviceavtalegrupper](create-service-agreement-groups.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

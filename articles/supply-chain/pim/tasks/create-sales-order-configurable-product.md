@@ -53,3 +53,6 @@ Denne prosedyren viser hvordan du bruker en konfigurasjonsmal for et produkt på
 
 ## <a name="select-the-product-configuration"></a>Velge produktkonfigurasjonen
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

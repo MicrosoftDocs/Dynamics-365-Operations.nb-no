@@ -55,3 +55,6 @@ For å hjelpe deg med å filtrere viktigheten av en serviceordre støtter Gantt-
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

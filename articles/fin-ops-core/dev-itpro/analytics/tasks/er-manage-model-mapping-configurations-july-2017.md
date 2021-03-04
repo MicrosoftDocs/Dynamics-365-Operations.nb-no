@@ -161,3 +161,6 @@ Fordi ER konfigurasjoner deles mellom firmaer, kan du fullføre oppgaveveilednin
 7. Klikk OK.
     * Standard modelltilordningskonfigurasjon brukes av denne formatkonfigurasjonen for generering av det elektroniske dokumentet (opprettede utdata inneholder firmakoden).  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -132,3 +132,6 @@ Når du kjører en prosesshendelse, kan du anbefale justeringer for en ansatts p
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

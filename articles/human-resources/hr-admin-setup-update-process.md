@@ -105,3 +105,6 @@ Når du tester forhåndsversjoner av funksjoner eller prøver nye funksjoner, ka
 [Hva er nytt eller endret i Dynamics 365 Human Resource](hr-admin-whats-new.md)</br>
 [Policy for programvarelivssyklus](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

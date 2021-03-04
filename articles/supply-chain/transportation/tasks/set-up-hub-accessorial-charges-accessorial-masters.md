@@ -54,3 +54,6 @@ Denne fremgangsmåten viser hvordan du oppretter en tilbehørsmal for en hub og 
 9. Klikk Lagre.
 10. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

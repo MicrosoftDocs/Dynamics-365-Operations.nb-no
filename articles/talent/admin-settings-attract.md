@@ -69,3 +69,6 @@ Du kan også konfigurere alternativer som er knyttet til kandidatopplevelsen. Me
 Du kan også definere og håndheve en utløpsdato for tilbudene. Hvis du setter alternativet **Krev en utløpsdato for alle tilbud** til **Ja**, utløper tilbud etter hvor mange timer eller dager du angir.
 
 Hvis du vil ha mer informasjon om tilbudsbehandling, kan du se [Konfigurere tilbudsbehandling](./offer-setup.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

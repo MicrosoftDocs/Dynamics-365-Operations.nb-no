@@ -65,3 +65,6 @@ I argumentene til logiske funksjoner kan du bruke datakildereferanser, tall- og 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Logiske funksjoner](er-functions-category-logical.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

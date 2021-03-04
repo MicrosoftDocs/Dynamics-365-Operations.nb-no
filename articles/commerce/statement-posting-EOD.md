@@ -174,3 +174,6 @@ Andre forbedringer i bakgrunnen som brukerne kan se er gjort i funksjonen for ut
 
     - Gå til **Retail og Commerce** \> **Hovedkvarteroppsett** \> **Parametere** \> **Parametere for Commerce**. Deretter, på **Postering**-fanen på hurtigfanen **Lageroppdatering** i feltet **Detaljnivå**, velger du **Sammendrag**.
     - Gå til **Retail og Commerce** \> **Hovedkvarteroppsett** \> **Parametere** \> **Parametere for Commerce**. Deretter, på **Postering**-fanen på hurtigfanen **Aggregering**, angir du **Bilagstransaksjoner** til **Ja**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

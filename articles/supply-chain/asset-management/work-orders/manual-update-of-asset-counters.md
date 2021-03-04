@@ -64,3 +64,6 @@ På siden **Aktivatellere** (**Aktivabehandling** > **Forespørsler** > **Aktiva
 >[!NOTE]
 >Du kan definere et område for å definere avvik i manuelle tellerregistreringer. Du kan også angi hvilken type melding som skal vises hvis registreringer er utenfor det definerte området. Hvis du vil ha informasjon om hvordan du definerer tellere, se [Tellere](../setup-for-objects/counters.md).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

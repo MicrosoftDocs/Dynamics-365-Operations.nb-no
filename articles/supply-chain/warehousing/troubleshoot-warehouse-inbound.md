@@ -65,3 +65,6 @@ En ny inngående lastbehandlingsfunksjon, *Overmottak for lastantall*, løser de
 1. Overmottak for belastningsantall
 
 Hvis du vil ha mer informasjon, kan du se [Poster registrerte produktantall mot bestillinger](inbound-load-handling.md#post-registered-quantities).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

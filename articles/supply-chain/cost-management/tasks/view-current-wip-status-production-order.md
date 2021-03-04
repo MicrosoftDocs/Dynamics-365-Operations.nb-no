@@ -38,3 +38,6 @@ Denne prosedyren viser hvordan du viser VIA-oppgaven på en produksjonsordre. De
 6. Angi datoen som 2012-12-01 i feltet Fra dato.
 7. Angi datoen som 2012-12-31 i feltet Til dato.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

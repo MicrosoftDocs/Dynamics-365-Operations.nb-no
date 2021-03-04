@@ -122,3 +122,6 @@ April posterer deretter betalingen. Når hun åpner siden **Leverandørtransaksj
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

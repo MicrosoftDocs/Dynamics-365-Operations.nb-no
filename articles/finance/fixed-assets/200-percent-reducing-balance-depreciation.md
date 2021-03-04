@@ -90,3 +90,6 @@ Metoden 200 % saldoavskrivning dividerer 200 prosent med antall levetidsår. Av
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

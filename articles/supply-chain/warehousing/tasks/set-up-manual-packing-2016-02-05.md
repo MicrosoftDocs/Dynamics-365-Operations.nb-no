@@ -95,3 +95,6 @@ Pakkeprosessen lar deg validere og pakke produkter i containere. I denne prosess
 8. Angi eller velg en verdi i feltet Vektenhet.
 9. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

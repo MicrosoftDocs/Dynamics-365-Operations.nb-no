@@ -69,3 +69,6 @@ Demonstrasjonsdatafirmaet USMF brukes til å opprette dette opptaket.
 10. Klikk Lagre.
 11. Lukk skjemaet.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

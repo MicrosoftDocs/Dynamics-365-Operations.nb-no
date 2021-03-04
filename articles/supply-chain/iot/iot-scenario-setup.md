@@ -143,3 +143,6 @@ Hvis du vil deaktivere et scenario, gjør du følgende.
 2. Velg **Konfigurer** under flis for scenarioet.
 3. Velg **Neste** for å gå til den siste veivisersiden.
 4. Sett alternativet til å deaktivere scenarioet.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

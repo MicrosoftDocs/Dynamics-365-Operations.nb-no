@@ -42,3 +42,6 @@ Denne fremgangsmåten viser hvordan du oppretter en ny produktstandard med dimen
     * Velg teknologien Dimensjonsbasert konfigurasjon.  
 9. Klikk OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

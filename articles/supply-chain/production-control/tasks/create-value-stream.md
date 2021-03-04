@@ -49,3 +49,6 @@ Verdistrømmer er driftsenheter som grupperer én eller flere produksjonsflyter.
 2. Lukk siden.
 3. Oppdater siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

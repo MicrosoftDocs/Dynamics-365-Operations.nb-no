@@ -39,3 +39,6 @@ Du kan bruke servicemalgrupper til å sortere og filtrere servicemaler.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

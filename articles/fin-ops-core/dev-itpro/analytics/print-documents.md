@@ -74,3 +74,6 @@ Diagrammet nedenfor viser de grunnleggende komponentene som bidrar til å støtt
 [![Servicekomponenter for nettverksutskrift\_2016](./media/service-components-for-network-printing_2016.png)](./media/service-components-for-network-printing_2016.png)
 
 Legg merke til at én enkelt skriver kan registreres med flere dokumentrutingsagenter. Hvis du vil løse skriverinnstillingene, bruker den vertsbaserte tjenesten nettverksbanen som entydig identifiserer hver nettverksskriver. Resultatet er at selv om en skriver er registrert av flere klienter, vises den som et enkelt valg i listen over skrivere som er tilgjengelige programmer.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

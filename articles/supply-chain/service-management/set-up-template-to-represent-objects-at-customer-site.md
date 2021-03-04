@@ -55,3 +55,6 @@ Bruk denne fremgangsmåten til å definere en mal som representerer objekter hos
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

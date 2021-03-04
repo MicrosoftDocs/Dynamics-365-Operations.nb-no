@@ -63,3 +63,6 @@ Grafikken nedenfor illustrerer hvordan hovedplanlegging pågår. Parameterne det
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

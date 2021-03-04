@@ -45,3 +45,6 @@ Dette emnet forklarer hvordan du gir arbeidere tillatelse til å klargjøre innk
 2. Bruk dette hurtigfilteret til å finne arbeideren som du nettopp la til som bestiller.
 3. Velg bestilleren. Klargjørerlisten viser personene som har tillatelse til å bestille varer på vegne av bestilleren, som er valgt i ruten til venstre.  Du kan legge til flere klargjørerne her. Denne visningen lar deg også gi bestilleren tillatelse til å opprette rekvisisjoner i juridiske enheter og driftsenheter som ikke er primær juridisk enhet eller driftsenhet for den aktuelle personen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

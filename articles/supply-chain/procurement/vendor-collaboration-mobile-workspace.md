@@ -170,3 +170,6 @@ Alle endringer som er gjort i bestillingslinjesvaret, vises. Imidlertid blir ikk
 
 ### <a name="open-confirmed-orders"></a>Åpne bekreftede ordrer
 Når bestillingen er bekreftet av kunden (noe som betyr at status for bestillingen er endret til **Bekreftet**-status), vises den i den åpne bekreftede bestillingen. Den forblir i listen til den er registrert som mottatt av kunden.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

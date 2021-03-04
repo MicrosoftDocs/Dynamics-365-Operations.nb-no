@@ -53,3 +53,6 @@ Arbeidsområde for lastplanlegging bruker kundeadresser og leveringsdatoer fra s
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

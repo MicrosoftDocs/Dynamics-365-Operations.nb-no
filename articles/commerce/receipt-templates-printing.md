@@ -82,3 +82,6 @@ Kvitteringsprofiler tilordnes direkte til skrivere i maskinvareprofilen.
 
 > [!NOTE]
 > Hvis det brukes to skrivere, kan én skriver brukes til å skrive ut standard 40-kolonners termiske kvitteringer. Den andre skriveren brukes vanligvis til å skrive ut helsides kvitteringstyper som trenger mer informasjon. Disse kvitteringstypene omfatter kundeordrekvitteringer og kundefakturaer.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

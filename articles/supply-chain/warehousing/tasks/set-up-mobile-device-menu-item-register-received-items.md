@@ -60,3 +60,6 @@ Du kan bruke denne veiledningen i USMF-demodatafirmaet. Denne fremgangsmåten er
 6. Velg **Lagre**.
 7. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

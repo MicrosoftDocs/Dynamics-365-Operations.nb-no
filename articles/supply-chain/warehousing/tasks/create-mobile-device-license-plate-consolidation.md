@@ -37,3 +37,6 @@ Denne fremgangsmåten viser hvordan du oppretter et menyelement for mobilenhet f
 5. Velg Indirekte i feltet Modus.
 6. Velg Konsolider skiltnummer i Aktivitetskode-feltet.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

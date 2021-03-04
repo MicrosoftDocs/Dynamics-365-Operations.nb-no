@@ -56,3 +56,6 @@ Lean-planleggingsgrupper defineres for å gruppere og skille produkter i kanban-
 3. Klikk rullegardinknappen i feltet Varefordelingsnøkkel for å åpne oppslaget.
 4. Klikk koblingen i den valgte raden i listen.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

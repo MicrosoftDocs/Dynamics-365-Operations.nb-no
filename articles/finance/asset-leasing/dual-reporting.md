@@ -523,3 +523,6 @@ Når alle disse journaloppføringene er opprettet og postert, vises følgende ve
 | 11         | Akkumulert avskrivning |                                                   |                                                   |                                                   | 0\.00                   |   |                                                 |                                                |                                                |                                                | \-949\.75                                      | \-949\.75                               |
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

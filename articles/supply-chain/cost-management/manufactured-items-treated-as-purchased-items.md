@@ -42,3 +42,6 @@ Du kan hindre at slike beregninger utføres ved å velge flagget for **Stopp ned
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

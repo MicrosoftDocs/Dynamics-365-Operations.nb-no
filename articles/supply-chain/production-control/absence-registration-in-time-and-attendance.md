@@ -109,3 +109,6 @@ En arbeider stempler for eksempel inn 10:00 og velger en fraværskode som angir 
 ### <a name="calculate-and-approve-absence"></a>Beregne og godkjenne fravær
 
 - Velg **Timeregistrering** &gt; **Gjennomgå og godkjenn** &gt; **Godkjenn eller beregn**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

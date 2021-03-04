@@ -51,3 +51,6 @@ Hver fordelingsregel har fire komponenter: generelt, kilde, mål og forskyvning.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

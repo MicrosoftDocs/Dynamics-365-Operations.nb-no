@@ -74,3 +74,6 @@ Du kan finne meninger, nyheter og annen informasjon om Lagerstyring og andre lø
 
  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

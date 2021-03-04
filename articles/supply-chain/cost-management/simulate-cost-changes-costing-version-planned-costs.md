@@ -59,3 +59,6 @@ Når du har angitt de simulerte kostprisendringene, beregner du kostprisen for p
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

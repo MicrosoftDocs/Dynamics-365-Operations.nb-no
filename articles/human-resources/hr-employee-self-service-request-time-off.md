@@ -62,3 +62,6 @@ Når du oppdaterer en eksisterende permisjonsforespørsel, kan du legge til et v
 ## <a name="see-also"></a>Se også
 
 - [Oversikt over permisjon og fravær](hr-leave-and-absence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

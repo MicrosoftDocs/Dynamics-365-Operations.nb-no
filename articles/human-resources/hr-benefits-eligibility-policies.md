@@ -49,3 +49,6 @@ Du kan definere omfanget av regelen i policyen. Hvis du for eksempel oppretter e
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -111,3 +111,6 @@ Slett avsetningsposter for en spesifikk plan og et bestemt datoområde. Avsetnin
 
 [Oversikt over permisjon og fravær](hr-leave-and-absence-overview.md)</br>
 [Opprette en permisjons- og fraværsplan](hr-leave-and-absence-plans.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

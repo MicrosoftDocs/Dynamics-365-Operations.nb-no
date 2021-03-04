@@ -54,3 +54,6 @@ Denne fremgangsmåten viser hvordan du tilordner en produktlivssyklustilstand ti
 2. Merk den valgte raden i listen.
 3. Angi eller velg en verdi i feltet Livssyklustilstand for produkt.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

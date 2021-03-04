@@ -73,3 +73,6 @@ Denne prosedyren hjelper med å opprette en produktpakke og bruke den i en besti
 17. Klikk Opprett.
 18. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

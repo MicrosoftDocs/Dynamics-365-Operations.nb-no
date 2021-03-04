@@ -50,3 +50,6 @@ I Aktivastyring kan du definere dokumenter slik at de automatisk er knyttet til 
 
 4. Velg **Vedlegg**. Standardsiden **Dokumenthåndtering** vises.
 5. Definer dokumentene eller notatene som skal knyttes til aktivadokumentposten. Når du har tilknyttet dokumenter, viser **Vedlegg**-feltet antallet dokumenter som er knyttet til posten.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

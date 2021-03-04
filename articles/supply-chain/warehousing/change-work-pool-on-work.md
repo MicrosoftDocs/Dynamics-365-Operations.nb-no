@@ -149,3 +149,6 @@ Du kan bruke **Arbeidsdetaljer**-siden til å vise arbeidet som ble opprettet, o
 > Når dialogboksen **Endre arbeidsutvalg** vises, kan det hende at feltet **ID for arbeidsutvalg** er tomt som standard. Hvis feltet er tomt når du velger **OK** for å bruke endringer, fjerner du arbeidsutvalget helt fra arbeidet.
 >
 > I tillegg til å bytte arbeidsutvalg kan du bruke denne fremgangsmåten til å legge til et arbeidsutvalg i alle arbeidselementer som ikke har et, eller til å fjerne et arbeidsutvalg fra alle arbeidselementer som har et.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

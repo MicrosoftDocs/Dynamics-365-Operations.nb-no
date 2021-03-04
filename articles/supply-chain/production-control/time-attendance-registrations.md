@@ -119,3 +119,6 @@ Ansatte med prosjektoppgaver som ikke krever umiddelbar tilbakemelding, som er t
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

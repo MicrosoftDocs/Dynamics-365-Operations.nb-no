@@ -147,3 +147,6 @@ Følgende tabell viser resultatet av beregningen for et beholdningsobjekt. Du ka
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

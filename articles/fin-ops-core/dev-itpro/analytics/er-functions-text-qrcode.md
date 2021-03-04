@@ -61,3 +61,6 @@ Når du kjører det konfigurerte ER-formatet, blir tekstverdien for **LabelText*
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Tekstfunksjoner](er-functions-category-text.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

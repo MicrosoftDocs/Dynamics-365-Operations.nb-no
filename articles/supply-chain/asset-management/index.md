@@ -38,3 +38,6 @@ Bildet nedenfor er en illustrasjon av grensesnittene til andre moduler i Finance
 ![Oversikt over hvordan Aktivastyring integreres](media/overview-integrate2.jpg)
 
 Med Aktivastyring kan du effektivt administrere og utføre oppgaver knyttet til administrasjon og service av mange typer utstyr i bedriften din, for eksempel maskiner, produksjonsutstyr og kjøretøyer. Aktivastyring støtter løsninger på tvers av en rekke bransjer.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

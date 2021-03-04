@@ -46,3 +46,6 @@ Denne prosedyren fokuserer på å fjerne en planlagt kanban-prosessjobb fra tids
 4. Klikk OK.
     * Dette vil tilbakestille den gjeldende jobbstatusen fra "Planlagt" til "Ikke planlagt" og fjerne den fra prosesstavlen.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

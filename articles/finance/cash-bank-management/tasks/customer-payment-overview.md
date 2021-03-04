@@ -52,3 +52,6 @@ Denne oppgaveveiledningen hjelper deg med forskjellige metoder som brukes til å
 21. I feltet **Betalingsreferanse** angir du en betalingsreferanse. Betalingsreferansen er bare nødvendig hvis du merker å inkludere betalingen på et betalingsbilag.  
 22. Klikk på **Poster** i **handlingsruten** for å postere kundebetalingene. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

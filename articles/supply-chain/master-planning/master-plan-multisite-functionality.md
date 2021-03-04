@@ -52,3 +52,6 @@ Følgende emner beskriver hvordan planleggingsmotoren fungerer når forskjellige
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

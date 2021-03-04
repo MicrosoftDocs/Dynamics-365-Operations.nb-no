@@ -42,3 +42,6 @@ Hvis du vil bekrefte flere betalingsplaner, følger du denne fremgangsmåten.
     - Hvis du vil bekrefte alle tablåer, aktiverer du parameteren **For alle tablåer**.
 
 Informasjon for de nylig bekreftede bøkene vises på siden **Bekreftede tablåer**. Etter at betalingsplanene er bekreftet, kan journaloppføringene for opprinnelig føring posteres mot leieavtalen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

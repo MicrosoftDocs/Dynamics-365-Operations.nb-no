@@ -53,3 +53,6 @@ Hvis du vil ha informasjon om hvordan du tilordner en arbeider til et team, kan 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

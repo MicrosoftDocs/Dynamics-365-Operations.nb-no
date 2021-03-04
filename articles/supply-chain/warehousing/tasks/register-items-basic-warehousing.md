@@ -58,3 +58,6 @@ Denne fremgangsmåten viser hvordan du registrerer varer ved hjelp av vareankoms
 2. Klikk Produktkvittering.
 3. Klikk OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -57,3 +57,6 @@ Programdata brukes til å fylle ut rapporter i Organisasjonsopplæring-innholdsp
 | Training\_Position        | Posisjon, tittel og fulltidsekvivalente (FTE)                  | Training\_CourseAgenda, Training\_CourseAttendees |
 | Training\_WorkerName      | Fornavn, etternavn og fullt navn                             | Training\_CourseAttendees |
 | Training\_WorkerTitle     | Tittel og ansiennitetsdato                                         | Training\_CourseAttendees |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

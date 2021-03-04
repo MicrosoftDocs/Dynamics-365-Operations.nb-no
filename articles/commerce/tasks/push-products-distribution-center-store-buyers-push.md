@@ -53,3 +53,6 @@ Denne prosedyren hjelper deg gjennom trinnene med å opprette og behandle et sen
 19. Klikk Opprett ordre.
 20. Klikk Ja.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

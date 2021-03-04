@@ -111,3 +111,6 @@ De aggregerte nøkkelmålingene som du finner nedenfor, brukes som grunnlag for 
 | Leveringsytelse        | Sendt etter produkt                       | CustPackingSlipOnTimeStatus           | Tidlig, Til planlagt tid og Sent (Se beskrivelsene tidligere i denne tabellen). |
 | Leveringsytelse        | Levering etter kunder                      | CustPackingSlipOnTimeStatus           | Tidlig, Til planlagt tid og Sent (Se beskrivelsene tidligere i denne tabellen). |
 | Leveringsytelse        | Levert etter område/lager              | CustPackingSlipOnTimeStatus           | Tidlig, Til planlagt tid og Sent (Se beskrivelsene tidligere i denne tabellen). |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

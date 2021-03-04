@@ -57,3 +57,6 @@ Denne prosedyren viser hvordan du raskt kan opprette en ny formel ved å kopiere
 3. Klikk OK.
 4. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

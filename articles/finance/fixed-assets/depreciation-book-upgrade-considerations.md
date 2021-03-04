@@ -83,3 +83,6 @@ For begge fremgangsmåtene vil skriptet for dataoppgradering også bruke nummers
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

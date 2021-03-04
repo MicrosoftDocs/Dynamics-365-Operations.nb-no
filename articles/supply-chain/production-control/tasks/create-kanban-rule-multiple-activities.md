@@ -59,3 +59,6 @@ Denne fremgangsmåten viser hvordan du oppretter en Kanban-regel som inkluderer 
     * Legg merke til at Kanbanen har to prosessjobber fra produksjonsflyten. Den første er SpeakerAssemblyAndPolish, og den andre er SpeakerTestAndPackaging.  
     * Dette er det siste trinnet!  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

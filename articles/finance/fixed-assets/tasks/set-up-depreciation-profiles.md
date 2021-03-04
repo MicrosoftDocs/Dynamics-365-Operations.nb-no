@@ -40,3 +40,6 @@ Avskrivningsprofiler bestemmer typen og frekvensen for avskrivning for et anlegg
 7. Velg et alternativ i **Periodefrekvens**-feltet.
 8. Lukk skjemaet.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

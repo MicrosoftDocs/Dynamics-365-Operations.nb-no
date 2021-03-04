@@ -54,3 +54,6 @@ Vinduet for det beslektede bilaget viser bilaget fra motregningsfirmaet ved post
 3. Merk den valgte raden i listen.
 4. Klikk Bilag.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

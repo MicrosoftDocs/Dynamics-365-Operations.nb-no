@@ -53,3 +53,6 @@ Du kan opprette foreløpige budsjettregisteroppføringer for en bestemt budsjett
 19. Klikk Oppdater.
     * Hvis du vil se resultatene av oppdateringen, klikker du Meldingsdetaljer på den blå linjen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

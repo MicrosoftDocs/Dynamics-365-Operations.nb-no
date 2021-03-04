@@ -87,3 +87,6 @@ Hurtigreparasjonen for denne feilen er avhengig av årsaken til feilen:
 
 + Hvis tilordningen har avhengige tilordninger, må du sørge for å aktivere de avhengige tilordningene for denne tabelltilordningen.
 + Tilordningen kan mangle kilde- eller målfelt. Hvis et felt i Finance and Operations-appen mangler, følger du trinnene i delen [Problem med manglende enhetsfelt på tilordninger](dual-write-troubleshooting-finops-upgrades.md#missing-entity-fields-issue-on-maps). Hvis det mangler et felt i Dataverse, klikker du på **Oppdater tabeller**-knappen for tilordningen, slik at feltene fylles ut automatisk i tilordningen på nytt.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

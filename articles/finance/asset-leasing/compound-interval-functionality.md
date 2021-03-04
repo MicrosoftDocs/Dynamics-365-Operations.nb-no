@@ -160,3 +160,6 @@ Tabellen nedenfor viser de første 12 månedene av betalingsplanen. Vær oppmerk
 
 > [!NOTE]
 > Hvis annuitetstypen endres til **Annuitetsforfall**, skjer betalingen i januar i stedet for desember.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

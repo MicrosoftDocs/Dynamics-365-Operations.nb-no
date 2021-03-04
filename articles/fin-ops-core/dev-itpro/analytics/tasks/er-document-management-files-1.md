@@ -74,3 +74,6 @@ Du vil opprette vår egen konfigurasjon for kundefakturamodellen og avlede den f
 3. I Navn-feltet skriver du inn Kundefakturamodell (egendefinert).
 4. Klikk Opprett konfigurasjon.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

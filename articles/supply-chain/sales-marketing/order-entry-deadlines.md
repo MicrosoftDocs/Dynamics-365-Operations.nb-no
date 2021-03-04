@@ -109,3 +109,6 @@ Følgende tabell viser tidsfristene for ordrer for område A og B, omregnet til 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

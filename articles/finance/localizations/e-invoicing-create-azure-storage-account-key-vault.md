@@ -91,3 +91,6 @@ I dette emnet fullfører du to hovedtrinn:
 9. I dialogboksen **Sikkerhetskontohaver** velger du sikkerhetskontohaveren ved å legge til **Tillegget Elektronisk fakturering**.
 10. Velg **Legg til**, og velg deretter **Lagre Key Vault-endringer**.
 11. På siden **Oversikt** kopierer du **DNS-navn**-verdien for Key Vault. Denne verdien vil bli brukt under konfigurasjon av tjenesten i RCS, og vil bli referert til som *Key Vault-URI*.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

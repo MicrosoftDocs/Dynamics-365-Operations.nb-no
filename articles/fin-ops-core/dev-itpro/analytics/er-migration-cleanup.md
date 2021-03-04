@@ -57,3 +57,6 @@ Fullfør følgende fremgangsmåte for å løse problemer med ER-maler du ikke ha
 Det kan oppstå et lignende problem hvis du overfører programforekomsten til en annen plassering som er brukt som et overføringsmål mer enn én gang, og der BLOB Storage allerede inneholder ER-malfiler.
 
 Fordi du kan ha flere ER-formatkonfigurasjoner kan denne prosessen være tidkrevende. Derfor er bruk av funksjonen [Sikkerhetskopiere ER-maler](er-backup-storage-templates.md) til å gjenopprette maler med brutte referanser automatisk, foretrukket.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -123,3 +123,6 @@ Du kan laste ned og redigere oppgaveopptak fra Microsoft for å bruke dem i din 
 [Oppgaveregistrering](task-recorder.md)
 
 [Opprette rike hjelpeemner med oppgaveopptakeren (ekstern link)](https://mbspartner.microsoft.com/AX/Videos/970)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

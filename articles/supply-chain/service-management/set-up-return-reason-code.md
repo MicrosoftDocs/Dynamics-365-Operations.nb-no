@@ -63,3 +63,6 @@ Denne prosedyren hjelper deg å sette opp returårsakskoder som du kan bruke til
  
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

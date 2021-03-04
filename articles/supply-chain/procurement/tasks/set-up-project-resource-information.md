@@ -52,3 +52,6 @@ Denne prosedyren viser hvordan du setter opp en prosjektressurs. Denne oppgaven 
 20. Klikk Lagre.
 21. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

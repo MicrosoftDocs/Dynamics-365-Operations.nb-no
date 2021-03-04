@@ -59,3 +59,6 @@ Deretter bør du knytte kontoer til utgiftstypene. Disse kontoene blir debitert 
 7. I de aktuelle feltene velger du hovedkonto for finansiell leie og hovedkonto for gjeldende leie.
 
 Når du har fullført disse trinnene, kan du legge til utgifter ved hjelp av linjene i **betalingsplan for fullbyrdelseskostnad** på siden **Leiedetaljer** for en valgt leieavtale. Du kan også legge til utgifter når du oppretter en ny leieavtale.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

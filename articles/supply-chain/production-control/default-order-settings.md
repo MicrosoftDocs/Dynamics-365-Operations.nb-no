@@ -204,3 +204,6 @@ Slik angir du valideringsalternativet:
 1. På **Generelt**-fanen angir du **Validering for standard ordreantall** til én av følgende verdier:
     - **Streng** – Velg dette alternativet for å sikre at alle verdier for **Standard ordreantall** vil være et multiplum av **Flere**-verdien for hver hurtigfane (**Bestilling**, **Lager** og **Salgsordre**).
     - **Standard** – Velg dette alternativet for å bruke standard validering (som fungerer på samme måte som når denne funksjonen ikke er aktivert).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

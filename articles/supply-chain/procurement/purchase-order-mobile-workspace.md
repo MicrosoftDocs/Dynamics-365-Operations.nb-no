@@ -113,3 +113,6 @@ Når du har vist bestillingen som er tilordnet til deg og lest instruksjonene fo
 5. Velg riktig handling.
 6. På **Fullfør oppgave**-siden skriver du inn en kommentar. Legg merke til at hvis du velger **Deleger**-handlingen, må du velge en bruker delegere oppgaven til.
 7. Velg **Ferdig**. Når du har oppdatert arbeidsområdet, fjernes bestillingen fra listen. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

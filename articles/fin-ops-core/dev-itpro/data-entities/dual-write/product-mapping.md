@@ -223,3 +223,6 @@ Når synkroniseringen er aktivert og finner sted, blir produktene fra Finance an
 ### <a name="migration-of-product-data-from-other-dynamics-365-apps-to-finance-and-operations"></a>Overføring av produktdata fra Dynamics 365-apper til Finance and Operations
 
 Hvis andre Dynamics 365-apper har produkter som ikke finnes i Finance and Operations, kan administratoren først bruke **EcoResReleasedProductCreationV2Entity** til å importere disse produktene i Finance and Operations. Samsvar deretter produktdataene fra Finance and Operations og andre Dynamics 365-apper som beskrevet ovenfor. 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

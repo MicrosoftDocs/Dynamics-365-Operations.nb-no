@@ -64,3 +64,6 @@ Tabellen nedenfor viser enhetene som Power BI-innholdet **Rekruttering** er base
 | Ytelse          | Vurdering, beskrivelse og vurderingsmodell                            | Søker, ansatt søker, avsluttet søker |
 | Rekrutteringsprosjekt  | Prosjektbeskrivelse, prosjektstatus og stillinger                | Søker, ansatt søker, avsluttet søker |
 | Avsluttet søker | Avsluttede søkere, årsak, ytelse og avslutningsdato | Selskap, kalenderforskyvning, dato, geografisk plassering, ytelse, demografi, ansettelse, media, rekrutteringsprosjekt, navn på søker |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

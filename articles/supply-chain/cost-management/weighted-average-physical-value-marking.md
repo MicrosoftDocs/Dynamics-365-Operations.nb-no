@@ -230,3 +230,6 @@ Diagrammet nedenfor illustrerer denne serien av transaksjoner, og viser virkning
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -69,3 +69,6 @@ Når feltene i Sale er fylt ut, gjelder følgende begrensninger:
 + Oppsettet av gebyrer og gebyrfordelinger i Supply Chain Management replikeres ikke i Sales.
 + Prissetting tar ikke hensyn til spesielle detaljhandelpriser som er angitt i **Detaljhandelskanal**-feltet på salgsordrelinje-siden i Supply Chain Management.
 + Rabatter som er definert i delen **Handelsrabattbehandling** i Supply Chain Management, vurderes ikke.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -44,3 +44,6 @@ Ettersom selskaper utvikler seg og forhold endres, kan kredittrisiko for en gitt
 Du kan kjøre prosessen **Oppdater kundesaldostatistikk** for å oppdatere beregningen av saldostatistikk som vises på siden **Forespørsel om saldostatistikk**. Denne informasjonen brukes til å beregne risikoresultater og verdiene som vises i faktaboksene for kredittstatistikk på **Kunde**-siden.
 
 Når du kjører prosessen, oppdaterer den kundesaldostatistikk for en enkelt kunde. Hvis du vil definere en satsvis jobb for å kjøre prosessen for flere kunder, kan du bruke siden **Beregn saldostatistikk** (**Kredittbehandling \> Periodiske oppgaver \> Beregn saldostatistikk**).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

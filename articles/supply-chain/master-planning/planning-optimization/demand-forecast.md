@@ -274,3 +274,6 @@ En prognosereduksjonsnøkkel må tilordnes til en dekningsgruppe for varen. Føl
 ### <a name="reduce-a-forecast-by-transactions"></a>Redusere en prognose etter transaksjoner
 
 Når du velger **Transaksjoner – reduksjonsnøkkel** eller **Transaksjoner – dynamisk periode** som metode for å redusere prognosebehov, kan du angi hvilke transaksjoner som reduserer prognosen. På siden **Dekningsgrupper**, i **Andre**-hurtigkategorien i feltet **Reduser prognose etter**, velger du **Alle transaksjoner** hvis alle transaksjoner skal redusere prognosen, eller **Ordrer** hvis bare salgsordrer skal redusere prognosen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

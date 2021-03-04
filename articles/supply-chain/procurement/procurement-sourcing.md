@@ -104,3 +104,6 @@ Innkjøp og leverandører dekker alle trinnene fra å identifisere et behov for 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

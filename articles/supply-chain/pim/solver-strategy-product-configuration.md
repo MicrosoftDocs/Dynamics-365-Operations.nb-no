@@ -73,3 +73,6 @@ Følgende tabell inneholder anbefalinger om problemløserstrategien som skal bru
 [Heuristikk](https://techterms.com/definition/heuristic)
 
 [Begrensningsbasert problem](http://aima.cs.berkeley.edu/2nd-ed/newchap05.pdf)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

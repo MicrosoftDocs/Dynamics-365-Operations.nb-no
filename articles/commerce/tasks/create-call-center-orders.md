@@ -62,3 +62,6 @@ Denne prosedyren hjelper med å slå opp en kunde, opprette en ny ordre, søke e
 
 [Endre leveringsmodus i salgssted](../pos-change-delivery-mode.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

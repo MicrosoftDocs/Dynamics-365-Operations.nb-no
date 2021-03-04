@@ -59,3 +59,6 @@ Uttrykket `FIRST(SPLIT("",1)).Value` genererer et unntak under kjøring.
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Listefunksjoner](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

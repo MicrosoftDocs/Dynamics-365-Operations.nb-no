@@ -38,3 +38,6 @@ Når det finnes flere transportører og transportørtjenester for det samme rute
 1. I **Navn**-feltet angir du et beskrivende navn for gruppen.
 1. I **Detaljer**-hurtigfanen legger du til en rad og velger en transportør og en transportørtjeneste for den. Gjenta dette trinnet til du har lagt til så mange transportører som du trenger for gruppen.
 1. Lukk siden.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

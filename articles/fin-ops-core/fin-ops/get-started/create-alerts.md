@@ -102,3 +102,6 @@ Det er ikke mulig å opprette varsler for enkelte sekundære datakilder i skjema
     ```
 2. Opprett et varsel fra SysTableBrowser-skjemaet.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

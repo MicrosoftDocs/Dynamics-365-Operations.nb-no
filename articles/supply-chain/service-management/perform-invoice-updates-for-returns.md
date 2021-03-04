@@ -57,3 +57,6 @@ Når du setter opp fakturaoppdateringen for satsvis behandling, må salgsordren 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

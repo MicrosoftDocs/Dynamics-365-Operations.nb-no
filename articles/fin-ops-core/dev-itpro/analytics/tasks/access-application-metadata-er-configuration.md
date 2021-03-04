@@ -125,3 +125,6 @@ De følgende trinnene forklarer hvordan en RCS-bruker (Regulatory Configuration 
 > [!NOTE]
 > Denne måten å hente informasjon om programmetadata på er den eneste tilgjengelige for lokalt distribuerte programmer (når lokale forretningsdata (LBD) eller en lokal distribusjonsmodell brukes).
         
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

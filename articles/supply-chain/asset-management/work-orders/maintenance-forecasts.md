@@ -124,3 +124,6 @@ Hvis timekostnader, varekost og utgifter oppdateres i andre moduler i Microsoft 
 Illustrasjonen nedenfor viser et eksempel på dialogboksen **Oppdater arbeidsordreprognose**.
 
 ![Figur 2](media/07-work-orders.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

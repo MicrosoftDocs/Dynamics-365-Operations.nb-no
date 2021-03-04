@@ -75,3 +75,6 @@ Trinnene i denne fremgangsmåten forklarer hvordan du utformer elektronisk rappo
     * Se gjennom strukturen i formatet som brukes til å generere Intrastat-rapporten. Legg merke til at den er utformet til å generere en XML-fil ved hjelp av data fra datamodellen, som er basert på rotelementet "For utgående dokument". Kontroll at navnet på filen som genererte defineres i dialogboksen brukerskjemaet ("fn-datakilden som brukes for den).   
 30. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

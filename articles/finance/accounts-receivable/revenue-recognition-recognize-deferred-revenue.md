@@ -108,3 +108,6 @@ Kontraktsendringene har følgende innvirkning på detaljene for inntektsplanen:
 - Hvis det er ført inntekt for produktet, ble deler av inntekten feilaktig ført fordi føringen var basert på feil inntektsplan. Disse linjene må tilbakeføres og føres på nytt basert på den nye planen. I dette scenariet opprettes det nye inntektsplanlinjer som har negative beløp på den opprinnelige føringsdatoen. Nye linjer opprettes deretter for å føre beløpene basert på den nye inntektsplanen. 8. august 2019 førte du for eksempel en inntekt på USD 10,53. Den 8. september 2019 førte du en inntekt på USD 13,16. Derfor opprettes det to nye linjer på samme dato. En linje gjelder for USD 10,53, og den andre linjen gjelder for USD 13,16. Tjuefire nye linjer opprettes, og den totale utsatte inntekten på USD 160,61 tildeles på tvers av dem. Du kan postere tilbakeføringslinjene ved å kjøre prosessen **Opprett journal**.
 
 [![Inntektsføringsplan](./media/revenue-recognition-rev-recog-schedule-03.png)](./media/revenue-recognition-rev-recog-schedule-03.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

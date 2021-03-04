@@ -42,3 +42,6 @@ I Microsoft Dynamics 365 Human Resources etablerer ventedager en månedlig milep
    | **Dag** | Dagen i måneden som systemet skal sette ventedatoen til. |
    
 4. Velg **Lagre**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

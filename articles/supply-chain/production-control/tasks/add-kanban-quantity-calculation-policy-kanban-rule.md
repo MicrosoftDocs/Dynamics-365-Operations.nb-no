@@ -63,3 +63,6 @@ Denne prosedyren fokuserer på å opprette en policy for Kanban-antallsberegning
 8. Klikk koblingen i den valgte raden i listen.
     * Velg policyen Speaker2016 som du nettopp opprettet i den forrige delaktiviteten.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

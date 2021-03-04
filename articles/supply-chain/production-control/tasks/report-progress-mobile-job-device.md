@@ -65,3 +65,6 @@ Hvis du vil kjøre denne prosedyren, må du ha rollen Systemansvarlig eller Mask
 29. Klikk OK.
 30. Velg en årsak til hvorfor du stempler ut tidlig.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

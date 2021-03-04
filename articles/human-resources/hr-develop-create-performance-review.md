@@ -78,3 +78,6 @@ Dette emnet viser hvordan du oppretter en prestasjonsvurdering og beskriver form
 34. Velg fanen **Gjennomgang**. Etter hvert som vurderingen endrer status, kan den ansatte og lederen legge til kommentarer for hvert mål eller hver kompetanse.  
 35. Velg kategorien **Godkjenninger**. Arbeideren og sjefen kan godkjenne gjennomgangen. Når alle nødvendige godkjenninger er foretatt, endres statusen til **Fullført**, og da kan det ikke gjøres flere endringer.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

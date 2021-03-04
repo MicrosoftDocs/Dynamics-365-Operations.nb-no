@@ -58,3 +58,6 @@ Rapporten **Vedlikeholdsanmodningsliste** viser en liste over alle vedlikeholdsa
 Illustrasjonen nedenfor viser et eksempel på rapporten **Vedlikeholdsanmodningsliste** for alle aktive vedlikeholdsanmodninger.
 
 ![Rapporten Vedlikeholdsanmodningsliste](media/10-manage-maintenance-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

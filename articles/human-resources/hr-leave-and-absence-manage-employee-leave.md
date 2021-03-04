@@ -56,3 +56,6 @@ Du kan inkludere en årsakskode og kommentar når du justerer en ansatts permisj
 
 - [Oversikt over permisjon og fravær](hr-leave-and-absence-overview.md)
 - [Administrere forespørsler om permisjon og fravær](hr-employee-self-service-manage-requests.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

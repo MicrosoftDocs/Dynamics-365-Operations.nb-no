@@ -55,3 +55,6 @@ Det nye feltet og dataene for det skal nå være tilgjengelige for redigering i 
 [Redigere finansdimensjoner for detaljhandelstransaksjoner](edit-financial-dim.md)
 
 [Opprette en Excel-arbeidsbok for å redigere detaljhandelstransaksjoner](create-excel-edit.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -85,3 +85,6 @@ Du kan også gjøre manuelle justeringer i prognosen på siden **Detaljer om beh
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -57,3 +57,6 @@ I den forbedrede strukturen for produktkategorien kan en varehandelsleder nå og
 Du kan bruke den nye utvidede strukturen for produktegenskaper til å velge oppdaterte produktegenskaper som må overføres til tilknyttede produkter. På **Hierarki for Commerce-produkt**-siden i handlingsruten, velger du **Kategori** og deretter **Oppdater produkter** for å åpne **Oppdater produkter**-dialogboksen.
 
 ![Dialogboksen Oppdater produkter](media/NewUpdateProductsEnhancedView.PNG)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

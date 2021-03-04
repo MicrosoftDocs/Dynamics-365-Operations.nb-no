@@ -97,3 +97,6 @@ På siden **Reservedeler** kan du også opprette nye reservedeler for eksisteren
 
 Hvis du vil se om reservedelen på den valgte linejn brukes et annet sted i Aktivastyring (for eksempel i forbindelse med aktiva og arbeidsordrer), velger du **Vare der brukt** for å åpne siden **Vare der brukt**. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

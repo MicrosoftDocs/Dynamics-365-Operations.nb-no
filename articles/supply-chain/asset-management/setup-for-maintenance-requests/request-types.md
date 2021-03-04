@@ -45,3 +45,6 @@ En type vedlikeholdsanmodning definerer tilknytningen med en livsløpsgruppe for
 Illustrasjonen nedenfor viser et eksempel på siden **Typer vedlikeholdsanmodninger**.
 
 ![Siden Typer vedlikeholdsanmodninger](media/07-setup-for-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

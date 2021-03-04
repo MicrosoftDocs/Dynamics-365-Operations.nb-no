@@ -116,3 +116,6 @@ Hvis du vil ha mer informasjon om hvordan du konfigurerer elektroniske fakturaer
 
 > [!NOTE] 
 > Selv om disse oppgaveveiledningene ble opprettet for det danske e-fakturaformatet *OIOUBL*, gjelder de for andre støttede land/områder med mindre avvik.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

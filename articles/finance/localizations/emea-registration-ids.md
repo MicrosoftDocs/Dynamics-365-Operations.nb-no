@@ -112,3 +112,6 @@ Hvis du vil ha mer informasjon om registrering av IDer, inkludert nødvendige fo
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -76,3 +76,6 @@ Når kostnadselementer representerer det laveste nivået av kostnadsdetaljer, m�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

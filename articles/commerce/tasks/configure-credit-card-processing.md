@@ -62,3 +62,6 @@ Denne prosedyren hjelper med å vise listen over betalingsleverandører og hvord
 24. Klikk Standardbehandler for nye kredittkort.
 25. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -68,3 +68,6 @@ I skjermdumpen nedenfor er informasjon om arbeidssteder lagt til. Nå er det mul
 
 ![Eksempel på månedlig arbeidsmengde med funksjonsplasseringer](media/14-controlling-and-reporting.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

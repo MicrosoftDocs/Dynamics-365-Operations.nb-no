@@ -251,3 +251,6 @@ For å sikre at de riktige verdiene registreres for virksomheten, må du ta hens
 ## <a name="see-also"></a>Se også
 
 Dette diskuteres mer i det opprinnelige blogginnlegget [Mer om (dynamiske) negative dager](https://blogs.msdn.microsoft.com/axmfg/2015/02/19/more-about-dynamic-negative-days/).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -42,3 +42,6 @@ En salgsordre har for eksempel to varer: en for levering og en for plukking. Bå
 ### <a name="issue-resolution"></a>Problemløsning
 
 Frigivelsesstatusen gjelder bare for ordrelinjer der varene er aktivert for lagerstyring. Derfor forblir frigivelsesstatusen *Delvis frigitt* i dette scenarioet. Microsoft har evaluert dette problemet og har funnet ut at det er en funksjonsbegrensning. En utvidelse kan legges til som en del av følgeseddelen og faktureringsprosessen for å oppdatere frigivelsesstatusen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

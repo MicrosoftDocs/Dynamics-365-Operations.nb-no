@@ -107,3 +107,6 @@ Når du definerer kontostrukturer, finnes det noen gode fremgangsmåter du kan f
 Når du er fornøyd med det nye oppsettet eller en endring i en kontostruktur, må du aktivere den. Hvis en kontostruktur tilordnes en finanskonto, kan denne aktiveringen være en tidkrevende prosess, fordi alle ikke-posterte transaksjoner i systemet må være synkronisert med den nye strukturen. Posterte transaksjoner påvirkes ikke av kontostrukturendringer.
 
 Hvis du vil ha mer informasjon, se [Planlegge kontoplanen](plan-chart-of-accounts.md), [Finansdimensjoner](financial-dimensions.md) og [Angi kombinasjoner av konto og dimensjon (segmentert oppføringskontroll)](enter-account-dimension-combinations-segmented-entry-control.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

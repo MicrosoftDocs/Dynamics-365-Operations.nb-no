@@ -303,3 +303,6 @@ Når du bruker datakilden **Strekkode** til å produsere strekkoder, er ikke gje
 - [Mål for elektronisk rapportering](electronic-reporting-destinations.md)
 - [Formelspråk i elektronisk rapportering](er-formula-language.md)
 - [NUMBERFORMAT-funksjonen](er-functions-text-numberformat.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

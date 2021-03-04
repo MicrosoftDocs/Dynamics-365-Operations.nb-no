@@ -56,3 +56,6 @@ Dette emnet fokuserer på å planlegge en produksjonsordre med grovplanlegging o
 6. Velg **Produksjonsordre** i handlingsruten.
 7. Velg **Alle jobber**. Vær oppmerksom på at basert på den aktive ruten, opprettes fem jobber med finplanlegging.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -93,3 +93,6 @@ Innholdet inneholder et sett med rapportsider. Hver side består av et sett med 
 | Ansattstatistikk | Reiseregninger etter kosttype            |
 |                     | Personlige utgifter                       |
 |                     | Reiseregninger etter statistikkgruppe     |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

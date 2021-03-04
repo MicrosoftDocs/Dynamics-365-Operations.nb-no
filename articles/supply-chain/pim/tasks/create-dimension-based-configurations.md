@@ -53,3 +53,6 @@ Denne fremgangsmåten viser hvordan du definerer en konfigurasjon for et dimensj
     * Angi en beskrivelse av konfigurasjonen for å forklare hva den inneholder.  
 11. Klikk OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

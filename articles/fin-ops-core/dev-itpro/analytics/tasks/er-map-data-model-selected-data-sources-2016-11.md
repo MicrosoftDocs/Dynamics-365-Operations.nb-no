@@ -146,3 +146,6 @@ De følgende trinnene forklarer hvordan en bruker i rollen systemansvarlig eller
 5. Velg den fullførte versjonen av den gjeldende konfigurasjonen.
     * Legg merke til at den opprettede konfigurasjonen er lagret som fullført versjon 1.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

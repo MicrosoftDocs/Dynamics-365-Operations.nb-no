@@ -104,3 +104,6 @@ Følgende eksempel viser hvordan en forhandler kan utføre denne oppgaven.
 [Opprette anbefalinger med demonstrasjonsdata](product-recommendations-demo-data.md)
 
 [Vanlige spørsmål om produktanbefalinger](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
