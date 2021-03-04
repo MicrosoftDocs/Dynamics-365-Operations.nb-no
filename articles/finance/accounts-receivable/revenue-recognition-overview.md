@@ -11,30 +11,31 @@ ms.technology: ''
 ms.search.form: Customer
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 92af567499c1a8a23cd4d51e5bab48eaab2d8422
-ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
+ms.openlocfilehash: a7e37a0800ec7909f79e5a2354f59c7450995641
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4459668"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995620"
 ---
 # <a name="revenue-recognition-overview"></a>Oversikt over inntektsføring
 
 [!include [banner](../includes/banner.md)]
 
+Firmaer i bransjer som selger flere varer, for eksempel produkter, tjenester, abonnementer og så videre, må kunne dele opp ordrer med flere elementer, slik at inntekten kan gjenkjennes på grunnlag av et sett med firmaspesifikke og bransjespesifikke retningslinjer.
+
 > [!NOTE]
 > Funksjonen Inntektsføring kan ikke aktiveres via Funksjonsbehandling. For øyeblikket må du bruke konfigurasjonsnøkler for å aktivere den.
 
-Firmaer i bransjer som selger flere varer, for eksempel produkter, tjenester, abonnementer og så videre, må kunne dele opp ordrer med flere elementer, slik at inntekten kan gjenkjennes på grunnlag av et sett med firmaspesifikke og bransjespesifikke retningslinjer.
+> Inntektsføring, inkludert buntfunksjonalitet, innhold som ikke støttes for bruk i Commerce-kanaler (e-handel, salgssted, telefonsenter). Varer som konfigureres med inntektsføring, bør ikke legges til i ordrer eller transaksjoner som er opprettet i Commerce-kanaler.
 
 Generelt kan inntektsføringsprosessen brukes til å utføre følgende oppgaver:
 
-* Tildele inntekt for å sikre at den relevante inntektsprisen føres på grunnlag av verdien til komponentene i ordrer med flere elementer.
+* Tildele inntekt for å sørge for at den relevante inntektsprisen føres på grunnlag av verdien til komponentene i ordrer med flere elementer.
 * Utsette inntekt basert på en inntektsplan som representerer den kontraktsmessige tidsrammen og prosentandelene for inntektsføring over tid.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE44iER]

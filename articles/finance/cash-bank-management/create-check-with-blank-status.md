@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: BankChequeTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 21941
 ms.assetid: d7e22bd8-fd0d-47e1-843f-45ab0193ff8d
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2019-09-17
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 47d54524f87cf718b9b41462b5133df267d5dd9e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: aa1c4c33b977c0173da98aee409389b9242980fb
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4459660"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4976463"
 ---
 # <a name="create-checks-that-have-blank-status"></a>Opprette sjekker som har tom status
 
@@ -36,6 +35,6 @@ På **Sjekker**-siden utfører du vedlikeholdsoppgaver for sjekker. Du kan for e
 > [!NOTE]
 > Denne funksjonen er tilgjengelig på **Sjekker**-siden bare hvis du aktiverer funksjonen **Opprett sjekker med tom status på Sjekker-siden** på siden **Funksjonsbehandling**. Hvis funksjonen ikke er aktivert, kan sjekker som har statusen **Tom**, bare opprettes fra dialogboksen **Betaling med sjekk** under betalingsgenereringsprosessen i Leverandører.
 
-Hvis du vil åpne **Sjekker**-siden, går du til **Kontant- og bankbehandling \> Bankkontoer \> Bankkontoer**, og deretter velger du **Sjekker** i gruppen **Beslektet informasjon** i kategorien **Administrer betalinger** i handlingsruten. Alternativt kan du gå til **Kontant- og bankbehandling \> Forespørsler og rapporter \> Sjekker**.
+Hvis du vil åpne **Sjekker**-siden, går du til **Kontant- og bankbehandling \> Bankkontoer \> Bankkontoer**, og deretter velger du **Sjekker** i gruppen **Beslektet informasjon** i fanen **Administrer betalinger** i handlingsruten. Alternativt kan du gå til **Kontant- og bankbehandling \> Forespørsler og rapporter \> Sjekker**.
 
 Hvis du vil opprette sjekker som har statusen **Tom**, velger du **Opprett tomme sjekker** i handlingsruten. Mens systemet oppretter tomme sjekker, er den tilknyttede bankkontoen midlertidig deaktivert. Denne virkemåten reduserer risikoen for at betalinger blir generert samtidig som tomme sjekker opprettes. Når behandlingen er fullført, aktiveres den tilknyttede bankkontoen på nytt.

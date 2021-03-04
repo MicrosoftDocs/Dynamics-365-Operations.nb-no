@@ -10,7 +10,6 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
@@ -18,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b2b6e98db54e7747912aad26f4b8ae24b9ad5a6d
-ms.sourcegitcommit: ce51ff2b6099c75dceb99de6dea9d53baf99772d
+ms.openlocfilehash: 73a3387d1e7251168002ff683b5b58e0c82a620c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "4459676"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965383"
 ---
 # <a name="create-an-excel-workbook-to-edit-retail-transactions"></a>Opprette en Excel-arbeidsbok for å redigere detaljhandelstransaksjoner
 
@@ -40,15 +39,15 @@ Det finnes en forhåndsdefinert Excel-mal som kunder kan få tilgang til fra for
 Hvis du vil opprette og konfigurere en Excel-arbeidsbok slik at du kan redigere detaljhandelstransaksjoner, følger du disse trinnene.
 
 1. Åpne Excel og opprett en tom arbeidsbok.
-1. Velg **Mine tillegg** i kategorien **Sett inn**.
+1. Velg **Mine tillegg** i fanen **Sett inn**.
 1. I ruten til høyre velger du koblingen **Legg til serverinformasjon**.
 1. Angi serverens URL-adresse, og velg deretter **OK**.
 1. Hvis du får feil meldingen "Fant ingen appletregistreringer", kan du følge denne fremgangsmåten for å løse problemet:
 
     1. I Commerce kan du gå til **Systemadministrasjon \> Oppsett \> Parametere til Office-app**.
-    1. Velg **Initialiser app-parametere** i hurtigkategorien **App-parametere**.
+    1. Velg **Initialiser app-parametere** i hurtigfanen **App-parametere**.
     1. I bekreftelsesboksen velger du **OK**.
-    1. I hurtigkategorien **Registrerte appleter** velger du **Initialiser appletregistrering**.
+    1. I hurtigfanen **Registrerte appleter** velger du **Initialiser appletregistrering**.
     1. Gjenta de tre forrige trinnene etter behov.
 
 1. Velg **Utforming**, og velg deretter **Legg til tabell**.

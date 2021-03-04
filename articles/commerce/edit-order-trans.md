@@ -10,7 +10,6 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
@@ -18,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b9f2db25c8897662baa177752d0c5fc4ac6178a4
-ms.sourcegitcommit: ce51ff2b6099c75dceb99de6dea9d53baf99772d
+ms.openlocfilehash: 8fa6f7a71bae759e2b8feb3c5778200bb7bdbfe9
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "4459674"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5010157"
 ---
 # <a name="edit-and-audit-online-order-and-asynchronous-customer-order-transactions"></a>Redigere og overvåke nettordretransaksjoner og asynkrone kundeordretransaksjoner
 
@@ -40,7 +39,7 @@ Mellom Commerce-versjon 10.0.5 og 10.0.6 ble støtte lagt til for redigering av 
 Følg denne fremgangsmåten for å redigere og overvåke transaksjoner i Commerce Headquarters.
 
 1. Installer [Microsoft Dynamics Office Add-in](https://appsource.microsoft.com/product/office/WA104379629?tab=Overview).
-1. På siden **Detaljhandelsparametere** i kategorien **Kundeordrer** angir du en sperrekode i hurtigfanen **Ordre** for **Sperrekode for ordresynkroniseringsfeil**.
+1. På siden **Detaljhandelsparametere** i fanen **Kundeordrer** angir du en sperrekode i hurtigfanen **Ordre** for **Sperrekode for ordresynkroniseringsfeil**.
 1. Åpne arbeidsområdet **Finans for handelsbutikk**. Flisene **Synkroniseringsfeil for nettordre** og **Synkroniseringsfeil for kundeordre** inneholder en forhåndsfiltrert visning av siden Detaljhandelstransaksjon. Hver side viser transaksjonspostene som ikke ble synkronisert for tilsvarende ordretype.
 1. Åpne siden **Synkroniseringsfeil for nettordre** eller **Synkroniseringsfeil for kundeordre**. Velg en post for å vise detaljer om synkroniseringsfeil. Hurtigfanen **Synkroniseringsstatus** inneholder følgende feildetaljer:
 

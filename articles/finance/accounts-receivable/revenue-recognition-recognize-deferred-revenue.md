@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: Customer
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: ace1d00ec25a57b26b1858369c32d9134a380977
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e70f2e6b3694002a11a831ac14039ccbee273a51
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4459643"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115926"
 ---
 # <a name="recognize-deferred-revenue"></a>Føre utsatt inntekt
 
@@ -39,7 +38,7 @@ Det finnes to måter å få tilgang til detaljene i inntektsføringsplanen på.
 - Du kan åpne inntektsføringsplanen direkte fra en fakturert salgsordre. I dette tilfellet filtreres informasjonen i inntektsplanen for å vise detaljene bare for den valgte salgsordren. Denne fremgangsmåten er nyttig når du skal validere tidsplandetaljene for en salgsordre.
 - Du kan åpne tidsplanen for inntektsføring fra siden **Inntektsføring \>Periodiske oppgaver**. Denne fremgangsmåten brukes ofte når inntekt føres på slutten av en periode. Når siden åpnes for første gang, vises ingen informasjon. Bruk filtrene over rutenettet til å definere kriterier for tidsplandetaljene som skal vises. Du kan filtrere etter fakturadatoene ved å angi et datointervall, en salgsordre, en kunde, en prosjekt-ID eller en status.
 
-[![Side for inntektsplaner](./media/revenue-recognition-rev-revenue-schedules.png)](./media/revenue-recognition-rev-revenue-schedules.png)
+[![Illustrasjon av siden Inntektsplaner](./media/revenue-recognition-schedule-page.png)](./media/revenue-recognition-schedule-page.png)
 
 Hurtigfanen **Finansdimensjon** under rutenettet viser finansdimensjonene til salgsordrelinjen. Disse dimensjonene ble vurdert under postering til utsatt inntekt. De tas også hensyn til når inntekten føres. Dimensjonsverdiene som brukes, er avhengig av kontostrukturen som er tilordnet til inntekten og de utsatt inntektshovedkontoene.
 

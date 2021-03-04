@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: VendTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 33338c331a53586b325def398267ab10db23f78a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 320487c451dd63ca861a13fc490e60d561486e0b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4459630"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979219"
 ---
 # <a name="copy-vendors-by-using-shared-number-sequences"></a>Kopiere leverandører ved hjelp av delte nummerserier
 
@@ -31,7 +30,7 @@ Du kan bruke delte nummerserier til å tilordne leverandør-ID-er. Delte nummers
 
 ## <a name="setup"></a>Oppsett
 
-Funksjonen er aktivert når du bruker en delt nummerserie til å tilordne leverandør-ID-er. Du må bruke samme nummerserie i alle juridiske enheter som du vil kopiere en leverandør til. Du kan endre leverandørnummerserien på siden **Leverandørparametere** for hver juridiske enhet. Velg **Leverandører** \> **Oppsett** \> **Leverandørparametere**, og velg deretter kategorien **Nummerserier**.
+Funksjonen er aktivert når du bruker en delt nummerserie til å tilordne leverandør-ID-er. Du må bruke samme nummerserie i alle juridiske enheter som du vil kopiere en leverandør til. Du kan endre leverandørnummerserien på siden **Leverandørparametere** for hver juridiske enhet. Velg **Leverandører** \> **Oppsett** \> **Leverandørparametere**, og velg deretter fanen **Nummerserier**.
 
 Du kan også definere leverandørnummerserier for hver leverandørgruppe. Disse nummerseriene må også være delt. Nummerrekkefølgen for en leverandørgruppe brukes først. Hvis ingen nummerserie er angitt for en leverandørgruppe, brukes nummerserien som er angitt på siden **Leverandørparametere**.
 
@@ -45,9 +44,9 @@ Hvis du oppretter en ny leverandør, kan du fortsette å fylle ut alle feltene p
 
 Hvis du vil kopiere en leverandør, går du til feltet **Navn** og angir ett eller flere tegn som representerer leverandøren som du leter etter. En dialogboks for søk viser en liste over parter som kan representere leverandøren du leter etter. Når du velger en av partene, vises tilleggsinformasjon til høyre i dialogboksen:
 
-- Kategorien **Generelt** viser partens telefonnummer og adresse.
-- Kategorien **Roller** viser rollene som den valgte parten kan ha, og den juridiske enheten der den har hver rolle.
-- Kategorien **ID for mva-registrering** viser ID-er for mva-registrering som er tilordnet til parten.
+- Fanen **Generelt** viser partens telefonnummer og adresse.
+- Fanen **Roller** viser rollene som den valgte parten kan ha, og den juridiske enheten der den har hver rolle.
+- Fanen **ID for mva-registrering** viser ID-er for mva-registrering som er tilordnet til parten.
 
 Du kan kopiere en part bare hvis den har en leverandørrollen og hvis den har denne rollen i en juridisk enhet som ikke er gjeldende juridisk enhet. Følg denne fremgangsmåten når du finner en part som oppfyller disse kriteriene.
 
@@ -61,7 +60,7 @@ Når du kopierer en leverandør, prøver systemet å lagre den nye leverandørin
 
 ## <a name="copy-a-vendor-by-using-the-tax-exempt-number-search-feature"></a>Kopiere en leverandør ved hjelp av søkefunksjonen for mva-organisasjonsnummer
 
-Du kan også kopiere leverandører ved hjelp av søkefunksjonen for mva-organisasjonsnummer i **Registrering**-gruppen i kategorien **Leverandør** i handlingsruten på siden **Alle leverandører**. Dialogboksen for **søk etter mva-organisasjonsnummer** som vises, viser mva-organisasjonsnumre, leverandør-ID, leverandørnavn og den juridiske enheten der ID-en for mva-organisasjonsnummeret brukes. Du kan kopiere en leverandør bare hvis den er i en juridisk enhet som ikke er gjeldende juridisk enhet. Følg fremgangsmåten nedenfor når du har valgt en leverandør som oppfyller dette kriteriet.
+Du kan også kopiere leverandører ved hjelp av søkefunksjonen for mva-organisasjonsnummer i **Registrering**-gruppen i fanen **Leverandør** i handlingsruten på siden **Alle leverandører**. Dialogboksen for **søk etter mva-organisasjonsnummer** som vises, viser mva-organisasjonsnumre, leverandør-ID, leverandørnavn og den juridiske enheten der ID-en for mva-organisasjonsnummeret brukes. Du kan kopiere en leverandør bare hvis den er i en juridisk enhet som ikke er gjeldende juridisk enhet. Følg fremgangsmåten nedenfor når du har valgt en leverandør som oppfyller dette kriteriet.
 
 1. Alternativet **Kopier leverandør** vises. Dette alternativet er satt til **Nei** som standard. Hvis du vil kopiere leverandør til gjeldende juridisk enhet, setter du alternativet til **Ja**.
 2. Velg **Velg**. Den nye leverandøren opprettes.
