@@ -11,16 +11,15 @@ ms.technology: ''
 manager: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Norway
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f26d3d49af8ddf2d5f10c516e81a4d21727a9f72
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ef666622d38eb504cadabcbfb63bf85b49fccc80
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408309"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5002856"
 ---
 # <a name="standard-audit-file-for-tax-saf-t-for-norway"></a>Standard revisjonsfil for avgift (SAF-T) for Norge
 
@@ -186,6 +185,3 @@ I samsvar med disse kravene er ER-formatet **SAF-T-format (NO)** implementert fo
 - Hver enkelt XML-fil valideres mot skjemaet.
 
 Når rapporten er generert, hvis det genereres mer enn én XML-fil, må brukeren manuelt nummerere de genererte filene i zip-arkivet ved å legge til **\_\<file number of total files\>** i filnavnene. Brukeren må likeledes sikre at det ikke mer enn 10 XML-filer i det samme zip-arkivet. Hvis det er mer enn 10 XML-filer i et arkiv, må brukeren manuelt dele det opp i flere arkiver, som hver har maksimalt 10 XML-filer.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

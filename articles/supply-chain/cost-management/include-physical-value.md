@@ -1,6 +1,6 @@
 ---
 title: Ta med fysisk verdi
-description: Du bruker avmerkingsboksen Ta med fysisk verdi i hurtigkategorien Lagermodell på Varemodellgrupper-siden til å angi om fysisk oppdaterte transaksjoner skal tas med i beregningen av løpende gjennomsnittlig kostpris for en vare.
+description: Du bruker avmerkingsboksen Ta med fysisk verdi i hurtigfanen Lagermodell på Varemodellgrupper-siden til å angi om fysisk oppdaterte transaksjoner skal tas med i beregningen av løpende gjennomsnittlig kostpris for en vare.
 author: AndersGirke
 manager: tfehr
 ms.date: 10/31/2019
@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: InventModelGroup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 79033
 ms.assetid: 1928c145-bf82-436d-87ca-e7a173e31923
 ms.search.region: Global
@@ -19,18 +18,18 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c6e70a40b15bf08d88958cbf3ee3e82ed63e7a48
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5685fd384e240c1bc6236dbddf678c8d6d9c8c66
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434387"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5005508"
 ---
 # <a name="include-physical-value"></a>Ta med fysisk verdi
 
 [!include [banner](../includes/banner.md)]
 
-Du bruker avmerkingsboksen Ta med fysisk verdi i hurtigkategorien Lagermodell på Varemodellgrupper-siden til å angi om fysisk oppdaterte transaksjoner skal tas med i beregningen av løpende gjennomsnittlig kostpris for en vare.
+Du bruker avmerkingsboksen Ta med fysisk verdi i hurtigfanen Lagermodell på Varemodellgrupper-siden til å angi om fysisk oppdaterte transaksjoner skal tas med i beregningen av løpende gjennomsnittlig kostpris for en vare.
 
 Avmerkingsboksen **Ta med fysisk verdi** har følgende verdier.
 
@@ -60,6 +59,3 @@ Når en salgsordre posteres, er det posterte kostbeløpet USD 10,00, fordi løpe
 
 > [!NOTE]
 > For sammenligning: Hvis du merker av for **Ta med fysisk verdi** for denne varen, når en salgsordre posteres, blir det posterte kostnadsbeløpet USD 12,00.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

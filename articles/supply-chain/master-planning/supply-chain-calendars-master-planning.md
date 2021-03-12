@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2c32957b0bd234ed14e6333a36a46c6a83ec2e91
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bbbd60ddfd46904374a2cf3ad4a09f96805bd2bf
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434431"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5001805"
 ---
 # <a name="calendars-and-master-planning"></a>Kalendere og hovedplanlegging
 
@@ -49,14 +48,14 @@ En dekningsgruppe angir et felles sett med parametere som brukes for etterfyllin
 For å legge til en kalender i en dekningsgruppe gå til **Hovedplanlegging > Oppsett > Dekning > Dekningsgrupper**. Finn dekningsgruppen som du vil tilordne kalenderen til, og merk av i **Kalender**-feltet.
 
 Du kan tilordne dekningsgruppen på ulike sider: 
-    - På siden **Detaljer om frigitt produkt** for et element. For å se dekningsgruppen for et element kan du gå til **Behandling av produktinformasjon > Produkter > Frigitte produkter** og velge varen for å gå til siden **Frigitt produktinformasjon**. Du kan se elementdekningsgruppen under hurtigkategorien **Planlegg**.
-    - På siden **Varedekning**. I den frigitte produktinformasjonen klikk **Varedekning** for å gå til varedekningssiden. Du kan se forskjellige parametere for etterfylling, avhengig av området, lageret og produktdimensjonene i oversiktskategorien. Dekningsgruppen for hver vare arves fra dekningsgruppen på siden **Detaljer om frigitt produkt**. Dette kan overstyres ved å bruke **Bruk spesifikke innstillinger** eller **Overstyr gruppeinnstillinger** på **Generelt**-kategorien.
+    - På siden **Detaljer om frigitt produkt** for et element. For å se dekningsgruppen for et element kan du gå til **Behandling av produktinformasjon > Produkter > Frigitte produkter** og velge varen for å gå til siden **Frigitt produktinformasjon**. Du kan se elementdekningsgruppen under hurtigfanen **Planlegg**.
+    - På siden **Varedekning**. I den frigitte produktinformasjonen klikk **Varedekning** for å gå til varedekningssiden. Du kan se forskjellige parametere for etterfylling, avhengig av området, lageret og produktdimensjonene i oversiktsfanen. Dekningsgruppen for hver vare arves fra dekningsgruppen på siden **Detaljer om frigitt produkt**. Dette kan overstyres ved å bruke **Bruk spesifikke innstillinger** eller **Overstyr gruppeinnstillinger** på **Generelt**-fanen.
     - På siden **Parametere for hovedplanlegging**. Hvis en vare ikke har en dekningsgruppe angitt på den forrige siden, vil hovedplanlegging ta den generelle dekningsgruppen som er angitt i hovedplanleggingsparametere. Dette er definert i **Hovedplanlegging > Oppsett > Parametere for hovedplanlegging** i feltet **Generell dekningsgruppe**. 
 
 ### <a name="calendar-for-a-vendor"></a>Kalender for en leverandør
 Hvis du vil angi virkedager for en leverandør, kan du tilordne en innkjøpskalender for leverandøren på siden **Bestillingsstandarder** for en leverandør. 
 
-Hvis du vil angi en kalender for en leverandør, må du opprette kalenderen i **Organisasjonsadministrasjon > Kalendere > Kalendere**. Når kalenderen er opprettet, må du tilordne den til leverandøren. Gå til **Leverandører > Leverandører > Alle leverandører**, og velg leverandøren du vil tilordne kalenderen til. Deretter, på siden for leverandøren i hurtigkategorien **Bestillingsstandarder** tilordner du den nye innkjøpskalenderen ved hjelp av rullegardinmenyen. 
+Hvis du vil angi en kalender for en leverandør, må du opprette kalenderen i **Organisasjonsadministrasjon > Kalendere > Kalendere**. Når kalenderen er opprettet, må du tilordne den til leverandøren. Gå til **Leverandører > Leverandører > Alle leverandører**, og velg leverandøren du vil tilordne kalenderen til. Deretter, på siden for leverandøren i hurtigfanen **Bestillingsstandarder** tilordner du den nye innkjøpskalenderen ved hjelp av rullegardinmenyen. 
 
 Kalenderen for en leverandør viser dagene de godtar plasseringen av bestillingen, og datoene når de kan levere ordrene til firmaet ditt. Derfor vil ordredatoer for innkjøpsordrer for leverandøren med en innkjøpskalender, bli datoer som er definert som åpne i kalenderen. Leveringsdatoene for disse ordrene vil også være i åpne dager, og derfor vil dette påvirke leveringstiden for den innkjøpte varen. 
 
@@ -70,7 +69,7 @@ Derfor vil det i de fleste tilfeller anbefales at det ikke velges virkedager for
 
 #### <a name="define-lead-times-from-the-trade-agreements-page"></a>Definere leveringstider fra siden for forretningsavtale
 
-Hovedplanlegging kan settes opp til å inkludere alle forretningsavtaler for leverandører. Forretningsavtaler er faste priser eller rabattavtaler som er definert for én eller flere kunder eller leverandører for salg eller kjøp av enkelte eller flere produkter. Gå til **Hovedplanlegging > Oppsett > Parametere for hovedplanlegging**, og i kategorien **Planlagte bestillinger** velg **Finn forretningsavtaler** for å inkludere forretningsavtalene ved planlegging. Hovedplanlegging kan velge leverandøren med **Minimum leveringstid** eller med **Laveste enhetspris**.
+Hovedplanlegging kan settes opp til å inkludere alle forretningsavtaler for leverandører. Forretningsavtaler er faste priser eller rabattavtaler som er definert for én eller flere kunder eller leverandører for salg eller kjøp av enkelte eller flere produkter. Gå til **Hovedplanlegging > Oppsett > Parametere for hovedplanlegging**, og i fanen **Planlagte bestillinger** velg **Finn forretningsavtaler** for å inkludere forretningsavtalene ved planlegging. Hovedplanlegging kan velge leverandøren med **Minimum leveringstid** eller med **Laveste enhetspris**.
 
 ### <a name="calendar-for-a-warehouse"></a>Kalender for et lager
 Du kan tilordne en kalender til et lager for å vise de åpne datoene for mottak og levering. Hvis ingen kalender er knyttet til et lager, antas det at den er åpen alle dager. 
@@ -96,7 +95,7 @@ Legg merke til at det er bare er mulig å inkludere én kalender per kunde. Hvis
 Den ønskede leveringsdatoen på salgsordrelinjene påvirkes av kundekalenderen og metoden for leveringsdatokontroll. Du kan lese mer om hvordan den tidligste leveringsdatoen beregnes, i [Ordrebekreftelse.](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-dates-available-promise-calculations).
 
 ### <a name="shipping-calendar-for-a-legal-entity"></a>Leveringskalender for en juridisk enhet
-For å angi datoene som en juridisk enhet kan sende varer, kan du definere en leveringskalender under **Organisasjonsstyring > Organisasjoner > Juridiske enheter**. Velg juridisk enhet, og legg til kalenderen i **Utenrikshandel og logistikk**-kategorien i **Leveringskalender**-feltet. Leveringskalenderen vil fungere som en kilde for standarder for alle lagerkalendere i den juridiske enheten. 
+For å angi datoene som en juridisk enhet kan sende varer, kan du definere en leveringskalender under **Organisasjonsstyring > Organisasjoner > Juridiske enheter**. Velg juridisk enhet, og legg til kalenderen i **Utenrikshandel og logistikk**-fanen i **Leveringskalender**-feltet. Leveringskalenderen vil fungere som en kilde for standarder for alle lagerkalendere i den juridiske enheten. 
 
 ## <a name="how-calendars-affect-dates-in-planning"></a>Hvordan kalendere påvirker datoer i planleggingen
 
@@ -143,6 +142,3 @@ Når det gjelder dekningsgruppekalenderen, er det viktig å tenke på at den har
 
 ### <a name="updating-scm-related-calendars"></a>Oppdatere SCM knyttet til kalendere
 Selv om det er viktig at alle relevante kalendere er tilordnet på sine respektive plasser (leverandør, kunde, lager, modus for levering eller dekningsgruppe), er det like viktig å oppdatere dem, slik at de gjenspeiler endringene. Systemet vil definere produksjon, overføring, innkjøp og salgsordredatoer avhengig av kombinasjonen av de tilordnede kalenderne. Det er lurt å avklare hvem som har ansvaret for å tildele og oppdatere kalenderne på de tilsvarende områder. Hvis det oppstår en nedbryting eller annen uvanlig endring i arbeidsdagene, er det viktig å oppdatere kalenderne i henhold til den. Alle aktiviteter som er avhengige av kalendere, for eksempel hovedplanlegging og produksjonsplanlegging, må kjøres på nytt når kalendere oppdateres. 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

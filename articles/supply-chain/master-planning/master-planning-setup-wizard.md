@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: b38009cbfdd5444c6643c5c0159a1aa475aaa3ac
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2f2ec94b8d3bce9ca9fb565fe06b268f5c7458fd
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434538"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5005033"
 ---
 # <a name="master-planning-setup-wizard"></a>Veiviser for oppsett for hovedplanlegging
 
@@ -81,8 +80,8 @@ Funksjonen for prognoseplan i veiviseren spør for eksempel om du vil bruke en p
 
 Følgende alternativer er tilgjengelige:
 
-- **Nei** – hovedplanlegging foreslår ikke planlagte bestillinger for å oppfylle en prognose. I kategorien **Horisonter** på siden **Hovedplaner** (**Hovedplanlegging \> Oppsett \> Planer \> Hovedplaner**) setter veiviseren alternativet **Prognoseplan (horisont)** til **Ja** og antall dager til **0** (null). Dette oppsettet vil overstyre tidshorisonten som er angitt i dekningsgruppen. Fordi antall dager er satt til **0** (null), vil ikke funksjonen bli brukt.
-- **Ja, som definert i denne hovedplanen** – et felt blir tilgjengelig, der du kan angi antall dager hovedplanleggingen skal foreslå planlagte bestillinger for å oppfylle prognosebehovet. Veiviaseren setter alternativet **Prognoseplan (horisont)** til **Ja** og antall dager til det antallet som er angitt i feltet **Prognoseplan** i kategorien **Horisonter** på **Hovedplaner**-siden. Dette oppsettet vil overstyre verdiene som er angitt i dekningsgruppene.
+- **Nei** – hovedplanlegging foreslår ikke planlagte bestillinger for å oppfylle en prognose. I fanen **Horisonter** på siden **Hovedplaner** (**Hovedplanlegging \> Oppsett \> Planer \> Hovedplaner**) setter veiviseren alternativet **Prognoseplan (horisont)** til **Ja** og antall dager til **0** (null). Dette oppsettet vil overstyre tidshorisonten som er angitt i dekningsgruppen. Fordi antall dager er satt til **0** (null), vil ikke funksjonen bli brukt.
+- **Ja, som definert i denne hovedplanen** – et felt blir tilgjengelig, der du kan angi antall dager hovedplanleggingen skal foreslå planlagte bestillinger for å oppfylle prognosebehovet. Veiviaseren setter alternativet **Prognoseplan (horisont)** til **Ja** og antall dager til det antallet som er angitt i feltet **Prognoseplan** i fanen **Horisonter** på **Hovedplaner**-siden. Dette oppsettet vil overstyre verdiene som er angitt i dekningsgruppene.
 - **Ja, som definert i dekningen** – veiviseren vil sette alternativet **Prognoseplan (horisont)** til **Nei**. Tidshorisontene som er angitt i dekningsgruppen, vil bli brukt til å angi hvor lenge du vil planlegge for prognosen.
 
 De gjenstående spørsmålene på denne siden og svarene følger etter samme skjema:
@@ -97,7 +96,7 @@ Hvis du vil ha mer informasjon, se [Finplanlegging](https://docs.microsoft.com/d
 
 Siden **Planleggingsalternativer** vises bare hvis du svarte **Ja** på spørsmålet om du produserer noen av de planlagte varene, på den første siden i veiviseren.
 
-Svaret på det første spørsmålet på denne siden (om du må planlegge operasjoner delt inn i enkeltjobber) bestemmer planleggingsmetoden i kategorien **Generelt** på **Hovedplaner**-siden.
+Svaret på det første spørsmålet på denne siden (om du må planlegge operasjoner delt inn i enkeltjobber) bestemmer planleggingsmetoden i fanen **Generelt** på **Hovedplaner**-siden.
 
 - **Ja** – jobbplanlegging vil bli brukt.
 - **Nei** – grovplanlegging vil bli brukt.
@@ -114,7 +113,7 @@ Oppsettet av hovedplanleggingen blir oppdatert basert på svarene, i henhold til
 - **Ja, som definert i denne hovedplanen** – alternativet **Horisont** settes til **Ja**. Antallet dager du angir, vil bli brukt, og vil overstyre verdiene som er angitt i dekningsgruppene.
 - **Ja, som definert i dekningsgruppen** – alternativet **Horisont** settes til **Nei**.
 
-Når det gjelder beregnede forsinkelser, vil svarene på spørsmålene i vei viseren oppdatere de tilsvarende parameterne i kategorien **Beregnede forsinkelser** på siden **Hovedplaner**.
+Når det gjelder beregnede forsinkelser, vil svarene på spørsmålene i vei viseren oppdatere de tilsvarende parameterne i fanen **Beregnede forsinkelser** på siden **Hovedplaner**.
 
 ## <a name="summary-of-your-changes"></a>Oversikt over endringene
 
@@ -209,6 +208,3 @@ I veiviseren angis følgende verdier for Contoso Retailer:
     - **Svar:** "Ja, som definert i denne hovedplanen." **1 dag** angis.
 
     Contoso bruker de godkjente rekvisisjonene fra sine butikker til å opprette bestillingsforslag for å etterfylle disse butikkene. Fordi hovedplanlegging kjøres hver dag, blir rekvisisjonen fra den siste dagen inkludert i planleggingen.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: InventAgingStorage, InventAgingStorageChart, InventAgingStorageDetails
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2019-01-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: c4a1480cf96a4ba753b436c04eb8f7b01379da48
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8a292bd7a7ccbb09af1955e1e253b45e230c1009
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434385"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5005433"
 ---
 # <a name="inventory-aging-report-storage"></a>Lagring av rapport for aldersfordeling for lager
 
@@ -57,6 +56,3 @@ Før du kan bruke denne funksjonen, må du aktivere den i systemet. Administrato
     > Skjemaet inkluderer ikke delsummer som er definert i rapportoppsettet.
 
 Ved hjelp av dateenheten **Rapport for aldersfordeling for lager** kan du eksportere utdataene for en **lagring av rapport for aldersfordeling for lager**-rapport ved å bruke et filter for **Prosess-ID – navn**-feltet til et hvilket som helst format som databehandling støtter.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

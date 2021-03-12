@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: MCRCustomerService, MCRCustSearch, SalesTable, MCRContinuityCustInfo, MCRCustPaymLookup, CreditCardTokenization, CreditCardLookup, MCRSalesOrderRecap
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2baf0127a35cc62952fd78daaf8204d35ec8d2b3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5b641fb6ba5edf359a2f1f2de7b5095d73b497cf
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414673"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5003634"
 ---
 # <a name="using-continuity-program"></a>Bruke kontinuitetsprogram
 
@@ -62,6 +61,3 @@ Denne fremgangsmåten hjelper med å selge et kontinuitetsprogram og behandle ti
     * Angi salgsordrenummeret du noterte deg tidligere i denne fremgangsmåten. Dette vil holde behandlingstiden nede på et minimum for denne prosedyren. Salgsordre-feltet er valgfritt – du kan behandle alle ordrer for et hvilken som helst program.  
 21. Klikk OK.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ReqPlanSched, ReqReduceKeyDefaultDataWizard, ReqReduceKey
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 19251
 ms.assetid: aa9e0dfb-6052-4a2e-9378-89507c02fdf2
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1fc2b63bfdec1c663027cb4e551589a705c2164e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8732d0a032b7dd44918955354c56321d065d4a77
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434280"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5001855"
 ---
 # <a name="forecast-reduction-keys"></a>Prognosereduksjonsnøkler
 
@@ -212,21 +211,18 @@ En prognosereduksjonsnøkkel brukes i metodene **Transaksjoner – reduksjonsnø
 En prognosereduksjonsnøkkel må tilordnes til en dekningsgruppe for varen. Følg denne fremgangsmåten hvis du vil tilordne en reduksjonsnøkkel til varens dekningsgruppe.
 
 1. Gå til **Hovedplanlegging \> Oppsett \> Dekning \> Dekningsgrupper**.
-2. På **Andre**-hurtigkategorien i feltet **Reduksjonsnøkkel** velger reduksjonsnøkkelen som skal tilordnes dekningsgruppen. Reduksjonsnøkkelen gjelder deretter for alle varer som tilhører en dekningsgruppe.
+2. På **Andre**-hurtigfanen i feltet **Reduksjonsnøkkel** velger reduksjonsnøkkelen som skal tilordnes dekningsgruppen. Reduksjonsnøkkelen gjelder deretter for alle varer som tilhører en dekningsgruppe.
 3. Hvis du vil bruke en reduksjonsnøkkel for å beregne prognosereduksjon under hovedplanlegging, må du definere denne innstillingen i oppsettet av prognoseplanen eller hovedplanen. Gå til ett av følgende steder:
 
     - Hovedplanlegging \> Oppsett \> Planer \> Prognoseplaner
     - Hovedplanlegging \> Oppsett \> Planer \> Hovedplaner
 
-4. På siden **Prognoseplaner** eller **Hovedplaner**, i **Generelt**-hurtigkategorien i feltet **Metode som brukes til å redusere prognosebehov**, velger du enten **Prosent – reduksjonsnøkkel** eller **Transaksjoner – reduksjonsnøkkel**.
+4. På siden **Prognoseplaner** eller **Hovedplaner**, i **Generelt**-hurtigfanen i feltet **Metode som brukes til å redusere prognosebehov**, velger du enten **Prosent – reduksjonsnøkkel** eller **Transaksjoner – reduksjonsnøkkel**.
 
 ## <a name="reduce-a-forecast-by-transactions"></a>Redusere en prognose etter transaksjoner
 
-Når du velger **Transaksjoner – reduksjonsnøkkel** eller **Transaksjoner – dynamisk periode** som metode for å redusere prognosebehov, kan du angi hvilke transaksjoner som reduserer prognosen. På siden **Dekningsgrupper**, i **Andre**-hurtigkategorien i feltet **Reduser prognose etter**, velger du **Alle transaksjoner** hvis alle transaksjoner skal redusere prognosen, eller **Ordrer** hvis bare salgsordrer skal redusere prognosen.
+Når du velger **Transaksjoner – reduksjonsnøkkel** eller **Transaksjoner – dynamisk periode** som metode for å redusere prognosebehov, kan du angi hvilke transaksjoner som reduserer prognosen. På siden **Dekningsgrupper**, i **Andre**-hurtigfanen i feltet **Reduser prognose etter**, velger du **Alle transaksjoner** hvis alle transaksjoner skal redusere prognosen, eller **Ordrer** hvis bare salgsordrer skal redusere prognosen.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Oversikt over hovedplaner](master-plans.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

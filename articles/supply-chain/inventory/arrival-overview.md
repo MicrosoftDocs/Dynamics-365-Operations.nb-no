@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: WMSArrivalOverview, WMSArrivalOverviewProfile, WMSJournalTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 274363
 ms.assetid: 375807b2-a426-4f1b-bc1f-2fe00fd48413
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 30859292f8ec481f018fe0c5a5ca4ca11c246d4c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 89f885cbbe6a5001b507cd9fb1516733f8faee0f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434482"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5005283"
 ---
 # <a name="arrival-overview"></a>Ankomstoversikt
 
@@ -55,17 +54,17 @@ Siden **Ankomstoversikt** gir en oversikt over varene som forventes å ankomme o
 
 I vårt eksempel vil Sammy sette opp en ny datamaskin på en lokasjon som skal brukes til å motta ferdigvarer som leveres fra produksjon på område 1. På siden **Profiler for ankomstoversikt** oppretter Sammy et nytt oppsett som heter **Område 1 – produksjon** og angir følgende innstillinger.
 
-1.  I hurtigkategorien **Ankomstalternativer** i feltgruppen **Område** angir du informasjon om et dagsintervall og lagrene som skal tas med i oversikten.
-2.  I hurtigkategorien **Ankomstsalternativer** i feltgruppen **Journal** angir du et mottakende lager, en plassering og et journalnavn (vareankomst/produksjonsinnlevering).
-3.  I hurtigkategorien **Detaljer om spørring etter ankomst** i **Område**-feltgruppen, i feltet **Begrens til område**, angir du et område for å begrense visningen i oversiktsområdet.
-4.  I hurtigkategorien **Detaljer om spørring etter ankomst** i feltgruppen **Transaksjonstyper som vises** angir du alternativet **Produksjonsordrer** til **Ja**.
-5.  I hurtigkategorien **Detaljer om spørring etter ankomst** i **Diverse**-gruppen setter du alternativet **Oppdater ved oppstart** til **Ja** hvis visningen skal oppdateres automatisk ved oppstart. Angi alternativet **Oppdater ved områdeendring** til **Ja** hvis visningen skal oppdateres automatisk når verdier endres.
+1.  I hurtigfanen **Ankomstalternativer** i feltgruppen **Område** angir du informasjon om et dagsintervall og lagrene som skal tas med i oversikten.
+2.  I hurtigfanen **Ankomstsalternativer** i feltgruppen **Journal** angir du et mottakende lager, en plassering og et journalnavn (vareankomst/produksjonsinnlevering).
+3.  I hurtigfanen **Detaljer om spørring etter ankomst** i **Område**-feltgruppen, i feltet **Begrens til område**, angir du et område for å begrense visningen i oversiktsområdet.
+4.  I hurtigfanen **Detaljer om spørring etter ankomst** i feltgruppen **Transaksjonstyper som vises** angir du alternativet **Produksjonsordrer** til **Ja**.
+5.  I hurtigfanen **Detaljer om spørring etter ankomst** i **Diverse**-gruppen setter du alternativet **Oppdater ved oppstart** til **Ja** hvis visningen skal oppdateres automatisk ved oppstart. Angi alternativet **Oppdater ved områdeendring** til **Ja** hvis visningen skal oppdateres automatisk når verdier endres.
 
-For dette eksemplet er feltet **Profilnavn for ankomstoversikt** i hurtigkategorien **Ankomstoversikt** på siden **Ankomstoversikt** satt til **Område 1 – produksjon**.
+For dette eksemplet er feltet **Profilnavn for ankomstoversikt** i hurtigfanen **Ankomstoversikt** på siden **Ankomstoversikt** satt til **Område 1 – produksjon**.
 
 ### <a name="prerequisites-for-arrival-journals"></a>Forutsetninger for ankomstjournaler
 
-For automatisk å opprette ankomstjournaler fra **Ankomstoversikt**-siden må du definere riktig informasjon i **Journal**-feltgruppen i hurtigkategorien **Ankomstalternativer**.
+For automatisk å opprette ankomstjournaler fra **Ankomstoversikt**-siden må du definere riktig informasjon i **Journal**-feltgruppen i hurtigfanen **Ankomstalternativer**.
 
 -   Du må angi et journalnavn når du oppretter en journal.
 
@@ -85,7 +84,7 @@ På **Mottak**-hurtigfanen velger Sammy flere linjer og klikker deretter **Start
 
 #### <a name="view-information"></a>Vis informasjon
 
-For å få en oversikt over forventede mottak i et datointervall, angir Sammy følgende informasjon i feltene på hurtigkategorien **Ankomstalternativer** på siden **Ankomstoversikt**, og klikker deretter **Oppdater** for å oppdatere visningen:
+For å få en oversikt over forventede mottak i et datointervall, angir Sammy følgende informasjon i feltene på hurtigfanen **Ankomstalternativer** på siden **Ankomstoversikt**, og klikker deretter **Oppdater** for å oppdatere visningen:
 
 -   Profilnavn for ankomstoversikt: **Forespørsel**
 -   Vis linjer: **Alle**
@@ -114,13 +113,10 @@ Ved å velge flere linjer på **Ankomstoversikt**-siden kan Sammy starte en anko
 ## <a name="update-arrival-information-and-process-a-product-receipt"></a>Oppdatere ankomstinformasjon og behandle en mottaksseddel
 Når alle varene er registrert, kan lagersjefen eller innkjøpssjefen oppdatere de mottatte varene med en produktkvittering for å legge til den fysiske kostnaden. Bruk følgende fremgangsmåte for å oppdatere ankomstinformasjonen og postere en produktkvittering.
 
-1.  Klikk **Lagerstyring** &gt; **Innkommende ordrer** &gt; **Ankomstoversikt**.
+1.  Klikk på **Lagerstyring** &gt; **Innkommende ordrer** &gt; **Ankomstoversikt**.
 2.  På siden **Ankomstoversikt** klikker du **Journaler** &gt; **Journaler klare for mottaksseddel** for å vise en liste over journalene som er klare for oppdatering av produktkvittering.
 3.  Velg journalene som må oppdateres, og klikk deretter **Funksjoner** &gt; **Produktkvittering**.
 4.  På **Postering**-siden angir du produktkvitteringsnummeret, hvis det ikke allerede er tilgjengelig i journalen, og klikker deretter **OK** for å behandle produktkvitteringen.
 
 ## <a name="summary"></a>Sammendrag
 **Ankomstoversikt**-siden kan hjelpe lagersjefen og lagermedarbeidere med å få en oversikt over forventet arbeid som må utføres som en del av en innkommende prosess. Siden kan også brukes til å starte vareankomstprosessen, for å garantere at varer spores på den første posten på lageret.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

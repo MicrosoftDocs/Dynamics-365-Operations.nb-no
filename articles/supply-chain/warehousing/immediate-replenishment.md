@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: WHSLocDirTable, WHSReplenishmentTemplates
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 1705903
 ms.assetid: 427e01b3-4968-4cff-9b85-1717530f72e4
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: c69a9c9fd595280ba4f05a11409a3e672e4b1691
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 6e2919c003d1dc67b988345260b2747364752222
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434800"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5004783"
 ---
 # <a name="immediate-replenishment"></a>Umiddelbar etterfylling
 
@@ -47,7 +46,7 @@ Umiddelbar etterfylling brukes under bølgeutførelse hvis tildelingen mislykkes
 
 ## <a name="set-up-immediate-replenishment"></a>Konfigurere umiddelbar etterfylling
 
-- Gå til **Lagerstyring** \> **Oppsett** \> **Lokasjonsdirektiver**, og deretter i **Linjer**-kategorien i **Mal for umiddelbar etterfylling**-listen velger du en etterfyllingsmal for bølgebehov.
+- Gå til **Lagerstyring** \> **Oppsett** \> **Lokasjonsdirektiver**, og deretter i **Linjer**-fanen i **Mal for umiddelbar etterfylling**-listen velger du en etterfyllingsmal for bølgebehov.
 
 Etterfyllingsmalen brukes hvis lokasjonsdirektivlinjen ikke kan tildele en angitt målenhet.
 
@@ -57,6 +56,3 @@ Hvis umiddelbar etterfylling er valgt for en lokasjonsdirektivlinje, men ikke no
 
 - Kontroller at behovsetterfyllingsmalen som brukes, er konfigurert til å bruke de riktige lokasjonsmalene og arbeidsmalene for **Etterfylling**-typen.
 - Kontroller at det er stor nok lagerbeholdning på stedene der behovsetterfyllingsmalen søker etter lagerbeholdning for etterfylling.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

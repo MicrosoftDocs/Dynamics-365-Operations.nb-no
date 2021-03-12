@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSReservationHierarchy, WHSWorkTrans, WHSWorkInventTrans, WHSInventTableReservationHierarchy, WHSReservationHierarchyCreate, WHSInventTableReservationHierarchy
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: b9bd4e67ed64218f9c4ac87bd143f73680af9ac4
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: bf50b0b8da2859caab4db2394f2d56f7b76793ca
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434736"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5004808"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Fleksibel retningslinje for dimensjonsreservasjon på lagernivå
 
@@ -274,7 +273,7 @@ Dette scenarioet refererer til verdier og poster som er inkludert i standard dem
 1. Velg **OK** for å opprette produktet og lukke dialogboksen.
 1. Det nye produktet åpnes. På **Lager**-hurtigfanen angir du *ea* i **Sekvensgruppe-ID for enhet**-feltet.
 1. Gjenta de forrige trinnene for å opprette et nytt produkt som har de samme innstillingene, men sett feltene **Produktnumer** og **Varenummer** til *Vare 2*.
-1. I handlingsruten i kategorien **Administrer lager** i gruppen **Visning** velger du **Lagerbeholdning**. Velg deretter **Antallsjustering**.
+1. I handlingsruten i fanen **Administrer lager** i gruppen **Visning** velger du **Lagerbeholdning**. Velg deretter **Antallsjustering**.
 1. Juster lagerbeholdningen for de nye varene slik det er angitt i følgende tabell.
 
     | Artikkel  | Lager | Lokasjon | Nummerskilt | Antall |
@@ -424,7 +423,7 @@ Følgende tabeller inneholder en oversikt som viser hvordan systemet håndterer 
 <td>Gjelder ikke</td>
 </tr>
 <tr>
-<td>Nr.</td>
+<td>Nei</td>
 <td>
 <ol>
 <li>Velg <strong>Overstyr plassering</strong>-menyelementet på lagerappen når du begynner plukkarbeid.</li>
@@ -722,7 +721,7 @@ Følgende tabeller inneholder en oversikt som viser hvordan systemet håndterer 
 </tr>
 <tr>
 <td>Et arbeidsunntak av <strong>Plukk med mangler</strong>-typen settes opp, der <strong>Ny fordeling av vare</strong> = <strong>Manuell</strong>, <strong>Juster beholdning</strong> = <strong>Ja</strong> og <strong>Fjern reservasjoner</strong> = <strong>Nei</strong>. I tillegg er <strong>Tillat manuell omfordeling av varer</strong>-alternativet aktivert for arbeideren.</td>
-<td>Nr.</td>
+<td>Nei</td>
 <td>
 <ol>
 <li>Velg <strong>Plukk med mangler</strong>-menyelementet på lagerappen når du kjører plukkarbeid.</li>
@@ -735,7 +734,7 @@ Følgende tabeller inneholder en oversikt som viser hvordan systemet håndterer 
 </tr>
 <tr>
 <td>Et arbeidsunntak av <strong>Plukk med mangler</strong>-typen settes opp, der <strong>Ny fordeling av vare</strong> = <strong>Manuell</strong>, <strong>Juster beholdning</strong> = <strong>Ja</strong> og <strong>Fjern reservasjoner</strong> = <strong>Ja</strong>. I tillegg er <strong>Tillat manuell omfordeling av varer</strong>-alternativet aktivert for arbeideren.</td>
-<td>Nr.</td>
+<td>Nei</td>
 <td>
 <ol>
 <li>Velg <strong>Plukk med mangler</strong>-menyelementet på lagerappen når du kjører plukkarbeid.</li>
@@ -854,6 +853,3 @@ Følgende tabeller inneholder en oversikt som viser hvordan systemet håndterer 
     - Plukking av overføringsordrer og råvarer
 
 - Regelen for konsolidering av containere for pakking etter direktivenhet har begrensninger. For ordreigangsatte reservasjoner anbefaler vi at du ikke bruker maler for containerbygging i tilfeller der **Pakk etter direktivenhet**-feltet er aktivert. I gjeldende utforming brukes ikke plasseringsdirektiver når det opprettes lagerarbeid. Derfor brukes bare den laveste enheten i enhetssekvensgruppen (beholdningsenheten) under bølgetrinnet containerbruk.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

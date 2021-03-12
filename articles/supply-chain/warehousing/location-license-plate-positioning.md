@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSLicensePlate, WHSLocationProfile, WHSLocDirTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 7b0ebfb965e5a8f1bfe1857a9642d998dac2faf3
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 6d94d37368b8fc3ff7dbe4c1845acd52bf2a64ee
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434730"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5004683"
 ---
 # <a name="location-license-plate-positioning"></a>Nummerskiltposisjonering for lokasjon
 
@@ -33,12 +32,12 @@ Funksjonen legger til et sekvensnummer for hvert nummerskilt som settes inn i en
 
 Dette emnet inneholder et scenario som viser hvordan du definerer og bruker funksjonen.
 
-## <a name="turn-on-the-location-license-plate-positioning-feature"></a>Aktiver Plassering av lokasjonsnummerskilt-funksjonen
+## <a name="turn-on-the-location-license-plate-positioning-feature"></a>Aktiver Nummerskiltplassering på lokasjon-funksjonen
 
 Før du kan bruke plassering av nummerskiltlokasjon, må funksjonen aktiveres i systemet. Administratorer kan bruke [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)-arbeidsområdet til å kontrollere funksjonsstatusen og aktivere den hvis den kreves. Funksjonen vises på følgende måte:
 
 - **Modul:** *Lagerstyring*
-- **Funksjonsnavn:** *Plassering av lokasjonsnummerskilt*
+- **Funksjonsnavn:** *Nummerskiltplassering på lokasjon*
 
 ## <a name="example-scenario"></a>Eksempelscenario
 
@@ -48,7 +47,7 @@ For å arbeide deg gjennom dette scenariet ved å bruke verdiene som foreslås h
 
 ### <a name="set-up-the-feature-for-this-scenario"></a>Konfigurer funksjonen for dette scenariet
 
-Fullfør fremgangsmåtene nedenfor for å konfigurere *Plassering av lokasjonsnummerskilt*-funksjonen for scenariet som presenteres i dette emnet.
+Fullfør fremgangsmåtene nedenfor for å konfigurere *Nummerskiltplassering på lokasjon*-funksjonen for scenariet som presenteres i dette emnet.
 
 #### <a name="location-profiles"></a>Lokasjonsprofiler
 
@@ -89,7 +88,7 @@ Funksjonen må aktiveres i lokasjonsprofilen for hver lokasjon den skal brukes p
 1. Velg **Lagerdimensjoner** og velg deretter **Legg til tabellsammenkobling**.
 1. I listen over tabeller som vises i **Relasjon**-kolonnen, velger du **Nummerskilt (nummerskilt)**. Velg deretter **Velg** for å legge til **Nummerskilt** i **Lagerdimensjoner**-tabellsammenkoblingen.
 1. Mens **Nummerskilt** fremdeles er valgt, velger du **Legg til tabellsammenkobling**.
-1. I listen over tabeller som vises i **Relasjon**-kolonnen, velger du **Plassering av lokasjonsnummerskilt (nummerskilt)**. Velg deretter **Velg** for å legge til **Plassering av lokasjonsnummerskilt** i **Lagerdimensjoner**-tabellsammekoblingen.
+1. I listen over tabeller som vises i **Relasjon**-kolonnen, velger du **Nummerskiltplassering på lokasjon (nummerskilt)**. Velg deretter **Velg** for å legge til **Nummerskiltplassering på lokasjon** i **Lagerdimensjoner**-tabellsammekoblingen.
 
     ![Tabellsammenkoblinger](media/LpTableJoin.png "Tabellsammenkoblinger")
 
@@ -98,8 +97,8 @@ Funksjonen må aktiveres i lokasjonsprofilen for hver lokasjon den skal brukes p
 1. På **Område**-fanen velger du **Legg til** for å legge til en linje i rutenettet.
 1. På den nye linjen angir du følgende verdier:
 
-    - **Tabell:** *Plassering av lokasjonsnummerskilt*
-    - **Avledet tabell:** *Plassering av lokasjonsnummerskilt*
+    - **Tabell:** *Nummerskiltplassering på lokasjon*
+    - **Avledet tabell:** *Nummerskiltplassering på lokasjon*
     - **Felt:** *LP-plassering*
     - **Kriterier:** *1*
 
@@ -111,7 +110,7 @@ Funksjonen må aktiveres i lokasjonsprofilen for hver lokasjon den skal brukes p
 
 For dette scenariet må brukeren logge seg på lagermobilappen ved hjelp av en arbeider som er satt opp for lager *61* for å utføre arbeid. Brukeren må også fullføre transaksjoner.
 
-Siden *Plassering av lokasjonsnummerskilt*-funksjonen legger til en ny identifikator for plassering av nummerskilt på en lokasjon, må du først opprette noen data for å støtte scenariet.
+Siden *Nummerskiltplassering på lokasjon*-funksjonen legger til en ny identifikator for plassering av nummerskilt på en lokasjon, må du først opprette noen data for å støtte scenariet.
 
 #### <a name="spot-count-the-first-location"></a>Spottelling på første lokasjon
 
@@ -246,7 +245,7 @@ Arbeidet er nå fullført.
 
 ### <a name="sales-order-scenario"></a>Salgsordrescenario
 
-Nå når funksjonen *Plassering av lokasjonsnummerskilt* er konfigurert, og beholdningen er klargjort, må du opprette en salgsordre for å generere plukking av arbeid som vil styre lagerarbeideren for å plukke vare *A0002* fra lagerlokasjonen der pall-ID-en er i posisjon *1*.
+Nå når funksjonen *Nummerskiltplassering på lokasjon* er konfigurert, og beholdningen er klargjort, må du opprette en salgsordre for å generere plukking av arbeid som vil styre lagerarbeideren for å plukke vare *A0002* fra lagerlokasjonen der pall-ID-en er i posisjon *1*.
 
 1. Gå til **Salg og markedsføring \> Salgsordrer \> Alle salgsordrer**.
 1. Velg **Ny** i handlingsruten.
@@ -264,7 +263,7 @@ Nå når funksjonen *Plassering av lokasjonsnummerskilt* er konfigurert, og beho
 1. Velg **Reservasjon** på **Beholdning**-menyen over rutenettet.
 1. På **Reservasjon**-siden, i handlingspanelet, velger du **Reserver parti** for å reservere beholdning for ordrelinjen.
 1. Lukk **Reservasjon**-siden.
-1. Velg **Frigi til lager** i gruppen **Handlinger** i kategorien **Lager** i handlingsruten.
+1. Velg **Frigi til lager** i gruppen **Handlinger** i fanen **Lager** i handlingsruten.
 
     Du mottar en informasjonsmelding som viser bølge-ID og forsendelses-ID-er som er opprettet for ordren.
 
@@ -281,6 +280,3 @@ Nå når funksjonen *Plassering av lokasjonsnummerskilt* er konfigurert, og beho
     ![Plassering 1-lokasjon](media/LocationLicensePlatePositioning.png "Plassering 1-lokasjon")
 
 1. Angi nummerskilt-ID-en du opprettet for lokasjonen, og følg deretter instruksjonene for å velge salgsordren.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSLocationProfile,WHSWorkTable,WHSWaveTableListPage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 3ae2826b54cb2ff516840443e01185a5342aedcc
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: f8d5e4d82c66d178ceafcdbfb3eb9a941172aa01
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434729"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5004633"
 ---
 # <a name="location-directive-inventory-picking-aging"></a>Aldersfordeling for lagerplukking for lokasjonsdirektiv
 
@@ -76,7 +75,7 @@ Demonstrasjonsdataene krever oppsett- og lagerjusteringer for å støtte scenari
     - Hvis du definerer et LIFO-scenario, endrer du verdien for **Strategi**-feltet til *Lokasjon med aldersfordelt FIFO*.
 
 1. I **Handlinger for lokasjonsdirektiv**-hurtigfanen velger du **Rediger spørring**.
-1. I spørringsdialogboksen i kategorien **Område** velger du **Legg til** for å legge til en linje, og angi deretter følgende verdier:
+1. I spørringsdialogboksen i fanen **Område** velger du **Legg til** for å legge til en linje, og angi deretter følgende verdier:
 
     - **Tabell:** *Plasseringer*
     - **Avledet tabell:** *Lokasjoner*
@@ -117,10 +116,10 @@ FIFO-strategien finner lokasjonen som inneholder den eldste aldersfordelingsdato
 1. Velg **Reservasjon** på **Beholdning**-menyen over rutenettet.
 1. På **Reservasjon**-siden velger du **Reserver parti** for å reservere det bestilte antallet av denne varen fra det bestemte lageret.
 1. Lukk **Reservasjon**-siden.
-1. På siden **Salgsordre**, i handlingsruten i kategorien **Lager** i gruppen **Handlinger**, velger du **Frigi til lager**. Du mottar informasjonsmeldinger. Systemet oppretter en forsendelse, legger den til en ny last, og oppretter det nødvendige arbeidet.
+1. På siden **Salgsordre**, i handlingsruten i fanen **Lager** i gruppen **Handlinger**, velger du **Frigi til lager**. Du mottar informasjonsmeldinger. Systemet oppretter en forsendelse, legger den til en ny last, og oppretter det nødvendige arbeidet.
 1. I hurtigfanen **Salgsordrelinjer** på menyen **Lager** velger du **Arbeidsdetaljer** for å åpne arbeidet som ble opprettet for denne salgsordren. Legg merke til at linjen der **Arbeidstype**-verdien er *Plukk*, viser en **Lokasjon**-verdi på *FL-002*. Denne lokasjonen inneholder nummerskiltet som har den eldste aldersfordelingsdatoen (FIFO).
 1. Velg **Lager \> Forsendelsesdetaljer**.
-1. På hurtigfanen **Generelt** noterer du bølge-ID, slik at du kan bruke den i scenario 2.
+1. I hurtigfanen **_Generelt_* noterer du bølge-ID-en, slik at du kan bruke den i scenario 2.
 
 ### <a name="scenario-2-set-up-and-use-lifo-location-aging"></a>Scenario 2: Definere og bruke LIFO aldersfordeling for lokasjon
 
@@ -133,13 +132,10 @@ LIFO-strategien finner lokasjonen som inneholder den nyeste aldersfordelingsdato
 
 1. Gå til **Lagerstyring \> Utgående bølger \> Forsendelsesbølger \> Alle bølger**.
 1. Velg og åpne lyden som inneholder ordren du opprettet for FIFO-scenariet.
-1. I handlingsruten, i kategorien **Arbeid**, velger du **Avbryt** for å avbryte arbeidet du opprettet for FIFO-scenarioet.
-1. I handlingsruten, i kategorien **Bølge**, i **Bølge**-gruppen, velger du **Behandle**.
-1. Når behandlingen er fullført, velger du **Arbeid** for å åpne arbeidet som ble opprettet for denne bølgen, i handlingsruten i kategorien **Bølge** i gruppen **Relatert informasjon**.
-1. På **Arbeid**-siden, i kategorien **Oversikt**, skal det være to linjer. Velg linjen der **Arbeidsstatus**-feltet er satt til *Åpen*.
+1. I handlingsruten, i fanen **Arbeid**, velger du **Avbryt** for å avbryte arbeidet du opprettet for FIFO-scenarioet.
+1. I handlingsruten, i fanen **Bølge**, i **Bølge**-gruppen, velger du **Behandle**.
+1. Når behandlingen er fullført, velger du **Arbeid** for å åpne arbeidet som ble opprettet for denne bølgen, i handlingsruten i fanen **Bølge** i gruppen **Relatert informasjon**.
+1. På **Arbeid**-siden, i fanen **Oversikt**, skal det være to linjer. Velg linjen der **Arbeidsstatus**-feltet er satt til *Åpen*.
 1. Legg merke til at linjen der **Arbeidstype**-verdien er *Plukk*, viser en **Lokasjon**-verdi på *FL-001*. Denne lokasjonen inneholder nummerskiltet som har den nyeste aldersfordelingsdatoen (LIFO).
 
 I disse scenariene har du sett hvordan strategien for aldersfordeling for lokasjon fungerer for lagerlokasjonen som enten har det eldste lageret eller den nyeste lageret, avhengig av den valgte strategien.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: EcoResProductListPage, EcoResProductCreate, EcoResProductDetails, EcoResProductInventoryDimensionGroups
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fdb30b46a0e5a6d4fac997588dd47148f2664c03
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 612f83f2df0ca3e66aa38defa27ec34315b4b2ce
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434406"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5001730"
 ---
 # <a name="create-a-product-master"></a>Opprette en produktstandard
 
@@ -37,30 +36,27 @@ Opprett en produktstandard for de forhåndsdefinerte variantene. Demonstrasjonsd
 4. Skriv inn en verdi i feltet **Produktnavn**. Angi et beskrivende produktnavn. Verdien angis som standard til søkenavnet, men dette kan endres av brukeren.
 5. Klikk på rullegardinknappen i feltet **Produktdimensjonsgruppe** for å åpne oppslaget. Produktdimensjonsgruppen bestemmer hvilke 4 produktdimensjoner som kan brukes til å opprette produktvarianter. Dette eksemplet brukes en gruppe med farge og størrelse.
 6. Finn og velg ønsket post i listen.
-7. Klikk koblingen i den valgte raden i listen. Standard **Konfigurasjonsteknologi** er Forhåndsdefinert variant. Denne vil bli brukt i dette eksemplet.
-8. Klikk **OK**.
+7. Klikk på koblingen i den valgte raden i listen. Standard **Konfigurasjonsteknologi** er Forhåndsdefinert variant. Denne vil bli brukt i dette eksemplet.
+8. Klikk på **OK**.
 
 ## <a name="select-product-dimension-groups"></a>Velg produktdimensjonsgrupper
 1. Klikk på rullegardinknappen i feltet **Fargegruppe** for å åpne oppslaget.
 2. Finn og velg ønsket post i listen.
-3. Klikk koblingen i den valgte raden i listen.
+3. Klikk på koblingen i den valgte raden i listen.
 4. Klikk på rullegardinknappen i feltet **Størrelsesgruppe** for å åpne oppslaget.
 5. Finn og velg ønsket post i listen.
-6. Klikk koblingen i den valgte raden i listen.
+6. Klikk på koblingen i den valgte raden i listen.
 
 ## <a name="add-dimension-groups"></a>Legge til dimensjonsgrupper
 1. I **handlingsruten** klikker du på **Produkt**.
 2. Klikk på **Dimensjonsgrupper** for å åpne nedtrekksdialogen.
-3. Klikk rullegardinknappen i **Lagringsdimensjonsgruppe**-feltet for å åpne oppslaget. Lagringsdimensjoner hjelper deg styre hvordan varer lagres og hentes fra lageret. En lagringsdimensjon kan for eksempel inkludere Område og lager.
+3. Klikk på rullegardinknappen i **Lagringsdimensjonsgruppe**-feltet for å åpne oppslaget. Lagringsdimensjoner hjelper deg styre hvordan varer lagres og hentes fra lageret. En lagringsdimensjon kan for eksempel inkludere Område og lager.
 4. Finn og velg ønsket post i listen.
-5. Klikk koblingen i den valgte raden i listen.
-6. Klikk rullegardinknappen i **Sporingsdimensjonsgruppe**-feltet for å åpne oppslaget. Sporingsdimensjonsgruppen bestemmer hvilke sporingsdimensjoner du kan legge til et produkt. Parti- eller serienummer brukes for eksempel til å spore varer på lager.
+5. Klikk på koblingen i den valgte raden i listen.
+6. Klikk på rullegardinknappen i **Sporingsdimensjonsgruppe**-feltet for å åpne oppslaget. Sporingsdimensjonsgruppen bestemmer hvilke sporingsdimensjoner du kan legge til et produkt. Parti- eller serienummer brukes for eksempel til å spore varer på lager.
 7. Finn og velg ønsket post i listen.
-8. Klikk koblingen i den valgte raden i listen.
-9. Klikk **OK**.
-10. Klikk **Lagre**.
+8. Klikk på koblingen i den valgte raden i listen.
+9. Klikk på **OK**.
+10. Klikk på **Lagre**.
 11. Lukk siden.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

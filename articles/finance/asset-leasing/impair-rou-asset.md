@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 7a017cdbcbfa01d4dba383f2b6b7c742e54014e4
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 9822a11dbb277726b60ff82843bd26314e968345
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4446606"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5003262"
 ---
 # <a name="impair-right-of-use-assets"></a>Forringe bruksrettseiendeler
 
@@ -102,6 +101,3 @@ Tabellene nedenfor viser verdiene som er angitt i fanene **Generelt** og **Linje
 7. Hvis du vil vise nettoinnvirkning for verdiforringelsen, går du til tabellene for gjeld og anleggsmiddeltransaksjoner. Legg merke til at verdiforringelseutgiften har redusert bruksrettseiendelen, men det indirekte beløpet for leieforpliktelse er ikke endret.
 
 Verdiforringelsen har én annen effekt som du bør vurdere. Fordi beløpet for bruksrettseiendelen nå er mye mindre enn leieforpliktelsen, må beløpet avskrives på en annen måte enn før. Spesielt avskrives aktivaet nå på en lineær måte i løpet av de gjenværende 84 månedene i leieavtalen, som begynner på transaksjonsdatoen.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

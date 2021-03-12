@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: WHSLoadPlanningWorkbench, TMSAppointment
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: eaf3acda7e56df1af41e91809387644778d2cf3f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d5aaf2e40864c3a774f7a654078c79a6fdd87240
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434193"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5004958"
 ---
 # <a name="set-up-an-appointment-for-a-load"></a>Sette opp en avtale for en last
 
@@ -35,18 +34,15 @@ Denne prosedyren viser hvordan du konfigurerer og planlegger en mottakssoneavtal
 1. Gå til Transportstyring > Planlegging > Arbeidsområde for lastplanlegging.
 2. Fjern merket for Skjul sendt og mottatt.
 3. I listen velger du lasten som har status Sendt.
-4. Klikk Transport.
-5. Klikk Avtaleplanlegging.
+4. Klikk på Transport.
+5. Klikk på Avtaleplanlegging.
 
 ## <a name="create-an-appointment"></a>Opprette en avtale
-1. Klikk Ny.
+1. Klikk på Ny.
 2. Angi eller velg en verdi i feltet Avtaleregel.
-3. Klikk Lagre.
-4. Klikk Oppdater status.
-5. Klikk Bekreft.
-6. Klikk Lagre.
+3. Klikk på Lagre.
+4. Klikk på Oppdater status.
+5. Klikk på Bekreft.
+6. Klikk på Lagre.
 7. Lukk siden.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

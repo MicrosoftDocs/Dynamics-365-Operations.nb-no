@@ -12,17 +12,16 @@ ms.search.form: UnitOfMeasureConversion
 ROBOTS: noindex, nofollow
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 71d35d47a703f0931ba3b4ab5df21c7199c7ea5b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5f327d1d0b38ad724da6a302cefc115262317812
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434696"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5001705"
 ---
 # <a name="unit-of-measure-conversion-per-product-variant"></a>Konvertering av måleenhet per produktvariant
 
@@ -47,11 +46,11 @@ Hvis du vil konfigurere en produktstandard til å støtte enhetskonvertering per
 1. Gå til **Behandling av produktinformasjon \> Produkter \> Produktstandarder**.
 1. Opprett eller åpne en produktstandard for å gå til siden **Produktdetaljer**.
 1. Sett alternativet **Aktiver måleenhetskonverteringer** til *Ja*.
-1. I gruppen **Oppsett** i kategorien **Produkt** i handlingsruten velger du **Enhetskonverteringer**.
+1. I gruppen **Oppsett** i fanen **Produkt** i handlingsruten velger du **Enhetskonverteringer**.
 1. Siden **Enhetskonverteringer** åpnes. Velg én av følgende kategorier:
 
-    - **Klasseinterne konverteringer** – Velg denne kategorien for å konvertere mellom enheter som tilhører den samme enhetsklassen.
-    - **Mellomklassekonverteringer** – Velg denne kategorien for å konvertere mellom enheter som tilhører ulike klasser.
+    - **Klasseinterne konverteringer** – Velg denne fanen for å konvertere mellom enheter som tilhører den samme enhetsklassen.
+    - **Mellomklassekonverteringer** – Velg denne fanen for å konvertere mellom enheter som tilhører ulike klasser.
 
 1. Velg **Ny** for å legge til en ny enhetskonvertering.
 1. Sett feltet **Opprett konvertering for** til én av følgende verdier:
@@ -59,7 +58,7 @@ Hvis du vil konfigurere en produktstandard til å støtte enhetskonvertering per
     - **Produkt** – Hvis du velger denne verdien, kan du definere en enhetskonvertering for produktstandarden. Denne enhetskonverteringen vil bli brukt som et tilbakefallsområde for alle produktvarianter som ingen enhetskonvertering er definert for.
     - **Produktvariant** – Hvis du velger denne verdien, kan du definere en enhetskonvertering for en bestemt produktvariant. Bruk feltet **Produktvariant** til å velge varianten.
 
-    ![![Legge til en ny enhetskonvertering](media/uom-new-conversion.png "Legge til en ny enhetskonvertering")](media/uom-new-conversion.png "Adding a new unit conversion")
+    ![Legge til en ny enhetskonvertering](media/uom-new-conversion.png "Legge til en ny enhetskonvertering")
 
 1. Bruk de andre feltene som finnes, til å definere enhetskonverteringen.
 1. Velg **OK** for å lagre den nye enhetskonverteringen.
@@ -107,6 +106,3 @@ Hvis du vil eksportere enhetskonverteringer til Excel, velger du **Åpne i Micro
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Administrere måleenhet](tasks/manage-unit-measure.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSPhysDimUOM, WHSMovementType, WHSItemConsolidationForm, WHSRFMenu, WHSRFMenuItem
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 6a328b20c1cfb2fc376ab4656c64cf585a5aa015
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 6edabc51981d8935672b44e53b453cfbaca9031b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434733"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5004658"
 ---
 # <a name="item-consolidation---location-utilization"></a>Varekonsolidering – lokasjonsutnyttelse
 
@@ -60,7 +59,7 @@ Denne delen beskriver hvordan du kan klargjøre systemet til å bruke varekonsol
 
 1. Gå til **Behandling av produktinformasjon \> Produkter \> Frigitte produkter**.
 1. I feltet **Varenummer** velger du *M9201*, og deretter åpner du detaljsiden.
-1. I handlingsruten i kategorien **Administrer lager** i gruppen **Lager** velger du **Fysiske dimensjoner**.
+1. I handlingsruten i fanen **Administrer lager** i gruppen **Lager** velger du **Fysiske dimensjoner**.
 1. På **Fysiske dimensjoner**-siden i handlingsruten velger du **Ny**.
 
     Det blir lagt til en ny linje i rutenettet. **Varenummer**-feltet er forhåndsdefinert.
@@ -208,6 +207,3 @@ Følgende scenario bruker lagerappen på en mobilenhet for å lage en *justering
 
     > [!NOTE]
    > Systemet oppretter én arbeids-ID for hver flytting som må fullføres. Hvis du angir en lokasjon som allerede inneholder lager, opprettes bare én arbeids-ID. Hvis du angir en ny lokasjon, opprettes det to arbeids-IDer.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

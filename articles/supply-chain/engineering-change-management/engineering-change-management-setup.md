@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: EngChgProductParameters, EngChgEcmSeverityTable, EngChgEcmSeverityRuleSet, EngChgEcmSeverityLookup,EngChgEcmSeverityChart,EngChgEcmRequestSeverityChart,EngChgEcmPriorityTable, EngChgEcmPriorityLookup, EngChgEcmPriorityChart, EngChgEcmMaterialDisposition, EngChgEcmEH
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 86de050ef4110e3485a77099440f3402e46cc498
-ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
+ms.openlocfilehash: b46bc10f8b75a58b8baefd88aa6a0b79c59d6544
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4434862"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5005408"
 ---
 # <a name="establish-common-values-for-engineering-change-management"></a>Opprett felles verdier for behandling av teknisk endring
 
@@ -91,6 +90,3 @@ For hvert regelsett angir du feltet nedenfor:
 - **Alvorsgrad** – Velg alvorsgraden du vil opprette regler for. Du bruker siden **Alvorsgrader for teknisk endring** til å opprette og gi gradene navn. (Se forrige del hvis du vil ha mer informasjon.)
 
 Bruk knappene på **Regler**-hurtigfanen til å legge til eller fjerne en regel for gjeldende innstilling for alvorsgrad. Hver regel har et **Regel**-felt og et **Navn**-felt. Reglene etableres av systemet og angir hvilke typer endringer et produkt kan ha. Navnet angir endringstypen.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: InventOnhandItem, InventOnHandItemListPage, WHSOnHand
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-07-07
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 33e5ccc454191e27e33835a05094b823ec54e891
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 94e54220a68889fd31ac3b269f7a7f6f8dd98c8e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434824"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5005208"
 ---
 # <a name="inventory-on-hand-list"></a>Lagerbeholdningsliste
 
@@ -146,6 +145,3 @@ Dette er resultatet.
 | IA0001 | 1 | 2 | 2 |
 
 Legg merke til at innstillingene i **Filtre**-ruten gjelder for den detaljerte (ikke oppsamlede) lagertabellen som vises i begynnelsen av denne delen. Vilkåret **Fysisk tilgjengelig** \| **er mindre enn eller lik** \| _1_ finner derfor to rader ra denne tabellen (første og tredje rad, som hver viser en verdi for **Fysisk tilgjengelig** på _1_). I dette scenariet er imidlertid ikke siden **Beholdningsliste** konfigurert til å vise **Lager**-dimensjonen. Derfor samler den de to opprinnelige radene til én resultatrad, fordi begge radene har identiske verdier i alle dimensjonene som vises. Denne raden ser ut til å være et brudd på filtreringskriteriet, fordi verdien for **Fysisk tilgjengelig** vises som _2_. Resultatet er imidlertid riktig, fordi innstillingene i **Filtre**-ruten gjelder for kildetabellen, ikke for den aggregerte tabellen som vises på siden **Beholdningsliste**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

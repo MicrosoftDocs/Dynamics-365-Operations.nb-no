@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanningWorkbench, WHSRFMenu, WHSRFMenuItem
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 41a05bcd0148d0a553cb50575cae47f48397ae9b
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 991da4a1056bec933698d043fe45fe4e280f555a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434734"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5004833"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Lagerhåndtering av innkommende laster for bestillinger
 
@@ -176,12 +175,12 @@ For produktkvittering – poster registrerte antall fra **Last**-siden må følg
 
 Til ankomstregistreringene av typen produktkvittering – poster som er knyttet til en valgt last, velger arbeideren handlingen **Produktkvittering** på **Last**-siden. Siden som åpnes, har følgende nøkkeldetaljer:
 
-- **Antall**-feltet i **Parametere**-delen i kategorien **Innstillinger** viser det _registrerte antallet_. Ingen andre alternativer er tilgjengelig her.
+- **Antall**-feltet i **Parametere**-delen i fanen **Innstillinger** viser det _registrerte antallet_. Ingen andre alternativer er tilgjengelig her.
 - Rutenettet på hurtigfanen **Oversikt** viser alle bestillingene som er inkludert i den valgte lasten.
 - Rute nettet på hurtigfanen **Linjer** viser alle ordrelinjer som har et registrert antall.
 
 > [!NOTE]
-> Antall for ordrelinjer som vises i kategorien **Linje**, beregnes annerledes, avhengig av om funksjonen _Tillat flere produktkvitteringer per last_ er tilgjengelig og aktivert i din versjon av Supply Chain Management.
+> Antall for ordrelinjer som vises i fanen **Linje**, beregnes annerledes, avhengig av om funksjonen _Tillat flere produktkvitteringer per last_ er tilgjengelig og aktivert i din versjon av Supply Chain Management.
 >
 > | Versjon | Beregning |
 > |---|---|
@@ -206,7 +205,7 @@ Tabellen nedenfor oppsummerer virkningene av innstillingen **Tillat flere produk
 | Tillat flere produktkvitteringer per last | Lastantall | Laststatus | Merk |
 |---|---|---|---|
 | Når dette feltet ikke er tilgjengelig (versjoner før 10.0.10) | <p>Lastantallet settes slik at det tilsvarer det registrerte antallet.</p><p>Hvis lastantallet oppdateres til 0 (null), som betyr at det ikke er foretatt noen registrering, slettes lastlinjen.</p><p>Hvis det ikke finnes noen lastlinjer i lasten, blir lasten slettet.</p> | _Mottatt_ | Hvis det finnes flere laster for ordrelinjens registrerte antall, blir bare statusen for lasten som mottaket ble postert fra, oppdatert til _Mottatt_. |
-| Nr. | <p>Lastantallet settes slik at det tilsvarer det registrerte antallet som er knyttet til last-ID-en.</p><p>Hvis det ikke er registrert noen last-ID for lagertransaksjonen, blir virkemåten den samme som i versjoner før 10.0.10.</p> | _Mottatt_ | |
+| Nei | <p>Lastantallet settes slik at det tilsvarer det registrerte antallet som er knyttet til last-ID-en.</p><p>Hvis det ikke er registrert noen last-ID for lagertransaksjonen, blir virkemåten den samme som i versjoner før 10.0.10.</p> | _Mottatt_ | |
 | Ja | Ingen oppdateringer | _Mottatt_, hvis totalt registrert lastantall er likt eller større enn lastantallet | |
 | Ja | Ingen oppdateringer | _Sendt_ eller _Pågår_, hvis totalt registrert lastantall er mindre enn lastantallet | |
 
@@ -221,7 +220,7 @@ For produktkvitteringspostering av flere registrerte lastantall mot en last som 
 
 For produktkvitteringspostering av registrerte antall fra **Bestilling**-siden må brukeren fullføre følgende oppgaver før han eller hun velger handlingen **Produktkvittering**:
 
-- Angi **Antall**-feltet i **Parametere**-delen i kategorien **Innstillinger** til _Registrert antall_.
+- Angi **Antall**-feltet i **Parametere**-delen i fanen **Innstillinger** til _Registrert antall_.
 - Angir numrene på bestillingene som skal tas med i posteringen, i feltet **Produktkvittering**.
 
 > [!NOTE]
@@ -320,9 +319,9 @@ I denne fremgangsmåten oppretter du en bestilling og en tilknyttet last manuelt
     - **Lager:** _24_
     - **Antall:** _10_
 
-1. I handlingsruten, i kategorien **Kjøp** velger du **Handlinger \> Bekreft**. Ordrestatusen er nå _Bekreftet_.
-1. I handlingsruten, i kategorien **Lager** velger du **Handlinger \> Arbeidsområde for lastplanlegging**.
-1. På siden **Arbeidsområde for lastplanlegging**, i handlingsruten, i kategorien **Forsyning og behov**, velger du **Legg til \> Til ny last**.
+1. I handlingsruten, i fanen **Kjøp** velger du **Handlinger \> Bekreft**. Ordrestatusen er nå _Bekreftet_.
+1. I handlingsruten, i fanen **Lager** velger du **Handlinger \> Arbeidsområde for lastplanlegging**.
+1. På siden **Arbeidsområde for lastplanlegging**, i handlingsruten, i fanen **Forsyning og behov**, velger du **Legg til \> Til ny last**.
 1. I dialogboksen **Tilordning av lastmal** angir du feltet **Lastmal-ID** til _20' beholder_.
 1. Velg **OK** for å lukke dialogboksen og gå tilbake til arbeidsområdet.
 1. I **Laster**-delen velger du **Last-ID** for å åpne den nylig opprettede lasten.
@@ -333,7 +332,7 @@ I denne fremgangsmåten oppretter du en bestilling og en tilknyttet last manuelt
 
     ![Lastdetaljer](media/inbound-load-details.png "Lastdetaljer")
 
-1. I handlingsruten, i kategorien **Send og motta**, velger du **Bekreft \> Innkomende forsendelse**. Legg merke til at **Laststatus** er endret til _Sendt_.
+1. I handlingsruten, i fanen **Send og motta**, velger du **Bekreft \> Innkomende forsendelse**. Legg merke til at **Laststatus** er endret til _Sendt_.
 1. Noter verdien for **Last-ID**, slik at du kan bruke den i neste fremgangsmåte.
 
 #### <a name="register-receipt-of-the-quantities-that-arrived-on-the-load"></a>Registrere mottak av antallene som ble mottatt i lasten
@@ -370,7 +369,7 @@ I denne fremgangsmåten skal du produktkvittere og postere beholdningen som du h
 
 1. Gå til **Lagerstyring \> Laster \> Alle laster**.
 1. I listen finner du lasten du mottok. (Du må kanskje merke av for **Vis lukket** for å inkludere innkommende laster med lastestatusen _Sendt_.) Velg deretter koblingen i kolonnen **Last-ID** for å åpne lasten.
-1. I handlingsruten, i kategorien **Send og motta**, velger du **Motta \> Produktkvittering**. Hvis du blir bedt om å bekrefte handlingen, velger du **Ja**.
+1. I handlingsruten, i fanen **Send og motta**, velger du **Motta \> Produktkvittering**. Hvis du blir bedt om å bekrefte handlingen, velger du **Ja**.
 1. I dialogboksen **Posterer produktkvittering**, hurtigfanen **Linjer**, må du inspisere rutenettet. Du skal se bestillingslinjen som antallet er registrert for, mot den valgte lasten.
 
     > [!NOTE]
@@ -404,7 +403,7 @@ Dette scenarioet viser også hvordan du behandler flere produktkvitteringsposter
 I denne fremgangsmåten skal du aktivere flere produktkvitteringsposteringer fra den samme lasten.
 
 1. Gå til **Lagerstyring \> Oppsett \> Lagerstyringsparametere**.
-1. I kategorien **Laster** setter du feltet **Tillat flere produktkvitteringer per last** til _Ja_.
+1. I fanen **Laster** setter du feltet **Tillat flere produktkvitteringer per last** til _Ja_.
 
 #### <a name="create-two-loads-to-plan-receipt-of-a-purchase-order"></a>Opprette to laster for å planlegge mottaket av en bestilling
 
@@ -421,16 +420,16 @@ Du vil også lære hvordan du angir bestillingslinjen slik at du kan motta et an
     - **Lager:** _24_
     - **Antall:** _10_
 
-1. På hurtigfanen **Linjedetaljer**, i kategorien **Levering**, setter du feltet **Overlevering** til _20_.
-1. I handlingsruten, i kategorien **Kjøp** velger du **Handlinger \> Bekreft**. Ordrestatusen er nå _Bekreftet_.
-1. I handlingsruten, i kategorien **Lager** velger du **Handlinger \> Arbeidsområde for lastplanlegging**.
-1. På siden **Arbeidsområde for lastplanlegging**, i handlingsruten, i kategorien **Forsyning og behov**, velger du **Legg til \> Til ny last**.
-1. I dialogboksen **Tilordning av lastmal** angir du feltet **Lastmal-ID** til _20' beholder_. I kategorien **Detaljer** endrer du **Antall**-verdien fra _10_ til _5_ for å delvis legge til antallet på bestillingslinjen.
+1. På hurtigfanen **Linjedetaljer**, i fanen **Levering**, setter du feltet **Overlevering** til _20_.
+1. I handlingsruten, i fanen **Kjøp** velger du **Handlinger \> Bekreft**. Ordrestatusen er nå _Bekreftet_.
+1. I handlingsruten, i fanen **Lager** velger du **Handlinger \> Arbeidsområde for lastplanlegging**.
+1. På siden **Arbeidsområde for lastplanlegging**, i handlingsruten, i fanen **Forsyning og behov**, velger du **Legg til \> Til ny last**.
+1. I dialogboksen **Tilordning av lastmal** angir du feltet **Lastmal-ID** til _20' beholder_. I fanen **Detaljer** endrer du **Antall**-verdien fra _10_ til _5_ for å delvis legge til antallet på bestillingslinjen.
 1. Velg **OK** for å bruke innstillingene og lukke dialogboksen.
 1. Gjenta trinn 8 til og med 10 for å opprette en ny last. Denne gangen skal **Antall**-feltet allerede være satt til _5_.
 1. På siden **Arbeidsområde for lastplanlegging**, i rutenettet **Laster**, velger du verdien for **Last-ID** for den første lasten du opprettet. Siden **Lastdetaljer** vises med den valgte belastningen. Følg disse trinnene:
 
-    1. I handlingsruten, i kategorien **Send og motta**, velger du **Bekreft \> Innkomende forsendelse**.
+    1. I handlingsruten, i fanen **Send og motta**, velger du **Bekreft \> Innkomende forsendelse**.
     1. Legg merke til at verdien for **Laststatus** er endret til _Sendt_.
     1. Velg lukkeknappen for å gå tilbake til siden **Arbeidsområde for lastplanlegging**.
 
@@ -454,7 +453,7 @@ Denne fremgangsmåten viser hvordan en mottaksassistent registrerer lastantall p
 1. Fortsett med å gå gjennom arbeidsflyten, la alle andre felt stå tomme eller settes til standardverdiene, til enheten informerer deg om at arbeidet er fullført.
 1. I webklienten går du til **Lagerstyring \> Laster \> Alle laster**.
 1. I listen finner du lasten du nettopp mottok, og velger **Last ID**-verdien for å åpne lasten. Legg merke til at verdien for **Laststatus** forblir _Sendt_, men verdien for **Antall for arbeid opprettet** på lastlinjen er endret til _3_.
-1. I handlingsruten, i kategorien **Send og motta**, velger du **Motta \> Produktkvittering**. Hvis du blir bedt om å bekrefte handlingen, velger du **Ja**.
+1. I handlingsruten, i fanen **Send og motta**, velger du **Motta \> Produktkvittering**. Hvis du blir bedt om å bekrefte handlingen, velger du **Ja**.
 1. I dialogboksen **Posterer produktkvittering** går du gjennom, men endrer ikke verdiene som vises, og deretter velger du **OK**.
 1. Du kommer tilbake til siden **Lastdetaljer** for den valgte lasten. Legg merke til følgende punkt:
 
@@ -478,6 +477,3 @@ I dette scenarioet vil mottaksassistenten registrere inngående et antall som ov
     - **Antall** – Angi _7_, som er det gjenstående antallet som leverandøren har tillatelse til å levere som en del av det totale bestillingsantallet på 12 (der 10 er det opprinnelige ordreantallet, og 2 er det tillatte overleveringsantallet på 20 prosent). Husk at 5 stk. allerede er registrert mot den første lasten.
 
 Den andre lasten er nå oppdatert med antallet 7, og produktkvitteringen kan oppdateres basert på dette antallet.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

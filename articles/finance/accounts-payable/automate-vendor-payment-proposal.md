@@ -10,19 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 262034
 ms.assetid: 9db38b3f-26b3-436e-8449-7ff243568a18
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-04-08
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 2b4e6b42326ecbd07efe006afb23931849f5cf58
-ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
+ms.openlocfilehash: 63f2d3dc55799efefaedb10134edb219fa8588e0
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4446617"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5003584"
 ---
 # <a name="automate-vendor-payment-proposals"></a>Automatisering av betalingsforslag for leverandører
 
@@ -144,6 +143,3 @@ Følgende plikter og rettigheter er lagt til automatisering av leverandørbetali
 | Forespørsel om tidsplanforekomster | Betalingsassistent for leverandør, sentralisert betalingsassistent for leverandør | Denne plikten gir rett til å vise forekomster av automatisering av betalingsforslag via følgende rettigheter:<ul><li>Se tidsplanforekomster</li><li>Se ukentlig visning av forekomst</li></ul> |
 | Forespørsel om tidsplanserier      | None                                                                       | Denne plikten gir rett til å vise innstillingene for serien og forekomster via følgende rettigheter:<ul><li>Se tidsplanforekomster</li><li>Se listeside over forekomster</li><li>Se ukentlig visning av forekomst</li></ul>|
 | Oppretthold tidsplanforekomster     | None                                                                       | Denne plikten gir rett til å opprette og vedlikeholde en forekomst via følgende rettigheter:<ul><li>Oppretthold tidsplanforekomster</li><li>Se ukentlig visning av forekomst</li></ul> |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

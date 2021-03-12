@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: RetailCategoryAndProductWorkspace, RetailOrgHierarchyTreeLookup, SrsReportViewerForm
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0d148fa36a116860af8c44043d90759b8a2d76fb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9e11bca1e6850f401f52c2ccbea1089a4e71591c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414675"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5003718"
 ---
 # <a name="generate-and-run-out-of-box-reports"></a>Generere og kjøre medfølgende rapporter
 
@@ -64,6 +63,3 @@ Demonstrasjonsdatafirmaet USRT brukes til å opprette dette opptaket. Denne regi
 5. Klikk Eksporter.
 6. Klikk PDF.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
