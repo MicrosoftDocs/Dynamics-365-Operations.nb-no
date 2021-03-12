@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: JmgFlexGroup, JmgFlexCorrection
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 1705903
 ms.assetid: 427e01b3-4968-4cff-9b85-1717530f72e4
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: c71ebab0788b6c5d7466a5d71e3c72a7e86e41db
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1e12874e3395ec47a6b76809b92c26e20fb14197
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434452"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4980912"
 ---
 # <a name="flex-groups"></a>Fleksigrupper
 
@@ -152,7 +151,7 @@ Deretter følger du denne fremgangsmåten for å definere en lønnstype og legge
     | FlexCnt  | Fleksibel teller | 06:00 PM  | 12:00 AM | 02.00   | 06.00   | 2.00   |
 
     > [!NOTE]
-    > Hver linje brukes for et annet tidsintervall og har en annen faktor. De fleksible timene som arbeideren jobber i et tidsintervall, multipliseres med faktoren for denne linjen. Timer som er arbeidet fra 06:00 PM til 08:00 PM, multipliseres med 1,50. Faktoren er angitt i **Faktor**-feltet i **Generelt**-kategorien på siden **Linjer for lønnsavtale**.
+    > Hver linje brukes for et annet tidsintervall og har en annen faktor. De fleksible timene som arbeideren jobber i et tidsintervall, multipliseres med faktoren for denne linjen. Timer som er arbeidet fra 06:00 PM til 08:00 PM, multipliseres med 1,50. Faktoren er angitt i **Faktor**-feltet i **Generelt**-fanen på siden **Linjer for lønnsavtale**.
 
 Arbeideren angir følgende registreringer for dagen.
 
@@ -162,7 +161,7 @@ Arbeideren angir følgende registreringer for dagen.
 | Produksjonsjobb            | 07:00 AM | 09:00 PM |
 | Utstempling                 | 09:00 PM | 09:00 PM |
 
-Beløpet som skal betales, beregnes på **Godkjenn**-siden, basert på arbeiderens registrering. Når registreringen er beregnet, kan du vise resultatet i **Tider**-kategorien. Du er interessert i følgende felt i dette scenariet.
+Beløpet som skal betales, beregnes på **Godkjenn**-siden, basert på arbeiderens registrering. Når registreringen er beregnet, kan du vise resultatet i **Tider**-fanen. Du er interessert i følgende felt i dette scenariet.
 
 | Fleksi + | Fleksi - | Tidspunkt  | Lønnstid |
 |--------|--------|-------|----------|
@@ -185,6 +184,3 @@ Denne endringen skjer etter overføringen fordi de fleksible timene er beregnet 
 | 06:00 PM | 08:00 PM | 2    | 1.5       | 3            |
 | 08:00 PM | 09:00 PM | 1    | 2         | 2            |
 |          |          |      | **Totalt** | **8**        |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

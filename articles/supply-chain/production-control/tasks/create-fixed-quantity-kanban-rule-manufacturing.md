@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: KanbanRules, LeanProductionFlowActivityLookup, InventItemIdLookupSimple, UnitOfMeasureLookup, KanbanCreate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 24eb705bf2de0d175a8a03a4e89ad11c51f15d15
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: af912ecfb07a7af2f299e354243ba0d80c063a9e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434131"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4981312"
 ---
 # <a name="create-a-fixed-quantity-kanban-rule-for-manufacturing"></a>Opprette en Kanban-regel med fast antall for produksjon
 
@@ -33,7 +32,7 @@ Denne prosedyren fokuserer på oppsettet som kreves for å opprette en Kanban-re
 
 ## <a name="create-new-kanban-rule"></a>Opprette ny Kanban-regel
 1. Gå til Kanban-regler.
-2. Klikk Ny.
+2. Klikk på Ny.
     * Legg merke til at standardtype er Produksjon, og etterfyllingsstrategi er Fast. Du trenger ikke å endre disse parameterne.  
 3. Angi eller velg en verdi i feltet Første planaktivitet.
     * Dette er aktiviteten som skal utføres for Kanbaner opprettet basert på denne kanban-regelen.  Velg "SpeakerTestAndPackaging".  
@@ -66,14 +65,11 @@ Denne prosedyren fokuserer på oppsettet som kreves for å opprette en Kanban-re
 
 ## <a name="create-kanbans"></a>Opprette Kanbaner
 1. Vis delen Kanbaner.
-2. Klikk Lagre.
+2. Klikk på Lagre.
     * Kanban-regelen må lagres før du kan opprette Kanbaner.  
-3. Klikk Legg til.
+3. Klikk på Legg til.
     * Legg merke til at det ikke finnes noen aktive Kanbaner, og på grunn av dette er det foreslåtte "antallet nye Kanbaner" 5. Dette er lik "Fast Kanban-antall".  
-4. Klikk Opprett.
+4. Klikk på Opprett.
     * Dette vil opprette 5 Kanbaner.  
     * Legg merke til at 5 Kanbaner, hver for 10, ble opprettet for denne kanban-regel for produksjon. Dette er det siste trinnet i prosedyren.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

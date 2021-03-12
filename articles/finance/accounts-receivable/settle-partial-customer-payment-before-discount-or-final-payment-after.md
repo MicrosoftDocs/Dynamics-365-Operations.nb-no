@@ -1,5 +1,5 @@
 ---
-title: Utligne en delvis kundebetaling før rabattdatoen med en endelige betaling etter rabattdatoen
+title: Utligne en delvis leverandørbetaling før rabattdatoen med en endelige betaling etter rabattdatoen
 description: Denne artikkelen beskriver virkningen av utligning av betalinger mot fakturaer for kunder. Scenariet fokuserer på virkningen i underfinan, ikke i økonomimodulen.
 author: ShivamPandey-msft
 manager: AnnBe
@@ -11,21 +11,20 @@ ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14584
 ms.assetid: e54936f5-053b-4ed3-b778-42c7e9aeb7cf
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a71d0931445f3501f1b74f26c5eef583ab598b3c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ad922bc6c9378078012b7a838909e4074b48f263
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446293"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979070"
 ---
-# <a name="settle-a-partial-customer-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>Utligne en delvis kundebetaling før rabattdatoen med en endelige betaling etter rabattdatoen
+# <a name="settle-partial-payment-before-discount-date-with-final-payment-after-discount-date"></a>Utligne en delvis leverandørbetaling før rabattdatoen med en endelige betaling etter rabattdatoen
 
 [!include [banner](../includes/banner.md)]
 
@@ -111,6 +110,3 @@ Magnus endrer verdien i feltet **Bruk kontantrabatt** tilbake til **Normal**, fo
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: SysOperationsTemplateForm, RetailStoreManagementWorkspace
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 52902
 ms.assetid: 1a77d04b-2985-4bee-9138-c216fe0483de
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 3218a29995791ce0d9a42d5b6d898d6e548f0f1d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3770832cb8eee96931d8f8e68c726d5e09d3fceb
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414621"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4980060"
 ---
 # <a name="assess-customer-and-product-profitability"></a>Vurdere kunde- og produktlønnsomhet
 
@@ -56,6 +55,3 @@ For denne vurderingen kan du bruke den medfølgende rapporten **Topprodukter**, 
 - Arbeidsområdet **Butikkadministrasjon** &gt; **Retail og Commerce** &gt; **Kanaler** &gt; **Butikkadministrasjon** &gt; **Rapporter** &gt; **Rapport om topprodukter**
 - Arbeidsområdet **Kategori- og produktstyring** &gt; **Retail og Commerce** &gt; **Produkter og kategorier** &gt; **Butikkadministrasjon** &gt; **Rapporter** &gt; **Rapport om topprodukter**
 - Delen **Forespørsler og rapporter** &gt; **Retail og Commerce** &gt; **Forespørsler og rapporter** &gt; **Salgsrapporter** &gt; **Rapport om topprodukter**
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

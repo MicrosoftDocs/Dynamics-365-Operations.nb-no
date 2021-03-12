@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 86d9a40d991e915d3529e0c330f7559d8e7ce9ea
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 25b1962af182fc2749fcd6ec0035613d8365deb1
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4529584"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4980812"
 ---
 # <a name="customer-portal-for-dynamics-365-supply-chain-management-overview"></a>Kundeportal for Dynamics 365 Supply Chain Management – oversikt
 
@@ -64,11 +63,8 @@ Kundeportalen leveres som en mal for Power Apps-portaler. Den er avhengig av Pow
 
 [Power Apps-portaler](https://docs.microsoft.com/powerapps/maker/portals/overview) er en funksjon som lar brukere opprette et eksternt nettsted som personer fra utenfor organisasjonen kan logge på. Det kreves lite eller ingen koding for å opprette portaler. Kundeportalen er én av mange [Maler for Dynamics 365-portaler](https://docs.microsoft.com/powerapps/maker/portals/portal-templates#environment-with-model-driven-apps-in-dynamics-365) som er tilgjengelige fra Microsoft.
 
-[Dobbeltskriving](https://docs.microsoft.com/powerapps/maker/portals/overview) er et integrert infrastrukturprodukt som gir nær sanntidsinteraksjon mellom modelldrevne apper i Dynamics 365 og Finance and Operations-apper. Dobbeltskriving gir toveisintegrering mellom Finance and Operations-apper og Common Data Service. Derfor gir den en integrert brukeropplevelse på tvers av appene. Kundeportalen er avhengig av enheter som er synkronisert med dobbeltskriving. Før data fra Supply Chain Management kan vises i kundeportalen, må dobbeltskriving aktiveres for alle de aktuelle enhetene.
+[Dobbel skriving](https://docs.microsoft.com/powerapps/maker/portals/overview) er et bruksklart infrastrukturprodukt som gir interaksjon med minimal forsinkelse mellom kundeengasjementsapper og Finance and Operations-apper. Dobbeltskriving gir toveisintegrering mellom Finance and Operations-apper og Microsoft Dataverse. Derfor gir den en integrert brukeropplevelse på tvers av appene. Kundeportalen er avhengig av tabeller som er synkronisert med dobbel skriving. Før data fra Supply Chain Management kan vises i kundeportalen, må dobbel skriving aktiveres for alle de aktuelle tabellene.
 
 ![Avhengigheter for kundeportal](media/customer-portal-elements.png "Avhengigheter for kundeportal")
 
 Kundeportalen fungerer som et utgangspunkt for organisasjoner som vil bruke Power Apps-portaler til å bygge et eksternt-rettet nettsted som bruker data fra organisasjonens Supply Chain Management-installasjon. Den hjelper organisasjoner med å koble sammen dobbeltskriving, Supply Chain Management og Power Apps-portaler.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

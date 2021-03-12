@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: KanbanBoardTransferJob
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 96cb77b7b37fe6519a812735d9a41749da078cf2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4e8808b168d2b3845b315e6bbcfb376e37f31fe4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434509"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4981037"
 ---
 # <a name="transfer-materials-with-kanban-jobs"></a>Overføre materialer med Kanban-jobber
 
@@ -42,7 +41,7 @@ Denne prosedyren fokuserer på å utføre en kanban-jobb for uttak for å overf�
 1. I listen, fjerner du merket for den merkede raden - hvis det finnes.
 2. Velg rad 4 i listen.
     * Velg den første jobben med statusen Ikke planlagt. Kontroller at dette er den eneste jobben som er valgt.  
-3. Klikk Start.
+3. Klikk på Start.
     * Legg merke til at et ikon angir at jobben er startet.  
 
 ## <a name="select-a-second-transfer-job-and-change-quantity"></a>Velg en annen overføringsjobb og endre antallet
@@ -57,15 +56,12 @@ Denne prosedyren fokuserer på å utføre en kanban-jobb for uttak for å overf�
     * Sett jobbantallet til den forrige verdien.  
 
 ## <a name="start-the-second-transfer-job"></a>Start den andre overføringsjobben
-1. Klikk Start.
+1. Klikk på Start.
     * Dette vil starte overføringen av jobben i rad 5.  
 
 ## <a name="complete-both-transfer-jobs"></a>Fullfør begge overføringsjobbene
 1. Velg rad 4 i listen.
     * Nå er to overføringsjobber valgt i rad 4 og rad 5.  
-2. Klikk Fullført.
+2. Klikk på Fullført.
     * Dette vil fullføre overføringen av begge jobber.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ReqTransPo, PMFSeqReqRouteChangesListPage, PMFSeqReqRoute, PMFSeqReqRouteChanges, PMFSeqReqSchedDetailsFactBox, PMFSequenceGroup, PMFSequenceItemTable, PMFSequenceTable, PmfSeqWrkCtrCapRes
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: db2c881f60b6e5251e2bcdf198da9e1c9f39a0e6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e22c767a3de8fd937d9032a5bf285dfb4ced3d55
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434366"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4981068"
 ---
 # <a name="sequence-production-jobs-for-process-manufacturing"></a>Sekvensiere produksjonsjobber for prosessproduksjon
 
@@ -32,20 +31,20 @@ Denne fremgangsmåten bruker malingsprodukter som eksempel for å vise hvordan d
 
 ## <a name="run-master-planning-for-uspi"></a>Kjøre hovedplanlegging for USPI
 1. Gå til Hovedplanlegging > Hovedplanlegging > Kjør > Hovedplanlegging.
-2. Klikk rullegardinknappen i feltet Hovedplan for å åpne oppslaget.
-3. Klikk koblingen i den valgte raden i listen.
+2. Klikk på rullegardinknappen i feltet Hovedplan for å åpne oppslaget.
+3. Klikk på koblingen i den valgte raden i listen.
     * Velg MasterPlan.  
-4. Klikk OK.
+4. Klikk på OK.
     * Dette starter hovedplanlegging, inkludert sekvensprosessen. Denne prosessen kan ta noen minutter.  
 
 ## <a name="view-planned-orders-for-the-paint-products"></a>Vise planlagte bestillinger for malingsprodukter
 1. Gå til Hovedplanlegging > Hovedplanlegging > Planlagte bestillinger.
 2. Vis faktaboks for varedetaljer.
 3. Vis faktaboks for Tidsplandetaljer.
-4. Klikk rullegardinknappen i Plan-feltet for å åpne oppslaget.
+4. Klikk på rullegardinknappen i Plan-feltet for å åpne oppslaget.
 5. Finn og velg ønsket post i listen.
     * Velg MasterPlan.  
-6. Klikk koblingen i den valgte raden i listen.
+6. Klikk på koblingen i den valgte raden i listen.
 7. Bruk hurtigfilteret til å filtrere på feltet Varenummer med verdien P300.
     * Lås opp for å gå til høyre for å vise ordredato og leveringsdato. Legg merke til at disse varene har ordredatoen I dag, og leveringsdatoene for de planlagte ordrene er ikke i rekkefølge etter prioritet for farge og pakkestørrelse, som vist i produktnavnet. Du kan holder musepekeren over et varenummer for å se varenavn og prioritet.  
 
@@ -56,7 +55,7 @@ Denne fremgangsmåten bruker malingsprodukter som eksempel for å vise hvordan d
 4. Vis faktaboks for Tidsplandetaljer.
     * Obs!  Her ser du at startdato/-klokkeslett for de planlagte ordrene er i rekkefølge i henhold til farge og pakkestørrelse i en tidsperiode på 28 dager. Disse periodene er definert av et tall i feltet Kampanje. Skjemaet Sekvensert planlagt ordre fungerer som det vanlige planlagte bestillingsskjemaet, og produksjonsplanleggeren kan bekrefte planlagte ordre her.  
 5. Merk alle rader.
-6. Klikk Godta.
+6. Klikk på Godta.
     * Dette vil oppdatere de planlagte ordrene med den valgte sekvenshandlingen Utsett eller Forskudd.  
 
 ## <a name="verify-the-sequence-of-the-planned-orders"></a>Kontroller rekkefølgen for de planlagte ordrene
@@ -64,13 +63,10 @@ Denne fremgangsmåten bruker malingsprodukter som eksempel for å vise hvordan d
 2. Gå til Hovedplanlegging > Hovedplanlegging > Planlagte bestillinger.
 3. Vis faktaboks for varedetaljer.
 4. Vis faktaboks for Tidsplandetaljer.
-5. Klikk rullegardinknappen i Plan-feltet for å åpne oppslaget.
+5. Klikk på rullegardinknappen i Plan-feltet for å åpne oppslaget.
 6. Finn og velg ønsket post i listen.
     * Velg MasterPlan.  
-7. Klikk koblingen i den valgte raden i listen.
+7. Klikk på koblingen i den valgte raden i listen.
 8. Bruk hurtigfilteret til å filtrere på feltet Varenummer med verdien P300.
     * Legg merke til at ordrene nå er i rekkefølge i henhold til prioriteten for farge og størrelse, og de planlagte ordrene starter på den tidligste ordredatoen og leveringsdatoen. Valider Ordredato-kolonnen eller Startdato i faktaboksen Tidsplandetaljer.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

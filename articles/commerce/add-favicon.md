@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 262e478d426fd913130b21a3434331c7d27b54b2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f249348fac526fc7814045b1b1b71c898430c0f2
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414578"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4980437"
 ---
 # <a name="add-a-favicon"></a>Legge til et favorittikon
 
@@ -66,7 +65,7 @@ For å opprette et fragment som inneholder en metakode for favorittikon, følger
 1. I dialogboksen **Nytt fragment** velger du **Metakoder** som modulen som fragmentet er basert på.
 1. Angi et navn på fragmentet, og velg deretter **OK**.
 1. Velg det underordnede **Standard metakoder** i fragmenthierarkitreet.
-1. I ruten til høyre under **Metakoder** velger du **Legg til**, og deretter skriver du inn HTML-strengen du opprettet tidligere for favorittikonet. 
+1. I ruten til høyre under **Metakoder** velger du **Legg til**, og deretter skriver du inn HTML-strengen du opprettet tidligere for favorittikonet. 
 1. Velg **Fullfør redigering**, og velg deretter **Publiser** for å publisere fragmentet.
 
 ## <a name="add-the-metatag-fragment-to-the-html-head-section-of-your-pages"></a>Legge til metakodefragmentet i HTML-hodedelen på sidene
@@ -99,6 +98,3 @@ Når du forhåndsviser sider som er basert på malen som du la til metakodefragm
 
 [Legge til skript kode i områdes ID-er for å støtte telemetri](add-telemetry.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

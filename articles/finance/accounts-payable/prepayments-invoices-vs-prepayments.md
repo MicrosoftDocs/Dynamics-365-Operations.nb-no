@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, PurchTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 15871
 ms.assetid: a0bb5220-73d4-48ae-84d0-46a171c224fa
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4247193732a49cf0d26f0437f57f3ed66061a118
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d9c29529aa57eb7685e36f5407f4279544fdb701
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446350"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979544"
 ---
 # <a name="prepayment-invoices-vs-prepayments"></a>Forskuddsbetalte fakturaer i forhold til forskuddsbetalinger
 
@@ -38,13 +37,13 @@ Organisasjoner kan utstede forskuddsbetalinger til leverandører for varer eller
 | Forskuddsfakturering                                                                | Forskuddsbetalinger                                                              |
 |-------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
 | Definer en verdi for forskuddsbetaling på bestillingen.                                    | Ingen verdi for forskuddsbetaling er definert på bestillingen.                    |
-| Nøkkel: En Forskuddsbetalt faktura og en sluttfaktura må posteres.                       | Ingen forskuddsfaktura må posteres.                                    |
+| Nøkkel: En forskuddsfaktura og en sluttfaktura må posteres.                       | Ingen forskuddsfaktura må posteres.                                    |
 | Ansvar for forskuddsbetalingen holdes på kontoen for forskuddsbetaling, ikke AP-kontoen. | Ansvar for forskuddsbetalingen holdes på AP-kontoen.                  |
 | Leverandørsaldoen gjenspeiler ikke verdien forskuddsbetaling gjennom hele prosessen.     | Leverandørsaldoen gjenspeiler verdien forskuddsbetaling gjennom hele prosessen. |
 | Forskuddsfakturering er bare tilgjengelig på leverandører.                         | Forskuddsbetalinger er tilgjengelig i Leverandører og Kunder.    |
 
 ## <a name="overview-of-the-prepayment-process"></a>Oversikt over forhåndsbetalingsprosessen
-Regnskapspraksis i mange land/regioner krever at forskuddsbetaling (betalinger på forhånd) fra en kunde eller til en leverandør ikke posteres til de vanlige samlekontoene for kunden eller leverandøren. I stedet posteres disse forskuddbetalingene til spesielle økonomikontoer for forskuddsbetalinger. Når en salgsordre eller en bestilling opprettes, utstedes en faktura til kunden eller fra leverandøren. Når fakturaen betales, tilbakeføres forskuddbetalinger og forskuddbetalingsbilag av mva i finanskontoene for forskuddbetaling, og fakturabeløpene posteres automatisk til de vanlige samlekontoene. Hvis du vil opprette en forskuddsbetaling, gjør du følgende:
+Regnskapspraksis i mange land/regioner krever at forskuddsbetaling fra en kunde eller til en leverandør ikke posteres til de vanlige samlekontoene for kunden eller leverandøren. I stedet posteres disse forskuddbetalingene til spesielle økonomikontoer for forskuddsbetalinger. Når en salgsordre eller en bestilling opprettes, utstedes en faktura til kunden eller fra leverandøren. Når fakturaen betales, tilbakeføres forskuddbetalinger og forskuddbetalingsbilag av mva i finanskontoene for forskuddbetaling, og fakturabeløpene posteres automatisk til de vanlige samlekontoene. Hvis du vil opprette en forskuddsbetaling, gjør du følgende:
 
 1.  Definer en posteringsprofil for forskuddsbetalinger.
 2.  I Kundeparametere og Leverandørparametere, under **Finans og merverdiavgift**, velger du den nye posteringsprofilen ved hjelp av parameteren **Posteringsprofil for betalingsjournal med forskuddsbetaling**.
@@ -66,6 +65,3 @@ Forskuddsbetalte fakturaer er vanlig forretningspraksis. En leverandør sender f
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: WrkCtrResourceGroup, ProdTableListPage, ProdTableCreate, InventItemIdLookupPurchase, ProdParmCostEstimation, ProdParmStartUp, ProdParmReportFinished, WHSWorkTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5a9010b95cfd0528cd3b532627d19a3b340bdca4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 180035668d9c8a03b83f669af7459725eecc8def
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434102"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4981187"
 ---
 # <a name="report-as-finished-to-a-non-license-plate-controlled-location--application-may-2016"></a>Rapportere som ferdig til en lokasjon som ikke er kontrollert av nummerskilt (program, mai 2016)
 
@@ -36,7 +35,7 @@ Denne oppgaveveiledningen viser et eksempel på rapportering som ferdig til en l
 ## <a name="set-up-an-output-location"></a>Definere en utleveringslokasjon
 1. Gå til Organisasjonsstyring > Ressurser > Ressursgrupper.
 2. Velg ressursgruppe 5102 i listen.
-3. Klikk Rediger.
+3. Klikk på Rediger.
 4. Angi 51 i feltet Utleveringslager.
 5. Angi 001 i feltet Utleveringslokasjon.
     * Lokasjonen 001 er ikke en nummerskiltkontrollert lokasjon. Du kan definere en utleveringslokasjon uten nummerskilt hvis det finnes en gjeldende arbeidspolicy for lokasjonen.  
@@ -44,24 +43,21 @@ Denne oppgaveveiledningen viser et eksempel på rapportering som ferdig til en l
 ## <a name="create-a-production-order-and-report-it-as-finished"></a>Opprette en produksjonsordre og rapportere den som avsluttet
 1. Lukk siden.
 2. Gå til Produksjonskontroll > Produksjonsordrer > Alle produksjonsordrer.
-3. Klikk Ny produksjonsordre.
+3. Klikk på Ny produksjonsordre.
 4. Angi L0101 i feltet Varenummer.
-5. Klikk Opprett.
-6. Klikk Produksjonsordre i handlingsruten.
-7. Klikk Estimer.
-8. Klikk OK.
-9. Klikk Start.
-10. Klikk kategorien Generelt.
+5. Klikk på Opprett.
+6. Klikk på Produksjonsordre i handlingsruten.
+7. Klikk på Estimer.
+8. Klikk på OK.
+9. Klikk på Start.
+10. Klikk på fanen Generelt.
 11. Velg Aldri i feltet Automatisk stykklisteforbruk.
-12. Klikk OK.
-13. Klikk Rapporter som fullført.
-14. Klikk kategorien Generelt.
+12. Klikk på OK.
+13. Klikk på Rapporter som fullført.
+14. Klikk på fanen Generelt.
 15. Velg Ja i feltet Godtar feil.
-16. Klikk OK.
-17. Klikk Lager i handlingsruten.
-18. Klikk Arbeidsdetaljer.
+16. Klikk på OK.
+17. Klikk på Lager i handlingsruten.
+18. Klikk på Arbeidsdetaljer.
     * Når produksjonsordren ble rapportert som fullført, ble det ikke generert arbeid for plassering. Dette skjer fordi en arbeidspolicy er definert som hindrer at arbeidet blir generert når produktet L0101 rapporteres som ferdig til lokasjon 001.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

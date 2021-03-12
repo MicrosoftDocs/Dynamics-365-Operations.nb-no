@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ProdTableListPage, ProdTableCreate, InventItemIdLookupPurchase, ProdSchedule, ProdTable, ProdRouteJob
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7a69339bc678de8343dbf2646a4d6fe0ace9964c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bbb4da093cd8a0fc6cd85e1f93dfb91f0fb8a382
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434367"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4981137"
 ---
 # <a name="schedule-a-production-order-with-operations-and-job-scheduling"></a>Planlegge en produksjonsordre med operasjoner og finplanlegging
 
@@ -56,6 +55,3 @@ Dette emnet fokuserer på å planlegge en produksjonsordre med grovplanlegging o
 6. Velg **Produksjonsordre** i handlingsruten.
 7. Velg **Alle jobber**. Vær oppmerksom på at basert på den aktive ruten, opprettes fem jobber med finplanlegging.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

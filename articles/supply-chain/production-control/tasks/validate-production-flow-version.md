@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: LeanProductionFlow
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c30947d01cfb85ea3dbf1aa3e4ea8e092efd18cb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3cc8465fb56239f91982db15601cf87e3c00d3fd
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434507"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4980962"
 ---
 # <a name="validate-a-production-flow-and-version"></a>Validere en produksjonsflyt og -versjon
 
@@ -33,22 +32,22 @@ Denne fremgangsmåten viser hvordan du oppretter en ny produksjonsflyt og en fø
 
 ## <a name="create-a-production-flow"></a>Opprette en produksjonsflyt
 1. Gå til Produksjonskontroll > Oppsett > Lean-produksjonsflyt > Produksjonsflyter.
-2. Klikk Ny.
+2. Klikk på Ny.
 3. Skriv inn en verdi i Navn-feltet.
 4. Skriv inn en verdi i feltet Beskrivelse.
-5. Klikk rullegardinknappen i Navn-feltet for å åpne oppslaget.
-6. Klikk koblingen i den valgte raden i listen.
+5. Klikk på rullegardinknappen i Navn-feltet for å åpne oppslaget.
+6. Klikk på koblingen i den valgte raden i listen.
     * En verdistrøm er en driftsenhet som strekker seg over alle aktiviteter og flyter for verdistrømmen.   På dette stadiet er driftsenhetene begrenset til en juridisk enhet og har ingen ytterligere funksjonalitet.  
-7. Klikk rullegardinknappen i feltet Produksjonsgruppe for å åpne oppslaget.
-8. Klikk koblingen i den valgte raden i listen.
+7. Klikk på rullegardinknappen i feltet Produksjonsgruppe for å åpne oppslaget.
+8. Klikk på koblingen i den valgte raden i listen.
     * Produksjonsgrupper gjør det mulig å definere materialer, arbeid og VIA-kontoer for en produksjonsprosess. Hvis du vil knytte regnskapskonteksten til en produksjonsflyt, må du velge en produksjonsgruppe.  
-9. Klikk Lagre.
+9. Klikk på Lagre.
 
 ## <a name="create-a-production-flow-version"></a>Opprette en produksjonsflytversjon
-1. Klikk Legg til.
+1. Klikk på Legg til.
 2. Angi dato og klokkeslett i feltet Utløpsdato.
     * Du kan oppdatere utløpsdatoen for versjonen på et gitt tidspunkt, selv for aktive versjoner. Bruk utløpet for versjonen til å planlegge å fase ut en versjon.  
-3. Klikk OK.
+3. Klikk på OK.
 4. Merk den valgte raden i listen.
 5. Skriv inn en verdi i feltet Enhet.
 6. Velg taktenheten.
@@ -62,8 +61,5 @@ Denne fremgangsmåten viser hvordan du oppretter en ny produksjonsflyt og en fø
     * Største takttid må være større enn eller lik den gjennomsnittlige takttiden.  
 12. Angi et antall dager i perioden for faktisk syklustid
     * Perioden for faktisk syklustid er antall dager jobber aggregeres fra det faktiske minuttet bakover for å beregne den faktiske syklustiden. Verdien kan endres når som helst, og brukes bare for beregning av de faktiske syklustider.  
-13. Klikk Lagre.
+13. Klikk på Lagre.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: c2d0f671d4b824cb5d38a5d11c4b06b2e97bd0c8
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: f1790366cebf317472bc1ef9a5ecd2a19fe755d3
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528251"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4980837"
 ---
 # <a name="synchronize-agreement-invoices-in-field-service-to-free-text-invoices-in-supply-chain-management"></a>Synkronisere avtalefakturaer i Field Service til fritekstfakturaer i Supply Chain Management
 
@@ -55,23 +54,23 @@ Følgende synkronisering er påkrevd før synkronisering av avtalefakturaer kan 
 
 | Field Service  | Forsyningskjedeadministrasjon                 |
 |----------------|----------------------------------------|
-| fakturaer       | Fakturahoder i fritekst for CDS-kunde |
-| invoicedetails | Fakturalinjer i fritekst for CDS-kunde   |
+| fakturaer       | Fakturahoder i fritekst for Dataverse-kunde |
+| invoicedetails | Fakturalinjer i fritekst for Dataverse-kunde   |
 
 ## <a name="entity-flow"></a>Enhetsflyt
 
-Fakturaer som opprettes fra en avtale i Field Service, kan synkroniseres til Supply Chain Management via et Common Data Service-dataintegreringsprosjekt. Oppdateringer av disse fakturaene synkroniseres til fritekstfakturaene i Supply Chain Management hvis regnskapsstatusen for fritekstfakturaene er **Pågår**. Når fritekstfakturaene blir postert i Supply Chain Management, og regnskapsstatusen oppdateres til **Fullført**, kan du ikke lenger synkronisere oppdateringer fra Field Service.
+Fakturaer som opprettes fra en avtale i Field Service, kan synkroniseres til Supply Chain Management via et Microsoft Dataverse-dataintegreringsprosjekt. Oppdateringer av disse fakturaene synkroniseres til fritekstfakturaene i Supply Chain Management hvis regnskapsstatusen for fritekstfakturaene er **Pågår**. Når fritekstfakturaene blir postert i Supply Chain Management, og regnskapsstatusen oppdateres til **Fullført**, kan du ikke lenger synkronisere oppdateringer fra Field Service.
 
 ## <a name="field-service-crm-solution"></a>CRM-løsning for Field Service
 
-**Har linjer med avtaleopprinnelse**-feltet er lagt til i **Faktura**-enheten. Dette feltet kan garantere at bare fakturaer som opprettes fra en avtale, synkroniseres. Verdien er **sann** hvis fakturaen inneholder minst én fakturalinje som stammer fra en avtale.
+Kolonnen **Har linjer med avtaleopprinnelse** er lagt til i **Faktura**-tabellen. Denne kolonnen kan garantere at bare fakturaer som opprettes fra en avtale, synkroniseres. Verdien er **sann** hvis fakturaen inneholder minst én fakturalinje som stammer fra en avtale.
 
-**Har avtaleopprinnelse**-feltet er lagt til i **Fakturalinje**-enheten. Dette feltet kan garantere at bare fakturalinjer som opprettes fra en avtale, synkroniseres. Verdien er **sann** hvis fakturalinjen stammer fra en avtale.
+Kolonnen **Har avtaleopprinnelse** er lagt til i **Fakturalinje**-tabellen. Denne kolonnen bidrar til å garantere at bare fakturalinjer som opprettes fra en avtale, synkroniseres. Verdien er **sann** hvis fakturalinjen stammer fra en avtale.
 
-**Fakturadato** er et obligatorisk felt i Supply Chain Management. Feltet må derfor ha en verdi i Field Service før synkroniseringen utføres. For å imøtekomme dette kravet legges følgende logikk til:
+**Fakturadato** er et obligatorisk felt i Supply Chain Management. Kolonnen må derfor ha en verdi i Field Service før synkroniseringen utføres. For å imøtekomme dette kravet legges følgende logikk til:
 
-- Hvis **Fakturadato**-feltet er tomt på **Faktura**-enheten (det vil si hvis det ikke har en verdi), blir den satt til gjeldende dato når en fakturalinje som stammer fra en avtale, er lagt til.
-- Brukeren kan endre **Fakturadato**-feltet. Men når brukeren prøver å lagre en faktura som stammer fra en avtale, får han eller hun en forretningsprosessfeil hvis **Fakturadato**-feltet er tomt på fakturaen.
+- Hvis **Fakturadato**-kolonnen er tom i **Faktura**-tabellen (det vil si hvis den ikke har en verdi), blir den satt til gjeldende dato når en fakturalinje som stammer fra en avtale, legges til.
+- Brukeren kan endre **Fakturadato**-kolonnen. Men når brukeren prøver å lagre en faktura som stammer fra en avtale, får han eller hun en forretningsprosessfeil hvis **Fakturadato**-kolonnen er tom på fakturaen.
 
 ## <a name="prerequisites-and-mapping-setup"></a>Forutsetninger og tilordningsdefinisjon
 
@@ -108,6 +107,3 @@ Følgende illustrasjoner viser en tilordning av malen i Dataintegrering.
 ### <a name="agreement-invoices-field-service-to-supply-chain-management-invoice-lines"></a>Avtalefakturaer (Field Service til Supply Chain Management): Fakturalinjer
 
 [![Maltilordning i Dataintegrering](./media/FSFreeTextInvoice2.png)](./media/FSFreeTextInvoice2.png)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

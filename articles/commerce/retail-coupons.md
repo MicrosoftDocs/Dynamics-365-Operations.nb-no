@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: RetailCoupon, RetailParameters, RetailSharedParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: a07bed244152327047efd68cfacb329a722c0049
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: eb3b505af826b1881aa8245fff66e6f05ad7486a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414573"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979681"
 ---
 # <a name="set-up-coupons-for-retail-sales"></a>Definere kuponger for detaljhandelssalg
 
@@ -82,6 +81,3 @@ Kupongfunksjonen består av flere forskjellige funksjoner. Commerce Headquarters
 - **Hovedkontor oppdateres delvis, men Commerce Scale Unit og POS oppdateres ikke.** I en Hovedkontor-oppdatering oppdateres kupong- og rabattsidene, og utsalgsprismotoren oppdateres også. Hvis bare én av de to komponentene oppdateres, vil enkelte av sidene i Commerce ikke stemme overens med prisberegningsdataene. Derfor kan uventede kontantberegninger eller feil oppstå under rabattberegninger.
 - **Hovedkontor oppdateres, men Commerce Scale Unit og POS oppdateres ikke (N-1).** Fordi ikke alle butikker kan oppdateres samtidig, anbefaler vi at du oppdaterer Hovedkontor før du oppdaterer butikker. I scenarioet med N-1 vil ikke ny funksjonalitet som er knyttet til kuponger, være tilgjengelig i butikker som ennå ikke er oppdatert. Kupongfunksjonen introduserer for eksempel "utelat" linjer. Hvis du utelater linjer i en rabatt, kan de ikke brukes i en butikk som kjører en tidligere versjon.
 - **Hovedkontor oppdateres ikke, men Commerce Scale Unit og POS oppdateres (N+1).** Fordi den oppdaterte prismotoren i Commerce Scale Unit kan håndtere eldre rabattkoder under prisberegninger, skal ikke oppdateringen ha noen funksjonell innvirkning i dette scenariet.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

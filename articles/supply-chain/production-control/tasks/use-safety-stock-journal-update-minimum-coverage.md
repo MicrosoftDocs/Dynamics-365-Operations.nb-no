@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ReqItemJournalName, ReqItemJournalSafetyStock, EcoResProductInformationDialog, EcoResProductDetailsExtended, ReqItemTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0d69daf3d307ba72ff6017d91849e3d22bd0bd85
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0b0985169f7ffadbf97ed4f237c8ec11120cfc3e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434638"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4980999"
 ---
 # <a name="use-the-safety-stock-journal-to-update-minimum-coverage"></a>Bruke sikkerhetslagerjournalen til å oppdatere minste dekning
 
@@ -45,13 +44,13 @@ Denne fremgangsmåten viser hvordan du beregner minste dekningsforslag basert p�
 4. Klikk på **Opprett linjer**.
 5. Angi en dato i **Fra dato**-feltet.  
 6. Angi en dato i **Til dato**-feltet.
-7. Klikk **OK**. Dette vil opprette linjer for dimensjonene som har lagertransaksjoner.  
+7. Klikk på **OK**. Dette vil opprette linjer for dimensjonene som har lagertransaksjoner.  
 
 ## <a name="calculate-proposal"></a>Beregn forslag
 1. Klikk på **Beregn forslag.**
 2. Velg alternativet **Bruk gjennomsnittlig avgang i leveringstid**.
 3. Sett **Multiplikasjonsfaktor** til 10. Multiplikasjonsfaktoren brukes til å justere forslaget. Siden demonstrasjonsdataene bare har noen få transaksjoner, må du angi faktoren for å få et realistisk forslag.  
-4. Klikk **OK**. Bla nedover for å finne M0002 og M0003. Vis kolonnen **Beregnet minimumsantall**.   
+4. Klikk på **OK**. Bla nedover for å finne M0002 og M0003. Vis kolonnen **Beregnet minimumsantall**.   
 
 ## <a name="update-minimum-quantity"></a>Oppdatere minimumsantall
 1. Angi et tall i feltet **Nytt minimumsantall**. Oppdater Nytt minimumsantall slik at det samsvarer med verdien i Beregnet minimumsantall. Hvis Beregnet minimumsantall er null, kan du angi ønsket fremtidig verdi. Du kan for eksempel angi Beregnet minimumsantall i dette feltet for M0002, som har lager 12.  
@@ -59,13 +58,10 @@ Denne fremgangsmåten viser hvordan du beregner minste dekningsforslag basert p�
 3. Angi et tall i feltet **Nytt minimumsantall**. Oppdater Nytt minimumsantall slik at det samsvarer med verdien i Beregnet minimumsantall. Hvis Beregnet minimumsantall er null, kan du angi ønsket fremtidig verdi.  
 
 ## <a name="post-the-new-minimum-quantity-and-validate-the-result"></a>Postere det nye minimumsantallet og validere resultatet
-1. Klikk **Poster**.
-2. Klikk **OK**.
-3. Klikk for å følge koblingen i **Varenummer**-feltet.
-4. Klikk for å følge koblingen i **Varenummer**-feltet.
+1. Klikk på **Poster**.
+2. Klikk på **OK**.
+3. Klikk på for å følge koblingen i **Varenummer**-feltet.
+4. Klikk på for å følge koblingen i **Varenummer**-feltet.
 5. Klikk på Plan i **handlingsruten**.
 6. Klikk på **Varedekning**. Legg merke til at **Minimumsantall** er oppdatert med det nye minimumsantallet fra sikkerhetslagerjournalen.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

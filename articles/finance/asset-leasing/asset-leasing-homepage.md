@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-27
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: cd32ad1b745d1bfda25abf57330fb1385014e4fc
-ms.sourcegitcommit: f0f5545a8ff99583e0131f435d91c64bb68a1c38
+ms.openlocfilehash: 944139a8b3d7d549bd7be83918bd680717e6fdf0
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "4446612"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979045"
 ---
 # <a name="asset-leasing-home-page"></a>Startside for Aktivaleie
 
@@ -31,7 +30,7 @@ ms.locfileid: "4446612"
 
 Dette emnet inneholder en liste over hjelpeemnene som er tilgjengelige for Aktivaleie og omfatter koblinger til bestemte emner. 
 
-Aktivaleie er en avansert funksjon for behandling, sporing og automatisering av mindre, økonomiske transaksjoner for leide eiendeler i Microsoft Dynamics 365 Finance. Aktivaleie overholder internasjonale regnskapsstandarder (IFRS 16) og amerikanske GAAP-standarder (ASC 842). Aktivaleie registrerer og behandler informasjon om leieavtalene og beregner journaloppføringer gjennom livssyklusen til leieavtalen fra opprinnelig føring, månedlige journaloppføringer, til verdiforringelse og avslutning av leieavtalen.  
+Aktivaleie er en avansert funksjon for behandling, sporing og automatisering av mindre, økonomiske transaksjoner for leide eiendeler i Microsoft Dynamics 365 Finance. Leasing av aktiva overholder internasjonale regnskapsstandarder (IFRS 16) og amerikanske GAAP-standarder (ASC 842). Aktivaleie registrerer og behandler informasjon om leieavtalene og beregner journaloppføringer gjennom livssyklusen til leieavtalen fra opprinnelig føring, månedlige journaloppføringer, til verdiforringelse og avslutning av leieavtalen.  
 
 ## <a name="asset-leasing-topics"></a>Aktivaleieemner
 Følgende emne er tilgjengelig for å gjøre det enklere å konfigurere og bruke Aktivaleie. 
@@ -46,7 +45,7 @@ Følgende emne er tilgjengelig for å gjøre det enklere å konfigurere og bruke
   - [Opprette en leiegruppe](create-lease-group.md)
   - [Definere indeksrenter](set-up-index-rate-types.md)
   - [Definere utgiftstyper](set-up-expense-types.md)
-  - [Definere navn for leiejournal](set-up-lease-journal-names.md)
+  - [Definere leiejournalnavn](set-up-lease-journal-names.md)
   - [Definere posteringskontoer for leie](set-up-lease-posting-accts.md)
   - [Tilordne nummerserier](leasing-number-sequences.md)
   - [Tilordne brukerroller](lease-user-roles.md)
@@ -96,6 +95,3 @@ Du kan finne meninger, nyheter og annen informasjon i bloggen for [Microsoft Dyn
 ### <a name="videos"></a>Videoer
 
 Se instruksjonsvideoene som nå er tilgjengelige på [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ). 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

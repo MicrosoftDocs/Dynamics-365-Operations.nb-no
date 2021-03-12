@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail, Commerce
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: Application update 10.0.9
-ms.openlocfilehash: 31ba82ac5e032734e00f2aee12339bc85a53550b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f7242ed830d09a29a4b01e20ce5070c3aaeca62b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414576"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979726"
 ---
 # <a name="reset-receipt-numbers"></a>Tilbakestille kvitteringsnumre 
 
@@ -68,6 +67,3 @@ Du kan bruke funksjonen **Fjern tilbakestillingsdato** til å fjerne fremtidige 
 
 > [!NOTE]
 > Avhengig av tilbakestillingsdatoen du velger, og kvitteringsformatet, kan du ha dupliserte mottaksnumre. Selv om salgsstedssystemet kan håndtere disse situasjonene, øker de tiden som kreves for å behandle returer, fordi salgsmedarbeiderne må velge mellom de duplikat kvitteringene. Andre komplikasjoner som er relatert til dataopprydding, kan forekomme hvis de duplikat kvitteringene ikke var en planlagt konsekvens. Derfor anbefaler vi at du bruker dynamiske datotegn (for eksempel **ddd**, **MM**, **DD** og **YY**) som hjelp til å hindre duplikate kvitteringsnumre etter en tilbakestilling.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

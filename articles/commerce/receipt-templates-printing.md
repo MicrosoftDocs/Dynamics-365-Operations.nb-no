@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailFormLayout
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 57841
 ms.assetid: e530dd8e-95e2-4021-90bd-ce1235f9e250
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: ab6b01d6833850af8c04167d94b0a60c7312075c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a66590f18df04d2be0500b7fb1ab183cf64718e8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414748"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979759"
 ---
 # <a name="set-up-and-design-receipt-formats"></a>Definer og utforme kvitteringsformater
 
@@ -46,6 +45,10 @@ Denne artikkelen beskriver hvordan du oppretter og endrer skjemaoppsett for å s
     - **Ikke skriv ut** – Kvitteringen skrives ikke ut.
     - **Spør bruker** – Brukeren blir spurt om å skrive ut kvitteringen.
     - **Etter behov** – Dette alternativet brukes bare for gavekvitteringer. Når dette alternativet er valgt, kan brukeren skrive ut en gavekvittering fra siden **Endre**, hvis en gavekvittering er nødvendig.
+
+## <a name="print-images"></a>Skrive ut bilder
+
+Kvitteringsutformingen inneholder en **Logo**-variabel som kan brukes til å angi bilder som skal skrives ut på kvitteringen. Bilder som tas med i kvitteringer med **Logo**-variabelen, bør være monokrome punktgrafikkfiltyper (BMP). Hvis et BMP-bilde er angitt i kvitteringsutformingen, men ikke skrives ut når den sendes til skriveren, kan filstørrelsen være for stor, eller pikseldimensjonene på bildet er ikke kompatible med skriveren. Hvis dette skjer, kan du forsøke å redusere bildefiloppløsningen.   
 
 ## <a name="design-a-receipt-format"></a>Utforme et kvitteringsformat
 
@@ -82,6 +85,3 @@ Kvitteringsprofiler tilordnes direkte til skrivere i maskinvareprofilen.
 
 > [!NOTE]
 > Hvis det brukes to skrivere, kan én skriver brukes til å skrive ut standard 40-kolonners termiske kvitteringer. Den andre skriveren brukes vanligvis til å skrive ut helsides kvitteringstyper som trenger mer informasjon. Disse kvitteringstypene omfatter kundeordrekvitteringer og kundefakturaer.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

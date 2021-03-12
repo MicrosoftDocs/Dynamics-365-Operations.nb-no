@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: EcoResProductDetailsExtended, BOMConsistOf, PmfFormulaCoBy, BOMRouteCopyDialog
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 79b70ccbdac2061baf3896ecbd9449da3c38842a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0a16a6c8651b401dddfa47c0eb29efb0c3a49038
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434136"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4981337"
 ---
 # <a name="copy-co-products-from-an-existing-formula-version"></a>Kopiere koprodukter fra en eksisterende formelversjon
 
@@ -33,27 +32,24 @@ Denne prosedyren viser hvordan du kopierer koprodukter fra en eksisterende forme
 
 ## <a name="find-a-released-product"></a>Finne et frigitt produkt
 1. Gå til Frigitte produkter.
-2. Klikk Vis filtre.
+2. Klikk på Vis filtre.
     * Du er i ferd med å legge til feltet Produksjonstype i filterdialogboksen.  
-3. Klikk Legg til et filtreringsfelt for å legge til feltet Produksjonstype.
+3. Klikk på Legg til et filtreringsfelt for å legge til feltet Produksjonstype.
     * Du må manuelt angi formelen i produksjonstypefeltet før du velger Bruk i neste trinn. Dette bruker filteret på listen over frigitte produkter.  
 4. Angi formel manuelt i feltet Produksjonstype.
-5. Klikk Bruk.
+5. Klikk på Bruk.
 
 ## <a name="select-a-released-product"></a>Velge et frigitt produkt
 1. Finn og velg ønsket post i listen.
-2. Klikk Formelversjoner.
-    * Klikk Formelversjoner i handlingsruten Byggeteknikk.  
+2. Klikk på Formelversjoner.
+    * Klikk på Formelversjoner i handlingsruten Byggeteknikk.  
 
 ## <a name="copy-co-products"></a>Kopiere koprodukter
-1. Klikk Formelversjon i handlingsruten.
-2. Klikk Koprodukter.
-3. Klikk Kopier.
+1. Klikk på Formelversjon i handlingsruten.
+2. Klikk på Koprodukter.
+3. Klikk på Kopier.
 4. Angi eller velg en verdi i Varenummer-feltet.
 5. Angi eller velg en verdi i Formelversjon-feltet.
-6. Klikk OK.
+6. Klikk på OK.
 7. Lukk siden.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

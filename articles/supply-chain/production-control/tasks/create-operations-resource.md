@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: WrkCtrTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: sorenand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e2e59b1e6a83d902df98a0b40ee6c572a6567f05
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5b91d5ea7618010ab9d4006d643c59a7f995eb0c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434126"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4981240"
 ---
 # <a name="create-an-operations-resource"></a>Opprette en operasjonsressurs
 
@@ -31,7 +30,7 @@ ms.locfileid: "4434126"
 En operasjonsressurs utfører aktivitetene for et prosjekt eller en produksjonsprosess. Denne prosedyren viser hvordan du definerer en operasjonsressurs. Du kan gå gjennom denne fremgangsmåten i demonstrasjonsselskapet USMF eller ved hjelp av dine egne data.
 
 1. Gå til Ressurser.
-2. Klikk Ny.
+2. Klikk på Ny.
 3. Skriv inn en verdi i Ressurs-feltet.
 4. Skriv inn en verdi i feltet Beskrivelse.
 
@@ -57,15 +56,15 @@ En operasjonsressurs utfører aktivitetene for et prosjekt eller en produksjonsp
 
 ## <a name="define-working-times"></a>Definere arbeidstider
 1. Utvid seksjonen Kalendere.
-2. Klikk Legg til.
+2. Klikk på Legg til.
 3. Angi eller velg en verdi i Kalender-feltet.
     * Angi arbeidstidskalenderen som definerer kapasiteten (i timer) for ressursen.  
 4. Finn og velg ønsket post i listen.
-5. Klikk koblingen i den valgte raden i listen.
+5. Klikk på koblingen i den valgte raden i listen.
 
 ## <a name="define-resource-capabilities"></a>Definere ressursfunksjoner
 1. Vis delen Muligheter.
-2. Klikk Legg til.
+2. Klikk på Legg til.
     * En funksjon er muligheten for en operasjonsressurs til å utføre en bestemt aktivitet. Planleggingsmotoren tildeler ressurser ved å sammenligne ressurskravene for hver aktivitet med egenskapene til de tilgjengelige operasjonsressursene.  
 3. Angi eller velg en verdi i Funksjon-feltet.
 4. Angi et nummer i Nivå-feltet.
@@ -75,12 +74,9 @@ En operasjonsressurs utfører aktivitetene for et prosjekt eller en produksjonsp
 
 ## <a name="assign-resource-to-resource-group"></a>Tilordne ressurs til ressursgruppe
 1. Utvid seksjonen Ressursgrupper.
-2. Klikk Legg til.
+2. Klikk på Legg til.
     * Ressursgruppen definerer området, produksjonsenheten og lagerkonteksten for operasjonsressurser. Operasjonsressursen kan bare planlegges når tilordnet til en ressursgruppe, og bare på området der ressursgruppen finnes.  
 3. Angi eller velg en verdi i Ressursgruppe-feltet.
 4. Angi eller velg en verdi i Innleveringssted-feltet.
     * Angi lagerlokasjonen der operasjonsressursen forbruker materialer.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
