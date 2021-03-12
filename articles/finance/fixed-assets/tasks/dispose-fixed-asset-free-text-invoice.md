@@ -11,33 +11,32 @@ ms.technology: ''
 ms.search.form: AssetTable, AssetBook, LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7014e3a4384e08b0c218585a3c2110243360ec08
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 76e9f8dbe10e8cabb1feacbc91a3606f1ac3c2ae
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446392"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4975872"
 ---
-# <a name="dispose-of-a-fixed-asset-using-a-free-text-invoice"></a><span data-ttu-id="769df-103">Avhende et anleggsmiddel ved hjelp av en fritekstfaktura</span><span class="sxs-lookup"><span data-stu-id="769df-103">Dispose of a fixed asset using a free text invoice</span></span>
+# <a name="dispose-of-a-fixed-asset-using-a-free-text-invoice"></a><span data-ttu-id="f2207-103">Avhende et anleggsmiddel ved hjelp av en fritekstfaktura</span><span class="sxs-lookup"><span data-stu-id="f2207-103">Dispose of a fixed asset using a free text invoice</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="769df-104">Dette emnet beskriver hvordan du kvitter deg med et anleggsmiddel ved hjelp av fritekstfakturaen.</span><span class="sxs-lookup"><span data-stu-id="769df-104">This topic explains how to dispose of a fixed asset using the free text invoice.</span></span>
+<span data-ttu-id="f2207-104">Dette emnet beskriver hvordan du kvitter deg med et anleggsmiddel ved hjelp av fritekstfakturaen.</span><span class="sxs-lookup"><span data-stu-id="f2207-104">This topic explains how to dispose of a fixed asset using the free text invoice.</span></span>
 
-1. <span data-ttu-id="769df-105">I navigasjonsruten går du til **Moduler > Kunder > Fakturaer > Alle fritekstfakturaer**.</span><span class="sxs-lookup"><span data-stu-id="769df-105">In the navigation pane, go to **Modules > Accounts receivable > Invoices > All free text invoices**.</span></span>
-2. <span data-ttu-id="769df-106">Velg **Ny**.</span><span class="sxs-lookup"><span data-stu-id="769df-106">Select **New**.</span></span>
-3. <span data-ttu-id="769df-107">Angi eller velg en verdi i **Kundekonto**-feltet.</span><span class="sxs-lookup"><span data-stu-id="769df-107">In the **Customer account** field, enter or select a value.</span></span>
-4. <span data-ttu-id="769df-108">Valider standard **Faktura**-dato, og rediger om nødvendig.</span><span class="sxs-lookup"><span data-stu-id="769df-108">Validate the default **Invoice** date and edit if applicable.</span></span>
-5. <span data-ttu-id="769df-109">Valider gjenværende standard hodefelt, for eksempel **Valuta**, og rediger om nødvendig.</span><span class="sxs-lookup"><span data-stu-id="769df-109">Validate remaining default header fields, such as **Currency** and edit if applicable.</span></span>
-6. <span data-ttu-id="769df-110">Valider feltene **Beskrivelse** og **Hovedkonto** i delen **Fakturalinjer**.</span><span class="sxs-lookup"><span data-stu-id="769df-110">In the **Invoice lines** section, validate the **Description** and **Main account** fields.</span></span>
-7. <span data-ttu-id="769df-111">Valider standardfeltene **mva-gruppe** og **mva-gruppe for varer**.</span><span class="sxs-lookup"><span data-stu-id="769df-111">Validate the default **Sales tax group** and **Item sales tax group** fields.</span></span>
-8. <span data-ttu-id="769df-112">Angi **enhetsprisen** eller **salgsbeløpet** til anleggsmidlet.</span><span class="sxs-lookup"><span data-stu-id="769df-112">Enter the **Unit price** or the **Amount** of the sale of the fixed asset.</span></span>
-9. <span data-ttu-id="769df-113">Velg delen **Linjedetaljer**.</span><span class="sxs-lookup"><span data-stu-id="769df-113">Select the **Line details** section.</span></span>  
-10. <span data-ttu-id="769df-114">Angi eller velg en verdi i feltet **Anleggsmiddel**.</span><span class="sxs-lookup"><span data-stu-id="769df-114">Enter or select a value in the **Fixed asset** field.</span></span>
-11. <span data-ttu-id="769df-115">Velg **Poster**.</span><span class="sxs-lookup"><span data-stu-id="769df-115">Select **Post**.</span></span> 
+1. <span data-ttu-id="f2207-105">I navigasjonsruten går du til **Moduler > Kunder > Fakturaer > Alle fritekstfakturaer**.</span><span class="sxs-lookup"><span data-stu-id="f2207-105">In the navigation pane, go to **Modules > Accounts receivable > Invoices > All free text invoices**.</span></span>
+2. <span data-ttu-id="f2207-106">Velg **Ny**.</span><span class="sxs-lookup"><span data-stu-id="f2207-106">Select **New**.</span></span>
+3. <span data-ttu-id="f2207-107">Angi eller velg en verdi i **Kundekonto**-feltet.</span><span class="sxs-lookup"><span data-stu-id="f2207-107">In the **Customer account** field, enter or select a value.</span></span>
+4. <span data-ttu-id="f2207-108">Valider standard **Faktura**-dato, og rediger om nødvendig.</span><span class="sxs-lookup"><span data-stu-id="f2207-108">Validate the default **Invoice** date and edit if applicable.</span></span>
+5. <span data-ttu-id="f2207-109">Valider gjenværende standard hodefelt, for eksempel **Valuta**, og rediger om nødvendig.</span><span class="sxs-lookup"><span data-stu-id="f2207-109">Validate remaining default header fields, such as **Currency** and edit if applicable.</span></span>
+6. <span data-ttu-id="f2207-110">Valider feltene **Beskrivelse** og **Hovedkonto** i delen **Fakturalinjer**.</span><span class="sxs-lookup"><span data-stu-id="f2207-110">In the **Invoice lines** section, validate the **Description** and **Main account** fields.</span></span>
+7. <span data-ttu-id="f2207-111">Valider standardfeltene **mva-gruppe** og **mva-gruppe for varer**.</span><span class="sxs-lookup"><span data-stu-id="f2207-111">Validate the default **Sales tax group** and **Item sales tax group** fields.</span></span>
+8. <span data-ttu-id="f2207-112">Angi **enhetsprisen** eller **salgsbeløpet** til anleggsmidlet.</span><span class="sxs-lookup"><span data-stu-id="f2207-112">Enter the **Unit price** or the **Amount** of the sale of the fixed asset.</span></span>
+9. <span data-ttu-id="f2207-113">Velg delen **Linjedetaljer**.</span><span class="sxs-lookup"><span data-stu-id="f2207-113">Select the **Line details** section.</span></span>  
+10. <span data-ttu-id="f2207-114">Angi eller velg en verdi i feltet **Anleggsmiddel**.</span><span class="sxs-lookup"><span data-stu-id="f2207-114">Enter or select a value in the **Fixed asset** field.</span></span>
+11. <span data-ttu-id="f2207-115">Velg **Poster**.</span><span class="sxs-lookup"><span data-stu-id="f2207-115">Select **Post**.</span></span> 
 
