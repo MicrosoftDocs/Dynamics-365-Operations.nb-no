@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSCrossDockingTemplate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: b86fe2f3ea4321dbe598233018934187ba0d713a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bcae977ede91dcaf4e455353f023e9eee4fcb2b1
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434207"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977494"
 ---
 # <a name="auto-release-shipment-for-cross-docking"></a>Automatisk frigivelse av forsendelse for direkteoverføring
 
@@ -91,7 +90,7 @@ For dette scenarioet må du ha demonstrasjonsdata installert, og du må bruke de
 6. I **Lager**-feltet angir du nummeret til lageret der du vil definere direkteoverføringprosessen. Velg **51** for dette eksemplet.
 
     > [!NOTE]
-    > Så snart du velger **Ved forsyningsmottak** som policy for behovsfrigivelse for malen, blir alle andre felt på siden tilgjengelige. På samme måte kan du ikke definere noen forsyningskilder. Dette skjer fordi direkteoverføringen som bruker funksjonen for automatisk frigivelse av forsendelse, bare støtter produksjonsordrer som forsyningskilder, og den krever at det finnes en merking mellom salgsordrer og produksjonsordrer. Hvis du velger **Før forsyningsmottak** som policy for behovsfrigivelse, er feltene i kategoriene **Planlegging** og **Forsyningskilder** tilgjengelige og kan redigeres.
+    > Så snart du velger **Ved forsyningsmottak** som policy for behovsfrigivelse for malen, blir alle andre felt på siden tilgjengelige. På samme måte kan du ikke definere noen forsyningskilder. Dette skjer fordi direkteoverføringen som bruker funksjonen for automatisk frigivelse av forsendelse, bare støtter produksjonsordrer som forsyningskilder, og den krever at det finnes en merking mellom salgsordrer og produksjonsordrer. Hvis du velger **Før forsyningsmottak** som policy for behovsfrigivelse, er feltene i fanene **Planlegging** og **Forsyningskilder** tilgjengelige og kan redigeres.
 
 #### <a name="work-classes"></a>Arbeidsklasser
 
@@ -161,16 +160,16 @@ Hvis du vil direkteoverføre antallet ferdigvarer til den utgående lokasjonen f
     > [!NOTE]
     > En merking kan ikke opprettes manuelt for varer som er konfigurert til å bruke standard og avveid gjennomsnitt som lagermodeller.
 
-8. På siden **Produksjonsordre**, i handlingsruten i kategorien **Produksjonsordre** i gruppen **Prosess**, velger du **Estimat**, og deretter velger du **OK**. Ordren er estimert, og råvareantallet er reservert for produksjonen.
-9. I handlingsruten i kategorien **Produksjonsordre** i gruppen **Prosess** velger du **Frigi**, og deretter velger du **OK**. Lagerplukkarbeid opprettes for råvarene.
-10. Åpne og se gjennom arbeidet. Velg **Arbeidsdetaljer** i gruppen **Generelt** i kategorien **Lager** i handlingsruten. Noter arbeids-ID-en.
+8. På siden **Produksjonsordre**, i handlingsruten i fanen **Produksjonsordre** i gruppen **Prosess**, velger du **Estimat**, og deretter velger du **OK**. Ordren er estimert, og råvareantallet er reservert for produksjonen.
+9. I handlingsruten i fanen **Produksjonsordre** i gruppen **Prosess** velger du **Frigi**, og deretter velger du **OK**. Lagerplukkarbeid opprettes for råvarene.
+10. Åpne og se gjennom arbeidet. Velg **Arbeidsdetaljer** i gruppen **Generelt** i fanen **Lager** i handlingsruten. Noter arbeids-ID-en.
 11. Logg på lagerappen for å kjøre arbeid i lager 51.
 12. Gå til **Produksjon** \> **Produksjonsplukking**.
 13. Angi arbeids-IDen for å starte og fullføre råvareplukkingen. 
 
     Når arbeidet er rapportert som ferdig, er antallet råvarer tilgjengelig på produksjonsinnleveringsstedet (**005** i USMF-demonstrasjonsdataene), og utføringen av produksjonsordren kan starte.
 
-14. På siden **Produksjonsordre**, i handlingsruten i kategorien **Produksjonsordre** i gruppen **Prosess**, velger du **Start**, og deretter velger du **OK**.
+14. På siden **Produksjonsordre**, i handlingsruten i fanen **Produksjonsordre** i gruppen **Prosess**, velger du **Start**, og deretter velger du **OK**.
 15. I appen går du til **Produksjon** \> **Ferdigmeld og plasser**.
 16. Angi produksjonsordrenummeret og andre obligatoriske detaljer i **Produkt-ID**-feltet, og velg deretter **OK**.
 
@@ -179,6 +178,3 @@ Merk at følgende hendelser oppstår:
 - Frigivelsen til et lager utløses for den koblede salgsordren.
 - Det opprettes en forsendelse og direkteoverføring basert på frigivelsen. Dette arbeidet instruerer lageroperatøren til å plukke antallene som kreves for å oppfylle salgsordrelinjen og plassere dem på den utgående lokasjonen som er angitt i direktivet for direkteoverføringslokasjonen.
 - Hvis produksjonsordreantallet er større enn antallet som kreves av salgsordren, opprettes vanlig plasseringsarbeid. Dette arbeidet instruerer lageroperatøren om å plukke antallet ferdigvarer som gjenstår etter direkteoverføring, og flytte det til vanlig lagring i henhold til lokasjonsdirektivet.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

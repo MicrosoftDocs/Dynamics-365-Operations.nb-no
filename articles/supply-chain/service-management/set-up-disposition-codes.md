@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ReturnDispositionCode
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 16f0ddb9ad956367adc66a952bd8d12551da56a5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 518b70223b2f6bf86809ccce77a2cf67c30e4168
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434087"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977544"
 ---
 # <a name="set-up-disposition-codes"></a>Definer disposisjonskoder 
 
@@ -34,9 +33,9 @@ Du kan definere disposisjonskoder for å angi hvordan en vare som returneres av 
 
 Du kan også definere en årsakskode som forklarer hvorfor en vare ble returnert. Hvis du vil ha mer informasjon om årsakskoder, kan du se [Definere returårsakskoder](set-up-return-reason-code.md).
 
-1.  Klikk **Salg og markedsføring** \> **Oppsett** \> **Salgsordrer** \> **Returer** \> **Disposisjonskoder**.
+1.  Klikk på **Salg og markedsføring** \> **Oppsett** \> **Salgsordrer** \> **Returer** \> **Disposisjonskoder**.
 
-2.  Klikk **Ny** eller trykk CTRL+N for å opprette en ny disposisjonskode.
+2.  Klikk på **Ny** eller trykk CTRL+N for å opprette en ny disposisjonskode.
 
 3.  Angi et unikt beskrivende navn, velg en handling og angi en beskrivelse for disposisjonskoden.
 
@@ -57,6 +56,3 @@ Du kan også definere en årsakskode som forklarer hvorfor en vare ble returnert
   
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: WHSInventFixedLocation, InventItemIdLookupSimple, WMSLocationIdLookup, WHSLocDirTable, InventLocationIdLookup, SysQueryForm, WHSWorkTemplateTable, WHSReplenishmentTemplates, UnitOfMeasureLookup, SysQueryTableLookUp, SysQueryFieldLookUp, SysRecurrence, WHSInventFixedLocation
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3119b6e93bc1f09c068fa599ec5ea2d0b23906a1
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: e14614829f414bc9063b84ec848816e77dbd571a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434738"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4976944"
 ---
 # <a name="set-up-a-min-max-replenishment-process"></a>Definere en prosess for minimums-/maksimumsetterfylling
 
@@ -43,31 +42,31 @@ Denne fremgangsmåten viser hvordan du definerer en ny etterfyllingprosess som b
 ## <a name="create-a-replenishment-location-directive"></a>Opprette et lokasjonsdirektiv for etterfylling
 1. Gå til **Lagerstyring > Oppsett > Lokasjonsdirektiver**. Lokasjonsdirektiver brukes til å bestemme hvor varene skal plukkes fra i etterfyllingsprosessen.
 2. Velg Etterfylling i feltet **Arbeidsordretype**.
-3. Klikk **Ny** i **handlingsruten**.
+3. Klikk på **Ny** i **handlingsruten**.
 4. Skriv inn en verdi i **Navn**-feltet.
 5. Velg Plukk i **Arbeidstype**-feltet.
 6. Angi eller velg en verdi i **Område**-feltet. Hvis du bruker USMF, kan du velge område 2.  
 7. Angi eller velg en verdi i feltet **Lager**. Hvis du bruker USMF, kan du velge lager 24.  
-8. Klikk **Lagre**.
+8. Klikk på **Lagre**.
 9. Klikk på **Ny** i **Linjer**-delen.
 10. Merk den valgte raden i listen.
 11. Angi et tall i feltet **Til-antall**. Du kan for eksempel sette dette til 9999.  
 12. Merk av for **Tillat oppdeling**. Hvis du velger dette alternativet, tillater arbeidsopprettelsesprosessen at arbeidslinjeantall kan deles på tvers av flere lokasjoner.  
-13. Klikk **Lagre**.
+13. Klikk på **Lagre**.
 14. Klikk på **Ny** i **Lokasjonsdirektivhandlinger**-delen.
 15. Merk den valgte raden i listen.
 16. Skriv inn en verdi i **Navn**-feltet.
-17. Klikk **Lagre**.
+17. Klikk på **Lagre**.
 18. Klikk på **Rediger spørring** i **handlingsruten**. Du kan redigere denne spørringen for å legge til begrensninger der lageret kan velges fra i etterfyllingsprosessen. Det kan for eksempel være at lageret bare skal brukes fra partiområdet i lageret.
-19. Klikk **OK**.
+19. Klikk på **OK**.
 20. Lukk siden.
 
 ## <a name="create-a-replenishment-work-template"></a>Opprette en arbeidsmal for etterfylling
 1. Gå til **Lagerstyring > Oppsett > Arbeid > Arbeidsmaler**. Arbeidsmalen brukes for å veilede systemet for hvordan arbeidet for minimums-/maksimumsetterfylling skal opprettes. Som et minimum må det være en arbeidsmallinje for plukking og plassering. Arbeidsmalen vil si at den er ugyldig til all nødvendig informasjon er fylt ut. 
 2. Velg Etterfylling i feltet **Arbeidsordretype**.
-3. Klikk **Ny** i **handlingsruten**.
+3. Klikk på **Ny** i **handlingsruten**.
 4. Angi en verdi i feltet **Arbeidsmal**.
-5. Klikk **Lagre**.
+5. Klikk på **Lagre**.
 6. Klikk på **Ny** i **Arbeidsmaldetaljer**-delen:
 7. Velg Plukk i **Arbeidstype**-feltet.
 8. Angi eller velg en verdi i feltet **Arbeidsklasse-ID**. Dette bør være en arbeidsklasse relatert til etterfylling. Hvis du bruker USMF, velger du Etterfylle.  
@@ -75,12 +74,12 @@ Denne fremgangsmåten viser hvordan du definerer en ny etterfyllingprosess som b
 10. Merk den valgte raden i listen.
 11. Velg Plasser i **Arbeidstype**-feltet.
 12. Angi eller velg en verdi i feltet **Arbeidsklasse-ID**.
-13. Klikk **Lagre**.
+13. Klikk på **Lagre**.
 14. Lukk siden.
 
 ## <a name="create-a-new-replenishment-template"></a>Opprette en ny etterfyllingsmal
 1. Gå til **Lagerstyring > Oppsett > Etterfylling > Etterfyllingsmaler**. Etterfyllingsmalen brukes til å definere varer og antall og lokasjonen som skal etterfylles.
-2. Klikk **Ny** i **handlingsruten**.
+2. Klikk på **Ny** i **handlingsruten**.
 3. Angi en verdi i feltet **Etterfyllingsmal**. Gi malen et navn for å angi at den er for minimums-/maksimumsetterfylling.  
 4. Skriv inn en verdi i **Beskrivelse**-feltet.
 5. Merk av for **Tillat at bølgebehov kan bruke ureserverte antall**. Hvis du velger dette alternativet, gir det mulighet for etterfylling for bølgebehov antallene som er relatert til minimums-/maksimumsetterfylling. Dette kan for eksempel være nyttig hvis arbeidet for minimums-/maksimumsetterfylling ikke behandles umiddelbart, slik at du unngår oppretting av unødvendige arbeid for behovsetterfylling.
@@ -98,28 +97,25 @@ Denne fremgangsmåten viser hvordan du definerer en ny etterfyllingprosess som b
 17. Klikk på **Velg produkter**. Dette er stedet der du kan definere hvilke produkter som skal etterfylles. Hvis det er merket av for alternativet Faste plukklokasjoner, må du også definere lokasjonene i denne spørringen. Variantspesifikke og produktspesifikke spørringer er tilgjengelige.
 18. Velg raden **Varer**.
 19. Skriv inn en verdi i **Kriterier**-feltet. Velg varene som skal etterfylles på de faste lokasjonene. Skriv for eksempel inn A* for å velge alle varenumre som begynner med A.
-20. Klikk **Legg til**. Legg til enhetslokasjonen (med mindre den allerede finnes) for å kunne begrense etterfyllingsarbeidet til de faste plukklokasjonene innenfor et bestemt område i lageret.
+20. Klikk på **Legg til**. Legg til enhetslokasjonen (med mindre den allerede finnes) for å kunne begrense etterfyllingsarbeidet til de faste plukklokasjonene innenfor et bestemt område i lageret.
 21. Merk den valgte raden i listen.
 22. Sett **Tabell**-feltet til Lokasjoner.
 23. Velg lokasjonsprofil-ID i feltet **Felt**.
 24. Angi eller velg en verdi i **Kriterier**-feltet.
-25. Klikk **OK**.
+25. Klikk på **OK**.
 26. Lukk siden.
 
 ## <a name="set-the-replenishment-process-to-run-as-a-batch-job"></a>Angi at etterfyllingsprosessen skal kjøres som en satsvis jobb
 1. Gå til **Lagerstyring > Etterfylling > Etterfyllinger**. Siden Etterfyllinger lar deg definere etterfylling som skal kjøres som en satsvis jobb, eller å kreve at den startes manuelt.
-2. Klikk **Filter**.
+2. Klikk på **Filter**.
 3. Merk den valgte raden i listen.
 4. Angi eller velg en verdi i **Kriterier**-feltet.
-5. Klikk **OK**.
+5. Klikk på **OK**.
 6. Vis delen **Kjør i bakgrunnen**.
 7. Sett alternativet **Satsvis behandling** til Ja.
 8. Klikk på **Regelmessighet**.
 9. Velg alternativet **Ingen sluttdato**.
 10. Angi **Mønster for regelmessighet** Velg for eksempel Dager.  
-11. Klikk **OK**.
-12. Klikk **OK**.
+11. Klikk på **OK**.
+12. Klikk på **OK**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

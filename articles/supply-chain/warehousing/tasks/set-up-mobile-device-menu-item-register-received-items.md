@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: WHSRFMenuItem, WHSRFMenu, WHSRFDefaultData
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f636a1f3d598a069c3922160eedbe05b68bc91eb
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: d6f9cf258a991b88faa0d2db90cd3c21f9703267
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434764"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4976969"
 ---
 # <a name="set-up-a-mobile-device-menu-item-to-register-received-items"></a>Definere et menyelement for mobilenhet for å registrere mottatte varer
 
@@ -40,7 +39,7 @@ Du kan bruke denne veiledningen i USMF-demodatafirmaet. Denne fremgangsmåten er
 4. Skriv inn en verdi i **Tittel**-feltet. Dette er tittelen som skal vises for brukeren på den mobile enheten. Du kan for eksempel skrive inn `PO registration`.  
 5. Velg **Arbeid** i feltet **Modus**. Registrering av lagerbeholdningsantall mottatt for en bestillingslinje oppretter arbeid for å flytte varene fra mottaksområdet til lageret. Arbeid opprettes ikke før varene er registrert. La derfor alternativet **Bruk eksisterende arbeid** være satt til **Nei**.
 6. Velg **Mottak av bestillingsvare** i feltet **Arbeidsopprettelsesprosess** i delen **Generelt**.
-    - En bestillingslinje må identifiseres unikt før beholdningen kan registreres i lageret. I dette scenarioet registrerer mobilenheten bestillingsnummeret og varenummeret, og det gjør at systemet kan identifisere bestillingslinjen. Plasseringsarbeidet blir opprettet og kan plukkes opp en annen arbeider. Arbeidsopprettingsmetoden du velger, bestemmer hvilke felt som blir tilgjengelige i hurtigkategorien **Generelt**.  
+    - En bestillingslinje må identifiseres unikt før beholdningen kan registreres i lageret. I dette scenarioet registrerer mobilenheten bestillingsnummeret og varenummeret, og det gjør at systemet kan identifisere bestillingslinjen. Plasseringsarbeidet blir opprettet og kan plukkes opp en annen arbeider. Arbeidsopprettingsmetoden du velger, bestemmer hvilke felt som blir tilgjengelige i hurtigfanen **Generelt**.  
     - Hvis du velger alternativet **Bruk standarddata**, aktiveres knappen **Standarddata**. Her kan du velge felt for å vise data som en arbeider vanligvis trenger i arbeidet, slik at disse verdiene vises på den mobile enheten.  
     - Parameteren **Gruppering av nummerskilt** fungerer sammen med sekvensgruppe for enhet som er tilordnet til varen som blir mottatt. Du kan angi om mottak av mindre enn eller flere enn én pall skal grupperes i ett nummerskilt eller deles inn i et eget nummerskilt for hver enhet.  
     - Hvis du velger alternativet **Generer nummerskilt**, genereres et unikt nummerskilt basert på valget av nummerserie.  
@@ -60,6 +59,3 @@ Du kan bruke denne veiledningen i USMF-demodatafirmaet. Denne fremgangsmåten er
 6. Velg **Lagre**.
 7. Lukk siden.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

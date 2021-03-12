@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: WMSJournalTable, WMSJournalCreate, WHSLicensePlate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ea8b5e03282aa21aa9dfa486b1deaced6af4601c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0f05034454002fa9c4161b8f2d6cafdaeaa24d32
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434556"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977094"
 ---
 # <a name="register-items-for-an-advanced-warehousing-enabled-item-using-an-item-arrival-journal"></a>Registrere varer for en vare for avanserte lageraktiviteter ved hjelp av en journal for vareankomst
 
@@ -37,7 +36,7 @@ Noter nummeret på bestillingen som du oppretter, og noter også varenummeret og
 
 ## <a name="create-an-item-arrival-journal-header"></a>Opprette et hode for vareankomstjournal
 1. Gå til Vareankomst.
-2. Klikk Ny.
+2. Klikk på Ny.
 3. Skriv inn en verdi i Navn-feltet.
     * Hvis du bruker USMF, kan du velge WHS. Hvis du bruker andre data, må journalen med det valgte navnet ha følgende egenskaper: Kontroller plukklokasjon plukklokasjon må settes til Nei og Karantenestyring må settes til Nei.  
 4. Skriv inn en verdi i Nummer-feltet.
@@ -48,17 +47,17 @@ Noter nummeret på bestillingen som du oppretter, og noter også varenummeret og
 7. Skriv inn en verdi i feltet Lokasjon.
     * Velg en gyldig lokasjon i lageret du har valgt. Lokasjonen må være tilknyttet en lokasjonsprofil, som er nummerskiltkontrollert. Dette skal fungere som en standardverdi som vil være standard for alle linjene i journalen. Hvis du bruker eksempelverdiene i USMF, velger du Bulk-008.  
 8. Høyreklikk på rullegardinpilen i feltet Nummerskilt, og velg deretter Vis detaljer.
-9. Klikk Ny.
+9. Klikk på Ny.
 10. Skriv inn en verdi i feltet Nummerskilt.
     * Noter verdien.  
-11. Klikk Lagre.
+11. Klikk på Lagre.
 12. Lukk siden.
 13. Skriv inn en verdi i feltet Nummerskilt.
     * Angi verdien for nummerskiltet du nettopp opprettet. Dette skal fungere som en standardverdi som vil være standard for alle linjene i journalen.  
-14. Klikk OK.
+14. Klikk på OK.
 
 ## <a name="add-a-line"></a>Legge til en linje
-1. Klikk Legg til linje.
+1. Klikk på Legg til linje.
 2. Skriv inn en verdi i Varenummer-feltet.
     * Angi varenummeret som du brukte på bestillingslinjen.  
 3. Angi et tall i feltet Antall.
@@ -67,15 +66,12 @@ Noter nummeret på bestillingen som du oppretter, og noter også varenummeret og
     * Parti-ID-en fylles ut av systemet hvis den kan identifiseres unikt fra informasjonen. Ellers må du legge den til manuelt. Dette er et obligatorisk felt, som kobler denne registreringen til en bestemt kildedokumentlinje.  
 
 ## <a name="complete-the-registration"></a>Fullføre registreringen
-1. Klikk Valider.
+1. Klikk på Valider.
     * Dette kontrollerer at journalen er klar for postering. Hvis valideringen mislykkes, må du rette opp feilene før du kan postere journalen.  
-2. Klikk OK.
+2. Klikk på OK.
     * Når du har klikket OK, kontrollerer du meldingen. Det skal være en melding om at journalen er OK.  
-3. Klikk Poster.
-4. Klikk OK.
+3. Klikk på Poster.
+4. Klikk på OK.
     * Når du har klikket OK, kontrollerer du meldingslinjen. Det skal være en melding om at operasjonen er fullført.  
 5. Lukk siden.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

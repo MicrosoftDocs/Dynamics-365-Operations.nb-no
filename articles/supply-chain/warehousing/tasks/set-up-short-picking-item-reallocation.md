@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: WHSWorkException, WHSWorker, WHSLocationWithWorkException
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4e8f5c23f82e96145f411ec993f766a90137b5b8
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: ab8baf846d65e6fefe9ca575b5af5a2dbceac666
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434763"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4976894"
 ---
 # <a name="set-up-short-picking-item-reallocation"></a>Definere ny tildeling av vare for plukking med mangler
 
@@ -58,12 +57,9 @@ Demonstrasjonsdatafirmaet USMF ble brukt til å opprette denne fremgangsmåten.
 
 1. Lukk siden.
 2. I **navigasjonsruten** går du til **Lagerstyring > Oppsett > Arbeider**.
-3. Klikk **Rediger**.
+3. Klikk på **Rediger**.
 4. Velg arbeider i listen. For eksempel Julia Funderburk.
 5. Utvid **Brukere**-hurtigfanen.
 6. Velg en **bruker-ID** i listen. For eksempel 24.
 7. Utvid **Arbeid**-hurtigfanen.
 8. Velg **Ja** i feltet **Tillat manuell ny tildeling av vare**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

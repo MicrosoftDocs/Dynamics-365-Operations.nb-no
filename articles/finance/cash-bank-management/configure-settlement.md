@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CustOpenTrans, CustParameters, VendOpenTrans, VendParameters
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14601
 ms.assetid: 6b61e08c-aa8b-40c0-b904-9bca4e8096e7
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 094b8876b3b10b6dcbc0ce399a1a9915271459ed
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0ebc6fcfe20082f76007eabb86d5e33dbfc900dc
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446535"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4976461"
 ---
 # <a name="configure-settlement"></a>Konfigurere utligning
 
@@ -67,6 +66,3 @@ Hvis du vil unngå ekstra regnskapsoppføringer, debet og kreditt til samme fina
 
 -   Organisasjoner bruker ofte faste dimensjoner til å nullfylle en finansdimensjon som ikke er nødvendig. Dette er vanligvis tilfelle for balansekontoer, for eksempel leverandører/kunder. Kontostrukturer kan brukes til å ikke spore finansdimensjoner som vanligvis nullfylles.  Du kan fjerne finansdimensjonen for balansekontoer og dermed eliminere behovet for å bruke faste dimensjoner.
 -   Hvis organisasjonen din krever faste dimensjoner på kunder/leverandører-hovedkontoen, må du finne en måte å legge den faste dimensjonen til betalingen som standard, slik at den faste dimensjonsverdien lagres på leverandørtransaksjonen for betalingen. Dette gjør at systemet kan rekonstruere kunde/leverandør-hovedkontoen for å inkludere de faste dimensjonsverdiene. Den faste dimensjonsverdien kan defineres som en standard på enten leverandører eller journalnavnet for betalingsjournalen.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: InventLocation,CustVendTransportPoint2Point
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: e482567eb92b9ab891d41d82d10cbb87f9b7fb01
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 7dfb215683b4ee5d186626492bd90116d1a06a1d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434790"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4976844"
 ---
 # <a name="set-up-warehouses-for-transfer-orders"></a>Definere lagre for overføringsordrer 
 
@@ -29,11 +28,11 @@ ms.locfileid: "4434790"
 
 Du kan bruke lagernivåer for å opprette et hierarki som støtter overføringsordrer mellom lagre. På grunnlag av dette oppsettet blir hovedplanlegging brukt til å beregne varebehov på det enkelte lagernivå og generere planlagte overføringsordrer fra et tilordnet kildelager for å dekke behovet.
 
-1.  Klikk **Lagerstyring > Oppsett > Lageroppdeling > Lagre**.
+1.  Klikk på **Lagerstyring > Oppsett > Lageroppdeling > Lagre**.
 
 2.  Velg lageret du vil fylle på.
 
-3.  På **Hovedplanlegging**-hurtigkategorien merker du av for **Påfylling**.
+3.  På **Hovedplanlegging**-hurtigfanen merker du av for **Påfylling**.
 
 4.  I **Hovedlager**-feltet velger du lageret du vil tilordne som påfyllingslager. Hovedplanleggingen beregner et overføringsbehov for det valgte lager og genererer en planlagt overføringsordre fra tilordnet **Hovedlager**.
    
@@ -53,6 +52,3 @@ Du må også definere leveringstiden for transport mellom lagrene på siden **Tr
 2. I **Mottakspunkt**-feltet velger du **lager**.
 3. Velg **Leverende lager**, **Mottakende lager** og **Transportdager**. 
 4. (Valgfritt) Du kan også angi transporttiden, avhengig av leveringsmåten, under **Transportdager per leveringsmåte**-fanen.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

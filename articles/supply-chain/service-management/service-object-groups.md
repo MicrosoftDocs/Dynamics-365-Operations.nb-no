@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SMAServiceObjectGroups
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4438487fa234cf093b557bca9455717b2cd3ca0b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7a8e050afb44787072f78e2c971394956cb1026f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434096"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977594"
 ---
 # <a name="service-object-groups"></a>Serviceobjektgrupper 
 
@@ -53,9 +52,9 @@ Opprett grupper som du kan tilordne serviceobjekter til. Serviceobjekter er lage
 
 Hvis du vil opprette serviceobjektgrupper, gjør du følgende:
 
-1. Klikk **Servicestyring > Oppsett > Serviceobjekter > Serviceobjektgrupper**.
+1. Klikk på **Servicestyring > Oppsett > Serviceobjekter > Serviceobjektgrupper**.
 
-2. Klikk **Ny** for å opprette en ny serviceobjektgruppe.
+2. Klikk på **Ny** for å opprette en ny serviceobjektgruppe.
 
 3. Angi et unikt navn for serviceobjektgruppen, og eventuelt en beskrivelse.
 
@@ -66,6 +65,3 @@ Du kan tilordne serviceobjekter til gruppen ved hjelp av **Serviceobjekter**-skj
 [Opprette serviceobjekter](create-service-objects.md)
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSRFMenuItemCycleCount, WHSCycleCountThreshold, WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSParameters, WHSRFMenu, WHSRFMenuItem
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a8b7f39fc9a91d9fe219445e409d000266e24775
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: f1424bc4c4ff0f8528d6577e80324082cb2ec7f4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434767"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977169"
 ---
 # <a name="define-cycle-counting"></a>Definere syklustelling  
 
@@ -32,9 +31,9 @@ Syklustelling er en lagerprosess som du kan bruke til å overvåke varer i lager
 
 ## <a name="set-the-priority-of-counting-work"></a>Angi prioritet for opptellingsarbeid
 1. I **navigasjonsruten** går du til **Moduler > Lagerstyring > Oppsett > Lagerstyringsparametere**.
-2. Klikk fanen **Syklustelling**.
+2. Klikk på fanen **Syklustelling**.
 3. Angi et nummer i feltet **Standardprioritet for arbeid for syklustelling**. Dette trinnet endrer prioriteten til syklustellingsarbeidet, sammenlignet med andre typer varer i lageret. Ved å skrive inn et tall som er lavere enn tallet for andre typer arbeid, kan du øke prioriteten for syklustellingsarbeidet.  
-4. Klikk **Lagre**.
+4. Klikk på **Lagre**.
 5. Lukk siden.
 
 ## <a name="enable-the-mobile-device"></a>Aktivere mobilenheten
@@ -50,14 +49,14 @@ Syklustelling er en lagerprosess som du kan bruke til å overvåke varer i lager
 10. Velg en verdi i feltet **Arbeidsklasse-ID**.
 11. Klikk på **Ny**.
 12. Velg en verdi i feltet **Arbeidsklasse-ID**.
-13. Klikk **Lagre** i **handlingsruten**.
+13. Klikk på **Lagre** i **handlingsruten**.
 14. Lukk siden.
 15. I **navigasjonsruten** går du til **Moduler > Lagerstyring > Oppsett > Mobilenhet > Meny på mobilenheten**.
 16. Finn og velg ønsket post i listen.
 17. Velg menyelementet du har nettopp opprettet, i treet.
-18. Klikk **Rediger**.
-19. Klikk pilen for å legge til menyelementet i menyen.
-20. Klikk **Lagre**.
+18. Klikk på **Rediger**.
+19. Klikk på pilen for å legge til menyelementet i menyen.
+20. Klikk på **Lagre**.
 
 ## <a name="create-a-counting-threshold"></a>Opprette en opptellingsterskel
 1. I **navigasjonsruten** går du til **Moduler > Lagerstyring > Oppsett > Syklustelling > Terskler for syklustelling**.
@@ -65,11 +64,11 @@ Syklustelling er en lagerprosess som du kan bruke til å overvåke varer i lager
 3. Skriv inn en verdi i feltet **ID for syklustellingsterskel**.
 4. Angi alternativet **Behandle syklustelling umiddelbart** til Ja.
 5. Skriv inn en verdi i **Beskrivelse**-feltet.
-6. Klikk **Lagre**.
-7. Klikk **Velg lokasjoner**.
+6. Klikk på **Lagre**.
+7. Klikk på **Velg lokasjoner**.
 8. Merk den valgte raden i listen.
 9. Velg en verdi i **Kriterier**-feltet.
-10. Klikk **OK**.
+10. Klikk på **OK**.
 11. Lukk siden.
 
 ## <a name="create-a-cycle-count-plan"></a>Opprette en plan for syklustelling
@@ -78,24 +77,21 @@ Syklustelling er en lagerprosess som du kan bruke til å overvåke varer i lager
 3. Skriv inn en verdi i feltet **ID for syklustellingsplan**.
 4. Skriv inn en verdi i **Beskrivelse**-feltet.
 5. Angi et tall i feltet **Største antall syklustellinger**.
-6. Klikk **Lagre**.
-7. Klikk **Velg lokasjoner**.
+6. Klikk på **Lagre**.
+7. Klikk på **Velg lokasjoner**.
 8. Merk den valgte raden i listen.
 9. Velg en verdi i **Kriterier**-feltet.
-10. Klikk **OK**.
+10. Klikk på **OK**.
 11. Angi et tall i feltet **Dager mellom syklustellinger**. Hvis for eksempel feltet **Dager mellom syklustellinger** er angitt til 5, opprettes syklustellingsarbeidet hver femte dag. Hvis syklustellingsarbeid imidlertid behandles på dag tre, opprettes neste syklustellingsarbeid fem dager etter den siste syklustellingen ble behandlet, på dag 8.  
-12. Klikk **Lagre**.
+12. Klikk på **Lagre**.
 13. Klikk på **Ny**.
 14. Angi et nummer i **Sekvensnummer**-feltet. Sorteringen er fra det laveste tallet til det høyeste tallet. Verdien må være over 0 (null).  
 15. Merk den valgte raden i listen.
 16. Skriv inn en verdi i **Beskrivelse**-feltet.
-17. Klikk **Lagre**.
-18. Klikk **Definer produktspørring**.
+17. Klikk på **Lagre**.
+18. Klikk på **Definer produktspørring**.
 19. Merk den valgte raden i listen.
 20. Angi eller velg en verdi i **Kriterier**-feltet.
-21. Klikk **OK**.
+21. Klikk på **OK**.
 22. Lukk siden.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

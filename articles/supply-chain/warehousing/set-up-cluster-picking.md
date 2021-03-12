@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: WHSClusterProfile, WHSRFAutoConfirm, WHSWorkCluster
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 269384
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 009345e608c26887fedbe4a9c268367080593da2
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: da11a474e1bb031fac26e04c91cbdbab5f62eb0b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434826"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977359"
 ---
 # <a name="set-up-cluster-picking"></a>Definere gruppeplukking
 
@@ -54,11 +53,11 @@ Hvis du vil aktivere gruppeplukking, må du konfigurere følgende:
 
 Hvis du vil konfigurere en gruppeprofil, gjør du følgende:
 
-1. Klikk **Lagerstyring** \> **Oppsett** \> **Mobilenhet** \> **Gruppeprofiler**.
+1. Klikk på **Lagerstyring** \> **Oppsett** \> **Mobilenhet** \> **Gruppeprofiler**.
 
-1. Klikk **Ny** for å opprette en ny profil.
+1. Klikk på **Ny** for å opprette en ny profil.
 
-1. Klikk **Opprett gruppe** og deretter, under **Gruppesortering**, klikker du **Ny** for å definere sorteringskriteriene for gruppen. Sorteringskriteriene bestemmer i hvilken rekkefølge arbeideren vil utføre plukkarbeidet. Du kan legge til så mange kriterier som nødvendig.
+1. Klikk på **Opprett gruppe** og deretter, under **Gruppesortering**, klikker du **Ny** for å definere sorteringskriteriene for gruppen. Sorteringskriteriene bestemmer i hvilken rekkefølge arbeideren vil utføre plukkarbeidet. Du kan legge til så mange kriterier som nødvendig.
 
 1. I feltet **Serienummer** angir du et tall for å definere rekkefølgen som sorteringskriteriene behandles i.
 
@@ -80,6 +79,3 @@ Når gruppeplukking brukes, er varebekreftelse avgjørende for å bekrefte varen
 1. Åpne oppsettskjemaet for arbeidsbekreftelse på et menyelement for mobilenhet: **Lagerstyring** \> **Lagerstyring** \> **Oppsett** \>  **Mobilenhet** \> **Menyelementer på mobilenheten**.
 
 1. Åpne **Arbeidsbekreftelsesoppsett** fra menyelementet på mobilenheten. Med alternativet **Produktbekreftelse** kan du bekrefte hver del av beholdningen fra den mobile enheten når den skannes.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

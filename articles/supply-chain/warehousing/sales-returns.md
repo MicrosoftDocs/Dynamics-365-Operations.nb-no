@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ReturnTableListPage, ReturnTable, ReturnTableListPagePreviewPane, ReturnTableReferences, SalesReturnExpiredOrdersPart, SalesReturnFindOrderFormPart
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 269384
 ms.assetid: 98a4b517-e606-4036-b55f-1ab248898bdf
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fd194042303797fe41507065d0d7e4df28309cfb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e8778a96030494cbb5d819bf214fca104864eff4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434200"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977419"
 ---
 # <a name="sales-returns"></a>Salgsreturer
 
@@ -87,7 +86,7 @@ Når du har fullført returhodet, kan du opprette returlinjer ved hjelp av én a
 -   Angi manuelt varedetaljer, antall og annen informasjon for hver returlinje.
 -   Opprett en returlinje ved hjelp av funksjonen **Søk etter salgsordre**. Vi anbefaler at du bruker denne funksjonen når du oppretter en returordre. Funksjonen **Søk etter salgsordre** oppretter en referanse fra returlinjen tilbake til den fakturerte salgsordrelinjen, og henter linjedetaljer som varenummer, antall, pris, rabatt og kostnadsverdier fra salgslinjen. Referansen bidrar til å garantere at når produktet returneres til selskapet, blir det verdisatt til samme enhetskostnad som den ble solgt for. Referansen validerer også at returordrer ikke opprettes for et antall som er større enn antallet som ble solgt på fakturaen.
 
->[Obs!] Returlinjer som har en referanse til en salgsordre behandles som korrigeringer eller tilbakeføringer av salget. Hvis du vil ha mer informasjon, kan du se "Postere til finans" senere i dette emnet.
+>Obs! Returlinjer som har en referanse til en salgsordre behandles som korrigeringer eller tilbakeføringer av salget. Hvis du vil ha mer informasjon, kan du se "Postere til finans" senere i dette emnet.
 
 ### <a name="charges"></a>Tillegg
 
@@ -193,7 +192,7 @@ Under ankomstprosessen integreres returer med den generelle prosessen for lagera
 ### <a name="identify-products-in-the-arrival-overview-list"></a>Identifisere produkter i listen for ankomstoversikt
 
 Siden **Ankomstoversikt** viser en liste over alle planlagte innkommende ankomster. 
->[Obs!] Ankomster fra returordrer må behandles separat fra andre typer ankomsttransaksjoner. Når du har identifisert en innkommende pakke på siden **Ankomstoversikt** (for eksempel ved hjelp av det medfølgende ARM-dokumentet), går du til handlingsruten og klikker på **Start ankomst** for å opprette og starte en ankomstjournal som samsvarer med ankomsten.
+>Obs! Ankomster fra returordrer må behandles separat fra andre typer ankomsttransaksjoner. Når du har identifisert en innkommende pakke på siden **Ankomstoversikt** (for eksempel ved hjelp av det medfølgende ARM-dokumentet), går du til handlingsruten og klikker på **Start ankomst** for å opprette og starte en ankomstjournal som samsvarer med ankomsten.
 
 ### <a name="edit-the-arrival-journal"></a>Redigere ankomstjournalen
 
@@ -235,7 +234,7 @@ Hvis du leverer en erstatningsvare til kunden og du bruker disposisjonshandlinge
 
 Erstatningsvaren sendes ved hjelp av en uavhengig salgsordre, erstatningsordren. Denne salgsordren blir opprettet når følgeseddelen for returordren genereres. Ordrehodet bruker informasjon fra kunden som det refereres til i returordrehodet. Linjeinformasjonen som samles inn fra informasjonen som er angitt på siden **Erstatningsvare**. Siden **Erstatningsvare** må fylles ut for linjer som har disposisjonhandlinger som begynner med ordet "erstatt". Verken antallet eller identiteten til erstatningsvaren er imidlertid validert eller begrenset. Denne virkemåten tillater tilfeller der kunden ønsker den samme varen, men i en annen konfigurasjon eller størrelse, og også tilfeller der kundene vil ha et helt annen vare. Som standard angis en identisk vare på siden **Erstatningsvare**. Du kan imidlertid velge en annen vare, forutsatt at funksjonen er definert. 
 
->[Obs!] Du kan redigere og slette erstatningssalgsordren etter at den er opprettet.
+>Obs! Du kan redigere og slette erstatningssalgsordren etter at den er opprettet.
 
 ## <a name="generate-a-packing-slip"></a>Generere en følgeseddel
 Før returnerte varer kan mottas til lager, må du oppdatere følgeseddelen for ordren som varene tilhører. På samme måte som fakturaoppdateringsprosessen er en oppdatering av finanstransaksjonen, er oppdateringsprosessen for følgeseddelen den fysiske oppdateringen av lagerposten. Denne prosessen utfører med andre ord endringene i beholdningen. Når det gjelder returer, implementeres trinnene som er tilordnet til disposisjonshandlingen, når følgeseddelen oppdateres Når du genererer følgeseddelen, oppstår følgende hendelser:
@@ -256,8 +255,8 @@ Selv om siden **Returordre** inneholder informasjonen og handlingene som kreves 
 
 ### <a name="credit-correction"></a>Kreditrettelse
 
-Som en del av faktureringsprosessen, kan du kontrollere at eventuelle tilleggsgebyrer er riktige. Hvis du vil at finansposteringer skal bli korrigeringer (Storno), bør du vurdere å bruke alternativet **Kreditrettelse** i kategorien **Annet** på siden **Postering av faktura**, når du bokfører fakturaen eller kreditnotaen. 
->[Obs!] Som standard er alternativet **Kreditrettelse** aktivert hvis alternativet **Kreditnota som rettelse** på siden **Kundeparametere** har blitt aktivert. Vi anbefaler imidlertid at du ikke posterer returer med Storno.
+Som en del av faktureringsprosessen, kan du kontrollere at eventuelle tilleggsgebyrer er riktige. Hvis du vil at finansposteringer skal bli korrigeringer (Storno), bør du vurdere å bruke alternativet **Kreditrettelse** i fanen **Annet** på siden **Postering av faktura**, når du bokfører fakturaen eller kreditnotaen. 
+>Obs! Som standard er alternativet **Kreditrettelse** aktivert hvis alternativet **Kreditnota som rettelse** på siden **Kundeparametere** har blitt aktivert. Vi anbefaler imidlertid at du ikke posterer returer med Storno.
 
 ## <a name="create-intercompany-return-orders"></a>Opprette konserninterne returordrer
 Returordrer kan fullføres mellom to selskaper i organisasjonen. Følgende scenarier støttes:
@@ -311,7 +310,7 @@ Returordren refererer ikke til en kundefaktura. Den returnerte varen krediteres.
 
 ![Returordre refererer ikke til en kundefaktura](./media/SalesReturn09.png)  
 
->[Obs!] Hovedprisen for varen brukes som standardverdi for **Returkostpris**-parameteren. Standardprisen er forskjellig fra kostprisen ved lageravgang. Derfor er implikasjonen at et tap på 3 er påløpt. I tillegg inneholder ikke returordren rabatten som ble gitt til kunden i salgsordren. Derfor oppstår det en overskytende kreditering.
+>Obs! Hovedprisen for varen brukes som standardverdi for **Returkostpris**-parameteren. Standardprisen er forskjellig fra kostprisen ved lageravgang. Derfor er implikasjonen at et tap på 3 er påløpt. I tillegg inneholder ikke returordren rabatten som ble gitt til kunden i salgsordren. Derfor oppstår det en overskytende kreditering.
 
 ### <a name="example-2-credit-correction-is-selected-for-the-return-order"></a>Eksempel 2: Kreditrettelse velges for returordren
 
@@ -319,7 +318,7 @@ Eksempel 2 er den samme som eksempel 1, men **Kreditrettelse**-parameteren velge
 
 ![Returordre der krediteringskorrigering er valg  ](./media/SalesReturn10.png)  
 
->[Obs!] Finansposteringer angis som negative korrigeringer.
+>Obs! Finansposteringer angis som negative korrigeringer.
 
 ### <a name="example-3-the-return-order-line-is-created-by-using-the-find-sales-order-function"></a>Eksempel 3: Returordrelinjen opprettes ved hjelp av funksjonen Søk etter salgsordre.
 
@@ -327,10 +326,7 @@ I dette eksemplet opprettes returordrelinjen ved hjelp av funksjonen **Søk ette
 
 ![Returordrelinje som opprettes ved hjelp av funksjonen Søk etter salgsordre  ](./media/SalesReturn11.png)  
 
->[Obs!] **Rabatt** og **Returkostpris** er riktig angitt. Derfor oppstår derfor en nøyaktig tilbakeføring av kundefakturaen.
+>Obs! **Rabatt** og **Returkostpris** er riktig angitt. Derfor oppstår derfor en nøyaktig tilbakeføring av kundefakturaen.
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

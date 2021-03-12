@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: WHSDispositionTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6d84699e8e4323792ac67b69236d264e33eeaf28
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: b7c98526423b28fcb6c4e00a9f2cfd84d5a9119e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434795"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977019"
 ---
 # <a name="set-up-dispositions-codes"></a>Definere disposisjonskoder
 
@@ -31,7 +30,7 @@ ms.locfileid: "4434795"
 Denne prosedyren fokuserer på oppsettet for en disposisjonskode som kan brukes på en mobil enhet for mottaksprosessen for returordren. Disposisjonskoder er en samling regler som kan brukes når varer mottas. Når du arbeidet bruker en mobil enhet for å motta varer som har blitt skadet, må brukeren for eksempel skanne en disposisjonskode for skadede elementer. Beholdningsstatusen for mottatte varer, arbeidsmalen og lokasjonsdirektivet kan beregnes fra den skannede disposisjonskoden. For mottaksprosessen for bestilling og ferdigmeldingsprosessen for produksjonsordren er bruk av en disposisjonskode valgfritt. Hvis varene er registrert ved hjelp av en mobil enhet for mottaksprosessen for salgsordreretur, er bruken av disposisjonskoden obligatorisk.  Denne veiledningen ble opprettet med demonstrasjonsdatafirmaet USMF. Denne fremgangsmåten er ment for lagersjef. 
 
 1. Gå til Lagerstyring > Oppsett > Mobilenhet > Disposisjonskoder.
-2. Klikk Ny.
+2. Klikk på Ny.
     * Opprett en ny disposisjonskode som skal brukes for kundereturer.  
 3. Skriv inn en verdi i Disposisjonskode-feltet.
 4. Velg en beholdningsstatus i Beholdningsstatus-feltet der det er lagerblokkering.
@@ -41,6 +40,3 @@ Denne prosedyren fokuserer på oppsettet for en disposisjonskode som kan brukes 
 6. Skriv inn en verdi i Returdisposisjonskode-feltet.
     * Returdisposisjonskoden bestemmer resten av ordrereturprosessen for varene som er registrert. Kunden skal motta en kreditnota i dette eksemplet. Legg til en disposisjonskode for returer som inneholder en kredithandling.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

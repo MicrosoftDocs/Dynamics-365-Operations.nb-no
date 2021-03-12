@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSParameters, ProdParameters, whswavetablecreatenew, WHSWaveTable, WHSWaveAttributes, WHSKanbanWaveTable, WHSWaveTableListPage, WHSKanbanWaveTableListPage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: aa193f6d62613893f9d5da4351d43a810dbf1596
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: e22816b33739141fbcd188d631a07313db415959
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434796"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977294"
 ---
 # <a name="configure-wave-processing"></a>Konfigurere bølgebehandling
 
@@ -46,14 +45,14 @@ Denne veiledningen beskriver hvordan du definerer vilkår som bestemmer hvilket 
 
     - Bølgemalmetodene lar deg kontrollere rekkefølgen for aktiviteter som hver bølge går gjennom når den behandles. Du kan for eksempel ha en metode for etterfylling for bølge. Når du legger til en metode, vises den automatisk på riktig sted i trinnrekkefølgen. Hvis du har angitt Ja for alternativet Automatiser frigivelse av etterfyllingsarbeid, må du legge til etterfyllingsmetoden her.  
     - Bølgeattributter fungerer som filtre for å begrense hva slags varer som kan bruke bølgen. Du kan for eksempel angir en varegruppe.  
-14. Klikk **Lagre**.
+14. Klikk på **Lagre**.
 15. Lukk siden.
 16. Gå til **Lagerstyring > Oppsett > Lagerstyringsparametere**.
 17. Vis delen **Bølgebehandling**.
 18. Angi eller velg en verdi i feltet **Satsvis gruppe for bølgebehandling**.
 19. Sett alternativet **Behandle bølger satsvis** til **Ja**.
 20. Angi et tall i feltet **Vent på lås (ms)**. Angi tiden, i millisekunder, som et tildelingstrinn skal vente på en systemressurs som er låst av et annet tildelingstrinn. Når denne tiden overskrides, behandles ikke på bølgen, og det vises en feilmelding.  
-21. Klikk **Lagre**.
+21. Klikk på **Lagre**.
 22. Lukk siden.
 23. Gå til **Navigasjonsrute > Moduler > Produksjonskontroll > Oppsett > Parametere for produksjonskontroll**.
 24. Velg et alternativ i feltet **Frigi til lager**.
@@ -61,6 +60,3 @@ Denne veiledningen beskriver hvordan du definerer vilkår som bestemmer hvilket 
 Når det gjelder salgsordrer og Kanban-bestillinger, må beholdning reserveres før ordren frigis til lageret. Hvis ikke, varer eller tildelingslinjer kan ikke behandles i en Bølge. For produksjonsordrer kan du også velge Tillat delvis reservasjon. Dette er for eksempel nyttig hvis du har materialene du trenger for å starte produksjon, og du kan deretter vente til tilleggsmaterialene bli tilgjengelige for å fullføre prosessen. Hvis du velger dette alternativet, må du gjenta prosessen med frigivelse til lager manuelt når tilleggsmaterialene flere blir tilgjengelige.  
 25. Lukk siden.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

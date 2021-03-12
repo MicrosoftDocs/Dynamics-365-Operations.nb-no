@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSRFMenuItemCycleCount, WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSWorkTemplateTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 39a256a5a88a6d70373d6e23f1f380da6791f418
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 0778cc7c1703dcfd5ea77979aafc99f4f040830d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434741"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977144"
 ---
 # <a name="define-partial-location-cycle-counting-process"></a>Definere delvis prosess for syklustelling for lokasjon  
 
@@ -33,7 +32,7 @@ Når du bruker Bla antall planer du oppretter opptelling, kan du lede faktiske o
 ## <a name="create-a-cycle-counting-work-template"></a>Opprette en mal for syklustellingsarbeid
 1. Gå til Lagerstyring > Oppsett > Arbeid > Arbeidsmaler.
 2. Velg "Syklustelling" i feltet Arbeidsordretype.
-3. Klikk Ny.
+3. Klikk på Ny.
 4. Angi et nummer i Sekvensnummer-feltet.
     * Sorteringsrekkefølgen er fra det laveste tallet til det høyeste tallet. Verdien må være over 0 (null).  
 5. Merk den valgte raden i listen.
@@ -41,38 +40,35 @@ Når du bruker Bla antall planer du oppretter opptelling, kan du lede faktiske o
 7. Skriv inn en verdi i feltet Beskrivelse av arbeidsmal.
 8. Angi eller velg en verdi i feltet ID for arbeidsutvalg.
 9. Angi et tall i Arbiesdprioritet-feltet.
-10. Klikk Lagre.
-11. Klikk Ny.
+10. Klikk på Lagre.
+11. Klikk på Ny.
 12. Merk den valgte raden i listen.
 13. Velg Opptelling i Arbeidstype-feltet.
 14. Angi eller velg en verdi i feltet Arbeidsklasse-ID.
-15. Klikk Lagre.
-16. Klikk Arbeidslinjeinndelinger.
-17. Klikk Ny.
+15. Klikk på Lagre.
+16. Klikk på Arbeidslinjeinndelinger.
+17. Klikk på Ny.
 18. Angi et nummer i Sekvensnummer-feltet.
     * Sorteringsrekkefølgen er fra det laveste tallet til det høyeste tallet. Verdien må være over 0 (null).  
-19. Klikk Lagre.
+19. Klikk på Lagre.
 20. Lukk siden.
 21. Lukk siden.
 
 ## <a name="create-a-cycle-counting-plan"></a>Opprette en syklustellingplan
 1. Gå til Lagerstyring > Oppsett > Syklustelling > Planer for syklustelling.
-2. Klikk Ny.
+2. Klikk på Ny.
 3. Skriv inn en verdi i feltet ID for syklustellingsplan.
 4. Skriv inn en verdi i Beskrivelse-feltet.
 5. Angi et tall i feltet Største antall syklustellinger.
 6. Angi eller velg en verdi i feltet Arbeidsmal.
-7. Klikk Ny.
+7. Klikk på Ny.
 8. Angi et nummer i Sekvensnummer-feltet.
     * Sorteringsrekkefølgen er fra det laveste tallet til det høyeste tallet. Verdien må være over 0 (null).  
 9. Skriv inn en verdi i feltet Beskrivelse.
-10. Klikk Lagre.
-11. Klikk Definer produktspørring.
+10. Klikk på Lagre.
+11. Klikk på Definer produktspørring.
 12. Merk den valgte raden i listen.
 13. Angi eller velg en verdi i Kriterier-feltet.
-14. Klikk OK.
+14. Klikk på OK.
 15. Lukk siden.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

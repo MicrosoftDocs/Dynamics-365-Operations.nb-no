@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: WHSLocationProfile, WHSParameters, WHSContainerType, WHSPackProfile, WHSCloseContainerProfile, InventLocationIdLookup, UnitOfMeasureLookup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 67e1e99b479752a027c60a878c57bd35d4219981
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 84a405b2a0afa3541fa0d691d751ecea0ad6606a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434792"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4976994"
 ---
 # <a name="set-up-manual-packing-february-2016--may-2016"></a>Definere manuell pakking (februar 2016 og mai 2016)
 
@@ -33,7 +32,7 @@ Pakkeprosessen lar deg validere og pakke produkter i containere. I denne prosess
 
 ## <a name="set-up-location-profiles"></a>Konfigurer lokasjonsprofiler
 1. Gå til Lagerstyring > Oppsett > Lager > Lokasjonsprofiler.
-2. Klikk Ny.
+2. Klikk på Ny.
     * Lokasjonsprofilen brukes for emballasjestasjoner og inneholder informasjon og regler for en lokasjon.  
 3. Skriv inn en verdi i feltet Profil-ID for lokasjon.
 4. Skriv inn en verdi i Navn-feltet.
@@ -46,14 +45,14 @@ Pakkeprosessen lar deg validere og pakke produkter i containere. I denne prosess
 
 ## <a name="set-up-warehouse-management-parameters"></a>Definere lagerstyringsparametere 
 1. Gå til Lagerstyring > Oppsett > Lagerstyringsparametere.
-2. Klikk kategorien Pakking.
+2. Klikk på fanen Pakking.
 3. Angi eller velg en verdi i feltet Profil-ID for emballasjelokasjoner.
     * Merk lokasjonsprofilen som du vil bruke til pakking.  
 4. Lukk siden.
 
 ## <a name="set-up-container-types"></a>Definere containertyper
 1. Gå til Lagerstyring > Oppsett > Containere > Containertyper.
-2. Klikk Ny.
+2. Klikk på Ny.
     * Du kan definere containertypene som skal brukes. Du kan angi de fysiske målene til containeren, inkludert taravekt, maksimumsvekt, maksimalt volum, lengde, bredde og vekt.  Attributtene er egendefinerte felt som lar deg legge til ekstra dimensjoner for containertypen.     
 3. Skriv inn en verdi i feltet Containertype.
 4. Skriv inn en verdi i feltet Beskrivelse.
@@ -63,12 +62,12 @@ Pakkeprosessen lar deg validere og pakke produkter i containere. I denne prosess
 8. Angi et tall i feltet Lengde.
 9. Angi et tall i feltet Bredde.
 10. Angi et tall i feltet Høyde.
-11. Klikk Lagre.
+11. Klikk på Lagre.
 12. Lukk siden.
 
 ## <a name="set-up-packing-profiles"></a>Definere pakkeprofiler
 1. Gå til Lagerstyring > Oppsett > Pakking > Pakkeprofiler.
-2. Klikk Ny.
+2. Klikk på Ny.
 3. Skriv inn en verdi i feltet Pakkeprofil-ID.
 4. Skriv inn en verdi i feltet Beskrivelse.
 5. Angi eller velg en verdi i feltet Containerlukkingsprofil.
@@ -78,13 +77,13 @@ Pakkeprosessen lar deg validere og pakke produkter i containere. I denne prosess
 7. Angi eller velg en verdi i feltet Containertype.
     * Containertypen brukes som standard når det opprettes en ny container.  
 8. Merk av for Opprett container automatisk ved containerlukking.
-9. Klikk Lagre.
+9. Klikk på Lagre.
 10. Lukk siden.
 
 ## <a name="set-up-container-closing-profiles"></a>Definere containerlukkingsprofiler
 1. Gå til Lagerstyring > Oppsett > Containere > Containerlukkingsprofiler.
     * Containerlukkingsprofil definerer hva som skjer når en container lukkes. Du kan definere flere containerlukkingsprofiler.       
-2. Klikk Ny.
+2. Klikk på Ny.
 3. Angi en verdi i feltet Containerlukkingsprofil-ID.
 4. Skriv inn en verdi i feltet Beskrivelse.
 5. Velg et alternativ i feltet Manifest den.
@@ -93,8 +92,5 @@ Pakkeprosessen lar deg validere og pakke produkter i containere. I denne prosess
 7. Angi eller velg en verdi i feltet Standardlokasjon for endelig forsendelse.
     * Dette blir lokasjonen der produkter flyttes til når containere lukkes. Denne lokasjonen må ha en lokasjonsprofil som er definert for lagerparametere.  
 8. Angi eller velg en verdi i feltet Vektenhet.
-9. Klikk Lagre.
+9. Klikk på Lagre.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

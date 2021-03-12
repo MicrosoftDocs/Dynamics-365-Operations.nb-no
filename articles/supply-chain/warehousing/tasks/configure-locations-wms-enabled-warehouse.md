@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: InventLocation, WHSLocationFormat, WHSLocationType, WHSLocationProfile, WHSParameters, WHSZoneGroup, WHSZone, WHSLocationBuild, WHSLocation, WHSPackSizeCategory, WHSLocationLimit, WHSInventFixedLocation, WMSLocationIdLookup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 31f016c4c8b8b08139836336ac38196fbd1fba6f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 59835d28afc6f855f109cf9b875624f8fd11191a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434275"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977320"
 ---
 # <a name="configure-locations-in-a-wms-enabled-warehouse"></a>Konfigurere lokasjoner i et WMS-aktivert lager
 
@@ -60,7 +59,7 @@ Denne veiledningen viser deg hvordan du konfigurerer lokasjonsoppsettet for et n
 16. Klikk på **Ny** i **Detaljer**-delen.
 17. Skriv inn en verdi i feltet **Segmentbeskrivelse**.
 18. Angi et tall i feltet **Lengde**.
-19. Klikk **Lagre**.
+19. Klikk på **Lagre**.
 20. Lukk siden.
 
 ## <a name="define-location-types"></a>Definere lokasjonstyper
@@ -77,26 +76,26 @@ Denne veiledningen viser deg hvordan du konfigurerer lokasjonsoppsettet for et n
 4. Skriv inn en verdi i **Navn**-feltet.
 5. Klikk på rullegardinknappen i feltet **Lokasjonsformat** for å åpne oppslaget.
 6. Finn og velg ønsket post i listen.
-7. Klikk koblingen i den valgte raden i listen.
+7. Klikk på koblingen i den valgte raden i listen.
 8. Klikk på rullegardinknappen i feltet **Lokasjonstype** for å åpne oppslaget.
 9. Finn og velg ønsket post i listen.
-10. Klikk koblingen i den valgte raden i listen.
+10. Klikk på koblingen i den valgte raden i listen.
 11. Merk av eller fjern merket i boksen **Tillat kombinerte lagerstatuser**. Aktiver dette alternativet hvis du vil tillate blandede lagerstatusverdier i lokasjoner som skal grupperes etter denne lokasjonsprofilen. 
 12. Merk av eller fjern merket i boksen **Overstyr regler for partidager**. Aktiver dette alternativet for å overstyre regelen for hvor mange dager utløpsdatoene for beholdningsparti kan være forskjellig, for å tillate blanding av lagerpartier som ikke overholder denne regelen.  
 13. Merk av eller fjern merket i boksen **Tillat syklustelling**. Aktiver dette alternativet hvis du vil tillate syklustellingbehandling i alle lokasjoner som skal grupperes etter denne lokasjonsprofilen. 
-14. Vis eller skjul delen **Dimensjoner**. Med kategorien Dimensjoner kan du definere parametere og metoder for å aktivere nøyaktige beregninger av belastningskapasitet i hver enkelt lokasjon.  
+14. Vis eller skjul delen **Dimensjoner**. Med fanen Dimensjoner kan du definere parametere og metoder for å aktivere nøyaktige beregninger av belastningskapasitet i hver enkelt lokasjon.  
 15. Lukk siden.
 
 ## <a name="enable-warehouse-management-parameters"></a>Aktivere parametere for lagerstyring
 1. Gå til **Navigasjonsrute > Moduler > Lagerstyring > Oppsett > Lagerstyringsparametere**. Hvis du skal kunne behandle lagerarbeid, må du angi parametere for brukerlokasjonsprofilen, oppsamlingslokasjonstypen og den endelige leveringslokasjonstypen. Så snart den utgående prosessen slutter ved den endelige forsendelseslokasjonstypen som du definerer, oppdateres de relaterte utgående transaksjonene til Plukket.
 2. Vis delen **Lokasjonsprofiler**.
 3. Klikk på rullegardinknappen i feltet **Brukerlokasjon** for å åpne oppslaget.
-4. Klikk koblingen i den valgte raden i listen.
+4. Klikk på koblingen i den valgte raden i listen.
 5. Vis delen **Lokasjonstyper**.
 6. Klikk på rullegardinknappen i feltet **Oppsamlingslokasjonstype** for å åpne oppslaget.
-7. Klikk koblingen i den valgte raden i listen.
+7. Klikk på koblingen i den valgte raden i listen.
 8. Klikk på rullegardinknappen i feltet **Endelig leveringslokasjonstype** for å åpne oppslaget.
-9. Klikk koblingen i den valgte raden i listen.
+9. Klikk på koblingen i den valgte raden i listen.
 10. Lukk siden.
 
 ## <a name="define-warehouse-zone-groups"></a>Definere lagersonegrupper
@@ -113,20 +112,20 @@ Denne veiledningen viser deg hvordan du konfigurerer lokasjonsoppsettet for et n
 4. Skriv inn en verdi i feltet **Sonenavn**.
 5. Klikk på rullegardinknappen i feltet **ID for sonegruppe** for å åpne oppslaget.
 6. Finn og velg ønsket post i listen.
-7. Klikk koblingen i den valgte raden i listen.
+7. Klikk på koblingen i den valgte raden i listen.
 8. Lukk siden.
 
 ## <a name="create-locations-using-the-location-setup-wizard"></a>Opprette lokasjoner ved hjelp av veiviseren for lokasjonsoppsett
 1. Gå til **Navigasjonsrute > Moduler > Lagerstyring > Oppsett > Lager > Veiviser for lokasjonsoppsett**.
-2. Klikk rullegardinknappen i **Lager**-feltet for å åpne oppslaget.
+2. Klikk på rullegardinknappen i **Lager**-feltet for å åpne oppslaget.
 3. Finn og velg ønsket post i listen.
-4. Klikk koblingen i den valgte raden i listen.
+4. Klikk på koblingen i den valgte raden i listen.
 5. Klikk på rullegardinknappen i feltet **Sone-ID** for å åpne oppslaget.
 6. Finn og velg ønsket post i listen.
-7. Klikk koblingen i den valgte raden i listen.
+7. Klikk på koblingen i den valgte raden i listen.
 8. Klikk på rullegardinknappen i feltet **Profil-ID for lokasjon** for å åpne oppslaget.
 9. Finn og velg ønsket post i listen.
-10. Klikk koblingen i den valgte raden i listen.
+10. Klikk på koblingen i den valgte raden i listen.
 11. Merk den valgte raden i listen.
 12. Angi et tall i feltet **Fra-nummer**. Feltene Fra-nummer og Til-nummer definerer hvor mange lokasjoner som skal opprettes. Hvis du for eksempel angir Fra-nummer 1 og Til-nummer 3 for alle fire linjer i lokasjonsformatet, opprettes 81 lokasjoner (3x3x3x3).   
 13. Angi et tall i feltet **Til-nummer**.
@@ -139,7 +138,7 @@ Denne veiledningen viser deg hvordan du konfigurerer lokasjonsoppsettet for et n
 20. Finn og velg ønsket post i listen.
 21. Angi et tall i feltet **Fra-nummer**.
 22. Angi et tall i feltet **Til-nummer**.
-23. Klikk Opprett.
+23. Klikk på Opprett.
 
 ## <a name="create-locations-manually"></a>Opprette lokasjoner manuelt
 1. Gå til **Lagerstyring > Oppsett > Lager > Lokasjoner**. Manuell opprettelse av lokasjoner i et lager kan gjøres enkelt. Lokasjonens navn og lokasjonsprofil-ID-en er obligatoriske verdier. 
@@ -163,7 +162,7 @@ Denne veiledningen viser deg hvordan du konfigurerer lokasjonsoppsettet for et n
 4. Skriv inn en verdi i feltet **Profil-ID for lokasjon**.
 5. Skriv inn en verdi i feltet **ID for kategori for pakkestørrelse**.
 6. Angi et tall i **Antall**-feltet.
-7. Klikk **Lagre**.
+7. Klikk på **Lagre**.
 8. Lukk siden.
 
 ## <a name="define-fixed-picking-locations"></a>Definere faste plukklokasjoner
@@ -172,9 +171,6 @@ Denne veiledningen viser deg hvordan du konfigurerer lokasjonsoppsettet for et n
 3. Skriv inn en verdi i **Varenummer**-feltet.
 4. Skriv inn en verdi i **Lager**-feltet.
 5. Klikk på rullegardinknappen i **Lokasjon**-feltet for å åpne oppslaget.
-6. Klikk koblingen i den valgte raden i listen.
+6. Klikk på koblingen i den valgte raden i listen.
 7. Lukk siden.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

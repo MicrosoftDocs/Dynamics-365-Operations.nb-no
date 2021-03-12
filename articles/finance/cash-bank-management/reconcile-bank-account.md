@@ -10,19 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Operations, Core
 ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c77d08d5877ab27f9b6549a5b2a666150938fc08
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1abc86aa5c3863eba34f726b543792408a542383
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446469"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4976372"
 ---
 # <a name="reconcile-a-bank-account"></a>Avstemme en bankkonto
 
@@ -71,6 +70,3 @@ Med funksjonen Avbryt avstemming av bankkontoutdrag kan du avbryte avstemming av
 Avstemminger av bankkontoutdrag kan bare avbrytes i den kronologiske rekkefølgen de ble angitt. Når en avstemming av et bankkontoutdrag avbrytes, tilbakeføres nye transaksjoner og rettelser, og alle andre transaksjoner merkes som ikke avstemt.
  
 Hvis du vil annullere avstemming av bankkontoutdrag, velger du bankkontoutdraget og velger **Bankkontoutdrag > Avbryt bankavstemming**. På siden **Avbryt bankavstemming** oppgir du **Årsakskode**, **Årsakskommentar** og **Annulleringsdato**. Velg **OK** for å starte annulleringen. Legg merke til at annulleringsdatoen for bankkontoutdraget må være på eller etter bankkontoutdragsdatoen. Etter at avstemmingen av bankkontoutdraget er annullert, blir feltet **Annulleringsdato** for bankkontoutdraget oppdatert med den angitte **annulleringsdatoen**. Velg **Transaksjoner**-knappen for å vise transaksjonene som avstemmingen ble annullert for.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

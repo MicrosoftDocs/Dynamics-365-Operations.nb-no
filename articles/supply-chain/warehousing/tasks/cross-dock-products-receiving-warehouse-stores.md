@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: RetailBuyersPushPerPackage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 033d4f72b626130c144faff30fe0d35349b26c6d
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: ac93806bc85be92840548e160ddf803e63adbbc4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434794"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4977194"
 ---
 # <a name="cross-dock-products-from-receiving-warehouse-to-stores"></a>Direkteoverføre produkter fra mottakende lager til butikker
 
@@ -32,9 +31,9 @@ Denne prosedyren hjelper deg gjennom trinnene med å opprette og behandle en dir
 
 1. Gå til Alle bestillinger.
 2. Velg en bestilling fra listen og klikk koblingen for å åpne den.
-3. Klikk Retail og Commerce i handlingsruten.
-4. Klikk Direkteoverføring.
-5. Klikk Rediger
+3. Klikk på Retail og Commerce i handlingsruten.
+4. Klikk på Direkteoverføring.
+5. Klikk på Rediger
     * Kategorien kan brukes til å filtrere elementene i Linjer-delen.  
 6. Finn og velg ønsket post i listen.
 7. Skriv inn en verdi i feltet Direkteoverføringsantall for å angi hvor mye av antallet som kjøpes av det valgte produktet, som skal distribueres.
@@ -43,12 +42,9 @@ Denne prosedyren hjelper deg gjennom trinnene med å opprette og behandle en dir
     * Du kan velge å bruke ulike regler for distribusjon for de andre typene.  
 10. Angi eller velg en verdi i feltet Etterfyllingshierarki.
 11. Velg Ja i feltet Respekter sortimenter.
-12. Klikk Beregn antall.
-13. Klikk Opprett ordre.
-14. Klikk Ja.
+12. Klikk på Beregn antall.
+13. Klikk på Opprett ordre.
+14. Klikk på Ja.
 15. Finn og velg et lager som mottok produktene, i listen.
-16. Klikk Ordre for å vise ordrer som ble opprettet for det valgte lageret.
+16. Klikk på Ordre for å vise ordrer som ble opprettet for det valgte lageret.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
