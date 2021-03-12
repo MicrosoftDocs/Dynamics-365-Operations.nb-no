@@ -11,40 +11,39 @@ ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 27ff3784074a36d073930ba68c8dec8b1121356e
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: d0cb0a99b926e1e129c5f7a174cac18e3b93aafa
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434812"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967011"
 ---
-# <a name="add-variant-products-to-purchase-orders-using-variant-weights"></a><span data-ttu-id="0ce4f-103">Legge til variantprodukter i bestillinger ved hjelp av variantvekt</span><span class="sxs-lookup"><span data-stu-id="0ce4f-103">Add variant products to purchase orders using variant weights</span></span>
+# <a name="add-variant-products-to-purchase-orders-using-variant-weights"></a><span data-ttu-id="7e6b6-103">Legge til variantprodukter i bestillinger ved hjelp av variantvekt</span><span class="sxs-lookup"><span data-stu-id="7e6b6-103">Add variant products to purchase orders using variant weights</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="0ce4f-104">Denne prosedyren hjelper deg gjennom trinnene med å bruke variantvekter for å fylle ut bestillingslinjer automatisk for hver variant av et produkt.</span><span class="sxs-lookup"><span data-stu-id="0ce4f-104">This procedure walks through the steps for using variant weights to auto populate purchase order lines for each variant of a product.</span></span> <span data-ttu-id="0ce4f-105">Når du velger antallet for produktet du vil kjøpe, opprettes bestillingslinjer for alle variantene av produktet med foreslåtte antall basert på vekten som er konfigurert for produktvariantene.</span><span class="sxs-lookup"><span data-stu-id="0ce4f-105">When you select the quantity of the product you want to purchase, purchase order lines are created for all the variants of the product with suggested quantities based on the weights configured on the product variants.</span></span> <span data-ttu-id="0ce4f-106">Denne prosedyren inkluderer ikke trinn for å konfigurere vektverdier for produktdimensjoner og produktvarianter.</span><span class="sxs-lookup"><span data-stu-id="0ce4f-106">This procedure doesn't include steps to configure weight values on product dimensions and product variants.</span></span> <span data-ttu-id="0ce4f-107">Denne prosedyren bruker firmaet USRT i demonstrasjonsdataene.</span><span class="sxs-lookup"><span data-stu-id="0ce4f-107">This procedure uses the USRT company in demo data.</span></span>
+<span data-ttu-id="7e6b6-104">Denne prosedyren hjelper deg gjennom trinnene med å bruke variantvekter for å fylle ut bestillingslinjer automatisk for hver variant av et produkt.</span><span class="sxs-lookup"><span data-stu-id="7e6b6-104">This procedure walks through the steps for using variant weights to auto populate purchase order lines for each variant of a product.</span></span> <span data-ttu-id="7e6b6-105">Når du velger antallet for produktet du vil kjøpe, opprettes bestillingslinjer for alle variantene av produktet med foreslåtte antall basert på vekten som er konfigurert for produktvariantene.</span><span class="sxs-lookup"><span data-stu-id="7e6b6-105">When you select the quantity of the product you want to purchase, purchase order lines are created for all the variants of the product with suggested quantities based on the weights configured on the product variants.</span></span> <span data-ttu-id="7e6b6-106">Denne prosedyren inkluderer ikke trinn for å konfigurere vektverdier for produktdimensjoner og produktvarianter.</span><span class="sxs-lookup"><span data-stu-id="7e6b6-106">This procedure doesn't include steps to configure weight values on product dimensions and product variants.</span></span> <span data-ttu-id="7e6b6-107">Denne prosedyren bruker firmaet USRT i demonstrasjonsdataene.</span><span class="sxs-lookup"><span data-stu-id="7e6b6-107">This procedure uses the USRT company in demo data.</span></span>
 
-1. <span data-ttu-id="0ce4f-108">Gå til Leverandører > Bestillinger > Alle bestillinger.</span><span class="sxs-lookup"><span data-stu-id="0ce4f-108">Go to Accounts payable > Purchase orders > All purchase orders.</span></span>
-2. <span data-ttu-id="0ce4f-109">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="0ce4f-109">Click New.</span></span>
-3. <span data-ttu-id="0ce4f-110">Klikk rullegardinknappen i Leverandørkonto-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="0ce4f-110">In the Vendor account field, click the drop-down button to open the lookup.</span></span>
-4. <span data-ttu-id="0ce4f-111">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="0ce4f-111">In the list, click the link in the selected row.</span></span>
-5. <span data-ttu-id="0ce4f-112">Aktiver/deaktiver utvidelsen av delen Generelt.</span><span class="sxs-lookup"><span data-stu-id="0ce4f-112">Toggle the expansion of the General section.</span></span>
-6. <span data-ttu-id="0ce4f-113">Klikk rullegardinknappen i Område-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="0ce4f-113">In the Site field, click the drop-down button to open the lookup.</span></span>
-7. <span data-ttu-id="0ce4f-114">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="0ce4f-114">In the list, click the link in the selected row.</span></span>
-8. <span data-ttu-id="0ce4f-115">Klikk rullegardinknappen i Lager-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="0ce4f-115">In the Warehouse field, click the drop-down button to open the lookup.</span></span>
-9. <span data-ttu-id="0ce4f-116">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="0ce4f-116">In the list, find and select the desired record.</span></span>
-10. <span data-ttu-id="0ce4f-117">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="0ce4f-117">In the list, click the link in the selected row.</span></span>
-11. <span data-ttu-id="0ce4f-118">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="0ce4f-118">Click OK.</span></span>
-12. <span data-ttu-id="0ce4f-119">Aktiver/deaktiver utvidelsen av delen Linjedetaljer.</span><span class="sxs-lookup"><span data-stu-id="0ce4f-119">Toggle the expansion of the Line details section.</span></span>
-13. <span data-ttu-id="0ce4f-120">Klikk kategorien Varianter.</span><span class="sxs-lookup"><span data-stu-id="0ce4f-120">Click the Variants tab.</span></span>
-14. <span data-ttu-id="0ce4f-121">Klikk Legg til linje.</span><span class="sxs-lookup"><span data-stu-id="0ce4f-121">Click Add line.</span></span>
-15. <span data-ttu-id="0ce4f-122">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="0ce4f-122">In the list, mark the selected row.</span></span>
-16. <span data-ttu-id="0ce4f-123">Skriv inn 0140 i Varenummer-feltet.</span><span class="sxs-lookup"><span data-stu-id="0ce4f-123">In the Item number field, type '0140'.</span></span>
-17. <span data-ttu-id="0ce4f-124">Sett verdien for Antall til 1000.</span><span class="sxs-lookup"><span data-stu-id="0ce4f-124">Set Quantity to '1000'.</span></span>
-18. <span data-ttu-id="0ce4f-125">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="0ce4f-125">Click Save.</span></span>
+1. <span data-ttu-id="7e6b6-108">Gå til Leverandører > Bestillinger > Alle bestillinger.</span><span class="sxs-lookup"><span data-stu-id="7e6b6-108">Go to Accounts payable > Purchase orders > All purchase orders.</span></span>
+2. <span data-ttu-id="7e6b6-109">Klikk på Ny.</span><span class="sxs-lookup"><span data-stu-id="7e6b6-109">Click New.</span></span>
+3. <span data-ttu-id="7e6b6-110">Klikk på rullegardinknappen i Leverandørkonto-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="7e6b6-110">In the Vendor account field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="7e6b6-111">Klikk på koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="7e6b6-111">In the list, click the link in the selected row.</span></span>
+5. <span data-ttu-id="7e6b6-112">Aktiver/deaktiver utvidelsen av delen Generelt.</span><span class="sxs-lookup"><span data-stu-id="7e6b6-112">Toggle the expansion of the General section.</span></span>
+6. <span data-ttu-id="7e6b6-113">Klikk på rullegardinknappen i Område-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="7e6b6-113">In the Site field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="7e6b6-114">Klikk på koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="7e6b6-114">In the list, click the link in the selected row.</span></span>
+8. <span data-ttu-id="7e6b6-115">Klikk på rullegardinknappen i Lager-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="7e6b6-115">In the Warehouse field, click the drop-down button to open the lookup.</span></span>
+9. <span data-ttu-id="7e6b6-116">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="7e6b6-116">In the list, find and select the desired record.</span></span>
+10. <span data-ttu-id="7e6b6-117">Klikk på koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="7e6b6-117">In the list, click the link in the selected row.</span></span>
+11. <span data-ttu-id="7e6b6-118">Klikk på OK.</span><span class="sxs-lookup"><span data-stu-id="7e6b6-118">Click OK.</span></span>
+12. <span data-ttu-id="7e6b6-119">Aktiver/deaktiver utvidelsen av delen Linjedetaljer.</span><span class="sxs-lookup"><span data-stu-id="7e6b6-119">Toggle the expansion of the Line details section.</span></span>
+13. <span data-ttu-id="7e6b6-120">Klikk på fanen Varianter.</span><span class="sxs-lookup"><span data-stu-id="7e6b6-120">Click the Variants tab.</span></span>
+14. <span data-ttu-id="7e6b6-121">Klikk på Legg til linje.</span><span class="sxs-lookup"><span data-stu-id="7e6b6-121">Click Add line.</span></span>
+15. <span data-ttu-id="7e6b6-122">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="7e6b6-122">In the list, mark the selected row.</span></span>
+16. <span data-ttu-id="7e6b6-123">Skriv inn 0140 i Varenummer-feltet.</span><span class="sxs-lookup"><span data-stu-id="7e6b6-123">In the Item number field, type '0140'.</span></span>
+17. <span data-ttu-id="7e6b6-124">Sett verdien for Antall til 1000.</span><span class="sxs-lookup"><span data-stu-id="7e6b6-124">Set Quantity to '1000'.</span></span>
+18. <span data-ttu-id="7e6b6-125">Klikk på Lagre.</span><span class="sxs-lookup"><span data-stu-id="7e6b6-125">Click Save.</span></span>
 
