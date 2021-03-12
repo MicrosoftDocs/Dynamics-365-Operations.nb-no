@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2c644f118e0bdb46b296cec7e4a3ea89031f2d52
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8a9f8f519c54ffe4f1a2a44da51ac5d97c56182a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434261"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4992226"
 ---
 # <a name="assign-a-product-lifecycle-state-to-a-released-product-master"></a>Tilordne en produktlivssyklustilstand til en frigitt produktstandard
 
@@ -37,16 +36,16 @@ Denne fremgangsmåten viser hvordan du tilordner en produktlivssyklustilstand ti
 > En produktstandard har produktets undertype Produktstandard.  
 
 ## <a name="update-the-lifecycle-state"></a>Oppdatere livssyklustilstanden
-1. Klikk Rediger.
+1. Klikk på Rediger.
 2. Angi eller velg en verdi i feltet Livssyklustilstand for produkt.
-3. Klikk Lagre.
-4. Klikk Ja.
+3. Klikk på Lagre.
+4. Klikk på Ja.
 
 > [!NOTE]
 > Hvis Ja er valgt, oppdateres også alle de tilknyttede frigitte produktvariantene som har samme opprinnelige status som den frigitte produktstandarden, til den nye produktlivssyklustilstanden. Hvis Nei er valgt, beholder alle varianter den faktiske tilstanden. Varianter som har en annen produktlivssyklustilstand fra den frigitte produktstandarden, blir ikke oppdatert.  
 
 ## <a name="verify-the-lifecycle-state-of-the-variants"></a>Kontrollere livssyklustilstanden for variantene
-1. Klikk Frigitte produktvarianter.
+1. Klikk på Frigitte produktvarianter.
 
 > [!NOTE]
 > Vær oppmerksom på at alle varianter har arvet den valgte livssyklustilstanden fra den frigitte produktstandarden.  
@@ -54,6 +53,3 @@ Denne fremgangsmåten viser hvordan du tilordner en produktlivssyklustilstand ti
 2. Merk den valgte raden i listen.
 3. Angi eller velg en verdi i feltet Livssyklustilstand for produkt.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

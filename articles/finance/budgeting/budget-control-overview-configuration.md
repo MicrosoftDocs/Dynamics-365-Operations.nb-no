@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: BudgetControlConfiguration
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 60493
 ms.assetid: be964167-43bc-431d-9adb-48bff32d68d5
 ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 670e6be595fb891408b1b0804c68a41650b0da0b
-ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
+ms.openlocfilehash: 4b371e6c87c65e707bf1468eb8df4be892f7750d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4446614"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4990952"
 ---
 # <a name="budget-control-overview"></a>Oversikt over budsjettkontroll
 
@@ -127,6 +126,3 @@ Når budsjettkontroll er aktivert, får brukerne budsjettkontrolladvarsel og fei
 Fra denne siden kan brukere drille ned i siden **Statistikk for budsjettkontroll etter periode** for å vise budsjettdetaljer for tilgjengelighet og reserveringer for en valgt kombinasjon av budsjettkontrolldimensjon. Brukere kan også gå til siden **Statistikk for budsjettkontroll** for å vise budsjetttilgjengeligheten for alle kombinasjonene av finansdimensjoner som brukes i budsjettkontroll. 
 
 Hvis budsjettkontroll er aktivert for bestillinger, kan budsjettansvarlig bruke arbeidsområdet **Finansbudsjetter og prognoser** for å gå gjennom køen av alle ubekreftede bestillinger som har advarsler og feil. Hvis det er konfigurert tillatelse for budsjettoverskridelse for budsjettansvarlig, kan bestillingene bekreftes direkte i arbeidsområdet.    
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

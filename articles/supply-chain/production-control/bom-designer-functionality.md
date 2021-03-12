@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: BOMDesigner, BOMDesignerSetup, BOMDesignerFilterDialog, BOMDesignerBOMVersion, BOMChangeLine
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 20981
 ms.assetid: 2b92eec1-d28c-4965-9086-939c77b3c62b
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2e845b05d77701191a267de45354c3da25bd7699
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 07d74d9e02049447c69edf56eb6860a2cb6dc5c9
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434454"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4991896"
 ---
 # <a name="bom-designer-functionality"></a>Funksjonalitet for stykklisteutforming
 
@@ -34,7 +33,7 @@ Dette emnet beskriver hvordan du kan bruke siden Stykklisteutforming til å utfo
 
 Når du åpner siden **Stykklisteutforming** fra siden **Frigitte produkter**, viser den hierarkiet for stykklistene som er aktive og godkjente for den valgte varen, standard bestillingsområde for varen og den faktiske datoen.  
 
-Klikk **Filter** for å endre det første utvalget i visningen. Ved å angi visningsprinsippet **Valgte/aktive eller Valgte**, kan du velge enkelte versjoner av stykklisten eller ruten som skal brukes i visningen. Du kan velge ikke-godkjente og ikke-aktive stykklisteversjoner som skal vises eller vedlikeholdes i stykklisteutforming.  
+Klikk på **Filter** for å endre det første utvalget i visningen. Ved å angi visningsprinsippet **Valgte/aktive eller Valgte**, kan du velge enkelte versjoner av stykklisten eller ruten som skal brukes i visningen. Du kan velge ikke-godkjente og ikke-aktive stykklisteversjoner som skal vises eller vedlikeholdes i stykklisteutforming.  
 
 **Obs!**  Hvis du åpne stykklisteutformingen fra listesiden **Stykklister**, viser ikke ruteinformasjon. Valg av en stykkliste- eller ruteversjon er en egenskap for stykkliste- og ruteversjonen, og gjelder for alle forekomster av stykklisteutformingen.  
 
@@ -110,7 +109,7 @@ Bruk funksjonene **Stykklistelinjer** eller **Stykkliste** til å endre stykklis
 | Stykkliste &gt; Kontroller                      | Valider og kontroller den valgte stykklisten.                                                                      | Denne funksjonen er tilgjengelig når noden som er valgt, er knyttet til en stykklisteversjon.                                                                                                                                                                                                         |
 
 ## <a name="configuring-the-tree-view"></a>Konfigurere trevisningen
-Klikk **Oppsett** for å tilpasse informasjonen som vises i trevisningen i Stykklisteutforming.
+Klikk på **Oppsett** for å tilpasse informasjonen som vises i trevisningen i Stykklisteutforming.
 
 | Feltgruppe | Beskrivelse                                                                                                                                                  |
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -121,6 +120,3 @@ Klikk **Oppsett** for å tilpasse informasjonen som vises i trevisningen i Stykk
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SMAServiceTask
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b433632523bfd64119fda62f8e4b108ff9b5dccd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 14145020572add7fd9f49cf6a6dc2fb3c1f19b03
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434090"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4991796"
 ---
 # <a name="service-tasks-overview"></a>Oversikt over serviceoppgaver
 
@@ -44,7 +43,7 @@ Når du genererer serviceordrer fra en serviceavtale, kan du bruke serviceoppgav
 
 ## <a name="create-a-service-task"></a>Opprette en serviceoppgave
 
-1. Klikk **Servicestyring** \> **Oppsett** \> **Serviceoppgaver**.
+1. Klikk på **Servicestyring** \> **Oppsett** \> **Serviceoppgaver**.
 2. Opprett en ny linje.
 3. Angi service-ID og -beskrivelse.
 
@@ -86,10 +85,7 @@ Når du oppretter serviceordrer automatisk, kan du bruke serviceoppgaver som et 
 
 **Gruppere etter serviceoppgave**
 
-1. Klikk **Servicestyring** \> **Felles** \> **Serviceavtaler** \> **Serviceavtaler**.
-2. I kategorien **Oppsett** velger du **Etter serviceoppgave** i **Kombiner serviceordrer**-feltet.
+1. Klikk på **Servicestyring** \> **Felles** \> **Serviceavtaler** \> **Serviceavtaler**.
+2. I fanen **Oppsett** velger du **Etter serviceoppgave** i **Kombiner serviceordrer**-feltet.
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,9 +1,9 @@
 ---
 title: Oversikt over leverandørfakturaer
-description: Dette emnet inneholder generell informasjon om leverandørfakturaer. Leverandørfakturaer er forespørsler om betaling for produkter og tjenester som er mottatt. Leverandørfakturaer kan representere en faktura for pågående tjenester, eller den kan være basert på bestillinger for bestemte varer og tjenester.
+description: Dette emnet inneholder generell informasjon om leverandørfakturaer.
 author: abruer
 manager: AnnBe
-ms.date: 07/17/2019
+ms.date: 12/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -11,31 +11,30 @@ ms.technology: ''
 ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 13971
 ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d51a5ff2dca764a534ea4bf92c30bcf0bf0a5dad
-ms.sourcegitcommit: 51cd470ee885d12f7d51c66201b092aaa16dfaa6
+ms.openlocfilehash: 0299eb3470f500bf469c3367f1c426715067a5dc
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "4701682"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4993322"
 ---
 # <a name="vendor-invoices-overview"></a>Oversikt over leverandørfakturaer
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet inneholder generell informasjon om leverandørfakturaer. Leverandørfakturaer er forespørsler om betaling for produkter og tjenester som er mottatt. Leverandørfakturaer kan representere en faktura for pågående tjenester, eller den kan være basert på bestillinger for bestemte varer og tjenester.
+Dette emnet inneholder generell informasjon om leverandørfakturaer. Leverandørfakturaer er forespørsler om mottatt betaling for produkter og tjenester. Leverandørfakturaer kan representere en faktura for pågående tjenester, eller den kan være basert på bestillinger for bestemte varer og tjenester.
 
 ## <a name="vendor-invoices"></a>Leverandørfakturaer
 
-En leverandørfaktura fra en bestilling er en faktura som lages når produkter eller tjenester er mottatt i henhold til en bestilling som ble plassert hos en leverandør. Leverandørfakturaen inneholder et hode og én eller flere linjer for varer eller tjenester. En leverandørfaktura fullfører syklusen fra bestilling til produktkvittering og leverandørfaktura.
+En leverandørfaktura fra en bestilling lages når produkter eller tjenester er mottatt i henhold til en bestilling som ble plassert hos en leverandør. Leverandørfakturaen inneholder et hode og én eller flere linjer for varer eller tjenester. En leverandørfaktura fullfører syklusen fra bestilling til produktkvittering og leverandørfaktura.
 
-Selv om noen leverandørfakturaer er koblet til en bestilling, kan også leverandørfakturaer inneholde linjer som ikke samsvarer med bestillingslinjer. Du kan også opprette leverandørfakturaer som ikke er knyttet til noen bestilling. Disse leverandørfakturaene kan representere pågående tjenester, for eksempel en strømregning, og du trenger ikke å referere til en bestilling når du legger dem til.
+Selv om noen leverandørfakturaer er koblet til en bestilling, kan også leverandørfakturaer inneholde linjer som ikke samsvarer med bestillingslinjer. Du kan også opprette leverandørfakturaer som ikke er knyttet til noen bestilling. Disse leverandørfakturaene kan representere pågående tjenester, for eksempel en strømregning. Du trenger ikke å referere til en bestilling når du legger til en pågående tjeneste.
 
 Det finnes flere måter å angi en leverandørfaktura:
 
@@ -48,12 +47,12 @@ Følgende diskusjon inneholder mer informasjon om hvordan du bruker siden **Åpn
 
 ## <a name="understanding-invoice-line-quantities"></a>Forstå fakturalinjeantall
 
-Når du åpner en leverandørfaktura fra en tilknyttet bestilling, opprettes fakturalinjer fra bestillingen. Som standard hentes antallet fra produktkvitteringsantallet. Du kan imidlertid bruke et av følgende standardvalg:
+Når du åpner en leverandørfaktura fra en tilknyttet bestilling, oppretter systemet fakturalinjer fra bestillingen. Som standard henter systemet antallet fra produktkvitteringen. Du kan imidlertid bruke et av følgende standardvalg:
 
-- **Motta nå-antall** – Bruk dette alternativet for delvise leveringer. Standardverdien i feltet **Antall** hentes fra antallet som er angitt i **Motta nå**-feltet på innkjøpsordren.
-- **Bestilt antall** – Bruk dette alternativet for komplette forsendelser. Standardverdien i feltet **Antall** hentes fra antallet som er angitt i **Bestilt**-feltet på innkjøpsordren.
+- **Motta nå-antall** – Bruk dette alternativet for delvise leveringer. Systemet angir standardverdien i **Antall** fra antallet som er angitt i **Motta nå**-feltet på innkjøpsordren.
+- **Bestilt antall** – Bruk dette alternativet for komplette forsendelser. Systemet angir standardverdien i **Antall** fra antallet som er angitt i **Bestilt**-feltet på innkjøpsordren.
 - **Registrert antall** – Bruk dette alternativet hvis varen krever registrering, som angitt på **Varemodellgrupper**-siden. Standardverdien i **Antall**-feltet er det fysiske oppdaterte antallet som er registrert.
-- **Produktkvitteringsantall** – Bruk dette alternativet hvis en produktkvittering allerede er mottatt for ordren. Standardverdien i **Antall**-feltet er hentet fra totalt antall for tilgjengelige produktkvitteringer.
+- **Produktkvitteringsantall** – Bruk dette alternativet hvis en produktkvittering allerede er mottatt for ordren. Systemet henter standardverdien i **Antall**-feltet fra totalt antall for tilgjengelige produktkvitteringer.
 - **Registrerte antall og tjenester** – Bruk dette alternativet hvis antall som er registrert i ankomstjournaler for lagerførte varer eller varer som ikke er på lager. Dette alternativet omfatter tjenester også, uavhengig av om de er registrert.
 
 Hvis den juridiske enheten bruker fakturakontroll, kan du vise resultatene av antallssamsvaret i **Samsvar i antall i produktkvittering**-kolonnen. Du kan også bruke **Samsvarende detaljer**-knappen på **Gjennomgang**-fanen i handlingsruten for å vise resultatene av antallssamsvaret.
@@ -64,23 +63,25 @@ Du kan legge til en linje som ikke var på bestillingen, i leverandørfakturaen.
 
 ## <a name="submitting-a-vendor-invoice-for-review"></a>Sende en leverandørfaktura til vurdering
 
-Organisasjonen kan bruke arbeidsflyter til å administrere vurderingsprosessen for leverandørfakturaer. Det kan bli nødvendig med arbeidsflytvurdering for fakturahodet, fakturalinjen eller begge. Arbeidsflytkontrollene gjelder for hodet eller linjen, avhengig av hvor fokuset er når du velger kontrollen. I stedet for **Poster**-knappen vises en **Send**-knapp som du kan bruke til å sende leverandørfakturaen gjennom vurderingsprosessen.
+Organisasjonen kan bruke arbeidsflyter til å administrere vurderingsprosessen for leverandørfakturaer. Det kan bli nødvendig med arbeidsflytvurdering for fakturahodet, fakturalinjen eller begge. Arbeidsflytkontrollene gjelder for hodet eller linjen, avhengig av hvor fokuset er når du velger kontrollen. I stedet for **Poster**-knappen viser en **Send**-knapp leverandørfakturaen gjennom vurderingsprosessen.
 
 ### <a name="preventing-invoice-from-being-submitted-to-workflow"></a>Forhindre faktura fra å sendes til arbeidsflyt 
 
 Nedenfor finner du flere måter du kan forhindre at en faktura sendes til en arbeidsflyt på.
 
-- **Fakturatotal og den registrerte totalen er ikke like.** Personen som sendte fakturaen, mottar et varsel om at totalene ikke er like, slik at de kan rette opp saldoene før fakturaen sendes til arbeidsflyten på nytt. Denne funksjonen er tilgjengelig hvis parameteren **Forhindre innsending til arbeidsflyt når fakturatotal og registrert fakturatotal ikke er like** på siden **Funksjonsbehandling** er slått på. 
+- **Fakturatotal og den registrerte totalen er ikke like.** Personen som sendte fakturaen, vil motta et varsel om at totalene ikke er like. Varselet gir en mulighet til å rette saldoene før fakturaen sendes til arbeidsflyten på nytt. Denne funksjonen er tilgjengelig hvis parameteren **Forhindre innsending til arbeidsflyt når fakturatotal og registrert fakturatotal ikke er like** på siden **Funksjonsbehandling** er slått på. 
 
 - **Fakturaen inneholder utildelte tillegg.** Personen som sendte fakturaen, mottar et varsel om at fakturaen har utildelte tillegg, slik at de kan rette opp fakturaen før den sendes til arbeidsflyten på nytt. Denne funksjonen er tilgjengelig hvis parameteren **Forhindre innsending til arbeidsflyt når det finnes utildelte tillegg på en leverandørfaktura** på siden **Funksjonsbehandling** er slått på.
 
-- **Fakturaen inneholder samme fakturanummer som en annen postert faktura.** Personen som sendte fakturaen, mottar et varsel om at en faktura med et duplisert nummer ble funnet, slik at de kan rette den opp før den sendes til arbeidsflyten på nytt. Dette varselet vises når Leverandør-parameteren merket **Kontroller fakturanummeret som er brukt** er satt til **Avvis duplikat**. Denne funksjonen er tilgjengelig hvis parameteren **Forhindre innsending til arbeidsflyt når fakturanummeret allerede finnes på en postert faktura, og systemet ikke er konfigurert til å godta dupliserte fakturanumre** på siden **Funksjonsbehandling** er slått på.  
+- **Fakturaen inneholder samme fakturanummer som en annen postert faktura.** Personen som sendte fakturaen, mottar et varsel om at en faktura med et duplisert nummer ble funnet, slik at de kan rette den opp før den sendes til arbeidsflyten på nytt. Dette varselet vises når parameteren **Kontroller fakturanummeret som er brukt** i Leverandører er satt til **Avvis duplikat**. Denne funksjonen er tilgjengelig hvis parameteren **Forhindre innsending til arbeidsflyt når fakturanummeret allerede finnes på en postert faktura, og systemet ikke er konfigurert til å godta dupliserte fakturanumre** på siden **Funksjonsbehandling** er slått på.  
 
 ## <a name="matching-vendor-invoices-to-product-receipts"></a>Samsvare leverandørfakturaer med produktkvitteringer
 
 Du kan angi og lagre informasjon for leverandørfakturaer, og du kan samsvare fakturalinjer med produktkvitteringslinjer. Du kan også samsvare delvist antall for en linje.
 
 Du kan opprette en leverandørfaktura basert på linjeelementene for produktkvittering som er mottatt til gjeldende dato, selv om ikke alle varene i en bestemt bestilling er mottatt ennå. Du kan for eksempel bruke dette alternativet hvis en leverandør sender én faktura per måned som dekker alle leveringer som er sendt i løpet av den måneden. Hver produktkvittering representerer en delvis eller komplett levering av varene i bestillingen.
+
+Når en faktura finnes i arbeidsflyten, kan godkjenneren oppdatere fakturaantallet, slik at det samsvarer med verdien i feltet **Produktkvitteringsantall som skal samsvares**. Dette gjør du ved å velge funksjonen **Oppdater fakturaantallet slik at det samsvarer med produktmottaksantallet i arbeidsflyten** i arbeidsområdet **Funksjonsbehandling**, og velg **Aktiver**. Hvis en godkjenner i arbeidsflytprosessen har fjernet alle samsvarene fra alle produktmottakene fra fakturalinjen, slettes fakturalinjen. Når denne funksjonen ikke er aktivert, oppdateres ikke fakturaantallet for fakturaer i arbeidsflyten.
 
 Når du posterer fakturaen, oppdateres **Fakturarest**-antallet for hver vare til totalantallet som er mottatt for de valgte produktkvitteringene. Hvis både **Fakturarest**-antallet og **Gjenstående levering**-antallet for alle varer på bestillingen er 0 (null), endres statusen for bestillingen til **Fakturert**. Hvis **Fakturarest**-antallet ikke er 0, endres ikke statusen for bestillingen, og flere fakturaer kan registreres på den.
 
@@ -128,6 +129,3 @@ Du kan vise fakturatotalen på siden **Ventende leverandørfakturaer** ved å ak
 - [Registrere fakturadata i Leverandører ved hjelp av en godkjenningsjournal](tasks/key-invoice-data-into-ap-system-approval-journal.md)
 - [Registrere fakturadata i AP-systemet ved hjelp av fakturapulje](tasks/key-invoice-data-into-ap-system-invoice-pool.md)
 - [Registrere en leverandørfaktura i fakturajournalen](tasks/record-vendor-invoice-invoice-journal.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

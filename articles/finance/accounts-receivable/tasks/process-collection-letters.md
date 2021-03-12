@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: CustPosting, CustCollectionLetterNote
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2018-12-01
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 2b8ce102086535a5462d3fa0e8ac76e9ec3dd15c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a189bbdd360d07b2b5198fa357380fd9a89ac167
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446331"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4992970"
 ---
 # <a name="process-collection-letters"></a>Behandle purrebrev
 
@@ -88,6 +87,3 @@ Når du skal ignorere betalinger og kreditnotaer ved beregning av purrekoden, gj
 
 1. Gå til **Navigasjonsrute > Moduler > Kreditt og innkreving > Oppsett > Kundeparametere**, og klikk på **Innkrevinger**-kategorien. 
 2. Ende verdien for **Ignorer betalinger og kreditnotaer for beregning av purrekode** til **Ja**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

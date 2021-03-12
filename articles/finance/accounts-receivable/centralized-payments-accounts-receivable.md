@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: LedgerJournalTransCustPaym
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 78c72bb9632d3501638d528822a3c30b05686796
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 644ef7cc9535522b72b03ba81a72b1070c8e2ba1
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446367"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4993045"
 ---
 # <a name="centralized-payments-for-accounts-receivable"></a>Sentraliserte betalinger for kunder
 
@@ -296,6 +295,3 @@ Fabrikam mottar en betaling på 75,00 fra kunde 4000, Gastronor Delikatesser. Be
 | Kunder (Fabrikam Vest)    |              | 75,00         |
 | Skal betales fra Fabrikam Øst (Fabrikam Vest) | 25,00        |               |
 | Kunder (Fabrikam Vest)    |              | 25,00         |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

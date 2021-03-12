@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: CatCXMLParameters, CatCXMLPurchRequest
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-08-03
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: d7184f14ab67d646451c8c2b1313336d47e59316
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 3113202b1f38bc528733c980321d60bb9ad23dde
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434839"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4992201"
 ---
 # <a name="purchasing-cxml-enhancements"></a>Kjøp av cXML-forbedringer
 
@@ -144,7 +143,7 @@ Når du er ferdig med å definere alle egenskapene og konfigurere andre innstill
 
 Som nevnt i delen [Angi bestillingsegenskaper](#set-order-properties), hvis du vil at den leverte cXML skal inneholde tekst fra notater som er knyttet til de relevante bestillings- og/eller leverandørposter, kan du sette egenskapen **POCOMMENTS** og/eller **VENDCOMMENTS** til _TRUE_ i det eksterne katalogoppsettet. Denne delen inneholder mer detaljert informasjon om hvordan systemet velger og behandler disse vedleggene hvis du bruker dem.
 
-Hvis du vil angi hvilke typer merknader systemet skal se etter, kan du gå til **Innkjøp og leverandører \> Oppsett \> Skjemaer \> Fra oppsett**. Deretter kan du i kategorien **Bestilling** sette feltet **Ta med dokumenter av type** til merknadstypen som du ønsker å inkludere. Det er bare tekstnotater som tas med, og ikke dokumentvedlegg.
+Hvis du vil angi hvilke typer merknader systemet skal se etter, kan du gå til **Innkjøp og leverandører \> Oppsett \> Skjemaer \> Fra oppsett**. Deretter kan du i fanen **Bestilling** sette feltet **Ta med dokumenter av type** til merknadstypen som du ønsker å inkludere. Det er bare tekstnotater som tas med, og ikke dokumentvedlegg.
 
 ![Skjemaoppsett-siden](media/cxml-form-setup.png "Skjemaoppsett-siden")
 
@@ -174,7 +173,7 @@ Bruk følgende fremgangsmåte for å legge til eksterne elementer i en ekstern k
     - **Verdi** – Velg en verdi for elementet. Denne verdien blir verdien for XML-elementet som opprettes av hver rad. Følgende verdier er tilgjengelige:
 
         - **Brukernavn** – Bruk navnet på brukeren som utfører eksternordren. Dette navnet er påloggingsnavnet for Supply Chain Management.
-        - **Brukere-post** – Bruk e-postadressen til brukeren som utfører eksternordren. Denne adressen er adressen brukeren har definert i kategorien **Konto** på siden **Brukeralternativer**.
+        - **Brukere-post** – Bruk e-postadressen til brukeren som utfører eksternordren. Denne adressen er adressen brukeren har definert i fanen **Konto** på siden **Brukeralternativer**.
         - **Tilfeldig verdi** – Bruk en unik, tilfeldig verdi.
         - **Brukerens fullstendige navn** – Bruk fullstendig navn på kontaktpersonen som er knyttet til brukeren som har tilgang til den eksterne katalogen.
         - **Fornavn** – Bruk fornavnet til kontaktpersonen som er knyttet til brukeren som har tilgang til den eksterne katalogen.
@@ -197,9 +196,9 @@ Når du oppretter en bestilling fra en innkjøpsrekvisisjon som kom fra en ekste
 
 ![Eksempel på et eksternt referansenummer](media/cxml-line-details.png "Eksempel på et eksternt referansenummer")
 
-Når du er ferdig med å fylle ut alle detaljene for bestillingen, må du kontrollere at du bekrefter. Ingen melding sendes med mindre bestillingen er bekreftet. For å bekrefte bestillingen går du til handlingsruten i kategorien **Kjøp** i gruppen **Handlinger** og velger **Bekreft**. 
+Når du er ferdig med å fylle ut alle detaljene for bestillingen, må du kontrollere at du bekrefter. Ingen melding sendes med mindre bestillingen er bekreftet. For å bekrefte bestillingen går du til handlingsruten i fanen **Kjøp** i gruppen **Handlinger** og velger **Bekreft**. 
 
-Når bestillingen er bekreftet, kan du vise statusen til bekreftelsen via **Bestillingsbekreftelser**-journalene. På handlingsruten i kategorien **Kjøp** i gruppen **Journaler** velger du gruppen **Bestillingsbekrefter**.
+Når bestillingen er bekreftet, kan du vise statusen til bekreftelsen via **Bestillingsbekreftelser**-journalene. På handlingsruten i fanen **Kjøp** i gruppen **Journaler** velger du gruppen **Bestillingsbekrefter**.
 
 Hver bestilling kan ha mange bekreftelser. Hver bekreftelse er merket med et trinnvis nummer. I illustrasjonen nedenfor er bestillingen *00000275*, og bekreftelsen er *00000275-1*. Denne nummereringen gjenspeiler standard Supply Chain Management-funksjonalitet, der endringer i en bestilling, og derfor typen cXML-melding som skal sendes til leverandøren, identifiseres basert på bekreftelsen. Som illustrasjonen viser inneholder siden **Bestillingsbekreftelser** også feltene for **sendestatus for bestilling** og **Leverandørstatus for bestillingsforespørsel**. Hvis du vil ha mer informasjon om de ulike statusverdiene som du kanskje vil se på denne siden, kan du se delen [Overvåke bestillingsforespørsler](#monitor-po-requests) senere i dette emnet.
 
@@ -207,17 +206,17 @@ Hver bestilling kan ha mange bekreftelser. Hver bekreftelse er merket med et tri
 
 Hvis du vil vise mer informasjon om dokumentet, velger du **Bestillingsforespørsel** over rutenettet.
 
-Siden **Bestillingsforespørsel** inneholder to rutenett. Rutenettet i den øvre delen av siden har én post for hver bestilling som er merket for sending. Rutenettet i kategorien **Logg for bestillingsforespørsel** i den nedre delen av siden kan ha flere poster for den valgte bestillingen, for å angi statusen for hver bekreftelse. Følgende illustrasjon viser bestillingen 00000275 i det øvre rutenettet og dokument 00000275-1 i rutenettet i kategorien **Logg for bestillingsforespørsel**.
+Siden **Bestillingsforespørsel** inneholder to rutenett. Rutenettet i den øvre delen av siden har én post for hver bestilling som er merket for sending. Rutenettet i fanen **Logg for bestillingsforespørsel** i den nedre delen av siden kan ha flere poster for den valgte bestillingen, for å angi statusen for hver bekreftelse. Følgende illustrasjon viser bestillingen 00000275 i det øvre rutenettet og dokument 00000275-1 i rutenettet i fanen **Logg for bestillingsforespørsel**.
 
 ![Side for bestillingsforespørsel](media/cxml-po-request.png "Side for bestillingsforespørsel")
 
-Hvis den satsvise jobben er definert og kjører, vil dokumentet bli sendt. Du kan vise statusendringen etter at dokumentet er sendt. I illustrasjonen nedenfor er feltet for **Sendestatus for bestilling** satt til _Sendt_. Feltet **Leverandørstatus for bestillingsforespørsel** er satt til _Bekreftet_ for å angi at leverandøren mottok dokumentet og kunne lese det og lagre det i systemet. Rutenettet i kategorien **Logg for bestillingsforespørsel** viser klokkeslettet da dokumentet ble sendt. Hvis du vil ha mer informasjon om de ulike statusverdiene som du kanskje vil se på denne siden, kan du se delen [Overvåke bestillingsforespørsler](#monitor-po-requests).
+Hvis den satsvise jobben er definert og kjører, vil dokumentet bli sendt. Du kan vise statusendringen etter at dokumentet er sendt. I illustrasjonen nedenfor er feltet for **Sendestatus for bestilling** satt til _Sendt_. Feltet **Leverandørstatus for bestillingsforespørsel** er satt til _Bekreftet_ for å angi at leverandøren mottok dokumentet og kunne lese det og lagre det i systemet. Rutenettet i fanen **Logg for bestillingsforespørsel** viser klokkeslettet da dokumentet ble sendt. Hvis du vil ha mer informasjon om de ulike statusverdiene som du kanskje vil se på denne siden, kan du se delen [Overvåke bestillingsforespørsler](#monitor-po-requests).
 
 ![Statusmeldinger på siden for bestillingsforespørsel](media/cxml-po-request-2.png "Statusmeldinger på siden for bestillingsforespørsel")
 
 ## <a name="schedule-the-purchase-order-request-batch-job"></a><a name="po-batch"></a>Planlegge den satsvise jobben for bestillingsforespørsel
 
-Hvis du vil aktivere den satsvise jobben for sending av bestillingsforespørsler, går du til **Innkjøp og leverandører \> Oppsett \> cXML-behandling \> Bestillingsforespørsel** og deretter, i handlingsruten i kategorien **Bestillingsforespørsel** i gruppen **Parti**, velger du **Send jobb** for å åpne dialogboksen for **klargjøring og sending av bestillingsforespørsel**. Du kan bruke denne dialogboksen til å angi regelmessigheten, akkurat som du vanligvis gjør for satsvise jobber i Supply Chain Management. Velg et intervall basert på ordrevolumet. Selv om du kan kjøre den satsvise jobben hvert minutt, er det antakelig best å sende parti gjennom hele arbeidsdagen basert på ordremottaksvinduer som samsvarer med leverandørens tidsplaner.
+Hvis du vil aktivere den satsvise jobben for sending av bestillingsforespørsler, går du til **Innkjøp og leverandører \> Oppsett \> cXML-behandling \> Bestillingsforespørsel** og deretter, i handlingsruten i fanen **Bestillingsforespørsel** i gruppen **Parti**, velger du **Send jobb** for å åpne dialogboksen for **klargjøring og sending av bestillingsforespørsel**. Du kan bruke denne dialogboksen til å angi regelmessigheten, akkurat som du vanligvis gjør for satsvise jobber i Supply Chain Management. Velg et intervall basert på ordrevolumet. Selv om du kan kjøre den satsvise jobben hvert minutt, er det antakelig best å sende parti gjennom hele arbeidsdagen basert på ordremottaksvinduer som samsvarer med leverandørens tidsplaner.
 
 Leverandøren har for eksempel en policy som sier at alle ordrer som mottas innen kl. 13:00, vil bli sendt samme dag. I så fall kan det hende at du bare må kjøre partiet noen ganger i morgen for å kommunisere eventuelle ordrer du har. De gjenværende ordrene blir deretter sendt neste dag. Denne beslutningen er en ren virksomhetsbeslutning. Du kan gå gjennom den og angi parameterne for den i henhold til dette.
 
@@ -243,10 +242,10 @@ Rutenettet i den øvre delen av siden **Bestillingsforespørsel** kan vise følg
 - **Leverandørstatus for bestillingsforespørsel** – Dette feltet kan ha en av følgende verdier:
 
     - **Venter** – Dokumentet venter på å bli sendt.
-    - **Bekreftet** – Dokumentet er bekreftet som mottatt av leverandøren. Du kan se gjennom den detaljerte XML-meldingen som ble returnert fra leverandøren, ved å velge kategorien **Svar-XML** på den nedre delen av siden.
+    - **Bekreftet** – Dokumentet er bekreftet som mottatt av leverandøren. Du kan se gjennom den detaljerte XML-meldingen som ble returnert fra leverandøren, ved å velge fanen **Svar-XML** på den nedre delen av siden.
     - **Feil** – Dokumentet ble sendt til leverandøren, men det oppstod en feil. Du kan se gjennom feilmeldingen ved å velge **Svar-XML** i den nedre delen av siden.
 
-Rutenettet i kategorien **Logg for bestillingsforespørsel** i den nedre delen av siden **Bestillingsforespørsel** kan vise følgende verdier:
+Rutenettet i fanen **Logg for bestillingsforespørsel** i den nedre delen av siden **Bestillingsforespørsel** kan vise følgende verdier:
 
 - **Bestillingstype** – Dette feltet kan ha en av følgende verdier:
 
@@ -263,20 +262,17 @@ Rutenettet i kategorien **Logg for bestillingsforespørsel** i den nedre delen a
 
 ### <a name="view-the-xml-for-a-purchase-order-request-message"></a>Vise XMLen for en bestillingsforespørselsmelding
 
-Hvis du vil vise XMLen for bestillingsforespørselsmelding, velger du kategorien for **Forespør XML-tekst** nederst på siden for **Bestillingsforespørsel**. Informasjonen i denne kategorien kan være nyttig under testing eller feilvalide ring. Hvis du vil gjøre det enklere å lese informasjonen, kan du vise den som en formatert melding. Kopier innholdet i kategorien til en tekstfil, og vis det deretter i et XML-redigeringsprogram.
+Hvis du vil vise XMLen for bestillingsforespørselsmelding, velger du fanen for **Forespør XML-tekst** nederst på siden for **Bestillingsforespørsel**. Informasjonen i denne fanen kan være nyttig under testing eller feilvalide ring. Hvis du vil gjøre det enklere å lese informasjonen, kan du vise den som en formatert melding. Kopier innholdet i fanen til en tekstfil, og vis det deretter i et XML-redigeringsprogram.
 
-![Kategorien for Forespør XML-tekst](media/cxml-request-xml-text.png "Kategorien for Forespør XML-tekst")
+![fanen for Forespør XML-tekst](media/cxml-request-xml-text.png "fanen for Forespør XML-tekst")
 
 ### <a name="view-the-details-of-the-vendor-response"></a>Vise detaljene for leverandørsvar
 
-Hvis du vil vise innholdet i en leverandørbekreftelse eller feilsvar, velger du kategorien **Svar-XML** nederst på siden **Bestillingsforespørsel**.
+Hvis du vil vise innholdet i en leverandørbekreftelse eller feilsvar, velger du fanen **Svar-XML** nederst på siden **Bestillingsforespørsel**.
 
-![Kategorien Svar-XML](media/cxml-response-xml.png "Kategorien Svar-XML")
+![fanen Svar-XML](media/cxml-response-xml.png "fanen Svar-XML")
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 - [Definere en ekstern katalog for PunchOut-e-Procurement](set-up-external-catalog-for-punchout.md)
 - [Bruke eksterne kataloger for PunchOut e-Procurement](use-external-catalogs-for-punchout.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: DefaultDashboard, SalesOrderProcessingWorkspace, SalesCreateOrder, SalesTable, PCRuntimeConfigurator, PCTemplateConfigurationSelection
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 988d87757019d20dcaf675af925166ed376685f5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 77404694b3426f9ef051721191b607f91c908cc4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434400"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4992326"
 ---
 # <a name="create-a-sales-order-for-a-configurable-product"></a>Opprette en salgsordre for et konfigurerbart produkt
 
@@ -31,28 +30,25 @@ Denne prosedyren viser hvordan du bruker en konfigurasjonsmal for et produkt på
 
 
 ## <a name="create-a-sales-order"></a>Opprette en salgsordre
-1. Klikk Salgsordrebehandling og -spørring.
-2. Klikk Ny.
-3. Klikk Salgsordre.
+1. Klikk på Salgsordrebehandling og -spørring.
+2. Klikk på Ny.
+3. Klikk på Salgsordre.
 4. Velg US-001 i Kundekonto-feltet. 
-5. Klikk OK.
+5. Klikk på OK.
 6. Velg D0006 i feltet Varenummer.
     * Du må velge et konfigurerbart produkt for denne oppgaven.  
-7. Klikk Produkt og forsyning.
-8. Klikk Konfigurer linje.
+7. Klikk på Produkt og forsyning.
+8. Klikk på Konfigurer linje.
     * Vær oppmerksom på at prisen er endret, basert på konfigurasjonen som ble valgt, og at feltet for å ta med kabel er satt til sann.  
     * Vær oppmerksom på standardprisen og innstillingene som er valgt for kabelen.  
-9. Klikk Last inn mal.
+9. Klikk på Last inn mal.
     * Dette eksemplet viser hvordan du kan bruke en mal for å velge en forhåndsdefinert konfigurasjon. Hvis du bruker denne prosedyren som en oppgaveveiledning og ønsker å se andre attributtverdier som er tilgjengelige, må du klikke Lås opp-knappen.  
-10. Klikk OK.
-11. Klikk OK.
+10. Klikk på OK.
+11. Klikk på OK.
 12. Vis seksjonen Linjedetaljer.
-13. Klikk kategorien Produkt.
+13. Klikk på fanen Produkt.
     * Konfigurasjonen for varen er nå oppført under produktdimensjonene.  
 14. Lukk siden.
 
 ## <a name="select-the-product-configuration"></a>Velge produktkonfigurasjonen
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

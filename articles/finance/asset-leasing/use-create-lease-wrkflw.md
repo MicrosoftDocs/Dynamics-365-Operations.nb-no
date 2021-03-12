@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 1805e1f87ee70a1f35d9105b8f7ad6c95861efcc
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 1086231c65a726df5162d3593419a129d6ae5655
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4446610"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4992764"
 ---
 # <a name="use-lease-approval-workflows"></a>Bruke arbeidsflyter for godkjenning av leie
 
@@ -45,6 +44,3 @@ Før du bruker denne fremgangsmåten må du kontrollere at det er opprettet mins
 
 8. Hvis du vil stoppe en arbeidsflyt, velger du **Tilbakekalling** på siden **Arbeidsflytlogg**. I dialogboksen som vises, angir du en kommentar, og deretter velger du **OK**.
 9. Hvis du vil deaktivere en arbeidsflyt, eller aktivere en arbeidsflyt som er opprettet tidligere, kan du gå til **Aktivaleie \> Oppsett \> Leiearbeidsflyt**. Deretter, på siden **Leiearbeidsflyt**, velger du **Arbeidsflyt \> Versjoner**. Hvis du vil gjøre en gjeldende arbeidsflyt inaktiv, velger du den aktive leieavtalen i dialogboksen leieversjon, og deretter velger du **Aktiver**. Hvis du vil at en eksisterende arbeidsflyt skal være aktiv, velger du arbeidsflyten og deretter **Gjør aktiv**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
