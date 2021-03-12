@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 6d15a79a359b3c708b2b33893d700377a57c3eb7
-ms.sourcegitcommit: cfd84321fba38e02e270d361df369a536a48efa3
+ms.openlocfilehash: d91f377af2514af932ea585adb75a56bdee13871
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "4512240"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4988490"
 ---
 # <a name="get-started-with-the-electronic-invoicing-add-on-for-mexico"></a>Komme i gang med tillegget Elektronisk fakturering for Mexico
 
@@ -299,6 +298,3 @@ Hvis du aktiverer funksjonene MX-00010 og MX-00016 (CFDI-faktura og CFDI-annulle
 - [Oversikt over tillegget Elektronisk fakturering](e-invoicing-service-overview.md)
 - [Komme i gang med tillegget Elektronisk fakturering](e-invoicing-get-started.md)
 - [Konfigurere tillegget Elektronisk fakturering](e-invoicing-setup.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

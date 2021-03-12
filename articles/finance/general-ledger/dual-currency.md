@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: LedgerJournalTable, Ledger, AssetTransReportingCurrencyAmountsWizard,BankAccountTransReportingCurrencyAmountsWizard, LedgerTrialBalanceListPage
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: ''
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 8b71b571b03e8fa2648c90258bbcaa020baeabc0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 04126c0cddd1242e9607274e35f4b7626ad573d2
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446243"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4990470"
 ---
 # <a name="dual-currency"></a>Dobbel valuta
 
@@ -209,6 +208,3 @@ I konsolidering for økonomimodul er det lagt til et nytt alternativ for å kons
 -  Du kan nå velge om du vil bruke regnskapsvalutaen eller rapporteringsvalutaen fra kildefirmaet som transaksjonsvalutaen i konsolideringsfirmaet.
 
 - Beløpene for regnskaps- eller rapporteringsvaluta fra kildefirmaet kopieres direkte til beløpene for regnskaps- eller rapporteringsvaluta hvis en av valutaene er den samme. Beløpene for regnskaps- og rapporteringsvaluta i konsolideringsfirmaet beregnes ved hjelp av valutakursen hvis ingen av valutaene er den samme.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

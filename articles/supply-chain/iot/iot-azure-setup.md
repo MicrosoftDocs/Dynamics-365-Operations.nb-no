@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: ''
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1277d2ab8bb1f2925874f7469250e164f6bde62d
-ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
+ms.openlocfilehash: cd06410dd6260e6a371b0044546be7f8c9957c80
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434722"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4989827"
 ---
 # <a name="set-up-azure-resources-for-iot-intelligence"></a>Konfigurere Azure-ressurser for IoT-intelligens
 
@@ -123,7 +122,7 @@ Hvis du vil konfigurere nøkkelhvelvet, gjør du følgende.
 2. Velg **Tilgangspolicyer** i navigasjonsruten til venstre.
 3. Velg **Legg til en tilgangspolicy**.
 4. På siden **Legg til tilgangspolicy** velger du **Hent** og **Liste** i feltet **Velg tillatelser**.
-5. Klikk i **Velg oppdragsgiver**.
+5. Klikk på i **Velg oppdragsgiver**.
 6. I dialogboksen **Oppdragsgiver** søke rdu etter og velger **Microsoft Dynamics ERP Microservices**. Velg deretter **Velg**.
 7. Velg **Legg til**.
 8. Velg **Lagre**.
@@ -162,6 +161,3 @@ Hvis du vil lagre hemmeligheten for tilkoblingsstrengen for Redis-bufferen, gjø
 > Når du oppdaterer en av tilkoblingsstrengene, må du også oppdatere de hemmelige verdiene.
 
 Du har nå fullført klargjøringen av de obligatoriske Azure-ressursene. Neste trinn er å [installere tillegget for IoT-intelligens i Microsoft Dynamics Lifecycle Services (LCS)](iot-lcs-setup.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

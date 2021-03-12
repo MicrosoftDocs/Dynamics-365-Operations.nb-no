@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 3a2c8a69a2c64214a38a654042ea2f62575e7f52
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 433ed2152c47dbe698a640b099cb34727fe63452
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434289"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4989699"
 ---
 # <a name="set-up-a-mobile-device-menu-item-to-provide-a-pick-line-overview"></a>Definere et menyelement for en mobilenhet for å angi en plukklinjeoversikt
 
@@ -69,6 +68,3 @@ Følg disse trinnene for å definere et menyelement for en mobilenhet for å ang
     - Bruk de gjenstående feltene **Visningsfelt** for å legge til opptil sju ekstra visningsfelt, i henhold til hva du trenger. I hvert **Visningsfelt**-felt velger du navnet på et arbeidslinjefelt. Deretter vil hver linje vise en verdi for dette feltet. Verdiene vil bli vist i den rekkefølgen du velger her. Du kan la noen av **Visningsfelt**-feltene stå tomme hvis du ikke har behov for alle de sju verdiene.
 
 1. I handlingsruten velger du **Lagre**, og deretter lukker du siden **Feltliste**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

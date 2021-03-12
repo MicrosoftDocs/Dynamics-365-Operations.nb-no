@@ -10,18 +10,17 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.search.region: Norway
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1ae837a0d0c27e50d371ae5c851a2566d71c6be6
-ms.sourcegitcommit: cfd84321fba38e02e270d361df369a536a48efa3
+ms.openlocfilehash: 8abec3fb77b8fee4146fbee06146a2274405a2a4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "4512194"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4990104"
 ---
 # <a name="norway-overview"></a>Oversikt over Norge
 
@@ -37,6 +36,3 @@ Dette emnet inneholder koblinger til dokumentasjonsressurser for Norge.
 - [Kassefunksjonalitet](../../retail/localizations/emea-nor-cash-registers.md)
 - [Retningslinjer for distribusjon for kassaapparater](../../retail/localizations/emea-nor-loc-deployment-guidelines.md)
 - [Eksport av elektroniske fakturaer for kunde](emea-nor-e-invoices.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

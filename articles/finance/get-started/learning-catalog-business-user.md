@@ -10,16 +10,15 @@ ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 9d99233831ee4f838c0230e92db0750d94b2b55b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3ec0e21ccecd5bf90e9b31b5aade33e585108c62
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446436"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4990245"
 ---
 # <a name="learning-catalog-for-users-of-dynamics-365-finance"></a>Opplæringskatalog for brukere av Dynamics 365 Finance
 
@@ -54,12 +53,10 @@ Katalogen nedenfor er ordnet fra kjernekunnskap til bestemte områder, og fra de
 | [Konfigurere og bruke budsjettering i Dynamics 365 Finance](https://docs.microsoft.com/learn/paths/configure-use-budgeting-dyn365-finance/)   | Alle organisasjoner, enten de er private eller offentlige, angir finans- og driftsmål ved å lage budsjetter. Med samarbeid og prosessdrevet budsjettplanlegging kan du gjøre budsjettprosessen mer effektiv. | Gratis, selvbetjent elektronisk læringsforløp | 3.5 timer |
 | [Konfigurere og administrere anleggsmidler i Dynamics 365 Finance](https://docs.microsoft.com/learn/paths/configure-manage-fixed-assets-dyn365-finance/) | Du kan definere og skrive inn anskaffelsesinformasjon for anleggsmidler, og deretter behandle dem ved å avskrive dem og angi en kapitaliseringsterskel. Behandlingen av anleggsmidler samsvare med både internasjonale regnskapsstandarder og regnskapslovgivningen i hvert land eller område. | Gratis, selvbetjent elektronisk læringsforløp | 4.5 timer |
 | [Komme i gang med kostnadsregnskap for forsyningskjeder i Dynamics 365 Finance](https://docs.microsoft.com/learn/paths/get-started-cost-accounting-supply-chains-dyn365-finance/) | Med Kostnadsregnskap kan du samle inn data fra forskjellige kilder, for eksempel i økonomimodulen, underfinans, budsjetter og statistisk informasjon. Deretter kan du analysere, summere og evaluere kostnadsdata, slik at ledelsen kan gjøre best mulig avgjørelsene for prisoppdateringer, budsjetter, kostnadskontroll og så videre.  | Gratis, selvbetjent elektronisk læringsforløp | 1 time  |
+| [Arbeide med reiseregninger i Dynamics 365 Project Operations](https://docs.microsoft.com/learn/paths/work-expense-management/) | Maksimere fortjeneste og minimere kostnader med nøyaktige funksjoner for reiseregninger i Dynamics 365 Project Operations. Lær hvordan du konfigurerer systemet og oppretter og godkjenner reiseregningsrapporter. | Gratis, selvbetjent elektronisk læringsforløp | 5.5 timer  |
 
 ## <a name="exam"></a>Eksamen<a name="exam"></a>
 
-| Innhold | beskrivelse  | Formater  |
+| Innhold | beskrivelse  | Format  |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
 | [Grunnleggende om Dynamics 365](https://docs.microsoft.com/learn/certifications/d365-fundamentals?wt.mc_id=learningredirect_certs-web-wwl)    | Vis at du forstår Microsoft Dynamics 365: Power Platform, skybegreper, lisensieringsalternativer og alternativer for distribusjon og frigivelse | Eksamen: kostnaden varierer etter område |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
