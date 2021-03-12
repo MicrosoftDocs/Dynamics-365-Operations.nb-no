@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: ac60bef797d8e0bbe0d20f1585d5c3c0163f8788
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0e580253de0d787b721c2f729ecc96db56b91af0
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434174"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4983021"
 ---
 # <a name="consolidate-shipments-manually-by-using-the-consolidate-shipments-page"></a>Konsolidere forsendelser manuelt ved hjelp av siden Konsolider forsendelser
 
@@ -77,18 +76,18 @@ Følg disse trinnene for å frigi hver salgsordre du har opprettet for dette , t
 
 1. Gå til **Kunde \> Ordrer \> Alle salgsordrer**.
 1. Finn og velg salgosordren som skal frigis.
-1. I handlingsruten velger du **Handlinger \> Frigi til lager** i kategorien **Lager** for å frigi den valgte salgsordren.
+1. I handlingsruten velger du **Handlinger \> Frigi til lager** i fanen **Lager** for å frigi den valgte salgsordren.
 1. Gjenta denne prosedyren for hver salgsordre du opprettet for dette .
 
 ## <a name="consolidate-shipments"></a>Konsolider forsendelser
 
 1. Gå til **Lagerstyring \> Forsendelser \> Alle forsendelser**.
 1. Finn og velg en forsendelse som ble opprettet da salgsordre 1 ble frigitt til lageret. (Feltet **Policy for forsendelseskonsolidering** for forsendelsen må settes til *Ordrepulje*.)
-1. I handlingsruten velger du **Forsendelser \> Konsolider forsendelser** i kategorien **Forsendeler**.
+1. I handlingsruten velger du **Forsendelser \> Konsolider forsendelser** i fanen **Forsendeler**.
 1. Kontroller forsendelsene som er foreslått for konsolidering. Bare én forsendelse som har samme policy, bør foreslås for konsolidering.
 1. Lukk siden **Forsendelseskonsolidering**.
 1. Finn og velg en forsendelse som ble opprettet da salgsordre 3 ble frigitt til lageret. (Feltet **Policy for forsendelseskonsolidering** for forsendelsen må settes til *Standard*.)
-1. I handlingsruten velger du **Forsendelser \> Konsolider forsendelser** i kategorien **Forsendeler**.
+1. I handlingsruten velger du **Forsendelser \> Konsolider forsendelser** i fanen **Forsendeler**.
 1. Kontroller at ingen forsendelser er foreslått for konsolidering.
 1. Velg **Vis filtre**.
 1. I ruten **Filtre** fjerner du filteret **Ordrenummer**, og deretter velger du **Bruk**.
@@ -98,5 +97,3 @@ Følg disse trinnene for å frigi hver salgsordre du har opprettet for dette , t
 
 - [Policyer for forsendelseskonsolidering](about-shipment-consolidation-policies.md)
 - [Konfigurere policyer for forsendelseskonsolidering](configure-shipment-consolidation-policies.md)
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

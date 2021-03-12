@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: DefaultDashboard, SalesOrderProcessingWorkspace, SalesCreateOrder, SalesTable, ReqCreatePlanWorkspace, ReqTransPlanCard, SysQueryForm, ReqTransPo
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 14de9a1085ac1cae88ad93c35385dd43c60ed4d1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a8e9067cdd8851da31c07a92217001e447f400d4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434428"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4983397"
 ---
 # <a name="create-a-material-plan-for-co-products"></a>Opprette en materialplan for koprodukter
 
@@ -32,85 +31,82 @@ Produksjonsplanleggeren planlegger materialbehovet for varer som er koprodukter 
 
 ## <a name="create-requirement-for-a-co-product"></a>Opprett behov for et koprodukt
 1. Gå til standard instrumentbord.
-2. Klikk Salgsordrebehandling og -spørring.
-3. Klikk Ny.
-4. Klikk Salgsordre.
+2. Klikk på Salgsordrebehandling og -spørring.
+3. Klikk på Ny.
+4. Klikk på Salgsordre.
 5. Angi en verdi i Kundekonto-feltet.
     * Eksempel: US-001  
-6. Klikk OK.
+6. Klikk på OK.
 7. Skriv inn en verdi i Varenummer-feltet.
     * Eksempel: P6003  
 8. Angi et tall i feltet Antall.
     * Eksempel: 50000  
-9. Klikk Lagre.
+9. Klikk på Lagre.
 
 ## <a name="create-a-material-plan-for-co-products"></a>Opprette en materialplan for koprodukter
 1. Lukk siden.
 2. Lukk siden.
-3. Klikk Hovedplanlegging.
-4. Klikk rullegardinknappen i Plan-feltet for å åpne oppslaget.
-5. Klikk koblingen i den valgte raden i listen.
+3. Klikk på Hovedplanlegging.
+4. Klikk på rullegardinknappen i Plan-feltet for å åpne oppslaget.
+5. Klikk på koblingen i den valgte raden i listen.
     * Eksempel: Hovedplan  
-6. Klikk Kjør.
+6. Klikk på Kjør.
 7. Vis eller skjul delen Poster som skal inkluderes.
-8. Klikk Filter.
+8. Klikk på Filter.
 9. I listen merker du raden for felt = varenummer.
 10. Skriv inn en verdi i Kriterier-feltet.
     * Eksempel: P6003  
-11. Klikk OK.
-12. Klikk OK.
-13. Klikk Planlagte bestillinger.
+11. Klikk på OK.
+12. Klikk på OK.
+13. Klikk på Planlagte bestillinger.
 14. Bruk hurtigfilteret for å søke etter poster. Du kan for eksempel filtrere på Varenummer-feltet med verdien P6000.
     * Filtrer etter formelvaren som har som koprodukt for varen som du har opprettet en salgsordre for.  
 15. Merk den valgte raden i listen.
     * Velg en av radene som returneres av filteret.  
-16. Klikk koblingen i den valgte raden i listen.
+16. Klikk på koblingen i den valgte raden i listen.
 17. Vis eller skjul delen Utligning.
-18. Klikk koblingen i den valgte raden i listen.
+18. Klikk på koblingen i den valgte raden i listen.
     * Den planlagte bestillingen er knyttet til salgsordren for koproduktet.  
 19. Lukk siden.
 
 ## <a name="create-requirement-for-a-co-product"></a>Opprett behov for et koprodukt
 1. Gå til standard instrumentbord.
-2. Klikk Salgsordrebehandling og -spørring.
-3. Klikk Ny.
-4. Klikk Salgsordre.
+2. Klikk på Salgsordrebehandling og -spørring.
+3. Klikk på Ny.
+4. Klikk på Salgsordre.
 5. Angi en verdi i Kundekonto-feltet.
     * Eksempel: US-001  
-6. Klikk OK.
+6. Klikk på OK.
 7. Skriv inn en verdi i Varenummer-feltet.
     * Eksempel: P6003  
 8. Angi et tall i feltet Antall.
     * Eksempel: 50000  
-9. Klikk Lagre.
+9. Klikk på Lagre.
 
 ## <a name="create-a-material-plan-for-co-products"></a>Opprette en materialplan for koprodukter
-1. Klikk rullegardinknappen i Plan-feltet for å åpne oppslaget.
-2. Klikk koblingen i den valgte raden i listen.
+1. Klikk på rullegardinknappen i Plan-feltet for å åpne oppslaget.
+2. Klikk på koblingen i den valgte raden i listen.
     * Eksempel: Hovedplan  
-3. Klikk Kjør.
+3. Klikk på Kjør.
 4. Vis eller skjul delen Poster som skal inkluderes.
-5. Klikk Filter.
+5. Klikk på Filter.
 6. I listen merker du raden for felt = varenummer.
 7. Skriv inn en verdi i Kriterier-feltet.
     * Eksempel: P6003  
-8. Klikk OK.
-9. Klikk OK.
-10. Klikk Planlagte bestillinger.
+8. Klikk på OK.
+9. Klikk på OK.
+10. Klikk på Planlagte bestillinger.
 11. Bruk hurtigfilteret for å søke etter poster. Du kan for eksempel filtrere på Varenummer-feltet med verdien P6000.
     * Filtrer etter formelvaren som har som koprodukt for varen som du har opprettet en salgsordre for.  
 12. Merk den valgte raden i listen.
     * Velg en av radene som returneres av filteret.  
-13. Klikk koblingen i den valgte raden i listen.
+13. Klikk på koblingen i den valgte raden i listen.
 14. Vis eller skjul delen Utligning.
-15. Klikk koblingen i den valgte raden i listen.
+15. Klikk på koblingen i den valgte raden i listen.
     * Den planlagte bestillingen er knyttet til salgsordren for koproduktet.  
 16. Lukk siden.
-17. Klikk Hovedplanlegging.
+17. Klikk på Hovedplanlegging.
 18. Gå til Hovedplanlegging > Oppsett > Parametere for hovedplanlegging.
 19. Velg Nei i feltet Deaktiver alle planleggingsprosesser.
 20. Lukk siden.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

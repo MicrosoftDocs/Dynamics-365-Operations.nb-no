@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 2f1dd5c743664e638c043b600ae7b0f6bce5ddcd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c0af6764742532cbe181c8a20e7bf783b0e6d7cf
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434172"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4983098"
 ---
 # <a name="consolidate-shipments-by-using-release-to-warehouse-from-the-load-planning-workbench"></a>Konsolidere forsendelser ved hjelp av siden Frigi til lager fra arbeidsområdet for lastplanlegging
 
@@ -211,8 +210,8 @@ Gå til **Kunde \> Ordrer \> Alle salgsordrer**, og opprett en samling av salgso
 Følg disse trinnene for å opprette en belastning for hvert ordresett du har opprettet for dette , og deretter frigi det til lageret.
 
 1. Gå til **Lagerstyring \> Laster \> Arbeidsområde for lastplanlegging**.
-1. I kategorien **Salgslinjer** finner du og velger alle salgsordrelinjene fra ett av ordresettene du opprettet for dette .
-1. I handlingsruten velger du **Legg til \> I ny last** i kategorien **Tilbud og etterspørsel** for å legge til de valgte ordrelinjene i en ny last.
+1. I fanen **Salgslinjer** finner du og velger alle salgsordrelinjene fra ett av ordresettene du opprettet for dette .
+1. I handlingsruten velger du **Legg til \> I ny last** i fanen **Tilbud og etterspørsel** for å legge til de valgte ordrelinjene i en ny last.
 1. I dialogboksen **Tilordning av lastmal** velger du en lastmal i feltet **Lastmal-ID**, for eksempel *Standard lastmal*.
 1. Velg **OK** for å lukke dialogboksen. 
 1. I delen **Laster** finner og velger du lasten du nettopp opprettet.
@@ -261,6 +260,3 @@ Fire forsendelser skal ha blitt opprettet:
 
 - [Policyer for forsendelseskonsolidering](about-shipment-consolidation-policies.md)
 - [Konfigurere policyer for forsendelseskonsolidering](configure-shipment-consolidation-policies.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

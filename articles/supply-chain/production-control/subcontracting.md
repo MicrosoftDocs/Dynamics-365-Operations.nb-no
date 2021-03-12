@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: ''
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1cc1040393d843f39ca8c741a7c51435c7169c00
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3e282e0676e53200b0993dd9cb2b52e08fe97dca
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434144"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4981462"
 ---
 # <a name="subcontracting"></a>Utsetting
 
@@ -57,28 +56,28 @@ Denne prosedyren tar deg gjennom installasjonen av frigitt produkt D8100, "Lakke
 
     ![Filtrering for frigitt produkt D8100 på siden Detaljer om frigitt produkt](./media/subcontract02_filtering-released-products.png)
 
-3. I handlingsruten i kategorien **Utvikling** velger du **Rute** for å åpne **Rute**-siden.
+3. I handlingsruten i fanen **Utvikling** velger du **Rute** for å åpne **Rute**-siden.
 
     **Rute**-siden viser de åtte ruteversjonene for det frigitte produktet D8100. De åtte ruteversjonene er fordelt mellom fire ruter på område 1 og område 5. Rute 000400 brukes for etterkalkulering, rute 00041 brukes når lakkeringsoperasjonen er en intern operasjon, og rute 00042 som brukes når lakkeringsoperasjonen er en ekstern operasjon.
 
     ![Åtte ruteversjoner på Rute-siden](./media/subcontract03_route-page.png)
 
 4. I den øvre ruten, i **Versjoner**-rutenettet, velger du ruteversjon **00042** for område **5**.
-5. I den nedre ruten, i kategorien **Oversikt**, velger du operasjon **20** (**Cbnt CtSc**) i rutenettet.
+5. I den nedre ruten, i fanen **Oversikt**, velger du operasjon **20** (**Cbnt CtSc**) i rutenettet.
 
     ![Operasjon 20 ruteversjon 00042 for område 5 valgt](./media/subcontract04_route-version-operation.png)
 
-6. Velg kategorien **Generelt**.
+6. Velg fanen **Generelt**.
 
     Legg merke til at feltet **Rutetype** er satt til **Leverandør**. Denne verdien angir at operasjon 20 (Cbnt CtSc) er en utsatt operasjon.
 
-    ![Rutetype-feltet satt til Leverandør i kategorien Generelt](./media/subcontract05_general-tab.png)
+    ![Rutetype-feltet satt til Leverandør i fanen Generelt](./media/subcontract05_general-tab.png)
 
-7. Velg kategorien **Ressursbehov**.
+7. Velg fanen **Ressursbehov**.
 
     Funksjonene blir brukt til å finne en aktuell ressurs under produksjonsplanlegging. For operasjon 20 (Cbnt CtSc), legg merke til at en ressurs som har to egenskaper, **Lakkering** og **Lakkerte kabinetter**, kreves.
 
-    ![Egenskapene Lakkering og Lakkerte kabinetter i kategorien Ressurskrav](./media/subcontract06_resource-requirements-tab.png)
+    ![Egenskapene Lakkering og Lakkerte kabinetter i fanen Ressurskrav](./media/subcontract06_resource-requirements-tab.png)
 
 8. Velg **Gjeldende ressurser** for å åpne dialogboksen **Gjeldende ressurser** .
 
@@ -91,7 +90,7 @@ Denne prosedyren tar deg gjennom installasjonen av frigitt produkt D8100, "Lakke
 
     ![Siden Detaljer om frigitt produkt](./media/subcontract08_released-product-details-page.png)
 
-11. I handlingsruten i kategorien **Utvikling** velger du **Stykklisteversjoner** for å åpne **Stykklisteversjoner**-siden.
+11. I handlingsruten i fanen **Utvikling** velger du **Stykklisteversjoner** for å åpne **Stykklisteversjoner**-siden.
 
     **Stykklisteversjoner**-siden viser fire stykklisteversjoner for det frigitte produktet D8100. 000040 brukes for etterkalkulering og planlegging, stykkliste 000041 brukes hvis lakkeringsoperasjonen gjøres internt, og stykkliste 000042 og 000043 brukes hvis lakkeringsoperasjonen er satt ut.
 
@@ -158,7 +157,7 @@ En produksjonsordre på 10 deler opprettes for produkt D8100, "Lakkert kabinett"
 
     ![Ny produksjonsordre på siden Alle produksjonsordrer](./media/subcontract15_new-production-order.png)
 
-10. i handlingsruten, i kategorien **Produksjonsordre** velger du **Estimat** for å åpne dialogboksen **Estimat**.
+10. i handlingsruten, i fanen **Produksjonsordre** velger du **Estimat** for å åpne dialogboksen **Estimat**.
 
     ![Dialogboksen Estimat](./media/subcontract16_estimate-dialog.png)
 
@@ -167,14 +166,14 @@ En produksjonsordre på 10 deler opprettes for produkt D8100, "Lakkert kabinett"
     > [!NOTE]
     > Når produksjonsordren er estimert, genereres bestillingen for servicevare S8050 for leverandør US-801.
 
-12. I handlingsruten, i kategorien **Produksjonsordre** velger du **Stykkliste** for å åpne **Stykkliste**-siden, der du kan vise stykklistelinjene for produksjonsordren.
+12. I handlingsruten, i fanen **Produksjonsordre** velger du **Stykkliste** for å åpne **Stykkliste**-siden, der du kan vise stykklistelinjene for produksjonsordren.
 
     Legg merke til at det er en referanse til bestillingen som ble generert da produksjonsordren ble estimert for servicevare S8050.
 
     ![Stykklistelinjer i produksjonsordre på Stykkliste-siden](./media/subcontract17_production-order-bom-lines.png)
 
 13. Lukk **Stykkliste**-siden for å returnere til siden **Alle produksjonsordrer**.
-14. i handlingsruten, i kategorien **Planlegg** velger du **Planlegg jobber** for å åpne dialogboksen **Finplanlegging**.
+14. i handlingsruten, i fanen **Planlegg** velger du **Planlegg jobber** for å åpne dialogboksen **Finplanlegging**.
 15. Angi følgende verdier:
 
     - Velg **Fremover fra i morgen** i **Planleggingsretning**-feltet.
@@ -183,14 +182,14 @@ En produksjonsordre på 10 deler opprettes for produkt D8100, "Lakkert kabinett"
     ![Dialogboksen Finplanlegging](./media/subcontract18_job-scheduling-dialog.png)
 
 16. Velg **OK** for å lukke dialogboksen **Finplanlegging** og gå tilbake til siden **Alle produksjonsordrer**.
-17. I handlingsruten, i kategorien **Planlegg** velger du **Gantt** for å åpne siden **Gantt-diagram - Ressursvisning**.
+17. I handlingsruten, i fanen **Planlegg** velger du **Gantt** for å åpne siden **Gantt-diagram - Ressursvisning**.
 
     Gantt-diagrammet gir en visuell oversikt over hvordan produksjonsjobbene er planlagt på ressursene. Legg merke til at den eksterne lakkeringen består av tre jobber: en prosessjobb, en transportjobb og en køtidjobb.
 
     ![Gantt-diagram på siden Gantt-diagram - Ressursvisning](./media/subcontract19_gantt-chart.png)
 
 18. Lukk siden **Gantt-diagram - Ressursvisning** for å returnere til siden **Alle produksjonsordrer**.
-19. I handlingsruten, i kategorien **Produksjonsordre** velger du **Frigi** for å åpne dialogboksen **Frigi**.
+19. I handlingsruten, i fanen **Produksjonsordre** velger du **Frigi** for å åpne dialogboksen **Frigi**.
 
     ![Dialogboksen Frigi](./media/subcontract20_release-dialog.png)
 
@@ -205,7 +204,7 @@ En produksjonsordre på 10 deler opprettes for produkt D8100, "Lakkert kabinett"
 
 23. Velg **Produksjonskontroll \> Produksjonsordrer \> Alle produksjonsordrer** for å åpne siden **Alle produksjonsordrer**.
 24. Bruk hurtigfilterfeltet til å velge produksjonsordren du har arbeidet med.
-25. I handlingsruten i kategorien **Lager** velger du **Arbeidsdetaljer** for å åpne **Arbeid**-siden.
+25. I handlingsruten i fanen **Lager** velger du **Arbeidsdetaljer** for å åpne **Arbeid**-siden.
 
     Legg merke til at siden viser to sett med arbeid for råvareplukking. Det første arbeidet er for materialene M8100 og M8101. Disse materialene forbrukes av operasjonen 10. Det andre arbeidet er for materialene M8202 og M8250. Disse materialene forbrukes av operasjon 20, som er operasjonen som er satt ut.
 
@@ -217,13 +216,13 @@ En produksjonsordre på 10 deler opprettes for produkt D8100, "Lakkert kabinett"
 
 27. Velg **Produksjonskontroll \> Produksjonsordrer \> Alle produksjonsordrer** for å åpne siden **Alle produksjonsordrer**.
 28. Bruk hurtigfilterfeltet til å velge produksjonsordren du har arbeidet med.
-29. I handlingsruten, i kategorien **Produksjonsordre** velger du **Start** for å åpne dialogboksen **Start**.
-30. I kategorien **Generelt** angir du følgende verdier:
+29. I handlingsruten, i fanen **Produksjonsordre** velger du **Start** for å åpne dialogboksen **Start**.
+30. I fanen **Generelt** angir du følgende verdier:
 
     - I feltet **Fra oper.nr.** velg **10**.
     - I feltet **Til oper.nr.** velg **10**.
 
-    ![Verdier angitt i kategorien Generelt](./media/subcontract23_start-dialog.png)
+    ![Verdier angitt i fanen Generelt](./media/subcontract23_start-dialog.png)
 
 31. Velg **OK** for å lukke dialogboksen **Start** og gå tilbake til siden **Alle produksjonsordrer**.
 
@@ -233,21 +232,21 @@ En produksjonsordre på 10 deler opprettes for produkt D8100, "Lakkert kabinett"
 
     <!-- TBD – screen shots for processing pick work for the materials. -->
 
-33. I handlingsruten, i kategorien **Produksjonsordre** velger du **Start** for å åpne dialogboksen **Start**.
-34. I kategorien **Generelt** angir du følgende verdier:
+33. I handlingsruten, i fanen **Produksjonsordre** velger du **Start** for å åpne dialogboksen **Start**.
+34. I fanen **Generelt** angir du følgende verdier:
 
     - I feltet **Fra oper.nr.** velg **20**.
     - I feltet **Til oper.nr.** velg **20**.
     - I feltet **Antall** angi **10**.
     - Sett alternativet **Poster plukkliste nå** til **Nei**.
 
-    ![Verdier angitt i kategorien Generelt](./media/subcontract24_general-tab.png)
+    ![Verdier angitt i fanen Generelt](./media/subcontract24_general-tab.png)
 
 35. Velg **OK** for å lukke dialogboksen **Start** og gå tilbake til siden **Alle produksjonsordrer**.
 
     Det opprettes en plukkliste for materialene som skal brukes for lakkeringsoperasjonen, og for servicevaren. Servicevaren representerer kostnaden av operasjonen som er satt ut.
 
-36. I handlingsruten, i kategorien **Vis** velger du **Plukkliste** for å åpne siden **Plukkliste**.
+36. I handlingsruten, i fanen **Vis** velger du **Plukkliste** for å åpne siden **Plukkliste**.
 37. Velg plukklisten som ikke er postert, og velg deretter journalnummeret for å vise journallinjene.
 
     ![Journallinjer på siden Plukkliste](./media/subcontract25_picking-list.png)
@@ -273,7 +272,7 @@ En produksjonsordre på 10 deler opprettes for produkt D8100, "Lakkert kabinett"
 
     ![Bestilling-siden](./media/subcontract29_purchase-order-page.png)
 
-45. I handlingsruten, i kategorien **Kjøp** velger du **Bekreft**.
+45. I handlingsruten, i fanen **Kjøp** velger du **Bekreft**.
 46. Velg **Poster** for å åpne dialogboksen **Poster journal**.
 47. Velg **OK** for å lukke dialogboksen **Poster journal** og gå tilbake til siden **Bestilling**.
 48. Endre enhetsprisen fra **33** til **40**.
@@ -303,6 +302,3 @@ En produksjonsordre på 10 deler opprettes for produkt D8100, "Lakkert kabinett"
     ![Kostnadssammenligningsdiagrammer](./media/subcontract35_cost-comparison-charts.png)
 
 Manglende oppsett i data.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

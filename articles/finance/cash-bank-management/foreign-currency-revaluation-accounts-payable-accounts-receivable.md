@@ -1,5 +1,5 @@
 ---
-title: Revaluering av utenlandsk valuta for leverandører og kunder
+title: Revaluering av valuta for leverandører og kunder
 description: Endringer i valutakursene kan føre til at den teoretiske verdien (bokført verdi) av åpne kundetransaksjoner i utenlandsk valuta varierer over tid. Denne artikkelen inneholder informasjon om prosessen for revaluering av utenlandsk valuta som du kjører for å oppdatere verdien av åpne transaksjoner i leverandører og kunder.
 author: kweekley
 manager: AnnBe
@@ -11,21 +11,20 @@ ms.technology: ''
 ms.search.form: CustExchRateAdjustment, VendExchRateAdjustment
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14211
 ms.assetid: defb1ea5-1f3e-4859-87d8-3f9954d3f388
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fb7a101fa9ef84ec3873bcd8054b8198db8d58c9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ec17572612da7152ca0737cbd9f327d29dc54f8c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446534"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4985243"
 ---
-# <a name="foreign-currency-revaluation-for-accounts-payable-and-accounts-receivable"></a>Revaluering av utenlandsk valuta for leverandører og kunder
+# <a name="currency-revaluation-for-accounts-payable-and-accounts-receivable"></a>Revaluering av valuta for leverandører og kunder
 
 [!include [banner](../includes/banner.md)]
 
@@ -66,6 +65,3 @@ En post opprettholdes hver gang du kjører en revaluering av utenlandsk valuta. 
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

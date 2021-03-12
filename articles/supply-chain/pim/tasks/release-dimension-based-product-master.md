@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: EcoResProductListPage, EcoResProductRelease
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cd207d202c24ced9e29bdfc7386fb6464a838a0e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e45ed2090fe0e8ee1d128d1ed448844bd6741791
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434259"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4983210"
 ---
 # <a name="release-a-dimension-based-product-master"></a>Frigi en dimensjonsbasert produktstandard
 
@@ -32,15 +31,12 @@ Denne fremgangsmåten viser hvordan du frigir en produktstandard som skal brukes
 1. Gå til Behandling av produktinformasjon > Produkter > Produktstandarder.
     * Filtrer kolonnen Konfigurasjonsteknologi slik at bare den dimensjonsbasert konfigurasjonen vises. Du kan for eksempel filtrere kolonnen ved å skrive inn Dimensjon.    
 2. Merk den valgte raden i listen.
-3. Klikk Frigi produkter.
-4. Klikk Neste.
+3. Klikk på Frigi produkter.
+4. Klikk på Neste.
     * Produktvariantene må være opprettet i firmaet der stykklisten skal opprettes for produkter opprettes ved hjelp av dimensjonsbasert konfigurasjon-teknologi.  
-5. Klikk Neste.
+5. Klikk på Neste.
 6. Finn og velg ønsket post i listen.
     * Velg firmaet USMF for denne fremgangsmåten.  
-7. Klikk Neste.
-8. Klikk Finish.
+7. Klikk på Neste.
+8. Klikk på Finish.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

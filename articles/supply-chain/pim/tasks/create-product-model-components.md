@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCComponentList
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f8b640d63776debbe12367439186a72b231d8ada
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 20ba3033dd5917406eb3b8bcb933f26fc120f721
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434403"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4983147"
 ---
 # <a name="create-product-model-components"></a>Opprette produktmodellkomponenter
 
@@ -29,15 +28,12 @@ ms.locfileid: "4434403"
 
 Restriksjonsbaserte produktkonfigurasjonsmodeller bruker komponenter som byggesteiner til å opprette produktmodellstrukturen. Komponentene må opprettes før en produktmodell kan bygges. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
 
-1. Klikk Definisjon av produktvariantmodell.
-2. Klikk Produktkonfigurasjonsmodeller.
-3. Klikk Modell i handlingsruten.
-4. Klikk Komponenter.
-5. Klikk Ny.
+1. Klikk på Definisjon av produktvariantmodell.
+2. Klikk på Produktkonfigurasjonsmodeller.
+3. Klikk på Modell i handlingsruten.
+4. Klikk på Komponenter.
+5. Klikk på Ny.
 6. Skriv inn en verdi i Navn-feltet.
 7. Skriv inn en verdi i feltet Beskrivelse.
 8. Lukk siden.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

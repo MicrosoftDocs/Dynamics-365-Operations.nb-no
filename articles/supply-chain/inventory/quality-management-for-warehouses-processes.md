@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-04-02
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 0f39bd2ffda492fce9b3fe51feafcbc8fd32391c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fd6b4b0c30a8a4cb36955e9b131c937c4db80772
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434684"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4983731"
 ---
 # <a name="quality-management-for-warehouse-processes"></a>Kvalitetsstyring for lagerprosesser
 
@@ -180,14 +179,14 @@ Når **Spesifikasjon av antall**-verdien er _Fullstendig nummerskilt_, styrer fe
 
 | Prøveomfang | Spesifikasjon av antall | Per oppdatert mengde | Per lagringsdimensjon | Stopp telling basert på vare | Per n-te nummerskilt | Resultat |
 |---|---|---|---|---|---|---|
-| Bestilling | Fullstendig nummerskilt | Ja _(låst/ikke redigerbart)_ | <p>Sted: Ja</p><p>Nummerskilt: Ja _(låst/ikke redigerbart)_</p> | Nr. | 3 | <p>**Ordrelinjeantall: 100 EA**</p><ol><li>Registrer mottak i lagerappen for 20 EA, LP1<p>Samplingsarbeid for kvalitetsvare for 20 EA</p><p>Kvalitetsordre 1 for 20 EA</p></li><li>Registrer mottak i lagerappen for 20 EA, LP2<p>Bestillingsarbeid for 20 EA (plassering)</p></li><li>Registrer mottak i lagerappen for 20 EA, LP3<p>Bestillingsarbeid for 20 EA (plassering)</p></li><li>Registrer mottak i lagerappen for 20 EA, LP4<p>Samplingsarbeid for kvalitetsvare for 20 EA</p></li><li>Registrer mottak i lagerappen for 20 EA, LP5<p>Bestillingsarbeid for 20 EA (plassering)</p></li></ol> |
-| Bestilling | Fast antall = 1 | Ja | <p>Sted: Ja</p><p>Nummerskilt: Ja</p> | Nr. | Gjelder ikke | <p>**Ordrelinjeantall: 100**</p><ol><li>Registrer mottak i lagerappen for 20 EA, LP1<p>Samplingsarbeid for kvalitetsvare for 1 EA</p><p>Kvalitetsordre 1 for 1 EA</p><p>Bestillingsarbeid for 19 EA (plassering)</p></li><li>Registrer mottak i lagerappen for 20 EA, LP2<p>Samplingsarbeid for kvalitetsvare for 1 EA</p><p>Kvalitetsordre 1 for 1 EA</p><p>Bestillingsarbeid for 19 (plassering)</p></li><li>Registrer mottak i lagerappen for 20 EA, LP3<p>Samplingsarbeid for kvalitetsvare for 1 EA</p><p>Kvalitetsordre 1 for 1 EA</p><p>Bestillingsarbeid for 19 EA (plassering)</p></li><li>Registrer mottak i lagerappen for 20 EA, LP4<p>Samplingsarbeid for kvalitetsvare for 1 EA</p><p>Kvalitetsordre 1 for 1 EA</p><p>Bestillingsarbeid for 19 EA (plassering)</p></li><li>Registrer mottak i lagerappen for 20 EA, LP5<p>Samplingsarbeid for kvalitetsvare for 1 EA</p><p>Kvalitetsordre 1 for 1 EA</p><p>Bestillingsarbeid for 19 EA (plassering)</p></li></ol> |
-| Bestilling | Prosent = 10 | Nr. | <p>Lokasjon: Nei</p><p>Nummerskilt: Nei</p> | Nr. | Gjelder ikke | <p>**Ordrelinjeantall: 100 EA**</p><ol><li>Registrer mottak i lagerappen for 50 EA, LP1<p>Samplingsarbeid for kvalitetsvare for 10 EA</p><p>Kvalitetsordre 1 for 10 EA</p><p>Bestillingsarbeid for 40 EA (plassering)</p></li><li>Registrer mottak i lagerappen for 50 EA, LP2<p>Bestillingsarbeid for 50 EA (plassering)</p></li></ol> |
-| Belastning | Prosent = 5 | Ja _(låst/ikke redigerbart)_ | <p>Lokasjon: Nei</p><p>Nummerskilt: Nei</p> | Nr. | Gjelder ikke | <p>**Ordrelinjeantall: 500 EA**</p><p>**To laster: første last 200 EA, andre last 300 EA**</p><ol><li>Registrer mottak i lagerappen for første last for 100 EA<p>Samplingsarbeid for kvalitetsvare for 5 EA</p><p>Kvalitetsordre 1 for 5 EA</p><p>Bestillingsarbeid for 95 EA (plassering)</p></li><li>Registrer mottak i lagerappen for første last for 100 EA<p>Samplingsarbeid for kvalitetsvare for 5 EA</p><p>Kvalitetsordre 1 for 5 EA</p><p>Bestillingsarbeid for 95 EA (plassering)</p></li><li>Registrer mottak i lagerappen for andre last for 300 EA<p>Samplingsarbeid for kvalitetsvare for 15 EA</p><p>Kvalitetsordre 1 for 15 EA</p><p>Bestillingsarbeid for 285 EA (plassering)</p></li></ol> |
-| Bestilling | Prosent = 10 | Nr. | <p>Sted: Ja</p><p>Nummerskilt: Ja</p> | Nr. | Gjelder ikke | <p>**Ordrelinjeantall: 100**</p><ol><li>Registrer mottak i lagerappen for 50 EA, LP1<p>Samplingsarbeid for kvalitetsvare for 5 EA</p><p>Kvalitetsordre 1 for 5 EA</p><p>Bestillingsarbeid for 45 EA (plassering)</p></li><li>Registrer mottak i lagerappen for 50 EA, LP2<p>Samplingsarbeid for kvalitetsvare for 5 EA</p><p>Kvalitetsordre 1 for 5 EA</p><p>Bestillingsarbeid for 45 (plassering)</p></li></ol> |
-| Belastning | Fullstendig nummerskilt | Ja _(låst/ikke redigerbart)_ | <p>Sted: Ja</p><p>Nummerskilt: Ja _(låst/ikke redigerbart)_</p> | Nr. | 3 | <p>**To varer:**</p><ul><li>**Ordrelinjeantall for vare A: 120 EA (4 paller)**</li><li>**Ordrelinjeantall for vare B: 90 EA (3 paller)**</li></ul><p>**Én belastning, to belastningslinjer med hver ordrelinje**</p><ol><li>Registrer mottak i lagerappen for vare A, 30 EA, LP1<p>Samplingsarbeid for kvalitetsvare for 30 EA</p><p>Kvalitetsordre 1 for 30 EA</p></li><li>Registrer mottak i lagerappen for vare A, 30 EA, LP2<p>Bestillingsarbeid for 30 EA (plassering)</p></li><li>Registrer mottak i lagerappen for vare A, 30 EA, LP3<p>Bestillingsarbeid for 30 EA (plassering)</p></li><li>Registrer mottak i lagerappen for vare A, 30 EA, LP4<p>Samplingsarbeid for kvalitetsvare for 30 EA</p><p>Kvalitetsordre 1 for 30 EA</p></li><li>Registrer mottak i lagerappen for vare B, 30 EA, LP5<p>Bestillingsarbeid for 30 EA (plassering)</p></li><li>Registrer mottak i lagerappen for vare B, 30 EA, LP6<p>Bestillingsarbeid for 30 EA (plassering)</p></li><li>Registrer mottak i lagerappen for vare A, 30 EA, LP7<p>Samplingsarbeid for kvalitetsvare for 30 EA</p><p>Kvalitetsordre 1 for 30 EA</p></li></ol> |
+| Bestilling | Fullstendig nummerskilt | Ja _(låst/ikke redigerbart)_ | <p>Sted: Ja</p><p>Nummerskilt: Ja _(låst/ikke redigerbart)_</p> | Nei | 3 | <p>**Ordrelinjeantall: 100 EA**</p><ol><li>Registrer mottak i lagerappen for 20 EA, LP1<p>Samplingsarbeid for kvalitetsvare for 20 EA</p><p>Kvalitetsordre 1 for 20 EA</p></li><li>Registrer mottak i lagerappen for 20 EA, LP2<p>Bestillingsarbeid for 20 EA (plassering)</p></li><li>Registrer mottak i lagerappen for 20 EA, LP3<p>Bestillingsarbeid for 20 EA (plassering)</p></li><li>Registrer mottak i lagerappen for 20 EA, LP4<p>Samplingsarbeid for kvalitetsvare for 20 EA</p></li><li>Registrer mottak i lagerappen for 20 EA, LP5<p>Bestillingsarbeid for 20 EA (plassering)</p></li></ol> |
+| Bestilling | Fast antall = 1 | Ja | <p>Sted: Ja</p><p>Nummerskilt: Ja</p> | Nei | Gjelder ikke | <p>**Ordrelinjeantall: 100**</p><ol><li>Registrer mottak i lagerappen for 20 EA, LP1<p>Samplingsarbeid for kvalitetsvare for 1 EA</p><p>Kvalitetsordre 1 for 1 EA</p><p>Bestillingsarbeid for 19 EA (plassering)</p></li><li>Registrer mottak i lagerappen for 20 EA, LP2<p>Samplingsarbeid for kvalitetsvare for 1 EA</p><p>Kvalitetsordre 1 for 1 EA</p><p>Bestillingsarbeid for 19 (plassering)</p></li><li>Registrer mottak i lagerappen for 20 EA, LP3<p>Samplingsarbeid for kvalitetsvare for 1 EA</p><p>Kvalitetsordre 1 for 1 EA</p><p>Bestillingsarbeid for 19 EA (plassering)</p></li><li>Registrer mottak i lagerappen for 20 EA, LP4<p>Samplingsarbeid for kvalitetsvare for 1 EA</p><p>Kvalitetsordre 1 for 1 EA</p><p>Bestillingsarbeid for 19 EA (plassering)</p></li><li>Registrer mottak i lagerappen for 20 EA, LP5<p>Samplingsarbeid for kvalitetsvare for 1 EA</p><p>Kvalitetsordre 1 for 1 EA</p><p>Bestillingsarbeid for 19 EA (plassering)</p></li></ol> |
+| Bestilling | Prosent = 10 | Nei | <p>Lokasjon: Nei</p><p>Nummerskilt: Nei</p> | Nei | Gjelder ikke | <p>**Ordrelinjeantall: 100 EA**</p><ol><li>Registrer mottak i lagerappen for 50 EA, LP1<p>Samplingsarbeid for kvalitetsvare for 10 EA</p><p>Kvalitetsordre 1 for 10 EA</p><p>Bestillingsarbeid for 40 EA (plassering)</p></li><li>Registrer mottak i lagerappen for 50 EA, LP2<p>Bestillingsarbeid for 50 EA (plassering)</p></li></ol> |
+| Belastning | Prosent = 5 | Ja _(låst/ikke redigerbart)_ | <p>Lokasjon: Nei</p><p>Nummerskilt: Nei</p> | Nei | Gjelder ikke | <p>**Ordrelinjeantall: 500 EA**</p><p>**To laster: første last 200 EA, andre last 300 EA**</p><ol><li>Registrer mottak i lagerappen for første last for 100 EA<p>Samplingsarbeid for kvalitetsvare for 5 EA</p><p>Kvalitetsordre 1 for 5 EA</p><p>Bestillingsarbeid for 95 EA (plassering)</p></li><li>Registrer mottak i lagerappen for første last for 100 EA<p>Samplingsarbeid for kvalitetsvare for 5 EA</p><p>Kvalitetsordre 1 for 5 EA</p><p>Bestillingsarbeid for 95 EA (plassering)</p></li><li>Registrer mottak i lagerappen for andre last for 300 EA<p>Samplingsarbeid for kvalitetsvare for 15 EA</p><p>Kvalitetsordre 1 for 15 EA</p><p>Bestillingsarbeid for 285 EA (plassering)</p></li></ol> |
+| Bestilling | Prosent = 10 | Nei | <p>Sted: Ja</p><p>Nummerskilt: Ja</p> | Nei | Gjelder ikke | <p>**Ordrelinjeantall: 100**</p><ol><li>Registrer mottak i lagerappen for 50 EA, LP1<p>Samplingsarbeid for kvalitetsvare for 5 EA</p><p>Kvalitetsordre 1 for 5 EA</p><p>Bestillingsarbeid for 45 EA (plassering)</p></li><li>Registrer mottak i lagerappen for 50 EA, LP2<p>Samplingsarbeid for kvalitetsvare for 5 EA</p><p>Kvalitetsordre 1 for 5 EA</p><p>Bestillingsarbeid for 45 (plassering)</p></li></ol> |
+| Belastning | Fullstendig nummerskilt | Ja _(låst/ikke redigerbart)_ | <p>Sted: Ja</p><p>Nummerskilt: Ja _(låst/ikke redigerbart)_</p> | Nei | 3 | <p>**To varer:**</p><ul><li>**Ordrelinjeantall for vare A: 120 EA (4 paller)**</li><li>**Ordrelinjeantall for vare B: 90 EA (3 paller)**</li></ul><p>**Én belastning, to belastningslinjer med hver ordrelinje**</p><ol><li>Registrer mottak i lagerappen for vare A, 30 EA, LP1<p>Samplingsarbeid for kvalitetsvare for 30 EA</p><p>Kvalitetsordre 1 for 30 EA</p></li><li>Registrer mottak i lagerappen for vare A, 30 EA, LP2<p>Bestillingsarbeid for 30 EA (plassering)</p></li><li>Registrer mottak i lagerappen for vare A, 30 EA, LP3<p>Bestillingsarbeid for 30 EA (plassering)</p></li><li>Registrer mottak i lagerappen for vare A, 30 EA, LP4<p>Samplingsarbeid for kvalitetsvare for 30 EA</p><p>Kvalitetsordre 1 for 30 EA</p></li><li>Registrer mottak i lagerappen for vare B, 30 EA, LP5<p>Bestillingsarbeid for 30 EA (plassering)</p></li><li>Registrer mottak i lagerappen for vare B, 30 EA, LP6<p>Bestillingsarbeid for 30 EA (plassering)</p></li><li>Registrer mottak i lagerappen for vare A, 30 EA, LP7<p>Samplingsarbeid for kvalitetsvare for 30 EA</p><p>Kvalitetsordre 1 for 30 EA</p></li></ol> |
 | Belastning | Fullstendig nummerskilt | Ja _(låst/ikke redigerbart)_ | <p>Sted: Ja</p><p>Nummerskilt: Ja _(låst/ikke redigerbart)_</p> | Ja | 3 | <p>**To varer:**</p><ul><li>**Ordrelinjeantall for vare A: 120 EA (4 paller)**</li><li>**Ordrelinjeantall for vare B: 90 EA (3 paller)**</li></ul><p>**Én belastning, to belastningslinjer med hver ordrelinje**</p><ol><li>Registrer mottak i lagerappen for vare A, 30 EA, LP1<p>Samplingsarbeid for kvalitetsvare for 30 EA</p><p>Kvalitetsordre 1 for 30 EA</p></li><li>Registrer mottak i lagerappen for vare A, 30 EA, LP2<p>Bestillingsarbeid for 30 EA (plassering)</p></li><li>Registrer mottak i lagerappen for vare A, 30 EA, LP3<p>Bestillingsarbeid for 30 EA (plassering)</p></li><li>Registrer mottak i lagerappen for vare A, 30 EA, LP4<p>Samplingsarbeid for kvalitetsvare for 30 EA</p><p>Kvalitetsordre 1 for 30 EA</p></li><li>Registrer mottak i lagerappen for vare B, 30 EA, LP5<p>Samplingsarbeid for kvalitetsvare for 30 EA</p><p>Kvalitetsordre 1 for 30 EA</p></li><li>Registrer mottak i lagerappen for vare B, 30 EA, LP6<p>Bestillingsarbeid for 30 EA (plassering)</p></li><li>Registrer mottak i lagerappen for vare A, 30 EA, LP7<p>Bestillingsarbeid for 30 EA (plassering)</p></li></ol> |
-| Belastning | Prosent = 10 | Ja _(låst/ikke redigerbart)_ | <p>Lokasjon: Nei</p><p>Nummerskilt: Nei</p> | Nr. | Gjelder ikke | <p>**Ordrelinjeantall: 100 EA**</p><p>**Ingen belastninger opprettes. Ordreområde brukes.**</p><ol><li>Registrer mottak i lagerappen for 50 EA, LP1<p>Samplingsarbeid for kvalitetsvare for 5 EA</p><p>Kvalitetsordre 1 for 5 EA</p><p>Bestillingsarbeid for 45 EA (plassering)</p></li><li>Registrer mottak i lagerappen for 50 EA, LP2<p>Samplingsarbeid for kvalitetsvare for 5 EA</p><p>Kvalitetsordre 1 for 5 EA</p><p>Bestillingsarbeid for 45 EA (plassering)</p></li></ol> |
+| Belastning | Prosent = 10 | Ja _(låst/ikke redigerbart)_ | <p>Lokasjon: Nei</p><p>Nummerskilt: Nei</p> | Nei | Gjelder ikke | <p>**Ordrelinjeantall: 100 EA**</p><p>**Ingen belastninger opprettes. Ordreområde brukes.**</p><ol><li>Registrer mottak i lagerappen for 50 EA, LP1<p>Samplingsarbeid for kvalitetsvare for 5 EA</p><p>Kvalitetsordre 1 for 5 EA</p><p>Bestillingsarbeid for 45 EA (plassering)</p></li><li>Registrer mottak i lagerappen for 50 EA, LP2<p>Samplingsarbeid for kvalitetsvare for 5 EA</p><p>Kvalitetsordre 1 for 5 EA</p><p>Bestillingsarbeid for 45 EA (plassering)</p></li></ol> |
 
 Når en arbeider validerer en av kvalitetsordrene som vises i den forrige tabellen, genererer systemet automatisk kvalitetsordrearbeid for å flytte lagerbeholdningen fra kvalitetskontroll-lokasjonen til lokasjonen som er definert i lokasjonsdirektivet for arbeidsordretypen _Kvalitetsordre_. Du kan definere en hvilken som helst lokasjon for dette formålet, for eksempel en retur- eller lagringslokasjon, avhengig av testresultatet for kvalitetsordren. Hvis du vil ha et eksempel på dette oppsettet, kan du se [eksempelscenarioet](#example-scenario) på slutten av dette emnet.
 
@@ -275,7 +274,7 @@ Når kvalitetsordrene er validerert, prøver systemet å opprette kvalitetsordre
 Du kan avbryte arbeidet som er opprettet for sampling for kvalitetsvare. Følg denne fremgangsmåten for å kontrollere hva som skjer når dette arbeidet er avbrutt.
 
 1. Gå til **Lagerstyring \> Oppsett \> Lagerstyringsparametere**.
-1. I kategorien **Generelt** i **Arbeid**-hurtigfanen angir du alternativet **Opphev registrering av mottak ved avbryting av arbeid** til en av følgende verdier:
+1. I fanen **Generelt** i **Arbeid**-hurtigfanen angir du alternativet **Opphev registrering av mottak ved avbryting av arbeid** til en av følgende verdier:
 
     - **Ja** – Når samplingsarbeidet for kvalitetsvare avbrytes, slettes den tilknyttede kvalitetsordren, og beholdningen avregistreres.
     - **Nei** – Når samplingsarbeidet for kvalitetsvare avbrytes, slettes ikke den tilknyttede kvalitetsordren, og beholdningen avregistreres ikke.
@@ -408,19 +407,19 @@ Opprett en kvalitetstilknytning som vil bruke den nye vareprøven.
 1. I hurtigfanen **Betingelser** angir du **Gjeldende lagertype**-feltet til *Kvalitetsstyring bare for lagerprosesser*.
 1. I hurtigfanen **Kvalitetsordreprosess** setter du feltet **Policy for kvalitetsbehandling** til _Opprett kvalitetsordre_.
 1. I hurtigfanen **Spesifikasjoner** høyreklikker du i **Testgruppe**-feltet, og deretter velger du **Vis detaljer** for å åpne siden **Testgrupper**.
-1. Opprett en testgruppe på siden **Testgruppe** i kategorien **Oversikt** i det øvre rutenettet, og angi følgende verdier:
+1. Opprett en testgruppe på siden **Testgruppe** i fanen **Oversikt** i det øvre rutenettet, og angi følgende verdier:
 
     - **Testgruppe:** _QMS_
     - **Beskrivelse:** _QMS-test_
     - **Akseptabelt antall:** _100_
     - **Vareprøve:** _Tredje LP_ (velg)
 
-1. Legg til en post for en test i kategorien **Oversikt** i det nedre rutenettet, og angi følgende verdier:
+1. Legg til en post for en test i fanen **Oversikt** i det nedre rutenettet, og angi følgende verdier:
 
     - **Sekvens:** *1*
     - **Test:** *Omslutningsmåling*
 
-1. I kategorien **Test** i det nedre rutenettet angir du følgende verdier:
+1. I fanen **Test** i det nedre rutenettet angir du følgende verdier:
 
     - **Testvariabler:** *Bestått/mislykket*
     - **Standardresultat:** *Bestått*
@@ -528,7 +527,7 @@ Du vil nå fortsette med det nødvendige grunnoppsettet for arbeidsklassen, arbe
     - **Lager:** *51*
 
 1. I handlingsruten velger du **Rediger spørring** for å åpne dialogboksen for redigeringsprogram for spørring.
-1. Angi følgende verdier i kategorien **Område**:
+1. Angi følgende verdier i fanen **Område**:
 
     - **Tabell:** *Kvalitetsordrer*
     - **Felt:** *Status*
@@ -545,7 +544,7 @@ Du vil nå fortsette med det nødvendige grunnoppsettet for arbeidsklassen, arbe
     - **Navn:** *bestått*
 
 1. I hurtigfanen **Lokasjonsdirektivhandlinger** velger du **Rediger spørring** for å åpne dialogboksen for redigeringsprogram for spørring.
-1. Angi følgende verdier i kategorien **Område**:
+1. Angi følgende verdier i fanen **Område**:
 
     - **Tabell:** *Plasseringer*
     - **Felt:** *Sone-ID*
@@ -561,7 +560,7 @@ Du vil nå fortsette med det nødvendige grunnoppsettet for arbeidsklassen, arbe
     - **Lager:** *51*
 
 1. I handlingsruten velger du **Rediger spørring** for å åpne dialogboksen for redigeringsprogram for spørring.
-1. Angi følgende verdier i kategorien **Område**:
+1. Angi følgende verdier i fanen **Område**:
 
     - **Tabell:** *Kvalitetsordrer*
     - **Felt:** *Status*
@@ -578,7 +577,7 @@ Du vil nå fortsette med det nødvendige grunnoppsettet for arbeidsklassen, arbe
     - **Navn:** *mislykket*
 
 1. I hurtigfanen **Lokasjonsdirektivhandlinger** velger du **Rediger spørring** for å åpne dialogboksen for redigeringsprogram for spørring.
-1. Angi følgende verdier i kategorien **Område**:
+1. Angi følgende verdier i fanen **Område**:
 
     - **Tabell:** *Plasseringer*
     - **Felt:** *Sone-ID*
@@ -622,6 +621,3 @@ Du har definert arbeids- og plasseringsdataene for lager 51 for å sikre at arbe
 
 > [!NOTE]
 > Vurder å legge til kvalitet ut-oppføringen i et menyelement for mobilenhet der aktivitetskoden er *Vis åpen arbeidsliste*. Hvis du vil ha et eksempel, se menyelementet mobilenhet med navnet **Arbeidsliste** i demodataene. Legg først til *Kvalitetsordre*-arbeidsklassen i et brukerstyrt menyelement, fordi denne arbeidsklassen kreves for at arbeid skal vises i arbeidslisten. Legg deretter til *Kvalitetsordre*-arbeidsklassen i menyelementet **Arbeidsliste**. Brukere som har tilgang til arbeidslisten, vil da kunne plukke og behandle arbeidet som genereres automatisk av kvalitetsordrevalidering.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

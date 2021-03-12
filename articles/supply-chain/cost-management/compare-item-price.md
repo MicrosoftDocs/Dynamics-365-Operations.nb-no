@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace, InventItemPriceCompareStorage, InventItemPriceCompareStorageDetailsChart, InventItemPriceCompareStorageDetails
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 73e43a685f390fd718028de6add0370dfcd6cf3b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6554aec1991080f4a14aedb3440ff3dfd32e9b61
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434608"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4983980"
 ---
 # <a name="compare-item-prices-storage-report"></a>Rapport for sammenligning av lagervarepriser
 
@@ -105,7 +104,7 @@ Nedenfor vises et eksempel på hvordan du eksporterer en rapport for **sammenlig
 
 1. Vanligvis eksporterer du én rapport om gangen. Hvis du vil gjøre dette, definerer du et **filter** for raden du nettopp la til, i **Forespørsel**-ruten. På denne måten kan du definere hvilke rapporter fra enheten **Sammenlign varepriser** som du vil inkludere i eksporten. Angi følgende filteralternativer for å eksportere en enkelt rapport:
 
-    - I kategorien **Område** velger du **Legg til** for å legge til en ny rad.
+    - I fanen **Område** velger du **Legg til** for å legge til en ny rad.
     - Sett **Tabell** til **Sammenlign varepriser**.
     - Sett **Avledet tabell** til **Sammenlign varepriser**.
     - Sett **Felt** til feltet som du vil filtrere etter. Vanligvis vil du bruke **Kjørenavn** eller **Kjøretid**.
@@ -116,11 +115,8 @@ Nedenfor vises et eksempel på hvordan du eksporterer en rapport for **sammenlig
 
 1. Velg **Lagre** for å lagre eksportoppsettet.
 
-1. Åpne kategorien **Eksportalternativer**, og velg **Eksporter nå** for å generere eksportfilen.
+1. Åpne fanen **Eksportalternativer**, og velg **Eksporter nå** for å generere eksportfilen.
 
 1. Siden **Kjøringssammendrag** åpnes, der du kan se statusen for eksportjobben og en liste over enheter som ble eksportert. Velg enheten **Sammenlign varepriser** som er oppført i området **Behandlingsstatus for enhet**, og velg deretter **Last ned fil** for å laste ned dataene som er eksportert fra denne enheten.
 
 Hvis du vil ha mer informasjon om hvordan du bruker databehandling til å eksportere data, se [Oversikt over dataimport- og -eksportjobber](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

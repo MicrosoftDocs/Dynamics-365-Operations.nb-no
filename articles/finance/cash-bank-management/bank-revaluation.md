@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: BankCurrencyRevalHistory
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: f99a5ed82fd4d74a5d20620dbe19b4f18e332432
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5b7d2e33c1edb36227a76453d1981aec5babbf75
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446492"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4985368"
 ---
 # <a name="bank-foreign-currency-revaluation"></a>Bankrevaluering av utenlandsk valuta
 
@@ -88,6 +87,3 @@ Transaksjonen for revaluering av utenlandsk valuta er også delt på tvers av di
 Hvis du må tilbakeføre revalueringstransaksjonen, velger du **Tilbakefør transaksjon** på handlingssiden på siden **Revaluering av utenlandsk valuta**. Det opprettes en ny historisk post for revaluering av utenlandsk valuta for å beholde det historiske revisjonssporet for når revalueringen skjedde eller ble tilbakeført.
 
 Hvis du vil reversere flere revalueringer, må du tilbakeføre den nyeste revalueringen først. Deretter fortsetter du å tilbakeføre eldre revalueringer i datorekkefølgen. Du kan deretter behandle nye revalueringer for periodene som du tilbakeførte.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

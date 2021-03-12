@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: PCProductConfigurationModelDetails, PCProductConfigurationModelListPage, PCModalWaitDialog, PCTemplateConfigurationManager, PCConfigurationUIGrouping
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 4031
 ms.assetid: 70b968e8-e550-4731-823d-d713b8910f7b
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 87d61203d36722194b98a247609fa126b71b846c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e82eb3fcfe4347b7faa4c775e9909a792e2b9baf
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434180"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4983322"
 ---
 # <a name="product-configuration-models-overview"></a>Oversikt over produktkonfigurasjonsmodeller
 
@@ -79,7 +78,7 @@ Hvis attributtypen er <strong>Boolsk</strong>, <strong>Heltall</strong> med et o
 <li>Uttrykksbegrensninger kan bare brukes for komponenten som de er tilknyttet. Uttrykksbegrensningene for en komponent kan referere attributter for delkomponenter for komponenten. Produktkonfigurasjonsløseren brukes til å løse begrensningene, og du må bruke problemløsersyntaksen når du skriver begrensningene. Hvis du vil ha mer informasjon, kan du se emnekoblingen om uttrykksbegrensninger og tabellbegrensninger.</li>
 <li>Tabellbegrensninger må defineres før de kan brukes på en komponent i en produktkonfigurasjonsmodell. Tabellbegrensninger kan være enten brukerdefinerte eller systemdefinerte. En brukerdefinert tabellbegrensning er en matrisetype som kan brukes til å beskrive settet med kombinasjoner for attributtverdiene som er angitt av attributtyper. Hvis for eksempel høyttalere blir produsert, kan matrisen for en brukerdefinert tabellbegrensningen inneholde kolonner for høyttalerutførelse og grill.</li>
 </ul>
-<strong>Eksempel</strong> Høyttalere som er tilgjengelige i fire utførelser: svart, eik, Rosewood og hvitt. Høyttalerne kan ha én av tre frontgriller: svart, metall eller hvit. Svart er tilgjengelig for alle griller, men de andre utførelsene er begrenset til spesifikke griller. Tabellen nedenfor viser et eksempel på informasjonen som vises i kategorien <strong>Tillatte kombinasjoner</strong> på siden <strong>Rediger tabellbegrensning</strong>.
+<strong>Eksempel</strong> Høyttalere som er tilgjengelige i fire utførelser: svart, eik, Rosewood og hvitt. Høyttalerne kan ha én av tre frontgriller: svart, metall eller hvit. Svart er tilgjengelig for alle griller, men de andre utførelsene er begrenset til spesifikke griller. Tabellen nedenfor viser et eksempel på informasjonen som vises i fanen <strong>Tillatte kombinasjoner</strong> på siden <strong>Rediger tabellbegrensning</strong>.
 <table>
 <thead>
 <tr class="header">
@@ -132,7 +131,7 @@ En systemdefinert tabellbegrensning representerer en tilordning mellom et attrib
 <li>Velg <strong>Produktstandard</strong> i feltet <strong>Produktets undertype</strong>.</li>
 <li>I feltet <strong>Konfigurasjonsteknologi</strong> velger du <strong>Restriksjonsbasert konfigurasjon</strong>.</li>
 </ul>
-Du kan vise om et utgitt produkt kan brukes som en komponent eller delkomponent i kategorien <strong>Generelt</strong> på siden <strong>Detaljer om frigitt produkt</strong>. Hvis <strong>Restriksjonsbasert konfigurasjon</strong> er valgt i feltet <strong>Konfigurasjonsteknologi</strong>, kan produktet brukes som en komponent eller delkomponent. Du kan skjule delkomponenter, slik at de ikke vises for brukeren under en konfigurasjonsøkt. Attributter, delkomponenter og brukerkrav som er tilknyttet delkomponenten, skjules også.</td>
+Du kan vise om et utgitt produkt kan brukes som en komponent eller delkomponent i fanen <strong>Generelt</strong> på siden <strong>Detaljer om frigitt produkt</strong>. Hvis <strong>Restriksjonsbasert konfigurasjon</strong> er valgt i feltet <strong>Konfigurasjonsteknologi</strong>, kan produktet brukes som en komponent eller delkomponent. Du kan skjule delkomponenter, slik at de ikke vises for brukeren under en konfigurasjonsøkt. Attributter, delkomponenter og brukerkrav som er tilknyttet delkomponenten, skjules også.</td>
 </tr>
 <tr class="odd">
 <td>Brukerkrav</td>
@@ -153,6 +152,3 @@ Du kan vise om et utgitt produkt kan brukes som en komponent eller delkomponent 
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: RetailAssortmentDetails
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: prabhup
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 86c6ecf9ef67ca3ac4ed3c44d930acaa965112b6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4f0801828086a7c5cc316895b5426a184a345ce1
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414725"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4982412"
 ---
 # <a name="sell-and-return-products-that-arent-part-of-a-stores-assortment"></a>Selge og returnere produkter som ikke er en del av butikksortimentet
 
@@ -46,6 +45,3 @@ Disse vanlige scenarioene er tilgjengelige for forhandlere ved hjelp av Commerce
 + Plukke produkter i den gjeldende butikken eller annen butikk.
 + Annullere en ordre i den gjeldende butikken eller annen butikk.
 + Returnere en ordre med eller uten mottaket i den gjeldende butikken eller annen butikk.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

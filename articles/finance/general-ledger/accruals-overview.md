@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: LedgerAccuralTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14131
 ms.assetid: 0489b59a-37a7-4a78-87bf-4b597e9efad9
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4b97055f7eac12e3e82d028a0097ca926e5c355a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 23d4ab4a3a14a3068daf49090db6ffab4fb586ff
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446356"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4985068"
 ---
 # <a name="accruals-overview"></a>Oversikt over avsetninger
 
@@ -46,6 +45,3 @@ Når du registrerer en journal, kan du klikke **Finansavsetninger** på **Funksj
 
 
 Hvis du vil ha mer informasjon, se [Opprette avsetningsplaner](tasks/create-accrual-schemes.md) og [Opprette finansavsetningstransaksjoner](tasks/create-ledger-accrual-transactions.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -10,16 +10,15 @@ ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 933f743b5b4fe9e97a80543478c1154ca290cbff
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b6f8bcd987bc3532aea4676f4e5494feaefbe324
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446449"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4984940"
 ---
 # <a name="learning-catalog-for-microsoft-partner-sales-and-marketing-roles-for-dynamics-365-finance"></a>Opplæringskatalog for salg og markedsføring for Microsoft-partnere i Dynamics 365 Finance
 
@@ -42,6 +41,3 @@ Katalogen nedenfor er ordnet fra kjernekunnskap til bestemte områder, og fra de
 | Innhold | beskrivelse  | Formater  |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
 | [Grunnleggende om Dynamics 365](https://docs.microsoft.com/learn/certifications/d365-fundamentals?wt.mc_id=learningredirect_certs-web-wwl) | Vis at du forstår Microsoft Dynamics 365, Power Platform, skybegreper, lisensieringsalternativer og alternativer for distribusjon og frigivelse. | Eksamen: kostnaden varierer etter område |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

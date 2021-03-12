@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: b049559b64045e80a40afd99bac30a9cfe1d0580
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: db0d78c7a6fa69aa4e0c4c82f92c33daabda073f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434593"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4983347"
 ---
 # <a name="set-up-hazardous-materials"></a>Konfigurere farlige materialer
 
@@ -83,11 +82,11 @@ Hver forskrift kan ha et hvilket som helst antall utskriftsoppsett. Du definerer
 | Fast tekst | Hvis du setter feltet **Utskriftsfelt** til **Fast tekst** eller **Begrenset antall**, skriver du inn teksten som skal skrives ut. |
 | Inkluder i utskrift | Velg hvilken verdi eller hvilke verdier fra det valgte utskriftsfeltet som skal skrives ut for denne raden. Du kan skrive ut koden, beskrivelsen eller både koden og beskrivelsen. |
 
-### <a name="mode-of-delivery-fasttab"></a>Hurtigkategorien Leveringsmåte
+### <a name="mode-of-delivery-fasttab"></a>Hurtigfanen Leveringsmåte
 
 Forskriften er en delt tabell og er ikke spesifikk for hver juridiske enhet. Leveringsmåter er imidlertid spesifikke for juridiske enheter. Når du definerer en leveringsmåte, må du derfor velge relasjonen mellom forskrifter, juridisk enhet og leveringsmåte.
 
-Følgende tabell beskriver feltene som er tilgjengelige i hurtigkategorien **Leveringsmåte**.
+Følgende tabell beskriver feltene som er tilgjengelige i hurtigfanen **Leveringsmåte**.
 
 | Felt | beskrivelse |
 |---|---|
@@ -98,7 +97,7 @@ Følgende tabell beskriver feltene som er tilgjengelige i hurtigkategorien **Lev
 
 For referanseformål kan du føre opp landene eller regionene som reguleringen er relevant for. Når forsendelsesrapporter kjøres, brukes imidlertid bare leveringsmåten til å bestemme forskriften. Når du går gjennom en lagerforsendelse, er det ikke en direktekobling til leveringsmåten. Forsendelsen kan være knyttet til en transportør og transportørtjeneste. Når du definerer en transportørtjeneste, må du knytte den til en leveringsmåte. Denne relasjonen blir brukt på forsendelsesrapporter, for eksempel fraktbrevet, til å finne forsendelsesutskriftsteksten for en vare.
 
-Følgende tabell beskriver feltet som er tilgjengelig i hurtigkategorien **Land**.
+Følgende tabell beskriver feltet som er tilgjengelig i hurtigfanen **Land**.
 
 | Felt | beskrivelse |
 |---|---|
@@ -112,7 +111,7 @@ Hvis du vil administrere farlige materialdefinisjoner, følger du disse trinnene
 
 1. Gå til **Behandling av produktinformasjon \> Oppsett \> Forsendelsesdokumentasjon for farlig materiale \> Forskrifter for farlig materiale**.
 2. Velg forskriften det skal konfigureres en farlig materiale-definisjon for.
-3. Velg **Farlige materialer** i kategorien **Oppsett** i handlingsruten.
+3. Velg **Farlige materialer** i fanen **Oppsett** i handlingsruten.
 4. I **Materialkode**-feltet angir du en materialkode for definisjonen for farlig materiale. Du velger denne verdien når du bruker materialkoden i et frigitt produkt.
 
     Feltet **Reguleringskode** er skrivebeskyttet og viser forskriften du valgte i trinn 2.
@@ -284,6 +283,3 @@ Hvis du vil definere verdier for denne spesifikasjonen, kan du gå til **Behandl
 Spesifikasjonen *Tunnel for farlig materiale* begrenser typene av tunneler som et farlig materiale kan transporteres gjennom ved å identifisere tunneltypene som må brukes. Tunnelkategorier etableres etter gjeldende bestemmelser for transport av farlig materiale. Denne spesifikasjonen gjelder vanligvis bare for veitransport.
 
 Hvis du vil definere verdier for denne spesifikasjonen, kan du gå til **Behandling av produktinformasjon \> Oppsett \> Forsendelsesdokumentasjon for farlig materiale \> Tunnel for farlig materiale**. På siden **Tunnel for farlig materiale** kan du opprette et hvilket som helst antall tunnelidentifikatorer og konfigurere hver med en identifikasjonskode og en kort beskrivelse.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

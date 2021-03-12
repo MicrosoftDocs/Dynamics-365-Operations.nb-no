@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 188c339ddf5f5c2488133924e9a0288f218f495c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1bb96d117eb3bb2b54be1a376c8789ad73d5fec8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434444"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4983372"
 ---
 # <a name="hazardous-materials-inquiries-and-reports"></a>Forespørsler og rapporter om farlige materialer
 
@@ -40,7 +39,7 @@ Følgende illustrasjon viser rekkefølgen av aktiviteter som oppstår når syste
 Hvis du leverer varer som inneholder farlige materialer, må du vanligvis generere bestemte rapporter for å ivareta sikkerheten og overholde forskrifter for farlige materialer. Gjør følgende for å konfigurere rapportene.
 
 1. Gå til **Lagerstyring \> Oppsett \> Lagerstyringsparametere**.
-2. Åpne kategorien **Rapporter**. På hurtigfanen for **rapportparameter for farlig materiale** angir du følgende felt.
+2. Åpne fanen **Rapporter**. På hurtigfanen for **rapportparameter for farlig materiale** angir du følgende felt.
 
     | Del | Felt | beskrivelse |
     |---|---|---|
@@ -67,19 +66,19 @@ For å vise denne rapporten går du til **Behandling av produktinformasjon \> Fo
 
 Hvis du vil ha mer informasjon om hvordan du angir lagergrenser for et frigitt produkt, kan du se [Angi lagringsgrenser for farlige produkter](hazmat-items.md#stock-limits).
 
-Forskriften som brukes for lagergrenser, er definert på siden **Lagerstyringsparametere**. Gå til **Lagerstyring \> Oppsett \> Lagerstyringsparametere**, og deretter, i kategorien **Rapporter** i **Grense for farlig lagerbeholdning**, angir du en forskriftskode. Hvis du vil ha mer informasjon, kan du se [Definere rapportering av farlige materialer](#set-up) tidligere i dette emnet.
+Forskriften som brukes for lagergrenser, er definert på siden **Lagerstyringsparametere**. Gå til **Lagerstyring \> Oppsett \> Lagerstyringsparametere**, og deretter, i fanen **Rapporter** i **Grense for farlig lagerbeholdning**, angir du en forskriftskode. Hvis du vil ha mer informasjon, kan du se [Definere rapportering av farlige materialer](#set-up) tidligere i dette emnet.
 
 ## <a name="verified-gross-mass-report"></a>Rapporten Bekreftet bruttomasse
 
 Med rapporten **Bekreftet bruttomasse** kan du skrive ut informasjon om vekten til en forsendelse.
 
-Hvis du vil generere og skrive ut denne rapporten, går du til **Lagerstyring \> Forsendelser \> Alle forsendelser** og åpner den relevante forsendelsen. Deretter, i handlingsruten i kategorien **Forsendelser** i gruppen **Dokument for farlige materialer**, velger du **Bekreftet bruttomasse**.
+Hvis du vil generere og skrive ut denne rapporten, går du til **Lagerstyring \> Forsendelser \> Alle forsendelser** og åpner den relevante forsendelsen. Deretter, i handlingsruten i fanen **Forsendelser** i gruppen **Dokument for farlige materialer**, velger du **Bekreftet bruttomasse**.
 
 ## <a name="multimodal-dangerous-goods-report"></a>Rapporten Flermodale farlige varer
 
 Rapporten **Flermodale farlige varer** tilbys for forsendelser som må flyttes ved hjelp av en kombinasjon av transportmetoder. Det brukes vanligvis når en forsendelse flyttes først på vei og deretter på sjøen.
 
-Hvis du vil generere og skrive ut denne rapporten, går du til **Lagerstyring \> Forsendelser \> Alle forsendelser** og åpner den relevante forsendelsen. Deretter, i handlingsruten i kategorien **Forsendelser** i gruppen **Dokument for farlige materialer**, velger du **Flermodale farlige varer**.
+Hvis du vil generere og skrive ut denne rapporten, går du til **Lagerstyring \> Forsendelser \> Alle forsendelser** og åpner den relevante forsendelsen. Deretter, i handlingsruten i fanen **Forsendelser** i gruppen **Dokument for farlige materialer**, velger du **Flermodale farlige varer**.
 
 Når du genererer denne rapporten, lagres informasjonen slik at du kan redigere den og/eller skrive ut rapporten på nytt hvis du trenger det. Hvis du vil redigere en generert rapport, kan du gå til **Lagerstyring \> Forespørsler og rapporter \> Forsendelsesdokumentasjon for farlige materialer \> Flermodale farlige varer** og finne den relevante rapporten i listen. Når du er ferdig med å redigere innholdet som du ønsker, velger du **Skriv ut** i handlingsruten for å skrive ut rapporten.
 
@@ -87,13 +86,13 @@ Når du genererer denne rapporten, lagres informasjonen slik at du kan redigere 
 
 Rapporten **Speditørdeklarasjon** lar deg skrive ut informasjon som er knyttet til en deklarering av materialene som er inkludert i forsendelsen.
 
-Hvis du vil generere og skrive ut denne rapporten, går du til **Lagerstyring \> Forsendelser \> Alle forsendelser** og åpner den relevante forsendelsen. Deretter, i handlingsruten i kategorien **Forsendelser** i gruppen **Dokument for farlige materialer**, velger du **Speditørdeklarasjon**.
+Hvis du vil generere og skrive ut denne rapporten, går du til **Lagerstyring \> Forsendelser \> Alle forsendelser** og åpner den relevante forsendelsen. Deretter, i handlingsruten i fanen **Forsendelser** i gruppen **Dokument for farlige materialer**, velger du **Speditørdeklarasjon**.
 
 ## <a name="carriage-of-merchandise-by-road-report"></a>Rapporten Transport av salgsvarer på vei
 
 Rapporten **Transport av salgsvarer på vei** ligner på et fraktbrev, men brukes vanligvis til veitransport i Europa i henhold til avtalen som gjelder forskrifter som er knyttet til den internasjonale transporten av farlig gods på veier (ADR). Denne rapporten bruker utskriftsteksten for levering for en vare, med mindre du angir feltet **Beskrivelse av farlig materialgruppe** på siden **Lagerstyringsparametere**.
 
-Hvis du vil generere og skrive ut denne rapporten, går du til **Lagerstyring \> Forsendelser \> Alle forsendelser** og åpner den relevante forsendelsen. Deretter, i handlingsruten i kategorien **Forsendelser** i gruppen **Dokument for farlige materialer**, velger du **Transport av salgsvarer på vei**.
+Hvis du vil generere og skrive ut denne rapporten, går du til **Lagerstyring \> Forsendelser \> Alle forsendelser** og åpner den relevante forsendelsen. Deretter, i handlingsruten i fanen **Forsendelser** i gruppen **Dokument for farlige materialer**, velger du **Transport av salgsvarer på vei**.
 
 Når du genererer denne rapporten, lagres informasjonen slik at du kan redigere den og/eller skrive ut rapporten på nytt hvis du trenger det. Hvis du vil redigere en generert rapport, kan du gå til **Lagerstyring \> Forespørsler og rapporter \> Forsendelsesdokumentasjon for farlige materialer \> Transport av salgsvarer på vei** og finne den relevante rapporten i listen. Når du er ferdig med å redigere innholdet som du ønsker, velger du **Skriv ut** i handlingsruten for å skrive ut rapporten.
 
@@ -101,7 +100,7 @@ Når du genererer denne rapporten, lagres informasjonen slik at du kan redigere 
 
 Rapporten **Forsendelsessammendrag** gir informasjon som oppsummeres av transportkategorien som er knyttet til de frigitte varene.
 
-Hvis du vil generere og skrive ut denne rapporten, går du til **Lagerstyring \> Forsendelser \> Alle forsendelser** og åpner den relevante forsendelsen. Deretter, i handlingsruten i kategorien **Forsendelser** i gruppen **Dokument for farlige materialer**, velger du **Forsendelsessammendrag**.
+Hvis du vil generere og skrive ut denne rapporten, går du til **Lagerstyring \> Forsendelser \> Alle forsendelser** og åpner den relevante forsendelsen. Deretter, i handlingsruten i fanen **Forsendelser** i gruppen **Dokument for farlige materialer**, velger du **Forsendelsessammendrag**.
 
 ## <a name="bill-of-lading-report"></a>Rapporten Fraktbrev
 
@@ -110,6 +109,3 @@ Når funksjonen for farlige materialer er aktivert i systemet, inneholder rappor
 ## <a name="packing-list-report"></a>Rapporten Følgeseddelliste
 
 Når funksjonen for farlige materialer er aktivert i systemet, inkluderer følgeseddellister tilleggsinformasjon som er knyttet til forsendelsesteksten for en vare. Denne rapporten er tilgjengelig fra siden **Alle laster** som vanlig.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

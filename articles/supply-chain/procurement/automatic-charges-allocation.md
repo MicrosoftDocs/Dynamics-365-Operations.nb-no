@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-10-01
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 818affc7591577b69309928eb9b0e71130884cec
-ms.sourcegitcommit: 66ecc6cb36ef4f723c77e09d6a33f9c42f8fa392
+ms.openlocfilehash: 8067285237127bd43e8ff24166a15506cc0426f4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434708"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4983177"
 ---
 # <a name="automatic-allocation-of-charges"></a>Automatisk tilordning av tillegg
 
@@ -156,8 +155,8 @@ Følgende fremgangsmåte viser hvordan du tildeler gebyrer på hodenivå til en 
 1. Åpne bestillingen eller tilleggsordren.
 1. I hurtigruten følger du ett av disse trinnene:
 
-    - For bestillinger: I **Kjøp**-kategorien, i **Tillegg**-gruppen, velger du **Tilordne tillegg**.
-    - For salgsordrer: I **Salg**-kategorien, i **Tillegg**-gruppen, velger du **Tilordne tillegg**.
+    - For bestillinger: I **Kjøp**-fanen, i **Tillegg**-gruppen, velger du **Tilordne tillegg**.
+    - For salgsordrer: I **Salg**-fanen, i **Tillegg**-gruppen, velger du **Tilordne tillegg**.
 
 1. I dialogboksen **Tilordne tillegg til ordrelinjer** angir du følgende felt:
 
@@ -177,6 +176,3 @@ Følgende fremgangsmåte viser hvordan du tildeler gebyrer på hodenivå til en 
         > Når du arbeider med rutenettet **Velg linjer som skal utelates fra tildeling**, må du huske å la rutenettet være åpent til du velger **Tildel**. Hvis du lukker rutenettet før du velger **Tildel**, vil innstillingene i rutenettet gå tapt. Tillegg vil derfor bli fordelt basert på kriteriene du har definert tidligere.
 
 1. Velg **Tildel** for å bruke innstillingene og lukke dialogboksen.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

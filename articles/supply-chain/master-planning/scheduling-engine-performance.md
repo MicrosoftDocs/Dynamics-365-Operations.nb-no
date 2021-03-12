@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 19311
 ms.assetid: 5ffb1486-2e08-4cdc-bd34-b47ae795ef0f
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1c1b940754021956998fe27ba16020d4b16aedf1
-ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
+ms.openlocfilehash: 2c39a72d22c01faec3856e7f47cb6b3811447cab
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434721"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4983447"
 ---
 # <a name="improve-scheduling-engine-performance"></a>Forbedre ytelsen til planleggingsmotoren
 
@@ -63,7 +62,7 @@ Planleggingsmotoren har en mer abstrakt datamodell enn Supply Chain Management-d
 
 Tenk deg for eksempel at du kan se en rute som vises i tabellen og bildet nedenfor, som ser relativt enkel ut.
 
-| Oper. Nr. | Prioritet | Oppstillingstid | Kjøretid | Køtid etter | Antall ressurser | Next |
+| Oper. Nei. | Prioritet | Oppstillingstid | Kjøretid | Køtid etter | Antall ressurser | Next |
 | --- | --- | --- | --- | --- | --- | --- |
 | 10 | Primær | 1.00 | 2.00 | | 1 | 20 |
 | 10 | Sekundær&nbsp;1 | | | | 1 | 20 |
@@ -240,7 +239,7 @@ Belastningen fra jobbplanlegging for alle ressursene som er inkludert i ressursg
 
 *Tilgjengelig kapasitet for ressursgruppe = kapasitet for ressurser i gruppen basert på kalenderen &ndash; planlagt jobbelastning på ressursene i gruppen &ndash; planlagt driftsbelastning på ressursene i gruppen &ndash; planlagt driftsbelastning på ressursgruppen*
 
-I kategorien **Ressurskrav** i ruteoperasjonen, kan ressurskravene angis ved hjelp av en bestemt ressurs (i så fall planlegges operasjonen ved å bruke denne ressursen), for en ressursgruppe, for en ressurstype eller for én eller flere funksjoner, ferdighet, kurs eller sertifikat. Selv om bruk av alle disse alternativene gir en større fleksibilitet for ruteutformingen, kan det også komplisere planleggingen for motoren etter hvert som det må tas hensyn til kapasitet per "egenskap" (det abstrakte navnet som brukes i motoren for funksjonalitet, ferdighet og så videre).
+I fanen **Ressurskrav** i ruteoperasjonen, kan ressurskravene angis ved hjelp av en bestemt ressurs (i så fall planlegges operasjonen ved å bruke denne ressursen), for en ressursgruppe, for en ressurstype eller for én eller flere funksjoner, ferdighet, kurs eller sertifikat. Selv om bruk av alle disse alternativene gir en større fleksibilitet for ruteutformingen, kan det også komplisere planleggingen for motoren etter hvert som det må tas hensyn til kapasitet per "egenskap" (det abstrakte navnet som brukes i motoren for funksjonalitet, ferdighet og så videre).
 
 Ressursgruppens kapasitet for en funksjon er summen av kapasiteten for alle ressurser i ressursgruppen som har den aktuelle funksjonen. Hvis en ressurs i gruppen har en funksjon, vurderes den uansett hvilket kapasitetsnivå som kreves.
 
@@ -329,6 +328,3 @@ Verdien for **Tidsavbrudd for optimaliseringsforsøk** styrer hvor mange sekunde
 
 > [!NOTE]
 > Verdiene som angis for tidsavbruddet, brukes både for planlegging av frigitte produksjonsordrer og planlagte ordrer som en del av MRP. Dermed kan det å sette svært høye verdier øke kjøretiden i MRP betydelig når det kjøres for en plan med mange planlagte produksjonsordrer.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
