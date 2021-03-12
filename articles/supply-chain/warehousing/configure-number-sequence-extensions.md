@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSNumberSequenceExt
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: e6faab834b4c1c514bcc23a59d74e2bd0e069754
-ms.sourcegitcommit: a26e4963d40796da21ce6581cfb2f4d9db4f6776
+ms.openlocfilehash: fa4074c23baa74983f4922d2d09d7da81c943bfe
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "4434850"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4973841"
 ---
 # <a name="configure-number-sequences-for-warehouse-flows"></a>Konfigurer nummerserier for lagerflyter
 
@@ -52,8 +51,8 @@ Før du kan bruke funksjonen må den være aktivert i systemet. Administratorer 
 Følg denne fremgangsmåten for å definere nummerserieutvidelser i systemet.
 
 1. Gå til **Lagerstyring \> Oppsett \> Lagerstyringsparametere**.
-1. I kategorien **Generelt** i feltet **GS1-firmaprefiks** angir du firmaets GS1-prefiks. Denne verdien vil påvirke alle nummerserier der GS1-prefikset er inkludert som et segment.
-1. Hvis du vil generere BOL-numre for bølgeetiketter, merker du av for å **generere BOL-nummer ved utskrift av bølgeetiketter** i kategorien **Rapporter**.
+1. I fanen **Generelt** i feltet **GS1-firmaprefiks** angir du firmaets GS1-prefiks. Denne verdien vil påvirke alle nummerserier der GS1-prefikset er inkludert som et segment.
+1. Hvis du vil generere BOL-numre for bølgeetiketter, merker du av for å **generere BOL-nummer ved utskrift av bølgeetiketter** i fanen **Rapporter**.
 
     > [!NOTE]
     > Denne avmerkingsboksen er bare tilgjengelig hvis funksjonaliteten for [bølgeetikettutskrift](configure-wave-label-printing.md) er slått på.
@@ -64,7 +63,7 @@ Følg denne fremgangsmåten for å definere nummerserieutvidelser i systemet.
     Hvis du vil ha mer informasjon om hvordan du tilpasser disse standard nummerseriene og/eller legger til nye sekvenser, kan du se neste del. Du kan også fjerne noen av disse sekvensene hvis du ikke trenger dem.
 
 1. Gå tilbake til **Lagerstyring \> Oppsett \> Lagerstyringsparametere**.
-1. I kategorien **Nummerserier** velger du en relevant nummerserieutvidelse som skal brukes til å generere numre for lisensplate-IDer, bølgeIDer, container-IDer (i dette tilfellet velge riktig **SSCC-18-nummer**-serie) og/eller Bol-IDer (i dette tilfellet velger du **BOL**-sekvensen). Som standard støttes nummerserieutvidelser bare for disse fire typene av IDer.
+1. I fanen **Nummerserier** velger du en relevant nummerserieutvidelse som skal brukes til å generere numre for lisensplate-IDer, bølgeIDer, container-IDer (i dette tilfellet velge riktig **SSCC-18-nummer**-serie) og/eller Bol-IDer (i dette tilfellet velger du **BOL**-sekvensen). Som standard støttes nummerserieutvidelser bare for disse fire typene av IDer.
 
 Neste gang et nytt nummer genereres for en av disse nummerseriene, blir den nye logikken brukt.
 
@@ -92,6 +91,3 @@ Følg denne fremgangsmåten for å opprette og redigere nummerserier.
     | Kontrollsiffer | Denne segmenttypen legger til et kontrollsiffer, som er en modulus 10-beregning. (Denne virkemåten samsvarer med den eksisterende logikken for nummerskilt-IDer.) For denne segmenttypen er **Verdi**-feltet alltid satt til et cirkumflekstegn (*^*), og **Lengde**-feltet er alltid satt til *1*. |
 
 1. Hvis du vil vise et eksempel på det endelige tallformatet, kontrollerer du **Format**-feltet nederst i hurtigfanen **Segmenter**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

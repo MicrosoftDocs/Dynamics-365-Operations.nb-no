@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailParameters, RetailPeriodicDiscount,
 audience: Application User, IT Pro
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 89643
 ms.assetid: 09843c9a-3e19-4e4a-a8ce-80650f2095f9
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 565722da65cbb711acedb5acf7de4edfbd615314
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 747c67812b0a357c35778c82531e9db7e99e510b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414656"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4972713"
 ---
 # <a name="determine-the-optimal-combination-of-overlapping-discounts"></a>Bestemme den optimale kombinasjonen av overlappende rabatter
 
@@ -84,6 +83,3 @@ For å løse problemet med et eksponentielt økende antall kombinasjoner som må
 ![Formel for beregning av marginal verdi](./media/overlapping-discount-combo-06.jpg)
 
 Etter marginalverdien av hver rabatt i et delt sett med produkter er beregnet, brukes rabattene på de delte produktene i rekkefølge, utførlig, fra høyeste marginalverdi til laveste marginalverdi. Alle gjenværende rabattmuligheter blir ikke sammenlignet hver gang etter en enkelt forekomst av en rabatt er brukt for denne metoden. I stedet er overlappende rabatter sammenlignet én gang og brukes deretter i rekkefølge. Ingen flere sammenligninger utføres. Du kan konfigurere grenseverdien for å bytte til metoden med marginalverdi i kategorien **Rabatt** på siden **Handelsparametere**. Akseptabel tid til å beregne den totale rabatten varierer på tvers av bransjer for detaljhandel. Nå er imidlertid denne tiden vanligvis mellom noen titalls millisekunder til ett sekund.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -19,11 +19,11 @@ ms.author: jcart
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: 627c8959b1845fbad761a85bdca7dc93bfc6a105
-ms.sourcegitcommit: ffb5998e611b83c2e4f98323f39e3e8f6419c652
+ms.sourcegitcommit: d02fae79d5c02a4bc4f4b16a410c2f5ce026c204
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "4419982"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "4970662"
 ---
 # <a name="manage-employee-leave"></a>Administrere ansattpermisjon
 
@@ -56,6 +56,3 @@ Du kan inkludere en årsakskode og kommentar når du justerer en ansatts permisj
 
 - [Oversikt over permisjon og fravær](hr-leave-and-absence-overview.md)
 - [Administrere forespørsler om permisjon og fravær](hr-employee-self-service-manage-requests.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

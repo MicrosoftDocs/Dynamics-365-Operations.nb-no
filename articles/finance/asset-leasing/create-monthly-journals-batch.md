@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: a2293f6bd3ce66832996652c3bfca0fc4bc73782
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 7f46f289c58c32c535dd20fb510cf2812625c49c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4446593"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4971334"
 ---
 # <a name="create-monthly-journal-entries-in-a-batch"></a>Opprette månedlige journaloppføringer i en bunke
 
@@ -37,6 +36,3 @@ Hvis du vil konfigurere en satsvis jobb eller behandle betalingsfakturaer, avskr
 > Påfølgende transaksjoner, for eksempel nedbetalingsplaner for gjeld, betalinger, avskrivning og utgifter, posteres bare etter at den opprinnelige føringen for tilsvarende leieavtaler er postert.
 >
 > Journaloppføringene opprettes, men de blir ikke postert før du velger **Kjør**-kommandoen.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

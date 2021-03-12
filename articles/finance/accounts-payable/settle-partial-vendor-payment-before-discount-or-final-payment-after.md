@@ -1,5 +1,5 @@
 ---
-title: Utligne en delvis leverandørbetaling før rabattdatoen med en endelige betaling etter rabattdatoen
+title: Utligne en delvis leverandørbetaling før rabattdatoen og en endelige betaling etter rabattdatoen
 description: Denne artikkelen veileder deg gjennom et scenario der flere delvise betalinger foretas, noen innenfor kontantrabattperioden og andre utenfor kontantrabattperioden.
 author: abruer
 manager: AnnBe
@@ -11,21 +11,20 @@ ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14411
 ms.assetid: 302ad6ae-28ee-4899-9f6b-f74424a5f50c
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 731d0a1ad0af47d98455ba2e609a48e092a67d3f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5a30bd1c032d27405c17388465eb813d6c87c270
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446241"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4971984"
 ---
-# <a name="settle-a-partial-vendor-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>Utligne en delvis leverandørbetaling før rabattdatoen med en endelige betaling etter rabattdatoen
+# <a name="settle-partial-payment-before-discount-date-and-final-payment-after-discount-date"></a>Utligne en delvis leverandørbetaling før rabattdatoen og en endelige betaling etter rabattdatoen
 
 [!include [banner](../includes/banner.md)]
 
@@ -122,6 +121,3 @@ April posterer deretter betalingen. Når hun åpner siden **Leverandørtransaksj
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

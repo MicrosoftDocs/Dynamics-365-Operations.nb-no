@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ReqDemPlanDefaultAlgorithmParameters, ReqDemPlanForecastParameters
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 72653
 ms.assetid: c5fa4b09-512d-4349-ac51-cc13da69a160
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6d0de588d54948d89f636cadeb66c3d9e6878015
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b7b0976494a8bb128ae6bb40cbcdf7c691185f23
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434652"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4970512"
 ---
 # <a name="demand-forecasting-setup"></a>Oppsett av behovsprognose
 
@@ -73,19 +72,19 @@ Hvis du vil generere prognosen, bruker Supply Chain Management en Machine Learni
 > [!NOTE]
 > Azure-lagringskontonavnet og -nøkkel kreves bare hvis du bruker en egendefinert lagring-konto. Hvis du distribuerer den lokale versjonen, må du ha en konto for egendefinert lagring på Azure, slik at Machine Learning får tilgang til historiske data. 
 
-Hvis du vil opprette behovsprediksjoner, kan du distribuere din egen tjeneste ved å bruke Machine Learning Studio eller behovsprognoseeksperimenter for Supply Chain Management. Instruksjoner for distribusjon av behovsprognoseeksperimenter som en webtjeneste er tilgjengelige i Supply Chain Management. På siden **Parametere for behovsprognose** klikker du **Azure Machine Learning** kategorien.
+Hvis du vil opprette behovsprediksjoner, kan du distribuere din egen tjeneste ved å bruke Machine Learning Studio eller behovsprognoseeksperimenter for Supply Chain Management. Instruksjoner for distribusjon av behovsprognoseeksperimenter som en webtjeneste er tilgjengelige i Supply Chain Management. På siden **Parametere for behovsprognose** klikker du **Azure Machine Learning** fanen.
 
 ## <a name="settings-for-the-demand-forecasting-machine-learning-service"></a>Innstillinger for behovsprognose for Machine Learning-tjenesten
-Hvis du vil vise parametere som kan konfigureres for behovsprognosetjenesten, kan du gå til **Hovedplanlegging** &gt; **Oppsett** &gt; **Behovsprognose** &gt; **Prognosealgoritmeparametere**. Siden **Prognosealgoritmeparametere** viser standardverdiene for parameterne. Du kan overskrive disse parameterne på siden **Parametere for behovsprognose**. Bruk kategorien **Generelt** for å overskrive parameterne globalt, eller bruk kategorien **Varefordelingsnøkler** for å overskrive parameterne pr. varefordelingsnøkkel. Parametere som er overskrevet med en varefordelingsnøkkel påvirker bare prognosen for varer som er knyttet til denne varefordelingsnøkkelen.
+Hvis du vil vise parametere som kan konfigureres for behovsprognosetjenesten, kan du gå til **Hovedplanlegging** &gt; **Oppsett** &gt; **Behovsprognose** &gt; **Prognosealgoritmeparametere**. Siden **Prognosealgoritmeparametere** viser standardverdiene for parameterne. Du kan overskrive disse parameterne på siden **Parametere for behovsprognose**. Bruk fanen **Generelt** for å overskrive parameterne globalt, eller bruk fanen **Varefordelingsnøkler** for å overskrive parameterne pr. varefordelingsnøkkel. Parametere som er overskrevet med en varefordelingsnøkkel påvirker bare prognosen for varer som er knyttet til denne varefordelingsnøkkelen.
 
 ### <a name="forecast-algorithm-parameters"></a>Prognosealgoritmeparametere
 
-I kategorien **Tilordningsnøkler** kan du angi parameterne **Prognosealgoritmeparametere** for hver varefordelingsnøkkel. Følgende alternativer er tilgjengelige:
+I fanen **Tilordningsnøkler** kan du angi parameterne **Prognosealgoritmeparametere** for hver varefordelingsnøkkel. Følgende alternativer er tilgjengelige:
 - **Konfidensnivåprosent**: Konfidensintervallet består av et verdiområde som fungerer som gode estimater for behovsprognosen. En konfidensnivåprosent på 95 % angir at det er 5 % risiko for at det fremtidige behovet faller utenfor området for konfidensintervallet.
 - **Fremtving sesongavhengighet**: Angir om modellen skal tvinges til å bruke en bestemt type sesongavhengighet. Gjelder bare for ARIMA og ETS. Alternativer: AUTO (standard), INGEN, ADDITIVE, MULTIPLIKATIV.
 - **Prognosemodell**: Alternativer: ARIMA, ETS, STL, ETS+ARIMA, ETS+STL, ALLE. Hvis du vil velge best mulig tilpasningsmodell, bruker du **ALLE**.
 - **Maksimal prognoseverdi**: Angir den største verdien som kan brukes for prognoser. Format: +1E[n] eller numerisk konstant.
-- **Minste prognoseverdi**: Angir den minste verdien som kan brukes for prognoser. Format: –1E[n] eller numerisk konstant.
+- **Minste prognoseverdi**: Angir den minste verdien som kan brukes for prognoser. Format: -1E[n] eller numerisk konstant.
 - **Mangler verdierstatning**: Angir hvordan hull i historiske data fylles. Alternativer: numerisk verdi, GJENNOMSNITT, FORRIGE, INTERPOLERT LINEÆR, INTERPOLERT POLYNOMISK.
 - **Mangler verdierstatningsområde**: Angir om verdierstatning bare gjelder for dataområdet for hvert enkelt detaljattributt eller for hele datasettet. Alternativer: GRANULARITY_ATTRIBUTE (standard), GLOBAL.
 - **Tips om sesongavhengighet**: For sesongbaserte data angir du et tips til prognosemodellen for å forbedre prognosenøyaktigheten. Format: heltall, som representerer antallet perioder som et behovsmønster gjentar seg selv etter. Fyll for eksempel inn 6 for data som gjentar seg selv hver sjette måned.
@@ -102,6 +101,3 @@ I kategorien **Tilordningsnøkler** kan du angi parameterne **Prognosealgoritmep
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

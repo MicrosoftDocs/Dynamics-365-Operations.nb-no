@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a90f5706c87d398f495fae40f42f6c2d408b1c2a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8b381ec0535676b77a62bc748fd2ca1c521839ae
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414520"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4972461"
 ---
 # <a name="retail-sales-price-management"></a>Salgsprisbehandling for Retail
 
@@ -240,6 +239,3 @@ I tillegg støtter **bare** prissettingsmotoren følgende prissettingsfunksjoner
 Pris er en av de viktigste faktorene som styrer kjøpsavgjørelsene for mange kunder, og mange kunder sammenligner priser på ulike områder før de gjør et kjøp. For å bidra til å sikre at de gir konkurransedyktige priser, følger forhandleren nøye med på konkurrentene og utfører ofte kampanjer. For å hjelpe disse forhandlerne med å tiltrekke seg kunder, er det svært viktig at produktsøket, bla gjennom-funksjonen, listene og produktlister-siden viser de mest nøyaktige prisene.
 
 I en kommende frigivelse av Commerce vil API-et for **GetActivePrices** returnere priser som inkluderer enkle rabatter (for eksempel rabatter som ikke er avhengige av andre varer i handlekurven). På denne måten er prisene som vises, nær det faktiske beløpet kundene skal betale for varer. Denne API-en inneholder alle typer enkle rabatter: tilknytningsbaserte, lojalitetsbaserte, katalogbaserte og kanalbaserte rabatter. I tillegg vil API-en returnere navnene og gyldighetsinformasjonen for de brukte rabattene, slik at forhandlerne kan gi en mer detaljert beskrivelse av prisen og skape en følelse av viktighet hvis rabattgyldigheten utløper snart.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

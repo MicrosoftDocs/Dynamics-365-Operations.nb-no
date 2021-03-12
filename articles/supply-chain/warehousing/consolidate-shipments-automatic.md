@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSFilterGroupTable, WHSShipmentConsolidation, WHSFilterGenerallyAvail
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: ac3ab25dc1355ee15e1209950ff0f3b3933b7095
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 376c7418b61c0192f9071a879b50b9ece7699894
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434751"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4970362"
 ---
 # <a name="consolidate-shipments-when-they-are-released-to-the-warehouse-by-using-automatic-release-of-sales-orders"></a>Konsolidere forsendelser når de frigis til lageret ved hjelp av automatisk frigivelse av salgsordrer
 
@@ -244,8 +243,8 @@ For hvert sett med salgsordrer du har opprettet tidligere, fullfører du de tre 
 
 1. Gå til **Lagerstyring \> Frigi til lager \> Automatisk frigivelse av salgsordrer**.
 1. Angi verdien *Alle* for feltet **Antall som skal frigis**.
-1. I hurtigkategorien **Poster som skal inkluderes** velger du **Filter** for å åpne dialogboksen for spørring.
-1. Velg **Legg til** i kategorien **Område** for å legge til en rad som har følgende innstillinger i rutenettet:
+1. I hurtigfanen **Poster som skal inkluderes** velger du **Filter** for å åpne dialogboksen for spørring.
+1. Velg **Legg til** i fanen **Område** for å legge til en rad som har følgende innstillinger i rutenettet:
 
     - **Tabell:** *Salgsordre*
     - **Avledet tabell:** *Salgsordre*
@@ -318,6 +317,3 @@ Når du er ferdig, skal du kunne se at fire forsendelser ble opprettet:
 
 - [Policyer for forsendelseskonsolidering](about-shipment-consolidation-policies.md)
 - [Konfigurere policyer for forsendelseskonsolidering](configure-shipment-consolidation-policies.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

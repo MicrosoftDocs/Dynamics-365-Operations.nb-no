@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: InventPackagingGroup, InventPackagingMaterialCode, InventPackagingMaterialFee, InventPackagingMaterialTrans, InventPackagingMaterialTransPurch, InventPackagingUnit
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 2194
 ms.assetid: 040b65dc-43c9-4256-b69f-b2d6e736fbe9
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2020-02-19
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1061f336701461df7a2cf78661788e4c6100c84d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e5364336c5336cbb91caf3c03564f68371273079
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434292"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4973641"
 ---
 # <a name="packing-materials-and-fees"></a>Pakkematerialer og -gebyrer
 
@@ -44,7 +43,7 @@ Du kan definere én eller flere emballasjeenheter for én enkelt vare, for en va
 Før du kan beregne emballasjematerialevekt, emballasjematerialegebyrer eller begge deler, må du aktivere beregningen og definere hvilke materialer og gebyrer varene skal gjelde for.
 
 1. Gå til **Lagerstyring \> Oppsett \> Parametere for beholdnings- og lagerstyring**.
-1. I kategorien **Generelt**, i delen **Emballasjemateriale**, angir du **Beregn emballasjegebyrer** til **Ja**.
+1. I fanen **Generelt**, i delen **Emballasjemateriale**, angir du **Beregn emballasjegebyrer** til **Ja**.
 1. Gå til **Lagerstyring \> Oppsett \> Emballasjemateriale \> Emballasjegrupper**, og opprett alle emballasjegruppene du bruker. Alle varene i en emballasjegruppe vil bruke samme emballasjematerialefordeling. Hvis du ikke bruker emballasjegrupper, kan du hoppe over dette trinnet.
 
     > [!TIP]
@@ -112,6 +111,3 @@ Du kan skrive ut emballasjematerialets vekten på en faktura og angi hvem som be
 
 1. Gå til **Kunder \> Oppsett \> Kundeparametere**.
 1. På fanen **Oppdateringer**, på hurtigfanen **Faktura**, angir du **Skriv ut emballasjevekt** til **Ja**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

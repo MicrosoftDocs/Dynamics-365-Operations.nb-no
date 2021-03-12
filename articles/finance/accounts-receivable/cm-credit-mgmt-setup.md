@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0b25bbeb270f33d1d158de2091ab86e7e98be98a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 98ea865812a0ef187697fadbfc6f576df6595db4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446361"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4971759"
 ---
 # <a name="credit-management-parameters-setup"></a>Oppsett av parametere for kredittbehandling
 
@@ -79,6 +78,3 @@ Flere kredittbehandlingsstatistikker er inkludert i faktaboksen **Statistikk for
 ### <a name="number-sequences-and-shared-number-sequence-parameters"></a>Nummerserier og parametere for delt nummerserie
 
 Det kreves en journal-ID for å behandle justeringer av kredittgrense. Du må legge til kredittgrensejusteringsnummeret som skal brukes til å generere journal-ID-en.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSWorkProcessingPolicy, WHSWorkDeferredPutProcessingTask
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-6-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: cc8321c55bc867db065af0cddf356fb497a956e8
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: c85dd895e18805da2d1daf5f90f64db82bdc0116
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434746"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4973791"
 ---
 # <a name="deferred-processing-of-warehouse-work"></a>Utsatt behandling av lagerarbeid
 
@@ -110,6 +109,3 @@ Arbeidsområdet **Overvåking av utgående arbeid** har to fliser som hjelper de
 ## <a name="deleting-completed-tasks"></a>Slette fullførte oppgaver
 
 Du kan slette utsatte plasseringsoppgaver som er fullført, ved å merke dem og slette dem på siden.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

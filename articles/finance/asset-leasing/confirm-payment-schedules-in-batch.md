@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: b5a90b96ac598d145e2b0697627de04731b55f59
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 9c680ea16e9f64107fde081c7e7763697356dcc1
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4446598"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4971384"
 ---
 # <a name="confirm-asset-leasing-payment-schedules-in-a-batch"></a>Bekrefte betalingsplaner for aktivaleie i en bunke
 
@@ -42,6 +41,3 @@ Hvis du vil bekrefte flere betalingsplaner, følger du denne fremgangsmåten.
     - Hvis du vil bekrefte alle tablåer, aktiverer du parameteren **For alle tablåer**.
 
 Informasjon for de nylig bekreftede bøkene vises på siden **Bekreftede tablåer**. Etter at betalingsplanene er bekreftet, kan journaloppføringene for opprinnelig føring posteres mot leieavtalen.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
