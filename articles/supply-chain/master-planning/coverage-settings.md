@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ReqGroup, ReqItemTable, ReqItemTableWizard, ReqItemTableSetup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 2494
 ms.assetid: 5a95ae4f-ca75-47d9-a1c3-68c97b42f166
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b1134f734f1025151a56b2a72266a6baa5763ba4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0aaacf28701542d329afedd8206a12f7c11b7ac7
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434654"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4999987"
 ---
 # <a name="coverage-settings"></a>Dekningsinnstillinger
 
@@ -36,11 +35,11 @@ Du kan angi dekningsinnstillinger på flere måter:
 
 - Angi dekningsinnstillinger for en dekningsgruppe.
 
-    Du kan opprette en dekningsgruppe som inneholder innstillinger for alle produkter som er koblet til dekningsgruppen. Hvis du vil opprette en dekningsgruppe, går du til **Hovedplanlegging &gt; Oppsett &gt; Dekning &gt; Dekningsgrupper**. Du kan koble en dekningsgruppe til et produkt. Hvis koblingen er spesifikk for et område, lager eller produktdimensjon, kan du bruke **Dekningsgruppe**-feltet på **Varedekning**-siden. Hvis koblingen er generisk, uavhengig av produktdimensjonene, bruker du **Dekningsgruppe**-feltet i **Plan**-hurtigkategorien på **Produktdetaljer**-siden. Hvis du ikke kobler en dekningsgruppe til et produkt, bruker hovedplanlegging som standard den generelle dekningsgruppen som er angitt på siden **Hovedplanleggingsparametere**.
+    Du kan opprette en dekningsgruppe som inneholder innstillinger for alle produkter som er koblet til dekningsgruppen. Hvis du vil opprette en dekningsgruppe, går du til **Hovedplanlegging &gt; Oppsett &gt; Dekning &gt; Dekningsgrupper**. Du kan koble en dekningsgruppe til et produkt. Hvis koblingen er spesifikk for et område, lager eller produktdimensjon, kan du bruke **Dekningsgruppe**-feltet på **Varedekning**-siden. Hvis koblingen er generisk, uavhengig av produktdimensjonene, bruker du **Dekningsgruppe**-feltet i **Plan**-hurtigfanen på **Produktdetaljer**-siden. Hvis du ikke kobler en dekningsgruppe til et produkt, bruker hovedplanlegging som standard den generelle dekningsgruppen som er angitt på siden **Hovedplanleggingsparametere**.
 
 - Angi dekningsinnstillinger for et produkt.
 
-    Du kan opprette dekningsinnstillinger for et bestemt produkt. Gå til **Behandling av produktinformasjon &gt; Produkter &gt; Frigitte produkter**. Velg produktet. I handlingsruten, i kategorien **Plan** i **Dekning**-gruppen, velger du **Varedekning** for å åpne **Varedekning**-siden. Hvis produktet allerede er koblet til en dekningsgruppe, kan du overstyre innstillingene for dekningsgruppen ved å bruke **Overstyr**-feltet. Dekningsinnstillingene på **Varedekning**-siden har prioritet over innstillingene på **Dekningsgruppe**-siden.
+    Du kan opprette dekningsinnstillinger for et bestemt produkt. Gå til **Behandling av produktinformasjon &gt; Produkter &gt; Frigitte produkter**. Velg produktet. I handlingsruten, i fanen **Plan** i **Dekning**-gruppen, velger du **Varedekning** for å åpne **Varedekning**-siden. Hvis produktet allerede er koblet til en dekningsgruppe, kan du overstyre innstillingene for dekningsgruppen ved å bruke **Overstyr**-feltet. Dekningsinnstillingene på **Varedekning**-siden har prioritet over innstillingene på **Dekningsgruppe**-siden.
 
 - Angi dekningsinnstillinger for et produkt ved hjelp av en veiviser.
 
@@ -66,6 +65,3 @@ Hver etterfyllingsmetode tilordnes én av følgende dekningskoder:
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Oversikt over hovedplaner](master-plans.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

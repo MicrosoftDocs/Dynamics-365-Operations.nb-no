@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSTroubIeshootingSeIfService, WHSTroubleshootingSelfService
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: daa8f0d19de75e6c126fe7a5fe312bca24c89bdc
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: ae4062401cd5be2371c45642b78bf3708b04f664
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434770"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5001204"
 ---
 # <a name="cancel-warehouse-work-for-exception-handling"></a>Avbryte lagerarbeid for unntaksbehandling
 
@@ -45,6 +44,3 @@ Bare arbeid av typen **Salg**, **Utstedelse for overføring**, **Råvareplukking
 Hvis du vil oppheve blokkeringen av arbeidet, avbryter systemet alle gjenværende arbeidslinjer og reparerer lagerdataene som er knyttet til arbeids-IDen som brukeren har angitt. Eventuelle vanlige lagerhåndteringsoperasjoner som involverer det berørte vareantallet, kan deretter fortsette.
 
 Hvis du vil plassere den berørte varen på en bestemt lokasjon etter at arbeidet er annullert, må brukeren bruke en lagerbevegelse eller antallsjusteringsoperasjon på en mobil enhet.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

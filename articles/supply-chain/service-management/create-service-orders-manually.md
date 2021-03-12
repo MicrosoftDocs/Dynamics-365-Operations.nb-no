@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SMAServiceOrderTable, SMAAgreementTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 51cfdb94a368df9e7082af3c768c79df44000342
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f2c10990f96fecf55e005650257f83c28423203b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434435"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5001421"
 ---
 # <a name="create-service-orders-manually"></a>Opprette serviceordrer manuelt    
 
@@ -37,11 +36,11 @@ Du kan opprette serviceordrer manuelt ved å bruke en serviceavtale eller ved å
 
 ## <a name="create-a-service-order-manually-from-a-service-agreement"></a>Opprette en serviceordre manuelt fra en serviceavtale
 
-1.  Klikk **Servicestyring** \> **Felles** \> **Serviceavtaler** \> **Serviceavtaler**.
+1.  Klikk på **Servicestyring** \> **Felles** \> **Serviceavtaler** \> **Serviceavtaler**.
 
 2.  Velg en serviceavtale eller opprett en ny serviceavtale.
 
-3.  Klikk fanen **Lever**, og i **Opprett**-gruppen klikker du **Planlagte serviceordrer** for å åpne skjemaet **Opprett serviceordre**.
+3.  Klikk på fanen **Lever**, og i **Opprett**-gruppen klikker du **Planlagte serviceordrer** for å åpne skjemaet **Opprett serviceordre**.
 
 ## <a name="create-a-service-order-manually-in-the-service-orders-form"></a>Opprette en serviceordre manuelt i Serviceordrer-skjemaet
 
@@ -58,7 +57,7 @@ Du kan opprette serviceordrer manuelt ved å bruke en serviceavtale eller ved å
 
 1.  Klikk på **Prosjektstyring og regnskap** \> **Felles** \> **Prosjekter** \> **Alle prosjekter**.
 
-2.  I skjemaet **Prosjekter** i **handlingsruten** klikker du kategorien **Administrer** \> og klikker **Tjeneste** \> **Tjenesteordrer**.
+2.  I skjemaet **Prosjekter** i **handlingsruten** klikker du fanen **Administrer** \> og klikker **Tjeneste** \> **Tjenesteordrer**.
 
 3.  Følg forrige fremgangsmåte for å opprette en serviceordre manuelt i **Serviceordrer**-skjemaet. Feltet **Prosjekt-ID** viser prosjektreferansen.
 
@@ -69,7 +68,7 @@ Du kan opprette serviceordrer manuelt ved å bruke en serviceavtale eller ved å
 
 Du kan opprette en serviceordre fra skjemaet **Salgsordrer** ved å bruke veiviseren **Opprett en ny serviceordre basert på salgsordren**.
 
-1.  Klikk **Salg og markedsføring** \> **Vanlig** \> **Salgsordrer** \> **Alle salgsordrer**.
+1.  Klikk på **Salg og markedsføring** \> **Vanlig** \> **Salgsordrer** \> **Alle salgsordrer**.
 
 2.  Åpne den relevante salgsordren.
 
@@ -91,7 +90,7 @@ Du kan opprette en serviceordre fra skjemaet **Salgsordrer** ved å bruke veivis
     
       - I feltet **Kontakt-ID** velger du personen i kundens firma som skal kontaktes angående serviceordren.
 
-6.  Klikk **Neste \>**, og klikk deretter **Fullfør**.
+6.  Klikk på **Neste \>**, og klikk deretter **Fullfør**.
 
 
 ## <a name="see-also"></a>Se også
@@ -102,6 +101,3 @@ Du kan opprette en serviceordre fra skjemaet **Salgsordrer** ved å bruke veivis
 
 [Opprette serviceordrer (klasseskjema)](https://technet.microsoft.com/library/aa553901\(v=ax.60\)) 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

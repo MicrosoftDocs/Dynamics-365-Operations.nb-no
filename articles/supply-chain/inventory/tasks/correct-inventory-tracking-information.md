@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: InventJournalTransfer, InventJournalCreate, InventItemIdLookupSimple, InventBatchIdLookup, InventLocationIdLookup, InventDimTracking, InventTrans
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a8a488d4c30923445b3ebc2626a79b8fa45012c7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7c70dba7d21eab372cec235efa5a4be19587a409
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434676"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5000140"
 ---
 # <a name="correct-inventory-tracking-information"></a>Riktig lagersporingsinformasjon
 
@@ -33,37 +32,34 @@ Denne prosedyren hjelper deg gjennom prosessen med å opprette og postere en lag
 
 ## <a name="create-an-inventory-transfer-journal"></a>Opprette en beholdningsoverføringsjournal
 1. Gå til Overføring.
-2. Klikk Ny.
+2. Klikk på Ny.
 3. Angi eller velg en verdi i Navn-feltet.
-4. Klikk OK.
+4. Klikk på OK.
 
 ## <a name="create-journal-lines"></a>Opprette journallinjer
-1. Klikk Ny.
+1. Klikk på Ny.
 2. Angi eller velg en verdi i Varenummer-feltet.
     * Hvis du bruker USPI, velger du varen M5003.  
 3. Angi et tall i feltet Antall.
-4. Klikk kategorien Lagerdimensjoner.
+4. Klikk på fanen Lagerdimensjoner.
 5. Angi eller velg en verdi i Partinummer-feltet.
 6. Angi eller velg en verdi i Område-feltet.
 7. Angi eller velg en verdi i feltet Lager.
 8. Angi eller velg en verdi i Partinummer-feltet.
 
 ## <a name="post-the-journal"></a>Poster journalen
-1. Klikk Poster.
-2. Klikk OK.
+1. Klikk på Poster.
+2. Klikk på OK.
 
 ## <a name="check-tracing-information"></a>Kontrollere sporingsinformasjon
-1. Klikk Lager.
-2. Klikk Spor.
-3. Klikk OK.
+1. Klikk på Lager.
+2. Klikk på Spor.
+3. Klikk på OK.
     * Hvis du bruker denne sporingsinformasjonen, kan du spore tilbake til partiet du korrigerte lageret fra.  Du kan også bruke siden Varesporing for å se denne informasjonen.  
 4. Lukk siden.
 
 ## <a name="check-inventory-transactions"></a>Kontrollere lagertransaksjoner
-1. Klikk Lager.
-2. Klikk Transaksjoner.
+1. Klikk på Lager.
+2. Klikk på Transaksjoner.
     * Her kan du se transaksjonene som ble opprettet da du posterte journalen.   
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

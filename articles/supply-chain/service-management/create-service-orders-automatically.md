@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 914df1626b02110264b895e82dc9301f3aa0afce
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9bcb9611fd5e59cbfafbc8419a421ad0905e8b9f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434596"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5001455"
 ---
 # <a name="create-service-orders-automatically"></a>Opprette serviceordrer automatisk    
 
@@ -38,11 +37,11 @@ Når du oppretter serviceordrer manuelt eller automatisk fra serviceavtalelinjen
 
 ## <a name="create-service-orders-automatically-for-a-service-agreement"></a>Opprette serviceordrer for en serviceavtale automatisk
 
-1.  Klikk **Servicestyring** \> **Felles** \> **Serviceavtaler** \> **Serviceavtaler**.
+1.  Klikk på **Servicestyring** \> **Felles** \> **Serviceavtaler** \> **Serviceavtaler**.
 
 2.  Velg en serviceavtale.
 
-3.  Klikk fanen **Lever**, og klikk deretter **Planlagte serviceordrer**.
+3.  Klikk på fanen **Lever**, og klikk deretter **Planlagte serviceordrer**.
 
 4.  Angi datoer i feltene **Fra dato** og **Til dato** for å definere serviceavtalens gyldighetsperiode.
 
@@ -52,15 +51,15 @@ Når du oppretter serviceordrer manuelt eller automatisk fra serviceavtalelinjen
 
 7.  Merk av for **Kontinuerlig** hvis du vil opprette eventuelle serviceordrer som mangler i en kontinuerlig serie av serviceordrer.
 
-8.  Klikk **OK**.
+8.  Klikk på **OK**.
 
 ## <a name="create-service-orders-automatically-for-several-service-agreements"></a>Opprette serviceordrer for flere serviceavtaler automatisk
 
 1.  Klikk på **Servicestyring** \> **Periodisk** \> **Serviceordrer** \> **Opprett serviceordrer**.
 
-2.  Klikk **Velg** for å angi valg for å legge til eller fjerne kriterier som skal brukes til å opprette serviceordrer.
+2.  Klikk på **Velg** for å angi valg for å legge til eller fjerne kriterier som skal brukes til å opprette serviceordrer.
 
-3.  Klikk **OK**.
+3.  Klikk på **OK**.
 
 ## <a name="see-also"></a>Se også
 
@@ -71,6 +70,3 @@ Når du oppretter serviceordrer manuelt eller automatisk fra serviceavtalelinjen
   
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

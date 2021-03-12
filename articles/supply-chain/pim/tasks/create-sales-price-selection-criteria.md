@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCPriceModelSelectionCriteria, SysQueryForm, SysQueryTableLookUp, SysQueryFieldLookUp
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4ae444008e550d808a02d55dad02cc1b52874f0d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 60a7c7230d4eb57d840121f6ee490bf829e0dc8f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434399"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4999662"
 ---
 # <a name="create-sales-price-selection-criteria"></a>Opprette valgkriterier for salgspris
 
@@ -31,12 +30,12 @@ Denne fremgangsmåten viser hvordan du oppretter et valgkriterium for salgspris 
 
 
 ## <a name="add-a-new-criterion-for-an-existing-sales-price-model"></a>Legge til et nytt kriterium for en eksisterende salgsprismodell
-1. Klikk Definisjon av produktvariantmodell.
-2. Klikk Produktkonfigurasjonsmodeller.
+1. Klikk på Definisjon av produktvariantmodell.
+2. Klikk på Produktkonfigurasjonsmodeller.
 3. I listen velger du raden for produktmodellen for høyttalerløsningen, men ikke klikk koblingen for modellnavnet.
-4. Klikk Modell i handlingsruten.
-5. Klikk Prismodellkriterier.
-6. Klikk Ny.
+4. Klikk på Modell i handlingsruten.
+5. Klikk på Prismodellkriterier.
+6. Klikk på Ny.
 7. I Navn-feltet skriver du inn Kundegruppe 10.
     * Navnet på prismodellkriteriet brukes til å identifisere de underliggende valgkriteriene.  
 8. Angi eller velg en verdi i feltet Prismodell.
@@ -44,16 +43,13 @@ Denne fremgangsmåten viser hvordan du oppretter et valgkriterium for salgspris 
     * Ordretypen bestemmer databasefeltene som vil være tilgjengelige for valgspørringen.  
 10. Angi en dato i Gyldig fra-feltet.
 11. Angi en dato i Utløp innen-feltet.
-12. Klikk Lagre.
+12. Klikk på Lagre.
 
 ## <a name="create-the-query-for-the-selection-criteria"></a>Opprette spørringen for valgkriteriene
-1. Klikk Rediger.
+1. Klikk på Rediger.
 2. Velg Kunder i feltet Tabell. 
 3. Velg Kundegruppe i Felt-feltet.
     * I dette eksemplet bruker vi en spesifikk kundegruppe for valgkriteriene.  
 4. Velg Kundegruppe 10 i Kriterier-feltet. 
-5. Klikk OK.
+5. Klikk på OK.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

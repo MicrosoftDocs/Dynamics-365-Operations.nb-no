@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: InventParameters, DefaultDashboard, InventLocation, WMSLocationWizard
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 09666e95cc90913f1bf8555b9ff2c48aa55369ed
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f07fee1787cc2719bafbe2bb6d54849edda14018
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434673"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5000040"
 ---
 # <a name="create-a-new-warehouse-layout"></a>Opprette et nytt lageroppsett
 
@@ -63,6 +62,3 @@ Dette emnet beskriver hvordan du definerer informasjon om lokasjoner i et lager.
 7. Lukk siden.
 8. Oppdater siden.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

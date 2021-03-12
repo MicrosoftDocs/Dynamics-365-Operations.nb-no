@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: SysTranslationDetail, SysTranslationLanguage, SysTranslationList, EcoResProductListPage, EcoResProductVariants, EcoResProductDetailsExtended, EcoResProductCreate, EcoResProductDetails, RetailSizeGroupTable, RetailStyleGroupTable, RetailColorGroupTable, PCTranslationLanguageLookup, EcoResProductCategory
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 201853
 ms.assetid: c0286bba-f54b-42de-904c-81fd796bdd1d
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Product information
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 08cdf168ab64a34e781c85db2990f483ce7f7463
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6a79f7dccd518ce1d0e7c937a1a7934b474c4b37
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434255"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4999637"
 ---
 # <a name="product-related-translations-faq"></a>Vanlige spørsmål for produktrelaterte oversettelser
 
@@ -47,20 +46,20 @@ Du kan vise oversettelser av produktrelatert informasjon i et eksternt kildedoku
 
 ## <a name="how-do-i-create-translations-for-product-related-information"></a>Hvordan oppretter jeg oversettelser for produktrelatert informasjon?
 Hvis du vil opprette transaksjoner for et produkt, gjør du følgende:
-1.  Klikk **Behandling av produktinformasjon** &gt; **Felles** &gt; **Frigitte produkter**.
+1.  Klikk på **Behandling av produktinformasjon** &gt; **Felles** &gt; **Frigitte produkter**.
 2.  Velg et produkt, og i handlingsruten i **Språk**-gruppen klikker du på **Oversettelser**.
 3.  På siden **Tekstoversettelse**, i **Språk**-feltet, velger du et språk. Hvis du vil legge til flere språk, utvider du **Språk**-feltet, og klikker deretter på **OK**.
 4.  I gruppen **Oversatt tekst** skriver du inn oversettelser i feltene **Beskrivelse** og **Produktnavn**.
 
 Hvis du vil opprette transaksjoner for produktattributter, gjør du følgende:
-1.  Klikk **Behandling av produktinformasjon** &gt; **Felles** &gt; **Frigitte produkter**.
+1.  Klikk på **Behandling av produktinformasjon** &gt; **Felles** &gt; **Frigitte produkter**.
 2.  Under **Oppsett** klikker du **Attributter** og deretter **Attributter**.
 3.  På **Attributter**-siden klikker du **Oversett**.
 4.  På siden **Tekstoversettelse**, i **Språk**-feltet, velger du et språk. Hvis du vil legge til flere språk, utvider du **Språk**-feltet, og klikker deretter på **OK**.
 5.  I gruppen **Oversatt tekst** skriver du inn oversettelser i feltene **Beskrivelse** **Egendefinert navn** og **Hjelpetekst**.
 
 Hvis du vil opprette transaksjoner for produktdimensjonsverdier, gjør du følgende:
-1.  Klikk **Behandling av produktinformasjon** &gt; **Felles** &gt; **Frigitte produkter**.
+1.  Klikk på **Behandling av produktinformasjon** &gt; **Felles** &gt; **Frigitte produkter**.
 2.  Velg et produkt, og klikk deretter **Produktdimensjoner**.
 3.  Velg én av koblingene for produktdimensjonene: **Konfigurasjoner**, **Størrelser**, **Farger** eller **Stil**.
 4.  Velg en dimensjonsverdi, og klikk deretter **Oversett**.
@@ -93,8 +92,8 @@ En kunde ønsker å kjøpe noen små, røde t-skjorter, og navnet på t-skjorten
 <tbody>
 <tr class="odd">
 <td>Hvis du vil angi foretrukket språk for en kunde, gjør du følgende:
-<ol><br/><li>Klikk <strong>Salg og markedsføring</strong> &gt; <strong>Felles</strong> &gt; <strong>Kunder</strong> &gt; <strong>Alle</strong> <strong>kunder</strong>.</li>
-<li>Dobbeltklikk en kundekonto for å åpne <strong>Kunder</strong>-siden. I kategorien <strong>Generelt</strong>, i <strong>Språk</strong>-feltet, velger du <strong>språket</strong>.</li>
+<ol><br/><li>Klikk på <strong>Salg og markedsføring</strong> &gt; <strong>Felles</strong> &gt; <strong>Kunder</strong> &gt; <strong>Alle</strong> <strong>kunder</strong>.</li>
+<li>Dobbeltklikk en kundekonto for å åpne <strong>Kunder</strong>-siden. I fanen <strong>Generelt</strong>, i <strong>Språk</strong>-feltet, velger du <strong>språket</strong>.</li>
 </ol></td>
 </tr>
 </tbody>
@@ -114,12 +113,12 @@ En dimensjonsverdi som er tilknyttet et produkt gjennom en dimensjonsvariantgrup
 Hvis du vil opprette en dimensjonsverdigruppe, gjør du følgende:
 1.  Klikk på **Behandling av produktinformasjon** &gt; **Oppsett** &gt; **Variantgrupper**.
 2.  Velg **Størrelse** **grupper**, **Fargegrupper** eller **Stilgrupper**.
-3.  Klikk på **Ny**, og skriv deretter inn et navn på gruppen i **Størrelses** **gruppe**, **Fargegruppe** eller **Stilgruppe**-feltet. Klikk **Størrelser**, **Farger** eller **Stiler** for å opprette linjer for gruppene.
+3.  Klikk på **Ny**, og skriv deretter inn et navn på gruppen i **Størrelses** **gruppe**, **Fargegruppe** eller **Stilgruppe**-feltet. Klikk på **Størrelser**, **Farger** eller **Stiler** for å opprette linjer for gruppene.
 4.  På siden **Størrelse** **gruppe** linjer, **Farge** **gruppe** **linjer** eller **Stilgruppelinjer** klikker du på **Ny**, og deretter oppretter du størrelsene, fargene og stilene for gruppene.
 
 Hvis du vil administrere oversettelser for verdier i en dimensjonsverdigruppe, gjør du følgende:
 1.  Følg den forrige fremgangsmåten for å opprette en dimensjonsverdigruppe for åpne siden **Størrelsesgruppelinjer**, **Fargegruppelinjer** eller **Stilgruppelinjer**.
-2.  Klikk **Tekstoversettelse**. På siden **Tekstoversettelse**, i gruppen **Oversatt tekst**, skriver du inn oversettelsene i feltene **Navn** og **Beskrivelse**.
+2.  Klikk på **Tekstoversettelse**. På siden **Tekstoversettelse**, i gruppen **Oversatt tekst**, skriver du inn oversettelsene i feltene **Navn** og **Beskrivelse**.
 
 ## <a name="when-can-translations-of-product-related-information-be-managed"></a>Når kan oversettelser av produktrelatert informasjon håndteres?
 Oversettelser av produktrelatert informasjon kan håndteres når som helst. Når oversettelser oppdateres for en dimensjonsverdi som er knyttet til et produkt, oppdateres produktinformasjonen, uavhengig av om produktet har transaksjoner.
@@ -128,6 +127,3 @@ Oversettelser av produktrelatert informasjon kan håndteres når som helst. Når
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

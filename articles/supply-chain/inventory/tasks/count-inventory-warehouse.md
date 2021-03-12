@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: InventJournalCount, InventJournalCreate, HcmWorkerLookUp, InventItemIdLookupSimple, InventLocationIdLookup, WMSLocationIdLookup, InventTrans
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 34013783bab79d80f1dac9a7806042608635e617
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0a7f85cb91f36004a6bd6da714e7baa460a83a66
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434675"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5000107"
 ---
 # <a name="count-inventory-in-a-warehouse"></a>Lageropptelling på et lager
 
@@ -35,7 +34,7 @@ Dette emnet beskriver prosessen med å opprette og postere en lageropptellingsjo
 1. Gå til **Navigasjonsrute > Moduler > Lagerstyring > Loggoppføringer > Vareopptelling > Opptelling**.
 2. Velg **Ny**.
 3. I **Navn**-feltet velger du navnet på lageropptellingsjournalen du vil bruke, fra rullegardinlisten. Noen andre felt fylles ut basert på oppsettet av standardnavn for lageropptellingsjournal som du velger.  
-4. Klikk rullegardinknappen i feltet **Arbeider** for å åpne oppslaget.
+4. Klikk på rullegardinknappen i feltet **Arbeider** for å åpne oppslaget.
 5. **Velg** arbeideren du vil bruke, i listen.
 6. Velg **OK**.
 
@@ -56,6 +55,3 @@ Dette emnet beskriver prosessen med å opprette og postere en lageropptellingsjo
 1. Velg **Lager**.
 2. Velg **Transaksjoner**. Her kan du se relaterte transaksjoner som opprettes når du posterer lageropptellingsjournalen.   
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

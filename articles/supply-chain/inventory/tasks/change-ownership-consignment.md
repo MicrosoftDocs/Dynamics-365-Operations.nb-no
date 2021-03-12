@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: InventJournalOwnershipChange, InventJournalCreate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7c50affa05b8df53d31660854f4d1ead6aeff820
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1a4130670d2291fef16c9ff5482995a709b03cd3
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434678"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5000190"
 ---
 # <a name="change-the-ownership-of-consignment-inventory-based-on-production-demand"></a>Endre eierskap for forsendelseslager basert på produksjonsbehov
 
@@ -35,26 +34,23 @@ Denne fremgangsmåten viser hvordan du endrer eieren av forsendelseslageret fra 
 
 ## <a name="create-an-inventory-ownership-journal"></a>Opprette en lagereierskapsjournal
 1. Gå til Lagerstyring > Journaloppføringer > Varer > Endring av lagereierskap.
-2. Klikk Ny.
+2. Klikk på Ny.
     * Endringsjournalen for lagereierskap brukes til å endre eieren av forsendelseslageret fra leverandøren til gjeldende juridiske enhet. Denne endringen av eierskap gjøres ved å frigi lagerbeholdningen som eies av leverandøren. og deretter motta dette lageret i den gjeldende juridiske enheten.  
 3. Angi eller velg en verdi i Navn-feltet.
     * Du kan bare velge lagerjournalnavn som har journaltypen Endring av eierskap.  
-4. Klikk OK.
-5. Klikk Funksjoner.
-6. Klikk Opprett journallinjer fra produksjonsordrer.
+4. Klikk på OK.
+5. Klikk på Funksjoner.
+6. Klikk på Opprett journallinjer fra produksjonsordrer.
     * Du kan starte endringen av eierskapsprosessen ved å spørre alle produksjonslinjer som har behov for forbruk av råvarer.  
 7. Velg et alternativ i feltet Lageravgangsstatus som skal inkluderes.
     * Dette alternativet gjør at du kan filtrere etter avgangsstatus for lagertransaksjonene. Du kan for eksempel opprette journallinjer for lager som har statusen Plukket og Fysisk reservert.  
 8. Utvid delen Poster som skal inkluderes.
     * Denne delen lar deg bruke ekstra filtrering. Du kan for eksempel velge en bestemt råvaredato.  
-9. Klikk OK.
+9. Klikk på OK.
 
 ## <a name="post-the-inventory-ownership-change-journal"></a>Postere endringsjournalen for lagereierskap
-1. Klikk Poster.
+1. Klikk på Poster.
     * Når journalen posteres, frigis det leverandøreide lageret ved hjelp referansen Endring av eierskap. Lageret blir deretter mottatt som på lager ved hjelp av en lagertransaksjon som oppdateres med en bestillingsmottaksseddel. Vær oppmerksom på at bare transaksjoner som er knyttet til den posterte journalen, opprettes. Ingen forventede lagertransaksjoner opprettes.  
-2. Klikk OK.
+2. Klikk på OK.
 3. Lukk siden.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

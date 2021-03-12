@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: KanbanQuantityPolicy, KanbanRules, KanbanQuantityCalculation
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 039c4aaa355cf2b850ded06913e8e39ee8cac543
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ab17ba5a6ee950c2d3977990123a8f9277f858ea
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434141"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4998825"
 ---
 # <a name="add-a-kanban-quantity-calculation-policy-to-a-kanban-rule"></a>Legge til en policy for beregning av Kanban-antall i en Kanban-regel
 
@@ -32,14 +31,14 @@ Denne prosedyren fokuserer på å opprette en policy for Kanban-antallsberegning
 
 ## <a name="create-a-kanban-quantity-calculation-policy"></a>Opprett en policy for Kanban-antallsberegning
 1. Gå til Produksjonskontroll > Periodiske oppgaver > Kanban-antallsberegning > Policyer for Kanban-antallsberegning.
-2. Klikk Ny.
+2. Klikk på Ny.
 3. Skriv inn en verdi i Navn-feltet.
     * Skriv for eksempel inn Høyttaler2016.  
-4. Klikk rullegardinknappen i feltet Hovedplan for å åpne oppslaget.
+4. Klikk på rullegardinknappen i feltet Hovedplan for å åpne oppslaget.
 5. Finn og velg ønsket post i listen.
     * Velg Statisk plan for å beregne behov.  
-6. Klikk koblingen i den valgte raden i listen.
-7. Klikk Lagre.
+6. Klikk på koblingen i den valgte raden i listen.
+7. Klikk på Lagre.
 8. Angi 1 i feltet Minste Kanban-antall.
     * Dette er det ekstra antallet Kanbaner som er tatt med i Kanban-antallsberegningen.  
 9. Angi Sikkerhetsfaktor til 1.
@@ -54,15 +53,12 @@ Denne prosedyren fokuserer på å opprette en policy for Kanban-antallsberegning
 1. Gå til Behandling av produktinformasjon > Lean manufacturing > Kanban-regler.
 2. Finn og velg ønsket post i listen.
     * Velg kanban-regel 000020 for denne fremgangsmåten.  
-3. Klikk koblingen i den valgte raden i listen.
+3. Klikk på koblingen i den valgte raden i listen.
 4. Aktiver utvidelsen av delen Policyer for Kanban-antallsberegning.
-5. Klikk Legg til.
+5. Klikk på Legg til.
     * Legg til policyen for Kanban-antallsberegning som du nettopp opprettet i den forrige delaktiviteten.  
 6. Merk den valgte raden i listen.
-7. Klikk rullegardinknappen i Navn-feltet for å åpne oppslaget.
-8. Klikk koblingen i den valgte raden i listen.
+7. Klikk på rullegardinknappen i Navn-feltet for å åpne oppslaget.
+8. Klikk på koblingen i den valgte raden i listen.
     * Velg policyen Speaker2016 som du nettopp opprettet i den forrige delaktiviteten.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

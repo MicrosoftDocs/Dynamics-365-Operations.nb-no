@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: JmgProdParameters
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e4d459fb516cca3825c0a1871797f83df4c1a7c6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 94c6d8f4086466b396524faeed5753da1a76d17a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434329"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5001580"
 ---
 # <a name="production-parameters-in-manufacturing-execution"></a>Produksjonsparametere i Produksjonsutførelse
 
@@ -34,7 +33,7 @@ Dette emnet gir informasjon om oppsettet av produksjonsparametere i Produksjonsu
 
 Modulen **Produksjonsutførelse** er tiltenkt brukt hovedsakelig av produksjonsselskaper. Den kan brukes til å registrere tids- og vareforbruk for produksjonsjobber eller prosjekter. Før du begynner å bruke produksjonsutførelse for jobbregistreringer, må du definere forskjellige produksjonsparametere som definerer hvordan og når registreringer posteres i løpet av produksjonsprosessen. Innstillingene for produksjonsparametere påvirker lagerstyring, produksjon, administrasjon og kostnadsberegningen.
 
-Du bør nøye vurdere alle innstillingene på siden **Produksjonsparametere** før arbeidere begynner å gjøre registreringer på produksjonsjobber. Klikk **Produksjonskontroll** &gt; **Oppsett** &gt; **Produksjonsutførelse** &gt; **Standarder for produksjonsordre**. Hvis firmaet ditt bruker multisite-funksjonaliteten, vil du kanskje definere forskjellige produksjonsparametere for hvert område. Parameterne for integrasjon med **Produksjon**-modulen defineres i følgende kategorier på siden **Produksjonsparametere**:
+Du bør nøye vurdere alle innstillingene på siden **Produksjonsparametere** før arbeidere begynner å gjøre registreringer på produksjonsjobber. Klikk på **Produksjonskontroll** &gt; **Oppsett** &gt; **Produksjonsutførelse** &gt; **Standarder for produksjonsordre**. Hvis firmaet ditt bruker multisite-funksjonaliteten, vil du kanskje definere forskjellige produksjonsparametere for hvert område. Parameterne for integrasjon med **Produksjon**-modulen defineres i følgende kategorier på siden **Produksjonsparametere**:
 
 - **Generelt** – generelle parameterinnstillinger for produksjonsjobber i produksjonsutførelse.
 - **Start** - Parametere som brukes når produksjonsoperasjoner startes.
@@ -43,30 +42,30 @@ Du bør nøye vurdere alle innstillingene på siden **Produksjonsparametere** f�
 - **Antallsvalidering** – Parametere som brukes for validering av start- og tilbakemeldingsantall på produksjonsordrer.
 
 ## <a name="types-of-production-jobs"></a>Typer produksjonsjobber
-På **Operasjoner**-kategorien velger du typene produksjonsjobber som krever registrering på siden **Jobbregistrering**.
+På **Operasjoner**-fanen velger du typene produksjonsjobber som krever registrering på siden **Jobbregistrering**.
 
 Vanligvis foretar arbeidere registreringer i oppsettjobber og prosessjobber. Hvis finplanlegging blir brukt, kan du imidlertid velge andre jobbtyper som ansatte må gjøre registreringer på når produksjonsordrer blir behandlet. Du kan for eksempel kreve registreringer for transportjobber.
 
 > [!IMPORTANT]
-> Kontroller at alle relevante jobbtyper velges. Ellers kan det være at jobber ikke er tilgjengelig for registrering på siden **Jobbregistrering**. Valgene skal samsvare med valgene i kolonnen **Jobbstyring** i **Oppsett** -kategorien på siden **Rutegrupper** (**Produksjonskontroll** &gt; **Oppsett** &gt; **Ruter** &gt; **Rutegrupper**).
+> Kontroller at alle relevante jobbtyper velges. Ellers kan det være at jobber ikke er tilgjengelig for registrering på siden **Jobbregistrering**. Valgene skal samsvare med valgene i kolonnen **Jobbstyring** i **Oppsett** -fanen på siden **Rutegrupper** (**Produksjonskontroll** &gt; **Oppsett** &gt; **Ruter** &gt; **Rutegrupper**).
 
 Hvis **Jobbstyring** velges i rutegruppen, rapporteres jobbtypen som ferdigmeldt på produksjonsordren når jobben er rapportert ferdigmeldt i produksjonsutførelse. Når alle jobbtyper som **Jobbstyring** er valgt for, er rapportert som fullført for en operasjon, rapporterer Produksjonsutførelse operasjonen som fullført.
 
 > [!NOTE]
-> Noen jobbtyper kan rapporteres manuelt gjennom produksjonsjournaler. I dette tilfellet velger du **Jobbstyring** for jobben, men ikke velg jobbtypen for registrering i **Operasjoner**-kategorien på siden **Produksjonsparametere** i produksjonsutførelse.
+> Noen jobbtyper kan rapporteres manuelt gjennom produksjonsjournaler. I dette tilfellet velger du **Jobbstyring** for jobben, men ikke velg jobbtypen for registrering i **Operasjoner**-fanen på siden **Produksjonsparametere** i produksjonsutførelse.
 
 ## <a name="bom-consumption-and-picking-list-journals"></a>Stykklisteforbruk og plukklistejournaler
 Et konsekvent oppsett for stykklisteforbruk er viktig for å garantere at lagerstyring er effektivt. Hvis for eksempel parametere for stykklisteforbruk ikke er satt opp riktig i produksjonsutførselse, kan materialer trekkes fra lager to ganger eller ikke i det hele tatt.
 
 På **Produksjonsparametere**-siden er automatisk stykklisteforbruk definert i tre trinn:
 
-- Ved starten av en produksjon. Definer dette stadiet i **Start**-kategorien.
-- I løpet av produksjonsprosessen når en operasjon er fullført. Definer dette stadiet i **Operasjoner**-kategorien.
-- Når en produksjonsordre rapporteres som avsluttet. Definer dette stadiet i **Ferdigmeld**-kategorien.
+- Ved starten av en produksjon. Definer dette stadiet i **Start**-fanen.
+- I løpet av produksjonsprosessen når en operasjon er fullført. Definer dette stadiet i **Operasjoner**-fanen.
+- Når en produksjonsordre rapporteres som avsluttet. Definer dette stadiet i **Ferdigmeld**-fanen.
 
 For hvert trinn i feltet **Automatisk stykklisteforbruk** kan du velge én av tre metoder for å plukke varer for en produksjonsordre:
 
-- **Trekkprinsipp** – dette alternativet brukes sammen med et alternativ som er definert for stykklisten i **Produksjon**- modulen. Klikk **Produksjonskontroll** &gt; **Felles** &gt; **Produksjonsordrer** &gt; **Alle produksjonsordrer**. På siden **Alle produksjonsordrer** velger du en produksjonsordre i listen, og deretter klikker du **Stykkliste** på handlingsruten. På **Stykkliste**-siden i **Oppsett**-kategorien i **Trekkprinsipp**-feltet velger du ett av følgende alternativer:
+- **Trekkprinsipp** – dette alternativet brukes sammen med et alternativ som er definert for stykklisten i **Produksjon**- modulen. Klikk på **Produksjonskontroll** &gt; **Felles** &gt; **Produksjonsordrer** &gt; **Alle produksjonsordrer**. På siden **Alle produksjonsordrer** velger du en produksjonsordre i listen, og deretter klikker du **Stykkliste** på handlingsruten. På **Stykkliste**-siden i **Oppsett**-fanen i **Trekkprinsipp**-feltet velger du ett av følgende alternativer:
 
   - **Start**
   - **Fullfør**
@@ -74,16 +73,16 @@ For hvert trinn i feltet **Automatisk stykklisteforbruk** kan du velge én av tr
   - Tom (ingen alternativer er valgt.)
   - **Tilgjengelig på lokasjon**
 
-    Hvis **Trekkprinsipp** er valgt i feltet **Automatisk stykklisteforbruk** i **Start**-kategorien i produksjonsutførelse, trekkes alt materiale som er satt til **Start** i stykklisten, fra lagerbeholdningen når operasjonen startes. Alternativet **Tilgjengelig på lokasjon** brukes for produkter som er aktivert for avanserte lagerprosesser. Hvis du velger dette trekkprinsippet, tømmes materiale når lagerarbeid for råvareplukking er fullført. Materiale tømmes også når en stykklistelinje som bruker dette trekkprinsippet, er frigitt til lageret og materialet er tilgjengelig på produksjonsinnleveringsstedet.
+    Hvis **Trekkprinsipp** er valgt i feltet **Automatisk stykklisteforbruk** i **Start**-fanen i produksjonsutførelse, trekkes alt materiale som er satt til **Start** i stykklisten, fra lagerbeholdningen når operasjonen startes. Alternativet **Tilgjengelig på lokasjon** brukes for produkter som er aktivert for avanserte lagerprosesser. Hvis du velger dette trekkprinsippet, tømmes materiale når lagerarbeid for råvareplukking er fullført. Materiale tømmes også når en stykklistelinje som bruker dette trekkprinsippet, er frigitt til lageret og materialet er tilgjengelig på produksjonsinnleveringsstedet.
 
     > [!NOTE]
-    > Hvis feltet **Trekkprinsipp** er satt til **Start** i Produksjonsutførelse, må du velge samme prinsipp på enten kategorien **Operasjoner** eller kategorien **Rapporter som fullført**. Dette kravet bidrar til å sikre at materialer trekkes fra inventar på stykkliste som bruker **Fullført** som trekkprinsipp på produksjonsordren. Hvis det samme trekkprinsippet ikke velges for verken **Operasjoner**-kategorien eller **Ferdigmeld**-kategorien, kan materialer bli trukket fra lager to ganger.
+    > Hvis feltet **Trekkprinsipp** er satt til **Start** i Produksjonsutførelse, må du velge samme prinsipp på enten fanen **Operasjoner** eller fanen **Rapporter som fullført**. Dette kravet bidrar til å sikre at materialer trekkes fra inventar på stykkliste som bruker **Fullført** som trekkprinsipp på produksjonsordren. Hvis det samme trekkprinsippet ikke velges for verken **Operasjoner**-fanen eller **Ferdigmeld**-fanen, kan materialer bli trukket fra lager to ganger.
 
-- **Alltid** – Hvis du velger dette alternativet for et stadium, trekkes materialene alltid fra lageret på dette stadiet. Materialer for produksjonen trekkes for eksempel fra når produksjonsordren startes. Denne innstillingen krever at **Aldri** velges på **Operasjoner**- og **Ferdigmeld**-kategorien. Dette kravet bidrar til å forhindre at varer blir trukket fra lagerbeholdningen to ganger.
+- **Alltid** – Hvis du velger dette alternativet for et stadium, trekkes materialene alltid fra lageret på dette stadiet. Materialer for produksjonen trekkes for eksempel fra når produksjonsordren startes. Denne innstillingen krever at **Aldri** velges på **Operasjoner**- og **Ferdigmeld**-fanen. Dette kravet bidrar til å forhindre at varer blir trukket fra lagerbeholdningen to ganger.
 - **Aldri** – Hvis du velger dette alternativet for et stadium, skjer intet stykklisteforbruk på dette stadiet. Hvis du for eksempel velger **Aldri** i alle tre kategorier (**Start**, **Operasjoner**, og **Ferdigmeld**), må materialer trekkes fra lageret manuelt.
 
 > [!IMPORTANT]
-> Vurder konfigurasjonen av produksjonsparameterne nøye og forsikre deg om at parameterne som er valgt i de forskjellige kategoriene på **Produksjonsparametere**-siden, ikke motstrider hverandre.
+> Vurder konfigurasjonen av produksjonsparameterne nøye og forsikre deg om at parameterne som er valgt i de forskjellige fanene på **Produksjonsparametere**-siden, ikke motstrider hverandre.
 
 Eksemplene nedenfor viser parameterinnstillinger som støtter ulike prinsipper for stykklisteforbruk. Parameterne er definert på **Produksjonsparametere**-siden i produksjonsutførelse.
 
@@ -154,6 +153,3 @@ Du kan bruke følgende innstillinger hvis materialene alltid skal trekkes fra be
 | Ferdigmeld |   Automatisk stykklisteforbruk    | <strong>Aldri</strong>  |
 | Ferdigmeld | Oppdater ferdig rapport online | <strong>Status</strong> |
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

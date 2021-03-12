@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSClusterProfile
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 3610725815b35609ee98b69b367db2945bbf166a
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 9c90380cb5d109e331a2552ba779525b66d10fa6
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434768"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5001105"
 ---
 # <a name="cluster-position-full"></a>Gruppestilling full
 
@@ -142,13 +141,13 @@ Før du kan starte gruppeplukking, må du opprette noe utgående arbeid. Gruppep
     - **Varenummer:** *T0100*
     - **Antall:** *5*
 
-1. På hurtigkategorin **Linjedetaljer** i kategorien **Levering** setter du verdien for feltet **Bekreftet forsendelsesdato** til dagens dato.
-1. I hurtigkategorien **Salgsordrelinjer** legger du til ytterligere en linje som har følgende innstillinger:
+1. På hurtigkategorin **Linjedetaljer** i fanen **Levering** setter du verdien for feltet **Bekreftet forsendelsesdato** til dagens dato.
+1. I hurtigfanen **Salgsordrelinjer** legger du til ytterligere en linje som har følgende innstillinger:
 
     - **Varenummer:** *L0101*
     - **Antall:** *20*
 
-1. På hurtigkategorin **Linjedetaljer** i kategorien **Levering** setter du verdien for feltet **Bekreftet forsendelsesdato** til dagens dato.
+1. På hurtigkategorin **Linjedetaljer** i fanen **Levering** setter du verdien for feltet **Bekreftet forsendelsesdato** til dagens dato.
 1. For hver linje du legger til, kan du følge denne fremgangsmåten for å reservere lager:
 
     1. Velg linjen som skal reserveres.
@@ -156,7 +155,7 @@ Før du kan starte gruppeplukking, må du opprette noe utgående arbeid. Gruppep
     3. På **Reservasjon**-siden, i handlingspanelet, velger du **Reserver parti** for å reservere lageret.
     4. Lukk **Reservasjon**-siden.
 
-1. Velg **Frigi til lager** i kategorien **Lager** i handlingsruten.
+1. Velg **Frigi til lager** i fanen **Lager** i handlingsruten.
 
     Når frigivelsen er fullført, mottar du informasjonsmeldinger som viser bølge- og last-ID-er som ble opprettet.
 
@@ -175,13 +174,13 @@ Før du kan starte gruppeplukking, må du opprette noe utgående arbeid. Gruppep
     - **Varenummer:** *L0101*
     - **Antall:** *20*
 
-1. På hurtigkategorin **Linjedetaljer** i kategorien **Levering** setter du verdien for feltet **Bekreftet forsendelsesdato** til dagens dato.
-1. I hurtigkategorien **Salgsordrelinjer** legger du til ytterligere en linje som har følgende innstillinger:
+1. På hurtigkategorin **Linjedetaljer** i fanen **Levering** setter du verdien for feltet **Bekreftet forsendelsesdato** til dagens dato.
+1. I hurtigfanen **Salgsordrelinjer** legger du til ytterligere en linje som har følgende innstillinger:
 
     - **Varenummer:** *T0100*
     - **Antall:** *2*
 
-1. På hurtigkategorin **Linjedetaljer** i kategorien **Levering** setter du verdien for feltet **Bekreftet forsendelsesdato** til dagens dato.
+1. På hurtigkategorin **Linjedetaljer** i fanen **Levering** setter du verdien for feltet **Bekreftet forsendelsesdato** til dagens dato.
 1. For hver linje du legger til, kan du følge denne fremgangsmåten for å reservere lager:
 
     1. Velg linjen som skal reserveres.
@@ -189,7 +188,7 @@ Før du kan starte gruppeplukking, må du opprette noe utgående arbeid. Gruppep
     3. På **Reservasjon**-siden, i handlingspanelet, velger du **Reserver parti** for å reservere lageret.
     4. Lukk **Reservasjon**-siden.
 
-1. Velg **Frigi til lager** i kategorien **Lager** i handlingsruten.
+1. Velg **Frigi til lager** i fanen **Lager** i handlingsruten.
 
     Når frigivelsen er fullført, mottar du informasjonsmeldinger som viser bølge- og last-ID-er som ble opprettet.
 
@@ -228,7 +227,7 @@ To arbeids-ID-er bør være opprettet, og hver av dem har to plukklinjer. Følg 
 
 Ettersom gruppeprofilen setter antall posisjoner til 2, vil systemet automatisk omdirigere deg til den første konsolideringplukkingen: to paller (PL) av varen *L0101*.
 
-Når som helst i trinnene nedenfor kan du velge kategorien **Detaljer** for å vise mer informasjon om oppgaven, for eksempel plukklokasjon.
+Når som helst i trinnene nedenfor kan du velge fanen **Detaljer** for å vise mer informasjon om oppgaven, for eksempel plukklokasjon.
 
 1. Sett verdien i feltet **VARE** til *L0101*. Dette bekrefter varenummeret, som er nødvendig for dette menyelementet (du konfigurerte dette tidligere ved å velge **Arbeidsbekreftelsesoppsett** på siden **Menyelement for mobilenhet** da du opprettet dette menyelementet).
 1. Angi nummerskiltet som er knyttet til varen på lokasjonen som blir plukket. Du skal plukke to paller.
@@ -276,6 +275,3 @@ I dette scenarioet er gruppeplukkingen fullført, og brukeren blir omdirigert ti
     Du mottar meldingen Gruppe fullført.
 
 Du kan nå bruke menyelementet **Salgsplukking** til å plukke restantallet. Du kan deretter bruke menyelementet **Salgslasting** til å flytte varene fra lokasjonsplasseringen til lasterampen.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

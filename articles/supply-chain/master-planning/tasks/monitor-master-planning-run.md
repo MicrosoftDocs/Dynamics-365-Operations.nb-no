@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: DefaultDashboard, ReqCreatePlanWorkspace, ReqTransPlanCard, SysQueryForm, InventItemIdLookupSimple, ReqLog, ReqProcessTaskTrace
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 045b82af6f65b22e1c683f8de47a6df282711e6a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1cbe2c55ef9e3ed35db30ca927f3472c750c1db5
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434184"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4999812"
 ---
 # <a name="monitor-a-master-planning-run"></a>Overvåke en kjøring av hovedplanlegging
 
@@ -35,7 +34,7 @@ På siden **Vis fremdrift for hovedplanlegging** kan du vise detaljer om histori
 
 Hvis du vil bruke denne funksjonen, gjør du følgende.
 
-1. I arbeidsområdet **Funksjonsbehandling** i **Ny**-kategorien velger du **Fremdrifsvisualisering for hovedplan** i listen. Hvis funksjonen ikke vises i **Ny**-kategorien, ser du i kategoriene **Ikke aktivert** og **Alle**.
+1. I arbeidsområdet **Funksjonsbehandling** i **Ny**-fanen velger du **Fremdrifsvisualisering for hovedplan** i listen. Hvis funksjonen ikke vises i **Ny**-fanen, ser du i fanene **Ikke aktivert** og **Alle**.
 1. Velg **Aktiver nå**. Du kan også velge **Tidsplan**, og deretter velge tidspunktet når du vil at funksjonen skal aktiveres.
 
 Siden **Vis fremdrift for hovedplanlegging** kan vise både historiske planleggingsjobber og aktive planleggingsjobber. 
@@ -127,6 +126,3 @@ Fargen vises bare på det laveste nivået i Gantt-diagrammet. Velg **Vis alle** 
 1. I rutenettet velger du raden der **Felt**-feltet er satt til **Varenummer**.
 1. Angi en verdi i **Kriterier**-feltet.
 1. Velg **OK**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

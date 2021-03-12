@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: WMSOrder, WMSShipment, MCRPickingWorkbench, WMSPickingRegistration, CustomFilterGroup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 274363
 ms.assetid: 375807b2-a426-4f1b-bc1f-2fe00fd48413
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: db1a6887e7742700dd3451c9a877b948b5ab691b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 27596bf260c069af4a7457c0eb8d02c45e5202b9
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434436"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5000240"
 ---
 # <a name="outbound-process-overview"></a>Oversikt over utgående prosess
 
@@ -46,19 +45,19 @@ Du kan sette opp utgående regler for å definere hvordan programmet skal håndt
 
 ## <a name="picking-route-status-for-sales-and-transfer-orders"></a>Plukkrutestatus for salgs- og overføringsordrer 
 
-Gå til **Kundefordringer** \> **Oppsett** \> **Parametere for kundefordringer** og deretter i kategorien **Oppdateringer** velger du en verdi i feltet **Plukkrutestatus** .
+Gå til **Kundefordringer** \> **Oppsett** \> **Parametere for kundefordringer** og deretter i fanen **Oppdateringer** velger du en verdi i feltet **Plukkrutestatus** .
 
 [![Felt for plukkrutestatus for salgsordrer](./media/picking-route-status-sales-order.png)](./media/picking-route-status-sales-order.png)
 
 Hvis feltet **Plukkrutestatus** er satt til **Fullført** vil plukkprosessenen skje automatisk som en del av prosessen for å generere plukklister. Hvis feltet er satt til **Aktivert** må plukklistelinjer oppdateres manuelt.
 
-Det samme oppsett gjelder for overføringsordrer. Gå til **Lagerstyring** \> **Oppsett** \> **Parametere for lagerstyring og administrasjon**, og deretter i kategorien **Transport** velger du en verdi i feltet **Plukkrutestatus**.
+Det samme oppsett gjelder for overføringsordrer. Gå til **Lagerstyring** \> **Oppsett** \> **Parametere for lagerstyring og administrasjon**, og deretter i fanen **Transport** velger du en verdi i feltet **Plukkrutestatus**.
 
 [![Felt for plukkrutestatus for overføringsordrer](./media/picking-route-status-transfer-order.png)](./media/picking-route-status-transfer-order.png)
 
 ## <a name="end-output-inventory-orders"></a>Avsluttende lagerordre
 
-Gå til **Lagerstyring** \> **Oppsett** \> **Parametere for lagerstyring og administrasjon**, og deretter i kategorien **Generelt** velger du et alternativ i feltet **Lagerordre**.
+Gå til **Lagerstyring** \> **Oppsett** \> **Parametere for lagerstyring og administrasjon**, og deretter i fanen **Generelt** velger du et alternativ i feltet **Lagerordre**.
 
 [![Valg for å avslutte utgående lagerordre](./media//end-output-inventory-order.png)](./media//end-output-inventory-order.png)
 
@@ -85,6 +84,3 @@ Lagerbeholdningen som ikke allerede er reservert, er reservert under plukklisteg
 Så snart alle plukklinjer er plukket på siden **Plukklisteregistrering**, er den tilknyttede forsendelsen komplett. Prosessen for pakksedler for salgsordrer kan deretter initialiseres basert det på plukkede inventar.
 
 [![Oppdater ugående forsendelser](./media/outbound-shipments.png)](./media/outbound-shipments.png)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

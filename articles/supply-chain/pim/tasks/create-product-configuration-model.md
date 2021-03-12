@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCCreateProductConfigurationModel, PCProductConfigurationModelDetails, PCBOMLineDetails
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9c81b3af7460c636245dcc16affcb05b724fbc70
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d1e0bea8743d6ca63538b2c84f74b6e4b1e6c2c0
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434407"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4999712"
 ---
 # <a name="create-a-product-configuration-model"></a>Opprette en produktkonfigurasjonsmodell
 
@@ -31,22 +30,22 @@ Denne prosedyren viser hvordan du oppretter en produktkonfigurasjonsmodell og an
 
 
 ## <a name="create-a-product-model"></a>Opprette en produktmodell
-1. Klikk Definisjon av produktvariantmodell.
-2. Klikk Produktkonfigurasjonsmodeller.
-3. Klikk Ny.
+1. Klikk på Definisjon av produktvariantmodell.
+2. Klikk på Produktkonfigurasjonsmodeller.
+3. Klikk på Ny.
 4. Skriv inn en verdi i Navn-feltet.
 5. Skriv inn en verdi i feltet Beskrivelse.
 6. Velg et alternativ i feltet Problemløserstrategi.
     * Problemløserstrategien bestemmer hvordan restriksjonene i en restriksjonsbasert produktkonfigurasjonsmodell skal behandles. Dette valget kan ha innvirkning på ytelsen til produktkonfigurasjonsmodellen.  
 7. Skriv inn en verdi i Navn-feltet.
     * Rotkomponenten representerer produktkonfigurasjonsmodellen, men den kan også brukes i andre produktmodeller.  
-8. Klikk OK.
+8. Klikk på OK.
 9. Velg et alternativ i feltet Bruk konfigurasjoner på nytt.
     * Hvis parameteren Bruk konfigurasjoner på nytt er satt til Ja, kontrollerer systemet for identiske konfigurasjoner etter hver konfigurasjonsøkt og bruker dem på nytt hvis det blir funnet et nøyaktig samsvar.  
 
 ## <a name="add-attributes"></a>Legg til attributter
 1. Utvid delen Attributter.
-2. Klikk Legg til.
+2. Klikk på Legg til.
 3. Merk den valgte raden i listen.
 4. Skriv inn en verdi i Navn-feltet.
 5. Skriv inn en verdi i feltet Problemløsernavn.
@@ -60,29 +59,26 @@ Denne prosedyren viser hvordan du oppretter en produktkonfigurasjonsmodell og an
 
 ## <a name="add-subcomponents"></a>Legge til delkomponenter
 1. Utvid delen Underkomponenter.
-2. Klikk Legg til.
+2. Klikk på Legg til.
 3. Merk den valgte raden i listen.
 4. Skriv inn en verdi i Navn-feltet.
 5. Skriv inn en verdi i feltet Problemløsernavn.
 6. Skriv inn en verdi i feltet Beskrivelse.
 7. Angi eller velg en verdi i feltet Komponent.
     * Hver underkomponent må referere til en komponentdefinisjon. Denne utformingen støtter gjenbrukbare komponenter og sikrer at når en komponent er definert, så kan den brukes i mange produktmodeller.  
-8. Klikk Lagre.
-9. Klikk Detaljer om stykklistelinje.
+8. Klikk på Lagre.
+9. Klikk på Detaljer om stykklistelinje.
     * I skjemaet Detaljer om stykklistelinje kan brukeren velge de nødvendige egenskapene for delkomponenten. Hver egenskap kan gis en fast verdi eller tilordnes til et attributt. Tilordning til et attributt fører til at egenskapen Stykklistelinje får ulike verdier avhengig av konfigurasjonsvalget.  
 10. Angi eller velg en verdi i Varenummer-feltet.
     * Hver underkomponent representerer en konfigurerbar produktstandard med teknologi for restriksjonsbasert konfigurasjon. Referansen utføres via varenummeret.  
 11. Merk av for Sett.
 12. Velg Ja i feltet Beregning.
     * Når du angir beregningsalternativet, sikrer du at produktet vil bli inkludert når du kjører en kostberegning for produktet.  
-13. Klikk kategorien Oppsett.
+13. Klikk på fanen Oppsett.
 14. Merk av for Sett.
 15. Angi et tall i feltet Antall.
     * Antall-feltet bestemmer hvor mye av dette produktet som skal forbrukes i det konfigurerte produktet.  
 16. Merk av for Sett.
 17. Angi et tall i feltet Per serie.
-18. Klikk OK.
+18. Klikk på OK.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

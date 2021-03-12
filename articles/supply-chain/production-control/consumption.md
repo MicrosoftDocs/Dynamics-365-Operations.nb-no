@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: BOMDesignerEditBOM, BOMTable, ProdBOM
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 53401
 ms.assetid: 9cff88e4-0425-4707-9178-3c2cb10df7c2
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f58365278200344169b93658e9c92dea2bc4f18f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: acccc677c855fc675d52814d7f6f0a5141bbc8af
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434475"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5001679"
 ---
 # <a name="calculate-material-consumption"></a>Beregne materialforbruk
 
@@ -70,7 +69,7 @@ Vanligvis merker du av for **Forbruk** som avrundingsmåte når råvarer må plu
 3.  Maling som kreves, inkludert svinn: 15 x 25 = 375 liter
 
 ## <a name="step-consumption"></a>Trinnforbruk
-Trinnforbruk brukes til å beregne konstant forbruk i antallsintervaller. Hvis du velger **Timeforbruk** i feltet **Formel** i kategorien **Oppsett**, kan du legge til informasjon om trinnene i kategorien **Timeforbruk**. Den faste forbrukte mengden kan settes opp i intervaller av den produserte mengden. For eksempel er trinnforbruk definert som i følgende tabell.
+Trinnforbruk brukes til å beregne konstant forbruk i antallsintervaller. Hvis du velger **Timeforbruk** i feltet **Formel** i fanen **Oppsett**, kan du legge til informasjon om trinnene i fanen **Timeforbruk**. Den faste forbrukte mengden kan settes opp i intervaller av den produserte mengden. For eksempel er trinnforbruk definert som i følgende tabell.
 
 | Fra serie | Antall |
 |-------------|----------|
@@ -82,6 +81,3 @@ Stykklisteantallet er 1, og produksjonsantallet er 110. Formelen for forbruket e
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

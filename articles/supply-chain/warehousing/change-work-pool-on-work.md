@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSWorkPool,WHSWorkTemplateTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Retail, Core, Operations
 ms.search.region: global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 344918b77334f9aca11f799f8c031047ad229ee0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 66d110c3235e8a87b64bf160bdad8524fad6abe5
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434446"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5001155"
 ---
 # <a name="change-work-pool-on-work"></a>Endre arbeidspulje i arbeid
 
@@ -113,7 +112,7 @@ Dette scenariet viser hvordan du kan endre strømmen av behandling for et eksist
 1. Velg **Reservasjon** på **Beholdning**-menyen over rutenettet.
 1. På **Reservasjon**-siden, i handlingspanelet, velger du **Reserver parti** for å reservere lageret.
 1. Lukk siden.
-1. Velg **Frigi til lager** i kategorien **Lager** i handlingsruten.
+1. Velg **Frigi til lager** i fanen **Lager** i handlingsruten.
 1. Du mottar informasjonsmeldinger som viser bølge-ID og forsendelses-ID som er opprettet fra frigivelsen. Noter bølge-IDen.
 
 ### <a name="review-the-outbound-wave"></a>Se gjennom den utgående bølgen
@@ -124,7 +123,7 @@ Dette scenariet viser hvordan du kan endre strømmen av behandling for et eksist
 1. I hurtigfanen **Bølgelinjer** kontrollerer du at det vises en forsendelses-ID for salgsordren.
 
     > [!TIP]
-    > Hvis alternativet **Behandle bølge ved frigivelse til lager** er satt til *Nei* i oppsettet for forsendelsesbølgemalen, må du behandle bølgen manuelt ved å velge **Prosess** fra **Bølge**-kategorien i handlingsruten for å opprette arbeid.
+    > Hvis alternativet **Behandle bølge ved frigivelse til lager** er satt til *Nei* i oppsettet for forsendelsesbølgemalen, må du behandle bølgen manuelt ved å velge **Prosess** fra **Bølge**-fanen i handlingsruten for å opprette arbeid.
 
 1. Kontroller at bølgen er behandlet. Denne behandlingen oppretter det nødvendige arbeidet.
 
@@ -140,8 +139,8 @@ Du kan bruke **Arbeidsdetaljer**-siden til å vise arbeidet som ble opprettet, o
     > [!TIP]
     > Hvis du ikke ser feltet **ID for arbeidsutvalg**, legger du til kolonnen i rutenettet og oppdaterer deretter siden.
 
-1. Hvis du vil endre arbeidsutvalget som er knyttet til arbeids-IDen, går du til handlingsruten i kategorien **Arbeid** og velger **Endre ID for arbeidsutvalg**.
-1. I dialogboksen **Endre arbeidsutvalg**, i hurtigkategorien **Parametere** i feltet **ID for arbeidsutvalg**, velger du *CallCenter*.
+1. Hvis du vil endre arbeidsutvalget som er knyttet til arbeids-IDen, går du til handlingsruten i fanen **Arbeid** og velger **Endre ID for arbeidsutvalg**.
+1. I dialogboksen **Endre arbeidsutvalg**, i hurtigfanen **Parametere** i feltet **ID for arbeidsutvalg**, velger du *CallCenter*.
 1. Velg **OK** for å bruke endringen.
 1. Merk at verdien for feltet **ID for arbeidsutvalg** nå er endret til *CallCenter*.
 
@@ -149,6 +148,3 @@ Du kan bruke **Arbeidsdetaljer**-siden til å vise arbeidet som ble opprettet, o
 > Når dialogboksen **Endre arbeidsutvalg** vises, kan det hende at feltet **ID for arbeidsutvalg** er tomt som standard. Hvis feltet er tomt når du velger **OK** for å bruke endringer, fjerner du arbeidsutvalget helt fra arbeidet.
 >
 > I tillegg til å bytte arbeidsutvalg kan du bruke denne fremgangsmåten til å legge til et arbeidsutvalg i alle arbeidselementer som ikke har et, eller til å fjerne et arbeidsutvalg fra alle arbeidselementer som har et.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: EcoResProductDetailsExtended, EcoResStorageDimensionGroup, EcoResTrackingDimensionGroup, InventBatch, InventModelGroup, PdsAskSameLotForm, PdsCustSellableDays, WHSReservationHierarchy, WHSInventTableReservationHierarchy
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 28911
 ms.assetid: 5823d75e-f839-46dd-beb3-e09b79fc8aa4
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ce750745d6f094a296b43827568ee1745179de2d
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 0fb1f9e017de71d01fbf7a05b579d68b702aa7c9
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434821"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5001505"
 ---
 # <a name="reserve-the-same-batch-for-a-sales-order"></a>Reservere samme parti for en salgsordre
 
@@ -45,6 +44,3 @@ Når du reserverer beholdning for et produkt på en salgsordrelinje som er defin
 - Partiet har ikke nok holdbarhetsdager igjen, basert på utløpsdatoen og best-før-datoen, i tillegg til eventuelle salgbare dager for kunde.
 
 For varer som er knyttet til en lagringsdimensjonsgruppe som har aktivert **Bruk lagerstyringsprosesser**, kan du reservere bestemte partinumre ved å bruke et reservasjonshierarki med partinummer-lagerdimensjonen som er definert ovenfor lokasjonsdimensjonen. Med **Partireservering**-siden for salgs- og overføringsordrelinjer kan du også velge og reservere flere linjer basert på de tilgjengelige partinumrene. Hvis du vil ha mer informasjon om hva du skal gjøre hvis du bruker et reservasjonshierarki som har partinummerdimensjonen under lokasjonen, kan du se [Fleksibel dimensjonsreservasjonspolicy for lagernivå](../warehousing/flexible-warehouse-level-dimension-reservation.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSCatchWeightTag, WHSCatchWeightItemHandlingPolicy, TMSLoadBuildWorkbench
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 710446db7746ed3cd3fb9754caeaa15fd2f76641
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 6ecadb06adce5a0cbf1614c7da8fc65cb801e249
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434769"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5001181"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Behandling av Faktisk vekt-produkt med lagerstyring
 
@@ -30,7 +29,7 @@ ms.locfileid: "4434769"
 
 ## <a name="feature-exposure"></a>Funksjonseksponering
 
-Hvis du vil bruke lagerstyring til å behandle faktisk vekt-produkter, må du bruke en lisenskonfigurasjonsnøkkel for å aktivere funksjonen. Gå til **Systemadministrasjon \> Oppsett \> Lisenskonfigurasjon**. I **Konfigurasjonsnøkler**-kategorien viser du deretter **Handel \> Lager- og transportstyring** og merker av for **Faktisk vekt for lager**.
+Hvis du vil bruke lagerstyring til å behandle faktisk vekt-produkter, må du bruke en lisenskonfigurasjonsnøkkel for å aktivere funksjonen. Gå til **Systemadministrasjon \> Oppsett \> Lisenskonfigurasjon**. I **Konfigurasjonsnøkler**-fanen viser du deretter **Handel \> Lager- og transportstyring** og merker av for **Faktisk vekt for lager**.
 
 > [!NOTE]
 > Både lisenskonfigurasjonsnøkkelen for **Lager- og transportstyring** og lisenskonfigurasjonsnøklene for **Behandle distribusjon \> Faktisk vekt** må være aktivert i tillegg. Hvis du vil angi konfigurasjonsnøklene for faktisk vekt, må du også aktivere funksjonen ved hjelp av arbeidsområdet **Funksjonsbehandling**. Hovedfunksjonen som må aktiveres, er **Behandling av Faktisk vekt-produkt med lagerstyring**. To relaterte, men valgfrie funksjoner som du kanskje vil aktivere, er **Lagerstatusendringer for faktisk vekt-produkter** og **Bruk eksisterende variabel vekt-koder ved rapportering av produksjonsordrer som ferdigstilte**.
@@ -67,7 +66,7 @@ I definisjonen er et produkt konfigurert til å godta en minimumsvekt på 8 kg o
 
 Du har to bokser med produktet, og de har en registrert vekt på 16 kg. Hvis en lagermedarbeider plukker og veier én av boksene, og vekten blir registrert til 9 kg, vil den gjenværende boksen veie 7 kg. Fordi 7 kg er under minimumsvekten, foretar systemet en automatisk justering for å øke vekten på lagerbeholdningen med 1 kg.
 
-Hvis du vil definere kontoene som disse justeringene posteres til, kan du gå til **Kostnadsstyring \> Oppsett for policyer for finansintegrering \> Postering**. I **Lager**-kategorien kan du så definere følgende kontoer:
+Hvis du vil definere kontoene som disse justeringene posteres til, kan du gå til **Kostnadsstyring \> Oppsett for policyer for finansintegrering \> Postering**. I **Lager**-fanen kan du så definere følgende kontoer:
 
 - Tapskonto for faktisk vekt
 - Overskuddskonto for faktisk vekt
@@ -210,6 +209,3 @@ I tillegg til begrensningene som for øyeblikket gjelder for faktisk vekt-produk
 
 > [!NOTE]
 > Informasjonen ovenfor om faktisk vekt-koder er bare gyldig hvis faktisk vekt-produktet har en sporingsmetode for faktisk vekt-kodedimensjon som spores fullstendig (det vil si hvis parameteren **Sporingsmetode for faktisk vekt-kodedimensjon** i policyen for behandling av faktisk vekt-varer settes til **Produktdimensjoner, sporingsdimensjoner og alle lagringsdimensjoner**). Hvis faktisk vekt-varen bare spores delvis av koder (det vil si hvis parameteren **Sporingsmetode for faktisk vekt-kodedimensjon** i policyen for behandling av faktisk vekt-varer settes til **Produktdimensjoner, sporingsdimensjoner og lagerstatus**), gjelder flere begrensninger. Siden synlighet går tapt mellom koden og lageret i dette tilfellet, støttes ikke enkelte andre scenarier.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

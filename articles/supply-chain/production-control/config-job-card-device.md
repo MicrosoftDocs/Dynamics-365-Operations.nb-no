@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: JmgRegistrationSetupTouch, JmgRegistrationTouchUserConfiguration
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: e072f99b0b0df75f1b9706362b429bbc4568473a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c523b309ab6478ab17c682683147e668bfcff919
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434477"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4998984"
 ---
 # <a name="configure-job-card-for-devices"></a>Konfigurer jobbkort for enheter
 
@@ -64,7 +63,7 @@ Se delene nedenfor for mer informasjon om hver av innstillingene for konfigureri
 
 ## <a name="general-settings"></a>Generelle innstillinger
 
-I **Generelt**-hurtigkategorien kan du konfigurere hvert av de ulike alternativene som er tilgjengelige for den valgte enhetskonfigurasjonen. Følgende innstillinger er tilgjengelige:
+I **Generelt**-hurtigfanen kan du konfigurere hvert av de ulike alternativene som er tilgjengelige for den valgte enhetskonfigurasjonen. Følgende innstillinger er tilgjengelige:
 
 - **Rapporter antall ved utstempling** – sett dette til **Ja** for å be arbeiderne om å rapportere tilbakemelding om jobber som pågår ved utstempling. Når **Nei** er valgt, blir ikke arbeiderne spurt om dette.
 - **Lås ansatt** – Når dette alternativet er satt til **Nei**, logges hver arbeider av umiddelbart etter at de har gjort en registrering (for eksempel en ny jobb), og deretter går enheten tilbake til påloggingssiden. Når dette alternativet er satt til **Ja**, vil hver arbeider forbli logget på jobbkortenheten. Arbeideren vil likevel kunne logge seg av manuelt for å tillate at en annen arbeider logger seg på mens jobbkortenheten fortsatt kjører med samme systembrukerkonto. Hvis du vil ha mer informasjon om disse kontotypene, kan du se [Tilordnede brukere](#assigned-users).
@@ -84,7 +83,7 @@ I **Generelt**-hurtigkategorien kan du konfigurere hvert av de ulike alternative
 
 ## <a name="assigned-users"></a>Tilordnede brukere
 
-Bruk **Tilordnede brukere**-hurtigkategorien for å knytte én eller flere systembrukere til den gjeldende enhetskonfigurasjonen. Hver systembruker kan bare tilordnes én jobbenhetskonfigurasjon.
+Bruk **Tilordnede brukere**-hurtigfanen for å knytte én eller flere systembrukere til den gjeldende enhetskonfigurasjonen. Hver systembruker kan bare tilordnes én jobbenhetskonfigurasjon.
 
 Når du konfigurerer en enhet, logger en IT-arbeider vanligvis på Supply Chain Management ved hjelp av en systembrukerkonto. Deretter gjelder jobbenhetskonfigurasjonen som er tilknyttet systembrukeren, så lenge den systembrukeren fortsatt er logget på. Disse systembrukerkontoene er vanligvis begrenset til bare å tillate tilgang til enhetssiden for jobbkort og ingen annen del av Supply Chain Management.
 
@@ -95,6 +94,3 @@ Men som nevnt tidligere, når du for eksempel bruker en enhetskonfigurasjon med 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Ferdigmeld fra den jobbkortenheten.](report-finished-job-device.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

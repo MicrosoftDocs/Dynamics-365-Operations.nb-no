@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-9-16
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: a89effb686d60dde9d11f99be51d4101897ad4ea
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 22b1abec0c6dd5f571e604c5c07379b397b8bdaa
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434833"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4999059"
 ---
 # <a name="troubleshoot-product-receipts-and-invoicing"></a>Feilsøke mottakssedler og fakturering
 
@@ -58,7 +57,7 @@ Hvis en produktkvittering avlyses, tillater systemet at transaksjoner posteres t
 
 Følgende prosedyre viser én måte å reprodusere problemet på.
 
-1. På siden for **Leverandørparametere**, i kategorien **Generelt**, må du kontrollere at alternativet **Poster produktkvittering i finans** er satt til *Ja*.
+1. På siden for **Leverandørparametere**, i fanen **Generelt**, må du kontrollere at alternativet **Poster produktkvittering i finans** er satt til *Ja*.
 1. Opprett en bestilling, og legg til en ordrelinje som har et antall på *1000* for et produkt.
 1. Bekreft bestillingen.
 1. Poster produktkvitteringen, og sjekk bilagene.
@@ -80,16 +79,16 @@ Vi anbefaler at du setter alternativet **Gjeldsavsetning på produktkvittering**
 
 ### <a name="issue-description"></a>Problembeskrivelse
 
-Dette problemet oppstår når en bestilling faktureres hvis alternativet **Postere i belastningskonto i finans** er satt til *Ja* i kategorien **Faktura** på siden **Leverandørparametere**.
+Dette problemet oppstår når en bestilling faktureres hvis alternativet **Postere i belastningskonto i finans** er satt til *Ja* i fanen **Faktura** på siden **Leverandørparametere**.
 
 ### <a name="reproduce-the-issue"></a>Reprodusere problemet
 
 Følgende prosedyre viser én måte å reprodusere problemet på.
 
 1. Gå til **Leverandører \> Oppsett \> Leverandørparametere**.
-1. I kategorien **Faktura** setter du alternativet **Postere i belastningskonto i finans** til *Ja*.
+1. I fanen **Faktura** setter du alternativet **Postere i belastningskonto i finans** til *Ja*.
 1. Gå til **Lagerstyring \> Oppsett \> Postering \> Postering**.
-1. I kategorien **Bestilling** må du kontrollere at du har slettet alle linjene i innkjøpsutgiften for produktet.
+1. I fanen **Bestilling** må du kontrollere at du har slettet alle linjene i innkjøpsutgiften for produktet.
 1. Gå til **Leverandører \> Bestillinger \> Alle bestillinger**.
 1. Opprett en bestilling. I feltet **Leverandørkonto** velger du *1001 Acme-kontorutstyr*.
 1. Legg til en bestillingslinje som har følgende innstillinger:
@@ -99,8 +98,8 @@ Følgende prosedyre viser én måte å reprodusere problemet på.
     - **Lager:** *11*
     - **Antall:** *4*
 
-1. I handlingsruten i kategorien **Bestilling** i gruppen **Handling** velger du **Bekreft**.
-1. I handlingsruten i kategorien **Motta** i gruppen **Generer** velger du **Produktkvittering**.
+1. I handlingsruten i fanen **Bestilling** i gruppen **Handling** velger du **Bekreft**.
+1. I handlingsruten i fanen **Motta** i gruppen **Generer** velger du **Produktkvittering**.
 1. I dialogboksen **Poster mottaksseddel**, i feltet **Produktkvittering**, angir du et vilkårlig nummer og velger **OK**.
 1. I handlingsruten, på **Faktura**-fanen i **Generer**-gruppen, velger du **Faktura**.
 1. I **Nummer**-feltet angir du et tilfeldig nummer som fakturanummeret.
@@ -110,6 +109,3 @@ Følgende prosedyre viser én måte å reprodusere problemet på.
 ### <a name="issue-resolution"></a>Problemløsning
 
 Dette avhenger av parameterinnstillingene for fakturaer og fakturagrupper. Hvis du vil ha mer informasjon, kan du se følgende blogginnlegg: [Regnskap for innkjøpstillegg og lageravvik](https://cloudblogs.microsoft.com/dynamics365/no-audience/2014/12/15/accounting-for-purchase-charge-and-stock-variation/).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

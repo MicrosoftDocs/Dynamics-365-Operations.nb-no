@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: RetailLoyaltyRewardPoints
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4e40ebcbf3ab1befc641ae34571a8b974bd0425a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: af217a5e756db571e3e351b743aa44b842f478f1
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414687"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5000490"
 ---
 # <a name="define-loyalty-reward-points"></a> Definere fordelspoeng
 
@@ -46,6 +45,3 @@ Denne prosedyren hjelper med å definere fordelspoeng. Du må definere fordelspo
 10. Velg et alternativ i feltet Enhet for utløpstid.
 11. Klikk Lagre.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

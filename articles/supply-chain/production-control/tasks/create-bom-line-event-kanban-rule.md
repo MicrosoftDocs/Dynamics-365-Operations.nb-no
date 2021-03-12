@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: KanbanRules, LeanProductionFlowActivityLookup, InventItemIdLookupSimple, ProdTableListPage, ProdTableCreate, InventItemIdLookupPurchase, ProdTable, ProdBOM, ProdParmCostEstimation
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 698b7af3bc8e2146aaf86fb5e04dd123ea6d5153
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bcef749139635b2d8858a85154ff7619c16857d3
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434132"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4998759"
 ---
 # <a name="create-a-bom-line-event-kanban-rule"></a>Opprette en Kanban-regel for hendelse for stykklistelinje
 
@@ -33,7 +32,7 @@ Denne oppgaven fokuserer på oppsettet som kreves for å opprette en kanban-rege
 
 ## <a name="create-a-new-kanban-rule"></a>Opprett en ny Kanban-regel
 1. Gå til Produksjonskontroll > Periodiske oppgaver > Kanban-antallsberegning > Kanban-regler.
-2. Klikk Ny.
+2. Klikk på Ny.
 3. Velg Uttak i Type-feltet.
     * Typen Uttak brukes til å opprette Kanbaner for overføring.  
 4. Velg Hendelse i feltet Etterfyllingsstrategi.
@@ -49,14 +48,14 @@ Denne oppgaven fokuserer på oppsettet som kreves for å opprette en kanban-rege
 
 ## <a name="create-and-modify-a-new-production-order"></a>Opprette og endre en ny produksjonsordre
 1. Gå til Produksjonskontroll > Produksjonsordrer > Alle produksjonsordrer.
-2. Klikk Ny produksjonsordre.
+2. Klikk på Ny produksjonsordre.
 3. Angi eller velg en verdi i Varenummer-feltet.
     * Angi eller velg L0001. Vi bruker vare L0001 fordi vare M0001 inngår i stykklisten for vare L0001.  
-4. Klikk Opprett.
-5. Klikk koblingen i raden for L0001 i listen.
-6. Klikk Stykkliste.
-7. Klikk koblingen i den valgte raden i listen.
-8. Klikk Rediger.
+4. Klikk på Opprett.
+5. Klikk på koblingen i raden for L0001 i listen.
+6. Klikk på Stykkliste.
+7. Klikk på koblingen i den valgte raden i listen.
+8. Klikk på Rediger.
 9. Velg Tilknyttet forsyning i Linjetype-feltet.
     * Tilknyttet forsyning velges for å utløse forsyningsopprettelsen av en kanban.  
 10. Velg Nei i Ressursforbruk-feltet.
@@ -70,19 +69,16 @@ Denne oppgaven fokuserer på oppsettet som kreves for å opprette en kanban-rege
 15. Lukk siden.
 
 ## <a name="estimate-the-production-order-and-view-the-kanban-created"></a>Beregne produksjonsordren og vise opprettet kanban
-1. Klikk Estimer.
+1. Klikk på Estimer.
     * Estimering av produksjonsordren utløser oppretting av tilknyttet kanban for å levere M0001.  
-2. Klikk OK.
+2. Klikk på OK.
 3. Lukk siden.
 4. Lukk siden.
 5. Gå til Behandling av produktinformasjon > Lean manufacturing > Kanban-regler.
-6. Klikk koblingen i den valgte raden i listen.
+6. Klikk på koblingen i den valgte raden i listen.
     * Velg Kanban-regel for hendelse som ble opprettet for vare M0001.  
 7. Vis delen Kanbaner.
 8. Merk den valgte raden i listen.
     * Legg merke til kanbanen som er opprettet for å levere M0001 for den estimerte produksjonsordren.  
     * Dette er det siste trinnet!  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
