@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e46c392c43b63ef443f66d8ea8f9e91a9df3d126
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 734f6499753d74b0bac8b2df1381ece4a7824142
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693238"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797496"
 ---
 # <a name="personalize-the-user-experience"></a>Tilpasse brukeropplevelsen
 
@@ -41,11 +41,11 @@ Dette emnet beskriver hvordan du kan tilpasse appen og dekker følgende emner:
 Siden **Brukeralternativer** inneholder flere systeminnstillinger for gjeldende bruker. Disse alternativene er tilgjengelige for alle brukere, selv brukere som ikke har fått tilgang til tilpasning. For å åpne siden **Brukeralternativer** velger du **Innstillinger**-knappen på navigeringslinjen, og deretter velger du **Brukeralternativer**. Siden **Brukeralternativer** har fire faneblader med ulike brukerinnstillinger:
 
 - **Visuelt** – Velg et fargetema og standardstørrelsen på elementer på sidene.
-- **Innstillinger** – Velg standardverdier som brukes hver gang du åpner systemet. Disse verdiene inkluderer standardfirmaet, startsiden og standard visnings-/redigeringsmodus. (Vis-/redigeringsmodus avgjør om en side er låst for visning eller åpnet for redigering hver gang du åpner den.) Denne kategorien omfatter også alternativer for språk, tidssone, og dato, klokkeslett og tallformater. Denne kategorien inneholder dessuten flere diverse innstillinger som varierer fra versjon til versjon.
+- **Innstillinger** – Velg standardverdier som brukes hver gang du åpner systemet. Disse verdiene inkluderer standardfirmaet, startsiden og standard visnings-/redigeringsmodus. (Vis-/redigeringsmodus avgjør om en side er låst for visning eller åpnet for redigering hver gang du åpner den.) Denne fanen omfatter også alternativer for språk, tidssone, og dato, klokkeslett og tallformater. Denne fanen inneholder dessuten flere diverse innstillinger som varierer fra versjon til versjon.
 - **Konto:** – Vis eller juster brukernavnet ditt og andre kunderelaterte alternativer.
 - **Arbeidsflyt** – Velg arbeidsflytrelaterte alternativer.
 
-I tillegg til å endre brukerinnstillinger kan du også vise og slette bruksdata og tilpasninger fra siden **Brukeralternativer**. Hvis du vil se dine bruksdata, velger du **Bruksdata** i handlingsruten. I kategorien **Tilpassing** kan du vise og administrere de personlige endringene du har gjort på sider i systemet. I denne kategorien kan du også tilbakestille bildeforklaringer for funksjonen (det vil si popup-vinduene som introduserer nye systemfunksjoner). Du vil deretter bli varslet igjen om tidligere oppdagede funksjoner.
+I tillegg til å endre brukerinnstillinger kan du også vise og slette bruksdata og tilpasninger fra siden **Brukeralternativer**. Hvis du vil se dine bruksdata, velger du **Bruksdata** i handlingsruten. I fanen **Tilpassing** kan du vise og administrere de personlige endringene du har gjort på sider i systemet. I denne fanen kan du også tilbakestille bildeforklaringer for funksjonen (det vil si popup-vinduene som introduserer nye systemfunksjoner). Du vil deretter bli varslet igjen om tidligere oppdagede funksjoner.
 
 > [!NOTE]
 > Hvis funksjonen [Lagrede visninger](saved-views.md) er aktivert, kan du vise og behandle tilpasningene ved å velge **Tilpassing** i handlingsruten på siden **Brukeralternativer** .
@@ -60,7 +60,7 @@ Her er en liste over handlingene som faller under vanlig bruk av siden, og som d
 - **Rutenettbunntekst og kolonnesummer** – *(Bare tilgjengelig når den nye rutenettkontrollen er aktivert)* Du kan bestemme om en total skal vises nederst i en numerisk kolonne i et rutenett, og om bunnteksten i rutenettet er synlig. Appen lagrer disse innstillingene og bruker dem neste gang du åpner siden. Hvis du vil ha mer informasjon, se [Rutenettfunksjoner](grid-capabilities.md). 
 - **Hurtigfaner** – Noen sider har utvidbare deler kalt *Hurtigfaner*. Appen lagrer informasjon om hurtigfanene som du har vist eller skjult. Neste gang du åpner siden, vil de samme hurtigfanene enten vises eller skjules, basert på siste samhandling med siden. I noen tilfeller kan du bidra til å forbedre systemytelsen ved å skjule en hurtigfane, fordi appen ikke trenger å hente informasjonen om hurtigfaner før hurtigfanen utvides. Som forklart senere i dette emnet kan du også endre rekkefølgen for hurtigfanene på en side.
 - **Faktabokser** – Noen sider har en **Relatert informasjon**-rute som viser skrivebeskyttet informasjon som er knyttet til gjeldende emne på siden. Hver del i ruten **Relatert informasjon** kalles en *Faktaboks*. Du kan vise eller skjule ruten **Relatert informasjon**, og du kan også vise eller skjule individuelle faktabokser. Appene lagrer disse innstillingene. Neste gang du åpner siden, vil ruten **Relatert informasjon** og de individuelle faktaboksene enten utvides eller skjules basert på den siste samhandlingen med siden. I noen tilfeller kan du bidra til å forbedre systemytelsen ved å skjule ruten **Relatert informasjon** eller en faktaboks fordi appen ikke trenger å hente informasjonen for faktabokser før de utvides.
-- **Handlingsruter** – En *Handlingsrute* vises øverst på de fleste sidene. Handlingsruten inneholder knapper for mange av handlingene som du kan utføre på gjeldende side. Disse knappene er ofte organisert i kategorier. Du kan *feste* hele handlingsruten som åpen, eller du kan skjule den som standard. Neste gang du åpner siden, vil handlingsruten enten være åpen eller skjult basert på siste samhandling med siden. Hvis du festet handlingsruten som åpen, vises den siste kategorien du brukte.
+- **Handlingsruter** – En *Handlingsrute* vises øverst på de fleste sidene. Handlingsruten inneholder knapper for mange av handlingene som du kan utføre på gjeldende side. Disse knappene er ofte organisert i kategorier. Du kan *feste* hele handlingsruten som åpen, eller du kan skjule den som standard. Neste gang du åpner siden, vil handlingsruten enten være åpen eller skjult basert på siste samhandling med siden. Hvis du festet handlingsruten som åpen, vises den siste fanen du brukte.
 - **Hurtigfilter** – Et *hurtigfilter* vises over mange rutenett. Med hurtigfilter kan du filtrere rutenettet basert på én enkeltkolonne som du velger. Appen lagrer kolonnen du filtrerte på. Deretter, neste gang du åpner denne siden, vil rutenettet bruke den samme kolonnen til filtrering som standard. Du kan imidlertid fortsatt velge en annen kolonne å filtrere rutenettet på.
 - **Kolonnehodefiltre** – Når du filtrerer et rutenett ved hjelp av *kolonnehodefiltre*, kan du endre filteroperatoren etter behov for å finne dataene du vil bruke. Du kan for eksempel endre operatoren fra **begynner med** til **er nøyaktig**. Hver gang du bruker et kolonnehodefilter og endrer filteroperatoren, lagrer appen endringen. Den vil deretter gjenopprette filteroperatoren neste gang du filtrerer på denne kolonnen.
 - **Navigasjonsrute** – Du kan åpne *navigasjonsruten* ved å velge **Vis navigasjonsrute**-knappen øverst til venstre rute på en hvilken som helst side. (Denne knappen kalles noen ganger _**Meny**-knappen_, *hamburger*, *hamburgermeny* eller *hamburgerknapp*.) Du kan feste navigeringsruten åpen eller beholde den skjult som standard. Når du fester navigasjonsruten åpen, vil appen beholde den åpen helt til du skjuler den.
@@ -106,14 +106,14 @@ Hvis du vil gjøre flere endringer på en side eller gjøre endringer som ikke e
 
 - Velg **Ctrl+Skift+P** fra ethvert element på siden.
 - Velg **Tilpass denne siden** i egenskapsvinduet for et element.
-- Velg **Tilpass denne siden** i gruppen **Tilpass** i kategorien **Alternativer** på handlingssiden til en hvilken som helst side.
+- Velg **Tilpass denne siden** i gruppen **Tilpass** i fanen **Alternativer** på handlingssiden til en hvilken som helst side.
 - Velg knappen **Innstillinger** (tannhjulsymbolet) i navigasjonsfeltet, og velg deretter **Tilpass**.
 
 [![Verktøylinje for tilpassing](./media/restyledPersonalizationToolbar.png)](./media/restyledPersonalizationToolbar.png)
 
 #### <a name="navigating-the-page"></a>Navigere på siden
 
-Når verktøylinjen **Tilpassing** er åpen, er den underliggende siden skrivebeskyttet (med andre ord kan du ikke redigere data), men den er fortsatt interaktiv. Spesifikt kan du vise eller skjule ruten **Beslektet informasjon**, bytte kategorier og vise eller skjule inndelinger, på samme måte som du vanligvis ville utført disse handlingene på siden. Hvis du vil bruke en tilpasning på en inndeling eller kategori som kan skjules (for eksempel skjule en hurtigfane), kan du ganske enkelt velge knappen som vises ved siden av inndelingen eller kategorien som kan skjules, når den får tastaturfokus eller når du holder musepekeren over den.
+Når verktøylinjen **Tilpassing** er åpen, er den underliggende siden skrivebeskyttet (med andre ord kan du ikke redigere data), men den er fortsatt interaktiv. Spesifikt kan du vise eller skjule ruten **Beslektet informasjon**, bytte kategorier og vise eller skjule inndelinger, på samme måte som du vanligvis ville utført disse handlingene på siden. Hvis du vil bruke en tilpasning på en inndeling eller kategori som kan skjules (for eksempel skjule en hurtigfane), kan du ganske enkelt velge knappen som vises ved siden av inndelingen eller fanen som kan skjules, når den får tastaturfokus eller når du holder musepekeren over den.
 
 #### <a name="personalization-tools"></a>Verktøy for tilpassing
 
@@ -144,7 +144,7 @@ I noen tilfeller når du velger et verktøy, vises et hengelåssymbol ved siden 
 
 ### <a name="adding-tiles-lists-and-links-to-a-workspace"></a>Legge til fliser, lister og koblinger til et arbeidsområde
 
-For enkelte sider som inneholder lister, er tilpasningsfunksjonen **Legg til i arbeidsområde** tilgjengelig i gruppen **Tilpass** i kategorien **Alternativer** i handlingsruten. Med denne funksjonen kan du skyve relevant informasjon fra gjeldende liste til et bestemt arbeidsområde. Informasjonen som vises i arbeidsområdet, kan baseres på hele listen eller en filtrert og sortert versjon av listen. Du kan også angi om informasjonen skal vises i arbeidsområdet som en liste, som en sammendragsflis som kan vise antall elementer i listen, eller som en kobling.
+For enkelte sider som inneholder lister, er tilpasningsfunksjonen **Legg til i arbeidsområde** tilgjengelig i gruppen **Tilpass** i fanen **Alternativer** i handlingsruten. Med denne funksjonen kan du skyve relevant informasjon fra gjeldende liste til et bestemt arbeidsområde. Informasjonen som vises i arbeidsområdet, kan baseres på hele listen eller en filtrert og sortert versjon av listen. Du kan også angi om informasjonen skal vises i arbeidsområdet som en liste, som en sammendragsflis som kan vise antall elementer i listen, eller som en kobling.
 
 > [!NOTE]
 > Hvis funksjonen [Lagrede visninger](saved-views.md) er aktivert, er innholdet du dytter til et arbeidsområde, direkte koblet til en visning. Visningsspørringen brukes til å hente data i arbeidsområdet, og tilsvarende flis eller kobling i arbeidsområdet åpner siden til denne visningen, slik at visningensspørring og personlige tilpasninger brukes på den. Hvis visningen oppdateres, vil de tilhørende arbeidsområdeelementene bli justert til den nye visningsdefinisjonen.
@@ -195,6 +195,3 @@ For kunder som ennå ikke har aktivert funksjonen [Lagrede visninger](saved-view
 Når du tilpasser oppsettet av lagerdimensjoner på en side, tar du hensyn til innstillingene som er opprettet ved hjelp av alternativet **Visningsdimensjoner**. Du bruker eksempelvis tilpasning for å skjule en kolonne for lagerdimensjonen for partinummer, men kolonnen vises neste gang siden åpnes. Dette skjer fordi **Dimensjonsvisning**-innstillingene kontrollerer lagerdimensjonskolonnene som vises. Innstillingene for **Dimensjonsvisning** gjelder på tvers av alle sider og overstyrer tilpassede oppsett av lagerdimensjonsfelt på enkeltsider.
 
 I eksemplet ovenfor må du derfor fjerne lagerdimensjonen for partinummer som en del av alternativet **Visningsdimensjoner** for en side hvis du ikke vil at kolonnen for denne dimensjonen skal vises på denne siden.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 23fe13f7e3c7e8138b690c96fafc075c4700a60f
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: d1402019dbaaa60827499fcb6b93ee31440cfc3d
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693312"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797658"
 ---
 # <a name="create-workflows-overview"></a>Oversikt over å opprette arbeidsflyter
 
@@ -35,7 +35,7 @@ Dette emnet forklarer hvordan du oppretter en arbeidsflyt.
 Modulen du arbeider i bestemmer hvilke typer arbeidsflyt du kan opprette. Følg denne fremgangsmåten for å velge typen arbeidsflyt for å opprette og åpne redigeringsprogrammet for arbeidsflyt.
 
 1. Åpne modulen du vil opprette en ny arbeidsflyt for. Hvis du for eksempel vil opprette en arbeidsflyt for innkjøpsrekvisisjoner, klikker du **Innkjøp og leverandører**.
-2. Klikk **Oppsett** &gt; **\[Arbeidsflyter for\] modulnavn**.
+2. Klikk på **Oppsett** &gt; **\[Arbeidsflyter for\] modulnavn**.
 3. På listesiden som vises klikker du **Ny** i handlingsruten.
 4. På siden **Opprett arbeidsflyt** velger du typen arbeidsflyt å opprette, og deretter klikker du **Opprett arbeidsflyt**. Redigeringsprogrammet for arbeidsflyt åpnes. Du kan nå bruke fremgangsmåtene nedenfor for utforme arbeidsflyten.
 
@@ -45,14 +45,14 @@ Modulen du arbeider i bestemmer hvilke typer arbeidsflyt du kan opprette. Følg 
 
 ## <a name="connect-the-elements"></a>Koble elementene
 
-Hvis du vil koble ett arbeidsflytelement til et annet, holder du markøren over et element til du ser koblingspunkt. Klikk et koblingspunkt, og dra det til et annet element. Pass på at du kobler alle elementene.
+Hvis du vil koble ett arbeidsflytelement til et annet, holder du markøren over et element til du ser koblingspunkt. Klikk på et koblingspunkt, og dra det til et annet element. Pass på at du kobler alle elementene.
 
 ## <a name="configure-the-properties-of-the-workflow"></a>Konfigurere egenskapene for arbeidsflyten
 
 Følg disse fremgangsmåtene for å konfigurere egenskapene for arbeidsflyten.
 
 1. Klikk lerretet for å være sikker på at ingen arbeidsflytelementer er valgt.
-2. Klikk **Egenskaper** for å åpne **Egenskaper**-siden for arbeidsflyten.
+2. Klikk på **Egenskaper** for å åpne **Egenskaper**-siden for arbeidsflyten.
 3. Følg fremgangsmåten i emnet [Konfigurere egenskaper arbeidsflyt](configure-workflow-properties.md).
 
 ## <a name="configure-the-elements-of-the-workflow"></a>Konfigurere elementene for arbeidsflyten
@@ -77,12 +77,9 @@ Konfigurer hvert element du dro til lerretet. Hvis du vil ha informasjon om hvor
 
 Når du er klar til å lagre og aktivere arbeidsflyten, følger du denne fremgangsmåten.
 
-1. Klikk **Lagre og Lukk** for å lukke redigeringsprogrammet for arbeidsflyt og åpne siden **Lagre arbeidsflyt**.
+1. Klikk på **Lagre og Lukk** for å lukke redigeringsprogrammet for arbeidsflyt og åpne siden **Lagre arbeidsflyt**.
 2. Angi kommentarer om endringene du har gjort i arbeidsflyten, og klikk deretter **OK**.
 3. Hvis alle problemer med feil og advarsler er løst, vises **Aktiver arbeidsflyt**-siden. Velg ett av følgende alternativer:
 
     - Hvis du vil aktivere denne versjonen av arbeidsflyten, klikker du **Aktiver den nye versjonen**. Når en arbeidsflyt er aktiv, kan brukere sende dokumenter til den for behandling.
     - Hvis du ikke vil aktivere denne versjonen, klikker du **Ikke aktiver den nye versjonen**. Du kan aktivere arbeidsflyten senere.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

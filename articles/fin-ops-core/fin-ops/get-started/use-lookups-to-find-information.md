@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a555db8ced5981abf1f3f58f16b77e1c263dcfa2
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: d75e66e8fb9f1a227c9dd15f92ca5db433c0db4a
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693647"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798149"
 ---
 # <a name="find-information-by-using-lookups"></a>Finne informasjon ved hjelp av oppslag
 
@@ -83,6 +83,3 @@ Brukeren må i stedet fjerne verdien i oppslagskontrollen, åpne rullegardinmeny
 Når filteret er brukt (se bildet nedenfor), kan brukeren søke etter og merke raden som vanlig.
 
 ![Elementoppslag med filterredigering](./media/filtereditemlookup.png)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

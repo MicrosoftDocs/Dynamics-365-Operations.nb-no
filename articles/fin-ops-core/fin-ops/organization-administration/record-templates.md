@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0b55046e6c523398b4a30e674dc9f77bb6fedf3
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: ca9ddaed0c4aad6aeb3877384778d33f83e6e4aa
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693214"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4796859"
 ---
 # <a name="record-templates-overview"></a>Oversikt over postmaler
 
@@ -37,6 +37,3 @@ Tenk deg for eksempel at du skriver inn informasjon om billeie for leiebilbedrif
 > Du kan bare bruke maler for områder som du har tilgang til. Du kan imidlertid se navnene på alle malene når du oppretter en ny post, og det samme gjelder også for andre brukere hvis du oppretter maler som er tilgjengelige for alle brukere. Husk å ta hensyn til dette når du gir malene navn. Unngå for eksempel å bruke navn som inneholder ord som provisjon hvis det der konfidensielt at enkelte ansatte i firmaet har provisjonsbasert lønn.
 
 Når én eller flere maler som du har tilgang til, finnes for et bestemt skjema og du prøver å opprette en ny post i skjemaet, vises siden **Velg en mal for**. Når du velger en mal fra listen, opprettes den nye posten med standardinformasjon som er basert på malen du velger. Hvis du ikke vil bruke maler når du oppretter nye poster, merker du av for **Ikke spør meg igjen** på siden **Velg en mal for**. Hvis du vil vise dialogboksen for valg av mal på nytt, høyreklikker du på **Postinformasjon** og deretter **Vis malvalg**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

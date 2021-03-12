@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d160c02403bf067ed523fbd634e65c622b522b97
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: eb2d4ab3434a563e907f6540809888cd3f671c1a
+ms.sourcegitcommit: fcc4596eeadac5dfe9a3242afa49b9b1c0c96575
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4686081"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "4740814"
 ---
 # <a name="list-of-er-functions-in-the-type-conversion-category"></a>Liste over ER-funksjoner i typekonverteringskategorien
 
@@ -38,6 +38,14 @@ Konverteringsfunksjoner for elektronisk rapportering (ER)-type kan brukes til å
 | [IntValue](er-functions-conversion-intvalue.md)       | Denne funksjonen returnerer en *Int*-verdi som representerer den angitte strengen. |
 | [NumberValue](er-functions-conversion-numbervalue.md) | Denne funksjonen returnerer en *reell* verdi som er konvertert fra den angitte *streng*-verdien. Under konverteringen vurderes de angitte skilletegnene for desimal- og siffergruppering. |
 | [Verdi](er-functions-conversion-value.md)             | Denne funksjonen returnerer en *reell* verdi som er konvertert fra den angitte *streng*-verdien. |
+
+## <a name="type-conversion-functions-in-the-container-category"></a>Typekonverteringsfunksjoner i beholderkategorien
+
+Tabellen nedenfor beskriver funksjonene for typekonvertering i [beholder](er-functions-category-container.md)kategorien.
+
+| Funksjon | beskrivelse |
+|----------|-------------|
+| [Base64StringToContainer](er-functions-container-base64stringtocontainer.md) | Denne funksjonen konverterer de angitte inndataene for *Streng*-typen til et dataelement av typen *Beholder*. |
 
 ## <a name="type-conversion-functions-in-the-date-and-time-category"></a>Typekonverteringsfunksjoner i kategorien Dato og klokkeslett
 
@@ -79,6 +87,3 @@ Tabellen nedenfor beskriver funksjonene for typekonvertering i [tekstkategorien]
 [Formeldesigner i elektronisk rapportering](general-electronic-reporting-formula-designer.md)
 
 [Formelspråk i elektronisk rapportering](er-formula-language.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

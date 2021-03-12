@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0495bbc008ed1760b98c2c1ace63fc4a8b1ab5cc
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: d000c3f801d382921a027c8ee259fd44ac5cdc80
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694427"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798286"
 ---
 # <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Konfigurere hjelpeopplevelsen for Finance and Operations-apper
 
@@ -41,7 +41,7 @@ Hjelpesystemet i produktet trekker ut artikler fra docs.microsoft.com og andre t
 ## <a name="adding-task-guides"></a>Legge til oppgaveveiledninger
 
 > [!NOTE]
-> Kategorien **Oppgaveveiledninger** er for øyeblikket ikke tilgjengelig i Human Resources eller Commerce. <!--We are currently working to enable this functionality in a future release.--> Oppgaveveiledningene i opplevelsen Komme i gang i Human Resources vil imidlertid fortsatt være tilgjengelige for å dekke grunnleggende funksjonalitet. For både Human Resources og Commerce er prosedyremessig hjelp tilgjengelig på nettstedet for [https://docs.microsoft.com/dynamics365](/dynamics365/).
+> fanen **Oppgaveveiledninger** er for øyeblikket ikke tilgjengelig i Human Resources eller Commerce. <!--We are currently working to enable this functionality in a future release.--> Oppgaveveiledningene i opplevelsen Komme i gang i Human Resources vil imidlertid fortsatt være tilgjengelige for å dekke grunnleggende funksjonalitet. For både Human Resources og Commerce er prosedyremessig hjelp tilgjengelig på nettstedet for [https://docs.microsoft.com/dynamics365](/dynamics365/).
 
 På siden **Systemparametere** kan systemadministratorer konfigurere tilgang til de relevante oppgavelinjebibliotekene for en implementering.
 
@@ -54,7 +54,7 @@ På siden **Systemparametere** kan systemadministratorer konfigurere tilgang til
 Hvis du vil konfigurere oppgavelinjer for en løsning, følger du denne fremgangsmåten på siden **Systemparametere**.
 
 > [!IMPORTANT]
-> Første gang du åpner kategorien **Hjelp**, må du koble til Lifecycle Services. Husk å velge koblingen i midten av skjemaet, vent på tilkoblingen, lukk dialogboksen og velg **OK** for å få tilgang til siden **Systemparametere**.
+> Første gang du åpner fanen **Hjelp**, må du koble til Lifecycle Services. Husk å velge koblingen i midten av skjemaet, vent på tilkoblingen, lukk dialogboksen og velg **OK** for å få tilgang til siden **Systemparametere**.
 >
 > [![Koble til LCS](./media/connect-to-lcs-crop-1024x365.png "Koble til LCS")](./media/connect-to-lcs-crop.png)
 
@@ -62,7 +62,7 @@ Hvis du vil konfigurere oppgavelinjer for en løsning, følger du denne fremgang
 2. Velg BPM-bibliotekene (i det valgte prosjektet) du vil hente oppgaveregistreringer fra.
 3. Angi visningsrekkefølge for BPM-bibliotekene. Visningsrekkefølgen definerer hvilken rekkefølge oppgaveregistreringer fra bibliotekene skal vises i, i **Hjelp**-ruten.
 
-Etter at du har fullført disse trinnene, kan du åpne **Hjelp**-ruten og velge kategorien **Oppgaveveiledninger**. Du ser nå oppgaveveiledningene som gjelder for siden du er på i Finance and Operations-apper. Hvis det ikke finneds noen oppgaveveiledninger, kan du angi nøkkelord for å presisere søket.
+Etter at du har fullført disse trinnene, kan du åpne **Hjelp**-ruten og velge fanen **Oppgaveveiledninger**. Du ser nå oppgaveveiledningene som gjelder for siden du er på i Finance and Operations-apper. Hvis det ikke finneds noen oppgaveveiledninger, kan du angi nøkkelord for å presisere søket.
 
 ### <a name="showing-translated-task-guides"></a>Vise oversatte oppgaveveiledninger
 
@@ -99,6 +99,3 @@ Hvis du vil samarbeide med Microsoft om verktøy og prosesser for å tilpasse hj
 [Ressurser for Oppgaveregistrering](../../dev-itpro/user-interface/task-recorder.md)  
 [Lage dokumentasjon eller opplæring med Oppgaveregistrering](../../dev-itpro/user-interface/task-recorder-training-docs.md)  
 [Tilpasset hjelp for GitHub-repositorium](https://github.com/microsoft/dynamics356f-o-custom-help)  
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

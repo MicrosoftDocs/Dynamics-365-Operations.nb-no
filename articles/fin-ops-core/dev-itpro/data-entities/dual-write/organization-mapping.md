@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: e2b652f11db62eb58ffc2ec2fc4322149e7d45d1
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 5132fd85fdf2c08ccded9db590328c394a2f984e
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680078"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744699"
 ---
 # <a name="organization-hierarchy-in-dataverse"></a>Organisasjonshierarki i Dataverse
 
@@ -49,9 +49,9 @@ Produktinformasjonen inneholder all informasjonen som er knyttet til produktet o
 
 Finance and Operations-apper | Andre Dynamics 365-apper | beskrivelse
 -----------------------|--------------------------------|---
-Formål for organisasjonshierarki | msdyn_internalorganizationhierarchypurposes | Denne malen gir enveis synkronisering av formålsenheten for organisasjonshierarkiet.
-Type organisasjonshierarki | msdyn_internalorganizationhierarchytypes | Denne malen gir enveis synkronisering av typeenheten for organisasjonshierarkiet.
-Organisasjonshierarki - publisert | msdyn_internalorganizationhierarchies | Denne malen gir enveis synkronisering av den publiserte enheten for organisasjonshierarkiet.
+Formål for organisasjonshierarki | msdyn_internalorganizationhierarchypurposes | Denne malen gir enveis synkronisering av formålstabellen for organisasjonshierarkiet.
+Type organisasjonshierarki | msdyn_internalorganizationhierarchytypes | Denne malen gir enveis synkronisering av typetabellen for organisasjonshierarkiet.
+Organisasjonshierarki – publisert | msdyn_internalorganizationhierarchies | Denne malen gir enveis synkronisering av den publiserte tabellen for organisasjonshierarkiet.
 Driftsenhet | msdyn_internalorganizations |
 Juridiske enheter | msdyn_internalorganizations |
 Juridiske enheter | cdm_companies | Gir toveis synkronisering av informasjon om juridisk enhet (firma).
@@ -73,6 +73,3 @@ Informasjon om intern organisasjon i Dataverse kommer fra to tabeller, **driftse
 [!include [Legal entities](includes/LegalEntities-msdyn-internalorganizations.md)]
 
 [!include [Legal entities](includes/LegalEntities-Companies.md)]
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

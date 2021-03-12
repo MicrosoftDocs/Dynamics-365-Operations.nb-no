@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 71d51f137cc0e0fcc18b39f8b92ab5c44b359609
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 09f32833d914c05a1830e2bba36ebe4c66a8a52c
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694082"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797102"
 ---
 # <a name="configure-approval-steps-in-a-workflow"></a>Konfigurere godkjenningstrinn i en arbeidsflyt
 
@@ -34,54 +34,54 @@ Når du skal konfigurere et godkjenningstrinn i redigeringsprogrammet for arbeid
 ## <a name="name-the-step"></a>Gi navn til trinnet
 Følg denne fremgangsmåten for å sette et navn på godkjenningstrinnet.
 
-1. Klikk **Grunnleggende innstillinger** i ruten til venstre.
+1. Klikk på **Grunnleggende innstillinger** i ruten til venstre.
 2. I feltet **Navn** angir du et unikt navn på godkjenningstrinnet.
 
 ## <a name="enter-a-subject-line-and-instructions"></a>Legg inn en emnelinje og instruksjoner
 
 Du må skrive inn en emnelinje og instruksjoner til brukeren som er knyttet til godkjenningstrinnet. Hvis du for eksempel konfigurerer et godkjenningstrinn for innkjøpsrekvisisjoner, ser brukeren som er tilordnet til trinnet, emnelinjen og instruksjonene på **Innkjøpsrekvisisjoner**-siden. Emnelinjen vises i en meldingslinje øverst på siden. Brukeren kan deretter klikke ikonet i meldingslinjen for å vise instruksjonene. Følg trinnene nedenfor for å legge inn en emnelinje og instruksjoner.
 
-1. Klikk **Grunnleggende innstillinger** i ruten til venstre.
+1. Klikk på **Grunnleggende innstillinger** i ruten til venstre.
 2. I **Emne for arbeidselement**-feltet angir du emnelinjen.
 3. Hvis du vil tilpasse emnelinjen, kan du sette inn plassholdere. Plassholdere erstattes med de riktige dataene når emnelinjen vises til brukerne. Følg denne fremgangsmåten for å sette inn en plassholder:
 
     1. I tekstboksen klikker du der plassholderen skal vises.
-    2. Klikk **Sett inn plassholder**.
+    2. Klikk på **Sett inn plassholder**.
     3. I listen som vises, velger du plassholderen du vil sette inn.
-    4. Klikk **Sett inn**.
+    4. Klikk på **Sett inn**.
 
 4. Hvis du vil legge til oversettelser av emnelinjen, gjør du følgende:
 
-    1. Klikk **Oversettelser**.
+    1. Klikk på **Oversettelser**.
     2. På siden som vises, klikker du **Legg til**.
     3. I listen som vises, velger du språket teksten angis på.
     4. I **Oversatt tekst**-feltet legger du inn teksten.
     5. Hvis du vil tilpasse teksten, kan du sette inn plassholdere som beskrevet i trinn 3.
-    6. Klikk **Lukk**.
+    6. Klikk på **Lukk**.
 
 5. I **Instruksjoner for arbeidselement**-feltet angir du instruksjonene.
 6. Hvis du vil tilpasse instruksjonene, kan du sette inn plassholdere. Plassholdere erstattes med de riktige dataene når instruksjonene vises til brukerne. Følg denne fremgangsmåten for å sette inn en plassholder:
 
     1. I tekstboksen klikker du der plassholderen skal vises.
-    2. Klikk **Sett inn plassholder**.
+    2. Klikk på **Sett inn plassholder**.
     3. I listen som vises, velger du plassholderen du vil sette inn.
-    4. Klikk **Sett inn**.
+    4. Klikk på **Sett inn**.
 
 7. Hvis du vil legge til oversettelser av instruksjonene, gjør du følgende:
 
-    1. Klikk **Oversettelser**.
+    1. Klikk på **Oversettelser**.
     2. På siden som vises, klikker du **Legg til**.
     3. I listen som vises, velger du språket teksten angis på.
     4. I **Oversatt tekst**-feltet legger du inn teksten.
     5. Hvis du vil tilpasse teksten, kan du sette inn plassholdere som beskrevet i trinn 6.
-    6. Klikk **Lukk**.
+    6. Klikk på **Lukk**.
 
 ## <a name="assign-the-approval-step"></a>Tildele godkjenningstrinnet
 
 Følg denne fremgangsmåten for å angi hvem godkjenningstrinnet skal tildeles.
 
 1. I den venstre ruten klikker du **Tilordning**.
-2. I **Tilordningstype**-kategorien velger du ett av alternativene i tabellen nedenfor og følger deretter de resterende trinnene for dette alternativet før du går til trinn 3.
+2. I **Tilordningstype**-fanen velger du ett av alternativene i tabellen nedenfor og følger deretter de resterende trinnene for dette alternativet før du går til trinn 3.
 
     <table>
     <thead>
@@ -97,7 +97,7 @@ Følg denne fremgangsmåten for å angi hvem godkjenningstrinnet skal tildeles.
     <td>Brukere som er tilordnet til en bestemt gruppe eller rolle</td>
     <td>
     <ol>
-    <li>Når du har valgt <strong>Deltaker</strong>i <strong>Rollebasert</strong>-kategorien i <strong>Type deltaker</strong>-listen, velger du typen gruppe eller rolle som trinnet skal tilordnes til.</li>
+    <li>Når du har valgt <strong>Deltaker</strong>i <strong>Rollebasert</strong>-fanen i <strong>Type deltaker</strong>-listen, velger du typen gruppe eller rolle som trinnet skal tilordnes til.</li>
     <li>I <strong>Deltaker</strong>-listen velger du gruppen eller rollen som trinnet skal tilordnes til.</li>
     </ol>
     </td>
@@ -107,16 +107,16 @@ Følg denne fremgangsmåten for å angi hvem godkjenningstrinnet skal tildeles.
     <td>Brukere i et bestemt organisasjonshierarki</td>
     <td>
     <ol>
-    <li>Når du har valgt <strong>Hierarki</strong>i <strong>Hierarkivalg</strong>-kategorien i <strong>Hierarkitype</strong>-listen, velger du typen hierarki som trinnet skal tilordnes til.</li>
+    <li>Når du har valgt <strong>Hierarki</strong>i <strong>Hierarkivalg</strong>-fanen i <strong>Hierarkitype</strong>-listen, velger du typen hierarki som trinnet skal tilordnes til.</li>
     <li>Systemet må hente et område med brukernavn fra hierarkiet. Disse navnene representerer brukere som trinnet kan tilordnes til. Følg fremgangsmåten nedenfor for å angi start- og sluttpunktet for området med brukernavn som systemet henter: <ol>
     <li>Velg en person fra <strong>Start fra</strong>-listen for å angi startpunktet.</li>
     <li>Hvis du vil angi sluttpunktet, klikker du <strong>Legg til betingelse</strong>. Angi deretter en betingelse som bestemmer hvor i hierarkiet systemet slutter å hente navn.</li>
     </ol>
     </li>
-    <li>I kategorien <strong>Hierarkialternativer</strong> angir du hvilke brukere i området som trinnet skal tilordnes til: <ul>
+    <li>I fanen <strong>Hierarkialternativer</strong> angir du hvilke brukere i området som trinnet skal tilordnes til: <ul>
     <li><strong>Tilordne til alle hentede brukere</strong> – Trinnet tilordnes til alle brukere i området.</li>
     <li><strong>Bare tilordne til den siste hentede brukeren</strong> – Trinnet tilordnes bare til den siste brukeren i området.</li>
-    <li><strong>Utelat brukere med følgende vilkår</strong> – Trinnet tilordnes ikke til noen brukere i området som oppfyller et bestemt vilkår. Klikk <strong>Legg til betingelse</strong> for å angi vilkåret.</li>
+    <li><strong>Utelat brukere med følgende vilkår</strong> – Trinnet tilordnes ikke til noen brukere i området som oppfyller et bestemt vilkår. Klikk på <strong>Legg til betingelse</strong> for å angi vilkåret.</li>
     </ul>
     </li>
     </ol>
@@ -127,7 +127,7 @@ Følg denne fremgangsmåten for å angi hvem godkjenningstrinnet skal tildeles.
     <td>Brukere i den gjeldende arbeidsflyten</td>
     <td>
     <ul>
-    <li>Når du har valgt <strong>Arbeidsflytbruker</strong>i <strong>Arbeidsflytbruker</strong>-kategorien i <strong>Arbeidsflytbruker</strong>-listen, velger du en bruker som deltar i arbeidsflyten.</li>
+    <li>Når du har valgt <strong>Arbeidsflytbruker</strong>i <strong>Arbeidsflytbruker</strong>-fanen i <strong>Arbeidsflytbruker</strong>-listen, velger du en bruker som deltar i arbeidsflyten.</li>
     </ul>
     </td>
     </tr>
@@ -136,7 +136,7 @@ Følg denne fremgangsmåten for å angi hvem godkjenningstrinnet skal tildeles.
     <td>Bestemte brukere</td>
     <td>
     <ol>
-    <li>Når du har valgt <strong>Bruker</strong>, klikker du <strong>Bruker</strong>-kategorien.</li>
+    <li>Når du har valgt <strong>Bruker</strong>, klikker du <strong>Bruker</strong>-fanen.</li>
     <li><strong>Tilgjengelige brukere</strong>-listen inkluderer alle systembrukere. Velg brukerne du vil tilordne trinnet til, og flytt deretter disse brukerne til <strong>Valgte brukere</strong>-listen.</li>
     </ol>
     </td>
@@ -144,7 +144,7 @@ Følg denne fremgangsmåten for å angi hvem godkjenningstrinnet skal tildeles.
     </tbody>
     </table>
 
-3. I **Tidsbegrensning**-kategorien i **Varighet**-feltet angir du hvor lang tid brukeren har til å utføre handlinger på eller svare på dokumenter som kommer til godkjenningstrinnet. Velg ett av følgende alternativer:
+3. I **Tidsbegrensning**-fanen i **Varighet**-feltet angir du hvor lang tid brukeren har til å utføre handlinger på eller svare på dokumenter som kommer til godkjenningstrinnet. Velg ett av følgende alternativer:
 
     - **Timer** – Angi antallet timer som brukeren har til å svare. Deretter velger du kalenderen som organisasjonen din bruker, og angir informasjon om organisasjonens arbeidsuke.
     - **Dager** – Angi antallet dager som brukeren har til å svare. Deretter velger du kalenderen som organisasjonen din bruker, og angir informasjon om organisasjonens arbeidsuke.
@@ -154,7 +154,7 @@ Følg denne fremgangsmåten for å angi hvem godkjenningstrinnet skal tildeles.
 
     Hvis brukeren ikke gjør noe med dokumentet innenfor den tillatte tiden, er dokumentet forfalt. Et dokument som er forfalt, videresendes, basert på alternativene du velger i **Eskalering**-området på siden.
 
-4. Hvis du har tilordnet godkjenningstrinnet til flere brukere eller en gruppe brukere i **Fullføringspolicy**-kategorien, velger du ett av følgende alternativer:
+4. Hvis du har tilordnet godkjenningstrinnet til flere brukere eller en gruppe brukere i **Fullføringspolicy**-fanen, velger du ett av følgende alternativer:
 
     - **Én enkelt godkjenner** – Handlingen som utføres på dokumentet, bestemmes av den første personen som svarer. Erik har for eksempel sendt en reiseregning på NOK 15 000. Reiseregningen er nå tilordnet Jorunn, Johanne og Bjørn. Hvis Jorunn er den første personen som svarer på dokumentet, brukes handlingen hun bestemmer seg for, på dokumentet. Hvis Jorunn avviser dokumentet, avvises det og sendes tilbake til Erik. Hvis Jorunn godkjenner dokumentet, sendes det til Karen for godkjenning.
 
@@ -193,10 +193,10 @@ Godkjenningstrinnet du konfigurerer, kan være nødvendig bare hvis bestemte bet
 4. Angi eventuelle ekstra betingelser som kreves.
 5. Hvis du vil kontrollere om betingelsene du har skrevet inn, er riktig konfigurert, følger du denne fremgangsmåten:
 
-    1. Klikk **Test**.
+    1. Klikk på **Test**.
     2. På **Test arbeidsflytbetingelse**-siden i **Valider betingelse**-området velger du en post.
-    3. Klikk **Test**. Systemet evaluerer posten for å finne ut om den oppfyller betingelsene du definerte.
-    4. Klikk **OK** eller **Avbryt** for å gå tilbake til **Egenskaper**-siden.
+    3. Klikk på **Test**. Systemet evaluerer posten for å finne ut om den oppfyller betingelsene du definerte.
+    4. Klikk på **OK** eller **Avbryt** for å gå tilbake til **Egenskaper**-siden.
 
 ## <a name="specify-what-happens-when-the-document-is-overdue"></a>Angi hva som skjer når dokumentet er forfalt
 
@@ -213,7 +213,7 @@ Hvis en bruker ikke gjør noe med et dokument innenfor den tillatte tiden, er do
 
     I dette eksempelet tilordnes det forfalte dokumentet til Doris. Hvis Doris ikke svarer innenfor det tillatte tidsrommet, tilordnes dokumentet til Elin. Hvis Elin ikke svarer innenfor det tillatte tidsrommet, avvises dokumentet.
 
-3. Klikk **Legg til videresending** for å legge til en bruker i videresendingsbanen. I **Tilordningstype**-kategorien velger du ett av alternativene i tabellen nedenfor og følger deretter de resterende trinnene for dette alternativet før du går til trinn 4.
+3. Klikk på **Legg til videresending** for å legge til en bruker i videresendingsbanen. I **Tilordningstype**-fanen velger du ett av alternativene i tabellen nedenfor og følger deretter de resterende trinnene for dette alternativet før du går til trinn 4.
 
     <table>
     <thead>
@@ -229,16 +229,16 @@ Hvis en bruker ikke gjør noe med et dokument innenfor den tillatte tiden, er do
     <td>Brukere i et bestemt organisasjonshierarki</td>
     <td>
     <ol>
-    <li>Når du har valgt <strong>Hierarki</strong>i <strong>Hierarkivalg</strong>-kategorien i <strong>Hierarkitype</strong>-listen, velger du typen hierarki som dokumentet videresendes til.</li>
+    <li>Når du har valgt <strong>Hierarki</strong>i <strong>Hierarkivalg</strong>-fanen i <strong>Hierarkitype</strong>-listen, velger du typen hierarki som dokumentet videresendes til.</li>
     <li>Systemet må hente et område med brukernavn fra hierarkiet. Disse navnene representerer brukere som dokumentet kan videresendes til. Følg fremgangsmåten nedenfor for å angi start- og sluttpunktet for området med brukernavn som systemet henter: <ol>
     <li>Velg en person fra <strong>Start fra</strong>-listen for å angi startpunktet.</li>
     <li>Hvis du vil angi sluttpunktet, klikker du <strong>Legg til betingelse</strong>. Angi deretter en betingelse som bestemmer hvor i hierarkiet systemet slutter å hente navn.</li>
     </ol>
     </li>
-    <li>I kategorien <strong>Hierarkialternativer</strong> angir du hvilke brukere i området som dokumentet skal videresendes til: <ul>
+    <li>I fanen <strong>Hierarkialternativer</strong> angir du hvilke brukere i området som dokumentet skal videresendes til: <ul>
     <li><strong>Tilordne til alle hentede brukere</strong> – Dokumentet videresendes til alle brukere i området.</li>
     <li><strong>Bare tilordne til den siste hentede brukeren</strong> – Dokumentet videresendes bare til den siste brukeren i området.</li>
-    <li><strong>Utelat brukere med følgende vilkår</strong> – Dokumentet videresendes ikke til noen brukere i området som oppfyller et bestemt vilkår. Klikk <strong>Legg til betingelse</strong> for å angi vilkåret.</li>
+    <li><strong>Utelat brukere med følgende vilkår</strong> – Dokumentet videresendes ikke til noen brukere i området som oppfyller et bestemt vilkår. Klikk på <strong>Legg til betingelse</strong> for å angi vilkåret.</li>
     </ul>
     </li>
     </ol>
@@ -249,7 +249,7 @@ Hvis en bruker ikke gjør noe med et dokument innenfor den tillatte tiden, er do
     <td>Brukere i den gjeldende arbeidsflyten</td>
     <td>
     <ul>
-    <li>Når du har valgt <strong>Arbeidsflytbruker</strong>i <strong>Arbeidsflytbruker</strong>-kategorien i <strong>Arbeidsflytbruker</strong>-listen, velger du en bruker som deltar i arbeidsflyten.</li>
+    <li>Når du har valgt <strong>Arbeidsflytbruker</strong>i <strong>Arbeidsflytbruker</strong>-fanen i <strong>Arbeidsflytbruker</strong>-listen, velger du en bruker som deltar i arbeidsflyten.</li>
     </ul>
     </td>
     </tr>
@@ -258,7 +258,7 @@ Hvis en bruker ikke gjør noe med et dokument innenfor den tillatte tiden, er do
     <td>Bestemte brukere</td>
     <td>
     <ol>
-    <li>Når du har valgt <strong>Bruker</strong>, klikker du <strong>Bruker</strong>-kategorien.</li>
+    <li>Når du har valgt <strong>Bruker</strong>, klikker du <strong>Bruker</strong>-fanen.</li>
     <li><strong>Tilgjengelige brukere</strong>-listen inkluderer alle brukere. Velg brukerne du vil videresende dokumentet til, og flytt deretter disse brukerne til <strong>Valgte brukere</strong>-listen.</li>
     </ol>
     </td>
@@ -266,7 +266,7 @@ Hvis en bruker ikke gjør noe med et dokument innenfor den tillatte tiden, er do
     </tbody>
     </table>
 
-4. I **Tidsbegrensning**-kategorien i **Varighet**-feltet angir du hvor lang tid brukeren har til å utføre handlinger på eller svare på dokumenter. Velg ett av følgende alternativer:
+4. I **Tidsbegrensning**-fanen i **Varighet**-feltet angir du hvor lang tid brukeren har til å utføre handlinger på eller svare på dokumenter. Velg ett av følgende alternativer:
 
     - **Timer** – Angi antallet timer som brukeren har til å svare. Deretter velger du kalenderen som organisasjonen din bruker, og angir informasjon om organisasjonens arbeidsuke.
     - **Dager** – Angi antallet dager som brukeren har til å svare. Deretter velger du kalenderen som organisasjonen din bruker, og angir informasjon om organisasjonens arbeidsuke.
@@ -275,7 +275,4 @@ Hvis en bruker ikke gjør noe med et dokument innenfor den tillatte tiden, er do
     - **År** – Velg dagen, uken og måneden som brukeren må svare innen. Det kan for eksempel hende at du vil at brukeren skal svare innen fredag i den tredje uken i desember.
 
 5. Gjenta trinn 3 og 4 for hver bruker som skal legges til i videresendingsbanen. Du kan endre rekkefølgen på brukerne.
-6. Hvis brukerne i videresendingsbanen ikke svarer innen tidsfristen, vil systemet automatisk utføre en handling med dokumentet. Hvis du vil angi handlingen systemet skal utføre, merker du **Handling**-raden, og velger deretter en handling i kategorien **Avslutt handling**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+6. Hvis brukerne i videresendingsbanen ikke svarer innen tidsfristen, vil systemet automatisk utføre en handling med dokumentet. Hvis du vil angi handlingen systemet skal utføre, merker du **Handling**-raden, og velger deretter en handling i fanen **Avslutt handling**.

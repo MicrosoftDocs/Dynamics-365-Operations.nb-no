@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df7f842477ddfb88662f37ae311215f08c6b0173
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 051bb023d3456dae0be30de3897b282c2d50c5af
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693190"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797634"
 ---
 # <a name="electronic-signatures-overview"></a>Oversikt over elektroniske signaturer
 
@@ -80,7 +80,7 @@ Før du signerer dokumenter elektronisk, må hver signatar be om et sertifikat.
 
 Når du ber om et sertifikat, opprettes det en offentlig og en privat nøkkel for deg. Den private nøkkelen krypteres ved hjelp av et passord som bare du kjenner. Når du signerer et dokument elektronisk, verifiseres identiteten din når du angir passordet.
 
-Hvis du vil be om et sertifikat, går du til siden **Alternativer** og kategorien **Kontoer**, og klikker  **Hent sertifikat**.
+Hvis du vil be om et sertifikat, går du til siden **Alternativer** og fanen **Kontoer**, og klikker  **Hent sertifikat**.
 
 Du må deretter angi og bekreft passordet som du vil bruke for signering. Passordet brukes til å beskytte din private nøkkel og autorisere bruk av sertifikatet ditt. Dette passordet lagres ikke i databasen, og er ikke tilgjengelig for noen andre, selv ikke administrator.
 
@@ -90,12 +90,12 @@ Hvis du glemmer passordet som er knyttet til sertifikatet, må dette sertifikate
 
 Siden **Signer dokument** vises når du gjør en endring som krever en elektronisk signatur.
 
-1. Klikk kategorien **Dokument** på siden **Signer dokument** for å gå gjennom endringene i dokumentet.
-2. Velg en årsakskode i kategorien **Signatur**.
+1. Klikk fanen **Dokument** på siden **Signer dokument** for å gå gjennom endringene i dokumentet.
+2. Velg en årsakskode i fanen **Signatur**.
 3. Angi en kommentar hvis det kreves en kommentar.
 4. Hvis bruker-ID-en ikke vises i **Signatar**-feltet, velger du den i listen.
 5. Angi plasseringen din, hvis denne informasjonen er nødvendig.
-6. Klikk **OK**.
+6. Klikk på **OK**.
 
 ### <a name="sign-for-another-users-changes"></a>Signere for en annen brukers endringer
 
@@ -106,9 +106,6 @@ Noen ganger kan det hende at du vil at en bruker skal signere for en annen bruke
 
 Hvis du vil angi godkjennere, følger du denne fremgangsmåten.
 
-1. På siden **Alternativer** i kategorien **Kontoer**, klikker du **Angi godkjenner**.
+1. På siden **Alternativer** i fanen **Kontoer**, klikker du **Angi godkjenner**.
 2. I feltet **Bruker-ID for godkjenner** velger du ID-en for brukeren som må signere for en annen brukers endringer.
 3. I feltet **Signer for bruker-ID** velger du ID-en til brukeren som har endringer det må signeres for.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

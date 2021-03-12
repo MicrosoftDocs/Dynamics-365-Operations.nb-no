@@ -17,12 +17,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 82c8172958f819735ea3f29fc331272f80b3a25a
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: a0f7391273e2374bdd136c5db47bcb65487e2a9c
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4692972"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798359"
 ---
 # <a name="feature-management-overview"></a>Oversikt over funksjonsbehandling
 
@@ -32,7 +32,7 @@ Funksjoner legges til og oppdateres i hver versjon. Funksjonsbehandling-opplevel
 
 ## <a name="the-feature-management-workspace"></a>Arbeidsområdet for funksjonsbehandling
 
-Du kan åpne arbeidsområdet **Funksjonsbehandling** ved å velge den aktuelle flisen på instrumentbordet. Du vil se en side som viser en liste over funksjoner for alle versjoner som støttes av Funksjonsbehandling-opplevelsen. Over tid vil Microsoft forbedre Funksjonsbehandling-opplevelsen slik at den inneholder tilleggsfunksjoner som hjelper deg med å administrere funksjoner.
+Du kan åpne arbeidsområdet **Funksjonsbehandling** ved å velge den aktuelle flisen på instrumentbordet. Du vil se en side som viser en liste over funksjoner for alle versjoner som støttes av Funksjonsbehandling-opplevelsen. Over tid vil Microsoft forbedre Funksjonsbehandling-opplevelsen slik at den inneholder flere funksjoner som hjelper deg å administrere funksjoner.
 
 Funksjonslisten inneholder følgende informasjon:
 
@@ -46,10 +46,10 @@ Når du velger en funksjon, vises mer informasjon i detaljruten til høyre for f
 
 Arbeidsområdet **Funksjonsbehandling** har også flere kategorier, som hver viser en liste med funksjoner.
 
-- **Ny** – Denne kategorien viser alle funksjoner som er lagt til siden den siste månedlige oppdateringen. Hvis du har hoppet over månedlige oppdateringer, viser kategorien alle de nye funksjonene som er lagt til siden forrige gang du oppdaterte. De nyeste funksjonene vises øverst på listen. Totalt antall nye funksjoner vises også på en flis øverst på siden.
-- **Ikke aktivert** – Denne kategorien viser alle funksjoner som ikke er aktivert. De nyeste funksjonene vises øverst på listen. Totalt antall nye funksjoner som ikke er aktivert, vises også på en flis øverst på siden.
-- **Planlagt** – Denne kategorien viser alle funksjoner som er planlagt aktivert i fremtiden. Funksjonene som har den tidligste planlagte datoen, vises øverst i listen. Totalt antall nye planlagte funksjoner vises også på en flis øverst på siden.
-- **Alle** – Denne kategorien viser alle funksjoner. De nyeste funksjonene vises øverst på listen.
+- **Ny** – Denne fanen viser alle funksjoner som er lagt til siden den siste månedlige oppdateringen. Hvis du har hoppet over månedlige oppdateringer, viser fanen alle de nye funksjonene som er lagt til siden forrige gang du oppdaterte. De nyeste funksjonene vises øverst på listen. Totalt antall nye funksjoner vises også på en flis øverst på siden.
+- **Ikke aktivert** – Denne fanen viser alle funksjoner som ikke er aktivert. De nyeste funksjonene vises øverst på listen. Totalt antall nye funksjoner som ikke er aktivert, vises også på en flis øverst på siden.
+- **Planlagt** – Denne fanen viser alle funksjoner som er planlagt aktivert i fremtiden. Funksjonene som har den tidligste planlagte datoen, vises øverst i listen. Totalt antall nye planlagte funksjoner vises også på en flis øverst på siden.
+- **Alle** – Denne fanen viser alle funksjoner. De nyeste funksjonene vises øverst på listen.
 
 ## <a name="turn-on-a-feature"></a>Aktivere en funksjon
 
@@ -63,9 +63,9 @@ Noen funksjoner viser en melding som inneholder tilleggsinformasjon, før du sl�
 
 Noen funksjoner vil vise en melding om at funksjonen ikke kan aktiveres før en handling er utført. Disse funksjonene indikeres av et rødt X-symbol. Du må utføre handlingene som er beskrevet i beskrivelsen, før funksjonen aktiveres. Hvis du for eksempel ikke kan bruke en funksjon før en konfigurasjonsnøkkel er deaktivert, må du deaktivere konfigurasjonsnøkkelen først og deretter gå tilbake til funksjonsbehandling for å aktivere funksjonen.
 
-Når en funksjon er aktivert, vises en melding under **Finn ut mer**-koblingen i detaljruten. Denne meldingen angir enten at funksjonen ble aktivert eller den fremtidige datoen når funksjonen er planlagt å bli aktivert. Den vises hver gang du velger funksjonen i funksjonslisten.
+Når en funksjon er aktivert, vises en melding under **Finn ut mer**-koblingen i detaljruten. Denne meldingen angir enten at funksjonen ble aktivert eller den fremtidige datoen funksjonen er planlagt å bli aktivert. Den vises hver gang du velger funksjonen i funksjonslisten.
 
-Funksjoner som er planlagt å aktiveres i fremtiden, vises i kategorien **Planlagt**. En partiprosess slår den på ved midnatt på den angitte datoen basert på tidssonen som representeres av systemdatoen.
+Funksjoner som er planlagt å aktiveres i fremtiden, vises i fanen **Planlagt**. En partiprosess slår den på ved midnatt på den angitte datoen basert på tidssonen som representeres av systemdatoen.
 
 ## <a name="reschedule-a-feature"></a>Planlegge en funksjon på nytt
 
@@ -101,8 +101,8 @@ Alle funksjoner som kan aktiveres, aktiveres. Hvis en funksjon allerede er planl
 
 Som standard deaktiveres alle funksjoner som legges til i miljøet, med mindre de er obligatoriske funksjoner. Hvis du vil aktivere alle nye funksjoner automatisk, kan du imidlertid bruke rullegardinlisten under arbeidsområdetittelen til å endre hva som skjer når nye funksjoner legges til.
 
-- Velg **Aktiver nye funksjoner automatisk** for å slå på alle nye funksjoner automatisk når de legges til i ditt miljø.
-- Velg **Ikke aktiver nye funksjoner automatisk** for å slå av alle nye funksjoner når de legges til i ditt miljø.
+- Velg `Enable new features automatically` for å aktivere alle nye funksjoner automatisk når de legges til i miljøet ditt.
+- Velg `Do not enable new features automatically` for å deaktivere alle nye funksjoner som standard når de legges til i miljøet ditt.
 
 
 Når du aktiverer alle funksjonene automatisk, vil dette aktivere alle funksjonene som vil bli aktivert når du klikker på **Aktiver alle**-knappen. Det vil ikke aktivere funksjonene som krever bekreftelse eller funksjoner som ikke kan aktiveres før en handling er utført.
@@ -159,7 +159,7 @@ Nei, det at en funksjon blir obligatorisk, er ikke en automatisk handling. Produ
 ### <a name="when-do-features-become-mandatory"></a>Når blir funksjoner obligatoriske? 
 Policyen er at alle nye funksjoner vil kunne velges i en 12-måneders periode og krever ingen endringsbehandling før du aktiverer funksjonen. Produktgruppene kan velge om de vil gjøre en funksjon obligatorisk etter at perioden er avsluttet. 
 
-### <a name="why-isnt-there-a-specific-mandatory-enabled-date"></a>Hvorfor er det ikke en bestemt "obligatorisk aktivert-dato"? 
+### <a name="why-isnt-there-a-specific-mandatory-enabled-date"></a>Hvorfor finnes det ikke en bestemt "obligatorisk aktivert-dato"? 
 Tidspunkt for frigivelse av oppdatering varierer, miljøoppdateringstidspunkt varierer, og kunder kan velge å hoppe over enkelte oppdateringer. Derfor er bestemte datoer er vanskelige å bestemme. 
 
 ### <a name="wheres-the-documentation-for-features-that-are-being-made-mandatory"></a>Hvor er dokumentasjonen for funksjoner som gjøres obligatoriske? 
@@ -199,10 +199,7 @@ internal final class BankCurrencyRevalGlobalEnableFeature implements IFeatureMet
 
 ### <a name="what-is-the-ifeaturelifecycle-implemented-by-some-feature-classes"></a>Hva er IFeatureLifecycle som er implementert av noen funksjonsklasser?
 IFeatureLifecycle er en Microsoft-intern mekanisme for å angi funksjonens livssyklusfase. Funksjoner kan være:
-- PrivatePreview – krever at en testversjon er synlig.
-- PublicPreview – vises som standard, men med en advarsel om at funksjonen er i forhåndsversjon.
-- Released – fullstendig frigitt.
+- `PrivatePreview` – krever at en testversjon er synlig.
+- `PublicPreview` – vises som standard, men med en advarsel om at funksjonen er i forhåndsversjon.
+- `Released`– fullstendig frigitt.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

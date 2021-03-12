@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2019-1-29
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: bf485b407d56b21621617682bab3492925f7f9a4
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: a1d520584e331631bb5a6a88ba6c9a8b50b3d29e
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693828"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798629"
 ---
 # <a name="client-alert-notifications-by-email"></a>Varselmeldinger til klient via e-post
 
 [!include [banner](../includes/banner.md)]
 
-Du kan du opprette egendefinerte varslingsregler som overvåker filtrerte visninger av data og sender e-postvarslinger automatisk når forhåndsdefinerte hendelser inntreffer. Alternativet for å sende e-postvarsler er tilgjengelig for alle varseltyper som støttes, og kan også aktiveres for eksisterende varslingsregler.
+Du kan du opprette egendefinerte varslingsregler som overvåker filtrerte visninger av data og sender e-postvarslinger automatisk når forhåndsdefinerte hendelser inntreffer. Alternativet for å sende e-postvarsler er tilgjengelig for alle varseltyper som støttes, og du kan også aktivere dem for eksisterende varslingsregler.
 
-Du kan bruke innebygde kontroller til å opprette varslingsregler som overvåker de filtrerte visningene av satsvise jobber i systemet. Ved å overvåke verdien i **Status**-feltet kan du også konfigurere varslingsregler som sender e-post når en satsvis jobb mislykkes. Når disse varslingsreglene er opprettet, trenger du ikke lenger sjekke rapporter for endringer i forretningsdata. Du kan i stedet la den intelligente endringsregistreringstjenesten utføre overvåkingen for deg.
+Du kan bruke innebygde kontroller til å opprette varslingsregler som overvåker de filtrerte visningene av satsvise jobber i systemet. Ved å overvåke verdien i **Status**-feltet kan du også konfigurere varslingsregler som sender e-post når en satsvis jobb mislykkes. Etter at du har opprettet disse varslingsreglene, trenger du ikke lenger å sjekke rapporter for endringer i forretningsdata. Du kan i stedet la den intelligente endringsregistreringstjenesten utføre overvåkingen for deg.
 
 Klientvarsler avhenger av e-postdelsystemet som leveres gjennom integrasjon med Microsoft Office. Vi anbefaler at du bruker SMTP-leverandøren (Simple Mail Transfer Protocol), slik at e-distribusjonen ikke må være avhengig av en lokal e-postklient.
 
@@ -50,6 +50,3 @@ Tjenesten sender e-postvarslinger ved hjelp av forhåndsdefinerte e-postmaler so
 Illustrasjonen nedenfor viser strukturen på varslingene når de mottas via e-post.
 
 [![Malbaserte varslinger for postoppretting, feltendringer og malsletting](./media/Alert-email-templates.png)](./media/Alert-email-templates.png)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

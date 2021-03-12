@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: 4fe97ca8e1eecdc064ad4d21d5acdeade9f33d9c
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 3721416ce720167a6f78e26583de84af9c8d086b
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694501"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798433"
 ---
 # <a name="create-alert-rules"></a>Opprette varslingsregler
 
@@ -40,7 +40,7 @@ De satsvise jobbene for dataendring og forfallsdatovarslinger må kjøre for at 
 
 Hendelsen som utløser en varslingsregel kan være en dato som kommer, eller en bestemt endring som forekommer. Utløser for hendelser som er definert i hurtigfanen **Varsle meg når** i dialogboksen **Opprett varslingsregel**. Hendelsene som er tilgjengelige for et bestemt felt, avhenger av utløseren som er valgt.
 
-Hvis du for eksempel definerer en varslingsregel for feltet **Startdato**, er forfallsdatohendelser velegnet. Derfor er hendelsestypen **forfaller om** tilgjengelig for det feltet. For et felt som for eksempel **Kostsenter**, er imidlertid ikke en forfallsdatohendelse velegnet. Derfor er hendelsestypen **forfaller om** ikke tilgjengelig. I stedet er hendelsestypen **er endret** tilgjengelig.
+Hvis du for eksempel definerer en varslingsregel for feltet **Startdato**, er forfallsdatohendelser velegnet. Derfor er hendelsestypen `is due in` tilgjengelig for dette feltet. For et felt som for eksempel **Kostsenter**, er imidlertid ikke en forfallsdatohendelse velegnet. Derfor er hendelsestypen `is due in` ikke tilgjengelig. I stedet er hendelsestypen `has changed` tilgjengelig.
 
 ## <a name="event-types"></a>Hendelsestyper
 
@@ -77,7 +77,7 @@ I hurtigfanen **Varsle meg med** i dialogboksen **Opprett varslingsregel** kan d
 
 ## <a name="alerts-as-business-events"></a>Varsler som forretningshendelser
 
-Varsler kan sendes eksternt ved hjelp av rammeverket for forretningshendelser. Når du oppretter et varsel, setter du **Hele organisasjonen** til **Nei** og **Send eksternt** til **Ja**. Når du har utløst varselet om forretningshendelsen, kan du utløse en flyt som er bygd i Power Automate ved hjelp av utløseren **Når en forretningshendelse oppstår** i Finance and Operations-koblingen, eller eksplisitt sende hendelsen til et sluttpunkt for forretningshendelser via **forretningshendelseskatalogen**.
+Du kan sende varsler eksternt ved hjelp av rammeverket for forretningshendelser. Når du oppretter et varsel, setter du **Hele organisasjonen** til **Nei** og **Send eksternt** til **Ja**. Når du har utløst varselet om forretningshendelsen, kan du utløse en flyt som er bygd i Power Automate ved hjelp av utløseren **Når en forretningshendelse oppstår** i Finance and Operations-koblingen, eller eksplisitt sende hendelsen til et sluttpunkt for forretningshendelser via **forretningshendelseskatalogen**.
 
 ## <a name="create-an-alert-rule"></a>Opprett en varslingsregel
 
@@ -86,22 +86,19 @@ Varsler kan sendes eksternt ved hjelp av rammeverket for forretningshendelser. N
 2. Velg **Opprett varslingsregel** i gruppen **Del** i fanen **Alternativer** i handlingsruten.
 3. Velg feltet som skal overvåkes, i feltet **Felt** i dialogboksen **Opprett varslingsregel**.
 4. Velg hendelsestypen i feltet **Hendelse**.
-5. Velg ønsket alternativ i hurtigfanen **Varsle meg i**. Hvis du vil sende varslet som en forretningshendelse, må **Hele organisasjonen** være satt til **Nei**.
+5. Velg ønsket alternativ i hurtigfanen **Varsle meg i**. Hvis du vil sende varslet som en forretningshendelse, setter du verdien for **Hele organisasjonen** til **Nei**.
 6. Hvis varslingsregelen blir inaktiv på en bestemt dato, velger du en sluttdato i hurtigfanen **Varsle meg inntil**.
-7. Godta standard emneoverskrift for e-postmeldingen eller skriv inn et nytt emne, i feltet **Emne** i hurtigfanen **Varsle meg med**. Teksten brukes som emneoverskrift for e-postmeldingen du mottar når det utløses et varsel. Hvis du vil sende varselet som en forretningshendelse, setter du **Send eksternt** til **Ja**.
-8. Skriv inn en valgfri melding i feltet **Melding**. Teksten brukes som meldingen du mottar når det utløses et varsel.
+7. Godta standard emneoverskrift for e-postmeldingen eller skriv inn et nytt emne, i feltet **Emne** i hurtigfanen **Varsle meg med**. Teksten blir emneoverskrift for e-postmeldingen du mottar når det utløses et varsel. Hvis du vil sende varselet som en forretningshendelse, setter du **Send eksternt** til **Ja**.
+8. Skriv inn en valgfri melding i feltet **Melding**. Teksten blir meldingen du mottar når det utløses et varsel.
 9. Velg **OK** for å lagre innstillingene og opprette varslingsregelen.
 
 ## <a name="limitations-and-workarounds"></a>Begrensninger og midlertidige løsninger
 
 ### <a name="workaround-for-creating-alerts-for-the-secondary-data-sources-of-a-form"></a>Midlertidig løsning for oppretting av varsler for de sekundære datakildene i et skjema
-Det er ikke mulig å opprette varsler for enkelte sekundære datakilder i skjemaer. Når du for eksempel oppretter varsler i skjemaet for kunde- eller leverandørposteringsprofiler, er bare feltene i hodet (CustLedger eller VendLedger) tilgjengelige, og ikke dimensjonskontoene. Den midlertidige løsningen på denne begrensningen er å bruke **SysTableBrowser** til å åpne denne tabellen som hoveddatakilde. 
+Du kan ikke opprette varsler for enkelte sekundære datakilder i skjemaer. Når du for eksempel oppretter varsler i skjemaet for kunde- eller leverandørposteringsprofiler, er bare feltene i hodet (CustLedger eller VendLedger) tilgjengelige, og ikke dimensjonskontoene. Den midlertidige løsningen på denne begrensningen er å bruke **SysTableBrowser** til å åpne denne tabellen som hoveddatakilde. 
 1. Åpne tabellen i **SysTableBrowser**-skjemaet.
     ```
         https://<EnvironmentURL>/?cmp=USMF&mi=SysTableBrowser&TableName=<TableName>
     ```
 2. Opprett et varsel fra SysTableBrowser-skjemaet.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

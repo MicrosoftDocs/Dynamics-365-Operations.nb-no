@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: ca12759096bd1bafda0a5eee18287a694083db69
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 59c8bd80b167cdfaa7a65e469f4dc7ebf8f50844
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685569"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744619"
 ---
 # <a name="troubleshoot-live-synchronization-issues"></a>Feilsøke problemer med direkte synkronisering
 
@@ -46,11 +46,11 @@ Du kan få følgende feilmelding når du oppretter en rad i en Finance and Opera
 
 Hvis du vil løse problemet, følger du fremgangsmåten under [Systemkrav og forutsetninger](requirements-and-prerequisites.md). Hvis du vil fullføre disse trinnene, må brukerne avdobbel skriving-programmet som er opprettet i Dataverse, ha rollen som systemadministrator. Standard eiende team må også ha rollen som systemadministrator.
 
-## <a name="live-synchronization-for-any-entity-consistently-throws-a-similar-error-when-you-create-a-row-in-a-finance-and-operations-app"></a>Direkte synkronisering for alle enheter gir konsekvent en lignende feil når du oppretter en rad i en Finance and Operations-app
+## <a name="live-synchronization-for-any-table-consistently-throws-a-similar-error-when-you-create-a-row-in-a-finance-and-operations-app"></a>Direkte synkronisering for alle tabeller gir konsekvent en lignende feil når du oppretter en rad i en Finance and Operations-app
 
 **Nødvendig rolle for å løse problemet:** Systemadministrator
 
-Du kan få en feilmelding som nedenfor hver gang du prøver å lagre enhetsdata i en Finance and Operations-app:
+Du kan få en feilmelding som nedenfor hver gang du prøver å lagre tabelldata i en Finance and Operations-app:
 
 *Kan ikke lagre endringene i databasen. Arbeidsenhet kan ikke utføre transaksjonen. Kan ikke skrive data til måleenheter. Skriving til UnitOfMeasureEntity mislyktes med feilmeldingen Kan ikke synkronisere med måleenheter.*
 
@@ -58,8 +58,8 @@ Hvis du vil løse problemet, må du kontrollere at de nødvendige referansedatae
 
 Hvis det finnes data på begge sider, og du har bekreftet at problemet ikke er relatert til data, følger du denne fremgangsmåten.
 
-1. Stopp den tilknyttede enheten.
-2. Logg deg på Finance and Operations-appen, og kontroller at det finnes rader for enheten som ikke fungerer, i tabellene DualWriteProjectConfiguration og DualWriteProjectFieldConfiguration. Spørringen ser for eksempel slik ut som hvis **Kundenr**-enheten mislykkes.
+1. Stopp den tilknyttede tabellen.
+2. Logg deg på Finance and Operations-appen, og kontroller at det finnes rader for tabellen som ikke fungerer, i tabellene DualWriteProjectConfiguration og DualWriteProjectFieldConfiguration. Spørringen ser for eksempel slik ut som hvis **Kunder**-tabellen mislykkes.
 
     ```sql
     Select projectname, externalenvironmentURL ,\* 
@@ -68,7 +68,7 @@ Hvis det finnes data på begge sider, og du har bekreftet at problemet ikke er r
         EXTERNALENTITYNAME = 'accounts' 
     ```
 
-3. Hvis det finnes rader for enheten som mislyktes, selv etter at du har stoppet tabelltilordningen, sletter du radene som er knyttet til enheten som ikke fungerer. Noter deg **projectname**-kolonnen i tabellen DualWriteProjectConfiguration, og hent posten i tabellen DualWriteProjectFieldConfiguration ved hjelp av prosjektnavnet for å slette raden.
+3. Hvis det finnes rader for tabellen som mislyktes, selv etter at du har stoppet tabelltilordningen, sletter du radene som er knyttet til tabellen som ikke fungerer. Noter deg **projectname**-kolonnen i tabellen DualWriteProjectConfiguration, og hent raden i tabellen DualWriteProjectFieldConfiguration ved hjelp av prosjektnavnet for å slette raden.
 4. Start tabelltilordningen. Valider om dataene er synkronisert uten problemer.
 
 ## <a name="handle-read-or-write-privilege-errors-when-you-create-data-in-a-finance-and-operations-app"></a>Håndtere lese- eller skrivetilgangsfeil når du oppretter data i en Finance and Operations-app
@@ -127,6 +127,3 @@ Følg fremgangsmåten nedenfor for å løse problemet.
 
 3. Kontroller at **externalenvironmentURL**-kolonnen har riktig Dataverse- eller app-URL-adresse. Slett eventuelle duplikate rader som peker til feil Dataverse-URL-adresse. Slett de tilsvarende radene i DUALWRITEPROJECTFIELDCONFIGURATION- og DUALWRITEPROJECTCONFIGURATION-tabellen.
 4. Stopp tabelltilordningen, og start den deretter på nytt
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

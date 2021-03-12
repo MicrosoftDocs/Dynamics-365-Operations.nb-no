@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2c5b25ea3bc91ac427d0d57db45fbc4169895d3e
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: d2dee0b1eb911764ea68f9b6df5516bf2cb81d07
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693731"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798232"
 ---
 # <a name="keyboard-shortcuts"></a>Hurtigtaster
 
@@ -50,7 +50,7 @@ Fra og med plattformoppdatering 11 kan brukere finne hurtigtaster som er tilgjen
 | Simuler et høyreklikk                          | Skift+F10                        |
 | Åpne kontekstmenyen    | Ctrl+F10                         |
 | Kjør standardknappen på en skjema-/dialogboks | Alt+Enter                        |
-| Klikk en knapp eller flis                          | Enter eller Mellomrom                   |
+| Klikk på en knapp eller flis                          | Enter eller Mellomrom                   |
 | Vis oppdatert informasjon for en flis for antall       | Alt+Pil opp                     |
 | Vise tilgjengelige snarveier              | Alt+Skift+K                      |
 
@@ -213,7 +213,7 @@ Fra og med plattformoppdatering 11 kan brukere finne hurtigtaster som er tilgjen
 | Bruk Redigeringsverktøyet (når du er i personliggjøringsmodus)                                                                       | U                                   |
 | Bytt om for om nåværende kontroll er redigerbar eller skrivebeskyttet (når du bruker skjermverktøyet)                                 | Mellomrom eller Enter                      |
 | Bruk Oppsummeringsverktøyet (når du er i personliggjørinsmodus)                                                                    | U                                   |
-| Bytt om for om nåværende kontroll er et oppsummeringsfelt i den gjeldende hurtigkategorien (når du bruker Oppsumeringsverktøyet)            | Mellomrom eller Enter                      |
+| Bytt om for om nåværende kontroll er et oppsummeringsfelt i den gjeldende hurtigfanen (når du bruker Oppsumeringsverktøyet)            | Mellomrom eller Enter                      |
 | Bruk Legg til-verktøyet (når du er i personliggjøringsmodus)                                                                        | A                                   |
 | Velg kontrollen hvis beholder vil bli brukt til å sette inn de nye feltene (når du bruker Legg til-verktøyet)                     | Mellomrom eller Enter                      |
 | Importer en personliggjøring (når du er i personliggjøringsmodus)                                                                | I                                   |
@@ -255,6 +255,3 @@ Fra og med plattformoppdatering 11 kan brukere finne hurtigtaster som er tilgjen
 
 [Hurtigtaster for analyse for manglende konto](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

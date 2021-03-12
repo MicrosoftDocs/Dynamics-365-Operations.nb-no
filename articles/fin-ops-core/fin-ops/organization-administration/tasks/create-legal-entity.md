@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 54e3176ccf4bc3218afdf085f910e6d2a9c1b9ff
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 6dc74291977d999218ebc66f72ee5b01b12827ed
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694843"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4796760"
 ---
 # <a name="create-a-legal-entity"></a>Opprette en ny juridisk enhet
 
@@ -33,7 +33,7 @@ En juridisk enhet er en organisasjon som identifiseres via registrering hos en j
 3. Skriv inn en verdi i **Navn**-feltet.
 4. Skriv inn en verdi i feltet **Firma.**
 5. Angi eller velg en verdi i **Land/område**-feltet.
-6. Klikk **OK**. I delen **Generelt** angir du følgende generelle informasjon om den juridiske enheten: Angi et søkenavn, hvis det kreves et søkenavn. Et søkenavn er et alternativt navn som kan brukes til å søke etter den juridiske enheten. Velg om den juridiske enheten brukes som et konsoliderte firma. Velg om den juridiske enheten brukes som et elimineringsfirma. 
+6. Klikk på **OK**. I delen **Generelt** angir du følgende generelle informasjon om den juridiske enheten: Angi et søkenavn, hvis det kreves et søkenavn. Et søkenavn er et alternativt navn som kan brukes til å søke etter den juridiske enheten. Velg om den juridiske enheten brukes som et konsoliderte firma. Velg om den juridiske enheten brukes som et elimineringsfirma. 
 7. Vis delen **Adresser**. I **Adresser**-delen klikker du på **Rediger** for å angi adresseinformasjon, for eksempel gatenavn og -nummer, postnummer og poststed.
 8. Vis delen **Kontaktinformasjon**. I delen **Kontaktinformasjon** angir du informasjon om kommunikasjonsmetoder, for eksempel e-postadresse, URL-adresser og telefonnumre. 
 9. Vis delen **Lovbestemt rapportering**. I delen **Lovbestemt rapportering** skriver du inn registreringsnumrene som brukes ved lovbestemt rapportering.
@@ -44,7 +44,4 @@ En juridisk enhet er en organisasjon som identifiseres via registrering hos en j
 14. Vis **Bilder**-delen. I delen **Bilder** viser eller endrer du logoen og/eller instrumentbordbildet som er knyttet til den juridiske enheten.  
 15. Vis delen **Avgiftsregistrering**. I delen **Avgiftsregistrering** skriver du inn registreringsnumrene som brukes til å rapportere til skattemyndighetene.
 16. Vis delen **1099-avgift**. I delen **1099-avgift** skriver du inn 1099-informasjon for den juridiske enheten.  
-17. Klikk **Lagre**.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+17. Klikk på **Lagre**.

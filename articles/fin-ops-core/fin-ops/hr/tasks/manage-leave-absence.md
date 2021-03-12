@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 61729d384b1a403f14ce1bcf227074aa28ab369a
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: dd49e4c1c5c97094061fa119ac1dda99ef69e5e4
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693022"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797998"
 ---
 # <a name="manage-leave-of-absence"></a>Administrere permisjon
 
@@ -31,10 +31,10 @@ Dette hjelper med opprettelsen av permisjonsposter for ansatt. Du kan spore perm
 1. Gå til Personale > Arbeidere > Ansatte.
 2. Velg en ansatt i listen.
 3. Vis detaljert informasjon for den valgte ansatte ved å velge den ansattes navn.
-4. Klikk kategorien Ansettelse.
-5. Klikk Ferie.
-6. Klikk Ny.
-7. Klikk rullegardinknappen i Permisonstype-feltet for å åpne oppslaget.
+4. Klikk på fanen Ansettelse.
+5. Klikk på Ferie.
+6. Klikk på Ny.
+7. Klikk på rullegardinknappen i Permisonstype-feltet for å åpne oppslaget.
     * Du kan knytte en permisjonstype til en inntektskode i Permisjonstype-skjemaet. Hvis en permisjonstype er knyttet til en inntektskode, genereres en inntektslinje med den tilknyttede inntektskoden i permisjonsperioden som du angir.  
 8. Velg en permisjonstype fra listen. 
     * For eksempel: adopsjon  
@@ -44,8 +44,5 @@ Dette hjelper med opprettelsen av permisjonsposter for ansatt. Du kan spore perm
     * For eksempel: 2015-11-20  
 11. Angi en beskrivelse i merknadsfeltet.
     * For eksempel: permisjon ved adopsjon  
-12. Klikk Lagre.
+12. Klikk på Lagre.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

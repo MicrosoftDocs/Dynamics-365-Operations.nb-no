@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-1-31
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: 5f74397bcdd59a1fe24f5b6046081cbd2bed461b
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: eee5b072f999aab7d4a5e72888abad3915e03d5b
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693551"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798124"
 ---
 # <a name="create-and-work-with-custom-fields"></a>Opprette og arbeide med egendefinerte felt
 
@@ -40,10 +40,10 @@ Trinnene nedenfor beskriver prosessen for å opprette et egendefinert felt og pl
 
 1. Naviger til skjemaet der det er behov for det nye feltet.
 2. Fordi sluttmålet er å vise det egendefinerte feltet i et skjema, finnes inngangspunktet for å opprette egendefinerte felt i tilpassingsopplevelsen. Åpne tilpassingsverktøylinjen ved å velge **Alternativer** og deretter **Tilpass dette skjemaet**.
-3. Klikk **Sett inn** og deretter **Felt**.
+3. Klikk på **Sett inn** og deretter **Felt**.
 4. Velg området i skjemaet der du vil vise det nye feltet. Når du har valgt det, viser **Sett inn felt**-dialogboksen en liste over eksisterende felt som kan settes inn i det merkede området i skjemaet.
 5. Kontroller at feltet du er interessert i, ikke allerede finnes i listen. Hvis det finnes, kan du ganske enkelt velge feltet i listen og klikke **Sett inn**.
-6. Klikk **Opprett nytt felt**-knappen over listen for å starte prosessen med å lage et egendefinert felt. Dette åpner **Opprett nytt felt**-dialogboksen.
+6. Klikk på **Opprett nytt felt**-knappen over listen for å starte prosessen med å lage et egendefinert felt. Dette åpner **Opprett nytt felt**-dialogboksen.
 
     Hvis du ikke ser **Opprett nytt felt**-knappen, har du ikke de nødvendige tillatelsene til å bruke denne funksjonen.
 
@@ -59,7 +59,7 @@ Trinnene nedenfor beskriver prosessen for å opprette et egendefinert felt og pl
 
 8. Hvis dette er det eneste feltet du vil opprette for dette skjemaet, klikker du **Lagre**. Hvis du vil opprette flere felt, klikker du **Lagre og ny** og går tilbake til trinn 7. Legg merke til at det er en grense på **20 egendefinerte felt per tabell**.
 9. Når du avslutter **Opprett nytt felt**-dialogboksen, kommer du tilbake til **Sett inn felt**-dialogboksen. Egendefinerte felt som nettopp ble lagt til, merkes automatisk i feltlisten til å bli satt inn i skjemaet.
-10. Klikk **Sett inn** for å sette inn de merkede feltene i det valgte området i skjemaet.
+10. Klikk på **Sett inn** for å sette inn de merkede feltene i det valgte området i skjemaet.
 11. **Valgfritt:** Aktiver **Flytt**-modus fra tilpassingsverktøylinjen for å flytte de nye feltene til ønsket plassering i det valgte området. Se [Tilpasse brukeropplevelsen](personalize-user-experience.md) for mer informasjon om hvordan du bruker de ulike tilpassingsfunksjonene for å optimalisere et skjema for din personlige bruk.
 
 ## <a name="sharing-custom-fields-with-other-users"></a>Dele egendefinerte felt med andre brukere
@@ -108,9 +108,9 @@ Følg denne fremgangsmåten for å vise et egendefinert felt på en dataenhet:
 
 1. Velg det egendefinerte feltet i **Egendefinerte felt** skjemaet.
 2. Utvid **Enheter**-delen til å vise settet med relevante enheter.
-3. Klikk **Rediger**-knappen.
+3. Klikk på **Rediger**-knappen.
 4. Endre **Aktivert**-feltet slik at det velges for hver enhet som skal vise dette feltet.
-5. Klikk **Bruk endringer** for å lagre valgene.
+5. Klikk på **Bruk endringer** for å lagre valgene.
 
 ### <a name="allowing-custom-fields-to-be-displayed-in-other-languages"></a>Tillate at egendefinerte felt vises på andre språk
 
@@ -162,6 +162,3 @@ Av ytelsesårsaker og tekniske årsaker er det bare tabeller som oppfyller følg
 ### <a name="can-i-reference-custom-fields-from-the-developer-tools"></a>Kan jeg referere til egendefinerte felt fra utviklerverktøy?  
 
 Egendefinerte felt kan bare administreres gjennom brukergrensesnittet og kan ikke refereres til av koden. 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

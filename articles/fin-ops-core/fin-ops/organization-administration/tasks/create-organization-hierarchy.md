@@ -3,7 +3,7 @@ title: Opprette et organisasjonshierarki
 description: Bruk følgende fremgangsmåte for å opprette et organisasjonshierarki.
 author: sericks007
 manager: AnnBe
-ms.date: 07/01/2019
+ms.date: 12/15/2020
 ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 673403680525eff57c5886bb4f430a33efd76250
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 8627c1aa0ce9ec011b568224040b1143f0f54c31
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694795"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4796928"
 ---
 # <a name="create-an-organization-hierarchy"></a>Opprette et organisasjonshierarki
 
@@ -34,13 +34,13 @@ Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
 
 ## <a name="create-a-hierarchy"></a>Opprett et hierarki
 1. Gå til **Navigasjonsrute > Moduler > Organisasjonsstyring > Organisasjoner > Organisasjonshierarkier**.
-2. Klikk **Ny** i **handlingsruten**.
+2. Klikk på **Ny** i **handlingsruten**.
 3. Skriv inn en verdi i **Navn**-feltet.
 4. I **Formål**-delen klikker du **Tilordne formål**.
 5. Finn og velg ønsket post i listen. Velg et formål som skal tilordnes til organisasjonshierarkiet.  
-6. I delen **Tilordnede hierarkier** klikker du **Legg til**.
+6. I delen **Tilordnede hierarkier** klikker du på **Legg til**.
 7. Merk den valgte raden i listen. Finn hierarkiet du nettopp opprettet.  
-8. Klikk **OK**.
+8. Klikk på **OK**.
 
 ## <a name="add-organizations-to-the-hierarchy"></a>Legge til organisasjoner i hierarkiet
 1. Finn og velg ønsket post i listen. Velg hierarkiet.  
@@ -48,6 +48,3 @@ Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
     - Legg til organisasjoner etter behov.  
     - Hvis du vil legge til en organisasjon, klikker du **Rediger** og deretter **Sett inn** for å legge til organisasjonen. Når du er ferdig med endringene, kan du **lagre** en kladd og/eller **publisere** endringene.  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

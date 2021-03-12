@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2ea39e86ace40cd8e3ad2733b7f7f7a873a963e7
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: a1039acd53f493e810b11aafd85116d034b7d323
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693046"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797319"
 ---
 # <a name="enter-applicant-and-application-data-manually"></a>Angi søker- og søknadsdata manuelt
 
@@ -31,36 +31,33 @@ Denne fremgangsmåten viser hvordan du vedlikeholder informasjon om søkere og s
 
 ## <a name="create-a-new-applicant-record"></a>Opprette en ny søkerpost
 1. Gå til Personale > Rekruttering > Søkere > Søkere.
-2. Klikk Ny.
+2. Klikk på Ny.
 3. Skriv inn en verdi i feltet Fornavn.
 4. Skriv inn en verdi i feltet Etternavn.
     * Hvis den er tilgjengelig, kan du angi ytterligere informasjon om søker. Informasjonen kan for eksempel inkludere søkerens høyeste utdanning, nåværende stilling eller forrige arbeidsgiver.  
 5. Aktiver/deaktiver utvidelsen av delen Kontaktinformasjon.
-6. Klikk Legg til.
+6. Klikk på Legg til.
 7. I Beskrivelse-feltet skriver du inn E-postkommunikasjon.
 8. Velg et alternativ i Type-feltet.
 9. Angi en verdi i feltet Kontaktnummer/-adresse.
     * Denne e-postadressen brukes til å generere e-postkommunikasjon med søkeren.  
-10. Klikk Legg til.
+10. Klikk på Legg til.
 11. Skriv inn en verdi i feltet Beskrivelse.
 12. Angi en verdi i feltet Kontaktnummer/-adresse.
     * Personlige opplysninger om søker.  
     * Du kan angi personlig tilleggsinformasjon for søkeren, om nødvendig. Dette kan for eksempel inkludere fødselsdato, etnisk opprinnelse, kjønn eller sivilstand.  
-13. Klikk Kompetanser i handlingsruten.
+13. Klikk på Kompetanser i handlingsruten.
     * Du kan angi søkerens kompetanseprofil, inkludert ferdigheter, yrkeserfaring, utdannelse, tester eller sertifikater.  
     * Denne informasjonen kan brukes til å tilordne søkerens ferdigheter til kompetansen som er knyttet til prosjekter som er definert i firmaets data.   
 
 ## <a name="create-an-application-for-the-applicant"></a>Opprette en søknad for søkeren
-1. Klikk Søknader.
-2. Klikk Ny.
-3. Klikk rullegardinknappen i feltet Rekrutteringsprosjekt for å åpne oppslaget.
+1. Klikk på Søknader.
+2. Klikk på Ny.
+3. Klikk på rullegardinknappen i feltet Rekrutteringsprosjekt for å åpne oppslaget.
     * Ved å velge et rekrutteringsprosjekt knyttes søkeren til en bestemt ledig stilling som er inkludert i dette rekrutteringsprosjektet.  
 4. Finn og velg ønsket post i listen.
-5. Klikk koblingen i den valgte raden i listen.
+5. Klikk på koblingen i den valgte raden i listen.
     * Jobb og avdeling er basert på det valgte rekrutteringsprosjektet som standard.  
-6. Klikk Lagre.
+6. Klikk på Lagre.
     * Etter at søknaden er lagret, kan du legge ved dokumenter til den, inkludert søkerens erfaring, priser og følgebrev.  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

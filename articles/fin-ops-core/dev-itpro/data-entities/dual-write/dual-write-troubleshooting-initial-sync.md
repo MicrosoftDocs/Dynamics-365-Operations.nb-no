@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: a7ba4fa4771324b4bcb8464649bd8ce8f32024c0
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: a2f0e0cbf0f8710dc020a48506775fa28df9c2d2
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683572"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744643"
 ---
 # <a name="troubleshoot-issues-during-initial-synchronization"></a>Feilsøke problemer under første synkronisering
 
@@ -38,9 +38,9 @@ Dette emnet inneholder feilsøkingsinformasjon om dobbel skriving-integrasjon me
 
 ## <a name="check-for-initial-synchronization-errors-in-a-finance-and-operations-app"></a>Se etter innledende synkroniseringsfeil i en Finance and Operations-app
 
-Når du har aktivert tilordningsmalene, skal statusen for tilordningene være **Kjører**. Hvis statusen er **Kjører ikke**, oppstod det feil under første synkronisering. Hvis du vil vise feilene, velger du kategorien **Detaljer om innledende synkronisering** på siden **Dobbel skriving**.
+Når du har aktivert tilordningsmalene, skal statusen for tilordningene være **Kjører**. Hvis statusen er **Kjører ikke**, oppstod det feil under første synkronisering. Hvis du vil vise feilene, velger du fanen **Detaljer om innledende synkronisering** på siden **Dobbel skriving**.
 
-![Feil i kategorien Detaljer om innledende synkronisering](media/initial_sync_status.png)
+![Feil i fanen Detaljer om innledende synkronisering](media/initial_sync_status.png)
 
 ## <a name="you-cant-complete-initial-synchronization-400-bad-request"></a>Du kan ikke fullføre første synkronisering: 400 Ugyldig forespørsel
 
@@ -98,7 +98,7 @@ Du kan få feilmeldinger hvis noen av tilordningene dine har egenreferanser elle
 
 ## <a name="resolve-errors-in-the-vendors-v2tomsdyn_vendors-table-mapping"></a><a id="error-vendor-map"></a>Løs feil i tabelltilordningen Leverandører V2 til msdyn_vendors
 
-Det kan hende at det oppstår feil med innledende synkronisering for tilordningen **Leverandører V2** til **msdyn\_vendors** hvis tabellene har eksisterende rader med verdier i feltene **PrimaryContactPersonId** og **InvoiceVendorAccountNumber**. Disse feilene skjer fordi **InvoiceVendorAccountNumber** er et selvrefererende felt, og **PrimaryContactPersonId** er en sirkelreferanse i leverandørtilordningen.
+Det kan hende at det oppstår feil med innledende synkronisering for tilordningen **Leverandører V2** til **msdyn\_vendors** hvis tabellene har eksisterende rader med verdier i feltene **PrimaryContactPersonId** og kolonnen **InvoiceVendorAccountNumber**. Disse feilene skjer fordi **InvoiceVendorAccountNumber** er en selvrefererende kolonne, og **PrimaryContactPersonId** er en sirkelreferanse i leverandørtilordningen.
 
 Feilmeldingene du mottar, vil ha følgende form.
 
@@ -109,26 +109,26 @@ Her er noen eksempler:
 - *Fant ikke GUID for feltet: msdyn\_vendorprimarycontactperson.msdyn\_contactpersonid. Oppslaget ga ingen treff: 000056. Prøv disse URL-ene for å kontrollere at referansedataene finnes: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/contacts?$select=msdyn_contactpersonid.contactid&$filter=msdyn_contactpersonid eq '000056'`*
 - *Fant ikke GUID for feltet: msdyn\_invoicevendoraccountnumber.msdyn\_vendoraccountnumber. Oppslaget ga ingen treff: V24-1. Prøv disse URL-ene for å kontrollere at referansedataene finnes: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/msdn_vendors?$select=msdyn_vendoraccountnumber,msdyn_vendorid&$filter=msdyn_vendoraccountnumber eq 'V24-1'`*
 
-Hvis noen rader i leverandørenheten har verdier i feltene **PrimaryContactPersonId** og **InvoiceVendorAccountNumber**, følger du disse trinnene for å fullføre den innledende synkroniseringen.
+Hvis rader i leverandørtabellen har verdier i kolonnene **PrimaryContactPersonId** og **InvoiceVendorAccountNumber**, følger du disse trinnene for å fullføre den innledende synkroniseringen.
 
-1. I Finance and Operations-appen sletter du **PrimaryContactPersonId** og **InvoiceVendorAccountNumber**-feltene fra tilordningen, og deretter lagrer du endringene.
+1. I Finance and Operations-appen sletter du kolonnene **PrimaryContactPersonId** og **InvoiceVendorAccountNumber** fra tilordningen, og deretter lagrer du tilordningen.
 
-    1. På siden for tilordning med dobbeltskriving for **Leverandører V2 (msdyn\_vendors)**, i kategorien **Tabelltilordninger** i filteret til venstre velger du **Finance and Operations-apper.Vendors V2**. I filteret til høyre velger du **Sales.Vendor**.
-    2. Søk etter **primarycontactperson** for å finne kildefeltet **PrimaryContactPersonId**.
+    1. På siden for tilordning med dobbeltskriving for **Leverandører V2 (msdyn\_vendors)**, i fanen **Tabelltilordninger** i filteret til venstre velger du **Finance and Operations-apper.Vendors V2**. I filteret til høyre velger du **Sales.Vendor**.
+    2. Søk etter **primarycontactperson** for å finne kildekolonnen **PrimaryContactPersonId**.
     3. Velg **Handlinger**, og velg deretter **Slett**.
 
-        ![Slette PrimaryContactPersonId-feltet](media/vend_selfref3.png)
+        ![Slette kolonnen PrimaryContactPersonId](media/vend_selfref3.png)
 
-    4. Gjenta disse trinnene for å slette **InvoiceVendorAccountNumber**-feltet.
+    4. Gjenta disse trinnene for å slette kolonnen **InvoiceVendorAccountNumber**.
 
-        ![Slette InvoiceVendorAccountNumber-feltet](media/vend-selfref4.png)
+        ![Slette kolonnen InvoiceVendorAccountNumber](media/vend-selfref4.png)
 
     5. Lagre endringene i tilordningen.
 
-2. Deaktiver sporing av endringer for **Leverandører V2**-enheten.
+2. Deaktiver sporing av endringer for **Leverandører V2**-tabellen.
 
     1. I arbeidsområdet **Dataadministrasjon** velger du flisen **Datatabeller**.
-    2. Velg **Leverandører V2**-enheten.
+    2. Velg **Leverandører V2**-tabellen.
     3. I handlingsruten velger du **Alternativer**, og deretter velger du **Endringssporing**.
 
         ![Velge alternativet Endringssporing](media/selfref_options.png)
@@ -138,14 +138,14 @@ Hvis noen rader i leverandørenheten har verdier i feltene **PrimaryContactPerso
         ![Velge Deaktiver endringssporing](media/selfref_tracking.png)
 
 3. Kjør den innledende synkroniseringen for tilordningen **Leverandører V2 (msdyn\_vendors)**. Den innledende synkroniseringen skal kjøres uten feil.
-4. Kjør den innledende synkroniseringen for **CDS-kontakter V2 (kontakter)**-tilordningen. Du må synkronisere denne tilordningen hvis du vil synkronisere det primære kontaktfeltet på leverandørenheten, ettersom innledende synkronisering også må utføres for kontaktradene.
-5. Legg til feltene **PrimaryContactPersonId** og **InvoiceVendorAccountNumber** tilbake i **Leverandører V2 (msdyn\_vendors)**-tilordningen, og lagre deretter tilordningen.
+4. Kjør den innledende synkroniseringen for **CDS-kontakter V2 (kontakter)**-tilordningen. Du må synkronisere denne tilordningen hvis du vil synkronisere den primære kontaktkolonnen i leverandørtabellen, siden innledende synkronisering også må utføres for kontaktradene.
+5. Legg kolonnene **PrimaryContactPersonId** og **InvoiceVendorAccountNumber** tilbake i tilordningen **Leverandører V2 (msdyn\_vendors)**, og lagre deretter tilordningen.
 6. Kjør den innledende synkroniseringen igjen for tilordningen **Leverandører V2 (msdyn\_vendors)**. Siden endringssporing er deaktivert, synkroniseres alle radene.
-7. Slå sporingsendring på igjen for **Leverandører V2**-enheten.
+7. Aktiver sporingsendring på nytt for **Leverandører V2**-tabellen.
 
 ## <a name="resolve-errors-in-the-customers-v3toaccounts-table-mapping"></a><a id="error-customer-map"></a>Utbedre feil i tabelltilordningen Kunder V3 til Kontoer
 
-Det kan hende at det oppstår feil med innledende synkronisering for tilordningen **Kunder V3** til **Kontoer** hvis tabellene har eksisterende rader med verdier i feltene **ContactPersonID** og **InvoiceAccount**. Disse feilene skjer fordi **InvoiceAccount** er et selvrefererende felt, og **ContactPersonID** er en sirkelreferanse i leverandørtilordningen.
+Det kan hende at det oppstår feil med innledende synkronisering for tilordningen **Kunder V3** til **Kontoer** hvis tabellene har eksisterende rader med verdier i kolonnene **ContactPersonID** og **InvoiceAccount**. Disse feilene skjer fordi **InvoiceAccount** er en selvrefererende kolonne, og **ContactPersonID** er en sirkelreferanse i leverandørtilordningen.
 
 Feilmeldingene du mottar, vil ha følgende form.
 
@@ -156,26 +156,26 @@ Her er noen eksempler:
 - *Fant ikke GUID for feltet: primarycontactid.msdyn\_contactpersonid. Oppslaget ga ingen treff: 000056. Prøv disse URL-ene for å kontrollere at referansedataene finnes: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/contacts?$select=msdyn_contactpersonid.contactid&$filter=msdyn_contactpersonid eq '000056'`*
 - *Fant ikke GUID for feltet: msdyn\_billingaccount.accountnumber. Oppslaget ga ingen treff: 1206-1. Prøv disse URL-ene for å kontrollere at referansedataene finnes: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/accounts?$select=accountnumber.account&$filter=accountnumber eq '1206-1'`*
 
-Hvis noen rader i kundeenheten har verdier i feltene **ContactPersonID** og **InvoiceAccount**, følger du disse trinnene for å fullføre den innledende synkroniseringen. Du kan bruke denne fremgangsmåten for alle de kunderettede tabellene, for eksempel **Kontoer** og **Kontakter**.
+Hvis noen rader i kundetabellen har verdier i kolonnene **ContactPersonID** og **InvoiceAccount**, følger du disse trinnene for å fullføre den innledende synkroniseringen. Du kan bruke denne fremgangsmåten for alle de kunderettede tabellene, for eksempel **Kontoer** og **Kontakter**.
 
-1. I Finance and Operations-appen sletter du feltene **ContactPersonID** og **InvoiceAccount** fra **Kunder V3 (kontoer)**-tilordningen, og deretter lagrer du tilordningen.
+1. I Finance and Operations-appen sletter du kolonnene **ContactPersonID** og **InvoiceAccount** fra tilordningen **Kunder V3 (kontoer)**, og deretter lagrer du tilordningen.
 
     1. I filteret til venstre i fanen **Tabelltilordninger** på siden for tilordning med dobbeltskriving for **Kunder V3 (kontoer)** velger du **Finance and Operations-app.Customers V3**. I filteret til høyre velger du **Dataverse .Account**.
-    2. Søk etter **contactperson** for å finne kildefeltet **ContactPersonID**.
+    2. Søk etter **contactperson** for å finne kildekolonnen **ContactPersonID**.
     3. Velg **Handlinger**, og velg deretter **Slett**.
 
-        ![Slette ContactPersonID-feltet](media/cust_selfref3.png)
+        ![Slette kolonnen ContactPersonID](media/cust_selfref3.png)
 
-    4. Gjenta disse trinnene for å slette feltet **InvoiceAccount**.
+    4. Gjenta disse trinnene for å slette kolonnen **InvoiceAccount**.
 
-        ![Slette InvoiceAccount-feltet](media/cust_selfref4.png)
+        ![Slette kolonnen InvoiceAccount](media/cust_selfref4.png)
 
     5. Lagre endringene i tilordningen.
 
-2. Deaktiver sporing av endringer for **Kunder V3**-enheten.
+2. Deaktiver sporing av endringer for **Kunder V3**-tabellen.
 
     1. I arbeidsområdet **Dataadministrasjon** velger du flisen **Datatabeller**.
-    2. Velg **Kunder V3**-enheten.
+    2. Velg **Kunder V3**-tabellen.
     3. I handlingsruten velger du **Alternativer**, og deretter velger du **Endringssporing**.
 
         ![Velge alternativet Endringssporing](media/selfref_options.png)
@@ -190,7 +190,7 @@ Hvis noen rader i kundeenheten har verdier i feltene **ContactPersonID** og **In
     > [!NOTE]
     > Det er to tilordninger med samme navn. Sørg for å velge tilordningen med følgende beskrivelse i fanen **Detaljer**: **Dual-write template for sync between FO.CDS Vendor Contacts V2 to CDS.Contacts. Krever ny pakke \[Dynamics365SupplyChainExtended\].**
 
-5. Legg til feltene **InvoiceAccount** og **ContactPersonId** i **Kunder V3 (Kontoer)** -tilordningen igjen, og lagre deretter tilordningen. Både **InvoiceAccount**- og **ContactPersonId**-feltene er nå en del av modus for direkte synkronisering igjen. I neste trinn skal du utføre den innledende synkroniseringen for disse feltene.
+5. Legg kolonnene **InvoiceAccount** og **ContactPersonId** tilbake i tilordningen **Kunder V3 (Kontoer)** igjen, og lagre deretter tilordningen. Både kolonnen **InvoiceAccount** og kolonnen **ContactPersonId** er nå en del av modus for direkte synkronisering igjen. I neste trinn skal du utføre den innledende synkroniseringen for disse kolonnene.
 6. Kjør den innledende synkroniseringen på nytt for **Kunder V3 (Kontoer)**-tilordningen. Siden endringssporing er slått av, synkroniseres dataene for **InvoiceAccount** og **ContactPersonId** fra Finance and Operations-appen til Dataverse.
 7. Hvis du vil synkronisere dataene for **InvoiceAccount** og **ContactPersonId** fra Dataverse til Finance and Operations-appen, må du bruke et dataintegrasjonsprosjekt.
 
@@ -210,7 +210,4 @@ Hvis noen rader i kundeenheten har verdier i feltene **ContactPersonID** og **In
 
     Den innledende synkroniseringen av radene er nå fullført.
 
-8. I Finance and Operations-appen aktiverer du endringssporing igjen for **Kunder V3**-enheten.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+8. I Finance and Operations-appen aktiverer du endringssporing på nytt for **Kunder V3**-tabellen.

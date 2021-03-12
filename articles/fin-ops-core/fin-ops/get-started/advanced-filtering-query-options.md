@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b867099b131594a64cad102e50ead7c355594f2b
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 650f1c209b1797973634c788645a4659bff28f13
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694549"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798677"
 ---
 # <a name="advanced-filtering-and-query-syntax"></a>Avansert syntaks for filtrering og spørring
 
@@ -139,13 +139,13 @@ Dette emnet beskriver alternativene for filtrering og spørringer som er tilgjen
 <td>Skriv inn en <strong>SysQueryRangeUtil</strong>-metode med parametere som angir verdien eller verdiområdet.</td>
 <td>
 <ol>
-<li>Klikk <strong>Kunder</strong> &gt; <strong>Fakturaer</strong> &gt; <strong>Åpne kundefakturaer</strong>.</li>
+<li>Klikk på <strong>Kunder</strong> &gt; <strong>Fakturaer</strong> &gt; <strong>Åpne kundefakturaer</strong>.</li>
 <li>Trykk Ctrl+Skift+F3 for å åpne <strong>Forespørsel</strong>-siden.</li>
-<li>Klikk <strong>Legg til</strong> i kategorien <strong>Område</strong>.</li>
+<li>Klikk på <strong>Legg til</strong> i fanen <strong>Område</strong>.</li>
 <li>I <strong>Tabell</strong>-feltet velger du <strong>Åpne kundetransaksjoner</strong>.</li>
 <li>I <strong>Felt</strong>-feltet velger du <strong>Forfallsdato</strong>.</li>
 <li>I <strong>Kriterier</strong>-feltet angir du <strong>(yearRange(-2,0))</strong>.</li>
-<li>Klikk <strong>OK</strong>. Listesiden oppdateres for å vise fakturaene som samsvarer med de angitte kriteriene. Når det gjelder dette bestemte eksemplet, vises fakturaer som forfalt i de to forrige årene.</li>
+<li>Klikk på <strong>OK</strong>. Listesiden oppdateres for å vise fakturaene som samsvarer med de angitte kriteriene. Når det gjelder dette bestemte eksemplet, vises fakturaer som forfalt i de to forrige årene.</li>
 </ol>
 Se tabellen i den neste delen hvis du vil ha mer informasjon om <strong>SysQueryRangeUtil</strong>-datometoder og flere eksempler.</td>
 </tr>
@@ -242,6 +242,3 @@ Se tabellen i den neste delen hvis du vil ha mer informasjon om <strong>SysQuery
 </tr>
 </tbody>
 </table>
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

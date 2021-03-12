@@ -1,6 +1,6 @@
 ---
 title: Filtrere konserninterne ordrer for å unngå synkronisering av ordrer og ordrelinjer
-description: Dette emnet beskriver hvordan konserninterne ordrer filtreres for å unngå synkronisering av ordrer og ordrelinjer.
+description: Dette emnet forklarer hvordan du filtrerer konserninterne ordrer slik at enhetene Ordrer og Ordrelinjer ikke synkroniseres.
 author: negudava
 manager: tfehr
 ms.date: 11/09/2020
@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,52 +18,51 @@ ms.search.industry: ''
 ms.author: negudava
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-09-20
-ms.openlocfilehash: 6c5e1e2467673badd20366d3bd8e1b93b8078b26
-ms.sourcegitcommit: 0eb33909a419d526eb84b4e4b64d3595d01731ef
+ms.openlocfilehash: 342db8c1b4337145bfd61f5698ff6de25434a400
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4701039"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4796612"
 ---
-# <a name="filter-intercompany-orders-to-avoid-synchronizing-orders-and-orderlines"></a>Filtrere konserninterne ordrer for å unngå synkronisering av ordrer og ordrelinjer
+# <a name="filter-intercompany-orders-to-avoid-syncing-orders-and-orderlines"></a>Filtrere konserninterne ordrer for å unngå synkronisering av ordrer og ordrelinjer
 
 [!include [banner](../../includes/banner.md)]
 
-Du kan filtrere konserninterne ordrer for å unngå synkronisering av **Ordrer**- og **Ordrelinjer**-enhetene. I noen scenarioer er ikke de konserninterne ordredetaljene nødvendige i kundeengasjementappen.
+Du kan filtrere konserninterne ordrer slik at tabellene **Ordrer** og **Ordrelinjer** ikke synkroniseres. I enkelte scenarioer er ikke de konserninterne ordredetaljene nødvendige i en kundeengasjementsapp.
 
-Hver av de standard Common Data Service-enhetene utvides med referanser til **IntercompanyOrder**-feltet, og dobbeltskrivningstilordningene endres for å referere til tilleggsfeltene i filtrene. Resultatet er at de konserninterne ordrene ikke lenger er synkronisert. Denne prosessen unngår unødvendige data i kundeengasjementappen.
+Hver standard Dataverse-tabell utvides via referanser til kolonnen **IntercompanyOrder**, og tilordningene for dobbel skriving endres slik at de refererer til tilleggskolonnene i filtrene. Derfor synkroniseres ikke konserninterne ordrer lenger. Denne prosessen bidrar til å unngå unødvendige data i kundeengasjementsappen.
 
-1. Legg til en referanse til **IntercompanyOrder** i **CDS-salgsordrehoder**. Den fylles bare ut på konserninterne ordrer. Feltet **IntercompanyOrder** er tilgjengelig i **SalesTable**.
+1. Utvid tabellen **CDS-salgsordrehoder** ved å legge til en referanse i kolonnen **IntercompanyOrder**. Denne kolonnen fylles bare ut i konserninterne ordrer. Kolonnen **IntercompanyOrder** er tilgjengelig i **SalesTable**-tabellen.
 
-    :::image type="content" source="media/filter-sales-order-header-field-display.png" alt-text="Tilordne oppsamling til mål, SalesOrderHeader":::
-    
-2. Når **CDS-salgsordrehoder** er utvidet, er feltet **IntercompanyOrder** tilgjengelig i tilordningen. Bruk et filter med `INTERCOMPANYORDER == ""` som spørrestreng.
+    :::image type="content" source="media/filter-sales-order-header-field-display.png" alt-text="Siden Tilordne oppsamling til mål for CDS-salgsordrehoder":::
 
-    :::image type="content" source="media/filter-sales-order-header.png" alt-text="Salgsordrehoder, rediger spørring":::
+2. Når **CDS-salgsordrehoder** er utvidet, er kolonnen **IntercompanyOrder** tilgjengelig i tilordningen. Bruk et filter som har `INTERCOMPANYORDER == ""` som spørrestreng.
 
-3. Legg til en referanse til **IntercompanyInventTransId** i **CDS-salgsordrelinjer**.  Den fylles bare ut på konserninterne ordrer. Feltet **InterCompanyInventTransID** er tilgjengelig i **SalesLine**.
+    :::image type="content" source="media/filter-sales-order-header.png" alt-text="Dialogboksen Rediger spørring for CDS-salgsordrehoder":::
 
-    :::image type="content" source="media/filter-sales-order-line-field-display.png" alt-text="Tilordne oppsamling til mål, SalesOrderLine":::
+3. Utvid tabellen **CDS-salgsordrelinjer** ved å legge til en referanse i kolonnen **IntercompanyInventTransId**. Denne kolonnen fylles bare ut i konserninterne ordrer. Kolonnen **InterCompanyInventTransId** er tilgjengelig i **SalesLine**-tabellen.
 
-4. Når **CDS-salgsordrelinjer** er utvidet, er feltet **IntercompanyInventTransId** tilgjengelig i tilordningen. Bruk et filter med `INTERCOMPANYINVENTTRANSID == ""` som spørrestreng.
+    :::image type="content" source="media/filter-sales-order-line-field-display.png" alt-text="Siden Tilordne oppsamling til mål for CDS-salgsordrelinjer":::
 
-    :::image type="content" source="media/filter-sales-order-lines.png" alt-text="Salgsordrelinjer, rediger spørring":::
+4. Når **CDS-salgsordrelinjer** er utvidet, er kolonnen **IntercompanyInventTransId** tilgjengelig i tilordningen. Bruk et filter som har `INTERCOMPANYINVENTTRANSID == ""` som spørrestreng.
 
-5. Utvid **Salgsfakturahoder V2** og **Salgsfakturalinjer V2** på samme måte som du utvidet Common Data Service-enhetene i trinn 1 og 2. Legg deretter til filterspørringene. Filterstrengen for **Salgsfakturahoder V2** er `(INTERCOMPANYORDER == "") && (SALESORDERNUMBER != "")`. Filterstrengen for **Salgsfakturalinjer V2** er `INTERCOMPANYINVENTTRANSID == ""`.
+    :::image type="content" source="media/filter-sales-order-lines.png" alt-text="Dialogboksen Rediger spørring for CDS-salgsordrelinjer":::
 
-    :::image type="content" source="media/filter-sales-invoice-header-field-display.png" alt-text="Tilordne oppsamling til mål, Salgsfakturahoder":::
+5. Gjenta trinn 1 og 2 for å utvide tabellen **Salgsfakturahoder V2** og legge til en filterspørring. I dette tilfellet bruker du `(INTERCOMPANYORDER == "") && (SALESORDERNUMBER != "")`som spørrestrengen for filteret.
 
-    :::image type="content" source="media/filter-sales-invoice-header-filter.png" alt-text="Salgsfakturahoder, rediger spørring":::
+    :::image type="content" source="media/filter-sales-invoice-header-field-display.png" alt-text="Siden Tilordne oppsamling til mål for Salgsfakturahoder V2":::
 
-    :::image type="content" source="media/filter-sales-invoice-lines-filter.png" alt-text="Salgsfakturalinjer, rediger spørring":::
+    :::image type="content" source="media/filter-sales-invoice-header-filter.png" alt-text="Dialogboksen Rediger spørring for Salgsfakturahoder V2":::
 
-6. **Tilbud**-enheten har ikke en konsernintern relasjon. Hvis noen oppretter et tilbud for en av de konserninterne kundene, kan du legge alle disse kundene i én kundegruppe ved hjelp av **CustGroup**-feltet.  Topptekst og linjer kan utvides for å legge til **CustGroup**-feltet og deretter filtreres, slik at denne gruppen ikke inkluderes.
+6. Gjenta trinn 3 og 4 for å utvide tabellen **Salgsfakturalinjer V2** og legge til en filterspørring. I dette tilfellet bruker du `INTERCOMPANYINVENTTRANSID == ""`som spørrestrengen for filteret.
 
-    :::image type="content" source="media/filter-cust-group.png" alt-text="Tilordne oppsamling til mål, Salgstilbudshoder":::
+    :::image type="content" source="media/filter-sales-invoice-lines-filter.png" alt-text="Dialogboksen Rediger spørring for Salgsfakturalinjer V2":::
 
-7. Når du har utvidet enheten **Tilbud**, bruker du et filter med `CUSTGROUP !=  "<company>"` som spørrestreng.
+7. **Tilbud**-tabellen har ikke en konsernintern relasjon. Hvis noen oppretter et tilbud for en av de konserninterne kundene, kan du bruke **CustGroup**-kolonnen til å legge alle disse kundene i én kundegruppe. Du kan utvide hodet og linjene ved å legge til **CustGroup**-kolonnen og deretter filtrere slik at gruppen ikke tas med.
 
-    :::image type="content" source="media/filter-cust-group-edit.png" alt-text="Salgstilbudshode, rediger spørring":::
+    :::image type="content" source="media/filter-cust-group.png" alt-text="Siden Tilordne oppsamling til mål for CDS-salgstilbudshode":::
 
+8. Etter at **Tilbud** er utvidet, bruker du et filter som har `CUSTGROUP != "<company>"` som spørrestreng.
 
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+    :::image type="content" source="media/filter-cust-group-edit.png" alt-text="Dialogboksen Rediger spørring for CDS-salgstilbudshode":::

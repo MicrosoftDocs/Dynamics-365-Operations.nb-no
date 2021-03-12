@@ -1,6 +1,6 @@
 ---
-title: Definere tilordningen for salgsordrestatusfeltene
-description: Dette emnet beskriver hvordan du definerer salgsordrestatusfeltene for dobbelt skriving.
+title: Definere tilordningen for salgsordrens statuskolonner
+description: Dette emnet beskriver hvordan du definerer salgsordrestatuskolonnene for dobbel skriving.
 author: dasani-madipalli
 manager: tonyafehr
 ms.date: 06/25/2020
@@ -18,22 +18,22 @@ ms.search.industry: ''
 ms.author: damadipa
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-06-25
-ms.openlocfilehash: 5855581100606003c1faf6b88a0ab234ae378893
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cc70501d231390ea15104d508a36300a1b2cd44c
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4455789"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744305"
 ---
-# <a name="set-up-the-mapping-for-the-sales-order-status-fields"></a>Definere tilordningen for salgsordrestatusfeltene
+# <a name="set-up-the-mapping-for-the-sales-order-status-columns"></a>Definere tilordningen for salgsordrens statuskolonner
 
 [!include [banner](../../includes/banner.md)]
 
-Feltene som angir salgsordrestatus, har forskjellige opplistingsverdier i Microsoft Dynamics 365 Supply Chain Management og Dynamics 365 Sales. Det kreves tilleggsoppsett for å tilordne disse feltene med dobbelt skriving.
+Kolonnene som angir salgsordrestatus, har forskjellige opplistingsverdier i Microsoft Dynamics 365 Supply Chain Management og Dynamics 365 Sales. Det kreves tilleggsoppsett for å tilordne disse kolonnene med dobbel skriving.
 
-## <a name="fields-in-supply-chain-management"></a>Felt i Supply Chain Management
+## <a name="columns-in-supply-chain-management"></a>Kolonner i Supply Chain Management
 
-I Supply Chain Management viser to felt statusen for salgsordren. Feltene du må tilordne, er **Status** og **Dokumentstatus**.
+I Supply Chain Management viser to kolonner statusen for salgsordren. Kolonnene du må tilordne, er **Status** og **Dokumentstatus**.
 
 **Status**-opplistingen angir den totale statusen til ordren. Denne statusen vises i ordrehodet.
 
@@ -53,9 +53,9 @@ I Supply Chain Management viser to felt statusen for salgsordren. Feltene du må
 - Følgeseddel
 - Faktura
 
-## <a name="fields-in-sales"></a>Felt i Sales
+## <a name="columns-in-sales"></a>Kolonner i Salg
 
-I Sales viser to felt statusen for ordren. Feltene du må tilordne, er **Status** og **Behandlingsstatus**.
+I Sales viser to kolonner statusen for ordren. Kolonnene du må tilordne, er **Status** og **Behandlingsstatus**.
 
 **Status**-opplistingen angir den totale statusen til ordren. Det har følgende verdier:
 
@@ -95,7 +95,7 @@ Følgende tabell viser tilordningen av **Behandlingsstatus** mellom Sales og Sup
 
 ## <a name="setup"></a>Installasjon
 
-Hvis du vil konfigurere tilordningen for salgsordrestatusfeltene, må du aktivere attributtene **IsSOPIntegrationEnabled** og **isIntegrationUser**.
+Hvis du vil konfigurere tilordningen for salgsordrestatuskolonnene, må du aktivere attributtene **IsSOPIntegrationEnabled** og **isIntegrationUser**.
 
 Følg denne fremgangsmåten for å aktivere attributtet **IsSOPIntegrationEnabled**.
 
@@ -110,14 +110,14 @@ Følg denne fremgangsmåten for å aktivere attributtet **IsSOPIntegrationEnable
     Xrm.WebApi.updateRecord("organization",
     "d9a7c5f7-acbf-4aa9-86e8-a891c43f748c", {"issopintegrationenabled" :
     true}).then(
-        function success(result) {
-            console.log("Account updated");
-            // perform operations on record update
-        },
-        function (error) {
-            console.log(error.message);
-            // handle error conditions
-        }
+        function success(result) {
+            console.log("Account updated");
+            // perform operations on row update
+        },
+        function (error) {
+            console.log(error.message);
+            // handle error conditions
+        }
     );
     ```
 
@@ -129,13 +129,13 @@ Følg denne fremgangsmåten for å aktivere attributtet **IsSOPIntegrationEnable
 
 Følg denne fremgangsmåten for å aktivere attributtet **isIntegrationUser**.
 
-1. I Sales kan du gå til **Innstilling \> Tilpasning \> Tilpass systemet**, velge **Brukerenhet** og deretter åpne **Skjema \> Bruker**.
+1. I Sales kan du gå til **Innstilling \> Tilpasning \> Tilpass systemet**, velge **Brukertabell** og deretter åpne **Skjema \> Bruker**.
 
     ![Åpne brukerskjemaet](media/sales-map-user.png)
 
 2. I Feltutforsker finner du **Modusen Integreringsbruker** og dobbeltklikker den for å legge den til i skjemaet. Lagre endringene.
 
-    ![Legge til feltet Integreringsbruker i skjemaet](media/sales-map-field-explorer.png)
+    ![Legge til kolonnen Integreringsbruker i skjemaet](media/sales-map-field-explorer.png)
 
 3. I Sales går du til **Innstilling \> Sikkerhet \> Brukere** og endrer visningen fra **Aktiverte brukere** til **Programbrukere**.
 
@@ -145,11 +145,8 @@ Følg denne fremgangsmåten for å aktivere attributtet **isIntegrationUser**.
 
     ![Liste over programbrukere](media/sales-map-user-mode.png)
 
-5. Endre verdien for feltet **Integreringsbruker** til **Ja**.
+5. Endre verdien for kolonnen **Integreringsbruker** til **Ja**.
 
-    ![Endre verdien for feltet Integreringsbruker](media/sales-map-user-mode-yes.png)
+    ![Endre verdien for kolonnen Integreringsbruker](media/sales-map-user-mode-yes.png)
 
 Salgsordrene er nå tilordnet.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

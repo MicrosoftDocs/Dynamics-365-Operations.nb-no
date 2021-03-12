@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-12-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: fd279b28c43e22bec6bf814845fe97828bc96d81
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: cb0188e372b5f6275472cf040d10bb796eed1858
+ms.sourcegitcommit: 95d2fc0fa7d17d3a96f7969f12c985b018b4ff94
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681334"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "4728095"
 ---
 # <a name="update-the-structure-of-a-business-document-template"></a>Oppdatere strukturen til en forretningsdokumentmal 
 
@@ -56,7 +56,7 @@ Fullfør følgende prosedyrer i [Oversikt over administrasjon av forretningsdoku
 5. Velg **OK** for å opprette den nye malen.
 
     > [!NOTE]
-    > Hvis du ennå ikke har logget på Office Online, blir du [ledet til påloggingssiden for Office 365](er-business-document-management.md#i-selected-edit-document-but-instead-of-opening-the-bdm-template-editor-page-in-finance-and-operations-i-have-been-sent-to-the-microsoft-365-web-page). Du kan gå tilbake til Finance-miljøet ved å velge **Tilbake**-knappen i nettleseren.
+    > Hvis du ennå ikke har logget på Office Online, blir du [ledet til påloggingssiden for Office 365](er-business-document-management.md#frequently-asked-questions). Du kan gå tilbake til Finance-miljøet ved å velge **Tilbake**-knappen i nettleseren.
 
     Den nye malen åpnes for redigering i den innebygde kontrollen for Excel Online på siden for malredigering.
 
@@ -106,6 +106,3 @@ Fullfør følgende prosedyrer i [Oversikt over administrasjon av forretningsdoku
 [Oversikt over elektronisk rapportering (ER)](general-electronic-reporting.md)
 
 [Oversikt over administrasjon av forretningsdokument](er-business-document-management.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

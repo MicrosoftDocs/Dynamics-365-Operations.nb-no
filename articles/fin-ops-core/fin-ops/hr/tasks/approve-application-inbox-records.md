@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fd54361f4397de75fbd578bc965cd90db963b2f8
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: c980ca44028c4257078e5493e69499db87ffa30d
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693465"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798025"
 ---
 # <a name="approve-application-inbox-records"></a>Godkjenne innboksposter for søknad
 
@@ -39,15 +39,12 @@ Denne fremgangsmåten viser hvordan du går gjennom søknader som mottas gjennom
 ## <a name="approve-application-inbox-record"></a>Godkjenn innbokspost for søknad
 1. Merk den valgte raden i listen.
 2. Merk deg verdien i Navn-feltet for senere bruk
-3. Klikk Godkjenn.
-4. Klikk OK.
+3. Klikk på Godkjenn.
+4. Klikk på OK.
 5. Lukk siden.
 
 ## <a name="view-the-newly-created-application-record"></a>Vis den nyopprettede søknadsposten
 1. Gå til Personale > Rekruttering > Søknader > Søknader.
-2. Klikk koblingen i den valgte raden i listen.
+2. Klikk på koblingen i den valgte raden i listen.
 3. Utvid delen Vedlegg.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

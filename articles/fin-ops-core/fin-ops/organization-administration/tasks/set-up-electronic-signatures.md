@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 088fe3c42b00a6a495aeee19a4e3640054a8aa2a
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 314f48fcac32793c96466ee807d5685e596193b1
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694771"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4796664"
 ---
 # <a name="set-up-electronic-signatures"></a>Opprette elektroniske signaturer
 
@@ -38,21 +38,21 @@ Bruk denne prosedyren for å definere elektroniske signaturer. En elektronisk si
 
 ## <a name="set-up-electronic-signature-parameters"></a>Definere parametere for elektronisk signatur
 1. Gå til Organisasjonsstyring > Oppsett > Elektronisk signatur > Parametere for elektronisk signatur.
-2. Klikk Rediger.
+2. Klikk på Rediger.
 3. Skriv inn en verdi i feltet Varsel.
     * Angi varselet som signatarer vil motta når det bes om en signatur. Du kan skrive inn hvilken som helst tekst. Vanligvis forteller denne teksten brukeren hva det betyr å signere et dokument elektronisk.  
     * Hvis du vil angi varselteksten på flere språk, klikker du knappen Oversettelser.  
-4. Klikk Lagre.
+4. Klikk på Lagre.
 5. Lukk siden.
 
 ## <a name="set-up-reason-codes-for-electronic-signatures"></a>Definere årsakskoder for elektroniske signaturer
 1. Gå til Organisasjonsstyring > Oppsett > Elektronisk signatur > Årsakskoder for elektronisk signatur.
-2. Klikk Ny.
+2. Klikk på Ny.
     * Du må definere årsakskoder før bruk av elektroniske signaturer. Det kreves en gyldig årsakskode ved signering av et dokument.     En signatar velger en årsakskode for å angi formålet med en elektronisk signatur. En årsakskode kan for eksempel brukes til å angi juridisk godkjenning.  
 3. Skriv inn en verdi i feltet Årsakskode.
 4. Skriv inn en verdi i feltet Beskrivelse.
     * Angi flere årsakskoder, om nødvendig.  
-5. Klikk Lagre.
+5. Klikk på Lagre.
 6. Lukk siden.
 
 ## <a name="require-electronic-signatures-for-existing-processes"></a>Kreve elektroniske signaturer for eksisterende prosesser
@@ -61,22 +61,19 @@ Bruk denne prosedyren for å definere elektroniske signaturer. En elektronisk si
     * Velg en prosess som krever elektroniske signaturer.  
 3. Merk av eller fjern merket i avmerkingsboksen Signatur nødvendig.
     * Gjenta disse trinnene for hver prosess som krever elektroniske signaturer.  
-4. Klikk Lagre.
+4. Klikk på Lagre.
 
 ## <a name="create-a-custom-requirement-for-electronic-signatures"></a>Opprette et egendefinert krav til elektroniske signaturer
-1. Klikk Ny.
+1. Klikk på Ny.
 2. Merk av eller fjern merket i avmerkingsboksen Signatur nødvendig.
 3. I Navn-feltet angir du et navn på prosessen som krever elektroniske signaturer.
-4. Klikk rullegardinknappen i feltet Tabellnavn for å åpne oppslaget.
+4. Klikk på rullegardinknappen i feltet Tabellnavn for å åpne oppslaget.
 5. Finn og velg tabellen der dataene må signeres og lagres, i listen.
-6. Klikk koblingen i den valgte raden i listen.
-7. Klikk rullegardinknappen i feltet Feltnavn for å åpne oppslaget.
+6. Klikk på koblingen i den valgte raden i listen.
+7. Klikk på rullegardinknappen i feltet Feltnavn for å åpne oppslaget.
 8. Finn og velg feltet i tabellen som du vil overvåke, i listen.
-9. Klikk koblingen i den valgte raden i listen.
+9. Klikk på koblingen i den valgte raden i listen.
     * Angi når det kreves en signatur.     Velg Alltid hvis det kreves en signatur når dataene i feltet endres.     Velg Bare hvis det bare kreves en signatur under bestemte vilkår. Hvis du velger Bare, må du også velge ett av følgende alternativer: Når en post settes inn, Når en post oppdateres eller Når en post slettes.  
-10. Klikk Lagre.
+10. Klikk på Lagre.
 11. Lukk siden.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 6356ec6850667f32f9e9e4133686c40f0b6d76d7
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b01ef3da908739d17f2a03398ae56f35191e8db6
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688265"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744547"
 ---
 # <a name="general-troubleshooting"></a>Generell feilsøking
 
@@ -65,23 +65,23 @@ Følg denne fremgangsmåten for å aktivere sporingsloggen.
 
 1. Logg inn på den modelldrevne appe i Dynamics 365, åpne **Innstillinger**-siden, og velg deretter **Administrasjon** under **System**.
 2. Velg **Systeminnstillinger** på siden **Administrasjon**.
-3. I kategorien **Tilpassing**, i feltet **Sporing av plugin-modul og egendefinert arbeidsflytaktivitet**, velger du **Alle** for å aktivere plugin-sporingsloggen. Hvis du bare vil logge sporingslogger når det oppstår unntak, kan du velge **Unntak** i stedet.
+3. I kolonnen **Sporing av plugin-modul og egendefinert arbeidsflytaktivitet** i **Tilpassing**-fanen velger du **Alle** for å aktivere plugin-sporingsloggen. Hvis du bare vil logge sporingslogger når det oppstår unntak, kan du velge **Unntak** i stedet.
 
 
 Følg denne fremgangsmåten for å se sporingsloggen.
 
 1. Logg inn på den modelldrevne appe i Dynamics 365, åpne **Innstillinger**-siden, og velg deretter **Sporingslogg for plugin-modul** under **Tilpassing**.
-2. Finn sporingsloggene der **Typenavn**-feltet er satt til **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin**.
+2. Finn sporingsloggene der **Typenavn**-kolonnen er satt til **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin**.
 3. Dobbeltklikk et element for å vise hele loggen, og se deretter gjennom **Meldingsblokk**-teksten i hurtigfanen **Utførelse**.
 
 ## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Aktivere feilsøkingsmodus for å feilsøke problemer med direkte synkronisering i Finance and Operations-apper
 
 **Nødvendig rolle for å vise feilene:** Systemadministrator – dobbel skriving-feil som kommer fra Dataverse, kan vises i Finance and Operations-appen. I noen tilfeller er ikke hele teksten i feilmeldingen tilgjengelig fordi meldingen er for lang eller inneholder personlig identifiserende informasjon (PII). Du kan aktivere detaljert logging for feil ved å følge disse trinnene.
 
-1. Alle prosjektkonfigurasjoner i Finance and Operations-apper har en **IsDebugMode**-egenskap i **DualWriteProjectConfiguration**-enheten. Åpne **DualWriteProjectConfiguration**-enheten ved hjelp av Excel-tillegget.
+1. Alle prosjektkonfigurasjoner i Finance and Operations-apper har en **IsDebugMode**-egenskap i **DualWriteProjectConfiguration**-tabellen. Åpne **DualWriteProjectConfiguration**-tabellen ved hjelp av Excel-tillegget.
 
     > [!TIP]
-    > En enkel måte å åpne enheten på er å aktivere **Utforming**-modus i Excel-tillegget og deretter legge til **DualWriteProjectConfigurationEntity** i regnearket. Hvis du vil ha mer informasjon, kan du se [Åpne enhetsdata i Excel og oppdatere dataene ved hjelp av Excel-tillegget](../../office-integration/use-excel-add-in.md).
+    > En enkel måte å åpne tabellen på er å aktivere **Utforming**-modus i Excel-tillegget og deretter legge til **DualWriteProjectConfigurationEntity** i regnearket. Hvis du vil ha mer informasjon, kan du se [Åpne tabelldata i Excel og oppdatere dataene ved hjelp av Excel-tillegget](../../office-integration/use-excel-add-in.md).
 
 2. Sett egenskapen **IsDebugMode** til **Ja** for prosjektet.
 3. Kjør scenariet som genererer feil.
@@ -108,7 +108,7 @@ Følg denne fremgangsmåten for å se sporingsloggen.
 1. Logg på Finance and Operations-appen.
 2. Gå til **Arbeidsområder \> Databehandling**, og velg flisen **Dobbel skriving**.
 3. Velg alle kjørende tilordninger, og klikk på **Stopp**.
-4. Klikk **Koble fra miljø**.
+4. Klikk på **Koble fra miljø**.
 5. Velg **Ja** for å bekrefte operasjonen.
 
 Du kan nå koble til et nytt miljø.
@@ -118,10 +118,7 @@ Du kan nå koble til et nytt miljø.
 Når du oppretter en salgsordre i Dynamics 365 Sales, kan du bli omdirigert til ordrelinjeskjemaet for Dynamics 365 Project Operations hvis du klikker på **+ Legg til produkter**. Det finnes ingen måter fra dette skjemaet å vise **Informasjon**-skjemaet for salgsordrelinje. Alternativet for **Informasjon** vises ikke i rullegardinlisten under **Ny ordrelinje**. Dette skjer fordi Project Operations er installert i ditt miljø.
 
 Følg denne fremgangsmåten for å reaktivere alternativet for **Informasjon**-skjema:
-1. Gå til **Ordrelinje**-enheten.
+1. Gå til **Ordrelinje**-tabellen.
 2. Finn **Informasjon**-skjemaet under skjemaer-noden. 
 3. Velg **Informasjon**-skjemaet, og klikk deretter **Aktiver sikkerhetsroller**. 
 4. Endre sikkerhetsinnstillingen til **Vis til alle**.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

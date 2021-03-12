@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4411a6b72dbb7e6f5b1a72df8dbcbd54e265164c
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 8443bc5c63a90d80757ab4b7507502497c2aaa69
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693408"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797790"
 ---
 # <a name="enter-payroll-beginning-balances"></a>Angi startsaldoer for lønn
 
@@ -62,29 +62,29 @@ Dette trinnet oppretter manuelt en inntektsoppgave for hver arbeider for den sis
     | Lønnssyklus  | sm                    |
     | Lønnsperiode | 16/6/2017 – 30/06/2017 |
 
-2. I kategorien **Linje i inntektsoppgave** skriver du inn følgende:
+2. I fanen **Linje i inntektsoppgave** skriver du inn følgende:
 
-    Linje 1: kategorien **Linje i inntektsoppgave**
+    Linje 1: fanen **Linje i inntektsoppgave**
 
     | Felt            | Verdi       |
     |------------------|-------------|
     | Inntektskode    | Vanlig lønn |
     | Antall         | 1.00        |
     | Sats             | 30,000      |
-    | Kategorien Linjedetaljer |             |
+    | fanen Linjedetaljer |             |
     | Manuell           | (merket)    |
 
-    Linje 2: kategorien **Linje i inntektsoppgave**
+    Linje 2: fanen **Linje i inntektsoppgave**
 
     | Felt            | Verdi    |
     |------------------|----------|
     | Inntektskode    | Bonus    |
     | Antall         | 1.0000   |
     | Sats             | 4250.00  |
-    | Kategorien Linjedetaljer |          |
+    | fanen Linjedetaljer |          |
     | Manuell           | (merket) |
 
-    Linje 3: kategorien **Linje i inntektsoppgave**
+    Linje 3: fanen **Linje i inntektsoppgave**
 
     | Felt           | Verdi      |
     |-----------------|------------|
@@ -92,11 +92,11 @@ Dette trinnet oppretter manuelt en inntektsoppgave for hver arbeider for den sis
     | Antall        | 1.0000     |
     | Sats            | !,299,00   |
     | Sats            | 1,299.00   |
-    | Kategorien Linjedetaljer |            |
+    | fanen Linjedetaljer |            |
     | Manuell          | (merket)   |
 
     > [!NOTE]
-    > Å sette **Manuell**-glidebryteren til **Ja** i kategorien **Linjedetaljer** for hver inntektsoppgave er nøkkelen til å få angitt startsaldoer for lønn for hver arbeider.
+    > Å sette **Manuell**-glidebryteren til **Ja** i fanen **Linjedetaljer** for hver inntektsoppgave er nøkkelen til å få angitt startsaldoer for lønn for hver arbeider.
 
 3. På **Handling**-ruten klikker du **Frigi inntektsoppgave** USA-FED-ER-FICA.
 4. På **Handling**-ruten klikker du **Lønnsoppgave** for å åpne siden **Generer lønnsoppgaver**, og angi følgende:
@@ -110,7 +110,7 @@ Dette trinnet oppretter manuelt en inntektsoppgave for hver arbeider for den sis
     > [!NOTE] 
     > Dette er bare tilgjengelig når betalingens kjøretype er manuell, og når brukeren ønsker å deaktivere regnskap på betalingskjøringen.
 
-    Klikk **OK** og lukk **Infolog**.
+    Klikk på **OK** og lukk **Infolog**.
 
 #### <a name="why-the-disable-accounting-slider-needs-to-set-to-yes-when-generating-pay-statements"></a>Hvorfor må glidebryteren Deaktiver regnskap være satt til Ja ved generering av lønnsoppgaver?
 
@@ -122,8 +122,8 @@ Når du har generert lønnsoppgaver med startsaldoer, må du kontrollere at løn
 
 1. Åpne siden **Alle lønnsoppgaver**.
 2. Merk den sist genererte lønnsoppgaven for Michael Redmond
-3. Klikk **Rediger** for å åpne **Lønnsoppgave**-siden.
-4. Åpne kategorien **Fordelsfradrag** og angi følgende:
+3. Klikk på **Rediger** for å åpne **Lønnsoppgave**-siden.
+4. Åpne fanen **Fordelsfradrag** og angi følgende:
 
     | Felt             | Verdi            |
     |-------------------|------------------|
@@ -133,7 +133,7 @@ Når du har generert lønnsoppgaver med startsaldoer, må du kontrollere at løn
     | Utgifter til pass og stell av barn | Delta      |
     | Syn            | SupSp            |
 
-5. I kategorien **Fordelsbidrag** angir du følgende:
+5. I fanen **Fordelsbidrag** angir du følgende:
 
     | Felt   | Verdi               |
     |---------|---------------------|
@@ -142,7 +142,7 @@ Når du har generert lønnsoppgaver med startsaldoer, må du kontrollere at løn
     | Tannforsikring  | SubSp               |
     | Syn  | SubSp               |
 
-6. Angi følgende informasjon i kategorien **Avgiftsfradrag**:
+6. Angi følgende informasjon i fanen **Avgiftsfradrag**:
 
     | Felt           | Verdi            |
     |-----------------|------------------|
@@ -150,8 +150,8 @@ Når du har generert lønnsoppgaver med startsaldoer, må du kontrollere at løn
     | USA-FED-ER-FICA | 1600.00          |
     | USA-FED-ER-MEDI | 825.75           |
 
-7. Angi følgende informasjon i kategorien **Avgiftsbidrag**:
-8. Klikk **Beregn**.
+7. Angi følgende informasjon i fanen **Avgiftsbidrag**:
+8. Klikk på **Beregn**.
 
     > [!IMPORTANT] 
     > Valider totalene i lønnsoppgaven for at de samsvarer med år-til-dato arbeiderens gamle system. Det kan hende du vil vente med å sluttføre i det neste trinnet for å gjøre en generel validering av alle lønnsoppgaver samlet. Etter validering kjører du gjennom alle lønnsoppgaver og sluttfører dem.
@@ -162,10 +162,7 @@ Den samme prosessen kan utføres kvartalsvis om nødvendig for alle tidligere kv
 
 Det er mulig å tilbakeføre, og skrive inn transaksjoner på nytt. Hvis du vil tilbakeføre transaksjonen, trenger du bare å fullføre følgende trinn på siden **Alle lønnsoppgaver**.
 
-1. Klikk **Tilbakefør**.
-2. Klikk **Ja** når meldingen «Når du tilbakefører denne lønnsoppgaven, opprettes en lønnsoppgave for tilbakeføring for å motregne denne lønnsoppgaven. Ingen lønnsoppgave kan redigeres. Du vil tilbakeføre denne lønnsoppgaven?" vises. 
+1. Klikk på **Tilbakefør**.
+2. Klikk på **Ja** når meldingen «Når du tilbakefører denne lønnsoppgaven, opprettes en lønnsoppgave for tilbakeføring for å motregne denne lønnsoppgaven. Ingen lønnsoppgave kan redigeres. Du vil tilbakeføre denne lønnsoppgaven?" vises. 
 
 Når du tilbakefører lønnsoppgaven, kan du generere en ny lønnsoppgave for arbeideren fra inntektsoppgaven som du opprettet tidligere. Husk å rette opp eventuelle ukorrekte linjer på inntekstoppgaven før du genererer den nye lønnsoppgaven, og deretter generere nye lønnsoppgaver med riktig beløp. 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8b5d2e678b01f052db29d5a1c47eae27d27cd04f
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: dd9962451e8b72677e1a006dd9c1b8b8b268c93e
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694194"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798653"
 ---
 # <a name="action-search"></a>Handlingssøk
 
@@ -35,7 +35,7 @@ Sidene viser hovedsakelig kommandoer i handlingsruter, både standard handlingsr
 
 [![keyTipsAX6](./media/keytipsax6.png)](./media/keytipsax6.png)
 
-Nøkkeltips er ikke lenger tilgjengelige, men er erstattet med handlingssøkfunksjonen. Denne nye funksjonen lar deg raskt søke etter og kjøre en knapp fra en hvilken som helst synlig handlingsrute.
+Handlingssøkefunksjonen erstatter Nøkkeltips, som ikke lenger er tilgjengelige. Denne nye funksjonen lar deg raskt søke etter og kjøre en knapp fra en hvilken som helst synlig handlingsrute.
 
 ## <a name="using-action-search"></a>Bruke handlingssøk
 
@@ -53,19 +53,19 @@ Du kan også starte handlingssøket ved å trykke Ctrl +/ eller Alt + Q. Trykk h
 
 ## <a name="understanding-the-results-list"></a>Forstå resultatlisten
 
-Du må ofte vite både plasseringen og konteksten til en knapp for å fullt ut forstå formålet med denne knappen. Derfor vises tilleggsinformasjon for hvert element i listen over resultater, som forklarer nøyaktig hvilke knapper som vises i listen. Spesielt vises "banen" for knappen. Denne banen kan inkludere etikettene for følgende grensesnittelementer, etter behov:
+Du må ofte vite både plasseringen og konteksten til en knapp for å fullt ut forstå formålet med denne knappen. Derfor inneholder listen over resultater ytterligere informasjon som forklarer nøyaktig hvilke knapper som vises i listen. Spesielt vises "banen" for knappen. Denne banen kan inkludere etikettene for følgende grensesnittelementer, etter behov:
 
 - Handlingsrutekategori
 - Knappegruppe
 - Menyknapp (hvis knappen er i en menyknapp)
 - Menyskillelinje (hvis knappen er i en navngitt gruppe i en menyknapp)
-- Gruppen eller kategorien på siden (for eksempel navnet på en hurtigfane)
+- Gruppen eller fanen på siden (for eksempel navnet på en hurtigfane)
 
-Du tastet for eksempel **tot** i feltet for **handlingssøk**, og undersøker nå resultatlisten. Den første oppføringen, for en knapp som heter **Totaler**, er uthevet. En knapp i banen til **Salgsordre** &gt; **Vis** vises også. **Salgsordre**-delen av banen korresponderer til **Salgsordre**-kategorien på handlingspanelet, og **Vis**-delen av banen korresponderer til **Vis**-gruppen for denne kategorien. Tilsvarende vil banen for **Total rabatt**-knappen (**Selg** &gt; **Beregne**) informere deg at denne knappen er lokalisert i **Kalkuler**-gruppen i kategorien **Selg** i handlingspanelet. Derfor kan denne informasjonen hjelpe deg med å forstå nøyaktig hvilken knapp som vil utløses av handlingssøk (hvis du velger denne knappen i resultatlisten).
+Du tastet for eksempel **tot** i feltet for **handlingssøk**, og undersøker nå resultatlisten. Den første oppføringen, for en knapp som heter **Totaler**, er uthevet. En knapp i banen til **Salgsordre** &gt; **Vis** vises også. **Salgsordre**-delen av banen korresponderer til **Salgsordre**-fanen på handlingspanelet, og **Vis**-delen av banen korresponderer til **Vis**-gruppen for denne fanen. Tilsvarende vil banen for **Total rabatt**-knappen (**Selg** &gt; **Beregne**) informere deg at denne knappen er lokalisert i **Kalkuler**-gruppen i fanen **Selg** i handlingspanelet. Derfor kan denne informasjonen hjelpe deg med å forstå nøyaktig hvilken knapp som vil utløses av handlingssøk (hvis du velger denne knappen i resultatlisten).
 
 [![handling-søk-felt-med-data](./media/action-search-field-with-data.png)](./media/action-search-field-with-data.png)
 
-I det forrige eksemplet viste handlingssøk resultatene fra standardhandlingsruten øverst på en side. Handlingssøk viser imidlertid også resultater fra synlige verktøylinjer som er plassert andre steder på siden. Du søker for eksempel etter knappen **Lagerbeholdning** som er plassert i hurtigfanen **Salgsordrelinjer**. I dette tilfellet informerer knappebanen i resultatlisten (**Salgsordrelinjer** &gt; **Beholdning** &gt; **Vis**) deg om at denne knappen er plassert under overskriften **Vis** på **Beholdning**-menyknappen i hurtigfanen **Salgsordrelinjer**.
+I det forrige eksemplet viste handlingssøk resultatene fra standardhandlingsruten øverst på en side. Handlingssøk viser imidlertid også resultater fra synlige verktøylinjer som er andre steder på siden. Du søker for eksempel etter knappen **Lagerbeholdning** som er i hurtigfanen **Salgsordrelinjer**. I dette tilfellet informerer knappebanen i resultatlisten (**Salgsordrelinjer** &gt; **Beholdning** &gt; **Vis**) deg om at denne knappen er under overskriften **Vis** på **Beholdning**-menyknappen i hurtigfanen **Salgsordrelinjer**.
 
 [![lager-beholdning](./media/on-hand-inventory.png)](./media/on-hand-inventory.png)
 
@@ -75,6 +75,3 @@ I det forrige eksemplet viste handlingssøk resultatene fra standardhandlingsrut
 ## <a name="action-search-vs-navigation-search"></a>Handlingssøk kontra navigasjonssøk
 
 Mens handlingssøk skal søke etter og kjøre handlinger på en side, er det en egen søkemekanisme for å finne og navigere til sider. Hvis du vil ha mer informasjon om denne funksjonen, kan du se artikkelen [Navigasjonssøk](navigation-search.md).
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

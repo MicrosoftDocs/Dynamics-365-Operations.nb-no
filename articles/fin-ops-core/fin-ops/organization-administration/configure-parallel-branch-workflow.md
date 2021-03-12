@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e67a2c7cde3a3b6d1dcfcc2ccdd3255d30ac40b8
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 9d23e981526fd17a3cb856fffcc39e76cf24da68
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693336"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797707"
 ---
 # <a name="configure-parallel-branches-in-a-workflow"></a>Konfigurere parallelle avdelinger i en arbeidsflyt
 
@@ -36,9 +36,9 @@ En parallell avdeling er egentlig en arbeidsflyt som kjøres i konteksten til en
 Følg denne fremgangsmåten for å angi et navn for en parallell avdeling.
 
 1. Høyreklikk den parallelle avdelingen, og klikk deretter **Egenskaper**. **Egenskaper**-skjemaet vises.
-2. Klikk **Grunnleggende innstillinger** i ruten til venstre.
+2. Klikk på **Grunnleggende innstillinger** i ruten til venstre.
 3. I feltet **Navn** angir du et unikt navn på den parallelle avdelingen.
-4. Klikk **Lukk**.
+4. Klikk på **Lukk**.
 
 ## <a name="design-and-configure-the-elements-of-a-branch"></a>Utforme og konfigurere elementene for en avdeling
 
@@ -50,6 +50,3 @@ Følg denne fremgangsmåten for å utforme og konfigurere elementene for en para
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Oversikt over å opprette arbeidsflyter](create-workflow.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
