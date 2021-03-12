@@ -10,16 +10,15 @@ ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 601977cc5b8aa992b8576d30eb1412fb4e119154
-ms.sourcegitcommit: 95f90ac3f248716abdab16d5de6ccbf059616e4b
+ms.openlocfilehash: 3bd028e7d61fd57ed434a8a598bf24329a54ac1c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4666800"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963641"
 ---
 # <a name="learning-catalog-for-dynamics-365-supply-chain-management-functional-consultants"></a>Opplæringskatalog for funksjonskonsulenter i Dynamics 365 Supply Chain Management
 
@@ -114,6 +113,3 @@ For funksjonskonsulenter viste undersøkelsene våre at alle må forstå kjernei
 | [Eksamen MB-300: Microsoft Dynamics 365 Unified Operations Core](https://docs.microsoft.com/learn/certifications/exams/mb-300?wt.mc_id=learningredirect_certs-web-wwl) | Denne eksamenen måler din evne til å utføre følgende tekniske oppgaver: bruke vanlige funksjoner for implementeringsverktøy, konfigurere sikkerhet, prosesser og alternativer, utføre dataoverføring og validere og støtte løsningen. | Eksamen: kostnaden varierer etter område |
 | [Eksamen MB-330: Microsoft Dynamics 365 for Finance and Operations, Supply Chain Management](https://docs.microsoft.com/learn/certifications/exams/mb-330?wt.mc_id=learningredirect_certs-web-wwl) | Denne eksamenen måler din evne til å utføre følgende tekniske oppgaver: implementere behandling av produktinformasjon, implementere lagerstyring, implementere og behandle forsyningskjedeprosesser og implementere lagerstyring og transportstyring, og utføre forretningsprosesser. | Eksamen: kostnaden varierer etter område |
 | [Eksamen MB-320: Microsoft Dynamics 365 for Finance and Operations, produksjon](https://www.microsoft.com/learning/exam-MB-320.aspx) | Denne eksamenen måler din evne til å utføre følgende tekniske oppgaver: definere og konfigurere produksjon, opprette og administrere produksjon og lean-ordrer, og opprette, behandle og administrere partiordrer for produksjon. | Eksamen: kostnaden varierer etter område |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

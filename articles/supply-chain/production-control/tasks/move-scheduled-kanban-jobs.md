@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: KanbanJobSchedulingListPage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bb95bab2173cb45300560f59c394cd2d558fe69f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2769a7d519e12613796025b658db0b08cdfc4fde
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434376"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4961646"
 ---
 # <a name="move-scheduled-kanban-jobs"></a>Flytte planlagte Kanban-jobber
 
@@ -33,11 +32,11 @@ Denne prosedyren fokuserer på å flytte planlagte kanban-prosessjobber til en a
 
 1. Gå til **Produksjonskontroll > Kanban > Kanban-jobbplanlegging**. 
 
-2. Klikk rullegardinknappen i **Arbeidscelle**-feltet for å åpne oppslaget. 
+2. Klikk på rullegardinknappen i **Arbeidscelle**-feltet for å åpne oppslaget. 
 
 3. Merk den valgte raden i listen. 
    - Velg arbeidscellen 1250. 
-4. Klikk **Velg**. 
+4. Klikk på **Velg**. 
 
 5. I feltet **Vis jobbstatus** velger du **Planlagt**. Dette filtrerer jobblisten for å vise bare de planlagte kanban-jobbene. 
 
@@ -45,13 +44,13 @@ Denne prosedyren fokuserer på å flytte planlagte kanban-prosessjobber til en a
 
 1. Finn og velg ønsket post i listen. Velg en jobb som har statusen **Planlagt jobb**, for eksempel en jobb som er planlagt den 20. desember 2012, i feltet **Planlagt periode**. Flytt deretter jobben til forrige periode. 
 
-2. Klikk **Forrige periode**. 
+2. Klikk på **Forrige periode**. 
 
 3. Klikk på **Avslutt** for å flytte jobben til slutten av jobblisten som den siste jobben i forrige periode. 
 
 4. Finn og velg ønsket post i listen. Velg en jobb som har statusen **Planlagt jobb**, for eksempel en jobb som er planlagt den 18. desember 2012, i feltet **Planlagt periode**. Flytt deretter jobben til neste periode. 
 
-5. Klikk **Neste periode**. 
+5. Klikk på **Neste periode**. 
 
 6. Klikk på **Start** for å flytte jobben til starten av jobblisten som den første jobben i forrige periode. 
 
@@ -59,9 +58,6 @@ Denne prosedyren fokuserer på å flytte planlagte kanban-prosessjobber til en a
 
 1. Finn og velg ønsket post i listen. Velg en jobb som har statusen Planlagt jobb, for eksempel den andre jobben som er planlagt den 19. desember 2012, i feltet **Planlagt periode**. Flytt deretter jobben innenfor planlagt periode. 
 
-2. Klikk **Forover**. Legg merke til at jobben er flyttet én linje ned i listen. 
+2. Klikk på **Forover**. Legg merke til at jobben er flyttet én linje ned i listen. 
 
-3. Klikk **Bakover**. Legg merke til at jobben er flyttet én linje opp i listen.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+3. Klikk på **Bakover**. Legg merke til at jobben er flyttet én linje opp i listen.

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 664a70ed7c93c88e1a9cd020029bac285dbaa1f8
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 003a5d2332aaf12ee7e9352ecb61ef190c04a41f
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694032"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798911"
 ---
 # <a name="configure-automated-tasks-in-a-workflow"></a>Konfigurere automatiserte oppgaver i en arbeidsflyt
 
@@ -35,7 +35,7 @@ Når du skal konfigurere en automatisert oppgave i redigeringsprogrammet for arb
 
 Følg denne fremgangsmåten for å sette et navn på den automatiserte oppgaven.
 
-1. Klikk **Grunnleggende innstillinger** i ruten til venstre.
+1. Klikk på **Grunnleggende innstillinger** i ruten til venstre.
 2. I feltet **Navn** angir du et unikt navn på oppgaven.
 
 ## <a name="specify-when-notifications-are-sent"></a>Angi når varslinger skal sendes
@@ -49,24 +49,24 @@ Du kan sende meldinger til personer når en automatisert oppgave er kjørt eller
     - **Avbrutt** – Meldinger blir sendt når oppgaven er avbrutt.
 
 3. Velg raden for en hendelse du valgte i trinn 2.
-4. I tekstfeltet i kategorien **Varslingstekst** skriver du inn teksten i meldingen.
+4. I tekstfeltet i fanen **Varslingstekst** skriver du inn teksten i meldingen.
 5. Hvis du vil tilpasse varslingen, kan du sette inn plassholdere. Plassholdere erstattes med de riktige dataene når varslingen vises til brukerne. Følg denne fremgangsmåten for å sette inn en plassholder:
 
     1. I tekstboksen klikker du der plassholderen skal vises.
-    2. Klikk **Sett inn plassholder**.
+    2. Klikk på **Sett inn plassholder**.
     3. I listen som vises, velger du plassholderen du vil sette inn.
-    4. Klikk **Sett inn**.
+    4. Klikk på **Sett inn**.
 
 6. Hvis du vil legge til oversettelser av varslingen, gjør du følgende:
 
-    1. Klikk **Oversettelser**.
+    1. Klikk på **Oversettelser**.
     2. På siden som vises, klikker du **Legg til**.
     3. I listen som vises, velger du språket teksten angis på.
     4. I **Oversatt tekst**-feltet legger du inn teksten.
     5. Hvis du vil tilpasse teksten, kan du sette inn plassholdere som beskrevet i trinn 5.
-    6. Klikk **Lukk**.
+    6. Klikk på **Lukk**.
 
-7. I **Mottaker**-kategorien angir du hvem meldingene skal sendes til. Velg ett av alternativene i tabellen nedenfor og følg deretter de resterende trinnene for dette alternativet før du går til trinn 8.
+7. I **Mottaker**-fanen angir du hvem meldingene skal sendes til. Velg ett av alternativene i tabellen nedenfor og følg deretter de resterende trinnene for dette alternativet før du går til trinn 8.
 
     <table>
     <thead>
@@ -82,7 +82,7 @@ Du kan sende meldinger til personer når en automatisert oppgave er kjørt eller
     <td>Brukere som er tilordnet til en bestemt gruppe eller rolle</td>
     <td>
     <ol>
-    <li>Når du har valgt <strong>Deltaker</strong>i <strong>Rollebasert</strong>-kategorien i <strong>Type deltaker</strong>-listen, velger du typen gruppe eller rolle som meldingene skal sendes til.</li>
+    <li>Når du har valgt <strong>Deltaker</strong>i <strong>Rollebasert</strong>-fanen i <strong>Type deltaker</strong>-listen, velger du typen gruppe eller rolle som meldingene skal sendes til.</li>
     <li>I <strong>Deltaker</strong>-listen velger du gruppen eller rollen som varslingene skal sendes til.</li>
     </ol>
     </td>
@@ -92,7 +92,7 @@ Du kan sende meldinger til personer når en automatisert oppgave er kjørt eller
     <td>Brukere som deltar i den gjeldende arbeidsflyten</td>
     <td>
     <ul>
-    <li>Når du har valgt <strong>Arbeidsflytbruker</strong>i <strong>Arbeidsflytbruker</strong>-kategorien i <strong>Arbeidsflytbruker</strong>-listen, velger du en bruker som deltar i arbeidsflyten.</li>
+    <li>Når du har valgt <strong>Arbeidsflytbruker</strong>i <strong>Arbeidsflytbruker</strong>-fanen i <strong>Arbeidsflytbruker</strong>-listen, velger du en bruker som deltar i arbeidsflyten.</li>
     </ul>
     </td>
     </tr>
@@ -101,7 +101,7 @@ Du kan sende meldinger til personer når en automatisert oppgave er kjørt eller
     <td>Bestemte brukere</td>
     <td>
     <ol>
-    <li>Når du har valgt <strong>Bruker</strong>, klikker du <strong>Bruker</strong>-kategorien.</li>
+    <li>Når du har valgt <strong>Bruker</strong>, klikker du <strong>Bruker</strong>-fanen.</li>
     <li><strong>Tilgjengelige brukere</strong>-listen inkluderer alle brukere. Velg brukerne du vil sende varslinger til, og flytt deretter disse brukerne til <strong>Valgte brukere</strong>-listen.</li>
     </ol>
     </td>
@@ -110,6 +110,3 @@ Du kan sende meldinger til personer når en automatisert oppgave er kjørt eller
     </table>
 
 8. Gjenta trinn 3 til 7 for hver hendelse du valgte i trinn 2.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

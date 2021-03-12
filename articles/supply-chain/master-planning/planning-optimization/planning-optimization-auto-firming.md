@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-11-30
 ms.dyn365.ops.version: AX 10.0.7
-ms.openlocfilehash: 61e9e6aa660bc0828645c6bf1f2655539804831a
-ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
+ms.openlocfilehash: d014fcd542462e092f6e88232dff8fd5ee2253c1
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "4594532"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963466"
 ---
 # <a name="autofirming-with-planning-optimization"></a>Automatisk autorisasjon med planleggingsoptimalisering
 
@@ -39,7 +38,7 @@ Automatisk autorisasjon gjør det mulig å autorisere planlagte bestillinger som
 
 Følg denne fremgangs måten for å aktivere automatisk autorisering.
 
-1. I arbeidsområdet **Funksjonsbehandling** i **Ny**-kategorien velger du **Automatisk autorisasjon med planleggingsoptimalisering** i listen. Hvis funksjonen ikke vises i **Ny**-kategorien, ser du i kategoriene **Ikke aktivert** og **Alle**.
+1. I arbeidsområdet **Funksjonsbehandling** i **Ny**-fanen velger du **Automatisk autorisasjon med planleggingsoptimalisering** i listen. Hvis funksjonen ikke vises i **Ny**-fanen, ser du i fanene **Ikke aktivert** og **Alle**.
 1. Velg **Aktiver nå**. Du kan også velge **Tidsplan**, og deretter velge tidspunktet når du vil at funksjonen skal aktiveres.
 
 ## <a name="set-up-the-firming-time-fence"></a>Definer autorisasjonshorisonten
@@ -47,7 +46,7 @@ Følg denne fremgangs måten for å aktivere automatisk autorisering.
 Autorisasjonshorisonten beregnes fremover fra og med kjøringsdatoen for hovedplanlegging. Den er definert av antall dager du angir. Du kan styre autorisasjonshorisonten på følgende måter:
 
 - Hvis du vil definere standard autorisasjonshorisonten for en dekningsgruppe, går du til **Hovedplanlegging** \> **Oppsett** \> **Dekning** \> **Dekningsgrupper**, og velger en dekningsgruppe. Deretter angir du antall dager i feltet **Horisont for automatisk autorisasjon (dager)** i hurtigfanen **Annet**.
-- Hvis du vil overskrive autorisasjonshorisonten som er definert for dekningsgruppen for en bestemt vare, går du til **Behandling av produktinformasjon** \> **Frigitte produkter**, og deretter velger du **Plan** og **Varedekning** i handlingsruten. I kategorien **Generelt** velger du deretter **Overstyr horisont** og angir antall dager i feltet **Horisont for automatisk autorisasjon (dager)**.
+- Hvis du vil overskrive autorisasjonshorisonten som er definert for dekningsgruppen for en bestemt vare, går du til **Behandling av produktinformasjon** \> **Frigitte produkter**, og deretter velger du **Plan** og **Varedekning** i handlingsruten. I fanen **Generelt** velger du deretter **Overstyr horisont** og angir antall dager i feltet **Horisont for automatisk autorisasjon (dager)**.
 - Hvis du vil overskrive autorisasjonshorisonten som er definert for dekningsgruppen og varedekningen for en bestemt hovedplan, går du til **Hovedplanlegging** \> **Oppsett** \> **Hovedplanlegging**, og velger en hovedplan. Deretter setter du **Autorisasjon** til **Ja** i hurtigfanen **Horisont i antall dager**, og angir antall dager.
 
 Hvis automatisk autorisering er aktivert for en kjøring av hovedplanlegging som bruker planleggingsoptimalisering, utføres automatisk autorisering i henhold til oppsettet for automatisk autorisasjon. Hvis automatisk autorisering ikke er aktivert, eller hvis planlegging startes fra **Nettobehov** -siden, hoppes den automatiske autorisasjonsprosessen over.
@@ -67,6 +66,3 @@ Både planleggingsoptimalisering og planleggingsmotoren som er innebygd i Micros
 - Automatisk autorisasjon er basert på behovsdatoen (sluttdato).
 - Hvis du vil ha hjelp til å sikre at ordrer blir autorisert innen forfallstid, må autorisasjonshorisonten være lenger enn leveringstiden.
 - Hvis du vil autorisere alle ordrer som må starte i løpet av den gjeldende uken, må autorisasjonshorisonten være leveringstiden pluss én uke.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

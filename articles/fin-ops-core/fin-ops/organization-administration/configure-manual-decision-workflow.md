@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1c9cecabb7923e86e8aa09eed7bd3b1ba5ee0bd8
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: d351facbce02355ddb4bdf91d43d9df561e4f3b5
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694867"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798859"
 ---
 # <a name="configure-manual-decisions-in-a-workflow"></a>Konfigurere manuelle beslutninger i en arbeidsflyt
 
@@ -35,70 +35,70 @@ Når du skal konfigurere en manuell beslutning i redigeringsprogrammet for arbei
 
 Følg denne fremgangsmåten for å sette et navn på den manuelle beslutningen.
 
-1. Klikk **Grunnleggende innstillinger** i ruten til venstre.
+1. Klikk på **Grunnleggende innstillinger** i ruten til venstre.
 2. I feltet **Navn** angir du et unikt navn på den manuelle beslutningen.
 
 ## <a name="enter-a-subject-line-and-instructions"></a>Legg inn en emnelinje og instruksjoner
 
 Du må skrive inn en emnelinje og instruksjoner til brukeren som er knyttet til den manuelle beslutningen. Hvis du for eksempel konfigurerer en beslutning for innkjøpsrekvisisjoner, ser brukeren som er tilordnet til beslutningen, emnelinjen og instruksjonene på **Innkjøpsrekvisisjoner**-siden. Emnelinjen vises i en meldingslinje øverst på siden. Brukeren kan deretter klikke ikonet i meldingslinjen for å vise instruksjonene. Følg trinnene nedenfor for å legge inn en emnelinje og instruksjoner.
 
-1. Klikk **Grunnleggende innstillinger** i ruten til venstre.
-2. I **Emne for arbeidselement**-feltet i kategorien **Instruksjoner** angir du emnelinjen.
+1. Klikk på **Grunnleggende innstillinger** i ruten til venstre.
+2. I **Emne for arbeidselement**-feltet i fanen **Instruksjoner** angir du emnelinjen.
 3. Hvis du vil tilpasse emnelinjen, kan du sette inn plassholdere. Plassholdere erstattes med de riktige dataene når emnelinjen vises til brukerne. Følg denne fremgangsmåten for å sette inn en plassholder:
 
     1. I tekstboksen klikker du der plassholderen skal vises.
-    2. Klikk **Sett inn plassholder**.
+    2. Klikk på **Sett inn plassholder**.
     3. I listen som vises, velger du plassholderen du vil sette inn.
-    4. Klikk **Sett inn**.
+    4. Klikk på **Sett inn**.
 
 4. Hvis du vil legge til oversettelser av emnelinjen, gjør du følgende:
 
-    1. Klikk **Oversettelser**.
+    1. Klikk på **Oversettelser**.
     2. På siden som vises, klikker du **Legg til**.
     3. I listen som vises, velger du språket teksten angis på.
     4. I **Oversatt tekst**-feltet legger du inn teksten.
     5. Hvis du vil tilpasse teksten, kan du sette inn plassholdere som beskrevet i trinn 3.
-    6. Klikk **Lukk**.
+    6. Klikk på **Lukk**.
 
 5. I **Instruksjoner for arbeidselement**-feltet angir du instruksjonene.
 6. Hvis du vil tilpasse instruksjonene, kan du sette inn plassholdere. Plassholdere erstattes med de riktige dataene når instruksjonene vises til brukerne. Følg denne fremgangsmåten for å sette inn en plassholder:
 
     1. I tekstboksen klikker du der plassholderen skal vises.
-    2. Klikk **Sett inn plassholder**.
+    2. Klikk på **Sett inn plassholder**.
     3. I listen som vises, velger du plassholderen du vil sette inn.
-    4. Klikk **Sett inn**.
+    4. Klikk på **Sett inn**.
 
 7. Hvis du vil legge til oversettelser av instruksjonene, gjør du følgende:
 
-    1. Klikk **Oversettelser**.
+    1. Klikk på **Oversettelser**.
     2. På siden som vises, klikker du **Legg til**.
     3. I listen som vises, velger du språket teksten angis på.
     4. I **Oversatt tekst**-feltet legger du inn teksten.
     5. Hvis du vil tilpasse teksten, kan du sette inn plassholdere som beskrevet i trinn 6.
-    6. Klikk **Lukk**.
+    6. Klikk på **Lukk**.
 
 ## <a name="specify-the-possible-outcomes-of-a-decision"></a>Angi de mulige resultatene av en beslutning
 
 Vanligvis når et dokument tilordnes til en beslutningstaker, får beslutningstakeren et spørsmål. Svaret på dette spørsmålet er vanligvis **Ja** eller **Nei** eller **Sann** eller **Usann**. Følg denne fremgangsmåten for å angi de mulige resultatene av den manuelle beslutningen.
 
-1. Klikk **Grunnleggende innstillinger** i ruten til venstre.
-2. I kategorien **Resultater** i **Resultat 1**-feltet angir du navnet på resultatet eller alternativet.
+1. Klikk på **Grunnleggende innstillinger** i ruten til venstre.
+2. I fanen **Resultater** i **Resultat 1**-feltet angir du navnet på resultatet eller alternativet.
 3. Hvis du vil legge til oversettelser av resultatet, gjør du følgende:
 
-    1. Klikk **Oversettelser**.
+    1. Klikk på **Oversettelser**.
     2. På siden som vises, klikker du **Legg til**.
     3. I listen som vises, velger du språket teksten angis på.
     4. I **Oversatt tekst**-feltet legger du inn teksten.
-    5. Klikk **Lukk**.
+    5. Klikk på **Lukk**.
 
 4. I **Resultat 2**-feltet angir du navnet på resultatet eller alternativet.
 5. Hvis du vil legge til oversettelser av resultatet, gjør du følgende:
 
-    1. Klikk **Oversettelser**.
+    1. Klikk på **Oversettelser**.
     2. På siden som vises, klikker du **Legg til**.
     3. I listen som vises, velger du språket teksten angis på.
     4. I **Oversatt tekst**-feltet legger du inn teksten.
-    5. Klikk **Lukk**.
+    5. Klikk på **Lukk**.
 
 ## <a name="specify-when-notifications-are-sent"></a>Angi når varslinger skal sendes
 
@@ -113,24 +113,24 @@ Du kan sende varslinger til personer når en beslutning er tatt, delegert eller 
     - **Eskaler** – Den tilordnede brukeren har ikke tatt beslutningen innen fristen.
 
 3. Velg raden for en hendelse du valgte i trinn 2.
-4. I tekstfeltet i kategorien **Varslingstekst** skriver du inn teksten i meldingen.
+4. I tekstfeltet i fanen **Varslingstekst** skriver du inn teksten i meldingen.
 5. Hvis du vil tilpasse varslingen, kan du sette inn plassholdere. Plassholdere erstattes med de riktige dataene når varslingen vises til brukerne. Følg denne fremgangsmåten for å sette inn en plassholder:
 
     1. I tekstboksen klikker du der plassholderen skal vises.
-    2. Klikk **Sett inn plassholder**.
+    2. Klikk på **Sett inn plassholder**.
     3. I listen som vises, velger du plassholderen du vil sette inn.
-    4. Klikk **Sett inn**.
+    4. Klikk på **Sett inn**.
 
 6. Hvis du vil legge til oversettelser av varslingen, gjør du følgende:
 
-    1. Klikk **Oversettelser**.
+    1. Klikk på **Oversettelser**.
     2. På siden som vises, klikker du **Legg til**.
     3. I listen som vises, velger du språket teksten angis på.
     4. I **Oversatt tekst**-feltet legger du inn teksten.
     5. Hvis du vil tilpasse teksten, kan du sette inn plassholdere som beskrevet i trinn 5.
-    6. Klikk **Lukk**.
+    6. Klikk på **Lukk**.
 
-7. I **Mottaker**-kategorien angir du hvem meldingene skal sendes til. Velg ett av alternativene i tabellen nedenfor og følg deretter de resterende trinnene for dette alternativet før du går til trinn 8.
+7. I **Mottaker**-fanen angir du hvem meldingene skal sendes til. Velg ett av alternativene i tabellen nedenfor og følg deretter de resterende trinnene for dette alternativet før du går til trinn 8.
 
     <table>
     <thead>
@@ -146,7 +146,7 @@ Du kan sende varslinger til personer når en beslutning er tatt, delegert eller 
     <td>Brukere som er tilordnet til en bestemt gruppe eller rolle</td>
     <td>
     <ol>
-    <li>Når du har valgt <strong>Deltaker</strong>i <strong>Rollebasert</strong>-kategorien i <strong>Type deltaker</strong>-listen, velger du typen gruppe eller rolle som meldingene skal sendes til.</li>
+    <li>Når du har valgt <strong>Deltaker</strong>i <strong>Rollebasert</strong>-fanen i <strong>Type deltaker</strong>-listen, velger du typen gruppe eller rolle som meldingene skal sendes til.</li>
     <li>I <strong>Deltaker</strong>-listen velger du gruppen eller som varslingene skal sendes til.</li>
     </ol>
     </td>
@@ -156,7 +156,7 @@ Du kan sende varslinger til personer når en beslutning er tatt, delegert eller 
     <td>Brukere i den gjeldende arbeidsflyten</td>
     <td>
     <ul>
-    <li>Når du har valgt <strong>Arbeidsflytbruker</strong>i <strong>Arbeidsflytbruker</strong>-kategorien i <strong>Arbeidsflytbruker</strong>-listen, velger du en bruker som deltar i arbeidsflyten.</li>
+    <li>Når du har valgt <strong>Arbeidsflytbruker</strong>i <strong>Arbeidsflytbruker</strong>-fanen i <strong>Arbeidsflytbruker</strong>-listen, velger du en bruker som deltar i arbeidsflyten.</li>
     </ul>
     </td>
     </tr>
@@ -165,7 +165,7 @@ Du kan sende varslinger til personer når en beslutning er tatt, delegert eller 
     <td>Bestemte brukere</td>
     <td>
     <ol>
-    <li>Når du har valgt <strong>Bruker</strong>, klikker du <strong>Bruker</strong>-kategorien.</li>
+    <li>Når du har valgt <strong>Bruker</strong>, klikker du <strong>Bruker</strong>-fanen.</li>
     <li><strong>Tilgjengelige brukere</strong>-listen inkluderer alle brukere. Velg brukerne du vil sende varslinger til, og flytt deretter disse brukerne til <strong>Valgte brukere</strong>-listen.</li>
     </ol>
     </td>
@@ -180,7 +180,7 @@ Du kan sende varslinger til personer når en beslutning er tatt, delegert eller 
 Følg denne fremgangsmåten for å angi hvem en manuell beslutning skal tilordnes til.
 
 1. I den venstre ruten klikker du **Tilordning**.
-2. I **Tilordningstype**-kategorien velger du ett av alternativene i tabellen nedenfor og følger deretter de resterende trinnene for dette alternativet før du går til trinn 3.
+2. I **Tilordningstype**-fanen velger du ett av alternativene i tabellen nedenfor og følger deretter de resterende trinnene for dette alternativet før du går til trinn 3.
 
     <table>
     <thead>
@@ -196,7 +196,7 @@ Følg denne fremgangsmåten for å angi hvem en manuell beslutning skal tilordne
     <td>Brukere som er tilordnet til en bestemt gruppe eller rolle</td>
     <td>
     <ol>
-    <li>Når du har valgt <strong>Deltaker</strong>i <strong>Rollebasert</strong>-kategorien i <strong>Type deltaker</strong>-listen, velger du typen gruppe eller rolle som beslutningen skal tilordnes til.</li>
+    <li>Når du har valgt <strong>Deltaker</strong>i <strong>Rollebasert</strong>-fanen i <strong>Type deltaker</strong>-listen, velger du typen gruppe eller rolle som beslutningen skal tilordnes til.</li>
     <li>I <strong>Deltaker</strong>-listen velger du gruppen eller rollen som beslutningen skal tilordnes til.</li>
     </ol>
     </td>
@@ -206,16 +206,16 @@ Følg denne fremgangsmåten for å angi hvem en manuell beslutning skal tilordne
     <td>Brukere i et bestemt organisasjonshierarki</td>
     <td>
     <ol>
-    <li>Når du har valgt <strong>Hierarki</strong>i <strong>Hierarkivalg</strong>-kategorien i <strong>Hierarkitype</strong>-listen, velger du typen hierarki som beslutningen skal tilordnes til.</li>
+    <li>Når du har valgt <strong>Hierarki</strong>i <strong>Hierarkivalg</strong>-fanen i <strong>Hierarkitype</strong>-listen, velger du typen hierarki som beslutningen skal tilordnes til.</li>
     <li>Systemet må hente et område med brukernavn fra hierarkiet. Disse navnene representerer brukere som beslutningen kan tilordnes til. Følg fremgangsmåten nedenfor for å angi start- og sluttpunktet for området med brukernavn som systemet henter: <ol>
     <li>Velg en person fra <strong>Start fra</strong>-listen for å angi startpunktet.</li>
     <li>Hvis du vil angi sluttpunktet, klikker du <strong>Legg til betingelse</strong>. Angi deretter en betingelse som bestemmer hvor i hierarkiet systemet slutter å hente navn.</li>
     </ol>
     </li>
-    <li>I kategorien <strong>Hierarkialternativer</strong> angir du hvilke brukere i området som beslutningen skal tilordnes til: <ul>
+    <li>I fanen <strong>Hierarkialternativer</strong> angir du hvilke brukere i området som beslutningen skal tilordnes til: <ul>
     <li><strong>Tilordne til alle hentede brukere</strong> – Beslutningen tilordnes til alle brukere i området.</li>
     <li><strong>Bare tilordne til den siste hentede brukeren</strong> – Beslutningen tilordnes bare til den siste brukeren i området.</li>
-    <li><strong>Utelat brukere med følgende vilkår</strong> – Beslutningen tilordnes ikke til noen brukere i området som oppfyller et bestemt vilkår. Klikk <strong>Legg til betingelse</strong> for å angi vilkåret.</li>
+    <li><strong>Utelat brukere med følgende vilkår</strong> – Beslutningen tilordnes ikke til noen brukere i området som oppfyller et bestemt vilkår. Klikk på <strong>Legg til betingelse</strong> for å angi vilkåret.</li>
     </ul>
     </li>
     </ol>
@@ -226,7 +226,7 @@ Følg denne fremgangsmåten for å angi hvem en manuell beslutning skal tilordne
     <td>Brukere i den gjeldende arbeidsflyten</td>
     <td>
     <ul>
-    <li>Når du har valgt <strong>Arbeidsflytbruker</strong>i <strong>Arbeidsflytbruker</strong>-kategorien i <strong>Arbeidsflytbruker</strong>-listen, velger du en bruker som deltar i arbeidsflyten.</li>
+    <li>Når du har valgt <strong>Arbeidsflytbruker</strong>i <strong>Arbeidsflytbruker</strong>-fanen i <strong>Arbeidsflytbruker</strong>-listen, velger du en bruker som deltar i arbeidsflyten.</li>
     </ul>
     </td>
     </tr>
@@ -235,7 +235,7 @@ Følg denne fremgangsmåten for å angi hvem en manuell beslutning skal tilordne
     <td>Bestemte brukere</td>
     <td>
     <ol>
-    <li>Når du har valgt <strong>Bruker</strong>, klikker du <strong>Bruker</strong>-kategorien.</li>
+    <li>Når du har valgt <strong>Bruker</strong>, klikker du <strong>Bruker</strong>-fanen.</li>
     <li><strong>Tilgjengelige brukere</strong>-listen inkluderer alle brukere. Velg brukerne du vil tilordne beslutningen til, og flytt deretter disse brukerne til <strong>Valgte brukere</strong>-listen.</li>
     </ol>
     </td>
@@ -243,7 +243,7 @@ Følg denne fremgangsmåten for å angi hvem en manuell beslutning skal tilordne
     </tbody>
     </table>
 
-3. I **Tidsbegrensning**-kategorien i **Varighet**-feltet angir du hvor lang tid brukeren har til å ta beslutningen. Velg ett av følgende alternativer:
+3. I **Tidsbegrensning**-fanen i **Varighet**-feltet angir du hvor lang tid brukeren har til å ta beslutningen. Velg ett av følgende alternativer:
 
     - **Timer** – Angi antallet timer som brukeren har til å ta beslutningen. Deretter velger du kalenderen som organisasjonen din bruker, og angir informasjon om organisasjonens arbeidsuke.
     - **Dager** – Angi antallet dager som brukeren har til å ta beslutningen. Deretter velger du kalenderen som organisasjonen din bruker, og angir informasjon om organisasjonens arbeidsuke.
@@ -268,7 +268,7 @@ Hvis en bruker ikke tar beslutningen innen fristen, er beslutningen forfalt. En 
 
     I dette eksempelet tilordnes den forfalte beslutningen til Doris. Hvis Doris ikke tar beslutningen innen tidsfristen, tilordnes beslutningen til Elin. Hvis Elin ikke tar beslutningen innen tidsfristen, velges **\[Valg 1\]** som beslutningen.
 
-3. Klikk **Legg til videresending** for å legge til en bruker i videresendingsbanen. Velg ett av alternativene i tabellen nedenfor og følg deretter de resterende trinnene for dette alternativet før du går til trinn 4.
+3. Klikk på **Legg til videresending** for å legge til en bruker i videresendingsbanen. Velg ett av alternativene i tabellen nedenfor og følg deretter de resterende trinnene for dette alternativet før du går til trinn 4.
 
     <table>
     <thead>
@@ -284,16 +284,16 @@ Hvis en bruker ikke tar beslutningen innen fristen, er beslutningen forfalt. En 
     <td>Brukere i et bestemt organisasjonshierarki</td>
     <td>
     <ol>
-    <li>Når du har valgt <strong>Hierarki</strong>i <strong>Hierarkivalg</strong>-kategorien i <strong>Hierarkitype</strong>-listen, velger du typen hierarki som beslutningen videresendes til.</li>
+    <li>Når du har valgt <strong>Hierarki</strong>i <strong>Hierarkivalg</strong>-fanen i <strong>Hierarkitype</strong>-listen, velger du typen hierarki som beslutningen videresendes til.</li>
     <li>Systemet må hente et område med brukernavn fra hierarkiet. Disse navnene representerer brukere som beslutningen kan videresendes til. Følg fremgangsmåten nedenfor for å angi start- og sluttpunktet for området med brukernavn som systemet henter: <ol>
     <li>Velg en person fra <strong>Start fra</strong>-listen for å angi startpunktet.</li>
     <li>Hvis du vil angi sluttpunktet, klikker du <strong>Legg til betingelse</strong>. Angi deretter en betingelse som bestemmer hvor i hierarkiet systemet slutter å hente navn.</li>
     </ol>
     </li>
-    <li>I kategorien <strong>Hierarkialternativer</strong> angir du hvilke brukere i området som beslutningen skal videresendes til: <ul>
+    <li>I fanen <strong>Hierarkialternativer</strong> angir du hvilke brukere i området som beslutningen skal videresendes til: <ul>
     <li><strong>Tilordne til alle hentede brukere</strong> – Beslutningen videresendes til alle brukere i området.</li>
     <li><strong>Bare tilordne til den siste hentede brukeren</strong> – Beslutningen videresendes bare til den siste brukeren i området.</li>
-    <li><strong>Utelat brukere med følgende vilkår</strong> – Beslutningen videresendes ikke til noen brukere i området som oppfyller et bestemt vilkår. Klikk <strong>Legg til betingelse</strong> for å angi vilkåret.</li>
+    <li><strong>Utelat brukere med følgende vilkår</strong> – Beslutningen videresendes ikke til noen brukere i området som oppfyller et bestemt vilkår. Klikk på <strong>Legg til betingelse</strong> for å angi vilkåret.</li>
     </ul>
     </li>
     </ol>
@@ -304,7 +304,7 @@ Hvis en bruker ikke tar beslutningen innen fristen, er beslutningen forfalt. En 
     <td>Brukere i den gjeldende arbeidsflyten</td>
     <td>
     <ul>
-    <li>Når du har valgt <strong>Arbeidsflytbruker</strong>i <strong>Arbeidsflytbruker</strong>-kategorien i <strong>Arbeidsflytbruker</strong>-listen, velger du en bruker som deltar i arbeidsflyten.</li>
+    <li>Når du har valgt <strong>Arbeidsflytbruker</strong>i <strong>Arbeidsflytbruker</strong>-fanen i <strong>Arbeidsflytbruker</strong>-listen, velger du en bruker som deltar i arbeidsflyten.</li>
     </ul>
     </td>
     </tr>
@@ -313,7 +313,7 @@ Hvis en bruker ikke tar beslutningen innen fristen, er beslutningen forfalt. En 
     <td>Bestemte brukere</td>
     <td>
     <ol>
-    <li>Når du har valgt <strong>Bruker</strong>, klikker du <strong>Bruker</strong>-kategorien.</li>
+    <li>Når du har valgt <strong>Bruker</strong>, klikker du <strong>Bruker</strong>-fanen.</li>
     <li><strong>Tilgjengelige brukere</strong>-listen inkluderer alle brukere. Velg brukerne du vil videresende beslutningen til, og flytt deretter disse brukerne til <strong>Valgte brukere</strong>-listen.</li>
     </ol>
     </td>
@@ -321,7 +321,7 @@ Hvis en bruker ikke tar beslutningen innen fristen, er beslutningen forfalt. En 
     </tbody>
     </table>
 
-4. I **Tidsbegrensning**-kategorien i **Varighet**-feltet angir du hvor lang tid brukeren har til å ta beslutningen. Velg ett av følgende alternativer:
+4. I **Tidsbegrensning**-fanen i **Varighet**-feltet angir du hvor lang tid brukeren har til å ta beslutningen. Velg ett av følgende alternativer:
 
     - **Timer** – Angi antallet timer som brukeren har til å ta beslutningen. Deretter velger du kalenderen som organisasjonen din bruker, og angir informasjon om organisasjonens arbeidsuke.
     - **Dager** – Angi antallet dager som brukeren har til å ta beslutningen. Deretter velger du kalenderen som organisasjonen din bruker, og angir informasjon om organisasjonens arbeidsuke.
@@ -330,7 +330,7 @@ Hvis en bruker ikke tar beslutningen innen fristen, er beslutningen forfalt. En 
     - **År** – Velg dagen, uken og måneden som brukeren senest må ta beslutningen. Du vil for eksempel at brukeren skal ta beslutningen innen fredag i den tredje uken i desember.
 
 5. Gjenta trinn 3 og 4 for hver bruker som skal legges til i videresendingsbanen. Du kan endre rekkefølgen på brukerne.
-6. Hvis brukerne i videresendingsbanen ikke tar beslutningen innen tidsfristen, vil systemet ta beslutningen. Hvis du vil angi alternativet systemet skal velge, merker du **Handling**-raden, og velger deretter et alternativ i kategorien **Avslutt handling**.
+6. Hvis brukerne i videresendingsbanen ikke tar beslutningen innen tidsfristen, vil systemet ta beslutningen. Hvis du vil angi alternativet systemet skal velge, merker du **Handling**-raden, og velger deretter et alternativ i fanen **Avslutt handling**.
 
 ## <a name="set-a-time-limit"></a>Angi en tidsfrist
 
@@ -339,7 +339,7 @@ Følg denne fremgangsmåten hvis beslutningen må tas innen et bestemt tidspunkt
 > [!NOTE]
 > Alternativene du velger i prosedyren, overstyrer alternativene du velger i **Tilordning**- og **Eskalering**-området på siden.
 
-1. Klikk **Avanserte innstillinger** i ruten til venstre.
+1. Klikk på **Avanserte innstillinger** i ruten til venstre.
 2. Merk av for **Angi en tidsgrense for arbeidsflytelementet**.
 3. I **Varighet**-feltet angir du når beslutningen må tas. Velg ett av følgende alternativer:
 
@@ -350,6 +350,3 @@ Følg denne fremgangsmåten hvis beslutningen må tas innen et bestemt tidspunkt
     - **År** – Velg dagen, uken og måneden da beslutningen må være tatt. Du vil for eksempel at beslutningen skal tas innen fredag i den tredje uken i desember.
 
 4. Hvis tidsgrensen overskrides, vil systemet ta beslutningen. I listen **Handling** velger du alternativet som systemet skal velge.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

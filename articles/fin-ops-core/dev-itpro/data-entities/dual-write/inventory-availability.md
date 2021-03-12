@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: riluan
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-05-26
-ms.openlocfilehash: 4d1022eec633bf0a9edb4d5b26982853cec836d7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a7bfe998d2d787203a507a831c171fc43b03fedc
+ms.sourcegitcommit: cc9921295f26804259cc9ec5137788ec9f2a4c6f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4455827"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "4839555"
 ---
 # <a name="inventory-availability-in-dual-write"></a>Beholdningstilgjengelighet i dobbel skriving
 
@@ -58,5 +58,63 @@ Dialogboksen returnerer ATP-informasjonen fra Supply Chain Management. Denne inf
 - Avgangsantall
 - Antall på lager
 
+## <a name="how-it-works"></a>Hvordan det fungerer
 
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+Når du velger knappen **Lagerbeholdning** på siden **Tilbud**, **Ordrer** eller **Fakturaer**, foretas et live oppkall med dobbel skriving til API-en for **Lagerbeholdning**. API-en beregner lagerbeholdningen for det angitte produktet. Resultatet blir lagret i tabellene **InventCDSInventoryOnHandRequestEntity** og **InventCDSInventoryOnHandEntryEntity** og skrives deretter til Dataverse av dobbel skriving. Hvis du vil bruke denne funksjonaliteten, må du kjøre følgende dobbel skriving-tilordninger. Hopp over innledende synkronisering når du kjører tilordningene.
+
+- Oppføringer for CDS-lagerbeholdning (msdyn_inventoryonhandentries)
+- Forespørsler om CDS-lagerbeholdning (msdyn_inventoryonhandrequests)
+
+## <a name="templates"></a>Maler
+Følgende maler er tilgjengelige for visning av lagerbeholdningsdata.
+
+Finance and Operations-apper | Kundeengasjementsapp | beskrivelse 
+---|---|---
+[Lagerbeholdningsoppføringer for CDS](#145) | msdyn_inventoryonhandentries |
+[Forespørsler om lagerbeholdning for CDS](#147) | msdyn_inventoryonhandrequests |
+
+[!include [banner](../../includes/dual-write-symbols.md)]
+
+###  <a name="cds-inventory-on-hand-entries-msdyn_inventoryonhandentries"></a><a name="145"></a>Oppføringer for CDS-lagerbeholdning (msdyn_inventoryonhandentries)
+
+Denne malen synkroniserer data mellom Finance and Operations-apper og Dataverse.
+
+Finance and Operations-felt | Tilordningstype | Kundeengasjement-felt | Standardverdi
+---|---|---|---
+`REQUESTID` | = | `msdyn_request.msdyn_requestid` |
+`INVENTORYSITEID` | = | `msdyn_inventorysite.msdyn_siteid` |
+`INVENTORYWAREHOUSEID` | = | `msdyn_inventorywarehouse.msdyn_warehouseidentifier` |
+`AVAILABLEONHANDQUANTITY` | > | `msdyn_availableonhandquantity` |
+`AVAILABLEORDEREDQUANTITY` | > | `msdyn_availableorderedquantity` |
+`ONHANDQUANTITY` | > | `msdyn_onhandquantity` |
+`ONORDERQUANTITY` | > | `msdyn_onorderquantity` |
+`ORDEREDQUANTITY` | > | `msdyn_orderedquantity` |
+`RESERVEDONHANDQUANTITY` | > | `msdyn_reservedonhandquantity` |
+`RESERVEDORDEREDQUANTITY` | > | `msdyn_reservedorderedquantity` |
+`TOTALAVAILABLEQUANTITY` | > | `msdyn_totalavailablequantity` |
+`ATPDATE` | = | `msdyn_atpdate` |
+`ATPQUANTITY` | > | `msdyn_atpquantity` |
+`PROJECTEDISSUEQUANTITY` | > | `msdyn_projectedissuequantity` |
+`PROJECTEDONHANDQUANTITY` | > | `msdyn_projectedonhandquantity` |
+`PROJECTEDRECEIPTQUANTITY` | > | `msdyn_projectedreceiptquantity` |
+`ORDERQUANTITY` | > | `msdyn_orderquantity` |
+`UNAVAILABLEONHANDQUANTITY` | > | `msdyn_unavailableonhandquantity` |
+
+###  <a name="cds-inventory-on-hand-requests-msdyn_inventoryonhandrequests"></a><a name="147"></a>Forespørsler om CDS-lagerbeholdning (msdyn_inventoryonhandrequests)
+
+Denne malen synkroniserer data mellom Finance and Operations-apper og Dataverse.
+
+Finance and Operations-felt | Tilordningstype | Kundeengasjement-felt | Standardverdi
+---|---|---|---
+`REQUESTID` | = | `msdyn_requestid` |
+`PRODUCTNUMBER` | < | `msdyn_product.msdyn_productnumber` |
+`ISATPCALCULATION` | << | `msdyn_isatpcalculation` |
+`ORDERQUANTITY` | < | `msdyn_orderquantity` |
+`INVENTORYSITEID` | < | `msdyn_inventorysite.msdyn_siteid` |
+`INVENTORYWAREHOUSEID` | < | `msdyn_inventorywarehouse.msdyn_warehouseidentifier` |
+`REFERENCENUMBER` | < | `msdyn_referencenumber` |
+`LINECREATIONSEQUENCENUMBER` | < | `msdyn_linecreationsequencenumber` |
+
+
+
+

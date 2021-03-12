@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations, Retail
 ms.custom: 28991
 ms.assetid: 945d5088-a99d-4e54-bc42-d2bd61c61e22
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d36f60a13fbee91100e406150e7f5ca890320436
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5df497a8590c6d60a5f0bc39469cf048c3448572
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434223"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963744"
 ---
 # <a name="weighted-average-date"></a>Dato avveid gjennomsnitt
 
@@ -51,7 +50,7 @@ Lagertransaksjoner som forlater lageret, for eksempel salgsordrer, lagerjournale
 
 Utligninger er lagerlukkingsposteringer som justerer avganger med det avveide gjennomsnittet som gjelder på datoen for lagerlukking. 
 
-**Obs!** Hvis du vil ha mer informasjon om utligninger, kan du se artikkelen om lagerlukking. Eksemplene nedenfor viser virkningene når avveid gjennomsnitt brukes i fem konfigurasjoner:
+**Obs!** Hvis du vil ha mer informasjon om utligninger, kan du se artikkelen om lagerlukking. Eksemplene nedenfor viser virkningene når avveid gjennomsnitt brukes i fem konfigurasjoner:
 
 -   Direkte utligning med dato for avveid gjennomsnitt når alternativet **Ta med fysisk verdi** ikke brukes
 -   Summert utligning med dato for avveid gjennomsnitt når alternativet **Ta med fysisk verdi** ikke brukes
@@ -125,7 +124,7 @@ Lagerlukking utføres. Her må direkte utligning brukes, fordi det finnes flere 
 -   7a. Det opprettes en økonomisk avgang til avveid gjennomsnitt av verdien for lagerlukkingstransaksjonen, med et antall på 2 til USD 32,00 for å summere utligninger av alle økonomiske tilganger til lager som ennå ikke er lukket på denne datoen.
 -   7b. Det opprettes en økonomisk tilgang til avveid gjennomsnitt av verdien for lagerlukkingstransaksjonen, som brukes til å utligne 7a.
 
-Systemet genererer og posterer den summerte lageroverføringstransaksjonen. I tillegg utligner systemet alle tilganger for dagen og lagerbeholdning på tidligere dager mot den summerte avgangstransaksjonen for lageroverføring. Alle avganger for dagen utlignes mot den summerte tilgangstransaksjonen for lageroverføring. Det avveide gjennomsnittet av kostprisen beregnes til USD 16,00. Avgangen justeres med USD 1,00 for å justere den til det avveide gjennomsnittet av kostprisen. Det nye glidende gjennomsnittet av kostprisen er USD 16,00. 
+Systemet genererer og posterer den summerte lageroverføringstransaksjonen. I tillegg utligner systemet alle tilganger for dagen og lagerbeholdning på tidligere dager mot den summerte avgangstransaksjonen for lageroverføring. Alle avganger for dagen utlignes mot den summerte mottakstransaksjonen for lageroverføring. Det avveide gjennomsnittet av kostprisen beregnes til USD 16,00. Avgangen justeres med USD 1,00 for å justere den til det avveide gjennomsnittet av kostprisen. Det nye glidende gjennomsnittet av kostprisen er USD 16,00. 
 
 Illustrasjonen nedenfor viser denne serien av transaksjoner og virkningen av å bruke lagermodellen for avveid gjennomsnitt og prinsippet for summert utligning, men uten å bruke alternativet **Ta med fysisk verdi**. 
 
@@ -196,6 +195,3 @@ Det nye glidende gjennomsnittet av kostprisen gjenspeiler gjennomsnittet av de �
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

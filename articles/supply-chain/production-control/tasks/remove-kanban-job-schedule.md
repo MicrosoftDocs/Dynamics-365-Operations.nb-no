@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: KanbanJobSchedulingListPage, SysLookupMultiSelectGrid, KanbanJobStatusUpdate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0236faa9b534678ed232ac3572c8172c62e5241f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fcd9247e24323ba606377d7e51bd4447ab51c905
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434103"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4961621"
 ---
 # <a name="remove-a-kanban-job-from-the-schedule"></a>Fjerne en Kanban-jobb fra tidsplanen
 
@@ -32,20 +31,17 @@ Denne prosedyren fokuserer på å fjerne en planlagt kanban-prosessjobb fra tids
 
 ## <a name="find-a-planned-kanban-job"></a>Finne en planlagt Kanban-jobb
 1. Gå til Produksjonskontroll > Kanban > Kanban-jobbplanlegging.
-2. Klikk rullegardinknappen i Arbeidscelle-feltet for å åpne oppslaget.
-3. Klikk koblingen i den valgte raden i listen.
+2. Klikk på rullegardinknappen i Arbeidscelle-feltet for å åpne oppslaget.
+3. Klikk på koblingen i den valgte raden i listen.
     * Velg arbeidscellen 1250.  
-4. Klikk Velg.
+4. Klikk på Velg.
 5. I feltet Vis jobbstatus velger du "Planlagt".
 
 ## <a name="remove-the-planned-kanban-job-from-the-schedule"></a>Fjerne den planlagte kanban-jobb fra tidsplanen
 1. Finn og velg ønsket post i listen.
     * Velg en jobb med statusen planlagt, for eksempel en jobb fra 19. desember 2012.  
-2. Klikk Plan i handlingsruten.
-3. Klikk Tilbakestill jobbstatus.
-4. Klikk OK.
+2. Klikk på Plan i handlingsruten.
+3. Klikk på Tilbakestill jobbstatus.
+4. Klikk på OK.
     * Dette vil tilbakestille den gjeldende jobbstatusen fra "Planlagt" til "Ikke planlagt" og fjerne den fra prosesstavlen.   
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

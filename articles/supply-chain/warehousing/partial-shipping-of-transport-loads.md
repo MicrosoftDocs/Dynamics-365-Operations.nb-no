@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: WHSTransportLoad
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 1705903
 ms.assetid: 427e01b3-4968-4cff-9b85-1717530f72e4
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: e92a15cf4e2694eba1804184a02a7fd13159799e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 68a3d175e89e89d0909b140863b1aa61a184fce6
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434290"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963291"
 ---
 # <a name="partial-shipment-of-a-transport-load"></a>Delvis levering av en transportlast
 
@@ -57,7 +56,7 @@ Du må opprette et nytt menyelement som gjør at transportlaster kan lastes. En 
 1. Velg **Lagerstyring** \> **Oppsett** \> **Mobilenhet** \> **Menyelementer på mobilenheten**.
 2. Velg **Ny**, og deretter i **Modus**-feltet, velg **Arbeid**.
 3. Angi alternativet **Bruk eksisterende arbeid** til **Ja**.
-4. Gå til kategorien **Generelt**, og velg **Transportlasting** i feltet **Styrt av**.
+4. Gå til fanen **Generelt**, og velg **Transportlasting** i feltet **Styrt av**.
 5. Hvis du vil aktivere forsendelsesbekreftelse på en mobil skanner, velger **Transportlast** i **Tillatt type forsendelsesbekreftelse**-feltet.
 
 ## <a name="confirm-shipment-of-a-transport-load-from-the-client"></a>Bekrefte foresendelse av en transportlast fra klienten
@@ -65,7 +64,4 @@ Du må opprette et nytt menyelement som gjør at transportlaster kan lastes. En 
 I dette oppsettet kan du bekrefte en transportlast som inkluderer en full last eller en delvis lastet last som skal sendes.
 
 1. Velg **Lagerstyring** \> **Laster** \> **Transportlaster**.
-2. Velg **Transport** i **Send og motta**-kategorien i **Bekreft**-gruppen.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+2. Velg **Transport** i **Send og motta**-fanen i **Bekreft**-gruppen.

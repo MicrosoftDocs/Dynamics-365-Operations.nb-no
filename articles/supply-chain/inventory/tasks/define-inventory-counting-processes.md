@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: InventCountGroup, InventJournalName, InventParameters, EcoResProductDetailsExtended, InventItemLocation, InventLocationIdLookup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9df5db0e71f550e82820e15b1597d9e287071f83
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3c8550e539a1b3299d89ec2b13550a13e284d807
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434671"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4961378"
 ---
 # <a name="define-inventory-counting-processes"></a>Definere prosesser for lageropptelling
 
@@ -65,7 +64,7 @@ Dette emnet beskriver konfigurasjonen av grunnleggende lageropptellingsprosesser
 
 ## <a name="set-standard-counting-journal-name"></a>Angi standard navn på opptellingsjournal
 1. I navigasjonsruten går du til **Moduler > Lagerstyring > Oppsett > Parametere for beholdnings- og lagerstyring**.
-2. Velg kategorien **Journaler**.
+2. Velg fanen **Journaler**.
 3. På rullegardinmenyen for **Opptelling**-feltet velger du journalen du opprettet tidligere. Denne journalen blir deretter standard journalnavn for lagerjournaler av typen **Opptelling**.  
 4. Velg fanen **Generelt**. Valgfritt: Velg dette alternativet hvis du vil låse en vare under opptellingsprosessen for å forhindre oppdateringer for følgesedler, plukklister eller plukklisteregistreringer  
 
@@ -85,6 +84,3 @@ Dette emnet beskriver konfigurasjonen av grunnleggende lageropptellingsprosesser
 5. Velg en opptellingsgruppe i rullegardinmenyen for **Opptellingsgruppe**. Du kan velge en bestemt opptellingsgruppe som skal gjelde for varen i det bestemte lageret som du har valgt. Når tellingen blir utført i dette lageret, overstyrer denne opptellingspolicyen den generelle opptellingspolicyen for varen.  
 6. Velg **Lagre**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

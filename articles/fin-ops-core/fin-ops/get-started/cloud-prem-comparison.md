@@ -3,7 +3,7 @@ title: Sammenligning av skyfunksjoner og lokale funksjoner
 description: Emnet viser hvilke funksjoner som støttes i skyen og lokalt.
 author: sericks007
 manager: AnnBe
-ms.date: 12/02/2020
+ms.date: 01/14/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 5b49dc6d5170af6fecc537a9a9130900e08bb26a
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 309131f0d7390288a46f84b1375bd87922407159
+ms.sourcegitcommit: a017fc0583a894382b959e22511231dd07d4254a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694573"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "4959900"
 ---
 # <a name="comparison-of-cloud-and-on-premises-features"></a>Sammenligning av skyfunksjoner og lokale funksjoner
 
@@ -57,12 +57,12 @@ Tabellene nedenfor viser programområdene. Søttte for sky og lokalt er oppført
 |                                      | ER: Integrering med LCS                                                                  | Ja       | Nei              |
 |                                      | ER: Integrering med SharePoint                                                           | Ja       | Nei              |
 |                                      | ER: Integrasjon med Regulatory Configuration Services (RCS)                              | Ja       | Nei              |
-|                                      | ER: Bruker lokalt filsystem som lagring for ER-konfigurasjoner som er tilgjengelige via ER-repositorier | Nr.        | Ja             |
-|                                      | Integrasjon med PowerBI.com                                                              | Ja       | Nr.              |
-|                                      | Integrasjon med PowerBI Desktop                                                          | Nr.        | Ja             |
-|                                      | Analytiske arbeidsområder                                                                     | Ja       | Nr.              |
-|                                      | Intelligent forretningsprosess: Anbefalinger                                             | Ja       | Nr.              |
-|                                      | Forfatte Power BI-rapporter med OData ved hjelp av Power BI-skrivebords- eller Excel PowerQuery-verktøy    | Ja       | Nr.              |
+|                                      | ER: Bruker lokalt filsystem som lagring for ER-konfigurasjoner som er tilgjengelige via ER-repositorier | Nei        | Ja             |
+|                                      | Integrasjon med PowerBI.com                                                              | Ja       | Nei              |
+|                                      | Integrasjon med PowerBI Desktop                                                          | Nei        | Ja             |
+|                                      | Analytiske arbeidsområder                                                                     | Ja       | Nei              |
+|                                      | Intelligent forretningsprosess: Anbefalinger                                             | Ja       | Nei              |
+|                                      | Forfatte Power BI-rapporter med OData ved hjelp av Power BI-skrivebords- eller Excel PowerQuery-verktøy    | Ja       | Nei              |
 |                                      | SQL Server Reporting Services (SSRS) støtter skalering ut                                 | Ja       | Nei              |
 |                                      | Telemetri overføres til skyen                                                   | Ja       | Nei              |
 | Livssyklustjenester                   |                                                                                           | Ja       | Ja             |
@@ -86,14 +86,14 @@ Tabellene nedenfor viser programområdene. Søttte for sky og lokalt er oppført
 
 | **Areal**                | **Funksjon**             | **Sky** | **Lokalt** |
 |-------------------------|-------------------|-----------|-----------------|
-| Objektbehandling                     |                                                                                           | Ja       | Nr. |
+| Objektbehandling                     |                                                                                           | Ja       | Nei |
 | Overholdelse og sertifiseringer        |                                                                                           | Ja       | Ja             |
-|                                      | SOC 1 Type 1-sertifisering                                                                | Ja       | Nr.              |
+|                                      | SOC 1 Type 1-sertifisering                                                                | Ja       | Nei              |
 | Kostnadsregnskap                      |                                                                                           | Ja       | Ja             |
-|                                      | Innholdspakke for kostnadsregnskap for Power BI                                                 | Ja       | Nr.              |
-|                                      | Mobilapp for arbeidsområde for kostnadsregnskap                                                  | Ja       | Nr.              |
+|                                      | Innholdspakke for kostnadsregnskap for Power BI                                                 | Ja       | Nei              |
+|                                      | Mobilapp for arbeidsområde for kostnadsregnskap                                                  | Ja       | Nei              |
 | Kostnadsstyring                      |                                                                                           | Ja       | Ja             |
-|                                      | Innholdspakke for kostnadsstyring for Power BI                                                 | Ja       | Nr.              |
+|                                      | Innholdspakke for kostnadsstyring for Power BI                                                 | Ja       | Nei              |
 | Databehandling og integrering      |                                                                                           | Ja       | Ja             |
 |                                      | Konfigurasjonsdrevet utvidelse                                                            | Ja       | Antall              |
 |                                      | Eksporter data til ditt eget datalager                                                    | Ja       | Ja             |
@@ -106,12 +106,12 @@ Tabellene nedenfor viser programområdene. Søttte for sky og lokalt er oppført
 |                                      | ER: Integrering med LCS                                                                  | Ja       | Nei              |
 |                                      | ER: Integrering med SharePoint                                                           | Ja       | Nei              |
 |                                      | ER: Integrasjon med Regulatory Configuration Services (RCS)                              | Ja       | Nei              |
-|                                      | ER: Bruker lokalt filsystem som lagring for ER-konfigurasjoner som er tilgjengelige via ER-repositorier | Nr.        | Ja             |
-|                                      | Integrasjon med PowerBI.com                                                              | Ja       | Nr.              |
-|                                      | Integrasjon med PowerBI Desktop                                                          | Nr.        | Ja             |
-|                                      | Analytiske arbeidsområder                                                                     | Ja       | Nr.              |
-|                                      | Intelligent forretningsprosess: Anbefalinger                                             | Ja       | Nr.              |
-|                                      | Forfatte Power BI-rapporter med OData ved hjelp av Power BI-skrivebords- eller Excel PowerQuery-verktøy    | Ja       | Nr.              |
+|                                      | ER: Bruker lokalt filsystem som lagring for ER-konfigurasjoner som er tilgjengelige via ER-repositorier | Nei        | Ja             |
+|                                      | Integrasjon med PowerBI.com                                                              | Ja       | Nei              |
+|                                      | Integrasjon med PowerBI Desktop                                                          | Nei        | Ja             |
+|                                      | Analytiske arbeidsområder                                                                     | Ja       | Nei              |
+|                                      | Intelligent forretningsprosess: Anbefalinger                                             | Ja       | Nei              |
+|                                      | Forfatte Power BI-rapporter med OData ved hjelp av Power BI-skrivebords- eller Excel PowerQuery-verktøy    | Ja       | Nei              |
 |                                      | SQL Server Reporting Services (SSRS) støtter skalering ut                                 | Ja       | Antall              |
 |                                      | Telemetri overføres til skyen                                                   | Ja       | Antall              |
 | Lagerstyring                 |                                                                                           | Ja       | Ja             |
@@ -120,19 +120,20 @@ Tabellene nedenfor viser programområdene. Søttte for sky og lokalt er oppført
 | Lokaliseringer                        |                                                                                           | Ja       | Ja             |
 | Produksjon                        |                                                                                           | Ja       | Ja             |
 | Hovedplanlegging og prognostisering      |                                                                                           | Ja       | Ja             |
+| Planleggingsoptimalisering                |                                                                                           | Ja       | Nei              |
 | Mobilapp, arbeidsområde og plattform |                                                                                           | Ja       | Ja             |
 | Office-integrering                   |                                                                                           | Ja       | Ja             |
 | Organisasjonsstyring          |                                                                                           | Ja       | Ja             |
 | Innkjøp og leverandører             |                                                                                           | Ja       | Ja             |
-|                                      | Hullstansing til ekstern katalog fra kjøpsrekvisisjon                                   | Ja       | Nr.              |
-|                                      | Power BI-rapporter for analyse av innkjøp og forbruk                                                  | Ja       | Nr.              |
+|                                      | Hullstansing til ekstern katalog fra kjøpsrekvisisjon                                   | Ja       | Nei              |
+|                                      | Power BI-rapporter for analyse av innkjøp og forbruk                                                  | Ja       | Nei              |
 | Behandling av produktinformasjon       |                                                                                           | Ja       | Ja             |
 | Produkthoveddata                  |                                                                                           | Ja       | Ja             |
 | Produksjon                           |                                                                                           | Ja       | Ja             |
-|                                      | Power BI-rapporter for produksjonsytelse                                                   | Ja       | Nr.              |
+|                                      | Power BI-rapporter for produksjonsytelse                                                   | Ja       | Nei              |
 | Prosjektstyring og regnskap    |                                                                                           | Ja       | Ja             |
 | Salg                                |                                                                                           | Ja       | Ja             |
-|                                      | Power BI-rapporter for resultat av salg og fortjeneste                                      | Ja       | Nr.              |
+|                                      | Power BI-rapporter for resultat av salg og fortjeneste                                      | Ja       | Nei              |
 | Sikkerhet                             |                                                                                           | Ja       | Ja             |
 | Servicestyring                   |                                                                                           | Ja       | Ja             |
 | Forsyningskjedeadministrasjon              |                                                                                           | Ja       | Ja             |
@@ -140,7 +141,7 @@ Tabellene nedenfor viser programområdene. Søttte for sky og lokalt er oppført
 | Leverandørsamarbeid                 |                                                                                           | Ja       | Antall              |
 | Lagerstyring                 |                                                                                           | Ja       | Ja             |
 |                                      | Lagerapp for mobil                                                                      | Ja       | Ja             |
-|                                      | Power BI-rapporter for lager                                                              | Ja       | Nr.              |
+|                                      | Power BI-rapporter for lager                                                              | Ja       | Nei              |
 | Webklient                           |                                                                                           | Ja       | Ja             |
 |                                      | Oppgaveopptaker – Lagre eller last inn oppgavepptak fra BPM-biblioteket                         | Ja       | Antall              |
 | Støtte                              |                                                                                           | Ja       | Ja             |
@@ -165,16 +166,13 @@ Hvis du vil se en liste over funksjonene som er tilgjengelige i lokale distribus
 | Overvåking og telemetri   |                                           | Ja       | Ja             |
 | Plattformkompatibilitet     |                                           | Ja       | Ja             |
 | Service                  |                                           | Ja       | Ja             |
-|                            | Betjeningsmiljøer                    | Ja       | Nr.              |
+|                            | Betjeningsmiljøer                    | Ja       | Nei              |
 | Trace Parser               |                                           | Ja       | Ja             |
 | PerfTimer                  |                                           | Ja       | Ja\*           |
 | Oppgrader                    |                                           | Ja       | Ja             |
-|                            | Oppgrader                                   | Ja       | Nr.              |
-|                            | Oppgradering og støtte for tidligere versjoner | Ja       | Nr.              |
+|                            | Oppgrader                                   | Ja       | Nei              |
+|                            | Oppgradering og støtte for tidligere versjoner | Ja       | Nei              |
 | Visual Studio-utvikling  |                                           | Ja       | Ja             |
 
 \* I lokale miljøer viser PerfTimer bare resultatene for klienten.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

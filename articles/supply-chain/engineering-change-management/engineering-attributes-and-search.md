@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: EngChgProductAttributeSearch, EngChgMaintainAttributeInheritance, EngChgAttribute
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 5a4f31af3f76c1af6a0f5546955e810bd1cca375
-ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
+ms.openlocfilehash: 32cd2c6d0915df1e48973a22a7d391eb8d62a072
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4434866"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963694"
 ---
 # <a name="engineering-attributes-and-engineering-attribute-search"></a>Tekniske attributter og søk i tekniske attributter
 
@@ -94,6 +93,3 @@ Du må angi den tekniske kategorien som produktet tilhører. Kategorien angir al
 Du kan bruke søk i tekniske attributter til å finne produkter ved å søke etter verdier for tekniske attributter. Derfor er det enkelt å finne tekniske produkter basert på deres egenskaper. Du kan søke i produktene som hører til en utviklingsproduktkategori, eller du kan søke på tvers av alle tekniske produkter.
 
 Søket er tilgjengelig på sider for produkthoveddata og fra transaksjonelle elementer i systemet, for eksempel salgsordrer. For et transaksjonselement kan du bruke siden **Søk i teknisk attributt** til å søke etter et produkt. Du kan deretter bruke knappen **Legg til som ny linje** til å legge til produktet i salgsordrelinjene. Produkter i søkeresultatene kan også legges til direkte i ordren.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ca8174444d5a84f7efb402d6efc787e693801e82
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 684983d1ea54264cc378ded8e9dca3cf9ec2c901
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4694745"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4799038"
 ---
 # <a name="set-up-number-sequences-using-a-wizard"></a>Konfigurere alle nødvendige nummerserier ved hjelp av en veiviser
 
@@ -38,6 +38,3 @@ Nummerserier brukes til å generere lesbare, unike IDer for hoveddataposter og t
 4. Velg **Neste**.
 5. Velg **Fullfør**.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

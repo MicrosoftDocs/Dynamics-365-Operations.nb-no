@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 332306abbd4eedb725efbf6022940c59419e1747
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 2d0dd3ebf4b50f43f9fb1893081ede2a93428c72
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693852"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798701"
 ---
 # <a name="accessibility-features"></a>Tilgjengelighetsfunksjoner
 
@@ -52,11 +52,11 @@ Alle handlinger som angis på en side, er tilgjengelige fra et tastatur via tabu
 
 ### <a name="example"></a>Eksempel
 
-Du vil kjøre **Logg for e-postvarsling**-handlingen som vises i **E-postvarsling**-gruppen i **Ordre**-kategorien i handlingsruten.
+Du vil kjøre **Logg for e-postvarsling**-handlingen som vises i **E-postvarsling**-gruppen i **Ordre**-fanen i handlingsruten.
 
 ![Handlingen Logg for e-postvarsling i handlingsruten](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg "Handlingen "Logg for e-postvarsling" i handlingsruten")
 
-Ett alternativ er å bruke tastaturet. Trykk på Ctrl+F6 for å flytte fokus til handlingsruten, og trykk deretter Tab gjentatte ganger for å gå gjennom alle kategoriene og handlingene til **Logg for e-postvarsling**-handlingen har fokus.
+Ett alternativ er å bruke tastaturet. Trykk på Ctrl+F6 for å flytte fokus til handlingsruten, og trykk deretter Tab gjentatte ganger for å gå gjennom alle fanene og handlingene til **Logg for e-postvarsling**-handlingen har fokus.
 
 Du kan imidlertid også kjøre handlingen mer direkte. Trykk på Ctrl+apostrof (') fra hvor som helst på siden for å vise søkeboksen for handlinger.
 
@@ -97,6 +97,3 @@ På smarttelefoner og andre små skjermer vil kontrollene og skjemaoppsettet res
 ## <a name="guidance-to-help-developers-and-customers-incorporate-accessible-thinking-in-their-customizations"></a>Veiledning for å hjelpe utviklere og kunder å ta med tilgjengelighetshensyn i sine tilpassinger
 
 Hvis du vil vite mer om Microsofts anbefalte fremgangsmåter for hvordan du aktiverer tilgjengelighet, kan du se [Tilgjengelighet i skjemaer, produkter og kontroller](../../dev-itpro/user-interface/enable-accessibility.md).
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

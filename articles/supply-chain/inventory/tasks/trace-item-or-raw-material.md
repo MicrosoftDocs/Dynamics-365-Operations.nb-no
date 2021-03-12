@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: InventTrackingDimTracing, InventTrackingDimTracingCriteria, InventTrackingItemIdLookup, InventBatchIdLookup, CustTable, SalesLine
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: pjacobse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0c39d34773a2b36cbf9477e4bdda8e45491d9c03
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 044b098b24d8cdf8008824b7ed1359f2b0566a8f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434664"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4961508"
 ---
 # <a name="trace-an-item-or-raw-material"></a>Spore en vare eller råvare
 
@@ -34,11 +33,11 @@ Denne fremgangsmåten beskriver hvordan du bruker varesporing til å identifiser
 ## <a name="trace-an-item-backwards-using-a-known-batch-number"></a>Spore en vare bakover ved hjelp av et kjent partinummer
 1. I **navigasjonsruten** går du til **Moduler > Lagerstyring > Forespørsler og rapporter > Sporingsdimensjoner > Varesporing**.
 2. Velg P9100 i feltet **Varenummer**.
-3. Klikk koblingen i den valgte raden i listen.
+3. Klikk på koblingen i den valgte raden i listen.
 4. Velg "Bakover" i feltet **Forover eller bakover**.
 5. Velg "som-12-344-01" i **Partinummer**-feltet
-6. Klikk koblingen i den valgte raden i listen.
-7. Klikk **OK**.
+6. Klikk på koblingen i den valgte raden i listen.
+7. Klikk på **OK**.
 
 ## <a name="identify-an-item-trace-it-forward-and-make-an-analysis"></a>Identifisere en vare, spore den fremover og gjøre en analyse
 
@@ -50,7 +49,7 @@ Toppnoden i treet representerer beholdningen for den valgte varen og partiet. Du
     
     Fra og med noden som du akkurat har valgtviser du M9103 ● Produksjonslinje B-000050 ● 12/9/2015 ● -160,00 lb ● Størrelse=70, Farge=OK, Område=1, Lager=10, Partinummer=App01, og velg deretter denne noden.  
 3. Klikk på **Spor fra node**.
-4. Klikk **Forover**.
+4. Klikk på **Forover**.
 5. Klikk på **Sporing** i **handlingsruten**.
     
     Det finnes flere sporingsalternativer som gir informasjon om hvilke kunder som berøres av varen som du sporer og salgsordrene som er knyttet til varen som har blitt og ikke er levert.   
@@ -60,6 +59,3 @@ Toppnoden i treet representerer beholdningen for den valgte varen og partiet. Du
 9. Klikk på **Leverte salgsordrer**.
 10. Lukk siden.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

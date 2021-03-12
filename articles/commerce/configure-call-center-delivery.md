@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: RetailMCRChannelDetailPage, MCROrderParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9919e76b5e3eb1a43c5a0ecd5dda1462bedad4f2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bce2dac680871e14220d3bb94afacea0a617c707
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414549"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963116"
 ---
 # <a name="configure-call-center-delivery-modes-and-charges"></a>Konfigurere leveringsmåter og tillegg for telefonsenter
 
@@ -95,6 +94,3 @@ Eventuelt kan du knytte en kode for ekspeder til en hvilken som helst leveringsm
 For eksempel for ordrer som skal sendes med fly neste dag, må plukking gjøres i lageret kl. 13:00 hver dag. I dette tilfellet kan du opprette en ekspederingskode, og denne koden kan kobles til en hvilken som helst neste dag-leveringsmåte som er konfigurert i systemet. Når lageret oppretter plukkbølgen sin, kan riktig ekspederingskode i **Ekspeder**-feltet brukes som filter, slik at plukking bare utføres for ordrer som har leveringsmåter som er knyttet til koden.
 
 I tillegg, når det angis en telefonsenterordre, kan en ekspederingskode brukes manuelt på salgsordrehodet eller en individuell salgsordrelinje. Igjen, koden kan brukes til sorterings- eller rapporteringsformål. Noen ganger må en ordre håndteres forsiktig på grunn av problemer med kundeservice. I dette tilfellet kan en bestemt ekspederingskode brukes på ordrehodet eller -linjene for å identifisere og prioritere ordren under prosessen med å utføre.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

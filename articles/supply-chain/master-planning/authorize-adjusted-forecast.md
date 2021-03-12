@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ReqDemPlanImportForecastDialog
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 72734
 ms.assetid: cb8fd809-605a-4a8b-a390-636edfec21f9
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5b599385f4bc79707ac7b6b814dd106813cbf3c9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8ab8558f25f5ffd3b7eb3e1bc5680b1a1f8d5139
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434656"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4961461"
 ---
 # <a name="authorize-an-adjusted-forecast"></a>Autoriser en justert prognose
 
@@ -36,7 +35,7 @@ Ikke alle prognosedata må autoriseres umiddelbart. Du kan angi i start- og slut
 
 Start- og sluttdatoene du angir, må samsvare med start- og sluttdatoene for perioden som prognosen er generert i. Systemet håndhever denne begrensningen, og justerer automatisk datoene hvis justering er nødvendig. 
 
-I **Detaljer** -kategorien på siden **Autorisasjon** kan du vise detaljer om prognosen som sist ble generert. 
+I **Detaljer** -fanen på siden **Autorisasjon** kan du vise detaljer om prognosen som sist ble generert. 
 
 Du kan velge firmaene og prognosemodellene for å autorisere prognosen for bruk. Rutenettet omfatter som standard alle firmaene som prognosebehov er opprettet for. Prognosemodellen som samsvarer med den gjeldende prognoseplanen som er angitt i hovedplanleggingsparametere, er forhåndsutfylt for hvert firma. Du kan imidlertid endre denne prognosemodellen til en hvilken som helst prognosemodell som tilhører selskapet. Hvis ingen prognosebehovsdata er generert for et selskap som er valgt, får du en advarsel ved importen. 
 
@@ -51,6 +50,3 @@ Det er svært viktig at du forstår hvordan avmerkingsboksen **Lagre de manuelle
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

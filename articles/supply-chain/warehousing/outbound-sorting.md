@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSPack, WHSOutboundSortTemplate, WHSOutboundSortPositionAssignments, WHSLocationType, WHSLoactionProfile
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 84c4ec83ed16762e6c3c1a22425cf60e5b3ae8da
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 2b0049269b69c0777420b3ecd9b1f649c4a1ab11
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434828"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963416"
 ---
 # <a name="outbound-sorting"></a>Utgående sortering
 
@@ -92,7 +91,7 @@ Pakkestasjonen regnes som en lokasjon. Lagerarbeidere som logger på pakkestasjo
 ### <a name="set-up-warehouse-management-parameters"></a>Definere lagerstyringsparametere
 
 1. Gå til **Lagerstyring \> Oppsett \> Lagerstyringsparametere**.
-1. I kategorien **Generelt** i hurtigfanen **Lokasjonstyper** angir du feltet for **sorteringslokasjonstype** til *SORTER*.
+1. I fanen **Generelt** i hurtigfanen **Lokasjonstyper** angir du feltet for **sorteringslokasjonstype** til *SORTER*.
 1. Velg **Lagre** i handlingsruten.
 
 ### <a name="set-up-a-location-profile"></a>Konfigurere en lokasjonsprofil
@@ -325,7 +324,7 @@ Du må nå legge til de nye menyelementene på mobilenhetsmenyen.
 
 1. Velg **Lagre**.
 1. I **Handlinger for lokasjonsdirektiv**-hurtigfanen velger du **Rediger spørring**.
-1. I redigeringsprogrammet for spørring, i kategorien **Område**, finner du raden der feltet **Felt** er satt til *Lokasjon*. Sett **Vilkår**-feltet for denne raden til *Rampedør*.
+1. I redigeringsprogrammet for spørring, i fanen **Område**, finner du raden der feltet **Felt** er satt til *Lokasjon*. Sett **Vilkår**-feltet for denne raden til *Rampedør*.
 1. Velg **OK** for å lagre innstillingene og lukke redigeringsprogrammet for spørring.
 
 #### <a name="set-up-a-multiple-sku-directive"></a>Definere et flere-SKU-direktiv
@@ -360,7 +359,7 @@ Du må nå legge til de nye menyelementene på mobilenhetsmenyen.
 
 1. Velg **Lagre**.
 1. I **Handlinger for lokasjonsdirektiv**-hurtigfanen velger du **Rediger spørring**.
-1. I redigeringsprogrammet for spørring, i kategorien **Område**, finner du raden der feltet **Felt** er satt til *Lokasjon*. Sett **Vilkår**-feltet for denne raden til *Rampedør*.
+1. I redigeringsprogrammet for spørring, i fanen **Område**, finner du raden der feltet **Felt** er satt til *Lokasjon*. Sett **Vilkår**-feltet for denne raden til *Rampedør*.
 1. Velg **OK** for å lagre innstillingene og lukke redigeringsprogrammet for spørring.
 
 ### <a name="set-up-work-templates"></a>Konfigurer arbeidsmaler
@@ -368,7 +367,7 @@ Du må nå legge til de nye menyelementene på mobilenhetsmenyen.
 1. Gå til **Lagerstyring \> Oppsett \> Arbeid \> Arbeidsmaler**.
 1. Endre verdien på feltet **Arbeidsordretype** til *Sortert lagerplukking*.
 1. I handlingsruten velger du **Ny** for å opprette en arbeidsmal.
-1. Angi følgende verdier i kategorien **Oversikt**:
+1. Angi følgende verdier i fanen **Oversikt**:
 
     - **Sekvens:** *1*
     - **Arbeidsmal:** *Sorter*
@@ -413,7 +412,7 @@ Dette scenariet simulerer en situasjon der pakkede containere automatisk skal so
     - **Transportørtjeneste:** *Lufttransport*
 
 1. Gå til **Linjer**-visningen.
-1. Hvis en ny, tom linje ikke automatisk legges til i rutenettet i **Salgsordrelinjer**-hurtigkategorien, velger du **Legg til linje** for å legge til en linje.
+1. Hvis en ny, tom linje ikke automatisk legges til i rutenettet i **Salgsordrelinjer**-hurtigfanen, velger du **Legg til linje** for å legge til en linje.
 1. Angi følgende verdier på den nye ordrelinjen:
 
     - **Varenummer:** *A0001*
@@ -422,7 +421,7 @@ Dette scenariet simulerer en situasjon der pakkede containere automatisk skal so
 1. Mens den nye ordrelinjen fremdeles er valgt på hurtigfanen **Salgsordrelinjer**, velger du **Reservasjon** på menyen **Lager**.
 1. På **Reservasjon**-siden velger du **Reserver parti** for å reservere det fulle antallet på den valgte linjen i lageret.
 1. Lukk **Reservasjon**-siden for å gå tilbake til salgsordren.
-1. Velg **Frigi til lager** i gruppen **Handlinger** i kategorien **Lager** i handlingsruten.
+1. Velg **Frigi til lager** i gruppen **Handlinger** i fanen **Lager** i handlingsruten.
 1. Du mottar en informasjonsmelding som viser forsendelse og bølge for denne ordren. Skriv ned nummeret på bølge-ID og forsendelses-ID.
 
 #### <a name="sales-order-2"></a>Salgsordre 2
@@ -440,20 +439,20 @@ Dette scenariet simulerer en situasjon der pakkede containere automatisk skal so
     - **Vare:** *A0001*
     - **Antall:** *1*
 
-1. På hurtigfanen **Linjedetaljer**, i kategorien **Levering** setter du feltet **Leveringsmåte** til *Flowe-STD*.
+1. På hurtigfanen **Linjedetaljer**, i fanen **Levering** setter du feltet **Leveringsmåte** til *Flowe-STD*.
 1. På hurtigfanen **Salgsordrelinjer** velger du **Legg til linje**, og angi deretter følgende verdier på den andre ordrelinjen:
 
     - **Vare:** *A0002*
     - **Antall:** *1*
 
-1. På hurtigfanen **Linjedetaljer**, i kategorien **Levering**, endrer du verdien i feltet **Leveringsmåte** til *Air C-Air*.
+1. På hurtigfanen **Linjedetaljer**, i fanen **Levering**, endrer du verdien i feltet **Leveringsmåte** til *Air C-Air*.
 1. I hurtigfanen **Salgsordrelinjer** velger du den første ordrelinjen. Velg deretter **Reservasjon** på **Lager**-menyen over rutenettet.
 1. På **Reservasjon**-siden velger du **Reserver parti** for å reservere det fulle antallet på den valgte linjen i lageret.
 1. Lukk **Reservasjon**-siden for å gå tilbake til salgsordren.
 1. I hurtigfanen **Salgsordrelinjer** velger du den andre ordrelinjen. Velg deretter **Reservasjon** på **Lager**-menyen over rutenettet.
 1. På **Reservasjon**-siden velger du **Reserver parti** for å reservere det fulle antallet på den valgte linjen i lageret.
 1. Lukk **Reservasjon**-siden for å gå tilbake til salgsordren.
-1. Velg **Frigi til lager** i gruppen **Handlinger** i kategorien **Lager** i handlingsruten.
+1. Velg **Frigi til lager** i gruppen **Handlinger** i fanen **Lager** i handlingsruten.
 1. Du mottar en informasjonsmelding som viser forsendelse og bølge for denne ordren. Merk at to bølge-ID-numre og to forsendelses-ID-numre er opprettet, én for hver leveringsmåte for salgsordrelinjene.
 
 #### <a name="get-the-work-ids-from-the-work-details"></a>Hente arbeids-IDene fra arbeidsdetaljene
@@ -667,6 +666,3 @@ Du må fylle ut det sorterte lagerplukkingsarbeidet. Når det er fullført, blir
     Arbeidet er fullført.
 
 På dette tidspunktet og fremover gjelder alle andre lagerprosesser.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

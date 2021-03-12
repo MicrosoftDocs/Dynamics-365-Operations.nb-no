@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: InventParameters, InventTestReportSetup, SysUserManagement, SysUserSetup, InventTestDiagnosticType, InventTestMiscCharges, InventTestOperation, InventProblemType, InventProblemTypeSetup, InventQuarantineZone
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8c4de822dcda604241416165a961e4b0bacaeb5b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 80a7ae2249179c561d03f7b729ebb942ba856046
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434665"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4961529"
 ---
 # <a name="set-up-prerequisites-for-nonconformance-management"></a>Definere forutsetninger for behandling av avvik
 
@@ -33,7 +32,7 @@ Bruk dette emnet for å aktivere prosjektstyringsprosesser for avvik. Et avvik b
 
 ## <a name="enable-quality-management-processes-within-the-company"></a>Aktivere kvalitetsstyringsprosesser i firmaet
 1. I navigasjonsruten går du til **Moduler > Lagerstyring > Oppsett > Parametere for beholdnings- og lagerstyring**.
-2. Velg kategorien **Kvalitetsstyring**.
+2. Velg fanen **Kvalitetsstyring**.
 3. Velg **Ja** i feltet **Bruk kvalitetsstyring** for å aktivere kvalitetsstyringsprosesser for firmaet.
 4. I **Timepris**-feltet angir du et tall i lokal valuta. Timeprisen brukes til å beregne kostnader for operasjoner som er knyttet til et avvik. Timeprisen og de beregnede kostnadene gir referanseinformasjon for et avvik, og de har ingen betydning for annen funksjonalitet.  
 5. Velg **Rapportoppsett** for å definere merknadstypene for kvalitetsrapport som skal brukes i ulike typer kvalitetsstyringsrapporter.
@@ -43,7 +42,7 @@ Bruk dette emnet for å aktivere prosjektstyringsprosesser for avvik. Et avvik b
 2. Bruk hurtigfilteret til å finne brukeren som skal godkjenne eller avvise avvikspostene. Du kan for eksempel filtrere på **Navn**-feltet med verdien `Ricardo`. Hvis du vil behandle godkjenningen av et avvik, må brukeren som godkjenner eller avviser avvik ha en "Navn"-verdi som er tilordnet på siden **Brukere**. Hvis du vil bruke merknader i dokumentet, må brukeren også ha Dokumenthåndtering aktivert i brukeralternativene.  
 3. Merk raden med den ønskede posten.
 4. Velg **Brukeralternativer**.
-5. Velg kategorien **Innstillinger**.
+5. Velg fanen **Innstillinger**.
 6. Velg **Ja** i feltet **Aktiver dokumentoversikt**.
 
 ## <a name="define-diagnostic-types-for-nonconformance-processing"></a>Definere diagnosetyper for behandling av avvik
@@ -80,6 +79,3 @@ Bruk dette emnet for å aktivere prosjektstyringsprosesser for avvik. Et avvik b
 4. Skriv inn en verdi i **Beskrivelse**-feltet.
 5. Lukk siden.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
