@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-11-04
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 604e0c3406b15d885991fcb067e93ef83533e3b0
-ms.sourcegitcommit: 8eefb4e14ae0ea27769ab2cecca747755560efa3
+ms.openlocfilehash: b0073cb2c3e3d6b9218caf20c394c8c0ca67b796
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4516844"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966211"
 ---
 # <a name="troubleshoot-discrete-manufacturing"></a>Feilsøk stykkproduksjon
 
@@ -142,6 +141,3 @@ Du kan ikke rapportere antallet feil i en produksjonsordre med mindre du også r
 ## <a name="can-i-trace-the-serial-numbers-of-finished-goods-against-the-serial-numbers-of-consumed-goods"></a>Kan jeg spore serienumrene på ferdigvarer mot serienumrene for forbrukte varer?
 
 Du kan ikke spore serienumre for ferdigvarer mot de serienumrene til et materiale som en produksjonsordre forbruker for å lage disse ferdigvarene. Dette scenarioet støttes for øyeblikket ikke. Løsningen er å opprette produksjonsordrer for et antall på 1.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

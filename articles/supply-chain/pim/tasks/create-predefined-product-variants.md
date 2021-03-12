@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: EcoResProductListPage, EcoResProductCreate, EcoResProductDetails, EcoResProductMasterDimension, EcoResProductVariants, EcoResProductVariantSuggestions, EcoResProductVariantsPendingReleaseFormPart
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6fa9c6d4862a49bbf0b5ecbb8c0c3d573e0f49e6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d07a090dbd41eb17e8d604887435bbb8b07e8d9e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434408"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966936"
 ---
 # <a name="create-predefined-product-variants"></a>Opprette forhåndsdefinerte produktvarianter
 
@@ -32,46 +31,43 @@ Denne fremgangsmåten veileder deg gjennom oppretting av produktvarianter for en
 
 ## <a name="create-a-product-master"></a>Opprette en produktstandard
 1. Gå til Behandling av produktinformasjon > Produkter > Produktstandarder.
-2. Klikk Ny.
+2. Klikk på Ny.
 3. Skriv inn en verdi i feltet Produktnummer.
     * Det er bare obligatorisk å angi et produktnummer manuelt hvis ingen nummerserie er definert for produktnummerfeltet. Hopp med andre ord over dette trinnet hvis nummerserien er definert for feltet.  
 4. Skriv inn en verdi i feltet Produktnavn.
 5. Angi eller velg en verdi i Feltet Produktdimensjonsgruppe.
     * Velg produktdimensjonsgruppen SizeCol (størrelse og farge).  
-6. Klikk OK.
+6. Klikk på OK.
 
 ## <a name="add-product-dimensions"></a>Legge til produktdimensjoner
-1. Klikk Produktdimensjoner.
+1. Klikk på Produktdimensjoner.
     * Dette eksemplet viser hvordan du manuelt angir produktdimensjoner. Du kan også velge en størrelse, farge eller stilgruppe som inkluderer produktdimensjonsverdiene du vil bruke.  
-2. Klikk Ny.
+2. Klikk på Ny.
 3. Merk den valgte raden i listen.
 4. Angi eller velg en verdi i Størrelse-feltet.
 5. Skriv inn en verdi i Navn-feltet.
-6. Klikk Ny.
+6. Klikk på Ny.
 7. Merk den valgte raden i listen.
 8. Angi eller velg en verdi i Størrelse-feltet.
 9. Skriv inn en verdi i Navn-feltet.
-10. Klikk kategorien Farger.
-11. Klikk Ny.
+10. Klikk på fanen Farger.
+11. Klikk på Ny.
 12. Merk den valgte raden i listen.
 13. Angi eller velg en verdi i feltet Farge.
 14. Skriv inn en verdi i Navn-feltet.
-15. Klikk Ny.
+15. Klikk på Ny.
 16. Merk den valgte raden i listen.
 17. Angi eller velg en verdi i feltet Farge.
 18. Skriv inn en verdi i Navn-feltet.
-19. Klikk Lagre.
+19. Klikk på Lagre.
 20. Lukk siden.
 
 ## <a name="generate-product-variants"></a>Generere produktvarianter
-1. Klikk Størrelser for produktvarianter.
-2. Klikk Variantforslag.
-3. Klikk Velg alt.
+1. Klikk på Størrelser for produktvarianter.
+2. Klikk på Variantforslag.
+3. Klikk på Velg alt.
     * I dette eksemplet velges alle mulige varianter. Hvis bare et delsett av de mulige produktdimensjonskombinasjoner skal brukes for å opprette varianter, kan du velge de enkelte postene.  
-4. Klikk Opprett.
+4. Klikk på Opprett.
     * Du kan generere beskrivelser for alle varianter basert på kombinasjonen av produktdimensjonsverdier. Beskrivelser er valgfritt.  
-5. Klikk Lagre.
+5. Klikk på Lagre.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

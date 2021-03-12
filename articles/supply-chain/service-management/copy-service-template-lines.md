@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SMAAgreementTable, SMAServiceOrderTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a8b26924641b8b0d26fa6834623b482be7fb7d6d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7d542d7fc0ba33bb587bb3ffde22da2aa37d1e98
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434195"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966036"
 ---
 # <a name="copy-service-templates-lines"></a>Kopiere servicemallinjer 
 
@@ -35,10 +34,10 @@ Malinformasjon kan kopieres til en serviceavtale eller en serviceordre.
 
 1. Klikk på **Serviceavtaler**.
 2. Dobbeltklikk en serviceavtale for å åpne **Serviceavtaler**-siden.
-3. Klikk **Mallinjer** for å åpne **Kopier servicemallinjer**-siden.
-4. I kategorien **Trekontroll** utvider du trestrukturen, finner malen som inneholder linjene du vil kopiere til serviceavtalen, og velger deretter servicemalen.
-5. I kategorien **Linjer** merker du av for **Velg** for servicemallinjene du vil kopiere.
-6. Klikk **OK**.
+3. Klikk på **Mallinjer** for å åpne **Kopier servicemallinjer**-siden.
+4. I fanen **Trekontroll** utvider du trestrukturen, finner malen som inneholder linjene du vil kopiere til serviceavtalen, og velger deretter servicemalen.
+5. I fanen **Linjer** merker du av for **Velg** for servicemallinjene du vil kopiere.
+6. Klikk på **OK**.
 7. Lukk sidene for å lagre endringene.
 
 Servicemallinjene er nå kopiert til serviceavtalen sammen med de vedlagte serviceobjekt- og serviceoppgaverelasjonene.
@@ -47,10 +46,10 @@ Servicemallinjene er nå kopiert til serviceavtalen sammen med de vedlagte servi
 
 1. Klikk på **Serviceordrer**.
 2. Dobbeltklikk en serviceordre for å åpne **Serviceordrer**-siden.
-3. Klikk Kopier \> Kopier mallinjer for å åpne **Kopier servicemallinjer**-siden.
-4. I kategorien **Trekontroll** utvider du trestrukturen, finner malen som inneholder linjene du vil kopiere til serviceordren, og velger deretter servicemalen.
-5. I kategorien **Linjer** merker du av for **Velg** for servicemallinjene du vil kopiere.
-6. Klikk **OK**.
+3. Klikk på Kopier \> Kopier mallinjer for å åpne **Kopier servicemallinjer**-siden.
+4. I fanen **Trekontroll** utvider du trestrukturen, finner malen som inneholder linjene du vil kopiere til serviceordren, og velger deretter servicemalen.
+5. I fanen **Linjer** merker du av for **Velg** for servicemallinjene du vil kopiere.
+6. Klikk på **OK**.
 7. Lukk sidene for å lagre endringene.
 
 Servicemallinjene er nå kopiert til den nye serviceordren sammen med de vedlagte serviceobjekt- og serviceoppgaverelasjonene. 
@@ -60,6 +59,3 @@ Servicemallinjene er nå kopiert til den nye serviceordren sammen med de vedlagt
 [Servicemaler](service-template.md)
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

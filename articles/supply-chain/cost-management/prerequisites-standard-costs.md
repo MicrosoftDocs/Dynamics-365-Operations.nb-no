@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: InventStdCostConv, CostingVersion
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f66f7061c608379689016e3c0b9c5ba4ad23dc9e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9333bda96ceae378ab74892534db13761038a06c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434581"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967364"
 ---
 # <a name="prerequisites-for-standard-costs-overview"></a>Oversikt over forutsetninger for standardkostnader
 
@@ -50,7 +49,7 @@ Før du definerer vareposteringsreglene, bruker du siden **Transaksjonskombinasj
 
 **4. Definer lagerparameterne som er relatert til standard kostpris.** 
 
--  Bruk kategorien **Lagerregnskap** på siden **Oppsett for regnskapspolicyer for beholdning > Parametere** til å definere to kostkontrollparametere som er relatert til standard kostpris.
+-  Bruk fanen **Lagerregnskap** på siden **Oppsett for regnskapspolicyer for beholdning > Parametere** til å definere to kostkontrollparametere som er relatert til standard kostpris.
 
     -  I **Oppdeling av kostnader**-feltet velger du **Ingen** eller **Underfinans**. Hvis du velger **Underfinans**, er kostnadsoppdelingen en *aktiv* kostnadsoppdeling. Aktiv kostnadsoppdeling er kritisk for beregning, opprettholding og visning av kostgruppesegmentering gjennom en produktstruktur på flere nivåer for varer med standard kostpris. Når kostnadsoppdelingen er aktiv, kan du rapportere og analysere lagerbeholdningen, varer i arbeid (VIA) og kostnader for solgte varer per kostgruppe på ett enkelt nivå, over flere nivåer eller totalt. Når kostnadsoppdelingen er aktiv, hvis du aktiverer en produsert vares kostnad, lagres kostgruppesegmenteringen i varens kostprispost. 
 
@@ -80,6 +79,3 @@ Kunder som vil endre sine eksisterende varer til en lagermodell med standard kos
 
 - [Konfigurere standardkostnader for direkte materialer i Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/06/07/how-to-set-up-standard-costs-for-direct-materials-in-dynamics-365-for-finance-and-operations)
 - [Standard direkte arbeidskostnader i Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/07/16/standard-direct-labor-cost-in-dynamics-365-for-finance-and-operations)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

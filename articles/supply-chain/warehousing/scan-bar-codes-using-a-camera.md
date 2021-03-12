@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: WHSMobileAppField
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 269384
 ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2017-01-03
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: fd4818ab936e1c93000793da756c97df6d05b2a9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 71ec15b2568eefd8bea99e64c258a65461a7ad95
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434201"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965649"
 ---
 # <a name="scan-bar-codes-using-a-camera-in-the-warehouse-app"></a>Skanne strekkoder ved hjelp av et kamera i lagerappen
 
@@ -43,7 +42,7 @@ De vanligste strekkodeformatene støttes, inkludert Code 128, Code 39, Code 93, 
 
 ## <a name="navigation"></a>Navigering
 Kamerasiden startes på hver side der inndatafeltet har den foretrukne inndatamodusen satt til Skanning. Når du er på kamerasiden, bruker du følgende alternativer for å navigere:
-- Klikk tilbakeknappen for å gå tilbake til oppgave- og detaljsiden. 
+- Klikk på tilbakeknappen for å gå tilbake til oppgave- og detaljsiden. 
 - Klikk blyanten på oppgave- og detaljsiden for å gå til siden der du kan skrive inn manuelt.
 - Klikk kameraet på oppgave- og detaljsiden for å gå tilbake til kamerasiden. 
 
@@ -55,6 +54,3 @@ På kamerasiden, når du klikker Kamera-knappen, vises den nedtonet ved forsøk 
 
 Når du holder kameraet på en strekkode, må du justere strekkoden innenfor hakeparentesene for best resultat. Når en strekkode er skannet, blir resultatet behandlet, og du føres til neste trinn. Hvis det neste trinnet inneholder et annet inndatafelt med den foretrukne inndatamodusen satt til Skanning, startes kamerasiden på nytt. Hvis det neste trinnet ikke er et skannefelt, startes ikke kamerasiden.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

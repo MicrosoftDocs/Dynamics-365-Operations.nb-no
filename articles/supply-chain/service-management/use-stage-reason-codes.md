@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SMAServiceOrderTable, SMAParameters
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 74594871e9eeed86ae2914d1e5a08c0af28ab643
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4acba8f723ceb3d629671833db59c97a900c9f01
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434562"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965711"
 ---
 # <a name="use-stage-reason-codes"></a>Bruke stadieårsakskoder 
 
@@ -44,7 +43,7 @@ Hvis tidsbegrensningen er overskredet på en serviceavtale, må du angi en årsa
 
 ## <a name="set-up-reason-codes"></a>Definer årsakskoder
 
-1.  Klikk **Servicestyring** \> **Oppsett** \> **Serviceordrer** \> **Stadieårsakskoder**.
+1.  Klikk på **Servicestyring** \> **Oppsett** \> **Serviceordrer** \> **Stadieårsakskoder**.
 
 2.  I skjemaet **Stadieårsakskoder** klikker du **Ny** for å opprette en ny årsakskode.
 
@@ -56,13 +55,13 @@ Hvis tidsbegrensningen er overskredet på en serviceavtale, må du angi en årsa
 
 ## <a name="require-reason-codes-when-a-service-level-agreement-is-canceled"></a>Kreve årsakskoder når en servicenivåavtale annulleres
 
-1.  Klikk **Servicestyring** \> **Oppsett** \> **Servicestyringsparametere**.
+1.  Klikk på **Servicestyring** \> **Oppsett** \> **Servicestyringsparametere**.
 
 2.  I skjemaet **Servicestyringsparametere** klikker du **Generelt**-koblingen og velger deretter **Årsakskode for avbrudd**.
 
 ## <a name="require-reason-codes-when-the-a-service-order-exceeds-the-time-limit-that-is-set-by-the-service-level-agreement"></a>Kreve årsakskoder når en serviceordre overskrider tidsbegrensningen som er definert i servicenivåavtalen.
 
-1.  Klikk **Servicestyring** \> **Oppsett** \> **Servicestyringsparametere**.
+1.  Klikk på **Servicestyring** \> **Oppsett** \> **Servicestyringsparametere**.
 
 2.  I skjemaet **Servicestyringsparametere** klikker du **Generelt**-koblingen og velger deretter **Årsakskode for tidsoverskridelse**.
 
@@ -73,6 +72,3 @@ Hvis tidsbegrensningen er overskredet på en serviceavtale, må du angi en årsa
   
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

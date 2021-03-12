@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6df9f7cb6c5062841d5c9855833a58e11be690a4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0359e7d314610901c331419ab49a3d1cb446dc5e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434561"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965736"
 ---
 # <a name="view-compliance-with-service-level-agreements"></a>Vise samsvar med servicenivåavtaler    
 
@@ -34,7 +33,7 @@ ms.locfileid: "4434561"
 
 1.  Klikk på **Servicestyring** \> **Felles** \> **Serviceordrer** \> **Serviceordrer**. Velg en serviceordre, og dobbeltklikk for å åpne detaljskjemaet for ordren.
 
-2.  I kategorien **Generelt** i feltet **Samsvar** kan du vise prosentandelen av tid som ble brukt på serviceordren i forhold til tidsrammen som er angitt i servicenivåavtalen.
+2.  I fanen **Generelt** i feltet **Samsvar** kan du vise prosentandelen av tid som ble brukt på serviceordren i forhold til tidsrammen som er angitt i servicenivåavtalen.
 
 
 > [!TIP]
@@ -49,6 +48,3 @@ ms.locfileid: "4434561"
   
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

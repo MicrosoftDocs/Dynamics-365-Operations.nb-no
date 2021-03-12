@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 58b5a35800ab464f25868c6756b16f25d14d8d78
-ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
+ms.openlocfilehash: 8321a0d8516a6c2c085ce9c1236f70af1cca98da
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4434864"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967264"
 ---
 # <a name="product-readiness"></a>Produktklargjøring
 
@@ -59,9 +58,9 @@ Hvis det opprettes en ny teknisk **versjon** for et produkt, kontrollerer system
 
 ### <a name="view-open-readiness-checks-for-a-product-or-product-version"></a>Vis åpne klargjøringskontroller for et produkt eller en produktversjon
 
-Du finner de åpne klargjøringskontrollene for et produkt ved å åpne siden **Detaljer om frigitte produkter**. I handlingsruten, i **Produkt**-kategorien og **Klargjøringskontroller**-gruppen, velger du **Klargjøringskontroller**.
+Du finner de åpne klargjøringskontrollene for et produkt ved å åpne siden **Detaljer om frigitte produkter**. I handlingsruten, i **Produkt**-fanen og **Klargjøringskontroller**-gruppen, velger du **Klargjøringskontroller**.
 
-Hvis du vil finne de åpne klargjøringskontrollene for en produktversjon, åpner du **Tekniske versjoner**-siden for et frigitt produkt og velger en versjon. I handlingsruten, i **Produkt**-kategorien og **Sjekkliste**-gruppen, velger du **Klargjøringskontroller**.
+Hvis du vil finne de åpne klargjøringskontrollene for en produktversjon, åpner du **Tekniske versjoner**-siden for et frigitt produkt og velger en versjon. I handlingsruten, i **Produkt**-fanen og **Sjekkliste**-gruppen, velger du **Klargjøringskontroller**.
 
 ### <a name="view-open-readiness-checks-that-are-assigned-to-you"></a>Vis åpne klargjøringskontroller som er tilordnet til deg
 
@@ -148,6 +147,3 @@ For hver rad du legger til, angir du følgende felter:
 | Spørreskjema | Velg spørreskjemaet som skal brukes for sjekklisten. Sjekklisten er en lokal sjekkliste i firmaet der klargjøringskontrollen utføres. Systemet må kunne vurdere om sjekklisten er riktig besvart. Sjekklisten må derfor konfigureres slik at det utføres en evaluering basert på riktige svar. Hvis du vil ha mer informasjon om hvordan du oppretter spørreskjemaer, kan du se [Bruke spørreskjemaer](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/using-questionnaires) og det tilknyttede emner. |
 | Automatisk godkjenning | Poster for klargjøringskontroll omfatter avmerkingsboksen **Godkjent** som angir godkjenningsstatusen. Merk av for **Automatisk godkjenning** for kontroller som skal settes til godkjent umiddelbart etter at den tilordnede brukeren har fullført dem. Fjern merket i denne avmerkingsboksen for å kreve eksplisitt godkjenning som et ekstra trinn. |
 | Obligatorisk | Merk av i denne avmerkingsboksen for kontroller som må fullføres av den tilordnede brukeren. Du kan ikke hoppe over obligatoriske kontroller. |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

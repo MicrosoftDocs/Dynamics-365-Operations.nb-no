@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: TAMVendRebateAgreement
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 2012
-ms.openlocfilehash: 7c0f98ffc6ede74f93523b9fa9800e7b6617d9b6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 46d6beb287f7d034c6fde09999f7854695a4987c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434623"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966661"
 ---
 # <a name="vendor-rebates"></a>Leverandørrabatter
 
@@ -62,14 +61,14 @@ På siden **Leverandørrabattavtaler** kan du se informasjon om de forhandlede b
 
 Avtalens topptekst spesifiserer de generelle vilkårene som kvalifiserer et selskap for rabatter. I utgangspunktet spesifiserer topptekstinformasjonen at en leverandør gir en rabatt når et bestemt produkt er kjøpt i en bestemt mengde. I toppteksten kan du også spesifisere enheten for målerabattalternativ og beregningsdatatypen.
 
-- I kategorien **Oversikt**, hvis du har linjer med **Varekode** satt til *tabell* for å angi varen, er avtalen for den bestemte varen. Hvis du har linjer med **Varekode** satt til *Gruppe* eller *Alle* for å angi varene, vil leverandørrabattavtalen behandles individuelt per vare som er kvalifisert for varekoden, ikke på tvers av alle varer som kvalifiserer for varekoden.
+- I fanen **Oversikt**, hvis du har linjer med **Varekode** satt til *tabell* for å angi varen, er avtalen for den bestemte varen. Hvis du har linjer med **Varekode** satt til *Gruppe* eller *Alle* for å angi varene, vil leverandørrabattavtalen behandles individuelt per vare som er kvalifisert for varekoden, ikke på tvers av alle varer som kvalifiserer for varekoden.
 
-- I kategorien **Generelt**, i feltet **Rabattalternativ for måleenhet**, kan du definere om en måleenhet bør være en betingelse for innkjøpsordre, for å kvalifisere for rabattkrav.
+- I fanen **Generelt**, i feltet **Rabattalternativ for måleenhet**, kan du definere om en måleenhet bør være en betingelse for innkjøpsordre, for å kvalifisere for rabattkrav.
 
     - **Konvertere** – et innkjøpsordrelinje kvalifiserer for leverandørrabatt per rabattargument. Du vil motta en rabatt uavhengig av måleenheten som brukes på linjen.
     - **Eksakt treff** – for å kvalifisere for en rabatt må en innkjøpslinje ha samme målenhet som er spesifisert i avtalen.
 
-- I kategorien **Generelt** i **Kalkulering av datatyper**-feltet, velg datoen som brukes for å fastsette om kjøpet skjer i gyldig periode for rabattavtalen.
+- I fanen **Generelt** i **Kalkulering av datatyper**-feltet, velg datoen som brukes for å fastsette om kjøpet skjer i gyldig periode for rabattavtalen.
 
     - **Opprettet** – bruk opprettelsesdato for kjøpsordre.
     - **Ønsket leveringsdato** – bruk ønsket leveringsdato
@@ -89,7 +88,7 @@ På avtalelinjene kan du spesifisere leverandørrabattavtalen nærmere.
     - **Mengde** – rabatter er volumbasert.
     - **Beløp** – rabatter er beløpsbasert.
 
-- I hurtigkategorien **Linjer** kan du se hvordan ulike kvantitetsnivåer kan settes opp for å gi ulike rabatter. For eksempel, i den forrige illustrasjonen, indikerer feltene **Fra-verdien** og **Til-verdien** at en produktmengde mellom 10 og 19 enheter vil kvalifisere til rabatt på USD 15 per enhet.
+- I hurtigfanen **Linjer** kan du se hvordan ulike kvantitetsnivåer kan settes opp for å gi ulike rabatter. For eksempel, i den forrige illustrasjonen, indikerer feltene **Fra-verdien** og **Til-verdien** at en produktmengde mellom 10 og 19 enheter vil kvalifisere til rabatt på USD 15 per enhet.
 
     > [!NOTE]
     > Verdien **Fra-verdien** er inklusiv, mens verdien **Til-verdien** er eksklusiv. For eksempel er feltet **Bruddtype for rabattlinje** satt til **Mengde** og du kan skrive inn **1** i feltet **Fra-verdi** og **3** i feltet **Til-verdi**. I dette tilfellet gjelder rabattbeløpet når du kjøper ett eller to elementer, men ikke når du kjøper tre varer.
@@ -103,12 +102,12 @@ Når kjøpsordrer er plassert hos en leverandør som selskapet har en rabattavta
 ### <a name="view-details-of-rebates-that-are-applied-to-a-purchase-order-line-per-the-vendor-rebate-agreement"></a>Se detaljer om rabatter som brukes på en bestillingslinje per leverandørrabattavtale
 
 1. På **Innkjøpsordre**-siden, velg en ordrelinje og deretter vel **Innkjøpsordrelinje** &gt; **Visning** &gt; **Prisinformasjon**.
-2. På siden **Prisinformasjon**, velg hurtigkategorien **Rabatter**.
+2. På siden **Prisinformasjon**, velg hurtigfanen **Rabatter**.
 
 Rabattinformasjonen vises også i feltet **Leverandørrabat** i delen **Marginestimat** for siden **Prisinformasjon**.
 
 > [!NOTE]
-> På siden **Innkjøp og innkjøpsparametere**, i kategorien **Priser**, bekreft at alternativet **Aktiver prisinformasjon** er satt til **Ja**. Hvis dette alternativet er satt til **Nei**, vil du ikke kunne se rabatten.
+> På siden **Innkjøp og innkjøpsparametere**, i fanen **Priser**, bekreft at alternativet **Aktiver prisinformasjon** er satt til **Ja**. Hvis dette alternativet er satt til **Nei**, vil du ikke kunne se rabatten.
 
 ## <a name="review-and-approve-claims"></a>Gjennomgå og godkjenne krav
 
@@ -146,7 +145,7 @@ Når krav er godkjent kan de behandles som leverandørgjeld. En kreditnota (leve
     - En leverandørfaktura (kreditnota) for rabattbeløpet er opprettet.
 
         > [!NOTE]
-        > Innstillingen for alternativet **Manuel fakturapostering** i kategorien **Rabattprogram** for siden **Parametere for anskaffelse og innkjøp** fastsetter om en leverandørfaktura skal legges inn manuelt eller automatisk som en del av kravbehandlingen.
+        > Innstillingen for alternativet **Manuel fakturapostering** i fanen **Rabattprogram** for siden **Parametere for anskaffelse og innkjøp** fastsetter om en leverandørfaktura skal legges inn manuelt eller automatisk som en del av kravbehandlingen.
 
     - Når leverandørfakturaen er oppført, enten automatisk eller manuelt, har leverandørens Betalbare konto blitt belastet, og mottakskonto for rabatter og tillatelser har blitt kreditert.
 
@@ -167,6 +166,3 @@ Prosessen for å håndtere leverandørrabatter innebærer flere manuelle sporing
 - Genererer nøyaktige rabattkrav
 - Å påløpe forventet fordring og foreløpig gevinst i hovedboken
 - Oppdaterer leverandørbalansen og resultatregnskapet med godtgjørelse som er forfalt
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

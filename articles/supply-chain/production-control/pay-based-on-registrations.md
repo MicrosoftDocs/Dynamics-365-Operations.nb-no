@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: JmgCalcApproveWeekView, JmgProdStatusListPagePayrollCostDetails, JmgPayCountTable, JmgPayStatConfig, JmgOvertimeSlize, JmgPayAgreementOverride, JmgPayCountSum, JmgPayAdjustSetup, JmgPayAdjustCostType, JmgPayEmployee, JmgMESBreak, JmgPayAddTable, JmgPayAddTransSelectTransId, JmgPayrollCostDetailsPart, jmgProdStatusListPagePayrollCosts, JmgPayrollCostPart, JmgPayEvents, JmgTermRegPayStatSetup, JmgPayStatGroup, JmgPayAddTrans, JmgPayStatTrans
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 1705903
 ms.assetid: 427e01b3-4968-4cff-9b85-1717530f72e4
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2018-03-20
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 8e92759bd567a973a0d3bce7b8b99be1edbc0e1e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 98ca6f7713b2f605a49a97d391fb8485bea78c4b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434394"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966386"
 ---
 # <a name="pay-based-on-registrations"></a>Lønn basert på registreringer
 
@@ -70,7 +69,7 @@ Arbeiderens registreringer for dagen ser slik ut.
 | Produksjonsjobb            | 06:30 AM | 02:45 PM |
 | Utstempling                 | 02:45 PM | 02:45 PM |
 
-Arbeiderens registreringer for dagen beregnes og overføres til lønn på **Godkjenn**-siden (**Timeregistrering** &gt; **Gjennomgå og godkjenn** &gt; **Godkjenn**). Når registreringene er beregnet, kan resultatet av beregningen vises i kategorien **Tider**. 
+Arbeiderens registreringer for dagen beregnes og overføres til lønn på **Godkjenn**-siden (**Timeregistrering** &gt; **Gjennomgå og godkjenn** &gt; **Godkjenn**). Når registreringene er beregnet, kan resultatet av beregningen vises i fanen **Tider**. 
 
 For å forstå dette scenariet kan du se følgende felt.
 
@@ -111,7 +110,7 @@ Arbeiderens registreringer for dagen ser slik ut.
 | Produksjonsjobb            | 06:30 AM | 05:00 PM |
 | Utstempling                 | 05:00 PM | 05:00 PM |
 
-Når du har beregnet journalregistreringene på **Godkjenn** -siden, kan du vise resultatet av beregningen i kategorien **Timer**. For å forstå dette scenariet kan du se følgende felt.
+Når du har beregnet journalregistreringene på **Godkjenn** -siden, kan du vise resultatet av beregningen i fanen **Timer**. For å forstå dette scenariet kan du se følgende felt.
 
 | Fleksi + | Fleksi - | Tidspunkt  | Lønnstid | Lønn overtid |
 |--------|--------|-------|----------|--------------|
@@ -280,7 +279,7 @@ Arbeiderens registreringer for dagen ser slik ut.
 | Produksjonsjobb            | 06:30 AM | 02:45 PM |
 | Utstempling                 | 05:00 PM | 05:00 PM |
 
-Når du har beregnet journalregistreringene på **Godkjenn** -siden, kan du vise resultatet av beregningen i kategorien **Timer**. For å forstå dette scenariet kan du se følgende felt.
+Når du har beregnet journalregistreringene på **Godkjenn** -siden, kan du vise resultatet av beregningen i fanen **Timer**. For å forstå dette scenariet kan du se følgende felt.
 
 | Fleksi + | Fleksi - | Tidspunkt  | Lønnstid | Ubetalt pausetid | Lønn overtid |
 |--------|--------|-------|----------|---------------------|--------------|
@@ -324,7 +323,7 @@ Når registreringene beregnes, beregnes tiden for aktivitetene.
 > [!NOTE]
 > Tiden for pausen kjører parallelt med tidspunktet for aktiviteten (en produksjonsjobb i dette eksemplet). Dette brukes alltid for pauseaktiviteter. Når registreringene beregnes, trekkes pausetiden fra aktivitetstiden. I dette tilfellet har produksjonsjobben en varighet på 10,50 timer, men tiden blir beregnet som 10 fordi 0,5 timer pausetid er trukket fra aktivitetstiden.
 
-Når du har beregnet journalregistreringene på **Godkjenn** -siden, kan du vise resultatet av beregningen i kategorien **Timer**. For å forstå dette scenariet kan du se følgende felt.
+Når du har beregnet journalregistreringene på **Godkjenn** -siden, kan du vise resultatet av beregningen i fanen **Timer**. For å forstå dette scenariet kan du se følgende felt.
 
 | Fleksi + | Fleksi - | Tidspunkt  | Lønnstid | Ubetalt pausetid | Lønn overtid |
 |--------|--------|-------|----------|---------------------|--------------|
@@ -384,7 +383,7 @@ Når du skal definere kostnadskategorien, velger du **Produksjonskontroll** &gt;
 
 Følgende eksempel viser hvordan timeprisen beregnes når kostnaden er definert slik at den er beregnet basert på lønnssatser.
 
-Timeprisen som brukes for produksjonsordrer og prosjekter, blir beregnet under overføringsprosessen. Hvis du vil vise timeprisen per aktivitet, kan du åpne **Godkjenn**-siden i Timeregistrering, og deretter velge **Forespørsel** &gt; **Overførte registreringer**. Du kan finne timeprisen per registrering i **Kostpriser**-kategorien.
+Timeprisen som brukes for produksjonsordrer og prosjekter, blir beregnet under overføringsprosessen. Hvis du vil vise timeprisen per aktivitet, kan du åpne **Godkjenn**-siden i Timeregistrering, og deretter velge **Forespørsel** &gt; **Overførte registreringer**. Du kan finne timeprisen per registrering i **Kostpriser**-fanen.
 
 Vurder følgende registreringer som bruker den samme tidsprofilen som det forrige eksemplet.
 
@@ -406,7 +405,7 @@ Når registreringene er overført, genereres følgende overførte registreringer
 | Pause (betalt)          | 0.50 | 0.00                |
 | Utstempling             | 0.00 | 0.00                |
 
-Beregning av kostpris per time for den betalt pausen avhenger av en innstilling for direkte lønnskostnader. Velg **Timeregistrering** &gt; **Oppsett** &gt; **Parametere for timeregistrering**. I kategorien **Kostpris**, under **Direkte lønnskostnader** i **Normaltid**-feltet, kan du velge **Ja**, **Nei** eller **Tildeling**.
+Beregning av kostpris per time for den betalt pausen avhenger av en innstilling for direkte lønnskostnader. Velg **Timeregistrering** &gt; **Oppsett** &gt; **Parametere for timeregistrering**. I fanen **Kostpris**, under **Direkte lønnskostnader** i **Normaltid**-feltet, kan du velge **Ja**, **Nei** eller **Tildeling**.
 
 - **Ja** – denne verdien brukes for det forrige eksemplet. Kostnaden fordeles på produksjons- eller prosjektaktiviteten som kjøres parallelt med aktiviteten betalt pause. I eksemplet er denne aktiviteten produksjonsjobben for ordre 4712. Som du ser, er kostprisen per time for den betalt pausen 0 (null), og den tildeles til jobben som kjøres parallelt med pausen.
 
@@ -445,7 +444,7 @@ Du kan opprette planlagt fravær for arbeidere på siden **Opprett planlagt frav
 Jobben er basert på en spørring. Du kan derfor opprette planlagt fravær for flere arbeidere, for eksempel arbeidere som tilhører den samme beregningsgruppen. Hvis det er planlagt fravær for en enkelt arbeider, kan registreringen angis enten fra **Fremmøte**-siden eller siden **Tidsregistreringsarbeidere**.
 
 - Du kan angi en fraværsregistrering fra **Fremmøte**-siden ved å velge **Timeregistrering** &gt; **Forespørsler og rapporter** &gt; **Fremmøte** &gt; **Fremmøte**, og deretter velge **Fraværsregistrering**.
-- For å angi en fraværsregistrering fra siden *<strong><em>Tidsregistreringsarbeidere</em></strong>* velger du <strong>Timeregistrering</strong> &gt; <strong>Oppsett</strong> &gt; <strong>Tidsregistreringsarbeidere</strong>, og deretter, i <strong>Tid</strong>-kategorien under <strong>Tidstilordning</strong>, velger du <strong>Fraværsregistreringer</strong>.
+- For å angi en fraværsregistrering fra siden *<strong><em>Tidsregistreringsarbeidere</em></strong>* velger du <strong>Timeregistrering</strong> &gt; <strong>Oppsett</strong> &gt; <strong>Tidsregistreringsarbeidere</strong>, og deretter, i <strong>Tid</strong>-fanen under <strong>Tidstilordning</strong>, velger du <strong>Fraværsregistreringer</strong>.
 
 Du kan bruke rapporten **Planlagt fravær** til å se en oversikt over planlagt fravær for ansatte. Du åpner denne rapporten ved å velge **Timeregistrering** &gt; **Forespørsler og rapporter** &gt; **Fraværsrapporter** &gt; **Planlagt fravær**.
 
@@ -599,6 +598,3 @@ Hvis arbeideren ikke kommer på jobb i en arbeidsdag, og det er ingen planlagt f
 - Sett inn fravær automatisk
 
 Når de daglige registreringene er beregnet for en arbeider som er aktivert for fleksible timer, brukes fraværskoden som er angitt i feltet **Sett inn fleksitid automatisk**, som en standard fraværskode. Hvis arbeideren ikke er aktivert for fleksible timer, brukes fraværskoden som er angitt i feltet **Sett inn fravær automatisk**. Hvis et firma har en kombinasjon av arbeidere som er aktivert for fleksible timer og arbeidere som ikke er aktivert for fleksible timer, må begge parametere defineres.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, PurchCreateFromSalesOrder, VendAccountItemLookup, SalesTableReferences, PurchTable, PurchTablePart, PurchEditLines, PurchTable, PurchTableReferences, MCRDropShipWorkbench, SalesShippingLine
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 31cb26479ccb74dfb58fd5590cd60d7b7c64c292
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 0a8f214a56c6a5013cab8233d5b2e0126deb9220
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434823"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966111"
 ---
 # <a name="ship-orders-as-direct-deliveries"></a>Sende ordrer som direkte leveringer
 
@@ -40,19 +39,19 @@ Dette emnet viser hvordan du oppretter en direktelevering for en salgsordre. Du 
     - **Leverandørkonto**-feltet kan eller kan ikke allerede være utfylt med et leverandørnummer. Hvis standardleverandøren er definert for produktet (på den tilknyttede varedekningen), vil denne leverandøren kopieres til linjen. Hvis ikke, må du angi en leverandør manuelt. I dette eksemplet velger vi en ny leverandør i neste trinn, selv om en allerede fylt ut.   
 7. Angi eller velg en verdi i **Leverandørkonto**-feltet, og velg deretter **OK**. Meldingen forteller deg at bestillingen er nå blitt opprettet.   
 8. Vis delen **Linjedetaljer**.
-9. Velg kategorien **Levering**, og kontroller at feltet **Direkte levering** er satt til **Ja**.
+9. Velg fanen **Levering**, og kontroller at feltet **Direkte levering** er satt til **Ja**.
 10. Klikk på **Generelt** i handlingsruten.
 11. Velg **Relaterte ordrer**.
 12. Velg koblingen i **Bestilling**-feltet.
-13. Utvid delen **Linjedetaljer**, og velg kategorien **Adresse**.
+13. Utvid delen **Linjedetaljer**, og velg fanen **Adresse**.
     - Leveringsadressen for denne bestillingslinjen er kundens leveringsadresse og ikke firmaets adresse.  
     - Hvis du endrer leveringsadressen på bestillingslinjen eller den opprinnelige salgsordrelinjen, oppdateres adressen på den tilsvarende ordrelinjen automatisk.  
-14. Velg kategorien **Levering**.
+14. Velg fanen **Levering**.
     - Som salgsordrelinjen settes også den tilknyttede bestillingslinjetypen til Direktelevering.  
     - Leveringsdato og bekreftet leveringsdato for bestillingslinjen er satt til henholdsvis ønsket leveringsdato og bekreftet leveringsdato for den opprinnelige salgsordrelinjen.   
     - Hvis du oppdaterer noen av disse datoene på bestillingslinjen eller salgslinjen, oppdateres datoene i den tilhørende ordren automatisk.     
     - Bestillingen som er angitt for å levere varene direkte til kunden, er koblet til den opprinnelige salgsordren ved hjelp av en spesiell tilknytning. Denne tilknytningen bruker regelen om at følgeseddeloppdateringen av salgsordren ikke kan utføres fra selve ordren og må utføres ved hjelp av bestillingen. Kundefakturering må imidlertid utføres fra salgsordren.  
-15. Klikk **Innkjøp** i handlingsruten.
+15. Klikk på **Innkjøp** i handlingsruten.
 16. Velg **Bekreftelse**.
 17. Velg **OK**.
 18. Klikk på **Mottak** i handlingsruten.
@@ -72,16 +71,13 @@ Dette emnet viser hvordan du oppretter en direktelevering for en salgsordre. Du 
 2. Velg **Ny**.
 3. Angi eller velg en verdi i **Kundekonto**-feltet, og velg deretter **OK**.
 4. Angi eller velg en verdi i feltene **Varenummer** og **Område**.
-5. Vis delen **Linjedetaljer**, og velg deretter kategorien **Levering**. I stedet for å opprette en direkte levering som en del av salgsordrebehandlingen som i forrige prosedyre, kan du velge å overføre denne oppgaven til en innkjøpsansvarlig. Hvis du vil ta med salgsordrelinjen i håndteringsprosessen for direkte levering, må du merke linjen for direkte levering.  
+5. Vis delen **Linjedetaljer**, og velg deretter fanen **Levering**. I stedet for å opprette en direkte levering som en del av salgsordrebehandlingen som i forrige prosedyre, kan du velge å overføre denne oppgaven til en innkjøpsansvarlig. Hvis du vil ta med salgsordrelinjen i håndteringsprosessen for direkte levering, må du merke linjen for direkte levering.  
 6. Velg **Ja** i feltet **Direktelevering**.
     - Hvis varen er allerede definert for direkte levering som standard, vil feltet automatisk bli satt til Ja i ordrelinjeregistreringen. Du kan definere et element for direkte levering i standarden for det frigitte endelige produktet ved å angi alternativet Direktelevering til Ja og velge et standardlager for direkte levering.  
     - Fordi bestillingen ennå ikke er opprettet, settes statusen for direkte levering til Skal leveres direkte.   
 7. Velg **Lagre**.
 8. Lukk sider til du er tilbake på startsiden.
 9. Skriv inn `Direct delivery` i søkefeltet.
-    - Direktelevering-siden fungerer som en arbeidsbenk som gir innkjøpsagenten en oversikt over alle salgsordrelinjene som skal leveres direkte, og den gjør det mulig å opprette de respektive bestillingene. I tillegg kan de vise og åpne direkteleveringsordrer og de bekreftede bestillingene i kategoriene Bekreftelse og Levering.  
-    - Etter at du har opprettet en direkte leveringsordre, flyttes den automatisk til kategorien Bekreftelse. Du kan velge å bekrefte bestillingen direkte fra denne siden. Når bestillingen er bekreftet, flyttes den automatisk til kategorien Levering, som kan du registrere mottaket fra.  
+    - Direktelevering-siden fungerer som en arbeidsbenk som gir innkjøpsagenten en oversikt over alle salgsordrelinjene som skal leveres direkte, og den gjør det mulig å opprette de respektive bestillingene. I tillegg kan de vise og åpne direkteleveringsordrer og de bekreftede bestillingene i fanene Bekreftelse og Levering.  
+    - Etter at du har opprettet en direkte leveringsordre, flyttes den automatisk til fanen Bekreftelse. Du kan velge å bekrefte bestillingen direkte fra denne siden. Når bestillingen er bekreftet, flyttes den automatisk til fanen Levering, som kan du registrere mottaket fra.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

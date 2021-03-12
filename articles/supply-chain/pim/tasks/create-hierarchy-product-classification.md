@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: EcoResCategoryHierarchyListPage, EcoResCategoryHierarchyCreate, EcoResCategory, EcoResCategoryHierarchyRole, EcoResProductCategory, EcoResCategorySearchList, EcoResCategoryHierarchyFactbox, EcoResCategoryFriendlyName, EcoResCategoryAddProduct
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 439df63a4f8f0cc1c030554d18f80e9934c88b00
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 74be72ac5787273e13692abdb9db18be4c5ccc08
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434410"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966961"
 ---
 # <a name="create-a-hierarchy-of-product-classification"></a>Opprette et hierarki for produktklassifisering
 
@@ -35,7 +34,7 @@ Denne fremgangsmåten viser hvordan du oppretter et nytt kategorihierarki og til
 2. Klikk på **Ny**.
 3. Skriv inn en verdi i **Navn**-feltet.
 4. Skriv inn en verdi i **Beskrivelse**-feltet.
-5. Klikk **Opprett**.
+5. Klikk på **Opprett**.
 
 ## <a name="build-the-hierarchy"></a>Bygge hierarkiet
 1. Klikk på **Ny** kategorinode.
@@ -62,11 +61,8 @@ Denne fremgangsmåten viser hvordan du oppretter et nytt kategorihierarki og til
 3. Klikk på **Tilknytt hierarkitype**.
 4. Klikk på **Ny**.
 5. Velg et alternativ i feltet **Kategorihierarkitype**. Velg **kategorihierarkitype for artikkelkode for produktklassifisering**.  
-6. Klikk rullegardinknappen i feltet **Kategorihierarki** for å åpne oppslaget.
+6. Klikk på rullegardinknappen i feltet **Kategorihierarki** for å åpne oppslaget.
 7. Finn og velg ønsket post i listen.
-8. Klikk koblingen i den valgte raden i listen.
+8. Klikk på koblingen i den valgte raden i listen.
 9. Lukk siden.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

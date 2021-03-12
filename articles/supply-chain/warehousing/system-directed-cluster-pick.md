@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: WHSWorkCluster, WHSClusterProfile
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations, Supply Chain Management
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-12-31
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 0838405bcb5ee0d8e582093fbbd69553228cb2b6
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: fa737f61bfd5bd71ba6d76e75e57c8e2d682cda3
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434799"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965683"
 ---
 # <a name="system-directed-cluster-picking"></a>Systemstyrt gruppeplukking
 
@@ -108,7 +107,7 @@ Hvis du vil opprette et nytt menyelement for mobilenhet for systemstyrt gruppepl
     - **Beskrivelse** – Arbeidsprioritet – Arbeids-ID
 
 1. I handlingsruten velger du **Rediger spørring**
-1. Velg kategorien **Sortering**
+1. Velg fanen **Sortering**
 1. Velg **Legg til** for å legge til en ny linje, og angi deretter følgende:
     - **Tabell** – Arbeid
     - **Avledet tabell** – Arbeid
@@ -142,10 +141,10 @@ Før du kan definere systemstyrt gruppeplukking, må du opprette kvalifisert utg
 1. Gå til **Salg og markedsføring > Salgsordrer > Alle salgsordrer**.
 1. Velg **Ny** i handlingsruten for å opprette den første salgsordren.
     - I **Opprett salgsordre**-menyen som åpnes, angir du følgende informasjon:
-        - I **Kunde**-hurtigkategorien angir du **Kundekonto** - **US-004**.
-        - I **Generelt**-hurtigkategorien angir du **Lager** - **62**.
+        - I **Kunde**-hurtigfanen angir du **Kundekonto** - **US-004**.
+        - I **Generelt**-hurtigfanen angir du **Lager** - **62**.
         - Velg **OK** for å lukke menyen og opprette salgsordren.
-    - I **Salgsordrelinjer**-hurtigkategorien velger du **Legg til linje** dersom en ny linje ikke automatisk legges til, og deretter angir du følgende:
+    - I **Salgsordrelinjer**-hurtigfanen velger du **Legg til linje** dersom en ny linje ikke automatisk legges til, og deretter angir du følgende:
         - **Varenummer** – A0001
         - **Antall** – 1
         - Velg **Legg til linje** for å legge til en ny linje.
@@ -159,10 +158,10 @@ Før du kan definere systemstyrt gruppeplukking, må du opprette kvalifisert utg
         - Gjenta disse trinnene for å reservere beholdning for **Linje 2**.
 1. Velg **Ny** i handlingsruten for å opprette den andre salgsordren
     - I **Opprett salgsordre**-menyen som åpnes, angir du følgende informasjon:
-        - I **Kunde**-hurtigkategorien angir du **Kundekonto** - **US-005**.
-        - I **Generelt**-hurtigkategorien angir du **Lager** - **62**.
+        - I **Kunde**-hurtigfanen angir du **Kundekonto** - **US-005**.
+        - I **Generelt**-hurtigfanen angir du **Lager** - **62**.
         - Velg **OK** for å lukke menyen og opprette salgsordren
-    - I **Salgsordrelinjer**-hurtigkategorien velger du **Legg til linje** dersom en ny linje ikke automatisk legges til, og deretter angir du følgende informasjon:
+    - I **Salgsordrelinjer**-hurtigfanen velger du **Legg til linje** dersom en ny linje ikke automatisk legges til, og deretter angir du følgende informasjon:
         - **Varenummer** – A0001
         - **Antall** – 4
         - Velg **Legg til linje** for å legge til en ny linje.
@@ -176,14 +175,14 @@ Før du kan definere systemstyrt gruppeplukking, må du opprette kvalifisert utg
         - Gjenta disse trinnene for å reservere beholdning for **Linje 2**.
     - Lukk salgsordren og gå tilbake til **Alle salgsordrer**-listesiden.
 1. Finn de to salgsordrene du nettopp opprettet (du må kanskje oppdatere siden). I tabellen velger du begge salgsordrene ved hjelp av avkrysningsmerket for delen.
-    - I **Alle salgsordre**-hurtigkategorien velger du **Lager**-fanen.
+    - I **Alle salgsordre**-hurtigfanen velger du **Lager**-fanen.
     - I **Handlinger**-gruppen velger du **Frigi til lager** for å frigi begge salgsordrene til lageret.
 1. Når prosessen med å frigi til lager er fullført, vises en infomelding.
     - Forsendelser blir opprettet for hver salgsordre.
     - Det opprettes en bølge, og begge forsendelsene tilordnes til bølgen. Noter **bølge-ID-en**.
 1. Gå til **Lagerstyring > Utgående bølger > Forsendelsesbølger > Alle bølger**.
     - I **Alle bølger**-listen finner og velger du **bølge-ID-en** du opprettet i det forrige trinnet.
-    - Velg **Bølge**-kategorien i handlingsruten.
+    - Velg **Bølge**-fanen i handlingsruten.
     - I **Bølge**-gruppen velger du **Behandle** for å prosessere bølgen og opprette **Arbeid**.
     - Informasjonsmeldinger blir generert når behandlingen er fullført, og angir at arbeidet er opprettet og at bølgen er postert.
 1. **Valgfritt**: Gå til **Lagerstyring > Arbeid > Arbeidsdetaljer** for å se arbeidet som ble opprettet. To forskjellige arbeids-IDer opprettes. Hver arbeids-ID har to plukklinjer.
@@ -207,6 +206,3 @@ Før du kan definere systemstyrt gruppeplukking, må du opprette kvalifisert utg
 1. Det siste trinnet på mobilenheten er å **Plassere** gruppen i den endelige plasseringen. Velg **OK**
     - Når plasseringsoperasjonen er bekreftet, lukkes og brytes gruppen, basert på verdien som du angir for **Pausegruppe ved** -feltet i gruppeprofilen. Arbeids-IDer lukkes også.
 1. En "Gruppe fullført"-melding vises på mobilenheten.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

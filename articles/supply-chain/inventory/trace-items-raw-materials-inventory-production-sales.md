@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: InventTrackingDimTracing, InventTrackingDimTracingCriteria
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 30191
 ms.assetid: fdd0939a-855c-430f-a684-94f3baea1df4
 ms.search.region: Global
 ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fa1be4970f1106bf4b87eeaa428bac07c645b4f5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9293578144c51baef34204a2b592d517baa3b0dd
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434662"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967186"
 ---
 # <a name="item-and-raw-material-tracing-in-inventory-production-and-sales"></a>Sporing av varer og råmaterialer i beholdning, produksjon og salg
 
@@ -93,7 +92,7 @@ Kriteriene som er nødvendige for en varesporing, er varenummeret, en sporingsdi
 </table>
 
 ## <a name="what-information-is-included-in-the-trace-details"></a>Hvilken informasjon er inkludert i sporingsdetaljene?
-Resultatene av en sporing vises i kronologisk rekkefølge i treet i hurtigkategorien **Detaljer** på siden **Varesporing**. Rekkefølgen varierer, avhengig av sporingsretningen. Detaljene omfatter alle transaksjoner fra innkjøp av varen fra leverandøren til salget av varen til kunden. Sporingsresultater omfatter også midlertidige produkter som er knyttet til varen eller sporingsdimensjonen som ble angitt i sporingskriteriene. Den øverste noden viser antallet av varen, i lagerenheten, som blir værende på lager, basert på lagringsdimensjonen som ble angitt i sporingskriteriene. **Obs!** Sporingsdetaljene er et øyeblikksbilde av informasjonen som var tilgjengelig da sporingen ble utført. Sporingsdetaljene oppdateres ikke hvis informasjonen endres etter at sporingen er utført.
+Resultatene av en sporing vises i kronologisk rekkefølge i treet i hurtigfanen **Detaljer** på siden **Varesporing**. Rekkefølgen varierer, avhengig av sporingsretningen. Detaljene omfatter alle transaksjoner fra innkjøp av varen fra leverandøren til salget av varen til kunden. Sporingsresultater omfatter også midlertidige produkter som er knyttet til varen eller sporingsdimensjonen som ble angitt i sporingskriteriene. Den øverste noden viser antallet av varen, i lagerenheten, som blir værende på lager, basert på lagringsdimensjonen som ble angitt i sporingskriteriene. **Obs!** Sporingsdetaljene er et øyeblikksbilde av informasjonen som var tilgjengelig da sporingen ble utført. Sporingsdetaljene oppdateres ikke hvis informasjonen endres etter at sporingen er utført.
 
 ## <a name="why-dont-some-nodes-contain-any-details"></a>Hvorfor inneholder ikke enkelte noder noen detaljer?
 For å redusere mengden informasjon i sporingsdetaljene inneholder bare noden for den første forekomsten for varen eller råvaren detaljer. Hvis en valgt node ikke inneholder detaljer, kan du vise noden som inneholder detaljer, ved å klikke **Gå til sporet linje**. Du kan deretter gå tilbake til noden du forlot, ved å klikke **Gå tilbake**.
@@ -127,7 +126,7 @@ Når du har kjørt sporingen, kan du bruke følgende alternativer på knappen **
 Hvis du vil bruke alternativet **Ny bakover** eller **Ny forover**, må du bruke funksjonen **Åpne i et nytt vindu** til å vise en ny sporing i et nytt vindu.
 
 ## <a name="can-i-save-the-trace-details"></a>Kan jeg lagre sporingsdetaljene?
-Du kan lagre informasjonen i kategorien <strong>Detaljer</strong> som en XML-fil ved å klikke <strong>Eksporter</strong> under *<strong><em>Sporing</em></strong>* -handlingen i handlingsruten. I tillegg til sporingsdetaljene inkluderer XML-filen også sporingskriteriene, den overordnede noden og beholdningsantallet. Det er nyttig å lagre sporingsdetaljer, for eksempel hvis du vil knytte informasjonen til en kvalitetsordre eller annen dokumentasjon for overensstemmelse. Du kan angi hvor filen skal lagres. Hvis du vil vise filen umiddelbart, merker du av for <strong>Vis dokument</strong>. <strong>Obs!</strong> Filen lagres alltid, selv om du bare vil vise den. XML-filen åpnes som standard i et nettleservindu. Du kan imidlertid høyreklikke filen, velge <strong>Åpne med</strong> og deretter velge programmet som skal brukes til å vise innholdet.
+Du kan lagre informasjonen i fanen <strong>Detaljer</strong> som en XML-fil ved å klikke <strong>Eksporter</strong> under *<strong><em>Sporing</em></strong>* -handlingen i handlingsruten. I tillegg til sporingsdetaljene inkluderer XML-filen også sporingskriteriene, den overordnede noden og beholdningsantallet. Det er nyttig å lagre sporingsdetaljer, for eksempel hvis du vil knytte informasjonen til en kvalitetsordre eller annen dokumentasjon for overensstemmelse. Du kan angi hvor filen skal lagres. Hvis du vil vise filen umiddelbart, merker du av for <strong>Vis dokument</strong>. <strong>Obs!</strong> Filen lagres alltid, selv om du bare vil vise den. XML-filen åpnes som standard i et nettleservindu. Du kan imidlertid høyreklikke filen, velge <strong>Åpne med</strong> og deretter velge programmet som skal brukes til å vise innholdet.
 
 ## <a name="can-i-calculate-a-balance-for-a-particular-item-or-ingredient"></a>Kan jeg beregne en saldo for en bestemt vare eller ingrediens?
 Du kan eksportere informasjonen fra sammendragssider til Microsoft Excel. Åpne den aktuelle siden, klikk ikonet **Åpne i Microsoft Office**, og velg deretter **Eksporter til Microsoft Excel**. Denne funksjonaliteten er spesielt nyttig når du vil beregne en massesaldo for en vare eller ingrediens fra siden **Transaksjonsammendrag**. På siden **Transaksjonssammendrag** kan du filtrere varen eller ingrediensen, og partiet hvis du vil, og deretter eksportere informasjonen til Excel. I Excel kan du for eksempel finne beholdningsantallet, antallet som ble solgt, og beløpet som ble brukt i produksjon.
@@ -140,6 +139,3 @@ Du kan generere rapporten **Levert til kunder** for å identifisere hvor mye av 
 
 ## <a name="can-i-trace-coproducts-and-byproducts"></a>Kan jeg spore koprodukter og biprodukter?
 Du kan spore koprodukter, men du kan ikke spore et biprodukt fordi sporingsdimensjoner vanligvis ikke er tilordnet til biprodukter. Når du sporer en vare, inkluderes eventuelle relaterte koprodukter i sporingsdetaljene. En node som inneholder et koprodukt inneholder ordet "koprodukt" i detaljene. Du kan også vise detaljer om et koprodukt ved å velge noden i sporingsdetaljene og deretter klikke hurtigfanen **Produksjon**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

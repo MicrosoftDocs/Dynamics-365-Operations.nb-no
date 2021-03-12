@@ -10,7 +10,6 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,12 +17,12 @@ ms.search.industry: ''
 ms.author: sijoshi
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a875343d9b93f5ebf2c2992fba8b2f182310461e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 411895763cc282766b5a668208f20c72496059cd
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414535"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965126"
 ---
 # <a name="create-and-configure-extended-warranties"></a>Opprette og konfigurere utvidede garantier
 
@@ -142,7 +141,7 @@ En garantigruppe er en relasjon mellom garantivarer og garantiberettigede varer.
 
 Hvis du vil konfigurere en garantigruppe i Commerce, følger du disse trinnene.
 
-1. Gå til **Detaljhandel og handel \> Produkter og kategoriers \> Garanti \> Garantigrupper**.
+1. Gå til **Detaljhandel og handel \> Produkter og kategoriers \> Garanti \> Garantigrupper**.
 1. Velg **Ny** for å opprette en garantigruppe.
 1. I **Navn**-feltet angir du et unikt navn på den nye gruppen.
 1. Skriv inn en beskrivelse av gruppen i hurtigfanen **Generelt** i feltet **Beskrivelse**.
@@ -239,6 +238,3 @@ En garanti er en tjeneste som er tilgjengelig for et bestemt, unikt produkt. I D
 [Definere sortimenter](set-up-assortments.md)
 
 [Oversikt over nummerserier](../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

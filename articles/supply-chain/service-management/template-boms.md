@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SMATemplateBOMTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 88e732f64b389acafee23427594225dfacda71cc
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 01cd4cf03fb0ac1a3399673097895513f7180cf1
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434361"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965786"
 ---
 # <a name="template-boms"></a>Malstykklister    
 
@@ -111,9 +110,9 @@ Hvis du vil bruke malstykklister, må du angi to nummerserier. Definer en nummer
 
 1.  På listesiden **Nummerserier** oppretter du nummerserier for malstykklister og linjenummeret for stykklisteloggen. 
 
-2.  Klikk **Servicestyring** \> **Oppsett** \> **Servicestyringsparametere**.
+2.  Klikk på **Servicestyring** \> **Oppsett** \> **Servicestyringsparametere**.
 
-3.  Klikk **Nummerserier**, og velg en nummerseriekode for nummerseriereferansene du har opprettet i skjemaet **Nummerserier**.
+3.  Klikk på **Nummerserier**, og velg en nummerseriekode for nummerseriereferansene du har opprettet i skjemaet **Nummerserier**.
 
 4.  Lukk skjemaet for å lagre endringene.
 
@@ -134,6 +133,3 @@ Hvis du vil bruke malstykklister, må du angi to nummerserier. Definer en nummer
  
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
