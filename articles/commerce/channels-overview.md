@@ -10,58 +10,57 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 099ccd9f769ea5c431c1a82532d8654cbbd082b1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e060fe2a578296f079653244ed4d5676313e5ea8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414604"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963066"
 ---
-# <a name="channels-overview"></a><span data-ttu-id="4ad82-103">Oversikt over kanaler</span><span class="sxs-lookup"><span data-stu-id="4ad82-103">Channels overview</span></span>
+# <a name="channels-overview"></a><span data-ttu-id="e7bac-103">Oversikt over kanaler</span><span class="sxs-lookup"><span data-stu-id="e7bac-103">Channels overview</span></span>
 
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="4ad82-104">Dette emnet viser en oversikt over kanaler i Microsoft Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="4ad82-104">This topic presents an overview of channels in Microsoft Dynamics 365 Commerce.</span></span> <span data-ttu-id="4ad82-105">Den inneholder informasjon om oppgavene du må fullføre både før og etter at du har definert hver kanal.</span><span class="sxs-lookup"><span data-stu-id="4ad82-105">It includes information about the tasks that you must complete both before and after you set up each channel.</span></span>
+<span data-ttu-id="e7bac-104">Dette emnet viser en oversikt over kanaler i Microsoft Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="e7bac-104">This topic presents an overview of channels in Microsoft Dynamics 365 Commerce.</span></span> <span data-ttu-id="e7bac-105">Den inneholder informasjon om oppgavene du må fullføre både før og etter at du har definert hver kanal.</span><span class="sxs-lookup"><span data-stu-id="e7bac-105">It includes information about the tasks that you must complete both before and after you set up each channel.</span></span>
 
-## <a name="types-of-channels"></a><span data-ttu-id="4ad82-106">Typer kanaler</span><span class="sxs-lookup"><span data-stu-id="4ad82-106">Types of Channels</span></span>
+## <a name="types-of-channels"></a><span data-ttu-id="e7bac-106">Typer kanaler</span><span class="sxs-lookup"><span data-stu-id="e7bac-106">Types of Channels</span></span>
 
-<span data-ttu-id="4ad82-107">Dynamics 365 Commerce støtter tre ulike kanaltyper: detaljhandel, telefonsenter og Internett-kanaler.</span><span class="sxs-lookup"><span data-stu-id="4ad82-107">Dynamics 365 Commerce supports three different channel types: retail, call center, and online channels.</span></span>
+<span data-ttu-id="e7bac-107">Dynamics 365 Commerce støtter tre ulike kanaltyper: detaljhandel, telefonsenter og Internett-kanaler.</span><span class="sxs-lookup"><span data-stu-id="e7bac-107">Dynamics 365 Commerce supports three different channel types: retail, call center, and online channels.</span></span>
 
-### <a name="retail-channels"></a><span data-ttu-id="4ad82-108">Detaljhandelskanaler</span><span class="sxs-lookup"><span data-stu-id="4ad82-108">Retail channels</span></span>
+### <a name="retail-channels"></a><span data-ttu-id="e7bac-108">Detaljhandelskanaler</span><span class="sxs-lookup"><span data-stu-id="e7bac-108">Retail channels</span></span>
 
-<span data-ttu-id="4ad82-109">Detaljhandelskanaler representerer standard fysiske butikker.</span><span class="sxs-lookup"><span data-stu-id="4ad82-109">Retail channels represent standard brick-and-mortar stores.</span></span> <span data-ttu-id="4ad82-110">Hver detaljhandelsbutikk kan ha sine egne salgsstedsregistre, inntekts- og utgiftskontoer og ansatte.</span><span class="sxs-lookup"><span data-stu-id="4ad82-110">Each store can have its own point of sale (POS) registers, income and expense accounts, and staff.</span></span> 
+<span data-ttu-id="e7bac-109">Detaljhandelskanaler representerer standard fysiske butikker.</span><span class="sxs-lookup"><span data-stu-id="e7bac-109">Retail channels represent standard brick-and-mortar stores.</span></span> <span data-ttu-id="e7bac-110">Hver detaljhandelsbutikk kan ha sine egne salgsstedsregistre, inntekts- og utgiftskontoer og ansatte.</span><span class="sxs-lookup"><span data-stu-id="e7bac-110">Each store can have its own point of sale (POS) registers, income and expense accounts, and staff.</span></span> 
 
-### <a name="call-center-channels"></a><span data-ttu-id="4ad82-111">Telefonsenterkanaler</span><span class="sxs-lookup"><span data-stu-id="4ad82-111">Call center channels</span></span>
+### <a name="call-center-channels"></a><span data-ttu-id="e7bac-111">Telefonsenterkanaler</span><span class="sxs-lookup"><span data-stu-id="e7bac-111">Call center channels</span></span>
 
-<span data-ttu-id="4ad82-112">Telefonsenterkanaler representerer ordre- og kundestyring i et telefonsenter.</span><span class="sxs-lookup"><span data-stu-id="4ad82-112">Call center channels represent call center order and customer management.</span></span>
+<span data-ttu-id="e7bac-112">Telefonsenterkanaler representerer ordre- og kundestyring i et telefonsenter.</span><span class="sxs-lookup"><span data-stu-id="e7bac-112">Call center channels represent call center order and customer management.</span></span>
 
-### <a name="online-channels"></a><span data-ttu-id="4ad82-113">Internett-kanaler</span><span class="sxs-lookup"><span data-stu-id="4ad82-113">Online channels</span></span>
+### <a name="online-channels"></a><span data-ttu-id="e7bac-113">Internett-kanaler</span><span class="sxs-lookup"><span data-stu-id="e7bac-113">Online channels</span></span>
 
-<span data-ttu-id="4ad82-114">Internett-kanaler representerer butikkfasader for e-handel på nettet.</span><span class="sxs-lookup"><span data-stu-id="4ad82-114">Online channels represent online e-Commerce storefronts.</span></span> <span data-ttu-id="4ad82-115">Når en Internett-kanal er opprettet, må det opprettes et område ved hjelp av Microsoft Dynamics 365 Commerce-områdebygger eller en annen tredjepartsløsning for e-handel.</span><span class="sxs-lookup"><span data-stu-id="4ad82-115">Once an online channel is created, a site must be created using the Microsoft Dynamics 365 Commerce Site Builder tool or other third-party e-Commerce solution.</span></span>
+<span data-ttu-id="e7bac-114">Internett-kanaler representerer butikkfasader for e-handel på nettet.</span><span class="sxs-lookup"><span data-stu-id="e7bac-114">Online channels represent online e-Commerce storefronts.</span></span> <span data-ttu-id="e7bac-115">Når en Internett-kanal er opprettet, må det opprettes et område ved hjelp av Microsoft Dynamics 365 Commerce-områdebygger eller en annen tredjepartsløsning for e-handel.</span><span class="sxs-lookup"><span data-stu-id="e7bac-115">Once an online channel is created, a site must be created using the Microsoft Dynamics 365 Commerce Site Builder tool or other third-party e-Commerce solution.</span></span>
 
-## <a name="channel-setup-basics"></a><span data-ttu-id="4ad82-116">Grunnleggende om kanaloppsett</span><span class="sxs-lookup"><span data-stu-id="4ad82-116">Channel setup basics</span></span>
+## <a name="channel-setup-basics"></a><span data-ttu-id="e7bac-116">Grunnleggende om kanaloppsett</span><span class="sxs-lookup"><span data-stu-id="e7bac-116">Channel setup basics</span></span>
 
-<span data-ttu-id="4ad82-117">Kanaloppsett utføres i Commerce-verktøyet.</span><span class="sxs-lookup"><span data-stu-id="4ad82-117">Channel set up is performed in the Commerce tool.</span></span> <span data-ttu-id="4ad82-118">Hver kanal kan ha sine egne betalingsmåter, prisgrupper, produkthierarkier, sortimenter og produktsett.</span><span class="sxs-lookup"><span data-stu-id="4ad82-118">Each channel can have its own payment methods, price groups, product hierarchies, assortments, and set of products.</span></span> <span data-ttu-id="4ad82-119">Når du har opprettet en kanal, tilordner du produktene du vil den skal føre og selge.</span><span class="sxs-lookup"><span data-stu-id="4ad82-119">After you create a channel, you assign the products that you want it to carry and sell.</span></span> <span data-ttu-id="4ad82-120">Hver kanaltype har et unikt sett av funksjoner som kanskje må konfigureres.</span><span class="sxs-lookup"><span data-stu-id="4ad82-120">Each channel type has a unique set of features that may need to be configured.</span></span> <span data-ttu-id="4ad82-121">En detaljhandelskanal trenger for eksempel tilordnede ansatte, journaler og kunder.</span><span class="sxs-lookup"><span data-stu-id="4ad82-121">For example, a retail channel needs assigned employees, registers, and customers.</span></span> <span data-ttu-id="4ad82-122">Når en ny kanal er opprettet, må den tilordnes et organisasjonshierarki.</span><span class="sxs-lookup"><span data-stu-id="4ad82-122">Once a new channel is created, it needs to be assigned to an organization hierarchy.</span></span>
+<span data-ttu-id="e7bac-117">Kanaloppsett utføres i Commerce-verktøyet.</span><span class="sxs-lookup"><span data-stu-id="e7bac-117">Channel set up is performed in the Commerce tool.</span></span> <span data-ttu-id="e7bac-118">Hver kanal kan ha sine egne betalingsmåter, prisgrupper, produkthierarkier, sortimenter og produktsett.</span><span class="sxs-lookup"><span data-stu-id="e7bac-118">Each channel can have its own payment methods, price groups, product hierarchies, assortments, and set of products.</span></span> <span data-ttu-id="e7bac-119">Når du har opprettet en kanal, tilordner du produktene du vil den skal føre og selge.</span><span class="sxs-lookup"><span data-stu-id="e7bac-119">After you create a channel, you assign the products that you want it to carry and sell.</span></span> <span data-ttu-id="e7bac-120">Hver kanaltype har et unikt sett av funksjoner som kanskje må konfigureres.</span><span class="sxs-lookup"><span data-stu-id="e7bac-120">Each channel type has a unique set of features that may need to be configured.</span></span> <span data-ttu-id="e7bac-121">En detaljhandelskanal trenger for eksempel tilordnede ansatte, journaler og kunder.</span><span class="sxs-lookup"><span data-stu-id="e7bac-121">For example, a retail channel needs assigned employees, registers, and customers.</span></span> <span data-ttu-id="e7bac-122">Når en ny kanal er opprettet, må den tilordnes et organisasjonshierarki.</span><span class="sxs-lookup"><span data-stu-id="e7bac-122">Once a new channel is created, it needs to be assigned to an organization hierarchy.</span></span>
 
-## <a name="channel-setup-prerequisites"></a><span data-ttu-id="4ad82-123">Forutsetninger for kanaloppsett</span><span class="sxs-lookup"><span data-stu-id="4ad82-123">Channel setup prerequisites</span></span>
+## <a name="channel-setup-prerequisites"></a><span data-ttu-id="e7bac-123">Forutsetninger for kanaloppsett</span><span class="sxs-lookup"><span data-stu-id="e7bac-123">Channel setup prerequisites</span></span>
 
-<span data-ttu-id="4ad82-124">Før du kan definere en kanal, må du fullføre noen nødvendige oppgaver basert på kanaltypen.</span><span class="sxs-lookup"><span data-stu-id="4ad82-124">Before you can set up a channel, you must complete some prerequisite tasks based on the channel type.</span></span> <span data-ttu-id="4ad82-125">Hvis du vil ha mer informasjon, kan du se [Forutsetninger for kanaloppsett](channels-prerequisites.md).</span><span class="sxs-lookup"><span data-stu-id="4ad82-125">For more information, see [Channel setup prerequisites](channels-prerequisites.md).</span></span>
+<span data-ttu-id="e7bac-124">Før du kan definere en kanal, må du fullføre noen nødvendige oppgaver basert på kanaltypen.</span><span class="sxs-lookup"><span data-stu-id="e7bac-124">Before you can set up a channel, you must complete some prerequisite tasks based on the channel type.</span></span> <span data-ttu-id="e7bac-125">Hvis du vil ha mer informasjon, kan du se [Forutsetninger for kanaloppsett](channels-prerequisites.md).</span><span class="sxs-lookup"><span data-stu-id="e7bac-125">For more information, see [Channel setup prerequisites](channels-prerequisites.md).</span></span>
 
-## <a name="set-up-a-channel"></a><span data-ttu-id="4ad82-126">Definere en kanal</span><span class="sxs-lookup"><span data-stu-id="4ad82-126">Set up a channel</span></span>
+## <a name="set-up-a-channel"></a><span data-ttu-id="e7bac-126">Definere en kanal</span><span class="sxs-lookup"><span data-stu-id="e7bac-126">Set up a channel</span></span>
 
-<span data-ttu-id="4ad82-127">Når du har fullført de nødvendige oppgavene, bruker du følgende koblinger for ytterligere instruksjoner for installasjon.</span><span class="sxs-lookup"><span data-stu-id="4ad82-127">After you complete the prerequisite tasks, for further setup instructions, use the following links.</span></span>
+<span data-ttu-id="e7bac-127">Når du har fullført de nødvendige oppgavene, bruker du følgende koblinger for ytterligere instruksjoner for installasjon.</span><span class="sxs-lookup"><span data-stu-id="e7bac-127">After you complete the prerequisite tasks, for further setup instructions, use the following links.</span></span>
 
-- [<span data-ttu-id="4ad82-128">Definere en detaljhandelskanal</span><span class="sxs-lookup"><span data-stu-id="4ad82-128">Set up a retail channel</span></span>](channel-setup-retail.md)
-- [<span data-ttu-id="4ad82-129">Definere en telefonsenterkanal</span><span class="sxs-lookup"><span data-stu-id="4ad82-129">Set up a call center channel</span></span>](channel-setup-callcenter.md)
-- [<span data-ttu-id="4ad82-130">Definere en Internett-kanal</span><span class="sxs-lookup"><span data-stu-id="4ad82-130">Set up an online channel</span></span>](channel-setup-online.md)
+- [<span data-ttu-id="e7bac-128">Definere en detaljhandelskanal</span><span class="sxs-lookup"><span data-stu-id="e7bac-128">Set up a retail channel</span></span>](channel-setup-retail.md)
+- [<span data-ttu-id="e7bac-129">Definere en telefonsenterkanal</span><span class="sxs-lookup"><span data-stu-id="e7bac-129">Set up a call center channel</span></span>](channel-setup-callcenter.md)
+- [<span data-ttu-id="e7bac-130">Definere en Internett-kanal</span><span class="sxs-lookup"><span data-stu-id="e7bac-130">Set up an online channel</span></span>](channel-setup-online.md)
 
 <!--
 ## Post-channel configuration
@@ -78,14 +77,14 @@ After you create a channel, you may need to complete some of the below tasks:
 - Run the jobs to send the store data to Retail POS. (LINK TBD)
 -->
 
-## <a name="additional-resources"></a><span data-ttu-id="4ad82-131">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="4ad82-131">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="e7bac-131">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="e7bac-131">Additional resources</span></span>
 
-[<span data-ttu-id="4ad82-132">Forutsetninger for kanaloppsett</span><span class="sxs-lookup"><span data-stu-id="4ad82-132">Channel setup prerequisites</span></span>](channels-prerequisites.md)
+[<span data-ttu-id="e7bac-132">Forutsetninger for kanaloppsett</span><span class="sxs-lookup"><span data-stu-id="e7bac-132">Channel setup prerequisites</span></span>](channels-prerequisites.md)
 
-[<span data-ttu-id="4ad82-133">Definere en detaljhandelskanal</span><span class="sxs-lookup"><span data-stu-id="4ad82-133">Set up a retail channel</span></span>](channel-setup-retail.md)
+[<span data-ttu-id="e7bac-133">Definere en detaljhandelskanal</span><span class="sxs-lookup"><span data-stu-id="e7bac-133">Set up a retail channel</span></span>](channel-setup-retail.md)
     
-[<span data-ttu-id="4ad82-134">Definere en Internett-kanal</span><span class="sxs-lookup"><span data-stu-id="4ad82-134">Set up an online channel</span></span>](channel-setup-online.md)
+[<span data-ttu-id="e7bac-134">Definere en Internett-kanal</span><span class="sxs-lookup"><span data-stu-id="e7bac-134">Set up an online channel</span></span>](channel-setup-online.md)
 
-[<span data-ttu-id="4ad82-135">Definere en telefonsenterkanal</span><span class="sxs-lookup"><span data-stu-id="4ad82-135">Set up a call center channel</span></span>](channel-setup-callcenter.md)
+[<span data-ttu-id="e7bac-135">Definere en telefonsenterkanal</span><span class="sxs-lookup"><span data-stu-id="e7bac-135">Set up a call center channel</span></span>](channel-setup-callcenter.md)
 
-[<span data-ttu-id="4ad82-136">Definere organisasjonshierarkier</span><span class="sxs-lookup"><span data-stu-id="4ad82-136">Set up organization hierarchies</span></span>](channels-org-hierarchies.md)
+[<span data-ttu-id="e7bac-136">Definere organisasjonshierarkier</span><span class="sxs-lookup"><span data-stu-id="e7bac-136">Set up organization hierarchies</span></span>](channels-org-hierarchies.md)
