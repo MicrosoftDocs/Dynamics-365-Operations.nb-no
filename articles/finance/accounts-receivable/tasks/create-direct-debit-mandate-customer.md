@@ -11,82 +11,81 @@ ms.technology: ''
 ms.search.form: CustTable, CustBankAccounts, BankAccountTable, CustPaymMode, CustDirectDebitMandate, BankAccountTableLookUp, SrsReportViewerForm,  LogisticsAddressCityLookup, CustFreeInvoice, CustTableLookup
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 86d29782f616219b5d84e3567910cb28c60b65ae
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f746da0bcf2b1e0cb09af6b5e2ea61938213c924
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446289"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4991048"
 ---
-# <a name="create-a-direct-debit-mandate-for-a-customer"></a><span data-ttu-id="eb162-103">Opprette et nytt avtalegiromandat for en kunde</span><span class="sxs-lookup"><span data-stu-id="eb162-103">Create a direct debit mandate for a customer</span></span>
+# <a name="create-a-direct-debit-mandate-for-a-customer"></a><span data-ttu-id="f16e9-103">Opprette et nytt avtalegiromandat for en kunde</span><span class="sxs-lookup"><span data-stu-id="f16e9-103">Create a direct debit mandate for a customer</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="eb162-104">Denne oppgaveveiledningen beskriver hvordan du oppretter et avtalegiromandat og bruker det på en faktura.</span><span class="sxs-lookup"><span data-stu-id="eb162-104">This task guide demonstrates how to create a direct debit mandate and use it on an invoice.</span></span>
+<span data-ttu-id="f16e9-104">Denne oppgaveveiledningen beskriver hvordan du oppretter et avtalegiromandat og bruker det på en faktura.</span><span class="sxs-lookup"><span data-stu-id="f16e9-104">This task guide demonstrates how to create a direct debit mandate and use it on an invoice.</span></span>
 
 
-## <a name="create-a-bank-account"></a><span data-ttu-id="eb162-105">Opprette en bankkonto</span><span class="sxs-lookup"><span data-stu-id="eb162-105">Create a bank account</span></span>
-1. <span data-ttu-id="eb162-106">I **navigasjonsruten** går du **Moduler > Kunder > Kunder > Alle kunder**.</span><span class="sxs-lookup"><span data-stu-id="eb162-106">In the **Navigation pane**, go to **Modules > Accounts receivable > Customers > All customers**.</span></span>
-2. <span data-ttu-id="eb162-107">Velg en post i listen.</span><span class="sxs-lookup"><span data-stu-id="eb162-107">In the list, select a record.</span></span> <span data-ttu-id="eb162-108">Velg for eksempel US-001.</span><span class="sxs-lookup"><span data-stu-id="eb162-108">For example, select US-001</span></span>
-3. <span data-ttu-id="eb162-109">Klikk **Kunde** i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="eb162-109">On the Action Pane, click **Customer**.</span></span>
-4. <span data-ttu-id="eb162-110">Klikk **Bankkontoer**.</span><span class="sxs-lookup"><span data-stu-id="eb162-110">Click **Bank accounts**.</span></span>
-5. <span data-ttu-id="eb162-111">Klikk på **Ny**.</span><span class="sxs-lookup"><span data-stu-id="eb162-111">Click **New**.</span></span>
-6. <span data-ttu-id="eb162-112">Skriv inn en verdi i **Bankkonto**-feltet.</span><span class="sxs-lookup"><span data-stu-id="eb162-112">In the **Bank account** field, type a value.</span></span>
-7. <span data-ttu-id="eb162-113">Skriv inn en verdi i **Navn**-feltet.</span><span class="sxs-lookup"><span data-stu-id="eb162-113">In the **Name** field, type a value.</span></span>
-8. <span data-ttu-id="eb162-114">Skriv inn en verdi i **IBAN**-feltet.</span><span class="sxs-lookup"><span data-stu-id="eb162-114">In the **IBAN** field, type a value.</span></span>
-9. <span data-ttu-id="eb162-115">Skriv inn en verdi i **Valuta**-feltet.</span><span class="sxs-lookup"><span data-stu-id="eb162-115">In the **Currency** field, type a value.</span></span>
-10. <span data-ttu-id="eb162-116">Klikk **Lagre**.</span><span class="sxs-lookup"><span data-stu-id="eb162-116">Click **Save**.</span></span>
-11. <span data-ttu-id="eb162-117">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="eb162-117">Close the page.</span></span>
-12. <span data-ttu-id="eb162-118">I **navigasjonsruten** går du til **Moduler > Kontant- og bankbehandling > Bankkontoer > Bankkontoer**.</span><span class="sxs-lookup"><span data-stu-id="eb162-118">In the **Navigation pane**, go to **Modules > Cash and bank management > Bank accounts > Bank accounts**.</span></span>
-13. <span data-ttu-id="eb162-119">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="eb162-119">In the list, find and select the desired record.</span></span>
-14. <span data-ttu-id="eb162-120">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="eb162-120">In the list, click the link in the selected row.</span></span>
-15. <span data-ttu-id="eb162-121">Klikk **Rediger**.</span><span class="sxs-lookup"><span data-stu-id="eb162-121">Click **Edit**.</span></span>
-16. <span data-ttu-id="eb162-122">Vis hurtigfanen **Tilleggsidentifikasjon**.</span><span class="sxs-lookup"><span data-stu-id="eb162-122">Expand the **Additional identification** fastTab.</span></span>
-17. <span data-ttu-id="eb162-123">Skriv inn en verdi i feltet **Direkte debet-ID**.</span><span class="sxs-lookup"><span data-stu-id="eb162-123">In the **Direct debit ID** field, type a value.</span></span>
-18. <span data-ttu-id="eb162-124">Skriv inn en verdi i **IBAN**-feltet.</span><span class="sxs-lookup"><span data-stu-id="eb162-124">In the **IBAN** field, type a value.</span></span>
-19. <span data-ttu-id="eb162-125">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="eb162-125">Close the page.</span></span>
-20. <span data-ttu-id="eb162-126">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="eb162-126">Close the page.</span></span>
+## <a name="create-a-bank-account"></a><span data-ttu-id="f16e9-105">Opprette en bankkonto</span><span class="sxs-lookup"><span data-stu-id="f16e9-105">Create a bank account</span></span>
+1. <span data-ttu-id="f16e9-106">I **navigasjonsruten** går du **Moduler > Kunder > Kunder > Alle kunder**.</span><span class="sxs-lookup"><span data-stu-id="f16e9-106">In the **Navigation pane**, go to **Modules > Accounts receivable > Customers > All customers**.</span></span>
+2. <span data-ttu-id="f16e9-107">Velg en post i listen.</span><span class="sxs-lookup"><span data-stu-id="f16e9-107">In the list, select a record.</span></span> <span data-ttu-id="f16e9-108">Velg for eksempel US-001.</span><span class="sxs-lookup"><span data-stu-id="f16e9-108">For example, select US-001</span></span>
+3. <span data-ttu-id="f16e9-109">Klikk **Kunde** i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="f16e9-109">On the Action Pane, click **Customer**.</span></span>
+4. <span data-ttu-id="f16e9-110">Klikk **Bankkontoer**.</span><span class="sxs-lookup"><span data-stu-id="f16e9-110">Click **Bank accounts**.</span></span>
+5. <span data-ttu-id="f16e9-111">Klikk på **Ny**.</span><span class="sxs-lookup"><span data-stu-id="f16e9-111">Click **New**.</span></span>
+6. <span data-ttu-id="f16e9-112">Skriv inn en verdi i **Bankkonto**-feltet.</span><span class="sxs-lookup"><span data-stu-id="f16e9-112">In the **Bank account** field, type a value.</span></span>
+7. <span data-ttu-id="f16e9-113">Skriv inn en verdi i **Navn**-feltet.</span><span class="sxs-lookup"><span data-stu-id="f16e9-113">In the **Name** field, type a value.</span></span>
+8. <span data-ttu-id="f16e9-114">Skriv inn en verdi i **IBAN**-feltet.</span><span class="sxs-lookup"><span data-stu-id="f16e9-114">In the **IBAN** field, type a value.</span></span>
+9. <span data-ttu-id="f16e9-115">Skriv inn en verdi i **Valuta**-feltet.</span><span class="sxs-lookup"><span data-stu-id="f16e9-115">In the **Currency** field, type a value.</span></span>
+10. <span data-ttu-id="f16e9-116">Klikk **Lagre**.</span><span class="sxs-lookup"><span data-stu-id="f16e9-116">Click **Save**.</span></span>
+11. <span data-ttu-id="f16e9-117">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="f16e9-117">Close the page.</span></span>
+12. <span data-ttu-id="f16e9-118">I **navigasjonsruten** går du til **Moduler > Kontant- og bankbehandling > Bankkontoer > Bankkontoer**.</span><span class="sxs-lookup"><span data-stu-id="f16e9-118">In the **Navigation pane**, go to **Modules > Cash and bank management > Bank accounts > Bank accounts**.</span></span>
+13. <span data-ttu-id="f16e9-119">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="f16e9-119">In the list, find and select the desired record.</span></span>
+14. <span data-ttu-id="f16e9-120">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="f16e9-120">In the list, click the link in the selected row.</span></span>
+15. <span data-ttu-id="f16e9-121">Klikk **Rediger**.</span><span class="sxs-lookup"><span data-stu-id="f16e9-121">Click **Edit**.</span></span>
+16. <span data-ttu-id="f16e9-122">Vis hurtigfanen **Tilleggsidentifikasjon**.</span><span class="sxs-lookup"><span data-stu-id="f16e9-122">Expand the **Additional identification** fastTab.</span></span>
+17. <span data-ttu-id="f16e9-123">Skriv inn en verdi i feltet **Direkte debet-ID**.</span><span class="sxs-lookup"><span data-stu-id="f16e9-123">In the **Direct debit ID** field, type a value.</span></span>
+18. <span data-ttu-id="f16e9-124">Skriv inn en verdi i **IBAN**-feltet.</span><span class="sxs-lookup"><span data-stu-id="f16e9-124">In the **IBAN** field, type a value.</span></span>
+19. <span data-ttu-id="f16e9-125">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="f16e9-125">Close the page.</span></span>
+20. <span data-ttu-id="f16e9-126">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="f16e9-126">Close the page.</span></span>
 
-## <a name="define-the-electronic-payment-method"></a><span data-ttu-id="eb162-127">Definere den elektroniske betalingsmåten</span><span class="sxs-lookup"><span data-stu-id="eb162-127">Define the electronic payment method</span></span>
-1. <span data-ttu-id="eb162-128">I **navigasjonsruten** går du til **Moduler > Kunder > Betalingsoppsett > Betalingsmåter**.</span><span class="sxs-lookup"><span data-stu-id="eb162-128">In the **Navigation pane**, go to **Modules > Accounts receivable > Payments setup > Methods of payment**.</span></span>
-2. <span data-ttu-id="eb162-129">Klikk på **Ny**.</span><span class="sxs-lookup"><span data-stu-id="eb162-129">Click **New**.</span></span>
-3. <span data-ttu-id="eb162-130">Skriv inn en verdi i **Betalingsmåte**-feltet.</span><span class="sxs-lookup"><span data-stu-id="eb162-130">In the **Method of payment** field, type a value.</span></span>
-4. <span data-ttu-id="eb162-131">Skriv inn en verdi i **Beskrivelse**-feltet.</span><span class="sxs-lookup"><span data-stu-id="eb162-131">In the **Description** field, type a value.</span></span>
-5. <span data-ttu-id="eb162-132">Velg Elektronisk betaling i **Betalingstype**-feltet.</span><span class="sxs-lookup"><span data-stu-id="eb162-132">In the **Payment type** field, enter 'Electronic payment'.</span></span> <span data-ttu-id="eb162-133">Betalingstypen for betalingsmåten avtalegiromandat må være elektronisk betaling.</span><span class="sxs-lookup"><span data-stu-id="eb162-133">The payment type for a direct debit mandate method of payment must be Electronic payment.</span></span>
-6. <span data-ttu-id="eb162-134">I feltet **Krever mandat** velger du Ja.</span><span class="sxs-lookup"><span data-stu-id="eb162-134">Select Yes in the **Require mandate** field.</span></span>
-7. <span data-ttu-id="eb162-135">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="eb162-135">Close the page.</span></span>
+## <a name="define-the-electronic-payment-method"></a><span data-ttu-id="f16e9-127">Definere den elektroniske betalingsmåten</span><span class="sxs-lookup"><span data-stu-id="f16e9-127">Define the electronic payment method</span></span>
+1. <span data-ttu-id="f16e9-128">I **navigasjonsruten** går du til **Moduler > Kunder > Betalingsoppsett > Betalingsmåter**.</span><span class="sxs-lookup"><span data-stu-id="f16e9-128">In the **Navigation pane**, go to **Modules > Accounts receivable > Payments setup > Methods of payment**.</span></span>
+2. <span data-ttu-id="f16e9-129">Klikk på **Ny**.</span><span class="sxs-lookup"><span data-stu-id="f16e9-129">Click **New**.</span></span>
+3. <span data-ttu-id="f16e9-130">Skriv inn en verdi i **Betalingsmåte**-feltet.</span><span class="sxs-lookup"><span data-stu-id="f16e9-130">In the **Method of payment** field, type a value.</span></span>
+4. <span data-ttu-id="f16e9-131">Skriv inn en verdi i **Beskrivelse**-feltet.</span><span class="sxs-lookup"><span data-stu-id="f16e9-131">In the **Description** field, type a value.</span></span>
+5. <span data-ttu-id="f16e9-132">Velg Elektronisk betaling i **Betalingstype**-feltet.</span><span class="sxs-lookup"><span data-stu-id="f16e9-132">In the **Payment type** field, enter 'Electronic payment'.</span></span> <span data-ttu-id="f16e9-133">Betalingstypen for betalingsmåten avtalegiromandat må være elektronisk betaling.</span><span class="sxs-lookup"><span data-stu-id="f16e9-133">The payment type for a direct debit mandate method of payment must be Electronic payment.</span></span>
+6. <span data-ttu-id="f16e9-134">I feltet **Krever mandat** velger du Ja.</span><span class="sxs-lookup"><span data-stu-id="f16e9-134">Select Yes in the **Require mandate** field.</span></span>
+7. <span data-ttu-id="f16e9-135">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="f16e9-135">Close the page.</span></span>
 
-## <a name="add-a-direct-debit-mandate-to-a-customer"></a><span data-ttu-id="eb162-136">Legg til et avtalegiromandat for en kunde.</span><span class="sxs-lookup"><span data-stu-id="eb162-136">Add a direct debit mandate to a customer.</span></span>
-1. <span data-ttu-id="eb162-137">I **navigasjonsruten** går du **Moduler > Kunder > Kunder > Alle kunder**.</span><span class="sxs-lookup"><span data-stu-id="eb162-137">In the **Navigation pane**, go to **Modules > Accounts receivable > Customers > All customers**.</span></span>
-2. <span data-ttu-id="eb162-138">Velg en post i listen.</span><span class="sxs-lookup"><span data-stu-id="eb162-138">In the list, select a record.</span></span> <span data-ttu-id="eb162-139">Velg for eksempel US-001.</span><span class="sxs-lookup"><span data-stu-id="eb162-139">For example, select US-001</span></span>
-3. <span data-ttu-id="eb162-140">Klikk **Rediger**.</span><span class="sxs-lookup"><span data-stu-id="eb162-140">Click **Edit**.</span></span>
-4. <span data-ttu-id="eb162-141">Utvid hurtigfanen **Betalingstandarder**.</span><span class="sxs-lookup"><span data-stu-id="eb162-141">Expand the **Payment defaults** fastTab.</span></span>
-5. <span data-ttu-id="eb162-142">Angi eller velg en verdi i **Betalingsmåte**-feltet.</span><span class="sxs-lookup"><span data-stu-id="eb162-142">In the **Method of payment** field, enter or select a value.</span></span>
-6. <span data-ttu-id="eb162-143">Utvid hurtigfanen **Betalingstandarder**.</span><span class="sxs-lookup"><span data-stu-id="eb162-143">Expand the **Payment defaults** fastTab.</span></span>
-7. <span data-ttu-id="eb162-144">Utvid hurtigfanen **Avtalegiromandater**.</span><span class="sxs-lookup"><span data-stu-id="eb162-144">Expand the **Direct debit mandates** fastTab.</span></span>
-8. <span data-ttu-id="eb162-145">Klikk **Legg til**.</span><span class="sxs-lookup"><span data-stu-id="eb162-145">Click **Add**.</span></span>
-9. <span data-ttu-id="eb162-146">Angi eller velg en verdi i **Bankkonto**-feltet.</span><span class="sxs-lookup"><span data-stu-id="eb162-146">In the **Bank account** field, enter or select a value.</span></span>
-10. <span data-ttu-id="eb162-147">Angi eller velg en verdi i **Kreditors bankkonto**-feltet.</span><span class="sxs-lookup"><span data-stu-id="eb162-147">In the **Creditor bank account** field, enter or select a value.</span></span>
-11. <span data-ttu-id="eb162-148">Angi antall betalinger som du forventer å behandle for dette mandatet, i feltet **Betalingsfrekvens**.</span><span class="sxs-lookup"><span data-stu-id="eb162-148">In the **Payment frequency** field, enter the number of payments that you expect to process for this mandate.</span></span>
-12. <span data-ttu-id="eb162-149">Klikk **OK**.</span><span class="sxs-lookup"><span data-stu-id="eb162-149">Click **OK**.</span></span>
-13. <span data-ttu-id="eb162-150">Klikk **Skriv ut**.</span><span class="sxs-lookup"><span data-stu-id="eb162-150">Click **Print**.</span></span>
-14. <span data-ttu-id="eb162-151">Klikk **Mandatrapport**.</span><span class="sxs-lookup"><span data-stu-id="eb162-151">Click **Mandate report**.</span></span>
-15. <span data-ttu-id="eb162-152">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="eb162-152">Close the page.</span></span>
-16. <span data-ttu-id="eb162-153">Klikk **Rediger**.</span><span class="sxs-lookup"><span data-stu-id="eb162-153">Click **Edit**.</span></span>
-17. <span data-ttu-id="eb162-154">Angi en dato i **Signaturdato**-feltet.</span><span class="sxs-lookup"><span data-stu-id="eb162-154">In the **Signature date** field, enter a date.</span></span>
-18. <span data-ttu-id="eb162-155">Klikk **Ja**.</span><span class="sxs-lookup"><span data-stu-id="eb162-155">Click **Yes**.</span></span>
-19. <span data-ttu-id="eb162-156">Angi stedet mandatet ble signert.</span><span class="sxs-lookup"><span data-stu-id="eb162-156">Enter the location where the mandate was signed.</span></span>
-20. <span data-ttu-id="eb162-157">Klikk **OK**.</span><span class="sxs-lookup"><span data-stu-id="eb162-157">Click **OK**.</span></span>
-21. <span data-ttu-id="eb162-158">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="eb162-158">Close the page.</span></span>
+## <a name="add-a-direct-debit-mandate-to-a-customer"></a><span data-ttu-id="f16e9-136">Legg til et avtalegiromandat for en kunde.</span><span class="sxs-lookup"><span data-stu-id="f16e9-136">Add a direct debit mandate to a customer.</span></span>
+1. <span data-ttu-id="f16e9-137">I **navigasjonsruten** går du **Moduler > Kunder > Kunder > Alle kunder**.</span><span class="sxs-lookup"><span data-stu-id="f16e9-137">In the **Navigation pane**, go to **Modules > Accounts receivable > Customers > All customers**.</span></span>
+2. <span data-ttu-id="f16e9-138">Velg en post i listen.</span><span class="sxs-lookup"><span data-stu-id="f16e9-138">In the list, select a record.</span></span> <span data-ttu-id="f16e9-139">Velg for eksempel US-001.</span><span class="sxs-lookup"><span data-stu-id="f16e9-139">For example, select US-001</span></span>
+3. <span data-ttu-id="f16e9-140">Klikk **Rediger**.</span><span class="sxs-lookup"><span data-stu-id="f16e9-140">Click **Edit**.</span></span>
+4. <span data-ttu-id="f16e9-141">Utvid hurtigfanen **Betalingstandarder**.</span><span class="sxs-lookup"><span data-stu-id="f16e9-141">Expand the **Payment defaults** fastTab.</span></span>
+5. <span data-ttu-id="f16e9-142">Angi eller velg en verdi i **Betalingsmåte**-feltet.</span><span class="sxs-lookup"><span data-stu-id="f16e9-142">In the **Method of payment** field, enter or select a value.</span></span>
+6. <span data-ttu-id="f16e9-143">Utvid hurtigfanen **Betalingstandarder**.</span><span class="sxs-lookup"><span data-stu-id="f16e9-143">Expand the **Payment defaults** fastTab.</span></span>
+7. <span data-ttu-id="f16e9-144">Utvid hurtigfanen **Avtalegiromandater**.</span><span class="sxs-lookup"><span data-stu-id="f16e9-144">Expand the **Direct debit mandates** fastTab.</span></span>
+8. <span data-ttu-id="f16e9-145">Klikk **Legg til**.</span><span class="sxs-lookup"><span data-stu-id="f16e9-145">Click **Add**.</span></span>
+9. <span data-ttu-id="f16e9-146">Angi eller velg en verdi i **Bankkonto**-feltet.</span><span class="sxs-lookup"><span data-stu-id="f16e9-146">In the **Bank account** field, enter or select a value.</span></span>
+10. <span data-ttu-id="f16e9-147">Angi eller velg en verdi i **Kreditors bankkonto**-feltet.</span><span class="sxs-lookup"><span data-stu-id="f16e9-147">In the **Creditor bank account** field, enter or select a value.</span></span>
+11. <span data-ttu-id="f16e9-148">Angi antall betalinger som du forventer å behandle for dette mandatet, i feltet **Betalingsfrekvens**.</span><span class="sxs-lookup"><span data-stu-id="f16e9-148">In the **Payment frequency** field, enter the number of payments that you expect to process for this mandate.</span></span>
+12. <span data-ttu-id="f16e9-149">Klikk **OK**.</span><span class="sxs-lookup"><span data-stu-id="f16e9-149">Click **OK**.</span></span>
+13. <span data-ttu-id="f16e9-150">Klikk **Skriv ut**.</span><span class="sxs-lookup"><span data-stu-id="f16e9-150">Click **Print**.</span></span>
+14. <span data-ttu-id="f16e9-151">Klikk **Mandatrapport**.</span><span class="sxs-lookup"><span data-stu-id="f16e9-151">Click **Mandate report**.</span></span>
+15. <span data-ttu-id="f16e9-152">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="f16e9-152">Close the page.</span></span>
+16. <span data-ttu-id="f16e9-153">Klikk **Rediger**.</span><span class="sxs-lookup"><span data-stu-id="f16e9-153">Click **Edit**.</span></span>
+17. <span data-ttu-id="f16e9-154">Angi en dato i **Signaturdato**-feltet.</span><span class="sxs-lookup"><span data-stu-id="f16e9-154">In the **Signature date** field, enter a date.</span></span>
+18. <span data-ttu-id="f16e9-155">Klikk **Ja**.</span><span class="sxs-lookup"><span data-stu-id="f16e9-155">Click **Yes**.</span></span>
+19. <span data-ttu-id="f16e9-156">Angi stedet mandatet ble signert.</span><span class="sxs-lookup"><span data-stu-id="f16e9-156">Enter the location where the mandate was signed.</span></span>
+20. <span data-ttu-id="f16e9-157">Klikk **OK**.</span><span class="sxs-lookup"><span data-stu-id="f16e9-157">Click **OK**.</span></span>
+21. <span data-ttu-id="f16e9-158">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="f16e9-158">Close the page.</span></span>
 
-## <a name="create-a-free-text-invoice-with-mandate"></a><span data-ttu-id="eb162-159">Opprette en fritekstfaktura med mandat</span><span class="sxs-lookup"><span data-stu-id="eb162-159">Create a free text invoice with mandate</span></span>
-1. <span data-ttu-id="eb162-160">I **navigasjonsruten** går du til **Moduler > Kunder > Fakturaer > Alle fritekstfakturaer**.</span><span class="sxs-lookup"><span data-stu-id="eb162-160">In the **Navigation pane**, go to **Modules > Accounts receivable > Invoices > All free text invoices**.</span></span>
-2. <span data-ttu-id="eb162-161">Klikk på **Ny**.</span><span class="sxs-lookup"><span data-stu-id="eb162-161">Click **New**.</span></span>
-3. <span data-ttu-id="eb162-162">Velg kunden du har lagt til mandatet til.</span><span class="sxs-lookup"><span data-stu-id="eb162-162">Select the customer that you added the mandate to.</span></span>
-4. <span data-ttu-id="eb162-163">Angi eller velg en verdi i feltet **ID for avtalegiromandat**.</span><span class="sxs-lookup"><span data-stu-id="eb162-163">In the **Direct debit mandate ID** field, enter or select a value.</span></span>
+## <a name="create-a-free-text-invoice-with-mandate"></a><span data-ttu-id="f16e9-159">Opprette en fritekstfaktura med mandat</span><span class="sxs-lookup"><span data-stu-id="f16e9-159">Create a free text invoice with mandate</span></span>
+1. <span data-ttu-id="f16e9-160">I **navigasjonsruten** går du til **Moduler > Kunder > Fakturaer > Alle fritekstfakturaer**.</span><span class="sxs-lookup"><span data-stu-id="f16e9-160">In the **Navigation pane**, go to **Modules > Accounts receivable > Invoices > All free text invoices**.</span></span>
+2. <span data-ttu-id="f16e9-161">Klikk på **Ny**.</span><span class="sxs-lookup"><span data-stu-id="f16e9-161">Click **New**.</span></span>
+3. <span data-ttu-id="f16e9-162">Velg kunden du har lagt til mandatet til.</span><span class="sxs-lookup"><span data-stu-id="f16e9-162">Select the customer that you added the mandate to.</span></span>
+4. <span data-ttu-id="f16e9-163">Angi eller velg en verdi i feltet **ID for avtalegiromandat**.</span><span class="sxs-lookup"><span data-stu-id="f16e9-163">In the **Direct debit mandate ID** field, enter or select a value.</span></span>
 
