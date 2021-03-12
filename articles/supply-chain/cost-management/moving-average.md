@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: InventModelGroup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 65531
 ms.assetid: dfd10099-8f7f-44b1-917e-df37c2fe8773
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fb0472a0d2ac9b552cd16e4d6bf516a876ea4a0e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0957fee111ec1fd5bb66951126869cf46d88b36e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434249"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967489"
 ---
 # <a name="moving-average"></a>Glidende gjennomsnitt
 
@@ -45,7 +44,7 @@ Følgende er forutsetninger når du bruker glidende gjennomsnittskostnad som ett
     - Det er en forskjell i kostnaden mellom et kjøpsmottak og innkjøpsfakturaen og på grunn av at der en forskjell mellom det opprinnelige lagerantallet og den gjeldende beholdningsantallet.
     - Transaksjonene bringer lageret fra negativ til null, og det er en differanse mellom transaksjonskostnaden og den gjeldende glidende gjennomsnittskosten.
 
-1. På siden **Postering** tilordner du kontoer til kontoene **Revaluering av kostnad for glidende gjennomsnitt** i kategorien **Lager**. Du bruker kontoen **Revaluering av kostnad for glidende gjennomsnitt** når du vil justere den glidende gjennomsnittskostnaden til en ny enhetspris.
+1. På siden **Postering** tilordner du kontoer til kontoene **Revaluering av kostnad for glidende gjennomsnitt** i fanen **Lager**. Du bruker kontoen **Revaluering av kostnad for glidende gjennomsnitt** når du vil justere den glidende gjennomsnittskostnaden til en ny enhetspris.
 
 1. På siden **Frigitte produkter** kan du tilordne varemodellgruppen for glidende gjennomsnitt til produktet.
 
@@ -93,7 +92,7 @@ Hvis du vil justere den glidende gjennomsnittskostnaden for et produkt, er det t
 
 I dette eksemplet justeres den glidende gjennomsnittskostnaden til et produkt.
 
-1. Velg produktet som du vil justere den glidende gjennomsnittskostnaden for. 
+1. Velg produktet du vil justere den glidende gjennomsnittskostnaden for. 
 
  > [!NOTE]
  > Siden **Revaluering for glidende gjennomsnitt** undersøker lageret som er tilgjengelig for et produkt. Det valgte produktet har et postert antall på 1, en postert verdi på 12,00, en postert enhetskostnad på 12,00 og en enhetskostnad på 12,00.
@@ -141,7 +140,7 @@ Hvis den nye lagerbeholdningen er positiv etter transaksjonen, deles transaksjon
 
 ## <a name="inventory-value-report"></a>Rapport for lagerverdi
 
-I dette eksemplet med glidende gjennomsnitt skrives lagerverdirapporten ut for å støtte gjeldende glidende gjennomsnittsberegning for et produkt. Rapporten Lagerverdi kan skrive ut transaksjonene i kronologisk rekkefølge, sammen med kostnaden for å støtte den glidende gjennomsnittskostnadsberegningen av et produkt. Rapporten viser den glidende gjennomsnittskostnaden for produktet. I dialogboksen **Lagerverdirapporter** lar et datointervall deg velge **Transaksjonstidspunkt** eller **Posteringsdato** som du kan sortere rapporten etter. **Posteringsdato**-alternativet er slik rapporten vanligvis skrives ut. **Transaksjonstidspunkt**-alternativet er den faktiske datoen da transaksjonen rapporteres og den glidende gjennomsnittskostnaden for produktet oppdateres. Du kan skrive ut rapporten Lagerverdi ved hjelp av alternativet **Sortering etter transaksjonstidspunkt** hvis du vil se beregningen av glidende gjennomsnittskostnad over tid. Tabellen nedenfor viser transaksjonene for produktet som rapporten skrives ut for, når alternativet **Sortering etter transaksjonstidspunkt** brukes.
+I dette eksemplet med glidende gjennomsnitt skrives lagerverdirapporten ut for å støtte gjeldende glidende gjennomsnittsberegning for et produkt. Rapporten Lagerverdi kan skrive ut transaksjonene i kronologisk rekkefølge, sammen med kostnaden for å støtte den glidende gjennomsnittskostnadsberegningen av et produkt. Rapporten viser den glidende gjennomsnittskostnaden for produktet. I dialogboksen **Lagerverdirapporter** er det et datointervall som lar deg velge **Transaksjonstidspunkt** eller **Posteringsdato** som du kan sortere rapporten etter. **Posteringsdato**-alternativet er slik rapporten vanligvis skrives ut. **Transaksjonstidspunkt**-alternativet er den faktiske datoen da transaksjonen rapporteres og den glidende gjennomsnittskostnaden for produktet oppdateres. Du kan skrive ut rapporten Lagerverdi ved hjelp av alternativet **Sortering etter transaksjonstidspunkt** hvis du vil se beregningen av glidende gjennomsnittskostnad over tid. Tabellen nedenfor viser transaksjonene for produktet som rapporten skrives ut for, når alternativet **Sortering etter transaksjonstidspunkt** brukes.
 
 | Transaksjonstidspunkt | Dato         | transaksjonstype           | Antall | Beløp | Gjennomsnittlig enhetskostnad |
 |------------------|--------------|----------------------------|----------|--------|-------------------|
@@ -155,6 +154,3 @@ I dette eksemplet med glidende gjennomsnitt skrives lagerverdirapporten ut for �
 
 > [!NOTE]
 > Du kan ikke avstemme økonomi med lager ved hjelp av **Sortering etter transaksjonstidspunkt**. Rapporten må skrives ut ved hjelp av **Posteringsdato**-alternativet.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

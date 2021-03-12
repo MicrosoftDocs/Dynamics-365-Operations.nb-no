@@ -3,14 +3,13 @@ title: Klargjøre et evalueringsmiljø for Dynamics 365 Commerce
 description: Dette emnet forklarer hvordan du klargjør et Microsoft Dynamics 365 Commerce-evalueringsmiljø.
 author: psimolin
 manager: annbe
-ms.date: 11/05/2020
+ms.date: 12/17/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,12 +17,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b54216a565c264dfcfe821581fee9df7b5e22323
-ms.sourcegitcommit: 715508547f9a71a89a138190e8540686556c753d
+ms.openlocfilehash: 8cda79a6be1aca7ad3826b9409e110524e6560e3
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "4414799"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969907"
 ---
 # <a name="provision-a-dynamics-365-commerce-evaluation-environment"></a>Klargjøre et evalueringsmiljø for Dynamics 365 Commerce
 
@@ -117,7 +116,7 @@ Gjør følgende for å distribuere miljøet.
 
 ### <a name="initialize-the-commerce-scale-unit-cloud"></a>Initialisere Commerce Scale Unit (sky)
 
-Hvis du vil initialisere en CSU-adresse, følger du disse trinnene.
+For å initialisere CSU-en, følger du disse trinnene.
 
 1. Velg miljøet ditt fra listen i visningen **Skybaserte miljøer**.
 1. Klikk **Detaljerte opplysninger** i miljøvisningen til høyre. Detaljerte opplysninger for miljø vises.
@@ -130,6 +129,22 @@ Hvis du vil initialisere en CSU-adresse, følger du disse trinnene.
 1. Før du fortsetter må du kontrollere at miljøstatusen til CSU er **Vellykket**. Initialiseringen tar omtrent to til fem timer.
 
 Hvis du ikke finner **Behandle**-koblingen i miljødetaljvisningen, kontakter du Microsoft-kontakten for å få hjelp.
+
+Under distribusjonsprosessen kan du få følgende feilmelding:
+
+> Evalueringsmiljøer (demo/test) må registrere programmet for skaleringsenhetstilkobling \<application ID\> på hovedkontoret.
+
+Hvis CSU-initialiseringen mislykkes og du får denne feilmeldingen, noterer du deg program-IDen, som er en globalt unik ID (ASSE), og følger deretter trinnene i den neste delen for å registrere CSU-distribusjonsprogrammet i Commerce Headquarters.
+
+### <a name="register-the-csu-deployment-application-in-commerce-headquarters-if-required"></a>Registrere CSU-distribusjonsprogrammet i Commerce Headquarters (om nødvendig)
+
+For å registrere CSU-distribusjonsprogrammet i Commerce Headquarters, følger du disse trinnene.
+
+1. I Commerce headquarters kan du gå til **Systemadministrasjon \> Oppsett \> Azure Active Directory-programmer**.
+1. Angi **Klient-ID**-kolonnen, angi program-ID fra CSU-initialiseringsfeilmeldingen du mottok.
+1. I **Navn**-kolonnen angir du en beskrivende tekst (for eksempel **CSU-eval**).
+1. I kolonnen **Bruker-ID** angir du **RetailServiceAccount**.
+1. Forsøk på CSU-initialisering og distribusjon fra LCS.
 
 ### <a name="initialize-e-commerce"></a>Initialisere e-handel
 
@@ -176,6 +191,3 @@ Hvis du vil fortsette prosessen for å klargjøre og konfigurere Commerce-evalue
 [Microsoft Azure-portal](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce-webområde](https://aka.ms/Dynamics365CommerceWebsite)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

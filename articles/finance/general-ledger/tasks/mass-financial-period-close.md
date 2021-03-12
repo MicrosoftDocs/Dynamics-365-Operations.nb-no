@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: LedgerCalendar, LedgerPeriodModuleAccessControlUpdate, SysLookupPicklist, LedgerFiscalCalendarPeriodStatus
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a149b35c6964166207effc799a02cd4c59bbb843
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 598c28c2fb3dd6a13f96df81189b46c4e228da7a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446323"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968735"
 ---
 # <a name="mass-financial-period-close"></a>Lukke masseregnskapsperiode
 
@@ -42,6 +41,3 @@ Dette emnet viser hvordan du setter en periode på vent eller permanent lukker e
 11. Velg **Oppdater periodestatus** og sett statusen til **På vent**, **Åpen** eller **Lukket permanent**. **Åpen** angir perioden det kan posteres til, gitt at brukeren har tilgang. **På vent** betyr at perioden ikke kan posteres til, men perioden kan åpnes på nytt. **Lukket permanent** betyr at perioden er lukket og aldri kan åpnes. Justeringer kan ikke posteres. Vi anbefaler ikke å sette en periode til **Lukket permanent** før alle justeringer og revisjoner er fullført.  
 12. Velg **Oppdater**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: b5887efc32c71759e4cb3c31e1b18c4c8b64f173
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d4ecc29e47d68129df424c4212505413cf6c8889
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446500"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968985"
 ---
 # <a name="electronic-messaging"></a>Elektronisk meldingssystem
 
@@ -536,6 +535,3 @@ Du kan nå slette eller oppdatere meldingsstatusen. Hvis du vil oppdatere meldin
 ![Oppdatere meldingsstatusen](media/update-status.png)
 
 Meldingsstatusen oppdateres til **Klargjort**, og du kan nå generere rapporten ved å velge **Generer rapport**. Rapporten genereres, og meldingsstatusen og -loggen oppdateres. Hvis du vil vise den genererte rapporten, velger du **Vedlegg**-knappen (bindersikonet) i øvre høyre hjørne på siden.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

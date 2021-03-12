@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.assetid: ''
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-09-08
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: ec49a621e24b6373532497b499e8b9d45c9bed14
-ms.sourcegitcommit: 30c541426cf2037b768e3556e1b170a64991f64a
+ms.openlocfilehash: baa2f1f55dfb9bb93b4f27c45db563e39850dd37
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "4446567"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969732"
 ---
 # <a name="view-vendor-invoice-automation-results"></a>Vise resultater for automatisering av leverandørfaktura
 
@@ -38,6 +37,3 @@ Hvis den importerte fakturaen er underlagt prosessen for sending til arbeidsflyt
 - **Stoppet midlertidig** – De automatiserte prosessene som er definert på siden **Leverandørparametere**, er kjørt, men minst ett trinn i prosessen mislyktes. Statusen **Stoppet midlertidig** brukes også hvis feltet **Inkluder i automatisert behandling** er satt til **Nei**. Du kan se feilene ved å velge **Vis de siste resultatene**.
 - **I arbeidsflyt** – Den importerte fakturaen er sendt til arbeidsflytsystemet, enten av den automatiserte prosessen for sending til arbeidsflyt eller manuelt.
 - **Arbeidsflyt fullført** – Arbeidsflytprosessen er fullført for den importerte fakturaen.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

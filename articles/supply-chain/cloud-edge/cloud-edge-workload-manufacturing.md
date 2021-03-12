@@ -1,6 +1,6 @@
 ---
 title: Sky- og kantskalaenheter for arbeidsbelastninger for produksjonskjøring
-description: Dette emnet beskriver hvordan arbeidsbelastninger for produksjonskjøringer fungerer med sky- og kantskaleringsenheter.
+description: Dette emnet beskriver hvordan arbeidsbelastninger for produksjonskjøringer fungerer med sky- og kantskalaenheter.
 author: cabeln
 manager: ''
 ms.date: 10/06/2020
@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 799c479c750fcaf296f3e2787fa38416af51963c
-ms.sourcegitcommit: 8eefb4e14ae0ea27769ab2cecca747755560efa3
+ms.openlocfilehash: 08c46655d3966ad1433935318c5e60667dd10bb6
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4516850"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967774"
 ---
 # <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Sky- og kantskalaenheter for arbeidsbelastninger for produksjonskjøring
 
@@ -32,16 +31,16 @@ ms.locfileid: "4516850"
 [!include [preview banner](../includes/preview-banner.md)]
 
 > [!WARNING]
-> Noen forretningsfunksjoner støttes ikke fullstendig i den offentlige forhåndsversjonen når arbeidsbelastningsskaleringsenheter brukes.
+> Noen forretningsfunksjoner støttes ikke fullstendig i den offentlige forhåndsversjonen når arbeidsbelastningsskalaenheter brukes.
 
-Når det gjelder produksjonskjøring, gir sky- og kantskaleringsenheter følgende funksjoner, selv når kantenhetene ikke er koblet til senteret:
+Når det gjelder produksjonskjøring, gir sky- og kantskalaenheter følgende funksjoner, selv når kantenhetene ikke er koblet til senteret:
 
 - Maskinoperatører og produksjonsledere har tilgang til driftsproduksjonsplanen.
 - Maskinoperatører kan holde planen oppdatert ved å kjøre separat og behandle produksjonsjobber.
 - Produksjonslederen kan justere driftsplanen.
 - Arbeidere kan få tilgang til tid og fremmøte for innstempling og utstempling på kanten for å sikre riktig beregning av arbeiderlønn.
 
-Dette emnet beskriver hvordan arbeidsbelastninger for produksjonskjøringer fungerer med sky- og kantskaleringsenheter.
+Dette emnet beskriver hvordan arbeidsbelastninger for produksjonskjøringer fungerer med sky- og kantskalaenheter.
 
 ## <a name="the-manufacturing-lifecycle"></a>Produksjonslivssyklusen
 
@@ -55,17 +54,17 @@ Når en produksjonsjobb er merket som fullført, flyttes den fra _Kjøre_-fasen 
 
 ## <a name="splitting-the-execute-phase-into-a-separate-workload"></a>Dele Kjøre-fasen i en separat arbeidsbelastning
 
-Som den følgende illustrasjonen viser, blir _Kjøre_-fasen delt som en egen arbeidsbelastning når du bruker skaleringsenheter.
+Som den følgende illustrasjonen viser, blir _Kjøre_-fasen delt som en egen arbeidsbelastning når du bruker skalaenheter.
 
-[![Produksjonskjøringsfaser når skaleringsenheter brukes](media/mes-phases-workloads.png "Produksjonskjøringsfaser når skaleringsenheter brukes")](media/mes-phases-workloads-large.png)
+[![Produksjonskjøringsfaser når skalaenheter brukes](media/mes-phases-workloads.png "Produksjonskjøringsfaser når skalaenheter brukes")](media/mes-phases-workloads-large.png)
 
-Modellen går nå fra en enkelt forekomstinstallasjon til en modell som er basert på senteret og skaleringsenhetene. _Planlegge_- og _Fullføre_-fasene kjører som Back-Office-operasjoner på senteret, og arbeidsbelastningen for produksjonskjøring kjører på skaleringsenhetene. Data overføres asynkront mellom senteret og skaleringsenhetene.
+Modellen går nå fra en enkelt forekomstinstallasjon til en modell som er basert på senteret og skalaenhetene. _Planlegge_- og _Fullføre_-fasene kjører som Back-Office-operasjoner på senteret, og arbeidsbelastningen for produksjonskjøring kjører på skalaenhetene. Data overføres asynkront mellom senteret og skalaenhetene.
 
-Når en produksjonsordre frigis på senteret, overføres alle data som kreves for å behandle produksjonsjobber, til skaleringsenheten. Disse dataene omfatter produksjonsordrer, produksjonsruter, stykklister og produkter. Data som ikke er knyttet til en produksjonsordre (for eksempel indirekte aktiviteter, fraværskoder og produksjonsparametere), overføres også fra senteret til skaleringsenheten. Som en regel kan data som kommer fra senteret, og som overføres til skaleringsenheten, bare opprettes eller oppdateres på senteret. En ny fraværskode eller indirekte aktivitet kan for eksempel ikke opprettes på en skaleringsenhet – de kan bare brukes til registrering. Registreringene som gjøres på skaleringsenheten under kjøring, blir deretter overført til senteret, der tids- og fremmøtegodkjenning, lager og økonomiske oppdateringer behandles.
+Når en produksjonsordre frigis på senteret, overføres alle data som kreves for å behandle produksjonsjobber, til skalaenheten. Disse dataene omfatter produksjonsordrer, produksjonsruter, stykklister og produkter. Data som ikke er knyttet til en produksjonsordre (for eksempel indirekte aktiviteter, fraværskoder og produksjonsparametere), overføres også fra senteret til skalaenheten. Som en regel kan data som kommer fra senteret, og som overføres til skalaenheten, bare opprettes eller oppdateres på senteret. En ny fraværskode eller indirekte aktivitet kan for eksempel ikke opprettes på en skalaenhet – de kan bare brukes til registrering. Registreringene som gjøres på skalaenheten under kjøring, blir deretter overført til senteret, der tids- og fremmøtegodkjenning, lager og økonomiske oppdateringer behandles.
 
 ## <a name="manufacturing-execution-tasks-that-can-be-run-on-workloads"></a>Produksjonskjøringsoppgaver som kan kjøres på arbeidsbelastninger
 
-Følgende produksjonskjøringsoppgaver kan for øyeblikket kjøres på arbeidsbelastninger når skaleringsenheter brukes:
+Følgende produksjonskjøringsoppgaver kan for øyeblikket kjøres på arbeidsbelastninger når skalaenheter brukes:
 
 - Innstempling, pålogging, utstempling og fravær
 - Start jobb
@@ -77,7 +76,7 @@ Følgende produksjonskjøringsoppgaver kan for øyeblikket kjøres på arbeidsbe
 
 ## <a name="working-with-manufacturing-execution-workloads-on-the-hub"></a>Arbeide med arbeidsbelastninger for produksjonskjøring på senteret
 
-Vanligvis kjøres prosessene som kreves for å kjøre arbeidsbelastninger for produksjonskjøring automatisk for å holde senteret og alle skaleringsenhetene synkronisert, etter behov. Hvis du har problemer, kan du imidlertid manuelt utløse behandlingen av råregistreringer som mottas fra arbeidsbelastninger, eller kontrollere registreringsbehandlingsloggen.
+Vanligvis kjøres prosessene som kreves for å kjøre arbeidsbelastninger for produksjonskjøring automatisk for å holde senteret og alle skalaenhetene synkronisert, etter behov. Hvis du har problemer, kan du imidlertid manuelt utløse behandlingen av råregistreringer som mottas fra arbeidsbelastninger, eller kontrollere registreringsbehandlingsloggen.
 
 ### <a name="manually-process-raw-registrations"></a>Behandle råregistreringer manuelt
 
@@ -96,20 +95,17 @@ Du kan arbeide med en hvilken som helst registrering i listen ved å velge den o
 - **Behandle** – Behandle den valgte registreringen manuelt. Denne handlingen kan være nyttig hvis _Behandle råregistreringer_-jobben ikke er kjørt, eller hvis den mislyktes.
 - **Avbryt** – Avbryt den valgte registreringen.
 
-## <a name="working-with-manufacturing-execution-workloads-on-a-scale-unit"></a>Arbeide med arbeidsbelastninger for produksjonskjøring på en skaleringsenhet
+## <a name="working-with-manufacturing-execution-workloads-on-a-scale-unit"></a>Arbeide med arbeidsbelastninger for produksjonskjøring på en skalaenhet
 
-Vanligvis kjøres prosessene som kreves for å kjøre arbeidsbelastninger for produksjonskjøring automatisk for å holde senteret og alle skaleringsenhetene synkronisert, etter behov. Hvis du har problemer, kan du imidlertid kontrollere historikken til ordrer som er behandlet på en skaleringsenhet, eller kjøre jobben _Prosessoren for produksjonssenter til skaleringsenhetsmelding_.
+Vanligvis kjøres prosessene som kreves for å kjøre arbeidsbelastninger for produksjonskjøring automatisk for å holde senteret og alle skalaenhetene synkronisert, etter behov. Hvis du har problemer, kan du imidlertid kontrollere historikken til ordrer som er behandlet på en skalaenhet, eller kjøre jobben _Prosessoren for produksjonssenter til skalaenhetsmelding_.
 
-### <a name="view-the-history-of-manufacturing-jobs-that-have-been-processed-on-a-scale-unit"></a>Vis historikken for produksjonsjobber som er behandlet på en skaleringsenhet
+### <a name="view-the-history-of-manufacturing-jobs-that-have-been-processed-on-a-scale-unit"></a>Vis historikken for produksjonsjobber som er behandlet på en skalaenhet
 
-Hvis du vil se gjennom historikken for produksjonsjobber som er behandlet på en skaleringsenhet, kan du logge på skaleringsenhetsmaskinen og gå til **Produksjonskontroll \> Periodiske oppgaver \> Back-office-arbeidsbelasatningsbehandling \> Behandlingslogg over produksjonsjobber**. Siden **Behandlingslogg over produksjonsjobber** viser behandlingsloggen for produksjonsordrene på skaleringsenheten. Du kan arbeide med en hvilken som helst produksjonsordre i listen ved å velge den og deretter velge en av følgende knapper i handlingsruten:
+Hvis du vil se gjennom historikken for produksjonsjobber som er behandlet på en skalaenhet, kan du logge på skalaenhetsmaskinen og gå til **Produksjonskontroll \> Periodiske oppgaver \> Back-office-arbeidsbelasatningsbehandling \> Behandlingslogg over produksjonsjobber**. Siden **Behandlingslogg over produksjonsjobber** viser behandlingsloggen for produksjonsordrene på skalaenheten. Du kan arbeide med en hvilken som helst produksjonsordre i listen ved å velge den og deretter velge en av følgende knapper i handlingsruten:
 
 - **Behandle** – Behandle den valgte produksjonsordren manuelt.
 - **Avbryt** – Avbryt den valgte produksjonsordren.
 
-### <a name="manufacturing-hub-to-scale-unit-message-processor-job"></a>Jobben Behandle produksjonssenter til skaleringsenhet
+### <a name="manufacturing-hub-to-scale-unit-message-processor-job"></a>Jobben Behandle produksjonssenter til skalaenhet
 
-Jobben _Behandle produksjonssenter til skaleringsenhet_ behandler data fra senteret til skaleringsenheten. Denne jobben startes automatisk når arbeidsbelastningen for produksjonskjøring distribueres. Du kan imidlertid kjøre den manuelt når som helst ved å gå til **Produksjonskontroll \> Periodiske oppgaver \> Back-office-arbeidsbelastningsbehandling \> Behandle produksjonssenter til skaleringsenhet**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+Jobben _Behandle produksjonssenter til skalaenhet_ behandler data fra senteret til skalaenheten. Denne jobben startes automatisk når arbeidsbelastningen for produksjonskjøring distribueres. Du kan imidlertid kjøre den manuelt når som helst ved å gå til **Produksjonskontroll \> Periodiske oppgaver \> Back-office-arbeidsbelastningsbehandling \> Behandle produksjonssenter til skalaenhet**.

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 13851
 ms.assetid: 0fa2f71a-596c-414c-a6e6-8f7405a0bf81
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c12ca59203d6cad7f5699bc930f2af27427ca41b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d2414ea97fefbec1e975498e171496e33057541c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446512"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969010"
 ---
 # <a name="straight-line-life-remaining-depreciation"></a>Gjenstående lineær levetidsavskrivning
 
@@ -38,7 +37,7 @@ Du kan velge enten **Kalender** eller **Skattemessig** i **Avskrivningsår**-fel
 
 ### <a name="calendar"></a>Kalender
 
-Hvis du velger **Kalender** i feltet ***Avskrivningsår***, antas et år fra 1. januar til og med 31. desember, selv om du har definert regnskapskalenderen annerledes. **Kalender**-alternativet oppdaterer avskrivningsgrunnlag 1. januar hvert år. Avskrivningsgrunnlaget er vanligvis netto bokført verdi minus restverdien. I eksemplet senere i dette emnet er avskrivningsgrunnlaget telleren i det første uttrykket i beregningskolonnen. Hvis du velger **Kalender** som avskrivningsår, er følgende alternativer tilgjengelige i **Periodefrekvens**-feltet:
+Hvis du velger **Kalender** i feltet **_Avskrivningsår_*, antas det at året er 1. januar til og med 31. desember, selv om du har definert regnskapskalenderen på en annen måte. Alternativet _* Kalender** oppdaterer avskrivningsgrunnlaget 1. januar hvert år. Avskrivningsgrunnlaget er vanligvis netto bokført verdi minus restverdien. I eksemplet senere i dette emnet er avskrivningsgrunnlaget telleren i det første uttrykket i beregningskolonnen. Hvis du velger **Kalender** som avskrivningsår, er følgende alternativer tilgjengelige i **Periodefrekvens**-feltet:
 
 -   **Årlig** posterer et beløp 31. desember.
 -   **Månedlig** posterer et månedlig beløp på slutten av hver kalendermåned.
@@ -80,6 +79,3 @@ Avskrivningsbeløpet er det samme hvert år: (anskaffelseskostnad-restverdi) ÷ 
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

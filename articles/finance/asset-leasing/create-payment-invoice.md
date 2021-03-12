@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 32618814d00cb1e1f1082169a64b187cce1e76b4
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 303fb0e70530fdc29cb129736b01c0e0e8d02075
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4446583"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969584"
 ---
 # <a name="create-payment-invoices"></a>Opprette betalingsfakturaer
 
@@ -49,6 +48,3 @@ Du kan opprette månedlige fakturaer for individuelle leieavtaler, eller du kan 
 6. Etter at transaksjonen er postert, kan du vise transaksjonsinformasjonen og den bokførte verdien til leieforpliktelse ved å velge **Gjeldstransaksjoner** i leietablået.
 
     Det merkes av for **Journal postert** i betalingsplanen, og linjen viser fakturajournalnummeret. Etter at en betalingsjournal og en oppføring for denne journalen er opprettet, må du tilbakeføre oppføringen før den kan opprettes på nytt.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

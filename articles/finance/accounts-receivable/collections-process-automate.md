@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: CustomerCollectionManagerWorkspace
 audience: Application User, IT Pro
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-26
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: db59bad2ed3caf38f22bd4d6059e57747d1d983f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a63058904df72a7fda5a67ed1e6a846eed393ce0
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446266"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969707"
 ---
 # <a name="collections-process-automation"></a>Automatisering av innkrevingsprosess
 
@@ -118,6 +117,3 @@ Tabellene nedenfor viser en liste over sidene og feltene som de angitte hurtigka
 |     Parametere for kunde > Automatisering av innkrevingsprosess     |     Poster purringer automatisk           |     Handlingstyper for purringer vil postere purringen i løpet av automatiseringen.                                      |
 |     Parametere for kunde > Automatisering av innkrevingsprosess     |     Opprette aktiviteter for automatisering                |     Opprett og lukk aktiviteter for handlingstyper uten aktivitet hvis du vil vise alle automatiske trinn som er utført på en konto.        |
 |     Parametere for kunde > Automatisering av innkrevingsprosess     |     Dager for å beholde automatisering av innkrevingsprosesser     |     Definerer hvor mange dager det er lagret en innkrevingshistorikk.                                                       |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: CAMCostControlWorkspaceConfigurationPerUser
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ca05f6174541a6e97ec94db209a99424a87550eb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9861d6bc83d3f1d62091154a36436627eeccad4a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446544"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969359"
 ---
 # <a name="configure-cost-control-workspace-parameters"></a>Konfigurere parametere for arbeidsområde for kostnadskontroll
 
@@ -59,6 +58,3 @@ Bruk denne fremgangsmåten til å konfigurere kostnadskontrollarbeidsområdet sl
 27. Angi eller velg en verdi i feltet Dimensjonshierarkinode for kostnadsobjekt.
     * Når du har valgt et dimensjonshierarki for kostnadsobjektet, utvid dimensjonshierarkiet for kostnadselementer for å vise de ønskede kostnadsverdier. Du kan for eksempel utvide hierarkiet til indirekte produksjonskostnader hvis du vil vise verdien.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

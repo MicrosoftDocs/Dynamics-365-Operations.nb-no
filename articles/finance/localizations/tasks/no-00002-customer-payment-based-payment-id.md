@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: BankCustPaymIdTable, LogisticsCountryRegionPaymentIdType_NO, CustTable, CustPaymMode, CustGroup,  CustInvoiceJournal
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Norway
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ef0b083dfa0be8bfa95cc42557a744af0456f7a2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3a2bc3be4212749df7a28637e4647d9504c8e753
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408297"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968304"
 ---
 # <a name="no-00002-customer-payment-based-on-payment-id"></a>NO-00002 Kundebetaling basert på betalings-ID
 
@@ -89,6 +88,3 @@ Denne oppgaven ble opprettet med demodatafirmaet DEMF med land/område for prim�
 2. Klikk Vis filtre.
 3. Bruk følgende filtre: Angi en filterverdi for "" i feltet "Betalings-ID" ved hjelp av filteroperatoren "er ikke".
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

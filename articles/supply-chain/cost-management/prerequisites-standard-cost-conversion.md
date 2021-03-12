@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: InventStdCostConv
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 50891
 ms.assetid: 73af66cf-c924-45be-837a-a648dbd05a31
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: da5605e3542cfb8803b6a9f3645bcb2cc613c0bd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 24840357b0eb8cb5f42ff2c1a65fdad56041783d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434580"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967389"
 ---
 # <a name="prerequisites-for-a-standard-cost-conversion"></a>Forutsetninger for standard kostnadskonvertering
 
@@ -41,7 +40,7 @@ Før du kjører en standard kostnadskonvertering, gjør du følgende:
 
 3.  Tilordne et **standard ordreantall** til en produsert vare når den har konstantkostnader. Standard ordreantall for en produsert vare fungerer som en regnskapspartistørrelse for amortisering eller proporsjonal fordeling av konstante kostnader. Disse kan omfatte oppstillingstid i ruteoperasjoner eller en konstant komponentmengde i en stykkliste.
 4.  Tilordne **økonomikontoer** som er knyttet til standard kostpris, særlig revalueringsavvik. Bruk **Postering**-siden (**Lagerstyring** &gt; **Oppsett**) til å tilordne økonomikontoer som er relatert til standard kostpris. For standard kostnadskonverteringsprosessen må du som et minimum, tilordne kontoen for revalueringsavvik for alle varer og kostgrupper. Bruk **Kontoplan**-siden for å definere økonomikontoene som trengs for standard kostpris. Bruk siden **Transaksjonskombinasjoner** til å aktivere kostrelasjoner (for tabeller, grupper og alle) før du definerer vareposteringsreglene.
-5.  Definer lagerparameterne som er relatert til standard kostpris. Bruk kategorien **Nummerserier** på siden **Parametere for beholdnings- og lagerstyring** for å tilordne en nummerserie til revalueringsbilag. Det genereres et revalueringsbilag når standardkostnadskonverteringen oppretter en endring av varens lagerverdi. Bruk siden **Parametere for beholdnings- og lagerstyring** for å definere kostkontrollparametere (i kategorien **Lagerregnskap**) for å definere to parametere som er relatert til standard kostpris.
+5.  Definer lagerparameterne som er relatert til standard kostpris. Bruk fanen **Nummerserier** på siden **Parametere for beholdnings- og lagerstyring** for å tilordne en nummerserie til revalueringsbilag. Det genereres et revalueringsbilag når standardkostnadskonverteringen oppretter en endring av varens lagerverdi. Bruk siden **Parametere for beholdnings- og lagerstyring** for å definere kostkontrollparametere (i fanen **Lagerregnskap**) for å definere to parametere som er relatert til standard kostpris.
     -   Bruk feltet **Oppdeling av kostnader** til å velge Nei eller Underfinans. Valget Underfinans betegnes som aktiv kostnadsoppdeling. Aktiv kostnadsoppdeling er svært viktig for beregning, opprettholding og visning av kostgruppesegmentering gjennom en produktstruktur på flere nivåer for varer med standard kostpris. Når kostnadsoppdelingen er aktiv, kan du rapportere og analysere følgende i formatet enkelt nivå, flere nivåer eller totalt:
         1.  Beholdning
         2.  Varer i arbeid (VIA)
@@ -54,6 +53,3 @@ Før du kjører en standard kostnadskonvertering, gjør du følgende:
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
