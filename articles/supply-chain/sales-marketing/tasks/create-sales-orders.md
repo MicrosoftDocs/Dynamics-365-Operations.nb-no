@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, InventDimParmFixed, InventProductDimensionLookup, SalesTotals
 audience: Application User, SalesTableDelete, SalesTableListPagePreviewPage, SalesUpdateRemain
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9aa353ad771844abc0860f06d9bc22b9f4adce92
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8bb4c7a542106161f8bc1b8db0976c24faebf907
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434212"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4974816"
 ---
 # <a name="create-sales-orders"></a>Opprette salgsordrer
 
@@ -39,7 +38,7 @@ Denne fremgangsmåten viser hvordan du oppretter en salgsordre. Du kan bruke pro
 
 ## <a name="enter-sales-order-line-details"></a>Angi detaljer for salgsordrelinje
     
-Produktene som selges av organisasjon din, kan leveres i ulike varianter differensiert etter dimensjoner, for eksempel konfigurasjon, farge, størrelse og stil. Produkter kan også defineres til å bruke lagerdimensjoner, for eksempel område, lager, og pall og sporingsdimensjon, for eksempel bunkenumre og serienumre. Når disse dimensjonene er tilordnet, må du velge verdier for disse dimensjonene på ordrelinjen. Hvis du vil forbedre effektiviteten for ordreregistrering, kan du legge til de respektive dimensjonsfeltene i rutenettet for ordren.
+Produktene som selges av organisasjon din, kan leveres i ulike varianter differensiert etter dimensjoner, for eksempel konfigurasjon, farge, størrelse og stil. Produkter kan også defineres slik at de bruker lagerdimensjoner, for eksempel område, lager, og pall og sporingsdimensjoner, for eksempel bunkenumre og serienumre. Når disse dimensjonene er tilordnet, må du velge verdier for disse dimensjonene på ordrelinjen. Hvis du vil forbedre effektiviteten for ordreregistrering, kan du legge til de respektive dimensjonsfeltene i rutenettet for ordren.
     
 1. Velg **Salgsordrelinje** i delen **Salgsordrelinjer**.
 2. Velg **Dimensjoner**.
@@ -68,6 +67,3 @@ Produktene som selges av organisasjon din, kan leveres i ulike varianter differe
     **Totaler**-siden viser detaljer om hele ordren. Dette inkluderer delsumbeløpet, som er summen av alle linjenettobeløp justert for eventuelle linjerabatter, det totale fakturabeløpet, som er en delsum som er justert for eventuell rabatt på ordrenivå, tillegg, merverdiavgift, kundens kredittgrense og mer. Fakturabeløpet er beløpet som skal vises på kundens fakturadokument.  
     
 3. Velg **OK**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

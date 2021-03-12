@@ -8,21 +8,20 @@ ms.topic: business-process
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: TMSLoadBuildWorkbench,TMSLoadBuildTemplateCreate,TMSLoadBuildStrategy
+ms.search.form: TMSLoadBuildWorkbench,TMSLoadBuildTemplateCreate,TMSLoadBuildStrategy,TMSLoadBuildTemplateApply
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: henrikan
 ms.search.validFrom: 2020-10-30
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 429a8bac5491a342ecbc8b67c59c71715a4b0889
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: d1ed91adba5c7accf9a18d7a754d33b2b35b848f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4646421"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4974236"
 ---
 # <a name="load-building-workbench"></a>Arbeidsområde for lastplanlegging
 
@@ -67,6 +66,3 @@ Nå kan du tilordne en strategi for lastplanlegging til en mal for lastplanleggi
 1. Se gjennom de foreslåtte lastene og foreslåtte lastlinjene.
 1. Velg **Opprett laster** i handlingsruten for å opprette laster som er basert på kildedokumentlinjene på hurtigfanen **Foreslåtte belastningslinjer** i handlingsruten.
 1. Lukk siden **Arbeidsområde for lastplanlegging**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

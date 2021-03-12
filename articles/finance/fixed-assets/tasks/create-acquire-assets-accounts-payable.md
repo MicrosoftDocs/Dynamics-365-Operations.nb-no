@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: AssetParameters, VendInvoiceWorkspace, VendEditInvoice, VendTableLookup, InventItemIdLookupSimple, AssetTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7cb9a37c65fb8eab4db6084b91a71c13a45ba42c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b27ccc3b4c4f5470d3a5b8ed7347e269c6793b87
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446427"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4976047"
 ---
 # <a name="create-and-acquire-assets-from-accounts-payable"></a>Opprette og anskaffe anleggsmidler som opprettes fra kunder
 
@@ -56,6 +55,3 @@ Denne oppgaveveiledningen går gjennom oppretting og anskaffelse av et anleggsmi
 17. Klikk koblingen i den valgte raden i listen.
 18. Klikk **Poster**. Anleggsmidlet opprettes og anskaffes når fakturaen posteres.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

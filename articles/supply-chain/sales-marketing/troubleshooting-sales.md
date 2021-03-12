@@ -8,10 +8,9 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: SalesTable, SalesTableListPage
+ms.search.form: SalesTable, SalesTableListPage, SalesTableListPage_SalesCancelOrder
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-9-16
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 6e51723915892f465ce09d09ee9ed622bab9451e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c9a5b7a5e8cac7f8816233dd2d7ff1a7f84ea480
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434365"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4974791"
 ---
 # <a name="troubleshoot-sales-orders"></a>Feilsøke salgsordrer
 
@@ -59,6 +58,8 @@ Du kan opprette en bestilling fra en salgsordre. Hvis du vil ha mer informasjon,
 Du kan bare kansellere salgsordrer og returordrer som har statusen *Opprettet*. Hvis du vil ha mer informasjon, se [Annullere en returordre](../service-management/cancel-return-order.md).
 
 ## <a name="when-i-try-to-cancel-a-sales-order-i-receive-a-reservations-cannot-be-removed-because-there-is-work-created-which-relies-on-the-reservations-error"></a>Når jeg prøver å annullere en salgsordre, får jeg feilen "Reservasjoner kan ikke fjernes fordi det er opprettet arbeid som er avhengig av reservasjonen".
+
+Feilkode: WAX4661
 
 Hvis arbeid er knyttet til en salgsordre, kan du ikke annullere salgsordren før arbeidet er annullert og tilbakeført. Dette kravet gjelder selv om arbeidet som er knyttet til salgsordren, er lukket.
 
@@ -110,7 +111,4 @@ Supply Chain Management støtter for øyeblikket ikke beregningen av provisjoner
 
 Buntvaren er ikke tilgjengelig for bestillingen fordi hvis du undersøker salgsordrelinjene for buntvaren, vil du se at antallet er *0* (null), og at statusen er *Avbrutt*. Denne virkemåten er standard. Salgsordren kjøper bare komponentene til buntvaren. Selve buntvaren kjøpes ikke.
 
-Hvis du må kjøpe en bunt, bør du vurdere om du må merke den som buntelement, fordi denne funksjonaliteten er utformet for scenarier med inntektsføring. Hvis du vil ha mer informasjon om buntvarer, se [Bunter](../../finance/accounts-receivable/revenue-recognition-setup.md#bundles).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+Hvis du må kjøpe en bunt, bør du vurdere om du må merke den som buntvare, fordi denne funksjonaliteten er utformet for scenarioer med inntektsføring. Hvis du vil ha mer informasjon om buntvarer, se [Bunter](../../finance/accounts-receivable/revenue-recognition-setup.md#bundles).

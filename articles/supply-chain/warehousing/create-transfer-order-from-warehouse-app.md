@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSMobileDeviceQueueEvent
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: c30b0e74053480a08f84f4d7579021084ded5799
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4be9f8bab55f28fa88cb87aef32ab599056c1831
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434191"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4973866"
 ---
 # <a name="create-transfer-orders-from-the-warehouse-app"></a>Opprette overføringsordrer fra lagerappen
 
@@ -137,10 +136,10 @@ Denne delen beskriver hvordan du kan aktivere en arbeidsmal for automatisk behan
 1. Velg **Lagre** for å aktivere feltet **Direktivkode**.
 1. På linjen **Arbeidstype** *Plasser* velger du **Direktivkode** *Rampedør*. Kontroller at denne nye arbeidsmalen får det laveste **serienummeret**.
 1. På verktøylinjen velger du **Rediger spørring** for å åpne redigeringsprogrammet for spørring.
-1. Velg **Legg til** i kategorien **Område**.
+1. Velg **Legg til** i fanen **Område**.
 1. På linjen som legges til velger du *Lager* i **Felt**.
 1. Velg *51* i feltet **Vilkår**.
-1. Velg kategorien **Sortering**.
+1. Velg fanen **Sortering**.
 1. Velg **Legg til** og sett **Felt** til *ID for nummerskilt*. Hvis du velger dette feltet, aktiveres verktøylinjeknappen **Arbeidshodeskift**.
 1. Velg **OK** etterfulgt av **Ja** for å tilbakestille grupperingen og gå tilbake til siden **Arbeidsmaler**.
 1. Velg **Arbeidshodeskift**, og Aktiver **Grupper etter dette feltet** for **ID for nummerskilt** og lukk.
@@ -185,7 +184,7 @@ Denne delen beskriver hvordan du konfigurerer en planlagt satsvis jobb for å fr
 1. Gå til **Lagerstyring \> Frigi til lager \> Automatisk frigivelse av overføringsordrer**.
 1. I dialogboksen viser du delen **Poster som skal inkluderes**.
 1. Velg **Filtrer** under delen **Poster som skal inkluderes**.
-1. På spørringssiden **WHSTransferAutoRTWQuery**, i kategorien **Område**, velger du **Legg til** for å legge til en ny linje i spørringen.
+1. På spørringssiden **WHSTransferAutoRTWQuery**, i fanen **Område**, velger du **Legg til** for å legge til en ny linje i spørringen.
 1. I den nye linjen **Tabell**-felt velger du rullegardinmenyen og deretter tabellen **Frigjør overføringslinje til lager**.
 1. I rullegardinmenyen **Felt** velger du **Utgående forsendelsespolicy**.
 1. I **Vilkår**-feltet velger du **Frigivelses- og forsendelsesbekreftelse**.
@@ -204,7 +203,7 @@ Denne delen beskriver hvordan du konfigurerer en planlagt satsvis jobb for å kj
 1. Gå til **Lagerstyring \> Periodiske oppgaver \> Behandle utgående forsendelser**.
 1. Utvid delen **Poster som skal inkluderes**.
 1. Velg **Filter**.
-1. I spørringen **WHSLoadShipConfirm** velger du kategorien **Sammenkoblinger**.
+1. I spørringen **WHSLoadShipConfirm** velger du fanen **Sammenkoblinger**.
 1. Vis tabellhierarkiet slik at **Laster** og **Lastdetaljer** vises.
 1. Velg tabellen **Lastdetaljer**.
 1. Velg knappen **Legg til tabellsammenkobling**.
@@ -334,6 +333,3 @@ Overføringsordrene opprettes uten bruk av funksjonene for **leveringsdatokontro
 #### <a name="can-i-use-a-license-plate-having-physical-negative-inventory-on-hand"></a>Kan jeg bruke et nummerskilt med fysisk negativ lagerbeholdning?
 
 Funksjonen støtter bare for positive fysiske lagerbeholdninger. Kontroller at du har positive fysiske lagerbeholdninger på lager og lagerstatusnivå før du tilordner nummerskilt til en overføringsordre.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: LeanProductionFlow
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6e818d3d75be8b24531afc6280ae0c37eca4de23
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0664dd40464000abef0041ef32863a3c9494d9b8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434114"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4975141"
 ---
 # <a name="deactivate-a-production-flow-version"></a>Deaktivere en produksjonsflytversjon
 
@@ -40,12 +39,9 @@ Til denne prosedyren trenger du en produksjonsflyt med en versjon som kan deakti
 ## <a name="deactivate-a-production-flow-version"></a>Deaktivere en produksjonsflytversjon
 1. Gå til Produksjonskontroll > Oppsett > Lean-produksjonsflyt > Produksjonsflyter.
 2. Finn og velg ønsket post i listen.
-3. Klikk koblingen i den valgte raden i listen.
+3. Klikk på koblingen i den valgte raden i listen.
 4. Finn og velg ønsket post i listen.
-5. Klikk Deaktiver.
+5. Klikk på Deaktiver.
     * Ikke fortsett hvis du ikke er 100 % sikker på at denne produksjonsflytversjonen er foreldet. Når du klikker OK, utløper alle aktive Kanban-regler og alle produksjons- og etterfyllingsaktiviteter for denne produksjonsflytversjonen opphører umiddelbart.  
-6. Klikk OK.
+6. Klikk på OK.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

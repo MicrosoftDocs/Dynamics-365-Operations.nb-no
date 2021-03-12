@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SMATemplateBOMTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b2e06283f3b95c5ff6b4376bba63cf5a42d5feeb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8b34cc2e9921df6e3ef619e2b2adaf8d2069fbac
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434529"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4974566"
 ---
 # <a name="create-a-template-bom"></a>Opprette en malstykkliste   
 
@@ -34,7 +33,7 @@ Du kan opprette en malstykkliste ved å bruke en av følgende metoder. For alle 
 
 ## <a name="create-a-template-bom-manually"></a>Opprette en malstykkliste manuelt
 
-1.  Klikk **Servicestyring** \> **Oppsett** \> **Serviceobjekter** \> **Malstykklister**.
+1.  Klikk på **Servicestyring** \> **Oppsett** \> **Serviceobjekter** \> **Malstykklister**.
 
 2.  Trykk CTRL+N for å åpne skjemaet **Opprett malstykkliste**.
 
@@ -46,13 +45,13 @@ Du kan opprette en malstykkliste ved å bruke en av følgende metoder. For alle 
 
 6.  I feltene **Fra dato** og **Til dato** angir du et datointervall der malstykklisten er aktiv.
 
-7.  Klikk **OK**.
+7.  Klikk på **OK**.
 
 Det opprettes en ny, tom malstykkliste.
 
 ## <a name="create-a-template-bom-based-on-another-template-bom"></a>Opprette en malstykkliste basert på en annen malstykkliste
 
-1.  Klikk **Servicestyring** \> **Oppsett** \> **Serviceobjekter** \> **Malstykklister**.
+1.  Klikk på **Servicestyring** \> **Oppsett** \> **Serviceobjekter** \> **Malstykklister**.
 
 2.  Trykk CTRL+N for å åpne skjemaet **Opprett malstykkliste**.
 
@@ -64,13 +63,13 @@ Det opprettes en ny, tom malstykkliste.
 
 6.  I feltene **Fra dato** og **Til dato** angir du et datointervall der malstykklisten er aktiv.
 
-7.  Klikk **OK**.
+7.  Klikk på **OK**.
 
 En ny malstykkliste opprettes ved hjelp av linjer som svarer til linjene i den opprinnelige malstykklisten.
 
 ## <a name="create-a-template-bom-based-on-an-item-bom"></a>Opprette en malstykkliste basert på en varestykkliste
 
-1.  Klikk **Servicestyring** \> **Oppsett** \> **Serviceobjekter** \> **Malstykklister**.
+1.  Klikk på **Servicestyring** \> **Oppsett** \> **Serviceobjekter** \> **Malstykklister**.
 
 2.  Trykk CTRL+N for å åpne skjemaet **Opprett malstykkliste**.
 
@@ -82,13 +81,13 @@ En ny malstykkliste opprettes ved hjelp av linjer som svarer til linjene i den o
 
 6.  I feltene **Fra dato** og **Til dato** angir du et datointervall der malstykklisten er aktiv.
 
-7.  Klikk **OK**.
+7.  Klikk på **OK**.
 
 Det opprettes en ny malstykkliste ved å bruke linjer som tilsvarer linjene i stykklisten som er angitt i **Stykklister**.
 
 ## <a name="create-a-template-bom-based-on-a-production-bom"></a>Opprette en malstykkliste basert på en produksjonsstykkliste
 
-1.  Klikk **Servicestyring** \> **Oppsett** \> **Serviceobjekter** \> **Malstykklister**.
+1.  Klikk på **Servicestyring** \> **Oppsett** \> **Serviceobjekter** \> **Malstykklister**.
 
 2.  Trykk CTRL+N for å åpne skjemaet **Opprett malstykkliste**.
 
@@ -100,7 +99,7 @@ Det opprettes en ny malstykkliste ved å bruke linjer som tilsvarer linjene i st
 
 6.  I feltene **Fra dato** og **Til dato** angir du et datointervall der malstykklisten er aktiv.
 
-7.  Klikk **OK**.
+7.  Klikk på **OK**.
 
 Det opprettes en ny malstykkliste ved å bruke linjer som tilsvarer linjene i stykklisten som er angitt i **Stykkliste**.
 
@@ -111,6 +110,3 @@ Det opprettes en ny malstykkliste ved å bruke linjer som tilsvarer linjene i st
   
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

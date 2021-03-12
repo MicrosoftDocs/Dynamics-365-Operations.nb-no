@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: TradeNonStockedConversion, TradeNonStockedConversionChangeWizard, TradeNonStockedConversionCheckWorksheet, TradeNonStockedConversionWizard, TradeNonStockedRegister
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 43426e77c30e46f4dd1cc117c38cf6ba5437655b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e49793fc7f6b3f37bafae05770d4b23d24171329
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434213"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4974891"
 ---
 # <a name="create-a-new-trade-agreement"></a>Opprette en ny forretningsavtale
 
@@ -53,12 +52,12 @@ Denne fremgangsmåten viser hvordan du oppretter en forretningsavtale der du reg
     - Angi en verdi i feltet **Til** for å angi maksimalt antall som prisen for den avtalen ikke vil være gyldig over. Hvis du tilbyr priser og rabatter som er basert på flere avbruddspunkt for antall, angir du hver antallsintervall som et par av minste og største antall i henholdsvis **Fra**- og **Til**-feltene.
 13. Angi en pris i feltet **Beløp i valuta**.
 14. Angi en dato som denne avtalen er gyldig fra, i **Fra dato**-feltet i **Detaljer**-delen.
-15. Klikk **Lagre**.
+15. Klikk på **Lagre**.
 16. Klikk på **Valider**.
 17. Klikk på **Valider valgte linjer**.
-18. Klikk **OK**.
-19. Klikk **Poster**.
-20. Klikk **OK**.
+18. Klikk på **OK**.
+19. Klikk på **Poster**.
+20. Klikk på **OK**.
 
 ## <a name="view-trade-agreements-for-a-product"></a>Vise forretningsavtaler for et produkt
 1. Gå til **Navigasjonsrute > Moduler > Behandling av produktinformasjon > Produkter > Frigitte produkter**.
@@ -71,8 +70,10 @@ Denne fremgangsmåten viser hvordan du oppretter en forretningsavtale der du reg
 5. Lukk siden.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
+
+### <a name="whitepaper"></a>Hvitbok
+Hvis du vil ha mer informasjon, kan du laste ned følgende hvitbok (skrevet for å støtte AX2012, men gjelder fortsatt for Dynamics 365 Supply Chain Management)
+- [Forretningsavtaler](https://mbs.microsoft.com/files/public/CS/AX2012R3/TradeagreementsinAX.pdf)
+
 ### <a name="community-blogs"></a>Fellesskapsblogger
 - [Salgspriser i Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/11/14/sales-prices-in-dynamics-365-for-finance-and-operations/#sales_price_in_trade_agreements)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

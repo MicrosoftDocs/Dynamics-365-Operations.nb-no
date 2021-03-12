@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SalesQuotationPriceSimulation, SalesQuotationsTableLookup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 12254
 ms.assetid: 92be7c85-73cf-4f77-833c-d37ce779a031
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 18214ae3801b5fb0f927020041e997b7ea4f0df4
-ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
+ms.openlocfilehash: 7ef40fb01352bce3c4f9848e0268ac548771120c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "4434710"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4975041"
 ---
 # <a name="price-simulation"></a>Prissimulering
 
@@ -35,7 +34,7 @@ En prissimulering for et tilbud viser et nytt totalbeløp basert på en nytt pri
 
 En prissimulering endrer ikke prisen i tilbudet. Hvis prissimuleringen brukes på hele tilbudet, behandles den som en spesialrabatt i tilbudshodet. Hvis prissimuleringen brukes på bestemte varer, behandles den som en spesialrabatt i tilbudslinjene. Enhetssalgsprisen på tilbudslinjen som opprettes, endres ikke når prissimuleringen brukes. I stedet brukes det en rabattprosent som tilsvarer prisreduksjonen i tilbudslinjen. Når en prissimuleringen brukes, overføres enhetssalgsprisen og rabattprosenten til tilbudslinjen eller tilbudshodet.  
 
->[Obs!] Når du kjører en prissimulering, brukes bare gjeldende salgsvaluta til å opprette simuleringen. Når du viser totalbeløpene for tilbudet, vises det imidlertid en blanding av firmaets valuta og salgsvaluta.  
+>Obs! Når du kjører en prissimulering, brukes bare gjeldende salgsvaluta til å opprette simuleringen. Når du viser totalbeløpene for tilbudet, vises det imidlertid en blanding av firmaets valuta og salgsvaluta.  
 
 Tilleggsvarer som legges til tilbudslinjene, kan utløse linjerabatter eller samkjøpsrabatter. De kan også utløse sluttrabatter som endrer dekningsbidragene og dekningsgradene til tilbudslinjene og hele rabatten.  
 
@@ -145,6 +144,3 @@ Prissimuleringen påvirker bare linjen der den brukes, og reduserer totalsummen 
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

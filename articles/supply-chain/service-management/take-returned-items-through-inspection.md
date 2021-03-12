@@ -11,26 +11,25 @@ ms.technology: ''
 ms.search.form: InventQuarantineOrder
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bdc42f9c5ece8e2c2570cadf623f52648b7b174e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 53cb727cc0f001a6ac344d37f25273999f992d8a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434569"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4974091"
 ---
 # <a name="take-returned-items-through-inspection"></a>Ta returnerte varer gjennom inspeksjon 
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  Klikk **Lagerstyring** \> **Periodisk** \> **Kvalitetsstyring** \> **Karanteneordrer**.
+1.  Klikk på **Lagerstyring** \> **Periodisk** \> **Kvalitetsstyring** \> **Karanteneordrer**.
 
 2.  Finn ordrelinjen som tilsvarer den returnerte varen du undersøker.
 
@@ -58,6 +57,3 @@ ms.locfileid: "4434569"
   
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

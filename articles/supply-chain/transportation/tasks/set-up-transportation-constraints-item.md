@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: TMSConstraint, InventLocationIdLookup, InventItemIdLookupSimple
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f351da832f8fa62935d09c6ce6ede277971dbbbc
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 244cf7337ec856f7517a3c0c3e055a90ab65b13f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434192"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4973941"
 ---
 # <a name="set-up-transportation-constraints-for-an-item"></a>Definere transportbegrensninger for en vare
 
@@ -33,7 +32,7 @@ Denne fremgangsmåten definerer en transportbegrensning for å hindre at en valg
 
 ## <a name="create-an-item-constaint"></a>Opprette en varebegrensning
 1. Gå til Begrensninger.
-2. Klikk Ny.
+2. Klikk på Ny.
 3. Skriv inn en verdi i feltet Varebegrensning.
 4. Skriv inn en verdi i Navn-feltet.
 5. Angi eller velg en verdi i Område-feltet.
@@ -41,9 +40,6 @@ Denne fremgangsmåten definerer en transportbegrensning for å hindre at en valg
 7. Angi eller velg en verdi i Varenummer-feltet.
 8. Angi eller velg en verdi i feltet Hub.
 9. Velg et alternativ i feltet Begrensningshandling.
-10. Klikk Lagre.
+10. Klikk på Lagre.
 11. Lukk siden.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

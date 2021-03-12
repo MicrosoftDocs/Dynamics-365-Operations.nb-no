@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: AssetTable, AssetAddition
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dc1e13863ae13daaa641f52f7a55e01fc1353dc1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: baac842660b6231529349ec97bcdbcdb971a0ac0
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446409"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4975972"
 ---
 # <a name="enter-an-addition-to-a-fixed-asset"></a>Legge inn et tillegg til et anleggsmiddel
 
@@ -46,6 +45,3 @@ Fremgangsmåten bruker regnskapsførerrollen og demodataene for den juridiske en
     * Angi **Øker levetiden** til **Ja** hvis tillegget øker levetiden for anleggsmidlet.  
     * Dette feltet er kun veiledende. Hvis du vil øke levetiden, kan du endre levetiden for verdimodeller og/eller avskrivningstablåene for aktivaet.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

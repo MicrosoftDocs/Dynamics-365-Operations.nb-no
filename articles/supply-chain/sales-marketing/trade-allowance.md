@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: MCRBrokerClaims, MCRBrokerWriteOffReasonPrompt, MCRRoyaltyVendTable, MCRRoyaltyVendTrans, PdsCustRebateGroup, PdsRebateAgreement, TAMCopyTradePromotions, TAMDeduction, TAMDeductionCreate, TAMDeductionDenyReason, TAMDeductionParmDeny, TAMDeductionParmMassUpdate, TAMDeductionParmMatch, TAMDeductionParmSplit, TAMDeductionParmWriteOff, TAMDeductionType, TAMDeductionWriteOffReason, TAMFundManagement, TAMFundUsage, TAMListPage, TAMMarketingObjective, TAMMerchEventType, TAMOneTimePromotion, TAMPromoCompareGraph, TAMPromoStatistic, TAMPromotionAnalysisSummary, TAMPromotionParameters, TAMPromotionPeriod, TAMTemplateListPage, TAMTradePromotionAnalysis, TAMTradePromotions, TAMWhatIfPromotionAnalysis
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 13b665427a4caf206e0a3b3aca6b04c1529b9206
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 15f324f66240380f698dbc67b95f3bea19314a18
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434364"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4974916"
 ---
 # <a name="trade-allowance-management"></a>Handelsrabattbehandling
 
@@ -66,7 +65,7 @@ Midler som er tildelt til handelsrabattavtaler, registreres på **Midler**-siden
 
 På **Midler**-siden kan du vise detaljene for kampanjemidler.
 
-Hurtigkategorien **Generelt** viser perioden som midlene er gyldig for, og det budsjetterte beløp. For at midlene skal tildeles til kampanjeavtalen må **Status**-feltet må ha verdien **Godkjent**.
+Hurtigfanen **Generelt** viser perioden som midlene er gyldig for, og det budsjetterte beløp. For at midlene skal tildeles til kampanjeavtalen må **Status**-feltet må ha verdien **Godkjent**.
 
 Hurtigfanen **Kunder** viser kundehierarkiet. For å velge kundene som midlene er målrettet mot, drar du dem slik at de under **Finansieringskunder**. Denne hurtigfanen viser også hvordan totalbeløpet for midlene distribueres.
 
@@ -94,7 +93,7 @@ På hurtigfanen **Generelt** definerer feltene **Ordre til** og **Ordre fra** pe
 
 På hurtigfanen **Kunder**, i listen til venstre, kan du velge og vise kundegruppene som er definert som forhåndsdefinerte hierarkier. Du kan deretter velge hele hierarkiet eller bestemte kontoer som mål for rabattavtalen.
 
-På hurtigfanen **Varer**, per hurtigkategorien **Varer** på **Midler**-siden blir varer lagt til i avtalen for å tilknytte salgene med rabatten som er avtalt.
+På hurtigfanen **Varer**, per hurtigfanen **Varer** på **Midler**-siden blir varer lagt til i avtalen for å tilknytte salgene med rabatten som er avtalt.
 
 På hurtigfanen **Midler** kan du se kampanjemidlene som er knyttet til denne kontrakten. Du kan også vise kontraktens hendelsen kostnadsavregning. En hendelse kostnadsfordeling på 100 prosent betyr at denne kampanjen skal finansieres utelukkende fra én fond. En kampanjeavtale kan også bruke av flere midler, og kan bruke lik eller differensiert fordeling.
 
@@ -102,15 +101,15 @@ På hurtigfanen **Midler** kan du se kampanjemidlene som er knyttet til denne ko
 
 Velg **Linjer** å bytte til linjevisning.
 
-Kategorien **Varehandelshendelser** viser hvilke typer hendelser som er dekket av en avtale. Det finnes tre typer: tilbakebetaling, engangsbeløp og fakturafradrag.
+fanen **Varehandelshendelser** viser hvilke typer hendelser som er dekket av en avtale. Det finnes tre typer: tilbakebetaling, engangsbeløp og fakturafradrag.
 
-Når du velger varehandelshendelsen og deretter velger **Beløp**-kategorien, blir detaljer for hendelsen funnet.
+Når du velger varehandelshendelsen og deretter velger **Beløp**-fanen, blir detaljer for hendelsen funnet.
 
 ![Linjer i handelsrabattavtale](./media/trade-allowance-management-agreements-lines.png "Linjer i handelsrabattavtale")
 
 I delen **Handelsrabattlinjer** angir du antalls- eller mengdeområdene som kunden må oppnå, for definisjoner for å få belønninger.
 
-Når det gjelder en varehandelshendelse av typen **tilbakebetaling**, definerer den øvre delen av **Beløp**-kategorien reglene som brukes for tilbakebetalingen. Reglene kan for eksempel angi følgende betingelser for kravet om tilbakebetaling:
+Når det gjelder en varehandelshendelse av typen **tilbakebetaling**, definerer den øvre delen av **Beløp**-fanen reglene som brukes for tilbakebetalingen. Reglene kan for eksempel angi følgende betingelser for kravet om tilbakebetaling:
 
 - Det er basert på opprettelsesdatoen for salgsordren (verdien for **Beregningsdatotype** er **Opprettet**).
 - Det beregnes basert på salgsordrelinjens beløp før rabatter, ikke nettobeløpet, inkludert rabatter (**Tatt fra**-verdien er **Brutto**).
@@ -118,7 +117,7 @@ Når det gjelder en varehandelshendelse av typen **tilbakebetaling**, definerer 
 - Det beregnes per periode av en måned (verdien **Summer salg etter** er **Måned**). 
 - Det utlignes som et fradrag, ikke ved hjelp av en A/P (verdien for **Betalingstype** er **Kundefradrag**).
 
-Når det gjelder en varehandelshendelse av typen **engangsbeløp**, viser kategorien **Beløp** antallet som skal betales til kunden i form av et fradrag når kunden oppnår spesifikke ytelse. Godkjenningsstatusen **Åpen** angir at engangsbeløpet ennå ikke er betalt.
+Når det gjelder en varehandelshendelse av typen **engangsbeløp**, viser fanen **Beløp** antallet som skal betales til kunden i form av et fradrag når kunden oppnår spesifikke ytelse. Godkjenningsstatusen **Åpen** angir at engangsbeløpet ennå ikke er betalt.
 
 Hvis du vil bruke avtalen på salgsordrer som oppfyller betingelsene for avtalen, må statusen for den avtalen være **Bekreftet**. 
 
@@ -126,12 +125,12 @@ Hvis du vil bruke avtalen på salgsordrer som oppfyller betingelsene for avtalen
 
 Når du oppretter en salgsordre med linjene som oppfyller kravene til avtalen, kan du vise relatert informasjon på siden **Salgsordre** ved å velge **salgsordrelinje** \> **Vis** \> **Prisdetaljer**.
 
-På siden **Prisdetaljer** i **Rabatter**-hurtigkategorien, ser selgeren en tilbakebetaling fra gyldig godtgjørelse forretningsavtalen (rabattens program-ID vises) og det totale beløpet som er brukt på linjen. Beløpet vises også i feltet **Rabattbeløp** i delen **Marginestimat** for siden **Prisinformasjon**.
+På siden **Prisdetaljer** i **Rabatter**-hurtigfanen, ser selgeren en tilbakebetaling fra gyldig godtgjørelse forretningsavtalen (rabattens program-ID vises) og det totale beløpet som er brukt på linjen. Beløpet vises også i feltet **Rabattbeløp** i delen **Marginestimat** for siden **Prisinformasjon**.
 
 Når salgsfakturaen er postert, blir det generert et tilsvarende tilbakebetalingskrav for hver fakturalinje.
 
 > [!NOTE]
-> For å åpne siden **Prisdetaljer**, på siden **Kundeparametere** i **Priser**-kategorien velger du **Aktiver Prisdetaljer**-merket. I
+> For å åpne siden **Prisdetaljer**, på siden **Kundeparametere** i **Priser**-fanen velger du **Aktiver Prisdetaljer**-merket. I
 
 ## <a name="process-claims-and-pass-them-as-deductions-to-ar"></a>Behandle krav og sende dem som fradrag til kunder
 
@@ -170,7 +169,7 @@ En journal posteres ved oppretting av kreditnotaen. (Journalen som er postert, e
 - Kundens kundekonto er kreditert.
 - Rabattavsetningskontoen er debitert.
 
-Til å godkjenne en varehandelshendelse av typen **engangsbeløp** velger du hendelsen på siden **Handelsrabattavtaler** og deretter, i kategorien **Beløp**, velg **Godkjenn**.
+Til å godkjenne en varehandelshendelse av typen **engangsbeløp** velger du hendelsen på siden **Handelsrabattavtaler** og deretter, i fanen **Beløp**, velg **Godkjenn**.
 
 ## <a name="settle-the-deduction-that-is-due-and-the-customer-short-pay-by-using-the-deduction-workbench"></a>Utligne fradrag som forfaller og kunden kort betaling ved hjelp av fradrag arbeidsbenk
 
@@ -182,7 +181,7 @@ Innkrevingsleder er nå ansvarlig for utligning av den åpne kreditnotatransaksj
 
 Hvis du vil behandle fradrag, velger du **Salg og markedsføring** \> **Handelsrabatter** \> **Fradrag** \> **Fradragsarbeidsområde**. Den øvre delen av siden inneholder linjer som representerer de korte betaler fra kunden. Den nedre delen av siden viser de åpne kredittransaksjonene for kunder. 
 
-Hvis du vil utligne mot den åpne transaksjonen fradrag, Merk fradrag linjen, og deretter merker du linjen i kategorien åpne transaksjoner. Klikk Vedlikehold > Samsvar i handlingsruten.
+Hvis du vil utligne mot den åpne transaksjonen fradrag, Merk fradrag linjen, og deretter merker du linjen i fanen åpne transaksjoner. Klikk på Vedlikehold > Samsvar i handlingsruten.
 
 Statusen for de opprinnelige kravene er nå satt til **Fullført**.
 
@@ -190,16 +189,13 @@ Statusen for de opprinnelige kravene er nå satt til **Fullført**.
 
 Hvis du vil ha en oversikt over viktig statistikk for programmets og fond bruk, du kan bruke flere rapporter og analytiske visninger som er tilgjengelige i behandling av handel rabatten.
 
-På siden **Handelsrabattaktivitet** viser kategorien **Oversikt** primære detaljer for handelsrabattavtalen. De andre kategoriene viser flere opplysninger om de tilknyttede dokumentene, betalinger og andre hendelser som er knyttet til programmet.
+På siden **Handelsrabattaktivitet** viser fanen **Oversikt** primære detaljer for handelsrabattavtalen. De andre fanene viser flere opplysninger om de tilknyttede dokumentene, betalinger og andre hendelser som er knyttet til programmet.
 
-Den **Sammendrag**-kategorien viser det totale antallet varer som er solgt under kampanjen, salgsbeløpet som er fakturert, og stykklisten tilbake og samlet summer som er betalt.
+Den **Sammendrag**-fanen viser det totale antallet varer som er solgt under kampanjen, salgsbeløpet som er fakturert, og stykklisten tilbake og samlet summer som er betalt.
 
-Kategorien **Kreditter for tilbakebetaling** inneholder detaljer om individuelle faktura tilbake som er kreditert til kunden.
+fanen **Kreditter for tilbakebetaling** inneholder detaljer om individuelle faktura tilbake som er kreditert til kunden.
 
-Hvis du vil ha en mer analytisk oversikt over de ulike ytelsesmål for kampanjen, kan du bruke analysevisningen. For å gå til analysevisningen, klikk **Salg og markedsføring** \> **Handelsrabatter** \> **Handelsrabattavtaler**. Klikk **Analyse** i handlingsruten.  
+Hvis du vil ha en mer analytisk oversikt over de ulike ytelsesmål for kampanjen, kan du bruke analysevisningen. For å gå til analysevisningen, klikk **Salg og markedsføring** \> **Handelsrabatter** \> **Handelsrabattavtaler**. Klikk på **Analyse** i handlingsruten.  
 
-Hvis du vil ha en mer analytisk oversikt over de ulike ytelsesmål for kampanjen, kan du bruke analysevisningen. For å gå til analysevisningen, klikk **Salg og markedsføring** \> **Handelsrabatter** \> **Handelsrabattavtaler**. Klikk **Analyse** i handlingsruten. 
+Hvis du vil ha en mer analytisk oversikt over de ulike ytelsesmål for kampanjen, kan du bruke analysevisningen. For å gå til analysevisningen, klikk **Salg og markedsføring** \> **Handelsrabatter** \> **Handelsrabattavtaler**. Klikk på **Analyse** i handlingsruten. 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

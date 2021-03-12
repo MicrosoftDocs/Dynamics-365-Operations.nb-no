@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: LedgerEliminationRule
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 13131
 ms.assetid: 08fd46ef-2eb8-4942-985d-40fd757b74a8
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c278cefd47b14c44c1949505404d08628cb7f52f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 55c3d6c0f2cddb4da8fd82f26ca3184b194e174b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446466"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4975897"
 ---
 # <a name="configure-account-structures"></a>Konfigurer kontostrukturer
 
@@ -107,6 +106,3 @@ Når du definerer kontostrukturer, finnes det noen gode fremgangsmåter du kan f
 Når du er fornøyd med det nye oppsettet eller en endring i en kontostruktur, må du aktivere den. Hvis en kontostruktur tilordnes en finanskonto, kan denne aktiveringen være en tidkrevende prosess, fordi alle ikke-posterte transaksjoner i systemet må være synkronisert med den nye strukturen. Posterte transaksjoner påvirkes ikke av kontostrukturendringer.
 
 Hvis du vil ha mer informasjon, se [Planlegge kontoplanen](plan-chart-of-accounts.md), [Finansdimensjoner](financial-dimensions.md) og [Angi kombinasjoner av konto og dimensjon (segmentert oppføringskontroll)](enter-account-dimension-combinations-segmented-entry-control.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

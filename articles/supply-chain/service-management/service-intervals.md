@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SMAAgreementTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1027a6a1ddb1057ba039382d394522d6f9538a90
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1b14061d5356cd61ab8cb1b1b2fbba859c16f904
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434496"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4974416"
 ---
 # <a name="service-intervals"></a>Serviceintervaller
 
@@ -44,7 +43,7 @@ Dette eksemplet viser hvordan et serviceintervall påvirker serviceavtalelinjer 
 Først oppretter du en serviceavtale og setter **Kombiner serviceordrer** til **Etter serviceavtale**.
 
 1. Klikk på **Serviceavtaler**.
-2. I **Handlingsruten** i **Serviceavtale**-kategorien i **Ny**-gruppen klikker du **Serviceavtale** for å opprette en ny serviceavtale.
+2. I **Handlingsruten** i **Serviceavtale**-fanen i **Ny**-gruppen klikker du **Serviceavtale** for å opprette en ny serviceavtale.
 3. Angi en beskrivelse, velg et prosjekt i **Prosjekt-ID**-feltet, og angi en dato i **Startdato**-feltet.
 4. I **Kombiner serviceordrer**-feltet velger du **Etter serviceavtale**.
 
@@ -61,7 +60,7 @@ Deretter oppretter du en serviceavtalelinje som har transaksjonstypen **Time**.
 For å fullføre denne delen, må du opprette et serviceintervall på 10 dager på **Serviceintervaller**-siden. 
 
 1. Velg serviceavtalen du nettopp opprettet. 
-2. På **Linjer**-hurtigkategorien, klikk **Legg til** for å opprette en ny linje i den nedre ruten på **Serviceavtaler**-siden.
+2. På **Linjer**-hurtigfanen, klikk **Legg til** for å opprette en ny linje i den nedre ruten på **Serviceavtaler**-siden.
 3. Velg **Time** i **Transaksjonstype**-feltet.
 4. I **Arbeider**-feltet velger du arbeideren som skal levere servicen.
 5. Velg 10-dagersintervallet i feltet **Serviceintervall**.
@@ -82,18 +81,15 @@ Du kan nå opprette planlagte serviceordrer og serviceordrelinjer for kommende m
 1. På **Serviceavtaler**-siden i **handlingsruten** i **Lever**-fanen, klikker du **Planlagte serviceordrer**.
 2. På **Opprett serviceordrer**-siden skriver du inn gjeldende dato i **Fra dato**-feltet og en dato som er én måned fra gjeldende dato i **Til dato**-feltet.
 3. Sett **Time**-glidebryteren til **Ja**. 
-4. Klikk **OK**.
+4. Klikk på **OK**.
 
 Fordi det ikke finnes noen grupperinger i serviceordren (definert med alternativet **Etter serviceavtale** i feltet **Kombiner serviceordrer**), blir det opprettet én serviceordrelinje per serviceordre.
 
 ### <a name="service-orders-created"></a>Opprettede serviceordrer
 
-Tre serviceordrelinjer er opprettet innenfor tidsrammen du angav i dialogboksen **Opprett serviceordrer**. Du kan vise serviceordrelinjene på **Serviceavtaler**-siden (**Handlingsrute** \> **Lever**-kategorien \> **Vis**-knappen).
+Tre serviceordrelinjer er opprettet innenfor tidsrammen du angav i dialogboksen **Opprett serviceordrer**. Du kan vise serviceordrelinjene på **Serviceavtaler**-siden (**Handlingsrute** \> **Lever**-fanen \> **Vis**-knappen).
 
 ## <a name="related-topics"></a>Relaterte emner
 
 [Definere serviceintervaller](set-up-service-intervals.md)  
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

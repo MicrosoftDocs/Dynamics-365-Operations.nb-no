@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: TMSFreightBillType, TMSGenericEngine, TMSMileageEngine, TMSRateEngine, TMSTransitTimeEngine, TMSZoneEngine, TMSFreightBillTypeAssignment, TMSZoneMaster, TMSEngineParameters
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 12234
 ms.assetid: b878478c-0e04-4a1e-a037-6fdbb345a9a3
 ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ab6667ac02ca55eeb093fa5854a962ac4357aaac
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: f4c33191e9a3b8f7c211093ff733f6cd025cb9bb
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434777"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4973891"
 ---
 # <a name="transportation-management-engines"></a>Transportbehandlingsmotorer
 
@@ -89,7 +88,7 @@ Metadata for transportbehandlingsmotorer konfigureres forskjellig for ulike type
 | **Sonemotor**                                | Krever at metadata konfigureres direkte i sonemalen.                                                                                                                                                                                                                                                                                                                                                                                                          |
 | **Transittidmotor** og **Kjørelengdemotor** | Henter metadataene direkte fra kjørelengdemotorens skjema for konfigurasjonsoppsett.                                                                                                                                                                                                                                                                                                                                                                                  |
 
-  **Eksempel på metadata for en ratemotor** Transportbehandlingsmotoren krever identifikasjon av den opprinnelige adressen, målfylke og land/region, og start- og sluttpunktet for forsendelsen. Når disse kravene brukes, ser metadataene ut som dataene i tabellen nedenfor. Tabellen inneholder også informasjon om hvilken type inndata som kreves.
+  **Eksempel på metadata for en ratemotor** Transportbehandlingsmotoren krever identifikasjon av den opprinnelige adressen, målfylke og land/region, og start- og sluttpunktet for forsendelsen. Når disse kravene brukes, ser metadataene ut som dataene i tabellen nedenfor. Tabellen inneholder også informasjon om hvilken type inndata som kreves.
 -   Definer denne informasjonen i **Transportstyring** &gt; **Oppsett** på siden **Vurderingsgrunnlagstype**.
 
 | Rekkefølge | Navn                          | Felttype | Datatype | Oppslagstype    | Obligatorisk |
@@ -99,6 +98,3 @@ Metadata for transportbehandlingsmotorer konfigureres forskjellig for ulike type
 | 3        | Første målpostnummer | Tildeling | Streng    | Postnummer    | Valgt  |
 | 4        | Siste målpostnummer   | Tildeling | Streng    | Postnummer    | Valgt  |
 | 5        | Målland           | Tildeling | Streng    | Land/område |           |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 10444
 ms.assetid: 3eae6dc3-ee06-4b6d-9e7d-1ee2c3b10339
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 88436b4a5d6be4172e15fa4a9dadc34696417fb9
-ms.sourcegitcommit: eec96c64f44d1b4877d49ee15665a774019d42d7
+ms.openlocfilehash: 24d57982981ca7b72e43c086ace381e420acb06c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "4672450"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4975692"
 ---
 # <a name="get-started-with-financial-reporting"></a>Komme i gang med Financial Reporting 
 
@@ -48,6 +47,8 @@ Hvis du vil opprette og generere finansrapporter for en juridisk enhet, må du a
 -   Ledger
 -   Kontoplan
 -   Valuta.
+-   Postere en transaksjon til minst én konto
+-   MainAccount er oppført i Valgt-kolonnen i **Økonomimodul > Finansoppsett > Oppsett for Financial Reporting**
 
 ## <a name="granting-security-access-to-financial-reporting"></a>Tildele sikkerhetstilgang til Financial Reporting
 Funksjonene for økonomisk rapportering er tilgjengelige for brukere som er tilordnet de nødvendige rettighetene og pliktene via sikkerhetsrollene sine. De følgende delene viser disse rettighetene og pliktene sammen med de tilknyttede rollene.
@@ -173,6 +174,3 @@ Problem 3: Du kan fortsette etter påloggingssiden for ClickOnce Rapportutformin
 ## <a name="additional-resources"></a>Tilleggsressurser
 - [Vis finansrapporter](view-financial-reports.md)
 - [Definisjoner av rapporteringstre i finansrapporter](../../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

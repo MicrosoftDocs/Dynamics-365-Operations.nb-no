@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: SalesTableListPage, SalesTable, SalesEditLines,  SrsReportViewerForm, SalesTableLineQuantity, CustPackingSlipJournal
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b6b1dbb4d53785c226f7c9d40339d9dd19f47152
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 45884bd5ff70b31c62a7e0affafb6c5ddb457be3
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434685"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4974866"
 ---
 # <a name="ship-sales-orders-without-warehousing"></a>Sende salgsordrer uten lagerstyring
 
@@ -32,14 +31,14 @@ Dette emnet forklarer hvordan du oppdaterer en salgsordre når produkter sendes 
 ## <a name="post-packing-slip-for-an-order"></a>Postere følgeseddel for en ordre
 1. I navigasjonsruten går du til **Moduler > Salg og markedsføring > Salgsordrer > Alle salgsordrer**.
 2. Finn og velg ordren du har opprettet for denne oppgaven, i listen.
-3. Klikk **Plukk og pakk** i handlingsruten.
+3. Klikk på **Plukk og pakk** i handlingsruten.
 4. Velg **Poster følgeseddel**.
 5. Vis eller skjul delen **Parametere**.
 6. Velg **Alle** i **Antall**-feltet.
     - Andre alternativer omfatter **Lever nå** og **Plukket**. Hvis ordrelinjen skal leveres delvis og **Lever nå**-feltet på ordrelinjen som inneholder et antall, velger du **Lever nå**. Hvis organisasjonens fullføringsflyt inkluderer plukking som en egen prosess som administreres av og er registrert i en plukkliste, velger du **Plukket**.  
     - Kontroller at alternativet **Postering** er satt til **Ja**.  
-7. Velg **Ja** for alternativet **Skriv ut følgeseddel**. Kategorien **Oversikt** viser en liste med følgesedler som skal genereres i denne posteringen. Hvis du leverer en enkelt ordre, vil det vanligvis være én følgeseddel. Men hvis den ordrelinjer skal sendes fra forskjellige områder, vil postering automatisk deles inn i det aktuelle antallet dokumenter. Dette er en obligatorisk betingelse som ikke kan endres. På samme måte bokføringen også deles i flere dokumenter hvis ordrens linjer skal leveres til forskjellige leveringsadresser, og policyen for levering settes opp slik at det kreves en deling.  
-8. Merk raden for ordrelinjen som skal leveres, i kategorien **Linjer**.
+7. Velg **Ja** for alternativet **Skriv ut følgeseddel**. fanen **Oversikt** viser en liste med følgesedler som skal genereres i denne posteringen. Hvis du leverer en enkelt ordre, vil det vanligvis være én følgeseddel. Men hvis den ordrelinjer skal sendes fra forskjellige områder, vil postering automatisk deles inn i det aktuelle antallet dokumenter. Dette er en obligatorisk betingelse som ikke kan endres. På samme måte bokføringen også deles i flere dokumenter hvis ordrens linjer skal leveres til forskjellige leveringsadresser, og policyen for levering settes opp slik at det kreves en deling.  
+8. Merk raden for ordrelinjen som skal leveres, i fanen **Linjer**.
 9. Angi et tall som er lavere enn det opprinnelige antallet i feltet **Oppdater**.
 10. Velg **OK**.
 11. Velg **Ja**.
@@ -53,9 +52,6 @@ Dette emnet forklarer hvordan du oppdaterer en salgsordre når produkter sendes 
 16. Klikk på **Generelt** i handlingsruten.
 17. Velg **Linjeantall**.
 18. Lukk siden.
-19. Klikk **Plukk og pakk** i handlingsruten.
+19. Klikk på **Plukk og pakk** i handlingsruten.
 20. Velg **Følgeseddel**. Siden **Følgeseddeljournal** inneholder alle følgeseddeldokumentene som ble generert for ordren. Du kan se nærmere på detaljene for hvert dokument og skrive dem ut, hvis du ønsker.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

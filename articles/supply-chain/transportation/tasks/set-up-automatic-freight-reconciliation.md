@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: TMSFreightBillType, TMSFreightBillTypeAssignment, TMSCarrierCodeLookup, DefaultDashboard, TMSAuditMaster
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6f11edc15821faad84485d5b81e4a9ded0b7e974
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4bfd96fcae78fd0fe383781112c17c7a3b5ea1d3
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434194"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4974016"
 ---
 # <a name="set-up-automatic-freight-reconciliation"></a>Definere automatisk fraktavstemming
 
@@ -34,23 +33,23 @@ Denne fremgangsmåten viser hvordan du setter opp data for automatisk fraktavste
 ## <a name="set-up-the-freight-bill-type"></a>Definere fraktbrevtypen
 1. Gå til Transportstyring > Oppsett > Fraktavstemming > Fraktbrevtype.
     * Fraktbrevtypen definerer hvordan fraktbrev og transportørfakturaer skal sammenlignes.  
-2. Klikk Ny.
+2. Klikk på Ny.
 3. Skriv inn en verdi i feltet Fraktbrevtype.
 4. I Motormontering-feltet skriver du inn Microsoft.Dynamics.Ax.Tms.dll.
     * Dette er standard kodebibliotek for samsvarsmotoren for transportstyring.  
 5. I Motorklasse-feltet skriver du inn Microsoft.Dynamics.Ax.Tms.Bll.GenericNormalizer.
     * Dette er standard klasse for samsvarsmotoren for transportstyring.  
-6. Klikk Ny.
+6. Klikk på Ny.
 7. I Beskrivelse-feltet velger du verdien som skal samsvare på fraktbrevet og transportørfakturaen.  
 8. I feltet Samsvar nødvendig velger du Ja.
     * Hvis du setter dette feltet til Ja, betyr det at verdien som er valgt i Beskrivelse-feltet, må samsvare med både fraktbrevet og transportørfakturaen. Hvis du setter det til Nei, kan feltet være tomt på én av disse.  
-9. Klikk Lagre.
+9. Klikk på Lagre.
 
 ## <a name="set-up-the-freight-bill-type-assignment"></a>Definere tilordningen av fraktbrevtype
 1. Lukk siden.
 2. Gå til Transportstyring > Oppsett > Fraktavstemming > Tilordninger av fraktbrevtype.
     * Fraktbrevtypetilordningen brukes til å angi hvilken fraktbrevtype som skal brukes for en bestemt transportør.   
-3. Klikk Ny.
+3. Klikk på Ny.
 4. Angi eller velg en verdi i feltet Modus.
 5. Angi eller velg en verdi i feltet Transportør.
 6. I Fraktbrevtype-feltet velger du fraktbrevtypen du opprettet tidligere.
@@ -59,7 +58,7 @@ Denne fremgangsmåten viser hvordan du setter opp data for automatisk fraktavste
 ## <a name="set-up-the-audit-master"></a>Konfigurere revisjonsstandarden
 1. Gå til Transportstyring > Oppsett > Fraktavstemming > Revisjonsstandard.
     * Revisjonsstandarden definerer toleransegrensene for automatisk fraktavstemming. Den angir hvor stor forskjell det kan være mellom pengebeløpet på fraktbrevet og transportørfakturaen og likevel tillate avstemming. Den definerer også hvordan avvik skal håndteres.  
-2. Klikk Ny.
+2. Klikk på Ny.
 3. Angi en verdi i feltet Revisjonsstandard-ID.
 4. Velg samme transportør som du gjorde tidligere, i feltet Transportør.
 5. I Fraktbrevtype-feltet velger du fraktbrevtypen du opprettet tidligere.
@@ -72,6 +71,3 @@ Denne fremgangsmåten viser hvordan du setter opp data for automatisk fraktavste
 11. Angi eller velg en verdi i feltet Årsakskode for underbetaling.
 12. Lukk siden.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

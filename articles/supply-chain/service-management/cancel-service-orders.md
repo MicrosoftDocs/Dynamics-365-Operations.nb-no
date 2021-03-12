@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ce3cb9ebc3536ba1b333a7bef6b5c679e09d7516
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b60feec05e923c25e0f0bacb28b510906d5f73cd
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434585"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4974694"
 ---
 # <a name="cancel-service-orders"></a>Annuller serviceordrer   
 
@@ -56,17 +55,17 @@ Du kan annullere en serviceordre eller serviceordrelinje fra selve serviceordren
 
 1.  Klikk på **Servicestyring** \> **Periodisk** \> **Serviceordrer** \> **Annuller serviceordrer**.
 
-2.  Klikk **Velg**-knappen.
+2.  Klikk på **Velg**-knappen.
 
 3.  I **Forespørsel**-skjemaet i **Vilkår**-kolonnen velger du serviceordrene du vil annullere.
 
-4.  Klikk **OK** for å lukke **Forespørsel**-skjemaet.
+4.  Klikk på **OK** for å lukke **Forespørsel**-skjemaet.
 
 5.  Merk av for **Vis infologg** for å generere en informasjonslogg som viser de annullerte serviceordrene.
 
 6.  Merk av for **Opphev annullering** hvis du vil tilbakeføre en serviceordres **Avbrutt**-status.
 
-7.  Klikk **OK**.
+7.  Klikk på **OK**.
 
 De valgte serviceordrene blir enten annullert, eller de får sin fremdriftsstatus **Avbrutt** tilbakeført til **Pågår**.
 
@@ -78,6 +77,3 @@ De valgte serviceordrene blir enten annullert, eller de får sin fremdriftsstatu
   
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

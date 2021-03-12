@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,16 +18,18 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 3eaa25f0befcff448250ba2cce8e568fa4a4c707
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ddc6159480d1ff9fb823dbd95465c991ae51f9c4
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434602"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4974991"
 ---
 # <a name="synchronization-of-sales-orders-directly-between-sales-and-supply-chain-management"></a>Synkronisering av salgsordrer direkte mellom Sales og Supply Chain Management
 
 [!include [banner](../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Dette emnet drøfter maler og underliggende oppgaver som brukes til å kjøre synkronisering av salgsordrer direkte mellom Dynamics 365 Sales og Dynamics 365 Supply Chain Management.
 
@@ -64,8 +65,8 @@ Følgende synkroniseringsoppgaver er påkrevd før synkronisering av salgsfaktur
 
 | Forsyningskjedeadministrasjon  | Salg             |
 |-------------------------|-------------------|
-| CDS-salgsordrehoder | Salgsordrer       |
-| CDS-salgsordrelinjer   | Salgsordredetaljer |
+| Dataverse-salgsordrehoder | Salgsordrer       |
+| Dataverse-salgsordrelinjer   | Salgsordredetaljer |
 
 ## <a name="entity-flow"></a>Enhetsflyt
 
@@ -75,7 +76,7 @@ Du trenger ikke opprette ordrer i Sales. Du kan opprette nye salgsordrer i Suppl
 
 I Supply Chain Management vil filtre i malen garanterer at kun relevante salgsordrer er inkludert i synkroniseringen:
 
-- Både bestilling og fakturering av kunde på salgsordren må komme fra Sales for å inkluderes i synkroniseringen. I Supply Chain Management brukes feltene **OrderingCustomerIsExternallyMaintained** og **InvoiceCustomerIsExternallyMaintained** til å filtrere salgsordrer fra dataenhetene.
+- Både bestilling og fakturering av kunde på salgsordren må komme fra Sales for å inkluderes i synkroniseringen. I Supply Chain Management brukes kolonnene **OrderingCustomerIsExternallyMaintained** og **InvoiceCustomerIsExternallyMaintained** til å filtrere salgsordrer fra datatabellene.
 - Salgsordren i Supply Chain Management må bekreftes. Kun bekreftede salgsordre eller salgsordre med høyere behandlingsstatus, for eksempel **Sendt** eller **Fakturert**, synkroniseres til Sales.
 - Etter at en salgsordre er opprettet eller endret, må den satsvise jobben **Kalkuler salgstotaler** i Supply Chain Management kjøres. Bare salgsordrene der salgsttotalene er beregnet, blir synkronisert Sales.
 
@@ -103,10 +104,10 @@ Når en salgsordrelinje synkroniseres fra Sales til Supply Chain Management, bru
 
 ## <a name="prospect-to-cash-solution-for-sales"></a>Kundeemnet til kontanter løsning for Sales
 
-Nye felt er lagt til enheten **Ordre** og vises på siden:
+Nye kolonner er lagt til i tabellen **Ordre** og vises på følgende side:
 
 - **Vedlikeholdes eksternt** – Sett dette alternativet til **Ja** når ordren kommer fra Supply Chain Management.
-- **Behandlingsstatus** – Dette feltet viser behandlingsstatus for en ordre i Supply Chain Management. Følgende verdier er tilgjengelige:
+- **Behandlingsstatus** – Denne kolonnen viser behandlingsstatus for en ordre i Supply Chain Management. Følgende verdier er tilgjengelige:
 
     - **Utkast** – Startstatus når en ordre blir opprettet i Sales. I Sales kan du redigere ordrer med denne behandlingsstatusen.
     - **Aktiv** – Status etter at ordren er aktivert i Sales ved hjelp av **Aktiver**-knappen.
@@ -141,7 +142,7 @@ Før du synkroniserer salgsordrer, er det viktig å oppdatere innstillingene ned
 - Gå til **Innstillinger** &gt; **Administrasjon** &gt; **Systeminnstillinger** &gt; **Salg**, og sørger for å bruke følgende innstillinger:
 
     - Alternativet **Bruk systemets priskalkuleringssystem** er satt til **Ja**.
-    - Feltet **Rabattkalkuleringsmetode** er satt til **Linjeelement**.
+    - Kolonnen **Rabattkalkuleringsmetode** settes til **Linjeelement**.
 
 ### <a name="setup-in-supply-chain-management"></a>Oppsett i Supply Chain Management
 
@@ -151,10 +152,10 @@ Hvis du også bruker arbeidsordreintegrering, må du definere salgsopprinnelsen.
 
 1. Gå til **Salg og markedsføring** \> **Oppsett** \> **Salgsorder** \> **Salgsopprinnelse**.
 2. Velg **Ny** for å opprette en ny salgsopprinnelse.
-3. I **Salgsopprinnelse**-feltet angir du et navn for salgsopprinnelsen, for eksempel **Salgsordre**.
-4. I **Beskrivelse**-feltet skriver du inn en beskrivelse, for eksempel **Salgsordre fra Sales**.
+3. I **Salgsopprinnelse**-kolonnen angir du et navn for salgsopprinnelsen, for eksempel **Salgsordre**.
+4. I **Beskrivelse**-kolonnen skriver du inn en beskrivelse, for eksempel **Salgsordre fra Sales**.
 5. Merk av for **Tilordning av opprinnelsestype**.
-6. Sett **Salgsopprinnelsestype**-feltet til **Integrering av salgsordre**.
+6. Sett **Salgsopprinnelsestype**-kolonnen til **Integrering av salgsordre**.
 7. Velg **Lagre**.
 
 ### <a name="setup-in-the-sales-orders-sales-to-supply-chain-management---direct-data-integration-project"></a>Oppsett i Salgsordrer (Sales til Supply Chain Management) – direkte Dataintegrasjonsprosjekt
@@ -181,12 +182,12 @@ Hvis du også bruker arbeidsordreintegrering, må du definere salgsopprinnelsen.
 ## <a name="template-mapping-in-data-integration"></a>Maltilordning i Dataintegrering
 
 > [!NOTE]
-> Feltene **Betalingsbetingelser**, **Fraktvilkår**, **Leveringsbetingelser**, **Leveringsmetode** og **Leveringsmåte** er ikke en del av standardtilordningene. Hvis du vil tilordne disse feltene, må du definere en verditilordning som er spesifikk for dataene i organisasjoner som enheten synkroniseres mellom.
+> Kolonnene **Betalingsbetingelser**, **Fraktvilkår**, **Leveringsbetingelser**, **Leveringsmetode** og **Leveringsmåte** er ikke en del av standardtilordningene. Hvis du vil tilordne disse kolonnene, må du definere en verditilordning som er spesifikk for dataene i organisasjoner som tabellen synkroniseres mellom.
 
 Følgende illustrasjoner viser et eksempel på en tilordning av malen i Dataintegrering.
 
 > [!NOTE]
-> Tilordningen viser hvilken feltinformasjon som vil bli synkronisert fra Sales til Supply Chain Management eller fra Supply Chain Management til Sales.
+> Tilordningen viser hvilken kolonneinformasjon som vil bli synkronisert fra Sales til Supply Chain Management eller fra Supply Chain Management til Sales.
 
 ### <a name="sales-orders-supply-chain-management-to-sales---direct-orderheader"></a>Salgsordrer (Supply Chain Management til Sales) – direkte: OrderHeader
 
@@ -207,6 +208,3 @@ Følgende illustrasjoner viser et eksempel på en tilordning av malen i Datainte
 ## <a name="related-topics"></a>Relaterte emner
 
 [Kundeemne til kontanter](prospect-to-cash.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

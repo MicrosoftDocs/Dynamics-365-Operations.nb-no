@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: CAMDimensionMember, CAMAllocationBaseDetail, CAMFormulaAllocationBaseDetail, CAMAllocationBasePreview, CAMAllocationBase, CAMCostAllocationRule, CAMPredefinedMemberAllocationBase
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 223174
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: fc6f655d17a83db54aa99c834980bf7666e8100d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f775b09b973a4d34e77d568a5f3b2bd35a7dfdcf
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446286"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4976222"
 ---
 # <a name="allocation-bases"></a>Tildelingsgrunnlag 
 
@@ -215,7 +214,7 @@ Etter at kildedataene for statistisk måling er behandlet, opprettes følgende o
 
 **Statistiske oppføringer**
 
-| Kostnadsobjekt |    | Regnskapsdato | Statistisk medlem av dimensjon |    Beskrivelse          | Størrelse |
+| Kostnadsobjekt |    | Regnskapsdato | Statistisk medlem av dimensjon |    beskrivelse          | Størrelse |
 |-------------|----|-----------------|------------------------------|-------------------------|-----------|
 | CC001       | Personale | 31.01.2017      | Elektrisitet                  | Strømforbruk | 2,450.00  |
 | CC002       | FI | 31.01.2017      | Elektrisitet                  | Strømforbruk | 4,100.00  |
@@ -430,6 +429,3 @@ Her er et eksempel på en kostnadsdistribusjonsregel hvis formeltildelingsgrunnl
 |    CC002    |     FI      | 3 075,00  | (3 075,00 ÷ 18 162,50) × beløp  |
 |    CC003    |     LO      | 13 250,00 | (13 250,00 ÷ 18 162,50) × beløp |
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

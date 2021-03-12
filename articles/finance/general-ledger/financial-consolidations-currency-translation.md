@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 2a6685a2dcf9d7bf7ac82c3dede9c3ece0c08698
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c4561a1193971b131ab2b6c8d64f848d8155c1fc
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446513"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4975770"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Oversikt over finanskonsolideringer og valutaomveksling
 
@@ -125,7 +124,7 @@ Du kan angi datoen når elimineringsregelen trer i kraft, og datoen når den utl
 
 Når du har definert de grunnleggende egenskapene, kan du velg **Linjer** for å definere de faktiske behandlingsreglene. Det finnes to alternativer for elimineringer: eliminere netto endringsbeløp eller definere et fast beløp.
 
-Velg kildekontoene. Du kan bruke stjerne (\*) som et jokertegn. **1\*** velger for eksempel alle kontoer som starter med **1**, som en kilde for datatildelingen.
+Velg kildekontoene. Du kan bruke stjerne (\*) som et jokertegn.  **1\**velger for eksempel alle kontoer som starter med* 1**, som en kilde for datatildelingen.
 
 Når du har valgt kildekontoene, bruker du feltet **Kontospesifikasjon** til å angi kontoen som brukes fra målfirmaet. Velg **Kilde** hvis du vil bruke den samme hovedkontoen som er definert i kildekontoen. Hvis du velger **Brukerdefinert**, må du angi en målkonto.
 
@@ -182,6 +181,3 @@ Her er noen av konsolideringsscenariene som Finansrapportering støtter:
 
 ## <a name="generating-consolidated-financial-statements"></a>Generere konsoliderte regnskapsoppgjør
 For informasjon om situasjoner der du kan generere konsoliderte regnskapsoppgjør, kan du se [Generere konsoliderte regnskapsoppgjør](./generating-consolidated-financial-statements.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

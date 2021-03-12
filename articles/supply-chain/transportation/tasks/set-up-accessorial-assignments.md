@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: TMSAccessorialAssignment
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8d7f48da374a0434130f2cf95bf77a126635cd63
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 28562772c52d06fbb2004bd3a01a7bfa32f58a4e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434780"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4974041"
 ---
 # <a name="set-up-accessorial-assignments"></a>Definere tilbehørstilordninger
 
@@ -33,13 +32,13 @@ Denne prosedyren viser hvordan du setter opp en tilbehørstilordning. Dette gjø
 
 ## <a name="set-up-accessorial-assignment"></a>Definere tilbehørstilordning
 1. Gå til Transportstyring > Oppsett > Vurdering > Tilbehørstilordninger.
-2. Klikk Ny.
+2. Klikk på Ny.
 3. Skriv inn en verdi i Navn-feltet.
 4. Aktiver/deaktiver utvidelsen av delen Detaljer.
-5. Klikk rullegardinknappen i Hub-feltet for å åpne oppslaget.
+5. Klikk på rullegardinknappen i Hub-feltet for å åpne oppslaget.
 6. Velg huben som du har opprettet en tilbehørsmal for da du kjørte veiledningen Definere gebyrer for hubtilbehør og tilbehørsmaler, i listen. 
-7. Klikk rullegardinknappen i feltet ID for hubtilbehør for å åpne oppslaget.
-8. Klikk koblingen i den valgte raden i listen.
+7. Klikk på rullegardinknappen i feltet ID for hubtilbehør for å åpne oppslaget.
+8. Klikk på koblingen i den valgte raden i listen.
 9. Aktiver/deaktiver utvidelsen av Kriterier-delen.
     * I Kriterier-delen kan du velge de nøyaktige kriteriene for når tillegget skal gjelde, basert på de ulike verdiene som tilbys her.  
 10. Sett alternativet Bruk alltid til Ja.
@@ -48,8 +47,5 @@ Denne prosedyren viser hvordan du setter opp en tilbehørstilordning. Dette gjø
 13. Velg Flat i Tilbehørsgebyrtype-feltet.
     * Tilbehørsgebyrtypen bestemmer hvordan det faktiske tillegget skal beregnes. I dette eksemplet er det et flatt tillegg.  
 14. Angi et tall i Tilbehørsgebyr-feltet.
-15. Klikk Lagre.
+15. Klikk på Lagre.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

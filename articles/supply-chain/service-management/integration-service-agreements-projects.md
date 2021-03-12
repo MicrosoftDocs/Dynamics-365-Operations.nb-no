@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ProjParameters
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 578e4b9fe5ef487e999fd0de28d7566bad21fd89
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5eab6125dbca1568c06818c8528d1bee4ce6bf53
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434627"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4974466"
 ---
 # <a name="integration-for-service-agreements-and-projects"></a>Integrering for serviceavtaler og prosjekter 
 
@@ -61,19 +60,19 @@ Kategoriene som er tilgjengelige for serviceavtalelinjer er definert i skjemaet 
 
 Hvis feltet **Fratrådte arbeidere** på fanen **Journaler** i skjemaet **Parametere for prosjektstyring og regnskap** er valgt, kan du velge inaktive ansatte og aktive ansatte i skjemaene **Serviceavtaler** og **Serviceordrer**.
 
-Du kan også aktivere feltene **Starttidspunkt** og **Sluttidspunkt** i **Prosjekt**-kategorien i skjemaet **Serviceordrer** for å angi start- og sluttidspunktene på serviceordrelinjer.
+Du kan også aktivere feltene **Starttidspunkt** og **Sluttidspunkt** i **Prosjekt**-fanen i skjemaet **Serviceordrer** for å angi start- og sluttidspunktene på serviceordrelinjer.
 
 ## <a name="enable-the-starting-and-ending-time-feature-for-service-orders"></a>Aktivere start- og sluttidspunktfunksjonen for serviceordrer
 
 1.  Klikk på **Prosjektstyring og regnskap** \> **Oppsett** \> **Parametere for prosjektstyring og regnskap**.
 
-2.  Klikk fanen **Journaler**, og velg deretter **Vis start/sluttidspunkt**.
+2.  Klikk på fanen **Journaler**, og velg deretter **Vis start/sluttidspunkt**.
 
-3.  Klikk **Prosjektstyring og regnskap** \> **Oppsett** \> **Journaler** \> **Journalnavn**.
+3.  Klikk på **Prosjektstyring og regnskap** \> **Oppsett** \> **Journaler** \> **Journalnavn**.
 
 4.  Velg journalnavnet som er tilknyttet serviceordren.
 
-5.  Klikk fanen **Generelt**, og velg deretter **Vis start/sluttidspunkt**.
+5.  Klikk på fanen **Generelt**, og velg deretter **Vis start/sluttidspunkt**.
 
 
 > [!NOTE]
@@ -83,6 +82,3 @@ Du kan også aktivere feltene **Starttidspunkt** og **Sluttidspunkt** i **Prosje
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
