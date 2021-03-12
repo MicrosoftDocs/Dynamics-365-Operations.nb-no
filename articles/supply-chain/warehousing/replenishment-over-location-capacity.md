@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSReplenishmentTemplates, WHSLocationLimit
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 8e9ae16fea892d1d6b6a6b5d06137576623e7f5b
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 3f94053920b475ef9190b5ac65a5f9ca01dcd4a1
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434798"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4996129"
 ---
 # <a name="replenishment-over-location-capacity"></a>Etterfylling over lokasjonskapasitet
 
@@ -170,7 +169,7 @@ Etter at du har gjort alle de tidligere beskrevne eksempeldataene tilgjengelige 
 1. På hurtigfanen **Salgsordrelinjer** velger du **Beholdning \> Reservasjon**.
 1. På **Reservasjon**-siden velger du **Reserver parti**.
 1. Lukk siden.
-1. Velg **Frigi til lager** i kategorien **Lager** i handlingsruten.
+1. Velg **Frigi til lager** i fanen **Lager** i handlingsruten.
 
     Du mottar informasjonsmeldinger som viser bølge-ID og forsendelses-ID som er opprettet. Det opprettes også en etterfyllingsbølge.
 
@@ -193,7 +192,7 @@ Etter at du har gjort alle de tidligere beskrevne eksempeldataene tilgjengelige 
 1. På hurtigfanen **Salgsordrelinjer** velger du **Beholdning \> Reservasjon**.
 1. På **Reservasjon**-siden velger du **Reserver parti**.
 1. Lukk siden.
-1. Velg **Frigi til lager** i kategorien **Lager** i handlingsruten.
+1. Velg **Frigi til lager** i fanen **Lager** i handlingsruten.
 
     Du mottar informasjonsmeldinger som viser bølge-ID og forsendelses-ID som er opprettet. Det opprettes også en etterfyllingsbølge.
 
@@ -216,7 +215,7 @@ Etter at du har gjort alle de tidligere beskrevne eksempeldataene tilgjengelige 
 1. På hurtigfanen **Salgsordrelinjer** velger du **Beholdning \> Reservasjon**.
 1. På **Reservasjon**-siden velger du **Reserver parti**.
 1. Lukk siden.
-1. Velg **Frigi til lager** i kategorien **Lager** i handlingsruten.
+1. Velg **Frigi til lager** i fanen **Lager** i handlingsruten.
 
     Du mottar informasjonsmeldinger som viser bølge-ID og forsendelses-ID som er opprettet. Det opprettes også en etterfyllingsbølge.
 
@@ -408,6 +407,3 @@ Nå kan du plukke salgsordre 2. Blokkeringen for den ble fjernet da etter fyllin
 - Du kan manuelt overstyre tilgjengeligheten av etterfyllingsarbeid for hvert arbeidshode fra siden **Arbeidsdetaljer** hvis du vil.
 - Når systemet angir tilgjengeligheten for etterfyllingsarbeid, vurderes all beholdning som allerede finnes på lokasjonen før noe som helst arbeid fullføres.
 - Hver del av salgsordrearbeid er koblet til et bestemt etterfyllingsarbeid. Det finnes ingen tilsvarende funksjonalitet for tilgjengelighet av salgsarbeid.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

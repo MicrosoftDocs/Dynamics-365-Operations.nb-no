@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: InventCountingReasonCodePolicy, InventCountingReasonCode
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 1705903
 ms.assetid: 427e01b3-4968-4cff-9b85-1717530f72e4
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 1025dd00db2e8b87e3c76e3047a7cf470a2d6641
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 66e1fb9f32aa31221f85180339b8b6ee55836be1
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434203"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4996154"
 ---
 # <a name="reason-codes-for-inventory-counting"></a>Årsakskoder for lagertelling
 
@@ -66,7 +65,7 @@ Hvis **Obligatorisk**-parameteren er angitt i konfigurasjonen av årsakskoder fo
 ### <a name="set-up-reason-codes-for-warehouses"></a>Definere årsakskoder for lagre
 
 1. Velg **Lagerstyring** \> **Oppsett** \> **Lageroppdeling** \> **Lagre**.
-2. I **Lager**-kategorien i feltet **Årsakskodepolicy for telling**, velger du ett av følgende alternativer:
+2. I **Lager**-fanen i feltet **Årsakskodepolicy for telling**, velger du ett av følgende alternativer:
 
     - **Tom** -parameteren som er definert for varen, brukes til å bestemme om opptellingsjournalene er obligatoriske for produktet.
     - **Obligatorisk** – en årsakskode kreves alltid på opptellingsjournaler for lageret.
@@ -75,7 +74,7 @@ Hvis **Obligatorisk**-parameteren er angitt i konfigurasjonen av årsakskoder fo
 ### <a name="set-up-reason-codes-for-products"></a>Definere årsakskoder for produkter
 
 1. Velg **Behandling av produktinformasjon** \> **Produkter** \> **Frigitte produkter**.
-2. I **Produkt**-kategorien velger du **Årsakskodepolicy for telling**, og deretter velger du ett av følgende alternativer:
+2. I **Produkt**-fanen velger du **Årsakskodepolicy for telling**, og deretter velger du ett av følgende alternativer:
 
     - **Tom** -parameteren som er definert for lageret, brukes til å bestemme om opptellingsjournalene er obligatoriske for produktet.
     - **Obligatorisk** – en årsakskode kreves alltid på opptellingsjournaler for produktet. Denne innstillingen overstyrer en årsakskodeinnstilling på lagernivå.
@@ -116,7 +115,7 @@ Du kan konfigurere årsakskoder for alle antall på et menyelement i en mobilenh
 ### <a name="set-up-reason-codes-on-a-mobile-device"></a>Definere årsakskoder på en mobilenhet
 
 1. Velg **Lagerstyring** \> **Oppsett** \> **Mobilenhet** \> **Menyelementer på mobilenheten**.
-2. I kategorien **Syklustelling** velger **Syklustelling**.
+2. I fanen **Syklustelling** velger **Syklustelling**.
 3. I feltet **Standard årsakskode for telling** angir du standard årsakskode som skal registreres når tellingen er utført, ved hjelp av menyelementet på mobilenheten.
 4. I feltet **Vis årsakskode for telling** velger du **Linje** for å vise årsakskoden når hvert avvik er registrert. Velg eventuelt **Skjul** hvis ikke årsakskoden skal vises.
 5. Sett **Rediger årsakskode for telling** til **Ja** eller **Ne**. Hvis du setter dette alternativet til **Ja**, kan medarbeideren redigere årsakskoden når den vises på mobilenheten under opptelling.
@@ -144,6 +143,3 @@ Følgende felt vil bli lagt til menyelementet for mobilenhet når **Justering in
 - Standard årsakskode for telling
 - Vis årsakskode for telling
 - Rediger årsakskode for telling
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

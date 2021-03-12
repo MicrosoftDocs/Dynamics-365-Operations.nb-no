@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ERSolutionTable, ERWorkspace, RCS
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 04c46824123906eccbfff18a03974c8043729e0a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0973d36a8fddd16d02776ac6567d424ac6ebc3ae
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446456"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4994320"
 ---
 # <a name="share-electronic-reporting-er-configurations-in-regulatory-configuration-services-rcs-global-repository-with-external-organizations"></a>Dele konfigurasjoner for elektronisk rapportering (ER) i RCS(Regulatory Configuration Services) eller det globale repositoriet med eksterne organisasjoner
 
@@ -50,7 +49,7 @@ Følg denne fremgangsmåten for å kontrollere at konfigurasjonen du vil dele, a
 
 1. I arbeidsområdet **Elektronisk rapportering** velger du **Repositorier** for konfigurasjonsleverandøren.
 
-    ![Konfigurasjonsleverandører](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/1_RCS_Repo_for_config_provider.JPG)
+    ![Konfigurasjonsleverandører](media/1_RCS_Repo_for_config_provider.JPG)
 
 2. Velg **Globalt repositorium** \> **Åpne**.
 3. Søk etter konfigurasjonen du vil dele. Du kan bruke filtreringsfeltet til å begrense søket. Hvis du ikke finner konfigurasjonen i det globale repositoriet, følger du fremgangsmåten under [Opprette og laste opp en ny versjon av en konfigurasjon for elektronisk rapportering (ER)](rcs-global-repo-upload.md).
@@ -64,17 +63,12 @@ Når en konfigurasjon er opprettet under konfigurasjonsleverandøren, kan du del
 3. Velg konfigurasjonen du vil dele.
 4. I hurtigkategorien **Delt med** velger du **Organisasjon**.
 
-    ![Delt med hurtigkategori](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/1_RCS_Repo_for_Share_with_org.JPG)
+    ![Delt med hurtigkategori](media/1_RCS_Repo_for_Share_with_org.JPG)
 
 5. I dialogboksen angir du domenenavnet for den eksterne organisasjonen, og deretter velger du **OK**.
 
-    ![Dele konfigurasjonsversjon med dialogboksen Ekstern organisasjon](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/1_RCS_Repo_for_Share_with_form.JPG)
+    ![Dele konfigurasjonsversjon med dialogboksen Ekstern organisasjon](media/1_RCS_Repo_for_Share_with_form.JPG)
 
 Konfigurasjonen deles med den eksterne organisasjonen, og er tilgjengelig for den organisasjonen i det globale repositoriet. Derfra kan den importeres til organisasjonens forekomst av RCS eller i forekomstene av Finance and Operations-apper.
 
-![Konfigurasjon delt med en ekstern organisasjon](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/Janeaug_RCSdocs/articles/finance/localizations/media/1_RCS_Repo_for_Share_with_test.com)
-
 6. Hvis du vil oppheve deling av en konfigurasjon som tidligere er delt med en ekstern organisasjon, velger du konfigurasjonen og klikker **Opphev deling**, og deretter velger du **OK**
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

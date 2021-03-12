@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSParameters
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 27030e8dd58b290d80f6b00cbd250e09c1e50819
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8c4775ca3f44486fd3cd557df49acd229048d186
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434202"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4996179"
 ---
 # <a name="release-to-warehouse-rule"></a>Frigi til lager-regel
 
@@ -104,7 +103,7 @@ Dette scenariet viser hvordan funksjonen fungerer for lagre som er satt til **Kr
 1. På **Reservasjon**-siden velger du **Reserver parti** for å reservere den valgte linjens fulle antall i lageret.
 1. Lukk **Reservasjon**-siden for å gå tilbake til salgsordren.
 1. Ikke reserver den andre ordrelinjen.
-1. Velg **Frigi til lager** i kategorien **Lager** i handlingsruten.
+1. Velg **Frigi til lager** i fanen **Lager** i handlingsruten.
 1. Legg merke til at du får følgende feilmelding: Hele antall må være fysisk reservert." Derfor oppretter ikke systemet noe arbeid, forsendelse eller last for ordren.
 
     > [!NOTE]
@@ -122,7 +121,7 @@ Dette scenariet viser hvordan funksjonen fungerer for lagre som er satt til **Ti
     - **Linje 2:** Angi **Varenummer**-feltet til _A0002_, **Antall**-feltet til _2_ og **Enhet**-feltet til _Pcs_.
 
 1. På samme måte som i [forrige scenario](#scenario1), reserverer du hele antallet for ordrelinje 1, men ikke reserver ordrelinje 2.
-1. Velg **Frigi til lager** i kategorien **Lager** i handlingsruten.
+1. Velg **Frigi til lager** i fanen **Lager** i handlingsruten.
 1. Legg merke til at du ikke får en feilmelding denne gangen. I stedet oppretter systemet arbeid, forsendelser og laster etter behov, og viser resultatene.
 1. Hvis du vil vise informasjon om forsendelse, last og arbeid, bruker du alternativene på **Lager**-menyen over rutenettet:
 
@@ -131,6 +130,3 @@ Dette scenariet viser hvordan funksjonen fungerer for lagre som er satt til **Ti
 
 > [!NOTE]
 > Det samme resultatet forventes når den andre linjen er delvis reservert. I dette tilfellet vil arbeidet bli opprettet for det reserverte linjeantallet, men ikke for det ikke-reserverte antallet.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

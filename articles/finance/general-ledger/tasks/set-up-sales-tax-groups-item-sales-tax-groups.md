@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: TaxGroup,  TaxItemGroup
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 24210129f7595c6544234c20915f4003bf0e1eb8
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e35f98de715af95b0bec2b2ca5d7e7570aa8fdba
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446246"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4994496"
 ---
 # <a name="set-up-sales-tax-groups-and-item-sales-tax-groups"></a>Definere mva-grupper og mva-grupper for vare
 
@@ -50,6 +49,3 @@ Denne oppgaveregistreringen leder deg gjennom oppsettet av merverdiavgift og mva
 19. Klikk koblingen i den valgte raden i listen.
 20. Klikk **Lagre**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

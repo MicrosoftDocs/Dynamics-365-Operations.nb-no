@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application user
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 74854fa95837dd8a133860e2a017be4c92ff84a3
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 2cce1038ed393fc8a7bb489a37fc0921b0ac755e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4645483"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4993941"
 ---
 # <a name="troubleshoot-picking-and-packing"></a>Feilsøke plukking og pakking
 
@@ -110,6 +109,3 @@ Når du bruker prosessen *Systemkontrollert gruppeplukking*, hvis du konfigurere
 ### <a name="issue-resolution"></a>Problemløsning
 
 Du kan løse dette problemet ved å redigere gruppeprofilen og sette **Aktiver stillinger**-alternativet til *Nei*.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

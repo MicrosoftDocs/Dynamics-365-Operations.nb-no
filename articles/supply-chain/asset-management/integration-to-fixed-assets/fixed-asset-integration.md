@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: cdda44d361011706fe0ba170309908533aa0c2f7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 879950b9aeb345fcd59dfe73d3963a44607c7ac2
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434299"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4994235"
 ---
 # <a name="integrate-asset-management-with-fixed-assets"></a>Integrere aktivabehandling med anleggsmidler
 
@@ -38,7 +37,7 @@ Denne valgfrie konfiguasjonen gjør det mulig å angi et arbeidssted for nye ved
 Følg fremgangsmåten nedenfor for å fullføre konfigurasjonen.
 
 1. Gå til **Aktivastyring \> Oppsett \> Aktivabehandlingsparametere**.
-1. Velg standardstedet i kategorien **Anleggsmidler**, i **Arbeidssted**-feltet.
+1. Velg standardstedet i fanen **Anleggsmidler**, i **Arbeidssted**-feltet.
 1. Velg **Lagre** i handlingsruten.
 
 ## <a name="work-with-integrated-maintenance-assets-and-fixed-assets"></a>Arbeide med integrerte vedlikeholdseiendeler og anleggsmidler
@@ -70,9 +69,9 @@ Gjør følgende for å vise vedlikeholdsgjenstanden som er knyttet til et valgt 
 
 1. Gå til **Anleggsmidler \> Anleggsmidler \> Anleggsmidler**.
 1. Velg et aktivum.
-1. På handlingsruten, i kategorien **Aktivastyring** i **Vis**-gruppen, velger du **Vedlikeholdsgjenstand**.
+1. På handlingsruten, i fanen **Aktivastyring** i **Vis**-gruppen, velger du **Vedlikeholdsgjenstand**.
 
-    **Vedlikeholdsgjenstand**-siden for aktivaet som er knyttet til det valgte anleggsmidlet, åpnes. (Denne siden finnes vanligvis under **Aktivastyring \> Anleggsmidler \> Alle anleggsmidler**.)
+    **Vedlikeholdsgjenstand**-siden for aktivumet som er knyttet til det valgte anleggsmidlet, åpnes. (Denne siden finnes vanligvis under **Aktivastyring \> Anleggsmidler \> Alle anleggsmidler**.)
 
 ### <a name="view-maintenance-costs-that-are-associated-with-a-fixed-asset"></a>Vise vedlikeholdskostnader som er knyttet til et anleggsmiddel
 
@@ -82,7 +81,7 @@ Gjør følgende for å vise vedlikeholdskostnadene som er knyttet til et valgt a
 
 1. Gå til **Anleggsmidler \> Anleggsmidler \> Anleggsmidler**.
 1. Velg et aktivum.
-1. På handlingsruten, i kategorien **Aktivastyring** i **Vis**-gruppen, velger du **Vedlikeholdskostnad**.
+1. På handlingsruten, i fanen **Aktivastyring** i **Vis**-gruppen, velger du **Vedlikeholdskostnad**.
 
     Siden **Vedlikeholdskostnad** åpnes, og viser de tilknyttede kostnadene.
 
@@ -92,7 +91,7 @@ Gjør følgende for å opprette en ny vedlikeholdsgjenstand for et eksisterende 
 
 1. Gå til **Anleggsmidler \> Anleggsmidler \> Anleggsmidler**.
 1. Velg et aktivum.
-1. På handlingsruten, i kategorien **Aktivastyring** i **Ny**-gruppen, velger du **Opprett vedlikeholdsgjenstand**. (Hvis dette alternativet ikke er tilgjengelig, kan det hende at et vedlikeholdsgjenstanden allerede er knyttet til det valgte anleggsmidlet.)
+1. På handlingsruten, i fanen **Aktivastyring** i **Ny**-gruppen, velger du **Opprett vedlikeholdsgjenstand**. (Hvis dette alternativet ikke er tilgjengelig, kan det hende at et vedlikeholdsgjenstanden allerede er knyttet til det valgte anleggsmidlet.)
 1. Fullfør opprettelsen av aktivumet som beskrevet i [Opprette et aktiva](../objects/create-an-object.md).
 
 ### <a name="create-a-new-fixed-asset-and-add-a-new-maintenance-asset-for-it"></a>Opprette et nytt anleggsmiddel og legge til en ny vedlikeholdsgjenstand for det
@@ -102,7 +101,7 @@ Gjør følgende for å opprette et nytt anleggsmiddel og legge til en ny vedlike
 1. Gå til **Anleggsmidler \> Anleggsmidler \> Anleggsmidler**.
 1. Velg **Ny** i handlingsruten.
 1. Fullfør opprettelsen av anleggsmidlet som beskrevet i [Opprette et anleggsmiddel](../../../finance/fixed-assets/tasks/create-fixed-asset.md).
-1. På handlingsruten, i kategorien **Aktivastyring** i **Ny**-gruppen, velger du **Opprett vedlikeholdsgjenstand**.
+1. På handlingsruten, i fanen **Aktivastyring** i **Ny**-gruppen, velger du **Opprett vedlikeholdsgjenstand**.
 1. Fullfør opprettelsen av aktivumet som beskrevet i [Opprette et aktiva](../objects/create-an-object.md).
 
 ### <a name="remove-the-association-between-two-assets"></a>Fjerne tilknytningen mellom to anleggsmidler
@@ -115,6 +114,3 @@ Gjør følgende for å fjerne en tilknytning mellom en vedlikeholdsgjenstand og 
 1. Finn og åpne anleggsmidlet.
 1. I hurtigfanen **Anleggsmiddel** fjerner du verdien fra **Arbeidssted**-feltet.
 1. Velg **Lagre** i handlingsruten.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

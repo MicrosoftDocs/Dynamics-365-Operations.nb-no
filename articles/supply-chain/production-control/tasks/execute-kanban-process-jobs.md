@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: KanbanBoardWorkCell, KanbanJobStatusUpdate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a1c32b577007c400f3528a110436eb97aaabefe2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9da49ae17d6c25166f6b0e05e3c45fc991c9a54d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434455"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4994160"
 ---
 # <a name="execute-kanban-process-jobs"></a>Kjøre Kanban-prosessjobber
 
@@ -33,8 +32,8 @@ Denne prosedyren fokuserer på utfører Kanban-prosessjobber. Den første jobben
 
 ## <a name="select-a-kanban-job"></a>Merke en Kanban-jobb
 1. Gå til Produksjonskontroll > Kanban > Kanban-tavle for prosessjobber.
-2. Klikk rullegardinknappen i Arbeidscelle-feltet for å åpne oppslaget.
-3. Klikk raden med ressursgruppe 1250. Dette filtrerer jobblisten slik at bare jobbene for arbeidscelle 1250 vises.
+2. Klikk på rullegardinknappen i Arbeidscelle-feltet for å åpne oppslaget.
+3. Klikk på raden med ressursgruppe 1250. Dette filtrerer jobblisten slik at bare jobbene for arbeidscelle 1250 vises.
     * Merke raden som har jobbstatusen Planlagt.  
 
 ## <a name="complete-a-job-with-expected-quantity"></a>Fullføre en jobb med forventet antall
@@ -42,21 +41,18 @@ Denne prosedyren fokuserer på utfører Kanban-prosessjobber. Den første jobben
     * Denne delen viser viktig informasjon om kortnummer, varenummer, antall bestilt og aktivitetsnavn.  
 2. Vis eller skjul delen Produksjonsinstruksjoner.
     * Denne delen viser produksjonsinstruksjoner for aktiviteten. Instruksjonene kan være tekst, bilder, tegninger og andre dokumenter.  
-3. Klikk Start.
+3. Klikk på Start.
     * Velg en jobb som ikke er fullført. Bruk statusikoner i statusfeltet for jobben for å vise jobbstatus.      
-4. Klikk Fullført.
+4. Klikk på Fullført.
     * Jobben er fullført med den forventede kvaliteten.  
 
 ## <a name="complete-a-job-with-errors"></a>Fullføre en jobb med feil
-1. Klikk Start.
+1. Klikk på Start.
     * Når en jobb er fullført, velges den neste jobben i listen automatisk. Dette er grunnen til at du ikke trenger å velge en jobb før du klikker Start.  
-2. Klikk Produksjon i handlingsruten.
-3. Klikk Fullfør (detaljer).
+2. Klikk på Produksjon i handlingsruten.
+3. Klikk på Fullfør (detaljer).
 4. Merk den valgte raden i listen.
 5. Angi et tall i Antall feil-feltet.
 6. Angi et tall i feltet Antall korrekte-antall.
-7. Klikk OK.
+7. Klikk på OK.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

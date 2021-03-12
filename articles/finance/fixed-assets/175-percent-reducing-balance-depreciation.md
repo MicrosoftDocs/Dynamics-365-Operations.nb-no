@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 13911
 ms.assetid: cc5d001f-bcfe-4602-9ec1-9e265e9fd188
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3a21c315aa9a7193c20e4184da20d4d6d38386c4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 82af2a810df4ea0ab8880eb2215e22e5818e178d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446433"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995046"
 ---
 # <a name="175-percent-reducing-balance-depreciation"></a>175 % redusert saldoavskrivning
 
@@ -75,19 +74,16 @@ Hvis du velger **Skattemessig** som avskrivningsår, er følgende alternativer t
 | Levetid i år             | 5      |
 | Årlig avskrivningsprosent | 35 %    |
 
-Avskrivingsmetoden 175 % saldoavskrivning dividerer 175 prosent med antall levetidsår. Avskrivningsbeløpet for året beregnes ved å multiplisere denne prosentandelen med anleggsmiddelets netto bokført verdi.
+Metoden 175 % redusert saldoavskrivning dividerer 175 prosent med antall levetidsår. Avskrivningsbeløpet for året beregnes ved å multiplisere denne prosentandelen med anleggsmiddelets netto bokført verdi.
 
 | Periode | Beregning av årlig avskrivningsbeløp | Bokført verdi                  | Netto bokverdi på slutten av året |
 |--------|-----------------------------------------------|-----------------------------|---------------------------------------|
-| År 1 | (11 000 - 1 000) × 35 % = 3 500                | 11 000 - 3 500 = 7 500      | 11 000 - 1 000 - 3 500 = 6 500        |
-| År 2 | 6 500 × 35 % = 2 275                           | 7 500 - 2 275 = 5 225       | 6 500 - 2 275 = 4 225                 |
-| År 3 | 4 225 × 35 % = 1 478,75                        | 5 225 - 1 478,75 = 3 746,25 | 4 225 - 1 478,75 = 2 746,25           |
+| År 1 | (11 000 – 1 000) × 35 % = 3 500                | 11 000 – 3 500 = 7 500      | 11 000 – 1 000 – 3 500 = 6 500        |
+| År 2 | 6 500 × 35 % = 2 275                           | 7 500 – 2 275 = 5 225       | 6 500 – 2 275 = 4 225                 |
+| År 3 | 4 225 × 35 % = 1 478,75                        | 5 225 – 1 478,75 = 3 746,25 | 4 225 – 1 478,75 = 2 746,25           |
 
 > [!NOTE] 
 > Vanligvis når beløpet som beregnes ved å bruke 175% saldoavskrivningsmetode, blir mindre enn beløpet som ville blitt beregnet ved hjelp av den lineære metoden, går man over til lineær avskrivning resten av levetiden.
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

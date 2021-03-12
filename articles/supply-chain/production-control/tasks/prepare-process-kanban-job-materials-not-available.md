@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: KanbanBoardWorkCell
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d57df6188aacc2f8a56a7ba91c4ab50a90901a7e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: df0396a1d00e61ad82e52fc07779e239cd811ab8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434105"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4994097"
 ---
 # <a name="prepare-a-process-kanban-job-when-materials-are-not-available-for-the-work-cell"></a>Klargjøre en Kanban-prosessjobb når materialer ikke er tilgjengelige for arbeidscellen
 
@@ -31,8 +30,8 @@ ms.locfileid: "4434105"
 Denne prosedyren fokuserer på å klargjøre en kanban-prosessjobb når noen materialer ikke er tilgjengelige for arbeidscellen. Derfor er det nødvendig å plukker materialer fra lageret. Fremgangsmåten "Klargjøre en kanban-prosessjobb når materialer er tilgjengelige" er en forutsetning for oppretting av denne fremgangsmåten. Denne prosedyren er ment for maskinoperatøren. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
 
 1. Gå til Produksjonskontroll > Kanban > Kanban-tavle for prosessjobber.
-2. Klikk rullegardinknappen i Arbeidscelle-feltet for å åpne oppslaget.
-3. Klikk koblingen i den valgte raden i listen.
+2. Klikk på rullegardinknappen i Arbeidscelle-feltet for å åpne oppslaget.
+3. Klikk på koblingen i den valgte raden i listen.
     * Velg arbeidscellen 1250.  
 4. Finn og velg ønsket post i listen.
     * Velg Kanban 000356.  
@@ -45,13 +44,10 @@ Denne prosedyren fokuserer på å klargjøre en kanban-prosessjobb når noen mat
 1. Aktiver/deaktiver utvidelsen av delen Overføringsjobber.
 2. Bruk hurtigfilteret til å filtrere på feltet Varenummer med verdien P0002.
 3. Finn og velg ønsket post i listen.
-4. Klikk Start.
+4. Klikk på Start.
     * Overføring pågår.  
-5. Klikk Fullført.
+5. Klikk på Fullført.
     * Vare P0002 er nå tilgjengelig i plukklisten for kanban-jobben. Dette betyr at vi kan forberede kanban med alle de nødvendige materialene.  
-6. Klikk Klargjør.
+6. Klikk på Klargjør.
     * Legg merke til at et ikon i jobbstatusen angir at jobben er klar.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

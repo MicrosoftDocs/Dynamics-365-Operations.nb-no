@@ -3,7 +3,7 @@ title: Kundeordrer på salgssted (POS)
 description: Dette emnet gir informasjon om kundeordrer på salgssted (POS). Kundeordrer er også kjent som spesialbestillinger. Emnet inneholder en beskrivelse av relaterte parametere og flyter for transaksjonen.
 author: josaw1
 manager: AnnBe
-ms.date: 09/03/2020
+ms.date: 01/06/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailFunctionalityProfile
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 260594
 ms.assetid: 6fc835ef-d62e-4f23-9d49-50299be642ca
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 9e5770de82638e6cef6d4c1dffd1dc85549fb11f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6fec80dd2836a5400a7178e732fe1d5da41aca4a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414630"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4995801"
 ---
 # <a name="customer-orders-in-point-of-sale-pos"></a>Kundeordrer på salgssted (POS)
 
@@ -52,9 +51,9 @@ Hvis du vil bruke kundeordrer, må du konfigurere leveringsmåter som butikkanal
 
 ### <a name="set-up-fulfillment-groups"></a>Definere oppfyllelsesgrupper
 
-Noen butikker eller lagerlokasjoner vil kanskje ikke kunne innfri kundeordrer. Ved å konfigurere oppfyllelsesgrupper kan en organisasjon angi hvilke butikker og lagerlokasjoner som skal vises som alternativer for brukere som oppretter kundeordrer i POS. Oppfyllelsesgrupper konfigureres på siden **Oppfyllelsesgrupper**. Organisasjoner kan opprette så mange oppfyllelsesgrupper de krever. Når en oppfyllelsesgruppe er definert, er den koblet til en butikk ved hjelp av en knapp i kategorien **Oppsett** i handlingsruten på siden **Butikker**.
+Noen butikker eller lagerlokasjoner vil kanskje ikke kunne innfri kundeordrer. Ved å konfigurere oppfyllelsesgrupper kan en organisasjon angi hvilke butikker og lagerlokasjoner som skal vises som alternativer for brukere som oppretter kundeordrer i POS. Oppfyllelsesgrupper konfigureres på siden **Oppfyllelsesgrupper**. Organisasjoner kan opprette så mange oppfyllelsesgrupper de krever. Når en oppfyllelsesgruppe er definert, kobles den til en butikk ved å velge **Gruppetilordning for oppfyllelse** i kategorien **Oppsett** i handlingsruten på siden **Butikker**.
 
-I Commerce versjon 10.0.12 og nyere kan organisasjoner definere om lager- eller butikkombinasjonene som er definert i oppfyllelsesgrupper, kan brukes til forsendelse, henting eller begge deler. Derfor har butikken mer fleksibilitet for å styre lager- og butikkalternativene som vises for brukere som oppretter en ordre for henting i forhold til en ordre for forsendelse. Hvis du vil dra nytte av disse konfigurasjonsalternativene, må du aktivere funksjonen **Mulighet til å angi lokasjoner, som Forsendelse eller Henting, som er aktivert i en oppfyllelsesgruppe**. Hvis et lager som er knyttet til en oppfyllelsesgruppe, ikke er en butikk, kan det bare konfigureres som forsendelseslokasjon. Det kan ikke brukes når ordrer for henting er konfigurert i POS.
+I Commerce versjon 10.0.12 og nyere kan organisasjoner definere om lager- eller lager og butikk-kombinasjonene som er definert i oppfyllelsesgrupper, kan brukes til forsendelse, henting eller begge deler. Dette gir ekstra fleksibilitet for virksomheten, slik at du kan bestemme hvilke lagre som kan velges ved oppretting av en kundeordre for varer som skal sendes, i forhold til hvilke butikker som kan velges ved oppretting av en kundeordre for plukking av varer. For å bruke disse konfigurasjonsalternativene, aktiverer du funksjonen **Mulighet til å angi lokasjoner, som Forsendelse eller Henting, som er aktivert i en oppfyllelsesgruppe**. Hvis et lager som er knyttet til en oppfyllelsesgruppe, ikke er en butikk, kan det bare konfigureres som forsendelseslokasjon. Det kan ikke brukes når ordrer for henting er konfigurert i POS.
 
 ![Siden oppfyllelsesgrupper](media/customer-order-fulfillment-group.png)
 
@@ -99,7 +98,10 @@ Kontroller at [skjermoppsettet](https://docs.microsoft.com/dynamics365/commerce/
 
 ![Operasjoner på transaksjonsskjermbildet i POS](media/customer-order-screen-layout.png)
 
-## <a name="working-with-customer-orders-in-pos"></a>Arbeide med kundeordrer i POS
+## <a name="work-with-customer-orders-in-pos"></a>Arbeide med kundeordrer på salgssted
+
+> [!NOTE]
+> Inntektsføringsfunksjonalitet støttes for øyeblikket ikke for bruk i Commerce-kanaler (e-commerce, salgssted, telefonsenter). Varer som konfigureres med inntektsføringen, skal ikke legges til i ordrer som opprettes i Commerce-kanaler. 
 
 ### <a name="create-a-customer-order-for-products-that-will-be-shipped-to-the-customer"></a>Opprette en kundeordre for produkter som skal leveres til kunden
 
@@ -118,7 +120,7 @@ Kontroller at [skjermoppsettet](https://docs.microsoft.com/dynamics365/commerce/
 2. Legg til produkter i handlevognen.
 3. Velg **Valgt for henting** eller **Hent alle** for å starte ordrehentingskonfigurasjonen.
 4. Velg butikklokasjonen der kunden skal hente de valgte varene.
-5. Velg en hentedato.
+5. Velg en dato for når varen skal hentes.
 6. Bruk betalingsfunksjonene til å betale for alle beregnede beløp som forfaller, eller bruke operasjonen **Overstyring av innbetaling** til å endre beløpene som forfaller, og deretter bruke betalingen.
 7. Hvis hele ordresummen ikke ble betalt, velger du om kunden skal utføre betalingen senere (ved henting), eller om et kredittkort skal tokeniseres nå, og deretter brukes og registreres ved henting.
 
@@ -127,12 +129,10 @@ Kontroller at [skjermoppsettet](https://docs.microsoft.com/dynamics365/commerce/
 Detaljhandelsesordre som er opprettet i den nettbaserte kanalen eller butikkanalen, kan kalles tilbake og redigeres i POS etter behov.
 
 > [!IMPORTANT]
-> Ordrer som opprettes i en telefonsenterkanal, kan ikke redigeres via POS hvis innstillingen [Aktiver ordreoppfylelse](https://docs.microsoft.com/dynamics365/commerce/set-up-order-processing-options#enable-order-completion) er aktivert for telefonsenterkanalen. Hvis du vil sikre riktig betalingsbehandling, må ordrer som kom fra en telefonsenterkanal, og som bruker funksjonen for å aktivere ordreoppfyllelse, redigeres via telefonsenterappen i Commerce Headquarters.
+> Ikke alle detaljordrer kan redigeres via salgsstedsprogrammet. Ordrer som opprettes i en telefonsenterkanal, kan ikke redigeres via POS hvis innstillingen [Aktiver ordreoppfylelse](https://docs.microsoft.com/dynamics365/commerce/set-up-order-processing-options#enable-order-completion) er aktivert for telefonsenterkanalen. Hvis du vil sikre riktig betalingsbehandling, må ordrer som kom fra en telefonsenterkanal, og som bruker funksjonen for å aktivere ordreoppfyllelse, redigeres via telefonsenterappen i Commerce Headquarters.
 
-I Commerce versjon 10.0.13 og tidligere kan brukere redigere støttede kundeordrer via POS bare hvis ordrene er helt åpne. Hvis noen av linjene i en ordre allerede er behandlet for oppfyllelse (plukking, pakking og så videre), blir ordren låst for redigering i POS.
+I versjon 10.0.17 og senere kan brukere redigere kvalifiserte ordrer via salgsstedsprogrammet, selv om ordren er delvis oppfylt. Ordrer som er helt fakturert, kan imidlertid fremdeles ikke redigeres via POS. For aktivere denne funksjonen aktiverer du funksjonen **Rediger delvis fullførte ordrer i Point of Sale** i arbeidsområdet **Funksjonsbehandling**. Hvis denne funksjonen ikke er aktivert, eller hvis du bruker versjon 10.0.16 eller tidligere, kan brukere bare redigere kundeordrer på salgsstedet hvis ordren er helt åpen. Hvis funksjonen er aktivert, kan du begrense hvilke butikker som kan redigere delvis fullførte ordrer. Alternativet for å deaktivere denne funksjonen for bestemte butikker kan konfigureres ved hjelp av **Funksjonalitetsprofil** i hurtigfanen **Generelt**.
 
-> [!NOTE]
-> I Commerce versjon 10.0.14 lar en funksjon som er frigitt i [offentlig forhåndsvisning](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-terms), POS-brukere redigere kundeordrer via POS, selv om noen av ordrene allerede er oppfylt. Ordrer som er helt fakturert, kan imidlertid fremdeles ikke redigeres via POS. Hvis du vil teste denne forhåndsvisningsfunksjonen og gi ekstra tilbakemelding, aktiverer du funksjonen **(forhåndsvisning) Rediger delvis fullførte ordrer i Point of Sale** i arbeidsområdet **Funksjonsbehandling**. Kundeordrer som kom fra en telefonsenterkanal, og som bruker funksjonen for å aktivere ordreoppfyllelse, kan ikke redigeres selv etter at denne funksjonen er aktivert.
 
 1. Velg **Tilbakekall ordre**.
 2. Bruk **Søk** til å angi filtre for å finne ordren, og velg deretter **Bruk**.
@@ -170,6 +170,3 @@ Når alternativet **Opprett kundeordre i asynkron modus** er satt til **Ja**, op
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Hybride kundeordrer](hybrid-customer-orders.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, LeanPeggingTree
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e429fef6101f611d7a2c1b5323d6fe1e39d1cdd3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 457e7128bed2232a3e092b31136f768940482741
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434375"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4994185"
 ---
 # <a name="lean-pegging-from-sales-orders"></a>Lean-utligning fra salgsordrer
 
@@ -33,30 +32,27 @@ Denne prosedyren fokuserer på å validere utligningstreet fra en salgslinje der
 
 ## <a name="create-a-sales-order-for-a-kanban-controlled-item"></a>Opprette en salgsordre for en Kanban-styrt vare
 1. Gå til Alle salgsordrer.
-2. Klikk Ny.
+2. Klikk på Ny.
 3. Angi eller velg en verdi i Kundekonto-feltet.
     * Bruk US-001.  
-4. Klikk OK.
+4. Klikk på OK.
 5. Skriv inn L0001 i feltet Varenummer.
 6. Sett verdien for Antall til 30.
     * Det er viktig at antallet er høyere enn 24 for å utløse Kanban-regelen for hendelse.  
 
 ## <a name="open-a-pegging-tree"></a>Åpne et utligningstre 
-1. Klikk Produkt og forsyning.
-2. Klikk Vis utligningstre.
+1. Klikk på Produkt og forsyning.
+2. Klikk på Vis utligningstre.
     * Legg merke til at utligningstreet viser alle nivåer av utligningen som kreves for salgsordrelinjen. I dette tilfellet er det to nivåer med Kanbaner og alle de nødvendige komponentene.  
 
 ## <a name="plan-the-pegging-tree"></a>Planlegge utligningstreet
 1. Velg Salgslinje 000832 \ Kanban 000558.
 2. Vis delen Kanban-jobber.
     * Legg merke til at jobbstatusen for Kanban-jobben er Ikke planlagt.  
-3. Klikk Planlegg helt utligningstre.
+3. Klikk på Planlegg helt utligningstre.
     * Dette vil planlegge alle Kanban-jobber i utligningstreet, og endre jobbstatusen fra Ikke planlagt til Planlagt.  
 4. Oppdater siden.
     * Legg merke til at Kanban-jobbstatusen endres fra Ikke planlagt til Planlagt.  
 5. Velg Salgslinje 000832 \ Kanban 000558\ Problem for L0001\ Kanban 000559 i treet.
     * Jobben for den andre Kanbanen planlegges også fordi hele utligningstreet planlegges. Legg merke til at Kanban-jobbstatusen endres fra Ikke planlagt til Planlagt.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

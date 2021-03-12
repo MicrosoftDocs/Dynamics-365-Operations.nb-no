@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: CustParameters
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e98203f03f10b3a7c530cb91211df2af025710dc
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: dc991e03ba88846a8077fbebb7a7412c8abe1f18
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434504"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4994109"
 ---
 # <a name="credit-limits-for-customers"></a>Kredittgrenser for kunder
 
@@ -120,7 +119,7 @@ Bruk **Parametere for kundefordringer**-skjemaet for å spesifisere om det skal 
 
 Bruk skjemaet **Kunder** for å spesifisere kredittgrensebeløpet for en bestemt kunde. Du må være medlem av en sikkerhetsrolle som har vedlikehold av kundemaster (CustCustomersMaintain)-ansvar tildelt for å gjøre endringer i dette skjemaet.
 
-1.  Klikk **Kunder** \> **Felles** \> **Kunder** \> **Alle kunder**. Dobbeltklikk en kundekonto.
+1.  Klikk på **Kunder** \> **Felles** \> **Kunder** \> **Alle kunder**. Dobbeltklikk en kundekonto.
 
 2.  I skjemaet **Kunder** på Handlings-ruten, klikk **Rediger**.
 
@@ -135,9 +134,6 @@ Bruk skjemaet **Kunder** for å spesifisere kredittgrensebeløpet for en bestemt
 
 Noen ganger må du kanskje manuelt sjekke kundens kredittgrense. For eksempel kan du manuelt sjekke kundens kredittgrense før du begynner å legge inn en salgsordre. Du kan bruke skjemaet **Salgsordre** for å manuelt sjekke kredittgrenser. Du må være medlem av en sikkerhetsrolle som har vedlikehold av salgsordre (SalesOrderMaintain)-ansvar tildelt for å gjøre endringer i dette skjemaet.
 
-1.  Klikk **Salg og markedsføring** \> **Vanlig** \> **Salgsordrer** \> **Alle salgsordrer**. Dobbeltklikk en salgsordre.
+1.  Klikk på **Salg og markedsføring** \> **Vanlig** \> **Salgsordrer** \> **Alle salgsordrer**. Dobbeltklikk en salgsordre.
 
-2.  I skjemaet **Salgsordre** i Handlingsvinduet, på **Administrer**-kategorien, klikk **Sjekk kredittgrense**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+2.  I skjemaet **Salgsordre** i Handlingsvinduet, på **Administrer**-fanen, klikk **Sjekk kredittgrense**.
