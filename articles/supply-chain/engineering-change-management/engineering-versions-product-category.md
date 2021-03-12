@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: EngChgLookupDynastring, EngChgProductVersionNumberRule, EngChgEcmProductRoute, EngChgEcmRequestProducts, EngChgEcmProductRoute, EngChgEcmProductPreview,EngChgEcmProductBOMItemIdLookup, EngChgEcmProductBOMConsistOf, EngChgEcmProductCreate, EngChgEcmProductLookup, EngChgProductVersionPrCompany, ngChgProductTypeLookup, EngChgProductType, EngChgProductItemPart, EngChgProductItem, EngChgEcmCategory, EngChgEcmBomDesignerEditBom, EngChgEcmBomDesigner, EngChgEcmBOMCopyDialog
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 3eb5b5c4304b393008ecc5f5ff5a663295ed0d22
-ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
+ms.openlocfilehash: c15dcd0adfcf9b9022a919bd516dcf5117ea5041
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4434855"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4987485"
 ---
 # <a name="engineering-versions-and-engineering-product-categories"></a>Tekniske versjoner og kategorier for teknisk produkt
 
@@ -116,7 +115,7 @@ Angi følgende felter i hurtigfanen **Detaljer** for en kategori for teknisk end
 | Spor versjoner i transaksjoner | Velg om produktversjonen skal stemples inn på alle transaksjoner (logistikkinnvirkning). Hvis du for eksempel sporer versjonen i transaksjoner, vil hver salgsordre vise hvilken versjon av produktet som er solgt, i den aktuelle salgsordren. Hvis du ikke sporer versjonen i transaksjoner, viser ikke salgsordrer hvilken bestemt versjon som ble solgt. I stedet viser de alltid den nyeste versjonen.<ul><li>Hvis dette alternativet er satt til *Ja*, opprettes det en produktstandard for produktet, og hver versjon av produktet vil være en variant som bruker *versjonsproduktdimensjonen*. Feltet **Produktets undertype** settes automatisk til *Produktstandard*, og du må velge en produktdimensjonsgruppe der *versjonsdimensjonen* er aktiv. Bare produktdimensjonsgrupper der *versjon* er en aktiv dimensjon, vil vises. Du kan opprette nye produktdimensjonsgrupper ved å velge **Rediger**-knappen (blyantsymbolet).</li><li>Hvis dette alternativet er satt til *Nei*, brukes ikke *versjonsproduktdimensjonen*. Du kan deretter velge om du vil opprette et produkt eller en produktstandard som bruker de andre dimensjonene.</li></ul><p>Dette alternativet brukes ofte for produkter som har en kostnadsforskjell mellom versjoner eller produkter der forskjellige betingelser gjelder i forbindelse med kunden. Derfor er det viktig å angi hvilken versjon som ble brukt i hver transaksjon.</p> |
 | Produktets undertype | Velg om kategorien skal inneholde produkter eller produktstandarder. For produktstandarder brukes produktdimensjoner.
 | Produktdimensjonsgruppe | Med innstillingen **Spor versjoner i transaksjoner** kan du velge produktets undertype. Hvis du har angitt at du vil spore versjonen i transaksjoner, vises produktdimensjonsgruppene der *versjonsdimensjonen* brukes. Ellers vises bare produktdimensjonsgrupper der *versjonsdimensjonen* ikke brukes. |
-| Produktlivsløpstilstand ved opprettelse | Definer standardstatusen for produktstatusen som et teknisk produkt skal ha når det opprettes først. Hvis du vil ha mer informasjon, kan du se [Produktstatuser og transaksjoner](product-lifecycle-state-transactions.md). |
+| Produktlivssyklustilstand ved opprettelse | Definer standardstatusen for produktstatusen som et teknisk produkt skal ha når det opprettes først. Hvis du vil ha mer informasjon, kan du se [Produktstatuser og transaksjoner](product-lifecycle-state-transactions.md). |
 | Versjonsnummerregel | Velg versjonsnummerregelen som gjelder for kategorien:<ul><li>**Manuell** – Du velger versjonsnummeret for hver nye versjon.</li><li>**Automatisk** – Systemet angir versjonsnummeret, basert på et format du definerer. Når du definerer formatet, bruker du et nummertegn (\#) til å representere et siffer og et hvilket som helst annet tegn til å representere en konstant verdi. Hvis du for eksempel definerer formatet som *V-\#\#*, vil den første versjonen være V-01, den andre versjonen være V-02 og så videre.</li><li>**Liste** – Systemet bruker neste nummer fra en forhåndsdefinert liste over egendefinerte verdier som du definerer.</li></ul> |
 | Håndhev gyldighet | Velg om de gyldighetsdatoene til tekniske versjoner må være sammenhengende, eller om det kan være tomrom og overlappinger. Denne innstillingen påvirker hvordan du kan bruke feltene **Gyldig fra** og **Gyldig til** i hver tekniske versjon der kategorien gjelder.<ul><li>Hvis dette alternativet er angitt til *Ja*, må en **Gyldig fra**-verdi angis for hver versjon, og verken overlappinger eller tomrom er tillatt mellom versjoner. Datointervallet for hver tekniske versjon er koblet direkte til de tidligere og neste tekniske versjoner, hvis de finnes. I dette scenarioet brukes alltid den nyeste versjonen, og eldre versjoner brukes ikke lenger.</li><li>Hvis dette alternativet er satt til **Nei**, er det ingen begrensninger i gyldighetsdatofeltene for tekniske versjoner, og både overlappinger og tomrom er tillatt. I dette scenarioet kan flere versjoner være aktive samtidig, og du kan arbeide med alle aktive versjoner.</li></ul><p>Dette alternativet påvirker også stykklister og ruter som er koblet til en produktversjon. Hvis du vil ha mer informasjon, kan du se avsnittet [Koble stykklister og ruter til tekniske versjoner](#boms-routes) senere i dette emnet.</p> |
 | Bruk terminologi for nummerregel | Sett dette alternativet til *Ja* for å aktivere regler for å definere et produktnummer ved hjelp av nummerserier, tekniske attributtnavn og verdier, og tekstkonstanter som segmenter. Hvis du vil opprette eller endre regler, velger du **Rediger**. |
@@ -162,6 +161,3 @@ Tekniske stykklister og ruter opprettes fra den tekniske versjonen der de gjelde
 For produkter der du bruker *versjonsproduktdimensjonen* (sammen med logistikkinnvirkning på transaksjonene), blir også versjonen lagt til i stykklistene og rutene. Denne virkemåten kan skille mellom stykklister og ruter i påfølgende versjoner, uavhengig av innstillingen **Håndhev gyldighet**.
 
 For produkter der du ikke bruker *versjonsproduktdimensjonen* (uten logistikkinnvirkning på transaksjonene), blir ikke versjonen lagt til i stykklistene eller rutene. Det vil derfor ikke være noen forskjell mellom stykklister og ruter i påfølgende versjoner. I dette tilfellet anbefaler vi på det sterkeste at du setter alternativet **Håndhev gyldighet** til *Ja*. På denne måten bidrar du til å forhindre at tekniske versjoner overlapper, og du kan også aktivere stykklisten og ruten til en nyere versjon uten først å deaktivere stykklisten og ruten for den tidligere versjonen. Hvis du setter alternativet **Håndhev gyldighet** til *Ja* i dette tilfellet, må du deaktivere stykklistene og rutene i eldre versjoner manuelt før du kan aktivere den siste versjonen.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

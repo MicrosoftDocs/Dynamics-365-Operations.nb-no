@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-9-14
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 8ab5f1c3cdfa990a73951ddc5a7469644954d5c2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 08bdcef865c1e4904f32ce01f2956ac7acf55bf1
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434281"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4987310"
 ---
 # <a name="safety-margins"></a>Sikkerhetsmarginer
 
@@ -107,7 +106,7 @@ Hvis du vil bruke en sikkerhetsmargin for en dekningsgruppe, følger du disse tr
 
 1. Gå til **Hovedplanlegging \> Oppsett \> Dekningsgrupper**.
 1. I listeruten velger du ønsket dekningsgruppe.
-1. I delen **Sikkerhetsmarginer i dager** i hurtigkategorien **Annet** bruker du følgende felt til å angi påkrevde sikkerhetsmarginer (i dager):
+1. I delen **Sikkerhetsmarginer i dager** i hurtigfanen **Annet** bruker du følgende felt til å angi påkrevde sikkerhetsmarginer (i dager):
 
     - Påslag dager lagt til i behovsdato
     - Sikkerhetsdager trukket fra behovsdato
@@ -119,7 +118,7 @@ Hvis du vil bruke en sikkerhetsmargin for en hovedplan, følger du disse trinnen
 
 1. Gå til **Hovedplanlegging \> Oppsett \> Planer \> Hovedplaner**.
 1. I listeruten velger du den ønskede hovedplanen.
-1. I hurtigkategorien **Sikkerhetsmarginer i dager** bruker du følgende felt til å angi påkrevde sikkerhetsmarginer (i dager):
+1. I hurtigfanen **Sikkerhetsmarginer i dager** bruker du følgende felt til å angi påkrevde sikkerhetsmarginer (i dager):
 
     - Påslag dager lagt til i behovsdato
     - Sikkerhetsdager trukket fra behovsdato
@@ -130,7 +129,7 @@ Hvis du vil bruke en sikkerhetsmargin for en hovedplan, følger du disse trinnen
 Du kan angi alle sikkerhetsmarginer slik at de beregnes på grunnlag av enten kalenderdager eller virkedager.
 
 1. Gå til **Hovedplanlegging \> Oppsett \> Parametere for hovedplanlegging**.
-1. I kategorien **Generelt** i delen **Sikkerhetsmarginer i dager** setter du alternativet **virkedager** til *Ja* for å beregne marginer basert på virkedager. Sett alternativet til *Nei* for å beregne marginer basert på kalenderdager.
+1. I fanen **Generelt** i delen **Sikkerhetsmarginer i dager** setter du alternativet **virkedager** til *Ja* for å beregne marginer basert på virkedager. Sett alternativet til *Nei* for å beregne marginer basert på kalenderdager.
 
 En kalender kan for eksempel være åpen fra mandag til fredag og avsluttes fra lørdag til og med søndag. Hvis det er en mottaksmargin på én dag, vil en behovsdato på en mandag generere en leveringsdato på forrige fredag, ettersom lørdag og søndag ikke er virkedager.
 
@@ -183,6 +182,3 @@ En vare har for eksempel innledende tid på én dag og en mottaksmargin på tre 
 [Komme i gang med planleggingsoptimalisering](get-started.md)
 
 [Analyse for tilpassing av planleggingsoptimalisering](planning-optimization-fit-analysis.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

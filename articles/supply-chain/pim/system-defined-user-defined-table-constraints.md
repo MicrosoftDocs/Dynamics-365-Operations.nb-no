@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: PCTableConstraintAttachAttributeTree, PCTableConstraintColumnSystem, PCTableConstraintContentUserDef, PCTableConstraintDefinition, PCTableConstraintWizard
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 19781
 ms.assetid: 0a4ea930-b344-43a8-871e-d5cd077892c4
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3fb1395859b5abd06539e07ada3d968b2e9c9147
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 120ffe8e64629d0f99ac036d6ae6a933575903e3
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434424"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4987160"
 ---
 # <a name="system-defined-and-user-defined-table-constraints"></a>Systemdefinerte og brukerdefinerte tabellbegrensninger
 
@@ -40,7 +39,7 @@ Tabellbegrensninger representerer matriser av kombinasjoner av attributter som e
 Denne artikkelen beskriver brukerdefinerte og systemdefinerte tabellbegrensninger for komponenter i en produktkonfigurasjonsmodell.
 
 ## <a name="user-defined-table-constraints"></a>Brukerdefinerte tabellbegrensninger
-En brukerdefinert tabellbegrensning er en matrisetype som brukes til å beskrive kombinasjonene av attributtverdier som er angitt av attributtyper. Hvis du produserer høyttalere, kan du for eksempel inkludere søyler for kabinettypen og frontgrillen i den brukerdefinerte tabellbegrensningen. Attributtypen for kabinettype har fire verdier, og attributtypen for frontgrill har tre verdier. Hvis begrensninger ikke er brukt, er det derfor 4 x 3 = 12 mulige kombinasjoner. I dette eksemplet er imidlertid bare seks kombinasjoner tillatt, som vist i følgende tabell. Denne informasjonen vises i kategorien **Tillatte kombinasjoner** på siden **Rediger tabellbegrensning**.
+En brukerdefinert tabellbegrensning er en matrisetype som brukes til å beskrive kombinasjonene av attributtverdier som er angitt av attributtyper. Hvis du produserer høyttalere, kan du for eksempel inkludere søyler for kabinettypen og frontgrillen i den brukerdefinerte tabellbegrensningen. Attributtypen for kabinettype har fire verdier, og attributtypen for frontgrill har tre verdier. Hvis begrensninger ikke er brukt, er det derfor 4 x 3 = 12 mulige kombinasjoner. I dette eksemplet er imidlertid bare seks kombinasjoner tillatt, som vist i følgende tabell. Denne informasjonen vises i fanen **Tillatte kombinasjoner** på siden **Rediger tabellbegrensning**.
 
 | Kabinettyper | Frontgrill |
 |----------------|-------------|
@@ -67,6 +66,3 @@ Før en tabellbegrensning kan tre i kraft i en produktkonfigurasjonsmodell, må 
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

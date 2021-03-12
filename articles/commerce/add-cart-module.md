@@ -3,7 +3,7 @@ title: Handlekurvmodul
 description: Dette emnet dekker handlekurvmoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
-ms.date: 10/20/2020
+ms.date: 12/15/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 33db06ecfa2a8fa93cde3c4f1b31d6b30bfd0c34
-ms.sourcegitcommit: 12d271bb26c7490e7525d9b4bbf125cdc39fef43
+ms.openlocfilehash: abb9909c03577763ff7e6242c9395a58159df6ca
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "4414801"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4985985"
 ---
 # <a name="cart-module"></a>Handlekurvmodul
 
@@ -53,6 +52,7 @@ Bildet nedenfor viser et eksempel på en handlekurvside på Fabrikam-området. I
 | Overskrift | Overskriftstekst og en overskriftskode (**H1**, **H2**, **H3**, **H4**, **H5** eller **H6**) | En overskrift for handlekurven, for eksempel "Handlepose" eller "Varer i handlekurven". |
 | Vis feil for utsolgte varer | **Sann** eller **Usann** | Hvis denne egenskapen er satt til **Sann**, viser handlekurvsiden lagerrelaterte feil. Vi anbefaler at du setter denne egenskapen til **Sann** hvis det brukes beholdningskontroller på stedet. |
 | Vis forsendelseskostnader for linjevarer | **Sann** eller **Usann** | Hvis denne egenskapen er satt til **Sann**, viser handlekurvlinjer forsendelseskostnadene, hvis denne informasjonen er tilgjengelig. Denne funksjonen støttes ikke i Fabrikam-temaet fordi brukere velger bare levering i kasseflyten. Denne funksjonen kan imidlertid aktiveres i andre arbeidsflyter hvis den gjelder. |
+| Vis tilgjengelige kampanjer| **Sann** eller **Usann** | Hvis egenskapen er satt til **Sann**, viser handlekurven tilgjengelige kampanjer basert på varene i handlekurven. Denne funksjonen er tilgjengelig i Dynamics 365 Commerce versjon 10.0.16. |
 
 ## <a name="modules-that-can-be-used-in-a-cart-module"></a>Moduler som kan brukes i handlekurvmodulen
 
@@ -117,6 +117,3 @@ Hvis du vil legge til en handlekurvmodul på en ny side og angi de nødvendige e
 [Beregne lagertilgjengelighet for detaljhandelskanaler](calculated-inventory-retail-channels.md)
 
 [Opprette en nettbasert funksjonalitetsprofil](online-functionality-profile.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

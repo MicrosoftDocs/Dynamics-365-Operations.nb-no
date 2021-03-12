@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: EcoResProductDetailsExtended, InventTableInventoryDimensionGroups, InventItemOrderSetup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8ac4ceeb3e21ab089eb16565bb6e38c7eb44be80
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 668b60efa55fa553cf308d5bfc5da7e23f460366
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434419"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4987035"
 ---
 # <a name="complete-basic-setup-of-a-released-product-master"></a>Fullføre grunnleggende oppsett av en frigitt produktstandard
 
@@ -39,8 +38,8 @@ Dette er den tredje fremgangsmåten av åtte som forklarer hvordan du bygger kom
 6. Finn og velg ønsket post i listen. Lagringsdimensjonsgruppen bestemmer hvilke lagerdimensjoner som skal brukes for produkttransaksjonen. Velg **Område** for denne prosedyren.  
 7. Klikk på rullegardinknappen i **Sporingsdimensjonsgruppe**-feltet for å åpne oppslaget.
 8. Finn og velg ønsket post i listen. Sporingsdimensjonsgruppen bestemmer hvilke sporingsdimensjoner som skal brukes for produkttransaksjonen. Velg **Ingen** for denne prosedyren.  
-9. Klikk **OK**.
-10. Klikk **Rediger**.
+9. Klikk på **OK**.
+10. Klikk på **Rediger**.
 11. Klikk på rullegardinknappen i feltet **Varemodellgruppe** for å åpne oppslaget.
 12. Finn og velg ønsket post i listen. Varemodellgrupper inneholder innstillinger som bestemmer hvordan varer styres og behandles ved varemottak og vareavganger. De bestemmer også hvordan vareforbruk beregnes. Velg **FIFO** for denne prosedyren.  
 13. Vis delen **Styr kostnader**.
@@ -53,6 +52,3 @@ Dette er den tredje fremgangsmåten av åtte som forklarer hvordan du bygger kom
 20. Lukk siden.
 21. Lukk skjemaet **Detaljer om frigitt produkt**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

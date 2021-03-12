@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: JmgRegistrationSetupTouch
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 6ba5d8bc0c22f97e6d2ce61c636090e04fae5abd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2e9258d0a2f2006f404b24f15605af5a2ad1b281
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434340"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4986510"
 ---
 # <a name="report-as-finished-from-the-job-card-device"></a>Ferdigmelde fra jobbkortenheten
 
@@ -39,7 +38,7 @@ Arbeidere bruker **Rapporter fremdrift**-siden på jobbkortenheten til å rappor
 Følg denne fremgangsmåten for å kontrollere hvorvidt og hvordan antallene som er rapportert som fullført for den siste operasjonen, skal legges til i beholdningen.
 
 1. Gå til **Produktkontroll \> Oppsett \> Produksjonsutførelse \> Standarder for produksjonsordre**.
-1. I **Ferdigmeld**-kategorien angir du en av følgende verdier for **Oppdater ferdig rapport online**-feltet:
+1. I **Ferdigmeld**-fanen angir du en av følgende verdier for **Oppdater ferdig rapport online**-feltet:
 
     - **Nei** – ingen antall blir lagt til i beholdningen når antallene rapporteres ved siste operasjon. Statusen for produksjonsordren endres aldri.
     - **Status + Antall** – Statusen for produksjonsordren endres til *Ferdigmeldt*, og antallet ferdigmeldes til beholdningen.
@@ -47,7 +46,7 @@ Følg denne fremgangsmåten for å kontrollere hvorvidt og hvordan antallene som
     - **Status** – Bare statusen for produksjonsordren endres. Ingen antall blir lagt til i beholdningen når antallene rapporteres ved siste operasjon.
 
 > [!NOTE]
-> Antall spores ikke i beholdningen hvis operasjonene de ferdigmeldes for, ikke er definert som siste operasjon. Disse antallene kan imidlertid brukes til å vise fremdriften. De kan også inkluderes i regler som kontrollerer om arbeidere kan starte neste operasjon før en definert terskel for rapporterte antall i den forrige operasjonen nås. Du kan definere disse reglene i **Antallsvalidering**-kategorien på **Standarder for produksjonsordre**-siden.
+> Antall spores ikke i beholdningen hvis operasjonene de ferdigmeldes for, ikke er definert som siste operasjon. Disse antallene kan imidlertid brukes til å vise fremdriften. De kan også inkluderes i regler som kontrollerer om arbeidere kan starte neste operasjon før en definert terskel for rapporterte antall i den forrige operasjonen nås. Du kan definere disse reglene i **Antallsvalidering**-fanen på **Standarder for produksjonsordre**-siden.
 
 Hvis du vil ha mer informasjon om hvordan du arbeider med **Standarder for produksjonsordre**-siden, kan du se [Produksjonsparametere i Produksjonsutførelse](production-parameters-manufacturing-execution.md).
 
@@ -73,7 +72,7 @@ Følg denne fremgangsmåten for å aktivere et produkt for å støtte noen av de
 
 1. Gå til **Behandling av produktinformasjon \> Produkter \> Frigitte produkter**.
 1. Velg produktet du vil konfigurere.
-1. I **Administrer lager**-hurtigkategorien, i **Partinummergruppe**-feltet velger du sporingsnummergruppen som er definert til å støtte scenariet.
+1. I **Administrer lager**-hurtigfanen, i **Partinummergruppe**-feltet velger du sporingsnummergruppen som er definert til å støtte scenariet.
 
 > [!NOTE]
 > Hvis ingen partinummergruppe er tilordnet et partistyrt produkt, inneholder jobbkortenheten en standardløsning for manuell registrering av partinummer under ferdigmelding.
@@ -153,7 +152,7 @@ Følg denne fremgangsmåten for å aktivere hvert enkelt scenario.
 
 1. Gå til **Behandling av produktinformasjon \> Produkter \> Frigitte produkter**.
 1. Velg produktet du vil konfigurere.
-1. I **Administrer lager**-hurtigkategorien, i **Serienummergruppe**-feltet velger du sporingsnummergruppen som er definert til å støtte scenariet.
+1. I **Administrer lager**-hurtigfanen, i **Serienummergruppe**-feltet velger du sporingsnummergruppen som er definert til å støtte scenariet.
 
 > [!NOTE]
 > Hvis ingen serienummergruppe er tilordnet et seriestyrt produkt, inneholder jobbkortenheten en standardløsning for manuell registrering av serienummer under ferdigmelding.
@@ -239,6 +238,3 @@ Følg denne fremgangsmåten for å kontrollere om arbeidere bør gjenbruke et ek
 
 > [!NOTE]
 > For å konfigurere etiketten går du til **Lagerstyring \> Oppsett \> Dokumentruting \> Dokumentruting**. Hvis du vil ha mer informasjon, kan du se [Aktivere utskrift av nummerskiltetiketter](../warehousing/tasks/license-plate-label-printing.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

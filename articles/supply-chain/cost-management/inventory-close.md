@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: InventClosing
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 61973
 ms.assetid: c210c882-6849-4704-b78c-a777dd6cfdb6
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a4cad461c6ff4ef6badeeba868eef45165cf5d33
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1169ad784c07d0757990b36b618282ed7858bcbf
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434384"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4987559"
 ---
 # <a name="inventory-close"></a>Beholdningslukking
 
@@ -51,8 +50,8 @@ Når du oppretter en bestilling fra en salgsordre, oppdateres finanskontoene som
 
 Når oppdateringen er fullført, kan du gå gjennom finansbilaget som posteres på grunn av en av disse oppgavene.
 
-1.  På siden **Lukking og justering** i kategorien **Oversikt** velger du oppdateringen som skal gås gjennom.
-2.  Klikk **detaljer**, og velg deretter **Bilag**.
+1.  På siden **Lukking og justering** i fanen **Oversikt** velger du oppdateringen som skal gås gjennom.
+2.  Klikk på **detaljer**, og velg deretter **Bilag**.
 
 ## <a name="effects-of-the-inventory-close-process-on-the-general-ledger"></a>Virkningen av lagerlukkingsprosessen i økonomimodulen
 Flere av oppgavene du kan utføre på siden **Lukking og justering**, fører til oppdateringer i økonomimodulen. Økonomimodilen oppdateres for eksempel når du foretar beholdningsjusteringer på lager, foretar lagertransaksjonsjusteringer, kjøre en lageromberegning og kjører en lagerlukking. 
@@ -60,7 +59,7 @@ Flere av oppgavene du kan utføre på siden **Lukking og justering**, fører til
 Finanskontoene som oppdateres på grunn av disse oppgavene, er koblet til den opprinnelige lagertransaksjonen. Hvis en salgsordre utlignes til en bestilling, vil for eksempel finanskontoene som ble brukt til den opprinnelige salgsordren, bli justert. Dette gjelder selv om finanskontoene for varegruppen som er tilordnet til dette elementet, er endret siden salgsordren ble postert. Når lagerlukking oppretter et utligningsbeløp, er utligningsbeløpet fremdeles postert på de opprinnelige finanskontoene, og ikke på de nye finanskontoene som er tilordnet til varen. Økonomimodulen kan også bli oppdatert hvis du reverserer en lagerlukking. 
 
 > [!NOTE] 
-> - Lagerlukking er et nødvendig trinn i månedsavslutningsprosedyren for alle lagermodeller. Dette omfatter standard og glidende gjennomsnitt av etterkalkulering. Du vil ikke kunne lukke finansperioden før det har blitt utført en lagerlukking fra periodens sluttdato.
+> - Lagerlukking er et nødvendig trinn i månedsavslutningsprosedyren for alle lagermodeller unntatt glidende gjennomsnitt.  Du blir varslet hvis du prøver å lukke en regnskapsperiode uten å utføre lagerlukking først per periodesluttdatoen.
 > - Før du kjører lukkingsprosedyren kan du vise en liste over varer som ikke kan utlignes under oppdateringen.
 > - Vi anbefaler at du kjører lagerlukkingen utenfor vanlig arbeidstid for å sørge for en mer jevn fordeling av datamaskinressurser
 
@@ -87,6 +86,3 @@ Noen ganger kan du bli nødt til å tilbakeføre en fullført lagerlukking for �
 > [!NOTE] 
 > Bare den siste lagerperioden som ble lukket, kan åpnes på nytt. For å tilbakeføre en tidligere lagerlukking må du tilbakeføre hver etterfølgende lagerlukking én om gangen og begynne med den siste lukkingen.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

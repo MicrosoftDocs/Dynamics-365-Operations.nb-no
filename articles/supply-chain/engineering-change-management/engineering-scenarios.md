@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: b6270bbb6780786ed4535ca2987ed44448bd81ad
-ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
+ms.openlocfilehash: 19fab4f6b81eaf6e3605b6668212eece10606360
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4434868"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4987585"
 ---
 # <a name="engineering-change-management-feature-walkthrough"></a>Gjennomgang av funksjonen for behandling av teknisk endring
 
@@ -199,7 +198,7 @@ Et teknisk produkt er et produkt som er versjonsstyrt og kontrollert gjennom beh
 
     ![Detaljer om frigitt produkt](media/product-details.png "Detaljer om frigitt produkt")
 
-1. Velg **Tekniske versjoner** I handlingsruten, i **Tekniker**-fanen i **Behandling av teknisk endring**-gruppen for å vise versjonene av produktet i kategorien ingeniør.
+1. Velg **Tekniske versjoner** I handlingsruten, i **Tekniker**-fanen i **Behandling av teknisk endring**-gruppen for å vise versjonene av produktet i fanen ingeniør.
 
     ![Tekniske versjoner](media/engineering-versions-list.png "Tekniske versjoner")
 
@@ -304,7 +303,7 @@ Behandling av hoveddata for *USMF*-firmaet vil sørge for at produktet er i stat
 1. Velg produktet *Z0001* for å åpne detaljsiden. (Du kan bruke filteret til å finne frem til produktet.)
 1. Velg **Tekniske versjoner** I handlingsruten, i **Tekniker**-fanen i **Behandling av teknisk endring**-gruppen.
 1. Velg versjonsnummeret **V-01** for å åpne detaljsiden på *Tekniske versjoner*.
-1. I handlingsruten, i **Produkt**-kategorien og **Status**-gruppen, velger du **endre status**.
+1. I handlingsruten, i **Produkt**-fanen og **Status**-gruppen, velger du **endre status**.
 1. I rullegardinlisten **Endre status** setter du feltet **Tilstand** til *Prototype* og velger **OK**..
 
     ![Endre statusen](media/change-lifecycle-state.png "Endre statusen")
@@ -411,6 +410,3 @@ Produktet kan nå frigis til *USMF*-firmaet og deretter sendes til kunden. Følg
 1. Velg hvert firma du vil frigi produkter til.
 1. Velg **OK** for å lukke dialogboksen **Frigivelser** og gå tilbake til endringsordren.
 1. Velg **Behandle** i handlingsruten i fanen **Endringsordre** i **Produktfrigivelser**-gruppen for å frigi de berørte produktene til de valgte firmaene. Du kan også velge **Frigi produktstruktur** for å starte frigivelsesprosessen.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b5efd1d471559d320102cd81e4be1ba8c1858f45
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2b212a6b4268776893d4e018cab605e6441080fa
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434262"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4986860"
 ---
 # <a name="find-obsolete-product-variants"></a>Finne utdaterte produktvarianter 
 
@@ -36,11 +35,11 @@ Denne prosedyren viser hvordan du finner foreldede frigitte produkter og produkt
 4. Angi et tall i Utelat produkter som er opprettet innen dette antallet dager.
 5. Angi et tall i feltet Utelat produkter som brukes i transaksjoner (i antall dager).
 6. Utvid delen Poster som skal inkluderes.
-7. Klikk Filter.
+7. Klikk på Filter.
 8. Merk den valgte raden i listen.
 9. Skriv inn en verdi i Kriterier-feltet.
-10. Klikk OK.
-11. Klikk OK.
+10. Klikk på OK.
+11. Klikk på OK.
 
 > [!NOTE]
 > Det anbefales å kjøre simuleringen satsvis hvis du forventer å søke etter et stort antall produkter. Kontroller også at simuleringen ikke kjøres i den mest aktive arbeidstiden i firmaet.  
@@ -65,7 +64,7 @@ Denne prosedyren viser hvordan du finner foreldede frigitte produkter og produkt
 > [!NOTE]
 > Avhengig av hvor mange produkter og produktvarianter som berøres, bør du vurdere å kjøre denne jobben satsvis. Pass på at du ikke kjører en stor oppdateringsjobb i den mest aktive arbeidstiden i firmaet.  
 
-6. Klikk OK.
+6. Klikk på OK.
 7. Gå til Behandling av produktinformasjon > Forespørsler og rapporter > Vedlikeholdshistorikk for livssyklustilstand for produkt.
 
 > [!NOTE]
@@ -73,6 +72,3 @@ Denne prosedyren viser hvordan du finner foreldede frigitte produkter og produkt
 
 8. Finn og velg ønsket post i listen.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

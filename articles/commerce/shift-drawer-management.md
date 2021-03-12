@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailHardwareProfile, RetailTerminalTable
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 105011
 ms.assetid: 49a0fcc9-d4db-45ad-8c4b-213ccaced82b
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 32b7be42509a2c857f1357eb64a6b488f9cd2269
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 711f4f5549a478768f7f86a7001ac8a6cf9f4db6
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414718"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4985687"
 ---
 # <a name="shift-and-cash-drawer-management"></a>Behandling av skift og kassaskuff
 
@@ -158,6 +157,3 @@ Gå til **Retail og Commerce \> Kanaler \> Butikker \> Alle butikker \> Utdrag/a
 Dette oppsettet bidrar til at Back Office-utdrag inneholder de samme transaksjonene som skift på salgsstedet, og at dataene blir summert etter dette skiftet.
 
 Hvis du vil ha mer informasjon om utdrag og avslutingsmetoder, kan du se [Butikkonfigurasjoner for detaljhandelsutdrag](https://docs.microsoft.com/dynamics365/unified-operations/retail/tasks/store-configurations-retail-statements).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

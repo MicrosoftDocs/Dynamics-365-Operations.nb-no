@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ReqDemPlanForecastParameters, ReqDemPlanOutlierQuerySetup, ReqDemPlanOutlierQueryPreview
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 72621
 ms.assetid: 88a964af-14eb-4c5c-945b-388e5908362c
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9dec963ed5abd6f77e82029a3ea5ba1a69d44e36
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9004c8a001bcf70897d1e9ee9a7962743bc3affd
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434279"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4987335"
 ---
 # <a name="remove-outliers-from-historical-transaction-data-when-calculating-a-demand-forecast"></a>Fjerne utestående fra historiske transaksjonsdata ved beregning av en behovsprognose
 
@@ -34,11 +33,11 @@ Denne artikkelen beskriver hvordan du utelater utestående fra de historiske dat
 
 Du kan utelate utestående for å forbedre nøyaktighet av prognosen. Denne oppgaven er valgfri. Her er en oversikt over prosessen:
 
-1.  Klikk **Hovedplanlegging** &gt; **Oppsett** &gt; **Behovsprognose** &gt; **Fjerning av utestående** for å åpne **Fjerning av utestående**-siden der du kan bruke en spørring for å velge transaksjonen som skal ekskluderes.
+1.  Klikk på **Hovedplanlegging** &gt; **Oppsett** &gt; **Behovsprognose** &gt; **Fjerning av utestående** for å åpne **Fjerning av utestående**-siden der du kan bruke en spørring for å velge transaksjonen som skal ekskluderes.
 2.  Velg firmaet som spørringen gjelder for, og skriv inn et navn og en beskrivelse. **Spørringsdato**-feltet settes automatisk til den gjeldende datoen.
 3.  Merk av for **Aktiv** for å utelate transaksjoner som blir funnet av spørringen, fra historiske data. Denne innstillingen trer i kraft når du oppretter en basislinjeprognose.
 4.  På **Spørring etter fjerning av utestående**-siden kan du legge til, fjerne og velge kriteriene som definerer hvilke transaksjoner som skal utelates når basislinjeprognosen beregnes. Velg for eksempel en bestemt vare eller ordretransaksjon som skal ekskluderes.
-5.  Klikk **Vis transaksjoner**. **Utestående transaksjoner**-siden viser transaksjonene som oppfyller kriteriene som du definerte i spørringen, og som utelates fra historiske data når behovsprognosen beregnes.
+5.  Klikk på **Vis transaksjoner**. **Utestående transaksjoner**-siden viser transaksjonene som oppfyller kriteriene som du definerte i spørringen, og som utelates fra historiske data når behovsprognosen beregnes.
 
 **Merk:** Du kan også opprette en spørring som er basert på en eksisterende spørring. Velg spørringen du vil kopiere, og klikk deretter **Duplikat**. **Spørringsdato**-feltet identifiserer versjonen. Du kan bruke spørringen som den er, eller du kan klikke **Rediger spørring** for å endre vilkårene. Du kan også endre navnet og beskrivelsen av den nye spørringen.
 
@@ -51,6 +50,3 @@ Du kan utelate utestående for å forbedre nøyaktighet av prognosen. Denne oppg
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCProductModelVersion, PCApproveProductModelVersion, HcmWorkerLookUp
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 440ffbdf1db22ac25971922d80a5569a340ba81c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7b548e2369f30e998ecde45408ff45893b88f9a8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434420"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4987110"
 ---
 # <a name="approve-a-product-configuration-model"></a>Godkjenne en produktkonfigurasjonsmodell
 
@@ -29,26 +28,23 @@ ms.locfileid: "4434420"
 
 Kjører du denne prosedyren krever det at minst én eksisterende produktmodellkonfigurasjon er tilgjengelig. Denne prosedyren bruker modellen for High-end-høyttaler i demodatafirmaet USMF. Legg merke til at denne modellen har allerede blitt godkjent, men fremgangsmåten leder deg gjennom hele prosessen.
 
-1. Klikk Definisjon av produktvariantmodell.
-2. Klikk Produktkonfigurasjonsmodeller.
+1. Klikk på Definisjon av produktvariantmodell.
+2. Klikk på Produktkonfigurasjonsmodeller.
 3. Finn og velg ønsket post i listen.
     * Velg High-end-høyttalermodellen for denne prosedyren.  
-4. Klikk Versjoner.
-5. Klikk Ny.
+4. Klikk på Versjoner.
+5. Klikk på Ny.
 6. Angi eller velg en verdi i Produktnummer-feltet.
     * Referansen til et produkt representerer en versjon av en produktkonfigurasjonsmodell. Bare produktstandarder som har teknologien restriksjonsbasert konfigurasjon, vises i denne listen.  
 7. Angi en dato i Fra dato-feltet.
     * Velg når produktmodellversjonen vil være tilgjengelig.  
 8. Angi en dato i Til dato-feltet.
     * Velg en sluttdato når denne produktmodellversjonen skal utløpe, eller velg Aldri.  
-9. Klikk Godkjenn for å åpne nedtrekksdialogskjemaet.
+9. Klikk på Godkjenn for å åpne nedtrekksdialogskjemaet.
 10. Angi eller velg en verdi i feltet Godkjent av.
     * Velg personen som er ansvarlig for godkjenning av produktmodeller for bruk i operasjoner.  
-11. Klikk OK.
+11. Klikk på OK.
 12. Velg et alternativ i Prissettingsmetode-feltet.
     * Aktiver produktmodellversjonen. Det er bare mulig å ha ett produkt aktivt for en produktmodell om gangen.  
 13. Lukk siden.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: InventParameters, InventProblemType, InventProblemTypeSetup, InventQuarantineZone, InventTestDiagnosticType, InventTestReportSetup, SysUserManagement, InventTestRelatedOperations
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 28951
 ms.assetid: a62d4ba8-eebc-4b14-b587-630be7298522
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0e66353dc3a4b4b7d9ff3c5f63bf3d4b0c70bda0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b6dc201ef70e07e3247110a373d897a1cd5daf73
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434481"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4987435"
 ---
 # <a name="nonconformance-management"></a>Behandling av avvik
 
@@ -36,7 +35,7 @@ Følg disse trinnene for å aktivere behandling av avvik:
 1.  Definer lagerstyringsparameterne som er knyttet til avvik:
     -   Sett alternativet **Bruk kvalitetsstyring** til **Ja**.
     -   I **Timepris**-feltet angir du en timepris for arbeid i lokal valuta. Timeprisen brukes til å beregne kostnader for operasjoner som er knyttet til et avvik. Timeprisen og de beregnede kostnadene gir referanseinformasjon for et avvik. De samhandler ikke med annen funksjonalitet.
-    -   Bruk **Kvalitetsstyring**-kategorien på siden **Rapportoppsett** til å definere hvilken type dokument som skal skrives ut. Du kan skrive ut en avviksrapport, en avviksbrikke og en korrigeringsrapport. Du kan definere flere poster for å skrive ut forskjellige dokumenttyper i en rapport, eller for å skrive ut interne og eksterne merknader. Det kan være nyttig å bruke **Dokumenttype**-siden til å definere en unik dokumenttype for avvik, og en unik dokumenttype for rettelser. La oss for eksempel si at du vil angi merknader om et avvik ved hjelp av den unike dokumenttypen for avvik. I dette tilfellet kan du identifisere den unike dokumenttypen i rapportalternativene.
+    -   Bruk **Kvalitetsstyring**-fanen på siden **Rapportoppsett** til å definere hvilken type dokument som skal skrives ut. Du kan skrive ut en avviksrapport, en avviksbrikke og en korrigeringsrapport. Du kan definere flere poster for å skrive ut forskjellige dokumenttyper i en rapport, eller for å skrive ut interne og eksterne merknader. Det kan være nyttig å bruke **Dokumenttype**-siden til å definere en unik dokumenttype for avvik, og en unik dokumenttype for rettelser. La oss for eksempel si at du vil angi merknader om et avvik ved hjelp av den unike dokumenttypen for avvik. I dette tilfellet kan du identifisere den unike dokumenttypen i rapportalternativene.
     -   Aktiver nummerserier for avvik og rettelsesreferanser.
 
 2.  Aktiver brukergodkjenning av avvik. Bruk **Navn**-feltet på **Brukere**-siden til å tilordne en ansatt til hver bruker som må godkjenne et avvik. Systemet bruker de ansatte som endrer statusen for et avvik, til å spore avvikshistorikken. Brukere kan ikke godkjenne et avvik med mindre de har fått tilordnet en ansatt-ID.
@@ -54,6 +53,3 @@ Følg disse trinnene for å aktivere behandling av avvik:
 [Kvalitetsstyringsprosesser](quality-management-processes.md)
 
 [Definere forutsetninger for behandling av avvik](tasks/set-up-prerequisites-nonconformance-management.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
