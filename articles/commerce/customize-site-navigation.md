@@ -10,103 +10,102 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c2b6a7a3b35873e80be391c627d0397fd6398a99
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2d45f116acc19130e09108a246d276bb4b62a1e6
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414629"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4972913"
 ---
-# <a name="customize-site-navigation"></a><span data-ttu-id="a39c7-103">Tilpasse områdenavigering</span><span class="sxs-lookup"><span data-stu-id="a39c7-103">Customize site navigation</span></span>
+# <a name="customize-site-navigation"></a><span data-ttu-id="39f80-103">Tilpasse områdenavigering</span><span class="sxs-lookup"><span data-stu-id="39f80-103">Customize site navigation</span></span>
 
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="a39c7-104">Dette emnet beskriver hvordan du oppretter et tilpasset elektronisk navigasjonshierarki for å organisere produktene for weblesing på Microsoft Dynamics 365 Commerce-området.</span><span class="sxs-lookup"><span data-stu-id="a39c7-104">This topic describes how to create a customized online navigation hierarchy to organize your products for browsing on your Microsoft Dynamics 365 Commerce site.</span></span>
+<span data-ttu-id="39f80-104">Dette emnet beskriver hvordan du oppretter et tilpasset elektronisk navigasjonshierarki for å organisere produktene for weblesing på Microsoft Dynamics 365 Commerce-området.</span><span class="sxs-lookup"><span data-stu-id="39f80-104">This topic describes how to create a customized online navigation hierarchy to organize your products for browsing on your Microsoft Dynamics 365 Commerce site.</span></span>
 
-## <a name="overview"></a><span data-ttu-id="a39c7-105">Oversikt</span><span class="sxs-lookup"><span data-stu-id="a39c7-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="39f80-105">Oversikt</span><span class="sxs-lookup"><span data-stu-id="39f80-105">Overview</span></span>
 
-<span data-ttu-id="a39c7-106">Nettbutikkfasader lar vanligvis kunder oppdage og bla gjennom produkter ved å navigere gjennom produktkategorier.</span><span class="sxs-lookup"><span data-stu-id="a39c7-106">Online storefronts typically let customers discover and browse products by navigating through product categories.</span></span> <span data-ttu-id="a39c7-107">Denne funksjonen finnes vanligvis ved hjelp av kategorier øverst på siden eller ved hjelp av et navigasjonsfelt på venstre side.</span><span class="sxs-lookup"><span data-stu-id="a39c7-107">This capability is usually provided by tabs at the top of the page or by a navigation bar on the left.</span></span> <span data-ttu-id="a39c7-108">I Dynamics 365 Commerce kan du opprette og behandle hierarkistrukturen for kategorinavigasjonen og produktene som er inkludert i de ulike kategoriene.</span><span class="sxs-lookup"><span data-stu-id="a39c7-108">In Dynamics 365 Commerce, you can create and manage the hierarchal structure of your category navigation and the products that are included in the various categories.</span></span>
+<span data-ttu-id="39f80-106">Nettbutikkfasader lar vanligvis kunder oppdage og bla gjennom produkter ved å navigere gjennom produktkategorier.</span><span class="sxs-lookup"><span data-stu-id="39f80-106">Online storefronts typically let customers discover and browse products by navigating through product categories.</span></span> <span data-ttu-id="39f80-107">Denne funksjonen finnes vanligvis ved hjelp av kategorier øverst på siden eller ved hjelp av et navigasjonsfelt på venstre side.</span><span class="sxs-lookup"><span data-stu-id="39f80-107">This capability is usually provided by tabs at the top of the page or by a navigation bar on the left.</span></span> <span data-ttu-id="39f80-108">I Dynamics 365 Commerce kan du opprette og behandle hierarkistrukturen for kategorinavigasjonen og produktene som er inkludert i de ulike kategoriene.</span><span class="sxs-lookup"><span data-stu-id="39f80-108">In Dynamics 365 Commerce, you can create and manage the hierarchal structure of your category navigation and the products that are included in the various categories.</span></span>
 
-## <a name="create-a-channel-navigation-hierarchy"></a><span data-ttu-id="a39c7-109">Opprette et kanalnavigasjonshierarki</span><span class="sxs-lookup"><span data-stu-id="a39c7-109">Create a channel navigation hierarchy</span></span>
+## <a name="create-a-channel-navigation-hierarchy"></a><span data-ttu-id="39f80-109">Opprette et kanalnavigasjonshierarki</span><span class="sxs-lookup"><span data-stu-id="39f80-109">Create a channel navigation hierarchy</span></span>
 
-<span data-ttu-id="a39c7-110">Følg denne fremgangsmåten for å opprette et kanalnavigasjonshierarki.</span><span class="sxs-lookup"><span data-stu-id="a39c7-110">To create a channel navigation hierarchy, follow these steps.</span></span>
+<span data-ttu-id="39f80-110">Følg denne fremgangsmåten for å opprette et kanalnavigasjonshierarki.</span><span class="sxs-lookup"><span data-stu-id="39f80-110">To create a channel navigation hierarchy, follow these steps.</span></span>
 
-1. <span data-ttu-id="a39c7-111">Gå til **Detaljhandel og handel \> Produkter og kategorier \> Kategori- og produktadministrering**.</span><span class="sxs-lookup"><span data-stu-id="a39c7-111">Go to **Retail and Commerce \> Products and categories \> Category and product management**.</span></span>
-1. <span data-ttu-id="a39c7-112">Velg **Kategorihierarkier**, og velg deretter **Ny**.</span><span class="sxs-lookup"><span data-stu-id="a39c7-112">Select **Category hierarchies**, and then select **New**.</span></span>
-1. <span data-ttu-id="a39c7-113">Gi hierarkiet et navn.</span><span class="sxs-lookup"><span data-stu-id="a39c7-113">Name the hierarchy.</span></span>
+1. <span data-ttu-id="39f80-111">Gå til **Detaljhandel og handel \> Produkter og kategorier \> Kategori- og produktadministrering**.</span><span class="sxs-lookup"><span data-stu-id="39f80-111">Go to **Retail and Commerce \> Products and categories \> Category and product management**.</span></span>
+1. <span data-ttu-id="39f80-112">Velg **Kategorihierarkier**, og velg deretter **Ny**.</span><span class="sxs-lookup"><span data-stu-id="39f80-112">Select **Category hierarchies**, and then select **New**.</span></span>
+1. <span data-ttu-id="39f80-113">Gi hierarkiet et navn.</span><span class="sxs-lookup"><span data-stu-id="39f80-113">Name the hierarchy.</span></span>
 
     > [!NOTE]
-    > <span data-ttu-id="a39c7-114">Den øverste kategorien som du oppretter, er rotkategorinoden.</span><span class="sxs-lookup"><span data-stu-id="a39c7-114">The topmost category that you create is the root category node.</span></span> <span data-ttu-id="a39c7-115">Den vises ikke på området.</span><span class="sxs-lookup"><span data-stu-id="a39c7-115">It won't be shown on your site.</span></span> <span data-ttu-id="a39c7-116">Hvis du vil opprette et kategorihierarki der en enkelt node på øverste nivå vises på området, oppretter og navngir du kategorien som et underordnet objekt av rotkategorien.</span><span class="sxs-lookup"><span data-stu-id="a39c7-116">To create a category hierarchy where a single top-level node is shown on your site, create and name the category as a child of the root category.</span></span>
+    > <span data-ttu-id="39f80-114">Den øverste kategorien som du oppretter, er rotkategorinoden.</span><span class="sxs-lookup"><span data-stu-id="39f80-114">The topmost category that you create is the root category node.</span></span> <span data-ttu-id="39f80-115">Den vises ikke på området.</span><span class="sxs-lookup"><span data-stu-id="39f80-115">It won't be shown on your site.</span></span> <span data-ttu-id="39f80-116">Hvis du vil opprette et kategorihierarki der en enkelt node på øverste nivå vises på området, oppretter og navngir du kategorien som et underordnet objekt av rotkategorien.</span><span class="sxs-lookup"><span data-stu-id="39f80-116">To create a category hierarchy where a single top-level node is shown on your site, create and name the category as a child of the root category.</span></span>
 
-1. <span data-ttu-id="a39c7-117">Velg **Ny kategorinode**, og gi kategorien et navn.</span><span class="sxs-lookup"><span data-stu-id="a39c7-117">Select **New category node**, and name the category.</span></span>
-1. <span data-ttu-id="a39c7-118">Fortsett å opprette likestilte og underordnede kategorier etter behov.</span><span class="sxs-lookup"><span data-stu-id="a39c7-118">Continue to create sibling and child categories as you require.</span></span>
+1. <span data-ttu-id="39f80-117">Velg **Ny kategorinode**, og gi kategorien et navn.</span><span class="sxs-lookup"><span data-stu-id="39f80-117">Select **New category node**, and name the category.</span></span>
+1. <span data-ttu-id="39f80-118">Fortsett å opprette likestilte og underordnede kategorier etter behov.</span><span class="sxs-lookup"><span data-stu-id="39f80-118">Continue to create sibling and child categories as you require.</span></span>
 
-<span data-ttu-id="a39c7-119">Du kan nå tilordne produkter til hver kategori du opprettet under kategorien på toppnivå.</span><span class="sxs-lookup"><span data-stu-id="a39c7-119">You can now assign products to each category that you created under the top-level category.</span></span>
+<span data-ttu-id="39f80-119">Du kan nå tilordne produkter til hver kategori du opprettet under kategorien på toppnivå.</span><span class="sxs-lookup"><span data-stu-id="39f80-119">You can now assign products to each category that you created under the top-level category.</span></span>
 
-## <a name="customize-the-order-of-categories"></a><span data-ttu-id="a39c7-120">Tilpasse rekkefølgen på kategorier</span><span class="sxs-lookup"><span data-stu-id="a39c7-120">Customize the order of categories</span></span>
+## <a name="customize-the-order-of-categories"></a><span data-ttu-id="39f80-120">Tilpasse rekkefølgen på kategorier</span><span class="sxs-lookup"><span data-stu-id="39f80-120">Customize the order of categories</span></span>
 
-<span data-ttu-id="a39c7-121">Som standard vises kategoriene du definerer, i alfabetisk rekkefølge på området.</span><span class="sxs-lookup"><span data-stu-id="a39c7-121">By default, the categories that you define will appear in alphabetical order on your site.</span></span> <span data-ttu-id="a39c7-122">Du kan imidlertid også tilpasse visningsrekkefølgen for kategorier.</span><span class="sxs-lookup"><span data-stu-id="a39c7-122">However, you can also customize the display order of categories.</span></span>
+<span data-ttu-id="39f80-121">Som standard vises kategoriene du definerer, i alfabetisk rekkefølge på området.</span><span class="sxs-lookup"><span data-stu-id="39f80-121">By default, the categories that you define will appear in alphabetical order on your site.</span></span> <span data-ttu-id="39f80-122">Du kan imidlertid også tilpasse visningsrekkefølgen for kategorier.</span><span class="sxs-lookup"><span data-stu-id="39f80-122">However, you can also customize the display order of categories.</span></span>
 
-## <a name="assign-a-category-hierarchy-type"></a><span data-ttu-id="a39c7-123">Tilordne en kategorihierarkitype</span><span class="sxs-lookup"><span data-stu-id="a39c7-123">Assign a category hierarchy type</span></span>
+## <a name="assign-a-category-hierarchy-type"></a><span data-ttu-id="39f80-123">Tilordne en kategorihierarkitype</span><span class="sxs-lookup"><span data-stu-id="39f80-123">Assign a category hierarchy type</span></span>
 
-1. <span data-ttu-id="a39c7-124">Gå til **Detaljhandel og handel \> Produkter og kategorier \> Kategori- og produktadministrering**.</span><span class="sxs-lookup"><span data-stu-id="a39c7-124">Go to **Retail and Commerce \> Products and categories \> Category and product management**.</span></span>
-1. <span data-ttu-id="a39c7-125">Velg **Kategorihierarkier**.</span><span class="sxs-lookup"><span data-stu-id="a39c7-125">Select **Category hierarchies**.</span></span>
-1. <span data-ttu-id="a39c7-126">I handlingsruten, i kategorien **Kategorihierarki** i gruppen **Oppsett** velger du **Tilknytt hierarkitype**.</span><span class="sxs-lookup"><span data-stu-id="a39c7-126">On the Action Pane, on the **Category hierarchy** tab, in the **Set up** group, select **Associate hierarchy type**.</span></span>
-1. <span data-ttu-id="a39c7-127">Velg **Ny**.</span><span class="sxs-lookup"><span data-stu-id="a39c7-127">Select **New**.</span></span>
-1. <span data-ttu-id="a39c7-128">I feltet **Kategorihierarkitype** velger du **Kanalnavigasjonshierarki**.</span><span class="sxs-lookup"><span data-stu-id="a39c7-128">In the **Category hierarchy type** field, select **Channel navigation hierarchy**.</span></span>
-1. <span data-ttu-id="a39c7-129">I feltet **Kategorihierarki** velger du kanalnavigeringshierarkiet du opprettet tidligere.</span><span class="sxs-lookup"><span data-stu-id="a39c7-129">In the **Category hierarchy** field, select the channel navigation hierarchy that you created earlier.</span></span>
+1. <span data-ttu-id="39f80-124">Gå til **Detaljhandel og handel \> Produkter og kategorier \> Kategori- og produktadministrering**.</span><span class="sxs-lookup"><span data-stu-id="39f80-124">Go to **Retail and Commerce \> Products and categories \> Category and product management**.</span></span>
+1. <span data-ttu-id="39f80-125">Velg **Kategorihierarkier**.</span><span class="sxs-lookup"><span data-stu-id="39f80-125">Select **Category hierarchies**.</span></span>
+1. <span data-ttu-id="39f80-126">I handlingsruten, i kategorien **Kategorihierarki** i gruppen **Oppsett** velger du **Tilknytt hierarkitype**.</span><span class="sxs-lookup"><span data-stu-id="39f80-126">On the Action Pane, on the **Category hierarchy** tab, in the **Set up** group, select **Associate hierarchy type**.</span></span>
+1. <span data-ttu-id="39f80-127">Velg **Ny**.</span><span class="sxs-lookup"><span data-stu-id="39f80-127">Select **New**.</span></span>
+1. <span data-ttu-id="39f80-128">I feltet **Kategorihierarkitype** velger du **Kanalnavigasjonshierarki**.</span><span class="sxs-lookup"><span data-stu-id="39f80-128">In the **Category hierarchy type** field, select **Channel navigation hierarchy**.</span></span>
+1. <span data-ttu-id="39f80-129">I feltet **Kategorihierarki** velger du kanalnavigeringshierarkiet du opprettet tidligere.</span><span class="sxs-lookup"><span data-stu-id="39f80-129">In the **Category hierarchy** field, select the channel navigation hierarchy that you created earlier.</span></span>
 
-## <a name="publish-new-or-updated-navigation-hierarchies"></a><span data-ttu-id="a39c7-130">Publisere nye eller oppdaterte navigasjonshierarkier</span><span class="sxs-lookup"><span data-stu-id="a39c7-130">Publish new or updated navigation hierarchies</span></span>
+## <a name="publish-new-or-updated-navigation-hierarchies"></a><span data-ttu-id="39f80-130">Publisere nye eller oppdaterte navigasjonshierarkier</span><span class="sxs-lookup"><span data-stu-id="39f80-130">Publish new or updated navigation hierarchies</span></span>
 
-<span data-ttu-id="a39c7-131">Følg denne fremgangsmåten for å gjøre navigasjonshierarkiet tilgjengelig for nettbutikkfasaden.</span><span class="sxs-lookup"><span data-stu-id="a39c7-131">To make your navigation hierarchy available to your online storefront, follow these steps.</span></span>
+<span data-ttu-id="39f80-131">Følg denne fremgangsmåten for å gjøre navigasjonshierarkiet tilgjengelig for nettbutikkfasaden.</span><span class="sxs-lookup"><span data-stu-id="39f80-131">To make your navigation hierarchy available to your online storefront, follow these steps.</span></span>
 
-1. <span data-ttu-id="a39c7-132">Gå til **Detaljhandel og handel \> Kanaloppsett \> Kanalkategorier og produktattributter**.</span><span class="sxs-lookup"><span data-stu-id="a39c7-132">Go to **Retail and Commerce \> Channel setup \> Channel categories and product attributes**.</span></span>
-1. <span data-ttu-id="a39c7-133">Velg nettbutikken i treet til venstre.</span><span class="sxs-lookup"><span data-stu-id="a39c7-133">In the tree on the left, select your online store.</span></span>
-1. <span data-ttu-id="a39c7-134">Velg **Publiser kanaloppdateringer**.</span><span class="sxs-lookup"><span data-stu-id="a39c7-134">Select **Publish channel updates**.</span></span>
-1. <span data-ttu-id="a39c7-135">Gå til **Detaljhandel og handel \> IT for detaljhandel og handel \> Distribusjonsplan**.</span><span class="sxs-lookup"><span data-stu-id="a39c7-135">Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**.</span></span>
-1. <span data-ttu-id="a39c7-136">Finn og velg **Jobb 1040** i listen.</span><span class="sxs-lookup"><span data-stu-id="a39c7-136">In the list, find and select **Job 1040**.</span></span>
-1. <span data-ttu-id="a39c7-137">Velg **Kjør nå**.</span><span class="sxs-lookup"><span data-stu-id="a39c7-137">Select **Run now**.</span></span>
-1. <span data-ttu-id="a39c7-138">Gjenta trinn 5 og 6 for jobbene 1070 og 1150.</span><span class="sxs-lookup"><span data-stu-id="a39c7-138">Repeat steps 5 and 6 for jobs 1070 and 1150.</span></span>
+1. <span data-ttu-id="39f80-132">Gå til **Detaljhandel og handel \> Kanaloppsett \> Kanalkategorier og produktattributter**.</span><span class="sxs-lookup"><span data-stu-id="39f80-132">Go to **Retail and Commerce \> Channel setup \> Channel categories and product attributes**.</span></span>
+1. <span data-ttu-id="39f80-133">Velg nettbutikken i treet til venstre.</span><span class="sxs-lookup"><span data-stu-id="39f80-133">In the tree on the left, select your online store.</span></span>
+1. <span data-ttu-id="39f80-134">Velg **Publiser kanaloppdateringer**.</span><span class="sxs-lookup"><span data-stu-id="39f80-134">Select **Publish channel updates**.</span></span>
+1. <span data-ttu-id="39f80-135">Gå til **Detaljhandel og handel \> IT for detaljhandel og handel \> Distribusjonsplan**.</span><span class="sxs-lookup"><span data-stu-id="39f80-135">Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**.</span></span>
+1. <span data-ttu-id="39f80-136">Finn og velg **Jobb 1040** i listen.</span><span class="sxs-lookup"><span data-stu-id="39f80-136">In the list, find and select **Job 1040**.</span></span>
+1. <span data-ttu-id="39f80-137">Velg **Kjør nå**.</span><span class="sxs-lookup"><span data-stu-id="39f80-137">Select **Run now**.</span></span>
+1. <span data-ttu-id="39f80-138">Gjenta trinn 5 og 6 for jobbene 1070 og 1150.</span><span class="sxs-lookup"><span data-stu-id="39f80-138">Repeat steps 5 and 6 for jobs 1070 and 1150.</span></span>
 
-## <a name="show-categories-on-your-site"></a><span data-ttu-id="a39c7-139">Vise kategorier på området</span><span class="sxs-lookup"><span data-stu-id="a39c7-139">Show categories on your site</span></span>
+## <a name="show-categories-on-your-site"></a><span data-ttu-id="39f80-139">Vise kategorier på området</span><span class="sxs-lookup"><span data-stu-id="39f80-139">Show categories on your site</span></span>
 
-<span data-ttu-id="a39c7-140">Hvis du vil vise kategorihierarkiet i nettbutikkfasaden, må du legge til navigasjonsmenymodulen på riktig sted i en mal eller et fragment.</span><span class="sxs-lookup"><span data-stu-id="a39c7-140">To show your category hierarchy on your online storefront, you must add the navigation menu module in the appropriate location in a template or fragment.</span></span> <span data-ttu-id="a39c7-141">Navigasjonsmenymodulen vil deretter vise navigasjonshierarkiet, forutsatt at du har publisert navigasjonshierarkiet til kanalen som området er bundet til.</span><span class="sxs-lookup"><span data-stu-id="a39c7-141">The navigation menu module will then show your navigation hierarchy, provided that you've published your navigation hierarchy to the channel that your site is bound to.</span></span>
+<span data-ttu-id="39f80-140">Hvis du vil vise kategorihierarkiet i nettbutikkfasaden, må du legge til navigasjonsmenymodulen på riktig sted i en mal eller et fragment.</span><span class="sxs-lookup"><span data-stu-id="39f80-140">To show your category hierarchy on your online storefront, you must add the navigation menu module in the appropriate location in a template or fragment.</span></span> <span data-ttu-id="39f80-141">Navigasjonsmenymodulen vil deretter vise navigasjonshierarkiet, forutsatt at du har publisert navigasjonshierarkiet til kanalen som området er bundet til.</span><span class="sxs-lookup"><span data-stu-id="39f80-141">The navigation menu module will then show your navigation hierarchy, provided that you've published your navigation hierarchy to the channel that your site is bound to.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="a39c7-142">Navigasjonsmenymodulen som er inkludert i modulbiblioteket, gjør at brukere bare kan navigere til kategorier som ikke har underkategorier.</span><span class="sxs-lookup"><span data-stu-id="a39c7-142">The navigation menu module that is included in the module library lets users navigate only to categories that don't have subcategories.</span></span> <span data-ttu-id="a39c7-143">Hvis kundene skal kunne navigere til kategorier som har underkategorier, må du tilpasse navigasjonsmenymodulen.</span><span class="sxs-lookup"><span data-stu-id="a39c7-143">If your customers should be able to navigate to categories that have subcategories, you must customize the navigation menu module.</span></span>
+> <span data-ttu-id="39f80-142">Navigasjonsmenymodulen som er inkludert i modulbiblioteket, gjør at brukere bare kan navigere til kategorier som ikke har underkategorier.</span><span class="sxs-lookup"><span data-stu-id="39f80-142">The navigation menu module that is included in the module library lets users navigate only to categories that don't have subcategories.</span></span> <span data-ttu-id="39f80-143">Hvis kundene skal kunne navigere til kategorier som har underkategorier, må du tilpasse navigasjonsmenymodulen.</span><span class="sxs-lookup"><span data-stu-id="39f80-143">If your customers should be able to navigate to categories that have subcategories, you must customize the navigation menu module.</span></span>
 
-## <a name="add-custom-navigation-options"></a><span data-ttu-id="a39c7-144">Legge til egendefinerte navigasjonsalternativer</span><span class="sxs-lookup"><span data-stu-id="a39c7-144">Add custom navigation options</span></span>
+## <a name="add-custom-navigation-options"></a><span data-ttu-id="39f80-144">Legge til egendefinerte navigasjonsalternativer</span><span class="sxs-lookup"><span data-stu-id="39f80-144">Add custom navigation options</span></span>
 
-<span data-ttu-id="a39c7-145">Du kan legge til navigasjonsalternativer som ikke er en del av produktkategorihierarkiet, på navigasjonsmenyen.</span><span class="sxs-lookup"><span data-stu-id="a39c7-145">On your navigation menu, you can add navigation options that aren't part of your product category hierarchy.</span></span> <span data-ttu-id="a39c7-146">På slutten av listen over produktkategorier kan du for eksempel legge til en **Kontakt oss**-vare som peker til en kontaktside som du har bygget for området.</span><span class="sxs-lookup"><span data-stu-id="a39c7-146">For example, at the end of the list of product categories, you can add a **Contact Us** item that points to a contact page that you've built for your site.</span></span>
+<span data-ttu-id="39f80-145">Du kan legge til navigasjonsalternativer som ikke er en del av produktkategorihierarkiet, på navigasjonsmenyen.</span><span class="sxs-lookup"><span data-stu-id="39f80-145">On your navigation menu, you can add navigation options that aren't part of your product category hierarchy.</span></span> <span data-ttu-id="39f80-146">På slutten av listen over produktkategorier kan du for eksempel legge til en **Kontakt oss**-vare som peker til en kontaktside som du har bygget for området.</span><span class="sxs-lookup"><span data-stu-id="39f80-146">For example, at the end of the list of product categories, you can add a **Contact Us** item that points to a contact page that you've built for your site.</span></span>
 
-<span data-ttu-id="a39c7-147">Hvis du vil legge til egendefinerte navigasjonsalternativer i navigasjonsmenyen, følger du disse trinnene.</span><span class="sxs-lookup"><span data-stu-id="a39c7-147">To add custom navigation options to your navigation menu, follow these steps.</span></span>
+<span data-ttu-id="39f80-147">Hvis du vil legge til egendefinerte navigasjonsalternativer i navigasjonsmenyen, følger du disse trinnene.</span><span class="sxs-lookup"><span data-stu-id="39f80-147">To add custom navigation options to your navigation menu, follow these steps.</span></span>
 
-1. <span data-ttu-id="a39c7-148">I malen eller fragmentet som du vil tilpasse, velger du navigasjonsmenymodulen.</span><span class="sxs-lookup"><span data-stu-id="a39c7-148">In the template or fragment that you want to customize, select the navigation menu module.</span></span>
-1. <span data-ttu-id="a39c7-149">I egenskapsruten i kategorien **Data** velger **Legg til vare** for å opprette et nytt navigasjonselement for innholdsbehandlingssystem (CMS).</span><span class="sxs-lookup"><span data-stu-id="a39c7-149">In the property pane, on the **Data** tab, select **Add item** to create a new content management system (CMS) navigation item.</span></span>
-1. <span data-ttu-id="a39c7-150">Angi koblingstekst og en URL-adresse.</span><span class="sxs-lookup"><span data-stu-id="a39c7-150">Enter link text and a URL.</span></span>
-1. <span data-ttu-id="a39c7-151">Gjenta trinn 2 og 3 for å legge til flere egendefinerte navigasjonsalternativer.</span><span class="sxs-lookup"><span data-stu-id="a39c7-151">Repeat steps 2 and 3 to add more custom navigation options.</span></span>
-1. <span data-ttu-id="a39c7-152">Når du er ferdig, velger du **Lagre** for å lagre malen eller fragmentet, og velg deretter **Fullfør redigering** for å sjekke den inn.</span><span class="sxs-lookup"><span data-stu-id="a39c7-152">When you've finished, select **Save** to save the template or fragment, and then select **Finish editing** to check it in.</span></span>
+1. <span data-ttu-id="39f80-148">I malen eller fragmentet som du vil tilpasse, velger du navigasjonsmenymodulen.</span><span class="sxs-lookup"><span data-stu-id="39f80-148">In the template or fragment that you want to customize, select the navigation menu module.</span></span>
+1. <span data-ttu-id="39f80-149">I egenskapsruten i kategorien **Data** velger **Legg til vare** for å opprette et nytt navigasjonselement for innholdsbehandlingssystem (CMS).</span><span class="sxs-lookup"><span data-stu-id="39f80-149">In the property pane, on the **Data** tab, select **Add item** to create a new content management system (CMS) navigation item.</span></span>
+1. <span data-ttu-id="39f80-150">Angi koblingstekst og en URL-adresse.</span><span class="sxs-lookup"><span data-stu-id="39f80-150">Enter link text and a URL.</span></span>
+1. <span data-ttu-id="39f80-151">Gjenta trinn 2 og 3 for å legge til flere egendefinerte navigasjonsalternativer.</span><span class="sxs-lookup"><span data-stu-id="39f80-151">Repeat steps 2 and 3 to add more custom navigation options.</span></span>
+1. <span data-ttu-id="39f80-152">Når du er ferdig, velger du **Lagre** for å lagre malen eller fragmentet, og velg deretter **Fullfør redigering** for å sjekke den inn.</span><span class="sxs-lookup"><span data-stu-id="39f80-152">When you've finished, select **Save** to save the template or fragment, and then select **Finish editing** to check it in.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="a39c7-153">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="a39c7-153">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="39f80-153">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="39f80-153">Additional resources</span></span>
 
-[<span data-ttu-id="a39c7-154">Oversikt over maler og oppsett</span><span class="sxs-lookup"><span data-stu-id="a39c7-154">Templates and layouts overview</span></span>](templates-layouts-overview.md)
+[<span data-ttu-id="39f80-154">Oversikt over maler og oppsett</span><span class="sxs-lookup"><span data-stu-id="39f80-154">Templates and layouts overview</span></span>](templates-layouts-overview.md)
 
-[<span data-ttu-id="a39c7-155">Arbeide med maler</span><span class="sxs-lookup"><span data-stu-id="a39c7-155">Work with templates</span></span>](work-with-templates.md)
+[<span data-ttu-id="39f80-155">Arbeide med maler</span><span class="sxs-lookup"><span data-stu-id="39f80-155">Work with templates</span></span>](work-with-templates.md)
 
-[<span data-ttu-id="a39c7-156">Arbeide med forhåndsinnstilte oppsett</span><span class="sxs-lookup"><span data-stu-id="a39c7-156">Work with preset layouts</span></span>](work-with-layouts.md)
+[<span data-ttu-id="39f80-156">Arbeide med forhåndsinnstilte oppsett</span><span class="sxs-lookup"><span data-stu-id="39f80-156">Work with preset layouts</span></span>](work-with-layouts.md)
 
-[<span data-ttu-id="a39c7-157">Arbeide med fragmenter</span><span class="sxs-lookup"><span data-stu-id="a39c7-157">Work with fragments</span></span>](work-with-fragments.md)
+[<span data-ttu-id="39f80-157">Arbeide med fragmenter</span><span class="sxs-lookup"><span data-stu-id="39f80-157">Work with fragments</span></span>](work-with-fragments.md)
 
-[<span data-ttu-id="a39c7-158">Arbeide med moduler</span><span class="sxs-lookup"><span data-stu-id="a39c7-158">Work with modules</span></span>](work-with-modules.md)
+[<span data-ttu-id="39f80-158">Arbeide med moduler</span><span class="sxs-lookup"><span data-stu-id="39f80-158">Work with modules</span></span>](work-with-modules.md)
 
-[<span data-ttu-id="a39c7-159">Opprette en URL-adresse for side</span><span class="sxs-lookup"><span data-stu-id="a39c7-159">Create a page URL</span></span>](create-page-url.md)
+[<span data-ttu-id="39f80-159">Opprette en URL-adresse for side</span><span class="sxs-lookup"><span data-stu-id="39f80-159">Create a page URL</span></span>](create-page-url.md)
 
-[<span data-ttu-id="a39c7-160">Arbeide med publiseringsgrupper</span><span class="sxs-lookup"><span data-stu-id="a39c7-160">Work with publish groups</span></span>](publish-groups.md)
+[<span data-ttu-id="39f80-160">Arbeide med publiseringsgrupper</span><span class="sxs-lookup"><span data-stu-id="39f80-160">Work with publish groups</span></span>](publish-groups.md)

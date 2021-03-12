@@ -11,41 +11,40 @@ ms.technology: ''
 ms.search.form: VendInvoiceWorkspace, LedgerJournalTable, LedgerJournalTransVendInvoice
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f9f2cbe0c9d1609aa3713776f81bafa396fff301
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 18d8b74bd8783c23e548a3185414d1461bc1d869
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4645287"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4971834"
 ---
-# <a name="record-a-vendor-invoice-in-the-invoice-journal"></a><span data-ttu-id="b5d44-103">Registrere en leverandørfaktura i fakturajournalen</span><span class="sxs-lookup"><span data-stu-id="b5d44-103">Record a vendor invoice in the invoice journal</span></span>
+# <a name="record-a-vendor-invoice-in-the-invoice-journal"></a><span data-ttu-id="1409c-103">Registrere en leverandørfaktura i fakturajournalen</span><span class="sxs-lookup"><span data-stu-id="1409c-103">Record a vendor invoice in the invoice journal</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="b5d44-104">Denne oppgaveveiledningen viser hvordan du kan registrere leverandørfakturaer som ikke er knyttet til bestillinger.</span><span class="sxs-lookup"><span data-stu-id="b5d44-104">This task guide will show how to record vendor invoices that are not associated with purchase orders.</span></span> <span data-ttu-id="b5d44-105">Eksempler på denne typen faktura er utgifter for forsyninger eller tjenester.</span><span class="sxs-lookup"><span data-stu-id="b5d44-105">Examples of this type of invoice include expenses for supplies or services.</span></span>  <span data-ttu-id="b5d44-106">Denne registreringen bruker demonstrasjonsfirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="b5d44-106">This recording uses the USMF demo company.</span></span>
+<span data-ttu-id="1409c-104">Denne oppgaveveiledningen viser hvordan du kan registrere leverandørfakturaer som ikke er knyttet til bestillinger.</span><span class="sxs-lookup"><span data-stu-id="1409c-104">This task guide will show how to record vendor invoices that are not associated with purchase orders.</span></span> <span data-ttu-id="1409c-105">Eksempler på denne typen faktura er utgifter for forsyninger eller tjenester.</span><span class="sxs-lookup"><span data-stu-id="1409c-105">Examples of this type of invoice include expenses for supplies or services.</span></span>  <span data-ttu-id="1409c-106">Denne registreringen bruker demonstrasjonsfirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="1409c-106">This recording uses the USMF demo company.</span></span>
 
-1. <span data-ttu-id="b5d44-107">Gå til **Navigasjonsrute > Moduler > Leverandører > Arbeidsområder > Leverandørfakturaregistrering**.</span><span class="sxs-lookup"><span data-stu-id="b5d44-107">Go to **Navigation pane > Modules > Accounts payable > Workspaces > Vendor invoice entry**.</span></span>
-2. <span data-ttu-id="b5d44-108">Klikk **Ny fakturajournal** i **handlingsruten**.</span><span class="sxs-lookup"><span data-stu-id="b5d44-108">On the **Action pane**, click **New invoice journal**.</span></span>
-3. <span data-ttu-id="b5d44-109">Klikk på **Ny**.</span><span class="sxs-lookup"><span data-stu-id="b5d44-109">Click **New**.</span></span>
-4. <span data-ttu-id="b5d44-110">I **Navn**-feltet angir du journalnavnet eller klikker rullegardinknappen for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="b5d44-110">In the **Name** field, enter the journal name or click the drop down button to open the lookup.</span></span>
-5. <span data-ttu-id="b5d44-111">Skriv inn en verdi i **Beskrivelse**-feltet.</span><span class="sxs-lookup"><span data-stu-id="b5d44-111">In the **Description** field, type a value.</span></span>
-6. <span data-ttu-id="b5d44-112">Klikk på **Linjer** i **handlingsruten**.</span><span class="sxs-lookup"><span data-stu-id="b5d44-112">On the **Action pane**, click **Lines**.</span></span> <span data-ttu-id="b5d44-113">Angi posteringsdatoen som oppdaterer Økonomimodul, i **Dato**-feltet.</span><span class="sxs-lookup"><span data-stu-id="b5d44-113">In the **Date** field, enter the posting date that will update General Ledger.</span></span>  
-7. <span data-ttu-id="b5d44-114">Angi **leverandørkontoen** i **Konto**-feltet.</span><span class="sxs-lookup"><span data-stu-id="b5d44-114">In the **Account** field, specify the **Vendor account**.</span></span>
-8. <span data-ttu-id="b5d44-115">I **Faktura**-feltet angir du fakturanummeret.</span><span class="sxs-lookup"><span data-stu-id="b5d44-115">In the **Invoice** field, enter the invoice number.</span></span>
-9. <span data-ttu-id="b5d44-116">Skriv inn en verdi i **Beskrivelse**-feltet.</span><span class="sxs-lookup"><span data-stu-id="b5d44-116">In the **Description** field, type a value.</span></span>
-10. <span data-ttu-id="b5d44-117">Angi et tall i **Kredit**-feltet.</span><span class="sxs-lookup"><span data-stu-id="b5d44-117">In the **Credit** field, enter a number.</span></span>
-11. <span data-ttu-id="b5d44-118">I **Motkonto**-feltet angir du kontonummeret eller klikker rullegardinknappen for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="b5d44-118">In the **Offset account** field, enter the account number or click the drop down button to open the lookup</span></span>
-    * <span data-ttu-id="b5d44-119">**Mva-gruppen** hentes fra leverandørkontoen.</span><span class="sxs-lookup"><span data-stu-id="b5d44-119">The **Sales tax group** will be default from the vendor account.</span></span>  
-    * <span data-ttu-id="b5d44-120">**Mva-gruppen for vare** hentes fra hovedkontoen angitt i **Motkonto**-feltet.</span><span class="sxs-lookup"><span data-stu-id="b5d44-120">The **Item sales tax group** will be default from the main account specified in the **Offset account** field.</span></span>  
-    * <span data-ttu-id="b5d44-121">**Forfallsdatoen** beregnes basert på betalingsbetingelsene.</span><span class="sxs-lookup"><span data-stu-id="b5d44-121">The **Due date** will be calculated based on the Terms of payment.</span></span>  
-    * <span data-ttu-id="b5d44-122">**Kontantrabatten** hentes fra leverandørkontoen.</span><span class="sxs-lookup"><span data-stu-id="b5d44-122">The **Cash discount** will default from the Vendor account.</span></span>
-12. <span data-ttu-id="b5d44-123">Hvis du har aktivert arbeidsflyten for leverandørfakturajournal, klikker du **Arbeidsflyt > Send**.</span><span class="sxs-lookup"><span data-stu-id="b5d44-123">If you have enabled Vendor invoice journal workflow, click **Workflow > Submit**.</span></span>
-    * <span data-ttu-id="b5d44-124">Når sendingen er godkjent, vil datoen flyttes til den første dagen i neste åpne periode hvis posteringsdatoen for transaksjonen er innenfor en periode som er på vent eller lukket for finanspostering.</span><span class="sxs-lookup"><span data-stu-id="b5d44-124">When your submission is approved, the date will be advanced to the first day of the next open period, if the transaction posting date falls within a period that is On hold or Closed for ledger posting.</span></span>
-12. <span data-ttu-id="b5d44-125">Klikk **Poster**.</span><span class="sxs-lookup"><span data-stu-id="b5d44-125">Click **Post**.</span></span>
-13. <span data-ttu-id="b5d44-126">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="b5d44-126">Close the page.</span></span>
+1. <span data-ttu-id="1409c-107">Gå til **Navigasjonsrute > Moduler > Leverandører > Arbeidsområder > Leverandørfakturaregistrering**.</span><span class="sxs-lookup"><span data-stu-id="1409c-107">Go to **Navigation pane > Modules > Accounts payable > Workspaces > Vendor invoice entry**.</span></span>
+2. <span data-ttu-id="1409c-108">Klikk **Ny fakturajournal** i **handlingsruten**.</span><span class="sxs-lookup"><span data-stu-id="1409c-108">On the **Action pane**, click **New invoice journal**.</span></span>
+3. <span data-ttu-id="1409c-109">Klikk på **Ny**.</span><span class="sxs-lookup"><span data-stu-id="1409c-109">Click **New**.</span></span>
+4. <span data-ttu-id="1409c-110">I **Navn**-feltet angir du journalnavnet eller klikker rullegardinknappen for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="1409c-110">In the **Name** field, enter the journal name or click the drop down button to open the lookup.</span></span>
+5. <span data-ttu-id="1409c-111">Skriv inn en verdi i **Beskrivelse**-feltet.</span><span class="sxs-lookup"><span data-stu-id="1409c-111">In the **Description** field, type a value.</span></span>
+6. <span data-ttu-id="1409c-112">Klikk på **Linjer** i **handlingsruten**.</span><span class="sxs-lookup"><span data-stu-id="1409c-112">On the **Action pane**, click **Lines**.</span></span> <span data-ttu-id="1409c-113">Angi posteringsdatoen som oppdaterer Økonomimodul, i **Dato**-feltet.</span><span class="sxs-lookup"><span data-stu-id="1409c-113">In the **Date** field, enter the posting date that will update General Ledger.</span></span>  
+7. <span data-ttu-id="1409c-114">Angi **leverandørkontoen** i **Konto**-feltet.</span><span class="sxs-lookup"><span data-stu-id="1409c-114">In the **Account** field, specify the **Vendor account**.</span></span>
+8. <span data-ttu-id="1409c-115">I **Faktura**-feltet angir du fakturanummeret.</span><span class="sxs-lookup"><span data-stu-id="1409c-115">In the **Invoice** field, enter the invoice number.</span></span>
+9. <span data-ttu-id="1409c-116">Skriv inn en verdi i **Beskrivelse**-feltet.</span><span class="sxs-lookup"><span data-stu-id="1409c-116">In the **Description** field, type a value.</span></span>
+10. <span data-ttu-id="1409c-117">Angi et tall i **Kredit**-feltet.</span><span class="sxs-lookup"><span data-stu-id="1409c-117">In the **Credit** field, enter a number.</span></span>
+11. <span data-ttu-id="1409c-118">I **Motkonto**-feltet angir du kontonummeret eller klikker rullegardinknappen for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="1409c-118">In the **Offset account** field, enter the account number or click the drop down button to open the lookup</span></span>
+    * <span data-ttu-id="1409c-119">**Mva-gruppen** hentes fra leverandørkontoen.</span><span class="sxs-lookup"><span data-stu-id="1409c-119">The **Sales tax group** will be default from the vendor account.</span></span>  
+    * <span data-ttu-id="1409c-120">**Mva-gruppen for vare** hentes fra hovedkontoen angitt i **Motkonto**-feltet.</span><span class="sxs-lookup"><span data-stu-id="1409c-120">The **Item sales tax group** will be default from the main account specified in the **Offset account** field.</span></span>  
+    * <span data-ttu-id="1409c-121">**Forfallsdatoen** beregnes basert på betalingsbetingelsene.</span><span class="sxs-lookup"><span data-stu-id="1409c-121">The **Due date** will be calculated based on the Terms of payment.</span></span>  
+    * <span data-ttu-id="1409c-122">**Kontantrabatten** hentes fra leverandørkontoen.</span><span class="sxs-lookup"><span data-stu-id="1409c-122">The **Cash discount** will default from the Vendor account.</span></span>
+12. <span data-ttu-id="1409c-123">Hvis du har aktivert arbeidsflyten for leverandørfakturajournal, klikker du **Arbeidsflyt > Send**.</span><span class="sxs-lookup"><span data-stu-id="1409c-123">If you have enabled Vendor invoice journal workflow, click **Workflow > Submit**.</span></span>
+    * <span data-ttu-id="1409c-124">Når sendingen er godkjent, vil datoen flyttes til den første dagen i neste åpne periode hvis posteringsdatoen for transaksjonen er innenfor en periode som er på vent eller lukket for finanspostering.</span><span class="sxs-lookup"><span data-stu-id="1409c-124">When your submission is approved, the date will be advanced to the first day of the next open period, if the transaction posting date falls within a period that is On hold or Closed for ledger posting.</span></span>
+12. <span data-ttu-id="1409c-125">Klikk **Poster**.</span><span class="sxs-lookup"><span data-stu-id="1409c-125">Click **Post**.</span></span>
+13. <span data-ttu-id="1409c-126">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="1409c-126">Close the page.</span></span>
 
