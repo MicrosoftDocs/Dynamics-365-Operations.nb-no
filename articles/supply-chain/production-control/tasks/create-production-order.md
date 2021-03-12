@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ProdTableListPage, ProdTableCreate, ProdTable, ProdBOM, ProdRoute, ProdJournalCreate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ce08532b8281d730cd5fae4ebd634a08c5baeedd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 81caa6693d86c797d8565270094556ae4e103e6a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434123"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4998684"
 ---
 # <a name="create-a-production-order"></a>Opprette en produksjonsordre
 
@@ -33,44 +32,41 @@ Denne fremgangsmåten viser hvordan du oppretter en produksjonsordre. Demonstras
 
 ## <a name="create-a-production-order"></a>Opprette en produksjonsordre
 1. Gå til Produksjonskontroll > Produksjonsordrer > Alle produksjonsordrer.
-2. Klikk Ny produksjonsordre.
+2. Klikk på Ny produksjonsordre.
 3. Skriv inn D0001 i feltet Varenummer.
 4. Angi en leveringsdato i Levering-feltet.
     * Leveringsdatoen angir når produksjonsordren skal avsluttes for å levere i tide. Denne datoen kan brukes i planleggingsprosessen. Du kan for eksempel planlegge ordren baklengs fra leveringsdatoen.  
 5. Sett verdien for Antall til 20.
     * Merk: Feltet for stykklistenummer viser automatisk nummeret til eventuelle aktive stykklister for den gjeldende varen, men du kan endre stykklisten for produksjonsordren ved å velge en aktiv stykkliste fra listen over godkjente stykklisteversjoner.    Feltet for rutenummer viser automatisk nummeret til eventuelle aktive ruter for den gjeldende varen, men du kan endre ruten for produksjonsordren ved å velge en aktiv rute fra listen over godkjente ruteversjoner.  
-6. Klikk Opprett.
+6. Klikk på Opprett.
 
 ## <a name="validate-the-production-order"></a>Validere produksjonsordren
-1. Klikk koblingen i den valgte raden i listen.
-    * Klikk koblingen for produksjonsordrenummeret du nettopp opprettet. Dette åpner siden med detaljer for ordren.  
-2. Klikk Rediger.
+1. Klikk på koblingen i den valgte raden i listen.
+    * Klikk på koblingen for produksjonsordrenummeret du nettopp opprettet. Dette åpner siden med detaljer for ordren.  
+2. Klikk på Rediger.
 3. Angi en leveringsdato i Levering-feltet.
     * Du kan for eksempel endre leveringsdatoen for produksjonsordren.  
-4. Klikk Lagre.
+4. Klikk på Lagre.
 5. Lukk siden.
 
 ## <a name="update-the-bom"></a>Oppdatere stykklisten
-1. Klikk Produksjonsordre i handlingsruten.
-2. Klikk Stykkliste.
+1. Klikk på Produksjonsordre i handlingsruten.
+2. Klikk på Stykkliste.
     * Åpne stykklistesiden for å validere stykklistedataene som ble kopiert fra standarddataene da produksjonsordren ble opprettet. I denne prosedyren må du oppdatere antallet for en stykkliste.  
-3. Klikk Rediger.
+3. Klikk på Rediger.
 4. Angi et tall i feltet Antall.
     * Endring av antallet på stykklistelinjen påvirker kostnadsestimatet av materialforbruk for produksjonsordren.  
-5. Klikk Lagre.
+5. Klikk på Lagre.
 6. Lukk siden.
 
 ## <a name="update-the-production-route"></a>Oppdatere produksjonsruten
-1. Klikk Produksjonsordre i handlingsruten.
-2. Klikk Rute.
+1. Klikk på Produksjonsordre i handlingsruten.
+2. Klikk på Rute.
     * Åpne rutesiden for å validere dataene i produksjonsruten som ble kopiert fra standarddataene da produksjonsordren ble opprettet. I denne prosedyren må du oppdatere antallet for en av operasjonene i produksjonsruten.  
 3. Finn og velg ønsket post i listen.
-4. Klikk Rediger.
+4. Klikk på Rediger.
 5. I feltet Prosessantall angir du et nummer.
     * Endring av behandlingstiden påvirker det estimerte ruteforbruket og kostnadene for produksjonsordren.  
-6. Klikk Lagre.
+6. Klikk på Lagre.
 7. Lukk siden.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

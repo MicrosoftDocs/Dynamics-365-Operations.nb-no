@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSLocationType, WHSLocationProfile, WHSLocation, WHSPackProfile, WHSWaveStepCode, WHSOutboundSortTemplate, WHSPostMethod, WHSWaveTemplateTable, WHSLocDirTable, WHSWorkClass, WHSWorkTemplateTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 12501b90e4b31ec11e3c59784ace9fd9a8b7d934
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 3f2ae63758fcb6247c5e56433645d9252576c755
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434743"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4996281"
 ---
 # <a name="put-to-wall---put-to-store"></a>Plasser til vegg – plasser til butikk
 
@@ -63,7 +62,7 @@ For denne demoen brukes standard Contoso-data og -lager *62*. Noen tillegg som e
 ### <a name="warehouse-management-parameters"></a>Lagerstyringsparametere
 
 1. Gå til **Lagerstyring \> Oppsett \> Lagerstyringsparametere**.
-1. I kategorien **Generelt** i hurtigfanen **Lokasjonstyper** setter du feltet for **sorteringslokasjonstype** til *SORTER*.
+1. I fanen **Generelt** i hurtigfanen **Lokasjonstyper** setter du feltet for **sorteringslokasjonstype** til *SORTER*.
 1. Velg **Lagre**.
 
 ### <a name="location-profile"></a>Lokasjonsprofil
@@ -197,7 +196,7 @@ Sorteringsmalen styrer om sorteringsposisjoner opprettes, hvilke kriterier som b
         Dette feltet definerer pakkeprofilen som vil bli brukt når sorteringsposisjonen pakkes i en container.
 
 1. Velg **Rediger spørring** i handlingsruten for å angi kriteriene som brukes for denne sorteringsmalen.
-1. I spørringsdialogboksen i kategorien **Sortering** velger du **Ny** for å legge til en linje, og angi deretter følgende verdier:
+1. I spørringsdialogboksen i fanen **Sortering** velger du **Ny** for å legge til en linje, og angi deretter følgende verdier:
 
     - **Tabell:** *Lastdetaljer*
     - **Avledet tabell:** *Lastdetaljer*
@@ -308,7 +307,7 @@ Du må opprette lokasjonsdirektiver for å veilede arbeidet som opprettes etter 
 
 1. Velg **Lagre** for å gjøre **Rediger spørring**-knappen på **Lokasjonsdirektivhandlinger**-hurtigfanen tilgjengelig.
 1. I **Handlinger for lokasjonsdirektiv**-hurtigfanen velger du **Rediger spørring**.
-1. I dialogboksen for spørring, i kategorien **Område**, finner du raden der feltet **Felt** er satt til *Lokasjon*. Sett **Vilkår**-feltet for denne raden til *Rampedør*.
+1. I dialogboksen for spørring, i fanen **Område**, finner du raden der feltet **Felt** er satt til *Lokasjon*. Sett **Vilkår**-feltet for denne raden til *Rampedør*.
 1. Velg **OK** for å bekrefte redigeringen.
 
 ### <a name="work-classes"></a>Arbeidsklasser
@@ -435,7 +434,7 @@ Fullfør følgende fremgangsmåte for å frigi hver salgsordre til lageret. Det 
 
 1. Gå til **Salg og markedsføring \> Salgsordrer \> Alle salgsordrer**.
 1. I rutenettet velger du første salgsordre du opprettet.
-1. Velg **Frigi til lager** i kategorien **Lager** i handlingsruten.
+1. Velg **Frigi til lager** i fanen **Lager** i handlingsruten.
 
     Du mottar en informasjonsmelding som viser bølge-ID og forsendelses-ID som er opprettet.
 
@@ -449,7 +448,7 @@ Fullfør følgende fremgangsmåte for å frigi hver salgsordre til lageret. Det 
 
     Under bølgebehandling vil sorteringsmetoden bruke sorteringsmalen til å tilordne lageret for å sortere posisjoner. Når bølgebehandling er fullført, mottar du en informasjonsmeling som angir at bølgen er postert og arbeidet er opprettet.
 
-1. I handlingsruten i kategorien **Bølge** i gruppen **Relatert informasjon** velger du **Arbeid** for å vise arbeidet som ble opprettet. Noter arbeids-ID-en.
+1. I handlingsruten i fanen **Bølge** i gruppen **Relatert informasjon** velger du **Arbeid** for å vise arbeidet som ble opprettet. Noter arbeids-ID-en.
 1. Gå til **Lagerstyring \> Pakking og containerbruk \> Posisjonstilordninger for utgående sortering**.
 1. I den venstre kolonnen kan du vise den utgående sorteringsposisjonen som ble opprettet for hver forsendelse.
 1. I hurtigfanen **Kriterier for sorteringsposisjon** kan du vise forsendelses-ID for posisjonen.
@@ -541,6 +540,3 @@ Hvis sorteringsposisjoner skal lukkes manuelt, må alternativet **Sorteringsposi
 
 > [!IMPORTANT]
 > Etter at bevegelsesarbeidet er opprettet fra sorteringslokasjonen, må du ikke avbryte arbeidet. Hvis ikke blir posisjonen og containerne i den slettet fra systemet og vil ikke være tilgjengelig for videre behandling. Beholdningen blir også fjernet.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

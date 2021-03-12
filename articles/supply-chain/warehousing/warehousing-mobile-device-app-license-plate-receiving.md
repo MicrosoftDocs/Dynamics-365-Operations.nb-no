@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSParameters, WHSRFMenuItem, WHSLicensePlate, WHSPackingStructure
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 0d6894c0adb5671818e976dbb5116ecb947025d2
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 0fe02a83d05e4b86694c1b210906128ac0cf6a84
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434791"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4998434"
 ---
 # <a name="license-plate-receiving-via-the-warehouse-app"></a>Nummerskilt som mottar via lagerappen
 
@@ -93,7 +92,7 @@ Hvis du vil gjøre denne funksjonaliteten tilgjengelig på systemet, må du akti
 Følg denne fremgangsmåten for å administrere funksjonaliteten når denne funksjonen er tilgjengelig.
 
 1. Gå til **Lagerstyring \> Oppsett \> Lagerstyringsparametere**.
-1. I kategorien **Generelt**, på hurtigfanen **Nummerskilt**, angir du feltet **Policy for lagernummerskilt i transitt** til en av følgende verdier:
+1. I fanen **Generelt**, på hurtigfanen **Nummerskilt**, angir du feltet **Policy for lagernummerskilt i transitt** til en av følgende verdier:
 
     - **Tillat gjenbruk av ikke-sporede nummerskilt** – Systemet fungerer på samme måte som når unksjonen den *Forhindre nummerskilt sendt via overføringsordre fra å brukes på andre lagre enn destinasjonslageret* ikke er tilgjengelig. Denne verdien er standardinnstillingen når du aktiverer funksjonen for første gang.
     - **Hindre gjenbruk av ikke-sporede nummerskilt** – Bare lagerbeholdninger som er relatert til et sendt nummerskilt, vil bli tillatt på destinasjonslageret før overføringsordren er mottatt.
@@ -105,6 +104,3 @@ Hvis du vil ha mer informasjon om menyelementer for mobilenheter, kan du se [Def
 Hvis du vil ha mer informasjon om *Ferdigmeld*-produksjonsscenariet, kan du se [Oversikt over policyer for lagerarbeid](warehouse-work-policies.md).
 
 For mer informasjon om innkommende lastadministrasjon for lagerstyring, se [Lagerhåndtering av innkommende laster for bestillinger](inbound-load-handling.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

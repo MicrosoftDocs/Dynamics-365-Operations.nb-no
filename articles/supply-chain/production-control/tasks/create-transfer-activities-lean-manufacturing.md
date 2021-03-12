@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: LeanProductionFlow, PlanActivity, PlanActivityWizard, LeanWorkCellLookup, InventLocationIdLookup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2925833aceba0cffe46b3a44c5d19c87cd3736e7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 629acdebd321154873feddcdfd8555d33e931f4f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434119"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4996832"
 ---
 # <a name="create-transfer-activities-for-lean-manufacturing"></a>Opprette overføringsaktiviteter for lean manufacturing
 
@@ -41,37 +40,37 @@ Forutsetninger:
 1. Gå til Produksjonskontroll > Oppsett > Lean-produksjonsflyt > Produksjonsflyter.
 2. Finn og velg ønsket post i listen.
     * Legg merke til at produksjonsflyten må ha en versjon i utkaststatus.  
-3. Klikk koblingen i den valgte raden i listen.
+3. Klikk på koblingen i den valgte raden i listen.
 
 ## <a name="create-a-new-activity"></a>Opprette en ny aktivitet
-1. Klikk Aktiviteter.
+1. Klikk på Aktiviteter.
     * Kontroller at den valgte produksjonsflyten har en versjon i utkast, og velg den versjonen.  
-2. Klikk Opprett ny planaktivitet.
-3. Klikk Neste.
+2. Klikk på Opprett ny planaktivitet.
+3. Klikk på Neste.
 4. Skriv inn en verdi i Navn-feltet.
 5. Velg Overføring i Aktivitetstype-feltet.
 6. Angi et tall i feltet Prosessantall.
-7. Klikk Neste.
+7. Klikk på Neste.
 
 ## <a name="select-the-work-cells"></a>Velge arbeidscellene
-1. Klikk rullegardinknappen i feltet Etterfyller for å åpne oppslaget.
+1. Klikk på rullegardinknappen i feltet Etterfyller for å åpne oppslaget.
     * Når du skal bruke utleveringsstedet for arbeidscellen som fra-lokasjon i overføringsaktiviteten, velger du en arbeidscelle. Det samme kan gjøres med den etterfylte arbeidscellen, som angir mållokasjonen for overføringsaktiviteten.  
-2. Klikk koblingen i den valgte raden i listen.
+2. Klikk på koblingen i den valgte raden i listen.
 
 ## <a name="define-the-inventory-updates"></a>Definere beholdningsoppdateringene
 1. Velg et alternativ i Produkttype-feltet.
     * Legg merke til at en overføring ikke endrer typen produkt. Du kan overføre ferdige produkter eller halvfabrikata (overføring mellom to aktiviteter i en produksjonsflyt og eventuelt en kanban-flyt).     Når du overfører ferdige produkter, kan du velge om plukking eller mottak resulterer i en lagertransaksjon.  
 
 ## <a name="define-the-transfer-locations"></a>Definere overføringslokasjonene
-1. Klikk Neste.
-2. Klikk rullegardinknappen i Lager-feltet for å åpne oppslaget.
+1. Klikk på Neste.
+2. Klikk på rullegardinknappen i Lager-feltet for å åpne oppslaget.
 3. Finn og velg ønsket post i listen.
-4. Klikk koblingen i den valgte raden i listen.
-5. Klikk rullegardinknappen i Lokasjon-feltet for å åpne oppslaget.
-6. Klikk koblingen i den valgte raden i listen.
+4. Klikk på koblingen i den valgte raden i listen.
+5. Klikk på rullegardinknappen i Lokasjon-feltet for å åpne oppslaget.
+6. Klikk på koblingen i den valgte raden i listen.
 7. I Fraktet av-feltet velger du "Speditør".
     * Alternativene omfatter: Speditør - organisasjonen betjener forsendelseslageret, Mottaker - organisasjonen betjener mottakslageret, Transportør - en tredjepartsleverandør. Hvis driftsorganisasjonen en leverandør, krever overføringsaktiviteten en utsettingsavtale.  
-8. Klikk Neste.
+8. Klikk på Neste.
 
 ## <a name="define-the-activity-times"></a>Definere aktivitetstidene
 1. Finn og velg ønsket post i listen.
@@ -86,10 +85,7 @@ Forutsetninger:
 8. Skriv inn en verdi i feltet Enhet.
 9. Velg tidsenheten.
 10. Angi et tall i feltet Per antall.
-11. Klikk Neste.
-12. Klikk Finish.
+11. Klikk på Neste.
+12. Klikk på Finish.
 13. Lukk siden.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

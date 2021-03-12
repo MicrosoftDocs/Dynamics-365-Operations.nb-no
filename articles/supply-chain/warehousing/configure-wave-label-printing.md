@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSDocumentRouting, WHSWaveTableListPage, WHSPostMethod, WHSMobileDisplayWaveLabelListLookup, WHSWaveLabelType, WHSWaveLabelTemplateGroup, WHSDocumentRoutingLayout
 audience: Application User
 ms.reviewer: PJacobse
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 6314fd25d8d8a0013984d484f57a832c26f82b5a
-ms.sourcegitcommit: a26e4963d40796da21ce6581cfb2f4d9db4f6776
+ms.openlocfilehash: 862987b8ccdc4272bdd404e78391ad447bc290b3
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "4434849"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4996357"
 ---
 # <a name="set-up-and-use-wave-label-printing"></a>Definere og bruke bølgeetikettutskrift
 
@@ -132,7 +131,7 @@ Etikettoppsettet kontrollerer hvilken informasjon som skrives ut på etiketten, 
 
     Denne spørringen sikrer at bare arbeidslinjer av plukktypen blir skrevet ut på etiketten, ikke plasser-arbeidslinjer.
 
-1. Hvis du vil ha muligheten til å skrive ut fraktbrev-IDen, velger du kategorien **Sammenkoblinger**, velger tabellen **Arbeidslinjer** og kobler **Forsendelser**-tabellen til den.
+1. Hvis du vil ha muligheten til å skrive ut fraktbrev-IDen, velger du fanen **Sammenkoblinger**, velger tabellen **Arbeidslinjer** og kobler **Forsendelser**-tabellen til den.
 1. Lukk dialogboksen for redigeringsprogram for spørring.
 1. Hurtigfanen for **Skrivertekstoppsett** har tre inndelinger der du kan skrive skriverkode: **topptekstdelen**, **brødtekstdelen** og **bunntekstdelen**. I **topptekstdelen** i feltet for **etikettopptekst** angir du koden for den nødvendige toppteksten. Hvis du for eksempel bruker Zebra-skrivere, kan du bruke følgende kode.
 
@@ -260,7 +259,7 @@ Deretter oppretter du bølgeetikettmalen for bølgeetikettypen.
     - **Søkeretning:** *Stigende*
 
 1. Velg **OK** for å lukke dialogboksen for redigeringsprogrammet for spørring.
-1. En meldingsboks ber deg bekrefte gjenopprettingsoperasjonen for gruppering. Klikk **Ja** for å fortsette.
+1. En meldingsboks ber deg bekrefte gjenopprettingsoperasjonen for gruppering. Klikk på **Ja** for å fortsette.
 1. Velg **Malgruppe for bølgeetikett** i handlingsruten.
 1. I dialogboksen **Malgruppe for bølgeetikett** velger du raden der feltet **Referansefeltnavn** er satt til *Linje-ID for referanselast*, og deretter merker du av for **Etikettversjons-ID** for denne raden.
 
@@ -299,7 +298,7 @@ Nummerserieutvidelser kontrollerer GS1-samsvar for bestemte nummerserier. Denne 
 1. Velg salgsordrelinjen 1. Deretter, i delen **Salgsordrelinje** på menyen **Lager**, velger du **Reservasjoner**.
 1. På **Reservasjon**-siden i handlingsruten velger du **Reserver parti**, og deretter lukker du siden.
 1. Gjenta trinn 4 og 5 for salgsordrelinje 2.
-1. Velg **Frigi til lager** i kategorien **Lager** i handlingsruten.
+1. Velg **Frigi til lager** i fanen **Lager** i handlingsruten.
 
     Følgende hendelser skjer:
 
@@ -307,7 +306,7 @@ Nummerserieutvidelser kontrollerer GS1-samsvar for bestemte nummerserier. Denne 
     - Bølgeetiketter genereres og skrives ut. Antallet etiketter vil tilsvare antallet kartonger (i dette eksemplet er 376 Box-etiketter for linje 1 og 322 Box-etiketter for linje 2).
     - En ny fraktbrev-ID genereres for forsendelsene. Hvis du konfigurerte nummerserieutvidelsene, vil bølgeetikett-IDene følge **SSCC-18**-nummerformatet. 
 
-Du kan vise og skrive ut bølgeetiketter på nytt fra følgende sider. På handlingsruten for hver side, i kategorien **Forsendelser** i gruppen **Beslektet informasjon**, velger du **Bølgeetiketter**.
+Du kan vise og skrive ut bølgeetiketter på nytt fra følgende sider. På handlingsruten for hver side, i fanen **Forsendelser** i gruppen **Beslektet informasjon**, velger du **Bølgeetiketter**.
 
 - Alle forsendelser \> Forsendelsesdetaljer
 - Alle laster \> Lastdetaljer
@@ -389,7 +388,7 @@ Med bølgemaler kan du koble bestemte forekomster av bølgemetoder til en tilsva
     - **Felt:** *Arbeidstype*
     - **Kriterier:** *Plukk*
 
-1. Hvis du vil ha muligheten til å skrive ut fraktbrev-IDen, velger du kategorien **Sammenkoblinger**, velger tabellen **Arbeidslinjer** og kobler **Forsendelser**-tabellen til den.
+1. Hvis du vil ha muligheten til å skrive ut fraktbrev-IDen, velger du fanen **Sammenkoblinger**, velger tabellen **Arbeidslinjer** og kobler **Forsendelser**-tabellen til den.
 1. Lukk dialogboksen for redigeringsprogram for spørring.
 1. Hurtigfanen for **Skrivertekstoppsett** har tre inndelinger der du kan skrive skriverkode: **topptekstdelen**, **brødtekstdelen** og **bunntekstdelen**. I **topptekstdelen** i feltet for **etikettopptekst** angir du koden for den nødvendige toppteksten. Hvis du for eksempel bruker Zebra-skrivere, kan du bruke følgende kode.
 
@@ -498,7 +497,7 @@ Nummerserieutvidelser kontrollerer GS1-samsvar for bestemte nummerserier. Denne 
 1. Velg salgsordrelinjen 1. Deretter, i delen **Salgsordrelinje** på menyen **Lager**, velger du **Reservasjoner**.
 1. På **Reservasjon**-siden i handlingsruten velger du **Reserver parti**, og deretter lukker du siden.
 1. Gjenta trinn 4 og 5 for hver ekstra salgsordrelinje.
-1. Velg **Frigi til lager** i kategorien **Lager** i handlingsruten.
+1. Velg **Frigi til lager** i fanen **Lager** i handlingsruten.
 
     Følgende hendelser skjer:
 
@@ -581,7 +580,7 @@ For å følge dette scenarioet må du ha demonstrasjonsdata installert, og du m�
 
     Denne spørringen sikrer at bare arbeidslinjer av plukktypen blir skrevet ut på etiketten, ikke plasser-arbeidslinjer.
 
-1. Hvis du vil ha muligheten til å skrive ut fraktbrev-IDen, velger du kategorien **Sammenkoblinger**, velger tabellen **Arbeidslinjer** og kobler **Forsendelser**-tabellen til den. 
+1. Hvis du vil ha muligheten til å skrive ut fraktbrev-IDen, velger du fanen **Sammenkoblinger**, velger tabellen **Arbeidslinjer** og kobler **Forsendelser**-tabellen til den. 
 1. Lukk dialogboksen for redigeringsprogram for spørring.
 1. Hurtigfanen for **Skrivertekstoppsett** har tre inndelinger der du kan skrive skriverkode: **topptekstdelen**, **brødtekstdelen** og **bunntekstdelen**. I **topptekstdelen** i feltet for **etikettopptekst** angir du koden for den nødvendige toppteksten. Hvis du for eksempel bruker Zebra-skrivere, kan du bruke følgende kode.
 
@@ -693,7 +692,7 @@ For å følge dette scenarioet må du ha demonstrasjonsdata installert, og du m�
 
     Denne spørringen sikrer at bare arbeidslinjer av plukktypen blir skrevet ut på etiketten, ikke plasser-arbeidslinjer.
 
-1. Hvis du vil ha muligheten til å skrive ut fraktbrev-IDen, velger du kategorien **Sammenkoblinger**, velger tabellen **Arbeidslinjer** og kobler **Forsendelser**-tabellen til den.
+1. Hvis du vil ha muligheten til å skrive ut fraktbrev-IDen, velger du fanen **Sammenkoblinger**, velger tabellen **Arbeidslinjer** og kobler **Forsendelser**-tabellen til den.
 1. Lukk dialogboksen for redigeringsprogram for spørring.
 1. Hurtigfanen for **Skrivertekstoppsett** har tre inndelinger der du kan skrive skriverkode: **topptekstdelen**, **brødtekstdelen** og **bunntekstdelen**. I **topptekstdelen** i feltet for **etikettopptekst** angir du koden for den nødvendige toppteksten. Hvis du for eksempel bruker Zebra-skrivere, kan du bruke følgende kode.
 
@@ -816,7 +815,7 @@ For å følge dette scenarioet må du ha demonstrasjonsdata installert, og du m�
     - **Søkeretning:** *Stigende*
 
 1. Velg **OK** for å lukke dialogboksen for redigeringsprogrammet for spørring.
-1. En meldingsboks ber deg bekrefte gjenopprettingsoperasjonen for gruppering. Klikk **Ja** for å fortsette.
+1. En meldingsboks ber deg bekrefte gjenopprettingsoperasjonen for gruppering. Klikk på **Ja** for å fortsette.
 1. Velg **Malgruppe for bølgeetikett** i handlingsruten.
 1. I dialogboksen for **Malgruppe for bølgeetikett**, for raden der feltet **Referansefeltnavn** er satt til *Forsendelses-ID*, angir du følgende verdier:
 
@@ -870,7 +869,7 @@ For å følge dette scenarioet må du ha demonstrasjonsdata installert, og du m�
     - **Søkeretning:** *Stigende*
 
 1. Velg **OK** for å lukke dialogboksen for redigeringsprogrammet for spørring.
-1. En meldingsboks ber deg bekrefte gjenopprettingsoperasjonen for gruppering. Klikk **Ja** for å fortsette.
+1. En meldingsboks ber deg bekrefte gjenopprettingsoperasjonen for gruppering. Klikk på **Ja** for å fortsette.
 1. Velg **Malgruppe for bølgeetikett** i handlingsruten.
 1. I dialogboksen for **Malgruppe for bølgeetikett**, for raden der feltet **Referansefeltnavn** er satt til *Forsendelses-ID*, angir du følgende verdier:
 
@@ -915,7 +914,7 @@ Nummerserieutvidelser kontrollerer GS1-samsvar for bestemte nummerserier. Denne 
 1. Velg salgsordrelinjen 1. Deretter, i delen **Salgsordrelinje** på menyen **Lager**, velger du **Reservasjoner**.
 1. På **Reservasjon**-siden i handlingsruten velger du **Reserver parti**, og deretter lukker du siden.
 1. Gjenta trinn 4 og 5 for salgsordrelinje 2.
-1. Velg **Frigi til lager** i kategorien **Lager** i handlingsruten.
+1. Velg **Frigi til lager** i fanen **Lager** i handlingsruten.
 
     Følgende hendelser skjer: 
 
@@ -931,7 +930,4 @@ Du kan vise og skrive ut bølgeetiketter på nytt fra følgende sider:
 - Bølgeetiketter
 - Historikk for bølgeetikett
 
-For de fleste av disse sidene kan du finne den relevante funksjonen ved å velge **Bølgeetiketter** i **Relatert informasjon**-gruppen i kategorien **Forsendelser** i handlingsruten.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+For de fleste av disse sidene kan du finne den relevante funksjonen ved å velge **Bølgeetiketter** i **Relatert informasjon**-gruppen i fanen **Forsendelser** i handlingsruten.

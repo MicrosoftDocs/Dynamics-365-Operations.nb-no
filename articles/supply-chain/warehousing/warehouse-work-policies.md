@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSWorkPolicy
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 08c04caeace7b8ced40915ace1561d817426cba3
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 530abffb4c80a2d2f0e58e0c5a34294f7cba0b1a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434819"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4998459"
 ---
 # <a name="work-policies"></a>Arbeidspolicyer
 
@@ -282,15 +281,15 @@ Lagerprosesser inkluderer ikke alltid lagerarbeid. Ved å definere en arbeidspol
 
     La den nye produksjonsordren være valgt.
 
-1. I handlingsruten, i kategorien **Produksjonsordre**, i **Prosess**-gruppen, velger du **Estimat**.
+1. I handlingsruten, i fanen **Produksjonsordre**, i **Prosess**-gruppen, velger du **Estimat**.
 1. I dialogboksen **Estimat** leser du estimatet og velger deretter **OK** for å lukke dialogboksen.
-1. I handlingsruten, i kategorien **Produksjonsordre**, i **Prosess**-gruppen, velger du **Start**.
+1. I handlingsruten, i fanen **Produksjonsordre**, i **Prosess**-gruppen, velger du **Start**.
 1. I dialogboksen **Start**, på **Generelt**-fanen, angir du feltet **Automatisk stykklisteforbruk** til *Aldri*.
 1. Velg **OK** for å lagre innstillingen og lukke dialogboksen.
-1. I handlingsruten, i kategorien **Produksjonsordre**, i **Prosess**-gruppen, velger du **Ferdigmeld**.
+1. I handlingsruten, i fanen **Produksjonsordre**, i **Prosess**-gruppen, velger du **Ferdigmeld**.
 1. I dialogboksen **Ferdigmeld**, på **Generelt**-fanen, setter du **Godtar feil** til *Ja*.
 1. Velg **OK** for å lagre innstillingen og lukke dialogboksen.
-1. Velg **Arbeidsdetaljer** i gruppen **Generelt** i kategorien **Lager** i handlingsruten.
+1. Velg **Arbeidsdetaljer** i gruppen **Generelt** i fanen **Lager** i handlingsruten.
 
 Når produksjonsordren rapporteres som fullført, genereres det ikke arbeid for plassering. Dette skjer fordi en arbeidspolicy er definert som hindrer at arbeidet blir generert når produktet *L0101* rapporteres som ferdig til lokasjon *001*.
 
@@ -301,6 +300,3 @@ Hvis du vil ha mer informasjon om menyelementer for mobilenheter, kan du se [Def
 For mer informasjon om nummerskiltmottak og arbeidspolicyer, se [Nummerskiltmottak via lagerappen](warehousing-mobile-device-app-license-plate-receiving.md).
 
 For mer informasjon om innkommende lastadministrasjon for lagerstyring, se [Lagerhåndtering av innkommende laster for bestillinger](inbound-load-handling.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

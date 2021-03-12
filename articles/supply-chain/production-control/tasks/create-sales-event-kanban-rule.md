@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: KanbanRules, LeanProductionFlowActivityLookup, InventItemIdLookupSimple, SalesTableListPage, SalesCreateOrder, SalesTable, LeanPeggingTree
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1759adea6db8120078e2f32bff79178545c2328a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cd8d55619f52fcd1beff7a27ff814b3dc00dd25a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434121"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4998634"
 ---
 # <a name="create-a-sales-event-kanban-rule"></a>Opprette en Kanban-regel for salgshendelse
 
@@ -35,7 +34,7 @@ Denne prosedyren fokuserer på oppsettet for å opprette en kanban-regel utløse
 
 ## <a name="create-a-new-kanban-rule"></a>Opprett en ny Kanban-regel
 1. Gå til Kanban-regler.
-2. Klikk Ny.
+2. Klikk på Ny.
 3. Velg Hendelse i feltet Etterfyllingsstrategi.
     * Hvis du velger Hendelse betyr det at kanban-regelen blir utløst av en hendelse, for eksempel oppretting av en salgsordrelinje.   Dette brukes for områder der hver kanban skal dekke et bestemt behov.  
 4. Angi eller velg en verdi i feltet Første planaktivitet.
@@ -57,10 +56,10 @@ Denne prosedyren fokuserer på oppsettet for å opprette en kanban-regel utløse
 ## <a name="create-sales-line-to-trigger-event-kanban-rule"></a>Opprette salgslinje for å utløse Kanban-regel for hendelse
 1. Gå til Alle salgsordrer.
     * En advarsel vises når kanban-regelen lagres, noe som betyr at Kanbaner opprettes i sanntid under oppretting av salgsordrer.  
-2. Klikk Ny.
+2. Klikk på Ny.
 3. Angi eller velg en verdi i Kundekonto-feltet.
     * Velg for eksempel US-003.  
-4. Klikk OK.
+4. Klikk på OK.
 5. Skriv inn L0050 i feltet Varenummer.
 6. Skriv inn 1 i feltet Område.
     * Velg område 1 fordi lager 13 er i område 1.  
@@ -70,10 +69,7 @@ Denne prosedyren fokuserer på oppsettet for å opprette en kanban-regel utløse
     * Angi et antall på 50 eller høyere, for å utløse den opprettede kanban-regelen.  
 
 ## <a name="verify-that-kanban-is-created"></a>Kontroller at kanban er opprettet
-1. Klikk Produkt og forsyning.
-2. Klikk Vis utligningstre.
+1. Klikk på Produkt og forsyning.
+2. Klikk på Vis utligningstre.
     * Legg merke til at en kanban med samme antall som salgslinjen er opprettet. Du kan også se materialutstedelsene som trengs for å produsere L0050. Dette er det siste trinnet i prosedyren.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

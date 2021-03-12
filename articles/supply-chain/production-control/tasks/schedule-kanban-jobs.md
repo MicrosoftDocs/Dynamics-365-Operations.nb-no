@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: KanbanJobSchedulingListPage, KanbanPeriodCapacityPart, SysLookupMultiSelectGrid, KanbanBoardScheduleJobForward
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c8342bf6c56adc41cc4944dc709152246ad93a3e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f97b88a2637e661146e8150cd6535ff32745227a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434603"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4996807"
 ---
 # <a name="schedule-kanban-jobs"></a>Planlegge Kanban-jobber
 
@@ -34,16 +33,16 @@ Denne prosedyren fokuserer på planlegging av kanban-prosessjobber for en bestem
 1. Gå til Produksjonskontroll > Kanban > Kanban-jobbplanlegging.
 2. Vis faktaboksen Periodekapasitet.
     * Vis faktaboksen Kanban.  
-3. Klikk rullegardinknappen i Arbeidscelle-feltet for å åpne oppslaget.
+3. Klikk på rullegardinknappen i Arbeidscelle-feltet for å åpne oppslaget.
 4. Merk den valgte raden i listen.
     * Velg arbeidscellen 1250. Dette filtrerer visningen slik at bare jobbene for arbeidscellen 1250 vises.  
-5. Klikk koblingen i den valgte raden i listen.
-6. Klikk Velg.
+5. Klikk på koblingen i den valgte raden i listen.
+6. Klikk på Velg.
 
 ## <a name="schedule-a-kanban-job-in-the-first-available-period"></a>Planlegge en kanban-jobb i den første tilgjengelige perioden
 1. Merk den valgte raden i listen.
     * Velg den første raden i listen som har Ikke planlagt-status. Det prikkede ikonet i Jobbstatus-feltet angir ikke planlagt.  
-2. Klikk Tidsplan.
+2. Klikk på Tidsplan.
     * Dette vil planlegg kanban-jobben i den første tilgjengelige perioden.  
     * Legg merke til at kanban-jobben er flyttet til slutten av listen fordi den er lagt til i perioden fra dagens dato.  
     * Hvis perioden fra dagens dato er opptatt, flyttes jobben til den første tilgjengelige perioden.  
@@ -53,15 +52,12 @@ Denne prosedyren fokuserer på planlegging av kanban-prosessjobber for en bestem
     * Du skal se at den første raden har Ikke planlagt-statusen i jobbstatus-feltet.  
 2. Velg rad 2 i listen.
     * Du skal se at den andre raden har Ikke planlagt-statusen i jobbstatus-feltet. Nå har du valgt de to første jobbene.  
-3. Klikk Planlegg fra dato for å åpne nedtrekksdialogen.
+3. Klikk på Planlegg fra dato for å åpne nedtrekksdialogen.
 4. Merk av eller fjern merket for Overstyr reaksjon på kapasitetsmangel.
     * Med dette alternativet kan du overstyre standardreaksjonen på kapasitetsmangel.  
 5. Velg Legg til i den ønskede perioden i feltet Reaksjon på kapasitetsmangel.
     * Dette alternativet sikrer at jobben er lagt til den ønskede perioden, uansett om arbeidscellen kan være overbelastet.  
-6. Klikk Tidsplan.
+6. Klikk på Tidsplan.
     * Legg merke til at begge jobber er lagt til den ønskede perioden.  
     * I delen Periodisk kapasitet kan du se belastningen for hver periode. Forbruk-feltet viser det planlagte forbruket i denne perioden. Hvis det planlagte forbruket er høyere enn den tilgjengelige kapasiteten i denne perioden, vil det overbelastede forbruket velges.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

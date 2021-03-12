@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: KanbanRules, KanbanRuleDuplicate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ae589f81811c1586e0e24de94eaf5f467f19debb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d68087afd1a0c9b675e4ac1ef2118e6aab5213d9
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434122"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4998659"
 ---
 # <a name="create-a-replacement-kanban-rule"></a>Opprette en ny Kanban-regel
 
@@ -37,11 +36,11 @@ Denne prosedyren fokuserer på å erstatte en eksisterende kanban-regel med en n
     * Velg Kanban-regel 000022.  
 
 ## <a name="create-a-replacement-kanban-rule"></a>Opprette en ny Kanban-regel
-1. Klikk Erstatt Kanban-regel.
+1. Klikk på Erstatt Kanban-regel.
 2. Angi dato og klokkeslett i feltet Gyldighetsdato.
     * Velg en dato i fremtiden, for eksempel én uke fra nå. Dette er datoen og klokkeslettet da den nye kanban-regelen blir aktiv og erstatter den gamle kanban-regelen.  
     * Hvis kanban-regelen endrer banen i produksjonsflyten, kan du velge en annen aktivitet.  I denne fremgangsmåten beholder vi aktiviteten uendret.  
-3. Klikk OK.
+3. Klikk på OK.
     * Legg merke til at det opprettes en ny kanban-regel som erstatter kanban-regel 000022.  
     * Gyldighetsdatoen angis i henhold til datoen som velges når du erstatter kanban-regelen.  
 4. Finn og velg ønsket post i listen.
@@ -49,13 +48,10 @@ Denne prosedyren fokuserer på å erstatte en eksisterende kanban-regel med en n
     * Legg merke til at den erstattede kanban-regelen har samme dato som utløpsdatoen fordi dette er datoen den utløper.  
 5. Velg rad 1 i listen.
     * Velg den nye kanban-regelen øverst i listen. Dette er Kanban-regelen med det høyeste kanban-regelnummeret.  
-6. Klikk koblingen i den valgte raden i listen.
-    * Klikk kanban-regelnummeret for å åpne kanban-regelen.  
+6. Klikk på koblingen i den valgte raden i listen.
+    * Klikk på kanban-regelnummeret for å åpne kanban-regelen.  
 
 ## <a name="modify-maximum-quantity-for-the-replacement-kanban-rule"></a>Endre maksimalt antall for den nye kanban-regelen
 1. Sett Maksimalt antall til 100.
     * Vis hurtigfanen Antall hvis du vil vise Maksimalt antall-feltet. Hvis du endrer det maksimale antallet til 100, kan opptil 100 Kanbaner behandles.    Dette er det siste trinnet i oppgaven.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

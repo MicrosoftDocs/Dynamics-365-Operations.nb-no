@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: e2001d5c0b17ecadf4cb42529d9beb4b3b81805a
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 0fd390e5e0054ff301c18c2507c600f954e6ce89
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528299"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4996782"
 ---
 # <a name="create-and-manage-customer-portal-users"></a>Opprette og administrere brukere av kundeportalen
 
@@ -39,11 +38,11 @@ Videoen [Inviter kunder til å registrere seg og bruke kundeportalen din](https:
 
 ## <a name="prerequisite-setup"></a>Forutsetninger for konfigurasjon
 
-Kontakter i Power Apps-portaler lagres som poster i **Kontakter**-enheten i Common Data Service. Med dobbeltskrivetilgang synkroniseres disse postene til Microsoft Dynamics 365 Supply Chain Management etter behov.
+Kontakter i Power Apps-portaler lagres som poster i **Kontakter**-tabellen i Microsoft Dataverse. Med dobbeltskrivetilgang synkroniseres disse postene til Microsoft Dynamics 365 Supply Chain Management etter behov.
 
 ![Systemdiagram for kontakter i kundeportalen](media/customer-portal-contacts.png "Systemdiagram for kontakter i kundeportalen")
 
-Før du begynner å invitere nye kunder, må du kontrollere at du har aktivert **Kontakt**-enhetstilordningen i dobbeltskriving.
+Før du begynner å invitere nye kunder, må du kontrollere at du har aktivert **Kontakt**-tabelltilordningen i dobbel skriving.
 
 ## <a name="the-invitation-process"></a>Invitasjonsprosessen
 
@@ -58,15 +57,15 @@ Når en kontakt er opprettet, skal du kunne se den i Supply Chain Management.
 
 Hvis du vil ha mer informasjon, kan du se [Konfigurere en kontakt for bruk i en portal](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) i dokumentasjonen for Power Apps-portaler.
 
-## <a name="out-of-box-web-roles-and-entity-permissions"></a>Standard nettroller og enhetstillatelser
+## <a name="out-of-box-web-roles-and-table-permissions"></a>Standard nettroller og tabelltillatelser
 
-Brukerroller i Power Apps-portaler defineres av [nettroller](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) og [enhetstillatelser](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions). Noen få roller er definert som standard i kundeportalen. Du kan opprette nye roller, og du kan endre eller fjerne eksisterende roller.
+Brukerroller i Power Apps-portaler defineres av [nettroller](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) og [tabelltillatelser](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions). Noen få roller er definert som standard i kundeportalen. Du kan opprette nye roller, og du kan endre eller fjerne eksisterende roller.
 
 ### <a name="out-of-box-web-roles"></a>Standard nettroller
 
 Denne delen beskriver nettrollene som leveres med kundeportalen.
 
-Hvis du vil ha mer informasjon om hvordan du endrer standardbrukerrollene, kan du se [Opprette nettroller for portaler](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles)og [Legge til postbasert sikkerhet ved hjelp av enhetstillatelser for portaler](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions) i dokumentasjonen for Power Apps-portaler.
+Hvis du vil ha mer informasjon om hvordan du endrer de bruksklare brukerrollene, kan du se [Opprette nettroller for portaler](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) og [Legge til postbasert sikkerhet ved hjelp av tabelltillatelser for portaler](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions) i dokumentasjonen for Power Apps-portaler.
 
 #### <a name="administrator"></a>Administrator
 
@@ -90,12 +89,9 @@ Tabellen nedenfor viser hvilke salgsordrer brukerne har i hver enkelt nettrolle 
 
 | Salgsordre | Administrator | Kunderepresentant for kunde&nbsp;X | Autorisert bruker: Janne | Autorisert bruker: Stig | Uautorisert bruker: Mari |
 |---|---|---|---|---|---|
-| Kunde&nbsp;X bestiller:&nbsp;Janne | Ja | Ja | Ja | Nr. | Nr. |
-| Kunde&nbsp;X bestiller:&nbsp;Stig | Ja | Ja | Nr. | Ja | Nr. |
-| Kunde&nbsp;Y bestiller&nbsp;Mari | Ja | Nr. | Nr. | Nr. | Nr. |
+| Kunde&nbsp;X bestiller:&nbsp;Janne | Ja | Ja | Ja | Nei | Nei |
+| Kunde&nbsp;X bestiller:&nbsp;Stig | Ja | Ja | Nei | Ja | Nei |
+| Kunde&nbsp;Y bestiller&nbsp;Mari | Ja | Nei | Nei | Nei | Nei |
 
 > [!NOTE]
 > Selv om både Stig og Janne er kontakter som arbeider for kunde X, kan de bare se de ordrene de selv har plassert, og ingen andre. Selv om Mari har en ordre i systemet, kan hun ikke se denne ordren i kundeportalen, fordi hun er en uautorisert bruker. (I tillegg må hun ha lagt inn ordren via en annen kanal enn kundeportalen.)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

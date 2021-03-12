@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSWorkLocationChange, WHSWorkLineDetails
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: bcb340b21e06b294a40784bf3a1da71b0daf7655
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 07dbfa301e4b242f50a9c2758b11b5ad2c31b261
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434786"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4998359"
 ---
 # <a name="work-line-details"></a>Detaljer for arbeidslinje
 
@@ -95,7 +94,7 @@ Følg denne fremgangsmåten for å opprette plukkearbeid.
 1. Velg den nye ordrelinjen og deretter på **Beholdning**-menyen velger du **Reservasjon** for å åpne **Reservasjon**-siden.
 1. På **Reservasjon**-siden velger du **Reserver parti** for å reservere den valgte linjens fulle antall i lageret.
 1. Lukk **Reservasjon**-siden for å gå tilbake til salgsordren.
-1. Velg **Frigi til lager** i kategorien **Lager** i handlingsruten. Systemet oppretter en forsendelse, legger den til en ny last, og oppretter det nødvendige arbeidet.
+1. Velg **Frigi til lager** i fanen **Lager** i handlingsruten. Systemet oppretter en forsendelse, legger den til en ny last, og oppretter det nødvendige arbeidet.
 1. Opprett en ny salgsordre for samme kundekonto og lager som du brukte for den første ordren. Legg til følgende to ordrelinjer i denne ordren:
 
     - **Linje 1:** Angi **Varenummer**-feltet til _M9200_, **Antall**-feltet til _25_ og **Enhet**-feltet til _ea_.
@@ -128,6 +127,3 @@ Følg denne fremgangsmåten for å opprette plukkearbeid.
 
 > [!IMPORTANT]
 > Hvis du avbryter bare en del av antallet for en arbeidslinje, må du også fjerne det foreldede antallet fra lastlinjen. Hvis ikke, med mindre underlevering er konfigurert riktig, kan ikke belastningslinjen leveringsbekreftes.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSFilterGroupTable, TMSMode, WHSShipmentConsolidation, WHSFilterGenerallyAvail
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: adb88bbd29a89a1d18d7fd4781c2541ffb4e721f
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 0d6ab6c034a5c341432f661cf1e729dfd3e5c239
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434752"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4996406"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>Konfigurere policyer for forsendelseskonsolidering
 
@@ -61,7 +60,7 @@ Følg disse trinnene for å definere standardpolicyer for forsendelseskonsolider
 1. Gå til **Lagerstyring \> Oppsett \> Lager \> Lagre**.
 1. I listen finner og åpner du den ønskede lagerposten (for eksempel lager *24* i demodataene for **USMF**).
 1. I handlingsruten velger du **Rediger**.
-1. I hurtigkategorien **Lager** angir du verdien *Ja* for alternativet **Konsolider forsendelse ved frigivelse til lager**.
+1. I hurtigfanen **Lager** angir du verdien *Ja* for alternativet **Konsolider forsendelse ved frigivelse til lager**.
 1. Gjenta trinn 2 til og med 4 for alle andre lagre der konsolidering er nødvendig.
 1. Lukk siden.
 1. Bruk [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å aktivere funksjonen *Policyer for forsendelseskonsolidering*. I arbeidsområdet **Funksjonsbehandling** har funksjonen navnet *Konsolider forsendelse*.
@@ -122,10 +121,10 @@ Bruk funksjonsbehandling til å aktivere funksjonen, hvis du ikke allerede har a
 
 1. Gå til **Behandling av produktinformasjon \> Produkter \> Frigitte produkter**.
 1. Åpne produktet som har artikkelnummer *M9200*. (Produktet du velger, må være aktivert for avanserte \[WMS\]-prosesser for lager, og dette produktet er forhåndsaktivert for WMS-prosesser i demodataene for **USMF**.)
-1. I hurtigkategorien **Lager** angir du verdien *Brannfarlig* for feltet **Kode 4**.
+1. I hurtigfanen **Lager** angir du verdien *Brannfarlig* for feltet **Kode 4**.
 1. Lukk siden.
 1. Åpne produktet som har artikkelnummer *M9201*. (Dette produktet er også forhåndsaktivert for WMS-prosesser i demodataene for **USMF**.)
-1. I hurtigkategorien **Lager** angir du verdien *Eksplosivt* for feltet **Kode 4**.
+1. I hurtigfanen **Lager** angir du verdien *Eksplosivt* for feltet **Kode 4**.
 1. Lukk siden.
 
 #### <a name="create-a-new-transportation-mode-of-delivery"></a>Opprette en ny transportmåte for levering
@@ -139,7 +138,7 @@ Bruk funksjonsbehandling til å aktivere funksjonen, hvis du ikke allerede har a
     - **Navn:** *Airways*
     - **Modus:** *Airways*
 
-1. I hurtigkategorien **Tjenester** for den nye transportøren legger du til en rad som har følgende innstillinger:
+1. I hurtigfanen **Tjenester** for den nye transportøren legger du til en rad som har følgende innstillinger:
 
     - **Transportørtjeneste:** *Lufttransport*
     - **Transportmetode:** *Lufttransport*
@@ -159,7 +158,7 @@ Bruk funksjonsbehandling til å aktivere funksjonen, hvis du ikke allerede har a
 
 1. Gå til **Salg og markedsføring \> Kunder \> Alle kunder**.
 1. Åpne kunden som har kontonummer *US-003*.
-1. I hurtigkategorien **Standarder for salgsordrer** setter du feltet **Salgsordrepulje** til ordrepuljen du akkurat opprettet.
+1. I hurtigfanen **Standarder for salgsordrer** setter du feltet **Salgsordrepulje** til ordrepuljen du akkurat opprettet.
 1. Lukk siden, og gjenta deretter trinn 4 og 5 for kunden som har kontonummer *US-004*.
 
 ### <a name="create-example-policy-1"></a>Opprette eksempelpolicy 1
@@ -181,10 +180,10 @@ Følg disse trinnene for å opprette en policy for forsendelseskonsolidering for
 
 1. La verdien for alternativet **Konsolider med åpne forsendelser** være *Nei*.
 1. Velg **Lagre** i handlingsruten.
-1. I hurtigkategorien **Konsolideringsfelt** i listen **Gjenværende felt** velger du raden der feltet **Feltnavn** er satt til *Leveringsmåte*.
+1. I hurtigfanen **Konsolideringsfelt** i listen **Gjenværende felt** velger du raden der feltet **Feltnavn** er satt til *Leveringsmåte*.
 1. Velg **Legg til**-knappen ![Pil høyre](media/forward-button.png) for å flytte feltet til listen **Valgte felt**.
 1. I handlingsruten velger du **Rediger spørring**.
-1. I rutenettet i kategorien **Område** i dialogboksen for redigeringsprogrammet for spørring finner du raden der feltet **Felt** er satt til *Kundekonto*, og deretter angir du verdien *US-001* for feltet **Vilkår** for den raden.
+1. I rutenettet i fanen **Område** i dialogboksen for redigeringsprogrammet for spørring finner du raden der feltet **Felt** er satt til *Kundekonto*, og deretter angir du verdien *US-001* for feltet **Vilkår** for den raden.
 1. Velg **Legg til** for å legge til en rad som har følgende innstillinger i rutenettet:
 
     - **Tabell:** *Ordrelinjer*
@@ -216,13 +215,13 @@ Følg disse trinnene for å opprette en policy for forsendelseskonsolidering for
 
 1. Sett verdien for alternativet **Konsolider med åpne forsendelser** til *Ja*.
 1. Velg **Lagre** i handlingsruten.
-1. I hurtigkategorien **Konsolideringsfelt** i listen **Gjenværende felt** velger du raden der feltet **Feltnavn** er satt til *Leveringsmåte*.
+1. I hurtigfanen **Konsolideringsfelt** i listen **Gjenværende felt** velger du raden der feltet **Feltnavn** er satt til *Leveringsmåte*.
 1. Velg **Legg til**-knappen ![Pil høyre](media/forward-button.png) for å flytte feltet til listen **Valgte felt**.
 1. I handlingsruten velger du **Rediger spørring**.
-1. I kategorien **Sammenkoblinger** i dialogboksen for redigeringsprogrammet for spørring viser og velger du **Tabeller \> Lastdetaljer** i treet.
+1. I fanen **Sammenkoblinger** i dialogboksen for redigeringsprogrammet for spørring viser og velger du **Tabeller \> Lastdetaljer** i treet.
 1. Velg **Legg til tabellsammenkobling**.
 1. I rutenettet med relasjoner som vises, finner du og velger raden der feltet **Relasjon** har verdien *Lagervarenummer (varenummer)*, deretter velger du **Velg**. 
-1. Velg **Legg til** i kategorien **Område** for å legge til en rad som har følgende innstillinger i rutenettet:
+1. Velg **Legg til** i fanen **Område** for å legge til en rad som har følgende innstillinger i rutenettet:
 
     - **Tabell:** *Lagervarenummer*
     - **Avledet tabell:** *Lagervarenummer*
@@ -253,12 +252,12 @@ Følg disse trinnene for å opprette en policy for forsendelseskonsolidering for
 
 1. Sett verdien for alternativet **Konsolider med åpne forsendelser** til *Ja*.
 1. Velg **Lagre** i handlingsruten.
-1. I hurtigkategorien **Konsolideringsfelt** i listen **Gjenværende felt** velger du raden der feltet **Feltnavn** er satt til *Kunderekvisisjon*.
+1. I hurtigfanen **Konsolideringsfelt** i listen **Gjenværende felt** velger du raden der feltet **Feltnavn** er satt til *Kunderekvisisjon*.
 1. Velg **Legg til**-knappen ![Pil høyre](media/forward-button.png) for å flytte feltet til listen **Valgte felt**.
 1. I listen **Gjenværende felt** velger du raden der feltet **Feltnavn** er satt til *Leveringsmåte*.
 1. Velg **Legg til**-knappen ![Pil høyre](media/forward-button.png) for å flytte feltet til listen **Valgte felt**.
 1. I handlingsruten velger du **Rediger spørring**.
-1. I kategorien **Område** i dialogboksen for redigeringsprogrammet for spørring finner du raden der feltet **Felt** er satt til *Kundekonto*, og deretter angir du verdien *US-001* for feltet **Vilkår** for den raden.
+1. I fanen **Område** i dialogboksen for redigeringsprogrammet for spørring finner du raden der feltet **Felt** er satt til *Kundekonto*, og deretter angir du verdien *US-001* for feltet **Vilkår** for den raden.
 1. Velg **OK** for å lukke dialogboksen.
 
 > [!NOTE]
@@ -285,10 +284,10 @@ Følg disse trinnene for å opprette en policy for forsendelseskonsolidering for
 
 1. La verdien for alternativet **Konsolider med åpne forsendelser** være *Nei*.
 1. Velg **Lagre** i handlingsruten.
-1. I hurtigkategorien **Konsolideringsfelt** i listen **Gjenværende felt** velger du raden der feltet **Feltnavn** er satt til *Leveringsmåte*.
+1. I hurtigfanen **Konsolideringsfelt** i listen **Gjenværende felt** velger du raden der feltet **Feltnavn** er satt til *Leveringsmåte*.
 1. Velg **Legg til**-knappen ![Pil høyre](media/forward-button.png) for å flytte feltet til listen **Valgte felt**.
 1. I handlingsruten velger du **Rediger spørring**.
-1. Velg **Legg til** i kategorien **Område** i dialogboksen for redigeringsprogrammet for spørring for å legge til en rad som har følgende innstillinger i rutenettet:
+1. Velg **Legg til** i fanen **Område** i dialogboksen for redigeringsprogrammet for spørring for å legge til en rad som har følgende innstillinger i rutenettet:
 
     - **Tabell:** *Salgsordrer*
     - **Avledet tabell:** *Salgsordrer*
@@ -319,10 +318,10 @@ Denne forretningssaken kan vanligvis løses ved hjelp av standardpolicyene du op
 
 1. La verdien for alternativet **Konsolider med åpne forsendelser** være *Nei*.
 1. Velg **Lagre** i handlingsruten.
-1. I hurtigkategorien **Konsolideringsfelt** i feltet **Gjenværende felt** velger du raden der feltet **Feltnavn** er satt til *Leveringsmåte*.
+1. I hurtigfanen **Konsolideringsfelt** i feltet **Gjenværende felt** velger du raden der feltet **Feltnavn** er satt til *Leveringsmåte*.
 1. Velg **Legg til**-knappen ![Pil høyre](media/forward-button.png) for å flytte feltet til listen **Valgte felt**.
 1. I handlingsruten velger du **Rediger spørring**.
-1. I kategorien **Område** i dialogboksen for redigeringsprogrammet for spørring finner du raden der feltet **Felt** er satt til *Lager*, og deretter angir du verdien *61, 63* for feltet **Vilkår** for den raden.
+1. I fanen **Område** i dialogboksen for redigeringsprogrammet for spørring finner du raden der feltet **Felt** er satt til *Lager*, og deretter angir du verdien *61, 63* for feltet **Vilkår** for den raden.
 1. Velg **OK** for å lukke dialogboksen.
 
 ### <a name="set-the-order"></a>Angi rekkefølgen
@@ -354,6 +353,3 @@ Scenarioene nedenfor illustrerer hvordan du kan bruke policyene for forsendelses
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 - [Policyer for forsendelseskonsolidering](about-shipment-consolidation-policies.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

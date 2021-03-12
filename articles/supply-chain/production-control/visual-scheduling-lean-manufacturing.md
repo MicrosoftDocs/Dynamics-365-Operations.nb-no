@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: KanbanBoard, KanbanJobSchedulingListPage, LeanProductionFlowVisualization, KanbanBoardUnplannedJobs
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 45a63ab0f5baadf6bef646224b3f0bf5327ee923
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 76a72e09f72c396f457283bfd18c41cac2607d1f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434163"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4998609"
 ---
 # <a name="visual-scheduling-for-lean-manufacturing"></a>Visuell planlegging for lean manufacturing
 
@@ -69,18 +68,18 @@ Mer informasjon om en kanban-jobb er tilgjengelig i verktøytipset som vises nå
 
 ### <a name="use-colors-to-view-the-kanban-schedule-board"></a>Bruke farger for å vise Kanban-plankortet
 
-Hvis du vil forbedre oversikten som Kanban-plankortet gir, kan du bruke farger til å skille mellom kanban-jobber. Fargen på en kanban-jobb konfigureres i lean-planleggingsgruppen, der du kan samle produktene som skal produseres i samme sekvens. **Bruk temafarger**-knappen i kategorien **Kort** i handlingsruten lar deg bytte mellom programtemafargene og fargene som er konfigurert i lean-planleggingsgruppen. For hver periode angir en kapasitetslinje (6) hvor mange tilgjengelige timer for perioden som har blitt lastet med kanban-jobber. Hvis perioden er overbelastet, vises kapasitetslinjen tykkere og i rødt. Alle disse funksjonene er tilgjengelige i **Kort**-kategorien i handlingsruten (1) på toppen av siden **Kanban-plankort**.
+Hvis du vil forbedre oversikten som Kanban-plankortet gir, kan du bruke farger til å skille mellom kanban-jobber. Fargen på en kanban-jobb konfigureres i lean-planleggingsgruppen, der du kan samle produktene som skal produseres i samme sekvens. **Bruk temafarger**-knappen i fanen **Kort** i handlingsruten lar deg bytte mellom programtemafargene og fargene som er konfigurert i lean-planleggingsgruppen. For hver periode angir en kapasitetslinje (6) hvor mange tilgjengelige timer for perioden som har blitt lastet med kanban-jobber. Hvis perioden er overbelastet, vises kapasitetslinjen tykkere og i rødt. Alle disse funksjonene er tilgjengelige i **Kort**-fanen i handlingsruten (1) på toppen av siden **Kanban-plankort**.
 
 ## <a name="plan-unplanned-jobs"></a>Planlegg ikke-planlagte jobber
-Du kan planlegge ikke-planlagte kanban-jobber fra dialogboksen **Planlegg ikke-planlagte jobber**. Hvis du vil åpne denne dialogboksen, klikker du knappen **Ikke-planlagte jobber** som viser gjeldende antall ikke-planlagte jobber. Alternativt kan du klikke **Planlegg ikke-planlagte jobber** i **Kort**-kategorien i handlingsruten. Dialogboksen viser en liste over de ikke-planlagte kanban-jobbene for arbeidscellen. Du kan bruke **Filter**-feltet til å filtrere etter alle felt i rutenettet. Du kan for eksempel filtrere etter kanban-jobber for et bestemt produkt. Når du har en filtrert liste over jobbene som du vil planlegge, merker du dem i listen, og klikk deretter **OK**. Hvis du vil bruke automatisk planlegging for jobbene, kan du angi alternativet **Automatisk planlegging** som **Ja**. I dette tilfellet planlegges jobbene i en periode i henhold til forfallsdatoen. Du kan også planlegge jobbene etter periode. Velg ganske enkelt en periode i feltet **Periode**. Illustrasjonen nedenfor viser et eksempel på dialogboksen **Planlegg ikke-planlagte jobber**. 
+Du kan planlegge ikke-planlagte kanban-jobber fra dialogboksen **Planlegg ikke-planlagte jobber**. Hvis du vil åpne denne dialogboksen, klikker du knappen **Ikke-planlagte jobber** som viser gjeldende antall ikke-planlagte jobber. Alternativt kan du klikke **Planlegg ikke-planlagte jobber** i **Kort**-fanen i handlingsruten. Dialogboksen viser en liste over de ikke-planlagte kanban-jobbene for arbeidscellen. Du kan bruke **Filter**-feltet til å filtrere etter alle felt i rutenettet. Du kan for eksempel filtrere etter kanban-jobber for et bestemt produkt. Når du har en filtrert liste over jobbene som du vil planlegge, merker du dem i listen, og klikk deretter **OK**. Hvis du vil bruke automatisk planlegging for jobbene, kan du angi alternativet **Automatisk planlegging** som **Ja**. I dette tilfellet planlegges jobbene i en periode i henhold til forfallsdatoen. Du kan også planlegge jobbene etter periode. Velg ganske enkelt en periode i feltet **Periode**. Illustrasjonen nedenfor viser et eksempel på dialogboksen **Planlegg ikke-planlagte jobber**. 
 
 ![Dialogboksen Planlegg ikke-planlagte jobber](./media/plan-unplanned-jobs-1024x564.png)
 
 ## <a name="sequence-kanban-jobs-within-the-same-period"></a>Sekvensiere kanban-jobber i den samme perioden
-Du kan endre rekkefølgen for én eller flere valgte jobber innenfor en periode. Denne funksjonen kan være nyttig hvis du vil prioritere enkelte jobber i perioden. Det kan også hende at du vil sekvensiere jobber som har samme produktattributter, for å optimalisere jobbutføring. Du kan endre rekkefølgen ved hjelp av en dra og slipp-operasjon, eller ved hjelp av menyelementene **Bakover** og **Fremover** i **Kort**-kategorien i handlingsruten.
+Du kan endre rekkefølgen for én eller flere valgte jobber innenfor en periode. Denne funksjonen kan være nyttig hvis du vil prioritere enkelte jobber i perioden. Det kan også hende at du vil sekvensiere jobber som har samme produktattributter, for å optimalisere jobbutføring. Du kan endre rekkefølgen ved hjelp av en dra og slipp-operasjon, eller ved hjelp av menyelementene **Bakover** og **Fremover** i **Kort**-fanen i handlingsruten.
 
 ## <a name="reassign-kanban-jobs-across-periods"></a>Tilordne kanban-jobber på nytt på tvers av perioder
-Jobber kan tilordnes på nytt fra én periode til en annen. Denne funksjonen kan være nyttig hvis en periode er overbelastet og du vil fordele belastningen til perioder som har ledig kapasitet. Du kan tilordne jobber på nytt ved hjelp av en dra og slipp-operasjon, eller ved hjelp av menyelementene **Neste periode** og **Forrige periode** i **Kort**-kategorien i handlingsruten.
+Jobber kan tilordnes på nytt fra én periode til en annen. Denne funksjonen kan være nyttig hvis en periode er overbelastet og du vil fordele belastningen til perioder som har ledig kapasitet. Du kan tilordne jobber på nytt ved hjelp av en dra og slipp-operasjon, eller ved hjelp av menyelementene **Neste periode** og **Forrige periode** i **Kort**-fanen i handlingsruten.
 
 ## <a name="open-the-kanban-schedule-board"></a>Åpne Kanban-plankortet
 Du kan åpne Kanban-plankortet ved hjelp av menyelementet på følgende sider:
@@ -95,6 +94,3 @@ Du kan åpne Kanban-plankortet ved hjelp av menyelementet på følgende sider:
 
 [Kanban-jobbplanlegging for lean manufacturingl](lean-manufacturing-kanban-job-scheduling.md)
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

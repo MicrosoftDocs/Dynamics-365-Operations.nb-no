@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSWaveTableListPage, WHSWaveTemplateTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 9cbc0b6655de740628bcf3709d250ac02238038b
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: b422eb432e579d4ae914fbc0efa79aaa15f1de27
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434818"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4998384"
 ---
 # <a name="wave-template-grouping"></a>Gruppering av bølgemal
 
@@ -116,7 +115,7 @@ Før du begynner, klargjør du bølgemalen som beskrevet i delen [Angi en bølge
 1. Velg den nye ordrelinjen og deretter på **Beholdning**-menyen over rutenett, velger du **Reservasjon**.
 1. På **Reservasjon**-siden, i handlingsruten, velger du **Reserver parti** for å reservere den valgte linjens fulle antall i lageret.
 1. Lukk **Reservasjon**-siden for å gå tilbake til salgsordren.
-1. Velg **Frigi til lager** i gruppen **Handlinger** i kategorien **Lager** i handlingsruten.
+1. Velg **Frigi til lager** i gruppen **Handlinger** i fanen **Lager** i handlingsruten.
 1. Du mottar en informasjonsmelding som viser forsendelse og bølge for denne ordren. Skriv ned ID-nummeret for bølgen og forsendelses-ID-numre.
 
 #### <a name="view-the-wave-that-was-created-from-sales-order-1"></a>Vis bølgen som ble opprettet fra salgsordre 1
@@ -153,7 +152,7 @@ Før du begynner, klargjør du bølgemalen som beskrevet i delen [Angi en bølge
 1. Velg den nye ordrelinjen og deretter på **Beholdning**-menyen over rutenett, velger du **Reservasjon**.
 1. På **Reservasjon**-siden, i handlingsruten, velger du **Reserver parti** for å reservere den valgte linjens fulle antall i lageret.
 1. Lukk **Reservasjon**-siden for å gå tilbake til salgsordren.
-1. Velg **Frigi til lager** i gruppen **Handlinger** i kategorien **Lager** i handlingsruten.
+1. Velg **Frigi til lager** i gruppen **Handlinger** i fanen **Lager** i handlingsruten.
 1. Du mottar en informasjonsmelding som viser forsendelse og bølge for denne ordren. Skriv ned ID-nummeret for bølgen og forsendelses-ID-numre. Legg merke til at bølge-ID-en er forskjellig fra bølge-ID-en i den første salgsordren.
 
 #### <a name="view-the-wave-that-was-created-from-sales-order-2"></a>Vis bølgen som ble opprettet fra salgsordre 2
@@ -192,7 +191,7 @@ En ny bølge ble opprettet for denne forsendelsen, fordi den bruker en annen tra
 1. Velg den nye ordrelinjen og deretter på **Beholdning**-menyen over rutenett, velger du **Reservasjon**.
 1. På **Reservasjon**-siden, i handlingsruten, velger du **Reserver parti** for å reservere den valgte linjens fulle antall i lageret.
 1. Lukk **Reservasjon**-siden for å gå tilbake til salgsordren.
-1. Velg **Frigi til lager** i gruppen **Handlinger** i kategorien **Lager** i handlingsruten.
+1. Velg **Frigi til lager** i gruppen **Handlinger** i fanen **Lager** i handlingsruten.
 1. Du mottar en informasjonsmelding som viser forsendelse og bølge for denne ordren. Skriv ned ID-nummeret for bølgen og forsendelses-ID-numre. Forsendelsen er tilordnet den eksisterende bølgen fra den første salgsordren.
 
 #### <a name="view-the-wave-for-sales-orders-1-and-3"></a>Vis bølgen for salgsordrer 1 og 3
@@ -201,6 +200,3 @@ En ny bølge ble opprettet for denne forsendelsen, fordi den bruker en annen tra
 1. Velg bølge-ID-en som ble opprettet fra den tredje salgsordren.
 1. Velg bølge-ID-koblingen for å åpne siden for bølgedetaljer.
 1. Legg merke til at forsendelsen er lagt til på **Bølgelinjer**-hurtigfanen sammen med forsendelsen for den første salgsordren.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

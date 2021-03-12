@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SMAAgreementTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 962203726cc47e1c9642c53d671d4b63094f2b2c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c69f575dae369350e3191c31f961a861dea0fb07
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434557"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4996557"
 ---
 # <a name="modify-a-service-bom"></a>Endre en servicestykkliste 
 
@@ -34,9 +33,9 @@ Du kan registrere historikken til et element i en servicestykkliste. Hver gang d
 
 ## <a name="update-a-service-bom-element"></a>Oppdatere et element for en servicestykkliste
 
-1.  Klikk **Servicestyring** \> **Felles** \> **Serviceavtaler** \> **Serviceavtaler**.
+1.  Klikk på **Servicestyring** \> **Felles** \> **Serviceavtaler** \> **Serviceavtaler**.
 
-2.  Klikk **Rediger** for å åpne detaljskjemaet **Serviceavtaler**.
+2.  Klikk på **Rediger** for å åpne detaljskjemaet **Serviceavtaler**.
 
 3.  I **handlingsruten** klikker du **Serviceobjekter** for å åpne skjemaet **Serviceobjekter**.
 
@@ -45,19 +44,19 @@ Du kan registrere historikken til et element i en servicestykkliste. Hver gang d
 5.  Velg stykklistelinjen du vil oppdatere i **Designer**-skjemaet , og klikk deretter **Rediger stykklistelinje**.
     
     > [!NOTE]
-    > <P>I kategorien <STRONG>Oppsett</STRONG> merker du av for <STRONG>Rediger når du legger til</STRONG> hvis du vil at skjemaet <STRONG>Rediger stykklistelinje</STRONG> skal åpnes når du drar en linje til servicestykklisten.</P>
+    > <P>I fanen <STRONG>Oppsett</STRONG> merker du av for <STRONG>Rediger når du legger til</STRONG> hvis du vil at skjemaet <STRONG>Rediger stykklistelinje</STRONG> skal åpnes når du drar en linje til servicestykklisten.</P>
 
 6.  Angi antallet i **Antall**-feltet.
 
 7.  Hvis du vil opprette en serviceordrelinje for erstatningsvaren, som deretter kan faktureres, merker du av for **Opprett serviceordrelinje**.
 
-8.  Klikk **OK** for å lukke skjemaet.
+8.  Klikk på **OK** for å lukke skjemaet.
 
 ## <a name="delete-a-service-bom-line"></a>Slette en servicestykklistelinje
 
-1.  Klikk **Servicestyring** \> **Felles** \> **Serviceavtaler** \> **Serviceavtaler**.
+1.  Klikk på **Servicestyring** \> **Felles** \> **Serviceavtaler** \> **Serviceavtaler**.
 
-2.  Klikk **Rediger** for å åpne detaljskjemaet **Serviceavtaler**.
+2.  Klikk på **Rediger** for å åpne detaljskjemaet **Serviceavtaler**.
 
 3.  I **handlingsruten** klikker du **Serviceobjekter** for å åpne skjemaet **Serviceobjekter**.
 
@@ -72,6 +71,3 @@ Du kan registrere historikken til et element i en servicestykkliste. Hver gang d
   
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
