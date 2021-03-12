@@ -11,29 +11,28 @@ ms.technology: ''
 ms.search.form: Dialog
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7aec00c2fb657f0b4074063ef7acad5f4372ebca
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 9b5e3e26e19bd0a9dbf878626328da267b61964f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4646341"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968710"
 ---
-# <a name="create-a-sales-tax-payment"></a><span data-ttu-id="ef4d9-103">Opprette en mva-betaling</span><span class="sxs-lookup"><span data-stu-id="ef4d9-103">Create a sales tax payment</span></span>
+# <a name="create-a-sales-tax-payment"></a><span data-ttu-id="91a4e-103">Opprette en mva-betaling</span><span class="sxs-lookup"><span data-stu-id="91a4e-103">Create a sales tax payment</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="ef4d9-104">Jobbprosedyren Utlign og poster merverdiavgift utligner mva-saldoer på mva-kontoene og forskyver dem til mva-oppgjørskontoen for en gitt periode.</span><span class="sxs-lookup"><span data-stu-id="ef4d9-104">The settle and post sales tax job procedure settles sales tax balances on the sales tax accounts, and offsets them to the sales tax settlement account for a given period.</span></span>
+<span data-ttu-id="91a4e-104">Jobbprosedyren Utlign og poster merverdiavgift utligner mva-saldoer på mva-kontoene og forskyver dem til mva-oppgjørskontoen for en gitt periode.</span><span class="sxs-lookup"><span data-stu-id="91a4e-104">The settle and post sales tax job procedure settles sales tax balances on the sales tax accounts, and offsets them to the sales tax settlement account for a given period.</span></span>
 
-1. <span data-ttu-id="ef4d9-105">Gå til **Avgift > Deklareringer > Merverdiavgift > Utlign og poster merverdiavgift**.</span><span class="sxs-lookup"><span data-stu-id="ef4d9-105">Go to **Tax > Declarations > Sales tax > Settle and post sales tax**.</span></span>
-2. <span data-ttu-id="ef4d9-106">Klikk på rullegardinknappen i **Utligningsperiode**-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="ef4d9-106">In the **Settlement period** field, click the drop-down button to open the lookup.</span></span>
-3. <span data-ttu-id="ef4d9-107">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="ef4d9-107">In the list, click the link in the selected row.</span></span>
-4. <span data-ttu-id="ef4d9-108">Angi en dato i **Fra dato**-feltet.</span><span class="sxs-lookup"><span data-stu-id="ef4d9-108">In the **From date** field, enter a date.</span></span>
-    * <span data-ttu-id="ef4d9-109">Hvis du ikke velger alternativet **Ta med rettelser** på siden **Parametere for økonomimodul**, kan utligningen behandles for forskjellige versjoner.</span><span class="sxs-lookup"><span data-stu-id="ef4d9-109">If you don't select the **Include corrections** option on the **General ledger parameters** page, the settlement can be processed for different versions.</span></span> <span data-ttu-id="ef4d9-110">Original er den første utligningen for et periodeintervall og kan bare behandles én gang for et periodeintervall.</span><span class="sxs-lookup"><span data-stu-id="ef4d9-110">Original is the first settlement for a period interval and can be processed only once for a period interval.</span></span> <span data-ttu-id="ef4d9-111">De nyeste rettelsene utligner mva-transaksjoner som er postert etter at den opprinnelige versjonen er opprettet.</span><span class="sxs-lookup"><span data-stu-id="ef4d9-111">The latest corrections will settle sales tax transactions which have been posted after the original version has been created.</span></span>   
-5. <span data-ttu-id="ef4d9-112">Angi en dato i feltet **Transaksjonsdato**.</span><span class="sxs-lookup"><span data-stu-id="ef4d9-112">In the **Transaction date** field, enter a date.</span></span>
-6. <span data-ttu-id="ef4d9-113">Klikk **OK**.</span><span class="sxs-lookup"><span data-stu-id="ef4d9-113">Click **OK**.</span></span>
+1. <span data-ttu-id="91a4e-105">Gå til **Avgift > Deklareringer > Merverdiavgift > Utlign og poster merverdiavgift**.</span><span class="sxs-lookup"><span data-stu-id="91a4e-105">Go to **Tax > Declarations > Sales tax > Settle and post sales tax**.</span></span>
+2. <span data-ttu-id="91a4e-106">Klikk på rullegardinknappen i **Utligningsperiode**-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="91a4e-106">In the **Settlement period** field, click the drop-down button to open the lookup.</span></span>
+3. <span data-ttu-id="91a4e-107">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="91a4e-107">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="91a4e-108">Angi en dato i **Fra dato**-feltet.</span><span class="sxs-lookup"><span data-stu-id="91a4e-108">In the **From date** field, enter a date.</span></span>
+    * <span data-ttu-id="91a4e-109">Hvis du ikke velger alternativet **Ta med rettelser** på siden **Parametere for økonomimodul**, kan utligningen behandles for forskjellige versjoner.</span><span class="sxs-lookup"><span data-stu-id="91a4e-109">If you don't select the **Include corrections** option on the **General ledger parameters** page, the settlement can be processed for different versions.</span></span> <span data-ttu-id="91a4e-110">Original er den første utligningen for et periodeintervall og kan bare behandles én gang for et periodeintervall.</span><span class="sxs-lookup"><span data-stu-id="91a4e-110">Original is the first settlement for a period interval and can be processed only once for a period interval.</span></span> <span data-ttu-id="91a4e-111">De nyeste rettelsene utligner mva-transaksjoner som er postert etter at den opprinnelige versjonen er opprettet.</span><span class="sxs-lookup"><span data-stu-id="91a4e-111">The latest corrections will settle sales tax transactions which have been posted after the original version has been created.</span></span>   
+5. <span data-ttu-id="91a4e-112">Angi en dato i feltet **Transaksjonsdato**.</span><span class="sxs-lookup"><span data-stu-id="91a4e-112">In the **Transaction date** field, enter a date.</span></span>
+6. <span data-ttu-id="91a4e-113">Klikk **OK**.</span><span class="sxs-lookup"><span data-stu-id="91a4e-113">Click **OK**.</span></span>
 
