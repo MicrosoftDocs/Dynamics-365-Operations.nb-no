@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5d60e29aec1ebdec939aaafc978ee4de04b96136
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d99f067e93de57b5b13787f128f450f736660351
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434176"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5006688"
 ---
 # <a name="perform-invoice-updates-for-returns"></a>Utføre fakturaoppdateringer for returer 
 
@@ -38,7 +37,7 @@ Når du setter opp fakturaoppdateringen for satsvis behandling, må salgsordren 
 
 ## <a name="post-an-invoice-for-a-return-order"></a>Postere en faktura for en returordre
 
-1.  Klikk **Kunder** \> **Felles** \> **Salgsordrer** \> **Alle salgsordrer**.
+1.  Klikk på **Kunder** \> **Felles** \> **Salgsordrer** \> **Alle salgsordrer**.
 
 2.  Velg en salgsordre som **Returordre** vises for i **Ordretype**-feltet.
 
@@ -48,7 +47,7 @@ Når du setter opp fakturaoppdateringen for satsvis behandling, må salgsordren 
 
 5.  Gå gjennom informasjonen i skjemaet, og gjør eventuelle nødvendige endringer.
 
-6.  Klikk **OK**. Kreditnotaen er postert.
+6.  Klikk på **OK**. Kreditnotaen er postert.
 
 ## <a name="see-also"></a>Se også
 
@@ -57,6 +56,3 @@ Når du setter opp fakturaoppdateringen for satsvis behandling, må salgsordren 
   
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

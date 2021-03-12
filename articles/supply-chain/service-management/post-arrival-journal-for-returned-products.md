@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: WMSArrivalOverview
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e07542a369506b810704012bd1b07557b79f50d7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 184ce418ff2ec4b891a24b2b75d37b6b4f5d23f3
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434584"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5006647"
 ---
 # <a name="post-arrival-journal-for-returned-products"></a>Postere ankomstjournal for returnerte produkter 
 
@@ -32,7 +31,7 @@ ms.locfileid: "4434584"
 
 For å behandle en retur validerer du først returantallet og oppdaterer antall-feltet i vareankomstjournalen. Velg deretter en disposisjonskode eller angi at de returnerte varene må undersøkes. Når disse trinnene er fullført, kan du postere vareankomstjournalen for returordren.
 
-1.  Klikk **Lagerstyring** \> **Periodisk** \> **Ankomstoversikt**.
+1.  Klikk på **Lagerstyring** \> **Periodisk** \> **Ankomstoversikt**.
 
 2.  I filteret **Oppsettsnavn** velger du **Returordre**.
 
@@ -40,7 +39,7 @@ For å behandle en retur validerer du først returantallet og oppdaterer antall-
 
 4.  Finn linjen til returordren du vil postere, merk av i boksen **Velg for ankomst** for den, og klikk deretter **Start ankomst**.
 
-5.  Klikk **Journaler** \> **Vis ankomster fra mottak** for å åpne skjemaet **Lokasjonsjournal**.
+5.  Klikk på **Journaler** \> **Vis ankomster fra mottak** for å åpne skjemaet **Lokasjonsjournal**.
     
 
     > [!TIP]
@@ -58,6 +57,3 @@ Når journalen er postert, registreres de returnerte varene på lager, og **Retu
   
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

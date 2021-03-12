@@ -11,23 +11,22 @@ ms.technology: ''
 ms.search.form: PdsRebateAgreement, SalesTableListPage, SalesCreateOrder, SalesTable, MCRPriceHistory, SalesEditLines,  PdsRebateTableListPage, MCRBrokerWriteOffReason, MRCHierarchyAddCust, PdsItemRebateGroup, PdsRebate, PdsRebateProgramTMATable, PdsRebateTable, PdsRebateTableListPagePreviewPane, PdsRebateTrans, PdsRebateType_CustLookup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a8ebc281036842bdc8965e062990438e1fb466ff
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 54242bfac2fa8dbdd982d36083c1dd0f4b8e077e
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434535"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5006797"
 ---
 # <a name="generate-and-process-customer-rebates"></a>Generere og behandle kunderabatter
 
 [!include [banner](../../includes/banner.md)]
 
-Denne fremgangsmåten beskriver hvordan du behandler kunderabatter fra kravgenerering til de overføres som avsetninger til kunder. Den hjelper deg gjennom et konkret eksempel for å forklare hvordan forskjellige betingelsene på rabattlinjene påvirker de endelige beløpene som krediteres til kunden. Du må bruke USMF-demodatafirmaet og utføre følgende oppgaver før du starter veiledningen: (1) Gå til siden Kundeparametere, og utvid kategorien Priser og deretter kategorien Prisdetaljer, og kontroller at alternativet Aktiver prisdetaljer er satt til Ja. (2) Gå til siden Rabattavtaler, og velg kunderabattavtalen: USMF-000001. Hvis Arbeidsflytgodkjenningsstatus-feltet ikke er satt til Godkjent, må du klikke Validering i handlingsruten for å godkjenne.
+Denne fremgangsmåten beskriver hvordan du behandler kunderabatter fra kravgenerering til de overføres som avsetninger til kunder. Den hjelper deg gjennom et konkret eksempel for å forklare hvordan forskjellige betingelsene på rabattlinjene påvirker de endelige beløpene som krediteres til kunden. Du må bruke USMF-demodatafirmaet og utføre følgende oppgaver før du starter veiledningen: (1) Gå til siden Kundeparametere, og utvid fanen Priser og deretter fanen Prisdetaljer, og kontroller at alternativet Aktiver prisdetaljer er satt til Ja. (2) Gå til siden Rabattavtaler, og velg kunderabattavtalen: USMF-000001. Hvis Arbeidsflytgodkjenningsstatus-feltet ikke er satt til Godkjent, må du klikke Validering i handlingsruten for å godkjenne.
 
 
 ## <a name="review-a-customer-rebate-agreement"></a>Se over en kunderabattavtale
@@ -45,23 +44,23 @@ Denne fremgangsmåten beskriver hvordan du behandler kunderabatter fra kravgener
 1. Gå til **Navigasjonsrute > Moduler > Salg og markedsføring > Salgsordrer > Alle salgsordrer**.
 2. Klikk på **Ny**. Hvis du vil etterligne måten som rabattkrav genereres på, er den neste oppgaven til å opprette en salgsordre, der produktet og antallet vil kvalifisere den aktuelle kunden for en rabatt.    
 3. Angi eller velg en verdi i **Kundekonto**-feltet.
-4. Klikk **OK**.
+4. Klikk på **OK**.
 5. Angi eller velg en verdi i **Varenummer**-feltet.
 6. Sett verdien for **Antall** til 40.
 7. Klikk på **Salgsordrelinje** i delen **Salgsordrelinjer**.
 8. Klikk på **Prisdetaljer**. Hvis du ikke ser dette alternativet, er det fordi du ikke har satt alternativet **Aktiver prisdetaljer** til Ja før du startet veiledningen.     
-9. Vis delen **Rabatter**. Kategorien **Rabatter** viser alle rabattavtaler som gjelder for gjeldende ordrelinje, og viser beregnet rabattbeløp. Legg merke til at beløpene som vises er bare indikasjoner på hva fremtidig rabattkrav kan bli. De faktiske rabattbeløpene kan være forskjellig avhengig av: det totale salgsvolumet kunden har oppnådd under en periodisk rabattavtale; om kunden hadde returnert alle eller et delvist antall; og om den aktuelle salgsordren er fakturert.
+9. Vis delen **Rabatter**. fanen **Rabatter** viser alle rabattavtaler som gjelder for gjeldende ordrelinje, og viser beregnet rabattbeløp. Legg merke til at beløpene som vises er bare indikasjoner på hva fremtidig rabattkrav kan bli. De faktiske rabattbeløpene kan være forskjellig avhengig av: det totale salgsvolumet kunden har oppnådd under en periodisk rabattavtale; om kunden hadde returnert alle eller et delvist antall; og om den aktuelle salgsordren er fakturert.
 10. Lukk siden.
-11. Klikk **Legg til linje**.
+11. Klikk på **Legg til linje**.
 12. Angi eller velg en verdi i **Varenummer**-feltet.
 13. Sett verdien for **Antall** til 60.
-14. Klikk **Lagre**.
-15. Klikk **Faktura** i **handlingsruten**.
+14. Klikk på **Lagre**.
+15. Klikk på **Faktura** i **handlingsruten**.
 16. Klikk på **Faktura**.
 17. Utvid seksjonen **Parametere**.
 18. Velg Alle i **Antall**-feltet.
-19. Klikk **OK**.
-20. Klikk **OK**.
+19. Klikk på **OK**.
+20. Klikk på **OK**.
 
 ## <a name="process-rebate-claims"></a>Behandle rabattkrav
 1. Gå til **Navigasjonsrute > Moduler > Salg og markedsføring > Kunderabatter > Rabatter**.
@@ -72,16 +71,13 @@ Denne fremgangsmåten beskriver hvordan du behandler kunderabatter fra kravgener
 2. Klikk på **Summer**.
 3. Angi eller velg en verdi i feltet **Kunde**.
 4. Velg dagens dato i **Startdato**-feltet.
-5. Klikk **OK**. Som et resultat av funksjonen **Summer**, har det estimerte kravbeløpet nå blitt justert for å ta hensyn til at kundens totale salgsvolum i den aktuelle perioden er høyere enn da den første rabatten ble generert. Mer spesifikt, fordi totalt antall kjøpt har nådd 100 enheter, kvalifiserer kunden nå for 40 USD per enhet (i henhold til avtalens andre avbruddspunkt for antall) eller 400 USD av totalt rabattbeløp. Forskjellen er registrert som en ny "justering" av krav for ekstra 800 USD. Statusen for rabattkravet som er inkludert i den oppdaterte summen er nå satt til Beregnet. 
+5. Klikk på **OK**. Som et resultat av funksjonen **Summer**, har det estimerte kravbeløpet nå blitt justert for å ta hensyn til at kundens totale salgsvolum i den aktuelle perioden er høyere enn da den første rabatten ble generert. Mer spesifikt, fordi totalt antall kjøpt har nådd 100 enheter, kvalifiserer kunden nå for 40 USD per enhet (i henhold til avtalens andre avbruddspunkt for antall) eller 400 USD av totalt rabattbeløp. Forskjellen er registrert som en ny "justering" av krav for ekstra 800 USD. Statusen for rabattkravet som er inkludert i den oppdaterte summen er nå satt til Beregnet. 
 6. Merk alle rader i listen.
 7. Klikk på **Godkjenn**.
 8. Klikk på **Behandle**.
 9. Angi eller velg en verdi i feltet **Kunde**.
-10. Klikk **OK**. En melding viser at rabatten ble behandlet, og statusen for kravene har blitt endret til Merk. Dette betyr at som et resultat av at en Rabattavsetningsjournal posteres:
+10. Klikk på **OK**. En melding viser at rabatten ble behandlet, og statusen for kravene har blitt endret til Merk. Dette betyr at som et resultat av at en Rabattavsetningsjournal posteres:
     - Krav er nå overført til midlertidige kundesaldoen som fradrag.
     - Avsetningskontoen for rabatt er kreditert for å representere fremtidige ansvaret for kunden.
     - Utgiftskontoen for rabatt har blitt debitert for å gjenkjenne kostnaden som er påløpt i forbindelse med salg.   
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSPostMethod,WHSWaveTemplateTable,WHSLoadMixGroup,WHSLoadBuildTemplate, WHSWaveTableListPage, TMSLoadBuildTemplateApply, TMSLoadBuildTemplates, TMSLoadBuildTemplateCreate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 7f51b3d65c8dd1e11296956c37ef9dfe568e5ec2
-ms.sourcegitcommit: d9bffbeae2ba14f06294dd275383077d4d65c4fa
+ms.openlocfilehash: e4abe1a03997853053f60c750199874a61fc68c0
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "4654204"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5006397"
 ---
 # <a name="advanced-load-building-during-wave"></a>Avansert lastplanlegging under en bølge
 
@@ -239,7 +238,7 @@ Dette scenariet viser hvordan innstillingene som ble beskrevet tidligere i dette
 1. Velg **Reservasjon** på **Beholdning**-menyen over rutenettet.
 1. På **Reservasjon**-siden i handlingsruten velger du **Reserver parti**.
 1. Velg **Lukk**-knappen (**X**) øverst til høyre på siden for å gå tilbake til salgsordren.
-1. Velg **Frigi til lager** i gruppen **Handlinger** i kategorien **Lager** i handlingsruten. Systemet oppretter en forsendelse og legger den til en ny last, fordi ingen eksisterende last inneholder lastlinjer som har dette ordrenummeret.
+1. Velg **Frigi til lager** i gruppen **Handlinger** i fanen **Lager** i handlingsruten. Systemet oppretter en forsendelse og legger den til en ny last, fordi ingen eksisterende last inneholder lastlinjer som har dette ordrenummeret.
 
     Du mottar informasjonsmeldinger som angir arbeid, bølge og forsendelse som er opprettet for denne ordren.
 
@@ -250,6 +249,3 @@ Dette scenariet viser hvordan innstillingene som ble beskrevet tidligere i dette
 1. I salgsordren du nettopp opprettet, velger du **Legg til** på **Salgsordrelinjer**-hurtigfanen for å legge til en ny linje.
 1. På den nye linjen angir du **Varenummer**-feltet til *M9200* og **Antall**-feltet til *1*.
 1. Gjenta linjer 6 til og med 9 for å reservere linjen og frigi den til lageret. Som tidligere oppretter systemet en **ny** forsendelse for linjen du la til. Men fordi varen kommer fra **CarAudio**-varegruppen, **kan den ikke overføre betingelsene du angir for samlegruppen for last**. Derfor **legges den til en ny last**. Hvis du ikke hadde angitt en samlegruppe for lastplanleggingsmalen, ville denne forsendelsen ha blitt lagt til i den første lasten.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

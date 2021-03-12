@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: RetailTerminalTable, SystemParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 1205393
 ms.assetid: 2f13e9cf-55b5-458b-8c32-3f8cd98c9ecf
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0ab8456d81fbe2dca495b65b932395572242a25c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b0a5ca1e116e931ba992eab51a06dae9fdf92756
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414705"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5006141"
 ---
 # <a name="task-recorder-and-help-for-retail-modern-pos-mpos-and-cloud-pos"></a>Oppgaveopptaker og hjelp for Retail Modern POS (MPOS) og Cloud POS
 
@@ -34,7 +33,7 @@ Dette emnet beskriver hvordan du bruker Oppgaveopptaker i Retail Modern POS og C
 
 ## <a name="overview"></a>Oversikt
 
-Oppgaveopptaker i Retail Modern POS og Cloud POS er en ny løsning som ble bygd med fokus på høy hastighet. Den gir et fleksibelt Application Program Interface (API) for fleksibilitet og sømløs integrasjon med forbrukere av forretningsprosessregistreringer. I tillegg er Oppgaveopptaker-integrasjon med verktøyet Forretningsprosessmodelerer (BPM) på Microsoft Dynamics Lifecycle Services ([https://bpm.lcs.dynamics.com](https://bpm.lcs.dynamics.com/)) implementert. Derfor kan brukere fortsette å produsere rike forretningsprosessdiagrammer fra opptak for å analysere og utforme programmene.
+Oppgaveopptaker i Retail Modern POS og Cloud POS er en ny løsning som ble bygd med fokus på høy hastighet. Den gir et fleksibelt Application Program Interface (API) for fleksibilitet og sømløs integrasjon med forbrukere av forretningsprosessregistreringer. I tillegg er Oppgaveopptaker-integrasjon med verktøyet Forretningsprosessmodelerer (BPM) på Microsoft Dynamics Lifecycle Services ([https://bpm.lcs.dynamics.com](https://bpm.lcs.dynamics.com/)) implementert. Derfor kan brukere fortsette å produsere rike forretningsprosessdiagrammer fra opptak for å analysere og utforme programmene.
 
 ## <a name="architecture"></a>Arkitektur
 
@@ -146,6 +145,3 @@ Når du klikker en oppgaveveiledning i søkeresultatene, kan du se trinnene som 
 
 > [!NOTE]
 > Hjelp i Retail Modern POS og Cloud POS henter ikke frem oppgaveveiledninger i henhold til hvilket skjema du bruker eller hva du holder på med. Du må skrive inn prosessnavnet i søkeboksen, og deretter klikke **Søk**.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
