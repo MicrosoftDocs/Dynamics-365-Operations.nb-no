@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4103c0630b72b9b92a116f7fe702a777dd295e25
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: ac72489c3b2dacfde280606a83221e8514793701
+ms.sourcegitcommit: 2190be6c205d7d9e43bdb99b9190cc0112f9f093
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527416"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5152203"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-26-2020"></a>Hva er nytt eller endret i Dynamics 365 Human Resources 26. september 2020
 
@@ -31,7 +30,7 @@ ms.locfileid: "4527416"
 
 Dette emnet beskriver funksjoner som er nye, endret eller kommer snart i Dynamics 365 Human Resources. Hvis du vil ha mer informasjon om oppdateringsprosessen og tidsplanen, kan du se [Oppdatere prosess](hr-admin-setup-update-process.md).
 
-Hvis du vil ha mer informasjon om nye funksjoner og deres forventede generelle tilgjengelighetsdatoer, se [Oversikt over Dynamics 365 Human Resources 2020-frigivelsesbølge 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/dynamics365-human-resources/).
+Hvis du vil ha mer informasjon om nye funksjoner og deres forventede generelle tilgjengelighetsdatoer, se [Oversikt over Dynamics 365 Human Resources 2020-frigivelsesbølge 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
 
 ## <a name="in-this-release"></a>I denne versjonen
 
@@ -58,7 +57,7 @@ Denne versjonen inneholder følgende feilrettinger.
 | 481401 | Avsetningsbehandling henger når datogrunnlag for avsetning er etter avsetningens startdato og på slutten av måneden | Avsetningsbehandling er oppdatert til ikke å ha en forsinkelse når avsetningsdatogrunnlaget er etter startdatoen for avsetningen og på slutten av måneden. |
 | 447167 | Utløpende poster inkluderer inaktive arbeidere | Kategorien **Utløpende poster** i **Personaladministrasjon** inneholdt inaktive arbeidere. Nå inneholder den bare aktive arbeidere. |
 | 486840 | Feil permisjonsforespørsel åpnes fra **Arbeidselementer som er tilordnet til meg** | Valg av en permisjonsforespørsel fra **Arbeidselementer som er tilordnet til meg** åpner ikke lenger den siste permisjonsforespørselen som er tilordnet den gjeldende brukeren. |
-| 506868 | Common Data Service **Tittel**-felt ikke angitt for **Stilling**-enhet | **Tittel**-feltet i **Jobb** og **Stilling**-enhetene vises som ikke angitt. **Tittel**-feltet vises nå. |
+| 506868 | Dataverse **Tittel**-felt ikke angitt for **Stilling**-enhet | **Tittel**-feltet i **Jobb** og **Stilling**-enhetene vises som ikke angitt. **Tittel**-feltet vises nå. |
 | 430359 | Får ikke tilgang til avlasting for sjekklisteoppgaver med overordnet og ansattroller tilordnet | Arbeidere med en fremtidig avslutningsdato får ikke tilgang til sjekklisteoppgavene hvis de bare hadde en ansatt eller lederrolle. Brukere med bare en ansatt eller lederrolle har for øyeblikket tilgang til avlastingsaktiviteter med en fremtidig avslutningsdato. |
 | 458102 | Ny ansatt vises ikke på **Lønnsinformasjon for arbeider**-enheten når den opprettes | Nye ansatte inkluderes i lønnsinformasjonsenheten for arbeideren uten å måtte åpne lønnsinformasjonen for den ansatte før du eksporterer enheten. |
 
@@ -85,6 +84,3 @@ Hvis du vil ha en fullstendig liste over de planlagte funksjonene og de planlagt
 [Oversikt over Dynamics 365 Human Resources 2020-frigivelsesbølge 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)
 [Oppdateringsprosess](hr-admin-setup-update-process.md)
 [Behandle funksjoner](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

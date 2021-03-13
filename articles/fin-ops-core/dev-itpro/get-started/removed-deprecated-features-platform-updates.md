@@ -3,7 +3,7 @@ title: Fjernede eller avskrevne Platform-funksjoner
 description: Dette emnet beskriver funksjoner som er fjernet eller som er planlagt for fjerning i plattformoppdateringer av Finance and Operations-apper.
 author: sericks007
 manager: AnnBe
-ms.date: 12/07/2020
+ms.date: 02/03/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: ffd98016079ccab47864c821116c821b5df22e3b
-ms.sourcegitcommit: 069ed5789517b550065e5e2317658fec4027359e
+ms.openlocfilehash: d57182aa34c4897ef3703d0f8ed08d032c261170
+ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "4689572"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5154093"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Fjernede eller avskrevne Platform-funksjoner
 
@@ -32,7 +32,55 @@ Dette emnet beskriver funksjoner som er fjernet eller som er planlagt for fjerni
 
 Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivningene for din egen planlegging. 
 
-Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekniske referanserapporter](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Du kan sammenligne de ulike versjonene av disse rapportene for å lære om objekter som er endret eller fjernet i hver versjon av Finance and Operations-apper.
+Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekniske referanserapporter](https://docs.microsoft.com/dynamics/s-e/). Du kan sammenligne de ulike versjonene av disse rapportene for å lære om objekter som er endret eller fjernet i hver versjon av Finance and Operations-apper.
+
+## <a name="feature-removed-effective-january-28-2021"></a>Funksjonen ble fjernet 28. januar 2021
+
+### <a name="batch-job-to-handle-sql-index-defragmentation"></a>Satsvis jobb for å håndtere defragmentering av SQL-indeks
+
+|   |  |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Denne funksjonen ble fjernet for å redusere de indirekte kostnadene ved drift, overvåking og vedlikehold av indeksbehandling foretatt av kunder. |
+| **Erstattet med en annen funksjon?**   | Indeksbehandlingen blir i fremtiden foretatt av Microsoft-tjenester. Dette skjer kontinuerlig uten å påvirke arbeidsmengden til brukerne. |
+| **Berørte produktområder**         | Finance and Operations-apper|
+| **Distribusjonsalternativ**              | Skydistribusjon – påvirker Microsoft-administrerte produksjonsmiljøer og sandkassemiljøer på lag 2 til og med lag 5. |
+| **Status**                         | Dette funksjonen er fjernet. |
+
+
+## <a name="platform-updates-for-version-10017-of-finance-and-operations-apps"></a>Plattformoppdateringer for versjon 10.0.17 av Finance and Operations-apper
+
+> [!IMPORTANT]
+> Versjon 10.0.17 er tilgjengelig som en del av en forhåndsversjon. Innholdet og funksjonaliteten kan bli endret. Hvis du vil ha mer informasjon om forhåndsvisning versjoner, kan du se [Vanlige spørsmål om oppdatering av én versjonstjeneste](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
+
+### <a name="visual-studio-2015"></a>Visual Studio2015
+
+|   |  |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | For å støtte de siste versjonene av Visual Studio må det gjøres enkelte endringer i X++-utvidelser for Visual Studio. Disse endringene er ikke kompatible med Visual Studio 2015. |
+| **Erstattet med en annen funksjon?**   | Visual Studio 2017 vil erstatte Visual Studio 2015 som den distribuerte og påkrevde versjonen. |
+| **Berørte produktområder**         | Visual Studio-utviklingsverktøy |
+| **Distribusjonsalternativ**              | Alle |
+| **Status**                         | Avskrevet. De forrige X++-verktøyene blir fjernet fra Visual Studio 2015 ved oppdatering, og de oppdaterte verktøyene blir ikke installert i Visual Studio 2015. Vertsbaserte builder påvirkes ikke. Når det gjelder virtuelle maskiner for build, må kompileringskontrollen (builddefinisjonen) oppdateres manuelt for å endre avhengigheten fra MSBuild 14.0 (Visual Studio 2015) til MSBuild 15.0 (Visual Studio 2017) som beskrevet under [Oppdatere et eldre forløp i Azure Pipelines](../dev-tools/pipeline-msbuild-update.md). |
+
+### <a name="user-avatar"></a>Brukeravatar 
+
+|   |  |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Brukeravataren som vises til høyre i navigasjonsfeltet, ble hentet ved hjelp av en API fra Dynamics 365-hodekontrollen, som er avskrevet. |
+| **Erstattet med en annen funksjon?**   | Brukerne får i stedet se initialene sine i en sirkel i navigasjonsfeltet. Dette er det samme visualobjektet som brukes på utviklingsmaskiner. |
+| **Berørte produktområder**         | Webklient |
+| **Distribusjonsalternativ**              | Alle |
+| **Status**                         | Fjernet fra og med versjon 10.0.17 |
+
+### <a name="enterprise-portal-ep-deprecation"></a>Avskrivning av Enterprise Portal (EP)  
+
+|   |  |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Metadataartefaktene som er knyttet til Dynamics AX 2012 Enterprise Portal (EP) er avskrevet fordi EP aldri ble støttet i Finance and Operations-appene. |
+| **Erstattet med en annen funksjon?**   | Nei |
+| **Berørte produktområder**         | Webklient |
+| **Distribusjonsalternativ**              | Alle |
+| **Status**                         | Avskrevet. All EP-kode er planlagt å fjernes i oktober 2021-versjonen. |
 
 ## <a name="platform-updates-for-version-10015-of-finance-and-operations-apps"></a>Plattformoppdateringer for versjon 10.0.15 av Finance and Operations-apper
 
@@ -184,7 +232,7 @@ Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekni
 |   |  |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | URL-adresser for navigasjon som er innebygd i dokumenter som er gjengitt av tjenesten, kan inneholde sensitive forretningsdata. Vi fjerner støtte for innebygde gjennomgangskoblinger i dokumenter som et sikkerhetstiltak for å beskytte kundens data bedre. Brukere vil også dra nytte av forbedret ytelse samtidig som de får dokumenter på en proaktiv måte som følge av denne endringen.  |
-| **Erstattet med en annen funksjon?**   | Nr. |
+| **Erstattet med en annen funksjon?**   | Nei |
 | **Berørte produktområder**         | Rapportering |
 | **Distribusjonsalternativ**              | Alle |
 | **Status**                         | Denne funksjonen fjernes aktivt fra tjenesten.<br><br>Modern-klienten har mange alternativer for å produsere visninger som omfatter automatisk genererte koblinger som hjelp til å navigere i programmet. Paginerte dokumenter som er gjengitt av tjenesten, anbefales for ekstern kommunikasjon som sendes via e-post, arkiveres og skrives ut for mottakere. Vi har forbedret opplevelsen for forhåndsvisning av dokumenter direkte i Web-leseren, som gir direkte tilgang til lokale skrivere. Hvis du vil ha mer informasjon, se [Forhåndsvise PDF-dokumenter med et innebygd visningsprogram](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/preview-pdf-documents). |
@@ -192,6 +240,3 @@ Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekni
 ## <a name="previous-announcements-about-removed-or-deprecated-features"></a>Tidligere kunngjøringer om fjernede eller avskrevne funksjoner
 Hvis du vil lære mer om funksjoner som er fjernet eller avskrevet i tidligere versjoner, kan du se [Fjernede eller avskrevne funksjoner i tidligere versjoner](../migration-upgrade/deprecated-features.md).
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2c84a5f346bae440fb7a0ec6b2c3b813a30e8edd
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: bcf58a7005a8e61c5fba9c5065d75ebae8b909cc
+ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4695145"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "5154159"
 ---
 # <a name="help-system"></a>Hjelpesystem
 
@@ -107,7 +107,7 @@ Hvis du vil ha tilgang til hjelpeinnhold, velger du knappen **Hjelp** (**?**), o
 
 ### <a name="accessing-help-topics-from-the-help-pane"></a>Tilgang til helpeemner fra Hjelp-ruten
 
-Fra **Hjelp**-ruten har du tilgang til emner som gjelder for klienten. Når du første gang åpner **Hjelp**-ruten, viser kategorien **Hjelp** emnene som gjelder for siden du befinner deg på. Hvis ingen emner vises, kan du angi nøkkelord for å presisere søket. Når du velger et emne i **Hjelp**-ruten, åpnes emnet i en ny kategori i leseren.
+Fra **Hjelp**-ruten har du tilgang til emner som gjelder for klienten. Når du første gang åpner **Hjelp**-ruten, viser fanen **Hjelp** emnene som gjelder for siden du befinner deg på. Hvis ingen emner vises, kan du angi nøkkelord for å presisere søket. Når du velger et emne i **Hjelp**-ruten, åpnes emnet i en ny kategori i leseren.
 
 > [!IMPORTANT]
 > Denne delen gjelder ikke for Dynamics 365 Human Resources. Hjelpesystemet for Human Resources kobles automatisk til oppgaveveiledningene for produktet. Du kan heller ikke opprette tilpassede oppgaveveiledninger for Human Resources.
@@ -132,7 +132,7 @@ On the **System parameters** page, follow these steps:
 3. Select BPM libraries (within the selected project) to retrieve task recordings from.
 4. Set the display order of the BPM libraries. This setting determines the order in which task recordings from the libraries will appear in the Help pane.-->
 
-Etter at en systemadministrator har fullført disse trinnene, kan du åpne **Hjelp**-ruten og velge kategorien **Oppgaveveiledninger**. Du vil nå se oppgaveveiledningene som gjelder for siden du er på for øyeblikket. Hvis det ikke finneds noen oppgaveveiledninger, kan du angi nøkkelord for å presisere søket. Når du velger en oppgaveveiledning i **Hjelp**-ruten, viser **Hjelp**-ruten de trinnvise instruksjonene, og du kan spille av oppgaveveiledningen.
+Etter at en systemadministrator har fullført disse trinnene, kan du åpne **Hjelp**-ruten og velge fanen **Oppgaveveiledninger**. Du vil nå se oppgaveveiledningene som gjelder for siden du er på for øyeblikket. Hvis det ikke finneds noen oppgaveveiledninger, kan du angi nøkkelord for å presisere søket. Når du velger en oppgaveveiledning i **Hjelp**-ruten, viser **Hjelp**-ruten de trinnvise instruksjonene, og du kan spille av oppgaveveiledningen.
 
 ![Oppgaveveiledning – lesevisning](./media/task-guide-ops.png)
 
@@ -163,7 +163,4 @@ Følgende tabell viser nettstedene våre. Områder med en stjerne (\*) ved siden
 | [Docs.microsoft.com/tidligere versjoner](/previous-versions/dynamics/) | Dette området har innhold fra tidligere versjoner. |
 | [Dynamics-fellesskap](https://community.dynamics.com/) | Dette området har blogger, forum og videoer. |
 | [Microsoft.com/dynamics365](https://www.microsoft.com/dynamics365/home) | Dette området formidler informasjon om evaluering og salg. |
-| [CustomerSource](https://mbs.microsoft.com/customersource/)\* | Dette området drifter opplæringsressurser, nedlastbare rapporter og hvitbøker og er primærområdet for støtte for serviceplaninnehavere. Tilgang til noen ressurser på dette området krever kanskje en serviceplan. |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+| [CustomerSource](https://docs.microsoft.com/dynamics/s-e/)\* | Dette området drifter opplæringsressurser, nedlastbare rapporter og hvitbøker og er primærområdet for støtte for serviceplaninnehavere. Tilgang til noen ressurser på dette området krever kanskje en serviceplan. |
