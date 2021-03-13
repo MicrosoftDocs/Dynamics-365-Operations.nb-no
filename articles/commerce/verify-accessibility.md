@@ -11,77 +11,78 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2019-12-19
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: fc3dca673510e1636f497bb7d5c295bebe025677
-ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
+ms.openlocfilehash: 7690f3bb17a56b9a16b6e818b675064b1979948e
+ms.sourcegitcommit: 872600103d2a444d78963867e5e0cdc62e68c3ec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4414770"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "5097371"
 ---
-# <a name="verify-page-content-accessibility"></a><span data-ttu-id="dc3e4-103">Kontrollere tilgjengelighet for sideinnhold</span><span class="sxs-lookup"><span data-stu-id="dc3e4-103">Verify page content accessibility</span></span>
+# <a name="verify-page-content-accessibility"></a><span data-ttu-id="bb26b-103">Kontrollere tilgjengelighet for sideinnhold</span><span class="sxs-lookup"><span data-stu-id="bb26b-103">Verify page content accessibility</span></span>
 
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="dc3e4-104">Dette emnet beskriver hvordan du kontrollerer tilgjengeligheten for sideinnhold i Microsoft Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="dc3e4-104">This topic describes how to verify the accessibility of page content in Microsoft Dynamics 365 Commerce.</span></span>
+<span data-ttu-id="bb26b-104">Dette emnet beskriver hvordan du kontrollerer tilgjengeligheten for sideinnhold i Microsoft Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="bb26b-104">This topic describes how to verify the accessibility of page content in Microsoft Dynamics 365 Commerce.</span></span>
 
-## <a name="overview"></a><span data-ttu-id="dc3e4-105">Oversikt</span><span class="sxs-lookup"><span data-stu-id="dc3e4-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="bb26b-105">Oversikt</span><span class="sxs-lookup"><span data-stu-id="bb26b-105">Overview</span></span>
 
-<span data-ttu-id="dc3e4-106">Når du er ferdig med å endre en side, bør du sørge for at innholdet er tilgjengelig for alle på Internett.</span><span class="sxs-lookup"><span data-stu-id="dc3e4-106">When you've finished changing a page, you should make sure that the content is accessible to everyone on the web.</span></span> <span data-ttu-id="dc3e4-107">I redigeringsverktøyene for handel kan du enkelt kontrollere tilgjengeligheten til sideinnholdet ved hjelp av den integrerte [Microsoft Accessibility Insights](https://accessibilityinsights.io/)-tjenesten.</span><span class="sxs-lookup"><span data-stu-id="dc3e4-107">In the Commerce authoring tools, you can easily verify the accessibility of page content by using the integrated [Microsoft Accessibility Insights](https://accessibilityinsights.io/) service.</span></span> <span data-ttu-id="dc3e4-108">Denne tjenesten verifiserer sideinnholdet ditt mot de seneste retningslinjene for [tilgjengelighet i World Wide Web Consortium (W3C)](https://www.w3.org/standards/webdesign/accessibility).</span><span class="sxs-lookup"><span data-stu-id="dc3e4-108">This service verifies your page content against the latest [World Wide Web Consortium (W3C) accessibility](https://www.w3.org/standards/webdesign/accessibility) guidelines.</span></span>
+<span data-ttu-id="bb26b-106">Når du er ferdig med å endre en side, bør du sørge for at innholdet er tilgjengelig for alle på Internett.</span><span class="sxs-lookup"><span data-stu-id="bb26b-106">When you've finished changing a page, you should make sure that the content is accessible to everyone on the web.</span></span> <span data-ttu-id="bb26b-107">I redigeringsverktøyene for handel kan du enkelt kontrollere tilgjengeligheten til sideinnholdet ved hjelp av den integrerte [Microsoft Accessibility Insights](https://accessibilityinsights.io/)-tjenesten.</span><span class="sxs-lookup"><span data-stu-id="bb26b-107">In the Commerce authoring tools, you can easily verify the accessibility of page content by using the integrated [Microsoft Accessibility Insights](https://accessibilityinsights.io/) service.</span></span> <span data-ttu-id="bb26b-108">Denne tjenesten verifiserer sideinnholdet ditt mot de seneste retningslinjene for [tilgjengelighet i World Wide Web Consortium (W3C)](https://www.w3.org/standards/webdesign/accessibility).</span><span class="sxs-lookup"><span data-stu-id="bb26b-108">This service verifies your page content against the latest [World Wide Web Consortium (W3C) accessibility](https://www.w3.org/standards/webdesign/accessibility) guidelines.</span></span>
 
-<span data-ttu-id="dc3e4-109">[Microsoft Accessibility Insights](https://accessibilityinsights.io/)-integreringen må være aktivert på leier- eller områdenivået før du kan bruke den.</span><span class="sxs-lookup"><span data-stu-id="dc3e4-109">The [Microsoft Accessibility Insights](https://accessibilityinsights.io/) integration must be turned on at the tenant or site level before you can use it.</span></span>
+<span data-ttu-id="bb26b-109">[Microsoft Accessibility Insights](https://accessibilityinsights.io/)-integreringen må være aktivert på leier- eller områdenivået før du kan bruke den.</span><span class="sxs-lookup"><span data-stu-id="bb26b-109">The [Microsoft Accessibility Insights](https://accessibilityinsights.io/) integration must be turned on at the tenant or site level before you can use it.</span></span>
 
-## <a name="turn-on-microsoft-accessibility-insights-for-all-the-sites-in-your-tenant"></a><span data-ttu-id="dc3e4-110">Aktivere Microsoft Accessibility Insights for alle områdene i leieren</span><span class="sxs-lookup"><span data-stu-id="dc3e4-110">Turn on Microsoft Accessibility Insights for all the sites in your tenant</span></span>
+## <a name="turn-on-microsoft-accessibility-insights-for-all-the-sites-in-your-tenant"></a><span data-ttu-id="bb26b-110">Aktivere Microsoft Accessibility Insights for alle områdene i leieren</span><span class="sxs-lookup"><span data-stu-id="bb26b-110">Turn on Microsoft Accessibility Insights for all the sites in your tenant</span></span>
 
-<span data-ttu-id="dc3e4-111">Følg denne fremgangsmåten for å aktivere [Microsoft Accessibility Insights](https://accessibilityinsights.io/)-integrasjon for alle Commerce-områder i leieren.</span><span class="sxs-lookup"><span data-stu-id="dc3e4-111">To turn on the [Microsoft Accessibility Insights](https://accessibilityinsights.io/) integration for all the Commerce sites in your tenant, follow these steps.</span></span>
+<span data-ttu-id="bb26b-111">Følg denne fremgangsmåten for å aktivere [Microsoft Accessibility Insights](https://accessibilityinsights.io/)-integrasjon for alle Commerce-områder i leieren.</span><span class="sxs-lookup"><span data-stu-id="bb26b-111">To turn on the [Microsoft Accessibility Insights](https://accessibilityinsights.io/) integration for all the Commerce sites in your tenant, follow these steps.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="dc3e4-112">For å få tilgang til leierinnstillinger må du være logget på Commerce som systemadministrator.</span><span class="sxs-lookup"><span data-stu-id="dc3e4-112">To access tenant settings, you must be signed in to Commerce as a system admin.</span></span>
+> <span data-ttu-id="bb26b-112">For å få tilgang til leierinnstillinger må du være logget på Commerce som systemadministrator.</span><span class="sxs-lookup"><span data-stu-id="bb26b-112">To access tenant settings, you must be signed in to Commerce as a system admin.</span></span>
 
-1. <span data-ttu-id="dc3e4-113">Logg på Commerce som systemadministrator.</span><span class="sxs-lookup"><span data-stu-id="dc3e4-113">Sign in to Commerce as a system admin.</span></span>
-1. <span data-ttu-id="dc3e4-114">I den venstre navigasjonsruten velger **Leierinnstillinger** (ved siden av tannhjulsymbolet) for å utvide den.</span><span class="sxs-lookup"><span data-stu-id="dc3e4-114">In the left navigation pane, select **Tenant Settings** (next to the gear symbol) to expand it.</span></span>
-1. <span data-ttu-id="dc3e4-115">Velg **Funksjoner** under **Leierinnstillinger**.</span><span class="sxs-lookup"><span data-stu-id="dc3e4-115">Under **Tenant Settings**, select **Features**.</span></span>
-1. <span data-ttu-id="dc3e4-116">Sett alternativet **Tilgjengelighetskontroll** til **På**.</span><span class="sxs-lookup"><span data-stu-id="dc3e4-116">Set the **Accessibility Check** option to **On**.</span></span>
+1. <span data-ttu-id="bb26b-113">Logg på Commerce som systemadministrator.</span><span class="sxs-lookup"><span data-stu-id="bb26b-113">Sign in to Commerce as a system admin.</span></span>
+1. <span data-ttu-id="bb26b-114">I den venstre navigasjonsruten velger **Leierinnstillinger** (ved siden av tannhjulsymbolet) for å utvide den.</span><span class="sxs-lookup"><span data-stu-id="bb26b-114">In the left navigation pane, select **Tenant Settings** (next to the gear symbol) to expand it.</span></span>
+1. <span data-ttu-id="bb26b-115">Velg **Funksjoner** under **Leierinnstillinger**.</span><span class="sxs-lookup"><span data-stu-id="bb26b-115">Under **Tenant Settings**, select **Features**.</span></span>
+1. <span data-ttu-id="bb26b-116">Sett alternativet **Tilgjengelighetskontroll** til **På**.</span><span class="sxs-lookup"><span data-stu-id="bb26b-116">Set the **Accessibility Check** option to **On**.</span></span>
 
-## <a name="turn-on-microsoft-accessibility-insights-for-a-single-site"></a><span data-ttu-id="dc3e4-117">Aktivere Microsoft Accessibility Insights for et enkelt område</span><span class="sxs-lookup"><span data-stu-id="dc3e4-117">Turn on Microsoft Accessibility Insights for a single site</span></span>
+## <a name="turn-on-microsoft-accessibility-insights-for-a-single-site"></a><span data-ttu-id="bb26b-117">Aktivere Microsoft Accessibility Insights for et enkelt område</span><span class="sxs-lookup"><span data-stu-id="bb26b-117">Turn on Microsoft Accessibility Insights for a single site</span></span>
 
-<span data-ttu-id="dc3e4-118">Følg denne fremgangsmåten for å aktivere [Microsoft Accessibility Insights](https://accessibilityinsights.io/)-integrasjon for et enkelt Commerce-område.</span><span class="sxs-lookup"><span data-stu-id="dc3e4-118">To turn on the [Microsoft Accessibility Insights](https://accessibilityinsights.io/) integration for a single Commerce site, follow these steps.</span></span>
+<span data-ttu-id="bb26b-118">Følg denne fremgangsmåten for å aktivere [Microsoft Accessibility Insights](https://accessibilityinsights.io/)-integrasjon for et enkelt Commerce-område.</span><span class="sxs-lookup"><span data-stu-id="bb26b-118">To turn on the [Microsoft Accessibility Insights](https://accessibilityinsights.io/) integration for a single Commerce site, follow these steps.</span></span>
 
-1. <span data-ttu-id="dc3e4-119">Under **Områder** velger du **Fabrikam** (eller navnet på området).</span><span class="sxs-lookup"><span data-stu-id="dc3e4-119">Under **Sites**, select **Fabrikam** (or the name of your site).</span></span>
-1. <span data-ttu-id="dc3e4-120">Velg **Områdeinnstillinger** i navigasjonsruten til venstre for å utvide den.</span><span class="sxs-lookup"><span data-stu-id="dc3e4-120">In the left navigation pane, select **Site Settings** to expand it.</span></span>
-1. <span data-ttu-id="dc3e4-121">Velg **Funksjoner** under **Områdeinnstillinger**.</span><span class="sxs-lookup"><span data-stu-id="dc3e4-121">Under **Site Settings**, select **Features**.</span></span>
-1. <span data-ttu-id="dc3e4-122">Sett alternativet **Tilgjengelighetskontroll** til **På**.</span><span class="sxs-lookup"><span data-stu-id="dc3e4-122">Set the **Accessibility Check** option to **On**.</span></span>
+1. <span data-ttu-id="bb26b-119">Under **Områder** velger du **Fabrikam** (eller navnet på området).</span><span class="sxs-lookup"><span data-stu-id="bb26b-119">Under **Sites**, select **Fabrikam** (or the name of your site).</span></span>
+1. <span data-ttu-id="bb26b-120">Velg **Områdeinnstillinger** i navigasjonsruten til venstre for å utvide den.</span><span class="sxs-lookup"><span data-stu-id="bb26b-120">In the left navigation pane, select **Site Settings** to expand it.</span></span>
+1. <span data-ttu-id="bb26b-121">Velg **Funksjoner** under **Områdeinnstillinger**.</span><span class="sxs-lookup"><span data-stu-id="bb26b-121">Under **Site Settings**, select **Features**.</span></span>
+1. <span data-ttu-id="bb26b-122">Sett alternativet **Tilgjengelighetskontroll** til **På**.</span><span class="sxs-lookup"><span data-stu-id="bb26b-122">Set the **Accessibility Check** option to **On**.</span></span>
 
-## <a name="verify-the-accessibility-of-the-content-on-the-home-page"></a><span data-ttu-id="dc3e4-123">Kontrollere tilgjengeligheten til innholdet på startsiden</span><span class="sxs-lookup"><span data-stu-id="dc3e4-123">Verify the accessibility of the content on the home page</span></span>
+## <a name="verify-the-accessibility-of-the-content-on-the-home-page"></a><span data-ttu-id="bb26b-123">Kontrollere tilgjengeligheten til innholdet på startsiden</span><span class="sxs-lookup"><span data-stu-id="bb26b-123">Verify the accessibility of the content on the home page</span></span>
 
-<span data-ttu-id="dc3e4-124">Hvis du vil bruke den integrerte [Microsoft Accessibility Insights](https://accessibilityinsights.io/)-tjenesten til å skanne og kontrollere innholdet på startsiden i Commerce, følger du denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="dc3e4-124">To use the integrated [Microsoft Accessibility Insights](https://accessibilityinsights.io/) service to scan and verify the content of your home page in Commerce, follow these steps.</span></span>
+<span data-ttu-id="bb26b-124">Hvis du vil bruke den integrerte [Microsoft Accessibility Insights](https://accessibilityinsights.io/)-tjenesten til å skanne og kontrollere innholdet på startsiden i Commerce, følger du denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="bb26b-124">To use the integrated [Microsoft Accessibility Insights](https://accessibilityinsights.io/) service to scan and verify the content of your home page in Commerce, follow these steps.</span></span>
 
-1. <span data-ttu-id="dc3e4-125">Under **Områder** velger du **Fabrikam** (eller navnet på området).</span><span class="sxs-lookup"><span data-stu-id="dc3e4-125">Under **Sites**, select **Fabrikam** (or the name of your site).</span></span>
-1. <span data-ttu-id="dc3e4-126">Velg **Sider** i navigasjonsruten til venstre.</span><span class="sxs-lookup"><span data-stu-id="dc3e4-126">In the left navigation pane, select **Pages**.</span></span>
-1. <span data-ttu-id="dc3e4-127">Finn og velg startsside for å åpne den i sideredigeringsprogrammet.</span><span class="sxs-lookup"><span data-stu-id="dc3e4-127">Find and select the home page to open it in the page editor.</span></span>
-1. <span data-ttu-id="dc3e4-128">På kommandolinjen velger du **Kontroller tilgjengelighet**.</span><span class="sxs-lookup"><span data-stu-id="dc3e4-128">On the command bar, select **Check accessibility**.</span></span> <span data-ttu-id="dc3e4-129">Siden **Kontroller tilgjengelighet** vises.</span><span class="sxs-lookup"><span data-stu-id="dc3e4-129">The **Check Accessibility** page appears.</span></span>
-1. <span data-ttu-id="dc3e4-130">Når skanningen er fullført, kan du se gjennom innholdet i rapporten.</span><span class="sxs-lookup"><span data-stu-id="dc3e4-130">After the scan is completed, review the contents of the report.</span></span>
-1. <span data-ttu-id="dc3e4-131">Hvis noen av kontrollene mislyktes, velger du hvert mislykket kontrollelement for å utvide det slik at du kan vise flere detaljer.</span><span class="sxs-lookup"><span data-stu-id="dc3e4-131">If any checks failed, select each failed check item to expand it so that you can view more details.</span></span>
-1. <span data-ttu-id="dc3e4-132">Hvis du vil lukke rapporten etter at du er ferdig med å se gjennom den, blar du til bunnan av siden **Kontroller tilgjengelighet** og velger **OK**.</span><span class="sxs-lookup"><span data-stu-id="dc3e4-132">To close the report after you've finished reviewing it, scroll to the bottom of the **Check Accessibility** page, and select **OK**.</span></span>
+1. <span data-ttu-id="bb26b-125">Under **Områder** velger du **Fabrikam** (eller navnet på området).</span><span class="sxs-lookup"><span data-stu-id="bb26b-125">Under **Sites**, select **Fabrikam** (or the name of your site).</span></span>
+1. <span data-ttu-id="bb26b-126">Velg **Sider** i navigasjonsruten til venstre.</span><span class="sxs-lookup"><span data-stu-id="bb26b-126">In the left navigation pane, select **Pages**.</span></span>
+1. <span data-ttu-id="bb26b-127">Finn og velg startsside for å åpne den i sideredigeringsprogrammet.</span><span class="sxs-lookup"><span data-stu-id="bb26b-127">Find and select the home page to open it in the page editor.</span></span>
+1. <span data-ttu-id="bb26b-128">På kommandolinjen velger du **Kontroller tilgjengelighet**.</span><span class="sxs-lookup"><span data-stu-id="bb26b-128">On the command bar, select **Check accessibility**.</span></span> <span data-ttu-id="bb26b-129">Siden **Kontroller tilgjengelighet** vises.</span><span class="sxs-lookup"><span data-stu-id="bb26b-129">The **Check Accessibility** page appears.</span></span>
+1. <span data-ttu-id="bb26b-130">Når skanningen er fullført, kan du se gjennom innholdet i rapporten.</span><span class="sxs-lookup"><span data-stu-id="bb26b-130">After the scan is completed, review the contents of the report.</span></span>
+1. <span data-ttu-id="bb26b-131">Hvis noen av kontrollene mislyktes, velger du hvert mislykket kontrollelement for å utvide det slik at du kan vise flere detaljer.</span><span class="sxs-lookup"><span data-stu-id="bb26b-131">If any checks failed, select each failed check item to expand it so that you can view more details.</span></span>
+1. <span data-ttu-id="bb26b-132">Hvis du vil lukke rapporten etter at du er ferdig med å se gjennom den, blar du til bunnan av siden **Kontroller tilgjengelighet** og velger **OK**.</span><span class="sxs-lookup"><span data-stu-id="bb26b-132">To close the report after you've finished reviewing it, scroll to the bottom of the **Check Accessibility** page, and select **OK**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="dc3e4-133">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="dc3e4-133">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="bb26b-133">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="bb26b-133">Additional resources</span></span>
 
-[<span data-ttu-id="dc3e4-134">Endre en eksisterende områdeside</span><span class="sxs-lookup"><span data-stu-id="dc3e4-134">Modify an existing site page</span></span>](modify-existing-page.md)
+[<span data-ttu-id="bb26b-134">Endre en eksisterende områdeside</span><span class="sxs-lookup"><span data-stu-id="bb26b-134">Modify an existing site page</span></span>](modify-existing-page.md)
 
-[<span data-ttu-id="dc3e4-135">Legg til en ny områdeside</span><span class="sxs-lookup"><span data-stu-id="dc3e4-135">Add a new site page</span></span>](add-new-page.md)
+[<span data-ttu-id="bb26b-135">Legg til en ny områdeside</span><span class="sxs-lookup"><span data-stu-id="bb26b-135">Add a new site page</span></span>](add-new-page.md)
 
-[<span data-ttu-id="dc3e4-136">Velge sideoppsett</span><span class="sxs-lookup"><span data-stu-id="dc3e4-136">Select page layouts</span></span>](select-page-layouts.md)
+[<span data-ttu-id="bb26b-136">Velge sideoppsett</span><span class="sxs-lookup"><span data-stu-id="bb26b-136">Select page layouts</span></span>](select-page-layouts.md)
 
-[<span data-ttu-id="dc3e4-137">Behandle metadata for søkemotor</span><span class="sxs-lookup"><span data-stu-id="dc3e4-137">Manage SEO metadata</span></span>](manage-seo-metadata.md)
+[<span data-ttu-id="bb26b-137">Behandle metadata for søkemotor</span><span class="sxs-lookup"><span data-stu-id="bb26b-137">Manage SEO metadata</span></span>](manage-seo-metadata.md)
 
-[<span data-ttu-id="dc3e4-138">Lagre, forhåndsvise og publisere en side</span><span class="sxs-lookup"><span data-stu-id="dc3e4-138">Save, preview, and publish a page</span></span>](save-preview-publish-page.md)
+[<span data-ttu-id="bb26b-138">Lagre, forhåndsvise og publisere en side</span><span class="sxs-lookup"><span data-stu-id="bb26b-138">Save, preview, and publish a page</span></span>](save-preview-publish-page.md)
 
-[<span data-ttu-id="dc3e4-139">Supplere en produktside</span><span class="sxs-lookup"><span data-stu-id="dc3e4-139">Enrich a product page</span></span>](enrich-product-page.md)
+[<span data-ttu-id="bb26b-139">Supplere en produktside</span><span class="sxs-lookup"><span data-stu-id="bb26b-139">Enrich a product page</span></span>](enrich-product-page.md)
 
-[<span data-ttu-id="dc3e4-140">Supplere en kategorimålside</span><span class="sxs-lookup"><span data-stu-id="dc3e4-140">Enrich a category landing page</span></span>](enrich-category-page.md)
+[<span data-ttu-id="bb26b-140">Supplere en kategorimålside</span><span class="sxs-lookup"><span data-stu-id="bb26b-140">Enrich a category landing page</span></span>](enrich-category-page.md)
+
+[<span data-ttu-id="bb26b-141">Opprette dynamiske e-handelssider basert på URL-parametere</span><span class="sxs-lookup"><span data-stu-id="bb26b-141">Create dynamic e-commerce pages based on URL parameters</span></span>](create-dynamic-pages.md)
