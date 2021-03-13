@@ -2,7 +2,7 @@
 title: Opprett en ny fordel
 description: Denne oppgaven viser hvordan du oppretter fordelselementer som skal brukes når du oppretter en ny fordel.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: business-process
 ms.prod: ''
@@ -11,45 +11,45 @@ ms.technology: ''
 ms.search.form: HcmBenefitElementSetup, HcmBenefit, HcmBenefitNewBenefit, HcmBenefitPlanLookup, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: f9618e62e33655bfc1a0653cb767abe0094d1e79
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2c64bd4eddab0de9db457c6d8d4464303917c438
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419851"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113674"
 ---
-# <a name="create-a-new-benefit"></a><span data-ttu-id="492e5-103">Opprett en ny fordel</span><span class="sxs-lookup"><span data-stu-id="492e5-103">Create a new benefit</span></span>
+# <a name="create-a-new-benefit"></a><span data-ttu-id="aa63c-103">Opprett en ny fordel</span><span class="sxs-lookup"><span data-stu-id="aa63c-103">Create a new benefit</span></span>
 
-<span data-ttu-id="492e5-104">Denne oppgaven viser hvordan du oppretter fordelselementer som skal brukes når du oppretter en ny fordel.</span><span class="sxs-lookup"><span data-stu-id="492e5-104">This task will show you how to create benefit elements which will be used when creating a new benefit.</span></span> <span data-ttu-id="492e5-105">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne oppgaven.</span><span class="sxs-lookup"><span data-stu-id="492e5-105">The demo data company used to create this task is USMF.</span></span> <span data-ttu-id="492e5-106">Denne oppgaven er ment for en kompensasjons- og fordelsansvarlig.</span><span class="sxs-lookup"><span data-stu-id="492e5-106">This task is intended for a Compensation and Benefits manager.</span></span>
+<span data-ttu-id="aa63c-104">Denne oppgaven viser hvordan du oppretter fordelselementer som skal brukes når du oppretter en ny fordel.</span><span class="sxs-lookup"><span data-stu-id="aa63c-104">This task will show you how to create benefit elements which will be used when creating a new benefit.</span></span> <span data-ttu-id="aa63c-105">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne oppgaven.</span><span class="sxs-lookup"><span data-stu-id="aa63c-105">The demo data company used to create this task is USMF.</span></span> <span data-ttu-id="aa63c-106">Denne oppgaven er ment for en kompensasjons- og fordelsansvarlig.</span><span class="sxs-lookup"><span data-stu-id="aa63c-106">This task is intended for a Compensation and Benefits manager.</span></span>
 
 
-## <a name="create-benefit-elements"></a><span data-ttu-id="492e5-107">Opprette fordelselementer</span><span class="sxs-lookup"><span data-stu-id="492e5-107">Create benefit elements</span></span>
-1. <span data-ttu-id="492e5-108">Gå til Personale > Fordeler > Oppsett > Fordelselementer.</span><span class="sxs-lookup"><span data-stu-id="492e5-108">Go to Human resources > Benefits > Setup > Benefit elements.</span></span>
-2. <span data-ttu-id="492e5-109">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="492e5-109">Click New.</span></span>
-3. <span data-ttu-id="492e5-110">Skriv inn navnet på typen fordel du oppretter, i Type-feltet.</span><span class="sxs-lookup"><span data-stu-id="492e5-110">In the Type field, Enter the name of the type of benefit you are creating..</span></span>
-4. <span data-ttu-id="492e5-111">Skriv inn en verdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="492e5-111">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="492e5-112">Velg et alternativ i feltet Samtidig registrering.</span><span class="sxs-lookup"><span data-stu-id="492e5-112">In the Concurrent enrollment field, select an option.</span></span>
-    * <span data-ttu-id="492e5-113">Hvis du vil begrense ansatte mulighet til å registrere seg i flere medisinske planer, velger du én registrering per type.</span><span class="sxs-lookup"><span data-stu-id="492e5-113">To restrict employees' ability to enroll in multiple medical plans, select One enrollment per type.</span></span>  
-6. <span data-ttu-id="492e5-114">Velg et alternativ i Lønnskategori-feltet.</span><span class="sxs-lookup"><span data-stu-id="492e5-114">In the Payroll category field, select an option.</span></span>
-7. <span data-ttu-id="492e5-115">Klikk kategorien Planer.</span><span class="sxs-lookup"><span data-stu-id="492e5-115">Click the Plans tab.</span></span>
-8. <span data-ttu-id="492e5-116">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="492e5-116">Click New.</span></span>
-9. <span data-ttu-id="492e5-117">Skriv inn en verdi i Plan-feltet.</span><span class="sxs-lookup"><span data-stu-id="492e5-117">In the Plan field, type a value.</span></span>
-10. <span data-ttu-id="492e5-118">Skriv inn en verdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="492e5-118">In the Description field, type a value.</span></span>
-11. <span data-ttu-id="492e5-119">Angi eller velg en verdi i Type-feltet.</span><span class="sxs-lookup"><span data-stu-id="492e5-119">In the Type field, enter or select a value.</span></span>
-12. <span data-ttu-id="492e5-120">Velg et alternativ i Lønnsinnvirkning-feltet.</span><span class="sxs-lookup"><span data-stu-id="492e5-120">In the Payroll impact field, select an option.</span></span>
-13. <span data-ttu-id="492e5-121">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="492e5-121">Click Save.</span></span>
+## <a name="create-benefit-elements"></a><span data-ttu-id="aa63c-107">Opprette fordelselementer</span><span class="sxs-lookup"><span data-stu-id="aa63c-107">Create benefit elements</span></span>
+1. <span data-ttu-id="aa63c-108">Gå til Personale > Fordeler > Oppsett > Fordelselementer.</span><span class="sxs-lookup"><span data-stu-id="aa63c-108">Go to Human resources > Benefits > Setup > Benefit elements.</span></span>
+2. <span data-ttu-id="aa63c-109">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="aa63c-109">Click New.</span></span>
+3. <span data-ttu-id="aa63c-110">Skriv inn navnet på typen fordel du oppretter, i Type-feltet.</span><span class="sxs-lookup"><span data-stu-id="aa63c-110">In the Type field, Enter the name of the type of benefit you are creating..</span></span>
+4. <span data-ttu-id="aa63c-111">Skriv inn en verdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="aa63c-111">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="aa63c-112">Velg et alternativ i feltet Samtidig registrering.</span><span class="sxs-lookup"><span data-stu-id="aa63c-112">In the Concurrent enrollment field, select an option.</span></span>
+    * <span data-ttu-id="aa63c-113">Hvis du vil begrense ansatte mulighet til å registrere seg i flere medisinske planer, velger du én registrering per type.</span><span class="sxs-lookup"><span data-stu-id="aa63c-113">To restrict employees' ability to enroll in multiple medical plans, select One enrollment per type.</span></span>  
+6. <span data-ttu-id="aa63c-114">Velg et alternativ i Lønnskategori-feltet.</span><span class="sxs-lookup"><span data-stu-id="aa63c-114">In the Payroll category field, select an option.</span></span>
+7. <span data-ttu-id="aa63c-115">Klikk kategorien Planer.</span><span class="sxs-lookup"><span data-stu-id="aa63c-115">Click the Plans tab.</span></span>
+8. <span data-ttu-id="aa63c-116">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="aa63c-116">Click New.</span></span>
+9. <span data-ttu-id="aa63c-117">Skriv inn en verdi i Plan-feltet.</span><span class="sxs-lookup"><span data-stu-id="aa63c-117">In the Plan field, type a value.</span></span>
+10. <span data-ttu-id="aa63c-118">Skriv inn en verdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="aa63c-118">In the Description field, type a value.</span></span>
+11. <span data-ttu-id="aa63c-119">Angi eller velg en verdi i Type-feltet.</span><span class="sxs-lookup"><span data-stu-id="aa63c-119">In the Type field, enter or select a value.</span></span>
+12. <span data-ttu-id="aa63c-120">Velg et alternativ i Lønnsinnvirkning-feltet.</span><span class="sxs-lookup"><span data-stu-id="aa63c-120">In the Payroll impact field, select an option.</span></span>
+13. <span data-ttu-id="aa63c-121">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="aa63c-121">Click Save.</span></span>
 
-## <a name="create-a-benefit"></a><span data-ttu-id="492e5-122">Opprett en fordel</span><span class="sxs-lookup"><span data-stu-id="492e5-122">Create a benefit</span></span>
-1. <span data-ttu-id="492e5-123">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="492e5-123">Close the page.</span></span>
-2. <span data-ttu-id="492e5-124">Gå til Personale > Fordeler > Fordeler.</span><span class="sxs-lookup"><span data-stu-id="492e5-124">Go to Human resources > Benefits > Benefits.</span></span>
-3. <span data-ttu-id="492e5-125">Klikk Ny for å åpne nedtrekksdialogen.</span><span class="sxs-lookup"><span data-stu-id="492e5-125">Click New to open the drop dialog.</span></span>
-4. <span data-ttu-id="492e5-126">Angi eller velg en verdi i Plan-feltet.</span><span class="sxs-lookup"><span data-stu-id="492e5-126">In the Plan field, enter or select a value.</span></span>
-5. <span data-ttu-id="492e5-127">Angi eller velg en verdi i feltet Alternativ.</span><span class="sxs-lookup"><span data-stu-id="492e5-127">In the Option field, enter or select a value.</span></span>
-6. <span data-ttu-id="492e5-128">Angi dato og klokkeslett i Gyldig-feltet.</span><span class="sxs-lookup"><span data-stu-id="492e5-128">In the Effective field, enter a date and time.</span></span>
-7. <span data-ttu-id="492e5-129">Klikk Opprett fordel.</span><span class="sxs-lookup"><span data-stu-id="492e5-129">Click Create benefit.</span></span>
+## <a name="create-a-benefit"></a><span data-ttu-id="aa63c-122">Opprett en fordel</span><span class="sxs-lookup"><span data-stu-id="aa63c-122">Create a benefit</span></span>
+1. <span data-ttu-id="aa63c-123">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="aa63c-123">Close the page.</span></span>
+2. <span data-ttu-id="aa63c-124">Gå til Personale > Fordeler > Fordeler.</span><span class="sxs-lookup"><span data-stu-id="aa63c-124">Go to Human resources > Benefits > Benefits.</span></span>
+3. <span data-ttu-id="aa63c-125">Klikk Ny for å åpne nedtrekksdialogen.</span><span class="sxs-lookup"><span data-stu-id="aa63c-125">Click New to open the drop dialog.</span></span>
+4. <span data-ttu-id="aa63c-126">Angi eller velg en verdi i Plan-feltet.</span><span class="sxs-lookup"><span data-stu-id="aa63c-126">In the Plan field, enter or select a value.</span></span>
+5. <span data-ttu-id="aa63c-127">Angi eller velg en verdi i feltet Alternativ.</span><span class="sxs-lookup"><span data-stu-id="aa63c-127">In the Option field, enter or select a value.</span></span>
+6. <span data-ttu-id="aa63c-128">Angi dato og klokkeslett i Gyldig-feltet.</span><span class="sxs-lookup"><span data-stu-id="aa63c-128">In the Effective field, enter a date and time.</span></span>
+7. <span data-ttu-id="aa63c-129">Klikk Opprett fordel.</span><span class="sxs-lookup"><span data-stu-id="aa63c-129">Click Create benefit.</span></span>
 

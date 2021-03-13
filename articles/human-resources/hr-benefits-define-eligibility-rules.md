@@ -2,7 +2,7 @@
 title: Definere rettighetsregler og policyer for fordel
 description: Denne artikkelen viser deg hvordan du kan opprette rettighetsregler og policyer for fordel og deretter tilordne regler til fordeler.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: business-process
 ms.prod: ''
@@ -11,61 +11,59 @@ ms.technology: ''
 ms.search.form: SysPolicySourceDocumentRuleType, SysPolicyListPage, SysPolicy, HcmBenefitEligibilityPolicy, HcmBenefit, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: f46437fef342ab1a4e368063d8b74205ca8e8c05
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cc80549eaffa72a22dec51829c86d04a763de96a
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419886"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113673"
 ---
-# <a name="define-benefit-eligibility-rules-and-policies"></a><span data-ttu-id="79dd8-103">Definere rettighetsregler og policyer for fordel</span><span class="sxs-lookup"><span data-stu-id="79dd8-103">Define benefit eligibility rules and policies</span></span>
+# <a name="define-benefit-eligibility-rules-and-policies"></a><span data-ttu-id="32def-103">Definere rettighetsregler og policyer for fordel</span><span class="sxs-lookup"><span data-stu-id="32def-103">Define benefit eligibility rules and policies</span></span>
 
-<span data-ttu-id="79dd8-104">Denne artikkelen viser deg hvordan du kan opprette rettighetsregler og policyer for fordel og deretter tilordne regler til fordeler.</span><span class="sxs-lookup"><span data-stu-id="79dd8-104">This article shows you how you can create benefit eligibility rules and policies and then assign rules to Benefits.</span></span>  
+<span data-ttu-id="32def-104">Dette emnet viser hvordan du kan opprette rettighetsregler og policyer for fordeler og deretter tilordne regler til fordeler.</span><span class="sxs-lookup"><span data-stu-id="32def-104">This topic shows you how you can create benefit eligibility rules and policies and then assign rules to benefits.</span></span>  
 
-<span data-ttu-id="79dd8-105">Demonstrasjonsdatafirmaet USMF brukes til å opprette dette opptaket.</span><span class="sxs-lookup"><span data-stu-id="79dd8-105">The demo data company used to create this recording is USMF.</span></span>
+## <a name="create-benefit-eligibility-policy-rule-type"></a><span data-ttu-id="32def-105">Opprette policyregeltype for fordelsrettigheter</span><span class="sxs-lookup"><span data-stu-id="32def-105">Create benefit eligibility policy rule type</span></span>
 
+1. <span data-ttu-id="32def-106">Gå til **Human resources > Fordeler > Rettighet > Policyregeltyper for fordelsrettigheter**.</span><span class="sxs-lookup"><span data-stu-id="32def-106">Go to **Human resources > Benefits > Eligibility > Benefit eligibility policy rule types**.</span></span>
+2. <span data-ttu-id="32def-107">Velg **Ny**.</span><span class="sxs-lookup"><span data-stu-id="32def-107">Select **New**.</span></span>
+3. <span data-ttu-id="32def-108">Angi en verdi i feltet **Regelnavn**.</span><span class="sxs-lookup"><span data-stu-id="32def-108">In the **Rule name** field, enter a value.</span></span>
+4. <span data-ttu-id="32def-109">Angi en verdi i feltet **Beskrivelse**.</span><span class="sxs-lookup"><span data-stu-id="32def-109">In the **Description** field, enter a value.</span></span>
+5. <span data-ttu-id="32def-110">I feltet **Spørringsnavn** velger du rullegardinknappen for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="32def-110">In the **Query name** field, select the drop-down button to open the lookup.</span></span>
+6. <span data-ttu-id="32def-111">Velg koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="32def-111">In the list, select the link in the selected row.</span></span>
+7. <span data-ttu-id="32def-112">Velg **Lagre**.</span><span class="sxs-lookup"><span data-stu-id="32def-112">Select **Save**.</span></span>
+8. <span data-ttu-id="32def-113">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="32def-113">Close the page.</span></span>
 
-## <a name="create-benefit-eligibility-policy-rule-type"></a><span data-ttu-id="79dd8-106">Opprette policyregeltype for fordelsrettigheter</span><span class="sxs-lookup"><span data-stu-id="79dd8-106">Create benefit eligibility policy rule type</span></span>
-1. <span data-ttu-id="79dd8-107">Gå til Personale > Fordeler > Rettighet > Policyregeltyper for fordelsrettigheter.</span><span class="sxs-lookup"><span data-stu-id="79dd8-107">Go to Human resources > Benefits > Eligibility > Benefit eligibility policy rule types.</span></span>
-2. <span data-ttu-id="79dd8-108">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="79dd8-108">Click New.</span></span>
-3. <span data-ttu-id="79dd8-109">Skriv inn en verdi i feltet Regelnavn.</span><span class="sxs-lookup"><span data-stu-id="79dd8-109">In the Rule name field, type a value.</span></span>
-4. <span data-ttu-id="79dd8-110">Skriv inn en verdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="79dd8-110">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="79dd8-111">Klikk rullegardinknappen i Spørringsnavn-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="79dd8-111">In the Query name field, click the drop-down button to open the lookup.</span></span>
-6. <span data-ttu-id="79dd8-112">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="79dd8-112">In the list, click the link in the selected row.</span></span>
-7. <span data-ttu-id="79dd8-113">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="79dd8-113">Click Save.</span></span>
-8. <span data-ttu-id="79dd8-114">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="79dd8-114">Close the page.</span></span>
+## <a name="benefit-eligibility-policy"></a><span data-ttu-id="32def-114">Policy for fordelsrettigheter</span><span class="sxs-lookup"><span data-stu-id="32def-114">Benefit eligibility policy</span></span>
 
-## <a name="benefit-eligibility-policy"></a><span data-ttu-id="79dd8-115">Policy for fordelsrettigheter</span><span class="sxs-lookup"><span data-stu-id="79dd8-115">Benefit eligibility policy</span></span>
-1. <span data-ttu-id="79dd8-116">Gå til Personale > Fordeler > Rettighet > Policyer for fordelsrettigheter.</span><span class="sxs-lookup"><span data-stu-id="79dd8-116">Go to Human resources > Benefits > Eligibility > Benefit eligibility policies.</span></span>
-2. <span data-ttu-id="79dd8-117">Velg en eksisterende fordelspolicy.</span><span class="sxs-lookup"><span data-stu-id="79dd8-117">Select an existing benefit policy.</span></span>
-3. <span data-ttu-id="79dd8-118">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="79dd8-118">In the list, click the link in the selected row.</span></span>
-4. <span data-ttu-id="79dd8-119">Aktiver/deaktiver utvidelsen av delen Policyorganisasjoner.</span><span class="sxs-lookup"><span data-stu-id="79dd8-119">Toggle the expansion of the Policy organizations sections.</span></span>  <span data-ttu-id="79dd8-120">Her kan du legge til eller fjerne alle organisasjoner som du vil ta med i policyen.</span><span class="sxs-lookup"><span data-stu-id="79dd8-120">Here you can add or remove any organizations you want to include in the policy.</span></span>
-5. <span data-ttu-id="79dd8-121">Vis eller skjul delen Policyregler.</span><span class="sxs-lookup"><span data-stu-id="79dd8-121">Expand or collapse the Policy rules section.</span></span>
-6. <span data-ttu-id="79dd8-122">I listen finner du policyregelen som ble opprettet tidligere.</span><span class="sxs-lookup"><span data-stu-id="79dd8-122">In the list find the policy rule previously created.</span></span>
-7. <span data-ttu-id="79dd8-123">Klikk Opprett policyregel.</span><span class="sxs-lookup"><span data-stu-id="79dd8-123">Click Create policy rule.</span></span>
-8. <span data-ttu-id="79dd8-124">I feltet Gjelder fra angir du datoen du vil at policyen skal aktiveres.</span><span class="sxs-lookup"><span data-stu-id="79dd8-124">In the Effective date field, enter the date in which you want the policy to become effective.</span></span>
-    * <span data-ttu-id="79dd8-125">Ved å angi effektive datoer og sluttdatoer kan du endre fremtidige policyregler og fjerne behovet for å gå tilbake til policyen når du vil at endringene skal tre i kraft.</span><span class="sxs-lookup"><span data-stu-id="79dd8-125">Setting effective and end dates allows you to make future changes to policy rules and removing the need to come back to the policy when you want those changes to take effect.</span></span>  
-9. 
-    * <span data-ttu-id="79dd8-126">Hvis du for eksempel vil at regelen bare skal gjelde for salgssjefer, kan du opprette Where-uttrykket for å si: der stillingsbeskrivelsen er lik Salgssjef.</span><span class="sxs-lookup"><span data-stu-id="79dd8-126">For example if you wanted the rule to only apply to Sales Managers you could create the Where clause to say: Where position description equals Sales Manager.</span></span>  <span data-ttu-id="79dd8-127">Du kan bruke And eller Or og flere Where-uttrykk sammen i regelen.</span><span class="sxs-lookup"><span data-stu-id="79dd8-127">You can And or Or multiple Where statements together in the rule.</span></span>  
-10. <span data-ttu-id="79dd8-128">Klikk OK.</span><span class="sxs-lookup"><span data-stu-id="79dd8-128">Click OK.</span></span>
-11. <span data-ttu-id="79dd8-129">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="79dd8-129">Close the page.</span></span>
-12. <span data-ttu-id="79dd8-130">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="79dd8-130">Close the page.</span></span>
+1. <span data-ttu-id="32def-115">Gå til **Human resources > Fordeler > Rettighet > Policyer for fordelsrettigheter**.</span><span class="sxs-lookup"><span data-stu-id="32def-115">Go to **Human resources > Benefits > Eligibility > Benefit eligibility policies**.</span></span>
+2. <span data-ttu-id="32def-116">Velg en eksisterende fordelspolicy.</span><span class="sxs-lookup"><span data-stu-id="32def-116">Select an existing benefit policy.</span></span>
+3. <span data-ttu-id="32def-117">Velg koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="32def-117">In the list, select the link in the selected row.</span></span>
+4. <span data-ttu-id="32def-118">Aktiver/deaktiver utvidelsen av delen **Policyorganisasjoner**.</span><span class="sxs-lookup"><span data-stu-id="32def-118">Toggle the expansion of the **Policy organizations** sections.</span></span> <span data-ttu-id="32def-119">Du kan legge til eller fjerne alle organisasjoner som du vil ta med i policyen.</span><span class="sxs-lookup"><span data-stu-id="32def-119">You can add or remove any organizations you want to include in the policy.</span></span>
+5. <span data-ttu-id="32def-120">Vis eller skjul delen **Policyregler**.</span><span class="sxs-lookup"><span data-stu-id="32def-120">Expand or collapse the **Policy rules** section.</span></span>
+6. <span data-ttu-id="32def-121">I listen finner du policyregelen som ble opprettet tidligere.</span><span class="sxs-lookup"><span data-stu-id="32def-121">In the list, find the policy rule previously created.</span></span>
+7. <span data-ttu-id="32def-122">Velg **Opprett policyregel**.</span><span class="sxs-lookup"><span data-stu-id="32def-122">Select **Create policy rule**.</span></span>
+8. <span data-ttu-id="32def-123">I feltet **Gjelder fra** angir du datoen du vil at policyen skal aktiveres.</span><span class="sxs-lookup"><span data-stu-id="32def-123">In the **Effective date** field, enter the date in which you want the policy to become effective.</span></span>
+    * <span data-ttu-id="32def-124">Ved å angi effektive sluttdatoer kan du endre fremtidige policyregler, slik at du ikke må gå tilbake til policyen når du vil at endringene skal tre i kraft.</span><span class="sxs-lookup"><span data-stu-id="32def-124">Setting effective end dates allows you to make future changes to policy rules so you don't need to come back to the policy when you want those changes to take effect.</span></span>  
+9. <span data-ttu-id="32def-125">Om nødvendig legger du til et where-uttrykk i feltet **Legg til betingelse**.</span><span class="sxs-lookup"><span data-stu-id="32def-125">If needed, add a where clause to the **Add condition** field.</span></span>
+    * <span data-ttu-id="32def-126">Hvis du for eksempel vil at regelen bare skal gjelde for salgssjefer, kan du opprette Where-uttrykket for å si: der stillingsbeskrivelsen er lik Salgssjef.</span><span class="sxs-lookup"><span data-stu-id="32def-126">For example if you wanted the rule to only apply to Sales Managers you could create the where clause to say: Where position description equals Sales Manager.</span></span> <span data-ttu-id="32def-127">Du kan legge til flere where-uttrykk sammen i en regel.</span><span class="sxs-lookup"><span data-stu-id="32def-127">You can add multiple where statements together in the rule.</span></span>  
+10. <span data-ttu-id="32def-128">Velg **OK**.</span><span class="sxs-lookup"><span data-stu-id="32def-128">Select **OK**.</span></span>
+11. <span data-ttu-id="32def-129">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="32def-129">Close the page.</span></span>
 
-## <a name="assign-rule-to-benefit"></a><span data-ttu-id="79dd8-131">Tilordne regel til fordel</span><span class="sxs-lookup"><span data-stu-id="79dd8-131">Assign rule to benefit</span></span>
-1. <span data-ttu-id="79dd8-132">Gå til Personale > Fordeler > Fordeler.</span><span class="sxs-lookup"><span data-stu-id="79dd8-132">Go to Human resources > Benefits > Benefits.</span></span>
-2. <span data-ttu-id="79dd8-133">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="79dd8-133">In the list, find and select the desired record.</span></span>
-3. <span data-ttu-id="79dd8-134">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="79dd8-134">In the list, click the link in the selected row.</span></span>
-4. <span data-ttu-id="79dd8-135">Vis eller skjul delen Rettighetsregler.</span><span class="sxs-lookup"><span data-stu-id="79dd8-135">Expand or collapse the Eligibility rules section.</span></span>
-5. <span data-ttu-id="79dd8-136">Klikk Rediger.</span><span class="sxs-lookup"><span data-stu-id="79dd8-136">Click Edit.</span></span>
-6. <span data-ttu-id="79dd8-137">Velg Regelbasert fra listen i Rettighet-feltet.</span><span class="sxs-lookup"><span data-stu-id="79dd8-137">In the Eligibility field, select Rule based from the list.</span></span>
-7. <span data-ttu-id="79dd8-138">Klikk rullegardinknappen i Regeltype-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="79dd8-138">In the Rule type field, click the drop down button to open the lookup.</span></span>
-8. <span data-ttu-id="79dd8-139">I listen finner og velger du regelen som ble opprettet tidligere.</span><span class="sxs-lookup"><span data-stu-id="79dd8-139">In the list find and select the rule you previously created.</span></span>
-9. <span data-ttu-id="79dd8-140">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="79dd8-140">In the list, click the link in the selected row.</span></span>
-10. <span data-ttu-id="79dd8-141">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="79dd8-141">Click Save.</span></span>
-11. <span data-ttu-id="79dd8-142">Lukk skjemaet.</span><span class="sxs-lookup"><span data-stu-id="79dd8-142">Close the form.</span></span>
+## <a name="assign-rule-to-benefit"></a><span data-ttu-id="32def-130">Tilordne regel til fordel</span><span class="sxs-lookup"><span data-stu-id="32def-130">Assign rule to benefit</span></span>
+
+1. <span data-ttu-id="32def-131">Gå til **Human resources > Fordeler > Fordeler**.</span><span class="sxs-lookup"><span data-stu-id="32def-131">Go to **Human resources > Benefits > Benefits**.</span></span>
+2. <span data-ttu-id="32def-132">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="32def-132">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="32def-133">Velg koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="32def-133">In the list, select the link in the selected row.</span></span>
+4. <span data-ttu-id="32def-134">Vis eller skjul delen **Rettighetsregler**.</span><span class="sxs-lookup"><span data-stu-id="32def-134">Expand or collapse the **Eligibility rules** section.</span></span>
+5. <span data-ttu-id="32def-135">Velg **Rediger**.</span><span class="sxs-lookup"><span data-stu-id="32def-135">Select **Edit**.</span></span>
+6. <span data-ttu-id="32def-136">Velg regelen i **Rettighet**-feltet.</span><span class="sxs-lookup"><span data-stu-id="32def-136">In the **Eligibility** field, select the rule.</span></span>
+7. <span data-ttu-id="32def-137">I feltet **Regeltype** velger du regelen som ble opprettet tidligere.</span><span class="sxs-lookup"><span data-stu-id="32def-137">In the **Rule type** field, select the rule you previously created.</span></span>
+9. <span data-ttu-id="32def-138">Velg koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="32def-138">In the list, select the link in the selected row.</span></span>
+10. <span data-ttu-id="32def-139">Velg **Lagre**.</span><span class="sxs-lookup"><span data-stu-id="32def-139">Select **Save**.</span></span>
+11. <span data-ttu-id="32def-140">Lukk skjemaet.</span><span class="sxs-lookup"><span data-stu-id="32def-140">Close the form.</span></span>
 
