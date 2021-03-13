@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: LedgerConsolidate
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 13151
 ms.assetid: 9d8f55cb-b2cf-4e01-89cf-0e21f5c8ae1f
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 566b1ecef3f9e540c651fe214accadcf32f4fbed
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ee029e6cf1f271c5839e8d0dc1b1e4b7f91fb9a2
+ms.sourcegitcommit: f51ef395f0c0cb2203ce26b4091bbf0296e7916e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446516"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "5120485"
 ---
 # <a name="consolidation-and-elimination-overview"></a>Konsoliderings- og elimineringsoversikt
 
@@ -60,6 +59,7 @@ Alternativet **Finansrapportering** har ubegrenset antall rapporteringsvalutaer.
 Alternativet **Finansrapportering** er løsning fordi detaljer på transaksjonsnivå kan vises for så mange firmaer som er inkludert i rapporteringstredefinisjonen.
 
 4.  Vi bruker budsjettplanlegging eller budsjettkontroll, og de må konsolideres.
+
 Alternativet **Finansrapportering** er løsningen for å konsolidere budsjettplanlegging eller budsjettkontrolldata.
 
 5.  Våre datterselskaper er spredt over hele verden, og vi har flere kontoplaner. Hva er den beste metoden for konsolidering av dataene våre?
@@ -86,10 +86,10 @@ Alternativet **Finansrapportering** er løsningen. Organisasjonshierarkier som h
 
 Du kan konsolidere dataene ved å bruke alternativet **Eksport av firmasaldoer** til å eksportere fra én forekomst og deretter bruke alternativet **Konsolider med import** på den andre forekomsten.
 
+11. Kan jeg gjøre en konsolidering når budsjettet har **UTKAST**-status? 
+            
+Du kan ikke behandle eller fullføre budsjettene i konsolideringsfirmaet. Vi anbefaler at du bruker Financial Reporting til å konsolidere utkastbudsjetter.
 
 Hvis du vil ha mer informasjon, se [Revaluering av valuta i et konsolideringsfirma](../general-ledger/currency-revaluation-consolidation-company.md).
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

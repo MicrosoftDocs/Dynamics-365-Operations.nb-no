@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: EcoResProductDimension, EcoResProductDimensionGroup, EcoResProductMasterDimension, RetailEcoResColor, RetailEcoResSize, RetailEcoResStyle, EcoResVersionNameLookup, RetailStyleGroupTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations, Retail
 ms.custom: 19171
 ms.assetid: 81fa3709-4ab8-4fbf-9806-359892a05985
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Retail
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: bdfd9482d30bd65cf84fae032df78e1243e05239
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 285e9d2d184a899f1ffa502d59a853ba83cda491
+ms.sourcegitcommit: 2093c9dc31d1b60b3114085d9cef48fdbbb0ca0d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434181"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5118687"
 ---
 # <a name="product-dimensions"></a>Produktdimensjoner
 
@@ -56,7 +55,7 @@ Produktdimensjoner kan også opprettes og vedlikeholdes på **Produktdimensjoner
 
 - Gå til **Behandling av produktinformasjon \> Produkter \> Produktstandarder**. I handlingsruten velger du **Produktdimensjoner**.
 - Gå til **Behandling av produktinformasjon \> Produkter \> Alle produkter og produktstandarder**. Velg en produktstandard. I handlingsruten velger du **Produktdimensjoner**.
-- Gå til **Behandling av produktinformasjon \> Frigitte produkter**. Velg en produktstandard. I handlingsruten, i **Produkt**-kategorien og **Produktstandard**-gruppen, velger du **Produktdimensjoner**.
+- Gå til **Behandling av produktinformasjon \> Frigitte produkter**. Velg en produktstandard. I handlingsruten, i **Produkt**-fanen og **Produktstandard**-gruppen, velger du **Produktdimensjoner**.
 
 Antallet varianter du kan opprette for en vare, er begrenset av antallet mulige kombinasjoner av produktdimensjoner.
 
@@ -122,7 +121,7 @@ Før du kan bruke versjonsdimensjonen, må den være aktivert i systemet. Denne 
 
 ### <a name="areas-where-the-version-dimension-isnt-supported"></a>Områder der versjonsdimensjonen ikke støttes
 
-Følgende områder støtter ikke versjonsdimensjonen, fordi innføringen av denne dimensjonen vil forårsake brudd på endringer:
+Følgende områder støtter ikke versjonsdimensjonen (du kan likevel bruke disse områdene, men du kan ikke legge til versjonsbaserte produkter (produkter der versjonsdimensjonen brukes) i dem). Du kan for eksempel ikke legge til en versjonsbasert vare i en leverandørkatalog. Årsaken er at hvis du legger til produkter med versjonsdimensjonen i disse områdene, kan det føre til oppdelingsendringer.
 
 - Månedlig rapport for kostobjekt
 - Oppgavebuffer for kostnadsobjekt
@@ -146,6 +145,3 @@ Versjonsdimensjonen fungerer på samme måte som de andre produktdimensjonene. P
 
 > [!IMPORTANT]
 > Hvis du aktiverer og bruker versjonsdimensjonen, kan det hende at noen løsninger som refererer til beholdningsdimensjonene, slutter å fungere som forventet. Du kan bekrefte og løse disse problemene ved å kontakte den uavhengige programvareleverandøren for de berørte løsningene. Hvis du vil ha mer informasjon, kan du se [Aktivere versjonsdimensjonen](#enable-version-dim).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
