@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: KanbanRules, LeanProductionFlowActivityLookup, InventItemIdLookupSimple, UnitOfMeasureLookup, KanbanCreate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 963a6dce8affc23f001dcb04219821ceff3a2d92
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1694472e20c28a0b0f94c1ced8544b7258c22b40
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434117"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007097"
 ---
 # <a name="create-a-withdrawal-kanban-rule"></a>Opprette en Kanban-regel for uttak
 
@@ -33,7 +32,7 @@ Denne fremgangsmåten viser oppsettet som kreves for å opprette en kanban-regel
 
 ## <a name="create-new-kanban-rule"></a>Opprette ny Kanban-regel
 1. Gå til Kanban-regler.
-2. Klikk Ny.
+2. Klikk på Ny.
 3. Velg Uttak i Type-feltet.
     * Typen Uttak brukes for kanban-regler for å overføre materialer eller varer.  
 4. Angi eller velg en verdi i feltet Første planaktivitet.
@@ -56,14 +55,11 @@ Denne fremgangsmåten viser oppsettet som kreves for å opprette en kanban-regel
     * Brukes til å holde oversikt over maksimumsbeløpet for alle Kanbaner som skal være på målet. Dette brukes for eksempel brukes i oversikten over kanban-antall.  
 
 ## <a name="create-kanbans"></a>Opprett Kanbaner
-1. Klikk Lagre.
+1. Klikk på Lagre.
     * Kanban-regelen må lagres før du kan opprette Kanbaner.  
-2. Klikk Legg til.
+2. Klikk på Legg til.
     * Legg merke til at det ikke finnes noen aktive Kanbaner fordi foreslått antall nye Kanban er 2, og dette er lik Fast Kanban-antall.  
-3. Klikk Opprett.
+3. Klikk på Opprett.
     * Dette vil opprette to Kanbaner.  
     * Legg merke til at 2 Kanbaner, for 5 hver, ble opprettet for denne kanban-regelen for uttak.  Dette er det siste trinnet i prosedyren.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

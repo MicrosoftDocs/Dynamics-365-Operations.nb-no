@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: KanbanBoardTransferJob
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 19391
 ms.assetid: a426f645-d59b-4c98-8d78-eba8d64a562e
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1bd6f1bdd847f74cee7d3594d19b72454063c0cb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: aedfe7ef96d62401b1d0de0f2cd035036c68e51a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434635"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007072"
 ---
 # <a name="kanban-transfer-board-support-for-barcode-scanners"></a>Støtte for Kanban-overføringskort for strekkodelesere
 
@@ -35,7 +34,7 @@ Kanban-overføringskortet støtter skannerinndata fra et kontrollprogram for str
 <a name="registration-modes"></a>Registreringsmoduser
 ------------------
 
-I hurtigkategorien **Skanner - registrering** kan du velge registreringsmodus, som styrer handlingen når du skanner et Kanban-kortnummer eller skriver inn nummeret manuelt i feltet Kanban-kortnummer.
+I hurtigfanen **Skanner - registrering** kan du velge registreringsmodus, som styrer handlingen når du skanner et Kanban-kortnummer eller skriver inn nummeret manuelt i feltet Kanban-kortnummer.
 
 | Angi registreringsmodus | Beskrivelse                                                                                     |
 |-----------------------|-------------------------------------------------------------------------------------------------|
@@ -44,15 +43,15 @@ I hurtigkategorien **Skanner - registrering** kan du velge registreringsmodus, s
 | Tom                 | Registrerer materialhåndteringsenheten som et Kanban-kort refererer til, som tomt.              |
 | Velg                | Registrerer et Kanban-kortnummer og velger den refererte jobben automatisk i Kanban-listen. |
 
- 
-Registreringsmodusen Velg
+ 
+<a name="registration-mode-select"></a>Registreringsmodusen Velg
 ------------------------
 
-Når du bruker en strekkodeleser til å velge en jobb, endres visningsmodusen for Kanban-kortet. I denne modusen gjelder følgende betingelser:
+Når du bruker en strekkodeleser til å velge en jobb, endres visningsmodusen for Kanban-kortet. I denne modusen gjelder følgende betingelser:
 
 -   Bare den skannede Kanban-jobben vises.
--   Detaljene om den valgte jobben vises i hurtigkategorien **Detaljer**.
--   **Meldinger**-hurtigkategorien viser meldinger bare for den valgte jobben.
+-   Detaljene om den valgte jobben vises i hurtigfanen **Detaljer**.
+-   **Meldinger**-hurtigfanen viser meldinger bare for den valgte jobben.
 -   Du kan endre statusen på jobben ved hjelp av funksjonene som er tilgjengelige i handlingsruten. Kanban-overføringskortet fortsetter å vise bare én jobb i denne perioden.
 -   Du kan oppdatere informasjonen i listen over jobber manuelt ved å klikke **Oppdater** (SKIFT+F5) i handlingsruten. Når du oppdaterer informasjonen, vises alle resultatene for jobbfilteret på nytt.
 
@@ -192,6 +191,3 @@ Statusen for den valgte jobben og statusen for tilknyttede jobber for hendelses-
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: KanbanBoardTransferJob, KanbanBoardWorkCell, KanbanJobSchedulingListPage, LeanProductionFlow, Kanban, KanbanQuantityOverview, KanbanAssignCard, KanbanCirculatingCards, KanbanRules, WHSKanbanWaveTableManagePickingListPool
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 19371
 ms.assetid: 026c5605-6be7-4fdb-a6f2-8e37a806796c
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 63a9856035088642254fd43d14cb324a89bc19d6
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 5ba514a6af360074696814278b51ba41327a294d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434754"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5006997"
 ---
 # <a name="lean-manufacturing-overview"></a>Oversikt over lean manufacturing
 
@@ -51,7 +50,7 @@ For å opprette et grunnlag for lean-produksjon modelleres produksjons- og logis
 
 ## <a name="using-kanbans-to-signal-demand-requirements"></a> Bruke kanbaner til å signalisere behovskrav
 Et pull-system produserer varer bare når varer er nødvendige. Denne fremgangsmåten reduserer leveringstider og overflødig lager. Du kan bruke kanbaner til å planlegge, spore og behandle krav som er basert på produksjonsflyter. Hvis du vil opprette en kanban-struktur, oppretter du kanban-regler som definerer når kanbaner opprettes, og hvordan kravene oppfylles. Du kan opprette to typer kanban-regler. Produksjonsregler oppretter kanban-jobber for prosesser, og kanban-regler for uttak oppretter kanban-jobber for overføring. Du kan definere følgende etterfyllingsstrategier:
--   Kanban-regler med **Fast antall** er knyttet til et bestemt antall behandlingsenheter, som betyr at antall aktive kanbaner er konstant. Når alle produktene fra en kanban forbrukes og tømmes manuelt for behandling av enheter, opprettes en ny kanban av samme type. Når du oppretter et fast antall kanban-regler, kan du beregne optimalt kanban-antall og produktantall for som brukes. Beregningen tar i betraktning prognose, faktisk etterspørsel fra åpne ordrer, leveringstid for å etterfylle varer og historiske behov.
+-   Kanban-regler med **Fast antall** er knyttet til et bestemt antall behandlingsenheter, som betyr at antall aktive Kanbaner er konstant. Når alle produktene fra en Kanban forbrukes og håndteringsenhetene tømmes manuelt, opprettes en ny Kanban av samme type. Når du oppretter et fast antall Kanban-regler, kan du beregne optimalt Kanban-antall og produktantall som brukes. Beregningen tar hensyn til prognose, faktisk etterspørsel fra åpne ordrer, leveringstid for å etterfylle varer og historiske behov.
 -   **Planlagte** kanban-regler etterfyller behov som er beregnet av hovedplanlegging. Hovedplanlegging genererer planlagte Kanbaner som kan autoriseres til Kanbaner.
 -   Kanban-regler for **hendelse** etterfyller behov som kommer fra salgsordrelinjer, stykklistelinjer for produksjon, Kanban-linjer eller minimumslagerinnstillinger. Når hendelses-Kanbaner genereres, knyttes de til kildebehov.
 
@@ -65,7 +64,7 @@ Lean-produksjon gir oversikt over gjeldende status for produksjonen og logistikk
 -   Spore og registrere statusen for kanban-jobber.
 
 Listen nedenfor beskriver de spesialiserte kanban-tavlene:
--   Kanban-jobbplanlegging – gir en oversikt over kanban-jobbene. Tavlen viser kanban-jobber og tilhørende status for én eller flere arbeidsceller. Jobbene vises etter planleggingsperioder (dager eller uker) som er definert i produksjonsflytmodellen. Tavlen viser også kapasitetsforbruket per planleggingsperiode slik at du kan overvåke den planlagte belastningen. Du kan endre statusen for kanban-jobber, foreta ny planlegging av Kanban-jobber i ulike planleggingsperioder og utføre andre oppgaver.
+-   Kanban-jobbplanlegging – gir en oversikt over Kanban-jobbene. Tavlen viser kanban-jobber og tilhørende status for én eller flere arbeidsceller. Jobbene vises etter planleggingsperioder (dager eller uker) som er definert i produksjonsflytmodellen. Tavlen viser også kapasitetsforbruket per planleggingsperiode slik at du kan overvåke den planlagte belastningen. Du kan endre statusen for kanban-jobber, foreta ny planlegging av Kanban-jobber i ulike planleggingsperioder og utføre andre oppgaver.
 -   Kanban-tavle for overføringsjobber – Denne tavlen gir en oversikt over gjeldende overføringsjobber. Du kan oppdatere og registrere plukklister, starte og fullføre overføringsjobber og utføre andre oppgaver.
 -   Kanban-tavle for prosessjobber – Denne tavlen er utviklet for å støtte den vanlige produksjonsflyten og gi en oversikt over den gjeldende situasjonen i én eller flere arbeidsceller. Fra denne tavlen kan Kanbaner prioriteres, plukkes eller produseres. Tavlen er også utformet for å støtte strekkodeskanning for rapportering av Kanbaner.
 
@@ -83,6 +82,3 @@ I tillegg støtter lean-produksjon innkjøps- og faktureringsprosesser for tjene
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

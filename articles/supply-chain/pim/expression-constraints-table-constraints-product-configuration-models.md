@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: PCGlobalTableConstraintEdit, PCProductConfigurationModelDetails, PCTableConstraintAttachAttributeTree, PCTableConstraintDefinition
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 53111
 ms.assetid: 5c12b1f2-eb89-4648-a755-de412f2eadd6
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: be9d9ae48d21db077928ba7bd5615fea47ea5181
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bc07d5b915e0b878cc7b2ef1d5f3253de8776608
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434606"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007716"
 ---
 # <a name="expression-constraints-and-table-constraints-in-product-configuration-models"></a>Uttrykksbegrensninger og tabellbegrensninger i produktkonfigurasjonsmodeller
 
@@ -155,11 +154,11 @@ Tabellen nedenfor viser operatorene og infix-notasjonene som du kan bruke når d
 <tr class="even">
 <td>Abs</td>
 <td>Dette krever absoluttverdien til betingelsen. Dette må ha nøyaktig én betingelse.</td>
-<td>Abs[uttrykk]</td>
+<td>Abs[expr]</td>
 <td><strong>Operator:</strong> Abs[x]</td>
 </tr>
 <tr class="odd">
-<td>Tider</td>
+<td>Klokkeslett</td>
 <td>Dette tar produktet for betingelsene. Hvis antallet betingelser er 0 (null), gir den <strong>1</strong>.</td>
 <td>Times[argumenter], infix: a * b * ... * z</td>
 <td><ul>
@@ -183,7 +182,7 @@ Tabellen nedenfor viser operatorene og infix-notasjonene som du kan bruke når d
 <td><strong>Operator:</strong> Max[x, y, 2] == z</td>
 </tr>
 <tr class="even">
-<td>Min</td>
+<td>Min.</td>
 <td>Dette gir den minste betingelsen. Hvis antallet betingelser er 0 (null), gir den <strong>Infinity</strong>.</td>
 <td>Min[argumenter]</td>
 <td><strong>Operator:</strong> Min[x, y, 2] == z</td>
@@ -222,7 +221,7 @@ Eksemplene i den neste tabellen viser hvordan du skriver en infix-notasjon.
 |        (x)        |                           Parenteser overstyrer standardprioritet.                            |
 
 ## <a name="why-arent-my-expression-constraints-validated-correctly"></a>Hvorfor valideres ikke uttrykksbegrensningene mine riktig?
-Du kan ikke bruke reserverte nøkkelord som problemløsernavn for attributter, komponenter eller delkomponenter i en produktkonfigurasjonsmodell. Her er en liste over reserverte nøkkelord som du ikke kan bruke:
+Du kan ikke bruke reserverte nøkkelord som problemløsernavn for attributter, komponenter eller delkomponenter i en produktkonfigurasjonsmodell. Her er en liste over de reserverte nøkkelordene du ikke kan bruke:
 
 -   Tak
 -   Element
@@ -254,6 +253,3 @@ Du kan ikke bruke reserverte nøkkelord som problemløsernavn for attributter, k
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

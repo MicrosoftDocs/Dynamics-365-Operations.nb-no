@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: PlanActivity, ReqSupplyDemandSchedule
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8778d6a4d834af2151e0bced0b0f27d98f088a34
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 49ec2ac0ce32da13239f3b7789d6f73f22f6e61b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434345"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007208"
 ---
 # <a name="formula-designer"></a>Formeldesigner
 
@@ -36,7 +35,7 @@ Når du åpner  **formeldesigner**-siden fra  **frigitte produkter**-siden, vise
 
 Klikk **Konfigurer** for å velge ulike konfigurasjoner og angi hvilken informasjon som skal vises på linjene i treet.
 
-Klikk **Filter** for å endre det første utvalget i visningen. Hvis du setter visningsprinsippet til **Valgte/aktive** eller **Valgte**, kan du velge enkelte versjoner av formelen eller ruten som skal brukes i visningen. Du kan velge ikke-godkjente og ikke-aktive formelversjoner som skal vises eller vedlikeholdes i formelutformingen.  
+Klikk på **Filter** for å endre det første utvalget i visningen. Hvis du setter visningsprinsippet til **Valgte/aktive** eller **Valgte**, kan du velge enkelte versjoner av formelen eller ruten som skal brukes i visningen. Du kan velge ikke-godkjente og ikke-aktive formelversjoner som skal vises eller vedlikeholdes i formelutformingen.  
 
 > [!NOTE]
 > Hvis du åpner **Formeldesigner**-siden fra fra listesiden **Stykklister**, viser den ikke ruteinformasjon. Valget av en formel- eller ruteversjon gjelder for øyeblikket for alle forekomster av formeldesigneren.  
@@ -113,7 +112,7 @@ Bruk funksjonene **Stykklistelinjer** eller **Formel** til å endre fomrellinjen
 | Formel &gt; Kontroller                  | Valider og kontroller den valgte formelen.                                                                  | Denne funksjonen er tilgjengelig når noden som er valgt, er knyttet til en formelversjon. |
 
 ## <a name="configuring-the-tree-view"></a>Konfigurere trevisningen
-Klikk **Oppsett** for å tilpasse informasjonen som vises i trevisningen i formeldesigneren.
+Klikk på **Oppsett** for å tilpasse informasjonen som vises i trevisningen i formeldesigneren.
 
 
 | Feltgruppe |                                                                          beskrivelse                                                                          |
@@ -121,6 +120,3 @@ Klikk **Oppsett** for å tilpasse informasjonen som vises i trevisningen i forme
 |     Stykkliste     | Bruk avmerkingsboksene for å velge kriteriene som vises i trestrukturen. Formeldesigneren viser de valgte kriteriene nederst i begge kategorier. |
 |    Rute    |                                           Bruk avmerkingsboksene for å velge kriteriene som vises for rutene.                                           |
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

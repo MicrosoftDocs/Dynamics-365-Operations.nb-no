@@ -10,7 +10,6 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 267094
 ms.assetid: 3fa385ba-894d-4a9e-b394-ef3697abf895
 ms.search.region: global
@@ -18,12 +17,12 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 4a41f877816e331351a0950dcdc07ee07f643beb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7d0440514369f8271004993d009ef7c3a36edb53
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434165"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5008069"
 ---
 # <a name="inventory-on-hand-mobile-workspace"></a>Mobilt arbeidsområde for lagerbeholdning
 
@@ -69,7 +68,7 @@ Hvis Platform update 3 eller nyere er distribuert i organisasjonen, må systeman
 <tr class="header">
 <th>Forutsetning</th>
 <th>Rolle</th>
-<th>beskrivelse</th>
+<th>Beskrivelse</th>
 </tr>
 </thead>
 <tbody>
@@ -130,6 +129,3 @@ Laste ned og installere Finance and Operations-mobilappen:
     -   Etter fysisk lager (denne visningen representerer den totale mengden).
     -   Etter fysisk reservert (denne visningen representerer den reserverte mengden).
     -   Etter fysisk tilgjengelig (denne visningen representerer tilgjengelig mengde uten reservasjoner.)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

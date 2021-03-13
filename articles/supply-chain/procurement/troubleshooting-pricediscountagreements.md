@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, PurchRFQTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-9-16
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: b4349eeba285492202b5df8481b277a06708a4c8
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 14fdddabde7739cbf9ba0fcee0fa0b8b816e74dd
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434832"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007372"
 ---
 # <a name="troubleshoot-prices-discounts-agreements-and-rebates"></a>Feilsøking i forbindelse med priser, rabatter og avtaler
 
@@ -48,7 +47,7 @@ Meldingen er anmodningen om evaluering av forretningsavtale (TAE). Hvis du vil h
 
 Følgende prosedyre viser én måte å reprodusere problemet på.
 
-1. På siden for **Parametere for innkjøp og leverandører**, i kategorien **Levering**, må du kontrollere at alternativet for **Generer tillegg på produktkvittering** er satt til *Ja*.
+1. På siden for **Parametere for innkjøp og leverandører**, i fanen **Levering**, må du kontrollere at alternativet for **Generer tillegg på produktkvittering** er satt til *Ja*.
 1. Opprette en bestilling som inkluderer tillegg.
 1. Bekreft bestillingen.
 1. Motta bestillingen.
@@ -125,6 +124,3 @@ Denne virkemåten er forventet. Fordi rekvisisjoner ikke alltid er godkjent, ska
 
 Du kan opprette forretningsavtaler for et hvilket som helst svar på en tilbudsforespørsel, uansett om de ble godtatt eller avvist. Hvis du vil ha mer informasjon, se [Oversikt over tilbudsforespørsler](request-quotations.md).
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

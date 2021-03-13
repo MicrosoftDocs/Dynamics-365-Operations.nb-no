@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ProdTableListPage, ProdSchedule, ProdRouteJob
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d9059080fcd77a5317ce4226de6aad38b0066500
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 442826d6611ea4aaedee2e9bae5649ada1cc846d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434427"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007897"
 ---
 # <a name="create-a-schedule-for-a-site"></a>Opprette en tidsplan for et område
 
@@ -39,23 +38,20 @@ Denne fremgangsmåten viser hvordan du planlegger produksjonsordrer som ennå ik
 
 ## <a name="create-a-schedule"></a>Opprette en tidsplan
 1. Merk eller fjern merking for alle rader i listen.
-2. Klikk Planlegg i handlingsruten.
-3. Klikk Planlegg jobber.
+2. Klikk på Planlegg i handlingsruten.
+3. Klikk på Planlegg jobber.
 4. Velg Bakover fra leveringsdato i Planleggingsretning-feltet.
 5. Velg Nei i Begrenset kapasitet-feltet.
 6. Velg Nei i Begrenset materiale-feltet.
-7. Klikk OK.
+7. Klikk på OK.
     * Dette kan ta en stund.  
 
 ## <a name="view-the-result-of-scheduled-production-orders"></a>Vise resultatet av planlagte produksjonsordrer
 1. Merk den valgte raden i listen.
     * Du kan merke en vilkårlig rad.  
-2. Klikk Produksjonsordre i handlingsruten.
-3. Klikk Alle jobber.
-    * På denne siden kan du se listen over jobber. I kategorien Planlegging kan du se start- og sluttdato for en jobb.  
-4. Klikk Materialer.
+2. Klikk på Produksjonsordre i handlingsruten.
+3. Klikk på Alle jobber.
+    * På denne siden kan du se listen over jobber. I fanen Planlegging kan du se start- og sluttdato for en jobb.  
+4. Klikk på Materialer.
     * På denne siden kan du se det forventede materialforbruket for operasjonene i produksjonsordren og gjeldende tilgjengelig lager.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

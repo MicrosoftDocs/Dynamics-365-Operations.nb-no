@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: InventValueProcess, InventValueReportSetup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: f50318e0a955d8244ba854aa1fd73ad7532b9198
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0f54c02fc828d60f4ddb28be932bbf8eb137ee92
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434382"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5008184"
 ---
 # <a name="inventory-value-storage-report"></a>Rapport for oppbevaring av lagerverdi
 
@@ -93,19 +92,16 @@ Følgende eksempel viser hvordan du eksporterer en rapport for **oppbevaring av 
 1. Velg **Legg til** for å legge til en ny rad, og velg deretter **Lukk** for å lukke dialogboksen.
 1. Vanligvis eksporterer du én rapport om gangen. Hvis du vil eksportere en enkelt rapport, definerer du et filter for raden du nettopp la til, i **Forespørsel**-dialogboksen. På denne måten kan du definere hvilken rapport fra **Lagerverdi**-enheten som skal tas med i eksporten. Følg denne fremgangsmåten for å angi følgende filteralternativer for å eksportere en enkelt rapport:
 
-    1. I kategorien **Område** velger du **Legg til** for å legge til en rad.
+    1. I fanen **Område** velger du **Legg til** for å legge til en rad.
     2. Angi **Tabell**-feltet til **Lagerverdi**.
     3. Angi **Avledet tabell**-feltet til **Lagerverdi**.
     4. Sett **Felt**-felten til feltet som du vil filtrere etter. Vanligvis bruker du feltet **Kjørenavn** og/eller feltet **Kjøretid**.
     5. Sett **Vilkår**-feltet til verdien du vil søke etter i det valgte feltet. (Hvis du valgte feltet **Kjørenavn** i det forrige trinnet, vil denne verdien være navnet på rapporten. Hvis du valgte feltet **Kjøretid**, vil det være tidspunktet da rapporten ble generert.)
-    6. Legg til flere rader i **Område**-kategorien etter behov, til du har unikt angitt hvilken rapport du vil søke etter.
+    6. Legg til flere rader i **Område**-fanen etter behov, til du har unikt angitt hvilken rapport du vil søke etter.
 
 1. Velg **OK** for å lagre innstillingene og lukke dialogboksen.
 1. Velg **Lagre** for å lagre eksportoppsettet.
-1. I kategorien **Eksportalternativer** velger du **Eksporter nå** for å generere eksportfilen.
+1. I fanen **Eksportalternativer** velger du **Eksporter nå** for å generere eksportfilen.
 1. På siden **Kjøringssammendrag** som vises, kan du se statusen for eksportjobben og en liste over enheter som ble eksportert. Velg **Lagerverdi**-enheten i delen **Behandlingsstatus for enhet**, og velg deretter **Last ned fil** for å laste ned dataene som er eksportert fra denne enheten.
 
 Hvis du vil ha mer informasjon om hvordan du bruker databehandling til å eksportere data, se [Oversikt over dataimport- og -eksportjobber](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

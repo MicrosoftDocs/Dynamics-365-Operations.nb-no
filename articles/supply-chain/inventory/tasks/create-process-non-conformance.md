@@ -10,18 +10,17 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8bf20ed737707b7cf99023e3c78489caf4a68eab
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4525e79cb388cc9bbcfe1d038a53cf53916a678c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434672"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5008100"
 ---
 # <a name="create-and-process-a-conformance"></a>Opprette og behandle et avvik
 
@@ -50,7 +49,7 @@ Dette emnet forklarer hvordan du utfører behandling av avvik, basert på en eks
 1. Velg **Rettelser**.
 2. Velg **Ny**.
 3. I **Personalnummer**-feltet i den nye raden velger du ønsket post fra rullegardinmenyen.
-4. Klikk **Velg**.
+4. Klikk på **Velg**.
 5. Velg **Legg ved**. Opprett en merknad om rettelsen. I dette eksemplet er handlingen å kontakte leverandøren for å diskutere avvikssaken.  
 6. Velg **Ny**.
 7. Velg **Notat**. Avhengig av oppsettet for rapporten kan ulike dokumenttyper skrives ut på rapporter som er knyttet til behandling av avvik.  
@@ -67,6 +66,3 @@ Dette emnet forklarer hvordan du utfører behandling av avvik, basert på en eks
 2. Velg **Lukk avvik**.
 3. Velg **Ja**.
 4. Lukk sidene.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

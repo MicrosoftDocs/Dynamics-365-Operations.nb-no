@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-9-16
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 234458f865e37a2d962aee8ab218b9521847081d
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 7b65c23fc7ac04fc30c0001bee9541a475026018
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434831"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007497"
 ---
 # <a name="troubleshoot-purchase-orders"></a>Feilsøke bestillinger
 
@@ -132,7 +131,7 @@ Du kan bare forlenge perioden leverandøren er godkjent for. Følgende regler gj
 
 For eksempel scenarioet som er beskrevet i problembeskrivelsen, der en post har en gyldighetsdato på *01/11/2018* og utløpsdatoen *Aldri*, kan du importere en ny post som har en gyldighetsdato på *01/10/2018* og utløpsdatoen *Aldri*. Du kan imidlertid ikke redusere perioden slik at ikrafttredelsesdatoen oppdateres til *01/12/2018* via databehandling. Du må gjøre denne endringen i brukergrensesnittet.
 
-## <a name="after-i-change-the-delivery-address-on-a-purchase-order-header-the-delivery-nameisnt-synced"></a>Etter at jeg endret leveringsadressen i et bestillingshode, blir ikke leveringsnavnet synkronisert.
+## <a name="after-i-change-the-delivery-address-on-a-purchase-order-header-the-delivery-name-isnt-synced"></a>Etter at jeg endret leveringsadressen i et bestillingshode, blir ikke leveringsnavnet synkronisert.
 
 ### <a name="issue-description"></a>Problembeskrivelse
 
@@ -145,6 +144,3 @@ Denne virkemåten er standard. Den valgte adressen må klassifiseres som leverin
 ## <a name="can-i-find-the-user-who-canceled-a-purchase-order"></a>Kan jeg finne brukeren som annullerte en bestilling?
 
 Denne informasjonen spores bare hvis bestillingen er underlagt endringsstyring. Hvis du bruker endringsstyring, kan du se hvem som sendte inn endringen (annulleringen), og hvem som godkjente den.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

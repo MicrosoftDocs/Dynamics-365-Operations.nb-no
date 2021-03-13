@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: InventItemOrderSetup, InventItemIdLookupByDefaultOrderSetting, EcoResProductReleasedStoppedAllChartPart, UnitTestPartitions
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations, Retail
 ms.custom: 223084
 ms.assetid: fbfbcd7b-dc75-44ab-bffc-8bad576804a4
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: c3aa800c1a996a062bcb737afa23f00a9e52bb48
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2202b6b50d4b4b675759275379023a182b01af17
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434701"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007272"
 ---
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a>Standard ordreinnstillinger for dimensjoner og produktvarianter
 
@@ -165,7 +164,7 @@ Regelen med rangeringen null fungerer som et sikkerhetsnett. Hvis ingen andre re
 
 Siden rangeringsnummeret er viktig, finnes det i handlingsruten **Standard ordreinnstillinger** funksjoner for å flytte en regel opp eller ned og nummerere reglene, slik at de er alltid med økes med 10. 
 
-Det kan opprettes mange regler for et frigitt produkt. Hvis du vil ha mer informasjon om hva hver enkelt regel overstyrer og hvorfor det er nødvendig, anbefaler vi at du bruker **Rutenettvisning** på siden **Standard ordreinnstillinger**. Du kan aktivere rutenettvisning ved å gå til **Alternativer** &gt; **Sidealternativer** &gt; **Endre visning** &gt; **Rutenettvisning**. Det kan vises svært mange kolonner i rutenettet, spesielt for kategoriene salg og lager. Hvis du vil begrense hvor mange kolonner som vises i rutenettet, kan grupper av kolonner skjules eller vises ved hjelp av knappene på menyen **Standard ordreinnstillinger** &gt; **Kolonnevisning**.
+Det kan opprettes mange regler for et frigitt produkt. Hvis du vil ha mer informasjon om hva hver enkelt regel overstyrer og hvorfor det er nødvendig, anbefaler vi at du bruker **Rutenettvisning** på siden **Standard ordreinnstillinger**. Du kan aktivere rutenettvisning ved å gå til **Alternativer** &gt; **Sidealternativer** &gt; **Endre visning** &gt; **Rutenettvisning**. Det kan vises svært mange kolonner i rutenettet, spesielt for fanene salg og lager. Hvis du vil begrense hvor mange kolonner som vises i rutenettet, kan grupper av kolonner skjules eller vises ved hjelp av knappene på menyen **Standard ordreinnstillinger** &gt; **Kolonnevisning**.
 
 ### <a name="specific-order-settings-for-released-product-variant"></a>Spesifikke ordreinnstillinger for frigitt produktvariant
 
@@ -204,6 +203,3 @@ Slik angir du valideringsalternativet:
 1. På **Generelt**-fanen angir du **Validering for standard ordreantall** til én av følgende verdier:
     - **Streng** – Velg dette alternativet for å sikre at alle verdier for **Standard ordreantall** vil være et multiplum av **Flere**-verdien for hver hurtigfane (**Bestilling**, **Lager** og **Salgsordre**).
     - **Standard** – Velg dette alternativet for å bruke standard validering (som fungerer på samme måte som når denne funksjonen ikke er aktivert).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

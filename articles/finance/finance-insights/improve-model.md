@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 23c9062dcc13951792306c955b54cae6f656fec5
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 2bcdea4a2a8f4386b274077cd1e95398fb6fac37
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4646085"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5009375"
 ---
 # <a name="improve-the-prediction-model-preview"></a>Forbedre forutsigelsesmodellen (forhåndsversjon)
 
@@ -42,19 +41,19 @@ Hvis organisasjonen bare krever to resultater, endrer du de **Forsinket**- og **
 
 ## <a name="select-fields"></a>Velg felter
 
-Når du velger felt som skal tas med i modellen, må du være oppmerksom på at listen inneholder alle tilgjengelige felt i Common Data Service-enheten som er tilordnet dataene i Azure Data Lake. Noen av disse feltene bør **ikke** velges. Feltene som ikke bør velges, faller inn i én av tre kategorier:
+Når du velger felt som skal tas med i modellen, må du være oppmerksom på at listen inneholder alle tilgjengelige felt i Microsoft Dataverse-tabellen som er tilordnet dataene i Azure Data Lake. Noen av disse feltene bør **ikke** velges. Feltene som ikke bør velges, faller inn i én av tre kategorier:
 
-- Feltet er obligatorisk for Common Data Service-enheten, men det finnes ingen sikkerhetskopi av dataene i Data Lake.
+- Feltet er obligatorisk for Dataverse-tabellen, men det finnes ingen sikkerhetskopi av dataene i Data Lake.
 - Feltet er en ID og gir derfor ingen mening for en maskinlæringsfunksjon.
 - Feltet representerer informasjon som ikke vil være tilgjengelig under forutsigelse.
 
 De følgende delene viser feltene som er tilgjengelige for faktura- og kundeenhetene, og viser feltene som **ikke** må velges for opplæring. Kategorien som er angitt for hvert av disse feltene, refererer til kategoriene i listen ovenfor.
  
-### <a name="invoice-common-data-model-entity"></a>Common Data Model-fakturaenhet
+### <a name="invoice-dataverse-table"></a>Dataverse-tabellen for faktura
 
-Følgende illustrasjon viser feltene som er tilgjengelig for fakturaenheten.
+Følgende illustrasjon viser feltene som er tilgjengelig for fakturatabellen.
 
-[![Tilgjengelige felt for fakturaenheten](./media/available-fields.png)](./media/available-fields.png)
+[![Tilgjengelige felt for fakturatabellen](./media/available-fields.png)](./media/available-fields.png)
 
 Følgende felt bør ikke velges for opplæring:
 
@@ -65,11 +64,11 @@ Følgende felt bør ikke velges for opplæring:
 - **Kildepost** (kategori 2)
 - **Kildetabell** (kategori 2)
 
-### <a name="customer-common-data-model-entity"></a>Common Data Model-kundeenhet
+### <a name="customer-dataverse-table"></a>Dataverse-tabell for kunde
 
-Følgende illustrasjon viser feltene som er tilgjengelige for kundeenheten.
+Følgende illustrasjon viser feltene som er tilgjengelige for kundetabellen.
 
-[![Tilgjengelige felt for kundeenheten](./media/related-entities.png)](./media/related-entities.png)
+[![Tilgjengelige felt for kundetabellen](./media/related-entities.png)](./media/related-entities.png)
 
 Følgende felt bør ikke velges for opplæring:
 
@@ -83,6 +82,3 @@ Filtrene støtter for øyeblikket ikke scenarioet med kundebetalingsforutsigelse
 
 #### <a name="privacy-notice"></a>Personvernerklæring
 Forhåndsversjoner (1) kan ha redusert personvern og færre sikkerhetstiltak enn Dynamics 365 Finance and Operations-tjenesten, (2) er ikke inkludert i serviceavtalen (SLA) for denne tjenesten, (3) må ikke brukes til å behandle personlige data eller andre data som er underlagt juridiske eller forskriftsmessige krav, og (4) har begrenset støtte.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

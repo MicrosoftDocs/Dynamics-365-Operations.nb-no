@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ReqDemPlanCreateForecastDialog
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 72683
 ms.assetid: 42190463-2a64-4f63-b653-10cac3df0692
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: db0ac2d56db46f283716df6615e404a5354f8d3e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b60fbcc4fe1b3da701245390ab4397ebb700f892
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434651"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007984"
 ---
 # <a name="generate-a-statistical-baseline-forecast"></a>Generere en statistisk basislinjeprognose
 
@@ -65,7 +64,7 @@ Konsernintern planleggingsgruppe, varefordelingsnøkler og andre filtre kan bruk
 > [!TIP]
 > Brukere kan noen ganger motta feilmeldinger mens de genererer en behovsprognose, eller prognosegenerering kan fullføres uten øktlogg. Dette kan skje på grunn av overflødige data i spørringen som tidligere ble brukt for generering av prognose. For å løse dette problemet klikker du på **Velg** for å åpne **Spørring**-siden, velger **Tilbakestill** og genererer deretter den basislinjeprognosen på nytt. 
 
-Hvis prognosen ikke genereres for et stort sett av varer, men, for eksempel for én vare eller en varefordelingsnøkkel om gangen, kan du deretter for å få bedre ytelse merke av for **Bruk modus for forespørselssvar** i kategorien **Hovedplanlegging - Oppsett - Behovsprognose** - **Parametere for behovsprognose - Azure Machine Learning**.
+Hvis prognosen ikke genereres for et stort sett av varer, men, for eksempel for én vare eller en varefordelingsnøkkel om gangen, kan du deretter for å få bedre ytelse merke av for **Bruk modus for forespørselssvar** i fanen **Hovedplanlegging - Oppsett - Behovsprognose** - **Parametere for behovsprognose - Azure Machine Learning**.
 
 > [!NOTE]
 > En potensielt flat prognose kan skyldes at de historiske dataene ikke har en lang nok historisk tidsramme (minst 3 tidsperioder for å kunne finne mønstre, for eksempel 3 år med månedlig prognose). For å få et bedre resultat kan du prøve å endre kornetheten til tidsintervallet eller øke tidsintervallet.
@@ -78,6 +77,3 @@ Hvis prognosen ikke genereres for et stort sett av varer, men, for eksempel for 
 - [Foreta manuelle justeringer i basislinjeprognosen](manual-adjustments-baseline-forecast.md)
 
 - [Autorisere en justert prognose](authorize-adjusted-forecast.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: InventBatchJournalListPage, InventBatchJournalMerge
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 39782
 ms.assetid: 07c5e98b-10fd-4f5c-b471-41d2150f47b0
 ms.search.region: Global
 ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fa571fb7392f6f7154f7f1bfd908e11e1bebd3a6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d4c9443c6e659602ae09e4744396651186874ad3
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434578"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5008022"
 ---
 # <a name="merge-inventory-batches"></a>Slå sammen lagerpartier
 
@@ -121,7 +120,7 @@ Verdier og antall for partier B1 og B4 er ikke inkludert i beregningen av avveid
 |       | **Totalt:** 65, som er summen av vekten |                 | **Totalt:** 21,5384615, som avrundes til 21 (som er det nærmeste intervallet) |
 
 ## <a name="what-if-the-batches-have-different-batch-dates"></a>Hva om bunkene har forskjellige bunkedatoer?
-Hvis partiene har forskjellige partidatoer, beregnes noen av datoene basert på verdiene i gruppen **Partidatoer** i hurtigkategorien **Sammenslått parti** på siden **Partisammenslåing**. Systemet beregner verdier for feltene i gruppen **Partidatoer**. Disse verdiene inkluderer produksjonsdato, utløpsdato, anbefalt holdbarhet og best før-dato. Datoer beregnes basert på innstillingene for varen i feltghruppen **Varedata** på siden **Detaljer om frigitt produkt**. Du kan endre verdiene eller angi dem manuelt. Ingen beregninger utføres for alle andre datoer. Det samme prinsippet brukes for partiattributtverdier. Hvis en dato er den samme for alle kildepartiene, foreslås denne datoen for det sammenslåtte partiet. Hvis datoen ikke er den samme for alle kildepartier, er datoen tom for det sammenslåtte partiet, du kan angi den manuelt.
+Hvis partiene har forskjellige partidatoer, beregnes noen av datoene basert på verdiene i gruppen **Partidatoer** i hurtigfanen **Sammenslått parti** på siden **Partisammenslåing**. Systemet beregner verdier for feltene i gruppen **Partidatoer**. Disse verdiene inkluderer produksjonsdato, utløpsdato, anbefalt holdbarhet og best før-dato. Datoer beregnes basert på innstillingene for varen i feltghruppen **Varedata** på siden **Detaljer om frigitt produkt**. Du kan endre verdiene eller angi dem manuelt. Ingen beregninger utføres for alle andre datoer. Det samme prinsippet brukes for partiattributtverdier. Hvis en dato er den samme for alle kildepartiene, foreslås denne datoen for det sammenslåtte partiet. Hvis datoen ikke er den samme for alle kildepartier, er datoen tom for det sammenslåtte partiet, du kan angi den manuelt.
 
 ## <a name="what-if-the-dimensions-are-different-on-the-batches-that-i-want-to-merge"></a>Hva om dimensjonene er forskjellige på bunkene som jeg vil slå sammen?
 Produktdimensjoner, sporingsdimensjoner og lagringsdimensjoner håndteres på følgende måte:
@@ -136,10 +135,7 @@ Postering fungerer på to måter, avhengig av om du bruker en godkjenningsproses
 -   **Overfør til journal** – Overfører informasjon om partisammenslåingen til en lagerjournal. Hvis du har definert automatiske reservasjoner, er antallene i kildepartiene reservert. Detaljene for partisammenslåingen kan ikke endres. Hvis du må endre partisammenslåingen, må du slette journalen. Journalen kan brukes som en oppgave som en annen ansatt må utføre senere. Reservering av partiantallet til journallinjen er sikret. Denne tildelingen gjør det mulig for en kvalitetsplanlegger eller en lagersjef å opprette oppgaver for de ansatte.
 -   **Poster partisammenslåingen** – Posterer partisammenslåingen direkte. Denne handlingen kan utføres etter at den fysiske sammenslåingen er foretatt.
 
-Du kan godkjenne lagerjournalen for partisammenslåingen fra listesiden **Alle partisammenslåinger**. Klikk **Journal** &gt; **Poster**. Når en journal er bokført, kan du ikke endre detaljene i det sammenslåtte partiet. Når du har overført en partisammenslåing til en lagerjournal, kan du bare endre detaljene hvis journalen er slettet.
+Du kan godkjenne lagerjournalen for partisammenslåingen fra listesiden **Alle partisammenslåinger**. Klikk på **Journal** &gt; **Poster**. Når en journal er bokført, kan du ikke endre detaljene i det sammenslåtte partiet. Når du har overført en partisammenslåing til en lagerjournal, kan du bare endre detaljene hvis journalen er slettet.
 
 ## <a name="after-i-merged-a-catchweight-item-why-cant-i-see-the-catchweight-information-in-the-inventory-journal"></a>Hvorfor kan jeg ikke se informasjon om faktisk vekt i lagerjournalen når jeg har flettet en faktisk vekt-vare?
 Du kan slå sammen partier med faktisk vekt-varer på samme måte som alle andre varer. Informasjon om faktisk vekt vises imidlertid ikke i lagerjournalen. Vi anbefaler at du kontrollerer informasjonen for faktisk vekt før du overfører pafrtisammenslåingen til lagerjournalen.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

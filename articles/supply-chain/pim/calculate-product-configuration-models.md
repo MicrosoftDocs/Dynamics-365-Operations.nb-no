@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: PCConstraintEditor, PCProductConfigurationModelDetails, PCRuntimeConfigurator
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 19191
 ms.assetid: 8993f9a1-d1c0-49f5-afd3-5e1077ded0fe
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f7fac3ec6df53dcc6e459f62f76d856a11d294b6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: abe6d4126f88bbbde602cf5b5521d6458352806b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434074"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007872"
 ---
 # <a name="calculations-for-product-configuration-models-faq"></a>Vanlige spørsmål om beregninger for produktkonfigurasjonsmodeller
 
@@ -76,13 +75,13 @@ Du kan overskrive verdien som beregnes for målattributtet, med mindre målattri
 ## <a name="how-do-i-set-a-target-attribute-as-hidden-or-read-only"></a>Hvordan oppretter jeg et målattributt som skjult eller skrivebeskyttet?
 Hvis du vil angi et attributt som skjulte eller skrivebeskyttet, gjør du følgende.
 
-1.  Klikk **Behandling av produktinformasjon** &gt; **Felles** &gt; **Produktkonfigurasjonsmodeller**.
+1.  Klikk på **Behandling av produktinformasjon** &gt; **Felles** &gt; **Produktkonfigurasjonsmodeller**.
 2.  Velg en produktkonfigurasjonsmodell, og deretter på handlingsruten klikker du **Rediger**.
 3.  På siden **Detaljer om restriksjonsbasert produktkonfigurasjonsmodell** velger du attributtet som skal brukes som et målattributt.
-4.  På **Attributter** hurtigkategorien, velg **Skjult** eller **Skrivebeskyttet**.
+4.  På **Attributter** hurtigfanen, velg **Skjult** eller **Skrivebeskyttet**.
 
 ## <a name="can-a-calculation-overwrite-the-values-that-i-set"></a>Kan en beregning overskrive verdiene som jeg angir?
-Nr. Verdiene du angir når du konfigurerer et produkt, er verdiene som brukes. Beregningen som skjer når inndataverdiene i en beregning endres, kan ikke overskrive verdiene du angir for et spesifikt attributt.
+Nei. Verdiene du angir når du konfigurerer et produkt, er verdiene som brukes. Beregningen som skjer når inndataverdiene i en beregning endres, kan ikke overskrive verdiene du angir for et spesifikt attributt.
 
 ## <a name="what-happens-if-i-remove-an-input-value-in-a-calculation"></a>Hva skjer hvis jeg fjerner en inndataverdi i en beregning?
 Hvis du fjerner en inndataverdi i en beregning, fjernes også verdien for målattributtet.
@@ -99,12 +98,9 @@ Denne meldingen vises når en beregning inneholder en feil eller når en selvmot
 ## <a name="why-do-i-receive-an-error-message-even-though-i-successfully-validated-my-product-model"></a>Hvorfor mottar jeg en feilmelding selv om jeg validerte produktmodellen min uten problemer?
 Beregninger er ikke inkludert i valideringen. Du må teste produktkonfigurasjonsmodellen for å finne feil i beregninger. Følgende trinn forklarer hvordan du tester en produktkonfigurasjonsmodell.
 
-1.  Klikk **Behandling av produktinformasjon** &gt; **Felles** &gt; **Produktkonfigurasjonsmodeller**.
+1.  Klikk på **Behandling av produktinformasjon** &gt; **Felles** &gt; **Produktkonfigurasjonsmodeller**.
 2.  Velg en produktkonfigurasjonsmodell, og deretter på handlingsruten, i gruppen **Kjør** klikker du **Test**.
 
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

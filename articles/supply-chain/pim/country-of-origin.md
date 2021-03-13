@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: COOVendorCerts
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 0471785991a307de11147e9773d9abe1e02941d6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2eaf0057123cd2cbcad00f95038627291dada517
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434072"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007821"
 ---
 # <a name="country-of-origin"></a>Opprinnelsesland
 
@@ -83,7 +82,7 @@ Når du genererer en stykklisterapport, kan du ta med opprinnelseslandet for hve
 
 1. Gå til **Behandling av produktinformasjon \> Produkter \> Frigitte produkter**.
 1. Velg eller opprett et produkt for å åpne siden **Detaljer om frigitt produkt**.
-1. I handlingsruten, i kategorien **Utvikling** i **Stykkliste**-gruppen, velger du **Designer**.
+1. I handlingsruten, i fanen **Utvikling** i **Stykkliste**-gruppen, velger du **Designer**.
 1. I handlingsruten velger du **Stykkliste \> Skriv ut** på siden som vises.
 1. I dialogboksen **Stykklistelinjer** angir du feltet **Målland** til mållandet du vil vise i rapporten.
 1. Velg **OK**.
@@ -91,6 +90,3 @@ Når du genererer en stykklisterapport, kan du ta med opprinnelseslandet for hve
 En rapport som viser informasjon om opprinnelsesland for hver del, genereres og vises. Her er et eksempel på rapporten.
 
 ![Rapport for opprinnelsesland](media/country-of-origin-report.png "Rapport for opprinnelsesland")
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

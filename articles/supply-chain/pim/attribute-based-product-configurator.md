@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2020-08-17
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: c0f9c1bb94b4dcc3c3c1e7656868ef6e6bd903db
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cba4b1eac33ae53e214297728c1cdf2710ebd9d9
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434073"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007922"
 ---
 # <a name="attribute-based-sales-prices-for-constraint-based-product-configuration"></a>Attributtbaserte salgspriser for begrensningsbasert produktkonfigurasjon
 
@@ -33,7 +32,7 @@ Før du begynner å bygge prismodellene må du definere en standardvaluta som br
 Slik angir du standardvalutaen:
 
 1. Gå til **Behandling av produktinformasjon \> Oppsett \> Parametere for produktinformasjonsbehandling**.
-1. Åpne kategorien **Begrensningsbaserte produktkonfigurasjonsmodeller**.
+1. Åpne fanen **Begrensningsbaserte produktkonfigurasjonsmodeller**.
 1. Åpne rullegardinlisten **Standardvaluta**, og velg valuta.
 
     ![Angi standardvaluta for begrensningsbasert produktkonfigurasjon](media/prod-config-currency.png "Angi standardvaluta for begrensningsbasert produktkonfigurasjon")
@@ -46,7 +45,7 @@ Slik lager du salgsprismodeller:
 
 1. Gå til **Behandling av produktinformasjon \> Produkter \> Produktkonfigurasjonsmodeller**.
 1. Velg målproduktkonfigurasjonsmodellen.
-1. Åpne kategorien **Modell** i handlingsruten, og gå til **Oppsett**-gruppen og velg **Prismodeller**.
+1. Åpne fanen **Modell** i handlingsruten, og gå til **Oppsett**-gruppen og velg **Prismodeller**.
 1. Siden **Prismodeller** åpnes.
 1. Velg en prismodell, eller legg til en ny i rutenettet.
 1. Velg **Rediger** for å åpne redigeringssiden for den valgte modellen, som inneholder følgende funksjoner:
@@ -110,7 +109,7 @@ Slik konfigurerer du utvalgskriterier for prismodeller:
 
 1. Gå til **Behandling av produktinformasjon \> Produkter \> Produktkonfigurasjonsmodeller**.
 1. Velg målproduktkonfigurasjonsmodellen.
-1. Åpne kategorien **Modell** i handlingsruten, og gå til **Oppsett**-gruppen og velg **Prismodellkriterier**. Siden **Prismodellkriterier** åpnes.
+1. Åpne fanen **Modell** i handlingsruten, og gå til **Oppsett**-gruppen og velg **Prismodellkriterier**. Siden **Prismodellkriterier** åpnes.
 1. Hvis spørringsraden du trenger, ikke finnes ennå, velger du **Ny** i handlingsruten for å legge til en ny rad i rutenettet og angi følgende innstillinger for den:
     - **Navn** – Angi et navn for raden.
     - **Beskrivelse** – Beskriv kort spørringen og hva den gjelder for.
@@ -138,9 +137,6 @@ Det siste trinnet er å angi attributtbaserte salgspriser for produktmodellversj
 
 1. Gå til **Behandling av produktinformasjon \> Produkter \> Produktkonfigurasjonsmodeller**.
 1. Velg målproduktkonfigurasjonsmodellen.
-1. Åpne kategorien **Modell** i handlingsruten, og gå til **Produktmodelldetaljer**-gruppen og velg **Versjoner**.
+1. Åpne fanen **Modell** i handlingsruten, og gå til **Produktmodelldetaljer**-gruppen og velg **Versjoner**.
 1. **Versjoner**-siden åpnes. Kontroller at **Prismetode** er satt til **Attributtbasert**.
     ![Sette prismetode til attributtbasert](media/prod-config-versions.png "Sette prismetode til attributtbasert")
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

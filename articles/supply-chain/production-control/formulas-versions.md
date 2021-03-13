@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: PlanActivity, ReqSupplyDemandSchedule, EcoResProductProdTypeFormulaNoActiveFormulaFormPart
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c7fb37483412fdd09fe3734ddb148b050ec02951
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1e5ff5916366f968cbf8dc9a5614466ef89faa92
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434342"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007170"
 ---
 # <a name="formulas-and-formula-versions"></a>Formler og formelversjoner
 
@@ -44,7 +43,7 @@ Når du oppretter en formellinje, bruker du linjetypen til å angi hvordan syste
 | Linjetype     | beskrivelse  |
 |---------------|--------------|
 | Element          | Velg **Element** når elementet er en råvare eller en halvfabrikate som plukkes fra lageret eller når elementet er en tjeneste. |
-| Fantom       | Velg **Phantom** når du vil eksplodere eventuelle lavere nivåformelelementer som finnes på formellinjer. Når du estimerer batchordren, og formelelementer utvides, oppføres komponentelementene som som formellinjer på batchordren. I tillegg tilføres de tilsvarende ruter til produksjonsruten. Formelelementer utvides ved hjelp av gjeldende konfigurasjon. Når du bruker **Phantom**-linjetype, kan du håndtere produksjon og målkonfigurasjon som oppstår ved ulike formelnivåer. Hvis du velger **Phantom** for et produkt på hurtigkategorien **Ingeniør** i siden **Frigitte produktdetaljer** og deretter bruker dette produktet i en formel, vil linjetypene for formellinjen endres til **Phantom**. Du kan ikke velge **Phantom** for catchvektvarer eller for elementer hvor produksjonstypen er et **Samprodukt**, **Biprodukt** eller **Planlagt element**. |
+| Fantom       | Velg **Phantom** når du vil eksplodere eventuelle lavere nivåformelelementer som finnes på formellinjer. Når du estimerer batchordren, og formelelementer utvides, oppføres komponentelementene som som formellinjer på batchordren. I tillegg tilføres de tilsvarende ruter til produksjonsruten. Formelelementer utvides ved hjelp av gjeldende konfigurasjon. Når du bruker **Phantom**-linjetype, kan du håndtere produksjon og målkonfigurasjon som oppstår ved ulike formelnivåer. Hvis du velger **Phantom** for et produkt på hurtigfanen **Ingeniør** i siden **Frigitte produktdetaljer** og deretter bruker dette produktet i en formel, vil linjetypene for formellinjen endres til **Phantom**. Du kan ikke velge **Phantom** for catchvektvarer eller for elementer hvor produksjonstypen er et **Samprodukt**, **Biprodukt** eller **Planlagt element**. |
 | Tilknyttet forsyning | Velg **Festet forsyning** for å lage en batchordre, produksjonsordre, kanban, overføringsordre eller innkjøpsordre for ingrediensen som finnes på formellinjen. Den relaterte ordren er bestemt ut fra innstillingene for standardbestillingen og produksjonstypen av ingrediensen, og opprettes når du estimerer batchordren. De nødvendige ingrediensmengder er reservert for batchordren. |
 | Leverandør        | Velg **Leverandør** hvis produksjonsprosessen bruker en underleverandør, og du vil opprette en underproduksjon eller innkjøpsordre for underleverandøren. Tjenesten eller arbeidet som underleverandøren utfører, må opprettes ved hjelp av et formelelement eller tjenesteelement. Du kan feste elementet til det overordnede elementet som en formellinje. Ruten må inneholde en operasjon som er tilordnet underleverandørens operasjonsressurs. Denne operasjonen festes til formellinjen ved å bruke **Oper. nr.** . |
 
@@ -70,7 +69,4 @@ Du kan legge til flere kontrollnivåer ved å bruke funksjonen for elektronisk s
 Skalerbar-funksjone er kun tilgjengelig hvis alle elementkomponentene i formelen er satt til **Variabelt forbruk** Denne funksjone er ikke tilgjengelig for elementkomponenter som er satt til **Fast forbruk** eller **Trinnvist forbruk**. Når Skalerbar-funksjonen brukes, hvis du endrer en ingrediens i en formel, vil mengden andre ingredienser du velger justeres tilsvarende. Størrelsen på formelen justeres også. På samme måte, hvis du endrer formelformat, endres mengden av alle skalerbare ingredienser. Denne funksjonen er spesielt beregnet for opprettelse av formler og vedlikehold. Det indikerer ikke om mengden av en ingrediens skal skaleres opp eller ned på en batchordre.
 
 ## <a name="use-step-consumption"></a>Bruk Trinnvist forbruk
-Trinnvist forbruk eliminerer kravet om at du må legge inn en mengde i kategorien **Formellinje** for en ingrediens. I stedet er Trinnvist forbruk konfiguert så den har **Fra serier**-verdi og en **Mengde**-verdi. Informasjonen fra Trinnvist forbruk per serieoppføring som tilfredstiller mengden for batchordren velges. Trinnvist forbruk er nyttig når forbruksrates ikke er lineær med hensyn til batchordrestørrelse og øker kun kravet når en bestemt mengdegrense er oppfylt. For å aktivere denne funksjonen for en ny formel, se under **Forbruksberegning**-gruppen, endre formelinnstillingen for gjeldende ingrediens fra **Standard** til **Trinnvis**. Du spesifiserer forbruksmetoden i kategorien **Oppsett** i siden **Formellinje**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+Trinnvist forbruk eliminerer kravet om at du må legge inn en mengde i fanen **Formellinje** for en ingrediens. I stedet er Trinnvist forbruk konfiguert så den har **Fra serier**-verdi og en **Mengde**-verdi. Informasjonen fra Trinnvist forbruk per serieoppføring som tilfredstiller mengden for batchordren velges. Trinnvist forbruk er nyttig når forbruksrates ikke er lineær med hensyn til batchordrestørrelse og øker kun kravet når en bestemt mengdegrense er oppfylt. For å aktivere denne funksjonen for en ny formel, se under **Forbruksberegning**-gruppen, endre formelinnstillingen for gjeldende ingrediens fra **Standard** til **Trinnvis**. Du spesifiserer forbruksmetoden i fanen **Oppsett** i siden **Formellinje**.

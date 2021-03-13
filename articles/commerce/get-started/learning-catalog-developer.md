@@ -10,16 +10,15 @@ ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 398bc231870a8573103ee7c7c63e96322b0b62a1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 74dc5eefa3a5cdfc897cbd6ca7e199f932f91dcd
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414620"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5009830"
 ---
 # <a name="learning-catalog-for-dynamics-365-commerce-developers"></a>Opplæringskatalog for Dynamics 365 Commerce-utviklere
 
@@ -42,6 +41,3 @@ Hvis du vil ha opplæring om funksjoner som deles med andre Finance and Operatio
 | Innhold  | beskrivelse  | Format  | Lengde    |
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|---------------------------------------------------------------------------|
 | [Distribuere og utvide Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/deploy-dynamics-365-commerce/) | Dette læreprogrammet beskriver hvordan du distribuerer Dynamics 365 Commerce-miljøer og utfører trinn etter klargjøring for vellykkede Commerce-implementeringer ved hjelp av riktig topologi for forhandlers forretningsbehov. | Gratis, selvbetjent elektronisk læringsforløp | 5 timer |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

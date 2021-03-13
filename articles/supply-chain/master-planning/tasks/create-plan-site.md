@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: DefaultDashboard, ReqCreatePlanWorkspace, ReqTransPlanCard, ReqTransPOUrgentFormPart, SysQueryForm
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 52721d948554d4853f9e1d4dec45e45e619a4829
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1b6d433257056c604500953060bf11ce3a3f5866
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434426"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007947"
 ---
 # <a name="create-a-plan-for-a-site"></a>Opprette en plan for et område
 
@@ -31,16 +30,16 @@ Produksjonsplanleggeren beregner material- og kapasitetsbehovene for produksjone
 
 
 ## <a name="create-a-materials-and-capacity-plan-for-an-item"></a>Opprette en material- og kapasitetsplan for en vare
-1. Klikk Hovedplanlegging.
+1. Klikk på Hovedplanlegging.
     * Du må gå til standard instrumentbord.  
-2. Klikk Kjør.
+2. Klikk på Kjør.
 3. Utvid delen Poster som skal inkluderes.
-4. Klikk Filter.
+4. Klikk på Filter.
 5. Merk den valgte raden i listen.
 6. Skriv inn en verdi i Kriterier-feltet.
     * Eksempel: D0001  
-7. Klikk OK.
-8. Klikk OK.
+7. Klikk på OK.
+8. Klikk på OK.
     * Dette kan ta noen minutter.  
 9. Oppdater siden.
 
@@ -52,9 +51,6 @@ Produksjonsplanleggeren beregner material- og kapasitetsbehovene for produksjone
 
 ## <a name="firm-all-the-urgent-orders-for-the-item"></a>Bekrefte alle viktige bestillinger for varen
 1. Merk eller fjern merking for alle rader i listen.
-2. Klikk Bekreft.
-3. Klikk OK.
+2. Klikk på Bekreft.
+3. Klikk på OK.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

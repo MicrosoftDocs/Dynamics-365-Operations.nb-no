@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: fb17d5e82709a34ff088774d9e9034adb714b58c
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 0029e093f524c61ff17a480ee3b881b3994ba95a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4646259"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5009457"
 ---
 # <a name="create-a-data-integrator-project-preview"></a>Opprette et dataintegratorprosjekt (forhåndsversjon)
 
@@ -73,6 +72,3 @@ Dette emnet forklarer hvordan du oppretter et dataintegratorprosjekt.
 ## <a name="privacy-notice"></a>Personvernerklæring
 
 Forhåndsversjoner (1) kan ha redusert personvern og færre sikkerhetstiltak enn Dynamics 365 Finance and Operations-tjenesten, (2) er ikke inkludert i serviceavtalen (SLA) for denne tjenesten, (3) må ikke brukes til å behandle personlige data eller andre data som er underlagt juridiske eller forskriftsmessige krav, og (4) har begrenset støtte.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
