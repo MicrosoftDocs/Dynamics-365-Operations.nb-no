@@ -11,50 +11,49 @@ ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, EcoResNomenclature, EcoResProductDimensionGroup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6871765a450295a3f308ec7e706f1b126071585f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3a15d1f4ecbf85e22bfadc1dd680d24bc56d807f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434404"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5007547"
 ---
-# <a name="create-a-product-number-nomenclature-for-predefined-product-variants"></a><span data-ttu-id="1e80e-103">Opprette en produktnummerterminologi for forhåndsdefinerte produktvarianter</span><span class="sxs-lookup"><span data-stu-id="1e80e-103">Create a product number nomenclature for predefined product variants</span></span>
+# <a name="create-a-product-number-nomenclature-for-predefined-product-variants"></a><span data-ttu-id="27f90-103">Opprette en produktnummerterminologi for forhåndsdefinerte produktvarianter</span><span class="sxs-lookup"><span data-stu-id="27f90-103">Create a product number nomenclature for predefined product variants</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="1e80e-104">Dette emnet viser hvordan du setter opp produktnummerterminologi for forhåndsdefinerte produktvarianter, og hvordan du tilordner den til riktig produktdimensjonsgruppe.</span><span class="sxs-lookup"><span data-stu-id="1e80e-104">This topic explains how to set up a product number nomenclature for predefined product variants, and how you assign it to the appropriate product dimension group.</span></span> <span data-ttu-id="1e80e-105">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="1e80e-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="1e80e-106">Den nye produktnummerterminologien tilordnes til produktdimensjonsgruppen farge og størrelse.</span><span class="sxs-lookup"><span data-stu-id="1e80e-106">The new product number nomenclature is assigned to the Color and Size product dimension group.</span></span> <span data-ttu-id="1e80e-107">Denne oppgaven vil vanligvis bli utført av en produktdesigner.</span><span class="sxs-lookup"><span data-stu-id="1e80e-107">This task would typically be done by a product designer.</span></span>
+<span data-ttu-id="27f90-104">Dette emnet viser hvordan du setter opp produktnummerterminologi for forhåndsdefinerte produktvarianter, og hvordan du tilordner den til riktig produktdimensjonsgruppe.</span><span class="sxs-lookup"><span data-stu-id="27f90-104">This topic explains how to set up a product number nomenclature for predefined product variants, and how you assign it to the appropriate product dimension group.</span></span> <span data-ttu-id="27f90-105">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="27f90-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="27f90-106">Den nye produktnummerterminologien tilordnes til produktdimensjonsgruppen farge og størrelse.</span><span class="sxs-lookup"><span data-stu-id="27f90-106">The new product number nomenclature is assigned to the Color and Size product dimension group.</span></span> <span data-ttu-id="27f90-107">Denne oppgaven vil vanligvis bli utført av en produktdesigner.</span><span class="sxs-lookup"><span data-stu-id="27f90-107">This task would typically be done by a product designer.</span></span>
 
 
-## <a name="create-a-product-number-nomenclature"></a><span data-ttu-id="1e80e-108">Opprette produktnummerterminologi</span><span class="sxs-lookup"><span data-stu-id="1e80e-108">Create a product number nomenclature</span></span>
-1. <span data-ttu-id="1e80e-109">Velg **Definisjon av produktvariantmodell**.</span><span class="sxs-lookup"><span data-stu-id="1e80e-109">Select **Product variant model definition**.</span></span>
-2. <span data-ttu-id="1e80e-110">Velg **Produktnummerterminologi**.</span><span class="sxs-lookup"><span data-stu-id="1e80e-110">Select **Product nomenclature**.</span></span>
-3. <span data-ttu-id="1e80e-111">Velg **Ny**.</span><span class="sxs-lookup"><span data-stu-id="1e80e-111">Select **New**.</span></span>
-4. <span data-ttu-id="1e80e-112">I **Navn**-feltet angir du et terminologinavn som hjelper deg med å identifisere målproduktdimensjonsgruppen, for eksempel `ColorSize`.</span><span class="sxs-lookup"><span data-stu-id="1e80e-112">In the **Name** field, enter a nomenclature name that helps to identify the target product dimension group, for example, `ColorSize`.</span></span>
-5. <span data-ttu-id="1e80e-113">Skriv inn en verdi i **Beskrivelse**-feltet.</span><span class="sxs-lookup"><span data-stu-id="1e80e-113">In the **Description** field, type a value.</span></span>
-6. <span data-ttu-id="1e80e-114">Velg **Legg til**.</span><span class="sxs-lookup"><span data-stu-id="1e80e-114">Select **Add**.</span></span>
-7. <span data-ttu-id="1e80e-115">Velg **Produktstandardnummer**.</span><span class="sxs-lookup"><span data-stu-id="1e80e-115">Select **Product master** number.</span></span>
-8. <span data-ttu-id="1e80e-116">Velg **Legg til**.</span><span class="sxs-lookup"><span data-stu-id="1e80e-116">Select **Add**.</span></span>
-9. <span data-ttu-id="1e80e-117">Velg **Tekstkonstant**.</span><span class="sxs-lookup"><span data-stu-id="1e80e-117">Select **Text constant**.</span></span>
-10. <span data-ttu-id="1e80e-118">Skriv inn en verdi i **Tekst**-feltet.</span><span class="sxs-lookup"><span data-stu-id="1e80e-118">In the **Text** field, type a value.</span></span>
-11. <span data-ttu-id="1e80e-119">Velg **Legg til**.</span><span class="sxs-lookup"><span data-stu-id="1e80e-119">Select **Add**.</span></span>
-12. <span data-ttu-id="1e80e-120">Velg **Farge**.</span><span class="sxs-lookup"><span data-stu-id="1e80e-120">Select **Color**.</span></span>
-13. <span data-ttu-id="1e80e-121">Velg **Legg til**.</span><span class="sxs-lookup"><span data-stu-id="1e80e-121">Select **Add**.</span></span>
-14. <span data-ttu-id="1e80e-122">Velg **Tekstkonstant**.</span><span class="sxs-lookup"><span data-stu-id="1e80e-122">Select **Text constant**.</span></span>
-15. <span data-ttu-id="1e80e-123">Skriv inn en verdi i **Tekst**-feltet.</span><span class="sxs-lookup"><span data-stu-id="1e80e-123">In the **Text** field, type a value.</span></span>
-16. <span data-ttu-id="1e80e-124">Velg **Legg til**.</span><span class="sxs-lookup"><span data-stu-id="1e80e-124">Select **Add**.</span></span>
-17. <span data-ttu-id="1e80e-125">Velg **Størrelse**.</span><span class="sxs-lookup"><span data-stu-id="1e80e-125">Select **Size**.</span></span>
-18. <span data-ttu-id="1e80e-126">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="1e80e-126">Close the page.</span></span>
+## <a name="create-a-product-number-nomenclature"></a><span data-ttu-id="27f90-108">Opprette produktnummerterminologi</span><span class="sxs-lookup"><span data-stu-id="27f90-108">Create a product number nomenclature</span></span>
+1. <span data-ttu-id="27f90-109">Velg **Definisjon av produktvariantmodell**.</span><span class="sxs-lookup"><span data-stu-id="27f90-109">Select **Product variant model definition**.</span></span>
+2. <span data-ttu-id="27f90-110">Velg **Produktnummerterminologi**.</span><span class="sxs-lookup"><span data-stu-id="27f90-110">Select **Product nomenclature**.</span></span>
+3. <span data-ttu-id="27f90-111">Velg **Ny**.</span><span class="sxs-lookup"><span data-stu-id="27f90-111">Select **New**.</span></span>
+4. <span data-ttu-id="27f90-112">I **Navn**-feltet angir du et terminologinavn som hjelper deg med å identifisere målproduktdimensjonsgruppen, for eksempel `ColorSize`.</span><span class="sxs-lookup"><span data-stu-id="27f90-112">In the **Name** field, enter a nomenclature name that helps to identify the target product dimension group, for example, `ColorSize`.</span></span>
+5. <span data-ttu-id="27f90-113">Skriv inn en verdi i **Beskrivelse**-feltet.</span><span class="sxs-lookup"><span data-stu-id="27f90-113">In the **Description** field, type a value.</span></span>
+6. <span data-ttu-id="27f90-114">Velg **Legg til**.</span><span class="sxs-lookup"><span data-stu-id="27f90-114">Select **Add**.</span></span>
+7. <span data-ttu-id="27f90-115">Velg **Produktstandardnummer**.</span><span class="sxs-lookup"><span data-stu-id="27f90-115">Select **Product master** number.</span></span>
+8. <span data-ttu-id="27f90-116">Velg **Legg til**.</span><span class="sxs-lookup"><span data-stu-id="27f90-116">Select **Add**.</span></span>
+9. <span data-ttu-id="27f90-117">Velg **Tekstkonstant**.</span><span class="sxs-lookup"><span data-stu-id="27f90-117">Select **Text constant**.</span></span>
+10. <span data-ttu-id="27f90-118">Skriv inn en verdi i **Tekst**-feltet.</span><span class="sxs-lookup"><span data-stu-id="27f90-118">In the **Text** field, type a value.</span></span>
+11. <span data-ttu-id="27f90-119">Velg **Legg til**.</span><span class="sxs-lookup"><span data-stu-id="27f90-119">Select **Add**.</span></span>
+12. <span data-ttu-id="27f90-120">Velg **Farge**.</span><span class="sxs-lookup"><span data-stu-id="27f90-120">Select **Color**.</span></span>
+13. <span data-ttu-id="27f90-121">Velg **Legg til**.</span><span class="sxs-lookup"><span data-stu-id="27f90-121">Select **Add**.</span></span>
+14. <span data-ttu-id="27f90-122">Velg **Tekstkonstant**.</span><span class="sxs-lookup"><span data-stu-id="27f90-122">Select **Text constant**.</span></span>
+15. <span data-ttu-id="27f90-123">Skriv inn en verdi i **Tekst**-feltet.</span><span class="sxs-lookup"><span data-stu-id="27f90-123">In the **Text** field, type a value.</span></span>
+16. <span data-ttu-id="27f90-124">Velg **Legg til**.</span><span class="sxs-lookup"><span data-stu-id="27f90-124">Select **Add**.</span></span>
+17. <span data-ttu-id="27f90-125">Velg **Størrelse**.</span><span class="sxs-lookup"><span data-stu-id="27f90-125">Select **Size**.</span></span>
+18. <span data-ttu-id="27f90-126">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="27f90-126">Close the page.</span></span>
 
-## <a name="assign-the-nomenclature-to-a-product-master"></a><span data-ttu-id="1e80e-127">Tilordne terminologien til en produktstandard</span><span class="sxs-lookup"><span data-stu-id="1e80e-127">Assign the nomenclature to a product master</span></span>
-1. <span data-ttu-id="1e80e-128">Velg **Produktdimensjonsgrupper**.</span><span class="sxs-lookup"><span data-stu-id="1e80e-128">Select **Product dimension groups**.</span></span>
-2. <span data-ttu-id="1e80e-129">Velg **produktdimensjonsgruppen SizeCol**.</span><span class="sxs-lookup"><span data-stu-id="1e80e-129">Select the **SizeCol product dimension** group.</span></span>
-3. <span data-ttu-id="1e80e-130">Velg **Rediger**.</span><span class="sxs-lookup"><span data-stu-id="1e80e-130">Select **Edit**.</span></span>
-4. <span data-ttu-id="1e80e-131">Velg **Ja** i feltet **Bruk nomenklatur**.</span><span class="sxs-lookup"><span data-stu-id="1e80e-131">Select **Yes** in the **Use nomenclature** field.</span></span>
-5. <span data-ttu-id="1e80e-132">Angi eller velg en verdi i feltet **Produktvariantnummerterminologi**.</span><span class="sxs-lookup"><span data-stu-id="1e80e-132">In the **Product variant number nomenclature** field, enter or select a value.</span></span>
-6. <span data-ttu-id="1e80e-133">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="1e80e-133">Close the page.</span></span>
+## <a name="assign-the-nomenclature-to-a-product-master"></a><span data-ttu-id="27f90-127">Tilordne terminologien til en produktstandard</span><span class="sxs-lookup"><span data-stu-id="27f90-127">Assign the nomenclature to a product master</span></span>
+1. <span data-ttu-id="27f90-128">Velg **Produktdimensjonsgrupper**.</span><span class="sxs-lookup"><span data-stu-id="27f90-128">Select **Product dimension groups**.</span></span>
+2. <span data-ttu-id="27f90-129">Velg **produktdimensjonsgruppen SizeCol**.</span><span class="sxs-lookup"><span data-stu-id="27f90-129">Select the **SizeCol product dimension** group.</span></span>
+3. <span data-ttu-id="27f90-130">Velg **Rediger**.</span><span class="sxs-lookup"><span data-stu-id="27f90-130">Select **Edit**.</span></span>
+4. <span data-ttu-id="27f90-131">Velg **Ja** i feltet **Bruk nomenklatur**.</span><span class="sxs-lookup"><span data-stu-id="27f90-131">Select **Yes** in the **Use nomenclature** field.</span></span>
+5. <span data-ttu-id="27f90-132">Angi eller velg en verdi i feltet **Produktvariantnummerterminologi**.</span><span class="sxs-lookup"><span data-stu-id="27f90-132">In the **Product variant number nomenclature** field, enter or select a value.</span></span>
+6. <span data-ttu-id="27f90-133">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="27f90-133">Close the page.</span></span>
 
