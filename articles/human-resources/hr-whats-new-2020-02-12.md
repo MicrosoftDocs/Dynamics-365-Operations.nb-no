@@ -1,8 +1,8 @@
 ---
 title: Hva er nytt eller endret i Dynamics 365 Human Resources (12. februar 2020)?
 description: Denne artikkelen beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Human Resources for 12. februar 2020.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
+manager: tfehr
 ms.date: 02/07/2020
 ms.topic: article
 ms.prod: ''
@@ -15,15 +15,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-02-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b89e022441f69825d9c9c56ecdbca2e09e461b9e
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: d9d5d88d1d2bc1d6f3ff737b79e6a323e6a5c947
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4526945"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5128095"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-12-2020"></a>Hva er nytt eller endret i Dynamics 365 Human Resources (12. februar 2020)?
 
@@ -35,9 +35,9 @@ Denne artikkelen beskriver funksjoner som enten er nye eller endret i Dynamics 3
 
 Med denne ukens utgivelse er enhetene **CompFixedEmpls** og **HcmPersonImage** nå offentlige og tilgjengelige via ODAta.
 
-## <a name="delete-employment-from-common-data-service-doesnt-work-when-employment-details-arent-active-403193"></a>Sletting av ansettelse fra Common Data Service fungerer ikke når ansettelsesdetaljer ikke er aktive (403193)
+## <a name="delete-employment-from-dataverse-doesnt-work-when-employment-details-arent-active-403193"></a>Sletting av ansettelse fra Dataverse fungerer ikke når ansettelsesdetaljer ikke er aktive (403193)
 
-Denne endringen tillater nå sletting av ansettelse via Common Data Service når det ikke finnes noen aktive ansattdetaljer.
+Denne endringen tillater nå sletting av ansettelse via Dataverse når det ikke finnes noen aktive ansattdetaljer.
 
 ## <a name="course-registration-workflow-changes-status-to-complete-and-errors-after-second-approval-409749"></a>Arbeidsflyten for kursregistrering endrer status til fullført og feil etter andre godkjenning (409749)
 
@@ -57,9 +57,9 @@ Følgende forhåndsversjonsfunksjoner er tilgjengelige fra 3. februar 2020:
 
 Platform Update 32 er snart tilgjengelig. [Finn ut mer om Platform Update 32 her](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32).
 
-### <a name="updated-common-data-service-solution"></a>Oppdatert Common Data Service-løsning
+### <a name="updated-dataverse-solution"></a>Oppdatert Dataverse-løsning
 
-En ny Common Data Service-løsning vil snart være tilgjengelig med følgende endringer:
+En ny Dataverse-løsning vil snart være tilgjengelig med følgende endringer:
 
 | Beskrivelse | Vekslepenger |
 | ----------------------------------------- | --- |
@@ -70,7 +70,7 @@ En ny Common Data Service-løsning vil snart være tilgjengelig med følgende en
 | Nye enheter for oppsett av variabel kompensasjon | **Type variabel kompensasjonsplan**</br>**Variabel plan for kompensasjon**</br>**Overdragelsesregler**</br>**Nivå for variabel kompensasjonsplan** |
 | Ny enhet, **Ansettelse i arbeiderkalender** | **Arbeidskalenderenhet** lagt til |
 | Ny enhet, **Lønnstillingsdetaljer** | **Lønnsstillingsdetaljer** lagt til |
-| Ny **Tittel**-enhet | **Tittel** lagt til. Den nye **Tittel**-enheten blir tatt med i synkroniseringsprosessen mellom Human Resources og Common Data Service. Det blir i utgangspunktet ikke referert fra enhetene **Stilling** eller **Jobb**. |
+| Ny **Tittel**-enhet | **Tittel** lagt til. Den nye **Tittel**-enheten blir tatt med i synkroniseringsprosessen mellom Human Resources og Dataverse. Det blir i utgangspunktet ikke referert fra enhetene **Stilling** eller **Jobb**. |
 
 ## <a name="see-also"></a>Se også
 
@@ -78,5 +78,3 @@ En ny Common Data Service-løsning vil snart være tilgjengelig med følgende en
 [Oversikt over lanseringsbølge 2 i 2019 for Dynamics 365 Human Resources](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Oppdatere prosess](hr-admin-setup-update-process.md)</br>
 [Behandle funksjoner](hr-admin-manage-features.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

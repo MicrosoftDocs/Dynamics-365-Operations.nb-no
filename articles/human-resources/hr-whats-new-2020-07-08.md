@@ -1,8 +1,8 @@
 ---
 title: Hva er nytt eller endret i Dynamics 365 Human Resources (08. juli 2020)
 description: Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Human Resources for 8. juli 2020.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
+manager: tfehr
 ms.date: 07/08/2020
 ms.topic: article
 ms.prod: ''
@@ -15,15 +15,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ba0bb54b44f66aa73056667a93a3f8e6f7f618ee
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 14dfd925009cb2a9d40044e27f28521ff4d331b7
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528479"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130403"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-july-8-2020"></a>Hva er nytt eller endret i Dynamics 365 Human Resources (8. juli 2020)
 
@@ -71,9 +71,9 @@ Opprettede og endrede systemfelt er nå aktivert i tabellen **WorkCalendarEmploy
 
 Denne versjonen korrigerer en feil (nullreferanse) i strømlinjeformet ansattregistrering når du ansetter en person ved hjelp av alternativet for **Ansett og legg til detaljer**.
 
-## <a name="changes-made-in-the-common-data-service-worker-entity-dont-reflect-in-human-resources-455652"></a>Endringer som er gjort i arbeiderenheten i Common Data Service, gjenspeiles ikke i Human Resources (455652)
+## <a name="changes-made-in-the-dataverse-worker-entity-dont-reflect-in-human-resources-455652"></a>Endringer som er gjort i arbeiderenheten i Dataverse, gjenspeiles ikke i Human Resources (455652)
 
-Endringer som er gjort i følgende felt i **Arbeider**-enheten i Common Data Service, vises nå i Human Resources:
+Endringer som er gjort i følgende felt i **Arbeider**-enheten i Dataverse, vises nå i Human Resources:
 
 - **Fungerer hjemmefra**
 - **Ansiennitetsdato**
@@ -131,9 +131,9 @@ En DMF-enhet er nå tilgjengelig for avsetningssuspensjoner.
 
 ## <a name="coming-soon"></a>Kommer snart
 
-## <a name="checklist-entities-included-in-common-data-service"></a>Sjekklisteenheter inkludert i Common Data Service
+## <a name="checklist-entities-included-in-dataverse"></a>Sjekklisteenheter inkludert i Dataverse
 
-Sjekklisteenheter for pålasting, avlasting, overføringer og forretningsprosesser vil snart være tilgjengelige i Common Data Service.
+Sjekklisteenheter for pålasting, avlasting, overføringer og forretningsprosesser vil snart være tilgjengelige i Dataverse.
 
 ## <a name="see-also"></a>Se også
 
@@ -141,6 +141,3 @@ Sjekklisteenheter for pålasting, avlasting, overføringer og forretningsprosess
 [Oversikt over lanseringsbølge 2 i 2019 for Dynamics 365 Human Resources](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Oppdatere prosess](hr-admin-setup-update-process.md)</br>
 [Behandle funksjoner](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

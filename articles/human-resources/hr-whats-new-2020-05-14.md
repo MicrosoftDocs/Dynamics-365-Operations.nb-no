@@ -1,8 +1,8 @@
 ---
 title: Hva er nytt eller endret i Dynamics 365 Human Resources (14. mai 2020)
 description: Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Human Resources for 14. mai 2020.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
+manager: tfehr
 ms.date: 05/14/2020
 ms.topic: article
 ms.prod: ''
@@ -15,15 +15,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-05-14
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 76ca497cc7fabf737c8a0ee71363f22fd4201ea8
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: b8d65236d316035722451a871afabedc6ab73f7a
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528503"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5127855"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-14-2020"></a>Hva er nytt eller endret i Dynamics 365 Human Resources (14. mai 2020)
 
@@ -35,9 +35,9 @@ Dette emnet beskriver funksjoner som enten er nye eller endret i Dynamics 365 Hu
 
 Plattformendringer er inkludert i denne ukens frigivelse. Hvis du vil ha mer informasjon, kan du se [Platformoppdateringer for versjon 10.0.10 av Finance and Operations-apper (mai 2020)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34). Denne versjonen inneholder feilrettinger og endringer i lagrede visninger.
  
-## <a name="ensure-common-data-service-picklists-are-consistent-with-leave-enums-436343"></a>Sørg for at plukklister i Common Data Service er konsekvente med permisjonsopplistinger (436343)
+## <a name="ensure-dataverse-picklists-are-consistent-with-leave-enums-436343"></a>Sørg for at plukklister i Dataverse er konsekvente med permisjonsopplistinger (436343)
 
-Plukklister i Common Data Service er konsekvente med permisjonsopplistinger.
+Plukklister i Dataverse er konsekvente med permisjonsopplistinger.
 
 ## <a name="allow-users-to-configure-leave-request-workflow-based-on-the-request-amount-300044"></a>Tillat brukere å konfigurere en arbeidsflyt for permisjonsforespørsel basert på forespørselsbeløpet (300044)
 
@@ -75,7 +75,7 @@ Denne endringen korrigerer en feil når en permisjonsplan har to permisjonstyper
 
 Med denne endringen er banneret Komme i gang skjult for brukere som ikke er systemadministratorer eller databehandlingsadministratorer. 
 
-## <a name="the-common-data-service-worker-address-entity-works-differently-in-terms-of-date-time-effective-dates-in-human-resources-425071"></a>Enheten Adresse for Common Data Service-arbeider fungerer annerledes når det gjelder datoer som er gyldige i Human Resources (425071)
+## <a name="the-dataverse-worker-address-entity-works-differently-in-terms-of-date-time-effective-dates-in-human-resources-425071"></a>Enheten Adresse for Dataverse-arbeider fungerer annerledes når det gjelder datoer som er gyldige i Human Resources (425071)
 
 Denne endringen holder adresseinformasjon justert i bestemte scenarioer, basert på datoene til adressen.
 
@@ -119,5 +119,3 @@ Du kan angi en type overføringspermisjon for overføringssaldoer der overførin
 [Oversikt over lanseringsbølge 2 i 2019 for Dynamics 365 Human Resources](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Oppdatere prosess](hr-admin-setup-update-process.md)</br>
 [Behandle funksjoner](hr-admin-manage-features.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

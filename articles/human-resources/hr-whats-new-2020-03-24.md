@@ -1,8 +1,8 @@
 ---
 title: Hva er nytt eller endret i Dynamics 365 Human Resources (24. mars 2020)?
 description: Denne artikkelen beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Human Resources for 24. mars 2020.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
+manager: tfehr
 ms.date: 03/24/2020
 ms.topic: article
 ms.prod: ''
@@ -15,15 +15,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-03-24
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 87b7ea660d94c6d564a8f09d4133b098e0ecedf9
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: d3f9595bd19026e0dad0a2a2ad3708bd4f8ca1ba
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4526927"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5127951"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-march-24-2020"></a>Hva er nytt eller endret i Dynamics 365 Human Resources (24. mars 2020)?
 
@@ -59,7 +59,7 @@ Følgende forhåndsversjonsfunksjoner er tilgjengelige fra 3. februar 2020:
 
 - **Forhåndsversjonsfunksjonen Fordelsbehandling** – For mer informasjon, inkludert kjente problemer, se [Oversikt over Fordelsbehandling](hr-benefits-management-overview.md).
 
-## <a name="common-data-service-solution-is-now-available-with-the-following-changes"></a>Common Data Service-løsningen er nå tilgjengelig med følgende endringer:
+## <a name="dataverse-solution-is-now-available-with-the-following-changes"></a>Dataverse-løsningen er nå tilgjengelig med følgende endringer:
 
 | beskrivelse | Vekslepenger |
 | --- | --- |
@@ -71,12 +71,12 @@ Følgende forhåndsversjonsfunksjoner er tilgjengelige fra 3. februar 2020:
 | Nye enheter for oppsett av variabel kompensasjon | <ul><li>**Type variabel kompensasjonsplan**</li><li>**Variabel plan for kompensasjon**</li><li>**Overdragelsesregler**</li><li>**Nivå for variabel kompensasjonsplan**</li></ul> |
 | Ny enhet, **Ansettelse i arbeiderkalender** | <ul><li>**Arbeidskalenderenhet** lagt til</li></ul> |
 | Ny enhet, **Lønnstillingsdetaljer** | <ul><li>**Lønnsstillingsdetaljer** lagt til</li></ul> |
-| Ny **Tittel**-enhet | <ul><li>**Tittel** lagt til</li></ul>Den nye **Tittel**-enheten er inkludert i Common Data Service, men refereres ikke til fra **Stilling**- eller **Jobb**-enhetene på dette tidspunktet. |
+| Ny **Tittel**-enhet | <ul><li>**Tittel** lagt til</li></ul>Den nye **Tittel**-enheten er inkludert i Dataverse, men refereres ikke til fra **Stilling**- eller **Jobb**-enhetene på dette tidspunktet. |
 
 > [!NOTE]
-> Finansdimensjoner for både stillinger og ansettelse tilbyr en-veis integrering for oppdateringer fra Human Resources til Common Data Service. Finansdimensjon-oppdateringer synkroniseres for øyeblikket ikke fra Common Data Service til Human Resources.
+> Finansdimensjoner for både stillinger og ansettelse tilbyr en-veis integrering for oppdateringer fra Human Resources til Dataverse. Finansdimensjon-oppdateringer synkroniseres for øyeblikket ikke fra Dataverse til Human Resources.
 
-De neste ukene vil disse enhetsendringene være tilgjengelige i alle miljøer. Slik installerer du den nyeste Common Data Service-løsningen for Human Resources manuelt:
+De neste ukene vil disse enhetsendringene være tilgjengelige i alle miljøer. Slik installerer du den nyeste Dataverse-løsningen for Human Resources manuelt:
 
 1.  Gå til [Power Platform-administrasjonssenteret](https://admin.powerplatform.microsoft.com).
 
@@ -122,5 +122,3 @@ Enheten **Ansettelsesdetalj** er oppdatert med følgende felt: **Lønnsfrekvens*
 [Oversikt over lanseringsbølge 2 i 2019 for Dynamics 365 Human Resources](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Oppdatere prosess](hr-admin-setup-update-process.md)</br>
 [Behandle funksjoner](hr-admin-manage-features.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

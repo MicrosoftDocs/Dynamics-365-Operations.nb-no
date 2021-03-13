@@ -2,7 +2,7 @@
 title: Definere komponentene for en jobb
 description: Denne artikkelen beskriver de grunnleggende elementene som en jobb kan inneholde, og gir eksempler på hvordan du kan bruke disse elementene i organisasjonen.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,18 +12,18 @@ ms.search.form: HcmJob, HcmJobFunction, HcmJobTask, HcmTitle, HcmPersonnelManage
 audience: Application User
 ms.author: anbichse
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources, Retail
+ms.search.scope: Human Resources
 ms.custom: 269054
 ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 69759c0488563a904f6e80afacb1802611ab1930
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 22f147f85db1ef3423608578e64df7f522564e0d
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419883"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130187"
 ---
 # <a name="set-up-the-components-of-a-job"></a>Definere komponentene for en jobb
 
@@ -87,6 +87,3 @@ Du bruker ansvarsområder for å angi arbeidsrollene, prosessene og produktene s
 
 ## <a name="steps-for-creating-a-job"></a>Fremgangsmåter for å opprette en jobb
 Se artikkelen [Definere nye jobber](../fin-and-ops/hr/tasks/define-new-jobs.md) for trinnvis fremgangsmåte for å opprette en ny jobb. 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

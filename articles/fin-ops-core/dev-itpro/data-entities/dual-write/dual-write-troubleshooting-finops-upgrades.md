@@ -1,5 +1,5 @@
 ---
-title: Feilsøke problemer i forbindelse med oppgraderinger av Finance and Operations-apper
+title: Feilsøke problemer med oppgradering av Finance and Operations-apper
 description: Dette emnet inneholder feilsøkingsinformasjon som kan hjelpe deg med å løse problemer knyttet til oppgraderinger av Finance and Operations-apper.
 author: RamaKrishnamoorthy
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: c76b35ed3af766f42484a118a4a0407d969b5240
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: a11ce426d7f30b6b124bd2022514a0201c2b332c
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683605"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5131227"
 ---
-# <a name="troubleshoot-issues-related-to-upgrades-of-finance-and-operations-apps"></a>Feilsøke problemer i forbindelse med oppgraderinger av Finance and Operations-apper
+# <a name="troubleshoot-issues-from-upgrades-of-finance-and-operations-apps"></a>Feilsøke problemer med oppgradering av Finance and Operations-apper
 
 [!include [banner](../../includes/banner.md)]
 
@@ -42,7 +42,7 @@ Dette emnet inneholder feilsøkingsinformasjon om dobbel skriving-integrasjon me
 
 **Nødvendig rolle for å løse problemet:** Systemadministrator
 
-Det kan hende du får en feilmelding som ligner på følgende eksempel når du prøver å bruke **DualWriteProjectConfiguration**-enheten til å oppdatere en Finance and Operations-app til Platform update 30.
+Det kan hende du får en feilmelding som ligner på følgende eksempel når du prøver å bruke tabellen **DualWriteProjectConfiguration** til å oppdatere en Finance and Operations-app til Platform update 30.
 
 ```console
 Infolog diagnostic message: 'Cannot select a row in Dual write project sync (DualWriteProjectConfiguration). The SQL database has issued an error.' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'Object Server Database Synchronizer: ' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: '[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'ISDELETE'.' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'SELECT T1.PROJECTNAME,T1.EXTERNALENTITYNAME,T1.INTERNALENTITYNAME,T1.EXTERNALENVIRONMENTURL,T1.STATUS,T1.ENABLEBATCHLOOKUP,T1.PARTITIONMAP,T1.QUERYFILTEREXPRESSION,T1.INTEGRATIONKEY,T1.ISDELETE,T1.ISDEBUGMODE,T1.RECVERSION,T1.PARTITION,T1.RECID FROM DUALWRITEPROJECTCONFIGURATION T1 WHERE (PARTITION=5637144576)' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'session 1043 (Admin)' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'Stack trace: Call to TTSCOMMIT without first calling TTSBEGIN.' on category 'Error'.
@@ -62,7 +62,7 @@ Følg fremgangsmåten nedenfor for å løse problemet.
 8. Velg **Synkroniser** for å utføre en fullstendig databasesynkronisering.
 9. Når den fullstendige databasesynkroniseringen er fullført, kjører du trinnet for databasesynkronisering på nytt i Microsoft Dynamics Lifecycle Services (LCS) og bruker de manuelle oppgraderingsskriptene, slik at du kan fortsette med oppdateringen.
 
-## <a name="missing-entity-fields-issue-on-maps"></a>Problem med manglende enhetsfelt på tilordninger
+## <a name="missing-table-columns-issue-on-maps"></a>Problemer med manglende tabellkolonner i tilordninger
 
 **Nødvendig rolle for å løse problemet:** Systemadministrator
 
@@ -70,27 +70,24 @@ På siden **Dobbel skriving** kan du få en feilmelding som ligner på følgende
 
 *Manglende kildefelt feltnavn \<field name\> i skjemaet.*
 
-![Eksempel på feilmeldingen om manglende kildefelt](media/error_missing_field.png)
+![Eksempel på feilmeldingen om manglende kildekolonne](media/error_missing_field.png)
 
-Du kan løse problemet ved først å følge disse trinnene for å kontrollere at feltene finnes i enheten.
+Du kan løse problemet ved først å følge disse trinnene for å kontrollere at kolonnene finnes i tabellen.
 
 1. Logg på den virtuelle maskinen for Finance and Operations-appen.
-2. Gå til **Arbeidsområder \> Databehandling**, velg flisen **Rammeverkparametere** og deretter, i fanen **Tabellinnstillinger**, velger du **Oppdater enhetsliste** for å oppdatere tabellene.
-3. Gå til **Arbeidsområder \> Databehandling**, velg fanen **Datatabeller**, og kontroller at enheten finnes i listen. Hvis enheten ikke er oppført, logger du på den virtuelle maskinen for Finance and Operations-appen og kontrollerer at enheten er tilgjengelig.
+2. Gå til **Arbeidsområder \> Databehandling**, velg flisen **Rammeverkparametere** og deretter, i fanen **Tabellinnstillinger**, velger du **Oppdater tabelliste** for å oppdatere tabellene.
+3. Gå til **Arbeidsområder \> Databehandling**, velg fanen **Datatabeller**, og kontroller at tabellen finnes i listen. Hvis tabellen ikke er oppført, logger du på den virtuelle maskinen for Finance and Operations-appen og kontrollerer at tabellen er tilgjengelig.
 4. Åpne **Tabelltilordning**-siden fra **Dobbel skriving**-siden i Finance and Operations-appen.
-5. Velg **Oppdater enhetsliste** for å fylle ut feltene i tabelltilordningene automatisk.
+5. Velg **Oppdater tabelliste** for å fylle ut kolonnene i tabelltilordningene automatisk.
 
 Hvis problemet fremdeles ikke er løst, følger du denne fremgangsmåten.
 
 > [!IMPORTANT]
-> Denne fremgangsmåten fører deg gjennom prosessen med å slette en enhet og deretter legge den til på nytt. Hvis du vil unngå problemer, må du følge fremgangsmåten nøye.
+> Denne fremgangsmåten fører deg gjennom prosessen med å slette en tabell og deretter legge den til på nytt. Hvis du vil unngå problemer, må du følge fremgangsmåten nøye.
 
 1. I Finance and Operations-appen går du til **Arbeidsområder \> Databehandling** og velger flisen **Datatabeller**.
-2. Finn enheten som mangler attributtet. Klikk **Endre måltilordning** på verktøylinjen.
-3. Klikk **Generer tilordning** under **Tilordne oppsamling til mål**.
+2. Finn tabellen som mangler attributtet. Klikk **Endre måltilordning** på verktøylinjen.
+3. Klikk på **Generer tilordning** under **Tilordne oppsamling til mål**.
 4. Åpne **Tabelltilordning**-siden fra **Dobbel skriving**-siden i Finance and Operations-appen.
 5. Hvis attributtet ikke fylles ut automatisk på kartet, legger du det til manuelt ved å klikke **Legg til attributt** og deretter **Lagre**. 
 6. Velg kartet, og klikk **Kjør**.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

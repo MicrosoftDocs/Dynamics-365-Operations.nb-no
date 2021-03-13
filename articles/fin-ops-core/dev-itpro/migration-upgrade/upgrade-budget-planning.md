@@ -1,7 +1,7 @@
 ---
 title: Oppgradere budsjettplanlegging
-description: Det er store forskjeller i budsjettplanlegging mellom Microsoft Dynamics AX 2012 og Dynamics 365 Finance. Noen funksjoner ble ikke oppgradert og krever derfor ny konfigurasjon. Dette emnet beskriver hva som må konfigureres på nytt og beskriver også nye funksjoner som må vurderes etter at oppgraderingen er fullført.
-author: ryansandness
+description: Dette emnet beskriver hva som må konfigureres på nytt og beskriver også nye funksjoner som må vurderes etter at oppgraderingen er fullført.
+author: panolte
 manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
@@ -13,15 +13,15 @@ ms.reviewer: sericks
 ms.custom: 272923
 ms.assetid: 17cdfe74-bdfd-466a-9bdd-c12583f250c7
 ms.search.region: Global
-ms.author: ryansand
+ms.author: panolte
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 1c62771170212039112c777e55d45a0d88d2f49d
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1b1ac233feb124fea261f65f16656fea1ac2ae37
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681004"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5127185"
 ---
 # <a name="upgrade-budget-planning"></a>Oppgradere budsjettplanlegging
 
@@ -67,7 +67,7 @@ I eksemplet nedenfor brukes en oppgradert budsjettprosess fra AX 2012-demodata f
 
 ### <a name="define-columns-and-layouts"></a>Definere kolonner og oppsett
 
-1. På siden **Budsjettplanleggingsprosess**, klikk **Kolonner**-kategorien. Som del av oppgraderingen vil nye kolonner automatisk opprettes basert på dine budsjettplanlinjer. Kolonner bruker nå dynamiske datoer, der klokkeslett og år forskyves fra regnskapsåret som er definert i budsjettplanleggingsprosessen. **Obs!** Av ytelseshensyn under oppgraderingen antas det at alle budsjettsykluser representerer kalenderår, ikke regnskapsår. Hvis du bruker regnskapsår, må du redigere for riktig tilordning av kolonner til regnskapsåret. Disse elementene finnes for eksempel i AX 2012:
+1. På siden **Budsjettplanleggingsprosess**, klikk **Kolonner**-fanen. Som del av oppgraderingen vil nye kolonner automatisk opprettes basert på dine budsjettplanlinjer. Kolonner bruker nå dynamiske datoer, der klokkeslett og år forskyves fra regnskapsåret som er definert i budsjettplanleggingsprosessen. **Obs!** Av ytelseshensyn under oppgraderingen antas det at alle budsjettsykluser representerer kalenderår, ikke regnskapsår. Hvis du bruker regnskapsår, må du redigere for riktig tilordning av kolonner til regnskapsåret. Disse elementene finnes for eksempel i AX 2012:
    -   Budsjettplanscenarioer: Faktisk, Grunnverdi, Budsjettforespørsel, Budsjett godkjent
    -   Budsjettplanlinjer for alle scenarier i 2017 og faktiske data for både 2017 og 2016
 
@@ -100,7 +100,7 @@ I eksemplet nedenfor brukes en oppgradert budsjettprosess fra AX 2012-demodata f
 ## <a name="additional-features-to-consider-in-your-budgeting-process"></a>Flere funksjoner som bør vurderes i budsjetteringsprosessen
 ### <a name="budget-planning-workspace"></a>Arbeidsområde for budsjettplanlegging
 
-Dette arbeidsområdet er utformet for både budsjetteier og individuelle budsjettbidragsytere. Det inneholder koblinger til budsjettdokumenter som krever din oppmerksomhet. Det har også rapporter og nøkkelytelsesindikatorer (KPI-er) for budsjettprosessen. Budsjettadministrator kan angi gjeldende budsjettplanleggingsprosess for alle brukere på siden **Budsjetteringsparametere**. I kategorien **Innstillinger for arbeidsområde** inneholder hurtigfanen **Budsjettplanlegging** et felt der du kan velge budsjettplanleggingsprosessen.
+Dette arbeidsområdet er utformet for både budsjetteier og individuelle budsjettbidragsytere. Det inneholder koblinger til budsjettdokumenter som krever din oppmerksomhet. Det har også rapporter og nøkkelytelsesindikatorer (KPI-er) for budsjettprosessen. Budsjettadministrator kan angi gjeldende budsjettplanleggingsprosess for alle brukere på siden **Budsjetteringsparametere**. I fanen **Innstillinger for arbeidsområde** inneholder hurtigfanen **Budsjettplanlegging** et felt der du kan velge budsjettplanleggingsprosessen.
 
 ### <a name="alternate-layouts"></a>Alternative oppsett
 
@@ -162,6 +162,3 @@ Flere dataenheter er lagt til for å muliggjøre rask implementering av budsjett
 
 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

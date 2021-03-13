@@ -1,8 +1,8 @@
 ---
 title: Hva er nytt eller endret i Dynamics 365 Human Resources (03. februar 2020)?
 description: Denne artikkelen beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Human Resources for 3. februar 2020.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -15,15 +15,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b9efcea4fa52f73ac09a3e0ae74582fc563aeb64
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 50112be7321c56da297d6d26f8aaf29264fc3c6c
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527008"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5128143"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-3-2020"></a>Hva er nytt eller endret i Dynamics 365 Human Resources (3. februar 2020)?
 
@@ -45,7 +45,7 @@ Følgende forhåndsversjonsfunksjoner er tilgjengelige fra 3. februar 2020:
 
 ## <a name="coming-soon"></a>Kommer snart
 
-En ny Common Data Service-løsning vil snart være tilgjengelig med følgende endringer:
+En ny Dataverse-løsning vil snart være tilgjengelig med følgende endringer:
 
 | Beskrivelse | Vekslepenger |
 | ----------------------------------------- | --- |
@@ -56,7 +56,7 @@ En ny Common Data Service-løsning vil snart være tilgjengelig med følgende en
 | Nye enheter for oppsett av variabel kompensasjon | **Type variabel kompensasjonsplan**</br>**Variabel plan for kompensasjon**</br>**Overdragelsesregler**</br>**Nivå for variabel kompensasjonsplan** |
 | Ny enhet, **Ansettelse i arbeiderkalender** | **Arbeidskalenderenhet** lagt til |
 | Ny enhet, **Lønnstillingsdetaljer** | **Lønnsstillingsdetaljer** lagt til |
-| Ny **Tittel**-enhet | **Tittel** lagt til. Den nye **Tittel**-enheten blir tatt med i synkroniseringsprosessen mellom Human Resources og Common Data Service. Det blir i utgangspunktet ikke referert fra enhetene **Stilling** eller **Jobb**. |
+| Ny **Tittel**-enhet | **Tittel** lagt til. Den nye **Tittel**-enheten blir tatt med i synkroniseringsprosessen mellom Human Resources og Dataverse. Det blir i utgangspunktet ikke referert fra enhetene **Stilling** eller **Jobb**. |
 
 ## <a name="see-also"></a>Se også
 
@@ -65,6 +65,3 @@ En ny Common Data Service-løsning vil snart være tilgjengelig med følgende en
 [Oppdatere prosess](hr-admin-setup-update-process.md)</br>
 [Behandle funksjoner](hr-admin-manage-features.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

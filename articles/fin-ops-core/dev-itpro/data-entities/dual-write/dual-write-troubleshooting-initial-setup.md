@@ -1,6 +1,6 @@
 ---
-title: Feilsøke problemer under første oppsett
-description: Dette emnet inneholder feilsøkingsinformasjon som kan hjelpe deg med å løse problemer som kan oppstå under det første oppsettet av integrering mellom Finance and Operations-apper og Dataverse.
+title: Feilsøke problemer under førstegangsinstallasjon
+description: Dette emnet inneholder informasjon som kan hjelpe deg å løse problemer som oppstår under første konfigurasjon av integrering med dobbel skriving.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 03/16/2020
@@ -18,14 +18,14 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 5ac6ec5003794fb5875fed6a2c4403c1444ab8b2
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: cfbc1ab3ef6d47f6ec2d8ca4ca4b8940784e6e49
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685593"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5129987"
 ---
-# <a name="troubleshoot-issues-during-initial-setup"></a>Feilsøke problemer under første oppsett
+# <a name="troubleshoot-issues-during-initial-setup"></a>Feilsøke problemer under førstegangsinstallasjon
 
 [!include [banner](../../includes/banner.md)]
 
@@ -71,13 +71,13 @@ Følg denne fremgangsmåten for å gi samtykke for appen.
 
 ## <a name="verify-that-company-data-and-dual-write-teams-are-set-up-correctly-during-linking"></a>Kontroller at firmadata og team med dobbel skriving er riktig konfigurert under kobling
 
-For å sikre at dobbeltskriving fungerer som det skal, opprettes firmaene du velger under konfigurasjonen, i Dataverse-miljøet. Som standard er disse firmaene skrivebeskyttet, og egenskapen **IsDualWriteEnable** er satt til **Sann**. I tillegg opprettes standard eier av forretningsenheten og teamet og inkluderer firmanavnet. Før du aktiverer tilordningene, må du kontrollere at standard teameier er angitt. Gjør følgende for å finne **Firmaer (CDM\_Firma)**-enheten.
+For å sikre at dobbeltskriving fungerer som det skal, opprettes firmaene du velger under konfigurasjonen, i Dataverse-miljøet. Som standard er disse firmaene skrivebeskyttet, og egenskapen **IsDualWriteEnable** er satt til **Sann**. I tillegg opprettes standard eier av forretningsenheten og teamet og inkluderer firmanavnet. Før du aktiverer tilordningene, må du kontrollere at standard teameier er angitt. Gjør følgende for å finne tabellen **Firmaer (CDM\_Firma)**.
 
 1. Velg filteret øverst til høyre i den modelldrevne appen i Dynamics 365.
 2. Velg **Firma** fra rullegardinlisten.
 3. Velg **Kjør** for å se resultatene.
 4. Velg firmaet som var koblet da du konfigurerte dobbel skriving.
-5. Kontroller at feltet **Standard eiende team** har en verdi. I illustrasjonen nedenfor er **Standard eiende team** satt til **USMF Dual Write**.
+5. Kontroller at kolonnen **Standard eiende team** har en verdi. I illustrasjonen nedenfor er kolonnen **Standard eiende team** satt til **USMF Dual Write**.
 
     ![Kontrollere standard eiende team](media/default_owning_team.png)
 
@@ -88,6 +88,3 @@ Du kan få følgende feilmelding når du prøver å aktivere tilordninger:
 *Dobbel skriving-feil - Plugin-registrering mislyktes: \[(Kan ikke få partisjonskart for prosjektet DWM-1ae35e60-4bc2-4905-88ea-69efd3b29260-7f12cb89-1550-42e2-858e-4761fc1443ea. Feil Overskrider de maksimale partisjonene som er tillatt for tilordning av DWM-1ae35e60-4bc2-4905-88ea-69efd3b29260-7f12cb89-1550-42e2-858e-4761fc1443ea)\], Det oppstod en eller flere feil.*
 
 Gjeldende grense når du kobler miljøene er omtrent 40 juridiske tabeller. Denne feilen oppstår hvis du prøver å aktivere tilordninger, og flere enn 40 juridiske tabeller er koblet mellom miljøene.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

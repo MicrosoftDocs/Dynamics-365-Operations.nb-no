@@ -2,7 +2,7 @@
 title: Opprette avdelinger og inkludere dem i avdelingshierarkiet
 description: En avdeling er en driftsenhet som representerer en kategori eller et funksjonsområde i en organisasjon. En avdeling er ansvarlig for et bestemt område i organisasjonen, for eksempel salg, regnskap eller Personale. Du kan bruke avdelinger til å rapportere om funksjonsområder. Avdelinger kan ha ansvar for fortjeneste og tap.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -11,19 +11,19 @@ ms.technology: ''
 ms.search.form: HierarchyDesigner, OMOperatingUnit, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 63213
 ms.assetid: 5dbc62fc-0184-4c0e-9856-e735fc68799e
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 8dbaddf0165f36db07378e817639fd8b17a4a96f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ab9d16c8b8596f0890e0256f33608fda99a5312f
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419827"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130379"
 ---
 # <a name="create-departments-and-include-them-in-the-department-hierarchy"></a>Opprette avdelinger og inkludere dem i avdelingshierarkiet
 
@@ -54,6 +54,3 @@ Bruk følgende fremgangsmåte for å legge til en avdeling i avdelingshierarkiet
 
 ## <a name="steps-for-creating-a-department"></a>Fremgangsmåter for å opprette en avdeling
 Se artikkelen [Definere nye avdelinger](../fin-and-ops/hr/tasks/define-new-departments.md) for trinnvis fremgangsmåte for å opprette en ny avdeling. 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

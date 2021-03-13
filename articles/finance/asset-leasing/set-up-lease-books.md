@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 28518341544327f1983e563b719b0f455b6e1c43
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
+ms.openlocfilehash: 948860bb064dde1085fef4a74da2d9a600892294
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4446594"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5131011"
 ---
 # <a name="set-up-lease-books"></a>Definere leietablåer
 
@@ -53,6 +52,4 @@ Hvis du vil opprette et leietablå, følger du disse trinnene.
     | Korttidsterskel                     | Angi antall måneder som skal brukes som en terskel for kortsiktige leieavtaler. Hvis leieperioden er mindre enn eller lik antallet måneder du angir her, vil systemet klassifisere leieavtalen som en kortsiktig leieavtale, og utsatt leie vil bli brukt. |
     | Terskel for lav verdi                      | Angi et beløp som skal brukes som terskel for lavverdileie. Hvis virkelig verdi for aktivumet er mindre enn eller lik verdien du angir her, vil systemet klassifisere leieavtalen som en lavverdileie, og utsatt leie vil bli brukt. |
     | Betal til leverandør                            | Sett dette alternativet til **Ja** for å tillate at leiebetalinger kan posteres, som en faktura, til leverandørkontoen som er angitt for hver leieavtale. Når en leiebetaling posteres, vil leverandørkontoen bli kreditert. Hvis dette alternativet er satt til **Nei**, vil kontoen som er angitt for **Leiebetaling**-posteringstypen på siden **Parametere for leiepostering**, bli kreditert i stedet. |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+    | Leiekonvensjon                       | Velg konvensjonen for startdatoen for leieavtalen:<ul><li><b>Ingen</b> – Bruk startdatoen for leieavtalen som startdato.</li><li><b>Hele måneden</b> – Bruk den første dagen i måneden som startdatoen for leieavtalen faller på, som startdato.</li></ul><p>Hvis du velger <b>Ingen</b>, er det en risiko for at planene for nedbetaling av gjeld og avskrivning av aktiva vil avsette og postere utgifter midt i måneden i stedet for på slutten av måneden. Hvis du velger <b>Hele måneden</b>, sikrer du at systemet vil begynne å ta hensyn til utleieavtalen på den første dagen i måneden, og at hele månedens utgift blir avsatt og postert på den siste dagen i måneden.</p><p><strong>Merk: </strong>Funksjonen for leiekonvensjoner må aktiveres ved hjelp av funksjonsadministrasjon. I arbeidsområdet for <b>Funksjonsbehandling</b> finner og velger du funksjonen for <b>Leiekonvensjon for aktivaleie</b>, og deretter velger du <b>Aktiver nå</b>.</p> |

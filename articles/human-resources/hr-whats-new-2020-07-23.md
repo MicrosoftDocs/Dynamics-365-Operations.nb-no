@@ -1,8 +1,8 @@
 ---
 title: Hva er nytt eller endret i Dynamics 365 Human Resources (23. juli 2020)
 description: Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Human Resources for 23. juli 2020.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
+manager: tfehr
 ms.date: 07/23/2020
 ms.topic: article
 ms.prod: ''
@@ -15,15 +15,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d0672e3039f54a4591db49eee00d69bf5e4278fd
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: f5e10d6d1dedfc251a1a00110b50c9096314d75b
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528455"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5127527"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-july-23-2020"></a>Hva er nytt eller endret i Dynamics 365 Human Resources (23. juli 2020)
 
@@ -33,7 +33,7 @@ Dette emnet beskriver funksjoner som enten er nye eller endret i Dynamics 365 Hu
 
 ## <a name="deleting-financial-dimensions-on-a-position-doesnt-work-as-expected-445476"></a>Sletting av finansdimensjoner for en stilling fungerer ikke som forventet (445476)
 
-Hvis du fjerner dimensjoner fra en stilling, fjernes de samme posisjonene nå fra Common Data Service.
+Hvis du fjerner dimensjoner fra en stilling, fjernes de samme posisjonene nå fra Dataverse.
 
 ## <a name="positions-not-in-hierarchy-show-inactive-positions-397257"></a>Stillinger som ikke er i hierarkiet, viser inaktive stillinger (397257)
 
@@ -94,9 +94,9 @@ En DMF-enhet er nå tilgjengelig for avsetningssuspensjoner.
 
 ## <a name="coming-soon"></a>Kommer snart
 
-## <a name="checklist-entities-included-in-common-data-service"></a>Sjekklisteenheter inkludert i Common Data Service
+## <a name="checklist-entities-included-in-dataverse"></a>Sjekklisteenheter inkludert i Dataverse
 
-Sjekklisteenheter for pålasting, avlasting, overføringer og forretningsprosesser vil snart være tilgjengelige i Common Data Service.
+Sjekklisteenheter for pålasting, avlasting, overføringer og forretningsprosesser vil snart være tilgjengelige i Dataverse.
 
 ## <a name="platform-changes"></a>Plattformendringer
 
@@ -108,6 +108,3 @@ Platform update 10.0.12 (36)
 [Oversikt over lanseringsbølge 2 i 2019 for Dynamics 365 Human Resources](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Oppdatere prosess](hr-admin-setup-update-process.md)</br>
 [Behandle funksjoner](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

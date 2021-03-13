@@ -2,7 +2,7 @@
 title: Behandle permisjonsforespørsler i Teams
 description: Dette emnet viser hvordan du ber om fridager Dynamics 365 Human Resources-appen i Microsoft Teams.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d24c257054578282f1a2eafa050094194a358aa0
-ms.sourcegitcommit: 369639cd92e03fe792ed9d61a329d842aafa052f
+ms.openlocfilehash: 342106ad09db3a5d9c2dec8ab18e824d70e0f6bf
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4419980"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5128167"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Behandle permisjonsforespørsler i Teams
 
@@ -196,7 +196,6 @@ Human Resources-appen i Teams har følgende tilgjengelighetsproblemer som vi job
 | --- | --- |
 | Hvis du zoomer til 400 % på skrivebordet, skjules noen av handlingsknappene fra visningen. | Vi anbefaler bruk av et forstørrelsesprogram i stedet til vi kan støtte dette zoomenivået. |
 | I fanen **Fridager** annonserer VoiceOver en knappehandling ved å lese toppteksen for fridagerrutenettet. | Toppteksten og elementene i rutenettet er gruppert etter år, og de kan skjules. VoiceOver tolker dette som et handlingselement, men det er ikke det. |
-| Hvis du sveiper mens en hurtigmeny eller meny er åpen, hopper VoiceOver over innholdet i popup-menyen eller menyen. | Utforsk innholdet ved hjelp av fingerskanning. |
 | I fanen **Fridager** er det en ekstra sveipebevegelse når du navigerer til **Årsakskode** i en ny forespørsel. | Det finnes ingen skjult kontroll som sveipenavigeringen prøver å komme til. |
 | På fanen **Fridager** hvis du sveiper mens kalenderen er åpen, kan du havne utenfor kontrollen i stedet for øverst i en ny forespørsel eller mens du redigerer en forespørsel. | Når du kommer **Gå til i dag**, bør du anse det som slutten på kontrollen, og sveipe i motsatt retning for å komme tilbake toppen. |
 | VoiceOver leser ikke etikettene for datoer. | Datoene som er registrert i par, er alltid **Startdato** og **Sluttdato**. |
@@ -229,6 +228,3 @@ Hvis du vil begrense tilgangen til Human Resources-appen i Microsoft Teams for o
 [Laste ned og installere Microsoft Teams](https://support.office.com/article/download-and-install-microsoft-teams-422bf3aa-9ae8-46f1-83a2-e65720e1a34d)</br>
 [Hjelpesenter for Microsoft Teams](https://support.office.com/teams)</br>
 [Human Resources-app i Teams](hr-admin-teams-leave-app.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

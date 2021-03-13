@@ -1,6 +1,6 @@
 ---
 title: Mobilt arbeidsområde for mitt team
-description: Dette emnet inneholder informasjon om i det mobile arbeidsområdet Mitt team, hvor ledere kan se sine direkte underordnede og utvidede stab. Brukere kan også sende ros til personer i rapporteringskjeden sin.
+description: Dette emnet inneholder informasjon om i det mobile arbeidsområdet Mitt team, hvor ledere kan se sine direkte underordnede og utvidede stab.
 author: ShielaSogge
 manager: AnnBe
 ms.date: 12/01/2017
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 6ac3bf0a6ce20866f749b0c14030b70770e5589c
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 79678c42545a07054af00cd408e04e9d1a42caed
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680976"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5127551"
 ---
 # <a name="my-team-mobile-workspace"></a>Mobilt arbeidsområde for mitt team
 
@@ -97,6 +97,3 @@ Laste ned og installere Finance and Operations-mobilappen:
 1.  Velg **Send ros**. 
 1. Skriv inn den rosende teksten du vil sende. 
 1. Velg **Ferdig**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

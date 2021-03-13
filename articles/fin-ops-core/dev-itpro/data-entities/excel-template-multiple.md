@@ -1,5 +1,5 @@
 ---
-title: Importere data fra Excel-dataenhetsmaler med flere regneark
+title: Datamaler med flere regneark
 description: Dette emnet beskriver hvordan du importerer data ved hjelp av Excel-dataenhetsmaler til Finance and Operations.
 author: Sunil-Garg
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: 618b62364353f409f6971ddd9adc7d55297d09cf
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: fb505f33e497cf16cd6cdeddee1f88d01797f3ef
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688085"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130587"
 ---
-# <a name="import-data-from-excel-data-entity-templates-that-have-multiple-worksheets"></a>Importere data fra Excel-dataenhetsmaler med flere regneark
+# <a name="data-templates-with-multiple-worksheets"></a>Datamaler med flere regneark
 
 [!include [banner](../includes/banner.md)]
 
@@ -49,6 +49,3 @@ I tilfeller der en ny versjon av samme fil eller en helt ny fil må lastes opp f
 ## <a name="upload-a-file-using-run-project"></a>Laste opp en fil ved hjelp av Kjør prosjekt
 
 Du kan laste opp en Excel-fil når du bruker **Kjør prosjekt**-alternativet for å kjøre et importprosjekt. Du må være forsiktig og bare laste opp filer som har de samme regnearkene som de eksisterende tilordningene på dataenhetene i dataprosjektet. Hvis et regneark ikke finnes i den nylig opplastede filen, vises en feilmelding og importen stoppes. Hvis tilordningen til regnearket må endres for en enhet, må tilordningene i dataprosjektet først oppdateres fra dataprosjektet før du kan bruke filen i **Kjør prosjekt**-opplevelsen.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

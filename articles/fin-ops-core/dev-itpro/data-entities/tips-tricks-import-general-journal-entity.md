@@ -1,5 +1,5 @@
 ---
-title: Anbefalte fremgangsmåter for å importere bilag ved hjelp av enheten Økonomijournal
+title: Importere bilag ved å bruke enheten Økonomijournal
 description: Dette emnet inneholder tips for å importere data inn i økonomijournalen ved hjelp av Økonomijournal-enheten.
 author: rcarlson
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f5b36e11bd9ef338334f7ac1b6412edb7754010f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 8ccb479cf7bcf86c01ed274a7a39856d538f220f
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687649"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5129605"
 ---
-# <a name="best-practices-for-importing-vouchers-by-using-the-general-journal-entity"></a>Anbefalte fremgangsmåter for å importere bilag ved hjelp av enheten Økonomijournal
+# <a name="importing-vouchers-by-using-the-general-journal-entity"></a>Importere bilag ved å bruke enheten Økonomijournal
 
 [!include [banner](../includes/banner.md)]
 
@@ -48,7 +48,7 @@ Følgende deler beskriver effekten av disse innstillingene. De forklarer også h
 ### <a name="journal-batch-number"></a>Journalpartinummer
 
 - Innstillingen **Settbasert behandling** på Økonomijournal-enheten påvirker ikke hvordan journalpartinumre genereres.
-- Hvis feltet **Journalpartinummer** er satt til **Automatisk generert**, opprettes et nytt journalpartinummer for hver linje som importeres. Denne virkemåten anbefales. Innstillingen **Automatisk generert** finner du på importprosjektet under **Vis kart** i kategorien til **Tilordningsdetaljer**.
+- Hvis feltet **Journalpartinummer** er satt til **Automatisk generert**, opprettes et nytt journalpartinummer for hver linje som importeres. Denne virkemåten anbefales. Innstillingen **Automatisk generert** finner du på importprosjektet under **Vis kart** i fanen til **Tilordningsdetaljer**.
 - Hvis feltet **Journalpartinummer** ikke er satt til **Automatisk generert**, opprettes journalpartinummeret slik:
 
     - Hvis journalpartinummeret som er definert i den importerte filen, samsvarer med en eksisterende, upostert daglig journal i, importeres alle linjer som har et tilsvarende journalpartinummer til den eksisterende journalen. Linjene importeres aldri til partinummeret for en postert journal. I stedet opprettes det et nytt nummer.
@@ -65,6 +65,3 @@ Følgende deler beskriver effekten av disse innstillingene. De forklarer også h
 - Hvis feltet **Bilagsnummer** er satt til **Automatisk generert**, kan ikke importen fullføres. Innstillingen **Automatisk generert** for feltet **Bilagsnummer** støttes ikke.
 
 Økonomijournal-enheten bruker settbasert behandling som standard. Når du evaluerer forretningskravene for organisasjonen, kan du endre innstillingen **Settbasert behandling** ved å klikke **Dataenheter** i arbeidsområdet **Databehandling**. Settbasert behandling brukes til å øke hastigheten på importprosessen. Hvis du ikke bruker settbasert behandling, vil import av Økonomijournal-enheten være langsommere.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

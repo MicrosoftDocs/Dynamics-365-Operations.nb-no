@@ -1,8 +1,8 @@
 ---
 title: Hva er nytt eller endret i Dynamics 365 Human Resources (18. februar 2020)?
 description: Denne artikkelen beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Human Resources for 18. februar 2020.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
+manager: tfehr
 ms.date: 02/18/2020
 ms.topic: article
 ms.prod: ''
@@ -15,15 +15,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-02-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 002b1b8b86c4fb40f46c239669cd5dfead251bfe
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: e087095807f587536f2dad7e65fbc8beaa88878e
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4526984"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5128071"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-18-2020"></a>Hva er nytt eller endret i Dynamics 365 Human Resources (18. februar 2020)?
 
@@ -43,17 +43,17 @@ Det nye **Arbeider**-skjemaet husker nå søkeverdier når du endrer visningsalt
 
 Faste og variable kompensasjonsstyringsfliser viser nå de riktige postene i det nye **Arbeider**-skjemaet. Gjelder bare den forhåndsvisningsfunksjonen for strømlinjeformede ansatte. Du kan aktivere denne forhåndsvisningsfunksjonen **Funksjonsbehandling**. Hvis du vil ha mer informasjon, kan du se [Behandle funksjoner](hr-admin-manage-features.md).
 
-## <a name="empty-status-field-for-some-leave-request-records-in-common-data-service-414915"></a>Tomt Status-felt for enkelte oen permisjonsforespørselsposter i Common Data Service (414915)
+## <a name="empty-status-field-for-some-leave-request-records-in-dataverse-414915"></a>Tomt Status-felt for enkelte oen permisjonsforespørselsposter i Dataverse (414915)
 
-Denne endringen løser et problem i Common Data Service når **Status**-feltet i en permisjonsforespørsel er angitt til **Gjennomgang**. Common Data Service gjenspeiler nå statusen.
+Denne endringen løser et problem i Dataverse når **Status**-feltet i en permisjonsforespørsel er angitt til **Gjennomgang**. Dataverse gjenspeiler nå statusen.
 
 ## <a name="skill-gap-analysis-only-possible-for-assigned-job-411390"></a>Kompetansegapanalyse er bare mulig for tilordnet jobb (411390)
 
 Du kan nå foreta en kompetansegapanalyse på en hvilken som helst jobb som er definert i Human Resources.
 
-## <a name="system-currency-doesnt-sync-from-common-data-service-to-human-resources-in-new-environments-418011"></a>Systemvaluta synkroniseres ikke fra Common Data Service til Human Resources i nye miljøer (418011)
+## <a name="system-currency-doesnt-sync-from-dataverse-to-human-resources-in-new-environments-418011"></a>Systemvaluta synkroniseres ikke fra Dataverse til Human Resources i nye miljøer (418011)
 
-Systemvalutaen i Common Data Service kan nå synkroniseres til Human Resources.
+Systemvalutaen i Dataverse kan nå synkroniseres til Human Resources.
 
 ## <a name="in-preview"></a>I forhåndsvisning
 
@@ -63,9 +63,9 @@ Systemvalutaen i Common Data Service kan nå synkroniseres til Human Resources.
 
 ## <a name="coming-soon"></a>Kommer snart
 
-### <a name="updated-common-data-service-solution"></a>Oppdatert Common Data Service-løsning
+### <a name="updated-dataverse-solution"></a>Oppdatert Dataverse-løsning
 
-En ny Common Data Service-løsning vil snart være tilgjengelig med følgende endringer:
+En ny Dataverse-løsning vil snart være tilgjengelig med følgende endringer:
 
 | Beskrivelse | Vekslepenger |
 | ----------------------------------------- | --- |
@@ -76,7 +76,7 @@ En ny Common Data Service-løsning vil snart være tilgjengelig med følgende en
 | Nye enheter for oppsett av variabel kompensasjon | **Type variabel kompensasjonsplan**</br>**Variabel plan for kompensasjon**</br>**Overdragelsesregler**</br>**Nivå for variabel kompensasjonsplan** |
 | Ny enhet, **Ansettelse i arbeiderkalender** | **Arbeidskalenderenhet** lagt til |
 | Ny enhet, **Lønnstillingsdetaljer** | **Lønnsstillingsdetaljer** lagt til |
-| Ny **Tittel**-enhet | **Tittel** lagt til. Den nye **Tittel**-enheten blir tatt med i synkroniseringsprosessen mellom Human Resources og Common Data Service. Det blir i utgangspunktet ikke referert fra enhetene **Stilling** eller **Jobb**. |
+| Ny **Tittel**-enhet | **Tittel** lagt til. Den nye **Tittel**-enheten blir tatt med i synkroniseringsprosessen mellom Human Resources og Dataverse. Det blir i utgangspunktet ikke referert fra enhetene **Stilling** eller **Jobb**. |
 
 ## <a name="see-also"></a>Se også
 
@@ -84,5 +84,3 @@ En ny Common Data Service-løsning vil snart være tilgjengelig med følgende en
 [Oversikt over lanseringsbølge 2 i 2019 for Dynamics 365 Human Resources](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Oppdatere prosess](hr-admin-setup-update-process.md)</br>
 [Behandle funksjoner](hr-admin-manage-features.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

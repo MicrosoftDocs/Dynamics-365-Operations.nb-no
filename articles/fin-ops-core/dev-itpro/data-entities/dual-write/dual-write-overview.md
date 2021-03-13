@@ -1,6 +1,6 @@
 ---
 title: Oversikt over dobbel skriving
-description: Dette emnet gir en oversikt over dobbel skriving. Dobbel skriving er en infrastruktur som gir nær sanntids interaksjon mellom modelldrevne Microsoft Dynamics 365-apper og Finance and Operations-apper.
+description: Dette emnet gir en oversikt over dobbel skriving, som er en integrert infrastruktur som gir interaksjon med minimal forsinkelse mellom kundeengasjementsapper og Finance and Operations-apper.
 author: RamaKrishnamoorthy
 manager: AnnBe
 ms.date: 02/06/2020
@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 85530cf644c7b7ffe922a6fb3288f4e05c5df91c
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 3937850a9df716113591e49b25373beb48e3acdd
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685619"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130011"
 ---
 # <a name="dual-write-overview"></a>Oversikt over dobbel skriving
 
@@ -53,7 +53,7 @@ Infrastrukturen for dobbel skriving er utvidbar og pålitelig, og inneholder fø
 + Kombinert visning av aktivitets- og feillogger for dataadministratorer
 + Mulighet til å konfigurere egendefinerte varsler og terskler og abonnere på varslinger
 + Intuitivt brukergrensesnitt (UI) for filtrering og transformasjoner
-+ Mulighet til å angi og vise enhetsavhengigheter og relasjoner
++ Mulighet til å angi og vise tabellavhengigheter og relasjoner
 + Utvidelse for både standard og egendefinerte tabeller og tilordninger
 + Pålitelig livssyklus administrasjon for app
 + Integrert installasjonsopplevelse for nye kunder
@@ -93,7 +93,7 @@ Dobbel skriving gir dataintegrering på tvers av Microsoft Dynamics 365-apper. D
 
 ## <a name="what-does-dual-write-mean-for-developers-and-architects-of-customer-engagement-apps"></a><a id="developer-architect"></a>Hva innebærer toveis skriving av utviklere og arkitekter for Customer Engagement-apper?
 
-Dobbel skriving automatiserer dataflyten mellom Finance and Operations-apper og Customer Engagement-apper. Dobbel skriving består av to AppSource-løsninger som er installert på Dataverse. Løsningene utvider enhetsskjemaet, plugin-modulene og arbeidsflytene på Dataverse slik at de kan skaleres til ERP-størrelse. For å få en vellykket implementering, må utviklere og utarbeidere av Customer Engagement-apper forstå disse endringene og samarbeide med sine motparter om Finance and Operations-apper.
+Dobbel skriving automatiserer dataflyten mellom Finance and Operations-apper og Customer Engagement-apper. Dobbel skriving består av to AppSource-løsninger som er installert på Dataverse. Løsningene utvider tabellskjemaet, programtilleggene og arbeidsflytene på Dataverse slik at de kan skaleres til ERP-størrelse. For å få en vellykket implementering, må utviklere og utarbeidere av Customer Engagement-apper forstå disse endringene og samarbeide med sine motparter om Finance and Operations-apper.
 
 For å opprette paritet med Finance and Operations-apper, gjør dobbelt skriving noen viktige endringer i Dataverse-skjemaet. Hvis du forstår planen, kan du unngå noe utformings- og utviklingsarbeid er i fremtiden.
 
@@ -103,12 +103,9 @@ For å opprette paritet med Finance and Operations-apper, gjør dobbelt skriving
 
 + Hvis du vil hindre tap av data under overføring av valuta mellom Finance and Operations-apper og Dataverse, kan du utvide antallet desimaler i valutadatatypen for Customer Engagement-apper. Funksjonen oversetter eksisterende rader automatisk til den nye utvidede tilstanden på metadatalaget. I løpet av denne prosessen blir valutaverdien oversatt til desimaldata i stedet for pengedata, og valutaverdien støtter 10 desimalplasser. Denne funksjonen er valgfri, og organisasjoner som ikke trenger mer enn fire desimaler med presisjon, trenger ikke å velge den. Hvis du vil ha mer informasjon, kan du se [Overføring av valutadatatype for dobbel skriving](currrency-decimal-places.md).
 
-+ [Datoeffektivitet](../../dev-tools/date-effectivity.md) blir lagt til i Dataverse. Den vil støtte tidligere, nåværende og fremtidige data på samme enhet.
++ [Datoeffektivitet](../../dev-tools/date-effectivity.md) blir lagt til i Dataverse. Den vil støtte tidligere, nåværende og fremtidige data i samme tabell.
 
 + [Enhetskonverteringer](../../../../supply-chain/pim/tasks/manage-unit-measure.md) for produkt støttes for produkter, tilbud, ordrer og fakturaer.
 
 Hvis du vil ha mer informasjon om kommende endringer, kan du se [Nyheter eller endringer i dobbel skriving](whats-new-dual-write.md).
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

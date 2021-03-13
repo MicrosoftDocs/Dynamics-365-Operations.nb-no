@@ -1,9 +1,9 @@
 ---
 title: Hva er nytt eller endret i Dynamics 365 Human Resources (03. september 2020)
 description: Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Human Resources for 3. september 2020.
-author: Darinkramer
+author: andreabichsel
 manager: tfehr
-ms.date: 9/03/2020
+ms.date: 09/03/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-talent
@@ -15,15 +15,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ddffff18e1d6d16bd5a5f7e7021f9a34651307fa
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 41763a8817d0c39b14284a247cf3e46678e7811b
+ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527465"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "5130863"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-3-2020"></a>Hva er nytt eller endret i Dynamics 365 Human Resources (3. september 2020)
 
@@ -106,9 +106,9 @@ Denne funksjonen fremmer også arbeidsflytalternativene som vises i personalhand
 
 ## <a name="coming-soon"></a>Kommer snart
 
-### <a name="checklist-entities-included-in-common-data-service"></a>Sjekklisteenheter inkludert i Common Data Service
+### <a name="checklist-entities-included-in-dataverse"></a>Sjekklisteenheter inkludert i Dataverse
 
-Sjekklisteenheter for pålasting, avlasting, overføringer og forretningsprosesser vil snart være tilgjengelige i Common Data Service.
+Sjekklisteenheter for pålasting, avlasting, overføringer og forretningsprosesser vil snart være tilgjengelige i Dataverse.
 
 ### <a name="benefits-management-reason-codes"></a>Årsakskoder for fordelsstyring
 
@@ -120,6 +120,3 @@ Sjekklisteenheter for pålasting, avlasting, overføringer og forretningsprosess
 [Oversikt over lanseringsbølge 2 i 2019 for Dynamics 365 Human Resources](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Oppdatere prosess](hr-admin-setup-update-process.md)</br>
 [Behandle funksjoner](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 267694
 ms.assetid: d95d43b2-13ff-4189-a71a-3a1fb57d55ed
 ms.search.region: global
@@ -19,19 +18,22 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 88bce09a6d3bf154592955a6fb2dada6247f1993
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 411a97427bbb16388e0f60b8ecb5dd3e5a79e87e
+ms.sourcegitcommit: bd53794cb94f8c1ce29a7d6102119a0975f155e3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434624"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "5142281"
 ---
 # <a name="install-and-connect-the-warehouse-app"></a>Installere og koble til lagerappen
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Dette emnet beskriver hvordan du konfigurerer lager for skydistribusjoner. Hvis du leter etter informasjon om hvordan du konfigurerer lager for lokale distribusjoner, kan du se [Lager for lokale distribusjoner](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
+> Dette emnet beskriver hvordan du konfigurerer den gamle lagerappen. Hvis du ser etter informasjon om hvordan du konfigurerer den nye mobilappen Lagerstyring (for tiden i offentlig forhåndsversjon), kan du se [Installere og koble til mobilappen Lagerstyring](install-configure-warehouse-management-app.md).
+
+> [!NOTE]
+> Dette emnet beskriver hvordan du konfigurerer lagerappen for skydistribusjoner. Hvis du leter etter informasjon om hvordan du konfigurerer lagerappen for lokale distribusjoner, kan du se [Lager for lokale distribusjoner](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
 
 Lagerappen er tilgjengelig fra Google Play-butikken og Microsoft Store. Den leveres som en frittstående komponent. Derfor må du laste den ned på hver enhet og deretter konfigurere den for å koble til Microsoft Dynamics 365 Supply Chain Management-miljøet.
 
@@ -274,6 +276,3 @@ Hvis en enhet går tapt eller settes på spill, må du fjerne tilgangen til Supp
 1. Kontroller at klient-ID-en til appen samsvarer med klient-ID-en du noterte i trinn 2.
 1. Velg **Slett** på verktøylinjen.
 1. Velg **Ja** i bekreftelsesmeldingen som vises.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
