@@ -2,7 +2,7 @@
 title: Fordelsregistreringsrettighet
 description: Denne artikkelen beskriver hvordan du kjører prosessen for registreringsrettighet.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: dfb7f13dce48f33c111af491918702763f7e3b8a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 69ea23e4051a6975a5892cd027777c5a88472509
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419847"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113733"
 ---
 # <a name="process-enrollment-eligibility"></a>Fordelsregistreringsrettighet
 
@@ -72,6 +72,3 @@ Denne artikkelen beskriver hvordan du viser resultater av en rettighetsprosess.
    | **Resultatstatus** | Dette vil være Kvalifisert eller Ikke kvalifisert. Resultatstatusen vil være Ikke kvalifisert hvis arbeideren ikke oppfyller rettighetsregelkriteriene, hvis arbeideren mangler nødvendig informasjon, for eksempel en betalingsfrekvens eller fast kompensasjon, eller hvis det mangler informasjon i fordelsplanen, og som forhindrer at arbeidere registreres. |
    | **Resultatmelding** | Indikerer hvorfor en arbeider ikke er kvalifisert for en fordelsplan, eller om rettighetsregelen ble bestått. |
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

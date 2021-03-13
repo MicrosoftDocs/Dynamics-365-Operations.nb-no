@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6f70e3a6ccf9770c75334d355db5e9df9ee912dd
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 4fda9d85b459d233e6239f3fcffbb48e596d4085
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527891"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113771"
 ---
 # <a name="integrate-with-linkedin-talent-hub"></a>Integrere med LinkedIn Talent Hub
 
@@ -127,14 +127,14 @@ Når du har lagret og lukket den nye programbrukeren i den forrige delen, kommer
     - **Navn**: Skriv inn navnet på Power Apps-sikkerhetsrollen du opprettet tidligere, for eksempel **LinkedIn Talent Hub HRIS-integrering**.
     - **Bruker-ID**: Velg en bruker som har tillatelse til å skrive data i Personaladministrasjon.
 
-### <a name="create-the-entity-in-common-data-service"></a>Opprette enheten i Common Data Service
+### <a name="create-the-table-in-dataverse"></a>Opprette tabellen i Dataverse
 
 > [!IMPORTANT]
-> Integreringen med LinkedIn Talent Hub er avhengig av virtuelle enheter i Common Data Service for Human Resources. Som en forutsetning for dette trinnet i oppsettet, må du konfigurere virtuelle enheter. Hvis du vil ha informasjon om hvordan du konfigurerer virtuelle enheter, se [Konfigurere virtuelle enheter for Common Data Service](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities).
+> Integreringen med LinkedIn Talent Hub er avhengig av virtuelle tabeller i Dataverse for Human Resources. Som en forutsetning for dette trinnet i oppsettet, må du konfigurere virtuelle tabeller. Hvis du vil ha informasjon om hvordan du konfigurerer virtuelle tabeller, se [Konfigurere virtuelle tabeller for Dataverse](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities).
 
-1. I Human Resources åpner du siden **Common Data Service (CDS)-integrering**.
+1. I Human Resources åpner du siden **Dataverse-integrering**.
 
-2. Velg kategorien **Virtuelle enheter**.
+2. Velg kategorien **Virtuelle tabeller**.
 
 3. Filtrer enhetslisten etter enhetsetikett for å finne **LinkedIn-eksporterte kandidater**.
 
@@ -188,8 +188,5 @@ Følgende detaljer blir importert og inkludert i den nye ansattposten:
 
 ## <a name="see-also"></a>Se også
 
-[Konfigurere virtuelle enheter for Common Data Service](./hr-admin-integration-common-data-service-virtual-entities.md)<br>
-[Hva er Common Data Service?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[Konfigurere virtuelle Dataverse-tabeller](./hr-admin-integration-common-data-service-virtual-entities.md)<br>
+[Hva er Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)

@@ -1,8 +1,8 @@
 ---
-title: Behandle funksjoner
+title: Vedlikeholde funksjoner i Human Resources
 description: Lær hvordan du aktiverer eller deaktiverer nye funksjoner i Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9176e9519c3bf65ef7a4f1b5ae43dbeb411750f5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d400604bf1b044de52457b3f7a6eb858220a1972
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419933"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113754"
 ---
-# <a name="manage-features"></a>Behandle funksjoner
+# <a name="manage-features-in-human-resources"></a>Vedlikeholde funksjoner i Human Resources
 
 Som en del av vår kontinuerlige distribusjonen av ny funksjonalitet for Microsoft Dynamics 365 Human Resources vil vi at kunder får nye funksjoner så snart som mulig. Vi tilbyr forhåndsversjon av funksjoner, som nesten er klar for generelle tilgjengeligheten og har gjennomgått omfattende testing. Vi er bare ute etter en endelig runde med tilbakemelding og godkjenning før vi gjør dem generelt tilgjengelige.
 
@@ -94,5 +94,3 @@ Ikke ta med personlige data (informasjon som kan identifisere deg) i tilbakemeld
 
 - [Hva er nytt i Human Resources](hr-admin-whats-new.md)
 - [Lanseringsplan for Dynamics 365 og Power Platform](https://docs.microsoft.com/dynamics365/release-plans/#pivot=products&panel=products1)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

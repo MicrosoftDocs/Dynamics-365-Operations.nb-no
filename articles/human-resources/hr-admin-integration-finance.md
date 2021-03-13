@@ -2,7 +2,7 @@
 title: Konfigurere integrasjon med Finance
 description: Denne artikkelen beskriver funksjonaliteten som er tilgjengelig for integrering fra Dynamics 365 Human Resources og Dynamics 365 Finance.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 03/26/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3b4d6369ab567879e23e1f132265aaff45c8ce47
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 6587b2ced1fdd7a16c6b3f28a34d4a303af9cee5
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527927"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113718"
 ---
 # <a name="configure-integration-with-finance"></a>Konfigurere integrering med Finance
 
@@ -44,7 +44,7 @@ Løsningen Human Resources til Finance tilbyr følgende typer datasynkronisering
 
 Integreringsløsningen krever følgende versjoner av Human Resources og Finance: 
 
-- Dynamics 365 Human Resources den Common Data Service
+- Dynamics 365 Human Resources den Dataverse
 - Dynamics 365 Finance versjon 7.2 og senere
 
 ## <a name="template-and-tasks"></a>Mal og oppgaver
@@ -55,7 +55,7 @@ Slik får du tilgang til Human Resources til Finance-malen.
 
 2. Velg **Prosjekter**, og velg deretter **Nytt prosjekt** øverst i høyre hjørne. Opprett et nytt prosjekt for hver juridiske enhet du vil integrere i Finance.
 
-3. Velg **Human Resources (Human Resources Common Data Service til Finance)** for å synkronisere poster fra Human Resources til Finance.
+3. Velg **Human Resources (Human Resources Dataverse til Finance)** for å synkronisere poster fra Human Resources til Finance.
 
 Malene bruker følgende underliggende oppgaver til å synkronisere poster fra Human Resources til Finance:
 
@@ -81,14 +81,14 @@ I følgende maltilordningstabeller inneholder navnet på oppgaven enhetene som b
 
 ### <a name="job-functions-to-compensation-job-function"></a>Jobbfunksjoner til kompensasjon, jobbfunksjon
 
-| Common Data Service-enhet (kilde) | Finance-enhet (mål) |
+| Dataverse-tabell (kilde) | Finance-enhet (mål) |
 |-------------------------------------|---------------------------------------------|
 | cdm_name (cdm_Job   Funksjonsnavn)  | JOBFUNCTIONID   (JOBFUNCTIONID)            |
 | cdm_description   (cdm_description) | DESCRIPTION   (DESCRIPTION)                 |
 
 ### <a name="departments-to-operating-unit"></a>Avdelinger til driftsenhet
 
-| Common Data Service-enhet (kilde)           | Finance-enhet (mål) |
+| Dataverse-tabell (kilde)           | Finance-enhet (mål) |
 |-----------------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                           | NAME (NAME)                                 |
 | cdm_departmentnumber   (cdm_departmentnumber) | OPERATINGUNITNUMBER   (OPERATINGUNITNUMBER) |
@@ -97,7 +97,7 @@ I følgende maltilordningstabeller inneholder navnet på oppgaven enhetene som b
 
 ### <a name="job-types-to-compensation-job-type"></a>Jobbtyper til kompensasjonsjobbtype
 
-| Common Data Service-enhet (kilde)   | Finance-enhet (mål) |
+| Dataverse-tabell (kilde)   | Finance-enhet (mål) |
 |---------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                   | JOBTYPEID   (JOBTYPEID)                     |
 | cdm_description   (cdm_description)   | DESCRIPTION   (DESCRIPTION)                 |
@@ -105,7 +105,7 @@ I følgende maltilordningstabeller inneholder navnet på oppgaven enhetene som b
 
 ### <a name="jobs-to-jobs"></a>Jobber til jobber
 
-| Common Data Service-enhet (kilde)                           | Finance-enhet (mål)           |
+| Dataverse-tabell (kilde)                           | Finance-enhet (mål)           |
 |---------------------------------------------------------------|-------------------------------------------------------|
 | cdm_name (cdm_name)                                           | JOBID (JOBID)                                         |
 | cdm_maximumnumberofpositions   (cdm_maximumnumberofpositions) | MAXIMUMNUMBEROFPOSITIONS   (MAXIMUMNUMBEROFPOSITIONS) |
@@ -115,7 +115,7 @@ I følgende maltilordningstabeller inneholder navnet på oppgaven enhetene som b
 
 ### <a name="jobs-to-job-detail"></a>Jobber til jobbdetaljer
 
-| Common Data Service-enhet (kilde)                             | Finance-enhet (mål) |
+| Dataverse-tabell (kilde)                             | Finance-enhet (mål) |
 |-----------------------------------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                                             | JOBID (JOBID)                               |
 | cdm_jobtypeid.cdm_name   (Jobbtype (Navn på jobbtype))             | JOBTYPEID   (JOBTYPEID)                     |
@@ -126,7 +126,7 @@ I følgende maltilordningstabeller inneholder navnet på oppgaven enhetene som b
 
 ### <a name="position-types-to-position-type"></a>Stillingstyper til stillingstype
 
-| Common Data Service-enhet (kilde)       | Finance-enhet (mål) |
+| Dataverse-tabell (kilde)       | Finance-enhet (mål) |
 |-------------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                       | POSITIONTYPEID   (POSITIONTYPEID)           |
 | cdm_description   (cdm_description)       | DESCRIPTION   (DESCRIPTION)                 |
@@ -134,13 +134,13 @@ I følgende maltilordningstabeller inneholder navnet på oppgaven enhetene som b
 
 ### <a name="job-positions-to-base-position"></a>Jobbstillinger til basisstilling
 
-| Common Data Service-enhet (kilde)           | Finance-enhet (mål) |
+| Dataverse-tabell (kilde)           | Finance-enhet (mål) |
 |-----------------------------------------------|---------------------------------------------|
 | cdm_jobpositionnumber (Jobbstillingsnummer) | POSITIONID (POSITIONID)                      |
 
 ### <a name="job-positions-to-position-details"></a>Jobbstillinger til stillingsdetaljer
 
-| Common Data Service-enhet (kilde)              | Finance-enhet (mål)       |
+| Dataverse-tabell (kilde)              | Finance-enhet (mål)       |
 |--------------------------------------------------------------------------|---------------------------------------------------|
 | cdm_jobpositionnumber  (Jobbstillingsnummer)                            | POSITIONID (POSITIONID)                             |
 | cdm_jobid.cdm_name   (Jobb (Navn))                                        | JOBID (JOBID)                                    |
@@ -154,7 +154,7 @@ I følgende maltilordningstabeller inneholder navnet på oppgaven enhetene som b
 
 ### <a name="job-positions-to-position-durations"></a>Jobbstillinger til stillingsvarigheter
 
-| Common Data Service-enhet (kilde)             | Finance-enhet (mål) |
+| Dataverse-tabell (kilde)             | Finance-enhet (mål) |
 |-------------------------------------------------|---------------------------------------------|
 | cdm_jobpositionnumber (Jobbstillingsnummer)   | POSITIONID (POSITIONID)                      |
 | Calculated   Activation (Beregnet aktivering) | VALIDFROM (VALIDFROM)                        |
@@ -162,7 +162,7 @@ I følgende maltilordningstabeller inneholder navnet på oppgaven enhetene som b
 
 ### <a name="job-positions-to-position-hierarchies"></a>Jobbstillinger til stillingshierarkier
 
-| Common Data Service-enhet (kilde)        | Finance-enhet (mål) |
+| Dataverse-tabell (kilde)        | Finance-enhet (mål) |
 |-----------------------------------------------------------------------------------------------|---------------------------------------------|
 | cdm_jobpositionnumber (Jobbstillingsnummer)                                                 | POSITIONID(POSITIONID)                      |
 | cdm_parentjobpositionid.cdmjobpositionnumber   (cdm_parentjobpositionid.cdmjobpositionnumber) | PARENTPOSITIONID (PARENTPOSITIONID)         |
@@ -172,7 +172,7 @@ I følgende maltilordningstabeller inneholder navnet på oppgaven enhetene som b
 
 
 ### <a name="workers-to-worker"></a>Arbeidere til arbeider
-| Common Data Service-enhet (kilde)           | Finance-enhet (mål)       |
+| Dataverse-tabell (kilde)           | Finance-enhet (mål)       |
 |-----------------------------------------------|---------------------------------------------------|
 | cdm_birthdate   (cdm_birthdate)               | BIRTHDATE   (BIRTHDATE)                           |
 | cdm_gender   (cdm_gender)                     | GENDER (GENDER)                                   |
@@ -191,7 +191,7 @@ I følgende maltilordningstabeller inneholder navnet på oppgaven enhetene som b
 
 ### <a name="employments-to-employment"></a>Ansettelser til ansettelse
 
-| Common Data Service-enhet (kilde)                             | Finance-enhet (mål) |
+| Dataverse-tabell (kilde)                             | Finance-enhet (mål) |
 |-----------------------------------------------------------------|---------------------------------------------|
 | cdm_employmentstartdate   (cdm_employmentstartdate)             | EMPLOYMENTSTARTDATE   (EMPLOYMENTSTARTDATE) |
 | cdm_employmentenddate   (cdm_employmentenddate)                 | EMPLOYMENTENDDATE   (EMPLOYMENTENDDATE)     |
@@ -201,7 +201,7 @@ I følgende maltilordningstabeller inneholder navnet på oppgaven enhetene som b
 
 ### <a name="employments-to-employment-detail"></a>Ansettelser til ansettelsesdetalj
 
-| Common Data Service-enhet (kilde)                             | Finance-enhet (mål)   |
+| Dataverse-tabell (kilde)                             | Finance-enhet (mål)   |
 |-----------------------------------------------------------------|-----------------------------------------------|
 | cdm_employmentstartdate   (cdm_employmentstartdate)             | EMPLOYMENTSTARTDATE   (EMPLOYMENTSTARTDATE)   |
 | cdm_employmentenddate   (cdm_employmentenddate)                 | EMPLOYMENTENDDATE   (EMPLOYMENTENDDATE)       |
@@ -219,7 +219,7 @@ I følgende maltilordningstabeller inneholder navnet på oppgaven enhetene som b
 
 ### <a name="position-worker-assignment-to-position-worker-assignments"></a>Stillingstilordning til Stillingstilordninger
 
-| Common Data Service-enhet (kilde)                             | Finance-enhet (mål)   |
+| Dataverse-tabell (kilde)                             | Finance-enhet (mål)   |
 |-----------------------------------------------------------------|-----------------------------------------------|
 | cdm_workerid.cdm_workernumber   (cdm_workerid.cdm_workernumber) | PERSONNELNUMBER   (PERSONNELNUMBER)           |
 | cdm_jobpositionnumber (Jobbstillingsnummer)                   | POSITIONID(POSITIONID)                        |
@@ -228,7 +228,7 @@ I følgende maltilordningstabeller inneholder navnet på oppgaven enhetene som b
 
 ### <a name="worker-addresses-to-worker-postal-address-v2"></a>Arbeideradresser til arbeiderpostadresse V2
 
-| Common Data Service-enhet (kilde)                             | Finance-enhet (mål)   |
+| Dataverse-tabell (kilde)                             | Finance-enhet (mål)   |
 |-----------------------------------------------------------------|-----------------------------------------------|
 | cdm_workerid.cdm_workernumber   (cdm_workerid.cdm_workernumber) | PERSONNELNUMBER   (PERSONNELNUMBER)           |
 | cdm_addresstype   (cdm_addresstype)                             | ADDRESSLOCATIONROLES   (ADDRESSLOCATIONROLES) |
@@ -255,5 +255,3 @@ Sted-ID-en som brukes for arbeideradresse, er ikke en del av nummerserien. Når 
 Illustrasjonen nedenfor viser et eksempel på en tilordning av malen i Dataintegrator. 
 
 ![Tilordning av mal](./media/IntegrationMapping.png)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

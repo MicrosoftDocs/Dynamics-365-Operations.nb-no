@@ -2,7 +2,7 @@
 title: Konfigurere satser
 description: Satser i Microsoft Dynamics 365 Human Resources definerer hvor mye arbeidsgivere og ansatte bidrar til en fordel.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 06/22/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e397e20b6b6307349020c8dfd238b4b59eeca527
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0f5c2ce14f6a0ff830ce2645496a35fb98d6a6ab
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419918"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113686"
 ---
 # <a name="configure-rates"></a>Konfigurere satser
 
@@ -93,6 +93,3 @@ Du kan også bruke doble lag. Hvis du velger **Dobbelt lag** for verdien **Bruk 
    | **Røykersats for fleksikreditt** | Antall fleksikreditter fordelen koster, basert på beregningen som er definert for lagnivået for røykere. |
 
 5. Velg **Lagre**. 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

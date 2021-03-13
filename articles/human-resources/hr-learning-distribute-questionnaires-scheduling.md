@@ -2,7 +2,7 @@
 title: Distribuere spørreskjemaer ved hjelp av planlegging
 description: Med planlegging av spørreskjema kan du planlegge og distribuere spørreskjemaer til flere respondenter.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -11,17 +11,17 @@ ms.technology: ''
 ms.search.form: KMKnowledgeCollectorPlanningTable, KMKnowledgeCollectorPlanningMulti, SysQueryForm, HcmPersonLookup, KMKnowledgeCollectorPlanning, HcmLearningWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d233938fe553dbd7da7fcc5477097fd885665102
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0cd101bfe88ae1acb051ba11a676da66ef6a3db6
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419956"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115468"
 ---
 # <a name="distribute-questionnaires-using-scheduling"></a>Distribuere spørreskjemaer ved hjelp av planlegging
 
@@ -129,6 +129,3 @@ Med planlegging av spørreskjema kan du planlegge og distribuere spørreskjemaer
 2. Klikk Avslutt.
 3. Klikk OK.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

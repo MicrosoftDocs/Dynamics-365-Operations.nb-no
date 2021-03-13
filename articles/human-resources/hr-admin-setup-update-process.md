@@ -2,7 +2,7 @@
 title: Oppdatere prosess
 description: Microsoft Dynamics 365 Human Resources er ekte programvare som tjeneste (SaaS) som gir kontinuerlige, berøringsfrie serviceoppdateringer for program- og plattformendringer.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d841a026f589d774ec5ada3ac9adcc84dde9aee1
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 4bb5f7dc17c8f4f3a54bd285cb55088f2176db4a
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527818"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113679"
 ---
 # <a name="update-process"></a>Oppdatere prosess
 
@@ -43,7 +43,7 @@ Human Resources-oppdateringer brukes for alle miljøer automatisk. Human Resourc
 
     Alle støttede datasentre oppdateres annenhver uke med mindre annet er angitt. USA, Australia, Europa, Storbritannia, Asia og Canada er inkludert i oppdateringer annenhver uke. 
 
-- **Common Data Service-løsningsoppdateringer**: Disse oppdateringene inntreffer omtrent hver sjette uke etter behov. De inneholder nye enheter og endringer i eksisterende enheter i Common Data Service. Disse oppdateringene utgis i de samme regionene som oppdateringene annenhver uke, og de tar omtrent seks uker på å replisere gjennom alle datasentre. Løsningsoppdateringer kan være rettet inn mot serviceoppdateringer annenhver uke.
+- **Dataverse-løsningsoppdateringer**: Disse oppdateringene inntreffer omtrent hver sjette uke etter behov. De inneholder nye enheter og endringer i eksisterende enheter i Dataverse. Disse oppdateringene utgis i de samme regionene som oppdateringene annenhver uke, og de tar omtrent seks uker på å replisere gjennom alle datasentre. Løsningsoppdateringer kan være rettet inn mot serviceoppdateringer annenhver uke.
 
 > [!NOTE]
 > Løsningsoppdateringer er tilgjengelige på alle datasentrene når de er frigitt. Hvis du ikke vil vente på at oppdateringene skal replikeres automatisk, kan du bruke disse oppdateringene manuelt på alle miljøer i alle datasentre.
@@ -105,6 +105,3 @@ Når du tester forhåndsversjoner av funksjoner eller prøver nye funksjoner, ka
 [Hva er nytt eller endret i Dynamics 365 Human Resource](hr-admin-whats-new.md)</br>
 [Policy for programvarelivssyklus](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Kopier en forekomst
 description: Du kan bruke Microsoft Dynamics Lifecycle Services (LCS) til å kopiere en Microsoft Dynamics 365 Human Resources-database til et sandkassemiljø.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 07/22/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 40ca0a4d9733fc2a163daa4ea1c27a3bfae6d3bf
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: a62cee979fc8d986102c3b774cd937a24bdd7439
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527843"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113695"
 ---
 # <a name="copy-an-instance"></a>Kopier en forekomst
 
@@ -41,7 +41,7 @@ Hvis du vil kopiere en forekomst, må du tenke på følgende tips:
 
 - Når du kopierer Human Resources-databasen, kopierer du ikke elementene (apper eller data) som finnes i et Microsoft Power Apps-miljø. Hvis du vil ha informasjon om hvordan du kopierer elementer i et Power Apps-miljø, kan du se [Kopiere et miljø](https://docs.microsoft.com/power-platform/admin/copy-environment). Power Apps-miljøet som du vil overskrive, må være et sandkassemiljø. Du må være en global leieradministrator for å endre et Power Apps-produksjonsmiljø til et sandkassemiljø. Hvis du vil ha mer informasjon om hvordan du endrer et Power Apps-miljø, kan du se [Bytte en forekomst](https://docs.microsoft.com/dynamics365/admin/switch-instance).
 
-- Hvis du kopierer en forekomst inn i sandkassemiljøet og vil integrere sandkassemiljøet i Common Data Service, må du bruke egendefinerte felt på nytt i Common Data Service-enheter. Se [Bruke egendefinerte felt i Common Data Service](hr-admin-setup-copy-instance.md?apply-custom-fields-to-common-data-service).
+- Hvis du kopierer en forekomst inn i sandkassemiljøet og vil integrere sandkassemiljøet i Dataverse, må du bruke egendefinerte felt på nytt i Dataverse-tabeller. Se [Bruke egendefinerte felt i Dataverse](hr-admin-setup-copy-instance.md?apply-custom-fields-to-common-data-service).
 
 ## <a name="effects-of-copying-a-human-resources-database"></a>Virkninger av å kopiere en Human Resources-database
 
@@ -72,7 +72,7 @@ Hvis du vil fullføre denne oppgaven, kopierer du først en forekomst, og derett
 
 4. I oppgaveruten **Kopier en forekomst**, velger du forekomsten som skal overskrives, og deretter velger du **Kopier**. Vent til verdien i feltet **Kopier status** er oppdatert til **Fullført**.
 
-   ![[Velge forekomst som skal overskrives](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
+   ![[Velg forekomsten som skal overskrives](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
 
 5. Velg **Power Platform**, og logg deg på administrasjonssenteret for Microsoft Power Platform.
 
@@ -80,7 +80,7 @@ Hvis du vil fullføre denne oppgaven, kopierer du først en forekomst, og derett
 
 6. Velg Power Apps-miljøet som skal kopieres, og velg deretter **Kopier**.
 
-7. Når kopieringsprosessen er fullført, logger du på målforekomsten og aktiverer Common Data Service-integrering. Hvis du vil ha mer informasjon og instruksjoner, kan du se [Konfigurere Common Data Service-integrering for arbeidsområder](https://docs.microsoft.com/dynamics365/talent/hr-common-data-service-integration).
+7. Når kopieringsprosessen er fullført, logger du på målforekomsten og aktiverer Dataverse-integrering. Hvis du vil ha mer informasjon og instruksjoner, kan du se [Konfigurere Dataverse-integrering for arbeidsområder](https://docs.microsoft.com/dynamics365/talent/hr-common-data-service-integration).
 
 ## <a name="data-elements-and-statuses"></a>Dataelementer og -statuser
 
@@ -122,11 +122,11 @@ Alle brukerne i sandkassemålmiljøet, inkludert administratorer, erstattes av b
 
 Alle brukere som ikke er administrator i målsandkassemiljøet, er deaktivert for å hindre uønskede pålogginger i sandkassemiljøet. Administratorer kan reaktivere brukere om nødvendig.
 
-## <a name="apply-custom-fields-to-common-data-service"></a>Bruke egendefinerte felt i Common Data Service
+## <a name="apply-custom-fields-to-dataverse"></a>Bruke egendefinerte felt i Dataverse
 
-Hvis du kopierer en forekomst inn i sandkassemiljøet og vil integrere sandkassemiljøet i Common Data Service, må du bruke egendefinerte felt på nytt i Common Data Service-enheter.
+Hvis du kopierer en forekomst inn i sandkassemiljøet og vil integrere sandkassemiljøet i Dataverse, må du bruke egendefinerte felt på nytt i Dataverse-tabeller.
 
-For hvert egendefinerte felt som vises på Common Data Service-enheter, gjør du følgende:
+For hvert egendefinerte felt som vises på Dataverse-tabeller, gjør du følgende:
 
 1. Gå til det egendefinerte feltet og velg **Rediger**.
 
@@ -140,7 +140,7 @@ For hvert egendefinerte felt som vises på Common Data Service-enheter, gjør du
 
 6. Velg **Bruk endringer** på nytt.
 
-Prosessen med å fjerne valg, aktivere endringer, velge på nytt og bruke endringer på nytt ber skjemaet om å oppdatere i Common Data Service for å inkludere de egendefinerte feltene.
+Prosessen med å fjerne valg, aktivere endringer, velge på nytt og bruke endringer på nytt ber skjemaet om å oppdatere i Dataverse for å inkludere de egendefinerte feltene.
 
 Hvis du vil ha mer informasjon om egendefinerte felt, kan du se [Opprette og arbeide med egendefinerte felt](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/user-defined-fields).
 
@@ -150,6 +150,3 @@ Hvis du vil ha mer informasjon om egendefinerte felt, kan du se [Opprette og arb
 [Fjerne en forekomst](hr-admin-setup-remove-instance.md)</br>
 [Oppdatere prosess](hr-admin-setup-update-process.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

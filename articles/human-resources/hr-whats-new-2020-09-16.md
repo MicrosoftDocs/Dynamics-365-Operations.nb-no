@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-09-16
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a3bb6b809560688a7849b60c15a01fd89038e843
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 74a87ddb4ed14042dd4e716ad64bc844a800a0a0
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527440"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113765"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-16-2020"></a>Hva er nytt eller endret i Dynamics 365 Human Resources (16. september 2020)
 
@@ -110,9 +110,9 @@ Denne versjonen inneholder flere kalenderalternativer for permisjons- og fravær
 
 ## <a name="coming-soon"></a>Kommer snart
 
-### <a name="checklist-entities-included-in-common-data-service"></a>Sjekklisteenheter inkludert i Common Data Service
+### <a name="checklist-entities-included-in-dataverse"></a>Sjekklisteenheter inkludert i Dataverse
 
-Sjekklisteenheter for pålasting, avlasting, overføringer og forretningsprosesser vil snart være tilgjengelige i Common Data Service.
+Sjekklisteenheter for pålasting, avlasting, overføringer og forretningsprosesser vil snart være tilgjengelige i Dataverse.
 
 ### <a name="benefits-management-reason-codes"></a>Årsakskoder for fordelsstyring
 
@@ -124,6 +124,3 @@ Sjekklisteenheter for pålasting, avlasting, overføringer og forretningsprosess
 [Oversikt over lanseringsbølge 2 i 2019 for Dynamics 365 Human Resources](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Oppdatere prosess](hr-admin-setup-update-process.md)</br>
 [Behandle funksjoner](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 67f6d567c7e8d4cc6332c2d661abb04d1b28d2e9
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 9aaf24147900c890a14c60ab969da7124c538911
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682777"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115734"
 ---
 # <a name="financial-insights"></a>Økonomisk innsikt
 
@@ -34,7 +34,7 @@ ms.locfileid: "4682777"
 > [!NOTE]
 > Dette dokumentet bruker følgende Power BI-terminologi:
 > 
-> - **Rapport** – En enkelt .pbix-fil som alle visuelle effekter i alle kategoriene lagres i.
+> - **Rapport** – En enkelt .pbix-fil som alle visuelle effekter i alle fanene lagres i.
 > - **Side** – En kategori i en enkelt .pbix-fil. Hver side kan inneholde én eller flere visuelle effekter.
 > - **Visuelt** – Én enkelt kilde med data, for eksempel kort, KPI, diagram, graf, matrise og regnskapsoppgjør. En side som har et regnskapsoppgjør som en visuell effekt, kan ikke ha flere andre visuelle effekter på grunn av størrelsen på dataene som rapporteres.
 
@@ -66,9 +66,10 @@ Dataene for **Økonomisk innsikt** hentes fra enhetslageret (**Systemadministras
 
 Du må oppdatere følgende enheter for å vise data i **Økonomisk innsikt**- og **CFO-oversikt**-arbeidsområder:
 
-- Transaksjonsdata for finansrapportering versjon 2 **(Merk:** Dette er nytt i versjon 10.0.1 og erstatter den forrige enheten.)
-- Transaksjonsdata for finansrapportering
+- BudgetActivityMeasure
+- Transaksjonsdata for finansrapportering, versjon 3 
 - CustCollectionsBIMeasurements
+- LedgerActivityMeasure
 - LedgerCovLiquidityMeasurement
 - Innkjøpskube
 - Salgskube
@@ -126,7 +127,7 @@ I den første versjonen av **Økonomisk innsikt** kan ingen av de visuelle effek
 Brukere kan filtrere rapporten ved hjelp av **Filter**-ruten til venstre. Dette er den samme ruten som er tilgjengelig via Power BI Desktop. Det finnes forskjellige nivåer med filtrering, noen er kanskje ikke tilgjengelige, avhengig av hva du har valgt på en side (kategori), eller om du bruker funksjonene for gjennomgang:
 
 - **Rapportnivåfiltrere** – Disse filtrene brukes på alle visuelle effekter på alle sider (kategorier).
-- **Sidenivåfiltre** – Disse filtrene brukes på alle visuelle effekter i den aktive kategorien. Disse filtrene brukes over rapportnivåfiltrene.
+- **Sidenivåfiltre** – Disse filtrene brukes på alle visuelle effekter i den aktive fanen. Disse filtrene brukes over rapportnivåfiltrene.
 - **Visuellnivåfiltre** – Disse filtrene brukes bare på den valgte visuelle effekten. Disse filtrene brukes på toppen av sidenivåfiltrene.
 - **Gjennomgangsfilter** – Dette filteret filtrerer fra en visuell kildeeffekt som brukes på den gjeldende visuelle effekten når du gjennomgår fra den visuelle kildeeffekten til den gjeldende visuelle effekten.
 
@@ -247,6 +248,3 @@ Informasjonen i følgende ressurser er ikke nødvendig for å aktivere de inneby
 - [Få tilgang til analytiske arbeidsområder og rapporter i 1-boks-miljø](https://blogs.msdn.microsoft.com/dynamicsaxbi/2017/07/29/accessing-analytical-workspaces-on-1box-environment/)
 
 - [Legge til analyse i arbeidsområder ved hjelp av Power BI Embedded](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/add-analytics-tab-workspaces)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

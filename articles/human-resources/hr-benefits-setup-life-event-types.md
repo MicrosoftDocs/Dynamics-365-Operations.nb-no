@@ -2,7 +2,7 @@
 title: Konfigurere hendelsestyper for levetid
 description: Microsoft Dynamics 365 Human Resources bruker livshendelsestyper til å definere hendelser hvor det er gyldig å oppdatere ansattes fordelsregistrering.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5286bcd940f4068531bae624876c8a35e64db4c3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c382299014e3f823bc2cd210749aae8c091c5f23
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419880"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113730"
 ---
 # <a name="configure-life-event-types"></a>Konfigurere hendelsestyper for levetid
 
@@ -88,6 +88,3 @@ Du kan velge mellom følgende livshendelser når du oppretter en livshendelsesty
 | **Utløp av Overstyr rettighetsregler (ikke spesifikk for USA)** | Human Resources Avansert > Fordeler > Planer > Fordeler > Overstyr rettighetsregler | Bruke Behandling av endring av levetidshendelse. Hvis du for eksempel redigerer Overstyr utløpsdato for rettighetsregel i en plan til i dag klokken 17, et klokkeslett etter klokken 17 eller de følgende dagene, og deretter kjører Behandling av endring av levetidshendelse, vises en melding om at overstyring av rettighetsregel er utløpt. |
 | **Ny fordelsplan (ikke spesifikk for USA)** | Human Resources Advansert > Fordeler > Planer > Ny | <ul><li>Rettighetsalternativer legges til i en gjeldende plan</li><li>En ny plan med tilknyttede rettighetsalternativer legges til</li></ul></br></br>HR-personale bør kjøre Behandling av rettighet for levetidshendelse i denne forekomsten. |
 | **Endring av rettighetsregel (ikke spesifikk for USA)** | Human Resources Avansert > Fordeler > Regler/alternativer > Rettighetsregler | Bruke Behandling av rettighet for levetidshendelse. Logges når **EhrBenefitEligibilityRule**-poster har følgende verdier endret: **UseEmplCategory**, **UseEmplStatus** eller **UseEmplType**. Oppdaterer bare livshendelsestransaksjoner som allerede finnes for en endret regel eller et rettighetskriterium. |
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

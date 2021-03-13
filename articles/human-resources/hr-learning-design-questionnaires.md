@@ -1,8 +1,8 @@
 ---
-title: Utforme spørreskjemaer
+title: Opprette spørreskjemaer
 description: Denne artikkelen beskriver fremgangsmåten for å opprette et spørreskjema. Det første trinnet er å utforme spørreskjemaet. Når du utformer et spørreskjema, skriver du ikke bare spørsmålene og svarene, men du oppretter også strukturen som gjør at svar kan registreres og ordnes i tabellform.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -11,21 +11,21 @@ ms.technology: ''
 ms.search.form: KCMCollectionType, KMAnswerCollection, KMCollection, HcmLearningWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 17341
 ms.assetid: b27e2f12-c7a0-4a54-b8d8-17819f8a1c72
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: da4250b281438c29c82150af8db9cb8cca41c6c9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3f7f7d68caf12c33059d2f871fe3f4a036c89f35
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419957"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115132"
 ---
-# <a name="design-questionnaires"></a>Utforme spørreskjemaer
+# <a name="create-questionnaires"></a>Opprette spørreskjemaer
 
 Denne artikkelen beskriver fremgangsmåten for å opprette et spørreskjema. Det første trinnet er å utforme spørreskjemaet. Når du utformer et spørreskjema, skriver du ikke bare spørsmålene og svarene, men du oppretter også strukturen som gjør at svar kan registreres og ordnes i tabellform. 
 
@@ -91,7 +91,7 @@ Nummerseriekodene brukes til å organisere spørsmål og svar. Basert på disse 
 Du bør definere alle parametere før du begynner å opprette dataene. Du kan endre innstillingene for spørreskjemaparametere når som helst.
 
 ## <a name="questionnaire-components"></a>Spørreskjemakomponenter
-Spørreskjemaer omfatter tre hovedelementer: svargrupper som inneholder svarene på spørsmål med flere valg, spørsmål og selve spørreskjemaet.  Du kan også eventuelt gruppere spørsmålene i et spørreskjema i resultatgrupper. Resultatgrupper gjør at du kan kategorisere spørsmål og gi ytterligere analyse i spørreskjemaet. 
+Spørreskjemaer omfatter tre hovedelementer: svargrupper som inneholder svarene på spørsmål med flere valg, spørsmål og selve spørreskjemaet. Du kan også eventuelt gruppere spørsmålene i et spørreskjema i resultatgrupper. Resultatgrupper gjør at du kan kategorisere spørsmål og gi ytterligere analyse i spørreskjemaet. 
 
 [![Spørreskjemakomponenter](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
 
@@ -236,5 +236,3 @@ Hvis du vil bruke betingede spørsmål til å opprette et spørsmålshierarki i 
 En juridisk enhet tilbyr både varer og tjenester til kunder. Som vanlig i slike tilfeller kjøper enkelte kunder bare varer, noen bare tjenester og andre både varer og tjenester. Når den juridiske enheten distribuerer en undersøkelse om kundetilfredshet, bruker den en betinget struktur på spørreskjemaet, slik at kunder som bare kjøper tjenester, ikke trenger å svare på spørsmål om varer. 
 
 Alternativt kan du definere du et spørreskjema slik at hvis en respondent velger svar A på spørsmål 1, er spørsmål 2 det neste spørsmålsrekkefølgen. Hvis respondenten i stedet velger svar B på spørsmål 1, er spørsmål 5 det neste spørsmålet.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

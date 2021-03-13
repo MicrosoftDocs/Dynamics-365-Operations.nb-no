@@ -1,5 +1,5 @@
 ---
-title: Sende fakturaer til arbeidsflytsystemet og samsvare produktkvitteringslinjer (forhåndsversjon)
+title: Sende fakturaer til arbeidsflytsystemet og avstemme produktkvitteringslinjer
 description: Dette emnet beskriver prosessen for å sende leverandørfakturaer til arbeidsflytsystemet og automatisk samsvare posterte produktkvitteringslinjer med leverandørfakturaer.
 author: abruer
 manager: AnnBe
@@ -11,23 +11,21 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.assetid: ''
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-09-08
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: cde164ee89b542d769d81d8d483049fb7ca001c4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 03c9f6752a0bb9641f67d65580aca18276e43e9a
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446238"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115662"
 ---
-# <a name="submit-invoices-to-the-workflow-system-and-match-product-receipt-lines-preview"></a>Sende fakturaer til arbeidsflytsystemet og samsvare produktkvitteringslinjer (forhåndsversjon)
+# <a name="submit-invoices-to-the-workflow-system-and-match-product-receipt-lines"></a>Sende fakturaer til arbeidsflytsystemet og avstemme produktkvitteringslinjer
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Dette emnet beskriver prosessen for å sende leverandørfakturaer til arbeidsflytsystemet og automatisk samsvare posterte produktkvitteringslinjer med leverandørfakturaer.
 
@@ -47,13 +45,10 @@ Prosessen vil kjøre til det samsvarende produktkvitteringsantallet er lik faktu
 
 Fakturalinjer som har en treveis kontrollpolicy, der det samsvarende mottaksantallet er mindre enn fakturaantallet, blir inkludert i den automatiske mottaksprosessen.
 
-Hvis du vil vise **Siste treff**-statusen for fakturaer som ikke er en del av den automatiserte prosessen for sending til arbeidsflyt, åpner du fakturaen fra siden **Leverandørfakturaer**. Når du viser fakturaen, oppdateres den samsvarende valideringsinformasjonen.
+Hvis du vil vise **Siste treff**-statusen for fakturaer som ikke er en del av den automatiserte prosessen for sending til arbeidsflyt, åpner du fakturaen fra siden **Leverandørfakturaer**. Når du viser fakturaen, oppdateres den samsvarende valideringsinformasjonen. Statusen **Siste treff** kan oppdateres automatisk ved hjelp av bakgrunnsoppgaven **Valider fakturakontroll**. Du kan konfigurere prosessen med automatisk oppdatering av status **Siste treff** i kategorien **Bakgrunnsprosesser** på siden **Prosessautomatiseringer** (**Systemadministrasjon\> Oppsett\> Prosessautomatiseringer**).
 
 En fakturalinje vil bli utelatt fra den automatiserte behandlingen hvis en av følgende betingelser er oppfylt:
 
 - Verdien **Status for automatisert kvitteringssamsvar** for fakturalinjen **Mislyktes**.
 - Fakturaen er i bruk.
 - Fakturaen er i arbeidsflytsystemet.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

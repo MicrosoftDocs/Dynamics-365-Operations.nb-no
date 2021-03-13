@@ -2,7 +2,7 @@
 title: Klientfrakoblinger
 description: Denne artikkelen forklarer hva du gjør hvis kunden kobles fra hans eller hennes miljø og ikke vet hvorfor.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2088706baf8735fa371960955a2ffc3240ccac76
-ms.sourcegitcommit: a26e4963d40796da21ce6581cfb2f4d9db4f6776
+ms.openlocfilehash: d02916283bbd4cee6502942020df1b275a0242b3
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "4419979"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113735"
 ---
 # <a name="client-disconnects"></a>Klientfrakoblinger
 
@@ -52,6 +52,3 @@ Microsoft Dynamics 365 Human Resources kobler fra brukere når to forskjellige �
 Kontroller at bare ett miljø er åpent om gangen for en bestemt webleser. Brukere kan åpne flere økter i samme miljø (det vil si flere faner i samme webleser).
 
 Brukere som vil hoppe mellom to miljøer samtidig, bør åpne hvert miljø i en annen webleser. (For eksempel kan bruker A vise miljø 1 i Chrome og miljø 2 i Microsoft Edge.)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

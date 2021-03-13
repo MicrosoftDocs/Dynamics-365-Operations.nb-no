@@ -2,7 +2,7 @@
 title: Tilpassede felt
 description: Du kan legge til egendefinerte felt på sider i Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 03/10/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 583e29d9b0bae34ffc2f519bb775b9e099682fe0
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: eb27808d72728e2e2ac98fdfb8fa0643ad8f3219
+ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4529560"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "5115494"
 ---
 # <a name="custom-fields"></a>Tilpassede felt
 
@@ -31,14 +31,12 @@ ms.locfileid: "4529560"
 
 Du kan legge til egendefinerte felt på sider i Dynamics 365 Human Resources. Hvis du vil ha mer informasjon om hvordan du oppretter egendefinerte felt, kan du se [Opprette og arbeide med egendefinerte felt](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields).
 
-De fleste Common Data Service-enheter støtter egendefinerte felt. Hvis du vil ha en liste over Common Data Service-enheter, kan du se [Common Data Service-enheter](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities). 
+De fleste Dataverse-tabeller støtter egendefinerte felt. Hvis du vil ha en liste over Dataverse-tabeller, kan du se [Dataverse-tabeller](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities). 
 
-Pass på at du aktiverer alle egendefinerte felt du oppretter, slik at du kan bruke dem i Common Data Service. Hvis du vil ha mer informasjon, kan du se [Vise egendefinerte felt på dataenheter](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields#exposing-custom-fields-on-data-entities).
+Pass på at du aktiverer alle egendefinerte felt du oppretter, slik at du kan bruke dem i Dataverse. Hvis du vil ha mer informasjon, kan du se [Vise egendefinerte felt på dataenheter](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields#exposing-custom-fields-on-data-entities).
 
 ## <a name="see-also"></a>Se også
 
-[Common Data Service-enheter](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities)</br>
+[Dataverse-tabeller](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities)</br>
 [Opprette og arbeide med egendefinerte felt](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields)</br>
 [Vise egendefinerte felt på dataenheter](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/user-defined-fields#exposing-custom-fields-on-data-entities)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

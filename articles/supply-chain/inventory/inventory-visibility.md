@@ -1,7 +1,7 @@
 ---
 title: Tillegg for lagersynlighet
 description: Dette emnet beskriver hvordan du installerer og konfigurerer tillegget for lagersynlighet for Dynamics 365 Supply Chain Management.
-author: chuzheng
+author: sherry-zheng
 manager: tfehr
 ms.date: 10/26/2020
 ms.topic: article
@@ -10,28 +10,28 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 2976153a6a7e4b4130e8f7673ed128945aeabf65
-ms.sourcegitcommit: 03c2e1717b31e4c17ee7bb9004d2ba8cf379a036
+ms.openlocfilehash: 4e6f7e0a3978bbf7e520f8cbcfd27c4cfe507777
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "4625071"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5114676"
 ---
 # <a name="inventory-visibility-add-in"></a>Tillegg for lagersynlighet
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
+[!INCLUDE [cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
 
 Tillegget for lagersynlighet er en uavhengig og høyt skalerbar mikrotjeneste som aktiverer beholdningssporing i sanntid, og gir dermed en global visning av lagersynlighet.
 
 All informasjon som er relatert til lagerbeholdningen, eksporteres til tjenesten via i SQL-integrasjon med minimal forsinkelse. Eksterne systemer får tilgang til tjenesten via RESTful-API-er for spørring om lagerbeholdningsinformasjon for gitte sett med dimensjoner, og dermed hente en liste over tilgjengelige lagerbeholdninger.
 
-Lagersynlighet er en mikrotjeneste som er bygd på Common Data Service, som betyr at du kan utvide den ved å bygge Power Apps og bruke Power BI til å oppgi egendefinert funksjonalitet som dekker dine forretningsbehov. Det er også mulig å oppgradere indeksen for å utføre lagerspørringer.
+Lagersynlighet er en mikrotjeneste som er bygd på Microsoft Dataverse, som betyr at du kan utvide den ved å bygge Power Apps og bruke Power BI til å oppgi egendefinert funksjonalitet som dekker dine forretningsbehov. Det er også mulig å oppgradere indeksen for å utføre lagerspørringer.
 
 Lagersynlighet inneholder konfigurasjonsalternativer som gjør at den kan integreres med flere tredjepartssystemer. Den støtter den standardiserte lagerdimensjonen, egendefinert utvidelse og standardisert beregnet antall som kan konfigureres.
 
@@ -78,30 +78,57 @@ Hvis du vil installere tillegget for lagersynlighet, må du gjøre følgende:
 
 ### <a name="get-a-security-service-token"></a>Hent et token for sikkerhetstjeneste
 
-Hvis du vil hente et token for sikkerhetstjeneste, gjør du følgende:
+Hent et token for sikkerhetstjeneste ved å gjøre følgende:
 
-1. Få tak i `aadToken` og kall opp endepunktet: https://securityservice.operations365.dynamics.com/token.
-1. Erstatt `client_assertion` i brødteksten med `aadToken`.
-1. Erstatt konteksten i brødteksten med miljøet der du vil distribuere tillegget.
-1. Erstatt omfanget i brødteksten med følgende:
+1. Logg deg på Azure-portalen, og bruk det til å finne `clientId` og `clientSecret` for programmet Supply Chain Management.
+1. Hent et Azure Active Directory-token (`aadToken`) ved å sende en HTTP-forespørsel med følgende egenskaper:
+    - **URL-adresse** - `https://login.microsoftonline.com/${aadTenantId}/oauth2/token`
+    - **Metode** - `GET`
+    - **Meldingstekst (skjemadata)**:
 
-    - Område for MCK – https://inventoryservice.operations365.dynamics.cn/.default  
-    (Du finner Azure Active Directory-app-ID-en og leie-ID-en for MCK i `appsettings.mck.json`.)
-    - Område for PROD – https://inventoryservice.operations365.dynamics.com/.default  
-    (Du finner Azure Active Directory-app-ID-en og leie-ID-en for PROD i `appsettings.prod.json`.)
+        | nøkkel | verdi |
+        | --- | --- |
+        | client_id | ${aadAppId} |
+        | client_secret | ${aadAppSecret} |
+        | grant_type | client_credentials |
+        | resource | 0cdb527f-a8d1-4bf8-9436-b352c68682b2 |
+1. Du skal motta et `aadToken` som svar, som ligner på følgende eksempel.
 
-    Resultatet skal ligne følgende eksempel.
+    ```json
+    {
+    "token_type": "Bearer",
+    "expires_in": "3599",
+    "ext_expires_in": "3599",
+    "expires_on": "1610466645",
+    "not_before": "1610462745",
+    "resource": "0cdb527f-a8d1-4bf8-9436-b352c68682b2",
+    "access_token": "eyJ0eX...8WQ"
+    }
+    ```
+
+1. Formuler en JSON-forespørsel som ligner på følgende:
 
     ```json
     {
         "grant_type": "client_credentials",
         "client_assertion_type":"aad_app",
-        "client_assertion": "{**Your_AADToken**}",
-        "scope":"**https://inventoryservice.operations365.dynamics.com/.default**",
-        "context": "**5dbf6cc8-255e-4de2-8a25-2101cd5649b4**",
+        "client_assertion": "{Your_AADToken}",
+        "scope":"https://inventoryservice.operations365.dynamics.com/.default",
+        "context": "5dbf6cc8-255e-4de2-8a25-2101cd5649b4",
         "context_type": "finops-env"
     }
     ```
+
+    Der:
+    - Verdien for `client_assertion` må være `aadToken` du mottok i forrige trinn.
+    - Verdien for `context` må være miljø-ID-en der du vil implementere tillegget.
+    - Angi alle andre verdier som vist i eksemplet.
+
+1. Send en HTTP-forespørsel med følgende egenskaper:
+    - **URL-adresse** - `https://securityservice.operations365.dynamics.com/token`
+    - **Metode** - `POST`
+    - **HTTP-hode** - Ta med API-versjonen (nøkkelen er `Api-Version` og verdien er `1.0`)
+    - **Meldingstekst** - Ta med JSON-forespørselen du opprettet i forrige trinn.
 
 1. Du får et `access_token` som svar. Dette er det du trenger som bærertoken for å kalle opp lagersynlighets-API-en. Her er et eksempel:
 
@@ -500,6 +527,3 @@ Spørringene som vises i eksemplene ovenfor, kan returnere et resultat som dette
 ```
 
 Legg merke til at antall-feltene er strukturert som en ordliste for mål og tilknyttede verdier.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Konfigurere integrasjon med Dayforce
 description: Integrasjonen mellom Microsoft Dynamics 365 Human Resources og Ceridian Dayforce bruker flere konfigurasjonstrinn som er beskrevet i denne artikkelen. Du må konfigurere integreringen i både Human Resources og Dayforce før du kan behandle en lønnskjøring.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c66ec772ea66732e042f50081f04a6569852f211
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 044a2d2f632b2c98ce94b6d61c2582a861640b68
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4419817"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113696"
 ---
 # <a name="configure-integration-with-dayforce"></a>Konfigurere integrasjon med Dayforce
 
@@ -676,6 +676,3 @@ Ansatte kan deklarere passinformasjon. Denne informasjonen er av **Pass**-identi
 
 Ansatte kan angi flere identifikasjonsnumre for identifikasjonstypen **Pass**. Men bare den gjeldende aktive passoppføringen er integrert i Dayforce. Hvis alle passoppføringer er utløpt, er passet som sist ble utstedt, integrert i Dayforce.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

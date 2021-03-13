@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: cbf00f7428c9b1852a5bf54fd7e30a3bddc1a31e
-ms.sourcegitcommit: 0e60df840688932795b9c8f8fd45d98f5ab6ba8c
+ms.openlocfilehash: c5041d515b261bb3e4b14885e0ec0ce788edf729
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4668951"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113687"
 ---
 # <a name="go-live-faq"></a>Vanlige spørsmål om aktivering 
 
@@ -66,7 +66,7 @@ Selv om du ikke kan få tilgang til Azure-ressursene eller Dynamics 365 Human Re
 
 - Du kan distribuere en Azure SQL-database i din egen Azure-leier og bruke funksjonen Vise din egen database (BYOD) til å synkronisere data. Hvis du vil ha mer informasjon, kan du se [Vise din egen database (BYOD)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database).
 
-- Du kan bruke Common Data Service-integrering til å synkronisere utvalgte enheter i Common Data Service-databasen. Hvis du vil ha mer informasjon, kan du se [Common Data Service-enheter](hr-developer-entities.md). 
+- Du kan bruke Dataverse-integrering til å synkronisere utvalgte enheter i Dataverse-databasen. Hvis du vil ha mer informasjon, kan du se [Dataverse-tabeller](hr-developer-entities.md). 
 
 ## <a name="how-often-is-my-production-database-backed-up"></a>Hvor ofte sikkerhetskopieres produksjonsdatabasen? 
 
@@ -99,6 +99,3 @@ Hvis du vil rapportere en produksjonsnedetid, følger du prosessen som er beskre
  ## <a name="see-also"></a>Se også
 
  [Klargjøre for aktivering](hr-admin-go-live-prepare.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

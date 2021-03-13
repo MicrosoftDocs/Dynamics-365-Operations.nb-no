@@ -2,7 +2,7 @@
 title: Klargjøre Human Resources
 description: Denne artikkelen leder deg gjennom prosessen med å klargjøre et nytt produksjonsmiljø for Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 04/23/2020
 ms.topic: article
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 106976edfa2bd7efba41887d5e8f4243b56e7b2f
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 1a57180c60be4b4686c274aecbf86f0bc6c8b2fb
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527804"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113643"
 ---
 # <a name="provision-human-resources"></a>Klargjøre Human Resources
 
@@ -32,6 +32,23 @@ ms.locfileid: "4527804"
 Denne artikkelen leder deg gjennom prosessen med å klargjøre et nytt produksjonsmiljø for Microsoft Dynamics 365 Human Resources. Denne artikkelen antar at du har kjøpt Human Resources gjennom en Cloud Solution Provider (CSP)- eller enterprise architecture (EA)-avtale. Hvis du har en eksisterende Microsoft Dynamics 365-lisens som allerede inneholder Human Resources-serviceplanen, og du kan ikke fullføre trinnene i denne artikkelen, kan du kontakte kundestøtte.
 
 Det første som må gjøres, er at den globale administratoren må logge på [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com) (LCS) og opprette et nytt Human Resources-prosjekt. Med mindre et lisensieringsproblem hindrer deg i å klargjøre Human Resources, kreves det ikke hjelp fra kundestøtte eller Dynamics Service Engineering (DSE)-representanter.
+
+## <a name="plan-human-resources-environments"></a>Planlegge Human Resources-miljøer
+
+Før du oppretter ditt første Human Resources-miljø, bør du nøye planlegge miljøbehovene for prosjektet. Et basisabonnement på Human Resources omfatter to miljøer: et produksjonsmiljø og et sandkassemiljø. Det kan hende at du må kjøpe flere sandkassemiljøre for å støtte prosjektaktiviteter, avhengig av kompleksiteten i prosjektet. 
+
+Hensyn til tilleggsmiljøer omfatter, men er ikke begrenset til, følgende:
+
+- **Dataoverføring**: Det kan hende at du må vurdere et tilleggsmiljø for dataoverføringsaktiviteter for å tillate at sandkassemiljøet brukes til testeformål gjennom hele prosjektet. Hvis du har et ekstra miljø, kan aktiviteter for migrering av data fortsette mens testing og konfigurasjon skjer samtidig i et annet miljø.
+- **Integrering**: Det kan hende at du må vurdere et tilleggsmiljø for å konfigurere og teste integreringer. Dette kan for eksempel inkludere opprinnelige integrasjoner som Ceridian Dayforce LinkedIn Talent Hub-integrasjoner, eller egendefinerte integrasjoner, for eksempel integreringer av lønn, søkersporingssystemer eller fordelssystemer og -leverandører.
+- **Opplæring**: Du trenger kanskje et eget miljø som er konfigurert med et sett med opplæringsdata for å lære opp de ansatte i bruk av det nye systemet. 
+- **Prosjekt med flere faser**: Du trenger kanskje et tilleggsmiljø for å støtte konfigurasjon, dataoverføring, testing eller andre aktiviteter i en prosjektfase som er planlagt etter den innledende aktiveringen av prosjektet.
+
+ > [!IMPORTANT]
+ > Vi anbefaler at du bruker produksjonsmiljøet i hele prosjektet som GULL-konfigurasjonsmiljø. Dette er viktig fordi du ikke kan kopiere et sandkassemiljø til et produksjonsmiljø. Når du kommer aktiverer, er derfor GULL-miljøet produksjonsmiljøet ditt, og du fullfører overgangsaktivitetene i dette miljøet.</br></br>
+ > Vi anbefaler at du bruker sandkassemiljøet ditt eller et annet miljø til å utføre en testovergang før selve aktiveringen. Du kan gjøre dette ved å oppdatere produksjonsmiljøet med GULL-konfigurasjonen i sandkassemiljøet.</br></br>
+ > Vi anbefaler at du har en detaljert kontrolliste for overgang som inneholder alle datapakkene som kreves for å migrere de siste dataene til produksjonsmiljøet under overgangen til aktivering.</br></br>
+ > Vi anbefaler også at du bruker sandkassemiljøet i hele prosjektet som TEST-miljø. Hvis du trenger flere miljøer, kan organisasjonen kjøpe dem for en ekstra kostnad.</br></br>
 
 ## <a name="create-an-lcs-project"></a>Opprette et LCS-prosjekt
 
@@ -88,7 +105,7 @@ Bruk følgende retningslinjer når du skal avgjøre hvilket Power Apps-miljø Hu
 
 2. Ett enkelt Human Resources-miljø er tilordnet til ett enkelt Power Apps-miljø.
 
-3. Et Power Apps-miljø inneholder Human Resources-programmet, sammen med de tilsvarende Power Apps-, Power Automate- og Common Data Service -programmene. Hvis Power Apps-miljøet slettes, slettes også appene i det. Når du klargjør et Human Resources-miljø, kan du klargjøre et miljø av typen **Prøveversjon** eller **Produksjon**. Velg miljø basert på hvordan miljøet vil bli brukt. 
+3. Et Power Apps-miljø inneholder Human Resources-programmet, sammen med de tilsvarende Power Apps-, Power Automate- og Dataverse -programmene. Hvis Power Apps-miljøet slettes, slettes også appene i det. Når du klargjør et Human Resources-miljø, kan du klargjøre et miljø av typen **Prøveversjon** eller **Produksjon**. Velg miljø basert på hvordan miljøet vil bli brukt. 
 
 4. Dataintegrering og teststrategier skal vurderes, for eksempel sandkasse, UAT eller produksjon. Vurder forskjellige konsekvenser for distribusjonen, for det er ikke enkelt å endre hvilket Human Resources-miljø som skal tilordnes til Power Apps-miljøet, senere.
 
@@ -108,6 +125,3 @@ Bruk følgende retningslinjer når du skal avgjøre hvilket Power Apps-miljø Hu
 ## <a name="grant-access-to-the-environment"></a>Gi tilgang til miljøet
 
 Som standard har den globale administratoren som opprettet miljøet, tilgang til den. Du må eksplisitt gi tilgang til flere programbrukere. Du må legge til brukere og tilordne de riktige rollene til dem i Human Resources-miljøet. Den globale administratoren som distribuerte Human Resources, må også starte både Attract og Onboard for å fullføre initialiseringen og aktivere tilgang for andre leierbrukere. Før dette skjer, andre brukere vil ikke kunne få tilgang til Attract og Onboard og få tilgangsbruddfeil. Hvis du vil ha mer informasjon, se [Opprette nye brukere](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) og [Tilordne brukere til sikkerhetsroller](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

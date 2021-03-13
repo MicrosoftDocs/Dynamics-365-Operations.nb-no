@@ -1,8 +1,8 @@
 ---
-title: Oversikt
+title: Oversikt over administrasjon
 description: Denne administratorveiledningen hjelper deg med å sette opp, administrere og feilsøke Dynamics 365 Human Resources.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -18,14 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8008a7e78bb1d1568a79fab436194a04d1ff683c
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 38a8845ec4ae4c61ea969efdee60a12cfb644a3b
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527867"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113764"
 ---
-# <a name="overview"></a>Oversikt
+# <a name="administration-overview"></a>Oversikt over administrasjon
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -41,7 +41,7 @@ Denne administratorveiledningen hjelper deg med å sette opp, administrere og fe
 
 - Konfigurere dataintegrering
   - [Velg en dataintegreringsteknologi](hr-admin-integration-choose-technology.md)
-  - [Konfigurere Common Data Service-integrering](hr-admin-integration-common-data-service.md)
+  - [Konfigurere Dataverse-integrering](hr-admin-integration-common-data-service.md)
   - [Konfigurere integrering med Finance](hr-admin-integration-finance.md)
   - [Konfigurere integrering med Dayforce](hr-admin-integration-dayforce.md)
   - [Opprette en app for regelmessig dataeksport](hr-admin-integration-recurring-data-export.md)
@@ -102,5 +102,3 @@ Denne administratorveiledningen hjelper deg med å sette opp, administrere og fe
 - [Hva er nytt eller endret i Human Resources](hr-admin-whats-new.md)
 - [Utviklerveiledning](hr-developer-overview.md)
 - [Brukerveiledning](hr-hrpro-overview.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

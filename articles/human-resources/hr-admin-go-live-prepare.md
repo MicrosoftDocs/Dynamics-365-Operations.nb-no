@@ -18,12 +18,12 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 59d7274c3b40e78209d90960c4514321b736876a
-ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
+ms.openlocfilehash: b4196532be8ad40bacb8d614c6b0c86215b00bdb
+ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "4419969"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "5113661"
 ---
 # <a name="prepare-for-human-resources-go-live"></a>Klargjøre for å aktivere med Human Resources
 
@@ -53,28 +53,36 @@ Følgende tabell viser alle trinnene i prosessen, forventet varighet og hvem som
 
 ## <a name="completing-the-lcs-methodology"></a>Fullføre LCS-metodikken
 
-En stor milepæl i hvert implementeringsprosjekt er overgangen til produksjonsmiljøet. 
-
-For å sikre at produksjonsmiljøet brukes til live-operasjoner, klargjør Microsoft bare produksjonsforekomsten når implementeringen nærmer seg **drifts**-fasen, etter at de påkrevde aktivitetene i LCS-metodikken er fullført. Hvis du vil ha mer informasjon om miljøer i abonnementet, kan du se [lisensieringsveiledningen for Dynamics 365](https://go.microsoft.com/fwlink/?LinkId=866544). 
-
-Kunder må fullføre **analyse**, **utforme og utvikle** og **teste** fasene i LCS-metoden før **Konfigurer** -knappen for å be om produksjonsmiljøet blir tilgjengelig. Hvis du vil fullføre en fase i LCS, må du først fullføre hvert nødvendige trinn i den fasen. Når alle trinnene i en fase er fullført, kan du fullføre hele fasen. Du kan alltid åpne en fase på nytt senere hvis du må utføre endringer. Hvis du vil ha mer informasjon, kan du se [Lifecycle Services (LCS) for Finance and Operations-appkunder eller](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs). 
-
-Prosessen med å fullføre et trinn har to deler: 
+En stor milepæl i hvert implementeringsprosjekt er overgangen til produksjonsmiljøet. Prosessen med å fullføre et trinn har to deler: 
 
 - Gjør det faktiske arbeidet, for eksempel en tilpassings-/gapanalyse eller testing av brukergodkjennelse. 
 - Merk det tilsvarende trinnet i LCS-metodikken som fullført. 
 
-Det er en god praksis å fullføre trinnene i metoden mens du går fremover med implementeringen. Ikke vent til det siste minuttet. Du kan ikke bare klikke gjennom alle trinnene slik at du får et produksjonsmiljø. Det er i kundens beste interesse å ha en solid implementering. 
+Det er en god praksis å fullføre trinnene i metoden mens du går fremover med implementeringen. Ikke vent til det siste minuttet. Det er i kundens beste interesse å ha en solid implementering. 
 
 ## <a name="uat-for-your-solution"></a>UAT for løsningen
 
 I løpet av UAT-fasen må du teste alle forretningsprosessene du har implementert, og eventuelle tilpasninger du har utført, i et sandkassemiljø i implementeringsprosjektet. Du bør vurdere følgende når du fullfører UAT-fasen for å sikre en vellykket aktiveringsfase: 
 
+- Vi anbefaler at UAT-prosessen starter med et rent og nytt miljø der dataene fra GULL-konfigurasjonen kopieres til miljøet før starten av UAT-prosessen. Vi anbefaler at du bruker produksjonsmiljøet som GULL-miljø til du går i gang med å produsere på et bestemt tidspunkt.
 - Prøvesaker dekker hele omfanget av krav. 
 - Test ved å bruke overførte data. Disse dataene bør inneholde hoveddata, for eksempel arbeidere, jobber og stillinger. Ta også med åpningssaldoer som permisjons- og fraværsavsetninger. Til slutt skal du ta med åpne transaksjoner, for eksempel registrering av gjeldende fordeler. Fullstendig testing med alle typer data, selv om datasettet ikke er sluttført. 
 - Test ved å bruke de riktige sikkerhetsrollene (standardroller og egendefinerte roller) som er tilordnet til brukerne. 
 - Kontroller at løsningen er i samsvar med alle bransjespesifikke forskriftsmessige krav. 
 - Dokumenter alle funksjoner og hent godkjenning fra kunden. 
+
+## <a name="mock-go-live"></a>Aktiveringstest
+
+Før du aktiverer, må du utføre en testaktivering for å teste trinnene som er nødvendige for å gå fra dine eldre systemer til det nye systemet. Du bør utføre din testaktivering i et sandkassemiljø og inkludere alle trinnene i overgangsplanen din.
+
+- Vi anbefaler at du bruker produksjonsmiljøet som GULL-konfigurasjonsmiljøet frem til aktiveringen.
+- Sørg for at du har en god styringsprosess på plass for å beskytte produksjonsmiljøet mot utilsiktede transaksjoner eller oppdateringer, før aktiveringen.
+- Når du er klar til å utføre UAT eller testaktivering, oppdaterer du sandkassemiljøet fra produksjonsmiljøet. Hvis du vil ha mer informasjon, kan du se [Kopiere en forekomst](hr-admin-setup-copy-instance.md).
+- Test hvert trinn i overgangsplanen i sandkassemiljøet, og valider deretter sandkassemiljøet ved å utføre spotkontroller eller tester fra UAT-skriptene i miljøet.
+  - Testene bør inneholde alle migreringene, inkludert transformasjoner som trengs til aktiveringen.
+  - Prosessen bør inkludere en testovergang for alle eldre systemer.
+  - Pass på at du tar med eventuelle trinn i integreringsovergangen eller eksterne systemtrinn testovergangen.
+- Hvis det oppstår problemer under testovergangen, kan det være nødvendig med en ny testovergang. Vi anbefaler derfor at du planlegger to testoverganger i prosjektplanen.
 
 ## <a name="fasttrack-go-live-assessment"></a>FastTrack-aktiveringsvurdering
 
@@ -91,5 +99,3 @@ Når du har sendt inn sjekklisten, vil FastTrack-løsningsarkitekten se gjennom 
 ## <a name="see-also"></a>Se også
 
 [Vanlige spørsmål om aktivering](hr-admin-go-live-faq.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
