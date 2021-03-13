@@ -1,7 +1,7 @@
 ---
 title: Oversikt over innkjøpspolicyer
 description: Denne artikkelen inneholder informasjon om innkjøpspolicyer. En innkjøpspolicy er en samling av regler som styrer rekvisisjonsprosessen. Innkjøpspolicyer hjelpe innkjøpsadministratorer med å implementere sin innkjøpsstrategi ved å opprette en policystruktur som er i samsvar med organisasjonens krav til strategiske innkjøp.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 07/25/2019
 ms.topic: article
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: PurchReqSourcingPolicyRule, SysPolicy, SysPolicyListPage, PurchReqControlRule, RequisitionReplenishCatAccessPolicyRule, PurchReApprovalPolicyRule, RequisitionReplenishControlRule, PurchReqControlRFQRule
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 11614
 ms.assetid: 729a304d-0f3f-4ccb-bd5b-46ee0976c57f
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 00200bc79f83e9d072ff8220c89a6aaa70cb07a5
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: def842116e0c6c57d407cb4fb30a26a9e17d9a2c
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434842"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5022212"
 ---
 # <a name="purchasing-policies-overview"></a>Oversikt over innkjøpspolicyer
 
@@ -104,10 +103,10 @@ Regelen for tilbudsforespørsel for innkjøpsrekvisisjon definerer kriterier for
 
 Kontrollregelen for innkjøpsrekvisisjon for rekvisisjoner av typen **forbruk** er en valgfri regel. Når du oppretter reglene av denne typen, kan du angi alternativer i forskjellige kategorier:
 
--   I **Oppstart av arbeidsflyt**-kategorien kan du konfigurere feltene som må registreres i rekvisisjonslinjen for rekvisisjonen som skal sendes til godkjenning.
--   I kategorien **Ordreantall** kan du konfigurere feltene som er nødvendige på innkjøpsrekvisisjonen i visse tilfeller. Du kan også bruke ordreantall.
--   I kategorien **Datoer** kan du konfigurere om Regnskapsdatoen er lik ønsket dato
--   I kategorien **Adresse** kan du definere om brukeren har tillatelse til å opprette nye adresser i systemet som skal gjelde for innkjøpsrekvisisjonen.
+-   I **Oppstart av arbeidsflyt**-fanen kan du konfigurere feltene som må registreres i rekvisisjonslinjen for rekvisisjonen som skal sendes til godkjenning.
+-   I fanen **Ordreantall** kan du konfigurere feltene som er nødvendige på innkjøpsrekvisisjonen i visse tilfeller. Du kan også bruke ordreantall.
+-   I fanen **Datoer** kan du konfigurere om Regnskapsdatoen er lik ønsket dato
+-   I fanen **Adresse** kan du definere om brukeren har tillatelse til å opprette nye adresser i systemet som skal gjelde for innkjøpsrekvisisjonen.
 
 ### <a name="requisition-purpose-rule"></a>Regel for rekvisisjonsformål
 
@@ -125,32 +124,29 @@ Kontrollregel for etterfylling er en valgfri regel som definerer feltene som må
 
 Konsolideringsregel for bestillingsopprettelse og behov definerer policyreglene skal brukes når en bestilling genereres fra en godkjent innkjøpsrekvisisjon. Når du oppretter reglene av denne typen, kan du angi alternativer i forskjellige kategorier:
 
--   I kategorien **Bestillingsdeling** kan du definere vilkår for å dele innkjøpsrekvisisjonslinjene inn i separate bestillinger.
--   I kategorien **Pris-/rabattoverføring** kan du definere når du skal omberegne prisavtalen når en bestilling opprettes:
+-   I fanen **Bestillingsdeling** kan du definere vilkår for å dele innkjøpsrekvisisjonslinjene inn i separate bestillinger.
+-   I fanen **Pris-/rabattoverføring** kan du definere når du skal omberegne prisavtalen når en bestilling opprettes:
     -   **Bare hvis det ikke finnes forretningsavtale** – Priser og rabatter overføres fra innkjøpsrekvisisjonen bare hvis det ikke finnes noen aktuell forretningsavtale eller basispris. Hvis det finnes en forretningsavtale eller basispris for varen eller leverandøren, beregnes prisene og rabattene på nytt basert på forretningsavtalen eller basisprisen og brukes i bestillingen. Dette er standardvirkemåten hvis ikke annet er angitt.
     -   **Alltid** – Priser og rabatter overføres alltid fra innkjøpsrekvisisjonen.
 
     Du kan også tillate at bestilleren endrer metoden for pris- og rabattoverføring for enkeltlinjer i innkjøpsrekvisisjonen, uavengig av regelen for overføring av priser/tabatter som er definert. Velg alternativet **Tillat manuell overstyring av innkjøpsrekvisisjonslinje** hvis du vil aktivere denne funksjonen.
--   I kategorien **Overføring av varebeskrivelse** kan du overføre varebeskrivelsen fra rekvisisjonen når den kommer fra en Tilbudsforespørsel.
--   I kategorien **Pristoleranse** kan du definere regler for å rute godkjente innkjøpsrekvisisjoner tilbake via gjennomgangsprosessen, når prisen på en vare i en innkjøpskatalog øker. Angi deretter det maksimale beløpet som nettobeløpet for en linjevare i en innkjøpsrekvisisjon kan øke, fra tidspunktet innkjøpsrekvisisjonen godkjennes til tidspunktet bestillingen opprettes. Nettobeløpet beregnes ved å bruke følgende formel: (\[Antall × (enhetspris-rabatt) ÷ prisenhet\] + innkjøpstillegg) × (100-rabattprosent) ÷ 100. Innkjøpsrekvisisjonslinjer som overskrider pristoleransen du har angitt, blir låst for manuell behandling. Reglene du konfigurerer i kategorien **Feilbehandling**, bestemmer hvordan innkjøpsrekvisisjonslinjene behandles.
--   I kategorien **Feilbehandling** kan du konfigurere behandlingsregelen som skal brukes for en innkjøpsrekvisisjon hvis den ikke kan valideres når bestillingen opprettes, på grunn av en leverandørfeil eller en pristoleransefeil. Velg ett av følgende alternativer:
+-   I fanen **Overføring av varebeskrivelse** kan du overføre varebeskrivelsen fra rekvisisjonen når den kommer fra en Tilbudsforespørsel.
+-   I fanen **Pristoleranse** kan du definere regler for å rute godkjente innkjøpsrekvisisjoner tilbake via gjennomgangsprosessen, når prisen på en vare i en innkjøpskatalog øker. Angi deretter det maksimale beløpet som nettobeløpet for en linjevare i en innkjøpsrekvisisjon kan øke, fra tidspunktet innkjøpsrekvisisjonen godkjennes til tidspunktet bestillingen opprettes. Nettobeløpet beregnes ved å bruke følgende formel: (\[Antall × (enhetspris-rabatt) ÷ prisenhet\] + innkjøpstillegg) × (100-rabattprosent) ÷ 100. Innkjøpsrekvisisjonslinjer som overskrider pristoleransen du har angitt, blir låst for manuell behandling. Reglene du konfigurerer i fanen **Feilbehandling**, bestemmer hvordan innkjøpsrekvisisjonslinjene behandles.
+-   I fanen **Feilbehandling** kan du konfigurere behandlingsregelen som skal brukes for en innkjøpsrekvisisjon hvis den ikke kan valideres når bestillingen opprettes, på grunn av en leverandørfeil eller en pristoleransefeil. Velg ett av følgende alternativer:
     -   **Ingen handling** – innkjøpsrekvisisjonslinjene forblir på siden **Frigi godkjente innkjøpsrekvisisjoner**. Statusen for innkjøpsrekvisisjonslinjene blir værende **Godkjent**. Feilene må imidlertid løses før en bestilling kan genereres for innkjøpsrekvisisjonslinjene.
     -   **Avbryt innkjøpsrekvisisjonslinjen** – innkjøpsrekvisisjonslinjene avbrytes. Bestilleren kan opprette en ny innkjøpsrekvisisjon for de annullerte linjene hvis han eller hun fortsatt ønsker å rekvirere linjevarene.
     -   **Opprett en ny innkjøpsrekvisisjonslinje** – innkjøpsrekvisisjonslinjene avbrytes. Deretter genereres nye innkjøpsrekvisisjoner som bare inneholder innkjøpsrekvisisjonslinjene som ikke ble validert. De nye innkjøpsrekvisisjonene som er generert, har statusen **Utkast**. Disse innkjøpsrekvisisjonene kan sendes inn på nytt for gjennomgang etter at valideringsfeilene er løst. Klargjøreren for innkjøpsrekvisisjonslinjene blir varslet om at linjene er annullert, og at nye innkjøpsrekvisisjoner ble generert for de mislykkede innkjøpsrekvisisjonslinjene.
--   I kategorien **Manuell bestillingsopprettelse** kan du definere parameterne som bestemmer om en innkjøpsrekvisisjon må behandles manuelt, eller om den kan konverteres automatisk til en bestilling. Parameterne kan gjelde for interne katalogvarer, eksterne katalogvarer eller ikke-katalogvarer. Velg ett av følgende alternativer:
+-   I fanen **Manuell bestillingsopprettelse** kan du definere parameterne som bestemmer om en innkjøpsrekvisisjon må behandles manuelt, eller om den kan konverteres automatisk til en bestilling. Parameterne kan gjelde for interne katalogvarer, eksterne katalogvarer eller ikke-katalogvarer. Velg ett av følgende alternativer:
     -   **Opprett bestillinger manuelt** – manuelt opprette bestillinger for alle innkjøpsrekvisisjoner.
     -   **Opprett automatisk bestillinger** – opprette bestillinger automatisk for alle godkjente innkjøpsrekvisisjoner. Ingen innkjøpsrekvisisjoner er låst for manuell oppretting av bestillinger.
     -   **Opprett bestillinger automatisk, bortsett fra under disse betingelsene** – manuelt opprette bestillinger for innkjøpsrekvisisjoner som oppfyller vilkårene du definerer. Alle andre innkjøpsrekvisisjoner som er godkjent, konverteres automatisk til bestillinger. Hvis du velger **Opprett bestillinger automatisk, bortsett fra under disse betingelsene**, kan du legge til innkjøpskategorier og leverandører for å angi hvilke godkjente innkjøpsrekvisisjonslinjer som skal sperres for manuell behandling. Dette alternativet kan gjelde for interne katalogvarer, eksterne katalogvarer og ikke-katalogvarer. Når du velger en innkjøpskategori, blir alle underkategorier for denne innkjøpskategorien også valgt. Velg alternativet **Alle** for en bestemt type innkjøpsrekvisisjonslinje for å låse alle linjer av denne typen for manuell behandling.
 
     Hvis du vil at bestillinger skal genereres automatisk fra godkjente innkjøpsrekvisisjoner når den satsvise jobben for bestillingsgenerering kjøres, velger du alternativet **Kjør automatisk bestillingsopprettelse som en satsvis jobb**. Dette alternativet gjelder bare for innkjøpsrekvisisjoner som ikke krever manuell behandling. Ved å kjøre den automatiske genereringen av bestillinger som en satsvis jobb kan du planlegge denne aktiviteten på et tidspunkt når det er mindre belastning på ressursene. Hvis alternativet **Forskuddsbetaling kreves** er valgt på innkjøpsrekvisisjonslinjene, kan du merke av for **Når rekvisisjonen er konfigurert for forskuddsbetaling** hvis du vil låse godkjente innkjøpsrekvisisjonslinjer for manuell behandling. Innkjøpsrekvisisjoner som er låst for manuell behandling, kan filtreres slik at du kan vise bare innkjøpsrekvisisjonslinjene som krever forskuddsbetaling.
--   I kategorien **Behovskonsolidering** kan du definere parameterne som bestemmer om innkjøpsrekvisisjoner som behandles manuelt, kan vurderes for konsolidering av innkjøpsrekvisisjoner. Parameterne kan gjelde for interne katalogvarer, eksterne katalogvarer eller ikke-katalogvarer. Velg ett av følgende alternativer:
+-   I fanen **Behovskonsolidering** kan du definere parameterne som bestemmer om innkjøpsrekvisisjoner som behandles manuelt, kan vurderes for konsolidering av innkjøpsrekvisisjoner. Parameterne kan gjelde for interne katalogvarer, eksterne katalogvarer eller ikke-katalogvarer. Velg ett av følgende alternativer:
     -   **Ikke tillat etterspørselskonsolidering** – ingen godkjente innkjøpsrekvisisjonslinjer er kvalifisert for behovskonsolidering. Dette alternativet er valgt som standard og gjelder bare for innkjøpsrekvisisjonslinjer som krever manuell behandling ved oppretting av bestillinger.
-    -   **Tillat alltid etterspørselskonsolidering** – alle godkjente innkjøpsrekvisisjonslinjer er kvalifisert for behovskonsolidering. **Obs!** Hvis du velger alternativet **Tillat alltid etterspørselskonsolidering** i kategorien **Behovskonsolidering**, men du velger alternativet **Opprett automatisk bestillinger** i kategorien **Manuell bestillingsopprettelse**, blir alle innkjøpsrekvisisjoner låst for manuell behandling.
+    -   **Tillat alltid etterspørselskonsolidering** – alle godkjente innkjøpsrekvisisjonslinjer er kvalifisert for behovskonsolidering. **Obs!** Hvis du velger alternativet **Tillat alltid etterspørselskonsolidering** i fanen **Behovskonsolidering**, men du velger alternativet **Opprett automatisk bestillinger** i fanen **Manuell bestillingsopprettelse**, blir alle innkjøpsrekvisisjoner låst for manuell behandling.
     -   **Tillat etterspørselskonsolidering under disse betingelsene** – Definer kriteriene som bestemmer om godkjente innkjøpsrekvisisjonslinjer er kvalifisert for behovskonsolidering. For hver type innkjøpsrekvisisjonslinje kan du angi kriteriene etter innkjøpskategori og leverandør. Hvis du velger **Tillat etterspørselskonsolidering under disse betingelsene**, kan du angi kriteriene etter innkjøpskategori og leverandør for hver type innkjøpsrekvisisjonslinje. Når du velger en innkjøpskategori, blir alle underkategorier for denne innkjøpskategorien også valgt. Hvis du velger **Alle** for en bestemt linjetype, er alle innkjøpsrekvisisjonslinjene for denne linjetypen berettiget til behovskonsolidering.
 
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

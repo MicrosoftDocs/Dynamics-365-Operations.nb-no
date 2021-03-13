@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetFunctionalLocationObjectChange, EntAssetFunctionalLocationObjectInstall, EntAssetFunctionalLocationObject
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 85b9f473cc725896a00501510eea02d7cfb21782
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5ea67e2392d8e25a2a5f3cb7e1ff5032322f2c48
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434300"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5022036"
 ---
 # <a name="install-assets-on-functional-locations"></a>Installere aktiva på arbeidssteder
 
@@ -56,12 +55,12 @@ Når du har installert aktiva på et arbeidssted, kan du erstatte et overordnet 
 5. I **Gyldighet**-feltet velger du datoen og klokkeslettet da aktivainstallasjonen er gyldig fra. Etter dette tidspunktet vil kostnader for aktivumet og relaterte underaktiva være knyttet til arbeidsstedet.
 
     > [!NOTE]
-    > Aktivaattributtene som er definert på aktivumet, legges til i **Attributter**-delen. Kravet til **Vekt**-attributtet er for eksempel lagt til som et krav på både aktivumet og arbeidsstedet. Hvis aktivaet har attributtkrav av samme type som arbeidsstedet, angis verdiene for aktivumets attributtkrav i **Verdi**-feltene. Derfor kan du validere aktivaverdiene mot attributtkravene som er definert på arbeidsstedet. Attributtkravene som er definert på arbeidsstedet, er merket med en hake.
+    > Aktivaattributtene som er definert på aktivumet, legges til i **Attributter**-delen. Kravet til **Vekt**-attributtet er for eksempel lagt til som et krav på både aktivumet og arbeidsstedet. Hvis aktivumet har attributtkrav av samme type som arbeidsstedet, angis verdiene for aktivumets attributtkrav i **Verdi**-feltene. Derfor kan du validere aktivaverdiene mot attributtkravene som er definert på arbeidsstedet. Attributtkravene som er definert på arbeidsstedet, er merket med en hake.
 
 6. Velg **OK**.
 
     > [!NOTE]
-    > Hvis du vil endre installasjonen av et aktivum ved å installere det på et nytt arbeidssted, følger du trinn 1 til 6 i denne fremgangsmåten. Når du installerer et aktivum på et nytt arbeidssted, avinstalleres aktivumet automatisk fra det forrige arbeidsstedet. Alle aktive vedlikeholdsforespørsler eller arbeidsordrer som ble opprettet på aktivumet før du installerte det på et nytt arbeidssted, overføres **ikke** automatisk til det nye arbeidsstedet. Hvis disse vedlikeholdsforespørslene og arbeidsordrene fortsatt er nødvendige for aktivaet, må du opprette dem på nytt manuelt etter at aktivaet er installert på den nye lokasjonen.
+    > Hvis du vil endre installasjonen av et aktivum ved å installere det på et nytt arbeidssted, følger du trinn 1 til 6 i denne fremgangsmåten. Når du installerer et aktivum på et nytt arbeidssted, avinstalleres aktivumet automatisk fra det forrige arbeidsstedet. Alle aktive vedlikeholdsforespørsler eller arbeidsordrer som ble opprettet på aktivumet før du installerte det på et nytt arbeidssted, overføres **ikke** automatisk til det nye arbeidsstedet. Hvis disse vedlikeholdsforespørslene og arbeidsordrene fortsatt er nødvendige for aktivumet, må du opprette dem på nytt manuelt etter at aktivumet er installert på den nye lokasjonen.
 
 7. Hvis du vil vise en liste over alle aktivaene, inkludert underaktiva, som er installert på arbeidsstedet, velger du arbeidsstedet på siden **Alle arbeidssteder** og velger deretter **Aktiva**.
 8. Hvis du vil vise en liste over aktive vedlikeholdsforespørsler, aktive arbeidsordrer eller feilregistreringer som er knyttet til aktivaene som er installert på et arbeidssted, velger du arbeidsstedet på siden **Alle arbeidssteder**, og deretter velger du **Forespørsler**, **Arbeidsordrer** eller **Feil**.
@@ -76,13 +75,10 @@ Du kan definere arbeidsstedsfaser og arbeidsstedstyper for å håndtere automati
 Før du kan opprette et aktivum automatisk på et arbeidssted, må følgende oppsettsdata være tilgjengelige:
 
 - Opprett en arbeidsstedstype for å håndtere automatisk opprettelse av et aktivum. I **Aktivatype**-feltet velger du en aktivatype. Hvis du vil har mer informasjon, kan du se [Arbeidsstedstyper](../setup-for-functional-locations/functional-location-types.md).
-- Opprett en livsløpstilstand for arbeidssted for å håndtere automatisk opprettelse av et aktivum. Sett alternativet **Opprett aktivum** til **Ja**. Hvis du vil har mer informasjon, kan du se [Livsløpstilstander for arbeidssteder](../setup-for-functional-locations/functional-location-stages.md).
+- Opprett en livssyklustilstand for arbeidssted for å håndtere automatisk opprettelse av et aktivum. Sett alternativet **Opprett aktivum** til **Ja**. Hvis du vil har mer informasjon, kan du se [Livssyklustilstander for arbeidssteder](../setup-for-functional-locations/functional-location-stages.md).
 
 Når oppsettsdataene er tilgjengelige, er du klar til å opprette et aktivum.
 
-1. På siden **Alle arbeidssteder** må du kontrollere at arbeidsstedet der du vil at aktivaet skal opprettes automatisk, bruker arbeidsstedstypen du opprettet for dette formålet.
+1. På siden **Alle arbeidssteder** må du kontrollere at arbeidsstedet der du vil at aktivumet skal opprettes automatisk, bruker arbeidsstedstypen du opprettet for dette formålet.
 2. Velg arbeidsstedet i listen.
-3. Velg **Oppdater tilstand for arbeidssted**, og velg deretter livsløpstilstanden du opprettet for dette formålet. Ett aktivum installeres nå automatisk på arbeidsstedet. Dette aktivumet har samme navn som arbeidsstedet.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+3. Velg **Oppdater tilstand for arbeidssted**, og velg deretter livssyklustilstanden du opprettet for dette formålet. Ett aktivum installeres nå automatisk på arbeidsstedet. Dette aktivumet har samme navn som arbeidsstedet.

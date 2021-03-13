@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 35e7a55b1ba230be6bb72b20fcd805ea061b648e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 83b195add44927d847491e6394e72637323117b3
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434316"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021635"
 ---
 # <a name="asset-service-levels"></a>Tjenestenivåer for aktiva
 
@@ -31,7 +30,7 @@ ms.locfileid: "4434316"
 
  
 
-Dette emnet beskriver tjenestenivåer for aktiva i Aktivastyring. Tjenestenivåer for aktiva er knyttet til aktiva og overføres til vedlikeholdsanmodninger og arbeidsordrer. De brukes til å beregne prioriteten for arbeidsordrer under planlegging av arbeidsordrer. Servicenivåer for aktiva kan endres hvis det er nødvendig med endringer.
+Dette emnet beskriver tjenestenivåer for aktiva i Aktivastyring. Tjenestenivåer for aktiva er knyttet til aktiva og overføres til meldinger og arbeidsordrer. De brukes til å beregne prioriteten for arbeidsordrer under planlegging av arbeidsordrer. Servicenivåer for aktiva kan endres hvis det er nødvendig med endringer.
 
 Hvis du vil ha mer informasjon om oppsettet som er knyttet til beregning av poengsummer for arbeidsordreplanlegging, kan du se [Parametere i Aktivastyring](../setup-for-objects/enterprise-asset-management-parameters.md). Du må definere minst én standardpost for servicenivået for aktivumet. Denne standardposten brukes hvis ingen andre treff blir funnet under planleggingen av arbeidsordren.
 
@@ -46,13 +45,10 @@ Hvis du vil ha mer informasjon om oppsettet som er knyttet til beregning av poen
 3. Avhengig av detaljnivået som kreves for tjenestenivået for aktiva, kan du foreta relevante valg i feltene **Arbeidssted**, **Aktivatype**, **Produsent**, **Modell**, **Aktivum**, **Arbeidsordretype** og **Tjenestenivå**.
 
     > [!NOTE]
-    > Når servicenivået for aktiva brukes til vedlikeholdsanmodninger og arbeidsordrer, går Aktivastyring gjennom alle poster på servicenivå for aktiva for å kontrollere om det finnes et mulig samsvar. Den kontrollerer alltid den mest spesifikke kombinasjonen først. Med andre ord ser Aktivastyring først etter et treff i **Arbeidsordretype**-feltet. Hvis det ikke blir funnet noe treff, kontrolleres det for et treff i **Aktivum**-feltet, og så videre. Som du kan se i oppsettet av siden **Tjenestenivåer for aktiva**, betyr dette at for å finne den mest spesifikke kombinasjonen, kontrollerer Aktivastyring hver post fra høyre til venstre for et treff. Hvis det ikke blir funnet noen treff, brukes standardoppføringen, der det ikke er noen valg i disse feltene.
+    > Når servicenivået for aktiva brukes til meldinger og arbeidsordrer, går Aktivastyring gjennom alle poster på servicenivå for aktiva for å kontrollere om det finnes et mulig samsvar. Den kontrollerer alltid den mest spesifikke kombinasjonen først. Med andre ord ser Aktivastyring først etter et treff i **Arbeidsordretype**-feltet. Hvis det ikke blir funnet noe treff, kontrolleres det for et treff i **Aktivum**-feltet, og så videre. Som du kan se i oppsettet av siden **Tjenestenivåer for aktiva**, betyr dette at for å finne den mest spesifikke kombinasjonen, kontrollerer Aktivastyring hver post fra høyre til venstre for et treff. Hvis det ikke blir funnet noen treff, brukes standardoppføringen, der det ikke er noen valg i disse feltene.
 
 4. I feltet **Servicenivå** velger du et tall som angir servicenivået (prioriteten).
 
 
 > [!NOTE]
-> Hvis du endrer en post for servicenivå for aktiva på siden **Servicenivåer for aktiva** etter at du allerede har brukt den på en arbeidsordre, oppdateres ikke servicenivået på vedlikeholdsanmodninger og arbeidsordrer i henhold til dette.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+> Hvis du endrer en post for servicenivå for aktiva på siden **Servicenivåer for aktiva** etter at du allerede har brukt den på en arbeidsordre, oppdateres ikke servicenivået på meldinger og arbeidsordrer i henhold til dette.

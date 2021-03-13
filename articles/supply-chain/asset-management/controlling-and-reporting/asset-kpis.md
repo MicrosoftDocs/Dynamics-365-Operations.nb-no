@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetObjectKPI
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3ebbb1016bafed8ad9fb998fc76152e215c08c3e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f75db96926e72bab80d0a65ce6f0ab3a92590699
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434308"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021786"
 ---
 # <a name="asset-kpis"></a>KPI-er for aktivum
 
@@ -33,7 +32,7 @@ ms.locfileid: "4434308"
 
 I Aktivastyring kan du beregne forskjellige KPIer for aktiva og aktivatyper. Du bruker KPIer til å få en oversikt over ytelse på anleggsmidler i forbindelse med for eksempel oppetid, nedetid, reparasjonstid og gjennomsnittstid mellom feil (MTBF).
 
-1. Klikk **Aktivastyring** > **Forespørsler** > **Aktiva** > **KPI-er for aktivum**.
+1. Klikk på **Aktivastyring** > **Forespørsler** > **Aktiva** > **KPI-er for aktivum**.
 
 2. I dialogboksen **Beregn KPI-er for aktivum** velger du **tidsskalaen** som skal brukes i beregningen, og en periode i feltene **Fra dato** og **Til dato**. 
 
@@ -90,6 +89,3 @@ Figuren nedenfor viser et skjermbilde av en KPI-beregning for fire aktiva.
 - Du kan velge flere aktiva i **Alle aktiva** og klikke knappen **KPI-er for aktiva** i fanen **Generelt**. Deretter klikker du **OK** i dialogboksen **Beregn KPI-er for aktivum** for å beregne KPIer for de valgte aktivaene.  
 - Resultater fra en KPI-beregning kan omfatte [registreringer av nedetid ved vedlikehold](../work-orders/maintenance-downtime.md), avhengig av oppsettet og bruken av årsakskoder for nedetid ved vedlikehold. 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

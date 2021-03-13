@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetWorkOrderLineNote, EntAssetWorkOrderTable, EntAssetWorkOrderActive, EntAssetWorkOrderHoursInfoPart, EntAssetWorkOrderLineListPage, EntAssetWorkOrderAddObjectBOMItem, EntAssetWorkOrderTablePoolAdd, EntAssetWorkOrderPurchReqListPagePreviewPane, EntAssetWorkOrderPoolReferenceAdd, EntAssetWorkOrderWorkspace, EntAssetWorkOrderTableAdjust, EntAssetWorkOrderGantt, EntAssetWorkOrderNotes, EntAssetWorkOrderActivePart, EntAssetWorkOrderTableInfoPart, EntAssetWorkOrderLineListPagePreviewPane, EntAssetWorkOrderTool, EntAssetMobileWorkOrderLineDetails, EntAssetMobileWorkOrderLineList, EntAssetMobileWorkOrderDetails
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7997b4b9521b43e1e00cfa22f9df12a29582455a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 378fc6d55deada95e94f91ed3f73f2518efbeb1f
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434229"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021886"
 ---
 # <a name="introduction-to-work-orders"></a>Innføring i arbeidsordrer
 
@@ -31,7 +30,7 @@ ms.locfileid: "4434229"
 
 
 
-Arbeidsordrer brukes til å administrere vedlikeholdsoppgaver, angi nødvendig informasjon om oppgavene og registrere forbruk for dem. Hver arbeidsordre kan inneholde én eller flere arbeidsordrejobber, og ett eller flere aktiva kan knyttes til hver arbeidsordre. Hver arbeidsordrejobb definerer en vedlikeholdsjobb som er planlagt for aktivaet.
+Arbeidsordrer brukes til å administrere vedlikeholdsoppgaver, angi nødvendig informasjon om oppgavene og registrere forbruk for dem. Hver arbeidsordre kan inneholde én eller flere arbeidsordrejobber, og ett eller flere aktiva kan knyttes til hver arbeidsordre. Hver arbeidsordrejobb definerer en vedlikeholdsjobb som er planlagt for aktivumet.
 
 Arbeidsordrer kan opprettes på følgende måter:
 
@@ -66,7 +65,7 @@ Her er noen måter du kan bruke siden **Alle arbeidsordrer** på:
 
 - I detaljvisningen kan du se detaljert informasjon knyttet til arbeidsordren.  
 
-- I detaljvisningen velger du **Linjer**-kategorien for å se detaljer om arbeidsordrejobben eller **Hode**-kategorien for å se detaljer om arbeidsordren.  
+- I detaljvisningen velger du **Linjer**-fanen for å se detaljer om arbeidsordrejobben eller **Hode**-fanen for å se detaljer om arbeidsordren.  
 
 - Utvid ruten **Beslektet informasjon** til høyre for siden for å vise tilleggsinformasjon som er knyttet til den valgte arbeidsordren.
 
@@ -89,9 +88,9 @@ Knappene i handlingsruten er ordnet i kategorier. Følgende tabell beskriver kor
 | Relatert arbeidsordre              | Opprett en ny arbeidsordre knyttet til den valgte arbeidsordrejobben. Dette er nyttig hvis du vil registrere primære og sekundære arbeidsordrer.                                                                                                                              |
 | Kopier arbeidsordre                 | Opprett en ny arbeidsordre som er basert på en eksisterende arbeidsordren.                                                                                                                                                                                                               |
 | Hendelseshistorikk                   | Vis registreringslogg for arbeidsordren.                                                                                                                                                                                                                |
-| Merknader for vedlikeholdsjobb for arbeidsordre                           | Lag en beskrivelse for en arbeidsordren, eller sett inn merknader eller kommentarer om den. Først velger du **Legg til tidsstempel** for å legge til brukernavnet og et tidsstempel i merknaden. Merknader vises i kategorien **Beskrivelse** i hurtigfanen **Linjedetaljer** på siden **Arbeidsordre**.         |
+| Merknader for vedlikeholdsjobb for arbeidsordre                           | Lag en beskrivelse for en arbeidsordren, eller sett inn merknader eller kommentarer om den. Først velger du **Legg til tidsstempel** for å legge til brukernavnet og et tidsstempel i merknaden. Merknader vises i fanen **Beskrivelse** i hurtigfanen **Linjedetaljer** på siden **Arbeidsordre**.         |
 | Verktøy                           | Opprett en liste over nødvendige verktøy i en arbeidsordre. Verktøy defineres som ressurser i **Organisasjonsstyring** > **Ressurser** > **Ressurser**.                                                                                                      |
-| Sjekkliste for vedlikehold           | Vis sjekklisten for aktivaet som er knyttet til arbeidsordren.                                                                                                                                                                                                              |
+| Sjekkliste for vedlikehold           | Vis sjekklisten for aktivumet som er knyttet til arbeidsordren.                                                                                                                                                                                                              |
 | Aktivumfeil                     | Vis eller registrer feilinformasjon for et aktivum. Denne informasjonen er for feilstyring.                                                                                                                                                                                      |
 | Nedetid ved vedlikehold            | Angi nedetid for vedlikehold for en arbeidsordre.                                                                                                                                                                                                                               |
 | Betingelsesvurdering            | Registrer betingelsesvurderingsmålinger for en arbeidsordre.                                                                                                                                                                                                             |
@@ -100,7 +99,7 @@ Knappene i handlingsruten er ordnet i kategorier. Følgende tabell beskriver kor
 | Journaler                        | Vis eller opprett arbeidsordrejournaler. Journallinjer kan kopieres fra prognoser.                                                                                                                                                                                         |
 | Prosjekttransaksjoner            | Vis alle posterte transaksjoner som er relatert til arbeidsordrer som er opprettet for aktivumet.                                                                                                                                                                                             |
 | Oppdater tilstand for arbeidsordre           | Oppdater tilstanden for arbeidsordrelivssyklusen.                                                                                                                                                                                                                                                |
-| Logg for livsløpstilstand                      | Vis en logg som viser livsløpstilstandene til den valgte arbeidsordren.                                                                                                                                                                                                                   |
+| Logg for livssyklustilstand                      | Vis en logg som viser livssyklustilstandene til den valgte arbeidsordren.                                                                                                                                                                                                                   |
 | Aktivadokumenter                | Vis listen over dokumenter knyttet til aktiva som er knyttet til en arbeidsordre. Disse dokumentene er definert i **Aktivastyring** > **Oppsett** > **Aktivadokumenter**.                                                                                                 |
 | Planlegg                        | Planlegg de valgte arbeidsordrene.                                                                                                                                                                                                                                      |
 | Fordeling            | Planlegg den valgte arbeidsordren for én arbeider.                                                                                                                                                                                                                        |
@@ -114,11 +113,8 @@ Knappene i handlingsruten er ordnet i kategorier. Følgende tabell beskriver kor
 | Arbeidsordreforbruk          | Skriv ut en forbruksrapport.                                                                                                                                                                                                                                               |
 
 
-Knappene i gruppen **Prosjekt** i kategorien **Arbeidsordre** i handlingsruten er relatert til funksjonaliteten for prognoser, journaler og fakturering i modulen **Prosjektstyring og regnskap**.
+Knappene i gruppen **Prosjekt** i fanen **Arbeidsordre** i handlingsruten er relatert til funksjonaliteten for prognoser, journaler og fakturering i modulen **Prosjektstyring og regnskap**.
 
 >[!NOTE]
 >For å inkludere prognoser som er opprettet i en arbeidsordre når du kjører hovedplanlegging, bruker du prognosemodellen som er valgt på siden **Aktivabehandlingsparametere**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

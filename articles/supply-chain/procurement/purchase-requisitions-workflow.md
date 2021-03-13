@@ -1,7 +1,7 @@
 ---
 title: Arbeidsflyten for innkjøpsrekvisisjon
 description: Arbeidsflytprosessen flytter innkjøpsrekvisisjoner gjennom vurderingsprosessen, fra den innledende statusen Utkast til den endelige statusen Godkjent. Når en innkjøpsrekvisisjon sendes til gjennomgang, starter arbeidsflytprosessen. Når en innkjøpsrekvisisjon er godkjent, kan en bestilling genereres for innkjøpsrekvisisjonslinjene og sendes til leverandøren for å bli oppfylt.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: PurchReqAuthorization, WorkflowParticipantExpenToken
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 2234
 ms.assetid: dad3ba5a-2892-45d2-874a-300896f59b34
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7a9dceb3f9e71163dcaf8b8763317110ef019844
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f6069e2ab93e1ce4299669850bdae37e82b17428
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434254"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021986"
 ---
 # <a name="purchase-requisition-workflow"></a>Arbeidsflyten for innkjøpsrekvisisjon
 
@@ -104,7 +103,7 @@ Du kan definere én eller flere konfigurasjoner for utgiftskontrollør og derett
 
 Du trenger ikke å definere en konfigurasjon for utgiftskontrollør. Du kan i stedet tilordne bestemte brukere eller brukergrupper som kontrollører når du definerer arbeidsflyten. Hvis du imidlertid har en kompleks organisasjon, kan du øke effektiviteten til godkjenningsprosessen når du angir utgiftskontrollører. Hvis du setter opp utgiftskontrollører, trenger du heller ikke oppdatere kontrollørtilordningene for arbeidsflyt hver gang en kontrollør skifter jobbrolle.  
 
-Du kan definere utgiftskontrollører på siden **Kontrollører av innkjøpsrekvisisjonsutgifter**. Opprett en konfigurasjon for utgiftskontrollør, og angi verdiene for hver juridiske enhet i organisasjonen. For rekvisisjoner som er tilordnet til et prosjekt, kan du angi hvilken rolle som er ansvarlig for å se gjennom rekvisisjonene: prosjektleder, prosjektkontroller eller prosjektsalgssjef. Utgifter sendes til brukeren som er tilordnet til den angitte rollen. Du kan også sende utgiften til eieren av finansdimensjonen ved å merke av for den aktuelle finansdimensjonen i kategorien **Organisasjonsdistribusjoner**.  
+Du kan definere utgiftskontrollører på siden **Kontrollører av innkjøpsrekvisisjonsutgifter**. Opprett en konfigurasjon for utgiftskontrollør, og angi verdiene for hver juridiske enhet i organisasjonen. For rekvisisjoner som er tilordnet til et prosjekt, kan du angi hvilken rolle som er ansvarlig for å se gjennom rekvisisjonene: prosjektleder, prosjektkontroller eller prosjektsalgssjef. Utgifter sendes til brukeren som er tilordnet til den angitte rollen. Du kan også sende utgiften til eieren av finansdimensjonen ved å merke av for den aktuelle finansdimensjonen i fanen **Organisasjonsdistribusjoner**.  
 
 Hvis du vil bruke en av utgiftskontrollørene som du definerer i en arbeidsflyt, må du angi alternativet **Type deltaker** til **Utgiftsdeltakere** i **Tildeling**-egenskapene for det aktuelle arbeidsflytelementet.
 
@@ -121,6 +120,3 @@ Hvis du vil bruke en av utgiftskontrollørene som du definerer i en arbeidsflyt,
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

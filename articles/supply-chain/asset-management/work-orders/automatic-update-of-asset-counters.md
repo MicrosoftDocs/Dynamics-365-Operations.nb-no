@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fcc46fad8d57b7d4d57edfa4f2ae06de923d1c14
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d3e8619439545cf3ea42f84a6dd7ee6ffdf1026e
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434230"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021936"
 ---
 # <a name="automatic-update-of-asset-counters"></a>Automatisk oppdatering av anleggsmiddeltellere
 
@@ -56,7 +55,7 @@ Som nevnt ovenfor kan automatiske tellere oppdateres fra produksjonsregistrering
 
 5. Velg **OK**. 
 
-Når oppdateringen for den automatiske aktivatelleren er utført, kan du vise tellerregistreringer som er knyttet til aktivumet, på siden **Aktivatellere**. Velg **Aktivabehandling** > **Felles** > **Aktiva** > **Alle aktiva**, velg aktivumet, gå til handlingsruten, kategorien **Aktiva**, gruppen **Foregyggende**, og velg **Tellere**.
+Når oppdateringen for den automatiske aktivatelleren er utført, kan du vise tellerregistreringer som er knyttet til aktivumet, på siden **Aktivatellere**. Velg **Aktivabehandling** > **Felles** > **Aktiva** > **Alle aktiva**, velg aktivumet, gå til handlingsruten, fanen **Aktiva**, gruppen **Foregyggende**, og velg **Tellere**.
 
 På siden **Akkumulert verdi for aktivum** kan du få en oversikt over den siste registreringen som er utført på alle tellertyper på alle aktiva. Velg **Aktivastyring** > **Forespørsler** > **Aktiva** > **Akkumulert verdi for aktivum**. Denne siden ligner på siden **Aktivatellere**, men du kan ikke legge til eller redigere registreringer. Den er bare en oversikt.
 
@@ -70,6 +69,3 @@ Merk følgende punkt:
 
 - Du kan definere tellere som er relatert til en annen teller. I dette tilfellet oppdateres tilknyttede tellere automatisk samtidig når en teller oppdateres. Hvis du vil ha informasjon om hvordan du definerer relaterte tellere, se [Tellere](../setup-for-objects/counters.md).
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

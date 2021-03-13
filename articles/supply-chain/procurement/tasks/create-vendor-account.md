@@ -1,7 +1,7 @@
 ---
 title: Opprette en leverandørkonto
 description: Denne fremgangsmåten viser hvordan du oppretter en leverandørkonto, og legger til en adresse og kontaktinformasjon.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 06/26/2019
 ms.topic: business-process
@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: VendTable, LogisticsPostalAddressGrid, DirPartyLookup, LogisticsPostalAddress, SysLookupMultiSelectGrid, WHSFilterGenerallyAvail
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dd8cd2bb7b03c0415a5c5656f0e3ffada961973e
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: e7f5723fc2aa50fc66c825eb09a01e45833b817e
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434838"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5022137"
 ---
 # <a name="create-a-vendor-account"></a>Opprette en leverandørkonto
 
@@ -43,22 +42,19 @@ Denne fremgangsmåten viser hvordan du oppretter en leverandørkonto, og legger 
 
 ## <a name="add-an-address"></a>Legge til en adresse
 1. Vis delen **Adresser**.
-2. Klikk **Legg til**.
+2. Klikk på **Legg til**.
 3. Angi eller velg en verdi i **Formål**-feltet. Du kan velge ett eller flere formål. Disse brukes til å velge den riktige adressen for en angitt formål. Hvis formålet for eksempel er "Faktura", brukes denne adressen når du sender fakturaer.
 4. Skriv inn en verdi i feltet **Navn eller beskrivelse**.
 5. Angi eller velg en verdi i **Land/område**-feltet. Angi adressedetaljene. Landet/regionen du valgte, bestemmer feltene som du ser, i henhold til adresseformatet for landet/regionen. 
-6. Klikk **OK**.
+6. Klikk på **OK**.
 
 ## <a name="add-contact-information"></a>Legge til kontaktinformasjon
 1. Vis delen **Kontaktinformasjon**.
-2. Klikk **Legg til**.
+2. Klikk på **Legg til**.
 3. Skriv inn en verdi i **Beskrivelse**-feltet.
 4. Velg et alternativ i **Type**-feltet.
 5. Angi en verdi i feltet **Kontaktnummer/-adresse**. Du kan merke av for Primær hvis dette er hovedkontakten.  
-6. Klikk **Lagre**.
+6. Klikk på **Lagre**.
 7. Lukk siden.
 8. Lukk siden.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

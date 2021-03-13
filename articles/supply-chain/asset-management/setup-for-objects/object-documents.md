@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetObjectDocument
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d1e251dbbede23466109f6219671db7f62d6d420
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0f8bcae99a96ccd83dc4543b1c56007a4263a19b
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434317"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021685"
 ---
 # <a name="asset-documents"></a>Aktivadokumenter
 
@@ -46,10 +45,7 @@ I Aktivastyring kan du definere dokumenter slik at de automatisk er knyttet til 
 3. Avhengig av hvor spesifikk du ønsker dokumentrelasjonen skal være, kan du foreta relevante valg i ett eller flere av følgende felt: **Aktivatype**, **Produsent**, **Modell**, **Aktivum**, **Jobbtypekategori**, **Jobbtype**, **Jobbtypevariant** og **Jobbehov**. Alternativene som er tilgjengelige i feltene **Jobbtypevariant** og **Jobbehov**, avhenger av hva du velger i **Jobbtype**-feltet.
 
     > [!NOTE]
-    > Når systemet søker etter dokumenter som skal knyttes til et aktivum eller en arbeidsordre, går Aktivastyring gjennom alle aktivadokumentposter for å se etter en mulig match. Den kontrollerer alltid den mest spesifikke kombinasjonen først. Med andre ord ser Aktivastyring først etter et treff i **Jobbehov**-feltet. Hvis det ikke blir funnet noe treff, kontrolleres det for et treff i **Jobbtypevariant**-feltet. Hvis det ikke blir funnet noe treff, kontrolleres det for et treff i **Jobbtype**-feltet, og så videre. Som du kan se i oppsettet av **Aktivadokumenter**-siden, betyr dette at for å finne den mest spesifikke kombinasjonen, kontrollerer Aktivastyring hver post fra høyre til venstre for et treff. Flere dokumenter kan være knyttet til et aktivum eller en arbeidsordre. Du kan redigere servicenivået i en vedlikeholdsanmodning eller en arbeidsordre etter behov.
+    > Når systemet søker etter dokumenter som skal knyttes til et aktivum eller en arbeidsordre, går Aktivastyring gjennom alle aktivadokumentposter for å se etter en mulig match. Den kontrollerer alltid den mest spesifikke kombinasjonen først. Med andre ord ser Aktivastyring først etter et treff i **Jobbehov**-feltet. Hvis det ikke blir funnet noe treff, kontrolleres det for et treff i **Jobbtypevariant**-feltet. Hvis det ikke blir funnet noe treff, kontrolleres det for et treff i **Jobbtype**-feltet, og så videre. Som du kan se i oppsettet av **Aktivadokumenter**-siden, betyr dette at for å finne den mest spesifikke kombinasjonen, kontrollerer Aktivastyring hver post fra høyre til venstre for et treff. Flere dokumenter kan være knyttet til et aktivum eller en arbeidsordre. Du kan redigere servicenivået i en melding eller en arbeidsordre etter behov.
 
 4. Velg **Vedlegg**. Standardsiden **Dokumenthåndtering** vises.
 5. Definer dokumentene eller notatene som skal knyttes til aktivadokumentposten. Når du har tilknyttet dokumenter, viser **Vedlegg**-feltet antallet dokumenter som er knyttet til posten.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
