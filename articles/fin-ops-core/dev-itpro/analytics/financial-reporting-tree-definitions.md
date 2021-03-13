@@ -1,6 +1,6 @@
 ---
-title: Rapporteringstredefinisjoner finansrapporter
-description: Denne artikkelen gir informasjon om rapporteringstredefinisjoner. En rapporteringstredefinisjon er en rapportkomponent eller byggeblokk, som bidrar til å definere strukturen og hierarkiet i organisasjonen.
+title: Definisjoner av rapporteringstre i finansrapporter
+description: Denne artikkelen beskriver rapporteringstredefinisjoner. En rapporteringstredefinisjon er en rapportkomponent som definerer strukturen til en organisasjon.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/07/2019
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 8ae024c2d791e1219c7383dc95283219a9300eac
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 17f749863af3c37658935d5065cf053d0a165c1e
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682680"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093907"
 ---
-# <a name="reporting-tree-definitions-in-financial-reports"></a>Rapporteringstredefinisjoner finansrapporter
+# <a name="reporting-tree-definitions-in-financial-reports"></a>Definisjoner av rapporteringstre i finansrapporter
 
 [!include [banner](../includes/banner.md)]
 
@@ -51,22 +51,22 @@ En rapporteringstredefinisjonen inneholder kolonnene som er beskrevet i tabellen
 |-----------------------|-------------|
 | Bedrift               | Firmanavnet for rapporteringsenheten. Verdien **\@ANY**, som vanligvis tilordnes bare til sammendragsnivået, aktiverer rapporteringstreet slik at det kan brukes for alle firmaer. Alle underordnede avdelinger er tilordnet til et firma. |
 | Enhetsnavn             | Koden som identifiserer rapporteringsenheten i det grafiske rapporteringstreet. Pass på å opprette et unik fargekodingssystem som er konsekvent, og som skal være enkelt for brukerne å forstå. |
-| Enhetsbeskrivelse      | Tittelen for rapporteringsenheten vises i topp- eller bunnteksten på rapporten hvis du angir **UnitDesc** som kode i kategorien **Topptekst og bunntekst** i rapportdefinisjonen. Tittelen vises i radbeskrivelsen for rapporten hvis du angir **UnitDesc** i **Beskrivelse**-cellen for raddefinisjonen. |
+| Enhetsbeskrivelse      | Tittelen for rapporteringsenheten vises i topp- eller bunnteksten på rapporten hvis du angir **UnitDesc** som kode i fanen **Topptekst og bunntekst** i rapportdefinisjonen. Tittelen vises i radbeskrivelsen for rapporten hvis du angir **UnitDesc** i **Beskrivelse**-cellen for raddefinisjonen. |
 | Dimensjoner            | En rapporteringsenhet som henter informasjon direkte fra de økonomiske dataen. Den definerer den logisk plassering og lengdene for kontoen og tilknyttede segmenter. Hver rad for rapporteringsenhet må ha en dimensjon i denne kolonnen. Du kan også legge en dimensjon i en rad for sammendragsenhet (for eksempel for utgifter som er direkte relatert til denne enheten). Hvis du angir en dimensjon i en rad for sammendragsenhet, må kontoer som brukes i overordnede enheter ikke brukes i underordnede enheter. Hvis ikke, kan det hende beløpene blir duplisert. |
-| Raddefinisjoner       | Navnet på raddefinisjonen for rapporteringsenheten. Den samme raddefinisjonen brukes for hver enhet i rapporteringstreet. Når du genererer en rapport, brukes denne raddefinisjonen for hver rapporteringsenhet. Raddefinisjonen kan inneholde flere koblinger til finansdimensjoner. Hvis en raddefinisjon er angitt i rapporteringstreet, merker du av for **Bruk raddefinisjon fra rapporteringstre** i kategorien **Rapport** i rapportdefinisjonen. |
+| Raddefinisjoner       | Navnet på raddefinisjonen for rapporteringsenheten. Den samme raddefinisjonen brukes for hver enhet i rapporteringstreet. Når du genererer en rapport, brukes denne raddefinisjonen for hver rapporteringsenhet. Raddefinisjonen kan inneholde flere koblinger til finansdimensjoner. Hvis en raddefinisjon er angitt i rapporteringstreet, merker du av for **Bruk raddefinisjon fra rapporteringstre** i fanen **Rapport** i rapportdefinisjonen. |
 | Radkobling              | Radkoblingen som skal brukes for rapporteringsenheten. Radkoblinger defineres for raddefinisjonen for å identifisere finansdimensjonene det skal kobles til. |
 | Ekstern kobling         | Radkoblingen som skal brukes for denne rapporteringsenheten. Radkoblinger er definert for raddefinisjonen for å identifisere rapporten som skal kobles til. |
 | Ekstern fil         | Filbanen til regnearket for finansrapportering som det skal hentes data fra. |
 | Sidealternativer          | Denne kolonnen angir om detaljene for rapporteringsenhet undertrykkes når rapporten vises eller skrives ut. |
-| Opprulling i %              | Prosentdelen av rapporteringsenheten som skal tilordnes til den overordnede enheten. Prosentdelen du angir i denne kolonnen, gjelder for hver rad i raddefinisjonen før verdien i raden legges til den overordnede rapporten. Hvis en underordnet enhet for eksempel skal deles likt mellom to avdelinger, blir beløpene i hver rad multiplisert med 50 prosent før verdien legges til i avdelingsrapporten. Én rapporteringsenhet kan ikke ha to overordnede enheter. Hvis du vil tilordne beløpene fra en rapportering til to overordnede enheter, kan du opprette en annen rapporteringsenhet som har samme dimensjon for å rulle opp de ekstra 50 prosentene. Skriv inn hele prosentdeler uten desimaltegn. **25** representerer for eksempel 25 prosent allokering til overordnet. Hvis du tar med et desimaltegn (**,25**), vil 0,25 prosent allokeres til overordnet. Hvis du vil bruke en prosentdel som er mindre enn én prosent, kan du bruke alternativet **Tillat opprulling &lt;1%** i rapportdefinisjonen. Dette alternativet er i kategorien **Tilleggsalternativer** i dialogboksen **Rapportinnstillinger**. Du kan åpne denne dialogboksen fra **Annet**-knappen i kategorien **Innstillinger** i rapportdefinisjonen. |
+| Opprulling i %              | Prosentdelen av rapporteringsenheten som skal tilordnes til den overordnede enheten. Prosentdelen du angir i denne kolonnen, gjelder for hver rad i raddefinisjonen før verdien i raden legges til den overordnede rapporten. Hvis en underordnet enhet for eksempel skal deles likt mellom to avdelinger, blir beløpene i hver rad multiplisert med 50 prosent før verdien legges til i avdelingsrapporten. Én rapporteringsenhet kan ikke ha to overordnede enheter. Hvis du vil tilordne beløpene fra en rapportering til to overordnede enheter, kan du opprette en annen rapporteringsenhet som har samme dimensjon for å rulle opp de ekstra 50 prosentene. Skriv inn hele prosentdeler uten desimaltegn. **25** representerer for eksempel 25 prosent allokering til overordnet. Hvis du tar med et desimaltegn (**,25**), vil 0,25 prosent allokeres til overordnet. Hvis du vil bruke en prosentdel som er mindre enn én prosent, kan du bruke alternativet **Tillat opprulling &lt;1%** i rapportdefinisjonen. Dette alternativet er i fanen **Tilleggsalternativer** i dialogboksen **Rapportinnstillinger**. Du kan åpne denne dialogboksen fra **Annet**-knappen i fanen **Innstillinger** i rapportdefinisjonen. |
 | Enhetssikkerhet         | Begrensninger for brukere og grupper som har tilgang til informasjon for rapporteringsenheten. |
 | Tilleggstekst       | Tekst som er inkludert i rapporten. |
 
 Følg fremgangsmåten nedenfor for å opprette en rapporteringstredefinisjon.
 
 1. Åpne Rapportutforming.
-2. Klikk **Fil** &gt; **Ny** &gt; **Rapporteringstredefinisjon**.
-3. Klikk **Rediger** &gt; **Sett inn rapporteringsenheter fra dimensjoner**.
+2. Klikk på **Fil** &gt; **Ny** &gt; **Rapporteringstredefinisjon**.
+3. Klikk på **Rediger** &gt; **Sett inn rapporteringsenheter fra dimensjoner**.
 4. I dialogboksen **Sett inn rapporteringsenheter fra dimensjoner** merker du av for hver dimensjon som skal tas med i rapporteringstreet. Dialogboksen **Sett inn rapporteringsenheter fra dimensjoner** inneholder delene nedenfor.
 
     | Seksjon                          | Beskrivelse |
@@ -87,11 +87,11 @@ Følg fremgangsmåten nedenfor for å opprette en rapporteringstredefinisjon.
 
 9. Gjenta trinn 7 til 8 for hver dimensjon i området **Segmenter hierarki og områder**.
 10. Når du er ferdig med å definere hvordan rapportenhetene skal hentes inn i det nye rapporteringstreet, klikker du **OK**.
-11. Klikk **Fil** &gt; **Lagre** for å lagre rapporteringstreet. Skriv inn et unikt navn og beskrivelse for rapporteringstreet, og klikk deretter **OK**.
+11. Klikk på **Fil** &gt; **Lagre** for å lagre rapporteringstreet. Skriv inn et unikt navn og beskrivelse for rapporteringstreet, og klikk deretter **OK**.
 
 ### <a name="open-an-existing-reporting-tree-definition"></a>Åpne en eksisterende rapporteringstredefinisjon
 
-1. Klikk **Rapporteringstredefinisjoner** i navigasjonsruten i Rapportutforming.
+1. Klikk på **Rapporteringstredefinisjoner** i navigasjonsruten i Rapportutforming.
 2. Dobbeltklikk et navn i rapporteringstrelisten for å åpne det.
 3. Hvis du vil vise alle byggeblokker som er knyttet til rapporteringstreet, høyreklikker du rapporteringstredefinisjonen og velger deretter **Tilknytninger**.
 
@@ -127,24 +127,24 @@ Du kan ordne organisasjonsstrukturen i en rapporteringstredefinisjon ved å flyt
 1. Åpne rapporteringstreet som skal endres i Rapportutforming.
 2. Velg en rapporteringsenhet i den grafiske visningen av rapporteringstredefinisjonen.
 3. Dra enheten til en ny plassering. Du kan også høyreklikke enheten og deretter velge **Forfremme rapporteringsenhet** eller **Senk rapporteringsenhet**.
-4. Klikk **Fil** &gt; **Lagre** for å lagre endringene.
+4. Klikk på **Fil** &gt; **Lagre** for å lagre endringene.
 
 ### <a name="add-text-about-a-reporting-unit"></a> Legge til tekst om en rapporteringsenhet
 
-En oppføring for tilleggstekst er en statisk tekststreng med opptil 255 tegn, som legger til informasjon i rapporteringstredefinisjonen. Tilleggsteksten kan for eksempel være en kort beskrivelse av firmaet. Du kan opprette opptil ti oppføringer for tilleggstekst for hver rapporteringsenhet i en rapporteringstredefinisjon. Tilleggsteksten vises i rapporten for rapporteringsenheten som teksten er tilordnet. Du kan legge til tekstoppføringer fra **Beskrivelse**-kolonnen i raddefinisjonen, og fra kategorien **Topptekst og bunntekst** i rapportdefinisjonen.
+En oppføring for tilleggstekst er en statisk tekststreng med opptil 255 tegn, som legger til informasjon i rapporteringstredefinisjonen. Tilleggsteksten kan for eksempel være en kort beskrivelse av firmaet. Du kan opprette opptil ti oppføringer for tilleggstekst for hver rapporteringsenhet i en rapporteringstredefinisjon. Tilleggsteksten vises i rapporten for rapporteringsenheten som teksten er tilordnet. Du kan legge til tekstoppføringer fra **Beskrivelse**-kolonnen i raddefinisjonen, og fra fanen **Topptekst og bunntekst** i rapportdefinisjonen.
 
 1. Åpne rapporteringstreet som skal endres i Rapportutforming.
 2. Dobbeltklikk **Tilleggstekst**-cellen for raden for rapporteringsenheten.
 3. Skriv inn teksten i den første tomme raden i dialogboksen **Tilleggstekst**. Den første raden som inneholder tekst, kalles Enhetstekst1, uavhengig av posisjonen i dialogboksen **Tilleggstekst**.
 4. Hvis du vil legge til flere tekstoppføringer for rapporteringsenheten, skriver du inn teksten i en tom rad.
-5. Klikk **OK**.
+5. Klikk på **OK**.
 
 ### <a name="remove-additional-text-from-a-reporting-unit"></a>Fjerne tilleggstekst fra en rapporteringsenhet
 
 1. Åpne rapporteringstredefinisjonen som skal endres, i Rapportutforming.
 2. Dobbeltklikk **Tilleggstekst**-cellen for raden til rapporteringsenheten.
 3. I dialogboksen **Tilleggstekst** velger du oppføringen som skal fjernes, og deretter klikker du **Fjern**. Du kan også høyreklikke oppføringen og deretter velge **Klipp ut**.
-4. Klikk **OK**.
+4. Klikk på **OK**.
 
 ### <a name="restrict-access-to-a-reporting-unit"></a>Begrense tilgang til en rapporteringsenhet
 
@@ -155,14 +155,14 @@ Du kan hindre at bestemte brukere eller grupper får tilgang til en rapportering
 3. I dialogboksen **Enhetssikkerhet** klikker du **Brukere og grupper**.
 4. Velg brukerne eller gruppene som skal ha tilgang til rapporteringsenheten, og klikk deretter **OK**.
 5. Hvis du vil begrense tilgang til underordnede rapportenheter, merker du av for **Legg til sikkerhet for underordnede rapporteringsenheter**.
-6. Klikk **OK**.
+6. Klikk på **OK**.
 
 ### <a name="remove-access-to-a-reporting-unit"></a>Fjerne tilgang til en rapporteringsenhet
 
 1. Åpne rapporteringstreet som skal endres i Rapportutforming.
 2. Dobbeltklikk **Enhetssikkerhet**-cellen for raden for rapporteringsenheten som tilgang skal fjernes for.
 3. Velg et navn, og klikk deretter **Fjern** i dialogboksen **Enhetssikkerhet**.
-4. Klikk **OK**.
+4. Klikk på **OK**.
 
 ### <a name="link-to-reports"></a>Koble til rapporter
 
@@ -220,6 +220,3 @@ Eksemplene nedenfor viser mulig informasjon som brukes i en rapporteringstredefi
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Finansrapportering](financial-reporting-intro.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

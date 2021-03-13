@@ -1,6 +1,6 @@
 ---
 title: Utforme en konfigurasjon til å generere dokumenter i Excel-format
-description: Dette emnet inneholder informasjon om hvordan du utformer et format for elektronisk rapportering (ER) for å fylle ut en Excel-mal, og deretter generere utgående dokumenter i Excel-format.
+description: Dette emnet beskriver hvordan du utformer et format for elektronisk rapportering (ER) for å fylle ut en Excel-mal, og deretter generere utgående dokumenter i Excel-format.
 author: NickSelin
 manager: AnnBe
 ms.date: 11/02/2020
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d5733e40c67f9c97b04f126f7c3cfea9d4f8f5b5
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: c8d6a18741d57829d1929fb8362dc4ba8e03a1bd
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4686544"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5094035"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Utforme en konfigurasjon til å generere dokumenter i Excel-format
 
@@ -62,7 +62,7 @@ Hvis du vil angi hvordan den tilknyttede malen skal fylles ut når du kjører de
 
 ### <a name="template-import"></a>Malimport
 
-Du kan velge **Importer fra Excel** i kategorien **Import** i handlingsruten for å importere en ny mal til et tomt ER-format. I dette eksemplet opprettes det en **Excel\\Fil**-komponent automatisk, og den importerte malen blir knyttet til den. Alle nødvendige ER-komponenter vil også bli opprettet automatisk, basert på listen over Excel-navngitte elementer som blir funnet.
+Du kan velge **Importer fra Excel** i fanen **Import** i handlingsruten for å importere en ny mal til et tomt ER-format. I dette eksemplet opprettes det en **Excel\\Fil**-komponent automatisk, og den importerte malen blir knyttet til den. Alle nødvendige ER-komponenter vil også bli opprettet automatisk, basert på listen over Excel-navngitte elementer som blir funnet.
 
 ![Velge Importer fra Excel](./media/er-excel-format-import-template.png)
 
@@ -76,7 +76,7 @@ Komponenten **Ark** viser et regneark i den vedlagte Excel-arbeidsboken som må 
 > [!NOTE]
 > Denne komponenten er valgfri for Excel-arbeidsbøker som inneholder ett regneark.
 
-I kategorien **Tilordning** for ER-operasjonsutformingen kan du konfigurere egenskapen **Aktivert** for en **Ark**-komponent for å angi om komponenten må plasseres i et generert dokument:
+I fanen **Tilordning** for ER-operasjonsutformingen kan du konfigurere egenskapen **Aktivert** for en **Ark**-komponent for å angi om komponenten må plasseres i et generert dokument:
 
 - Hvis et uttrykk for egenskapen **Aktivert** er konfigurert til å returnere **Sann** under kjøring, eller hvis ingen uttrykk er konfigurert i det hele tatt, vil det aktuelle regnearket plasseres i det genererte dokumentet.
 - Hvis et uttrykk for egenskapen **Aktivert** er konfigurert til å returnere **Usann** under kjøring, vil det genererte dokumentet ikke inneholde et regneark.
@@ -107,7 +107,7 @@ Komponenten **Område** kan ha andre nestede komponenter som brukes til å angi 
     > [!NOTE]
     > Bruk dette mønsteret til å la Excel formatere angitte verdier basert på den nasjonale innstillingen til den lokale datamaskinen som åpner det utgående dokumentet.
 
-I kategorien **Tilordning** for ER-operasjonsutformingen kan du konfigurere egenskapen **Aktivert** for en **Område**-komponent for å angi om komponenten må plasseres i et generert dokument:
+I fanen **Tilordning** for ER-operasjonsutformingen kan du konfigurere egenskapen **Aktivert** for en **Område**-komponent for å angi om komponenten må plasseres i et generert dokument:
 
 - Hvis et uttrykk for egenskapen **Aktivert** er konfigurert til å returnere **Sann** under kjøring, eller hvis ingen uttrykk er konfigurert i det hele tatt, vil det aktuelle området bli fylt ut i det genererte dokumentet.
 - Hvis et uttrykk for egenskapen **Aktivert** er konfigurert til å returnere **Usann** under kjøring, og hvis området ikke representerer hele rader eller kolonner, vil ikke det aktuelle området fylles ut i det genererte dokumentet.
@@ -117,7 +117,7 @@ I kategorien **Tilordning** for ER-operasjonsutformingen kan du konfigurere egen
 
 Komponenten **Celle** brukes til å fylle ut Excel-navngitte celler, figurer og bilder. Hvis du vil angi et Excel-navngitt objekt som må fylles ut av en ER-komponent ofr **Celle**, må du angi navnet på dette objektet i egenskapen **Excel-område** for komponenten **Celle**.
 
-I kategorien **Tilordning** for ER-operasjonsutformingen kan du konfigurere egenskapen **Aktivert** for en **Celle**-komponent for å angi om objektet må fylles ut i et generert dokument:
+I fanen **Tilordning** for ER-operasjonsutformingen kan du konfigurere egenskapen **Aktivert** for en **Celle**-komponent for å angi om objektet må fylles ut i et generert dokument:
 
 - Hvis et uttrykk for egenskapen **Aktivert** er konfigurert til å returnere **Sann** under kjøring, eller hvis ingen uttrykk er konfigurert i det hele tatt, vil det aktuelle objektet bli fylt ut i det genererte dokumentet. Bindingen for denne **Celle**-komponenten angir en verdi som plasseres i det aktuelle objektet.
 - Hvis et uttrykk for egenskapen **Aktivert** er konfigurert til å returnere **Usann** under kjøring, vil det aktuelle objektet ikke bli fylt ut i det genererte dokumentet.
@@ -144,7 +144,7 @@ Komponenten **PageBreak** tvinger Excel til å starte en ny side. Denne komponen
 
 ### <a name="update-a-template"></a>Oppdatere en mal
 
-Du kan velge **Oppdater fra Excel** i kategorien **Import** i handlingsruten for å importere en oppdatert mal til et redigerbart ER-format. I løpet av denne prosessen vil en mal for den valgte **Excel\\Fil**-komponenten bli erstattet med en ny mal. Innholdet i det redigerbare ER-formatet vil bli synkronisert med innholdet i den oppdaterte ER-malen.
+Du kan velge **Oppdater fra Excel** i fanen **Import** i handlingsruten for å importere en oppdatert mal til et redigerbart ER-format. I løpet av denne prosessen vil en mal for den valgte **Excel\\Fil**-komponenten bli erstattet med en ny mal. Innholdet i det redigerbare ER-formatet vil bli synkronisert med innholdet i den oppdaterte ER-malen.
 
 - En ny komponent for ER-format vil automatisk opprettes for hvert Excel-navn hvis komponenten for ER format ikke finnes i det redigerbare formatet.
 - Alle komponenter for ER-format vil bli slettet fra det redigerbare ER-formatet hvis det riktige Excel-navnet ikke blir funnet for det.
@@ -189,6 +189,3 @@ Når et utgående dokument i et Microsoft Excel-arbeidsbokformat genereres, kan 
 [Bygge inn bilder og figurer i dokumenter du genererer ved hjelp av ER](electronic-reporting-embed-images-shapes.md)
 
 [Konfigurere elektronisk rapportering (ER) for å hente data til Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

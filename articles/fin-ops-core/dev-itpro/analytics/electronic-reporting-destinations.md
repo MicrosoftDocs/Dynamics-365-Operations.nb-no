@@ -1,9 +1,9 @@
 ---
 title: Mål for elektronisk rapportering (ER)
-description: Dette emnet inneholder informasjon om administrasjon av mål for elektronisk rapportering (ER), måltypene som støttes, og sikkerhetshensyn.
+description: Dette emnet inneholder informasjon om administrasjon av mål for elektronisk rapportering, måltypene som støttes, og sikkerhetshensyn.
 author: nselin
 manager: AnnBe
-ms.date: 04/27/2020
+ms.date: 01/21/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: e4da9e09fe9e2c76426a117b6c4d83f5bc33851f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 725ded9d777a65e5a38a7971c1da8cb74cf0dd47
+ms.sourcegitcommit: 872600103d2a444d78963867e5e0cdc62e68c3ec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687164"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "5097287"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Mål for elektronisk rapportering (ER)
 
@@ -57,12 +57,12 @@ Du kan definere mål bare for ER-konfigurasjoner som er [importert](general-elec
 
 Standard virkemåte for en ER-formatkonfigurasjonen er avhengig av utførelsestypen du angir når et ER-format starter.
 
-Hvis du setter alternativet **Satsvis behandling** til **Nei** i dialogboksen **Intrastat-rapport** i hurtigkategorien **Kjør i bakgrunnen**, kjøres et ER-format umiddelbart i interaktivt modus. Når utførelsen er fullført, gjøres et generert utgående dokument tilgjengelig for nedlasting.
+Hvis du setter alternativet **Satsvis behandling** til **Nei** i dialogboksen **Intrastat-rapport** i hurtigfanen **Kjør i bakgrunnen**, kjøres et ER-format umiddelbart i interaktivt modus. Når utførelsen er fullført, gjøres et generert utgående dokument tilgjengelig for nedlasting.
 
-Hvis du setter **Satsvis behandling**-alternativet til **Ja**, kjøres et ER-format i [satsvis](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-processing-overview) modus. Den riktige satsvise jobben opprettes basert på parameterne du angir for kategorien **Kjør i bakgrunnen** i dialogboksen **ER-parametere**.
+Hvis du setter **Satsvis behandling**-alternativet til **Ja**, kjøres et ER-format i [satsvis](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/batch-processing-overview) modus. Den riktige satsvise jobben opprettes basert på parameterne du angir for fanen **Kjør i bakgrunnen** i dialogboksen **ER-parametere**.
 
 > [!NOTE]
-> Jobbbeskrivelsen startes for å informere deg om utførelsen av en ER-formattilordning. Det inneholder også navnet på den utførte ER-komponenten.
+> Jobbeskrivelsen informerer deg om kjøringen av en ER-formattilordning. Det inneholder også navnet på ER-komponenten som kjøres.
 
 [![Kjøre et ER-format](./media/ER_Destinations-RunInBatchMode.png)](./media/ER_Destinations-RunInBatchMode.png)
 
@@ -96,6 +96,8 @@ Du kan for eksempel bruke denne funksjonaliteten til å konfigurere filmål for 
 
 [![Konfigurere flere mål for ett enkelt formatelement](./media/ER_Destinations-SampleDestinations.png)](./media/ER_Destinations-SampleDestinations.png)
 
+Når du kjører et ER-format, kjøres alltid alle målene som ble konfigurert for komponentene for formatet. I Finance **versjon 10.0.17 og nyere** er i tillegg funksjonaliteten for ER-mål forbedret og lar deg nå konfigurere ulike sett med mål for ett ER-format. Denne konfigurasjonen merker hvert sett som konfigurert for en bestemt brukerhandling. API-en for ER er [utvidet](er-apis-app10-0-17.md), slik at en handling som brukeren utfører ved å kjøre et ER-format, kan tilbys. Handlingskoden som tilbys, sendes til ER-mål. Du kan kjøre ulike mål for et ER-format, avhengig av handlingskoden som tilbys. Hvis du vil ha mer informasjon, kan du se [Konfigurere handlingsavhengige ER-mål](er-action-dependent-destinations.md).
+
 ## <a name="destination-types"></a>Måltyper
 
 Følgende mål støttes for øyeblikket for ER-formater. Du kan deaktivere eller aktivere alle typer samtidig. På denne måten kan du enten ikke gjør noe eller sende komponenten til alle konfigurerte mål.
@@ -125,7 +127,7 @@ Samtidig har du kanskje flere [versjoner](general-electronic-reporting.md#compon
 Som standard brukes konfigurerte mål bare når du kjører en ER-formatversjon som har statusen **Fullført** eller **Delt**. Noen ganger må du imidlertid bruke konfigurerte mål når utkastversjonen av et ER-format kjøres. Du kan for eksempel endre en utkastversjon av formatet, og det er lurt å bruke konfigurerte mål til å teste hvordan genererte utdata vil bli levert. Følg disse trinnene for å bruke mål for et ER-format når utkastversjonen kjøres.
 
 1. Gå til **Organisasjonsstyring** \> **Elektronisk rapportering** \> **Konfigurasjoner**.
-2. På **Konfigurasjoner**-siden, i handlingsruten i kategorien **Konfigurasjoner** i gruppen **Avanserte innstillinger**, velger du **Brukerparametere**.
+2. På **Konfigurasjoner**-siden, i handlingsruten i fanen **Konfigurasjoner** i gruppen **Avanserte innstillinger**, velger du **Brukerparametere**.
 3. Sett **Bruk mål for utkaststatus**-alternativet til **Ja**.
 
 [![Bruk mål for utkaststatus-alternativet](./media/ER_Destinations-UserSetting1.png)](./media/ER_Destinations-UserSetting1.png)
@@ -133,7 +135,7 @@ Som standard brukes konfigurerte mål bare når du kjører en ER-formatversjon s
 Hvis du vil bruke utkastversjonen av et ER-format, må du markere ER-formatet tilsvarende.
 
 1. Gå til **Organisasjonsstyring** \> **Elektronisk rapportering** \> **Konfigurasjoner**.
-2. På **Konfigurasjoner**-siden, i handlingsruten i kategorien **Konfigurasjoner** i gruppen **Avanserte innstillinger**, velger du **Brukerparametere**.
+2. På **Konfigurasjoner**-siden, i handlingsruten i fanen **Konfigurasjoner** i gruppen **Avanserte innstillinger**, velger du **Brukerparametere**.
 3. Sett **Kjør innstilling**-alternativet til **Ja**.
 
 [![Kjør innstilling-alternativet](./media/ER_Destinations-UserSetting2.png)](./media/ER_Destinations-UserSetting2.png)
@@ -154,7 +156,7 @@ Hvis du opplever avmerkingen i **Stopp behandling ved feil**-avmerkingsboksen fo
 
 ## <a name="output-conversion-to-pdf"></a><a name="OutputConversionToPDF"></a>Utdatakonvertering til PDF
 
-Du kan bruke alternativet PDF-konvertering til å konvertere utdata i Microsoft Office-format (Excel/Word) til PDF-format.
+Du kan bruke alternativet PDF-konvertering til å konvertere utdata i Microsoft Office-format (Excel eller Word) til PDF-format.
 
 ### <a name="make-pdf-conversion-available"></a>Gjøre PDF-konvertering tilgjengelig
 
@@ -164,21 +166,20 @@ Hvis du vil gjøre alternativet PDF-konvertering tilgjengelig i gjeldende Finans
 
 ### <a name="applicability"></a>Relevans
 
-Alternativet PDF-konvertering kan bare aktiveres for filkomponenter som brukes til å generere utdata i Microsoft Office Excel- eller Word-format (**Excel-fil**). Når dette alternativet er aktivert, konverteres utdata som genereres i Office-format, automatisk til PDF-format.
+Alternativet PDF-konvertering kan bare aktiveres for filkomponenter som brukes til å generere utdata i Office-format (Excel eller Word) (**Excel-fil**). Når dette alternativet er aktivert, konverteres utdata som genereres i Office-format, automatisk til PDF-format.
 
 ### <a name="limitations"></a>Begrensninger
 
 > [!NOTE]
 > Denne funksjonen er en forhåndsvisningsfunksjon, og den er underlagt vilkårene for bruk beskrevet i [Ekstra vilkår for bruk for Microsoft Dynamics 365-forhåndsvisninger](https://go.microsoft.com/fwlink/?linkid=2105274).
 
-> [!NOTE]
-> Alternativet PDF-konvertering er bare tilgjengelig for skydistribusjoner.
->
-> Den genererte PDF-filen er begrenset til et maksimalt antall på 300 sider.
->
-> In Microsoft Dynamics 365 Finance versjon 10.0.9 (april 2020) støttes for øyeblikket bare liggende papirretning i PDF-dokumentet som genereres fra Excel-utdata. Med utgivelsen av Dynamics 365 Finance versjon 10.0.10 (mai 2020) kan du [angi papirretning](#SelectPdfPageOrientation) i PDF-dokumentet som produseres fra Excel-utdata mens du konfigurerer et ER-mål.
->
-> Bare de vanlige systemskriftene i Windows-operativsystemet brukes til konvertering av utdata som ikke inneholder innebygde skrifter.
+Alternativet PDF-konvertering er bare tilgjengelig for skydistribusjoner.
+
+PDF-dokumentet som genereres, er begrenset til en maksimumslengde på 300 sider.
+
+I Finance **versjon 10.0.9** støttes bare liggende papirretning i PDF-dokumentet som genereres fra Excel-utdata. I Finance **versjon 10.0.10 (mai 2020) og nyere** kan du [angi papirretningen](#SelectPdfPageOrientation) i PDF-dokumentet som genereres fra Excel-utdata mens du konfigurerer et ER-mål.
+
+Bare de vanlige systemskriftene i Windows-operativsystemet brukes til å konvertere utdata som ikke inneholder innebygde skrifter.
 
 ### <a name="use-the-pdf-conversion-option"></a>Bruke alternativet PDF-konvertering
 
@@ -188,16 +189,16 @@ Hvis du vil aktivere PDF-konvertering for et filmål, merker du av i **Konverter
 
 ### <a name=""></a><a name="SelectPdfPageOrientation">Velg en sideretning for PDF-konvertering</a>
 
-Hvis du genererer en ER-konfigurasjon i Excel-format og vil konvertere den til PDF-format, kan du angi sideretningen til PDF-filen. Når du merker av for **Konverter til PDF** for å slå på PDF-konvertering for en fildestinasjon som produserer en utdatafil i Excel-format, blir **Sresultatproduktideretning**-feltet tilgjengelig på hurtigfanen **PDF-konverteringsinnstillinger**. Velg den foretrukne retningen i **Sideretning**-feltet.
+Hvis du genererer en ER-konfigurasjon i Excel-format og vil konvertere den til PDF-format, kan du angi papirretningen til PDF-dokumentet. Når du merker av for **Konverter til PDF** for å slå på PDF-konvertering for en fildestinasjon som produserer en utdatafil i Excel-format, blir **Sresultatproduktideretning**-feltet tilgjengelig på hurtigfanen **PDF-konverteringsinnstillinger**. Velg den foretrukne retningen i **Sideretning**-feltet.
 
 [![Velge en sideretning for PDF-konvertering](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)
 
 > [!NOTE]
-> Hvis du vil ha muligheten til å velge PDF-sideretningen, må du installere Microsoft Dynamics 365 Finance versjon 10.0.10 (mai 2020) eller senere.
+> Hvis du vil ha muligheten til å velge PDF-papirretningen, må du installere Finance versjon 10.0.10 eller nyere.
 >
 > Den valgte sideretningen brukes på alle ER-konfigurasjoner som genereres i Excel-format, og deretter konverteres til PDF-format.
 >
-> Hvis en konvertert PDF-fil opprettes fra en ER-konfigurasjon i Word-format, hentes sideretningen for PDF-filen fra Word-dokumentet.
+> Hvis en ER-konfigurasjon i Word-format konverteres til PDF-format, hentes papirretningen for PDF-dokumentet fra Word-dokumentet.
 
 ## <a name="security-considerations"></a>Sikkerhetshensyn
 
@@ -221,11 +222,11 @@ Pass på at du velger **Ny** og velger en konfigurasjon i feltet **Referanse**. 
 
 ### <a name="is-there-any-way-to-define-which-microsoft-azure-storage-account-and-azure-blob-storage-are-used"></a>Er det mulig å definere hvilken Microsoft Azure Storage-konto og Azure Blob Storage som brukes?
 
-Nr. Standard Microsoft Azure Blob Storage som er definert og brukes for dokumentbehandlingssystemet, brukes.
+Nei. Standard Microsoft Azure Blob Storage som er definert og brukes for dokumentbehandlingssystemet, brukes.
 
 ### <a name="what-is-the-purpose-of-the-file-destination-in-the-destination-settings-what-does-that-setting-do"></a>Hva er formålet med filmålet i målinnstillingene? Hva gjør innstillingen?
 
-**Fil**-målet brukes til å styre en dialogboks. Hvis du aktiverer dette målet, eller hvis ingen mål er definert for en konfigurasjon, vises en dialogboks for lagring eller åpning når en utdatafil er opprettet.
+**Fil**-målet brukes til å styre en dialogboks i nettleseren når du kjører et ER-format i interaktiv modus. Hvis du aktiverer dette målet, eller hvis ingen mål er definert for en konfigurasjon, vises en dialogboks for lagring eller åpning i nettleseren etter at en utdatafil er opprettet.
 
 ### <a name="can-you-give-an-example-of-the-formula-that-refers-to-a-vendor-account-that-i-can-send-email-to"></a>Kan du gi et eksempel på en formel som refererer til en leverandørkonto som jeg kan sende e-post til?
 
@@ -239,5 +240,4 @@ Formatet ditt må først være tilgjengelig i ER-konfigurasjonene. Hvis denne fo
 
 [Oversikt over elektronisk rapportering (ER)](general-electronic-reporting.md)
 
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[Konfigurere handlingsavhengige ER-mål](er-action-dependent-destinations.md)

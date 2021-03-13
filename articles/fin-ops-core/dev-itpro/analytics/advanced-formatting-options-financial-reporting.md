@@ -1,7 +1,7 @@
 ---
 title: Avanserte formateringsalternativer i finansrapportering
-description: Når du lager en rapport i finansrapportering, finnes det flere formateringsfunksjoner, inkludert filtre for dimensjoner, begrensninger for kolonner og rapporteringsenheter, rader som ikke skal skrives ut, og IF/THEN/ELSE-setninger i beregninger.
-author: ryansandness
+description: Dette emnet beskriver avanserte formateringsfunksjoner, inkludert filtre, begrensninger, rader som ikke skrives ut, og betingelsessetninger i beregninger.
+author: panolte
 manager: AnnBe
 ms.date: 04/26/2019
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 3508099dfa3c6671da8dddc9061f737a97e825ce
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: f0417ac1007fc94431aeb11d2464ee699e3f3441
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683169"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093168"
 ---
 # <a name="advanced-formatting-options-in-financial-reporting"></a>Avanserte formateringsalternativer i finansrapportering
 
@@ -54,7 +54,7 @@ Avansert celleplassering, eller *fremtvinging*, omfatter plassering av bestemte 
 > I mange tilfeller må du konfigurere rapportdefinisjonen slik at kolonneberegninger utføres før radberegninger. Følg fremgangsmåten nedenfor for å fullføre denne konfigurasjonen.
 >
 > 1. Åpne rapportdefinisjonen i Rapportutforming.
-> 2. I kategorien **Innstillinger**, under **Beregningsprioritet**, velger du **Utfør kolonneberegning først og deretter rad**.
+> 2. I fanen **Innstillinger**, under **Beregningsprioritet**, velger du **Utfør kolonneberegning først og deretter rad**.
 
 ## <a name="designing-the-report"></a>Utforme rapporten
 
@@ -158,7 +158,7 @@ Du kan angi kontrollkoder for utskrift for hver kolonne ved hjelp av **Utskrifts
 2. Dobbeltklikk cellen **Utskriftskontroll**.
 3. I dialogboksen **Utskriftkontroll** velger du en kontrollkode for utskrift eller trykker og holder CTRL--tasten for å velge flere koder. Du kan også skrive inn kontrollkoder for utskrift direkte i **Utskriftskontroll**-cellen. Bruk komma for å atskill flere kontrollkoder for utskrift.
 4. Velg alternativer for betinget utskrift.
-5. Klikk **OK**.
+5. Klikk på **OK**.
 
 ### <a name="regular-print-control-codes"></a>Vanlige kontrollkoder for utskrift
 
@@ -294,9 +294,9 @@ Beregningsraden kan referere til en beregningsrad eller en rad med økonomiske d
 
 #### <a name="restrict-a-calculation-to-a-reporting-unit"></a>Begrense en beregning til en rapporteringsenhet
 
-1. Klikk **Raddefinisjoner** i Rapportutforming, og åpne deretter raddefinisjonen som skal endres.
+1. Klikk på **Raddefinisjoner** i Rapportutforming, og åpne deretter raddefinisjonen som skal endres.
 2. Dobbeltklikk **Formatkode**-cellen, og velg deretter **CAL**.
-3. Klikk cellen **Relaterte formler/rader/enheter**, og angi deretter en betinget beregning som begynner med en **IF @Unit**-konstruksjon.
+3. Klikk på cellen **Relaterte formler/rader/enheter**, og angi deretter en betinget beregning som begynner med en **IF @Unit**-konstruksjon.
 
 ### <a name="ifthenelse-statements-in-a-column-definition"></a>IF/THEN/ELSE-setninger i en kolonnedefinisjon
 
@@ -310,6 +310,3 @@ En **IF/THEN/ELSE**-setning gjør det mulig for alle beregninger å være avheng
 Du kan utforme rapporter ved hjelp av dimensjonsverdier som inneholder et ampersandtegn (&).
 
 I et **Kobling til finansdimensjon**-felt kan du angi en verdi som **'Resultat'**. Hvis du inkluderer enkle anførselstegn (' ') på begge sider av dimensjonsverdien, betyr det at du bruker litteralverdien, for eksempel å inkludere ampersandtegnet (&).
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

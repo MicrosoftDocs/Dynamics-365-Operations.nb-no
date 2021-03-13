@@ -1,9 +1,9 @@
 ---
 title: Oversikt over elektronisk rapportering (ER)
-description: Dette emnet gir en oversikt over verktøyet for elektronisk rapportering (ER). Den inneholder informasjon om viktige konsepter, hvilke scenarioer ER støtter, samt en liste over formater som er utviklet og lansert som en del av ER-løsningen.
+description: Dette emnet gir en oversikt over verktøyet for Elektronisk rapportering. Det beskriver nøkkelbegreper, scenarioer som støttes, og formater som er en del av løsningen.
 author: NickSelin
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 12/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e40aa168c296af86721862d1751212d16d47bd49
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 33d399c6a9051097d3ea0c7990a37302395d9c77
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682605"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093932"
 ---
 # <a name="electronic-reporting-er-overview"></a>Oversikt over elektronisk rapportering (ER)
 
@@ -37,6 +37,7 @@ ER-motoren er rettet mot bedriftsbrukere i stedet for utviklere. Siden du konfig
 ER støtter regnearkformatene TEKST, XML, Microsoft Word-dokument og OPENXML. Et filtypegrensesnitt gir imidlertid støtte for flere formater.
 
 ## <a name="capabilities"></a>Muligheter
+
 ER-motoren har følgende funksjoner:
 
 - Den representerer ett felles verktøy for elektronisk rapportering i forskjellige områder, og erstatter mer enn 20 forskjellige motorer som utfører en slags elektronisk rapportering i Finance and Operations.
@@ -46,6 +47,7 @@ ER-motoren har følgende funksjoner:
 - Den støtter muligheten til å distribuerte formater til partnere og kunder via Microsoft Dynamics Lifecycle Services (LCS).
 
 ## <a name="key-concepts"></a>Nøkkelbegreper
+
 ### <a name="components"></a>Komponenter
 
 ER støtter de to komponenttypene **Datamodell** og **Format**.
@@ -71,7 +73,6 @@ En modelltilordning som støtter utgående elektroniske dokumenter har følgende
 - Den kan bruke forskjellige datatyper som datakilder for en datamodell. Den kan for eksempel bruke tabeller, dataenheter, metoder eller opplistinger.
 - Den støtter parametere for inndata som kan defineres som datakilder for en datamodell når noen data må angis under kjøring.
 - Det støtter transformasjon av data i nødvendige grupper. Den også kan du filtrere, sortere og summere data og legge til logiske beregnede felt som er laget ved hjelp av formler som ligner på Microsoft Excel-formler. Hvis du vil ha mer informasjon, se [Formeldesigner i Elektronisk rapportering (ER)](general-electronic-reporting-formula-designer.md)).
-
 
 En modelltilordning som støtter innkommende elektroniske dokumenter har følgende funksjoner:
 
@@ -107,6 +108,7 @@ Illustrasjonen nedenfor viser hvordan dataene flyter for disse formatene.
 Hvis du vil kjøre en enkelt ER-formatkonfigurasjonen og generere et utgående elektroniske dokument, må du identifisere tilordningen til formatkonfigurasjonen.
 
 #### <a name="format-components-for-incoming-electronic-documents"></a><a name="FormatComponentInbound"></a>Formatkomponenter for innkommende elektroniske dokumenter
+
 En formatkomponent er oppsettet for det innkommende dokumentet som importeres under kjøring. Et utvalg består av følgende elementer:
 
 - Et format som definerer strukturen og innholdet i det innkommende elektroniske rapporteringsdokumentet som inneholder data som importeres under kjøring. En formatkomponent brukes til å analysere et innkommende dokument i forskjellige formater, for eksempel tekst og XML.
@@ -196,6 +198,7 @@ Et **Operasjonsressurser**-repositorium gir tilgang til listen over konfigurasjo
 Nødvendige repositorier for **LCS-prosjekt**, **Filsystem** og **Forskriftsmessig konfigurasjonstjeneste (RCS)** kan registreres individuelt for hver enkelt konfigurasjonsleverandør for gjeldende forekomst. Hvert repositorium kan reserveres for en bestemt konfigurasjonsleverandør.
 
 ## <a name="supported-scenarios"></a>Scenarier som støttes
+
 ### <a name="building-a-data-model"></a>Bygge en datamodell
 
 ER tilbyr en modellutforming som du kan bruke for å bygge en datamodell for et bestemt forretningsområde. Alle områdespesifikke forretningsenheter og relasjoner mellom dem, kan være representert i en datamodell som en hierarkisk struktur. 
@@ -216,6 +219,7 @@ ER inneholder en modelltilordningsutforming som lar brukere tilordne datamodelle
 Hvis du vil gjøre deg kjent med dette scenariet i detalj, spiller du av oppgaveveiledningen **ER Definere modelltilordning og velge datakilder** og **ER Tilordningen datamodell til valgte datakilder** (en del av forretningsprosessen **7.5.4.3 Anskaffe/utvikle komponenter for IT-tjeneste/-løsning (10677)**).
 
 ### <a name="configuring-data-model-mappings-for-incoming-documents"></a>Konfigurere datatilordninger modell for innkommende dokumenter
+
 ER inneholder en modelltilordningsutforming som lar brukere tilordne datamodeller som de har utformet, til bestemte mål. Datamodeller kan for eksempel tilordnes til oppdaterbare datakomponenter (tabeller, data-enheter og visninger). Basert på tilordningen, oppdateres data under kjøring ved hjelp av dataene fra datamodellen. Som abstrakt lagring av ER-formatet, er datamodellen fylt med data som er importert fra et innkommende elektronisk dokument. 
 
 ### <a name="storing-a-designed-model-component-as-a-model-configuration"></a>Lagre en utformet modellkomponent som en modellkonfigurasjon
@@ -237,6 +241,7 @@ ER-formatutformingen kan brukes til å bygge et elektronisk dokument i OPENXML-r
 Hvis du vil gjøre deg kjent med dette scenariet i detalj, spiller du av oppgaveveiledningen **ER Opprette en konfigurasjon for rapporter i OPENXML-format** (en del av forretningsprosessen **7.5.4.3 Anskaffe/utvikle komponenter for IT-tjeneste/-løsning (10677)**) . Som en del av trinnet for import av mal i oppgaveveiledningen, kan du bruke Excel-filen [Mal for betalingsrapport (SampleVendPaymWsReport.xlsx)](https://go.microsoft.com/fwlink/?linkid=845202) som mal.
 
 ### <a name="building-a-configuration-to-generate-electronic-documents-in-a-word-document-format"></a>Bygge en konfigurasjon for å generere elektroniske dokumenter i et Word-dokumentformat
+
 ER-formatutformingen kan brukes til å bygge et elektronisk dokument i et Word-dokumentformat. Illustrasjonen nedenfor viser et eksempel på denne typen format. Legg merke til at dette formatet bruker den eksisterende ER-konfigurasjonen som opprinnelig ble utformet for å generere rapportutdataene i OPENXML-formatet, på nytt.
 
 Hvis du vil gjøre deg kjent med dette scenariet i detalj, spiller du av oppgaveveiledningen ER Utforme en konfigurasjon for generering av rapporter i Microsoft WORD (en del av forretningsprosessen 7.5.4.3 Anskaffe/utvikle komponenter for IT-tjeneste/-løsning (10677)) . Som en del av trinnet for import av mal i oppgaveveiledningen, kan du bruke følgende Word-filer som maler for ER-formatet:
@@ -245,6 +250,7 @@ Hvis du vil gjøre deg kjent med dette scenariet i detalj, spiller du av oppgave
 - [Bundet mal for betalingsrappor (SampleVendPaymDocReportBounded.docx)](https://go.microsoft.com/fwlink/?linkid=845202)
 
 ### <a name="building-a-configuration-to-import-data-from-incoming-electronic-documents"></a>Bygge en konfigurasjon for å importere data fra innkommende elektroniske dokumenter
+
 ER-formatutformingen kan brukes til å beskrive et elektronisk dokument som er planlagt for import av data i enten XML-eller tekstformat. Formatet som uformes, brukes til å analysere et innkommende dokument. Utforming av ER-formattilordning kan brukes til å definere bindingen av elementene i formatet som er utformet, til datamodellen. 
 
 Hvis du vil gjøre deg kjent med dette scenariet i detalj, spiller du av oppgaveveiledningen Opprette nødvendige ER-konfigurasjoner for å importere data fra en ekstern fil (en del av forretningsprosessen 7.5.4.3 Anskaffe/utvikle komponenter for IT-tjeneste/-løsning (10677)) . Bruk følgende filer til å spille av denne håndboken:
@@ -265,6 +271,7 @@ Programmet kan konfigureres til å begynne å bruke et opprettet format til å g
 Hvis du vil gjøre deg kjent med dette scenariet i detalj, spiller du av oppgaveveiledningen **ER Bruk format for å generere elektronisk dokument for betaling** (en del av forretningsprosessen **7.5.4.3 Anskaffe/utvikle komponenter for IT-tjeneste/-løsning (10677)**) .
 
 ## <a name="handling-er-components"></a>Behandle ER-komponenter
+
 ### <a name="publishing-an-er-component-in-lcs-to-offer-it-externally-localization"></a>Publisere ER-komponent i LCS for å tilby den eksternt (lokalisering)
 
 Eieren av en komponent (modell eller format) som er opprettet, kan bruke ER for å publisere den fullførte versjonen komponenten til LCS. Et repositorium av typen **LCS-prosjekt** for gjeldende ER-konfigurasjonsleverandør er nødvendig. Når statusen for den fullførte versjonen av en komponent endres fra **FULLFØRT** til **DELT**, publiseres denne versjonen i LCS. Når en komponent er publisert til LCS, blir eieren av denne komponenten en leverandør av tjenesten for å støtte komponenten. Hvis formatkomponenten for eksempel er utformet for å generere et juridisk påkrevd elektronisk dokument (for eksempel i henhold til lokaliseringsscenario), antas det at formatet holdes i samsvar med juridiske endringer, og at leverandøren vil utstede nye versjoner av komponenten hver gang nye juridisk krav oppstår. Hvis du vil gjøre deg kjent med dette scenariet i detalj, spiller du av oppgaveveiledningen **ER Laste opp en konfigurasjon til Lifecycle Services** (en del av forretningsprosessen **7.5.4.3 Anskaffe/utvikle komponenter for IT-tjeneste/-løsning (10677)**) .
@@ -281,92 +288,13 @@ ER lar deg opprette (avlede) en ny komponent fra gjeldende versjon av en kompone
 
 ER lar deg automatisk innføre endringer av den nyeste versjonen av basiskomponenten i gjeldende utkastversjon av den avledede komponenten. Denne prosessen kalles *rebasering*. En ny forskriftsmessig endringer som ble introdusert i den nyeste versjonen av formatet som ble importert fra LCS, kan for eksempel slå sammen automatisk i den tilpassede versjon av dette formatet av det elektroniske dokumentet. Endringer som ikke kan slås sammen automatisk anses som konflikter. Disse konfliktene presenteres for manuell løsing i utformingsverktøyet for den aktuelle komponenten. Hvis du vil gjøre deg kjent med dette scenariet i detalj, spiller du av oppgaveveiledningen **ER Oppgrader format ved innføring av ny basisversjon av det formatet** (en del av forretningsprosessen **7.5.5.3 Anskaffe/utvikle endrede komponenter for IT-tjeneste/-løsning (10683)**).
 
-## <a name="list-of-er-configurations-that-are-delivered-in-the-finance-application"></a>Oversikt over ER-konfigurasjoner leveres i Finance-programmet
+## <a name="list-of-er-configurations-that-have-been-released-in-finance"></a><a name="list-of-configurations"></a>Liste over ER-konfigurasjoner som er utgitt i Finans
 
-| Områdespesifikke datamodellkonfigurasjoner: tittel | Domene                | Datamodellavhengige formatkonfigurasjoner: tittel | Beskrivelse                                                        |
-|--------------------------------------------------|-----------------------|---------------------------------------------------|--------------------------------------------------------------------|
-| Revisjonsfilmodell                                 | Økonomiske revisjon       |                                                   |                                                                    |
-|                                                  |                       | Revisjonsfil (NL)                                   | Revisjonsfilformat for Nederland                                  |
-| BAS-modell                                        | Avgiftsrapportering         |                                                   |                                                                    |
-|                                                  |                       | BAS (AU)                                          | BAS-format for Australia                                           |
-| Skjemamodell for byggebransjen               | Avgiftsrapportering         |                                                   |                                                                    |
-|                                                  |                       | CIS Månedlige Retur (Storbritannia)                           | CIS Månedlige returformat for Storbritannia                   |
-| Purremodell                          | Elektronisk fakturering  |                                                   |                                                                    |
-|                                                  |                       | OIOUBL Purring Letter (DK)                     | OIOUBL Purreformat for Danmark                        |
-| Elektronisk finansmodell (MX)          | Avgiftsrapportering         |                                                   |                                                                    |
-|                                                  |                       | XML for hjelpefinans (MX)                         | Rapportformat for hjelpefinanstransaksjoner per konto for Mexico |
-|                                                  |                       | XML for kontoplan (MX)                         | Rapportformat for kontoplan for Mexico                          |
-|                                                  |                       | XML for journaler (MX)                                 | Rapportformat for journaltransaksjoner for Mexico                      |
-|                                                  |                       | XML for råbalanse (MX)                            | Rapportformat for råbalanse for Mexico                             |
-| Elster-modell                                     | Avgiftsrapportering         |                                                   |                                                                    |
-|                                                  |                       | Elster (DE)                                       | Elster-format for Tyskland                                          |
-| Modell for EU-salgsliste                              | Handelsrapportering       |                                                   |                                                                    |
-|                                                  |                       | EU-salgsliste (DE)                                | TXT-format for EU-salgsliste for Tyskland                               |
-|                                                  |                       | EU-salgsliste (DK)                                | TXT-format for EU-salgsliste for Danmark                               |
-|                                                  |                       | EU-salgsliste (FR)                                | XML-format for EU-salgsliste for Frankrike                                |
-|                                                  |                       | EU-salgsliste (NL)                                | XML-format for EU-salgsliste for Nederland                           |
-|                                                  |                       | TXT for EU-salgsliste (Storbritannia)                            | TXT-format for EU-salgsliste for Storbritannia                    |
-|                                                  |                       | XML for EU-salgsliste (Storbritannia)                            | XML-format for EU-salgsliste for Storbritannia                    |
-|                                                  |                       | Rapport for EU-salgsliste etter kolonner                   | Rapport for EU-salgsliste etter kolonner                                    |
-|                                                  |                       | Rapport for EU-salgsliste etter rader                      | Rapport for EU-salgsliste etter rader                                       |
-| FEC-regnskapsmodell (FR)                        | Avgiftsrapportering         |                                                   |                                                                    |
-|                                                  |                       | XML for FEC-regnskapsdata (FR)                      | XML-format for eksport av FEC-regnskapsdata for Frankrike                   |
-| Tysk revisjonsfil                                | Økonomiske revisjon       |                                                   |                                                                    |
-|                                                  |                       | Tysk revisjonsfilutdata                          | Revisjonsfilutdata for Tyskland og Østerrike                          |
-| Intrastat modell                                  | Handelsrapportering       |                                                   |                                                                    |
-|                                                  |                       | Intrastat (DE)                                    | Intrastat-format for Tyskland                                       |
-|                                                  |                       | Intrastat (DK)                                    | Intrastat-format for Danmark                                       |
-|                                                  |                       | Intrastat-INTRACOM (FR)                           | Intrastat-INTRACOM-format for Frankrike                               |
-|                                                  |                       | Intrastat-SAISUNIC (FR)                           | Intrastat SAISUNIC-format for Frankrike                               |
-|                                                  |                       | Intrastat (NL)                                    | Intrastat-format for Nederland                               |
-|                                                  |                       | Intrastat (Storbritannia)                                    | Intrastat-format for Storbritannia                            |
-|                                                  |                       | Intrastat-rapport                                  | Intrastat-kontrollrapport for Excel                                     |
-| Kundefakturamodell                           | Elektronisk fakturering  |                                                   |                                                                    |
-|                                                  |                       | OIOUBL Prosjektkreditnota (DK)                   | OIOUBL Format for prosjektkreditnota for Danmark                      |
-|                                                  |                       | OIOUBL Prosjektfaktura (DK)                       | OIOUBL Format for prosjektfaktura for Danmark                          |
-|                                                  |                       | OIOUBL Salgskreditnota (DK)                     | OIOUBL Format for salgskreditnota for Danmark                        |
-|                                                  |                       | OIOUBL Salgsfaktura (DK)                         | OIOUBL Salgsfakturaformat for Danmark                            |
-| OB-deklareringsmodell                             | Avgiftsrapportering         |                                                   |                                                                    |
-|                                                  |                       | OB-deklarering (NL)                               | OB-deklareringsformat for Nederland                          |
-| Betalingsmodell                                    | Betalinger              |                                                   |                                                                    |
-|                                                  |                       | Betalingsservice (DK)                             | Betalingsservice-betalingsformatet for Danmark                        |
-|                                                  |                       | vekselremittering (FR)                  | Vekselremitteringsformat for Frankrike                      |
-|                                                  |                       | BTL91 (NL)                                        | BTL91-leverandørbetalingsformat for Nederland                    |
-|                                                  |                       | CFONB Prelevements (FR)                           | CFONB-betalingsformat for avtalegiro for Frankrike                       |
-|                                                  |                       | CFONB Virements (FR)                              | CFONB-betalingsformat for innenlandsk leverandør for Frankrike                    |
-|                                                  |                       | Nordea Leverandør (DK)                                | Betalingsformat leverandørbetaling for Nordea Corporate Netbank for Danmark         |
-|                                                  |                       | Tjenesteformat for ANZ-direkteinnbetaling (AU)                    | Tjenesteformatet for ANZ-direkteinnbetaling for Australia                 |
-|                                                  |                       | Tjenesteformat for CBA-direkteinnbetaling (AU)                    | Tjenesteformatet for CBA-direkteinnbetaling for Australia                 |
-|                                                  |                       | Tjenesteformat for NAB-direkteinnbetaling (AU)                    | Tjenesteformatet for NAB-direkteinnbetaling for Australia                 |
-|                                                  |                       | Tjenesteformat for STG-direkteinnbetaling (AU)                    | Tjenesteformatet for STG-direkteinnbetaling for Australia                 |
-|                                                  |                       | System for WBC-direkteoppføring (AU)                      | Systemformat for WBC-direkteoppføring for Australia                   |
-|                                                  |                       | DirectLink (NZ)                                   | Format for DirectLink for New Zealand                              |
-|                                                  |                       | JBA-betalingsfil (JP)                             | JBA-betalingsformat for Japan                                       |
-|                                                  |                       | ISO20022-kredittoverføring                          | SEPA-kredittoverføringsformat for Europa                             |
-|                                                  |                       | ISO20022-kredittoverføring (FR)                     | SEPA-kredittoverføringsformat for Frankrike                             |
-|                                                  |                       | ISO20022-kredittoverføring (DE)                     | SEPA-kredittoverføringsformat for Tyskland                            |
-|                                                  |                       | ISO20022-kredittoverføring (NL)                     | SEPA-kredittoverføringsformat for Nederland                    |
-|                                                  |                       | ISO20022-avtalegiro                             | SEPA-avtalegiroformat for Europa                                |
-|                                                  |                       | ISO20022-avtalegiro (FR)                        | SEPA-avtalegiroformat for Frankrike                                |
-|                                                  |                       | ISO20022-avtalegiro (DE)                        | SEPA-avtalegiroformat for Tyskland                               |
-|                                                  |                       | ISO20022-avtalegiro (NL)                        | SEPA-avtalegiroformat for Nederland                       |
-|                                                  |                       | BBS (Storbritannia)                                         | Format for BACS-leverandørbetalings for Storbritannia                  |
-| Snudd avregning                                   | Avgiftsrapportering         |                                                   |                                                                    |
-|                                                  |                       | Salgsliste for snudd avregning                         | Format for salgsliste for snudd avregning                                   |
-| Nederlandsk XBRL-integreringsmodell                     | XBRL-rapportering        |                                                   |                                                                    |
-|                                                  |                       | Semansys XBRL (NL)                                | Semansys XBRL-eksportformat for Nederland                    |
-| GAF-modell (MY)                                   | Økonomiske revisjon       |                                                   |                                                                    |
-|                                                  |                       | GAF-fil (MY)                                     | Format for GAF for Malaysia                                         |
-| Rapport for aldersfordeling for leverandører (CN)                         | Dataanalyse for leverandører |                                                   |                                                                    |
-|                                                  |                       | Format for aldersfordeling for leverandører (CN)                   | Format for aldersfordeling for leverandører for Kina                               |
-| Modell for deklarering av leverandørfaktura                 | Dataanalyse for leverandører |                                                   |                                                                    |
-|                                                  |                       | Deklarering av leverandørfaktura (IS)                   | Format for deklarering av leverandørfaktura for Island                      |
-|                                                  |                       | Rapport for deklarering av leverandørfaktura (IS)            | Rapport for deklarering av leverandørfaktura for Island                      |
+Listen over ER-konfigurasjoner for Finance oppdateres hele tiden. Åpne det [globale repositoriet](er-download-configurations-global-repo.md) for å se gjennom listen over ER-konfigurasjoner som støttes for øyeblikket. I hurtigfanen **Avviklingsdetaljer** kan du gå gjennom informasjonen om konfigurasjonene som er avviklet eller ikke lenger vedlikeholdes. 
+
+![Innhold i det globale repositoriet på siden Konfigurasjonsrepositorium](./media/er-overview-03.gif)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-- [Opprette en konfigurasjon for elektronisk rapportering (ER)](electronic-reporting-configuration.md)
+- [Opprette konfigurasjoner for elektronisk rapportering (ER)](electronic-reporting-configuration.md)
 - [Administrere livssyklus til konfigurasjoner for elektronisk rapportering (ER)](general-electronic-reporting-manage-configuration-lifecycle.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

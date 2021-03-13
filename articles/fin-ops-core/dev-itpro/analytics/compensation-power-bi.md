@@ -1,6 +1,6 @@
 ---
 title: Power BI-innholdet Kompensasjon
-description: Dette emnet beskriver Power BI-innholdet Kompensasjon. Det forklarer hvordan du kan få tilgang til rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
+description: Dette emnet beskriver Power BI-innholdet Kompensasjon. Det forklarer hvordan du får tilgang til rapporter og gir informasjon om datamodellen som brukes.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 64b4f27b4a1fa3762169a18746c6b0933bddf3ca
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b625ea7dcbb6bd8b80cbcdcc544c59b9839fc19d
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687188"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093062"
 ---
 # <a name="compensation-power-bi-content"></a>Power BI-innholdet Kompensasjon
 
@@ -71,6 +71,3 @@ Følgende data brukes til å fylle ut rapportene i Power BI-innholdet **Kompensa
 | Navn på ansatt            | Fornavn, etternavn og fullt navn                                                                       | Gjeldende ansatt, fratrådt ansatt, trend for ansatt |
 | Ansattittel           | Tittel og ansiennitetsdato                                                                                   | Gjeldende ansatt, fratrådt ansatt, trend for ansatt |
 | Trend for ansatt           | Arbeidere over tid, antall ansatte, firma og stilling                                                        | Firma, kompensasjon, geografisk plassering, ansattnavn, rapporterer til, kalenderforskyvning, dato, ansattittel, demografi, ansettelse, jobb, fordeler |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: Power BI-innholdet Fordeler
-description: Dette emnet beskriver Power BI-innholdet Fordeler. Det forklarer hvordan du kan få tilgang til rapporter som er inkludert, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
+description: Dette emnet beskriver Power BI-innholdet Fordeler.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: d0a5fe54bb4f5541f610f8ea76afa7813e3a599a
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 5a894ebfb79eab4888178c930b9e7d55cf735c91
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687264"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093087"
 ---
 # <a name="benefits-power-bi-content"></a>Power BI-innholdet Fordeler
 
@@ -69,6 +69,3 @@ Følgende data brukes til å fylle ut rapportene i Power BI-innholdet **Fordeler
 | Navn på ansatt            | Fornavn, etternavn og fullt navn                                                                       | Gjeldende ansatt, fratrådt ansatt, trend for ansatt |
 | Ansattittel           | Tittel og ansiennitetsdato                                                                                   | Gjeldende ansatt, fratrådt ansatt, trend for ansatt |
 | Trend for ansatt           | Arbeidere over tid, antall ansatte, firma og stilling                                                        | Firma, kompensasjon, geografisk plassering, ansattnavn, rapporterer til, kalenderforskyvning, dato, ansattittel, demografi, ansettelse, jobb, fordeler |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

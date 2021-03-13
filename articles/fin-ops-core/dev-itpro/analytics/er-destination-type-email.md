@@ -1,6 +1,6 @@
 ---
 title: Sende ER-måltype per e-post
-description: Dette emnet forklarer hvordan du konfigurerer et e-postmål for hver MAPPE- eller FIL-komponent i et elektronisk rapporteringsformat (ER) som er konfigurert til å generere utgående dokumenter.
+description: Dette emnet forklarer hvordan du konfigurerer et e-postmål for hver MAPPE- eller FIL-komponent i et ER-format (Elektronisk rapportering).
 author: NickSelin
 manager: AnnBe
 ms.date: 12/03/2020
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: c6242ecb44a206aacc0e1b1b3c4f588eadd18882
-ms.sourcegitcommit: 53174ed4e7cc4e1ba07cdfc39207e7296ef87c1f
+ms.openlocfilehash: e2e0da1c724269e0956be2f402b34ff376ed1990
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "4690132"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5094110"
 ---
 # <a name="email-er-destination-type"></a>Sende ER-måltype per e-post
 
@@ -46,7 +46,7 @@ Flere grupper med komponenter kan konfigureres for én enkelt ER-formatkonfigura
 
 ## <a name="configure-an-email-destination"></a>Konfigurere et e-postmål
 
-Hvis du vil sende en utdatafil eller flere utdatafiler via e-post, går du til siden **Mål for elektronisk rapportering** og hurtigfanen **Fildestinasjon** og velger en komponent eller komponentgruppe i rutenettet, og deretter velger du **Innstillinger**. I dialogboksen **Innstillinger for mål** som vises, i kategorien **E-post**, setter du alternativet **Aktivert** til **Ja**. Du kan deretter angi e-postmottakere og redigere emnet og brødteksten i e-postmeldingen. Du kan enten definere konstant tekst for e-postemnet og meldingsteksten, eller du kan bruke ER-[formler](er-formula-language.md) for å opprette e-posttekster dynamisk.
+Hvis du vil sende en utdatafil eller flere utdatafiler via e-post, går du til siden **Mål for elektronisk rapportering** og hurtigfanen **Fildestinasjon** og velger en komponent eller komponentgruppe i rutenettet, og deretter velger du **Innstillinger**. I dialogboksen **Innstillinger for mål** som vises, i fanen **E-post**, setter du alternativet **Aktivert** til **Ja**. Du kan deretter angi e-postmottakere og redigere emnet og brødteksten i e-postmeldingen. Du kan enten definere konstant tekst for e-postemnet og meldingsteksten, eller du kan bruke ER-[formler](er-formula-language.md) for å opprette e-posttekster dynamisk.
 
 Du kan konfigurere e-postadresser for ER på to måter. Konfigurasjonen kan fullføres på samme måte som Utskriftsbehandling-funksjonen fullfører den, eller du kan løse en e-postadresse ved å bruke en direkte referanse til ER-konfigurasjonen via en formel.
 
@@ -64,8 +64,6 @@ Hvis du velger **E-post for utskriftsbehandling** som typen e-postadresse, kan d
 
 - Velg feltet **E-postkilde** og deretter **Ingen**.
 - I feltet for **Flere e-postadressene, atskilt med ";"** angir du de faste e-postadressene.
-
-![Konfigurere en fast e-postadresse](./media/er_destinations-emailfixedaddress.png)
 
 Du kan også hente e-postadresser fra kontaktdetaljene for parten du genererer et utgående dokument for. Hvis du vil bruke e-postadresser som ikke er faste, går du til feltet **E-postkilde** og velger [rollen](../../fin-ops/organization-administration/overview-global-address-book.md#party-roles) til parten for et filmål. Følgende roller støttes:
 
@@ -92,8 +90,6 @@ På siden **Formelutforming**, i feltet **Formel**, angir du en dokumentspesifik
 
 Hvis kontonumrene til den konfigurerte rollen er unike for hele forekomsten av Microsoft Dynamics 365 Finance, kan feltet for **firma for e-postkilde** i dialogboksen **E-post til** være tomt.
 
-![Tomt Firma for e-postkilde-felt](./media/er_destinations-emaildefineaddresssourceformula.png)
-
 Du kan også ha en situasjon der forskjellige parter i den [globale adresseboken](../../fin-ops/organization-administration/overview-global-address-book.md) er registrert i forskjellige firmaer ([juridiske enheter](../../fin-ops/organization-administration/organizations-organizational-hierarchies.md#legal-entities)) på en slik måte at alle bruker samme kontonummer til å fylle den konfigurerte rollen. I dette tilfellet er ikke kontonumrene for den konfigurerte rollen unike for hele Finance-forekomsten. Derfor, for å eksplisitt velge en part, kan du ikke angi bare et kontonummer. Du må også angi firmaet som parten er registrert for, i området, for å fylle den konfigurerte rollen. Velg **Bind**-knappen (kjedesymbol) ved siden av feltet for **Firma for e-postkilde** i dialogboksen **E-post til** for å åpne siden for [Formeldesigner](general-electronic-reporting-formula-designer.md). Du kan deretter bruke denne siden til å konfigurere en formel som returnerer, ved kjøretid, koden til firmaet som den ønskede kilden må finnes i området til.
 
 > [!TIP]
@@ -109,8 +105,6 @@ Hvis du vil angi hvilke typer e-postadresser som må brukes ved kjøring, går d
 
 > [!NOTE]
 > Hvis det er valgt formål i feltet **Formål**, og alternativet **Primærkontakt** er satt til **Ja** samtidig, vil alle e-postmeldinger som oppfyller minst ett konfigurert kriterium, bli brukt under kjøring.
-
-![Konfigurere en konto for e-postkildeattributter](./media/er_destinations-emaildefineaddresssourceattributes.png)
 
 ### <a name="configuration-email"></a>E-post for konfigurasjon
 
@@ -145,6 +139,3 @@ Følgende illustrasjon viser prosessen, som beskrevet i dette emnet, med grupper
 - [Oversikt over elektronisk rapportering (ER)](general-electronic-reporting.md)
 - [Mål for elektronisk rapportering (ER)](electronic-reporting-destinations.md)
 - [Formeldesigner i elektronisk rapportering (ER)](general-electronic-reporting-formula-designer.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -11,33 +11,22 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 5a883011bbff6d82504497d739c07f1ada9e5f69
-ms.sourcegitcommit: f860ac2b18f6bbbfc4a46b497baec2477105b116
+ms.openlocfilehash: d076aa5230437d1ef90f6b46d49ee4dea526db24
+ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "4446573"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "5104235"
 ---
 # <a name="create-an-azure-storage-account-and-a-key-vault"></a>Opprett en Azure Storage-konto og en Key Vault
 
 [!include [banner](../includes/banner.md)]
-
-
-
-Tillegget Elektronisk fakturering tar ansvar for lagring av alle forretningsdata i Microsoft Azure-ressursene som firmaet ditt eier. For å sikre at tjenesten fungerer som den skal, og at alle forretningsdataene som trengs for og genereres av tillegget Elektronisk fakturering, bare åpnes av tillegget, må du opprette to hoved-Azure-ressurser:
-
-- En Azure Storage-konto (blob-lagring) for å lagre elektroniske fakturaer
-- Et Azure Key Vault som lagrer sertifikater og URIen (Uniform Resource Identifier) for lagringskontoen
-
-> [!NOTE]
-> En dedikert Key Vault-ressurs og kunde-Blob Storage må tilordnes spesifikt for bruk med tillegget Elektroniske fakturering.
 
 ## <a name="prerequisites"></a>Forutsetninger
 
@@ -91,6 +80,3 @@ I dette emnet fullfører du to hovedtrinn:
 9. I dialogboksen **Sikkerhetskontohaver** velger du sikkerhetskontohaveren ved å legge til **Tillegget Elektronisk fakturering**.
 10. Velg **Legg til**, og velg deretter **Lagre Key Vault-endringer**.
 11. På siden **Oversikt** kopierer du **DNS-navn**-verdien for Key Vault. Denne verdien vil bli brukt under konfigurasjon av tjenesten i RCS, og vil bli referert til som *Key Vault-URI*.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

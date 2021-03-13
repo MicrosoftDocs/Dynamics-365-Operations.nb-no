@@ -1,9 +1,9 @@
 ---
 title: Rutenettfunksjoner
-description: Dette emnet beskriver flere kraftfulle funksjoner i rutenettkontrollen. Den nye rutenettfunksjonen må være aktivert for at du skal kunne få tilgang til disse funksjonene.
+description: Dette emnet beskriver flere kraftfulle funksjoner i rutenettkontrollen. Du må aktivere den nye rutenettfunksjonen for å kunne få tilgang til disse funksjonene.
 author: jasongre
 manager: AnnBe
-ms.date: 11/17/2020
+ms.date: 01/22/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -15,25 +15,25 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: fb30cdded33f90bb472c8abdb70875077b1dd985
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: f8ec45208ea86f4b1782eaeb1d14bb414e3b577f
+ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693780"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "5104315"
 ---
 # <a name="grid-capabilities"></a>Rutenettfunksjoner
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Den nye rutenettkontrollen tilgjengeliggjør en rekke nyttige og kraftfulle funksjoner som kan brukes til å forbedre brukerproduktivitet, konstruere mer interessante visninger av dataene og få meningsfulle innsikter i dataene. Denne artikkelen dekker følgende funksjoner: 
+Den nye rutenettkontrollen byr på flere nyttige og kraftfulle funksjoner du kan bruke til å forbedre brukerproduktivitet, konstruere mer interessante visninger av dataene og få meningsfull innsikt i dataene. Denne artikkelen dekker følgende funksjoner: 
 
 -  Beregner totaler
 -  Skriving i forkant av systemet
 -  Evaluering av matematiske uttrykk 
 -  Grupperetabelldata (aktivert separat ved hjelp av **funksjonen (Forhåndsvisning) Gruppering i rutenett**)
--  Låste systemkolonner
+-  Låse kolonner
 
 ## <a name="calculating-totals"></a>Beregner totaler
 I Finance and Operations-apper har brukere muligheten til å se totalverdier nederst i numeriske kolonner i rutenett. Disse totalverdiene vises i en bunntekstinndeling nederst i rutenettet. 
@@ -41,14 +41,14 @@ I Finance and Operations-apper har brukere muligheten til å se totalverdier ned
 ### <a name="showing-the-grid-footer"></a>Vise rutenettbunnteksten
 Det er et bunntekstområde nederst i alle tabellrutenett i Finance and Operations -apper. Bunnteksten kan vise nyttig informasjon som er knyttet til dataene som vises i rutenettet. Her er noen eksempler på denne informasjonen:
 
-- Antallet valgte rader i tabellen (når mer enn én oppføring er valgt)
+- Antallet valgte rader i tabellen (når du velger flere oppføringer)
 - Hovedsummer nederst i konfigurerte numeriske kolonner
 - Antallet rader i datasettet 
 
-Denne bunnteksten er skjult som standard, men den kan enkelt aktiveres. Hvis du vil vise bunnteksten for et rutenett, høyreklikker du på en kolonneoverskrift i rutenettet og velger **Vis bunntekst**-alternativet. Når bunnteksten er aktivert for et bestemt rutenett, vil denne innstillingen bli husket til brukeren velger å skjule bunnteksten, noe som kan gjøres ved å høyreklikke på en kolonneoverskrift og velge **Skjul bunntekst**.  Vær oppmerksom på at plasseringen av **Vis bunntekst / Skjul bunntekst**-handlingen forventes å bli forflyttet i en fremtidig oppdatering. 
+Denne bunnteksten er skjult som standard, men du kan aktivere den. Hvis du vil vise bunnteksten for et rutenett, høyreklikker du på en kolonneoverskrift i rutenettet og velger **Vis bunntekst**-alternativet. Etter at du har aktivert bunnteksten for et bestemt rutenett, gjelder denne innstillingen til brukeren velger å skjule bunnteksten. Hvis du vil skjule bunnteksten, høyreklikker du på en kolonneoverskrift og velger **Skjul bunntekst**.  (Handlingen **Vis bunntekst / Skjul bunntekst** blir kanskje flyttet til et annet sted i en fremtidig oppdatering.) 
 
 ### <a name="specifying-columns-with-totals"></a>Angi kolonner med totalverdier
-For øyeblikket er ingen kolonner konfigurert til å vise totalverdier som standard. I stedet betraktes dette som en engangsoppsettsaktivitet, som tilsvarer justering av bredden på kolonnene i rutenett. Når du har angitt at du vil se totalverdier for en kolonne, vil denne innstillingen bli husket neste gang du besøker siden.  
+For øyeblikket viser ingen kolonner totaler som standard. I stedet betraktes dette som en engangsoppsettsaktivitet, som tilsvarer justering av bredden på kolonnene i rutenett. Når du har angitt at du vil se totalverdier for en kolonne, vil denne innstillingen bli husket neste gang du besøker siden.  
 
 Det finnes to måter for å konfigurere en kolonne til å vise en totalverdi: 
 
@@ -117,13 +117,19 @@ Vær oppmerksom på at før versjon 10.0.16/Platform update 40, støttes bare et
 Den innledende grupperingen av data vil få alle grupper vist. Du kan opprette sammendragsvisninger av dataene ved å skjule enkeltstående grupper, eller du kan bruke gruppevisning og -skjuling for å hjelpe til med å navigere gjennom dataene. Hvis du vil vise eller skjule en gruppe, velger du knappen med vinkeltegnet (>) i den tilsvarende topptekstraden for gruppe. Legg merke til at vis/skjul-statusen til enkelt grupper **ikke** lagres i tilpassing.
 
 ### <a name="selecting-and-unselecting-rows-at-the-group-level"></a>Merke og oppheve merking av rader på gruppenivå
-På samme måte som du kan merke (eller oppheve) alle radene i rutenettet ved å merke av øverst i den første kolonnen i rutenettet, kan du også raskt merke av for (eller oppheve merking) for alle radene i en gruppe ved å merke av i den tilsvarende topptekstraden for gruppe. Avmerkingsboksen i topptekstraden for gruppe vil alltid gjenspeile den gjeldende valgstatusen for rader i denne gruppen, uansett om alle rader er merket, ingen rader er merket, eller bare enkelte rader er merket.
+På samme måte som du kan merke (eller oppheve) alle radene i rutenettet ved å merke av øverst i den første kolonnen i rutenettet, kan du også raskt merke av for (eller oppheve merking) for alle radene i en gruppe ved å merke av i den tilsvarende topptekstraden for gruppe. Avmerkingsboksen i topptekstraden for gruppe vil alltid gjenspeile den gjeldende valgstatusen for rader i denne gruppen, uavhengig av om alle rader er merket, ingen rader er merket, eller bare enkelte rader er merket.
 
 ### <a name="hiding-column-names"></a>Skjule kolonnenavn
 Når du grupperer data, er standard virkemåte å vise kolonnenavnet i topptekstraden for gruppe. Fra og med versjon 10.0.14/plattformoppdatering 38, kan du velge å skjule kolonnenavnet i topptekstrader for gruppe ved å velge **Alternativer for rutenett** > **Skjul gruppekolonnenavn**.
 
-## <a name="pinned-system-columns"></a>Låste systemkolonner
-Radvelgingskolonnen og radstatuskolonnen i i det nye rutenettet er låst, eller frosset, på venstre side av rutenettet. Når disse kolonnene er inkludert i et rutenett, vil de alltid være synlige for brukeren, uavhengig av den vannrette rulleplasseringen i rutenettet.   
+## <a name="freezing-columns"></a>Låse kolonner
+Noen kolonner i et rutenett kan så viktige for konteksten at du ikke vil at de kan rulle ut av visningen. Du vil i stedet at verdiene i disse kolonnene alltid vises. I versjon 10.0.17 får brukerne denne fleksibiliteten med funksjonen **Lås kolonner i rutenett**. 
+
+Du låser en kolonne ved å høyreklikke på kolonneoverskriften og deretter velge **Lås kolonne**. Første gang du fullfører dette trinnet, blir den valgte kolonnen den første kolonnen og ruller ikke lenger ut av visningen. Alle påfølgende kolonner du låser, blir lagt til til høyre for den sist låste kolonnen. Du kan bruke standardfunksjonen for flytting til å endre rekkefølgen på låste kolonner etter behov. Låste kolonner kan imidlertid ikke flyttes slik at de vises blant settet med ulåste kolonner. Ulåste kolonner kan likeledes ikke flyttes slik at de vises blant settet med låste kolonner.
+
+Du låser opp en kolonne ved å høyreklikke på den låste kolonneoverskriften og deretter velge **Lås opp kolonne**. 
+
+Merk at kolonnen for radvalg og radstatus i det nye rutenettet alltid låses som de to første kolonnene. Når disse kolonnene tas med i et rutenett, er de derfor alltid synlige for brukere, uavhengig av den vannrette rulleplasseringen i rutenettet. Du kan ikke endre rekkefølgen på disse to kolonnene.
 
 ## <a name="frequently-asked-questions"></a>Vanlige spørsmål
 ### <a name="how-do-i-enable-the-new-grid-control-in-my-environment"></a>Hvordan aktiverer jeg den nye rutenettkontrollen i miljøet? 
@@ -159,7 +165,7 @@ Dette API-et støttes til oktober 2021-versjonen når den nye rutenettkontrollen
 Hvis en utvikler setter egenskapen **WidthMode** til **SizeToAvailable** for kolonner i det nye rutenettet, har disse kolonnene i utgangspunktet samme bredde som de ville ha hvis egenskapen ble satt til **SizeToContent**. De kan imidlertid strekke seg for å bruke en eventuell ekstra tilgjengelig bredde i rutenettet. Hvis egenskapen er satt til **SizeToAvailable** for flere kolonner, deler alle disse kolonnene tilgjengelig ekstra bredde i rutenettet. Hvis en bruker imidlertid endrer størrelsen på en av disse kolonnene manuelt, blir kolonnen statisk. Den blir stående i denne bredden, og strekker seg ikke lenger til å bruke ekstra tilgjengelig rutenettbredde.  
 
 ## <a name="known-issues"></a>Kjente problemer
-Denne delen inneholder en liste over kjente problemer for den nye rutenettkontrollen mens funksjonen er i en forhåndsvisningstilstand.  
+Denne delen viser en liste over kjente problemer for den nye rutenettkontrollen.  
 
 ### <a name="open-issues"></a>Åpne problemer
 -  Når du har aktivert funksjonen **Ny rutenettkontroll**, vil noen sider fortsette å bruke den eksisterende rutenettkontrollen. Dette vil skje i følgende situasjoner:  
@@ -170,20 +176,44 @@ Denne delen inneholder en liste over kjente problemer for den nye rutenettkontro
     Når en bruker først støter på én av disse situasjonene, vil det vises en melding om oppdatering av siden. Når denne meldingen vises, vil siden fortsette å bruke det eksisterende rutenettet for alle brukere til neste oppdatering av produktversjonen. Bedre behandling av disse scenariene, slik at det nye rutenettet kan brukes, vurderes for en fremtidig oppdatering.    
     
 -  [KB 4582758] Poster er utydelige når du endrer zooming fra 100 til en annen prosent
-    
+-  [KB 4592012] Uventet klientfeil i IE11 når du limer inn flere linjer fra Excel
+    -  Microsoft arbeider ikke med en løsning på dette problemet
+
+### <a name="fixed-as-part-of-10016"></a>Løst som del av 10.0.16
+
+-  [KB 4598335] Kontroller for streng på flere linjer overholder ikke DisplayHeights i lister/kort 
+-  [KB 4591891] Fakturaforslagslinjer forsvinner når merking av linjer oppheves
+-  [KB 4592104] Kan ikke redigere poster etter klikk på Løs problemet og flytting til en annen rad uten å løse valideringsproblemet
+-  [KB 4594449] Knappene Aldri og Fjern mangler i datovelgeren 
+-  [KB 4594448] Angivelse av tid blir behandlet på en annen måte med det nye rutenettet
+-  [KB 4600059] Uventet klientfeil med e-postbegrensning
+-  [KB 4574584] Forhåndsvisning av utgiftsvedlegg er ikke tilgjengelig når du holder pekeren over kvitteringsikonet
+
 ### <a name="fixed-as-part-of-10015"></a>Løst som del av 10.0.15    
 
+-  (Kvalitetsoppdatering) [KB 4594444] Uventede klientfeil med forhåndsvisning for segmentert oppføringskontroll
 -  [KB 4582723] Visningsalternativer som ikke vises når du er ferdig senere i skjemalivssyklusen
+-  [KB 4591988] Problemer med å bruke tastaturet til å velge en verdi fra et ReferenceGroup-oppslag
+-  [KB 4588958] RSAT-test (Regression Suite Automation Tool) mislykkes med feilen TypeError: Kan ikke lese egenskapen «text» for udefinert
+-  [KB 4591970] Uventet klientfeil ved innliming fra Excel oppstod umiddelbart etter klikk i rutenettet
+-  [KB 4591904] Dataendringer lagres ikke hvis brukeren klikker og åpner oppslaget for en annen kontroll like etter at brukeren redigerte en kontroll
+-  [KB 4584752] Uventet klientfeil på siden Fakturaforslag for prosjekt
+-  [KB 4584540] Kan ikke forlate rutenettet etter at én rad er limt inn i en journallinje
+-  [KB 4591908] Når du oppretter en ny rad, forblir fokuset på kolonnen du var i
 
 ### <a name="fixed-as-part-of-10014"></a>Løst som del av 10.0.14
 
 -  (Kvalitetsoppdatering) [KB 4584752] Uventet klientfeil for siden Fakturaforslag for prosjekt
+-  [KB 4583880] RSAT-tester (Regression Suite Automation Tool) mislykkes ved OpenLookup-handlingen med «Kan ikke lese egenskapen RowIndex for udefinert»
+-  [KB 4583847] Uventet klientfeil ved navigering gjennom oppslag
 
 ### <a name="fixed-as-part-of-10013"></a>Løst som del av 10.0.13
 
+-  (Kvalitetsoppdatering) [KB 4584752] Uventet klientfeil for siden Fakturaforslag for prosjekt
 -  (Kvalitetsoppdatering) [KB 4583880] Regression Suite Automation Tool (RSAT) Tester mislykkes på OpenLookup-handling med "Kan ikke lese egenskapen RowIndex for udefinert"
 -  (Kvalitetsoppdatering) [KB 4583847] Uventet klientfeil ved navigering gjennom oppslag 
 -  (Kvalitetsoppdatering) [Feil 471777] Kan ikke velge felt i et rutenett for å redigere eller opprette en mobilapp
+-  [KB 4582727] Rutenett fryser etter at bruker får dialogboks for varer med flere antall
 -  [Feil 474851] Hyperkoblinger i referansegruppekontroller fungerer ikke 
 -  [Feil 474848] Utvidede forhåndsvisninger med rutenett vises ikke
 -  [KB 4582726] RotateSign-egenskapen blir ikke respektert  
@@ -263,6 +293,3 @@ Denne delen inneholder en liste over kjente problemer for den nye rutenettkontro
 ### <a name="quality-update-for-1009platform-update-33"></a>Kvalitetsoppdatering for 10.0.9/Platform update 33
 
 - [KB 4550367] Tidsverdier er ikke riktig formatert.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

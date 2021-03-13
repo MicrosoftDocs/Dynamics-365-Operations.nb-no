@@ -1,6 +1,6 @@
 ---
 title: Raddefinisjoner i Utforming av finansrapport
-description: En raddefinisjon er en rapportkomponent eller byggeblokk som angir innholdet i hver rad i finansrapport. En raddefinisjon kan kombineres med kolonnedefinisjoner, definisjoner av rapporttre og rapportdefinisjoner for å opprette en blokkgruppe som kan brukes av flere firmaer.
+description: En raddefinisjon er en rapportkomponent eller byggeblokk som angir innholdet i hver rad i finansrapport.
 author: aprilolson
 manager: AnnBe
 ms.date: 06/20/2017
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 214a36a1284756e47aa1d28af99234657f1861c0
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 274fa4bd137407c504f74335291e4c8e7999625b
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688289"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093271"
 ---
 # <a name="row-definitions-in-financial-report-designer"></a>Raddefinisjoner i Utforming av finansrapport
 
@@ -83,10 +83,10 @@ Følg fremgangsmåten nedenfor for å legge til dimensjoner i en raddefinisjon.
 
 5. I feltet **Kode for startrad** angir du radkoden for den første dimensjonsverdien som skal legges til raddefinisjonen.
 6. I feltet **Øk hver rad med** angir du avstanden mellom etterfølgende radkoder. Hvis den første radkoden for eksempel er 100 og økningsverdien er 30, har de første nye radene kodene 100, 130, 160, 190 og 220. Bruk en inkrementell verdi som gir nok plass til å sette inn nye format- og formelrader.
-7. Klikk **OK**. Én linje for hver valgte dimensjonsverdi legges til raddefinisjonen.
+7. Klikk på **OK**. Én linje for hver valgte dimensjonsverdi legges til raddefinisjonen.
 
 ## <a name="adjust-rounding-in-a-row-definition"></a> Justere avrunding i en raddefinisjon
-Hvis du har en balanse der beløpene er avrundet, kan det hende totalene ikke er i balanse. Dette problemet kan oppstå hvis du for eksempel bruker alternativet for avrunding på en balanserapport og rapportdefinisjonen også angir avrunding. Du kan bruke alternativet **Avrundingsjustering** i raddefinisjonen for å balansere beløpene i balansen. Du kan deaktivere eller endre avrunding i kategorien **Innstillinger** i rapportdefinisjonen. Tabellen nedenfor viser hvordan beløp avrundes. I denne tabellen er totalene forskjellige for rad 100 og 200 når avrunding er aktivert.
+Hvis du har en balanse der beløpene er avrundet, kan det hende totalene ikke er i balanse. Dette problemet kan oppstå hvis du for eksempel bruker alternativet for avrunding på en balanserapport og rapportdefinisjonen også angir avrunding. Du kan bruke alternativet **Avrundingsjustering** i raddefinisjonen for å balansere beløpene i balansen. Du kan deaktivere eller endre avrunding i fanen **Innstillinger** i rapportdefinisjonen. Tabellen nedenfor viser hvordan beløp avrundes. I denne tabellen er totalene forskjellige for rad 100 og 200 når avrunding er aktivert.
 
 | Radkode | Beløp uten avrunding | Beløp med avrunde til hele tusener |
 |----------|--------------------------|-----------------------------------------|
@@ -127,7 +127,7 @@ Du kan opprette og endre skriftstiler for rapporten. Du kan deretter bruke disse
 <td>
 <ol>
 <li>På <strong>Format</strong>-menyen i Rapportutforming klikker du <strong>Stiler og formatering</strong>.</li>
-<li>Klikk <strong>Ny</strong> i dialogboksen <strong>Stiler og formatering</strong>, og skriv deretter inn et unikt navn for den nye stilen.</li>
+<li>Klikk på <strong>Ny</strong> i dialogboksen <strong>Stiler og formatering</strong>, og skriv deretter inn et unikt navn for den nye stilen.</li>
 <li>Velg skrifter, og klikk deretter <strong>OK</strong>.</li>
 </ol>
 </td>
@@ -160,7 +160,7 @@ Formateringen som er angitt i raddefinisjonen, overstyrer all formatering som er
 
 1. Åpne raddefinisjonen som skal endres, i Rapportutforming.
 2. Velg cellene som skal formateres. Hvis du vil velge flere celler, holder du nede CTRL-tasten når du velger cellen.
-3. Klikk verktøylinjeknappen for formatet som skal brukes. Hvis du for eksempel vil rykke inn en rad, velger du raden og klikk deretter **Øk innrykk** ![Øk innrykk](media/indent.gif "Øk innrykk") på verktøylinjen.
+3. Klikk på verktøylinjeknappen for formatet som skal brukes. Hvis du for eksempel vil rykke inn en rad, velger du raden og klikk deretter **Øk innrykk** ![Øk innrykk](media/indent.gif "Øk innrykk") på verktøylinjen.
 
 ### <a name="adjust-columns-while-you-design-reports"></a>Justere kolonner mens du utformer rapporter
 
@@ -187,6 +187,3 @@ Hvis du vil gjøre det enklere å vise kolonnene som du arbeider med i raddefini
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Finansrapportering](financial-reporting-intro.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

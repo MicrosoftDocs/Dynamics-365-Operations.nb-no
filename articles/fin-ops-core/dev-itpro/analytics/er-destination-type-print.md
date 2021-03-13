@@ -1,6 +1,6 @@
 ---
 title: ER-skrivermåltype
-description: Dette emnet forklarer hvordan du kan konfigurere et skrivermål for hver MAPPE- eller FIL-komponent i et elektronisk rapporteringsformat (ER) som er konfigurert til å generere utgående dokumenter i enten PDF- eller Microsoft Office-formater (Excel\Word).
+description: Dette emnet forklarer hvordan du kan konfigurere et skrivermål for hver MAPPE- eller FIL-komponent i et ER-format (Elektronisk rapportering).
 author: NickSelin
 manager: AnnBe
 ms.date: 03/17/2020
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: b7a279dcb30e7681ae654ab17d898a5364391d57
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: c6e298f62ec69f349eb713d66313e535c7e01881
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679612"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5094085"
 ---
 # <a name="printer-destination"></a><a name="PrinterDestinationType"></a>Skrivermål
 
@@ -70,6 +70,3 @@ Hvis du vil bruke en bestemt [sideretning](electronic-reporting-destinations.md#
 
 - [Oversikt over elektronisk rapportering (ER)](general-electronic-reporting.md)
 - [Mål for elektronisk rapportering (ER)](electronic-reporting-destinations.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

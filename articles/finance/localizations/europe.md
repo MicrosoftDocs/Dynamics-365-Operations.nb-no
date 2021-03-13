@@ -3,24 +3,23 @@ title: Oversikt over Europa
 description: Dette emnet inneholder koblinger til dokumentasjonsressurser for Microsoft Dynamics 365 Finance for Europa.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 12/07/2020
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
 ms.search.region: global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1d63d5682521b1991c387604c2cc219c7f147c8d
-ms.sourcegitcommit: cfd84321fba38e02e270d361df369a536a48efa3
+ms.openlocfilehash: aca45011b39240da6634ce604cff49697f95a299
+ms.sourcegitcommit: 7cdec5469ff0da145ac4e01caf3287d0627ae2dc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "4512217"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "5099905"
 ---
 # <a name="europe-overview"></a>Oversikt over Europa
 
@@ -65,6 +64,7 @@ Dette emnet inneholder informasjon og koblinger til ressursene som kan hjelpe de
 - [Fakturabehandling](emea-invoice-processing.md)
 - [Utstede et EU-innførselssertifikat](tasks/eur-00012-issue-eu-entry-certificate.md)
 - [Standarder som støttes for elektronisk fakturering](emea-oioubl-standards-electronic-invoicing.md)
+- [Tvunget generering av elektroniske fakturaer](emea-eur-forced-einvoices.md)
 - [Opprinnelig fakturareferanse (Øst-Europa)](tasks/ee-00004-original-invoice-reference.md)
 - [Partssøk ved hjelp av mva-ID](tasks/eur-00015-party-search-vat-id.md)
 - [Verktøy for generering av betalingsreferanse](tasks/ee-00015-payment-reference-generation-tool.md)
@@ -99,6 +99,3 @@ Dette emnet inneholder informasjon og koblinger til ressursene som kan hjelpe de
 
 - [Oversikt over elektronisk rapportering](../../dev-itpro/analytics/general-electronic-reporting.md)
 - [Laste ned konfigurasjoner for elektronisk rapportering fra Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

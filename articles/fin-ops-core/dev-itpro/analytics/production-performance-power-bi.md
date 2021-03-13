@@ -1,6 +1,6 @@
 ---
 title: Produksjonsytelse-innhold for Power BI
-description: Dette emnet beskriver hva som er inkludert i Produksjonsytelse-innhold for Power BI. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
+description: Dette emnet beskriver hva som er inkludert i Produksjonsytelse-innhold for Power BI.
 author: AndersGirke
 manager: AnnBe
 ms.date: 12/19/2017
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 661617ea7e51ac5cacdd5a08ee52f6a6e43b44be
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: c815a2e37f9882d695bf170a806301a3145d0f06
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4686692"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5094218"
 ---
 # <a name="production-performance-power-bi-content"></a>Produksjonsytelse-innhold for Power BI
 
@@ -128,6 +128,3 @@ Tabellen nedenfor viser nøkkeldimensjonene som brukes som filtre for å dele op
 | Enheter                  | ID og navn                                                   |
 | Ressurser                 | Ressurs-ID, ressursnavn, ressurstype og ressursgruppe |
 | Produkter                  | Produktnummer, produktnavn, vare-ID og varegruppe         |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

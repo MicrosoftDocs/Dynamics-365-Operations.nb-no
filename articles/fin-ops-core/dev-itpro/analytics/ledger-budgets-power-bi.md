@@ -1,7 +1,7 @@
 ---
 title: Power BI-innholdet Faktisk vs. budsjett
-description: Dette emnet beskriver Faktisk vs. budsjett-innholdet for Power BI. Det forklarer også hvordan du får tilgang til rapportene som er inkludert i innholdet, og inneholder informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
-author: ryansandness
+description: Dette emnet beskriver Faktisk vs. budsjett-innholdet for Power BI. Det forklarer hvordan du får tilgang til rapportene og gir informasjon om datamodellen.
+author: panolte
 manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article
@@ -12,15 +12,15 @@ ms.search.form: BudgetTrackingWorkspace
 audience: Application user, IT Pro
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: ryansand
+ms.author: panolte
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 6a185da5055741ac30c7e237ef72d07084644651
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 908b96af5b3d67f265953648edd6aa7ec31556a4
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685279"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093854"
 ---
 # <a name="actual-vs-budget-power-bi-content"></a>Power BI-innholdet Faktisk vs. budsjett
 
@@ -57,6 +57,3 @@ Tabellen nedenfor viser detaljer om mål som finnes på hver rapportside i Power
 | Finanskontoer                   | Finanskontoer som kan brukes til å filtrere rapporten til den gjeldende finanskontoen              |
 | Budsjettkoder              | Budsjettkoder rapporter kan filtreres etter                                                |
 | Juridiske enheter            | Juridiske enheter som kan brukes til å filtrere rapporten til den gjeldende juridiske enheten |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: Power BI-innholdet Analyse av innkjøp og forbruk
-description: Dette emnet beskriver hva som er inkludert i Kjøps- og forbruksanalyse-innhold for Power BI. Det forklarer også hvordan du får tilgang til rapportene som er inkludert i innholdet, og inneholder informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
+description: Dette emnet beskriver hva som er inkludert i Kjøps- og forbruksanalyse-innhold for Power BI.
 author: FrankDahl
 manager: AnnBe
 ms.date: 04/24/2019
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 3f556cf2e506c57e465c2a86485d2cdd4cf8b65e
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 5914abaafab509e278d7a85441928feddb0b5164
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680620"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093448"
 ---
 # <a name="purchase-spend-analysis-power-bi-content"></a>Power BI-innholdet Analyse av innkjøp og forbruk
 
@@ -154,6 +154,3 @@ Nøkkeldimensjonene nedenfor i innholdet brukes som filtre for å dele opp de ag
 | Datoer                  | Datoer, årsforskyvning                                    |
 
 Som standard viser innholdspakkedataene for inneværende kalenderår. Du kan imidlertid endre datofilteret i delen for rapportfiltre. Du kan også endre firmafilteret.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

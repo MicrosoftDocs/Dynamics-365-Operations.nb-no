@@ -1,6 +1,6 @@
 ---
 title: Administrere ER-modelltilordning i separate ER-konfigurasjoner
-description: De følgende trinnene forklarer hvordan en bruker som er tilordnet til rollen systemansvarlig eller utvikler av elektronisk rapportering, kan administrere modelltilordninger for elektronisk rapportering (ER) i separate ER-konfigurasjoner.
+description: Dette emnet beskriver hvordan du administrerer ER-modelltilordninger (Elektronisk rapportering) i separate ER-konfigurasjoner.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/19/2017
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4e59e9f2dd5a0fa6d5955e3d93d25759a478ede7
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 2f1013cfc9f421525fb0661cd5ace5eeaa157f9a
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684433"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093804"
 ---
 # <a name="manage-er-model-mapping-in-separate-er-configurations"></a>Administrere ER-modelltilordning i separate ER-konfigurasjoner
 
@@ -33,134 +33,131 @@ Fordi ER konfigurasjoner deles mellom firmaer, kan du fullføre oppgaveveilednin
     * Kontroller at konfigurasjonsleverandøren for eksempelfirmaET "Litware, Inc." er tilgjengelig og merket som aktiv. Hvis du ikke ser denne konfigurasjonsleverandøren, må du først fullføre trinnene i oppgaveveilednignen "Opprette en konfigurasjonsleverandør og merke den som aktiv".   
 
 ## <a name="add-a-new-er-model-configuration"></a>Legg til en ny ER-konfigurasjon
-1. Klikk Rapporteringskonfigurasjoner.
+1. Klikk på Rapporteringskonfigurasjoner.
     * Legg til en ny modellkonfigurasjon. Navnet må være unikt i konfigurasjonstreet.  
-2. Klikk Opprett konfigurasjon for å åpne nedtrekksdialogen.
+2. Klikk på Opprett konfigurasjon for å åpne nedtrekksdialogen.
 3. Skriv inn Eksempeldatamodell i Navn-feltet.
     * Eksempel på datamodell  
-4. Klikk Opprett konfigurasjon.
-5. Klikk Utforming.
-6. Klikk Ny for å åpne nedtrekksdialogen.
+4. Klikk på Opprett konfigurasjon.
+5. Klikk på Utforming.
+6. Klikk på Ny for å åpne nedtrekksdialogen.
 7. Skriv inn Rot i Navn-feltet.
     * Rot  
-8. Klikk Legg til.
-9. Klikk Ny for å åpne nedtrekksdialogen.
+8. Klikk på Legg til.
+9. Klikk på Ny for å åpne nedtrekksdialogen.
 10. I Navn-feltet skriver du inn Firma.
     * Firma  
-11. Klikk Legg til.
+11. Klikk på Legg til.
 12. I Beskrivelse-feltet angir du teksten, beskrivelsen av den juridiske enheten eller firmaet der brukeren logget under kjøring. 
     * Beskrivelse av den juridiske enheten eller firmaet der brukeren logget under kjøring.  
-13. Klikk Rotreferanse.
-14. Klikk OK.
-15. Klikk Lagre.
+13. Klikk på Rotreferanse.
+14. Klikk på OK.
+15. Klikk på Lagre.
 16. Lukk siden.
-17. Klikk Endre status.
-18. Klikk Fullført.
-19. Klikk OK.
+17. Klikk på Endre status.
+18. Klikk på Fullført.
+19. Klikk på OK.
 
 ## <a name="add-a-new-er-model-mapping-configuration"></a>Legg til en ny ER-modelltilordningskonfigurasjon
-1. Klikk Opprett konfigurasjon for å åpne nedtrekksdialogen.
+1. Klikk på Opprett konfigurasjon for å åpne nedtrekksdialogen.
 2. I feltet Ny angir du Modeltilordning basert på datamodellen Eksempeldatamodell.
 3. Skriv inn Eksempeltilordning i Navn-feltet.
     * Eksempeltilordning  
-4. Klikk Opprett konfigurasjon.
+4. Klikk på Opprett konfigurasjon.
 5. Utvid seksjonen Forutsetninger.
     * Gruppen Forutsetninger for implementasjoner er lagt til automatisk. Gruppen inneholder den nødvendige komponenten som refererer til den overordnede data konfigurasjonen og merkes som implementering. Dette betyr at denne modelltilordningskonfigurasjonen for eksempeltilordning betraktes som implementering av datamodellen Eksempeldatamodell. Derfor tvinger denne komponenten ER å laste ned modelltilordningskonfigurasjon for eksempeltilordning fra et ER-repositorium når modellkonfigurasjonen for eksempeldatamodellen lastes ned.   
-6. Klikk Utforming.
+6. Klikk på Utforming.
     * Den opprettede modelltilordningskonfigurasjonen inneholder en ny, tom tilordning med samme navn som den opprettet konfigurasjonen. Når en valgt overordnet modellkonfigurasjon inneholder modelltilordninger, vil de bli kopiert til en ny modelltilordningskonfigurasjon.   
-7. Klikk Utforming.
+7. Klikk på Utforming.
 8. Velg Dynamics 365 for Operations\Tabell i treet.
-9. Klikk Legg til rot.
+9. Klikk på Legg til rot.
 10. I Navn-feltet skriver du inn Firma.
     * Firma  
 11. Skriv inn CompanyInfo i Tabell-feltet.
     * CompanyInfo  
-12. Klikk OK.
+12. Klikk på OK.
 13. Utvid 'Company' i treet.
 14. Utvid 'Company\find()' i treet.
 15. Velg 'Company\find()\Name' i treet.
-16. Klikk Bind.
-17. Klikk Lagre.
+16. Klikk på Bind.
+17. Klikk på Lagre.
 18. Lukk siden.
 19. Lukk siden.
-20. Klikk Konfigurasjoner i handlingsruten.
-21. Klikk Brukerparametere.
+20. Klikk på Konfigurasjoner i handlingsruten.
+21. Klikk på Brukerparametere.
 22. Velg Ja i feltet Kjøringsinnstillinger.
-23. Klikk OK.
-24. Klikk Rediger.
+23. Klikk på OK.
+24. Klikk på Rediger.
 25. Velg Ja i feltet Kjøringsutkast.
 
 ## <a name="add-a-new-er-format-configuration"></a>Legg til en ny ER-formatkonfigurasjon
 1. Velg 'Sample data model' i treet.
-2. Klikk Opprett konfigurasjon for å åpne nedtrekksdialogen.
+2. Klikk på Opprett konfigurasjon for å åpne nedtrekksdialogen.
 3. I feltet Ny angir du Format basert på datamodellen Eksempeldatamodell.
 4. Skriv inn Eksempelformat i Navn-feltet.
     * Eksempelformat  
-5. Klikk Opprett konfigurasjon.
-6. Klikk Utforming.
-7. Klikk Legg til rot for å åpne nedtrekksdialogen.
+5. Klikk på Opprett konfigurasjon.
+6. Klikk på Utforming.
+7. Klikk på Legg til rot for å åpne nedtrekksdialogen.
 8. Velg Tekst\Streng i treet.
-9. Klikk OK.
-10. Klikk kategorien Tilordning.
+9. Klikk på OK.
+10. Klikk på fanen Tilordning.
 11. Utvid noden 'model' i treet.
 12. Velg 'model\Company' i treet.
-13. Klikk Bind.
-14. Klikk Lagre.
+13. Klikk på Bind.
+14. Klikk på Lagre.
 15. Lukk siden.
     * Kjør utkastversjonen av formatet som er opprettet for testformål.  
-16. Klikk Kjør.
+16. Klikk på Kjør.
     * Klikk Kjør på hurtigfanen Versjoner.  
-17. Klikk OK.
+17. Klikk på OK.
     * Gå gjennom utdataene som inneholder navnet på firmaet der brukeren som kjører denne formatkonfigurasjonen er logget på. Den opprettede modelltilordningskonfigurasjonen brukes av denne formatkonfigurasjonen fordi det bare er én tilgjengelig konfigurasjon som inneholder nødvendige modelltilordninger.   
 
 ## <a name="add-alternative-er-model-mapping-configuration"></a>Legg til alternativ ER-modelltilordningskonfigurasjon
 1. Velg 'Sample data model' i treet.
-2. Klikk Opprett konfigurasjon for å åpne nedtrekksdialogen.
+2. Klikk på Opprett konfigurasjon for å åpne nedtrekksdialogen.
 3. I feltet Ny angir du Modeltilordning basert på datamodellen Eksempeldatamodell.
 4. Skriv inn Eksempel på tilordning (alternativ) i Navn-feltet.
     * Eksempel på tilordning (alternativ)  
-5. Klikk Opprett konfigurasjon.
-6. Klikk Utforming.
-7. Klikk Utforming.
+5. Klikk på Opprett konfigurasjon.
+6. Klikk på Utforming.
+7. Klikk på Utforming.
 8. Velg Dynamics 365 for Operations\Tabell i treet.
-9. Klikk Legg til rot.
+9. Klikk på Legg til rot.
 10. I Navn-feltet skriver du inn Firma.
     * Firma  
 11. Skriv inn CompanyInfo i Tabell-feltet.
     * CompanyInfo  
-12. Klikk OK.
-13. Klikk Rediger.
+12. Klikk på OK.
+13. Klikk på Rediger.
 14. I treet velger du Streng\CONCATENATE.
-15. Klikk Legg til funksjon.
+15. Klikk på Legg til funksjon.
 16. Utvid 'Company' i treet.
 17. Utvid 'Company\find()' i treet.
 18. Velg 'Company\find()\Name' i treet.
-19. Klikk Legg til datakilde.
+19. Klikk på Legg til datakilde.
 20. Skriv inn en verdi i feltet Formel.
     * CONCATENATE(Company.'find()'.Name, ";",  
 21. Velg 'Company\find()\Company(DataArea)' i treet.
-22. Klikk Legg til datakilde.
+22. Klikk på Legg til datakilde.
 23. Skriv inn en verdi i feltet Formel.
     * CONCATENATE(Company.'find()'.Name, ";", Company.'find()'.DataArea)  
-24. Klikk Lagre.
+24. Klikk på Lagre.
 25. Lukk siden.
-26. Klikk Lagre.
+26. Klikk på Lagre.
 27. Lukk siden.
 28. Lukk siden.
 29. Velg Ja i feltet Kjøringsutkast.
 
 ## <a name="use-an-existing-er-model-mapping-configuration"></a>Bruk en eksisterende ER-modelltilordningskonfigurasjon
 1. Velg 'Sample data model\Sample format' i treet.
-2. Klikk Kjør.
+2. Klikk på Kjør.
     * Den valgte utkastversjonen av ER-formatkonfigurasjonen ikke kan utføres, fordi det er mer enn én tilgjengelig modelltilordningskonfigurasjon for den udefinerte datamodellen som er valgt som datakilden for det kjørende ER-formatet.   
     * Nå skal du definere den alternative modelltilordningskonfigurasjonen som den som modelltilordningene skal brukes fra som datakilder for det kjørende ER-formatet.   
 3. Velg 'Sample data model\Sample mapping (alternative)' i treet.
 4. Velg Ja i feltet Standard for modelltilordning.
 5. Velg 'Sample data model\Sample format' i treet.
-6. Klikk Kjør.
-7. Klikk OK.
+6. Klikk på Kjør.
+7. Klikk på OK.
     * Standard modelltilordningskonfigurasjon brukes av denne formatkonfigurasjonen for generering av det elektroniske dokumentet (opprettede utdata inneholder firmakoden).  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

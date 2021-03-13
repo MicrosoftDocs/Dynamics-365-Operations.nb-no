@@ -1,6 +1,6 @@
 ---
 title: Power BI-innholdet Kostnadsregnskapsanalyse
-description: Dette emnet beskriver hva som er inkludert i Kostnadsregnskapsanalyse-innhold for Power BI. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
+description: Dette emnet beskriver hva som er inkludert i Kostnadsregnskapsanalyse-innhold for Power BI.
 author: AndersGirke
 manager: AnnBe
 ms.date: 10/02/2019
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c15995edb5d65a00207fdb425447779d3a17d993
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1c9a4741c1b09b8e68a9fe95d6f4effa328615d5
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683877"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093392"
 ---
 # <a name="cost-accounting-analysis-power-bi-content"></a>Power BI-innholdet Kostnadsregnskapsanalyse
 
@@ -123,6 +123,3 @@ Nøkkeldimensjonene nedenfor brukes som filtre for å dele opp de aggregerte må
 | Økonomiske kalendere                   | Kalender, kalenderbeskrivelse                                                                                       |
 | Regnskapsår                       | Kalenderår                                                                                                        |
 | Regnskapsperioder                     | Kalenderårperiode                                                                                                 |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

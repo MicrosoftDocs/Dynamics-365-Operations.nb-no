@@ -1,6 +1,6 @@
 ---
 title: Klargjøre programmetadataene som skal brukes i RCS
-description: Trinnene i dette emnet forklarer hvordan en bruker kan opprette en ny ER-konfigurasjon (elektronisk rapportering) som inneholder programmetadata for utforming av ER-modelltilordningskonfigurasjoner i Regulatory Configuration Service (RCS).
+description: Dette emnet beskriver hvordan du oppretter en ny rapporteringskonfigurasjon som inneholder programmetadata.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/28/2019
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dbc1ca45a39f2a5c3309276f9e2f5d2b7d2ba5f7
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: d5f55d089a88642cb2bda70274472ad0f0e45cd7
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684097"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5094246"
 ---
 # <a name="prepare-application-metadata-to-be-used-in-rcs"></a>Klargjøre programmetadataene som skal brukes i RCS
 [!include [banner](../../includes/banner.md)]
@@ -36,9 +36,9 @@ Trinnene nedenfor forklarer hvordan en bruker i rollen Systemansvarlig eller Utv
 ## <a name="add-metadata-configuration"></a>Legge til metadatakonfigurasjon 
 1.    Klikk på **Opprett konfigurasjon** for å åpne nedtrekksdialogen. 
 2.    I **Navn**-feltet skriver du inn «Metadata for utenrikshandel». 
-3.    Klikk **Opprett konfigurasjon**. 
-4.    Klikk **Utforming**. 
-5.    Klikk **Legg til**. 
+3.    Klikk på **Opprett konfigurasjon**. 
+4.    Klikk på **Utforming**. 
+5.    Klikk på **Legg til**. 
   
 > [!NOTE]
 > Du kan velge alle metadataene for hele programmet eller valgte modeller eller moduler. Vær i dette tilfellet oppmerksom på at følgende metadata blir lagt til automatisk: tabeller med poster, opplistinger og utvidede datatyper. Når det er behov flere typer metadata, må de legges til manuelt. 
@@ -49,7 +49,7 @@ Vi har enkelte metadata som er knyttet til utenrikshandelstransaksjoner, ved å 
 7.    Klikk på **Tabellposter**. 
 8.    Bruk hurtigfilteret til å filtrere på **Navn**-feltet med verdien «Intrastat». 
 9.    Velg **Intrastat**-tabellposten. 
-10.    Klikk **OK**.
+10.    Klikk på **OK**.
   
 Vi la til metadatainformasjon om Intrastat-tabellen med poster. 
   
@@ -64,22 +64,19 @@ Vi la til metadatainformasjon om Intrastat-tabellen med poster.
 17.    Klikk på **Opplisting**. 
 18.    Bruk hurtigfilteret til å filtrere på **Navn**-feltet med verdien «IntrastatDirection». 
 19.    Velg posten **IntrastatDirection-opplisting**. 
-20.    Klikk **OK**. 
-21.    Klikk **Lagre**.  
+20.    Klikk på **OK**. 
+21.    Klikk på **Lagre**.  
 22.    Lukk siden. 
   
 ## <a name="complete-the-draft-version-of-metadata-configuration"></a>Fullføre kladdeversjonen av metadatakonfigurasjonen
 1.    Klikk på **Endre status**. 
 2.    Klikk på **Fullført**. 
-3.    Klikk **OK**. 
+3.    Klikk på **OK**. 
 4.    Velg fullført versjon **1**. 
   
 ## <a name="export-the-completed-version-of-metadata-configuration-from-application-as-xml-file"></a>Eksportere den fullførte versjonen av metadatakonfigurasjonen fra programmet som en XML-fil
 1.    Klikk på **Veksle**. 
 2.    Klikk på **Eksporter som XML-fil**. 
-3.    Klikk **OK**. 
+3.    Klikk på **OK**. 
     
 ER-metadatakonfigurasjonen har blitt lagret som en XML-fil som kan importeres til RCS og brukes som kilden til informasjon om metadata for forretningsdomenet for utenrikshandel. Basert på denne informasjonen kan vi angi tilordningen mellom programmetadata og ER-datamodellen.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

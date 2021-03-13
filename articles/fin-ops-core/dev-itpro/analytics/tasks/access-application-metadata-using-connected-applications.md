@@ -1,6 +1,6 @@
 ---
 title: Få tilgang til programmetadata ved hjelp av tilkoblede programmer
-description: Trinnene i dette emnet forklarer hvordan en RCS-bruker (Regulatory Configuration Service) kan utforme en ny modelltilordning for elektronisk rapportering (ER) ved å bruke metadata i Finance and Operations.
+description: Trinnene i dette emnet forklarer hvordan en bruker av Regulatory Configuration Service kan utforme en ny modelltilordning for elektronisk rapportering ved å bruke metadata.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/29/2019
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 751ac21dc056373e1cd89a5149bf38789134e0cc
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 457d5760fb704b7a93ce16c081b7c5e6d0ff19c1
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682147"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093336"
 ---
 # <a name="access-application-metadata-by-using-connected-applications"></a>Få tilgang til programmetadata ved hjelp av tilkoblede programmer
 
@@ -38,15 +38,15 @@ De følgende trinnene forklarer hvordan en RCS-bruker (Regulatory Configuration 
 3. Klikk på **Veksle**. 
 4. Klikk på **Last fra XML-fil**. 
 5. Klikk på **Bla gjennom**, og velg filen **Foreign trade metadata.xml**. 
-6. Klikk **OK**. 
+6. Klikk på **OK**. 
 7. Klikk på **Veksle**. 
 8. Klikk på **Last fra XML-fil**. 
 9. Klikk på **Bla gjennom**, og velg filen **Foreign trade model.xml**. 
-10. Klikk **OK**. 
+10. Klikk på **OK**. 
 11. Klikk på **Veksle**. 
 12. Klikk på **Last fra XML-fil**. 
 13. Klikk på **Bla gjennom**, og velg filen **Foreign trade mapping.xml**. 
-14. Klikk **OK**. 
+14. Klikk på **OK**. 
 
 ## <a name="register-a-connected-application"></a>Registrere et tilkoblet program
 1. Lukk siden. 
@@ -58,10 +58,10 @@ De følgende trinnene forklarer hvordan en RCS-bruker (Regulatory Configuration 
 7. Skriv inn «MyConnectedApp» i **Navn**-feltet. 
 8. I **Program**-feltet skriver du inn «https://mycompany.operations.dynamics.com». 
 9. I **Leietaker**-feltet skriver du inn «mycompany.onmicrosoft.com». 
-10. Klikk **Lagre**. 
+10. Klikk på **Lagre**. 
 11. Når du kontrollerer tilkoblingen til det konfigurerte programmet, klikker du på koblingen **Klikk her for å koble til det valgte eksterne programmet** på siden **Koble til eksternt program**. 
 12. Klikk på **Kontroller tilkobling**. 
-13. Klikk **Lukk**. 
+13. Klikk på **Lukk**. 
 14. Etter at valideringen av tilkoblingen har lykkes, oppdateres versjons- og leietakerdetaljene for det konfigurerte programmet i gjeldende rutenett. 
 
 ## <a name="review-existing-model-mapping-configuration"></a>Se gjennom eksisterende modelltilordningskonfigurasjon
@@ -74,8 +74,8 @@ De følgende trinnene forklarer hvordan en RCS-bruker (Regulatory Configuration 
     > [!NOTE]
     > Denne tilordningen henviser til metadatakonfigurasjonen for øyeblikket. Programmetadata fra denne konfigurasjonen tilbys mens denne modelltilordningen utformes. 
 
-6. Klikk **Utforming**. 
-7. Klikk **Utforming**. 
+6. Klikk på **Utforming**. 
+7. Klikk på **Utforming**. 
 8. I treet velger du **Dynamics 365 for Operations\Tabellposter**. 
 9. Klikk på **Legg til rot**. 
 10. Angi eller velg en verdi i **Tabell**-feltet. 
@@ -88,14 +88,14 @@ De følgende trinnene forklarer hvordan en RCS-bruker (Regulatory Configuration 
 13. Lukk siden. 
 
 ## <a name="assign-connected-application-to-model-mapping"></a>Tilordne tilkoblet program til modelltilordning 
-1. Klikk **Rediger**. 
+1. Klikk på **Rediger**. 
 2. Velg programmet **MyConnectedApp**. 
 
     > [!NOTE]
     > Denne tilordningen henviser for øyeblikket til metadataene i det valgte tilkoblede programmet. Når den samme tilordningen henviser til metadatakonfigurasjonen og det tilkoblede programmet samtidig, brukes metadata for det tilkoblede programmet. 
 
-3. Klikk **Utforming**. 
-4. Klikk **Utforming**. 
+3. Klikk på **Utforming**. 
+4. Klikk på **Utforming**. 
 5. I treet velger du **Dynamics 365 for Operations\Tabellposter**. 
 6. Klikk på **Legg til rot**. 
 7. Angi eller velg en verdi i **Tabell**-feltet. 
@@ -113,6 +113,3 @@ De følgende trinnene forklarer hvordan en RCS-bruker (Regulatory Configuration 
 11. Lukk siden. 
 
 Når du må evaluere denne modelltilordningen ved å bruke metadata for en annen versjon av programmet, registrerer du et nytt tilkoblet program, tilordner det til denne modelltilordningen og validerer det mot de nye metadataene.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

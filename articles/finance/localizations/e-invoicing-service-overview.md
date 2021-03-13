@@ -3,7 +3,7 @@ title: Oversikt over tillegget Elektronisk fakturering
 description: Dette emnet gir informasjon om tillegget Elektronisk fakturering i Microsoft Dynamics 365 Finance og Dynamics 365 Supply Chain Management.
 author: gionoder
 manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 01/22/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 97423
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: ffd48e173b66cc6d2571e666d5452a5eff05176c
-ms.sourcegitcommit: f860ac2b18f6bbbfc4a46b497baec2477105b116
+ms.openlocfilehash: 2c35b810151349384f105d9ac1d93e1885031450
+ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "4446572"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "5104214"
 ---
 # <a name="electronic-invoicing-add-on-overview"></a>Oversikt over tillegget Elektronisk fakturering
 
@@ -45,9 +44,9 @@ Tillegget Elektronisk fakturering kan hjelpe deg med å oppnå følgende mål:
 
 Hvis du vil bruke tillegget Elektroniske fakturering, må du installere det fra prosjektet ditt i Microsoft Dynamics Lifecycle Services (LCS). Deretter følger du installasjonsprosedyren for å aktivere integreringen med Finance eller Supply Chain Management. Hvis du vil ha mer informasjon, kan du se [Komme i gang med tillegget Elektronisk fakturering](e-invoicing-get-started.md).
 
-## <a name="availability"></a>Tilgjengelighet
+## <a name="service-availability"></a><a name="availability"></a>-servicetilgjengelighet
 
-I utgangspunktet er tillegget Elektronisk fakturering tilgjengelig for valgte kunder via et forhåndsvisningsprogram. Senere vil forhåndsvisningen bli åpnet for en bredere kundegruppe. Til slutt blir tjenesten generelt tilgjengelig. Fordi funksjonalitet som håndterer lands-/regionsspesifikke krav, kan være begrenset til ulike faser i utgivelsen, bør du alltid se i den mest oppdaterte dokumentasjonen som fremhever dekningen og omfanget av støttede land/område-spesifikke løsninger.
+For øyeblikket er tillegget for Elektronisk fakturering tilgjengelig for kunder via forhåndsversjonsprogrammet, og i neste fase blir tjenesten generelt tilgjengelig. Fordi funksjonalitet som håndterer lands-/regionsspesifikke krav, kan være begrenset til ulike faser i utgivelsen, bør du alltid se i den mest oppdaterte dokumentasjonen som fremhever dekningen og omfanget av støttede land/område-spesifikke løsninger.
 
 Tillegget Elektroniske fakturering distribueres i følgende Azure-områder:
 
@@ -76,7 +75,7 @@ Tillegget Elektronisk fakturering kan brukes i situasjoner der du må opprette o
     - Innebygd, lett utvidbar og konfigurerbar integrering med tilleggsinnhold for flere land
 
     > [!NOTE]
-    > For øyeblikket støttes et begrenset antall direktesendinger. Hvis du vil ha mer informasjon, kan du se delen [Tilgjengelighet](#availability) tidligere i dette emnet. Støtte vil bli utvidet i fremtiden.
+    > For øyeblikket støttes et begrenset antall direktesendinger. Hvis du vil ha mer informasjon, kan du se delen [Tjenestetilgjengelighet](#availability) tidligere i dette emnet. Støtte vil bli utvidet i fremtiden.
 
 - Behandling av svar fra webtjenester, inkludert behandling av konfigurerbare unntaksmeldinger
 - Støtte for elektroniske signaturer (for eksempel ved å bruke XMLDSig-signeringsalgoritme)
@@ -104,15 +103,9 @@ Illustrasjonen nedenfor viser hvordan dataflyter til og fra tillegget Elektronis
 ![Dataflyt for tillegget Elektronisk fakturering](media/e-invoicing-service-data-flow-diagram-overview.png)
 
 ## <a name="privacy-notice"></a>Personvernerklæring
-Aktivering og bruk av Elektronisk fakturering kan kreve sending av begrensede data, som inkluderer registrerings-IDen for organisasjonen. Dette overføres til tredjepartsleverandører autorisert av skattemyndighetene for å sende elektroniske fakturaer i de forhåndsdefinerte formatene som kreves for integrering med disse myndighetenes webtjenester. Data som er importert fra disse eksterne systemene til denne Dynamics 365-elektroniske tjenesten, er underlagt vår [personvernerklæring](https://go.microsoft.com/fwlink/?LinkId=512132). Hvis du vil ha mer informasjon, kan du se delene om personvernerklæring i dokumentasjon for landspesifikke funksjoner.
+Aktivering og bruk av Elektronisk fakturering-tillegget kan kreve sending av begrensede data, som inkluderer registrerings-IDen for organisasjonen. Dette overføres til tredjepartsleverandører autorisert av skattemyndighetene for å sende elektroniske fakturaer i de forhåndsdefinerte formatene som kreves for integrering med disse myndighetenes webtjenester. Data som er importert fra disse eksterne systemene til denne Dynamics 365-elektroniske tjenesten, er underlagt vår [personvernerklæring](https://go.microsoft.com/fwlink/?LinkId=512132). Hvis du vil ha mer informasjon, kan du se delene om personvernerklæring i dokumentasjon for landspesifikke funksjoner.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
-
-- [Komme i gang med tillegget Elektronisk fakturering](e-invoicing-get-started.md)
-- [Komme i gang med tillegget Elektronisk fakturering for Brasil](e-invoicing-bra-get-started.md)
-- [Komme i gang med tillegget Elektronisk fakturering for Mexico](e-invoicing-mex-get-started.md)
-- [Komme i gang med tillegget Elektronisk fakturering for Italia](e-invoicing-ita-get-started.md)
-- [Konfigurere tillegget Elektronisk fakturering](e-invoicing-setup.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+- [Tjenesteadministrasjon](e-invoicing-service-administration.md)
+- [Konfigurere elektroniske fakturaer i RCS](e-invoicing-configuration-rcs.md)
+- [Utstede elektroniske fakturaer i Finance og Supply Chain Management](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md)

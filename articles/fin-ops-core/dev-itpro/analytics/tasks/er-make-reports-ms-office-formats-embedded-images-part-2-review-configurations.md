@@ -1,6 +1,6 @@
 ---
 title: Gå gjennom konfigurasjoner for å generere rapporter i Office-format som inneholder innebygde bilder
-description: 'For å fullføre disse trinnene, må du først fullføre trinnene i oppgaveveiledningen "ER lage rapporter i MS Office-formater med innebygde bilder (del 1: Definere parametere)".'
+description: Dette emnet beskriver hvordan du utformer rapportkonfigurasjoner for å generere elektroniske dokumenter som inneholder innebygde bilder. (Del 1 – definere parametere).
 author: NickSelin
 manager: AnnBe
 ms.date: 06/13/2017
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8c41ff1ba99411b97ea2b5d9f31bdee7c7701315
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 3eee6300350dd96c34f2eab44704d1895e6171ff
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684361"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093651"
 ---
 # <a name="review-configurations-to-generate-reports-in-office-format-that-have-embedded-images"></a>Gå gjennom konfigurasjoner for å generere rapporter i Office-format som inneholder innebygde bilder
 
@@ -35,7 +35,7 @@ Denne fremgangsmåten er ment for brukere som har den systemansvarlige eller ele
 ## <a name="review-the-imported-data-model"></a>Gå gjennom den importerte datamodellen
 1. Gå til Organisasjonsstyring > Elektronisk rapportering > Konfigurasjoner.
 2. Velg Modell for sjekker i treet.
-3. Klikk Utforming.
+3. Klikk på Utforming.
     * Denne modellen er utviklet for å representere sjekker for betaling med tanke på bedrifter og tilordning av denne modellen til programmets datakilder. Se gjennom denne modellen som operasjoner ER utformingen. Legg merke til attributtene for modellelementene presenteres: strukturen, navn, beskrivelse, datatypen og så videre.   
 4. Utvid 'root' i treet.
 5. Velg 'rot\sjekker' i treet.
@@ -56,8 +56,8 @@ Denne fremgangsmåten er ment for brukere som har den systemansvarlige eller ele
 19. Velg 'rot\oppsett\signatur\isprinted' i treet.
     * Legg merke til at to bilde dataelementer er bundet til feltene i tabellene som inneholder bilder av firmalogoen og godkjente personens signatur i binært format.  
 20. Utvid 'rot\oppsett\vannmerke' i treet.
-21. Klikk Tilordne modell til datakilde.
-22. Klikk Utforming.
+21. Klikk på Tilordne modell til datakilde.
+22. Klikk på Utforming.
 23. Utvid 'chequesselected' i treet.
 24. Utvid "oppsett" i treet.
 25. Utvid 'oppsett\firmalogo' i treet.
@@ -72,9 +72,9 @@ Denne fremgangsmåten er ment for brukere som har den systemansvarlige eller ele
 ## <a name="review-the-imported-format"></a>Gå gjennom det importerte formatet
 1. Utvid Modell for sjekker i treet.
 2. Velg 'Modell for sjekker\Utskriftsformat for sjekker' i treet.
-3. Klikk Utforming.
-4. Klikk Vedlegg.
-5. Klikk Åpne.
+3. Klikk på Utforming.
+4. Klikk på Vedlegg.
+5. Klikk på Åpne.
     * Åpne den vedlagte rapportmalen i Excel.  
     * Se gjennom vedlagte rapportens Excel-malen som skal brukes til å skrive ut sjekker. Malen inneholder to sjekker per side, og er utformet for å skrive ut sjekker til det fortrykte skjemaet. Legg merke til at to tomme bilder bygges. Disse tomme bildene er for firmalogoen og signaturen til personen som godkjenner en betaling. Kontroller at bildene kalles CompLogo og SignatureImage, henholdsvis i Excel.   
 6. Lukk siden.
@@ -83,7 +83,7 @@ Denne fremgangsmåten er ment for brukere som har den systemansvarlige eller ele
 9. Velg 'Rapport\ChequeLines\CompLogo' i treet.
 10. Aktiver Vis detaljer.
     * Legg merke til at formatet "CompLogo" celleobjekt representerer Excel varen som skal brukes til å fylle ut bildet for bedriftslogo i rapporten. Dette formatet elementet bundet bilde data modellelement som inneholder et bilde for bedriftslogo i binært format under kjøringen.   
-11. Klikk kategorien Tilordning.
+11. Klikk på fanen Tilordning.
 12. Klikk på Redigering aktivert.
     * Vær oppmerksom på at du kan gjøre celleobjekt formatet "CompLogo" slik at den ikke lenger er aktivert. I dette tilfellet skjuler det tilknyttede elementet for Excel-bildet en firmalogo i den genererte rapporten. Hvis aktivert uttrykket returnerer SANN, og den definerte bindingen gir ikke noe bilde, viser det tilknyttede elementet for Excel-bilde et bilde som er lagret i Excel-malen.   
 13. Lukk siden.
@@ -91,6 +91,3 @@ Denne fremgangsmåten er ment for brukere som har den systemansvarlige eller ele
     * Enkelte etiketter vises i skjemaet forhåndstrykt sjekk inkluderes i rapporten når den opprettes for testformål. Imidlertid skrives disse ikke ut ved reell utskrift, fordi det forhåndstrykte skjemaet allerede inneholder dem.  
 15. Lukk siden.
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

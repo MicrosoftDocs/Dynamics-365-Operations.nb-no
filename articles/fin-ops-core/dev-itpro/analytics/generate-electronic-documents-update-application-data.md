@@ -1,6 +1,6 @@
 ---
 title: Generere elektroniske dokumenter og oppdatere programdata ved hjelp av ER
-description: Du kan utforme elektronisk rapportering (ER)-formater som kan brukes i programmet for å generere utgående elektroniske dokumenter. Du kan også utforme ER-formatene som analyserer innkommende elektroniske dokumenter og bruke innholdet i disse dokumentene til å oppdatere programdata.
+description: Du kan utforme elektronisk rapportering (ER)-formater som kan brukes i programmet for å generere utgående elektroniske dokumenter.
 author: NickSelin
 manager: AnnBe
 ms.date: 11/01/2017
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4b9e17d67c437d384ab941d28b8d5ce2b0e3738f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 4ae3405a882ac37fd9758d8ff0902896562fa06b
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688394"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093879"
 ---
 # <a name="generate-electronic-documents-and-update-application-data-by-using-er"></a>Generere elektroniske dokumenter og oppdatere programdata ved hjelp av ER
 
@@ -40,6 +40,3 @@ Hvis du vil vite mer om denne funksjonen, kan du spille av settet med oppgavevei
 - [ER-datamodellkonfigurasjon: Intrastat (modell)](https://go.microsoft.com/fwlink/?linkid=849038)
 - [ER-modelltilordningskonfigurasjon: Intrastat (tilordning)](https://go.microsoft.com/fwlink/?linkid=849038)
 - [ER-formatkonfigurasjon: Intrastat (format)](https://go.microsoft.com/fwlink/?linkid=849038)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

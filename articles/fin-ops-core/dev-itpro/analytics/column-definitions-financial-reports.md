@@ -1,6 +1,6 @@
 ---
 title: Kolonnedefinisjoner i finansrapporter
-description: Denne artikkelen gir informasjon om kolonnedefinisjoner. En kolonnedefinisjon er en rapportkomponent eller byggeblokk som angir innholdet i kolonner i en rapport. Grunnleggende kolonnedefinisjoner kan i likhet med raddefinisjoner brukes på flere rapporter.
+description: Denne artikkelen gir informasjon om kolonnedefinisjoner. En kolonnedefinisjon er en rapportkomponent som angir innholdet i kolonner i en rapport.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 10/10/2019
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 611e5cdfd2289bb2c690a72659e9ba47d6309cfe
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 820604fac96f5c86be3f7206ca88b3eb1fc6c32a
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687236"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093115"
 ---
 # <a name="column-definitions-in-financial-reports"></a>Kolonnedefinisjoner i finansrapporter
 
@@ -53,7 +53,7 @@ En kolonnedefinisjon kan inneholde to til 255 kolonner.
 
 ### <a name="delete-a-column-from-a-column-definition"></a>Slette en kolonne fra en kolonnedefinisjon
 
-1. Klikk **Kolonnedefinisjoner** i Rapportutforming, og åpne deretter kolonnedefinisjonen som skal endres.
+1. Klikk på **Kolonnedefinisjoner** i Rapportutforming, og åpne deretter kolonnedefinisjonen som skal endres.
 2. Velg kolonnen du vil slette.
 3. Klikk **Slett kolonne** på **Rediger**-menyen.
 
@@ -70,7 +70,7 @@ Denne informasjonen vises i følgende områder i kolonnedefinisjonen:
 - Overskriftsområdet i kolonnedefinisjonen inneholder overskriftsteksten og formatering som vises i rapporten. Et hode kan gjelde for én datakolonne, kan strekke seg over flere kolonner eller kan gjelde for kolonner på en betinget basis. Kolonnedefinisjonen kan inneholde så mange kolonnehoderader som du trenger.
 
     > [!NOTE]
-    > Kolonnehoder gjelder for hver kolonne med data i rapporten. Rapporthoder gjelder for hele rapporten. Du definerer topptekster i rapporter i kategorien **Topptekst og bunntekst** i rapportdefinisjonen.
+    > Kolonnehoder gjelder for hver kolonne med data i rapporten. Rapporthoder gjelder for hele rapporten. Du definerer topptekster i rapporter i fanen **Topptekst og bunntekst** i rapportdefinisjonen.
 
 - Detaljradene for kolonnen er radene under radoverskriftene i kolonnedefinisjonen. Detaljradene for kolonnen definerer informasjonen som er inkludert i rapporten. Tabellen nedenfor viser og beskriver detaljradene for kolonnen.
 
@@ -150,7 +150,7 @@ Du kan bruke dialogboksen **Kolonneoverskrift** for å legge til, endre og slett
 4. I feltet **Formateringsalternativer** velger du et format for overskriften.
 5. I feltet **Spre fra** skriver du inn bokstaven på kolonnen som overskriften skal starte over. I feltet **Spre til** skriver du inn bokstaven på kolonnen som overskriften skal slutte over.
 6. Under **Justering** velger du om kolonneoverskriften skal være venstrejustert, midtstilt eller høyrejustert.
-7. Klikk **OK**.
+7. Klikk på **OK**.
 
 ### <a name="add-a-column-header-row"></a>Legge til en rad for kolonneoverskrift
 
@@ -207,7 +207,7 @@ En betinget overskrift som strekker seg over flere kolonner kan strekke seg over
 4. I feltet **Formateringsalternativer** velger du en formateringsstil for overskriften.
 5. Angi en periode i forhold til basisperioden som angis når rapporten genereres. I feltene **Spre fra** og **Spre til** angir du én av følgende verdier: **BASE**, **BASE-X** eller **BASE+X**, der X er antall perioder fra basisperioden. Hvis du for eksempel angir **BASE** i **Spre fra**-feltet, starter den betingede kolonneoverskriften som strekker seg over flere kolonner, i kolonneoverskriften der rapportdefinisjonen **Basisperiode**-verdi er lik kolonnedefinisjonens **BASE**-verdi. Den avslutter i kolonnen som er angitt i **Spre til**-feltet. Hvis spredningen er BASE til M og rapportdefinisjonens **Basisperiode**-verdi er **4**, starter derfor overskriften i kolonnen er perioden er satt til **4** og slutter ved kolonne M. Overskrifter starter og stopper bare på utskriftskolonner.
 6. Under **Justering** velger du om kolonneoverskriften skal være venstrejustert, midtstilt eller høyrejustert.
-7. Klikk **OK**.
+7. Klikk på **OK**.
 
 #### <a name="example-of-a-conditional-spanning-header"></a>Eksempel på en betinget overskrift som strekker seg over flere kolonner
 
@@ -226,7 +226,7 @@ En bruker oppretter en rapport for en dynamisk seks måneders prognose. Brukeren
 | Kolonnebredde        | 30   | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            | 10            |
 | Utskriftskontroll       |      | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        | P&lt;=B       | P&gt;B        |
 
-Brukeren dobbeltklikker på en kolonneoverskriftscelle for å åpne dialogboksen **Kolonneoverskrift**, og skriver inn følgende informasjon:
+Brukeren dobbeltklikker deretter på en kolonneoverskriftscelle i kolonne B for å åpne dialogboksen **Kolonneoverskrift**, og skriver inn følgende informasjon.
 
 | Felt              | Verdi                 |
 |--------------------|-----------------------|
@@ -236,7 +236,6 @@ Brukeren dobbeltklikker på en kolonneoverskriftscelle for å åpne dialogboksen
 | Justering      | Ingen valg er gjort. |
 | Spre fra        | T                     |
 | Spre til          | BASE                  |
-| Budsjettoverskrift      | BASE+1 til sluttkolonne  |
 
 Etter at informasjonen er registrert, klikker brukeren på **OK**. Brukeren dobbeltklikker deretter på kolonneoverskriftscellen i kolonne C for å åpne dialogboksen **Kolonneoverskrift**, og skriver inn følgende informasjon.
 
@@ -246,8 +245,8 @@ Etter at informasjonen er registrert, klikker brukeren på **OK**. Brukeren dobb
 | Sett inn autotekst    | Ingen valg er gjort. |
 | Formateringsalternativer     | Boks                   |
 | Justering      | Ingen valg er gjort. |
-| Spre fra        | C                     |
-| Spre til          | BASE+2                |
+| Spre fra        | BASE+1                |
+| Spre til          | M                     |
 
 Hver gang rapporten genereres vil ordet "Faktisk" skrives ut over kolonnene som inneholder faktiske data, og ordet "Budsjett" skrives ut over kolonnene som inneholder budsjettet prognoser. I tillegg vil antall kolonner justeres for hver måned.
 
@@ -282,7 +281,7 @@ I kolonnedefinisjonen bruke detaljradene for formateringskolonnen spesiell forma
 
 ### <a name="add-space-between-columns"></a>Legge til mellomrom mellom kolonnene
 
-Cellen **Ekstra mellomrom før kolonne** angir bredden på skilletegnet mellom kolonner og tilstøtende kolonner i kolonnedefinisjonen. Innstillingen **Ekstra mellomrom før kolonne** påvirker alle detaljradene for kolonnen, men ikke radene for kolonneoverskriftene. Bruk dette alternativet for å skille kolonnegrupper eller legge til noen mellomrom før beskrivelsen, slik at beskrivelsekolonnen er innrykket fra de venstrejusterte titlene i rapporten. Standard antall mellomrom mellom kolonnene er to. Du kan endre denne innstillingen i kategorien **Innstillinger** i rapportdefinisjonen.
+Cellen **Ekstra mellomrom før kolonne** angir bredden på skilletegnet mellom kolonner og tilstøtende kolonner i kolonnedefinisjonen. Innstillingen **Ekstra mellomrom før kolonne** påvirker alle detaljradene for kolonnen, men ikke radene for kolonneoverskriftene. Bruk dette alternativet for å skille kolonnegrupper eller legge til noen mellomrom før beskrivelsen, slik at beskrivelsekolonnen er innrykket fra de venstrejusterte titlene i rapporten. Standard antall mellomrom mellom kolonnene er to. Du kan endre denne innstillingen i fanen **Innstillinger** i rapportdefinisjonen.
 
 #### <a name="specify-the-space-between-columns"></a>Angi mellomrommet mellom kolonnene
 
@@ -332,7 +331,7 @@ Cellen **Utskriftskontroll** kan inneholde koder som justerer visningen eller ut
 2. Dobbeltklikk **Utskriftskontroll**-cellen.
 3. I dialogboksen **Utskriftkontroll** velger du en kode i listen **Velg alternativer for utskriftskontroll**. Hvis du vil velge mer enn én kode, holder du nede CTRL-tasten mens du merker kodene.
 4. Velg et alternativ i feltet **Alternativer for betinget utskrift**. Som standard er **(ingen)** valgt. Du kan bare velge én kode om gangen for betinget utskrift.
-5. Klikk **OK**.
+5. Klikk på **OK**.
 
 > [!TIP]
 > Du kan også angi utskriftskodene direkte i cellen **Utskriftskontroll**. Atskill flere kontrollkoder for utskrift med et komma.
@@ -472,7 +471,7 @@ Attributter er økonomisk dataverdier som ytterligere definerer en konto eller t
 2. Dobbeltklikk **Attributtfilter**-cellen for en **FD**-kolonne.
 3. Dobbeltklikk en celle i **Attributt**-kolonnen i dialogboksen **Attributtfilter**, og velg deretter filtertypen.
 4. Hvis du vil begrense resultatene ytterligere, kan du angi et område i kolonnene **Fra** og **Til**. **Fra**-cellen må inneholde en positiv verdi.
-5. Klikk **OK**.
+5. Klikk på **OK**.
 
 #### <a name="example-of-an-attribute-filter"></a>Eksempel på et attributtfilter
 
@@ -504,7 +503,7 @@ Du kan også bruke hvilken som helst kombinasjon av alfanumeriske tegn for nøya
 1. Åpne kolonnedefinisjonen som skal endres i Rapportutforming.
 2. Dobbeltklikk **Dimensjonsfilter**-cellen for en **FD**-kolonne.
 3. I dialogboksen **Dimensjoner** angir du filtrene som skal brukes.
-4. Klikk **OK**.
+4. Klikk på **OK**.
 
 ### <a name="format-a-multiple-currency-report-in-a-column-definition"></a>Formatere en rapport med flere valutaer i en kolonnedefinisjon
 
@@ -581,7 +580,7 @@ En kompleks beregning kan inneholde en kombinasjon av cellereferanser, operatore
 Du kan referere til en bestemt rapportcelle ved å skrive inn en kolonnebokstav og radkode. **B.100** refererer for eksempel til radkode 100 i kolonne B. Du kan dividere en hel kolonne med et bestemt rapportcellebeløp som er i samme kolonne. Beregningen **B/B.100** betyr for eksempel at beløpet i kolonne B skal divideres med verdien i radkode 100 i kolonne B. Hvis beregningen refererer til en kolonne som avhenger av en annen kolonne, løses denne avhengige kolonnen først. Hvis du refererer til en kolonne til en annen kolonne som refererer tilbake til den første kolonnen, vil du forårsake en sirkelreferansefeil.
 
 > [!NOTE]
-> Beregningen kan bli feil hvis du endrer beregningsprioriteten for rapporten. Du kan angi beregningsprioriteten i kategorien **Innstillinger** i rapportdefinisjonen.
+> Beregningen kan bli feil hvis du endrer beregningsprioriteten for rapporten. Du kan angi beregningsprioriteten i fanen **Innstillinger** i rapportdefinisjonen.
 
 #### <a name="multiply-or-divide-a-column-by-a-base-row"></a>Multiplisere eller dividere en kolonne med en basisrad
 
@@ -599,6 +598,3 @@ Du kan dividere beløpet i en kolonne med et bestemt antall perioder. Formelen *
 [Raddefinisjoner i Utforming av finansrapport](row-definitions-financial-reporting.md)
 
 [Avanserte formateringsalternativer i finansrapportering](advanced-formatting-options-financial-reporting.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

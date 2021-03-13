@@ -1,6 +1,6 @@
 ---
 title: Forbedringer i sporing av resultater av genererte ER-rapporter og i å sammenligne dem med grunnlinjeverdier
-description: Dette emnet gir informasjon om hvordan ER-grunnlinjefunksjonen er forbedret i Microsoft Dynamics 365 for Finance and Operations versjon 10.0.3 (juni 2019).
+description: Dette emnet beskriver forbedringer i ER-grunnlinjefunksjonen i Microsoft Dynamics 365 for Finance and Operations versjon 10.0.3 (juni 2019).
 author: NickSelin
 manager: AnnBe
 ms.date: 06/19/2019
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 55e821b27f80383d8a8dc7a2d46f87e17c554078
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1c00a5d9e2804f6ec0f6cb4c544029a1235ee58d
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682853"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5094010"
 ---
 # <a name="improvements-in-tracing-the-results-of-generated-er-reports-and-comparing-them-with-baseline-values"></a>Forbedringer i sporing av resultater av genererte ER-rapporter og i å sammenligne dem med grunnlinjeverdier
 
@@ -59,7 +59,7 @@ For å kunne fullføre trinnene i dette eksemplet må du først fullføre trinne
 
 Grunnlinjen er lagt til for det valgte formatet **Format for å lære ER-grunnlinjer**, men grunnlinjereglene er ennå ikke lagt til for denne grunnlinjen.
 
-![Siden Grunnlinjer for elektronisk rapporteringsformat](media/GER-BaselineSample-AddBaseline2.PNG "Skjermbilde av siden Grunnlinjer for elektronisk rapporteringsformat")
+![Siden Grunnlinjer for elektronisk rapporteringsformat, ingen regler ennå](media/GER-BaselineSample-AddBaseline2.PNG "Skjermbilde av siden Grunnlinjer for elektronisk rapporteringsformat")
 
 ### <a name="make-a-new-baseline-rule"></a>Lage en ny grunnlinjeregel
 
@@ -72,7 +72,7 @@ Grunnlinjen er lagt til for det valgte formatet **Format for å lære ER-grunnli
 7. Velg **OK**.
 8. Velg **Grunnlinjer**.
 
-    ![Siden Grunnlinjer for elektronisk rapporteringsformat](media/GER-BaselineSample-ReviewAddedBaselineLine.PNG "Skjermbilde av siden Grunnlinjer for elektronisk rapporteringsformat")
+    ![Siden Grunnlinjer for elektronisk rapporteringsformat, grunnlinjer valgt](media/GER-BaselineSample-ReviewAddedBaselineLine.PNG "Skjermbilde av siden Grunnlinjer for elektronisk rapporteringsformat")
 
     Den genererte utgående filen knyttes automatisk til grunnlinjen for det utførte ER-formatet. Grunnlinjeregelen har blitt lagt til denne grunnlinjen automatisk og inneholder også referansen til den vedlagte filen.
 
@@ -130,7 +130,7 @@ For å kunne fullføre trinnene i dette eksemplet må du først fullføre trinne
 3. I listen over grunnlinjer velger du grunnlinjen som konfigureres for formatet **Format for å lære ER-grunnlinjer**.
 4. I hurtigfanen **Grunnlinjer** velger du **Slett** for å fjerne grunnlinjeregelen du konfigurerte tidligere.
 
-![Siden Grunnlinjer for elektronisk rapporteringsformat](media/GER-BaselineSample-AddBaseline3.PNG "Skjermbilde av siden Grunnlinjer for elektronisk rapporteringsformat")
+![Siden Grunnlinjer for elektronisk rapporteringsformat, slettet](media/GER-BaselineSample-AddBaseline3.PNG "Skjermbilde av siden Grunnlinjer for elektronisk rapporteringsformat")
 
 ### <a name="define-replacements-for-bindings-of-designed-er-format"></a>Definere erstatninger for bindinger for utformet ER-format
 
@@ -138,7 +138,7 @@ For å kunne fullføre trinnene i dette eksemplet må du først fullføre trinne
 2. Utvid **Utdata** i treet for formatkomponenter, utvid **Utdata\\Dokument**, og merk deretter av for **Utdata\\Dokument\\ProcessingDateTime**.
 3. Velg **OK**.
 
-![Siden Grunnlinjer for elektronisk rapporteringsformat](media/GER-BaselineSample-AddBaseline4.PNG "Skjermbilde av siden Grunnlinjer for elektronisk rapporteringsformat")
+![Siden Grunnlinjer for elektronisk rapporteringsformat, komponenter](media/GER-BaselineSample-AddBaseline4.PNG "Skjermbilde av siden Grunnlinjer for elektronisk rapporteringsformat")
 
 Den valgte ER-formatkomponenten er lagt til i listen over komponenter i hurtigfanen **Erstatninger**. Når basis-ER-formatet kjører i feilsøkingsmodus, erstattes formatets binding for hver komponent med bindingen som vises i **Binding**-kolonnen. Hvis du vil endre standardbindingen for en komponent som er oppført i hurtigfanen **Erstatninger**, velger du **Rediger**.
 
@@ -207,6 +207,3 @@ Hvis du vil importere grunnlinjeinnstillinger fra en XML-fil som er lagret på M
 
 - [Spore genererte rapportresultater og sammenligne dem med grunnlinjeverdier](er-trace-reports-compare-baseline.md)
 - [Ressurser for Oppgaveregistrering](../user-interface/task-recorder.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
