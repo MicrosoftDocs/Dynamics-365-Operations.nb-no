@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,16 +18,18 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 1228339c12d26f7b91875d15f0daa8da2869cba0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 828dd1324c2692b7b3f4bc15c5e50b3dbee8b72c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434291"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5010928"
 ---
 # <a name="synchronize-inventory-level-information-from-supply-chain-management-to-field-service"></a>Synkronisere informasjon om lagernivå fra Supply Chain Management til Field Service 
 
 [!include[banner](../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Dette emnet omhandler malene og de underliggende oppgavene som brukes til å synkronisere lagernivåinformasjon fra Dynamics 365 Supply Chain Management til Dynamics 365 Field Service.
 
@@ -51,7 +52,7 @@ Følgende synkroniseringsoppgaver er påkrevd før synkronisering av lagernivåe
 
 | Field Service                      | Forsyningskjedeadministrasjon                |
 |------------------------------------|----------------------------------------|
-| msdynce_externalproductinventories | CDS-lagerbeholdning etter lager     |
+| msdynce_externalproductinventories | Dataverse-lagerbeholdning etter lager     |
 
 ## <a name="entity-flow"></a>Enhetsflyt
 Lagernivåinformasjon fra Finance and Operations sendes til Field Service for valgte produkter. Lagernivåinformasjonen inkluderer: 
@@ -79,7 +80,7 @@ Enheten **Eksternt produktlager** brukes bare for serverdelen i integreringen. D
 For at prosjektet skal fungere må du kontrollere at integreringsnøkkelen er oppdatert for msdynce_externalproductinventories.
 1.  Gå til **Dataintegrering > Tilkoblingssett**.
 2.  Velg tilkoblingssettet som brukes.
-3.  I kategorien **Integreringsnøkkel** kontrollerer du at følgende nøkler er lagt til msdynce_externalproductinventories:
+3.  I fanen **Integreringsnøkkel** kontrollerer du at følgende nøkler er lagt til msdynce_externalproductinventories:
       - msdynce_productnumber (produktnummer)
       - msdynce_warehouseid (lager-ID)
       
@@ -91,6 +92,3 @@ Du kan bruke filtre med avansert spørring og filtrering slik at bare bestemte p
 ### <a name="product-inventory-supply-chain-management-to-field-service-product-inventory"></a>Produktbeholdning (Supply Chain Management til Field Service): Produktbeholdning
 
 [![Maltilordning i Dataintegrering](./media/FSinventoryLevel1.png)](./media/FSinventoryLevel1.png)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

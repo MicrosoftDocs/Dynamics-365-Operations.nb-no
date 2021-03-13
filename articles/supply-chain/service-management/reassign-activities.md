@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SMADispatchBoard
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fe7f93782ff52797a6978a2490aab992bed065de
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 644d40da7dc39e751e625b5c0e2f9493287a3936
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434156"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5010628"
 ---
 # <a name="reassign-activities"></a>Tilordne aktiviteter på nytt 
 
@@ -34,13 +33,13 @@ Dette emnet beskriver hvordan du tilordner serviceaktiviteter på nytt fra én a
 
 Bruk følgende fremgangsmåte for å tilordne en aktivitet på nytt til en annen arbeider:
 
-1.  Klikk **Servicestyring** \> **Periodisk** \> **Tjenestefordeling**.
+1.  Klikk på **Servicestyring** \> **Periodisk** \> **Tjenestefordeling**.
 
 2.  Angi datoer for å definere tidsperioden du vil vise aktiviteter for, i feltene **Fra dato** og **Til dato**.
 
 3.  Velg om du vil vise lukkede aktiviteter og sende informasjon til beslektede team, og klikk deretter **OK**.
 
-4.  Klikk **Avansert** i **Tjenestefordeling**-skjemaet for å vise bare Gantt-diagrammet øverst på siden. Klikk **Enkel** for å vise Gantt-diagrammet og kategoriene i skjemaet.
+4.  Klikk **Avansert** i **Tjenestefordeling**-skjemaet for å vise bare Gantt-diagrammet øverst på siden. Klikk på **Enkel** for å vise Gantt-diagrammet og fanene i skjemaet.
 
 5.  Utvid listene for hvert fordelingsteam.
 
@@ -48,7 +47,7 @@ Bruk følgende fremgangsmåte for å tilordne en aktivitet på nytt til en annen
     
       - Velg en fargekodet grafikk som representerer serviceaktiviteten som skal tilordnes på nytt. Trykk SKIFT-tasten, og flytt deretter den fargekodede grafikken til raden for en annen ansatt.
     
-      - I **Arbeider**-feltet i kategoriene **Alle**, **Team**, **Ikke fordelt** eller **Relatert** angir du navnet på arbeideren som erstatter den gjeldende arbeideren for aktiviteten.
+      - I **Arbeider**-feltet i fanene **Alle**, **Team**, **Ikke fordelt** eller **Relatert** angir du navnet på arbeideren som erstatter den gjeldende arbeideren for aktiviteten.
 
 ## <a name="see-also"></a>Se også
 
@@ -58,6 +57,3 @@ Bruk følgende fremgangsmåte for å tilordne en aktivitet på nytt til en annen
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

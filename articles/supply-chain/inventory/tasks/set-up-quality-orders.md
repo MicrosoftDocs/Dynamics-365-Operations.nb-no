@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: InventParameters, InventTestReportSetup, InventTestTable, DefaultDashboard, InventTestVariable, InventTestVariableOutcome, InventItemSampling, InventTestQualityGroup, InventTestItemQualityGroupAdd, SysQueryForm, InventTestItemQualityGroup, InventTestGroup, InventTestAssociationTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4577b8b189403b3d71eb634e159d51d2fa53ce12
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 875d79e33fbd1d3d811d93dea98fa9d490716744
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434663"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5011478"
 ---
 # <a name="set-up-quality-orders"></a>Definere kvalitetsordrer
 
@@ -33,9 +32,9 @@ Denne fremgangsmåten viser hvordan du aktiverer en kvalitetsstyringsprosess der
 
 ## <a name="enable-quality-management"></a>Aktivere kvalitetsstyring
 1. Gå til **Navigasjonsrute > Moduler > Lagerstyring > Oppsett > Parametere for beholdnings- og lagerstyring**.
-2. Klikk på kategorien **Kvalitetsstyring**.
+2. Klikk på fanen **Kvalitetsstyring**.
 3. Sett alternativet **Bruk kvalitetsstyring** til Ja.
-4. Klikk **Rapportoppsett**. Rapportoppsett for kvalitetsstyring er allerede definert i USMF. Hvis dette ikke er gjort, kan du legge til nye linjer for de forskjellige rapporttypene og velg dokumenttypen som skal brukes for hver rapport.  
+4. Klikk på **Rapportoppsett**. Rapportoppsett for kvalitetsstyring er allerede definert i USMF. Hvis dette ikke er gjort, kan du legge til nye linjer for de forskjellige rapporttypene og velg dokumenttypen som skal brukes for hver rapport.  
 5. Lukk siden.
 6. Lukk siden.
 
@@ -45,7 +44,7 @@ Denne fremgangsmåten viser hvordan du aktiverer en kvalitetsstyringsprosess der
 3. Skriv inn en verdi i **Test**-feltet.
 4. Skriv inn en verdi i **Beskrivelse**-feltet.
 5. Velg Alternativ i **Type**-feltet. I dette eksemplet velger vi "Alternativ" som vil gjøre det mulig å tilordne testresultatene basert på forhåndsdefinerte verdier.  
-6. Klikk **Lagre**.
+6. Klikk på **Lagre**.
 7. Lukk siden.
 
 ## <a name="create-test-variables-to-define-the-way-test-results-are-recorded"></a>Opprette testvariabler for å definere hvordan testresultater registreres
@@ -53,17 +52,17 @@ Denne fremgangsmåten viser hvordan du aktiverer en kvalitetsstyringsprosess der
 2. Klikk på **Ny**.
 3. Skriv inn en verdi i **Variabel**-feltet.
 4. Skriv inn en verdi i **Beskrivelse**-feltet.
-5. Klikk **Lagre**.
+5. Klikk på **Lagre**.
 6. Klikk på **Resultater**.
 7. Klikk på **Ny**.
 8. Skriv inn en verdi i **Resultat**-feltet.
 9. Skriv inn en verdi i **Beskrivelse**-feltet.
 10. Velg Bestått i feltet **Resultatstatus**.
-11. Klikk **Lagre**.
+11. Klikk på **Lagre**.
 12. Klikk på **Ny**.
 13. Skriv inn en verdi i **Resultat**-feltet.
 14. Skriv inn en verdi i **Beskrivelse**-feltet.
-15. Klikk **Lagre**.
+15. Klikk på **Lagre**.
 16. Lukk siden.
 17. Lukk siden.
 
@@ -75,7 +74,7 @@ Denne fremgangsmåten viser hvordan du aktiverer en kvalitetsstyringsprosess der
 5. Angi et tall i **Verdi**-feltet. Denne verdien er knyttet til spesifikasjonen av antall som er valgt i feltet ved siden av.  
 6. Vis eller skjul delen **Prosess**.
 7. Merk av for eller fjern merket for **Full blokkering**. Hvis du velger dette alternativet, blokkeres hele parti- eller ordrelinjeantallet eller hvis en test mislyktes. Hvis du ikke merker den, blokkeres bare varene i kvalitetsordren.  
-8. Klikk **Lagre**.
+8. Klikk på **Lagre**.
 9. Lukk siden.
 
 > [!NOTE]
@@ -86,12 +85,12 @@ Denne fremgangsmåten viser hvordan du aktiverer en kvalitetsstyringsprosess der
 2. Klikk på **Ny**.
 3. Skriv inn en verdi i **Kvalitetsgruppe**-feltet. Bruk et beskrivende navn som hjelper deg med å identifisere hvilken type varer gruppen inneholder (prøvekriterier).  
 4. Skriv inn en verdi i **Beskrivelse**-feltet.
-5. Klikk **Lagre**.
+5. Klikk på **Lagre**.
 6. Klikk på **Legg til varer**.
 7. Velg **Varenummer**-raden. I dette eksemplet kjøres filtreringsfunksjonen basert på varenummeret.  
 8. Skriv inn en verdi i **Kriterier**-feltet. Skriv for eksempel T* for å filtrere på varenumrene som begynner med T.  
-9. Klikk **OK**.
-10. Klikk **OK**.
+9. Klikk på **OK**.
+10. Klikk på **OK**.
 11. Klikk på **Varekvalitetsgrupper**.
 12. Lukk siden.
 13. Lukk siden.
@@ -103,16 +102,16 @@ Denne fremgangsmåten viser hvordan du aktiverer en kvalitetsstyringsprosess der
 4. Skriv inn en verdi i **Beskrivelse**-feltet.
 5. Velg vareprøvelinjen som du opprettet før, i **Vareprøve**-feltet.
 6. Finn og velg ønsket post i listen.
-7. Klikk **Legg til**.
+7. Klikk på **Legg til**.
 8. Angi et nummer i **Sekvensnummer**-feltet.
 9. Velg testen du opprettet tidligere, i **Test**-feltet.
 10. Finn og velg ønsket post i listen.
-11. Klikk kategorien **Test**.
+11. Klikk på fanen **Test**.
 12. Velg testvariabelen du opprettet tidligere, i **Variabel**-feltet.
 13. Finn og velg ønsket post i listen.
-14. Klikk rullegardinknappen i **Standardresultat**-feltet for å åpne oppslaget.
-15. Klikk koblingen i den valgte raden i listen.
-16. Klikk **Lagre**.
+14. Klikk på rullegardinknappen i **Standardresultat**-feltet for å åpne oppslaget.
+15. Klikk på koblingen i den valgte raden i listen.
+16. Klikk på **Lagre**.
 17. Lukk siden.
 
 ## <a name="define-when-quality-orders-will-be-created"></a>Definere når kvalitetsordrer kan opprettes
@@ -126,15 +125,13 @@ Denne fremgangsmåten viser hvordan du aktiverer en kvalitetsstyringsprosess der
 8. Velg et alternativ i **Hendelsestype**-feltet. Dette er hendelsen som utløser testen. Alternativene som er tilgjengelig her, avhenger av hvilken prosess du valgte i feltet Referansetype.  
 9. Velg et alternativ i **Utførelse**-feltet.
 10. Vis eller skjul delen **Kvalitetsordreprosess**.
-11. Klikk rullegardinknappen i feltet **Hendelsesblokkering** for å åpne oppslaget. Dette feltet viser listen over prosesser som det er mulig å blokkere hvis kvalitetsordren fremdeles er åpen. Alternativene er avhengig av hva du valgte i feltet Hendelsestype.  
-12. Klikk koblingen i den valgte raden i listen. Dette vil være avhengig av de tidligere valgte verdiene. Velg om følgende prosesser må være blokkert mens du har åpne kvalitetsordrer som er koblet til en kildedokumentlinje.  
+11. Klikk på rullegardinknappen i feltet **Hendelsesblokkering** for å åpne oppslaget. Dette feltet viser listen over prosesser som det er mulig å blokkere hvis kvalitetsordren fremdeles er åpen. Alternativene er avhengig av hva du valgte i feltet Hendelsestype.  
+12. Klikk på koblingen i den valgte raden i listen. Dette vil være avhengig av de tidligere valgte verdiene. Velg om følgende prosesser må være blokkert mens du har åpne kvalitetsordrer som er koblet til en kildedokumentlinje.  
 13. Vis eller skjul delen **Spesifikasjoner**.
 14. Velg testgruppen du opprettet tidligere, i **Testgruppe**-feltet.
 15. Finn og velg ønsket post i listen.
-16. Klikk **Lagre**.
+16. Klikk på **Lagre**.
 17. Lukk siden.
 
 > [!NOTE]
 > Funksjonen *Kvalitetsstyring for lagerprosesser* inneholder flere alternativer for å definere kvalitetstilknytninger. Den legger til en ny betingelse(**Gjeldende lagertype**) og en ny innstilling **(Policy for kvalitetsbehandling**). Hvis du har aktivert denne funksjonen, kan du se [Kvalitetsstyring for lagerprosesser](../quality-management-for-warehouses-processes.md) for mer informasjon.
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

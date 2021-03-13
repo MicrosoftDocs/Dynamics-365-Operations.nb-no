@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SMADispatchBoard
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0e83e7008c2547ba0d9e7061772db825e69469a0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 363c6d689f277b1525d0ec115c643eeeca5384f2
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434560"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5010414"
 ---
 # <a name="view-dispatch-teams"></a>Vis fordelingsteam   
 
@@ -32,7 +31,7 @@ ms.locfileid: "4434560"
 
 Serviceordrer i **Tjenestefordeling**-skjemaet grupperes etter fordelingsteam.
 
-1.  Klikk **Servicestyring** \> **Periodisk** \> **Tjenestefordeling**.
+1.  Klikk på **Servicestyring** \> **Periodisk** \> **Tjenestefordeling**.
 
 2.  Velg et datointervall, og klikk deretter **OK**.
 
@@ -53,6 +52,3 @@ Hvis du vil ha informasjon om hvordan du tilordner en arbeider til et team, kan 
   
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

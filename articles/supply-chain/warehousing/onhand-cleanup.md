@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: SysOperationTemplateForm
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-04-03
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 9d01c577fc33564d3517d242e9b01f73cc8e079c
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: f045b9686bbdfcf3e82f5158f0fd28860354b7d7
+ms.sourcegitcommit: b6686265314499056690538eaa95ca51cff7c720
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434793"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5014489"
 ---
 # <a name="warehouse-management-on-hand-entries-cleanup-job"></a>Oppryddingsjobb for lagerstyringsposter
 
@@ -50,7 +49,12 @@ Når jobben kjører, har den en tildelt størrelse på 100. Den vil med andre or
 
 ## <a name="possible-user-impact"></a>Mulig påvirkning på brukerne
 
-Brukere kan bli påvirket hvis oppryddingsjobben for lagerbeholdning sletter alle postene for et gitt nivå (f.eks. nummerskiltnivået). I dette tilfellet er det ikke sikkert at funksjonaliteten for å se den tidligere tilgjengelige beholdningen i et nummerskilt fungerer som forventet, fordi de relevante lagerpostene ikke lenger er tilgjengelige. (Denne funksjonaliteten kontrollerer betingelsen **Antall \<\> 0** i **Dimensjonsvisning**-innstillingene når brukere viser informasjon om beholdning.) Ytelsesforbedringen som oppryddingsjobben gir, skal imidlertid normalt utjevne dette lille funksjonalitetstapet.
+Brukere kan bli påvirket hvis oppryddingsjobben for lagerbeholdning sletter alle postene for et gitt nivå (f.eks. nummerskiltnivået). I dette tilfellet er det ikke sikkert at funksjonaliteten for å vise den tidligere tilgjengelige beholdningen ved et nummerskilt fungerer som forventet, fordi de relevante beholdningspostene ikke lenger er tilgjengelige. Dette kan for eksempel skje i følgende situasjoner:
+
+- I **Beholdningsliste** når brukeren opphever valget av betingelsen **Antall \<\> 0** eller velger betingelsen **Lukkede transaksjoner** i innstillingene for **Dimensjonsvisning**.
+- I rapporten **Aktuell beholdning etter lagerdimensjon** for tidligere perioder når brukeren angir parameteren **Per dato**.
+
+Ytelsesforbedringen som oppryddingsjobben gir, skal imidlertid veie opp for disse små tapene i funksjonalitet.
 
 ## <a name="make-the-maximum-execution-time-setting-available"></a><a name="max-execution-time"></a>Gjør innstillingen for maksimal utførelsestid tilgjengelig.
 
@@ -58,6 +62,3 @@ Som standard er innstillingen **Maksimal utførelsestid** ikke tilgjengelig. Hvi
 
 - **Modul:** *Lagerstyring*
 - **Funksjonsnavn:** *Maksimal utførelsestid for oppryddingsjobb for lagerbeholdning*
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

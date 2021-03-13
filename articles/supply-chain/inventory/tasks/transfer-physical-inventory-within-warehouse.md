@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: InventJournalTransfer, InventJournalCreate, InventItemIdLookupSimple, InventLocationIdLookup, WMSLocationIdLookup, InventTrans
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 540ba2266ea74c36babce57670f84159c89018f1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c00b6d18b036482cd96e2287119ddb7fd80bfa2d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434661"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5011453"
 ---
 # <a name="transfer-physical-inventory-within-the-warehouse"></a>Overføre aktuell beholdning på lageret
 
@@ -35,7 +34,7 @@ Denne prosedyren hjelper deg gjennom prosessen med å opprette og postere en lag
 1. I **navigasjonsruten** går du til **Beholdningsstyring > Journaloppføringer > Varer > Overføring**.
 2. Klikk på **Ny**.
 3. Angi eller velg en verdi i **Navn**-feltet.
-4. Klikk **OK**. Det er muligheten til å angi Fra- og Til-dimensjoner for hver journallinje. Disse er nødvendige for denne journaltypen. Du kan overføre varer til lokasjoner ved hjelp av andre regler. I dette eksemplet skal vi overføre en vare innenfor samme lager, fra en nummerskiltkontrollert lokasjon til en lokasjon som ikke er nummerskiltkontrollert.   
+4. Klikk på **OK**. Det er muligheten til å angi Fra- og Til-dimensjoner for hver journallinje. Disse er nødvendige for denne journaltypen. Du kan overføre varer til lokasjoner ved hjelp av andre regler. I dette eksemplet skal vi overføre en vare innenfor samme lager, fra en nummerskiltkontrollert lokasjon til en lokasjon som ikke er nummerskiltkontrollert.   
 
 ## <a name="create-journal-lines"></a>Opprette journallinjer
 1. Klikk på **Ny** i hurtigfanen **Journallinjer**.
@@ -47,18 +46,15 @@ Denne prosedyren hjelper deg gjennom prosessen med å opprette og postere en lag
 7. Angi eller velg en verdi i **Fra lokasjon**-feltet. Hvis du bruker USMF, kan du velge FL-001.  
 8. Angi eller velg en verdi i **Til lokasjon**-feltet. Hvis du bruker USMF, kan du velge BULK-001.  
 9. Angi et tall i **Antall**-feltet.
-10. Klikk på kategorien **Lagerdimensjoner** i hurtigfanen **Linjedetaljer**.
+10. Klikk på fanen **Lagerdimensjoner** i hurtigfanen **Linjedetaljer**.
 11. Angi eller velg en verdi i **Nummerskilt**-feltet i **Fra lagerdimensjoner**. Hvis du bruker USMF, kan du velge 24.  
-12. Klikk **Lagre**.
+12. Klikk på **Lagre**.
 
 ## <a name="post-the-inventory-transfer-journal"></a>Postere beholdningsoverføringsjournalen
-1. Klikk **Poster** i **handlingsruten**.
-2. Klikk **OK**.
+1. Klikk på **Poster** i **handlingsruten**.
+2. Klikk på **OK**.
 
 ## <a name="view-inventory-transactions"></a>Vis lagertransaksjoner
 1. Klikk på **Beholdning**.
 2. Klikk på **Transaksjoner**. Her kan du se transaksjonene som ble opprettet da du posterte journalen.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

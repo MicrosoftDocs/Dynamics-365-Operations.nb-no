@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: CostingVersion, InventStdCostConv
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 78212
 ms.assetid: d601d9d5-1de3-4868-aff4-534dca01d624
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e9874d3b44a687a60ea1fd26889af3d1b644f86a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bcbd8464532722c83f170db6b19cca5dd77846a0
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434488"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5011803"
 ---
 # <a name="standard-cost-conversion-overview"></a>Oversikt  over standard kostnadskonvertering
 
@@ -44,7 +43,7 @@ Når konverteringsprosessen er fullført, baseres lagermodellen for hver vare p�
 Bruk siden **Standard kostnadskonverteringer** til å opprette en konverteringspost. Du kan bare opprette en ny konverteringspost når de eksisterende konverteringspostene er fullført. Lengden på den planlagte overgangsperioden defineres av startdato for overgangen og den planlagte konverteringsdatoen. En planlagt overgangsperiode kan være så kort som én dag. En planlagt overgangsperiode bidrar til å sikre at konverteringen har nok tid til å fullføre alle trinnene. En lagerlukking må gjennomføres på en dato som er før startdatoen for overgangen, slik at utligningene er fullført før du starter konverteringsprosessen. Hvis du vil forsikre deg om at startdatoen for overgangen og lagerlukkingsdatoen er riktig justert, kan du enten endre startdatoen for overgangen til én dag etter en eksisterende lagerlukking eller utføre en lagerlukking. Når du angir en konverteringspost, angir du også en brukerdefinert ID for en ny kostversjon som vil inneholde standardkostnad for konverterte varer. Når du lagrer konverteringspostinformasjon, blir etterkalkuleringsversjonen opprettet automatisk.
 
 ## <a name="2-review-and-change-the-new-costing-version-for-the-conversion-record"></a>2. Gjennomgå og endre de nye etterkalkuleringsversjonene for konverteringsposten
-Den nye etterkalkuleringsversjonen er dedikert til konverteringsposten, noe som gjenspeiles i etterkalkuleringstypen **Konvertering**. Den dedikerte etterkalkuleringsversjonen ligner på en etterkalkuleringsversjon for standardkostnader, og den inneholder varekostpostene for varer som er knyttet til konverteringsposten. Den dedikerte etterkalkuleringsversjonen for en konverteringspost har følgende innstillinger, som du bør gå gjennom og endre i de ulike kategoriene etter behov:
+Den nye etterkalkuleringsversjonen er dedikert til konverteringsposten, noe som gjenspeiles i etterkalkuleringstypen **Konvertering**. Den dedikerte etterkalkuleringsversjonen ligner på en etterkalkuleringsversjon for standardkostnader, og den inneholder varekostpostene for varer som er knyttet til konverteringsposten. Den dedikerte etterkalkuleringsversjonen for en konverteringspost har følgende innstillinger, som du bør gå gjennom og endre i de ulike fanene etter behov:
 
 -   **Etterkalkuleringstype:** Dette feltet skal settes til **Standardkostnad**.
 -   **Versjon:** Identifikatoren gjenspeiler informasjonen som er angitt i konverteringsposten for etterkalkuleringsversjons-ID-en.
@@ -102,6 +101,3 @@ I rapporten **Avviksanalyserapport** kan du analysere revalueringsavvik, og i ra
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

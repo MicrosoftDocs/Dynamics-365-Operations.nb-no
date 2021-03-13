@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: PCProductConfigurationModelListPage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 4051
 ms.assetid: 00df5537-b148-4e32-a248-3e35876ad4e1
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7af9aaa01d89da909f2b30089c17d67d377d9e78
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e6562353a96c2a69c255d20c3f2084c9c3f99bd3
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434510"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5011303"
 ---
 # <a name="set-up-a-product-configuration-model"></a>Definere en produktkonfigurasjonsmodell
 
@@ -38,12 +37,12 @@ Denne artikkelen beskriver fremgangsmåten for å sette opp og opprette en produ
 | Opprette komponenter.                                          | Opprett komponenter på **Komponenter**-siden. Komponentene er byggesteinene i en produktkonfigurasjonsmodell og kan brukes på nytt i flere produktkonfigurasjonsmodeller.                                                                                                                                                                                                                      |
 | Opprette attributtyper.                                     | Opprett attributtyper på **Attributtyper**-siden. Attributtyper spesifiserer hvilke datatyper for alle attributter som brukes i produktkonfigurasjonsmodeller. Attributtypene **Boolsk**, **Tekst** med en fast liste og **Heltall** med et område angir settet med verdier som er tilgjengelige når du konfigurerer en produktvariant basert på en produktkonfigurasjonsmodell.       |
 | Opprette en produktkonfigurasjonsmodell.                       | Opprett en produktkonfigurasjonsmodell på siden **Ny produktkonfigurasjonsmodell**.                                                                                                                                                                                                                                                                                                              |
-| Legge til attributter i en produktkonfigurasjonsmodell.            | Opprett et attributt i hurtigkategorien **Attributter** på siden **Detaljer om restriksjonsbasert produktkonfigurasjonsmodell**. Attributter beskriver funksjonene til produktkonfigurasjonsmodellen.                                                                                                                                                                                                       |
-| Legge til restriksjoner i en produktkonfigurasjonsmodell.           | Opprett begrensninger i hurtigkategorien **Begrensninger** på siden **Detaljer om restriksjonsbasert produktkonfigurasjonsmodell**. Begrensninger er restriksjoner som en produktkonfigurasjon må oppfylle. Begrensninger er uttrykksbegrensninger eller tabellbegrensninger.                                                                                                                                 |
-| Legge til underkomponenter for produktkonfigurasjonsmodell.         | Opprett underkomponenter i hurtigkategorien **Underkomponenter** på siden **Detaljer om restriksjonsbasert produktkonfigurasjonsmodell**. Underkomponenter er knyttet til komponenter og er koblet til varer som representerer underkomponenten.                                                                                                                                                                       |
+| Legge til attributter i en produktkonfigurasjonsmodell.            | Opprett et attributt i hurtigfanen **Attributter** på siden **Detaljer om restriksjonsbasert produktkonfigurasjonsmodell**. Attributter beskriver funksjonene til produktkonfigurasjonsmodellen.                                                                                                                                                                                                       |
+| Legge til restriksjoner i en produktkonfigurasjonsmodell.           | Opprett begrensninger i hurtigfanen **Begrensninger** på siden **Detaljer om restriksjonsbasert produktkonfigurasjonsmodell**. Begrensninger er restriksjoner som en produktkonfigurasjon må oppfylle. Begrensninger er uttrykksbegrensninger eller tabellbegrensninger.                                                                                                                                 |
+| Legge til underkomponenter for produktkonfigurasjonsmodell.         | Opprett underkomponenter i hurtigfanen **Underkomponenter** på siden **Detaljer om restriksjonsbasert produktkonfigurasjonsmodell**. Underkomponenter er knyttet til komponenter og er koblet til varer som representerer underkomponenten.                                                                                                                                                                       |
 | Legge til brukerkrav for produktkonfigurasjonsmodell.     | Brukerkrav ligner på underkomponenter, men de refererer ikke til en vare. Du kan se på brukerkrav som en fantomstykkliste. Alle stykklistelinjer eller ruteoperasjoner som plasseres direkte under brukerkravet, blir slått sammen med den overordnede komponenten.                                                                                                                       |
-| Legge stykklistelinjer til en produktkonfigurasjonsmodell.             | Opprett stykklistelinjer i hurtigkategorien **Stykklistelinjer** på siden **Detaljer om restriksjonsbasert produktkonfigurasjonsmodell**. Stykklistelinjene representerer en del som er nødvendig for å opprette en variant av produktet.                                                                                                                                                                                                 |
-| Legge til ruteoperasjoner i en produktkonfigurasjonsmodell.      | Opprett ruteoperasjoner i hurtigkategorien **Ruteoperasjoner** på siden **Detaljer om restriksjonsbasert produktkonfigurasjonsmodell**. Ruteoperasjoner representerer et trinn i en trinnrekkefølge som utføres for å lage en variant av produktet.                                                                                                                                                    |
+| Legge stykklistelinjer til en produktkonfigurasjonsmodell.             | Opprett stykklistelinjer i hurtigfanen **Stykklistelinjer** på siden **Detaljer om restriksjonsbasert produktkonfigurasjonsmodell**. Stykklistelinjene representerer en del som er nødvendig for å opprette en variant av produktet.                                                                                                                                                                                                 |
+| Legge til ruteoperasjoner i en produktkonfigurasjonsmodell.      | Opprett ruteoperasjoner i hurtigfanen **Ruteoperasjoner** på siden **Detaljer om restriksjonsbasert produktkonfigurasjonsmodell**. Ruteoperasjoner representerer et trinn i en trinnrekkefølge som utføres for å lage en variant av produktet.                                                                                                                                                    |
 | Opprette en aktiv versjon for en produktkonfigurasjonsmodell. | Opprett en aktiv versjon av produktkonfigurasjonsmodellen på **Versjoner**-siden. En versjon er forholdet mellom en produktkonfigurasjonsmodell og en produktstandard. En produktkonfigurasjonsmodell som har en aktiv versjon kan konfigureres fra en salgsordre, et salgstilbud, en bestilling eller en produksjonsordre.                                                               |
 | Teste en produktkonfigurasjonsmodell.                         | Test produktkonfigurasjonsmodellen fra siden **Detaljer om restriksjonsbasert produktkonfigurasjonsmodell** eller **Produktkonfigurasjonsmodeller**. Testing av produktkonfigurasjonsmodellene simulerer produktmodellkonfigurasjonsprosessen som skjer under ordrebehandlingen.                                                                                                |
 | Opprette malen produktkonfigurasjonsmodellen.                | Opprett en mal for produktkonfigurasjonsmodellen på siden **Konfigurasjonsmaler**. En konfigurasjonsmal inneholder verdier for attributter i produktkonfigurasjonsmodellen. Velg attributtverdiene på **Konfigurer linje**-siden. Du kan velge å laste inn en mal for produktmodellkonfigurasjon under produktmodellkonfigurasjonen.                                                   |
@@ -53,6 +52,3 @@ Denne artikkelen beskriver fremgangsmåten for å sette opp og opprette en produ
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

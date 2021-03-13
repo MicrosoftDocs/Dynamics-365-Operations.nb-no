@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: MCRHoldCodeTable, SalesTableListPage, SalesCreateOrder, SalesTable, MCRHoldCodeTrans, MCRHoldCheckOutOverride, MCRHoldCodeTable, MCRItemListCopying, MCRItemListTable, MCROMHoldList
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9caf6651813f0111b873db1769140d973f1a2e3b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 27a5149812a8e478dae1d2385e6c139c9f635202
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434502"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5010753"
 ---
 # <a name="manage-order-holds"></a>Behandle ordresperrer
 
@@ -39,20 +38,20 @@ Du kan kjøre denne fremgangsmåten i demonstrasjonsselskapet USMF eller ved hje
 4. Skriv inn en verdi i **Beskrivelse**-feltet.
     - For eksempel Ordre sperret i påvente av at kunden ringer tilbake.  
     - Du kan også merke av for **Fjernede reservasjoner** for å fjerne fysiske reservasjoner fra ordren når denne sperrekoden legges til.  
-5. Klikk **Lagre**.
+5. Klikk på **Lagre**.
 
 ## <a name="place-order-on-hold"></a>Sett ordre på vent
 1. Gå til **Navigasjonsrute > Moduler > Salg og markedsføring > Salgsordrer > Alle salgsordrer**.
 2. Klikk på **Ny**.
 3. Angi eller velg en verdi i **Kundekonto**-feltet.
-4. Klikk **OK**.
+4. Klikk på **OK**.
 5. Angi eller velg en verdi i **Varenummer**-feltet.
 6. Angi et tall i **Antall**-feltet.
 7. Klikk på **Salgsordre** i **handlingsruten**.
 8. Klikk på **Ordresperrer**.
 9. Klikk på **Ny**.
 10. Velg koden du har opprettet i den forrige underoppgaven, i **Sperrekode**-feltet.
-11. Klikk **Lagre**.
+11. Klikk på **Lagre**.
 12. Lukk siden.
 13. Gå til **Salg og markedsføring > Salgsordrer > Alle salgsordrer**.
 14. Merk den valgte raden i listen. Ordrer som er på vent, har feltene "Ikke behandle" og "Vent" merket av.
@@ -70,6 +69,3 @@ Du kan kjøre denne fremgangsmåten i demonstrasjonsselskapet USMF eller ved hje
     - **Fjern og send**-handlingen gjelder bare når du bruker Telefonsenterfunksjonalitet.  
 8. Klikk på **Fjern sperrer**. Sperringen er nå fjernet fra ordren og fjernet fra listen over aktive sperringer. Hvis du vil se alle sperringene eller delsettet i henhold til en bestemt status, kan du endre verdien i Vis-feltet.     
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

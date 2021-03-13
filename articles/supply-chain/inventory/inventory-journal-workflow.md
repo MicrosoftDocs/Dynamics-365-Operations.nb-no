@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: InventJournalTableWorkflowDropDialog
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 623c628f3359efc1f76e1d06387905f981deca0b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d9f57d35adac0820d0635ab97a4cb4cefc1d504c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434166"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5011678"
 ---
 # <a name="inventory-journal-approval-workflows"></a>Godkjenningsarbeidsflyter for lagerjournal
 
@@ -31,6 +30,13 @@ Dette emnet beskriver hvordan du setter opp og bruker godkjenningsarbeidsflyter 
 
 > [!NOTE]
 > Godkjenningsarbeidsflyter for lagerjurnal gjelder bare for transaksjoner som er registrert ved hjelp av Lagerstyring-modulen. De fungerer ikke med lagerjournaler utløst fra Lagerstyring-modulen.
+
+## <a name="turn-on-the-inventory-journal-approval-workflows-feature"></a>Aktivere funksjonen for godkjenningsarbeidsflyter for lagerjournal
+
+Før du kan bruke denne funksjonen, må den være aktivert i systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
+
+- **Modul:** *Lagerstyring*
+- **Funksjonsnavn:** *Godkjenningsarbeidsflyt for lagerjournal*
 
 ## <a name="create-your-inventory-journal-approval-workflows"></a>Opprette godkjenningsarbeidsflyter for lagerjournal
 
@@ -57,7 +63,7 @@ Slik oppretter du godkjenningsarbeidsflyter for lagerjournal:
 1. Når du har lagret og lukket appen for arbeidsflytredigering, må du velge om du vil aktivere denne arbeidsflytversjonen eller beholde den som inaktiv.
 
 > [!NOTE]
-> Arbeidsflyter gir versjonskontroll, som betyr at du kan vise en liste over versjoner du har opprettet, og velge hvilken som er aktiv. Hvis du vil vise listen over tilgjengelige versjoner og velge hvilken du vil aktivere, velger du en arbeidsflyt som er oppført på siden **Arbeidsflyter for lagerstyring**. I handlingsruten åpner du kategorien **Arbeidsflyt** og velger **Versjoner**. Bare én versjon kan være aktiv om gangen for hver arbeidsflyt-ID.
+> Arbeidsflyter gir versjonskontroll, som betyr at du kan vise en liste over versjoner du har opprettet, og velge hvilken som er aktiv. Hvis du vil vise listen over tilgjengelige versjoner og velge hvilken du vil aktivere, velger du en arbeidsflyt som er oppført på siden **Arbeidsflyter for lagerstyring**. I handlingsruten åpner du fanen **Arbeidsflyt** og velger **Versjoner**. Bare én versjon kan være aktiv om gangen for hver arbeidsflyt-ID.
 
 ## <a name="assign-approval-workflows-to-inventory-journal-names"></a>Tilordne godkjenningsarbeidsflyter til lagerjournalnavn
 
@@ -112,6 +118,3 @@ Slik kontrollerer du arbeidsflytloggen for en journal:
 1. I navigasjonsruten utvider du **Lagerstyring \> Journaloppføringer \> Varer** og velger deretter en lagerjournaltype.
 1. Åpne den relevante journalen.
 1. Velg **Arbeidsflyt**-knappen i handlingsruten for å åpne en dialogboks med en rullegardinliste. Velg **Arbeidsflytlogg**. Hvis du vil ha mer informasjon, kan du se [Vise arbeidsflytlogg](../../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

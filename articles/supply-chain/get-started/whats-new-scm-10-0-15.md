@@ -10,19 +10,18 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 02f343c5351168375eca38893b9d8eef4549dc5a
-ms.sourcegitcommit: 0eb33909a419d526eb84b4e4b64d3595d01731ef
+ms.openlocfilehash: 9b84aaef5348d2cb6bdd6d35e7e26bca9a4e0f6b
+ms.sourcegitcommit: b6686265314499056690538eaa95ca51cff7c720
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4700963"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5014539"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10015-january-2021"></a>Hva er nytt eller endret i Dynamics 365 Supply Chain Management 10.0.15 (januar 2021)
 
@@ -31,8 +30,8 @@ ms.locfileid: "4700963"
 Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Supply Chain Management, versjon 10.0.15. Denne versjonen har et build-nummer 10.0.644, og er tilgjengelig som følger:
 
 - **Forhåndsversjon:** oktober 2020
-- **Generell tilgjengelighet for versjon (selvoppdatering):** november 2020
-- **Generell tilgjengelighet for versjon (automatisk oppdatering):** januar 2021
+- **Allmenn tilgjengelighet for versjon (selvoppdatering):** november 2020
+- **Allmenn tilgjengelighet for versjon (automatisk oppdatering):** januar 2021
 
 ## <a name="features-included-in-this-release"></a>Funksjoner inkludert i denne versjonen
 
@@ -84,6 +83,3 @@ Emnet [Fjernede eller avskrevne funksjonene i Dynamics 365 Supply Chain Manageme
 Før en funksjon fjernes fra produktet, vil avskrivningsvarselet bli kunngjort i emnet [Fjernede eller avskrevne funksjoner i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 måneder før fjerningen.
 
 For oppdelingsendringer som bare påvirker kompileringstiden, men som er binære kompatible med sandkasse- og produksjonsmiljøer, vil avskrivningstiden være mindre enn 12 måneder. Dette er vanligvis funksjonelle oppdateringer som må gjøres på kompilatoren.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,16 +18,18 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: ff64f28af570b792f73b51aa9caf06dd2445b2ca
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a598f0356034a22ee7fc0902360b8862a1944558
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434293"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5010978"
 ---
 # <a name="synchronize-inventory-transfers-and-adjustments-from-field-service-to-supply-chain-management"></a>Synkronisere lageroverføringer og -justeringer fra Field Service til Supply Chain Management
 
 [!include[banner](../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Dette emnet omhandler malene og de underliggende oppgavene som brukes til å synkronisere lagerjusteringer og -overføringer fra Dynamics 365 Supply Chain Management til Dynamics 365 Field Service.
 
@@ -45,27 +46,27 @@ Følgende mal og underliggende oppgaver brukes til å synkronisere lagerjusterin
 - Lagerjusteringer
 - Lageroverføringer
 
-## <a name="entity-set"></a>Enhetssett
+## <a name="table-set"></a>Tabellsett
 | Field Service                     | Forsyningskjedeadministrasjon                          |
 |-----------------------------------|----------------------------------------------------|
-| msdyn_inventoryadjustmentproducts |   Overskrifter og linjer i CDS-lagerjusteringsjournal |
-| msdyn_inventoryadjustmentproducts | Overskrifter og linjer i CDS-lageroverføringsjournal   |
+| msdyn_inventoryadjustmentproducts | Overskrifter og linjer i Dataverse-lagerjusteringsjournal |
+| msdyn_inventoryadjustmentproducts | Overskrifter og linjer i Dataverse-lageroverføringsjournal   |
 
-## <a name="entity-flow"></a>Enhetsflyt
+## <a name="table-flow"></a>Tabellflyt
 Lagerjusteringer og -overføringer som er gjort i Field Service, synkroniseres til Supply Chain Management etter at **Posteringsstatus** endres fra **Opprettet** til **Postert**. Når dette skjer, låses justeringen eller overføringsordren, og den blir skrivebeskyttet. Dette betyr at justeringer og overføringer kan posteres i Supply Chain Management, men de kan ikke endres. Du kan definere en satsvis jobb i Supply Chain Management for å postere justeringene og overføringene av lagerjournaler som er generert under integreringen. Se forutsetningene under for mer informasjon om hvordan du aktiverer den satsvise jobben.
 
 ## <a name="field-service-crm-solution"></a>CRM-løsning for Field Service 
-Feltet **Lagerenhet** er lagt til **Produkt**-enheten. Dette feltet er nødvendig ettersom salgs- og lagerenheten ikke alltid er den samme i Supply Chain Management, og lagerenheten kreves for lagerbeholdningen i Supply Chain Management.
-Når du angir produktet for et lagerjusteringsprodukt for både lagerjusteringer og lageroverføringer, hentes enheten fra lagerproduktverdien. Hvis en verdi blir funnet, låses **Enhet**-feltet på lagerjusteringsproduktet.
+Kolonnen **Lagerenhet** er lagt til i **Produkt**-tabellen. Denne kolonnen er nødvendig siden salgs- og lagerenheten ikke alltid er den samme i Supply Chain Management, og lagerenheten kreves for lagerbeholdningen i Supply Chain Management.
+Når du angir produktet for et lagerjusteringsprodukt for både lagerjusteringer og lageroverføringer, hentes enheten fra lagerproduktverdien. Hvis en verdi blir funnet, låses **Enhet**-kolonnen på lagerjusteringsproduktet.
 
-**Posteringsstatus**-feltet er lagt til både enheten **Lagerjustering** og **Lageroverføring**-enheten. Dette feltet brukes som filter når en justering eller overføring sendes til Supply Chain Management. Standarden for dette feltet er Opprettet (1), men den sendes ikke til Supply Chain Management. Når du oppdaterer verdien til Postert (2), sendes den til Supply Chain Management, men etter det vil du ikke lenger kunne endre justeringen eller overføringen eller legge til nye linjer.
+**Posteringsstatus**-kolonnen er lagt til i tabellene **Lagerjustering** og **Lageroverføring**. Denne kolonnen brukes som filter når en justering eller overføring sendes til Supply Chain Management. Standarden for denne kolonnen er Opprettet (1), men den sendes ikke til Supply Chain Management. Når du oppdaterer verdien til Postert (2), sendes den til Supply Chain Management, men etter det vil du ikke lenger kunne endre justeringen eller overføringen eller legge til nye linjer.
 
-Feltet **Nummerserie** er lagt til **Lagerjusteringprodukt**-enheten. Dette feltet sikrer at integreringen har et unikt nummer, slik at integreringen kan opprette og oppdatere justeringen. Når du oppretter det første lagerjusteringsproduktet, opprettes det en ny post i **P2C Autonummer**-enheten for å vedlikeholde nummerserien og prefikset som brukes.
+Kolonnen **Nummerserie** er lagt til tabellen **Lagerjusteringsprodukt**. Denne kolonnen sikrer at integreringen har et unikt nummer, slik at integreringen kan opprette og oppdatere justeringen. Når du oppretter det første lagerjusteringsproduktet, opprettes det en ny post i tabellen **P2C Autonummer** for å vedlikeholde nummerserien og prefikset som brukes.
 
 ## <a name="prerequisites-and-mapping-setup"></a>Forutsetninger og tilordningsdefinisjon
 
 ### <a name="supply-chain-management"></a>Forsyningskjedeadministrasjon
-Integreringslagerjournalene som genereres i integreringen, kan posteres automatisk med en satsvis jobb. Dette aktiveres fra **Lagerstyring > Periodiske oppgaver > CDS-integrering > Poster lagerjournaler for integrering**.
+Integreringslagerjournalene som genereres i integreringen, kan posteres automatisk med en satsvis jobb. Dette aktiveres fra **Lagerstyring > Periodiske oppgaver > Dataverse-integrering > Poster lagerjournaler for integrering**.
 
 ## <a name="template-mapping-in-data-integration"></a>Maltilordning i Dataintegrering
 
@@ -79,6 +80,3 @@ Følgende illustrasjoner viser en tilordning av malen i Dataintegrering.
 ### <a name="inventory-transfer-field-service-to-supply-chain-management-inventory-transfer"></a>Lageroverføring (Field Service til Supply Chain Management): Lageroverføring
 
 [![Maltilordning i Dataintegrering](./media/FSTrans1.png)](./media/FSTrans1.png)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
