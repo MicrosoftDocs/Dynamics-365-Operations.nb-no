@@ -1,7 +1,7 @@
 ---
 title: Angi og sammenligne tilbudsforespørsler og inngå kontrakter
 description: Dette emnet forklarer hvordan du registrerer svar på en tilbudsforespørsel, poengsum og sammenligner bud, og deretter gir kontrakten til én av leverandørene.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 07/09/2019
 ms.topic: business-process
@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: PurchRFQCaseTableListPage, PurchRFQCaseTable, PurchRFQReplyTable, PurchRFQCompare, PurchRFQEditLines, PurchRFQEditLinesParameters, PurchTable, PurchTablePart, PurchRFQCompareLinePrices, PurchRFQCompareRFQ
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ae7c43516fc90224439f6f7cfd5fd0a6058e8b39
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 3f14b95a71397bf5879c97654620e1d4c22a1149
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434837"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016684"
 ---
 # <a name="enter-and-compare-rfq-bids-and-award-contracts"></a>Angi og sammenligne tilbudsforespørsler og inngå kontrakter
 
@@ -52,7 +51,7 @@ Du kan angi budet som en leverandør eller en innkjøpsansvarlig. Hvis du vil ha
 
 ## <a name="enter-a-reply-from-a-vendor-as-a-procurement-professional"></a>Angi et svar fra en leverandør som innkjøpsansvarlig
 
-1. Kontroller at tillatelsen for å redigere leverandørbud er definert. Gå til **Innkjøp og leverandører** \> Oppsett \> Parametere for innkjøp og leverandører. I kategorien **Tilbudsforespørsler** setter du **Innkjøper kan redigere bud fra leverandører** til **Ja**.
+1. Kontroller at tillatelsen for å redigere leverandørbud er definert. Gå til **Innkjøp og leverandører** \> Oppsett \> Parametere for innkjøp og leverandører. I fanen **Tilbudsforespørsler** setter du **Innkjøper kan redigere bud fra leverandører** til **Ja**.
 2. Gå til **Innkjøp og leverandører \> Tilbudsforespørsler \> Alle tilbudsforespørsler**.
 3. Velg en tilbudsforespørsel som har statusen **Sendt**, og velg deretter koblingen i feltet **Tilfelle for tilbudsforespørsel**.
 4. Velg **Behandle svar**. Siden som vises, viser en tilbudsforespørsel for hver leverandør som ble invitert til å by.
@@ -74,7 +73,7 @@ Du kan angi budet som en leverandør eller en innkjøpsansvarlig. Hvis du vil ha
 
 ## <a name="compare-the-replies"></a>Sammenligne svarene
 
-1. Velg **Sammenlign svar** i kategorien **Generelt** i handlingsruten.
+1. Velg **Sammenlign svar** i fanen **Generelt** i handlingsruten.
 2. Angi et tall i **rangeringsfeltet**.  
     - Denne siden viser bud sammen med overskrifts- og linjeinformasjon, og også den samlede poengsummen på overskriftsnivå. Du kan sammenligne linjene ved å sortere rutenettet, slik at tilsvarende linjer er ved siden av hverandre. Følgende informasjon er også inkludert:
     - **Antall** – Tilbudt antall fra leverandøren. Dette antallet kan være ulikt antallet som er angitt i tilbudsforespørselen.
@@ -106,7 +105,4 @@ Du kan angi budet som en leverandør eller en innkjøpsansvarlig. Hvis du vil ha
 
 ## <a name="view-the-purchase-order-that-is-generated"></a>Vise bestillingen som er generert
 
-Velg **Bestilling** i kategorien **Generelt** i handlingsruten. Siden som vises, angir bestillingen som ble generert da du godtok budet.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+Velg **Bestilling** i fanen **Generelt** i handlingsruten. Siden som vises, angir bestillingen som ble generert da du godtok budet.

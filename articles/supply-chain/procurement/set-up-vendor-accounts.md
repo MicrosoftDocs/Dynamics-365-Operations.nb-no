@@ -1,7 +1,7 @@
 ---
 title: Definere leverandørkontoer
 description: Dette emnet beskriver hva slags type informasjon du må spesifisere når du oppretter en ny leverandørkonto.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: smmContactPerson, VendBankAccounts, VendTable, VendOnHoldUpdate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 191053
 ms.assetid: 06168199-7c54-40e9-a038-4eb274ca958d
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cc5229918c89657f3108e1c2314dff8251eae93d
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: e2923dd3f051013fdd5b4f4717a6c954453ccdcf
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434784"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016583"
 ---
 # <a name="set-up-vendor-accounts"></a>Definere leverandørkontoer
 
@@ -42,7 +41,7 @@ Når du oppretter en leverandørkonto, angir du opplysninger om leverandøren. D
 -   Konfigurer informasjon om mva, faktura og betaling for leverandøren. Disse innstillingene kopieres som standard til nye dokumenter som du oppretter for leverandøren.
 -   Konfigurer finansdimensjoner som brukes til automatisk postering av transaksjoner for leverandøren til finanskontoer.
 
-Hvis du vil gjøre det raskere å opprette leverandørkontoer, kan du opprette maler. Du kan opprette en mal på **Leverandør**-siden i handlingsruten ved å klikke på **Alternativer** &gt; **Postinformasjon**. Klikk deretter **Firmakontomal**. Firmakontomaler deles med andre brukere.  
+Hvis du vil gjøre det raskere å opprette leverandørkontoer, kan du opprette maler. Du kan opprette en mal på **Leverandør**-siden i handlingsruten ved å klikke på **Alternativer** &gt; **Postinformasjon**. Klikk på deretter **Firmakontomal**. Firmakontomaler deles med andre brukere.  
 
 Du kan også opprette en brukermal til eget bruk. Du kan ikke slette en leverandør som er knyttet til andre oppføringer, for eksempel kontakter eller produkter.
 
@@ -58,7 +57,7 @@ Du kan definere flere adresser som brukes til forskjellige formål, for hver lev
 ## <a name="vendor-contacts"></a>Leverandørkontakter
 Du kan lagre kontakter for en leverandør. Disse kontaktene kan brukes på dokumenter som bestillinger eller tilbudsforespørsler.  
 
-Hvis du vil legge til kontakter for en leverandør, går du til **Alle leverandører**-siden i kategorien **Leverandør** i **Oppsett**-gruppen, og klikker på **Kontakter** &gt; **Legg til kontakter**.  
+Hvis du vil legge til kontakter for en leverandør, går du til **Alle leverandører**-siden i fanen **Leverandør** i **Oppsett**-gruppen, og klikker på **Kontakter** &gt; **Legg til kontakter**.  
 
 Du kan opprette leverandørkontakter fra grunnen av. Du kan også kopiere informasjon fra en annen person som allerede er registrert i Supply Chain Management, og redigere informasjonen etter behov.  
 
@@ -76,7 +75,7 @@ Hvis flere juridiske enheter innenfor organisasjonen gjør forretninger med den 
 Hvis du vil flette part-ID-er, kan du følge disse trinnene.
 
 1.  På siden **Global adressebok** velger du postene i adresseboken som representerer leverandøren i hver juridiske enhet som skal tas med i tilordningen.
-2.  Klikk **Flett poster** i handlingsruten.
+2.  Klikk på **Flett poster** i handlingsruten.
 
 ## <a name="agreements"></a>Avtaler
 Når du setter opp en leverandørkonto, kan det også være at du vil registrere avtalene du har med leverandøren. Du kan definere avtalene for pris og rabatt ved hjelp av handlingene på leverandørposten. Du kan også definere en kjøpsavtale på **Kjøpsavtaler**-siden.
@@ -114,10 +113,7 @@ Hvis du må betale til en leverandørbankkonto, kan du angi informasjon om lever
 ## <a name="ledger-accounts"></a>Finanskontoer
 Du kan angi standardkontoene som vises automatisk i leverandørfakturajournaler for den angitte leverandøren. Denne funksjonaliteten kan være nyttig hvis du vanligvis betaler for samme type ting eller tjenester fra de samme leverandørene over tid. Når du angir en standardkonto, kan du raskt og effektivt angi journaloppføringer i fakturajournalen. Standardkontoene du angir, brukes ikke for bestillinger eller for leverandørfakturaer som angis på **Leverandørfaktura**-siden.  
 
-Du velger standardkontoer på siden **Standard kontooppsett** som du kan åpne fra **Faktura**-kategorien i leverandørposten. Kontoene som du velger her, vises i den filtrerte listen over kontoer for leverandørkontoen, når du angir en journaloppføring. Du kan angi én av kontoene som standardkonto.
+Du velger standardkontoer på siden **Standard kontooppsett** som du kan åpne fra **Faktura**-fanen i leverandørposten. Kontoene som du velger her, vises i den filtrerte listen over kontoer for leverandørkontoen, når du angir en journaloppføring. Du kan angi én av kontoene som standardkonto.
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

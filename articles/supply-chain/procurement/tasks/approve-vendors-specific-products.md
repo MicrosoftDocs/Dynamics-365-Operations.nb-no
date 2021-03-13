@@ -1,7 +1,7 @@
 ---
 title: Godkjenne leverandører for bestemte produkter
 description: Denne fremgangsmåten viser hvordan du godkjenner leverandører for bestemte produkter.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 07/22/2019
 ms.topic: business-process
@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: EcoResProductDetailsExtended, PdsApprovedVendorList, VendTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fafa2f7da5575206d452f31bb297790874369dfd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1cc7d8a93bdbdb5a1446fc34beff4b74aa9d11a0
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434354"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016659"
 ---
 # <a name="approve-vendors-for-specific-products"></a>Godkjenne leverandører for bestemte produkter
 
@@ -31,14 +30,14 @@ Denne fremgangsmåten viser hvordan du godkjenner leverandører for bestemte pro
 
 1. I navigasjonsruten går du til **Moduler > Behandling av produktinformasjon > Produkter > Frigitte produkter**.
 2. Finn og velg ønsket post i listen.
-3. Klikk koblingen i den valgte raden i listen.
+3. Klikk på koblingen i den valgte raden i listen.
 4. Vis hurtigfanen **Innkjøp**. Hvis det finnes en hovedleverandør i **Leverandør**-feltet, må du legge til denne leverandøren som en godkjent leverandør i fremgangsmåten nedenfor. Noter nummeret til leverandøren, hvis det vises et.  
-5. Klikk **Innkjøp** i handlingsruten.
+5. Klikk på **Innkjøp** i handlingsruten.
 6. Klikk på **Oppsett**.
-7. Klikk **Legg til**.
+7. Klikk på **Legg til**.
 8. Angi eller velg en verdi i feltet Leverandør. Velg den godkjente leverandøren. Minst én av linjene må være hovedleverandøren, hvis det var en i produktposten. Hvis du har notert nummeret til leverandøren tidligere, kan du angi det her.  
 9. Angi en dato i **Utløp**-feltet. Velg en dato som er et par måneder fremover.  
-10. Klikk **Legg til**.
+10. Klikk på **Legg til**.
 11. Angi eller velg en verdi i feltet **Leverandør**.
 12. Angi en dato i **Utløp**-feltet. Velg en dato som er forskjellig fra forrige utløpsdato.  
 13. Lukk siden.
@@ -48,9 +47,9 @@ Denne fremgangsmåten viser hvordan du godkjenner leverandører for bestemte pro
 17. Klikk på **Gyldig periode** i handlingsruten.
 18. Angi en dato i feltet **Vis leverandører utløpt etter**. Du kan bruke denne siden til å identifisere leverandører med godkjenningsstatus som utløper etter en bestemt dato.  
 19. Lukk siden.
-20. Klikk **Rediger**.
+20. Klikk på **Rediger**.
 21. Velg et alternativ i feltet **Godkjent leverandørkontrollmetode**. Dette feltet lar deg velge policyen for hva som skal skje hvis produktet blir lagt til en bestillingslinje der leverandøren ikke er en godkjent leverandør.  
-22. Klikk **Lagre**.
+22. Klikk på **Lagre**.
 23. Lukk siden.
 24. Lukk siden.
 25. I navigasjonsruten går du til **Moduler > Innkjøp og leverandører > Leverandører > Leverandør-/varerelasjoner > Liste over godkjente leverandører etter vare**. Denne siden gir deg en oversikt over alle produkter og godkjente leverandører.  
@@ -62,6 +61,3 @@ Denne fremgangsmåten viser hvordan du godkjenner leverandører for bestemte pro
 31. Lukk siden.
 32. Lukk siden.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

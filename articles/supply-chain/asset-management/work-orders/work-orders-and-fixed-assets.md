@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: ca7a5d88de4308d7be9c1bc749b9dbf1da027c2c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4eadbdc452a5b7d28adfa0f102a9a727faad3c07
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434617"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016709"
 ---
 # <a name="work-orders-and-fixed-assets"></a>Arbeidsordrer og anleggsmidler
 
@@ -49,7 +48,7 @@ Følgende fremgangsmåte beskriver forholdet mellom aktiva, arbeidsordrer, arbei
 
 ![Figur 3](media/26-work-orders.png)
 
-3. Når du definerer prosjektgrupper for arbeidsordrer i kategorien **Prosjektgruppe** på siden **Prosjektoppsett for arbeidsordre** (**Aktivastyring** > **Oppsett** > **Arbeidsordrer** > **Prosjektoppsett**), oppretter du en relasjon mellom arbeidsordretypen som brukes for investeringer, og prosjektgruppen som ble opprettet for investeringer på siden **Prosjektgrupper** i modulen **Prosjektstyring og regnskap** (**Prosjektstyring og regnskap** > **Oppsett** > **Postering** > **Prosjektgrupper**).
+3. Når du definerer prosjektgrupper for arbeidsordrer i fanen **Prosjektgruppe** på siden **Prosjektoppsett for arbeidsordre** (**Aktivastyring** > **Oppsett** > **Arbeidsordrer** > **Prosjektoppsett**), oppretter du en relasjon mellom arbeidsordretypen som brukes for investeringer, og prosjektgruppen som ble opprettet for investeringer på siden **Prosjektgrupper** i modulen **Prosjektstyring og regnskap** (**Prosjektstyring og regnskap** > **Oppsett** > **Postering** > **Prosjektgrupper**).
 
 ![Figur 4](media/27-work-orders.png)
 
@@ -59,12 +58,9 @@ Følgende fremgangsmåte beskriver forholdet mellom aktiva, arbeidsordrer, arbei
 
 ![Figur 5](media/28-work-orders.png)
 
-6. Når arbeidsordren opprettes, opprettes prosjektet som er knyttet til arbeidsordren, på siden **Alle prosjekter** i modulen **Prosjektstyring og regnskap** (**Prosjektstyring og regnskap** > **Prosjekter** > **Alle prosjekter**). Hvis du vil vise prosjektrelatert informasjon, velger du koblingen i feltet **Prosjekt-ID** i kategorien **Generelt** i hurtigfanen **Linjedetaljer** i detaljvisningen på siden **Alle arbeidsordrer** i modulen **Aktivabehandling** (**Aktivabehandling** > **Felles** > **Arbeidsordrer** > **Alle arbeidsordrer**).
+6. Når arbeidsordren opprettes, opprettes prosjektet som er knyttet til arbeidsordren, på siden **Alle prosjekter** i modulen **Prosjektstyring og regnskap** (**Prosjektstyring og regnskap** > **Prosjekter** > **Alle prosjekter**). Hvis du vil vise prosjektrelatert informasjon, velger du koblingen i feltet **Prosjekt-ID** i fanen **Generelt** i hurtigfanen **Linjedetaljer** i detaljvisningen på siden **Alle arbeidsordrer** i modulen **Aktivabehandling** (**Aktivabehandling** > **Felles** > **Arbeidsordrer** > **Alle arbeidsordrer**).
 
 ![Figur 6](media/29-work-orders.png)
 
 7. Hvis du vil se en oversikt over prosjektene som er knyttet til et anleggsmiddel, velger du **Anleggsmidler** > **Anleggsmidler** > **Anleggsmidler** og deretter, i feltet **Anleggsmidlets nummer**, velger du koblingen til anleggsmidlet for å åpne detaljvisningen. Utvid ruten **Beslektet informasjon** til høyre på siden, og velg hurtigfanen **Tilknyttede prosjekter**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
