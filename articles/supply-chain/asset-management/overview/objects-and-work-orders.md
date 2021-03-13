@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5c2500a695fcffe0d60ac13b1b74cda4322b0e14
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0cddb0a25286c8ce9d72aef0b835809705ad577a
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434450"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020945"
 ---
 # <a name="assets-and-work-orders"></a>Aktiva og arbeidsordrer
 
@@ -43,7 +42,7 @@ Følgende illustrasjon viser en oversikt over nøkkeldataene i en arbeidsordre.
 
 ![Diagram som viser nøkkeldata i en arbeidsordre](media/06-overview-image.png)
 
-En arbeidsordre kan knyttes til en annen arbeidsordre, og jobbtyper kan inneholde etterfølgende jobber som oppretter en arbeidsordre. Generelt er det ingen avhengigheter mellom arbeidsordrer. De kan derfor endre livsløpstilstanden for arbeidsordrer og kan planlegges uavhengig av hverandre.
+En arbeidsordre kan knyttes til en annen arbeidsordre, og jobbtyper kan inneholde etterfølgende jobber som oppretter en arbeidsordre. Generelt er det ingen avhengigheter mellom arbeidsordrer. De kan derfor endre livssyklustilstanden for arbeidsordrer og kan planlegges uavhengig av hverandre.
 
 Arbeidsordrer kan opprettes på forskjellige måter som er relatert til korrigerende, forebyggende eller reaktivt vedlikehold. Du kan også opprette arbeidsordrer manuelt. Illustrasjonen nedenfor viser en oversikt over prosessen for automatisk eller manuell oppretting av arbeidsordrer.
 
@@ -55,6 +54,3 @@ Du må fylle ut flere trinn når du vil planlegge og kjøre en vedlikeholdsjobb 
 
 > [!NOTE]
 > Generelt, når du arbeider i Dynamics 365 Supply Chain Management og **Aktivastyring**-modulen, velger du **Ny** for å opprette en ny post, du velger **Rediger** for å oppdatere en eksisterende post, og du velger **Lagre** for å lagre nye eller redigerte data.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

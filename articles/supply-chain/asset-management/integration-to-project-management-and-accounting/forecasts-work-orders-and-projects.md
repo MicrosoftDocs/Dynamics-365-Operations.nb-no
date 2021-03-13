@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetWorkOrderProjCostInfoPart
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9e6d20d1538ea68570d6dcc49da001ad76b8042b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f062b5463b54e9bcf32ed6f17263811c4bb24138
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434296"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021036"
 ---
 # <a name="forecasts-work-orders-and-projects"></a>Prognoser, arbeidsordrer og prosjekter
 
@@ -35,7 +34,7 @@ I Aktivastyring bidrar integreringen med modulen **Prosjektstyring og regnskap**
 
 Sporing av prognoser for vedlikeholdsjobbtype krever to innstillinger:
 
-1. Velg et prosjekt i **Aktivabehandling** > **Oppsett** > **Aktivabehandlingsparametere**, og deretter velger du et prosjekt i kategorien **Aktiva** > på hurtigfanen **Prosjekt** i feltet **Vedlikeholdsprognoseprosjekt**.
+1. Velg et prosjekt i **Aktivabehandling** > **Oppsett** > **Aktivabehandlingsparametere**, og deretter velger du et prosjekt i fanen **Aktiva** > på hurtigfanen **Prosjekt** i feltet **Vedlikeholdsprognoseprosjekt**.
 
 2. Når du oppretter en standardlinje for vedlikeholdsjobbtype, opprettes automatisk et aktivitetsnummer for linjen på siden **Standarder for vedlikeholdsjobbtype** (**Aktivastyring** > **Oppsett** > **Jobber** > **Standarder for vedlikeholdsjobbtype**).
 
@@ -53,7 +52,7 @@ Når du oppretter en arbeidsordrejobb i en arbeidsordre, bestemmes arbeidsordrep
 Arbeidsordrejobbprosjekter opprettes ved å bruke en kombinasjon av følgende arbeidsordreinformasjon:
 
 - Arbeidsordretypen som er valgt i arbeidsordren 
-- Den funksjonelle lokasjonen som er knyttet til aktivaet i arbeidsordrejobben
+- Den funksjonelle lokasjonen som er knyttet til aktivumet i arbeidsordrejobben
 - Aktivatypen som er knyttet til aktivumet i arbeidsordrejobben  
 - De forventede start- og sluttidspunktene som er angitt for arbeidsordren  
 
@@ -75,16 +74,16 @@ Prosjektaktiviteten som opprettes for en arbeidsordrejobb, har relatert informas
 
 Hvis anleggsmiddelet ble installert på et arbeidssted, men senere installeres på et annet arbeidssted, oppdateres finansdimensjonene som er knyttet til det nye arbeidsstedet, automatisk i anleggsmiddelet. Når du deretter oppretter en arbeidsordrejobb for anleggsmiddelet, får arbeidsordreprosjektet for arbeidsordrejobben automatisk finansdimensjonene som nå er knyttet til anleggsmiddelet. Når du bruker arbeidssteder, kan kostnader derfor alltid spores på arbeidssteder der et aktivum ble installert på et gitt tidspunkt. Den automatiske oppdateringen av finansdimensjoner bidrar til å sikre fullstendig sporing av kostnader for prosjektkontroll og -rapportering.
 
-## <a name="work-order-projects-work-order-lifecycle-states-project-stages-and-project-types"></a>Arbeidsordreprosjekter, livsløpstilstander for arbeidsordre, prosjektstadier og prosjekttyper
+## <a name="work-order-projects-work-order-lifecycle-states-project-stages-and-project-types"></a>Arbeidsordreprosjekter, livssyklustilstander for arbeidsordre, prosjektstadier og prosjekttyper
 
-For å bidra til å sikre riktig bruk av livsløpstilstander for arbeidsordre og tilknyttede prosjektstadier på arbeidsordrer, bør du vurdere avhengighetene i relasjon til modulen **Prosjektstyring og regnskap**:
+For å bidra til å sikre riktig bruk av livssyklustilstander for arbeidsordre og tilknyttede prosjektstadier på arbeidsordrer, bør du vurdere avhengighetene i relasjon til modulen **Prosjektstyring og regnskap**:
 
 - I modulen **Prosjektstyring og regnskap** er prosjektstadier definert for prosjekttyper på siden **Parametere for prosjektstyring og regnskap**.  
 - På siden **Parametere for prosjektstyring og regnskap** må du huske å merke av i avmerkingsbokser for relevante prosjektfaser for alle prosjekttypene du vil bruke. I illustrasjonene nedenfor er de fem trinnene stadiene (**Opprettet**, **Estimert**, **Planlagt**, **Pågår** og **Fullført**) valgt for prosjekttypene **Tid og materialer** og **Intern**. Disse fem stadiene er relevante for både interne vedlikeholdsjobber og servicevedlikeholdsjobber.
-- I modulen **Aktivastyring** defineres prosjekttyper av prosjektgruppene som du definerte på siden **Prosjektoppsett for arbeidsordre** > kategorien **Prosjektgruppe** (**Aktivastyring** > **Oppsett** > **Arbeidsordrer** > **Prosjektoppsett**).  
+- I modulen **Aktivastyring** defineres prosjekttyper av prosjektgruppene som du definerte på siden **Prosjektoppsett for arbeidsordre** > fanen **Prosjektgruppe** (**Aktivastyring** > **Oppsett** > **Arbeidsordrer** > **Prosjektoppsett**).  
 - Oppsettet av prosjektgrupper på siden **Prosjektoppsett for arbeidsordre** brukes når du oppretter arbeidsordrer. Når en ny arbeidsordre blir opprettet, opprettes det automatisk et arbeidsordreprosjekt for et arbeidsordren.  
 - Hver livssyklustilstand for arbeidsordre må ha et tilknyttet prosjektstadium.  
-- Prosjektstadiet som er knyttet til en livsløpstilstand for arbeidsordre, må defineres som en aktiv fase for prosjektgruppen som er definert i arbeidsordreprosjektet. Arbeidsordreprosjektet opprettes automatisk i en arbeidsordre.
+- Prosjektstadiet som er knyttet til en livssyklustilstand for arbeidsordre, må defineres som en aktiv fase for prosjektgruppen som er definert i arbeidsordreprosjektet. Arbeidsordreprosjektet opprettes automatisk i en arbeidsordre.
 - Når du oppretter en ny arbeidsordre, er den automatiske tilordningen av et arbeidsordreprosjekt basert på oppsettet på siden **Prosjektoppsett for arbeidsordre**.  
 
 Illustrasjonene nedenfor viser tilknytningene mellom arbeidsordreprosjektgrupper, tilknyttede prosjekttyper, prosjektstadier og livssyklustilstander for arbeidsordre.
@@ -101,6 +100,3 @@ Illustrasjonen nedenfor viser en grafisk oversikt over de ulike prosjektene som 
 
 ![Figur 6](media/06-integration-to-pma.png)
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

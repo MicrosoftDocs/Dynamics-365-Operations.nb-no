@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetWorkOrderType
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b8e43908e3f13c9e4fd6fab6f1e17a171866b803
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9111ffa552059883696cf8248a02dfe70bc12ee7
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434512"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021535"
 ---
 # <a name="work-order-types"></a>Arbeidsordretyper
 
@@ -41,8 +40,8 @@ Hvis du vil ha mer informasjon om livssyklustilstander for arbeidsordrer og pros
 2. Velg **Ny** for å opprette en ny arbeidsordretype.
 3. Angi en ID for arbeidsordretypen i feltet **Arbeidsordretype**.
 4. Angi et navn i **Navn**-feltet.
-5. Velg en livsløpsmodell i feltet **Livsløpsmodell for arbeidsordre**.
-5. Sett alternativet **Én vedlikeholdsperson** til **Ja** hvis alle arbeidsordrejobber som er relatert til en arbeidsordre av denne typen, skal planlegges til samme vedlikeholdsarbeider.
+5. Velg en livssyklusmodell i feltet **Livssyklusmodell for arbeidsordre**.
+5. Sett alternativet **Én vedlikeholdsperson** til **Ja** hvis alle arbeidsordrejobber som er relatert til en arbeidsordre av denne typen, skal planlegges til samme vedlikeholdsperson.
 6. I **Kostnadstype**-feltet velger du **Korrektiv**, **Forebyggende** eller **Investering** etter behov. Alle arbeidsordrejobber i en arbeidsordre må ha samme kostnadstype.
 7. I **Obligatorisk**-delen setter du de relevante alternativene til **Ja** for å angi hvilken feilrelatert eller vedlikeholdsnedetidrelatert informasjon som legges til en arbeidsordre av denne typen.
 
@@ -52,6 +51,3 @@ Hvis du vil ha mer informasjon om livssyklustilstander for arbeidsordrer og pros
 8. Velg **Lagre**.
 
 ![Arbeidsordretyper](media/16-setup-for-work-orders.png)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

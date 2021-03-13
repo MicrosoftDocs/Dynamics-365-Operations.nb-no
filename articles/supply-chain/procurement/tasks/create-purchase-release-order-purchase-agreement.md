@@ -1,7 +1,7 @@
 ---
 title: Opprette en frigivelsesordre for innkjøp fra en innkjøpsavtale
 description: Denne fremgangsmåten viser hvordan du bruker en kjøpsavtale når du oppretter en bestilling.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 08/09/2019
 ms.topic: business-process
@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ee0c40dfc3c820343c7054238cc2da47e8203d59
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7c095eaf1a93d6f1a803c6c9618c930fb2eda2d2
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434349"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021070"
 ---
 # <a name="create-a-purchase-release-order-from-a-purchase-agreement"></a>Opprette en frigivelsesordre for innkjøp fra en innkjøpsavtale
 
@@ -32,20 +31,20 @@ Denne fremgangsmåten viser hvordan du bruker en kjøpsavtale når du oppretter 
 ## <a name="create-a-purchase-order"></a>Opprette en bestilling
 1. I **navigasjonsruten** går du til **Arbeidsområder > Bestillingsklargjøring**. 
 2. Klikk på **Ny bestilling**.
-3. Klikk rullegardinknappen i **Leverandørkonto**-feltet for å åpne oppslaget.
+3. Klikk på rullegardinknappen i **Leverandørkonto**-feltet for å åpne oppslaget.
 4. Finn og velg ønsket post i listen.
-5. Klikk koblingen i den valgte raden i listen.
+5. Klikk på koblingen i den valgte raden i listen.
 6. Vis hurtigfanen **Generelt**.
-7. Klikk rullegardinknappen i feltet **Kjøpsavtale** for å åpne oppslaget. Alle tilgjengelige avtaler for leverandøren vises her. Finn den gyldige avtalen du vil bruke.  
-8. Klikk koblingen i den valgte raden i listen.
-9. Klikk **Ja**.
-10. Klikk **OK**.
+7. Klikk på rullegardinknappen i feltet **Kjøpsavtale** for å åpne oppslaget. Alle tilgjengelige avtaler for leverandøren vises her. Finn den gyldige avtalen du vil bruke.  
+8. Klikk på koblingen i den valgte raden i listen.
+9. Klikk på **Ja**.
+10. Klikk på **OK**.
 
 ## <a name="add-a-line"></a>Legge til en linje
 1. Skriv inn en verdi i **Varenummer**-feltet. Hvis det finnes bestemte dimensjoner for lager eller lokasjon for forpliktelsen, må du angi de samme verdiene på bestillingslinjen for å ta i bruk avtalen.  
-2. Klikk rullegardinknappen i **Område**-feltet for å åpne oppslaget. Området kan allerede være fylt ut med standardverdien fra bestillingen, eller fra leverandøren. Hvis dette er tilfelle, kan du hoppe over dette trinnet.  
+2. Klikk på rullegardinknappen i **Område**-feltet for å åpne oppslaget. Området kan allerede være fylt ut med standardverdien fra bestillingen, eller fra leverandøren. Hvis dette er tilfelle, kan du hoppe over dette trinnet.  
 3. Finn og velg ønsket post i listen.
-4. Klikk koblingen i den valgte raden i listen.
+4. Klikk på koblingen i den valgte raden i listen.
 5. Angi et tall i **Antall**-feltet. Valider at prisen er kopiert fra forpliktelsen.  
 
 ## <a name="look-up-the-commitment"></a>Slå opp forpliktelsen
@@ -59,6 +58,3 @@ Denne fremgangsmåten viser hvordan du bruker en kjøpsavtale når du oppretter 
 3. Lukk siden.
 4. Lukk siden.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

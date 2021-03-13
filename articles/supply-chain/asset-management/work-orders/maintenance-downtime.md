@@ -1,6 +1,6 @@
 ---
 title: Nedetid ved vedlikehold for arbeidsordrer
-description: Dette emnet beskriver hvordan du oppretter registreringer av nedetid ved vedlikehold for aktivaet som er valgt i en arbeidsordre.
+description: Dette emnet beskriver hvordan du oppretter registreringer av nedetid ved vedlikehold for aktivumet som er valgt i en arbeidsordre.
 author: josaw1
 manager: tfehr
 ms.date: 10/15/2019
@@ -11,26 +11,25 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 263a044a0a378e95ea271ac1c6f468f9e3287f26
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 53487a0173453ef7a8f5ea818672d999fe71cb65
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434227"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020917"
 ---
 # <a name="maintenance-downtime-for-work-orders"></a>Nedetid ved vedlikehold for arbeidsordrer
 
 [!include [banner](../../includes/banner.md)]
 
 
-Du kan opprette registreringer av nedetid ved vedlikehold for aktivaet som er valgt i en arbeidsordre. Denne funksjonen er nyttig hvis du vil registrere vedlikeholdsnedetid på én eller flere maskiner i produksjonsområdet. Først oppretter du årsakskodene for vedlikeholdsnedetid du vil bruke, for eksempel **Stopp** og **Planlagt stopp**. Dette trinnet utføres på siden **Årsakskoder for nedetid ved vedlikehold**. Du kan deretter opprette registreringer for nedetid ved vedlikehold på siden **Nedetid ved vedlikehold** og legge til de aktuelle årsakskodene for nedetiden.
+Du kan opprette registreringer av nedetid ved vedlikehold for aktivumet som er valgt i en arbeidsordre. Denne funksjonen er nyttig hvis du vil registrere vedlikeholdsnedetid på én eller flere maskiner i produksjonsområdet. Først oppretter du årsakskodene for vedlikeholdsnedetid du vil bruke, for eksempel **Stopp** og **Planlagt stopp**. Dette trinnet utføres på siden **Årsakskoder for nedetid ved vedlikehold**. Du kan deretter opprette registreringer for nedetid ved vedlikehold på siden **Nedetid ved vedlikehold** og legge til de aktuelle årsakskodene for nedetiden.
 
 ## <a name="create-maintenance-downtime-reason-codes"></a>Opprette årsakskoder for nedetid ved vedlikehold
 
@@ -57,7 +56,7 @@ Når du har opprettet årsakskodene for vedlikeholdsnedetid som du vil bruke, ka
 
 1. Klikk på **Aktivastyring** > **Felles** > **Arbeidsordrer** > **Alle arbeidsordrer** eller **Aktive arbeidsordrer**.
 
-2. Velg arbeidsordren, og deretter går du til kategorien **Arbeidsordre** i gruppen **Aktivum** og velger **Nedetid ved vedlikehold**.
+2. Velg arbeidsordren, og deretter går du til fanen **Arbeidsordre** i gruppen **Aktivum** og velger **Nedetid ved vedlikehold**.
 
 3. Velg **Ny**.
 
@@ -89,6 +88,3 @@ Klikk på **Aktivabehandling** > **Forespørsler** > **Nedetid ved vedlikehold**
 >[!NOTE]
 >Alle kalendere som brukes i modulen **Aktivastyring**, defineres i **Organisasjonsstyring** > **Oppsett** > **Kalendere** > **Kalendere**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

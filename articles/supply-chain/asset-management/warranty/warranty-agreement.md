@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f049165fd12dfae672293e0c30ddb186ad3ed12c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7080af2059c9c9bcdd11ca0ee9c5e339cef69302
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434548"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021510"
 ---
 # <a name="warranty-agreements"></a>Garantiavtaler
 
@@ -55,6 +54,3 @@ En garantiavtale kan inkludere flere avtalelinjer for å dekke garantien for arb
     4. I **Prosent**-feltet angir du dekningsprosenten for garantilinjen. Prosentsatsen viser hvor mye som dekkes av firmaet.
 
 ![Garantiside](media/01-warranty.png)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

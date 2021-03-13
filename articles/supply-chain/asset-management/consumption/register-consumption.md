@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetWorkOrderJournal, EntAssetWorkOrderAddSparePart
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 2c9bbd51da23ea412bc124f932f73876a9506d47
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ea1522f8a8e4867d8d70fea59b493d139a1b01ef
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434522"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020787"
 ---
 # <a name="register-consumption"></a>Registrere forbruk
 
@@ -50,7 +49,7 @@ I noen tilfeller kan du legge til eller slette prognoselinjer i en arbeidsordre.
 
 6. Klikk på **Poster journaler** for å postere journallinjene.
 
-7. Når du har postert forbruksjournalene, kan du oppdatere livssyklusstatusen for arbeidsordren. Hvis du for eksempel vil angi at arbeidsordren er fullført, kan du oppdatere livssyklusstatusen til "Avsluttet".
+7. Når du har postert forbruksjournalene, kan du oppdatere livssyklustilstanden for arbeidsordren. Hvis du for eksempel vil angi at arbeidsordren er fullført, kan du oppdatere livssyklustilstanden til "Avsluttet".
 
     - I **Vis**-feltet som er plassert øverst på siden **Arbeidsordrejournaler**, velger du hvilke journallinjer du vil vise: **Alle**, **Ikke postert** eller **Postert**. Posterte journaler har en hake i avmerkingsboksen **Postert**.  
     - Når varelinjer opprettes i arbeidsordrejournalen, blir produktdimensjoner og sporingsdimensjoner som er knyttet til varen, automatisk overført til journallinjen.  
@@ -78,7 +77,7 @@ Hvis en arbeidsordre inneholder flere arbeidsordrejobber, kan du registrere arbe
 
     ![Figur 2](media/02-consumption.png)
 
-7. Klikk **OK**.
+7. Klikk på **OK**.
 
 *Eksempel:* I skjermbildet nedenfor vises journallinjer for en arbeidsordre som inneholder tre arbeidsordrejobber. Den første linjen som inneholder tre arbeidstimer, er delt, og én arbeidstime er registrert på hver arbeidsordrejobb. Når de tre timeregistreringslinjene er opprettet, bestemmer du hva du skal gjøre med den opprinnelige timeregistreringslinjen (den første linjen i eksemplet). Du kan beholde den slik den er, eller slette den. 
 
@@ -95,6 +94,3 @@ Når du utfører forbruksregistreringer, legges finansdimensjoner som er knyttet
 >[!NOTE]
 >For alle tre registreringstypene valideres finansdimensjonskombinasjonen, og ugyldige kombinasjoner er tomme. Dette er standard oppsett med andre Finance and Operations-apper.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

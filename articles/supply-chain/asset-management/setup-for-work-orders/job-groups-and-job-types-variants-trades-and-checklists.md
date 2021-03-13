@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetJobTypeDefaultForecast, EntAssetJobTrade, EntAssetJobTypeDefaultCopy, EntAssetChecklistVariableValueLookup, EntAssetChecklistTemplateCreate, EntAssetJobVariant, EntAssetJobTypeDefaultReference, EntAssetJobTypeDefaultChecklist, EntAssetJobTypeDefault, EntAssetJobType, EntAssetJobTypeDefaultChecklistCopy, EntAssetChecklistTemplate, EntAssetJobTypeDefaultDescription, EntAssetJobTypeLookup, EntAssetJobTypeDefaultToolCopy, EntAssetJobTypePreviewPart, EntAssetJobTypeDefaultTool, EntAssetJobTypeDefaultForecastCopy, EntAssetChecklistTemplateLookup, EntAssetJobGroup, EntAssetChecklistVariable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8bf7c53a6150a2beeca5c6e9b5ab4ea98584158d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a335d642457fdd84ec42e285425fdc6212889cc0
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434390"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021290"
 ---
 # <a name="maintenance-job-type-categories-and-maintenance-job-types-maintenance-job-type-variants-maintenance-job-trades-and-maintenance-checklists"></a>Kategorier for vedlikeholdsjobbtyper og vedlikeholdsjobbtyper, varianter av vedlikeholdsjobbtyper, vedlikeholdsjobbfag og sjekklister for vedlikehold
 
@@ -31,7 +30,7 @@ ms.locfileid: "4434390"
 
  
 
-En aktivatype er knyttet til hvert aktiva. Aktivatyper definerer vedlikeholdsjobbtypene (og dermed vedlikeholdsjobbene) som kan utføres på aktiva. Når du oppretter en arbeidsordre, må du velge en vedlikeholdsjobbtype. Du kan bare velge vedlikeholdsjobbtypene som er relatert til oppsettet for aktivatypen som brukes for aktivaet.
+En aktivatype er knyttet til hvert aktiva. Aktivatyper definerer vedlikeholdsjobbtypene (og dermed vedlikeholdsjobbene) som kan utføres på aktiva. Når du oppretter en arbeidsordre, må du velge en vedlikeholdsjobbtype. Du kan bare velge vedlikeholdsjobbtypene som er relatert til oppsettet for aktivatypen som brukes for aktivumet.
 
 Hvis du vil ha en grafisk oversikt over aktiva og vedlikeholdsjobbtyper og deres tilknytning til arbeidsordrer, kan du se [Arbeidssteder og aktiva](../overview/functional-locations-and-objects.md).
 
@@ -140,7 +139,7 @@ Maler for vedlikeholdssjekklister kan brukes som et felles sett med oppgaver som
     - **Måling** – Linjen brukes til å registrere en bestemt måling. Du kan definere målingen som skal knyttes til en forhåndsdefinert teller. Når du har valgt denne typen, skriver du inn et navn på malen i **Navn**-feltet. Hvis dette trinnet er obligatorisk for vedlikeholdssjekklisten, setter du alternativet **Obligatorisk** til **Ja**. Hvis du vil bruke målelinjen som en tellerregistrering, velger du telleren i **Teller**-feltet. Det tilknyttede **Enhet**-feltet oppdateres deretter automatisk. Hvis du har valgt en teller, velger du oppdateringsmetoden i **Verdi**-feltet. I feltene **Minimumsverdi** og **Maksimumsverdi** angir du tillatt verdiintervall. I **Instruksjoner**-feltet angir du en beskrivelse av hva som må gjøres.
 
         > [!NOTE]
-        > Alle linjer av typen **Måling** som ikke har et telleroppsett, behandles som en uavhengig målingsregistrering som ikke har noen automatisk oppfølging i Aktivastyring. På samme måte behandles vedlikeholdssjekklisteoppgaven som en uavhengig måling hvis den valgte tellertypen ikke er til stede på aktivaet som er knyttet til arbeidsordren. Tellerverdien kan endres flere ganger. Den posteres ikke før [tilstanden for arbeidsordrelivssyklus](work-order-lifecycle-states.md) endres til en tilstand der alternativet **Behandle vedlikeholdssjekkliste** er satt til **Ja**.
+        > Alle linjer av typen **Måling** som ikke har et telleroppsett, behandles som en uavhengig målingsregistrering som ikke har noen automatisk oppfølging i Aktivastyring. På samme måte behandles vedlikeholdssjekklisteoppgaven som en uavhengig måling hvis den valgte tellertypen ikke er til stede på aktivumet som er knyttet til arbeidsordren. Tellerverdien kan endres flere ganger. Den posteres ikke før [tilstanden for arbeidsordrelivssyklus](work-order-lifecycle-states.md) endres til en tilstand der alternativet **Behandle vedlikeholdssjekkliste** er satt til **Ja**.
 
     **Kontroller**-feltet i hurtigfanen **Detaljer** viser det totale antallet sjekklistelinjer i malen. Dette tallet inkluderer de nestede linjene i en eksisterende mal som du har referert til i malen.
 
@@ -182,9 +181,9 @@ Maler for vedlikeholdssjekklister kan brukes som et felles sett med oppgaver som
 4. Velg en vedlikeholdsjobbtype i feltet **Vedlikeholdsjobbtype** hvis den ikke er valgt automatisk.
 5. I feltene **Variant av vedlikeholdsjobbtype** og **Fag** velger du en vedlikeholdsjobbtypevariant og et vedlikeholdsjobbfag som du trenger.
 6. Velg **Prognose**.
-7. På siden **Prognose for standard vedlikeholdsjobbtype** kan du lage prognoser for timer, varer og utgifter. Velg **Legg til** i de relevante kategoriene, og gjør valg for å opprette de nødvendige prognosene for vedlikeholdsjobbtypen.
-8. I kategorien **Vareprognose** kan du velge lagerdimensjoner som skal vises på varelinjen. Velg **Lager** \> **Dimensjoner**, velg dimensjonene som skal vises, sett alternativet **Lagre oppsett** til **Ja**, og velg **OK**.
-9. Hvis du vil ha en oversikt over hvor i Aktivastyring varen på den valgte linjen brukes, i forhold til aktiva, vedlikeholdsjobbtypestandard, reservedeler og arbeidsordrer, velger du **Vare der brukt** i kategorien **Vareprognose**. 
+7. På siden **Prognose for standard vedlikeholdsjobbtype** kan du lage prognoser for timer, varer og utgifter. Velg **Legg til** i de relevante fanene, og gjør valg for å opprette de nødvendige prognosene for vedlikeholdsjobbtypen.
+8. I fanen **Vareprognose** kan du velge lagerdimensjoner som skal vises på varelinjen. Velg **Lager** \> **Dimensjoner**, velg dimensjonene som skal vises, sett alternativet **Lagre oppsett** til **Ja**, og velg **OK**.
+9. Hvis du vil ha en oversikt over hvor i Aktivastyring varen på den valgte linjen brukes, i forhold til aktiva, vedlikeholdsjobbtypestandard, reservedeler og arbeidsordrer, velger du **Vare der brukt** i fanen **Vareprognose**. 
 
     Hurtigfanen **Totaler for vedlikeholdsprognose** viser en oversikt over prognosetotaler. Denne oversikten inkluderer det totale antallet timer og prognoselinjer som er opprettet.
 
@@ -229,7 +228,7 @@ Maler for vedlikeholdssjekklister kan brukes som et felles sett med oppgaver som
 30. Velg **Lagre** for å lagre vedlegget.
 
     > [!NOTE]
-    > Vedlegg i en linje for vedlikeholdsjobbtypestandard skrives ut sammen med en arbeidsordrerapport bare hvis dokumenttypene til vedleggene er valgt i kategorien **Dokumenttyper** på siden **Aktivabehandlingsparametere** (**Aktivastyring** \> **Oppsett** \> **Aktivabehandlingsparametere**). Eksempler på vedlegg er retningslinjer som forklarer hvordan du utfører en bestemt jobb eller en forhåndsdefinert vedlikeholdssjekkliste (hvis du ikke bruker funksjonen for vedlikeholdssjekkliste for linjer for vedlikeholdsjobbtypestandard).
+    > Vedlegg i en linje for vedlikeholdsjobbtypestandard skrives ut sammen med en arbeidsordrerapport bare hvis dokumenttypene til vedleggene er valgt i fanen **Dokumenttyper** på siden **Aktivabehandlingsparametere** (**Aktivastyring** \> **Oppsett** \> **Aktivabehandlingsparametere**). Eksempler på vedlegg er retningslinjer som forklarer hvordan du utfører en bestemt jobb eller en forhåndsdefinert vedlikeholdssjekkliste (hvis du ikke bruker funksjonen for vedlikeholdssjekkliste for linjer for vedlikeholdsjobbtypestandard).
 
     På siden **Standarder for vedlikeholdsjobbtype** viser hver linje antall prognosetimer, og også antall linjer som er opprettet for varer, utgifter, sjekklister for vedlikehold og verktøy. **Aktiva**-feltet viser antall aktive aktiva som er knyttet til linjen for standard vedlikeholdsjobbtype.
 
@@ -238,21 +237,21 @@ Maler for vedlikeholdssjekklister kan brukes som et felles sett med oppgaver som
 
 ![Siden for Standarder for vedlikeholdsjobbtype](media/07-setup-for-work-orders.png)
 
-Når systemet velger den tilgjengelige vedlikeholdsjobbtypestandarden som skal brukes på en arbeidsordrelinje, baseres valget på aktivaet og det tilknyttede aktivatypeoppsettet. Aktivastyring går gjennom alle postene for vedlikeholdsjobbtypestandard som er relatert til vedlikeholdsjobbtypen som er knyttet til aktivatypen, for å finne et mulig treff. Den kontrollerer alltid den mest spesifikke kombinasjonen først. Med andre ord, for å finne den mest spesifikke kombinasjonen, sjekker Aktivastyring først for et mulig treff for **Handel**-feltet. Hvis det ikke blir funnet noe treff, kontrolleres det for et treff i feltet **Variant av vedlikeholdsjobbtype**. Hvis det ikke blir funnet noe treff, ser det etter treff for feltet **Vedlikeholdsjobbtype** og så videre (**Handel**, deretter **Variant av vedlikeholdsjobbtype**, deretter **Vedlikeholdsjobbtype**, deretter **Aktiva**, deretter **Modell**, deretter **Produsent** og deretter **Aktivatype**). Hvis det ikke blir funnet samsvar, brukes standardposten der bare vedlikeholdsjobbtypen er valgt.
+Når systemet velger den tilgjengelige vedlikeholdsjobbtypestandarden som skal brukes på en arbeidsordrelinje, baseres valget på aktivumet og det tilknyttede aktivatypeoppsettet. Aktivastyring går gjennom alle postene for vedlikeholdsjobbtypestandard som er relatert til vedlikeholdsjobbtypen som er knyttet til aktivatypen, for å finne et mulig treff. Den kontrollerer alltid den mest spesifikke kombinasjonen først. Med andre ord, for å finne den mest spesifikke kombinasjonen, sjekker Aktivastyring først for et mulig treff for **Handel**-feltet. Hvis det ikke blir funnet noe treff, kontrolleres det for et treff i feltet **Variant av vedlikeholdsjobbtype**. Hvis det ikke blir funnet noe treff, ser det etter treff for feltet **Vedlikeholdsjobbtype** og så videre (**Handel**, deretter **Variant av vedlikeholdsjobbtype**, deretter **Vedlikeholdsjobbtype**, deretter **Aktiva**, deretter **Modell**, deretter **Produsent** og deretter **Aktivatype**). Hvis det ikke blir funnet samsvar, brukes standardposten der bare vedlikeholdsjobbtypen er valgt.
 
-En prosjektaktivitets-ID knyttes automatisk til hver linje for vedlikeholdsjobbtypestandard du oppretter. Prosjektaktiviteten opprettes for prognoseprosjektet som er valgt i feltet **Vedlikeholdsprognoseprosjekt** i kategorien **Aktiva** på siden **Aktivabehandlingsparametere**. Formålet med prosjektaktiviteten er å behandle prognoser for timer, varer og utgifter i forbindelse med arbeidsordrer. Vedlikeholdsjobbtypeprognoser overføres automatisk til arbeidsordrelinjen, og de kopieres fra prognoseprosjektet til arbeidsordreprosjektet som opprettes for arbeidsordrelinjen. Formålet med prosjektaktiviteten er å behandle prognoser i forbindelse med arbeidsordrer.
+En prosjektaktivitets-ID knyttes automatisk til hver linje for vedlikeholdsjobbtypestandard du oppretter. Prosjektaktiviteten opprettes for prognoseprosjektet som er valgt i feltet **Vedlikeholdsprognoseprosjekt** i fanen **Aktiva** på siden **Aktivabehandlingsparametere**. Formålet med prosjektaktiviteten er å behandle prognoser for timer, varer og utgifter i forbindelse med arbeidsordrer. Vedlikeholdsjobbtypeprognoser overføres automatisk til arbeidsordrelinjen, og de kopieres fra prognoseprosjektet til arbeidsordreprosjektet som opprettes for arbeidsordrelinjen. Formålet med prosjektaktiviteten er å behandle prognoser i forbindelse med arbeidsordrer.
 
 Du kan definere en satsvis jobb for å oppdatere referanser for standard vedlikeholdsjobbtype med jevne mellomrom, eller du kan kjøre jobben manuelt. Hvis du vil opprette en satsvis jobb eller kjøre en manuell oppdatering , velger du **Aktivastyring** \> **Periodisk** \> **Forebyggende vedlikehold** \> **Oppdater referanser for standard vedlikeholdsjobbtype**.
 
 ## <a name="overview-of-maintenance-job-types-that-are-related-to-assets"></a>Oversikt over vedlikeholdsjobbtyper som er knyttet til aktiva
 
-Når du har opprettet de nødvendige kombinasjonene for standard vedlikeholdsjobbtype, kan du bruke siden **Alle aktiva** til å få en oversikt over gjeldende vedlikeholdsjobbtypestandard som er knyttet til et bestemt aktiva. Oversikten viser alle kombinasjoner for standard vedlikeholdsjobbtype som kan brukes for aktivatypen som er valgt for aktivaet. Disse kombinasjonene inkluderer kombinasjoner som har variasjoner av vedlikeholdsjobbtypevarianter og vedlikeholdsjobbfag.
+Når du har opprettet de nødvendige kombinasjonene for standard vedlikeholdsjobbtype, kan du bruke siden **Alle aktiva** til å få en oversikt over gjeldende vedlikeholdsjobbtypestandard som er knyttet til et bestemt aktiva. Oversikten viser alle kombinasjoner for standard vedlikeholdsjobbtype som kan brukes for aktivatypen som er valgt for aktivumet. Disse kombinasjonene inkluderer kombinasjoner som har variasjoner av vedlikeholdsjobbtypevarianter og vedlikeholdsjobbfag.
 
 1. Velg **Aktivastyring** \> **Felles** \> **Aktiva** \> **Alle aktiva** eller **Aktive aktiva**.
-2. I listen velger du aktivaet hvis du vil se en oversikt over kombinasjonene for vedlikeholdsjobbtype.
-3. Velg **Vedlikeholdsjobbtyper** i handlingsruten i kategorien **Generelt** i gruppen **Beslektet informasjon**.
+2. I listen velger du aktivumet hvis du vil se en oversikt over kombinasjonene for vedlikeholdsjobbtype.
+3. Velg **Vedlikeholdsjobbtyper** i handlingsruten i fanen **Generelt** i gruppen **Beslektet informasjon**.
 
-    Venstre rute på siden **Vedlikeholdsjobbtyper for aktiva** viser en liste over alle kombinasjonene for vedlikeholdsjobbtyper som gjelder for det valgte aktivaet.
+    Venstre rute på siden **Vedlikeholdsjobbtyper for aktiva** viser en liste over alle kombinasjonene for vedlikeholdsjobbtyper som gjelder for det valgte aktivumet.
 
 4. Velg en kombinasjon for vedlikeholdsjobbtype for å se det tilknyttede oppsettet for vedlikeholdssjekklister, prognoser og verktøy. **Detaljer**-delen på hurtigfanen **Standarder for vedlikeholdsjobbtype** viser antall tilknyttede vedlikeholdssjekklister, prognosetimer, varer og så videre, som er knyttet til den valgte kombinasjonen for vedlikeholdsjobbtype.
 5. Hvis du vil vise detaljer for den valgte vedlikeholdsjobbtypen, velger du **Vedlikeholdsjobbtyper**.
@@ -267,6 +266,3 @@ I Aktivastyring kan du automatisk oppdatere eventuelle endringer i vedlikeholdsj
 2. I dialogboksen **Oppdater prognose for vedlikeholdsjobbtype** i hurtigfanen **Poster som skal inkluderes** kan du legge til valg for bestemte vedlikeholdsjobbtyper etter behov. Velg **Filter**, og velg deretter **Velg** for å utføre valgene.
 3. På hurtigfanen **Kjør i bakgrunnen** kan du definere den automatiske oppdateringen som en satsvis jobb, slik du ønsker.
 4. Velg **OK** for å starte prognoseoppdateringen.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

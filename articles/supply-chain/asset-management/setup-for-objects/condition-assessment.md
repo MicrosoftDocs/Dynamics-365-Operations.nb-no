@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetObjectCondition, EntAssetConditionTemplate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 774c788959c5ebea69b4d22c886ac673f50b97f5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 18be786e6f78829f61db1521a923e229fc4f0e70
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434517"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021122"
 ---
 # <a name="condition-assessment"></a>Tilstandsvurdering
 
@@ -52,8 +51,8 @@ Tilstandsvurderingen opprettes på aktiva. Du definerer en mal for tilstandsvurd
 
 1. Velg **Aktivastyring** > **Felles** > **Aktiva** > **Alle aktiva**.
 2. I listen velger du aktivumet du vil opprette en tilstandsvurderingsregistrering for.
-3. Gå til kategorien **Generelt**, og klikk **Tilstandsvurdering**.
-4. Klikk **Ny** for å lage en ny registrering.
+3. Gå til fanen **Generelt**, og klikk **Tilstandsvurdering**.
+4. Klikk på **Ny** for å lage en ny registrering.
 5. Velg datoen for tilstandsvurderingen i **Dato**-feltet.
 6. Velg navnet på arbeideren som utførte tilstandsregistreringen, i **Arbeider**-feltet.
 7. I **linjer**-feltet ser du antallet vurderingslinjer som er definert for tilstandsvurderingen.
@@ -66,6 +65,3 @@ Når du har foretatt en tilstandsvurderingsregistrering på et aktivum, kan du s
 
 >[!NOTE]
 >Du kan også registrere en tilsynsvurdering på en arbeidsordre (**Aktivastyring** > **Felles** > **Arbeidsordrer** > **Alle arbeidsordrer** > **Tilstandsvurdering**-knappen.)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

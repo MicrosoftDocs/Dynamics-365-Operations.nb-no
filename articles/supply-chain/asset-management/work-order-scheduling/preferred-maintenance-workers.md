@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetWorkerPreferred
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c0637609a34890360a3b81355a8d21ef1b9faf8c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ab36d9fde0cc6e864f21f9ebd09834f5098c1913
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434357"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021410"
 ---
 # <a name="set-up-preferred-maintenance-workers"></a>Definer foretrukne vedlikeholdspersoner
 
@@ -33,7 +32,7 @@ ms.locfileid: "4434357"
 
 Under planlegging av arbeidsordrer kan du angi hvilke vedlikeholdspersoner eller hvilken arbeidsgruppe som foretrekkes til å fullføre arbeidsordren. Bruk av denne funksjonaliteten er valgfri, men den kan hjelpe deg med å velge vedlikeholdspersonen som er mest kvalifisert for å fullføre en jobb, basert på arbeiderkompetanse. Bare vedlikeholdspersoner som er tilgjengelige på planleggingstidspunktet, vil bli planlagt. Hvis et oppsett av foretrukken vedlikeholdsperson samsvarer med en arbeidsordre under planlegging, men vedlikeholdspersonen er tilordnet andre jobber, blir arbeidsordren planlagt til en annen, tilgjengelig vedlikeholdsperson.
 
-Før du kan definere foretrukne vedlikeholdsarbeidere, må du først definere vedlikeholdsarbeiderne og arbeidsgruppene. Se [Vedlikeholdspersoner og arbeidsgrupper](../setup-for-objects/workers-and-worker-groups.md) hvis du vil ha en beskrivelse av hvordan du definerer vedlikeholdspersoner og arbeidsgrupper.
+Før du kan definere foretrukne vedlikeholdspersoner, må du først definere vedlikeholdspersonene og arbeidsgruppene. Se [Vedlikeholdspersoner og arbeidsgrupper](../setup-for-objects/workers-and-worker-groups.md) hvis du vil ha en beskrivelse av hvordan du definerer vedlikeholdspersoner og arbeidsgrupper.
 
 ## <a name="set-up-preferred-workers"></a>Definere foretrukne arbeidere
 
@@ -50,24 +49,21 @@ Jo flere valg du gjør for den samme posten, jo mer spesifikt blir oppsettet.
 
 1. Klikk på **Aktivastyring** > **Oppsett** > **Arbeidere** > **Foretrukne vedlikeholdspersoner**.
 
-2. Klikk **Ny** for å opprette en ny post.
+2. Klikk på **Ny** for å opprette en ny post.
 
-3. Start ved å opprette en "standard" vedlikeholdsarbeider eller arbeidsgruppe. Dette betyr at du bare gjør et valg i feltet **Foretrukket vedlikeholdspersongruppe** eller feltet **Foretrukket vedlikeholdsperson**. I skjermdumpen nedenfor ser du et eksempel i den første posten der "Forespørsler" er valgt som **Foretrukket vedlikeholdspersongruppe**.
+3. Start ved å opprette en "standard" vedlikeholdsperson eller arbeidsgruppe. Dette betyr at du bare gjør et valg i feltet **Foretrukket vedlikeholdspersongruppe** eller feltet **Foretrukket vedlikeholdsperson**. I skjermdumpen nedenfor ser du et eksempel i den første posten der "Forespørsler" er valgt som **Foretrukket vedlikeholdspersongruppe**.
 
     [!NOTE] Standardoppsettet vil bli brukt ved arbeidsordreplanlegging hvis ingen annen, mer spesifikk kombinasjon samsvarer med innholdet i arbeidsordren.
 
 4. Gjenta trinn 2 for å opprette en ny post. Gjør de nødvendige valgene, avhengig av detaljnivået for den foretrukne arbeideren eller arbeidsgruppen. 
 
-    *Eksempel:* I skjermdumpen nedenfor i den sjette posten er vedlikeholdsarbeideren Shawn Richardson valgt som foretrukket arbeider. Han velges automatisk under planlegging av en arbeidsordre som inneholder aktivaet "CH-BP1-03-02" og vedlikeholdsjobbtypen "Fasilitetsvurdering" hvis han er tilgjengelig på det planlagte tidspunktet.
+    *Eksempel:* I skjermdumpen nedenfor i den sjette posten er vedlikeholdspersonen Shawn Richardson valgt som foretrukket arbeider. Han velges automatisk under planlegging av en arbeidsordre som inneholder aktivumet "CH-BP1-03-02" og vedlikeholdsjobbtypen "Fasilitetsvurdering" hvis han er tilgjengelig på det planlagte tidspunktet.
 
-    [!NOTE] Når en foretrukket vedlikeholdsarbeider velges under planlegging av arbeidsordre, går vanligvis Aktivastyring gjennom alle **Foretrukne vedlikeholdspersoner**-postene for å se etter et mulig treff, og kontrollerer alltid den mest spesifikke kombinasjonen først. Hvis det ikke blir funnet noe treff, brukes standardposten med et valg i enten feltet **Foretrukket vedlikeholdsarbeidsgruppe** eller feltet **Foretrukket vedlikeholdsperson**.
+    [!NOTE] Når en foretrukket vedlikeholdsperson velges under planlegging av arbeidsordre, går vanligvis Aktivastyring gjennom alle **Foretrukne vedlikeholdspersoner**-postene for å se etter et mulig treff, og kontrollerer alltid den mest spesifikke kombinasjonen først. Hvis det ikke blir funnet noe treff, brukes standardposten med et valg i enten feltet **Foretrukket vedlikeholdsarbeidsgruppe** eller feltet **Foretrukket vedlikeholdsperson**.
 
 ![Figur 1](media/02-work-order-scheduling.png)
 
-Du kan også definere *ansvarlige* vedlikeholdspersoner som kan velges når en vedlikeholdsforespørsel eller arbeidsordre opprettes. I **Alle arbeidsordrer** og **Alle vedlikeholdsforespørsler** kan du redigere valget hvis det er nødvendig. Se [Ansvarlige vedlikeholdsarbeidere](../setup-for-maintenance-requests/responsible-workers.md) for å få mer informasjon.
+Du kan også definere *ansvarlige* vedlikeholdspersoner som kan velges når en vedlikeholdsforespørsel eller arbeidsordre opprettes. I **Alle arbeidsordrer** og **Alle vedlikeholdsforespørsler** kan du redigere valget hvis det er nødvendig. Se [Ansvarlige vedlikeholdspersoner](../setup-for-maintenance-requests/responsible-workers.md) for å få mer informasjon.
 
-Under planleggingen av arbeidsordrer beregnes ulike poeng for å bestemme hvilke arbeidere som skal fullføre jobbene for en arbeidsordre (disse resultatene defineres i **Aktivabehandlingsparametere** > **Planlegging av arbeidsordre**-koblingen). Hvis to eller flere foretrukne vedlikeholdsarbeidere eller ansvarlige vedlikeholdsarbeidere får samme resultat under planleggingen av arbeidsordre, blir én arbeider tilfeldig valgt. Ellers er det alltid arbeideren med den høyeste poengsummen som tilordnes for å fullføre en arbeidsordre.
+Under planleggingen av arbeidsordrer beregnes ulike poeng for å bestemme hvilke arbeidere som skal fullføre jobbene for en arbeidsordre (disse resultatene defineres i **Aktivabehandlingsparametere** > **Planlegging av arbeidsordre**-koblingen). Hvis to eller flere foretrukne vedlikeholdspersoner eller ansvarlige vedlikeholdspersoner får samme resultat under planleggingen av arbeidsordre, blir én arbeider tilfeldig valgt. Ellers er det alltid arbeideren med den høyeste poengsummen som tilordnes for å fullføre en arbeidsordre.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

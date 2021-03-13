@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetItemWhereUsed, EntAssetItemWhereUsedCalculate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bc78568e314c7cf83848ed2c39f9613d6ed638ba
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: db0932c5a52030c1a7f0411163aee120e2173ca0
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434305"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021145"
 ---
 # <a name="item-where-used"></a>Brukssted for vare
 
@@ -61,7 +60,7 @@ Du kan foreta en beregning for en bestemt vare for å få en oversikt over hvor 
 
 5. Klikk på **OK** for å starte beregningen.
 
-6. I kategorien **Vare der brukt** velger du knappene **Grupper etter** for å vise det nødvendige detaljnivået for beregningen. De valgte **Grupper etter**-knappen er uthevet. Klikk på en knapp for å aktivere eller deaktivere den.
+6. I fanen **Vare der brukt** velger du knappene **Grupper etter** for å vise det nødvendige detaljnivået for beregningen. De valgte **Grupper etter**-knappen er uthevet. Klikk på en knapp for å aktivere eller deaktivere den.
 
 7. Hvis du vil vise dimensjoner knyttet til varen, klikker du på **Visningsdimensjoner** og velger dimensjonene som skal vises.
 
@@ -71,6 +70,3 @@ I skjermbildet nedenfor ser du et eksempel på en beregning for vare-der-brukt f
 
 ![Eksempel på beregning for vare-der-brukt](media/12-controlling-and-reporting.png)
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
