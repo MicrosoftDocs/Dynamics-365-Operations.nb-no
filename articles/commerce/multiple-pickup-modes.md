@@ -10,22 +10,21 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 768b20ecc8d15353258c9b3af69b897957d3de60
-ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
+ms.openlocfilehash: c0879343f100fa1fe6e0a4b4fbf085574225e898
+ms.sourcegitcommit: bea695707d1e7b4e2713b62405ad0e7a7a893420
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "4594986"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "5053419"
 ---
 # <a name="enable-multiple-pickup-delivery-modes-for-customer-orders"></a>Aktiver flere henteleveringsmåter for kundeordrer
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+
 
 I Microsoft Dynamics 365 Commerce, versjon 10.0.16 og nyere kan organisasjoner definere flere leveringsmåter som kunder eller selgere kan velge mellom når de oppretter en ordre som skal hentes i en butikk. På denne måten kan organisasjoner tilby flere hentealternativer til kundene sine. Mange forhandlere tilbyr for eksempel kunder alternativet om å hente i butikk eller hente utenfor butikk i ordrene deres. Commerce støtter konfigurering av disse forskjellige henteleveringsmåtene. Brukere kan dra nytte av dem når de oppretter kundeordrer i en hvilken som helst støtte Commerce-kanal som støttes (e-handel, kundesenter eller butikk).
 
@@ -86,6 +85,3 @@ Når flere henteleveringsmåter er tilgjengelige for en kanal, gis det en bedre 
 ## <a name="considerations-for-distributed-order-management"></a>Hensyn for behandling av distribuert ordre
 
 Funksjonene [Behandling distribuert ordre (DOM)](https://docs.microsoft.com/dynamics365/commerce/dom) i Commerce ignorerer alle salgslinjer som er merket for henting i butikk. Disse funksjonene er oppdatert for å sikre at salgslinjer som er koblet til konfigurerte henteleveringsmåter, omgår DOM-logikken og ikke blir tilordnet på nytt til et nytt oppfyllelseslager.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

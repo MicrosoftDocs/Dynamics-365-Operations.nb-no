@@ -1,7 +1,7 @@
 ---
 title: Oversikt over bestilling
 description: Denne artikkelen inneholder generell informasjon om bestillinger og koblinger til flere artikler som er knyttet til de ulike stadiene som en bestilling går gjennom.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, PurchLineOpenOrder, PurchConfirmationRequestJournal
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations, Retail
 ms.custom: 93083
 ms.assetid: e9b7bc5b-1d7e-4ec2-97be-d655274b0613
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cfb35d6db74f965911329dbd6215d1108149fa6c
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: fef4eaa9563647b8878e0d0fb0bc185fdc4ed319
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434843"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5022237"
 ---
 # <a name="purchase-order-overview"></a>Oversikt over bestilling
 
@@ -53,7 +52,7 @@ Det finnes tre bestillingstyper: Når du oppretter en bestilling, må du angi ty
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Journal        | Bruk denne typen for å opprette en utkastordre. Denne typen har ikke innvirkning på lagerantall eller genererer ikke lagertransaksjoner. Bestillingsjournallinjer tas ikke med i hovedplanlegging.                                                                                                       |
 | Bestilling | Bruk denne typen for å opprette bestillinger når ordrer er bekreftet med en leverandør, og når ordrene behandles gjennom tilgang og fakturering før betalingen sendes til leverandøren. Denne typen bestilling er den vanligste.                                                                          |
-| Returordre | Bruk denne typen når du returnerer varer til leverandøren. Denne bestillingstypen krever at du angir et autorisasjonsreturnummer (ARM) som leverandøren gir deg. Du angir ARM-nummeret i kategorien **Generelt** i bestillingen. Ordrelinjer må ha negative antall. |
+| Returordre | Bruk denne typen når du returnerer varer til leverandøren. Denne bestillingstypen krever at du angir et autorisasjonsreturnummer (ARM) som leverandøren gir deg. Du angir ARM-nummeret i fanen **Generelt** i bestillingen. Ordrelinjer må ha negative antall. |
 
 ## <a name="purchase-order-statuses"></a>Bestillingsstatuser
 Bestillinger inneholder flere statusfelt som viser fremdriften for bestillingen. Disse feltene er synlige i visningen **Topptekst** for ordren, og noen få av dem vises også i rutenettoversikt for alle ordrer. Feltet **Status** viser statusen for et antall på bestillingen. Følgende verdier er tilgjengelige:
@@ -92,6 +91,3 @@ Feltet **Godkjenningsstatus** brukes når en bestilling går gjennom en vurderin
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

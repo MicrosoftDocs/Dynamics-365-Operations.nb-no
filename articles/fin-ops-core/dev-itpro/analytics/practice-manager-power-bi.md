@@ -1,6 +1,6 @@
 ---
 title: Power BI-innholdet Praksisleder
-description: Dette emnet beskriver hva som er inkludert i Praksisleder for Power BI-innhold. Det forklarer også hvordan du får tilgang til rapportene som er inkludert i innholdet, og inneholder informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
+description: Dette emnet beskriver hva som er inkludert i Praksisleder for Power BI-innhold.
 author: KimANelson
 manager: AnnBe
 ms.date: 12/18/2017
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 17a68e5aedb8b085c85d1ed7b6ad87f3eaecfc25
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: f01109b360b23adf84673e84e6240f8f4431340d
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685711"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092463"
 ---
 # <a name="practice-manager-power-bi-content"></a>Power BI-innholdet Praksisleder
 
@@ -117,6 +117,3 @@ Delene nedenfor forklarer de samlede målene som brukes i hver enhet.
 | Aggregerte nøkkelmålinger       | Felt               | beskrivelse |
 |---------------------------------|---------------------|-------------|
 | Planlagt kostnad for fullført aktivitet | Sum(TotalCostPrice) | Total kostpris i estimater for alle prosjekttransaksjonstypene med fullførte oppgaver |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

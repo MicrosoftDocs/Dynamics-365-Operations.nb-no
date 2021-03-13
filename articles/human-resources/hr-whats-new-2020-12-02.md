@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: aba35563266d1149131124f489f89da61432bfb2
-ms.sourcegitcommit: 0354ca7e566fbd2eb0aabdd40000d4ac5c44ea78
+ms.openlocfilehash: 36d82efa182bff12442d51908d634cbddbd13fa9
+ms.sourcegitcommit: fc852ae4939089a294d00fdf9cad8d6372ffb012
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "4669182"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "5080044"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-december-2-2020"></a>Hva er nytt eller endret i Dynamics 365 Human Resources 2. desember 2020
 
@@ -61,7 +60,7 @@ Denne versjonen inneholder følgende feilrettinger.
 | 514087 | BenefitEligibilityProcessResult bør inkludere DateTime som ble brukt i behandling. | BenefitEligibity-behandlingsresultatet inneholder nå datetimestamp for siste behandling, som manglet tidligere. |
 | 526903 | Fordelsregistrering mislykkes for planer med avhengigheter når **Velg utpekte personer automatisk** er aktivert i **delte parametere for Human Resources**. | Løste problemet der fordelsregistreringen mislyktes for utpekte personer når alternativet **Velg utpekte personer automatisk** ble aktivert for standard utpekte personer. |
 | 521922 | Parameteren **Vis fravær uten detaljer** viser detaljer om fridagerforespørsler i fraværskalenderen for team. | Permisjonstypen, permisjonstypefargen og dagsdetaljer ble vist i fraværskalenderen for team når **Vis fravær uten detaljer** er satt til **Ja** i **Parametere for permisjon og fravær**. Dette er tatt hånd om, og nå kan ikke permisjonstypen vises, og standardfarge for permisjonstype (mørk blå) brukes for alle permisjonstyper i fraværskalenderen for team. |
-| 527316 | Tittelendringer for jobb-, stillings- og arbeidervarslinger synkroniseres ikke. | En tittelrelasjon ble tidligere lagt til jobb-, plasserings- og arbeiderenhetene. Synkroniseringen for denne relasjonen fungerer for synkroniseringen fra Human Resources til Common Data Service, men fungerte ikke for varslinger fra Common Data Service. Dette er tatt hånd om. |
+| 527316 | Tittelendringer for jobb-, stillings- og arbeidervarslinger synkroniseres ikke. | En tittelrelasjon ble tidligere lagt til jobb-, plasserings- og arbeiderenhetene. Synkroniseringen for denne relasjonen fungerer for synkroniseringen fra Human Resources til Dataverse, men fungerte ikke for varslinger fra Dataverse. Dette er tatt hånd om. |
 | 512275 | Fjern fargealternativene fra **Parametere for permisjon og fravær**. | Nå som farger defineres på permisjonstypen, er ikke lenger fargeralternativene nødvendige i **Parametere for permisjon og fravær**, så de ble fjernet. |
 | 437112 | Villedende feilmeldingstekst under tilordning av ansattplassering. | Oppdaterte feilmeldingen under ansettelse av en arbeider og forsøk på å tilordne arbeideren til en stilling som ikke er aktiv. Oppdatert meldingen **Den angitte stillingen er ikke aktiv på ansettelsesstartdatoen. Kontroller varigheten for denne stillingen.** |
 | 527816 | Ytelsesproblemer med **Fridager**-siden. | Ytelsen er forbedret på **Fridager**-siden. |
@@ -92,6 +91,3 @@ Hvis du vil ha en fullstendig liste over de planlagte funksjonene og de planlagt
 [Oversikt over lanseringsbølge 2 i 2020 for Dynamics 365 Human Resources](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)</br>
 [Oppdatere prosess](hr-admin-setup-update-process.md)</br>
 [Behandle funksjoner](hr-admin-manage-features.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

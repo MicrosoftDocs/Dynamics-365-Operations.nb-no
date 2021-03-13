@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: ff68761ce1cf2174be8ebb9732b9348439a53a32
-ms.sourcegitcommit: d24ebce50421f8656d23bb1e47cd636ad2e2ca0a
+ms.openlocfilehash: e822463ac80be3b1e498f02cb1aad2b214fed815
+ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "4664302"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "5077483"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurere grensesnittet for produksjonsutførelse
 
@@ -65,6 +64,12 @@ Denne funksjonen legger til en knapp i grensesnittet for produksjonsutførelse, 
 
 - Funksjon for låsing av jobbkortenheten og jobbkortterminal slik at de kan rengjøres
 
+### <a name="asset-management-functionality-for-the-production-floor-execution-interface"></a>Funksjonalitet for anleggsmiddelstyring for grensesnittet for produksjonsutførelse
+
+Denne funksjonen legger til en fane for aktivastyring i grensesnittet for produksjonsutførelse. Arbeidere kan bruke denne fanen til å velge et aktivum som er koblet til en maskinressurs som er innenfor det valgte filteret for jobblisten. Arbeideren kan vise statusen og tilstanden til det valgte maskinaktivumet fra tellerverdier for opptil fire valgte tellere. Hvis du vil bruke denne funksjonen, aktiverer du følgende funksjon i [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- Funksjonalitet for anleggsmiddelstyring for grensesnittet for produksjonsutførelse
+
 ## <a name="work-with-production-floor-execution-configurations"></a>Arbeide med grensesnittet for produksjonsutførelse
 
 Slik oppretter og vedlikeholder du enhetskonfigurasjoner: Gå til **Produksjonskontroll \> Oppsett \> Produksjonsutførelse \> Konfigurere produksjonsutførelse**. Siden **Konfigurere produksjonsutførelse** viser en liste over eksisterende konfigurasjoner. På denne siden kan du utføre følgende handlinger:
@@ -94,6 +99,3 @@ En satsvis jobb rydder regelmessig oppføringer i referansetabellen for enheter 
 1. I handlingsruten velger du **Rydd opp klientkonfigurasjoner**.
 1. I dialogboksen **Rydd opp klientkonfigurasjon** angir du **Antall dager**-feltet til antallet dager uten aktivitet (før i dag) som skal vurderes. Du vil fjerne alle konfigurasjoner og påloggingsoppføringer for enheter som ikke er aktive i den perioden.
 1. Velg **OK** for å rydde opp i de relevante konfigurasjonene, basert på innstillingen for **Antall dager**.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

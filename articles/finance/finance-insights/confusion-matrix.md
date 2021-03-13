@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-14
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 6a1620c33ee1e23a79ef5413afebdee332aa82b6
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 5223bdfbc0f5828b5dccac30362783075ce8157f
+ms.sourcegitcommit: f59df61799915f6a79aec7e3e8664c02df6597da
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4645023"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "5044378"
 ---
 # <a name="results-of-machine-learning-models-preview"></a>Resultat av maskinlæringsmodeller (forhåndsversjon)
 
@@ -37,7 +36,7 @@ Etter at et overvåket ML-problem er opplært basert på et sett med historiske 
 
 La oss si at målet er å forutsi om et kjæledyr er en hund eller katt, basert på noen fysiske attributter og atferdsattributter. Hvis du har et testdatasett som inneholder 30 hunder og 20 katter, kan det hende at forvirringsmatrisen ligner på følgende illustrasjon.
 
-[![Eksempel på artsprediksjon](./media/species-prediction-matrix.png)](./media/species-prediction-matrix.png)
+![Eksempel på artsprediksjon](media/species-prediction-matrix.png)
 
 Tallene i de grønne cellene representerer riktige prediksjoner. Som du kan se, forutsier modellen en høyere prosent av de faktiske kattene riktig. Den generelle nøyaktigheten til modellen er enkel å beregne. I dette tilfellet er den 42 ÷ 50 eller 0,84.
 
@@ -47,7 +46,7 @@ De fleste diskusjoner om forvirringsmatrisen fokuserer på binære klassifiserer
 
 Nå skal vi vurdere et klassifiseringsproblem for et finansscenario med tre tilstander. Modellen forutsier om en kundefaktura kommer til å bli betalt til planlagt tid, for sent eller svært sent. La oss si at av 100 testfakturaer blir 50 betalt til planlagt tid, 35 betalt for sent og 15 betalt svært sent. I dette tilfellet kan en modell produsere en forvirringsmatrise som ligner på den følgende illustrasjonen.
 
-[![Modell 1](./media/payment-prediction-matrix.png)](payment-prediction-matrix.png) Modell 1
+![Modell 1](media/payment-prediction-matrix.png)]
 
 En forvirringsmatrise gir betydelig mer informasjon enn en enkel måleverdi for nøyaktighet. Den er likevel relativt lett å forstå. En forvirringsmatrise forteller deg om du har et balansert datasett der utdataklassene har lignende antall. Når det gjelder scenarioet med flere klasser, forteller det deg hvor unøyaktig en prediksjon kan bli når utdataklassene er ordenstall, som i det foregående eksemplet med kundebetalinger.
 
@@ -58,7 +57,7 @@ Siden nøyaktighet er en enkel måling å forstå, er det et godt utgangspunkt f
 
 Hvis du vil ha en grundigere forståelse, må du imidlertid være oppmerksom på flere utfordringer knyttet til nøyaktighet. Hvor nyttig målingen er, avhenger av konteksten til problemet. Et spørsmål som ofte stilles i forhold til modellytelse, er «Hvor god er modellen?» Det er imidlertid ikke nødvendigvis et enkelt svar på dette spørsmålet. La oss se på den følgende forvirringsmatrisen (modell 2).
 
-[![Eksempel på betalingsprediksjon med et større utvalg](./media/payment-prediction-matrix-2.png)](payment-prediction-matrix-2.png)
+![Eksempel på betalingsprediksjon med et større utvalg](media/payment-prediction-matrix-2.png)
 
 En rask beregning viser at denne modellens nøyaktighet er (70 + 10 + 3) ÷ 100 eller 0,83. Dette resultatet er tilsynelatende bedre enn resultatet for den forrige modellen med flere klasser (modell 1), som har en nøyaktighet på 0,73. Men er den bedre?
 
@@ -103,7 +102,7 @@ F1-målingen kombinerer presisjon og tilbakekalling. Resultatet er den harmonisk
 
 La oss se på et konkret eksempel. Tidligere i dette emnet var det et eksempel på en modell som forutsa om et dyr var en hund eller en katt. Illustrasjonen gjentas her.
 
-[![Eksempel på artsprediksjon](./media/species-prediction-matrix.png)](./media/species-prediction-matrix.png)
+[![Eksempel på artsprediksjon (gjentatt)](./media/species-prediction-matrix.png)](./media/species-prediction-matrix.png)
 
 Her er resultatet hvis «Hund» brukes som det positive svaret.
 
@@ -115,11 +114,11 @@ Som du kan se, er verdien for F1 mellom verdiene for presisjon og tilbakekalling
 
 Selv om det ikke er like lett å forstå F1-nøyaktighet, tilføyer det nyanse til det grunnleggende nøyaktighetstallet. Det kan også være til hjelp i ubalanserte datasett, som den følgende diskusjonen viser.
 
-Delen [Modellnøyaktighet](#classify-machine-learning-accuracy) i dette emnet sammenlignet de to følgende forvirringsmatrisene. Selv om den første modellen hadde lavere nøyaktighet, ble den regnet for å være en nyttigere modell fordi den hadde større forbedring enn standardgjetningen for en betaling i tide.
+Delen [Modellnøyaktighet](#model-accuracy) i dette emnet sammenlignet de to følgende forvirringsmatrisene. Selv om den første modellen hadde lavere nøyaktighet, ble den regnet for å være en nyttigere modell fordi den hadde større forbedring enn standardgjetningen for en betaling i tide.
 
-[![Eksempel på betalingsprediksjon kontra faktiske tilfeller](./media/payment-prediction-matrix.png)](payment-prediction-matrix.png)
+![Eksempel på betalingsprediksjon kontra faktiske tilfeller](media/payment-prediction-matrix.png)
 
-[![Eksempel på betalingsprediksjon med et større utvalg](./media/payment-prediction-matrix-2.png)](payment-prediction-matrix-2.png)
+![Eksempel på betalingsprediksjon med et større utvalg (gjentatt)](media/payment-prediction-matrix-2.png)
 
 La oss sammenligne disse to modellene når F1-poengsummen brukes. F1-poengsummen tar hensyn til presisjon og tilbakekalling for hver tilstand, og F1-makroberegningen beregner deretter gjennomsnittet av F1-poengsummen på tvers av tilstandene for å beregne en samlet F1-poengsum. Det finnes andre F1-varianter, men det er mer interessant å vurdere makroversjonen, gitt at det tas like stort hensyn til alle tre tilstandene.
 
@@ -142,6 +141,3 @@ Som disse resultatene viser har de to modellene nesten identiske poengsummer for
 
 #### <a name="privacy-notice"></a>Personvernerklæring
 Forhåndsversjoner (1) kan ha redusert personvern og færre sikkerhetstiltak enn Dynamics 365 Finance and Operations-tjenesten, (2) er ikke inkludert i serviceavtalen (SLA) for denne tjenesten, (3) må ikke brukes til å behandle personlige data eller andre data som er underlagt juridiske eller forskriftsmessige krav, og (4) har begrenset støtte.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

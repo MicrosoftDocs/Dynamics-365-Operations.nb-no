@@ -1,6 +1,6 @@
 ---
 title: Power BI-innholdet Metrikk for arbeidsstyrke
-description: Dette emnet beskriver Metrikk for arbeidsstyrke-innholdet for Power BI. Det forklarer hvordan du kan få tilgang til rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
+description: Dette emnet beskriver Metrikk for arbeidsstyrke-innholdet for Power BI.
 author: jcart1106
 manager: AnnBe
 ms.date: 12/19/2017
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 5e921b9ca7d46b3365068a5cdcb029396b62a0ce
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: d0622cebcfca15acf50cf62e8a77af360d4f1bda
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687357"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092797"
 ---
 # <a name="workforce-metrics-power-bi-content"></a>Power BI-innholdet Metrikk for arbeidsstyrke
 
@@ -86,6 +86,3 @@ Tabellen nedenfor viser enhetene som innholdet er basert på.
 | Trend for ansatt           | Arbeidere over tid, antall ansatte, firma og stilling                                 | Firma, geografisk plassering, ansattnavn, rapporterer til, kalenderforskyvning, dato, ansattittel, demografi, ansettelse, jobb |
 | Masseansettelsesprosjekt        | Antall masseansettelsesprosjekter, prosjekteier og prosjektstatus                     | Firma, masseansettelseslinje |
 | Masseansettelseslinje           | Avdeling, ansettelsestype og stilling                                           | Dato, jobb, masseansettelsesprosjekt |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

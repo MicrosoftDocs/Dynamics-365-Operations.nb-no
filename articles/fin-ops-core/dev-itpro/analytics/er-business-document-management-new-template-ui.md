@@ -1,6 +1,6 @@
 ---
 title: Nytt dokumentbrukergrensesnitt i forretningsdokumentbehandling
-description: Dette emnet inneholder informasjon om hvordan du bruker det nye dokumentbrukergrensesnittet i funksjonen for forretningsdokumentadministrering i rammeverket for elektronisk rapportering (ER).
+description: Dette emnet inneholder informasjon om hvordan du bruker det nye dokumentbrukergrensesnittet i funksjonen for administrasjon av forretningsdokument for elektronisk rapportering.
 author: v-anamir
 manager: AnnBe
 ms.date: 05/12/2019
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: v-anamir
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 2cb6e0da4af07b9b8486bf1e5bda29523cbd08e9
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 64ac52385ae6145f7428ebbc3cb77e395557bce2
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681358"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092231"
 ---
-# <a name="new-document-user-interface-in-business-document-management"></a>Nytt dokumentbrukergrensesnitt i forretningsdokumentbehandling
+# <a name="new-document-user-interface-in-business-document-management"></a>Nytt dokumentbrukergrensesnitt i Forretningsdokumentbehandling
 
 [!include [banner](../includes/banner.md)]
 
@@ -64,6 +64,3 @@ Følg disse trinnene for å aktivere denne funksjonen for alle juridiske enheter
 **Nytt dokument**-knappen brukes til å opprette og redigere en mal i en ER-formatkonfigurasjon som leveres av en annen leverandør. I dette eksemplet er leverandøren Microsoft. Når du velger **Nytt dokument**, kan du vise alle malene som eies av gjeldende leverandør og andre leverandører. Når du har valgt malen, åpnes den for redigering. Den redigerte malen blir deretter lagret i en ny ER-formatkonfigurasjon som genereres automatisk.
 
 Hvis du vil ha mer informasjon, kan du se [Oversikt over forretningsdokumentadministrering](er-business-document-management.md).
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: Lage dokumentasjon eller opplæring med Oppgaveopptaker
-description: Dette emnet forklarer hva Oppgaveopptaker og oppgaveveiledninger er, hvordan du oppretter oppgaveopptak og hvordan du tilpasser Microsoft-oppgaveveiledninger og inkluderer dem i hjelpen.
+description: Dette emnet forklarer hva Oppgaveopptaker og oppgaveveiledninger er, hvordan du gjør opptak og hvordan du tilpasser Microsoft-oppgaveveiledninger og inkluderer dem i hjelpen.
 author: josaw1
 manager: AnnBe
 ms.date: 03/24/2020
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b92ef15fc9f3f6a5ebb6ba4ea4eae1a0f7488995
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 1bc634a324e3cc12855a1b36b9a58a9cb38eb5d2
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687798"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092875"
 ---
 # <a name="create-documentation-or-training-with-task-recorder"></a>Lage dokumentasjon eller opplæring med Oppgaveopptaker
 
@@ -38,7 +38,7 @@ Dette emnet forklarer hva Oppgaveopptaker og oppgaveveiledninger er, hvordan du 
 
 Oppgaveopptak er et verktøy du kan bruke til å registrere handlingene du utfører i brukergrensesnittet for produktet. Når du bruker oppgaveopptakeren, blir alt du gjør i brukergrensesnittet som kjøres mot serveren, for eksempel tilføying av verdier, endring av innstillinger og fjerning av verdier, tatt opp. Samlet kalles trinnene som du registrerer en *oppgaveregistrering*. Oppgaveopptak kan brukes på mange måter:
 
--   **Oppgaveopptak kan spilles av som oppgaveveiledninger.** Oppgaveopptak er en integrert del av hjelpeopplevelsen. En oppgaveveiledning er en styrt, veiledet, interaktiv opplevelse gjennom trinnene i en forretningsprosess. Brukeren blir veiledet gjennom hvert trinn ved hjelp av en popup-melding (eller «boble») som animeres i brukergrensesnittet og peker på elementet i brukergrensesnittet som brukeren skal bruke. "Boblen" gir også informasjon om hvordan du bruker elementet, for eksempel "Klikk her" eller "Angi en verdi i dette feltet". En oppgaveveiledning kjører mot brukerens gjeldende datasett, og dataene som angis, lagres i brukerens miljø.
+-   **Oppgaveopptak kan spilles av som oppgaveveiledninger.** Oppgaveopptak er en integrert del av hjelpeopplevelsen. En oppgaveveiledning er en styrt, veiledet, interaktiv opplevelse gjennom trinnene i en forretningsprosess. Brukeren blir veiledet gjennom hvert trinn ved hjelp av en popup-melding (eller «boble») som animeres i brukergrensesnittet og peker på elementet i brukergrensesnittet som brukeren skal bruke. "Boblen" gir også informasjon om hvordan du bruker elementet, for eksempel "Klikk på her" eller "Angi en verdi i dette feltet". En oppgaveveiledning kjører mot brukerens gjeldende datasett, og dataene som angis, lagres i brukerens miljø.
 -   **Du kan lagre oppgaveopptak som Word-dokumenter.** Dette gjør at du enkelt kan lage opplæringsveiledninger som skrives ut.
 
 Du kan opprette dine egne oppgaveopptak, spille av oppgaveopptak fra Microsoft, eller endre oppgaveopptak fra Microsoft for å gjenspeile konfigurasjonen din. Hvis du vil ha mer informasjon om Oppgaveopptak, kan du se [Oppgaveopptak](task-recorder.md).
@@ -100,13 +100,13 @@ Hvis du vil se de detaljerte trinnene i fremgangsmåten, kan du se [Ressurser fo
 Du kan laste ned og redigere oppgaveopptak fra Microsoft for å bruke dem i din egen hjelpedokumentasjon eller opplæringsmateriell. Følg disse trinnene for å laste ned et oppgaveopptak fra Microsoft:
 
 1.  Åpne oppgaveopptak. Oppgaveopptakeren finner du på **Innstillinger**-menyen.
-2.  Klikk **Vedlikehold av opptak** i ruten for oppgaveopptakeren.
+2.  Klikk på **Vedlikehold av opptak** i ruten for oppgaveopptakeren.
 3.  Under **Hvor er opptaket** klikker du **Det er i et LCS-bibliotek**.
-4.  Klikk **Velg LCS-biblioteket**.
+4.  Klikk på **Velg LCS-biblioteket**.
 5.  Velg det globale Microsoft-biblioteket.
 6.  Velg biblioteknoden for forretningsprosess som er knyttet til oppgaveopptaket, i treet.
-7.  Klikk **OK**.
-8.  Klikk **Start**.
+7.  Klikk på **OK**.
+8.  Klikk på **Start**.
 9.  Nå kan du gå gjennom opptaket og endre eventuelle trinn ved å ta dem opp på nytt mens du går gjennom opptaket. **Obs!** Hvis du bare vil endre teksten i et opptak, kan du åpne det i modusen **Redigere en merknad i opptaket**, og deretter lagre det.
 10. Når opptaket er avspilt til slutten, klikker du **Stopp** på oppgaveopptakslinjen øverst på skjermen.
 11. Velg hvordan du vil lagre oppgaveopptaket.
@@ -123,6 +123,3 @@ Du kan laste ned og redigere oppgaveopptak fra Microsoft for å bruke dem i din 
 [Oppgaveregistrering](task-recorder.md)
 
 [Opprette rike hjelpeemner med oppgaveopptakeren (ekstern link)](https://mbspartner.microsoft.com/AX/Videos/970)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

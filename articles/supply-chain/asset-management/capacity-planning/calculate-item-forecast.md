@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetItemForecast
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f8f38ac7bfb270f648cd561da50ee5477721ab47
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 155dc720804196ccc44fad5eaf71e3563a9c68cf
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434525"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5022564"
 ---
 # <a name="calculate-item-forecast"></a>Beregn vareprognose
 
@@ -39,7 +38,7 @@ På samme måte som du kan foreta beregninger av kapasitetsbelastning, som beskr
 
 Dette er nyttig hvis du vil ha en oversikt over forventet vareforbruk (reservedeler i tillegg til andre varer som er nødvendige for å fullføre arbeidsordrer) for en bestemt periode. Beregning av vareprognose kan utføres for alle aktiva eller valgte aktiva. Du kan også foreta en beregning av en aktivitet for vedlikeholdsnedetid (**Alle aktiviteter for vedlikeholdsnedetid** eller **Aktive aktiviteter for vedlikeholdsnedetid**), eller en arbeidsordrepulje (**Alle arbeidsordrepuljer** eller **Aktive arbeidsordrepuljer**).
 
-1. Klikk **Aktivastyring** > **Forespørsler** > **Vareprognose** eller **Aktivastyring** > **Felles** > **Arbeidsordrepuljer** > **Alle arbeidsordrepuljer** / **Aktive arbeidsordrepuljer** > velg arbeidsordrepulje i listen > **Vareprognose**-knappen, eller **Aktivastyring** > **Felles** > **Aktiviteter for vedlikeholdsnedetid** > **Alle aktiviteter for vedlikeholdsnedetid** / **Aktive aktiviteter for vedlikeholdsnedetid** > velg aktiviteter for vedlikeholdsnedetid i listen > **Vareprognose**-knappen.
+1. Klikk på **Aktivastyring** > **Forespørsler** > **Vareprognose** eller **Aktivastyring** > **Felles** > **Arbeidsordrepuljer** > **Alle arbeidsordrepuljer** / **Aktive arbeidsordrepuljer** > velg arbeidsordrepulje i listen > **Vareprognose**-knappen, eller **Aktivastyring** > **Felles** > **Aktiviteter for vedlikeholdsnedetid** > **Alle aktiviteter for vedlikeholdsnedetid** / **Aktive aktiviteter for vedlikeholdsnedetid** > velg aktiviteter for vedlikeholdsnedetid i listen > **Vareprognose**-knappen.
 
 2. I dialogboksen **Beregn vareprognose** velger du en periode for beregningen i feltene **Start dato/klokkeslett** og **Sluttdato/-klokkeslett**.
 
@@ -57,9 +56,6 @@ Dette er nyttig hvis du vil ha en oversikt over forventet vareforbruk (reservede
 
 7. I **Grupper etter...**-gruppene klikker du de relevante knappene for å vise det nødvendige detaljnivået for beregningen. I skjermbildet nedenfor er de valgte **Grupper etter**-knappene uthevet med blått. Klikk på en knapp for å aktivere eller deaktivere den.
 
-8. Klikk **Vis dimensjoner**-knappen hvis du vil se produkt-, lagrings- eller sporingsdimensjonene som er knyttet til varene. Merk av i de aktuelle avmerkingsboksene, og klikk **OK**.
+8. Klikk på **Vis dimensjoner**-knappen hvis du vil se produkt-, lagrings- eller sporingsdimensjonene som er knyttet til varene. Merk av i de aktuelle avmerkingsboksene, og klikk **OK**.
 
 ![Figur 1](media/02-capacity-planning.png)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

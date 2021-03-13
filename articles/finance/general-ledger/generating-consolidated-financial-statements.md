@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: a32fb8cce4353f57155fc7a723aa90e3c17178e6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: dda102b993ecc92a5089eb54d2708c2adebc572f
+ms.sourcegitcommit: f59df61799915f6a79aec7e3e8664c02df6597da
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446447"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "5044027"
 ---
 # <a name="generate-consolidated-financial-statements"></a>Generere konsoliderte regnskapsoppgjør
 
@@ -67,14 +66,14 @@ Illustrasjonen nedenfor viser en kolonnedefinisjon i et side-ved-side-format.
 ![Kolonnedefinisjon i et side-ved-side-format](./media/column-definition-side-by-side-format.png "Kolonnedefinisjon i et side-ved-side-format")
 
 ## <a name="consolidations-that-use-organization-structures-that-are-created-from-legal-entities"></a>Konsolideringer som bruker organisasjonsstrukturer som opprettes fra juridiske enheter
-Organisasjonshierarkier med dimensjoner eller juridiske enheter oppretter dynamisk rapporteringstredefinisjonene i Finansirapportering. En enkel måte å strømlinjeforme konsolideringer på er å legge til et organisasjonshierarki i rapporten i Finansirapportering. Basert på rapportdatoen, velger Finansrapportering organisasjonshierarkiet på eller før den effektive datoen, som vist i illustrasjonen nedenfor.
+Organisasjonshierarkier med dimensjoner eller juridiske enheter oppretter dynamisk rapporteringstredefinisjonene i Finansirapportering. En enkel måte å strømlinjeforme konsolideringer på er å legge til et organisasjonshierarki i rapporten i Finansirapportering. Basert på rapportdatoen, velger Financial reporting organisasjonshierarkiet på eller før den effektive datoen, som vist i illustrasjonen nedenfor.
 
 ![Dynamisk oppretting av rapporteringstredefinisjon](./media/dynamically-create-reporting-tree-definitions.png "Dynamisk oppretting av rapporteringstredefinisjon")
 
 ## <a name="consolidations-that-involve-eliminations"></a>Konsolideringer som involverer elimineringer
 Elimineringstransaksjoner er en vanlig del av konsolideringsprosessen. I dette eksemplet elimineres fem kontoer i løpet av konsolideringen: 142600, 211400, 401420, 401180 og 510820. Firmaer kan definere de konserninterne kontoene på en annen måte. Enkelte firmaer kan for eksempel angi det siste sifferet til 9 hvis kontoen brukes i konserninterne transaksjoner. Uansett metode, hvis du kjenner de konserninterne kontoene, kan du vise elimineringer på de konsoliderte regnskapsoppgjørene.
 
-Illustrasjonen nedenfor viser en kolonnedefinisjon for et konsolidert resultatregnskap. Tre konserninterne resultatkontoer for fortjeneste og tap defineres for hvert firma ved hjelp av dimensjonsfilteret. D-kolonnen inkluderer elimineringskontoene bare for USMF-firmaet, og E-kolonnen inkluderer elimineringer bare for DEMFfirmaet. Både kolonne D og E er satt opp slik at de **ikke** skrives ut i regnskapsoppgjøret.
+Illustrasjonen nedenfor viser en kolonnedefinisjon for et konsolidert resultatregnskap. Tre konserninterne resultatkontoer for fortjeneste og tap defineres for hvert firma ved hjelp av dimensjonsfilteret. Kolonnene F, G og H inkluderer elimineringskontoene bare for firmaene USCOR, USRT og DEMF. Disse kolonnene er satt opp slik at de **ikke** skrives ut i regnskapsoppgjøret.
 
 ![Kolonnedefinisjon for konsolidert resultatregnskap](./media/column-definition-consolidated-income-statement.png "Kolonnedefinisjon for konsolidert resultatregnskap")
 
@@ -140,7 +139,7 @@ Ulike juridiske enheter kan ha ulike økonomiske kalendere, men må likevel prod
 - Opprett en kolonnedefinisjon, og bruk periode og år for å tilordne de riktige periodene for hvert firma.
 - Under **Innstillinger** \> **Annet** \> **Tilleggsalternativer** velger du om du vil konsolidere ved hjelp av periodens sluttdato eller periodenummeret.
 
-Når du utformer kolonnedefinisjonen for flere firmaer som har forskjellige regnskapsperioder, er det viktig at du vurderer hvilket firma som skal tilordnes til feltet **Firmanavn** i rapportdefinisjonen. Firmaets regnskapskalender vil bli brukt som basis regnskapskalender for rapportdefinisjonen. Tabellen nedenfor viser for eksempel regnskapsperiodeoppsettet for USMF- og INMF-firmaene. For konsoliderte rapporter kan du bruke den økonomiske kalenderen som USMF bruker. Kolonnen "Tilordning" viser tilsvarende periode og år for hvert firma hvis det opprettes en rapport for 30. juni 2018.
+Når du utformer kolonnedefinisjonen for flere firmaer som har forskjellige regnskapsperioder, er det viktig at du vurderer hvilket firma som skal tilordnes til feltet **Firmanavn** i rapportdefinisjonen. Firmaets regnskapskalender vil bli brukt som basis regnskapskalender for rapportdefinisjonen. Tabellen nedenfor viser for eksempel regnskapsperiodeoppsettet som ble konfigurert for USMF- og INMF-firmaene. For konsoliderte rapporter kan du bruke den økonomiske kalenderen som USMF bruker. Kolonnen "Tilordning" viser tilsvarende periode og år for hvert firma hvis det opprettes en rapport for 30. juni 2018.
 
 | Bedrift   | Regnskapsår                                  | Tildeling                     |
 |-----------|----------------------------------------------|-----------------------------|
@@ -224,6 +223,3 @@ For korrekt omregnede beløp når valutaer brukes, bruker Finansrapportering fø
 Hvis du vil ha mer informasjon om konsolidering og valutavekslinger, kan du se det overordnede emnet i dette emnet, [Oversikt over finanskonsolideringer og valutaomveksling](./financial-consolidations-currency-translation.md).
 
 Hvis du vil ha mer informasjon om hvordan du registrerer detaljer om konsolideringer på nettet, kan du se [Elektroniske finanskonsolideringer](./consolidate-online.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d28acbccc35b3f59f9cca7236dd721a1d9bdead8
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5e32924c71fd221caee4a7f413908120014ec8c5
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434524"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5022539"
 ---
 # <a name="create-consumption-reports"></a>Opprette forbruksrapporter
 
@@ -38,7 +37,7 @@ Når du har opprettet og postert forbruksregistreringer på arbeidsordrer i Akti
 
 Når du har bokført forbruk på arbeidsordrer, kan du skrive ut en forbruksrapport for aktivum. Rapporten viser timer, timekostnader, varekostnader og utgifter som er bokført for aktiva.
 
-1. Klikk **Aktivastyring** > **Rapporter** > **Aktiva** > **Aktivumforbruk**.
+1. Klikk på **Aktivastyring** > **Rapporter** > **Aktiva** > **Aktivumforbruk**.
 
 2. I dialogboksen **Aktivumforbruk** velger du parameterne og detaljnivået du vil se, ved å velge **Ja** på de aktuelle veksleknappene og sette inn et arbeidsstedsnivå i **Vis**-delen.
     - Du kan bruke **Nivåer**-feltet til å angi hvor detaljert anleggsmiddellinjene skal være når det gjelder arbeidssteder. 
@@ -78,6 +77,3 @@ Når du har bokført forbruk på arbeidsordrer, kan du skrive ut en forbruksrapp
 >[!NOTE]
 >Du kan også generere en [arbeidsordrerapport](../work-orders/work-order-report.md), som inneholder flere arbeidsordredetaljer.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

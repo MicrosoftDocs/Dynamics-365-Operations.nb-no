@@ -1,6 +1,6 @@
 ---
 title: ER Utforme en konfigurasjon for generering av rapporter i OPENXML-format (november 2016)
-description: Det emnet forklarer hvordan en bruker i rollen Systemansvarlig eller Utvikler av elektronisk rapportering kan opprette en ny konfigurasjon for elektronisk rapportering (ER) som inneholder en mal for generering av elektroniske dokumenter i OPENXML-format.
+description: Dette emnet beskriver hvordan du oppretter en ny konfigurasjon for elektronisk rapportering som inneholder en mal for generering av elektroniske dokumenter i OPENXML-format.
 author: NickSelin
 manager: AnnBe
 ms.date: 08/12/2019
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bf909efbac5dce8e22d9713ad2e694ce624ffeb0
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 3b832961061d05e3f1ae046f820bc7a37baaf90c
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681907"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092672"
 ---
 # <a name="er-design-a-configuration-for-generating-reports-in-openxml-format-november-2016"></a>ER Utforme en konfigurasjon for generering av rapporter i OPENXML-format (november 2016)
 
@@ -71,7 +71,7 @@ For å fullføre disse trinnene må du først fullføre trinnene i fremgangsmåt
 10. Velg **OK**. Legg merke til at ER-formatkomponenter er opprettet i utformingsformatet basert på strukturen til det refererende MS Excel-dokumentet (navngitte områder).  
 
 ## <a name="create-a-new-data-source-to-calculate-totals-by-currency-codes"></a>Opprette en ny datakilde for å beregne totaler etter valutakoder
-1. Velg kategorien **Tilordning**.
+1. Velg fanen **Tilordning**.
 2. Klikk på **Legg til rot** for å åpne nedtrekksdialogen.
 3. Velg **Funksjoner\Grupper etter** i treet.
 4. I **Navn**-feltet skriver du inn `PaymentByCurrency`.
@@ -150,6 +150,3 @@ For å fullføre disse trinnene må du først fullføre trinnene i fremgangsmåt
 17. I **Bankkonto**-feltet skriver du inn `GBSI OPER`.
 18. Velg **OK**, og velg deretter **OK** på nytt. Se gjennom det opprettede regnearket, inkludert detaljer om betalingslinjer samt totalene for hver valutakode som brukes i denne betalingsmeldingen.  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

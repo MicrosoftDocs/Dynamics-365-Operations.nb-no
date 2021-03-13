@@ -1,6 +1,6 @@
 ---
 title: Laste opp en konfigurasjon til Lifecycle Services
-description: Dette emnet forklarer hvordan en bruker i rollen Systemansvarlig eller Utvikler av elektronisk rapportering kan opprette en ny konfigurasjon for elektronisk rapportering (ER) og laste den opp til Microsoft Dynamics Lifecycle Services (LCS).
+description: Dette emnet forklarer hvordan du oppretter en ny konfigurasjon for elektronisk rapportering (ER) og laster den opp til Microsoft Dynamics Lifecycle Services (LCS).
 author: NickSelin
 manager: AnnBe
 ms.date: 09/14/2020
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2ebafb52882fd33f4f0ef140c5d23d3288af97a2
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 92fc6d7a8b2508c9a1f7b56ca8115adbd6ae00ea
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684169"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092547"
 ---
 # <a name="upload-a-configuration-into-lifecycle-services"></a>Laste opp en konfigurasjon til Lifecycle Services
 
@@ -145,6 +145,3 @@ I dette eksemplet skal du opprette en konfigurasjon og laste den opp til LCS for
     ER-konfigurasjonen du lastet opp, bør nå vises.
 
     Vær oppmerksom på at den opplastede LCS-konfigurasjonen kan importeres til en annen forekomst hvis leverandører har tilgang til dette LCS-prosjektet.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

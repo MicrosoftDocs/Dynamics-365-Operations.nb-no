@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 54ad180b7f4691ead3563b077eadadc3b9b20588
-ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
+ms.openlocfilehash: a41f69958d84fb67b7cd8b6b4c7de38da23552f3
+ms.sourcegitcommit: 2b76d4443b2867205db156648125a894f395a495
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4434854"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "5091091"
 ---
 # <a name="get-started-with-planning-optimization"></a>Komme i gang med planleggingsoptimalisering
 
@@ -41,21 +40,42 @@ Funksjonen Planleggingsoptimalisering støtter for øyeblikket ikke alle funksjo
 
 Før du slår på planleggingsoptimalisering, anbefaler vi på det sterkeste at du evaluerer resultatene i tilpassingsanalysen av planleggingsoptimalisering. Hvis du vil ha mer informasjon, se [Tilpassingsanalyse av planleggingsoptimalisering](planning-optimization-fit-analysis.md).
 
-### <a name="availability"></a>Tilgjengelighet
-Planleggingsoptimalisering er for øyeblikket tilgjengelig i følgende Azure-områder: USA, Canada, Europa, Storbritannia og Australia. Hvis du prøver å installere tillegget fra et annet geografisk område, vil LCS vise en melding om at dette området ikke støttes.
+## <a name="availability"></a>Tilgjengelighet
+
+Planleggingsoptimalisering er for øyeblikket tilgjengelig i følgende Azure-områder: USA, Canada, Europa, Storbritannia, Australia og Asia/Stillehavskysten. Hvis du prøver å installere tillegget fra et annet geografisk område, vil LCS vise en melding om at dette området ikke støttes.
 
 Legg merke til at planleggingsoptimalisering ikke støtter lokale distribusjoner av Dynamics 365 Supply Chain Management.
 
-### <a name="licensing"></a>Lisensiering
+## <a name="licensing"></a>Lisensiering
 
 Hvis du kan kjøre hovedplanlegging ved hjelp av den gjeldende lisensen, trenger du ikke kjøpe en tilleggslisens for å bruke planleggingsoptimalisering.
 
-### <a name="install-the-add-in"></a>Installer tillegget
+## <a name="install-and-enable-planning-optimization"></a>Installere og aktivere planleggingsoptimalisering
 
-Hvis du vil bruke planleggingsoptimalisering, må du installere tillegget for planleggingsoptimalisering for Dynamics 365 Supply Chain Management. Du får tilgang til tillegget fra LCS-prosjektet og kan aktivere funksjonaliteten for planleggingsoptimalisering fra brukergrensesnittet for Supply Chain Management.
+For å kunne bruke planleggingsoptimalisering må du kontrollere at alle forutsetningene er på plass i systemet, og deretter aktivere lisensnøkkelen og installere tillegget for planleggingsoptimalisering for Dynamics 365 Supply Chain Management.
 
-> [!NOTE]
-> Kravet for planleggingsoptimalisering er et LCS-aktivert miljø med høy tilgjengelighet, lag 2 eller høyere (ikke et OneBox-miljø), med Dynamics 365 Supply Chain Management versjon 10.0.7 eller senere. Hvis du prøver å installere tillegget i et OneBox-miljø, vil ikke installasjonen bli fullført, og du må avbryte installasjonen.
+### <a name="prerequisites"></a>Forutsetninger
+
+Før du kan installere tillegget for planleggingsoptimalisering, må følgende forutsetninger være på plass:
+
+- Du må kjøre Supply Chain Management i et LCS-aktivert miljø med høy tilgjengelighet, lag 2 eller høyere (ikke et OneBox-miljø), med Dynamics 365 Supply Chain Management versjon 10.0.7 eller nyere. Hvis du prøver å installere tillegget i et OneBox-miljø, vil ikke installasjonen bli fullført, og du må avbryte installasjonen.
+
+- Systemet må være konfigurert for Power Platform-integrering. Hvis du vil ha mer informasjon, kan du se [Forutsetninger for å konfigurere tillegg](../../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md#prerequisites-for-setting-up-add-ins) og [Konfigurere tillegg](../../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md#set-up-add-ins).
+
+### <a name="enable-the-planning-optimization-license"></a>Aktivere lisensen for planleggingsoptimalisering
+
+Hvis du vil bruke planleggingsoptimalisering, må du aktivere konfigurasjonsnøkkelen. Slik gjør du dette:
+
+1. Sett systemet i vedlikeholdsmodus, som beskrevet i [Vedlikeholdsmodus](../../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
+1. Gå til **Systemadministrasjon \> Oppsett \> Lisenskonfigurasjon**.
+1. Merk av for **Planleggingsoptimalisering** i fanen **Konfigurasjonsnøkler**.
+1. Deaktiver vedlikeholdsmodus, som beskrevet i [Vedlikeholdsmodus](../../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
+
+### <a name="install-the-planning-optimization-add-in"></a>Installere tillegget for planleggingsoptimalisering
+
+Du må installere tillegget fra LCS-prosjektet og deretter aktivere funksjonaliteten for planleggingsoptimalisering fra brukergrensesnittet for Supply Chain Management.
+
+Slik installerer du tillegget for planleggingsoptimalisering:
 
 1. Logg på LCS, og åpne ønsket miljø.
 1. Gå til **Detaljerte opplysninger**.
@@ -64,16 +84,16 @@ Hvis du vil bruke planleggingsoptimalisering, må du installere tillegget for pl
 1. Velg **Planleggingsoptimalisering**.
 1. Følg installasjonsveiledningen, og godta vilkårene.
 1. Velg **Installer**.
-1. I **Miljøtillegg**-hurtigfanen skal du se at planleggingsoptimalisering installeres.
+1. I hurtigfanen **Miljøtillegg** skal du se at planleggingsoptimalisering installeres.
 1. Etter noen minutter skal **Installerer** endres til **Installert** (det er mulig at du må oppdatere siden). Når installasjonen er fullført, er du klar til å aktivere planleggingsoptimalisering i Dynamics 365 Supply Chain Management.
 
-Hovedformålet med å installere tilleggsfunksjonen for Planleggingsoptimalisering er å koble til tjenesten og miljøet. Derfor må du installere tillegget separat i hvert miljø der du bruker Planleggingsoptimalisering, uavhengig av hvilken kode som er flyttet mellom miljøene.
+Hovedformålet med å installere tillegget for planleggingsoptimalisering er å koble til tjenesten og miljøet. Derfor må du installere tillegget separat i hvert miljø der du bruker Planleggingsoptimalisering, uavhengig av hvilken kode som er flyttet mellom miljøene.
 
-### <a name="planning-optimization-integration"></a>Integrering av planleggingsoptimalisering
+## <a name="integrate-planning-optimization-with-your-system"></a>Integrere planleggingsoptimalisering med systemet
 
 Hvis du vil konfigurere om planleggingsoptimaliserings-tillegget skal brukes til hovedplanlegging, går du til **Hovedplanlegging** \> **Oppsett** \> **Parametere for planleggingsoptimalisering**.
 
-#### <a name="connection-status"></a>Tilkoblingsstatus
+### <a name="connection-status"></a>Tilkoblingsstatus
 
 Tilkoblingsstatusen angir gjeldende status for tilkoblingen mellom Supply Chain Management og planleggingsoptimaliseringstjenesten. Tabellen nedenfor viser mulige verdier.
 
@@ -85,7 +105,7 @@ Tilkoblingsstatusen angir gjeldende status for tilkoblingen mellom Supply Chain 
 | Deaktiverer tilkobling | En forespørsel om å deaktivere tilkoblingen til planleggingsoptimaliseringstjenesten pågår. | Nei |
 | Henter status | Systemet venter på statusinformasjon fra planleggingsoptimaliseringstjenesten. | Nei |
 
-#### <a name="the-use-planning-optimization-option"></a>Alternativet Bruk planleggingsoptimalisering
+### <a name="the-use-planning-optimization-option"></a>Alternativet Bruk planleggingsoptimalisering
 
 Innstillingen for alternativet **Bruk planleggingsoptimalisering** bestemmer hvilken planleggingsmotor som skal brukes til hovedplanlegging:
 
@@ -112,6 +132,3 @@ Hvis Planleggingsoptimalisering er aktivert, utføres hovedplanlegging ved hjelp
 [Bruke filtre på en plan](plan-filters.md)
 
 [Annullere en planleggingsjobb](cancel-planning-job.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

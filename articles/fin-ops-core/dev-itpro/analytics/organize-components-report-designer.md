@@ -1,6 +1,6 @@
 ---
 title: Organisere rapportkomponenter i rapportutforming
-description: Når du har utformet byggeblokker og genererte rapporter, er det nyttig å organisere disse objektene slik at de blir enklere for brukerne å finne. Denne artikkelen beskriver hvordan du organiserer eksisterende rapporter, byggeblokker og objekter i rapportutforming.
+description: Dette emnet forklarer hvordan du organiserer eksisterende rapporter, byggeblokker og objekter i rapportutforming.
 author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 58525da35eb9e9376cb5793ad6c6fa45b9de42e6
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 0b55dcee00f571228ec1e933306d77d9edc12866
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685817"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092429"
 ---
 # <a name="organize-report-components-in-report-designer"></a>Organisere rapportkomponenter i rapportutforming
 
@@ -48,36 +48,36 @@ Du kan gruppere rapportdefinisjoner for å generere flere rapporter samtidig. Hv
 
 ### <a name="create-a-report-group"></a>Opprette en rapportgruppe
 
-1. Klikk **Rapportgrupper** i navigasjonsruten i Rapportutforming.
+1. Klikk på **Rapportgrupper** i navigasjonsruten i Rapportutforming.
 2. På **Fil**-menhyen klikker du **Ny** &gt; **Rapportgruppedefinisjon** for å åpne en ny rapportgruppe i visningsvinduet. Du kan også klikke **Rapportgruppe**-knappen ![Rapportgruppe](media/report-group.gif "Rapportgruppe") på verktøylinjen.
-3. Klikk kategorien **Rapportgruppe**. For å overstyre informasjonen om de enkelte rapportdefinisjonene for genereringen av denne rapporten, merker du av for **Overstyr selskap, detalj og datoinnstillinger fra de enkelte rapportdefinisjonene**. Innstillingene for firmanavnet, detaljnivået, provisorisk og datoinformasjon, fylles ut automatisk, men du kan foreta oppdateringer.
+3. Klikk på fanen **Rapportgruppe**. For å overstyre informasjonen om de enkelte rapportdefinisjonene for genereringen av denne rapporten, merker du av for **Overstyr selskap, detalj og datoinnstillinger fra de enkelte rapportdefinisjonene**. Innstillingene for firmanavnet, detaljnivået, provisorisk og datoinformasjon, fylles ut automatisk, men du kan foreta oppdateringer.
 4. Hvis du vil generere flere rapporter som viser rapporteringsvalutaene, merker du av for **Inkluder alle rapporteringsvalutaer**. Du kan deretter gå til flere visninger ved å klikke **Valuta** i webvisningen når du viser rapporten.
 5. I feltet **Rapporter i gruppen** klikker du **Legg til** for å velge rapportene som skal tas med i rapportgruppen. Hvis du vil velge flere rapporter i dialogboksen **Legg til**, holder du nede CTRL-tasten mens du merker rapporter. Når du er ferdig med å velge rapporter, klikker du **OK**.
-6. Klikk **Fil** &gt; **Lagre** for å lagre den nye rapportgruppen.
+6. Klikk på **Fil** &gt; **Lagre** for å lagre den nye rapportgruppen.
 
 ### <a name="modify-a-report-group"></a>Endre en rapportgruppe
 
-1. Klikk **Rapportgrupper** i navigasjonsruten i Rapportutforming.
+1. Klikk på **Rapportgrupper** i navigasjonsruten i Rapportutforming.
 2. Dobbeltklikk rapportgruppen du vil endre.
-3. I kategorien **Rapportgruppe** gjør du de ønskede endringene.
+3. I fanen **Rapportgruppe** gjør du de ønskede endringene.
 4. På **Fil**-menyen klikker du **Lagre** for å lagre den endrede rapportgruppen, eller du kan alternativt klikke **Lagre**-knappen ![Lagre](media/save.gif "Lagre") på verktøylinjen.
 
 > [OBS!] Hvis du har planlagt rapporter slik at de genereres med jevne mellomrom, kan du overstyre disse innstillingene og generere en rapport umiddelbart.
 
 ### <a name="generate-a-report-group-report"></a>Generere en rapport for en rapportgruppe
 
-1. Klikk **Rapportgrupper** i navigasjonsruten i Rapportutforming.
+1. Klikk på **Rapportgrupper** i navigasjonsruten i Rapportutforming.
 2. Åpne rapportgruppen som skal genereres.
-3. Klikk **Generer rapport**-knappen ![Generer rapport](media/generate-report.gif "Generer rapport") for å generere rapporter.
+3. Klikk på **Generer rapport**-knappen ![Generer rapport](media/generate-report.gif "Generer rapport") for å generere rapporter.
 
 ### <a name="delete-a-report-group"></a>Slette en rapportgruppe
 
-1. Klikk **Rapportgrupper** i navigasjonsruten i Rapportutforming.
+1. Klikk på **Rapportgrupper** i navigasjonsruten i Rapportutforming.
 2. Høyreklikk rapportgruppen som skal slettes, og velg deretter **Slett**.
 3. Når det vises en bekreftelsesmelding, klikker du **Ja**.
 
-## <a name="report-group-tab-controls"></a>Kontroller i kategorien Rapportgruppe
-Tabellen nedenfor beskriver kontrollene i kategorien **Rapportgruppe**.
+## <a name="report-group-tab-controls"></a>Kontroller i fanen Rapportgruppe
+Tabellen nedenfor beskriver kontrollene i fanen **Rapportgruppe**.
 
 <table>
 <thead>
@@ -148,6 +148,3 @@ Bare innstillingene for standard basisperiode lagres med rapportdefinisjonen.</t
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Finansrapportering](financial-reporting-intro.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

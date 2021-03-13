@@ -1,6 +1,6 @@
 ---
 title: Arbeidsområde for sjekkliste for datavalidering
-description: Med arbeidsområdet Sjekkliste for datavalidering kan du spore prosesser for validering av data på tvers av firmaer, områder og personer. Sjekklisten kan brukes i løpet av en ny implementering, etter en oppgradering eller etter en overføring.
+description: Med arbeidsområdet Sjekkliste for datavalidering kan du spore prosesser for validering av data på tvers av firmaer, områder og personer.
 author: bking
 manager: AnnBe
 ms.date: 01/12/2018
@@ -14,12 +14,12 @@ ms.reviewer: rhaertle
 ms.assetid: ''
 ms.search.region: Global
 ms.author: bking
-ms.openlocfilehash: a3ac338670fdc9fc7cb526cdcdc1e7199904da8f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 4e50d4c94c0b8468a80ad214a21c8f5e0dedae71
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687581"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092337"
 ---
 # <a name="data-validation-checklist-workspace"></a>Arbeidsområde for sjekkliste for datavalidering
 
@@ -39,8 +39,7 @@ Du må først velge et datavalideringsprosjekt øverst i arbeidsområdet. Alle d
 
 I delen **Oppgaver og status** vises status for det generelle datavalideringsprosjektet på forskjellige måter: status etter juridisk enhet, etter område og etter oppgaveliste. Du kan velge filteret for å vise statusen for et bestemt firma. Hver statuskategori gir en detaljert oversikt over både prosenten som er fullført og hvor mange oppgaver som gjenstår.
 
-Den siste kategorien er for den detaljerte oppgavelisten. Denne listen viser hele oppgavelisten.
-Du kan filtrere listen over oppgaver på flere måter. Klikk **Rediger oppgave** for å endre statusen til en oppgave eller tilordne en oppgave. Klikk **vedlegg** for å vise vedlegg for en oppgave.
+Den siste fanen er for den detaljerte oppgavelisten. Denne listen viser hele oppgavelisten. Du kan filtrere listen over oppgaver på flere måter. Klikk på **Rediger oppgave** for å endre statusen til en oppgave eller tilordne en oppgave. Klikk på **vedlegg** for å vise vedlegg for en oppgave.
 
 Oppgavenavnet er en hyperkobling til siden brukeren må gå til for å fullføre arbeidet. Du kan angi denne hyperkoblingen ved å bruke feltet **Menyelementnavn** når du redigerer eller oppretter en oppgave fra skjemaet **Konfigurer datavalideringsprosjekt**.
 
@@ -50,13 +49,10 @@ Alternativet **Fullført av** fylles automatisk ut når aktiviteten er fullført
 
 ## <a name="configure-data-validation-project-page"></a>Konfigurere datavalideringsprosjektsiden
 
-Før du kan bruke arbeidsområdet **Sjekkliste for datavalidering**, må du konfigurere prosessen ved hjelp av siden **Konfigurer datavalideringsprosjekt**. (Klikk **Arbeidsområder** \> **Sjekkliste for datavalidering** \> **Konfigurer datavalideringsprosjekt**.)
+Før du kan bruke arbeidsområdet **Sjekkliste for datavalidering**, må du konfigurere prosessen ved hjelp av siden **Konfigurer datavalideringsprosjekt**. (Klikk på **Arbeidsområder** \> **Sjekkliste for datavalidering** \> **Konfigurer datavalideringsprosjekt**.)
 
 ## <a name="task-areas"></a>Oppgaveområder
 
 Du kan bruke oppgaveområder til å gruppere datavalideringsoppgaver i logiske eierskapsområder i organisasjonen. Leverandører, Kunder eller Økonomimodul kan for eksempel brukes som oppgaveområder.
 
 **Menyelementnavnet** er tilknyttet arbeidsinnsatsen for oppgaven og kan brukes til å gå direkte til den tilknyttede siden fra oppgavekoblingen i arbeidsområdet. En datavalideringsoppgave som skal kjøre **aldersfordelingsrapporten** for leverandører som kan kobles til  **aldersfordelingsrapport**-siden.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

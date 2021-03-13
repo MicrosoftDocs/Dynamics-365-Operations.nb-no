@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetObjectFaultCalculate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e911f7ca3b67acd9d5a1b170d8c99135da730847
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 674e10b94711b00e526af4af0e0c0afddd05e62c
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434523"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5022387"
 ---
 # <a name="asset-fault-analysis"></a>Feilanalyse av aktivum
 
@@ -33,7 +32,7 @@ ms.locfileid: "4434523"
 
 I Aktivastyring kan du analysere feilregistreringer for anleggsmidler for å få en oversikt over det totale antallet feil som er registrert i en bestemt periode. Feilregistreringer kan analyseres fra ulike perspektiver, for eksempel fokus på aktiva, anleggsmiddeltyper, arbeidssteder, feilsymptomer eller feiltyper.
 
-1. Klikk **Aktivastyring** > **Forespørsler** > **Aktivumfeil** > **Feilanalyse av aktivum**.
+1. Klikk på **Aktivastyring** > **Forespørsler** > **Aktivumfeil** > **Feilanalyse av aktivum**.
 
 2. I dialogboksen **Beregning av feilanalyse av aktivum** kan du bruke **Nivå**-feltet til å angi hvor detaljert du vil at anleggsmiddellinjene skal være angående arbeidssteder. 
 
@@ -45,7 +44,7 @@ I Aktivastyring kan du analysere feilregistreringer for anleggsmidler for å få
 
 4. Klikk på **OK** for å starte beregningen.
 
-5. I kategorien **Feilanalyse av aktivum** klikker du én eller flere **Grupper etter**-knapper for å vise detaljnivået du vil se. Aktiverte knapper er uthevet. Aktiver eller deaktiver en knapp ved å klikke på den.
+5. I fanen **Feilanalyse av aktivum** klikker du én eller flere **Grupper etter**-knapper for å vise detaljnivået du vil se. Aktiverte knapper er uthevet. Aktiver eller deaktiver en knapp ved å klikke på den.
 
 6. Klikk **Oppdater beregninger** for å vise valgene dine på skjermen. 
 
@@ -107,8 +106,5 @@ I skjermbildet nedenfor ble **Type** lagt til, og den mest detaljerte beregninge
 
 
 >[!NOTE]
->Hvis du vil ha en oversikt over alle feilregistreringer som er opprettet på arbeidsordrer og vedlikeholdsanmodninger, klikker du **Aktivastyring** > **Forespørsler** > **Aktivumfeil** > **Aktivafeil**. På siden **Aktivafeil** velger du en registrering av aktivafeil og utvider ruten **Beslektet informasjon** for å se informasjon om den beslektede arbeidsordren eller vedlikeholdsanmodningen.
+>Hvis du vil ha en oversikt over alle feilregistreringer som er opprettet på arbeidsordrer og meldinger, klikker du **Aktivastyring** > **Forespørsler** > **Aktivumfeil** > **Aktivafeil**. På siden **Aktivafeil** velger du en registrering av aktivafeil og utvider ruten **Beslektet informasjon** for å se informasjon om den beslektede arbeidsordren eller meldingen.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

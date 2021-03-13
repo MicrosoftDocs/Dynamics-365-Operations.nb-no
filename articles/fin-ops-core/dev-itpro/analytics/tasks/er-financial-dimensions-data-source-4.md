@@ -1,6 +1,6 @@
 ---
 title: ER Bruke finansdimensjoner som en datakilde (del 4 - Kjøre rapporten)
-description: De følgende trinnene forklarer hvordan en bruker som er tilordnet rollen som systemansvarlig eller utvikler av elektronisk rapportering kan konfigurere en elektronisk rapportering (ER)-modell til å bruke finansdimensjoner som datakilde for ER-rapporter.
+description: Dette emnet beskriver hvordan du konfigurerer en ER-modell (Elektronisk rapportering) for å bruke finansdimensjoner som en datakilde for ER-rapporter. (Del 4)
 author: NickSelin
 manager: AnnBe
 ms.date: 05/27/2020
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fb7f49310aa25ff7c17ab4bcd50e1842be84fe2d
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: c1fe332de84339d3369ba495ca13f50c4901f366
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684745"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092281"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-4---run-the-report"></a>ER Bruke finansdimensjoner som en datakilde (del 4 - Kjøre rapporten)
 
@@ -35,20 +35,17 @@ For å fullføre disse trinnene, må du først fullføre trinnene i prosedyren "
 1. Gå til Organisasjonsstyring > Elektronisk rapportering > Konfigurasjoner.
 2. Utvid Eksempelmodell for finansdimensjoner i treet.
 3. Velg Eksempelmodell for finansdimensjoner\Finansjournalrapport i treet.
-4. Klikk Kjør.
+4. Klikk på Kjør.
 ![Siden ER-konfigurasjoner](../media/er-financial-dimensions-guides-run1.png)
 5. Angi eller velg en verdi i feltet Dimensjonsnavn.
     * Hvis du vil velge alle dimensjoner i gjeldende firma, kan du angi følgende informasjon: BusinessUnit;CostCenter;Department;ItemGroup;MainAccount;Project  
 ![Siden ER-konfigurasjoner](../media/er-financial-dimensions-guides-run2.png)
 6. Utvid delen Poster som skal inkluderes.
-7. Klikk Filter.
+7. Klikk på Filter.
 8. Merk raden for Finansjournal-tabellen og Journalpartinummer-feltet.
 9. Skriv inn 00057 i Kriterier-feltet.
-10. Klikk OK.
-11. Klikk OK.
+10. Klikk på OK.
+11. Klikk på OK.
 ![Siden ER-konfigurasjoner](../media/er-financial-dimensions-guides-run3.png)
     * Se gjennom de genererte utdataene. For hver transaksjon for det valgte partiet, presenteres finansdimensjonene fra det tilsvarende dimensjonssettet. Kjør denne rapporten, og velg ulike dimensjoner for å se at rapporten ikke er avhengig av antall valgte dimensjoner eller antall dimensjoner som er konfigurert for denne forekomsten.  
 ![Siden ER-konfigurasjoner](../media/er-financial-dimensions-guides-run4.png)
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
