@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetRequestTableCreate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 22d5e371c386abc71946bf64ed8792647f78cf1b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f45378405d9ea06ae847d93b7eacd9badf6d7e00
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434470"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019184"
 ---
 # <a name="create-maintenance-requests"></a>Opprette vedlikeholdsforespørsler
 
@@ -31,9 +30,9 @@ ms.locfileid: "4434470"
 
  
 
-Vedlikeholdsforespørsler kan brukes hvis vedlikeholdsarbeidere eller produksjonsarbeidere oppdager at utstyr krever reparasjon, men reparasjonsjobben kan ikke utføres med en gang.
+Vedlikeholdsforespørsler kan brukes hvis vedlikeholdspersoner eller produksjonsarbeidere oppdager at utstyr krever reparasjon, men reparasjonsjobben kan ikke utføres med en gang.
 
-**Eksempel:** Mens en vedlikeholdsarbeider foretar en reparasjon, oppdager hun at et annet aktivum på samme lokasjon må ha service. Vedlikeholdsarbeideren har imidlertid ikke tid eller nødvendige reservedeler til å utføre reparasjonsjobben. Derfor oppretter hun en vedlikeholdsforespørsel på aktivumet og angir en kort beskrivelse av problemet.
+**Eksempel:** Mens en vedlikeholdsperson foretar en reparasjon, oppdager hun at et annet aktivum på samme lokasjon må ha service. Vedlikeholdspersonen har imidlertid ikke tid eller nødvendige reservedeler til å utføre reparasjonsjobben. Derfor oppretter hun en vedlikeholdsforespørsel på aktivumet og angir en kort beskrivelse av problemet.
 
 Delen **Aktive vedlikeholdsforespørsler** i ruten **Relatert informasjon** til høyre for **Alle aktiva** eller **Aktive aktiva**-siden (**Aktivastyring** \> **Felles** \> **Aktiva** \> **Alle aktiva** eller **Aktive aktiva**) viser vedlikeholdsforespørslene som er knyttet til det valgte aktivumet.
 
@@ -74,6 +73,3 @@ I detaljvisningen kan du oppdatere forskjellig informasjon. Her er noen eksemple
 
 > [!NOTE]
 > Hvis du velger et aktivum når du oppretter en vedlikeholdsforespørsel, kan du legge til én feil i aktivumet. Etter at vedlikeholdsforespørselen er opprettet, kan du legge til flere feil, etter behov. Hvis du vil legge til feil, velger du **Aktivafeil** på siden **Alle vedlikeholdsforespørsler**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

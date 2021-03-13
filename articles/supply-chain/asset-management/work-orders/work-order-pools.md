@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetWorkOrderTablePoolPart, EntAssetWorkOrderPoolReferenceInfoPart, EntAssetWorkOrderPool, EntAssetWorkOrderPoolPreviewPart
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3e95a4fdfaf4817867f3d2df7774df6a27ee6599
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: afea5b8d0f958c3ab53d6cef8c9a0e9030d7c67b
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434703"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017523"
 ---
 # <a name="work-order-pools"></a>Arbeidsordresamlinger
 
@@ -71,15 +70,15 @@ På listesiden **Alle arbeidsordresamlinger** eller **Aktive arbeidsordresamling
 
 11. Hvis arbeidsordrene du la til, skal utføres i en bestemt rekkefølge, kan du angi tallene **1**, **2**, **3** og så videre i feltet **Sorteringsrekkefølge** for å angi rekkefølgen.
 
-12. Hvis du vil vise en liste over alle arbeidsordrene som er inkludert i arbeidsordren, går du til handlingsruten, kategorien **Arbeidsordresamling**, gruppen **Vis arbeidsordresamlingsrelatert** og velger **Arbeidsordrer** for å åpne listesiden **Alle arbeidsordrer**.
+12. Hvis du vil vise en liste over alle arbeidsordrene som er inkludert i arbeidsordren, går du til handlingsruten, fanen **Arbeidsordresamling**, gruppen **Vis arbeidsordresamlingsrelatert** og velger **Arbeidsordrer** for å åpne listesiden **Alle arbeidsordrer**.
 
-13. Hvis du vil beregne og vise kapasitetsbelastningen for vedlikeholdsplanen, ikke-planlagte arbeidsordrer og planlagte arbeidsordrer, går du til handlingsruten, kategorien **Arbeidsordresamling**, gruppen **Vis arbeidsordresamlingsrelatert** og velger **Kapasitetsbelastning** for å åpne dialogboksen **Beregn kapasitetsbelastning**.
+13. Hvis du vil beregne og vise kapasitetsbelastningen for vedlikeholdsplanen, ikke-planlagte arbeidsordrer og planlagte arbeidsordrer, går du til handlingsruten, fanen **Arbeidsordresamling**, gruppen **Vis arbeidsordresamlingsrelatert** og velger **Kapasitetsbelastning** for å åpne dialogboksen **Beregn kapasitetsbelastning**.
 
-14. Hvis du vil beregne og vise prognoser for elementene (reservedeler og andre nødvendige varer) som er relatert til vedlikeholdsplanen, ikke-planlagte arbeidsordrer og planlagte arbeidsordrer, går du til handlingsruten, kategorien **Arbeidsordresamling**, gruppen **Vis arbeidsordresamlingsrelatert** og velger **Vareprognose** for å åpne dialogboksen **Beregn vareprognose**.
+14. Hvis du vil beregne og vise prognoser for elementene (reservedeler og andre nødvendige varer) som er relatert til vedlikeholdsplanen, ikke-planlagte arbeidsordrer og planlagte arbeidsordrer, går du til handlingsruten, fanen **Arbeidsordresamling**, gruppen **Vis arbeidsordresamlingsrelatert** og velger **Vareprognose** for å åpne dialogboksen **Beregn vareprognose**.
 
-15. Hvis du vil vise en liste over innkjøpsrekvisisjoner som er relatert til arbeidsordrene i arbeidsordresamlingen, går du til handlingsruten, kategorien **Arbeidsordresamling**, gruppen **Innkjøp** og velger **Innkjøpsrekvisisjon for arbeidsordre** for å åpne listesiden **Innkjøpsrekvisisjon for arbeidsordre**.
+15. Hvis du vil vise en liste over innkjøpsrekvisisjoner som er relatert til arbeidsordrene i arbeidsordresamlingen, går du til handlingsruten, fanen **Arbeidsordresamling**, gruppen **Innkjøp** og velger **Innkjøpsrekvisisjon for arbeidsordre** for å åpne listesiden **Innkjøpsrekvisisjon for arbeidsordre**.
 
-16. Hvis du vil vise en liste over bestillinger som er relatert til arbeidsordrene i arbeidsordresamlingen, går du til handlingsruten, kategorien **Arbeidsordresamling**, gruppen **Innkjøp** og velger **Innkjøp for arbeidsordre** for å åpne listesiden **Innkjøp for arbeidsordre**.
+16. Hvis du vil vise en liste over bestillinger som er relatert til arbeidsordrene i arbeidsordresamlingen, går du til handlingsruten, fanen **Arbeidsordresamling**, gruppen **Innkjøp** og velger **Innkjøp for arbeidsordre** for å åpne listesiden **Innkjøp for arbeidsordre**.
 
 >[!NOTE]
 >Når en arbeidsordresamling ikke lenger er relevant for arbeidsplanleggingen, setter du alternativet **Aktiv** for denne samlingen til **Nei** i listevisningen på siden **Arbeidsordresamling**.
@@ -95,7 +94,7 @@ Illustrasjonen nedenfor viser et eksempel på listesiden **Arbeidsordresamling**
 
 Som beskrevet i forrige del, kan du legge til arbeidsordrer i en arbeidsordresamling når du oppretter samlingen. Du kan også legge til arbeidsordrer i en arbeidsordresamling på listesiden **Alle arbeidsordrer** eller **Aktive arbeidsordrer**.
 
-1. Velg arbeidsordren, og deretter går du til handlingsruten, kategorien **Arbeidsordre**, gruppen **Vedlikehold** og velger **Arbeidsordresamling**.
+1. Velg arbeidsordren, og deretter går du til handlingsruten, fanen **Arbeidsordre**, gruppen **Vedlikehold** og velger **Arbeidsordresamling**.
 
 2. Velg arbeidsordren i listen, og klikk på **Arbeidsordresamling**.
 
@@ -109,6 +108,3 @@ Som beskrevet i forrige del, kan du legge til arbeidsordrer i en arbeidsordresam
 
 Hvis du vil fjerne en arbeidsordre fra en arbeidsordresamling, gjentar du disse trinnene, men velger **Fjern** i trinn 3.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

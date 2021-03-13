@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b6bd98796140ab7aa3e7813ff1526413504554c5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 23039306bb827beb861eaacc3177f4917fabc8bf
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434469"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018102"
 ---
 # <a name="create-work-orders-from-maintenance-requests"></a>Opprette arbeidsordrer fra vedlikeholdsforespørsler
 
@@ -49,12 +48,9 @@ Når du har opprettet vedlikeholdsforespørsler, kan du enkelt konvertere dem ti
 
     En meldingslinje kan varsle deg om at det er opprettet en ny arbeidsordre.
 
-    I tillegg når du oppretter en arbeidsordre som er basert på en vedlikeholdsforespørsel, hvis aktivaet som er knyttet til vedlikeholdsforespørselen er inkludert i en garantiavtale, varsler en meldingslinje deg om garantiavtalen.
+    I tillegg når du oppretter en arbeidsordre som er basert på en vedlikeholdsforespørsel, hvis aktivumet som er knyttet til vedlikeholdsforespørselen er inkludert i en garantiavtale, varsler en meldingslinje deg om garantiavtalen.
 
 6. Velg **Aktivastyring** \> **Felles** \> **Arbeidsordrer** \> **Alle arbeidsordrer**, og åpne den nye arbeidsordren.
 
     ![Åpne ny arbeidsordre](media/05-manage-maintenance-requests.png)
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

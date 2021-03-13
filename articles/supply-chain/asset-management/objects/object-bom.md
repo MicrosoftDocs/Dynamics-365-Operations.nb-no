@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetStandardSparePartsItemGroup, EntAssetObjectBOM
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f42646ae865cd530203c997fd10c8ccd59e7fa2b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: baaf516eb386c3cf63d72bf31800b8731121fe26
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434545"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019533"
 ---
 # <a name="asset-boms"></a>Stykklister for aktiva
 
@@ -31,21 +30,21 @@ ms.locfileid: "4434545"
 
  
 
-Dette emnet beskriver stykklister for aktiva i Aktivastyring. Siden **Stykklister for aktiva** viser en liste over alle varer (reservedeler og andre varer) som brukes på et aktivum i løpet av hele levetiden. Når du oppretter et nytt aktivum, bør du vurdere å definere en stykkliste for aktiva som en del av installasjonsprosedyren. På denne måten kan du spore vareloggen for aktivaet fra opprettelsesdatoen.
+Dette emnet beskriver stykklister for aktiva i Aktivastyring. Siden **Stykklister for aktiva** viser en liste over alle varer (reservedeler og andre varer) som brukes på et aktivum i løpet av hele levetiden. Når du oppretter et nytt aktivum, bør du vurdere å definere en stykkliste for aktiva som en del av installasjonsprosedyren. På denne måten kan du spore vareloggen for aktivumet fra opprettelsesdatoen.
 
 Når du har fullført en vedlikeholdsjobb, og vareforbruket er registrert på en arbeidsordre, kan du spore forbruk av reservedeler og andre varer som brukes på aktivumet. Med denne funksjonen kan du beholde en fullstendig vareforbrukspost for alle ressursene dine. Du kan for eksempel bruke posten til å overvåke om en bestemt reservedel ofte erstattes, eller til å holde rede på reservedelene eller andre elementer som for øyeblikket brukes på et anleggsmiddel.
 
 > [!NOTE]
 > På en Arbeidsordre kan vareforbruk inkludere både reservedeler og andre tilleggsvarer, for eksempel smøremidler, bolter og pakninger.
 
-En STYKKLISTE for aktiva kan oppdateres automatisk basert på oppsettet i Asset Management. Hvis en livsløpstilstand for arbeidsordre er opprettet for å håndtere fullførte arbeidsordrer, og hvis alternativet **Oppdater stykkliste for aktiva** er satt til **Ja** på siden **Livsløpstilstander for arbeidsordre**, oppdateres alle varer som brukes i arbeidsordren, automatisk på siden **Stykkliste for aktiva** når arbeidsordren oppdateres til denne livsløpstilstanden. 
+En STYKKLISTE for aktiva kan oppdateres automatisk basert på oppsettet i Asset Management. Hvis en livssyklustilstand for arbeidsordre er opprettet for å håndtere fullførte arbeidsordrer, og hvis alternativet **Oppdater stykkliste for aktiva** er satt til **Ja** på siden **Livssyklustilstander for arbeidsordre**, oppdateres alle varer som brukes i arbeidsordren, automatisk på siden **Stykkliste for aktiva** når arbeidsordren oppdateres til denne livssyklustilstanden. 
 
 
 Du kan også oppdatere en stykkliste for aktiva manuelt ved å opprette nye varelinjer på siden **Stykkliste for aktiva**.
 
 På siden **Stykkliste for aktiva** kan du spore historikk for reservedeler for aktiva etter at vareforbruk er registrert på en arbeidsordre. Hvis du vil bruke denne funksjonaliteten, må du velge varegruppene som skal brukes til reservedelsregistrering på siden **Varegrupper for reservedeler**.
 
-Hvis du vil bruke funksjonaliteten for stykkliste for aktiva, må du først definere de nødvendige varegruppene for reservedeler. Hvis du vil at stykklisten for aktiva skal oppdateres automatisk når en arbeidsordre er fullført, kan du definere en livsløpstilstand for arbeidsordre for å håndtere denne oppdateringen. 
+Hvis du vil bruke funksjonaliteten for stykkliste for aktiva, må du først definere de nødvendige varegruppene for reservedeler. Hvis du vil at stykklisten for aktiva skal oppdateres automatisk når en arbeidsordre er fullført, kan du definere en livssyklustilstand for arbeidsordre for å håndtere denne oppdateringen. 
 
 
 ## <a name="set-up-spare-parts-item-groups"></a>Definere varegrupper for reservedeler
@@ -78,12 +77,9 @@ Når du bokfører vareforbruk på en arbeidsordre, kan du vise det registrerte v
 Du kan opprette varelinjer manuelt for aktiva.
 
 1. Velg **Ny** på siden **Stykkliste for aktiva**.
-2. Velg aktivaet du vil legge til en varelinje for, i **Aktivum**-feltet.
+2. Velg aktivumet du vil legge til en varelinje for, i **Aktivum**-feltet.
 3. Angi et sekvensielt linjenummer i feltet **Linjenummer**.
 4. I **Gyldig**-feltet angir du en startdato for varen.
 5. Hvis varen utløper, angir du en sluttdato i **Utløp**-feltet.
 6. Velg varen i **Varenummer**-feltet. Navnet angis automatisk i **Produktnavn**-feltet.
 7. Angi antallet som brukes, i **Antall**-feltet. **Enhet**-feltet oppdateres automatisk.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

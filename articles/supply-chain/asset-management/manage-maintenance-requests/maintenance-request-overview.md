@@ -1,6 +1,6 @@
 ---
-title: Vedlikeholdsanmodninger
-description: Dette emnet gir en oversikt over administrasjon av vedlikeholdsanmodninger i Aktivastyring.
+title: Meldinger
+description: Dette emnet gir en oversikt over administrasjon av meldinger i Aktivastyring.
 author: josaw1
 manager: tfehr
 ms.date: 10/01/2019
@@ -11,39 +11,38 @@ ms.technology: ''
 ms.search.form: EntAssetRequestTable, EntAssetRequestWorkspace, EntAssetRequestActivePart, EntAssetRequestWorkOrderActive, EntAssetRequestType, EntAssetRequestTableCreateWO, EntAssetRequestTableLookup, EntAssetRequestTableActivePart, EntAssetMobileRequestDetails
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7038269c66092367a0faf147766cb45eb5364e1b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1e0071ae745987a1217525b2841e3320933a9242
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434468"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019635"
 ---
-# <a name="maintenance-requests"></a>Vedlikeholdsanmodninger
+# <a name="maintenance-requests"></a>Meldinger
 
 [!include [banner](../../includes/banner.md)]
 
  
 
-Vedlikeholdsanmodninger er notater eller deklarasjoner som opprettes for å varsle en leder eller planlegger at et aktivum kan kreve en vedlikeholds- eller reparasjonsjobb, men uten å opprette en arbeidsordre. Hvis innholdet i en vedlikeholdsanmodning anses som gyldig, kan en arbeidsordre opprettes basert på vedlikeholdsanmodningen.
+Meldinger er notater eller deklarasjoner som opprettes for å varsle en leder eller planlegger at et aktivum kan kreve en vedlikeholds- eller reparasjonsjobb, men uten å opprette en arbeidsordre. Hvis innholdet i en melding anses som gyldig, kan en arbeidsordre opprettes basert på meldingen.
 
-Vedlikeholdsanmodninger kan opprettes for alle aktiva i Aktivastyring. Ulike typer vedlikeholdsanmodninger kan opprettes, avhengig av hvordan firmaet bruker vedlikeholdsanmodninger. Her er noen eksempler:
+Meldinger kan opprettes for alle aktiva i Aktivastyring. Ulike typer meldinger kan opprettes, avhengig av hvordan firmaet bruker meldinger. Her er noen eksempler:
 
-- Vedlikeholdsanmodninger
+- Meldinger
 - Notater
 - Korrigeringer eller forbedringer
 - Investeringer
-- Depotreparasjon (denne typen brukes når du mottar aktiva fra et annet sted, slik at du kan utføre en vedlikeholds- eller reparasjonsjobb, og deretter returnere aktivaet etter at jobben er fullført.)
+- Depotreparasjon (denne typen brukes når du mottar aktiva fra et annet sted, slik at du kan utføre en vedlikeholds- eller reparasjonsjobb, og deretter returnere aktivumet etter at jobben er fullført.)
 
-## <a name="view-maintenance-requests"></a>Vis vedlikeholdsanmodninger
+## <a name="view-maintenance-requests"></a>Vis meldinger
 
-Hvis du vil vise vedlikeholdsanmodninger, velger du **Aktivastyring** \> **Felles** \> **Vedlikeholdsanmondninger** \> **Alle vedlikeholdsanmodninger**, **Aktive vedlikeholdsanmodninger** eller **Mine vedlikeholdsforespørsler for arbeidssted**. Hver listeside viser noe av informasjonen som er knyttet til en vedlikeholdsanmodning.
+Hvis du vil vise meldinger, velger du **Aktivastyring** \> **Felles** \> **Vedlikeholdsanmondninger** \> **Alle meldinger**, **Aktive meldinger** eller **Mine vedlikeholdsforespørsler for arbeidssted**. Hver listeside viser noe av informasjonen som er knyttet til en melding.
 
 ![Vis forespørsler om vedlikehold](media/01-manage-maintenance-requests.png)
 
@@ -52,7 +51,7 @@ Hvis du vil vise vedlikeholdsanmodninger, velger du **Aktivastyring** \> **Felle
 > 
 > Selv om kundekontoinformasjon er tilgjengelig i Aktivaservicestyring (eksternt vedlikehold), er den ikke tilgjengelig i Aktivastyring (internt vedlikehold).
 
-Hvis du vil åpne detaljvisningen for en post, går du til listesiden **Alle vedlikeholdsanmodninger**, og i rutenettvisningen velger du en kobling i kolonnen **Vedlikeholdsanmodning**.
+Hvis du vil åpne detaljvisningen for en post, går du til listesiden **Alle meldinger**, og i rutenettvisningen velger du en kobling i kolonnen **Melding**.
 
 ![Vise detaljer for vedlikeholdsforespørsel](media/02-manage-maintenance-requests.png)
 
@@ -60,19 +59,16 @@ Knappene i handlingsruten er ordnet i kategorier. Følgende tabell beskriver kor
 
 | Navn på knapp                      | Beskrivelse |
 |----------------------------------|-------------|
-| Rediger                             | Rediger den valgte vedlikeholdsanmodningen. |
-| Nye                              | Opprett en ny vedlikeholdsanmodning. |
-| Slett                           | Slett den valgte vedlikeholdsanmodningen. |
-| Arbeidsordresamling                  | Koble den valgte vedlikeholdsanmodningen til en arbeidsordresamling. |
-| Arbeidsordre                       | Opprett en arbeidsordre, basert på den valgte vedlikeholdsanmodningen. |
-| Aktivumfeil                      | Klikk på **Aktivumfeil**, der du kan opprette en feilregistrering for den valgte vedlikeholdsanmodningen. |
-| Arbeidsordrer                      | Vis en liste over alle arbeidsordrer som er koblet til den valgte vedlikeholdsanmodningen. |
-| Oppdater tilstand for vedlikeholdsanmodning | Oppdater tilstanden for vedlikeholdsanmodningen. |
-| Logg for livsløpstilstand              | Vis en logg som viser livsløpstilstandene til den valgte vedlikeholdsanmodningen. |
-| Detaljer om vedlikeholdsanmodninger      | Skriv ut en rapport som viser detaljer om den valgte vedlikeholdsanmodningen. |
-| Send ut aktivumlån                  | Velg et aktivumlån som skal være en midlertidig erstatning for aktivumet som er valgt i den valgte vedlikeholdsanmodningen. |
+| Rediger                             | Rediger den valgte meldingen. |
+| Nye                              | Opprett en ny melding. |
+| Slett                           | Slett den valgte meldingen. |
+| Arbeidsordresamling                  | Koble den valgte meldingen til en arbeidsordresamling. |
+| Arbeidsordre                       | Opprett en arbeidsordre, basert på den valgte meldingen. |
+| Aktivumfeil                      | Klikk på **Aktivumfeil**, der du kan opprette en feilregistrering for den valgte meldingen. |
+| Arbeidsordrer                      | Vis en liste over alle arbeidsordrer som er koblet til den valgte meldingen. |
+| Oppdater tilstand for melding | Oppdater tilstanden for meldingen. |
+| Logg for livssyklustilstand              | Vis en logg som viser livssyklustilstandene til den valgte meldingen. |
+| Detaljer om meldinger      | Skriv ut en rapport som viser detaljer om den valgte meldingen. |
+| Send ut aktivumlån                  | Velg et aktivumlån som skal være en midlertidig erstatning for aktivumet som er valgt i den valgte meldingen. |
 | Returner lån av gjenstander                | Registrer aktivumlånet som returnert. |
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

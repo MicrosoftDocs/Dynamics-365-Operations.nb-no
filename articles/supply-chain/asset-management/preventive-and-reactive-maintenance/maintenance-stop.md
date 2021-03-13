@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetMaintenanceStopCopy, EntAssetMaintenanceStopObject, EntAssetObjectProductionStop, EntAssetProductionStopType, EntAssetMaintenanceStop
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 617fca55226e216197c385c88a9d7a8e3de03b03
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 986b2ae4cf7f7819caaf35e009fd4735f35e6928
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434440"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017965"
 ---
 # <a name="maintenance-downtime-activities"></a>Vedlikeholdsnedetid
 
@@ -73,11 +72,11 @@ Illustrasjonen nedenfor viser et eksempel på detaljvisningen **Aktiviteter for 
 
 9. I dialogboksen **Beregn kapasitetsbelastning** redigerer du start- og sluttidspunktene om nødvendig, og velger om du vil ta med arbeidsordrer og vedlikeholdsplaner i beregningen. Du kan bruke **Nivå**-feltet til å angi hvor detaljert beregningen av kapasitetsbelastning skal være når det gjelder arbeidssted. Hvis du for eksempel setter inn tallet 1 i feltet, og du har en arbeidsstedsstruktur med flere nivåer, vises alle aktivaene for et arbeidssted som er valgt i aktiviteten for vedlikeholdsnedetid, på øverste nivå, og derfor kan det hende at timene på en linje blir lagt til fra arbeidssteder plassert på et lavere nivå. Hvis du setter inn tallet 0 i **Nivå**-feltet, vil du se et detaljert resultat som viser alle kapasitetsbelastningslinjene på alle arbeidsstedsnivåene de er relatert til.
 
-10. Klikk på **OK** for å starte beregningen. Totalt antall timer vises i oversikten **Kapasitetsbelastning**. I kategorien **Kapasitetsbelastning** > **Grupper etter...**-handlingsrutegruppene klikker du på de relevante knappene for å få en mer detaljert oversikt over fordelingen av prognosetimer. Illustrasjonen nedenfor viser resultatet av en **Kapasitetsbelastning**-beregning.
+10. Klikk på **OK** for å starte beregningen. Totalt antall timer vises i oversikten **Kapasitetsbelastning**. I fanen **Kapasitetsbelastning** > **Grupper etter...**-handlingsrutegruppene klikker du på de relevante knappene for å få en mer detaljert oversikt over fordelingen av prognosetimer. Illustrasjonen nedenfor viser resultatet av en **Kapasitetsbelastning**-beregning.
 
 ![Figur 3](media/21-preventive-maintenance.png)
 
-11. Når du har fått en oversikt over kapasitetsbelastningen, hvis du vil foreta justeringer på vedlikeholdsjobber for arbeidsordrer eller vedlikeholdsplanlinjer, går du tilbake til detaljvisningen **Aktiviteter for vedlikeholdsnedetid** og velger linjene du vil justere i hurtigkategoriene **Resulterende vedlikeholdsjobber for arbeidsordrer** og **Vedlikeholdsplanlinjer**.
+11. Når du har fått en oversikt over kapasitetsbelastningen, hvis du vil foreta justeringer på vedlikeholdsjobber for arbeidsordrer eller vedlikeholdsplanlinjer, går du tilbake til detaljvisningen **Aktiviteter for vedlikeholdsnedetid** og velger linjene du vil justere i hurtigfanene **Resulterende vedlikeholdsjobber for arbeidsordrer** og **Vedlikeholdsplanlinjer**.
 
 12. Klikk på **Juster**-knappen og oppdater forventede start- og sluttdatoer, servicenivå eller ansvarlige vedlikeholdspersoner for de valgte vedlikeholdsjobbene for arbeidsordrer eller vedlikeholdsplanlinjene.
 
@@ -90,13 +89,10 @@ Illustrasjonen nedenfor viser et eksempel på detaljvisningen **Aktiviteter for 
 
 15. I dialogboksen **Beregn vareprognose** redigerer du start- og sluttidspunktene om nødvendig, og velger om du vil ta med arbeidsordrer og vedlikeholdsplaner i beregningen. Du kan bruke **Nivå**-feltet til å angi hvor detaljert beregningen av kapasitetsbelastning skal være når det gjelder arbeidssted. Hvis du for eksempel setter inn tallet 1 i feltet, og du har en arbeidsstedsstruktur med flere nivåer, vises alle aktivaene for et arbeidssted som er valgt i aktiviteten for vedlikeholdsnedetid, på øverste nivå, og derfor kan det hende at timene på en linje blir lagt til fra arbeidssteder plassert på et lavere nivå. Hvis du setter inn tallet 0 i **Nivå**-feltet, vil du se et detaljert resultat som viser alle kapasitetsbelastningslinjene på alle arbeidsstedsnivåene de er relatert til.
 
-16. Klikk på **OK** for å starte beregningen. Totalt antall vareprognoser vises i oversikten **Vareprognose**. I kategorien **Vareprognose** > **Grupper etter...**-handlingsrutegruppene klikker du på de relevante knappene for å få en mer detaljert oversikt over fordelingen av prognosevarer. Illustrasjonen nedenfor viser resultatet av en **Vareprognose**-beregning.
+16. Klikk på **OK** for å starte beregningen. Totalt antall vareprognoser vises i oversikten **Vareprognose**. I fanen **Vareprognose** > **Grupper etter...**-handlingsrutegruppene klikker du på de relevante knappene for å få en mer detaljert oversikt over fordelingen av prognosevarer. Illustrasjonen nedenfor viser resultatet av en **Vareprognose**-beregning.
 
 ![Figur 4](media/22-preventive-maintenance.png)
 
 - Du kan kopiere aktiva fra én aktivitet for vedlikeholdsnedetid til en annen. I **Alle aktiviteter for vedlikeholdsnedetid** velger du **Kopier aktiviteter for vedlikeholdsnedetid**-knappen, gjør valgene i feltene **Fra aktiviteter for vedlikeholdsnedetid** og **Til aktiviteter for vedlikeholdsnedetid**, og klikker på **OK**.
 - I **Alle aktiviteter for vedlikeholdsnedetid** klikker du på knappen **Vedlikeholdsplanlinjer** eller **Aktive arbeidsordrer** for å åpne de tilknyttede listene og vise linjene som er knyttet til den valgte aktiviteten for vedlikeholdsnedetid.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

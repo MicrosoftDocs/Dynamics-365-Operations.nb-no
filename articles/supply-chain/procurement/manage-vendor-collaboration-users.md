@@ -1,7 +1,7 @@
 ---
 title: Administrere brukere av leverandørsamarbeid
 description: Dette emnet beskriver hvordan du kan be om klargjøring av nye brukere for leverandørsamarbeid og hvordan du legger til nye kontakter for leverandørsamarbeid.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: smmContactPerson, VendVendorContactPerson, VendVendorPortalUser
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 220744
 ms.assetid: edc19ad0-3565-4d47-98ac-dda6098f63ac
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 29930fdb65f96e281e0f0f01db41ec1475ad81c2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6356c1d11ba507c0eaa42087bdebe982ef091dbd
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434692"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019942"
 ---
 # <a name="manage-vendor-collaboration-users"></a>Administrere brukere av leverandørsamarbeid
 
@@ -38,10 +37,10 @@ Hvis du vil ha mer informasjon om hvordan du bruker samarbeid med leverandøren 
 ## <a name="add-new-vendor-collaboration-contacts"></a>Legge til nye kontakter for leverandørsamarbeid
 Hvis du vil at noen skal ha tilgang til leverandørsamarbeid, må de først legges til som en kontakt for leverandørsamarbeid. Du kan også legge til kontakter for ansatte i firmaet som ikke bruker leverandørsamarbeid. De kan for eksempel være kontakten for andre typer innkjøpsinformasjon. Nye kontakter legges til på siden **Alle kontakter**, som åpnes fra menyen **Leverandørsamarbeid** &gt; **Kontakter**. Slik legger du til en ny kontakt:
 
-1.  Klikk **Ny**.
+1.  Klikk på **Ny**.
 2.  Angi informasjon om kontaktpersonen.
 3.  Velg hvilken juridisk enhet de representerer i firmaet, og hvilken juridisk enhet de skal jobbe med i firmaet som de skal samarbeide med. Dette gjør du ved å velge et par av **Juridisk enhet i mitt firma** / **Juridisk enhet i kundefirma**.
-4.  Klikk **Opprett**.
+4.  Klikk på **Opprett**.
 
 Hvis du vil slette en kontakt, er det bare mulig å slette de du har opprettet.
 
@@ -63,7 +62,7 @@ Før du kan be om at en ny bruker klargjøres, må vedkommende defineres som en 
 2. Angi en e-postadresse for brukeren. Denne adressen brukes av brukeren til å logge på Supply Chain Management. Hvis e-postadressen tilhører et domene som er registrert som en leier i Microsoft Azure, må e-postadressen være en eksisterende Azure Active Directory-konto (AAD) for at klargjøringsprosessen skal fullføres. Hvis e-postadressen ikke tilhører et domene som er registrert i Microsoft Azure, opprettes en AAD-konto som en del av klargjøringsprosessen, og den nye brukeren mottar en e-postinvitasjon. E-postadresser for forbrukere med domener som @hotmail.com, @gmail.com eller @comcast.net, kan brukes for å registrere en bruker.
 3. Sett alternativet **Tilgang til leverandørsamarbeid tillatt** til **Ja** for alle de juridiske enhetene som brukeren må ha tilgang til.
 4. I delen **Tilordne brukerroller** merker du av for **Tilordne** for sikkerhetsrollene som den nye brukeren skal ha.
-5. Klikk **Send**.
+5. Klikk på **Send**.
 
 Når brukerforespørselen for leverandør sendes inn, settes feltet **Tilgang til leverandørsamarbeid tillatt** til **Ja** for den valgte leverandørkontoen, og en arbeidsflyt for brukerforespørsel startes. Som en del av arbeidsflyten opprettes en ny bruker i Supply Chain Management, og sikkerhetsroller tilordnes. I tillegg aktiveres en Azure B2B-tjeneste som starter samhandling med Azure-portalen og knytter en ny eller eksisterende AAD-konto til brukerkontoen for Supply Chain Management. Hvis du vil ha mer informasjon, se [Hva er Azure AD B2B samarbeid?](https://docs.microsoft.com/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
 
@@ -78,7 +77,7 @@ Slik ber du om at en bruker deaktiveres:
 
 1.  På siden **Alle kontakter** klikker du **Deaktiver** **leverandørbruker**.
 2.  Skriv inn en kommentar i feltet **Bestillingsårsak**.
-3.  Klikk **Send**.
+3.  Klikk på **Send**.
 
 ### <a name="modify-security-roles"></a>Endre sikkerhetsroller
 
@@ -89,11 +88,8 @@ Slik ber du om at sikkerhetsrollene endres for en bruker:
 1.  På siden **Alle kontakter** klikker du **Vedlikehold** **roller for leverandørbruker**.
 2.  Skriv inn en kommentar i feltet **Bestillingsårsak**.
 3.  I delen **Vedlikehold brukerroller** velger du sikkerhetsrollene som du vil tilordne, eller fjerner dem du vil fjerne.
-4.  Klikk **Send**.
+4.  Klikk på **Send**.
 
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

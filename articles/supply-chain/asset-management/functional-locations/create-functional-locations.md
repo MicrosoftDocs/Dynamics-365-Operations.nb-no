@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetFunctionalLocationCopyStructure, EntAssetFunctionalLocationCreate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37da9d59e4e9cf84238f6798a1aa7de72ff91f02
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 81b5b81d7c318ba0a195dbc6324d700ccb8d39bf
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434301"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018227"
 ---
 # <a name="create-functional-locations"></a>Opprette arbeidssteder
 
@@ -66,13 +65,13 @@ Følgende fremgangsmåte beskriver hvordan du oppretter arbeidsstedene som kreve
 8. Velg arbeidsstedet, og klikk på **Rediger**-knappen for å legge til mer informasjon.
 
 >[!NOTE]
->Avhengig av oppsettet av livsløpstilstander for arbeidssteder kan det hende du må opprette alle underordnede steder for et arbeidssted og deretter endre livsløpstilstanden for arbeidsstedet før du kan begynne å installere aktiva. Se [Installere aktiva på arbeidssteder](../functional-locations/install-objects-on-functional-locations.md) hvis du vil ha mer informasjon om installasjon av aktiva. Se [Livsløpstilstander for arbeidssteder](../setup-for-functional-locations/functional-location-stages.md) for å finne ut mer om oppsettet av livsløpstilstander for arbeidssteder.
+>Avhengig av oppsettet av livssyklustilstander for arbeidssteder kan det hende du må opprette alle underordnede steder for et arbeidssted og deretter endre livssyklustilstanden for arbeidsstedet før du kan begynne å installere aktiva. Se [Installere aktiva på arbeidssteder](../functional-locations/install-objects-on-functional-locations.md) hvis du vil ha mer informasjon om installasjon av aktiva. Se [Livssyklustilstander for arbeidssteder](../setup-for-functional-locations/functional-location-stages.md) for å finne ut mer om oppsettet av livssyklustilstander for arbeidssteder.
 
 I detaljvisning vil du se hurtigfaner der du kan legge til og redigere informasjon om arbeidsstedet.
 
 ## <a name="general-information"></a>Generell informasjon
 
-Denne delen gir en oversikt over overordnet og underordnet informasjon i arbeidsstedsstrukturen. I **Detaljer**-delen kan du se antall aktivaattributter, vedlikeholdsplaner og aktiva som er knyttet til arbeidsstedet. I **Beholdning**-delen kan du velge området og lageret som arbeidsstedet er knyttet til. Område og lager brukes i forbindelse med vareprognoser for arbeidsordrer. Når du oppretter en vareprognose, brukes område- og lagerinformasjon fra arbeidsstedet til aktivumet automatisk. I delen **Livsløpstilstand** vises informasjon om den livsløpstilstanden for arbeidsstedet.
+Denne delen gir en oversikt over overordnet og underordnet informasjon i arbeidsstedsstrukturen. I **Detaljer**-delen kan du se antall aktivaattributter, vedlikeholdsplaner og aktiva som er knyttet til arbeidsstedet. I **Beholdning**-delen kan du velge området og lageret som arbeidsstedet er knyttet til. Område og lager brukes i forbindelse med vareprognoser for arbeidsordrer. Når du oppretter en vareprognose, brukes område- og lagerinformasjon fra arbeidsstedet til aktivumet automatisk. I delen **Livssyklustilstand** vises informasjon om den livssyklustilstanden for arbeidsstedet.
 
 ## <a name="installed-assets"></a>Installerte aktiva
 
@@ -111,27 +110,24 @@ Når data angående **Område**, **Lager**, **Adresse** og **Finansdimensjoner**
 
 ## <a name="copy-a-functional-location-structure"></a>Kopiere en arbeidsstedsstruktur
 
-Hvis firmaet har flere arbeidssteder med lignende stedsstrukturer, kan du bruke kopieringsfunksjonen i Aktivastyring til raskt å opprette flere lignende stedshierarkier. Når du kopierer et bestemt arbeidssted eller en hel struktur, har det nye stedet eller strukturen samme navn som den du kopierte. Nårkopierings prosedyren er ferdig, kan du enkelt endre navnet eller andre innstillinger på det nye arbeidsstedet, forutsatt at livsløpstilstanden som er valgt for det nye arbeidsstedet, tillater det.
+Hvis firmaet har flere arbeidssteder med lignende stedsstrukturer, kan du bruke kopieringsfunksjonen i Aktivastyring til raskt å opprette flere lignende stedshierarkier. Når du kopierer et bestemt arbeidssted eller en hel struktur, har det nye stedet eller strukturen samme navn som den du kopierte. Når kopieringsprosedyren er ferdig, kan du enkelt endre navnet eller andre innstillinger på det nye arbeidsstedet, forutsatt at livssyklustilstanden som er valgt for det nye arbeidsstedet, tillater det.
 
 1. I **Alle arbeidssteder** velger du arbeidsstedet du vil kopiere. Du velger for eksempel en topplassering (overordnet) hvis du vil kopiere hele arbeidsstedsstrukturen, inkludert underordnede steder.
 2. Velg knappen **Kopier arbeidsstedsstruktur**. Plasseringen du valgte på listesiden, vises i **Kopier fra**-feltet.
 3. Sett inn navnet på det nye stedet i feltet **Nytt arbeidssted**.
 4. I feltet **Overordnet det skal limes inn under** bør du bare sette inn en overordnet ID hvis stedet du oppretter, skal være en del av en eksisterende arbeidsstedsstruktur.
-5. Klikk **OK**. Den nye arbeidsstedsstrukturen vises i **Alle arbeidssteder**.
+5. Klikk på **OK**. Den nye arbeidsstedsstrukturen vises i **Alle arbeidssteder**.
 
 >[!NOTE]
->Når du kopierer en arbeidsstedsstruktur, er livsløpstilstander for arbeidssteder i den nye strukturen satt til "første tilstand" som du har opprettet for arbeidssteder. Om du kan gi nytt navn til eller slette et arbeidssted ved hjelp av knappene **Gi nytt navn** og **Slett** i **Alle arbeidssteder**, avhenger av den gjeldende livsløpstilstanden til arbeidsstedet.
+>Når du kopierer en arbeidsstedsstruktur, er livssyklustilstander for arbeidssteder i den nye strukturen satt til "første tilstand" som du har opprettet for arbeidssteder. Om du kan gi nytt navn til eller slette et arbeidssted ved hjelp av knappene **Gi nytt navn** og **Slett** i **Alle arbeidssteder**, avhenger av den gjeldende livssyklustilstanden til arbeidsstedet.
 
 ## <a name="delete-a-functional-location"></a>Slette et arbeidssted
 
-Et arbeidssted med beslektede understeder kan slettes hvis ingen aktiva er installert på noen av arbeidsstedene du prøver å slette, og hvis den gjeldende livsløpstilstanden for arbeidsstedet tillater det.
+Et arbeidssted med beslektede understeder kan slettes hvis ingen aktiva er installert på noen av arbeidsstedene du prøver å slette, og hvis den gjeldende livssyklustilstanden for arbeidsstedet tillater det.
 
 1. I **Alle arbeidssteder** velger du arbeidsstedet du vil slette.
-2. Hvis det er nødvendig, oppdaterer du arbeidsstedet til en livsløpstilstand som tillater sletting av et arbeidssted.
+2. Hvis det er nødvendig, oppdaterer du arbeidsstedet til en livssyklustilstand som tillater sletting av et arbeidssted.
 3. Velg **Slett**.
 
 >[!NOTE]
->Hvis du ikke kan slette et arbeidssted, kan du i stedet håndtere slettingen ved å definere en livsløpstilstand for arbeidsstedet til dette formålet. Du kan for eksempel definere en "kassert" eller "slettet" fase, som ikke skal være en aktiv fase, i skjemaet **Livsløpstilstander for arbeidssteder**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+>Hvis du ikke kan slette et arbeidssted, kan du i stedet håndtere slettingen ved å definere en livssyklustilstand for arbeidsstedet til dette formålet. Du kan for eksempel definere en "kassert" eller "slettet" fase, som ikke skal være en aktiv fase, i skjemaet **Livssyklustilstander for arbeidssteder**.

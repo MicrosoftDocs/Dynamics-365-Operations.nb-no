@@ -1,7 +1,7 @@
 ---
 title: Feilsøke stillingsbudsjettering
 description: Denne artikkelen inneholder svar på spørsmål du kan ha når du konfigurerer stillingsbudsjettering. Det tar for seg vanlige spørsmål om hvordan du oppretter budsjettetkostnadselementer, kompensasjonsgrupper og kompensasjonsrutenett.
-author: ryansandness
+author: panolte
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: HcmBudgetPurposeType, HcmPositionForecast
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 88253
 ms.assetid: c44df01b-8700-4022-b4c6-c4b1cb84d31d
 ms.search.region: Global
-ms.author: ryansand
+ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: afddc9815ee3864236f93c8400bcf116d5b6cc89
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8211c5bd4514bffbd001f9930859f777dac7f0e1
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4446485"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017623"
 ---
 # <a name="position-budgeting-troubleshooting"></a>Feilsøke stillingsbudsjettering
 
@@ -64,6 +63,3 @@ Datoene på prognosestillingens linje for kostnadselement må være innenfor fø
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

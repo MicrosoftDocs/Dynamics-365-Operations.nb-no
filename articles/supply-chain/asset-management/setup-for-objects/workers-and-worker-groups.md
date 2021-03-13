@@ -1,5 +1,5 @@
 ---
-title: Vedlikeholdsarbeidere og arbeidsgrupper
+title: Vedlikeholdspersoner og arbeidsgrupper
 description: Dette emnet forklarer vedlikeholdspersoner og arbeidergrupper i Aktivastyring.
 author: josaw1
 manager: tfehr
@@ -11,21 +11,20 @@ ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetWorkerGroupCopyFromResourceGroup, EntAssetWorkerGroup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 29fb487f02c28dbe940a1e00891f1e7ed20135b2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b81de02f144712786704a46d2096dfb510d5ce68
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434312"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017398"
 ---
-# <a name="maintenance-workers-and-worker-groups"></a>Vedlikeholdsarbeidere og arbeidsgrupper
+# <a name="maintenance-workers-and-worker-groups"></a>Vedlikeholdspersoner og arbeidsgrupper
 
 [!include [banner](../../includes/banner.md)]
 
@@ -50,13 +49,13 @@ Du kan også opprette vedlikeholdspersongrupper og knytte vedlikeholdspersoner t
 7. På hurtigfanen **Arbeidssteder** velger du **Legg til**, og velg deretter et arbeidssted for vedlikeholdspersonen. Angi også hvilket sted som er det primære arbeidsstedet for arbeideren.
 
     > [!NOTE]
-    > Når du legger til arbeidssteder for en arbeider, vises alle aktive aktiva som er relatert til arbeidsstedene, på ulike menyelementer, for eksempel **Mine aktiva aktiva** og **Mine aktive arbeidssteder**. De vises også i aktivaoppslagene som vises når du oppretter et nytt aktivum, en vedlikeholdsanmodning eller en arbeidsordre.
+    > Når du legger til arbeidssteder for en arbeider, vises alle aktive aktiva som er relatert til arbeidsstedene, på ulike menyelementer, for eksempel **Mine aktiva aktiva** og **Mine aktive arbeidssteder**. De vises også i aktivaoppslagene som vises når du oppretter et nytt aktivum, en melding eller en arbeidsordre.
 
     Feltene på hurtigfanen **Detaljer** viser antall vedlikeholdspersongrupper og arbeidssteder som den valgte vedlikeholdspersonen er relatert til.
 
 ## <a name="create-worker-groups"></a>Opprett arbeidergrupper
 
-1. Velg **Aktivastyring** \> **Oppsett** \> **Arbeidere** \> **Vedlikeholdsarbeidergrupper**.
+1. Velg **Aktivastyring** \> **Oppsett** \> **Arbeidere** \> **Vedlikeholdspersongrupper**.
 2. Velg **Ny** for å legge til en ny arbeidergruppe i listen.
 3. Angi en gruppe-ID i feltet **Vedlikeholdspersongruppe**.
 4. Angi et navn i **Navn**-feltet.
@@ -64,6 +63,3 @@ Du kan også opprette vedlikeholdspersongrupper og knytte vedlikeholdspersoner t
 6. Hvis en ressursgruppe skal knyttes til den valgte vedlikeholdspersongruppen, velger du **Kopier fra ressursgruppe**. I **Gruppe**-feltet velger du ressursgruppen du vil kopiere kalenderinnstillinger fra. I feltet **Arbeidsgruppe** velger du arbeidergruppen du vil kopiere kalenderinnstillingene for ressursgruppen til. Dette trinnet er bare relevant hvis du vil at vedlikeholdspersoner skal bruke kalenderen som er relatert til en ressurs (arbeidssenter) under arbeidsordreplanlegging.
 
     Feltet på hurtigfanen **Detaljer** viser antall vedlikeholdspersoner som er definert for den valgte vedlikeholdspersongruppen.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

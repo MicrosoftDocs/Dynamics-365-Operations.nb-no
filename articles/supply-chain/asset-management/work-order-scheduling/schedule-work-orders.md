@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetWorkOrderSchdulePreviewPart, EntAssetWorkOrderScheduleExclusively, EntAssetWorkOrderSchduleInfoPart, EntAssetWorkOrderScheduleListPage, EntAssetWorkOrderSchedule, EntAssetWorkOrderScheduleDelete
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 095ff2697a7cc8486afc6e77fd7d06f761e74e75
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7e7751e3e2f216abf46f02ee0644909c6894c5b2
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434511"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020235"
 ---
 # <a name="schedule-work-orders"></a>Planlegg arbeidsordrer
 
@@ -33,7 +32,7 @@ ms.locfileid: "4434511"
 
 Dette emnet forklarer hvordan du planlegger arbeidsordrer i Aktivastyring. 
 
-Det nødvendige antallet timer for en arbeidsordre defineres av summen av prognosetimer minus posterte timer. Hvis det kreves mer tid, må prognosen justeres tilsvarende. I **Aktivastyring** > **Felles** > **Arbeidsordrer** > **Alle arbeidsordrer** eller **Aktive arbeidsordrer** kan du vise eller redigere prognoser i en arbeidsordre ved å velge arbeidsordren og klikke på **Prognose** i kategorien **Arbeidsordre**. Når arbeidsordrer er opprettet og estimert, er neste trinn å tildele nødvendige vedlikeholdspersoner og verktøy.
+Det nødvendige antallet timer for en arbeidsordre defineres av summen av prognosetimer minus posterte timer. Hvis det kreves mer tid, må prognosen justeres tilsvarende. I **Aktivastyring** > **Felles** > **Arbeidsordrer** > **Alle arbeidsordrer** eller **Aktive arbeidsordrer** kan du vise eller redigere prognoser i en arbeidsordre ved å velge arbeidsordren og klikke på **Prognose** i fanen **Arbeidsordre**. Når arbeidsordrer er opprettet og estimert, er neste trinn å tildele nødvendige vedlikeholdspersoner og verktøy.
 
 Bare arbeidsordrer med en arbeidsordrelivssyklustilstand som tillater planlegging, kan planlegges. Tillat planlegging defineres i **Aktivastyring** > **Oppsett** > **Arbeidsordrer** > **Livssyklustilstander** > **Generelt**-hurtigfanen > **Tillat planlegging**-veksleknappen.
 
@@ -41,7 +40,7 @@ Bare arbeidsordrer med en arbeidsordrelivssyklustilstand som tillater planleggin
 
 2. Velg arbeidsordrene du vil planlegge, i listen. Du kan for eksempel sortere listen etter **Gjeldende livssyklustilstand**.
 
-3. Gå til kategorien **Generelt**, og klikk på **Planlegg**.
+3. Gå til fanen **Generelt**, og klikk på **Planlegg**.
 
 4. I dialogboksen **Planlegg arbeidsordrer** kan du legge til valg som gjelder forventet startdato og servicenivå, om nødvendig. Hvis planleggingsprosessen skal observere kapasitetsbegrensninger for ressurser som allerede er planlagt for andre jobber, må du kontrollere at veksleknappene for **Aktivum**, **Verktøy** og **Arbeider** er satt til Ja.
 
@@ -61,12 +60,12 @@ Bare arbeidsordrer med en arbeidsordrelivssyklustilstand som tillater planleggin
 
 ![Figur 1](media/03-work-order-scheduling.png)
 
-Arbeidsordretypen som er knyttet til arbeidsordrer, kan definere planlegging for én vedlikeholdsperson (**Aktivastyring** > **Oppsett** > **Arbeidsordrer** > **Arbeidsordretyper** > **Én vedlikeholdsperson**-veksleknappen satt til Ja). Dette betyr at hvis arbeidsordretypen brukes i en arbeidsordre, settes veksleknappen **Én vedlikeholdsperson** automatisk til Ja på detaljsiden **Alle arbeidsordrer** > **Hode**-visningen > **Tidsplan**-hurtigfanen. Under arbeidsordreplanleggingen vil alle arbeidsordrejobber som opprettes i arbeidsordren, bli planlagt til samme vedlikeholdsarbeider. Hvis det er nødvendig, kan du redigere valget på **Én vedlikeholdsperson**-veksleknappen i **Alle arbeidsordrer** slik at du kan planlegge flere arbeidere eller én arbeider for arbeidsordrejobbene.
+Arbeidsordretypen som er knyttet til arbeidsordrer, kan definere planlegging for én vedlikeholdsperson (**Aktivastyring** > **Oppsett** > **Arbeidsordrer** > **Arbeidsordretyper** > **Én vedlikeholdsperson**-veksleknappen satt til Ja). Dette betyr at hvis arbeidsordretypen brukes i en arbeidsordre, settes veksleknappen **Én vedlikeholdsperson** automatisk til Ja på detaljsiden **Alle arbeidsordrer** > **Hode**-visningen > **Tidsplan**-hurtigfanen. Under arbeidsordreplanleggingen vil alle arbeidsordrejobber som opprettes i arbeidsordren, bli planlagt til samme vedlikeholdsperson. Hvis det er nødvendig, kan du redigere valget på **Én vedlikeholdsperson**-veksleknappen i **Alle arbeidsordrer** slik at du kan planlegge flere arbeidere eller én arbeider for arbeidsordrejobbene.
 
 Planleggingsprosessen i Aktivastyring omfatter flere faktorer i planleggingsberegningen:
 
-- Beregne poeng for både arbeidsordrer og vedlikeholdsarbeidere. Poengene for arbeidsordrer og vedlikeholdsarbeidere defineres i **Parametere for aktivastyring**. 
-- Se etter samsvarende kompetanser, dvs. ferdigheter og sertifikater som kreves for å utføre jobben. Kompetanser og sertifikater defineres under vedlikeholdspersoner i **Personale**-modulen (**Personale** > **Arbeidere** > **Arbeidere** > velg arbeider i listen > kategorien **Arbeider** > **Kompetanser**-delen > **Kompetanse**- og **Sertifikater**-knappene). Kompetanser og sertifikater kan også legges til vedlikeholdsjobbtyper og vedlikeholdsjobbfag. Les mer om kompetanser og vedlikeholdsjobbtyper i [Kategorier for vedlikeholdsjobbtyper og vedlikeholdsjobbtyper, varianter av vedlikeholdsjobbtyper, vedlikeholdsjobbfag og sjekklister for vedlikehold](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md).  
+- Beregne poeng for både arbeidsordrer og vedlikeholdspersoner. Poengene for arbeidsordrer og vedlikeholdspersoner defineres i **Parametere for aktivastyring**. 
+- Se etter samsvarende kompetanser, dvs. ferdigheter og sertifikater som kreves for å utføre jobben. Kompetanser og sertifikater defineres under vedlikeholdspersoner i **Personale**-modulen (**Personale** > **Arbeidere** > **Arbeidere** > velg arbeider i listen > fanen **Arbeider** > **Kompetanser**-delen > **Kompetanse**- og **Sertifikater**-knappene). Kompetanser og sertifikater kan også legges til vedlikeholdsjobbtyper og vedlikeholdsjobbfag. Les mer om kompetanser og vedlikeholdsjobbtyper i [Kategorier for vedlikeholdsjobbtyper og vedlikeholdsjobbtyper, varianter av vedlikeholdsjobbtyper, vedlikeholdsjobbfag og sjekklister for vedlikehold](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md).  
 
 ## <a name="scores-used-in-work-order-scheduling"></a>Poeng som brukes i arbeidsordreplanlegging
 
@@ -100,15 +99,15 @@ Arbeidsordrene blir planlagt i følgende rekkefølge: WO-000108 **16**, WO-00010
 
 Hvis servicenivåpoengene økes til 100 i stedet for 5, vil planleggingsrekkefølgen være: WO-000108 **18**, WO-000108 **16**, WO-000108 **17**.
 
-Vurderingsresultatene relatert til beregning av hvilke vedlikeholdsarbeidere som skal arbeide med arbeidsordrene, defineres som tall, som legges til hver vedlikeholdsarbeiderberegning under arbeidsordreplanleggingen. Vedlikeholdsarbeideren med høyest poengsum velges i arbeidsordren. Her er en kort beskrivelse av poengene for vedlikeholdsarbeideren:
+Vurderingsresultatene relatert til beregning av hvilke vedlikeholdspersoner som skal arbeide med arbeidsordrene, defineres som tall, som legges til hver vedlikeholdspersonberegning under arbeidsordreplanleggingen. Vedlikeholdspersonen med høyest poengsum velges i arbeidsordren. Her er en kort beskrivelse av poengene for vedlikeholdspersonen:
 
 | Poengsum for vedlikeholdsperson| Beskrivelse |
 |---|---|
 | Ansvarlig arbeider | Hvis vedlikeholdspersonen er valgt som ansvarlig arbeider i arbeidsordren, legges poengene til. |
 | Ansvarlig vedlikeholdspersongruppe | Hvis vedlikeholdspersonen er del av den ansvarlige vedlikeholdsarbeidegruppen i arbeidsordren, legges poengene til. |
-| Foretrukket vedlikeholdsperson         | Hvis arbeideren er valgt som foretrukket vedlikeholdsperson for aktivaet, legges poengene til. |
-| Foretrukket vedlikeholdspersongruppe   | Hvis arbeideren er del av den foretrukne vedlikeholdspersongruppen for aktivaet, legges poengene til.  |
-| Lokasjon  | Hvis firmaet bruker arbeidssteder, får vedlikeholdsarbeiderne full poengsum hvis de befinner seg på arbeidsstedet som er knyttet til anleggsmidlet. Hvis arbeidsstedet til anleggsmidlet har et overordnet sted, får vedlikeholdsarbeidere på dette arbeidsstedet 1/2 poeng. Hvis dette stedet også har et overordnet sted, får vedlikeholdsarbeidere på dette stedet 1/3 poeng. Hvis dette stedet også har et overordnet sted, får vedlikeholdsarbeidere på dette stedet 1/4 poeng osv. Hvis firmaet ditt bruker aktivasted, som vi ikke anbefaler, brukes sted, område og sone til å beregne stedspoengsummer. Arbeiderne får full poengsum hvis de befinner seg på stedet og i området og sonen som er knyttet til eiendelen. Hvis arbeiderstedet bare samsvarer med sted og område, er rangeringspoengsummen for vedlikeholdsarbeideren 2/3 for hele poengsummen. Hvis vedlikeholdsarbeiderstedet bare samsvarer med sted, er rangeringspoengsummen for vedlikeholdsarbeideren 1/3 for hele poengsummen. |
+| Foretrukket vedlikeholdsperson         | Hvis arbeideren er valgt som foretrukket vedlikeholdsperson for aktivumet, legges poengene til. |
+| Foretrukket vedlikeholdspersongruppe   | Hvis arbeideren er del av den foretrukne vedlikeholdspersongruppen for aktivumet, legges poengene til.  |
+| Lokasjon  | Hvis firmaet bruker arbeidssteder, får vedlikeholdspersonene full poengsum hvis de befinner seg på arbeidsstedet som er knyttet til anleggsmidlet. Hvis arbeidsstedet til anleggsmidlet har et overordnet sted, får vedlikeholdspersoner på dette arbeidsstedet 1/2 poeng. Hvis dette stedet også har et overordnet sted, får vedlikeholdspersoner på dette stedet 1/3 poeng. Hvis dette stedet også har et overordnet sted, får vedlikeholdspersoner på dette stedet 1/4 poeng osv. Hvis firmaet ditt bruker aktivasted, som vi ikke anbefaler, brukes sted, område og sone til å beregne stedspoengsummer. Arbeiderne får full poengsum hvis de befinner seg på stedet og i området og sonen som er knyttet til eiendelen. Hvis arbeiderstedet bare samsvarer med sted og område, er rangeringspoengsummen for vedlikeholdspersonen 2/3 for hele poengsummen. Hvis vedlikeholdspersonstedet bare samsvarer med sted, er rangeringspoengsummen for vedlikeholdspersonen 1/3 for hele poengsummen. |
 | Arbeiderens startdato  | For hver dato som den planlagte startdatoen er senere enn forventet startdato, trekkes poengsummen fra.  |
 
 >[!NOTE]
@@ -118,7 +117,7 @@ Vurderingsresultatene relatert til beregning av hvilke vedlikeholdsarbeidere som
 
 Krav til kompetanse og sertifikater kan defineres i vedlikeholdsjobbtyper (**Aktivastyring** > **Oppsett** > **Jobber** > **Vedlikeholdsjobbtyper**) og vedlikeholdsjobbfag (**Aktivastyring** > **Oppsett** > **Jobber** > **Vedlikeholdsjobbfag**). 
 
-Vedlikeholdsjobbtyper og vedlikeholdsjobbfag velges i arbeidsordrejobber. Hvis kompetanse eller sertifikater er valgt for en vedlikeholdsjobbtype eller et vedlikeholdsjobbfag, og vedlikeholdsjobbtypen eller vedlikeholdsjobbfaget brukes på en arbeidsordrejobb, er det bare vedlikeholdsarbeidere med samsvarende ferdigheter og sertifikater som tilordnes til å jobbe på arbeidsordren.
+Vedlikeholdsjobbtyper og vedlikeholdsjobbfag velges i arbeidsordrejobber. Hvis kompetanse eller sertifikater er valgt for en vedlikeholdsjobbtype eller et vedlikeholdsjobbfag, og vedlikeholdsjobbtypen eller vedlikeholdsjobbfaget brukes på en arbeidsordrejobb, er det bare vedlikeholdspersoner med samsvarende ferdigheter og sertifikater som tilordnes til å jobbe på arbeidsordren.
 
 <a name="gantt"></a>
 
@@ -138,6 +137,3 @@ Slik viser og arbeider du med Gantt-diagrammet:
     - Hvis du vil endre planene for en vist arbeidsordre, velger du og drar den til riktig ny dato og nytt klokkeslett.
 
 1. Hvis du har gjort endringer, velger du **Lagre** i handlingsruten for å lagre dem.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetObjectReplace, EntAssetObjectInstallLookup, EntAssetObjectMove, EntAssetObjectTableEditSubObjects
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ec150adb35eb0600844245b14cbec9e9632ab337
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 022ffc59b1b64913fedaf550f3fdb32141a94031
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434465"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020285"
 ---
 # <a name="move-replace-and-install-assets"></a>Flytte, erstatte og installere aktiva
 
@@ -38,7 +37,7 @@ Dette emnet forklarer hvordan du flytter, erstatter og installerer aktiva i Akti
 - **Installer** – Installer et overordnet objekt og tilknyttede underordnede aktiva på et arbeidssted.
 
 > [!NOTE]
-> Aktivaet du flytter, erstatter eller installerer, kan være relatert til et annet arbeidssted. I så fall kan aktivumet bruke finansdimensjoner for arbeidsstedet. På siden **Arbeidsstedstyper** definerer du håndteringen av finansdimensjoner på arbeidssteder.
+> aktivumet du flytter, erstatter eller installerer, kan være relatert til et annet arbeidssted. I så fall kan aktivumet bruke finansdimensjoner for arbeidsstedet. På siden **Arbeidsstedstyper** definerer du håndteringen av finansdimensjoner på arbeidssteder.
 
 ## <a name="move-asset"></a>Flytt aktivum
 
@@ -48,7 +47,7 @@ Bruk **Flytt aktivum**-funksjonen til å flytte et aktivum til en annen aktivast
 > Ikke bruk denne funksjonen hvis aktiva repareres eller byttes ut midlertidig. Bruk i stedet funksjonen **Erstatt aktivum** som er beskrevet senere i dette emnet.
 
 1. Velg **Aktivastyring** \> **Felles** \> **Aktiva** \> **Alle aktiva** eller **Aktive aktiva**.
-2. Velg aktivumet som skal flyttes, fra listen. Hvis aktivaet har underordnede aktiva, flytter du også disse.
+2. Velg aktivumet som skal flyttes, fra listen. Hvis aktivumet har underordnede aktiva, flytter du også disse.
 3. Velg **Flytt aktivum**.
 4. Hvis du vil flytte aktivumet slik at det blir en del av en aktivastruktur, velger du det nye overordnede objektet i feltet **Overordnet objekt**. Hvis du flytter et underordnet aktivum og vil gjøre det til et frittstående aktivum som ikke har noen strukturrelasjoner, lar du feltet **Overordnet objekt** stå tomt.
 5. Som standard settes feltet **Gyldighet** til gjeldende dato og klokkeslett. Du kan imidlertid velge en annen dato og klokkeslett som flyttingen av aktivumet skal være gyldig fra.
@@ -62,7 +61,7 @@ Bruk funksjonen **Erstatt aktivum** i forbindelse med reparasjoner, oppussing el
 > Hvis et verksted er knyttet til produksjonsavdelingen, kan du opprette arbeidssteder som **Reparasjon**, **Svinn** og **Lager** for å håndtere reparasjon og utskifting av aktiva.
 
 1. Velg **Aktivastyring** \> **Felles** \> **Aktiva** \> **Alle aktiva** eller **Aktive aktiva**.
-2. Velg det underordnede aktivumet som skal erstattes, fra listen. Hvis aktivaet har underordnede aktiva, erstatter du også disse.
+2. Velg det underordnede aktivumet som skal erstattes, fra listen. Hvis aktivumet har underordnede aktiva, erstatter du også disse.
 3. Velg **Erstatt aktivum**.
 
     Feltet **Strukturendring** viser siste dato og klokkeslett da det valgte aktivumet og tilknyttede underordnede aktiva ble flyttet i aktivastrukturen.
@@ -91,6 +90,3 @@ Bruk funksjonen **Installer aktivum** til å installere en aktivastruktur på et
 4. Velg det nye arbeidsstedet i **Arbeidssted**-feltet.
 5. Som standard settes feltet **Gyldighet** til gjeldende dato og klokkeslett. Du kan imidlertid velge en annen dato og klokkeslett som installeringen av aktivastrukturen skal være gyldig fra.
 6. Velg **OK**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

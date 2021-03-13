@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetObjectJobType, EntAssetObjectType, EntAssetObjectTypeDefaultSparePart, EntAssetObjectTypeDefaultSparePartApprove, EntAssetObjectTypeDefaultCreateCombinations, EntAssetObjectTypeDefault, EntAssetObjectTypeDefaultCopy
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5a5db915c94cf9a454dc39e9174b3282a3f6bb75
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 295840c12f89bc6c6a4d53023985259ac761d6b2
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434315"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017423"
 ---
 # <a name="asset-types"></a>Aktivatyper
 
@@ -31,7 +30,7 @@ ms.locfileid: "4434315"
 
 
 
-Dette emnet forklarer hvordan du oppretter aktivatyper. Det beskriver også elementene som er relatert til aktivatyper. Aktivatyper brukes som generelle kategorier for aktiva. Eksempler inkluderer CNC-maskiner, måleutstyr og lastebilmotorer. Aktivatyper brukes til å administrere vedlikeholdsjobbtypene (vedlikeholdsoppgaver), livsløpstilstander for aktiva, tellere, aktivaattributter, maler for tilstandsvurdering og aktivamodeller som kan velges for et aktivum. Når du oppretter et aktivum, må du angi type.
+Dette emnet forklarer hvordan du oppretter aktivatyper. Det beskriver også elementene som er relatert til aktivatyper. Aktivatyper brukes som generelle kategorier for aktiva. Eksempler inkluderer CNC-maskiner, måleutstyr og lastebilmotorer. Aktivatyper brukes til å administrere vedlikeholdsjobbtypene (vedlikeholdsoppgaver), livssyklustilstander for aktiva, tellere, aktivaattributter, maler for tilstandsvurdering og aktivamodeller som kan velges for et aktivum. Når du oppretter et aktivum, må du angi type.
 
 For hver aktivatype kan varianter av aktivatypeoppsettet opprettes. Hvis du for eksempel har en aktivatype som heter **Lastebiler**, kan du opprette varianter av denne aktivatypen for forskjellige aktivaprodusenter og aktivamodeller. For hvert oppsett av aktivatype kan du legge til de nødvendige reservedels- og vedlikeholdsplanene.
 
@@ -43,7 +42,7 @@ Først definerer du de nødvendige aktivatypene. Deretter oppretter du aktivamod
 2. Velg **Ny** for å opprette en aktivatype.
 3. I **Aktivatype**-feltet angir du en ID for aktivatype.
 4. Angi et navn i **Navn**-feltet.
-5. Velg en livsløpsmodell for aktivumet i feltet **Livsløpsmodell for aktiva**. Hvis du vil ha mer informasjon om livsløpstilstander og livsløpsmodeller for aktiva, kan du se [Livsløpstilstander for aktiva](object-stages.md).
+5. Velg en livssyklusmodell for aktivumet i feltet **Livssyklusmodell for aktiva**. Hvis du vil ha mer informasjon om livssyklustilstander og livssyklusmodeller for aktiva, kan du se [Livssyklustilstander for aktiva](object-stages.md).
 6. Angi **Total**-alternativet til **Ja** hvis oppsummerte KPI-verdier skal beregnes for aktiva som har denne aktivatypen.
 7. Velg **Lagre**.
 8. I hurtigfanen **Vedlikeholdsjobbtyper** velger du vedlikeholdsjobbtypene som skal relateres til aktivatypen.
@@ -97,6 +96,3 @@ På siden **Reservedeler** kan du også opprette nye reservedeler for eksisteren
 
 Hvis du vil se om reservedelen på den valgte linejn brukes et annet sted i Aktivastyring (for eksempel i forbindelse med aktiva og arbeidsordrer), velger du **Vare der brukt** for å åpne siden **Vare der brukt**. 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

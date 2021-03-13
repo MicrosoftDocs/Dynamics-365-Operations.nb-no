@@ -1,7 +1,7 @@
 ---
 title: Mva-rapport for Finland
 description: Dette emnet gir informasjon om hvordan du definerer og genererer mva-rapporten for juridiske enheter i Finland.
-author: v-lurodi
+author: anasyash
 ms.author: AnnBe
 ms.date: 03/23/2020
 ms.topic: article
@@ -11,16 +11,15 @@ ms.technology: ''
 manager: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Norway
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2c8524befbfd61e7780f2b83ef96ed05480d4656
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0b42f03d9bcbf5c45505eb8e99a800e89a48ca85
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408300"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016768"
 ---
 # <a name="sales-tax-report-for-finland"></a>Mva-rapport for Finland
 
@@ -207,6 +206,3 @@ Hvis du definerer snudd avregning i henhold til [Snudd avregning](emea-reverse-c
 Når du har generert den finske mva-rapporten, bruker du dataene på den til å fylle ut den selvvurderte avgiftsrapporten for den finske skatteetaten i det offisielle formatet. Illustrasjonen nedenfor viser for eksempel hva den finske egenvurderte avgiftsrapporten har sett ut siden 2019.
 
 ![Finsk selvvurdert avgiftsrapport](media/5_Finnish_VAT_declaration.png)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

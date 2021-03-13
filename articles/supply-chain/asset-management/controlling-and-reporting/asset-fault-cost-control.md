@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetCostControlFault
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 93bd6fb320822f17af5725e227936df623f8d0be
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 597e30db346e882a7002709be52ad1c2d0576099
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434307"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019959"
 ---
 # <a name="asset-fault-cost-control"></a>Kostnadskontroll for aktivumfeil
 
@@ -33,7 +32,7 @@ ms.locfileid: "4434307"
 
 I Aktivastyring kan du beregne kostnader ved registreringer av aktivafeil for å få en oversikt over faktiske kostnader sammenlignet med budsjettkostnader. Faktiske kostnader er basert på posterte transaksjoner. Datoen er feildatoen da symptomet ble registrert.
 
-1. Klikk **Aktivastyring** > **Forespørsler** > **Aktivumfeil** > **Kostnadskontroll for aktivumfeil**.
+1. Klikk på **Aktivastyring** > **Forespørsler** > **Aktivumfeil** > **Kostnadskontroll for aktivumfeil**.
 
 2. I dialogboksen **Kostnadskontroll for aktivumfeil** velger du et finansdimensjonssett som skal tas med i beregningen, om nødvendig.
 
@@ -62,6 +61,3 @@ Dette eksemplet viser beregning av kostnadskontroll for aktivumfeil.
     ![Figur 1](media/05-controlling-and-reporting.png)
 
 Se emnet [Feilstyring](../setup-for-work-orders/fault-management.md) hvis du vil ha informasjon om hvordan du definerer feil.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

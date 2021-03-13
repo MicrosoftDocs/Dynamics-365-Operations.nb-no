@@ -1,7 +1,7 @@
 ---
 title: Opprette en innkjøpsreturordre
 description: Denne fremgangsmåten viser hvordan du oppretter en innkjøpsreturordre ved hjelp av Kreditnota-handlingen, for å kopiere linjer fra et leverandørfakturadokument til en ny bestilling.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 06/25/2019
 ms.topic: business-process
@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, PurchCopying, InventMarking, PurchEditLines
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 635e9ffb629a844bc5cccfa5d2a538ef0cf098d9
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 10b3e695ffcd44909be4781eac5d4eaeef199b03
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434760"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017065"
 ---
 # <a name="create-a-purchase-return-order"></a>Opprette en innkjøpsreturordre
 
@@ -33,7 +32,7 @@ Denne fremgangsmåten viser hvordan du oppretter en innkjøpsreturordre ved hjel
 1. Gå til **Navigasjonsrute > Moduler > Innkjøp og leverandører > Bestillinger > Alle bestillinger**. Det første trinnet er å opprette en ny bestilling som skal brukes som en bestillingsretur.  
 2. Klikk på **Ny**.
 3. Angi US-102 i **Leverandørkonto**-feltet.
-4. Klikk **OK**.
+4. Klikk på **OK**.
 5. I **Handlingsruten** klikker du **Innkjøp**.
 6. Klikk på **Kreditnota**. Dette er siden der du kan kopiere fra eksisterende leverandørfaktura til returordren. Dette er den samme siden som brukes for andre kopieringshandlinger. Siden vi har åpnet den fra Kreditnota-handlingen, er imidlertid siden konfigurert til å støtte oppretting av en returordre som utligner leverandørfakturaer.  
 7. Utvid seksjonen **Parametere**.
@@ -43,7 +42,7 @@ Denne fremgangsmåten viser hvordan du oppretter en innkjøpsreturordre ved hjel
     - Alternativet **Slett innkjøpslinjer** sletter alle bestillingslinjene som allerede finnes på bestillingen, før du legger til de nye linjene. I dette eksemplet har vi ennå ikke har lagt til linjer i innkjøpsreturordren, slik at det ikke vil ha noen innvirkning. Vær forsiktig når du bruker dette alternativet, siden dette sletter alle eksisterende linjer uten advarsel.  
     * Alternativet **Kopier ordrehode** velges automatisk og kan ikke endres. Dette sikrer at informasjon kopieres fra leverandørfakturaen og brukes i hodet på innkjøpsreturordren. Dette er nyttig fordi det bidrar til å sikre at innkjøpsreturordren utligner fakturaen ved å bruke samme vilkår.  
 8. Skjul **Parametere**-delen.
-9. Vis **Fakturaer**-delen. Siden er åpnet fra Kreditnota-handlingen, så det eneste tilgjengelige alternativet er å kopiere informasjon fra leverandørfakturaer. Denne kategorien viser alle tilgjengelige fakturaer for leverandørkontoen som er angitt på innkjøpsreturordren som du opprettet tidligere.   Fakturaene identifiseres av fakturabilaget eller bestillings-ID-ene.
+9. Vis **Fakturaer**-delen. Siden er åpnet fra Kreditnota-handlingen, så det eneste tilgjengelige alternativet er å kopiere informasjon fra leverandørfakturaer. Denne fanen viser alle tilgjengelige fakturaer for leverandørkontoen som er angitt på innkjøpsreturordren som du opprettet tidligere.   Fakturaene identifiseres av fakturabilaget eller bestillings-ID-ene.
 10. Finn leverandørfakturaen identifisert av fakturanummer AP-0006, og uthev linjen ved å klikke et felt på linjen.
 11. Velg linjen ved å klikke i avmerkingsboksen for linjen. Legg merke til at linjene som er tilgjengelige i leverandørfakturaen, velges automatisk sammen med ordren. Denne bestemte leverandørfakturaen har to ordrelinjer. I dette eksemplet returnerer vi deler av antallet fra den andre linjen.
 12. Merk den andre linjen (den med varen M0006) ved å klikke et felt på linjen.
@@ -53,21 +52,18 @@ Denne fremgangsmåten viser hvordan du oppretter en innkjøpsreturordre ved hjel
 16. Skjul **Fakturaer**-delen.
 17. Vis delen **Valgte linjer eller topptekst som skal kopieres**. Denne visningen viser et sammendrag av alle dokumenter og linjer som du har valgt å kopiere til bestillingen.  
 18. Skjul delen **Valgte linjer eller topptekst som skal kopieres**.
-19. Klikk **OK**. Linjen som du valgte, er nå kopiert til din innkjøpsreturordre. **Antall**-feltet viser -10.   
+19. Klikk på **OK**. Linjen som du valgte, er nå kopiert til din innkjøpsreturordre. **Antall**-feltet viser -10.   
 20. I delen **Bestillingslinje** klikker du på **Beholdning**.
 21. Klikk på **Merking**. Ordrelinjen som ble opprettet, merkes mot lagertransaksjonen fra leverandørfakturaen. Dette sikrer at beholdningen som returneres til leverandøren, er lik beholdningen som ble mottatt fra dem tidligere. Det finnes situasjoner der merking ikke utføres, for eksempel hvis beholdningen allerede er merket som Forbrukt, eller hvis produktet er et som ikke bruker merking.  
 
-22. Klikk **OK**.
+22. Klikk på **OK**.
 
 ## <a name="confirm-and-record-the-shipment-of-goods"></a>Bekrefte og registrere levering av varer
 1. Klikk på **Handlinger > Bekreft**.
 2. Klikk på **Motta** i **handlingsruten**.
-3. Klikk **Produktkvittering**.
+3. Klikk på **Produktkvittering**.
     - Denne siden brukes til å registrere produktkvittering for bestillinger og også behandle arbeid retur av varer til leverandøren. Ordrelinjer med et negativt antall betyr at varer skal returneres til leverandøren, og dokumentet som kan genereres fra denne siden, kan brukes som følgeseddel for denne bruken.   
     - I **Antall**-feltet velger du Bestilt antall i dette eksemplet. Dette sikrer at forsendelsen behandles for hele det bestilte antallet som ordrelinjene ble opprettet med.   
 4. Skriv inn en verdi i feltet **Produktkvittering**. Dette feltet brukes til å angi en referanse som skal brukes som bilag for produktkvitteringsjournalen.  
-5. Klikk **OK**. Varene er nå registrert som mottatt som sendt i innkjøpsreturordren, og en produktkvitteringsjournal er opprettet. Du kan bruke handlingen Produktmottak for å vise journaler som er opprettet med bestillingen, og se hva som er mottatt eller returnert, og når.  
+5. Klikk på **OK**. Varene er nå registrert som mottatt som sendt i innkjøpsreturordren, og en produktkvitteringsjournal er opprettet. Du kan bruke handlingen Produktmottak for å vise journaler som er opprettet med bestillingen, og se hva som er mottatt eller returnert, og når.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

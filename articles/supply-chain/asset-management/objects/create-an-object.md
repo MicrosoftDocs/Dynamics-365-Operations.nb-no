@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetObjectTableCopyStructure, EntAssetObjectTableCreate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 045bb59642d766ac23939dee0900ea6911fe50fe
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 28c4685c3b6f543324953cd03646d5b15fdb8c59
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434187"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019435"
 ---
 # <a name="create-an-asset"></a>Opprette et aktivum
 
@@ -39,14 +38,14 @@ Dette emnet beskriver hvordan du oppretter et aktivum i Aktivumbehandling.
 4. I **Aktivatype**-feltet velger du aktivatypen (obligatorisk felt). Velg om nødvendig også **Aktivaprodusent** og **Aktivamodell**. Hvis bare ett produkt er definert, velges dette produktet automatisk i feltet **Aktivaprodusent**. Valgene som er tilgjengelige i feltene **Aktivaprodusent** og **Aktivamodell**, avhenger av oppsettet i [Aktivaprodusenter og -modeller](../setup-for-objects/product-and-model.md).
 5. I **Overordnet objekt**-gruppen er **Aktivum**-feltet tomt som standard. Hvis det er nødvendig, kan du velge et overordnet objekt, og deretter fylles alle feltene i gruppen **Overordnet objekt** ut.
     >[!NOTE]  
-    >Når du velger et overordnet objekt, er to eller tre kategorier tilgjengelige: kategorien **Mine aktiva** inneholder aktiva som er knyttet til arbeidsstedene der du (vedlikeholdspersonen som er logget på systemet), kan være tilordnet. Hvis ingen arbeidssteder er definert for en vedlikeholdsperson i skjemaet [Vedlikeholdsarbeidere og arbeidsgrupper](../setup-for-objects/workers-and-worker-groups.md), er ikke kategorien **Mine aktiva** synlig. Kategorien **Aktive aktiva** inneholder en liste over alle aktiva med statusen "Aktiv" for livsløpstilstanden. Kategorien **Aktivavisning** viser en trevisning av arbeidssteder og aktiva som er installert på disse stedene.
+    >Når du velger et overordnet objekt, er to eller tre kategorier tilgjengelige: fanen **Mine aktiva** inneholder aktiva som er knyttet til arbeidsstedene der du (vedlikeholdspersonen som er logget på systemet), kan være tilordnet. Hvis ingen arbeidssteder er definert for en vedlikeholdsperson i skjemaet [Vedlikeholdspersoner og arbeidsgrupper](../setup-for-objects/workers-and-worker-groups.md), er ikke fanen **Mine aktiva** synlig. fanen **Aktive aktiva** inneholder en liste over alle aktiva med statusen "Aktiv" for livssyklustilstanden. fanen **Aktivavisning** viser en trevisning av arbeidssteder og aktiva som er installert på disse stedene.
 
 6. Standard arbeidssted du har definert, foreslås for aktivumet i **Aktiva**-gruppen > **Arbeidssted**-feltet. Velg et annet arbeidssted, om nødvendig.
 
     >[!NOTE]
     >Når du har opprettet et aktivum, kan du installere det på et annet arbeidssted, om nødvendig. Bare aktiva på øverste nivå (aktiva uten et overordnet objekt) kan installeres på et arbeidssted. Dette betyr at du installerer både det øverste nivået i tillegg til eventuelle underordnede objekter på det valgte arbeidsstedet. Les mer om hvordan du installerer aktiva på arbeidssteder i [Innføring i arbeidssteder](../functional-locations/introduction-to-functional-locations.md).
 
-7. Klikk **OK**.
+7. Klikk på **OK**.
 8. Velg aktivumet i **Alle aktiva**-listen, og klikk på **Rediger**-knappen for å legge til mer informasjon om aktivumet.
 
 ## <a name="general-information"></a>Generell informasjon
@@ -55,7 +54,7 @@ Arbeidsstedet som aktivumet er relatert til, vises i **Arbeidssted**-feltet. Hvi
 
 Du kan redigere **Aktivaprodusent** og **Aktivamodell** for aktivumet, som brukes til å administrere reservedeler, alternative reservedeler og jobbtypestandarder. Referer til [Aktivaprodusenter og -modeller](../setup-for-objects/product-and-model.md) for mer informasjon. Du kan også legge til informasjon om **modellår** og **serienummer**, om nødvendig.
 
-**Gjeldende livsløpstilstand** brukes til å definere om aktivaet er aktivt eller inaktivt. Når du oppretter et aktivum, settes stadiet alltid til den første fasen i aktivafasegruppen. Når du er klar til å aktivere et aktivum, klikker du på **Oppdater aktivatilstand** og velger deretter livsløpstilstanden du har definert som "aktivum aktivt", og klikk på **OK**.
+**Gjeldende livssyklustilstand** brukes til å definere om aktivumet er aktivt eller inaktivt. Når du oppretter et aktivum, settes stadiet alltid til den første fasen i aktivafasegruppen. Når du er klar til å aktivere et aktivum, klikker du på **Oppdater aktivatilstand** og velger deretter livssyklustilstanden du har definert som "aktivum aktivt", og klikk på **OK**.
 
 **Merk:** Når et aktivum er satt til "inaktiv", er det ikke lenger mulig å opprette arbeidsordrer for aktivumet. Du kan heller ikke planlegge forebyggende vedlikeholdsjobber for et inaktivt aktivum.
 
@@ -63,17 +62,17 @@ Feltene **Servicenivå** og **Kritikalitet** relaterer til arbeidsordrer opprett
 
 ## <a name="asset"></a>Aktivum
 
-Du kan velge en **ressurs** for aktivaet. Ressursvalget bestemmer hvilken kalender som brukes for planlegging av arbeidsordrer. Ressursvalg brukes ofte for anleggsmidler. Ressurser og ressursgrupper satt opp i **Organisasjonsstyring** > **Ressurser** > **Ressursgrupper** eller **Ressurser**.
+Du kan velge en **ressurs** for aktivumet. Ressursvalget bestemmer hvilken kalender som brukes for planlegging av arbeidsordrer. Ressursvalg brukes ofte for anleggsmidler. Ressurser og ressursgrupper satt opp i **Organisasjonsstyring** > **Ressurser** > **Ressursgrupper** eller **Ressurser**.
 
-I feltet **Anleggsmiddelnummer** kan du velge et anleggsmiddel som skal være relatert til aktivaet. Dette er relevant hvis aktivaet er knyttet til et investeringsprosjekt.
+I feltet **Anleggsmiddelnummer** kan du velge et anleggsmiddel som skal være relatert til aktivumet. Dette er relevant hvis aktivumet er knyttet til et investeringsprosjekt.
 
-- Hvis aktivaet er knyttet til et anleggsmiddel, kan du opprette en arbeidsordretype som skal brukes for arbeidsordrer som er knyttet til et investeringsprosjekt. 
+- Hvis aktivumet er knyttet til et anleggsmiddel, kan du opprette en arbeidsordretype som skal brukes for arbeidsordrer som er knyttet til et investeringsprosjekt. 
 - Informasjon om anleggsmidler for et aktivum er knyttet til modulen **Anleggsmidler** i Dynamics 365 Supply Chain Management. Dette betyr at i **Anleggsmidler** > **Anleggsmidler** > **Anleggsmidler** kan du få en oversikt over prosjektene i Aktivastyring som kan være relatert til et anleggsmiddel, ved å velge aktivumet i listen og vise innholdet i ruten **Beslektet informasjon** > delen **Tilknyttede prosjekter**.
 
 
 ## <a name="details"></a>Detaljer
 
-I **Aktiv fra**-feltet vises datoen da du oppdaterte livsløpstilstanden for aktivumet til en aktiv tilstand (se [Livsløpstilstander](../setup-for-objects/object-stages.md) angående oppsettet av livsløpstilstander for aktiva). Hvis aktivumet ikke lenger er aktivt og du har oppdatert livsløpstilstanden for aktivumet til en inaktiv tilstand, vises datoen som aktivaet er inaktivt fra, i **Aktiv til**-feltet. Du kan endre disse datoene manuelt om nødvendig.
+I **Aktiv fra**-feltet vises datoen da du oppdaterte livssyklustilstanden for aktivumet til en aktiv tilstand (se [Livssyklustilstander for aktiva](../setup-for-objects/object-stages.md) angående oppsettet av livssyklustilstander for aktiva). Hvis aktivumet ikke lenger er aktivt og du har oppdatert livssyklustilstanden for aktivumet til en inaktiv tilstand, vises datoen som aktivumet er inaktivt fra, i **Aktiv til**-feltet. Du kan endre disse datoene manuelt om nødvendig.
 
 Hvis det er nødvendig, kan du sette inn en forventet dato for erstatning av aktivumet i feltet **Erstatningsdato**. En estimert verdi for å erstatte aktivumet kan settes inn i feltet **Erstatningsverdi**. Eksempel: Du kan bruke erstatningsinformasjon til å sammenligne den med kostnadene for vedlikehold av et aktivum, og deretter ta en beslutning om å kjøpe et nytt aktivum hvis vedlikeholdskostnadene på eksisterende aktiva øker raskt.
 
@@ -83,7 +82,7 @@ Du kan legge til merknader relatert til aktivumet på hurtigfanen **Notater**. K
 
 ## <a name="attributes"></a>Attributter
 
-På denne hurtigfanen kan du angi verdier for aktivumattributter. Disse attributtene kan brukes til å beskrive egenskaper som er relevante for aktivaet, for eksempel størrelse, vekt eller maskinkonfigurasjon.
+På denne hurtigfanen kan du angi verdier for aktivumattributter. Disse attributtene kan brukes til å beskrive egenskaper som er relevante for aktivumet, for eksempel størrelse, vekt eller maskinkonfigurasjon.
 
 Klikk på **Legg til linje**, og velg attributtypen. Deretter setter du inn **verdien** som er knyttet til attributtypen, og lagrer oppføringen.
 
@@ -96,11 +95,11 @@ På hurtigfanen **Leverandør** velger du en leverandørkonto for aktivumet. Hvi
 
 ## <a name="address"></a>Adresse
 
-På hurtigfanen **Adresse** kan du sette inn adressen til utstyret. Hvis ingen adresse er satt inn på aktivaet, bruker aktivaet adressen til et overordnet objekt hvis det overordnede objektet har en adresse. Hvis ingen adresse er knyttet til aktivumet eller noen av de overordnede i aktivahierarkiet, kan adressen til arbeidsstedet der aktivumet er installert, brukes. Hvis dette arbeidsstedet ikke har en adresse knyttet til seg, brukes adressen til det overordnede arbeidsstedet på aktivumet.
+På hurtigfanen **Adresse** kan du sette inn adressen til utstyret. Hvis ingen adresse er satt inn på aktivumet, bruker aktivumet adressen til et overordnet objekt hvis det overordnede objektet har en adresse. Hvis ingen adresse er knyttet til aktivumet eller noen av de overordnede i aktivahierarkiet, kan adressen til arbeidsstedet der aktivumet er installert, brukes. Hvis dette arbeidsstedet ikke har en adresse knyttet til seg, brukes adressen til det overordnede arbeidsstedet på aktivumet.
 
 ## <a name="asset-management-plans"></a>Aktivastyringsplaner
 
-Vedlikeholdsplaner brukes til å planlegge forebyggende vedlikeholdsjobber med regelmessige intervaller på aktivumet. På denne hurtigfanen kan du definere vedlikeholdsplanlinjer for det valgte aktivumet. Vedlikeholdsrunder kan settes opp for ulike aktiva, der du må utføre en lignende oppgave med jevne mellomrom. I kategorien **Vedlikeholdsplaner for arbeidssted** ser du vedlikeholdsplanene som er knyttet til arbeidsstedet der aktivumet er installert.
+Vedlikeholdsplaner brukes til å planlegge forebyggende vedlikeholdsjobber med regelmessige intervaller på aktivumet. På denne hurtigfanen kan du definere vedlikeholdsplanlinjer for det valgte aktivumet. Vedlikeholdsrunder kan settes opp for ulike aktiva, der du må utføre en lignende oppgave med jevne mellomrom. I fanen **Vedlikeholdsplaner for arbeidssted** ser du vedlikeholdsplanene som er knyttet til arbeidsstedet der aktivumet er installert.
 
 >[!NOTE]
 >Hvis du sletter en vedlikeholdsplanlinje eller en vedlikeholdsrunde knyttet til et aktivum i **Alle aktiva**, sletter du også automatisk alle vedlikeholdsplaner med statusen "Opprettet" som er opprettet basert på denne vedlikeholdsplanen eller vedlikeholdsrunden.
@@ -115,7 +114,4 @@ På denne hurtigfanen kan du legge til eller fjerne vedlikeholdsrunder som er kn
 
 ## <a name="financial-dimensions"></a>Finansdimensjoner
 
-Du kan velge en finansdimensjon for aktivaet.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+Du kan velge en finansdimensjon for aktivumet.

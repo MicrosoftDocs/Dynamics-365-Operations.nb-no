@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetParameters
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2505f5f334c3f86959023812880e956f0ebaac09
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5e4b76ba90ab03cd35e72eff8acc89f780659fa5
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434515"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020660"
 ---
 # <a name="asset-management-parameters"></a>Parametere i Aktivastyring
 
@@ -34,21 +33,20 @@ I Aktivastyring må generelle parametere knyttet til aktiva, arbeidsordrer og ar
 > [!NOTE]
 > Hvis du vil konfigurere et system som inneholder demonstrasjonsdata for testing av funksjonene for ressursstyring, kan du se [Distribuere et demomiljø](../../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) for instruksjoner.
 
-**Aktiva**-kobling
+## <a name="the-assets-tab"></a>Aktiva-fanen
+
+**Aktiva**-fanen har følgende innstillinger:
 
 - **Standard arbeidssted** velges automatisk for aktiva når du oppretter nye aktiva.  
 - I feltet **Standardkalender** velger du en kalender som skal brukes til å beregne KPI-er for aktiva, hvis ingen ressurser er valgt for et aktivum.  
 - I **Vis**-feltet velger du standardvisningen som vises når du åpner **Aktivavisning** (**Aktivastyring** > **Felles** > **Aktiva** > **Aktiva-visningen**).
-- **Standard forespørselstype** er standard vedlikeholdsanmodningstype, som velges automatisk når du oppretter en ny forespørsel.  
-- Hvis du vil opprette prosjekter som er knyttet til aktiva, er prosjekt relasjoner angående valg av **hovedprosjekt**, **prosjekthierarki** og alternativet for **automatisk oppretting av prosjekter** definert i **Parametere i Aktivastyring**.  
-- I feltet **Prosjektmaske for arbeidsordre** definerer du antall underprosjekter som er tillatt for arbeidsordrer og underordnede aktiva. En arbeidsordremaske brukes til å definere hvor mange arbeidsordrer som kan opprettes på et aktivum, og brukes i det tilknyttede arbeidsordreprosjektet. Arbeidsordremasken defineres i feltet **Relatert arbeidsordremaske** i **Parametere i Aktivastyring** (**Aktivastyring** > **Oppsett** > **Parametere i Aktivastyring** > **Arbeidsordrer**).  
-    >[!NOTE]
-    >Formatet for en relatert arbeidsordremaske er et antall hash-tegn (#), avhengig av det maksimale antallet arbeidsordrer du forventer å opprette på et aktivum. Eksempel: ## lar deg opprette opptil 99 underprosjekter.  
+- **Standard forespørselstype** er standard meldingstype, som velges automatisk når du oppretter en ny forespørsel.  
 - Prognoser på jobbtyper lagres i prosjektet som er valgt i feltet **Prosjektprognose**. For hver jobbtype opprettes det automatisk en ny aktivitet i prognoseprosjektet. Prognoser for jobbtypen blir deretter lagret i prognoseprosjektet.  
-- I **Modell**-feltet velger du prognosemodellen som brukes på jobbtypen-og arbeidsordreprognosene.  
+- I **Modell**-feltet velger du prognosemodellen som brukes på jobbtypen-og arbeidsordreprognosene.
 
+## <a name="the-work-orders-tab"></a>Arbeidsordrer-fanen
 
-**Arbeidsordrer**-kobling
+**Arbeidsordrer**-fanen har følgende innstillinger:
 
 - **Standard arbeidsordretype** definerer standardinnstillinger når du oppretter en arbeidsordre.  
 - **Preventiv arbeidsordretype** definerer arbeidsordretypen som brukes når du oppretter arbeidsordrer fra vedlikeholdsplaner. Hvis dette feltet er tomt, brukes arbeidsordretypen **Standard arbeidsordretype**.  
@@ -67,11 +65,12 @@ I Aktivastyring må generelle parametere knyttet til aktiva, arbeidsordrer og ar
     - Oppsett av vedlikeholdsrunder  
 - På hurtigfanen **Kategori** kan standardkategorier knyttet til forbruk på arbeidsordrer defineres.  
 
+## <a name="the-work-order-scheduling-tab"></a>Fanen Planlegging av arbeidsordre
 
-Kobling for **planlegging av arbeidsordrer**
+Fanen **Planlegging av arbeidsordre** gir følgende innstillinger i hurtigfanen **Generelt**:
 
 - **Tidsplanhorisont** definerer perioden i dager, beregnet fra den forventede startdatoen for arbeidsordren, der arbeidsordrejobber planlegges.  
-- **Hovedplanen** gjelder ressurser i modulen **Organisasjonsadministrasjon**. Hvis du velger en hovedplan i dette feltet, vil du kunne se kapasitetsreservasjoner som er knyttet til arbeidsordrer i **Kapasitetsreservasjoner** (**Organisasjonsadministrasjon** > **Ressurser** > **Ressurser** > velg ressurs > **Ressurs**-kategorien > **Kapasitetsreservasjoner**-knappen). Hvis du lar dette feltet stå tomt, kan du se kapasitetsbelastningen relatert til arbeidsordrer i **Kapasitetsbelastning** (**Organisasjonsadministrasjon** \> **Ressurser** \> **Ressurser** \> velg ressurs \> **Ressurs**-kategorien \> **Kapasitetsbelastning**-knappen).  
+- **Hovedplanen** gjelder ressurser i modulen **Organisasjonsadministrasjon**. Hvis du velger en hovedplan i dette feltet, vil du kunne se kapasitetsreservasjoner som er knyttet til arbeidsordrer i **Kapasitetsreservasjoner** (**Organisasjonsadministrasjon** > **Ressurser** > **Ressurser** > velg ressurs > **Ressurs**-fanen > **Kapasitetsreservasjoner**-knappen). Hvis du lar dette feltet stå tomt, kan du se kapasitetsbelastningen relatert til arbeidsordrer i **Kapasitetsbelastning** (**Organisasjonsadministrasjon** \> **Ressurser** \> **Ressurser** \> velg ressurs \> **Ressurs**-fanen \> **Kapasitetsbelastning**-knappen).  
 
 >[!NOTE]
 >Valget angående bruk av en hovedplan i modulen **Aktivastyring** og det tilknyttede skjemaet som brukes til å få en oversikt over kapasitetsreservasjoner eller kapasitetsbelastning, er standard oppsett. Avhengig av oppsettet i feltet **Hovedplan** kan du få tilgang til kapasitetsinformasjon i **Kapasitetsreservasjoner** eller **Kapasitetsbelastning** i modulen **Organisasjonsstyring**. Det er ikke mulig å opprette et oppsett der kapasitetsreservasjoner vises i begge visningene.  
@@ -97,16 +96,13 @@ Feltene som er beskrevet i listen nedenfor, er knyttet til beregnede vurderingsr
 
 **Arbeiderens startdato** – En vurderingspoengsum beregnet sammen med verdiene for **Ansvarlig arbeider**, **Foretrukket arbeider**, **Foretrukket arbeidergruppe**, **Aktivasted** og **Startdato**. Dette feltet angir daglig poengsum som en negativ verdi, og sammenlignes med **Forventet start**-feltet i en Arbeidsordre. Hvis verdien "10,00" settes inn i dette feltet, og den forventede startdatoen for en arbeidsordre er i morgen, er klassifiseringsresultatet minus 10,00.
 
-  - Forutsatt at ingen ansvarlig arbeider og ansvarlig arbeidergruppe er valgt på en arbeidsordre som skal planlegges – du legger til og trekker fra verdiene for vurderingspoengsummen i eksemplene i feltene **Foretrukket arbeider**, **Foretrukket arbeidergruppe**, **Aktivasted** og **Startdato** ovenfor, får du en total på 3010,00. Dette betyr en høy poengsum for arbeideren som allerede er valgt som foretrukket arbeider, og som er inkludert i den foretrukne arbeidergruppen på arbeidsordren, og arbeideren er også plassert i samme anlegg som aktivaet som en jobb må planlegges for. Dette betyr at det er en god sjanse for at den aktuelle arbeideren vil bli valgt for å fullføre jobben under planleggingen av arbeidsordren.  
+  - Forutsatt at ingen ansvarlig arbeider og ansvarlig arbeidergruppe er valgt på en arbeidsordre som skal planlegges – du legger til og trekker fra verdiene for vurderingspoengsummen i eksemplene i feltene **Foretrukket arbeider**, **Foretrukket arbeidergruppe**, **Aktivasted** og **Startdato** ovenfor, får du en total på 3010,00. Dette betyr en høy poengsum for arbeideren som allerede er valgt som foretrukket arbeider, og som er inkludert i den foretrukne arbeidergruppen på arbeidsordren, og arbeideren er også plassert i samme anlegg som aktivumet som en jobb må planlegges for. Dette betyr at det er en god sjanse for at den aktuelle arbeideren vil bli valgt for å fullføre jobben under planleggingen av arbeidsordren.  
   - Hvis verdien "0,00" settes inn i ett av de åtte feltene ovenfor, brukes ikke denne vurderingspoengsummen under planlegging av arbeidsordrer.  
 
-**Dokumenttyper**-kobling
+## <a name="the-document-types-tab"></a>Fanen Dokumenttyper
 
 Velg dokumenttypene som skal være tilgjengelige for utskrift av vedlegg som er knyttet til en arbeidsordrerapport. Denne gjøres ved å velge en en dokumenttype i delen **Tilgjengelig** og velge ![fremoverpilen](media/15-setup-for-objects.png). Hvis du vil fjerne en valgt dokumenttype, velger du dokumenttypen i delen **Valgt** og velger ![tilbakepilen](media/16-setup-for-objects.png).
 
-**Nummerserier**-kobling
+## <a name="the-number-sequences-tab"></a>Fanen Nummerserier
 
 Velg de nødvendige nummerseriene i denne delen. Det finnes to nummerserier for anleggsmidler: én for manuelt opprettede anleggsmidler, og én for anleggsmidler som er opprettet ved hjelp av ventende anleggsmidler.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

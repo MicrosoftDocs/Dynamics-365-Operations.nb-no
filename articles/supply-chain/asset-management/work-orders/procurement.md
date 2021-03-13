@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetWorkOrderPurchaseListPagePreviewPane, EntAssetWorkOrderPurchaseListPage, EntAssetWorkOrderPurchaseLineAmountInfoPart, EntAssetWorkOrderPurchReqListPage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 552b1b211460ae86af06e183af91c062a3ee569a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fce60f6ac2ac0dabe1c0ecd804a1dec1e7e373a2
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434604"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020210"
 ---
 # <a name="procurement"></a>Innkjøp
 
@@ -31,7 +30,7 @@ ms.locfileid: "4434604"
 
 I Aktivastyring kan du få en oversikt over innkjøpsrekvisisjoner og bestillinger som er knyttet til arbeidsordrer. Du kan også opprette en bestilling eller en innkjøpsrekvisisjon fra en arbeidsordre.
 
-Listesiden **Innkjøpsrekvisisjon for arbeidsordre** (**Aktivastyring** > **Felles** > **Innkjøp** > **Innkjøpsrekvisisjon for arbeidsordre**) viser en liste over innkjøpsrekvisisjoner som er knyttet til arbeidsordrer. Når du velger en arbeidsordrejobb på denne siden, kan du bruke knappene i gruppen **Vis** i handlingsrutekategorien **Innkjøpsrekvisisjon for arbeidsordre** til å utføre forskjellige handlinger:
+Listesiden **Innkjøpsrekvisisjon for arbeidsordre** (**Aktivastyring** > **Felles** > **Innkjøp** > **Innkjøpsrekvisisjon for arbeidsordre**) viser en liste over innkjøpsrekvisisjoner som er knyttet til arbeidsordrer. Når du velger en arbeidsordrejobb på denne siden, kan du bruke knappene i gruppen **Vis** i handlingsrutefanen **Innkjøpsrekvisisjon for arbeidsordre** til å utføre forskjellige handlinger:
 
 - Hvis du vil åpne den tilknyttede innkjøpsrekvisisjonen, velger du **Innkjøpsrekvisisjon**. 
 - Velg **Arbeidsordre** for å åpne er relatert arbeidsordre.
@@ -42,7 +41,7 @@ Illustrasjonen nedenfor viser et eksempel på listesiden **Innkjøpsrekvisisjon 
 ![Figur 1](media/08-work-orders.png)
 
 
-Listesiden **Innkjøp for arbeidsordre** (**Aktivastyring** > **Felles** > **Innkjøp** > **Innkjøp for arbeidsordre**) viser en liste over innkjøpsordrer som er knyttet til arbeidsordrer. Når du velger en arbeidsordrejobb på denne siden, kan du bruke knappene i gruppen **Vis** i kategorien **Innkjøp for arbeidsordre** i handlingsrutekategorien til å utføre forskjellige handlinger:
+Listesiden **Innkjøp for arbeidsordre** (**Aktivastyring** > **Felles** > **Innkjøp** > **Innkjøp for arbeidsordre**) viser en liste over innkjøpsordrer som er knyttet til arbeidsordrer. Når du velger en arbeidsordrejobb på denne siden, kan du bruke knappene i gruppen **Vis** i fanen **Innkjøp for arbeidsordre** i handlingsrutefanen til å utføre forskjellige handlinger:
 
 - Velg **Bestilling** for å åpne den relaterte bestillingen. 
 - Velg **Arbeidsordre** for å åpne er relatert arbeidsordre.
@@ -55,7 +54,7 @@ Illustrasjonen nedenfor viser et eksempel på listesiden **Innkjøp for arbeidso
 
 På listesiden **Innkjøp for arbeidsordre** og listesiden **Innkjøpsrekvisisjon for arbeidsordre** vises et symbol som er knyttet til leveringsdatokontroll på høyre side av hver linje. Hvis symbolet er et utropstegn i en rød sirkel, betyr det at levering av den tilknyttede bestillingen eller innkjøpsrekvisisjonen kan bli forsinket.
 
-For en bestilling blir datoen som er knyttet til bestillingslinjen, brukt til å beregne en mulig forsinkelse. Hvis du vil vise denne datoen, velger du bestillingslinjen på siden **Bestilling**. Datoen vises i feltet **Bekreftet leveringsdato** i kategorien **Oppsett** på hurtigfanen **Linjedetaljer**. Hvis feltet **Bekreftet leveringsdato** ikke er angitt, brukes datoen i feltet **Leveringsdato** på hurtigmenyen **Bestillingshode** til beregning. Én av disse datoene sammenlignes med den tilgjengelige datoen i arbeidsordren eller arbeidsordrejobben i følgende rekkefølge:
+For en bestilling blir datoen som er knyttet til bestillingslinjen, brukt til å beregne en mulig forsinkelse. Hvis du vil vise denne datoen, velger du bestillingslinjen på siden **Bestilling**. Datoen vises i feltet **Bekreftet leveringsdato** i fanen **Oppsett** på hurtigfanen **Linjedetaljer**. Hvis feltet **Bekreftet leveringsdato** ikke er angitt, brukes datoen i feltet **Leveringsdato** på hurtigmenyen **Bestillingshode** til beregning. Én av disse datoene sammenlignes med den tilgjengelige datoen i arbeidsordren eller arbeidsordrejobben i følgende rekkefølge:
 
 1. Faktisk startdato i arbeidsordren  
 
@@ -92,14 +91,11 @@ På listesiden **Alle arbeidsordrer** kan du velge en arbeidsordrejobb og derett
 
 En bestillingslinje eller innkjøpsrekvisisjonslinje er knyttet til en arbeidsordrejobb via arbeidsordreprosjektet og det tilknyttede prosjektaktivitetsnummeret. Når du oppretter en bestilling eller en innkjøpsrekvisisjon fra en arbeidsordrejobb, er det tilknyttede prosjektaktivitetsnummeret obligatorisk. Prosjektaktivitetsnummeret settes automatisk inn på en bestilling eller innkjøpsrekvisisjon hvis alle arbeidsordrejobber i den tilknyttede arbeidsordren har samme vedlikeholdsjobbtype. Hvis arbeidsordrejobbene har ulike vedlikeholdsjobbtyper, må du angi prosjektaktivitetsnummeret på bestillingen eller innkjøpsrekvisisjonen manuelt.
 
-Hvis du vil vise eller angi aktivitetsnummeret som er knyttet til en bestillingslinje, velger du bestillingsposten på listesiden **Innkjøp for arbeidsordre**, og deretter velger du koblingen for bestillingen i kolonnen **Bestilling**. Du finner feltet **Aktivitetsnummer** i kategorien **Prosjekt** på hurtigfanen **Linjedetaljer**.
+Hvis du vil vise eller angi aktivitetsnummeret som er knyttet til en bestillingslinje, velger du bestillingsposten på listesiden **Innkjøp for arbeidsordre**, og deretter velger du koblingen for bestillingen i kolonnen **Bestilling**. Du finner feltet **Aktivitetsnummer** i fanen **Prosjekt** på hurtigfanen **Linjedetaljer**.
 
 Illustrasjonen nedenfor viser et eksempel på siden **Bestilling**, med fokus på **Aktivitetsnummer**.
 
 ![Figur 3](media/10-work-orders.png)
 
-Hvis du vil vise eller angi aktivitetsnummeret som er knyttet til en linje for arbeidsordreinnkjøpsrekvisisjon, velger du innkjøpsrekvisisjonsposten på listesiden **Innkjøpsrekvisisjon for arbeidsordre**, og deretter velger du koblingen for innkjøpsrekvisisjonen i kolonnen **Innkjøpsrekvisisjon**. Du finner feltet **Aktivitetsnummer** i kategorien **Prosjekt** på hurtigfanen **Linjedetaljer**.
+Hvis du vil vise eller angi aktivitetsnummeret som er knyttet til en linje for arbeidsordreinnkjøpsrekvisisjon, velger du innkjøpsrekvisisjonsposten på listesiden **Innkjøpsrekvisisjon for arbeidsordre**, og deretter velger du koblingen for innkjøpsrekvisisjonen i kolonnen **Innkjøpsrekvisisjon**. Du finner feltet **Aktivitetsnummer** i fanen **Prosjekt** på hurtigfanen **Linjedetaljer**.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

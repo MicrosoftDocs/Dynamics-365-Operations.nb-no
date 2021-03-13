@@ -1,7 +1,7 @@
 ---
 title: Opprette en rekvisisjon som bruker en tilbudsforespørsel
 description: Dette emnet viser hvordan du legger til pris- og leverandørinformasjon i en innkjøpsrekvisisjon fra en prosess for tilbudsforespørsel.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: PurchReqTableListPage, PurchReqCreate, PurchReqTable, PurchReqLineRelatedDocuments, EcoResCategorySingleLookup, PurchReqWorkflowDropDialog, WorkflowSubmitDialog, WorkflowStatus, WorkflowWorkItemActionDialog, WorkflowUserListLookup, PurchReqCopyRFQ, SysDataAreaSelectLookup, PurchRFQCaseTable, PurchRFQEditLines, PurchRFQReplyTable, UnitOfMeasureLookup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 205cba2325e76dae9572301e44e0e89cbcfd106e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 05ff98b5fd95fa345d344e54d9116c73434e5de5
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434277"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018902"
 ---
 # <a name="create-a-requisition-that-uses-an-rfq"></a>Opprette en rekvisisjon som bruker en tilbudsforespørsel
 
@@ -73,7 +72,7 @@ Den neste oppgaven er å opprette en tilbudsforespørsel for å få bud fra leve
 5. Velg **OK**.
 6. Oppdater siden.
 7. Kontroller at faktaboksen er åpen, og vis deretter delen **Relaterte dokumenter**.
-8. Klikk koblingen i **Tilbudsforespørsel**-feltet for å åpne tilbudsforespørselen som nettopp ble opprettet.
+8. Klikk på koblingen i **Tilbudsforespørsel**-feltet for å åpne tilbudsforespørselen som nettopp ble opprettet.
 9. Velg **Topptekst**.
 10. Velg **Legg til**.
 11. Angi eller velg en verdi i **Leverandørkonto**-feltet.
@@ -99,6 +98,3 @@ Den neste oppgaven er å opprette en tilbudsforespørsel for å få bud fra leve
 8. Velg siden.
 9. Velg Fullført.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

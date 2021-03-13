@@ -1,6 +1,6 @@
 ---
-title: Typer vedlikeholdsanmodninger
-description: Dette emnet forklarer hvordan du definerer typer vedlikeholdsanmodninger i Aktivastyring.
+title: Typer meldinger
+description: Dette emnet forklarer hvordan du definerer typer meldinger i Aktivastyring.
 author: josaw1
 manager: tfehr
 ms.date: 07/26/2019
@@ -11,40 +11,36 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d353f084e0d3e056f1b5ff5af6437ba211def8ec
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 56a83457097b64d195eec53000b29b2f16251772
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434520"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019335"
 ---
-# <a name="maintenance-request-types"></a>Typer vedlikeholdsanmodninger
+# <a name="maintenance-request-types"></a>Typer meldinger
 
 [!include [banner](../../includes/banner.md)]
 
  
 
-Typer vedlikeholds anmodninger brukes til å kategorisere vedlikeholdsanmodninger. Du kan for eksempel ha typer vedlikeholdsanmodninger som er knyttet til forebyggende vedlikehold og korrigerende vedlikehold. Eller du kan ha en spesiell type vedlikeholdsanmodning som brukes til å administrere reparasjon av aktiva (depotreparasjon).
+Typer vedlikeholds anmodninger brukes til å kategorisere meldinger. Du kan for eksempel ha typer meldinger som er knyttet til forebyggende vedlikehold og korrigerende vedlikehold. Eller du kan ha en spesiell type melding som brukes til å administrere reparasjon av aktiva (depotreparasjon).
 
-En type vedlikeholdsanmodning definerer tilknytningen med en livsløpsgruppe for vedlikeholdsanmodninger (livsløpsmodell for vedlikehold). Livsløpsmodeller for vedlikeholdsanmodninger definerer livsløpstilstandene som kan angis for en vedlikeholdsanmodning. (Eksempler på livsløpstilstander for vedlikeholdsanmodninger omfatter **Opprettet**, **Aktiv** og **Avsluttet**.)
+En type melding definerer tilknytningen med en livssyklusgruppe for meldinger (livssyklusmodell for vedlikehold). Livssyklusmodeller for meldinger definerer livssyklustilstandene som kan angis for en melding. (Eksempler på livssyklustilstander for meldinger omfatter **Opprettet**, **Aktiv** og **Avsluttet**.)
 
-1. Velg **Aktivastyring** \> **Oppsett** \> **Vedlikeholdsanmodninger** \> **Typer vedlikeholdsanmodninger**.
-2. Velg **Ny** for å opprette en type vedlikeholdsanmodning.
-3. Angi en ID for typen vedlikeholdsanmodning i feltet **Type vedlikeholdsanmodning**.
+1. Velg **Aktivastyring** \> **Oppsett** \> **Meldinger** \> **Typer meldinger**.
+2. Velg **Ny** for å opprette en type melding.
+3. Angi en ID for typen melding i feltet **Type melding**.
 4. Angi et navn i **Navn**-feltet.
-5. På hurtigfanen **Generelt**, i feltet **Livsløpsmodell for vedlikeholdsanmodning**, velger du en livsløpsmodell for vedlikeholdsanmodning.
-6. Velg en arbeidsordretype i feltet **Arbeidsordretype**. Når en vedlikeholdsanmodning konverteres til en arbeidsordre, får arbeidsordren automatisk arbeidsordretypen som er knyttet til typen vedlikeholdsanmodning.
+5. På hurtigfanen **Generelt**, i feltet **Livssyklusmodell for melding**, velger du en livssyklusmodell for melding.
+6. Velg en arbeidsordretype i feltet **Arbeidsordretype**. Når en melding konverteres til en arbeidsordre, får arbeidsordren automatisk arbeidsordretypen som er knyttet til typen melding.
 
-Illustrasjonen nedenfor viser et eksempel på siden **Typer vedlikeholdsanmodninger**.
+Illustrasjonen nedenfor viser et eksempel på siden **Typer meldinger**.
 
-![Siden Typer vedlikeholdsanmodninger](media/07-setup-for-requests.png)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+![Siden Typer meldinger](media/07-setup-for-requests.png)

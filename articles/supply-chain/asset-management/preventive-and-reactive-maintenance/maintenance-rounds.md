@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetRoundTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 63cb2614b2037fac1129c7d2f82a26dac41a3490
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a3a64593a2155d35e78b0d854c7367fa65d1c5c8
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434442"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018552"
 ---
 # <a name="maintenance-rounds"></a>Vedlikeholdsrunder
 
@@ -58,9 +57,9 @@ I **Aktivastyring** kan du opprette vedlikeholdsrunder for ulike aktiva, der du 
 
 10. Et linjenummer settes inn automatisk i **Linjenummer**-feltet for å angi rekkefølgen på aktivaene i vedlikeholdsrunden.
 
-11. Velg aktivaet i **Aktivum**-feltet.
+11. Velg aktivumet i **Aktivum**-feltet.
 
-12. Velg vedlikeholdsjobbtypen for aktivaet i **Vedlikeholdsjobbtype**-feltet.
+12. Velg vedlikeholdsjobbtypen for aktivumet i **Vedlikeholdsjobbtype**-feltet.
 
 13. Velg om nødvendig **Variant av vedlikeholdsjobbtype** og **Handel** som er knyttet til vedlikeholdsjobbtypen.
 
@@ -68,7 +67,7 @@ I **Aktivastyring** kan du opprette vedlikeholdsrunder for ulike aktiva, der du 
 
 15. I **Periodefrekvens**-feltet setter du inn antall gjentakelser for vedlikeholdsrunden. Eksempel: Hvis du har valgt Dag i feltet **Periodetype**, og du setter inn tallet 7 i dette feltet, opprettes det nye vedlikeholdsrundelinjer under forebyggende vedlikeholdsplanlegging én gang i uken.
 
-16. Velg en startdato for aktivaet som skal inkluderes i vedlikeholdsrunden, i **Startdato**-feltet. Denne datoen kan være forskjellig fra startdatoen som er angitt i vedlikeholdsrunden.
+16. Velg en startdato for aktivumet som skal inkluderes i vedlikeholdsrunden, i **Startdato**-feltet. Denne datoen kan være forskjellig fra startdatoen som er angitt i vedlikeholdsrunden.
 
 17. Gjenta trinn 9–16 for å legge til flere aktiva i vedlikeholdsrunden.
 
@@ -103,7 +102,7 @@ Når du har definert en vedlikeholdsrunde, kjører du en planleggingsjobb for å
 
 5. Hvis nødvendig, kan du velge bestemte runder eller en annen startdato for planleggingsjobben. Klikk på **Filter**, og legg til rundene som skal tas med.
 
-6. Klikk **OK**.
+6. Klikk på **OK**.
 
 7. Du kan nå vise vedlikeholdsrundejobbene i **Aktivastyring** > **Felles** > **Vedlikeholdsplan** > **Alle vedlikeholdsplaner** eller **Åpne vedlikeholdsplanlinjer**. Hvis de planlagte runden er koblet til en arbeidsordrepulje, kan du også se vedlikeholdsplanlinjer i **Åpne vedlikeholdsplanpuljer**. Vedlikeholdsplanlinjer som er opprettet fra en runde, har referansetypen Vedlikeholdsrunder.
 
@@ -117,6 +116,3 @@ De to illustrasjonene nedenfor viser en planlagt jobb dialogboksen **Planlegg ve
 - Du kan sette opp en satsvis jobb i hurtigfanen **Kjør i bakgrunnen** for å planlegge runder med jevne mellomrom.  
 - Hvis en runde er inkludert i flere arbeidsordrepuljer (se [Arbeidsordrepuljer](../work-orders/work-order-pools.md)), vises én post for hver pulje i **Åpne vedlikeholdsplanpuljer**. Dette gjøres for å optimalisere filtreringsalternativene for arbeidsordrepuljer.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetWorkOrderChecklist, EntAssetMobileWorkOrderLineChecklistDetails
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1091af424f84265ffa7983fca8ddc3f66138a5cd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b2ec7130fbe8c397c30cdc2a76f34ecfdfdc0737
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434228"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017924"
 ---
 # <a name="maintenance-checklists"></a>Sjekklister for vedlikehold
 
@@ -40,7 +39,7 @@ Når du arbeider med sjekklister for vedlikehold i en arbeidsordre, kan du fylle
 
 1. Klikk på **Aktivastyring** > **Felles** > **Arbeidsordrer** > **Alle arbeidsordrer** eller **Aktive arbeidsordrer**.
 
-2. Velg arbeidsordren og deretter, i handlingsruten, går du til kategorien **Arbeidsordre** i gruppen **Linjer** og velger **Sjekkliste for vedlikehold**.
+2. Velg arbeidsordren og deretter, i handlingsruten, går du til fanen **Arbeidsordre** i gruppen **Linjer** og velger **Sjekkliste for vedlikehold**.
 
 3. **Sjekkliste for vedlikeholdsjobb for arbeidsordre** viser sjekklistene for alle arbeidsordrejobber. Hvis arbeidsordrejobbene har forskjellige vedlikeholdsjobbtyper, kan vedlikeholdssjekklistene være forskjellige på hver arbeidsordrejobb. Velg en arbeidsordrejobb for å arbeide med tilknyttet kontrolliste for vedlikehold. Detaljer for den valgte vedlikeholdssjekklistelinjen vises i hurtigfanen **Linjedetaljer**.
 
@@ -80,6 +79,3 @@ Illustrasjonen nedenfor viser et eksempel på en kontrolliste for vedlikehold.
 
 ![Figur 1](media/14-work-orders.png)
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

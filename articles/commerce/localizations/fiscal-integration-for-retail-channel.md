@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: v-kikozl
+ms.author: epopov
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: d2455f775fcf41bbcb1388b2e8053ede8512335d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2f1abf29058e773f1645301fcd7a960df488d92b
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414738"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017473"
 ---
 # <a name="overview-of-fiscal-integration-for-commerce-channels"></a>Oversikt over regnskapsintegrering for handelskanaler
 
@@ -150,6 +149,3 @@ Følgende funksjon for regnskapsintegrering er også tilgjengelig i detaljhandel
 Følgende eldre funksjonalitet for økonomisk integrasjon som er tilgjengelig i Retail SDK bruker ikke rammeverket for økonomisk integrasjon og vil bli avskrevet i senere oppdateringer:
 
 - [Eksempel på integrering med kontrollenheter for Sverige (eldre)](./retail-sdk-control-unit-sample.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

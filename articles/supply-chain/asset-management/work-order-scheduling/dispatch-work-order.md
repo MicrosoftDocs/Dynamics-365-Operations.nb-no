@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetScheduledExecution
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d46beb04923d06aa8ccec05355731aa1b3f27c5b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6b4b05dfe351bb61dc47c9c2bfe30831ab7b0a16
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434232"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016862"
 ---
 # <a name="dispatch-work-order"></a>Fordelingsarbeidsordre
 
@@ -37,7 +36,7 @@ Du kan planlegge én arbeidsordre eller arbeidsordrejobber til én arbeider ved 
 
 2. Velg arbeidsordren i listen.
 
-3. Gå til kategorien **Generelt**, og klikk på **Fordeling**.
+3. Gå til fanen **Generelt**, og klikk på **Fordeling**.
 
 4. I dialogboksen **Planlegg arbeidsordre** velger du arbeideren i **Arbeider**-feltet.
 
@@ -51,15 +50,12 @@ Du kan planlegge én arbeidsordre eller arbeidsordrejobber til én arbeider ved 
 
     Se delen [Planlagt kjøring](../setup-for-work-orders/scheduled-execution.md) hvis du vil ha informasjon om oppsett av planlagt kjøring.
 
-9. Klikk **OK**. Livsløpstilstanden for arbeidsordren oppdateres automatisk til livsløpstilstanden **Planlagt** som er angitt i **Aktivastyring** > **Oppsett** > **Arbeidsordrer** > **Livssyklusmodeller**.
+9. Klikk på **OK**. Livssyklustilstanden for arbeidsordren oppdateres automatisk til livssyklustilstanden **Planlagt** som er angitt i **Aktivastyring** > **Oppsett** > **Arbeidsordrer** > **Livssyklusmodeller**.
 
 Figuren nedenfor viser et eksempel på fordelingsvalg i dialogboksen **Planlegge arbeidsordre**.
 
 ![Figur 1](media/04-work-order-scheduling.png)
 
 [!NOTE]
-Hvis du vil slette tidsplanen for en arbeidsordre, velger du arbeidsordren i **Alle arbeidsordrer**, og deretter klikker du på **Slett tidsplan** i kategorien **Generelt**. Husk å oppdatere livsløpstilstanden for arbeidsordren manuelt hvis du sletter tidsplanen.
+Hvis du vil slette tidsplanen for en arbeidsordre, velger du arbeidsordren i **Alle arbeidsordrer**, og deretter klikker du på **Slett tidsplan** i fanen **Generelt**. Husk å oppdatere livssyklustilstanden for arbeidsordren manuelt hvis du sletter tidsplanen.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

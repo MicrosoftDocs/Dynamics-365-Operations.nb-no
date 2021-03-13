@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: v-kikozl
+ms.author: epopov
 ms.search.validFrom: 2018-11-1
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: b221bfede5d1db8d7970e1efede85e8dba7fe017
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 889340c13d150ce8e3ad49a08b3d7f0c25a4b77a
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4414524"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017899"
 ---
 # <a name="set-up-the-fiscal-integration-for-commerce-channels"></a>Definere økonomisk integrering for handelskanaler
 
@@ -226,6 +225,3 @@ For å aktivere manuell utføring av en utsatt bilagsregistrering bør du legge 
     1. Velg oppsettet som skal oppdateres.
     2. Legg til en ny knapp, og angi **Fullfør bilagsregistreringsprosess**-knappeegenskapen.
     3. På siden **Distribusjonsplan** kjører du **1090**-jobben for å overføre endringene dine til kanaldatabasen.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: Gjøre skilletegnet for kontoplan unikt
 description: Dette emnet beskriver hvordan du ikke kan ha samme skilletegn for kontoplanen og dimensjonsverdier. Du må endre skilletegnverdier etter oppgraderingen.
-author: ryansandness
+author: panolte
 manager: AnnBe
 ms.date: 03/30/2018
 ms.topic: article
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 2ce91557334a4342fa85848fc1b746b6b12c8992
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 72965e9c6182bdac123feb1bc5cc4b82d91cd588
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4688533"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020110"
 ---
 # <a name="make-the-chart-of-accounts-delimiter-unique"></a>Gjøre skilletegnet for kontoplan unikt
 
@@ -41,6 +41,3 @@ Hvis det er en konflikt med kontoplanen, kan skilletegn for kontoplanen og forma
 
 ## <a name="how-to-determine-if-your-environment-requires-updated-delimiters"></a>Slik fastslår du om miljøet ditt krever oppdaterte skilletegn 
 Hvis skilletegn i det oppgraderte miljøet er i konflikt, kan du oppleve ustabilitet når du angir verdier i en segmentert angivelseskontroll eller dimensjonsangivelseskontroll. Dette betyr at du alltid må bruke oppslag eller en undermeny når du angir kombinasjoner av konto og dimensjon.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

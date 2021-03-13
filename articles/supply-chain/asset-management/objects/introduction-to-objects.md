@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetTimeline, EntAssetObjectTableLookup, EntAssetObjectTableParent, EntAssetObjectOverview, EntAssetObjectImage, EntAssetObjectTable, EntAssetLifecycleStateLog, EntAssetObjectWorkOrderActive, EntAssetObjectAttribute
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 26b8e3aaa2b249d09b304242155d646483cbe971
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 2f629ebdf7423ca75fe215b0a3223478685fe95c
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434224"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018577"
 ---
 # <a name="introduction-to-assets"></a>Introduksjon til aktiva
 
@@ -61,8 +60,8 @@ Knappene i handlingsruten er ordnet i kategorier. Følgende tabell beskriver kor
 | Prosjekttransaksjoner | Vis alle posterte transaksjoner som er knyttet til arbeidsordrer som er opprettet for aktivumet.                                                                                       |
 | Aktivummål       | Opprett eller vis aktivummål på aktivumet.                                                                                                               |
 | Vedlikeholdsplan | Åpne listesiden **Åpne vedlikeholdsplan**, der du kan vise vedlikeholdsplaner, vedlikeholdsforespørsler og vedlikeholdsrunder som er knyttet til aktivumet, og som har statusen **Opprettet**. |
-| Oppdater tilstand for aktivum   | Oppdatere livsløpstilstanden for aktivumet. Du kan velge flere aktiva på listesiden **Alle aktiva** og deretter oppdatere livsløpstilstanden for alle aktivaene samtidig.              |
-| Logg for livsløpstilstand  | Åpne en logg som viser livsløpstilstandene til det valgte aktivumet.                                                                                                                 |
+| Oppdater tilstand for aktivum   | Oppdatere livssyklustilstanden for aktivumet. Du kan velge flere aktiva på listesiden **Alle aktiva** og deretter oppdatere livssyklustilstanden for alle aktivaene samtidig.              |
+| Logg for livssyklustilstand  | Åpne en logg som viser livssyklustilstandene til det valgte aktivumet.                                                                                                                 |
 | Aktivadokumenter      | Vis en liste over dokumentene som er knyttet til et aktivum. Disse dokumentene er definert i **Aktivastyring** \> **Oppsett** \> **Aktivadokumenter**.                 |
 | Attributter           | Opprett eller vis aktivaattributter.                                                                                                                             |
 | Bilde                | Velg et bilde for aktivumet.                                                                                                                                   |
@@ -78,6 +77,3 @@ Knappene i handlingsruten er ordnet i kategorier. Følgende tabell beskriver kor
 | Reservedeler          | Vis en liste over godkjente og alternative reservedeler som kan brukes for aktivumet.                                                                               |
 | Aktivumforbruk    | Skriv ut en rapport som viser forbruksregistreringer for aktivumet.                                                                                                |
 | Aktivumfeil          | Skriv ut en rapport som viser feilregistreringer for aktivumet.                                                                                                      |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

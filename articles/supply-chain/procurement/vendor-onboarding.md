@@ -1,7 +1,7 @@
 ---
 title: Ønske leverandører velkommen
 description: Dette emnet beskriver prosessen for å ønske nye leverandører velkommen. Det forklarer handlingene som kreves av forskjellige roller under denne prosessen.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: VendProspectiveVendorRegistrationRequests, SysUserRequestListPage, VendRequestListPage, VendRequestCompanyProfile
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 171d3b57333cc325fa675627e4c38f764d89f32c
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 081c2e5145a9175ace946e332e299247e706b548
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434809"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019885"
 ---
 # <a name="onboard-vendors"></a>Ønske leverandører velkommen
 
@@ -175,6 +174,3 @@ Ved hjelp av **Slett**-handlingen i registreringsforespørselen om potensiell le
 |         Godkjent         |                                                                               Leverandørforespørselen er godkjent.                                                                               |                                                                                                   Registreringsforespørselen for potensiell leverandør slettes, dataene som ble angitt i registreringsveiviseren for leverandøren, og leverandørforespørselen slettes.                                                                                                    |
 |         Avslått         |                                                                               Leverandørforespørselen er avvist.                                                                               |                                                                                                   Registreringsforespørselen for potensiell leverandør slettes, dataene som ble angitt i registreringsveiviseren for leverandøren, og leverandørforespørselen slettes.                                                                                                    |
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

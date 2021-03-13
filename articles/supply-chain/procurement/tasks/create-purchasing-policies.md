@@ -1,7 +1,7 @@
 ---
 title: Opprette innkjøpspolicyer
 description: Dette emnet viser hvordan du oppretter innkjøpspolicyer som er tilpasset forretningsprosessene for innkjøp.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 07/31/2019
 ms.topic: business-process
@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: SysPolicyListPage, SysPolicyParameters, SysPolicy, RequisitionPurposeRule
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d4ba2a23f84972391283eaf01cef70a161c75226
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 86ffdff4cdb256fdae39de6228555da5fb88c707
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434348"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017040"
 ---
 # <a name="create-purchasing-policies"></a>Opprette innkjøpspolicyer
 
@@ -34,7 +33,7 @@ Dette emnet viser hvordan du oppretter innkjøpspolicyer som er tilpasset forret
 1. I navigasjonsruten går du til **Moduler > Innkjøp og leverandører > Oppsett > Policyer > Innkjøpspolicyer**.
 2. Velg **Parametere** i handlingsruten.
 - Regler for policyprioritet gjelder for forskjellige nivåer i organisasjonen. Organisasjonsenheter som vises avhengig av din organisasjonshierarkiet og på hvilke nivåer i hierarkiet de er tilordnet formålet Internkontroll av innkjøp. Organisasjonen har for eksempel kanskje juridiske enheter, kostsentre, områder og avdelinger, men det kan hende at noen av disse har hierarkiformålet Internkontroll av innkjøp. Organiseringen av typen Firma er tilgjengelig som standard.  
-3. Velg kategorien **Parametere for policyregeltype**.
+3. Velg fanen **Parametere for policyregeltype**.
 4. I treet går du til **Velg Innkjøpspolicy > Kontrollregel for innkjøpsrekvisisjon**.
 - Du definerer prioritetsrekkefølgen for policyløsning på policynivået. For enkelte policytyper kan du imidlertid overstyre prioritetsrekkefølgen for individuelle policyregeltyper. La oss si at du vil definere prioritetsrekkefølgen for innkjøpspolicyer slik: kostsenter, avdeling, firma. For katalogpolicyregelen vil du imidlertid at prioritetsrekkefølgen skal være: avdeling, kostsenter, firma. Du kan endre prioritetsrekkefølgen for katalogpolicyregelen. Når en arbeider oppretter en rekvisisjon, vil katalogen som vises, bestemmes av policyene som er knyttet til arbeiderens avdeling, deres kostsenter og deretter firmaet.  
 - Hvis det ikke er oppført mer enn ett organisasjonsnivå, kan du bruke pil opp eller pil ned for å angi prioritetsrekkefølgen for Kontrollregel for innkjøpsrekvisisjon.  
@@ -57,6 +56,3 @@ Dette emnet viser hvordan du oppretter innkjøpspolicyer som er tilpasset forret
 4. Velg **Lukk**.
 - Nå kan du definere andre policyregler for innkjøpspolicyen. Legg merke til at en policyregeltype ikke kan ha overlappende regler som er aktive samtidig i én enkelt innkjøpspolicy.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

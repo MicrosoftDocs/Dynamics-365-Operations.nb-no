@@ -1,7 +1,7 @@
 ---
 title: Opprette en kjøpsavtale
 description: Dette emnet fører deg gjennom oppretting av en kjøpsavtale.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 07/18/2019
 ms.topic: business-process
@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: PurchAgreement, PurchAgreementCreate, InventItemIdLookupSimple, AgreementConfirmRunForm, PurchAgreementHistory
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1edfd4e56910376d0596eec5eff2af888f7dc98d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 92c9b429a05a2c25672cc14a0c9ee7adfef42631
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434351"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016837"
 ---
 # <a name="create-a-purchase-agreement"></a>Opprette en kjøpsavtale
 
@@ -62,16 +61,13 @@ Dette emnet fører deg gjennom oppretting av en kjøpsavtale. Dette gjøres vanl
 4. Utvid **Vilkår**-delen.
 5. Velg det ønskede oppslaget på rullegardinmenyen **Betalingsmåte**. Betalingsbetingelsene fra leverandørkontoen vises her som standard.  
 6. Velg det ønskede oppslaget på rullegardinmenyen i feltet **Leveringsmåte**.
-7. Klikk rullegardinknappen i feltet **Leveringsbetingelser** for å åpne oppslaget.
+7. Klikk på rullegardinknappen i feltet **Leveringsbetingelser** for å åpne oppslaget.
 
 ## <a name="confirm-and-activate-the-agreement"></a>Kontrollere og aktivere avtalen
-1. Klikk **Kjøpsavtale** i handlingsruten.
+1. Klikk på **Kjøpsavtale** i handlingsruten.
 2. Velg **Bekreftelse**. Angi alternativet **Merk avtale som gyldig** som **Ja**.  
 3. Velg **OK**.
-4. Klikk **Kjøpsavtale** i handlingsruten.
+4. Klikk på **Kjøpsavtale** i handlingsruten.
 5. Velg **Innkjøpsavtalebekreftelser**. Med alternativet **Forhåndsvis/Skriv ut** kan du generere et dokument for kjøpsavtalen som du deretter kan skrive ut eller sende til leverandøren. Hvis du oppdaterer avtalen senere, og bekrefter den på nytt, vil begge versjoner vises her.  
 6. Lukk siden.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

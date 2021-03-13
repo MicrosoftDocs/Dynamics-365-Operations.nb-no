@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetOutboundObjectsListPage, EntAssetOutboundObjectsDeliver, EntAssetInboundObjectsListPage, EntAssetInboundObjectsRecieve
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a7239bf5f8e53e61c4259abbcbf2ff740f4cef55
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e6dfadf6824c6a3df7be9b3b6f3d9f5dd2749e34
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434467"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018077"
 ---
 # <a name="inbound-and-outbound-assets"></a>Innkommende og utgående aktiva
 
@@ -34,7 +33,7 @@ ms.locfileid: "4434467"
 Hvis firmaet har reparasjonsjobber eller vedlikeholdsjobber på aktiva som mottas fra andre lokasjoner eller kunder, kan Aktivastyring spore både innkommende aktiva som er på vei til firmaet og utgående aktiva som returneres.
 
 > [!NOTE]
-> Hvis du vil bruke inngående og utgående livsløpstilstander til å administrere aktiva som kommer inn og blir returnert, må du definere livsløpstilstander for vedlikeholdsforespørsler og livsløpsmodeller for å støtte disse handlingene. Hvis du vil ha mer informasjon, kan du se [Vedlikeholdsanmodninger](../setup-for-maintenance-requests/requests.md).
+> Hvis du vil bruke inngående og utgående livssyklustilstander til å administrere aktiva som kommer inn og blir returnert, må du definere livssyklustilstander for vedlikeholdsforespørsler og livssyklusmodeller for å støtte disse handlingene. Hvis du vil ha mer informasjon, kan du se [Meldinger](../setup-for-maintenance-requests/requests.md).
 
 Oppsettet av Aktivastyring bestemmer om du kan arbeide med inngående og utgående aktiva.
 
@@ -43,7 +42,7 @@ Oppsettet av Aktivastyring bestemmer om du kan arbeide med inngående og utgåen
 1. Velg **Aktivastyring** \> **Felles** \> **Vedlikeholdsforespørsler** \> **Aktive vedlikeholdsforespørsler**.
 2. Velg vedlikeholdsforespørselen.
 3. Velg **Oppdater tilstand for vedlikeholdsforespørsel**.
-4. Velg **Inngående** (eller en annen livsløpstilstand som du har opprettet for innkommende aktiva), og velg deretter **OK**.
+4. Velg **Inngående** (eller en annen livssyklustilstand som du har opprettet for innkommende aktiva), og velg deretter **OK**.
 
 ![Registrer aktiva som inngående](media/07-manage-maintenance-requests.png)
 
@@ -58,12 +57,12 @@ Oppsettet av Aktivastyring bestemmer om du kan arbeide med inngående og utgåen
 
 ## <a name="register-assets-as-outbound"></a>Registrer aktiva som utgående
 
-Når du har fullført vedlikeholds- eller reparasjonsjobben, kan du registrere aktivaet som returnert.
+Når du har fullført vedlikeholds- eller reparasjonsjobben, kan du registrere aktivumet som returnert.
 
 1. Velg **Aktivastyring** \> **Felles** \> **Vedlikeholdsforespørsler** \> **Aktive vedlikeholdsforespørsler**.
 2. Velg vedlikeholdsforespørselen.
 3. Velg **Oppdater tilstand for vedlikeholdsforespørsel**.
-4. Velg **Utgående** (eller en annen livsløpstilstand som du har opprettet for utgående aktiva), og velg deretter **OK**.
+4. Velg **Utgående** (eller en annen livssyklustilstand som du har opprettet for utgående aktiva), og velg deretter **OK**.
 
 ## <a name="register-outbound-assets-as-delivered"></a>Registrer utgående aktiva som levert
 
@@ -71,6 +70,3 @@ Når du har fullført vedlikeholds- eller reparasjonsjobben, kan du registrere a
 2. Velg aktivumet eller vedlikeholdsforespørselen.
 3. Velg **Lever aktiva**.
 4. Angi dato og klokkeslett i feltet **Levert**. Velg deretter **OK**. Posten fjernes fra listesiden **Utgående aktiva**.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

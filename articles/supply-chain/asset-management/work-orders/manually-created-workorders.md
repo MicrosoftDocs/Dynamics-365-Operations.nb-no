@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetWorkOrderTableCreateRelated, EntAssetWorkOrderTableCreate, EntAssetWorkOrderTableCopy
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4a4b148d9ac5d032d2caa5fcea0398a5a3726f0e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8c787dbc9889139df76b9b102deb18fce567e382
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434225"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017874"
 ---
 # <a name="manually-created-work-orders"></a>Manuelt opprettede arbeidsordrer
 
@@ -45,14 +44,14 @@ Du kan opprette arbeidsordrer manuelt på to måter:
 
 4. Velg en **Beskrivelse** om nødvendig.
 
-5. Velg feltet **Aktivum** velger du aktivaet.
+5. Velg feltet **Aktivum** velger du aktivumet.
 
 >[!NOTE]
 >Når du velger et aktivum, kan tre kategorier være tilgjengelige i rullegardinlisten **Aktivum**: 
 
-- Kategorien **Aktive aktiva** – Denne kategorien inneholder en liste over alle aktiva med en "Aktiv" livsløpstilstand. 
-- **Aktivavisning** – Denne kategorien viser en trevisning av arbeidssteder og aktiva som er installert på dem.
-- **Mine aktiva** – Denne kategorien inneholder aktiva som er relatert til arbeidsstedene som du (arbeideren som er logget på systemet) kan tildeles. (Hvis du vil ha informasjon om oppsettet, kan du se [Vedlikeholdsarbeidere og arbeidsgrupper](../setup-for-objects/workers-and-worker-groups.md).) Hvis ingen arbeidssteder er definert for en arbeider i [Vedlikeholdsarbeidere og arbeidsgrupper](../setup-for-objects/workers-and-worker-groups.md), er ikke kategorien **Mine aktiva** tilgjengelig. 
+- fanen **Aktive aktiva** – Denne fanen inneholder en liste over alle aktiva med en "Aktiv" livssyklustilstand. 
+- **Aktivavisning** – Denne fanen viser en trevisning av arbeidssteder og aktiva som er installert på dem.
+- **Mine aktiva** – Denne fanen inneholder aktiva som er relatert til arbeidsstedene som du (arbeideren som er logget på systemet) kan tildeles. (Hvis du vil ha informasjon om oppsettet, kan du se [Vedlikeholdspersoner og arbeidsgrupper](../setup-for-objects/workers-and-worker-groups.md).) Hvis ingen arbeidssteder er definert for en arbeider i [Vedlikeholdspersoner og arbeidsgrupper](../setup-for-objects/workers-and-worker-groups.md), er ikke fanen **Mine aktiva** tilgjengelig. 
 
 6. I feltet **Vedlikeholdsjobbtype** velger du en vedlikeholdsjobbtype for arbeidsordren.
 
@@ -74,7 +73,7 @@ Merk følgende punkt:
 
 - Kritikaliteten i en arbeidsordre beregnes på nytt hver gang en arbeidsordrejobb legges til eller slettes fra arbeidsordren.
 
-- I detaljvisningen **Alle arbeidsordrer** > kategorien **Hode** > **Plan**-hurtigfanen i feltet **Ansvarlig gruppe** eller **Ansvarlig** kan du velge en ansvarlig vedlikeholdspersongruppe eller en ansvarlig vedlikeholdsperson. Disse innstillingene kan endres mens arbeidsordren er aktiv. De kan for eksempel endres når tilstanden for arbeidsordrelivssyklusen endres. Det automatiske valget som gjøres under opprettingen av arbeidsordrer, er basert på oppsettet på siden **Ansvarlige vedlikeholdsarbeidere**. Hvis du legger til eller fjerner arbeidsordrejobber etter at du har opprettet en arbeidsordre, og hvis feltene **Ansvarlig gruppe** og **Ansvarlig** er tomme når du oppdaterer arbeidsordren, søker Aktivastyring etter en ansvarlig vedlikeholdspersongruppe eller en ansvarlig vedlikeholdsperson. Hvis **Ansvarlig gruppe**-feltet eller **Ansvarlig**-feltet allerede er angitt når du oppdaterer arbeidsordren, gjøres det ingen endringer. Hvis du vil ha informasjon om ansvarlige vedlikeholdsarbeidere og arbeidergrupper, kan du se [Ansvarlige vedlikeholdsarbeidere](../setup-for-maintenance-requests/responsible-workers.md).
+- I detaljvisningen **Alle arbeidsordrer** > fanen **Hode** > **Plan**-hurtigfanen i feltet **Ansvarlig gruppe** eller **Ansvarlig** kan du velge en ansvarlig vedlikeholdspersongruppe eller en ansvarlig vedlikeholdsperson. Disse innstillingene kan endres mens arbeidsordren er aktiv. De kan for eksempel endres når tilstanden for arbeidsordrelivssyklusen endres. Det automatiske valget som gjøres under opprettingen av arbeidsordrer, er basert på oppsettet på siden **Ansvarlige vedlikeholdspersoner**. Hvis du legger til eller fjerner arbeidsordrejobber etter at du har opprettet en arbeidsordre, og hvis feltene **Ansvarlig gruppe** og **Ansvarlig** er tomme når du oppdaterer arbeidsordren, søker Aktivastyring etter en ansvarlig vedlikeholdspersongruppe eller en ansvarlig vedlikeholdsperson. Hvis **Ansvarlig gruppe**-feltet eller **Ansvarlig**-feltet allerede er angitt når du oppdaterer arbeidsordren, gjøres det ingen endringer. Hvis du vil ha informasjon om ansvarlige vedlikeholdspersoner og arbeidergrupper, kan du se [Ansvarlige vedlikeholdspersoner](../setup-for-maintenance-requests/responsible-workers.md).
 
 - På siden [Vedlikeholdsstatus](../controlling-and-reporting/maintenance-status.md) kan du gjøre en beregning for å få en oversikt over arbeidsbelastningen for innkommende og fullførte arbeidsordrer.  
 
@@ -89,7 +88,7 @@ Du kan opprette en arbeidsordre som er knyttet til en eksisterende arbeidsordre.
 
 2. Velg arbeidsordren du vil opprette en relatert arbeidsordre for.
 
-3. Velg **Relatert arbeidsordre** i gruppen **Ny** i kategorien **Arbeidsordre** i handlingsruten.
+3. Velg **Relatert arbeidsordre** i gruppen **Ny** i **Arbeidsordre**-fanen i handlingsruten.
 
 4. I dialogboksen **Opprett relatert arbeidsordre** velger du arbeidsordrejobben som du vil opprette en tilknyttet arbeidsordre for, i feltet **Arbeidsordrejobb**.
 
@@ -117,7 +116,7 @@ Illustrasjonen nedenfor viser et eksempel på dialogboksen **Opprett relatert ar
 ![Figur 1](media/03-work-orders.png)
 
 >[!NOTE]
->Hvis du har definert en relatert arbeidsordremaske i **Aktivabehandlingsparametere** > **Arbeidsordrer**-kategorien > **Relatert arbeidsordremaske**-feltet, blir det opprettet arbeidsordre-ID-er i samsvar med maskeoppsettet. Hvis det ikke er definert en tilknyttet arbeidsordremaske, vil den neste tilgjengelige arbeidsordre-ID-en brukes for tilknyttede arbeidsordrer.
+>Hvis du har definert en relatert arbeidsordremaske i **Aktivabehandlingsparametere** > **Arbeidsordrer**-fanen > **Relatert arbeidsordremaske**-feltet, blir det opprettet arbeidsordre-ID-er i samsvar med maskeoppsettet. Hvis det ikke er definert en tilknyttet arbeidsordremaske, vil den neste tilgjengelige arbeidsordre-ID-en brukes for tilknyttede arbeidsordrer.
 
 ## <a name="copy-a-work-order"></a>Kopiere en arbeidsordre
 
@@ -127,7 +126,7 @@ Du kan opprette en ny arbeidsordre fra en eksisterende arbeidsordre raskt. Denne
 
 2. Velg arbeidsordren du vil kopiere innhold fra.
 
-3. Velg **Kopier arbeidsordre** i gruppen **Ny** i kategorien **Arbeidsordre** i handlingsruten.
+3. Velg **Kopier arbeidsordre** i gruppen **Ny** i fanen **Arbeidsordre** i handlingsruten.
 
 4. Arbeidsordreoppsettet fra den valgte arbeidsordren vises. Du kan redigere noen av feltene etter behov.
 
@@ -143,19 +142,19 @@ Illustrasjonen nedenfor viser et eksempel på dialogboksen **Kopier arbeidsordre
 ![Figur 2](media/04-work-orders.png)
 
 
-## <a name="create-a-work-order-based-on-a-maintenance-request"></a>Opprette en arbeidsordre basert på en vedlikeholdsanmodning
+## <a name="create-a-work-order-based-on-a-maintenance-request"></a>Opprette en arbeidsordre basert på en melding
 
 1. Velg **Aktivastyring** > **Felles** > **Vedlikeholdsforespørsler** > **Alle vedlikeholdsforespørsler** eller **Aktive vedlikeholdsforespørsler**.
 
 2. Velg vedlikeholdsforespørselen du vil opprette en arbeidsordre for, og klikk på **Rediger**.
 
-3. Velg **Arbeidsordre** i gruppen **Ny** i kategorien **Vedlikeholdsanmodning** i handlingsruten.
+3. Velg **Arbeidsordre** i gruppen **Ny** i fanen **Melding** i handlingsruten.
 
 4. I dialogboksen **Arbeidsordre** angir du feltene. Hvis en vedlikeholdsjobbtype er valgt i vedlikeholdsforespørselen, kan du velge en annen vedlikeholdsjobbtype når du oppretter arbeidsordren, etter behov.
 
 5. Velg **OK**. En meldingen forteller deg at en arbeidsordre er blitt opprettet.
 
-6. Hvis du vil se hvilke arbeidsordrer som er knyttet til en vedlikeholdsforespørsel, velger du vedlikeholdsforespørselen på listesiden **Alle vedlikeholdsforespørsler** eller **Aktive vedlikeholdsforespørsler**. Deretter velger du **Arbeidsordre** i gruppen **Vis** i kategorien **Vedlikeholdsanmodning** i handlingsruten.
+6. Hvis du vil se hvilke arbeidsordrer som er knyttet til en vedlikeholdsforespørsel, velger du vedlikeholdsforespørselen på listesiden **Alle vedlikeholdsforespørsler** eller **Aktive vedlikeholdsforespørsler**. Deretter velger du **Arbeidsordre** i gruppen **Vis** i fanen **Melding** i handlingsruten.
 
 
 Illustrasjonen nedenfor viser et eksempel på dialogboksen **Opprett arbeidsordre**.
@@ -166,6 +165,3 @@ Illustrasjonen nedenfor viser et eksempel på dialogboksen **Opprett arbeidsordr
 >[!NOTE]
 >Hvis du vil at arbeidsordrer skal opprettes automatisk, kan du planlegge vedlikeholdsplanjobber, eller du kan konfigurere "Opprett automatisk" [vedlikeholdsplaner](../preventive-and-reactive-maintenance/maintenance-plans.md) eller [vedlikeholdsrunder](../preventive-and-reactive-maintenance/maintenance-rounds.md) på aktivumet. Arbeidsordrer som opprettes fra vedlikeholdsforespørsler på listesiden **Alle vedlikeholdsplaner**, har vedlikeholdsjobbtypene som er valgt på vedlikeholdsforespørslene.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

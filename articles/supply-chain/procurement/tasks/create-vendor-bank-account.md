@@ -1,7 +1,7 @@
 ---
 title: Opprette en leverandørbankkonto
 description: Denne fremgangsmåten viser hvordan du oppretter en bankkonto for en leverandør.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 07/01/2019
 ms.topic: business-process
@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: VendTable, VendBankAccounts, LogisticsPostalAddressSingle
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f8092ab7f960fd36515afb8448dfe1e262197595
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f3523dec15363bd42219d40ed8048681c56829ac
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434274"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019259"
 ---
 # <a name="create-a-vendor-bank-account"></a>Opprette en leverandørbankkonto
 
@@ -32,8 +31,8 @@ Denne fremgangsmåten viser hvordan du oppretter en bankkonto for en leverandør
 1. Gå til **navigasjonsruten > Moduler > Innkjøp og leverandører > Leverandører > Alle leverandører**.
 2. Velg leverandøren du vil opprette en bankkonto for, og klikk deretter koblingen i feltet **Leverandørens konto-ID**.
 3. I **handlingsruten** klikker du **Leverandør**.
-4. Klikk **Bankkontoer**.
-5. Klikk **Ny** i **handlingsruten**.
+4. Klikk på **Bankkontoer**.
+5. Klikk på **Ny** i **handlingsruten**.
 6. Skriv inn en verdi i **Bankkonto**-feltet. Denne ID-en brukes for å identifisere bankkontoen på leverandørposten.  
 7. Skriv inn en verdi i **Navn**-feltet.
 8. Angi eller velg en verdi i **Bankgrupper**-feltet.
@@ -53,11 +52,8 @@ Denne fremgangsmåten viser hvordan du oppretter en bankkonto for en leverandør
 20. Vis delen **Kontaktinformasjon**.
 21. Skriv inn en verdi i feltet **Telefon**.
 22. Lukk siden.
-23. Klikk **Rediger**.
+23. Klikk på **Rediger**.
 24. Vis delen **Betaling**.
 25. Velg kontoen du nettopp har opprettet i **Bankkonto**-feltet.
-26. Klikk **Lagre**. Adressen kan arves fra bankgruppen, hvis det er angitt, eller du kan legge den til her.  
+26. Klikk på **Lagre**. Adressen kan arves fra bankgruppen, hvis det er angitt, eller du kan legge den til her.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

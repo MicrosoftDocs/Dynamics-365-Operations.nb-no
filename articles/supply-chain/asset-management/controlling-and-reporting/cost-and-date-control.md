@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetBICostControlWorkspace, EntAssetWorkOrderDateControl, EntAssetWorkOrderForecastCostInfoPart, EntAssetMaintenanceCostTrans, EntAssetWorkOrderDateControlCalcDialog, EntAssetCostControl, EntAssetCostObjectCalendar, EntAssetWorkOrderCostInfoPart
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 18373ff16b63ea61a3a4bc38ee7fa0b5e33154b5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1de12233ff296f77ba9984fa8d957d4c2bc90b3f
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434306"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019081"
 ---
 # <a name="cost-and-date-control"></a>Kostnads- og datokontroll
 
@@ -78,22 +77,22 @@ Skjermbildet nedenfor viser et eksempel på beregningsresultater i **Kostnadskon
 
 ![Eksempel på beregningsresultater for kostnadskontroll for aktivum](media/02-controlling-and-reporting.png)
 
-En annen måte å gjøre en kostnadsberegning på er å velge flere aktiva i **Alle aktiva** eller **Aktive aktiva**. Deretter klikker du **Kostnadskontroll**-knappen i fanen **Generelt**. I dialogboksen **Kostnadskontroll for aktivum** settes de valgte anleggsmidlene automatisk inn i **Aktivum**-feltet i hurtigfanen **Poster som skal inkluderes**. Klikk **OK**, så vises den en beregning av kostnadene for de valgte anleggsmidlene. Den samme fremgangsmåten kan brukes for arbeidssteder i **Alle arbeidssteder** eller **Aktive arbeidssteder**, og for arbeidsordrer i **Alle arbeidsordrer** eller **Aktive arbeidsordrer**.
+En annen måte å gjøre en kostnadsberegning på er å velge flere aktiva i **Alle aktiva** eller **Aktive aktiva**. Deretter klikker du **Kostnadskontroll**-knappen i fanen **Generelt**. I dialogboksen **Kostnadskontroll for aktivum** settes de valgte anleggsmidlene automatisk inn i **Aktivum**-feltet i hurtigfanen **Poster som skal inkluderes**. Klikk på **OK**, så vises den en beregning av kostnadene for de valgte anleggsmidlene. Den samme fremgangsmåten kan brukes for arbeidssteder i **Alle arbeidssteder** eller **Aktive arbeidssteder**, og for arbeidsordrer i **Alle arbeidsordrer** eller **Aktive arbeidsordrer**.
 
 
 ## <a name="work-order-date-control"></a>Datokontroll for arbeidsordre
 
 Bruk denne siden til å få en oversikt over forventede start- og sluttdatoer sammenlignet med faktiske start- og sluttdatoer på arbeidsordrer.
 
-1. Klikk **Aktivastyring** > **Forespørsler** > **Arbeidsordrer** > **Datokontroll for arbeidsordre**.
+1. Klikk på **Aktivastyring** > **Forespørsler** > **Arbeidsordrer** > **Datokontroll for arbeidsordre**.
 
-2. Klikk **Beregn**.
+2. Klikk på **Beregn**.
 
 3. Velg et arbeidssted i **Arbeidssted**-feltet.
 
 4. Sett inn perioden du vil gjøre beregningen for, i feltene **Fra dato** og **Til dato**. Alle arbeidsordrer med forventet startdata i perioden, blir inkludert.
 
-5. Klikk **OK**.
+5. Klikk på **OK**.
 
 6. Klikk på knappene **Grupper etter** for å vise det nødvendige detaljnivået for beregningen. De valgte **Grupper etter**-knappen er uthevet. Klikk på en knapp for å aktivere eller deaktivere den.
 
@@ -108,6 +107,3 @@ Skjermbildet nedenfor viser et eksempel på beregningsresultater i **Datokontrol
 ![Eksempel på beregningsresultater for Datokontroll for arbeidsordre](media/03-controlling-and-reporting.png)
 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: Definere tillatelser for bestilling av produkter på vegne av andre
 description: Dette emnet forklarer hvordan du gir arbeidere tillatelse til å klargjøre innkjøpsrekvisisjoner på vegne av andre arbeidere.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 08/20/2019
 ms.topic: business-process
@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: PurchReqAuthorization, HcmWorkerLookUp
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 145d8a0e341857bf238fc934cd668ff12b8505b8
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 585f5c6cf83ad93b649e3f36e0d486a037915cd4
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434456"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017298"
 ---
 # <a name="set-up-permissions-for-ordering-products-on-behalf-of-someone-else"></a>Definere tillatelser for bestilling av produkter på vegne av andre
 
@@ -45,6 +44,3 @@ Dette emnet forklarer hvordan du gir arbeidere tillatelse til å klargjøre innk
 2. Bruk dette hurtigfilteret til å finne arbeideren som du nettopp la til som bestiller.
 3. Velg bestilleren. Klargjørerlisten viser personene som har tillatelse til å bestille varer på vegne av bestilleren, som er valgt i ruten til venstre.  Du kan legge til flere klargjørerne her. Denne visningen lar deg også gi bestilleren tillatelse til å opprette rekvisisjoner i juridiske enheter og driftsenheter som ikke er primær juridisk enhet eller driftsenhet for den aktuelle personen.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

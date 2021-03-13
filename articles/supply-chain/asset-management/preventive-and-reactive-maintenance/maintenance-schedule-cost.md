@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 91c5b2e70ee083bf2741e245f1ca840ab939ad3f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9befa52d27a1a12e7a2d9f2615c2ce8e5f1ebe53
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434441"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018002"
 ---
 # <a name="maintenance-schedule-cost"></a>Kostnader for vedlikeholdsplan
 
@@ -46,7 +45,7 @@ I Aktivastyring kan du beregne budsjettkostnader på vedlikeholdsplanlinjer. Det
 
 5. Klikk på **OK** for å starte kostberegningen.
 
-6. I kategorien **Kostnader for vedlikeholdsplan** > i **Grupper etter...**-handlingsrutegruppene klikker du på de relevante knappene for å vise det nødvendige detaljnivået for kostnadsberegningen. De valgte handlingsrutegruppeknappene er uthevet. Klikk på en knapp for å aktivere eller deaktivere den.
+6. I fanen **Kostnader for vedlikeholdsplan** > i **Grupper etter...**-handlingsrutegruppene klikker du på de relevante knappene for å vise det nødvendige detaljnivået for kostnadsberegningen. De valgte handlingsrutegruppeknappene er uthevet. Klikk på en knapp for å aktivere eller deaktivere den.
 
 7. Klikk på knappen **Beregn kostnad** hvis du vil foreta en ny kostberegning.
 
@@ -54,6 +53,3 @@ Illustrasjonen nedenfor viser resultatet av en beregning av kostnader for vedlik
 
 ![Figur 1](media/17-preventive-maintenance.png)
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

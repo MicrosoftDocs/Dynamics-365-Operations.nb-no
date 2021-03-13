@@ -1,7 +1,7 @@
 ---
 title: Opprette en ny etterfyllingsordre for forsendelse
 description: Dette emnet forklarer hvordan du oppretter en etterfyllingsordre for forsendelse der du kan spore forventet levering fra en leverandør til forsendelseslageret.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 08/19/2019
 ms.topic: business-process
@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: ConsignmentReplenishmentOrder, ConsignmentReplenishmentOrderCreate, InventTrans, ConsignmentDraftReplenishmentOrderJournal, InventOnhandMovement, InventOnhandItem, InventItemIdLookupSimple, ConsignmentProductReceiptJournal, ConsignmentReplenishmentOrderLineQuantity
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9e993190150e2d82088390d8db4b7c5ada2b0161
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: b27b4d87add38fac29c9eba4ace08af91f9faca1
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4434814"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020160"
 ---
 # <a name="create-a-consignment-replenishment-order"></a>Opprette en ny etterfyllingsordre for forsendelse
 
@@ -62,6 +61,3 @@ Dette emnet forklarer hvordan du oppretter en etterfyllingsordre for forsendelse
 3. Velg **Oversikt**. Varene som er mottatt som forsendelseslager og som eies av leverandøren, er tilgjengelig lagerbeholdning. Restantall på etterfyllingsordren for forsendelsen vises i feltet **Bestilt i alt**.  
 4. Lukk siden.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

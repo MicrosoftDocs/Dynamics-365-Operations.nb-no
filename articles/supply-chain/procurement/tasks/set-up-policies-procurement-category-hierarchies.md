@@ -1,7 +1,7 @@
 ---
 title: Definere policyer for innkjøpskategorihierarkier
 description: Bruk denne fremgangsmåten for å konfigurere regler for bestilling av produkter i en kategori.
-author: mkirknel
+author: RichardLuan
 manager: tfehr
 ms.date: 07/22/2019
 ms.topic: business-process
@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: SysPolicyListPage, SysPolicy, ProcCategoryAccessPolicyRule, ProcCategoryPolicyRule, EcoResCategorySingleLookup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d113181b5c78c0f35292b5f14cedd12bacdc7364
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3fc01793ee83444e5c7097021c19aeda80a132e6
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434347"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017105"
 ---
 # <a name="set-up-policies-for-procurement-category-hierarchies"></a>Definere policyer for innkjøpskategorihierarkier
 
@@ -40,18 +39,15 @@ Bruk denne fremgangsmåten for å konfigurere regler for bestilling av produkter
 3. Klikk på **Opprett policyregel**.
 4. Angi dato og klokkeslett i feltet **Gyldighetsdato**. Tidspunktet må ikke overlappe med en annen regel som allerede er aktiv.  
 5. Velg en kategori som regelen skal gjelde for. Merk deg hvilken kategori dette er. Du trenger det senere. Når du velger en kategori, legges alle overordnede kategorier også til i listen Valgte kategorier. Hvis du vil at regelen skal gjelde for alle underkategorier for den valgt kategorien, merker du av for **Inkluder underkategorier**.
-6. Klikk pil høyre for å legge til listen **Valgte kategorier**.  
-4. Klikk **OK**. Hvis du vil sette alternativet **Inkluder overordnet regel** til Ja, vil policyregelen du konfigurerer for en overordnet kategori, også tilordnes de underordnede kategoriene hvis ingen policyregel er konfigurert for de underordnede kategoriene.
+6. Klikk på pil høyre for å legge til listen **Valgte kategorier**.  
+4. Klikk på **OK**. Hvis du vil sette alternativet **Inkluder overordnet regel** til Ja, vil policyregelen du konfigurerer for en overordnet kategori, også tilordnes de underordnede kategoriene hvis ingen policyregel er konfigurert for de underordnede kategoriene.
 
 ## <a name="create-a-category-policy-rule"></a>Opprette en policyregel for kategori
 1. i listen **Type policyregel** velger du **Kategoripolicyregel**. Velg den aktive policyregelen hvis knappen **Opprett policyregel** er nedtonet, og klikk deretter **Avslutt policyregel**.  
 2. Klikk på **Opprett policyregel**.
 3. Angi dato og klokkeslett i feltet **Gyldighetsdato**.
-4. Klikk **Legg til**.
+4. Klikk på **Legg til**.
 5. I **Kategori**-feltet velger du den samme kategorien som du brukte for **kategoritilgangsregelen**.
 6. Velg et alternativ i **Leverandørvalg**-feltet. Velg en regel for å kontrollere hvilke type leverandører som kan velges for kategorien når rekvisisjoner opprettes.  
-7. Klikk **Lukk**. Policyreglene du har definert, har vært for rekvisisjoner av typen Forbruk. Hvis du vil definere policyer for rekvisisjoner av typen Etterfylling, kan du opprette en regel for policyregeltypen kalt Policyregel for tilgang til etterfyllingskategori.  
+7. Klikk på **Lukk**. Policyreglene du har definert, har vært for rekvisisjoner av typen Forbruk. Hvis du vil definere policyer for rekvisisjoner av typen Etterfylling, kan du opprette en regel for policyregeltypen kalt Policyregel for tilgang til etterfyllingskategori.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

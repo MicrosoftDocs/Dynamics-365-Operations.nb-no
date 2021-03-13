@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: EntAssetObjectCalendarCreateWO, EntAssetObjectCalendarListPagePoolsOpen, EntAssetObjectCalendarListPage, EntAssetObjectCalendarListPagePreviewPart, EntAssetObjectCalendarEdit, EntAssetObjectCalendarAdjust, EntAssetObjectCalendarDiscard, EntAssetObjectCalendarInfoPart
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 351e088ece0512fee1bb5f9dad020f32f7728fe4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d235a3797b1acee9c92c3d81e8b4a20e1f7c5c75
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4434439"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017966"
 ---
 # <a name="maintenance-schedule"></a>Vedlikeholdsplan
 
@@ -37,8 +36,8 @@ De fire visningene for vedlikeholdsplaner er litt forskjellige, avhengig av hvil
 
 | Menyelement                  | Beskrivelse av innhold                                                                                                                                             |
 |----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Hele vedlikeholdsplan       | Alle vedlikeholdsplanlinjene vises.     |
-| Min aktivumplan        | Alle vedlikeholdsplanlinjer som inneholder aktiva som finnes på arbeidssteder du er tilknyttet som arbeider (oppsett i [Vedlikeholdsarbeidere og arbeidsgrupper](../setup-for-objects/workers-and-worker-groups.md)), vises i denne listen. |
+| Alle vedlikeholdsplaner       | Alle vedlikeholdsplanlinjene vises.     |
+| Min aktivumplan        | Alle vedlikeholdsplanlinjer som inneholder aktiva som finnes på arbeidssteder du er tilknyttet som arbeider (oppsett i [Vedlikeholdspersoner og arbeidsgrupper](../setup-for-objects/workers-and-worker-groups.md)), vises i denne listen. |
 | Åpne linjer for vedlikeholdsplan | Vedlikeholdsplanlinjer med statusen Opprettet – betyr at de ennå ikke er konvertert til en arbeidsordre eller forkastet – vises i denne listen.                                            |
 | Åpne vedlikeholdsplansamlinger | Vedlikeholdsplanlinjer relatert til en arbeidsordrepulje vises i denne listen.                                                                                                                  |
 
@@ -62,12 +61,9 @@ Slik åpner du en vedlikeholdsplan:
 7. Du kan velge en rekke vedlikeholdsplanlinjer i **Alle vedlikeholdsplaner** eller **Åpne vedlikeholdsplanlinjer** eller **Åpne vedlikeholdsplanpuljer** og klikke på **Juster plan** hvis du vil foreta de samme justeringene på flere linjer. Du kan endre forventet start- og sluttdato, servicenivå og ansvarlig vedlikeholdspersongruppe eller ansvarlig vedlikeholdsperson knyttet til de valgte vedlikeholdsplanlinjene.
 
 - Når en vedlikeholdsplanlinje er knyttet til en arbeidsordre, vises ID-en for arbeidsordren i **Arbeidsordre**-feltet.  
-- I **Alle aktiva**-detaljvisningen > **Vedlikeholdsplaner for aktivum**-hurtigfanen kan du velge vedlikeholdsplaner for aktivaet. Hvis du senere sletter en vedlikeholdsplanlinje knyttet til et aktivum i **Alle aktiva**, sletter du også automatisk alle vedlikeholdsplanlinjer med statusen "Opprettet" som er opprettet basert på denne vedlikeholdsplanen. Se også [Opprette et aktivum](../objects/create-an-object.md).
+- I **Alle aktiva**-detaljvisningen > **Vedlikeholdsplaner for aktivum**-hurtigfanen kan du velge vedlikeholdsplaner for aktivumet. Hvis du senere sletter en vedlikeholdsplanlinje knyttet til et aktivum i **Alle aktiva**, sletter du også automatisk alle vedlikeholdsplanlinjer med statusen "Opprettet" som er opprettet basert på denne vedlikeholdsplanen. Se også [Opprette et aktivum](../objects/create-an-object.md).
 
 Illustrasjonen nedenfor viser listesiden **Alle vedlikeholdsplaner**.
 
 ![Figur 1](media/16-preventive-maintenance.png)
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
