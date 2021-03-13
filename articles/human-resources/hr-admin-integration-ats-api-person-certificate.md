@@ -1,0 +1,70 @@
+---
+title: Personsertifikat
+description: Dette emnet beskriver Personsertifikat-enheten for Dynamics 365 Human Resources.
+author: jaredha
+manager: tfehr
+ms.date: 02/05/2021
+ms.topic: article
+ms.prod: ''
+ms.service: dynamics-365-human-resources
+ms.technology: ''
+audience: Application User
+ms.reviewer: anbichse
+ms.custom: ''
+ms.assetid: ''
+ms.search.region: Global
+ms.author: jaredha
+ms.search.validFrom: 2021-02-05
+ms.dyn365.ops.version: Human Resources
+ms.openlocfilehash: fa4582dc00341a647f1ea43ed16d9dce8bfcf688
+ms.sourcegitcommit: 33b5c8bc4f9461e290513aa22de1ec1fba3b0742
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "5125359"
+---
+# <a name="person-certificate"></a><span data-ttu-id="a95a2-103">Personsertifikat</span><span class="sxs-lookup"><span data-stu-id="a95a2-103">Person certificate</span></span>
+
+<span data-ttu-id="a95a2-104">Dette emnet beskriver Personsertifikat-enheten for Dynamics 365 Human Resources.</span><span class="sxs-lookup"><span data-stu-id="a95a2-104">This topic describes the Person certificate entity for Dynamics 365 Human Resources.</span></span>
+
+<span data-ttu-id="a95a2-105">Fysisk navn: mshr_hcmpersoncertificateentity</span><span class="sxs-lookup"><span data-stu-id="a95a2-105">Physical name: mshr_hcmpersoncertificateentity</span></span>
+
+## <a name="description"></a><span data-ttu-id="a95a2-106">beskrivelse</span><span class="sxs-lookup"><span data-stu-id="a95a2-106">Description</span></span>
+
+<span data-ttu-id="a95a2-107">Denne enheten beskriver de profesjonelle sertifikatene til en kandidat.</span><span class="sxs-lookup"><span data-stu-id="a95a2-107">This entity describes the professional certificates of a candidate.</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="a95a2-108">JSON-representasjon</span><span class="sxs-lookup"><span data-stu-id="a95a2-108">JSON representation</span></span>
+
+```json
+{
+    "mshr_certificatetypeid": "String",
+    "mshr_startdate": "Date",
+    "mshr_enddate": "Date",
+    "mshr_notes": "String",
+    "mshr_partynumber": "String",
+    "mshr_primaryfield": "String",
+    "_mshr_fk_certificatetype_id_value": "Guid",
+    "_mshr_fk_person_id_value": "Guid",
+    "mshr_hcmpersoncertificateentityid": "Guid"
+}
+```
+
+## <a name="properties"></a><span data-ttu-id="a95a2-109">Egenskaper</span><span class="sxs-lookup"><span data-stu-id="a95a2-109">Properties</span></span>
+
+| <span data-ttu-id="a95a2-110">Egenskap</span><span class="sxs-lookup"><span data-stu-id="a95a2-110">Property</span></span><br><span data-ttu-id="a95a2-111">**Fysisk navn**</span><span class="sxs-lookup"><span data-stu-id="a95a2-111">**Physical name**</span></span><br><span data-ttu-id="a95a2-112">**_Type_**</span><span class="sxs-lookup"><span data-stu-id="a95a2-112">**_Type_**</span></span> | <span data-ttu-id="a95a2-113">Bruk</span><span class="sxs-lookup"><span data-stu-id="a95a2-113">Use</span></span> | <span data-ttu-id="a95a2-114">beskrivelse</span><span class="sxs-lookup"><span data-stu-id="a95a2-114">Description</span></span> |
+| --- | --- | --- |
+| <span data-ttu-id="a95a2-115">**ID for Personsertifikat-enhet**</span><span class="sxs-lookup"><span data-stu-id="a95a2-115">**Person Certificate Entity ID**</span></span><br><span data-ttu-id="a95a2-116">mshr_hcmpersoncertificateentityid</span><span class="sxs-lookup"><span data-stu-id="a95a2-116">mshr_hcmpersoncertificateentityid</span></span><br><span data-ttu-id="a95a2-117">*GUID*</span><span class="sxs-lookup"><span data-stu-id="a95a2-117">*GUID*</span></span> | <span data-ttu-id="a95a2-118">Skrivebeskyttet</span><span class="sxs-lookup"><span data-stu-id="a95a2-118">Read-only</span></span><br><span data-ttu-id="a95a2-119">Obligatorisk</span><span class="sxs-lookup"><span data-stu-id="a95a2-119">Required</span></span> | <span data-ttu-id="a95a2-120">Systemgenerert unik identifikator for posten for personsertifikatenhet.</span><span class="sxs-lookup"><span data-stu-id="a95a2-120">System-generated unique identifier for the person certificate entity record.</span></span> |
+| <span data-ttu-id="a95a2-121">**Partsnummer**</span><span class="sxs-lookup"><span data-stu-id="a95a2-121">**Party Number**</span></span><br><span data-ttu-id="a95a2-122">mshr_partynumber</span><span class="sxs-lookup"><span data-stu-id="a95a2-122">mshr_partynumber</span></span><br><span data-ttu-id="a95a2-123">*Streng*</span><span class="sxs-lookup"><span data-stu-id="a95a2-123">*String*</span></span> | <span data-ttu-id="a95a2-124">Lese/skrive</span><span class="sxs-lookup"><span data-stu-id="a95a2-124">Read/write</span></span><br><span data-ttu-id="a95a2-125">Obligatorisk</span><span class="sxs-lookup"><span data-stu-id="a95a2-125">Required</span></span> | <span data-ttu-id="a95a2-126">Parts-ID-en (person) til kanditaten.</span><span class="sxs-lookup"><span data-stu-id="a95a2-126">The party (person) ID of the candidate.</span></span> |
+| <span data-ttu-id="a95a2-127">**Verdi for person-ID**</span><span class="sxs-lookup"><span data-stu-id="a95a2-127">**Person ID Value**</span></span><br><span data-ttu-id="a95a2-128">_mshr_fk_person_id_value</span><span class="sxs-lookup"><span data-stu-id="a95a2-128">_mshr_fk_person_id_value</span></span><br><span data-ttu-id="a95a2-129">*GUID*</span><span class="sxs-lookup"><span data-stu-id="a95a2-129">*GUID*</span></span> | <span data-ttu-id="a95a2-130">Skrivebeskyttet</span><span class="sxs-lookup"><span data-stu-id="a95a2-130">Read-only</span></span><br><span data-ttu-id="a95a2-131">Obligatorisk</span><span class="sxs-lookup"><span data-stu-id="a95a2-131">Required</span></span><br><span data-ttu-id="a95a2-132">Sekundærnøkkel: mshr_dirpersonentityid i mshr_dirpersonentity</span><span class="sxs-lookup"><span data-stu-id="a95a2-132">Foreign key: mshr_dirpersonentityid of mshr_dirpersonentity</span></span> | <span data-ttu-id="a95a2-133">Systemgenerert unik identifikator for partsenhetsposten (person).</span><span class="sxs-lookup"><span data-stu-id="a95a2-133">The system-generated identifier of the party (person) entity record.</span></span> |
+| <span data-ttu-id="a95a2-134">**ID for sertifikattype**</span><span class="sxs-lookup"><span data-stu-id="a95a2-134">**Certificate Type ID**</span></span><br><span data-ttu-id="a95a2-135">mshr_certificatetypeid</span><span class="sxs-lookup"><span data-stu-id="a95a2-135">mshr_certificatetypeid</span></span><br><span data-ttu-id="a95a2-136">*Streng*</span><span class="sxs-lookup"><span data-stu-id="a95a2-136">*String*</span></span> | <span data-ttu-id="a95a2-137">Lese/skrive</span><span class="sxs-lookup"><span data-stu-id="a95a2-137">Read/write</span></span><br><span data-ttu-id="a95a2-138">Obligatorisk</span><span class="sxs-lookup"><span data-stu-id="a95a2-138">Required</span></span> |  <span data-ttu-id="a95a2-139">IDen for sertifikattype som er definert i Human Resources.</span><span class="sxs-lookup"><span data-stu-id="a95a2-139">The identifier of the certificate type defined in Human Resources.</span></span> |
+| <span data-ttu-id="a95a2-140">**Verdi for ID for sertifikattype**</span><span class="sxs-lookup"><span data-stu-id="a95a2-140">**Certificate Type ID Value**</span></span><br><span data-ttu-id="a95a2-141">_mshr_fk_certificatetype_id_value</span><span class="sxs-lookup"><span data-stu-id="a95a2-141">_mshr_fk_certificatetype_id_value</span></span><br><span data-ttu-id="a95a2-142">*GUID*</span><span class="sxs-lookup"><span data-stu-id="a95a2-142">*GUID*</span></span> | <span data-ttu-id="a95a2-143">Skrivebeskyttet</span><span class="sxs-lookup"><span data-stu-id="a95a2-143">Read-only</span></span><br><span data-ttu-id="a95a2-144">Obligatorisk</span><span class="sxs-lookup"><span data-stu-id="a95a2-144">Required</span></span><br><span data-ttu-id="a95a2-145">Sekundærnøkkel: mshr_hcmcertificatetypeentityid i mshr_hcmcertificatetypeentity</span><span class="sxs-lookup"><span data-stu-id="a95a2-145">Foreign key: mshr_hcmcertificatetypeentityid of mshr_hcmcertificatetypeentity</span></span> | <span data-ttu-id="a95a2-146">Systemgenerert unik identifikator for sertifikattype i den tilknyttede enheten.</span><span class="sxs-lookup"><span data-stu-id="a95a2-146">System-generated unique identifier of the certificate type in the associated entity.</span></span> |
+| <span data-ttu-id="a95a2-147">**Startdato**</span><span class="sxs-lookup"><span data-stu-id="a95a2-147">**Start Date**</span></span><br><span data-ttu-id="a95a2-148">mshr_startdate</span><span class="sxs-lookup"><span data-stu-id="a95a2-148">mshr_startdate</span></span><br><span data-ttu-id="a95a2-149">*Datetime*</span><span class="sxs-lookup"><span data-stu-id="a95a2-149">*Datetime*</span></span> | <span data-ttu-id="a95a2-150">Lese/skrive</span><span class="sxs-lookup"><span data-stu-id="a95a2-150">Read/write</span></span><br><span data-ttu-id="a95a2-151">Obligatorisk</span><span class="sxs-lookup"><span data-stu-id="a95a2-151">Required</span></span> | <span data-ttu-id="a95a2-152">Datoen da sertifikatet ble utstedt.</span><span class="sxs-lookup"><span data-stu-id="a95a2-152">The date at which the certificate was issued.</span></span> |
+| <span data-ttu-id="a95a2-153">**Sluttdato**</span><span class="sxs-lookup"><span data-stu-id="a95a2-153">**End Date**</span></span><br><span data-ttu-id="a95a2-154">mshr_enddate</span><span class="sxs-lookup"><span data-stu-id="a95a2-154">mshr_enddate</span></span><br><span data-ttu-id="a95a2-155">*Datetime*</span><span class="sxs-lookup"><span data-stu-id="a95a2-155">*Datetime*</span></span> | <span data-ttu-id="a95a2-156">Lese/skrive</span><span class="sxs-lookup"><span data-stu-id="a95a2-156">Read/write</span></span><br><span data-ttu-id="a95a2-157">Valgfri</span><span class="sxs-lookup"><span data-stu-id="a95a2-157">Optional</span></span> | <span data-ttu-id="a95a2-158">Datoen da sertifikatet utløper.</span><span class="sxs-lookup"><span data-stu-id="a95a2-158">The date at which the certificate will expire.</span></span> |
+| <span data-ttu-id="a95a2-159">**Notater**</span><span class="sxs-lookup"><span data-stu-id="a95a2-159">**Notes**</span></span><br><span data-ttu-id="a95a2-160">mshr_notes</span><span class="sxs-lookup"><span data-stu-id="a95a2-160">mshr_notes</span></span><br><span data-ttu-id="a95a2-161">*Streng*</span><span class="sxs-lookup"><span data-stu-id="a95a2-161">*String*</span></span> | <span data-ttu-id="a95a2-162">Lese/skrive</span><span class="sxs-lookup"><span data-stu-id="a95a2-162">Read/write</span></span><br><span data-ttu-id="a95a2-163">Valgfri</span><span class="sxs-lookup"><span data-stu-id="a95a2-163">Optional</span></span> | <span data-ttu-id="a95a2-164">Merknader som skal brukes av ansettelsesansvarlige og rekrutteringspersoner.</span><span class="sxs-lookup"><span data-stu-id="a95a2-164">Notes for use by hiring managers and recruiters.</span></span> |
+| <span data-ttu-id="a95a2-165">**Primærfelt**</span><span class="sxs-lookup"><span data-stu-id="a95a2-165">**Primary Field**</span></span><br><span data-ttu-id="a95a2-166">mshr_primaryfield</span><span class="sxs-lookup"><span data-stu-id="a95a2-166">mshr_primaryfield</span></span><br><span data-ttu-id="a95a2-167">*Streng*</span><span class="sxs-lookup"><span data-stu-id="a95a2-167">*String*</span></span> | <span data-ttu-id="a95a2-168">Skrivebeskyttet</span><span class="sxs-lookup"><span data-stu-id="a95a2-168">Read-only</span></span><br><span data-ttu-id="a95a2-169">Obligatorisk</span><span class="sxs-lookup"><span data-stu-id="a95a2-169">Required</span></span> |  <span data-ttu-id="a95a2-170">Felt som brukes som en identifikator for enhetsposten.</span><span class="sxs-lookup"><span data-stu-id="a95a2-170">Field to be used as an identifier of the entity record.</span></span> <span data-ttu-id="a95a2-171">Kombinasjon av partnummer, ID for sertifikattype og startdato.</span><span class="sxs-lookup"><span data-stu-id="a95a2-171">Combination of party number, certificate type ID, and start date.</span></span> |
+
+## <a name="see-also"></a><span data-ttu-id="a95a2-172">Se også</span><span class="sxs-lookup"><span data-stu-id="a95a2-172">See also</span></span>
+
+[<span data-ttu-id="a95a2-173">Innføring i API for søkersporingssystemintegrering</span><span class="sxs-lookup"><span data-stu-id="a95a2-173">Applicant Tracking System integration API introduction</span></span>](hr-admin-integration-ats-api-introduction.md)<br>
+[<span data-ttu-id="a95a2-174">Eksempelspørring for Kandidat for ansettelse</span><span class="sxs-lookup"><span data-stu-id="a95a2-174">Example query for Candidate to hire</span></span>](hr-admin-integration-ats-api-candidate-to-hire-example-query.md)
+
