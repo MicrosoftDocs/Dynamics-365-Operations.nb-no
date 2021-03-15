@@ -192,3 +192,6 @@ Fullstendig sendte overføringsordrer flyttes til kategorien **Fullstendig** i d
 ## <a name="related-topics"></a>Relaterte emner
 
 [Inngående lageroperasjon på salgsstedet](pos-inbound-inventory-operation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

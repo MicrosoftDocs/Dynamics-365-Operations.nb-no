@@ -135,3 +135,6 @@ Valideringer for serienumre skjer også når en bruker utfører plukkoperasjonen
 [Inngående lageroperasjon i salgsstedet](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation)
 
 [Utgående lageroperasjon i salgsstedet](https://docs.microsoft.com/dynamics365/commerce/pos-outbound-inventory-operation)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

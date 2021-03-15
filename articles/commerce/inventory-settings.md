@@ -92,3 +92,6 @@ Bildet nedenfor viser et eksempel på en handlekurv med en melding om at varen f
 [Butikkvelgermodul](store-selector.md)
 
 [Oppdateringer for SDK og modulbibliotek](e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

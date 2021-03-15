@@ -133,3 +133,6 @@ Det følgende bildet viser et eksempel på et oppsett for gruppetilordning for o
 [Definere en telefonsenterkanal](channel-setup-callcenter.md)
 
 [Dynamics 365 Payment Connector for Adyen](../retail/dev-itpro/adyen-connector.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -54,3 +54,6 @@ Når du har fullført forhåndskravene, kan du opprette et sortiment og tilordne
 2. Velg kanalene eller gruppene på høyt nivå for kanaler som sortimentet gjelder for.
 3. Legg til produktkategorier, individuelle produkter eller produktvarianter i sortimentet. Du kan inkludere alle produkter i en bestemt kategori, eller du kan utelate bestemte produkter fra en kategori som er inkludert i sortimentet.
 4. Publiser sortimentet. Når du publiserer et sortiment, kjøres sortimentsplanleggeren automatisk. Denne prosessen genererer listen over produkter. Når denne prosessen er fullført, blir produktene tilgjengelige i kanalene som produktsortimentet er tilordnet til. Hvis du endrer et sortiment som er publisert, eller kanalene som sortimentet er tilordnet til, må sortimentet oppdateres. Du kan kjøre sortimentsplanleggeren som en satsvis jobb for å oppdatere sortimentet ved endringer.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

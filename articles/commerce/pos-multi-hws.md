@@ -153,3 +153,6 @@ Butikkmedarbeidere blir bare bedt om å velge en maskinvarestasjon én gang per 
 - [Definere POS Hybrid-app på Android og iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp)
 - [Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3)
 - [Oversikt over støtte for eksterne nettverksenheter](https://go.microsoft.com/fwlink/?linkid=2129965)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

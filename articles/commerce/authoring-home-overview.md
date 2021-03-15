@@ -121,3 +121,6 @@ Når redigeringsverktøyet er lastet, kan du velge **Hjem** for å gå tilbake t
 [Vurderinger for søkemotoroptimalisering (SEO) for området](search-engine-optimization-considerations.md)
 
 [Behandle policy for innholdssikkerhet (CSP)](manage-csp.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

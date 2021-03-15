@@ -111,3 +111,6 @@ Hvis du vil begynne å bruke forhåndsinnstilte oppsett, se [Arbeide med forhån
 [Arbeide med forhåndsinnstilte oppsett](work-with-layouts.md)
 
 [Arbeide med publiseringsgrupper](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -70,3 +70,6 @@ Når området er opprettet, har bare brukere som er i sikkerhetsgruppene som er 
 [Vurderinger for søkemotoroptimalisering (SEO) for området](search-engine-optimization-considerations.md)
 
 [Behandle policy for innholdssikkerhet (CSP)](manage-csp.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

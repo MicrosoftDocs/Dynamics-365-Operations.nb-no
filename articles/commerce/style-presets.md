@@ -127,3 +127,6 @@ Stilverdiene for forhåndsinnstillingen aktiveres på hele den brukerrettede del
 [Legge til språk på området](add-languages-to-site.md)
 
 [Legge til skript kode i områdes ID-er for å støtte telemetri](add-telemetry.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

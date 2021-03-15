@@ -89,3 +89,6 @@ Utvidelsen inneholder en datafil med navnet RecoMockDataset.csv, som lar deg kon
 [Opprette kuraterte anbefalinger manuelt](create-editorial-recommendation-lists.md)
 
 [Vanlige spørsmål om produktanbefalinger](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

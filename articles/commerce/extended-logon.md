@@ -66,3 +66,6 @@ Påloggingstjenesten kan utvides for å støtte flere utvidede påloggingsenhete
 ## <a name="using-extended-logon"></a>Bruke utvidet pålogging
 
 Når utvidet pålogging er konfigurert, og en arbeider er tilordnet til en strekkode eller magnetstripe, trenger arbeideren bare å dra eller skanne hans eller hennes kort mens Salgsstedets påloggingsside vises. Hvis et passord kreves også før pålogging kan fortsette, blir arbeideren bedt om å angi passordet sitt.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

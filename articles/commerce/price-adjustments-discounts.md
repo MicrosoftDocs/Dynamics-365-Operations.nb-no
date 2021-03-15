@@ -50,3 +50,6 @@ Det finnes mange typer rabatter:
 - **Leveringsrabatt** – En rabatt som brukes når totalen for transaksjonen er mer enn et bestemt beløp og en bestemt leveringsmåte (for eksempel forsendelse på to dager eller over natten) brukes på ordren.
 
 Både prisjusteringer og rabatter kan knyttes til prisgrupper. Prisgrupper kan deretter knyttes til kanaler, kataloger, tilknytninger og fordelsprogrammer.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

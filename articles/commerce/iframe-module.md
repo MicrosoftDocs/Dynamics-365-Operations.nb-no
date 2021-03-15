@@ -76,3 +76,6 @@ Følg denne fremgangsmåten for å legge til en iFrame-modul på en side for å 
 [Oversikt over modulbibliotek](starter-kit-overview.md)
 
 [Behandle policy for innholdssikkerhet (CSP)](manage-csp.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

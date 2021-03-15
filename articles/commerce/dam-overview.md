@@ -59,3 +59,6 @@ Digitale ressurser og administrasjonsfunksjoner finnes i områdebyggeren under *
 [Tilpasse bildefokuspunkter](dam-custom-focal-point.md)
 
 [Last opp og betjen statiske filer](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

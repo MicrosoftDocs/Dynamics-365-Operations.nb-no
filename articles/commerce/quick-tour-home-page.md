@@ -72,3 +72,6 @@ Hoveddelen av startsiden kan utheve produkter, kategorier eller kampanjer ved hj
 [Oversikt over sider for handlekurv og kasse](quick-tour-cart-checkout.md)
 
 [Oversikt over kontobehandlingssider](quick-tour-account-management.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

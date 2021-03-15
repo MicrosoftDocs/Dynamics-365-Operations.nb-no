@@ -108,3 +108,6 @@ En organisasjon kan eventuelt sette alternativet **Tillat betalingsoverstyring**
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Betalingsmåter i telefonsentre](work-with-payments.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

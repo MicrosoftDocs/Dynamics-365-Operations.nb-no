@@ -86,3 +86,6 @@ Hvis du vil legge til en ordrebekreftelsesmodul på en ny side og angi de nødve
 [Henteinformasjonsmodul](pickup-info-module.md)
 
 [Gavekortmodul](add-giftcard.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

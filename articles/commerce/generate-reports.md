@@ -137,3 +137,6 @@ Følg denne fremgangsmåten for å generere en **Organisasjonssalg**-rapport.
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 - [Startside for Commerce](../retail/index.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

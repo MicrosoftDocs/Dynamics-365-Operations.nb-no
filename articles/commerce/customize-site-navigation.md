@@ -109,3 +109,6 @@ Hvis du vil legge til egendefinerte navigasjonsalternativer i navigasjonsmenyen,
 [Opprette en URL-adresse for side](create-page-url.md)
 
 [Arbeide med publiseringsgrupper](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -135,3 +135,6 @@ Hvis du vil definere en prisgruppe, gjør du følgende:
 [Definere og arbeide med svindelvarsler](set-up-fraud-alerts.md)
 
 [Definere kontinuitetsprogrammer for telefonsentre](set-up-continuity-program.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

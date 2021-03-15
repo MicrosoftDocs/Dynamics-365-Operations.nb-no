@@ -68,3 +68,6 @@ Følg denne fremgangsmåten for å aktivere stedsbasert butikkregistrering i Com
 [Konfigurere flere B2C-leiere i et Commerce-miljø](configure-multi-B2C-tenants.md)
 
 [Legge til støtte for et innholdsleveringsnettverk (CDN)](add-cdn-support.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

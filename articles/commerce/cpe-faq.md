@@ -70,3 +70,6 @@ Utvidelsen av tidsgrensen er et unntak fra normen og vurderes for hvert tilfelle
 [Konfigurere BOPIS i et evalueringsmiljø for Dynamics 365 Commerce](cpe-bopis.md)
 
 [Konfigurere valgfrie funksjoner for et evalueringsmiljø for Dynamics 365 Commerce](cpe-optional-features.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

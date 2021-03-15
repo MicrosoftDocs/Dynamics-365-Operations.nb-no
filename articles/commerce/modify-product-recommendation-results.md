@@ -120,3 +120,6 @@ Følg disse trinnene for å legge til eller fjerne resultater for et seed-produk
 [Opprette anbefalinger med demonstrasjonsdata](product-recommendations-demo-data.md)
 
 [Vanlige spørsmål om produktanbefalinger](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

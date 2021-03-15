@@ -83,3 +83,6 @@ Hvis du vil legge til en kategorimodul på en side og angi de nødvendige egensk
 [Samsvarsmodul](add-accordion.md)
 
 [Tekstblokkmodul](add-content-rich-block.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

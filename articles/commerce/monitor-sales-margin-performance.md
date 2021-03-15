@@ -48,3 +48,6 @@ I tillegg kan to egne rapporter som drar nytte av struktureres hierarkisk rutene
 - Arbeidsområdet **Kategori- og produktstyring** &gt; **Retail og Commerce** &gt; **Produkt og kategorier** &gt; **Butikkadministrasjon** &gt; **Rapporter**
 - Arbeidsområdet **Prisings- og rabattstyring** &gt; **Retail og Commerce** &gt; **Prising og rabatter** &gt; **Butikkadministrasjon** &gt; **Rapporter**
 - Delen **Forespørsler og rapporter** &gt; **Retail og Commerce** &gt; **Forespørsler og rapporter** &gt; **Salgsrapporter**
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

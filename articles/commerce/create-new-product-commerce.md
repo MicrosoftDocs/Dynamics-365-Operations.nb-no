@@ -114,3 +114,6 @@ Bildet nedenfor viser en eksempelkonfigurasjon for et frigitt produkt.
 [Opprett juridiske enheter](channels-legal-entities.md)
 
 [Opprette en variantgruppe](create-variant-group.md) 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

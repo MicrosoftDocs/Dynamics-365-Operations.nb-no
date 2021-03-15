@@ -67,3 +67,6 @@ Velkomstmeldingen vil nå vises øverst på alle områdesider som bruker det val
 
 [Legge til skript kode i områdes ID-er for å støtte telemetri](add-telemetry.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

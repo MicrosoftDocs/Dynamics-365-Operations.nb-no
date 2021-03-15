@@ -88,3 +88,6 @@ Følgende eksempel viser hvordan du endrer startsiden ved å endre videoen som v
 [Kontrollere tilgjengelighet for sideinnhold](verify-accessibility.md)
 
 [Opprette dynamiske e-handelssider basert på URL-parametere](create-dynamic-pages.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

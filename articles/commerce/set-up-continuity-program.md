@@ -49,3 +49,6 @@ Når du har definert et kontinuitetsprogram som beskrevet ovenfor, kan du oppret
 - **Utvid kontinuitetslinjer** (om nødvendig) – Utvid antall ganger en kontinuitetshendelse kan gjentas. Gjentakelsen av forsendelser kan deretter gå utover grensen som er angitt i feltet **Terskel for kontinuitetsgjentakelse** i telefonsenterparameterne.
 - **Utfør en kontinuitetsoppdatering** (om nødvendig) – Synkroniser endringer mellom kontinuitetsprogrammet og de overordnede kontinuitetssalgsordrene.
 - **Lukk overordnede kontinuitetslinjer og -ordrer** – Lukk kontinuitetsordrer.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

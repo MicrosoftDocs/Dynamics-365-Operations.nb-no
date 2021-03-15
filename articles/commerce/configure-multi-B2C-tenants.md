@@ -130,3 +130,6 @@ Den nye Azure AD B2C-leieren skal nå vises i listen under **Behandle B2C-progra
 [Legge til støtte for et innholdsleveringsnettverk (CDN)](add-cdn-support.md)
 
 [Aktivere stedsbasert butikkregistrering](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

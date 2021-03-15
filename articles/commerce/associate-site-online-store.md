@@ -57,3 +57,6 @@ Når området er opprettet, kan du kontrollere at det er tilknyttet nettbutikken
 [Legge til støtte for et innholdsleveringsnettverk (CDN)](add-cdn-support.md)
 
 [Aktivere stedsbasert butikkregistrering](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

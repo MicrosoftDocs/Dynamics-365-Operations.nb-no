@@ -103,3 +103,6 @@ Følg trinnene i et av følgende eksempler for å vise de tillatte returbetaling
 
 
 ![Liste over betalingsmåter](media/Return-policy-page5.PNG "Refusjonstyper tillatt")
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

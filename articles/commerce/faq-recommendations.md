@@ -99,3 +99,6 @@ Når du har aktivert produktanbefalinger, må du legge til anbefalingspanelet ti
 [Opprette kuraterte anbefalinger manuelt](create-editorial-recommendation-lists.md)
 
 [Opprette anbefalinger med demonstrasjonsdata](product-recommendations-demo-data.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

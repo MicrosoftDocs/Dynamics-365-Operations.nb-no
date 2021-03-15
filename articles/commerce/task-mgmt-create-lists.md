@@ -92,3 +92,6 @@ Gjør følgende for å konfigurere en POS-operasjon slik at den kan kobles til e
 [Tilordne oppgavelister til butikker eller ansatte](task-mgmt-assign-lists.md)
 
 [Oppgavebehandling på salgsstedet](task-mgmt-POS.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

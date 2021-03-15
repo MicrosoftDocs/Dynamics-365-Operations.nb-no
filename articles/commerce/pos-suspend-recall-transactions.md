@@ -81,3 +81,6 @@ Skann strekkoden på den utskrevne seddelen hvis du vil tilbakekalle en suspende
 ### <a name="void-a-suspended-transaction"></a>Annullere en suspendert transaksjon
 
 Du kan annullere suspenderte transaksjoner enten ved å tilbakekalle transaksjonen og deretter utføre **Annuller transaksjon**-operasjonen, eller ved å velge transaksjonen i **Tilbakekall transaksjon**-listen og velge **Annuller** i programfeltet. Eventuelt kan butikken konfigureres til å be brukerne om å annullere suspenderte transaksjoner når de avslutter skiftet.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

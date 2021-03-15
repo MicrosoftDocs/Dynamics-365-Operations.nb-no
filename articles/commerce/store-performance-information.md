@@ -44,3 +44,6 @@ Denne rapporten gir en oversikt over følgende sammendrag som en del av butikkyt
 - Mva-sammendrag
 - Sammendrag for prisoverstyringer
 - Rabattsammendrag
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -53,3 +53,6 @@ Gjør følgende for å konfigurere suksessmåledataene.
 
 ## <a name="next-step"></a>Neste trinn
 [Koble til og redigere et eksperiment](experimentation-connect-edit.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

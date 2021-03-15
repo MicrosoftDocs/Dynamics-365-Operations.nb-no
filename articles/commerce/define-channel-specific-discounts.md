@@ -61,3 +61,6 @@ Følgende eksempel viser oppgavene med å konfigurere en kanalrabatt.
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Prisjusteringer og rabatter](price-adjustments-discounts.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

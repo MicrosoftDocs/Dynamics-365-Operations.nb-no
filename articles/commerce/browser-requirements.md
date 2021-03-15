@@ -47,3 +47,6 @@ Dynamics 365 Commerce-områder støttes best av følgende weblesere. Du finner d
 [Administrere robots.txt-filer](manage-robots-txt-files.md)
 
 [Aktivere stedsbasert butikkregistrering](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

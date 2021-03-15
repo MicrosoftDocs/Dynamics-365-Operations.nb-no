@@ -56,3 +56,6 @@ Velg ett av følgende emner for å komme i gang.
 [Dokumentere statuser og livssyklus](document-states-overview.md)
 
 [Aktivere og bruke deling på tvers av kanal](cross-channel-sharing.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -105,3 +105,6 @@ Hvis du vil endre URL-banen, følger du denne fremgangsmåten.
 [Beskjære bilder](dam-crop-images.md)
 
 [Tilpasse bildefokuspunkter](dam-custom-focal-point.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

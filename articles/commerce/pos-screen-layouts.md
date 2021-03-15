@@ -207,3 +207,6 @@ Utforming for knappegruppe lar deg konfigurere knappegrupper som kan brukes på 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Installere utforming av oppsett for salgssted (POS) for detaljhandel](install-pos-layout-designer.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

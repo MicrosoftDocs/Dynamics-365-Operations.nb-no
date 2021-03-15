@@ -117,3 +117,6 @@ Hvis du vil legge til en handlekurvmodul på en ny side og angi de nødvendige e
 [Beregne lagertilgjengelighet for detaljhandelskanaler](calculated-inventory-retail-channels.md)
 
 [Opprette en nettbasert funksjonalitetsprofil](online-functionality-profile.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

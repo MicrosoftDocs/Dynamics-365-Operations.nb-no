@@ -65,3 +65,6 @@ Hvis du vil legge til en handlekurvikonmodul, kan du se [Hodemodul](author-heade
 [Ordredetaljermodul](order-confirmation-module.md)
 
 [Gavekortmodul](add-giftcard.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

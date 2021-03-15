@@ -71,3 +71,6 @@ Lagertellinger kan være planlagt eller ikke planlagt. Planlagte lageropptelling
 ## <a name="inventory-lookup"></a>Beholdningsoppslag
 
 Produktantallet som for øyeblikket finnes på lager for flere butikker og lagere, kan vises på siden **Beholdningsoppslag**. I tillegg til det gjeldende antallet på lager, kan fremtidige antall tilgjengelig for ordre (ATP) vises for hver butikk. Velg butikken du vil vise ATP-antall for, og velg deretter **Vis butikktilgjengelighet**. Hvis du vil ha informasjon om hvilke konfigurasjonsalternativer som er tilgjengelige, kan du se [Beregne lagertilgjengelighet for detaljhandelskanaler](https://docs.microsoft.com/dynamics365/commerce/calculated-inventory-retail-channels).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

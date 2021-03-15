@@ -174,3 +174,6 @@ Når denne beregningsmåten brukes i en delvis retur-scenario, hvis tilleggskode
 [Avanserte automatiske tillegg for omnikanal](omni-auto-charges.md)
 
 [Aktivere og konfigurere automatiske avregninger etter kanal](auto-charges-by-channel.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

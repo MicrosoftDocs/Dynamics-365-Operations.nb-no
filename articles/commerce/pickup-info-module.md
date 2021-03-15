@@ -69,3 +69,6 @@ Følgende illustrasjon viser et eksempel på en betalingsside for e-handel som i
 [Ordrebekreftelsesmodul](order-confirmation-module.md)
 
 [Ordredetaljermodul](account-management.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

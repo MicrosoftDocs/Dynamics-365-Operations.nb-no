@@ -76,3 +76,6 @@ Hvis du vil vise varslingsantallet på en knapp, må du kontrollere at riktig sk
 Illustrasjonen nedenfor viser resultatet av å velge **Øverst til høyre** og **Midtstill** i feltet **Innholdsjustering** for knapper i ulike størrelser.
 
 ![Aktivt innhold på salgsstedsknapper](./media/ButtonsWithLiveContent.png "Aktivt innhold på salgsstedsknapper")
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

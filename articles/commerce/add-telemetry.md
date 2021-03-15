@@ -121,3 +121,6 @@ Hvis du vil legge til et eksternt skript direkte i en mal i områdebygger, følg
 [Legge til en opphavsrettserklæring](add-copyright-notice.md)
 
 [Legge til språk på området](add-languages-to-site.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

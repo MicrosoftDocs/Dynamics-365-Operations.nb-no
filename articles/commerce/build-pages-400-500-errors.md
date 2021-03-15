@@ -82,3 +82,6 @@ Følg denne fremgangsmåten for å opprette en omadressering for svarsiden for s
 [Legg til en ny områdeside](add-new-page.md)
 
 [Opprette en URL-adresse for side](create-page-url.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

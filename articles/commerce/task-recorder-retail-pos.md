@@ -145,3 +145,6 @@ Når du klikker en oppgaveveiledning i søkeresultatene, kan du se trinnene som 
 
 > [!NOTE]
 > Hjelp i Retail Modern POS og Cloud POS henter ikke frem oppgaveveiledninger i henhold til hvilket skjema du bruker eller hva du holder på med. Du må skrive inn prosessnavnet i søkeboksen, og deretter klikke **Søk**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

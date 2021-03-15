@@ -112,3 +112,6 @@ Bildet nedenfor viser et eksempel på kundekonfigurasjon.
 [Oversikt over kanaler](channels-overview.md)
 
 [Forutsetninger for kanaloppsett](channels-prerequisites.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

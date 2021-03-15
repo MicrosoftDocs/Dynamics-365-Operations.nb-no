@@ -98,3 +98,6 @@ Den følgende illustrasjonen viser avmerkingsboksen **Aktiver kobling til kjøp 
 [Opprette kuraterte anbefalinger manuelt](create-editorial-recommendation-lists.md)
 
 [Vanlige spørsmål om produktanbefalinger](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -141,3 +141,6 @@ Hvis du vil legge til en containerspillermodul på en ny side og angi de nødven
 [Topptekstmodul](author-header-module.md)
 
 [Bunntekstmodul](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

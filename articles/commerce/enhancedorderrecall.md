@@ -63,3 +63,6 @@ Fra applinjen kan en bruker velge en operasjon. Det kan hende at bestemte operas
 - **Rediger** – Lar brukere gjøre endringer i den valgte kundeordren.
 
 - **Hent** – Starter henteflyten, slik at brukeren kan velge hvilke produkter som skal hentes, og opprette salgstransaksjoner for hentingen.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

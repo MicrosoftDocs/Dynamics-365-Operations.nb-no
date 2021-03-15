@@ -48,3 +48,6 @@ Du må fullføre følgende oppgaver hvis du vil definere betalingsmåter.
 2. Opprett korttyper og kortnumre for hele organisasjonen. Hvis kredittkortene eller debetkortene godtas, må du opprette én betalingsmetode for kort og deretter opprette korttypene og kortnumrene for hele organisasjonen.
 3. Definere betalingsmåte i butikker Knytt betalingsmåter til hver butikk, og angi deretter de butikkspesifikke innstillingene for hvert betalingsmåte.
 4. Definer kortbetalingsmåter for butikker. Fullfør kortoppsettet for alle kortbetalingsmåter som butikken godtar.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -145,3 +145,6 @@ Hvis du vil konfigurere butikkvelgermodulen til å vise tilgjengelige butikker f
 [Bing Maps REST API-er](https://docs.microsoft.com/bingmaps/rest-services/)
 
 [Kartmodul](map-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

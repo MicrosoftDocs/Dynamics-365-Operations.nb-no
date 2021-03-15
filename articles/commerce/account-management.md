@@ -88,3 +88,6 @@ For å bli med i et fordelsprogram kan det opprettes en markedsføringsside med 
 [Topptekstmodul](author-header-module.md)
 
 [Bunntekstmodul](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

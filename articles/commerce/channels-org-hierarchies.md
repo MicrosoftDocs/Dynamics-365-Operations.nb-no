@@ -87,3 +87,6 @@ Det følgende bildet viser en juridisk enhet som er lagt til i hierarkiroten med
 [Oversikt over kanaler](channels-overview.md)
 
 [Forutsetninger for kanaloppsett](channels-prerequisites.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

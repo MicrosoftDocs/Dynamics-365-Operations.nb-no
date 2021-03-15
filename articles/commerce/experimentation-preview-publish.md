@@ -59,3 +59,6 @@ Når du bruker publiseringsgrupper med eksperimenter, er det noen viktige hensyn
 
 ## <a name="next-step"></a>Neste trinn
 [Kjør og Overvåk et eksperiment](experimentation-run-monitor.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

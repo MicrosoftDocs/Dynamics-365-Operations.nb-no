@@ -79,3 +79,6 @@ Hvis du vil velge et annet oppsett for en eksisterende side, følger du disse tr
 
 [Opprette dynamiske e-handelssider basert på URL-parametere](create-dynamic-pages.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

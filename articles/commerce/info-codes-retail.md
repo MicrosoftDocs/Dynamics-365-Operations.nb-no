@@ -55,3 +55,6 @@ Du kan koble informasjonskoder slik at når én informasjonskode blir utløst, u
 **Eksempel 2: Koble infokoder til infokodegrupper**
 
 Når du selger visse produkter, for eksempel mobilenheter, er det alltid aktuelt å samle inn et spesifikt sett med informasjon, for eksempel telefonnummer, MEID-nummer (Mobile Equipment Identifier) og serienummer. Du vil imidlertid også samle inn annen informasjon for et nettbrett enn for en mobiltelefon. Du kan definere en informasjonskodegruppe som inkluderer spørsmål om telefonnummeret, MEID-nummeret og serienummeret, og deretter koble informasjonskodegruppen til en individuell informasjonskode. Når den produktspesifikke informasjonskoden utløses, kan informasjonskodegruppen utløses i neste omgang, slik at du kan samle inn fellesdataene uten å måtte definere flere sett med koblede informasjonskoder for hver enhet.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

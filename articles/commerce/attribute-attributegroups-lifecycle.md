@@ -256,3 +256,6 @@ Standardverdiene for attributter kan overstyres for enkeltprodukter på produktn
 
     > [!NOTE]
     > Hvis delte produktmedier og delte produktattributter opprettes, gjelder de for alle produkter.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

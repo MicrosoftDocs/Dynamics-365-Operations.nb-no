@@ -83,3 +83,6 @@ Bildet nedenfor viser hvordan du publiserer kanaloppdateringer.
 [Opprette et kanalnavigasjonshierarki](create-channel-hierarchy.md)
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

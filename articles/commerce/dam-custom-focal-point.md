@@ -59,3 +59,6 @@ Følg denne fremgangsmåten for å definere et egendefinert fokuspunkt for et bi
 [Beskjære bilder](dam-crop-images.md)
 
 [Last opp og betjen statiske filer](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

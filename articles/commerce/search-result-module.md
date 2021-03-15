@@ -90,3 +90,6 @@ For å legge til en søkeresultatmodul på en kategoriside, følg disse trinnene
 [Oversikt over modulbibliotek](starter-kit-overview.md)
 
 [Hurtigvisningsmodul](quick-view-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

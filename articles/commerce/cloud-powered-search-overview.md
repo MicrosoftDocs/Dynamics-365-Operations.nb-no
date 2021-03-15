@@ -81,3 +81,6 @@ Bedre sortering i Dynamics 365 Commerce lar kundene sortere, søke etter og bla 
 [Oversikt over standard kategorimålside og søkeresultatside](category-search-page-overview.md)
 
 [Behandle metadata for søkemotor](manage-seo-metadata.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

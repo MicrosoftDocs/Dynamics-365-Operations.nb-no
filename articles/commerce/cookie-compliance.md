@@ -72,3 +72,6 @@ Hvis en funksjon i et e-handelsområde eller en modul bruker en ikke-vesentlig i
 [Samtykkemodul for informasjonskapsel](cookie-consent-module.md) 
  
 [Topptekstmodul](author-header-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

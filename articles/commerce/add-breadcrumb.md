@@ -94,3 +94,6 @@ Hvis du vil legge til en brødsmulemodul på en PDP og angi de nødvendige egens
 [Kjøpsboksmodul](add-buy-box.md)
 
 [Oppdateringer for SDK og modulbibliotek](e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

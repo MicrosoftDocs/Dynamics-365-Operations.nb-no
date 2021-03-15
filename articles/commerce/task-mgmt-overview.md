@@ -52,3 +52,6 @@ Følgende illustrasjon viser begrepsmessig arkitektur for oppgavebehandling i Co
 [Tilordne oppgavelister til butikker eller ansatte](task-mgmt-assign-lists.md)
 
 [Oppgavebehandling på salgsstedet](task-mgmt-POS.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

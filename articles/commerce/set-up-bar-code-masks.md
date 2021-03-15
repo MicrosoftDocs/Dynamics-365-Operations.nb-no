@@ -82,3 +82,6 @@ Strekkodemasker må tilordnes til strekkoder før de kan brukes. Vi fortsetter m
 5. Klikk **Lagre**.
 
 Strekkodemasken kan nå brukes til å opprette strekkoder for produkter. Fremgangsmåten ovenfor et eksempel på hvordan du oppretter strekkodemasker for produkter, men illustrerer også hvordan du oppretter strekkodemasker for alle strekkodetyper som støttes. Strekkodemasker-, typer og -lengder må justeres for bruk i ditt spesifikke miljø.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -86,3 +86,6 @@ Ved √• legge til fragmentet i sidemaler garanteres det at bunnteksten gjengis p√
 [Topptekstmodul](author-header-module.md)
 
 [Bunntekstmodul](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

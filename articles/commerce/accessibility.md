@@ -113,3 +113,6 @@ Hvis du vil angi **Minimumsalder**-attributtet for en videoressurs, følger du d
 [Legge til en side for personvernpolicy](add-privacy-page.md)
 
 [Erstatte bruker-IDer knyttet til sporede innholdsendringer](replace-IDs-tracked-changes.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -55,3 +55,6 @@ Fordi Dynamics 365 Commerce støtter WYSIWYG-forhåndsvisning i visuell sidebygg
 [Legge til skript kode i områdes ID-er for å støtte telemetri](add-telemetry.md)
 
 [Behandle policy for innholdssikkerhet (CSP)](manage-csp.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

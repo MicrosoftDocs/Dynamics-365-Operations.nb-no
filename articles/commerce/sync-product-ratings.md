@@ -134,3 +134,6 @@ Illustrasjonen nedenfor viser et eksempel på produktvurderinger i telefonsenter
 [Administrere vurderinger og anmeldelser](manage-reviews.md)
 
 [Konfigurere vurderinger og anmeldelser](configure-ratings-reviews.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

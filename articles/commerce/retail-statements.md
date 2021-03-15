@@ -87,3 +87,6 @@ Når du posterer et utdrag, opprettes salgsordrer og fakturaer for salgene i utd
 - Salg der en kunde ble lagt til for transaksjonen i POS, genererer separate salgsordrer og fakturaer, én for hver unike kunde.
 
 Betalingsjournaler opprettes automatisk for betalingene i utdraget, og lageret oppdateres for salgsstedsbutikken.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

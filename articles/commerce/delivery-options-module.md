@@ -82,3 +82,6 @@ En modul for leveringsalternativer kan bare legges til i en kassemodul. Hvis du 
 [Fordele hodegebyrer for å matche salgslinjer](pro-rate-charges-matching-lines.md)
 
 [Definer leveringsmåter](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

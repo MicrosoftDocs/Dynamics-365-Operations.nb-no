@@ -118,3 +118,6 @@ For å sikre at det vises en topptekst på hver side, kan du følge denne fremga
 [Områdevelgermodul](site-selector.md)
 
 [Butikkvelgermodul](store-selector.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

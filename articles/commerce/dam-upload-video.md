@@ -72,3 +72,6 @@ Hvis du laster opp flere typer aktiva samtidig (for eksempel bilder og videoer),
 [Tilpasse bildefokuspunkter](dam-custom-focal-point.md)
 
 [Last opp og betjen statiske filer](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

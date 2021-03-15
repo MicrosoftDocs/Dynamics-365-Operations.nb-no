@@ -150,3 +150,6 @@ Forhandlere kan også definere grensen for maksimale fordelspoeng per fordelskor
 
     > [!NOTE]
     > I motsetning til andre tidsbestemte rabatter som kvantumsrabatt, enkel rabatt, samlerabatt og terskelrabatt, oppretter ikke forsendelsesrabatten rabattlinjer, men redigerer forsendelseskostnadene direkte og legger ved navnet på rabatten i beskrivelsen av tillegget.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

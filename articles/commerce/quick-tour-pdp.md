@@ -87,3 +87,6 @@ Hvis markedsføringsinnhold er unikt for et bestemt produkt, kan hvilke som hels
 [Oversikt over kontobehandlingssider](quick-tour-account-management.md)
 
 [Supplere en produktdetaljside](enrich-product-page.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

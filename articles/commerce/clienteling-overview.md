@@ -132,3 +132,6 @@ Når du har oppdatert feltene, velger du **Valider** for å sikre at Commerce-pr
 8. I Commerce, på siden **Commerce-parametere**, i kategorien **Kundeaktiviteter**, i hurtigkategorien **Dynamics 365 Customer Insights** angir du **Program-ID** til "CI_Access_AppID" (fra trinn 1 over). For **Hemmelig navn** velger du navnet på hemmeligheten som ble angitt i trinn 7 ovenfor ("CIHemmelighet"). Sett alternativet **Aktiver Customer Insights** til **Ja**. Hvis oppsettet av en eller annen grunn ikke er vellykket, vil du få en feilmelding, og dette alternativet vil bli satt til **Nei**. 
 
 Du kan ha flere miljøer i Customer Insights, for eksempel test- og produksjonsmiljøer. I feltet **ID for miljøforekomst** angir du det aktuelle miljøet. I feltet **Alternativ kunde-ID** angir du egenskapen i Customer Insights som er tilordnet kundekontonummeret. (I Commerce er kundekontonummeret kunde-IDen.) De gjenværende tre egenskapene er målene som vil bli vist på kundekortet i klientboken. Du kan velge opptil tre mål som skal vises på kundekortet. Du trenger imidlertid ikke å velge noen mål. Som tidligere nevnt viser systemet disse verdiene først, og deretter viser det verdiene for klientbokattributtgruppen.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

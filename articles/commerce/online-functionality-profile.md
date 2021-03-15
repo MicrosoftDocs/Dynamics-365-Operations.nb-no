@@ -66,3 +66,6 @@ Bildet nedenfor viser et eksempel på en Internett-funksjonalitetsprofil.
 [Definere en detaljhandelskanal](channel-setup-retail.md)
 
 [Definere en telefonsenterkanal](channel-setup-callcenter.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

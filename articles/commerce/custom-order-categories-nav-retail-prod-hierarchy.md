@@ -87,3 +87,6 @@ Visningsrekkefølgen for kanalnavigasjonshierarkiet gjenspeiles i hovedkontor, k
 
 > [!NOTE]
 > Funksjonen for egendefinert sortering er deaktivert som standard. Hvis du vil vite hvordan du aktiverer denne funksjonen og andre funksjoner, kan du se [Funksjonsbehandling](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/feature-management/feature-management-overview).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

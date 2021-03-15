@@ -57,3 +57,6 @@ Hvis du må endre henteantallet etter at du har valgt varene som skal hentes, ka
 Hvis funksjonen for **Forbedret brukeropplevelse for hentebehandling på salgssted** er aktivert, kan organisasjoner legge til en knapp for operasjonen **Endre hentelinjer** på skjermoppsettet på transaksjonssiden. Når du har opprettet hentetransaksjonskurven på salgsstedet og valgt varer, kan du velge **Endre hentelinjer** hvis du må endre hentevarene, men ikke vil annullere hele transaksjonen. I dialogboksen **Endre hentelinjer** som vises, kan du endre hentevarene og antallene. Transaksjonskurven oppdateres deretter for å gjenspeile endringene.
 
 ![Dialogboksen Endre hentevarer](media/pickupchange.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

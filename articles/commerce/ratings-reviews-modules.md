@@ -99,3 +99,6 @@ Listemodulen for produktvurderinger inneholder et spor der du kan legge til en v
 [Topptekstmodul](author-header-module.md)
 
 [Bunntekstmodul](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

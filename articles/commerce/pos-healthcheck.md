@@ -82,3 +82,6 @@ Egendefinerte tilstandskontroller kan også opprettes for å teste enheter som i
 ## <a name="related-articles"></a>Relaterte artikler
 
 [Utløsere og utskrift for Modern POS (MPOS)](dev-itpro/pos-trigger-printing.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

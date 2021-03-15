@@ -88,3 +88,6 @@ Hvis du vil legge til en tekstblokkmodul på en ny side og angi de nødvendige e
 
 [Videospillermodul](add-video-player.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

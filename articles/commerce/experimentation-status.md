@@ -44,3 +44,6 @@ På samme måte kan følgende verdier vises i kolonnen for **status for tredjepa
 Diagrammet nedenfor viser begge settene med statuser og hvordan de er relatert til hverandre.
 
 [ ![Statuser for eksperimentering](./media/experimentation_statuses.svg) ](./media/experimentation_statuses.svg#lightbox)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

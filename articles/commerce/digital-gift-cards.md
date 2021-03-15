@@ -100,3 +100,6 @@ Følg denne fremgangsmåten for å konfigurere et egendefinert beløp for et dig
 [Opprette en nettbasert funksjonalitetsprofil](online-functionality-profile.md)
 
 [Støtte for eksterne gavekort](./dev-itpro/gift-card.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

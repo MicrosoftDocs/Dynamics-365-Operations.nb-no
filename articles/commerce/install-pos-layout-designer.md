@@ -62,3 +62,6 @@ Den grensesnittet for grafiske utformingen for MPOS og skybasert POS styres av o
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Konfigurere, installere og aktivere Retail Modern POS MPOS](retail-modern-pos-device-activation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

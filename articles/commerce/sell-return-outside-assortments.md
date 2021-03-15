@@ -45,3 +45,6 @@ Disse vanlige scenarioene er tilgjengelige for forhandlere ved hjelp av Commerce
 + Plukke produkter i den gjeldende butikken eller annen butikk.
 + Annullere en ordre i den gjeldende butikken eller annen butikk.
 + Returnere en ordre med eller uten mottaket i den gjeldende butikken eller annen butikk.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

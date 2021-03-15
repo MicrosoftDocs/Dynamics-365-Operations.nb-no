@@ -68,3 +68,6 @@ Denne siden inneholder koblinger til relevante dokumentasjon som er knyttet til 
 ## <a name="configure-continuity-programs"></a>Konfigurere kontinuitetsprogrammer
 
 [Definere kontinuitetsprogrammer for telefonsentre](set-up-continuity-program.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -41,3 +41,6 @@ Sendefunksjonen Tillegg bruker følgende POS-operasjoner: Lever alle produkter o
 Muligheten til å velge "send til"-adresser forblir uendret.
 
 Leveringsmetodene som kan brukes til å tilfredsstille ordrelinjen, er basert på konfigurasjonen av gyldig leveringsmåter for produkter og adresser. Fordi reglene om gyldig av leveringsmåter vedlikeholdes i hovedkontoret, utfører POS-klienten kall i sanntid for å hente de gyldige leveringsmåtene for en leveringslinje.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -113,3 +113,6 @@ Følg denne fremgangsmåten for å deaktivere en CSS-overstyringsfil på nettste
 [Legge til språk på området](add-languages-to-site.md)
 
 [Legge til skript kode i områdes ID-er for å støtte telemetri](add-telemetry.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

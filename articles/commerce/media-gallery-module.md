@@ -103,3 +103,6 @@ Følg disse trinnene for å legge til en mediegallerimodul på en markedsføring
 [Beholdermodul](add-container-module.md)
 
 [Laste opp bilder](dam-upload-images.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

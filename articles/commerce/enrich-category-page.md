@@ -66,3 +66,6 @@ Gjør følgende for å gjøre en kategoriside rikere:
 [Kontrollere tilgjengelighet for sideinnhold](verify-accessibility.md)
 
 [Opprette dynamiske e-handelssider basert på URL-parametere](create-dynamic-pages.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

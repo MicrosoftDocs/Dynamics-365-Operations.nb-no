@@ -96,3 +96,6 @@ Når den egendefinerte siden er publisert, blir den vist i stedet for den dynami
 [Kontrollere tilgjengelighet for sideinnhold](verify-accessibility.md)
 
 [Utvidelsesmulighet for Internett-kanal](e-commerce-extensibility/overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

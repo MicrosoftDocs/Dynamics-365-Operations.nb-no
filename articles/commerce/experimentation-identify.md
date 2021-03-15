@@ -39,3 +39,6 @@ For å validere en hypotese må et eksperiment som er en suksess eller er mislyk
 
 ## <a name="next-step"></a>Neste trinn
 [Definere et eksperiment](experimentation-setup.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -88,3 +88,6 @@ Handel bruker organisasjonshierarkier til å strukturere kanaler. Organisasjonsh
 > [!NOTE]
 > Konfigurasjonsnøkkelen for **Flere forsendelsesadresser** må være aktivert for å bruke funksjonalitet for Commerce-salg. Denne konfigurasjonsnøkkelen kan finnes i nøklene for **Handelskonfigurasjon** under **Systemadministrasjon**\> **Oppsett** \> **Lisenskonfigurasjon**. Dette er nødvendig på grunn av forskjellige valideringer basert på leveringsadressen som er konfigurert på salgsordrelinjenivå.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

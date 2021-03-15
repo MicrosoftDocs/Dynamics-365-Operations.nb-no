@@ -77,3 +77,6 @@ Følg denne fremgangsmåten for å legge til en hurtigvisningmodul i en produkts
 [Produktsamlingsmodul](product-collection-module-overview.md)
 
 [Søkeresultatmodul](search-result-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

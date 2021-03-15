@@ -106,3 +106,6 @@ Hvis du vil legge til en hovedbannermodul på en ny side og angi de nødvendige 
 [Tekstblokkmodul](add-content-rich-block.md)
 
 [Videospillermodul](add-video-player.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

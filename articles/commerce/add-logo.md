@@ -73,3 +73,6 @@ Når du har publisert det oppdaterte topptekstfragmentet, vil alle områdesidene
 
 [Legge til skript kode i områdes ID-er for å støtte telemetri](add-telemetry.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -60,3 +60,6 @@ Følg denne fremgangsmåten for å slette et eksperiment i Commerce-områdebygge
 
 ## <a name="previous-step"></a>Forrige trinn
 [Kjøre og overvåke et eksperiment](experimentation-run-monitor.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

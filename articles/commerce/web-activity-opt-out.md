@@ -55,3 +55,6 @@ Administratorer kan la godkjente brukere velge bort samling for webaktivitshende
 ### <a name="custom-extensions"></a>Egendefinerte tillegg
 
 Administratorer kan opprette egne tillegg for å administrere bortvalgsopplevelsen for brukere. Hvis du vil ha mer informasjon, kan du se [Kalle API-er for Retail Server](e-commerce-extensibility/call-retail-server-apis.md) og [Utvidelsesmulighet for Internett-kanal](e-commerce-extensibility/overview.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -221,3 +221,6 @@ Hvis brukere overstyrer de beregnede kostnadene manuelt eller legger til et manu
 
 [Fordele hodegebyrer til samsvarende salgslinjer](pro-rate-charges-matching-lines.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

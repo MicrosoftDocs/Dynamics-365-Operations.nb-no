@@ -208,3 +208,6 @@ Katalog-, kategori-, ansatt- og kundebilder som skal brukes i frakoblet modus, k
 5. Følg en lignende prosess for andre enheter, for eksempel kategori, ansatt og kunde.
 
     [![Frakoblet bilde](./media/offline2.png)](./media/offline2.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

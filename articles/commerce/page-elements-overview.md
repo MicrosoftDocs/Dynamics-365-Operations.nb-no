@@ -63,3 +63,6 @@ Følgende tabell gir et sammendrag av termene du bør være kjent med når du en
 [Oversikt over maler og oppsett](templates-layouts-overview.md)
 
 [Tilpasse områdenavigering](customize-site-navigation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
