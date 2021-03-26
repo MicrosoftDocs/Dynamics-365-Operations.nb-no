@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 592808651037cb68c26d4c32307c8162efebc125
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 7b2338bcb727e0a513430c74b28b54f2101f2e3b
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4975432"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5218889"
 ---
 # <a name="finance-home-page"></a>Startside for Finance
 
@@ -71,7 +71,7 @@ Bestemmelser for land/område påvirker avgiftsoppsettet og andre områder innen
 
 ### <a name="additional-content"></a>Tilleggsinnhold
 
-Funksjonalitet for forsyningskjedeadministrasjon dekker deler av Procure-to-Pay-prosessen, som omfatter rekvisisjon, bestilling, mottak, fakturering og betaling for varer og tjenester som organisasjonen kjøper. Se [startsiden for Supply Chain Management](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md) hvis du vil ha informasjon om funksjoner for styring av innkjøp, lager og produksjon. 
+Funksjonalitet for Supply Chain Management dekker deler av Procure-to-Pay-prosessen, som omfatter rekvisisjon, bestilling, mottak, fakturering og betaling for varer og tjenester som organisasjonen kjøper. Se [startsiden for Supply Chain Management](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md) hvis du vil ha informasjon om funksjoner for styring av innkjøp, lager og produksjon. 
 
 
 

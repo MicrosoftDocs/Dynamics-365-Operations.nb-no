@@ -17,12 +17,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 17c8b95dd9cf05813d765d4552f493a1a1b00f31
-ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
+ms.openlocfilehash: 1e3c95520ca83f151e91e10073f82a1a9541f02f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "5154285"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5252852"
 ---
 # <a name="supply-chain-management-home-page"></a>Startside for Supply Chain Management
 
@@ -58,17 +58,17 @@ Hvis du vil ha informasjon om Dynamics 365 Finance, går du til [startsiden for 
 
 ## <a name="videos"></a>Videoer
 
-Denne korte videoen oppsummerer de nye funksjonene i forsyningskjedeadministrasjon som er lagt til i Microsoft Dynamics 365 for Finance and Operations versjon 8.0 (april 2018).
+Denne korte videoen oppsummerer de nye funksjonene i Supply Chain Management som er lagt til i Microsoft Dynamics 365 for Finance and Operations versjon 8.0 (april 2018).
 
 - [Synkronisere en arbeidsordre mellom Field Service og Finance and Operations](https://youtu.be/hAB4TDVMjxU)
 
-Disse korte videoene oppsummerer de nye funksjonene i forsyningskjedeadministrasjon som er lagt til i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (desember 2017).
+Disse korte videoene oppsummerer de nye funksjonene i Supply Chain Management som er lagt til i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (desember 2017).
 
 - [Prospekt til kontanter-integrasjon](https://youtu.be/AVV9x5x-XCg) 
 - [Optimaliseringsrådgiver](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 - [Bruk lagermalen til å kopiere konfigurasjonen](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
 
-Disse korte videoene oppsummerer de nye funksjonene i forsyningskjedeadministrasjon som er lagt til i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (juli 2017).
+Disse korte videoene oppsummerer de nye funksjonene i Supply Chain Management som er lagt til i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (juli 2017).
 
 - [Komme i gang med Kostnadsregnskap](https://youtu.be/1pUDtJQZ8FU)
 - [Mobilt arbeidsområde for kostnadskontroll](https://youtu.be/imsuTg8rUVk)
@@ -76,7 +76,7 @@ Disse korte videoene oppsummerer de nye funksjonene i forsyningskjedeadministras
 - [Godkjenne bestillinger på en mobil enhet](https://youtu.be/gZ-gOlJe7H8)
 - [Visuell planlegging med Gantt-diagram for produksjons- og partiordrer](https://youtu.be/BtbuShkGj4I)
 
-Følgende registreringer for tekniske konferanser beskriver funksjonalitet i forsyningskjedeadministrasjon fra tidligere versjoner av Finance and Operations. Denne funksjonaliteten er nå en del av Dynamics 365 Supply Chain Management. De samme begrepene gjelder fremdeles, og fremgangsmåtene er de samme i gjeldende versjon.
+Følgende registreringer for tekniske konferanser beskriver funksjonalitet i Supply Chain Management fra tidligere versjoner av Finance and Operations. Denne funksjonaliteten er nå en del av Dynamics 365 Supply Chain Management. De samme begrepene gjelder fremdeles, og fremgangsmåtene er de samme i gjeldende versjon.
 
 - **Kostnadsstyring:**
   - [Oversikt over behandling av kostnader](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be)
@@ -96,7 +96,7 @@ Følgende registreringer for tekniske konferanser beskriver funksjonalitet i for
 
 ## <a name="blogs"></a>Blogger
 
-Det finnes mange emner om produksjon og forsyningskjedeadministrasjon i [teambloggen for Dynamics AX Manufacturing R&D](https://blogs.msdn.microsoft.com/axmfg/) og [Supply Chain Management i teambloggen for Dynamics AX R&D](https://blogs.msdn.microsoft.com/dynamicsaxscm/). De fleste av disse ble skrevet for den tidligere versjonen, men fortsatt kan de samme begrepene brukes, og fremgangsmåtene ligner på den gjeldende versjonen.
+Det finnes mange emner om produksjon og Supply Chain Management i [teambloggen for Dynamics AX Manufacturing R&D](https://blogs.msdn.microsoft.com/axmfg/) og [Supply Chain Management i teambloggen for Dynamics AX R&D](https://blogs.msdn.microsoft.com/dynamicsaxscm/). De fleste av disse ble skrevet for den tidligere versjonen, men fortsatt kan de samme begrepene brukes, og fremgangsmåtene ligner på den gjeldende versjonen.
 
 ## <a name="white-papers"></a>Hvitbøker
 

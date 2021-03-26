@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 10/02/2019
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 694c1f415fd52eb9e98ace2e5787c12f7a1fed8e
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 644cf8ea39da872962e44a38294af88d1dfa809e
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687283"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5559875"
 ---
 # <a name="reporting-and-analytics-with-power-bi-home-page"></a>Startside for rapportering og analyse med Power BI
 
@@ -35,7 +34,7 @@ Dette emnet henviser til ressursene du kan bruke til å finne ut mer om forretni
 - [Blogg om Finance and Operations: Analyse- og rapporteringstjenester for Power BI](https://community.dynamics.com/365/financeandoperations/b/powerbianalyticsandreporting) (blogg)
 
 ## <a name="analytical-workspaces"></a>Analytiske arbeidsområder
-Arbeidsområder kan bruke rik infografikk og bilder som støttes av Microsoft Power BI. Denne infografikken og bildene inkluderer mange kontroller som formidles av tredjeparter. Derfor formidler arbeidsområder en svært visuell, interaktiv opplevelse for brukere.
+Arbeidsområder kan bruke omfattende infografikk og bilder som støttes av Microsoft Power BI. Denne infografikken og bildene inkluderer mange kontroller som formidles av tredjeparter. Derfor formidler arbeidsområder en svært visuell, interaktiv opplevelse for brukere.
 
 Brukere kan samhandle med data ved å klikke eller trykke på bilder på siden. De kan se årsak og virkning, og de kan utføre enkle hva om-operasjoner uten å forlate arbeidsområdet. Takket være enestående interaktive bilder kan brukerne kose seg med å utforske data og oppdage skjulte trender.
 
