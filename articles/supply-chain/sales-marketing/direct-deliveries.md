@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4550270e87121db4012c273b63576db113a2fbf1
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 20bf794a6ba2f0759b34afdefdd5fa65e3ad6b68
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4998534"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5224430"
 ---
 # <a name="direct-deliveries"></a>Direkte leveringer
 
@@ -52,3 +52,6 @@ Når du oppretter en direktelevering, ankommer varene du selger, aldri lageret. 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

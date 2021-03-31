@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a2aa1980ebc1fa8412fc388e7837bc40b6902bc0
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 5cd6d2f23a68ad3d7308d40a2638866dde7a7a81
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4991262"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5224771"
 ---
 # <a name="credit-management-setup"></a>Oppsett for kredittbehandling 
 
@@ -152,3 +152,6 @@ Følg disse trinnene for å legge til linjer som representerer kredittgrensen so
 2. Velg sammenligningsoperatoren som definerer hvordan informasjonen om poengberegningsgruppen skal evalueres.
 3. Angi verdien som skal sammenlignes med verdien som angis for poengberegningsgruppen.
 4. Angi kredittgrensen som skal tilordnes hvis kundeinformasjonen samsvarer med verdien som er angitt for poengberegningsgruppen. Du oppretter for eksempel en automatisk kredittgrense for den **lave** poengberegningsgruppen. Hvis årene i virksomhet er en av poengberegningsgruppene, kan du definere en linje som tilordner en 100 000 kredittgrense hvis kunden har drevet virksomheten i fem år, og en annen linje som tilordner en 200 000 kredittgrense hvis kunden har drevet virksomheten i 10 år.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

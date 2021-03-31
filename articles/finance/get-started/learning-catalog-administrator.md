@@ -13,12 +13,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 6b69e36e77ecc8c4a3ab9cc1a20ae0f5beaface5
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d48aab4692dd61080c7887301ee78ee5b986498f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4978363"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5223956"
 ---
 # <a name="learning-catalog-for-dynamics-365-finance-administrators"></a>Opplæringskatalog for Dynamics 365 Finance-administratorer
 
@@ -84,3 +84,6 @@ Katalogen nedenfor er ordnet fra kjernekunnskap til bestemte områder, og fra de
 | [Finance and Operations: Regression Suite Automation Tool – Bakgrunn og oppsett (DYN646PAL) ](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-regression-suite-automation-tool-background-amp-setup-may-28-2019) | Dette er den første av en todelt serie om Regression Suite Automation Testing (RSAT). I denne økten beskriver vi hvordan du holder tritt med kontinuerlige oppdateringer ved hjelp av automatisk testing via RSAT. Opplæring og anbefalinger om oppretting av oppgaveopptak og utføring av tester ved hjelp av RSAT, blir beskrevet, sammen med en trinnvis gjennomgang av installasjonen og oppsettet. | Gratis opptak av en webkonferanse | 70 minutter |
 | [Finance and Operations: Regression Suite Automation Tool – Demonstrasjon av testing av livssyklus (DYN647PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-regression-suite-automation-tool-testing-lifecycle-demo-may-29-2019) | Dette er den andre av en todelt serie om Regression Suite Automation Testing (RSAT). Denne økten dekker en demonstrasjon av hele syklusen for oppretting og lagring av oppgaveopptak innspillinger fra Finance and Operations i BPM-biblioteket i LCS, synkronisering av BPM-biblioteket for å opprette testtilfeller i Azure DevOps, gruppering av testtilfeller til testserier, og innlasting og utførelse av testserier i RSAT. | Gratis opptak av en webkonferanse | 70 minutter |
 | [Finance and Operations: Verktøy for feilsøking av ytelse for Dynamics 365 (DYN541PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-performance-troubleshooting-tools-for-dynamics-365-12-14-18) | I dette tekniske foredraget presenterer vi de ulike verktøyene som kan brukes til å feilsøke ytelsesproblemer i Microsoft Dynamics 365 for Finance and Operations. Denne økten inneholder noen scenariobaserte demonstrasjoner og innledende veiledning om håndtering av vanlige ytelsesproblemer. | Gratis opptak av en webkonferanse | 64 minutter |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

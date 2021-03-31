@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Application update 4
-ms.openlocfilehash: 9cded9eb26c293650020ec1aa63b61c257798ba9
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: cd8cd0d643d9279d2deba705642a3df9dde2381b
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4989572"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5225693"
 ---
 # <a name="cash-register-functionality-for-norway"></a>Kassefunksjoner for Norge
 
@@ -220,3 +220,6 @@ Du må også tilordne nødvendige hoveddata til forhåndsdefinerte SAF-T-standar
 
 Hvis du vil aktivere spesifikke funksjoner for Norge, må du konfigurere utvidelser for komponenter for kanal. Hvis du vil ha mer informasjon, kan du se [retningslinjene for distribusjon](./emea-nor-loc-deployment-guidelines.md).
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

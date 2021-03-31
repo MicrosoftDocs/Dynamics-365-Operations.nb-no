@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-08-28
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 2515a71297df7213f93a4c619f7eebf1c2411b39
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 6b7512ea6ad2e97db388bac6750482f7ed967140
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965558"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5225937"
 ---
 # <a name="outbound-workload-visualization"></a>Visualisering av utgående arbeidsmengde
 
@@ -97,3 +97,6 @@ Illustrasjonen nedenfor viser et eksempel på resulterende diagram.
 ![Visualisering av sone kontra arbeidsstatus](media/work-viz-chart.png "Visualisering av sone kontra arbeidsstatus")
 
 Dette diagrammet viser to soner som heter **GULV** og **PARTI**, pluss en sone som har navnet **Tom**. Den **tomme** sonen representerer alle arbeidslinjer som ikke er medlemmer av noen soner. Diagrammet viser alltid alle ikke-relaterte filtrerte data som **tomme**, for å gi så mye synlighet som mulig. I **GULV**-sonen viser diagrammet tre lukkede linjer og fire åpne linjer. I **PARTI**-sonen viser diagrammet fire lukkede linjer, én åpen linje og 24 avbrutte linjer. Til slutt viser diagrammet åtte lukkede linjer som ikke er en del av en sone, og er derfor oppført som **tomme**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

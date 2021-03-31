@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 5978abfd4341bbca76ff0211f029097c3d2d785c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 689165314f664f514c1bef98e74e823cf48286c9
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4971459"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5225568"
 ---
 # <a name="compounding-interval-functionality"></a>Funksjonalitet for sammensetningsintervall
 
@@ -159,3 +159,6 @@ Tabellen nedenfor viser de første 12 månedene av betalingsplanen. Vær oppmerk
 
 > [!NOTE]
 > Hvis annuitetstypen endres til **Annuitetsforfall**, skjer betalingen i januar i stedet for desember.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

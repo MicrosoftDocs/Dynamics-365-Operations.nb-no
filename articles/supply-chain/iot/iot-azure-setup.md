@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: cd06410dd6260e6a371b0044546be7f8c9957c80
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: f728f3b5736bc7368ffb39bf2be398fb91fb373e
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4989827"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5224960"
 ---
 # <a name="set-up-azure-resources-for-iot-intelligence"></a>Konfigurere Azure-ressurser for IoT-intelligens
 
@@ -161,3 +161,6 @@ Hvis du vil lagre hemmeligheten for tilkoblingsstrengen for Redis-bufferen, gjø
 > Når du oppdaterer en av tilkoblingsstrengene, må du også oppdatere de hemmelige verdiene.
 
 Du har nå fullført klargjøringen av de obligatoriske Azure-ressursene. Neste trinn er å [installere tillegget for IoT-intelligens i Microsoft Dynamics Lifecycle Services (LCS)](iot-lcs-setup.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

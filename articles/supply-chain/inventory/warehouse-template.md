@@ -18,12 +18,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: d533eed984c188c5b6520232f2b875bddd1f57bf
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 7bf69ccec59f2c540d71d44347bd99dc2378dc4c
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967136"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5224984"
 ---
 # <a name="set-up-a-warehouse-by-using-a-warehouse-configuration-template"></a>Definere et lager ved hjelp av en mal for lagerkonfigurasjon
 
@@ -97,3 +97,6 @@ Hvis du vil vite mer om hvordan du bruker lagermalen for å kopiere konfigurasjo
 ## <a name="related-topic"></a>Relaterte emne
 
 [Konfigurasjonsdatamaler](../../dev-itpro/data-entities/configuration-data-templates.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

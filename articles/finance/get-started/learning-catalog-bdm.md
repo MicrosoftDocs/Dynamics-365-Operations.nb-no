@@ -13,12 +13,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 8363258afa9c9c3513e82575409633c1059f5d27
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: b27bfebf48ecff9a54f40b195b61e5b0b709da40
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4978391"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5223932"
 ---
 # <a name="learning-catalog-for-business-decision-makers-considering-dynamics-365-finance"></a>Opplæringskatalog for beslutningstakere i bedrifter vedrørende Dynamics 365 Finance
 
@@ -42,3 +42,6 @@ Katalogen nedenfor er ordnet fra kjernekunnskap til bestemte områder, og fra de
 | Innhold   | beskrivelse   | Formater    |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
 | [Grunnleggende om Dynamics 365](https://docs.microsoft.com/learn/certifications/d365-fundamentals?wt.mc_id=learningredirect_certs-web-wwl) | Vis at du forstår Microsoft Dynamics 365: Power Platform, skykonsepter; lisensieringsalternativer og alternativer for distribusjon og frigivelse. | Eksamen: kostnaden varierer etter område |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

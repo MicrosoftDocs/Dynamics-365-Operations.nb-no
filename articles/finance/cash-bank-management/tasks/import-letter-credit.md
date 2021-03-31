@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 76dedb12eef0f8282f04f680cab51a8ccf3e8221
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ac0b1aacbf0e5dbe69a8125dc0a1373de0957d4e
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5009549"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5225399"
 ---
 # <a name="import-letter-of-credit"></a>Importere remburs
 
@@ -184,3 +184,6 @@ Denne fremgangsmåten bruker demonstrasjonsfirmaet USMF.
     * Kontroller at rapporten angir transaksjonene med bankdokumentnummer, fasilitetsgrense, brukt beløp og fasilitetssaldobeløp.  
 8. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

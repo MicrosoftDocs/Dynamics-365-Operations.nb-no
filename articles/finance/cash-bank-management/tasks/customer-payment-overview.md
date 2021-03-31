@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 71e1657d738f691644b6d9cc4d34f812b853934e
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 3e93703815d899baa7045f2c5f1e0323944e91c6
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4978870"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5225423"
 ---
 # <a name="customer-payment-overview"></a>Oversikt over kundebetaling
 
@@ -51,3 +51,6 @@ Denne oppgaveveiledningen hjelper deg med forskjellige metoder som brukes til å
 21. I feltet **Betalingsreferanse** angir du en betalingsreferanse. Betalingsreferansen er bare nødvendig hvis du merker å inkludere betalingen på et betalingsbilag.  
 22. Klikk på **Poster** i **handlingsruten** for å postere kundebetalingene. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

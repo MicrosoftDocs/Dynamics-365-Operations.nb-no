@@ -13,12 +13,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 3f74cc290617ce2b8401dbf8dc20fb8c2b2dacf8
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 90ba04e46d9755397b665dcdbd4355edea49eb18
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4984965"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5223860"
 ---
 # <a name="learning-catalog-for-dynamics-365-finance-functional-consultants"></a>Opplæringskatalog for funksjonskonsulenter i Dynamics 365 Finance
 
@@ -97,3 +97,6 @@ For funksjonskonsulenter viste undersøkelsene våre at alle må forstå kjernei
 | [Microsoft Certified: Dynamics 365 for Finance and Operations, Financials Functional Consultant Associate](https://www.microsoft.com/learning/d365-functional-consultant-financials.aspx) | Microsoft Certified: Dynamics 365 for Finance and Operations, Financials Functional Consultants forener globale økonomi og drift og automatiserer oppgaver og arbeidsflyter, effektiviserer kundebestilling, salg, fakturering og rapportering. | Sertifisering: kostnaden varierer etter område |
 | [Eksamen MB-300: Microsoft Dynamics 365 Unified Operations Core](https://docs.microsoft.com/learn/certifications/exams/mb-300?wt.mc_id=learningredirect_certs-web-wwl) | Denne eksamenen måler din evne til å utføre følgende tekniske oppgaver: bruke vanlige funksjoner for implementeringsverktøy, konfigurere sikkerhet, prosesser og alternativer, utføre dataoverføring og validere og støtte løsningen. | Eksamen: kostnaden varierer etter område |
 | [Eksamen MB-310: Microsoft Dynamics 365 for Finance and Operations, Financials](https://docs.microsoft.com/learn/certifications/exams/mb-310?wt.mc_id=learningredirect_certs-web-wwl) | Denne eksamenen måler din evne til å utføre følgende tekniske oppgaver: definere og konfigurere økonomistyring. behandle og bruke felles prosesser, implementere og administrere leverandør og kunder, og håndtere budsjettering og anleggsmidler. | Eksamen: kostnaden varierer etter område |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3e7d0cdace306e6f266dd690db2c9855ea75009e
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 3b58678ada7d6c3a2fb2af131418d2bb97ee5512
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4970337"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5226033"
 ---
 # <a name="movement-of-inventory-with-associated-work-in-warehouse-management"></a>Flytting av beholdning med tilknyttet arbeid i Lagerstyring
 
@@ -58,3 +58,6 @@ For arbeideren som skal ha tillatelse til å flytte reservert beholdning, merker
 Denne funksjonen er også tilbakeført til Microsoft Dynamics AX 2012 R3 og er tilgjengelig som en del av CU12.
 Den kan også lastes ned alene gjennom KB-nummer 3192548. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c64a0c07bf692385370e4bd2a99f51b211cd397
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: cfccc362563d698fea7815c0e39cb50826caead0
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5018709"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5224529"
 ---
 # <a name="functional-location-types"></a>Arbeidsstedstyper
 
@@ -66,3 +66,6 @@ Nå opprettes standard arbeidsstedstype, som bare skal brukes på et standard ar
 
 >[!NOTE] 
 >På hurtigfanen **Generelt** kan du få en oversikt over antall aktivatyper, vedlikeholdsplaner, krav til aktivaattributter, tillatte typer, attributter og arbeidssteder som er definert for arbeidsstedstypen. Feltet **Arbeidssteder** viser antall arbeidssteder som bruker arbeidsstedstypen. Du kan bruke **Kopier**-knappen til å kopiere innstillinger fra en arbeidsstedstype til den valgte arbeidsstedstypen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

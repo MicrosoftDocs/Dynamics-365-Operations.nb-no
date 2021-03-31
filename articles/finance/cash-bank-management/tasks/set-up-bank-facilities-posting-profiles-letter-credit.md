@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7e72847b9046968c87d9602e141bae6c603c1c63
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: bc94100461bc82e9e7cd243f198711ab61a79b0c
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4976338"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5225279"
 ---
 # <a name="set-up-bank-facilities-and-posting-profiles-for-letter-of-credit"></a>Definere bankfasiliteter og posteringsprofiler for remburs
 
@@ -73,3 +73,6 @@ Denne oppgaven bruker demonstrasjonsfirmaet USMF.
     * Denne kontoen blir debitert når åpningsmarginen blir postert, og kreditert når betalingen blir postert.  
 9. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

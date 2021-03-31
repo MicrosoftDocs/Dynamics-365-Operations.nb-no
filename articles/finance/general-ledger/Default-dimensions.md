@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: a6179841259186c8438c72bb4a4f9cd2bf5dbaa8
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 086270fda7da17c60239c7c86e9ff4ab3f31ef77
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4985093"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5225253"
 ---
 # <a name="financial-dimensions-and-posting"></a>Finansdimensjoner og postering 
 
@@ -126,3 +126,6 @@ Noen av følgende ressurser refererer til en tidligere versjon av programvaren. 
 [Dimensjonen som fører til regnskapsdistribusjoner](https://blogs.msdn.microsoft.com/ax_gfm_framework_team_blog/2013/12/16/dimension-defaulting-in-accounting-distributions-part-1-introduction/)
 
 [Dimensjonen som fører til dimensjonsrammeverk](https://docs.microsoft.com/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-part-1-financial-dimensions-discovery)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 74b49e32684571f622b25dcdd179eeeed9b35365
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: c45f89bd8115fe614aed557b760983fd95a87615
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5018759"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5226057"
 ---
 # <a name="use-external-catalogs-for-punchout-e-procurement"></a>Bruke eksterne kataloger for PunchOut-e-Procurement
 
@@ -54,3 +54,5 @@ Når rekvisisjonen er klar, kan du bruke handlingen **Arbeidsflyt** > **Send** f
 
 - [Definere en ekstern katalog for PunchOut-e-Procurement](set-up-external-catalog-for-punchout.md)
 - [Kjøp av cXML-forbedringer](purchasing-cxml-enhancements.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
