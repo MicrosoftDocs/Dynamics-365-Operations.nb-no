@@ -15,43 +15,46 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b27ccc3b4c4f5470d3a5b8ed7347e269c6793b87
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: cb7c92fcab622109b01590d4acadce0d707d3d2d
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4976047"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5227094"
 ---
-# <a name="create-and-acquire-assets-from-accounts-payable"></a><span data-ttu-id="65e5b-103">Opprette og anskaffe anleggsmidler som opprettes fra kunder</span><span class="sxs-lookup"><span data-stu-id="65e5b-103">Create and acquire assets from Accounts payable</span></span>
+# <a name="create-and-acquire-assets-from-accounts-payable"></a><span data-ttu-id="2bf99-103">Opprette og anskaffe anleggsmidler som opprettes fra kunder</span><span class="sxs-lookup"><span data-stu-id="2bf99-103">Create and acquire assets from Accounts payable</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="65e5b-104">Denne oppgaveveiledningen går gjennom oppretting og anskaffelse av et anleggsmiddel med innkjøpsprosessen.</span><span class="sxs-lookup"><span data-stu-id="65e5b-104">This task guide will walk through creation and acquisition of a fixed asset with the purchasing process.</span></span>  <span data-ttu-id="65e5b-105">Den bruker regnskapsføreren og regnskapsassistenten og demonstrasjonsselskapet USMF.</span><span class="sxs-lookup"><span data-stu-id="65e5b-105">It uses the Accountant and Accounts payable clerks and the demo company USMF .</span></span>
+<span data-ttu-id="2bf99-104">Denne oppgaveveiledningen går gjennom oppretting og anskaffelse av et anleggsmiddel med innkjøpsprosessen.</span><span class="sxs-lookup"><span data-stu-id="2bf99-104">This task guide will walk through creation and acquisition of a fixed asset with the purchasing process.</span></span>  <span data-ttu-id="2bf99-105">Den bruker regnskapsføreren og regnskapsassistenten og demonstrasjonsselskapet USMF.</span><span class="sxs-lookup"><span data-stu-id="2bf99-105">It uses the Accountant and Accounts payable clerks and the demo company USMF .</span></span>
 
 
-## <a name="set-fixed-assets-parameters"></a><span data-ttu-id="65e5b-106">Angi parametere for anleggsmidler</span><span class="sxs-lookup"><span data-stu-id="65e5b-106">Set Fixed assets parameters</span></span>
-1. <span data-ttu-id="65e5b-107">I **navigasjonsruten** går du til **Moduler > Anleggsmidler > Oppsett > Parametere for anleggsmidler**.</span><span class="sxs-lookup"><span data-stu-id="65e5b-107">In the **Navigation pane**, go to **Modules > Fixed assets > Setup > Fixed assets parameters**.</span></span>
-2. <span data-ttu-id="65e5b-108">Vis hurtigfanen **Bestillinger**.</span><span class="sxs-lookup"><span data-stu-id="65e5b-108">Expand the **Purchase orders** fastTab.</span></span>
-3. <span data-ttu-id="65e5b-109">Merk av for **Tillat anleggsmiddelanskaffelse fra innkjøp**.</span><span class="sxs-lookup"><span data-stu-id="65e5b-109">Check the **Allow asset acquisition from Purchasing** checkbox.</span></span>
-4. <span data-ttu-id="65e5b-110">Merk av for **Opprett anleggsmiddel under postering av produktkvittering eller faktura**.</span><span class="sxs-lookup"><span data-stu-id="65e5b-110">Check the **Create asset during product receipt or invoice posting** checkbox.</span></span>
+## <a name="set-fixed-assets-parameters"></a><span data-ttu-id="2bf99-106">Angi parametere for anleggsmidler</span><span class="sxs-lookup"><span data-stu-id="2bf99-106">Set Fixed assets parameters</span></span>
+1. <span data-ttu-id="2bf99-107">I **navigasjonsruten** går du til **Moduler > Anleggsmidler > Oppsett > Parametere for anleggsmidler**.</span><span class="sxs-lookup"><span data-stu-id="2bf99-107">In the **Navigation pane**, go to **Modules > Fixed assets > Setup > Fixed assets parameters**.</span></span>
+2. <span data-ttu-id="2bf99-108">Vis hurtigfanen **Bestillinger**.</span><span class="sxs-lookup"><span data-stu-id="2bf99-108">Expand the **Purchase orders** fastTab.</span></span>
+3. <span data-ttu-id="2bf99-109">Merk av for **Tillat anleggsmiddelanskaffelse fra innkjøp**.</span><span class="sxs-lookup"><span data-stu-id="2bf99-109">Check the **Allow asset acquisition from Purchasing** checkbox.</span></span>
+4. <span data-ttu-id="2bf99-110">Merk av for **Opprett anleggsmiddel under postering av produktkvittering eller faktura**.</span><span class="sxs-lookup"><span data-stu-id="2bf99-110">Check the **Create asset during product receipt or invoice posting** checkbox.</span></span>
 
-## <a name="create-a-new-vendor-invoice"></a><span data-ttu-id="65e5b-111">Opprette en ny leverandørfaktura</span><span class="sxs-lookup"><span data-stu-id="65e5b-111">Create a new vendor invoice</span></span>
-1. <span data-ttu-id="65e5b-112">I **navigasjonsruten** går du til **Moduler > Leverandører > Arbeidsområder > Leverandørfakturaregistrering**.</span><span class="sxs-lookup"><span data-stu-id="65e5b-112">In the **Navigation pane**, go to **Modules > Accounts payable > Workspaces > Vendor invoice entry**.</span></span>
-2. <span data-ttu-id="65e5b-113">Klikk **Ny leverandørfaktura**.</span><span class="sxs-lookup"><span data-stu-id="65e5b-113">Click **New vendor invoice**.</span></span>
-3. <span data-ttu-id="65e5b-114">Klikk rullegardinknappen i **Fakturakonto**-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="65e5b-114">In the **Invoice account** field, click the drop-down button to open the lookup.</span></span>
-4. <span data-ttu-id="65e5b-115">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="65e5b-115">In the list, click the link in the selected row.</span></span>
-5. <span data-ttu-id="65e5b-116">Skriv inn en verdi i **Nummer**-feltet.</span><span class="sxs-lookup"><span data-stu-id="65e5b-116">In the **Number** field, type a value.</span></span>
-6. <span data-ttu-id="65e5b-117">Angi en dato i **Posteringsdato**-feltet.</span><span class="sxs-lookup"><span data-stu-id="65e5b-117">In the **Posting date** field, enter a date.</span></span>
-7. <span data-ttu-id="65e5b-118">Klikk **Legg til linje**.</span><span class="sxs-lookup"><span data-stu-id="65e5b-118">Click **Add line**.</span></span>
-8. <span data-ttu-id="65e5b-119">Klikk rullegardinknappen i **Varenummer**-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="65e5b-119">In the **Item number** field, click the drop-down button to open the lookup.</span></span> <span data-ttu-id="65e5b-120">Både varer som ikke er lagerført, og innkjøpskategorier kan brukes til anleggsmiddelanskaffelse.</span><span class="sxs-lookup"><span data-stu-id="65e5b-120">Either non-stocked items or procurement categories can be used for fixed asset acquisition.</span></span>  
-9. <span data-ttu-id="65e5b-121">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="65e5b-121">In the list, click the link in the selected row.</span></span>
-10. <span data-ttu-id="65e5b-122">Angi et tall i **Antall**-feltet.</span><span class="sxs-lookup"><span data-stu-id="65e5b-122">In the **Quantity** field, enter a number.</span></span> <span data-ttu-id="65e5b-123">Én fakturalinje oppretter bare ett anleggsmiddel, uavhengig av antallet.</span><span class="sxs-lookup"><span data-stu-id="65e5b-123">One invoice line will only create one fixed asset, regardless of quantity.</span></span> <span data-ttu-id="65e5b-124">Verdien i feltet Fakturaantall overføres til antallet anleggsmidler.</span><span class="sxs-lookup"><span data-stu-id="65e5b-124">The invoice quantity field value will be transferred to the fixed asset quantity.</span></span>  
-11. <span data-ttu-id="65e5b-125">Angi et tall i **Enhetspris**-feltet.</span><span class="sxs-lookup"><span data-stu-id="65e5b-125">In the **Unit price** field, enter a number.</span></span>
-12. <span data-ttu-id="65e5b-126">Utvid hurtigfanen **Linjedetaljer**.</span><span class="sxs-lookup"><span data-stu-id="65e5b-126">Expand the **Line details** fastTab.</span></span>
-13. <span data-ttu-id="65e5b-127">Klikk kategorien **Anleggsmidler**.</span><span class="sxs-lookup"><span data-stu-id="65e5b-127">Click the **Fixed assets** tab.</span></span>
-14. <span data-ttu-id="65e5b-128">Merk av i avmerkingsboksen **Opprett et nytt anleggsmiddel**.</span><span class="sxs-lookup"><span data-stu-id="65e5b-128">Check the **Create a new fixed asset** checkbox.</span></span>
-15. <span data-ttu-id="65e5b-129">Klikk rullegardinknappen i feltet **Anleggsmiddelgruppe** for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="65e5b-129">In the **Fixed asset group** field, click the drop-down button to open the lookup.</span></span>
-16. <span data-ttu-id="65e5b-130">I listen velger du anleggsmiddelgruppen som skal brukes til å opprette det nye anleggsmiddelet.</span><span class="sxs-lookup"><span data-stu-id="65e5b-130">In the list, select the fixed asset group to be used when creating the new fixed asset.</span></span>
-17. <span data-ttu-id="65e5b-131">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="65e5b-131">In the list, click the link in the selected row.</span></span>
-18. <span data-ttu-id="65e5b-132">Klikk **Poster**.</span><span class="sxs-lookup"><span data-stu-id="65e5b-132">Click **Post**.</span></span> <span data-ttu-id="65e5b-133">Anleggsmidlet opprettes og anskaffes når fakturaen posteres.</span><span class="sxs-lookup"><span data-stu-id="65e5b-133">The fixed asset will be created and acquired when the invoice is posted.</span></span>  
+## <a name="create-a-new-vendor-invoice"></a><span data-ttu-id="2bf99-111">Opprette en ny leverandørfaktura</span><span class="sxs-lookup"><span data-stu-id="2bf99-111">Create a new vendor invoice</span></span>
+1. <span data-ttu-id="2bf99-112">I **navigasjonsruten** går du til **Moduler > Leverandører > Arbeidsområder > Leverandørfakturaregistrering**.</span><span class="sxs-lookup"><span data-stu-id="2bf99-112">In the **Navigation pane**, go to **Modules > Accounts payable > Workspaces > Vendor invoice entry**.</span></span>
+2. <span data-ttu-id="2bf99-113">Klikk **Ny leverandørfaktura**.</span><span class="sxs-lookup"><span data-stu-id="2bf99-113">Click **New vendor invoice**.</span></span>
+3. <span data-ttu-id="2bf99-114">Klikk rullegardinknappen i **Fakturakonto**-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="2bf99-114">In the **Invoice account** field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="2bf99-115">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="2bf99-115">In the list, click the link in the selected row.</span></span>
+5. <span data-ttu-id="2bf99-116">Skriv inn en verdi i **Nummer**-feltet.</span><span class="sxs-lookup"><span data-stu-id="2bf99-116">In the **Number** field, type a value.</span></span>
+6. <span data-ttu-id="2bf99-117">Angi en dato i **Posteringsdato**-feltet.</span><span class="sxs-lookup"><span data-stu-id="2bf99-117">In the **Posting date** field, enter a date.</span></span>
+7. <span data-ttu-id="2bf99-118">Klikk **Legg til linje**.</span><span class="sxs-lookup"><span data-stu-id="2bf99-118">Click **Add line**.</span></span>
+8. <span data-ttu-id="2bf99-119">Klikk rullegardinknappen i **Varenummer**-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="2bf99-119">In the **Item number** field, click the drop-down button to open the lookup.</span></span> <span data-ttu-id="2bf99-120">Både varer som ikke er lagerført, og innkjøpskategorier kan brukes til anleggsmiddelanskaffelse.</span><span class="sxs-lookup"><span data-stu-id="2bf99-120">Either non-stocked items or procurement categories can be used for fixed asset acquisition.</span></span>  
+9. <span data-ttu-id="2bf99-121">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="2bf99-121">In the list, click the link in the selected row.</span></span>
+10. <span data-ttu-id="2bf99-122">Angi et tall i **Antall**-feltet.</span><span class="sxs-lookup"><span data-stu-id="2bf99-122">In the **Quantity** field, enter a number.</span></span> <span data-ttu-id="2bf99-123">Én fakturalinje oppretter bare ett anleggsmiddel, uavhengig av antallet.</span><span class="sxs-lookup"><span data-stu-id="2bf99-123">One invoice line will only create one fixed asset, regardless of quantity.</span></span> <span data-ttu-id="2bf99-124">Verdien i feltet Fakturaantall overføres til antallet anleggsmidler.</span><span class="sxs-lookup"><span data-stu-id="2bf99-124">The invoice quantity field value will be transferred to the fixed asset quantity.</span></span>  
+11. <span data-ttu-id="2bf99-125">Angi et tall i **Enhetspris**-feltet.</span><span class="sxs-lookup"><span data-stu-id="2bf99-125">In the **Unit price** field, enter a number.</span></span>
+12. <span data-ttu-id="2bf99-126">Utvid hurtigfanen **Linjedetaljer**.</span><span class="sxs-lookup"><span data-stu-id="2bf99-126">Expand the **Line details** fastTab.</span></span>
+13. <span data-ttu-id="2bf99-127">Klikk kategorien **Anleggsmidler**.</span><span class="sxs-lookup"><span data-stu-id="2bf99-127">Click the **Fixed assets** tab.</span></span>
+14. <span data-ttu-id="2bf99-128">Merk av i avmerkingsboksen **Opprett et nytt anleggsmiddel**.</span><span class="sxs-lookup"><span data-stu-id="2bf99-128">Check the **Create a new fixed asset** checkbox.</span></span>
+15. <span data-ttu-id="2bf99-129">Klikk rullegardinknappen i feltet **Anleggsmiddelgruppe** for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="2bf99-129">In the **Fixed asset group** field, click the drop-down button to open the lookup.</span></span>
+16. <span data-ttu-id="2bf99-130">I listen velger du anleggsmiddelgruppen som skal brukes til å opprette det nye anleggsmiddelet.</span><span class="sxs-lookup"><span data-stu-id="2bf99-130">In the list, select the fixed asset group to be used when creating the new fixed asset.</span></span>
+17. <span data-ttu-id="2bf99-131">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="2bf99-131">In the list, click the link in the selected row.</span></span>
+18. <span data-ttu-id="2bf99-132">Klikk **Poster**.</span><span class="sxs-lookup"><span data-stu-id="2bf99-132">Click **Post**.</span></span> <span data-ttu-id="2bf99-133">Anleggsmidlet opprettes og anskaffes når fakturaen posteres.</span><span class="sxs-lookup"><span data-stu-id="2bf99-133">The fixed asset will be created and acquired when the invoice is posted.</span></span>  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
