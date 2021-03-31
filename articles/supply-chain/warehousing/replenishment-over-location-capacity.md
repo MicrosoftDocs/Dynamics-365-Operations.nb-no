@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 3f94053920b475ef9190b5ac65a5f9ca01dcd4a1
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 1e4acfea3484acaafd982d0f22c2303f921f909f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4996129"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5228399"
 ---
 # <a name="replenishment-over-location-capacity"></a>Etterfylling over lokasjonskapasitet
 
@@ -407,3 +407,6 @@ Nå kan du plukke salgsordre 2. Blokkeringen for den ble fjernet da etter fyllin
 - Du kan manuelt overstyre tilgjengeligheten av etterfyllingsarbeid for hvert arbeidshode fra siden **Arbeidsdetaljer** hvis du vil.
 - Når systemet angir tilgjengeligheten for etterfyllingsarbeid, vurderes all beholdning som allerede finnes på lokasjonen før noe som helst arbeid fullføres.
 - Hver del av salgsordrearbeid er koblet til et bestemt etterfyllingsarbeid. Det finnes ingen tilsvarende funksjonalitet for tilgjengelighet av salgsarbeid.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

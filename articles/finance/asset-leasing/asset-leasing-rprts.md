@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-27
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 4bc4bac1a422a7505ef4c66b9c3b79a3d754cc4d
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ab55d778f55c3ec96141c4f868724af1e11aed09
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4971484"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5229580"
 ---
 # <a name="asset-leasing-reports"></a>Rapporter om aktivaleie
 
@@ -164,3 +164,6 @@ Rapporten om avveid gjennomsnitt for rabattsats oppfyller de amerikanske kravene
 |     Valuta.                          |     Forkortelsen for transaksjonsvalutaen som brukes. Alle rapporter vil konvertere transaksjonsvalutaen til rapporteringsvalutaen.  |
 |     Gjenstående leiebetalinger          |     Totalbeløpet med ubetalte leiebetalinger fra betalingsplanen som gjenstår fra **Per**-datoen.            |
 |     Gjenstående avveide betalinger       |     Leiebetalingene som gjenstår, multiplisert med rabattsatsen som brukes.   |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

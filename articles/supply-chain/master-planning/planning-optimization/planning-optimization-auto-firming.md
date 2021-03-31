@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-11-30
 ms.dyn365.ops.version: AX 10.0.7
-ms.openlocfilehash: d014fcd542462e092f6e88232dff8fd5ee2253c1
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 9106137fe6dd097beea9914cdde541e581946f46
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963466"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5227802"
 ---
 # <a name="autofirming-with-planning-optimization"></a>Automatisk autorisasjon med planleggingsoptimalisering
 
@@ -66,3 +66,6 @@ Både planleggingsoptimalisering og planleggingsmotoren som er innebygd i Micros
 - Automatisk autorisasjon er basert på behovsdatoen (sluttdato).
 - Hvis du vil ha hjelp til å sikre at ordrer blir autorisert innen forfallstid, må autorisasjonshorisonten være lenger enn leveringstiden.
 - Hvis du vil autorisere alle ordrer som må starte i løpet av den gjeldende uken, må autorisasjonshorisonten være leveringstiden pluss én uke.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

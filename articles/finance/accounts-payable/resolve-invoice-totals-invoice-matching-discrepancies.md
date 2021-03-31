@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8517e2725bab69d33cfd22b77575a6aa110dde44
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 0635f388dba16a1e4374f0915fbab5b88c3b76ab
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4972062"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5227456"
 ---
 # <a name="resolve-discrepancies-during-invoice-totals-matching-overview"></a>Oversikt over å løse avvik under kontroll for fakturatotaler
 
@@ -43,3 +43,6 @@ Når du identifiserer et avvik, kan du det hende du må kontakte leverandøren h
 Hvis du vil ha mer informasjon, se [Undersøke/løse unntak](tasks/research-resolve-exceptions.md).
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

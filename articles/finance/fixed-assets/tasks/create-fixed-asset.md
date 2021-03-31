@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ab330c604b2485687544a7d8b3eef3a652fa2069
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: bbbafb1732a9628cb90ad284fce224e3d8172afd
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4985143"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5227046"
 ---
 # <a name="create-a-fixed-asset"></a>Opprette et anleggsmiddel
 
@@ -54,3 +54,6 @@ Hvis du ikke har definert anleggsmiddelnummeret i malen for Excel-tillegget, ell
 
 > [!WARNING]
 > Anleggsmiddelposten blir ikke slettet hvis transaksjonene ble postert i det tilknyttede tablået, eller hvis det nylig opprettede anleggsmidlet angis på en journallinje, men ikke posteres. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

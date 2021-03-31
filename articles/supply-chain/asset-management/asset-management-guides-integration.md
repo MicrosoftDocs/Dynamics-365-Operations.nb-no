@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2020-04-28
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: ae26012d236a44bfa0c8453bdc660671ddee82a4
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: e3e9e74397faec12f6eecff1f562fd9d731ac5e2
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5000290"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5230158"
 ---
 # <a name="integrate-dynamics-365-supply-chain-management-asset-management-with-dynamics-365-guides"></a>Integrere Dynamics 365 Supply Chain Management (Aktivabehandling) med Dynamics 365 Guides
 
@@ -113,3 +113,6 @@ Følg disse trinnene for å knytte en veiledning til en mal for kontrolliste for
 
 - [Oversikt over dobbel skriving](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview.md)
 - [Oversikt over anleggsmiddelbehandling](index.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

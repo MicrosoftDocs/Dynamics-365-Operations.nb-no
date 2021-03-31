@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-22
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 9c2410c50b5d289792e2cc364674e1e093653590
-ms.sourcegitcommit: 995c678b4715be267f1f97148902a6b3dde3bcab
+ms.openlocfilehash: 54da27a022dcc800438b96224370228aa8eed261
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "5033223"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5226153"
 ---
 # <a name="set-up-the-asset-management-mobile-workspace"></a>Konfigurere det mobile arbeidsområdet Aktivastyring
 
@@ -84,3 +84,6 @@ Hvis du vil gjøre funksjoner for aktivastyring tilgjengelige i mobilappen Finan
 Hvis du vil ha mer informasjon om hvordan du arbeider med det mobile arbeidsområdet for **Aktivastyring**, kan du se [Bruke det mobile arbeidsområdet Aktivastyring](asset-management-mobile-workspace.md).
 
 Hvis du vil ha mer informasjon om mobilappen Finance and Operations (Dynamics 365), kan du gå til [Startside for mobilapp](../../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

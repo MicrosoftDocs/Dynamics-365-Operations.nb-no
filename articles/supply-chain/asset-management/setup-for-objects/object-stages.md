@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dffedfafd9d75320accf0e27f072bab6fd51f135
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 64be80777991a9fa674ef494cea103a602c7559f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016558"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5230134"
 ---
 # <a name="asset-lifecycle-states"></a>Livssyklustilstander for aktiva
 
@@ -69,3 +69,6 @@ Når du har opprettet de nødvendige livssyklustilstandene for aktiva, kan du de
 
 6. Velg **Oppdateringer av livssyklustilstander** for å definere livssyklustilstander for aktiva som kan følge en valgt livssyklustilstand.
 7. Du bruker hurtigfanen **Aktiva** hvis du håndterer aktiva du mottar for reparasjon. I delen **Innkommende/utgående** kan du velge livssyklustilstander for aktiva for å angi arbeidsflyten for et aktivum du mottar for reparasjon. Hvis du tilbyr lån av aktiva til kunder eller avdelinger i **Lån**-delen, kan du velge livssyklustilstander for lånte aktiva.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

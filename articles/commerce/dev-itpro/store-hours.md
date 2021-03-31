@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: Retail 10.0.1 update
-ms.openlocfilehash: 4706432234437d2dc7943fb194cd01004ab7e6b7
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 00c532dfa9ceed2cda6652496d874cb82785dc7b
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687517"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5230646"
 ---
 # <a name="create-and-update-store-hours"></a>Opprette og oppdatere åpningstid
 
@@ -35,7 +35,7 @@ Flere åpningstider kan konfigureres på tvers av ulike kanaler. Disse kanalene 
 
 Hvis en kunde har en plukkordre for en annen butikk, kan kassereren velge datoer som plukkingen skal være tilgjengelig på, i denne butikken. Butikkoppslaget vil inneholde en referanse til datoene og åpningstiden. Kassereren kan velge en dato og et sted, og kan også skrive ut en hentekvittering som inneholder åpningstiden.
 
-Denne funksjonen er tilgjengelig i Microsoft Dynamics 365 Retail versjon 8.1.2 og nyere.
+Denne funksjonen er tilgjengelig i Microsoft Dynamics 365 Retail versjon 8.1.2 og senere.
 
 ## <a name="configure-store-hours"></a>Konfigurere åpningstid
 

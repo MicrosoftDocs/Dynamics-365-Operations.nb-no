@@ -14,12 +14,12 @@ ms.reviewer: kfend
 ms.search.region: Norway
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0b42f03d9bcbf5c45505eb8e99a800e89a48ca85
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 1864ca6a1db24ea38cc1f55f53cf29fbd794eeb9
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016768"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5226199"
 ---
 # <a name="sales-tax-report-for-finland"></a>Mva-rapport for Finland
 
@@ -206,3 +206,6 @@ Hvis du definerer snudd avregning i henhold til [Snudd avregning](emea-reverse-c
 Når du har generert den finske mva-rapporten, bruker du dataene på den til å fylle ut den selvvurderte avgiftsrapporten for den finske skatteetaten i det offisielle formatet. Illustrasjonen nedenfor viser for eksempel hva den finske egenvurderte avgiftsrapporten har sett ut siden 2019.
 
 ![Finsk selvvurdert avgiftsrapport](media/5_Finnish_VAT_declaration.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

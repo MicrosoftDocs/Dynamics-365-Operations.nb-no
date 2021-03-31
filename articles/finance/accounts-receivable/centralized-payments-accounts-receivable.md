@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 644ef7cc9535522b72b03ba81a72b1070c8e2ba1
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: edba4e496de9cbb99765857d0d5e87c32477f803
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4993045"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5228893"
 ---
 # <a name="centralized-payments-for-accounts-receivable"></a>Sentraliserte betalinger for kunder
 
@@ -295,3 +295,6 @@ Fabrikam mottar en betaling på 75,00 fra kunde 4000, Gastronor Delikatesser. Be
 | Kunder (Fabrikam Vest)    |              | 75,00         |
 | Skal betales fra Fabrikam Øst (Fabrikam Vest) | 25,00        |               |
 | Kunder (Fabrikam Vest)    |              | 25,00         |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

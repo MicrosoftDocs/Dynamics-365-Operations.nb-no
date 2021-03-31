@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 3163975a8cc99c4b07fdbe03fa57ea6cfef53cd9
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 22f441f7dc3d53fee263ebb059679510c2e3d054
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4995221"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5226443"
 ---
 # <a name="cost-control-workspace"></a>Arbeidsområde for kostnadskontroll 
 
@@ -55,7 +55,7 @@ Du kan definere datagrunnlaget for rapporten i hurtigfanen **Datafiltrering**. B
 |-------------------------------------------------------------------|-------------|
 | Kostnadsregnskapsfinans                                            | **Kostnadsregnskapsfinans** som rapporten er basert på. Verdien hentes fra feltet **Kostnadskontrollenhet**. |
 | Kostnadskontrollenhet                                                 | Verdien du velger, fastsetter kostnadsregnskapsfinansen og kostnadsobjektene som denne rapporten skal baseres på. |
-| Dimensjonshierarki for statistikk, Dimensjonshierarki for kostnadselement | En post for konfigurasjon av arbeidsområdet **Kostnadskontroll** kan rapportere ikke-monetære eller monetære verdier, men ikke i samme oppsett. Velg en verdi i feltet **Dimensjonshierarki for kostnadselement** for å rapportere monetære verdier. Velg en verdi i feltet **Dimensjonshierarki for statistikk** for å rapportere ikke-monetære verdier. Dimensjonshierarkiposten du velger, fastsetter strukturen for rapporteringen og aggregeringsnivåene.<blockquote>[!NOTE]<br>Hvis du vil vise ikke-monetære og monetære verdier ved siden av hverandre, kan du eksportere data til Microsoft Excel for Microsoft Power BI-innholdspakken.</blockquote> |
+| Dimensjonshierarki for statistikk, Dimensjonshierarki for kostnadselement | En post for konfigurasjon av arbeidsområdet **Kostnadskontroll** kan rapportere ikke-monetære eller monetære verdier, men ikke i samme oppsett. Velg en verdi i feltet **Dimensjonshierarki for kostnadselement** for å rapportere monetære verdier. Velg en verdi i feltet **Dimensjonshierarki for statistikk** for å rapportere ikke-monetære verdier. Dimensjonshierarkiposten du velger, fastsetter strukturen for rapporteringen og aggregeringsnivåene.<blockquote>[!NOTE]<br>Hvis du vil vise ikke-monetære og monetære verdier ved siden av hverandre, kan du eksportere data til Microsoft Excel for innholdspakken for Microsoft Power BI.</blockquote> |
 | Dimensjonsobjekt for kostnadselement                                   | Velg dimensjonshierarkiet for kostnadsobjektdimensjonen som passer til formålet med rapportering du definerer. |
 | Opprinnelig budsjettversjon                                           | Velg budsjettversjons-ID-en som fungerer som det opprinnelige budsjettet i forbindelse med denne rapporten. |
 | Revidert budsjettversjon                                            | Velg budsjettversjons-ID-en som fungerer som det reviderte budsjettet i forbindelse med denne rapporten. |
@@ -157,3 +157,6 @@ Tilleggsressurser
 [Definere tilgangsrettigheter for kontrollere for kostnadsobjekt](access-rights-cost-object-controller.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

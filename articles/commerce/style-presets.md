@@ -1,6 +1,6 @@
 ---
 title: Arbeide med forhåndsinnstillinger for stil
-description: Dette emnet beskriver hvordan du arbeider med forhåndsinnstillinger for områdestiler i Microsoft Dynamics 365 Commerce områdebygger.
+description: Dette emnet beskriver hvordan du arbeider med forhåndsinnstillinger for områdestiler i områdebyggeren for Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 manager: annbe
 ms.date: 05/28/2020
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1bd8f6e31afa300c5e7687a657ae2807995af8d3
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 55d333c3ae94b17dabaef3c697c698f068a06543
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5006316"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5226597"
 ---
 # <a name="work-with-style-presets"></a>Arbeide med forhåndsinnstillinger for stil
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver hvordan du arbeider med forhåndsinnstillinger for områdestiler i Microsoft Dynamics 365 Commerce områdebygger.
+Dette emnet beskriver hvordan du arbeider med forhåndsinnstillinger for områdestiler i områdebyggeren for Microsoft Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Oversikt
 

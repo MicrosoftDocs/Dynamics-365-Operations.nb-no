@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8f119e68319b901b052fa4aa659260f386f44bcf
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 5ded5fb032676a261566254427abcb642924451d
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021287"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5228737"
 ---
 # <a name="functional-location-lifecycle-states"></a>Livssyklustilstander for arbeidssted
 
@@ -62,3 +62,6 @@ Når du har opprettet livssyklustilstandene som kreves for arbeidsstedene, kan d
 5. Hvis du vil velge alle tilgjengelige tilstander for en modell, klikker du knappen for å ![velge alle tilgjengelige tilstander](media/03-setup-for-functional-locations.png). Alle tilstdnder overføres til delen **Valgte livssyklustilstander**.
 6. Hvis du vil fjerne en valgt tilstand fra modellen, velger du tilstanden i delen **Valgte livssyklustilstander**, og deretter velger du ![tilbakepilen](media/04-setup-for-functional-locations.png).
 7. Velg **Oppdateringer av livssyklustilstander** for å definere hvilke livssyklustilstander som kan følge en valgt tilstand.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 86838eb81f42b0f930f3989f7edfa5ee724bd05e
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 236ce97fcf4ca76f07ae5f9308cf45240590b399
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5006897"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5228545"
 ---
 # <a name="create-a-subcontracted-work-cell-for-lean-manufacturing"></a>Opprette en arbeidscelle for underleveranse for lean manufacturing
 
@@ -70,3 +70,6 @@ For å modellere underleveransearbeidet for lean manufacturing må du opprette e
 24. Klikk på rullegardinknappen i feltet Enhet for å åpne oppslaget.
 25. ResolveChanges enheten.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

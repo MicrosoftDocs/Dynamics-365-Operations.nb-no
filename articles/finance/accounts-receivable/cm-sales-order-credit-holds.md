@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 754b34d9d522451082ba6010297431788e4151f4
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 39f053404348b57de0ad623869ebd7c6cc7a150b
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5012269"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5228203"
 ---
 # <a name="credit-holds-for-sales-orders"></a>Kredittgrenser for salgsordrer
 [!include [banner](../includes/banner.md)]
@@ -264,3 +264,6 @@ Salgsordrer som har en tvungen sperreårsak, kan ikke frigis automatisk. Hvis sa
 Kredittbehandling kan bare brukes for salgsordrer for øyeblikket. Fritekstfakturaer, salgsstedsordrer og telefonsenterordrer bruker de midlertidige kredittgrensene og forsikring/garantier du legger til for å justere kredittgrensen. De bruker ikke blokkeringsreglene, og de plasseres ikke i sperrelisten hvis det oppstår et problem med kredittgrensen.
 
 Det er ikke støtte for prosjektfakturaer i kredittbehandling.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

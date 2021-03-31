@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-09
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: cc76a3915d6a1e58a71eb997b5af58941905e879
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 3d67052d47cf23acbb51354773fbd306545bbfa7
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4996054"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5228375"
 ---
 # <a name="reprint-and-void-wave-labels"></a>Skrive ut og kansellere bølgeetiketter
 
@@ -217,3 +217,6 @@ Arbeidsunntak kontrollerer virkemåten til plukking med mangler. Følg disse tri
 1. Velg **Plukk med mangler**.
 1. Velg arbeidsunntakskoden du opprettet for dette scenariet.
 1. Hvis du valgte det riktige unntaket, vil avmerkingsboksen **Annuller og skriv ut på nytt** være tilgjengelig. Merk av i denne boksen og bekreft. Ved bekreftelse blir etikettrullsekvensen som identifiseres av feltet **Etikettversjons-ID**, beregnet på nytt basert på det endrede arbeidslinjeantallet. Den skrives deretter ut på nytt på den angitte skriveren.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b81de02f144712786704a46d2096dfb510d5ce68
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 00ada9e43ae08e1757de618bd2d63dc147beeca0
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017398"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5226839"
 ---
 # <a name="maintenance-workers-and-worker-groups"></a>Vedlikeholdspersoner og arbeidsgrupper
 
@@ -63,3 +63,6 @@ Du kan også opprette vedlikeholdspersongrupper og knytte vedlikeholdspersoner t
 6. Hvis en ressursgruppe skal knyttes til den valgte vedlikeholdspersongruppen, velger du **Kopier fra ressursgruppe**. I **Gruppe**-feltet velger du ressursgruppen du vil kopiere kalenderinnstillinger fra. I feltet **Arbeidsgruppe** velger du arbeidergruppen du vil kopiere kalenderinnstillingene for ressursgruppen til. Dette trinnet er bare relevant hvis du vil at vedlikeholdspersoner skal bruke kalenderen som er relatert til en ressurs (arbeidssenter) under arbeidsordreplanlegging.
 
     Feltet på hurtigfanen **Detaljer** viser antall vedlikeholdspersoner som er definert for den valgte vedlikeholdspersongruppen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
