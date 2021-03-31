@@ -1,6 +1,6 @@
 ---
 title: Konfigurere valgfrie funksjoner for et evalueringsmiljø for Dynamics 365 Commerce
-description: Dette emnet forklarer hvordan du konfigurerer valgfrie funksjoner for et Microsoft Dynamics 365 Commerce-evalueringsmiljø.
+description: Dette emnet forklarer hvordan du konfigurerer valgfrie funksjoner for et evalueringsmiljø for Microsoft Dynamics 365 Commerce.
 author: psimolin
 manager: annbe
 ms.date: 07/16/2020
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6639de250557ce9a25fc2cde3807abf64b0ddc18
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: def99a34404357e28501de5ccf11c6130d53f34f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4993456"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5213824"
 ---
 # <a name="configure-optional-features-for-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurere valgfrie funksjoner for et evalueringsmiljø for Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet forklarer hvordan du konfigurerer valgfrie funksjoner for et Microsoft Dynamics 365 Commerce-evalueringsmiljø.
+Dette emnet forklarer hvordan du konfigurerer valgfrie funksjoner for et evalueringsmiljø for Microsoft Dynamics 365 Commerce.
 
 ## <a name="prerequisites"></a>Forutsetninger
 
@@ -102,7 +102,7 @@ E-postmalen for hver transaksjonshendelse du vil sende e-postmeldinger for, må 
 
 Det kan være lurt å tilpasse e-postmalene slik at de bruker forskjellige bilder. Eller kanskje du vil oppdatere koblingene i malene slik at de går til evalueringsmiljøet. Trinnene nedenfor forklarer hvordan du laster ned standardmaler, tilpasser dem og oppdaterer malene i systemet.
 
-1. Bruk en webleser og last ned [zip-fil med standard e-postmaler for Microsoft Dynamics 365 Commerce-evaluering](https://download.microsoft.com/download/d/7/b/d7b6c4d4-fe09-4922-9551-46bbb29d202d/Commerce.Preview.Default.Email.Templates.zip) til den lokale datamaskinen. Denne filen inneholder følgende HTML-dokumenter:
+1. Bruk en webleser og last ned ZIP-filen [Microsoft Dynamics 365 Commerce Evaluering av standard e-postmaler](https://download.microsoft.com/download/d/7/b/d7b6c4d4-fe09-4922-9551-46bbb29d202d/Commerce.Preview.Default.Email.Templates.zip) til den lokale datamaskinen. Denne filen inneholder følgende HTML-dokumenter:
 
     - Ordrebekreftelsesmal
     - Utsted gavekort-mal
@@ -133,7 +133,7 @@ Når e-posten gjengis, ersattes disse tokenene med de faktiske verdiene som gjel
 
 Følgende tokener gjelder for den overordnede salgsordren.
 
-| Navnet på tokenet | Token  |
+| Navnet på tokenet | Token |
 |-------------------|-------|
 | Ordrenummer      | %salesid% |
 | Kundens navn   | %customername% |
@@ -159,7 +159,7 @@ Følgende tokener erstattes med verdier for hvert produkt i ordren.
 | Produktnavn           | %lineproductname% |
 | beskrivelse            | %lineproductdescription% |
 | Antall               | %linequantity% |
-| Linjeenhetspris        | %lineprice% (kontroller) |
+| Linjeenhetspris        | %lineprice% (verifiser) |
 | linjevaresum        | %linenetamount% |
 | linjerabatt          | %linediscount% |
 | Forsendelsesdato              | %lineshipdate% |

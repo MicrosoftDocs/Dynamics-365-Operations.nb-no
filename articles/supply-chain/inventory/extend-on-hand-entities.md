@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 2e805b9379c73f7b7eb2820662fad70e28181ebf
-ms.sourcegitcommit: f59df61799915f6a79aec7e3e8664c02df6597da
+ms.openlocfilehash: 0f48e424a9ab3349d3c114ecbd01424005b9a9c6
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "5043399"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5219347"
 ---
 # <a name="extend-inventory-on-hand-data-entities"></a>Utvide dataenheter for lagerbeholdning
 
@@ -68,3 +68,6 @@ public final class InventOnHandAggregatedViewBuilder\_Extension
 ```
 
 Når du har fullført disse trinnene, kan du utvide lagerbeholdningen etter område og lagerbeholdningen etter lagerdataenheter ved å legge til de nye feltene. På denne måten sikrer du at de utvidede feltene gjenkjennes og tas med under dataoverføring som bruker disse dataenhetene.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

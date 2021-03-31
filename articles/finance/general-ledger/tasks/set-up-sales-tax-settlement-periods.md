@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e8683f3b6e10efe6e975ae6bc3d7863f884bb9a0
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: e2e5340150623057e233ed0acf487c42c61deba2
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4994471"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5222125"
 ---
 # <a name="set-up-sales-tax-settlement-periods"></a>Definere mva-utligningsperioder
 
@@ -50,3 +50,6 @@ Denne oppgaven bruker demonstrasjonsfirmaet USMF.
 16. Velg **Nytt periodeintervall**. Når det første periodeintervallet er angitt, kan du opprette nye perioder automatisk. Du kan gå tilbake og legge til nye periodeintervallene etter behov.  
 17. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

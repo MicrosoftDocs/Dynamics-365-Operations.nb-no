@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af614b7f29144d02a853ef15b008f2a21d3d3aa5
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: e591007a1330fe11b3f586185f9daca845798908
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5019760"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5218471"
 ---
 # <a name="procurement-and-sourcing-workflows"></a>Arbeidsflyter for innkjøp og leverandører
 
@@ -79,3 +79,6 @@ Du kan tilordne et godkjenningstrinn til deltakergruppene nedenfor.
 - [Definere arbeidsflyter for forretningsprosesser for innkjøpsrekvisisjoner](https://www.microsoft.com/download/details.aspx?id=101821)
 - [Arbeidsflyt for innkjøpsrekvisisjon](purchase-requisitions-workflow.md)
 - [Ønske leverandører velkommen](vendor-onboarding.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

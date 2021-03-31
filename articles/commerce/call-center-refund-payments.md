@@ -14,18 +14,18 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3f98fbc14fc2946499a9c003eb0bd0edb7f2017e
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: fd49835a24dc6ec429ac4b01f363f1be937628ac
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4991421"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5214736"
 ---
 # <a name="refund-payment-processing-in-call-centers"></a>Refunderingsbehandling i telefonsentre
 
 Dette emnet beskriver hvordan betalingsrefusjoner genereres via telefonsentre når returer opprettes, eller når ordrer eller ordrelinjer annulleres.
 
-En bruker som oppretter en returordre for en kunde som telefonsenterbruker i Microsoft Dynamics 365 Commerce Headquarters, bruker **Returordre**-siden til å opprette det første autorisasjonsreturnummeret (RMA). RMA definerer produktene som kunden vil returnere eller bytte, og det oppretter en koblet retursalgsordre som har ordretypen **Returordre**. Denne koblede returnerte ordren brukes til å spore posteringen av det returnerte lageret og eventuelle kreditnotaer eller betalingsrefusjoner som er postert.
+En bruker som oppretter en returordre for en kunde som telefonsenterbruker i Microsoft Dynamics 365 Commerce Headquarters, bruker siden **Returordre** til å opprette det første autorisasjonsreturnummeret (RMA). RMA definerer produktene som kunden vil returnere eller bytte, og det oppretter en koblet retursalgsordre som har ordretypen **Returordre**. Denne koblede returnerte ordren brukes til å spore posteringen av det returnerte lageret og eventuelle kreditnotaer eller betalingsrefusjoner som er postert.
 
 Hvis alternativet **Aktiver ordreklarering** er satt til **Ja** for telefonsenterkanalen, må telefonsenterbrukeren som oppretter produksjonsreturen, kjøre arbeidsflyten for fullføring av ordren ved å velge **Fullfør** på **Returordre**-siden. Funksjonen **Fullført** gir et beregnet retursammendrag som viser det forfalte refunderingsbeløpet. Når den er riktig konfigurert, oppretter den dessuten en refunderingsbetalingslinje mot returordren når den er riktig konfigurert.
 

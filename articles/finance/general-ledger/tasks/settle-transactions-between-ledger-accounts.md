@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8220bacc8d683163e97956ec59a5af929b04319c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 6813871a4773d39d4abfdecc896a2aa8b320cbe0
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4994421"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5222101"
 ---
 # <a name="settle-transactions-between-ledger-accounts"></a>Utligne transaksjoner mellom finanskontoer
 
@@ -48,3 +48,6 @@ Denne fremgangsmåten viser hvordan du utligner transaksjoner mellom finanskonto
 7. Klikk Utligninger.
 8. Merk den valgte raden i listen.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

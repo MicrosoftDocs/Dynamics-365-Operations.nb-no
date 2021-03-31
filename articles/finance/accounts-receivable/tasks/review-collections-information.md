@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9bbfb6537118a9936c127018427b0516e7ea002a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 7e727d8030c407635c97dab3a913441a75f4ffb0
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4971534"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5220113"
 ---
 # <a name="review-collections-information"></a>Gå gjennom innkrevingsinformasjon
 
@@ -142,3 +142,6 @@ Dette emnet forklarer hvordan du går gjennom innkrevingsinformasjon og forskjel
 5. Velg **Vis liste**.
 - Velg en kundekonto eller godta standardoppføringen. Som standard er dette den valgte kundekontoen på listesiden eller i skjemaet som du åpnet dette skjemaet fra. Hvis du åpnet skjemaet fra en listeside, er kundene i listen kundene som er inkludert i purringspuljen som brukes på listesiden.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

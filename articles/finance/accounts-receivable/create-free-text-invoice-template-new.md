@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ee4fff7b148396faecef899c7a75365d3e1f47f3
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: abdcb307686800e0038212982c1eac6f1c14cf8b
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4991171"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5217488"
 ---
 # <a name="create-a-free-text-invoice-template"></a>Opprette en mal for fritekstfaktura
 
@@ -67,3 +67,6 @@ For denne gjennomgangen må du bruke demonstrasjonsfirmaet USMF. Denne fremgangs
 
 ## <a name="save-a-free-text-invoice-as-a-template"></a>Lagre en fritekstfaktura som mal
 Du kan også lagre en eksisterende fritekstfaktura som en mal. Når du velger Lagre mal i kategorien Faktura, må du angi et navn og en beskrivelse for malen. Hvis det finnes allerede en mal med det samme navnet, vises en melding om at en mal med dette navnet allerede finnes. Du kan fremdeles klikke OK for å erstatte den. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

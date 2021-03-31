@@ -1,6 +1,6 @@
 ---
 title: Laste opp og betjene statiske filer
-description: Dette emnet beskriver hvordan du laster opp en statisk fil til Microsoft Dynamics 365 Commerce-områdebytter, og hvordan du oppretter en egendefinert nettadresse og et filnavn som kan brukes til å be om denne filen.
+description: Dette emnet beskriver hvordan du laster opp en statisk fil til områdebyggeren for Microsoft Dynamics 365 Commerce, og hvordan du oppretter en egendefinert nettadresse og et filnavn som kan brukes til å be om denne filen.
 author: StuHarg
 manager: annbe
 ms.date: 11/16/2020
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 1d709d99737ad05af1fb19d9f3ef7b87a8db80d3
-ms.sourcegitcommit: da17648c296b22d517eadb2f71c7803672e5648d
+ms.openlocfilehash: aba9dde2ed9d5fa09e92fcdd784a53f208930eda
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "5031826"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5211025"
 ---
 # <a name="upload-and-serve-static-files"></a>Laste opp og betjene statiske filer
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver hvordan du laster opp en statisk fil til Microsoft Dynamics 365 Commerce-områdebytter, og hvordan du oppretter en egendefinert nettadresse og et filnavn som kan brukes til å be om denne filen.
+Dette emnet beskriver hvordan du laster opp en statisk fil til områdebyggeren for Microsoft Dynamics 365 Commerce, og hvordan du oppretter en egendefinert nettadresse og et filnavn som kan brukes til å be om denne filen.
 
 Noen tredjepartskontakter krever at en fil blir lagret og betjent fra e-handelsområdet. Disse koblingene forventer at filen blir returnert ved forespørsler til en bestemt URL-bane for tilbakeringing og et filnavn. Dette emnet beskriver derfor hvordan du laster opp og betjener en statisk fil med en brukerdefinert URL-adresse og et filnavn på et Dynamics 365 Commerce-e-handelsområde.
 

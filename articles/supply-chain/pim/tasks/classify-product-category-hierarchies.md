@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0d367c85211a33ba2d08b1380500124c76f82ada
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 61ad92804b583f0474b582b17dc381e9d77e38bf
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4987010"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5218639"
 ---
 # <a name="classify-a-product-using-category-hierarchies"></a>Klassifisere et produkt ved hjelp av kategorihierarkier
 
@@ -42,3 +42,6 @@ Dette emnet beskriver hvordan du klassifiserer et produkt ved hjelp av kategorih
 11. Angi eller velg en verdi i **Kategori**-feltet.
 12. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

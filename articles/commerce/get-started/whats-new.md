@@ -15,12 +15,12 @@ ms.search.industry: retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 97ae175eeb6d600777bb06d1dc6a54b5a2693baa
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 690e73bfe24be3ba3cf6d25b361b2afb0938d02f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4979909"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5206210"
 ---
 # <a name="whats-new-and-changed-in-dynamics-365-retail"></a>Hva er nytt og endret i Dynamics 365 Retail
 
@@ -44,3 +44,6 @@ Denne siden peker til ressurser som gir deg informasjon om de nye funksjonene og
 | Dynamics 365 for Retail – 7.3.2.5 | 7.3.21971.64091 | 2018. juni | [KB 4342134 Microsoft Dynamics 365 for Retail versjon 7.3.2.5 – feilrettingspakke 1\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4342134&bugId=225730&qc=f3e2816c3b1434965bc738285fb40f4ad33661bdd853b799dca4c610608640af) |
 
 \*Koblingen peker til en Knowledge Base (KB)-artikkel. Du må logge på Lifecycle Services (LCS) for å vise KB-artikkelen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

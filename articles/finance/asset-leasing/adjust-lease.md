@@ -17,16 +17,17 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 32d99d9e90b65f7cac74176d21fa4b053ae8f62c
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: f11dbd6dc67ffccb087f67f5ce6267fe94e0ee65
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5130761"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5219993"
 ---
 # <a name="adjust-leases"></a>Justere leieavtaler
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Emnet beskriver hvordan du justerer en leieavtale. Det kan hende at justering kreves hvis leievilkårene endres, leieavtalen utvides eller andre omstendigheter endres. Aktivaleie følger retningslinjene som Accounting Standards Codification-emne 842 (ASC 842) og International Financial Reporting Standard 16 (IFRS 16) gir om leieavtaleendringer. ASC 842-20-15-1 definerer en leieavtaleendring som enhver endring i vilkårene og betingelsene for en kontrakt som forårsaker endring i omfanget av, eller betalingen for, en leieavtale. Avsnitt 39 i IFRS 16 angir at en leier må revaluere leieforpliktelsen, slik at den gjenspeiler endringer i leiebetalingene.
 
@@ -134,3 +135,6 @@ Hvis en leieavtale er justert, kan du vise de ulike versjonene av den. Du kan og
 
 2. Hvis du vil vise historiske tidsplaner, åpner du den endrede leieavtalen fra siden **Leiesammendrag**, velger det ønskede tablået og deretter **Historikk for tablåversjon** i handlingsruten.
 3. På **Tablåversjon**-siden velger du en versjon og en tidsplan du vil vise.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

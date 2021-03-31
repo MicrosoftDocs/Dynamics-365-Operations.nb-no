@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-11-16
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: e0445046d8016dfa2c02c1ff1a05bdd148f9409a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 6cf0db49c7fe5ff54ae2a999e0829913b4d954c4
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969259"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5219945"
 ---
 # <a name="use-customer-payment-predictions-preview"></a>Bruke kundebetalingsforutsigelser (forhåndsversjon)
 
@@ -109,3 +109,6 @@ Funksjoner i offentlige forhåndsversjoner kan og bør bare aktiveres i sandkass
 ## <a name="privacy-notice"></a>Personvernerklæring
 
 Forhåndsversjoner (1) kan ha redusert personvern og færre sikkerhetstiltak enn Dynamics 365 Finance and Operations-tjenesten, (2) er ikke inkludert i serviceavtalen (SLA) for denne tjenesten, (3) må ikke brukes til å behandle personlige data eller andre data som er underlagt juridiske eller forskriftsmessige krav, og (4) har begrenset støtte.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

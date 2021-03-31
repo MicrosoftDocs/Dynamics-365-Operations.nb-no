@@ -16,12 +16,12 @@ ms.search.industry: Service industries
 ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b871a3fef3515d3a79fb4b55406a93fc16d02faa
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 72ac6705ef8584ef41980a1cc9490227538de365
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5018734"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5222855"
 ---
 # <a name="submit-and-approve-project-budget"></a>Sende og godkjenne prosjektbudsjett
 
@@ -56,3 +56,6 @@ Denne oppgaven ble opprettet med USSI-datasettet.
 21. Skriv inn en verdi i feltet **Kommentar**.
 22. Klikk på **Send**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

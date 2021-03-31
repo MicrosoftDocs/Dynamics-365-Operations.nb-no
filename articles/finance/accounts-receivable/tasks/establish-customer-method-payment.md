@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a948bf772e55f20c7010101fd11da83940a0b268
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 7e60459c417c6018c4088009a323cf7f66616ef4
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4990972"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5220209"
 ---
 # <a name="establish-customer-method-of-payment"></a>Opprette kundebetalingsmåte
 
@@ -45,3 +45,6 @@ Dette emnet forklarer hvordan du oppretter en betalingsmåte for kundebetalinger
 15. Bruk kategorien **Betalingsattributter** til å definere hvilke betalingsattributter du vil bruke for denne betalingsmåten.
 16. Velg **Lagre**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

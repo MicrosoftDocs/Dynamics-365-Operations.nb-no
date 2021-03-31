@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ab8baf846d65e6fefe9ca575b5af5a2dbceac666
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 3ecd05add44bacae517109f8bab2cb43376fe07c
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4976894"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5216817"
 ---
 # <a name="set-up-short-picking-item-reallocation"></a>Definere ny tildeling av vare for plukking med mangler
 
@@ -63,3 +63,6 @@ Demonstrasjonsdatafirmaet USMF ble brukt til å opprette denne fremgangsmåten.
 6. Velg en **bruker-ID** i listen. For eksempel 24.
 7. Utvid **Arbeid**-hurtigfanen.
 8. Velg **Ja** i feltet **Tillat manuell ny tildeling av vare**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

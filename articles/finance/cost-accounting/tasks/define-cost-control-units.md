@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ac39cc87e69f65117a7463b12d90ce1bb122847f
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: dcd6162d2b8722f9114b438cf853c1ff1ab9b840
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4990698"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5218941"
 ---
 # <a name="define-cost-control-units"></a>Definere kostnadskontrollenheter
 
@@ -40,3 +40,6 @@ Denne fremgangsmåten viser hvordan du definerer kostnadskontrollenheter i kostn
 10. Angi eller velg en verdi i feltet Dimensjon.
 11. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -16,14 +16,14 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: ac6f6511f4f96c00e10369329b2111a46f23d1a2
-ms.sourcegitcommit: f9df202aefef761be52c0360b0e22da88773914c
+ms.openlocfilehash: 6e39310ac2658ceed3f269249fe8b9d0d05dde21
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "5035949"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5212585"
 ---
-# <a name="set-up-a-b2b-e-commerce-site"></a>Definere et B2B-e-handelsområde
+# <a name="set-up-a-b2b-e-commerce-site"></a>Definere et e-handelsområde for B2B
 
 [!include [banner](../../includes/banner.md)]
 
@@ -302,3 +302,6 @@ For å opprette en side for fakturadetaljer i områdebyggeren følger du denne f
 [Innholdsblokkmodul](../add-hero-module.md)
 
 [Produktsamling](../product-collection-module-overview.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

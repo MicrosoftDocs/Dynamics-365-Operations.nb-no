@@ -1,6 +1,6 @@
 ---
 title: Opprette dynamiske e-handelssider basert på URL-parametere
-description: Dette emnet beskriver hvordan du konfigurerer en Microsoft Dynamics 365 Commerce-e-handelside som kan ha dynamisk innhold basert på URL-parametere.
+description: Dette emnet beskriver hvordan du konfigurerer en e-handelside i Microsoft Dynamics 365 Commerce som kan ha dynamisk innhold basert på URL-parametere.
 author: StuHarg
 manager: AnnBe
 ms.date: 01/28/2021
@@ -17,19 +17,19 @@ ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e72b738133b396848848d167cace80fe23694334
-ms.sourcegitcommit: 872600103d2a444d78963867e5e0cdc62e68c3ec
+ms.openlocfilehash: 8d6b4756fc81dc99786da251d5d9a575a71ccc49
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "5098641"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5208021"
 ---
 # <a name="create-dynamic-e-commerce-pages-based-on-url-parameters"></a>Opprette dynamiske e-handelssider basert på URL-parametere
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-Dette emnet beskriver hvordan du konfigurerer en Microsoft Dynamics 365 Commerce-e-handelside som kan ha dynamisk innhold basert på URL-parametere.
+Dette emnet beskriver hvordan du konfigurerer en e-handelside i Microsoft Dynamics 365 Commerce som kan ha dynamisk innhold basert på URL-parametere.
 
 En e-handelsside kan konfigureres til å ha forskjellig innhold, basert på et segment i URL-banen. Derfor kalles siden en dynamisk side. Segmentet brukes som en parameter for å hente sideinnholdet. Det vil for eksempel opprettes en side med navnet **blogg\_fremviser** som knyttes til URL-adressen `https://fabrikam.com/blog`. Denne siden kan deretter brukes til å vise forskjellig innhold, basert på det siste segmentet i URL-banen. Eksempelvis er det siste segmentet i URL-adressen `https://fabrikam.com/blog/article-1` **artikkel-1**.
 

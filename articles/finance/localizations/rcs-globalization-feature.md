@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: AX 10.0.11
-ms.openlocfilehash: b701e6bfa14ac30e02bfe79666963db4ee657302
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d5d42bd076ca77c5d2906593d44ae420d954a0b1
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5002800"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5218860"
 ---
 # <a name="regulatory-configuration-services-rcs---globalization-features"></a>Regulatory Configuration Services (RCS) – globaliseringsfunksjoner
 
@@ -251,3 +251,6 @@ Brukere av globaliseringstjenester kan styre miljøet for å definere en globali
 10. Velg **Publiser** for å publisere miljøet.
 
     ![Publisert miljø](./media/RCS_GlobalF_19%20Feature%20envn%20publishing.JPG)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f4fdff8bdc383a85d604fa6e545c625d5782241f
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 277b91944d8f7ee79bed9b85ee6ebd275e72c75b
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4976819"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5223296"
 ---
 # <a name="plan-loads-and-shipments-using-the-load-planning-workbench"></a>Planlegge laster og leveringer ved hjelp av arbeidsområdet for lastplanlegging
 
@@ -60,3 +60,6 @@ Dette emnet viser hvordan du bruker arbeidsområdet for lastplanlegging til å o
 5. Velg **Tilordne**.
 6. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

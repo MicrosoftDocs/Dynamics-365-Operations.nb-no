@@ -16,20 +16,18 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: cb32b014ac35e33db28d3dee03b01dfa43f5d6a5
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 5e800daa6eeb54a2eda535cb57aa45559b59b4ea
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4980512"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5206469"
 ---
 # <a name="checkout-module"></a>Kassemodul
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet beskriver hvordan du legger til en kassemodul på en side og angir de nødvendige egenskapene.
-
-## <a name="overview"></a>Oversikt
 
 En kassemodul er en spesialcontainer som er vert for alle modulene som kreves for å opprette en ordre. Den viser en trinnvis flyt som en kunde bruker til å angi all relevant informasjon for å foreta et kjøp. Den henter forsendelsesadressen, leveringsmetoden og faktureringsinformasjonen. Den gir også et ordresammendrag og annen informasjon som er knyttet til en kundeordre.
 

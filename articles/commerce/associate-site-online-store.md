@@ -1,6 +1,6 @@
 ---
-title: Knytte et Dynamics 365 Commerce-nettsted til en nettkanal
-description: Dette emnet forklarer hvordan du knytter Microsoft Dynamics 365 Commerce-området til én eller flere nettbutikker.
+title: Knytte et Dynamics 365 Commerce-område til en nettkanal
+description: Dette emnet forklarer hvordan du knytter området for Microsoft Dynamics 365 Commerce til én eller flere nettbutikker.
 author: bicyclingfool
 manager: AnnBe
 ms.date: 07/02/2020
@@ -17,18 +17,18 @@ ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fc93441bd09deccdb8c7ecf955c0ec5177c0b31e
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: bb39b54e45e387067720dcbc5d9ccffbf8bf08b4
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4980029"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5211528"
 ---
-# <a name="associate-a-dynamics-365-commerce-site-with-an-online-channel"></a>Knytte et Dynamics 365 Commerce-nettsted til en nettkanal
+# <a name="associate-a-dynamics-365-commerce-site-with-an-online-channel"></a>Knytte et Dynamics 365 Commerce-område til en nettkanal
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet forklarer hvordan du knytter Microsoft Dynamics 365 Commerce-området til én eller flere nettbutikker. 
+Dette emnet forklarer hvordan du knytter området for Microsoft Dynamics 365 Commerce til én eller flere nettbutikker. 
 
 Når du har klargjort Dynamics 365 Commerce-e-handelsmiljøet ved hjelp av portalen for Microsoft Dynamics Lifecycle Services (LCS), er du klar til å opprette ditt første nettsted for e-handel. Som en del av opprettelsen av første område, kan du knytte området til en nettbutikk som er opprettet tidligere. Dette trinnet binder området til en Internett-kanal og lar området vise navigasjonshierarkiet, produkter, kategorier, priser, leveringsalternativer og alt annet som du definerte i nettbutikken.
 

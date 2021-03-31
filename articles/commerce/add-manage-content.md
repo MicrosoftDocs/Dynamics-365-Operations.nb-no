@@ -1,6 +1,6 @@
 ---
 title: Måter å legge til innhold på
-description: Dette emnet gir en oversikt og koblinger for hvor og hvordan du kan begynne å behandle innhold ved hjelp av webredigeringsverktøysettet for Microsoft Dynamics 365 Commerce-områdebygger.
+description: Dette emnet gir en oversikt og koblinger for hvor og hvordan du kan begynne å behandle innhold ved hjelp av webredigeringsverktøysettet for områdebygger for Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 manager: annbe
 ms.date: 10/09/2020
@@ -16,18 +16,18 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d818ab91af7b1a74b580e145e4b602cca0ea1662
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: eb0b1c3f77bb71ba04c9110ed25fb80c2f2e61f4
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4980263"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5208069"
 ---
 # <a name="ways-to-add-content"></a>Måter å legge til innhold på
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet gir en oversikt over og koblinger til dokumentasjon om hvordan du kan behandle innhold ved hjelp av webredigeringsverktøysettet for Microsoft Dynamics 365 Commerce-områdebygger.
+Dette emnet gir en oversikt over og koblinger til dokumentasjon om hvordan du kan behandle innhold ved hjelp av webredigeringsverktøysettet for områdebygger for Microsoft Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Oversikt
 

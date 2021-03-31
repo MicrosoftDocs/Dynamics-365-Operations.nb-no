@@ -17,20 +17,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: b7b5935a81377e0cb6acfc497eece6148bf1eeee
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 178469d58e5cb619c3eacfa6760f0eaec18be0dc
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4993375"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5206138"
 ---
 # <a name="iframe-module"></a>Iframe-modul
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet dekker iFrame-modulen og beskriver hvordan du legger den til på områdesider i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Oversikt
 
 En iFrame-modul gir en iFrame (innebygd ramme) som er vert for eksternt innhold på et område. Den kan for eksempel brukes til å være vert for en YouTube-video eller PDF-filvisning på en områdeside. 
 

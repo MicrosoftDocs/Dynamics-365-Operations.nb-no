@@ -16,12 +16,12 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 754e2f83d6c8ff5d3698d98062e54bba7ccd9836
-ms.sourcegitcommit: f9df202aefef761be52c0360b0e22da88773914c
+ms.openlocfilehash: 82dfd6ac7e97d838ef442fd6ded4a4f165fc795b
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "5035946"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5211207"
 ---
 # <a name="configure-the-customer-account-payment-method-for-b2b-e-commerce-sites"></a>Konfigurere kundekontobetalingsmetode for B2B-e-handelsområder
 
@@ -29,7 +29,7 @@ ms.locfileid: "5035946"
 
 Dette emnet beskriver hvordan du konfigurerer betalingsmåten for kundekonto for e-handelsområder (B2B, business-to-business).
 
-Forhandlere kan ta imot ulike typer betaling i bytte mot produktene og tjenestene de selger i en e-handelskanal. Hver betalingstype en forhandler godtar, må konfigureres i Microsoft Dynamics 365 Commerce når systemet defineres. Kundekontoen-betalingsmåten (eller "a konto") må støttes på B2B-e-handelsområder. 
+Forhandlere kan ta imot ulike typer betaling i bytte mot produktene og tjenestene de selger i en e-handelskanal. Hver betalingstype som en forhandler godtar, må konfigureres i Microsoft Dynamics 365 Commerce når systemet defineres. Kundekontoen-betalingsmåten (eller "a konto") må støttes på B2B-e-handelsområder. 
 
 ## <a name="prerequisites"></a>Forutsetninger
 
@@ -76,3 +76,6 @@ For å bekrefte at betalingsmåten for kundekonto er aktivert, følger du trinne
 [Angi produktantallsgrenser for B2B-e-handelsområder](quantity-limits.md)
 
 [Oppdateringer for SDK og modulbibliotek](../e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

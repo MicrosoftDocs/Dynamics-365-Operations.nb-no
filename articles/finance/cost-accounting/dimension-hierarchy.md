@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7fde19ad1a58616672de72fb5e5cbeea39138b46
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 2a2e48b15bedd25b685686fa18a91f30b600331c
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4995196"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5217392"
 ---
 # <a name="dimension-hierarchy"></a>Dimensjonshierarki
 
@@ -332,3 +332,6 @@ Innstillingene for hierarkiet for tilgangsliste brukes til å styre dataene som 
 > [!NOTE] 
 > - Før hierarkiet for tilgangsliste kan påvirke data i Power BI, må hierarkiet for tilgangsliste og radnivåsikkerhet i Power BI sammenkobles. Hvis du vil ha mer informasjon, kan du se [Definere sikkerhet for innholdspakken Kostnadsregnskap](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
 > - Tilgangslistehierarkiet bidrar ikke til å sikre eksporten av data til Excel. Derfor skal det rapporteringsverktøyet bare brukes av regnskapsførere og ledere som må ha full tilgang til å vise dataene.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

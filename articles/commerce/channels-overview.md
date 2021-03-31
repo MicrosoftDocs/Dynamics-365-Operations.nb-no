@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: e060fe2a578296f079653244ed4d5676313e5ea8
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 8ac188832bdaeba430eed7f08e91a9c2214a0e15
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963066"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5219107"
 ---
 # <a name="channels-overview"></a>Oversikt over kanaler
 
@@ -44,7 +44,7 @@ Telefonsenterkanaler representerer ordre- og kundestyring i et telefonsenter.
 
 ### <a name="online-channels"></a>Internett-kanaler
 
-Internett-kanaler representerer butikkfasader for e-handel på nettet. Når en Internett-kanal er opprettet, må det opprettes et område ved hjelp av Microsoft Dynamics 365 Commerce-områdebygger eller en annen tredjepartsløsning for e-handel.
+Internett-kanaler representerer butikkfasader for e-handel på nettet. Når en Internett-kanal er opprettet, må det opprettes et område ved hjelp av områdebyggeren i Microsoft Dynamics 365 Commerce eller en annen tredjepartsløsning for e-handel.
 
 ## <a name="channel-setup-basics"></a>Grunnleggende om kanaloppsett
 

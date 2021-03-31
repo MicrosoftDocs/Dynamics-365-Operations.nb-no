@@ -1,6 +1,6 @@
 ---
 title: Kategorimodul
-description: Dette emnet dekker kategorimoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
+description: Dette emnet dekker fanemoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
 ms.date: 09/15/2020
@@ -17,20 +17,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 42c3cd99897627dbcdbdec91cfdb03d5743f7388
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 8375c33bd6ffd3004cfc9d7b686d9a0edc77cdef
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4980188"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5209233"
 ---
 # <a name="tab-module"></a>Kategorimodul
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet dekker kategorimoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Oversikt
+Dette emnet dekker fanemoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
 
 Kategorimoduler er beholdere-lignende moduler som brukes til å organisere informasjonen på en områdeside i kategorier. De kan brukes på en hvilken som helst side hvor informasjon må presenteres i kategorier.
 

@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-9-16
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: e8274890c581fffc7330538430c9b2ba060041bc
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d5d688c5769a62580e48908117d0562b26eab10a
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4999109"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5222831"
 ---
 # <a name="troubleshoot-procurement-and-sourcing-workflows"></a>Feilsøke arbeidsflyter for innkjøp og leverandører
 
@@ -79,3 +79,6 @@ Når du har annullert bestillinger som var i *Bekreftet* tilstand, vises de annu
 
 Dette problemet oppstår bare for bestillinger som er underlagt endringsadministrasjon. Dette skjer fordi avlysningen regnes som en endring som må godkjennes. Godkjenningen kan gjøres automatisk av systemet. Prosessen er derfor å sende den annullerte bestillingen til godkjenningsarbeidsflyten slik at den kan gå til *Godkjent* tilstand. På dette punktet vises ikke bestillingen lenger i listen over bestillingsforslag i arbeidsområdet **Bestillingsklargjøring**.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

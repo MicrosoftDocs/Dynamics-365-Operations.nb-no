@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6d51cecc800a827fe91583b6086fd88b10aedc41
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 66757cdb93c67129c19ae226caa271a44c759206
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4986935"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5218567"
 ---
 # <a name="create-batch-attributes-for-a-product"></a>Opprette bunkeattributter for et produkt
 
@@ -54,3 +54,6 @@ Denne prosedyren viser hvordan du oppretter et bunkeattributt, tilordner standar
 22. Klikk på Lagre.
 23. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

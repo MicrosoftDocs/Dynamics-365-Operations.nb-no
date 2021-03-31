@@ -16,12 +16,12 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 96b76a08206b8c1bc5029acdfd385fda2870ca85
-ms.sourcegitcommit: f9df202aefef761be52c0360b0e22da88773914c
+ms.openlocfilehash: 9cd1e3e38bf7dd5ac536104c850cbfc6c53abcfd
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "5035948"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5211255"
 ---
 # <a name="manage-business-partner-users-on-b2b-e-commerce-websites"></a>Administrere forretningspartnerbrukere på B2B-e-handelssider
 
@@ -139,3 +139,6 @@ Følg disse trinnene for å pålaste forretningspartnere og brukere direkte i Co
 [Angi produktantallsgrenser for B2B-e-handelsområder](quantity-limits.md)
 
 [Oversikt over nummerserier](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/number-sequence-overview)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

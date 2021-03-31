@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1169ad784c07d0757990b36b618282ed7858bcbf
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 9fc06806c14539de913f2336f2adb7462f303f37
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4987559"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5220878"
 ---
 # <a name="inventory-close"></a>Beholdningslukking
 
@@ -61,7 +61,7 @@ Finanskontoene som oppdateres på grunn av disse oppgavene, er koblet til den op
 > [!NOTE] 
 > - Lagerlukking er et nødvendig trinn i månedsavslutningsprosedyren for alle lagermodeller unntatt glidende gjennomsnitt.  Du blir varslet hvis du prøver å lukke en regnskapsperiode uten å utføre lagerlukking først per periodesluttdatoen.
 > - Før du kjører lukkingsprosedyren kan du vise en liste over varer som ikke kan utlignes under oppdateringen.
-> - Vi anbefaler at du kjører lagerlukkingen utenfor vanlig arbeidstid for å sørge for en mer jevn fordeling av datamaskinressurser
+> - Det anbefales at du kjører lagerlukkingen utenfor vanlig arbeidstid for å sørge for en mer jevn fordeling av datamaskinressurser
 
 ## <a name="the-inventory-close-log"></a> Loggen for lagerlukking
 Når lagerlukkingsprosessen er fullført, kan det hende at en melding i meldingssentret rapporterer at kostprisen for en vare er feil fordi en transaksjon ikke kan utlignes helt. 
@@ -86,3 +86,6 @@ Noen ganger kan du bli nødt til å tilbakeføre en fullført lagerlukking for �
 > [!NOTE] 
 > Bare den siste lagerperioden som ble lukket, kan åpnes på nytt. For å tilbakeføre en tidligere lagerlukking må du tilbakeføre hver etterfølgende lagerlukking én om gangen og begynne med den siste lukkingen.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

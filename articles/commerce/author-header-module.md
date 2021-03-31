@@ -16,20 +16,18 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1373397c4499ed65835bcc71c6fc628ff356e4e7
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 569fb5ac3d30be30044ef9b928ecf1f6dde20aab
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4991521"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5211430"
 ---
 # <a name="header-module"></a>Topptekstmodul
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet dekker topptekstmoduler og beskriver hvordan du oppretter sideoverskrifter i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Oversikt
 
 I Dynamics 365 Commerce vises et topptekstområde som et sidefragment som inkluderer topptekst, promobanner og samtykkingsmoduler for informasjonskapsler. 
 

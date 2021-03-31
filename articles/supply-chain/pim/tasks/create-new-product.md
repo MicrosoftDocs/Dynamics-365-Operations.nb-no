@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d313d76d40476bec5c8bc9c8ea5fc93b217e7e87
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 90fdd0a3cbe90c7d3752c4ca2de1c2665968dc35
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5007572"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5218543"
 ---
 # <a name="create-a-new-product"></a>Opprette et nytt produkt
 
@@ -42,3 +42,6 @@ Dette emnet beskriver hvordan du oppretter et nytt delt produkt. Dette utføres 
 3. Angi eller velg en verdi i **Sporingsdimensjonsgruppe**-feltet. Sporingsdimensjonsgruppen bestemmer hvilke sporingsdimensjoner du må angi for hver transaksjon for produktet og hvordan den blir håndtert på lageret.  
 4. Velg **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

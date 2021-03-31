@@ -16,12 +16,12 @@ ms.search.industry: Service industries
 ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: de6faf9442834d5fcf75e5d6219387648edb6840
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: cb17cffea70aefe117bdcdc727f807137bef1ee7
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5018784"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5222879"
 ---
 # <a name="submit-and-approve-project-budget-revision"></a>Sende og godkjenne prosjektbudsjettendring
 
@@ -45,3 +45,6 @@ Denne oppgaven bruker SSI-datasettet.
 12. Skriv inn en verdi i feltet Kommentar.
 13. Klikk på Send.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

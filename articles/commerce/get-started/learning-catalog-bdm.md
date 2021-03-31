@@ -13,12 +13,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 65b7286ff7cfc9eb0d3f5f76ac94470bd964ab3d
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d81cee96c8225d8ff923762255ea6b476ab09966
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4972868"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5220443"
 ---
 # <a name="learning-catalog-for-business-and-technical-decision-makers-considering-dynamics-365-commerce"></a>Opplæringskatalog for forretningsmessige beslutningstakere og tekniske beslutningstakere vedrørende Dynamics 365 Commerce
 
@@ -35,3 +35,6 @@ Hvis du vil ha opplæring om funksjoner som deles med andre Finance and Operatio
 | [Finn ut mer om forretningsverdien til Microsoft Dynamics 365 og Power Platform](https://docs.microsoft.com/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Denne opplæringen tar deg med på en reise som begynner med å vise deg hvordan digitale transformasjoner og funksjonaliteten i forretningsprogrammer kan forvandle virksomheten din. Vi vil beskrive hvordan Dynamics 365 Power Platform hjelper deg med å ta veloverveide avgjørelser basert på organisasjonens behov og mål, gjennom fire byggeblokker for digitale transformasjoner – moderne, enhetlig, intelligent og tilpassbar.                  | Gratis, selvbetjent elektronisk læringsforløp                                          | 6.5 timer   |
 | [Komme i gang med Dynamics 365 Commerce](https://docs.microsoft.com/learn/paths/get-started-dynamics-365-commerce/)                                                       | Dynamics 365 Commerce, bygget med de anerkjente Dynamics 365 Retail-funksjonene, formidler en omfattende omnikanalløsning som forener opplevelser i Back Office, butikk, telefonsenter samt digitale opplevelser. Dynamics 365 Commerce gir deg mulighet til å skape merkelojalitet ved hjelp av tilpasset kundeengasjement, øke inntekter med økt ansattproduktivitet, optimalisere driften for å redusere kostnadene og øke effektiviteten i forsyningskjeden for å levere bedre forretningsresultater. | Gratis, selvbetjent elektronisk læringsforløp                                          | 2 timer   |
 | [Komme i gang med Dynamics 365 Fraud Protection](https://docs.microsoft.com/learn/modules/get-started-fraud-protection/)| Dynamics 365 Fraud Protection er en skybasert løsning som er utviklet for e-handel, fysiske butikker og omnikanal-forhandlere, for å bidra til å beskytte inntektene og ryktet ved å tilby verktøy og muligheter til å redusere svindel og misbruk, redusere driftsutgifter og øke akseptansrater, samtidig som brukerkontoer beskyttes mot svindeleksponering. | Gratis, selvbetjent elektronisk læringsforløp | 35 minutter |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

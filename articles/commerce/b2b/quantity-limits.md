@@ -16,12 +16,12 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: e70648da2cc1c526625b6e34fd0867d40abb5a85
-ms.sourcegitcommit: f9df202aefef761be52c0360b0e22da88773914c
+ms.openlocfilehash: 1208b968e476ccbc7a726facf1db896c7bf3c36f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "5035947"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5211183"
 ---
 # <a name="set-product-quantity-limits-for-b2b-e-commerce-sites"></a>Angi produktantallsgrenser for B2B-e-handelsområder
 
@@ -81,6 +81,9 @@ Følg disse trinnene for å slå på funksjonen for antallsbegrensninger for B2B
 
 [Opprette organisasonsmodellhierarkier for B2B-organisasjoner](org-model.md)
 
-[Administrere forretningspartnerbrukere på B2B-e-handelsområder](manage-b2b-users.md)
+[Administrere forretningspartnerbrukere på e-handelsområder for B2B](manage-b2b-users.md)
 
 [Konfigurere kundekontobetalingsmetode for B2B-e-handelsområder](payment-method.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
