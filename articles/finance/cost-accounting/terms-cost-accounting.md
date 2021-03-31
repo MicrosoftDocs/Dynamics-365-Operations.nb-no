@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 2bd821fdfe62475849e6d3b80d3a2c377bbabf4a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 6090cb50b603bbfe3947f579e072627e08730a10
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4990623"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5208637"
 ---
 # <a name="cost-accounting-terminology"></a>Terminologi for kostnadsregnskap
 
@@ -204,3 +204,6 @@ Oppgaver er visninger for ledere som har ansvar for å kontrollere kostnader. Ut
 Versjoner brukes til å simulere, vise og sammenligne ulike resultater. Som standard vises alle faktiske kostnader i en grunnleggende versjon som kalles *Faktiske*. Du kan arbeide med så mange versjoner du har behov, for budsjetter og beregninger. Du kan for eksempel importere budsjettdata til en opprinnelig versjon og deretter endre budsjettet i en revidert versjon. For beregninger kan du opprette flere versjoner. I disse ulike versjonene kan du deretter opprette beregninger ved hjelp av andre beregningsregler som skal brukes for kostnadsfordeling.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

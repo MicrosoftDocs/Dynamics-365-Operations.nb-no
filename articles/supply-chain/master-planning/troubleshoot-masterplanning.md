@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-11-04
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 44291f5bcd9ffedf717150f8efe32e9eeda02f2e
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: db336946873fa1b5cc3f669823541af8cab4115b
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5011354"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5216111"
 ---
 # <a name="troubleshoot-master-planning"></a>Feilsøke hovedplanlegging
 
@@ -88,3 +88,6 @@ Dette er et kjent problem med den innebygde hovedplanleggingsmotoren. Det skylde
 
 > [!NOTE]
 > Dette vil begrense perioden for nedbrytinger som utføres for denne hovedplanen, til én enkelt dag.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

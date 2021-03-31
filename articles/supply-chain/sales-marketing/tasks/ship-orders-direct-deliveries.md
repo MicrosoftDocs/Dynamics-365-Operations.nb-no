@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0a8f214a56c6a5013cab8233d5b2e0126deb9220
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 496cbe562234efa981d97b0893a47340381fbdfd
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966111"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5205911"
 ---
 # <a name="ship-orders-as-direct-deliveries"></a>Sende ordrer som direkte leveringer
 
@@ -81,3 +81,6 @@ Dette emnet viser hvordan du oppretter en direktelevering for en salgsordre. Du 
     - Direktelevering-siden fungerer som en arbeidsbenk som gir innkjøpsagenten en oversikt over alle salgsordrelinjene som skal leveres direkte, og den gjør det mulig å opprette de respektive bestillingene. I tillegg kan de vise og åpne direkteleveringsordrer og de bekreftede bestillingene i fanene Bekreftelse og Levering.  
     - Etter at du har opprettet en direkte leveringsordre, flyttes den automatisk til fanen Bekreftelse. Du kan velge å bekrefte bestillingen direkte fra denne siden. Når bestillingen er bekreftet, flyttes den automatisk til fanen Levering, som kan du registrere mottaket fra.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

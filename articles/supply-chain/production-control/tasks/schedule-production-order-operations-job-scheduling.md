@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bbb4da093cd8a0fc6cd85e1f93dfb91f0fb8a382
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 32ace204f1ec79cc8f9ce10ebfdc3606879e40d4
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4981137"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5215847"
 ---
 # <a name="schedule-a-production-order-with-operations-and-job-scheduling"></a>Planlegge en produksjonsordre med operasjoner og finplanlegging
 
@@ -55,3 +55,6 @@ Dette emnet fokuserer på å planlegge en produksjonsordre med grovplanlegging o
 6. Velg **Produksjonsordre** i handlingsruten.
 7. Velg **Alle jobber**. Vær oppmerksom på at basert på den aktive ruten, opprettes fem jobber med finplanlegging.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: c15dcd0adfcf9b9022a919bd516dcf5117ea5041
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: e1f8c8d74a5da1dceb54bcc7c16aebdfe2bf4fd1
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4987485"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5214944"
 ---
 # <a name="engineering-versions-and-engineering-product-categories"></a>Tekniske versjoner og kategorier for teknisk produkt
 
@@ -161,3 +161,6 @@ Tekniske stykklister og ruter opprettes fra den tekniske versjonen der de gjelde
 For produkter der du bruker *versjonsproduktdimensjonen* (sammen med logistikkinnvirkning på transaksjonene), blir også versjonen lagt til i stykklistene og rutene. Denne virkemåten kan skille mellom stykklister og ruter i påfølgende versjoner, uavhengig av innstillingen **Håndhev gyldighet**.
 
 For produkter der du ikke bruker *versjonsproduktdimensjonen* (uten logistikkinnvirkning på transaksjonene), blir ikke versjonen lagt til i stykklistene eller rutene. Det vil derfor ikke være noen forskjell mellom stykklister og ruter i påfølgende versjoner. I dette tilfellet anbefaler vi på det sterkeste at du setter alternativet **Håndhev gyldighet** til *Ja*. På denne måten bidrar du til å forhindre at tekniske versjoner overlapper, og du kan også aktivere stykklisten og ruten til en nyere versjon uten først å deaktivere stykklisten og ruten for den tidligere versjonen. Hvis du setter alternativet **Håndhev gyldighet** til *Ja* i dette tilfellet, må du deaktivere stykklistene og rutene i eldre versjoner manuelt før du kan aktivere den siste versjonen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

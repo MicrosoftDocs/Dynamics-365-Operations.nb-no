@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-09
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 5a7fcda435fd957edbbe09d796685c0c742dc6a8
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d2d0bebbdde96e6751f749dfbc0d4cdedd4036a0
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4975822"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5212331"
 ---
 # <a name="configure-ledgers"></a>Konfigurere finans
 
@@ -81,3 +81,6 @@ Hvis du bruker to valutaer, eller hvis du bruker én valuta, men transaksjoner p
 Realisert fortjeneste og tap er fortjeneste og tap som kommer fra fullførte transaksjoner. De registreres i resultatregnskapet. Urealisert fortjeneste og tap er fortjeneste og tap som er materialisert, men transaksjonen er ikke fullført. Du har med andre ord for eksempel postert en faktura, men fakturaen er ikke utlignet og betalt ennå. Urealisert fortjeneste og tap registreres i balansen.
 
 Hvis du vil ha mer informasjon om hvordan du bruker to valutaer, kan du se [Dobbel valuta](dual-currency.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

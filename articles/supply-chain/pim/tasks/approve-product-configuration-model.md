@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7b548e2369f30e998ecde45408ff45893b88f9a8
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 191aff59b16fb8c7caf6b5c7f822f1a0a077fc9f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4987110"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5212084"
 ---
 # <a name="approve-a-product-configuration-model"></a>Godkjenne en produktkonfigurasjonsmodell
 
@@ -48,3 +48,6 @@ Kjører du denne prosedyren krever det at minst én eksisterende produktmodellko
     * Aktiver produktmodellversjonen. Det er bare mulig å ha ett produkt aktivt for en produktmodell om gangen.  
 13. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

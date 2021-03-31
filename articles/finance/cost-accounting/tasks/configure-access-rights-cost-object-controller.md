@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 88d6208e867bd322ddfc4e599856b1905fa8e19b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: b62e5765964a13357e0e7b663be1c7fd2cc19037
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969384"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5208805"
 ---
 # <a name="configure-access-rights-for-a-cost-object-controller"></a>Konfigurere tilgangsrettigheter for en kontroller for kostnadsobjekt
 
@@ -68,3 +68,6 @@ Bruk denne prosedyren til å konfigurere tilgangsrettigheter for en kontroller f
     * Hvis du velger Ja, kan en bruker som er tilordnet en av følgende fire roller se rapportene i kostnaden control arbeidsområdet: regnskapsansvarlig, regnskapsfører, regnskapsfører clerk og kostnader objekt kontrollert. Hvis du velger Nei, bare brukere som er tilordnet en av følgende roller kan se rapportene: kostnadsregnskap overordnede, regnskapsfører og regnskapsfører clerk.    
 9. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

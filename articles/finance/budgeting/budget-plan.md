@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ec62af4ec62de0d63b590c79db6a8164d59e72c4
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 05de2748b0cf7a2b09618aee5c41c8c797f2b3d3
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4971284"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5210415"
 ---
 # <a name="budget-planning"></a>Budsjettplanlegging
 
@@ -105,7 +105,7 @@ Budsjettplanlegging bruker spesielle sikkerhetspolicyer for å konfigurere tilga
 
 2.5. Velg Gi tilgang til bestemte organisasjoner. Velg organisasjonshierarkiet som ble opprettet i det første trinnet. Velg Finans-noden, og klikk Gi tilgang til underordnede. 
 
-**_Viktig!_* _ _Kontroller at du er i konteksten med den juridiske enheten DEMF når du utfører denne oppgaven, siden organisasjonssikkerhet brukes per juridiske enhet* 
+***Viktig!** _ _Sørg for at du er i konteksten med den juridiske enheten DEMF når du utfører denne oppgaven, siden organisasjonssikkerhet brukes per juridiske enhet* 
 
 ### <a name="task-3-create-scenarios"></a>Oppgave 3: opprette scenarier
 3.1. Gå til Budsjettering&gt;Oppsett &gt; Budsjettplanlegging &gt; Budsjettplanleggingskonfigurasjon. Legg merke til scenariene vi skal bruke videre i denne laben, på Scenarier-siden: Faktisk, forrige år og Budsjettert. 
@@ -246,3 +246,6 @@ C. Gå til Budsjettering &gt; Oppsett &gt; Budsjettplanlegging &gt; Budsjettplan
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: ab36d9fde0cc6e864f21f9ebd09834f5098c1913
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 102f48d1273ac91d5cb42eca11d2dec337c30528
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021410"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5214968"
 ---
 # <a name="set-up-preferred-maintenance-workers"></a>Definer foretrukne vedlikeholdspersoner
 
@@ -67,3 +67,6 @@ Du kan også definere *ansvarlige* vedlikeholdspersoner som kan velges når en v
 
 Under planleggingen av arbeidsordrer beregnes ulike poeng for å bestemme hvilke arbeidere som skal fullføre jobbene for en arbeidsordre (disse resultatene defineres i **Aktivabehandlingsparametere** > **Planlegging av arbeidsordre**-koblingen). Hvis to eller flere foretrukne vedlikeholdspersoner eller ansvarlige vedlikeholdspersoner får samme resultat under planleggingen av arbeidsordre, blir én arbeider tilfeldig valgt. Ellers er det alltid arbeideren med den høyeste poengsummen som tilordnes for å fullføre en arbeidsordre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

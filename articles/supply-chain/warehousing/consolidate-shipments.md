@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 3f56e254eaec18cd9a7dec641a7a189967a7eda6
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 51f6745920241c7ffeccfbb1cfd2f79b90307e48
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963366"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5214208"
 ---
 # <a name="consolidate-shipments-by-using-shipment-consolidation-policies"></a>Konsolidere forsendelser ved hjelp av policyene for forsendelseskonsolidering
 
@@ -38,3 +38,6 @@ Følgende scenarioer veileder deg gjennom prosessen for forsendelseskonsoliderin
 
 - [Policyer for forsendelseskonsolidering](about-shipment-consolidation-policies.md)
 - [Konfigurere policyer for forsendelseskonsolidering](configure-shipment-consolidation-policies.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

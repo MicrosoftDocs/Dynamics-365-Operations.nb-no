@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: a8ba65ecc27bb152b1b368e870b15544d9599968
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 0690bb1933c0d641ca54e4c519d127b37dd33f6d
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4978542"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5212259"
 ---
 # <a name="import-format-for-consolidation"></a>Importformat for konsolidering
 
@@ -42,3 +42,6 @@ Tabellen nedenfor viser et importformat du bør bruke når du gjør en konsolide
 | 6            | BusinessUnit, 1 Avdeling, 2 | Finansdimensjonsattributtene som er definert i segmentrekkefølgen.<p>Du kan bruke **Eksport**-sidenn til å kontrollere hvordan attributtene er definert.</p> |
 | 7            | 002,1,658 | <ul><li>Finansdimensjonsverdien</li><li>Finansdimensjonen, som indeksen som angis i RecordDimensions</li><li>En tvetydig, unik post-ID som er knyttet til den unike post-IDen fra RecordTrans eller RecordTrans2</li></ul> |
 | 8            | 002,1,1 | <ul><li>Dimensjonsverdier som er knyttet til transaksjonen fra RecordBudget</li><li>Finansdimensjonen, som indeksen som angis i RecordDimensions</li><li>En tvetydig linjepost-ID som justeres etter rekkefølgen til transaksjonslinjene i filen</li></ul> |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

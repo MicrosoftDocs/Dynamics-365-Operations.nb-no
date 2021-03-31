@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: e420632c248b5b43d4983c5eb483cac580e67f20
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 25eb8dd6965f659f0febe53a6340cb1381c5664f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4975564"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5204912"
 ---
 # <a name="sales-tax-calculation-on-general-journal-lines"></a>Mva-beregning på generelle journallinjer
 [!include [banner](../includes/banner.md)]
@@ -156,3 +156,6 @@ Tabellen nedenfor viser den generelle regelen.
 | Innkommende merverdiavgift | Negativ              | Konto for innkommende merverdiavgift | Negativ (kredit)  |
 | Utgående merverdiavgift    | Positiv              | Konto for utgående merverdiavgift    | Negativ (kredit)  |
 | Utgående merverdiavgift    | Negativ              | Konto for utgående merverdiavgift    | Positive (debet)  |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

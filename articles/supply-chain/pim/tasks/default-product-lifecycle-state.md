@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 16f604d5e06859b15c6f610e7a5c822ef2089ea3
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: b65f34c1d7a0fd22201df5b48f8d42d452d6b8ef
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966911"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5216087"
 ---
 # <a name="create-a-default-product-lifecycle-state"></a>Opprette en standard livssyklustilstand for produkt
 
@@ -61,3 +61,6 @@ Denne fremgangsmåten beskriver hvordan du oppretter en standard produktlivssykl
 > [!NOTE]
 > Anta at du har definert en aktiv tilstand og at du nå kan velge den aktive tilstanden slik at produktet kan brukes i Hovedplanlegging og stykklistenivåberegningen. Åpenbart så gir dette bare mening hvis alle produktdetaljene som kreves for konsekvent planlegging, er angitt.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

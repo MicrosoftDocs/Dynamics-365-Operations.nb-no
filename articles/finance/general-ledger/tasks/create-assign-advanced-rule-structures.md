@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e6a3f7d174c91e357dce8a19ab50a5cd42a85561
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 9a7b9d0c20a49996b4c8d45b030d9e587818de3d
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4968610"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5216551"
 ---
 # <a name="create-and-assign-advanced-rule-structures"></a>Opprette og tilordne avanserte regelstrukturer
 
@@ -58,3 +58,6 @@ Dette emnet forklarer hvordan du oppretter og tilordner en avansert regelstruktu
 17. Lukk siden.
 18. Velg **Aktiver**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

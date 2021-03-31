@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2020-01-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 7ee577651694f0553447d6e9d0851402a586f363
-ms.sourcegitcommit: 630a0b3f800f36ced49b79156dd52132904fef75
+ms.openlocfilehash: 00c472e90f4926c52ffe9b19661e68cbfa6bd493
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "5060775"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5204839"
 ---
 # <a name="set-up-global-withholding-tax"></a>Definere global kildeskatt
 
@@ -47,3 +47,6 @@ Dette emnet viser en liste over trinnene for å definere global kildeskatt for s
 7. Definer kildeskattgrupper på siden for **Kildeskattegrupper for vare** for en vare eller tjeneste.
 
 8. Definer **Minste fakturabeløp** på siden **Parametere for økonomimodul > Kildeskatt**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

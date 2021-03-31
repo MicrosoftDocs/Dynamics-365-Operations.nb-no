@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 553e350ba5ffa12672a839baec5698d198bd8457
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 4c28cede05d10a9929c83e87c53fddd53e99db1e
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5000215"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5209593"
 ---
 # <a name="reserve-inventory-quantities"></a>Reservere lagerantall
 
@@ -82,3 +82,6 @@ Det finnes to alternativer relatert til reservasjoner for siden **Parametere for
 ### <a name="inventory-reservation-policies-on-the-production-parameters-page"></a>Policyer for lagerreservasjon på siden Produksjonsparametere
 
 Verdien for **Reservering**-feltet i fanen **Generelt** på siden **Produksjonsparametere** bestemmer standardpunktet i produksjonsprosessen der lageret skal reserveres. Lageret kan for eksempel reserveres når arbeid planlegges eller når arbeid startes.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

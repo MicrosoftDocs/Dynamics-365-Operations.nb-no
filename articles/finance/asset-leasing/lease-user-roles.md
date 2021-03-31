@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: df23e219f5bd859b0072785dfd5f7a0ec63f540e
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 09d80e9629b60144665441989d9d63d7f6be3c60
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4995399"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5207285"
 ---
 # <a name="assign-lease-user-roles"></a>Tilordne leiebrukerroller
 
@@ -43,3 +43,6 @@ Følg disse trinnene for å tilordne brukere til rollene som brukes i aktivaleie
 1. Gå til **Systemadministrasjon \> Sikkerhet \> Tilordne brukere til roller**.
 2. Velg rollen **Vedlikehold leieavtale**, **Leieassistent** eller **Vis leie**, og velg deretter **Tilordne/utelate brukere manuelt**.
 3. Velg brukeren du vil tilordne til rollen, og velg deretter **Tilordne til rolle**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

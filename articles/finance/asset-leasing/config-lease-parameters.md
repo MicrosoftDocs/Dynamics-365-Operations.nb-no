@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: ff0aa5fd0b78814dfa5bb00d6d5ef2984c566d14
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 4bb8372c5e4a1d7183b5d793b142fed92e833d5a
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4971409"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5210439"
 ---
 # <a name="configure-lease-parameters"></a>Konfigurere parametere for leieavtale
 
@@ -45,3 +45,6 @@ Flere konfigurasjonsinnstillinger påvirker hvordan Aktivaleie fungerer. Disse i
 
     > [!NOTE]
     > Vi anbefaler at du lar dette alternativet være satt til **Nei**. Innstillingen for dette alternativet brukes som validering og kontroll til å forhindre at en lukket tablåversjon blir avskrevet ved et uhell. Når du har alternativet satt til **Nei**, bidrar du til å holde netto bokført verdi og fremtidige avskrivningsberegninger nøyaktige.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

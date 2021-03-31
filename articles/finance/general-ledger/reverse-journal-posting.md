@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 697ca7557b26026783626e843ee1e5d1fd27db9a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 19f7ea540035a3bc9eba445c508cb6f29e4bd20f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4990270"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5205008"
 ---
 # <a name="reverse-journal-posting"></a>Tilbakeføre journalpostering
 
@@ -69,3 +69,6 @@ Hvis antallet bilagslinjer er 100 linjer eller færre, kjøres tilbakeføringspr
 
 Transaksjoner kan bare tilbakeføres hvis de oppfyller forretningsreglene for tilbakeføring. Leverandørbetalinger kan ikke reverseres ved hjelp av funksjonen som er beskrevet i dette emnet. Leverandørbetalinger må tilbakeføres ved å følge fremgangsmåten i [Tilbakeføre en leverandørbetaling](https://docs.microsoft.com/dynamics365/finance/accounts-payable/reverse-vendor-payment).
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

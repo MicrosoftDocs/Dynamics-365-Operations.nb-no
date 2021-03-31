@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 86ffdff4cdb256fdae39de6228555da5fb88c707
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: a8d29f4bd5840ff70fd918a05d68aa043216e27f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017040"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5211916"
 ---
 # <a name="create-purchasing-policies"></a>Opprette innkjøpspolicyer
 
@@ -56,3 +56,6 @@ Dette emnet viser hvordan du oppretter innkjøpspolicyer som er tilpasset forret
 4. Velg **Lukk**.
 - Nå kan du definere andre policyregler for innkjøpspolicyen. Legg merke til at en policyregeltype ikke kan ha overlappende regler som er aktive samtidig i én enkelt innkjøpspolicy.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

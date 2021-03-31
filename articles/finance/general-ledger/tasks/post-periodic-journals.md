@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 99d157e82f8451e2c8f0bc7946ba30ca48e99add
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 31c801658004f771df6f1ddf70194de131314a64
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4968510"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5212161"
 ---
 # <a name="post-periodic-journals"></a>Postere periodiske journaler
 
@@ -57,3 +57,6 @@ Periodiske journaler kalles noen ganger gjentakelsesjournaler fordi beløpet, te
 27. Angi eller velg en verdi i feltet **Nummer på periodisk journal**.
 28. Klikk koblingen i den valgte raden i listen.
 29. Klikk **OK**. Den periodiske journalen kan nå gjennomgås, godkjennes eller posteres avhengig av behov og oppsett.   
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

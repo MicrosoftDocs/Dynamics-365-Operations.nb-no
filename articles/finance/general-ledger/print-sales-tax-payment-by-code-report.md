@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anasyash
 ms.search.validFrom: 2020-04-08
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: dd490663e66d1eda0eb0ea052e5b54fb867f81df
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 6f66db74867bdd3e9b4364e247058e0534191f2e
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4990307"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5205066"
 ---
 # <a name="print-the-sales-tax-payment-by-code-report"></a>Skriv ut Mva-betaling etter kode-rapporten 
 
@@ -47,3 +47,6 @@ I arbeidsområdet **Funksjonsbehandling** aktiverer du følgende funksjon: **Gen
 Illustrasjonen nedenfor viser et eksempel på rapporten som genereres. Rapporten viser at rapporteringskoden **101** har **EUR**-valutaen hvis feltet **Mva-valuta** er satt til **EUR** for mva-koden som rapporteringskoden er tilordnet til.
 
 ![Eksempel på Mva-betaling etter kode-rapporten](media/Sales-tax-payment-by-code-2.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

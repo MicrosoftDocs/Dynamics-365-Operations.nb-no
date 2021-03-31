@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c08822dc3960ba5fc85399ca236a31aaf2c38f1f
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 027e6b678826bd1fefe51905d311332229899a24
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5010953"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5204406"
 ---
 # <a name="report-progress-on-a-mobile-job-device"></a>Rapportere fremdrift på en mobil jobbenhet
 
@@ -64,3 +64,6 @@ Hvis du vil kjøre denne prosedyren, må du ha rollen Systemansvarlig eller Mask
 29. Klikk på OK.
 30. Velg en årsak til hvorfor du stempler ut tidlig.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

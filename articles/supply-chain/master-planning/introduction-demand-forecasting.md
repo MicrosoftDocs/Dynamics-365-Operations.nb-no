@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 27aa2b7a3d595fadfc1af969e45975e95322812f
-ms.sourcegitcommit: 3895279cc5c1cf4826143d2ccb95ccceccb0a3c2
+ms.openlocfilehash: 5b285b973f0fee3b253f63f49e3f5b4893d9dd86
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "5081373"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5207045"
 ---
 # <a name="demand-forecasting-overview"></a>Oversikt over behovsprognose
 
@@ -56,7 +56,7 @@ Tre viktige temaer er implementert i behovsprognose:
   - Du kan laste ned behovsprognoseeksperimenter, endre dem slik at de overholder dine forretningskrav, publisere dem som en webtjeneste på Azure og bruke dem til å generere behovsprognoser. Eksperimentene er tilgjengelige for nedlasting hvis du har kjøpt et abonnement for Supply Chain Management for en produksjonsplanlegger som bruker på virksomhetsnivå.
   - Du kan laste ned de tilgjengelige behovsprediksjonseksperimentene fra [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/). Mens behovsprognoseeksperimenter automatisk er integrert med Supply Chain Management, må kunder og partnere håndtere integreringen av eksperimenter de laster ned fra [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/). Derfor er ikke eksperimenter fra [Cortana Analytics Gallery](https://gallery.cortanaanalytics.com/) like enkle å bruke som behovsprognoseeksperimenter for Finance and Operations. Du må endre koden for eksperimentene slik at de bruker Finance and Operations Application Programming Interface (API).
   - Du kan opprette dine egne eksperimenter i Microsoft Azure Machine Learning Studio (klassisk), publisere dem som tjenester på Azure og bruke dem til å generere behovsprognoser.
-  - Hvis du ikke trenger høy ytelse, eller hvis du ikke krever at en stor mengde data skal behandles, kan du bruke gratisnivået for Machine Learning. Vi anbefaler at du alltid starter fra dette nivået, spesielt ved implementerings- og testfaser. Hvis du trenger høyere ytelse og ekstra lagringsplass, kan du bruke standardnivået for Machine Learning. Dette nivået krever et abonnement på Azure og omfatter ekstra kostnader. For opplysninger om priser for Machine Learning kan du se [Machine Learning Studio-priser](https://aka.ms/machine-learning-price-info).
+  - Hvis du ikke trenger høy ytelse, eller hvis du ikke krever at en stor mengde data skal behandles, kan du bruke gratisnivået for Machine Learning. Det anbefales at du alltid starter fra dette nivået, spesielt ved implementerings- og testfaser. Hvis du trenger høyere ytelse og ekstra lagringsplass, kan du bruke standardnivået for Machine Learning. Dette nivået krever et abonnement på Azure og omfatter ekstra kostnader. For opplysninger om priser for Machine Learning kan du se [Machine Learning Studio-priser](https://aka.ms/machine-learning-price-info).
 - **Prognosereduksjon på et hvilket som helst frakoblingspunkt** – Behovsprognose bygger på denne funksjonaliteten, som lar deg prognostisere både avhengig og uavhengig behov på et hvilket som helst frakoblingspunkt.
 
 ## <a name="basic-flow-in-demand-forecasting"></a>Grunnleggende flyt i behovsprognose
@@ -102,3 +102,6 @@ Merk at måleenhet for behovsprognose ikke trenger å ha noen bestemt betydning.
 [Fjerne utestående fra historiske transaksjonsdata ved beregning av en behovsprognose](remove-historical-outliers-calculating-demand-forecast.md)
 
 [Utvide funksjonaliteten for behovsprognose](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

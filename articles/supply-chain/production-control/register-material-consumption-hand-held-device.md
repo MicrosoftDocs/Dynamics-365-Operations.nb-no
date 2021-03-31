@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 40779d1f8bc14072928767ae1c83fdda47476871
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 4a4afc4b0c8d9a7109201326169311e85798d532
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4998884"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5209400"
 ---
 # <a name="register-material-consumption-using-a-mobile-device"></a>Registrere materialforbruk med en mobil enhet
 
@@ -67,7 +67,7 @@ Dette tar materialet fra bulklokasjonen til produksjonsinnleveringsstedet PIL-01
 
 Etter at produksjonsordren er startet, kan du registrere materialforbruk i arbeidsflyten for den håndholdte enheten. La oss begynne med å registrere forbruk på 25 kilo av parti B1.
 
-6.  Velg menyelementet **Registrer materialforbruk** på menyen for den håndholdte enheten, og angi følgende detaljer: 
+6.  Velg menyelementet **Registrert materielt** **forbruk** på menyen for den håndholdte enheten, og angi følgende detaljer: 
 
 -    Produksjonsordrenummeret. 
 -    Lokasjonen der materialet skal forbrukes, i dette tilfellet PIL-01. 
@@ -91,3 +91,6 @@ Når du er ferdig med registreringen, velger du **Ferdig** for å postere journa
 -   Materiale kan overforbrukes. Hvis for eksempel materialet er beregnet til bruk med et antall på 100 kilo, kan det bli overforbrukt med et antall på for eksempel 105 kilo.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

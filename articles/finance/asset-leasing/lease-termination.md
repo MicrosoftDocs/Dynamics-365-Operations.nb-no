@@ -17,16 +17,17 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2021-1-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 144559b14878a44afd8a77648bb5ce1d3ba17832
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: ff3795f26ab10ac19cc3a0dd00dca65095118f45
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5131300"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5207309"
 ---
 # <a name="propose-a-lease-for-termination"></a>Foreslå oppsigelse av leie
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Hvis en leieavtale avsluttes tidlig, kan aktivaleie registrere en oppsigelsesjournaloppføring for å skrive av leieforpliktelsen, aktiva for bruksrettighet og akkumulert avskrivning, og bokføre gevinst eller tap. Prosessen med tidlig avslutning avslutter en leieavtale og de tilhørende leietablåene. Den stopper ikke enkeltstående leietablåer. Dette emnet beskriver funksjonaliteten som lar deg foreslå en leieavtale for oppsigelse og behandle journaloppføringen for oppsigelse av leie.
 
@@ -158,3 +159,6 @@ Tabellene nedenfor viser verdiene som er angitt i fanene **Generelt** og **Linje
 11. Hvis du vil se nettoeffekten av oppsigelsen, der bruksrettseiendelen og leieforpliktelsen er 0 (null), åpner du tabellene Gjeld- og Aktiva-transaksjoner.
 
 Leiestatusen skal nå være **Avsluttet**. Ingen flere journaloppføringer blir postert mot denne leieavtalen med mindre oppsigelsen tilbakeføres.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: bb887bbff5eb5b92f588d3fa966ea204633575db
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: cf29e3c05f9fdcc685017a4c640ef32c40989c73
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115638"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5208563"
 ---
 # <a name="configuration-for-finance-insights-preview"></a>Konfigurasjon for Finance Insights (forhåndsversjon)
 
@@ -383,7 +383,7 @@ Hvis du ikke finner noen av de ovennevnte programmene, kan du prøve følgende t
         3. Etter at du har valgt delegerte tillatelser, velger du **user\_impersonation**.
         4. Velg **Legg til tillatelser**.
 
-    5. På menyen for appen velger du **Sertifikater og hemmeligheter**, og deretter følger du denne fremgangsmåten for å opprette Key Vault-hemmeligheter:
+    5. På menyen for appen velger du **Sertifikater \& hemmeligheter**, og deretter følger du denne fremgangsmåten for å opprette Key Vault-hemmeligheter:
 
         1. Velg **Ny klienthemmelighet**.
         2. Angi et navn i **Nøkkelbeskrivelse**-feltet.
@@ -1001,3 +1001,6 @@ Send en e-postmelding til [Innsikt i kundebetaling (forhåndsversjon)](mailto:fi
 ## <a name="privacy-notice"></a>Personvernerklæring
 
 Forhåndsversjoner (1) kan ha redusert personvern og færre sikkerhetstiltak enn Dynamics 365 Finance and Operations-tjenesten, (2) er ikke inkludert i serviceavtalen (SLA) for denne tjenesten, (3) må ikke brukes til å behandle personlige data eller andre data som er underlagt juridiske eller forskriftsmessige krav, og (4) har begrenset støtte.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

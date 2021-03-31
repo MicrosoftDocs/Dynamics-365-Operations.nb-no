@@ -16,12 +16,12 @@ ms.search.region: global
 ms.author: aolson
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d1b73b104ed8a8a015cb97dcf3055a648cfb083d
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 5955b796cbc7917eb5500b96c879d1b0819d2edc
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4994746"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5204864"
 ---
 # <a name="set-up-default-descriptions-for-automatic-posting"></a>Definere standardbeskrivelser for automatisk postering
 
@@ -86,3 +86,6 @@ Når du har fullført trinnene i [Definere standardbeskrivelser](#set-up-default
 2. Velg databasetabellen du vil legge til parameterdata i beskrivelsen fra, i **Referansetabell**-feltet.
 3. Velg feltet du vil legge til parameterdata i beskrivelsen fra, i **Referansefelt**-feltet.
 4. Gjenta trinn 1 til og med 3 hvis du vil legge til flere parametere.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

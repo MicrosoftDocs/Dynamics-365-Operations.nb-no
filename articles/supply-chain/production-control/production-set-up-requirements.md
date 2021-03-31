@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 74dce437421290b3dd039f62a2105d02e085062b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 05a4c97697f13a41b65fba0df8c76bf884fc51a9
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4998915"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5209377"
 ---
 # <a name="production-setup-requirements"></a>Krav til produksjonsoppsett
 
@@ -48,7 +48,7 @@ Før du tar i bruk Produksjonskontroll må du åpne Organisasjonsstyring og oppr
 
 1.  **Driftstidsmaler** – Konfigurer driftstidsmaler for å definere hvilke tider som er tilgjengelige for produksjonsplanlegging.
 2.  **Kalendere** – Konfigurer driftstidskalendere for å definere hvilke dager i året som er tilgjengelige for produksjonsplanlegging.
-3.  **Ressursgrupper** – Konfigurer ressursgrupper for å gruppere operasjonsressurser slik at du kan få en oversikt over all ledig kapasitet når du kjører planlegging. Du trenger ikke definere ressursgrupper før du setter opp operasjonsressurser. Vi anbefaler at du forstår hvordan du vil gruppere ressurser når du konfigurerer Produksjonskontroll.
+3.  **Ressursgrupper** – Konfigurer ressursgrupper for å gruppere operasjonsressurser slik at du kan få en oversikt over all ledig kapasitet når du kjører planlegging. Du trenger ikke definere ressursgrupper før du setter opp operasjonsressurser. Det anbefales at du forstår hvordan du vil gruppere ressurser når du konfigurerer Produksjonskontroll.
 4.  **Ressurser** – Konfigurer operasjonsressurser for å definere ressursene som brukes for å fullføre produksjonsprosessen og planlegge kapasiteten.
 
 ## <a name="required-production-parameters-setup"></a>Påkrevd konfigurasjon av produksjonsparametere
@@ -80,3 +80,6 @@ Hvis du arbeider med ruter, må du definere operasjoner for hver produksjonsrute
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

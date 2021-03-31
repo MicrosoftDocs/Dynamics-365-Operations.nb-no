@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1907e62e30dbd3a51f5b7d2e5a57229143c87e99
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 81de31ee75b4be38256505bc7b875dc15473c75a
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4978670"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5212235"
 ---
 # <a name="currency-revaluation-in-a-consolidation-company"></a>Revaluering av valuta i et konsolideringsfirma
 
@@ -88,3 +88,6 @@ Du vil se tilleggstransaksjoner for rapporteringsvalutabeløpene.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

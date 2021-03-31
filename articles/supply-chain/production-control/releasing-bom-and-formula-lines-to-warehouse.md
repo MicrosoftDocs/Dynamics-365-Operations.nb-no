@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: ba042e708d63766941cc3ebfc375872e384f0f0b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 62808c2e488e2c38b7dedfc258d9f2bf3e78c23c
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5011052"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5209305"
 ---
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Frigi stykkliste- og formellinjer til lageret
 
@@ -97,3 +97,6 @@ Du kan frigi råvarer for en delvis mengde ferdigvarer eller i en bestemt enhet.
     Enhetene som er tilgjengelige, er definert i enhetssekvensgruppe-ID-en for den ferdige varen.
 
     En ferdigvare har for eksempel følgende enhetsomregning mellom pund (lbs.) og pall (PL): 1 PL = 100 lbs. Hvis du vil opprette en produksjonsordre for 10 000 lbs. med ferdigvare, kan du frigi råvarer for antallet paller som du planlegger å produsere. Velg **PL** som enhet, og velg deretter et tilsvarende tall i **Antall**-feltet.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

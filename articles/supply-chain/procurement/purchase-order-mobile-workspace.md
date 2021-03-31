@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7f952f3af36620a20a5c991fd9e1ccfd56119f47
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 37c0fc273091af260089229ad9ee66b52dce3831
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5022312"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5215991"
 ---
 # <a name="purchase-order-approval-mobile-workspace"></a>Kjøpsordregodkjenning mobilt arbeidsområde
 
@@ -112,3 +112,6 @@ Når du har vist bestillingen som er tilordnet til deg og lest instruksjonene fo
 5. Velg riktig handling.
 6. På **Fullfør oppgave**-siden skriver du inn en kommentar. Legg merke til at hvis du velger **Deleger**-handlingen, må du velge en bruker delegere oppgaven til.
 7. Velg **Ferdig**. Når du har oppdatert arbeidsområdet, fjernes bestillingen fra listen. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

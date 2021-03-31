@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 847ae83102345a8005a8b2a630805d22ccfd736d
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: f45def44a285dbc937a2a602aa873f8a04486902
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5019234"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5210295"
 ---
 # <a name="budget-planning-overview"></a>Oversikt over budsjettplanlegging
 
@@ -204,3 +204,6 @@ På **Handlinger**-menyen kan du også opprette en ny prosess ved å kopiere en 
 En annen nyttig kommando på **Handlinger**-menyen er **Vis budsjettprosesstatus**. Denne kommandoen viser grafisk budsjettplanene i en prosess, sammen med relevante data, for eksempel planens arbeidsflytstatus, sammendrag etter beløp og enhet, og ettklikksnavigering for budsjettplanene.
 
 [![Status for budsjettplanleggingsprosess](./media/budgetplanningprocessstatus-300x171.png)](./media/budgetplanningprocessstatus.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

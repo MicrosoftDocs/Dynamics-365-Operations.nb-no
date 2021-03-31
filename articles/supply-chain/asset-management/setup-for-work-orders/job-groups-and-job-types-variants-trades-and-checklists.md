@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a335d642457fdd84ec42e285425fdc6212889cc0
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: c283a35f540105b4036305fb9118e090ad1528ba
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021290"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5206031"
 ---
 # <a name="maintenance-job-type-categories-and-maintenance-job-types-maintenance-job-type-variants-maintenance-job-trades-and-maintenance-checklists"></a>Kategorier for vedlikeholdsjobbtyper og vedlikeholdsjobbtyper, varianter av vedlikeholdsjobbtyper, vedlikeholdsjobbfag og sjekklister for vedlikehold
 
@@ -266,3 +266,6 @@ I Aktivastyring kan du automatisk oppdatere eventuelle endringer i vedlikeholdsj
 2. I dialogboksen **Oppdater prognose for vedlikeholdsjobbtype** i hurtigfanen **Poster som skal inkluderes** kan du legge til valg for bestemte vedlikeholdsjobbtyper etter behov. Velg **Filter**, og velg deretter **Velg** for å utføre valgene.
 3. På hurtigfanen **Kjør i bakgrunnen** kan du definere den automatiske oppdateringen som en satsvis jobb, slik du ønsker.
 4. Velg **OK** for å starte prognoseoppdateringen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

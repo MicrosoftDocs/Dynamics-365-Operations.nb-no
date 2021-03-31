@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2b6b5e7b654b5732290489c0dbcb13d1cc441e9c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 8e01300a4932cb6797905072b913b70db3700184
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5002054"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5205439"
 ---
 # <a name="fifo-with-physical-value-and-marking"></a>FIFO med fysisk verdi og merking
 
@@ -31,7 +31,7 @@ ms.locfileid: "5002054"
 
 FIFO (First in, First out - først inn, først ut) er en lagermodell der de første mottakene utstedes først. Økonomisk oppdaterte avganger fra lager utlignes mot de første økonomisk oppdaterte mottakene i lager, basert på den økonomiske datoen til lagertransaksjonen. 
 
-Når du bruker FIFO, trenger du ikke å bruke FIFO-regelen. Når du bruker dato for avveid gjennomsnitt, kan du i stedet merke lagertransaksjoner slik at et bestemt varemottak utlignes mot en bestemt avgang. Vi anbefaler en periodisk lagerlukking når du bruker FIFO-lagermodellen. Eksemplene nedenfor viser effekten når FIFO brukes med tre forskjellige konfigurasjoner:
+Når du bruker FIFO, trenger du ikke å bruke FIFO-regelen. Når du bruker dato for avveid gjennomsnitt, kan du i stedet merke lagertransaksjoner slik at et bestemt varemottak utlignes mot en bestemt avgang. Det anbefales en periodisk lagerlukking når du bruker FIFO-lagermodellen. Eksemplene nedenfor viser effekten når FIFO brukes med tre forskjellige konfigurasjoner:
 
 -   FIFO når alternativet **Ta med fysisk verdi** ikke brukes
 -   FIFO når alternativet **Ta med fysisk verdi** brukes
@@ -135,3 +135,6 @@ Det nye glidende gjennomsnittet av kostprisen gjenspeiler gjennomsnittet av de �
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

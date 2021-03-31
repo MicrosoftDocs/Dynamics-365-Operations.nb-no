@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ca0f0af3cccd4110c3da1703112a5b0f29bd64ad
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 5ad1ebbea9bca41f43f3f4098114116e32f8517b
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4988176"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5205476"
 ---
 # <a name="set-up-company-bank-accounts-for-iso20022-credit-transfers"></a>Definere firmaets bankkontoer for ISO20022-kreditoverføringer
 
@@ -51,3 +51,6 @@ Dette er den andre prosedyren av fem, som illustrerer leverandørbetalingsproses
 4. Angi eller velg en verdi i Bankkonto-feltet.
 5. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 180035668d9c8a03b83f669af7459725eecc8def
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 9aeac631e32876d6c19cb964f28e65491137049a
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4981187"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5204502"
 ---
 # <a name="report-as-finished-to-a-non-license-plate-controlled-location--application-may-2016"></a>Rapportere som ferdig til en lokasjon som ikke er kontrollert av nummerskilt (program, mai 2016)
 
@@ -61,3 +61,6 @@ Denne oppgaveveiledningen viser et eksempel på rapportering som ferdig til en l
 18. Klikk på Arbeidsdetaljer.
     * Når produksjonsordren ble rapportert som fullført, ble det ikke generert arbeid for plassering. Dette skjer fordi en arbeidspolicy er definert som hindrer at arbeidet blir generert når produktet L0101 rapporteres som ferdig til lokasjon 001.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

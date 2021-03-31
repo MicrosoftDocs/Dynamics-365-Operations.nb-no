@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b87fe141c6d53f68e90f5f2346da0633a09b1af1
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: b0061030cabda55cf467c0c80b250c45c875b386
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4987385"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5209640"
 ---
 # <a name="quality-management-processes"></a>Kvalitetsstyringsprosesser
 
@@ -30,7 +30,7 @@ ms.locfileid: "4987385"
 
 Denne artikkelen inneholder informasjon om kvalitetsstyringsprosessen for materiell med avvik. Det beskriver hvordan du kan bruke kvalitetskontrollfunksjonen, hvordan du definerer og vedlikeholder avvik og hvordan du håndterer korrigeringer.
 
-Kvalitetssikring omfatter produkttesting og håndtering av materiell med avvik. Kvalitetsstyringsprosesser bidrar til å sikre produktkvalitet på høyt nivå i forsyningskjeden. Disse prosessene bidrar også til å optimalisere forsyningskjedeprosesser og øke kundetilfredsheten. Kvalitetsstyring kan hjelpe deg med å administrere behandlingstiden når du håndterer produkter med avvik, uavhengig av opprinnelsespunktet for disse produktene. Du kan koble diagnoseresultater til korrigeringsoppgaver. Systemet kan planlegge aktiviteter for å løse problemer og dermed forhindre gjentakelser av disse problemene i fremtiden. Kvalitetsstyring lar deg også spore problemer (inkludert interne problemer) etter problemtype, og lar deg angi løsninger som kortsiktige eller langsiktige. Statistikk om nøkkelytelsesindikatorer (KPI-er) gir innsikt i avviksproblemer som har oppstått tidligere, og løsninger som ble brukt til å rette feilene. Du kan bruke historiske data for å undersøke effektiviteten til kvalitetstiltak som er iverksatt tidligere, og bestemme nødvendige tiltak som skal brukes i fremtiden.
+Kvalitetssikring omfatter produkttesting og håndtering av materiell med avvik. Kvalitetsstyringsprosesser bidrar til å sikre produktkvalitet på høyt nivå i forsyningskjeden. Disse prosessene bidrar også til å optimalisere forsyningskjedeprosesser og øke kundetilfredsheten. Kvalitetsstyring kan hjelpe deg med å administrere behandlingstiden når du håndterer produkter med avvik, uavhengig av opprinnelsesstedet for disse produktene. Du kan koble diagnoseresultater til korrigeringsoppgaver. Systemet kan planlegge aktiviteter for å løse problemer og dermed forhindre gjentakelser av disse problemene i fremtiden. Kvalitetsstyring lar deg også spore problemer (inkludert interne problemer) etter problemtype, og lar deg angi løsninger som kortsiktige eller langsiktige. Statistikk om nøkkelytelsesindikatorer (KPI-er) gir innsikt i avviksproblemer som har oppstått tidligere, og løsninger som ble brukt til å rette feilene. Du kan bruke historiske data for å undersøke effektiviteten til kvalitetstiltak som er iverksatt tidligere, og bestemme nødvendige tiltak som skal brukes i fremtiden.
 
 ## <a name="controlling-the-quality-management-process"></a>Styre kvalitetstyringssprosessen
 Her er noen måter du kan styre kvalitetstyringssprosessen på:
@@ -100,3 +100,6 @@ Det er lurt å definere en unik dokumenttype for rettelser ved hjelp av **Dokume
 [Definere kvalitetsordrer](tasks/set-up-quality-orders.md)
 
 [Kontrollere varekvaliteten](tasks/inspect-quality-goods.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

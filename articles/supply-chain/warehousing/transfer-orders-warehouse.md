@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2018-4-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 7dfb215683b4ee5d186626492bd90116d1a06a1d
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: e01629982bb383078e90ff3dad0592371f44bd1b
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4976844"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5206853"
 ---
 # <a name="set-up-warehouses-for-transfer-orders"></a>Definere lagre for overføringsordrer 
 
@@ -52,3 +52,6 @@ Du må også definere leveringstiden for transport mellom lagrene på siden **Tr
 2. I **Mottakspunkt**-feltet velger du **lager**.
 3. Velg **Leverende lager**, **Mottakende lager** og **Transportdager**. 
 4. (Valgfritt) Du kan også angi transporttiden, avhengig av leveringsmåten, under **Transportdager per leveringsmåte**-fanen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

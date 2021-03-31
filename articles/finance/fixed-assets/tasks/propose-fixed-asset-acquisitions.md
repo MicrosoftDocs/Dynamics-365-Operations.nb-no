@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f9259c9bbf52c1c09a7092db6976fc3fabca6601
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 426a5e42c1fc26958ab37eddd915334f8b0e19cc
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4990445"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5205034"
 ---
 # <a name="propose-fixed-asset-acquisitions"></a>Foreslå anleggsmiddelanskaffelser
 
@@ -42,3 +42,6 @@ Dette emnet beskriver hvordan du anskaffer et anleggsmiddel ved hjelp av anskaff
 - Bare anleggsmidler med anskaffelsesdato og anskaffelsespris som er angitt i tablået, inkluderes i anskaffelsesforslaget.  
 11. Velg kategorien **Tablåer** på siden.
 12. Velg **Poster**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

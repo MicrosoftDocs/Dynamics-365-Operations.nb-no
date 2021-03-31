@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 1e491100bc24718b8e5bc0f62de241835787f7ea
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 33f251eb66f58f8cf1db1d0dd005f8c21a71556b
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4980862"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5205304"
 ---
 # <a name="customize-and-use-the-customer-portal"></a>Tilpasse og bruke kundeportalen
 
@@ -175,3 +175,6 @@ Hvis du vil ha mer informasjon om hvordan du kan definere og tilpasse kundeporta
 - [Oppgradere en portal](https://docs.microsoft.com/powerapps/maker/portals/admin/upgrade-portal)
 - [Overføre en portalkonfigurasjon](https://docs.microsoft.com/powerapps/maker/portals/admin/migrate-portal-configuration)
 - [Administrasjon livssyklus for løsning: Dynamics 365 for Customer Engagement-apper](https://www.microsoft.com/download/details.aspx?id=57777)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

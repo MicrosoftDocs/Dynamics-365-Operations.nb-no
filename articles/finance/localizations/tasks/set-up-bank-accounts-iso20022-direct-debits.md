@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 85c1faebe9a61ad2e708ba26c7a5f0cad15f5f8b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 4d097caf3ad097e3107708c426ef668c70298c4f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4988207"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5209857"
 ---
 # <a name="set-up-customers-and-customer-bank-accounts-for-iso20022-direct-debits"></a>Definere kunders bankkontoer for ISO20022-avtalegiroer
 
@@ -68,3 +68,6 @@ Dette er den fjerde av fem prosedyrer, som viser kundebetalingsprosessen ved hje
 8. Klikk OK.
 9. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -16,20 +16,18 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 138c256b56593c4fafb20050a97e614fa584597c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 43bc274548de016f24569001bac94aff324bea12
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4997832"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5213240"
 ---
 # <a name="cart-icon-module"></a>Handlekurvikonmodul
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet dekker handlekurvikonmodulen og beskriver hvordan du legger den til på områdesider i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Oversikt
 
 Handlekurvikonmodulen representerer diagrammet i hodemodulen på siden, og den viser antall varer i handlekurven. Handlekurvikonmodulen viser også et handlekurvsammendrag (også kjent som en minikurv) når du holder markøren over handlekurvikonet. Minikurven gir brukeren et sammendrag av varene i handlekurven uten å måtte gå til handlekurvsiden. I tillegg kan brukerne også gå direkte til kassesiden hvis de er fornøyd med sammendraget. Dette reduserer antall sidenavigasjoner, og betalingen blir raskere. 
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-12-01
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 14244ccfef69a8bff3390539ff7b851a8f5b5ec1
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: db7f296a99da0eb106e8a10158340eef5642ef39
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5009574"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5208877"
 ---
 # <a name="settle-remainder"></a>Utlign rest
 
@@ -69,3 +69,6 @@ Hvis du vil utligne resten, gjør du følgende:
 7)  Du kan også opprette en betalingsjournal med utligningsresten eller bare postere den uten en journal. Velg **Ja** for **Rediger i journal** for å opprette en betalingsjournal. Du kan redigere betalingsjournalen som du oppretter.
 8)  Klikk på **Utlign rest**. Hvis du velger å opprette en journal, endres knappen til **Opprett journal**. Klikk på **Opprett journal** i stedet.
 9)  Hvis du har opprettet en betalingsjournal, åpnes journalsiden når du har klikket på **Utlign rest**. En journallinje legges til journalen med utligningsrestbeløpet som beløp og utligningsrestkontoen som motkonto. Hvis du har lagt til en kunde eller leverandør slik at du kan flytte utligningsbeløpet til en annen kunde eller leverandør, legges en ekstra linje til i journalen for å flytte utligningsbeløpet til denne kunden eller leverandøren.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

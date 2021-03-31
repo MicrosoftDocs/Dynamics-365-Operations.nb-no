@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c4885547cdf2f8496446761e27ce39e67e670f15
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: d1abd942da608bc221a7a66e03b5269fa30e2c20
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016408"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5212036"
 ---
 # <a name="create-a-purchase-order-for-a-one-time-supplier"></a>Opprette en bestilling for en engangsleverandør
 
@@ -38,3 +38,6 @@ Denne fremgangsmåten viser hvordan du oppretter en bestilling manuelt for en en
 5. Klikk på OK.
     * Bestillingen kan nå fullføres og behandles som hvilken som helst ordre. Det finnes ingen spesielle egenskaper som er relatert til hvordan dette gjøres. Fakturaen registrerer en forfallstransaksjon på leverandørkontoen som ble opprettet med ordren, og deretter behandles betalingen.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

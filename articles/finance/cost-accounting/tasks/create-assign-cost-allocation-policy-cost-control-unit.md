@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 006310d07dfa5b75941ca248736800bbb9e8e7b7
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: b22dba0106721c095e6ce2e9b76cb9f5267e1c28
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969334"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5208733"
 ---
 # <a name="create-and-assign-a-cost-allocation-policy-to-a-cost-control-unit"></a>Opprette og tilordne en kostnadsfordelingspolicy til en kostnadskontrollenhet
 
@@ -66,3 +66,6 @@ Bruk denne fremgangsmåten til å opprette og tilordne en policy for tildeling a
 5. Angi eller velg en verdi i feltet Kostnadskontrollenhet
 6. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 4ffe0ac0b11a3f58ca4a893d8786f04b4067b270
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 44bd184514b24a816cc83f6b0070a5e08163921b
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4975539"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5204815"
 ---
 # <a name="set-up-a-subsidiary-legal-entity-for-consolidation"></a>Definere en juridisk enhet for datterselskap for konsolidering
 
@@ -80,3 +80,6 @@ Uavhengig av om du har tilordnet kontoer eller ei, fjerner du merket i avmerking
 
 > [!NOTE]
 > Du kan bruke denne metoden til å opprette en kontoplan i den konsoliderte juridiske enheten fra kontoplanen i en av de underordnede juridiske enhetene. (Hvis du vil ha mer informasjon, kan du se [Konsolideringskontogrupper og ekstra konsolideringskontoer](../budgeting/consolidation-account-groups-consolidation-accounts.md).) Tilordne deretter et passende konsolideringsomregningsprinsipp til hver konsoliderte hovedkonto, og kjør konsolideringen for alle juridiske enheter for datterselskaper.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
