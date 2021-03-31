@@ -18,32 +18,35 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5c7166063e7865e02eb4ee914f7984fa78a51e4a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 677b62055d71ee7ba1419fc2d7e6738b9438cb16
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5011419"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5216159"
 ---
-# <a name="use-tracing-for-explosion"></a><span data-ttu-id="6e033-103">Bruke sporing for nedbryting</span><span class="sxs-lookup"><span data-stu-id="6e033-103">Use tracing for explosion</span></span>
+# <a name="use-tracing-for-explosion"></a><span data-ttu-id="b157e-103">Bruke sporing for nedbryting</span><span class="sxs-lookup"><span data-stu-id="b157e-103">Use tracing for explosion</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="6e033-104">Denne artikkelen beskriver hvordan du kan bruke sporing til å undersøke årsakene til resultatet av en ordrenedbryting.</span><span class="sxs-lookup"><span data-stu-id="6e033-104">This article explains how you can use tracing to explore the causes behind the outcome of an order explosion.</span></span>
+<span data-ttu-id="b157e-104">Denne artikkelen beskriver hvordan du kan bruke sporing til å undersøke årsakene til resultatet av en ordrenedbryting.</span><span class="sxs-lookup"><span data-stu-id="b157e-104">This article explains how you can use tracing to explore the causes behind the outcome of an order explosion.</span></span>
 
-<span data-ttu-id="6e033-105">Ved å aktivere sporing kan du vise informasjon om faktorene som bidro til resultatet av nedbrytingen av en bestemt ordre.</span><span class="sxs-lookup"><span data-stu-id="6e033-105">By enabling tracing, you can view information about the factors that contributed to the outcome of the explosion of a particular order.</span></span> <span data-ttu-id="6e033-106">Følgende eksempler viser hvordan du kan bruke sporingsinformasjonen:</span><span class="sxs-lookup"><span data-stu-id="6e033-106">The following examples show how you can use the tracing information:</span></span>
+<span data-ttu-id="b157e-105">Ved å aktivere sporing kan du vise informasjon om faktorene som bidro til resultatet av nedbrytingen av en bestemt ordre.</span><span class="sxs-lookup"><span data-stu-id="b157e-105">By enabling tracing, you can view information about the factors that contributed to the outcome of the explosion of a particular order.</span></span> <span data-ttu-id="b157e-106">Følgende eksempler viser hvordan du kan bruke sporingsinformasjonen:</span><span class="sxs-lookup"><span data-stu-id="b157e-106">The following examples show how you can use the tracing information:</span></span>
 
--   <span data-ttu-id="6e033-107">Vis relasjoner mellom handlingene på planlagte ordrer for å optimalisere forsyningskjeden og lagerreservasjoner.</span><span class="sxs-lookup"><span data-stu-id="6e033-107">View relations between the actions on planned orders to optimize the supply chain and inventory reservations.</span></span>
--   <span data-ttu-id="6e033-108">Vis relasjoner til ordrer som allerede er godkjent.</span><span class="sxs-lookup"><span data-stu-id="6e033-108">View relations to orders that are already approved.</span></span> <span data-ttu-id="6e033-109">Du kan fokusere på automatisk autorisering av avledede behov og deretter prioritere ordrer mer nøyaktig.</span><span class="sxs-lookup"><span data-stu-id="6e033-109">You can focus on automatically firming derived requirements and then prioritize orders more accurately.</span></span>
--   <span data-ttu-id="6e033-110">Simuler planleggingsresultater for å finne ut om planleggingsparameterne er optimale.</span><span class="sxs-lookup"><span data-stu-id="6e033-110">Simulate planning results to determine whether the planning parameters are optimal.</span></span>
--   <span data-ttu-id="6e033-111">Angi hvordan informasjon, for eksempel produksjonsdatoer, antall og prioritet for en ordre ble bestemt.</span><span class="sxs-lookup"><span data-stu-id="6e033-111">Identify how information such as production dates, quantities, and priorities for an order were determined.</span></span>
+-   <span data-ttu-id="b157e-107">Vis relasjoner mellom handlingene på planlagte ordrer for å optimalisere forsyningskjeden og lagerreservasjoner.</span><span class="sxs-lookup"><span data-stu-id="b157e-107">View relations between the actions on planned orders to optimize the supply chain and inventory reservations.</span></span>
+-   <span data-ttu-id="b157e-108">Vis relasjoner til ordrer som allerede er godkjent.</span><span class="sxs-lookup"><span data-stu-id="b157e-108">View relations to orders that are already approved.</span></span> <span data-ttu-id="b157e-109">Du kan fokusere på automatisk autorisering av avledede behov og deretter prioritere ordrer mer nøyaktig.</span><span class="sxs-lookup"><span data-stu-id="b157e-109">You can focus on automatically firming derived requirements and then prioritize orders more accurately.</span></span>
+-   <span data-ttu-id="b157e-110">Simuler planleggingsresultater for å finne ut om planleggingsparameterne er optimale.</span><span class="sxs-lookup"><span data-stu-id="b157e-110">Simulate planning results to determine whether the planning parameters are optimal.</span></span>
+-   <span data-ttu-id="b157e-111">Angi hvordan informasjon, for eksempel produksjonsdatoer, antall og prioritet for en ordre ble bestemt.</span><span class="sxs-lookup"><span data-stu-id="b157e-111">Identify how information such as production dates, quantities, and priorities for an order were determined.</span></span>
 
-<span data-ttu-id="6e033-112">Du kan vise detaljer om termin og handlinger for en valgt ordre.</span><span class="sxs-lookup"><span data-stu-id="6e033-112">You can view details about futures and actions for a selected order.</span></span> <span data-ttu-id="6e033-113">På siden **Nedbryting** er sporing av informasjon tilgjengelig i fanen **Forklaring** i den øvre ruten.</span><span class="sxs-lookup"><span data-stu-id="6e033-113">On the **Explosion** page, tracing information is available on the **Explanation** tab in the upper pane.</span></span> <span data-ttu-id="6e033-114">Sporing skjer når du bryter ned en ordre.</span><span class="sxs-lookup"><span data-stu-id="6e033-114">Tracing occurs when you explode an order.</span></span> <span data-ttu-id="6e033-115">For å starte sporing for ordren klikk **Oppdater**, og merk deretter av for **Aktiver sporing**.</span><span class="sxs-lookup"><span data-stu-id="6e033-115">To start tracing for the order, click **Update**, and then select the **Enable trace** check box.</span></span> <span data-ttu-id="6e033-116">Du kan bruke feltet **Finn tekst** til å søke etter spesifikk informasjon i loggen.</span><span class="sxs-lookup"><span data-stu-id="6e033-116">You can use the **Find text** field to search the log for specific information.</span></span> <span data-ttu-id="6e033-117">Søkeresultatene er uthevet i treet.</span><span class="sxs-lookup"><span data-stu-id="6e033-117">Search results are highlighted in the tree.</span></span>
+<span data-ttu-id="b157e-112">Du kan vise detaljer om termin og handlinger for en valgt ordre.</span><span class="sxs-lookup"><span data-stu-id="b157e-112">You can view details about futures and actions for a selected order.</span></span> <span data-ttu-id="b157e-113">På siden **Nedbryting** er sporing av informasjon tilgjengelig i fanen **Forklaring** i den øvre ruten.</span><span class="sxs-lookup"><span data-stu-id="b157e-113">On the **Explosion** page, tracing information is available on the **Explanation** tab in the upper pane.</span></span> <span data-ttu-id="b157e-114">Sporing skjer når du bryter ned en ordre.</span><span class="sxs-lookup"><span data-stu-id="b157e-114">Tracing occurs when you explode an order.</span></span> <span data-ttu-id="b157e-115">For å starte sporing for ordren klikk **Oppdater**, og merk deretter av for **Aktiver sporing**.</span><span class="sxs-lookup"><span data-stu-id="b157e-115">To start tracing for the order, click **Update**, and then select the **Enable trace** check box.</span></span> <span data-ttu-id="b157e-116">Du kan bruke feltet **Finn tekst** til å søke etter spesifikk informasjon i loggen.</span><span class="sxs-lookup"><span data-stu-id="b157e-116">You can use the **Find text** field to search the log for specific information.</span></span> <span data-ttu-id="b157e-117">Søkeresultatene er uthevet i treet.</span><span class="sxs-lookup"><span data-stu-id="b157e-117">Search results are highlighted in the tree.</span></span>
 
-<a name="additional-resources"></a><span data-ttu-id="6e033-118">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="6e033-118">Additional resources</span></span>
+<a name="additional-resources"></a><span data-ttu-id="b157e-118">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="b157e-118">Additional resources</span></span>
 --------
 
-[<span data-ttu-id="6e033-119">Oversikt over hovedplaner</span><span class="sxs-lookup"><span data-stu-id="6e033-119">Master plans overview</span></span>](master-plans.md)
+[<span data-ttu-id="b157e-119">Oversikt over hovedplaner</span><span class="sxs-lookup"><span data-stu-id="b157e-119">Master plans overview</span></span>](master-plans.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
