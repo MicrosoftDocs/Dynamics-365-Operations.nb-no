@@ -14,12 +14,12 @@ ms.reviewer: kfend
 ms.search.region: Norway
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 16d21f13a1d9eafb38e808fba2877492c86d6da3
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 64cf0cd1bd439e85f2dae7d32c0c7082123221c8
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5002876"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5250542"
 ---
 # <a name="vat-statement-for-norway"></a>MVA-oppgave for Norge
 
@@ -116,3 +116,6 @@ Du kan bruke utformingen for å vise eller endre konfigurasjonen du valgte i mod
 
 > [!NOTE]
 > Du kan kombinere flere mva-betalinger og skrive ut én kombinert rapport/XML-fil som inneholder summerte data for alle valgte oppføringer. Du kan kombinere bare poster som er knyttet til en utligningsperiode, og som har samme verdier for **Fra-dato** og **Til-dato**. Du kan for eksempel kombinere en **Originalversjon**-post med dens **Rettelser/Siste rettelser**-post.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

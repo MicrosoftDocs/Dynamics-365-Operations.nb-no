@@ -17,18 +17,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-05-21
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8ddefcdc2b2bbb5fe25e9a87396802cbbbfef72c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 99c238ecfbb6cb29f4fefefdca32525b99a01dc8
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965083"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5251337"
 ---
-# <a name="financial-reconciliation-in-retail-stores"></a>Økonomisk avstemming i detaljhandelbutikker
+# <a name="financial-reconciliation-in-retail-stores"></a>Økonomisk avstemming i detaljhandelsbutikker
 
 [!include [banner](includes/banner.md)]
 
-I Microsoft Dynamics 365 Commerce, versjon 10.0.10 og tidligere versjoner er det funksjonalitet på salgsstedsklienten som leverer prosesser på slutten av dagen i detaljhandelbutikker, der selgere og butikkledere utfører operasjoner på slutten av dagen. De kan for eksempel utføre kasseoppgjør, lukke usporede skift, avstemme skifttransaksjoner og lukke skift. Det er imidlertid ingen funksjon i salgsstedet for å fullføre finansinformasjonen for skift, slik at den kan brukes til å postere økonomien i Commerce Headquarters. Butikkledere er vanligvis ansvarlige for å fullføre denne oppgaven. Før de kan godkjenne et skift, må de se gjennom informasjonen, foreta eventuelle rettelser som kreves, og fullføre totalene for det skiftet. De fullførte totalene skal deretter posteres i finansmoduler i Commerce Headquarters.
+I Microsoft Dynamics 365 Commerce versjon 10.0.10 og tidligere versjoner er det funksjonalitet på salgsstedsklienten som leverer prosesser på slutten av dagen i detaljhandelbutikker, der selgere og butikkledere utfører operasjoner på slutten av dagen. De kan for eksempel utføre kasseoppgjør, lukke usporede skift, avstemme skifttransaksjoner og lukke skift. Det er imidlertid ingen funksjon i salgsstedet for å fullføre finansinformasjonen for skift, slik at den kan brukes til å postere økonomien i Commerce Headquarters. Butikkledere er vanligvis ansvarlige for å fullføre denne oppgaven. Før de kan godkjenne et skift, må de se gjennom informasjonen, foreta eventuelle rettelser som kreves, og fullføre totalene for det skiftet. De fullførte totalene skal deretter posteres i finansmoduler i Commerce Headquarters.
 
 I tillegg kan butikkledere i versjon 10.0.10 og tidligere versjoner gå gjennom og gjøre noen justeringer i utdragslinjer i Commerce Headquarters. Funksjonen er imidlertid begrenset, og butikkledere har sjelden tilgang til Commerce Headquarters-klienten. I tillegg kan du bare foreta finanshandelsutdrag og -justering når utdrag opprettes i Commerce Headquarters. Denne prosessen er imidlertid som regel en nattprosess. Derfor må butikkledere vente på skiftavloggingen når det opprettes finanshandelsutdrag i Commerce Headquarters.
 

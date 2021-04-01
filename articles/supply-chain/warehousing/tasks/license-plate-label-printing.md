@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d5580edb3324f76f04140bd6793bddaace5fadcf
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: f62e1587135591079b50d52f87d0a1b0ce7d0806
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4977119"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5238924"
 ---
 # <a name="enable-license-plate-label-printing"></a>Aktivere utskrift av nummerskiltetikett
 
@@ -100,3 +100,6 @@ Dette emnet viser hvordan du aktiverer automatisk utskrift av en SSCC-etikett (S
 7. Velg **Lagre**.
 8. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

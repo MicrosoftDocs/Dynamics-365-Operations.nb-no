@@ -16,19 +16,19 @@ ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 835b283ea93f761791745a41c74b6a12c11eea02
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 319e60f34c7e94cc56386b0f86ac83360f7b0456
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4962966"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5232597"
 ---
 # <a name="templates-and-layouts-overview"></a>Oversikt over maler og oppsett
 
 
 [!include [banner](includes/banner.md)]
 
-Maler er et grunnleggende element i Microsoft Dynamics 365 Commerce-sidemodellen. Hvis målet er å oppnå størst mulig effektivitet og konsekvens for arbeidsflyter for områderedigering, er det viktig at du lærer deg hvordan du kan dra nytte av maler for webområdet ditt. Tidlige avgjørelser om malstruktur er viktig og kan påvirke kostnadene og fleksibiliteten for daglige, sesongbaserte og områdeomfattende merkeoppdateringer. Godt strukturerte maler har også andre fordeler. De hjelper for eksempel med å forbedre resultatene av søkemotoroptimalisering (SEO) på tvers av hele området og minimere antall feil.
+Maler er et grunnleggende element i sidemodellen for Microsoft Dynamics 365 Commerce. Hvis målet er å oppnå størst mulig effektivitet og konsekvens for arbeidsflyter for områderedigering, er det viktig at du lærer deg hvordan du kan dra nytte av maler for webområdet ditt. Tidlige avgjørelser om malstruktur er viktig og kan påvirke kostnadene og fleksibiliteten for daglige, sesongbaserte og områdeomfattende merkeoppdateringer. Godt strukturerte maler har også andre fordeler. De hjelper for eksempel med å forbedre resultatene av søkemotoroptimalisering (SEO) på tvers av hele området og minimere antall feil.
 
 En god måte å begynne å arbeide med maler på er å forstå de funksjonelle fordelene med maler og oppsett, forskjellen mellom dem og hierarkiet.
 

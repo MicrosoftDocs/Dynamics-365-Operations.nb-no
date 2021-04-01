@@ -1,6 +1,6 @@
 ---
 title: Oversikt over produktdetaljsider
-description: Dette emnet gir en oversikt over produktdetaljsider i Microsoft Dynamics 365 Commerce.
+description: Dette emnet gir en oversikt over produktdetaljsider (PDP-er) i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 manager: annbe
 ms.date: 01/23/2020
@@ -16,18 +16,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: b0f50b4e7b78f4a5b9fe674a101476879923e10d
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 020c2a72515eb112adb33c6b58e3a5084339d040
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4979834"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5243846"
 ---
 # <a name="product-details-pages-overview"></a>Oversikt over produktdetaljsider
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet gir en oversikt over produktdetaljsider i Microsoft Dynamics 365 Commerce.
+Dette emnet gir en oversikt over produktdetaljsider (PDP-er) i Microsoft Dynamics 365 Commerce.
 
 ## <a name="overview"></a>Oversikt
 

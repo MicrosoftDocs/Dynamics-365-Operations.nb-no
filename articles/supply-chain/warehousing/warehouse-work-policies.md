@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 530abffb4c80a2d2f0e58e0c5a34294f7cba0b1a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 3e7814790bce0aee648421e3a69d702fd0012404
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4998459"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5248553"
 ---
 # <a name="work-policies"></a>Arbeidspolicyer
 
@@ -300,3 +300,6 @@ Hvis du vil ha mer informasjon om menyelementer for mobilenheter, kan du se [Def
 For mer informasjon om nummerskiltmottak og arbeidspolicyer, se [Nummerskiltmottak via lagerappen](warehousing-mobile-device-app-license-plate-receiving.md).
 
 For mer informasjon om innkommende lastadministrasjon for lagerstyring, se [Lagerhåndtering av innkommende laster for bestillinger](inbound-load-handling.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

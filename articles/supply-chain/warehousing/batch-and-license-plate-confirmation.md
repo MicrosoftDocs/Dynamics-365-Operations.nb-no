@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 97790b91d4de536b89b580c26ef1e37145f7d7c6
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: c309061b31f10209c22cb90cc08c971b697f6dc9
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4977444"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5233133"
 ---
 # <a name="batch-and-license-plate-confirmation"></a>Parti- og nummerskiltbekreftelse
 
@@ -47,3 +47,6 @@ Du kan konfigurere parti- og nummerskiltbekreftelse fra menyelementene på mobil
 
 1. Gå til arbeidsbekreftelsesoppsettet fra menyelementene på mobilenheten.  
 1. Velg alternativet for partibekreftelse eller nummerskiltbekreftelse. Begge alternativene er tilgjengelige for arbeidstypeplukk der automatisk bekreftelse ikke er aktivert.  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

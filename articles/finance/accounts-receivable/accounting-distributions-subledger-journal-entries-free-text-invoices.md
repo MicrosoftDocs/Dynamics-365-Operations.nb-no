@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f3ee26825ec48a8e8e32401ceaa8c80ecd679d2e
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 3d5b35347d63bffbf5b9261cbd93f49120ded19a
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4993207"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5248069"
 ---
 # <a name="accounting-distributions-and-subledger-entries-for-free-text-invoices"></a>Regnskapsdistribusjoner og underfinansoppføringer for fritekstfakturaer
 
@@ -135,3 +135,6 @@ Før du posterer en fritekstfaktura, kan du vise den fullstendige regnskapsoppf�
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

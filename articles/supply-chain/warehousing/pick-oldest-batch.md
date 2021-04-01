@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fdf6335bd333569e278ccd9cf3972c0ec57d4e6c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: a8e0deadaeb403e1f645309a141c5678fbe3f716
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4989674"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5232893"
 ---
 # <a name="pick-oldest-batch-on-a-mobile-device"></a>Plukke eldste parti på en mobil enhet
 
@@ -40,3 +40,6 @@ For varer som er angitt til å bruke eksisterende arbeid, kan **Plukk eldste par
 **Varsle** og **Fremtving**: En liste over partiene med den eldste utløpsdatoen vises over partikontrollen når arbeideren velger et parti. Hvis lokasjonen er nummerskiltkontrollert, vises en liste over lisensplater med den eldste batchen over nummerskiltkontrollen. 
 -   **Varsle**: Hvis en arbeider velger et nummerskilt eller parti som ikke er i listen som vises, er kontrollen nedtonet, og det vises en advarsel om at det finnes et eldre parti å velge. For at arbeideren skal kunne fortsette arbeidet må han/hun velge samme nummerskilt eller parti på nytt.  
 -   **Fremtving**: Arbeidere vil fortsette å motta meldingen om at det er et eldre parti som skal plukkes.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

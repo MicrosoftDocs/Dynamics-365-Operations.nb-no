@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: 922ff818e069f41c139cc00db9161dc6e113888b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: dbf92c5e199ecadb3e4f7c6130427d449ef5b6c8
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4973741"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5251775"
 ---
 # <a name="configure-product-filters-for-warehouse-transactions"></a>Konfigurere produktfiltre for lagertransaksjoner
 
@@ -165,3 +165,6 @@ Hvis du vil konfigurere leverandørfilterkoder, følger du denne fremgangsmåten
 ## <a name="see-also"></a>Se også
 
 [Hvis du vil ha mer informasjon, kan du se blogginnlegget WMS – filterkoder for lager](http://blog.dynamics-for-operations.com/2017/09/26/wms-warehouse-filter-codes/)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

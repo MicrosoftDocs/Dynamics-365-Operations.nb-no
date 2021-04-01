@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: cabeln
 ms.search.validFrom: 2020-08-01
 ms.dyn365.ops.version: AX 10.0.15
-ms.openlocfilehash: 3e69f9007b6605a07c6bec189b596d36a26f6222
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 48e0dfeba1a9744c90608d4d9009484df91c4b85
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5007221"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5246147"
 ---
 # <a name="provide-mixed-reality-guides-for-workers-in-production"></a>Formidle veiledninger for blandet virkelighet for arbeidere i produksjonen
 
@@ -126,13 +126,13 @@ Hvis du vil konfigurere hvordan veiledninger skal vises i produksjonen, kan du g
 Angi følgende felt:
 
 - **URL-adresse for Microsoft Dataverse** – Angi URL-adressen til Microsoft Dataverse-miljøet der du oppretter Guides. Formatet er contoso.crm4.dynamics.com, der den første delen av URL-adressen vanligvis kalles etter organisasjonen (for eksempel contoso.), den andre delen er spesifikk for dataområdet i miljøet (for eksempel crm4.), og den siste delen er domenet (for eksempel dynamics.com). En måte å finne riktig URL-adresse på, er å gå til [home.dynamics.com](https://home.dynamics.com/) og deretter åpne Guides-appen. Når Guides åpnes, vil du se URL-adressen i adresselinjen i nettleseren (ta bare den primære URL-adressen, som skal ligne på det forrige eksemplet). Denne verdien brukes til å skrive adresser for veiledningene og blir kodet i QR-kodene.
-- **QR-kodestørrelse** – Angi størrelsen på den gjengitte QR-koden. Vi anbefaler at du velger en størrelse som fyller meste parten av skjermen, men ikke mer. Vanligvis er *15* en god verdi.
+- **QR-kodestørrelse** – Angi størrelsen på den gjengitte QR-koden. Det anbefales at du velger en størrelse som fyller meste parten av skjermen, men ikke mer. Vanligvis er *15* en god verdi.
 - **Feilkorrigeringsnivå for QR-kode** – Angi detaljnivået for QR-koden. Høyere detaljnivå kan bidra til å øke kodens pålitelighet, men **QR-kodestørrelse** må være stor nok til å støtte detaljnivået som kreves av det valgte korrigeringsnivået.
 
 > [!TIP]
 > - QR-kodestørrelser som er for store for skjermen, vil ta litt lengre tid å gjengi og deretter skaleres ned for å få plass til skjermen. Dette har ingen fordeler.
 > - QR-kodestørrelser som er for små, kan redusere muligheten for HoloLens til å lese koden på riktig måte i enkelte miljøer.
-> - Vi anbefaler at du tester innstillingene for hver enhet som vil vise QR-koder for HoloLens-brukere. Velg innstillinger som gir deg tilstrekkelig lesbarhet i produksjonsmiljøet.  
+> - Det anbefales at du tester innstillingene for hver enhet som vil vise QR-koder for HoloLens-brukere. Velg innstillinger som gir deg tilstrekkelig lesbarhet i produksjonsmiljøet.  
 
 ## <a name="get-an-overview-of-all-guide-assignments"></a>Få en oversikt over alle tilordning av veiledninger
 
@@ -409,3 +409,6 @@ Når Supply Chain Management genererer jobbene for produksjonen, vil det samle d
 - Hvis du definerer flere ruteoperasjonsrelasjoner som omfatter *Alle*-relasjonen og tilordner veiledninger til disse, vil bare veiledningene fra den mest spesifikke relasjonen vises for jobben.  
 
 ![Diagram for å løse de relevante veiledningene](media/instruction-guides-Resolve.png "Diagram for å løse de relevante veiledningene")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

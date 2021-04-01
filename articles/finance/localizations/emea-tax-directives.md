@@ -14,12 +14,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: e6fa4867df51d39c268446077de27366784e1cd7
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 02a6bcf7573012cc57f5adbf67d2d0c9ecd34db4
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5005935"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5236195"
 ---
 # <a name="tax-directives-for-europe"></a>Mva-direktiver for Europa
 
@@ -32,3 +32,6 @@ EU-direktiv inneholder bestemmelser som alle medlemslandene skal følge, om regl
 
 > [!NOTE]
 > Kontroller at feltet **Mva-spesifikasjon** er satt til **Registreringsvaluta** eller **Registrerings- og firmavaluta** på siden **Skjemaoppsett** i kategorien **Generelt** (**Kunder > Oppsett > Skjemaer > Skjemaoppsett** eller **Prosjektstyring og regnskap > Oppsett > Skjemaer > Skjemaoppsett**).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

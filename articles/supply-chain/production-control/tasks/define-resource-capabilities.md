@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: sorenand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 93b30cbe660d224f0a92f4e412d2b1ba33af3f9b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: c78db0d849c08622d9a2dffc109b439b4c584748
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4977844"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5240371"
 ---
 # <a name="define-resource-capabilities"></a>Definere ressursfunksjoner
 
@@ -48,3 +48,6 @@ Ressursfunksjoner beskriver hva operasjonsressursene kan utføre. Under planlegg
 5. Angi et nummer i Nivå-feltet.
     * Når du angir at en jobb eller operasjon krever en bestemt funksjon, kan du også angi det minste tillatelsesnivå som kreves. Bruk ressursnivået til å skille mellom ressurser som kan utføre den samme jobben, men med forskjellige hastigheter, styrker, størrelser og så videre.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

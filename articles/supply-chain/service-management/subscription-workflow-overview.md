@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bc2b2dc724adf53bfc6cb8de79c14c7414cbc40a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 05111ab53e8bf19bb25869155284cdc9d6ea3b2a
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4974166"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5242283"
 ---
 # <a name="subscription-workflow-overview"></a>Oversikt over abonnementsarbeidsflyt 
 
@@ -56,3 +56,6 @@ På slutten av hver måned kan én måneds inntekt avsettes fra kundens abonneme
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

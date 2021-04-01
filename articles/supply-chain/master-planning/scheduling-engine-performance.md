@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2c39a72d22c01faec3856e7f47cb6b3811447cab
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 0b55d0e94b40adf232e6b5cc3a9fb422e4539340
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4983447"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5246771"
 ---
 # <a name="improve-scheduling-engine-performance"></a>Forbedre ytelsen til planleggingsmotoren
 
@@ -280,7 +280,7 @@ Vær oppmerksom på at hvis ordren ikke er planlagt under MRP, må den i stedet 
 
 Når du utformer ruten, er det fristende å forsøke å utforme den virkelige verden nøyaktig med alle trinnene produksjonen går gjennom. Selv om dette kan være nyttig i noen tilfeller, er det ikke bra for ytelsen fordi modellen som motoren trenger for å arbeide, blir større (både med hensyn til jobber og begrensninger), og flere SQL-setninger blir utført for innsetting og oppdatering av jobbene og kapasitetsreservasjonene. Det er også en nedstrømseffekt av til slutt å måtte rapportere fremdriften for jobbene, som kan reduseres med automatiske posteringer. Hvis dataene ikke brukes til noe, skaper det unødvendig belastning.
 
-Vi anbefaler at du bare oppretter operasjoner som er strengt nødvendige for planleggingen (som vanligvis vil være flaskehalsressurser) og/eller etterkalkuleringsformål. Du kan også gruppere mange mindre spesifikke operasjoner i én større operasjon som representerer en større del av prosessen.
+Det anbefales at du bare oppretter operasjoner som er strengt nødvendige for planleggingen (som vanligvis vil være flaskehalsressurser) og/eller etterkalkuleringsformål. Du kan også gruppere mange mindre spesifikke operasjoner i én større operasjon som representerer en større del av prosessen.
 
 ### <a name="many-applicable-resources-for-an-operation"></a>Mange gjeldende ressurser for en operasjon
 
@@ -306,7 +306,7 @@ Bruk av begrenset kapasitet krever at motoren laster inn kapasitetsinformasjon f
 
 Standard koblingstype for ruten er *myk*, noe som betyr at det er tillatt med en tidsforskjell mellom sluttidspunktet for én operasjon og starten på neste. Tillatelse av dette kan ha den uheldige effekten at hvis materialer eller kapasitet ikke er tilgjengelige for én av operasjonene i svært lang tid, kan produksjonen være inaktiv i en stund, noe som betyr en mulig økning av arbeidet som pågår. Dette skjer ikke med harde koblinger, fordi avslutning og start må være perfekt justert. Hvis du angir harde koblinger, blir imidlertid planleggingsproblemet vanskeligere fordi skjæringspunkter mellom arbeidstid og kapasitet må beregnes for de to ressursene for operasjonene. Hvis dette også omfatter parallelle operasjoner, legger dette til betydelig beregningstid. Hvis ressursene for de to operasjonene har forskjellige kalendere som ikke overlapper i det hele tatt, er problemet uløselig.
 
-Vi anbefaler at du bruker harde koblinger bare når det er helt nødvendig, og vurder nøye om det er nødvendig for hver operasjon i ruten.
+Det anbefales at du bruker harde koblinger bare når det er helt nødvendig, og vurder nøye om det er nødvendig for hver operasjon i ruten.
 
 Hvis du vil redusere mengden arbeid som pågår, uten å bruke harde koblinger, er et triks å planlegge rekkefølgen to ganger og endre til motsatt retning for den andre gjennomføringen. Hvis den første tidsplanen ble utført bakover fra leveringsdatoen, bør den andre utføres fremover fra den planlagte startdatoen. Dette vil føre til at jobbene komprimeres så mye som mulig, slik at arbeidet som pågår minimeres.
 
@@ -328,3 +328,6 @@ Verdien for **Tidsavbrudd for optimaliseringsforsøk** styrer hvor mange sekunde
 
 > [!NOTE]
 > Verdiene som angis for tidsavbruddet, brukes både for planlegging av frigitte produksjonsordrer og planlagte ordrer som en del av MRP. Dermed kan det å sette svært høye verdier øke kjøretiden i MRP betydelig når det kjøres for en plan med mange planlagte produksjonsordrer.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

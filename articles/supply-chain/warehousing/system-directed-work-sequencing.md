@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-03
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 3811486a31d079cac7f7c27ea6323f16de4478d5
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 7db884a5cd62e1f44a2a86316fde6bf2d11a3376
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4970212"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5239140"
 ---
 # <a name="system-directed-work-sequencing"></a>Systemstyrt arbeidssekvensiering
 
@@ -304,3 +304,6 @@ De systemstyrte arbeidssekvensspørringene er *inklusive*. Det er viktig at du h
 I eksemplet fra dette scenariet ble derfor arbeids-ID *4* også hentet av spørringen. Når den ble opprettet, ble to linjer lagt til: én for 25 ea og en annen for 10 ea. Arbeidet ble fortsatt presentert for brukeren fordi minst én arbeidslinje har et antall på mindre enn 20 ea.
 
 Avhengig av scenariet kan du forhindre denne virkemåten ved å bruke arbeidspauser.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

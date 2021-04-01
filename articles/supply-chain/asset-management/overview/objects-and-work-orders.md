@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0cddb0a25286c8ce9d72aef0b835809705ad577a
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 6fd5aa8914437fb77ea25ec229c94cfb0bb12def
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020945"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5253068"
 ---
 # <a name="assets-and-work-orders"></a>Aktiva og arbeidsordrer
 
@@ -54,3 +54,6 @@ Du må fylle ut flere trinn når du vil planlegge og kjøre en vedlikeholdsjobb 
 
 > [!NOTE]
 > Generelt, når du arbeider i Dynamics 365 Supply Chain Management og **Aktivastyring**-modulen, velger du **Ny** for å opprette en ny post, du velger **Rediger** for å oppdatere en eksisterende post, og du velger **Lagre** for å lagre nye eller redigerte data.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

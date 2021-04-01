@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 7ced1b970aefa20a27ab16e005dff8fabace78d1
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: f8e220599d8df9f560da1862f0909cbbaa3c7330
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4988831"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5249101"
 ---
 # <a name="import-subsidiary-data-from-files"></a>Importere data for et datterselskap fra filer
 
@@ -60,3 +60,6 @@ Dette emnet beskriver hvordan du klargjør data fra eksterne systemer, slik at d
 8. Sett alternativet **Satsvis behandling** til **Ja** for å kjøre konsolideringen som en satsvis jobb på et bestemt tidspunkt. Hvis du vil kjøre konsolideringen umiddelbart, velger du **OK**. 
 
 Transaksjonene og saldoene som ble angitt for konsolidering i datterselskapene, blir lagt til de aktuelle kontoene i den konsoliderte juridiske enheten.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

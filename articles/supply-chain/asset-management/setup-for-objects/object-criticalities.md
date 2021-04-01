@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c9d2c5e8b6676abf03fe0d3de8b23f125713d6f2
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: c771e7ebda94687ab5442347e74c82b01ad2fcc6
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021710"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5245425"
 ---
 # <a name="asset-criticality-types"></a>Type kritisk aktivitet for aktiva
 
@@ -61,3 +61,6 @@ Hvis du vil definere kritikalitet, må du først opprette kritikalitetstypene so
 - Kritikaliteten i en arbeidsordre beregnes på nytt hver gang en arbeidsordrelinje legges til eller slettes fra arbeidsordren.
 - Hvis en arbeidsordre inneholder flere arbeidsordrejobber, brukes alltid den høyeste kritikaliteten i henhold til **Faktor**-feltet på siden **Kritikalitetstyper** i arbeidsordren.
 - Vanligvis kan aktivakritikalitet endres over en periode. Kritikalitet kan påvirkes ved kjøp av nytt utstyr, saneringer, og så videre. Vurder å reevaluere aktivakritikalitetene med jevne mellomrom (for eksempel én gang per år eller hvert annet år) for å sikre at kritikalitetsdefinisjonene samsvarer med det gjeldende produksjonsoppsettet.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 66d110c3235e8a87b64bf160bdad8524fad6abe5
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 61b988cf2501812e940f726e02d8fc1bcee2c035
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5001155"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5233061"
 ---
 # <a name="change-work-pool-on-work"></a>Endre arbeidspulje i arbeid
 
@@ -148,3 +148,6 @@ Du kan bruke **Arbeidsdetaljer**-siden til å vise arbeidet som ble opprettet, o
 > Når dialogboksen **Endre arbeidsutvalg** vises, kan det hende at feltet **ID for arbeidsutvalg** er tomt som standard. Hvis feltet er tomt når du velger **OK** for å bruke endringer, fjerner du arbeidsutvalget helt fra arbeidet.
 >
 > I tillegg til å bytte arbeidsutvalg kan du bruke denne fremgangsmåten til å legge til et arbeidsutvalg i alle arbeidselementer som ikke har et, eller til å fjerne et arbeidsutvalg fra alle arbeidselementer som har et.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

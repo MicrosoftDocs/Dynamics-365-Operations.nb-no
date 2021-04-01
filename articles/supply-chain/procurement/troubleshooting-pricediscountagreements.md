@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-9-16
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 14fdddabde7739cbf9ba0fcee0fa0b8b816e74dd
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 5d17f2ec594901404fcd251e463f293258af051c
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5007372"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5237161"
 ---
 # <a name="troubleshoot-prices-discounts-agreements-and-rebates"></a>Feilsøking i forbindelse med priser, rabatter og avtaler
 
@@ -124,3 +124,6 @@ Denne virkemåten er forventet. Fordi rekvisisjoner ikke alltid er godkjent, ska
 
 Du kan opprette forretningsavtaler for et hvilket som helst svar på en tilbudsforespørsel, uansett om de ble godtatt eller avvist. Hvis du vil ha mer informasjon, se [Oversikt over tilbudsforespørsler](request-quotations.md).
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e82eb3fcfe4347b7faa4c775e9909a792e2b9baf
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 26abf7afbbe3c6d0b4e13639d9f57f6e82fc9ad3
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4983322"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5233805"
 ---
 # <a name="product-configuration-models-overview"></a>Oversikt over produktkonfigurasjonsmodeller
 
@@ -58,7 +58,7 @@ Produktkonfigurasjonsmodeller opprettes for å representere en generell produkts
 <li><strong>Skrivebeskyttet</strong> – Attributtverdien vises under en konfigurasjonsøkt, men kan ikke endres.</li>
 <li><strong>Skjult</strong> – Attributtverdien inkluderes i begrensninger og betingelser, men vises ikke under en konfigurasjonsøkt.</li>
 </ul>
-Du kan også angi en betingelse for attributter. Hvis betingelsen er oppfylt, må det angis en verdi for det obligatoriske attributtet. Betingelser er uttrykk som må oppfylles for at attributter, stykklistelinjer og ruteoperasjoner skal inkluderes i en produktkonfigurasjonsmodell. Alle attributter som er referert i en betingelse blir obligatorisk. Vi anbefaler at du velger attributtene som obligatoriske på fanen <strong>Attributer</strong>. Dette kan gjøre det enklere å identifisere obligatoriske attributter. Attributtverdier er en viktig del av gjenbruk av konfigurasjoner. Systemet bruker attributtverdier til å avgjøre om det finnes en konfigurasjon som samsvarer valgene en bruker foretar under en konfigurasjonsøkt.</td>
+Du kan også angi en betingelse for attributter. Hvis betingelsen er oppfylt, må det angis en verdi for det obligatoriske attributtet. Betingelser er uttrykk som må oppfylles for at attributter, stykklistelinjer og ruteoperasjoner skal inkluderes i en produktkonfigurasjonsmodell. Alle attributter som er referert i en betingelse blir obligatorisk. Det anbefales at du velger attributtene som obligatoriske på fanen <strong>Attributer</strong>. Dette kan gjøre det enklere å identifisere obligatoriske attributter. Attributtverdier er en viktig del av gjenbruk av konfigurasjoner. Systemet bruker attributtverdier til å avgjøre om det finnes en konfigurasjon som samsvarer valgene en bruker foretar under en konfigurasjonsøkt.</td>
 </tr>
 <tr class="odd">
 <td>Attributtyper</td>
@@ -152,3 +152,6 @@ Du kan vise om et utgitt produkt kan brukes som en komponent eller delkomponent 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

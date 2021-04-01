@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: e4abe1a03997853053f60c750199874a61fc68c0
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 1b75d5cec991b2863e7e0213257ac63d5ab566a6
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5006397"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5233205"
 ---
 # <a name="advanced-load-building-during-wave"></a>Avansert lastplanlegging under en bølge
 
@@ -249,3 +249,6 @@ Dette scenariet viser hvordan innstillingene som ble beskrevet tidligere i dette
 1. I salgsordren du nettopp opprettet, velger du **Legg til** på **Salgsordrelinjer**-hurtigfanen for å legge til en ny linje.
 1. På den nye linjen angir du **Varenummer**-feltet til *M9200* og **Antall**-feltet til *1*.
 1. Gjenta linjer 6 til og med 9 for å reservere linjen og frigi den til lageret. Som tidligere oppretter systemet en **ny** forsendelse for linjen du la til. Men fordi varen kommer fra **CarAudio**-varegruppen, **kan den ikke overføre betingelsene du angir for samlegruppen for last**. Derfor **legges den til en ny last**. Hvis du ikke hadde angitt en samlegruppe for lastplanleggingsmalen, ville denne forsendelsen ha blitt lagt til i den første lasten.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-04-08
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 63f2d3dc55799efefaedb10134edb219fa8588e0
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d6a53b2cb48856083f3b2e40fca8adb92f4e5113
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5003584"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5250656"
 ---
 # <a name="automate-vendor-payment-proposals"></a>Automatisering av betalingsforslag for leverandører
 
@@ -143,3 +143,6 @@ Følgende plikter og rettigheter er lagt til automatisering av leverandørbetali
 | Forespørsel om tidsplanforekomster | Betalingsassistent for leverandør, sentralisert betalingsassistent for leverandør | Denne plikten gir rett til å vise forekomster av automatisering av betalingsforslag via følgende rettigheter:<ul><li>Se tidsplanforekomster</li><li>Se ukentlig visning av forekomst</li></ul> |
 | Forespørsel om tidsplanserier      | None                                                                       | Denne plikten gir rett til å vise innstillingene for serien og forekomster via følgende rettigheter:<ul><li>Se tidsplanforekomster</li><li>Se listeside over forekomster</li><li>Se ukentlig visning av forekomst</li></ul>|
 | Oppretthold tidsplanforekomster     | None                                                                       | Denne plikten gir rett til å opprette og vedlikeholde en forekomst via følgende rettigheter:<ul><li>Oppretthold tidsplanforekomster</li><li>Se ukentlig visning av forekomst</li></ul> |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
