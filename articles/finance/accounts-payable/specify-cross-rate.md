@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 317cad877cec4d9f02f53762af65f0b226d0aad6
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 2a1463b9676e6b26543fd88607ca13b0ceb12be5
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4979394"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5231572"
 ---
 # <a name="specify-the-cross-rate"></a>Angi krysskurs
 
@@ -43,3 +43,6 @@ Regnskapsvalutaen er for eksempel USD, fakturavalutaen er CAD og betalingsvaluta
 3.  For en kunde, på **Alle kunder**-listesiden gå til **Samle inn > Utlign åpne transaksjoner**. For en leverandør, på **Alle leverandører**-listesiden gå til **Faktura > Utlign åpne transaksjoner**. 
 4.  Velg transaksjonen som er hovedbetalingen, og klikk deretter på **Merk betaling**. Avmerkingsboksen i **Merk**-kolonnen er valgt, og det vises et informasjonsikon i **Primærbetaling**-kolonnen. 
 5.  I **Kryssats**-feltet kan du angi valutakursen mellom fakturavalutaen og betalingsvalutaen som gjelder på utligningsdatoen. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

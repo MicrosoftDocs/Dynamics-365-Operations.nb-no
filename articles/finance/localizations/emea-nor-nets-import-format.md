@@ -16,12 +16,12 @@ ms.search.region: Norway
 ms.author: v-lenest
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 06584f3b25ec9f47a0020f08bc6773fd2722727a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 1515221fc591e1494bc7a5099eeb053ae3ee275a
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5002879"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5231506"
 ---
 # <a name="nets-import-format"></a>Nets-importformat
 
@@ -51,3 +51,6 @@ Du får en melding om å oppdatere standard betalingsverdier for den tilsvarende
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

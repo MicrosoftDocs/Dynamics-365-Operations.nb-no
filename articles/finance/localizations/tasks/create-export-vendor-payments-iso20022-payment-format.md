@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1df738e3925dc23e7723d93f33acf6a9d811b113
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 2c3d538a4e032ca9cfafff3232ad235019654ed7
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4964547"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5231482"
 ---
 # <a name="create-and-export-vendor-payments-using-iso20022-payment-format"></a>Opprette og eksportere leverandørbetalinger ved hjelp av ISO20022-betalingsformat
 
@@ -49,3 +49,6 @@ Dette er den femte prosedyren av fem, som illustrerer leverandørbetalingsproses
     3.    Skriv inn en verdi i feltet **Filnavn**. I dette eksemplet blir den genererte filen SEPA-kompatibel på grunn av EUR-betalingen. ISO20022 kredittoverføring i tillegg til andre leverandørbetalingsformater kan også brukes for å generere betalinger i andre valutaer.
     4.    Angi eller velg en verdi i **Bankkonto**-feltet.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

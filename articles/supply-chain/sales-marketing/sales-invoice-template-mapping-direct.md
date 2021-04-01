@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: d7f104b3f2e132b5b517443577a020fda7fa9af3
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: e12b2ca0fd5df3b2acf6b84d7ff51967e1acc93e
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4975016"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5231774"
 ---
 # <a name="synchronize-sales-invoice-headers-and-lines-directly-from-finance-and-operations-to-sales"></a>Synkronisere fakturahoder og -linjer direkte fra Finance and Operations til Sales
 
@@ -58,7 +58,7 @@ Følgende synkroniseringsoppgaver er påkrevd før synkronisering av salgsfaktur
 
 ## <a name="entity-set"></a>Enhetssett
 
-| Forsyningskjedeadministrasjon                              | Salg          |
+| Supply Chain Management                              | Salg          |
 |------------------------------------------------------|----------------|
 | Eksternt vedlikeholdte hoder for kundesalgsfaktura | Fakturaer       |
 | Eksternt vedlikeholdte linjer for kundesalgsfaktura   | InvoiceDetails |
@@ -137,3 +137,6 @@ Følgende illustrasjoner viser et eksempel på en tilordning av malen i Datainte
 [Synkronisere kontakter direkte fra Sales til kontakter eller kunder i Supply Chain Management](contacts-template-mapping-direct.md)
 
 [Synkronisering av salgsordrer direkte mellom Sales og Supply Chain Management](sales-order-template-mapping-direct-two-ways.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

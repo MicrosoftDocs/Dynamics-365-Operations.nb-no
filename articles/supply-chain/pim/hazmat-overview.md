@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: ff285e7e8bcdd2a3197f0ccae569ac880b796028
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 4ff997214f80d97f6e558d32fbf66663cbc84143
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5007597"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5231894"
 ---
 # <a name="hazardous-materials-overview"></a>Oversikt over farlige materialer
 
@@ -61,3 +61,6 @@ Hvis du vil ha mer informasjon om hvordan du definerer forskrifter og verdier fo
 ## <a name="warehouse-management"></a>Lagerstyring
 
 Når du klargjør en forsendelse i Lagerstyring, vil du kunne skrive ut flere nye rapporter som bruker informasjonen du har definert i Behandling av produktinformasjon. Hvis du vil ha mer informasjon om tilgjengelige rapporter og hvordan du bruker dem, kan du se [Forespørsler og rapporter om farlige materialer](hazmat-reports.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
