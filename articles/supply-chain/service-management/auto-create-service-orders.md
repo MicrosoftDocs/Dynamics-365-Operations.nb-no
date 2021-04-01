@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 53369ef2b7ff93ae4f0523accbc31cc88575a383
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 9c1244cedff23df0350598a3cc876d39d4400b8e
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5010678"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5232140"
 ---
 # <a name="automatically-create-service-orders"></a>Automatisk opprette serviceordrer 
 
@@ -58,3 +58,6 @@ Serviceavtalen varer fra 1. januar 2012 til 31. desember 2012. To serviceavtalel
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

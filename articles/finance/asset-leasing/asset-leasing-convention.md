@@ -17,16 +17,17 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2021-1-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: ea89d54f1ce3a1e971d41623bf44f909f7dfdf09
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 7072c34ccbffc6bf135f55fd594cac4d9ea5a463
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5131299"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5237522"
 ---
 # <a name="asset-leasing-conventions"></a>Leiekonvensjoner for aktiva
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Dette emnet beskriver konvensjoner for leide aktiva. Leiekonvensjoner brukes til å bestemme startdatoen for et leietablå. Hvis leiekonvensjonen er satt til **Ingen**, er startdatoen den samme som startdatoen for leien (det vil si verdien for **Startdato for leie**). Hvis leiekonvensjonen er satt til **Hele måneden**, er startdatoen den første dagen i måneden som startdatoen for leieavtalen faller på.
 
@@ -50,3 +51,6 @@ Følg denne fremgangsmåten for å vise eller tilordne leiekonvensjonen.
 3. Velg **Lagre**.
 
 Når det opprettes en leieavtale, angis startdatoen for hvert tablå automatisk basert på startdatoen som er angitt for leieavtalen og leiekonvensjonen som er angitt for tablået.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b82cc7e4077a1bd50eab30f234c2f63c79e81d84
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d6299325bb8d77cad3977ae3c20790122574b47f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4994696"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5235819"
 ---
 # <a name="close-the-fiscal-year"></a>Lukke regnskapsåret
 
@@ -82,3 +82,6 @@ Denne prosedyren går gjennom årsavslutningsprosessen som overfører saldoer ti
 23. Standardinnstillingen for årsavslutningen er å kjøre satsvis. Det er en anbefalt fremgangsmåte å kjøre langvarige prosesser i satsvis modus. Dette er vanligvis en av disse prosessene, som er grunnen til at standard er å bruke satsvis modus.  
 24. Klikk **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

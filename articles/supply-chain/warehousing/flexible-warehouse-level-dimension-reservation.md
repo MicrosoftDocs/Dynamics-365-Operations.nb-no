@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: bf50b0b8da2859caab4db2394f2d56f7b76793ca
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: b7d855914e59d90dd082c9e9a027604579a2f411
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5004808"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5235418"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Fleksibel retningslinje for dimensjonsreservasjon på lagernivå
 
@@ -358,7 +358,7 @@ Dette scenarioet refererer til verdier og poster som er inkludert i standard dem
     > [!NOTE]
     > Funksjonaliteten **Behandle etter nummerskilt** hjelper deg med å behandle hele nummerskiltet. Hvis du må behandle deler av nummerskiltet, kan du ikke bruke denne funksjonaliteten.
     >
-    > Vi anbefaler at du har separat arbeid generert for hvert nummerskilt. Du oppnår dette resultatet ved å bruke funksjonen **Arbeidshodeskift** på **Arbeidsmal**-siden.
+    > Det anbefales at du har separat arbeid generert for hvert nummerskilt. Du oppnår dette resultatet ved å bruke funksjonen **Arbeidshodeskift** på **Arbeidsmal**-siden.
 
     Nummerskiltet *LP02* plukkes nå for salgsordrelinjer og plasseres på *Rampedør*-lokasjonen. På dette tidspunktet er det klart til å lastes og sendes til kunden.
 
@@ -853,3 +853,6 @@ Følgende tabeller inneholder en oversikt som viser hvordan systemet håndterer 
     - Plukking av overføringsordrer og råvarer
 
 - Regelen for konsolidering av containere for pakking etter direktivenhet har begrensninger. For ordreigangsatte reservasjoner anbefaler vi at du ikke bruker maler for containerbygging i tilfeller der **Pakk etter direktivenhet**-feltet er aktivert. I gjeldende utforming brukes ikke plasseringsdirektiver når det opprettes lagerarbeid. Derfor brukes bare den laveste enheten i enhetssekvensgruppen (beholdningsenheten) under bølgetrinnet containerbruk.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

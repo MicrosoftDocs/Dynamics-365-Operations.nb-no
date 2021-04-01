@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: f9395d39a68cd11f57262c791dd7646975c5e516
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 3453d0f6e6217ab63047410c459dc65d8cc4df5c
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4998509"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5235442"
 ---
 # <a name="synchronize-work-orders-in-field-service-to-sales-orders-in-supply-chain-management"></a>Synkronisere arbeidsordrer i Field Service til salgsordrer i Supply Chain Management
 
@@ -59,7 +59,7 @@ Følgende synkroniseringsoppgaver er påkrevd før synkronisering av salgsordreh
 
 ## <a name="entity-set"></a>Enhetssett
 
-| **Field Service** | **Forsyningskjedeadministrasjon** |
+| **Field Service** | **Supply Chain Management** |
 |-------------------------|-------------------------|
 | msdyn_workorders        | Dataverse-salgsordrehoder |
 | msdyn_workorderservices | Dataverse-salgsordrelinjer   |
@@ -272,3 +272,6 @@ Filter: (msdynce_headersystemstatus ne 690970005) og (msdynce_headersystemstatus
 Filter: (msdynce_headersystemstatus ne 690970005) og (msdynce_headersystemstatus ne 690970000) og (msdynce_orderhasexternalmaintainedproductsonly eq true) og ((msdyn_linestatus eq 690970001) eller (msdynce_headersystemstatus eq 690970004) eller (msdyn_allocated ne true))
 
 [![Maltilordning i Dataintegrering](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

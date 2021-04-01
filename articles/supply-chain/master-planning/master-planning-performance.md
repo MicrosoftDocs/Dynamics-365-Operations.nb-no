@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 380329cbeaa1fc2a2691c8165bc57483d1420aa1
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 54f39793b6e8b24a13a4b80b59ba35f10e8f3da5
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5005083"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5237479"
 ---
 # <a name="improve-master-planning-performance"></a>Forbedre ytelsen for hovedplanlegging
 
@@ -57,7 +57,7 @@ Hvis du endrer innstillingen **Antall oppgaver i oppgavebunt** (det vil si bunts
 
 Du kan angi parameteren **Antall oppgaver i oppgavebunt** i **Ytelse**-delen i **Generelt**-fanen på siden **Parametere for hovedplanlegging** (**Hovedplanlegging \> Oppsett \> Parametere for hovedplanlegging**). Den beste verdien for denne parameteren avhenger av dataene. Derfor anbefaler vi at du starter med verdien **1** og bruker deretter prøve- og feilemetoden til å finne den beste verdien for oppsettet ditt.
 
-Vi anbefaler generelt at du øker antallet oppgaver når antall varer er svært stort (hundretusener). I andre tilfeller bør du redusere antall oppgaver. Ta hensyn til følgende punkt når det gjelde følgende anbefalinger:
+Det anbefales generelt at du øker antallet oppgaver når antall varer er svært stort (hundretusener). I andre tilfeller bør du redusere antall oppgaver. Ta hensyn til følgende punkt når det gjelde følgende anbefalinger:
 
 - I detaljhandels- og distribusjonsindustrier, der det er mange uavhengige varer, bruker du mange hjelpere siden det ikke er noen avhengighet mellom varer. 
 - I produksjonsindustrien, der det er mange stykklister og delte delkomponenter, bruker du færre hjelpere siden avhengigheter mellom varer kan forårsake ventetid.
@@ -77,18 +77,18 @@ Det er vanskelig å forutse hvilket alternativ som er best, fordi hvert tilfelle
 Du kan angi parameteren **Bruk av hurtigminne** i **Ytelse**-delen i **Generelt**-fanen på siden **Parametere for hovedplanlegging** (**Hovedplanlegging \> Oppsett \> Parametere for hovedplanlegging**). Hvor effektiv hurtigbufring er, avhenger av kundedataene. Hvis du for eksempel aldri har behov for hurtigbufrede data, kaster du bare bort minne hvis du lagrer dataene til slutten på planleggingsprosessen. Hvis du i dette tilfellet konfigurerer mindre hurtigbufring, kan ytelsen øke fordi AOS krever mindre minne, og serverressurser frigjøres til andre oppgaver.
 
 > [!TIP]
-> Vi anbefaler generelt at du setter parameteren **Bruk av hurtigminne** til **Maksimum**, fordi parameteren er ment som en funksjon for ytelsesforbedring. Vi anbefaler at du setter parameteren til **Minimum** hvis du kjører lokalt og har begrenset med minne (ca. 2 gigabyte \[GB\]).
+> Det anbefales generelt at du setter parameteren **Bruk av hurtigminne** til **Maksimum**, fordi parameteren er ment som en funksjon for ytelsesforbedring. Det anbefales at du setter parameteren til **Minimum** hvis du kjører lokalt og har begrenset med minne (ca. 2 gigabyte \[GB\]).
 
 ### <a name="number-of-orders-in-firming-bundle"></a>Antall ordrer i autoriseringsbunt
 
 Parameteren **Antall ordrer i autoriseringsbunt** angir det totale antallet ordrer som blir behandlet samtidig av hver tråd/bunt. Den forårsaker parallellisering av den automatiske autoriseringen.
 
-Du kan angi parameteren **Antall ordrer i autoriseringsbunt** i **Ytelse**-delen i **Generelt**-fanen på siden **Parametere for hovedplanlegging** (**Hovedplanlegging \> Oppsett \> Parametere for hovedplanlegging**). Parallellisering av den automatiske autoriseringen er basert på ordrene som må behandles sammen. Hvis denne parameteren for eksempel settes til **50**, kommer hver tråd eller satsvis oppgave til å hente 50 ordrer om gangen og behandle dem sammen. Vi anbefaler at du bruker prøve- og feilemetoden til å finne den beste verdien. Du kan likevel bruke følgende formel til å beregne en første verdi:
+Du kan angi parameteren **Antall ordrer i autoriseringsbunt** i **Ytelse**-delen i **Generelt**-fanen på siden **Parametere for hovedplanlegging** (**Hovedplanlegging \> Oppsett \> Parametere for hovedplanlegging**). Parallellisering av den automatiske autoriseringen er basert på ordrene som må behandles sammen. Hvis denne parameteren for eksempel settes til **50**, kommer hver tråd eller satsvis oppgave til å hente 50 ordrer om gangen og behandle dem sammen. Det anbefales at du bruker prøve- og feilemetoden til å finne den beste verdien. Du kan likevel bruke følgende formel til å beregne en første verdi:
 
 (Antall ordrer per bunt) = (antall behovsvarer ÷ antall tråder)
 
 > [!NOTE]
-> Hvis du setter parameteren **Antall ordrer i autoriseringsbunt** til **0** (null), skjer det ingen parallellisering av den automatiske autoriseringen. Hele prosessen kjører i én satsvis oppgave og har en kumulativ kjøretid. Kjøretiden for hovedplanleggingen kommer derfor til å økes. Vi anbefaler derfor at du setter denne parameteren til en verdi som er større enn **0** (null).
+> Hvis du setter parameteren **Antall ordrer i autoriseringsbunt** til **0** (null), skjer det ingen parallellisering av den automatiske autoriseringen. Hele prosessen kjører i én satsvis oppgave og har en kumulativ kjøretid. Kjøretiden for hovedplanleggingen kommer derfor til å økes. Det anbefales derfor at du setter denne parameteren til en verdi som er større enn **0** (null).
 
 ### <a name="time-fences"></a>Horisonter
 
@@ -161,3 +161,6 @@ Før dekningstrinnet starter, er det et trinn før dekning der varer med dekning
 - **Én krevende rutine om gangen** – Ikke kjør hovedplanlegging sammen med en annen krevende rutine.
 - **Se gjennom øktloggen.**
 - **Filtrering av varer** – Bruk livssyklustilstanden til å utelate varer fra hovedplanleggingskjøringen. (Ikke bruk varenumrene.)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

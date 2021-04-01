@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0010740de764f7b9e7797cc95e2b9187cea2695b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ef7b342ff90c066f6f2cccca08f2ec0e05cf9f8c
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5011035"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5232284"
 ---
 # <a name="report-boms-as-finished"></a>Rapportere stykklister som ferdige
 
@@ -88,3 +88,6 @@ I så fall vurderes de to delene for beholdning av varenummeret KOMP. Fordi det 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

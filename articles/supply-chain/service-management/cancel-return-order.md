@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 55f6a8a2d42826cc80f0db3251d804655d1566ab
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 796ae8b396eaf1f078ee7ede9f477a401c20f494
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5001422"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5232092"
 ---
 # <a name="cancel-a-return-order"></a>Annullere en returordre 
 
@@ -48,3 +48,6 @@ Du kan annullere en returordre i stedet for å slette den når du ønsker å lag
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

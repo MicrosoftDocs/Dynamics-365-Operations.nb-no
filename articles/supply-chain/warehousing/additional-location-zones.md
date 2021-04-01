@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 662725edf5bf8d95be038f7c989b73d8d05fa0df
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 4e8d8ddb65ea49f3d5278db0cac6ae891ab40ecf
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4996432"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5233229"
 ---
 # <a name="additional-location-zones"></a>Ekstra lokasjonssoner
 
@@ -57,3 +57,6 @@ Før du kan bruke *Ekstra lokasjonssone*-funksjonen, må den aktiveres i systeme
 7. Velg **Opprett**.
 8. Du mottar meldinger som angir at nye lokasjoner er lagt til. Velg **Vis meldinger**-knappen for å vise meldingene.
 9. Gå til **Lagerstyring \> Oppsett \> Lager \> Lokasjoner**. De nye lokasjonene vises i listen, og alle sonefeltene er tilgjengelige (det vil si det eksisterende sonefeltet og de nye ekstra sonefeltene).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

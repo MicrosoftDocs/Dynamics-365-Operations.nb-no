@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2020-12-30
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 89eb2f1bcfc73a6a7171a275532b2356e858e87c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d1cde9321259753bd0cacab3706c7f8455598ff3
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4985293"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5232495"
 ---
 # <a name="troubleshoot-cash-flow-forecasting-setup"></a>Feilsøke konfigurasjon av kontantstrømprognose
 
@@ -52,3 +52,6 @@ Kontroller at målingene for "kontantstrømmåling V2" og "LedgerCovLiquidityMea
 ## <a name="have-the-entity-store-entities-been-refreshed"></a>Er enhetslagerenhetene oppdatert?
 
 Du må oppdatere enhetene regelmessig for å sikre at dataene er oppdatert og nøyaktige. Hvis du vil oppdatere en bestemt enhet manuelt, kan du gå til **Systemadministrasjon \> Oppsett \> Enhetslager**, velge enheten og deretter velge **Oppdater**. Dataene kan også oppdateres automatisk. Sett alternativet **Automatisk oppdatering aktivert** til **Ja** på siden **Enhetslager**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

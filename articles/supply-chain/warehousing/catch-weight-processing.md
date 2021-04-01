@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 6ecadb06adce5a0cbf1614c7da8fc65cb801e249
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 45f8d53b5ac212866a9c693e0039631507e14dd7
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5001181"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5233085"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Behandling av Faktisk vekt-produkt med lagerstyring
 
@@ -209,3 +209,6 @@ I tillegg til begrensningene som for øyeblikket gjelder for faktisk vekt-produk
 
 > [!NOTE]
 > Informasjonen ovenfor om faktisk vekt-koder er bare gyldig hvis faktisk vekt-produktet har en sporingsmetode for faktisk vekt-kodedimensjon som spores fullstendig (det vil si hvis parameteren **Sporingsmetode for faktisk vekt-kodedimensjon** i policyen for behandling av faktisk vekt-varer settes til **Produktdimensjoner, sporingsdimensjoner og alle lagringsdimensjoner**). Hvis faktisk vekt-varen bare spores delvis av koder (det vil si hvis parameteren **Sporingsmetode for faktisk vekt-kodedimensjon** i policyen for behandling av faktisk vekt-varer settes til **Produktdimensjoner, sporingsdimensjoner og lagerstatus**), gjelder flere begrensninger. Siden synlighet går tapt mellom koden og lageret i dette tilfellet, støttes ikke enkelte andre scenarier.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

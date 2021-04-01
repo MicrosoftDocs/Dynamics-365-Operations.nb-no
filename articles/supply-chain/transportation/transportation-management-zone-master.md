@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-01-09
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 6527c4887ccd3085d63dd64c104a94e6354f536b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 28c0724a20199595b0e2c19867ccaa4876d37980
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4996469"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5233325"
 ---
 # <a name="transportation-management-zone-master"></a>Sonemal for transportstyring
 
@@ -35,3 +35,6 @@ Transportstyring lar deg dele geografiske lokasjoner inn i soner. Hvis du vil de
 - **Optimaliser ruteplanlegging** – ved å tilordne bestemte ruteplaner til bestemte soner.
 
 Du definerer soner basert på feltverdiene for metadata (for eksempel land, postnummerintervall eller transportørtjeneste) som kvalifiserer hver sone. Sonedefinisjoner kreves ikke hvis transportprisen ikke bruker et sonekonsept.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

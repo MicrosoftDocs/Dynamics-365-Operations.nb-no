@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: fa4074c23baa74983f4922d2d09d7da81c943bfe
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 5de5f4695b4e4ccaaf050c3593d3f7ee0cc32ed8
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4973841"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5232941"
 ---
 # <a name="configure-number-sequences-for-warehouse-flows"></a>Konfigurer nummerserier for lagerflyter
 
@@ -91,3 +91,6 @@ Følg denne fremgangsmåten for å opprette og redigere nummerserier.
     | Kontrollsiffer | Denne segmenttypen legger til et kontrollsiffer, som er en modulus 10-beregning. (Denne virkemåten samsvarer med den eksisterende logikken for nummerskilt-IDer.) For denne segmenttypen er **Verdi**-feltet alltid satt til et cirkumflekstegn (*^*), og **Lengde**-feltet er alltid satt til *1*. |
 
 1. Hvis du vil vise et eksempel på det endelige tallformatet, kontrollerer du **Format**-feltet nederst i hurtigfanen **Segmenter**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

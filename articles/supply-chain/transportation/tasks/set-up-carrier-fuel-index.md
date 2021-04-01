@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 772468fa73e18a02331f877a375a5bd089ece6be
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 09dc948e673bb8be49ac81e5ad2b20bc6c62b286
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5004933"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5233661"
 ---
 # <a name="set-up-a-carrier-fuel-index"></a>Definere en transportørdrivstoffindeks
 
@@ -66,3 +66,6 @@ Denne veiledningen viser hvordan du oppretter et område for drivstoffindeks, en
 12. Klikk på koblingen i den valgte raden i listen.
 13. Klikk på Lagre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

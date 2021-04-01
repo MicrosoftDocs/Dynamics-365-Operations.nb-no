@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9e11bca1e6850f401f52c2ccbea1089a4e71591c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d3dd941eb4e682e61c8b3d10ef0ccd14239f090c
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5003718"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5232719"
 ---
 # <a name="generate-and-run-out-of-box-reports"></a>Generere og kjøre medfølgende rapporter
 
@@ -63,3 +63,6 @@ Demonstrasjonsdatafirmaet USRT brukes til å opprette dette opptaket. Denne regi
 5. Klikk Eksporter.
 6. Klikk PDF.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

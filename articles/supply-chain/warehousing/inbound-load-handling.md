@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 991da4a1056bec933698d043fe45fe4e280f555a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: fec2e7f39569c52ec17c5d0b2474eca720e0180a
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5004833"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5235346"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Lagerhåndtering av innkommende laster for bestillinger
 
@@ -194,7 +194,7 @@ Når brukeren velger **OK** for å bekrefte produktkvitteringspostering, utføre
 | Lagertransaksjon for bestillingen som det er inkludert linjeantall for i posteringsomfanget | <p>Følgende felt er oppdatert (men vær oppmerksom på at det også er flere andre oppdateringer):</p><ul><li>Feltet <b>Mottak</b> settes til <i>Mottatt</i>.</li><li>Feltet <b>Fysisk dato</b> oppdateres med datoen for posteringen.</li></ul> |
 | Lasten som brukeren posterte produktkvitteringen fra | Oppdateringer for lastene vil være avhengig av versjonen som brukes, og innstillingen i feltet **Tillat flere produktkvitteringer per last**. Reglene er beskrevet i tabellen som vises senere i denne delen. |
 
-Feltet **Tillat flere produktkvitteringer per last** lar selskaper velge en policy for mottak av innkommende last. Avhengig av driftsflytene kan firmaer velge å tillate eller forby flere produktkvitteringsposteringer for den samme lasten. Vi anbefaler at logistikkansvarlig setter feltet **Tillat flere produktkvitteringer per last** til én av følgende verdier:
+Feltet **Tillat flere produktkvitteringer per last** lar selskaper velge en policy for mottak av innkommende last. Avhengig av driftsflytene kan firmaer velge å tillate eller forby flere produktkvitteringsposteringer for den samme lasten. Det anbefales at logistikkansvarlig setter feltet **Tillat flere produktkvitteringer per last** til én av følgende verdier:
 
 - **Nei** – Velg denne verdien hvis lagermottaksassistenter alltid registrerer alle ordreantall som ankommer hver last innenfor en angitt tidsramme. Hvis noen av lastantallene ikke er registrert, forutsetter systemet at de ikke ble mottatt eller ikke var i lasten, og bør derfor ikke betraktes som en del av lasten. Produktkvitteringsposteringen som kjøres fra en last, bruker samme antakelse. I tillegg til produktkvittering – oppdatering av alle de registrerte antallene (hovedfunksjonen), deklarerer det at lasten er komplett og lukket for ytterligere behandling. I dette tilfellet blir alle lastlinjeantall automatisk oppdatert til registrerte antall, lastlinjer som ikke har registrerte antall, blir slettet, og laststatusen endres til _Mottatt_.
 - **Ja** – Velg denne verdien hvis lagermottaksassistenter trenger mer tid til å registrere alle antallene i lasten som er ankommet, men i mellomtiden må du produktkvittere – postere antallene som allerede er registrert. I dette tilfellet vil logistikkansvarlig ønske å holde en last åpen, selv etter at produktkvitteringsposteringsjobben er kjørt, slik at gjenstående lastantall kan registreres og produktkvitteringen oppdateres til finans på løpende basis.
@@ -477,3 +477,6 @@ I dette scenarioet vil mottaksassistenten registrere inngående et antall som ov
     - **Antall** – Angi _7_, som er det gjenstående antallet som leverandøren har tillatelse til å levere som en del av det totale bestillingsantallet på 12 (der 10 er det opprinnelige ordreantallet, og 2 er det tillatte overleveringsantallet på 20 prosent). Husk at 5 stk. allerede er registrert mot den første lasten.
 
 Den andre lasten er nå oppdatert med antallet 7, og produktkvitteringen kan oppdateres basert på dette antallet.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

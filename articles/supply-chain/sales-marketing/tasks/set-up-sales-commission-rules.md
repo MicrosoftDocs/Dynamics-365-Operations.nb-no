@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b49865cf9d4073c2da7aa6ccc610b92055c711c1
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ab352e1174dbee65f676c5b9bae45f2947dbcd6f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5010727"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5232260"
 ---
 # <a name="set-up-sales-commission-rules"></a>Definere regler for salgsprovisjon
 
@@ -95,3 +95,6 @@ Denne fremgangsmåten viser hvordan du konfigurerer og aktiverer salgprovisjonsb
 17. Velg provisjonsgruppen du opprettet tidligere, i listen.
 18. Velg **Lagre**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
