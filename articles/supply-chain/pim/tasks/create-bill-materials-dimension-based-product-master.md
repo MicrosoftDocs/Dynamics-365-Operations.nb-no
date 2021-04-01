@@ -15,66 +15,69 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ffe30f1b5aae3e954b527e84648f4dbb4b181513
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 799479c4b4cdf5b61b1f55a61454823558b9013b
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4986910"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5237430"
 ---
-# <a name="create-a-bill-of-materials-for-a-dimension-based-product-master"></a><span data-ttu-id="29b47-103">Opprette en stykkliste for en dimensjonsbasert produktstandard</span><span class="sxs-lookup"><span data-stu-id="29b47-103">Create a bill of materials for a dimension-based product master</span></span>
+# <a name="create-a-bill-of-materials-for-a-dimension-based-product-master"></a><span data-ttu-id="b4baa-103">Opprette en stykkliste for en dimensjonsbasert produktstandard</span><span class="sxs-lookup"><span data-stu-id="b4baa-103">Create a bill of materials for a dimension-based product master</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="29b47-104">For denne prosedyren skal du har fullført de 4 forrige veiledningene i disse trinnene med åtte registreringer.</span><span class="sxs-lookup"><span data-stu-id="29b47-104">For this procedure you should have completed the previous 4 guides in this sequence of eight recordings.</span></span> <span data-ttu-id="29b47-105">De 4 første registreringene definerer dataene som kreves for å fullføre denne prosedyren.</span><span class="sxs-lookup"><span data-stu-id="29b47-105">The first 4 recordings set up data that is required to complete this procedure.</span></span> <span data-ttu-id="29b47-106">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="29b47-106">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="29b47-107">Denne oppgaven håndteres vanligvis av produktdesigneren.</span><span class="sxs-lookup"><span data-stu-id="29b47-107">This task is typically handled by the product designer.</span></span>
+<span data-ttu-id="b4baa-104">For denne prosedyren skal du har fullført de 4 forrige veiledningene i disse trinnene med åtte registreringer.</span><span class="sxs-lookup"><span data-stu-id="b4baa-104">For this procedure you should have completed the previous 4 guides in this sequence of eight recordings.</span></span> <span data-ttu-id="b4baa-105">De 4 første registreringene definerer dataene som kreves for å fullføre denne prosedyren.</span><span class="sxs-lookup"><span data-stu-id="b4baa-105">The first 4 recordings set up data that is required to complete this procedure.</span></span> <span data-ttu-id="b4baa-106">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="b4baa-106">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="b4baa-107">Denne oppgaven håndteres vanligvis av produktdesigneren.</span><span class="sxs-lookup"><span data-stu-id="b4baa-107">This task is typically handled by the product designer.</span></span>
 
 
-## <a name="select-the-product"></a><span data-ttu-id="29b47-108">Velg produkt</span><span class="sxs-lookup"><span data-stu-id="29b47-108">Select the product</span></span>
-1. <span data-ttu-id="29b47-109">Klikk på Vedlikehold av frigitt produkt.</span><span class="sxs-lookup"><span data-stu-id="29b47-109">Click Released product maintenance.</span></span>
-2. <span data-ttu-id="29b47-110">Klikk på Frigitte produkter.</span><span class="sxs-lookup"><span data-stu-id="29b47-110">Click Released products.</span></span>
-3. <span data-ttu-id="29b47-111">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="29b47-111">In the list, mark the selected row.</span></span>
-    * <span data-ttu-id="29b47-112">Finn den frigitte produktstandarden med dimensjonsbasert konfigurasjonsteknologi, som du opprettet i den første oppgaveveiledningen i disse trinnene.</span><span class="sxs-lookup"><span data-stu-id="29b47-112">Find the released product master with dimension-based configuration technology that you created in the first task guide in this sequence.</span></span>  
-4. <span data-ttu-id="29b47-113">Klikk på Utvikling i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="29b47-113">On the Action Pane, click Engineer.</span></span>
-5. <span data-ttu-id="29b47-114">Klikk på Stykklisteversjon.</span><span class="sxs-lookup"><span data-stu-id="29b47-114">Click BOM versions.</span></span>
+## <a name="select-the-product"></a><span data-ttu-id="b4baa-108">Velg produkt</span><span class="sxs-lookup"><span data-stu-id="b4baa-108">Select the product</span></span>
+1. <span data-ttu-id="b4baa-109">Klikk på Vedlikehold av frigitt produkt.</span><span class="sxs-lookup"><span data-stu-id="b4baa-109">Click Released product maintenance.</span></span>
+2. <span data-ttu-id="b4baa-110">Klikk på Frigitte produkter.</span><span class="sxs-lookup"><span data-stu-id="b4baa-110">Click Released products.</span></span>
+3. <span data-ttu-id="b4baa-111">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="b4baa-111">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="b4baa-112">Finn den frigitte produktstandarden med dimensjonsbasert konfigurasjonsteknologi, som du opprettet i den første oppgaveveiledningen i disse trinnene.</span><span class="sxs-lookup"><span data-stu-id="b4baa-112">Find the released product master with dimension-based configuration technology that you created in the first task guide in this sequence.</span></span>  
+4. <span data-ttu-id="b4baa-113">Klikk på Utvikling i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="b4baa-113">On the Action Pane, click Engineer.</span></span>
+5. <span data-ttu-id="b4baa-114">Klikk på Stykklisteversjon.</span><span class="sxs-lookup"><span data-stu-id="b4baa-114">Click BOM versions.</span></span>
 
-## <a name="create-new-bom-and-bom-version"></a><span data-ttu-id="29b47-115">Opprette ny stykkliste og stykklisteversjon</span><span class="sxs-lookup"><span data-stu-id="29b47-115">Create new BOM and BOM version</span></span>
-1. <span data-ttu-id="29b47-116">Klikk på Ny.</span><span class="sxs-lookup"><span data-stu-id="29b47-116">Click New.</span></span>
-2. <span data-ttu-id="29b47-117">Klikk på Stykkliste og stykklisteversjon.</span><span class="sxs-lookup"><span data-stu-id="29b47-117">Click BOM and BOM version.</span></span>
-3. <span data-ttu-id="29b47-118">Skriv inn en verdi i Navn-feltet.</span><span class="sxs-lookup"><span data-stu-id="29b47-118">In the Name field, type a value.</span></span>
-    * <span data-ttu-id="29b47-119">Angi et område</span><span class="sxs-lookup"><span data-stu-id="29b47-119">Setting a site</span></span>  
-    * <span data-ttu-id="29b47-120">Vi angir ikke et bestemt område for stykklisten i denne prosedyren.</span><span class="sxs-lookup"><span data-stu-id="29b47-120">In this procedure we don't set a specific site for the BOM.</span></span>  
-4. <span data-ttu-id="29b47-121">Klikk på OK.</span><span class="sxs-lookup"><span data-stu-id="29b47-121">Click OK.</span></span>
-5. <span data-ttu-id="29b47-122">Klikk på Ny.</span><span class="sxs-lookup"><span data-stu-id="29b47-122">Click New.</span></span>
-    * <span data-ttu-id="29b47-123">I denne fremgangsmåten skal vi legge til fire linjer i stykklisten.</span><span class="sxs-lookup"><span data-stu-id="29b47-123">In this procedure we will add four lines to the BOM.</span></span> <span data-ttu-id="29b47-124">To linjer representerer kabelalternativer og to linjer representerer kabinettalternativer.</span><span class="sxs-lookup"><span data-stu-id="29b47-124">Two lines represent cable options and two lines represent cabinet options.</span></span>  
-6. <span data-ttu-id="29b47-125">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="29b47-125">In the list, mark the selected row.</span></span>
-7. <span data-ttu-id="29b47-126">Angi eller velg en verdi i Varenummer-feltet.</span><span class="sxs-lookup"><span data-stu-id="29b47-126">In the Item number field, enter or select a value.</span></span>
-    * <span data-ttu-id="29b47-127">Velge varenummer A0001, HDMI 6' Kabler.</span><span class="sxs-lookup"><span data-stu-id="29b47-127">Select item number A0001, HDMI 6' Cables.</span></span>  
-8. <span data-ttu-id="29b47-128">Angi eller velg en verdi i feltet Konfigurasjonsgruppe.</span><span class="sxs-lookup"><span data-stu-id="29b47-128">In the Configuration group field, enter or select a value.</span></span>
-    * <span data-ttu-id="29b47-129">Velg konfigurasjonsgruppen Kabel, som ble opprettet i veiledning 4 i disse trinnene.</span><span class="sxs-lookup"><span data-stu-id="29b47-129">Select the Cable configuration group created in guide 4 in this sequence.</span></span>  
-9. <span data-ttu-id="29b47-130">Klikk på Ny.</span><span class="sxs-lookup"><span data-stu-id="29b47-130">Click New.</span></span>
-    * <span data-ttu-id="29b47-131">Velge varenummer A0002, HDMI 12' Kabler.</span><span class="sxs-lookup"><span data-stu-id="29b47-131">Select item number A0002, HDMI 12' Cables.</span></span>  
-10. <span data-ttu-id="29b47-132">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="29b47-132">In the list, mark the selected row.</span></span>
-11. <span data-ttu-id="29b47-133">Angi eller velg en verdi i Varenummer-feltet.</span><span class="sxs-lookup"><span data-stu-id="29b47-133">In the Item number field, enter or select a value.</span></span>
-12. <span data-ttu-id="29b47-134">Angi eller velg en verdi i feltet Konfigurasjonsgruppe.</span><span class="sxs-lookup"><span data-stu-id="29b47-134">In the Configuration group field, enter or select a value.</span></span>
-    * <span data-ttu-id="29b47-135">Velg konfigurasjonsgruppen Kabel.</span><span class="sxs-lookup"><span data-stu-id="29b47-135">Select the Cable configuration group again.</span></span>  
-13. <span data-ttu-id="29b47-136">Klikk på Ny.</span><span class="sxs-lookup"><span data-stu-id="29b47-136">Click New.</span></span>
-14. <span data-ttu-id="29b47-137">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="29b47-137">In the list, mark the selected row.</span></span>
-15. <span data-ttu-id="29b47-138">Angi eller velg en verdi i Varenummer-feltet.</span><span class="sxs-lookup"><span data-stu-id="29b47-138">In the Item number field, enter or select a value.</span></span>
-    * <span data-ttu-id="29b47-139">Velge varenummer D0002 Kabinett.</span><span class="sxs-lookup"><span data-stu-id="29b47-139">Select item number D0002 Cabinet.</span></span>  
-16. <span data-ttu-id="29b47-140">Angi eller velg en verdi i feltet Konfigurasjonsgruppe.</span><span class="sxs-lookup"><span data-stu-id="29b47-140">In the Configuration group field, enter or select a value.</span></span>
-    * <span data-ttu-id="29b47-141">Velg konfigurasjonsgruppen Kabinett for denne stykklistelinjen.</span><span class="sxs-lookup"><span data-stu-id="29b47-141">Select the Cabinet configuration group for this BOM line.</span></span>  
-17. <span data-ttu-id="29b47-142">Klikk på Ny.</span><span class="sxs-lookup"><span data-stu-id="29b47-142">Click New.</span></span>
-18. <span data-ttu-id="29b47-143">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="29b47-143">In the list, mark the selected row.</span></span>
-19. <span data-ttu-id="29b47-144">Angi eller velg en verdi i Varenummer-feltet.</span><span class="sxs-lookup"><span data-stu-id="29b47-144">In the Item number field, enter or select a value.</span></span>
-    * <span data-ttu-id="29b47-145">Velg varenummer M0007 StandardCabinet som siste stykklistelinje.</span><span class="sxs-lookup"><span data-stu-id="29b47-145">Select Item number M0007 StandardCabinet as the last BOM line.</span></span>  
-20. <span data-ttu-id="29b47-146">Angi eller velg en verdi i feltet Konfigurasjonsgruppe.</span><span class="sxs-lookup"><span data-stu-id="29b47-146">In the Configuration group field, enter or select a value.</span></span>
-    * <span data-ttu-id="29b47-147">Velg konfigurasjonsgruppen Kabinett for den siste stykklistelinjen.</span><span class="sxs-lookup"><span data-stu-id="29b47-147">Select the Cabinet configuration group for the laste BOM line.</span></span>  
+## <a name="create-new-bom-and-bom-version"></a><span data-ttu-id="b4baa-115">Opprette ny stykkliste og stykklisteversjon</span><span class="sxs-lookup"><span data-stu-id="b4baa-115">Create new BOM and BOM version</span></span>
+1. <span data-ttu-id="b4baa-116">Klikk på Ny.</span><span class="sxs-lookup"><span data-stu-id="b4baa-116">Click New.</span></span>
+2. <span data-ttu-id="b4baa-117">Klikk på Stykkliste og stykklisteversjon.</span><span class="sxs-lookup"><span data-stu-id="b4baa-117">Click BOM and BOM version.</span></span>
+3. <span data-ttu-id="b4baa-118">Skriv inn en verdi i Navn-feltet.</span><span class="sxs-lookup"><span data-stu-id="b4baa-118">In the Name field, type a value.</span></span>
+    * <span data-ttu-id="b4baa-119">Angi et område</span><span class="sxs-lookup"><span data-stu-id="b4baa-119">Setting a site</span></span>  
+    * <span data-ttu-id="b4baa-120">Vi angir ikke et bestemt område for stykklisten i denne prosedyren.</span><span class="sxs-lookup"><span data-stu-id="b4baa-120">In this procedure we don't set a specific site for the BOM.</span></span>  
+4. <span data-ttu-id="b4baa-121">Klikk på OK.</span><span class="sxs-lookup"><span data-stu-id="b4baa-121">Click OK.</span></span>
+5. <span data-ttu-id="b4baa-122">Klikk på Ny.</span><span class="sxs-lookup"><span data-stu-id="b4baa-122">Click New.</span></span>
+    * <span data-ttu-id="b4baa-123">I denne fremgangsmåten skal vi legge til fire linjer i stykklisten.</span><span class="sxs-lookup"><span data-stu-id="b4baa-123">In this procedure we will add four lines to the BOM.</span></span> <span data-ttu-id="b4baa-124">To linjer representerer kabelalternativer og to linjer representerer kabinettalternativer.</span><span class="sxs-lookup"><span data-stu-id="b4baa-124">Two lines represent cable options and two lines represent cabinet options.</span></span>  
+6. <span data-ttu-id="b4baa-125">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="b4baa-125">In the list, mark the selected row.</span></span>
+7. <span data-ttu-id="b4baa-126">Angi eller velg en verdi i Varenummer-feltet.</span><span class="sxs-lookup"><span data-stu-id="b4baa-126">In the Item number field, enter or select a value.</span></span>
+    * <span data-ttu-id="b4baa-127">Velge varenummer A0001, HDMI 6' Kabler.</span><span class="sxs-lookup"><span data-stu-id="b4baa-127">Select item number A0001, HDMI 6' Cables.</span></span>  
+8. <span data-ttu-id="b4baa-128">Angi eller velg en verdi i feltet Konfigurasjonsgruppe.</span><span class="sxs-lookup"><span data-stu-id="b4baa-128">In the Configuration group field, enter or select a value.</span></span>
+    * <span data-ttu-id="b4baa-129">Velg konfigurasjonsgruppen Kabel, som ble opprettet i veiledning 4 i disse trinnene.</span><span class="sxs-lookup"><span data-stu-id="b4baa-129">Select the Cable configuration group created in guide 4 in this sequence.</span></span>  
+9. <span data-ttu-id="b4baa-130">Klikk på Ny.</span><span class="sxs-lookup"><span data-stu-id="b4baa-130">Click New.</span></span>
+    * <span data-ttu-id="b4baa-131">Velge varenummer A0002, HDMI 12' Kabler.</span><span class="sxs-lookup"><span data-stu-id="b4baa-131">Select item number A0002, HDMI 12' Cables.</span></span>  
+10. <span data-ttu-id="b4baa-132">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="b4baa-132">In the list, mark the selected row.</span></span>
+11. <span data-ttu-id="b4baa-133">Angi eller velg en verdi i Varenummer-feltet.</span><span class="sxs-lookup"><span data-stu-id="b4baa-133">In the Item number field, enter or select a value.</span></span>
+12. <span data-ttu-id="b4baa-134">Angi eller velg en verdi i feltet Konfigurasjonsgruppe.</span><span class="sxs-lookup"><span data-stu-id="b4baa-134">In the Configuration group field, enter or select a value.</span></span>
+    * <span data-ttu-id="b4baa-135">Velg konfigurasjonsgruppen Kabel.</span><span class="sxs-lookup"><span data-stu-id="b4baa-135">Select the Cable configuration group again.</span></span>  
+13. <span data-ttu-id="b4baa-136">Klikk på Ny.</span><span class="sxs-lookup"><span data-stu-id="b4baa-136">Click New.</span></span>
+14. <span data-ttu-id="b4baa-137">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="b4baa-137">In the list, mark the selected row.</span></span>
+15. <span data-ttu-id="b4baa-138">Angi eller velg en verdi i Varenummer-feltet.</span><span class="sxs-lookup"><span data-stu-id="b4baa-138">In the Item number field, enter or select a value.</span></span>
+    * <span data-ttu-id="b4baa-139">Velge varenummer D0002 Kabinett.</span><span class="sxs-lookup"><span data-stu-id="b4baa-139">Select item number D0002 Cabinet.</span></span>  
+16. <span data-ttu-id="b4baa-140">Angi eller velg en verdi i feltet Konfigurasjonsgruppe.</span><span class="sxs-lookup"><span data-stu-id="b4baa-140">In the Configuration group field, enter or select a value.</span></span>
+    * <span data-ttu-id="b4baa-141">Velg konfigurasjonsgruppen Kabinett for denne stykklistelinjen.</span><span class="sxs-lookup"><span data-stu-id="b4baa-141">Select the Cabinet configuration group for this BOM line.</span></span>  
+17. <span data-ttu-id="b4baa-142">Klikk på Ny.</span><span class="sxs-lookup"><span data-stu-id="b4baa-142">Click New.</span></span>
+18. <span data-ttu-id="b4baa-143">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="b4baa-143">In the list, mark the selected row.</span></span>
+19. <span data-ttu-id="b4baa-144">Angi eller velg en verdi i Varenummer-feltet.</span><span class="sxs-lookup"><span data-stu-id="b4baa-144">In the Item number field, enter or select a value.</span></span>
+    * <span data-ttu-id="b4baa-145">Velg varenummer M0007 StandardCabinet som siste stykklistelinje.</span><span class="sxs-lookup"><span data-stu-id="b4baa-145">Select Item number M0007 StandardCabinet as the last BOM line.</span></span>  
+20. <span data-ttu-id="b4baa-146">Angi eller velg en verdi i feltet Konfigurasjonsgruppe.</span><span class="sxs-lookup"><span data-stu-id="b4baa-146">In the Configuration group field, enter or select a value.</span></span>
+    * <span data-ttu-id="b4baa-147">Velg konfigurasjonsgruppen Kabinett for den siste stykklistelinjen.</span><span class="sxs-lookup"><span data-stu-id="b4baa-147">Select the Cabinet configuration group for the laste BOM line.</span></span>  
 
-## <a name="approve-and-activate"></a><span data-ttu-id="29b47-148">Godkjenn og aktiver</span><span class="sxs-lookup"><span data-stu-id="29b47-148">Approve and activate</span></span>
-1. <span data-ttu-id="29b47-149">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="29b47-149">Close the page.</span></span>
-2. <span data-ttu-id="29b47-150">Klikk på Godkjenn.</span><span class="sxs-lookup"><span data-stu-id="29b47-150">Click Approve.</span></span>
-3. <span data-ttu-id="29b47-151">Angi eller velg en verdi i feltet Godkjent av.</span><span class="sxs-lookup"><span data-stu-id="29b47-151">In the Approved by field, enter or select a value.</span></span>
-4. <span data-ttu-id="29b47-152">Velg Ja i Vil du også godkjenne stykklisten? .</span><span class="sxs-lookup"><span data-stu-id="29b47-152">Select Yes in the Do you also want to approve the bill of materials? field.</span></span>
-5. <span data-ttu-id="29b47-153">Klikk på OK.</span><span class="sxs-lookup"><span data-stu-id="29b47-153">Click OK.</span></span>
-6. <span data-ttu-id="29b47-154">Klikk på Aktiver.</span><span class="sxs-lookup"><span data-stu-id="29b47-154">Click Activate.</span></span>
+## <a name="approve-and-activate"></a><span data-ttu-id="b4baa-148">Godkjenn og aktiver</span><span class="sxs-lookup"><span data-stu-id="b4baa-148">Approve and activate</span></span>
+1. <span data-ttu-id="b4baa-149">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="b4baa-149">Close the page.</span></span>
+2. <span data-ttu-id="b4baa-150">Klikk på Godkjenn.</span><span class="sxs-lookup"><span data-stu-id="b4baa-150">Click Approve.</span></span>
+3. <span data-ttu-id="b4baa-151">Angi eller velg en verdi i feltet Godkjent av.</span><span class="sxs-lookup"><span data-stu-id="b4baa-151">In the Approved by field, enter or select a value.</span></span>
+4. <span data-ttu-id="b4baa-152">Velg Ja i Vil du også godkjenne stykklisten? .</span><span class="sxs-lookup"><span data-stu-id="b4baa-152">Select Yes in the Do you also want to approve the bill of materials? field.</span></span>
+5. <span data-ttu-id="b4baa-153">Klikk på OK.</span><span class="sxs-lookup"><span data-stu-id="b4baa-153">Click OK.</span></span>
+6. <span data-ttu-id="b4baa-154">Klikk på Aktiver.</span><span class="sxs-lookup"><span data-stu-id="b4baa-154">Click Activate.</span></span>
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
