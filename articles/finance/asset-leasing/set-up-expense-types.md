@@ -17,44 +17,47 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2019-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 3ab31b16c6ae07466d7655832701e71092064fe1
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 1538826f140393eec59be9ff4df5242d5ced9d8f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969509"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5249755"
 ---
-# <a name="set-up-expense-types"></a><span data-ttu-id="1316b-103">Definere utgiftstyper</span><span class="sxs-lookup"><span data-stu-id="1316b-103">Set up expense types</span></span>
+# <a name="set-up-expense-types"></a><span data-ttu-id="06d49-103">Definere utgiftstyper</span><span class="sxs-lookup"><span data-stu-id="06d49-103">Set up expense types</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="1316b-104">Dette emnet forklarer hvordan du definerer utgiftstyper i aktivaleie.</span><span class="sxs-lookup"><span data-stu-id="1316b-104">This topic explains how to set up expense types in Asset leasing.</span></span> <span data-ttu-id="1316b-105">Kostnader som ikke representeres av betalingsplanen, kalles *utgiftskostnader*.</span><span class="sxs-lookup"><span data-stu-id="1316b-105">Costs that aren't represented by the payment schedule are known as *expense costs*.</span></span> <span data-ttu-id="1316b-106">Eksempler på disse kostnadene inkluderer eiendomsavgifter, vedlikeholdskostnader for vanlige områder og forsikringsutgifter.</span><span class="sxs-lookup"><span data-stu-id="1316b-106">Examples of these costs include property taxes, common area maintenance costs, and insurance expenses.</span></span>
+<span data-ttu-id="06d49-104">Dette emnet forklarer hvordan du definerer utgiftstyper i aktivaleie.</span><span class="sxs-lookup"><span data-stu-id="06d49-104">This topic explains how to set up expense types in Asset leasing.</span></span> <span data-ttu-id="06d49-105">Kostnader som ikke representeres av betalingsplanen, kalles *utgiftskostnader*.</span><span class="sxs-lookup"><span data-stu-id="06d49-105">Costs that aren't represented by the payment schedule are known as *expense costs*.</span></span> <span data-ttu-id="06d49-106">Eksempler på disse kostnadene inkluderer eiendomsavgifter, vedlikeholdskostnader for vanlige områder og forsikringsutgifter.</span><span class="sxs-lookup"><span data-stu-id="06d49-106">Examples of these costs include property taxes, common area maintenance costs, and insurance expenses.</span></span>
 
-## <a name="add-an-administrative-expense-type"></a><span data-ttu-id="1316b-107">Legge til en administrativ utgiftstype</span><span class="sxs-lookup"><span data-stu-id="1316b-107">Add an administrative expense type</span></span>
+## <a name="add-an-administrative-expense-type"></a><span data-ttu-id="06d49-107">Legge til en administrativ utgiftstype</span><span class="sxs-lookup"><span data-stu-id="06d49-107">Add an administrative expense type</span></span>
 
-1. <span data-ttu-id="1316b-108">Gå til **Aktivaleie \> Oppsett \> Utgiftstyper**.</span><span class="sxs-lookup"><span data-stu-id="1316b-108">Go to **Asset leasing \> Setup \> Expense types**.</span></span>
-2. <span data-ttu-id="1316b-109">Velg **Ny**.</span><span class="sxs-lookup"><span data-stu-id="1316b-109">Select **New**.</span></span>
-3. <span data-ttu-id="1316b-110">I de aktuelle feltene angir du den nye utgiftstypen og en beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="1316b-110">In the appropriate fields, enter the new expense type and a description.</span></span>
+1. <span data-ttu-id="06d49-108">Gå til **Aktivaleie \> Oppsett \> Utgiftstyper**.</span><span class="sxs-lookup"><span data-stu-id="06d49-108">Go to **Asset leasing \> Setup \> Expense types**.</span></span>
+2. <span data-ttu-id="06d49-109">Velg **Ny**.</span><span class="sxs-lookup"><span data-stu-id="06d49-109">Select **New**.</span></span>
+3. <span data-ttu-id="06d49-110">I de aktuelle feltene angir du den nye utgiftstypen og en beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="06d49-110">In the appropriate fields, enter the new expense type and a description.</span></span>
 
-## <a name="assign-accounts-to-administrative-costs"></a><span data-ttu-id="1316b-111">Tilordne kontoer til administrative kostnader</span><span class="sxs-lookup"><span data-stu-id="1316b-111">Assign accounts to administrative costs</span></span>
+## <a name="assign-accounts-to-administrative-costs"></a><span data-ttu-id="06d49-111">Tilordne kontoer til administrative kostnader</span><span class="sxs-lookup"><span data-stu-id="06d49-111">Assign accounts to administrative costs</span></span>
 
-<span data-ttu-id="1316b-112">Deretter bør du knytte kontoer til utgiftstypene.</span><span class="sxs-lookup"><span data-stu-id="1316b-112">Next, you should associate accounts with the expense types.</span></span> <span data-ttu-id="1316b-113">Disse kontoene blir debitert når utgiftsplanoppføringer posteres.</span><span class="sxs-lookup"><span data-stu-id="1316b-113">These accounts will be debited when expense schedule entries are posted.</span></span> <span data-ttu-id="1316b-114">Motkontoen angis på linjene for **betalingsplan for fullbyrdelseskostnad** på hver leieavtale.</span><span class="sxs-lookup"><span data-stu-id="1316b-114">The offset account is specified on the **Executory costs payment schedule** lines on each lease.</span></span>
+<span data-ttu-id="06d49-112">Deretter bør du knytte kontoer til utgiftstypene.</span><span class="sxs-lookup"><span data-stu-id="06d49-112">Next, you should associate accounts with the expense types.</span></span> <span data-ttu-id="06d49-113">Disse kontoene blir debitert når utgiftsplanoppføringer posteres.</span><span class="sxs-lookup"><span data-stu-id="06d49-113">These accounts will be debited when expense schedule entries are posted.</span></span> <span data-ttu-id="06d49-114">Motkontoen angis på linjene for **betalingsplan for fullbyrdelseskostnad** på hver leieavtale.</span><span class="sxs-lookup"><span data-stu-id="06d49-114">The offset account is specified on the **Executory costs payment schedule** lines on each lease.</span></span>
 
-1. <span data-ttu-id="1316b-115">Gå til **Aktivaleie \> Oppsett \> Parametere for aktivaleie**.</span><span class="sxs-lookup"><span data-stu-id="1316b-115">Go to **Asset leasing \> Setup \> Asset leasing parameters**.</span></span>
-2. <span data-ttu-id="1316b-116">I kategorien **Kontoer** på hurtigfanen for **fullbyrdelseskostnad** i feltet **Utgiftstype** velger du utgiftstype.</span><span class="sxs-lookup"><span data-stu-id="1316b-116">On the **Accounts** tab, on the **Executory costs** FastTab, in the **Expense type** field, select the expense type.</span></span>
-3. <span data-ttu-id="1316b-117">Velg **Legg til**.</span><span class="sxs-lookup"><span data-stu-id="1316b-117">Select **Add**.</span></span>
-4. <span data-ttu-id="1316b-118">I feltet for **tablåtype** velger du tablåtypen for å koble til de administrative kostnadene.</span><span class="sxs-lookup"><span data-stu-id="1316b-118">In the **Book type** field, select the book type to link to the administrative costs.</span></span>
+1. <span data-ttu-id="06d49-115">Gå til **Aktivaleie \> Oppsett \> Parametere for aktivaleie**.</span><span class="sxs-lookup"><span data-stu-id="06d49-115">Go to **Asset leasing \> Setup \> Asset leasing parameters**.</span></span>
+2. <span data-ttu-id="06d49-116">I kategorien **Kontoer** på hurtigfanen for **fullbyrdelseskostnad** i feltet **Utgiftstype** velger du utgiftstype.</span><span class="sxs-lookup"><span data-stu-id="06d49-116">On the **Accounts** tab, on the **Executory costs** FastTab, in the **Expense type** field, select the expense type.</span></span>
+3. <span data-ttu-id="06d49-117">Velg **Legg til**.</span><span class="sxs-lookup"><span data-stu-id="06d49-117">Select **Add**.</span></span>
+4. <span data-ttu-id="06d49-118">I feltet for **tablåtype** velger du tablåtypen for å koble til de administrative kostnadene.</span><span class="sxs-lookup"><span data-stu-id="06d49-118">In the **Book type** field, select the book type to link to the administrative costs.</span></span>
 
     > [!NOTE]
-    > <span data-ttu-id="1316b-119">Flere tablåtyper kan knyttes til den samme utgiftskontoen.</span><span class="sxs-lookup"><span data-stu-id="1316b-119">Multiple book types can be linked to the same expense account.</span></span>
+    > <span data-ttu-id="06d49-119">Flere tablåtyper kan knyttes til den samme utgiftskontoen.</span><span class="sxs-lookup"><span data-stu-id="06d49-119">Multiple book types can be linked to the same expense account.</span></span>
 
-5. <span data-ttu-id="1316b-120">I **Kontokode**-feltet angir du hvilke leieavtaler tablået skal brukes på:</span><span class="sxs-lookup"><span data-stu-id="1316b-120">In the **Account code** field, specify which leases the book should be applied to:</span></span>
+5. <span data-ttu-id="06d49-120">I **Kontokode**-feltet angir du hvilke leieavtaler tablået skal brukes på:</span><span class="sxs-lookup"><span data-stu-id="06d49-120">In the **Account code** field, specify which leases the book should be applied to:</span></span>
 
-    - <span data-ttu-id="1316b-121">**Alle** – Bruk tablået på alle leieavtaler.</span><span class="sxs-lookup"><span data-stu-id="1316b-121">**All** – Apply the book to all leases.</span></span>
-    - <span data-ttu-id="1316b-122">**Gruppe** – Bruk tablået på en bestemt gruppe leieavtaler.</span><span class="sxs-lookup"><span data-stu-id="1316b-122">**Group** – Apply the book to a specific group of leases.</span></span>
-    - <span data-ttu-id="1316b-123">**Tabell** – Bruk tablået på spesifikke leieavtaler.</span><span class="sxs-lookup"><span data-stu-id="1316b-123">**Table** – Apply the book to specific leases.</span></span>
+    - <span data-ttu-id="06d49-121">**Alle** – Bruk tablået på alle leieavtaler.</span><span class="sxs-lookup"><span data-stu-id="06d49-121">**All** – Apply the book to all leases.</span></span>
+    - <span data-ttu-id="06d49-122">**Gruppe** – Bruk tablået på en bestemt gruppe leieavtaler.</span><span class="sxs-lookup"><span data-stu-id="06d49-122">**Group** – Apply the book to a specific group of leases.</span></span>
+    - <span data-ttu-id="06d49-123">**Tabell** – Bruk tablået på spesifikke leieavtaler.</span><span class="sxs-lookup"><span data-stu-id="06d49-123">**Table** – Apply the book to specific leases.</span></span>
 
-6. <span data-ttu-id="1316b-124">Hvis du har valgt **Gruppe** eller **Tabell** i **Kontokode**, velger du et kontonummer eller gruppenummer i feltet **Konto-/gruppenummer**.</span><span class="sxs-lookup"><span data-stu-id="1316b-124">If you selected **Group** or **Table** in the **Account code** field, select an account number or group number in the **Account/Group number** field.</span></span>
-7. <span data-ttu-id="1316b-125">I de aktuelle feltene velger du hovedkonto for finansiell leie og hovedkonto for gjeldende leie.</span><span class="sxs-lookup"><span data-stu-id="1316b-125">In the appropriate fields, select the finance lease main account and the operating lease main account.</span></span>
+6. <span data-ttu-id="06d49-124">Hvis du har valgt **Gruppe** eller **Tabell** i **Kontokode**, velger du et kontonummer eller gruppenummer i feltet **Konto-/gruppenummer**.</span><span class="sxs-lookup"><span data-stu-id="06d49-124">If you selected **Group** or **Table** in the **Account code** field, select an account number or group number in the **Account/Group number** field.</span></span>
+7. <span data-ttu-id="06d49-125">I de aktuelle feltene velger du hovedkonto for finansiell leie og hovedkonto for gjeldende leie.</span><span class="sxs-lookup"><span data-stu-id="06d49-125">In the appropriate fields, select the finance lease main account and the operating lease main account.</span></span>
 
-<span data-ttu-id="1316b-126">Når du har fullført disse trinnene, kan du legge til utgifter ved hjelp av linjene i **betalingsplan for fullbyrdelseskostnad** på siden **Leiedetaljer** for en valgt leieavtale.</span><span class="sxs-lookup"><span data-stu-id="1316b-126">When you've completed these steps, you can add expenses through the **Executory costs payment schedule** lines on the **Lease details** page of a selected lease.</span></span> <span data-ttu-id="1316b-127">Du kan også legge til utgifter når du oppretter en ny leieavtale.</span><span class="sxs-lookup"><span data-stu-id="1316b-127">Alternatively, you can add expenses when you create a new lease.</span></span>
+<span data-ttu-id="06d49-126">Når du har fullført disse trinnene, kan du legge til utgifter ved hjelp av linjene i **betalingsplan for fullbyrdelseskostnad** på siden **Leiedetaljer** for en valgt leieavtale.</span><span class="sxs-lookup"><span data-stu-id="06d49-126">When you've completed these steps, you can add expenses through the **Executory costs payment schedule** lines on the **Lease details** page of a selected lease.</span></span> <span data-ttu-id="06d49-127">Du kan også legge til utgifter når du oppretter en ny leieavtale.</span><span class="sxs-lookup"><span data-stu-id="06d49-127">Alternatively, you can add expenses when you create a new lease.</span></span>
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
