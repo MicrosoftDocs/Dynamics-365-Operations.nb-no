@@ -17,23 +17,23 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 998d4dbabec74528b4acb9e797faef0c449e7c28
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: b3a0ffe81f4b56bdd388dc1ce2c00a99e0278cdf
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021247"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5262844"
 ---
-# <a name="audit-policy-rules"></a><span data-ttu-id="bef4c-106">Overvåkingspolicyregler</span><span class="sxs-lookup"><span data-stu-id="bef4c-106">Audit policy rules</span></span>
+# <a name="audit-policy-rules"></a><span data-ttu-id="319a6-106">Overvåkingspolicyregler</span><span class="sxs-lookup"><span data-stu-id="319a6-106">Audit policy rules</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="bef4c-107">Du kan bruke overvåkingspolicyer for å evaluere reiseregninger, leverandørfakturaer og bestillinger for å være sikker på at de samsvarer med policyregler du oppretter.</span><span class="sxs-lookup"><span data-stu-id="bef4c-107">You can use audit policies to evaluate expense reports, vendor invoices, and purchase orders to make sure that they comply with policy rules that you create.</span></span> <span data-ttu-id="bef4c-108">Alle reglene som er knyttet til en overvåkingspolicy, kjøres i satsvis modus i henhold til en tidsplan du angir.</span><span class="sxs-lookup"><span data-stu-id="bef4c-108">All of the rules that are associated with an audit policy are run in batch mode, according to a schedule that you specify.</span></span>  <span data-ttu-id="bef4c-109">Hver policyregel er en forekomst av en policyregeltype.</span><span class="sxs-lookup"><span data-stu-id="bef4c-109">Each policy rule is an instance of a policy rule type.</span></span> <span data-ttu-id="bef4c-110">For hver policyregeltype kan bare én policyregel være aktiv om gangen.</span><span class="sxs-lookup"><span data-stu-id="bef4c-110">For each policy rule type, only one policy rule can be active at a time.</span></span> 
+<span data-ttu-id="319a6-107">Du kan bruke overvåkingspolicyer for å evaluere reiseregninger, leverandørfakturaer og bestillinger for å være sikker på at de samsvarer med policyregler du oppretter.</span><span class="sxs-lookup"><span data-stu-id="319a6-107">You can use audit policies to evaluate expense reports, vendor invoices, and purchase orders to make sure that they comply with policy rules that you create.</span></span> <span data-ttu-id="319a6-108">Alle reglene som er knyttet til en overvåkingspolicy, kjøres i satsvis modus i henhold til en tidsplan du angir.</span><span class="sxs-lookup"><span data-stu-id="319a6-108">All of the rules that are associated with an audit policy are run in batch mode, according to a schedule that you specify.</span></span>  <span data-ttu-id="319a6-109">Hver policyregel er en forekomst av en policyregeltype.</span><span class="sxs-lookup"><span data-stu-id="319a6-109">Each policy rule is an instance of a policy rule type.</span></span> <span data-ttu-id="319a6-110">For hver policyregeltype kan bare én policyregel være aktiv om gangen.</span><span class="sxs-lookup"><span data-stu-id="319a6-110">For each policy rule type, only one policy rule can be active at a time.</span></span> 
 
-<a name="queries-and-query-types"></a><span data-ttu-id="bef4c-111">Spørringer og spørringstyper</span><span class="sxs-lookup"><span data-stu-id="bef4c-111">Queries and query types</span></span>
+<a name="queries-and-query-types"></a><span data-ttu-id="319a6-111">Spørringer og spørringstyper</span><span class="sxs-lookup"><span data-stu-id="319a6-111">Queries and query types</span></span>
 -----------------------
 
-<span data-ttu-id="bef4c-112">Når du oppretter en overvåkingspolicyregel, velger du først en policyregeltype.</span><span class="sxs-lookup"><span data-stu-id="bef4c-112">When you create an audit policy rule, you first select a policy rule type.</span></span> <span data-ttu-id="bef4c-113">Policyregeltypen angir applikasjonsobjekttre (AOT)-spørringen som skal brukes som utgangpunkt for å opprette policyregelen.</span><span class="sxs-lookup"><span data-stu-id="bef4c-113">The policy rule type specifies the Application Object Tree (AOT) query to use as the starting point for creating the policy rule.</span></span> <span data-ttu-id="bef4c-114">Det angir også hvilken spørringstype som skal brukes for policyregelen.</span><span class="sxs-lookup"><span data-stu-id="bef4c-114">It also specifies the query type to use for the policy rule.</span></span> <span data-ttu-id="bef4c-115">Spørringen bestemmer kildedokumentet som policyregelen evaluerer.</span><span class="sxs-lookup"><span data-stu-id="bef4c-115">The query determines the source document that the policy rule evaluates.</span></span> <span data-ttu-id="bef4c-116">Det angir også feltene du velger i kildedokumentet, som identifiserer den juridiske enheten og datoen som skal brukes når dokumenter velges for overvåking.</span><span class="sxs-lookup"><span data-stu-id="bef4c-116">It also specifies the fields in the source document that identify both the legal entity and the date to use when documents are selected for audit.</span></span> <span data-ttu-id="bef4c-117">Spørringstypen styrer standardfeltene på spørringssiden og siden Overvåkingspolicyregel.</span><span class="sxs-lookup"><span data-stu-id="bef4c-117">The query type controls the default fields in the query page and in the Audit policy rule page.</span></span> <span data-ttu-id="bef4c-118">Tabellen nedenfor viser de spørringstypene som er tilgjengelige for overvåkingspolicyregler.</span><span class="sxs-lookup"><span data-stu-id="bef4c-118">The following table shows the query types that are available for audit policy rules.</span></span>
+<span data-ttu-id="319a6-112">Når du oppretter en overvåkingspolicyregel, velger du først en policyregeltype.</span><span class="sxs-lookup"><span data-stu-id="319a6-112">When you create an audit policy rule, you first select a policy rule type.</span></span> <span data-ttu-id="319a6-113">Policyregeltypen angir applikasjonsobjekttre (AOT)-spørringen som skal brukes som utgangpunkt for å opprette policyregelen.</span><span class="sxs-lookup"><span data-stu-id="319a6-113">The policy rule type specifies the Application Object Tree (AOT) query to use as the starting point for creating the policy rule.</span></span> <span data-ttu-id="319a6-114">Det angir også hvilken spørringstype som skal brukes for policyregelen.</span><span class="sxs-lookup"><span data-stu-id="319a6-114">It also specifies the query type to use for the policy rule.</span></span> <span data-ttu-id="319a6-115">Spørringen bestemmer kildedokumentet som policyregelen evaluerer.</span><span class="sxs-lookup"><span data-stu-id="319a6-115">The query determines the source document that the policy rule evaluates.</span></span> <span data-ttu-id="319a6-116">Det angir også feltene du velger i kildedokumentet, som identifiserer den juridiske enheten og datoen som skal brukes når dokumenter velges for overvåking.</span><span class="sxs-lookup"><span data-stu-id="319a6-116">It also specifies the fields in the source document that identify both the legal entity and the date to use when documents are selected for audit.</span></span> <span data-ttu-id="319a6-117">Spørringstypen styrer standardfeltene på spørringssiden og siden Overvåkingspolicyregel.</span><span class="sxs-lookup"><span data-stu-id="319a6-117">The query type controls the default fields in the query page and in the Audit policy rule page.</span></span> <span data-ttu-id="319a6-118">Tabellen nedenfor viser de spørringstypene som er tilgjengelige for overvåkingspolicyregler.</span><span class="sxs-lookup"><span data-stu-id="319a6-118">The following table shows the query types that are available for audit policy rules.</span></span>
 
 <table>
 <colgroup>
@@ -43,61 +43,64 @@ ms.locfileid: "5021247"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="bef4c-119">Spørringstype</span><span class="sxs-lookup"><span data-stu-id="bef4c-119">Query type</span></span></th>
-<th><span data-ttu-id="bef4c-120">Formål</span><span class="sxs-lookup"><span data-stu-id="bef4c-120">Purpose</span></span></th>
-<th><span data-ttu-id="bef4c-121">Mer informasjon</span><span class="sxs-lookup"><span data-stu-id="bef4c-121">More information</span></span></th>
+<th><span data-ttu-id="319a6-119">Spørringstype</span><span class="sxs-lookup"><span data-stu-id="319a6-119">Query type</span></span></th>
+<th><span data-ttu-id="319a6-120">Formål</span><span class="sxs-lookup"><span data-stu-id="319a6-120">Purpose</span></span></th>
+<th><span data-ttu-id="319a6-121">Mer informasjon</span><span class="sxs-lookup"><span data-stu-id="319a6-121">More information</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="bef4c-122">Betinget</span><span class="sxs-lookup"><span data-stu-id="bef4c-122">Conditional</span></span></td>
-<td><span data-ttu-id="bef4c-123">Evaluere kildedokumentattributter mot angitte verdier.</span><span class="sxs-lookup"><span data-stu-id="bef4c-123">Evaluate source document attributes against specified values.</span></span></td>
+<td><span data-ttu-id="319a6-122">Betinget</span><span class="sxs-lookup"><span data-stu-id="319a6-122">Conditional</span></span></td>
+<td><span data-ttu-id="319a6-123">Evaluere kildedokumentattributter mot angitte verdier.</span><span class="sxs-lookup"><span data-stu-id="319a6-123">Evaluate source document attributes against specified values.</span></span></td>
 <td></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="bef4c-124">Aggreger</span><span class="sxs-lookup"><span data-stu-id="bef4c-124">Aggregate</span></span></td>
-<td><span data-ttu-id="bef4c-125">Evaluere flere kildedokumenter eller kildedokumentlinjer mot en policyregel ved å aggregere numeriske verdier.</span><span class="sxs-lookup"><span data-stu-id="bef4c-125">Evaluate multiple source documents or source document lines against a policy rule by aggregating numeric values.</span></span></td>
+<td><span data-ttu-id="319a6-124">Aggreger</span><span class="sxs-lookup"><span data-stu-id="319a6-124">Aggregate</span></span></td>
+<td><span data-ttu-id="319a6-125">Evaluere flere kildedokumenter eller kildedokumentlinjer mot en policyregel ved å aggregere numeriske verdier.</span><span class="sxs-lookup"><span data-stu-id="319a6-125">Evaluate multiple source documents or source document lines against a policy rule by aggregating numeric values.</span></span></td>
 <td></td>
 </tr>
 <tr class="odd">
-<td><span data-ttu-id="bef4c-126">Prøve</span><span class="sxs-lookup"><span data-stu-id="bef4c-126">Sampling</span></span></td>
-<td><span data-ttu-id="bef4c-127">Velg tilfeldig en angitt prosent av kildedokumentene som skal evalueres med hensyn til policybrudd.</span><span class="sxs-lookup"><span data-stu-id="bef4c-127">Randomly select a specified percentage of the source documents to evaluate for policy violations.</span></span></td>
-<td><span data-ttu-id="bef4c-128">Når du velger dette alternativet, bruker du siden Overvåkingspolicyregel til å angi prosentandelen av dokumenter som skal velges vilkårlig for overvåking.</span><span class="sxs-lookup"><span data-stu-id="bef4c-128">When you select this option, use the Audit policy rule page to specify the percentage of documents to randomly select for audit.</span></span></td>
+<td><span data-ttu-id="319a6-126">Prøve</span><span class="sxs-lookup"><span data-stu-id="319a6-126">Sampling</span></span></td>
+<td><span data-ttu-id="319a6-127">Velg tilfeldig en angitt prosent av kildedokumentene som skal evalueres med hensyn til policybrudd.</span><span class="sxs-lookup"><span data-stu-id="319a6-127">Randomly select a specified percentage of the source documents to evaluate for policy violations.</span></span></td>
+<td><span data-ttu-id="319a6-128">Når du velger dette alternativet, bruker du siden Overvåkingspolicyregel til å angi prosentandelen av dokumenter som skal velges vilkårlig for overvåking.</span><span class="sxs-lookup"><span data-stu-id="319a6-128">When you select this option, use the Audit policy rule page to specify the percentage of documents to randomly select for audit.</span></span></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="bef4c-129">Duplikat</span><span class="sxs-lookup"><span data-stu-id="bef4c-129">Duplicate</span></span></td>
-<td><span data-ttu-id="bef4c-130">Evaluere kildedokumenter for å avgjøre om de inneholder duplikatoppføringer i angitte felt.</span><span class="sxs-lookup"><span data-stu-id="bef4c-130">Evaluate source documents to determine whether they contain duplicate entries in specified fields.</span></span></td>
-<td><span data-ttu-id="bef4c-131">Når du velger dette alternativet, bruker du siden Overvåkingspolicyregel til å angi hvor mange dager som skal legges til ved starten av datoområdet for dokumentvalg når dokumenter evalueres for duplikatoppføringer.</span><span class="sxs-lookup"><span data-stu-id="bef4c-131">When you select this option, use the Audit policy rule page to specify the number of days to add to the start of the document selection date range when documents are evaluated for duplicate entries.</span></span></td>
+<td><span data-ttu-id="319a6-129">Duplikat</span><span class="sxs-lookup"><span data-stu-id="319a6-129">Duplicate</span></span></td>
+<td><span data-ttu-id="319a6-130">Evaluere kildedokumenter for å avgjøre om de inneholder duplikatoppføringer i angitte felt.</span><span class="sxs-lookup"><span data-stu-id="319a6-130">Evaluate source documents to determine whether they contain duplicate entries in specified fields.</span></span></td>
+<td><span data-ttu-id="319a6-131">Når du velger dette alternativet, bruker du siden Overvåkingspolicyregel til å angi hvor mange dager som skal legges til ved starten av datoområdet for dokumentvalg når dokumenter evalueres for duplikatoppføringer.</span><span class="sxs-lookup"><span data-stu-id="319a6-131">When you select this option, use the Audit policy rule page to specify the number of days to add to the start of the document selection date range when documents are evaluated for duplicate entries.</span></span></td>
 </tr>
 <tr class="odd">
-<td><span data-ttu-id="bef4c-132">Listesøk</span><span class="sxs-lookup"><span data-stu-id="bef4c-132">List search</span></span></td>
-<td><span data-ttu-id="bef4c-133">Evaluere kildedokumenter for bestemte entiteter.</span><span class="sxs-lookup"><span data-stu-id="bef4c-133">Evaluate source documents for specific entities.</span></span></td>
-<td><span data-ttu-id="bef4c-134">Rotdokumentet for spørringen definerer dokumentet som overvåkes.</span><span class="sxs-lookup"><span data-stu-id="bef4c-134">The root document of the query defines the document that is being audited.</span></span> <span data-ttu-id="bef4c-135">Spørringen må være en listespørring som inneholder en referanse til tabellen DirPartyTable.</span><span class="sxs-lookup"><span data-stu-id="bef4c-135">The query must be a list query that includes a reference to the dirpartytable table.</span></span> <span data-ttu-id="bef4c-136">Dette alternativet kan bare brukes med følgende AOT-spørringer:</span><span class="sxs-lookup"><span data-stu-id="bef4c-136">This option can be used only with the following AOT queries:</span></span>
+<td><span data-ttu-id="319a6-132">Listesøk</span><span class="sxs-lookup"><span data-stu-id="319a6-132">List search</span></span></td>
+<td><span data-ttu-id="319a6-133">Evaluere kildedokumenter for bestemte entiteter.</span><span class="sxs-lookup"><span data-stu-id="319a6-133">Evaluate source documents for specific entities.</span></span></td>
+<td><span data-ttu-id="319a6-134">Rotdokumentet for spørringen definerer dokumentet som overvåkes.</span><span class="sxs-lookup"><span data-stu-id="319a6-134">The root document of the query defines the document that is being audited.</span></span> <span data-ttu-id="319a6-135">Spørringen må være en listespørring som inneholder en referanse til tabellen DirPartyTable.</span><span class="sxs-lookup"><span data-stu-id="319a6-135">The query must be a list query that includes a reference to the dirpartytable table.</span></span> <span data-ttu-id="319a6-136">Dette alternativet kan bare brukes med følgende AOT-spørringer:</span><span class="sxs-lookup"><span data-stu-id="319a6-136">This option can be used only with the following AOT queries:</span></span>
 <ul>
-<li><span data-ttu-id="bef4c-137"><span class="ui">AuditPolicyExpenseList</span> (Overvåkede ansatte i utgiftsrapport)</span><span class="sxs-lookup"><span data-stu-id="bef4c-137"><span class="ui">AuditPolicyExpenseList</span> (Expense report monitored employees)</span></span></li>
-<li><span data-ttu-id="bef4c-138"><span class="ui">AuditPolicyPurchList</span> (Overvåkede leverandører i bestilling)</span><span class="sxs-lookup"><span data-stu-id="bef4c-138"><span class="ui">AuditPolicyPurchList</span> (Purchase order monitored vendors)</span></span></li>
-<li><span data-ttu-id="bef4c-139"><span class="ui">AuditPolicyVendInvoiceList</span> (Overvåkede leverandører i leverandørfaktura)</span><span class="sxs-lookup"><span data-stu-id="bef4c-139"><span class="ui">AuditPolicyVendInvoiceList</span> (Vendor invoice monitored vendors)</span></span></li>
+<li><span data-ttu-id="319a6-137"><span class="ui">AuditPolicyExpenseList</span> (Overvåkede ansatte i utgiftsrapport)</span><span class="sxs-lookup"><span data-stu-id="319a6-137"><span class="ui">AuditPolicyExpenseList</span> (Expense report monitored employees)</span></span></li>
+<li><span data-ttu-id="319a6-138"><span class="ui">AuditPolicyPurchList</span> (Overvåkede leverandører i bestilling)</span><span class="sxs-lookup"><span data-stu-id="319a6-138"><span class="ui">AuditPolicyPurchList</span> (Purchase order monitored vendors)</span></span></li>
+<li><span data-ttu-id="319a6-139"><span class="ui">AuditPolicyVendInvoiceList</span> (Overvåkede leverandører i leverandørfaktura)</span><span class="sxs-lookup"><span data-stu-id="319a6-139"><span class="ui">AuditPolicyVendInvoiceList</span> (Vendor invoice monitored vendors)</span></span></li>
 </ul>
-<span data-ttu-id="bef4c-140">Når du velger dette alternativet, angir du de overvåkede enhetene i på siden Overvåkingspolicyregel.</span><span class="sxs-lookup"><span data-stu-id="bef4c-140">When you select this option, specify the monitored entities in the Audit policy rule page.</span></span></td>
+<span data-ttu-id="319a6-140">Når du velger dette alternativet, angir du de overvåkede enhetene i på siden Overvåkingspolicyregel.</span><span class="sxs-lookup"><span data-stu-id="319a6-140">When you select this option, specify the monitored entities in the Audit policy rule page.</span></span></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="bef4c-141">Nøkkelordsøk</span><span class="sxs-lookup"><span data-stu-id="bef4c-141">Keyword search</span></span></td>
-<td><span data-ttu-id="bef4c-142">Evaluere kildedokumenter for å avgjøre om de inneholder bestemte ord.</span><span class="sxs-lookup"><span data-stu-id="bef4c-142">Evaluate source documents to determine whether they contain certain words.</span></span></td>
-<td><span data-ttu-id="bef4c-143">Når du velger dette alternativet, skriver du inn ordene du vil se etter på siden Overvåkingspolicyregel.</span><span class="sxs-lookup"><span data-stu-id="bef4c-143">When you select this option, enter the words to look for in the Audit policy rule page.</span></span> <span data-ttu-id="bef4c-144">Siden Overvåkingspolicyregel inneholder også alternativer som lar deg angi tabellene og feltene som skal evalueres for ordene du skrev inn.</span><span class="sxs-lookup"><span data-stu-id="bef4c-144">The Audit policy rule page also includes options that let you specify the tables and fields to evaluate for the words you entered.</span></span></td>
+<td><span data-ttu-id="319a6-141">Nøkkelordsøk</span><span class="sxs-lookup"><span data-stu-id="319a6-141">Keyword search</span></span></td>
+<td><span data-ttu-id="319a6-142">Evaluere kildedokumenter for å avgjøre om de inneholder bestemte ord.</span><span class="sxs-lookup"><span data-stu-id="319a6-142">Evaluate source documents to determine whether they contain certain words.</span></span></td>
+<td><span data-ttu-id="319a6-143">Når du velger dette alternativet, skriver du inn ordene du vil se etter på siden Overvåkingspolicyregel.</span><span class="sxs-lookup"><span data-stu-id="319a6-143">When you select this option, enter the words to look for in the Audit policy rule page.</span></span> <span data-ttu-id="319a6-144">Siden Overvåkingspolicyregel inneholder også alternativer som lar deg angi tabellene og feltene som skal evalueres for ordene du skrev inn.</span><span class="sxs-lookup"><span data-stu-id="319a6-144">The Audit policy rule page also includes options that let you specify the tables and fields to evaluate for the words you entered.</span></span></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="common-parameters"></a><span data-ttu-id="bef4c-145">Vanlige parametere</span><span class="sxs-lookup"><span data-stu-id="bef4c-145">Common parameters</span></span>
-<span data-ttu-id="bef4c-146">Alle policyreglene for en bestemt overvåkingspolicy deler de samme satsvise parameterne og det samme datoområdet for dokumentutvalget.</span><span class="sxs-lookup"><span data-stu-id="bef4c-146">All of the policy rules for a particular audit policy share the same batch parameters and the same document selection date range.</span></span> <span data-ttu-id="bef4c-147">Disse parameterne er angitt for policyen på Tilleggsalternativer-siden.</span><span class="sxs-lookup"><span data-stu-id="bef4c-147">These parameters are specified for the policy in the Additional options page.</span></span>
+## <a name="common-parameters"></a><span data-ttu-id="319a6-145">Vanlige parametere</span><span class="sxs-lookup"><span data-stu-id="319a6-145">Common parameters</span></span>
+<span data-ttu-id="319a6-146">Alle policyreglene for en bestemt overvåkingspolicy deler de samme satsvise parameterne og det samme datoområdet for dokumentutvalget.</span><span class="sxs-lookup"><span data-stu-id="319a6-146">All of the policy rules for a particular audit policy share the same batch parameters and the same document selection date range.</span></span> <span data-ttu-id="319a6-147">Disse parameterne er angitt for policyen på Tilleggsalternativer-siden.</span><span class="sxs-lookup"><span data-stu-id="319a6-147">These parameters are specified for the policy in the Additional options page.</span></span>
 
 
 
-<a name="additional-resources"></a><span data-ttu-id="bef4c-148">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="bef4c-148">Additional resources</span></span>
+<a name="additional-resources"></a><span data-ttu-id="319a6-148">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="319a6-148">Additional resources</span></span>
 --------
 
-<span data-ttu-id="bef4c-149">[Brudd på og saker for overvåkingspolicy](audit-policy-violations-cases.md)
-[Definere overvåkingspolicyer for kildedokumenter](tasks/define-audit-policies-source-documents.md)</span><span class="sxs-lookup"><span data-stu-id="bef4c-149">[Audit policy violations and cases](audit-policy-violations-cases.md)
+<span data-ttu-id="319a6-149">[Brudd på og saker for overvåkingspolicy](audit-policy-violations-cases.md)
+[Definere overvåkingspolicyer for kildedokumenter](tasks/define-audit-policies-source-documents.md)</span><span class="sxs-lookup"><span data-stu-id="319a6-149">[Audit policy violations and cases](audit-policy-violations-cases.md)
 [Define audit policies for source documents](tasks/define-audit-policies-source-documents.md)</span></span>
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

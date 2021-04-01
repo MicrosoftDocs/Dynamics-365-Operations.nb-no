@@ -17,42 +17,45 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d99f067e93de57b5b13787f128f450f736660351
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: f61c3514818365dc250e1313b0e6b2f775d9bc89
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5006688"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5262051"
 ---
-# <a name="perform-invoice-updates-for-returns"></a><span data-ttu-id="efa75-103">Utføre fakturaoppdateringer for returer</span><span class="sxs-lookup"><span data-stu-id="efa75-103">Perform invoice updates for returns</span></span> 
+# <a name="perform-invoice-updates-for-returns"></a><span data-ttu-id="9537e-103">Utføre fakturaoppdateringer for returer</span><span class="sxs-lookup"><span data-stu-id="9537e-103">Perform invoice updates for returns</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="efa75-104">En returordre er en type salgsordre som er merket som en returordre.</span><span class="sxs-lookup"><span data-stu-id="efa75-104">A return order is a type of sales order that is marked as a returned order.</span></span> <span data-ttu-id="efa75-105">Derfor brukes listesiden **Alle salgsordrer** til å generere fakturaer for returordrer i stedet for skjemaet **Returordrer**.</span><span class="sxs-lookup"><span data-stu-id="efa75-105">Therefore, the **All sales orders** list page is used to generate invoices for return orders instead of the **Return orders** form.</span></span> <span data-ttu-id="efa75-106">Denne funksjonaliteten i støtter forretningsprosessene i organisasjoner som velger å fakturere returordrer og salgsordrer samtidig og utført av samme person.</span><span class="sxs-lookup"><span data-stu-id="efa75-106">This functionality supports the business processes of organizations that choose to have return orders and sales orders invoiced at the same time and by the same person.</span></span>
+<span data-ttu-id="9537e-104">En returordre er en type salgsordre som er merket som en returordre.</span><span class="sxs-lookup"><span data-stu-id="9537e-104">A return order is a type of sales order that is marked as a returned order.</span></span> <span data-ttu-id="9537e-105">Derfor brukes listesiden **Alle salgsordrer** til å generere fakturaer for returordrer i stedet for skjemaet **Returordrer**.</span><span class="sxs-lookup"><span data-stu-id="9537e-105">Therefore, the **All sales orders** list page is used to generate invoices for return orders instead of the **Return orders** form.</span></span> <span data-ttu-id="9537e-106">Denne funksjonaliteten i støtter forretningsprosessene i organisasjoner som velger å fakturere returordrer og salgsordrer samtidig og utført av samme person.</span><span class="sxs-lookup"><span data-stu-id="9537e-106">This functionality supports the business processes of organizations that choose to have return orders and sales orders invoiced at the same time and by the same person.</span></span>
 
-<span data-ttu-id="efa75-107">Fordi fakturaen for en returnert vare er for et negativt beløp, kalles en kreditnota.</span><span class="sxs-lookup"><span data-stu-id="efa75-107">Because the invoice for a returned item is for a negative amount, it is called a credit note.</span></span>
+<span data-ttu-id="9537e-107">Fordi fakturaen for en returnert vare er for et negativt beløp, kalles en kreditnota.</span><span class="sxs-lookup"><span data-stu-id="9537e-107">Because the invoice for a returned item is for a negative amount, it is called a credit note.</span></span>
 
-<span data-ttu-id="efa75-108">Når du setter opp fakturaoppdateringen for satsvis behandling, må salgsordren av typen **Returordre** ha returlinjestatusen **Mottatt**, som viser at ordrens følgeseddel er oppdatert.</span><span class="sxs-lookup"><span data-stu-id="efa75-108">When you set up the invoice update for batch processing, the sales order of type **Returned order** must have a return line status of **Received**, which indicates that the order's packing slip has been updated.</span></span>
+<span data-ttu-id="9537e-108">Når du setter opp fakturaoppdateringen for satsvis behandling, må salgsordren av typen **Returordre** ha returlinjestatusen **Mottatt**, som viser at ordrens følgeseddel er oppdatert.</span><span class="sxs-lookup"><span data-stu-id="9537e-108">When you set up the invoice update for batch processing, the sales order of type **Returned order** must have a return line status of **Received**, which indicates that the order's packing slip has been updated.</span></span>
 
-## <a name="post-an-invoice-for-a-return-order"></a><span data-ttu-id="efa75-109">Postere en faktura for en returordre</span><span class="sxs-lookup"><span data-stu-id="efa75-109">Post an invoice for a return order</span></span>
+## <a name="post-an-invoice-for-a-return-order"></a><span data-ttu-id="9537e-109">Postere en faktura for en returordre</span><span class="sxs-lookup"><span data-stu-id="9537e-109">Post an invoice for a return order</span></span>
 
-1.  <span data-ttu-id="efa75-110">Klikk på **Kunder** \> **Felles** \> **Salgsordrer** \> **Alle salgsordrer**.</span><span class="sxs-lookup"><span data-stu-id="efa75-110">Click **Accounts receivable** \> **Common** \> **Sales orders** \> **All sales orders**.</span></span>
+1.  <span data-ttu-id="9537e-110">Klikk på **Kunder** \> **Felles** \> **Salgsordrer** \> **Alle salgsordrer**.</span><span class="sxs-lookup"><span data-stu-id="9537e-110">Click **Accounts receivable** \> **Common** \> **Sales orders** \> **All sales orders**.</span></span>
 
-2.  <span data-ttu-id="efa75-111">Velg en salgsordre som **Returordre** vises for i **Ordretype**-feltet.</span><span class="sxs-lookup"><span data-stu-id="efa75-111">Select a sales order for which **Returned order** is displayed in the **Order type** field.</span></span>
+2.  <span data-ttu-id="9537e-111">Velg en salgsordre som **Returordre** vises for i **Ordretype**-feltet.</span><span class="sxs-lookup"><span data-stu-id="9537e-111">Select a sales order for which **Returned order** is displayed in the **Order type** field.</span></span>
 
-3.  <span data-ttu-id="efa75-112">I handlingsruten, på **Faktura**-fanen i **Generer**-gruppen klikker du **Faktura**.</span><span class="sxs-lookup"><span data-stu-id="efa75-112">On the Action Pane, on the **Invoice** tab, in the **Generate** group, click **Invoice**.</span></span>
+3.  <span data-ttu-id="9537e-112">I handlingsruten, på **Faktura**-fanen i **Generer**-gruppen klikker du **Faktura**.</span><span class="sxs-lookup"><span data-stu-id="9537e-112">On the Action Pane, on the **Invoice** tab, in the **Generate** group, click **Invoice**.</span></span>
 
-4.  <span data-ttu-id="efa75-113">På **Parametere**-fanen merker du av for **Postering**.</span><span class="sxs-lookup"><span data-stu-id="efa75-113">On the **Parameters** tab, select the **Posting** check box.</span></span>
+4.  <span data-ttu-id="9537e-113">På **Parametere**-fanen merker du av for **Postering**.</span><span class="sxs-lookup"><span data-stu-id="9537e-113">On the **Parameters** tab, select the **Posting** check box.</span></span>
 
-5.  <span data-ttu-id="efa75-114">Gå gjennom informasjonen i skjemaet, og gjør eventuelle nødvendige endringer.</span><span class="sxs-lookup"><span data-stu-id="efa75-114">Review information in the form and make any changes that are needed.</span></span>
+5.  <span data-ttu-id="9537e-114">Gå gjennom informasjonen i skjemaet, og gjør eventuelle nødvendige endringer.</span><span class="sxs-lookup"><span data-stu-id="9537e-114">Review information in the form and make any changes that are needed.</span></span>
 
-6.  <span data-ttu-id="efa75-115">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="efa75-115">Click **OK**.</span></span> <span data-ttu-id="efa75-116">Kreditnotaen er postert.</span><span class="sxs-lookup"><span data-stu-id="efa75-116">The credit note is posted.</span></span>
+6.  <span data-ttu-id="9537e-115">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="9537e-115">Click **OK**.</span></span> <span data-ttu-id="9537e-116">Kreditnotaen er postert.</span><span class="sxs-lookup"><span data-stu-id="9537e-116">The credit note is posted.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="efa75-117">Se også</span><span class="sxs-lookup"><span data-stu-id="efa75-117">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="9537e-117">Se også</span><span class="sxs-lookup"><span data-stu-id="9537e-117">See also</span></span>
 
-[<span data-ttu-id="efa75-118">Følgesedddeloppdateringer for returer</span><span class="sxs-lookup"><span data-stu-id="efa75-118">Packing slip updates for returns</span></span>](packing-slip-updates-returns.md)
+[<span data-ttu-id="9537e-118">Følgesedddeloppdateringer for returer</span><span class="sxs-lookup"><span data-stu-id="9537e-118">Packing slip updates for returns</span></span>](packing-slip-updates-returns.md)
 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -16,32 +16,35 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 71bbc090d928cb80d19db33655ec9c9cc8e654bd
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 112438417e425b8b77dd56f25e0b6e6db21c5148
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5011503"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5244405"
 ---
-# <a name="maintain-barcode-types"></a><span data-ttu-id="aaa3a-103">Vedlikeholde strekkodetyper</span><span class="sxs-lookup"><span data-stu-id="aaa3a-103">Maintain barcode types</span></span>
+# <a name="maintain-barcode-types"></a><span data-ttu-id="d3232-103">Vedlikeholde strekkodetyper</span><span class="sxs-lookup"><span data-stu-id="d3232-103">Maintain barcode types</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="aaa3a-104">Denne fremgangsmåten viser hvordan du definerer en ny definisjon for strekkode som kan brukes som en del av plukklisterapporten.</span><span class="sxs-lookup"><span data-stu-id="aaa3a-104">This procedure shows you how to set up a new barcode definition which can then be used as part of the picking list report.</span></span> <span data-ttu-id="aaa3a-105">Du kan gå gjennom denne fremgangsmåten i demonstrasjonsselskapet USMF eller ved hjelp av dine egne data.</span><span class="sxs-lookup"><span data-stu-id="aaa3a-105">You can walk through this procedure in demo data company USMF, or using your own data.</span></span> <span data-ttu-id="aaa3a-106">Hvis du bruker USMF, kan du bruke eksempelverdiene som vises.</span><span class="sxs-lookup"><span data-stu-id="aaa3a-106">If you are using USMF you can use the example values that are shown.</span></span> <span data-ttu-id="aaa3a-107">Disse oppgavene vil vanligvis utføres av en lagersjef.</span><span class="sxs-lookup"><span data-stu-id="aaa3a-107">These tasks would typically be carried out by a warehouse manager.</span></span>
+<span data-ttu-id="d3232-104">Denne fremgangsmåten viser hvordan du definerer en ny definisjon for strekkode som kan brukes som en del av plukklisterapporten.</span><span class="sxs-lookup"><span data-stu-id="d3232-104">This procedure shows you how to set up a new barcode definition which can then be used as part of the picking list report.</span></span> <span data-ttu-id="d3232-105">Du kan gå gjennom denne fremgangsmåten i demonstrasjonsselskapet USMF eller ved hjelp av dine egne data.</span><span class="sxs-lookup"><span data-stu-id="d3232-105">You can walk through this procedure in demo data company USMF, or using your own data.</span></span> <span data-ttu-id="d3232-106">Hvis du bruker USMF, kan du bruke eksempelverdiene som vises.</span><span class="sxs-lookup"><span data-stu-id="d3232-106">If you are using USMF you can use the example values that are shown.</span></span> <span data-ttu-id="d3232-107">Disse oppgavene vil vanligvis utføres av en lagersjef.</span><span class="sxs-lookup"><span data-stu-id="d3232-107">These tasks would typically be carried out by a warehouse manager.</span></span>
 
-1. <span data-ttu-id="aaa3a-108">Gå til Strekkoder.</span><span class="sxs-lookup"><span data-stu-id="aaa3a-108">Go to Bar codes.</span></span>
-2. <span data-ttu-id="aaa3a-109">Klikk på Ny.</span><span class="sxs-lookup"><span data-stu-id="aaa3a-109">Click New.</span></span>
-3. <span data-ttu-id="aaa3a-110">Skriv inn en verdi i feltet Strekkodeoppsett.</span><span class="sxs-lookup"><span data-stu-id="aaa3a-110">In the Barcode setup field, type a value.</span></span>
-4. <span data-ttu-id="aaa3a-111">Skriv inn en verdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="aaa3a-111">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="aaa3a-112">Velg et alternativ i Strekkodetype-feltet.</span><span class="sxs-lookup"><span data-stu-id="aaa3a-112">In the Bar code type field, select an option.</span></span>
-    * <span data-ttu-id="aaa3a-113">Hvis du bruker USMF, kan du velge "Kode 39".</span><span class="sxs-lookup"><span data-stu-id="aaa3a-113">If you're using USMF, you can select 'Code 39'.</span></span>  
-6. <span data-ttu-id="aaa3a-114">Angi et tall i feltet Størrelse.</span><span class="sxs-lookup"><span data-stu-id="aaa3a-114">In the Size field, enter a number.</span></span>
-7. <span data-ttu-id="aaa3a-115">Angi et tall i feltet Maksimumslengde.</span><span class="sxs-lookup"><span data-stu-id="aaa3a-115">In the Maximum length field, enter a number.</span></span>
-8. <span data-ttu-id="aaa3a-116">Klikk på Lagre.</span><span class="sxs-lookup"><span data-stu-id="aaa3a-116">Click Save.</span></span>
-9. <span data-ttu-id="aaa3a-117">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="aaa3a-117">Close the page.</span></span>
-10. <span data-ttu-id="aaa3a-118">Gå til Parametere for beholdnings- og lagerstyring.</span><span class="sxs-lookup"><span data-stu-id="aaa3a-118">Go to Inventory and warehouse management parameters.</span></span>
-11. <span data-ttu-id="aaa3a-119">Angi eller velg en verdi i feltet Strekkodeoppsett.</span><span class="sxs-lookup"><span data-stu-id="aaa3a-119">In the Barcode setup field, enter or select a value.</span></span>
-    * <span data-ttu-id="aaa3a-120">Velg strekkodeoppsettet som du opprettet før, men Vær oppmerksom på at strekkodeformatet må samsvare med formatet for den unike identifikatoren for oppføringstypen som brukes i prosessen.</span><span class="sxs-lookup"><span data-stu-id="aaa3a-120">Select the barcode setup that you created before, but be aware that the bar code format must match the format of the unique identifier for the record type used in the process.</span></span> <span data-ttu-id="aaa3a-121">For plukkruter bør for eksempel strekkodeformatet samsvare med formatet for plukkrutereferansen, som vanligvis er en nummerserie.</span><span class="sxs-lookup"><span data-stu-id="aaa3a-121">For example, for picking routes, the bar code format should match the format of the picking route reference, which is typically a number sequence.</span></span>  
-12. <span data-ttu-id="aaa3a-122">Klikk på Lagre.</span><span class="sxs-lookup"><span data-stu-id="aaa3a-122">Click Save.</span></span>
-13. <span data-ttu-id="aaa3a-123">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="aaa3a-123">Close the page.</span></span>
+1. <span data-ttu-id="d3232-108">Gå til Strekkoder.</span><span class="sxs-lookup"><span data-stu-id="d3232-108">Go to Bar codes.</span></span>
+2. <span data-ttu-id="d3232-109">Klikk på Ny.</span><span class="sxs-lookup"><span data-stu-id="d3232-109">Click New.</span></span>
+3. <span data-ttu-id="d3232-110">Skriv inn en verdi i feltet Strekkodeoppsett.</span><span class="sxs-lookup"><span data-stu-id="d3232-110">In the Barcode setup field, type a value.</span></span>
+4. <span data-ttu-id="d3232-111">Skriv inn en verdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="d3232-111">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="d3232-112">Velg et alternativ i Strekkodetype-feltet.</span><span class="sxs-lookup"><span data-stu-id="d3232-112">In the Bar code type field, select an option.</span></span>
+    * <span data-ttu-id="d3232-113">Hvis du bruker USMF, kan du velge "Kode 39".</span><span class="sxs-lookup"><span data-stu-id="d3232-113">If you're using USMF, you can select 'Code 39'.</span></span>  
+6. <span data-ttu-id="d3232-114">Angi et tall i feltet Størrelse.</span><span class="sxs-lookup"><span data-stu-id="d3232-114">In the Size field, enter a number.</span></span>
+7. <span data-ttu-id="d3232-115">Angi et tall i feltet Maksimumslengde.</span><span class="sxs-lookup"><span data-stu-id="d3232-115">In the Maximum length field, enter a number.</span></span>
+8. <span data-ttu-id="d3232-116">Klikk på Lagre.</span><span class="sxs-lookup"><span data-stu-id="d3232-116">Click Save.</span></span>
+9. <span data-ttu-id="d3232-117">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="d3232-117">Close the page.</span></span>
+10. <span data-ttu-id="d3232-118">Gå til Parametere for beholdnings- og lagerstyring.</span><span class="sxs-lookup"><span data-stu-id="d3232-118">Go to Inventory and warehouse management parameters.</span></span>
+11. <span data-ttu-id="d3232-119">Angi eller velg en verdi i feltet Strekkodeoppsett.</span><span class="sxs-lookup"><span data-stu-id="d3232-119">In the Barcode setup field, enter or select a value.</span></span>
+    * <span data-ttu-id="d3232-120">Velg strekkodeoppsettet som du opprettet før, men Vær oppmerksom på at strekkodeformatet må samsvare med formatet for den unike identifikatoren for oppføringstypen som brukes i prosessen.</span><span class="sxs-lookup"><span data-stu-id="d3232-120">Select the barcode setup that you created before, but be aware that the bar code format must match the format of the unique identifier for the record type used in the process.</span></span> <span data-ttu-id="d3232-121">For plukkruter bør for eksempel strekkodeformatet samsvare med formatet for plukkrutereferansen, som vanligvis er en nummerserie.</span><span class="sxs-lookup"><span data-stu-id="d3232-121">For example, for picking routes, the bar code format should match the format of the picking route reference, which is typically a number sequence.</span></span>  
+12. <span data-ttu-id="d3232-122">Klikk på Lagre.</span><span class="sxs-lookup"><span data-stu-id="d3232-122">Click Save.</span></span>
+13. <span data-ttu-id="d3232-123">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="d3232-123">Close the page.</span></span>
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
