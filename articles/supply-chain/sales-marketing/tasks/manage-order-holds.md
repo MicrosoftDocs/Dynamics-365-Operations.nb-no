@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 27a5149812a8e478dae1d2385e6c139c9f635202
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 4e9c91061b82b8e172d8b93e9b255d0c9f400b5b
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5010753"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5254995"
 ---
 # <a name="manage-order-holds"></a>Behandle ordresperrer
 
@@ -69,3 +69,6 @@ Du kan kjøre denne fremgangsmåten i demonstrasjonsselskapet USMF eller ved hje
     - **Fjern og send**-handlingen gjelder bare når du bruker Telefonsenterfunksjonalitet.  
 8. Klikk på **Fjern sperrer**. Sperringen er nå fjernet fra ordren og fjernet fra listen over aktive sperringer. Hvis du vil se alle sperringene eller delsettet i henhold til en bestemt status, kan du endre verdien i Vis-feltet.     
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

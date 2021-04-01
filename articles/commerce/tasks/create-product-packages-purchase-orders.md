@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 296b3fb03b20dee5b6024c182df7feb3ce280913
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d16c5c576ce6b35687fb7edab835d52f6f58e6a0
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4964676"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5256979"
 ---
 # <a name="create-product-packages-for-purchase-orders"></a> Opprette produktpakker for bestillinger
 
@@ -54,12 +54,12 @@ Denne prosedyren hjelper med å opprette en produktpakke og bruke den i en besti
 
 ## <a name="add-package-to-purchase-order"></a>Legge til pakken i bestillingen
 1. Gå til Leverandører > Bestillinger > Alle bestillinger.
-2. Klikk Ny.
+2. Klikk på Ny.
 3. Klikk rullegardinknappen i Leverandørkonto-feltet for å åpne oppslaget.
 4. Velg den samme leverandøren som produktpakken ble opprettet for tidligere, i listen, hvis du valgte en leverandør.
 5. Aktiver/deaktiver utvidelsen av delen Generelt.
 6. Klikk rullegardinknappen i Område-feltet for å åpne oppslaget.
-7. Klikk koblingen i den valgte raden i listen.
+7. Klikk på koblingen i den valgte raden i listen.
 8. Klikk rullegardinknappen i Lager-feltet for å åpne oppslaget.
 9. Klikk koblingen i den valgte raden i listen.
 10. Klikk OK.
@@ -72,3 +72,6 @@ Denne prosedyren hjelper med å opprette en produktpakke og bruke den i en besti
 17. Klikk Opprett.
 18. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: a598f0356034a22ee7fc0902360b8862a1944558
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: fce407a66c339f2ece4bbc37b30243a2ed172d0a
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5010978"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5251895"
 ---
 # <a name="synchronize-inventory-transfers-and-adjustments-from-field-service-to-supply-chain-management"></a>Synkronisere lageroverføringer og -justeringer fra Field Service til Supply Chain Management
 
@@ -47,7 +47,7 @@ Følgende mal og underliggende oppgaver brukes til å synkronisere lagerjusterin
 - Lageroverføringer
 
 ## <a name="table-set"></a>Tabellsett
-| Field Service                     | Forsyningskjedeadministrasjon                          |
+| Field Service                     | Supply Chain Management                          |
 |-----------------------------------|----------------------------------------------------|
 | msdyn_inventoryadjustmentproducts | Overskrifter og linjer i Dataverse-lagerjusteringsjournal |
 | msdyn_inventoryadjustmentproducts | Overskrifter og linjer i Dataverse-lageroverføringsjournal   |
@@ -65,7 +65,7 @@ Kolonnen **Nummerserie** er lagt til tabellen **Lagerjusteringsprodukt**. Denne 
 
 ## <a name="prerequisites-and-mapping-setup"></a>Forutsetninger og tilordningsdefinisjon
 
-### <a name="supply-chain-management"></a>Forsyningskjedeadministrasjon
+### <a name="supply-chain-management"></a>Supply Chain Management
 Integreringslagerjournalene som genereres i integreringen, kan posteres automatisk med en satsvis jobb. Dette aktiveres fra **Lagerstyring > Periodiske oppgaver > Dataverse-integrering > Poster lagerjournaler for integrering**.
 
 ## <a name="template-mapping-in-data-integration"></a>Maltilordning i Dataintegrering
@@ -80,3 +80,6 @@ Følgende illustrasjoner viser en tilordning av malen i Dataintegrering.
 ### <a name="inventory-transfer-field-service-to-supply-chain-management-inventory-transfer"></a>Lageroverføring (Field Service til Supply Chain Management): Lageroverføring
 
 [![Maltilordning i Dataintegrering](./media/FSTrans1.png)](./media/FSTrans1.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

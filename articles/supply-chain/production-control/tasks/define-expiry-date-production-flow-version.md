@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a595ca4ff9f6753631303b656d56735320a22a69
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 87063653eb78209caaefd3fafa7783f425e710b7
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4975091"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5257297"
 ---
 # <a name="define-an-expiry-date-for-a-production-flow-version"></a>Angi en utløpsdato for en produksjonsflytversjon
 
@@ -40,3 +40,6 @@ For å avslutte gyldigheten og behandlingen av en produksjonsflytversjon på en 
 6. Angi dato og klokkeslett i feltet Utløpsdato.
     * For utløpsdatoen, vil ikke en ny versjon starte eller bli aktivert. Det vil heller ikke lenger være mulig å opprette eller starte jobber for denne produksjonsflyten. Du kan fortsatt fullføre startede jobber etter utløpsdatoen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

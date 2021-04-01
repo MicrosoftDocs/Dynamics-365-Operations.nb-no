@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 674e10b94711b00e526af4af0e0c0afddd05e62c
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 7f4d7b4a92486287027cba79c43ca5933cce42a1
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5022387"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5253860"
 ---
 # <a name="asset-fault-analysis"></a>Feilanalyse av aktivum
 
@@ -108,3 +108,6 @@ I skjermbildet nedenfor ble **Type** lagt til, og den mest detaljerte beregninge
 >[!NOTE]
 >Hvis du vil ha en oversikt over alle feilregistreringer som er opprettet på arbeidsordrer og meldinger, klikker du **Aktivastyring** > **Forespørsler** > **Aktivumfeil** > **Aktivafeil**. På siden **Aktivafeil** velger du en registrering av aktivafeil og utvider ruten **Beslektet informasjon** for å se informasjon om den beslektede arbeidsordren eller meldingen.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

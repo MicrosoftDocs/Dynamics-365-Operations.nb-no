@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: b206dbda56acd4fcd4aa98be4b5e0d6c839f0354
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: f3e7376827a42034e68cb0ee492b82f7274930ea
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4976422"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5253993"
 ---
 # <a name="manage-international-bank-account-number-iban-account-validation"></a>Administrere validering av internasjonale bankkontnumre (IBAN)
 
@@ -47,3 +47,6 @@ Informasjon om strukturen til IBAN er lagret i Microsoft Dynamics 365 Finance. D
     Valideringen kontrollerer også at bankkontonummeret samsvarer med delen av IBAN-nummeret som representerer bankkontonummeret. Hvis bankkontonummeret ikke samsvarer, får du en advarsel. Denne meldingen er bare en advarsel. Du kan fortsette selv om bankkontonummeret ikke samsvarer.
 
     Valideringen kontrollerer også at bankregistreringsnummeret samsvarer med delen av IBAN-nummeret som representerer bankregistreringsnummeret. Registreringsnummeret inneholder et banknummer og ofte en ekstra bankavdeling. Hvis bankregistreringsnummeret ikke samsvarer, får du en advarsel. Denne meldingen er bare en advarsel. Du kan fortsette selv om bankregistreringsnummeret ikke samsvarer.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

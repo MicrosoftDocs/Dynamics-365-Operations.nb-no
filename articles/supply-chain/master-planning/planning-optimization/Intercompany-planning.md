@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 0958ebccba345aa13a95f1fdf03946546cbbb714
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: dd498489e18eaba81720757faa14c0bf7b7d67f1
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4983600"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5263404"
 ---
 # <a name="intercompany-planning"></a>Konsernintern planlegging
 
@@ -87,3 +87,6 @@ I dette eksemplet opprettes det et bestillingsforslag i USMF-firmaet for å dekk
 Illustrasjonen nedenfor viser hvordan dette eksemplet kan vises på siden **Utligning med flere nivåer** for den planlagte produksjonsordren.
 
 ![Konserninternt eksempel som omfatter tre firmaer](media/IntercompanyPlanning2.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

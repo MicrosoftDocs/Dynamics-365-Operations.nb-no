@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0a648984a8b4aaa314707e72a615f516116a193
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 6505d658103a4c34dfe7c7eb86ad4ea41515ccfb
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4990748"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5261290"
 ---
 # <a name="create-a-cost-rollup-policy"></a>Opprette en policy for opprullet kost
 
@@ -67,3 +67,6 @@ Denne prosedyren viser hvordan du oppretter en policy for opprullet kost og oppr
     * Fortsett til alle kostsentre er tilordnet de tilhørende sekundære kostnadselementer.  
 16. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

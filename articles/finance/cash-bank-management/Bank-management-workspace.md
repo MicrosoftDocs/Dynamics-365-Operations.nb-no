@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 7fcb56440adf86194e9ae05957349dd5ebe89ce7
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 3c5d248c5431b7a54835c699618a0a27ab760754
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4985492"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5260213"
 ---
 # <a name="bank-management-workspace"></a>Arbeidsområde for bank
 
 [!include [banner](../includes/banner.md)]
 
-Arbeidsområdet **Bank** viser informasjon som er knyttet til firmaets bankkontoer. Arbeidsområdet inneholder en **Sammendrag**-visning og en **Analyse**-side. **Sammendrag**-visningen viser sammendragsfliser, bankkontoinformasjon, et saldodiagram og relatert informasjon. **Analyse**-siden bruker funksjonene i Microsoft Power BI til å vise bilder som er knyttet til bankkontosaldoer.
+Arbeidsområdet **Bank** viser informasjon som er knyttet til firmaets bankkontoer. Arbeidsområdet inneholder en **Sammendrag**-visning og en **Analyse**-side. **Sammendrag**-visningen viser sammendragsfliser, bankkontoinformasjon, et saldodiagram og relatert informasjon. Siden **Analyse** bruker funksjonene i Microsoft Power BI til å vise bilder som er knyttet til bankkontosaldoer.
 
 ## <a name="summary-view"></a>Sammendrag-visningen
 
@@ -63,3 +63,6 @@ Fra delen **Beslektet informasjon** kan du åpne **Økonomijournal**-siden for �
 -   Saldo etter valuta
 
 Du kan vise bankanalyse på tvers av alle firmaer fra arbeidsområdet **Kontantstrømoversikt – alle firmaer**. Hvis du vil ha mer informasjon, kan du se [Power BI-innholdet Kontantstrømoversikt](Cash-Overview-Power-BI-content.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

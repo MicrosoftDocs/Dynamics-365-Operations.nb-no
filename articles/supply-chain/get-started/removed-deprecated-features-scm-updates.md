@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 9d3faa34812130a040e625a6af4f047c2b8fca08
-ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
+ms.openlocfilehash: 9c91ffcb03793db2f2ef3a9631ab549ace3f735d
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "5154309"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5259097"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-supply-chain-management"></a>Funksjoner som er fjernet eller avskrevet i Dynamics 365 Supply Chain Management
 
@@ -42,7 +42,7 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 |   |  |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Fra og med desember 2020 er Microsoft Internet Explorer 11-støtte for alle Dynamics 365-produkter avskrevet, og Internet Explorer 11 støttes ikke etter august 2021.<br><br>Dette vil påvirke kunder som bruker Dynamics 365-produkter som er utformet for bruk via et Internet Explorer 11-grensesnitt. Etter august 2021 støttes ikke Internet Explorer 11 for slike Dynamics 365-produkter. |
-| **Erstattet med en annen funksjon?**   | Vi anbefaler at kundene går over til Microsoft Edge.|
+| **Erstattet med en annen funksjon?**   | Det anbefales at kundene går over til Microsoft Edge.|
 | **Berørte produktområder**         | Alle Dynamics 365-produkter |
 | **Distribusjonsalternativ**              | Alle|
 | **Status**                         | Avskrevet. Internet Explorer 11 støttes ikke etter august 2021.|
@@ -72,3 +72,6 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 ## <a name="previous-announcements-about-removed-or-deprecated-features"></a>Tidligere kunngjøringer om fjernede eller avskrevne funksjoner
 
 Hvis du vil lære mer om funksjoner som er fjernet eller avskrevet i tidligere versjoner, kan du se [Fjernede eller avskrevne funksjoner i tidligere versjoner](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

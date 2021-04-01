@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c408c0b0c32292c074bcabf3822a50a24bbdd301
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 2d2f264564f627889d89444a7423179de0c6d4d0
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5007297"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5246291"
 ---
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a>Direkteoverføring fra produksjonsordrer til utleveringsporter
 
@@ -126,3 +126,6 @@ Etter at et produkt er ferdigmeldt på produksjonslinjen, overføres det til en 
 -   Direkteoverføringsscenariet støttes for parti- og seriekontrollerte varer, både med parti- og serienummerdimensjonene som er definert over, og under lokasjon i reservasjonshierarkiet. 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

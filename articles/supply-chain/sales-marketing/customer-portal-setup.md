@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 2153bbca2be7c72e48b9dc51b1f7fdbe2ab89903
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: fa95995320a0f81c040eeebe6fd796200fbff13f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4977744"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5255043"
 ---
 # <a name="install-set-up-and-update-the-customer-portal"></a>Installere, konfigurere og oppdatere kundeportalen
 
@@ -85,3 +85,6 @@ For å administrere portalene effektivt må du forstå Power Apps-portalene og M
 - [Oppgradere en portal](https://docs.microsoft.com/powerapps/maker/portals/admin/upgrade-portal)
 - [Overføre en portalkonfigurasjon](https://docs.microsoft.com/powerapps/maker/portals/admin/migrate-portal-configuration)
 - [Administrasjon livssyklus for løsning: Dynamics 365 for Customer Engagement-apper](https://www.microsoft.com/download/details.aspx?id=57777)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

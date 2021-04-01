@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3901fb61c1c8f9a9fd13b8ea558877daf884f3ee
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 7191e1e48283d2468155c84d408b030a7c50e4d7
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4972252"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5252175"
 ---
 # <a name="accounting-distributions"></a>Regnskapsdistribusjoner
 
@@ -56,3 +56,6 @@ Generiske funksjoner for regnskapsdistribusjon gir følgende alternativer for be
 I versjon 10.0.13 er det lagt til en funksjon som validerer tabellen for regnskapsdistribusjon for å sikre at nye felt er riktig satt opp. Denne funksjonen kalles **Aktiver ytterligere validering av data for dokumenter som bruker regnskapsrammeverket for kildedokumenter**. Hvis du vil bruke funksjonen, må du aktivere den ved hjelp av arbeidsområdet for **Funksjonsbehandling**. Hvis du vil aktivere funksjonen, kan du søke etter funksjonsnavnet i **Søk**-feltet på siden **Funksjonsbehandling** og deretter velge **Aktiver nå**.
 
 Se [Regnskapsdistribusjoner og underfinansjournaloppføringer for leverandørfakturaer](accounting-distributions-subledger-journal-entries-vendor-invoices.md) for mer informasjon.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

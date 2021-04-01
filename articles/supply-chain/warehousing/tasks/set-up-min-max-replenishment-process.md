@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e14614829f414bc9063b84ec848816e77dbd571a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 899d29c370439f5e2d7a8094290e2a607d89eba3
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4976944"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5256021"
 ---
 # <a name="set-up-a-min-max-replenishment-process"></a>Definere en prosess for minimums-/maksimumsetterfylling
 
@@ -89,7 +89,7 @@ Denne fremgangsmåten viser hvordan du definerer en ny etterfyllingprosess som b
 9. Merk den valgte raden i listen.
 10. Angi eller velg en verdi i feltet **Etterfyllingsenhet**. Velg for eksempel stk. Denne innstillingen er obligatorisk. Den lar deg angi en annen målenhet for etterfyllingsarbeid sammenlignet med enheten som er angitt for de minste og største lagernivåene i denne malen.
 11. Angi eller velg en verdi i feltet **Arbeidsmal**. Velg arbeidsmalen du opprettet tidligere.  
-12. Angi et tall i feltet **Minimumsantall**. Velg det minste antallet som skal utløse etterfyllingen. Sett det for eksempel til 50. Det er mulig å la det være satt til null hvis du etterfyller en fast plassering og alternativet **Etterfyll tomme faste lokasjoner** er satt til Ja. Vi anbefaler også at du velger alternativet **Etterfyll bare faste lokasjoner** med hensyn til ytelsen.
+12. Angi et tall i feltet **Minimumsantall**. Velg det minste antallet som skal utløse etterfyllingen. Sett det for eksempel til 50. Det er mulig å la det være satt til null hvis du etterfyller en fast plassering og alternativet **Etterfyll tomme faste lokasjoner** er satt til Ja. Det anbefales også at du velger alternativet **Etterfyll bare faste lokasjoner** med hensyn til ytelsen.
 13. Angi et tall i feltet **Maksimumsantall**. Sett det for eksempel til 100.  
 14. Angi eller velg en verdi i **Enhet**-feltet. Tilordne enheten for minimums- og maksimumsantall. Sett det for eksempel til stk.  
 15. Merk av for **Etterfyll tomme faste lokasjoner**. Velg dette alternativet for å etterfylle faste lokasjoner når de er tomme. Du kan eventuelt bare lokasjonene der det er et antall på lager som skal etterfylles.
@@ -119,3 +119,6 @@ Denne fremgangsmåten viser hvordan du definerer en ny etterfyllingprosess som b
 11. Klikk på **OK**.
 12. Klikk på **OK**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

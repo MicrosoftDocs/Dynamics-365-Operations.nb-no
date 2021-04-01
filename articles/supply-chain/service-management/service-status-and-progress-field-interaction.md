@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 314ca8c325205bd8f489daf46498e9586603eaf3
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: c66871d07bdfd949e29a704f53b3e5698d996c2d
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5010453"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5254221"
 ---
 # <a name="service-status-and-progress-field-interaction"></a>Servicestatus og fremdriftsfeltinteraksjon 
 
@@ -94,3 +94,6 @@ Hvis alle linjer i en serviceordre er merket som **Postert**, er fremdriften til
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
