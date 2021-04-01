@@ -15,37 +15,40 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1df738e3925dc23e7723d93f33acf6a9d811b113
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 2c3d538a4e032ca9cfafff3232ad235019654ed7
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4964547"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5231482"
 ---
-# <a name="create-and-export-vendor-payments-using-iso20022-payment-format"></a><span data-ttu-id="39c98-103">Opprette og eksportere leverandørbetalinger ved hjelp av ISO20022-betalingsformat</span><span class="sxs-lookup"><span data-stu-id="39c98-103">Create and export vendor payments using ISO20022 payment format</span></span>
+# <a name="create-and-export-vendor-payments-using-iso20022-payment-format"></a><span data-ttu-id="dede4-103">Opprette og eksportere leverandørbetalinger ved hjelp av ISO20022-betalingsformat</span><span class="sxs-lookup"><span data-stu-id="dede4-103">Create and export vendor payments using ISO20022 payment format</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="39c98-104">Dette emnet forklarer hvordan du oppretter betalingslinjer i leverandørbetalingsjournalen og genererer en leverandørbetalingsfil ved hjelp av eksemplet med ISO2022-kredittoverføring.</span><span class="sxs-lookup"><span data-stu-id="39c98-104">This topic explains how to create payment lines in the vendor payment journal and generate a vendor payment file using ISO2022 Credit transfer example.</span></span>
+<span data-ttu-id="dede4-104">Dette emnet forklarer hvordan du oppretter betalingslinjer i leverandørbetalingsjournalen og genererer en leverandørbetalingsfil ved hjelp av eksemplet med ISO2022-kredittoverføring.</span><span class="sxs-lookup"><span data-stu-id="dede4-104">This topic explains how to create payment lines in the vendor payment journal and generate a vendor payment file using ISO2022 Credit transfer example.</span></span>
 
-<span data-ttu-id="39c98-105">Dette er den femte prosedyren av fem, som illustrerer leverandørbetalingsprosessen ved hjelp av konfigurasjoner for elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="39c98-105">This is the fifth procedure, out of five, that illustrates the vendor payment process using electronic reporting configurations.</span></span> <span data-ttu-id="39c98-106">Bruk DEMF-demodata til å utføre dette eksemplet.</span><span class="sxs-lookup"><span data-stu-id="39c98-106">Use the DEMF demo data to complete this example.</span></span>
+<span data-ttu-id="dede4-105">Dette er den femte prosedyren av fem, som illustrerer leverandørbetalingsprosessen ved hjelp av konfigurasjoner for elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="dede4-105">This is the fifth procedure, out of five, that illustrates the vendor payment process using electronic reporting configurations.</span></span> <span data-ttu-id="dede4-106">Bruk DEMF-demodata til å utføre dette eksemplet.</span><span class="sxs-lookup"><span data-stu-id="dede4-106">Use the DEMF demo data to complete this example.</span></span>
 
-## <a name="example"></a><span data-ttu-id="39c98-107">Eksempel</span><span class="sxs-lookup"><span data-stu-id="39c98-107">Example</span></span>
+## <a name="example"></a><span data-ttu-id="dede4-107">Eksempel</span><span class="sxs-lookup"><span data-stu-id="dede4-107">Example</span></span>
 
-1.    <span data-ttu-id="39c98-108">Gå til **Leverandører > Betalinger > Betalingsjournal**.</span><span class="sxs-lookup"><span data-stu-id="39c98-108">Go to **Accounts payable > Payments > Payment journal**.</span></span>
-2.    <span data-ttu-id="39c98-109">Klikk **Ny**.</span><span class="sxs-lookup"><span data-stu-id="39c98-109">Click **New**.</span></span>
-3.    <span data-ttu-id="39c98-110">Angi eller velg en verdi i **Navn**-feltet.</span><span class="sxs-lookup"><span data-stu-id="39c98-110">In the **Name** field, enter or select a value.</span></span>
-4.    <span data-ttu-id="39c98-111">Klikk **Linjer > Betalingsforslag > Opprett betalingsforslag**.</span><span class="sxs-lookup"><span data-stu-id="39c98-111">Click **Lines > Payment proposal > Create payment proposal**.</span></span>
-5.    <span data-ttu-id="39c98-112">Utvid delen **Poster som skal inkluderes**.</span><span class="sxs-lookup"><span data-stu-id="39c98-112">Expand the **Records to include** section.</span></span>
-6.    <span data-ttu-id="39c98-113">Klikk **Filter**.</span><span class="sxs-lookup"><span data-stu-id="39c98-113">Click **Filter**.</span></span>
-7.    <span data-ttu-id="39c98-114">I listen velger du raden for **Leverandører-tabellen** og **Leverandørkonto-feltet**.</span><span class="sxs-lookup"><span data-stu-id="39c98-114">In the list, select the row for **Vendors table** and **Vendor account field**.</span></span>
-8.    <span data-ttu-id="39c98-115">Angi eller velg en verdi i **Kriterier**-feltet.</span><span class="sxs-lookup"><span data-stu-id="39c98-115">In the **Criteria** field, enter or select a value.</span></span> <span data-ttu-id="39c98-116">Du kan bruke hvilke som helst kriterier for å velge leverandørtransaksjoner som skal betales, men i dette eksemplet bruker du DE-001 som en leverandørkonto.</span><span class="sxs-lookup"><span data-stu-id="39c98-116">You can apply any criteria for selecting vendor transactions to pay, for this example, use DE-001 as a vendor account.</span></span>
-12.    <span data-ttu-id="39c98-117">Klikk **OK**.</span><span class="sxs-lookup"><span data-stu-id="39c98-117">Click **OK**.</span></span>
-13.    <span data-ttu-id="39c98-118">Klikk **OK**.</span><span class="sxs-lookup"><span data-stu-id="39c98-118">Click **OK**.</span></span>
-14.    <span data-ttu-id="39c98-119">Klikk **Opprett betalinger**.</span><span class="sxs-lookup"><span data-stu-id="39c98-119">Click **Create payments**.</span></span>
-15. <span data-ttu-id="39c98-120">Generere en ISO20022-betalingsfil.</span><span class="sxs-lookup"><span data-stu-id="39c98-120">Generate an ISO20022 payment file.</span></span>
-    1.    <span data-ttu-id="39c98-121">Klikk **Generer betalinger**.</span><span class="sxs-lookup"><span data-stu-id="39c98-121">Click **Generate payments**.</span></span>
-    2.    <span data-ttu-id="39c98-122">Angi eller velg en verdi i **Betalingsmåte**-feltet.</span><span class="sxs-lookup"><span data-stu-id="39c98-122">In the **Method of payment** field, enter or select a value.</span></span>
-    3.    <span data-ttu-id="39c98-123">Skriv inn en verdi i feltet **Filnavn**.</span><span class="sxs-lookup"><span data-stu-id="39c98-123">In the **File name** field, type a value.</span></span> <span data-ttu-id="39c98-124">I dette eksemplet blir den genererte filen SEPA-kompatibel på grunn av EUR-betalingen.</span><span class="sxs-lookup"><span data-stu-id="39c98-124">For this example, because of the EUR payment, the generated file will be SEPA compliant.</span></span> <span data-ttu-id="39c98-125">ISO20022 kredittoverføring i tillegg til andre leverandørbetalingsformater kan også brukes for å generere betalinger i andre valutaer.</span><span class="sxs-lookup"><span data-stu-id="39c98-125">ISO20022 credit transfer as well as other vendor payment formats can also be used for generating payments in other currencies.</span></span>
-    4.    <span data-ttu-id="39c98-126">Angi eller velg en verdi i **Bankkonto**-feltet.</span><span class="sxs-lookup"><span data-stu-id="39c98-126">In the **Bank account** field, enter or select a value.</span></span>
+1.    <span data-ttu-id="dede4-108">Gå til **Leverandører > Betalinger > Betalingsjournal**.</span><span class="sxs-lookup"><span data-stu-id="dede4-108">Go to **Accounts payable > Payments > Payment journal**.</span></span>
+2.    <span data-ttu-id="dede4-109">Klikk **Ny**.</span><span class="sxs-lookup"><span data-stu-id="dede4-109">Click **New**.</span></span>
+3.    <span data-ttu-id="dede4-110">Angi eller velg en verdi i **Navn**-feltet.</span><span class="sxs-lookup"><span data-stu-id="dede4-110">In the **Name** field, enter or select a value.</span></span>
+4.    <span data-ttu-id="dede4-111">Klikk **Linjer > Betalingsforslag > Opprett betalingsforslag**.</span><span class="sxs-lookup"><span data-stu-id="dede4-111">Click **Lines > Payment proposal > Create payment proposal**.</span></span>
+5.    <span data-ttu-id="dede4-112">Utvid delen **Poster som skal inkluderes**.</span><span class="sxs-lookup"><span data-stu-id="dede4-112">Expand the **Records to include** section.</span></span>
+6.    <span data-ttu-id="dede4-113">Klikk **Filter**.</span><span class="sxs-lookup"><span data-stu-id="dede4-113">Click **Filter**.</span></span>
+7.    <span data-ttu-id="dede4-114">I listen velger du raden for **Leverandører-tabellen** og **Leverandørkonto-feltet**.</span><span class="sxs-lookup"><span data-stu-id="dede4-114">In the list, select the row for **Vendors table** and **Vendor account field**.</span></span>
+8.    <span data-ttu-id="dede4-115">Angi eller velg en verdi i **Kriterier**-feltet.</span><span class="sxs-lookup"><span data-stu-id="dede4-115">In the **Criteria** field, enter or select a value.</span></span> <span data-ttu-id="dede4-116">Du kan bruke hvilke som helst kriterier for å velge leverandørtransaksjoner som skal betales, men i dette eksemplet bruker du DE-001 som en leverandørkonto.</span><span class="sxs-lookup"><span data-stu-id="dede4-116">You can apply any criteria for selecting vendor transactions to pay, for this example, use DE-001 as a vendor account.</span></span>
+12.    <span data-ttu-id="dede4-117">Klikk **OK**.</span><span class="sxs-lookup"><span data-stu-id="dede4-117">Click **OK**.</span></span>
+13.    <span data-ttu-id="dede4-118">Klikk **OK**.</span><span class="sxs-lookup"><span data-stu-id="dede4-118">Click **OK**.</span></span>
+14.    <span data-ttu-id="dede4-119">Klikk **Opprett betalinger**.</span><span class="sxs-lookup"><span data-stu-id="dede4-119">Click **Create payments**.</span></span>
+15. <span data-ttu-id="dede4-120">Generere en ISO20022-betalingsfil.</span><span class="sxs-lookup"><span data-stu-id="dede4-120">Generate an ISO20022 payment file.</span></span>
+    1.    <span data-ttu-id="dede4-121">Klikk **Generer betalinger**.</span><span class="sxs-lookup"><span data-stu-id="dede4-121">Click **Generate payments**.</span></span>
+    2.    <span data-ttu-id="dede4-122">Angi eller velg en verdi i **Betalingsmåte**-feltet.</span><span class="sxs-lookup"><span data-stu-id="dede4-122">In the **Method of payment** field, enter or select a value.</span></span>
+    3.    <span data-ttu-id="dede4-123">Skriv inn en verdi i feltet **Filnavn**.</span><span class="sxs-lookup"><span data-stu-id="dede4-123">In the **File name** field, type a value.</span></span> <span data-ttu-id="dede4-124">I dette eksemplet blir den genererte filen SEPA-kompatibel på grunn av EUR-betalingen.</span><span class="sxs-lookup"><span data-stu-id="dede4-124">For this example, because of the EUR payment, the generated file will be SEPA compliant.</span></span> <span data-ttu-id="dede4-125">ISO20022 kredittoverføring i tillegg til andre leverandørbetalingsformater kan også brukes for å generere betalinger i andre valutaer.</span><span class="sxs-lookup"><span data-stu-id="dede4-125">ISO20022 credit transfer as well as other vendor payment formats can also be used for generating payments in other currencies.</span></span>
+    4.    <span data-ttu-id="dede4-126">Angi eller velg en verdi i **Bankkonto**-feltet.</span><span class="sxs-lookup"><span data-stu-id="dede4-126">In the **Bank account** field, enter or select a value.</span></span>
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
