@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b5bac42d5cdc62361ee9a562e59bafa09ca7a215
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 0f65bfc7b5ef9651853a12bab2ed83dbb8562ba6
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5018502"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5253740"
 ---
 # <a name="maintenance-status"></a>Vedlikeholdsstatus
 
@@ -67,3 +67,6 @@ I skjermdumpen nedenfor er informasjon om arbeidssteder lagt til. Nå er det mul
 
 ![Eksempel på månedlig arbeidsmengde med funksjonsplasseringer](media/14-controlling-and-reporting.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

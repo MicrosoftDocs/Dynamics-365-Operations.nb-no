@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a9b761e61bf6a810da9258870e9a994da4ced125
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d76ec6ac928228011f42355bebd553576bcfd275
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4981437"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5255451"
 ---
 # <a name="add-a-predecessor-to-a-production-flow-activity"></a>Legge til en foregående aktivitet i en produksjonsflytaktivitet
 
@@ -51,3 +51,6 @@ Hvis du vil ha mer informasjon, kan du se hvitboken Produksjonsflyter og -aktivi
     * Standard syklustidsforhold for en aktivitetsrelasjon er 1. Dette forutsetter at begge aktivitetene kjører med samme hastighet eller takttid. Hvis den foregående aktiviteten kjører med et høyere tempo (lavere takttid), må forholdet være lavere enn 1, og hvis den foregående aktiviteten går langsommere (høyere takttid), er syklustidsforholdet større enn 1.  
 5. Klikk på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

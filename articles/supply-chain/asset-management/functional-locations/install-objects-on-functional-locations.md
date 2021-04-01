@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5ea67e2392d8e25a2a5f3cb7e1ff5032322f2c48
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 44e7d3f366ab79b54f021d01c69779ed04859be8
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5022036"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5253644"
 ---
 # <a name="install-assets-on-functional-locations"></a>Installere aktiva på arbeidssteder
 
@@ -82,3 +82,6 @@ Når oppsettsdataene er tilgjengelige, er du klar til å opprette et aktivum.
 1. På siden **Alle arbeidssteder** må du kontrollere at arbeidsstedet der du vil at aktivumet skal opprettes automatisk, bruker arbeidsstedstypen du opprettet for dette formålet.
 2. Velg arbeidsstedet i listen.
 3. Velg **Oppdater tilstand for arbeidssted**, og velg deretter livssyklustilstanden du opprettet for dette formålet. Ett aktivum installeres nå automatisk på arbeidsstedet. Dette aktivumet har samme navn som arbeidsstedet.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

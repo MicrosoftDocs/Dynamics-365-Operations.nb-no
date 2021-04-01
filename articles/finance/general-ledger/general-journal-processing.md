@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cd854b2188b07830e5641ccdd4bb02804a07b55c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 6f9f19f0714fc160792a29261e21fe4ec8d62c4b
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4975639"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5249245"
 ---
 # <a name="general-journal-processing"></a>Behandling av generell journal
 
@@ -104,3 +104,6 @@ Muligheten til å tilbakekalle en journal i en arbeidsflyt som har statusen uopp
 
 ## <a name="delete-journal-lines"></a>Slett journallinjer
 Muligheten til å slette alle journallinjer raskt aktiveres i en journal under **Funksjoner** > **Slett journallinjer**. Hvis du vil aktivere denne funksjonen, velger du **Slett ytelsesoptimaliseringer for journal** under **Funksjonsbehandling**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 24d57982981ca7b72e43c086ace381e420acb06c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: f5cc47ce54bd60b6c8c23cae09609f6b275e3fa7
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4975692"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5249308"
 ---
 # <a name="get-started-with-financial-reporting"></a>Komme i gang med Financial Reporting 
 
@@ -174,3 +174,6 @@ Problem 3: Du kan fortsette etter påloggingssiden for ClickOnce Rapportutformin
 ## <a name="additional-resources"></a>Tilleggsressurser
 - [Vis finansrapporter](view-financial-reports.md)
 - [Definisjoner av rapporteringstre i finansrapporter](../../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

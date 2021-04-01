@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 457c547947ce6182d03e7a8276b380bc08535bca
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 30506b17331d15e1164f513b34ff71f612828f8b
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4985118"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5256697"
 ---
 # <a name="add-financial-dimensions-to-the-cfo-workspace"></a>Legge til finansdimensjoner i CFO-arbeidsområdet
 
@@ -33,7 +33,7 @@ Dette emnet forklarer hvordan du legger til finansdimensjoner i CFO-arbeidsområ
 1. I Finance, på **Enhetsbutikk**-siden, oppdaterer du målene **LedgerActivityMeasure** og **BudgetActivityMeasure**.
 2. Åpne Programutforsker i Microsoft Visual Studio, og søk etter **LedgerCFO**.
 3. Under **Ressurser** åpner du **LedgerCFOWorkspacePBIX**.
-4. Når ressursen åpnes i Microsoft Power BI-skrivebordet, velger du **Hent data**, velger **SQL Server-database**, og velger deretter **Koble til**.
+4. Når ressursen åpnes på skrivebordet i Microsoft Power BI Desktop, velger du **Hent data**, velger **SQL Server-database**, og velger deretter **Koble til**.
 5. Angi servernavnet, og angi deretter **AxDW** som databasen. Velg **DirectQuery**, og velg deretter **OK**.
 6. Søk etter og velg **LedgerActivityMeasure\_DimensionCombination**, og velg deretter **Last inn**.
 
@@ -55,3 +55,6 @@ Dette emnet forklarer hvordan du legger til finansdimensjoner i CFO-arbeidsområ
 16. Bygge prosjektet, og åpne deretter programmet for å vise resultatene.
 
     [![Fullført arbeidsområde](./media/workspace.png)](./media/workspace.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

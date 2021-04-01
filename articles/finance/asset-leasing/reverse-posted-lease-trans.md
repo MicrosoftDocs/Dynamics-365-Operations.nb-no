@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 3e4908ddab2650e5ff7e4a28bf916604d165d08c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 22d8eee22221efaf5e7a715c8b95dff261bee62f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969534"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5249731"
 ---
 # <a name="reverse-posted-lease-transactions"></a>Tilbakeføre posterte leietransaksjoner
 
@@ -55,3 +55,6 @@ Følg denne fremgangsmåten for å oppheve en tilbakeført transaksjon.
 Når du velger **Tilbakeført sporing**, blir det vist en dialogboks der det vises både de opprinnelige transaksjonene og de tilbakeførte transaksjonene sammen med et koblet sporingsnummer.
 
 Du kan også spore opphevelser ved å bruke den riktige **Tidsplaner**-siden. Merket fjernes i **Tilbakefør**-feltet, mens **Journal postert** velges. I tillegg oppdateres feltet **Siste journalnummer** med journalnummeret til den opphevede transaksjonen, og feltet **Journalnummer** oppdateres med tilbakeføringsjournalnummeret.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

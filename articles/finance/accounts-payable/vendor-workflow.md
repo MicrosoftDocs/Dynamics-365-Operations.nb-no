@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 1fad41fa4fb3562ab94adde522d3899271c85467
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: fb89b54b2f9377c216c447590a9434e3ff2d9bac
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4979170"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5248141"
 ---
 # <a name="vendor-workflow"></a>Arbeidsflyt for leverandør
 
@@ -60,3 +60,6 @@ Når du har minst én foreslått endring, vises det to ytterligere kategorier i 
     Statusen på siden endres til **Endringer som venter på godkjenning**.
 
 Arbeidsflyten følger standard arbeidsflytprosess. Godkjenneren er rettet mot siden **Leverandør**, der endringene kan gjennomgås på siden **Foreslåtte endringer** og deretter velge **Arbeidsflyt \> Godkjenn** for å godkjenne arbeidsflyten. Når alle godkjenninger er fullført, oppdateres feltene med verdier som du har foreslått.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -16,20 +16,18 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 045568797722a621ea4e6c82d10dbb266b9e8162
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: e9b5a8123c64dce2ba65758f0312a899646cf948
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4982472"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5252564"
 ---
 # <a name="media-gallery-module"></a>Mediegallerimodul
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet dekker mediegallerimoduler og beskriver hvordan du legger dem til på områdesider i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Oversikt
 
 Mediegallerimoduler viser ett eller flere bilder i en gallerivisning. Mediegallerimoduler støtter miniatyrbilder, som kan ordnes enten vannrett (som en rad under bildet) eller loddrett (som en kolonne ved siden av bildet). Mediegallerimoduler inneholder også funksjoner som gjør at bilder kan zoomes (forstørres) eller vises i fullskjermmodus. For å bli gjengitt i en mediegallerimodul må et bilde være tilgjengelig i mediebiblioteket i Commerce-områdebygger. Mediegallerimoduler støtter for øyeblikket bare bilder.
 

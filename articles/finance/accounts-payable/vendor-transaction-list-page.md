@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 17059dc2343df66e899a3c22908875be6b6de4ef
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 41a8506989add6c7c4a5596892bde442c7c7dff2
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4993244"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5248189"
 ---
 # <a name="vendor-transactions-list-page"></a>Listeside for leverandørtransaksjoner
 
@@ -96,3 +96,6 @@ Hvert felt har en forskjellig effekt på transaksjonen når du redigerer det:
 - **Rediger vilkårene for kontantrabatt:** Kontantrabattene endres, basert på basisdatoen og vilkårene for kontantrabatt.
 
 Når du er ferdig med å redigere betalingsinnstillingene, velger du **Lukk** for å lagre endringene.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

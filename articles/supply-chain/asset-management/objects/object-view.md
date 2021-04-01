@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0256cc86dc306c8addb37d2c8f335470b19177a
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 2a770831c564d44de534642cc462b27b0818e9a2
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5019410"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5253116"
 ---
 # <a name="asset-view"></a>Aktivavisning
 
@@ -47,3 +47,6 @@ ID for arbeidssted / ID for arbeidssted (hvis det er flere arbeidssteder) \> Akt
 Hvis du har valgt et aktivum i trevisningen, kan du velge **Aktive forespørsler** eller **Aktive arbeidsordrer** for å vise meldingene eller arbeidsordrene som er relatert til aktivumet. Du kan også velge **Åpne** \> **Arbeidssted**, **Aktiva** eller **Stykkliste for aktiva** for å åpne den tilknyttede visningen.
 
 Alternativet **Arbeidssteder for aktiva** som du kan velge i **Visning**-feltet, er også tilgjengelig i alle aktivaoppslag der du kan velge et aktivum. Trevisningen vises i fanen **Aktivavisning**, der du for eksempel [oppretter et aktivum](../objects/create-an-object.md), oppretter en melding eller oppretter en arbeidsordre.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

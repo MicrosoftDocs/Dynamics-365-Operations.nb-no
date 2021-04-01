@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: f362bf4a6b5de3ce16330aea08880b07b4145792
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: b6d201329996f23d94c0fc76a9635d3bb99c931e
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4992870"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5249683"
 ---
 # <a name="set-up-index-rates"></a>Definere indeksrenter
 
@@ -42,3 +42,6 @@ Du må velge enten **verdidifferanse for indeksrente** eller **indeksrenteverdi*
 
 - Velg metoden for **verdidifferanse for indeksrente** for å beregne en ny leiebetaling basert på forskjellen mellom indeksrenten på startdatoen og den seneste indeksrenten. Indeksrenten er definert i feltet for **indeksrente (%)**.
 - Velg metoden for **indeksrenteverdi** for å beregne leiebetalingen ved å bruke prosenten som er angitt i feltet for **indeksrente (%)**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

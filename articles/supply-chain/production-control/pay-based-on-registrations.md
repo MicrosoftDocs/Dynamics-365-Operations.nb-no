@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2018-03-20
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 98ca6f7713b2f605a49a97d391fb8485bea78c4b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ed2ee6c09f8b8a404d36c635eb5dbd9383653f81
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966386"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5250412"
 ---
 # <a name="pay-based-on-registrations"></a>Lønn basert på registreringer
 
@@ -588,7 +588,7 @@ Hvis arbeideren velger en fraværskode for gyldig fravær, og fraværskoden er k
 I dette tilfellet reduseres arbeiderens fleksisaldo med antall timer mellom det faktiske utstemplingstidspunktet og det planlagte utstemplingstidspunktet (det vil si 2,5 timer fra 01:00 PM til 03:30 PM).
 
 > [!NOTE]
-> Vi anbefaler ikke at du merker av for både **Trekk fra fleksi** og **Trekk fra overtid** for en fraværskode, fordi dette oppsettet vil trekke fra de ugyldige timene fra arbeiderens overtidstimer og samtidig redusere arbeiderens fleksikonto.
+> Det anbefales ikke at du merker av for både **Trekk fra fleksi** og **Trekk fra overtid** for en fraværskode, fordi dette oppsettet vil trekke fra de ugyldige timene fra arbeiderens overtidstimer og samtidig redusere arbeiderens fleksikonto.
 
 ### <a name="scenario-6-there-is-no-planned-absence-for-the-day-and-no-worker-attendance-for-the-day"></a>Scenario 6: Det finnes ingen planlagt fravær for dagen, og ingen arbeiders fremmøte for dagen
 
@@ -598,3 +598,6 @@ Hvis arbeideren ikke kommer på jobb i en arbeidsdag, og det er ingen planlagt f
 - Sett inn fravær automatisk
 
 Når de daglige registreringene er beregnet for en arbeider som er aktivert for fleksible timer, brukes fraværskoden som er angitt i feltet **Sett inn fleksitid automatisk**, som en standard fraværskode. Hvis arbeideren ikke er aktivert for fleksible timer, brukes fraværskoden som er angitt i feltet **Sett inn fravær automatisk**. Hvis et firma har en kombinasjon av arbeidere som er aktivert for fleksible timer og arbeidere som ikke er aktivert for fleksible timer, må begge parametere defineres.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

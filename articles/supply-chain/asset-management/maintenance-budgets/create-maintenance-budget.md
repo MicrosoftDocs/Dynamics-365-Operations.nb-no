@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 602a00060c1e56285d9954981d019bececaf90fd
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 593a03e3317de5759427dfc61093530c4b7ef7e9
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020995"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5253500"
 ---
 # <a name="create-maintenance-budgets"></a>Opprette vedlikeholdsbudsjetter
 
@@ -58,3 +58,6 @@ Du kan også opprette et nytt vedlikeholdsbudsjett ved å kopiere et eksisterend
 
 > [!NOTE]
 > Vedlikeholdsbudsjettet beregner bare budsjettkostnader på grunnlag av vedlikeholdsplanlinjer. Hvis du vil beregne faktiske kostnader for samme periode, kan du utføre denne beregningen på siden **Kostnadskontroll for aktivum**. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

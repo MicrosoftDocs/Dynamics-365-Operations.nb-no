@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2020-01-12
 ms.dyn365.ops.version: AX 10.0.16
-ms.openlocfilehash: c50f6df1c63c91107da65f463934565f786d6ccd
-ms.sourcegitcommit: 630a0b3f800f36ced49b79156dd52132904fef75
+ms.openlocfilehash: c839df1b54cdb60beefa6dc6c3fc6e945a6eac85
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "5060776"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5256649"
 ---
 # <a name="withholding-tax-in-sales-transactions"></a>Kildeskatt i salgstransaksjoner
 
@@ -63,3 +63,6 @@ Standard kildeskattgruppe og kildeskattgruppe for varer blir brukt som standardo
 Kildeskatt beregnes og posteres med **Kundebetalingsjournal**. Du kan justere den gjeldende kildeskattkoden manuelt og det faktiske kildeskattbeløpet i kategorien **Kildeskatt** på siden **Utlign transaksjoner**.
 
 Det beregnede kildeskattbeløpet blir trukket fra kundebetalingen og postert til **Kildeskattmotkonto** i et tilknyttet bilag.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

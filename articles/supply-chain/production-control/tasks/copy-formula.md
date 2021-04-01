@@ -15,12 +15,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0643209f7ef5090684db693bea2483fadcf3760b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: cdeeb760ab6bb00cefc6b358e53996dd652e5bc6
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4998784"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5255331"
 ---
 # <a name="copy-a-formula"></a>Kopiere en formel
 
@@ -64,3 +64,6 @@ Denne prosedyren fokuserer på å opprette en formel som inneholder de samme ing
 5. Klikk på Velg.
 6. Klikk på OK.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

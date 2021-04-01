@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 5e71cfd451a51a5dabd12419541202ecc39df631
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 5fd24ad91b669b054b88cd187309038f1716e582
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4999962"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5256213"
 ---
 # <a name="set-up-master-planning"></a>Definere hovedplanlegging
 
@@ -205,7 +205,7 @@ Positive dager angir hvor langt inn i fremtiden hovedplanleggingen vurderer gjel
 
 De positive dagene påvirker også handlingsmeldingene. Systemet kan for eksempel anbefale at du øker et bestillingsforslag, slik at det omfatter et behov som er innenfor antall positive dager i fremtiden. Hvis de positive dagene settes til **100**, og hvis det er behov for en vare om 30 dager fra gjeldende dato, oppretter systemet en planlagt ordre for å oppfylle dette behovet. Hvis det er behov for den samme varen om 90 dager fra gjeldende dato, anbefaler systemet at du øker antallet for ordren om 30 dager fra den gjeldende datoen, slik at ordren også dekker behovet om 90 dager. Hvis det imidlertid er behov for varen om 150 dager fra gjeldende dato, anbefaler ikke systemet at du øker antallet i ordren som allerede var planlagt. Det blir i stedet opprettet en ny planlagt ordre.
 
-Som regel settes positive dager til et tall som er mellom den lengste leveringstiden for varene og dekningshorisonten. Vi anbefaler at du tilordner varer som fremskaffes eller produseres jevnlig, til en dekningsgruppe der de positive dagene er lik varens leveringstid.
+Som regel settes positive dager til et tall som er mellom den lengste leveringstiden for varene og dekningshorisonten. Det anbefales at du tilordner varer som fremskaffes eller produseres jevnlig, til en dekningsgruppe der de positive dagene er lik varens leveringstid.
 
 ### <a name="negative-days"></a>Negative dager
 
@@ -215,7 +215,7 @@ La oss si at du har en salgsordre for en vare om 15 dager fra gjeldende dato. Du
 
 De negative dagene påvirker også ytelsen til hovedplanleggingen. Hvis de negative dagene settes til et høyt tall, genereres det mange handlingsmeldinger.
 
-Vi anbefaler at du setter negative dager til et tall som er mindre enn leveringstiden for varen.
+Det anbefales at du setter negative dager til et tall som er mindre enn leveringstiden for varen.
 
 ### <a name="dynamic-negative-days"></a>Dynamiske negative dager
 
@@ -226,3 +226,6 @@ Leveringstid + Negative dager + Gjeldende dato - Behovsdato
 Systemet bruker bare de planlagte forsyningsordrene som er innenfor denne horisonten, og det oppretter en ny planlagt ordre utenfor den. Fordelen med dynamiske negative dager er at de tar med den individuelle produktleveringstiden, for å bruke eksisterende ordrer på nytt og unngå å opprette nye planlagte ordrer som ender opp med en senere dag på grunn av forsinkelser forårsaket av leveringstiden. 
 
 Hvis du vil ha mer informasjon, kan du se [Negative dager og dynamiske negative dager](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/more-about-dynamic-negative-days).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

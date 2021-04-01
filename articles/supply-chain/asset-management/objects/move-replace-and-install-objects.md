@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 022ffc59b1b64913fedaf550f3fdb32141a94031
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 4f5eff3cc1bcf85e1541917edf525d83c124edb7
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020285"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5253236"
 ---
 # <a name="move-replace-and-install-assets"></a>Flytte, erstatte og installere aktiva
 
@@ -90,3 +90,6 @@ Bruk funksjonen **Installer aktivum** til å installere en aktivastruktur på et
 4. Velg det nye arbeidsstedet i **Arbeidssted**-feltet.
 5. Som standard settes feltet **Gyldighet** til gjeldende dato og klokkeslett. Du kan imidlertid velge en annen dato og klokkeslett som installeringen av aktivastrukturen skal være gyldig fra.
 6. Velg **OK**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

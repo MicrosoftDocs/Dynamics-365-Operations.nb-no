@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 62cfd913393c3533c232dd89c90c3cdfffa72244
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: c2c13a0eac0cb3fe1ff63909bb8cc2862b52a92d
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5018193"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5253620"
 ---
 # <a name="introduction-to-functional-locations"></a>Innføring i arbeidssteder
 
@@ -82,3 +82,6 @@ Knappene i handlingsruten er ordnet i kategorier. Følgende tabell beskriver kor
 | Feil                              | Åpne siden **Aktivafeil**, der du kan vise en liste over registreringer av aktivafeil som er knyttet til det valgte arbeidsstedet. |
 | Oppdater tilstand for arbeidssted    | Oppdater tilstanden til det valgte arbeidsstedet.                                                                                        |
 | Logg for livssyklustilstand                 | Vis en logg som viser tilstandene til det valgte arbeidsstedet.                                                                        |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

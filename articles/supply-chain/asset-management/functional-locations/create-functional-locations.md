@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 81b5b81d7c318ba0a195dbc6324d700ccb8d39bf
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 1875ddd5c57639830a70aeebf7ef41114044f839
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5018227"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5253675"
 ---
 # <a name="create-functional-locations"></a>Opprette arbeidssteder
 
@@ -131,3 +131,6 @@ Et arbeidssted med beslektede understeder kan slettes hvis ingen aktiva er insta
 
 >[!NOTE]
 >Hvis du ikke kan slette et arbeidssted, kan du i stedet håndtere slettingen ved å definere en livssyklustilstand for arbeidsstedet til dette formålet. Du kan for eksempel definere en "kassert" eller "slettet" fase, som ikke skal være en aktiv fase, i skjemaet **Livssyklustilstander for arbeidssteder**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

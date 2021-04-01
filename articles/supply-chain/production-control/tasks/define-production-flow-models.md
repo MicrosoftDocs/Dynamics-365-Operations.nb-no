@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 22aabf2d0cecf272ac25ba3adde8cc650b069af9
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 8267b18ea85b7a6ba7a1333b586f36ea8b6e8e30
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4977869"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5257225"
 ---
 # <a name="define-production-flow-models"></a>Definere produksjonsflytmodeller
 
@@ -45,3 +45,6 @@ Produksjonsflytmodeller beskrive hvordan kapasiteten for arbeidsceller for lean 
 8. Velg et alternativ i feltet Reaksjon på kapasitetsmangel.
     * Alternativene omfatter: Utsett – utsetter fullstendig behovet for planleggingshendelsen på neste tilgjengelige produksjonsdag, med tilgjengelig kapasitet. Avbryt – Avslutter automatisk planlegging for planleggingshendelsen og lar de relaterte jobbene være uplanlagt.   Legg til for ønsket dag - planlegg de ønskede jobbene for den ønskede perioden. Dette overbelaster cellen for denne dagen og krever at planleggeren ser gjennom og foretar en manuell samhandling.   Distribuer til tilgjengelig perioder - distribuer de ulike jobbene for planleggingshendelsen til alle tilgjengelige produksjonsdager, med start fra den første tilgjengelige dagen. Minste distribusjonsantall er kanban-jobbantallet. Distribusjonen tilordner minste planleggingsantall (kanban-antall) til hver dag med nok tilgjengelig gjennomstrømning.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

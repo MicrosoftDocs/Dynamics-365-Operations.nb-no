@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: d2135458873963dc7c930b4bcef0c508c7d9635f
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 1eaa2f5cc191ec93c30f4f10a662a87e501a341d
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4992845"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5249587"
 ---
 # <a name="set-up-lease-approval-workflows"></a>Konfigurere arbeidsflyter for godkjenning av leie
 
@@ -52,3 +52,6 @@ Emnet beskriver hvordan du definerer en godkjenningsarbeidsflyt som skal kjøres
 14. Velg **Lukk** på siden **Opprett arbeidsflyt**.
 14. Velg den nye arbeidsflyten, og velg deretter **Versjoner**. Velg deretter **Gjør aktiv** for å sikre at arbeidsflyten er aktiv.
 15. Velg **Lukk**. Den nye aktive versjonen vises.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

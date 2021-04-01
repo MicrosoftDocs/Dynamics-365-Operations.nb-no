@@ -15,12 +15,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 115463c57b28e681d4c6bdc227e35272861779aa
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: b57dbd2516a25b414193ca76367bd8d5c4a1b298
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5006922"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5255067"
 ---
 # <a name="create-a-production-flow-version"></a>Opprette en produksjonsflytversjon
 
@@ -63,3 +63,6 @@ Denne prosedyren fokuserer på å opprette en ny produksjonsflytversjon. For den
     * Angi antall dager i perioden for faktisk syklustid. Perioden for faktisk syklustid er antall dager jobber aggregeres fra det faktiske minuttet bakover for å beregne den faktiske syklustiden. Verdien kan endres når som helst, og brukes bare for beregning av de faktiske syklustider.  
 13. Klikk på Lagre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-11-30
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 185a95cfebef0e9d6e7914f3102aa5ecb40a877a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 7704c38f878784647b44e81922b7679c0fedfbb2
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4988706"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5248885"
 ---
 # <a name="ledger-settlements"></a>Utligninger
 
@@ -74,3 +74,6 @@ Du kan tilbakeføre en utligning som ble gjort ved en feiltakelse.
 ## <a name="update-the-list-of-accounts-that-are-included-in-the-list-of-transactions"></a>Oppdater listen over kontoer som er inkludert i listen over transaksjoner
 
 Velg **Utligningskontoer** for å åpne en dialogboks der du kan redigere kontoene som er inkludert i listen over transaksjoner. Velg **Ny** for å legge til nye kontoer i listen. Denne listen brukes til å filtrere listen over transaksjoner som vises på siden **Utligninger**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
