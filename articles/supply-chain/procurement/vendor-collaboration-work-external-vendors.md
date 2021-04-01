@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 594a5bc8762d4c3fdc0bfd901ab97262b0f67a53
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: b375e1916344d94c2eaf2d951cd72744917d9edf
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016759"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5246651"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>Leverandørsamarbeid med eksterne leverandører
 
@@ -258,3 +258,6 @@ Brukeren som definerer parametere for tilbudsforespørselsprosessen, kan opprett
 - %createddate%
 
 Hvis en endring er nødvendig, og sendes etter at tilbudsforespørselen er sendt, sendes tilbudsforespørselen på nytt til alle inviterte leverandører. Det publiserte dokumentet oppdateres også på siden **Åpne publiserte tilbudsforespørsler**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

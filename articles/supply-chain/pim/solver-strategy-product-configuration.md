@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f79211f9a557813f0030a11002dc0ed2015ce258
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: c368fe3ede2818f28e2063ae22cdfd49cd9bc68f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4983262"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5244189"
 ---
 # <a name="solver-strategy-for-product-configuration"></a>Problemløserstrategi for produktkonfigurasjon
 
@@ -63,7 +63,7 @@ Følgende tabell inneholder anbefalinger om problemløserstrategien som skal bru
 | Standard              | **Standard**-strategien er optimalisert til å løse modeller som bruker tabellbegrensninger. Kundeimplementeringsstudier har vist at denne strategien er den mest effektive strategien i scenarier der tabellbegrensninger brukes mye. |
 | Små domener først | **Små domener først**- og **Ovenfra og nedover**-strategien henger nøye sammen. Kundeimplementeringsstudier har vist at **Ovenfra og nedover**-strategien overgår **Små domener først**-strategien. Men **Små domener først**-strategien bevares i produktet for bakoverkompatibilitet. Begge disse problemløserstrategiene har vist seg å være mer effektive på å løse modeller som inneholder flere aritmetiske uttrykk der det ikke brukes tabellbegrensninger. I noen tilfeller kan imidlertid **Standard**-strategien overgå disse to strategiene. Derfor må du huske å forsøke hver strategi. |
 | Ovenfra og nedover             | **Små domener først**- og **Ovenfra og nedover**-strategien henger nøye sammen. Kundeimplementeringsstudier har vist at **Ovenfra og nedover**-strategien overgår **Små domener først**-strategien. Men **Små domener først**-strategien bevares i produktet for bakoverkompatibilitet. Begge disse problemløserstrategiene har vist seg å være mer effektive på å løse modeller som inneholder flere aritmetiske uttrykk der det ikke brukes tabellbegrensninger. I noen tilfeller kan imidlertid **Standard**-strategien overgå disse to strategiene. Derfor må du huske å forsøke hver strategi. |
-| Z3                   | Vi anbefaler at du bruker **Z3**-strategien som standard problemløserstrategi. Hvis du er bekymret for ytelse og skalerbarhet, kan du evaluere de andre strategiene. |
+| Z3                   | Det anbefales at du bruker **Z3**-strategien som standard problemløserstrategi. Hvis du er bekymret for ytelse og skalerbarhet, kan du evaluere de andre strategiene. |
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
@@ -72,3 +72,6 @@ Følgende tabell inneholder anbefalinger om problemløserstrategien som skal bru
 [Heuristikk](https://techterms.com/definition/heuristic)
 
 [Begrensningsbasert problem](http://aima.cs.berkeley.edu/2nd-ed/newchap05.pdf)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

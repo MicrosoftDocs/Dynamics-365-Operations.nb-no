@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.search.validFrom: 2020-11-05
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8a55958a4b9573a7c3527d3d97cbcb818457b995
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 5fdbe472f24e1140f0af63da8a1fc4eafe4767a2
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5007996"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5238044"
 ---
 # <a name="migration-to-planning-optimization-for-master-planning"></a>Overføring til planleggingsoptimalisering for hovedplanlegging
 
@@ -43,7 +43,7 @@ Hvis du vil ha mer informasjon om avskrivningen av den innebygde planleggingsmot
 
 ## <a name="migration-messages-and-exceptions"></a>Overføring, meldinger og unntak
 
-Eiere av eksisterende miljøer som kjører den innebygde hovedplanleggingsmotoren uten generering av planlagte produksjonsordrer, vil motta en e-post med detaljer om unntaksprosessen. Vi anbefaler at du samarbeider med en partner for å evaluere og planlegge migreringen til Planleggingsoptimalisering.
+Eiere av eksisterende miljøer som kjører den innebygde hovedplanleggingsmotoren uten generering av planlagte produksjonsordrer, vil motta en e-post med detaljer om unntaksprosessen. Det anbefales at du samarbeider med en partner for å evaluere og planlegge migreringen til Planleggingsoptimalisering.
 
 som nevnt vil du få en feilmelding i versjon 10.0.16 og nyere hvis du kjører den innebygde hovedplanleggingen uten å generere planlagte produksjonsordrer. Denne feilmeldingen inneholder veiledning om overføring og instruksjoner for å be om et unntak.
 
@@ -96,7 +96,7 @@ Mitt miljø er lokalt. Trenger jeg et unntak?
 
 Vi bruker planlagte produksjonsordrer, men jeg er bekymret over hva som skjer når vi oppgraderer til versjon 10.0.16. Må jeg foreta meg noe?
 
-**Svar:** Du trenger ikke å bekymre deg. Du kan fortsette å bruke den innebygde hovedplanleggingen i versjon 10.0.16. Vi anbefaler imidlertid at du vurderer om overføring til planleggingsoptimalisering kan starte med gjeldende funksjonalitet. Vi anbefaler også at du holder deg oppdatert om ny funksjonalitet.
+**Svar:** Du trenger ikke å bekymre deg. Du kan fortsette å bruke den innebygde hovedplanleggingen i versjon 10.0.16. Det anbefales imidlertid at du vurderer om overføring til planleggingsoptimalisering kan starte med gjeldende funksjonalitet. Det anbefales også at du holder deg oppdatert om ny funksjonalitet.
 
 ### <a name="email-from-microsoft"></a>E-post fra Microsoft
 
@@ -115,3 +115,6 @@ Jeg bruker versjon 10.0.16 eller nyere, og jeg får følgende feilmelding når j
 > Fyll ut følgende spørreskjema for å komme i gang og hvis det er relevant for forespørselsunntak fra overføring til planleggingsoptimalisering.
 
 **Svar:** Nei, hovedplanlegging er ikke blokkert. Hovedplanleggingskjøringen er fullført, og du kan bruke resultatet på vanlig måte. Hvis du vil unngå å motta denne feilmeldingen under fremtidige hovedplanleggingskjøringer, må du imidlertid enten overføre til planleggingsoptimalisering umiddelbart eller be om et unntak ved hjelp av koblingen i feilmeldingen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: a09ac2c3c198bf7d7d34a1ae1739af6b62d8dce7
-ms.sourcegitcommit: 2093c9dc31d1b60b3114085d9cef48fdbbb0ca0d
+ms.openlocfilehash: 16ae9ac066f30744dc99c6fa1c671a0a96fd803d
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5118661"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5242862"
 ---
 # <a name="regulatory-updates"></a>Forskriftsmessige oppdateringer
 
@@ -77,3 +77,6 @@ For de siste forskriftsmessige oppdateringsplanene kan du se tabellen nedenfor.
 - Du finner alle planlagte og frigitte forskriftsmessig oppdateringer på [Lifecycle Service – Problemsøk](https://lcs.dynamics.com/Logon/Index) (pålogging kreves).
 - For en liste over lokaliseringene som støttes for kan du se [veiledning for internasjonal tilgjengelighet](https://aka.ms/dynamics_365_international_availability_deck).
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

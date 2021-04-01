@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e22816b33739141fbcd188d631a07313db415959
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: bf2938137f1e6aa525f18b4d6863257d362137b5
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4977294"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5239092"
 ---
 # <a name="configure-wave-processing"></a>Konfigurere bølgebehandling
 
@@ -31,7 +31,7 @@ Denne veiledningen beskriver hvordan du definerer vilkår som bestemmer hvilket 
 
 1. Gå til **Navigasjonsrute > Moduler > Lagerstyring > Oppsett > Bølger > Bølgemaler**.
 2. Klikk på **Ny**.
-3. Angi en verdi i feltet **Navn på bølgemal**. Når du definerer en bølgemal, kan du angi rekkefølgen for hvordan malene samsvares med frigitte linjene i salgsordrer, produksjonsordrer eller Kanbaner. Når en linje er frigitt til lageret eller til produksjon, brukes den første bølgemalen som den oppfyller kriteriene for. Vi anbefaler at du flytter malene med de mest spesifikke kriteriene øverst i listen. Jo bredere kriterier, desto mer sannsynlig er det at en linje oppfyller kriteriene, og dette kan føre til at linjer tilordnes til feil bølge.  
+3. Angi en verdi i feltet **Navn på bølgemal**. Når du definerer en bølgemal, kan du angi rekkefølgen for hvordan malene samsvares med frigitte linjene i salgsordrer, produksjonsordrer eller Kanbaner. Når en linje er frigitt til lageret eller til produksjon, brukes den første bølgemalen som den oppfyller kriteriene for. Det anbefales at du flytter malene med de mest spesifikke kriteriene øverst i listen. Jo bredere kriterier, desto mer sannsynlig er det at en linje oppfyller kriteriene, og dette kan føre til at linjer tilordnes til feil bølge.  
 4. Skriv inn en verdi i feltet **Beskrivelse av bølgemal**.
 5. Angi eller velg en verdi i **Område**-feltet. Hvis du bruker USMF, kan du velge område 2.  
 6. Angi eller velg en verdi i feltet **Lager**. Hvis du bruker USMF, kan du velge lager 24.  
@@ -60,3 +60,6 @@ Denne veiledningen beskriver hvordan du definerer vilkår som bestemmer hvilket 
 Når det gjelder salgsordrer og Kanban-bestillinger, må beholdning reserveres før ordren frigis til lageret. Hvis ikke, varer eller tildelingslinjer kan ikke behandles i en Bølge. For produksjonsordrer kan du også velge Tillat delvis reservasjon. Dette er for eksempel nyttig hvis du har materialene du trenger for å starte produksjon, og du kan deretter vente til tilleggsmaterialene bli tilgjengelige for å fullføre prosessen. Hvis du velger dette alternativet, må du gjenta prosessen med frigivelse til lager manuelt når tilleggsmaterialene flere blir tilgjengelige.  
 25. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

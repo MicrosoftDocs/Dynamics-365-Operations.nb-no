@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 2e83d6885bf7400916d633a49d3b19b8843b0269
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 6aaa139fb206c035b25b7056e681d086fde6447f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965508"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5245064"
 ---
 # <a name="zone-threshold-replenishment"></a>Etterfylling av soneterskel
 
@@ -343,3 +343,6 @@ Her er noen få merknader og tips om hvordan du arbeider med funksjonen:
 
 - Hvis du bruker dynamiske lokasjoner, vil etterfyllingsarbeid bli opprettet enten for den første tilgjengelige lokasjonen eller for en lokasjon som allerede inneholder beholdningen, hvis handlingen for lokasjonsdirektivet er definert til å bruke **Konsolidering**-strategien.
 - Hvis du bruker faste lokasjoner i stedet for soner, bør du bruke [standard min./maks. etterfylling](tasks/set-up-min-max-replenishment-process.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 80a7ae2249179c561d03f7b729ebb942ba856046
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 9e30f110e5f0008e66ec4781a35368a75143b565
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4961529"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5244333"
 ---
 # <a name="set-up-prerequisites-for-nonconformance-management"></a>Definere forutsetninger for behandling av avvik
 
@@ -79,3 +79,6 @@ Bruk dette emnet for å aktivere prosjektstyringsprosesser for avvik. Et avvik b
 4. Skriv inn en verdi i **Beskrivelse**-feltet.
 5. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: dd982ae60da1c2958d6d759bb5dd256a71fabf6c
-ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
+ms.openlocfilehash: 357f4673d77ee990c4e1b0ce84a704fd4d778402
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "5154207"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5240225"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Funksjoner som er fjernet eller avskrevet i Dynamics 365 Commerce
 
@@ -122,3 +122,6 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 
 ## <a name="previous-announcements-about-removed-or-deprecated-features"></a>Tidligere kunngjøringer om fjernede eller avskrevne funksjoner
 Hvis du vil lære mer om funksjoner som er fjernet eller avskrevet i tidligere versjoner, kan du se [Fjernede eller avskrevne funksjoner i tidligere versjoner](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/commerce/toc.json).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

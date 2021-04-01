@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 4623b6eaa18b65f0f61cb8c227115d59f3ff9c08
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: a6cc730f8d672d906072a9b97b737dbdea9faf2d
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5007711"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5243207"
 ---
 # <a name="dual-use-goods"></a>Varer med to bruksområder
 
@@ -107,3 +107,6 @@ Du bruker siden for **Sertifikater for flerbruk** til å definere og behandle de
     | Skriv ut på faktura | Merk av i denne avmerkingsboksen for å skrive ut sertifikatnummeret på fakturaer som er adressert til det angitte landet i det angitte datoområdet. |
     | Skrive ut på følgeseddel | Merk av i denne avmerkingsboksen for å skrive ut sertifikatnummeret på følgesedler som er adressert til det angitte landet i det angitte datoområdet. |
     | Skriv ut på salgsordre | Merk av i denne avmerkingsboksen for å skrive ut sertifikatnummeret på salgsordrer som er adressert til det angitte landet i det angitte datoområdet. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

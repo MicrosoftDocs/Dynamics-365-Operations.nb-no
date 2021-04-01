@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 36f908e02c996c0d0a636fd9295b84fcc16b6b63
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 7c370c623c29f2b2f3b65ffbd65aabbc941be3cb
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5011778"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5239476"
 ---
 # <a name="calculate-a-bom-by-using-a-single-level-structure-february-2016"></a>Beregne en stykkliste ved hjelp av en struktur med ett nivå (februar 2016)
 
@@ -43,3 +43,6 @@ Denne fremgangsmåten viser hvordan du beregner kostnaden av ferdige produkter v
     * Du må kanskje klikke ellipsen (...) for å se dette alternativet i den øverste menyen.    Her er sammensetningen av kostnaden:  *    10 er avledet fra ITEM_A, 10 fra ITEM_B, 10 fra BOM_2. I dette tilfellet finnes det ingen detaljer for BOM_2 fordi det ble angitt som en standard kostnad på 10, men ikke utført gjennom beregning.  *    7 er avledet fra oppstillingstiden, som er en konstant kostnad, og ytterligere 7 er avledet fra kjøretidsoperasjonen (prosess).  *    Det finnes også andre beløp som samsvarer med indirekte kostnader.  
 9. @SysTaskRecorder:_RequestClose
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

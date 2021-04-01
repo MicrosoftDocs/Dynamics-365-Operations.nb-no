@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f39f487ea29bf923c82c08aff56ff5350da0810e
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: a6fd306d21097cdc850b7e9ae14f9a292fe0d4db
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4987235"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5246747"
 ---
 # <a name="collaborate-with-internal-supply-chain-customers"></a>Samarbeide med kunder for intern forsyningskjede
 
@@ -42,3 +42,6 @@ Denne fremgangsmåten angir hvordan du viser alle planlagte bestillinger som ska
 8. Utvid delen Detaljer for foregående behov.
     * I denne delen finner du informasjon om hvordan behovet skal oppfylles. Du må kanskje vente på at hovedplanleggingen skal kjøres i forsyningsselskapet før du kan se mer informasjon her.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

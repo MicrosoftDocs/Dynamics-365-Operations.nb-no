@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ec91198e86b123fd886fb220c8a35c98cdfc8fdd
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: b0507441e62e01771f9e4aee6739fc4c15d1924f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5006522"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5242403"
 ---
 # <a name="set-up-template-to-represent-objects-at-customer-site"></a>Definere mal som skal representere objekter hos kunden 
 
@@ -54,3 +54,6 @@ Bruk denne fremgangsmåten til å definere en mal som representerer objekter hos
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

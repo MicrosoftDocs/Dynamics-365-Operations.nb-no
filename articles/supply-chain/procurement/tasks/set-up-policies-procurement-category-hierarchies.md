@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3fc01793ee83444e5c7097021c19aeda80a132e6
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 415262fa5e68544ea2a4ae2b6818b83c7efb2fad
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017105"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5243997"
 ---
 # <a name="set-up-policies-for-procurement-category-hierarchies"></a>Definere policyer for innkjøpskategorihierarkier
 
@@ -51,3 +51,6 @@ Bruk denne fremgangsmåten for å konfigurere regler for bestilling av produkter
 6. Velg et alternativ i **Leverandørvalg**-feltet. Velg en regel for å kontrollere hvilke type leverandører som kan velges for kategorien når rekvisisjoner opprettes.  
 7. Klikk på **Lukk**. Policyreglene du har definert, har vært for rekvisisjoner av typen Forbruk. Hvis du vil definere policyer for rekvisisjoner av typen Etterfylling, kan du opprette en regel for policyregeltypen kalt Policyregel for tilgang til etterfyllingskategori.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
