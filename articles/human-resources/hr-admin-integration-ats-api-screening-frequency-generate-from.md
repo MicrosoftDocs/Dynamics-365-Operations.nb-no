@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f291e28584dadc465092d99a1354fda793ff7560
-ms.sourcegitcommit: 33b5c8bc4f9461e290513aa22de1ec1fba3b0742
+ms.openlocfilehash: 238cd5da750d815c904090cc9002e3d1a5d2bcc7
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "5126152"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5464580"
 ---
 # <a name="screening-frequency-generate-from"></a>Screeningfrekvens genereres fra
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dette emnet beskriver screeningfrekvensen som genereres fra alternativsettet for Dynamics 365 Human Resources.
 
@@ -41,3 +43,6 @@ Denne opplistingen gir alternativsettet med verdier for å bestemme startdatoen 
 
 [Innføring i API for søkersporingssystemintegrering](hr-admin-integration-ats-api-introduction.md)<br>
 [Eksempelspørring for Kandidat for ansettelse](hr-admin-integration-ats-api-candidate-to-hire-example-query.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

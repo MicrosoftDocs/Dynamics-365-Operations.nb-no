@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dc146f8a3707e830ff574964c5a8865271e69b50
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: da4e2b4ec74fe073b28b78eb1a21a76b01b872cb
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967689"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5250984"
 ---
 # <a name="cost-management-home-page"></a>Startside for kostnadsstyring
 
@@ -64,3 +64,5 @@ Du kan finne meninger, nyheter og annen informasjon om kostnadsstyring, i [Dynam
 #### <a name="task-guides"></a>Oppgaveveiledninger
 
 Mer hjelp er tilgjengelig som oppgaveveiledninger. For å få tilgang til oppgaveveiledninger klikker du Hjelp-knappen på en side.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

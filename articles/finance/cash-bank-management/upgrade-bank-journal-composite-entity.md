@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e6c990208f26dde26b7adc306198f7cd16e0e69b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 18137ca8cecc43b4269f14b36df2eb8063192e52
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4978920"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5236353"
 ---
 # <a name="update-the-bank-journal-composite-entity"></a>Oppdatere sammensatt enhet for bankjournal
 
@@ -54,3 +54,6 @@ Bruk fremgangsmåten nedenfor for å legge til tilleggsfeltet BankTransactionTyp
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

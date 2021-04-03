@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: dda102b993ecc92a5089eb54d2708c2adebc572f
-ms.sourcegitcommit: f59df61799915f6a79aec7e3e8664c02df6597da
+ms.openlocfilehash: 0078d536e55da0bfd3d8b808eb05c8273aba792d
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "5044027"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5249149"
 ---
 # <a name="generate-consolidated-financial-statements"></a>Generere konsoliderte regnskapsoppgjør
 
@@ -223,3 +223,6 @@ For korrekt omregnede beløp når valutaer brukes, bruker Finansrapportering fø
 Hvis du vil ha mer informasjon om konsolidering og valutavekslinger, kan du se det overordnede emnet i dette emnet, [Oversikt over finanskonsolideringer og valutaomveksling](./financial-consolidations-currency-translation.md).
 
 Hvis du vil ha mer informasjon om hvordan du registrerer detaljer om konsolideringer på nettet, kan du se [Elektroniske finanskonsolideringer](./consolidate-online.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

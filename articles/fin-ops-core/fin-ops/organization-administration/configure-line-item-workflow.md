@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c19693151399fc02ea9562757af7fc24124c9b6c
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 46de2bc3683ed907f1879afc13c60adce261d402
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798836"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5567021"
 ---
 # <a name="configure-line-item-workflows"></a>Konfigurere arbeidsflyter for linjeelement
 
@@ -54,3 +53,6 @@ Følg denne fremgangsmåten for å angi om den samme arbeidsflyten skal brukes t
     6. Hvis du vil kontrollere om settet med betingelsene du har skrevet inn, er riktig konfigurert, klikker du **Test**. På **Test arbeidsflytbetingelse**-siden i **Valider betingelse**-området velger du en post, og deretter klikker du **Test**. Systemet evaluerer posten for å finne ut om den oppfyller betingelsene du definerte. Klikk på **OK** eller **Avbryt** for å gå tilbake til **Egenskaper**-siden.
 
     I fanen **Arbeidsflyt** velger du arbeidsflyten som skal brukes til å behandle linjeelementer som oppfyller settet med betingelser som du har definert.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -18,12 +18,12 @@ ms.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b35e424c582c173e3fa1f4d0a335106e413b6660
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: f428f2e3966155b4fc95fd94b6a55d059eb3533d
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967414"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5263524"
 ---
 # <a name="prepare-to-maintain-standard-costs-for-manufactured-items"></a>Forberede vedlikehold av standard kostpris for produserte varer
 
@@ -72,3 +72,6 @@ Hvis du vil bruke rutinginformasjon til kostnadsformål, kreves det flere klargj
 
 [Definere produkter som kan være produsert eller fremskaffet](manufactured-items-treated-as-purchased-items.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

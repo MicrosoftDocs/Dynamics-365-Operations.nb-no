@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: bb4a426bb54ee21197f9954d946d60ea55f5eb76
-ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
+ms.openlocfilehash: 99fac9a42dc2b180c220612c66fe753d43e5bd7f
+ms.sourcegitcommit: 543772ee97efe215cf6f2ec6e092cc1568919f20
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "5104421"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "5592628"
 ---
 # <a name="configure-the-electronic-invoicing-add-on-in-regulatory-configuration-services-rcs"></a>Konfigurere tillegget for elektronisk fakturering i RCS (Regulatory Configuration Services)
 
@@ -64,7 +64,6 @@ Følgende tabell viser funksjonene for elektronisk fakturering som for øyeblikk
 | Belgia        | Belgisk elektronisk faktura (BE)      | Salgs- og prosjektfakturaer |
 | Brasil         | Brasiliansk NF-e (BR)                  | Regnskapsdokumentmodell 55, korreksjonsbrev, annulleringer og forkastelser |
 | Brasil         | Brasiliansk NFS-e ABRASF Curitiba (BR) | Skattedokumenter for tjenester |
-| Brasil         | Brasiliansk NFS-e São Paulo (BR)       | Skattedokumenter for tjenester |
 | Danmark        | Dansk elektronisk faktura (DK)       | Salgs- og prosjektfakturaer |
 | Egypt          | Egyptisk elektronisk faktura (EG) | Salgs- og prosjektfakturaer |
 | Estland        | Estisk elektronisk faktura (EE)     | Salgs- og prosjektfakturaer |
@@ -119,10 +118,6 @@ Listene nedenfor viser ER-formatkonfigurasjonene som er tilgjengelige for funksj
 
 - NFS-e ABRASF Curitiba (BR)
 - NFS-e ABRASF Inquire Curitiba (BR)
-
-#### <a name="brazilian-br-nfs-e-nfs-e-so-paulo-city"></a>Brasiliansk (BR) NFS-e: NFS-e São Paulo city
-
-- NFS-e Sao Paulo (BR)
 
 #### <a name="danish-dk-electronic-invoice-sales-and-project-invoices-for-denmark"></a>Dansk (DK) elektronisk faktura: Salgs- og prosjektfakturaer for Danmark
 
@@ -290,3 +285,6 @@ Når en elektronisk fakturering-funksjon er avledet fra en annen, oppdaterer kom
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 - [Utstede elektroniske fakturaer i Finance og Supply Chain Management](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

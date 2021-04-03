@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b86ccc46475babb302cdbf82f5c99c26e2091501
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 70dac557fbe30809aa86bf4a0806bbe229f43d14
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4978795"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5262916"
 ---
 # <a name="letters-of-guarantee"></a>Garantibrev
 
@@ -64,3 +64,6 @@ Hvis du vil ha mer informasjon, se følgende emner:
 [Definere bankfasiliteter og posteringsprofiler for garantibrev](tasks/set-up-bank-facilities-posting-profiles.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

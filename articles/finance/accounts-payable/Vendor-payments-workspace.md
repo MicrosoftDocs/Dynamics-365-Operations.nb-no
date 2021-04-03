@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 34f4e22f571569a6276f8a801d33c6afef8480dc
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ff97aaf22cfbac9ce68cf0436c6caec4e1b69bd2
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4979569"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5252227"
 ---
 # <a name="vendor-payments-workspace"></a>Arbeidsområde for leverandørbetalinger
 
 [!include [banner](../includes/banner.md)]
 
-Arbeidsområdet for **leverandørbetalinger** viser informasjon som er knyttet til behandling av leverandørbetalinger. Arbeidsområdet inneholder en **Mitt arbeid**-visning og en **Analyse**-side. **Mitt arbeid**-visningen viser sammendragsfliser, rutenett for leverandørtransaksjoner og tilknyttet leverandørinformasjon. **Analyse**-siden bruker funksjonene i Microsoft Power BI for å vise bilder som er knyttet til leverandørbetalinger.
+Arbeidsområdet for **leverandørbetalinger** viser informasjon som er knyttet til behandling av leverandørbetalinger. Arbeidsområdet inneholder en **Mitt arbeid**-visning og en **Analyse**-side. **Mitt arbeid**-visningen viser sammendragsfliser, rutenett for leverandørtransaksjoner og tilknyttet leverandørinformasjon. Siden **Analyse** bruker funksjonene i Microsoft Power BI til å vise bilder som er knyttet til leverandørbetalinger.
 
 ## <a name="setup-needed-to-view-power-bi-content"></a>Oppsett måtte vise Power BI-innhold
 
@@ -77,3 +77,6 @@ Tabellen nedenfor viser visuaiseringene som er tilgjengelig på hver rapportside
 |    Saldo for leverandør mot kunde     |                                                                                                                   <ul><li>Saldo for leverandør mot kunde</li><li>Saldo for leverandør mot kunde per firma</li><li>Detaljer om saldo for leverandør mot kunde</li></ul>                                                                                                                    |
 |    Fakturaer med betalingssperre     |                                                                                         <ul><li>Fakturaer med betalingssperre</li><li>Detaljer om fakturaer med betalingssperre</li><li>Fakturaer med betalingssperre per firma</li><li>Fakturaer med betalingssperre per leverandørgruppe</li></ul>                                                                                          |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

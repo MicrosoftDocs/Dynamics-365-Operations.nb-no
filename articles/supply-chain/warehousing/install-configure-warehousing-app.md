@@ -18,19 +18,19 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 411a97427bbb16388e0f60b8ecb5dd3e5a79e87e
-ms.sourcegitcommit: bd53794cb94f8c1ce29a7d6102119a0975f155e3
+ms.openlocfilehash: 3d2920d015aab5e4f0a1966d2a2574fb659a7c80
+ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "5142281"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5486983"
 ---
 # <a name="install-and-connect-the-warehouse-app"></a>Installere og koble til lagerappen
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Dette emnet beskriver hvordan du konfigurerer den gamle lagerappen. Hvis du ser etter informasjon om hvordan du konfigurerer den nye mobilappen Lagerstyring (for tiden i offentlig forhåndsversjon), kan du se [Installere og koble til mobilappen Lagerstyring](install-configure-warehouse-management-app.md).
+> Dette emnet beskriver hvordan du konfigurerer den gamle lagerappen. Hvis du ser etter informasjon om hvordan du konfigurerer den nye mobilappen Lagerstyring, kan du se [Installere og koble til mobilappen Lagerstyring](install-configure-warehouse-management-app.md).
 
 > [!NOTE]
 > Dette emnet beskriver hvordan du konfigurerer lagerappen for skydistribusjoner. Hvis du leter etter informasjon om hvordan du konfigurerer lagerappen for lokale distribusjoner, kan du se [Lager for lokale distribusjoner](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
@@ -276,3 +276,6 @@ Hvis en enhet går tapt eller settes på spill, må du fjerne tilgangen til Supp
 1. Kontroller at klient-ID-en til appen samsvarer med klient-ID-en du noterte i trinn 2.
 1. Velg **Slett** på verktøylinjen.
 1. Velg **Ja** i bekreftelsesmeldingen som vises.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

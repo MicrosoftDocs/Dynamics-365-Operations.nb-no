@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner
 audience: Application User
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 043c66cf3345678aa7750ef50323700384579299
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: 1e3d6bcf229f9020ff4dd0479e486f465ffd6383
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5093779"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5570846"
 ---
 # <a name="er-map-components-of-the-created-format-to-data-model-elements-november-2016"></a>ER Tilordne komponenter i det opprettede formatet til datamodellelementer (november 2016)
 
@@ -113,3 +112,6 @@ Du kan konfigurere hver formatversjon som tilgjengelig for bruk fra en bestemt d
 1. Utvid delen ISO-land-/områdekoder.
     * Hver formattilgang kan begrenses ved å identifisere bestemte land/regioner der et format er tilgjengelig. Når listen over land/områder for et bestemt format er tomt, kan dette formatet brukes i et hvilket som helst firma. Når det settes noen ISO-land-/områdekoder i denne listen over land/regioner, kan formatet bare brukes i firmaer hvis den primære adressen er i landet/regionen.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 2202b6b50d4b4b675759275379023a182b01af17
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: fef622b05c56844b8927a4efcffd5a1944726cd4
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5007272"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5246267"
 ---
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a>Standard ordreinnstillinger for dimensjoner og produktvarianter
 
@@ -203,3 +203,6 @@ Slik angir du valideringsalternativet:
 1. På **Generelt**-fanen angir du **Validering for standard ordreantall** til én av følgende verdier:
     - **Streng** – Velg dette alternativet for å sikre at alle verdier for **Standard ordreantall** vil være et multiplum av **Flere**-verdien for hver hurtigfane (**Bestilling**, **Lager** og **Salgsordre**).
     - **Standard** – Velg dette alternativet for å bruke standard validering (som fungerer på samme måte som når denne funksjonen ikke er aktivert).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
