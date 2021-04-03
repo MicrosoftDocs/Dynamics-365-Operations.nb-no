@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: e1dace0dc6477e259d1004440c4cda8060bf90e3
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: eb0c50d9030be75947c65e921b3c6d3ba729a0d2
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5130235"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5464482"
 ---
 # <a name="organize-your-workforce-by-using-departments-jobs-and-positions"></a>Organisere arbeidsstyrken ved hjelp av avdelinger, jobber og stillinger
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Avdelinger, jobber og stillinger er organisasjonselementer som vedlikeholdes i Personale. Denne artikkelen beskriver konseptuell informasjon om disse elementene. 
 
@@ -165,3 +167,6 @@ Du kan endre informasjonen som er nevnt i den forrige tabellen for en stilling e
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

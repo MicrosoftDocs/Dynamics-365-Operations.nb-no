@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 51be70edbe1439340377fd01b9760d49d3a75348
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: aeb3d66ad24f96efea1b0ea9828a537f8853c94b
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115518"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5465492"
 ---
 # <a name="submit-a-leave-request-to-workflow"></a>Sende en permisjonsforespørsel til arbeidsflyt
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 I Microsoft Dynamics 365 Human Resources kan du bruke API-et (Application Programming Interface) MyLeaveRequests submit() til å sende en permisjonsforespørsel til arbeidsflyten. Dette API-et vises som en handling på MyLeaveRequests OData-enheten.
 
@@ -108,3 +110,5 @@ Som en del av kallet til innsendings-API-et utfører Human Resources en valideri
 
 - [Oversikt over MyLeaveRequests](hr-developer-api-myleaverequests-overview.md)
 - [Godkjenning](hr-developer-api-authentication.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

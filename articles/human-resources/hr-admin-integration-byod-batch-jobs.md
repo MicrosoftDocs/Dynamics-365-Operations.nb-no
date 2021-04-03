@@ -17,14 +17,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-08-10
 ms.dyn365.ops.version: Platform update 36
-ms.openlocfilehash: 4b9cf4b4181b64ef4daf397edd852fb2f881424e
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 62ac38eae01a82eedea7e5a5206bd75b4cd958e8
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113630"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5465876"
 ---
 # <a name="optimize-byod-scheduled-batch-jobs"></a>Optimalisere planlagte, satsvise BYOD-jobber
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dette emnet forklarer hvordan du optimaliserer ytelsen når du bruker funksjonen for å Vise din egen database (BYOD). Hvis du vil ha mer informasjon om BYOD, kan du se [Vise din egen database (BYOD)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database?toc=/dynamics365/human-resources/toc.json).
 
@@ -42,7 +44,7 @@ Du må være forsiktig når du legger til flere enheter i et eksportprosjekt, fo
 - Det forventede datavolumet per enhet
 - Den totale tiden som kreves for å fullføre eksporten på jobbnivå
 
-Du får best ytelse ved å unngå å legge til hundrevis av enheter til ett enkelt prosjekt. Vi anbefaler at du oppretter flere jobber, og hver av disse inneholder færre enheter.
+Du får best ytelse ved å unngå å legge til hundrevis av enheter til ett enkelt prosjekt. Det anbefales at du oppretter flere jobber, og hver av disse inneholder færre enheter.
 
 ## <a name="scheduling-byod-batch-jobs"></a>Planlegge satsvise BYOD-jobber
 
@@ -96,3 +98,6 @@ BYOD-funksjonen har følgende begrensninger:
 [Vise din egen database (BYOD)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database?toc=/dynamics365/human-resources/toc.json)<br>
 [Oversikt over dataimport- og -eksportjobber](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-import-export-job?toc=/dynamics365/human-resources/toc.json)<br>
 [Aktivere endringssporing for enheter](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/entity-change-track?toc=/dynamics365/human-resources/toc.json)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

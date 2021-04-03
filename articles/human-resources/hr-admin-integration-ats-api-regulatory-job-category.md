@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4b68103bafae4b963ba4ece3f288c6398b343edc
-ms.sourcegitcommit: 33b5c8bc4f9461e290513aa22de1ec1fba3b0742
+ms.openlocfilehash: 416df7d700a63a48bfe827d735ac68d9464246e5
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "5126128"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5464604"
 ---
 # <a name="regulatory-job-category"></a>Forskriftsmessig jobbkategori
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 I dette emnet beskrives alternativsettet for Forskriftsmessig jobbkategori for Dynamics 365 Human Resources.
 
@@ -49,3 +51,6 @@ Denne opplistingen angir alternativsettet for verdier for alternativsettet for f
 
 [Innføring i API for søkersporingssystemintegrering](hr-admin-integration-ats-api-introduction.md)<br>
 [Eksempelspørring for rekrutteringsforespørsel](hr-admin-integration-ats-api-recruiting-request-example-query.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 652893dfef22b6ba694ef20a81d88c85d26f05a2
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: dd884362393674a4f55ea0410548edbb72786fff
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5127061"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5465396"
 ---
 # <a name="modify-reporting-relationships-for-a-position"></a>Endre rapporteringsrelasjoner for en stilling
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
@@ -44,3 +46,6 @@ Denne prosedyren viser hvordan du endrer rapporteringsrelasjonen for en ansatt. 
 12. Angi eller velg en verdi i feltet Rapporterer til stilling.  Eksempel: 000437
 13. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

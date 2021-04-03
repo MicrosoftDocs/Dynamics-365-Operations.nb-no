@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a62cee979fc8d986102c3b774cd937a24bdd7439
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: e38abf3537d88bb147fbf0030999953025e5820f
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113695"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5466910"
 ---
 # <a name="copy-an-instance"></a>Kopier en forekomst
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -72,7 +74,7 @@ Hvis du vil fullføre denne oppgaven, kopierer du først en forekomst, og derett
 
 4. I oppgaveruten **Kopier en forekomst**, velger du forekomsten som skal overskrives, og deretter velger du **Kopier**. Vent til verdien i feltet **Kopier status** er oppdatert til **Fullført**.
 
-   ![[Velg forekomsten som skal overskrives](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
+   ![[Velge forekomst som skal overskrives](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
 
 5. Velg **Power Platform**, og logg deg på administrasjonssenteret for Microsoft Power Platform.
 
@@ -150,3 +152,6 @@ Hvis du vil ha mer informasjon om egendefinerte felt, kan du se [Opprette og arb
 [Fjerne en forekomst](hr-admin-setup-remove-instance.md)</br>
 [Oppdatere prosess](hr-admin-setup-update-process.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

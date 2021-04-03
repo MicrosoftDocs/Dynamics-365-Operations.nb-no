@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ee394172fb531e7aecc1be411f9adf2dd184d15e
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: b2bd8707d873955ec53dcaebb503a6c8e666d9f8
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113752"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5465852"
 ---
 # <a name="choose-a-data-integration-technology"></a>Velge en dataintegreringsteknologi
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -38,7 +40,7 @@ Forretningsdata er et viktig aktivum som gjør firmaet ditt unikt. Bedriftens da
 Det har historiske sett vært vanskelig å integrere data mellom flere systemer.
 Microsoft utfører tiltak for å gjøre dataintegrering enklere, og et stort trinn i det aktuelle målet realiseres via [Dataverse](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro).
 
-Human Resources sørger for at Dataverse blir det foretrukne offentlige grensesnittet for Human Resources-data. Over tid forventer vi at alle de viktigste dataene som administreres av personalavdelingen, vil bli vist i Dataverse. Vi anbefaler Dataverse som den foretrukne teknologien for de fleste typer integrering.
+Human Resources sørger for at Dataverse blir det foretrukne offentlige grensesnittet for Human Resources-data. Over tid forventer vi at alle de viktigste dataene som administreres av personalavdelingen, vil bli vist i Dataverse. Det anbefales Dataverse som den foretrukne teknologien for de fleste typer integrering.
 
 Vi er klar over at Dataverse kanskje ikke inneholder alle dataene programmet trenger enda. Vi er også klar over at tidslinjen for prosjektet ditt kan kreve en annen teknologi. Husk å gi oss beskjed hvis Dataverse ikke tilfredsstiller dine integreringsbehov.
 
@@ -147,6 +149,9 @@ Med så mange forskjellige integreringsteknologier tilgjengelige, kan det være 
 | Excel-tillegg           | Nei                                       | Synkroniser                                        | Nei                                        | Middels (flere titusener med poster)                      | Støtter alle OData-aktiverte enheter |
 | Dataintegrator        | Ja, planlagt i dataintegrator        | Asynkront, parti                                | Nr.                                        | Varierer med brukstilfelle                                       | Støtter alle Dataverse-tabeller           |
 
-<sup>2</sup>Microsoft investerer svært mye i å øke datadekning for Dataverse-tabeller. Vi anbefaler at du bruker Dataverse når dekning er tilgjengelig. For øyeblikket er Dataverse-datadekningen liten sammenlignet med DMF- og OData-aktiverte enheter.
+<sup>2</sup>Microsoft investerer svært mye i å øke datadekning for Dataverse-tabeller. Det anbefales at du bruker Dataverse når dekning er tilgjengelig. For øyeblikket er Dataverse-datadekningen liten sammenlignet med DMF- og OData-aktiverte enheter.
 
 <sup>3</sup>SQL-database kan åpnes programmatisk.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

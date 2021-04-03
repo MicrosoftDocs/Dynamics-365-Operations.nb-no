@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b6bcbbd1203f4e9e80f6c5264cf4d5ea7d0970fc
-ms.sourcegitcommit: 33b5c8bc4f9461e290513aa22de1ec1fba3b0742
+ms.openlocfilehash: 65d5492ed988c51efe9e1629fa13225f1b4a3c15
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "5126104"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5464208"
 ---
 # <a name="person-skill"></a>Personferdighet
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dette emnet beskriver Personferdighet-enheten for Dynamics 365 Human Resources.
 
@@ -84,3 +86,6 @@ Denne enheten beskriver kandidatens ferdigheter.
 [Innføring i API for søkersporingssystemintegrering](hr-admin-integration-ats-api-introduction.md)<br>
 [Eksempelspørring for Kandidat for ansettelse](hr-admin-integration-ats-api-candidate-to-hire-example-query.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

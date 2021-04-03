@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b7e41762e4283d5a4b0c9dd8359c5fb2bdabfc26
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 71fb3b6cb28abbd5d373103205c3360b7e64464e
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5127879"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5465324"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-1-2020"></a>Hva er nytt eller endret i Dynamics 365 Human Resources (1. mai 2020)
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Denne artikkelen beskriver funksjoner som enten er nye eller endret i Dynamics 365 Human Resources. Endringer gjelder for Build-nummeret 8.1.3196. Tallene i parentes i noen overskrifter refererer til støttenumre i LCS.
 
@@ -109,3 +111,5 @@ Hvis dokumentforhåndsvisning for dokumenter lagret i SharePoint, ikke fungerer,
 [Oversikt over lanseringsbølge 2 i 2019 for Dynamics 365 Human Resources](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Oppdatere prosess](hr-admin-setup-update-process.md)</br>
 [Behandle funksjoner](hr-admin-manage-features.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

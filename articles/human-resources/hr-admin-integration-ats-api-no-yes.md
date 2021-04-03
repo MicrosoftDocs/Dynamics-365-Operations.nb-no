@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7ee77e750b7ef3d26445f2e87345357499f2a94c
-ms.sourcegitcommit: 33b5c8bc4f9461e290513aa22de1ec1fba3b0742
+ms.openlocfilehash: 9d261a57e5aa704a9f07616d8bb36f3a40b6ed33
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "5125503"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5466573"
 ---
 # <a name="no-yes"></a>Nei Ja
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 I dette emnet beskrives alternativet Nei Ja for Dynamics 365 Human Resources.
 
@@ -42,3 +44,6 @@ Denne opplistingen gir alternativsett for vanlige boolske egenskaper i virtuelle
 
 [Innføring i API for søkersporingssystemintegrering](hr-admin-integration-ats-api-introduction.md)<br>
 [Eksempelspørring for Kandidat for ansettelse](hr-admin-integration-ats-api-candidate-to-hire-example-query.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

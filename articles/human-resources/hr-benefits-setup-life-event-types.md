@@ -18,16 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c382299014e3f823bc2cd210749aae8c091c5f23
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 7b1f2fd953c1678a5099f4f3b5cf08fa6674f4db
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113730"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5466044"
 ---
 # <a name="configure-life-event-types"></a>Konfigurere hendelsestyper for levetid
 
-Microsoft Dynamics 365 Human Resources bruker livshendelsestyper til å definere hendelser hvor det er gyldig å oppdatere ansattes fordelsregistrering. For eksempel bli gift eller få barn. Hver livshendelsestype-ID kan bare knyttes til én livshendelsestype. Hvis du for eksempel oppretter en ID for livslhendelse som kalles for "Adresseendring", som er knyttet til livshendelsetypen "Endring av ansattes adresse", kan du ikke opprette en annen ID som kalles fra "Endring av ansattes adresse" og knytte den til livshendelsestypen "Endring av ansattes adresse". 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+Dynamics 365 Human Resources bruker livshendelsestyper til å definere hendelser hvor det er gyldig å oppdatere ansattes fordelsregistrering. For eksempel bli gift eller få barn. Hver livshendelsestype-ID kan bare knyttes til én livshendelsestype. Hvis du for eksempel oppretter en ID for livslhendelse som kalles for "Adresseendring", som er knyttet til livshendelsetypen "Endring av ansattes adresse", kan du ikke opprette en annen ID som kalles fra "Endring av ansattes adresse" og knytte den til livshendelsestypen "Endring av ansattes adresse". 
 
 Når du har opprettet livshendelsestyper, må du knytte dem til plantyper. Hvis du vil ha mer informasjon, se [Opprett plantyper](hr-benefits-setup-plan-types.md).
 
@@ -88,3 +90,6 @@ Du kan velge mellom følgende livshendelser når du oppretter en livshendelsesty
 | **Utløp av Overstyr rettighetsregler (ikke spesifikk for USA)** | Human Resources Avansert > Fordeler > Planer > Fordeler > Overstyr rettighetsregler | Bruke Behandling av endring av levetidshendelse. Hvis du for eksempel redigerer Overstyr utløpsdato for rettighetsregel i en plan til i dag klokken 17, et klokkeslett etter klokken 17 eller de følgende dagene, og deretter kjører Behandling av endring av levetidshendelse, vises en melding om at overstyring av rettighetsregel er utløpt. |
 | **Ny fordelsplan (ikke spesifikk for USA)** | Human Resources Advansert > Fordeler > Planer > Ny | <ul><li>Rettighetsalternativer legges til i en gjeldende plan</li><li>En ny plan med tilknyttede rettighetsalternativer legges til</li></ul></br></br>HR-personale bør kjøre Behandling av rettighet for levetidshendelse i denne forekomsten. |
 | **Endring av rettighetsregel (ikke spesifikk for USA)** | Human Resources Avansert > Fordeler > Regler/alternativer > Rettighetsregler | Bruke Behandling av rettighet for levetidshendelse. Logges når **EhrBenefitEligibilityRule**-poster har følgende verdier endret: **UseEmplCategory**, **UseEmplStatus** eller **UseEmplType**. Oppdaterer bare livshendelsestransaksjoner som allerede finnes for en endret regel eller et rettighetskriterium. |
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

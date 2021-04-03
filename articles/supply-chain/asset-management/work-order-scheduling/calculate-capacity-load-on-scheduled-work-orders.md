@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7b7e4a20ed56b1eac29d16d527693d6e455cdc37
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 5a6063db7a63975f439da9f20adec07de9103014
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021660"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5264904"
 ---
 # <a name="calculate-capacity-load-on-scheduled-work-orders"></a>Beregne kapasitetsbelastning på planlagte arbeidsordrer
 
@@ -57,3 +57,6 @@ Hvis du velger belastningstypene **Kapasitet** eller **Rest** for beregningen, v
 
 Se [Beregne kapasitetsbelastning](../capacity-planning/calculate-capacity-load.md) for informasjon om hvordan du beregner kapasitetsbelastning på vedlikeholdsplanlinjer og ikke planlagte arbeidsordrer.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

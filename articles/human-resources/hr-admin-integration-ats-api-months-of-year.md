@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 258ae2f0531b8112fda5c4c8b995d855df68c116
-ms.sourcegitcommit: 33b5c8bc4f9461e290513aa22de1ec1fba3b0742
+ms.openlocfilehash: 1514d924762c7a06fdc5189e61d3701d00308df7
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "5125527"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5464434"
 ---
 # <a name="months-of-year"></a>Måneder i året
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dette emnet beskriver alternativsettet for Måneder i året for Dynamics 365 Human Resources.
 
@@ -51,3 +53,6 @@ Denne opplistingen gir alternativsettet for måneder i året.
 
 [Innføring i API for søkersporingssystemintegrering](hr-admin-integration-ats-api-introduction.md)<br>
 [Eksempelspørring for Kandidat for ansettelse](hr-admin-integration-ats-api-candidate-to-hire-example-query.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

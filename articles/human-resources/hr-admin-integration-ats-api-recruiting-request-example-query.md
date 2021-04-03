@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 42028b175d717bec01180dc9a6bc4cb7b289be05
-ms.sourcegitcommit: 33b5c8bc4f9461e290513aa22de1ec1fba3b0742
+ms.openlocfilehash: ec8b881282d3e79f83cc7205e4742f7e6c5c3464
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "5125936"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5465996"
 ---
 # <a name="example-query-for-recruiting-request"></a>Eksempelspørring for rekrutteringsforespørsel
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dette emnet inneholder en eksempelspørring for rekrutteringsforespørselsenheten i Dynamics 365 Human Resources.
 
@@ -183,3 +185,5 @@ GET [Organizaton URI]/api/data/v9.1/mshr_hcmrecruitingrequestentities(<recruitin
 ## <a name="see-also"></a>Se også
 
 [Innføring i API for søkersporingssystemintegrering](hr-admin-integration-ats-api-introduction.md)<br>
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

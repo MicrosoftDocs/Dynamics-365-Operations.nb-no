@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1a57180c60be4b4686c274aecbf86f0bc6c8b2fb
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 43aacf454d6a2c9eb8cda5bb54a2bf8e8965070d
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113643"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5466886"
 ---
 # <a name="provision-human-resources"></a>Klargjøre Human Resources
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -45,10 +47,10 @@ Hensyn til tilleggsmiljøer omfatter, men er ikke begrenset til, følgende:
 - **Prosjekt med flere faser**: Du trenger kanskje et tilleggsmiljø for å støtte konfigurasjon, dataoverføring, testing eller andre aktiviteter i en prosjektfase som er planlagt etter den innledende aktiveringen av prosjektet.
 
  > [!IMPORTANT]
- > Vi anbefaler at du bruker produksjonsmiljøet i hele prosjektet som GULL-konfigurasjonsmiljø. Dette er viktig fordi du ikke kan kopiere et sandkassemiljø til et produksjonsmiljø. Når du kommer aktiverer, er derfor GULL-miljøet produksjonsmiljøet ditt, og du fullfører overgangsaktivitetene i dette miljøet.</br></br>
- > Vi anbefaler at du bruker sandkassemiljøet ditt eller et annet miljø til å utføre en testovergang før selve aktiveringen. Du kan gjøre dette ved å oppdatere produksjonsmiljøet med GULL-konfigurasjonen i sandkassemiljøet.</br></br>
- > Vi anbefaler at du har en detaljert kontrolliste for overgang som inneholder alle datapakkene som kreves for å migrere de siste dataene til produksjonsmiljøet under overgangen til aktivering.</br></br>
- > Vi anbefaler også at du bruker sandkassemiljøet i hele prosjektet som TEST-miljø. Hvis du trenger flere miljøer, kan organisasjonen kjøpe dem for en ekstra kostnad.</br></br>
+ > Det anbefales at du bruker produksjonsmiljøet i hele prosjektet som GULL-konfigurasjonsmiljø. Dette er viktig fordi du ikke kan kopiere et sandkassemiljø til et produksjonsmiljø. Når du kommer aktiverer, er derfor GULL-miljøet produksjonsmiljøet ditt, og du fullfører overgangsaktivitetene i dette miljøet.</br></br>
+ > Det anbefales at du bruker sandkassemiljøet ditt eller et annet miljø til å utføre en testovergang før selve aktiveringen. Du kan gjøre dette ved å oppdatere produksjonsmiljøet med GULL-konfigurasjonen i sandkassemiljøet.</br></br>
+ > Det anbefales at du har en detaljert kontrolliste for overgang som inneholder alle datapakkene som kreves for å migrere de siste dataene til produksjonsmiljøet under overgangen til aktivering.</br></br>
+ > Det anbefales også at du bruker sandkassemiljøet i hele prosjektet som TEST-miljø. Hvis du trenger flere miljøer, kan organisasjonen kjøpe dem for en ekstra kostnad.</br></br>
 
 ## <a name="create-an-lcs-project"></a>Opprette et LCS-prosjekt
 
@@ -125,3 +127,6 @@ Bruk følgende retningslinjer når du skal avgjøre hvilket Power Apps-miljø Hu
 ## <a name="grant-access-to-the-environment"></a>Gi tilgang til miljøet
 
 Som standard har den globale administratoren som opprettet miljøet, tilgang til den. Du må eksplisitt gi tilgang til flere programbrukere. Du må legge til brukere og tilordne de riktige rollene til dem i Human Resources-miljøet. Den globale administratoren som distribuerte Human Resources, må også starte både Attract og Onboard for å fullføre initialiseringen og aktivere tilgang for andre leierbrukere. Før dette skjer, andre brukere vil ikke kunne få tilgang til Attract og Onboard og få tilgangsbruddfeil. Hvis du vil ha mer informasjon, se [Opprette nye brukere](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) og [Tilordne brukere til sikkerhetsroller](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

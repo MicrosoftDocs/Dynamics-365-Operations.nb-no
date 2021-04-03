@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 044a2d2f632b2c98ce94b6d61c2582a861640b68
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 2d5f65672960716bee3f58c98ccce249fdbf8697
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113696"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5467151"
 ---
 # <a name="configure-integration-with-dayforce"></a>Konfigurere integrasjon med Dayforce
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Integrasjonen mellom Microsoft Dynamics 365 Human Resources og Ceridian Dayforce bruker flere konfigurasjonstrinn som er beskrevet i denne artikkelen. Du må konfigurere integreringen i både Human Resources og Dayforce før du kan behandle en lønnskjøring.
 
@@ -370,7 +372,7 @@ Hvis du skal generere lønn for ansatte i USA og Canada, konfigureres følgende 
 - Kostnadssentre må være angitt som finansdimensjoner og må være det første elementet i standard finansdimensjonsstreng.
 
 > [!NOTE] 
-> Du kan konfigurere Human Resources slik at det kreves at stillinger spesifiserer en avdeling. For å gjøre dette går du til **HR delte stillinger > Stillinger > Avdelinger må oppgis for stillinger**. Vi anbefaler at denne innstillingen iverksettes for integreringen.
+> Du kan konfigurere Human Resources slik at det kreves at stillinger spesifiserer en avdeling. For å gjøre dette går du til **HR delte stillinger > Stillinger > Avdelinger må oppgis for stillinger**. Det anbefales at denne innstillingen iverksettes for integreringen.
 
 ### <a name="job-types"></a>Jobbtyper
 
@@ -676,3 +678,6 @@ Ansatte kan deklarere passinformasjon. Denne informasjonen er av **Pass**-identi
 
 Ansatte kan angi flere identifikasjonsnumre for identifikasjonstypen **Pass**. Men bare den gjeldende aktive passoppføringen er integrert i Dayforce. Hvis alle passoppføringer er utløpt, er passet som sist ble utstedt, integrert i Dayforce.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

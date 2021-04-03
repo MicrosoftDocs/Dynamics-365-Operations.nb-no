@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: 13e32c9bc77470d6b8e157e7a7805d3d72850478
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: cb56d11cb3acd1e8e39765284269234fc632f17f
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113670"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5465108"
 ---
 # <a name="enroll-and-remove-benefits-from-workers"></a>Registrere og fjerne fordeler fra arbeidere
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
@@ -58,3 +60,6 @@ Denne prosedyren beskriver hvordan én enkelt arbeider kan registreres i én ell
 14. Klikk koblingen i den valgte raden i listen.
 15. På denne siden kan du se hvilke ansatte som er registrert i fordelen, i tillegg til ansatte som ikke er registrert.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

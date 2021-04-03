@@ -17,14 +17,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-12-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 2e4b250f4a059719067a9e19bbf3ce4aecc9bb1f
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 24df18f428e4ca14859bc34048a6bda5e03d1b2f
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113748"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5464380"
 ---
 # <a name="generate-aca-reports-in-benefits-management"></a>Generere ACA-rapporter i fordelsbehandling
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Fordelsbehandling hjelper deg med å spore informasjon som er rapportert på skjema 1095-B og skjema 1095-C for employer mandate Affordable Care Act (ACA). I likhet med ACA-rapporteringsfunksjonene på det gamle arbeidsområdet **Fordeler**, gjelder denne funksjonaliteten bare for juridiske enheter i USA.
 
@@ -146,7 +148,7 @@ Du kan også generere ACA 1095-B- og 1095-C-skjemaer, og distribuer dem deretter
 2. Endre parameterne etter behov, og velg deretter **OK**.
 
     > [!NOTE]
-    > Hvis du skriver ut 1095-C-skjemaer for mer enn 500 ansatte, får du mer enn én PDF-fil. Vi anbefaler at du øker verdien til feltet **Maksimum filstørrelse** på siden **Parametere for dokumentstyring** til **150**. (Du kan åpne den siden raskt ved å bruke søkefeltet i navigasjonsfeltet.)
+    > Hvis du skriver ut 1095-C-skjemaer for mer enn 500 ansatte, får du mer enn én PDF-fil. Det anbefales at du øker verdien til feltet **Maksimum filstørrelse** på siden **Parametere for dokumentstyring** til **150**. (Du kan åpne den siden raskt ved å bruke søkefeltet i navigasjonsfeltet.)
     >
     > ![Endre maksimumsfilstørrelse](./media/hr-benefits-management-aca-maximum-file-size.png)
 
@@ -207,3 +209,6 @@ Dekningsinformasjon for de ansattes avhengige vises.
 
 > [!NOTE]
 > Siden viser bare fordelsplaner som er merket som **ACA-rapporterbare**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

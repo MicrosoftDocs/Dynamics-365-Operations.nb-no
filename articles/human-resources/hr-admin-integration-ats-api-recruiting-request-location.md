@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: fa153b1cfcbb70294ed6da3618c83396df04f8db
-ms.sourcegitcommit: 33b5c8bc4f9461e290513aa22de1ec1fba3b0742
+ms.openlocfilehash: 9a3b47c76094adb6c601daf2f9583116255b0a99
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "5125239"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5465948"
 ---
 # <a name="recruiting-request-location"></a>Rekrutteringsforespørselssted
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dette emnet beskriver Rekrutteringsforespørselslokasjon-enheten for Dynamics 365 Human Resources.
 
@@ -82,3 +84,6 @@ Listen over lokasjoner som er definert som lokasjoner der rekrutteringsansatte v
 [Innføring i API for søkersporingssystemintegrering](hr-admin-integration-ats-api-introduction.md)<br>
 [Eksempelspørring for rekrutteringsforespørsel](hr-admin-integration-ats-api-recruiting-request-example-query.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

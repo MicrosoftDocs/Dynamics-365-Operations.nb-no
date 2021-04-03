@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: db0d78c7a6fa69aa4e0c4c82f92c33daabda073f
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 0f0b706568048480cf5bf85cfcb4388666432212
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4983347"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5266109"
 ---
 # <a name="set-up-hazardous-materials"></a>Konfigurere farlige materialer
 
@@ -283,3 +283,6 @@ Hvis du vil definere verdier for denne spesifikasjonen, kan du gå til **Behandl
 Spesifikasjonen *Tunnel for farlig materiale* begrenser typene av tunneler som et farlig materiale kan transporteres gjennom ved å identifisere tunneltypene som må brukes. Tunnelkategorier etableres etter gjeldende bestemmelser for transport av farlig materiale. Denne spesifikasjonen gjelder vanligvis bare for veitransport.
 
 Hvis du vil definere verdier for denne spesifikasjonen, kan du gå til **Behandling av produktinformasjon \> Oppsett \> Forsendelsesdokumentasjon for farlig materiale \> Tunnel for farlig materiale**. På siden **Tunnel for farlig materiale** kan du opprette et hvilket som helst antall tunnelidentifikatorer og konfigurere hver med en identifikasjonskode og en kort beskrivelse.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

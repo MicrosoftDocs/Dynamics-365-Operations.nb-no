@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e1907ca9cc578737341e52f89453e3d6ae3d0bec
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: c2c2020c68c4aca3594a2532d32f968ab76f6b7b
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115058"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5463316"
 ---
 # <a name="create-a-leave-request-workflow"></a>Opprette en arbeidsflyt for permisjonsforespørsel
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Du kan opprette en arbeidsflyt i Dynamics 365 Human Resources for å behandle permisjons- og fraværsforespørsler konsekvent. Med en arbeidsflyt for **permisjon og fravær** kan du:
 
@@ -81,3 +83,6 @@ Disse eksemplene viser hvordan du kan opprette forskjellige typer arbeidsflytbet
 ## <a name="see-also"></a>Se også
 
 - [Oversikt over permisjon og fravær](hr-leave-and-absence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

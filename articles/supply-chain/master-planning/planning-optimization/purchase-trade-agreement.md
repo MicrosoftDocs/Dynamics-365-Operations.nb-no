@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: e060f20b65153a7bbe70996e6ff4c3930468348a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d8d5b8c7ac5da9c68926d7fbb4f37b81b56665cb
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4992251"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5264728"
 ---
 # <a name="master-planning-with-purchase-trade-agreements"></a>Hovedplanlegging med forretningsavtaler
 
@@ -73,12 +73,12 @@ Når systemet er klargjort som beskrevet i den forrige delen, bør du følge den
 
 ## <a name="examples-of-how-planning-optimization-finds-vendor-and-lead-times"></a>Eksempler på hvordan planleggingsoptimalisering finner leverandør- og leveringstider
 
-Følgende tabell viser eksempler på hvordan ulike innstillinger for et frigitt produkt og de tilknyttede kjøpsavtalene påvirker verdiene som blir funnet for det resulterende bestillingsforslaget. Verdiene i **uthevet** skrift i de to kolonnene lengst til høyre, er verdiene som velges ved hjelp av planleggingsoptimalisering. Verdiene i **_fet og kursiv_* _ i de andre kolonnene er innstillingene som produserte disse resulterende verdiene for hver rad.
+Følgende tabell viser eksempler på hvordan ulike innstillinger for et frigitt produkt og de tilknyttede kjøpsavtalene påvirker verdiene som blir funnet for det resulterende bestillingsforslaget. Verdiene i **uthevet** skrift i de to kolonnene lengst til høyre, er verdiene som velges ved hjelp av planleggingsoptimalisering. Verdiene **_fet og kursiv_** i de andre kolonnene er innstillingene som produserte disse resulterende verdiene for hver rad.
 
 | Frigitt produkt: Leverandør | Standard ordreinnstillinger: Leveringstid | Varedekning: Overstyr leverandør | Varedekning: Overstyr leveringstid | Forretningsavtale: Leverandør | Forretningsavtale: Leveringstid | Forretningsavtale: Ignorer leveringstid | Resulterende leverandør | Resulterende leveringstid |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| _*_US001_*_ | _*_1_*_ | Nei | Nei | US003 | 3 | Nei | _ *US001** | **1** |
-| US001 | 1 | **_Ja: US002_* _ | _*_Ja: 2_*_ | US003 | 3 | Nei | _ *US002** | **2** |
+| ***US001** _ | _*_1_*_ | Nr. | Nr. | US003 | 3 | Nr. | _ *US001** | **1** |
+| US001 | 1 | ***Ja: US002** _ | _*_Ja: 2_*_ | US003 | 3 | Nr. | _ *US002** | **2** |
 | *(Tom)* | 1 | Nei | Nei | ***US003** _ | _*_3_*_ | Nei | _ *US003** | **3** |
 | *(Tom)* | ***1** _ | Nei | Nei | _*_US003_*_ | 3 | Ja | _ *US003** | **1** |
 | *(Tom)* | ***1** _ | _*_Ja: US002_*_ | Nei | US003 | 3 | Nei | _ *US002** | **1** |
@@ -89,3 +89,6 @@ Følgende tabell viser eksempler på hvordan ulike innstillinger for et frigitt 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Kjøpsavtaler](../../procurement/purchase-agreements.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

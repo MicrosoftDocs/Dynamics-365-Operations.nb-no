@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 989cfd3846e4921d24f5dcf809f1735d2cf62dbb
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 9c6ba9831b84e1220ee158d8186675107b490124
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5005333"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5266181"
 ---
 # <a name="product-lifecycle-states-and-transactions"></a>Produktstatuser og transaksjoner
 
@@ -75,3 +75,6 @@ Følgende felter er tilgjengelige for hver prosess som er oppført på hurtigfan
 | Polise | Velg en av følgende verdier for å kontrollere om og hvordan gjeldende prosess skal være tillatt for produkter som er i denne statusen:<ul><li>**Aktivert** – Forretningsprosessen er tillatt.</li><li>**Blokkert** – Prosessen er ikke tillatt. Hvis en bruker prøver å bruke prosessen for et produkt i denne statusen, vil systemet blokkere forsøket og vise en feil i stedet. Du kan for eksempel blokkere at produkter som nærmer seg slutten av levetiden, kan kjøpes.</li><li>**Aktivert med advarsel** – Prosessen er tillatt, men det vil bli vist en advarsel. Det kan for eksempel hende at du vil at et prototypprodukt skal plasseres på en produksjonsordre som opprettes av avdelingen for forskning og utvikling. Andre avdelinger bør imidlertid være oppmerksomme på at de ikke bør produsere produktet ennå.</li></ul> |
 
 Hvis du legger til flere statusregler som en tilpasning, kan du vise disse reglene i brukergrensesnittet (UI) ved å velge **Oppdater prosesser** i den øvre ruten. **Oppdater prosesser**-knappen er bare tilgjengelig for administratorer.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

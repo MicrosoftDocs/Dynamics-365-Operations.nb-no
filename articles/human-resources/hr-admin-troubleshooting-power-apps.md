@@ -17,14 +17,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 664c644c9b34e3489b4134040e165d26202dbd38
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: ec63148364022fe5b8c40d855856eec232af3e48
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113705"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5463966"
 ---
 # <a name="cant-create-an-environment-in-the-power-apps-admin-center"></a>Kan ikke opprette et miljø i administrasjonssenteret for Power Apps
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 **Avgang**
 
@@ -44,3 +46,6 @@ Legg merke til at ulike Microsoft Office-SKUer også gir rettighet, sammen med f
 
 1. Gå til [https://preview.admin.powerapps.com/environments](https://preview.admin.powerapps.com/environments).
 2. Opprett miljøene ved å følge instruksjonene i [Klargjøre Human Resources](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

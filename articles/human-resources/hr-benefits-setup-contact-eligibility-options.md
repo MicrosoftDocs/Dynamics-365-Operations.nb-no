@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 137416477928fd4d6b4438f25df5afea93972027
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 2f300ac917ac21db9fffbffcc6eb8589357c0a3e
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113716"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5466212"
 ---
 # <a name="configure-personal-contact-eligibility-options"></a>Konfigurere alternativer for personlige kontaktrettigheter
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 I denne artikkelen får du vite hvordan du konfigurerer typer personlige kontakter som skal brukes i fordeler i Microsoft Dynamics 365 Human Resources. Personlige kontakter kan være mottakere eller avhengige. 
 
@@ -45,3 +47,6 @@ I denne artikkelen får du vite hvordan du konfigurerer typer personlige kontakt
    | **Alder** | Maksimal alder på en personlig kontakt for fordelsplanen. Dette feltet er bare aktivt hvis du velger en relasjon. Denne alderen sammenlignes med den beregnede alderen på den personlige kontakten. Beregnet alder er: (dekningsdato – fødselsdato for personlig kontakt / 365). Dette tallet er alltid et heltall. |
 
 4. Velg **Lagre**. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
