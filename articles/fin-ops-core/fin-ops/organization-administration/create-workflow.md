@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WorkflowSelectTemplateRnr, WorkflowTableListPageRnr
 audience: Application User, IT Pro
@@ -17,12 +16,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: d1402019dbaaa60827499fcb6b93ee31440cfc3d
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: a64329780b96ca1e1675ced103c86c7cf0bc3754
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797658"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5567396"
 ---
 # <a name="create-workflows-overview"></a>Oversikt over å opprette arbeidsflyter
 
@@ -83,3 +82,6 @@ Når du er klar til å lagre og aktivere arbeidsflyten, følger du denne fremgan
 
     - Hvis du vil aktivere denne versjonen av arbeidsflyten, klikker du **Aktiver den nye versjonen**. Når en arbeidsflyt er aktiv, kan brukere sende dokumenter til den for behandling.
     - Hvis du ikke vil aktivere denne versjonen, klikker du **Ikke aktiver den nye versjonen**. Du kan aktivere arbeidsflyten senere.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

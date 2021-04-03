@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 01/22/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -16,14 +15,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a9486b3d700cdbe19fbcdba431f673d0a03014f
-ms.sourcegitcommit: ca05440ee503bf15fe98fe138d317c1cdf21ad16
+ms.openlocfilehash: 9b7da9867ed86921f3487077081ec63e8b44e92c
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "5141882"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5562555"
 ---
 # <a name="view-and-update-entity-data-with-excel"></a>Vise og oppdatere enhetsdata med Excel 
+
+[!include [applies to](../includes/applies-to-commerce-finance-scm.md)]
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
@@ -140,3 +141,6 @@ Det finnes enkelte problemer som kan løses ved hjelp av noen enkle trinn.
 - **Du får feilmeldingen "Forbudt"** – Hvis du får feilmeldingen "Forbudt" når Excel-tillegget laster inn metadata, har kontoen som er logget Excel-tillegget, ikke tillatelse til å bruke tjenesten, forekomsten eller databasen. Hvis du vil løse dette problemet, kontrollerer du at riktig brukernavn vises øverst til høyre i Excel-tillegget. Hvis feil brukernavn vises, velger du det, logger av og på igjen.
 - **En tom nettside vises over Excel** – Hvis det åpnes en tom nettside i løpet av påloggingsprosessen, krever kontoen AD FS, men versjonen av Excel som kjører Excel-tillegget, er ikke ny nok til å laste inn dialogboksen for pålogging. Hvis du vil løse dette problemet, oppdaterer du Excel-versjonen du bruker. Hvis du vil oppdatere versjonen av Excel når du er i en virksomhet som er på den utsatte kanalen, kan du bruke [distribusjonsverktøyet for Office](https://technet.microsoft.com/library/jj219422.aspx) til [flytte fra den utsatte kanalen til gjeldende kanal](https://technet.microsoft.com/library/mt455210.aspx).
 - **Du får et tidsavbrudd når du publiserer dataendringer** – Hvis du får tidsavbruddsmeldinger mens du prøver å publisere dataendringer til en enhet, bør du vurdere å redusere størrelsen på publiseringspartiet for den berørte arbeidsboken. Enheter som utløser større mengder logikk for postendringer, kan kreve at oppdateringer sendes i mindre partier, slik at tidsavbrudd kan unngås.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

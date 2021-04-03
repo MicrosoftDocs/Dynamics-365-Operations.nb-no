@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: CostingVersion, InventItemPrice
+ms.search.form: CostingVersion, InventItemPrice, InventParameters
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 69992
@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 166d12d707deabc59f7613a5016851b30fcc42d8
-ms.sourcegitcommit: 41baf654a2553cfe5c715feb9cc03e48cfc12598
+ms.openlocfilehash: fc4ae40e9740ce76e79b76c2bff2c690568abff2
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "5024676"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5500604"
 ---
 # <a name="manage-standard-cost-updates"></a>Administrere oppdateringer av standardkostnader
 
@@ -46,8 +46,13 @@ Dette eksemplet brukte en ekstra kostnadsberegningsversjon til å håndtere oppd
 
 ## <a name="financial-dimensions-for-the-standard-cost-revaluation"></a>Finansdimensjoner for revalueringen av standardkostnad
 
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
 Hvis du aktiverer en ny standardpris, revalueres vanligvis lagerbeholdningsverdien av transaksjoner med revaluering av standardkostnad. Finansdimensjonene for varen blir vanligvis deretter postert i transaksjonene. Hvis du imidlertid vil kontrollere om og hvordan finansdimensjonene posteres, bruker du [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å aktivere funksjonen kalt *Alternativer for å angi standard finansdimensjoner for revaluering av standardkostnad for lager*. Etter at du har konfigurert denne funksjonen, kan du gå til **Kostnadsstyring > Oppsett av policy for lagerregnskap > Parametere** og angi en av følgende verdier i rullegardinlisten **Opprinnelse til finansdimensjon**:
 
 - **Ingen** – Ingen finansdimensjoner er postert i transaksjonene for revaluering. Hvis du har en nødvendig finansdimensjon i kontostrukturen, kjøres revalueringsprosessen likevel, men den oppretter regnskapsoppføringer som ikke har noen finansdimensjoner. I dette tilfellet får brukerne en advarsel først, slik at de kan avbryte revalueringen om nødvendig.
 - **Tabell** – Finansdimensjonene for varen posteres i transaksjonene for revaluering. Dette er standardinnstillingen og er i samsvar med den opprinnelige systemvirkemåten uten aktivering av funksjonen *Alternativer for å angi standard finansdimensjoner for revaluering av standardkostnad for lager*.
 - **Postering** – Finansdimensjonene for transaksjonen som revalueres, posteres i transaksjonene for revaluering. Finansdimensjonene fra den opprinnelige transaksjonens lagerkonto brukes som standard både for lagerkontoen og revalueringskontoen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

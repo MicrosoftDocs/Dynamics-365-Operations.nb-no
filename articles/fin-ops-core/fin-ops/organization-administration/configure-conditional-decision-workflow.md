@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3a880d4be461ea9b2caa61b7d038f9b24486a919
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: a593d4e188f47b73967f0c5468f7d7c3e9f64dc8
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798886"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5567466"
 ---
 # <a name="configure-conditional-decisions-in-a-workflow"></a>Konfigurere en betingede beslutninger i en arbeidsflyt
 
@@ -52,3 +51,6 @@ Systemet avgjør hvilken gren som skal brukes ved evaluering av det sendte dokum
     2. Velg en post i **Valider betingelse**-området i skjemaet.
     3. Klikk på **Test**. Systemet evaluerer posten for å finne ut om den oppfyller betingelsene du definerte.
     4. Klikk på **OK** eller **Avbryt** for å gå tilbake til **Egenskaper**-skjemaet.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

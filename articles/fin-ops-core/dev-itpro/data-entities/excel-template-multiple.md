@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 01/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application user
 ms.reviewer: sericks
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: fb505f33e497cf16cd6cdeddee1f88d01797f3ef
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 64515ff74c0ca2b01bb9dac06331ba0424811411
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5130587"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5565577"
 ---
 # <a name="data-templates-with-multiple-worksheets"></a>Datamaler med flere regneark
 
@@ -49,3 +48,6 @@ I tilfeller der en ny versjon av samme fil eller en helt ny fil må lastes opp f
 ## <a name="upload-a-file-using-run-project"></a>Laste opp en fil ved hjelp av Kjør prosjekt
 
 Du kan laste opp en Excel-fil når du bruker **Kjør prosjekt**-alternativet for å kjøre et importprosjekt. Du må være forsiktig og bare laste opp filer som har de samme regnearkene som de eksisterende tilordningene på dataenhetene i dataprosjektet. Hvis et regneark ikke finnes i den nylig opplastede filen, vises en feilmelding og importen stoppes. Hvis tilordningen til regnearket må endres for en enhet, må tilordningene i dataprosjektet først oppdateres fra dataprosjektet før du kan bruke filen i **Kjør prosjekt**-opplevelsen.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

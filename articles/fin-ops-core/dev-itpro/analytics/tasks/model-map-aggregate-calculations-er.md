@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 12/12/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -14,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6a392697f6b91bc6555d0d72d09ecd7da32e1a3f
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: 5e911df974f470fe336b45566f3d9c64ffd31ef2
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5094271"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5562591"
 ---
 # <a name="use-model-mapping-configurations-for-aggregate-calculations-at-the-database-level"></a>Bruke konfigurasjoner for modelltilordning for aggregerte beregninger på databasenivået
 
@@ -116,3 +115,6 @@ Denne fremgangsmåten er opprettet for brukere med rollen som Systemansvarlig el
 68. Klikk på Lagre.
     * Legg merke til at "Utførelse på"-feltet angir at denne grupperingen vil bli utført under kjøring i minnet selv om det ikke er definert noen aggregeringer og den valgte datakilden av typen Tabellposter refererer til den samme Intrastat-tabellen. Dette skyldes at datakilden inneholder enkelte beregnede felt som ennå ikke kan oversettes til SQL-databasenivået.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

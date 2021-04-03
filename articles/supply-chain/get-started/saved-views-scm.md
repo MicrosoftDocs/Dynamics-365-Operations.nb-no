@@ -16,14 +16,17 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 78cb1c5a90061af224fcd5933af81b6c5cd7e57d
-ms.sourcegitcommit: 5d62c53d84f2ec27136427acfd4314d055298a7b
+ms.openlocfilehash: 08002a1ff40c8baca475bc19a1220fe4c4b23bcd
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "5123474"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5500700"
 ---
 # <a name="standard-saved-views-for-supply-chain-management"></a>Standard lagrede visninger for Supply Chain Management
+
+[!include [banner](../../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Microsoft Dynamics 365 Supply Chain Management har flere lagrede visninger du kan aktivere og bruke etter behov. Noen av disse standard lagrede visningene er optimalisert og navngitt for en bestemt rolle eller oppgave (for eksempel «Kvalitetskontroll» eller «Mottak»). Andre er optimalisert slik at de bare inneholder feltene og innstillingene som Microsoft-bruksstatistikk angir brukes oftest av kunder. Disse lagrede visningene kalles vanligvis *forenklede* visninger. Dette emnet beskriver standard lagrede visninger som er tilgjengelige, og forklarer hvordan du aktiverer og tilpasser dem.
 
@@ -112,3 +115,6 @@ Tabellen nedenfor beskriver de lagrede visningene som er tilgjengelige for modul
 | Alle bølger | Forenklet | Denne forenklede visningen omfatter bare feltene som brukes oftest. Dermed får du en raskere oversikt og en effektivisert arbeidsprosess. | Lagret visning for bølgebehandling |
 | Arbeidsområde for lastplanlegging | Forenklet | Denne forenklede visningen omfatter bare feltene som brukes oftest. Dermed får du en raskere oversikt og en effektivisert arbeidsprosess. | Lagret visning for arbeidsområde for arbeidsplanlegging |
 | Arbeidsdetaljer | Forenklet | Denne forenklede visningen omfatter bare feltene som brukes oftest. Dermed får du en raskere oversikt og en effektivisert arbeidsprosess. | Lagret visning for arbeidsdetaljsiden |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

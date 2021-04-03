@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -18,12 +17,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 20203a342b2bead4eb211597f4b73bbf35477a03
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: b46e49ec3510c93383216fdffeca2793a9076872
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115686"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5560465"
 ---
 # <a name="unified-product-experience"></a>Samlet produktopplevelse
 
@@ -92,9 +91,13 @@ Fordi produktet er representert som en SKU, kan begrepene for spesifikke produkt
 
 Når funksjonen for dobbel skriving er aktivert, vil produkter fra Finance and Operations bli synkronisert i andre Dynamics 365-produkter i **Utkast**-tilstand. De blir lagt til den første prislisten med samme valuta. De legges med andre ord til i den første prislisten i en Dynamics 365-app som samsvarer med valutaen til den juridiske tabellen der produktet frigis i en Finance and Operations-app. Hvis ingen prisliste finnes for den angitte valutaen, opprettes det automatisk en prisliste, og produktet tilordnes til den. 
 
+Den gjeldende implementeringen av plugin-modulene for dobbel skriving som knytter standard prisliste til enheten, slår opp valutaen som er knyttet til Finance and Operations-appen, og finner den første prislisten i kundeavtaleappen ved hjelp av alfabetisk sortering i prislistenavnet. Hvis du vil definere en standard prisliste for en bestemt valuta når du har flere prislister for den valutaen, må du oppdatere prislistenavnet til et navn som er tidligere i alfabetisk rekkefølge enn noen andre prislister for den samme valutaen.
+
 Som standard synkroniseres produkter fra Finance and Operations-apper til andre Dynamics 365-apper i **Utkast**-status. Hvis du vil synkronisere produktet med tilstanden **Aktiv**, slik at du for eksempel kan bruke det direkte i salgsordretilbud, må følgende innstilling velges: Under **System > Administrasjon > Systemadministrasjon > Systeminnstillinger > Salg** velger du **Opprett produkter i aktiv tilstand = ja**. 
 
 Når produkter synkroniseres, må du angi en verdi for **Salgsenhet**-feltet i Finance and Operations-appen siden dette er et obligatorisk felt i Sales.
+
+Opprettingen av produktserier fra Dynamics 365 Sales støttes ikke med synkronisering av dobbel skriving for produkter.
 
 Synkroniseringen av produkter skjer fra Finance and Operations-appen til Dataverse. Dette betyr at verdiene i kolonnene for produkttabellen kan endres i Dataverse, men når synkroniseringen utløses (når en produktkolonne endres i en Finance and Operations-app), vil dette overskrive verdiene i Dataverse. 
 
@@ -225,3 +228,6 @@ Når synkroniseringen er aktivert og finner sted, blir produktene fra Finance an
 ### <a name="migration-of-product-data-from-other-dynamics-365-apps-to-finance-and-operations"></a>Overføring av produktdata fra Dynamics 365-apper til Finance and Operations
 
 Hvis andre Dynamics 365-apper har produkter som ikke finnes i Finance and Operations, kan administratoren først bruke **EcoResReleasedProductCreationV2Entity** til å importere disse produktene i Finance and Operations. Samsvar deretter produktdataene fra Finance and Operations og andre Dynamics 365-apper som beskrevet ovenfor. 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

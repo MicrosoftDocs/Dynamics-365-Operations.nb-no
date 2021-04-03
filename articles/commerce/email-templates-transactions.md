@@ -3,7 +3,7 @@ title: Opprette e-postmaler for transaksjonshendelser
 description: Dette emnet beskriver hvordan du oppretter, laster opp og konfigurerer e-postmaler for transaksjonshendelser i Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 manager: annbe
-ms.date: 06/01/2020
+ms.date: 03/01/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 245ca998ef3e6d172df3525f06d7901f3f41b650
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 756e2a64ef4c33c347106968eb6bc79a413c3ff7
+ms.sourcegitcommit: 88babb2fffe97e93bbde543633fc492120f2a4fc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5000792"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "5555251"
 ---
 # <a name="create-email-templates-for-transactional-events"></a>Opprette e-postmaler for transaksjonshendelser
 
@@ -39,7 +39,7 @@ Før du kan tilordne en bestemt transaksjonshendelse til en e-postmal, må du op
 
 Hvis du vil opprette en e-postmal, følger du disse trinnene.
 
-1. I Commerce Headquarters går du til **Maler for e-post til organisasjon**, som ligger under **Detaljhandel og handel \> Hovedkvarteroppsett \> Maler for e-post til organisasjon** eller **Organisasjonsstyring \> Oppsett \> Maler for e-post til organisasjon**.
+1. I Commerce Headquarters går du til **Detaljhandel og handel \> Hovedkvarteroppsett \> Maler for e-post til organisasjon** eller **Organisasjonsstyring \> Oppsett \> Maler for e-post til organisasjon**.
 1. Velg **Ny**.
 1. Under **Generelt** angir du følgende felt:
 
@@ -78,28 +78,29 @@ Her er et eksempel:
 
 Følgende plassholdere henter og viser data som er definert på salgsordrenivå (i motsetning til på salgslinjenivå).
 
-| Plassholdernavn    | Plassholderverdi                                                |
-|---------------------|------------------------------------------------------------------|
-| customername        | Navnet på kunden som la inn ordren.                   |
-| salesid             | Salgs-ID-en for ordren.                                       |
-| deliveryaddress     | Leveringsadressen for sendte ordrer.                         |
-| customeraddress     | Adressen til kunden.                                     |
-| deliverydate        | Leveringsdatoen.                                               |
-| shipdate            | Forsendelsesdatoen.                                                   |
-| modeofdelivery      | Leveringsmåten for ordren.                                  |
-| tillegg             | De totale gebyrene for ordren.                                 |
-| mva                 | Den totale avgiften for ordren.                                     |
-| sum               | Det totale beløpet for ordren.                                  |
-| ordernetamount      | Det totale beløpet for ordren, minus den totale avgiften.             |
-| rabatt            | Den totale rabatten for ordren.                                |
-| storename           | Navnet på butikken der ordren ble lagt inn.                |
-| storeaddress        | Adressen til butikken som la inn ordren.                  |
-| storeopenfrom       | Åpningstidene til butikken som la inn ordren.             |
-| storeopento         | Åpningstidene til butikken som la inn ordren.             |
-| pickupstorename     | Navnet på butikken der ordren blir hentet.         |
-| pickupstoreaddress  | Adressen til butikken der ordren blir hentet.      |
-| pickupopenstorefrom | Åpningstidene til butikken der ordren blir hentet. |
-| pickupopenstoreto   | Åpningstidene til butikken der ordren blir hentet. |
+| Plassholdernavn     | Plassholderverdi                                            |
+| -------------------- | ------------------------------------------------------------ |
+| customername         | Navnet på kunden som la inn ordren.               |
+| salesid              | Salgs-ID-en for ordren.                                   |
+| deliveryaddress      | Leveringsadressen for sendte ordrer.                     |
+| customeraddress      | Adressen til kunden.                                 |
+| customeremailaddress | E-postadressen som kunden la inn i betalingsprosessen.     |
+| deliverydate         | Leveringsdatoen.                                           |
+| shipdate             | Forsendelsesdatoen.                                               |
+| modeofdelivery       | Leveringsmåten for ordren.                              |
+| tillegg              | De totale gebyrene for ordren.                             |
+| mva                  | Den totale avgiften for ordren.                                 |
+| sum                | Det totale beløpet for ordren.                              |
+| ordernetamount       | Det totale beløpet for ordren, minus den totale avgiften.         |
+| rabatt             | Den totale rabatten for ordren.                            |
+| storename            | Navnet på butikken der ordren ble lagt inn.            |
+| storeaddress         | Adressen til butikken som la inn ordren.              |
+| storeopenfrom        | Åpningstidene til butikken som la inn ordren.         |
+| storeopento          | Åpningstidene til butikken som la inn ordren.         |
+| pickupstorename      | Navnet på butikken der ordren blir hentet.     |
+| pickupstoreaddress   | Adressen til butikken der ordren blir hentet.  |
+| pickupopenstorefrom  | Åpningstidene til butikken der ordren blir hentet. |
+| pickupopenstoreto    | Åpningstidene til butikken der ordren blir hentet. |
 
 ### <a name="order-line-placeholders-sales-line-level"></a>Plassholdere for ordrelinje (salgslinjenivå)
 
@@ -169,11 +170,8 @@ Her er et eksempel:
 
 Kvitteringer kan sendes som e-post til kunder som kjøper på et salgssted (POS). Fremgangsmåten for oppretting av malen for e-postkvitteringer er vanligvis de samme som fremgangsmåten for å opprette maler for andre transaksjonshendelser. Følgende endringer er imidlertid nødvendige:
 
-- ID-en for e-post for e-postmalen må være **emailRecpt**.
 - Kvitteringsteksten settes inn i e-postmeldingen ved hjelp av plassholderen **%message%**. For å sikre at kvitteringsteksten blir gjengitt på riktig måte, omslutter du plassholderen **%message%** med HTML-kodene **&lt;pre&gt;** og **&lt;/pre&gt;**.
-- Linjeskift i HTML-koden for topptekst og bunntekst i e-postmeldingen konverteres til HTML-koder av typen **&lt;br /&gt;**, slik at kvitteringsteksten gjengis riktig. Hvis du vil fjerne uønsket loddrett avstand i kvitteringsmeldingene, kan du fjerne linjeskift fra hvor som helst i HTML-koden der det ikke er behov for loddrett område.
-
-Hvis du vil ha mer informasjon om hvordan du konfigurerer e-post, kan du se [Konfigurere e-postkvitteringer](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-email-receipts).
+- Plassholderen **%receiptid%** kan brukes til å vise en QR-kode eller strekkode som representerer kvitterings-IDen. (QR-koder og strekkoder genereres dynamisk og betjenes av en tredjepartstjeneste.) Hvis du vil ha mer informasjon om hvordan du viser en QR-kode eller strekkode i en e-postkvittering, kan du se [Legge til en QR-kode eller strekkode i e-postmeldinger for transaksjon og kvittering](add-qr-code-barcode-email.md).
 
 ## <a name="upload-the-email-html"></a>Laste opp HTML for e-post
 
