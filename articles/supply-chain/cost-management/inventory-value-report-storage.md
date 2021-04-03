@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 0f54c02fc828d60f4ddb28be932bbf8eb137ee92
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 6f0c382c56ea0c576134f2871cba7a71b44e6528
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5008184"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5262483"
 ---
 # <a name="inventory-value-storage-report"></a>Rapport for oppbevaring av lagerverdi
 
@@ -105,3 +105,6 @@ Følgende eksempel viser hvordan du eksporterer en rapport for **oppbevaring av 
 1. På siden **Kjøringssammendrag** som vises, kan du se statusen for eksportjobben og en liste over enheter som ble eksportert. Velg **Lagerverdi**-enheten i delen **Behandlingsstatus for enhet**, og velg deretter **Last ned fil** for å laste ned dataene som er eksportert fra denne enheten.
 
 Hvis du vil ha mer informasjon om hvordan du bruker databehandling til å eksportere data, se [Oversikt over dataimport- og -eksportjobber](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

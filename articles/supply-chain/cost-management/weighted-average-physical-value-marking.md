@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 60ffd74363056babdd9d50df5be93d3ae466d860
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: a8d62dbcd0e9aee55486f6e46a30a3cc0d3bf327
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5011728"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5262411"
 ---
 # <a name="weighted-average-with-physical-value-and-marking"></a>Direkte utligning med fysisk verdi og merking
 
@@ -37,7 +37,7 @@ Hvis det bare er ett mottak, kan alle avgangene utlignes fra dette, og det oppre
 
 Når du bruker avveid gjennomsnitt, kan du merke lagertransaksjonene slik at et bestemt varemottak utlignes mot en bestemt avgang i stedet for å bruke regelen for avveid gjennomsnitt. 
 
-Vi anbefaler en månedelig lageravslutning når du bruker lagermodellen for avveid gjennomsnitt. 
+Det anbefales en månedelig lageravslutning når du bruker lagermodellen for avveid gjennomsnitt. 
 
 Metoden for avveid gjennomsnittlig lagerlukking beregnes ved hjelp av følgende formel:
 -   Avveid gjennomsnitt = (Q1\*P1 + Q2\*P2 + Qn\*Pn) / (Q1 + Q2 + Qn)
@@ -118,7 +118,7 @@ Diagrammet nedenfor illustrerer denne serien av transaksjoner, og viser virkning
 - Den grønne pilen representerer den motposterte systemgenererte mottakstransaksjonen som den opprinnelige posterte avgangstransaksjonen utlignes mot
 
 ## <a name="weighted-average-direct-settlement-with-the-include-physical-value-option"></a>Direkte utligning for avveid gjennomsnitt med alternativet Ta med fysisk verdi
-Parameteren Ta med fysisk verdi fungerer på en annen måte med lagermodellen for avveid gjennomsnitt enn i tidligere versjoner av produktet. Merk av i boksen Ta med fysisk verdi for en vare i Varemodellgruppe-skjemaet. Systemet vil deretter bruke fysisk oppdaterte tilganger når den estimerte kostprisen eller det glidende gjennomsnittet beregnes. Avganger blir postert på grunnlag av denne estimerte kostprisen for perioden. I løpet av lagerlukkingen vil bare økonomisk oppdaterte mottak bli vurdert i beregningen av avveid gjennomsnitt. Vi anbefaler en månedelig lagerlukking når du bruker lagermodellen for avveid gjennomsnitt. I dette eksemplet med direkte utligning av avveid gjennomsnitt, er varemodellgruppen merket for å ta med fysisk verdi. 
+Parameteren Ta med fysisk verdi fungerer på en annen måte med lagermodellen for avveid gjennomsnitt enn i tidligere versjoner av produktet. Merk av i boksen Ta med fysisk verdi for en vare i Varemodellgruppe-skjemaet. Systemet vil deretter bruke fysisk oppdaterte tilganger når den estimerte kostprisen eller det glidende gjennomsnittet beregnes. Avganger blir postert på grunnlag av denne estimerte kostprisen for perioden. I løpet av lagerlukkingen vil bare økonomisk oppdaterte mottak bli vurdert i beregningen av avveid gjennomsnitt. Det anbefales en månedelig lagerlukking når du bruker lagermodellen for avveid gjennomsnitt. I dette eksemplet med direkte utligning av avveid gjennomsnitt, er varemodellgruppen merket for å ta med fysisk verdi. 
 
 Følgende transaksjoner illustreres i grafikken nedenfor:
 -   1a. Fysisk lagermottak oppdatert for et antall på 1 til NOK 66,00 per stykk.
@@ -145,7 +145,7 @@ Diagrammet nedenfor illustrerer denne serien av transaksjoner, og viser virkning
 - Utligninger som skjer før lagerlukking, vises med prikkede røde piler som går diagonalt fra mottak til avgang.
 
 ## <a name="weighted-average-summarized-settlement-with-the-include-physical-value-option"></a>Summert utligning for avveid gjennomsnitt med alternativet Ta med fysisk verdi
-Parameteren Ta med fysisk verdi fungerer på en annen måte med avveid gjennomsnitt enn i tidligere versjoner. Merk av i boksen Ta med fysisk verdi for en vare på Varemodellgruppe-siden. Systemet vil deretter bruke fysisk oppdaterte tilganger under beregning av den estimerte kostprisen eller det glidende gjennomsnittet. Avganger posteres basert på denne estimerte kostprisen i løpet av perioden. I løpet av lagerlukkingen vil bare økonomisk oppdaterte mottak bli vurdert i beregningen av avveid gjennomsnitt. Vi anbefaler en månedelig lagerlukking når du bruker lagermodellen for avveid gjennomsnitt. I dette eksemplet med summert utligning av avveid gjennomsnitt, er lagermodellen merket for å ta med fysisk verdi. 
+Parameteren Ta med fysisk verdi fungerer på en annen måte med avveid gjennomsnitt enn i tidligere versjoner. Merk av i boksen Ta med fysisk verdi for en vare på Varemodellgruppe-siden. Systemet vil deretter bruke fysisk oppdaterte tilganger under beregning av den estimerte kostprisen eller det glidende gjennomsnittet. Avganger posteres basert på denne estimerte kostprisen i løpet av perioden. I løpet av lagerlukkingen vil bare økonomisk oppdaterte mottak bli vurdert i beregningen av avveid gjennomsnitt. Det anbefales en månedelig lagerlukking når du bruker lagermodellen for avveid gjennomsnitt. I dette eksemplet med summert utligning av avveid gjennomsnitt, er lagermodellen merket for å ta med fysisk verdi. 
 
 Følgende transaksjoner illustreres i grafikken nedenfor:
 -   1a. Fysisk lagermottak oppdatert for et antall på 2 til NOK 66,00 per stykk.
@@ -229,3 +229,6 @@ Diagrammet nedenfor illustrerer denne serien av transaksjoner, og viser virkning
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

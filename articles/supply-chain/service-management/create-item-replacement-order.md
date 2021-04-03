@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c0006ea9ec64cd95a709ec91509cb3a9828df160
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: e0932c34cc6b3604afbea7c8a18620640c00d928
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4996657"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5258005"
 ---
 # <a name="create-an-item-replacement-order"></a>Opprette en erstatningsordre for vare 
 
@@ -67,3 +67,6 @@ Erstatningsordrer for varer opprettes vanligvis etter at et produkt er returnert
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

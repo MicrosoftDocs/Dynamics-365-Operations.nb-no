@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4a074c35f64ce68fe24e501d7cb0e5e64f349c2a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 6d3febb420637c95e05e58444d0e2a67e5fa2b87
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5011078"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5260509"
 ---
 # <a name="mixed-mode-planning---combine-discrete-process-and-lean-sourcing"></a>Blandet modus-planlegging – Kombinere separat, prosess og lean-leverandører
 
@@ -64,7 +64,10 @@ Ressursforbruk krever at lageret som materialer plukkes fra, tilordnes basert p�
 For arbeid som er uavhengig av en policy for forsyning, trenger du ikke endre informasjon på Stykklisten Hvis forsyningen endres. For ad hoc-endringer sørger Supply Chain Management for at materialer forsynes fra lageret som er riktig.
 
 ## <a name="process-manufacturing--the-production-type"></a>Prosessproduksjon – Produksjonstypen
-Vi anbefaler at du bruker produksjonstype stykklister for alle produkter for full fleksibilitet i blandet modus. Du kan deretter bruke produksjonsordrer, kanbaner, overføringsordrer eller bestillinger for å levere et produkt. For prosessproduksjon må du bruke produksjonstypen **formel**, **koprodukt**, **biprodukt** eller **planleggingselement**. Kanbaner og produksjonsordrer kan ikke brukes for disse typene for produksjon.
+Det anbefales at du bruker produksjonstype stykklister for alle produkter for full fleksibilitet i blandet modus. Du kan deretter bruke produksjonsordrer, kanbaner, overføringsordrer eller bestillinger for å levere et produkt. For prosessproduksjon må du bruke produksjonstypen **formel**, **koprodukt**, **biprodukt** eller **planleggingselement**. Kanbaner og produksjonsordrer kan ikke brukes for disse typene for produksjon.
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6bb18f876e7d279624f60f01c5fbf4e449e9ab27
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: fc24aad05499adf9bfb2db3613c7f134c3a70770
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4986885"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5264704"
 ---
 # <a name="create-a-product-lifecycle-state-to-exclude-products-from-master-planning"></a>Opprette en produktlivssyklustilstand for å utelukke produkter fra hovedplanlegging
 
@@ -43,3 +43,6 @@ Denne prosedyren viser hvordan du oppretter en ny produktlivssyklustilstand som 
 5. Merk den valgte raden i listen.
 6. Angi eller velg en verdi i feltet Livssyklustilstand for produkt.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

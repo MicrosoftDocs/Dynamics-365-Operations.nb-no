@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ec17572612da7152ca0737cbd9f327d29dc54f8c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: a95e446184b48be6d48347155ce14554602accbe
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4985243"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5254017"
 ---
 # <a name="currency-revaluation-for-accounts-payable-and-accounts-receivable"></a>Revaluering av valuta for leverandører og kunder
 
@@ -65,3 +65,6 @@ En post opprettholdes hver gang du kjører en revaluering av utenlandsk valuta. 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

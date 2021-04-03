@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 285e9d2d184a899f1ffa502d59a853ba83cda491
-ms.sourcegitcommit: 2093c9dc31d1b60b3114085d9cef48fdbbb0ca0d
+ms.openlocfilehash: ca0a7233004522de2af7281416169f0393feeb11
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5118687"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5260653"
 ---
 # <a name="product-dimensions"></a>Produktdimensjoner
 
@@ -106,7 +106,7 @@ Når du tester løsningene for å sikre kompatibilitet med versjonsdimensjonen, 
     - PCVariantConfiguration::findByProductMasterAndDimensions
 
 1. **Tilordninger:** Hvis noen tilordninger bruker beholdningsdimensjonene, må den tilsvarende relasjonstilordningen til disse tilordningene oppdateres, slik at de inkluderer versjonsdimensjonen. I den utvidede modellen eller tabellutvidelser må du se etter tabeller der feltene omfatter beholdningsdimensjoner.
-1. **Microsoft Dynamics 365 Commerce-funksjonalitet:** Når dette er aktivert, vil versjonsdimensjonen vises i hele den Commerce-spesifikke koden i Dynamics 365 Supply Chain Management. Versjonsdimensjonen støttes imidlertid ikke av Commerce-kanaldatabasen eller i salgssteds- (POS) eller e-handelsapper. Disse Commerce-spesifikke programmene støtter ikke brukere som selger/sender eller returnerer/mottar lager etter versjonsdimensjon. Oppslagsfunksjoner for lagertilgjengelighet vil ikke skjelne lageret etter versjonsdimensjon i Commerce-apper. Denne virkemåten ligner på den gjeldende virkemåten til konfigurasjonsdimensjonen i hele Commerce.
+1. **Microsoft Dynamics 365 Commerce-funksjonalitet:** Når versjonsdimensjonen er aktivert, vil den vises i hele den Commerce-spesifikke koden i Dynamics 365 Supply Chain Management. Versjonsdimensjonen støttes imidlertid ikke av Commerce-kanaldatabasen eller i salgssteds- (POS) eller e-handelsapper. Disse Commerce-spesifikke programmene støtter ikke brukere som selger/sender eller returnerer/mottar lager etter versjonsdimensjon. Oppslagsfunksjoner for lagertilgjengelighet vil ikke skjelne lageret etter versjonsdimensjon i Commerce-apper. Denne virkemåten ligner på den gjeldende virkemåten til konfigurasjonsdimensjonen i hele Commerce.
 
 #### <a name="turn-on-the-version-dimension"></a>Aktivere versjonsdimensjonen
 
@@ -145,3 +145,6 @@ Versjonsdimensjonen fungerer på samme måte som de andre produktdimensjonene. P
 
 > [!IMPORTANT]
 > Hvis du aktiverer og bruker versjonsdimensjonen, kan det hende at noen løsninger som refererer til beholdningsdimensjonene, slutter å fungere som forventet. Du kan bekrefte og løse disse problemene ved å kontakte den uavhengige programvareleverandøren for de berørte løsningene. Hvis du vil ha mer informasjon, kan du se [Aktivere versjonsdimensjonen](#enable-version-dim).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

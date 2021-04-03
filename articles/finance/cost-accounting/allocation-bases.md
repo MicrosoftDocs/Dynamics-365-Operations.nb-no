@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f775b09b973a4d34e77d568a5f3b2bd35a7dfdcf
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 4b6d4e7fae1df977a5db311d3ea662a5eb3ffd30
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4976222"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5260835"
 ---
 # <a name="allocation-bases"></a>Tildelingsgrunnlag 
 
@@ -429,3 +429,6 @@ Her er et eksempel på en kostnadsdistribusjonsregel hvis formeltildelingsgrunnl
 |    CC002    |     FI      | 3 075,00  | (3 075,00 ÷ 18 162,50) × beløp  |
 |    CC003    |     LO      | 13 250,00 | (13 250,00 ÷ 18 162,50) × beløp |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

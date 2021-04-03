@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 0fd390e5e0054ff301c18c2507c600f954e6ce89
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: b63ebae10f23a27115313acb6381fa176e64fbd6
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4996782"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5261075"
 ---
 # <a name="create-and-manage-customer-portal-users"></a>Opprette og administrere brukere av kundeportalen
 
@@ -95,3 +95,6 @@ Tabellen nedenfor viser hvilke salgsordrer brukerne har i hver enkelt nettrolle 
 
 > [!NOTE]
 > Selv om både Stig og Janne er kontakter som arbeider for kunde X, kan de bare se de ordrene de selv har plassert, og ingen andre. Selv om Mari har en ordre i systemet, kan hun ikke se denne ordren i kundeportalen, fordi hun er en uautorisert bruker. (I tillegg må hun ha lagt inn ordren via en annen kanal enn kundeportalen.)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

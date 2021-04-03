@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b29c1c0727487992a478552d94b5bbe8684d0550
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ee65fa43b43bc8b6cbf9763ac4fa8774f30afb98
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967464"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5263572"
 ---
 # <a name="physical-and-financial-updates"></a>Fysiske og finansielle oppdateringer
 
@@ -73,3 +73,6 @@ Når en økonomisk transaksjon blir postert, er statusen til transaksjonsposten 
 -   Lagerjournaler med negativt antall, for eksempel bevegelse, resultat, opptelling, stykklister og overføring
 
 Transaksjoner som reduserer antallet posteres til løpende gjennomsnittlig kostpris. Prosedyren for lagerlukking er derfor nødvendig for å utligne avgangstransaksjoner mot tilgangstransaksjoner på grunnlag av lagermodellen som er tilordnet hver vare.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

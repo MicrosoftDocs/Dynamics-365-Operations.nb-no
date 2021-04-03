@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-9-16
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 22b1abec0c6dd5f571e604c5c07379b397b8bdaa
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 5fd8ced95c6017c128b77b80047761715b92fc2c
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4999059"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5260557"
 ---
 # <a name="troubleshoot-product-receipts-and-invoicing"></a>Feilsøke mottakssedler og fakturering
 
@@ -73,7 +73,7 @@ Transaksjoner kan posteres til de suspenderte finanskontoene når produktkvitter
 
 Hvis alternativet **Gjeldsavsetning på produktkvittering** er satt til *Nei* for varemodellgruppen, vil ingen posteringer til økonomimodulen forekomme. En fysisk hendelse vil imidlertid bli registrert for regnskapsformål i en underfinans, og denne hendelsen krever et bilagsnummer. Dette bilagsnummeret er bilagsnummeret som det refereres til i lagertransaksjonene.
 
-Vi anbefaler at du setter alternativet **Gjeldsavsetning på produktkvittering** til *Ja*, som beskrevet i følgende blogginnlegg: [Poster tilleggskostnader på tidspunktet for produktkvitteringen](https://cloudblogs.microsoft.com/dynamics365/no-audience/2014/11/11/post-misc-charges-at-time-of-product-receipt/).
+Det anbefales at du setter alternativet **Gjeldsavsetning på produktkvittering** til *Ja*, som beskrevet i følgende blogginnlegg: [Poster tilleggskostnader på tidspunktet for produktkvitteringen](https://cloudblogs.microsoft.com/dynamics365/no-audience/2014/11/11/post-misc-charges-at-time-of-product-receipt/).
 
 ## <a name="the-post-to-charge-account-in-ledger-setting-isnt-turned-on"></a>Innstillingen Postere i belastningskonto i finans er ikke aktivert.
 
@@ -109,3 +109,6 @@ Følgende prosedyre viser én måte å reprodusere problemet på.
 ### <a name="issue-resolution"></a>Problemløsning
 
 Dette avhenger av parameterinnstillingene for fakturaer og fakturagrupper. Hvis du vil ha mer informasjon, kan du se følgende blogginnlegg: [Regnskap for innkjøpstillegg og lageravvik](https://cloudblogs.microsoft.com/dynamics365/no-audience/2014/12/15/accounting-for-purchase-charge-and-stock-variation/).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

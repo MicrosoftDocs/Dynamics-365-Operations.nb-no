@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ea71dee6f653f73a86d31e82cf3541b4447bd552
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 1bcec99b811c67eca5473242820d8539758a5872
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5019520"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5253140"
 ---
 # <a name="asset-event-history"></a>Historikk for aktivahendelse
 
@@ -48,3 +48,6 @@ Tidslinjen oppdateres hver gang siden åpnes. Det inneholder følgende informasj
 - Arbeidsordrer, inkludert bokførte varer og notater
 - Feil
 - Betingelsesvurderinger
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

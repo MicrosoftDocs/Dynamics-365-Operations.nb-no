@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: smnatara
 ms.search.validFrom: 2020-11-04
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: d999c91aa1cc14f29ebfa6be8e456e45ef0d3fa4
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 71ff5eeb2065a67281393777937d50237ab78d5e
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966186"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5259728"
 ---
 # <a name="troubleshoot-process-manufacturing"></a>Feilsøk prosessproduksjon
 
@@ -40,3 +40,6 @@ Hvis du ikke bruker flyten for trimmet produksjons-kostnadsflyten i utgivelser f
 > Du er i ferd med å utføre en lagerlukking med en dato %1. Ingen kjøringer av beregning av backflush-etterkalkulering med en dato %1 som samsvarer med periodeslutt, er registrert. Husk å kjøre en beregning av backflush-etterkalkulering med en dato for %1 som samsvarer med periodeslutt. Verdien av lagerbeholdningene, solgte varers kost og avvik er kanskje ikke riktige i underfinansjournaler eller økonomimodulen før dette er utført.
 
 Dette problemet er løst i utgivelsen 10.0.13 og nyere. Hvis du vil ha mer informasjon, kan du se [KB 4582468](https://fix.lcs.dynamics.com/Issue/Details?kb=4582468&bugId=468844&dbType=3&qc=fcd64080446a27382cfde3e4c3bdcfb714279185932259cd11ceb0d500617296).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

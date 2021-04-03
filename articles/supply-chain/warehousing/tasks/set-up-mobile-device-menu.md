@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 10843f9ae9c657df5deae6a1ec11423cc426ba34
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: b15c2fde875f4cc5e21cc90e789fd1a5006ad883
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4976919"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5255972"
 ---
 # <a name="set-up-a-mobile-device-menu-item-for-completing-work-of-type-purchase-order"></a>Definere et menyelement for mobilenhet for å fullføre arbeid av typen Bestilling
 
@@ -68,3 +68,6 @@ Dette emnet viser hvordan du definerer et Mobilenhet-menyelement. I dette eksemp
 5. Velg pilen som peker mot høyre.
 6. Velg **Lagre**.
 7. Lukk siden.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -15,12 +15,12 @@ ms.search.region: Norway
 ms.author: ilyako
 ms.search.validFrom: 2019-11-01
 ms.dyn365.ops.version: 10.0.08
-ms.openlocfilehash: dca356b38c5ef61bf6719a698ad1ebbab7143e56
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: f691f1ab9c095699af7be4cac1402e9ea7116eb5
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5002884"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5262822"
 ---
 # <a name="customer-electronic-invoices-in-norway"></a>Elektroniske fakturaer for kunde i Norge
 
@@ -212,3 +212,6 @@ Hvis generering av de elektroniske fakturaene mislykkes på grunn av feil, velge
 Du kan konfigurere ER-målene for elektroniske fakturaformater. I dette tilfellet blir utdata-XML-filer som inneholder elektroniske fakturaer, automatisk sendt til de definerte målene like etter at fakturaene er postert. Når du posterer fakturaene, må du aktivere parameteren **Skriv ut faktura**.
 
 Hvis du vil ha mer informasjon om hvordan du konfigurerer ER-mål, kan du se [Mål for elektronisk rapportering](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

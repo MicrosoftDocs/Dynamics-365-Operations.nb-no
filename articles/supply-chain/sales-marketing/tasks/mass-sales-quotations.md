@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0ea50500ed52069ab9f6aae0dfb2d6cffc47cbff
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: f7aaa4e1fee12092be0389f0641e64712e869e6a
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5006847"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5260365"
 ---
 # <a name="mass-create-sales-quotations"></a>Masseopprett salgstilbud
 
@@ -100,3 +100,6 @@ Denne fremgangsmåten beskriver hvordan du effektivt oppretter tilbud som tilbyr
 11. Gå til Salg og markedsføring > Salgstilbud > Alle tilbud.
     * Kontroller at tilbud er opprettet for alle kunder som er angitt i rutinen Masseoppdatering, basert på den valgte malen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

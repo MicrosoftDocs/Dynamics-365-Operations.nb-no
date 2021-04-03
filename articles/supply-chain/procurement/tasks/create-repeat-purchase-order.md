@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 65eb801fb363ce2484dcce4d086d1b2b5ad3388f
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: ab669e393690867c1887ddcd982e20b5166bba2e
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017348"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5262243"
 ---
 # <a name="create-a-repeat-purchase-order"></a>Opprette en innkjøpsgjentakelsesordre
 
@@ -69,3 +69,6 @@ I stedet for å kopiere en hel ordre, er det mer vanlig å opprette en ny bestil
 4. Velg linjen for den ønskede bestillingen. Legg merke til at linjen med enkeltordren i denne bestillingen også er valgt.  
 5. Velg **OK**. Den ekstra ordrelinjen er lagt til bestillingen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: riluan
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: b8c527e578fee6abfeeade99fba8070365c020bd
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: dceaca64132857d796a16c2450a372ba05712cf5
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4983856"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5262459"
 ---
 # <a name="troubleshoot-cost-management"></a>Feilsøk kostnadsstyring
 
@@ -81,3 +81,6 @@ Før Microsoft gir ut en løsning på problemet, må du vurdere å bruke følgen
 - Unngå desimalverdier i standardkostnaden. Prøv å definere standardkostnaden slik at **Prisantall**-feltet settes til *1*. Hvis du må angi en verdi for **Prisantall** som er større enn *1*, kan du prøve å redusere antallet desimalplasser i enhetens standardkostnad. (Ideelt sett bør det være færre enn to desimalplasser.) Unngå å definere innstillinger for standardkostnad der for eksempel **Pris** = *10* og **Prisantall** = *3*, fordi disse vil gi en standardkostnad for en enhet på 3,333333 (der desimalverdien gjentas).
 - I de fleste dokumenter bør du unngå å ha flere linjer som har samme kombinasjon av produkt og økonomiske lagerdimensjoner.
 - Reduser graden av parallellisering. (I dette tilfellet kan systemet bli raskere fordi det oppstår færre oppdateringskonflikter og nye forsøk.)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

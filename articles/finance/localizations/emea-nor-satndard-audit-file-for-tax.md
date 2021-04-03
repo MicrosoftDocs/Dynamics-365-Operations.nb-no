@@ -14,12 +14,12 @@ ms.reviewer: kfend
 ms.search.region: Norway
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: ef666622d38eb504cadabcbfb63bf85b49fccc80
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 24db144963244d6f3493bfa5f403ca6a20971dc4
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5002856"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5262820"
 ---
 # <a name="standard-audit-file-for-tax-saf-t-for-norway"></a>Standard revisjonsfil for avgift (SAF-T) for Norge
 
@@ -91,7 +91,9 @@ Hvis du vil knytte mva-koder som brukes i Finance, med norske standard mva-koder
 
     ![Eksterne koder-knappen i handlingsruten på siden for mva-kode](media/nor-saf-standard-tax-codes.jpg)
 
-3. På **Eksterne koder**-siden angir du norske standard mva-koder som skal brukes for den valgte posten for mva-koden, for SAF-T-rapportering.
+3. På **Eksterne koder**-siden angir du norske standard mva-koder som skal brukes for den valgte posten for mva-koden, for SAF-T-rapportering. På siden **Eksterne koder** velger du identifikatoren for definisjonen av den eksterne koden i feltet **Kode** i delen **Oversikt**, og deretter angir du en standard mva-kode som samsvarer med den valgte **Mva-koden** i feltet **Verdi** i delen **Verdi**.
+
+    ![Definere standard mva-kode for den valgte mva-koden](media/not-saf-external-codes-tax.png)
 
 ### <a name="main-accounts"></a>Hovedkontoer
 
@@ -185,3 +187,6 @@ I samsvar med disse kravene er ER-formatet **SAF-T-format (NO)** implementert fo
 - Hver enkelt XML-fil valideres mot skjemaet.
 
 Når rapporten er generert, hvis det genereres mer enn én XML-fil, må brukeren manuelt nummerere de genererte filene i zip-arkivet ved å legge til **\_\<file number of total files\>** i filnavnene. Brukeren må likeledes sikre at det ikke mer enn 10 XML-filer i det samme zip-arkivet. Hvis det er mer enn 10 XML-filer i et arkiv, må brukeren manuelt dele det opp i flere arkiver, som hver har maksimalt 10 XML-filer.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

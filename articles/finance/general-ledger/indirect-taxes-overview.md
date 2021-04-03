@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 91ec6e1610c472d9c16020e4a7c38705059f0331
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 37ab8a92af77151b7d0ce7fd9ff625064736ccd2
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4988805"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5249053"
 ---
 # <a name="sales-tax-overview"></a>Oversikt over merverdiavgift
 
@@ -96,3 +96,6 @@ Hvis du bruker en betinget mva, utligner du imidlertid med skattemyndighetene n�
 Hvis du bruker etterdatert sjekk som betalingsmåte når betalingen opprettes, blir ikke bankkontoen tømt. I noen land blir mva "realisert" gjeld når betalingen fjerner banken, som betyr at den etterdaterte sjekken er utlignet. Du kan aktivere den ved å velge alternativet for **Realiser betinget merverdiavgift når etterdaterte sjekker trekkes** i **Kontant- og bankbehandling > Oppsett > Parametere for kontant- og bankbehandling > Etterdaterte sjekker**.
 
 Hvis du vil ha mer informasjon, kan du se [Definere kildeskattgrupper](tasks/set-up-withholding-tax.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
