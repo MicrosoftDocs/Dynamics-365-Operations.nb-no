@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 06/29/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 457d5760fb704b7a93ce16c081b7c5e6d0ff19c1
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: e0a769bdc86d36f8c5373c0301ed55f26757b405
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5093336"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5562910"
 ---
 # <a name="access-application-metadata-by-using-connected-applications"></a>Få tilgang til programmetadata ved hjelp av tilkoblede programmer
 
@@ -113,3 +112,6 @@ De følgende trinnene forklarer hvordan en RCS-bruker (Regulatory Configuration 
 11. Lukk siden. 
 
 Når du må evaluere denne modelltilordningen ved å bruke metadata for en annen versjon av programmet, registrerer du et nytt tilkoblet program, tilordner det til denne modelltilordningen og validerer det mot de nye metadataene.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

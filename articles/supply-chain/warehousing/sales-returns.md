@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e8778a96030494cbb5d819bf214fca104864eff4
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: c01a945735f6340a0efd3d9c5ff74dd8cebd9ab7
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4977419"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5263330"
 ---
 # <a name="sales-returns"></a>Salgsreturer
 
@@ -84,7 +84,7 @@ Når du oppretter en returordre, må informasjonen i tabellen nedenfor inkludere
 Når du har fullført returhodet, kan du opprette returlinjer ved hjelp av én av følgende metoder:
 
 -   Angi manuelt varedetaljer, antall og annen informasjon for hver returlinje.
--   Opprett en returlinje ved hjelp av funksjonen **Søk etter salgsordre**. Vi anbefaler at du bruker denne funksjonen når du oppretter en returordre. Funksjonen **Søk etter salgsordre** oppretter en referanse fra returlinjen tilbake til den fakturerte salgsordrelinjen, og henter linjedetaljer som varenummer, antall, pris, rabatt og kostnadsverdier fra salgslinjen. Referansen bidrar til å garantere at når produktet returneres til selskapet, blir det verdisatt til samme enhetskostnad som den ble solgt for. Referansen validerer også at returordrer ikke opprettes for et antall som er større enn antallet som ble solgt på fakturaen.
+-   Opprett en returlinje ved hjelp av funksjonen **Søk etter salgsordre**. Det anbefales at du bruker denne funksjonen når du oppretter en returordre. Funksjonen **Søk etter salgsordre** oppretter en referanse fra returlinjen tilbake til den fakturerte salgsordrelinjen, og henter linjedetaljer som varenummer, antall, pris, rabatt og kostnadsverdier fra salgslinjen. Referansen bidrar til å garantere at når produktet returneres til selskapet, blir det verdisatt til samme enhetskostnad som den ble solgt for. Referansen validerer også at returordrer ikke opprettes for et antall som er større enn antallet som ble solgt på fakturaen.
 
 >Obs! Returlinjer som har en referanse til en salgsordre behandles som korrigeringer eller tilbakeføringer av salget. Hvis du vil ha mer informasjon, kan du se "Postere til finans" senere i dette emnet.
 
@@ -256,7 +256,7 @@ Selv om siden **Returordre** inneholder informasjonen og handlingene som kreves 
 ### <a name="credit-correction"></a>Kreditrettelse
 
 Som en del av faktureringsprosessen, kan du kontrollere at eventuelle tilleggsgebyrer er riktige. Hvis du vil at finansposteringer skal bli korrigeringer (Storno), bør du vurdere å bruke alternativet **Kreditrettelse** i fanen **Annet** på siden **Postering av faktura**, når du bokfører fakturaen eller kreditnotaen. 
->Obs! Som standard er alternativet **Kreditrettelse** aktivert hvis alternativet **Kreditnota som rettelse** på siden **Kundeparametere** har blitt aktivert. Vi anbefaler imidlertid at du ikke posterer returer med Storno.
+>Obs! Som standard er alternativet **Kreditrettelse** aktivert hvis alternativet **Kreditnota som rettelse** på siden **Kundeparametere** har blitt aktivert. Det anbefales imidlertid at du ikke posterer returer med Storno.
 
 ## <a name="create-intercompany-return-orders"></a>Opprette konserninterne returordrer
 Returordrer kan fullføres mellom to selskaper i organisasjonen. Følgende scenarier støttes:
@@ -330,3 +330,6 @@ I dette eksemplet opprettes returordrelinjen ved hjelp av funksjonen **Søk ette
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

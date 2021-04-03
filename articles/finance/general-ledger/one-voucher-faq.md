@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 916f0172a2d7f9fad9dcd70b31f8ecf65e47b2c8
-ms.sourcegitcommit: bd4763cc6088e114818e80bb1c27c6521b039743
+ms.openlocfilehash: a0cbc9e1f70bd41157e2ed70f78c8129671a6a04
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "5107755"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5234171"
 ---
 # <a name="one-voucher-faq"></a>Ett bilag, vanlige spørsmål
 
@@ -51,3 +51,6 @@ Når det kommer til alle nye funksjoner, må kundene se på frigivelsesplanen og
 ## <a name="when-the-deprecation-date-is-identified-where-will-it-be-communicated"></a>Når avskrivningsdatoen er identifisert, hvor skal den kommuniseres?
 
 Avskrivningen av Ett bilag er en betydelig endring som vil bli kommuniseret bredt. Den vil bli kommunisert via produktdokumentasjonen, et blogginnlegg og kunngjøringer på gjeldende Microsoft-konferanser, i god tid i forveien av datoen da avskrivningen trer i kraft.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

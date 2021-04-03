@@ -16,21 +16,18 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3b750ee89a85688dcebe673f9c3ff13693e9fcad
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d31e3e7248809a00ad51183b80205d1351567ab3
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4976744"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5477882"
 ---
 # <a name="deploy-a-new-e-commerce-tenant"></a>Distribuere en ny e-handelsleier
-
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet beskriver hvordan du distribuerer et nytt Dynamics 365 Commerce-e-handelsområde ved å bruke Microsoft Dynamics Lifecycle Services (LCS).
-
-## <a name="overview"></a>Oversikt
 
 Microsoft Dynamics Lifecycle Services (LCS) er et skybasert samarbeidsområde som partnere og kunder kan bruke til å administrere sine prosjekter og miljøer, vise nyeste informasjon om Microsoft Dynamics-produkter og -funksjoner og opprette, spore og bla gjennom kundestøttehendelser. Funksjoner for e-handelsadministrasjon er integrert i LCS.
 

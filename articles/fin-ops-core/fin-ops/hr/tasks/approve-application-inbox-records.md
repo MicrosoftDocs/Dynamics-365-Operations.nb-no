@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HRMApplicationBasket, HRMApplicationBasketApprove, HRMApplication
 audience: Application User
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c980ca44028c4257078e5493e69499db87ffa30d
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: c6b1431619a5db7686918a0c58726a90449b9943
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798025"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5570318"
 ---
 # <a name="approve-application-inbox-records"></a>Godkjenne innboksposter for søknad
 
@@ -48,3 +47,6 @@ Denne fremgangsmåten viser hvordan du går gjennom søknader som mottas gjennom
 2. Klikk på koblingen i den valgte raden i listen.
 3. Utvid delen Vedlegg.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

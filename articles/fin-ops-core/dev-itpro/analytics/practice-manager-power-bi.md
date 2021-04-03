@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ProjManagementWorkspace
 audience: Application User, IT Pro
@@ -16,18 +15,18 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: f01109b360b23adf84673e84e6240f8f4431340d
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: 757c9bea86d0cba9b67c40ed5afd19804e01778c
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5092463"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5564441"
 ---
 # <a name="practice-manager-power-bi-content"></a>Power BI-innholdet Praksisleder
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver hva som er inkludert i **Praksisleder** for Microsoft Power BI-innhold. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
+Dette emnet beskriver hva som er inkludert i Microsoft Power BI-innholdet for **Praksisleder**. Det forklarer hvordan du kan få tilgang til Power BI-rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
 
 ## <a name="overview"></a>Oversikt
 
@@ -117,3 +116,6 @@ Delene nedenfor forklarer de samlede målene som brukes i hver enhet.
 | Aggregerte nøkkelmålinger       | Felt               | beskrivelse |
 |---------------------------------|---------------------|-------------|
 | Planlagt kostnad for fullført aktivitet | Sum(TotalCostPrice) | Total kostpris i estimater for alle prosjekttransaksjonstypene med fullførte oppgaver |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

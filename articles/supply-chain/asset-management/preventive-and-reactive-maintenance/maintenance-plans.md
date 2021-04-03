@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: EntAssetMaintenancePlan
+ms.search.form: EntAssetMaintenancePlan, EntAssetObjectType, EntAssetCounterType, EntAssetWorkOrderLifecycleModel
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9ec4929e9ea608318b83a2ae6033c4b25855f4dd
-ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
+ms.openlocfilehash: 09ae8b0ce56b08db0ba400b19676bd698c90a561
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "5077556"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5500820"
 ---
 # <a name="maintenance-plans"></a>Vedlikeholdsplaner
 
@@ -195,8 +195,7 @@ Illustrasjonen nedenfor viser et eksempel på vedlikeholdsplaner for et aktivum 
 
 ## <a name="counter-based-maintenance-enhancements"></a>Tellerbaserte vedlikeholdsforbedringer
 
-> [!IMPORTANT]
-> Funksjonaliteten som er nevnt i denne delen, er tilgjengelig som en del av en forhåndsversjon. Innholdet og funksjonaliteten kan bli endret. Hvis du vil ha mer informasjon om forhåndsvisning versjoner, kan du se [Vanlige spørsmål om oppdatering av én versjonstjeneste](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
+[!INCLUDE [preview-banner-section](../../../includes/preview-banner-section.md)]
 
 Funksjonen *Tellerbaserte vedlikeholdsforbedringer* innfører følgende funksjonalitet:
 
@@ -238,3 +237,6 @@ Du kan konfigurere systemet slik at det tilbakestiller en teller automatisk hver
 1. Gå til **Aktivastyring \> Oppsett \> Arbeidsordrer \> Livssyklustilstander**.
 1. I listeruten velger du livssyklustilstanden for arbeidsordre som den relevante telleren skal tilbakestilles for.
 1. I hurtigfanen **Generelt** angir du *Ja* for alternativet **Tilbakestill teller**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

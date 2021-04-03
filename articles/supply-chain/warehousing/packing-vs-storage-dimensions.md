@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSPhysDimUOM
+ms.search.form: EcoResPhysicalProductDimensions, WHSPhysDimUOM
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -16,16 +16,17 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-28
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 004d9b4522335b481b640ef0fe35f4db66e3c9f5
-ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
+ms.openlocfilehash: aa5cbf807e809238489c539d3ad8c0bc34421774
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "5078294"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5501300"
 ---
 # <a name="set-different-dimensions-for-packing-and-storage"></a>Angi ulike dimensjoner for pakking og lagring
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Noen varer pakkes eller lagres på en slik måte at du kanskje må spore fysiske dimensjoner ulikt for hver av flere forskjellige prosesser. Med funksjonen *Dimensjoner for pakking av produkt* kan du definere én eller flere dimensjonstyper for hvert produkt. Hver dimensjonstype gir et sett med fysiske mål (vekt, bredde, dybde og høyde) og fastsetter prosessen der de fysiske målingsverdiene gjelder. Når denne funksjonen er aktivert, støtter systemet følgende dimensjonstyper:
 
@@ -133,3 +134,6 @@ I denne prosessen skal du opprette en forsendelse basert på dimensjoner for var
 1. Åpne mobilenheten, logg deg på lager 63, og gå til **Lager \> Juster inn**.
 1. Angi **Lok.** = *SHORT-01*. Lag et nytt nummerskilt med **Vare** = *A0001* og **Antall** = *1 stk.*
 1. Velg **OK**. Du får en feilmelding om at lokasjonen SHORT-01 mislyktes fordi vare A0001 ikke passer i lokasjonens angitte dimensjoner. Dette skjer fordi dimensjoner av typen *Lagring* for produktet er større enn dimensjonene som er angitt i lokasjonsprofilen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

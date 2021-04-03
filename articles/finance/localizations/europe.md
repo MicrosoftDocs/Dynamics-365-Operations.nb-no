@@ -3,7 +3,7 @@ title: Oversikt over Europa
 description: Dette emnet inneholder koblinger til dokumentasjonsressurser for Microsoft Dynamics 365 Finance for Europa.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 12/07/2020
+ms.date: 02/24/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -14,12 +14,12 @@ ms.search.region: global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aca45011b39240da6634ce604cff49697f95a299
-ms.sourcegitcommit: 7cdec5469ff0da145ac4e01caf3287d0627ae2dc
+ms.openlocfilehash: b5aed9d3b5a82b88bb7d1e237aea0aa24dae102f
+ms.sourcegitcommit: 08ac570bece3e4ee4a0f632f51623e328536dfcf
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "5099905"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "5557430"
 ---
 # <a name="europe-overview"></a>Oversikt over Europa
 
@@ -40,6 +40,7 @@ Dette emnet inneholder informasjon og koblinger til ressursene som kan hjelpe de
 - [Rapportering av EU-salgsliste](emea-eu-sales-list.md)
 - [Valutakursjusteringer](emea-exchange-rate-adjustments.md)
 - [Filformater for betalingsmåter](emea-select-file-formats-for-the-method-of-payments.md)
+- [Finansretningslinjer (globalisering) om Brexits innvirkning](https://businesscenter.mbs.microsoft.com/#contentdetail/GuidanceBrexitImpact)
 - [Integrering av økonomisk service (ESR)](emea-fiscal-service-integration.md)
 - [Avhending av anleggsmidler i Estland og Litauen](emea-credit-note-reverse-fixed-asset-sale.md)
 - [Generere et overføringsdokument for en intern lageroverføring](tasks/transfer-document-internal-inventory-transfer.md)
@@ -99,3 +100,6 @@ Dette emnet inneholder informasjon og koblinger til ressursene som kan hjelpe de
 
 - [Oversikt over elektronisk rapportering](../../dev-itpro/analytics/general-electronic-reporting.md)
 - [Laste ned konfigurasjoner for elektronisk rapportering fra Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

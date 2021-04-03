@@ -16,17 +16,18 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b3f3c5a94d7deedd70af0d031c15ecf631dce4d7
-ms.sourcegitcommit: 33b5c8bc4f9461e290513aa22de1ec1fba3b0742
+ms.openlocfilehash: cfa05fe6816c6b24034f8f015bf6e42d665ef1dc
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "5125335"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5466502"
 ---
 # <a name="person-education"></a>Personutdanning
 
-Dette emnet beskriver Personutdanning-enheten for Dynamics 365 Human Resources.
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
+Dette emnet beskriver Personutdanning-enheten for Dynamics 365 Human Resources.
 
 Fysisk navn: mshr_hcmpersoneducationentity
 
@@ -97,3 +98,6 @@ Denne enheten inneholder utdanningshistorikken til personen som er kandidaten. U
 [Innføring i API for søkersporingssystemintegrering](hr-admin-integration-ats-api-introduction.md)<br>
 [Eksempelspørring for Kandidat for ansettelse](hr-admin-integration-ats-api-candidate-to-hire-example-query.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

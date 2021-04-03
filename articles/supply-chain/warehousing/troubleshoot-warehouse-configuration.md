@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 09b5770190fea9591f422b61ce6deedb2b9fa790
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 1fe285f05e5f1ddcb7bd206290b9954cbdaffc75
+ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4994009"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5487103"
 ---
 # <a name="troubleshoot-warehouse-configuration"></a>Feilsøk lagerkonfigurasjon
 
@@ -108,3 +108,33 @@ Hvis du vil at arbeidere skal kunne utføre denne endringen, kan du opprette et 
 - **Vis beholdningsstatus:** *Ja*
 
 Du kan angi andre felter på siden slik du ønsker.
+
+## <a name="the-dock-management-profile-of-a-location-profile-is-not-preventing-inventory-types-from-being-mixed"></a>Sonebehandlingsprofilen for en lokasjonsprofil hindrer ikke at lagertypene blir kombinert.
+
+### <a name="issue-description"></a>Problembeskrivelse
+
+Du bruker *policyer for forsendelseskonsolidering*. Du har definert en *sonebehandlingsprofil* for en *lokasjonsprofil*, men når arbeidet opprettes, er lagertypene kombinert ved den endelige lokasjonen.
+
+### <a name="issue-resolution"></a>Problemløsning
+
+Sonebehandlingsprofiler krever at arbeid deles på forhånd. Med andre ord forventer sonebehandlingsprofilen at et arbeidshode ikke vil ha flere plasseringslokasjoner.
+
+Du må konfigurere et arbeidshodeskift for at sonebehandlingsprofilen skal kunne styre kombinasjonen av lager på en effektiv måte.
+
+I dette eksemplet konfigureres vår sonebehandlingsprofil slik at **Lagertyper som ikke skal kombineres**, settes til *Forsendelses-ID*, og vi konfigurerer et hodeskift for profilen:
+
+1. Gå til **Lagerstyring \> Oppsett \> Arbeid \> Arbeidsmaler**.
+1. Velg **arbeidsordretypen** du vil redigere (for eksempel *Bestillinger*).
+1. Velg arbeidsmalen du vil redigere.
+1. I handlingsruten velger du **Rediger spørring**.
+1. Åpne fanen **Sortering**, og legg til en rad med følgende innstillinger:
+    - **Tabell** - *Midlertidige arbeidstransaksjoner*
+    - **Avledet tabell** - *Midlertidige arbeidstransaksjoner*
+    - **Felt** - *Forsendelses-ID*
+1. Velg **OK**.
+1. Du kommer tilbake til siden **Arbeidsmaler**. Velg **Arbeidshodeskift** i handlingsruten.
+1. I handlingsruten velger du **Rediger**.
+1. Merk av i avmerkingsboksen som er knyttet til **Feltnavn** *Forsendelses-ID*.
+1. Velg **Lagre** i handlingsruten.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: fb598b3ac7dd72e8c500f0c2eaf07462009c67f7
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 722b004e607cb2e6b7de292d92b67b18c2024696
+ms.sourcegitcommit: 70b1567d316f19c15a4b032b4897f15c8dcdca09
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4970312"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "5556272"
 ---
 # <a name="planned-cross-docking"></a>Planlagt direkteoverføring
 
@@ -37,12 +37,12 @@ På tidspunktet for mottak av inngående ordre, identifiserer direkteoverføring
 > [!NOTE]
 > Lagertransaksjoner avregistreres **ikke** når direkteoverføringsarbeid blir avbrutt, selv om innstillingen for denne funksjonen er aktivert i lagestyringsparametere.
 
-## <a name="turn-on-the-planned-cross-docking-feature"></a>Aktivere funksjonen for planlagt direkteoverføring
+## <a name="turn-on-the-planned-cross-docking-features"></a>Aktivere funksjonene for planlagt direkteoverføring
 
-Før du kan bruke avansert, planlagt direkteoverføring, må funksjonen aktiveres i systemet. Administratorer kan bruke [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)-arbeidsområdet til å kontrollere funksjonsstatusen og aktivere den hvis den kreves. Funksjonen vises på følgende måte:
+Hvis systemet ikke allerede inneholder funksjonene som er beskrevet i dette emnet, kan du gå til [Funksjonsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere følgende funksjoner i følgende rekkefølge:
 
-- **Modul:** *Lagerstyring*
-- **Funksjonsnavn:** *Planlagt direkteoverføring*
+1. *Planlagt direkteoverføring*
+2. *Kryssoverføringsmaler med lokasjonsdirektiver*
 
 ## <a name="setup"></a>Installasjon
 
@@ -89,6 +89,10 @@ Planlagt direkteoverføring er implementert som en lastposteringsmetode. Når du
     - **Ny validering ved forsyningsmottak:** *Nei*
 
         Dette alternativet angir om forsyningen skal valideres på nytt under mottak. Hvis dette alternativet er satt til *Ja*, kontrolleres både vinduet maksimal tid og området for utløpsdager.
+
+    - **Direktivkode** La dette feltet stå tomt
+
+        Ved hjelp av dette alternativet kan systemet bruke lokasjonsdirektiver til å bidra til å finne den beste lokasjonen å flytte lageret for direkteoverføring til. Du kan definere alternativet ved å tilordne en direktivkode til hver relevante direkteoverføringsmal. Hver direktivkode identifiserer et unikt lokasjonsdirektiv.
 
     - **Validerer tidsvindu:** *Ja*
 
@@ -315,3 +319,6 @@ For øyeblikket har begge arbeids-ID-ene samme målnummerskilt. Hvis du vil full
 Illustrasjonen nedenfor viser hvordan det fullførte direkteoverføringsarbeidet kan vises i Microsoft Dynamics 365 Supply Chain Management.
 
 ![Direkteoverføringsarbeid fullført](media/PlannedCrossDockingWork.png "Direkteoverføringsarbeid fullført")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 77512a82a08a02d47c06b2484b6e2090a2be03ae
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 38d8258c577cf64d41cf10ee5936719996eab0a4
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5011753"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5239548"
 ---
 # <a name="compare-active-estimated-and-realized-costs-on-a-production-order"></a>Sammenligne aktive estimerte og faktiske kostnader på en produksjonsordre
 
@@ -39,3 +39,6 @@ Denne fremgangsmåten viser hvordan du viser årsakene til høy produksjonsavvik
 6. Klikk på Vis kostnadssammenligning.
 7. Klikk på Lukk.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-9-14
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 08bdcef865c1e4904f32ce01f2956ac7acf55bf1
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 4a15b1c3df5de1dc5a55cfaa08686ee85ed50ba3
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4987310"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5236033"
 ---
 # <a name="safety-margins"></a>Sikkerhetsmarginer
 
@@ -182,3 +182,6 @@ En vare har for eksempel innledende tid på én dag og en mottaksmargin på tre 
 [Komme i gang med planleggingsoptimalisering](get-started.md)
 
 [Analyse for tilpassing av planleggingsoptimalisering](planning-optimization-fit-analysis.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

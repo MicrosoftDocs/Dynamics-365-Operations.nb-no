@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 09/21/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -14,12 +13,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 58aa4a6d313a78e88c2858637d6de167895ec534
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 98d67e240cdd5e64fef1aaf24b4907d1af42056a
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797397"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5567985"
 ---
 # <a name="workflow-faq"></a>Vanlige spørsmål om arbeidsflyt
 
@@ -59,3 +58,6 @@ Standard feltverdi for **Antall arbeidsflytvarer per satsvis oppgave** på siden
 
 ## <a name="what-is-the-workflow-enhanced-error-feature"></a>Hva er funksjonen for forbedret feil i arbeidsflyten?
 Funksjonen for forbedret feil i arbeidsflyten i versjon 10.0.13 legger til feilkoder for å skille ulike klasser av arbeidsflytfeil. Feilmeldingene som rapporteres, vil for det meste være like, med mindre forskjeller for å få dem til å bli klarere.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
