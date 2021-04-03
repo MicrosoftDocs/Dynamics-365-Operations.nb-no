@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 08/02/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERComponentTypeDropDialog
 audience: Application User
@@ -15,146 +14,149 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9404d1e242c83d2103d1f24c42589c33b9f57f02
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: 8cb86c1486223e982f8cbddc8eadaaf1c8ced4f8
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5092256"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5565196"
 ---
-# <a name="er-create-a-format-configuration-november-2016"></a><span data-ttu-id="2ea96-103">ER Opprette en formatkonfigurasjon (november 2016)</span><span class="sxs-lookup"><span data-stu-id="2ea96-103">ER Create a format configuration (November 2016)</span></span>
+# <a name="er-create-a-format-configuration-november-2016"></a><span data-ttu-id="c40f5-103">ER Opprette en formatkonfigurasjon (november 2016)</span><span class="sxs-lookup"><span data-stu-id="c40f5-103">ER Create a format configuration (November 2016)</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="2ea96-104">Dette emnet beskriver hvordan en bruker i rollen systemansvarlig eller utvikler av elektronisk rapportering kan opprette en formatkonfigurasjon for elektronisk rapportering (ER).</span><span class="sxs-lookup"><span data-stu-id="2ea96-104">This topic explains how a user in the System Administrator or Electronic Reporting Developer role can create a format configuration for Electronic reporting (ER).</span></span> <span data-ttu-id="2ea96-105">Denne formatkonfigurasjonen definerer formatet for elektroniske dokumenter som skal brukes til behandling av betalinger.</span><span class="sxs-lookup"><span data-stu-id="2ea96-105">This format configuration will define the format of electronic documents that are used for processing payments.</span></span> <span data-ttu-id="2ea96-106">I dette eksemplet oppretter du en formatkonfigurasjon for eksempelfirmaet Litware, Inc. For å fullføre disse trinnene, må du først fullføre trinnene i prosedyren Tilordne modell til valgte datakilder.</span><span class="sxs-lookup"><span data-stu-id="2ea96-106">In this example, you will create a format configuration for sample company, Litware, Inc. To complete these steps, you must first complete the steps in the "Map model to selected datasources" procedure.</span></span>
+<span data-ttu-id="c40f5-104">Dette emnet beskriver hvordan en bruker i rollen systemansvarlig eller utvikler av elektronisk rapportering kan opprette en formatkonfigurasjon for elektronisk rapportering (ER).</span><span class="sxs-lookup"><span data-stu-id="c40f5-104">This topic explains how a user in the System Administrator or Electronic Reporting Developer role can create a format configuration for Electronic reporting (ER).</span></span> <span data-ttu-id="c40f5-105">Denne formatkonfigurasjonen definerer formatet for elektroniske dokumenter som skal brukes til behandling av betalinger.</span><span class="sxs-lookup"><span data-stu-id="c40f5-105">This format configuration will define the format of electronic documents that are used for processing payments.</span></span> <span data-ttu-id="c40f5-106">I dette eksemplet oppretter du en formatkonfigurasjon for eksempelfirmaet Litware, Inc. For å fullføre disse trinnene, må du først fullføre trinnene i prosedyren Tilordne modell til valgte datakilder.</span><span class="sxs-lookup"><span data-stu-id="c40f5-106">In this example, you will create a format configuration for sample company, Litware, Inc. To complete these steps, you must first complete the steps in the "Map model to selected datasources" procedure.</span></span>
 
 
-## <a name="create-a-new-format-configuration"></a><span data-ttu-id="2ea96-107">Opprette en ny formatkonfigurasjon</span><span class="sxs-lookup"><span data-stu-id="2ea96-107">Create a new format configuration</span></span>
-1. <span data-ttu-id="2ea96-108">Gå til **Organisasjonsstyring > Arbeidsområder > Elektronisk rapportering**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-108">Go to **Organization administration > Workspaces > Electronic reporting**.</span></span>
-2. <span data-ttu-id="2ea96-109">Klikk på **Rapporteringskonfigurasjoner**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-109">Click **Reporting configurations**.</span></span>
-3. <span data-ttu-id="2ea96-110">Velg **Betalinger (forenklet model)** i treet.</span><span class="sxs-lookup"><span data-stu-id="2ea96-110">In the tree, select **Payments (simplified model)**.</span></span>
-4. <span data-ttu-id="2ea96-111">Klikk på **Opprett konfigurasjon** for å åpne nedtrekksdialogen.</span><span class="sxs-lookup"><span data-stu-id="2ea96-111">Click **Create configuration** to open the drop dialog.</span></span>
+## <a name="create-a-new-format-configuration"></a><span data-ttu-id="c40f5-107">Opprette en ny formatkonfigurasjon</span><span class="sxs-lookup"><span data-stu-id="c40f5-107">Create a new format configuration</span></span>
+1. <span data-ttu-id="c40f5-108">Gå til **Organisasjonsstyring > Arbeidsområder > Elektronisk rapportering**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-108">Go to **Organization administration > Workspaces > Electronic reporting**.</span></span>
+2. <span data-ttu-id="c40f5-109">Klikk på **Rapporteringskonfigurasjoner**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-109">Click **Reporting configurations**.</span></span>
+3. <span data-ttu-id="c40f5-110">Velg **Betalinger (forenklet model)** i treet.</span><span class="sxs-lookup"><span data-stu-id="c40f5-110">In the tree, select **Payments (simplified model)**.</span></span>
+4. <span data-ttu-id="c40f5-111">Klikk på **Opprett konfigurasjon** for å åpne nedtrekksdialogen.</span><span class="sxs-lookup"><span data-stu-id="c40f5-111">Click **Create configuration** to open the drop dialog.</span></span>
 
  > [!NOTE]
- > <span data-ttu-id="2ea96-112">Hvis du ikke ser **Opprett konfigurasjon**, må du aktivere utformingsmodus på siden **Parametere for elektronisk rapportering**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-112">If you don't see **Create configuration**, you must enable design mode on the **Electronic reporting parameters** page.</span></span> 
+ > <span data-ttu-id="c40f5-112">Hvis du ikke ser **Opprett konfigurasjon**, må du aktivere utformingsmodus på siden **Parametere for elektronisk rapportering**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-112">If you don't see **Create configuration**, you must enable design mode on the **Electronic reporting parameters** page.</span></span> 
  
-5. <span data-ttu-id="2ea96-113">I **Ny**-feltet angir du **Format basert på datamodell PaymentModel**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-113">In the **New** field, enter **Format based on data model PaymentModel**.</span></span>
-6. <span data-ttu-id="2ea96-114">Skriv inn **BACS (britisk fiktivt)** i **Navn**-feltet.</span><span class="sxs-lookup"><span data-stu-id="2ea96-114">In the **Name** field, type **BACS (UK fictitious)**.</span></span>
-7. <span data-ttu-id="2ea96-115">I **Beskrivelse**-feltet skriver du inn **BACS-leverandørbetalingsformat (fiktivt Storbritannia)**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-115">In the **Description** field, type **BACS vendor payment format (UK fictitious)**.</span></span>
-    * <span data-ttu-id="2ea96-116">Den aktive konfigurasjonsleverandøren angis automatisk her.</span><span class="sxs-lookup"><span data-stu-id="2ea96-116">The active configuration provider is automatically entered here.</span></span> <span data-ttu-id="2ea96-117">Denne leverandøren vil kunne vedlikeholde denne konfigurasjonen.</span><span class="sxs-lookup"><span data-stu-id="2ea96-117">This provider will be able to maintain this configuration.</span></span> <span data-ttu-id="2ea96-118">Andre leverandører kan bruke denne konfigurasjonen, men kan ikke vedlikeholde den.</span><span class="sxs-lookup"><span data-stu-id="2ea96-118">Other providers can use this configuration, but will not be able to maintain it.</span></span>  
-    * <span data-ttu-id="2ea96-119">Du kan definere et bestemt format for elektronisk dokument.</span><span class="sxs-lookup"><span data-stu-id="2ea96-119">A particular format of electronic document can be defined.</span></span> <span data-ttu-id="2ea96-120">La dette feltet stå tomt hvis du vil velge et format under kjøring.</span><span class="sxs-lookup"><span data-stu-id="2ea96-120">Leave this field blank if you want to select a format at run-time.</span></span>  
-8. <span data-ttu-id="2ea96-121">Angi eller velg en verdi i feltet **Definisjon av datamodell**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-121">In the **Data model definition** field, enter or select a value.</span></span>
-9. <span data-ttu-id="2ea96-122">Klikk på **Opprett konfigurasjon**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-122">Click **Create configuration**.</span></span> <span data-ttu-id="2ea96-123">En ny konfigurasjon er opprettet.</span><span class="sxs-lookup"><span data-stu-id="2ea96-123">A new configuration has been created.</span></span> <span data-ttu-id="2ea96-124">Utkastversjonen kan brukes til å lagre utformingsformatet for behandling av elektroniske dokumenter.</span><span class="sxs-lookup"><span data-stu-id="2ea96-124">The draft version can be used to store the design format for managing electronic documents.</span></span>  
+5. <span data-ttu-id="c40f5-113">I **Ny**-feltet angir du **Format basert på datamodell PaymentModel**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-113">In the **New** field, enter **Format based on data model PaymentModel**.</span></span>
+6. <span data-ttu-id="c40f5-114">Skriv inn **BACS (britisk fiktivt)** i **Navn**-feltet.</span><span class="sxs-lookup"><span data-stu-id="c40f5-114">In the **Name** field, type **BACS (UK fictitious)**.</span></span>
+7. <span data-ttu-id="c40f5-115">I **Beskrivelse**-feltet skriver du inn **BACS-leverandørbetalingsformat (fiktivt Storbritannia)**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-115">In the **Description** field, type **BACS vendor payment format (UK fictitious)**.</span></span>
+    * <span data-ttu-id="c40f5-116">Den aktive konfigurasjonsleverandøren angis automatisk her.</span><span class="sxs-lookup"><span data-stu-id="c40f5-116">The active configuration provider is automatically entered here.</span></span> <span data-ttu-id="c40f5-117">Denne leverandøren vil kunne vedlikeholde denne konfigurasjonen.</span><span class="sxs-lookup"><span data-stu-id="c40f5-117">This provider will be able to maintain this configuration.</span></span> <span data-ttu-id="c40f5-118">Andre leverandører kan bruke denne konfigurasjonen, men kan ikke vedlikeholde den.</span><span class="sxs-lookup"><span data-stu-id="c40f5-118">Other providers can use this configuration, but will not be able to maintain it.</span></span>  
+    * <span data-ttu-id="c40f5-119">Du kan definere et bestemt format for elektronisk dokument.</span><span class="sxs-lookup"><span data-stu-id="c40f5-119">A particular format of electronic document can be defined.</span></span> <span data-ttu-id="c40f5-120">La dette feltet stå tomt hvis du vil velge et format under kjøring.</span><span class="sxs-lookup"><span data-stu-id="c40f5-120">Leave this field blank if you want to select a format at run-time.</span></span>  
+8. <span data-ttu-id="c40f5-121">Angi eller velg en verdi i feltet **Definisjon av datamodell**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-121">In the **Data model definition** field, enter or select a value.</span></span>
+9. <span data-ttu-id="c40f5-122">Klikk på **Opprett konfigurasjon**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-122">Click **Create configuration**.</span></span> <span data-ttu-id="c40f5-123">En ny konfigurasjon er opprettet.</span><span class="sxs-lookup"><span data-stu-id="c40f5-123">A new configuration has been created.</span></span> <span data-ttu-id="c40f5-124">Utkastversjonen kan brukes til å lagre utformingsformatet for behandling av elektroniske dokumenter.</span><span class="sxs-lookup"><span data-stu-id="c40f5-124">The draft version can be used to store the design format for managing electronic documents.</span></span>  
 
-## <a name="design-the-format-of-an-electronic-document"></a><span data-ttu-id="2ea96-125">Utforme formatet på et elektronisk dokument</span><span class="sxs-lookup"><span data-stu-id="2ea96-125">Design the format of an electronic document</span></span>
-1. <span data-ttu-id="2ea96-126">Klikk på **Utforming**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-126">Click **Designer**.</span></span>
-2. <span data-ttu-id="2ea96-127">Klikk på **Legg til rot** for å åpne nedtrekksdialogen.</span><span class="sxs-lookup"><span data-stu-id="2ea96-127">Click **Add root** to open the drop dialog.</span></span>
-3. <span data-ttu-id="2ea96-128">Velg **Felles\Fil** i treet.</span><span class="sxs-lookup"><span data-stu-id="2ea96-128">In the tree, select **Common\File**.</span></span>
-4. <span data-ttu-id="2ea96-129">I **Navn**-feltet skriver du inn **Xml**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-129">In the **Name** field, type **Xml**.</span></span>
-5. <span data-ttu-id="2ea96-130">I **Koding**-feltet skriver du inn **UTF-8**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-130">In the **Encoding** field, type **UTF-8**.</span></span>
-6. <span data-ttu-id="2ea96-131">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-131">Click **OK**.</span></span>
-7. <span data-ttu-id="2ea96-132">Klikk på **Legg til**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-132">Click **Add**.</span></span>
-8. <span data-ttu-id="2ea96-133">Velg **XML\Element** i treet.</span><span class="sxs-lookup"><span data-stu-id="2ea96-133">In the tree, select **XML\Element**.</span></span>
-9. <span data-ttu-id="2ea96-134">I **Navn**-feltet skriver du inn **Melding**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-134">In the **Name** field, type **Message**.</span></span>
-10. <span data-ttu-id="2ea96-135">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-135">Click **OK**.</span></span>
-11. <span data-ttu-id="2ea96-136">Velg **Xml\Melding** i treet.</span><span class="sxs-lookup"><span data-stu-id="2ea96-136">In the tree, select **Xml\Message**.</span></span>
-12. <span data-ttu-id="2ea96-137">Klikk på **Legg til element**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-137">Click **Add Element**.</span></span>
-13. <span data-ttu-id="2ea96-138">I **Navn**-feltet skriver du inn **ProcessingDate**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-138">In the **Name** field, type **ProcessingDate**.</span></span>
-14. <span data-ttu-id="2ea96-139">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-139">Click **OK**.</span></span>
-15. <span data-ttu-id="2ea96-140">Klikk på **Legg til element**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-140">Click **Add Element**.</span></span>
-16. <span data-ttu-id="2ea96-141">I Navn-feltet skriver du inn **MessageId**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-141">In the Name field, type **MessageId**.</span></span>
-17. <span data-ttu-id="2ea96-142">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-142">Click **OK**.</span></span>
-18. <span data-ttu-id="2ea96-143">Klikk på **Legg til element**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-143">Click **Add Element**.</span></span>
-19. <span data-ttu-id="2ea96-144">Skriv inn **Betalinger** i **Navn**-feltet.</span><span class="sxs-lookup"><span data-stu-id="2ea96-144">In the **Name** field, type **Payments**.</span></span>
-20. <span data-ttu-id="2ea96-145">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-145">Click **OK**.</span></span>
-21. <span data-ttu-id="2ea96-146">Velg **Xml\Melding\Betalinger** i treet.</span><span class="sxs-lookup"><span data-stu-id="2ea96-146">In the tree, select **Xml\Message\Payments**.</span></span>
-22. <span data-ttu-id="2ea96-147">Klikk på **Legg til element**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-147">Click **Add Element**.</span></span>
-23. <span data-ttu-id="2ea96-148">I **Navn**-feltet skriver du inn **Vare**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-148">In the **Name** field, type **Item**.</span></span>
-24. <span data-ttu-id="2ea96-149">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-149">Click **OK**.</span></span>
-25. <span data-ttu-id="2ea96-150">Velg **Xml\Melding\Betalinger\Vare** i treet.</span><span class="sxs-lookup"><span data-stu-id="2ea96-150">In the tree, select **Xml\Message\Payments\Item**.</span></span>
-26. <span data-ttu-id="2ea96-151">Klikk på **Legg til**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-151">Click **Add**.</span></span>
-27. <span data-ttu-id="2ea96-152">Velg **XML\Attributt** i treet.</span><span class="sxs-lookup"><span data-stu-id="2ea96-152">In the tree, select **XML\Attribute**.</span></span>
-28. <span data-ttu-id="2ea96-153">I Navn-feltet skriver du inn **ID**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-153">In the Name field, type **Id**.</span></span>
-29. <span data-ttu-id="2ea96-154">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-154">Click **OK**.</span></span>
-30. <span data-ttu-id="2ea96-155">Klikk på **Legg til**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-155">Click **Add**.</span></span>
-31. <span data-ttu-id="2ea96-156">Velg **XML\Element** i treet.</span><span class="sxs-lookup"><span data-stu-id="2ea96-156">In the tree, select **XML\Element**.</span></span>
-32. <span data-ttu-id="2ea96-157">I Navn-feltet skriver du inn **Leverandør**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-157">In the Name field, type **Vendor**.</span></span>
-33. <span data-ttu-id="2ea96-158">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-158">Click **OK**.</span></span>
-34. <span data-ttu-id="2ea96-159">Velg **Xml\Melding\Betalinger\Vare\Leverandør** i treet.</span><span class="sxs-lookup"><span data-stu-id="2ea96-159">In the tree, select **Xml\Message\Payments\Item\Vendor**.</span></span>
-35. <span data-ttu-id="2ea96-160">Klikk på **Legg til element**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-160">Click **Add Element**.</span></span>
-36. <span data-ttu-id="2ea96-161">I Navn-feltet skriver du inn **Navn**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-161">In the Name field, type **Name**.</span></span>
-37. <span data-ttu-id="2ea96-162">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-162">Click **OK**.</span></span>
-38. <span data-ttu-id="2ea96-163">Klikk på **Legg til element**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-163">Click **Add Element**.</span></span>
-39. <span data-ttu-id="2ea96-164">I **Navn**-feltet skriver du inn **Bank**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-164">In the **Name** field, type **Bank**.</span></span>
-40. <span data-ttu-id="2ea96-165">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-165">Click **OK**.</span></span>
-41. <span data-ttu-id="2ea96-166">Velg **Xml\Melding\Betalinger\Vare\Leverandør\Bank** i treet.</span><span class="sxs-lookup"><span data-stu-id="2ea96-166">In the tree, select **Xml\Message\Payments\Item\Vendor\Bank**.</span></span>
-42. <span data-ttu-id="2ea96-167">Klikk på **Legg til element**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-167">Click **Add Element**.</span></span>
-43. <span data-ttu-id="2ea96-168">Skriv inn **RoutingNumber** i **Navn**-feltet.</span><span class="sxs-lookup"><span data-stu-id="2ea96-168">In the **Name** field, type **RoutingNumber**.</span></span>
-44. <span data-ttu-id="2ea96-169">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-169">Click **OK**.</span></span>
-45. <span data-ttu-id="2ea96-170">Klikk på **Legg til element**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-170">Click **Add Element**.</span></span>
-46. <span data-ttu-id="2ea96-171">Skriv inn **AccountNumber** i **Navn**-feltet.</span><span class="sxs-lookup"><span data-stu-id="2ea96-171">In the **Name** field, type **AccountNumber**.</span></span>
-47. <span data-ttu-id="2ea96-172">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-172">Click **OK**.</span></span>
-48. <span data-ttu-id="2ea96-173">Velg **Xml\Melding\Betalinger\Vare\Leverandør** i treet.</span><span class="sxs-lookup"><span data-stu-id="2ea96-173">In the tree, select **Xml\Message\Payments\Item\Vendor**.</span></span>
-49. <span data-ttu-id="2ea96-174">Klikk på **Kopier**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-174">Click **Copy**.</span></span>
-50. <span data-ttu-id="2ea96-175">Velg **Xml\Melding\Betalinger\Vare** i treet.</span><span class="sxs-lookup"><span data-stu-id="2ea96-175">In the tree, select **Xml\Message\Payments\Item**.</span></span>
-51. <span data-ttu-id="2ea96-176">Klikk på **Lim inn**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-176">Click **Paste**.</span></span>
-52. <span data-ttu-id="2ea96-177">I **Navn**-feltet skriver du inn **Betaler**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-177">In the **Name** field, type **Payer**.</span></span>
-53. <span data-ttu-id="2ea96-178">Velg **Xml\Melding\Betalinger\Vare** i treet.</span><span class="sxs-lookup"><span data-stu-id="2ea96-178">In the tree, select **Xml\Message\Payments\Item**.</span></span>
-54. <span data-ttu-id="2ea96-179">Klikk på **Legg til element**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-179">Click **Add Element**.</span></span>
-55. <span data-ttu-id="2ea96-180">I **Navn**-feltet skriver du inn **Valuta**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-180">In the **Name** field, type **Currency**.</span></span>
-56. <span data-ttu-id="2ea96-181">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-181">Click **OK**.</span></span>
-57. <span data-ttu-id="2ea96-182">Klikk på **Legg til element**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-182">Click **Add Element**.</span></span>
-58. <span data-ttu-id="2ea96-183">Skriv inn **Beskrivelse** i **Navn**-feltet.</span><span class="sxs-lookup"><span data-stu-id="2ea96-183">In the **Name** field, type **Description**.</span></span>
-59. <span data-ttu-id="2ea96-184">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-184">Click **OK**.</span></span>
-60. <span data-ttu-id="2ea96-185">Klikk på **Legg til element**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-185">Click **Add Element**.</span></span>
-61. <span data-ttu-id="2ea96-186">I Navn-feltet skriver du inn **TransDate**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-186">In the Name field, type **TransDate**.</span></span>
-62. <span data-ttu-id="2ea96-187">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-187">Click **OK**.</span></span>
-63. <span data-ttu-id="2ea96-188">Klikk på **Legg til element**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-188">Click **Add Element**.</span></span>
-64. <span data-ttu-id="2ea96-189">I Navn-feltet skriver du inn **Beløp**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-189">In the Name field, type **Amount**.</span></span>
-65. <span data-ttu-id="2ea96-190">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-190">Click **OK**.</span></span>
+## <a name="design-the-format-of-an-electronic-document"></a><span data-ttu-id="c40f5-125">Utforme formatet på et elektronisk dokument</span><span class="sxs-lookup"><span data-stu-id="c40f5-125">Design the format of an electronic document</span></span>
+1. <span data-ttu-id="c40f5-126">Klikk på **Utforming**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-126">Click **Designer**.</span></span>
+2. <span data-ttu-id="c40f5-127">Klikk på **Legg til rot** for å åpne nedtrekksdialogen.</span><span class="sxs-lookup"><span data-stu-id="c40f5-127">Click **Add root** to open the drop dialog.</span></span>
+3. <span data-ttu-id="c40f5-128">Velg **Felles\Fil** i treet.</span><span class="sxs-lookup"><span data-stu-id="c40f5-128">In the tree, select **Common\File**.</span></span>
+4. <span data-ttu-id="c40f5-129">I **Navn**-feltet skriver du inn **Xml**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-129">In the **Name** field, type **Xml**.</span></span>
+5. <span data-ttu-id="c40f5-130">I **Koding**-feltet skriver du inn **UTF-8**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-130">In the **Encoding** field, type **UTF-8**.</span></span>
+6. <span data-ttu-id="c40f5-131">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-131">Click **OK**.</span></span>
+7. <span data-ttu-id="c40f5-132">Klikk på **Legg til**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-132">Click **Add**.</span></span>
+8. <span data-ttu-id="c40f5-133">Velg **XML\Element** i treet.</span><span class="sxs-lookup"><span data-stu-id="c40f5-133">In the tree, select **XML\Element**.</span></span>
+9. <span data-ttu-id="c40f5-134">I **Navn**-feltet skriver du inn **Melding**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-134">In the **Name** field, type **Message**.</span></span>
+10. <span data-ttu-id="c40f5-135">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-135">Click **OK**.</span></span>
+11. <span data-ttu-id="c40f5-136">Velg **Xml\Melding** i treet.</span><span class="sxs-lookup"><span data-stu-id="c40f5-136">In the tree, select **Xml\Message**.</span></span>
+12. <span data-ttu-id="c40f5-137">Klikk på **Legg til element**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-137">Click **Add Element**.</span></span>
+13. <span data-ttu-id="c40f5-138">I **Navn**-feltet skriver du inn **ProcessingDate**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-138">In the **Name** field, type **ProcessingDate**.</span></span>
+14. <span data-ttu-id="c40f5-139">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-139">Click **OK**.</span></span>
+15. <span data-ttu-id="c40f5-140">Klikk på **Legg til element**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-140">Click **Add Element**.</span></span>
+16. <span data-ttu-id="c40f5-141">I Navn-feltet skriver du inn **MessageId**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-141">In the Name field, type **MessageId**.</span></span>
+17. <span data-ttu-id="c40f5-142">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-142">Click **OK**.</span></span>
+18. <span data-ttu-id="c40f5-143">Klikk på **Legg til element**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-143">Click **Add Element**.</span></span>
+19. <span data-ttu-id="c40f5-144">Skriv inn **Betalinger** i **Navn**-feltet.</span><span class="sxs-lookup"><span data-stu-id="c40f5-144">In the **Name** field, type **Payments**.</span></span>
+20. <span data-ttu-id="c40f5-145">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-145">Click **OK**.</span></span>
+21. <span data-ttu-id="c40f5-146">Velg **Xml\Melding\Betalinger** i treet.</span><span class="sxs-lookup"><span data-stu-id="c40f5-146">In the tree, select **Xml\Message\Payments**.</span></span>
+22. <span data-ttu-id="c40f5-147">Klikk på **Legg til element**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-147">Click **Add Element**.</span></span>
+23. <span data-ttu-id="c40f5-148">I **Navn**-feltet skriver du inn **Vare**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-148">In the **Name** field, type **Item**.</span></span>
+24. <span data-ttu-id="c40f5-149">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-149">Click **OK**.</span></span>
+25. <span data-ttu-id="c40f5-150">Velg **Xml\Melding\Betalinger\Vare** i treet.</span><span class="sxs-lookup"><span data-stu-id="c40f5-150">In the tree, select **Xml\Message\Payments\Item**.</span></span>
+26. <span data-ttu-id="c40f5-151">Klikk på **Legg til**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-151">Click **Add**.</span></span>
+27. <span data-ttu-id="c40f5-152">Velg **XML\Attributt** i treet.</span><span class="sxs-lookup"><span data-stu-id="c40f5-152">In the tree, select **XML\Attribute**.</span></span>
+28. <span data-ttu-id="c40f5-153">I Navn-feltet skriver du inn **ID**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-153">In the Name field, type **Id**.</span></span>
+29. <span data-ttu-id="c40f5-154">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-154">Click **OK**.</span></span>
+30. <span data-ttu-id="c40f5-155">Klikk på **Legg til**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-155">Click **Add**.</span></span>
+31. <span data-ttu-id="c40f5-156">Velg **XML\Element** i treet.</span><span class="sxs-lookup"><span data-stu-id="c40f5-156">In the tree, select **XML\Element**.</span></span>
+32. <span data-ttu-id="c40f5-157">I Navn-feltet skriver du inn **Leverandør**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-157">In the Name field, type **Vendor**.</span></span>
+33. <span data-ttu-id="c40f5-158">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-158">Click **OK**.</span></span>
+34. <span data-ttu-id="c40f5-159">Velg **Xml\Melding\Betalinger\Vare\Leverandør** i treet.</span><span class="sxs-lookup"><span data-stu-id="c40f5-159">In the tree, select **Xml\Message\Payments\Item\Vendor**.</span></span>
+35. <span data-ttu-id="c40f5-160">Klikk på **Legg til element**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-160">Click **Add Element**.</span></span>
+36. <span data-ttu-id="c40f5-161">I Navn-feltet skriver du inn **Navn**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-161">In the Name field, type **Name**.</span></span>
+37. <span data-ttu-id="c40f5-162">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-162">Click **OK**.</span></span>
+38. <span data-ttu-id="c40f5-163">Klikk på **Legg til element**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-163">Click **Add Element**.</span></span>
+39. <span data-ttu-id="c40f5-164">I **Navn**-feltet skriver du inn **Bank**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-164">In the **Name** field, type **Bank**.</span></span>
+40. <span data-ttu-id="c40f5-165">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-165">Click **OK**.</span></span>
+41. <span data-ttu-id="c40f5-166">Velg **Xml\Melding\Betalinger\Vare\Leverandør\Bank** i treet.</span><span class="sxs-lookup"><span data-stu-id="c40f5-166">In the tree, select **Xml\Message\Payments\Item\Vendor\Bank**.</span></span>
+42. <span data-ttu-id="c40f5-167">Klikk på **Legg til element**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-167">Click **Add Element**.</span></span>
+43. <span data-ttu-id="c40f5-168">Skriv inn **RoutingNumber** i **Navn**-feltet.</span><span class="sxs-lookup"><span data-stu-id="c40f5-168">In the **Name** field, type **RoutingNumber**.</span></span>
+44. <span data-ttu-id="c40f5-169">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-169">Click **OK**.</span></span>
+45. <span data-ttu-id="c40f5-170">Klikk på **Legg til element**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-170">Click **Add Element**.</span></span>
+46. <span data-ttu-id="c40f5-171">Skriv inn **AccountNumber** i **Navn**-feltet.</span><span class="sxs-lookup"><span data-stu-id="c40f5-171">In the **Name** field, type **AccountNumber**.</span></span>
+47. <span data-ttu-id="c40f5-172">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-172">Click **OK**.</span></span>
+48. <span data-ttu-id="c40f5-173">Velg **Xml\Melding\Betalinger\Vare\Leverandør** i treet.</span><span class="sxs-lookup"><span data-stu-id="c40f5-173">In the tree, select **Xml\Message\Payments\Item\Vendor**.</span></span>
+49. <span data-ttu-id="c40f5-174">Klikk på **Kopier**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-174">Click **Copy**.</span></span>
+50. <span data-ttu-id="c40f5-175">Velg **Xml\Melding\Betalinger\Vare** i treet.</span><span class="sxs-lookup"><span data-stu-id="c40f5-175">In the tree, select **Xml\Message\Payments\Item**.</span></span>
+51. <span data-ttu-id="c40f5-176">Klikk på **Lim inn**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-176">Click **Paste**.</span></span>
+52. <span data-ttu-id="c40f5-177">I **Navn**-feltet skriver du inn **Betaler**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-177">In the **Name** field, type **Payer**.</span></span>
+53. <span data-ttu-id="c40f5-178">Velg **Xml\Melding\Betalinger\Vare** i treet.</span><span class="sxs-lookup"><span data-stu-id="c40f5-178">In the tree, select **Xml\Message\Payments\Item**.</span></span>
+54. <span data-ttu-id="c40f5-179">Klikk på **Legg til element**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-179">Click **Add Element**.</span></span>
+55. <span data-ttu-id="c40f5-180">I **Navn**-feltet skriver du inn **Valuta**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-180">In the **Name** field, type **Currency**.</span></span>
+56. <span data-ttu-id="c40f5-181">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-181">Click **OK**.</span></span>
+57. <span data-ttu-id="c40f5-182">Klikk på **Legg til element**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-182">Click **Add Element**.</span></span>
+58. <span data-ttu-id="c40f5-183">Skriv inn **Beskrivelse** i **Navn**-feltet.</span><span class="sxs-lookup"><span data-stu-id="c40f5-183">In the **Name** field, type **Description**.</span></span>
+59. <span data-ttu-id="c40f5-184">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-184">Click **OK**.</span></span>
+60. <span data-ttu-id="c40f5-185">Klikk på **Legg til element**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-185">Click **Add Element**.</span></span>
+61. <span data-ttu-id="c40f5-186">I Navn-feltet skriver du inn **TransDate**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-186">In the Name field, type **TransDate**.</span></span>
+62. <span data-ttu-id="c40f5-187">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-187">Click **OK**.</span></span>
+63. <span data-ttu-id="c40f5-188">Klikk på **Legg til element**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-188">Click **Add Element**.</span></span>
+64. <span data-ttu-id="c40f5-189">I Navn-feltet skriver du inn **Beløp**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-189">In the Name field, type **Amount**.</span></span>
+65. <span data-ttu-id="c40f5-190">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-190">Click **OK**.</span></span>
 
-## <a name="prepare-format-components-for-mapping-to-data-model-elements"></a><span data-ttu-id="2ea96-191">Klargjøre formatkomponenter for tilordning til datamodellelementer</span><span class="sxs-lookup"><span data-stu-id="2ea96-191">Prepare format components for mapping to data model elements</span></span>
-1. <span data-ttu-id="2ea96-192">Velg **Xml\Melding\ProcessingDate** i treet.</span><span class="sxs-lookup"><span data-stu-id="2ea96-192">In the tree, select **Xml\Message\ProcessingDate**.</span></span>
-2. <span data-ttu-id="2ea96-193">Klikk på **Legg til** for å åpne nedtrekksdialogen.</span><span class="sxs-lookup"><span data-stu-id="2ea96-193">Click **Add** to open the drop dialog.</span></span>
-3. <span data-ttu-id="2ea96-194">Velg **Tekst\DateTime** i treet.</span><span class="sxs-lookup"><span data-stu-id="2ea96-194">In the tree, select **Text\DateTime**.</span></span>
-4. <span data-ttu-id="2ea96-195">Skriv inn **åååå-MM-dd** i **Format**-feltet.</span><span class="sxs-lookup"><span data-stu-id="2ea96-195">In the **Format** field, type **yyyy-MM-dd**.</span></span>
-5. <span data-ttu-id="2ea96-196">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-196">Click **OK**.</span></span>
-6. <span data-ttu-id="2ea96-197">Velg **Xml\Melding\Betalinger\Vare\TransDate** i treet.</span><span class="sxs-lookup"><span data-stu-id="2ea96-197">In the tree, select **Xml\Message\Payments\Item\TransDate**.</span></span>
-7. <span data-ttu-id="2ea96-198">Klikk på **Legg til dato/klokkeslett**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-198">Click **Add DateTime**.</span></span>
-8. <span data-ttu-id="2ea96-199">Skriv inn **åååå-MM-dd** i **Format**-feltet.</span><span class="sxs-lookup"><span data-stu-id="2ea96-199">In the **Format** field, type **yyyy-MM-dd**.</span></span>
-9. <span data-ttu-id="2ea96-200">Velg **Dato** i feltet **Dato/klokkeslett**-type.</span><span class="sxs-lookup"><span data-stu-id="2ea96-200">In the **DateTime** type field, select **Date**.</span></span>
-10. <span data-ttu-id="2ea96-201">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-201">Click **OK**.</span></span>
-11. <span data-ttu-id="2ea96-202">Velg **Xml\Melding\MessageId** i treet.</span><span class="sxs-lookup"><span data-stu-id="2ea96-202">In the tree, select **Xml\Message\MessageId**.</span></span>
-12. <span data-ttu-id="2ea96-203">Klikk på **Legg til** for å åpne nedtrekksdialogen.</span><span class="sxs-lookup"><span data-stu-id="2ea96-203">Click **Add** to open the drop dialog.</span></span>
-13. <span data-ttu-id="2ea96-204">Velg **Tekst\Streng** i treet.</span><span class="sxs-lookup"><span data-stu-id="2ea96-204">In the tree, select **Text\String**.</span></span>
-14. <span data-ttu-id="2ea96-205">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-205">Click **OK**.</span></span>
-15. <span data-ttu-id="2ea96-206">Velg **Xml\Melding\Betalinger\Vare\Leverandør\Navn** i treet.</span><span class="sxs-lookup"><span data-stu-id="2ea96-206">In the tree, select **Xml\Message\Payments\Item\Vendor\Name**.</span></span>
-16. <span data-ttu-id="2ea96-207">Klikk på **Legg til streng**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-207">Click **Add String**.</span></span>
-17. <span data-ttu-id="2ea96-208">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-208">Click **OK**.</span></span>
-18. <span data-ttu-id="2ea96-209">Velg **Xml\Melding\Betalinger\Vare\Leverandør\Bank\RoutingNumber** i treet.</span><span class="sxs-lookup"><span data-stu-id="2ea96-209">In the tree, select **Xml\Message\Payments\Item\Vendor\Bank\RoutingNumber**.</span></span>
-19. <span data-ttu-id="2ea96-210">Klikk på **Legg til streng**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-210">Click **Add String**.</span></span>
-20. <span data-ttu-id="2ea96-211">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-211">Click **OK**.</span></span>
-21. <span data-ttu-id="2ea96-212">Velg **Xml\Melding\Betalinger\Vare\Leverandør\Bank\AccountNumber** i treet.</span><span class="sxs-lookup"><span data-stu-id="2ea96-212">In the tree, select **Xml\Message\Payments\Item\Vendor\Bank\AccountNumber**.</span></span>
-22. <span data-ttu-id="2ea96-213">Klikk på **Legg til streng**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-213">Click **Add String**.</span></span>
-23. <span data-ttu-id="2ea96-214">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-214">Click **OK**.</span></span>
-24. <span data-ttu-id="2ea96-215">Velg **Xml\Melding\Betalinger\Vare\Betaler\Navn** i treet.</span><span class="sxs-lookup"><span data-stu-id="2ea96-215">In the tree, select **Xml\Message\Payments\Item\Payer\Name**.</span></span>
-25. <span data-ttu-id="2ea96-216">Klikk på **Legg til streng**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-216">Click **Add String**.</span></span>
-26. <span data-ttu-id="2ea96-217">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-217">Click **OK**.</span></span>
-27. <span data-ttu-id="2ea96-218">Velg **Xml\Melding\Betalinger\Vare\Betaler\Bank\RoutingNumber** i treet.</span><span class="sxs-lookup"><span data-stu-id="2ea96-218">In the tree, select **Xml\Message\Payments\Item\Payer\Bank\RoutingNumber**.</span></span>
-28. <span data-ttu-id="2ea96-219">Klikk på **Legg til streng**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-219">Click **Add String**.</span></span>
-29. <span data-ttu-id="2ea96-220">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-220">Click **OK**.</span></span>
-30. <span data-ttu-id="2ea96-221">Velg **Xml\Melding\Betalinger\Vare\Betaler\Bank\AccountNumber** i treet.</span><span class="sxs-lookup"><span data-stu-id="2ea96-221">In the tree, select **Xml\Message\Payments\Item\Payer\Bank\AccountNumber**.</span></span>
-31. <span data-ttu-id="2ea96-222">Klikk på **Legg til streng**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-222">Click **Add String**.</span></span>
-32. <span data-ttu-id="2ea96-223">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-223">Click **OK**.</span></span>
-33. <span data-ttu-id="2ea96-224">Velg **Xml\Melding\Betalinger\Vare\Valuta** i treet.</span><span class="sxs-lookup"><span data-stu-id="2ea96-224">In the tree, select **Xml\Message\Payments\Item\Currency**.</span></span>
-34. <span data-ttu-id="2ea96-225">Klikk på **Legg til streng**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-225">Click **Add String**.</span></span>
-35. <span data-ttu-id="2ea96-226">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-226">Click **OK**.</span></span>
-36. <span data-ttu-id="2ea96-227">Velg **Xml\Melding\Betalinger\Vare\Beskrivelse** i treet.</span><span class="sxs-lookup"><span data-stu-id="2ea96-227">In the tree, select **Xml\Message\Payments\Item\Description**.</span></span>
-37. <span data-ttu-id="2ea96-228">Klikk på **Legg til streng**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-228">Click **Add String**.</span></span>
-38. <span data-ttu-id="2ea96-229">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-229">Click **OK**.</span></span>
-39. <span data-ttu-id="2ea96-230">Velg **Xml\Melding\Betalinger\Vare\Beløp** i treet.</span><span class="sxs-lookup"><span data-stu-id="2ea96-230">In the tree, select **Xml\Message\Payments\Item\Amount**.</span></span>
-40. <span data-ttu-id="2ea96-231">Klikk på **Legg til streng**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-231">Click **Add String**.</span></span>
-41. <span data-ttu-id="2ea96-232">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-232">Click **OK**.</span></span>
-42. <span data-ttu-id="2ea96-233">Klikk på **Lagre**.</span><span class="sxs-lookup"><span data-stu-id="2ea96-233">Click **Save**.</span></span>
-43. <span data-ttu-id="2ea96-234">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="2ea96-234">Close the page.</span></span>
+## <a name="prepare-format-components-for-mapping-to-data-model-elements"></a><span data-ttu-id="c40f5-191">Klargjøre formatkomponenter for tilordning til datamodellelementer</span><span class="sxs-lookup"><span data-stu-id="c40f5-191">Prepare format components for mapping to data model elements</span></span>
+1. <span data-ttu-id="c40f5-192">Velg **Xml\Melding\ProcessingDate** i treet.</span><span class="sxs-lookup"><span data-stu-id="c40f5-192">In the tree, select **Xml\Message\ProcessingDate**.</span></span>
+2. <span data-ttu-id="c40f5-193">Klikk på **Legg til** for å åpne nedtrekksdialogen.</span><span class="sxs-lookup"><span data-stu-id="c40f5-193">Click **Add** to open the drop dialog.</span></span>
+3. <span data-ttu-id="c40f5-194">Velg **Tekst\DateTime** i treet.</span><span class="sxs-lookup"><span data-stu-id="c40f5-194">In the tree, select **Text\DateTime**.</span></span>
+4. <span data-ttu-id="c40f5-195">Skriv inn **åååå-MM-dd** i **Format**-feltet.</span><span class="sxs-lookup"><span data-stu-id="c40f5-195">In the **Format** field, type **yyyy-MM-dd**.</span></span>
+5. <span data-ttu-id="c40f5-196">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-196">Click **OK**.</span></span>
+6. <span data-ttu-id="c40f5-197">Velg **Xml\Melding\Betalinger\Vare\TransDate** i treet.</span><span class="sxs-lookup"><span data-stu-id="c40f5-197">In the tree, select **Xml\Message\Payments\Item\TransDate**.</span></span>
+7. <span data-ttu-id="c40f5-198">Klikk på **Legg til dato/klokkeslett**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-198">Click **Add DateTime**.</span></span>
+8. <span data-ttu-id="c40f5-199">Skriv inn **åååå-MM-dd** i **Format**-feltet.</span><span class="sxs-lookup"><span data-stu-id="c40f5-199">In the **Format** field, type **yyyy-MM-dd**.</span></span>
+9. <span data-ttu-id="c40f5-200">Velg **Dato** i feltet **Dato/klokkeslett**-type.</span><span class="sxs-lookup"><span data-stu-id="c40f5-200">In the **DateTime** type field, select **Date**.</span></span>
+10. <span data-ttu-id="c40f5-201">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-201">Click **OK**.</span></span>
+11. <span data-ttu-id="c40f5-202">Velg **Xml\Melding\MessageId** i treet.</span><span class="sxs-lookup"><span data-stu-id="c40f5-202">In the tree, select **Xml\Message\MessageId**.</span></span>
+12. <span data-ttu-id="c40f5-203">Klikk på **Legg til** for å åpne nedtrekksdialogen.</span><span class="sxs-lookup"><span data-stu-id="c40f5-203">Click **Add** to open the drop dialog.</span></span>
+13. <span data-ttu-id="c40f5-204">Velg **Tekst\Streng** i treet.</span><span class="sxs-lookup"><span data-stu-id="c40f5-204">In the tree, select **Text\String**.</span></span>
+14. <span data-ttu-id="c40f5-205">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-205">Click **OK**.</span></span>
+15. <span data-ttu-id="c40f5-206">Velg **Xml\Melding\Betalinger\Vare\Leverandør\Navn** i treet.</span><span class="sxs-lookup"><span data-stu-id="c40f5-206">In the tree, select **Xml\Message\Payments\Item\Vendor\Name**.</span></span>
+16. <span data-ttu-id="c40f5-207">Klikk på **Legg til streng**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-207">Click **Add String**.</span></span>
+17. <span data-ttu-id="c40f5-208">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-208">Click **OK**.</span></span>
+18. <span data-ttu-id="c40f5-209">Velg **Xml\Melding\Betalinger\Vare\Leverandør\Bank\RoutingNumber** i treet.</span><span class="sxs-lookup"><span data-stu-id="c40f5-209">In the tree, select **Xml\Message\Payments\Item\Vendor\Bank\RoutingNumber**.</span></span>
+19. <span data-ttu-id="c40f5-210">Klikk på **Legg til streng**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-210">Click **Add String**.</span></span>
+20. <span data-ttu-id="c40f5-211">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-211">Click **OK**.</span></span>
+21. <span data-ttu-id="c40f5-212">Velg **Xml\Melding\Betalinger\Vare\Leverandør\Bank\AccountNumber** i treet.</span><span class="sxs-lookup"><span data-stu-id="c40f5-212">In the tree, select **Xml\Message\Payments\Item\Vendor\Bank\AccountNumber**.</span></span>
+22. <span data-ttu-id="c40f5-213">Klikk på **Legg til streng**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-213">Click **Add String**.</span></span>
+23. <span data-ttu-id="c40f5-214">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-214">Click **OK**.</span></span>
+24. <span data-ttu-id="c40f5-215">Velg **Xml\Melding\Betalinger\Vare\Betaler\Navn** i treet.</span><span class="sxs-lookup"><span data-stu-id="c40f5-215">In the tree, select **Xml\Message\Payments\Item\Payer\Name**.</span></span>
+25. <span data-ttu-id="c40f5-216">Klikk på **Legg til streng**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-216">Click **Add String**.</span></span>
+26. <span data-ttu-id="c40f5-217">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-217">Click **OK**.</span></span>
+27. <span data-ttu-id="c40f5-218">Velg **Xml\Melding\Betalinger\Vare\Betaler\Bank\RoutingNumber** i treet.</span><span class="sxs-lookup"><span data-stu-id="c40f5-218">In the tree, select **Xml\Message\Payments\Item\Payer\Bank\RoutingNumber**.</span></span>
+28. <span data-ttu-id="c40f5-219">Klikk på **Legg til streng**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-219">Click **Add String**.</span></span>
+29. <span data-ttu-id="c40f5-220">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-220">Click **OK**.</span></span>
+30. <span data-ttu-id="c40f5-221">Velg **Xml\Melding\Betalinger\Vare\Betaler\Bank\AccountNumber** i treet.</span><span class="sxs-lookup"><span data-stu-id="c40f5-221">In the tree, select **Xml\Message\Payments\Item\Payer\Bank\AccountNumber**.</span></span>
+31. <span data-ttu-id="c40f5-222">Klikk på **Legg til streng**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-222">Click **Add String**.</span></span>
+32. <span data-ttu-id="c40f5-223">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-223">Click **OK**.</span></span>
+33. <span data-ttu-id="c40f5-224">Velg **Xml\Melding\Betalinger\Vare\Valuta** i treet.</span><span class="sxs-lookup"><span data-stu-id="c40f5-224">In the tree, select **Xml\Message\Payments\Item\Currency**.</span></span>
+34. <span data-ttu-id="c40f5-225">Klikk på **Legg til streng**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-225">Click **Add String**.</span></span>
+35. <span data-ttu-id="c40f5-226">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-226">Click **OK**.</span></span>
+36. <span data-ttu-id="c40f5-227">Velg **Xml\Melding\Betalinger\Vare\Beskrivelse** i treet.</span><span class="sxs-lookup"><span data-stu-id="c40f5-227">In the tree, select **Xml\Message\Payments\Item\Description**.</span></span>
+37. <span data-ttu-id="c40f5-228">Klikk på **Legg til streng**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-228">Click **Add String**.</span></span>
+38. <span data-ttu-id="c40f5-229">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-229">Click **OK**.</span></span>
+39. <span data-ttu-id="c40f5-230">Velg **Xml\Melding\Betalinger\Vare\Beløp** i treet.</span><span class="sxs-lookup"><span data-stu-id="c40f5-230">In the tree, select **Xml\Message\Payments\Item\Amount**.</span></span>
+40. <span data-ttu-id="c40f5-231">Klikk på **Legg til streng**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-231">Click **Add String**.</span></span>
+41. <span data-ttu-id="c40f5-232">Klikk på **OK**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-232">Click **OK**.</span></span>
+42. <span data-ttu-id="c40f5-233">Klikk på **Lagre**.</span><span class="sxs-lookup"><span data-stu-id="c40f5-233">Click **Save**.</span></span>
+43. <span data-ttu-id="c40f5-234">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="c40f5-234">Close the page.</span></span>
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

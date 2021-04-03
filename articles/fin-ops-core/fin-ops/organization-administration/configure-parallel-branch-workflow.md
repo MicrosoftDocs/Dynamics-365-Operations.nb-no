@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -16,37 +15,40 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9d23e981526fd17a3cb856fffcc39e76cf24da68
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 37c177e8c4c4e40bd81287430d9ee7598cf917d8
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797707"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5566997"
 ---
-# <a name="configure-parallel-branches-in-a-workflow"></a><span data-ttu-id="4c7b9-103">Konfigurere parallelle avdelinger i en arbeidsflyt</span><span class="sxs-lookup"><span data-stu-id="4c7b9-103">Configure parallel branches in a workflow</span></span>
+# <a name="configure-parallel-branches-in-a-workflow"></a><span data-ttu-id="a1fb3-103">Konfigurere parallelle avdelinger i en arbeidsflyt</span><span class="sxs-lookup"><span data-stu-id="a1fb3-103">Configure parallel branches in a workflow</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="4c7b9-104">Hvis du vil konfigurere en parallell avdeling, kan du fullføre fremgangsmåtene nedenfor i redigeringsprogrammet for arbeidsflyt.</span><span class="sxs-lookup"><span data-stu-id="4c7b9-104">To configure a parallel branch, complete the following procedures in the workflow editor.</span></span>
+<span data-ttu-id="a1fb3-104">Hvis du vil konfigurere en parallell avdeling, kan du fullføre fremgangsmåtene nedenfor i redigeringsprogrammet for arbeidsflyt.</span><span class="sxs-lookup"><span data-stu-id="a1fb3-104">To configure a parallel branch, complete the following procedures in the workflow editor.</span></span>
 
-<span data-ttu-id="4c7b9-105">En parallell avdeling er egentlig en arbeidsflyt som kjøres i konteksten til en overordnet arbeidsflyt.</span><span class="sxs-lookup"><span data-stu-id="4c7b9-105">A parallel branch is essentially a workflow that runs in the context of a parent workflow.</span></span>
+<span data-ttu-id="a1fb3-105">En parallell avdeling er egentlig en arbeidsflyt som kjøres i konteksten til en overordnet arbeidsflyt.</span><span class="sxs-lookup"><span data-stu-id="a1fb3-105">A parallel branch is essentially a workflow that runs in the context of a parent workflow.</span></span>
 
-## <a name="name-a-branch"></a><span data-ttu-id="4c7b9-106">Navn på en avdeling</span><span class="sxs-lookup"><span data-stu-id="4c7b9-106">Name a branch</span></span>
+## <a name="name-a-branch"></a><span data-ttu-id="a1fb3-106">Navn på en avdeling</span><span class="sxs-lookup"><span data-stu-id="a1fb3-106">Name a branch</span></span>
 
-<span data-ttu-id="4c7b9-107">Følg denne fremgangsmåten for å angi et navn for en parallell avdeling.</span><span class="sxs-lookup"><span data-stu-id="4c7b9-107">Follow these steps to enter a name for a parallel branch.</span></span>
+<span data-ttu-id="a1fb3-107">Følg denne fremgangsmåten for å angi et navn for en parallell avdeling.</span><span class="sxs-lookup"><span data-stu-id="a1fb3-107">Follow these steps to enter a name for a parallel branch.</span></span>
 
-1. <span data-ttu-id="4c7b9-108">Høyreklikk den parallelle avdelingen, og klikk deretter **Egenskaper**.</span><span class="sxs-lookup"><span data-stu-id="4c7b9-108">Right-click the parallel branch, and then click **Properties**.</span></span> <span data-ttu-id="4c7b9-109">**Egenskaper**-skjemaet vises.</span><span class="sxs-lookup"><span data-stu-id="4c7b9-109">The **Properties** form is displayed.</span></span>
-2. <span data-ttu-id="4c7b9-110">Klikk på **Grunnleggende innstillinger** i ruten til venstre.</span><span class="sxs-lookup"><span data-stu-id="4c7b9-110">In the left pane, click **Basic Settings**.</span></span>
-3. <span data-ttu-id="4c7b9-111">I feltet **Navn** angir du et unikt navn på den parallelle avdelingen.</span><span class="sxs-lookup"><span data-stu-id="4c7b9-111">In the **Name** field, enter a unique name for the parallel branch.</span></span>
-4. <span data-ttu-id="4c7b9-112">Klikk på **Lukk**.</span><span class="sxs-lookup"><span data-stu-id="4c7b9-112">Click **Close**.</span></span>
+1. <span data-ttu-id="a1fb3-108">Høyreklikk den parallelle avdelingen, og klikk deretter **Egenskaper**.</span><span class="sxs-lookup"><span data-stu-id="a1fb3-108">Right-click the parallel branch, and then click **Properties**.</span></span> <span data-ttu-id="a1fb3-109">**Egenskaper**-skjemaet vises.</span><span class="sxs-lookup"><span data-stu-id="a1fb3-109">The **Properties** form is displayed.</span></span>
+2. <span data-ttu-id="a1fb3-110">Klikk på **Grunnleggende innstillinger** i ruten til venstre.</span><span class="sxs-lookup"><span data-stu-id="a1fb3-110">In the left pane, click **Basic Settings**.</span></span>
+3. <span data-ttu-id="a1fb3-111">I feltet **Navn** angir du et unikt navn på den parallelle avdelingen.</span><span class="sxs-lookup"><span data-stu-id="a1fb3-111">In the **Name** field, enter a unique name for the parallel branch.</span></span>
+4. <span data-ttu-id="a1fb3-112">Klikk på **Lukk**.</span><span class="sxs-lookup"><span data-stu-id="a1fb3-112">Click **Close**.</span></span>
 
-## <a name="design-and-configure-the-elements-of-a-branch"></a><span data-ttu-id="4c7b9-113">Utforme og konfigurere elementene for en avdeling</span><span class="sxs-lookup"><span data-stu-id="4c7b9-113">Design and configure the elements of a branch</span></span>
+## <a name="design-and-configure-the-elements-of-a-branch"></a><span data-ttu-id="a1fb3-113">Utforme og konfigurere elementene for en avdeling</span><span class="sxs-lookup"><span data-stu-id="a1fb3-113">Design and configure the elements of a branch</span></span>
 
-<span data-ttu-id="4c7b9-114">Følg denne fremgangsmåten for å utforme og konfigurere elementene for en parallell avdeling.</span><span class="sxs-lookup"><span data-stu-id="4c7b9-114">Follow these steps to design and configure the elements of a parallel branch.</span></span>
+<span data-ttu-id="a1fb3-114">Følg denne fremgangsmåten for å utforme og konfigurere elementene for en parallell avdeling.</span><span class="sxs-lookup"><span data-stu-id="a1fb3-114">Follow these steps to design and configure the elements of a parallel branch.</span></span>
 
-1. <span data-ttu-id="4c7b9-115">Dobbeltklikk den parallelle avdelingen.</span><span class="sxs-lookup"><span data-stu-id="4c7b9-115">Double-click the parallel branch.</span></span>
-2. <span data-ttu-id="4c7b9-116">Dra arbeidsflytelementer til arbeidsområdet, og konfigurer deretter elementene, akkurat som når du skal opprette en ny arbeidsflyt.</span><span class="sxs-lookup"><span data-stu-id="4c7b9-116">Drag workflow elements onto the canvas, and then configure the elements, just as you would to create any other workflow.</span></span> <span data-ttu-id="4c7b9-117">Hvis du vil ha mer informasjon, kan du se [Oversikt over å opprette arbeidsflyter](create-workflow.md).</span><span class="sxs-lookup"><span data-stu-id="4c7b9-117">For more information, see [Create workflows overview](create-workflow.md).</span></span>
+1. <span data-ttu-id="a1fb3-115">Dobbeltklikk den parallelle avdelingen.</span><span class="sxs-lookup"><span data-stu-id="a1fb3-115">Double-click the parallel branch.</span></span>
+2. <span data-ttu-id="a1fb3-116">Dra arbeidsflytelementer til arbeidsområdet, og konfigurer deretter elementene, akkurat som når du skal opprette en ny arbeidsflyt.</span><span class="sxs-lookup"><span data-stu-id="a1fb3-116">Drag workflow elements onto the canvas, and then configure the elements, just as you would to create any other workflow.</span></span> <span data-ttu-id="a1fb3-117">Hvis du vil ha mer informasjon, kan du se [Oversikt over å opprette arbeidsflyter](create-workflow.md).</span><span class="sxs-lookup"><span data-stu-id="a1fb3-117">For more information, see [Create workflows overview](create-workflow.md).</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="4c7b9-118">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="4c7b9-118">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="a1fb3-118">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="a1fb3-118">Additional resources</span></span>
 
-[<span data-ttu-id="4c7b9-119">Oversikt over å opprette arbeidsflyter</span><span class="sxs-lookup"><span data-stu-id="4c7b9-119">Create workflows overview</span></span>](create-workflow.md)
+[<span data-ttu-id="a1fb3-119">Oversikt over å opprette arbeidsflyter</span><span class="sxs-lookup"><span data-stu-id="a1fb3-119">Create workflows overview</span></span>](create-workflow.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
