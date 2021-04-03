@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 518b70223b2f6bf86809ccce77a2cf67c30e4168
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: bcfca0ddd52245ae2206f15ef9fa979675fca825
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4977544"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470697"
 ---
 # <a name="set-up-disposition-codes"></a>Definer disposisjonskoder 
 
@@ -33,15 +33,15 @@ Du kan definere disposisjonskoder for å angi hvordan en vare som returneres av 
 
 Du kan også definere en årsakskode som forklarer hvorfor en vare ble returnert. Hvis du vil ha mer informasjon om årsakskoder, kan du se [Definere returårsakskoder](set-up-return-reason-code.md).
 
-1.  Klikk på **Salg og markedsføring** \> **Oppsett** \> **Salgsordrer** \> **Returer** \> **Disposisjonskoder**.
+1.  Gå til **Salg og markedsføring** \> **Oppsett** \> **Salgsordrer** \> **Returer** \> **Disposisjonskoder**.
 
-2.  Klikk på **Ny** eller trykk CTRL+N for å opprette en ny disposisjonskode.
+2.  Velg **Ny** for å opprette en ny disposisjonskode.
 
 3.  Angi et unikt beskrivende navn, velg en handling og angi en beskrivelse for disposisjonskoden.
 
-4.  Hvis du vil knytte eventuelle kundegebyr til denne disposisjonskoden, klikker du **Gebyrer**-knappen for å åpne skjemaet **Definer tillegg**.
+4.  Hvis du vil knytte eventuelle kundegebyr til denne disposisjonskoden, velger du knappen **Gebyrer** for å åpne skjemaet **Definer tillegg**.
 
-5.  Hvis du vil definere eksterne koder som skal samsvare med firmaets egne disposisjonskoder, klikker du knappen **Eksterne koder** for å åpne skjemaet **Eksterne koder**.
+5.  Hvis du vil definere eksterne koder som skal samsvare med firmaets egne disposisjonskoder, velger du knappen **Eksterne koder** for å åpne skjemaet **Eksterne koder**.
 
 ## <a name="see-also"></a>Se også
 
@@ -56,3 +56,6 @@ Du kan også definere en årsakskode som forklarer hvorfor en vare ble returnert
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

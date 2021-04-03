@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 083ceca9605ad044c172ba7aa23739d170f8c301
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 489add5befe3660ad49e238b659bc8adbe1418a4
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5019310"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5263764"
 ---
 # <a name="add-fault-to-work-order"></a>Legge til feil i arbeidsordre
 
@@ -79,3 +79,6 @@ Fra listesiden **Alle aktiva** kan du skrive ut en rapport om aktivumfeil som vi
 >[!NOTE]
 >For å skrive ut en feilrapport for flere aktiva eller aktivatyper, velg **Aktivastyring** > **Rapporter** > **Aktiva** > **Aktivafeil**.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

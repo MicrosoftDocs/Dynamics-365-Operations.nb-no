@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: dee5429c31bfc872afedfa76ced89633b4b72c96
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d5cf6826aa44e27fae989c73d87d2d3687e0cd0c
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5005383"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5262291"
 ---
 # <a name="engineering-change-management-parameters"></a>Parametere for styring av teknisk endring
 
@@ -56,3 +56,6 @@ Følgende tabell beskriver feltene som er tilgjengelige i fanen **Behandling av 
 | Regel for alvorsgrad | Velg hvordan alvorsgraden for en ordre om teknisk endring skal etableres. Velg *Manuell* hvis brukeren forventes å angi en verdi i feltet **Alvorsgrad**. Velg *Beregn* for å få systemet til å beregne verdien i feltet **Alvorsgrad** når du velger **Beregn alvorsgrad** i handlingsruten i ordren om teknisk endring. I dette tilfellet vil systemet bruke reglene for alvorsgrad som er definert på siden **Regelsett for alvorsgrad**. Velg *Beregn automatisk* hvis du vil at verdien i feltet **Alvorsgrad** beregnes og fylles ut automatisk i henhold til regelsettene for alvorsgrad. |
 | Frigi berørte produkter på nytt | Dette feltet brukes når du frigir produkter på nytt via en ordre om teknisk endring. Du kan velge om alle produkter eller bare de berørte produktene skal foreslås i dialogboksen **Frigivelser**. |
 | Stykklistenivåer som skal frigis | Dybden på stykklistenivået som skal frigis. Hvis stykklisten har flere nivåer (det vil si hvis den er dypere) enn verdien som er angitt her, vil bare nivåene opp til og med den angitte verdien bli frigjort. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

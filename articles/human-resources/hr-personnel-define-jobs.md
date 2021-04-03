@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2d7a469b7f09c6cf3a051991698a00317dc125d2
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 56f7d2129724d8f75ac6dcfc0d1442f757de8957
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5130275"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5467753"
 ---
 # <a name="define-new-jobs"></a>Definere nye jobber
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
@@ -71,3 +73,6 @@ Denne oppgaven fokuserer på å opprette en ny jobb. Den vil bli fullført ved h
 33. Aktiver/deaktiver utvidelsen av delen Utdanning.
 34. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

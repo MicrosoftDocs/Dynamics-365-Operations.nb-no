@@ -18,12 +18,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3ba83113b03ef122090da0c356c85b3f1b6f62c7
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 31096aa9c97f0307c7004d1af1e424dde1dc65cd
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4978019"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5264072"
 ---
 # <a name="inventory-locations"></a>Lagerlokasjoner
 
@@ -65,3 +65,6 @@ Det er mulig å kopiere lokasjoner fra ett lager til et annet og opprette lokasj
 --------
 
 [Opprette et nytt lageroppsett](tasks/create-new-warehouse-layout.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

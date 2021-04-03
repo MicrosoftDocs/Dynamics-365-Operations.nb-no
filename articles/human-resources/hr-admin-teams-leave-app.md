@@ -3,7 +3,7 @@ title: Human Resources-app i Teams
 description: Dette emnet gir en innføring i Microsoft Dynamics 365 Human Resources-appen i Microsoft Teams.
 author: andreabichsel
 manager: tfehr
-ms.date: 09/30/2020
+ms.date: 02/23/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,20 +18,20 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ba520f873de5b20111f9134e87281bcdf4025785
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 86abe32f76f2cc21c773727be07a44be49cdbac7
+ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113709"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5487879"
 ---
 # <a name="human-resources-app-in-teams"></a>Human Resources-app i Teams
 
-[!include [banner](includes/preview-feature.md)]
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Med Microsoft Dynamics 365 Human Resources-appen i Microsoft Teams kan ansatte raskt be om fridager og vise saldoinformasjon for fridager i Microsoft Teams. Ansatte kan samhandle med en robot for å be om informasjon. Kateogrien **Fridager** gir mer detaljert informasjon. I tillegg kan de sende personinformasjon om kommende fritid i grupper og samtaler utenfor Human Resources-appen.
 
-![Robot for permisjonsapp i Human Resources Teams](./media/hr-admin-teams-leave-app-bot.png)
+![Robot for permisjonsapp i Human Resources Teams](./media/hr-teams-leave-app-bot.png)
 
 ![Kategorien Fridager i permisjonsapp for Human Resources Teams](./media/hr-teams-leave-app-timeoff-tab.png)
 
@@ -39,16 +39,18 @@ Med Microsoft Dynamics 365 Human Resources-appen i Microsoft Teams kan ansatte r
 
 ## <a name="install-and-setup"></a>Installere og konfigurere
 
-Du kan finne Human Resources-appen i Teams-butikken. Hvis du vil ha informasjon om hvordan du installerer Teams-appen, kan du se [Behandle permisjonsforespørsler i Teams](hr-teams-leave-app.md).
+Du finner Dynamics 365 Human Resources-appen i Teams-butikken. Hvis du vil ha informasjon om hvordan du installerer Teams-appen, kan du se [Behandle permisjonsforespørsler i Teams](hr-teams-leave-app.md).
 
 Hvis du vil ha informasjon om hvordan du administrerer apptillatelser i Teams, kan du se [Behandle policyer for apptillatelse i Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-app-permission-policies).
 
+Hvis du vil at brukerne skal vise permisjons- og fraværskalenderen i appen, må du aktivere **Permisjons- og fraværskalender i Teams** i Funksjonsstyring. Hvis du vil ha mer informasjon om hvordan du aktiverer funksjoner, kan du se [Behandle funksjoner](hr-admin-manage-features.md).
+
 ## <a name="enable-notifications-for-the-human-resources-app-in-teams"></a>Aktiver varslinger for Human Resources-appen i Teams
 
-Hvis du vil at brukere skal motta permisjonsforespørselsvarsler i Teams-appen, må du aktivere varslinger i Human Resources.
+Hvis du vil at brukere skal motta permisjonsforespørselsvarsler i Teams-appen, må du aktivere varslinger i Dynamics 365 Human Resources.
 
 >[!NOTE]
->Det er bare brukere som er logget på Teams og som bruker Teams-appen i Human Resources, som mottar varslinger.
+>Det er bare brukere som er logget på Teams og som bruker Teams-appen i Dynamics 365 Human Resources, som mottar varslinger.
 
 1. Velg **Systemadministrasjon** i Human Resources.
 
@@ -66,7 +68,7 @@ Hvis du vil at brukere skal motta permisjonsforespørselsvarsler i Teams-appen, 
 
 ### <a name="turn-teams-notifications-on-or-off-for-individual-users"></a>Aktivere eller deaktivere Teams-varslinger for individuelle brukere
 
-Når du har aktivert varsler for Teams-appen i Human Resources, kan du aktivere eller deaktivere varslinger for individuelle brukere.
+Når du har aktivert varsler for Teams-appen i Dynamics 365 Human Resources, kan du aktivere eller deaktivere varslinger for individuelle brukere.
 
 1. Velg **Systemadministrasjon** i Human Resources.
 
@@ -82,9 +84,28 @@ Når du har aktivert varsler for Teams-appen i Human Resources, kan du aktivere 
 
 6. Velg **Lagre**.
 
-## <a name="known-issues"></a>Kjente problemer
+## <a name="supported-languages"></a>Språk som støttes
 
-| Problem | Status |
+Appen Dynamics 365 Human Resources i Teams støtter følgende språk:
+
+| ID for nasjonal innstilling | Språk |
+| --- | --- |
+| de-DE | Tysk (Tyskland) |
+| es-ES | Spansk (Spania) |
+| es-MX | Spansk (Mexico) |
+| fr-CA | Fransk (Canada) |
+| fr-FR | Fransk (Frankrike) |
+| it-IT | Italiensk (Italia) |
+| nl-NL | Nederlandsk (Nederland) |
+| pt-BR | Portugisisk (Brasil) |
+| tr-TR | Tyrkisk (Tyrkia) |
+| zh-CN | Kinesisk (forenklet) |
+
+## <a name="notes"></a>Notater
+
+Følgende arbeidselementer er planlagt for fremtidige versjoner:
+
+| Arbeidselement | Status |
 | --- | --- |
 | Balansen er feil når du sender inn fridager for en fremtidig dato. | Prognoser er ennå ikke tilgjengelige. Saldoen vises for den gjeldende datoen. |
 | Kan ikke avbryte en forespørsel med statusen **Til vurdering**. | Denne funksjonaliteten støttes ikke for øyeblikket og blir lagt til i en fremtidig versjon. |
@@ -100,7 +121,7 @@ Hvis en bruker kontakter deg fordi vedkommende ikke kan logge på appen, må du 
 
 ### <a name="error-when-approving-leave-requests-in-the-human-resources-app-in-teams"></a>Feil under godkjenning av permisjonsforespørsler i Human Resources-appen i Teams
 
-Hvis en bruker får en feilmelding under forsøk på å godkjenne permisjonsforespørsler i Teams-appen, kan du utføre følgende feilsøkingstrinn:
+Hvis en bruker får en feilmelding under forsøk på å godkjenne permisjonsforespørsler i Teams-appen, kan du prøve følgende feilsøkingstrinn:
 
 1. Kontroller at Teams-kontoen er den samme som de bruker for å få tilgang til Human Resources.
 
@@ -134,3 +155,6 @@ Hvis du vil begrense tilgangen til Human Resources-appen i Microsoft Teams for o
 [Hjelpesenter for Microsoft Teams](https://support.office.com/teams)</br>
 [Behandle permisjonsforespørsler i Teams](hr-teams-leave-app.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

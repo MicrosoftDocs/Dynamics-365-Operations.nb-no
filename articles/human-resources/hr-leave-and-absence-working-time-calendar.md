@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ccf7901ebbea655b7f795a48944c6f03f9cf210a
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: ecabac54134629074ac01944963a037c2cdc63c9
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115108"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5467175"
 ---
 # <a name="create-a-working-time-calendar"></a>Opprette en driftstidskalender
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 En driftstidskalender i Dynamics 365 Human Resources viser antall dager og timer som ansatte arbeider i organisasjonen. Når en ansatt sender en avspaseringsforespørsel, trenger de ikke å bekymre seg for helligdager og lukking.
 
@@ -75,3 +77,6 @@ Hvis du har aktivert forhåndsversjonsfunksjonen for korreksjon for helligdager 
 
 - [Oversikt over permisjon og fravær](hr-leave-and-absence-overview.md)
 - [Konfigurere permisjons- og fraværstyper](hr-leave-and-absence-types.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

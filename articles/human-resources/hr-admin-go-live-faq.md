@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c5041d515b261bb3e4b14885e0ec0ce788edf729
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: d667d94983d5c8f8e6140259922396d4299a15e3
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113687"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5467605"
 ---
 # <a name="go-live-faq"></a>Vanlige spørsmål om aktivering 
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -90,7 +92,7 @@ Nr. Du kan imidlertid sende en tjenesteforespørsel om databaseoppdatering for �
 
 Fordi en kopieringsfunksjon ikke er tilgjengelig for å flytte ditt miljø fra et sandkasse- til et produksjonsmiljø, må du bruke datapakker til å flytte data til produksjonsmiljøet.  
 
-Vi anbefaler at du vedlikeholder en klar liste over enheter som er konfigurert i sandkassen gjennom hele prosjektet. Deretter tester du prosessen med overgang og migrering av datapakker som er nødvendig for aktivering. Du må manuelt flytte datapakker til produksjonsmiljøet når du er klar for aktivering. 
+Det anbefales at du vedlikeholder en klar liste over enheter som er konfigurert i sandkassen gjennom hele prosjektet. Deretter tester du prosessen med overgang og migrering av datapakker som er nødvendig for aktivering. Du må manuelt flytte datapakker til produksjonsmiljøet når du er klar for aktivering. 
 
 ## <a name="what-should-i-do-if-my-production-environment-is-down"></a>Hva bør jeg gjøre hvis produksjonsmiljøet er nede? 
 
@@ -99,3 +101,6 @@ Hvis du vil rapportere en produksjonsnedetid, følger du prosessen som er beskre
  ## <a name="see-also"></a>Se også
 
  [Klargjøre for aktivering](hr-admin-go-live-prepare.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

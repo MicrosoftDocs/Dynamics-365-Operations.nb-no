@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0cd101bfe88ae1acb051ba11a676da66ef6a3db6
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: 50be7631ec303171640b7fa9e6d283a198bd1a52
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115468"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5465012"
 ---
 # <a name="distribute-questionnaires-using-scheduling"></a>Distribuere spørreskjemaer ved hjelp av planlegging
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Med planlegging av spørreskjema kan du planlegge og distribuere spørreskjemaer til flere respondenter. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
 
@@ -55,7 +57,7 @@ Med planlegging av spørreskjema kan du planlegge og distribuere spørreskjemaer
 
 11. I Tekst-feltet skriver du inn brødteksten i e-postmeldingen. Legg merke til at variabelen kan brukes til å erstatte verdier i systemet.
 
-    * Eksempel: Kjære %P%! Logg på Ansattselvbetjening for å fylle ut spørreskjemaet om ansattes helse.  Contoso  
+    * Eksempel: Kjære %P% Logg på Ansattselvbetjening for å fylle ut spørreskjemaet om ansattes helse.  Contoso  
 
 12. Klikk Lagre.
 
@@ -129,3 +131,6 @@ Med planlegging av spørreskjema kan du planlegge og distribuere spørreskjemaer
 2. Klikk Avslutt.
 3. Klikk OK.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

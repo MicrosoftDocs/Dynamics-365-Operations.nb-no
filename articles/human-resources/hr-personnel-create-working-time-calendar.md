@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2fd297d9368472138fbe2db5a2133719cb1a9f18
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: af2675468dcc1f1891d24d988c32115ae57e1d2b
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5130307"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5465468"
 ---
 # <a name="create-calendars-and-generate-working-times"></a>Opprette kalendere og generere arbeidstider
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
@@ -43,3 +45,6 @@ Kalendere beskriver kapasitet og arbeidstid for operasjonsressurser. Denne artik
 12. Velg **OK**.
 13. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: f99bff8846cf95bc25f0396444a3920c48f73b1e
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: 4bf2c6525f245a72811f4f239479be360c0c434c
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115854"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5465660"
 ---
 # <a name="create-variable-compensation-plans"></a>Opprette variable kompensasjonsplaner
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Variabel kompensasjon utgjør en ansatts uregelmessige betaling, for eksempel tillegg eller aksjebonuser. Denne artikkelen beskriver komponentene som må defineres før du kan bruke variabel kompensasjon og registrere ansatte i en variabel kompensasjonsplan.
 
@@ -99,3 +101,6 @@ Du kan bruke **Overstyrer**-fanen til å overstyre bestemte verdier for den ansa
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

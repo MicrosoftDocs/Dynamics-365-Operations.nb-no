@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 01d73d390f72343c7498ccbb99838d38be45a19e
-ms.sourcegitcommit: 33b5c8bc4f9461e290513aa22de1ec1fba3b0742
+ms.openlocfilehash: 4892dc0801a47ab7c219df00b997fa469f56b7fc
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "5126032"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5464700"
 ---
 # <a name="recruiting-request-position"></a>Rekrutteringsforespørselsstilling
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dette emnet beskriver Rekrutteringsforespørselsstilling-enheten for Dynamics 365 Human Resources.
 
@@ -87,3 +89,6 @@ Beskriver stillingen eller stillingene som skal fylles ut for en rekrutteringsfo
 [Innføring i API for søkersporingssystemintegrering](hr-admin-integration-ats-api-introduction.md)<br>
 [Eksempelspørring for rekrutteringsforespørsel](hr-admin-integration-ats-api-recruiting-request-example-query.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

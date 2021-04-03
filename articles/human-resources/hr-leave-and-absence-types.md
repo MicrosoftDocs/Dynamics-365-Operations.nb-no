@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6b21d4d631bcdf603b38212f5f76bb78937d3d3c
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: f1c3ced43b1f5693c5d5466fd97a20beb358fa20
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115082"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5463340"
 ---
 # <a name="configure-leave-and-absence-types"></a>Konfigurere permisjons- og fraværstyper
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Permisjonstyper i Dynamics 365 Human Resources definerer de ulike typene fravær som ansatte kan rapportere. Du kan skreddersy permisjonstyper i henhold til behovene i organisasjonen. Eksempler på permisjonstyper omfatter:
 
@@ -72,8 +74,7 @@ Permisjonstyper i Dynamics 365 Human Resources definerer de ulike typene fravær
    
  3. Angi **Permisjonstypen overføring** som permisjonstype. Når du velger dette alternativet, blir alle overføringssaldoer overført til den angitte permisjonstypen. Permisjonstypen for overføring må også være inkludert i permisjons- og fraværsplanen. 
  
- 4. Definer **Utløpsregler** for permisjonstypen. Når du konfigurerer dette alternativet, kan du velge dager eller måneder som enhet, og angi varigheten for utløpstiden. Du kan også angi gjeldende dato for utløpsregelen. Eventuelle permisjonssaldoer som finnes på utløpstidspunktet, trekkes fra permisjonstypen, og gjenspeiles i permisjonssaldoen. 
- 
+ 4. Definer **Utløpsregler** for permisjonstypen. Når du konfigurerer dette alternativet, kan du velge dager eller måneder som enhet, og angi varigheten for utløpstiden. Du kan også angi gjeldende dato for utløpsregelen. Gyldighetsdatoen brukes til å avgjøre når den satsvise jobben som behandler permisjonsutløpet, eller datoen når regelen trer i kraft. Selve utløpet vil alltid skje på startdatoen for permisjonsplanen når den satsvise jobben er satt til behandling. Startdatoen for planen kan for eksempel være 1.1.2020, men regelen vil ikke bli opprettet før 1.6.2020. Hvis du setter gyldighetsdatoen til 1.6.2020, behandles regelen ved neste års grense, nemlig 1.1.2021. Eventuelle permisjonssaldoer som finnes på utløpstidspunktet, trekkes fra permisjonstypen, og gjenspeiles i permisjonssaldoen. 
  
 ## <a name="see-also"></a>Se også
 
@@ -82,3 +83,6 @@ Permisjonstyper i Dynamics 365 Human Resources definerer de ulike typene fravær
 - [Opprette en arbeidstidskalender](hr-leave-and-absence-working-time-calendar.md)
 - [Suspender permisjon](hr-leave-and-absence-suspend-leave.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

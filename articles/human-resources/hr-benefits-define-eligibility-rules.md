@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: cc80549eaffa72a22dec51829c86d04a763de96a
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 39a9a1c96ae2a12a32b3c5fbc67571bcf983c898
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113673"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5467993"
 ---
 # <a name="define-benefit-eligibility-rules-and-policies"></a>Definere rettighetsregler og policyer for fordel
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dette emnet viser hvordan du kan opprette rettighetsregler og policyer for fordeler og deretter tilordne regler til fordeler.  
 
@@ -67,3 +69,6 @@ Dette emnet viser hvordan du kan opprette rettighetsregler og policyer for forde
 10. Velg **Lagre**.
 11. Lukk skjemaet.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
