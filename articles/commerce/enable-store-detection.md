@@ -16,55 +16,55 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3f7e9a3acde508f405ce85f125db552c3ae3656b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: b34f156642b23f7b9754dac1ee81c7d0004872d8
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5000732"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5478194"
 ---
-# <a name="enable-location-based-store-detection"></a><span data-ttu-id="71ece-103">Aktivere stedsbasert butikkregistrering</span><span class="sxs-lookup"><span data-stu-id="71ece-103">Enable location-based store detection</span></span>
-
+# <a name="enable-location-based-store-detection"></a><span data-ttu-id="09d22-103">Aktivere stedsbasert butikkregistrering</span><span class="sxs-lookup"><span data-stu-id="09d22-103">Enable location-based store detection</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="71ece-104">Dette emnet beskriver hvordan du aktiverer stedsbasert butikkregistrering for Dynamics 365 Commerce-området.</span><span class="sxs-lookup"><span data-stu-id="71ece-104">This topic describes how to turn on location-based store detection for your Dynamics 365 Commerce site.</span></span>
+<span data-ttu-id="09d22-104">Dette emnet beskriver hvordan du aktiverer stedsbasert butikkregistrering for Dynamics 365 Commerce-området.</span><span class="sxs-lookup"><span data-stu-id="09d22-104">This topic describes how to turn on location-based store detection for your Dynamics 365 Commerce site.</span></span>
 
-## <a name="overview"></a><span data-ttu-id="71ece-105">Oversikt</span><span class="sxs-lookup"><span data-stu-id="71ece-105">Overview</span></span>
+<span data-ttu-id="09d22-105">Med stedsbasert butikkregistrering i Commerce kan du gi relevant områdeinnhold til kunder basert på lokasjonen.</span><span class="sxs-lookup"><span data-stu-id="09d22-105">Location-based store detection in Commerce lets you provide relevant site content to customers, based on their location.</span></span> <span data-ttu-id="09d22-106">Når stedsbasert butikkregistrering er aktivert, bruker Commerce-gjengivelsestjenesten lands-/områdeinformasjonen fra IP-adressen til kundens webleser til å dirigere kunden til den beste geografiske områdekonfigurasjonen som er tilgjengelig.</span><span class="sxs-lookup"><span data-stu-id="09d22-106">When location-based store detection is turned on, the Commerce rendering service uses the country/region information from the IP address of the customer's web browser to direct the customer to the best geographical site configuration that is available.</span></span>
 
-<span data-ttu-id="71ece-106">Med stedsbasert butikkregistrering i Commerce kan du gi relevant områdeinnhold til kunder basert på lokasjonen.</span><span class="sxs-lookup"><span data-stu-id="71ece-106">Location-based store detection in Commerce lets you provide relevant site content to customers, based on their location.</span></span> <span data-ttu-id="71ece-107">Når stedsbasert butikkregistrering er aktivert, bruker Commerce-gjengivelsestjenesten lands-/områdeinformasjonen fra IP-adressen til kundens webleser til å dirigere kunden til den beste geografiske områdekonfigurasjonen som er tilgjengelig.</span><span class="sxs-lookup"><span data-stu-id="71ece-107">When location-based store detection is turned on, the Commerce rendering service uses the country/region information from the IP address of the customer's web browser to direct the customer to the best geographical site configuration that is available.</span></span>
+## <a name="privacy-notice"></a><span data-ttu-id="09d22-107">Personvernerklæring</span><span class="sxs-lookup"><span data-stu-id="09d22-107">Privacy notice</span></span>
 
-## <a name="privacy-notice"></a><span data-ttu-id="71ece-108">Personvernerklæring</span><span class="sxs-lookup"><span data-stu-id="71ece-108">Privacy notice</span></span>
+<span data-ttu-id="09d22-108">Hvis du aktiverer den stedsbaserte butikkregistreringsfunksjonen, sendes informasjon fra kundens webleser til en Microsoft-stedstjeneste.</span><span class="sxs-lookup"><span data-stu-id="09d22-108">If you turn on the location-based store detection feature, information from the customer's browser is sent to a Microsoft location service.</span></span> <span data-ttu-id="09d22-109">Denne informasjonen brukes deretter til å angi kundeinnholdet som er relevant for hans eller hennes lokasjon.</span><span class="sxs-lookup"><span data-stu-id="09d22-109">This information is then used to provide the customer content that is relevant to his or her location.</span></span> <span data-ttu-id="09d22-110">Både informasjon som sendes fra kundens webleser, og den stedsbaserte informasjonen som returneres til kunden, er underlagt retningslinjer for personvern og informasjonskapsler.</span><span class="sxs-lookup"><span data-stu-id="09d22-110">Both the information that is sent from the customer's browser and the location-based information that is returned to the customer are subject to privacy and cookie compliance policies.</span></span>
 
-<span data-ttu-id="71ece-109">Hvis du aktiverer den stedsbaserte butikkregistreringsfunksjonen, sendes informasjon fra kundens webleser til en Microsoft-stedstjeneste.</span><span class="sxs-lookup"><span data-stu-id="71ece-109">If you turn on the location-based store detection feature, information from the customer's browser is sent to a Microsoft location service.</span></span> <span data-ttu-id="71ece-110">Denne informasjonen brukes deretter til å angi kundeinnholdet som er relevant for hans eller hennes lokasjon.</span><span class="sxs-lookup"><span data-stu-id="71ece-110">This information is then used to provide the customer content that is relevant to his or her location.</span></span> <span data-ttu-id="71ece-111">Både informasjon som sendes fra kundens webleser, og den stedsbaserte informasjonen som returneres til kunden, er underlagt retningslinjer for personvern og informasjonskapsler.</span><span class="sxs-lookup"><span data-stu-id="71ece-111">Both the information that is sent from the customer's browser and the location-based information that is returned to the customer are subject to privacy and cookie compliance policies.</span></span>
+## <a name="turn-on-location-based-store-detection"></a><span data-ttu-id="09d22-111">Aktivere stedsbasert butikkregistrering</span><span class="sxs-lookup"><span data-stu-id="09d22-111">Turn on location-based store detection</span></span>
 
-## <a name="turn-on-location-based-store-detection"></a><span data-ttu-id="71ece-112">Aktivere stedsbasert butikkregistrering</span><span class="sxs-lookup"><span data-stu-id="71ece-112">Turn on location-based store detection</span></span>
+<span data-ttu-id="09d22-112">Følg denne fremgangsmåten for å aktivere stedsbasert butikkregistrering i Commerce.</span><span class="sxs-lookup"><span data-stu-id="09d22-112">To turn on location-based store detection in Commerce, follow these steps.</span></span>
 
-<span data-ttu-id="71ece-113">Følg denne fremgangsmåten for å aktivere stedsbasert butikkregistrering i Commerce.</span><span class="sxs-lookup"><span data-stu-id="71ece-113">To turn on location-based store detection in Commerce, follow these steps.</span></span>
+1. <span data-ttu-id="09d22-113">Gå til området ditt i redigeringsverktøyet.</span><span class="sxs-lookup"><span data-stu-id="09d22-113">In the authoring tool, go to your site.</span></span>
+1. <span data-ttu-id="09d22-114">Velg **Områdebehandling** i navigasjonsruten til venstre.</span><span class="sxs-lookup"><span data-stu-id="09d22-114">In the navigation pane on the left, select **Site Management**.</span></span>
+1. <span data-ttu-id="09d22-115">Velg **Områdeinnstillinger**.</span><span class="sxs-lookup"><span data-stu-id="09d22-115">Select **Site Settings**.</span></span>
+1. <span data-ttu-id="09d22-116">Sett **Aktiver registrering av plasseringsbasert butikk** til **På**.</span><span class="sxs-lookup"><span data-stu-id="09d22-116">Set the **Enable location based store detection** option to **On**.</span></span>
 
-1. <span data-ttu-id="71ece-114">Gå til området ditt i redigeringsverktøyet.</span><span class="sxs-lookup"><span data-stu-id="71ece-114">In the authoring tool, go to your site.</span></span>
-1. <span data-ttu-id="71ece-115">Velg **Områdebehandling** i navigasjonsruten til venstre.</span><span class="sxs-lookup"><span data-stu-id="71ece-115">In the navigation pane on the left, select **Site Management**.</span></span>
-1. <span data-ttu-id="71ece-116">Velg **Områdeinnstillinger**.</span><span class="sxs-lookup"><span data-stu-id="71ece-116">Select **Site Settings**.</span></span>
-1. <span data-ttu-id="71ece-117">Sett **Aktiver registrering av plasseringsbasert butikk** til **På**.</span><span class="sxs-lookup"><span data-stu-id="71ece-117">Set the **Enable location based store detection** option to **On**.</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="09d22-117">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="09d22-117">Additional resources</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="71ece-118">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="71ece-118">Additional resources</span></span>
+[<span data-ttu-id="09d22-118">Konfigurere domenenavnet</span><span class="sxs-lookup"><span data-stu-id="09d22-118">Configure your domain name</span></span>](configure-your-domain-name.md)
 
-[<span data-ttu-id="71ece-119">Konfigurere domenenavnet</span><span class="sxs-lookup"><span data-stu-id="71ece-119">Configure your domain name</span></span>](configure-your-domain-name.md)
+[<span data-ttu-id="09d22-119">Distribuere en ny e-handelsleier</span><span class="sxs-lookup"><span data-stu-id="09d22-119">Deploy a new e-commerce tenant</span></span>](deploy-ecommerce-site.md)
 
-[<span data-ttu-id="71ece-120">Distribuere en ny e-handelsleier</span><span class="sxs-lookup"><span data-stu-id="71ece-120">Deploy a new e-commerce tenant</span></span>](deploy-ecommerce-site.md)
+[<span data-ttu-id="09d22-120">Opprette et e-handelsområde</span><span class="sxs-lookup"><span data-stu-id="09d22-120">Create an e-commerce site</span></span>](create-ecommerce-site.md)
 
-[<span data-ttu-id="71ece-121">Opprette et e-handelsområde</span><span class="sxs-lookup"><span data-stu-id="71ece-121">Create an e-commerce site</span></span>](create-ecommerce-site.md)
+[<span data-ttu-id="09d22-121">Knytte et Dynamics 365 Commerce-nettsted til en nettkanal</span><span class="sxs-lookup"><span data-stu-id="09d22-121">Associate a Dynamics 365 Commerce site with an online channel</span></span>](associate-site-online-store.md)
 
-[<span data-ttu-id="71ece-122">Knytte et Dynamics 365 Commerce-nettsted til en nettkanal</span><span class="sxs-lookup"><span data-stu-id="71ece-122">Associate a Dynamics 365 Commerce site with an online channel</span></span>](associate-site-online-store.md)
+[<span data-ttu-id="09d22-122">Administrere robots.txt-filer</span><span class="sxs-lookup"><span data-stu-id="09d22-122">Manage robots.txt files</span></span>](manage-robots-txt-files.md)
 
-[<span data-ttu-id="71ece-123">Administrere robots.txt-filer</span><span class="sxs-lookup"><span data-stu-id="71ece-123">Manage robots.txt files</span></span>](manage-robots-txt-files.md)
+[<span data-ttu-id="09d22-123">Laste opp masseomdirigeringer for URL-adresse</span><span class="sxs-lookup"><span data-stu-id="09d22-123">Upload URL redirects in bulk</span></span>](upload-bulk-redirects.md)
 
-[<span data-ttu-id="71ece-124">Laste opp masseomdirigeringer for URL-adresse</span><span class="sxs-lookup"><span data-stu-id="71ece-124">Upload URL redirects in bulk</span></span>](upload-bulk-redirects.md)
+[<span data-ttu-id="09d22-124">Konfigurere en B2C-leier i Commerce</span><span class="sxs-lookup"><span data-stu-id="09d22-124">Set up a B2C tenant in Commerce</span></span>](set-up-B2C-tenant.md)
 
-[<span data-ttu-id="71ece-125">Konfigurere en B2C-leier i Commerce</span><span class="sxs-lookup"><span data-stu-id="71ece-125">Set up a B2C tenant in Commerce</span></span>](set-up-B2C-tenant.md)
+[<span data-ttu-id="09d22-125">Definere egendefinerte sider for brukerpålogginger</span><span class="sxs-lookup"><span data-stu-id="09d22-125">Set up custom pages for user logins</span></span>](custom-pages-user-logins.md)
 
-[<span data-ttu-id="71ece-126">Definere egendefinerte sider for brukerpålogginger</span><span class="sxs-lookup"><span data-stu-id="71ece-126">Set up custom pages for user logins</span></span>](custom-pages-user-logins.md)
+[<span data-ttu-id="09d22-126">Konfigurere flere B2C-leiere i et Commerce-miljø</span><span class="sxs-lookup"><span data-stu-id="09d22-126">Configure multiple B2C tenants in a Commerce environment</span></span>](configure-multi-B2C-tenants.md)
 
-[<span data-ttu-id="71ece-127">Konfigurere flere B2C-leiere i et Commerce-miljø</span><span class="sxs-lookup"><span data-stu-id="71ece-127">Configure multiple B2C tenants in a Commerce environment</span></span>](configure-multi-B2C-tenants.md)
+[<span data-ttu-id="09d22-127">Legge til støtte for et innholdsleveringsnettverk (CDN)</span><span class="sxs-lookup"><span data-stu-id="09d22-127">Add support for a content delivery network (CDN)</span></span>](add-cdn-support.md)
 
-[<span data-ttu-id="71ece-128">Legge til støtte for et innholdsleveringsnettverk (CDN)</span><span class="sxs-lookup"><span data-stu-id="71ece-128">Add support for a content delivery network (CDN)</span></span>](add-cdn-support.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
