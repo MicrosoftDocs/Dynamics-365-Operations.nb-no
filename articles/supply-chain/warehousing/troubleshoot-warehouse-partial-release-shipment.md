@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 33323a8aed44cf19db6c2c937abcb09f7e05b6c1
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 1c9246376505e163a4a41bf141a98deed0fd511f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4993959"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5263254"
 ---
 # <a name="troubleshoot-partial-releases-and-partial-shipments"></a>Feilsøke delvise frigivelser og delvise leveringer
 
@@ -41,3 +41,6 @@ En salgsordre har for eksempel to varer: en for levering og en for plukking. Bå
 ### <a name="issue-resolution"></a>Problemløsning
 
 Frigivelsesstatusen gjelder bare for ordrelinjer der varene er aktivert for lagerstyring. Derfor forblir frigivelsesstatusen *Delvis frigitt* i dette scenarioet. Microsoft har evaluert dette problemet og har funnet ut at det er en funksjonsbegrensning. En utvidelse kan legges til som en del av følgeseddelen og faktureringsprosessen for å oppdatere frigivelsesstatusen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

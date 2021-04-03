@@ -16,21 +16,18 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1d9482a45cb8f2ea52e7f58d55e30cfe56694d04
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d653b072eca134c765a5db5659b228648fc13c4a
+ms.sourcegitcommit: 3fe4d9a33447aa8a62d704fbbf18aeb9cb667baa
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4985960"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "5582725"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>Legge til støtte for et innholdsleveringsnettverk (CDN)
-
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet beskriver hvordan du legger til et innholdsleveringsnettverk (CDN) i Microsoft Dynamics 365 Commerce-miljøet.
-
-## <a name="overview"></a>Oversikt
 
 Når du definerer et e-handelsmiljø i Dynamics 365 Commerce, kan du konfigurere det slik at det fungerer med CDN-tjenesten. 
 
@@ -96,8 +93,8 @@ Følg disse trinnene for å opprette en rutingsregel i Azure Front Door Service.
 1. Angi **standard** i feltet **Navn**.
 1. I feltet **Godkjent protokoll** velger du **HTTP og HTTPS**.
 1. I feltet **Frontverter** angir du **dynamics-ecom-leiernavn.azurefd.net**.
-1. Under **Mønstre som skal samsvare** angir du **/\** _ i det øvre feltet.
-1. Under _*Rutedetaljer** angir du alternativet **Rutetype** til **Videresend**.
+1. Under **Mønstre som skal samsvare** angir du **/\*** i det øvre feltet.
+1. Under **Rutedetaljer** angir du alternativet **Rutetype** til **Fremover**.
 1. I feltet **Serverdelsutvalg** velger du **ecom-backend**.
 1. I feltet **Videresendingsprotokoll** velger du alternativet **Samsvar forespørsel**. 
 1. Angi at alternativet **URL rewrite** skal være **Deaktivert**.
@@ -109,8 +106,8 @@ Følg disse trinnene for å opprette en bufringsregel i Azure Front Door Service
 1. Angi **statistiske filer** i feltet **Navn**.
 1. I feltet **Godkjent protokoll** velger du **HTTP og HTTPS**.
 1. I feltet **Frontverter** angir du **dynamics-ecom-leiernavn.azurefd.net**.
-1. Under **Mønstre som skal samsvare** i det øvre feltet angir du **/\_msdyn365/\_scnr/\** _.
-1. Under _*Rutedetaljer** angir du alternativet **Rutetype** til **Videresend**.
+1. Under **Mønstre som skal samsvare** i det øvre feltet angir du **/\_msdyn365/\_scnr/\***.
+1. Under **Rutedetaljer** angir du alternativet **Rutetype** til **Fremover**.
 1. I feltet **Serverdelsutvalg** velger du **ecom-backend**.
 1. I feltet **Videresendingsprotokoll** velger du alternativet **Samsvar forespørsel**.
 1. Angi at alternativet **URL rewrite** skal være **Deaktivert**.
@@ -143,25 +140,7 @@ CDN skal nå være riktig konfigurert slik at det kan brukes sammen med ditt han
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Konfigurere domenenavnet](configure-your-domain-name.md)
-
-[Distribuere en ny e-handelsleier](deploy-ecommerce-site.md)
-
-[Opprette et e-handelsområde](create-ecommerce-site.md)
-
-[Knytte et Dynamics 365 Commerce-nettsted til en nettkanal](associate-site-online-store.md)
-
-[Administrere robots.txt-filer](manage-robots-txt-files.md)
-
-[Laste opp masseomdirigeringer for URL-adresse](upload-bulk-redirects.md)
-
-[Konfigurere en B2C-leier i Commerce](set-up-B2C-tenant.md)
-
-[Definere egendefinerte sider for brukerpålogginger](custom-pages-user-logins.md)
-
-[Konfigurere flere B2C-leiere i et Commerce-miljø](configure-multi-B2C-tenants.md)
-
-[Aktivere stedsbasert butikkregistrering](enable-store-detection.md)
+[Implementeringsalternativer for innholdsleveringsnettverk](cdn-options.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

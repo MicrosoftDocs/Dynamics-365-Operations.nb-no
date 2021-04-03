@@ -3,7 +3,7 @@ title: Tilbakekall ordre-operasjon i POS
 description: Dette emnet inneholder funksjoner som er tilgjengelige for forbedrede sider for tilbakekalling av ordrer i POS.
 author: hhainesms
 manager: annbe
-ms.date: 10/09/2020
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
@@ -14,12 +14,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 21e8045d754006345f5ad68e1e67579386c6df4a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 174821fce4baf81e4298da4b066f855bfec98ca5
+ms.sourcegitcommit: 6c108be3378b365e6ec596a1a8666d59b758db25
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5010080"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "5585136"
 ---
 # <a name="recall-order-operation-in-pos"></a>Tilbakekall ordre-operasjon i POS
 
@@ -35,7 +35,7 @@ Konfigurasjon av knappen for **Tilbakekall ordre**-operasjonen lar organisasjone
 
 Visningsalternativene er som følger:
 - **Ingen** – Dette alternativet distribuerer operasjonen uten en bestemt visning. Når en bruker åpner operasjonen med denne konfigurasjonen, blir de bedt om å søke etter og finne ordrer, eller velge fra et forhåndsdefinert ordrefilter.
-- **Ordrer som skal oppfylles** – Når en bruker starter operasjonen, kjøres en spørring automatisk for å søke etter og vise en liste over ordrer som skal oppfylles av butikken. Disse ordrene er konfigurert for henting i butikk eller butikkforsendelse, og linjene i disse ordrene er ennå ikke plukket eller pakket.
+- **Ordrer som skal oppfylles** – Når en bruker starter operasjonen, kjøres en spørring automatisk for å søke etter og vise en liste over ordrer som skal oppfylles av brukerens gjeldende butikk. Disse ordrene er konfigurert for henting i butikk eller butikkforsendelse, og linjene i disse ordrene er ennå ikke plukket eller pakket.
 - **Ordrer som skal hentes** – Når en bruker starter operasjonen, kjøres en spørring automatisk for å søke etter og vise en liste over ordrer som er konfigurert for henting i butikk i brukerens gjeldende butikk.
 - **Ordrer som skal leveres** – Når en bruker starter operasjonen, kjøres en spørring automatisk for å søke etter og vise en liste over ordrer som er konfigurert for levering fra brukerens gjeldende butikk.
 
@@ -46,7 +46,7 @@ Når du starter **Tilbakekall ordre**-operasjonen fra POS og visningen er konfig
 
 ![RecallOrderMainMenu](media/recallordermain.png)
 
-Når søkekriteriene er brukt, vil appen vise en liste over samsvarende salgsordrer.
+Når søkekriteriene er brukt, vil appen vise en liste over samsvarende salgsordrer. Det er viktig å merke seg at når du bruker søke-/filteralternativene, trenger ikke ordrene som hentes, være ordrer som er koblet til brukerens gjeldende butikk. Denne søkeprosessen henter og viser alle kundeordrer som samsvarer med søkekriteriene, selv om ordren ble opprettet eller angitt til å bli utført av en annen butikk/kanal eller lagerlokasjon.
 
 ![RecallOrderDetail](media/orderrecalldetail.png)
 
@@ -54,15 +54,18 @@ En bruker kan velge en ordre i listen for å vise flere detaljer. Informasjonspa
 
 Fra applinjen kan en bruker velge en operasjon. Det kan hende at bestemte operasjoner ikke er aktivert, avhengig av statusen for ordren.
 
-- **Retur** – Utfører en retur for én eller flere fakturaer som er knyttet til den valgte kundeordren.
+- **Retur** – Starter prosessen med å opprette en retur for alle de fakturerte produktene på den valgte kundeordren.
 
-- **Avbryt** – Utsteder en fullstendig annullering av den valgte salgsordren.
+- **Avbryt** – Utsteder en fullstendig annullering av den valgte salgsordren. Dette alternativet er ikke tilgjengelig for ordrer som startes via en samtalesenterkanal, og kan ikke brukes til å avbryte en ordre delvis.
 
 - **Oppfyll** – Overfører brukeren til siden for ordreoppfylling som blir forhåndsfiltrert for den valgte ordren. Bare ordrelinjer som er åpne for oppfyllelse av brukerens butikk for den valgte ordren, vises.
 
-- **Rediger** – Lar brukere gjøre endringer i den valgte kundeordren.
+- **Rediger** – Lar brukere gjøre endringer i den valgte kundeordren. Ordrer kan bare redigeres i [bestemte scenarioer](customer-orders-overview.md#edit-an-existing-customer-order).
 
-- **Hent** – Starter henteflyten, slik at brukeren kan velge hvilke produkter som skal hentes, og opprette salgstransaksjoner for hentingen.
+- **Henting** – Dette alternativet vil være tilgjengelig hvis ordren har én eller flere linjer angitt for henting i brukerens gjeldende butikk. Denne operasjonen starter henteflyten, slik at brukeren kan velge hvilke produkter som skal hentes, og opprette salgstransaksjoner for hentingen.
 
+## <a name="add-notifications-to-the-recall-order-operation"></a>Legge til meldinger i operasjonen for tilbakekalling av ordre
+
+I versjon 10.0.18 og senere kan du konfigurere POS-meldinger og direkte flisvarslinger for operasjonen **Tilbakekalling av ordre** hvis dette er ønskelig. Hvis du vil ha mer informasjon, kan du se [Vise ordrevarslinger på salgsstedet](notifications-pos.md).  
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

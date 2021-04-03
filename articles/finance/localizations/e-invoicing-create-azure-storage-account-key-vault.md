@@ -3,7 +3,7 @@ title: Opprett en Azure Storage-konto og en Key Vault
 description: Dette emnet forklarer hvordan du oppretter en Azure Storage-konto og en Key Vault.
 author: gionoder
 manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 02/12/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: d076aa5230437d1ef90f6b46d49ee4dea526db24
-ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
+ms.openlocfilehash: 14463abe7782d786d286fcc619dee00ce85bb620
+ms.sourcegitcommit: 4adc57b0e43d9627dca70762ac941762ec4934e2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "5104235"
+ms.lasthandoff: 02/22/2021
+ms.locfileid: "5479351"
 ---
 # <a name="create-an-azure-storage-account-and-a-key-vault"></a>Opprett en Azure Storage-konto og en Key Vault
 
@@ -77,6 +77,12 @@ I dette emnet fullfører du to hovedtrinn:
 
     ![Gi sertifikattillatelse](media/e-Invoicing-services-create-azure-resources-grant-certificate-permission.png)
 
-9. I dialogboksen **Sikkerhetskontohaver** velger du sikkerhetskontohaveren ved å legge til **Tillegget Elektronisk fakturering**.
-10. Velg **Legg til**, og velg deretter **Lagre Key Vault-endringer**.
-11. På siden **Oversikt** kopierer du **DNS-navn**-verdien for Key Vault. Denne verdien vil bli brukt under konfigurasjon av tjenesten i RCS, og vil bli referert til som *Key Vault-URI*.
+9. I feltet **Velg sikkerhetskontohaver** velger du **Ingen valgt**.
+10. I dialogboksen **Sikkerhetskontohaver** velger du sikkerhetskontohaveren ved å legge til **E-faktureringstjeneste**.
+11. Velg **Legg til**, og velg deretter **Lagre Key Vault-endringer**.
+12. På siden **Oversikt** kopierer du **DNS-navn**-verdien for Key Vault. Denne verdien vil bli brukt under konfigurasjon av tjenesten i RCS, og vil bli referert til som *Key Vault-URI*.
+
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: EntAssetMaintenancePlan, EntAssetObjectCalendarListPage, EntAssetObjectCalendarListPagePoolsOpen
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 876aef9f3f470490bb385e1861c837dcfa82db69
-ms.sourcegitcommit: 1e615288db245f83c5d5e0cd45315400f8946beb
+ms.openlocfilehash: 76306fb31e7e5297e6a5d64b97b5bd09b64349ee
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "5131799"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5500580"
 ---
 # <a name="creating-work-orders"></a>Opprette arbeidsordrer
 
@@ -62,8 +62,7 @@ Følg denne fremgangsmåten for å opprette arbeidsordrer som er basert på vedl
 
 ## <a name="group-work-order-lines-that-are-automatically-created-while-a-maintenance-plan-runs"></a>Gruppere arbeidsordrelinjer som opprettes automatisk mens en vedlikeholdsplan kjører
 
-> [!IMPORTANT]
-> Funksjonaliteten som er nevnt i denne delen, er tilgjengelig som en del av en forhåndsversjon. Innholdet og funksjonaliteten kan bli endret. Hvis du vil ha mer informasjon om forhåndsvisning versjoner, kan du se [Vanlige spørsmål om oppdatering av én versjonstjeneste](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
+[!INCLUDE [preview-banner-section](../../../includes/preview-banner-section.md)]
 
 Med denne funksjonen kan du definere regler for gruppering av arbeidsordrelinjer under én arbeidsordre når systemet er konfigurert slik at det genererer arbeidsordrer automatisk, basert på en vedlikeholdsplan. Tidligere kunne automatisk genererte arbeidsordrer bare inneholde én linje. Nå kan du imidlertid gruppere arbeidsordrer etter for eksempel aktiva, aktivatype eller funksjonslokasjon. (Manuelt genererte arbeidsordrer kan allerede grupperes på denne måten, som beskrevet i den forrige delen i dette emnet.)
 
@@ -95,3 +94,6 @@ Følg denne fremgangsmåten for å konfigurere gruppering for automatisk generer
 1. Hvis du vil at alternativene skal brukes når du bare kjører noen av vedlikeholdsplanene, legger du til filtre etter behov i hurtigfanen **Poster som skal inkluderes**, slik du kan gjøre for andre satsvise jobber i Microsoft Dynamics 365 Supply Chain Management.
 1. Konfigurer alternativer for satsvise jobber og planlegging etter behov i hurtigfanen **Kjør i bakgrunnen**, slik du kan gjøre for andre satsvise jobber i Supply Chain Management.
 1. Velg **OK** for å kjøre og/eller planlegge de valgte vedlikeholdsplanene.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

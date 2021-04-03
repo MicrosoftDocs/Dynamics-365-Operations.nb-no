@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 02/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -18,12 +17,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 3937850a9df716113591e49b25373beb48e3acdd
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 6cc02b483a2975dd3be28032ea7e90b540945492
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5130011"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5561284"
 ---
 # <a name="dual-write-overview"></a>Oversikt over dobbel skriving
 
@@ -109,3 +108,6 @@ For å opprette paritet med Finance and Operations-apper, gjør dobbelt skriving
 
 Hvis du vil ha mer informasjon om kommende endringer, kan du se [Nyheter eller endringer i dobbel skriving](whats-new-dual-write.md).
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

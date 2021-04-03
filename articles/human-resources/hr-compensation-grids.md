@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 13415f68f41555f3e86cbe699cf921e9a2cf6d5c
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: b7e68ec4d172ced7ac66837e9580971d22b23b5f
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113640"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5465756"
 ---
 # <a name="set-up-compensation-grids"></a>Konfigurer kompensasjonsrutenett
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Kompensasjonsrutenett brukes til å definere og vedlikeholde lønn-strukturer for faste kompensasjonsplaner. Kompensasjonsrutenett kan deles mellom flere planer eller kopieres når du oppretter en ny kompensasjonsplan.  Før du oppretter et kompensasjonsrutenett må nivåer og referansepunkt være definert. Dette eksemplet oppretter en ny klasse-type for kompensasjonsrutenettet ved hjelp av demodata for nivåene og referansepunktene. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
 
@@ -92,3 +94,6 @@ Kompensasjonsrutenett brukes til å definere og vedlikeholde lønn-strukturer fo
 29. Merk eller fjern merking for alle rader i listen.
 30. Klikk Bruk på rutenett.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -17,14 +17,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-06-23
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: 219537aab2015469b6ca6ebed5c00af0190c5187
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 0b13853598bbdec239bce98029e534991a53876b
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113736"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5467223"
 ---
 # <a name="optimize-performance-by-scheduling-batch-jobs-after-hours"></a>Optimalisere ytelsen ved å planlegge satsvise jobber utenom arbeidstid
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -34,7 +36,7 @@ Microsoft Dynamics 365 Human Resources kan oppleve ytelsesproblemer hvis tidkrev
 
 ## <a name="resolution"></a>Oppløsning
 
-Planlegg følgende satsvise jobber utenom arbeidstid. Vi anbefaler også å se gjennom frekvensen for satsvise jobber som kjører ofte. Reduser gjentakelsen av den satsvise jobben hvis mulig. I mange tilfeller er standardfrekvensen tilstrekkelig.
+Planlegg følgende satsvise jobber utenom arbeidstid. Det anbefales også å se gjennom frekvensen for satsvise jobber som kjører ofte. Reduser gjentakelsen av den satsvise jobben hvis mulig. I mange tilfeller er standardfrekvensen tilstrekkelig.
 
 Følgende satsvise jobber bør kjøres om kvelden eller utenom arbeidstid. Pass på at du kontrollerer tidssonen for disse gjentakende satsvise jobbene. Noen satsvise jobber kan bruke Stillehavskysten (normaltid).
 
@@ -65,3 +67,6 @@ Følgende satsvise jobber bør kjøres om kvelden eller utenom arbeidstid. Pass 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Optimalisere ytelsen med oppgaver for automatisk opprydding](hr-admin-troubleshooting-batch-history.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

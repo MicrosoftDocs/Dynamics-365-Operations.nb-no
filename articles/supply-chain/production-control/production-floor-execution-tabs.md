@@ -8,18 +8,19 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: JmgProductionFloorExecutionConfiguration, JmgProductionFloorExecutionConfigurationTab
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: 786ea9a3da98e9f1812b007d4301cb47680e6894
-ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
+ms.openlocfilehash: 282785799b6d61a00a356fcc2ae86ff0e3b7b39f
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "5077584"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5501036"
 ---
 # <a name="design-the-production-floor-execution-interface"></a>Utform grensesnittet for produksjonsutførelse
 
@@ -45,7 +46,7 @@ Følgende elementer vises i illustrasjonen:
 
 Hvis du vil opprette og konfigurere en ny fane, gjør du følgende:
 
-1. Gå til **Produksjonskontroll &gt; Oppsett &gt; Produksjonsutførelse**.
+1. Gå til **Produksjonskontroll \> Oppsett \> Produksjonsutførelse \> Konfigurere produksjonsutførelse**.
 
 1. Velg **Utform faner** i handlingsruten for å åpne siden **Utform faner**.
 
@@ -67,7 +68,7 @@ Hvis du vil opprette og konfigurere en ny fane, gjør du følgende:
 
 Etter at du har utformet alle fanene du trenger, kan du knytte dem til en konfigurasjon.
 
-1. Gå til **Produksjonskontroll &gt; Oppsett &gt; Konfigurer produksjonsutførelse**.
+1. Gå til **Produksjonskontroll \> Oppsett \> Produksjonsutførelse \> Konfigurere produksjonsutførelse**.
 
     ![Konfigurer produksjonsutførelse](media/pfe-config-prod-floor-execution.png "Konfigurer produksjonsutførelse")
 
@@ -78,3 +79,6 @@ Etter at du har utformet alle fanene du trenger, kan du knytte dem til en konfig
 1. Fortsett å legge til flere faner etter behov.
 
 1. Bruk knappene **Flytt opp** og **Flytt ned** på verktøylinjen til å ordne fanene etter behov. Fanene blir vist fra venstre mot høyre i den rekkefølgen som vises i skjermbildet ovenfor (fanen øverst vises til venstre).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

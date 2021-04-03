@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 4e6f7e0a3978bbf7e520f8cbcfd27c4cfe507777
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 4e588be2ac5aae395ca66e3c9a743a67d71db7c0
+ms.sourcegitcommit: a3052f76ad71894dbef66566c07c6e2c31505870
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5114676"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "5574228"
 ---
 # <a name="inventory-visibility-add-in"></a>Tillegg for lagersynlighet
 
@@ -48,11 +48,64 @@ Hvis du vil ha mer informasjon, se [Lifecycle Services-ressurser](https://docs.m
 Før du kan installere tillegget for lagersynlighet, må du gjøre følgende:
 
 - Hent et LCS-implementeringsprosjekt med minst ett miljø som er distribuert.
-- Generer betanøklene for tilbudet i LCS.
-- Aktiver betanøklene for tilbudet for brukeren din i LCS.
-- Kontakt produktteamet for Microsoft-lagersynlighet, og oppgi en miljø-ID der du vil distribuere tillegget for lagersynlighet.
+- Sørg for at forutsetningene for å definere tillegg som er oppført i [Tilleggsoversikt](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md), er fullført. Lagersynlighet krever ikke kobling til dobbel skriving.
+- Kontakt lagersynlighetsteamet på [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) for å få følgende tre obligatoriske filer:
+
+    - `Inventory Visibility Dataverse Solution.zip`
+    - `Inventory Visibility Configuration Trigger.zip`
+    - `Inventory Visibility Integration.zip` (hvis versjonen av Supply Chain Management du kjører, er eldre enn versjon 10.0.18)
+
+> [!NOTE]
+> Landene og områdene som støttes for øyeblikket, omfatter Canada, USA og Den europeiske union (EU).
 
 Hvis du har spørsmål om disse forutsetningene, kan du ta kontakt med produktteamet for lagersynlighet.
+
+### <a name="set-up-dataverse"></a><a name="setup-microsoft-dataverse"></a>Konfigurere Dataverse
+
+Gjør følgende for å konfigurere Dataverse.
+
+1. Legg til et serviceprinsipp i leieren:
+
+    1. Installer Azure AD PowerShell-modul v2 som beskrevet i [Installer Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2).
+    1. Kjør følgende PowerShell-kommando.
+
+        ```powershell
+        Connect-AzureAD # (open a sign in window and sign in as a tenant user)
+
+        New-AzureADServicePrincipal -AppId "3022308a-b9bd-4a18-b8ac-2ddedb2075e1" -DisplayName "d365-scm-inventoryservice"
+        ```
+
+1. Opprett en applikasjonsbruker for lagersynlighet i Dataverse:
+
+    1. Åpne URL-adressen for Dataverse-miljøet.
+    1. Gå til **Avansert innstilling \> System \> Sikkerhet \> Brukere** og opporett en appbruker. Bruk Vis-menyen til å endre sidevisningen til **Appbrukere**.
+    1. Velg **Ny**. Sett app-ID-en til *3022308a-b9bd-4a18-b8ac-2ddedb2075e1*. (Objekt-ID-en lastes automatisk når du lagrer endringene.) Du kan tilpasse navnet. Du kan for eksempel endre til *Lagersynlighet*. Når du er ferdig, velg **Lagre**.
+    1. Velg **Tilordne rolle**, og velg deretter **Systemadministrator**. Hvis det finnes en rolle kalt **Common Data Service-bruker**, velger du den også.
+
+    Hvis du vil ha mer informasjon, kan du se [Opprette en appbruker](https://docs.microsoft.com/power-platform/admin/create-users-assign-online-security-roles#create-an-application-user).
+
+1. Importer `Inventory Visibility Dataverse Solution.zip`-filen, som inkluderer relaterte enheter for konfigurasjon av Dataverse og Power Apps:
+
+    1. Gå til siden **Løsninger**.
+    1. Velg **Import**.
+
+1. Importer utløserflyten for konfigurasjonsoppgradering:
+
+    1. Gå til Microsoft Flow-siden.
+    1. Sørg for at det finnes en tilkobling med navnet *Dataverse (eldre)*. (Hvis den ikke finnes, kan du opprette den.)
+    1. Importer `Inventory Visibility Configuration Trigger.zip`-filen. Når den er importert, vises utløseren under **Mine flyter**.
+    1. Initialiser følgende fire variabler basert på miljøinformasjon:
+
+        - Leier-ID for Azure
+        - Appklient-ID for Azure
+        - Appklienthemmelighet for Azure
+        - Endepunkt for lagersynlighet
+
+            Hvis du vil ha mer informasjon om denne variabelen, kan du se delen [Konfigurere integrering av lagersynlighet](#setup-inventory-visibility-integration) senere i dette emnet.
+
+        ![Konfigurasjonsutløser](media/configuration-trigger.png "Konfigurasjonsutløser")
+
+    1. Velg **Aktiver**.
 
 ### <a name="install-the-add-in"></a><a name="install-add-in"></a>Installer tillegget
 
@@ -61,14 +114,16 @@ Hvis du vil installere tillegget for lagersynlighet, må du gjøre følgende:
 1. Logg på [Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index)-portalen.
 1. På hjemmesiden velger du prosjektet der miljøet er distribuert.
 1. På prosjektsiden velger du miljøet du vil installere tillegget i.
-1. Rull ned til du ser delen **Miljøtillegg** på miljøsiden. Hvis delen ikke er synlig, må du kontrollere at de nødvendige betanøklene er fullstendig behandlet.
+1. På miljøsiden ruller du ned til du ser delen delen **Miljøtillegg** i delen **Power Platform-integrering**, der du også finner navnet på Dataverse-miljøet.
 1. I delen **Miljøtillegg** velger du **Installer et nytt tillegg**.
+
     ![Miljøsiden i LCS](media/inventory-visibility-environment.png "Miljøsiden i LCS")
+
 1. Velg koblingen **Installer et nytt tillegg**. En liste over tilgjengelige tillegg åpnes.
-1. Velg **Lagertjeneste** fra listen. (Merk at det nå er oppført som **Tillegg for lagersynlighets for Dynamics 365 Supply Chain Management**.)
+1. Velg **Lagersynlighet** i listen.
 1. Angi verdier for følgende felter i miljøet:
 
-    - **App-ID for AAD**
+    - **ID for AAD-app (klient)**
     - **Leier-ID for AAD**
 
     ![Legg til i konfigurasjon-side](media/inventory-visibility-setup.png "Legg til i konfigurasjon-side")
@@ -76,11 +131,74 @@ Hvis du vil installere tillegget for lagersynlighet, må du gjøre følgende:
 1. Godta vilkåret og betingelsen ved å merke av for **Vilkår og betingelser**.
 1. Velg **Installer**. Statusen for tillegget vil vises som **Installerer**. Når du er ferdig, oppdaterer du siden for å se status endre til **Installert**.
 
-### <a name="get-a-security-service-token"></a>Hent et token for sikkerhetstjeneste
+### <a name="uninstall-the-add-in"></a><a name="uninstall-add-in"></a>Avinstallere tillegget
+
+Velg **Avinstaller** tillegget for å avinstallere tillegget. Når du oppdaterer LCS, fjernes tillegget for lagersynlighet. Avinstallasjonsprosessen fjerner registreringen av tillegget, og starter også en jobb for å rydde opp i alle forretningsdataene som er lagret i tjenesten.
+
+## <a name="consume-on-hand-inventory-data-from-supply-chain-management"></a>Bruke lagerbeholdningsdata fra Supply Chain Management
+
+### <a name="deploy-the-inventory-visibility-integration-package"></a><a name="deploy-inventory-visibility-package"></a>Distribuere integreringspakken for lagersynlighet
+
+Hvis du kjører Supply Chain Management versjon 10.0.17 eller tidligere, kan du kontakte kundestøttegruppen for lagersynlighet på [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) for å hente pakkefilen. Deretter distribuerer du pakken i LCS.
+
+> [!NOTE]
+> Hvis det oppstår en versjonsfeil under distribusjon, må du importere X++-prosjektet til utviklingsmiljøet manuelt. Opprett deretter den distribuerbare pakken i utviklingsmiljøet, og distribuer den i produksjonsmiljøet.
+> 
+> Koden er inkludert i Supply Chain Management versjon 10.0.18. Hvis du kjører den versjonen eller senere, er det ikke nødvendig å distribuere påkrevd distribusjon.
+
+Sørg for at følgende funksjoner er aktivert i miljøet i Supply Chain Management. (De er som standard aktiverte.)
+
+| Funksjonsbeskrivelse | Kodeversjon | Veksle klasse |
+|---|---|---|
+| Aktivere eller deaktivere bruk av lagerdimensjoner i InventSum-tabell | 10.0.11 | InventUseDimOfInventSumToggle |
+| Aktivere eller deaktivere bruk av lagerdimensjoner i InventSumDelta-tabell | 10.0.12 | InventUseDimOfInventSumDeltaToggle |
+
+### <a name="set-up-inventory-visibility-integration"></a><a name="setup-inventory-visibility-integration"></a>Definer integrering av lagersynlighet
+
+1. I Supply Chain Management åpner du arbeidsområdet **[Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** og aktiverer funksjonen **Integrering av lagersynlighet**.
+1. Gå til **Lagerstyring \> Konfigurere \> Parametere for integrering av lagersynlighet**, og angi URL-adressen for miljøet der du kjører Lagersynlighet.
+
+    Finn LCS-miljøets Azure-område, og skriv deretter inn URL-adressen. URL-adressen har følgende skjema:
+
+    `https://inventoryservice.<RegionShortName>-il301.gateway.prod.island.powerapps.com/`
+
+    Hvis du for eksempel er i Europa, vil miljøet ditt ha en av følgende URL-adresser:
+
+    - `https://inventoryservice.neu-il301.gateway.prod.island.powerapps.com/`
+    - `https://inventoryservice.weu-il301.gateway.prod.island.powerapps.com/`
+
+    Følgende områder er for øyeblikket tilgjengelige.
+
+    | Azure-område | Kortnavn for område |
+    |---|---|
+    | Australia øst | eau |
+    | Australia, sørøst | seau |
+    | Midt-Canada | cca |
+    | Canada, øst | eca |
+    | Europa nord | neu |
+    | Europa vest | weu |
+    | USA øst | eus |
+    | USA vest | wus |
+
+1. Gå til **Lagerstyring \> Periodisk \> Integrering av lagersynlighet** og aktiver jobben. Alle lagerendringshendelser fra Supply Chain Management posteres nå til Lagersynlighet.
+
+## <a name="the-inventory-visibility-add-in-public-api"></a><a name="inventory-visibility-public-api"></a>Den offentlige API-en for tillegget for lagersynlighet
+
+Den offentlige REST-API-en i tillegget for lagersynlighet viser flere spesifikke endepunkter for integrering. Det støtter tre hovedtyper for samhandling:
+
+- Postering av beholdningsendringer i tillegget fra et eksternt system
+- Spørring etter gjeldende antall i beholdningen fra et eksternt system
+- Automatisk synkronisering med beholdningen for Supply Chain Management
+
+Automatisk synkronisering er ikke en del av den offentlige API-en. I stedet håndteres den i bakgrunnen for miljøer der tillegget for lagersynlighet er aktivert.
+
+### <a name="authentication"></a><a name="inventory-visibility-authentication"></a>Godkjenning
+
+Platformsikkerhetstokenet brukes til å kalle inn tillegget for lagersynlighet. Derfor må du generere et *Azure Active Directory-token (Azure AD)* ved hjelp av Azure AD-appen. Du må deretter bruke Azure AD-tokenet til å få *tilgangstokenet* fra sikkerhetstjenesten.
 
 Hent et token for sikkerhetstjeneste ved å gjøre følgende:
 
-1. Logg deg på Azure-portalen, og bruk det til å finne `clientId` og `clientSecret` for programmet Supply Chain Management.
+1. Logg på Azure-portalen, og bruk det til å finne `clientId` og `clientSecret` for Supply Chain Management-appen.
 1. Hent et Azure Active Directory-token (`aadToken`) ved å sende en HTTP-forespørsel med følgende egenskaper:
     - **URL-adresse** - `https://login.microsoftonline.com/${aadTenantId}/oauth2/token`
     - **Metode** - `GET`
@@ -140,27 +258,7 @@ Hent et token for sikkerhetstjeneste ved å gjøre følgende:
     }
     ```
 
-### <a name="uninstall-the-add-in"></a>Avinstallere tillegget
-
-Velg **Avinstaller** tillegget for å avinstallere tillegget. Oppdater LCS så fjernes tillegget for lagersynlighet. Avinstallasjonsprosessen vil fjerne registreringen av tillegget, og også starte en jobb for å rydde opp i alle forretningsdataene som er lagret i tjenesten.
-
-## <a name="inventory-visibility-add-in-public-api"></a>Offentlig API for tillegget for lagersynlighet
-
-Den offentlige REST-API-en i tillegget for lagersynlighet viser flere spesifikke endepunkter for integrering. Det støtter tre hovedtyper for samhandling:
-
-- Postering av beholdningsendringer i tillegget fra et eksternt system.
-- Spørring etter gjeldende antall i beholdningen fra et eksternt system.
-- Automatisk synkronisering med Supply Chain Management tilgjengelig.
-
-Den automatiske synkroniseringen er ikke en del av den offentlige API-en, men blir i stedet behandlet i bakgrunnen for miljøer som har aktivert tillegget for lagersynlighet.
-
-### <a name="authentication"></a>Godkjenning
-
-Platformsikkerhetstoken brukes til å kalle opp tillegget for lagersynlighet, så du må generere et Azure Active Directory-token ved hjelp av Azure Active Directory-programmet.
-
-Hvis du vil ha mer informasjon om hvordan du får tak i sikkerhetstokenet, kan du se [Installer tillegget for lagersynlighet](#install-add-in).
-
-### <a name="configure-the-inventory-visibility-api"></a>Konfigurer API-en for lagersynlighet
+### <a name="configure-the-inventory-visibility-api"></a><a name="inventory-visibility-configuration"></a>Konfigurer API-en for lagersynlighet
 
 Før du bruker tjenesten, må du fullføre konfigurasjonene som er beskrevet i følgende underavsnitt. Konfigurasjonen kan variere avhengig av detaljene i miljøet ditt. Den inneholder hovedsakelig fire deler:
 
@@ -232,7 +330,7 @@ Du har to indekser definert som følgende:
 
 Den tomme parentesen samles, basert på produkt-ID-en i partisjonen.
 
-Indekseringen definerer hvordan du kan gruppere resultatene basert på `groupBy`-spørringsinnstillingen. I dette tilfellet hvis du ikke definerer noen `groupBy`-verdier, får du totaler etter `productid`. Hvis ikke hvis du definerer `groupBy` som `groupBy=ColorId&groupBy=SizeId` vil du få flere linjer returnert, basert på de ulike kombinasjonene mellom farger og størrelser i systemet.
+Indekseringen definerer hvordan du kan gruppere resultatene basert på `groupBy`-spørringsinnstillingen. I dette tilfellet hvis du ikke definerer noen `groupBy`-verdier, får du totaler etter `productid`. Hvis du definerer `groupBy` som `groupBy=ColorId&groupBy=SizeId`, vil du ellers få flere linjer returnert, basert på de ulike kombinasjonene mellom farger og størrelser i systemet.
 
 Du kan legge spørringskriteriene i brødteksten for forespørselen.
 
@@ -257,7 +355,7 @@ Her er en eksempelspørring på produktet med farge- og størrelseskombinasjon.
 
 #### <a name="custom-measurement"></a>Egendefinert mål
 
-Standard målantall er koblet til Supply Chain Management, men du vil kanskje ha et antall som består av en kombinasjon av standardmålene. Hvis du vil gjøre dette, kan du ha en konfigurasjon av egendefinert antall, som vil bli lagt til i utdataene i lagerbeholdningsspørringene.
+Standard målantall er koblet til Supply Chain Management. Det kan imidlertid være at du vil ha et antall som består av en kombinasjon av standardmålene. Hvis du vil gjøre dette, kan du ha en konfigurasjon av egendefinert antall, som vil bli lagt til i utdataene i lagerbeholdningsspørringene.
 
 Ved hjelp av funksjonaliteten kan du bare definere et sett med mål som skal legges til, eller et sett med mål som skal trekkes fra, for å kunne lage det egendefinerte målet.
 
@@ -527,3 +625,6 @@ Spørringene som vises i eksemplene ovenfor, kan returnere et resultat som dette
 ```
 
 Legg merke til at antall-feltene er strukturert som en ordliste for mål og tilknyttede verdier.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

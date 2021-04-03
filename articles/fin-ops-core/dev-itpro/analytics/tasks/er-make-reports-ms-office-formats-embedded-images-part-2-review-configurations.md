@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 06/13/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -14,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3eee6300350dd96c34f2eab44704d1895e6171ff
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: 6aa5c4d45f9139c65f3aaf1ae392829e3e4967df
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5093651"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5569444"
 ---
 # <a name="review-configurations-to-generate-reports-in-office-format-that-have-embedded-images"></a>Gå gjennom konfigurasjoner for å generere rapporter i Office-format som inneholder innebygde bilder
 
@@ -91,3 +90,6 @@ Denne fremgangsmåten er ment for brukere som har den systemansvarlige eller ele
     * Enkelte etiketter vises i skjemaet forhåndstrykt sjekk inkluderes i rapporten når den opprettes for testformål. Imidlertid skrives disse ikke ut ved reell utskrift, fordi det forhåndstrykte skjemaet allerede inneholder dem.  
 15. Lukk siden.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

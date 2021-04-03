@@ -3,10 +3,9 @@ title: Fjernede eller avskrevne funksjoner i tidligere versjoner
 description: Dette emnet beskriver funksjoner som er fjernet, eller som ble planlagt for fjerning fra Dynamics 365 for Finance and Operations og tidligere versjoner.
 author: sericks007
 manager: AnnBe
-ms.date: 09/21/2020
+ms.date: 02/16/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3b862938ec8226cc963fb8c85fcfc2241684eab7
-ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
+ms.openlocfilehash: db276c693a729b919bc609bb4b94843bb11a8fe3
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "5154391"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5559336"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Fjernede eller avskrevne funksjoner i tidligere versjoner
 
@@ -39,7 +38,7 @@ Dette emnet beskriver funksjoner som er fjernet eller avskrevet fra Dynamics 365
 
 Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivningene for din egen planlegging. 
 
-Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekniske referanserapporter](https://docs.microsoft.com/dynamics/s-e/). Du kan sammenligne de ulike versjonene av disse rapportene for å lære om objekter som er endret eller fjernet i hver versjon av Finance and Operations-apper.
+Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekniske referanserapporter](https://docs.microsoft.com/dynamics/s-e/global/axtechrefrep_61). Du kan sammenligne de ulike versjonene av disse rapportene for å lære om objekter som er endret eller fjernet i hver versjon av Finance and Operations-apper.
 
 ## <a name="finance-1007-with-platform-update-31"></a>Finance 10.0.7 med Platform update 31
 
@@ -1373,3 +1372,6 @@ Windows 8 nettbrettapp inneholdt funksjonalitet for utgiftsregistrering og -godk
 |     <strong>Berørte produktområder</strong>     |                                              Økonomimodul                                              |
 |             <strong>Status</strong>             |                                      Fjernet fra og med Dynamics AX 2012                                      |
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

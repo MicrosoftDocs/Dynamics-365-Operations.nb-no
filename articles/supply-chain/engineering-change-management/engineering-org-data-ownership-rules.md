@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: ab5ca3bee65bb0ee8ce7f44ba97c00347fe38366
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 837960a628ef03df4d73909e96713e256d0f5e60
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963669"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5262315"
 ---
 # <a name="engineering-companies-and-data-ownership-rules"></a>Tekniske firmaer og dataeierskapsregler
 
@@ -66,3 +66,6 @@ Siden det teknsike firmaet eier teknisk relevante data, kontrollerer det følgen
 
     - Når disse dokumentene frigis til andre juridiske enheter, blir dokumentene beskyttet fra å bli fjernet av driftsfirmaet.
     - Andre juridiske enheter kan legge til helt nye, lokale dokumenter. Driftsfirmaet eier og vedlikeholder disse lokale dokumentene.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

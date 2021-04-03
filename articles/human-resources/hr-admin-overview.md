@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 38a8845ec4ae4c61ea969efdee60a12cfb644a3b
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: f55977fc45424ea7e514a741f9dd7f8f9306b015
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113764"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5466934"
 ---
 # <a name="administration-overview"></a>Oversikt over administrasjon
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -102,3 +104,5 @@ Denne administratorveiledningen hjelper deg med å sette opp, administrere og fe
 - [Hva er nytt eller endret i Human Resources](hr-admin-whats-new.md)
 - [Utviklerveiledning](hr-developer-overview.md)
 - [Brukerveiledning](hr-hrpro-overview.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

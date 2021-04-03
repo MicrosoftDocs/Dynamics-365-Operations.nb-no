@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 35ade352edf31fe895a9b9118a8ad7d5fe6c0bde
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: bf77e488b60cc4c526398db494104c31b0f210b1
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798409"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5570951"
 ---
 # <a name="show-pages-side-by-side-using-the-open-in-new-window-feature"></a>Vise sider side ved side ved hjelp av funksjonen Åpne i nytt vindu
 
@@ -48,3 +47,6 @@ Før du bruker funksjonen **Åpne i nytt vindu**, konfigurerer du popup-blokkeri
 Funksjonen **Åpne i nytt vindu** er bare tilgjengelig når det er flere sider åpne i vinduet. I tillegg lukkes popup-vinduet automatisk når ingen flere sider er åpne (det vil si når du lukker den siste siden i dette vinduet). Systemet lukker også åpne sider når du går til et annet område i programmet. Hvis du har popup-vinduer åpne og går til et annet område i programmet, lukkes derfor popup-vinduene automatisk fordi systemet lukket sidene i disse vinduene.
 
 Den øverste linjen i popup-vinduene viser informasjon om firmaet siden ble åpnet i, og er skrivebeskyttet. Popup-vinduene er også avhengig av hovednettleservinduet. Hvis hovedvinduet lukkes eller oppdateres, blir alle åpne popup-vinduer skrivebeskyttet. Hvis dette skjer, kan du fortsatt vise informasjonen i disse vinduene, men du kan ikke bruke den.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

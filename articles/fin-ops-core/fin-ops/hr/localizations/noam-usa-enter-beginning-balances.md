@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: anbichse
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8443bc5c63a90d80757ab4b7507502497c2aaa69
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 209636d6416a784d298bcfb134f5486c1f5cf202
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797790"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5568551"
 ---
 # <a name="enter-payroll-beginning-balances"></a>Angi startsaldoer for lønn
 
@@ -166,3 +165,6 @@ Det er mulig å tilbakeføre, og skrive inn transaksjoner på nytt. Hvis du vil 
 2. Klikk på **Ja** når meldingen «Når du tilbakefører denne lønnsoppgaven, opprettes en lønnsoppgave for tilbakeføring for å motregne denne lønnsoppgaven. Ingen lønnsoppgave kan redigeres. Du vil tilbakeføre denne lønnsoppgaven?" vises. 
 
 Når du tilbakefører lønnsoppgaven, kan du generere en ny lønnsoppgave for arbeideren fra inntektsoppgaven som du opprettet tidligere. Husk å rette opp eventuelle ukorrekte linjer på inntekstoppgaven før du genererer den nye lønnsoppgaven, og deretter generere nye lønnsoppgaver med riktig beløp. 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

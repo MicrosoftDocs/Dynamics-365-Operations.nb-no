@@ -1,6 +1,6 @@
 ---
 title: Vedlikeholde informasjon om ansattskade og -sykdom
-description: Vi anbefaler at du fullfører hele oppgaveveiledningen Oppsett for skade og sykdom først, ettersom noe av oppsettsinformasjonen brukes her.
+description: Det anbefales at du fullfører hele oppgaveveiledningen Oppsett for skade og sykdom først, ettersom noe av oppsettsinformasjonen brukes her.
 author: andreabichsel
 manager: tfehr
 ms.date: 08/29/2018
@@ -16,18 +16,20 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2ae5a14879a9e182f6f4604204f1cd6dd12576a3
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 4a2f53acaa65589c30546e31739abc38941eb795
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5130115"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5465444"
 ---
 # <a name="maintain-employee-injury-and-illness-information"></a>Vedlikeholde informasjon om ansattskade og -sykdom
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
-Vi anbefaler at du fullfører hele oppgaveveiledningen Oppsett for skade og sykdom først, ettersom noe av oppsettsinformasjonen brukes her. 
+
+Det anbefales at du fullfører hele oppgaveveiledningen Oppsett for skade og sykdom først, ettersom noe av oppsettsinformasjonen brukes her. 
 
 
 
@@ -93,3 +95,6 @@ Oppgaveveiledningen dekker de grunnleggende trinnene for oppretting av en skade-
 36. Klikk Lagre.
     * Saksstatusen kan oppdateres når som helst.  Sett saken til arbeid pågår hvis behandlingen av skaden eller sykdommen pågår.  Når du lukker hendelsen, kan du bare legge til eller fjerne kostnader, behandlinger eller arkiveringer knyttet til hendelsen.  Hvis du vil endre annen informasjon, åpner du saken på nytt.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
