@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 01/15/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: rhaertle
@@ -15,148 +14,148 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 7c4c0f9340085341ab60f97b55dacf36624e5f46
-ms.sourcegitcommit: b337b647a1be4908fc361fb6d962e96a69f301a9
+ms.openlocfilehash: b8866d43ea8b6b6bea34c01cbcbc9e3575081c4c
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "5036725"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5568386"
 ---
-# <a name="regression-suite-automation-tool-tutorial"></a><span data-ttu-id="51d43-104">Opplæring for Regression Suite Automation Tool</span><span class="sxs-lookup"><span data-stu-id="51d43-104">Regression suite automation tool tutorial</span></span>
+# <a name="regression-suite-automation-tool-tutorial"></a><span data-ttu-id="1d83f-104">Opplæring for Regression Suite Automation Tool</span><span class="sxs-lookup"><span data-stu-id="1d83f-104">Regression suite automation tool tutorial</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
 > [!NOTE]
-> <span data-ttu-id="51d43-105">Bruk nettleserverktøyene til å laste ned og lagre denne siden i PDF-format.</span><span class="sxs-lookup"><span data-stu-id="51d43-105">Use your internet browser tools to download and save this page in pdf format.</span></span>
+> <span data-ttu-id="1d83f-105">Bruk nettleserverktøyene til å laste ned og lagre denne siden i PDF-format.</span><span class="sxs-lookup"><span data-stu-id="1d83f-105">Use your internet browser tools to download and save this page in pdf format.</span></span>
 
-<span data-ttu-id="51d43-106">Denne opplæringen går gjennom noen av de avanserte funksjonene i Regression Suite Automation Tool (RSAT), inneholder en demonstrasjonsoppgave og beskriver strategier og ting som er viktig å lære.</span><span class="sxs-lookup"><span data-stu-id="51d43-106">This tutorial walks through some of the advanced features of the Regression suite automation tool (RSAT), includes a demo assignment, and describes strategy and key learning points.</span></span>
+<span data-ttu-id="1d83f-106">Denne opplæringen går gjennom noen av de avanserte funksjonene i Regression Suite Automation Tool (RSAT), inneholder en demonstrasjonsoppgave og beskriver strategier og ting som er viktig å lære.</span><span class="sxs-lookup"><span data-stu-id="1d83f-106">This tutorial walks through some of the advanced features of the Regression suite automation tool (RSAT), includes a demo assignment, and describes strategy and key learning points.</span></span>
 
-## <a name="notable-features-of-rsat-and-task-recorder"></a><span data-ttu-id="51d43-107">Funksjoner å merke seg i RSAT og Oppgaveopptaker</span><span class="sxs-lookup"><span data-stu-id="51d43-107">Notable Features of RSAT and Task recorder</span></span>
+## <a name="notable-features-of-rsat-and-task-recorder"></a><span data-ttu-id="1d83f-107">Funksjoner å merke seg i RSAT og Oppgaveopptaker</span><span class="sxs-lookup"><span data-stu-id="1d83f-107">Notable Features of RSAT and Task recorder</span></span>
 
-### <a name="validate-a-field-value"></a><span data-ttu-id="51d43-108">Valider en feltverdi</span><span class="sxs-lookup"><span data-stu-id="51d43-108">Validate a field value</span></span>
+### <a name="validate-a-field-value"></a><span data-ttu-id="1d83f-108">Valider en feltverdi</span><span class="sxs-lookup"><span data-stu-id="1d83f-108">Validate a field value</span></span>
 
-<span data-ttu-id="51d43-109">RSAT gjør det mulig å ta med valideringstrinn i testsaken for å validere forventede verdier.</span><span class="sxs-lookup"><span data-stu-id="51d43-109">RSAT allows you to include validation steps within your test case to validate expected values.</span></span> <span data-ttu-id="51d43-110">Hvis du vil ha informasjon om denne funksjonen, kan du se artikkelen [Validere forventede verdier](rsat-validate-expected.md).</span><span class="sxs-lookup"><span data-stu-id="51d43-110">For information about this feature, see the article [Validate expected values](rsat-validate-expected.md).</span></span>
+<span data-ttu-id="1d83f-109">RSAT gjør det mulig å ta med valideringstrinn i testsaken for å validere forventede verdier.</span><span class="sxs-lookup"><span data-stu-id="1d83f-109">RSAT allows you to include validation steps within your test case to validate expected values.</span></span> <span data-ttu-id="1d83f-110">Hvis du vil ha informasjon om denne funksjonen, kan du se artikkelen [Validere forventede verdier](rsat-validate-expected.md).</span><span class="sxs-lookup"><span data-stu-id="1d83f-110">For information about this feature, see the article [Validate expected values](rsat-validate-expected.md).</span></span>
 
-<span data-ttu-id="51d43-111">Følgende eksempel viser hvordan du kan bruke denne funksjonen til å validere om lagerbeholdningen er større enn 0 (null).</span><span class="sxs-lookup"><span data-stu-id="51d43-111">The following example shows how you can use this feature to validate whether the on-hand inventory is more than 0 (zero).</span></span>
+<span data-ttu-id="1d83f-111">Følgende eksempel viser hvordan du kan bruke denne funksjonen til å validere om lagerbeholdningen er større enn 0 (null).</span><span class="sxs-lookup"><span data-stu-id="1d83f-111">The following example shows how you can use this feature to validate whether the on-hand inventory is more than 0 (zero).</span></span>
 
-1. <span data-ttu-id="51d43-112">I demonstrasjonsdataene i firmaet **USMF** oppretter du et oppgaveopptak som har følgende trinn:</span><span class="sxs-lookup"><span data-stu-id="51d43-112">In the demo data in the **USMF** company, create a task recording that has the following steps:</span></span>
+1. <span data-ttu-id="1d83f-112">I demonstrasjonsdataene i firmaet **USMF** oppretter du et oppgaveopptak som har følgende trinn:</span><span class="sxs-lookup"><span data-stu-id="1d83f-112">In the demo data in the **USMF** company, create a task recording that has the following steps:</span></span>
 
-    1. <span data-ttu-id="51d43-113">Gå til **Behandling av produktinformasjon \> Produkter \> Frigitte produkter**.</span><span class="sxs-lookup"><span data-stu-id="51d43-113">Go to **Product information management \> Products \> Released products**.</span></span>
-    2. <span data-ttu-id="51d43-114">Bruk hurtigfilteret for å søke etter poster.</span><span class="sxs-lookup"><span data-stu-id="51d43-114">Use the Quick Filter to find records.</span></span> <span data-ttu-id="51d43-115">Du kan for eksempel filtrere på verdien **1000** for **Varenummer**-feltet.</span><span class="sxs-lookup"><span data-stu-id="51d43-115">For example, filter on a value of **1000** for the **Item number** field.</span></span>
-    3. <span data-ttu-id="51d43-116">Velg **Lagerbeholdning**.</span><span class="sxs-lookup"><span data-stu-id="51d43-116">Select **On-hand inventory**.</span></span>
-    4. <span data-ttu-id="51d43-117">Bruk hurtigfilteret for å søke etter poster.</span><span class="sxs-lookup"><span data-stu-id="51d43-117">Use the Quick Filter to find records.</span></span> <span data-ttu-id="51d43-118">Du kan for eksempel filtrere på verdien **1** for **Område**-feltet.</span><span class="sxs-lookup"><span data-stu-id="51d43-118">For example, filter on a value of **1** for the **Site** field.</span></span>
-    5. <span data-ttu-id="51d43-119">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="51d43-119">In the list, mark the selected row.</span></span>
-    6. <span data-ttu-id="51d43-120">Valider at verdien i feltet **Totalt tilgjengelig** er **411,0000000000000000**.</span><span class="sxs-lookup"><span data-stu-id="51d43-120">Validate that the value of the **Total available** field is **411.0000000000000000**.</span></span>
+    1. <span data-ttu-id="1d83f-113">Gå til **Behandling av produktinformasjon \> Produkter \> Frigitte produkter**.</span><span class="sxs-lookup"><span data-stu-id="1d83f-113">Go to **Product information management \> Products \> Released products**.</span></span>
+    2. <span data-ttu-id="1d83f-114">Bruk hurtigfilteret for å søke etter poster.</span><span class="sxs-lookup"><span data-stu-id="1d83f-114">Use the Quick Filter to find records.</span></span> <span data-ttu-id="1d83f-115">Du kan for eksempel filtrere på verdien **1000** for **Varenummer**-feltet.</span><span class="sxs-lookup"><span data-stu-id="1d83f-115">For example, filter on a value of **1000** for the **Item number** field.</span></span>
+    3. <span data-ttu-id="1d83f-116">Velg **Lagerbeholdning**.</span><span class="sxs-lookup"><span data-stu-id="1d83f-116">Select **On-hand inventory**.</span></span>
+    4. <span data-ttu-id="1d83f-117">Bruk hurtigfilteret for å søke etter poster.</span><span class="sxs-lookup"><span data-stu-id="1d83f-117">Use the Quick Filter to find records.</span></span> <span data-ttu-id="1d83f-118">Du kan for eksempel filtrere på verdien **1** for **Område**-feltet.</span><span class="sxs-lookup"><span data-stu-id="1d83f-118">For example, filter on a value of **1** for the **Site** field.</span></span>
+    5. <span data-ttu-id="1d83f-119">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="1d83f-119">In the list, mark the selected row.</span></span>
+    6. <span data-ttu-id="1d83f-120">Valider at verdien i feltet **Totalt tilgjengelig** er **411,0000000000000000**.</span><span class="sxs-lookup"><span data-stu-id="1d83f-120">Validate that the value of the **Total available** field is **411.0000000000000000**.</span></span>
 
-2. <span data-ttu-id="51d43-121">Lagre oppgaveopptaket som et **utvikleropptak**, og knytt det til testsaken i Azure Devops.</span><span class="sxs-lookup"><span data-stu-id="51d43-121">Save the task recording as a **developer recording** and attach it to your test case in Azure Devops.</span></span>
-3. <span data-ttu-id="51d43-122">Legg til testtilfellet i testplanen, og last inn testtilfellet i RSAT.</span><span class="sxs-lookup"><span data-stu-id="51d43-122">Add the test case to the test plan, and load the test case into RSAT.</span></span>
-4. <span data-ttu-id="51d43-123">Åpne Excel-parameterfilen, og gå til fanen **TestCaseSteps**.</span><span class="sxs-lookup"><span data-stu-id="51d43-123">Open the Excel parameter file and go to the **TestCaseSteps** tab.</span></span>
-5. <span data-ttu-id="51d43-124">Du kan validere om lagerbeholdningen alltid kommer til å være større enn **0**, ved å gå til trinnet **Valider totalt tilgjengelig** og endre verdien fra **411** til **0**.</span><span class="sxs-lookup"><span data-stu-id="51d43-124">To validate whether the inventory on-hand will always be more than **0**, go to the **Validate Total Available** step and change its value from **411** to **0**.</span></span> <span data-ttu-id="51d43-125">Endre verdien i **Operator**-feltet fra et likhetstegn (**=**) til et større enn-tegn (**\>**).</span><span class="sxs-lookup"><span data-stu-id="51d43-125">Change the value of the **Operator** field from an equal sign (**=**) to a greater than sign (**\>**).</span></span>
-6. <span data-ttu-id="51d43-126">Lagre og lukk Excel-parameterfilen.</span><span class="sxs-lookup"><span data-stu-id="51d43-126">Save and close the Excel parameter file.</span></span>
-7. <span data-ttu-id="51d43-127">Velg **Last opp** for å lagre endringene du har gjort i Excel-parameterfilen, i Azure DevOps.</span><span class="sxs-lookup"><span data-stu-id="51d43-127">Select **Upload** to save the changes that you made to the Excel parameter file to Azure DevOps.</span></span>
+2. <span data-ttu-id="1d83f-121">Lagre oppgaveopptaket som et **utvikleropptak**, og knytt det til testsaken i Azure Devops.</span><span class="sxs-lookup"><span data-stu-id="1d83f-121">Save the task recording as a **developer recording** and attach it to your test case in Azure Devops.</span></span>
+3. <span data-ttu-id="1d83f-122">Legg til testtilfellet i testplanen, og last inn testtilfellet i RSAT.</span><span class="sxs-lookup"><span data-stu-id="1d83f-122">Add the test case to the test plan, and load the test case into RSAT.</span></span>
+4. <span data-ttu-id="1d83f-123">Åpne Excel-parameterfilen, og gå til fanen **TestCaseSteps**.</span><span class="sxs-lookup"><span data-stu-id="1d83f-123">Open the Excel parameter file and go to the **TestCaseSteps** tab.</span></span>
+5. <span data-ttu-id="1d83f-124">Du kan validere om lagerbeholdningen alltid kommer til å være større enn **0**, ved å gå til trinnet **Valider totalt tilgjengelig** og endre verdien fra **411** til **0**.</span><span class="sxs-lookup"><span data-stu-id="1d83f-124">To validate whether the inventory on-hand will always be more than **0**, go to the **Validate Total Available** step and change its value from **411** to **0**.</span></span> <span data-ttu-id="1d83f-125">Endre verdien i **Operator**-feltet fra et likhetstegn (**=**) til et større enn-tegn (**\>**).</span><span class="sxs-lookup"><span data-stu-id="1d83f-125">Change the value of the **Operator** field from an equal sign (**=**) to a greater than sign (**\>**).</span></span>
+6. <span data-ttu-id="1d83f-126">Lagre og lukk Excel-parameterfilen.</span><span class="sxs-lookup"><span data-stu-id="1d83f-126">Save and close the Excel parameter file.</span></span>
+7. <span data-ttu-id="1d83f-127">Velg **Last opp** for å lagre endringene du har gjort i Excel-parameterfilen, i Azure DevOps.</span><span class="sxs-lookup"><span data-stu-id="1d83f-127">Select **Upload** to save the changes that you made to the Excel parameter file to Azure DevOps.</span></span>
 
-<span data-ttu-id="51d43-128">Hvis verdien i feltet **Totalt tilgjengelig** for den angitte varen i beholdningen er større enn 0 (null), blir testene bestått, uavhengig av den faktiske verdien for lagerbeholdningen.</span><span class="sxs-lookup"><span data-stu-id="51d43-128">Now, if the value of the **Total Available** field for the specified item in inventory is more than 0 (zero), tests will pass, regardless of the actual on-hand inventory value.</span></span>
+<span data-ttu-id="1d83f-128">Hvis verdien i feltet **Totalt tilgjengelig** for den angitte varen i beholdningen er større enn 0 (null), blir testene bestått, uavhengig av den faktiske verdien for lagerbeholdningen.</span><span class="sxs-lookup"><span data-stu-id="1d83f-128">Now, if the value of the **Total Available** field for the specified item in inventory is more than 0 (zero), tests will pass, regardless of the actual on-hand inventory value.</span></span>
 
-### <a name="saved-variables-and-chaining-of-test-cases"></a><span data-ttu-id="51d43-129">Lagrede variabler og kjeding av testsaker</span><span class="sxs-lookup"><span data-stu-id="51d43-129">Saved variables and chaining of test cases</span></span>
+### <a name="saved-variables-and-chaining-of-test-cases"></a><span data-ttu-id="1d83f-129">Lagrede variabler og kjeding av testsaker</span><span class="sxs-lookup"><span data-stu-id="1d83f-129">Saved variables and chaining of test cases</span></span>
 
-<span data-ttu-id="51d43-130">En av nøkkelfunksjonene i RSAT er kjeding av testtilfeller, det vil si muligheten for en test til å sende variabler til andre tester.</span><span class="sxs-lookup"><span data-stu-id="51d43-130">One of the key features of RSAT is the chaining of test cases, that is, the ability of a test to pass variables to other tests.</span></span> <span data-ttu-id="51d43-131">Hvis du vil ha mer informasjon, se artikkelen [Kopiere variabler for å kjede testtilfeller](rsat-chain-test-cases.md).</span><span class="sxs-lookup"><span data-stu-id="51d43-131">For more information, see the article [Copy variables to chain test cases](rsat-chain-test-cases.md).</span></span>
+<span data-ttu-id="1d83f-130">En av nøkkelfunksjonene i RSAT er kjeding av testtilfeller, det vil si muligheten for en test til å sende variabler til andre tester.</span><span class="sxs-lookup"><span data-stu-id="1d83f-130">One of the key features of RSAT is the chaining of test cases, that is, the ability of a test to pass variables to other tests.</span></span> <span data-ttu-id="1d83f-131">Hvis du vil ha mer informasjon, se artikkelen [Kopiere variabler for å kjede testtilfeller](rsat-chain-test-cases.md).</span><span class="sxs-lookup"><span data-stu-id="1d83f-131">For more information, see the article [Copy variables to chain test cases](rsat-chain-test-cases.md).</span></span>
 
-### <a name="derived-test-case"></a><span data-ttu-id="51d43-132">Avledet testtilfelle</span><span class="sxs-lookup"><span data-stu-id="51d43-132">Derived test case</span></span>
+### <a name="derived-test-case"></a><span data-ttu-id="1d83f-132">Avledet testtilfelle</span><span class="sxs-lookup"><span data-stu-id="1d83f-132">Derived test case</span></span>
 
-<span data-ttu-id="51d43-133">RSAT lar deg bruke samme oppgaveopptak med flere testtilfeller, slik at en oppgave kan kjøres med forskjellige datakonfigurasjoner.</span><span class="sxs-lookup"><span data-stu-id="51d43-133">RSAT lets you use the same task recording with multiple test cases, enabling a task to run with different data configurations.</span></span> <span data-ttu-id="51d43-134">Se artikkelen [Avledede testtilfeller](rsat-derived-test-cases.md) for mer informasjon.</span><span class="sxs-lookup"><span data-stu-id="51d43-134">See the article [Derived test cases](rsat-derived-test-cases.md) for more information.</span></span>
+<span data-ttu-id="1d83f-133">RSAT lar deg bruke samme oppgaveopptak med flere testtilfeller, slik at en oppgave kan kjøres med forskjellige datakonfigurasjoner.</span><span class="sxs-lookup"><span data-stu-id="1d83f-133">RSAT lets you use the same task recording with multiple test cases, enabling a task to run with different data configurations.</span></span> <span data-ttu-id="1d83f-134">Se artikkelen [Avledede testtilfeller](rsat-derived-test-cases.md) for mer informasjon.</span><span class="sxs-lookup"><span data-stu-id="1d83f-134">See the article [Derived test cases](rsat-derived-test-cases.md) for more information.</span></span>
 
-### <a name="validate-notifications-and-messages"></a><span data-ttu-id="51d43-135">Validere varslinger og meldinger</span><span class="sxs-lookup"><span data-stu-id="51d43-135">Validate notifications and messages</span></span>
+### <a name="validate-notifications-and-messages"></a><span data-ttu-id="1d83f-135">Validere varslinger og meldinger</span><span class="sxs-lookup"><span data-stu-id="1d83f-135">Validate notifications and messages</span></span>
 
-<span data-ttu-id="51d43-136">Denne funksjonen kan brukes til å validere om en handling er utført.</span><span class="sxs-lookup"><span data-stu-id="51d43-136">This feature can be used to validate whether an action occurred.</span></span> <span data-ttu-id="51d43-137">Når en produksjonsordre for eksempel opprettes, estimeres og deretter startes, viser appen meldingen "Produksjon – start" for å varsle deg om at produksjonsordren er startet.</span><span class="sxs-lookup"><span data-stu-id="51d43-137">For example, when a production order is created, estimated, and then started, the app shows a "Production – Start" message to notify you that the production order has been started.</span></span>
+<span data-ttu-id="1d83f-136">Denne funksjonen kan brukes til å validere om en handling er utført.</span><span class="sxs-lookup"><span data-stu-id="1d83f-136">This feature can be used to validate whether an action occurred.</span></span> <span data-ttu-id="1d83f-137">Når en produksjonsordre for eksempel opprettes, estimeres og deretter startes, viser appen meldingen "Produksjon – start" for å varsle deg om at produksjonsordren er startet.</span><span class="sxs-lookup"><span data-stu-id="1d83f-137">For example, when a production order is created, estimated, and then started, the app shows a "Production – Start" message to notify you that the production order has been started.</span></span>
 
 ![Varslingen Produksjon – start](./media/use_rsa_tool_05.png)
 
-<span data-ttu-id="51d43-139">Du kan validere denne meldingen via RSAT ved å angi meldingsteksten i fanen **Meldingsvalidering** i Excel-parameterfilen for det aktuelle opptaket.</span><span class="sxs-lookup"><span data-stu-id="51d43-139">You can validate this message through RSAT by entering the message text on the **MessageValidation** tab of the Excel parameter file for the appropriate recording.</span></span>
+<span data-ttu-id="1d83f-139">Du kan validere denne meldingen via RSAT ved å angi meldingsteksten i fanen **Meldingsvalidering** i Excel-parameterfilen for det aktuelle opptaket.</span><span class="sxs-lookup"><span data-stu-id="1d83f-139">You can validate this message through RSAT by entering the message text on the **MessageValidation** tab of the Excel parameter file for the appropriate recording.</span></span>
 
 ![Fanen Meldingsvalidering](./media/use_rsa_tool_06.png)
 
-<span data-ttu-id="51d43-141">Etter at testtilfellet er kjørt, sammenlignes meldingen i Excel-parameterfilen med meldingen som vises.</span><span class="sxs-lookup"><span data-stu-id="51d43-141">After the test case is run, the message in the Excel parameter file is compared to the message that is shown.</span></span> <span data-ttu-id="51d43-142">Hvis meldingene ikke samsvarer, mislykkes testtilfellet.</span><span class="sxs-lookup"><span data-stu-id="51d43-142">If the messages don't match, the test case will fail.</span></span>
+<span data-ttu-id="1d83f-141">Etter at testtilfellet er kjørt, sammenlignes meldingen i Excel-parameterfilen med meldingen som vises.</span><span class="sxs-lookup"><span data-stu-id="1d83f-141">After the test case is run, the message in the Excel parameter file is compared to the message that is shown.</span></span> <span data-ttu-id="1d83f-142">Hvis meldingene ikke samsvarer, mislykkes testtilfellet.</span><span class="sxs-lookup"><span data-stu-id="1d83f-142">If the messages don't match, the test case will fail.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="51d43-143">Du kan angi flere meldinger i fanen **Meldingsvalidering** i Excel-parameterfilen.</span><span class="sxs-lookup"><span data-stu-id="51d43-143">You can enter more than one message on the **MessageValidation** tab in the Excel parameter file.</span></span> <span data-ttu-id="51d43-144">Meldingene kan også være feilmeldinger eller advarsler i stedet for informasjonsmeldinger.</span><span class="sxs-lookup"><span data-stu-id="51d43-144">The messages also can be error or warning messages instead of informational messages.</span></span>
+> <span data-ttu-id="1d83f-143">Du kan angi flere meldinger i fanen **Meldingsvalidering** i Excel-parameterfilen.</span><span class="sxs-lookup"><span data-stu-id="1d83f-143">You can enter more than one message on the **MessageValidation** tab in the Excel parameter file.</span></span> <span data-ttu-id="1d83f-144">Meldingene kan også være feilmeldinger eller advarsler i stedet for informasjonsmeldinger.</span><span class="sxs-lookup"><span data-stu-id="1d83f-144">The messages also can be error or warning messages instead of informational messages.</span></span>
 
-### <a name="snapshot"></a><span data-ttu-id="51d43-145">Øyeblikksbilde</span><span class="sxs-lookup"><span data-stu-id="51d43-145">Snapshot</span></span>
+### <a name="snapshot"></a><span data-ttu-id="1d83f-145">Øyeblikksbilde</span><span class="sxs-lookup"><span data-stu-id="1d83f-145">Snapshot</span></span>
 
-<span data-ttu-id="51d43-146">Denne funksjonen tar skjermbilder av trinnene som ble utført under oppgaveopptaket.</span><span class="sxs-lookup"><span data-stu-id="51d43-146">This feature takes screenshots of the steps that were performed during task recording.</span></span> <span data-ttu-id="51d43-147">Dette er nyttig for revisjon og feilsøking.</span><span class="sxs-lookup"><span data-stu-id="51d43-147">It is useful for auditing or debugging purposes.</span></span>
+<span data-ttu-id="1d83f-146">Denne funksjonen tar skjermbilder av trinnene som ble utført under oppgaveopptaket.</span><span class="sxs-lookup"><span data-stu-id="1d83f-146">This feature takes screenshots of the steps that were performed during task recording.</span></span> <span data-ttu-id="1d83f-147">Dette er nyttig for revisjon og feilsøking.</span><span class="sxs-lookup"><span data-stu-id="1d83f-147">It is useful for auditing or debugging purposes.</span></span>
 
-- <span data-ttu-id="51d43-148">Hvis du vil bruke denne funksjonen, åpner du filen **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** under RSAT-installasjonsmappen (for eksempel **C:\\Programfiler (x86)\\Regression Suite Automation Tool**) og endrer verdien for følgende element fra **false** til **true**.</span><span class="sxs-lookup"><span data-stu-id="51d43-148">To use this feature, open the **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** file under the RSAT installation folder (for example, **C:\\Program Files (x86)\\Regression Suite Automation Tool**), and change the value of the following element from **false** to **true**.</span></span>
+- <span data-ttu-id="1d83f-148">Hvis du vil bruke denne funksjonen, åpner du filen **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** under RSAT-installasjonsmappen (for eksempel **C:\\Programfiler (x86)\\Regression Suite Automation Tool**) og endrer verdien for følgende element fra **false** til **true**.</span><span class="sxs-lookup"><span data-stu-id="1d83f-148">To use this feature, open the **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** file under the RSAT installation folder (for example, **C:\\Program Files (x86)\\Regression Suite Automation Tool**), and change the value of the following element from **false** to **true**.</span></span>
 
     ```xml
     <add key="VerboseSnapshotsEnabled" value="false" />
     ```
 
-<span data-ttu-id="51d43-149">Når du kjører test tilfellet, vil RSAT generere øyeblikksbilder av trinnene i avspillingsmappen for testtilfellene i det gjeldende katalogen.</span><span class="sxs-lookup"><span data-stu-id="51d43-149">When your run the test case, RSAT will generate snapshots (images) of the steps in the playback folder of the test cases in the working diretory.</span></span> <span data-ttu-id="51d43-150">Hvis du bruker en eldre versjon av RSAT, lagres bildene på **C:\\Brukere\\\<Username\>\\AppData\\Roaming\\regressionTool\\playback**, og en separat mappe opprettes for hvert testtilfelle som kjøres.</span><span class="sxs-lookup"><span data-stu-id="51d43-150">If you are using an older version of RSAT, the images are saved to **C:\\Users\\\<Username\>\\AppData\\Roaming\\regressionTool\\playback**, a separate folder is created for each test case that is run.</span></span>
+<span data-ttu-id="1d83f-149">Når du kjører test tilfellet, vil RSAT generere øyeblikksbilder av trinnene i avspillingsmappen for testtilfellene i det gjeldende katalogen.</span><span class="sxs-lookup"><span data-stu-id="1d83f-149">When your run the test case, RSAT will generate snapshots (images) of the steps in the playback folder of the test cases in the working diretory.</span></span> <span data-ttu-id="1d83f-150">Hvis du bruker en eldre versjon av RSAT, lagres bildene på **C:\\Brukere\\\<Username\>\\AppData\\Roaming\\regressionTool\\playback**, og en separat mappe opprettes for hvert testtilfelle som kjøres.</span><span class="sxs-lookup"><span data-stu-id="1d83f-150">If you are using an older version of RSAT, the images are saved to **C:\\Users\\\<Username\>\\AppData\\Roaming\\regressionTool\\playback**, a separate folder is created for each test case that is run.</span></span>
 
-## <a name="assignment"></a><span data-ttu-id="51d43-151">Tildeling</span><span class="sxs-lookup"><span data-stu-id="51d43-151">Assignment</span></span>
+## <a name="assignment"></a><span data-ttu-id="1d83f-151">Tildeling</span><span class="sxs-lookup"><span data-stu-id="1d83f-151">Assignment</span></span>
 
-### <a name="scenario"></a><span data-ttu-id="51d43-152">Scenario</span><span class="sxs-lookup"><span data-stu-id="51d43-152">Scenario</span></span>
+### <a name="scenario"></a><span data-ttu-id="1d83f-152">Scenario</span><span class="sxs-lookup"><span data-stu-id="1d83f-152">Scenario</span></span>
 
-1. <span data-ttu-id="51d43-153">Produktdesigneren oppretter et nytt frigitt produkt.</span><span class="sxs-lookup"><span data-stu-id="51d43-153">The product designer creates a new released product.</span></span>
-2. <span data-ttu-id="51d43-154">Produksjonssjefen starter en produksjonsordre for å bringe lagernivået til to stykker.</span><span class="sxs-lookup"><span data-stu-id="51d43-154">The production manager initiates a production order to bring the stock level to two pieces.</span></span>
-3. <span data-ttu-id="51d43-155">Produksjonen starter og avslutter produksjonsordren og kontrollerer at beholdningsantallet er to stykker.</span><span class="sxs-lookup"><span data-stu-id="51d43-155">Manufacturing starts and ends the production order, and verifies that the on-hand quantity is two pieces.</span></span>
-4. <span data-ttu-id="51d43-156">Salgsteamet mottar en ordre på fire stykker av det nye produktet.</span><span class="sxs-lookup"><span data-stu-id="51d43-156">The sales team receives an order for four pieces of the new product.</span></span> <span data-ttu-id="51d43-157">Salgsteamet oppdaterer derfor nettobehovet via den dynamiske planen.</span><span class="sxs-lookup"><span data-stu-id="51d43-157">Therefore, the sales team updates the net requirements via the dynamic plan.</span></span> <span data-ttu-id="51d43-158">Siden det ikke finnes mer kapasitet, settes standard ordrepolicy til «kjøp i stedet for å lage».</span><span class="sxs-lookup"><span data-stu-id="51d43-158">Because no additional capacity is available, the default order policy is set to "buy instead of make."</span></span> <span data-ttu-id="51d43-159">Det opprettes derfor et bestillingsforslag.</span><span class="sxs-lookup"><span data-stu-id="51d43-159">Therefore, a planned purchase order is created.</span></span>
-5. <span data-ttu-id="51d43-160">Innkjøperen legger til en leverandør, autoriserer bestillingsforslaget og bekrefter deretter bestillingen.</span><span class="sxs-lookup"><span data-stu-id="51d43-160">The buyer adds a vendor, firms the planned purchase order, and then confirms the purchase order.</span></span>
-6. <span data-ttu-id="51d43-161">Når varene som ble kjøpt, ankommer i butikken, søker butikkoperatøren etter den tilknyttede bestillingen og mottar varene.</span><span class="sxs-lookup"><span data-stu-id="51d43-161">When the goods that were purchased arrive at the store, the store operator searches the related purchase order and receives the goods.</span></span> <span data-ttu-id="51d43-162">Siden ordren nå er fullført, kan varene plukkes og pakkes mot salgsordren.</span><span class="sxs-lookup"><span data-stu-id="51d43-162">Because the order is now completed, goods can be picked and packed against the sales order.</span></span>
-7. <span data-ttu-id="51d43-163">Finans posterer innkjøpsfakturaen og salgsfakturaen.</span><span class="sxs-lookup"><span data-stu-id="51d43-163">Finance posts the purchase invoice and sales invoice.</span></span>
+1. <span data-ttu-id="1d83f-153">Produktdesigneren oppretter et nytt frigitt produkt.</span><span class="sxs-lookup"><span data-stu-id="1d83f-153">The product designer creates a new released product.</span></span>
+2. <span data-ttu-id="1d83f-154">Produksjonssjefen starter en produksjonsordre for å bringe lagernivået til to stykker.</span><span class="sxs-lookup"><span data-stu-id="1d83f-154">The production manager initiates a production order to bring the stock level to two pieces.</span></span>
+3. <span data-ttu-id="1d83f-155">Produksjonen starter og avslutter produksjonsordren og kontrollerer at beholdningsantallet er to stykker.</span><span class="sxs-lookup"><span data-stu-id="1d83f-155">Manufacturing starts and ends the production order, and verifies that the on-hand quantity is two pieces.</span></span>
+4. <span data-ttu-id="1d83f-156">Salgsteamet mottar en ordre på fire stykker av det nye produktet.</span><span class="sxs-lookup"><span data-stu-id="1d83f-156">The sales team receives an order for four pieces of the new product.</span></span> <span data-ttu-id="1d83f-157">Salgsteamet oppdaterer derfor nettobehovet via den dynamiske planen.</span><span class="sxs-lookup"><span data-stu-id="1d83f-157">Therefore, the sales team updates the net requirements via the dynamic plan.</span></span> <span data-ttu-id="1d83f-158">Siden det ikke finnes mer kapasitet, settes standard ordrepolicy til «kjøp i stedet for å lage».</span><span class="sxs-lookup"><span data-stu-id="1d83f-158">Because no additional capacity is available, the default order policy is set to "buy instead of make."</span></span> <span data-ttu-id="1d83f-159">Det opprettes derfor et bestillingsforslag.</span><span class="sxs-lookup"><span data-stu-id="1d83f-159">Therefore, a planned purchase order is created.</span></span>
+5. <span data-ttu-id="1d83f-160">Innkjøperen legger til en leverandør, autoriserer bestillingsforslaget og bekrefter deretter bestillingen.</span><span class="sxs-lookup"><span data-stu-id="1d83f-160">The buyer adds a vendor, firms the planned purchase order, and then confirms the purchase order.</span></span>
+6. <span data-ttu-id="1d83f-161">Når varene som ble kjøpt, ankommer i butikken, søker butikkoperatøren etter den tilknyttede bestillingen og mottar varene.</span><span class="sxs-lookup"><span data-stu-id="1d83f-161">When the goods that were purchased arrive at the store, the store operator searches the related purchase order and receives the goods.</span></span> <span data-ttu-id="1d83f-162">Siden ordren nå er fullført, kan varene plukkes og pakkes mot salgsordren.</span><span class="sxs-lookup"><span data-stu-id="1d83f-162">Because the order is now completed, goods can be picked and packed against the sales order.</span></span>
+7. <span data-ttu-id="1d83f-163">Finans posterer innkjøpsfakturaen og salgsfakturaen.</span><span class="sxs-lookup"><span data-stu-id="1d83f-163">Finance posts the purchase invoice and sales invoice.</span></span>
 
-<span data-ttu-id="51d43-164">Illustrasjonen nedenfor viser flyten for dette scenariet.</span><span class="sxs-lookup"><span data-stu-id="51d43-164">The following illustration shows the flow for this scenario.</span></span>
+<span data-ttu-id="1d83f-164">Illustrasjonen nedenfor viser flyten for dette scenariet.</span><span class="sxs-lookup"><span data-stu-id="1d83f-164">The following illustration shows the flow for this scenario.</span></span>
 
 ![Flyt for demonstrasjonsscenariet](./media/use_rsa_tool_14.png)
 
-<span data-ttu-id="51d43-166">Følgende illustrasjon viser hierarkiet for forretningsprosesser for dette scenarioet i LCS Forretningsprosessmodelerer.</span><span class="sxs-lookup"><span data-stu-id="51d43-166">The following illustration shows the business processes hierarchy for this scenario in the LCS Business Process Modeler.</span></span>
+<span data-ttu-id="1d83f-166">Følgende illustrasjon viser hierarkiet for forretningsprosesser for dette scenarioet i LCS Forretningsprosessmodelerer.</span><span class="sxs-lookup"><span data-stu-id="1d83f-166">The following illustration shows the business processes hierarchy for this scenario in the LCS Business Process Modeler.</span></span>
 
 ![Forretningsprosesser for demonstrasjonsscenariet](./media/use_rsa_tool_15.png)
 
-## <a name="strategy--key-learning"></a><span data-ttu-id="51d43-168">Strategi – viktige punkt</span><span class="sxs-lookup"><span data-stu-id="51d43-168">Strategy – Key learning</span></span>
+## <a name="strategy--key-learning"></a><span data-ttu-id="1d83f-168">Strategi – viktige punkt</span><span class="sxs-lookup"><span data-stu-id="1d83f-168">Strategy – Key learning</span></span>
 
-### <a name="data"></a><span data-ttu-id="51d43-169">Data</span><span class="sxs-lookup"><span data-stu-id="51d43-169">Data</span></span>
+### <a name="data"></a><span data-ttu-id="1d83f-169">Data</span><span class="sxs-lookup"><span data-stu-id="1d83f-169">Data</span></span>
 
-- <span data-ttu-id="51d43-170">Sørg for at du har representative datavolumer (en kopi av konfigurasjonsdata for produksjon / gylne konfigurasjonsdata pluss overførte data).</span><span class="sxs-lookup"><span data-stu-id="51d43-170">Make sure that you have representative data volumes (a copy of production/golden configuration data plus migrated data).</span></span>
-- <span data-ttu-id="51d43-171">Når du genererer nye data via Oppgaveopptaker, oppretter du testnavn som ikke kommer i konflikt med eksisterende navn (for eksempel ved å bruke et prefiks som **RSATxxx**).</span><span class="sxs-lookup"><span data-stu-id="51d43-171">When you generate new data via Task recorder, create test names that won't conflict with existing names (for example, use a prefix such as **RSATxxx**).</span></span>
-- <span data-ttu-id="51d43-172">Bruk tidsgjenoppretting av database for Azure til å kjøre tester på nytt i andre miljøer enn Lag 1-miljøer.</span><span class="sxs-lookup"><span data-stu-id="51d43-172">Use Azure Point-In-Time restore to rerun tests in non-Tier 1 environments.</span></span>
-- <span data-ttu-id="51d43-173">Selv om du kan bruke Excel-funksjonene **TILFELDIG** og **NÅ** til å generere en unik kombinasjon, er det langt fra lettvint.</span><span class="sxs-lookup"><span data-stu-id="51d43-173">Although you can use the **RANDOM** and **NOW** Excel functions to generate a unique combination, the effort is considerably high.</span></span> <span data-ttu-id="51d43-174">Her er et eksempel:</span><span class="sxs-lookup"><span data-stu-id="51d43-174">Here is an example.</span></span>
+- <span data-ttu-id="1d83f-170">Sørg for at du har representative datavolumer (en kopi av konfigurasjonsdata for produksjon / gylne konfigurasjonsdata pluss overførte data).</span><span class="sxs-lookup"><span data-stu-id="1d83f-170">Make sure that you have representative data volumes (a copy of production/golden configuration data plus migrated data).</span></span>
+- <span data-ttu-id="1d83f-171">Når du genererer nye data via Oppgaveopptaker, oppretter du testnavn som ikke kommer i konflikt med eksisterende navn (for eksempel ved å bruke et prefiks som **RSATxxx**).</span><span class="sxs-lookup"><span data-stu-id="1d83f-171">When you generate new data via Task recorder, create test names that won't conflict with existing names (for example, use a prefix such as **RSATxxx**).</span></span>
+- <span data-ttu-id="1d83f-172">Bruk tidsgjenoppretting av database for Azure til å kjøre tester på nytt i andre miljøer enn Lag 1-miljøer.</span><span class="sxs-lookup"><span data-stu-id="1d83f-172">Use Azure Point-In-Time restore to rerun tests in non-Tier 1 environments.</span></span>
+- <span data-ttu-id="1d83f-173">Selv om du kan bruke Excel-funksjonene **TILFELDIG** og **NÅ** til å generere en unik kombinasjon, er det langt fra lettvint.</span><span class="sxs-lookup"><span data-stu-id="1d83f-173">Although you can use the **RANDOM** and **NOW** Excel functions to generate a unique combination, the effort is considerably high.</span></span> <span data-ttu-id="1d83f-174">Her er et eksempel:</span><span class="sxs-lookup"><span data-stu-id="1d83f-174">Here is an example.</span></span>
 
     ```Excel
     product = "AT" &TEXT(NOW(),"yyymmddhhmm")
     ```
 
-### <a name="task-recorder"></a><span data-ttu-id="51d43-175">Oppgaveopptaker</span><span class="sxs-lookup"><span data-stu-id="51d43-175">Task recorder</span></span>
+### <a name="task-recorder"></a><span data-ttu-id="1d83f-175">Oppgaveopptaker</span><span class="sxs-lookup"><span data-stu-id="1d83f-175">Task recorder</span></span>
 
-- <span data-ttu-id="51d43-176">Definer scenarier før du starter opptaket.</span><span class="sxs-lookup"><span data-stu-id="51d43-176">Define scenarios before you start recording.</span></span> <span data-ttu-id="51d43-177">Et velstyrt prosjekt har forhåndsdefinerte testscenarier.</span><span class="sxs-lookup"><span data-stu-id="51d43-177">A well-managed project has predefined test scenarios.</span></span> <span data-ttu-id="51d43-178">Når du skal bygge et testtilfelle, vurderer du hvor forutsigbart resultatet av testscenariene er.</span><span class="sxs-lookup"><span data-stu-id="51d43-178">To build a test case, consider how predictable the outcome of those test scenarios is.</span></span>
-- <span data-ttu-id="51d43-179">Del opp opptak hvis de skal utføres av ulike roller, eller hvis det er ventetid eller en ekstern hendelse før neste trinn.</span><span class="sxs-lookup"><span data-stu-id="51d43-179">Split recordings if they are performed by different roles, or if there is waiting time or an external event before the next step.</span></span>
-- <span data-ttu-id="51d43-180">Unngå å velge verdier i lister.</span><span class="sxs-lookup"><span data-stu-id="51d43-180">Avoid selecting values in lists.</span></span> <span data-ttu-id="51d43-181">Bruk i stedet tekstformater, for eksempel **FIFO**, **AudioRM** og **SiteWH**.</span><span class="sxs-lookup"><span data-stu-id="51d43-181">Instead, use text formats, such as **FIFO**, **AudioRM**, and **SiteWH**.</span></span> <span data-ttu-id="51d43-182">Når du velger i en liste, blir posisjonen til verdien i listen tatt opp, ikke selve verdien.</span><span class="sxs-lookup"><span data-stu-id="51d43-182">When you select in a list, the position of the value in the list is recorded, not the value itself.</span></span> <span data-ttu-id="51d43-183">Hvis elementer blir lagt til i denne listen, kan posisjonen til verdien bli endret.</span><span class="sxs-lookup"><span data-stu-id="51d43-183">If items are added to that list, the position of the value can change.</span></span> <span data-ttu-id="51d43-184">Derfor bruker opptaket en annen parameter, og resten av scenariet kan bli påvirket.</span><span class="sxs-lookup"><span data-stu-id="51d43-184">Therefore, your recording will use a different parameter, and the rest of the scenario might be affected.</span></span>
-- <span data-ttu-id="51d43-185">Tenk på flerbrukerfunksjonalitet.</span><span class="sxs-lookup"><span data-stu-id="51d43-185">Think about multi-user behavior.</span></span> <span data-ttu-id="51d43-186">Du kan for eksempel ikke ta for gitt at den nyopprettede salgsordren alltid velges automatisk.</span><span class="sxs-lookup"><span data-stu-id="51d43-186">For example, don't assume that your newly created sales order will always be automatically selected.</span></span> <span data-ttu-id="51d43-187">Bruk i stedet alltid filteret til å finne riktig ordre.</span><span class="sxs-lookup"><span data-stu-id="51d43-187">Instead, always use the filter to find the correct order.</span></span>
-- <span data-ttu-id="51d43-188">Bruk Kopier-funksjonen i Oppgaveopptaker til å lagre navnet på et nyopprettet produkt, slik at det kan brukes i kjedede testtilfeller.</span><span class="sxs-lookup"><span data-stu-id="51d43-188">Use the Copy function in Task recorder to save the name of a newly created product so it can be used in chained test cases.</span></span>
-- <span data-ttu-id="51d43-189">Bruk Valider-funksjonen i Oppgaveopptaker til å angi kontrollpunkt som kontrollerer at trinn er kjørt på riktig måte.</span><span class="sxs-lookup"><span data-stu-id="51d43-189">Use the Validate function in Task recorder to set checkpoints that verify that steps have been run correctly.</span></span>
+- <span data-ttu-id="1d83f-176">Definer scenarier før du starter opptaket.</span><span class="sxs-lookup"><span data-stu-id="1d83f-176">Define scenarios before you start recording.</span></span> <span data-ttu-id="1d83f-177">Et velstyrt prosjekt har forhåndsdefinerte testscenarier.</span><span class="sxs-lookup"><span data-stu-id="1d83f-177">A well-managed project has predefined test scenarios.</span></span> <span data-ttu-id="1d83f-178">Når du skal bygge et testtilfelle, vurderer du hvor forutsigbart resultatet av testscenariene er.</span><span class="sxs-lookup"><span data-stu-id="1d83f-178">To build a test case, consider how predictable the outcome of those test scenarios is.</span></span>
+- <span data-ttu-id="1d83f-179">Del opp opptak hvis de skal utføres av ulike roller, eller hvis det er ventetid eller en ekstern hendelse før neste trinn.</span><span class="sxs-lookup"><span data-stu-id="1d83f-179">Split recordings if they are performed by different roles, or if there is waiting time or an external event before the next step.</span></span>
+- <span data-ttu-id="1d83f-180">Unngå å velge verdier i lister.</span><span class="sxs-lookup"><span data-stu-id="1d83f-180">Avoid selecting values in lists.</span></span> <span data-ttu-id="1d83f-181">Bruk i stedet tekstformater, for eksempel **FIFO**, **AudioRM** og **SiteWH**.</span><span class="sxs-lookup"><span data-stu-id="1d83f-181">Instead, use text formats, such as **FIFO**, **AudioRM**, and **SiteWH**.</span></span> <span data-ttu-id="1d83f-182">Når du velger i en liste, blir posisjonen til verdien i listen tatt opp, ikke selve verdien.</span><span class="sxs-lookup"><span data-stu-id="1d83f-182">When you select in a list, the position of the value in the list is recorded, not the value itself.</span></span> <span data-ttu-id="1d83f-183">Hvis elementer blir lagt til i denne listen, kan posisjonen til verdien bli endret.</span><span class="sxs-lookup"><span data-stu-id="1d83f-183">If items are added to that list, the position of the value can change.</span></span> <span data-ttu-id="1d83f-184">Derfor bruker opptaket en annen parameter, og resten av scenariet kan bli påvirket.</span><span class="sxs-lookup"><span data-stu-id="1d83f-184">Therefore, your recording will use a different parameter, and the rest of the scenario might be affected.</span></span>
+- <span data-ttu-id="1d83f-185">Tenk på flerbrukerfunksjonalitet.</span><span class="sxs-lookup"><span data-stu-id="1d83f-185">Think about multi-user behavior.</span></span> <span data-ttu-id="1d83f-186">Du kan for eksempel ikke ta for gitt at den nyopprettede salgsordren alltid velges automatisk.</span><span class="sxs-lookup"><span data-stu-id="1d83f-186">For example, don't assume that your newly created sales order will always be automatically selected.</span></span> <span data-ttu-id="1d83f-187">Bruk i stedet alltid filteret til å finne riktig ordre.</span><span class="sxs-lookup"><span data-stu-id="1d83f-187">Instead, always use the filter to find the correct order.</span></span>
+- <span data-ttu-id="1d83f-188">Bruk Kopier-funksjonen i Oppgaveopptaker til å lagre navnet på et nyopprettet produkt, slik at det kan brukes i kjedede testtilfeller.</span><span class="sxs-lookup"><span data-stu-id="1d83f-188">Use the Copy function in Task recorder to save the name of a newly created product so it can be used in chained test cases.</span></span>
+- <span data-ttu-id="1d83f-189">Bruk Valider-funksjonen i Oppgaveopptaker til å angi kontrollpunkt som kontrollerer at trinn er kjørt på riktig måte.</span><span class="sxs-lookup"><span data-stu-id="1d83f-189">Use the Validate function in Task recorder to set checkpoints that verify that steps have been run correctly.</span></span>
 
-### <a name="rsat"></a><span data-ttu-id="51d43-190">RSAT</span><span class="sxs-lookup"><span data-stu-id="51d43-190">RSAT</span></span>
+### <a name="rsat"></a><span data-ttu-id="1d83f-190">RSAT</span><span class="sxs-lookup"><span data-stu-id="1d83f-190">RSAT</span></span>
 
-- <span data-ttu-id="51d43-191">Hvis du vil kjøre testen i et annet firma, kan du endre firmaet i **Generelt**-fanen i Excel-parameterfilen.</span><span class="sxs-lookup"><span data-stu-id="51d43-191">To run the test in another company, you can change the company on the **General** tab of the Excel parameter file.</span></span> <span data-ttu-id="51d43-192">Sørg for at innstillingene og dataene er tilgjengelige i det nylig valgte firmaet.</span><span class="sxs-lookup"><span data-stu-id="51d43-192">Make sure that settings and data are available in the newly selected company.</span></span>
-- <span data-ttu-id="51d43-193">Du kan endre testbrukeren i **Generelt**-fanen i Excel-parameterfilen.</span><span class="sxs-lookup"><span data-stu-id="51d43-193">You can change the test user on the **General** tab of the Excel parameter file.</span></span> <span data-ttu-id="51d43-194">Angi e-post-ID-en til brukeren som skal kjøre testtilfellet.</span><span class="sxs-lookup"><span data-stu-id="51d43-194">Specify the email ID of the user who will run the test case.</span></span> <span data-ttu-id="51d43-195">På denne måten kan testtilfellet kjøres ved hjelp av sikkerhetstillatelsene til den angitte brukeren.</span><span class="sxs-lookup"><span data-stu-id="51d43-195">In this way, the test case can be run by using the security permissions of the specified user.</span></span>
-- <span data-ttu-id="51d43-196">Hvis du vil vente før testen startes, kan du definere en pause i **Generelt**-fanen i Excel-parameterfilen.</span><span class="sxs-lookup"><span data-stu-id="51d43-196">To wait before the test is started, you can define a pause on the **General** tab of the Excel parameter file.</span></span> <span data-ttu-id="51d43-197">Pausen kan brukes i en satsvis jobb (for eksempel hvis en arbeidsflyt må kjøres før neste trinn kan utføres).</span><span class="sxs-lookup"><span data-stu-id="51d43-197">This pause can be used in a batch job (for example, if a workflow must be run before the next step can be performed.)</span></span>
+- <span data-ttu-id="1d83f-191">Hvis du vil kjøre testen i et annet firma, kan du endre firmaet i **Generelt**-fanen i Excel-parameterfilen.</span><span class="sxs-lookup"><span data-stu-id="1d83f-191">To run the test in another company, you can change the company on the **General** tab of the Excel parameter file.</span></span> <span data-ttu-id="1d83f-192">Sørg for at innstillingene og dataene er tilgjengelige i det nylig valgte firmaet.</span><span class="sxs-lookup"><span data-stu-id="1d83f-192">Make sure that settings and data are available in the newly selected company.</span></span>
+- <span data-ttu-id="1d83f-193">Du kan endre testbrukeren i **Generelt**-fanen i Excel-parameterfilen.</span><span class="sxs-lookup"><span data-stu-id="1d83f-193">You can change the test user on the **General** tab of the Excel parameter file.</span></span> <span data-ttu-id="1d83f-194">Angi e-post-ID-en til brukeren som skal kjøre testtilfellet.</span><span class="sxs-lookup"><span data-stu-id="1d83f-194">Specify the email ID of the user who will run the test case.</span></span> <span data-ttu-id="1d83f-195">På denne måten kan testtilfellet kjøres ved hjelp av sikkerhetstillatelsene til den angitte brukeren.</span><span class="sxs-lookup"><span data-stu-id="1d83f-195">In this way, the test case can be run by using the security permissions of the specified user.</span></span>
+- <span data-ttu-id="1d83f-196">Hvis du vil vente før testen startes, kan du definere en pause i **Generelt**-fanen i Excel-parameterfilen.</span><span class="sxs-lookup"><span data-stu-id="1d83f-196">To wait before the test is started, you can define a pause on the **General** tab of the Excel parameter file.</span></span> <span data-ttu-id="1d83f-197">Pausen kan brukes i en satsvis jobb (for eksempel hvis en arbeidsflyt må kjøres før neste trinn kan utføres).</span><span class="sxs-lookup"><span data-stu-id="1d83f-197">This pause can be used in a batch job (for example, if a workflow must be run before the next step can be performed.)</span></span>
 
-## <a name="advanced-scripting"></a><span data-ttu-id="51d43-198">Avansert skripting</span><span class="sxs-lookup"><span data-stu-id="51d43-198">Advanced scripting</span></span>
+## <a name="advanced-scripting"></a><span data-ttu-id="1d83f-198">Avansert skripting</span><span class="sxs-lookup"><span data-stu-id="1d83f-198">Advanced scripting</span></span>
 
-### <a name="cli"></a><span data-ttu-id="51d43-199">CLI</span><span class="sxs-lookup"><span data-stu-id="51d43-199">CLI</span></span>
+### <a name="cli"></a><span data-ttu-id="1d83f-199">CLI</span><span class="sxs-lookup"><span data-stu-id="1d83f-199">CLI</span></span>
 
-<span data-ttu-id="51d43-200">RSAT kan kalles fra et **ledetekstvindu** eller et **PowerShell**-vindu.</span><span class="sxs-lookup"><span data-stu-id="51d43-200">RSAT can be called from a **Command Prompt** or **PowerShell** window.</span></span>
+<span data-ttu-id="1d83f-200">RSAT kan kalles fra et **ledetekstvindu** eller et **PowerShell**-vindu.</span><span class="sxs-lookup"><span data-stu-id="1d83f-200">RSAT can be called from a **Command Prompt** or **PowerShell** window.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="51d43-201">Kontroller at miljøvariabelen **TestRoot** er satt til RSAT-installasjonsbanen.</span><span class="sxs-lookup"><span data-stu-id="51d43-201">Verify that the **TestRoot** environment variable is set to the RSAT installation path.</span></span> <span data-ttu-id="51d43-202">(I Microsoft Windows åpner du **Kontrollpanel**, velger **System og sikkerhet \> System \> Avanserte systeminnstillinger** og deretter **Miljøvariabler**.)</span><span class="sxs-lookup"><span data-stu-id="51d43-202">(In Microsoft Windows, open **Control Panel**, select **System and Security \> System \> Advanced system settings**, and then select **Environment Variables**.)</span></span>
+> <span data-ttu-id="1d83f-201">Kontroller at miljøvariabelen **TestRoot** er satt til RSAT-installasjonsbanen.</span><span class="sxs-lookup"><span data-stu-id="1d83f-201">Verify that the **TestRoot** environment variable is set to the RSAT installation path.</span></span> <span data-ttu-id="1d83f-202">(I Microsoft Windows åpner du **Kontrollpanel**, velger **System og sikkerhet \> System \> Avanserte systeminnstillinger** og deretter **Miljøvariabler**.)</span><span class="sxs-lookup"><span data-stu-id="1d83f-202">(In Microsoft Windows, open **Control Panel**, select **System and Security \> System \> Advanced system settings**, and then select **Environment Variables**.)</span></span>
 
-1. <span data-ttu-id="51d43-203">Åpne et **ledetekstvindu** eller et **PowerShell**-vindu som administrator.</span><span class="sxs-lookup"><span data-stu-id="51d43-203">Open a **Command Prompt** or **PowerShell** window as an admin.</span></span>
-2. <span data-ttu-id="51d43-204">Gå til installasjonskatalogen for RSAT.</span><span class="sxs-lookup"><span data-stu-id="51d43-204">Navigate to the RSAT installation directory.</span></span>
+1. <span data-ttu-id="1d83f-203">Åpne et **ledetekstvindu** eller et **PowerShell**-vindu som administrator.</span><span class="sxs-lookup"><span data-stu-id="1d83f-203">Open a **Command Prompt** or **PowerShell** window as an admin.</span></span>
+2. <span data-ttu-id="1d83f-204">Gå til installasjonskatalogen for RSAT.</span><span class="sxs-lookup"><span data-stu-id="1d83f-204">Navigate to the RSAT installation directory.</span></span>
 
     ```Console
     cd "c:\Program Files (x86)\Regression Suite Automation Tool\"
     ```
 
-3. <span data-ttu-id="51d43-205">Vis alle kommandoer.</span><span class="sxs-lookup"><span data-stu-id="51d43-205">List all commands.</span></span>
+3. <span data-ttu-id="1d83f-205">Vis alle kommandoer.</span><span class="sxs-lookup"><span data-stu-id="1d83f-205">List all commands.</span></span>
 
     ```Console
     C:\Program Files (x86)\Regression Suite Automation Tool>Microsoft.Dynamics.RegressionSuite.ConsoleApp.exe help
@@ -191,254 +190,254 @@ ms.locfileid: "5036725"
         usage
     ```
 
-#### <a name=""></a><span data-ttu-id="51d43-206">?</span><span class="sxs-lookup"><span data-stu-id="51d43-206">?</span></span>
+#### <a name=""></a><span data-ttu-id="1d83f-206">?</span><span class="sxs-lookup"><span data-stu-id="1d83f-206">?</span></span>
 
-<span data-ttu-id="51d43-207">Viser hjelp om alle tilgjengelige kommandoer og deres parametere.</span><span class="sxs-lookup"><span data-stu-id="51d43-207">Shows help about all available commands and their parameters.</span></span>
+<span data-ttu-id="1d83f-207">Viser hjelp om alle tilgjengelige kommandoer og deres parametere.</span><span class="sxs-lookup"><span data-stu-id="1d83f-207">Shows help about all available commands and their parameters.</span></span>
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``?``**``[command]``
 
-##### <a name="-optional-parameters"></a><span data-ttu-id="51d43-208">?: Valgfrie parametere</span><span class="sxs-lookup"><span data-stu-id="51d43-208">?: Optional parameters</span></span>
+##### <a name="-optional-parameters"></a><span data-ttu-id="1d83f-208">?: Valgfrie parametere</span><span class="sxs-lookup"><span data-stu-id="1d83f-208">?: Optional parameters</span></span>
 
-<span data-ttu-id="51d43-209">`command`: Der ``[command]`` er en av kommandoene angitt nedenfor.</span><span class="sxs-lookup"><span data-stu-id="51d43-209">`command`: Where ``[command]`` is one of the commands specified below.</span></span>
+<span data-ttu-id="1d83f-209">`command`: Der ``[command]`` er en av kommandoene angitt nedenfor.</span><span class="sxs-lookup"><span data-stu-id="1d83f-209">`command`: Where ``[command]`` is one of the commands specified below.</span></span>
 
-#### <a name="about"></a><span data-ttu-id="51d43-210">about</span><span class="sxs-lookup"><span data-stu-id="51d43-210">about</span></span>
+#### <a name="about"></a><span data-ttu-id="1d83f-210">about</span><span class="sxs-lookup"><span data-stu-id="1d83f-210">about</span></span>
 
-<span data-ttu-id="51d43-211">Viser gjeldende versjon.</span><span class="sxs-lookup"><span data-stu-id="51d43-211">Displays the current version.</span></span>
+<span data-ttu-id="1d83f-211">Viser gjeldende versjon.</span><span class="sxs-lookup"><span data-stu-id="1d83f-211">Displays the current version.</span></span>
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``about``**
 
-#### <a name="cls"></a><span data-ttu-id="51d43-212">cls</span><span class="sxs-lookup"><span data-stu-id="51d43-212">cls</span></span>
+#### <a name="cls"></a><span data-ttu-id="1d83f-212">cls</span><span class="sxs-lookup"><span data-stu-id="1d83f-212">cls</span></span>
 
-<span data-ttu-id="51d43-213">Tømmer skjermen.</span><span class="sxs-lookup"><span data-stu-id="51d43-213">Clears the screen.</span></span>
+<span data-ttu-id="1d83f-213">Tømmer skjermen.</span><span class="sxs-lookup"><span data-stu-id="1d83f-213">Clears the screen.</span></span>
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``cls``**
 
-#### <a name="download"></a><span data-ttu-id="51d43-214">download</span><span class="sxs-lookup"><span data-stu-id="51d43-214">download</span></span>
+#### <a name="download"></a><span data-ttu-id="1d83f-214">download</span><span class="sxs-lookup"><span data-stu-id="1d83f-214">download</span></span>
 
-<span data-ttu-id="51d43-215">Laster ned vedlegg for den angitte testsaken til utdatamappen.</span><span class="sxs-lookup"><span data-stu-id="51d43-215">Downloads attachments for the specified test case to the output directory.</span></span>
-<span data-ttu-id="51d43-216">Du kan bruke ``list``-kommandoen til å hente alle tilgjengelige testsaker.</span><span class="sxs-lookup"><span data-stu-id="51d43-216">You can use the ``list`` command to get all available test cases.</span></span> <span data-ttu-id="51d43-217">Bruk en verdi fra den første kolonnen som en **test_case_id**-parameter.</span><span class="sxs-lookup"><span data-stu-id="51d43-217">Use any value from the first column as a **test_case_id** parameter.</span></span>
+<span data-ttu-id="1d83f-215">Laster ned vedlegg for den angitte testsaken til utdatamappen.</span><span class="sxs-lookup"><span data-stu-id="1d83f-215">Downloads attachments for the specified test case to the output directory.</span></span>
+<span data-ttu-id="1d83f-216">Du kan bruke ``list``-kommandoen til å hente alle tilgjengelige testsaker.</span><span class="sxs-lookup"><span data-stu-id="1d83f-216">You can use the ``list`` command to get all available test cases.</span></span> <span data-ttu-id="1d83f-217">Bruk en verdi fra den første kolonnen som en **test_case_id**-parameter.</span><span class="sxs-lookup"><span data-stu-id="1d83f-217">Use any value from the first column as a **test_case_id** parameter.</span></span>
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``download``**``[test_case_id] [output_dir]``
 
-##### <a name="download-required-parameters"></a><span data-ttu-id="51d43-218">download: nødvendige parametere</span><span class="sxs-lookup"><span data-stu-id="51d43-218">download: required parameters</span></span>
+##### <a name="download-required-parameters"></a><span data-ttu-id="1d83f-218">download: nødvendige parametere</span><span class="sxs-lookup"><span data-stu-id="1d83f-218">download: required parameters</span></span>
 
-+ <span data-ttu-id="51d43-219">`test_case_id`: representerer ID-en til testsaken.</span><span class="sxs-lookup"><span data-stu-id="51d43-219">`test_case_id`: Represents the test case ID.</span></span>
-+ <span data-ttu-id="51d43-220">`output_dir`: representerer utdatamappen.</span><span class="sxs-lookup"><span data-stu-id="51d43-220">`output_dir`: Represents the output directory.</span></span> <span data-ttu-id="51d43-221">Katalogen må finnes.</span><span class="sxs-lookup"><span data-stu-id="51d43-221">The directory must exist.</span></span>
++ <span data-ttu-id="1d83f-219">`test_case_id`: representerer ID-en til testsaken.</span><span class="sxs-lookup"><span data-stu-id="1d83f-219">`test_case_id`: Represents the test case ID.</span></span>
++ <span data-ttu-id="1d83f-220">`output_dir`: representerer utdatamappen.</span><span class="sxs-lookup"><span data-stu-id="1d83f-220">`output_dir`: Represents the output directory.</span></span> <span data-ttu-id="1d83f-221">Katalogen må finnes.</span><span class="sxs-lookup"><span data-stu-id="1d83f-221">The directory must exist.</span></span>
 
-##### <a name="download-examples"></a><span data-ttu-id="51d43-222">download: eksempler</span><span class="sxs-lookup"><span data-stu-id="51d43-222">download: examples</span></span>
+##### <a name="download-examples"></a><span data-ttu-id="1d83f-222">download: eksempler</span><span class="sxs-lookup"><span data-stu-id="1d83f-222">download: examples</span></span>
 
 `download 123 c:\temp\rsat`
 
 `download 765 c:\rsat\last`
 
-#### <a name="edit"></a><span data-ttu-id="51d43-223">edit</span><span class="sxs-lookup"><span data-stu-id="51d43-223">edit</span></span>
+#### <a name="edit"></a><span data-ttu-id="1d83f-223">edit</span><span class="sxs-lookup"><span data-stu-id="1d83f-223">edit</span></span>
 
-<span data-ttu-id="51d43-224">Lar deg åpne parameterfilen i Excel-programmet og redigere den.</span><span class="sxs-lookup"><span data-stu-id="51d43-224">Allows you to open parameters file in Excel program and edit it.</span></span>
+<span data-ttu-id="1d83f-224">Lar deg åpne parameterfilen i Excel-programmet og redigere den.</span><span class="sxs-lookup"><span data-stu-id="1d83f-224">Allows you to open parameters file in Excel program and edit it.</span></span>
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``edit``**``[excel_file]``
 
-##### <a name="edit-required-parameters"></a><span data-ttu-id="51d43-225">edit: nødvendige parametere</span><span class="sxs-lookup"><span data-stu-id="51d43-225">edit: required parameters</span></span>
+##### <a name="edit-required-parameters"></a><span data-ttu-id="1d83f-225">edit: nødvendige parametere</span><span class="sxs-lookup"><span data-stu-id="1d83f-225">edit: required parameters</span></span>
 
-+ <span data-ttu-id="51d43-226">`excel_file`: må inneholde en fullstendig bane til en eksisterende Excel-fil.</span><span class="sxs-lookup"><span data-stu-id="51d43-226">`excel_file`: Must contain a full path to an existing Excel file.</span></span>
++ <span data-ttu-id="1d83f-226">`excel_file`: må inneholde en fullstendig bane til en eksisterende Excel-fil.</span><span class="sxs-lookup"><span data-stu-id="1d83f-226">`excel_file`: Must contain a full path to an existing Excel file.</span></span>
 
-##### <a name="edit-examples"></a><span data-ttu-id="51d43-227">edit: eksempler</span><span class="sxs-lookup"><span data-stu-id="51d43-227">edit: examples</span></span>
+##### <a name="edit-examples"></a><span data-ttu-id="1d83f-227">edit: eksempler</span><span class="sxs-lookup"><span data-stu-id="1d83f-227">edit: examples</span></span>
 
 `edit c:\RSAT\TestCase_123_Base.xlsx`
 
 `edit e:\temp\TestCase_456_Base.xlsx`
 
-#### <a name="generate"></a><span data-ttu-id="51d43-228">generate</span><span class="sxs-lookup"><span data-stu-id="51d43-228">generate</span></span>
+#### <a name="generate"></a><span data-ttu-id="1d83f-228">generate</span><span class="sxs-lookup"><span data-stu-id="1d83f-228">generate</span></span>
 
-<span data-ttu-id="51d43-229">Genererer testkjøring og parameterfiler for den angitte testsaken i utdatamappen.</span><span class="sxs-lookup"><span data-stu-id="51d43-229">Generates test execution and parameter files for the specified test case in the output directory.</span></span> <span data-ttu-id="51d43-230">Du kan bruke ``list``-kommandoen til å hente alle tilgjengelige testsaker.</span><span class="sxs-lookup"><span data-stu-id="51d43-230">You can use the ``list`` command to get all available test cases.</span></span> <span data-ttu-id="51d43-231">Bruk en verdi fra den første kolonnen som en **test_case_id**-parameter.</span><span class="sxs-lookup"><span data-stu-id="51d43-231">Use any value from the first column as a **test_case_id** parameter.</span></span>
+<span data-ttu-id="1d83f-229">Genererer testkjøring og parameterfiler for den angitte testsaken i utdatamappen.</span><span class="sxs-lookup"><span data-stu-id="1d83f-229">Generates test execution and parameter files for the specified test case in the output directory.</span></span> <span data-ttu-id="1d83f-230">Du kan bruke ``list``-kommandoen til å hente alle tilgjengelige testsaker.</span><span class="sxs-lookup"><span data-stu-id="1d83f-230">You can use the ``list`` command to get all available test cases.</span></span> <span data-ttu-id="1d83f-231">Bruk en verdi fra den første kolonnen som en **test_case_id**-parameter.</span><span class="sxs-lookup"><span data-stu-id="1d83f-231">Use any value from the first column as a **test_case_id** parameter.</span></span>
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generate``**``[test_case_id] [output_dir]``
 
-##### <a name="generate-required-parameters"></a><span data-ttu-id="51d43-232">generere: nødvendige parametere</span><span class="sxs-lookup"><span data-stu-id="51d43-232">generate: required parameters</span></span>
+##### <a name="generate-required-parameters"></a><span data-ttu-id="1d83f-232">generere: nødvendige parametere</span><span class="sxs-lookup"><span data-stu-id="1d83f-232">generate: required parameters</span></span>
 
-+ <span data-ttu-id="51d43-233">`test_case_id`: representerer ID-en til testsaken.</span><span class="sxs-lookup"><span data-stu-id="51d43-233">`test_case_id`: Represents the test case ID.</span></span>
-+ <span data-ttu-id="51d43-234">`output_dir`: representerer utdatamappen.</span><span class="sxs-lookup"><span data-stu-id="51d43-234">`output_dir`: Represents the output directory.</span></span> <span data-ttu-id="51d43-235">Katalogen må finnes.</span><span class="sxs-lookup"><span data-stu-id="51d43-235">The directory must exist.</span></span>
++ <span data-ttu-id="1d83f-233">`test_case_id`: representerer ID-en til testsaken.</span><span class="sxs-lookup"><span data-stu-id="1d83f-233">`test_case_id`: Represents the test case ID.</span></span>
++ <span data-ttu-id="1d83f-234">`output_dir`: representerer utdatamappen.</span><span class="sxs-lookup"><span data-stu-id="1d83f-234">`output_dir`: Represents the output directory.</span></span> <span data-ttu-id="1d83f-235">Katalogen må finnes.</span><span class="sxs-lookup"><span data-stu-id="1d83f-235">The directory must exist.</span></span>
 
-##### <a name="generate-examples"></a><span data-ttu-id="51d43-236">generere: eksempler</span><span class="sxs-lookup"><span data-stu-id="51d43-236">generate: examples</span></span>
+##### <a name="generate-examples"></a><span data-ttu-id="1d83f-236">generere: eksempler</span><span class="sxs-lookup"><span data-stu-id="1d83f-236">generate: examples</span></span>
 
 `generate 123 c:\temp\rsat`
 
 `generate 765 c:\rsat\last`
 
-#### <a name="generatederived"></a><span data-ttu-id="51d43-237">generatederived</span><span class="sxs-lookup"><span data-stu-id="51d43-237">generatederived</span></span>
+#### <a name="generatederived"></a><span data-ttu-id="1d83f-237">generatederived</span><span class="sxs-lookup"><span data-stu-id="1d83f-237">generatederived</span></span>
 
-<span data-ttu-id="51d43-238">Genererer en ny testsak, avledet fra den angitte testsaken.</span><span class="sxs-lookup"><span data-stu-id="51d43-238">Generates a new test case, derived from the provided test case.</span></span> <span data-ttu-id="51d43-239">Du kan bruke ``list``-kommandoen til å hente alle tilgjengelige testsaker.</span><span class="sxs-lookup"><span data-stu-id="51d43-239">You can use the ``list`` command to get all available test cases.</span></span> <span data-ttu-id="51d43-240">Bruk en verdi fra den første kolonnen som en **test_case_id**-parameter.</span><span class="sxs-lookup"><span data-stu-id="51d43-240">Use any value from the first column as a **test_case_id** parameter.</span></span>
+<span data-ttu-id="1d83f-238">Genererer en ny testsak, avledet fra den angitte testsaken.</span><span class="sxs-lookup"><span data-stu-id="1d83f-238">Generates a new test case, derived from the provided test case.</span></span> <span data-ttu-id="1d83f-239">Du kan bruke ``list``-kommandoen til å hente alle tilgjengelige testsaker.</span><span class="sxs-lookup"><span data-stu-id="1d83f-239">You can use the ``list`` command to get all available test cases.</span></span> <span data-ttu-id="1d83f-240">Bruk en verdi fra den første kolonnen som en **test_case_id**-parameter.</span><span class="sxs-lookup"><span data-stu-id="1d83f-240">Use any value from the first column as a **test_case_id** parameter.</span></span>
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatederived``**``[parent_test_case_id] [test_plan_id] [test_suite_id]``
 
-##### <a name="generatederived-required-parameters"></a><span data-ttu-id="51d43-241">generatederived: nødvendige parametere</span><span class="sxs-lookup"><span data-stu-id="51d43-241">generatederived: required parameters</span></span>
+##### <a name="generatederived-required-parameters"></a><span data-ttu-id="1d83f-241">generatederived: nødvendige parametere</span><span class="sxs-lookup"><span data-stu-id="1d83f-241">generatederived: required parameters</span></span>
 
-+ <span data-ttu-id="51d43-242">`parent_test_case_id`: representerer ID-en til den overordnede testsaken.</span><span class="sxs-lookup"><span data-stu-id="51d43-242">`parent_test_case_id`: Represents the parent test case ID.</span></span>
-+ <span data-ttu-id="51d43-243">`test_plan_id`: representerer ID-en til testplanen.</span><span class="sxs-lookup"><span data-stu-id="51d43-243">`test_plan_id`: Represents the test plan ID.</span></span>
-+ <span data-ttu-id="51d43-244">`test_suite_id`: representerer ID-en til testverktøyet.</span><span class="sxs-lookup"><span data-stu-id="51d43-244">`test_suite_id`: Represents the test suite ID.</span></span>
++ <span data-ttu-id="1d83f-242">`parent_test_case_id`: representerer ID-en til den overordnede testsaken.</span><span class="sxs-lookup"><span data-stu-id="1d83f-242">`parent_test_case_id`: Represents the parent test case ID.</span></span>
++ <span data-ttu-id="1d83f-243">`test_plan_id`: representerer ID-en til testplanen.</span><span class="sxs-lookup"><span data-stu-id="1d83f-243">`test_plan_id`: Represents the test plan ID.</span></span>
++ <span data-ttu-id="1d83f-244">`test_suite_id`: representerer ID-en til testverktøyet.</span><span class="sxs-lookup"><span data-stu-id="1d83f-244">`test_suite_id`: Represents the test suite ID.</span></span>
 
-##### <a name="generatederived-examples"></a><span data-ttu-id="51d43-245">generatederived: eksempler</span><span class="sxs-lookup"><span data-stu-id="51d43-245">generatederived: examples</span></span>
+##### <a name="generatederived-examples"></a><span data-ttu-id="1d83f-245">generatederived: eksempler</span><span class="sxs-lookup"><span data-stu-id="1d83f-245">generatederived: examples</span></span>
 
 `generatederived 123 8901 678`
 
-#### <a name="generatetestonly"></a><span data-ttu-id="51d43-246">generatetestonly</span><span class="sxs-lookup"><span data-stu-id="51d43-246">generatetestonly</span></span>
+#### <a name="generatetestonly"></a><span data-ttu-id="1d83f-246">generatetestonly</span><span class="sxs-lookup"><span data-stu-id="1d83f-246">generatetestonly</span></span>
 
-<span data-ttu-id="51d43-247">Genererer bare testkjøringsfil for den angitte testsaken i utdatamappen.</span><span class="sxs-lookup"><span data-stu-id="51d43-247">Generates only test execution file for the specified test case in the output directory.</span></span> <span data-ttu-id="51d43-248">Du kan bruke ``list``-kommandoen til å hente alle tilgjengelige testsaker.</span><span class="sxs-lookup"><span data-stu-id="51d43-248">You can use the ``list`` command to get all available test cases.</span></span> <span data-ttu-id="51d43-249">Bruk en verdi fra den første kolonnen som en **test_case_id**-parameter.</span><span class="sxs-lookup"><span data-stu-id="51d43-249">Use any value from the first column as a **test_case_id** parameter.</span></span>
+<span data-ttu-id="1d83f-247">Genererer bare testkjøringsfil for den angitte testsaken i utdatamappen.</span><span class="sxs-lookup"><span data-stu-id="1d83f-247">Generates only test execution file for the specified test case in the output directory.</span></span> <span data-ttu-id="1d83f-248">Du kan bruke ``list``-kommandoen til å hente alle tilgjengelige testsaker.</span><span class="sxs-lookup"><span data-stu-id="1d83f-248">You can use the ``list`` command to get all available test cases.</span></span> <span data-ttu-id="1d83f-249">Bruk en verdi fra den første kolonnen som en **test_case_id**-parameter.</span><span class="sxs-lookup"><span data-stu-id="1d83f-249">Use any value from the first column as a **test_case_id** parameter.</span></span>
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatetestonly``**``[test_case_id] [output_dir]``
 
-##### <a name="generatetestonly-required-parameters"></a><span data-ttu-id="51d43-250">generatetestonly: nødvendige parametere</span><span class="sxs-lookup"><span data-stu-id="51d43-250">generatetestonly: required parameters</span></span>
+##### <a name="generatetestonly-required-parameters"></a><span data-ttu-id="1d83f-250">generatetestonly: nødvendige parametere</span><span class="sxs-lookup"><span data-stu-id="1d83f-250">generatetestonly: required parameters</span></span>
 
-+ <span data-ttu-id="51d43-251">`test_case_id`: representerer ID-en til testsaken.</span><span class="sxs-lookup"><span data-stu-id="51d43-251">`test_case_id`: Represents the test case ID.</span></span>
-+ <span data-ttu-id="51d43-252">`output_dir`: representerer utdatamappen.</span><span class="sxs-lookup"><span data-stu-id="51d43-252">`output_dir`: Represents the output directory.</span></span> <span data-ttu-id="51d43-253">Katalogen må finnes.</span><span class="sxs-lookup"><span data-stu-id="51d43-253">The directory must exist.</span></span>
++ <span data-ttu-id="1d83f-251">`test_case_id`: representerer ID-en til testsaken.</span><span class="sxs-lookup"><span data-stu-id="1d83f-251">`test_case_id`: Represents the test case ID.</span></span>
++ <span data-ttu-id="1d83f-252">`output_dir`: representerer utdatamappen.</span><span class="sxs-lookup"><span data-stu-id="1d83f-252">`output_dir`: Represents the output directory.</span></span> <span data-ttu-id="1d83f-253">Katalogen må finnes.</span><span class="sxs-lookup"><span data-stu-id="1d83f-253">The directory must exist.</span></span>
 
-##### <a name="generatetestonly-examples"></a><span data-ttu-id="51d43-254">generatetestonly: eksempler</span><span class="sxs-lookup"><span data-stu-id="51d43-254">generatetestonly: examples</span></span>
+##### <a name="generatetestonly-examples"></a><span data-ttu-id="1d83f-254">generatetestonly: eksempler</span><span class="sxs-lookup"><span data-stu-id="1d83f-254">generatetestonly: examples</span></span>
 
 `generatetestonly 123 c:\temp\rsat`
 
 `generatetestonly 765 c:\rsat\last`
 
-#### <a name="generatetestsuite"></a><span data-ttu-id="51d43-255">generatetestsuite</span><span class="sxs-lookup"><span data-stu-id="51d43-255">generatetestsuite</span></span>
+#### <a name="generatetestsuite"></a><span data-ttu-id="1d83f-255">generatetestsuite</span><span class="sxs-lookup"><span data-stu-id="1d83f-255">generatetestsuite</span></span>
 
-<span data-ttu-id="51d43-256">Genererer alle testsaker for det angitte verktøyet i utdatamappen.</span><span class="sxs-lookup"><span data-stu-id="51d43-256">Generates all test cases for the specified suite in the output directory.</span></span> <span data-ttu-id="51d43-257">Du kan bruke ``listtestsuitenames``-kommandoen til å hente alle tilgjengelige testverktøy.</span><span class="sxs-lookup"><span data-stu-id="51d43-257">You can use ``listtestsuitenames`` command to get all available test suits.</span></span> <span data-ttu-id="51d43-258">Bruk en verdi fra kolonnen som en **test_suite_name**-parameter.</span><span class="sxs-lookup"><span data-stu-id="51d43-258">Use any value from the column as a **test_suite_name** parameter.</span></span>
+<span data-ttu-id="1d83f-256">Genererer alle testsaker for det angitte verktøyet i utdatamappen.</span><span class="sxs-lookup"><span data-stu-id="1d83f-256">Generates all test cases for the specified suite in the output directory.</span></span> <span data-ttu-id="1d83f-257">Du kan bruke ``listtestsuitenames``-kommandoen til å hente alle tilgjengelige testverktøy.</span><span class="sxs-lookup"><span data-stu-id="1d83f-257">You can use ``listtestsuitenames`` command to get all available test suits.</span></span> <span data-ttu-id="1d83f-258">Bruk en verdi fra kolonnen som en **test_suite_name**-parameter.</span><span class="sxs-lookup"><span data-stu-id="1d83f-258">Use any value from the column as a **test_suite_name** parameter.</span></span>
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatetestsuite``**``[test_suite_name] [output_dir]``
 
-##### <a name="generatetestsuite-required-parameters"></a><span data-ttu-id="51d43-259">generatetestsuite: nødvendige parametere</span><span class="sxs-lookup"><span data-stu-id="51d43-259">generatetestsuite: required parameters</span></span>
+##### <a name="generatetestsuite-required-parameters"></a><span data-ttu-id="1d83f-259">generatetestsuite: nødvendige parametere</span><span class="sxs-lookup"><span data-stu-id="1d83f-259">generatetestsuite: required parameters</span></span>
 
-+ <span data-ttu-id="51d43-260">`test_suite_name`: representerer navnet på testverktøyet.</span><span class="sxs-lookup"><span data-stu-id="51d43-260">`test_suite_name`: Represents the test suite name.</span></span>
-+ <span data-ttu-id="51d43-261">`output_dir`: representerer utdatamappen.</span><span class="sxs-lookup"><span data-stu-id="51d43-261">`output_dir`: Represents the output directory.</span></span> <span data-ttu-id="51d43-262">Katalogen må finnes.</span><span class="sxs-lookup"><span data-stu-id="51d43-262">The directory must exist.</span></span>
++ <span data-ttu-id="1d83f-260">`test_suite_name`: representerer navnet på testverktøyet.</span><span class="sxs-lookup"><span data-stu-id="1d83f-260">`test_suite_name`: Represents the test suite name.</span></span>
++ <span data-ttu-id="1d83f-261">`output_dir`: representerer utdatamappen.</span><span class="sxs-lookup"><span data-stu-id="1d83f-261">`output_dir`: Represents the output directory.</span></span> <span data-ttu-id="1d83f-262">Katalogen må finnes.</span><span class="sxs-lookup"><span data-stu-id="1d83f-262">The directory must exist.</span></span>
 
-##### <a name="generatetestsuite-examples"></a><span data-ttu-id="51d43-263">generatetestsuite: eksempler</span><span class="sxs-lookup"><span data-stu-id="51d43-263">generatetestsuite: examples</span></span>
+##### <a name="generatetestsuite-examples"></a><span data-ttu-id="1d83f-263">generatetestsuite: eksempler</span><span class="sxs-lookup"><span data-stu-id="1d83f-263">generatetestsuite: examples</span></span>
 
 `generatetestsuite Tests c:\temp\rsat`
 
 `generatetestsuite Purchase c:\rsat\last`
 
-#### <a name="help"></a><span data-ttu-id="51d43-264">help</span><span class="sxs-lookup"><span data-stu-id="51d43-264">help</span></span>
+#### <a name="help"></a><span data-ttu-id="1d83f-264">help</span><span class="sxs-lookup"><span data-stu-id="1d83f-264">help</span></span>
 
-<span data-ttu-id="51d43-265">Identisk med [?](#section)-</span><span class="sxs-lookup"><span data-stu-id="51d43-265">Identical to the [?](#section)</span></span> <span data-ttu-id="51d43-266">kommandoen.</span><span class="sxs-lookup"><span data-stu-id="51d43-266">command.</span></span>
+<span data-ttu-id="1d83f-265">Identisk med [?](#section)-</span><span class="sxs-lookup"><span data-stu-id="1d83f-265">Identical to the [?](#section)</span></span> <span data-ttu-id="1d83f-266">kommandoen.</span><span class="sxs-lookup"><span data-stu-id="1d83f-266">command.</span></span>
 
-#### <a name="list"></a><span data-ttu-id="51d43-267">listen</span><span class="sxs-lookup"><span data-stu-id="51d43-267">list</span></span>
+#### <a name="list"></a><span data-ttu-id="1d83f-267">listen</span><span class="sxs-lookup"><span data-stu-id="1d83f-267">list</span></span>
 
-<span data-ttu-id="51d43-268">Viser alle tilgjengelige testsaker.</span><span class="sxs-lookup"><span data-stu-id="51d43-268">Lists all available test cases.</span></span>
+<span data-ttu-id="1d83f-268">Viser alle tilgjengelige testsaker.</span><span class="sxs-lookup"><span data-stu-id="1d83f-268">Lists all available test cases.</span></span>
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``list``**
 
-#### <a name="listtestplans"></a><span data-ttu-id="51d43-269">listtestplans</span><span class="sxs-lookup"><span data-stu-id="51d43-269">listtestplans</span></span>
+#### <a name="listtestplans"></a><span data-ttu-id="1d83f-269">listtestplans</span><span class="sxs-lookup"><span data-stu-id="1d83f-269">listtestplans</span></span>
 
-<span data-ttu-id="51d43-270">Viser alle tilgjengelige testplaner.</span><span class="sxs-lookup"><span data-stu-id="51d43-270">Lists all available test plans.</span></span>
+<span data-ttu-id="1d83f-270">Viser alle tilgjengelige testplaner.</span><span class="sxs-lookup"><span data-stu-id="1d83f-270">Lists all available test plans.</span></span>
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestplans``**
 
-#### <a name="listtestsuite"></a><span data-ttu-id="51d43-271">listtestsuite</span><span class="sxs-lookup"><span data-stu-id="51d43-271">listtestsuite</span></span>
+#### <a name="listtestsuite"></a><span data-ttu-id="1d83f-271">listtestsuite</span><span class="sxs-lookup"><span data-stu-id="1d83f-271">listtestsuite</span></span>
 
-<span data-ttu-id="51d43-272">Viser testsaker for det angitte testverktøyet.</span><span class="sxs-lookup"><span data-stu-id="51d43-272">Lists test cases for the specified test suite.</span></span> <span data-ttu-id="51d43-273">Du kan bruke ``listtestsuitenames``-kommandoen til å hente alle tilgjengelige testverktøy.</span><span class="sxs-lookup"><span data-stu-id="51d43-273">You can use ``listtestsuitenames`` command to get all available test suites.</span></span> <span data-ttu-id="51d43-274">Bruk en verdi fra den første kolonnen som en **suite_name**-parameter.</span><span class="sxs-lookup"><span data-stu-id="51d43-274">Use any value from first column as **suite_name** parameter.</span></span>
+<span data-ttu-id="1d83f-272">Viser testsaker for det angitte testverktøyet.</span><span class="sxs-lookup"><span data-stu-id="1d83f-272">Lists test cases for the specified test suite.</span></span> <span data-ttu-id="1d83f-273">Du kan bruke ``listtestsuitenames``-kommandoen til å hente alle tilgjengelige testverktøy.</span><span class="sxs-lookup"><span data-stu-id="1d83f-273">You can use ``listtestsuitenames`` command to get all available test suites.</span></span> <span data-ttu-id="1d83f-274">Bruk en verdi fra den første kolonnen som en **suite_name**-parameter.</span><span class="sxs-lookup"><span data-stu-id="1d83f-274">Use any value from first column as **suite_name** parameter.</span></span>
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestsuite``**``[suite_name]``
 
-##### <a name="listtestsuite-required-parameters"></a><span data-ttu-id="51d43-275">listtestsuite: nødvendige parametere</span><span class="sxs-lookup"><span data-stu-id="51d43-275">listtestsuite: required parameters</span></span>
+##### <a name="listtestsuite-required-parameters"></a><span data-ttu-id="1d83f-275">listtestsuite: nødvendige parametere</span><span class="sxs-lookup"><span data-stu-id="1d83f-275">listtestsuite: required parameters</span></span>
 
-+ <span data-ttu-id="51d43-276">`suite_name`: navnet på det ønskede verktøyet.</span><span class="sxs-lookup"><span data-stu-id="51d43-276">`suite_name`: Name of the desired suite.</span></span>
++ <span data-ttu-id="1d83f-276">`suite_name`: navnet på det ønskede verktøyet.</span><span class="sxs-lookup"><span data-stu-id="1d83f-276">`suite_name`: Name of the desired suite.</span></span>
 
-##### <a name="listtestsuite-examples"></a><span data-ttu-id="51d43-277">listtestsuite: eksempler</span><span class="sxs-lookup"><span data-stu-id="51d43-277">listtestsuite: examples</span></span>
+##### <a name="listtestsuite-examples"></a><span data-ttu-id="1d83f-277">listtestsuite: eksempler</span><span class="sxs-lookup"><span data-stu-id="1d83f-277">listtestsuite: examples</span></span>
 
 `listtestsuite "sample suite name"`
 
 `listtestsuite NameOfTheSuite`
 
-#### <a name="listtestsuitenames"></a><span data-ttu-id="51d43-278">listtestsuitenames</span><span class="sxs-lookup"><span data-stu-id="51d43-278">listtestsuitenames</span></span>
+#### <a name="listtestsuitenames"></a><span data-ttu-id="1d83f-278">listtestsuitenames</span><span class="sxs-lookup"><span data-stu-id="1d83f-278">listtestsuitenames</span></span>
 
-<span data-ttu-id="51d43-279">Viser alle tilgjengelige testverktøy.</span><span class="sxs-lookup"><span data-stu-id="51d43-279">Lists all available test suites.</span></span>
+<span data-ttu-id="1d83f-279">Viser alle tilgjengelige testverktøy.</span><span class="sxs-lookup"><span data-stu-id="1d83f-279">Lists all available test suites.</span></span>
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestsuitenames``**
 
-#### <a name="playback"></a><span data-ttu-id="51d43-280">playback</span><span class="sxs-lookup"><span data-stu-id="51d43-280">playback</span></span>
+#### <a name="playback"></a><span data-ttu-id="1d83f-280">playback</span><span class="sxs-lookup"><span data-stu-id="1d83f-280">playback</span></span>
 
-<span data-ttu-id="51d43-281">Spiller av en testsak ved hjelp av en Excel-fil.</span><span class="sxs-lookup"><span data-stu-id="51d43-281">Plays back a test case using an Excel file.</span></span>
+<span data-ttu-id="1d83f-281">Spiller av en testsak ved hjelp av en Excel-fil.</span><span class="sxs-lookup"><span data-stu-id="1d83f-281">Plays back a test case using an Excel file.</span></span>
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playback``**``[excel_file]``
 
-##### <a name="playback-required-parameters"></a><span data-ttu-id="51d43-282">playback: nødvendige parametere</span><span class="sxs-lookup"><span data-stu-id="51d43-282">playback: required parameters</span></span>
+##### <a name="playback-required-parameters"></a><span data-ttu-id="1d83f-282">playback: nødvendige parametere</span><span class="sxs-lookup"><span data-stu-id="1d83f-282">playback: required parameters</span></span>
 
-+ <span data-ttu-id="51d43-283">`excel_file`: en fullstendig bane til Excel-filen.</span><span class="sxs-lookup"><span data-stu-id="51d43-283">`excel_file`: A full path to the Excel file.</span></span> <span data-ttu-id="51d43-284">Filen må finnes.</span><span class="sxs-lookup"><span data-stu-id="51d43-284">File must exist.</span></span>
++ <span data-ttu-id="1d83f-283">`excel_file`: en fullstendig bane til Excel-filen.</span><span class="sxs-lookup"><span data-stu-id="1d83f-283">`excel_file`: A full path to the Excel file.</span></span> <span data-ttu-id="1d83f-284">Filen må finnes.</span><span class="sxs-lookup"><span data-stu-id="1d83f-284">File must exist.</span></span>
 
-##### <a name="playback-examples"></a><span data-ttu-id="51d43-285">playback: eksempler</span><span class="sxs-lookup"><span data-stu-id="51d43-285">playback: examples</span></span>
+##### <a name="playback-examples"></a><span data-ttu-id="1d83f-285">playback: eksempler</span><span class="sxs-lookup"><span data-stu-id="1d83f-285">playback: examples</span></span>
 
 `playback c:\RSAT\TestCaseParameters\sample1.xlsx`
 
 `playback e:\temp\test.xlsx`
 
-#### <a name="playbackbyid"></a><span data-ttu-id="51d43-286">playbackbyid</span><span class="sxs-lookup"><span data-stu-id="51d43-286">playbackbyid</span></span>
+#### <a name="playbackbyid"></a><span data-ttu-id="1d83f-286">playbackbyid</span><span class="sxs-lookup"><span data-stu-id="1d83f-286">playbackbyid</span></span>
 
-<span data-ttu-id="51d43-287">Spiller av flere testsaker samtidig.</span><span class="sxs-lookup"><span data-stu-id="51d43-287">Plays back multiple test cases at once.</span></span> <span data-ttu-id="51d43-288">Du kan bruke ``list``-kommandoen til å hente alle tilgjengelige testsaker.</span><span class="sxs-lookup"><span data-stu-id="51d43-288">You can use the ``list`` command to get all available test cases.</span></span> <span data-ttu-id="51d43-289">Bruk en verdi fra den første kolonnen som en **test_case_id**-parameter.</span><span class="sxs-lookup"><span data-stu-id="51d43-289">Use any value from the first column as a **test_case_id** parameter.</span></span>
+<span data-ttu-id="1d83f-287">Spiller av flere testsaker samtidig.</span><span class="sxs-lookup"><span data-stu-id="1d83f-287">Plays back multiple test cases at once.</span></span> <span data-ttu-id="1d83f-288">Du kan bruke ``list``-kommandoen til å hente alle tilgjengelige testsaker.</span><span class="sxs-lookup"><span data-stu-id="1d83f-288">You can use the ``list`` command to get all available test cases.</span></span> <span data-ttu-id="1d83f-289">Bruk en verdi fra den første kolonnen som en **test_case_id**-parameter.</span><span class="sxs-lookup"><span data-stu-id="1d83f-289">Use any value from the first column as a **test_case_id** parameter.</span></span>
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbackbyid``**``[test_case_id1] [test_case_id2] ... [test_case_idN]``
 
-##### <a name="playbackbyid-required-parameters"></a><span data-ttu-id="51d43-290">playbackbyid: nødvendige parametere</span><span class="sxs-lookup"><span data-stu-id="51d43-290">playbackbyid: required parameters</span></span>
+##### <a name="playbackbyid-required-parameters"></a><span data-ttu-id="1d83f-290">playbackbyid: nødvendige parametere</span><span class="sxs-lookup"><span data-stu-id="1d83f-290">playbackbyid: required parameters</span></span>
 
-+ <span data-ttu-id="51d43-291">`test_case_id1`: ID for eksisterende testsak.</span><span class="sxs-lookup"><span data-stu-id="51d43-291">`test_case_id1`: ID of exisiting test case.</span></span>
-+ <span data-ttu-id="51d43-292">`test_case_id2`: ID for eksisterende testsak.</span><span class="sxs-lookup"><span data-stu-id="51d43-292">`test_case_id2`: ID of exisiting test case.</span></span>
-+ <span data-ttu-id="51d43-293">`test_case_idN`: ID for eksisterende testsak.</span><span class="sxs-lookup"><span data-stu-id="51d43-293">`test_case_idN`: ID of exisiting test case.</span></span>
++ <span data-ttu-id="1d83f-291">`test_case_id1`: ID for eksisterende testsak.</span><span class="sxs-lookup"><span data-stu-id="1d83f-291">`test_case_id1`: ID of exisiting test case.</span></span>
++ <span data-ttu-id="1d83f-292">`test_case_id2`: ID for eksisterende testsak.</span><span class="sxs-lookup"><span data-stu-id="1d83f-292">`test_case_id2`: ID of exisiting test case.</span></span>
++ <span data-ttu-id="1d83f-293">`test_case_idN`: ID for eksisterende testsak.</span><span class="sxs-lookup"><span data-stu-id="1d83f-293">`test_case_idN`: ID of exisiting test case.</span></span>
 
-##### <a name="playbackbyid-examples"></a><span data-ttu-id="51d43-294">playbackbyid: eksempler</span><span class="sxs-lookup"><span data-stu-id="51d43-294">playbackbyid: examples</span></span>
+##### <a name="playbackbyid-examples"></a><span data-ttu-id="1d83f-294">playbackbyid: eksempler</span><span class="sxs-lookup"><span data-stu-id="1d83f-294">playbackbyid: examples</span></span>
 
 `playbackbyid 878`
 
 `playbackbyid 2345 667 135`
 
-#### <a name="playbackmany"></a><span data-ttu-id="51d43-295">playbackmany</span><span class="sxs-lookup"><span data-stu-id="51d43-295">playbackmany</span></span>
+#### <a name="playbackmany"></a><span data-ttu-id="1d83f-295">playbackmany</span><span class="sxs-lookup"><span data-stu-id="1d83f-295">playbackmany</span></span>
 
-<span data-ttu-id="51d43-296">Spiller av mange testsaker samtidig ved hjelp av Excel-filer.</span><span class="sxs-lookup"><span data-stu-id="51d43-296">Plays back many test cases at once, using Excel files.</span></span>
+<span data-ttu-id="1d83f-296">Spiller av mange testsaker samtidig ved hjelp av Excel-filer.</span><span class="sxs-lookup"><span data-stu-id="1d83f-296">Plays back many test cases at once, using Excel files.</span></span>
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbackmany``**``[excel_file1] [excel_file2] ... [excel_fileN]``
 
-##### <a name="playbackmany-required-parameters"></a><span data-ttu-id="51d43-297">playbackmany: nødvendige parametere</span><span class="sxs-lookup"><span data-stu-id="51d43-297">playbackmany: required parameters</span></span>
+##### <a name="playbackmany-required-parameters"></a><span data-ttu-id="1d83f-297">playbackmany: nødvendige parametere</span><span class="sxs-lookup"><span data-stu-id="1d83f-297">playbackmany: required parameters</span></span>
 
-+ <span data-ttu-id="51d43-298">`excel_file1`: fullstendig bane til Excel-filen.</span><span class="sxs-lookup"><span data-stu-id="51d43-298">`excel_file1`: Full path to the Excel file.</span></span> <span data-ttu-id="51d43-299">Filen må finnes.</span><span class="sxs-lookup"><span data-stu-id="51d43-299">File must exist.</span></span>
-+ <span data-ttu-id="51d43-300">`excel_file2`: fullstendig bane til Excel-filen.</span><span class="sxs-lookup"><span data-stu-id="51d43-300">`excel_file2`: Full path to the Excel file.</span></span> <span data-ttu-id="51d43-301">Filen må finnes.</span><span class="sxs-lookup"><span data-stu-id="51d43-301">File must exist.</span></span>
-+ <span data-ttu-id="51d43-302">`excel_fileN`: fullstendig bane til Excel-filen.</span><span class="sxs-lookup"><span data-stu-id="51d43-302">`excel_fileN`: Full path to the Excel file.</span></span> <span data-ttu-id="51d43-303">Filen må finnes.</span><span class="sxs-lookup"><span data-stu-id="51d43-303">File must exist.</span></span>
++ <span data-ttu-id="1d83f-298">`excel_file1`: fullstendig bane til Excel-filen.</span><span class="sxs-lookup"><span data-stu-id="1d83f-298">`excel_file1`: Full path to the Excel file.</span></span> <span data-ttu-id="1d83f-299">Filen må finnes.</span><span class="sxs-lookup"><span data-stu-id="1d83f-299">File must exist.</span></span>
++ <span data-ttu-id="1d83f-300">`excel_file2`: fullstendig bane til Excel-filen.</span><span class="sxs-lookup"><span data-stu-id="1d83f-300">`excel_file2`: Full path to the Excel file.</span></span> <span data-ttu-id="1d83f-301">Filen må finnes.</span><span class="sxs-lookup"><span data-stu-id="1d83f-301">File must exist.</span></span>
++ <span data-ttu-id="1d83f-302">`excel_fileN`: fullstendig bane til Excel-filen.</span><span class="sxs-lookup"><span data-stu-id="1d83f-302">`excel_fileN`: Full path to the Excel file.</span></span> <span data-ttu-id="1d83f-303">Filen må finnes.</span><span class="sxs-lookup"><span data-stu-id="1d83f-303">File must exist.</span></span>
 
-##### <a name="playbackmany-examples"></a><span data-ttu-id="51d43-304">playbackmany: eksempler</span><span class="sxs-lookup"><span data-stu-id="51d43-304">playbackmany: examples</span></span>
+##### <a name="playbackmany-examples"></a><span data-ttu-id="1d83f-304">playbackmany: eksempler</span><span class="sxs-lookup"><span data-stu-id="1d83f-304">playbackmany: examples</span></span>
 
 `playbackmany c:\RSAT\TestCaseParameters\param1.xlsx`
 
 `playbackmany e:\temp\test.xlsx f:\rsat\sample1.xlsx c:\RSAT\sample2.xlsx`
 
-#### <a name="playbacksuite"></a><span data-ttu-id="51d43-305">playbacksuite</span><span class="sxs-lookup"><span data-stu-id="51d43-305">playbacksuite</span></span>
+#### <a name="playbacksuite"></a><span data-ttu-id="1d83f-305">playbacksuite</span><span class="sxs-lookup"><span data-stu-id="1d83f-305">playbacksuite</span></span>
 
-<span data-ttu-id="51d43-306">Spiller av alle testsaker fra det angitte testverktøyet.</span><span class="sxs-lookup"><span data-stu-id="51d43-306">Plays back all test cases from the specified test suite.</span></span>
-<span data-ttu-id="51d43-307">Du kan bruke ``listtestsuitenames``-kommandoen til å hente alle tilgjengelige testverktøy.</span><span class="sxs-lookup"><span data-stu-id="51d43-307">You can use ``listtestsuitenames`` command to get all available test suites.</span></span> <span data-ttu-id="51d43-308">Bruk en verdi fra den første kolonnen som en **suite_name**-parameter.</span><span class="sxs-lookup"><span data-stu-id="51d43-308">Use any value from first column as **suite_name** parameter.</span></span>
+<span data-ttu-id="1d83f-306">Spiller av alle testsaker fra det angitte testverktøyet.</span><span class="sxs-lookup"><span data-stu-id="1d83f-306">Plays back all test cases from the specified test suite.</span></span>
+<span data-ttu-id="1d83f-307">Du kan bruke ``listtestsuitenames``-kommandoen til å hente alle tilgjengelige testverktøy.</span><span class="sxs-lookup"><span data-stu-id="1d83f-307">You can use ``listtestsuitenames`` command to get all available test suites.</span></span> <span data-ttu-id="1d83f-308">Bruk en verdi fra den første kolonnen som en **suite_name**-parameter.</span><span class="sxs-lookup"><span data-stu-id="1d83f-308">Use any value from first column as **suite_name** parameter.</span></span>
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbacksuite``**``[suite_name]``
 
-##### <a name="playbacksuite-required-parameters"></a><span data-ttu-id="51d43-309">playbacksuite: nødvendige parametere</span><span class="sxs-lookup"><span data-stu-id="51d43-309">playbacksuite: required parameters</span></span>
+##### <a name="playbacksuite-required-parameters"></a><span data-ttu-id="1d83f-309">playbacksuite: nødvendige parametere</span><span class="sxs-lookup"><span data-stu-id="1d83f-309">playbacksuite: required parameters</span></span>
 
-+ <span data-ttu-id="51d43-310">`suite_name`: navnet på det ønskede verktøyet.</span><span class="sxs-lookup"><span data-stu-id="51d43-310">`suite_name`: Name of the desired suite.</span></span>
++ <span data-ttu-id="1d83f-310">`suite_name`: navnet på det ønskede verktøyet.</span><span class="sxs-lookup"><span data-stu-id="1d83f-310">`suite_name`: Name of the desired suite.</span></span>
 
-##### <a name="playbacksuite-examples"></a><span data-ttu-id="51d43-311">playbacksuite: eksempler</span><span class="sxs-lookup"><span data-stu-id="51d43-311">playbacksuite: examples</span></span>
+##### <a name="playbacksuite-examples"></a><span data-ttu-id="1d83f-311">playbacksuite: eksempler</span><span class="sxs-lookup"><span data-stu-id="1d83f-311">playbacksuite: examples</span></span>
 
 `playbacksuite suiteName`
 
 `playbacksuite sample_suite`
 
-#### <a name="quit"></a><span data-ttu-id="51d43-312">quit</span><span class="sxs-lookup"><span data-stu-id="51d43-312">quit</span></span>
+#### <a name="quit"></a><span data-ttu-id="1d83f-312">quit</span><span class="sxs-lookup"><span data-stu-id="1d83f-312">quit</span></span>
 
-<span data-ttu-id="51d43-313">Lukker appen.</span><span class="sxs-lookup"><span data-stu-id="51d43-313">Closes the  application.</span></span>
+<span data-ttu-id="1d83f-313">Lukker appen.</span><span class="sxs-lookup"><span data-stu-id="1d83f-313">Closes the  application.</span></span>
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``quit``**
 
-#### <a name="upload"></a><span data-ttu-id="51d43-314">upload</span><span class="sxs-lookup"><span data-stu-id="51d43-314">upload</span></span>
+#### <a name="upload"></a><span data-ttu-id="1d83f-314">upload</span><span class="sxs-lookup"><span data-stu-id="1d83f-314">upload</span></span>
 
-<span data-ttu-id="51d43-315">Laster opp alle filer som hører til angitt testverktøy eller testsaker.</span><span class="sxs-lookup"><span data-stu-id="51d43-315">Uploads all files belonging to the specified test suite or test cases.</span></span>
+<span data-ttu-id="1d83f-315">Laster opp alle filer som hører til angitt testverktøy eller testsaker.</span><span class="sxs-lookup"><span data-stu-id="1d83f-315">Uploads all files belonging to the specified test suite or test cases.</span></span>
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``upload``**``[suite_name] [testcase_id]``
 
-#### <a name="upload-required-parameters"></a><span data-ttu-id="51d43-316">upload: nødvendige parametere</span><span class="sxs-lookup"><span data-stu-id="51d43-316">upload: required parameters</span></span>
+#### <a name="upload-required-parameters"></a><span data-ttu-id="1d83f-316">upload: nødvendige parametere</span><span class="sxs-lookup"><span data-stu-id="1d83f-316">upload: required parameters</span></span>
 
-+ <span data-ttu-id="51d43-317">`suite_name`: alle filer som hører til angitt testverktøy, lastes opp.</span><span class="sxs-lookup"><span data-stu-id="51d43-317">`suite_name`: All files belonging to the specified test suite will be uploaded.</span></span>
-+ <span data-ttu-id="51d43-318">`testcase_id`: alle filer som hører til angitte testsaker, lastes opp.</span><span class="sxs-lookup"><span data-stu-id="51d43-318">`testcase_id`: All files beloning to the specified test case(s) will be uploaded.</span></span>
++ <span data-ttu-id="1d83f-317">`suite_name`: alle filer som hører til angitt testverktøy, lastes opp.</span><span class="sxs-lookup"><span data-stu-id="1d83f-317">`suite_name`: All files belonging to the specified test suite will be uploaded.</span></span>
++ <span data-ttu-id="1d83f-318">`testcase_id`: alle filer som hører til angitte testsaker, lastes opp.</span><span class="sxs-lookup"><span data-stu-id="1d83f-318">`testcase_id`: All files beloning to the specified test case(s) will be uploaded.</span></span>
 
-##### <a name="upload-examples"></a><span data-ttu-id="51d43-319">upload: eksempler</span><span class="sxs-lookup"><span data-stu-id="51d43-319">upload: examples</span></span>
+##### <a name="upload-examples"></a><span data-ttu-id="1d83f-319">upload: eksempler</span><span class="sxs-lookup"><span data-stu-id="1d83f-319">upload: examples</span></span>
 
 `upload sample_suite`
 
@@ -446,43 +445,43 @@ ms.locfileid: "5036725"
 
 `upload 123 456`
 
-#### <a name="uploadrecording"></a><span data-ttu-id="51d43-320">uploadrecording</span><span class="sxs-lookup"><span data-stu-id="51d43-320">uploadrecording</span></span>
+#### <a name="uploadrecording"></a><span data-ttu-id="1d83f-320">uploadrecording</span><span class="sxs-lookup"><span data-stu-id="1d83f-320">uploadrecording</span></span>
 
-<span data-ttu-id="51d43-321">Laster opp bare opptaksfilen som hører til angitte testsaker.</span><span class="sxs-lookup"><span data-stu-id="51d43-321">Uploads only recording file belonging to the specified test cases.</span></span>
+<span data-ttu-id="1d83f-321">Laster opp bare opptaksfilen som hører til angitte testsaker.</span><span class="sxs-lookup"><span data-stu-id="1d83f-321">Uploads only recording file belonging to the specified test cases.</span></span>
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``uploadrecording``**``[testcase_id]``
 
-##### <a name="uploadrecording-required-parameters"></a><span data-ttu-id="51d43-322">uploadrecording: nødvendige parametere</span><span class="sxs-lookup"><span data-stu-id="51d43-322">uploadrecording: required parameters</span></span>
+##### <a name="uploadrecording-required-parameters"></a><span data-ttu-id="1d83f-322">uploadrecording: nødvendige parametere</span><span class="sxs-lookup"><span data-stu-id="1d83f-322">uploadrecording: required parameters</span></span>
 
-+ <span data-ttu-id="51d43-323">`testcase_id`: opptaksfilen som hører til angitte testsaker, lastes opp.</span><span class="sxs-lookup"><span data-stu-id="51d43-323">`testcase_id`: Recording file belonging to the specified test cases will be uploaded.</span></span>
++ <span data-ttu-id="1d83f-323">`testcase_id`: opptaksfilen som hører til angitte testsaker, lastes opp.</span><span class="sxs-lookup"><span data-stu-id="1d83f-323">`testcase_id`: Recording file belonging to the specified test cases will be uploaded.</span></span>
 
-##### <a name="uploadrecording-examples"></a><span data-ttu-id="51d43-324">uploadrecording: eksempler</span><span class="sxs-lookup"><span data-stu-id="51d43-324">uploadrecording: examples</span></span>
+##### <a name="uploadrecording-examples"></a><span data-ttu-id="1d83f-324">uploadrecording: eksempler</span><span class="sxs-lookup"><span data-stu-id="1d83f-324">uploadrecording: examples</span></span>
 
 `uploadrecording 123`
 
 `uploadrecording 123 456`
 
-#### <a name="usage"></a><span data-ttu-id="51d43-325">usage</span><span class="sxs-lookup"><span data-stu-id="51d43-325">usage</span></span>
+#### <a name="usage"></a><span data-ttu-id="1d83f-325">usage</span><span class="sxs-lookup"><span data-stu-id="1d83f-325">usage</span></span>
 
-<span data-ttu-id="51d43-326">Viser to måter å aktivere dette programmet på: én som bruker en standard innstillingsfil, en annen som angir en innstillingsfil.</span><span class="sxs-lookup"><span data-stu-id="51d43-326">Shows two ways to invoke this application: one using a default setting file, another one providing a setting file.</span></span>
+<span data-ttu-id="1d83f-326">Viser to måter å aktivere dette programmet på: én som bruker en standard innstillingsfil, en annen som angir en innstillingsfil.</span><span class="sxs-lookup"><span data-stu-id="1d83f-326">Shows two ways to invoke this application: one using a default setting file, another one providing a setting file.</span></span>
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``usage``**
 
-### <a name="windows-powershell-examples"></a><span data-ttu-id="51d43-327">Windows PowerShell-eksempler</span><span class="sxs-lookup"><span data-stu-id="51d43-327">Windows PowerShell examples</span></span>
+### <a name="windows-powershell-examples"></a><span data-ttu-id="1d83f-327">Windows PowerShell-eksempler</span><span class="sxs-lookup"><span data-stu-id="1d83f-327">Windows PowerShell examples</span></span>
 
-#### <a name="run-a-test-case-in-a-loop"></a><span data-ttu-id="51d43-328">Kjøre et testtilfelle i en løkke</span><span class="sxs-lookup"><span data-stu-id="51d43-328">Run a test case in a loop</span></span>
+#### <a name="run-a-test-case-in-a-loop"></a><span data-ttu-id="1d83f-328">Kjøre et testtilfelle i en løkke</span><span class="sxs-lookup"><span data-stu-id="1d83f-328">Run a test case in a loop</span></span>
 
-<span data-ttu-id="51d43-329">Du har et testskript som oppretter en ny kunde.</span><span class="sxs-lookup"><span data-stu-id="51d43-329">You have a test script that creates a new customer.</span></span> <span data-ttu-id="51d43-330">Du kan kjøre dette testtilfellet i en løkke via skripting ved randomisere følgende data før hver gjentakelse kjøres:</span><span class="sxs-lookup"><span data-stu-id="51d43-330">Via scripting, this test case can be run in a loop by randomizing the following data before each iteration is run:</span></span>
+<span data-ttu-id="1d83f-329">Du har et testskript som oppretter en ny kunde.</span><span class="sxs-lookup"><span data-stu-id="1d83f-329">You have a test script that creates a new customer.</span></span> <span data-ttu-id="1d83f-330">Du kan kjøre dette testtilfellet i en løkke via skripting ved randomisere følgende data før hver gjentakelse kjøres:</span><span class="sxs-lookup"><span data-stu-id="1d83f-330">Via scripting, this test case can be run in a loop by randomizing the following data before each iteration is run:</span></span>
 
-- <span data-ttu-id="51d43-331">Kunde-ID</span><span class="sxs-lookup"><span data-stu-id="51d43-331">Customer ID</span></span>
-- <span data-ttu-id="51d43-332">Kundenavn</span><span class="sxs-lookup"><span data-stu-id="51d43-332">Customer name</span></span>
-- <span data-ttu-id="51d43-333">Kundeadresse</span><span class="sxs-lookup"><span data-stu-id="51d43-333">Customer address</span></span>
+- <span data-ttu-id="1d83f-331">Kunde-ID</span><span class="sxs-lookup"><span data-stu-id="1d83f-331">Customer ID</span></span>
+- <span data-ttu-id="1d83f-332">Kundenavn</span><span class="sxs-lookup"><span data-stu-id="1d83f-332">Customer name</span></span>
+- <span data-ttu-id="1d83f-333">Kundeadresse</span><span class="sxs-lookup"><span data-stu-id="1d83f-333">Customer address</span></span>
 
-<span data-ttu-id="51d43-334">Kunde-ID-en er i formatet *ATCUS\<number\>*, der \<number\> er en verdi mellom **000000001** og **999999999**.</span><span class="sxs-lookup"><span data-stu-id="51d43-334">The customer ID will be in the format *ATCUS\<number\>*, where \<number\> is a value between **000000001** and **999999999**.</span></span>
+<span data-ttu-id="1d83f-334">Kunde-ID-en er i formatet *ATCUS\<number\>*, der \<number\> er en verdi mellom **000000001** og **999999999**.</span><span class="sxs-lookup"><span data-stu-id="1d83f-334">The customer ID will be in the format *ATCUS\<number\>*, where \<number\> is a value between **000000001** and **999999999**.</span></span>
 
-<span data-ttu-id="51d43-335">I det følgende eksemplet brukes én parameter, **start**, til å definere det første nummeret som brukes.</span><span class="sxs-lookup"><span data-stu-id="51d43-335">The following example uses one parameter, **start**, to define the first number that is used.</span></span> <span data-ttu-id="51d43-336">Det bruker en andre parameter, **nr**, til å definere antallet kunder som må opprettes.</span><span class="sxs-lookup"><span data-stu-id="51d43-336">Is uses a second parameter, **nr**, to define the number of customers that must be created.</span></span> <span data-ttu-id="51d43-337">For hver gjentakelse endres parameterne i Excel-parameterfilen ved hjelp av en UpdateCustomer-funksjon.</span><span class="sxs-lookup"><span data-stu-id="51d43-337">For each iteration, the parameters in the Excel parameter file are changed by using an UpdateCustomer function.</span></span> <span data-ttu-id="51d43-338">Deretter kalles RSAT-kommandolinjen i en RunTestCase-funksjon.</span><span class="sxs-lookup"><span data-stu-id="51d43-338">Then the RSAT command line is called in a RunTestCase function.</span></span>
+<span data-ttu-id="1d83f-335">I det følgende eksemplet brukes én parameter, **start**, til å definere det første nummeret som brukes.</span><span class="sxs-lookup"><span data-stu-id="1d83f-335">The following example uses one parameter, **start**, to define the first number that is used.</span></span> <span data-ttu-id="1d83f-336">Det bruker en andre parameter, **nr**, til å definere antallet kunder som må opprettes.</span><span class="sxs-lookup"><span data-stu-id="1d83f-336">Is uses a second parameter, **nr**, to define the number of customers that must be created.</span></span> <span data-ttu-id="1d83f-337">For hver gjentakelse endres parameterne i Excel-parameterfilen ved hjelp av en UpdateCustomer-funksjon.</span><span class="sxs-lookup"><span data-stu-id="1d83f-337">For each iteration, the parameters in the Excel parameter file are changed by using an UpdateCustomer function.</span></span> <span data-ttu-id="1d83f-338">Deretter kalles RSAT-kommandolinjen i en RunTestCase-funksjon.</span><span class="sxs-lookup"><span data-stu-id="1d83f-338">Then the RSAT command line is called in a RunTestCase function.</span></span>
 
-<span data-ttu-id="51d43-339">Åpne Microsoft Windows PowerShell Integrated Scripting Environment (ISE) i administratormodus, og lim inn følgende kode i vinduet kalt **Untitled1.ps1**.</span><span class="sxs-lookup"><span data-stu-id="51d43-339">Open Microsoft Windows PowerShell Integrated Scripting Environment (ISE) in admin mode, and paste the following code into the window that is named **Untitled1.ps1**.</span></span>
+<span data-ttu-id="1d83f-339">Åpne Microsoft Windows PowerShell Integrated Scripting Environment (ISE) i administratormodus, og lim inn følgende kode i vinduet kalt **Untitled1.ps1**.</span><span class="sxs-lookup"><span data-stu-id="1d83f-339">Open Microsoft Windows PowerShell Integrated Scripting Environment (ISE) in admin mode, and paste the following code into the window that is named **Untitled1.ps1**.</span></span>
 
 ```powershell
 param ( [int]$start = 1, [int]$nr = 1 )
@@ -519,9 +518,9 @@ for ($i = $start; $i -lt $start + $nr; $i++ )
     RunTestCase $excelFilename
 ```
 
-#### <a name="run-a-script-that-depends-on-data-in-microsoft-dynamics-365"></a><span data-ttu-id="51d43-340">Kjør et skript som er avhengig av data i Microsoft Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="51d43-340">Run a script that depends on data in Microsoft Dynamics 365</span></span>
+#### <a name="run-a-script-that-depends-on-data-in-microsoft-dynamics-365"></a><span data-ttu-id="1d83f-340">Kjør et skript som er avhengig av data i Microsoft Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="1d83f-340">Run a script that depends on data in Microsoft Dynamics 365</span></span>
 
-<span data-ttu-id="51d43-341">Det følgende eksemplet bruker et OData-kall (Open Data Protocol) til å finne ordrestatusen for en bestilling.</span><span class="sxs-lookup"><span data-stu-id="51d43-341">The following example uses an Open Data Protocol (OData) call to find the order status of a purchase order.</span></span> <span data-ttu-id="51d43-342">Hvis statusen ikke er **fakturert**, kan du for eksempel kalle et RSAT-testtilfelle som posterer fakturaen.</span><span class="sxs-lookup"><span data-stu-id="51d43-342">If the status isn't **invoiced**, you can, for example, call an RSAT test case that posts the invoice.</span></span>
+<span data-ttu-id="1d83f-341">Det følgende eksemplet bruker et OData-kall (Open Data Protocol) til å finne ordrestatusen for en bestilling.</span><span class="sxs-lookup"><span data-stu-id="1d83f-341">The following example uses an Open Data Protocol (OData) call to find the order status of a purchase order.</span></span> <span data-ttu-id="1d83f-342">Hvis statusen ikke er **fakturert**, kan du for eksempel kalle et RSAT-testtilfelle som posterer fakturaen.</span><span class="sxs-lookup"><span data-stu-id="1d83f-342">If the status isn't **invoiced**, you can, for example, call an RSAT test case that posts the invoice.</span></span>
 
 ```xpp
 function Odata_Get
@@ -556,3 +555,6 @@ $orderStatus = PurchaseOrderStatus -environment $environment -purchaseOrderNumbe
 if ($orderStatus -eq $null) {   write-host 'doesn''t exist'}
 elseif ($orderStatus -ne 'invoiced') { RunTestCase "PostInvoice" }
 ```
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

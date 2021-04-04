@@ -6,7 +6,6 @@ manager: kfend
 ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -17,113 +16,116 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1d8d9f41d6ee5256f560c83486c95ecd47f5b081
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 494dc347fadf44121c7eae0acf8c30768c58f035
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4686518"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5567670"
 ---
-# <a name="listoffields-er-function"></a><span data-ttu-id="41b98-103">LISTOFFIELDS ER-funksjonen</span><span class="sxs-lookup"><span data-stu-id="41b98-103">LISTOFFIELDS ER function</span></span>
+# <a name="listoffields-er-function"></a><span data-ttu-id="75173-103">LISTOFFIELDS ER-funksjonen</span><span class="sxs-lookup"><span data-stu-id="75173-103">LISTOFFIELDS ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="41b98-104">`LISTOFFIELDS`-funksjonen returnerer en *postliste*-verdi som opprettes basert på strukturen til det angitte argumentet for typen *Opplisting* eller *Container (post)*.</span><span class="sxs-lookup"><span data-stu-id="41b98-104">The `LISTOFFIELDS` function returns a *Record list* value that is created based on the structure of the specified argument of the *Enumeration* or *Container (record)* type.</span></span>
+<span data-ttu-id="75173-104">`LISTOFFIELDS`-funksjonen returnerer en *postliste*-verdi som opprettes basert på strukturen til det angitte argumentet for typen *Opplisting* eller *Container (post)*.</span><span class="sxs-lookup"><span data-stu-id="75173-104">The `LISTOFFIELDS` function returns a *Record list* value that is created based on the structure of the specified argument of the *Enumeration* or *Container (record)* type.</span></span>
 
-## <a name="syntax-1"></a><span data-ttu-id="41b98-105">Syntaks 1</span><span class="sxs-lookup"><span data-stu-id="41b98-105">Syntax 1</span></span>
+## <a name="syntax-1"></a><span data-ttu-id="75173-105">Syntaks 1</span><span class="sxs-lookup"><span data-stu-id="75173-105">Syntax 1</span></span>
 
 ```vb
 LISTOFFIELDS (path)
 ```
 
-## <a name="syntax-2"></a><span data-ttu-id="41b98-106">Syntaks 2</span><span class="sxs-lookup"><span data-stu-id="41b98-106">Syntax 2</span></span>
+## <a name="syntax-2"></a><span data-ttu-id="75173-106">Syntaks 2</span><span class="sxs-lookup"><span data-stu-id="75173-106">Syntax 2</span></span>
 
 ```vb
 LISTOFFIELDS (path, language)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="41b98-107">Argumenter</span><span class="sxs-lookup"><span data-stu-id="41b98-107">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="75173-107">Argumenter</span><span class="sxs-lookup"><span data-stu-id="75173-107">Arguments</span></span>
 
-<span data-ttu-id="41b98-108">`path`: Datakildereferanse</span><span class="sxs-lookup"><span data-stu-id="41b98-108">`path`: Data source reference</span></span>
+<span data-ttu-id="75173-108">`path`: Datakildereferanse</span><span class="sxs-lookup"><span data-stu-id="75173-108">`path`: Data source reference</span></span>
 
-<span data-ttu-id="41b98-109">Den gyldige referansebanen til en datakilde for en av følgende datatyper:</span><span class="sxs-lookup"><span data-stu-id="41b98-109">The valid reference path of a data source of one of the following data types:</span></span>
+<span data-ttu-id="75173-109">Den gyldige referansebanen til en datakilde for en av følgende datatyper:</span><span class="sxs-lookup"><span data-stu-id="75173-109">The valid reference path of a data source of one of the following data types:</span></span>
 
-- <span data-ttu-id="41b98-110">Modellopplisting</span><span class="sxs-lookup"><span data-stu-id="41b98-110">Model enumeration</span></span>
-- <span data-ttu-id="41b98-111">Formatopplisting</span><span class="sxs-lookup"><span data-stu-id="41b98-111">Format enumeration</span></span>
-- <span data-ttu-id="41b98-112">Opplisting av programmer</span><span class="sxs-lookup"><span data-stu-id="41b98-112">Application enumeration</span></span>
-- <span data-ttu-id="41b98-113">Container (post)</span><span class="sxs-lookup"><span data-stu-id="41b98-113">Container (record)</span></span>
+- <span data-ttu-id="75173-110">Modellopplisting</span><span class="sxs-lookup"><span data-stu-id="75173-110">Model enumeration</span></span>
+- <span data-ttu-id="75173-111">Formatopplisting</span><span class="sxs-lookup"><span data-stu-id="75173-111">Format enumeration</span></span>
+- <span data-ttu-id="75173-112">Opplisting av programmer</span><span class="sxs-lookup"><span data-stu-id="75173-112">Application enumeration</span></span>
+- <span data-ttu-id="75173-113">Container (post)</span><span class="sxs-lookup"><span data-stu-id="75173-113">Container (record)</span></span>
 
-<span data-ttu-id="41b98-114">`language`: *Streng*</span><span class="sxs-lookup"><span data-stu-id="41b98-114">`language`: *String*</span></span>
+<span data-ttu-id="75173-114">`language`: *Streng*</span><span class="sxs-lookup"><span data-stu-id="75173-114">`language`: *String*</span></span>
 
-<span data-ttu-id="41b98-115">Tekst som representerer en språkkode.</span><span class="sxs-lookup"><span data-stu-id="41b98-115">Text that represents a language code.</span></span>
+<span data-ttu-id="75173-115">Tekst som representerer en språkkode.</span><span class="sxs-lookup"><span data-stu-id="75173-115">Text that represents a language code.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="41b98-116">Returverdier</span><span class="sxs-lookup"><span data-stu-id="41b98-116">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="75173-116">Returverdier</span><span class="sxs-lookup"><span data-stu-id="75173-116">Return values</span></span>
 
-<span data-ttu-id="41b98-117">*Postliste*</span><span class="sxs-lookup"><span data-stu-id="41b98-117">*Record list*</span></span>
+<span data-ttu-id="75173-117">*Postliste*</span><span class="sxs-lookup"><span data-stu-id="75173-117">*Record list*</span></span>
 
-<span data-ttu-id="41b98-118">Den resulterende listen over oppføringer.</span><span class="sxs-lookup"><span data-stu-id="41b98-118">The resulting list of records.</span></span>
+<span data-ttu-id="75173-118">Den resulterende listen over oppføringer.</span><span class="sxs-lookup"><span data-stu-id="75173-118">The resulting list of records.</span></span>
 
-## <a name="usage-notes"></a><span data-ttu-id="41b98-119">Bruksnotater</span><span class="sxs-lookup"><span data-stu-id="41b98-119">Usage notes</span></span>
+## <a name="usage-notes"></a><span data-ttu-id="75173-119">Bruksnotater</span><span class="sxs-lookup"><span data-stu-id="75173-119">Usage notes</span></span>
 
-<span data-ttu-id="41b98-120">Listen som opprettes, består av poster med følgende felt:</span><span class="sxs-lookup"><span data-stu-id="41b98-120">The list that is created consists of records that have the following fields:</span></span>
+<span data-ttu-id="75173-120">Listen som opprettes, består av poster med følgende felt:</span><span class="sxs-lookup"><span data-stu-id="75173-120">The list that is created consists of records that have the following fields:</span></span>
 
-- <span data-ttu-id="41b98-121">**Navn** (*Streng*-datatype)</span><span class="sxs-lookup"><span data-stu-id="41b98-121">**Name** (*String* data type)</span></span>
-- <span data-ttu-id="41b98-122">**Etikett** (*Streng*-datatype)</span><span class="sxs-lookup"><span data-stu-id="41b98-122">**Label** (*String* data type)</span></span>
-- <span data-ttu-id="41b98-123">**Beskrivelse** (*Streng*-datatype)</span><span class="sxs-lookup"><span data-stu-id="41b98-123">**Description** (*String* data type)</span></span>
-- <span data-ttu-id="41b98-124">**IsTranslated** (*boolsk* datatype)</span><span class="sxs-lookup"><span data-stu-id="41b98-124">**IsTranslated** (*Boolean* data type)</span></span>
+- <span data-ttu-id="75173-121">**Navn** (*Streng*-datatype)</span><span class="sxs-lookup"><span data-stu-id="75173-121">**Name** (*String* data type)</span></span>
+- <span data-ttu-id="75173-122">**Etikett** (*Streng*-datatype)</span><span class="sxs-lookup"><span data-stu-id="75173-122">**Label** (*String* data type)</span></span>
+- <span data-ttu-id="75173-123">**Beskrivelse** (*Streng*-datatype)</span><span class="sxs-lookup"><span data-stu-id="75173-123">**Description** (*String* data type)</span></span>
+- <span data-ttu-id="75173-124">**IsTranslated** (*boolsk* datatype)</span><span class="sxs-lookup"><span data-stu-id="75173-124">**IsTranslated** (*Boolean* data type)</span></span>
 
-<span data-ttu-id="41b98-125">Hvis `path`-argumentet refererer til en datakilde av typen *Container (post)*, legges det til en ny post i listen som opprettes, for hvert felt i container-posten det refereres til.</span><span class="sxs-lookup"><span data-stu-id="41b98-125">If the `path` argument refers to a data source of the *Container (Record)* type, for every field of the referenced container record, a new record is added to the list that is created.</span></span> <span data-ttu-id="41b98-126">For hver post som opprettes, vil **navn**-feltet returnere navnet på feltet i den refererte container-posten som gjeldende post ble opprettet for.</span><span class="sxs-lookup"><span data-stu-id="41b98-126">For every record that is created, the **Name** field returns the name of the field of the referenced container record that the current record was created for.</span></span>
+<span data-ttu-id="75173-125">Hvis `path`-argumentet refererer til en datakilde av typen *Container (post)*, legges det til en ny post i listen som opprettes, for hvert felt i container-posten det refereres til.</span><span class="sxs-lookup"><span data-stu-id="75173-125">If the `path` argument refers to a data source of the *Container (Record)* type, for every field of the referenced container record, a new record is added to the list that is created.</span></span> <span data-ttu-id="75173-126">For hver post som opprettes, vil **navn**-feltet returnere navnet på feltet i den refererte container-posten som gjeldende post ble opprettet for.</span><span class="sxs-lookup"><span data-stu-id="75173-126">For every record that is created, the **Name** field returns the name of the field of the referenced container record that the current record was created for.</span></span>
 
-<span data-ttu-id="41b98-127">Hvis `path`-argumentet refererer til en datakilde for en av *Opplisting*-typene, legges det til en ny post i listen som opprettes, for hver opplistingsverdi i opplistingsposten det refereres til.</span><span class="sxs-lookup"><span data-stu-id="41b98-127">If the `path` argument refers to a data source of one of the *Enumeration* types, for every enumeration value of the referenced enumeration, a new record is added to the list that is created.</span></span> <span data-ttu-id="41b98-128">For hver post som opprettes, returnerer **Navn**-feltet verdien for den refererte opplistingen som gjeldende post ble opprettet for. **Beskrivelse**-feltet returnerer beskrivelsen av denne opplistingen, og **Etikett**-feltet returnerer etiketten for denne opplistingen.</span><span class="sxs-lookup"><span data-stu-id="41b98-128">For every record that is created, the **Name** field returns the value of the referenced enumeration that the current record was created for, the **Description** field returns the description of that enumeration, and the **Label** field returns the label of that enumeration.</span></span>
+<span data-ttu-id="75173-127">Hvis `path`-argumentet refererer til en datakilde for en av *Opplisting*-typene, legges det til en ny post i listen som opprettes, for hver opplistingsverdi i opplistingsposten det refereres til.</span><span class="sxs-lookup"><span data-stu-id="75173-127">If the `path` argument refers to a data source of one of the *Enumeration* types, for every enumeration value of the referenced enumeration, a new record is added to the list that is created.</span></span> <span data-ttu-id="75173-128">For hver post som opprettes, returnerer **Navn**-feltet verdien for den refererte opplistingen som gjeldende post ble opprettet for. **Beskrivelse**-feltet returnerer beskrivelsen av denne opplistingen, og **Etikett**-feltet returnerer etiketten for denne opplistingen.</span><span class="sxs-lookup"><span data-stu-id="75173-128">For every record that is created, the **Name** field returns the value of the referenced enumeration that the current record was created for, the **Description** field returns the description of that enumeration, and the **Label** field returns the label of that enumeration.</span></span>
 
-<span data-ttu-id="41b98-129">Når syntaks 1 brukes i kjøretid, må **Etikett**- og **Beskrivelse**-feltene returnere verdier som er basert på språkinnstillingene for ER-formatet som kjører:</span><span class="sxs-lookup"><span data-stu-id="41b98-129">At runtime, when syntax 1 is used, the **Label** and **Description** fields must return values that are based on the language settings of the Electronic reporting (ER) format that is running:</span></span>
+<span data-ttu-id="75173-129">Når syntaks 1 brukes i kjøretid, må **Etikett**- og **Beskrivelse**-feltene returnere verdier som er basert på språkinnstillingene for ER-formatet som kjører:</span><span class="sxs-lookup"><span data-stu-id="75173-129">At runtime, when syntax 1 is used, the **Label** and **Description** fields must return values that are based on the language settings of the Electronic reporting (ER) format that is running:</span></span>
 
-- <span data-ttu-id="41b98-130">Hvis etikettene og beskrivelsene for det forespurte språket er tilgjengelige, returnerer **Etikett**- og **Beskrivelse**-feltene verdier som er basert på dette språket, og **IsTranslated**-feltet returnerer **Sann**.</span><span class="sxs-lookup"><span data-stu-id="41b98-130">If the labels and descriptions for the requested language are available, the **Label** and **Description** fields return values that are based on that language, and the **IsTranslated** field returns **True**.</span></span>
-- <span data-ttu-id="41b98-131">Hvis etikettene og beskrivelsene for det forespurte språket ikke er tilgjengelige, returnerer **Etikett**- og **Beskrivelse**-feltene verdier som er basert på standard **EN-US**-språket, og **IsTranslated**-feltet returnerer **Usann**.</span><span class="sxs-lookup"><span data-stu-id="41b98-131">If the labels and descriptions for the requested language aren't available, the **Label** and **Description** fields return values that are based on the default **EN-US** language, and the **IsTranslated** field returns **False**.</span></span>
+- <span data-ttu-id="75173-130">Hvis etikettene og beskrivelsene for det forespurte språket er tilgjengelige, returnerer **Etikett**- og **Beskrivelse**-feltene verdier som er basert på dette språket, og **IsTranslated**-feltet returnerer **Sann**.</span><span class="sxs-lookup"><span data-stu-id="75173-130">If the labels and descriptions for the requested language are available, the **Label** and **Description** fields return values that are based on that language, and the **IsTranslated** field returns **True**.</span></span>
+- <span data-ttu-id="75173-131">Hvis etikettene og beskrivelsene for det forespurte språket ikke er tilgjengelige, returnerer **Etikett**- og **Beskrivelse**-feltene verdier som er basert på standard **EN-US**-språket, og **IsTranslated**-feltet returnerer **Usann**.</span><span class="sxs-lookup"><span data-stu-id="75173-131">If the labels and descriptions for the requested language aren't available, the **Label** and **Description** fields return values that are based on the default **EN-US** language, and the **IsTranslated** field returns **False**.</span></span>
 
-<span data-ttu-id="41b98-132">Når syntaks 2 brukes i kjøretid, må **Etikett**- og **Beskrivelse**-feltene returnere verdier som er basert på språket som er definert som det andre argumentet for den kalte funksjonen:</span><span class="sxs-lookup"><span data-stu-id="41b98-132">At runtime, when syntax 2 is used, the **Label** and **Description** fields must return values that are based on the language that is defined as the second argument of the called function:</span></span>
+<span data-ttu-id="75173-132">Når syntaks 2 brukes i kjøretid, må **Etikett**- og **Beskrivelse**-feltene returnere verdier som er basert på språket som er definert som det andre argumentet for den kalte funksjonen:</span><span class="sxs-lookup"><span data-stu-id="75173-132">At runtime, when syntax 2 is used, the **Label** and **Description** fields must return values that are based on the language that is defined as the second argument of the called function:</span></span>
 
-- <span data-ttu-id="41b98-133">Hvis etikettene og beskrivelsene for det forespurte språket er tilgjengelige, returnerer **Etikett**- og **Beskrivelse**-feltene verdier som er basert på dette språket, og **IsTranslated**-feltet returnerer **Sann**.</span><span class="sxs-lookup"><span data-stu-id="41b98-133">If the labels and descriptions for the requested language are available, the **Label** and **Description** fields return values that are based on that language, and the **IsTranslated** field returns **True**.</span></span>
-- <span data-ttu-id="41b98-134">Hvis etikettene og beskrivelsene for det forespurte språket ikke er tilgjengelige, returnerer **Etikett**- og **Beskrivelse**-feltene verdier som er basert på **EN-US**-språket, og **IsTranslated**-feltet returnerer **Usann**.</span><span class="sxs-lookup"><span data-stu-id="41b98-134">If the labels and descriptions for the requested language aren't available, the **Label** and **Description** fields return values that are based on the **EN-US** language, and the **IsTranslated** field returns **False**.</span></span>
+- <span data-ttu-id="75173-133">Hvis etikettene og beskrivelsene for det forespurte språket er tilgjengelige, returnerer **Etikett**- og **Beskrivelse**-feltene verdier som er basert på dette språket, og **IsTranslated**-feltet returnerer **Sann**.</span><span class="sxs-lookup"><span data-stu-id="75173-133">If the labels and descriptions for the requested language are available, the **Label** and **Description** fields return values that are based on that language, and the **IsTranslated** field returns **True**.</span></span>
+- <span data-ttu-id="75173-134">Hvis etikettene og beskrivelsene for det forespurte språket ikke er tilgjengelige, returnerer **Etikett**- og **Beskrivelse**-feltene verdier som er basert på **EN-US**-språket, og **IsTranslated**-feltet returnerer **Usann**.</span><span class="sxs-lookup"><span data-stu-id="75173-134">If the labels and descriptions for the requested language aren't available, the **Label** and **Description** fields return values that are based on the **EN-US** language, and the **IsTranslated** field returns **False**.</span></span>
 
-## <a name="example-1"></a><span data-ttu-id="41b98-135">Eksempel 1</span><span class="sxs-lookup"><span data-stu-id="41b98-135">Example 1</span></span>
+## <a name="example-1"></a><span data-ttu-id="75173-135">Eksempel 1</span><span class="sxs-lookup"><span data-stu-id="75173-135">Example 1</span></span>
 
-<span data-ttu-id="41b98-136">I følgende illustrasjon introduseres en opplisting i en ER-datamodell.</span><span class="sxs-lookup"><span data-stu-id="41b98-136">In the following illustration, an enumeration is introduced in an ER data model.</span></span>
+<span data-ttu-id="75173-136">I følgende illustrasjon introduseres en opplisting i en ER-datamodell.</span><span class="sxs-lookup"><span data-stu-id="75173-136">In the following illustration, an enumeration is introduced in an ER data model.</span></span>
 
 <a href="./media/ger-listoffields-function-model-enumeration.png"><img src="./media/ger-listoffields-function-model-enumeration-e1474545790761.png" alt="Enumeration in a model" class="alignnone wp-image-1203943 size-full" width="514" height="155" /></a>
 
-<span data-ttu-id="41b98-137">Illustrasjonen nedenfor viser disse detaljene:</span><span class="sxs-lookup"><span data-stu-id="41b98-137">The following illustration shows these details:</span></span>
+<span data-ttu-id="75173-137">Illustrasjonen nedenfor viser disse detaljene:</span><span class="sxs-lookup"><span data-stu-id="75173-137">The following illustration shows these details:</span></span>
 
-- <span data-ttu-id="41b98-138">Modellopplistingen settes inn i en rapport som en datakilde.</span><span class="sxs-lookup"><span data-stu-id="41b98-138">The model enumeration is inserted into a report as a data source.</span></span>
-- <span data-ttu-id="41b98-139">Et ER-uttrykk bruker modellopplistingen som en parameter i `LISTOFFIELDS`-funksjonen.</span><span class="sxs-lookup"><span data-stu-id="41b98-139">An ER expression uses the model enumeration as a parameter of the `LISTOFFIELDS` function.</span></span>
-- <span data-ttu-id="41b98-140">En datakilde av *Postliste*-typen settes inn i en rapport ved hjelp av det opprettede ER-uttrykket.</span><span class="sxs-lookup"><span data-stu-id="41b98-140">A data source of the *Record list* type is inserted into a report by using the ER expression that is created.</span></span>
+- <span data-ttu-id="75173-138">Modellopplistingen settes inn i en rapport som en datakilde.</span><span class="sxs-lookup"><span data-stu-id="75173-138">The model enumeration is inserted into a report as a data source.</span></span>
+- <span data-ttu-id="75173-139">Et ER-uttrykk bruker modellopplistingen som en parameter i `LISTOFFIELDS`-funksjonen.</span><span class="sxs-lookup"><span data-stu-id="75173-139">An ER expression uses the model enumeration as a parameter of the `LISTOFFIELDS` function.</span></span>
+- <span data-ttu-id="75173-140">En datakilde av *Postliste*-typen settes inn i en rapport ved hjelp av det opprettede ER-uttrykket.</span><span class="sxs-lookup"><span data-stu-id="75173-140">A data source of the *Record list* type is inserted into a report by using the ER expression that is created.</span></span>
 
 <a href="./media/ger-listoffields-function-in-format-expression.png"><img src="./media/ger-listoffields-function-in-format-expression-e1474546110395.png" alt="Format" class="alignnone wp-image-1204033 size-full" width="549" height="318" /></a>
 
-<span data-ttu-id="41b98-141">Eksemplet nedenfor viser elementene i ER-formatet som er bundet til datakilden for *Postliste*-typen som ble opprettet ved hjelp av funksjonen `LISTOFFIELDS`.</span><span class="sxs-lookup"><span data-stu-id="41b98-141">The following example shows the ER format elements that are bound to the data source of the *Record list* type that was created by using the `LISTOFFIELDS` function.</span></span>
+<span data-ttu-id="75173-141">Eksemplet nedenfor viser elementene i ER-formatet som er bundet til datakilden for *Postliste*-typen som ble opprettet ved hjelp av funksjonen `LISTOFFIELDS`.</span><span class="sxs-lookup"><span data-stu-id="75173-141">The following example shows the ER format elements that are bound to the data source of the *Record list* type that was created by using the `LISTOFFIELDS` function.</span></span>
 
 <a href="./media/ger-listoffields-function-format-design.png"><img src="./media/ger-listoffields-function-format-design.png" alt="Format design" class="alignnone size-full wp-image-1204043" width="466" height="221" /></a>
 
-<span data-ttu-id="41b98-142">Følgende illustrasjon viser resultatet når det utformede formatet kjøres.</span><span class="sxs-lookup"><span data-stu-id="41b98-142">The following illustration shows the result when the designed format is run.</span></span>
+<span data-ttu-id="75173-142">Følgende illustrasjon viser resultatet når det utformede formatet kjøres.</span><span class="sxs-lookup"><span data-stu-id="75173-142">The following illustration shows the result when the designed format is run.</span></span>
 
 <a href="./media/ger-listoffields-function-format-output.png"><img src="./media/ger-listoffields-function-format-output.png" alt="Format output" class="alignnone size-full wp-image-1204053" width="585" height="158" /></a>
 
 > [!NOTE] 
-> <span data-ttu-id="41b98-143">Basert på språkinnstillingene for de overordnede **FILE** og **FOLDER**-formatelementene, angis oversatt tekst for etiketter og beskrivelser i utdataene i ER-formatet.</span><span class="sxs-lookup"><span data-stu-id="41b98-143">Based on the language settings of the parent **FILE** and **FOLDER** format elements, translated text for labels and descriptions is entered in the output of the ER format.</span></span>
+> <span data-ttu-id="75173-143">Basert på språkinnstillingene for de overordnede **FILE** og **FOLDER**-formatelementene, angis oversatt tekst for etiketter og beskrivelser i utdataene i ER-formatet.</span><span class="sxs-lookup"><span data-stu-id="75173-143">Based on the language settings of the parent **FILE** and **FOLDER** format elements, translated text for labels and descriptions is entered in the output of the ER format.</span></span>
 
-## <a name="example-2"></a><span data-ttu-id="41b98-144">Eksempel 2</span><span class="sxs-lookup"><span data-stu-id="41b98-144">Example 2</span></span>
+## <a name="example-2"></a><span data-ttu-id="75173-144">Eksempel 2</span><span class="sxs-lookup"><span data-stu-id="75173-144">Example 2</span></span>
 
-<span data-ttu-id="41b98-145">Du bruker *Beregnet felt*-datakildetypen til å konfigurere **enumType\_de** og **enumType\_deCH**-datakildene for **enumType**-datamodellopplistingen:</span><span class="sxs-lookup"><span data-stu-id="41b98-145">You use the *Calculated field* data source type to configure **enumType\_de** and **enumType\_deCH** data sources for the **enumType** data model enumeration:</span></span>
+<span data-ttu-id="75173-145">Du bruker *Beregnet felt*-datakildetypen til å konfigurere **enumType\_de** og **enumType\_deCH**-datakildene for **enumType**-datamodellopplistingen:</span><span class="sxs-lookup"><span data-stu-id="75173-145">You use the *Calculated field* data source type to configure **enumType\_de** and **enumType\_deCH** data sources for the **enumType** data model enumeration:</span></span>
 
-- <span data-ttu-id="41b98-146">**enumType\_de** = `LISTOFFIELDS (enumType, "de")`</span><span class="sxs-lookup"><span data-stu-id="41b98-146">**enumType\_de** = `LISTOFFIELDS (enumType, "de")`</span></span>
-- <span data-ttu-id="41b98-147">**enumType\_deCH** = `LISTOFFIELDS (enumType, "de-CH")`</span><span class="sxs-lookup"><span data-stu-id="41b98-147">**enumType\_deCH** = `LISTOFFIELDS (enumType, "de-CH")`</span></span>
+- <span data-ttu-id="75173-146">**enumType\_de** = `LISTOFFIELDS (enumType, "de")`</span><span class="sxs-lookup"><span data-stu-id="75173-146">**enumType\_de** = `LISTOFFIELDS (enumType, "de")`</span></span>
+- <span data-ttu-id="75173-147">**enumType\_deCH** = `LISTOFFIELDS (enumType, "de-CH")`</span><span class="sxs-lookup"><span data-stu-id="75173-147">**enumType\_deCH** = `LISTOFFIELDS (enumType, "de-CH")`</span></span>
 
-<span data-ttu-id="41b98-148">I dette tilfellet kan du bruke følgende uttrykk til å hente etiketten for opplistingsverdien på sveitsisk (tysk) hvis denne oversettelsen er tilgjengelig.</span><span class="sxs-lookup"><span data-stu-id="41b98-148">In this case, you can use the following expression to get the label of the enumeration value in Swiss German, if that translation is available.</span></span> <span data-ttu-id="41b98-149">Hvis sveitsisk (tysk) oversettelse ikke er tilgjengelig, er etiketten på tysk.</span><span class="sxs-lookup"><span data-stu-id="41b98-149">If the Swiss German translation isn't available, the label is in German.</span></span>
+<span data-ttu-id="75173-148">I dette tilfellet kan du bruke følgende uttrykk til å hente etiketten for opplistingsverdien på sveitsisk (tysk) hvis denne oversettelsen er tilgjengelig.</span><span class="sxs-lookup"><span data-stu-id="75173-148">In this case, you can use the following expression to get the label of the enumeration value in Swiss German, if that translation is available.</span></span> <span data-ttu-id="75173-149">Hvis sveitsisk (tysk) oversettelse ikke er tilgjengelig, er etiketten på tysk.</span><span class="sxs-lookup"><span data-stu-id="75173-149">If the Swiss German translation isn't available, the label is in German.</span></span>
 
 ```vb
 IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)
 ```
 
-## <a name="additional-resources"></a><span data-ttu-id="41b98-150">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="41b98-150">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="75173-150">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="75173-150">Additional resources</span></span>
 
-[<span data-ttu-id="41b98-151">Listefunksjoner</span><span class="sxs-lookup"><span data-stu-id="41b98-151">List functions</span></span>](er-functions-category-list.md)
+[<span data-ttu-id="75173-151">Listefunksjoner</span><span class="sxs-lookup"><span data-stu-id="75173-151">List functions</span></span>](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

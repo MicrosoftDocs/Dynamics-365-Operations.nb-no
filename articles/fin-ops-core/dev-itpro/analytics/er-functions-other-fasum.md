@@ -6,7 +6,6 @@ manager: kfend
 ms.date: 12/17/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -17,53 +16,56 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1c46f945a9caae2836886d051da820658e8be9af
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: c31722537e2a6bae502800953939ca01da4527b9
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4687702"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5567574"
 ---
-# <a name="fa_sum-er-function"></a><span data-ttu-id="19cb7-103">FA_SUM ER-funksjon</span><span class="sxs-lookup"><span data-stu-id="19cb7-103">FA_SUM ER function</span></span>
+# <a name="fa_sum-er-function"></a><span data-ttu-id="fa11d-103">FA_SUM ER-funksjon</span><span class="sxs-lookup"><span data-stu-id="fa11d-103">FA_SUM ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="19cb7-104">`FA_SUM`-funksjonen returnerer en *Container (post)*-verdi som består av data for anleggsmiddelbeløpene for den angitte anleggsmiddelvaren, verdimodellkoden, rapporteringsåret og datoperioden.</span><span class="sxs-lookup"><span data-stu-id="19cb7-104">The `FA_SUM` function returns a *Container (record)* value that consists of data for the fixed asset amounts for the specified fixed asset item, value model code, and period of dates.</span></span>
+<span data-ttu-id="fa11d-104">`FA_SUM`-funksjonen returnerer en *Container (post)*-verdi som består av data for anleggsmiddelbeløpene for den angitte anleggsmiddelvaren, verdimodellkoden, rapporteringsåret og datoperioden.</span><span class="sxs-lookup"><span data-stu-id="fa11d-104">The `FA_SUM` function returns a *Container (record)* value that consists of data for the fixed asset amounts for the specified fixed asset item, value model code, and period of dates.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="19cb7-105">Syntaks</span><span class="sxs-lookup"><span data-stu-id="19cb7-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="fa11d-105">Syntaks</span><span class="sxs-lookup"><span data-stu-id="fa11d-105">Syntax</span></span>
 
 ```vb
 FA_SUM (fixed asset code, value model code, start date, end date)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="19cb7-106">Argumenter</span><span class="sxs-lookup"><span data-stu-id="19cb7-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="fa11d-106">Argumenter</span><span class="sxs-lookup"><span data-stu-id="fa11d-106">Arguments</span></span>
 
-<span data-ttu-id="19cb7-107">`fixed asset code`: *Streng*</span><span class="sxs-lookup"><span data-stu-id="19cb7-107">`fixed asset code`: *String*</span></span>
+<span data-ttu-id="fa11d-107">`fixed asset code`: *Streng*</span><span class="sxs-lookup"><span data-stu-id="fa11d-107">`fixed asset code`: *String*</span></span>
 
-<span data-ttu-id="19cb7-108">En *streng*-verdi som representerer koden for en anleggsmiddelvare som saldoen beregnes for.</span><span class="sxs-lookup"><span data-stu-id="19cb7-108">A *String* value that represents the code of a fixed asset item that the balance is calculated for.</span></span>
+<span data-ttu-id="fa11d-108">En *streng*-verdi som representerer koden for en anleggsmiddelvare som saldoen beregnes for.</span><span class="sxs-lookup"><span data-stu-id="fa11d-108">A *String* value that represents the code of a fixed asset item that the balance is calculated for.</span></span>
 
-<span data-ttu-id="19cb7-109">`value model code`: *Streng*</span><span class="sxs-lookup"><span data-stu-id="19cb7-109">`value model code`: *String*</span></span>
+<span data-ttu-id="fa11d-109">`value model code`: *Streng*</span><span class="sxs-lookup"><span data-stu-id="fa11d-109">`value model code`: *String*</span></span>
 
-<span data-ttu-id="19cb7-110">En *streng*-verdi som representerer koden for en verdimodell som saldoen beregnes for.</span><span class="sxs-lookup"><span data-stu-id="19cb7-110">A *String* value that represents the code of a value model that the balance is calculated for.</span></span>
+<span data-ttu-id="fa11d-110">En *streng*-verdi som representerer koden for en verdimodell som saldoen beregnes for.</span><span class="sxs-lookup"><span data-stu-id="fa11d-110">A *String* value that represents the code of a value model that the balance is calculated for.</span></span>
 
-<span data-ttu-id="19cb7-111">`start date`: *Dato*</span><span class="sxs-lookup"><span data-stu-id="19cb7-111">`start date`: *Date*</span></span>
+<span data-ttu-id="fa11d-111">`start date`: *Dato*</span><span class="sxs-lookup"><span data-stu-id="fa11d-111">`start date`: *Date*</span></span>
 
-<span data-ttu-id="19cb7-112">En *dato*-verdi som representerer startdatoen for en periode som anleggsmiddelbeløpene beregnes for.</span><span class="sxs-lookup"><span data-stu-id="19cb7-112">A *Date* value that represents the start date of a period that the fixed asset amounts are calculated for.</span></span>
+<span data-ttu-id="fa11d-112">En *dato*-verdi som representerer startdatoen for en periode som anleggsmiddelbeløpene beregnes for.</span><span class="sxs-lookup"><span data-stu-id="fa11d-112">A *Date* value that represents the start date of a period that the fixed asset amounts are calculated for.</span></span>
 
-<span data-ttu-id="19cb7-113">`end date`: *Dato*</span><span class="sxs-lookup"><span data-stu-id="19cb7-113">`end date`: *Date*</span></span>
+<span data-ttu-id="fa11d-113">`end date`: *Dato*</span><span class="sxs-lookup"><span data-stu-id="fa11d-113">`end date`: *Date*</span></span>
 
-<span data-ttu-id="19cb7-114">En *dato*-verdi som representerer sluttdatoen for en periode som anleggsmiddelbeløpene beregnes for.</span><span class="sxs-lookup"><span data-stu-id="19cb7-114">A *Date* value that represents the end date of a period that the fixed asset amounts are calculated for.</span></span>
+<span data-ttu-id="fa11d-114">En *dato*-verdi som representerer sluttdatoen for en periode som anleggsmiddelbeløpene beregnes for.</span><span class="sxs-lookup"><span data-stu-id="fa11d-114">A *Date* value that represents the end date of a period that the fixed asset amounts are calculated for.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="19cb7-115">Returverdier</span><span class="sxs-lookup"><span data-stu-id="19cb7-115">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="fa11d-115">Returverdier</span><span class="sxs-lookup"><span data-stu-id="fa11d-115">Return values</span></span>
 
-<span data-ttu-id="19cb7-116">*Container (post)*</span><span class="sxs-lookup"><span data-stu-id="19cb7-116">*Container (record)*</span></span>
+<span data-ttu-id="fa11d-116">*Container (post)*</span><span class="sxs-lookup"><span data-stu-id="fa11d-116">*Container (record)*</span></span>
 
-<span data-ttu-id="19cb7-117">Den resulterende postvedien.</span><span class="sxs-lookup"><span data-stu-id="19cb7-117">The resulting record value.</span></span>
+<span data-ttu-id="fa11d-117">Den resulterende postvedien.</span><span class="sxs-lookup"><span data-stu-id="fa11d-117">The resulting record value.</span></span>
 
-## <a name="example"></a><span data-ttu-id="19cb7-118">Eksempel</span><span class="sxs-lookup"><span data-stu-id="19cb7-118">Example</span></span>
+## <a name="example"></a><span data-ttu-id="fa11d-118">Eksempel</span><span class="sxs-lookup"><span data-stu-id="fa11d-118">Example</span></span>
 
-<span data-ttu-id="19cb7-119">`FA_SUM ("COMP-000001", "Current", Date1, Date2)` returnerer databeholderen for anleggsmiddel **COMP-000001** som er klargjort for den **gjeldende**-verdimodellen, og for en periode fra **Dato1** til **Dato2**.</span><span class="sxs-lookup"><span data-stu-id="19cb7-119">`FA_SUM ("COMP-000001", "Current", Date1, Date2)` returns the data container for fixed asset **COMP-000001** that has been prepared for the **Current** value model and for a period from **Date1** to **Date2**.</span></span>
+<span data-ttu-id="fa11d-119">`FA_SUM ("COMP-000001", "Current", Date1, Date2)` returnerer databeholderen for anleggsmiddel **COMP-000001** som er klargjort for den **gjeldende**-verdimodellen, og for en periode fra **Dato1** til **Dato2**.</span><span class="sxs-lookup"><span data-stu-id="fa11d-119">`FA_SUM ("COMP-000001", "Current", Date1, Date2)` returns the data container for fixed asset **COMP-000001** that has been prepared for the **Current** value model and for a period from **Date1** to **Date2**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="19cb7-120">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="19cb7-120">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="fa11d-120">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="fa11d-120">Additional resources</span></span>
 
-[<span data-ttu-id="19cb7-121">Andre funksjoner (spesifikke for forretningsområder)</span><span class="sxs-lookup"><span data-stu-id="19cb7-121">Other (business domain–specific) functions</span></span>](er-functions-category-other.md)
+[<span data-ttu-id="fa11d-121">Andre funksjoner (spesifikke for forretningsområder)</span><span class="sxs-lookup"><span data-stu-id="fa11d-121">Other (business domain–specific) functions</span></span>](er-functions-category-other.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
