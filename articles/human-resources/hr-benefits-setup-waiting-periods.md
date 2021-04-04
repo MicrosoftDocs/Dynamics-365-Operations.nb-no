@@ -18,30 +18,35 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 07ceed65a0346912d4be012a5cec502b0f0a6149
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 0e08c0c02393506e1e292676c954bdf3850029f7
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113628"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5468305"
 ---
-# <a name="configure-waiting-periods"></a><span data-ttu-id="48fb5-103">Konfigurere venteperioder</span><span class="sxs-lookup"><span data-stu-id="48fb5-103">Configure waiting periods</span></span>
+# <a name="configure-waiting-periods"></a><span data-ttu-id="aae6c-103">Konfigurere venteperioder</span><span class="sxs-lookup"><span data-stu-id="aae6c-103">Configure waiting periods</span></span>
 
-<span data-ttu-id="48fb5-104">I Microsoft Dynamics 365 Human Resources etablerer ventedager en milepæl som skal brukes for fordelsplaner.</span><span class="sxs-lookup"><span data-stu-id="48fb5-104">In Microsoft Dynamics 365 Human Resources, waiting days establish a milestone to use for benefit plans.</span></span> <span data-ttu-id="48fb5-105">For eksempel tre måneder fra ansettelsesdato, den første i hver måned eller hver sjette måned.</span><span class="sxs-lookup"><span data-stu-id="48fb5-105">For example, three months from hire date, the first of each month, or six months.</span></span>   
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-1. <span data-ttu-id="48fb5-106">I arbeidsområdet **Fordelsbehandling**, under **Oppsett**, velger du **Venteperioder**.</span><span class="sxs-lookup"><span data-stu-id="48fb5-106">In the **Benefits management** workspace, under **Setup**, select **Waiting periods**.</span></span>
+<span data-ttu-id="aae6c-104">I Microsoft Dynamics 365 Human Resources etablerer ventedager en milepæl som skal brukes for fordelsplaner.</span><span class="sxs-lookup"><span data-stu-id="aae6c-104">In Microsoft Dynamics 365 Human Resources, waiting days establish a milestone to use for benefit plans.</span></span> <span data-ttu-id="aae6c-105">For eksempel tre måneder fra ansettelsesdato, den første i hver måned eller hver sjette måned.</span><span class="sxs-lookup"><span data-stu-id="aae6c-105">For example, three months from hire date, the first of each month, or six months.</span></span>   
 
-2. <span data-ttu-id="48fb5-107">Velg **Ny**.</span><span class="sxs-lookup"><span data-stu-id="48fb5-107">Select **New**.</span></span>
+1. <span data-ttu-id="aae6c-106">I arbeidsområdet **Fordelsbehandling**, under **Oppsett**, velger du **Venteperioder**.</span><span class="sxs-lookup"><span data-stu-id="aae6c-106">In the **Benefits management** workspace, under **Setup**, select **Waiting periods**.</span></span>
 
-3. <span data-ttu-id="48fb5-108">Angi verdier for de følgende feltene:</span><span class="sxs-lookup"><span data-stu-id="48fb5-108">Specify values for the following fields:</span></span>
+2. <span data-ttu-id="aae6c-107">Velg **Ny**.</span><span class="sxs-lookup"><span data-stu-id="aae6c-107">Select **New**.</span></span>
 
-   | <span data-ttu-id="48fb5-109">Felt</span><span class="sxs-lookup"><span data-stu-id="48fb5-109">Field</span></span> | <span data-ttu-id="48fb5-110">Beskrivelse</span><span class="sxs-lookup"><span data-stu-id="48fb5-110">Description</span></span> |
+3. <span data-ttu-id="aae6c-108">Angi verdier for de følgende feltene:</span><span class="sxs-lookup"><span data-stu-id="aae6c-108">Specify values for the following fields:</span></span>
+
+   | <span data-ttu-id="aae6c-109">Felt</span><span class="sxs-lookup"><span data-stu-id="aae6c-109">Field</span></span> | <span data-ttu-id="aae6c-110">Beskrivelse</span><span class="sxs-lookup"><span data-stu-id="aae6c-110">Description</span></span> |
    | --- | --- |
-   | <span data-ttu-id="48fb5-111">**Ventekode**</span><span class="sxs-lookup"><span data-stu-id="48fb5-111">**Waiting code**</span></span> | <span data-ttu-id="48fb5-112">En unik identifikator for venteperioden.</span><span class="sxs-lookup"><span data-stu-id="48fb5-112">A unique identifier for the waiting period.</span></span> |
-   | <span data-ttu-id="48fb5-113">**Beskrivelse**</span><span class="sxs-lookup"><span data-stu-id="48fb5-113">**Description**</span></span> | <span data-ttu-id="48fb5-114">En beskrivelse av venteperioden.</span><span class="sxs-lookup"><span data-stu-id="48fb5-114">A description of the waiting period.</span></span> |
-   | <span data-ttu-id="48fb5-115">**Ventemetode**</span><span class="sxs-lookup"><span data-stu-id="48fb5-115">**Waiting method**</span></span> | <span data-ttu-id="48fb5-116">Velg den aktuelle ventemetoden fra rulle gardinlisten.</span><span class="sxs-lookup"><span data-stu-id="48fb5-116">Select the appropriate waiting method from the drop-down list of values.</span></span> <span data-ttu-id="48fb5-117">Alternativene er netto, gjeldende måned, gjeldende kvartal, gjeldende år og gjeldende uke.</span><span class="sxs-lookup"><span data-stu-id="48fb5-117">Options are Net, Current month, Current quarter, Current year, and Current week.</span></span> |
-   | <span data-ttu-id="48fb5-118">**Måneder**</span><span class="sxs-lookup"><span data-stu-id="48fb5-118">**Months**</span></span> | <span data-ttu-id="48fb5-119">Angi antall måneder som skal legges til i ventemåten for å beregne ventedatoen.</span><span class="sxs-lookup"><span data-stu-id="48fb5-119">Enter the number of months to add to the waiting method to calculate the waiting date.</span></span> |
-   | <span data-ttu-id="48fb5-120">**Dager**</span><span class="sxs-lookup"><span data-stu-id="48fb5-120">**Days**</span></span> | <span data-ttu-id="48fb5-121">Angi antall dager som skal legges til i ventemåten for å beregne ventedatoen.</span><span class="sxs-lookup"><span data-stu-id="48fb5-121">Enter the number of days to add to the waiting method to calculate the waiting date.</span></span> |
-   | <span data-ttu-id="48fb5-122">**Ventedag**</span><span class="sxs-lookup"><span data-stu-id="48fb5-122">**Waiting day**</span></span> | <span data-ttu-id="48fb5-123">Velg ventedagen som skal brukes til å beregne ventedatoen.</span><span class="sxs-lookup"><span data-stu-id="48fb5-123">Select the waiting day to use to calculate the waiting date.</span></span> |
+   | <span data-ttu-id="aae6c-111">**Ventekode**</span><span class="sxs-lookup"><span data-stu-id="aae6c-111">**Waiting code**</span></span> | <span data-ttu-id="aae6c-112">En unik identifikator for venteperioden.</span><span class="sxs-lookup"><span data-stu-id="aae6c-112">A unique identifier for the waiting period.</span></span> |
+   | <span data-ttu-id="aae6c-113">**Beskrivelse**</span><span class="sxs-lookup"><span data-stu-id="aae6c-113">**Description**</span></span> | <span data-ttu-id="aae6c-114">En beskrivelse av venteperioden.</span><span class="sxs-lookup"><span data-stu-id="aae6c-114">A description of the waiting period.</span></span> |
+   | <span data-ttu-id="aae6c-115">**Ventemetode**</span><span class="sxs-lookup"><span data-stu-id="aae6c-115">**Waiting method**</span></span> | <span data-ttu-id="aae6c-116">Velg den aktuelle ventemetoden fra rulle gardinlisten.</span><span class="sxs-lookup"><span data-stu-id="aae6c-116">Select the appropriate waiting method from the drop-down list of values.</span></span> <span data-ttu-id="aae6c-117">Alternativene er netto, gjeldende måned, gjeldende kvartal, gjeldende år og gjeldende uke.</span><span class="sxs-lookup"><span data-stu-id="aae6c-117">Options are Net, Current month, Current quarter, Current year, and Current week.</span></span> |
+   | <span data-ttu-id="aae6c-118">**Måneder**</span><span class="sxs-lookup"><span data-stu-id="aae6c-118">**Months**</span></span> | <span data-ttu-id="aae6c-119">Angi antall måneder som skal legges til i ventemåten for å beregne ventedatoen.</span><span class="sxs-lookup"><span data-stu-id="aae6c-119">Enter the number of months to add to the waiting method to calculate the waiting date.</span></span> |
+   | <span data-ttu-id="aae6c-120">**Dager**</span><span class="sxs-lookup"><span data-stu-id="aae6c-120">**Days**</span></span> | <span data-ttu-id="aae6c-121">Angi antall dager som skal legges til i ventemåten for å beregne ventedatoen.</span><span class="sxs-lookup"><span data-stu-id="aae6c-121">Enter the number of days to add to the waiting method to calculate the waiting date.</span></span> |
+   | <span data-ttu-id="aae6c-122">**Ventedag**</span><span class="sxs-lookup"><span data-stu-id="aae6c-122">**Waiting day**</span></span> | <span data-ttu-id="aae6c-123">Velg ventedagen som skal brukes til å beregne ventedatoen.</span><span class="sxs-lookup"><span data-stu-id="aae6c-123">Select the waiting day to use to calculate the waiting date.</span></span> |
 
-4. <span data-ttu-id="48fb5-124">Velg **Lagre**.</span><span class="sxs-lookup"><span data-stu-id="48fb5-124">Select **Save**.</span></span>
+4. <span data-ttu-id="aae6c-124">Velg **Lagre**.</span><span class="sxs-lookup"><span data-stu-id="aae6c-124">Select **Save**.</span></span>
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

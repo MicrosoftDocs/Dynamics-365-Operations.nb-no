@@ -16,29 +16,31 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 963e12e9114664a995b92ffe22063c14f904da35
-ms.sourcegitcommit: 33b5c8bc4f9461e290513aa22de1ec1fba3b0742
+ms.openlocfilehash: d2fc08586914fd3815b0da062f24d83ac550302f
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "5125767"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5467631"
 ---
-# <a name="example-query-for-candidate-to-hire"></a><span data-ttu-id="8c13a-103">Eksempelspørring for Kandidat for ansettelse</span><span class="sxs-lookup"><span data-stu-id="8c13a-103">Example query for Candidate to hire</span></span>
+# <a name="example-query-for-candidate-to-hire"></a><span data-ttu-id="008e9-103">Eksempelspørring for Kandidat for ansettelse</span><span class="sxs-lookup"><span data-stu-id="008e9-103">Example query for Candidate to hire</span></span>
 
-<span data-ttu-id="8c13a-104">Dette emnet inneholder en eksempelspørring for Kandidat for ansettelse-enheten i Dynamics 365 Human Resources.</span><span class="sxs-lookup"><span data-stu-id="8c13a-104">This topic provides an example query for the Candidate to hire entity in Dynamics 365 Human Resources.</span></span>
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-<span data-ttu-id="8c13a-105">Dette emnet gir et eksempel på hvordan du kan bruke *dybdeinnlegg* til å opprette alle detaljene til en ny kandidatpost i én enkelt API-operasjon.</span><span class="sxs-lookup"><span data-stu-id="8c13a-105">This topic provides an example demonstrating how you can use *deep inserts* to create all the detail of a new candidate record in a single API operation.</span></span> <span data-ttu-id="8c13a-106">Hvis du vil ha mer informasjon om dybdeinnlegg, kan du se [Opprette relaterte enhetsposter i én operasjon](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/create-entity-web-api#create-related-entity-records-in-one-operation).</span><span class="sxs-lookup"><span data-stu-id="8c13a-106">For more information about deep inserts, see [Create related entity records in one operation](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/create-entity-web-api#create-related-entity-records-in-one-operation).</span></span>
+<span data-ttu-id="008e9-104">Dette emnet inneholder en eksempelspørring for Kandidat for ansettelse-enheten i Dynamics 365 Human Resources.</span><span class="sxs-lookup"><span data-stu-id="008e9-104">This topic provides an example query for the Candidate to hire entity in Dynamics 365 Human Resources.</span></span>
 
-<span data-ttu-id="8c13a-107">Enheten **mshr_hcmcandidatetohireentity** er unik på grunn av relasjonen til enheten **mshr_dirpersonentity**.</span><span class="sxs-lookup"><span data-stu-id="8c13a-107">The **mshr_hcmcandidatetohireentity** entity is unique because of its relationship to the **mshr_dirpersonentity** entity.</span></span> <span data-ttu-id="8c13a-108">Mange av egenskapene i **mshr_hcmcandidatetohireentity** (for eksempel **mshr_firstname**, **mshr_lastname** og **mshr_birthdate**) avledes fra posten **mshr_dirpersonentity**.</span><span class="sxs-lookup"><span data-stu-id="8c13a-108">Many of the properties on the **mshr_hcmcandidatetohireentity** (for example, **mshr_firstname**, **mshr_lastname**, and **mshr_birthdate**) are derived from the **mshr_dirpersonentity** record.</span></span> <span data-ttu-id="8c13a-109">Hvis du posterer en ny kandidatpost til **mshr_hcmcandidatetohireentity** uten å bruke dybdeinnlegg, kan du definere verdier for disse egenskapene direkte i posten **mshr_hcmcandidatetohireentity**.</span><span class="sxs-lookup"><span data-stu-id="8c13a-109">If you post a new candidate record to **mshr_hcmcandidatetohireentity** without using deep inserts, you can define values for these properties directly on the **mshr_hcmcandidatetohireentity** record.</span></span> <span data-ttu-id="8c13a-110">Den tilknyttede **mshr_dirpersonentity**-posten opprettes implisitt med de definerte verdiene for egenskapene.</span><span class="sxs-lookup"><span data-stu-id="8c13a-110">The associated **mshr_dirpersonentity** record is created implicitly with the defined values for the properties.</span></span> <span data-ttu-id="8c13a-111">Du kan deretter opprette andre relaterte enhetsposter (for eksempel ferdigheter eller utdanning) som separate API-kall.</span><span class="sxs-lookup"><span data-stu-id="8c13a-111">You can then create any other related entity records (such as skills or education) as separate API calls.</span></span>
+<span data-ttu-id="008e9-105">Dette emnet gir et eksempel på hvordan du kan bruke *dybdeinnlegg* til å opprette alle detaljene til en ny kandidatpost i én enkelt API-operasjon.</span><span class="sxs-lookup"><span data-stu-id="008e9-105">This topic provides an example demonstrating how you can use *deep inserts* to create all the detail of a new candidate record in a single API operation.</span></span> <span data-ttu-id="008e9-106">Hvis du vil ha mer informasjon om dybdeinnlegg, kan du se [Opprette relaterte enhetsposter i én operasjon](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/create-entity-web-api#create-related-entity-records-in-one-operation).</span><span class="sxs-lookup"><span data-stu-id="008e9-106">For more information about deep inserts, see [Create related entity records in one operation](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/create-entity-web-api#create-related-entity-records-in-one-operation).</span></span>
 
-<span data-ttu-id="8c13a-112">Hvis du imidlertid vil bruke dybdeinnlegg for å opprette alle relaterte enheter i én operasjon, må egenskapene som er spesifikke for **mshr_dirpersonentity**-enheten, defineres på det nestede nivået for operasjonen.</span><span class="sxs-lookup"><span data-stu-id="8c13a-112">If, however, you want to use deep inserts to create all related entities in one operation, the properties specific to the **mshr_dirpersonentity** entity must be defined on that nested level of the operation.</span></span>
+<span data-ttu-id="008e9-107">Enheten **mshr_hcmcandidatetohireentity** er unik på grunn av relasjonen til enheten **mshr_dirpersonentity**.</span><span class="sxs-lookup"><span data-stu-id="008e9-107">The **mshr_hcmcandidatetohireentity** entity is unique because of its relationship to the **mshr_dirpersonentity** entity.</span></span> <span data-ttu-id="008e9-108">Mange av egenskapene i **mshr_hcmcandidatetohireentity** (for eksempel **mshr_firstname**, **mshr_lastname** og **mshr_birthdate**) avledes fra posten **mshr_dirpersonentity**.</span><span class="sxs-lookup"><span data-stu-id="008e9-108">Many of the properties on the **mshr_hcmcandidatetohireentity** (for example, **mshr_firstname**, **mshr_lastname**, and **mshr_birthdate**) are derived from the **mshr_dirpersonentity** record.</span></span> <span data-ttu-id="008e9-109">Hvis du posterer en ny kandidatpost til **mshr_hcmcandidatetohireentity** uten å bruke dybdeinnlegg, kan du definere verdier for disse egenskapene direkte i posten **mshr_hcmcandidatetohireentity**.</span><span class="sxs-lookup"><span data-stu-id="008e9-109">If you post a new candidate record to **mshr_hcmcandidatetohireentity** without using deep inserts, you can define values for these properties directly on the **mshr_hcmcandidatetohireentity** record.</span></span> <span data-ttu-id="008e9-110">Den tilknyttede **mshr_dirpersonentity**-posten opprettes implisitt med de definerte verdiene for egenskapene.</span><span class="sxs-lookup"><span data-stu-id="008e9-110">The associated **mshr_dirpersonentity** record is created implicitly with the defined values for the properties.</span></span> <span data-ttu-id="008e9-111">Du kan deretter opprette andre relaterte enhetsposter (for eksempel ferdigheter eller utdanning) som separate API-kall.</span><span class="sxs-lookup"><span data-stu-id="008e9-111">You can then create any other related entity records (such as skills or education) as separate API calls.</span></span>
 
-<span data-ttu-id="8c13a-113">Dette eksemplet viser hvordan du kan opprette en kandidatpost, den tilknyttede personposten og personens ferdigheter og utdannelse på tre nestede nivåer ved hjelp av dybdeinnlegg i en enkelt API-operasjon.</span><span class="sxs-lookup"><span data-stu-id="8c13a-113">This example shows how you can create a candidate record, the associated person record, and the person's skills and education in three nested levels using deep inserts in a single API operation.</span></span>
+<span data-ttu-id="008e9-112">Hvis du imidlertid vil bruke dybdeinnlegg for å opprette alle relaterte enheter i én operasjon, må egenskapene som er spesifikke for **mshr_dirpersonentity**-enheten, defineres på det nestede nivået for operasjonen.</span><span class="sxs-lookup"><span data-stu-id="008e9-112">If, however, you want to use deep inserts to create all related entities in one operation, the properties specific to the **mshr_dirpersonentity** entity must be defined on that nested level of the operation.</span></span>
+
+<span data-ttu-id="008e9-113">Dette eksemplet viser hvordan du kan opprette en kandidatpost, den tilknyttede personposten og personens ferdigheter og utdannelse på tre nestede nivåer ved hjelp av dybdeinnlegg i en enkelt API-operasjon.</span><span class="sxs-lookup"><span data-stu-id="008e9-113">This example shows how you can create a candidate record, the associated person record, and the person's skills and education in three nested levels using deep inserts in a single API operation.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="8c13a-114">Eksemplet inneholder ikke alle egenskapene til hver av API-enhetene.</span><span class="sxs-lookup"><span data-stu-id="8c13a-114">The example does not include all properties of each of the API entities.</span></span> <span data-ttu-id="8c13a-115">Den er forenklet for demonstrasjonsformål.</span><span class="sxs-lookup"><span data-stu-id="8c13a-115">It is simplified for demonstration purposes.</span></span>
+> <span data-ttu-id="008e9-114">Eksemplet inneholder ikke alle egenskapene til hver av API-enhetene.</span><span class="sxs-lookup"><span data-stu-id="008e9-114">The example does not include all properties of each of the API entities.</span></span> <span data-ttu-id="008e9-115">Den er forenklet for demonstrasjonsformål.</span><span class="sxs-lookup"><span data-stu-id="008e9-115">It is simplified for demonstration purposes.</span></span>
 
-<span data-ttu-id="8c13a-116">**Forespørsel**</span><span class="sxs-lookup"><span data-stu-id="8c13a-116">**Request**</span></span>
+<span data-ttu-id="008e9-116">**Forespørsel**</span><span class="sxs-lookup"><span data-stu-id="008e9-116">**Request**</span></span>
 
 ```http
 
@@ -100,7 +102,7 @@ Accept: application/json
 }
 ```
 
-<span data-ttu-id="8c13a-117">**Svar**</span><span class="sxs-lookup"><span data-stu-id="8c13a-117">**Response**</span></span>
+<span data-ttu-id="008e9-117">**Svar**</span><span class="sxs-lookup"><span data-stu-id="008e9-117">**Response**</span></span>
 
 ```http
 
@@ -110,6 +112,9 @@ OData-EntityId: [Organization URI]/api/data/v9.1/mshr_hcmcandidatetohireentities
 
 ```
 
-## <a name="see-also"></a><span data-ttu-id="8c13a-118">Se også</span><span class="sxs-lookup"><span data-stu-id="8c13a-118">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="008e9-118">Se også</span><span class="sxs-lookup"><span data-stu-id="008e9-118">See also</span></span>
 
-[<span data-ttu-id="8c13a-119">Innføring i API for søkersporingssystemintegrering</span><span class="sxs-lookup"><span data-stu-id="8c13a-119">Applicant Tracking System integration API introduction</span></span>](hr-admin-integration-ats-api-introduction.md)<br>
+[<span data-ttu-id="008e9-119">Innføring i API for søkersporingssystemintegrering</span><span class="sxs-lookup"><span data-stu-id="008e9-119">Applicant Tracking System integration API introduction</span></span>](hr-admin-integration-ats-api-introduction.md)<br>
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
