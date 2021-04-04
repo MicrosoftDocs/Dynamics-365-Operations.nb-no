@@ -15,12 +15,12 @@ ms.search.region: Norway
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8abec3fb77b8fee4146fbee06146a2274405a2a4
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 2e5fd3d66a10daeae64498028543a94ff303b2e3
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4990104"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5258680"
 ---
 # <a name="norway-overview"></a>Oversikt over Norge
 
@@ -36,3 +36,6 @@ Dette emnet inneholder koblinger til dokumentasjonsressurser for Norge.
 - [Kassefunksjonalitet](../../retail/localizations/emea-nor-cash-registers.md)
 - [Retningslinjer for distribusjon for kassaapparater](../../retail/localizations/emea-nor-loc-deployment-guidelines.md)
 - [Eksport av elektroniske fakturaer for kunde](emea-nor-e-invoices.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

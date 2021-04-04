@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 50dbc8c3c2d95ca4ec0dab02e9f790c06e4dbc63
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 72581a6d852fe6eb5b4ad894027c1f5a3b5363e5
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5003503"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5250608"
 ---
 # <a name="electronic-reporting-sample-vendor-checks"></a>Eksempel på leverandørsjekker ved elektronisk rapportering
 
@@ -43,3 +43,6 @@ Microsoft Dynamics 365 Finance inneholder et eksempelformat hvor sjekken er øve
 - Når du genererer betalinger for den konfigurerte bankkontoen i betalingsjournalen, må sjekkene skrives ut ved hjelp av det angitte formatet.
 
 Hvis du vil ha mer informasjon, se [Endre et format for elektronisk rapportering](../../dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

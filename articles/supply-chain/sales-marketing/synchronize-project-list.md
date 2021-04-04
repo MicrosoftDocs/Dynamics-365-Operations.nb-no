@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 12708b35be87baf1ad13296b56507f3246f96394
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 3d17b226cabd0668bcdb52e9a7fdfc5973fe49b9
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5010878"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5243063"
 ---
 # <a name="synchronize-project-list-from-supply-chain-management-to-field-service"></a>Synkronisere prosjektliste fra Supply Chain Management til Field Service
 
@@ -46,7 +46,7 @@ Følgende synkroniseringsoppgaver er påkrevd før synkronisering av prosjektlis
 - Kontoer (Sales til Supply Chain Management) 
 
 ## <a name="entity-set"></a>Enhetssett
-| Field Service           | Forsyningskjedeadministrasjon  |
+| Field Service           | Supply Chain Management  |
 |-------------------------|-------------------------|
 |msdynce_externalprojects | Prosjekter                |
 
@@ -57,7 +57,7 @@ Prosjekter opprettes i Supply Chain Management. Prosjekter med **Prosjekttype** 
 **Eksternt prosjekt**-enheten får alle prosjektene fra Supply Chain Management. Feltet **Eksternt prosjekt** er lagt til **Arbeidsordre**-enheten. Dette er et oppslagsfelt, så ved å kode arbeidsordren med et prosjekt, kobles salgsordren til et prosjekt i Supply Chain Management. Når **Systemstatus** endrer **Åpen – pågår(690,970,000)** til en høyere status, låses feltet **Eksternt prosjekt**, og du kan ikke legge til, fjerne eller endre verdien.
 
 ## <a name="prerequisites-and-mapping-setup"></a>Forutsetninger og tilordningsdefinisjon
-### <a name="supply-chain-management"></a>Forsyningskjedeadministrasjon
+### <a name="supply-chain-management"></a>Supply Chain Management
 Aktivere endringssporing for dataenhetsprosjekter.
 
 ## <a name="template-mapping-in-data-integration"></a>Maltilordning i Dataintegrering
@@ -66,3 +66,6 @@ Aktivere endringssporing for dataenhetsprosjekter.
 ### <a name="projects-supply-chain-management-to-field-service-projects"></a>Prosjekter (Supply Chain Management til Field Service): Prosjekter
 
 [![Maltilordning i Dataintegrering](./media/FSProject1.png)](./media/FSProject1.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

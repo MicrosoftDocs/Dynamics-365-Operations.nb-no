@@ -16,20 +16,18 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: cca5e0efd6516d02c372e8a616b6bb0c39f3088c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 28bea16c3266115cf09aa80a364344789d60af7a
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5006216"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5477838"
 ---
 # <a name="create-task-lists-and-add-tasks"></a>Opprette oppgavelister og legge til oppgaver
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet beskriver hvordan du oppretter oppgavelister og legger til oppgaver i dem i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Oversikt
 
 En *oppgave* definerer en bestemt del av arbeidet eller en handling som noen må fullføre på eller før en angitt forfallsdato. I Dynamics 365 Commerce kan en oppgave inneholde detaljerte instruksjoner og informasjon om en kontaktperson. Den kan også inneholde koblinger til Back-Office-operasjoner, salgsstedsoperasjoner (POS) eller områdesider, for å forbedre produktiviteten og gi den konteksten som oppgaveeieren trenger for å fullføre oppgaven effektivt.
 

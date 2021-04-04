@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: f1790366cebf317472bc1ef9a5ecd2a19fe755d3
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 0942ce83060c186212d7f425f8dbd0a4ca2c09e7
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4980837"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5252780"
 ---
 # <a name="synchronize-agreement-invoices-in-field-service-to-free-text-invoices-in-supply-chain-management"></a>Synkronisere avtalefakturaer i Field Service til fritekstfakturaer i Supply Chain Management
 
@@ -52,7 +52,7 @@ Følgende synkronisering er påkrevd før synkronisering av avtalefakturaer kan 
 
 ## <a name="entity-set"></a>Enhetssett
 
-| Field Service  | Forsyningskjedeadministrasjon                 |
+| Field Service  | Supply Chain Management                 |
 |----------------|----------------------------------------|
 | fakturaer       | Fakturahoder i fritekst for Dataverse-kunde |
 | invoicedetails | Fakturalinjer i fritekst for Dataverse-kunde   |
@@ -107,3 +107,6 @@ Følgende illustrasjoner viser en tilordning av malen i Dataintegrering.
 ### <a name="agreement-invoices-field-service-to-supply-chain-management-invoice-lines"></a>Avtalefakturaer (Field Service til Supply Chain Management): Fakturalinjer
 
 [![Maltilordning i Dataintegrering](./media/FSFreeTextInvoice2.png)](./media/FSFreeTextInvoice2.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

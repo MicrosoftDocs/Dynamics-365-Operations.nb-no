@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: 2c64bd4eddab0de9db457c6d8d4464303917c438
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 857fb7d6860d050fb0be50f2559e3998dacad458
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113674"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5468017"
 ---
 # <a name="create-a-new-benefit"></a>Opprett en ny fordel
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Denne oppgaven viser hvordan du oppretter fordelselementer som skal brukes når du oppretter en ny fordel. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne oppgaven. Denne oppgaven er ment for en kompensasjons- og fordelsansvarlig.
 
@@ -53,3 +55,6 @@ Denne oppgaven viser hvordan du oppretter fordelselementer som skal brukes når 
 6. Angi dato og klokkeslett i Gyldig-feltet.
 7. Klikk Opprett fordel.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

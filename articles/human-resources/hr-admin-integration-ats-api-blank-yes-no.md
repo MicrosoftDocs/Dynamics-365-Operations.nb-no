@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0243ae32065c9e1b92937e065289d615a59c85f8
-ms.sourcegitcommit: 33b5c8bc4f9461e290513aa22de1ec1fba3b0742
+ms.openlocfilehash: 21d85a9467ed74186dbef07417cbeb70489f6f2c
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "5125791"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5467535"
 ---
 # <a name="blank-yes-no"></a>Tomt Ja Nei
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 I dette emnet beskrives alternativetsettet Tomt Ja Nei for Dynamics 365 Human Resources.
 
@@ -41,3 +43,6 @@ Denne opplistingen gir alternativsett for ja/nei-egenskaper som også tillater m
 
 [Innføring i API for søkersporingssystemintegrering](hr-admin-integration-ats-api-introduction.md)<br>
 [Eksempelspørring for Kandidat for ansettelse](hr-admin-integration-ats-api-candidate-to-hire-example-query.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

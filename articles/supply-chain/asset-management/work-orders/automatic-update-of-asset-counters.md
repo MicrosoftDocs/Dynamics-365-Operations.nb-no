@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d3e8619439545cf3ea42f84a6dd7ee6ffdf1026e
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 9911d5b96bb58b5def3e7dfee0f36826d99f6ba1
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021936"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5263692"
 ---
 # <a name="automatic-update-of-asset-counters"></a>Automatisk oppdatering av anleggsmiddeltellere
 
@@ -69,3 +69,6 @@ Merk følgende punkt:
 
 - Du kan definere tellere som er relatert til en annen teller. I dette tilfellet oppdateres tilknyttede tellere automatisk samtidig når en teller oppdateres. Hvis du vil ha informasjon om hvordan du definerer relaterte tellere, se [Tellere](../setup-for-objects/counters.md).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

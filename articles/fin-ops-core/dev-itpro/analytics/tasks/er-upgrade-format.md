@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace, ERVendorPart, ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERComponentTypeDropDialog
 audience: Application User
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b76fb09ff961a3100b6a4bf890c1b12e6a0a2771
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: 336551f4e9858269010ec7debd1750a8d8453163
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5092572"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5564248"
 ---
 # <a name="er-upgrade-your-format-by-adopting-a-new-base-version-of-that-format"></a>ER Oppgradere formatet ved å ta i bruk en ny, grunnleggende versjon av dette formatet
 
@@ -243,3 +242,6 @@ For å gjøre dette må Proseware, Inc. endre den grunnleggende konfigurasjonsve
 ## <a name="test-the-customized-format-for-payment-files-generation"></a>Teste det egendefinerte formatet for generering av betalingsfiler
 Fullfør trinnene i fremgangsmåten "Bruke opprettet format til å generere elektroniske dokumenter for betalinger" i en parallel Finance and Operations-økt. Velg det opprettede BBS-formatet (Storbritannia fiktiv egendefinert) i parametere for elektronisk betalingmåte. Kontroller at den opprettede betalingsfilen inneholder den nylig introduserte Proseware, Inc. XML-noden som presenterer IBAN-kontokode i henhold til områdekrav. Filen skal også inneholde den nylig introduserte Litware, Inc. XML-noden som presenterer SWIFT-bankkode i henhold til landkrav.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 92bc314e69628f2a287ba7c9a7c2d3d73a0bfd33
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 8ae91ce361ab3e4e799ec82ca9e05c9e11d81ed1
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4988108"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5256576"
 ---
 # <a name="set-up-method-of-payment-for-iso20022-credit-transfer"></a>Definere en betalingsmåte for ISO20022-kredittoverføring
 
@@ -47,3 +47,6 @@ Dette er den tredje prosedyren av fem, som illustrerer leverandørbetalingsprose
 10. Angi verdiene DEMF OPER i feltet Betalingskonto.
 11. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

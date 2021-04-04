@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 60264d246e1173c25e4383cc79836126126fcba5
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 646fc03dcacced6a9a6ae8bb373c5a2d915c243a
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113768"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5465084"
 ---
 # <a name="define-and-manage-a-benefits-program"></a>Definere og administrere et fordelsprogram
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Human Resources inneholder et sett med verktøy som kan brukes til å definere og vedlikeholde fordeler, fradrag og arbeideres kompensasjonsplaner som en organisasjon tilbyr eller behandler for sine arbeidere. Denne artikkelen inneholder informasjon om hvordan du definerer og behandler fordeler.
 
@@ -64,3 +66,6 @@ Noen ganger stopper en organisasjon å tilby bestemte fordeler. I dette tilfelle
 På samme måte kan du med masseutvidelse av fordel utvide utløpsdatoen for både en fordel og arbeiderregistreringene for denne fordelen hvis du vil tilby en fordel lenger enn opprinnelig planlagt.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

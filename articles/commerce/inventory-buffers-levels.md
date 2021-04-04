@@ -1,6 +1,6 @@
 ---
 title: Konfigurere beholdningsbuffere og beholdningsnivåer
-description: Dette emnet beskriver hvordan du konfigurerer beholdningsbuffere og beholdningsnivåer som bestemmer tilgjengelighetsmeldinger for beholdning på Microsoft Dynamics 365 Commerce-nettsteder.
+description: Dette emnet beskriver hvordan du konfigurerer beholdningsbuffere og beholdningsnivåer som bestemmer tilgjengelighetsmeldinger for beholdning på nettsteder for Microsoft Dynamics 365 Commerce.
 author: boycezhu
 manager: annbe
 ms.date: 06/01/2020
@@ -14,20 +14,18 @@ ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: c519095d174414d6d4a8c86bc171ea62e1c72582
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: ea6844307e63b351ef914134b7d8392b0910019a
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5012441"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5478394"
 ---
-# <a name="configure-inventory-buffers-and-inventory-levels"></a>Konfigurere beholdningsbuffere og beholdningsnivåer
+# <a name="configure-inventory-buffers-and-inventory-levels"></a>Konfigurere lagerbuffere og lagernivåer
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver hvordan du konfigurerer beholdningsbuffere og beholdningsnivåer som bestemmer meldinger om tilgjengelighet av beholdning på Microsoft Dynamics 365 Commerce-nettsteder.
-
-## <a name="overview"></a>Oversikt
+Dette emnet beskriver hvordan du konfigurerer beholdningsbuffere og beholdningsnivåer som bestemmer meldinger om tilgjengelighet av beholdning på nettsteder for Microsoft Dynamics 365 Commerce.
 
 Dynamics 365 Commerce-hovedkontorer inneholder beholdningsdata og ulike kanaler som for eksempel POS-programmer, butikkfronter for e-handel og andre egendefinerte, integrerte programmer som sender og henter beholdning på en asynkron måte. Derfor er ikke de tilgjengelige beholdningsverdiene som hentes gjennom tilgjengelig beholdning-siden i Commerce Headquarters, via POS-grensesnittet (UI), samt via API-er for beholdningstilgjengelighet for e-handel, alltid 100 prosent nøyaktige i sanntid.
 

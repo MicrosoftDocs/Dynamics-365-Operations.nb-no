@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 63e8214608d5c8c4b1bcc805fdf1d307fc381db7
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 2ecdebf38800178ba4eb5e08f341eae37bdc65d7
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967211"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5259025"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10010-may-2020"></a>Hva er nytt eller endret i Dynamics 365 Supply Chain Management 10.0.10. (mai) 2020
 
@@ -75,3 +75,6 @@ Emnet [Fjernede eller avskrevne funksjonene i Dynamics 365 Supply Chain Manageme
 Før en funksjon fjernes fra produktet, vil avskrivningsvarselet bli kunngjort i emnet [Fjernede eller avskrevne funksjoner i Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) 12 måneder før fjerningen.
 
 For oppdelingsendringer som bare påvirker kompileringstiden, men som er binære kompatible med sandkasse- og produksjonsmiljøer, vil avskrivningstiden være mindre enn 12 måneder. Dette er vanligvis funksjonelle oppdateringer som må gjøres på kompilatoren.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

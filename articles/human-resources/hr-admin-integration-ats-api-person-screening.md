@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d76bb57d85ee16f4faa0bb9cfec77047feb7df5f
-ms.sourcegitcommit: 33b5c8bc4f9461e290513aa22de1ec1fba3b0742
+ms.openlocfilehash: c6287f30aaa008ea77b91fd46a8dfb2b7c905036
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "5125383"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5467247"
 ---
 # <a name="person-screening"></a>Personscreening
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dette emnet beskriver Personscreening-enheten for Dynamics 365 Human Resources.
 
@@ -68,3 +70,6 @@ Denne enheten beskriver screeninger en kandidat har bestått eller må bestå fo
 [Innføring i API for søkersporingssystemintegrering](hr-admin-integration-ats-api-introduction.md)<br>
 [Eksempelspørring for Kandidat for ansettelse](hr-admin-integration-ats-api-candidate-to-hire-example-query.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,6 +1,6 @@
 ---
 title: Konfigurere et evalueringsmiljø for Dynamics 365 Commerce
-description: Dette emnet forklarer hvordan du konfigurerer et Microsoft Dynamics 365 Commerce-evalueringsmiljø etter klargjøring.
+description: Dette emnet forklarer hvordan du konfigurerer et evalueringsmiljø i Microsoft Dynamics 365 Commerce etter klargjøring.
 author: psimolin
 manager: annbe
 ms.date: 07/16/2020
@@ -16,20 +16,18 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: fa92a581a96de6bed26b4a0c6601ebd9d5088347
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 9b11ab600bb2aa17cf330947304f5b22dd522081
+ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4993431"
+ms.lasthandoff: 02/19/2021
+ms.locfileid: "5477979"
 ---
 # <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurere et evalueringsmiljø for Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet forklarer hvordan du konfigurerer et Microsoft Dynamics 365 Commerce-evalueringsmiljø etter klargjøring.
-
-## <a name="overview"></a>Oversikt
+Dette emnet forklarer hvordan du konfigurerer et evalueringsmiljø i Microsoft Dynamics 365 Commerce etter klargjøring.
 
 Fullfør prosedyrene i dette emnet bare etter at evalueringsmiljøet i Commerce er klargjort. Hvis du vil ha informasjon om hvordan du klargjør Commerce-evalueringsmiljøet, kan du se [Klargjøre et Commerce-evalueringsmiljø](provisioning-guide.md).
 

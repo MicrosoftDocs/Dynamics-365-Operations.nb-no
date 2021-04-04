@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-03-24
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d3f9595bd19026e0dad0a2a2ad3708bd4f8ca1ba
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 22c5e83a7f180a340e98b81a197daa95d3569cc3
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5127951"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5463700"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-march-24-2020"></a>Hva er nytt eller endret i Dynamics 365 Human Resources (24. mars 2020)?
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -122,3 +124,5 @@ Enheten **Ansettelsesdetalj** er oppdatert med følgende felt: **Lønnsfrekvens*
 [Oversikt over lanseringsbølge 2 i 2019 for Dynamics 365 Human Resources](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Oppdatere prosess](hr-admin-setup-update-process.md)</br>
 [Behandle funksjoner](hr-admin-manage-features.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

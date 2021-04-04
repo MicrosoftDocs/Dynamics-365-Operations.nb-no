@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 031e61549474745360ac00f9a66bef7a9dbaaf96
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 9e7f312b7119ac5e4dacbe7edb7b3fd17decd7ad
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021560"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5245377"
 ---
 # <a name="work-order-project-setup"></a>Prosjektoppsett for arbeidsordre
 
@@ -85,3 +85,6 @@ Oppsettet tillater fullstendig integrasjon med **Prosjektstyring og regnskap**-m
 > Hver gang det opprettes en arbeidsordrelinje, søker Aktivastyring etter en prosjektgruppe som skal knyttes til arbeidsordrejobbprosjektet. Søket er basert på oppsettet som er beskrevet i dette emnet. Hver prosjektgruppe har en tilknyttet prosjekttype. Prosjektgrupper som har prosjekttypen **Tid og materialer** eller **Fast pris**, er bare gyldige for anleggsmidler som er knyttet til en kundekonto.
 >
 > For overordnede prosjekter og prosjektgrupper, når systemet velger tilgjengelig arbeidsordreprosjekt eller prosjektgruppe, baseres valget på postene du opprettet ved hjelp av fremgangsmåten ovenfor. Aktivastyring går gjennom poster som er knyttet til arbeidsordreprosjektet for å søke etter mulig samsvar. Den kontrollerer alltid den mest spesifikke kombinasjonen først. Med andre ord, for det overordnede prosjektet for arbeidsordre ser Aktivastyring først etter et mulig treff i **Aktivum**-feltet. Hvis det ikke blir funnet noe treff, kontrolleres det for et treff i **Aktivumtype**-feltet. Hvis det ikke blir funnet noe treff, kontrolleres det for et treff i **Arbeidssted**-feltet, og så videre. Som du kan se i oppsettet av siden **Prosjektoppsett for arbeidsordre**, betyr dette at for å finne den mest spesifikke kombinasjonen, kontrollerer Aktivastyring hver post fra høyre til venstre for et treff. Hvis det ikke blir funnet samsvar, brukes standardposten der bare prosjekt-ID-en er valgt. Prosessen for å finne den tilknyttede prosjektgruppen er lik. Aktivastyring søker først etter et mulig treff i **Aktivum**-feltet, deretter **Aktivumtype**-feltet og deretter **Arbeidsordretype**-feltet. Hvis det ikke blir funnet samsvar, brukes standardposten der bare en prosjektgruppe er valgt.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

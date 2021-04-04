@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: dbc0ca146327fada1325f4b11965c23948d3565d
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d97fd3e441c08152dc151a95b80cbf73d93d8fca
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4987260"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5247892"
 ---
 # <a name="safety-stock-fulfillment-for-items"></a>Fullføring av sikkerhetslager for varer
 
@@ -115,3 +115,6 @@ Oppfylling av behovstransaksjonen for sikkerhetslageret er ikke prioritert hvis 
 Under dekningsfasen i hovedplanlegging er ikke etterfylling av sikkerhetslageret lenger underprioritert. Lagerbeholdningen kan brukes før eventuelle andre behovstyper. Under forsinkelsesberegningen legges den nye logikken til over de forsinkede salgslinjene, stykklistelinjebehovene og alle de andre behovstypene, for å bestemme om de kan leveres innen tidsfristen, forutsatt at sikkerhetslageret brukes. Hvis systemet identifiserer at det kan redusere forsinkelser ved å bruke sikkerhetslageret, vil salgslinjene eller stykklistelinjene erstatte den opprinnelige dekningen med sikkerhetslageret, og systemet vil utløse etterfylling for sikkerhetslageret i stedet.
 
 Hvis planen eller varen ikke er definert for forsinket beregning, vil sikkerhetslagerbegrensningen ha samme prioritet som andre behovstyper. Dette betyr at det er en reserve med lagerbeholdning og annen tilgjengelige beholdning før andre behovstyper.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

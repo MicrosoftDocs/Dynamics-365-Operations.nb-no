@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2ea400c48058bc31ba5e4dfc187564da3bee527c
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: fbe4313393df5fd716ec3c8c20d505afbe531386
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5130163"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5464844"
 ---
 # <a name="loan-item-to-a-worker"></a>Låne vare til en arbeider
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
@@ -44,3 +46,6 @@ Denne fremgangsmåten viser hvordan du låner ut en vare til en arbeider og regi
 2. Klikk Rediger.
 3. Angi en dato i Faktisk retur-feltet.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

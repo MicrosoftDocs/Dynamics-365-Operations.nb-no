@@ -17,14 +17,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c5e1a1d7044567a07acedf71e65ed244275acfd9
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: e0befe1a35aa46b2eabb4516559fe07ce27e9f18
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113708"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5466670"
 ---
 # <a name="troubleshoot-analytic-reports"></a>Feilsøke analyserapporter
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 **Avgang**
 
@@ -43,3 +45,6 @@ Dette problemet kan bare være et spørsmål om tidsberegning. Følg denne fremg
 1. Velg **Rediger** øverst på siden, og angi planlagt startdato/-klokkeslett til en verdi som vil oppdatere analysen slik at den er nærmere gjeldende tidspunkt.
 
 ![Satsvise jobber](media/batch-jobs.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

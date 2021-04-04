@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 7f70442450cc1c814ae23e41a1feb3a63f2aade8
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: fd4d04ae7e89b8ce41ed745c643b8e736484789d
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4992895"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5241496"
 ---
 # <a name="record-leases-in-foreign-currencies"></a>Registrere leier i utenlandsk valuta
 
@@ -52,3 +52,6 @@ Når du oppretter journaloppføringene for avskrivningskostnad mot en leieavtale
 Den endelige avskrivningskostnaden kan beregnes ved å bruke en litt annerledes valutakurs, slik at bruksrettseiendelen avskrives helt i både regnskapsvalutaen og rapporteringsvalutaen.
 
 Hvis leieavtalen er reklassifisert som **Utsatt leie**, fjerner systemet automatisk valutakursene for regnskaps- og rapporteringsvalutaene hvis de allerede er definert.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1e7d7389c1bcf0f6024464e37b36d39efae5b832
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: b8b94c1844470938d5e53423f045f5af4c1793d3
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113678"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5466814"
 ---
 # <a name="system-requirements"></a>Systemkrav
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Denne artikkelen beskriver kravene til Microsoft Dynamics 365 Human Resources. Det beskriver også landene og områdene der Human Resources er tilgjengelig, og informasjon om språk og lokalisering for Human Resources-data.
 
@@ -45,7 +47,7 @@ Du finner den nyeste versjonen av hver nettleser ved å gå til programvareprodu
 > * Redigeringsprogrammet for arbeidsflyt startes som et ClickOnce-program. Bare Microsoft Edge og Internet Explorer (på en støttet versjon av Microsoft Windows) støtter ClickOnce-programmer. ClickOnce-redigeringsprogrammet for arbeidsflyt krever en 64-biters kompatibelt operativsystem.
 > * Hvis du vil forhåndsvise PDF-filer, anbefaler vi at du bruker moderne nettlesere som Microsoft Edge (siste offentlig tilgjengelige versjon) på Windows 10 eller Google Chrome (siste offentlig tilgjengelige versjon) på Windows 10, Windows 8.1, Windows 8, Windows 7 eller Google Nexus 10-nettbrett.
 >   Nettverkskrav
-> * Human Resources er utformet for nettverk med ventetid på 250 til 300 millisekunder (ms) eller mindre. Dette er ventetiden fra en nettleserklient til Microsoft Azure-datasenteret som er vert for Human Resources. Vi anbefaler at du tester nettverksventetiden på [www.azurespeed.com](https://www.azurespeed.com "Test av ventetid for Azure").
+> * Human Resources er utformet for nettverk med ventetid på 250 til 300 millisekunder (ms) eller mindre. Dette er ventetiden fra en nettleserklient til Microsoft Azure-datasenteret som er vert for Human Resources. Det anbefales at du tester nettverksventetiden på [www.azurespeed.com](https://www.azurespeed.com "Test av ventetid for Azure").
 > * Krav til båndbredde for Human Resources avhenger av scenarioet. De vanligste scenarier krever en båndbredde på mer enn 50 kilobyte per sekund (kbps).
 > 
 > [!WARNING]
@@ -64,3 +66,6 @@ Du kan laste ned en PDF-fil med landene, områdene og språkene Human Resources 
 > Selv om brukergrensesnittet er lokalisert til andre språk, lagres alle brukerdata på språket de ble lagt inn på. Du kan opprette e-postmeldinger og maler på andre språk, men data som planleggingsinformasjon er bare tilgjengelig på engelsk for øyeblikket.
 
 Hvis du er utvikler og interessert i å lage lands- eller områdespesifikke tilpasninger, eller hvis du vil opprette en løsning for et land eller område som ikke støttes av Microsoft for øyeblikket, kan du se [Globalisering](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

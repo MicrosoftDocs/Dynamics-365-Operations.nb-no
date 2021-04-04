@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: f8d5e4d82c66d178ceafcdbfb3eb9a941172aa01
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 9107a14a79883dc0e33de311baeec5fd6d692a35
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5004633"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5500508"
 ---
 # <a name="location-directive-inventory-picking-aging"></a>Aldersfordeling for lagerplukking for lokasjonsdirektiv
 
@@ -48,7 +48,7 @@ Hvis du vil bruke denne funksjonen, må du angi alternativet **Aktiver lokasjons
 Denne delen inneholder eksempler som viser hvordan du definerer og bruker FIFO- og LIFO-strategier.
 
 > [!TIP]
-> Denne delen inneholder to scenarier, én for FIFO og én for LIFO. Fremgangsmåtene som oppgis, antar at du utfører begge scenariene, i rekkefølge. Vi anbefaler at du gjør begge scenariene, slik at du kan oppleve forskjellene mellom de to strategiene.
+> Denne delen inneholder to scenarier, én for FIFO og én for LIFO. Fremgangsmåtene som oppgis, antar at du utfører begge scenariene, i rekkefølge. Det anbefales at du gjør begge scenariene, slik at du kan oppleve forskjellene mellom de to strategiene.
 
 ### <a name="make-sample-data-available"></a>Gjøre eksempeldata tilgjengelig
 
@@ -119,7 +119,7 @@ FIFO-strategien finner lokasjonen som inneholder den eldste aldersfordelingsdato
 1. På siden **Salgsordre**, i handlingsruten i fanen **Lager** i gruppen **Handlinger**, velger du **Frigi til lager**. Du mottar informasjonsmeldinger. Systemet oppretter en forsendelse, legger den til en ny last, og oppretter det nødvendige arbeidet.
 1. I hurtigfanen **Salgsordrelinjer** på menyen **Lager** velger du **Arbeidsdetaljer** for å åpne arbeidet som ble opprettet for denne salgsordren. Legg merke til at linjen der **Arbeidstype**-verdien er *Plukk*, viser en **Lokasjon**-verdi på *FL-002*. Denne lokasjonen inneholder nummerskiltet som har den eldste aldersfordelingsdatoen (FIFO).
 1. Velg **Lager \> Forsendelsesdetaljer**.
-1. I hurtigfanen **_Generelt_* noterer du bølge-ID-en, slik at du kan bruke den i scenario 2.
+1. På hurtigfanen **Generelt** noterer du bølge-ID-en, slik at du kan bruke den i scenario 2.
 
 ### <a name="scenario-2-set-up-and-use-lifo-location-aging"></a>Scenario 2: Definere og bruke LIFO aldersfordeling for lokasjon
 
@@ -139,3 +139,6 @@ LIFO-strategien finner lokasjonen som inneholder den nyeste aldersfordelingsdato
 1. Legg merke til at linjen der **Arbeidstype**-verdien er *Plukk*, viser en **Lokasjon**-verdi på *FL-001*. Denne lokasjonen inneholder nummerskiltet som har den nyeste aldersfordelingsdatoen (LIFO).
 
 I disse scenariene har du sett hvordan strategien for aldersfordeling for lokasjon fungerer for lagerlokasjonen som enten har det eldste lageret eller den nyeste lageret, avhengig av den valgte strategien.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

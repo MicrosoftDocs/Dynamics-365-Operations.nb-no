@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 12/12/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -14,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7fbae4570448a6bb1309ffe0092ff9b07825d717
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: 82c3af7d49f725a045b17cbef00b56fdfa0383f3
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5092772"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5564124"
 ---
 # <a name="design-er-configurations-to-import-data-from-external-csv-files"></a>Utforme ER-konfigurasjoner for å importere data fra eksterne CSV-filer
 
@@ -124,3 +123,6 @@ For testformål kan du utføre formattilordningen med filen 1099entriescsv.csv s
     * Gå gjennom utdataene i XML-format, som representerer dataene som er importert fra den valgte filen og overført til datamodellen. Vær oppmerksom på at alle 7 linjene i den importerte CSV-filen ble behandlet. Feltenes titler linje 1 ble hoppet over, 4 transaksjoner ble riktig analysert, og 2 transaksjoner ble gjenkjent som ikke gyldige.
 3. Lukk siden.
 4. Lukk siden.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

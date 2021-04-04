@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a7a173403e79212be5e4aac36d99f349da159e08
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: f10164b4002d3cb83a2332e913adcb25506ffdd2
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113714"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5468233"
 ---
 # <a name="enroll-an-employee-in-a-variable-compensation-plan"></a>Registrere en ansatt i en fast kompensasjonsplan
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Kompensasjons- og fordelslederen kan registrere ansatte i variable kompensasjonsplaner for å beregne kontant- og ikke-kontantbonuser for ansatte. Denne fremgangsmåten forutsetter at en variabel kompensasjonsplan er opprettet med Aktiver registrering-feltet satt til Ja, og at det er opprettet rettighetsregler for den variable kompensasjonsplanen. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten. Hvis du vil starte fremgangsmåten, kan du gå til Personale > Arbeidere > Ansatte > Kompensasjon > Registrering av variabel plan
 
@@ -41,3 +43,6 @@ Kompensasjons- og fordelslederen kan registrere ansatte i variable kompensasjons
 8. Aktiver/deaktiver utvidelsen av delen Organisasjonsmessige overstyringer.
     * Hvis den ansattes ytelse bør ta i betraktning ytelsen til ulike avdelinger eller en annen avdeling enn den som er tilordnet på den ansattes stilling, kan avdelingen overstyres. Prosent-kolonnen skal være 100 totalt.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
