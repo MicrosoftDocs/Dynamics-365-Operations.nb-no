@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3de3de5a93c700526645c248b54783b64d77f2e7
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: 1192a45d0d2fffbe2ecba65551641c090c08db8e
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115978"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5463436"
 ---
 # <a name="leave-and-absence-overview"></a>Oversikt over permisjon og fravær
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dynamics 365 Human Resources hjelper deg med å gi arbeiderne flotte fordeler. Arbeidsområdet for **Permisjon og fravær** en fleksibel struktur for å opprette nye permisjonsplaner. Det inneholder også arbeidsflyter for behandling av forespørsler og en intuitiv selvbetjent side der ansatte kan be om fri. Analyse hjelper organisasjonen din med å måle og overvåke permisjonssaldoer og forbruk for permisjonsplaner.
 
@@ -54,3 +56,6 @@ De ansatte kan sende inn avspaseringsforespørsler, og du kan behandle dem i arb
 [Be om fridager](hr-employee-self-service-request-time-off.md)
 [Administrere forespørsler om permisjon og fravær](hr-employee-self-service-manage-requests.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

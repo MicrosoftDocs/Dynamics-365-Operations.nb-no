@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 45d9809d4bbf1b5a68c3f799ce5d51f9709d276b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 7cca089e424b617fe4075d0cdbdfd23ef0bb86be
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4970287"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5248697"
 ---
 # <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-supply-chain-management"></a>Oppgradere lagerstyring fra Microsoft Dynamics AX 2012 til Supply Chain Management 
 
@@ -82,3 +82,6 @@ Før du kan bruke frigitte produkter i **Lagerstyring**-modulen, må produktene 
 6.  På **Endre lagringsdimensjonsgruppen for varer**-siden, legger du til varenumre, lagringsdimensjonsgrupper og sekvensgrupper for enhet. Du kan fullføre dette trinnet direkte på siden, ved hjelp av Microsoft Office-integrering, eller ved å bruke dataenhetsprosessen i [Databehandling](../../dev-itpro/data-entities/data-entities.md).
 7.  Valider endringene. Som en del av valideringsprosessen forekommer ulike valideringer for dataintegritet. Som en del av en større oppgraderingsprosess må problemer som oppstår, kanskje justeres på kildeimplementeringen. I så fall kreves en ytterligere oppgradering av data.
 8.  Behandle endringene. En oppdatering av alle lagerdimensjonene kan ta litt tid. Du kan overvåke fremdriften ved hjelp av satsvise jobboppgaver.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

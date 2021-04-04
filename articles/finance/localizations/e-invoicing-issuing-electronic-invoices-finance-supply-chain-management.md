@@ -3,7 +3,7 @@ title: Utstede elektroniske fakturaer i Finance og Supply Chain Management
 description: Dette emnet beskriver hvordan du utsteder elektroniske fakturaer i Microsoft Dynamics 365 Finance og Dynamics 365 Supply Chain Management via Elektronisk fakturering-tillegget.
 author: gionoder
 manager: AnnBe
-ms.date: 01/28/2021
+ms.date: 02/26/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 187f5a20d088b4fcd7af2a6576357a69c2efc2c6
-ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
+ms.openlocfilehash: 099ebb56710e920f7b1453f32f23f59a80486ebf
+ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "5104419"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5486959"
 ---
 # <a name="issue-electronic-invoices-in-finance-and-supply-chain-management"></a>Utstede elektroniske fakturaer i Finance og Supply Chain Management
 
@@ -35,25 +35,35 @@ Dette emnet beskriver hvordan du utsteder elektroniske fakturaer i Microsoft Dyn
 
 ## <a name="feature-activation"></a>Funksjonsaktivering
 
-For å starte utstedelse av elektroniske fakturaer via tillegget for Elektronisk fakturering er det nødvendig å aktivere funksjonsreferansen i Finance og Supply Chain Management.
+Hvis du vil utstede elektroniske fakturaer via tillegget for elektronisk fakturering, må du aktivere funksjonen i Finance og Supply Chain Management.
 
-Hver funksjonsreferanse tilsvarer en bestemt elektronisk faktureringsfunksjon som er i samsvar med de elektroniske faktureringskravene fra et land/område.
+Hver funksjon tilsvarer en bestemt elektronisk faktureringsfunksjon som er i samsvar med de elektroniske faktureringskravene for et land/område.
 
-Følgende tabell viser listen listen over funksjonsreferanser som tillegget for Elektronisk fakturering støtter.
+Følgende tabell viser listen listen over funksjoner som tillegget for elektronisk fakturering kanskje støtter.
 
-| Funksjonsreferanse | Navn                                              | Land/område |
-|-------------------|---------------------------------------------------|----------------|
-| BR-00053          | NF-e føderal – elektronisk faktura for Brasil       | Brasil         |
-| BR-00095          | Brasilianske elektroniske fakturaer for NFS-e               | Brasil         |
-| DK-00001          | E-fakturering til offentlig sektor (OIOUBL) – DK    | Danmark        |
-| EG-00008          | E-fakturering for Egypt                             | Egypt          |
-| ES-00025          | Elektronisk faktura for offentlig sektor           | Spania          |
-| EUR-00023         | Den europeiske union, e-fakturering til den offentlige sektor       | Europa         |
-| ITA-00036         | IT - E-fakturering til offentlig sektor (FatturaPA) | Italia          |
-| MX-00010          | E-fakturering av CFDI                                  | Mexico         |
-| MX-00016          | E-fakturering CFDI – annulleringsprosess           | Mexico         |
+| Navn                                              | Land/område |
+|---------------------------------------------------|----------------|
+|Østerriksk elektronisk faktura                        |Østerrike         |
+|Belgisk elektronisk faktura                         |Belgia         |
+|NF-e føderal – elektronisk faktura for Brasil       |Brasil          |
+|NFS-e – Elektronisk faktura for brasiliansk tjeneste (by)|Brasil          |
+|Dansk elektronisk faktura                          |Danmark         |
+|Egyptisk elektronisk faktura                        |Egypt           |
+|Estisk elektronisk faktura                        |Estland         |
+|Finsk elektronisk faktura                         |Finland         |
+|Fransk elektronisk faktura                          |Frankrike          |
+|Tysk elektronisk faktura                          |Tyskland         |
+|PEPPOL – Global elektronisk faktura                 |Globalt          |
+|Italiensk elektronisk faktura                         |Italia           |
+|CFDI – Meksikansk elektronisk faktura                  |Mexico          |
+|Nederlandsk elektronisk faktura                           |Nederland     |
+|Norsk elektronisk faktura                       |Norge          |
+|Spansk elektronisk faktura                         |Spania           |
 
-I tilfeller der det er en eldre funksjon for elektronisk fakturering, som støttes av landets lokaliseringsområde, gjør aktiveringen av funksjonsreferansen det mulig å utstede elektroniske fakturaer via tillegget for Elektronisk fakturering, og slår av den tidligere funksjonen.
+Når det finnes en utdatert funksjon for elektronisk fakturering som støttes i lokaliseringsområdet for et land/område, vil aktivering av én av disse funksjonene deaktivere den utdaterte funksjonen slik at elektroniske funksjoner blir utstede via tillegget for elektronisk fakturering.
+
+> [!IMPORTANT]
+> Når funksjonen for integrering med elektronisk fakturering er aktivert, deaktiveres som standard den nye funksjonen for elektronisk fakturering. Du kan bruke funksjonskonseptet til å aktivere nye erfaringer for juridiske enheter ved hjelp av land-/områdespesifikk funksjonalitet. Alternativet **Global** styrer den nye erfaringen for de gjenværende landene/områdene som ikke er spesifikt oppført i tabellen.
 
 ## <a name="submit-electronic-documents"></a>Send elektroniske dokumenter
 
@@ -93,3 +103,6 @@ Sendeloggene inneholder følgende tilleggsfunksjoner:
 - **Avbryt innsendinger** – Denne funksjonen aktiverer en spesiell innsendingsprosess i scenarier der den elektroniske fakturaen må godkjennes av en ekstern webtjeneste. Den instruerer tillegget for Elektronisk fakturering om å sende webtjenesten en bestemt melding som skal avbryte statusen til en godkjent elektronisk faktura i webtjenestedatabasen.
 - **Send dokumenter på nytt** – Sender et elektronisk dokument på nytt som allerede er sendt til tillegget for Elektronisk fakturering. Det opprettes en helt ny logg på siden for **Innsendingsdetaljer**.
 - **Send relatert innsending**
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

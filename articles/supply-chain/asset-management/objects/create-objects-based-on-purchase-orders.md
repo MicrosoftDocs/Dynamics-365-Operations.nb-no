@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 83419fa5c6b6aee0b321c526565c3518deaf4bd0
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 97b40528db4acc2627b087e8ee90bfd1fd79efa7
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016990"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5253284"
 ---
 # <a name="create-assets-based-on-purchase-orders"></a>Opprette aktiva basert på bestillinger
 
@@ -69,3 +69,6 @@ Du kan kjøre en **telling av ventende aktiva** for å se etter ventende aktiva.
 3. Du kan angi at denne jobben skal kjøres som en satsvis jobb, for eksempel én gang per dag.
 
 **Forsiktig:** Hvis data endres på en bestilling *etter* at du har opprettet et aktivum basert på den fra varen, gjenspeiles ikke disse endringene på aktivumet.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

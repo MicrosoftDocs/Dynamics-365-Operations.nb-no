@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d016df08850c75858c50b7f9a97b11b566d26cb0
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 5cdf2b8624bf0319cd421ec11417695cfd4c78db
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5022664"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5244093"
 ---
 # <a name="record-the-receipt-of-goods-on-the-purchase-order"></a>Registrere mottaket av varene i bestillingen
 
@@ -48,3 +48,6 @@ Dette emnet forklarer hvordan du registrerer mottak av varer direkte i en bestil
 6. Sett verdien for **Antall** til 4. Her kan du fortsatt manuelt angi antallet som blir mottatt for hver linje i ordren.  
 7. Velg **OK**. Varene er nå registrert som mottatt i bestillingen, og en produktkvitteringsjournal er opprettet som dokument for å gjenspeile dette. Du kan bruke handlingen Produktmottak for å vise journaler som er opprettet med bestillingen, og se hva som er mottatt og når.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
