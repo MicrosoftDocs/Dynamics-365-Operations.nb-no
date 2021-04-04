@@ -3,7 +3,7 @@ title: Definere rentesatser for en rentekode
 description: Rentekoder inneholder innstillinger som bestemmer nå renter belastes og hvordan de beregnes på forfalte kontoer.
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 01/12/2018
+ms.date: 02/17/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1169a397dfdd32f728a09e2ad279842edc289c19
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 5d9ff856e34eb894c5d0ab5fe17c8e95f62fff57
+ms.sourcegitcommit: 88babb2fffe97e93bbde543633fc492120f2a4fc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4971635"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "5555371"
 ---
 # <a name="set-up-interest-rates-for-an-interest-code"></a>Definere rentesatser for en rentekode
 
@@ -46,10 +46,19 @@ Du kan definere rentesatser som beregner en bestemt prosent.
 
 - Rentebeløp gjelder for alle valutaer.
 - Valgfrie rentebeløpsgrenser kan angis.
-- <strong>Prosent</strong> velges** <strong>i **Beregn rente basert på</strong>-feltet på siden <strong>Definer rentekoder</strong>.
+- **Prosent** velges i feltet **Beregn rente basert på** på siden **Definer rentekoder**.
 
 For eksempel, for å definere en rentekode som setter 5 prosent rente for annenhver måned som fakturabetalingen overskrider transaksjonens forfallsdato, angir du 2 i feltet **Beregn renter hver** og velger **Måned**.
 
+> [!NOTE] 
+> Den nye algoritmen for rentenotaberegning legges til ved hjelp av Funksjonsstyring. For å bruke denne algoritmen, aktiverer du funksjonen **(GBL) Tillat å beregne rente per dag som årlig prosent delt på 365**. Hvis du vil ha informasjon om hvordan du aktiverer funksjonen, kan du se [Oversikt over funksjonsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+> 
+> Formelen for beregningen for rentenotabeløpet er: 
+>  
+> Rentenotabeløp = Beløp skyldig * Årlig rente % / 365 * Antall dager forsinket
+>  
+> Denne funksjonen er tilgjengelig i versjon 10.0.18 eller senere.    
+ 
 ## <a name="interest-rates-based-on-amounts"></a>Rentesatser basert på beløp
 Du kan definere rentesatser som beregner et bestemt beløp per valuta.
 - Et rentebeløp angis for hver valuta i rentekoden.
@@ -130,3 +139,6 @@ For å vise forskjellige versjoner, kan du bruke **Per dato**-menyvalget for å 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

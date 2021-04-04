@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 11/23/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: ea741e3d4b3a6ce93a30c9d8c8adc7c91b513871
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 9081848bd608c817a02257a1845fe692f2833754
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798555"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5560781"
 ---
 # <a name="before-you-buy"></a>Før du kjøper
 
@@ -93,3 +92,6 @@ Microsoft FastTrack for Dynamics 365 er vår kundesuksesstjeneste utformet for �
 ## <a name="if-you-are-upgrading-from-dynamics-ax-2012-or-migrating-from-ax-2009"></a>Hvis du oppgraderer fra Dynamics AX 2012 eller migrerer fra AX 2009
 
 Hvis du er en kunde som oppgraderer fra Microsoft Dynamics AX 2012 eller migrerer fra Microsoft Dynamics AX 2009, kan du være kvalifisert for en lengre prøveversjon. Kontakt <daxcf@microsoft.com> for mer informasjon.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

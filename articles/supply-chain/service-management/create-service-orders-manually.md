@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f2c10990f96fecf55e005650257f83c28423203b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 72b600bc59119a6304fa043240a34051435f8691
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5001421"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470959"
 ---
 # <a name="create-service-orders-manually"></a>Opprette serviceordrer manuelt    
 
@@ -36,17 +36,17 @@ Du kan opprette serviceordrer manuelt ved å bruke en serviceavtale eller ved å
 
 ## <a name="create-a-service-order-manually-from-a-service-agreement"></a>Opprette en serviceordre manuelt fra en serviceavtale
 
-1.  Klikk på **Servicestyring** \> **Felles** \> **Serviceavtaler** \> **Serviceavtaler**.
+1.  Velg **Servicestyring** \> **Felles** \> **Serviceavtaler** \> **Serviceavtaler**.
 
 2.  Velg en serviceavtale eller opprett en ny serviceavtale.
 
-3.  Klikk på fanen **Lever**, og i **Opprett**-gruppen klikker du **Planlagte serviceordrer** for å åpne skjemaet **Opprett serviceordre**.
+3.  Velg fanen **Lever**, og i gruppen **Opprett** velger du **Planlagte serviceordrer** for å åpne skjemaet **Opprett serviceordre**.
 
 ## <a name="create-a-service-order-manually-in-the-service-orders-form"></a>Opprette en serviceordre manuelt i Serviceordrer-skjemaet
 
-1.  Klikk på **Servicestyring** \> **Felles** \> **Serviceordrer** \> **Serviceordrer**.
+1.  Velg **Servicestyring** \> **Felles** \> **Serviceordrer** \> **Serviceordrer**.
 
-2.  Trykk Ctrl+N for å opprette en ny serviceordre.
+2.  Velg **Ny** for å opprette en ny serviceordre.
 
 3.  Opprett serviceordrelinjer for serviceordren.
 
@@ -55,9 +55,9 @@ Du kan opprette serviceordrer manuelt ved å bruke en serviceavtale eller ved å
 
 ## <a name="create-a-service-order-from-a-project"></a>Opprette en serviceordre fra et prosjekt
 
-1.  Klikk på **Prosjektstyring og regnskap** \> **Felles** \> **Prosjekter** \> **Alle prosjekter**.
+1.  Gå til **Prosjektstyring og regnskap** \> **Felles** \> **Prosjekter** \> **Alle prosjekter**.
 
-2.  I skjemaet **Prosjekter** i **handlingsruten** klikker du fanen **Administrer** \> og klikker **Tjeneste** \> **Tjenesteordrer**.
+2.  I skjemaet **Prosjekter** i **handlingsruten** velger du fanen **Administrer** \> og velger **Tjeneste** \> **Tjenesteordrer**.
 
 3.  Følg forrige fremgangsmåte for å opprette en serviceordre manuelt i **Serviceordrer**-skjemaet. Feltet **Prosjekt-ID** viser prosjektreferansen.
 
@@ -68,19 +68,19 @@ Du kan opprette serviceordrer manuelt ved å bruke en serviceavtale eller ved å
 
 Du kan opprette en serviceordre fra skjemaet **Salgsordrer** ved å bruke veiviseren **Opprett en ny serviceordre basert på salgsordren**.
 
-1.  Klikk på **Salg og markedsføring** \> **Vanlig** \> **Salgsordrer** \> **Alle salgsordrer**.
+1.  Gå til **Salg og markedsføring** \> **Vanlig** \> **Salgsordrer** \> **Alle salgsordrer**.
 
 2.  Åpne den relevante salgsordren.
 
-3.  På fanen **Salgsordre** klikker du på **Serviceordre** for å starte veiviseren **Opprett en ny serviceordre basert på salgsordren**.
+3.  På fanen **Salgsordre** velger du **Serviceordre** for å starte veiviseren **Opprett en ny serviceordre basert på salgsordren**.
 
-4.  Klikk på **Neste \>**, og følg trinnene nedenfor på siden **Velg avtale for serviceordre**:
+4.  Velg **Neste \>**, og følg trinnene nedenfor på siden **Velg avtale for serviceordre**:
     
       - Bruk **Serviceavtale**-feltet til å velge serviceavtalen som den nye serviceordren skal knyttes til.
     
       - (Valgfritt): Bruk feltet **Prosjekt-ID** til å knytte denne serviceordren til et bestemt prosjekt.
 
-5.  Klikk på **Neste \>**, og følg trinnene nedenfor på siden **Opprett serviceordre**:
+5.  Velg **Neste \>**, og følg trinnene nedenfor på siden **Opprett serviceordre**:
     
       - Angi en dato og et klokkeslett for servicebesøkets begynnelse i feltet **Foretrukket servicetidspunkt**.
     
@@ -90,7 +90,7 @@ Du kan opprette en serviceordre fra skjemaet **Salgsordrer** ved å bruke veivis
     
       - I feltet **Kontakt-ID** velger du personen i kundens firma som skal kontaktes angående serviceordren.
 
-6.  Klikk på **Neste \>**, og klikk deretter **Fullfør**.
+6.  Velg **Neste \>**, og velg deretter **Fullfør**.
 
 
 ## <a name="see-also"></a>Se også
@@ -101,3 +101,6 @@ Du kan opprette en serviceordre fra skjemaet **Salgsordrer** ved å bruke veivis
 
 [Opprette serviceordrer (klasseskjema)](https://technet.microsoft.com/library/aa553901\(v=ax.60\)) 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

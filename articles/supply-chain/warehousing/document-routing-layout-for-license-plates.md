@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2012-04-01
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 66ba73ab5c790aa4a67419842f63f6f741bf0d3a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 7c20d3d0540f8f1a05928df9aff5253745982da9
+ms.sourcegitcommit: 4ecc1bf82fbb04882d7ef5e1994ef3c07ef953dc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4973766"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "5558268"
 ---
 # <a name="document-routing-layout-for-license-plate-labels"></a>Dokumentrutingsoppsett for nummerskiltetiketter
 
 [!include [banner](../includes/banner.md)]
+
 
 Dokumentrutingsoppsettet definerer oppsettet til nummerskiltetiketter og dataene som skrives ut på dem. Du konfigurerer utløsingspunkt for utskrift når du definerer menyelementer og arbeidsmaler for mobilenheter.
 
@@ -51,6 +52,10 @@ Som en del av etikettutskriftsprosessen vil teksten `$LicensePlateId$` i dette e
 Hvis du vil se hvilke verdier som blir skrevet ut, går du til **Lagerstyring \> Forespørsler og rapporter \> Nummerskiltetiketter**.
 
 Flere generelt tilgjengelige verktøy for etikettgenerering kan hjelpe deg med å formatere teksten for etikettoppsettet. Mange av disse verktøyene støtter formatet `$FieldName$`. I tillegg bruker Microsoft Dynamics 365 Supply Chain Management en spesiell formateringslogikk som en del av felttilordningen for dokumentrutingsoppsettet.
+
+## <a name="turn-on-this-feature-for-your-system"></a>Aktivere denne funksjonen for systemet
+
+Hvis systemet ikke allerede inneholder funksjonene som er beskrevet i dette emnet, kan du gå til [Funksjonsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere funksjonen *Forbedrede oppsett for nummerskiltetikett*.
 
 ## <a name="custom-number-formats"></a>Egendefinerte tallformater
 
@@ -135,3 +140,6 @@ $DisplayListOfItemsNumbers()[1]$
 ## <a name="more-information-about-how-to-print-labels"></a>Mer informasjon om hvordan du skriver ut etiketter
 
 Hvis du vil ha mer informasjon om hvordan du definerer og skriver ut etiketter, kan du se [Aktivere utskrift av nummerskiltetikett](tasks/license-plate-label-printing.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

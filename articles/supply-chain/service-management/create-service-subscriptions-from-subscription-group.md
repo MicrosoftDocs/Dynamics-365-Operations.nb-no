@@ -17,25 +17,25 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1c486567934f90a69aad3650d689fbff3256d397
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 777dfa2078adf31d651003f1075203c9b016ab1a
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4974715"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470720"
 ---
 # <a name="create-service-subscriptions-from-a-subscription-group"></a>Opprette serviceabonnementer fra en abonnementsgruppe 
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  Klikk på **Servicestyring** \> **Oppsett** \> **Serviceabonnementer** \> **Abonnementsgrupper**.
+1.  Velg **Servicestyring** \> **Oppsett** \> **Serviceabonnementer** \> **Abonnementsgrupper**.
 
 2.  Velg en abonnementsgruppe.
 
-3.  Klikk på **Serviceabonnementer**-knappen.
+3.  Velg knappen **Serviceabonnementer**.
 
-4.  Trykk CTRL+N for å opprette et nytt abonnement. Abonnementsgruppefeltet viser informasjon fra abonnementsgruppen i **Abonnement**-skjemaet.
+4.  Velg **Ny** for å opprette et nytt abonnement. Abonnementsgruppefeltet viser informasjon fra abonnementsgruppen i **Abonnement**-skjemaet.
 
 5.  Angi informasjon i resten av feltene.
 
@@ -44,3 +44,6 @@ ms.locfileid: "4974715"
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

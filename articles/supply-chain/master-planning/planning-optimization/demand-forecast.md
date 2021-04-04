@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
+ms.search.form: ReqPlanSched, ReqGroup, ReqReduceKey, ForecastModel
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: ''
@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: cb696c365e02ab3e3b28da19b8b33f1975c142f8
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 7bd1268893d0869d2414b944493c8b8859f27abc
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4983550"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5501132"
 ---
 # <a name="master-planning-with-demand-forecasts"></a>Hovedplanlegging med behovsprognoser
 
@@ -249,7 +249,7 @@ Derfor opprettes følgende planlagte ordrer:
 En prognosereduksjonsnøkkel brukes i metodene **Transaksjoner – reduksjonsnøkkel** og **Prosent – reduksjonsnøkkel** for å redusere prognosebehovene. Følg denne fremgangsmåten for å opprette og definere en reduksjonsnøkkel.
 
 1. Gå til **Hovedplanlegging \> Oppsett \> Dekning \> Reduksjonsnøkler**.
-2. Velg **By**, eller trykk **Ctrl + N** for å opprette en reduksjonsnøkkel.
+2. Velg **Ny** for å opprette en reduksjonsnøkkel.
 3. I **Reduksjonsnøkkel**-feltet skriver du inn en unik identifikator for prognosereduksjonsnøkkelen. Angi deretter et navn i **Navn**-feltet. 
 4. Definer periodene og reduksjonsnøkkelprosenten i hver periode:
 
@@ -265,11 +265,78 @@ En prognosereduksjonsnøkkel må tilordnes til en dekningsgruppe for varen. Føl
 2. På **Andre**-hurtigfanen i feltet **Reduksjonsnøkkel** velger reduksjonsnøkkelen som skal tilordnes dekningsgruppen. Reduksjonsnøkkelen gjelder deretter for alle varer som tilhører en dekningsgruppe.
 3. Hvis du vil bruke en reduksjonsnøkkel for å beregne prognosereduksjon under hovedplanlegging, må du definere denne innstillingen i oppsettet av prognoseplanen eller hovedplanen. Gå til ett av følgende steder:
 
-    - Hovedplanlegging \> Oppsett \> Planer \> Prognoseplaner
-    - Hovedplanlegging \> Oppsett \> Planer \> Hovedplaner
+    - **Hovedplanlegging \> Oppsett \> Planer \> Prognoseplaner**
+    - **Hovedplanlegging \> Oppsett \> Planer \> Hovedplaner**
 
 4. På siden **Prognoseplaner** eller **Hovedplaner**, i **Generelt**-hurtigfanen i feltet **Metode som brukes til å redusere prognosebehov**, velger du enten **Prosent – reduksjonsnøkkel** eller **Transaksjoner – reduksjonsnøkkel**.
 
 ### <a name="reduce-a-forecast-by-transactions"></a>Redusere en prognose etter transaksjoner
 
 Når du velger **Transaksjoner – reduksjonsnøkkel** eller **Transaksjoner – dynamisk periode** som metode for å redusere prognosebehov, kan du angi hvilke transaksjoner som reduserer prognosen. På siden **Dekningsgrupper**, i **Andre**-hurtigfanen i feltet **Reduser prognose etter**, velger du **Alle transaksjoner** hvis alle transaksjoner skal redusere prognosen, eller **Ordrer** hvis bare salgsordrer skal redusere prognosen.
+
+## <a name="forecast-models-and-submodels"></a>Prognosemodeller og undermodeller
+
+Denne delen beskriver hvordan du oppretter prognosemodeller og hvordan du kombinerer flere prognosemodeller ved å definere undermodeller.
+
+En *prognosemodell* gir navn til og identifiserer en bestemt prognose. Når du har opprettet prognosemodellen, kan du legge til prognoselinjer i den. Hvis du vil legge til prognoselinjer for flere varer, bruker du siden **Behovsprognoselinjer**. Hvis du vil legge til prognoselinjer for en bestemt valgt vare, bruker du siden **Frigitte produkter**.
+
+En prognosemodell kan omfatte prognoser fra andre prognosemodeller. Hvis du vil oppnå dette resultatet, legger du til andre prognosemodeller som *undermodeller* for en overordnet prognosemodell. Du må opprette hver relevante modell før du kan legge den til som undermodell for en overordnet prognosemodell.
+
+Resultatstrukturen gir deg en kraftig måte å kontrollere prognoser på, fordi den lar deg kombinere (samle) inndataene fra flere individuelle prognoser. Derfor er det enkelt å kombinere prognoser for simuleringer fra et planleggingspunkt. Du kan for eksempel definere en simulering som er basert på kombinasjonen av en vanlig prognose med prognosen for en vårkampanje.
+
+### <a name="submodel-levels"></a>Undermodellnivåer
+
+Det er ingen begrensninger på antall undermodeller som kan legges til en overordnet prognosemodell. Strukturen kan imidlertid bare være ett nivå lavt. Med andre ord kan ikke en prognosemodell som er undermodell for en annen prognosemodell, ha sine egne undermodeller. Når du legger til undermodeller i en prognosemodell, kontrollerer systemet om prognosemodellen allerede er en undermodell av en annen prognosemodell.
+
+Hvis hovedplanleggingen finner en undermodell som har sine egne undermodeller, får du en feilmelding.
+
+#### <a name="submodel-levels-example"></a>Eksempel på undermodellnivåer
+
+Prognosemodell A har prognosemodell B som undermodell. Derfor kan ikke prognosemodell B ha sine egne undermodeller. Hvis du prøver å legge til en undermodell i prognosemodell B, får du følgende feilmelding: Prognosemodell B er en undermodell for modell A.
+
+### <a name="aggregating-forecasts-across-forecast-models"></a>Samling av prognoser på tvers av prognosemodeller
+
+Prognoselinjer som forekommer på samme dag, vil bli aggregert over prognosemodellen og dens undermodeller.
+
+#### <a name="aggregation-example"></a>Eksempel på samling
+
+Prognosemodell A har prognosemodell B og C som undermodeller.
+
+- Prognosemodell A omfatter en etterspørselsprognose for 2 stykker (stk) den 15. juni.
+- Prognosemodell B omfatter en etterspørselsprognose for 3 stk den 15. juni.
+- Prognosemodell C omfatter en etterspørselsprognose for 4 stk den 15. juni.
+
+Den resulterende behovsprognosen vil være ett enkelt behov for 9 stk (2 + 3 + 4) den 15. juni.
+
+> [!NOTE]
+> Hver undermodell bruker egne parametere, og ikke parameterne for den overordnede prognosemodellen.
+
+### <a name="create-a-forecast-model"></a>Opprette en prognosemodell
+
+Hvis du vil opprette en prognosemodell, gjør du følgende.
+
+1. Gå til **Hovedplanlegging \> Oppsett \> Behovsprognose \> Prognosemodeller**.
+1. Velg **Ny** i handlingsruten.
+1. Angi følgende felt for den nye prognosemodellen:
+
+    - **Modell** – Angi en unik identifikator for modellen.
+    - **Navn** – Angi et beskrivende navn for modellen.
+    - **Stoppet** – Vanligvis bør du sette dette alternativet til *Nei*. Sett det til *Ja* bare hvis du vil hindre redigering av alle prognoselinjer som er tilordnet modellen.
+
+    > [!NOTE]
+    > Feltet **Ta med i kontantstrømprognoser** og feltene i hurtigfanen **Prosjekt** er ikke knyttet til hovedplanlegging. Derfor kan du ignorere dem i denne sammenhengen. Du må bare ta hensyn til dem når du arbeider med prognoser for modulen **Prosjektstyring og regnskap**.
+
+### <a name="assign-submodels-to-a-forecast-model"></a>Tilordne undermodeller til en prognosemodell
+
+Hvis du vil tilordne undermodeller til en prognosemodell, gjør du følgende.
+
+1. Gå til **Lagerstyring \> Oppsett \> Prognose \> Prognosemodeller**.
+1. I listen velger du prognosemodellen du vil definere en undermodell for.
+1. I hurtigfanen **Undermodell** velger du **Legg til** for å legge til en rad i rutenettet.
+1. I den nye raden angir du følgende felter:
+
+    - **Undermodell** – Velg prognosemodellen som skal legges til som undermodell. Denne prognosemodellen må allerede finnes, og den må ikke ha noen egne undermodeller.
+    - **Navn** – Angi et beskrivende navn for undermodellen. Dette navnet kan for eksempel angi undermodellens relasjon til den overordnede prognosemodellen.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

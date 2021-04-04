@@ -17,21 +17,21 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bd9f6dfdf17ffd506fff21763388ee0ca7526681
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: fbc991c22271ccc3d9c50ade635a80c635b35f73
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4991597"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470888"
 ---
 # <a name="set-up-subscription-groups"></a>Definer abonnementsgrupper 
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  Klikk på **Servicestyring** \> **Oppsett** \> **Serviceabonnementer** \> **Abonnementsgrupper**.
+1.  Gå til **Servicestyring** \> **Oppsett** \> **Serviceabonnementer** \> **Abonnementsgrupper**.
 
-2.  Trykk CTRL+N, eller klikk **Ny** for å opprette en ny abonnementsgruppe.
+2.  Velg **Ny** for å opprette en nytt abonnementsgruppe.
 
 3.  I **Abonnementsgruppe**-feltet angir du et navn på den nye abonnementsgruppen.
 
@@ -48,3 +48,6 @@ ms.locfileid: "4991597"
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

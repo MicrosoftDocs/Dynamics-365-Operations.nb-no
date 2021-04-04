@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 12/19/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmCompensationWorkspace
 audience: Application User, IT Pro
@@ -15,18 +14,18 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: b625ea7dcbb6bd8b80cbcdcc544c59b9839fc19d
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: d588f01abd239ae097064396801613c2e3bd7471
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5093062"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5560171"
 ---
 # <a name="compensation-power-bi-content"></a>Power BI-innholdet Kompensasjon
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet beskriver Microsoft Power BI-innholdet **Kompensasjon**. Det forklarer hvordan du kan få tilgang til rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
+Dette emnet beskriver Microsoft Power BI-innholdet i **Kompensasjon**. Det forklarer hvordan du kan få tilgang til rapporter, og gir informasjon om datamodellen og enhetene som brukes til å bygge innholdet.
 
 ## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innholdet
 Power BI-innholdet **Kompensasjon** vises i arbeidsområdet **Kompensasjonsstyring** hvis du bruker et av følgende produkter:
@@ -71,3 +70,6 @@ Følgende data brukes til å fylle ut rapportene i Power BI-innholdet **Kompensa
 | Navn på ansatt            | Fornavn, etternavn og fullt navn                                                                       | Gjeldende ansatt, fratrådt ansatt, trend for ansatt |
 | Ansattittel           | Tittel og ansiennitetsdato                                                                                   | Gjeldende ansatt, fratrådt ansatt, trend for ansatt |
 | Trend for ansatt           | Arbeidere over tid, antall ansatte, firma og stilling                                                        | Firma, kompensasjon, geografisk plassering, ansattnavn, rapporterer til, kalenderforskyvning, dato, ansattittel, demografi, ansettelse, jobb, fordeler |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

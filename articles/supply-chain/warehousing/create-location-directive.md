@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: b1b3bafb24ff6eb0c42d901fac3b6668cedf39ef
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 84821fe4e7c5054b2121dbd7f9e536c80080b978
+ms.sourcegitcommit: 1f23adbc6c7e6f9ffe8c48c10659b9fae2155aeb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963316"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470525"
 ---
 # <a name="work-with-location-directives"></a>Arbeide med lokasjonsdirektiver
 
@@ -239,7 +239,7 @@ Du kan definere flere lokasjonsdirektivhandlinger for hver linje. Et serienummer
     - **Avrund oppover til fullstendig nummerskilt og FEFO-parti** – Denne strategien kombinerer elementene i strategiene *FEFO-partireservering* og *Avrund oppover til et fullstendig nummerskilt*. Den er bare gyldig for varer med partiaktiverte satsvise jobber og lokasjonsdirektiver som har arbeidstypen *Plukk*. Linjen må være partiaktivert for å kunne bruke strategien *FEFO-partireservering*, og strategien *Avrund oppover til et fullstendig nummerskilt* kan bare brukes til etterfylling. Hvis denne strategien konfigureres sammen med en lokasjonsbeholdningsgrense, kan det føre til at den valgte plasseringen for plassering av arbeid blir overbelastet, og at lagergrenser ignoreres.
     - **Avrund oppover til et fullstendig nummerskilt** – Denne strategien brukes til å avrunde lagerantallet oppover, slik at det tilsvarer nummerskiltantallet som er tilordnet varene som må plukkes. Du kan bare bruke denne strategien for etterfyllingslokasjonsdirektiver av typen *plukk*. Hvis denne strategien konfigureres sammen med en lokasjonsbeholdningsgrense, kan det føre til at den valgte plasseringen for plassering av arbeid blir overbelastet, og at lagergrenser ignoreres.
     - **Nummerskiltledet** – Bruk strategien når du frigir ordren til lageret for å opprette plukk- og plasseringsarbeidet. Du kan bruke denne tilnærmingen for flere nummerskilter. Denne strategien vil prøve å reservere og opprette plukkarbeid mot lokasjonene som inneholder de forespurte nummerskiltene som er knyttet til overføringsordrelinjene. Hvis disse handlingene ikke kan fullføres, men du likevel vil opprette et plukkarbeid, bør du imidlertid gå tilbake til en annen strategi for lokasjonsdirektivhandlinger. Avhengig av forretningsprosesskravene kan det også være lurt å søke etter lager i et annet område av lageret.
-    - **Tom plassering med innkommende arbeid** – Bruk denne strategien til å finne tomme lokasjoner. En lokasjon anses som tom hvis den ikke har fysisk beholdning og ikke forventet innkommende arbeid. Du kan bare bruke denne strategien for lokasjonsdirektiver av arbeidstypen *plukk*.
+    - **Tom plassering med innkommende arbeid** – Bruk denne strategien til å finne tomme lokasjoner. En lokasjon anses som tom hvis den ikke har fysisk beholdning og ikke forventet innkommende arbeid. Du kan bare bruke denne strategien for lokasjonsdirektiver av arbeidstypen *Plasser*.
     - **Lokasjon med aldersfordelt FIFO** – Bruk først inn, først ut-strategien (FIFO) til å levere både partisporingsvarer og ikke-partisporingsvarer, basert på datoen da beholdningen ble registrerte på lageret. Denne funksjonen kan være spesielt nyttig for ikke-partisporingslageret, der ingen utløpsdato er tilgjengelig for sortering. FIFO-strategien finner lokasjonen som inneholder den eldste aldersfordelingsdatoen, og den tildeler plukking basert på den aldersfordelingsdatoen.
     - **Lokasjon med aldersfordelt LIFO** – Bruk sist inn, sist ut-strategien (LIFO) til å levere både partisporingsvarer og ikke-partisporingsvarer, basert på datoen da beholdningen ble registrerte på lageret. Denne funksjonen kan være spesielt nyttig for ikke-partisporingslageret, der ingen utløpsdato er tilgjengelig for sortering. LIFO-strategien finner lokasjonen som inneholder den nyeste aldersfordelingsdatoen, og den tildeler plukking basert på den aldersfordelingsdatoen.
 
@@ -257,3 +257,6 @@ Når du har opprettet lokasjonsdirektiver, kan du knytte hver direktivkode til e
 
 - Video: [Dyp dykk i konfigurasjon av lagerstyring](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
 - Hjelpeemne: [Kontrollere lagerarbeid ved hjelp av arbeidsmaler og lokasjonsdirektiver](control-warehouse-location-directives.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

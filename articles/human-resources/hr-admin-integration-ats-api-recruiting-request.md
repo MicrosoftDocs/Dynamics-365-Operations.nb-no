@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 572ee0755e331d19b41442e3614effb92db95a92
-ms.sourcegitcommit: 33b5c8bc4f9461e290513aa22de1ec1fba3b0742
+ms.openlocfilehash: b89d257e3874ad7395c0a2c02f259c2f063aa8d0
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "5125431"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5500628"
 ---
 # <a name="recruiting-request"></a>Rekrutteringsforespørsel
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dette emnet beskriver Rekrutteringsforespørsel-enheten for Dynamics 365 Human Resources.
 
@@ -98,7 +100,8 @@ Beskriver en forespørsel om å rekruttere for en jobb.
 | **Verdi for jobbtype-ID**<br>_mshr_fk_jobtype_id_value<br>*GUID* | Skrivebeskyttet<br>Valgfri<br>Sekundærnøkkel: mshr_hcmjobtypeentityid i mshr_hcmjobtypenentity-enhet | Den systemgenererte unike identifikatoren for jobbtypen som er knyttet til jobben for rekrutteringsforespørselen. |
 | **Fritatt-status**<br>mshr_exemptstatus<br>*JobExemptStatus*-alternativsett | Skrivebeskyttet<br>Valgfri | FLSA-fritaksstatusen basert på jobbtypen. |
 | **Beregnet startdato**<br>mshr_estimatedstartdate<br>*Dato* | Lese/skrive<br>Obligatorisk | Den estimerte datoen da en kandidat ville begynne å arbeide. |
-| **Ekstern beskrivelse**<br>mshr_externaldescription<br>*Streng* | Lese/skrive<br>Valgfri | En kandidatbeskrivelse av jobb/stilling. | Kompensasjon, lav terskel<br>mshr_compensationlowthreshold<br>*Dobbel* | Lese/skrive<br>Valgfri | Nedre grense for kompensasjonsnivået. |
+| **Ekstern beskrivelse**<br>mshr_externaldescription<br>*Streng* | Lese/skrive<br>Valgfri | En kandidatbeskrivelse av jobb/stilling. | 
+| **Kompensasjon, lav terskel**<br>mshr_compensationlowthreshold<br>*Dobbel* | Lese/skrive<br>Valgfri | Nedre grense for kompensasjonsnivået. |
 | **Kontrollpunkt for kompensasjon**<br>mshr_compensationcontrolpoint<br>*Dobbel* | Lese/skrive<br>Valgfri | Kontrollpunkt for kompensasjonsnivået. |
 | **Kompensasjon, høy terskel**<br>mshr_compensationhighthreshold<br>*Dobbel* | Lese/skrive<br>Valgfri | Øvre grense for kompensasjonsnivået. |
 | **Kompensasjonsnivå**<br>mshr_compensationlevelid<br>*Streng* | Lese/skrive<br>Valgfri | Kompensasjonsnivået for jobben. En jobb kan defineres med flere kompensasjonsnivåer. Dette attributtet angir det valgte jobbkompensasjonsnivået for denne forespørselen. |
@@ -108,3 +111,6 @@ Beskriver en forespørsel om å rekruttere for en jobb.
 
 [Innføring i API for søkersporingssystemintegrering](hr-admin-integration-ats-api-introduction.md)<br>
 [Eksempelspørring for rekrutteringsforespørsel](hr-admin-integration-ats-api-recruiting-request-example-query.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

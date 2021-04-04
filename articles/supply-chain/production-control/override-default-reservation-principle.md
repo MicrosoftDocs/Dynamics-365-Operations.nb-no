@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: InventModelGroup
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.scope: Core, Operations
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-10
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 8756dc22ffd64f836740124ce08dadca84207147
-ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
+ms.openlocfilehash: 2391ec11bd497c69ddb19e29533f5441d7374877
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "5078291"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5501108"
 ---
 # <a name="override-the-default-reservation-principle-for-materials-in-production"></a>Overstyre standard reserveringsprinsipp for materialer i produksjon
 
@@ -38,11 +39,11 @@ Hvis du for eksempel har råvarer eller ingredienser som krever plukkarbeid, må
 Før du kan bruke funksjonen må den være aktivert i systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
 
 - **Modul:** *Produksjonskontroll*
-- **Funksjonsnavn:** *Overstyr standard produksjonsreservering*
+- **Funksjonsnavn:** *(Forhåndsversjon) Overstyr standard produksjonsreservering*
 
 ## <a name="assign-a-production-reservation-policy-to-an-item-model-group"></a>Tilordne en policy for produksjonsreservering til en varemodellgruppe
 
-1. Gå til **Kostnadsstyring &gt; Oppsett for regnskapspolicyer for beholdning &gt; Varemodellgrupper**.
+1. Gå til **Kostnadsstyring \> Oppsett for regnskapspolicyer for beholdning \> Varemodellgrupper**.
 1. Opprett eller velg en varemodellgruppe.
 1. Merk av for **Overstyr reservering for vareproduksjon** i hurtigfanen **Beholdningspolicyer**.
 1. I **Reservering**-feltet velger du reserveringsprinsippet for varer som hører til i den valgte modellgruppen. (Disse varene omfatter varer som er på en stykkliste- eller formellinje.)
@@ -58,3 +59,6 @@ Før du kan bruke funksjonen må den være aktivert i systemet. Administratorer 
 Et bulksmøremiddel produseres i en 1000-liters mikser. Når bulkmaterialet er klart, pumpes det ut til flere fyllestasjoner der flasker av ulike størrelser fylles. Når fyllingen er fullført, pakkes flaskene inn i esker. Disse eskene blir deretter pakket på paller.
 
 I dette scenarioet opprettes det en partiordre for å lage 1000 liter bulkmateriale. (Denne ordren er bulkordren.) Når denne partiordren er fullført, blir den ferdigmeldt til innleveringsstedet for materiale ved fyllestasjonene. Det blir deretter opprettet en partiordre for å fylle og pakke hver flaskestørrelse. (Disse ordrene er pakkeordrer.) Pakkeordrene har en formel som består av bulkmaterialet, en tom flaske, en etikett og andre emballasjematerialer. Siden bulkmaterialet flyter direkte fra miksertanken til fyllestasjonene, kreves det ikke noe lagerarbeid for å plukke denne ingrediensen, og bulkmaterialet forbrukes direkte fra innleveringsstedet. Reserveringsprinsippet er derfor satt til *manuell*. De andre materialene klargjøres for fyllestasjonen i faser med plukkarbeid. Reserveringsprinsippet for disse linjene er derfor for eksempel satt til å *frigivelse*, slik at reserveringen skjer automatisk når pakkeordren frigis.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

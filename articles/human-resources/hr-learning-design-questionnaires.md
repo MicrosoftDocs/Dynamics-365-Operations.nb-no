@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 3f7f7d68caf12c33059d2f871fe3f4a036c89f35
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: eb4632d7f7d73dbef690be16419e5f3aa25e880e
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115132"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5467825"
 ---
 # <a name="create-questionnaires"></a>Opprette spørreskjemaer
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Denne artikkelen beskriver fremgangsmåten for å opprette et spørreskjema. Det første trinnet er å utforme spørreskjemaet. Når du utformer et spørreskjema, skriver du ikke bare spørsmålene og svarene, men du oppretter også strukturen som gjør at svar kan registreres og ordnes i tabellform. 
 
@@ -236,3 +238,5 @@ Hvis du vil bruke betingede spørsmål til å opprette et spørsmålshierarki i 
 En juridisk enhet tilbyr både varer og tjenester til kunder. Som vanlig i slike tilfeller kjøper enkelte kunder bare varer, noen bare tjenester og andre både varer og tjenester. Når den juridiske enheten distribuerer en undersøkelse om kundetilfredshet, bruker den en betinget struktur på spørreskjemaet, slik at kunder som bare kjøper tjenester, ikke trenger å svare på spørsmål om varer. 
 
 Alternativt kan du definere du et spørreskjema slik at hvis en respondent velger svar A på spørsmål 1, er spørsmål 2 det neste spørsmålsrekkefølgen. Hvis respondenten i stedet velger svar B på spørsmål 1, er spørsmål 5 det neste spørsmålet.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1e4f49d9167e6d96500c7dbf5c1a25e04796b33a
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 3564e7807ed81684d51de3185cea9b4f35f38d8b
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113668"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5468281"
 ---
 # <a name="define-compensation-process-and-calculate-results"></a>Definer kompensasjonsprosess og beregn resultater
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Kompensasjonsprosesser brukes til å fastslå nye kompensasjonsbeløp og -bonuser for ansatte som er registrert i faste og variable kompensasjonsplaner. Kompensasjonsprosesser kan kjøres flere ganger for å utføre hva-skjer-hvis-analyse, for å bekrefte at alle endringer og innstillinger er riktige. Dette vil opprette en kompensasjonsprosess, kjøre prosessen og vise resultatene. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
 
@@ -100,3 +102,6 @@ Kompensasjonsprosesser brukes til å fastslå nye kompensasjonsbeløp og -bonuse
 10. Klikk Godkjent.
     * Etter at posten er godkjent, kan den lastes til den ansattes offisielle kompensasjonspost. Den nye kompensasjonen trer i kraft på transaksjonsdatoen som er angitt i kompensasjonsprosessen.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

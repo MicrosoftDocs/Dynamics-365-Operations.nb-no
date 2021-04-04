@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 10/08/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EventCreateRule
 audience: Application user
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: 3721416ce720167a6f78e26583de84af9c8d086b
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: b0c37c1f948b072c64c54308cb85c90cfa248700
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798433"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5559414"
 ---
 # <a name="create-alert-rules"></a>Opprette varslingsregler
 
@@ -102,3 +101,8 @@ Du kan ikke opprette varsler for enkelte sekundære datakilder i skjemaer. Når 
     ```
 2. Opprett et varsel fra SysTableBrowser-skjemaet.
 
+### <a name="change-based-alerts-do-not-work-for-batch-status-changes"></a>Endringsbaserte varsler fungerer ikke for endringer i satsvis status
+Endringsbaserte varsler fungerer ikke med endringer i satsvis status fordi den er slått av av ytelseshensyn. I stedet bør du konfigurere funksjonen **Satsvise varsler**. Hvis du vil ha mer informasjon, kan du se [Konfigurere varsler for partiforbedrede skjemaer](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/alerts#set-up-alerts-for-batch-enhanced-forms).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

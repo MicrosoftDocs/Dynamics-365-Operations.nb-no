@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b4196532be8ad40bacb8d614c6b0c86215b00bdb
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 72e36519a365c321ee8bf5972310240e18d29180
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113661"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5467596"
 ---
 # <a name="prepare-for-human-resources-go-live"></a>Klargjøre for å aktivere med Human Resources
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [banner](../includes/banner.md)]
 
@@ -64,7 +66,7 @@ Det er en god praksis å fullføre trinnene i metoden mens du går fremover med 
 
 I løpet av UAT-fasen må du teste alle forretningsprosessene du har implementert, og eventuelle tilpasninger du har utført, i et sandkassemiljø i implementeringsprosjektet. Du bør vurdere følgende når du fullfører UAT-fasen for å sikre en vellykket aktiveringsfase: 
 
-- Vi anbefaler at UAT-prosessen starter med et rent og nytt miljø der dataene fra GULL-konfigurasjonen kopieres til miljøet før starten av UAT-prosessen. Vi anbefaler at du bruker produksjonsmiljøet som GULL-miljø til du går i gang med å produsere på et bestemt tidspunkt.
+- Det anbefales at UAT-prosessen starter med et rent og nytt miljø der dataene fra GULL-konfigurasjonen kopieres til miljøet før starten av UAT-prosessen. Det anbefales at du bruker produksjonsmiljøet som GULL-miljø til du går i gang med å produsere på et bestemt tidspunkt.
 - Prøvesaker dekker hele omfanget av krav. 
 - Test ved å bruke overførte data. Disse dataene bør inneholde hoveddata, for eksempel arbeidere, jobber og stillinger. Ta også med åpningssaldoer som permisjons- og fraværsavsetninger. Til slutt skal du ta med åpne transaksjoner, for eksempel registrering av gjeldende fordeler. Fullstendig testing med alle typer data, selv om datasettet ikke er sluttført. 
 - Test ved å bruke de riktige sikkerhetsrollene (standardroller og egendefinerte roller) som er tilordnet til brukerne. 
@@ -75,14 +77,14 @@ I løpet av UAT-fasen må du teste alle forretningsprosessene du har implementer
 
 Før du aktiverer, må du utføre en testaktivering for å teste trinnene som er nødvendige for å gå fra dine eldre systemer til det nye systemet. Du bør utføre din testaktivering i et sandkassemiljø og inkludere alle trinnene i overgangsplanen din.
 
-- Vi anbefaler at du bruker produksjonsmiljøet som GULL-konfigurasjonsmiljøet frem til aktiveringen.
+- Det anbefales at du bruker produksjonsmiljøet som GULL-konfigurasjonsmiljøet frem til aktiveringen.
 - Sørg for at du har en god styringsprosess på plass for å beskytte produksjonsmiljøet mot utilsiktede transaksjoner eller oppdateringer, før aktiveringen.
 - Når du er klar til å utføre UAT eller testaktivering, oppdaterer du sandkassemiljøet fra produksjonsmiljøet. Hvis du vil ha mer informasjon, kan du se [Kopiere en forekomst](hr-admin-setup-copy-instance.md).
 - Test hvert trinn i overgangsplanen i sandkassemiljøet, og valider deretter sandkassemiljøet ved å utføre spotkontroller eller tester fra UAT-skriptene i miljøet.
   - Testene bør inneholde alle migreringene, inkludert transformasjoner som trengs til aktiveringen.
   - Prosessen bør inkludere en testovergang for alle eldre systemer.
   - Pass på at du tar med eventuelle trinn i integreringsovergangen eller eksterne systemtrinn testovergangen.
-- Hvis det oppstår problemer under testovergangen, kan det være nødvendig med en ny testovergang. Vi anbefaler derfor at du planlegger to testoverganger i prosjektplanen.
+- Hvis det oppstår problemer under testovergangen, kan det være nødvendig med en ny testovergang. Det anbefales derfor at du planlegger to testoverganger i prosjektplanen.
 
 ## <a name="fasttrack-go-live-assessment"></a>FastTrack-aktiveringsvurdering
 
@@ -99,3 +101,6 @@ Når du har sendt inn sjekklisten, vil FastTrack-løsningsarkitekten se gjennom 
 ## <a name="see-also"></a>Se også
 
 [Vanlige spørsmål om aktivering](hr-admin-go-live-faq.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

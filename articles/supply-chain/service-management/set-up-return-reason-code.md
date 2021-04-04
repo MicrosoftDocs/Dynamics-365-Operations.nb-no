@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c321531ace9e17f7d099be6280fd30500b991577
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d268c6fc90457c9f84f66ea5dbf86df356bea0f4
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4991721"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470674"
 ---
 # <a name="set-up-return-reason-codes"></a>Definere returårsakskoder   
 
@@ -31,9 +31,9 @@ ms.locfileid: "4991721"
 
 ## <a name="set-up-return-reason-code-groups"></a>Definere kodegrupper for returårsak 
 
-1.  Klikk på **Salg og markedsføring** \> **Oppsett** \> **Salgsordrer** \> **Returer** \> **Kodegrupper for returårsak**.
+1.  Gå til **Salg og markedsføring** \> **Oppsett** \> **Salgsordrer** \> **Returer** \> **Kodegrupper for returårsak**.
 
-2.  Trykk CTRL+N for å opprette en linje for en ny kodegruppe for returårsak.
+2.  Velg **Ny** for å opprette en linje for en ny kodegruppe for returårsak.
 
 3.  I feltet **Kodegruppe for returårsak** skriver du en ID for gruppen.
 
@@ -43,7 +43,7 @@ ms.locfileid: "4991721"
 
 Denne prosedyren hjelper deg å sette opp returårsakskoder som du kan bruke til å indikere hvorfor et produkt ble returnert av kunden.
 
-1.  Klikk på **Salg og markedsføring** \> **Oppsett** \> **Salgsordrer** \> **Returer** \> **Koder for returårsaker**.
+1.  Gå til **Salg og markedsføring** \> **Oppsett** \> **Salgsordrer** \> **Returer** \> **Koder for returårsaker**.
 
 2.  Trykk CTRL+ N for å opprette en ny linje for returårsakskode.
 
@@ -62,3 +62,6 @@ Denne prosedyren hjelper deg å sette opp returårsakskoder som du kan bruke til
  
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

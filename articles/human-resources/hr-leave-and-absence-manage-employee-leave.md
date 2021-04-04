@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 627c8959b1845fbad761a85bdca7dc93bfc6a105
-ms.sourcegitcommit: d02fae79d5c02a4bc4f4b16a410c2f5ce026c204
+ms.openlocfilehash: 42d51ffe14442e076bafc99035dbd68a555e5b92
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "4970662"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5468065"
 ---
 # <a name="manage-employee-leave"></a>Administrere ansattpermisjon
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Du kan behandle en ansatts permisjon etter permisjonstype. Dette inkluderer utløp av permisjonsregistrering og justering av permisjonstypesaldoer. 
 
@@ -56,3 +58,6 @@ Du kan inkludere en årsakskode og kommentar når du justerer en ansatts permisj
 
 - [Oversikt over permisjon og fravær](hr-leave-and-absence-overview.md)
 - [Administrere forespørsler om permisjon og fravær](hr-employee-self-service-manage-requests.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

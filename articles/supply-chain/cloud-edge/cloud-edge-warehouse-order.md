@@ -19,12 +19,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2021-01-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: c04127b9fe621d962be2d7fe06358b3bd1b78916
-ms.sourcegitcommit: 289e9183d908825f4c8dcf85d9affd4119238d0c
+ms.openlocfilehash: 9102f53ab1b63d08b8bba7b0ae505416ec5a83fd
+ms.sourcegitcommit: 70b1567d316f19c15a4b032b4897f15c8dcdca09
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "5105722"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "5556368"
 ---
 # <a name="warehouse-orders-for-cloud-and-edge-scale-units"></a>Lagerordrer for sky- og kantskalaenheter
 
@@ -52,6 +52,8 @@ Følg denne fremgangsmåten for å opprette en lagerordre.
 1. Velg **Frigi til lager** i gruppen **Handlinger** i fanen **Lager** i handlingsruten.
 1. Hvis du vil vise de relaterte lagerordrelinjene, åpner du den relevante bestillingen, velger en linje i **Bestillingslinjer**-delen og velger deretter **Lager \> Lagerordrelinjer** på verktøylinjen. Hvis du vil vise alle linjene, kan du gå til **Lagerstyring \> Forespørsler og rapporter \> Lagerordrelinjer**.
 
+Du kan også utløse prosessen *Frigi til lager* fra en satsvis jobb ved å gå til **Lagerstyring > Frigi til lager > Automatisk frigivelse av bestillinger**. Når du definerer den satsvise jobben, kan du velge bestemte bestillingslinjer basert på en spørring. Et typisk scenario vil være å sette opp en gjentakende satsvis jobb som frigir alle bekreftede bestillingslinjer som forventes å ankomme neste dag.
+
 ## <a name="cancel-a-warehouse-order"></a>Annullere en lagerordre
 
 Som en del av prosessen *Frigi til lager* er lagertransaksjoner for bestilling koblet til lagerordrer og låst fra å bli oppdatert av senteret. Hvis du frigir til lageret ved en feiltakelse, eller hvis du har en annen grunn til å tilbakeføre opprettelsen av lagerordrelinjer, kan du be om å få annullere lagerordrelinjer.
@@ -72,3 +74,6 @@ I visningen **Lagerordrelinjer** kan du overvåke fremdriften til innkommende mo
 
 - Gå til **Lagerstyring \> Forespørsler og rapporter \> Lagerordrelinjer**, og bruk filteret til å finne linjene du ser etter.
 - Gå til **Innkjøp og leverandører \> Bestillinger \> Alle bestillinger**, og åpne den relevante bestillingen. Velg én eller flere linjer i delen **Bestillingslinjer**, og velg deretter **Lager \> Oppføringer for lagermottak** på verktøylinjen.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
