@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 09/17/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -14,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 3193fbc4d4b3492960c7c13dc24b41bb920e7d23
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 6f48d369d5cd9d5ee0b234ce924ec0b80388c792
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683438"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5570122"
 ---
 # <a name="company-directory-mobile-workspace"></a>Mobilt arbeidsområde for firmakatalog
 
@@ -45,7 +44,7 @@ Før du kan bruke dette mobile arbeidsområdet, må du oppfylle følgende foruts
 <tr class="header">
 <th>Forutsetning</th>
 <th>Rolle</th>
-<th>Beskrivelse</th>
+<th>beskrivelse</th>
 </tr>
 </thead>
 <tbody>

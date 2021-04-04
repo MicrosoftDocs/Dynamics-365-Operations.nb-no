@@ -3,7 +3,7 @@ title: Administrasjonskomponenter for Elektronisk fakturering-tillegget
 description: Dette emnet inneholder informasjon om komponentene som er knyttet til administrasjon av tillegget Elektronisk fakturering.
 author: gionoder
 manager: AnnBe
-ms.date: 01/28/2021
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 6f630ebb694217c3bd52378a649933a670c090f2
-ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
+ms.openlocfilehash: 70ef47dd45200a14c9d780f3c280c554d0e52ac3
+ms.sourcegitcommit: 543772ee97efe215cf6f2ec6e092cc1568919f20
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "5104420"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "5592580"
 ---
 # <a name="electronic-invoicing-add-on-administration-components"></a>Administrasjonskomponenter for Elektronisk fakturering-tillegget
 
@@ -39,11 +39,15 @@ Bruk Microsoft Azure for å opprette key vault-hemmelighetene og lagringskontoen
 
 Bruk Microsoft Dynamics Lifecycle Services (LCS) til å aktivere tillegget for mikrotjenestene på LCS-distribusjonsprosjektet.
 
-I LCS velger du flisen **Administrasjon av forhåndsvisningsfunksjoner**, og deretter aktiverer du funksjonen **E-faktureringstjeneste**.
+> [!NOTE]
+> Installasjonen av mikrotjenestetillegget i LCS krever minst en virtuell maskin på nivå 2. Hvis du vil ha mer informasjon om miljøplanlegging, kan du se [Miljøplanlegging](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
+ 
 
 ## <a name="regulatory-configuration-services"></a>Regulatory Configuration Services
 
 Dynamics 365 Regulatory Configuration Services (RCS) er grensesnittet som brukes til å konfigurere tillegget for Elektronisk fakturering. Ressurser som miljøer og funksjoner for elektroniske fakturering opprettes, vedlikeholdes og driftes i RCS. Når ressursene er klare, publiseres de i tilleggstjenesten for Elektronisk fakturering.
+
+For RCS-registrering kan du se [Regulatory Services](https://marketing.configure.global.dynamics.com/).
 
 Hvis du vil ha mer informasjon om RCS, kan du se [Regulatory Configuration Services (RCS) – globaliseringsfunksjoner](rcs-globalization-feature.md)
 
@@ -53,22 +57,14 @@ Før du kan bruke RCS til å konfigurere elektroniske fakturaer, må du konfigur
 
 #### <a name="service-endpoint"></a>Tjenestesluttpunkt
 
-URL-adressen til tillegget for Elektronisk fakturering kan variere i henhold til den geografiske plasseringen til Azure-datasenteret. I tabellen nedenfor finner du en oversikt over tilgjengelighet per område:
+Tillegget for elektronisk fakturering er tilgjengelig i flere geografiske områder for Azure-datasenteret. I tabellen nedenfor finner du en oversikt over tilgjengelighet per område.
 
-| Azure-datasentergeografi | URL for tjenestesluttpunkt                                                       |
-|----------------------------|----------------------------------------------------------------------------|
-| USA øst                    | `https://electronicinvoicing.eus-il301.gateway.prod.island.powerapps.com/` |
-| USA vest                    | `https://electronicinvoicing.wus-il301.gateway.prod.island.powerapps.com/` |
-| Europa, nord                   | `https://electronicinvoicing.neu-il301.gateway.prod.island.powerapps.com/` |
-| Europa, vest                    | `https://electronicinvoicing.weu-il301.gateway.prod.island.powerapps.com/` |
-
-#### <a name="application-id"></a>App-ID
-
-Program-IDen er IDen for programmet for Elektronisk fakturering. I dette tilfellet er verdien fast: **0cdb527f-a8d1-4bf8-9436-b352c68682b2**.
-
-#### <a name="lcs-environment-id"></a>LCS-miljø-ID
-
-LCS-miljø-IDen er IDen for organisasjonens LCS-abonnement.
+| Azure-datasentergeografi |
+|----------------------------|
+| USA øst                    |
+| USA vest                    |
+| Europa, nord                   |
+| Europa, vest                    |
 
 ### <a name="service-environments"></a>Tjenestemiljøer
 
@@ -138,3 +134,6 @@ Miljøet må konfigureres i kategorien **Innsendingstjenester** på siden **Para
 
 - [Konfigurere elektroniske fakturaer i RCS](e-invoicing-configuration-rcs.md)
 - [Utstede elektroniske fakturaer i Finance og Supply Chain Management](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

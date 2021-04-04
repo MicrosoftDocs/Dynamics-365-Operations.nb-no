@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 06/23/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -14,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dd9516ac68c46649ebc50711357b97179bfc1b2c
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: d37a10b1430349014f55cde155c6ed6e85dfe3dc
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5092156"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5567324"
 ---
 # <a name="define-the-dependency-of-er-configurations-on-other-components"></a>Definere avhengigheten av ER-konfigurasjonene i andre komponenter
 
@@ -139,3 +138,6 @@ Vi skal slette opprettede konfigurasjoner fra systemet og laste dem ned fra LCS 
 26. Utvid 'Sample data model' i treet.
     * Legg merke til at modelltilordningskonfigurasjon "Eksempeltilordning" er lastet ned sammen med konfigurasjonen for de valgte dataene. De to filene lastes ned sammen fordi tilordning av eksemplet er definert som implementerer den valgte datamodellen og fordi den er tilgjengelig for programmet. Eksempel på tilordning (alternativ)-konfigurasjonen er ikke lastet ned fordi betingelsen for den nødvendige programversjonen ikke er oppfylt.   
     * Hvis du logger deg på Finance and Operations, registrerer samme leverandør, får tilgang til samme LCS-prosjekt og laster ned den samme datamodellkonfigurasjonen, lastes "Eksempeltilordning (alternativ)-konfigurasjonen ned, "Eksempeltilordning"-konfigurasjonen vil bli hoppet over.  
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -3,10 +3,9 @@ title: Vanlige spørsmål for adressebøker
 description: Dette emnet inneholder svar på vanlige spørsmål knyttet til adressebøker.
 author: msftbrking
 manager: AnnBe
-ms.date: 10/26/2017
+ms.date: 02/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DirPartyCheckDuplicate, DirPartyTable
 audience: Application User
@@ -17,16 +16,17 @@ ms.search.region: Global
 ms.author: brking
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 922900b20b878dd8b479158d47a9f7792caa684d
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: ad2be27d406928222ca00fe696f49b8578fc8cb3
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4796904"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5559947"
 ---
 # <a name="address-books-faq"></a>Vanlige spørsmål om adressebøker
 
 [!include [banner](../includes/banner.md)]
+[!include [preview-banner](../includes/preview-banner.md)]
 
 ## <a name="how-do-i-check-for-duplicate-records"></a>Hvordan kontrollerer jeg duplikate poster?
 
@@ -67,3 +67,11 @@ Du kan angi partsposter i den globale adresseboken eller på den rette enhetssid
 ## <a name="can-i-translate-address-information-for-party-records"></a>Kan jeg oversette adresseinformasjon for partsposter?
 
 Du kan definere oversettelser av adresseinformasjon, slik at informasjonen vises på ditt brukerspråk (systemspråk) i programmet, men på et annet språk på dokumenter som salgsordrer. Du kan angi oversettelser for land-/områdenavn, adresseformål og navnerekkefølger. Systemspråket ditt er eksempelvis dansk, og du oppretter en salgsordre for en kunde i Frankrike. I så fall kan du vise kundeposten på dansk i programmet, men vise adresseinformasjonen på fransk på den utskrevne salgsordren. Når du definerer oversettelser, bør du angi en oversettelse for hvert element i listen. Alle elementer som du ikke angir en oversettelse for, vises på systemspråket. Systemspråket ditt er eksempelvis dansk, og du sender et dokument til en kunde i Spania. Hvis du ikke har angitt spanske (ESP) oversettelser for adresseinformasjonen, vil denne informasjonen vises på dansk både i programmet og på det utskrevne dokumentet.
+
+## <a name="after-importing-addresses-when-i-access-the-records-why-am-i-unable-to-edit-imported-addresses"></a>Når jeg har importert adresser, hvorfor kan jeg ikke redigere importerte adresser når jeg har tilgang til postene?
+
+Når adresser importeres, finnes det et felt kalt **IsLocationOwner**, som angir om parten som er knyttet til lokasjonen (adressen), er eier av adressen. Hvis parten er eier av adressen, kan adressen redigeres når du åpner den ved hjelp av parten i den globale adresseboken eller fra hovedpostskjemaet (for eksempel kunde, leverandør eller arbeider). Hvis parten ikke er eier av adressen, kan ikke posten redigeres fra skjemaene som vises tidligere. Når du importerer adresser, bør **IsLocationOwner** settes til **Yes** hvis du vil at adressen skal kunne redigeres ved hjelp av den tilknyttede parten. Enkelte ganger er imidlertid dette feltet importert feil. Hvis du vil korrigere dette problemet, kan stedseieren oppdateres i den globale adresseboken fra partsposten eller fra siden **Bekreft lokasjonseiere**. Hvis du vil oppdatere en enkelt partspost, går du til **Global adressebok > Adresse**. Velg **Rediger** for å åpne siden **Rediger adresse** for å endre lokasjonseieren. Velg **Endre lokasjonseier** for å se den forrige lokasjonseieren med den valgte parten som den nye lokasjonseieren. Hvis den forrige lokasjonseieren er tom, betyr det at det ikke er fastsatt en lokasjonseier. Hvis du velger **Avansert**, åpnes siden **Behandle adresser** der lokasjonseieren også kan angis. Velg lokasjonen som skal oppdateres, og velg deretter **Angi lokasjonseier** på menyen. Hvis du vil oppdatere lokasjonseieren for flere poster, kan du gå til **Global adressebok > Lokasjoner > Bekreft lokasjonseiere**. Listen inneholder lokasjoner som er koblet til en enkelt part, men denne parten er ikke eieren. Hvis du velger **Bekreft eier**, settes alternativet **Foreslått ID for eiende part** til å være eieren for den tilkoblede adressen. Når parten er definert som eier, kan du redigere den koblede adressen fra partsposten. Hvis du vil endre lokasjonseieren, må du få tildelt rettigheten **Angi lokasjonseier** på siden **Sikkerhetskonfigurasjon**.  Systemadministratoren får tildelt denne rettigheten som standard.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

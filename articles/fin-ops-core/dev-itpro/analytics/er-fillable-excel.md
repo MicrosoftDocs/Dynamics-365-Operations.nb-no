@@ -3,10 +3,9 @@ title: Utforme en konfigurasjon til å generere dokumenter i Excel-format
 description: Dette emnet beskriver hvordan du utformer et format for elektronisk rapportering (ER) for å fylle ut en Excel-mal, og deretter generere utgående dokumenter i Excel-format.
 author: NickSelin
 manager: AnnBe
-ms.date: 11/02/2020
+ms.date: 03/10/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: EROperationDesigner, ERParameters
 audience: Application User, Developer, IT Pro
@@ -17,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c8d6a18741d57829d1929fb8362dc4ba8e03a1bd
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: a82afcdeb45bad79a008c3135ef332cf01c0b580
+ms.sourcegitcommit: a3052f76ad71894dbef66566c07c6e2c31505870
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5094035"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "5574179"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Utforme en konfigurasjon til å generere dokumenter i Excel-format
 
@@ -54,7 +53,7 @@ Du må legge til en **Excel\\Fil**-komponent for det konfigurerte ER-formatet fo
 Hvis du vil angi oppsettet for det utgående dokumentet, knytter du en Excel-arbeidsbok som har filtypen XLSX, til **Excel-\\Fil**-komponenten som malen for utgående dokumenter.
 
 > [!NOTE]
-> Når du knytter en mal manuelt, må du bruke en [dokumenttype](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management#configure-document-types) som er konfigurert for dette formålet i [ER-parameterne](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents).
+> Når du knytter en mal manuelt, må du bruke en [dokumenttype](../../../fin-ops-core/fin-ops/organization-administration/configure-document-management.md#configure-document-types) som er konfigurert for dette formålet i [ER-parameterne](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents).
 
 ![Legge til et vedlegg i Excel\Fil-komponenten](./media/er-excel-format-add-file-component2.png)
 
@@ -140,6 +139,36 @@ Hvis du vil finne ut mer om hvordan du bygger inn bilder og figurer, kan du se [
 
 Komponenten **PageBreak** tvinger Excel til å starte en ny side. Denne komponenten er ikke nødvendig når du vil bruke standard sideveksling i Excel, men du bør bruke den når du vil at ER-formatet skal strukturere sideveksling for Excel.
 
+## <a name="footer-component"></a>Bunntekstkomponent
+
+Komponenten **Bunntekst** brukes til å fylle ut bunntekster nederst i et generert regneark i en Excel-arbeidsbok.
+
+> [!NOTE]
+> Du kan legge til denne komponenten for hver komponent av typen **Ark** for å angi ulike bunntekster for forskjellige regneark i en generert Excel-arbeidsbok.
+
+Når du konfigurerer en komponent av typen **Bunntekst**, kan du bruke egenskapen **Utseende for topptekst/bunntekst** til å angi sidene som komponenten skal brukes til. Følgende verdier er tilgjengelige:
+
+- **Alle** – Kjør den konfigurerte komponenten av typen **Bunntekst** for en side i det overordnede Excel-regnearket.
+- **Første** – Kjør den konfigurerte komponenten av typen **Bunntekst** for bare den første siden i det overordnede Excel-regnearket.
+- **Partall** – Kjør den konfigurerte komponenten av typen **Bunntekst** for bare partallssidene i det overordnede Excel-regnearket.
+- **Oddetall** – Kjør den konfigurerte komponenten av typen **Bunntekst** for bare oddetallssidene i det overordnede Excel-regnearket.
+
+For en komponent av typen **Ark** kan du legge til flere komponenter av typen **Bunntekst**, der hver har forskjellig verdi for egenskapen **Utseende for topptekst/bunntekst**. På denne måten kan du generere forskjellige bunntekster for ulike typer sider i et Excel-regneark.
+
+> [!NOTE]
+> Sørg for at hver komponent av typen **Bunntekst** du legger til i en komponent av typen **Ark**, har en annen verdi for egenskapen **Utseende for topptekst/bunntekst**. Ellers oppstår det en [valideringsfeil](er-components-inspections.md#i16). Feilmeldingen du mottar, varsler deg om inkonsekvensen.
+
+Under den tillagte komponenten av typen **Bunntekst** legger du til de obligatoriske, nestede komponentene av typen **Tekst\\Streng**, **Tekst\\Dato og klokkeslett** eller en annen type. Konfigurer bindingene for disse komponentene til å angi hvordan bunnteksten på siden fylles ut.
+
+Du kan også bruke spesielle [formateringskoder](https://docs.microsoft.com/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers) til å formatere innholdet i en generert bunntekst på riktig måte. Hvis du vil lære hvordan du bruker denne fremgangsmåten, følger du trinnene i [Eksempel 1](#example-1) senere i dette emnet.
+
+> [!NOTE]
+> Når du konfigurerer ER-formater, må du huske å vurdere Excel-[grensen](https://support.microsoft.com/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3) og det maksimale antallet tegn for én topptekst eller bunntekst.
+
+## <a name="header-component"></a>Topptekstkomponent
+
+Komponenten **Topptekst** brukes til å fylle ut topptekster øverst i et generert regneark i en Excel-arbeidsbok. Den brukes på samme måte som komponenten **Bunntekst**.
+
 ## <a name="edit-an-added-er-format"></a>Redigere et tillagt ER-format
 
 ### <a name="update-a-template"></a>Oppdatere en mal
@@ -176,6 +205,48 @@ Når et utgående dokument i et Microsoft Excel-arbeidsbokformat genereres, kan 
     > Omberegning av formler tvinges manuelt når et generert dokument åpnes for forhåndsvisning ved hjelp av Excel.
     > Ikke bruk dette alternativet hvis du konfigurerer et ER-mål som forutsetter bruken av et generert dokument uten forhåndsvisningen i Excel (PDF-konvertering, e-post og så videre), fordi det genererte dokumentet kanskje ikke inneholder verdier i celler som inneholder formler.
 
+## <a name="example-1-format-footer-content"></a><a name="example-1"></a>Eksempel 1: Format for bunntekstinnhold
+
+1. Bruk ER-konfigurasjonene som følger med, til å [generere](er-generate-printable-fti-forms.md) et FTI-dokument (free text invoice).
+2. Gå gjennom bunnteksten til det genererte dokumentet. Legg merke til at det inneholder informasjon om det gjeldende sidetallet og totalt antall sider i dokumentet.
+
+    ![Gå gjennom bunnteksten til et generert dokument i Excel-format](./media/er-fillable-excel-footer-1.gif)
+
+3. I ER-formatutformingen [åpner](er-generate-printable-fti-forms.md#features-that-are-implemented-in-the-sample-er-format) du eksempel-ER-formatet for gjennomgang.
+
+    Bunnteksten i regnearket **Faktura** genereres basert på innstillingene til to komponenter av typen **Streng** som ligger under komponenten **Bunntekst**:
+
+    - Den første komponenten av typen **Streng** fyller ut følgende spesielle formateringskoder for å tvinge Excel til å bruke bestemt formatering:
+
+        - **&C** – Juster bunnteksten i midten.
+        - **&"Segoe UI,Regular"&8** – Viser bunnteksten i skriften "Segoe UI Regular" med en størrelse på 8 punkt.
+
+    - Den andre komponenten av typen **Streng** fyller ut teksten som inneholder det gjeldende sidenummeret og totalt antall sider i det gjeldende dokumentet.
+
+    ![Gå gjennom komponenten for bunntekst-ER-formatet på siden Formatutforming](./media/er-fillable-excel-footer-2.png)
+
+4. Tilpass ER-eksemplets format for å endre den gjeldende bunnteksten på siden:
+
+    1. [Opprett](er-quick-start2-customize-report.md#DeriveProvidedFormat) et avledet ER-format for **Tilpasset fritekstfaktura (Excel)** som er basert på eksempel-ER-formatet.
+    2. Legg til det første nye paret med komponenter av typen **Streng** for komponenten **Bunntekst** i regnearket **Faktura**:
+
+        1. Legg til en komponent av typen **Streng** som justerer firmanavnet til venstre, og presenterer det i 8-punkters "Segoe UI Regular"-skrifttype (**"&L&"Segoe UI,Regular"&8"**).
+        2. Legg til en komponent av typen **Streng** som fyller ut firmanavnet (**model.InvoiceBase.CompanyInfo.Name**).
+
+    3. Legg til det andre nye paret med komponenter av typen **Streng** for komponenten **Bunntekst** i regnearket **Faktura**:
+
+        1. Legg til en komponent av typen **Streng** som justerer behandlingsdatoen til høyre, og presenterer det i 8-punkters "Segoe UI Regular"-skrifttype (**"&R&"Segoe UI,Regular"&8"**).
+        2. Legg til en komponent av typen **Streng** som fyller ut behandlingsdatoen i et egendefinert format (**"&nbsp;"&DATEFORMAT(SESSIONTODAY(), "yyyy-MM-dd")**).
+
+        ![Gjennomgang av komponenten for bunntekst-ER-formatet på siden Formatutforming](./media/er-fillable-excel-footer-3.png)
+
+    4. [Fullfør](er-quick-start2-customize-report.md#CompleteDerivedFormat) utkastversjonen for det avledede ER-format et for **Tilpasset fritekstfaktura (Excel)**.
+
+5. [Konfigurer](er-generate-printable-fti-forms.md#configure-print-management) Utskriftsbehandling for å bruke det avledede ER-formatet for **Tilpasset fritekstfaktura (Excel)** i stedet for eksempel-ER-formatet.
+6. Generer et utskrivbart FTI-dokument, og gå gjennom bunnteksten til det genererte dokumentet.
+
+    ![Gjennomgang av bunnteksten til et generert dokument i Excel-format](./media/er-fillable-excel-footer-4.gif)
+
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Oversikt over elektronisk rapportering](general-electronic-reporting.md)
@@ -189,3 +260,6 @@ Når et utgående dokument i et Microsoft Excel-arbeidsbokformat genereres, kan 
 [Bygge inn bilder og figurer i dokumenter du genererer ved hjelp av ER](electronic-reporting-embed-images-shapes.md)
 
 [Konfigurere elektronisk rapportering (ER) for å hente data til Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

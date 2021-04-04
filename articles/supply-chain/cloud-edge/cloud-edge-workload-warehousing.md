@@ -18,12 +18,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 91e614889c719ae700b13e54150e5025d64e2b97
-ms.sourcegitcommit: 289e9183d908825f4c8dcf85d9affd4119238d0c
+ms.openlocfilehash: 9b5d8c9e77fb98dfb7031a3868303970fe3bf865
+ms.sourcegitcommit: 4835acc3edacf8277937723d3f85a7875bd8de83
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "5104946"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "5580971"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Skalaenheter for sky og kant for arbeidsbelastninger for lagerstyring
 
@@ -86,6 +86,13 @@ Senteret eier følgende data:
 > Den inngående bestillingsflyten er konseptuelt forskjellig fra den utgående flyten. Du kan styre det samme lageret på skalaenheten eller i senteret, avhengig av om bestillingen er frigitt til lageret eller ikke. Når du har frigitt en ordre til lageret, kan du bare arbeide med ordren mens du er logget på skalaenheten.
 
 Hvis du bruker prosessen *Frigi til lager*, opprettes [*lagerordrer*](cloud-edge-warehouse-order.md), og eierskap av den relaterte mottaksflyten tilordnes til skalaenheten. Senteret vil ikke kunne registrere innkommende mottak.
+
+Du må logge på senteret for å bruke prosessen *Frigi til lager*. Gå til en av følgende sider for å kjøre eller planlegge den:
+
+- **Innkjøp og leverandører > Bestillinger > Alle bestillinger > Lager > Handlinger > Frigi til lager**
+- **Lagerstyring > Frigi til lager > Automatisk frigivelse av bestillinger**
+
+Når du bruker **Automatisk frigivelse av bestillinger**, kan du velge bestemte bestillingslinjer basert på en spørring. Et typisk scenario vil være å sette opp en gjentakende satsvis jobb som frigir alle bekreftede bestillingslinjer som forventes å ankomme neste dag.
 
 Arbeideren kan kjøre mottaksprosessen ved å bruke en lagerapp som er knyttet til skalaenheten. Dataene registreres deretter av skalaenheten, og de rapporteres mot den inngående lagerordren. Oppretting og behandling av etterfølgende plassering vil også bli behandlet av skalaenheten.
 
@@ -222,7 +229,7 @@ Følgende tabell viser hvilke inngående funksjoner som støttes, og hvor de st�
 | Mottak og plassering av overføringsordrelinje                        | Ja | Nei |
 | Avbryt arbeid (inngående)                                              | <p>Ja, når det ikke er en lagerordre</p><p>Nei, når det er en lagerordre</p> | <p>Ja, men bare når det ikke er merket av for alternativet <b>Avregistrer mottak når arbeid avbrytes</b> (på siden <b>Lagerstyringsparametere</b>)</p> |
 | Behandling av bestillingsproduktkvittering                          | Ja | Nei |
-| Bestilling som mottas med underlevering                        | <p>Ja, når det ikke er en lagerordre</p><p>Nei, når det er en lagerordre</p> | Nei, fordi du bare kan annullere fullstendige antall på lagerordrelinjer |
+| Bestilling som mottas med underlevering                        | <p>Ja, når det ikke er en lagerordre</p><p>Nei, når det er en lagerordre</p> | Ja, men bare ved å utføre en annulleringsforespørsel fra senteret |
 | Bestilling som mottas med overlevering                        | <p>Ja, når det ikke er en lagerordre</p><p>Nei, når det er en lagerordre</p> | Ja  |
 | Mottak med oppretting av arbeidstypen *Direkteoverføring*                   | <p>Ja, når det ikke er en lagerordre</p><p>Nei, når det er en lagerordre</p> | Nei |
 | Mottak med oppretting av arbeidstypen *Kvalitetsordre*                  | <p>Ja, når det ikke er en lagerordre</p><p>Nei, når det er en lagerordre</p> | Nei |
@@ -259,7 +266,7 @@ Følgende tabell viser hvilke funksjoner for lageroperatsjoner og unntaksbehandl
 | Endre partidisposisjonskode                      | Ja | Ja                          |
 | Vis liste over åpent arbeid                             | Ja | Ja                          |
 | Konsolider skiltnummer                         | Ja | Nei                           |
-| Behandling av minimums-/maksimumsetterfylling og etterfylling av soneterskel| Ja <p>Vi anbefaler at du ikke tar med de samme lokasjonene som en del av spørringene</p>| Ja                          |
+| Behandling av minimums-/maksimumsetterfylling og etterfylling av soneterskel| Ja <p>Det anbefales at du ikke tar med de samme lokasjonene som en del av spørringene</p>| Ja                          |
 | Behandling av sporingsetterfylling                  | Ja  | Ja<p>Merk at oppsettet må utføres på skalaenheten</p>                           |
 | Blokker og opphev blokkering av arbeid                             | Ja | Ja                          |
 | Endre bruker                                        | Ja | Ja                          |
@@ -292,3 +299,6 @@ I arbeidsbelastningen på skalaenheter kan du administrere følgende satsvise jo
 - Behandle bølgetabellposter
 - Lagersenter til meldingsprosessor for skalaenhet
 - Behandle forespørsler om oppdatering av antall for lagerordrelinjer
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

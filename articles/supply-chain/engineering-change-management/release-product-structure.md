@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 971ff16b862a48581365523edc6b64052b29c380
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: c1304d3277e12bc602fa5bc25a61e1f95edba59c
+ms.sourcegitcommit: 4835acc3edacf8277937723d3f85a7875bd8de83
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967238"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "5580921"
 ---
 # <a name="release-product-structures"></a>Frigi produktstrukturer
 
@@ -76,8 +76,6 @@ Hvis du vil ha et eksempel på hvordan du kan godtar et produkt, kan du se [Se g
 ## <a name="release-policies"></a>Frigivelsespolicyer
 
 Ikke alle driftsfirmaer trenger de samme produktdataene. Vanligvis vil driftsfirmaer som produserer tekniske produkter, kreve en stykkliste, mens driftsfirmaet som bare selger tekniske produkter, ikke krever en stykkliste. Du kan bruke frigivelsespolicyer til å fastsette parameterne som brukes til frigivelsen av produkter.
-
-For tekniske produkter tilordnes frigivelsespolicyen i kategorien for teknisk produkt, og feltet er obligatorisk. For standardprodukter tilordnes policyen til det delte produktet, og feltet er valgfritt.
 
 Hvis du vil ha mer informasjon om kategorier for teknisk produkt, kan du se [Utviklingsversjoner og utviklingsproduktkategorier](engineering-versions-product-category.md).
 
@@ -159,3 +157,6 @@ Denne virkemåten gjelder bare når et produkt velges direkte for frigivelse. Pr
 Produkt X er for eksempel tilordnet til produkteiergruppen *Designkabinetter*. Produkt X er også en del av stykklisten for produkt Y, som er tilordnet til produkteiergruppen *Designhøyttalere*. Hvis en bruker fra produkteiergruppen *Designhøyttalere* frigir produkt Y og stykklisten, blir produkt X frigitt sammen med produkt Y.
 
 Hvis du vil ha mer informasjon, kan du se [Produkteiere](product-owner.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

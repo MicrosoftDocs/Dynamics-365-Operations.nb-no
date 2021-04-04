@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-5-7
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 8e67a6faf52b51264555b06f56b289d19ca580d6
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 39583c244f09f54551d560e8b1dd9f1a5a1590cc
+ms.sourcegitcommit: 72f70c81176e86cda714a4712525f73514c895b7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4992576"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "5457335"
 ---
 # <a name="troubleshoot-planning-optimization"></a>Feilsøke planleggingsoptimalisering 
 
@@ -49,12 +49,6 @@ Planleggingsoptimalisering er forskjellig fra den innebygde hovedplanleggingsutf
 
 **Løsning**: Kjør analyse for tilpassing av planleggingsoptimalisering, og analyser deretter resultatene ved henvisning til den relaterte dokumentasjonen for å forstå virkningen. Hvis du vil ha mer informasjon, se [Tilpassingsanalyse av planleggingsoptimalisering](planning-optimization-fit-analysis.md).
 
-## <a name="master-planning-doesnt-respect-the-coverage-time-fence"></a>Hovedplanlegging respekterer ikke dekningshorisonten
-
-Dette skyldes en ventende funksjon for planleggingsoptimalisering.
-
-**Løsning**: Inntil den ventende funksjonen er tilgjengelig, kan du filtrere eller slette planlagte ordrer for å fjerne forsyningsforslag utenfor dekningshorisonten.
-
 ## <a name="cant-enable-planning-optimization"></a>Kan ikke aktivere planleggingsoptimalisering
 
 **Tilkoblingsstatusen** må være **Tilkoblet** før du kan sette **Bruk planleggingsoptimalisering** til **Ja**. Hvis du vil ha mer informasjon, se [Kom i gang med planleggingsoptimalisering](get-started.md).
@@ -74,3 +68,6 @@ Dette er knyttet til en ventende funksjon som er planlagt som en del av støtten
 [Komme i gang med planleggingsoptimalisering](get-started.md)
 
 [Analyse for tilpassing av planleggingsoptimalisering](planning-optimization-fit-analysis.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

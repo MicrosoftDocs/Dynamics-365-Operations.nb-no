@@ -3,7 +3,7 @@ title: Komme i gang med tjenesteadministrasjon for tillegget for Elektronisk fak
 description: Dette emnet beskriver hvordan du kommer i gang med tillegget Elektronisk fakturering.
 author: gionoder
 manager: AnnBe
-ms.date: 01/28/2021
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 111ec65aa826795125d4a9ce835f72e1a0f41b7b
-ms.sourcegitcommit: e88c96d1cb817a22db81856cadb563c095ab2671
+ms.openlocfilehash: 05b00380cec7511adad2467d3f252799a4aaee5c
+ms.sourcegitcommit: 543772ee97efe215cf6f2ec6e092cc1568919f20
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "5104418"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "5592532"
 ---
 # <a name="get-started-with-electronic-invoicing-add-on-service-administration"></a>Komme i gang med tjenesteadministrasjon for tillegget for Elektronisk fakturering
 
@@ -35,7 +35,7 @@ ms.locfileid: "5104418"
 Før du kan fullføre trinnene i dette emnet må følgende forutsetninger være på plass:
 
 - Du må ha tilgang til kontoen for Microsoft Dynamics Lifecycle Services (LCS).
-- Du må ha et LCS-prosjekt som inkluderer versjon 10.0.13 eller senere av Microsoft Dynamics 365 Finance og Dynamics 365 Supply Chain Management. I tillegg må disse appene distribueres i én av følgende Azure-geografier:
+- Du må ha et LCS-prosjekt som inkluderer versjon 10.0.17 eller senere av Microsoft Dynamics 365 Finance og Dynamics 365 Supply Chain Management. I tillegg må disse appene distribueres i én av følgende Azure-geografier:
 
     - USA øst
     - USA vest
@@ -52,6 +52,13 @@ Før du kan fullføre trinnene i dette emnet må følgende forutsetninger være 
 2. Velg flisen **Administrasjon av forhåndsvisningsfunksjoner**.
 3. Velg delen **Funksjoner i offenlig forhåndsversjon** velger du **E-faktureringstjeneste**.
 4. Kontroller at alternativet **Forhåndsversjon aktivert** er satt til **Ja**.
+5. Velg LCS-distribusjonsprosjektet på LCS-instrumentbordet. LCS-prosjektet må kjøre.
+7. I fanen **Miljøtillegg** velger du **Installer et nytt tillegg**.
+8. Velg **e-faktureringstjenester**, og i feltet **ID for AAD-program** angir du **091c98b0-a1c9-4b02-b62c-7753395ccabe**. Dettee er en fast verdi.
+10. I feltet **AAD-leier-ID** angir du leier-IDen for kontoen for Azure-abonnementet.
+11. Gå gjennom vilkårene og betingelsene og merk deretter av i avmeringsboksen.
+12. Velg **Installer**.
+
 
 ## <a name="set-up-the-parameters-for-rcs-integration-with-the-electronic-invoicing-add-on"></a>Konfigurere parametere for RCS-integrasjon med Elektronisk fakturering-tillegget
 
@@ -73,7 +80,7 @@ Før du kan fullføre trinnene i dette emnet må følgende forutsetninger være 
 ## <a name="create-key-vault-secret"></a>Opprette Key Vault-hemmelighet
 
 1. Logg på RCS-kontoen.
-2. I **Globaliseringsfunksjon**-arbeidsområdet i delen **Miljø** velger du flisen **E-fakturering**.
+2. I arbeidsområdet **Globaliseringsfunksjon** velger du tittelen **Tillegg for elektronisk fakturering** i delen **Miljø**.
 3. På siden for **Miljøkonfigurasjon**, i handlingsruten, velger du **Tjenestemiljø**, og deretter velger du **Key Vault-parametere**.
 4. Velg **Ny** for å opprette en Key Vault-nøkkel.
 5. I **Navn**-feltet angir du navnet på Key Vault-hemmeligheten. Angi en beskrivelse i **Beskrivelse**-feltet.
@@ -82,22 +89,31 @@ Før du kan fullføre trinnene i dette emnet må følgende forutsetninger være 
 
 ## <a name="create-storage-account-secret"></a>Opprette hemmelighet for lagringskonto
 
-1. Velg **Legg til** på siden **Nøkkelhvelvparametere** i delen **Sertifikater**.
-2. I **Navn**-feltet angir du navnet på lagringskontohemmeligheten. Angi en beskrivelse i **Beskrivelse**-feltet.
-3. I feltet **Type** velger du **Sertifikat**.
-4. Velg **Lagre**, og lukk deretter siden.
+1. Gå til **Systemadministrasjon** > **Oppsett** > **Key Vault-parametere**, og velg en Key Vault-hemmelighet.
+2. Velg **Legg til** i delen **Sertifikater**.
+3. I feltet **Navn** angir du navnet på lagringskontonavnet og en beskrivelse i feltet **Beskrivelse**.
+4. I feltet **Type** velger du **Sertifikat**.
+5. Velg **Lagre**, og lukk deretter siden.
+
+## <a name="create-a-digital-certificate-secret"></a>Opprette et digitalt sertifikat og opprette et digitalt sertifikat
+
+1. Gå til **Systemadministrasjon** > **Oppsett** > **Key Vault-parametere**, og velg en Key Vault-hemmelighet.
+2. Velg **Legg til** i delen **Sertifikater**.
+3. I feltet **Navn** angir du navnet på den digitale sertifikathemmeligheten, og i feltet **Beskrivelse** angir du en beskrivelse.
+4. I feltet **Type** velger du **Sertifikat**.
+5. Velg **Lagre**, og lukk deretter siden.
 
 ## <a name="create-an-electronic-invoicing-add-on-environment"></a>Opprette et miljø for tillegget Elektronisk fakturering
 
 1. Logg på RCS-kontoen.
-2. I **Globaliseringsfunksjon**-arbeidsområdet i delen **Miljø** velger du flisen **E-fakturering**.
+2. I arbeidsområdet **Globaliseringsfunksjon** velger du tittelen **Tillegg for elektronisk fakturering** i delen **Miljø**.
 
 ## <a name="create-a-service-environment"></a>Opprette et tjenestemiljø
 
 1. Velg **Tjenestemiljø** på siden **Miljøoppsett** i handlingsruten.
 2. Velg **Ny** for å opprette et nytt tjenestemiljø.
 3. I **Navn**-feltet angir du navnet på e-fakturamiljøet. Angi en beskrivelse i **Beskrivelse**-feltet.
-4. I feltet **Lagring av for SAS-tokenhemmelighet** velger du navnet på sertifikatet som må brukes til å godkjenne tilgang til lagringskontoen.
+4. I feltet **Lagring av for SAS-tokenhemmelighet** velger du navnet på lagringskontohemmeligheten som må brukes til å godkjenne tilgang til lagringskontoen.
 5. I **Brukere**-delen velger du **Legg til** for å legge til en bruker som har tillatelse til å sende elektroniske fakturaer gjennom miljøet og også koble seg til lagringskontoen.
 6. I **Bruker-ID**-feltet angir du aliaset til brukeren. Angi brukerens e-postadresse i feltet **E-post**.
 7. Velg **Lagre**.
@@ -150,3 +166,6 @@ Før du kan fullføre trinnene i dette emnet må følgende forutsetninger være 
 
 3. I **Miljø**-feltet angir du navnet på miljøet for tillegget Elektronisk fakturering.
 4. Velg **Lagre**, og lukk deretter siden.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

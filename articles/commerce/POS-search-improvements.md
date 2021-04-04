@@ -3,7 +3,7 @@ title: Produkt- og kundesøk på salgssted
 description: Dette emnet gir en oversikt over forbedringer som har blitt gjort for produkt- og kundesøkfunksjonalitet i Dynamics 365 Commerce.
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 07/28/2020
+ms.date: 03/10/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-retail
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 1de8373471ff8187bd476305c9ed0b26beaa52d5
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 23b556e72e1ec76be48336bed21d02abd9d31087
+ms.sourcegitcommit: db9b35ce6968cad8874b3c13d4c02d84e2617c8b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965284"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "5574725"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Produkt- og kundesøk på salgssted
 
@@ -47,13 +47,10 @@ Et lokalt produktsøk søker i følgende produktegenskaper:
 - beskrivelse
 - Dimensjoner
 - Strekkode
-- Søkenavn
+- Søk etter navn
 
-### <a name="enhancements-to-local-product-searches"></a>Forbedringer til lokalt produktsøk
+### <a name="additional-local-product-search-capabilities"></a>Flere funksjoner for lokalt produktsøk
 
-Opplevelsen for lokale produktsøk er nå mer brukervennlig. Følgende forbedringer er gjort:
-
-- Rullegardinmenyer for produkt og kunde er lagt til i søkefeltet, slik at ansatte kan velge enten **Produkt** eller **Kunde** før de gjør søket. Som standard er **Produkt** valgt, som vist i følgende illustrasjon.
 - For søk med flere søkeord kan forhandlere konfigurere om søkeresultatene skal inneholde resultater som samsvarer med et *hvilket som helst* søkeord, eller bare resultater som samsvarer med *alle* søkeordene. Innstillingen for denne funksjonaliteten er tilgjengelig i POS-funksjonalitetsprofilen, i en ny gruppe kalt **Produktsøk**. Standardinnstillingen er **Match et hvilket som helst søkeord**. Dette er også den anbefalte innstillingen. Når **Samsvar alle søkeord**-innstillingen brukes, returneres alle produkter som helt eller delvis samsvarer med ett eller flere søkeord. Disse resultatene sorteres automatisk i stigende rekkefølge for produkter som har de fleste nøkkelordtreffene (fullstendig eller delvis).
 
     Innstillingen **Match alle søkeord** gir bare produkter som matcher alle søkeordene (helt eller delvis). Denne innstillingen er nyttig når produktnavnene er lange, og ansatte vil bare se begrensede produkter i søkeresultatene. Denne typen søk har imidlertid to begrensninger:
@@ -61,7 +58,7 @@ Opplevelsen for lokale produktsøk er nå mer brukervennlig. Følgende forbedrin
     - Søket er gjort på individuelle produktegenskaper. For eksempel returneres kun produkter som har alle søkte søkeord i minst én produktegenskap.
     - Det søkes ikke i dimensjoner.
 
-- Forhandlere kan nå konfigurere produktsøk for å vise søkeforslag når brukere skriver inn produktnavn. En ny innstilling for denne funksjonaliteten er tilgjengelig i POS-funksjonalitetsprofilen, i en gruppe som heter **Produktsøk**. Innstillingen heter **Vis søkeforslag under skriving**. Denne funksjonaliteten kan hjelpe ansatte å raskt å finne produktet de søker etter, fordi de ikke trenger å skrive hele navnet manuelt.
+- Forhandlere kan konfigurere produktsøk for å vise søkeforslag når brukere skriver inn produktnavn. En ny innstilling for denne funksjonaliteten er tilgjengelig i POS-funksjonalitetsprofilen, i en gruppe som heter **Produktsøk**. Innstillingen heter **Vis søkeforslag under skriving**. Denne funksjonaliteten kan hjelpe ansatte å raskt å finne produktet de søker etter, fordi de ikke trenger å skrive hele navnet manuelt.
 - Produktsøkalgoritmen søker nå også etter de søkevilkårene i **Søkenavn**-egenskapen for produktet.
 
 ![Produktforslag](./media/Productsuggestions.png "Produktforslag")
@@ -86,18 +83,18 @@ For å søke globalt, kan medarbeidere velge knappen **Filterresultater** neders
 > [!NOTE]
 > Du må angi minst fire tegn for et eksternt kundesøk for å returnere resultater.
 
-I et eksternt kundesøk vises ikke kunde-ID for kunder fra de andre juridiske enhetene, fordi det ikke er opprettet noen kunde-ID for disse partene i det nåværende selskapet. Men hvis en medarbeider åpner kundedetaljersiden, genererer systemet automatisk en kunde-ID for denne parten, og forbinder også butikkens kundeadressebøker med kunden. Derfor vil kunden være synlig i lokale butiksøk som gjøres senere.
+Kunde-ID-en vises ikke for kunder som ble spurt fra andre juridiske enheter, fordi det ikke er opprettet noen kunde-ID for disse partene i det nåværende selskapet. Men hvis en medarbeider åpner kundedetaljersiden, genererer systemet automatisk en kunde-ID for denne parten, og forbinder også butikkens kundeadressebøker med kunden. Derfor vil kunden være synlig i lokale butiksøk som gjøres senere.
 
 ![Globalt kundesøk](./media/Globalcustomersearch.png "Globalt kundesøk")
 
-### <a name="enhancements-to-local-customer-search"></a>Forbedringer for lokalt kundesøk
+### <a name="additional-local-customer-search-capabilities"></a>Flere funksjoner for lokalt kundesøk
 
-Søk som er basert på telefonnummeret, er forenklet. Disse søkene ignorerer nå spesialtegn, for eksempel mellomrom, bindestreker og parenteser, som kan ha blitt lagt til da kunden ble opprettet. Kasserere trenger derfor ikke tenke på telefonnummerformatet når de søker. For eksempel, hvis en kundes telefonnummer ble oppgitt som **123-456-7890**, kan en kasserere søke etter kunden ved å skrive **1234567890** eller ved å skrive inn de første tallene i telefonnummeret.
+Når brukeren søker etter et telefonnummer, ignorerer systemet spesialtegn (for eksempel mellomrom, bindestreker og parenteser) som kan ha blitt lagt til da kunden ble opprettet. Kasserere trenger derfor ikke tenke på telefonnummerformatet når de søker. For eksempel, hvis en kundes telefonnummer ble oppgitt som **123-456-7890**, kan en kasserere søke etter kunden ved å skrive **1234567890** eller ved å skrive inn de første tallene i telefonnummeret.
 
 > [!NOTE]
 > En kunde kan ha flere telefonnumre og flere e-postadresser. Algoritmen for kundesøk søker også gjennom disse sekundære e-postadressene og telefonnumrene, men siden med kundesøkresultatene viser bare primær e-postadresse og telefonnummer. Dette kan føre til litt forvirring når de returnerte kunderesultatene ikke viser e-postadressen eller telefonnummeret du har søkt etter. I en fremtidig utgivelse har vi tenkt å forbedre skjermen for kundesøkresultater for å vise denne informasjonen.
 
-Det vanlige kundesøket kan være tidkrevende fordi det søker i flere felt. I stedet kan kasserere nå søke i en enkelt kundeegenskap, for eksempel navn, e-postadresse eller telefonnummer. Egenskapene som kundesøkealgoritmen bruker, kalles *kundesøkekriterier*. Systemadministratoren kan lett konfigurere ett eller flere kriterier som snarveier som vises i POS. Ettersom søket er begrenset til ett kriterium, vises bare de relevante søkeresultatene, og ytelsen er mye bedre ut enn ytelsen til et standard kundesøk. Illustrasjonen nedenfor viser kundesøksnarveiene i POS.
+Det vanlige kundesøket kan være tidkrevende fordi det søker i flere felt. I stedet kan kasserere søke i en enkelt kundeegenskap, for eksempel navn, e-postadresse eller telefonnummer. Egenskapene som kundesøkealgoritmen bruker, kalles *kundesøkekriterier*. Systemadministratoren kan lett konfigurere ett eller flere kriterier som snarveier som vises i POS. Ettersom søket er begrenset til ett kriterium, vises bare de relevante søkeresultatene, og ytelsen er mye bedre ut enn ytelsen til et standard kundesøk. Illustrasjonen nedenfor viser kundesøksnarveiene i POS.
 
 ![Snarveier for kundesøk](./media/SearchShortcutsPOS.png "Snarveier for kundesøk")
 
@@ -113,10 +110,46 @@ Når du skal angi søkekriterier som snarveier, må administratoren åpne **Hand
 > [!NOTE]
 > En egendefinert egenskap som legges til opplistingen, påvirker ikke standard kundesøkalgoritme. Med andre ord kundesøkalgoritmen søker ikke i den egendefinerte egenskapen. Brukere kan bare bruke en egendefinert egenskap for søk hvis den egendefinerte egenskapen legges til som snarvei, eller hvis standard søkealgoritme overstyres.
 
-I en kommende utgave av Commerce kan forhandlere sette standard kundesøkemodus i Salgssted til **Søk i alle butikker**. Denne konfigurasjonen kan være nyttig i scenarier der kunder som ble opprettet utenfor Salgssted, umiddelbart må søkes etter (for eksempel til og med før datadistribusjonsjobben kjøres). Det nye alternativet **Standard kundesøkemodus** blir tilgjengelig i funksjonalitetsprofilen for salgssted. Sett den til **På** for å angi standard søkemodus til **Søk i alle butikker**. Hvert forsøk på kundesøk foretar deretter et sanntidskall til hovedkvarteret.
+Forhandlere kan også sette standard kundesøkemodus i POS til **Søk i alle butikker**. Denne konfigurasjonen kan være nyttig i scenarier der kunder som ble opprettet utenfor Salgssted, umiddelbart må søkes etter (for eksempel til og med før datadistribusjonsjobben kjøres). Hvis du vil gjøre dette, må forhandleren aktivere alternativet **Standard kundesøkemodus** i POS-funksjonalitetsprofilen. Når alternativet er satt til **Ja**, vil hvert forsøk på kundesøk deretter foreta et sanntidskall til hovedkvarteret.
 
 For å unngå uventede ytelsesproblemer er denne konfigurasjonen skjult bak et testversjoneringsflagg kalt **CUSTOMERSEARCH_ENABLE_DEFAULTSEARCH_FLIGHTING**. For å vise innstillingen **Standard kundesøkemodus** i brukergrensesnittet må forhandleren opprette en støtteforespørsel for dets testemiljø for brukeraksept (UAT) og produksjonsmiljø. Etter at forespørselen er mottatt, samarbeider teknikerteamet med forhandleren for å sikre at forhandleren foretar testing i ikke-produksjonsmiljøene for å vurdere ytelsen og implementere eventuelle optimaliseringer som trengs.
 
+## <a name="cloud-powered-customer-search"></a>Skybasert kundesøk
 
+Offentlig forhåndsvisning av funksjonen for kundesøk ved hjelp av tjenesten Azure Cognitive Search er frigitt som en del av Commerce 10.0.18-versjonen. I tillegg til ytelsesforbedringer drar også brukere av tjenesten nytte av omfattende justeringer og forbedrede relevansfunksjoner. Ytelsesforbedringene er spesielt innlysende når den globale søkefunksjonen (Søk i alle butikker) av POS-en brukes. Dette skyldes at søkeresultater hentes fra søkeindeksen for Azure i stedet for spørringer fra dataene i Commerce Headquarters. 
+
+### <a name="enable-the-cloud-powered-search-feature"></a>Aktivere den skydrevne søkefunksjonen
+
+> [!NOTE]
+> Det kreves at både Commerce Headquarters og Commerce Scale Unit oppdateres til versjon 10.0.18. Det er ikke nødvendig å oppdatere POS-et.
+
+Hvis du vil aktivere funksjonen for skybasert søk i Commerce Headquarters, gjør du følgende.
+
+1. Gå til **Systemadministrasjon \> Arbeidsområder \> Funksjonsbehandling**.
+1. Finn og velg funksjonen **(Forhåndsversjon) Skybasert kundesøk**, og deretter velger du **Aktiver nå**.
+1. Gå til **Detaljhandel og handel > Hovedkvarteroppsett > Handelsplanlegger > Initialiser handelsplanlegger** og velg **OK** for å vise den nye jobben **1010_CustomerSearch** i skjemaet **Distribusjonsplan**.
+1. Gå til **Detaljhandel og handel > IT for Detaljhandel og handel > Distribusjonsplan**.
+1. Kjør jobben **1010_CustomerSearch**. Denne jobben publiserer datoen til søkeindeksen i Azure. Når publiseringen av indeksen er fullført, settes statusen for jobben til **Brukt**.
+1. Etter at statusen for jobben **1010_CustomerSearch** er satt til **Brukt**, kjører du jobben **1110 – Global konfigurasjon** for å oppdatere POS-kanaler for den nylig aktiverte funksjonen i **Funksjonsstyring**.
+1. Deretter kjører du jobben **1010_CustomerSearch** med regelmessige intervaller for å sende kundeoppdateringer til søkeindeksen.
+
+> [!NOTE]
+> Når det gjelder publisering av den innledende indeksen, kan det hende jobben **1010_CustomerSearch** tar noen timer å fullføre, ettersom den vil sende alle kundepostene til søkeindeksen for Azure. Etterfølgende oppdateringer tar et par minutter. Når den skydrevne søkefunksjonen er aktivert, men indekspubliseringen ennå ikke er fullført, vil kundesøket fra POS som standard bruke det eksisterende SQL-baserte søket. Dette sikrer at det ikke er noen avbrytelser i butikkoperasjonene.
+
+### <a name="functional-differences-from-the-existing-search"></a>Funksjonelle forskjeller fra det eksisterende søket
+
+Listen nedenfor viser hvordan funksjonaliteten for skybasert kundesøk er forskjellig fra den eksisterende søkefunksjonaliteten. 
+
+- Kunder som opprettes og redigeres i Commerce Headquarters, sendes til søkeindeksen for Azure når jobben **1010_CustomerSearch** kjøres. Det tar minst 15 til 20 minutter å oppdatere indeksen. POS-brukere kan søke etter nye kunder (eller søke basert på oppdatert informasjon) omtrent 15 til 20 minutter etter at oppdateringene skjer i Commerce Headquarters. Hvis forretningsprosessen krever at kunder som opprettes i Commerce Headquarters, umiddelbart kan søke i POS, er dette kanskje ikke den riktige tjenesten for deg.
+- Nye kunder som opprettes i POS, sendes til søkeindeksen for Azure fra Commerce Scale Unit, og kan umiddelbart søkes i alle butikker. Hvis funksjonen for oppretting av Async-kunde imidlertid er aktivert, vil ikke nye kundeposter bli publisert til søkeindeksen for Azure fra Commerce Scale Unit, og de vil ikke være søkbare fra POS før kundeinformasjonen er synkronisert med Commerce Headquarters og kunde-ID-er er generert for Async-kunder. Jobben **1010_CustomerSearch** vil da kunne sende Async-kundepostene til søkeindeksen for Azure. I gjennomsnitt går det ca. 30 minutter før du kan søke etter nyopprettede Async-kunder i POS. Dette estimatet forutsetter at jobbene **1010_CustomerSearch**, **P-job** og **Synkroniser kunder og forretningspartnere fra asynkron modus** blir planlangt til å kjøre hvert 15. minutt.
+- Skydrevne søk søker også etter de sekundære e-postene og telefonnumrene til kundene, men kundenes søkeresultater vises i øyeblikket bare det primære telefonnummeret og den primære e-postadressen til kundene. Ved første blikk kan det bekrefte at det er returnert relevante søkeresultater, men hvis du kontrollerer den sekundære e-postmeldingen og telefonnummeret til en kunde i søkeresultater, kan du bekrefte om du har søkt etter nøkkelord som føres i en kundesvar. For å unngå slik forvirring har vi planer om å forbedre søkeresultatsiden for å gjøre det enkelt for brukerne å forstå hvorfor et søkeresultat ble returnert.
+- Kravet om å søke med minst fire tegn i et globalt søk ("Søk i alle butikker") gjelder ikke for denne tjenesten.
+
+> [!NOTE]
+> Funksjoner for kundesøk ved hjelp av tjenesten Azure Cognitive Search, er tilgjengelig i begrensede områder for forhåndsvisning. Funksjonen for kundesøk er *ikke* tilgjengelig i følgende områder:
+> - Brasil
+> - India
+> - Canada
+> - Storbritannia
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

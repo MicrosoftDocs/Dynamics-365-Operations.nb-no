@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ec952f8c121f97396c135d10258a6431e8f2257e
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: e3412f446fe9fb8e3c2ca5407b22680dec3c3b82
+ms.sourcegitcommit: 75b432ce9019c81253eb6bd865db905701e28a26
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113769"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "5579337"
 ---
 # <a name="whats-new-or-changed-in-human-resources"></a>Nyheter eller endringer i Human Resources
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Annenhver uke utgir vi en ny versjon for Microsoft Dynamics 365 Human Resources. Emnene som er oppført her, beskriver endringene som er gjort hver frigivelse.
 
@@ -49,9 +51,11 @@ Hvis du vil ha mer informasjon om kommende funksjoner eller oppdateringsprosesse
 
 Hvis du vil finne ut hva som er nytt eller endret i hver utgivelse av Human Resources annenhver uke, kan du se følgende artikler:
 
+[8. mars 2021](hr-whats-new-2021-03-08.md)</br>
+[22. februar 2021](hr-whats-new-2021-02-22.md)</br>
 [28. januar 2021](hr-whats-new-2021-01-28.md)</br>
 [21. januar 2021](hr-whats-new-2021-01-21.md)</br>
-[02. desember 2020](hr-whats-new-2020-12-02.md)</br>
+[2. desember 2020](hr-whats-new-2020-12-02.md)</br>
 [22. oktober 2020](hr-whats-new-2020-10-22.md)</br>
 [16. september 2020](hr-whats-new-2020-09-16.md)</br>
 [3. september 2020](hr-whats-new-2020-09-03.md)</br>
@@ -81,3 +85,6 @@ Hvis du vil finne ut hva som er nytt eller endret i hver utgivelse av Human Reso
 [Oversikt over lanseringsbølge 2 i 2020 for Dynamics 365 Human Resources](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)</br>
 [Oppdatere prosess](hr-admin-setup-update-process.md)</br>
 [Behandle funksjoner](hr-admin-manage-features.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

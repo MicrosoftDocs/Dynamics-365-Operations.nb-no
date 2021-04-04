@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 19c7de1436b2fe4a859ac20d3db1fefa445a115f
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: a1cf4072cb873ebbf4e0e46f16771458e436bcac
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4991871"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5243111"
 ---
 # <a name="synchronize-sales-quotation-headers-and-lines-directly-from-sales-to-supply-chain-management"></a>Synkronisere salgstilbudshoder og -linjer direkte fra Sales til Supply Chain Management
 
@@ -60,7 +60,7 @@ Følgende synkroniseringsoppgaver er påkrevd før synkronisering av salgstilbud
 
 ## <a name="entity-set"></a>Enhetssett
 
-| Salg        | Forsyningskjedeadministrasjon     |
+| Salg        | Supply Chain Management     |
 |--------------|----------------------------|
 | Tilbud       | Dataverse-salgstilbudshode |
 | QuoteDetails | Dataverse-salgstilbudslinjer  |
@@ -142,3 +142,6 @@ Følgende illustrasjoner viser et eksempel på en tilordning av malen i datainte
 
 [Kundeemne til kontanter](prospect-to-cash.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

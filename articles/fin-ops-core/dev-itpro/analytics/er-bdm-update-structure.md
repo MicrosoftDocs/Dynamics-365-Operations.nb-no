@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 11/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERBDWorkspace, ERBDParameters, ERBDTemplateEditor
 audience: Application User, Developer, IT Pro
@@ -17,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-12-01
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: cb0188e372b5f6275472cf040d10bb796eed1858
-ms.sourcegitcommit: 95d2fc0fa7d17d3a96f7969f12c985b018b4ff94
+ms.openlocfilehash: 09813115544701ea3fffb6be06114bcdd63c0ba0
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "4728095"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5570454"
 ---
 # <a name="update-the-structure-of-a-business-document-template"></a>Oppdatere strukturen til en forretningsdokumentmal 
 
@@ -106,3 +105,6 @@ Fullfør følgende prosedyrer i [Oversikt over administrasjon av forretningsdoku
 [Oversikt over elektronisk rapportering (ER)](general-electronic-reporting.md)
 
 [Oversikt over administrasjon av forretningsdokument](er-business-document-management.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

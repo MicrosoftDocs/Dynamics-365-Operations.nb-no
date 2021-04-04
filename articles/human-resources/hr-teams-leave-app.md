@@ -3,7 +3,7 @@ title: Behandle permisjonsforespørsler i Teams
 description: Dette emnet viser hvordan du ber om fridager Dynamics 365 Human Resources-appen i Microsoft Teams.
 author: andreabichsel
 manager: tfehr
-ms.date: 10/28/2020
+ms.date: 02/23/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-human-resources
@@ -18,22 +18,22 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 342106ad09db3a5d9c2dec8ab18e824d70e0f6bf
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 79bded5a241a8d5de1847adff3e663359ce1b26f
+ms.sourcegitcommit: d7c18228256daeefbf6518c3ef82fed4f7dbc161
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5128167"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5571734"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Behandle permisjonsforespørsler i Teams
 
-[!include [banner](includes/preview-feature.md)]
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Med Microsoft Dynamics 365 Human Resources-appen i Microsoft Teams kan du raskt be om fridager og vise saldoinformasjon for fridager i Microsoft Teams. Du kan samhandle med en robot for å be om informasjon og starte en permisjonsforespørsel. Kateogrien **Fridager** gir mer detaljert informasjon. Du kan også sende personinformasjon om kommende fritid i grupper og samtaler utenfor Human Resources-appen.
+Med Dynamics 365 Human Resources-appen i Microsoft Teams kan du raskt be om fridager og vise saldoinformasjon for fridager i Microsoft Teams. Du kan samhandle med en robot for å be om informasjon og starte en permisjonsforespørsel. Kateogrien **Fridager** gir mer detaljert informasjon. Du kan også sende personinformasjon om kommende fritid i Teams og samtaler utenfor Human Resources-appen.
 
 ## <a name="install-the-app"></a>Installere appen
 
-Du kan finne Human Resources-appen i Teams-butikken.
+Du finner Dynamics 365 Human Resources-appen i Teams-butikken.
 
 1. I Microsoft Teams klikker du på ellipsene.
 
@@ -70,29 +70,21 @@ Når appen er installert, vises det en velkomstmelding med informasjon om hvilke
 
 Du kan be roboten om å:
 
-- Vise saldoinformasjon om fridager for hver permisjonstype du er registrert i.
-
-   ![Vise saldoer i permisjonsapp for Human Resources Teams](./media/hr-teams-leave-app-bot-balances.png)
- 
-- Vise flere detaljer om en bestemt permisjonstype.
-
-   ![Vise detaljer i permisjonsapp for Human Resources Teams](./media/hr-teams-leave-app-bot-details.png)
-
 - Starte en permisjonsforespørsel for deg.
 
-   ![Be om permisjon i permisjonsapp for Human Resources Teams](./media/hr-teams-leave-app-bot-request.png)
- 
-Når du har startet en permisjonsforespørsel, kan du justere dagene mot høyre i kortet.
+  ![Starte en permisjonsforespørsel i Teams-samtaler](./media/hr-teams-leave-app-initiate.png)
 
-![Redigering av forespørsel i permisjonsapp for Human Resources Teams](./media/hr-teams-leave-app-bot-edit.png)
- 
-Når du er ferdig med å angi informasjon, velger du **Send** for å sende den til godkjenning. Du kan også velge **Lagre som utkast** for å komme tilbake til den senere.
+- Samtalen fylles ut en permisjonsforespørsel for deg. Velg **Be om fravær** og rediger detaljene for forespørselen.
 
-![Innsending av forespørsel i permisjonsapp for Human Resources Teams](./media/hr-teams-leave-app-bot-submit.png)
+  ![Redigere detaljer for permisjonsforespørsel](./media/hr-teams-leave-app-details.png)
+
+- Når du er ferdig med å redigere detaljene for permisjonsforespørselen, velger du **Send** for å sende den til godkjenning.
+
+  ![Sende permisjonsforespørsel](./media/hr-teams-leave-app-submit.png)
 
 ## <a name="manage-your-leave-in-teams"></a>Behandle permisjonen i Teams
 
-I kategorien **Fridager** kan du vise:
+I kategorien **Fridager** kan du vise: 
 
 - Saldoinformasjon om fridager for hver permisjonstype du er registrert i
 
@@ -164,21 +156,51 @@ Hvis du er leder med direkterapporter, kan du vise gruppens godkjente og uavslut
 
 1. I Human Resources-appen i Teams velger du **Fritid**.
 
-2. Velg **Teamkalender**.
+2. Velg **Teamkalender**. Kalenderen viser de godkjente og uavsluttede fritidene for direkterapporter.
 
    ![Vise kalender i Human Resources-app i Teams](./media/hr-teams-leave-app-view-calendar.png)
 
-Kalenderen viser de godkjente og uavsluttede fritidene for direkterapporter.
+   > [!NOTE]
+   > Hvis du ikke kan se gruppekalenderen, ber du administratoren om å aktivere den. Hvis du vil ha mer informasjon, kan du se [Installere og konfigurere](hr-admin-teams-leave-app.md#install-and-setup).
 
-![Fritidskalender i Human Resources-app i Teams](./media/hr-teams-leave-app-calendar.png)
+## <a name="supported-languages"></a>Språk som støttes
+
+Appen Dynamics 365 Human Resources i Teams støtter følgende språk:
+
+| ID for nasjonal innstilling | Språk |
+| --- | --- |
+| de-DE | Tysk (Tyskland) |
+| es-ES | Spansk (Spania) |
+| es-MX | Spansk (Mexico) |
+| fr-CA | Fransk (Canada) |
+| fr-FR | Fransk (Frankrike) |
+| it-IT | Italiensk (Italia) |
+| nl-NL | Nederlandsk (Nederland) |
+| pt-BR | Portugisisk (Brasil) |
+| tr-TR | Tyrkisk (Tyrkia) |
+| zh-CN | Kinesisk (forenklet) |
 
 ## <a name="troubleshooting"></a>Feilsøking
 
-Hvis du har problemer med å logge på eller bruke Human Resources Teams-appen, kan du prøve å følge disse instruksjonene for feilsøking. Hvis du fortsatt har problemer etter feilsøking, kontakter du kundestøtte. For mer informasjon, se [Få kundestøtte](hr-admin-troubleshooting-support.md).
+Hvis du har problemer med å logge på eller bruke Dynamics 365 Human Resources Teams-appen, kan du prøve å følge disse instruksjonene for feilsøking. Hvis du fortsatt har problemer etter feilsøking, kontakter du kundestøtte. For mer informasjon, se [Få kundestøtte](hr-admin-troubleshooting-support.md).
 
 ### <a name="cant-sign-into-the-human-resources-app-in-teams"></a>Kan ikke logge på Human Resources-appen i Teams
 
 Hvis du ikke kan logge på appen, kan det hende at kontoen du bruker til å logge på Microsoft Teams, ikke er tilknyttet en ansattpost i Dynamics 365 Human Resources. Kontakt systemadministrator for å kontrollere at ansattposten er riktig tilknyttet.
+
+### <a name="translations-dont-display-correctly"></a>Oversettelser vises ikke riktig
+
+Hvis oversettelsene ikke vises som forventet, må du kontrollere at språket du velger i Teams, samsvarer med språket som er valgt i **Brukeralternativer** for Human Resources.
+
+I Teams kan du se på **Appspråk** i **Innstillinger**.
+
+![Teams-innstillinger](./media/hr-teams-leave-app-settings.png)
+
+Velg **Innstillinger** og deretter **Brukeralternativer** i Human Resources. Kontroller at feltet **Språk** samsvarer med feltet **Appspråk** i Teams.
+
+![Brukeralternativer for Human Resources](./media/hr-teams-leave-app-user-options.png)
+
+Gi oss beskjed hvis du fremdeles opplever oversettelsesproblemer. Hvis du vil ha informasjon, kan du se [Få støtte for Finance and Operations-apper eller Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-support?toc=/dynamics365/human-resources/toc.json).
 
 ### <a name="error-when-approving-leave-requests-in-the-human-resources-app-in-teams"></a>Feil under godkjenning av permisjonsforespørsler i Human Resources-appen i Teams
 
@@ -194,11 +216,10 @@ Human Resources-appen i Teams har følgende tilgjengelighetsproblemer som vi job
 
 | Problem | Midlertidig løsning eller forklaring |
 | --- | --- |
-| Hvis du zoomer til 400 % på skrivebordet, skjules noen av handlingsknappene fra visningen. | Vi anbefaler bruk av et forstørrelsesprogram i stedet til vi kan støtte dette zoomenivået. |
+| Hvis du zoomer til 400 % på skrivebordet, skjules noen av handlingsknappene fra visningen. | Det anbefales bruk av et forstørrelsesprogram i stedet til vi kan støtte dette zoomenivået. |
 | I fanen **Fridager** annonserer VoiceOver en knappehandling ved å lese toppteksen for fridagerrutenettet. | Toppteksten og elementene i rutenettet er gruppert etter år, og de kan skjules. VoiceOver tolker dette som et handlingselement, men det er ikke det. |
 | I fanen **Fridager** er det en ekstra sveipebevegelse når du navigerer til **Årsakskode** i en ny forespørsel. | Det finnes ingen skjult kontroll som sveipenavigeringen prøver å komme til. |
 | På fanen **Fridager** hvis du sveiper mens kalenderen er åpen, kan du havne utenfor kontrollen i stedet for øverst i en ny forespørsel eller mens du redigerer en forespørsel. | Når du kommer **Gå til i dag**, bør du anse det som slutten på kontrollen, og sveipe i motsatt retning for å komme tilbake toppen. |
-| VoiceOver leser ikke etikettene for datoer. | Datoene som er registrert i par, er alltid **Startdato** og **Sluttdato**. |
 | I fanen **Chat** hopper fokuset tilbake til toppen når du angir en dato ved bruk av hjelpeverktøyet eller tastaturnavigasjonen. | Bruk tabulator til du kommer til inndataområdet igjen. |
 
 ## <a name="privacy-notice"></a>Personvernerklæring
@@ -228,3 +249,6 @@ Hvis du vil begrense tilgangen til Human Resources-appen i Microsoft Teams for o
 [Laste ned og installere Microsoft Teams](https://support.office.com/article/download-and-install-microsoft-teams-422bf3aa-9ae8-46f1-83a2-e65720e1a34d)</br>
 [Hjelpesenter for Microsoft Teams](https://support.office.com/teams)</br>
 [Human Resources-app i Teams](hr-admin-teams-leave-app.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

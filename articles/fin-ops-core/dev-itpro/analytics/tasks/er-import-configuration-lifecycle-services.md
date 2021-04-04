@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 09/14/2020
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionRepositoryTable, ERSolutionImport
 audience: Application User
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 602886b0dd729b8ec52940f42bd1c393dac8acda
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: 636ed27c157c8322cc1be4ca8eca10ef37eb8bbc
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5093701"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5569515"
 ---
 # <a name="import-a-configuration-from-lifecycle-services"></a>Importere en konfigurasjon fra Lifecycle Services
 
@@ -103,3 +102,6 @@ I dette eksemplet skal du velge ønsket versjon av ER-konfigurasjonen og importe
     For dette eksemplet velger du versjonen av konfigurasjonen som har statusen **Delt**.
 
     Legg merke til at delt versjon 1 av den valgte datamodellkonfigurasjonen nå også er tilgjengelig.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -18,12 +17,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2021-01-04
-ms.openlocfilehash: f1478f0246e7f1ff8bd72232cbaf4c2034cf4edb
-ms.sourcegitcommit: 6af7b37b1c8950ad706e684cc13a79e662985b34
+ms.openlocfilehash: 93614e43b108671de686458887c1d6dd6fe04f7a
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "4959852"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5570570"
 ---
 # <a name="migrate-prospect-to-cash-data-from-data-integrator-to-dual-write"></a>Overføre data for Kundeemne til kontanter fra Dataintegrator til dobbel skriving
 
@@ -82,7 +81,7 @@ Siden data fra **Faktura**-tabellen er utformet for å flyte én vei, fra Financ
 1. I **Firma**-kolonnen angir du firmanavnet, for eksempel **USMF**.
 2. Kopier verdien i **Ordre-ID**-kolonnen i CSV-filen til kolonnen **Salgsordrenummer**.
 3. Kopier verdien i **Kunde**-kolonnen i CSV-filen til kolonnen **Kundefakturanummer**.
-4. Kopier verdien i kolonnen **Leveringsland/-område** i CSV-filen til kolonnen **Leveringsland/-område**. Et eksempel på denne verdien er **USA**.
+4. Kopier verdien i kolonnen **Leveringsland/-område** i CSV-filen til kolonnen **Leveringsland/-område**. Eksemple på denne verdien er **US** og **United States**.
 5. Angi kolonnen **Ønsket mottaksdato**. Hvis du ikke bruker en mottaksdato, bruker du kolonnene **Ønsket leveringsdato**, **Fullføringsdato** og **Sendt dato** i CSV-filen. Et eksempel på denne verdien er **2020-03-27T00:00:00Z**.
 6. Angi **Språk**-kolonnen. Et eksempel på denne verdien er **nb-no**.
 7. Angi **Ordretype**-kolonnen ved å bruke **Varebasert**-kolonnen.
@@ -98,3 +97,6 @@ Siden data fra **Produkter**-tabellen er utformet for å flyte én vei, fra Fina
 ## <a name="quote-and-quote-product-tables"></a>Tabellene Tilbud og Tilbudsprodukt
 
 Når det gjelder **Tilbud**-tabellen, følger du instruksjonene i [Ordre-tabellen](#order-table) tidligere i dette emnet. Når det gjelder **Tilbudsprodukt**-tabellen, følger du instruksjonene i [Bestill produkter-tabellen](#order-products-table) tidligere i dette emnet.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

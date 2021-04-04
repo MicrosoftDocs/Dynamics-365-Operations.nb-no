@@ -1,9 +1,9 @@
 ---
 title: Automatisering av innkrevingsprosess
-description: Dette emnet beskriver prosessen med å definere strategier for innkrevingsprosesser som automatisk identifiserer kundefakturaer som krever en e-postpåminnelse, en innkrevingaktivitet (for eksempel en telefonsamtale) eller en purring som skal sendes til kunden.
+description: Dette emnet beskriver prosessen med å definere strategier for innkrevingsprosesser som automatisk identifiserer kundefakturaer som krever en e-postpåminnelse, en innkrevingaktivitet eller en purring som skal sendes til kunden.
 author: panolte
 manager: AnnBe
-ms.date: 08/26/2020
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-26
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: a63058904df72a7fda5a67ed1e6a846eed393ce0
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: a5f5d65f3f757163b22d35c3c99b4d6b7fbdfafb
+ms.sourcegitcommit: 3fe4d9a33447aa8a62d704fbbf18aeb9cb667baa
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969707"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "5582757"
 ---
 # <a name="collections-process-automation"></a>Automatisering av innkrevingsprosess
 
@@ -28,10 +28,12 @@ ms.locfileid: "4969707"
 
 Dette emnet beskriver prosessen med å definere strategier for innkrevingsprosesser som automatisk identifiserer kundefakturaer som krever en e-postpåminnelse, en innkrevingaktivitet (for eksempel en telefonsamtale) eller en purring som skal sendes til kunden. 
 
-Organisasjoner bruker betydelig tid på å undersøke saldorapporter, kundekontoer og åpne fakturaer for å avgjøre hvilke kunder som må kontaktes om en åpen faktura eller kontosaldo. Denne undersøkelsen tar tid fra en innkrevingsagents tid som brukes til å kommunisere med kunder for å samle forfalte forfalte balanser eller løse fakturatvister. Ved hjelp av automatisering av innkrevingsprosess kan du sette opp en strategibasert tilnærming til innkrevingsprosessen. Dette hjelper deg med å bruke innkrevingsaktiviteter konsekvent ved å levere tilpassede e-postpåminnelser eller programmert prosess for å sende purringer. 
+Organisasjoner bruker betydelig tid på å undersøke saldorapporter, kundekontoer og åpne fakturaer for å finne ut hvilke kunder som bør kontaktes om en åpen faktura eller kontosaldo. Denne undersøkelsen tar tid fra en innkrevingsagents tid som brukes til å kommunisere med kunder for å samle forfalte forfalte balanser eller løse fakturatvister. Ved hjelp av automatisering av innkrevingsprosess kan du sette opp en strategibasert tilnærming til innkrevingsprosessen. Dette hjelper deg med å bruke innkrevingsaktiviteter konsekvent ved å levere tilpassede e-postpåminnelser eller programmert prosess for å sende purringer. 
 
 ## <a name="collections-process-setup"></a>Oppsett av innkrevingsprosess
 Du kan bruke siden **Oppsett av innkrevingsprosess** (**Kreditt og innkreving > Setup > Oppsett av innkrevingsprosess**) til å opprette en prosess for automatiserte innkrevinger som vil planlegge aktiviteter, sende e-postmeldinger og opprette og postere kundepurringer. Prosesstrinnene er basert på den ledende eller eldste fakturaen som er åpen. Hvert trinn bruker denne fakturaen for å bestemme hvilken kommunikasjon eller aktivitet som skal skje med en bestemt kunde.  
+
+Innkrevingsteam sender vanligvis ut tidlig varsel knyttet til hver utestående faktura, slik at en kunde blir varslet når fakturaen er i ferd med å forfalle. Valget **Før purring** kan angis slik at ett trinn i hvert prosesshierarki kan gjøres oppmerksom på for hver faktura når fakturatiden når det trinnet.
 
 ### <a name="process-hierarchy"></a>Prosesshierarki
 Hvert kundeutvalg kan bare tilordnes til ett prosesshierarki. Hierarkiets rangering av dette trinnet identifiserer hvilken prosess som vil ha forrang hvis en kunde inkluderes i mer enn ett utvalg som har fått tilordnet et prosesshierarki. Utvalgs-ID-en bestemmer hvilke kunder som skal tilordnes til prosessen. 
@@ -82,6 +84,7 @@ Tabellene nedenfor viser en liste over sidene og feltene som de angitte hurtigka
 |                                                           |     Forretningsdokument                           |     Definerer aktiviteten eller e-postmalen som brukes under prosesstrinnet.                                                                        |
 |                                                           |     Når                                          |     Definerer om prosesstrinnet skal skje før eller etter den ledende forfallsdatoen for fakturaen sammen med feltet **Dager i forhold til fakturaens forfallsdato**.        |
 |                                                           |     Dager i forhold til fakturaens forfallsdato        |     Sammen med feltet **Når** identifiseres tidsberegningen for prosesstrinnet.                                                                          |
+|                                                           |     Varsel om purring                                   |     Med dette valget kan du angi ett trinn per prosesshierarki og kjøre mot hver faktura når tidsmålingskriteriene nås.                                                |
 |                                                           |     Mottaker                                     |     Angir om det skal sendes en e-post til kontakten for kunde, salgsgruppe eller innkrevingsagent.                                                   |
 |                                                           |     Kontakt for forretningsformål                    |     Bestemmer hvilken mottakerens e-postadresse som brukes i e-postkommunikasjon.                                                                                 |
 
@@ -100,7 +103,7 @@ Tabellene nedenfor viser en liste over sidene og feltene som de angitte hurtigka
 ### <a name="collections-history"></a>Innkrevingshistorikk 
 |     Side                              |     Felt     |      Beskrivelse                                                          |
 |------------------------------------   |-------------- |---------------------------------------------------------------------  |
-|     Oppsett av innkrevingsprosess       |               |     Vis den nylige historikken for det valgte prosesshierarkiet.     |
+|     Oppsett av innkrevingsprosess       |               |     Vis den nylige historikken for det valgte prosesshierarkiet.       |
 
 ### <a name="collection-process-assignment"></a>Tilordning for innkrevingsprosess
 |     Side                              |     Felt     |      Beskrivelse                                                  |
@@ -110,10 +113,19 @@ Tabellene nedenfor viser en liste over sidene og feltene som de angitte hurtigka
 |     Forhåndsvis prosesstilordning      |               |     Forhåndsvis kundene som vil bli tilordnet til en strategi når den kjøres.   |
 |     Forhåndsvis kundetilordning     |               |     Vis strategien som en bestemt kunde er tilordnet.    |
  
+ ### <a name="process-simulation"></a>Behandle simulering
+|     Side                              |     Felt     |      beskrivelse                                                  |
+|------------------------------------   |-------------- |-----------------------------------------------------------    |
+|    Behandle simulering                 |               |     Forhåndsvis handlingene som vil bli opprettet hvis den valgte prosessen automatisk kjøres på dette tidspunktet. |
+
 ### <a name="parameters"></a>Parametere
-|     Side                                                                  |     Felt                                             |      Beskrivelse                              |
+|     Side                                                                  |     Felt                                             |      beskrivelse                              |
 |-------------------------------------------------------------------------- |------------------------------------------------------ |-------------------------------------  |
 |     Parametere for kunde > Automatisering av innkrevingsprosess     |     Prosent av kunder per satsvis oppgave          |     Innstilling for å fastslå antall satsvise oppgaver per automatiseringsprosess.                                          |
 |     Parametere for kunde > Automatisering av innkrevingsprosess     |     Poster purringer automatisk           |     Handlingstyper for purringer vil postere purringen i løpet av automatiseringen.                                      |
 |     Parametere for kunde > Automatisering av innkrevingsprosess     |     Opprette aktiviteter for automatisering                |     Opprett og lukk aktiviteter for handlingstyper uten aktivitet hvis du vil vise alle automatiske trinn som er utført på en konto.        |
 |     Parametere for kunde > Automatisering av innkrevingsprosess     |     Dager for å beholde automatisering av innkrevingsprosesser     |     Definerer hvor mange dager det er lagret en innkrevingshistorikk.                                                       |
+|     Parametere for kunde > Automatisering av innkrevingsprosess     |     Utelat faktura etter aktivering av siste prosesstrinn    |     En faktura som kommer til det siste trinnet i innkrevingsprosessen, brukes ikke til å opprette fremtidige handlingstyper for automatisk prosess. Den neste eldste fakturaen vil bestemme neste trinn for automatisk prosess for å sikre at handlingene for innkreving av automatisk behandling fortsetter.                                                        |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

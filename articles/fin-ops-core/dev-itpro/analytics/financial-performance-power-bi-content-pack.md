@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 05/09/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 53dbf90b09ce532731ecaabc45418926da6083d5
-ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
+ms.openlocfilehash: 76f0c35ce9db89dd93292c4e39315a5833f38d54
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "5154367"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5568853"
 ---
 # <a name="financial-performance-powerbicom-solution"></a>Finansresultat for PowerBI.com-løsning
 
@@ -88,3 +87,6 @@ Følgende enheter ble brukt som grunnlag for PowerBI.com-løsningen **finansresu
 - ChartofAccounts
 
 Disse enhetene ble brukt til å opprette beregnede mål i datamodellen. De beregnede målene brukes til å beregne nøkkelytelsesindikatorene (KPI-ene) og rapportene som brukes i innholdet. Som standard henter innholdet data for de siste tre årene og ett år frem. Hvis du vil ta med flere beregninger i rapportene og på instrumentbord, kan du endre [Microsoft Excel-arbeidsboken](https://docs.microsoft.com/dynamics/s-e/). Denne arbeidsboken er standarddatamodellen som ble brukt til å opprette innholdet.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

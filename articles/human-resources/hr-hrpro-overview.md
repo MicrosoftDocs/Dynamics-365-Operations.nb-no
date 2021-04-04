@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 78fddd033c777f5be6408d5e2db691ae966edb3a
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: 38848fe326deb4dd1e63c9f090765e8a0af2f649
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115252"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5467969"
 ---
 # <a name="overview"></a>Oversikt
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Brukerveiledningen for Dynamics 365 Human Resources gir deg instruksjoner om hvordan du konfigurerer Human Resources, definerer personale, definerer kompensasjon og fordeler for de ansatte og administrerer arbeidsstyrken.
 
@@ -127,3 +129,6 @@ Brukerveiledningen for Dynamics 365 Human Resources gir deg instruksjoner om hvo
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
