@@ -6,7 +6,6 @@ manager: kfend
 ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -17,45 +16,48 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5dbba375104b57f9fb09ed4e330d85181ec0dff8
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b689e6d4bb849f07db5d00cf8a9dc5c16646a927
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684889"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5563878"
 ---
-# <a name="isempty-er-function"></a><span data-ttu-id="c0378-103">ISEMPTY ER-funksjon</span><span class="sxs-lookup"><span data-stu-id="c0378-103">ISEMPTY ER function</span></span>
+# <a name="isempty-er-function"></a><span data-ttu-id="92204-103">ISEMPTY ER-funksjon</span><span class="sxs-lookup"><span data-stu-id="92204-103">ISEMPTY ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="c0378-104">`ISEMPTY`-funksjonen returnerer den *boolske* verdien **SANN** hvis den angitte listen ikke inneholder noen poster.</span><span class="sxs-lookup"><span data-stu-id="c0378-104">The `ISEMPTY` function returns a *Boolean* value of **TRUE** if the specified list contains no records.</span></span> <span data-ttu-id="c0378-105">Hvis ikke returneres den *boolske* verdien **USANN**.</span><span class="sxs-lookup"><span data-stu-id="c0378-105">Otherwise, it returns a *Boolean* value of **FALSE**.</span></span>
+<span data-ttu-id="92204-104">`ISEMPTY`-funksjonen returnerer den *boolske* verdien **SANN** hvis den angitte listen ikke inneholder noen poster.</span><span class="sxs-lookup"><span data-stu-id="92204-104">The `ISEMPTY` function returns a *Boolean* value of **TRUE** if the specified list contains no records.</span></span> <span data-ttu-id="92204-105">Hvis ikke returneres den *boolske* verdien **USANN**.</span><span class="sxs-lookup"><span data-stu-id="92204-105">Otherwise, it returns a *Boolean* value of **FALSE**.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="c0378-106">Syntaks</span><span class="sxs-lookup"><span data-stu-id="c0378-106">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="92204-106">Syntaks</span><span class="sxs-lookup"><span data-stu-id="92204-106">Syntax</span></span>
 
 ```vb
 ISEMPTY (list)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="c0378-107">Argumenter</span><span class="sxs-lookup"><span data-stu-id="c0378-107">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="92204-107">Argumenter</span><span class="sxs-lookup"><span data-stu-id="92204-107">Arguments</span></span>
 
-<span data-ttu-id="c0378-108">`list`: *Postliste*</span><span class="sxs-lookup"><span data-stu-id="c0378-108">`list`: *Record list*</span></span>
+<span data-ttu-id="92204-108">`list`: *Postliste*</span><span class="sxs-lookup"><span data-stu-id="92204-108">`list`: *Record list*</span></span>
 
-<span data-ttu-id="c0378-109">Den gyldige banen til en datakilde av *Postliste*-datatypen.</span><span class="sxs-lookup"><span data-stu-id="c0378-109">The valid path of a data source of the *Record list* data type.</span></span>
+<span data-ttu-id="92204-109">Den gyldige banen til en datakilde av *Postliste*-datatypen.</span><span class="sxs-lookup"><span data-stu-id="92204-109">The valid path of a data source of the *Record list* data type.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="c0378-110">Returverdier</span><span class="sxs-lookup"><span data-stu-id="c0378-110">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="92204-110">Returverdier</span><span class="sxs-lookup"><span data-stu-id="92204-110">Return values</span></span>
 
-<span data-ttu-id="c0378-111">*Boolsk*</span><span class="sxs-lookup"><span data-stu-id="c0378-111">*Boolean*</span></span>
+<span data-ttu-id="92204-111">*Boolsk*</span><span class="sxs-lookup"><span data-stu-id="92204-111">*Boolean*</span></span>
 
-<span data-ttu-id="c0378-112">Den resulterende *boolske* verdien.</span><span class="sxs-lookup"><span data-stu-id="c0378-112">The resulting *Boolean* value.</span></span>
+<span data-ttu-id="92204-112">Den resulterende *boolske* verdien.</span><span class="sxs-lookup"><span data-stu-id="92204-112">The resulting *Boolean* value.</span></span>
 
-## <a name="example-1"></a><span data-ttu-id="c0378-113">Eksempel 1</span><span class="sxs-lookup"><span data-stu-id="c0378-113">Example 1</span></span>
+## <a name="example-1"></a><span data-ttu-id="92204-113">Eksempel 1</span><span class="sxs-lookup"><span data-stu-id="92204-113">Example 1</span></span>
 
-<span data-ttu-id="c0378-114">Hvis du angir datakilde **DS** av *Beregnet felt*-typen, og den inneholder uttrykket `SPLIT ("A|B|C", "|")`, genererer uttrykket `ISEMPTY(DS)` **USANN**.</span><span class="sxs-lookup"><span data-stu-id="c0378-114">If you enter data source **DS** of the *Calculated field* type, and it contains the expression `SPLIT ("A|B|C", "|")`, the expression `ISEMPTY(DS)` returns **FALSE**.</span></span>
+<span data-ttu-id="92204-114">Hvis du angir datakilde **DS** av *Beregnet felt*-typen, og den inneholder uttrykket `SPLIT ("A|B|C", "|")`, genererer uttrykket `ISEMPTY(DS)` **USANN**.</span><span class="sxs-lookup"><span data-stu-id="92204-114">If you enter data source **DS** of the *Calculated field* type, and it contains the expression `SPLIT ("A|B|C", "|")`, the expression `ISEMPTY(DS)` returns **FALSE**.</span></span>
 
-## <a name="example-2"></a><span data-ttu-id="c0378-115">Eksempel 2</span><span class="sxs-lookup"><span data-stu-id="c0378-115">Example 2</span></span>
+## <a name="example-2"></a><span data-ttu-id="92204-115">Eksempel 2</span><span class="sxs-lookup"><span data-stu-id="92204-115">Example 2</span></span>
 
-<span data-ttu-id="c0378-116">Uttrykket `ISEMPTY (SPLIT ("",1))` returnerer **SANN**.</span><span class="sxs-lookup"><span data-stu-id="c0378-116">The expression `ISEMPTY (SPLIT ("",1))` returns **TRUE**.</span></span>
+<span data-ttu-id="92204-116">Uttrykket `ISEMPTY (SPLIT ("",1))` returnerer **SANN**.</span><span class="sxs-lookup"><span data-stu-id="92204-116">The expression `ISEMPTY (SPLIT ("",1))` returns **TRUE**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="c0378-117">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="c0378-117">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="92204-117">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="92204-117">Additional resources</span></span>
 
-[<span data-ttu-id="c0378-118">Listefunksjoner</span><span class="sxs-lookup"><span data-stu-id="c0378-118">List functions</span></span>](er-functions-category-list.md)
+[<span data-ttu-id="92204-118">Listefunksjoner</span><span class="sxs-lookup"><span data-stu-id="92204-118">List functions</span></span>](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
