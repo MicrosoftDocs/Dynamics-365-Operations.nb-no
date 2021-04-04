@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 01/04/2021
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERModelMappingTable
 audience: Application User
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3116fe98f499637b3bc7f243ed1b5094853caa7e
-ms.sourcegitcommit: 7cfe8931dd454e811a691f5118a4ecae7ba4b478
+ms.openlocfilehash: bb4fcda42361b0f14e37027d21739dfc42b44cb1
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "4826115"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5565497"
 ---
 # <a name="manage-several-derived-mappings-for-a-single-model-root"></a>Behandle flere avledede tilordninger for én modellrot
 
@@ -182,3 +181,6 @@ Modelltilordningen **InvoiceProject Copy** i konfigurasjonen **Modelltilordning 
 - [Administrere ER-modelltilordning i separate ER-konfigurasjoner](./tasks/er-manage-model-mapping-configurations-july-2017.md)
 - [Konfigurere modelltilordninger for landkontekstavhengig ER](er-country-dependent-model-mapping.md)
 - [Endringer i API-en for rammeverket for elektronisk rapportering](er-apis-app10-0-11.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

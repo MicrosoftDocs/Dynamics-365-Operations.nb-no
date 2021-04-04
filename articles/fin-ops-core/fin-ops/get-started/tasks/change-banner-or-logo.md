@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 06/21/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: OMLegalEntity, DefaultDashboard
 audience: Application User
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 73c66d189035f7bdc302480038c44645eccb50f9
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 6004bafc721a1ceb3ec531d4f222d0ac93e89728
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798076"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5566326"
 ---
 # <a name="change-the-banner-or-logo"></a>Endre banner eller logo
 
@@ -39,3 +38,6 @@ Følgende prosedyre viser hvordan systemansvarlige kan oppdatere banneret eller 
 6. Gå til **Navigasjonsrute > Moduler > Felles > Felles > Standard instrumentbord**. Det nye banner- eller logobildet skal vises på instrumentbordet.  
     
     Du må kanskje endre firmaet til det du lastet opp banneret for, ved hjelp av firmavelgeren.  
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

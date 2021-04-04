@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 01/24/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a7dc365bc2a317b67235f1ad01a4157089e0079d
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 37a079ee98495a27c1462df32f2973b012069ca8
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798935"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5562819"
 ---
 # <a name="configure-approval-processes-in-a-workflow"></a>Konfigurere godkjenningsprosesser i en arbeidsflyt
 
@@ -183,3 +182,6 @@ En godkjenningsprosess består av godkjenningstrinn. Fullfør fremgangsmåten ne
 1. Dobbeltklikk godkjenningsprosessen i redigeringsprogrammet for arbeidsflyt. Redigeringsprogrammet for arbeidsflyt viser trinnene i godkjenningsprosessen.
 2. Hvis du vil legge til et godkjenningstrinn, kan du dra trinnet fra **Arbeidsflytelementer** området til lerretet.
 3. Hvis du vil konfigurere et godkjenningstrinn, kan du se [Konfigurere godkjenningstrinn i en arbeidsflyt](configure-approval-step-workflow.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

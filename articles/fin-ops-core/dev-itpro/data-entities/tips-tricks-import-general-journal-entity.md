@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 04/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8ccb479cf7bcf86c01ed274a7a39856d538f220f
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: adc5ad88b7b58c67154b340f4125b0b89a0cf4d6
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5129605"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5566903"
 ---
 # <a name="importing-vouchers-by-using-the-general-journal-entity"></a>Importere bilag ved å bruke enheten Økonomijournal
 
@@ -65,3 +64,6 @@ Følgende deler beskriver effekten av disse innstillingene. De forklarer også h
 - Hvis feltet **Bilagsnummer** er satt til **Automatisk generert**, kan ikke importen fullføres. Innstillingen **Automatisk generert** for feltet **Bilagsnummer** støttes ikke.
 
 Økonomijournal-enheten bruker settbasert behandling som standard. Når du evaluerer forretningskravene for organisasjonen, kan du endre innstillingen **Settbasert behandling** ved å klikke **Dataenheter** i arbeidsområdet **Databehandling**. Settbasert behandling brukes til å øke hastigheten på importprosessen. Hvis du ikke bruker settbasert behandling, vil import av Økonomijournal-enheten være langsommere.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
