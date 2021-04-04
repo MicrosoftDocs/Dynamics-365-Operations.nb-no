@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 03/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -18,12 +17,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 3ffeb2de0acc1761bccf62a1a124852c504e2a3a
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 9bff8ad0c5716648dec6eadfb21412a2b17f155e
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5131251"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5561232"
 ---
 # <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>Feilsøke problemer med dobbel skriving i Finance and Operations-apper
 
@@ -87,3 +86,6 @@ Hurtigreparasjonen for denne feilen er avhengig av årsaken til feilen:
 
 + Hvis tilordningen har avhengige tilordninger, må du sørge for å aktivere de avhengige tilordningene for denne tabelltilordningen.
 + Tilordningen kan mangle kilde- eller målkolonner. Hvis en kolonne i Finance and Operations-appen mangler, følger du trinnene i delen [Problemer med manglende tabellkolonner i tilordninger](dual-write-troubleshooting-finops-upgrades.md#missing-table-columns-issue-on-maps). Hvis det mangler en kolonne i Dataverse, klikker du på **Oppdater tabeller**-knappen for tilordningen, slik at kolonnene fylles ut automatisk i tilordningen på nytt.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

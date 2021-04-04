@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b41b87cd3e2e80b87318c5c771d45a4d0e5d4b85
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: a034d563c12c4ba8b99e13b30ea2683555a01276
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4971709"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5254493"
 ---
 # <a name="periodic-credit-management-tasks"></a>Periodiske oppgaver for kredittstyring
 
@@ -43,3 +43,6 @@ Ettersom selskaper utvikler seg og forhold endres, kan kredittrisiko for en gitt
 Du kan kjøre prosessen **Oppdater kundesaldostatistikk** for å oppdatere beregningen av saldostatistikk som vises på siden **Forespørsel om saldostatistikk**. Denne informasjonen brukes til å beregne risikoresultater og verdiene som vises i faktaboksene for kredittstatistikk på **Kunde**-siden.
 
 Når du kjører prosessen, oppdaterer den kundesaldostatistikk for en enkelt kunde. Hvis du vil definere en satsvis jobb for å kjøre prosessen for flere kunder, kan du bruke siden **Beregn saldostatistikk** (**Kredittbehandling \> Periodiske oppgaver \> Beregn saldostatistikk**).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

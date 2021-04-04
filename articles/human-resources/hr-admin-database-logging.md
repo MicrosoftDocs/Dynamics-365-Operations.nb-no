@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 50346cc495fe08f49137dba59dbcbb3f7f838c7b
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 8057ebd0bc061c6bf78d8674c45e0885ffce681c
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5129285"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5467655"
 ---
 # <a name="configure-and-manage-database-logging"></a>Konfigurere og administrere databaselogging
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Du kan spore endringer i tabeller og felt i Dynamics 365 Human Resources med databaselogging. Dette emnet beskriver hvordan du gjør følgende:
 
@@ -87,3 +89,6 @@ Gjør følgende for å konfigurere opprydding i databaselogg:
    - Opprettingsdato og -klokkeslett
 
 3. Bruk kategorien **Opprydding i databaselogg** for å bestemme når du vil kjøre loggoppryddingsoppgaven. Som standard er databaselogger tilgjengelige i 30 dager.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

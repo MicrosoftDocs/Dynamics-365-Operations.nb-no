@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 38c42469e62bf5457d0281540325a6c56a5f930f
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 73e2d2d56da812060961c34d7cb72b71b6b2df34
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113750"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5465804"
 ---
 # <a name="configure-dataverse-integration"></a>Konfigurer Dataverse-integrering
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Du kan aktivere eller deaktivere integrering mellom Microsoft Dataverse og Dynamics 365 Human Resources. Du kan også vise synkroniseringsdetaljene, slette sporingsdata og synkronisere en tabell på nytt for å hjelpe til med å feilsøke dataproblemer mellom de to miljøene.
 
@@ -71,7 +73,7 @@ Du vil kanskje deaktivere integrering i disse situasjonene:
 [![Aktivere eller deaktivere Dataverse-integrering](./media/hr-admin-integration-dataverse-enable-disable.png)](./media/hr-admin-integration-dataverse-enable-disable.png)
 
 > [!WARNING]
-> Vi anbefaler sterkt at du deaktiverer Dataverse-integrering mens du utfører datamigreringsoppgaver. Store dataopplastinger kan påvirke ytelsen betydelig. Eksempel: Opplasting av 2000 arbeidere kan ta flere timer når integrering er aktivert, og mindre enn én time når den er deaktivert. Tallene i dette eksemplet er bare for demonstrasjon. Den nøyaktige tiden det tar å importere poster, kan variere betraktelig, avhengig av mange faktorer.
+> Det anbefales sterkt at du deaktiverer Dataverse-integrering mens du utfører datamigreringsoppgaver. Store dataopplastinger kan påvirke ytelsen betydelig. Eksempel: Opplasting av 2000 arbeidere kan ta flere timer når integrering er aktivert, og mindre enn én time når den er deaktivert. Tallene i dette eksemplet er bare for demonstrasjon. Den nøyaktige tiden det tar å importere poster, kan variere betraktelig, avhengig av mange faktorer.
 
 ## <a name="view-data-integration-details"></a>Vise detaljer om dataintegrering
 
@@ -126,3 +128,6 @@ Slik kjører du en fullstendig synkronisering av en tabell mellom Human Resource
 [Vanlige spørsmål om virtuelle tabeller for Human Resources](hr-admin-virtual-entity-faq.md)<br>
 [Hva er Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)<br>
 [Terminologioppdateringer](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro#terminology-updates)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

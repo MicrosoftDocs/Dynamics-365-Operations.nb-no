@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 8c1f52239b2050425c37a8130507e689b29205a8
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: f9216a77ebcf23ef3f732a8c3cb17a911f8a3851
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966561"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5246459"
 ---
 # <a name="batch-balancing"></a>Partibalansering
 
@@ -186,3 +186,6 @@ Det er to unntak til regelen om at partiordrer bare kan partibalanseres hvis for
 1. Hvis måleenheten for formel er forskjellig fra måleenheten for lager for den aktive ingrediensen, gjelder ikke partiordren for partibalansering.
 
 En partiordre som ikke er tilgjengelig for partibalansering går gjennom den vanlige prosessyklusen for partiordrer.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

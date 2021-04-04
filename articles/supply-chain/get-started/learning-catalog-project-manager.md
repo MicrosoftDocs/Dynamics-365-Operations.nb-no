@@ -13,12 +13,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 5585ad96ec689b55c00e123fc465684436028823
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: bf5a4f47d174aab30335dbf514f96f4421393c6f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963616"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5236105"
 ---
 # <a name="learning-catalog-for-implementation-project-managers-working-with-dynamics-365-supply-chain-management"></a>Opplæringskatalog for implementeringsprosjektleder som arbeider med Dynamics 365 Supply Chain Management
 
@@ -68,7 +68,7 @@ Katalogen nedenfor er ordnet fra kjernekunnskap til bestemte områder, og fra de
 | [Kurs MB-300T03-A: Dataoverføring og klargjøring for å komme i gang med Dynamics 365 for Finance and Operations](https://www.microsoft.com/learning/course.aspx?cid=MB-300T03) | Dette kurset beskriver dataoverføring og klargjøring for å komme i gang med Microsoft Dynamics 365 for Finance and Operations. | Instruktørledet, personlig eller elektronisk opplæring. Kostnaden varierer etter område og partner. | 1 dag |
 | [Startside for implementeringslivssyklus](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/imp-lifecycle/implementation-lifecycle) | Disse emnene beskriver programmene, verktøyene og prosessene som er tilgjengelige i forbindelse med implementeringslivssyklusen for Microsoft Dynamics 365 for Finance and Operations-prosjektet. | Dokumentasjon | |
 
-## <a name="supply-chain-management"></a>Forsyningskjedeadministrasjon<a name="supply-chain-management"></a>
+## <a name="supply-chain-management"></a>Supply Chain Management<a name="supply-chain-management"></a>
 
 | Innhold  | beskrivelse  | Formater | Lengde    |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|-----------|---------------------------------------------------------------------------|
@@ -79,9 +79,9 @@ Katalogen nedenfor er ordnet fra kjernekunnskap til bestemte områder, og fra de
 | [Mobilapp for lagerstyring (VIR816PAL) ](https://community.dynamics.com/365/b/techtalks/posts/warehousing-mobile-app-march-22-2017) | Dette tekniske foredraget beskriver det avanserte lagersystemet i Dynamics 365 for Operations og hva fremtiden bringer for mobile grensesnittet for avansert lagerstyring. Vi se nærmere på den nye mobilappen som er lansert, og hvordan den er sammenlignet med den eldre WMDP. Vi vil lære hva som kreves for å installere, konfigurere og bruke denne mobilappen og hvordan den kan brukes til å dra nytte av implementeringene. | Gratis opptak av en webkonferanse | 54 minutter |
 | [Leverandørsamarbeid (DYN327PAL) ](https://community.dynamics.com/365/b/techtalks/posts/vendor-collaboration-july-25-2017) | I dette tekniske foredraget går vi gjennom funksjonen for leverandørsamarbeid, inkludert funksjonen for forbruk for svar fra leverandør, som er inkludert i juli-utgivelsen (vår). | Gratis opptak av en webkonferanse | 58 minutter |
 | [Vare- og lageroverføringsprosess for å bruke avansert lagerstyring (DYN316PAL) ](https://community.dynamics.com/365/b/techtalks/posts/item-and-warehouse-migration-process-to-use-advanced-warehouse-management-june-27-2017) | I dette tekniske foredraget lærer vi deg hvordan du overfører eksisterende lageroppsett og varer med åpne transaksjoner til den avanserte lagerstyringen ved å bruke de nye funksjonene til å endre lagringsdimensjonsgruppen for varer og aktivere lagre til å bruke prosessen for avansert lagerstyring. | Gratis opptak av en webkonferanse | 54 minutter |
-| [Startside for forsyningskjedeadministrasjon](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/) | Dette emnet gir en oversikt over emnene i hjelpen og andre ressurser for funksjonene for forsyningskjedeadministrasjon i Microsoft Dynamics 365 for Finance and Operations. | Dokumentasjon | |
+| [Startside for Supply Chain Management](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/) | Dette emnet gir en oversikt over emnene i hjelpen og andre ressurser for funksjonene for Supply Chain Management i Microsoft Dynamics 365 for Finance and Operations. | Dokumentasjon | |
 | [Behovsbasert etterfylling av råvareplukking (DYN333PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/demand-replenishment-for-raw-material-picking-september-28-2017) | Dette tekniske foredraget beskriver råvareplukking og behovsetterfylling for råvareplukking. | Gratis opptak av en webkonferanse | 38 minutter |
-| [Kurs MB-330T01-A: Konfigurere og bruke forsyningskjedeadministrasjon i Dynamics 365 for Finance and Operations](https://www.microsoft.com/learning/course.aspx?cid=MB-330T01) | I dette kurset beskriver hvordan du konfigurerer og bruker forsyningskjedeadministrasjon i Dynamics 365 for Finance and Operations. | Instruktørledet, personlig eller elektronisk opplæring. Kostnaden varierer etter område og partner. | 2 dager |
+| [Kurs MB-330T01-A: Konfigurere og bruke Supply Chain Management i Dynamics 365 for Finance and Operations](https://www.microsoft.com/learning/course.aspx?cid=MB-330T01) | I dette kurset beskriver hvordan du konfigurerer og bruker Supply Chain Management i Dynamics 365 for Finance and Operations. | Instruktørledet, personlig eller elektronisk opplæring. Kostnaden varierer etter område og partner. | 2 dager |
 | [Kurs MB-330T02-A: Bruke kvalitetsstyring, konsernintern handel og hovedplanlegging i Dynamics 365 for Finance and Operations](https://www.microsoft.com/learning/course.aspx?cid=MB-330T02) | Dette kurset beskriver hvordan du bruker kvalitetsstyring, konsernintern handel og hovedplanlegging i Dynamics 365 for Finance and Operations. | Instruktørledet, personlig eller elektronisk opplæring. Kostnaden varierer etter område og partner. | 1 dag |
 | [Kurs MB-330T03-A: Konfigurere og bruke lagerstyring og transportadministrasjon i Dynamics 365 for Finance and Operations](https://www.microsoft.com/learning/course.aspx?cid=MB-330T03) | Dette kurset beskriver hvordan du konfigurerer og bruker lagerstyring og transportadministrasjon i Dynamics 365 for Finance and Operations. | Instruktørledet, personlig eller elektronisk opplæring. Kostnaden varierer etter område og partner. | 1 dag |
 
@@ -106,3 +106,6 @@ Katalogen nedenfor er ordnet fra kjernekunnskap til bestemte områder, og fra de
 | [Eksamen MB-300: Microsoft Dynamics 365 Unified Operations Core](https://docs.microsoft.com/learn/certifications/exams/mb-300?wt.mc_id=learningredirect_certs-web-wwl) | Denne eksamenen måler din evne til å utføre følgende tekniske oppgaver: bruke vanlige funksjoner for implementeringsverktøy, konfigurere sikkerhet, prosesser og alternativer, utføre dataoverføring og validere og støtte løsningen. | Eksamen: kostnaden varierer etter område |
 | [Eksamen MB-320: Microsoft Dynamics 365 for Finance and Operations, produksjon](https://docs.microsoft.com/learn/certifications/exams/mb-320?wt.mc_id=learningredirect_certs-web-wwl) | Denne eksamenen måler din evne til å utføre følgende tekniske oppgaver: definere og konfigurere produksjon, opprette og administrere produksjon og lean-ordrer, og opprette, behandle og administrere partiordrer for produksjon. | Eksamen: kostnaden varierer etter område |
 | [Eksamen MB-330: Microsoft Dynamics 365 for Finance and Operations, Supply Chain Management](https://docs.microsoft.com/learn/certifications/exams/mb-330?wt.mc_id=learningredirect_certs-web-wwl) | Denne eksamenen måler din evne til å utføre følgende tekniske oppgaver: implementere behandling av produktinformasjon, implementere lagerstyring, implementere og behandle forsyningskjedeprosesser og implementere lagerstyring og transportstyring, og utføre forretningsprosesser. | Eksamen: kostnaden varierer etter område |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

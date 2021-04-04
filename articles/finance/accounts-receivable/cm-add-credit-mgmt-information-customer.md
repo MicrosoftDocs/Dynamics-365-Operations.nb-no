@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a04180a5dbec1e08d0149beeed0495a0d13af76c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 13ea8c2600e93379c9e3c71b97b919cbbca3b5eb
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4971734"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5257710"
 ---
 # <a name="add-credit-management-information-for-customers"></a>Legge til kredittbehandlingsinformasjon for kunder
 
@@ -101,3 +101,6 @@ Du kan opprette forsikringspoliser og garantier på **Alle kunder**-siden (**Kun
     I dette tilfellet er den effektive kredittgrensen 125 000 (= A + \[B × C\]).
     
     Hvis du imidlertid merker av for **Inkludert i eksponering**, fjernes **Oppdater kredittgrense**-verdien på 50 000 (= 50,00 prosent av 100 000), og eksponeringsverdien er 75 000 (= A + \[B × C\] – B).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

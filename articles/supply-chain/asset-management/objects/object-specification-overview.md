@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a092fac4f1b8648c2c93791f1c5efb90708c44e2
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: dadc8e69b1ed710f083005ef58bcf894680eb4d5
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020185"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5253164"
 ---
 # <a name="asset-attribute-overview"></a>Oversikt over aktivaattributt
 
@@ -39,3 +39,6 @@ Siden **Oversikt over aktivaattributt** viser en egen linje for hvert aktivum. L
 3. Velg **OK**. En liste viser alle aktiva som bruker den valgte aktivatypen. For hvert aktivum vises alle tilknyttede attributtyper på samme linje.
 
 Siden **Aktivaattributt** viser en egen linje for hver attributtype som brukes for et aktivum. Du kan åpne denne siden ved å velge **Aktivastyring** \> **Forespørsler** \> **Aktiva** \> **Aktivaattributt**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

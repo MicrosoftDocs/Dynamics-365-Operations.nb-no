@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: ff2136e1f0a87b7d77968ca1163e64f8838b234b
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: 54530a8735cb8ce4b21688eae86fda83035133ed
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5116122"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5464964"
 ---
 # <a name="view-and-evaluate-the-results-of-questionnaires"></a>Vise og evaluere resultatene i spørreskjemaer
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Denne artikkelen forklarer hvordan du kan vise og evaluere resultatene av spørreskjemaer som respondenter fyller ut. 
 
@@ -72,3 +74,5 @@ Du kan bruke spørreskjemastatistikk til å analysere resultatene av et utfylt s
 -   Velg eller kontroller vilkår for å analysere resultatene etter respondent eller spørreskjemaets kjennetegn. Hvis du for eksempel velger **Postnummer**, kan du analysere sammenhengen mellom respondentens plassering og riktige svar.
 
 Innstillingene du definerer, lagres og kan brukes til å beregne resultatene på nytt periodisk.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

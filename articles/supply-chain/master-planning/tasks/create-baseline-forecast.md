@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f777503c6161376afc933322b5d60054e2468b34
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: f18da9563421e7e092869451376e53a450abdf7e
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4983422"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5246723"
 ---
 # <a name="create-a-baseline-forecast"></a>Opprette en basislinjeprognose
 
@@ -81,3 +81,6 @@ En produksjonsplanlegger kan opprette en basislinjeprognose ved å bruke tidsser
 5. Klikk på Prognoselinjedetaljer.
     * På denne siden kan du se presisjonsverdier, historisk behov og prognose. Du kan også endre prognosen.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

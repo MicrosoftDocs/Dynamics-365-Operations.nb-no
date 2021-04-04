@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7b0ebb5d7f77e2104d0280bcee7c018d9cf97bd5
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 5196460576d1bd516c5b5449fabf5421343e429d
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4970162"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5248673"
 ---
 # <a name="warehouse-configuration-overview"></a>Oversikt over lagerkonfigurasjon
 
@@ -118,3 +118,6 @@ Hvis du vil gjøre det lettere og raskere å angi hvilke handlinger som er knytt
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

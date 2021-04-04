@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 335031731a02980cba24d2424c1505df64effbac
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 88acf6325a0513d75a5ea0a6b463b93a1b9f56fe
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5130479"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5467391"
 ---
 # <a name="set-up-positions"></a>Konfigurer stillinger
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
@@ -67,3 +69,6 @@ Stillinger er et viktig element i det nederste nivået i et organisasjonshierark
 30. Angi eller velg en verdi i feltet Avdeling.
 31. Klikk Lagre.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

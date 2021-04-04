@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 2cbe54ad92aff2f8a85e47301635fe4b6819e9a7
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 79e8922a6118693db941ec259a2a1004e3522954
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5012067"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5241376"
 ---
 # <a name="revalue-lease-payments-that-are-linked-to-an-index-rate"></a>Revaluere leiebetalinger som er koblet til en indeksrente
 
@@ -67,3 +67,6 @@ Hvis du vil vise virkningene av prosessen for revaluering av leie i IFRS 16-leie
 Du kan vise den nygenererte betalingsplanen som starter på revalueringsdatoen, og vise det totale oppdaterte betalingsbeløpet. Det er også opprettet en ny nedbetalingsplan for leieforpliktelse og en avskrivningsplan for aktiva for å gjenspeile den justerte betalingsplanen.
 
 Journaloppføringen har automatisk postert justeringsjournaloppføringen til kontoen for endringen i leiebetalinger som er knyttet til revalueringen av indeks.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

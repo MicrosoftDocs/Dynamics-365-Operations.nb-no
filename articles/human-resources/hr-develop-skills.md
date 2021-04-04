@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 26493306a8bd810f936b15160b07263ca41f87ae
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
+ms.openlocfilehash: f3d64fa519cf4156adce43056c1c22362f0d7591
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115590"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5465564"
 ---
 # <a name="align-workforce-skills-with-business-needs"></a>Justere kompetansen til arbeidsstyrken etter bedriftens behov
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Du kan følge opp ferdighetene som ansatte, søkere eller kontaktpersoner har eller bør ha for å oppfylle rollen effektivt. Du kan også angi kompetansen som kreves for en bestemt jobb.
 
@@ -62,3 +64,6 @@ Med profiler for kompetansesøk kan du søke etter nåværende ansatte eller kan
 Du kan opprette en analyse av kompetanseprofil for å vise en kompetanseliste for en arbeider, søker eller kontaktperson fra en bestemt dato. Du kan opprette en kompetansegapanalyse hvis du vil sammenligne kompetansen til en person med kompetansen som kreves for en bestemt jobb.  
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
