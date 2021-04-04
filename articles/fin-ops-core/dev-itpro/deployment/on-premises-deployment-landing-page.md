@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 11/23/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -16,59 +15,62 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 54d236b7bca3e4529d5fff3ef71a2679b785a1a5
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: dc9642ee224290891c738c9d0d2b96ff119a1622
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679350"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5564066"
 ---
-# <a name="on-premises-deployment-home-page"></a><span data-ttu-id="aeb46-103">Startside for lokal distribusjon</span><span class="sxs-lookup"><span data-stu-id="aeb46-103">On-premises deployment home page</span></span>
+# <a name="on-premises-deployment-home-page"></a><span data-ttu-id="27555-103">Startside for lokal distribusjon</span><span class="sxs-lookup"><span data-stu-id="27555-103">On-premises deployment home page</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="aeb46-104">Du kan distribuere Dynamics 365 Finance + Operations (lokal).</span><span class="sxs-lookup"><span data-stu-id="aeb46-104">You can deploy Dynamics 365 Finance + Operations (on-premises).</span></span> <span data-ttu-id="aeb46-105">Når du velger en lokal distribusjonstype, er systemkrav, maskinvarestørrelse og funksjonaliteten forskjellig fra en skydistribusjon.</span><span class="sxs-lookup"><span data-stu-id="aeb46-105">When you choose an on-premises deployment type, the system requirements, hardware sizing, and functionality differ from a cloud deployment.</span></span> <span data-ttu-id="aeb46-106">Dette emnet gir koblinger til innhold med spesifikk informasjon om lokale distribusjoner.</span><span class="sxs-lookup"><span data-stu-id="aeb46-106">This topic provides links to content that contains information specific to on-premises deployments.</span></span>
+<span data-ttu-id="27555-104">Du kan distribuere Dynamics 365 Finance + Operations (lokal).</span><span class="sxs-lookup"><span data-stu-id="27555-104">You can deploy Dynamics 365 Finance + Operations (on-premises).</span></span> <span data-ttu-id="27555-105">Når du velger en lokal distribusjonstype, er systemkrav, maskinvarestørrelse og funksjonaliteten forskjellig fra en skydistribusjon.</span><span class="sxs-lookup"><span data-stu-id="27555-105">When you choose an on-premises deployment type, the system requirements, hardware sizing, and functionality differ from a cloud deployment.</span></span> <span data-ttu-id="27555-106">Dette emnet gir koblinger til innhold med spesifikk informasjon om lokale distribusjoner.</span><span class="sxs-lookup"><span data-stu-id="27555-106">This topic provides links to content that contains information specific to on-premises deployments.</span></span>
 
-## <a name="get-started"></a><span data-ttu-id="aeb46-107">Komme i gang</span><span class="sxs-lookup"><span data-stu-id="aeb46-107">Get started</span></span>
-- [<span data-ttu-id="aeb46-108">Oversikt over lokal distribusjon</span><span class="sxs-lookup"><span data-stu-id="aeb46-108">On-premises deployment overview</span></span>](on-premises-overview.md)
-- [<span data-ttu-id="aeb46-109">Planlegge og klargjøre for lokale distribusjoner</span><span class="sxs-lookup"><span data-stu-id="aeb46-109">Plan and prepare for on-premises deployments</span></span>](plan-onprem-deployment.md)
-- [<span data-ttu-id="aeb46-110">Systemkrav for lokale distribusjoner</span><span class="sxs-lookup"><span data-stu-id="aeb46-110">System requirements for on-premises deployments</span></span>](../../fin-ops/get-started/system-requirements-on-prem.md)
-- [<span data-ttu-id="aeb46-111">Krav til størrelsesangivelse for maskinvare for lokale miljøer</span><span class="sxs-lookup"><span data-stu-id="aeb46-111">Hardware sizing requirements for on-premises environments</span></span>](../../fin-ops/get-started/hardware-sizing-on-premises-environments.md)
-- [<span data-ttu-id="aeb46-112">Kjøpe Finance + Operations (on-premises)</span><span class="sxs-lookup"><span data-stu-id="aeb46-112">Buy Finance + Operations (on-premises)</span></span>](../../fin-ops/get-started/purchase-on-premises.md)
-- [<span data-ttu-id="aeb46-113">Sammenligning av skyfunksjoner og lokale funksjoner</span><span class="sxs-lookup"><span data-stu-id="aeb46-113">Comparison of cloud and on-premises features</span></span>](../../fin-ops/get-started/cloud-prem-comparison.md)
+## <a name="get-started"></a><span data-ttu-id="27555-107">Komme i gang</span><span class="sxs-lookup"><span data-stu-id="27555-107">Get started</span></span>
+- [<span data-ttu-id="27555-108">Oversikt over lokal distribusjon</span><span class="sxs-lookup"><span data-stu-id="27555-108">On-premises deployment overview</span></span>](on-premises-overview.md)
+- [<span data-ttu-id="27555-109">Planlegge og klargjøre for lokale distribusjoner</span><span class="sxs-lookup"><span data-stu-id="27555-109">Plan and prepare for on-premises deployments</span></span>](plan-onprem-deployment.md)
+- [<span data-ttu-id="27555-110">Systemkrav for lokale distribusjoner</span><span class="sxs-lookup"><span data-stu-id="27555-110">System requirements for on-premises deployments</span></span>](../../fin-ops/get-started/system-requirements-on-prem.md)
+- [<span data-ttu-id="27555-111">Krav til størrelsesangivelse for maskinvare for lokale miljøer</span><span class="sxs-lookup"><span data-stu-id="27555-111">Hardware sizing requirements for on-premises environments</span></span>](../../fin-ops/get-started/hardware-sizing-on-premises-environments.md)
+- [<span data-ttu-id="27555-112">Kjøpe Finance + Operations (on-premises)</span><span class="sxs-lookup"><span data-stu-id="27555-112">Buy Finance + Operations (on-premises)</span></span>](../../fin-ops/get-started/purchase-on-premises.md)
+- [<span data-ttu-id="27555-113">Sammenligning av skyfunksjoner og lokale funksjoner</span><span class="sxs-lookup"><span data-stu-id="27555-113">Comparison of cloud and on-premises features</span></span>](../../fin-ops/get-started/cloud-prem-comparison.md)
 
-## <a name="onboard"></a><span data-ttu-id="aeb46-114">Jobbintroduksjon</span><span class="sxs-lookup"><span data-stu-id="aeb46-114">Onboard</span></span>
-- [<span data-ttu-id="aeb46-115">Opprette lokale projekter in Lifecycle Services (LCS)</span><span class="sxs-lookup"><span data-stu-id="aeb46-115">Set up on-premises projects in Lifecycle Services (LCS)</span></span>](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
-- [<span data-ttu-id="aeb46-116">Opprette og distribuere lokale miljøer (Plattformoppdatering 12 og nyere)</span><span class="sxs-lookup"><span data-stu-id="aeb46-116">Set up and deploy on-premises environments (Platform update 12 and later)</span></span>](setup-deploy-on-premises-pu12.md)
-- [<span data-ttu-id="aeb46-117">Installere nettverksskriverenheter i lokale miljøer</span><span class="sxs-lookup"><span data-stu-id="aeb46-117">Install network printer devices in on-premises environments</span></span>](../analytics/install-network-printer-onprem.md)
-- [<span data-ttu-id="aeb46-118">Konfigurere sikkerhet for SQL Server Reporting Services for lokale distribusjoner</span><span class="sxs-lookup"><span data-stu-id="aeb46-118">Configure SQL Server Reporting Services for on-premises deployments</span></span>](../analytics/configure-ssrs-on-premises.md)
-- [<span data-ttu-id="aeb46-119">Utvikle og distribuere tilpassede modeller til lokale miljøer</span><span class="sxs-lookup"><span data-stu-id="aeb46-119">Develop and deploy custom models to on-premises environments</span></span>](develop-deploy-custom-models-on-premises.md)
+## <a name="onboard"></a><span data-ttu-id="27555-114">Jobbintroduksjon</span><span class="sxs-lookup"><span data-stu-id="27555-114">Onboard</span></span>
+- [<span data-ttu-id="27555-115">Opprette lokale projekter in Lifecycle Services (LCS)</span><span class="sxs-lookup"><span data-stu-id="27555-115">Set up on-premises projects in Lifecycle Services (LCS)</span></span>](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
+- [<span data-ttu-id="27555-116">Opprette og distribuere lokale miljøer (Plattformoppdatering 12 og nyere)</span><span class="sxs-lookup"><span data-stu-id="27555-116">Set up and deploy on-premises environments (Platform update 12 and later)</span></span>](setup-deploy-on-premises-pu12.md)
+- [<span data-ttu-id="27555-117">Installere nettverksskriverenheter i lokale miljøer</span><span class="sxs-lookup"><span data-stu-id="27555-117">Install network printer devices in on-premises environments</span></span>](../analytics/install-network-printer-onprem.md)
+- [<span data-ttu-id="27555-118">Konfigurere sikkerhet for SQL Server Reporting Services for lokale distribusjoner</span><span class="sxs-lookup"><span data-stu-id="27555-118">Configure SQL Server Reporting Services for on-premises deployments</span></span>](../analytics/configure-ssrs-on-premises.md)
+- [<span data-ttu-id="27555-119">Utvikle og distribuere tilpassede modeller til lokale miljøer</span><span class="sxs-lookup"><span data-stu-id="27555-119">Develop and deploy custom models to on-premises environments</span></span>](develop-deploy-custom-models-on-premises.md)
 
-## <a name="work-in-your-on-premises-deployment"></a><span data-ttu-id="aeb46-120">Arbeide i den lokale distribusjonen</span><span class="sxs-lookup"><span data-stu-id="aeb46-120">Work in your on-premises deployment</span></span>
-- [<span data-ttu-id="aeb46-121">Konfigurere dokumentstyring</span><span class="sxs-lookup"><span data-stu-id="aeb46-121">Configure document management</span></span>](../../fin-ops/organization-administration/configure-document-management.md)
-- [<span data-ttu-id="aeb46-122">Importere konfigurasjoner for elektronisk rapportering (ER)</span><span class="sxs-lookup"><span data-stu-id="aeb46-122">Import Electronic reporting (ER) configurations</span></span>](../analytics/electronic-reporting-import-ger-configurations.md)
-- [<span data-ttu-id="aeb46-123">Dokumentgenerering, publisering og utskrift i lokale distribusjoner</span><span class="sxs-lookup"><span data-stu-id="aeb46-123">Document generation, publishing, and printing in on-premises deployments</span></span>](../analytics/printing-capabilities-on-premises.md)
-- [<span data-ttu-id="aeb46-124">Konfigurere proxyer for lokale miljøer</span><span class="sxs-lookup"><span data-stu-id="aeb46-124">Configure proxies for on-premises environments</span></span>](onprem-reverseproxy.md)
-- [<span data-ttu-id="aeb46-125">Konfigurere teknisk støtte for Finance and Operations-apper</span><span class="sxs-lookup"><span data-stu-id="aeb46-125">Set up technical support for Finance and Operations apps</span></span>](../lifecycle-services/support-experience.md)
-- [<span data-ttu-id="aeb46-126">Internett-tilkobling for klient</span><span class="sxs-lookup"><span data-stu-id="aeb46-126">Client internet connectivity</span></span>](../user-interface/client-disconnected.md)
-- [<span data-ttu-id="aeb46-127">Bruke oppdateringer i lokale distribusjoner</span><span class="sxs-lookup"><span data-stu-id="aeb46-127">Apply updates to on-premises deployments</span></span>](apply-updates-on-premises.md)
-- [<span data-ttu-id="aeb46-128">Omplassere lokale miljøer</span><span class="sxs-lookup"><span data-stu-id="aeb46-128">Redeploy on-premises environments</span></span>](redeploy-on-prem.md)
-- [<span data-ttu-id="aeb46-129">Bruke den samme AD FS-forekomsten på nytt for flere miljøer</span><span class="sxs-lookup"><span data-stu-id="aeb46-129">Reuse the same AD FS instance for multiple environments</span></span>](onprem-reuseadfs.md)
+## <a name="work-in-your-on-premises-deployment"></a><span data-ttu-id="27555-120">Arbeide i den lokale distribusjonen</span><span class="sxs-lookup"><span data-stu-id="27555-120">Work in your on-premises deployment</span></span>
+- [<span data-ttu-id="27555-121">Konfigurere dokumentstyring</span><span class="sxs-lookup"><span data-stu-id="27555-121">Configure document management</span></span>](../../fin-ops/organization-administration/configure-document-management.md)
+- [<span data-ttu-id="27555-122">Importere konfigurasjoner for elektronisk rapportering (ER)</span><span class="sxs-lookup"><span data-stu-id="27555-122">Import Electronic reporting (ER) configurations</span></span>](../analytics/electronic-reporting-import-ger-configurations.md)
+- [<span data-ttu-id="27555-123">Dokumentgenerering, publisering og utskrift i lokale distribusjoner</span><span class="sxs-lookup"><span data-stu-id="27555-123">Document generation, publishing, and printing in on-premises deployments</span></span>](../analytics/printing-capabilities-on-premises.md)
+- [<span data-ttu-id="27555-124">Konfigurere proxyer for lokale miljøer</span><span class="sxs-lookup"><span data-stu-id="27555-124">Configure proxies for on-premises environments</span></span>](onprem-reverseproxy.md)
+- [<span data-ttu-id="27555-125">Konfigurere teknisk støtte for Finance and Operations-apper</span><span class="sxs-lookup"><span data-stu-id="27555-125">Set up technical support for Finance and Operations apps</span></span>](../lifecycle-services/support-experience.md)
+- [<span data-ttu-id="27555-126">Internett-tilkobling for klient</span><span class="sxs-lookup"><span data-stu-id="27555-126">Client internet connectivity</span></span>](../user-interface/client-disconnected.md)
+- [<span data-ttu-id="27555-127">Bruke oppdateringer i lokale distribusjoner</span><span class="sxs-lookup"><span data-stu-id="27555-127">Apply updates to on-premises deployments</span></span>](apply-updates-on-premises.md)
+- [<span data-ttu-id="27555-128">Omplassere lokale miljøer</span><span class="sxs-lookup"><span data-stu-id="27555-128">Redeploy on-premises environments</span></span>](redeploy-on-prem.md)
+- [<span data-ttu-id="27555-129">Bruke den samme AD FS-forekomsten på nytt for flere miljøer</span><span class="sxs-lookup"><span data-stu-id="27555-129">Reuse the same AD FS instance for multiple environments</span></span>](onprem-reuseadfs.md)
 
-## <a name="commerce"></a><span data-ttu-id="aeb46-130">Commerce</span><span class="sxs-lookup"><span data-stu-id="aeb46-130">Commerce</span></span>
-- [<span data-ttu-id="aeb46-131">Commerce-funksjoner som er tilgjengelige i lokale distribusjoner</span><span class="sxs-lookup"><span data-stu-id="aeb46-131">Commerce capabilities that are available in on-premises deployments</span></span>](../../../retail/retail-onprem.md)
-- [<span data-ttu-id="aeb46-132">Installasjonstrinn for komponenter i Retail-kanal i et lokalt miljø</span><span class="sxs-lookup"><span data-stu-id="aeb46-132">Installation steps for Retail channel components in an on-premises environment</span></span>](deploy-retail-onprem.md)
-- [<span data-ttu-id="aeb46-133">Konfigurere, installere og aktivere Modern POS (MPOS)</span><span class="sxs-lookup"><span data-stu-id="aeb46-133">Configure, install, and activate Modern POS (MPOS)</span></span>](../../../retail/retail-modern-pos-device-activation.md)
-- [<span data-ttu-id="aeb46-134">Konfigurere og installere Commerce Scale Unit</span><span class="sxs-lookup"><span data-stu-id="aeb46-134">Configure and install Commerce Scale Unit</span></span>](../../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md)
+## <a name="commerce"></a><span data-ttu-id="27555-130">Commerce</span><span class="sxs-lookup"><span data-stu-id="27555-130">Commerce</span></span>
+- [<span data-ttu-id="27555-131">Commerce-funksjoner som er tilgjengelige i lokale distribusjoner</span><span class="sxs-lookup"><span data-stu-id="27555-131">Commerce capabilities that are available in on-premises deployments</span></span>](../../../retail/retail-onprem.md)
+- [<span data-ttu-id="27555-132">Installasjonstrinn for komponenter i Retail-kanal i et lokalt miljø</span><span class="sxs-lookup"><span data-stu-id="27555-132">Installation steps for Retail channel components in an on-premises environment</span></span>](deploy-retail-onprem.md)
+- [<span data-ttu-id="27555-133">Konfigurere, installere og aktivere Modern POS (MPOS)</span><span class="sxs-lookup"><span data-stu-id="27555-133">Configure, install, and activate Modern POS (MPOS)</span></span>](../../../retail/retail-modern-pos-device-activation.md)
+- [<span data-ttu-id="27555-134">Konfigurere og installere Commerce Scale Unit</span><span class="sxs-lookup"><span data-stu-id="27555-134">Configure and install Commerce Scale Unit</span></span>](../../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md)
 
-## <a name="upgrade"></a><span data-ttu-id="aeb46-135">Oppgrader</span><span class="sxs-lookup"><span data-stu-id="aeb46-135">Upgrade</span></span>
-- [<span data-ttu-id="aeb46-136">Oppgradering på stedet for lokale miljøer</span><span class="sxs-lookup"><span data-stu-id="aeb46-136">In-place upgrade process for on-premises environments</span></span>](../migration-upgrade/on-prem-upgrade.md)
+## <a name="upgrade"></a><span data-ttu-id="27555-135">Oppgrader</span><span class="sxs-lookup"><span data-stu-id="27555-135">Upgrade</span></span>
+- [<span data-ttu-id="27555-136">Oppgradering på stedet for lokale miljøer</span><span class="sxs-lookup"><span data-stu-id="27555-136">In-place upgrade process for on-premises environments</span></span>](../migration-upgrade/on-prem-upgrade.md)
 
-## <a name="other-resources"></a><span data-ttu-id="aeb46-137">Andre ressurser</span><span class="sxs-lookup"><span data-stu-id="aeb46-137">Other resources</span></span>
-- [<span data-ttu-id="aeb46-138">Feilsøke lokale distribusjoner</span><span class="sxs-lookup"><span data-stu-id="aeb46-138">Troubleshoot on-premises deployments</span></span>](troubleshoot-on-prem.md)
-- [<span data-ttu-id="aeb46-139">Skript for å løse problemer i lokale miljøer</span><span class="sxs-lookup"><span data-stu-id="aeb46-139">Scripts for resolving issues in on-premises environments</span></span>](onprem-tsg-implementations.md)
-- [<span data-ttu-id="aeb46-140">Sertifikatrotasjon</span><span class="sxs-lookup"><span data-stu-id="aeb46-140">Certificate rotation</span></span>](certificate-rotation-on-prem.md)
-- [<span data-ttu-id="aeb46-141">Lokal diagnostikk</span><span class="sxs-lookup"><span data-stu-id="aeb46-141">On-premises diagnostics</span></span>](on-premises-diagnostics.md)
-- [<span data-ttu-id="aeb46-142">Funksjoner som er fjernet eller avskrevet for Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="aeb46-142">Removed or deprecated features for Finance and Operations</span></span>](../migration-upgrade/deprecated-features.md)
-- [<span data-ttu-id="aeb46-143">Policy og lokale versjoner for programvarelivssyklus</span><span class="sxs-lookup"><span data-stu-id="aeb46-143">Software lifecycle policy and on-premises releases</span></span>](../migration-upgrade/on-prem-version-update-policy.md)
+## <a name="other-resources"></a><span data-ttu-id="27555-137">Andre ressurser</span><span class="sxs-lookup"><span data-stu-id="27555-137">Other resources</span></span>
+- [<span data-ttu-id="27555-138">Feilsøke lokale distribusjoner</span><span class="sxs-lookup"><span data-stu-id="27555-138">Troubleshoot on-premises deployments</span></span>](troubleshoot-on-prem.md)
+- [<span data-ttu-id="27555-139">Skript for å løse problemer i lokale miljøer</span><span class="sxs-lookup"><span data-stu-id="27555-139">Scripts for resolving issues in on-premises environments</span></span>](onprem-tsg-implementations.md)
+- [<span data-ttu-id="27555-140">Sertifikatrotasjon</span><span class="sxs-lookup"><span data-stu-id="27555-140">Certificate rotation</span></span>](certificate-rotation-on-prem.md)
+- [<span data-ttu-id="27555-141">Lokal diagnostikk</span><span class="sxs-lookup"><span data-stu-id="27555-141">On-premises diagnostics</span></span>](on-premises-diagnostics.md)
+- [<span data-ttu-id="27555-142">Funksjoner som er fjernet eller avskrevet for Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="27555-142">Removed or deprecated features for Finance and Operations</span></span>](../migration-upgrade/deprecated-features.md)
+- [<span data-ttu-id="27555-143">Policy og lokale versjoner for programvarelivssyklus</span><span class="sxs-lookup"><span data-stu-id="27555-143">Software lifecycle policy and on-premises releases</span></span>](../migration-upgrade/on-prem-version-update-policy.md)
  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
