@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e2ffd12011b133bb13b69b49d6e894c6a887a8a0
-ms.sourcegitcommit: bd53794cb94f8c1ce29a7d6102119a0975f155e3
+ms.openlocfilehash: e1e8c8b1464a38a0145cbdcdcb4882db00d3c4c1
+ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "5142329"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5487031"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Installere og koble til mobilappen Lagerstyring
 
@@ -31,11 +31,9 @@ ms.locfileid: "5142329"
 [!include [preview banner](../includes/preview-banner.md)]
 
 > [!NOTE]
-> Dette emnet beskriver hvordan du konfigurerer den nye mobilappen Lagerstyring, som det for øyeblikket er en offentlig forhåndsversjon av. Hvis du ser etter informasjon om hvordan du konfigurerer den gamle lagerappen, kan du se [Installere og koble til lagerappen](../../supply-chain/warehousing/install-configure-warehousing-app.md).
+> Dette emnet beskriver hvordan du konfigurerer mobilappen Lagerstyring. Hvis du ser etter informasjon om hvordan du konfigurerer den gamle lagerappen, kan du se [Installere og koble til lagerappen](../../supply-chain/warehousing/install-configure-warehousing-app.md).
 
-Den offentlige forhåndsversjonen av mobilappen Lagerstyring kan lastes ned fra Microsoft App Center. Den leveres som en frittstående komponent. Derfor må du laste den ned på hver enhet og deretter konfigurere den for å koble til Microsoft Dynamics 365 Supply Chain Management-miljøet.
-
-Dette emnet beskriver hvordan du installerer mobilappen Lagerstyring på hver av mobilenhetene og konfigurerer den slik at den kobler til Supply Chain Management-miljøet ditt. Du kan konfigurere hver enhet manuelt, eller du kan importere tilkoblingsinnstillinger via en fil eller ved å skanne en QR-kode.
+Dette emnet beskriver hvordan du laster ned og installerer mobilappen Lagerstyring på hver av mobilenhetene, og hvordan du konfigurerer appen slik at den kobler til Supply Chain Management-miljøet ditt. Du kan konfigurere hver enhet manuelt, eller du kan importere tilkoblingsinnstillinger via en fil eller ved å skanne en QR-kode.
 
 ## <a name="system-requirements"></a>Systemkrav
 
@@ -53,17 +51,27 @@ Før du kan bruke appen, må en relatert funksjon aktiveres i systemet. Administ
 
 ## <a name="get-the-warehouse-management-mobile-app"></a>Hente mobilappen Lagerstyring
 
-Bruk en av følgende koblinger til å laste ned appen:
+For mindre distribusjoner kan det ofte være lurt å installere appen på hver enhet fra den relevante butikken og deretter konfigurere tilkoblingen manuelt til miljøene du bruker.
 
-- **Windows (UWP):** [Forhåndsversjonsprogram i App Center – Windows](https://go.microsoft.com/fwlink/?linkid=2154406)
+For større distribusjoner kan du automatisere distribusjon og/eller konfigurasjon av appen, noe som gjør det mer hensiktsmessig å administrere mange enheter. Du kan for eksempel bruke en administrasjonsløsning for mobilenhet og en administrasjonsløsning for mobilprogram, for eksempel [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune). Hvis du vil ha informasjon om hvordan du bruker Intune til å legge til apper, kan du se [Legge til apper i Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-add).
 
-    Siden denne appen er en forhåndsversjonsapp, må du gå gjennom noen ekstra trinn for å installere den. Hvis du vil ha mer informasjon, kan du se [Installere en build fra App Center](https://docs.microsoft.com/appcenter/distribution/installation).
+### <a name="install-the-app-from-an-app-store"></a>Installere appen fra en appbutikk
 
-- **Android:** [Forhåndsversjonsprogram i App Center – Android](https://go.microsoft.com/fwlink/?linkid=2154613)
+Den enkleste måten å installere appen på én enhet på, er å installere den fra en appbutikk, som alltid har den nyeste versjonen som er generelt tilgjengelig. Microsoft Intune kan også hente apper fra appbutikkene. Bruk en av koblingene nedenfor til å installere appen fra en appbutikk:
 
-    Siden denne appen er en forhåndsversjonsapp, må du gå gjennom noen ekstra trinn for å installere den. Hvis du vil ha mer informasjon, kan du se [Teste Android-apper](https://docs.microsoft.com/appcenter/distribution/testers/testing-android).
+- **Windows (UWP):** [Lagerstyring i Microsoft Store](https://www.microsoft.com/store/apps/9pd35cdqcmg3)
 
-For mindre distribusjoner kan det være lurt å installere appen på hver enhet fra den relevante butikken og deretter konfigurere tilkoblingen manuelt til miljøene du bruker. Du kan imidlertid også automatisere distribusjon og/eller konfigurasjon av appen. Du vil kanskje synes denne fremgangsmåten er nyttig hvis du administrerer mange enheter og bruker en administrasjonsløsning for mobilenheter, for eksempel [Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune). Hvis du vil ha informasjon om hvordan du bruker Intune til å legge til apper, kan du se [Legge til apper i Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-add).
+- **Android:** [Lagerstyring i Google Play Store](https://play.google.com/store/apps/details?id=com.Microsoft.WarehouseManagement)
+
+### <a name="download-the-app-from-microsoft-app-center"></a>Laste ned appen fra Microsoft App Center
+
+Som et alternativ til å installere fra en appbutikk, kan du i stedet laste ned appen fra Microsoft App Center. App Center inneholder installerbare pakker du kan legge ved siden av. I tillegg til den gjeldende versjonen kan du også laste ned tidligere versjoner, og du kan få forhåndsvisningsversjoner med kommende funksjoner som du kan prøve ut. Hvis du vil laste ned gjeldende, tidligere eller forhåndsvise versjoner av lagerstyringsappen fra Microsoft App Center, bruker du én av følgende koblinger:
+
+- **Windows (UWP):** [Lagerstyring (Windows)](https://go.microsoft.com/fwlink/?linkid=2154406)  
+    Hvis du vil ha instruksjoner om hvordan du installerer en nedlastet pakke på en Windows-enhet og deretter konfigurerer de nødvendige sertifikatene, kan du se [Installere en build fra App Center](https://docs.microsoft.com/appcenter/distribution/installation).
+
+- **Android:** [Lagerstyring (Android)](https://go.microsoft.com/fwlink/?linkid=2154613)  
+    Hvis du laster ned en forhåndsversjon, må du gå gjennom noen ekstra trinn for å installere den. Hvis du vil ha mer informasjon, kan du se [Teste Android-apper](https://docs.microsoft.com/appcenter/distribution/testers/testing-android).
 
 ## <a name="create-a-web-service-application-in-azure-active-directory"></a><a name="create-service"></a>Opprette en webtjenesteapp i Azure Active Directory
 
@@ -289,3 +297,6 @@ Hvis en enhet går tapt eller blir en sikkerhetsrisiko, må du fjerne tilgangen 
 1. Kontroller at klient-ID-en til appen samsvarer med klient-ID-en du noterte i trinn 2.
 1. Velg **Slett** på verktøylinjen.
 1. Velg **Ja** i bekreftelsesmeldingen som vises.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

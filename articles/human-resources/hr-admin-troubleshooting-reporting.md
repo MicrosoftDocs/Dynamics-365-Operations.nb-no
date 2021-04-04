@@ -17,14 +17,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 830c8c32128a8dfc1b009557afb272e48ae3a1ff
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: 66581331dceacc1c0fa1816bf336339693db5339
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113676"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5463292"
 ---
 # <a name="reporting-options"></a>Rapporteringsalternativer
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -36,7 +38,7 @@ Dette problemet gjelder for alle miljøer.
 
 Kunden ønsker å tilpasse Microsoft Dynamics 365 Human Resources-rapporter eller opprette nye rapporter.
 
-**Avgang**
+**Problem**
 
 Brukeren kan ikke tilpasse de innebygde Microsoft Power BI-rapportene.
 
@@ -49,3 +51,6 @@ Brukeren kan ikke tilpasse de innebygde Microsoft Power BI-rapportene.
 **Langsiktig løsning**
 
 Flere Power BI-alternativer er tilgjengelige, og mer data og enheter vil være en del av Dataverse.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

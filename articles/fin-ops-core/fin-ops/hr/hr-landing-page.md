@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: anbichse
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b2c23cda87060ecb129befcc67c5b54f2f062bb3
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 8fb04ed91c28dc87bdcf4e218cbeaf99f5442ab4
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797823"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5566704"
 ---
 # <a name="human-resources-overview"></a>Oversikt over personale
 
@@ -93,3 +92,6 @@ Du kan utforme og administrere spørreskjemaer for å samle inn informasjon som 
 - [Utforme spørreskjemaer](../../../talent/design-questionnaires.md)
 - [Distribuere og planlegge spørreskjemaer](../../../talent/distribute-questionnaires.md)
 - [Vise og evaluere resultatene i spørreskjemaer](../../../talent/evaluate-questionnaire-results.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

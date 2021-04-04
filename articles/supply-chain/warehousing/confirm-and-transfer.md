@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6ccfbe30e9d4a0fc4580c7036d222bfca9203a21
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d4e7476e6c1b0ac404caf32f198a4a62e1dd1200
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4996332"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5251800"
 ---
 # <a name="confirm-and-transfer"></a>Bekreft og overfør
 
@@ -105,7 +105,7 @@ Dette oppsettet er ikke nødvendig i alle situasjoner. Eksemplet som vises her, 
 Dette scenariet viser et eksempel der plukkprosessen ennå ikke er fullført, men varene som er plukket så langt, må lastes inn i en lastebil og sendes likevel. Derfor kan brukeren dele opp de ikke-plukkede lastlinjene på en ny last. Alle datarelasjonene blir deretter oppdatert automatisk.
 
 > [!NOTE]
-> De spesifikke verdiene som beskrives i dette scenariet, er basert på **USMF**-demodataene. Vi anbefaler at du bruker denne demodataene mens du demonstrerer eller lærer hvordan du bruker funksjonen. Hvis du ikke bruker **USMF**-demodata, må du bytte ut dine egne verdier etter behov.
+> De spesifikke verdiene som beskrives i dette scenariet, er basert på **USMF**-demodataene. Det anbefales at du bruker denne demodataene mens du demonstrerer eller lærer hvordan du bruker funksjonen. Hvis du ikke bruker **USMF**-demodata, må du bytte ut dine egne verdier etter behov.
 
 ### <a name="step-1-create-a-load-that-has-multiple-load-lines"></a>Trinn 1: Opprette en last som har flere lastlinjer
 
@@ -179,7 +179,7 @@ Oppgaver for mobile enheter krever informasjon fra brukerens inndata, for eksemp
 1. I **LP**-feltet angir du nummerskilt-ID-en. Nummerskilt-ID-en må være et treff for varen, lageret og lokasjonen til varen som blir plukket fra den valgte lokasjonen. Når du er ferdig, velg **Enter**.
 1. I **Vare**-feltet angir du varenummeret som skal bekrefte varen som skal plukkes, og deretter velger du **Enter**.
 1. I **Qty**-feltet angir du antallet for varen som skal plukkes, og deretter velger du **Enter**.
-1. I **Mål-LP**-feltet angir du målnummerskilt-ID-en. Målnummerskilt er brukerdefinert. Pass på at du angir en nummerskilt-ID som du vil huske. Vi anbefaler at du bruker gjeldende dato pluss en tosifret sekvens (ÅÅMMDD\#\#) som format, for eksempel *19112301*. Når du er ferdig, velg **Enter**.
+1. I **Mål-LP**-feltet angir du målnummerskilt-ID-en. Målnummerskilt er brukerdefinert. Pass på at du angir en nummerskilt-ID som du vil huske. Det anbefales at du bruker gjeldende dato pluss en tosifret sekvens (ÅÅMMDD\#\#) som format, for eksempel *19112301*. Når du er ferdig, velg **Enter**.
 1. Se gjennom informasjonen som vises. Denne informasjonen er *Plukk*-informasjonen som nå blir *Plasser*-dataene for Plasser-transaksjonen. Når du er ferdig, velg **Enter**.
 
     - Du mottar en **Arbeids fullført**-melding.
@@ -229,3 +229,6 @@ Du kan også bekrefte at transaksjonsrelasjoner er oppdatert på følgende måte
 - **Del antall til ny last**-alternativet fungerer også når noen av de gjenværende arbeidshodene har statusen *Pågår*. Derfor kan du fremdeles bruke funksjonaliteten selv om arbeiderne allerede kjører plukkordrene.
 - Hvis du velger **Avbryt ikke-fullført antall** mens det er gjenstående arbeid som har statusen *Åpen* eller *Pågår*, får du følgende feilmelding: Kan ikke avbryte gjenstående antall for last. Arbeid finnes for lasten.
 - Hvis du velger **Avbryt ikke-fullført antall** når det ikke er noe gjenstående arbeid, men det finnes frigitte lastlinjer, får du følgende feilmelding: Kan ikke bekrefte leveringen for lasten fordi antallet for varer overskrider prosenten som er definert for underlevering. For å unngå feilen kan du angi **Underlevering**-prosent på den ikke-frigitte lastlinjen til 100 prosent. Ikke-frigitte linjer vil ikke bli flyttet til en ny last, men gjeldende last vil bli bekreftet med underlevering. I dette tilfellet kan du ikke frigi den opprinnelige ordren på nytt. Derfor må du også håndtere den på en annen måte.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

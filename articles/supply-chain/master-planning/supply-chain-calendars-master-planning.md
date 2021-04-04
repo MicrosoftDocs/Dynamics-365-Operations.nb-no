@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: bbbd60ddfd46904374a2cf3ad4a09f96805bd2bf
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 64a9e356d93b42193c2992fb4029814c5fd63e7e
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5001805"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5261147"
 ---
 # <a name="calendars-and-master-planning"></a>Kalendere og hovedplanlegging
 
@@ -142,3 +142,6 @@ Når det gjelder dekningsgruppekalenderen, er det viktig å tenke på at den har
 
 ### <a name="updating-scm-related-calendars"></a>Oppdatere SCM knyttet til kalendere
 Selv om det er viktig at alle relevante kalendere er tilordnet på sine respektive plasser (leverandør, kunde, lager, modus for levering eller dekningsgruppe), er det like viktig å oppdatere dem, slik at de gjenspeiler endringene. Systemet vil definere produksjon, overføring, innkjøp og salgsordredatoer avhengig av kombinasjonen av de tilordnede kalenderne. Det er lurt å avklare hvem som har ansvaret for å tildele og oppdatere kalenderne på de tilsvarende områder. Hvis det oppstår en nedbryting eller annen uvanlig endring i arbeidsdagene, er det viktig å oppdatere kalenderne i henhold til den. Alle aktiviteter som er avhengige av kalendere, for eksempel hovedplanlegging og produksjonsplanlegging, må kjøres på nytt når kalendere oppdateres. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,11 +2,10 @@
 title: Mål for elektronisk rapportering (ER)
 description: Dette emnet inneholder informasjon om administrasjon av mål for elektronisk rapportering, måltypene som støttes, og sikkerhetshensyn.
 author: nselin
-manager: AnnBe
-ms.date: 01/21/2021
+manager: tfehr
+ms.date: 02/24/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: DocuType, ERSolutionTable
 audience: Application User
@@ -17,12 +16,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 725ded9d777a65e5a38a7971c1da8cb74cf0dd47
-ms.sourcegitcommit: 872600103d2a444d78963867e5e0cdc62e68c3ec
+ms.openlocfilehash: 0fe0992412edf6f78be4ed293052e3501a7224ad
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "5097287"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5569725"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Mål for elektronisk rapportering (ER)
 
@@ -166,12 +165,14 @@ Hvis du vil gjøre alternativet PDF-konvertering tilgjengelig i gjeldende Finans
 
 ### <a name="applicability"></a>Relevans
 
-Alternativet PDF-konvertering kan bare aktiveres for filkomponenter som brukes til å generere utdata i Office-format (Excel eller Word) (**Excel-fil**). Når dette alternativet er aktivert, konverteres utdata som genereres i Office-format, automatisk til PDF-format.
-
-### <a name="limitations"></a>Begrensninger
+Alternativet PDF-konvertering kan bare aktiveres for filkomponenter som brukes til å generere utdata i Office-format (Excel eller Word) (**Excel-fil**). Når dette alternativet er aktivert, konverteres utdata som genereres i Office-format, automatisk til PDF-format. I versjoner av Finance **før versjon 10.0.18** kan du aktivere dette alternativet bare for komponenter av typen **Excel\\Fil** som blir brukt til å generere utdata i [Excel](er-fillable-excel.md)- eller [Word](er-design-configuration-word.md)-format. I **versjon 10.0.18 og senere** kan du imidlertid også aktivere dette alternativet for komponenter av typen **Felles\\Fil**.
 
 > [!NOTE]
-> Denne funksjonen er en forhåndsvisningsfunksjon, og den er underlagt vilkårene for bruk beskrevet i [Ekstra vilkår for bruk for Microsoft Dynamics 365-forhåndsvisninger](https://go.microsoft.com/fwlink/?linkid=2105274).
+> Vær oppmerksom på advarselsmeldingen du mottar når du aktiverer PDF-konverteringsalternativet for en ER-komponent av **Felles\\Fil**. Denne meldingen informerer deg om at det ikke finnes noen måte å garantere at den valgte filkomponenten vil eksponere innholdet i PDF-format eller PDF-konverterbart innhold ved kjøretid. Du bør derfor bare aktivere alternativet hvis du er sikker på at den valgte filkomponenten er konfigurert til å vise innholdet i PDF-format eller PDF-konverterbart innhold ved kjøretid.
+> 
+> Hvis du aktiverer PDF-konverteringsalternativet for en komponent av typen **Excel\\Fil**, hvis komponenten viser innhold i et annet format enn PDF-format, og hvis det viste innholdet ikke kan konverteres til PDF-format, vil det oppstå et unntak ved kjøretid. Meldingen du mottar, informerer deg om at det genererte innholdet ikke kan konverteres til PDF-format.
+
+### <a name="limitations"></a>Begrensninger
 
 Alternativet PDF-konvertering er bare tilgjengelig for skydistribusjoner.
 
@@ -241,3 +242,6 @@ Formatet ditt må først være tilgjengelig i ER-konfigurasjonene. Hvis denne fo
 [Oversikt over elektronisk rapportering (ER)](general-electronic-reporting.md)
 
 [Konfigurere handlingsavhengige ER-mål](er-action-dependent-destinations.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

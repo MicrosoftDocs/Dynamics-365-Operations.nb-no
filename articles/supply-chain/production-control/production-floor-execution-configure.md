@@ -8,18 +8,19 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: JmgProductionFloorExecutionConfiguration
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: e822463ac80be3b1e498f02cb1aad2b214fed815
-ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
+ms.openlocfilehash: d34f9c235df480658a0935d731f7267a87894067
+ms.sourcegitcommit: 70b1567d316f19c15a4b032b4897f15c8dcdca09
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "5077483"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "5556320"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurere grensesnittet for produksjonsutførelse
 
@@ -41,7 +42,8 @@ Selve grensesnittet for produksjonsutførelse, pluss flere av de valgfrie innsti
 
 ### <a name="the-production-floor-execution-interface"></a>Grensesnittet for produksjonsutførelse
 
-Dette er primærfunksjonen som beskrives i dette emnet. Det legger til grensesnittet for produksjonsutførelse i systemet. Aktiver følgende funksjon i [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) for å aktivere det:  
+Dette er primærfunksjonen som beskrives i dette emnet. Det legger til grensesnittet for produksjonsutførelse i systemet. Aktiver følgende funksjon i [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) for å aktivere det:
+
 - Produksjonsutførelse
 
 ### <a name="generate-license-plates"></a>Generer nummerskilter
@@ -79,6 +81,7 @@ Slik oppretter og vedlikeholder du enhetskonfigurasjoner: Gå til **Produksjonsk
 
 Deretter konfigurerer du de ulike innstillingene for den valgte enhetskonfigurasjonen. Følgende felt er tilgjengelige:
 
+- **Bare stemple inn og ut** – Sett dette alternativet til *Ja* for å opprette et forenklet grensesnitt som bare gir inn- og utstemplingsfunksjonalitet. Dette deaktiverer de fleste andre alternativene på denne siden. Du må fjerne alle linjene fra hurtigfanen **Fanevalg** før du kan aktivere dette alternativet.
 - **Rapporter antall ved utstempling** – Sett dette alternativet til *Ja* for å be arbeiderne om å rapportere tilbakemelding om jobber som pågår ved utstempling. Når *Nei* er valgt, blir ikke arbeiderne spurt om dette.
 - **Lås ansatt** – Når dette alternativet er satt til *Nei*, blir arbeidere logget av umiddelbart etter at de har utført en registrering (for eksempel en ny jobb). Enheten vil deretter gå tilbake til påloggingssiden. Når dette alternativet er satt til *Ja*, vil arbeidere forbli logget på jobbkortenheten. En arbeider kan imidlertid logge av manuelt slik at en annen arbeider kan logge på når jobbkortetheten fortsetter å kjøre under den samme systembrukerkontoen. Hvis du vil ha mer informasjon om disse kontotypene, kan du se [Tilordnede brukere](config-job-card-device.md#assigned-users).
 - **Bruk det faktiske registreringstidspunktet** – Velg *Ja* for å angi at tidspunktet for hver nye registrering skal være likt det nøyaktige tidspunktet da registreringen ble sendt av en arbeider. Når dette alternativet er satt til *Nei*, brukes påloggingstidspunktet i stedet. Du bør normalt velge *Ja* hvis du har satt **Lås ansatt** og/eller **Én arbeider**-alternativet til *Ja*, i tilfeller der arbeiderne ofte er logget på i lengre perioder.
@@ -99,3 +102,6 @@ En satsvis jobb rydder regelmessig oppføringer i referansetabellen for enheter 
 1. I handlingsruten velger du **Rydd opp klientkonfigurasjoner**.
 1. I dialogboksen **Rydd opp klientkonfigurasjon** angir du **Antall dager**-feltet til antallet dager uten aktivitet (før i dag) som skal vurderes. Du vil fjerne alle konfigurasjoner og påloggingsoppføringer for enheter som ikke er aktive i den perioden.
 1. Velg **OK** for å rydde opp i de relevante konfigurasjonene, basert på innstillingen for **Antall dager**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

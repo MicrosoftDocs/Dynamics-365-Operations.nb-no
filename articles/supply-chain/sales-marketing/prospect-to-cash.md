@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: b2f2f7d95d3f0e6bd774c43024836aac1f729abd
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 70ea2638408296df283a030dedce03b22cb57d81
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4977644"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5248745"
 ---
 # <a name="prospect-to-cash"></a>Kundeemne til kontanter
 
@@ -81,3 +81,6 @@ For å bruke Kundeemne til kontanter-løsningen må du installere følgende komp
 
 - Dynamics 365 Sales versjon 1612 (8.2.1.207) (DB 8.2.1.207) online eller en nyere versjon.
 - Kundeemne til kontanter-løsning for Dynamics 365 Sales versjon 1.15.0.0 eller en nyere versjon. Løsningen er tilgjengelig for nedlasting fra AppSource. [Last ned Dynamics 365, kundeemne til kontanter](https://appsource.microsoft.com/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

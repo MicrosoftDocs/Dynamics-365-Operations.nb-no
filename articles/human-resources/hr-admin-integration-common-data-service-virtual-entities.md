@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: cd299b51e38cc30c3e18f3ef9de1f43fa817b840
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: d8780be777c9a204fcb95950f5679a5711aee298
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113751"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5465828"
 ---
 # <a name="configure-dataverse-virtual-tables"></a>Konfigurere virtuelle Dataverse-tabeller
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -221,3 +223,6 @@ Hurtigmenyen viser de siste utførelsesresultatene for prosessen. Du kan vise lo
 [Opprette og redigere virtuelle tabeller som inneholder data fra en ekstern datakilde](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-virtual-entities)<br>
 [Hva er Power Apps-portaler?](https://docs.microsoft.com/powerapps/maker/portals/overview)<br>
 [Oversikt over oppretting av apper i Power Apps](https://docs.microsoft.com/powerapps/maker/)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

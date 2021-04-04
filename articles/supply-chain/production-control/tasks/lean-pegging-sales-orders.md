@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 457e7128bed2232a3e092b31136f768940482741
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: a6a18d24be85e20a7e5824c334855aa94fe61cb5
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4994185"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5245979"
 ---
 # <a name="lean-pegging-from-sales-orders"></a>Lean-utligning fra salgsordrer
 
@@ -56,3 +56,6 @@ Denne prosedyren fokuserer på å validere utligningstreet fra en salgslinje der
 5. Velg Salgslinje 000832 \ Kanban 000558\ Problem for L0001\ Kanban 000559 i treet.
     * Jobben for den andre Kanbanen planlegges også fordi hele utligningstreet planlegges. Legg merke til at Kanban-jobbstatusen endres fra Ikke planlagt til Planlagt.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

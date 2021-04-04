@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7e7751e3e2f216abf46f02ee0644909c6894c5b2
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 6c9a15d90d2cb5d24bcc18f8cbd4f0076efaf6a8
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020235"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5263838"
 ---
 # <a name="schedule-work-orders"></a>Planlegg arbeidsordrer
 
@@ -137,3 +137,6 @@ Slik viser og arbeider du med Gantt-diagrammet:
     - Hvis du vil endre planene for en vist arbeidsordre, velger du og drar den til riktig ny dato og nytt klokkeslett.
 
 1. Hvis du har gjort endringer, velger du **Lagre** i handlingsruten for å lagre dem.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

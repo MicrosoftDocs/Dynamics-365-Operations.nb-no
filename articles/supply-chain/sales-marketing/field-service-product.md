@@ -18,12 +18,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: ffa0616d51127a024bea526c5926a182c0449971
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d3dc21a39c9866d09e500e2f14ff810bac7d57fe
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4996740"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5261051"
 ---
 # <a name="synchronize-products-in-supply-chain-management-to-products-in-field-service"></a>Synkronisere produkter i Supply Chain Management til produkter i Field Service
 
@@ -72,3 +72,6 @@ Følgende illustrasjoner viser en tilordning av malen i Dataintegrering.
 ### <a name="field-service-products-supply-chain-management-to-field-service-products---products"></a>Field Service-produkter (Supply Chain Management til Field Service): Produkter – produkter
 
 [![Maltilordning i Dataintegrering](./media/FSProduct.png)](./media/FSProduct.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

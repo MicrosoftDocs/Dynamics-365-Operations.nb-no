@@ -16,16 +16,17 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-01-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: ed8f43c7db139b7b16ac6901d5db56ba2f021690
-ms.sourcegitcommit: b7a7a14f8650913f6797ae1c4a82ad8adfe415fd
+ms.openlocfilehash: 36a450f78695f617056875f8d236fe46bc66aaaf
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "5078292"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5501228"
 ---
 # <a name="schedule-work-creation-during-wave"></a>Planlegge arbeidsopprettelse under bølge
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Bruk funksjonen *Planlegg arbeidsopprettelse* som en del av bølgeprosessen for å øke bølgebehandlingsgjennomstrømming, ved å få systemet til å opprette arbeid ved hjelp av parallell behandling.
 
@@ -51,7 +52,7 @@ For å kunne dra nytte av en parallell, asynkron metode for opprettelse av lager
 
 1. Angi *Ja* for **Behandle bølger satsvis** i **Generelt**-fanen. Du kan eventuelt også velge en dedikert **Satsvis gruppe for bølgebehandling** for å unngå at behandlingen av den satsvise køen kjører samtidig som andre prosesser.
 
-1. Angi **Vent på lås (ms)**, som brukes når systemet behandler flere bølger samtidig. Vi anbefaler en verdi på *60000* for de fleste større bølgeprosessene.
+1. Angi **Vent på lås (ms)**, som brukes når systemet behandler flere bølger samtidig. Det anbefales en verdi på *60000* for de fleste større bølgeprosessene.
 
 ### <a name="manually-enable-the-new-wave-step-method-for-existing-wave-templates"></a>Aktivere den nye bølgetrinnmetoden for eksisterende bølgemaler manuelt
 
@@ -110,3 +111,6 @@ Siden **Detaljer om planlagt arbeid** (**Lagerstyring \> Arbeid \> Detaljer om p
 Hvis du vil vise de satsvise jobbene for bølgebehandling, velger du **Satsvise jobber** i handlingsruten på **Alle bølger**-siden.
 
 Her kan du vise alle detaljene om den satsvise oppgaven for hver ID for satsvis jobb.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

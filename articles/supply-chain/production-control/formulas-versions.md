@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e5ff5916366f968cbf8dc9a5614466ef89faa92
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 8ee15fc2a3edd9d0cc8cff17123981bc90ceeff2
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5007170"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5246195"
 ---
 # <a name="formulas-and-formula-versions"></a>Formler og formelversjoner
 
@@ -70,3 +70,6 @@ Skalerbar-funksjone er kun tilgjengelig hvis alle elementkomponentene i formelen
 
 ## <a name="use-step-consumption"></a>Bruk Trinnvist forbruk
 Trinnvist forbruk eliminerer kravet om at du må legge inn en mengde i fanen **Formellinje** for en ingrediens. I stedet er Trinnvist forbruk konfiguert så den har **Fra serier**-verdi og en **Mengde**-verdi. Informasjonen fra Trinnvist forbruk per serieoppføring som tilfredstiller mengden for batchordren velges. Trinnvist forbruk er nyttig når forbruksrates ikke er lineær med hensyn til batchordrestørrelse og øker kun kravet når en bestemt mengdegrense er oppfylt. For å aktivere denne funksjonen for en ny formel, se under **Forbruksberegning**-gruppen, endre formelinnstillingen for gjeldende ingrediens fra **Standard** til **Trinnvis**. Du spesifiserer forbruksmetoden i fanen **Oppsett** i siden **Formellinje**.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

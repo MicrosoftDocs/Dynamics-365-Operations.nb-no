@@ -16,14 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 203dbc5463bfcc4249e9ed73802a9a1fc153f260
-ms.sourcegitcommit: f8bac7ca2803913fd236adbc3806259a17a110f4
+ms.openlocfilehash: 4e4b33e72d1d1dd9cb78a251281abd3e125c3665
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "5130211"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5466334"
 ---
 # <a name="develop-a-succession-plan"></a>Utvikle en rekkefølgeplan
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Etter hvert som organisasjonen vokser, må du starte rekkefølgeplanlegging. Under rekkefølgeplanlegging ønsker du kanskje finne noen som har lignende kompetanse som en annen person. Med kompetansesøk kan du analysere eksisterende ansatte og søkere for å se om de samsvarer med kompetansesettet til en verdsatt medarbeider. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
 
@@ -56,3 +58,6 @@ Etter hvert som organisasjonen vokser, må du starte rekkefølgeplanlegging. Und
 27. Velg **Resultat**.
 28. Velg **Rapport**. Rapportlisten viser de beste forslagene øverst i rapporten. Du kan se at det vises et hullelement. Et hull er forskjellen mellom kompetansesøknivået og personens kompetansenivå.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

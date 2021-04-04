@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d07a090dbd41eb17e8d604887435bbb8b07e8d9e
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: c33bbc7fa0ef7c3ce9768dd3688f9d1d575a513e
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966936"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5259872"
 ---
 # <a name="create-predefined-product-variants"></a>Opprette forhåndsdefinerte produktvarianter
 
@@ -71,3 +71,6 @@ Denne fremgangsmåten veileder deg gjennom oppretting av produktvarianter for en
     * Du kan generere beskrivelser for alle varianter basert på kombinasjonen av produktdimensjonsverdier. Beskrivelser er valgfritt.  
 5. Klikk på Lagre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

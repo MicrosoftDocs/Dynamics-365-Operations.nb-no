@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f45378405d9ea06ae847d93b7eacd9badf6d7e00
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: a85125853b3b69d33f07249e0d2aa7592de1cc8a
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5019184"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5253428"
 ---
 # <a name="create-maintenance-requests"></a>Opprette vedlikeholdsforespørsler
 
@@ -73,3 +73,6 @@ I detaljvisningen kan du oppdatere forskjellig informasjon. Her er noen eksemple
 
 > [!NOTE]
 > Hvis du velger et aktivum når du oppretter en vedlikeholdsforespørsel, kan du legge til én feil i aktivumet. Etter at vedlikeholdsforespørselen er opprettet, kan du legge til flere feil, etter behov. Hvis du vil legge til feil, velger du **Aktivafeil** på siden **Alle vedlikeholdsforespørsler**.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

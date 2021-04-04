@@ -3,10 +3,9 @@ title: ER-skrivermåltype
 description: Dette emnet forklarer hvordan du kan konfigurere et skrivermål for hver MAPPE- eller FIL-komponent i et ER-format (Elektronisk rapportering).
 author: NickSelin
 manager: AnnBe
-ms.date: 03/17/2020
+ms.date: 02/24/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: DocuType, ERSolutionTable, ERFormatDestinationTable
 audience: Application User
@@ -17,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: c6e298f62ec69f349eb713d66313e535c7e01881
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.openlocfilehash: 19613d9dfba21d591d96a2df45bedb80c043b3a7
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5094085"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5561956"
 ---
 # <a name="printer-destination"></a><a name="PrinterDestinationType"></a>Skrivermål
 
@@ -49,8 +48,6 @@ Hvis du vil gjøre **Skriver**-målet tilgjengelig i gjeldende forekomst av Micr
 
 ### <a name="limitations"></a>Begrensninger
 
-Denne funksjonen er en forhåndsvisningsfunksjon, og den er underlagt vilkårene for bruk beskrevet i [Ekstra vilkår for bruk for Microsoft Dynamics 365-forhåndsvisninger](https://go.microsoft.com/fwlink/?linkid=2105274).
-
 **Skriver**-målet implementeres bare for skydistribueringer.
 
 ### <a name="use-the-printer-destination"></a>Bruke skrivermålet
@@ -70,3 +67,6 @@ Hvis du vil bruke en bestemt [sideretning](electronic-reporting-destinations.md#
 
 - [Oversikt over elektronisk rapportering (ER)](general-electronic-reporting.md)
 - [Mål for elektronisk rapportering (ER)](electronic-reporting-destinations.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

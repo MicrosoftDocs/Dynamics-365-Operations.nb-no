@@ -18,14 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-21
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8662035235aa9b4788ced83c2c0efc0e4862e2a6
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
+ms.openlocfilehash: ab6b212efca7fa69d74d06ce2dbbab09d50f044c
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5113762"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5467199"
 ---
 # <a name="create-custom-links-in-manager-self-service"></a>Opprette egendefinerte koblinger i selvbetjeningen for ledere
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Du kan legge til egendefinerte koblinger i kategorien **Mitt team** i Lederselvbetjening. Med denne funksjonen kan du få rask tilgang til viktig informasjon. Det ligner på å legge til egendefinerte koblinger i kategorien **Min informasjon** i Ansattselvbetjening.
 
@@ -48,3 +50,6 @@ Hvis du vil bruke denne funksjonen, aktiverer du **Egendefinerte koblinger Leder
 ## <a name="see-also"></a>Se også
 
 [Oversikt over selvbetjening for ansatte og ledere](hr-employee-manager-self-service-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
