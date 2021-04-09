@@ -5,6 +5,8 @@
       items:
         - name: Nyheter eller endringer i Human Resources
           href: hr-admin-whats-new.md
+        - name: 22. mars 2021
+          href: hr-whats-new-2021-03-22.md
         - name: 8. mars 2021
           href: hr-whats-new-2021-03-08.md
         - name: 22. februar 2021
@@ -265,6 +267,8 @@
               href: hr-admin-troubleshooting-batch-jobs.md
             - name: Optimalisere ytelsen med oppgaver for automatisk opprydding
               href: hr-admin-troubleshooting-batch-history.md
+            - name: Tilbakestille satsvise jobber som står fast
+              href: hr-admin-troubleshooting-batch-execution.md
             - name: Analyserapporter blir ikke oppdatert
               href: hr-admin-troubleshooting-analytic-reports.md
             - name: Kan ikke opprette et miljø i administrasjonssenteret for Power Apps

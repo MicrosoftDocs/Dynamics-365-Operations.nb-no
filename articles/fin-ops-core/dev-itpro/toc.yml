@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-updates-10-0-17.md
                 - name: Plattformoppdateringer for 10.0.16 (februar 2021)
                   href: get-started/whats-new-platform-updates-10-0-16.md
-                - name: Plattformoppdateringer for 10.0.15 (januar 2021)
-                  href: get-started/whats-new-platform-updates-10-0-15.md
             - name: Funksjoner som er fjernet eller avskrevet
               items:
                 - name: Funksjoner som er fjernet eller avskrevet på startsiden
@@ -226,6 +224,10 @@
                               href: data-entities/dual-write/inventory-availability.md
                             - name: 'Integrert arbeider, jobb og stilling'
                               href: data-entities/dual-write/integrated-hr.md
+                            - name: Part og global adressebok
+                              href: data-entities/dual-write/party-gab.md
+                            - name: Bruke Power Portal med partdatamodellen
+                              href: data-entities/dual-write/party-gab-portal.md
                             - name: Merknadsintegrering
                               href: data-entities/dual-write/notes-integration.md
                             - name: Tilordningsreferanse
@@ -526,13 +528,15 @@
                   items:
                     - name: Konfigurere lokale prosjekter i LCS
                       href: lifecycle-services/lbd-create-lcs-on-prem-project.md
-                    - name: Konfigurere og distribuere lokale miljøer
+                    - name: "Definere og distribuere lokale miljøer (Platform update\_41 og nyere)"
+                      href: deployment/setup-deploy-on-premises-pu41.md
+                    - name: "Definere og distribuere lokale miljøer (Platform update\_12 til 40)"
                       href: deployment/setup-deploy-on-premises-pu12.md
                     - name: Installasjonstrinn for komponenter i Retail-kanal i et lokalt miljø
                       href: deployment/deploy-retail-onprem.md
                     - name: Utvikle og distribuere tilpassede modeller til lokale miljøer
                       href: deployment/develop-deploy-custom-models-on-premises.md
-                - name: Miljøvedlikehold
+                - name: Miljøoperasjoner
                   items:
                     - name: Bruke oppdateringer i en lokal distribusjon
                       href: deployment/apply-updates-on-premises.md
@@ -542,6 +546,8 @@
                       href: user-interface/client-disconnected.md
                     - name: Konfigurere bare satsvise og interaktive AOS-noder i lokale distribusjoner
                       href: deployment/onprem-batchonly.md
+                    - name: Konfigurere høy tilgjengelighet for SSRS-noder (SQL Server Reporting Services)
+                      href: deployment/onprem-SSRSHA.md
                     - name: Konfigurere proxyer for lokale miljøer
                       href: deployment/onprem-reverseproxy.md
                     - name: Lokal diagnostikk
@@ -1136,20 +1142,24 @@
                   href: lifecycle-services/use-translation-service-tm.md
         - name: Microsoft Power Platform-integrering
           items:
-            - name: Microsoft Power Platform-integrering med Finance and Operations
-              href: power-platform/overview.md
-            - name: Oversikt over tillegg
-              href: power-platform/add-ins-overview.md
-            - name: Enhetsmodellering
-              href: power-platform/entity-modeling.md
-            - name: Håndtering av applivssyklus
-              href: power-platform/application-lifecycle-management.md
-            - name: Administratorreferanse for Finance and Operations og Dataverse
-              href: power-platform/admin-reference.md
-            - name: Power Apps-portaler med Finance and Operations
-              href: power-platform/power-portal-reference.md
-            - name: Vanlige spørsmål om virtuelle enheter for Finance and Operations
-              href: power-platform/faq.md
+            - name: Virtuelle enheter
+              items:
+                - name: Microsoft Power Platform-integrering med Finance and Operations
+                  href: power-platform/overview.md
+                - name: Enhetsmodellering
+                  href: power-platform/entity-modeling.md
+                - name: Håndtering av applivssyklus
+                  href: power-platform/application-lifecycle-management.md
+                - name: Administratorreferanse for Finance and Operations og Dataverse
+                  href: power-platform/admin-reference.md
+                - name: Power Apps-portaler med Finance and Operations
+                  href: power-platform/power-portal-reference.md
+                - name: Vanlige spørsmål om virtuelle enheter for Finance and Operations
+                  href: power-platform/faq.md
+            - name: Tilleggsprogrammer
+              items:
+                - name: Oversikt over tillegg
+                  href: power-platform/add-ins-overview.md
         - name: Mobil plattform
           items:
             - name: Ressurser for mobil plattform
@@ -1390,6 +1400,8 @@
               href: perf-test/rsat/rsat-derived-test-cases.md
             - name: Opplæring for Regression Suite Automation Tool
               href: perf-test/rsat/rsat-tutorial.md
+            - name: Konfigurere brukere som ikke er administratorer
+              href: perf-test/rsat/rsat-configure-nonadmin.md
             - name: Anbefalte fremgangsmåter
               href: perf-test/rsat/rsat-best-practices.md
             - name: Dataagnostisk testing ved hjelp av Regression Suite Automation Tool

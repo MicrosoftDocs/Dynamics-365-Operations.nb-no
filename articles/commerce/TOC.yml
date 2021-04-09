@@ -100,8 +100,6 @@
                       href: get-started/whats-new-commerce-10-0-17.md
                     - name: Commerce 10.0.16 (februar 2021)
                       href: get-started/whats-new-commerce-10-0-16.md
-                    - name: Commerce 10.0.15 (januar 2021)
-                      href: get-started/whats-new-commerce-10-0-15.md
                 - name: Funksjoner som er fjernet eller avskrevet
                   items:
                     - name: Funksjoner som er fjernet eller avskrevet på startsiden
@@ -848,6 +846,22 @@
               href: task-mgmt-assign-lists.md
             - name: Oppgavebehandling på salgsstedet
               href: task-mgmt-pos.md
+            - name: Integrering med Dynamics 365 Commerce og Microsoft Teams
+              items:
+                - name: Oversikt over integrering med Commerce og Teams
+                  href: commerce-teams-integration.md
+                - name: Aktivere integrering med Commerce og Teams
+                  href: enable-teams-integration.md
+                - name: Klargjøre Teams fra Commerce
+                  href: provision-teams-from-commerce.md
+                - name: Synkronisere oppgavebehandling mellom Teams og Commerce POS
+                  href: synchronize-tasks-teams-pos.md
+                - name: Administrere brukerroller i Teams
+                  href: manage-user-roles-teams.md
+                - name: Tilordne butikker og team hvis det finnes eksisterende team i Teams
+                  href: map-stores-existing-teams.md
+                - name: Vanlige spørsmål om integrering med Commerce og Teams
+                  href: teams-integration-faq.md
         - name: Administrere e-handelsområdet ditt
           items:
             - name: Oversikt over e-handelsområde
@@ -1356,17 +1370,19 @@
               items:
                 - name: Opprette konfigurasjoner
                   href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md?toc=/dynamics365/commerce/toc.json
+                - name: Definere avhengigheten av ER-konfigurasjonene i andre komponenter
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/commerce/toc.json
                 - name: Klargjøre komponenter i den elektroniske rapporteringsløsningen
                   items:
                     - name: Utforme domenespesifikk datamodell
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/dynamics365/commerce/toc.json
                     - name: Klargjøre programspesifikke metadata
                       items:
-                        - name: (ER) Klargjøre programmetadataene som skal brukes i RCS
+                        - name: Klargjøre programmetadataene i ER som skal brukes i RCS
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/prepare-application-metadata-rcs.md?toc=/dynamics365/commerce/toc.json
-                        - name: (RCS) Få tilgang til programmetadata ved hjelp av ER-konfigurasjon
+                        - name: Få tilgang til programmetadata i RCS ved hjelp av ER-konfigurasjon
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-er-configuration.md?toc=/dynamics365/commerce/toc.json
-                        - name: (RCS) Få tilgang til programmetadata ved hjelp av tilkoblede programmer
+                        - name: Få tilgang til programmetadata i RCS ved hjelp av tilkoblede programmer
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-using-connected-applications.md?toc=/dynamics365/commerce/toc.json
                         - name: Definere modelltilordninger og velge datakilder
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?toc=/dynamics365/commerce/toc.json
@@ -1378,13 +1394,13 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-components-data-model-elements--2016-11.md?toc=/dynamics365/commerce/toc.json
                     - name: Teste den klargjorte ER-løsningen i målprogrammet
                       items:
-                        - name: (ER) Importere konfigurasjoner fra RCS
+                        - name: Importere konfigurasjoner fra RCS
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/commerce/toc.json
                         - name: Generere elektroniske dokumenter for betalinger ved hjelp av en formatkonfigurasjon
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/dynamics365/commerce/toc.json
                     - name: 'Oppgradere formatet ved å ta i bruk en ny, grunnleggende versjon av det formatet'
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/dynamics365/commerce/toc.json
-            - name: Formeldesignere i elektronisk rapportering
+            - name: Formeldesignere i ER
               items:
                 - name: Formeldesigner
                   href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/dynamics365/commerce/toc.json
@@ -1396,6 +1412,12 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?toc=/dynamics365/commerce/toc.json
                 - name: Funksjoner
                   items:
+                    - name: Container
+                      items:
+                        - name: Containerfunksjoner
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-container.md?toc=/dynamics365/commerce/toc.json
+                        - name: Base64StringToContainer
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-container-base64stringtocontainer.md?toc=/dynamics365/commerce/toc.json
                     - name: Dato og klokkeslett
                       items:
                         - name: Dato- og klokkeslettfunksjoner
@@ -1423,9 +1445,11 @@
                         - name: NullDateTime
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-nulldatetime.md?toc=/dynamics365/commerce/toc.json
                         - name: SessionNow
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessionnow.md?toc=/dynamics365/commerce/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessionnow.md?toc=/dynamics365/fcommerce/toc.json
                         - name: SessionToday
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/commerce/toc.json
+                        - name: Today
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-today.md?toc=/dynamics365/commerce/toc.json
                     - name: List
                       items:
                         - name: Listefunksjoner
@@ -1452,6 +1476,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-isempty.md?toc=/dynamics365/commerce/toc.json
                         - name: List
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?toc=/dynamics365/commerce/toc.json
+                        - name: ListDistinct
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listdistinct.md?toc=/dynamics365/commerce/toc.json
                         - name: ListJoin
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listjoin.md?toc=/dynamics365/commerce/toc.json
                         - name: ListOfFields
@@ -1480,14 +1506,22 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-and.md?toc=/dynamics365/commerce/toc.json
                         - name: Case
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-case.md?toc=/dynamics365/commerce/toc.json
+                        - name: Contains
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-contains.md?toc=/dynamics365/commerce/toc.json
+                        - name: EndsWith
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-endswith.md?toc=/dynamics365/commerce/toc.json
                         - name: If
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-if.md?toc=/dynamics365/commerce/toc.json
                         - name: Not
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-not.md?toc=/dynamics365/commerce/toc.json
                         - name: Or
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-or.md?toc=/dynamics365/commerce/toc.json
+                        - name: StartsWith
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-startswith.md?toc=/dynamics365/commerce/toc.json
                         - name: ValueIn
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-valuein.md?toc=/dynamics365/commerce/toc.json
+                        - name: ValueInLarge
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-valueinlarge.md?toc=/dynamics365/commerce/toc.json
                     - name: Matematiske
                       items:
                         - name: Matematiske funksjoner
@@ -1612,103 +1646,75 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-numbervalue.md?toc=/dynamics365/commerce/toc.json
                         - name: 'Type: Value'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-value.md?toc=/dynamics365/commerce/toc.json
-                        - name: 'Date and Time: DateTimeValue'
+                        - name: 'Container: Base64StringToContainer'
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-container-base64stringtocontainer.md?toc=/dynamics365/commerce/toc.json
+                        - name: 'Dato og klokkeslett: DateTimeValue'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetimevalue.md?toc=/dynamics365/commerce/toc.json
-                        - name: 'Date and Time: DateToDateTime'
+                        - name: 'Dato og klokkeslett: DateToDateTime'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetodatetime.md?toc=/dynamics365/commerce/toc.json
-                        - name: 'Date and Time: DateValue'
+                        - name: 'Dato og klokkeslett: DateValue'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datevalue.md?toc=/dynamics365/commerce/toc.json
-                        - name: 'List: List'
+                        - name: 'Liste: List'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?toc=/dynamics365/commerce/toc.json
-                        - name: 'List: ListOfFields'
+                        - name: 'Liste: ListOfFields'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffields.md?toc=/dynamics365/commerce/toc.json
-                        - name: 'List: Split'
+                        - name: 'Liste: Split'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-split.md?toc=/dynamics365/commerce/toc.json
-                        - name: 'List: StringJoin'
+                        - name: 'Liste: StringJoin'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-stringjoin.md?toc=/dynamics365/commerce/toc.json
-                        - name: 'Text: Char'
+                        - name: 'Tekst: Char'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-char.md?toc=/dynamics365/commerce/toc.json
-                        - name: 'Text: GuidValue'
+                        - name: 'Tekst: GuidValue'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-guidvalue.md?toc=/dynamics365/commerce/toc.json
-                        - name: 'Text: NumberFormat'
+                        - name: 'Tekst: NumberFormat'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numberformat.md?toc=/dynamics365/commerce/toc.json
-                        - name: 'Text: QrCode'
+                        - name: 'Tekst: QrCode'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-qrcode.md?toc=/dynamics365/commerce/toc.json
-                        - name: 'Text: Text'
+                        - name: 'Tekst: Text'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/commerce/toc.json
-            - name: Administrere ER-modelltilordning i separate ER-konfigurasjoner
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/commerce/toc.json
-            - name: Velge datamodelldefinisjoner når du oppretter formater
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/commerce/toc.json
-            - name: Forbedrede filtreringsalternativer for å finne konfigurasjoner i det globale repositoriet
-              href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/commerce/toc.json
-            - name: Generere rapporter ved å legge til innhold som rå XML
-              href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/commerce/toc.json
-            - name: (ER) Kryssfirmadatakilder i elektronisk rapportering
-              href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/commerce/toc.json
-            - name: 'Utforme ER-formater til å generere utgående, elektroniske dokumenter i ulike formater'
+            - name: Utforme ER-formater til å generere utgående dokumenter i ulike formater
               items:
-                - name: (ER) Utforme en konfigurasjon for generering av rapporter i OPENXML-format
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/commerce/toc.json
-                - name: (ER) Utforme konfigurasjoner til å generere rapporter i Word-format
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/commerce/toc.json
+                - name: Utforme konfigurasjoner til å generere utgående dokumenter i Excel-format
+                  items:
+                    - name: Utforme en konfigurasjon til å generere dokumenter i Excel-format
+                      href: ../fin-ops-core/dev-itpro/analytics/er-fillable-excel.md?toc=/dynamics365/commerce/toc.json
+                    - name: Eksempel på generering av rapporter i OPENXML-format
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/commerce/toc.json
+                    - name: Endre ER-formater ved å bruke Excel-maler på nytt
+                      href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/commerce/toc.json
+                    - name: Legge til kolonner i Excel-rapporter dynamisk som horisontalt utvidbare områder
+                      items:
+                        - name: Utforme formater for dynamisk å legge til kolonner i Excel-rapporter
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/commerce/toc.json
+                        - name: Kjøre formater for dynamisk å legge til kolonner i Excel-rapporter
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/commerce/toc.json
+                - name: Utforme konfigurasjoner til å generere rapporter i Word-format
+                  items:
+                    - name: Utforme en ny ER-konfigurasjon for å generere rapporter i Word-format
+                      href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word.md?toc=/dynamics365/commerce/toc.json
+                    - name: Bruke ER-konfigurasjoner på nytt med Excel-maler for å generere rapporter i Word-format
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/commerce/toc.json
+                    - name: Skjule Word-innholdskontroller i genererte rapporter
+                      href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word-suppress-controls.md?toc=/dynamics365/commerce/toc.json
                 - name: Utforme konfigurasjoner til å fylle ut PDF-maler
                   href: ../fin-ops-core/dev-itpro/analytics/er-fillable-pdf.md?toc=/dynamics365/commerce/toc.json
-            - name: Bygge inn bilder og figurer
-              items:
-                - name: (ER) Bygge inn bilder og figurer i dokumenter du genererer
-                  href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/dynamics365/commerce/toc.json
-                - name: Eksempel på innebygging av bilder og figurer
+                - name: Bygge inn bilder og figurer
                   items:
-                    - name: Utforme konfigurasjoner for å generere rapporter i Office-formatene som har innebygde bilder
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/dynamics365/commerce/toc.json
-                    - name: Gå gjennom konfigurasjoner for å generere rapporter i Office-formatene som har innebygde bilder
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/commerce/toc.json
-                    - name: Generere rapporter i Office-formater som har innebygde bilder
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/commerce/toc.json
-            - name: Endre formater for elektronisk rapportering ved å bruke Excel-maler på nytt
-              href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/commerce/toc.json
-            - name: Definere avhengigheten av ER-konfigurasjonene i andre komponenter
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/commerce/toc.json
-            - name: Utforme en ER-løsning for å bruke finansdimensjoner
-              items:
-                - name: Utforme datamodeller til å bruke finansdimensjoner som datakilder
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/dynamics365/commerce/toc.json
-                - name: Tilordne modeller for å bruke finansdimensjoner som datakilder
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/dynamics365/commerce/toc.json
-                - name: Utforme rapporter for å bruke finansdimensjoner som datakilder
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/dynamics365/commerce/toc.json
-                - name: Kjøre rapporter som bruker finansdimensjoner som datakilder
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/dynamics365/commerce/toc.json
-            - name: Utforme ER-formater til å utføre telling og summering ved hjelp av informasjon fra genererte utdata
-              items:
-                - name: Opprette formater til å utføre telling og summering
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/dynamics365/commerce/toc.json
-                - name: Konfigurere format til å utføre telling og summering
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/dynamics365/commerce/toc.json
-                - name: Bruke beregninger til å generere utdataene for telling og summering
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/dynamics365/commerce/toc.json
-                - name: Kjøre formater for å utføre telling og summering
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/dynamics365/commerce/toc.json
-            - name: Legge til kolonner i Excel-rapporter dynamisk som horisontalt utvidbare områder
-              items:
-                - name: Utforme formater for å legge til kolonner i Excel-rapporter dynamisk som horisontalt utvidbare områder
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/commerce/toc.json
-                - name: Kjøre formater for å legge til kolonner i Excel-rapporter dynamisk som horisontalt utvidbare områder
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/commerce/toc.json
-            - name: Bruke dokumentbehandlingsfiler i formatutdata
-              items:
-                - name: Klargjøre datamodeller til å bruke dokumentbehandlingsfiler i ER-utdata
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/dynamics365/commerce/toc.json
-                - name: Utvide datamodeller til å bruke dokumentbehandlingsfiler i ER-utdata
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/dynamics365/commerce/toc.json
-                - name: Opprette formater til å bruke dokumentbehandlingsfiler i ER-utdata
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/dynamics365/commerce/toc.json
-                - name: Kjøre formater for å bruke dokumentbehandlingsfiler i ER-utdata
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/commerce/toc.json
-                - name: Endre og kjøre formater for å bruke dokumentbehandlingsfiler i ER-utdata
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/commerce/toc.json
-            - name: Oppdatere programdata ved hjelp av elektronisk rapportering
+                    - name: Bygge inn bilder og figurer i dokumenter du genererer
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/dynamics365/commerce/toc.json
+                    - name: Eksempel på innebygging av bilder og figurer
+                      items:
+                        - name: Utforme konfigurasjoner for å generere rapporter i Office-formatene som har innebygde bilder
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/dynamics365/commerce/toc.json
+                        - name: Gå gjennom konfigurasjoner for å generere rapporter i Office-formatene som har innebygde bilder
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/commerce/toc.json
+                        - name: Generere rapporter i Office-formater som har innebygde bilder
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/commerce/toc.json
+                - name: Dele opp genererte XML-filer basert på filstørrelse og innholdsmengde
+                  href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/commerce/toc.json
+                - name: Skjule stykklistetegn i genererte filer
+                  href: ../fin-ops-core/dev-itpro/analytics/er-suppress-bom-characters.md?toc=/dynamics365/commerce/toc.json
+            - name: Oppdatere programdata ved hjelp av ER
               items:
                 - name: Generere elektroniske dokumenter og oppdatere programdata
                   href: ../fin-ops-core/dev-itpro/analytics/generate-electronic-documents-update-application-data.md?toc=/dynamics365/commerce/toc.json
@@ -1738,52 +1744,146 @@
                       href: ../fin-ops-core/dev-itpro/analytics/rcs-optional-attributes.md?toc=/dynamics365/commerce/toc.json
                     - name: Konfigurere ER-formater til å importere XML-formatfiler med valgfrie attributter
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md?toc=/dynamics365/commerce/toc.json
-            - name: Dele opp genererte XML-filer basert på filstørrelse og innholdsmengde
-              href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/commerce/toc.json
-            - name: Støtte for parametriserte kall av ER-datakilder av felttypen Beregnet
-              href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?toc=/dynamics365/commerce/toc.json
             - name: Konfigurasjonslivssyklus
               items:
                 - name: Administrere konfigurasjonslivssyklus
                   href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?toc=/dynamics365/commerce/toc.json
-                - name: Laste opp konfigurasjoner til Lifecycle Services
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/dynamics365/commerce/toc.json
-                - name: Importere konfigurasjoner fra Lifecycle Services
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/dynamics365/commerce/toc.json
-                - name: Laste ned konfigurasjoner fra Lifecycle Services
-                  href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/commerce/toc.json
-                - name: Importere konfigurasjoner
-                  href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/commerce/toc.json
-                - name: Laste ned ER-konfigurasjoner fra RCS-repositoriet
+                - name: Lifecycle Services (LCS)
                   items:
-                    - name: Laste ned konfigurasjoner fra ER-repositoriet til RCS-typen
-                      href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/commerce/toc.json
-                    - name: Importere konfigurasjoner fra RCS
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/commerce/toc.json
+                    - name: Laste opp konfigurasjoner til LCS
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/dynamics365/commerce/toc.json
+                    - name: Importere konfigurasjoner fra LCS
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/dynamics365/commerce/toc.json
+                    - name: Laste ned konfigurasjoner fra LCS
+                      href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/commerce/toc.json
+                    - name: Importere konfigurasjoner (LBD)
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/commerce/toc.json
+                - name: Regulatory Services (RCS)
+                  items:
+                    - name: Globaliseringsfunksjoner i RCS
+                      href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/commerce/toc.json
+                    - name: Laste ned ER-konfigurasjoner til Commerce
+                      items:
+                        - name: Laste ned konfigurasjoner fra RCS
+                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/commerce/toc.json
+                        - name: Importere konfigurasjoner fra RCS
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/commerce/toc.json
+                    - name: Globalt repositorium (GR)
+                      items:
+                        - name: Importere konfigurasjoner fra GR
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/commerce/toc.json
+                        - name: Importere oppdaterte versjoner av ER-konfigurasjoner
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/commerce/toc.json
+                        - name: Forbedret filtrering for å finne konfigurasjoner i GR
+                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/commerce/toc.json
+                        - name: Laste opp konfigurasjoner til GR
+                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
+                        - name: Dele konfigurasjoner i GR
+                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/commerce/toc.json
+                        - name: Avslutte konfigurasjoner i det globale RCS-repositoriet
+                          href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/commerce/toc.json
+            - name: Hurtigstartveiledninger
+              items:
+                - name: 'Endre formatet for ER til å generere et egendefinert, elektronisk dokument'
+                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start2-customize-report.md?toc=/dynamics365/commerce/toc.json
+                - name: Utforme en ny ER-løsning for å skrive ut en egendefinert rapport
+                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start1-new-solution.md?toc=/dynamics365/commerce/toc.json
+                - name: 'Justere en ER-løsning til å generere et egendefinert, elektronisk dokument'
+                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start3-customize-report.md?toc=/dynamics365/commerce/toc.json
             - name: Opplæringer
               items:
-                - name: Bruke datakilder for sammenføyning til å hente data fra flere programtabeller
-                  href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/commerce/toc.json
-                - name: Konfigurere modelltilordninger for landkontekstavhengig ER
-                  href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/commerce/toc.json
-                - name: Konfigurere ER-formater til å bruke parametere som angis per juridisk enhet
-                  href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=/dynamics365/commerce/toc.json
-                - name: Definere parameterne for et ER-format per juridisk enhet
-                  href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=/dynamics365/commerce/toc.json
-                - name: Utsette utføring av ER-formatelementer
+                - name: Finne ut hvordan du bruker datakilder
                   items:
-                    - name: Utsette kjøringen av sekvenselementer i ER-formater
-                      href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md
-                    - name: Utsette kjøringen av XML-elementer i ER-formater
-                      href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md
-            - name: Bruke elektroniske rapporteringsløsninger i Finance and Operations
+                    - name: Bruke sammenføyning til å hente data fra flere tabeller
+                      href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/commerce/toc.json
+                    - name: Bruke rå-XML å legge til innhold
+                      href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/commerce/toc.json
+                    - name: Støtte for parametriserte kall for datakilder av typen Beregnet felt
+                      items:
+                        - name: Forbedre brukeropplevelsen og vedlikeholdsfunksjonen
+                          href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?toc=/dynamics365/commerce/toc.json
+                        - name: Forbedre ytelsen til datatilgang
+                          href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-ds-performance.md?toc=/dynamics365/commerce/toc.json
+                    - name: ER-datakilder på tvers av firmaer
+                      href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/commerce/toc.json
+                    - name: Bruke datakilder av typen detaljer for finansdimensjoner
+                      items:
+                        - name: Utforme datamodeller
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/dynamics365/commerce/toc.json
+                        - name: Tilordne modeller for å bruke finansdimensjoner
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/dynamics365/commerce/toc.json
+                        - name: Utforme rapporter
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/dynamics365/commerce/toc.json
+                        - name: Kjøre rapporter
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/dynamics365/commerce/toc.json
+                    - name: Bruke de genererte utdataene som en datakilde til å utføre opptelling og summering
+                      items:
+                        - name: Opprette formater
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/dynamics365/commerce/toc.json
+                        - name: Konfigurere format til å utføre telling og summering
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/dynamics365/commerce/toc.json
+                        - name: Generere utdataene for opptelling og summering
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/dynamics365/commerce/toc.json
+                        - name: Kjøre formater for å utføre telling og summering
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/dynamics365/commerce/toc.json
+                    - name: Bruke dokumentrelasjonene til å få tilgang til dokumentbehandlingsfiler
+                      items:
+                        - name: Klargjøre datamodeller
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/dynamics365/commerce/toc.json
+                        - name: Utvide datamodeller for å bruke dokumentbehandlingsfiler
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/dynamics365/commerce/toc.json
+                        - name: Opprette formater
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/dynamics365/commercetoc.json
+                        - name: Kjøre formater for å bruke dokumentbehandlingsfiler
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/commerce/toc.json
+                        - name: Endre og kjøre formater for å bruke dokumentbehandlingsfiler
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/commerce/toc.json
+                    - name: Feilsøke datakilder
+                      href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/commerce/toc.json
+                    - name: Bruke STREKKODE til å generere strekkodebilder
+                      href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/commerce/toc.json
+                - name: Konfigurere modelltilordninger
+                  items:
+                    - name: Konfigurere modelltilordninger for landkontekstavhengig ER
+                      href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/commerce/toc.json
+                    - name: Administrere ER-modelltilordning i separate ER-konfigurasjoner
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/commerce/toc.json
+                    - name: Behandle flere avledede tilordninger for én modellrot
+                      href: ../fin-ops-core/dev-itpro/analytics/er-multiple-model-mappings.md?toc=/dynamics365/commerce/toc.json
+                - name: Konfigurere formater
+                  items:
+                    - name: Velge modelldefinisjoner når du oppretter formater
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/commerce/toc.json
+                    - name: Konfigurere ER-formater til å bruke parametere som angis per juridisk enhet
+                      href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=/dynamics365/commerce/toc.json
+                    - name: Definere parameterne for et ER-format per juridisk enhet
+                      href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=/dynamics365/commerce/toc.json
+                    - name: Utsette utføring av ER-formatelementer
+                      items:
+                        - name: Utsette utføring av et sekvenselement
+                          href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md?toc=/dynamics365/commerce/toc.json
+                        - name: Utsette kjøring av et XML-element
+                          href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?toc=/dynamics365/commerce/toc.json
+                    - name: Utforme flerspråklige rapporter
+                      href: ../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md?toc=/dynamics365/commerce/toc.json
+                    - name: Komprimere store utgående dokumenter
+                      href: ../fin-ops-core/dev-itpro/analytics/er-compress-outbound-files.md?toc=/dynamics365/commerce/toc.json
+                - name: Kontrollere konfigurerte ER-komponenter
+                  href: ../fin-ops-core/dev-itpro/analytics/er-components-inspections.md?toc=/dynamics365/commerce/toc.json
+                - name: Relativ bane i databindinger
+                  href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=/dynamics365/commerce/toc.json
+            - name: Bruke ER-løsninger i Commerce
               items:
                 - name: Konfigurere rammeverket
                   items:
                     - name: Konfigurere rammeverket for elektronisk rapportering
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/dynamics365/commerce/toc.json
                     - name: Sikkerhetskopiere og gjenopprette ER-maler
-                      href: ../fin-ops-core/dev-itpro/analytics/er-backup-storage-templates.md?toc=/dynamics365/commerce/toc.json
+                      items:
+                        - name: Sikkerhetskopiere ER-maler
+                          href: ../fin-ops-core/dev-itpro/analytics/er-backup-storage-templates.md?toc=/dynamics365/commerce/toc.json
+                        - name: Opprydding av ER-overføring
+                          href: ../fin-ops-core/dev-itpro/analytics/er-migration-cleanup.md?toc=/dynamics365/commerce/toc.json
                     - name: Opprette konfigurasjonsleverandører og merke dem som aktive
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/dynamics365/commerce/toc.json
                 - name: Mål
@@ -1806,40 +1906,58 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md?toc=/dynamics365/commerce/toc.json
                     - name: Konfigurere mål
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/commerce/toc.json
+                    - name: Konfigurere handlingsavhengige mål
+                      href: ../fin-ops-core/dev-itpro/analytics/er-action-dependent-destinations.md?toc=/dynamics365/commerce/toc.json
                 - name: Definere en referanse til et ER-format
                   href: ../fin-ops-core/dev-itpro/analytics/er-extended-format-lookup.md?toc=/dynamics365/commerce/toc.json
                 - name: Validere genererte rapporter automatisk
                   items:
                     - name: Spore genererte rapportresultater og sammenligne dem med grunnlinjeverdier
-                      href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/commerce/toc.json
+                      href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/commercetoc.json
                     - name: Forbedringer i sporing av resultater av genererte ER-rapporter og sammenligninger med grunnlinjeverdier
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/commerce/toc.json
-                    - name: Automatisere testing med elektronisk rapportering
+                    - name: Automatisere testing med ER
                       href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/commerce/toc.json
                 - name: Automatisere forretningsprosesser ved hjelp av konfigurasjon av elektronisk rapportering
                   items:
-                    - name: Konfigurere elektronisk rapportering for å hente data til Power BI
+                    - name: Konfigurere ER for å hente data til Power BI
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/commerce/toc.json
                     - name: Generere skjemaer for fritekstfaktura (FTI) som kan skrives ut
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/commerce/toc.json
                 - name: Spore kjøring av ER-formater for å feilsøke ytelsesproblemer
                   href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/commerce/toc.json
-                - name: Behandling av forretningsdokument
+                - name: Behandling av forretningsdokument (BDM)
                   items:
-                    - name: Oversikt over administrasjon av forretningsdokument
+                    - name: BDM-oversikt
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/commerce/toc.json
-                    - name: Nytt dokumentbrukergrensesnitt i Forretningsdokumentbehandling
+                    - name: Nytt dokumentbrukergrensesnitt i BDM
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management-new-template-ui.md?toc=/dynamics365/commerce/toc.json
-                    - name: Legge til nye felt i en forretningsdokumentmal i Microsoft Excel
-                      href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/commerce/toc.json
+                    - name: Redigere maler for forretningsdokumenter i BDM
+                      items:
+                        - name: Legge til nye felt i en forretningsdokumentmal i Microsoft Excel
+                          href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/commerce/toc.json
+                        - name: Oppdatere strukturen for en forretningsdokumentmal
+                          href: ../fin-ops-core/dev-itpro/analytics/er-bdm-update-structure.md?toc=/dynamics365/commerce/toc.json
             - name: API for ER-rammeverk
               items:
-                - name: Utvide listen over funksjoner for elektronisk rapportering
+                - name: Utvide listen over innebygde funksjoner
                   href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/dynamics365/commerce/toc.json
-                - name: API-endringer for elektronisk rapporteringsrammeverk for Application update 7.3
-                  href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/commerce/toc.json
+                - name: API-endringer
+                  items:
+                    - name: Application update 7.3
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/commerce/toc.json
+                    - name: Application update 10.0.11
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/commerce/toc.json
+                    - name: Application update 10.0.17
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?toc=/dynamics365/commerce/toc.json
                 - name: Angi en egendefinert lagerplassering for genererte dokumenter
-                  href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/commerce/toc.json
+                  items:
+                    - name: Abonnere på en hendelse for å be om svar fra abonnementsbehandlingen
+                      href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/commerce/toc.json
+                    - name: Delegere opprettingen av et ER-mål til en egendefinert målfabrikk
+                      href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-files.md?toc=/dynamics365/commerce/toc.json
+                - name: Initialisere datakildeverdier av typen BRUKERINNDATAPARAMETER fra kildekoden
+                  href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/commerce/toc.json
         - name: Mobilapp for Finance and Operations (Dynamics 365)
           items:
             - name: Startside for mobilapp
@@ -2204,6 +2322,8 @@
                       href: e-commerce-extensibility/best-practices-dev.md
                     - name: Vanlige spørsmål om SDK for Dynamics 365 Commerce online
                       href: e-commerce-extensibility/sdk-faq.md
+                    - name: Feilsøke anbefalte fremgangsmåter for utvikling av Dynamics 365 Commerce
+                      href: e-commerce-extensibility/debugging-best-practices.md
             - name: SDK for Retail
               items:
                 - name: Arkitektur for SDK for Retail

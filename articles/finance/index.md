@@ -2,11 +2,9 @@
 title: Startside for Finance
 description: Dette emnet gir en oversikt over emnene i hjelpen og andre ressurser for funksjonene for økonomistyring i Microsoft Dynamics 365 Finance.
 author: roschlom
-manager: AnnBe
 ms.date: 06/20/2018
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7b2338bcb727e0a513430c74b28b54f2101f2e3b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 8fcd7be16d20d93adaa81e6183912c89be0a301d
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5218889"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5813489"
 ---
 # <a name="finance-home-page"></a>Startside for Finance
 
@@ -71,8 +69,10 @@ Bestemmelser for land/område påvirker avgiftsoppsettet og andre områder innen
 
 ### <a name="additional-content"></a>Tilleggsinnhold
 
-Funksjonalitet for Supply Chain Management dekker deler av Procure-to-Pay-prosessen, som omfatter rekvisisjon, bestilling, mottak, fakturering og betaling for varer og tjenester som organisasjonen kjøper. Se [startsiden for Supply Chain Management](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md) hvis du vil ha informasjon om funksjoner for styring av innkjøp, lager og produksjon. 
+Funksjonalitet for Supply Chain Management dekker deler av Procure-to-Pay-prosessen, som omfatter rekvisisjon, bestilling, mottak, fakturering og betaling for varer og tjenester som organisasjonen kjøper. Se [startsiden for Supply Chain Management](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md) hvis du vil ha informasjon om funksjoner for styring av innkjøp, lager og produksjon.
 
+## <a name="elearning-courses"></a>e-læringskurs
 
+Gå til [Dynamics 365 Finance på Microsoft Learn](https://docs.microsoft.com/learn/browse/?products=dynamics-finance&resource_type=learning%20path) for elektroniske kurs og opplæring.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
