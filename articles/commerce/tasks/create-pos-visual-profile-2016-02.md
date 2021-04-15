@@ -2,11 +2,9 @@
 title: Opprette visuelle profiler for salgssted
 description: Denne prosedyren hjelper med å opprette en ny visuell profil for salgssted.
 author: jashanno
-manager: AnnBe
 ms.date: 12/05/2015
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
@@ -15,37 +13,37 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d2fda8857a3ff8ac52bb48e7c032ffae0441ce60
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 41b5e25c6e4569d72124bff55781dba16227861a
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5221263"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5802749"
 ---
-# <a name="create-point-of-sale-pos-visual-profiles"></a><span data-ttu-id="bb542-103">Opprette visuelle profiler for salgssted</span><span class="sxs-lookup"><span data-stu-id="bb542-103">Create point of sale (POS) visual profiles</span></span>
+# <a name="create-point-of-sale-pos-visual-profiles"></a><span data-ttu-id="eee56-103">Opprette visuelle profiler for salgssted</span><span class="sxs-lookup"><span data-stu-id="eee56-103">Create point of sale (POS) visual profiles</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="bb542-104">Denne prosedyren hjelper med å opprette en ny visuell profil for salgssted.</span><span class="sxs-lookup"><span data-stu-id="bb542-104">This procedure walks through creating a new point of sale (POS) visual profile.</span></span> <span data-ttu-id="bb542-105">En visuell profil inneholder grunnleggende informasjon som bestemmer utseendet til kasser på salgsstedet.</span><span class="sxs-lookup"><span data-stu-id="bb542-105">A visual profile contains basic information that determines the appearance of POS registers.</span></span> <span data-ttu-id="bb542-106">Du kan opprette flere visuelle profiler og tilordne bestemte profiler som skal kjøres på bestemte kasser.</span><span class="sxs-lookup"><span data-stu-id="bb542-106">You can create several visual profiles and assign specific profiles to run on specific registers.</span></span> <span data-ttu-id="bb542-107">Denne prosedyren bruker demonstrasjonsdatafirmaet USRT.</span><span class="sxs-lookup"><span data-stu-id="bb542-107">This procedure uses the USRT demo data company.</span></span>
+<span data-ttu-id="eee56-104">Denne prosedyren hjelper med å opprette en ny visuell profil for salgssted.</span><span class="sxs-lookup"><span data-stu-id="eee56-104">This procedure walks through creating a new point of sale (POS) visual profile.</span></span> <span data-ttu-id="eee56-105">En visuell profil inneholder grunnleggende informasjon som bestemmer utseendet til kasser på salgsstedet.</span><span class="sxs-lookup"><span data-stu-id="eee56-105">A visual profile contains basic information that determines the appearance of POS registers.</span></span> <span data-ttu-id="eee56-106">Du kan opprette flere visuelle profiler og tilordne bestemte profiler som skal kjøres på bestemte kasser.</span><span class="sxs-lookup"><span data-stu-id="eee56-106">You can create several visual profiles and assign specific profiles to run on specific registers.</span></span> <span data-ttu-id="eee56-107">Denne prosedyren bruker demonstrasjonsdatafirmaet USRT.</span><span class="sxs-lookup"><span data-stu-id="eee56-107">This procedure uses the USRT demo data company.</span></span>
 
-1. <span data-ttu-id="bb542-108">Gå til Detaljhandel og handel > Kanaloppsett > Salgsstedsoppsett > Salgsstedsprofiler > Visuelle profiler.</span><span class="sxs-lookup"><span data-stu-id="bb542-108">Go to Retail and Commerce > Channel setup > POS setup > POS profiles > Visual profiles.</span></span>
-2. <span data-ttu-id="bb542-109">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="bb542-109">Click New.</span></span>
-3. <span data-ttu-id="bb542-110">Skriv inn en verdi i feltet Profil.</span><span class="sxs-lookup"><span data-stu-id="bb542-110">In the Profile number field, type a value.</span></span>
-4. <span data-ttu-id="bb542-111">Skriv inn en verdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="bb542-111">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="bb542-112">Klikk rullegardinknappen i feltet Programtype for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="bb542-112">In the Application type field, click the drop-down button to open the lookup.</span></span>
-6. <span data-ttu-id="bb542-113">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="bb542-113">In the list, click the link in the selected row.</span></span>
-7. <span data-ttu-id="bb542-114">Klikk rullegardinknappen i feltet Tema for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="bb542-114">In the Theme field, click the drop-down button to open the lookup.</span></span>
-8. <span data-ttu-id="bb542-115">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="bb542-115">In the list, click the link in the selected row.</span></span>
-9. <span data-ttu-id="bb542-116">Klikk rullegardinknappen i feltet Uthevingsfarge for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="bb542-116">In the Accent color field, click the drop-down button to open the lookup.</span></span>
-10. <span data-ttu-id="bb542-117">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="bb542-117">In the list, find and select the desired record.</span></span>
-11. <span data-ttu-id="bb542-118">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="bb542-118">In the list, click the link in the selected row.</span></span>
-12. <span data-ttu-id="bb542-119">Aktiver utvidelsen av delen Påloggingsbakgrunn.</span><span class="sxs-lookup"><span data-stu-id="bb542-119">Toggle the expansion of the Login background section.</span></span>
-13. <span data-ttu-id="bb542-120">I feltet ID for liggende bilde velger eller angir du en bilde-ID.</span><span class="sxs-lookup"><span data-stu-id="bb542-120">In the Landscape image ID field, select or enter an image ID.</span></span>
-14. <span data-ttu-id="bb542-121">I feltet Portrettbilde-ID velger eller angir du en bilde-ID.</span><span class="sxs-lookup"><span data-stu-id="bb542-121">In the Portrait image ID field, select or enter an image ID.</span></span>
-15. <span data-ttu-id="bb542-122">Aktiver/deaktiver utvidelsen av delen Bakgrunn.</span><span class="sxs-lookup"><span data-stu-id="bb542-122">Toggle the expansion of the Background section.</span></span>
-16. <span data-ttu-id="bb542-123">Be om hurtigmeny for bilde-ID-en.</span><span class="sxs-lookup"><span data-stu-id="bb542-123">RequestPopup the Image ID.</span></span>
-17. <span data-ttu-id="bb542-124">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="bb542-124">In the list, click the link in the selected row.</span></span>
-18. <span data-ttu-id="bb542-125">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="bb542-125">Click Save.</span></span>
+1. <span data-ttu-id="eee56-108">Gå til Detaljhandel og handel > Kanaloppsett > Salgsstedsoppsett > Salgsstedsprofiler > Visuelle profiler.</span><span class="sxs-lookup"><span data-stu-id="eee56-108">Go to Retail and Commerce > Channel setup > POS setup > POS profiles > Visual profiles.</span></span>
+2. <span data-ttu-id="eee56-109">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="eee56-109">Click New.</span></span>
+3. <span data-ttu-id="eee56-110">Skriv inn en verdi i feltet Profil.</span><span class="sxs-lookup"><span data-stu-id="eee56-110">In the Profile number field, type a value.</span></span>
+4. <span data-ttu-id="eee56-111">Skriv inn en verdi i feltet Beskrivelse.</span><span class="sxs-lookup"><span data-stu-id="eee56-111">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="eee56-112">Klikk rullegardinknappen i feltet Programtype for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="eee56-112">In the Application type field, click the drop-down button to open the lookup.</span></span>
+6. <span data-ttu-id="eee56-113">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="eee56-113">In the list, click the link in the selected row.</span></span>
+7. <span data-ttu-id="eee56-114">Klikk rullegardinknappen i feltet Tema for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="eee56-114">In the Theme field, click the drop-down button to open the lookup.</span></span>
+8. <span data-ttu-id="eee56-115">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="eee56-115">In the list, click the link in the selected row.</span></span>
+9. <span data-ttu-id="eee56-116">Klikk rullegardinknappen i feltet Uthevingsfarge for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="eee56-116">In the Accent color field, click the drop-down button to open the lookup.</span></span>
+10. <span data-ttu-id="eee56-117">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="eee56-117">In the list, find and select the desired record.</span></span>
+11. <span data-ttu-id="eee56-118">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="eee56-118">In the list, click the link in the selected row.</span></span>
+12. <span data-ttu-id="eee56-119">Aktiver utvidelsen av delen Påloggingsbakgrunn.</span><span class="sxs-lookup"><span data-stu-id="eee56-119">Toggle the expansion of the Login background section.</span></span>
+13. <span data-ttu-id="eee56-120">I feltet ID for liggende bilde velger eller angir du en bilde-ID.</span><span class="sxs-lookup"><span data-stu-id="eee56-120">In the Landscape image ID field, select or enter an image ID.</span></span>
+14. <span data-ttu-id="eee56-121">I feltet Portrettbilde-ID velger eller angir du en bilde-ID.</span><span class="sxs-lookup"><span data-stu-id="eee56-121">In the Portrait image ID field, select or enter an image ID.</span></span>
+15. <span data-ttu-id="eee56-122">Aktiver/deaktiver utvidelsen av delen Bakgrunn.</span><span class="sxs-lookup"><span data-stu-id="eee56-122">Toggle the expansion of the Background section.</span></span>
+16. <span data-ttu-id="eee56-123">Be om hurtigmeny for bilde-ID-en.</span><span class="sxs-lookup"><span data-stu-id="eee56-123">RequestPopup the Image ID.</span></span>
+17. <span data-ttu-id="eee56-124">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="eee56-124">In the list, click the link in the selected row.</span></span>
+18. <span data-ttu-id="eee56-125">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="eee56-125">Click Save.</span></span>
 
 
 
