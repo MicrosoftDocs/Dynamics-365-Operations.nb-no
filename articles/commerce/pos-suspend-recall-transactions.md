@@ -2,11 +2,9 @@
 title: Suspendere og gjenoppta en transaksjon på salgsstedet
 description: Dette emnet forklarer hvordan brukere kan avbryte pågående transaksjoner og deretter gjenoppta dem senere eller i en annen kasse ved hjelp av Dynamics 365 Commerce.
 author: jblucher
-manager: AnnBe
 ms.date: 11/27/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
@@ -17,12 +15,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: fb92de200690b03a55a3a173fd433478c8e3175d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: fdb693cb3b7520a9850d3e37dd512fc5b2a847f3
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5231278"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5798663"
 ---
 # <a name="suspend-and-resume-a-transaction-in-the-point-of-sale-pos"></a>Suspendere og gjenoppta en transaksjon på salgsstedet
 

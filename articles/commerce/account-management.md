@@ -2,11 +2,9 @@
 title: Kontobehandlingssider og -moduler
 description: Dette emnet dekker kontobehandlingssider og -moduler i Microsoft Dynamics 365 Commerce.
 author: v-chgri
-manager: annbe
-ms.date: 09/15/2020
+ms.date: 03/17/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -17,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 29523d03fb687684dae7d0ce08208905cce702df
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: df4959a61f1b2948c62a558523a848ff8b2fe0a8
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5206637"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5796300"
 ---
 # <a name="account-management-pages-and-modules"></a>Kontobehandlingssider og -moduler
 
@@ -51,9 +49,9 @@ Siden for ordrehistorikk bruker ordreloggmodulen til å vise alle de siste ordre
 
 Ordredetaljer-siden inneholder detaljert informasjon for hver ordre og er tilgjengelig fra ordrehistorikksiden. Den bruker ordredetaljermodulen, som krever salgs-IDen eller transaksjons-IDen for å hente ordredetaljene.
 
-### <a name="user-profile-page"></a>Brukerprofilside
+### <a name="my-profile-page"></a>Min profilside
 
-Siden brukerprofil viser brukerkontodetaljer, for eksempel brukerens navn og e-postadresse. Den bruker brukerprofildetaljene og brukerprofilredigeringsmodulene. Selv om epostadresse ikke kan fjernes, kan den redigeres. Brukerprofilsiden viser også brukerpreferansene som gjør en bruker i stand til å velge/velge bort bestemte funksjoner, for eksempel tilpassing av anbefalingslister. 
+Min profil-siden viser brukerens kontoprofildetaljer ved hjelp av kontoprofilmodulen. Siden viser e-postadressen som er knyttet til brukerens konto, i tillegg til innstillinger som er angitt for kontoen. Hvis du definerer egendefinerte kundeattributter, viser også delen Tilleggsinformasjon disse attributtene. Brukere kan redigere navn, innstillinger eller tilleggsinformasjon (hvis tilgjengelig).
 
 ### <a name="user-address-page"></a>Brukeradresseside
 

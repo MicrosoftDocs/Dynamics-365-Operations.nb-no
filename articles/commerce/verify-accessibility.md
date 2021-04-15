@@ -2,11 +2,9 @@
 title: Kontrollere tilgjengelighet for sideinnhold
 description: Dette emnet beskriver hvordan du kontrollerer tilgjengeligheten for sideinnhold i Microsoft Dynamics 365 Commerce.
 author: josaw1
-manager: annbe
 ms.date: 01/08/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,21 +14,18 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2019-12-19
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 186044fc7a360f227cecffb39bad0e225245dd4d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 885696c13b0e5353e6dbd9dc21cf075d5e301786
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5210977"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5791637"
 ---
 # <a name="verify-page-content-accessibility"></a>Kontrollere tilgjengelighet for sideinnhold
-
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet beskriver hvordan du kontrollerer tilgjengeligheten for sideinnhold i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Oversikt
 
 Når du er ferdig med å endre en side, bør du sørge for at innholdet er tilgjengelig for alle på Internett. I redigeringsverktøyene for handel kan du enkelt kontrollere tilgjengeligheten til sideinnholdet ved hjelp av den integrerte [Microsoft Accessibility Insights](https://accessibilityinsights.io/)-tjenesten. Denne tjenesten verifiserer sideinnholdet ditt mot de seneste retningslinjene for [tilgjengelighet i World Wide Web Consortium (W3C)](https://www.w3.org/standards/webdesign/accessibility).
 
