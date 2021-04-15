@@ -2,11 +2,9 @@
 title: " Opprette og tilknytte en maskinvarestasjon"
 description: Denne prosedyren hjelper med å opprette en ny maskinvarestasjon.
 author: jashanno
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: RetailHardwareStation, RetailStoreTable
 audience: Application User
@@ -16,46 +14,46 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d0c02246a20ef28c0f4f28b73dfe5ff56f38a68b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: a4402e8d1179499512034e7deb8b3eb78f12096f
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5247050"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5798591"
 ---
-# <a name="create-and-associate-a-hardware-station"></a><span data-ttu-id="dcfe6-103"> Opprette og tilknytte en maskinvarestasjon</span><span class="sxs-lookup"><span data-stu-id="dcfe6-103">Create and associate a hardware station</span></span>
+# <a name="create-and-associate-a-hardware-station"></a><span data-ttu-id="566e1-103"> Opprette og tilknytte en maskinvarestasjon</span><span class="sxs-lookup"><span data-stu-id="566e1-103">Create and associate a hardware station</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="dcfe6-104">Denne prosedyren hjelper med å opprette en ny maskinvarestasjon.</span><span class="sxs-lookup"><span data-stu-id="dcfe6-104">This procedure walks through how to create a new hardware station.</span></span> <span data-ttu-id="dcfe6-105">En ny maskinvareprofil opprettes og brukes til å legge til nye maskinvarestasjoner i en forhåndsdefinert butikk (kanal).</span><span class="sxs-lookup"><span data-stu-id="dcfe6-105">A new hardware profile will be created and used to add new hardware stations to a pre-defined store (channel).</span></span> <span data-ttu-id="dcfe6-106">Denne prosedyren bruker firmaet USRT i demonstrasjonsdataene.</span><span class="sxs-lookup"><span data-stu-id="dcfe6-106">This procedure uses the USRT company in demo data.</span></span>
+<span data-ttu-id="566e1-104">Denne prosedyren hjelper med å opprette en ny maskinvarestasjon.</span><span class="sxs-lookup"><span data-stu-id="566e1-104">This procedure walks through how to create a new hardware station.</span></span> <span data-ttu-id="566e1-105">En ny maskinvareprofil opprettes og brukes til å legge til nye maskinvarestasjoner i en forhåndsdefinert butikk (kanal).</span><span class="sxs-lookup"><span data-stu-id="566e1-105">A new hardware profile will be created and used to add new hardware stations to a pre-defined store (channel).</span></span> <span data-ttu-id="566e1-106">Denne prosedyren bruker firmaet USRT i demonstrasjonsdataene.</span><span class="sxs-lookup"><span data-stu-id="566e1-106">This procedure uses the USRT company in demo data.</span></span>
 
-1. <span data-ttu-id="dcfe6-107">Gå til Grunnleggende om handel > Kanaler > ..</span><span class="sxs-lookup"><span data-stu-id="dcfe6-107">Go to Commerce essentials > Channels > ..</span></span> <span data-ttu-id="dcfe6-108">> ..</span><span class="sxs-lookup"><span data-stu-id="dcfe6-108">> ..</span></span> <span data-ttu-id="dcfe6-109">> ..</span><span class="sxs-lookup"><span data-stu-id="dcfe6-109">> ..</span></span> <span data-ttu-id="dcfe6-110">> Profiler for maskinvarestasjon.</span><span class="sxs-lookup"><span data-stu-id="dcfe6-110">> Hardware station profiles.</span></span>
-2. <span data-ttu-id="dcfe6-111">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="dcfe6-111">Click New.</span></span>
-3. <span data-ttu-id="dcfe6-112">Skriv inn TestHWProfile i feltet Maskinvarestasjon-ID.</span><span class="sxs-lookup"><span data-stu-id="dcfe6-112">In the Hardware station ID field, type 'TestHWProfile'.</span></span>
-4. <span data-ttu-id="dcfe6-113">Skriv inn en verdi i Navn-feltet.</span><span class="sxs-lookup"><span data-stu-id="dcfe6-113">In the Name field, type a value.</span></span>
-5. <span data-ttu-id="dcfe6-114">Angi et tall i feltet Portnummer.</span><span class="sxs-lookup"><span data-stu-id="dcfe6-114">In the Port number field, enter a number.</span></span>
-6. <span data-ttu-id="dcfe6-115">Klikk rullegardinknappen i Maskinvareprofil-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="dcfe6-115">In the Hardware profile field, click the drop-down button to open the lookup.</span></span>
-7. <span data-ttu-id="dcfe6-116">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="dcfe6-116">In the list, find and select the desired record.</span></span>
-8. <span data-ttu-id="dcfe6-117">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="dcfe6-117">In the list, click the link in the selected row.</span></span>
-9. <span data-ttu-id="dcfe6-118">Klikk rullegardinknappen i feltet Pakkenavn for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="dcfe6-118">In the Package name field, click the drop-down button to open the lookup.</span></span>
-10. <span data-ttu-id="dcfe6-119">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="dcfe6-119">In the list, click the link in the selected row.</span></span>
-    * <span data-ttu-id="dcfe6-120">Dette er standardpakken som følger med et nytt miljø.</span><span class="sxs-lookup"><span data-stu-id="dcfe6-120">This is the standard package that comes with a new environment.</span></span> <span data-ttu-id="dcfe6-121">Versjonsnummeret kan variere.</span><span class="sxs-lookup"><span data-stu-id="dcfe6-121">The version number may vary.</span></span>  
-11. <span data-ttu-id="dcfe6-122">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="dcfe6-122">Click Save.</span></span>
-12. <span data-ttu-id="dcfe6-123">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="dcfe6-123">Close the page.</span></span>
-13. <span data-ttu-id="dcfe6-124">Gå til Retail og Commerce > Kanaler > Alle butikker.</span><span class="sxs-lookup"><span data-stu-id="dcfe6-124">Go to Retail and Commerce > Channels > All stores.</span></span>
-14. <span data-ttu-id="dcfe6-125">Velg rad 17 i listen.</span><span class="sxs-lookup"><span data-stu-id="dcfe6-125">In the list, select row 17.</span></span>
-    * <span data-ttu-id="dcfe6-126">Hvis du bruker demonstrasjonsdatafirmaet USRT, er dette Houston-butikken.</span><span class="sxs-lookup"><span data-stu-id="dcfe6-126">If you are using the USRT demo data company, this is the Houston store.</span></span>  
-15. <span data-ttu-id="dcfe6-127">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="dcfe6-127">In the list, click the link in the selected row.</span></span>
-16. <span data-ttu-id="dcfe6-128">Aktiver/deaktiver utvidelsen av delen Maskinvarestasjoner.</span><span class="sxs-lookup"><span data-stu-id="dcfe6-128">Toggle the expansion of the Hardware stations section.</span></span>
-17. <span data-ttu-id="dcfe6-129">Klikk Legg til.</span><span class="sxs-lookup"><span data-stu-id="dcfe6-129">Click Add.</span></span>
-18. <span data-ttu-id="dcfe6-130">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="dcfe6-130">In the list, mark the selected row.</span></span>
-19. <span data-ttu-id="dcfe6-131">Klikk rullegardinknappen i feltet Profil-ID for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="dcfe6-131">In the Profile ID field, click the drop-down button to open the lookup.</span></span>
-20. <span data-ttu-id="dcfe6-132">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="dcfe6-132">In the list, find and select the desired record.</span></span>
-    * <span data-ttu-id="dcfe6-133">Dette må være den nye maskinvarestasjonsprofilen som ble opprettet tidligere.</span><span class="sxs-lookup"><span data-stu-id="dcfe6-133">This must be the new hardware station profile that was created in the previous steps.</span></span>  
-21. <span data-ttu-id="dcfe6-134">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="dcfe6-134">In the list, click the link in the selected row.</span></span>
-22. <span data-ttu-id="dcfe6-135">Skriv inn en verdi i feltet Vertsnavn.</span><span class="sxs-lookup"><span data-stu-id="dcfe6-135">In the Host name field, type a value.</span></span>
-23. <span data-ttu-id="dcfe6-136">Skriv inn en verdi i feltet EFT-terminal-ID.</span><span class="sxs-lookup"><span data-stu-id="dcfe6-136">In the EFT terminal ID field, type a value.</span></span>
-24. <span data-ttu-id="dcfe6-137">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="dcfe6-137">Click Save.</span></span>
+1. <span data-ttu-id="566e1-107">Gå til Grunnleggende om handel > Kanaler > ..</span><span class="sxs-lookup"><span data-stu-id="566e1-107">Go to Commerce essentials > Channels > ..</span></span> <span data-ttu-id="566e1-108">> ..</span><span class="sxs-lookup"><span data-stu-id="566e1-108">> ..</span></span> <span data-ttu-id="566e1-109">> ..</span><span class="sxs-lookup"><span data-stu-id="566e1-109">> ..</span></span> <span data-ttu-id="566e1-110">> Profiler for maskinvarestasjon.</span><span class="sxs-lookup"><span data-stu-id="566e1-110">> Hardware station profiles.</span></span>
+2. <span data-ttu-id="566e1-111">Klikk Ny.</span><span class="sxs-lookup"><span data-stu-id="566e1-111">Click New.</span></span>
+3. <span data-ttu-id="566e1-112">Skriv inn TestHWProfile i feltet Maskinvarestasjon-ID.</span><span class="sxs-lookup"><span data-stu-id="566e1-112">In the Hardware station ID field, type 'TestHWProfile'.</span></span>
+4. <span data-ttu-id="566e1-113">Skriv inn en verdi i Navn-feltet.</span><span class="sxs-lookup"><span data-stu-id="566e1-113">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="566e1-114">Angi et tall i feltet Portnummer.</span><span class="sxs-lookup"><span data-stu-id="566e1-114">In the Port number field, enter a number.</span></span>
+6. <span data-ttu-id="566e1-115">Klikk rullegardinknappen i Maskinvareprofil-feltet for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="566e1-115">In the Hardware profile field, click the drop-down button to open the lookup.</span></span>
+7. <span data-ttu-id="566e1-116">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="566e1-116">In the list, find and select the desired record.</span></span>
+8. <span data-ttu-id="566e1-117">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="566e1-117">In the list, click the link in the selected row.</span></span>
+9. <span data-ttu-id="566e1-118">Klikk rullegardinknappen i feltet Pakkenavn for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="566e1-118">In the Package name field, click the drop-down button to open the lookup.</span></span>
+10. <span data-ttu-id="566e1-119">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="566e1-119">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="566e1-120">Dette er standardpakken som følger med et nytt miljø.</span><span class="sxs-lookup"><span data-stu-id="566e1-120">This is the standard package that comes with a new environment.</span></span> <span data-ttu-id="566e1-121">Versjonsnummeret kan variere.</span><span class="sxs-lookup"><span data-stu-id="566e1-121">The version number may vary.</span></span>  
+11. <span data-ttu-id="566e1-122">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="566e1-122">Click Save.</span></span>
+12. <span data-ttu-id="566e1-123">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="566e1-123">Close the page.</span></span>
+13. <span data-ttu-id="566e1-124">Gå til Retail og Commerce > Kanaler > Alle butikker.</span><span class="sxs-lookup"><span data-stu-id="566e1-124">Go to Retail and Commerce > Channels > All stores.</span></span>
+14. <span data-ttu-id="566e1-125">Velg rad 17 i listen.</span><span class="sxs-lookup"><span data-stu-id="566e1-125">In the list, select row 17.</span></span>
+    * <span data-ttu-id="566e1-126">Hvis du bruker demonstrasjonsdatafirmaet USRT, er dette Houston-butikken.</span><span class="sxs-lookup"><span data-stu-id="566e1-126">If you are using the USRT demo data company, this is the Houston store.</span></span>  
+15. <span data-ttu-id="566e1-127">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="566e1-127">In the list, click the link in the selected row.</span></span>
+16. <span data-ttu-id="566e1-128">Aktiver/deaktiver utvidelsen av delen Maskinvarestasjoner.</span><span class="sxs-lookup"><span data-stu-id="566e1-128">Toggle the expansion of the Hardware stations section.</span></span>
+17. <span data-ttu-id="566e1-129">Klikk Legg til.</span><span class="sxs-lookup"><span data-stu-id="566e1-129">Click Add.</span></span>
+18. <span data-ttu-id="566e1-130">Merk den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="566e1-130">In the list, mark the selected row.</span></span>
+19. <span data-ttu-id="566e1-131">Klikk rullegardinknappen i feltet Profil-ID for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="566e1-131">In the Profile ID field, click the drop-down button to open the lookup.</span></span>
+20. <span data-ttu-id="566e1-132">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="566e1-132">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="566e1-133">Dette må være den nye maskinvarestasjonsprofilen som ble opprettet tidligere.</span><span class="sxs-lookup"><span data-stu-id="566e1-133">This must be the new hardware station profile that was created in the previous steps.</span></span>  
+21. <span data-ttu-id="566e1-134">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="566e1-134">In the list, click the link in the selected row.</span></span>
+22. <span data-ttu-id="566e1-135">Skriv inn en verdi i feltet Vertsnavn.</span><span class="sxs-lookup"><span data-stu-id="566e1-135">In the Host name field, type a value.</span></span>
+23. <span data-ttu-id="566e1-136">Skriv inn en verdi i feltet EFT-terminal-ID.</span><span class="sxs-lookup"><span data-stu-id="566e1-136">In the EFT terminal ID field, type a value.</span></span>
+24. <span data-ttu-id="566e1-137">Klikk Lagre.</span><span class="sxs-lookup"><span data-stu-id="566e1-137">Click Save.</span></span>
 
 
 
