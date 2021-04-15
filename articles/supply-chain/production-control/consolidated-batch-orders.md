@@ -2,11 +2,9 @@
 title: Konsoliderte partiordrer
 description: Denne artikkelen beskriver begrepet konsoliderte partiordrer.
 author: ShylaThompson
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PmfAddToConsOrder, PmfBulkItemConv, PmfBulkPackOnHand, PmfConsOrderListPage
 audience: Application User
@@ -18,29 +16,29 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ed722ba0c79afa038f1af7b4491f3ff18b052067
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: e8d7656889b69cfd1dcffb45b52eb649bce59629
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5246387"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5809236"
 ---
-# <a name="consolidated-batch-orders"></a><span data-ttu-id="ad03a-103">Konsoliderte partiordrer</span><span class="sxs-lookup"><span data-stu-id="ad03a-103">Consolidated batch orders</span></span>
+# <a name="consolidated-batch-orders"></a><span data-ttu-id="7143c-103">Konsoliderte partiordrer</span><span class="sxs-lookup"><span data-stu-id="7143c-103">Consolidated batch orders</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="ad03a-104">Denne artikkelen beskriver begrepet konsoliderte partiordrer.</span><span class="sxs-lookup"><span data-stu-id="ad03a-104">This article describes the concept of consolidated batch orders.</span></span>
+<span data-ttu-id="7143c-104">Denne artikkelen beskriver begrepet konsoliderte partiordrer.</span><span class="sxs-lookup"><span data-stu-id="7143c-104">This article describes the concept of consolidated batch orders.</span></span>
 
-<span data-ttu-id="ad03a-105">En bulkvare som produseres anses som en overordnet vare, mens en pakket vare anses som en underordnet vare.</span><span class="sxs-lookup"><span data-stu-id="ad03a-105">A bulk item that is produced is considered a parent item, whereas a packed item is considered a child item.</span></span> <span data-ttu-id="ad03a-106">Forholdet mellom bulkvaren og den pakkede varen uttrykkes i en bulkvarekonvertering.</span><span class="sxs-lookup"><span data-stu-id="ad03a-106">The relation between the bulk item and the packed item is expressed in a bulk item conversion.</span></span> <span data-ttu-id="ad03a-107">Denne bulkvarekonverteringen er definert i selve bulkvaren.</span><span class="sxs-lookup"><span data-stu-id="ad03a-107">This bulk item conversion is defined on the bulk item itself.</span></span>  
+<span data-ttu-id="7143c-105">En bulkvare som produseres anses som en overordnet vare, mens en pakket vare anses som en underordnet vare.</span><span class="sxs-lookup"><span data-stu-id="7143c-105">A bulk item that is produced is considered a parent item, whereas a packed item is considered a child item.</span></span> <span data-ttu-id="7143c-106">Forholdet mellom bulkvaren og den pakkede varen uttrykkes i en bulkvarekonvertering.</span><span class="sxs-lookup"><span data-stu-id="7143c-106">The relation between the bulk item and the packed item is expressed in a bulk item conversion.</span></span> <span data-ttu-id="7143c-107">Denne bulkvarekonverteringen er definert i selve bulkvaren.</span><span class="sxs-lookup"><span data-stu-id="7143c-107">This bulk item conversion is defined on the bulk item itself.</span></span>  
 
-<span data-ttu-id="ad03a-108">Pakkede varer kan pakkes i containere i én eller flere størrelser som anses som én enhet.</span><span class="sxs-lookup"><span data-stu-id="ad03a-108">Packed items can be packaged into containers of either a single size or multiple sizes that are considered one unit.</span></span> <span data-ttu-id="ad03a-109">Ved å konsolidere ordrene, kan du vise alle de relaterte partiordrene for en bulkvare i én enkelt visning, slik at det blir enklere å fastslå gjenstående arbeid som må fullføres.</span><span class="sxs-lookup"><span data-stu-id="ad03a-109">By consolidating the orders for a bulk item, you can see all the related batch orders in a single view that can help you determine any remaining work that must be completed.</span></span>  
+<span data-ttu-id="7143c-108">Pakkede varer kan pakkes i containere i én eller flere størrelser som anses som én enhet.</span><span class="sxs-lookup"><span data-stu-id="7143c-108">Packed items can be packaged into containers of either a single size or multiple sizes that are considered one unit.</span></span> <span data-ttu-id="7143c-109">Ved å konsolidere ordrene, kan du vise alle de relaterte partiordrene for en bulkvare i én enkelt visning, slik at det blir enklere å fastslå gjenstående arbeid som må fullføres.</span><span class="sxs-lookup"><span data-stu-id="7143c-109">By consolidating the orders for a bulk item, you can see all the related batch orders in a single view that can help you determine any remaining work that must be completed.</span></span>  
 
-<span data-ttu-id="ad03a-110">En konsolidert partiordre kan inneholde en hvilken som helst kombinasjon av følgende ordrer:</span><span class="sxs-lookup"><span data-stu-id="ad03a-110">A consolidated batch order can contain any combination of the following orders:</span></span>
+<span data-ttu-id="7143c-110">En konsolidert partiordre kan inneholde en hvilken som helst kombinasjon av følgende ordrer:</span><span class="sxs-lookup"><span data-stu-id="7143c-110">A consolidated batch order can contain any combination of the following orders:</span></span>
 
--   <span data-ttu-id="ad03a-111">Én enkelt bulkordre og flere pakkede ordrer</span><span class="sxs-lookup"><span data-stu-id="ad03a-111">A single bulk order and multiple packed orders</span></span>
--   <span data-ttu-id="ad03a-112">Flere bulkordrer og flere pakkede ordrer</span><span class="sxs-lookup"><span data-stu-id="ad03a-112">Multiple bulk orders and multiple packed orders</span></span>
--   <span data-ttu-id="ad03a-113">Flere bulkordrer og én enkelt pakket ordre</span><span class="sxs-lookup"><span data-stu-id="ad03a-113">Multiple bulk orders and a single packed order</span></span>
--   <span data-ttu-id="ad03a-114">Bare pakkede ordrer</span><span class="sxs-lookup"><span data-stu-id="ad03a-114">Only packed orders</span></span>
+-   <span data-ttu-id="7143c-111">Én enkelt bulkordre og flere pakkede ordrer</span><span class="sxs-lookup"><span data-stu-id="7143c-111">A single bulk order and multiple packed orders</span></span>
+-   <span data-ttu-id="7143c-112">Flere bulkordrer og flere pakkede ordrer</span><span class="sxs-lookup"><span data-stu-id="7143c-112">Multiple bulk orders and multiple packed orders</span></span>
+-   <span data-ttu-id="7143c-113">Flere bulkordrer og én enkelt pakket ordre</span><span class="sxs-lookup"><span data-stu-id="7143c-113">Multiple bulk orders and a single packed order</span></span>
+-   <span data-ttu-id="7143c-114">Bare pakkede ordrer</span><span class="sxs-lookup"><span data-stu-id="7143c-114">Only packed orders</span></span>
 
 
 
