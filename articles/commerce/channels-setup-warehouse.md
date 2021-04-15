@@ -2,11 +2,9 @@
 title: Definere et lager
 description: Dette emnet beskriver hvordan du definerer et lager som skal brukes med en ny kanal i Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 772c7584549b30a34e371a7911131edc01214ed8
-ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
+ms.openlocfilehash: 154ec719e16e4826b0e24deb5ecadf587d938e3c
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/19/2021
-ms.locfileid: "5477640"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5800501"
 ---
 # <a name="warehouse-set-up"></a>Lageroppsett
 
@@ -49,7 +47,7 @@ Bildet nedenfor viser et eksempel på et lagerområde.
 
 ![Eksempel på lagerområde](media/warehouse-site.png)
 
-## <a name="set-up-a-warehouse"></a>Definere et lager
+## <a name="set-up-a-warehouse&quot;></a>Definere et lager
 
 Følg denne fremgangsmåten for å definere et lager.
 
@@ -63,14 +61,14 @@ Følg denne fremgangsmåten for å definere et lager.
     - Hvis du vil angi et **Transittlager**, må du først følge disse trinnene for å opprette et ekstra lager, der **Type** er satt til **Transitt**.
 1. Velg **Lagre** i handlingsruten.
 
-## <a name="set-up-inventory-aisles"></a>Definer lagerganger
+## <a name=&quot;set-up-inventory-aisles&quot;></a>Definer lagerganger
 
 Hvis du vil konfigurere lagerganger, følger du disse trinnene.
 
 1. I navigasjonsruten går du til **Moduler \> Detaljhandel og handel \> Kanaloppsett \> Lokasjonsoppsett \> Lagerganger**.
 1. I handlingsruten velger du **Ny**.
 1. I rullegardinlisten **Lager** velger du lageret som ble opprettet tidligere.
-1. I **Gang**-feltet skriver du inn et navn (for eksempel "Std").
+1. I **Gang**-feltet skriver du inn et navn (for eksempel &quot;Std").
 1. I **Navn**-feltet skriver du inn et navn (for eksempel "Standard gang").
 1. Velg **Lagre** i handlingsruten.
 

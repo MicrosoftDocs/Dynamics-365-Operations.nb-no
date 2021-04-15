@@ -2,11 +2,9 @@
 title: Definere mobilenheter for lagerarbeid
 description: Dette emnet beskriver hvordan du konfigurerer menyelementene lagerarbeidere bruker til å utføre arbeidet på en mobilenhet.
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 03/23/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSRFMenuItem, WHSRFSysDirSort, WHSWorkUserDisplaySettings
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: db4c3a8c4bae226b5e154f4761e30b7341bc527b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 1d3acbc15b6dc5f698f26aae96c75cc942189c6c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5232989"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5808804"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Definere mobilenheter for lagerarbeid
 
@@ -64,7 +62,7 @@ Hvis **Modus**-feltet for et menyelement er satt til **Indirekte**, kan du oppre
 | Tøm hurtigbuffer for nummersekvens | Slett nummersekvensnumre fra nummersekvensbufferen. Denne aktiviteten utføres vanligvis av en systemadministrator for å løse problemer med hurtigbufring ved bruk av mobile enheter. |
 | Endre partidisposisjon | La en arbeider angi en partidisposisjonskode for en vare og et parti. Dette valget oppdaterer disposisjonskoden som er angitt for partiet. |
 | Vis liste over åpent arbeid | Vis en liste over tilgjengelig arbeid for en bestemt bruker. Brukeren kan deretter velge arbeid som skal utføres, og vil bli dirigert til det. Denne listen er ment å vises på nettbrett med skjermstørrelser på 7 tommer eller mer. Når du velger dette alternativet, aktiveres menyelementene **Rediger spørring** og **Feltliste**. På siden **Rediger spørring** kan du definere kriterier for arbeid som vises i listen. På siden **Feltliste** kan du velge hvilke felt som vises i arbeidslisten. Du kan for eksempel redusere antall felt som vises, slik at brukeren raskere kan velge det mest aktuelle arbeidselementet. Du kan også velge hvor mange arbeidsposter som skal vises per side, i feltet **Poster per side** i hurtigfanen **Generelt**. Hvis det er merket av for **Tillat brukere å filtrere arbeid etter transaksjonstype**, inkluderer arbeidslisten en **Filtrer arbeid**-kontroll som brukeren kan bruke til å filtrere etter transaksjonstype. Brukere vil bare se arbeid i arbeidslisten som de har tilgang til. Du må kontrollere at brukere har tillatelse for ett eller flere brukerstyrte menyelementer som støtter den bestemte arbeidsklassetypene som de skal ha tilgang til. Tillatelser kontrolleres når en bruker forsøker å utføre arbeid fra listen.|
-| Opprett overføringsordre fra nummerskilt | Lar lagerarbeidere opprette og behandle overføringsordrer direkte fra lagerappen. Lagerarbeiderne begynner ved å velge destinasjonslageret, og deretter kan de skanne én eller flere nummerskilt ved hjelp av appen. Når lagerarbeideren velger **Fullfør ordre**, vil en satsvis jobb opprette den nødvendige overføringsordren og ordrelinjene basert på lagerbeholdningen som er registrert for disse nummerskiltene. Hvis du vil ha mer informasjon, kan du se [Opprette overføringsordrer fra lagerappen](create-transfer-order-from-warehouse-app.md)
+| Opprett overføringsordre fra nummerskilt | Lar lagerarbeidere opprette og behandle overføringsordrer direkte fra mobilappen Lagerstyring. Lagerarbeiderne begynner ved å velge destinasjonslageret, og deretter kan de skanne én eller flere nummerskilt ved hjelp av appen. Når lagerarbeideren velger **Fullfør ordre**, vil en satsvis jobb opprette den nødvendige overføringsordren og ordrelinjene basert på lagerbeholdningen som er registrert for disse nummerskiltene. Hvis du vil ha mer informasjon, kan du se [Opprette overføringsordrer fra lagerappen](create-transfer-order-from-warehouse-app.md)
 
 
 ## <a name="configure-menu-items-to-create-work-for-another-worker-or-process"></a>Konfigurere menyelementer for å opprette arbeid for en annen arbeider eller prosess

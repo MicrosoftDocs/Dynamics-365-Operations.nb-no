@@ -2,11 +2,9 @@
 title: Konfigurere grensesnittet for produksjonsutførelse
 description: Dette emnet beskriver hvordan du oppretter en eller flere konfigurasjoner for grensesnittet for produksjonsutførelse. Når du åpner grensesnittet for produksjonsutførelse, laster det automatisk inn et valgt konfigurasjons- og jobbfilter som gjelder spesielt for nettleseren og enheten. I konfigurasjonen angir du policyer som må gjelde for et bestemt forbruk.
 author: johanhoffmann
-manager: tfehr
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgProductionFloorExecutionConfiguration
 audience: Application User
@@ -15,17 +13,16 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: d34f9c235df480658a0935d731f7267a87894067
-ms.sourcegitcommit: 70b1567d316f19c15a4b032b4897f15c8dcdca09
+ms.openlocfilehash: 79e21977e4ef8bce88c97a8fb253345ccc8d6b4f
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "5556320"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5814736"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurere grensesnittet for produksjonsutførelse
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Produksjonsarbeidere bruker grensesnittet for produksjonsutførelse til å registrere det daglige arbeidet deres, for eksempel når de begynner på jobber, rapporterer tilbakemeldinger om jobber, registrerer indirekte aktiviteter og rapporterer fravær. Disse registreringene er grunnlaget for sporing av fremdriften og kostnaden av produksjonsordrer, samt for beregning av grunnlaget for arbeidernes lønn.
 
@@ -67,6 +64,8 @@ Denne funksjonen legger til en knapp i grensesnittet for produksjonsutførelse, 
 - Funksjon for låsing av jobbkortenheten og jobbkortterminal slik at de kan rengjøres
 
 ### <a name="asset-management-functionality-for-the-production-floor-execution-interface"></a>Funksjonalitet for anleggsmiddelstyring for grensesnittet for produksjonsutførelse
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Denne funksjonen legger til en fane for aktivastyring i grensesnittet for produksjonsutførelse. Arbeidere kan bruke denne fanen til å velge et aktivum som er koblet til en maskinressurs som er innenfor det valgte filteret for jobblisten. Arbeideren kan vise statusen og tilstanden til det valgte maskinaktivumet fra tellerverdier for opptil fire valgte tellere. Hvis du vil bruke denne funksjonen, aktiverer du følgende funksjon i [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 

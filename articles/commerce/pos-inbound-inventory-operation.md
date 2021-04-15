@@ -2,11 +2,9 @@
 title: Inngående lageroperasjon på salgsstedet
 description: Dette emnet beskriver funksjonene til inn kommende lageroperasjoner på salgsstedet (POS).
 author: hhaines
-manager: annbe
 ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 2254453201817d906de9805e2cfd3c9e74c9497c
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 6efc20de5309bc7ec209a557a4bc12c6a0a42a43
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5234491"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5804337"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Inngående lageroperasjon i salgsstedet
 
