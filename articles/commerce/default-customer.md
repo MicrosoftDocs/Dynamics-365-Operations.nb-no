@@ -2,11 +2,9 @@
 title: Opprette en standardkunde
 description: Dette emnet beskriver hvordan du oppretter en standardkunde som skal brukes ved opprettelse av en kanal i Microsoft Dynamics 365 Commerce.
 author: samjarawan
-manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: f988732549ce82919f02c87b320623d8d4218735
-ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
+ms.openlocfilehash: ecdf4e5618d3397527bf83977857fbe3f8dbb265
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/19/2021
-ms.locfileid: "5477906"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5799185"
 ---
 # <a name="create-a-default-customer"></a>Opprette en standardkunde
 
@@ -67,14 +65,14 @@ Bildet nedenfor viser et eksempel på en adressebok.
 
 ![Adressebok](media/address-book.png)
 
-## <a name="create-a-default-customer"></a>Opprette en standardkunde
+## <a name="create-a-default-customer&quot;></a>Opprette en standardkunde
 
 Hvis du vil opprette en standardkunde, følger du disse trinnene.
 
 1. I navigasjonsruten går du til **Moduler \> Detaljhandel og handel \> Kunder \> Alle kunder**.
 1. I handlingsruten velger du **Ny**.
-1. I **Type**-rullegardinlisten velger du "Person".
-1. I **Kundekonto**-rullegardinlisten velger du eller skriver inn et kontonummer (for eksempel "100001").
+1. I **Type**-rullegardinlisten velger du &quot;Person&quot;.
+1. I **Kundekonto**-rullegardinlisten velger du eller skriver inn et kontonummer (for eksempel &quot;100001").
 1. I **Fornavn**-rullegardinlisten velger du eller angir et navn (for eksempel "Standard").
 1. I **Mellomnavn**-rullegardinlisten velger du eller angir et navn (for eksempel "Detaljhandel").
 1. I **Etternavn**-rullegardinlisten velger du eller angir et navn (for eksempel "Kunde").

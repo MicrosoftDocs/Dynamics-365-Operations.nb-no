@@ -2,11 +2,9 @@
 title: Eksterne enheter
 description: Dette emnet forklarer begrepene som er knyttet til eksterne enheter i Commerce.
 author: rubencdelgado
-manager: AnnBe
 ms.date: 02/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailTerminalTable, RetailDevice, RetailHardwareProfile
 audience: Application User, IT Pro
@@ -17,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 64033f0e1568ae88aef6617592243ac7d0b21ab7
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d2cbab3177756fbf5df4f07350a6449f0b22e028
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5254945"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5791953"
 ---
 # <a name="peripherals"></a>Eksterne enheter
 
@@ -126,12 +124,12 @@ For å garantere at et størst mulig utvalg av enheter kan brukes med Commerce, 
 > [!NOTE]
 > OPOS-støtte garanterer ikke støtte for alle enheter som har OPOS-drivere. Commerce må først støtte denne enhetstypen, eller klassen, gjennom OPOS. I tillegg er tjenesteobjekter kanskje ikke alltid oppdaterte med den nyeste versjonen av CCO-er. Du må også være oppmerksom på at kvaliteten på tjenesteobjekter vanligvis varierer.
 
-### <a name="windows"></a>Windows
+### <a name="windows&quot;></a>Windows
 
 Kvitteringsutskrift på salgsstedet er optimalisert for OPOS. OPOS pleier å være mye raskere enn utskrift i Windows. Det er derfor smart å bruke OPOS, spesielt i miljøer der 40-kolonners kvitteringer skrives ut og transaksjonen må gjennomføres raskt. Du bruker OPOS-kontroller for de fleste enheter. Noen OPOS-kvitteringsskrivere støtter imidlertid også Windows-drivere. Ved å bruke en Windows-driver, har du tilgang til de nyeste skriftene og en nettverksskriveren for flere kasser. Det er imidlertid ulemper med å bruke Windows-drivere. Her er noen eksempler på disse ulempene:
 
 -   Når du bruker Windows-drivere, gjengis bilder før utskrift. Derfor pleier utskrift å være langsommere enn på skrivere som bruker OPOS-kontroller.
--   Enheter som er koblet gjennom skriveren ("seriekoblet"), fungerer kanskje ikke slik de skal når Windows-drivere brukes. En kassaskuffen åpnes for eksempel kanskje ikke eller følgeseddelskriveren fungerer kanskje ikke som forventet.
+-   Enheter som er koblet gjennom skriveren (&quot;seriekoblet"), fungerer kanskje ikke slik de skal når Windows-drivere brukes. En kassaskuffen åpnes for eksempel kanskje ikke eller følgeseddelskriveren fungerer kanskje ikke som forventet.
 -   OPOS støtter også et mer omfattende sett med variabler som er spesifikke for kvitteringsskrivere, for eksempel papirkutting eller følgeseddelutskrift.
 -   Windows-skrivere støttes ikke gjennom IIS-maskinvarestasjonen. 
 

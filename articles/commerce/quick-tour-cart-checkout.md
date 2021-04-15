@@ -2,11 +2,9 @@
 title: Oversikt over sider for handlekurv og kasse
 description: Dette emnet inneholder en oversikt over sider for handlekurv og kasse i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,20 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4f7c708aa7f1a858e78cdbda809b90b944606022
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d0b5a74a9880a5cabfdbc124f557998540c94a4d
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5244797"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792249"
 ---
 # <a name="cart-and-checkout-pages-overview"></a>Oversikt over sider for handlekurv og kasse
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet inneholder en oversikt over sider for handlekurv og kasse i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Oversikt
 
 Handlekurvsiden for et e-handelsområde viser alle varene som en kunde har lagt til i handlekurven. Handlekurvsiden bygges ved hjelp av handlemodulen. Handlekurvmodulen er en container som er vert for alle modulene som kreves for å vise varer i handlekurven. Handlekurvmodulen kan også bruke de andre modulene for å vise ordresammendraget og eventuelle kampanjekoder som er brukt på kundeordren.
 
