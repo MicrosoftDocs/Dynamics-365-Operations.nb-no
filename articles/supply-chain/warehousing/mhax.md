@@ -2,7 +2,6 @@
 title: Grensesnitt for materialhåndteringsutstyr (MHAX)
 description: Dette emnet beskriver hvordan du konfigurerer MHAX-systemer (Material Handling Equipment Interface) slik at du kan koble til systemer for ekstern fysisk materialhåndtering (MH).
 author: Mirzaab
-manager: tfehr
 ms.date: 03/04/2021
 ms.topic: article
 ms.prod: ''
@@ -16,17 +15,16 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-04
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: ea021529d7417fb3170c859c7fffcb2cfd23a43f
-ms.sourcegitcommit: d7c18228256daeefbf6518c3ef82fed4f7dbc161
+ms.openlocfilehash: 9273e4a1f6b3f57086c921c4beb0530a67ccd976
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5571848"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810516"
 ---
 # <a name="material-handling-equipment-interface-mhax"></a>Grensesnitt for materialhåndteringsutstyr (MHAX)
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Du kan bruke *grensesnittet for materialhåndteringsutstyr* (MHAX) til å koble systemer for ekstern fysisk materialhåndtering (MH) til et lager som administreres av avansert lagerstyring (WMS) i Microsoft Dynamics 365 Supply Chain Management. Grensesnittet mellom WMS- og MH-systemene består av to køer: én for utgående hendelser (WMS til MH) og én for innkommende hendelser (MH til WMS). WMS-systemet genererer utgående hendelser basert på arbeidslinjer som opprettes under ulike arbeidsopprettings- og utføringsprosesser. MH-systemet måler deretter WMS-systemet regelmessig for nye hendelser og behandler svarene. Når MH-systemet er ferdig med å behandle hendelsene i henhold til arbeidsinstruksjoner, sender det innkommende hendelser, for eksempel fullføring av arbeidslinje og plukking med mangler.
 
