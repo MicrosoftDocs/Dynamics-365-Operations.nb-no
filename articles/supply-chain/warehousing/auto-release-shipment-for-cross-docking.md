@@ -2,11 +2,9 @@
 title: Automatisk frigivelse av forsendelse for direkteoverføring
 description: Dette emnet beskriver en kryssoverføringsstrategi som lar deg automatisk frigi en behovsordre til lageret når produksjonsordren som leverer behovsantallet, rapporteres som ferdig, slik at antallet flyttes direkte fra produksjonsutleveringsstedet til den utgående lokasjonen.
 author: omulvad
-manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSCrossDockingTemplate
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 619133cb1ef5f85222a42a08fd5fb77250c3d911
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 1c831030659b38b52932e504f744d24d999958a5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5233181"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5831440"
 ---
 # <a name="auto-release-shipment-for-cross-docking"></a>Automatisk frigivelse av forsendelse for direkteoverføring
 
@@ -163,7 +161,7 @@ Hvis du vil direkteoverføre antallet ferdigvarer til den utgående lokasjonen f
 8. På siden **Produksjonsordre**, i handlingsruten i fanen **Produksjonsordre** i gruppen **Prosess**, velger du **Estimat**, og deretter velger du **OK**. Ordren er estimert, og råvareantallet er reservert for produksjonen.
 9. I handlingsruten i fanen **Produksjonsordre** i gruppen **Prosess** velger du **Frigi**, og deretter velger du **OK**. Lagerplukkarbeid opprettes for råvarene.
 10. Åpne og se gjennom arbeidet. Velg **Arbeidsdetaljer** i gruppen **Generelt** i fanen **Lager** i handlingsruten. Noter arbeids-ID-en.
-11. Logg på lagerappen for å kjøre arbeid i lager 51.
+11. Logg på mobilappen Lagerstyring for å kjøre arbeid i lager 51.
 12. Gå til **Produksjon** \> **Produksjonsplukking**.
 13. Angi arbeids-IDen for å starte og fullføre råvareplukkingen. 
 

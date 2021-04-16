@@ -2,11 +2,9 @@
 title: Beholdningsstatuser
 description: Denne artikkelen beskriver hvordan du kan bruke lagerstatusene til å kategorisere og holde orden på lager.
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResStorageDimensionGroup, WHSInventStatus, WHSWarehouseStatusChange
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0b5e693bc1c9f4b822543d812f722bc8ea9f7025
-ms.sourcegitcommit: ee7a890e3e4ed6436898e5ab6eff309082a073f8
+ms.openlocfilehash: e3c8b467f29037bbb869189e3607e11f40aad2c2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "5476705"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5829866"
 ---
 # <a name="inventory-statuses"></a>Beholdningsstatuser
 
@@ -45,10 +43,14 @@ En beholdningsstatus er én av dimensjonene i lagringsdimensjonsgruppen. Lagerst
 
 Du kan bruke lagervarer som har enten tilgjengelig eller utilgjengelig lagerstatus for innkommende arbeid. La oss si at du for eksempel oppretter en tilgjengelig status kalt *Klar*, en utilgjengelig status kalt *Skadet*, og en blokkert status kalt *Sperret*. Hvis du oppretter en bestilling for mottatte eller returnerte varer og eventuelle varer er skadet eller ødelagt, kan du endre lagerstatusen for disse varene til *Skadet* på bestillingslinjen. Etter at disse varene er mottatt, settes statusen automatisk til *Sperret*. Hvis du skanner de skadede varene med en mobil enhet, kan Supply Chain Management bruke lokasjonsdirektiver og arbeidsmaler til å vise informasjon om en passende lokasjon eller et lokasjonsområde der du kan plassere disse varene. Når det gjelder returnerte varer, opprettes avgangstypen *Reservering* på **Lagertransaksjoner**-siden.
 
+Du kan angi hvilke beholdningsstatuser som er blokkeringsstatuser ved hjelp av avmerkingsboksen **Lagerblokkering** på **Beholdningsstatuser**-siden. Du kan ikke bruke lagerstatuser som blokkeringsstatuser for salgsordrer, overføringsordrer og prosjektintegreringer.
+
+For utgående arbeid kan du bruke ulike ikke-blokkeringslagerstatuser til å kontrollere hvilket lager det skal reserveres mot. Hvis du har varer med statusen *Blokkering* og hovedplanlegging kjøres på disse varene, regnes de som manglende, og beholdningen etterfylles automatisk. For kvalitetsordrer knyttet til utgående arbeid vil det dessuten ikke være mulig å oppdatere **Beholdningsstatus** som en del av kvalitetsordrevalideringen.
+
 > [!NOTE]
 > Du kan ikke endre statusen til lager på lokasjoner der det finnes åpent arbeid. Hvis du for eksempel mottok et innkjøp for en vare, men ikke gjorde det plasserte trinnet, ville det være åpent arbeid for mottakslokasjonen, og du vil få en feilmelding hvis du har forsøkt å endre lagerstatusen på denne lokasjonen. Hvis du fullfører eller avbryter det relaterte arbeidet, kan du endre statusen.
- 
-Når det gjelder utgående arbeid, bruker du varer som har en tilgjengelig lagerstatus. Hvis du har varer med statusen *Brutt* og hovedplanlegging kjøres på disse varene, regnes de som manglende, og beholdningen etterfylles automatisk.
+>
+> Vanligvis endres statusen til lagerbeholdningen som er relatert til åpent lagerarbeid, bare av arbeidere ved hjelp av den mobile lagerstyringsappen, for eksempel under utføring av en bevegelsesprosess.
 
 Når du har definert beholdningsstatuser, kan du angi standard beholdningsstatus for et område, en vare og et lager. Du kan også angi en standardstatus for salg, overføring og bestillinger. Standardstatus for salgsordrer og utgående overføringsordre kan ikke ha alternativet **Lagerblokkering** satt til *Ja*. Lagerstatusen som arves fra standardinnstillingene for område, lager, vare, bestilling, overføringsordre eller salgsordre, kan endres ved hjelp av den mobile enheten, eller på bestillings-, salgsordre- eller overføringsordrelinjen.
 

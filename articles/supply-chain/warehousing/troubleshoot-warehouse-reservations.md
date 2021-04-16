@@ -2,11 +2,9 @@
 title: Feilsøke reserveringer i lagerstyring
 description: Dette emnet beskriver hvordan du løser vanlige problemer som kan oppstå mens du arbeider med lagerreservasjoner i Microsoft Dynamics 365 Supply Chain Management.
 author: perlynne
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -17,18 +15,20 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: a9a5d20732a802fc58c392853af8334bbc07de73
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d0d73396772ed9e8397797d6685fb550d911303b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5248721"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5828112"
 ---
 # <a name="troubleshoot-reservations-in-warehouse-management"></a>Feilsøke reserveringer i lagerstyring
 
 [!include [banner](../includes/banner.md)]
 
 Dette emnet beskriver hvordan du løser vanlige problemer som kan oppstå mens du arbeider med lagerreservasjoner i Microsoft Dynamics 365 Supply Chain Management.
+
+For emner som er relatert til parti- og serienummerregistreringer, kan du se [Feilsøke lagerparti- og seriereserveringshierarkier](troubleshoot-warehouse-batch-and-serial-reservation-hierarchies.md).
 
 ## <a name="i-receive-the-following-error-message-reservations-cannot-be-removed-because-there-is-work-created-which-relies-on-the-reservations"></a>Jeg får følgende feilmelding: Reservasjoner kan ikke fjernes fordi det er opprettet arbeid som er avhengig av reservasjonen.
 
@@ -63,20 +63,6 @@ Dette problemet kan oppstå hvis systemet ikke kan oppdatere et lagerantall, for
 ### <a name="issue-resolution"></a>Problemløsning
 
 Dette problemet skyldes sannsynligvis åpent arbeid. Du må enten fullføre arbeidet eller motta uten arbeidsoppretting. Kontroller at ingen lagertransaksjoner fysisk reserverer antallet. Disse transaksjonene kan for eksempel være åpne kvalitetsordrer, lagerblokkeringsposter eller ordrer.
-
-## <a name="i-receive-the-following-error-message-to-be-assigned-to-wave-load-lines-must-specify-the-dimensions-above-the-location-to-assign-these-dimensions-reserve-and-recreate-the-load-line"></a>Jeg får følgende feilmelding: For å tilordne bølge må lastlinjer angi dimensjonene over lokasjonen. Hvis du vil tilordne disse dimensjonene, må du reservere og opprette lastlinjen på nytt.
-
-### <a name="issue-description"></a>Problembeskrivelse
-
-Når du bruker en vare som har et parti over-reservasjonshierarki (med **Partinummer**-dimensjonen som er plassert *over* **Lokasjon**-dimensjonen), fungerer ikke kommandoen **Frigi til lager** på siden **Arbeidsområde for lastplanlegging** for et delvis antall. Du får denne feilmeldingen, og det opprettes ikke noe arbeid for det delvise antallet.
-
-Hvis du imidlertid bruker en vare som har et parti under-reservasjonshierarki (med **Partinummer**-dimensjonen som er plassert *under* **Lokasjon**-dimensjonen), kan du frigi en last fra siden **Arbeidsområde for lastplanlegging** for et delvis antall.
-
-### <a name="issue-resolution"></a>Problemløsning
-
-Denne virkemåten er standard. Hvis du legger en dimensjon til over **Lokasjon**-dimensjonen i reservasjonshierarkiet, må den angis før frigivelse til lageret. Microsoft har evaluert dette problemet, og har funnet ut at det er en funksjonsbegrensning under frigivelser til lageret fra arbeidsområdet for lastplanlegging. Delvise antall kan ikke frigis hvis én eller flere dimensjoner over **Lokasjon** ikke er angitt.
-
-Hvis du vil ha mer informasjon, kan du se [Fleksibel dimensjonsreservasjonspolicy for lagernivå](flexible-warehouse-level-dimension-reservation.md).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

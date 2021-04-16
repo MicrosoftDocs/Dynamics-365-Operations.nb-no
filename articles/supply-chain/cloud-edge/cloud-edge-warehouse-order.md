@@ -2,11 +2,9 @@
 title: Lagerordrer for sky- og kantskalaenheter
 description: Dette emnet inneholder informasjon om funksjonen for lagerordre som brukes som en del av arbeidsbelastningen for lagerskalaenhet.
 author: perlynne
-manager: tfeyr
 ms.date: 01/14/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWarehouseOrderLine, WHSWarehouseReceiptEntry, PurchTable
 audience: Application User
@@ -19,12 +17,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2021-01-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 9102f53ab1b63d08b8bba7b0ae505416ec5a83fd
-ms.sourcegitcommit: 70b1567d316f19c15a4b032b4897f15c8dcdca09
+ms.openlocfilehash: f2401102ab44f5c24f5cd6f545f30438db0a36cf
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "5556368"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5836692"
 ---
 # <a name="warehouse-orders-for-cloud-and-edge-scale-units"></a>Lagerordrer for sky- og kantskalaenheter
 
@@ -38,7 +36,7 @@ ms.locfileid: "5556368"
 
 *Lagerordrer* er en type ordre som ble opprettet for å støtte lagerdistribusjoner for senter og skalaenhet. De gjør at du kan motta beholdning når du kjører en lagerarbeidsbelastning på en skalaenhet. De brukes for øyeblikket bare med bestillinger.
 
-Lagerordrer brukes som en del av lagerstyringsbehandling, for eksempel når lagerappen brukes til å registrere fysisk lagerbeholdning under behandling av en innkommende bestilling. Lagerordrer opprettes som en del av prosessen *Frigi til lager*, som er tilgjengelig for bestillinger som angir et skalaenhetslager, og varer som er aktivert for å bruke lagerstyringsprosesser.
+Lagerordrer brukes som en del av lagerstyringsbehandling, for eksempel når mobilappen Lagerstyring brukes til å registrere fysisk lagerbeholdning under behandling av en innkommende bestilling. Lagerordrer opprettes som en del av prosessen *Frigi til lager*, som er tilgjengelig for bestillinger som angir et skalaenhetslager, og varer som er aktivert for å bruke lagerstyringsprosesser.
 
 > [!IMPORTANT]
 > Lagerordrer er bare tilgjengelige i distribusjoner som bruker [arbeidsbelastninger for lagerstyring for sky- og kantskalaenheter](cloud-edge-workload-warehousing.md).
@@ -70,7 +68,7 @@ Følg denne fremgangsmåten for å annullere lagerordrelinjer.
 
 ## <a name="monitor-a-warehouse-order"></a>Overvåke en lagerordre
 
-I visningen **Lagerordrelinjer** kan du overvåke fremdriften til innkommende mottak ved å se gjennom verdiene i kolonnen **Gjenstående antall å motta**. Følg ett av disse trinnene for å vise detaljer som er knyttet til arbeid som er gjort ved å bruke lagerappen.
+I visningen **Lagerordrelinjer** kan du overvåke fremdriften til innkommende mottak ved å se gjennom verdiene i kolonnen **Gjenstående antall å motta**. Følg ett av disse trinnene for å vise detaljer som er knyttet til arbeid som er gjort ved å bruke mobilappen Lagerstyring.
 
 - Gå til **Lagerstyring \> Forespørsler og rapporter \> Lagerordrelinjer**, og bruk filteret til å finne linjene du ser etter.
 - Gå til **Innkjøp og leverandører \> Bestillinger \> Alle bestillinger**, og åpne den relevante bestillingen. Velg én eller flere linjer i delen **Bestillingslinjer**, og velg deretter **Lager \> Oppføringer for lagermottak** på verktøylinjen.

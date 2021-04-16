@@ -1,12 +1,10 @@
 ---
 title: Opprette overføringsordrer fra lagerappen
-description: Dette emnet beskriver hvordan du oppretter og behandler overføringsordrer fra lagerappfunksjonen
+description: Dette emnet beskriver hvordan du oppretter og behandler overføringsordrer fra mobilappen Lagerstyring
 author: perlynne
-manager: tfehr
 ms.date: 09/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSMobileDeviceQueueEvent
 audience: Application User
@@ -15,20 +13,20 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 855b057706bc2f8315084a3cebec6f855a4d01e7
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: f0238f46d28205fd6d0906030a1660ab3aa7225a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5214136"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5838376"
 ---
 # <a name="create-transfer-orders-from-the-warehouse-app"></a>Opprette overføringsordrer fra lagerappen
 
 [!include [banner](../includes/banner.md)]
 
-Denne funksjonen lar lagerarbeidere opprette og behandle overføringsordrer direkte fra lagerappen. Lagerarbeiderne begynner ved å velge destinasjonslageret, og deretter kan de skanne én eller flere nummerskilt ved hjelp av appen for å legge til nummerskilt i overføringsordren. Når lagerarbeideren velger **Fullfør ordre**, vil en satsvis jobb opprette den nødvendige overføringsordren og ordrelinjene basert på lagerbeholdningen som er registrert for disse nummerskiltene.
+Denne funksjonen lar lagerarbeidere opprette og behandle overføringsordrer direkte fra mobilappen Lagerstyring. Arbeideren begynner ved å velge destinasjonslageret, og deretter kan de skanne én eller flere nummerskilt ved hjelp av appen for å legge til nummerskilt i overføringsordren. Når lagerarbeideren velger **Fullfør ordre**, vil en satsvis jobb opprette den nødvendige overføringsordren og ordrelinjene basert på lagerbeholdningen som er registrert for disse nummerskiltene.
 
-## <a name="enable-the-create-transfer-orders-from-warehouse-app-feature"></a><a name="enable-create-transfer-order-from-warehouse-app"></a>Aktivere overføringsordrene fra lagerappfunksjonen
+## <a name="enable-the-create-transfer-orders-from-the-warehouse-app-feature"></a><a name="enable-create-transfer-order-from-warehouse-app"></a>Aktiver overføringsordrene fra lagerappfunksjonen
 
 Før du kan bruke denne funksjonen, må den og forutsetningene være aktivert i systemet. Administratorer kan bruke siden for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den hvis det er nødvendig.
 
@@ -50,8 +48,8 @@ Her er generelle retningslinjer for hvordan du oppretter menyelement for mobilen
 1. Velg **Ny** for å legge til et nytt menyelement. Deretter kan du utføre følgende innstillinger for å komme i gang:
 
     - **Navn på menyelement** – Tilordne et navn slik det skal vises i Supply Chain Management.
-    - **Tittel** – Tilordne et menynavn slik det skal vises for arbeidere i lagerappen.
-    - **Modus** – Satt til *Indirekte* (denne lagerappen vil ikke opprette arbeid).
+    - **Tittel** – Tilordne et menynavn slik det skal vises for arbeidere i mobilappen Lagerstyring.
+    - **Modus** – Satt til *Indirekte* (dette menyelementet vil ikke opprette arbeid).
     - **Aktivitetskode** – Satt til *Opprett overføringsordre fra nummerskilt* for å gjøre det mulig for lagerarbeidere å opprette en overføringsordre basert på én eller flere skannede nummerskilt.
 
 1. Bruk innstillingen **Policy for opprettelse av overføringsordrelinje** til å kontrollere hvordan overføringsordrelinjene opprettes av dette menyelementet. Linjene opprettes/oppdateres basert på lagerbeholdningen som er registrert for de skannede nummerskiltene. Velg én av følgende verdier:
@@ -74,7 +72,7 @@ Her er generelle retningslinjer for hvordan du oppretter menyelement for mobilen
 
 ## <a name="create-a-transfer-order-based-on-license-plates"></a>Opprette en overføringsordre basert på nummerskilt
 
-Lagerappen har en enkel prosess for oppretting av overføringsordrer basert på nummerskilt. Hvis du vil gjøre dette, gjør arbeideren følgende ved hjelp av lagerappen:
+Mobilappen Lagerstyring har en enkel prosess for oppretting av overføringsordrer basert på nummerskilt. Hvis du vil gjøre dette, gjør arbeideren følgende ved hjelp av mobilappen Lagerstyring:
 
 1. Opprett overføringsordren, og Identifiser destinasjonslageret.
 1. Identifiser hvert nummerskilt som skal leveres.
@@ -258,9 +256,9 @@ I det nevnte eksemplet brukes to **lagerapphendelser** ( *Opprett overføringsor
 
 ### <a name="inquire-the-warehouse-app-events"></a><a name="#inquire-the-warehouse-app-events"></a>Spørring til lagerapphendelser
 
-Du kan vise hendelseskøen og hendelsesmeldingene som genereres av lagerappen, ved å gå til **Lagerstyring \> Forespørsler og rapporter \> Logger for mobilenheter \> Lagerapphendelser**.
+Du kan vise hendelseskøen og hendelsesmeldingene som genereres av mobilappen Lagerstyring, ved å gå til **Lagerstyring \> Forespørsler og rapporter \> Logger for mobilenheter \> Lagerapphendelser**.
 
-Hendelsesmeldingene *Opprett overføringsordre* vil motta statusen *Venter*, som betyr at den satsvise jobben **Behandle lagerapphendelser** ikke henter inn og behandler hendelsesmeldinger. Så snart hendelsesmeldingen blir oppdatert til statusen *I kø*, behandler den satsvise jobben hendelsene. Dette skjer samtidig som opprettelsen av hendelsen *Fullfør overføringsordre* (når en arbeider velger **Fullfør ordre**-knappen i lagerappen). Når hendelsesmeldingene *Opprett overføringsordre* er behandlet, oppdateres statusen til *Fullført* eller *Mislyktes*. Når statusen *Fullfør overføringsordre* oppdateres til *Fullført*, slettes alle relaterte hendelser fra køen.
+Hendelsesmeldingene *Opprett overføringsordre* vil motta statusen *Venter*, som betyr at den satsvise jobben **Behandle lagerapphendelser** ikke henter inn og behandler hendelsesmeldinger. Så snart hendelsesmeldingen blir oppdatert til statusen *I kø*, behandler den satsvise jobben hendelsene. Dette skjer samtidig som opprettelsen av hendelsen *Fullfør overføringsordre* (når en arbeider velger **Fullfør ordre**-knappen i mobilappen Lagerstyring). Når hendelsesmeldingene *Opprett overføringsordre* er behandlet, oppdateres statusen til *Fullført* eller *Mislyktes*. Når statusen *Fullfør overføringsordre* oppdateres til *Fullført*, slettes alle relaterte hendelser fra køen.
 
 Fordi **lagerapphendelsene** for opprettingen av data for overføringsordre ikke vil bli behandlet av den satsvise jobben før meldingene oppdateres til statusen *I kø*, må du slå opp de forespurte numrene for overføringsordre som en del av **Identifikator**-feltet. **Identifikator**-feltet er i overskriften på siden **Lagerapphendelser**.
 
@@ -276,11 +274,11 @@ Hvis du vil ha mer informasjon, kan du se [Behandling av hendelse for lagerappen
 
 Følgende oppstod i dette scenariet:
 
-1. Ved hjelp av lagerappen valgte du et menyelement som bruker aktivitetskoden **Opprett overføringsordre fra nummerskilt**.
+1. Ved hjelp av mobilappen Lagerstyring valgte du et menyelement som bruker aktivitetskoden **Opprett overføringsordre fra nummerskilt**.
 1. Appen ba deg om å velge mållageret for overføringsordren. Kildelageret er alltid det du er logget på som arbeider.
 1. Ved valg av mållageret reserverte systemet et ID-nummer for den kommende overføringsordren (basert på nummerserien for overføringsorden som er definert i systemet), men oppretter ikke overføringsordren ennå.
 1. Da du skannet nummerskiltet *LP10* som inneholder lagerbeholdningen som skal flyttes til det nye lageret, ble det lagt til en **lagerapphendelse** i hendelseskøen for å behandle dem senere. Lagerhendelsen inneholdt meldingsdetaljer om skanningen, inkludert det tiltenkte nummeret for overføringsordren.
-1. Når **Fullfør ordre**-knappen velges i lagerappen, opprettes en ny lagerapphendelse, **Fullfør overføringsordre**, og den relaterte eksisterende hendelsen, **Opprett overføringsordre**, endret status til **I kø**.
+1. Når **Fullfør ordre**-knappen velges i mobilappen Lagerstyring, opprettes en ny lagerapphendelse, **Fullfør overføringsordre**, og den relaterte eksisterende hendelsen, **Opprett overføringsordre**, endret status til **I kø**.
 1. I serverdelen hentet den **satsvise jobben Behandle lagerapphendelser** hendelsen **I kø**, og samlet inn beholdningen relatert til det skannede nummerskiltet. Basert på beholdningen ble den faktiske posten for overføringsordre og tilknyttede linjer opprettet. Jobben fylte også ut feltet **Utgående forsendelsespolicy** for overføringsordren med verdien basert på den konfigurerte *Frigivelses- og forsendelsesbekreftelsen* og koblet nummerskilt mot linjene for strategien **Nummerskiltledet**.
 1. Basert på overføringsordrelinjen **Utgående forsendelsespolicy** vil feltverdien for spørringen **Satsvis jobb for automatisk frigivelse av overføringsordrer** nå føre til frigivelse av overføringsordren til leveringslageret. På grunn av oppsettet for den brukte **bølgemalen**, **arbeidsmalen** og **lokasjonsdirektivene**, fikk arbeidet resultat av automatiske prosesser på **Laststatus** oppdatert til *Lastet*.
 1. **Satsvise jobb for Behandle utgående forsendelse** utføres for lasten, noe som fører til at overføringsordren blir levert og det blir generert et forhåndsvarsel for forsendelse (ASN).
@@ -294,13 +292,13 @@ Følgende oppstod i dette scenariet:
 
 Funksjonen *Opprette og behandle overføringsordre fra lagerappen* må være aktivert. Hvis du vil ha mer informasjon, kan du se [Aktivere overføringsordrene fra lagerappfunksjonen](#enable-create-transfer-order-from-warehouse-app).
 
-### <a name="warehouse-app-processes"></a>Lagerapprosesser
+### <a name="warehouse-management-mobile-app-processes"></a>Prosesser i mobilappen Lagerstyring
 
 #### <a name="why-cant-i-see-the-menu-button-complete-order"></a>Hvorfor kan jeg ikke se menyknappen Fullfør ordre?
 
 Du må ha minst ett nummerskilt tilordnet overføringsordren.
 
-#### <a name="can-several-warehouse-app-users-add-license-plates-to-the-same-transfer-order-at-the-same-time"></a>Kan flere lagerappbrukere legge til nummerskilt i samme overføringsordre samtidig?
+#### <a name="can-several-warehouse-management-mobile-app-users-add-license-plates-to-the-same-transfer-order-at-the-same-time"></a>Kan flere brukere i mobilappen Lagerstyring legge til nummerskilt i samme overføringsordre samtidig?
 
 Ja, flere lagerarbeidere kan skanne nummerskilt inn i samme overføringsordre.
 
@@ -312,11 +310,11 @@ Nei, et nummerskilt kan bare legges til én overføringsordre om gangen.
 
 Nei, du kan ikke legge til flere nummerskilt i en overføringsordre som har lagerapphendelsen **Fullfør overføringsordre**.
 
-#### <a name="how-can-i-find-existing-transfer-orders-to-be-used-via-the-select-transfer-order-button-in-the-warehouse-app-if-the-order-has-not-yet-been-created-in-the-backend-system"></a>Hvordan kan jeg finne eksisterende overføringsordrer som skal brukes via knappen Velg overføringsordre i lagerappen, hvis ordren ennå ikke er opprettet i serverdelsystemet?
+#### <a name="how-can-i-find-existing-transfer-orders-to-be-used-via-the-select-transfer-order-button-in-the-warehouse-management-mobile-app-if-the-order-has-not-yet-been-created-in-the-backend-system"></a>Hvordan kan jeg finne eksisterende overføringsordrer som skal brukes via knappen Velg overføringsordre i mobilappen Lagerstyring, hvis ordren ennå ikke er opprettet i serverdelsystemet?
 
 Du kan for øyeblikket ikke slå opp overføringsordrer i appen, men du kan finne numrene for overføringsordrer på siden **Lagerapphendelser**. Hvis du vil ha mer informasjon, kan du se [Spørring til lagerapphendelser](#inquire-the-warehouse-app-events).
 
-#### <a name="can-i-manually-select-the-transfer-order-number-to-be-used-from-the-warehouse-app"></a>Kan jeg velge manuelt nummeret for overføringsordre som skal brukes fra lagerappen?
+#### <a name="can-i-manually-select-the-transfer-order-number-to-be-used-from-the-warehouse-management-mobile-app"></a>Kan jeg velge manuelt nummeret for overføringsordre som skal brukes fra mobilappen Lagerstyring?
 
 Bare numre for overføringsordrer som genereres automatisk via nummerserier, støttes.
 

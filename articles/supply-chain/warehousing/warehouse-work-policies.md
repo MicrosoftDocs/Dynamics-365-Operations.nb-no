@@ -2,11 +2,9 @@
 title: Arbeidspolicyer
 description: Dette emnet forklarer hvordan du konfigurerer arbeidspolicyer.
 author: perlynne
-manager: tfehr
 ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWorkPolicy
 audience: Application User
@@ -15,20 +13,20 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 3e7814790bce0aee648421e3a69d702fd0012404
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 39a9ba00763fac220eff16bdd42aa07cc8e35ba4
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5248553"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5838136"
 ---
 # <a name="work-policies"></a>Arbeidspolicyer
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet forklarer hvordan du konfigurerer systemet og lagerappen slik at de har støtte for arbeidspolicyer. Du kan bruke denne funksjonaliteten til raskt å registrere beholdning uten å opprette plasseringsarbeid når du mottar bestillinger eller overføringsordrer, eller når du fullfører produksjonsprosesser. Dette emnet gir generell informasjon. For detaljert informasjon som gjelder nummerskiltmottak, kan du se [Nummerskiltmottak via lagerappen](warehousing-mobile-device-app-license-plate-receiving.md).
+Dette emnet forklarer hvordan du konfigurerer systemet og mobilappen Lagerstyring slik at de har støtte for arbeidspolicyer. Du kan bruke denne funksjonaliteten til raskt å registrere beholdning uten å opprette plasseringsarbeid når du mottar bestillinger eller overføringsordrer, eller når du fullfører produksjonsprosesser. Dette emnet gir generell informasjon. For detaljert informasjon som gjelder nummerskiltmottak, kan du se [Nummerskiltmottak via mobilappen Lagerstyring](warehousing-mobile-device-app-license-plate-receiving.md).
 
-En arbeidspolicy kontrollerer om lagerarbeid opprettes når en produsert vare rapporteres som ferdig, eller når varer mottas ved hjelp av lagerappen. Du definerer hver arbeidspolicy ved å definere betingelsene der den gjelder: arbeidsordretypene og -prosessene, beholdningslokasjonen og (eventuelt) produktene. For eksempel må en bestilling for produkt *A0001* mottas i lokasjonen *RECV* på lager *24*. Senere forbrukes produktet i en annen prosess på lokasjonen *RECV*. I dette tilfellet kan du definere en arbeidspolicy for å hindre at plasseringsarbeid blir opprettet når en arbeider rapporterer produkt *A0001* som mottatt på lokasjonen *RECV*.
+En arbeidspolicy kontrollerer om lagerarbeid opprettes når en produsert vare rapporteres som ferdig, eller når varer mottas ved hjelp av mobilappen Lagerstyring. Du definerer hver arbeidspolicy ved å definere betingelsene der den gjelder: arbeidsordretypene og -prosessene, beholdningslokasjonen og (eventuelt) produktene. For eksempel må en bestilling for produkt *A0001* mottas i lokasjonen *RECV* på lager *24*. Senere forbrukes produktet i en annen prosess på lokasjonen *RECV*. I dette tilfellet kan du definere en arbeidspolicy for å hindre at plasseringsarbeid blir opprettet når en arbeider rapporterer produkt *A0001* som mottatt på lokasjonen *RECV*.
 
 > [!NOTE]
 > - Hvis en arbeidspolicy skal være aktiv, må du definere minst én lokasjon for den på hurtigfanen **Lagerlokasjoner** på siden **Arbeidspolicyer**. 
@@ -297,7 +295,7 @@ Når produksjonsordren rapporteres som fullført, genereres det ikke arbeid for 
 
 Hvis du vil ha mer informasjon om menyelementer for mobilenheter, kan du se [Definere mobilenheter for lagerarbeid](configure-mobile-devices-warehouse.md).
 
-For mer informasjon om nummerskiltmottak og arbeidspolicyer, se [Nummerskiltmottak via lagerappen](warehousing-mobile-device-app-license-plate-receiving.md).
+For mer informasjon om nummerskiltmottak og arbeidspolicyer, se [Nummerskiltmottak via mobilappen Lagerstyring](warehousing-mobile-device-app-license-plate-receiving.md).
 
 For mer informasjon om innkommende lastadministrasjon for lagerstyring, se [Lagerhåndtering av innkommende laster for bestillinger](inbound-load-handling.md).
 

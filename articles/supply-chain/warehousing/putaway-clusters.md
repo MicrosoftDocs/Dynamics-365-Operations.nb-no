@@ -2,11 +2,9 @@
 title: Plasseringsgrupper
 description: Plasseringsgrupper tilbyr en måte for å plukke flere nummerskilter samtidig og deretter ta dem med for plassering på forskjellige steder. De kan være veldig nyttige for detaljhandelsfirmaer, der nummerskilter vanligvis ikke er fulle paller med lager.
 author: Mirzaab
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 5552959068d109bffe32b8074666bcd63b57183a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b3a7d1b7109b83b26c8187a7f0d271f1c82f6d63
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5228447"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840371"
 ---
 # <a name="putaway-clusters"></a>Plasseringsgrupper
 
@@ -230,7 +228,7 @@ Dette scenarioet simulerer behandling av plasseringsgruppe.
 
 #### <a name="receive-and-sort-the-inventory-into-a-cluster"></a>Motta og sorter lageret i en gruppe
 
-1. Logg på lagerappen som en bruker som er konfigurert for lager *61*.
+1. Logg på mobilappen Lagerstyring som en bruker som er konfigurert for lager *61*.
 1. I hovedmenyen velger du **Innkommende**.
 1. Velg **Motta og sorter gruppe** på **Innkommende**-menyen.
 1. I **Ponum**-feltet angir du bestillingsnummeret.
@@ -272,7 +270,7 @@ Før varene i gruppen kan plasseres, må gruppen lukkes.
 
 #### <a name="put-the-cluster-away"></a>Plasser gruppen
 
-1. Logg på lagerappen som en bruker som er konfigurert for lager *61*.
+1. Logg på mobilappen Lagerstyring som en bruker som er konfigurert for lager *61*.
 1. I hovedmenyen velger du **Innkommende**.
 1. I menyen **Innkommende** velger du **Gruppeplassering**.
 1. Velg **Gruppe-ID**, og angi gruppe-ID-en du angav tidligere for den lukkede gruppen.

@@ -2,11 +2,9 @@
 title: Utsetting
 description: Dette emnet hjelper deg med å bygge en gjennomgang av utsetting i produksjonen i Dynamics 365 Supply Chain Management.
 author: christophernread
-manager: tfehr
 ms.date: 09/28/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f771c15d98abe3689054d43cc8b33632121522a3
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 053dff19da6e51d23383d667c340c49f3eff1b27
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5255547"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5825188"
 ---
 # <a name="subcontracting"></a>Utsetting
 
@@ -210,7 +208,7 @@ En produksjonsordre på 10 deler opprettes for produkt D8100, "Lakkert kabinett"
 
     ![To sett med arbeid for råvareplukking på Arbeid-siden.](./media/subcontract22_work-page.png)
 
-26. Start lagerappen for å prosessere lagerarbeidet for operasjon 10.
+26. Start mobilappen Lagerstyring for å prosessere lagerarbeidet for operasjon 10.
 
     <!-- TBD – screen shots for processing pick work for the materials. -->
 
@@ -222,13 +220,13 @@ En produksjonsordre på 10 deler opprettes for produkt D8100, "Lakkert kabinett"
     - I feltet **Fra oper.nr.** velg **10**.
     - I feltet **Til oper.nr.** velg **10**.
 
-    ![Verdier angitt i fanen Generelt](./media/subcontract23_start-dialog.png)
+    ![Verdier angitt i fanen Generelt 1](./media/subcontract23_start-dialog.png)
 
 31. Velg **OK** for å lukke dialogboksen **Start** og gå tilbake til siden **Alle produksjonsordrer**.
 
     Legg merke til at statusen for produksjonsordren nå er **Startet**. Materialene for operasjon 10 forbrukes av en automatisk postering av plukklistejournalen. Tidsforbruket for operasjon 10 er gjort rede for av en automatisk bokføring av en rutekortjournal.
 
-32. Start lagerappen for å prosessere lagerarbeidet for operasjon 20.
+32. Start mobilappen Lagerstyring for å prosessere lagerarbeidet for operasjon 20.
 
     <!-- TBD – screen shots for processing pick work for the materials. -->
 
@@ -240,7 +238,7 @@ En produksjonsordre på 10 deler opprettes for produkt D8100, "Lakkert kabinett"
     - I feltet **Antall** angi **10**.
     - Sett alternativet **Poster plukkliste nå** til **Nei**.
 
-    ![Verdier angitt i fanen Generelt](./media/subcontract24_general-tab.png)
+    ![Verdier angitt i fanen Generelt 2](./media/subcontract24_general-tab.png)
 
 35. Velg **OK** for å lukke dialogboksen **Start** og gå tilbake til siden **Alle produksjonsordrer**.
 

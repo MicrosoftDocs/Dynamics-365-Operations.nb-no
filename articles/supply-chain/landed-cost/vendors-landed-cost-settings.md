@@ -2,7 +2,6 @@
 title: Leverandørinnstillinger lagt til for Netto innkjøpspris
 description: Dette emnet beskriver de nye feltene som blir lagt til på den eksisterende leverandørsiden når du aktiverer modulen Netto innkjøpspris. Du bruker disse feltene til å definere leverandørene du vil bruke sammen med funksjoner for Netto innkjøpspris.
 author: sherry-zheng
-manager: tfehr
 ms.date: 12/07/2020
 ms.topic: article
 ms.prod: ''
@@ -16,17 +15,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 8cc0622cd761a671ebb88addc36b777cfefb7dc7
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 3a288517f77d1618f94f8539506d01a108e63fa5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500916"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5829769"
 ---
 # <a name="vendor-settings-added-for-landed-cost"></a>Leverandørinnstillinger lagt til for Netto innkjøpspris
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Når du aktiverer modulen **Netto innkjøpspris**, blir flere nye felt lagt til på den eksiderende siden **Leverandører**. Du bruker disse feltene til å definere leverandørene du vil bruke sammen med funksjoner for Netto innkjøpspris.
 

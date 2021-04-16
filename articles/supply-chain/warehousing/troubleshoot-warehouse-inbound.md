@@ -2,11 +2,9 @@
 title: Feilsøke innkommende lageroperasjoner
 description: Dette emnet beskriver hvordan du løser vanlige problemer som kan oppstå mens du arbeider med innkommende lageroperasjoner i Microsoft Dynamics 365 Supply Chain Management.
 author: perlynne
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 6875c3c644b9993a384ba4d8623640536d7307e1
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: f0ea2ee208cdbb8f9fa6668bbcb6e15252a7c1b1
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5250888"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5828232"
 ---
 # <a name="troubleshoot-inbound-warehouse-operations"></a>Feilsøke innkommende lageroperasjoner
 
@@ -65,5 +63,22 @@ En ny inngående lastbehandlingsfunksjon, *Overmottak for lastantall*, løser de
 
 Hvis du vil ha mer informasjon, kan du se [Poster registrerte produktantall mot bestillinger](inbound-load-handling.md#post-registered-quantities).
 
+## <a name="when-i-register-inbound-orders-i-receive-the-following-error-message-the-quantity-is-not-valid"></a>Når jeg registrerer innkommende ordrer, får jeg følgende feilmelding: "Antallet er ikke gyldig."
+
+### <a name="issue-description"></a>Problembeskrivelse
+
+Hvis feltet **Grupperingspolicy for nummerskilt** er satt til *Brukerdefinert* for et menyelement på en mobilenhet som brukes til å registrere innkommende ordrer, får du en feilmelding ("Antallet er ikke gyldig"), og du kan ikke fullføre registreringen.
+
+### <a name="issue-cause"></a>Feilårsak
+
+Når *Brukerdefinert* brukes som en grupperingspolicy for nummerskilt, deler systemet det innkommende lageret i separate nummerskilt, som angitt av enhetsseriegruppen. Hvis parti- eller serienumre brukes til å spore varen som mottas, må antallene i hvert parti eller hver serie angis per nummerskilt som er registrert. Hvis antallet som er angitt for et nummerskilt, overskrider antallet som fortsatt må mottas for gjeldende dimensjoner, får du feilmeldingen.
+
+### <a name="issue-resolution"></a>Problemløsning
+
+Når du registrerer en vare ved hjelp av et menyelement for mobilenhet der feltet **Grupperingspolicy for nummerskilt** er satt til *Brukerdefinert*, kan systemet kreve at du bekrefter eller angir numre på nummerskilt, partinumre eller serienumre.
+
+På bekreftelsessiden for nummerskiltet viser systemet antallet som er tilordnet for gjeldende nummerskilt. På parti- eller seriebekreftelsessidene vil systemet vise antallet som fortsatt må mottas på gjeldende numerskilt. Det inkluderer også et felt der du kan angi antallet som skal registreres for denne kombinasjonen av nummerskilt og parti- eller serienummer. I så fall må du sørge for at antallet som blir registrert for nummerskiltet, ikke overskrider antallet som fortsatt må mottas.
+
+Hvis det genereres for mange lisensavtaler ved innkommende ordreregistrering, kan verdien i feltet **Grupperingspolicy for numerskilt** endres til *Gruppering av nummerskilt*, en ny enhetssekvensgruppe kan tilordnes varen, eller alternativet **Gruppering av nummerskilt** for enhetssekvensgruppen kan deaktiveres.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
