@@ -2,8 +2,7 @@
 title: ER Opprette nødvendige konfigurasjoner for å importere data fra en ekstern fil
 description: Dette emnet beskriver hvordan du utformer konfigurasjoner for elektroniske rapportering for å importere data til Microsoft Dynamics 365 Finance-appen fra en ekstern fil.
 author: NickSelin
-manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 03/24/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -14,18 +13,25 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1b8a94173c7c5367b79bfcb354f0397515d94445
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 2194bdc918035bf3aebe9b90ddc8a30f9937bb0c
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5564296"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5751468"
 ---
 # <a name="er-create-required-configurations-to-import-data-from-an-external-file"></a>ER Opprette nødvendige konfigurasjoner for å importere data fra en ekstern fil
 
 [!include [banner](../../includes/banner.md)]
 
-De følgende trinnene forklarer hvordan en bruker i rollen Systemansvarlig eller Utvikler av elektronisk rapportering kan utforme konfigurasjoner for elektronisk rapportering (ER) for å importere data til programmet fra en ekstern fil. I dette eksemplet skal du opprette nødvendige ER-konfigurasjoner for eksempelfirmaet, Litware, Inc. For å fullføre disse trinnene, må du først fullføre trinnene i oppgaveveiledningen, "Opprette en konfigurasjonsleverandør og merke den som aktiv." Disse trinnene kan fullføres ved hjelp av USMF-datasettet. Du må også laste ned og lagre følgende filer lokalt ved hjelp av koblinger fra emnet Oversikt over elektronisk rapportering (https://go.microsoft.com/fwlink/?linkid=852550): 1099model.xml, 1099format.xml, 1099entries.xml, 1099entries.xlsx.
+De følgende trinnene forklarer hvordan en bruker i rollen Systemansvarlig eller Utvikler av elektronisk rapportering kan utforme konfigurasjoner for elektronisk rapportering (ER) for å importere data til programmet fra en ekstern fil. I dette eksemplet skal du opprette nødvendige ER-konfigurasjoner for eksempelfirmaet, Litware, Inc. For å fullføre disse trinnene, må du først fullføre trinnene i oppgaveveiledningen, "Opprette en konfigurasjonsleverandør og merke den som aktiv." Disse trinnene kan fullføres ved hjelp av USMF-datasettet. Du må også laste ned og lagre følgende filer lokalt. 
+
+| Innholdsbeskrivelse                       | Filnavn                                     |
+|-------------------------------------------|-----------------------------------------------|
+| ER-datamodellkonfigurasjon – 1099 | [1099model,xml](https://download.microsoft.com/download/b/d/9/bd9e8373-d558-4ab8-aa9b-31981adc97ea/1099model.xml)                  |
+| ER-formatkonfigurasjon – 1099    | [1099format.xml](https://download.microsoft.com/download/e/8/7/e87154b0-b53f-431f-8e1e-0b7f7c9805a9/1099format.xml)                  |
+| Eksempel på innkommende dokument i XML-format                          | [1099entries.xml](https://download.microsoft.com/download/4/0/3/403a4958-df24-476a-b8b0-6843a9fa7f89/1099entries.xml)        |
+| Eksempel fra arbeidsboken for behandling av data for innkommende dokument                          | [1099entries.xlsx](https://download.microsoft.com/download/6/0/0/6001abab-a331-48db-a939-41851fb0f5d0/1099entries.xlsx) |
 
 ER gir bedrifter muligheten til å konfigurere prosessen med å importere eksterne datafiler til tabeller i XML- eller TXT-format. Først må en abstrakt datamodell og en ER-datamodellkonfigurasjon utformes til å representere dataene du importerer. Deretter må du definere strukturen til filen du importerer, og metoden du vil bruke til å overføre dataene fra filen til den abstrakte datamodellen. ER-formatkonfigurasjonen som tilordnes til den utformede datamodellen, må opprettes for den abstrakte datamodellen. Deretter må datamodellkonfigurasjonen utvides med en tilordning som beskriver hvordan de importerte dataene beholdes som abstrakte datamodelldata og hvordan de brukes til å oppdatere tabeller.  ER-datamodellkonfigurasjonen må legges til med en ny modelltilordning som beskriver bindingen av datamodellen til programmets mål.  
 

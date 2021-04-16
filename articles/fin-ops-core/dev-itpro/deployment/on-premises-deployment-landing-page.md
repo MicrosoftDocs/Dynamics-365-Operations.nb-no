@@ -2,8 +2,7 @@
 title: Startside for lokal distribusjon
 description: Dette emnet gir informasjon og koblinger til innhold om lokale distribusjoner.
 author: sericks007
-manager: AnnBe
-ms.date: 11/23/2020
+ms.date: 03/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: dc9642ee224290891c738c9d0d2b96ff119a1622
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: caa3fccd9dcdfb3950958e793057131e77676d91
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5564066"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749311"
 ---
 # <a name="on-premises-deployment-home-page"></a>Startside for lokal distribusjon
 
@@ -38,13 +37,15 @@ Du kan distribuere Dynamics 365 Finance + Operations (lokal). Når du velger en 
 
 ## <a name="onboard"></a>Jobbintroduksjon
 - [Opprette lokale projekter in Lifecycle Services (LCS)](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
-- [Opprette og distribuere lokale miljøer (Plattformoppdatering 12 og nyere)](setup-deploy-on-premises-pu12.md)
+- [Opprette og distribuere lokale miljøer (Plattformoppdatering 41 og nyere)](setup-deploy-on-premises-pu41.md)
+- [Definere og distribuere lokale miljøer (Platform update 12 til 40)](setup-deploy-on-premises-pu12.md)
 - [Installere nettverksskriverenheter i lokale miljøer](../analytics/install-network-printer-onprem.md)
 - [Konfigurere sikkerhet for SQL Server Reporting Services for lokale distribusjoner](../analytics/configure-ssrs-on-premises.md)
 - [Utvikle og distribuere tilpassede modeller til lokale miljøer](develop-deploy-custom-models-on-premises.md)
 
 ## <a name="work-in-your-on-premises-deployment"></a>Arbeide i den lokale distribusjonen
-- [Konfigurere dokumentstyring](../../fin-ops/organization-administration/configure-document-management.md)
+- [Konfigurere høy tilgjengelighet for SSRS-noder (SQL Server Reporting Services)](onprem-SSRSHA.md)
+- [Konfigurer dokumentstyring](../../fin-ops/organization-administration/configure-document-management.md)
 - [Importere konfigurasjoner for elektronisk rapportering (ER)](../analytics/electronic-reporting-import-ger-configurations.md)
 - [Dokumentgenerering, publisering og utskrift i lokale distribusjoner](../analytics/printing-capabilities-on-premises.md)
 - [Konfigurere proxyer for lokale miljøer](onprem-reverseproxy.md)

@@ -2,7 +2,6 @@
 title: Sammenligning av skyfunksjoner og lokale funksjoner
 description: Emnet viser hvilke funksjoner som støttes i skyen og lokalt.
 author: sericks007
-manager: AnnBe
 ms.date: 01/14/2021
 ms.topic: article
 ms.prod: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
-ms.openlocfilehash: 52dfff77fa7d14e560ce20596a4d79edeadb5390
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: e2126983fef2b59af5c8082a6495f808afeb5f9c
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5566642"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744057"
 ---
 # <a name="comparison-of-cloud-and-on-premises-features"></a>Sammenligning av skyfunksjoner og lokale funksjoner
 
@@ -43,9 +42,9 @@ Tabellene nedenfor viser programområdene. Søttte for sky og lokalt er oppført
 |---------------------|-----------------------------|-----------|-----------------|
 | Overholdelse og sertifiseringer        |                                                                                           | Ja       | Ja             |
 |                                      | SOC 1 Type 1-sertifisering                                                                | Ja       | Nei              |
-| Databehandling og integrering      |                                                                                           | Ja       | Ja             
+| Databehandling og integrering      |                                                                                           | Ja       | Ja             |
 |                                      | Eksporter data til ditt eget datalager                                                    | Ja       | Ja             |
-|                                      | Aktiver eksport av inkrementelle oppdateringer til en dataenhet                                 | Ja       | Ja              |
+|                                      | Aktiver eksport av inkrementelle oppdateringer til en dataenhet                                 | Ja       | Ja             |
 |                                      | Dataintegreringer                                                                         | Ja       | Ja             |
 | Dokumentstyring                  |                                                                                           | Ja       | Ja             |
 | Økonomistyring                 |                                                                                           | Ja       | Ja             |
@@ -62,8 +61,8 @@ Tabellene nedenfor viser programområdene. Søttte for sky og lokalt er oppført
 |                                      | Analytiske arbeidsområder                                                                     | Ja       | Nei              |
 |                                      | Intelligent forretningsprosess: Anbefalinger                                             | Ja       | Nei              |
 |                                      | Forfatte Power BI-rapporter med OData ved hjelp av Power BI-skrivebords- eller Excel PowerQuery-verktøy    | Ja       | Nei              |
-|                                      | SQL Server Reporting Services (SSRS) støtter skalering ut                                 | Ja       | Nei              |
-|                                      | Telemetri overføres til skyen                                                   | Ja       | Nei              |
+|                                      | SQL Server Reporting Services (SSRS) støtter skalering ut                                 | Ja       | Ja             |
+|                                      | Telemetri overføres til skyen                                                   | Ja       | Ingen              |
 | Livssyklustjenester                   |                                                                                           | Ja       | Ja             |
 |                                      | Konfigurerbare forretningsprosesser                                                           | Ja       | Nei              |
 | Lokaliseringer                        |                                                                                           | Ja       | Ja             |
@@ -85,7 +84,7 @@ Tabellene nedenfor viser programområdene. Søttte for sky og lokalt er oppført
 
 | **Areal**                | **Funksjon**             | **Sky** | **Lokalt** |
 |-------------------------|-------------------|-----------|-----------------|
-| Objektbehandling                     |                                                                                           | Ja       | Nei |
+| Objektbehandling                     |                                                                                           | Ja       | Nei              |
 | Overholdelse og sertifiseringer        |                                                                                           | Ja       | Ja             |
 |                                      | SOC 1 Type 1-sertifisering                                                                | Ja       | Nei              |
 | Kostnadsregnskap                      |                                                                                           | Ja       | Ja             |
@@ -96,7 +95,7 @@ Tabellene nedenfor viser programområdene. Søttte for sky og lokalt er oppført
 | Databehandling og integrering      |                                                                                           | Ja       | Ja             |
 |                                      | Konfigurasjonsdrevet utvidelse                                                            | Ja       | Antall              |
 |                                      | Eksporter data til ditt eget datalager                                                    | Ja       | Ja             |
-|                                      | Aktiver eksport av inkrementelle oppdateringer til en dataenhet                                 | Ja       | Ja              |
+|                                      | Aktiver eksport av inkrementelle oppdateringer til en dataenhet                                 | Ja       | Ja             |
 |                                      | Dataintegreringer                                                                         | Ja       | Ja             |
 | Dokumentstyring                  |                                                                                           | Ja       | Ja             |
 | Hjelp                                 |                                                                                           | Ja       | Nei              |
@@ -111,9 +110,9 @@ Tabellene nedenfor viser programområdene. Søttte for sky og lokalt er oppført
 |                                      | Analytiske arbeidsområder                                                                     | Ja       | Nei              |
 |                                      | Intelligent forretningsprosess: Anbefalinger                                             | Ja       | Nei              |
 |                                      | Forfatte Power BI-rapporter med OData ved hjelp av Power BI-skrivebords- eller Excel PowerQuery-verktøy    | Ja       | Nei              |
-|                                      | SQL Server Reporting Services (SSRS) støtter skalering ut                                 | Ja       | Antall              |
-|                                      | Telemetri overføres til skyen                                                   | Ja       | Antall              |
-| Lagerstyring                 |                                                                                           | Ja       | Ja             |
+|                                      | SQL Server Reporting Services (SSRS) støtter skalering ut                                 | Ja       | Ja             |
+|                                      | Telemetri overføres til skyen                                                   | Ja       | Ingen              |
+| Beholdningsstyring                 |                                                                                           | Ja       | Ja             |
 | Livssyklustjenester                   |                                                                                           | Ja       | Ja             |
 |                                      | Konfigurerbare forretningsprosesser                                                           | Ja       | Antall              |
 | Lokaliseringer                        |                                                                                           | Ja       | Ja             |

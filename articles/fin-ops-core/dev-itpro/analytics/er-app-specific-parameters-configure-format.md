@@ -2,8 +2,7 @@
 title: Konfigurere ER-formater til å bruke parametere som angis per juridisk enhet
 description: Dette emnet forklarer hvordan du kan konfigurere elektroniske rapporter (ER)-formater til å bruke parametere som angis per juridisk enhet.
 author: NickSelin
-manager: AnnBe
-ms.date: 10/26/2019
+ms.date: 03/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 9253191f9cd10e0b3c87d61991598f9b791c35d9
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 16eab3ffa7d4a780ec9709f5c8a5c263b1e75365
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5570740"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5751184"
 ---
 # <a name="configure-er-formats-to-use-parameters-that-are-specified-per-legal-entity"></a>Konfigurere ER-formater til å bruke parametere som angis per juridisk enhet
 
@@ -48,14 +47,14 @@ Vi anbefaler at du fullfører trinnene i emnet [Støtte for parametriserte kall 
 
 ## <a name="import-er-configurations-into-rcs"></a>Importere ER-konfigurasjoner til RCS
 
-Fra [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=851448) kan du laste ned den pakkede (komprimerte) filen **Støtte for parametriserte kall av ER-datakilder av felttypen Beregnet**. Den inneholder følgende ER-konfigurasjoner som må pakkes ut og lagres lokalt.
+Last ned og lagre følgende ER-konfigurasjoner lokalt:
 
 | **Innholdsbeskrivelse**                        | **Filnavn**                                        |
 |------------------------------------------------|------------------------------------------------------|
-| Eksempel på konfigurasjonsfilen **ER-datamodell**    | Modell for å lære om parameterkall.versjon.1.XML     |
-| Eksempel på konfigurasjonsfilen **ER-metadata**      | Metadata for å lære om parameterkall.versjon.1.XML  |
-| Eksempel på konfigurasjonsfilen **ER-modelltilordning** | Tilordning for å lære om parameterkall.versjon.1.1.XML |
-| Eksempel på **ER-format**-konfigurasjon             | Format for å lære om parameterkall.versjon.1.1.XML  |
+| Eksempel på konfigurasjonsfilen **ER-datamodell**    | [Modell for å lære om parameterkall.versjon.1.XML](https://download.microsoft.com/download/2/d/b/2db913a0-3622-494e-91a2-97fc494af9b9/Modeltolearnparameterizedcalls.version.1.xml)     |
+| Eksempel på konfigurasjonsfilen **ER-metadata**      | [Metadata for å lære om parameterkall.versjon.1.XML](https://download.microsoft.com/download/1/b/3/1b343968-5a47-4000-b5a8-6487698ef4c0/Metadatatolearnparameterizedcalls.version.1.xml)  |
+| Eksempel på konfigurasjonsfilen **ER-modelltilordning** | [Tilordning for å lære om parameterkall.versjon.1.1.XML](https://download.microsoft.com/download/8/6/6/866e0ab6-2e05-4d98-9d52-d2da2038f6e4/Mappingtolearnparameterizedcalls.version.1.1.xml) |
+| Eksempel på **ER-format**-konfigurasjon             | [Format for å lære om parameterkall.versjon.1.1.XML](https://download.microsoft.com/download/e/3/9/e392eadc-b9b4-4834-95c3-b8066dd00b9c/Formattolearnparameterizedcalls.version.1.1.xml)  |
 
 Logg deretter på RCS-forekomsten.
 
@@ -79,17 +78,17 @@ I dette eksemplet skal du opprette en konfigurasjon for eksempelfirmaet Litware,
 
     ER-formatet **Format for å lære om parameterkall** er utformet for å generere en skatteoppgave i XML-format som viser flere nivåer med avgifter (vanlig, redusert og ingen). Hvert nivå har et ulikt antall detaljer.
 
-    ![Side med ER-operasjonsutforming](./media/RCS-AppSpecParms-ReviewFormat.PNG)
+    ![Flere nivåer av ER-format. Format for å lære parameteriserte samtaler](./media/RCS-AppSpecParms-ReviewFormat.PNG)
 
 5.  Utvid elementene **Modell**, **Data** og **Sammendrag** i kategorien **Tilordning**.
 
     Datakilden **Model.Data.Summary** returnerer listen over mva-transaksjoner. Disse transaksjonene er oppført etter mva-kode. For denne datakilden er det beregnede **Model.Data.Summary.Level**-feltet konfigurert til å returnere koden for avgiftsnivået for hver summerte post. For alle avgiftskoder som kan hentes fra **Model.Data.Summary**-datakilden ved kjøretid, returnerer det beregnede feltet avgiftsnivåkode (**Vanlig**, **Redusert**, **Ingen** eller **Annet**) som en tekstverdi. Det beregnede **Model.Data.Summary.Level**-feltet brukes til å filtrere poster for **Model.Data.Summary**-datakilden og angi de filtrerte dataene i hvert XML-element som representerer et avgiftsnivå ved hjelp av feltene **Model.Data2.Level1**, **Model.Data2.Level2** og **Model.Data2.Level3**.
 
-    ![Side med ER-operasjonsutforming](./media/RCS-AppSpecParms-ReviewFormat-Data2Fld.PNG)
+    ![Datakildelisten Model.Data.Summary over mva-transaksjoner](./media/RCS-AppSpecParms-ReviewFormat-Data2Fld.PNG)
 
     Det beregnede **Model.Data.Summary.Level**-feltet er konfigurert slik at det inneholder et ER-uttrykk. Legg merke til at avgiftskoder (**VAT19**, **InVAT19**, **VAT7**, **InVAT7**, **THIRD** og **InVAT0**) er hardkodet til denne konfigurasjonen. Derfor er dette ER-formatet avhengig av den juridiske enheten der disse avgiftskodene ble konfigurert.
 
-    ![Side med ER-operasjonsutforming](./media/RCS-AppSpecParms-ReviewFormat-LevelFld.PNG)
+    ![Det beregnede feltet Model.Data.Summary.Level med hardkodede avgiftskoder](./media/RCS-AppSpecParms-ReviewFormat-LevelFld.PNG)
 
     Hvis du vil støtte et annet sett med mva-koder for hver juridiske enhet, må du følge denne fremgangsmåten:
 
@@ -129,7 +128,7 @@ Deretter legger du til en ny ER-formatopplisting. Verdiene for denne formatoppli
 12. Velg **Legg til** på nytt.
 13. Angi **Annet** i **Navn**-feltet.
 
-    ![Side med ER-operasjonsutforming](./media/RCS-AppSpecParms-ConfigureFormat-Enum.PNG)
+    ![Ny post på Format-opplistingssiden](./media/RCS-AppSpecParms-ConfigureFormat-Enum.PNG)
 
     Siden forretningsbrukerne kan bruke forskjellige språk til å angi juridisk enhetsavhengige sett med avgiftskoder, anbefaler vi at du oversetter verdiene for denne opplistingen til språkene som er konfigurert som foretrukne språk for disse brukerne i Økonomimodulen.
 
@@ -142,7 +141,7 @@ Deretter legger du til en ny ER-formatopplisting. Verdiene for denne formatoppli
 20. I **Oversatt tekst**-feltet angir du **keine Besteuerung**.
 21. Velg **Oversett**.
 
-    ![Side med ER-operasjonsutforming](./media/RCS-AppSpecParms-ConfigureFormat-EnumTranslate.PNG)
+    ![Lysbilde ut for tekstoversetting](./media/RCS-AppSpecParms-ConfigureFormat-EnumTranslate.PNG)
 
 22. Velg **Lagre**.
 23. Lukk **Formatopplistinger**-siden.
@@ -169,13 +168,13 @@ Deretter legger du til en ny datakilde for å angi hvordan forretningsbrukere sk
 10. Velg elementet **Model.Data.Tax.Code**.
 11. Velg **Legg til**-knappen (høyre pilen).
 
-    ![Side med ER-operasjonsutforming](./media/RCS-AppSpecParms-ConfigureFormat-Lookup1.PNG)
+    ![Kolonner lysbilde ut](./media/RCS-AppSpecParms-ConfigureFormat-Lookup1.PNG)
 
     Du har akkurat angitt at en forretningsbruker må velge en av avgiftskodene som en betingelse for hver regel som er angitt i denne datakilden for avgiftsnivågjenkjenning. Listen over avgiftskoder som firmabrukeren kan velge, vil bli returnert av **Model.Data.Tax**-datakilden. Siden denne datakilden inneholder **Navn**-feltet, vises navnet på mva-koden for hver mva-kodeverdi i oppslaget som presenteres for forretningsbrukeren.
     
 12. Velg **OK**.
 
-    ![Side med ER-operasjonsutforming](./media/RCS-AppSpecParms-ConfigureFormat-Lookup2.PNG)
+    ![Oppslagsutformingsside](./media/RCS-AppSpecParms-ConfigureFormat-Lookup2.PNG)
 
     Forretningsbrukere kan legge til flere regler som poster i denne datakilden. Hver post vil bli nummerert med en linjekode. Regler vil bli evaluert i stigende linjenummer.
 
@@ -189,13 +188,13 @@ Deretter legger du til en ny datakilde for å angi hvordan forretningsbrukere sk
 
     Legg merke til at du har lagt til en ny datakilde som returnerer avgiftsnivået som verdien for formatopplistingen **Liste over avgiftsnivåer** for en mva-kode som sendes til datakilden som argument for **kode**-parameteren til datatypen **streng**.
     
-    ![Side med ER-operasjonsutforming](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFld.PNG)
+    ![Formatutformingsside med en ny datakilde](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFld.PNG)
 
     Legg merke til at evalueringen av konfigurerte regler avhenger av datatypen til feltene som er valgt for å definere betingelsene for disse reglene. Når du velger et felt som er konfigurert som et felt enten for datatypen **numerisk** eller **dato**, vil vilkårene være forskjellige fra vilkårene som ble beskrevet tidligere for datatypen **streng**. For **numerisk**- og **data**-felt må regelen angis som et verdiområde. Betingelsen for regelen vil da anses som oppfylt når en verdi som sendes til datakilden, er i det konfigurerte området.
     
     Illustrasjonen nedenfor viser et eksempel på denne typen oppsett. I tillegg til **Model.Data.Tax.Code**-feltet i **streng**-datatypen brukes **Model.Tax.Summary.Base**-feltet for **Real**-datatypen til å angi betingelser for en oppslagsdatakilde.
     
-    ![Side med ER-operasjonsutforming](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFld2.PNG)
+    ![Oppslagsutformingsside med tilleggskolonner](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFld2.PNG)
 
     Fordi feltene **Model.Data.Tax.Code** og **Model.Tax.Summary.Base** er valgt for denne oppslagsdatakilden, konfigureres hver regel for denne datakilden på følgende måte:
     
@@ -224,7 +223,7 @@ Siden forretningsbrukerne kan bruke forskjellige språk til å angi juridisk enh
 9.  Velg **Oversett**.
 10. Velg **OK**.
 
-    ![Side med ER-operasjonsutforming](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFldTranslate.PNG)
+    ![Datakildeegenskaper dras ut](./media/RCS-AppSpecParms-ConfigureFormat-SelectorFldTranslate.PNG)
 
 ### <a name="add-a-new-field-to-consume-the-configured-lookup"></a>Legg til et nytt felt for å bruke det konfigurerte oppslaget
 
@@ -237,16 +236,16 @@ Siden forretningsbrukerne kan bruke forskjellige språk til å angi juridisk enh
 7.  I **Formel**-feltet angir du **Model.Selector(Model.Data.Summary.Code)**.
 8.  Velg **Lagre**.
 
-    ![Side med ER-operasjonsutforming](./media/RCS-AppSpecParms-ConfigureFormat-AddLevelByLookupFld.PNG)
+    ![Legg til Model.Selector(Model.Data.Summary.Code) på Formeldesigner-siden](./media/RCS-AppSpecParms-ConfigureFormat-AddLevelByLookupFld.PNG)
 
 9.  Lukk siden **Formelredigering**.
 10. Velg **OK**.
 
-    ![Side med ER-operasjonsutforming](./media/RCS-AppSpecParms-ConfigureFormat-AddLevelByLookupFld2.PNG)
+    ![Formatutformingsside med ny formel lagt til](./media/RCS-AppSpecParms-ConfigureFormat-AddLevelByLookupFld2.PNG)
 
     Legg merke til at det beregnede **LevelByLookup**-feltet som du la til, returnerer avgiftsnivået som verdien for formatopplistingen **Liste over avgiftsnivåer** for hver summerte avgiftstransaksjonsoppføring. Mva-koden for posten vil bli sendt til **Model.Selector**-oppslagsdatakilden, og settet med regler for denne datakilden blir brukt til å velge riktig avgiftsnivå.
 
-### <a name="add-a-new-format-enumeration-based-data-source"></a>Legg til en ny formatopplistingsbasert datakilde
+### <a name="add-a-new-format-enumeration-based-data-source&quot;></a>Legg til en ny formatopplistingsbasert datakilde
 
 Deretter legger du til en ny datakilde som refererer til formatopplistingen du la til tidligere. Verdier i denne datakilden vil bli brukt i et ER-formatuttrykk senere.
 
@@ -256,7 +255,7 @@ Deretter legger du til en ny datakilde som refererer til formatopplistingen du l
 4.  I **Formatopplisning**-feltet velger du **Liste over avgiftsnivåer**.
 5.  Velg **Lagre**.
 
-### <a name="modify-an-existing-field-to-start-to-use-the-lookup"></a>Endre et eksisterende felt for å begynne å bruke oppslaget
+### <a name=&quot;modify-an-existing-field-to-start-to-use-the-lookup&quot;></a>Endre et eksisterende felt for å begynne å bruke oppslaget
 
 Deretter skal du endre det eksisterende beregnede feltet slik at det bruker den konfigurerte oppslagsdatakilden til å returnere den riktige avgiftsnivåverdien, avhengig av mva-koden.
 
@@ -266,7 +265,7 @@ Deretter skal du endre det eksisterende beregnede feltet slik at det bruker den 
 
     Legg merke til at gjeldende uttrykk for **Model.Data.Summary.Level**-feltet inkluderer følgende hardkodede mva-koder:
     
-    CASE (@.Code, "VAT19", "Vanlig", "InVAT19", "Vanlig", "VAT7", "Reduced", "InVAT7", "Redusert", "THIRD", "Ingen", "InVAT0", "Ingen", "Annet")
+    CASE (@.Code, &quot;VAT19&quot;, &quot;Vanlig&quot;, &quot;InVAT19&quot;, &quot;Vanlig&quot;, &quot;VAT7&quot;, &quot;Reduced&quot;, &quot;InVAT7&quot;, &quot;Redusert&quot;, &quot;THIRD&quot;, &quot;Ingen&quot;, &quot;InVAT0&quot;, &quot;Ingen&quot;, &quot;Annet")
 
 4.  I **Formel**-feltet angir du **CASE(@.LevelByLookup, TaxationLevel.'Regular taxation', "Vanlig", TaxationLevel.'Reduced taxation', "Redusert", TaxationLevel.'No taxation', "Ingen", "Annet")**.
 
@@ -282,14 +281,14 @@ Deretter skal du endre det eksisterende beregnede feltet slik at det bruker den 
 
 ## <a name="complete-the-draft-version-of-a-derived-format"></a>Fullfør utkastversjonen av et avledet format
 
-1.  I hurtigfanen **Versjoner** velger du **Endre status**.
+1.  På hurtigfanen **Versjoner** velger du **Endre status**.
 2.  Velg **Fullfør**.
 3.  Velg **OK**.
 
 ## <a name="export-completed-version-of-modified-format"></a>Eksporter fullført versjon av et endret format
 
 1.  I konfigurasjonstreet velger du elementet **Format for å lære hvordan du slår opp LE-data**.
-2.  I hurtigfanen **Versjoner** velger du posten med statusen **Fullført**.
+2.  På hurtigfanen **Versjoner** velger du posten med statusen **Fullført**.
 3.  Velg **Veksle**.
 4.  Velg **Eksporter som XML-fil**.
 5.  Velg **OK**.

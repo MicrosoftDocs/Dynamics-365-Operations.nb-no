@@ -2,8 +2,7 @@
 title: SPLITLIST ER-funksjonen
 description: Dette emnet gir generell informasjon om hvordan du bruker ER-funksjonen SPLITLIST.
 author: NickSelin
-manager: kfend
-ms.date: 12/12/2019
+ms.date: 03/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af8c413726ca8d9f92eff18807e7fa9002fc9d37
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 99e199e238b3132622a8b305895637b430e8f6d2
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5559144"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745575"
 ---
 # <a name="splitlist-er-function"></a>SPLITLIST ER-funksjonen
 
@@ -29,10 +28,16 @@ ms.locfileid: "5559144"
 
 `SPLITLIST`-funksjonen deler den angitte listen i underlister (eller grupper), der hver inneholder det angitte antallet poster. Deretter returneres resultatet som en ny *postliste*-verdi som består av partiene.
 
-## <a name="syntax"></a>Syntaks
+## <a name="syntax-1"></a>Syntaks 1
 
 ```vb
 SPLITLIST (list, number)
+```
+
+## <a name="syntax-2"></a>Syntaks 2
+
+```vb
+SPLITLIST (list, number, on-demand reading flag)
 ```
 
 ## <a name="arguments"></a>Argumenter
@@ -44,6 +49,10 @@ Den gyldige banen til en datakilde av *Postliste*-datatypen.
 `number`: *Heltall*
 
 Maksimalt antall poster per parti.
+
+`on-demand reading flag`: *Boolsk*
+
+En *boolsk* verdi som angir om elementer i underlister skal genereres ved behov.
 
 ## <a name="return-values"></a>Returverdier
 
@@ -62,6 +71,8 @@ Listen over partier som returneres, inneholder følgende elementer:
 - **BatchNumber:** *Heltall*
 
     Nummeret for gjeldende parti i den returnerte listen.
+
+Når flagget for lesing ved behov er satt til **Sann**, genereres underlister etter forespørsel som tillater reduksjon i minneforbruk, men som kan føre til ytelsesreduksjon hvis elementer ikke brukes sekvensielt.
 
 ## <a name="example"></a>Eksempel
 

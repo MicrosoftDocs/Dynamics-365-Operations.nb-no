@@ -1,8 +1,7 @@
 ---
-title: Oversikt over personale
-description: Personale forenkler mange vanlige arkiveringsoppgaver og automatiserer en rekke prosesser som er knyttet til bemanning av organisasjonen. Det inneholder også et rammeverk for personalansatte til å administrere områder under oppsyn. Disse områdene omfatter ansattrekruttering og oppbevaring, administrasjon av fordeler, opplæring, ytelsesvurderinger og endringsadministrasjon.
+title: Oversikt over Human Resources
+description: Human Resources strømlinjeformer rutinemessige arkiveringsoppgaver, automatiserer prosesser i forbindelse med bemanning i organisasjonen og gir et rammeverk for personale som kan styre områder med oversyn.
 author: andreabichsel
-manager: AnnBe
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
@@ -14,14 +13,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8fb04ed91c28dc87bdcf4e218cbeaf99f5442ab4
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: d6f70e7626100646feb12e8544b5ab943097b1a3
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5566704"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752186"
 ---
-# <a name="human-resources-overview"></a>Oversikt over personale
+# <a name="human-resources-overview"></a>Oversikt over Human Resources
 
 [!include [banner](../includes/banner.md)]
 

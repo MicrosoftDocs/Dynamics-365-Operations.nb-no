@@ -2,7 +2,6 @@
 title: Utforme konfigurasjoner for å generere rapporter i Office-format med innebygde bilder
 description: Dette emnet beskriver hvordan du utformer konfigurasjoner som genererer elektroniske dokumenter i Excel- og Word-formater som inneholder innebygde bilder.
 author: NickSelin
-manager: AnnBe
 ms.date: 01/23/2018
 ms.topic: business-process
 ms.prod: ''
@@ -13,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3585d99ce2db8a7833b11a4bcc68f9e91023b9cd
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: e1bafc919d73c9e603935398563bb26e8fb277d3
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5569491"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5751064"
 ---
 # <a name="design-configurations-to-generate-reports-in-office-format-that-have-embedded-images"></a>Utforme konfigurasjoner for å generere rapporter i Office-format med innebygde bilder
 

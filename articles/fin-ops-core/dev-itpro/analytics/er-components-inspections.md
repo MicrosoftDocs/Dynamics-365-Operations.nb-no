@@ -2,7 +2,6 @@
 title: Kontrollere den konfigurerte ER-komponenten for å forhindre kjøretidsproblemer
 description: Dette emnet forklarer hvordan du undersøker de konfigurerte komponentene for elektronisk rapportering (ER) for å forhindre kjøretidsproblemer som kan oppstå.
 author: NickSelin
-manager: AnnBe
 ms.date: 03/04/2021
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 86db6dc27a8a76e90494e3dc7a7cc9c828f9ec37
-ms.sourcegitcommit: a3052f76ad71894dbef66566c07c6e2c31505870
+ms.openlocfilehash: d164dfe10c9736d8b4529a32ffba765f94ad37d9
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "5574131"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5753846"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>Kontrollere den konfigurerte ER-komponenten for å forhindre kjøretidsproblemer
 
@@ -666,19 +665,19 @@ Følgende illustrasjon viser kjøretidsfeilen som oppstår hvis du ignorerer adv
 
 ![Kjøretidsfeil som oppstår under formattilordningskjøring på siden Formatutforming.](./media/er-components-inspections-10b.png)
 
-### <a name="automatic-resolution"></a>Automatisk løsning
+### <a name="automatic-resolution&quot;></a>Automatisk løsning
 
 Ingen alternativer for automatisk korrigering av dette problemet er tilgjengelig.
 
-### <a name="manual-resolution"></a>Manuell løsing
+### <a name=&quot;manual-resolution&quot;></a>Manuell løsing
 
-#### <a name="option-1"></a>Alternativ 1
+#### <a name=&quot;option-1&quot;></a>Alternativ 1
 
 Fjern **Buffer**-flagget fra **Leverandør**-datakilden. Datakilden **FilteredVendor** vil deretter bli kjørbar, men **Leverandør**-datakilden som det refereres til i tabellen VendTable, vil bli brukt hver gang **FilteredVendor**-dsatakilden kalles.
 
-#### <a name="option-2"></a>Alternativ 2
+#### <a name=&quot;option-2&quot;></a>Alternativ 2
 
-Endre uttrykket for **FilteredVendor**-datakilden fra `FILTER(Vendor, Vendor.AccountNum="US-101")` til `WHERE(Vendor, Vendor.AccountNum="US-101")`. I dette tilfellet vil datakilden **Leverandør** som det henvises til i tabellen VendTable, bare brukes i det første kallet til **Leverandør**-datakilden. Valget av poster vil imidlertid bli utført i minnet. Derfor kan denne fremgangsmåten føre til dårlig ytelse.
+Endre uttrykket for **FilteredVendor**-datakilden fra `FILTER(Vendor, Vendor.AccountNum=&quot;US-101")` til `WHERE(Vendor, Vendor.AccountNum="US-101")`. I dette tilfellet vil datakilden **Leverandør** som det henvises til i tabellen VendTable, bare brukes i det første kallet til **Leverandør**-datakilden. Valget av poster vil imidlertid bli utført i minnet. Derfor kan denne fremgangsmåten føre til dårlig ytelse.
 
 ## <a name="missing-binding"></a><a id="i11"></a>Manglende binding
 
