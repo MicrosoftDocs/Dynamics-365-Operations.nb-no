@@ -2,11 +2,9 @@
 title: Laste opp videoer
 description: Dette emnet beskriver hvordan du laster opp videoer i områdebyggeren for Microsoft Dynamics 365 Commerce.
 author: psimolin
-manager: annbe
 ms.date: 03/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -17,20 +15,18 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d74e7116d68074bfc917784a8f51f85d5682c5d6
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 5ec20f8caee2f5a62230be05923dfd52600c1e35
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5213848"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5799211"
 ---
 # <a name="upload-videos"></a>Laste opp videoer
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet beskriver hvordan du laster opp videoer i områdebyggeren for Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Oversikt
 
 Med mediebiblioteket for Commerce-områdebygger kan du laste opp videoer. Du bør alltid laste opp den versjonen av en video med den høyeste bithastigheten og oppløsningen, fordi videoen automatisk vil bli konvertert til å passe for forskjellige visningsporter og deres stoppunkter.
 

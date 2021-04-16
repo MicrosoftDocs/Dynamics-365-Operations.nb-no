@@ -2,11 +2,9 @@
 title: Legge til språk på området
 description: Dette emnet beskriver hvordan du kan legge til støtte for flere språk på et Microsoft Dynamics 365 Commerce-område.
 author: bicyclingfool
-manager: annbe
 ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,21 +14,18 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6ed1e2eae18b381c21b63a5cc403ddee0336f784
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d74b24cc6363aa0a59f4f6c3365a8b37bbbe292b
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5207609"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5797629"
 ---
 # <a name="add-languages-to-your-site"></a>Legge til språk på området
-
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet beskriver hvordan du kan legge til støtte for flere språk på et Microsoft Dynamics 365 Commerce-område.
-
-## <a name="overview"></a>Oversikt
 
 Du kan lokalisere webområdet ditt til et hvilket som helst språk som Commerce støtter. (Listen over støttede språk vises senere i dette emnet.) Hvis du vil legge til et språk på webområdet ditt, må du først legge det til i en nettbutikk som er bundet til området ditt.
 

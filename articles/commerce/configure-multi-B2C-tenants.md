@@ -2,11 +2,9 @@
 title: Konfigurere flere B2C-leiere i et Commerce-miljø
 description: Dette emnet beskriver når og hvordan du definerer flere per kanals Microsoft Azure Active Directory (Azure AD) B2C-leiere for brukergodkjenning i et dedikert Dynamics 365 Commerce-miljø.
 author: BrianShook
-manager: annbe
-ms.date: 03/02/2020
+ms.date: 03/17/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-12
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2ddc8cea42ab0b5a319d4725ce8c75e57529cc63
-ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
+ms.openlocfilehash: 4e50855368a3fa86c38c756492fc7e6cd518f497
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/19/2021
-ms.locfileid: "5477762"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5796105"
 ---
 # <a name="configure-multiple-b2c-tenants-in-a-commerce-environment"></a>Konfigurere flere B2C-leiere i et Commerce-miljø
 
@@ -55,10 +53,6 @@ Følgende illustrasjon viser flere B2C-leiere i et Commerce-miljø.
 
 Hvis du finner ut at bedriften krever forskjellige B2C-leiere per kanal i samme Commerce-miljø, må du utføre fremgangsmåtene i de følgende delene for å be om denne funksjonen.
 
-## <a name="request-that-b2c-per-channel-be-enabled-in-your-environment"></a>Be om at B2C per kanal aktiveres i miljøet ditt
-
-Hvis du vil at forskjellige B2C-leiere per kanal skal være tilgjengelige i det samme Commerce-miljøet, må du sende en forespørsel til Dynamics 365 Commerce. Hvis du vil ha mer informasjon, se [Få kundestøtte for Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md), eller diskuter dette problemet med Commerce-løsningskontakten.
-
 ## <a name="configure-b2c-tenants-in-your-environment"></a>Konfigurere B2C-leiere i ditt miljø
 
 Hvis du vil konfigurere B2C-leiere i miljøet ditt, fullfører du de relevante fremgangsmåtene i denne delen.
@@ -79,11 +73,11 @@ Følg denne fremgangsmåten for å legge til en Azure AD B2C-leier i miljøet.
     - **Klient-GUID**: Angi Azure AD B2C-leier-IDen slik den vises i Azure-portalen (ikke program-IDen for B2C-leieren).
     - **Policy-ID for redigering av profil**: Angi policy-IDen (navnet på policyen i Azure-portalen).
 
-1. Når du er ferdig med å angi denne informasjonen, velger du **OK** for å lagre endringene.
+1. Når du er ferdig med å angi denne informasjonen, velger du **OK** for å lagre endringene. Den nye Azure AD B2C-leieren skal nå vises i listen under **Behandle B2C-programmer**.
 
 > [!NOTE]
 > Du bør la felt som **Omfang**, **Ikke-interaktiv policy-ID**, **Ikke-interaktiv klient-ID**, **Egendefinert domene for pålogging** og **Policy-ID for registrering** stå tomme, med mindre Dynamics 365 Commerce-teamet instruerer deg om å angi dem.
-Den nye Azure AD B2C-leieren skal nå vises i listen under **Behandle B2C-programmer**.
+
 
 ### <a name="manage-or-delete-an-azure-ad-b2c-tenant"></a>Administrere eller slette en Azure AD B2C-leier
 
@@ -97,6 +91,7 @@ Den nye Azure AD B2C-leieren skal nå vises i listen under **Behandle B2C-progra
 > Når en B2C-leier er konfigurert for et aktivt/publisert område, kan brukere ha registrert seg ved å bruke kontoer som finnes på leieren. Hvis du sletter en konfigurert leier på menyen **Leierinnstillinger \> B2C-leier**, fjerner du tilknytningen av B2C-leieren fra områder som er knyttet til en hvilken som helst kanal i leieren. I dette tilfellet kan det hende at brukerne ikke lenger kan logge på kontoene sine. Vær derfor svært forsiktig når du sletter en konfigurert leier.
 >
 > Når en konfigurert leier slettes, vil B2C-leieren og -postene fortsatt bli opprettholdt, men Commerce-systemkonfigurasjonen for denne leieren vil bli endret eller fjernet. Brukere som prøver å registrere seg eller logge på området, vil opprette en ny forretningsforbindelsesoppføring i den standard eller nylig tilknyttede B2C-leieren som er konfigurert for kanalen på området.
+
 ## <a name="configure-your-channel-with-a-b2c-tenant"></a>Konfigurere kanalen med en B2C-leier
 
 1. Logg inn på Commerce-områdebyggeren for ditt miljø som systemadministrator. Hvis du vil konfigurere Azure AD B2C-leietakere, må du være systemadministrator for Commerce-miljøet.

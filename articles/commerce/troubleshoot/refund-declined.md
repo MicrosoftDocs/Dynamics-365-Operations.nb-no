@@ -2,7 +2,6 @@
 title: Refusjon på en returordre avvises
 description: Dette emnet inneholder feilsøkingsveiledning som kan hjelpe deg når en refusjon på en returordre avvises, fordi kredittkortet som brukes til fakturering, er forskjellig fra kortet som ble brukt under den opprinnelige betalingsautorisasjonen.
 author: Reza-Assadi
-manager: AnnBe
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
 ms.prod: ''
@@ -17,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: e202c6b4b9e025d5af1cd5eb6235884aab6444e6
-ms.sourcegitcommit: 6c108be3378b365e6ec596a1a8666d59b758db25
+ms.openlocfilehash: 5961e77de1de5dc23454fc1a6e16f8c0b4e7cc6a
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "5585471"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5801561"
 ---
 # <a name="refund-on-a-return-order-is-declined"></a>Refusjon på en returordre avvises
 

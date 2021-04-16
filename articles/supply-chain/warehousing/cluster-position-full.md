@@ -2,11 +2,9 @@
 title: Gruppestilling full
 description: Dette emnet inneholder informasjon om funksjonen Gruppeposisjon full. Denne funksjonen gir et alternativ til mer rigid håndhevelse av arbeidsstoppregler når gruppueplukking brukes, ettersom det muliggjør en større margin med feil i de volumetriske begrensningene i beholdere eller transportkasser.
 author: Mirzaab
-manager: tfehr
 ms.date: 08/25/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSClusterProfile
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: b6a7cad070377de58d21a8eb91ee3e1ffaf1c660
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: ad0f8e2fa6b3767c6b5d5549a36d52990f871531
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5233013"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5808852"
 ---
 # <a name="cluster-position-full"></a>Gruppestilling full
 
@@ -213,7 +211,7 @@ To arbeids-ID-er bør være opprettet, og hver av dem har to plukklinjer. Følg 
 
 ### <a name="mobile-device-flow-execution--work-confirmation-setup-for-the-product"></a>Flytutføring for mobilenhet – behandling av arbeidsbekreftelse for produktet
 
-1. Logg på lagerappen som en bruker på lageret *61*.
+1. Logg på mobilappen Lagerstyring som en bruker som er aktivert i lager *61*.
 1. Gå til **Utgående \> Oppretting av gruppeplukking**.
 
     Siden **OPPGAVE: Tilordne arbeid til gruppe** vises.

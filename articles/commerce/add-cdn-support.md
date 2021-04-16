@@ -2,11 +2,9 @@
 title: Legge til støtte for et innholdsleveringsnettverk (CDN)
 description: Dette emnet beskriver hvordan du legger til et innholdsleveringsnettverk (CDN) i Microsoft Dynamics 365 Commerce-miljøet.
 author: brianshook
-manager: annbe
-ms.date: 07/31/2020
+ms.date: 03/17/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d653b072eca134c765a5db5659b228648fc13c4a
-ms.sourcegitcommit: 3fe4d9a33447aa8a62d704fbbf18aeb9cb667baa
+ms.openlocfilehash: a56f675b1fb43160625101a067c74e9fcf4f714a
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "5582725"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5797845"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>Legge til støtte for et innholdsleveringsnettverk (CDN)
 
@@ -41,11 +39,7 @@ I tillegg betjenes *statistiske filer* (JavaScript- eller Cascading Style Sheets
 
 ## <a name="set-up-ssl"></a>Definer SSL
 
-For å sikre at SSL er konfigurert, og at statistiske filer bufres, må du konfigurere CDN slik at det er tilknyttet vertsnavnet som Commerce har generert for miljøet ditt. Du må også bufre det følgende mønsteret bare for statistiske filer: 
-
-/\_msdyn365/\_scnr/\*
-
-Når du har klargjort handelsmiljøet med det tilpassede domenet som er oppgitt, eller etter at du har angitt det egendefinerte domenet for miljøet ditt ved å bruke en tjenesteforespørsel, kan du peke det tilpassede domenet til vertsnavnet eller endepunktet som Commerce laget.
+Når du har klargjort handelsmiljøet med det tilpassede domenet som er oppgitt, eller etter at du har angitt det egendefinerte domenet for miljøet ditt ved å bruke en tjenesteforespørsel, må du arbeide med Commerce-introduksjonsgruppen for å planlegge DNS-endringene.
 
 Som tidligere nevnt støtter det genererte vertsnavnet eller endepunktet bare et SSL-sertifikat for \*.commerce.dynamics.com. Den støtter ikke SSL for egendefinerte domener.
 
@@ -62,7 +56,7 @@ Installasjonsprosessen for CDN består av disse generelle trinnene:
 
 1. Legg til en frontvert.
 1. Konfigurer et serverdelsutvalg.
-1. Definer regler for ruting og bufring.
+1. Angi regler for ruting.
 
 ### <a name="add-a-front-end-host"></a>Legg til en frontvert
 
@@ -74,8 +68,9 @@ Hvis du vil ha informasjon om hvordan du konfigurerer Azure Front Door Service, 
 
 Følg disse trinnene for å konfigurere et serverdelsutvalg i Azure Front Door Service.
 
-1. Legg til **&lt;ecom-leier-navn&gt;.commerce.dynamics.com** til et serverdelsutvalg som en egendefinert vert som har et tomt serverdelvertshode.
+1. Legg til **&lt;ecom-leier-navn&gt;.commerce.dynamics.com** i et serverdelutvalg som en egendefinert vert som har et serverdelvertshode som er det samme som **&lt;ecom-leier-navn&gt;.commerce.dynamics.com**.
 1. Under **Belastningsfordeling** lar du standardverdiene være.
+1. Deaktiver tilstandskontroll for serverdelutvalget.
 
 Følgende illustrasjon viser dialogboksen **Legg til en serverdel** i Azure Front Door Service, der vertsnavnet for serverdelen er angitt.
 
@@ -84,6 +79,10 @@ Følgende illustrasjon viser dialogboksen **Legg til en serverdel** i Azure Fron
 Følgende illustrasjon viser dialogboksen **Legg til et serverdelutvalg** i Azure Front Door Service med standardverdier for belastningsfordeling.
 
 ![Legge til en dialogboks for serverdelsutvalg (fortsettelse)](./media/CDN_BackendPool_2.png)
+
+> [!NOTE]
+> Pass på at du deaktiverer **Helsetilstand** når du setter opp din egen Azure Front Door Service for Commerce.
+
 
 ### <a name="set-up-rules-in-azure-front-door-service"></a>Definere regler i Azure Front Door Service
 
@@ -100,24 +99,6 @@ Følg disse trinnene for å opprette en rutingsregel i Azure Front Door Service.
 1. Angi at alternativet **URL rewrite** skal være **Deaktivert**.
 1. Angi at alternativet **Bufring** skal være **Deaktivert**.
 
-Følg disse trinnene for å opprette en bufringsregel i Azure Front Door Service.
-
-1. Legg til en bufringsregel.
-1. Angi **statistiske filer** i feltet **Navn**.
-1. I feltet **Godkjent protokoll** velger du **HTTP og HTTPS**.
-1. I feltet **Frontverter** angir du **dynamics-ecom-leiernavn.azurefd.net**.
-1. Under **Mønstre som skal samsvare** i det øvre feltet angir du **/\_msdyn365/\_scnr/\***.
-1. Under **Rutedetaljer** angir du alternativet **Rutetype** til **Fremover**.
-1. I feltet **Serverdelsutvalg** velger du **ecom-backend**.
-1. I feltet **Videresendingsprotokoll** velger du alternativet **Samsvar forespørsel**.
-1. Angi at alternativet **URL rewrite** skal være **Deaktivert**.
-1. Angi at alternativet **Bufring** skal være **Deaktivert**.
-1. Velg **Bufre hver unike URL-adresse** i **Hurtigbufring for spørringsstreng**.
-1. I feltet **Dynamisk komprimering** velger du alternativet **Aktivert**.
-
-Følgende illustrasjon viser dialogboksen **Legg til en regel** i Azure Front Door Service.
-
-![Dialogboksen Legg til en regel](./media/CDN_CachingRule.png)
 
 > [!WARNING]
 > Hvis domenet du skal bruke, allerede er aktivt og direkte, oppretter du en støtteforespørsel fra **Støtte**-flisen i [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/) for å få hjelp til de neste trinnene. Hvis du vil ha mer informasjon, kan du se [Få støtte for Finance and Operations-apper eller Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md).
