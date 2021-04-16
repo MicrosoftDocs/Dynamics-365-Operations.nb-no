@@ -1,12 +1,10 @@
 ---
-title: Konfigurere tillegget Elektronisk fakturering
-description: Dette emnet beskriver hvordan du konfigurerer tillegget Elektronisk fakturering i Microsoft Dynamics 365 Finance og Dynamics 365 Supply Chain Management.
+title: Definere Elektronisk fakturering
+description: Dette emnet beskriver hvordan du konfigurerer Elektronisk fakturering i Microsoft Dynamics 365 Finance og Dynamics 365 Supply Chain Management.
 author: gionoder
-manager: AnnBe
-ms.date: 09/22/2020
+ms.date: 03/29/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,62 +15,62 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 5821a512b2beaf7ba2b8015355f04562f7b3b38a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: fd0dda0adb292c10eea0a770ae0eae33d5f91f17
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5209952"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840010"
 ---
-# <a name="set-up-the-electronic-invoicing-add-on"></a>Konfigurere tillegget Elektronisk fakturering
+# <a name="set-up-electronic-invoicing"></a>Definere Elektronisk fakturering
 
 [!include [banner](../includes/banner.md)]
 
 
-Funksjonsoppsettet for tillegget Elektronisk fakturering er prosessen med å opprette den nødvendige konfigurasjonen via det RCS-miljøet (Regulatory Configuration Services) og publisere den konfigurasjonen til serveren for tillegget Elektroniske fakturering. Ved hjelp av oppsettet kan du opprette de konfigurerbare reglene som gjør at tillegget Elektronisk fakturering kan bruke en sikker protokoll over Internett til å kommunisere og utveksle data med en tredjepartsenhet via webtjenester.
+Funksjonsoppsettet for Elektronisk fakturering er prosessen med å opprette den nødvendige konfigurasjonen via det RCS-miljøet (Regulatory Configuration Services) og publisere den konfigurasjonen til serveren for Elektronisk fakturering. Ved hjelp av oppsettet kan du opprette de konfigurerbare reglene som gjør at Elektronisk fakturering kan bruke en sikker protokoll over Internett til å kommunisere og utveksle data med en tredjepartsenhet via webtjenester.
 
 Konfigureringen er avhengig av konfigurasjonen av formatet for Elektronisk rapportering (ER) som en metode for å bygge innhold som sendes og mottas via digitale filer. Den er også avhengig av orkestrering av kommunikasjonshandlinger for å sende forespørsler til og motta svar fra webtjenester fra tredjeparter uten å kreve at du skriver kode.
 
 ## <a name="overview"></a>Oversikt
 
-Funksjonen for tillegget Elektronisk fakturering er det generelle navnet på ressursen som er konfigurert og publisert til å bruke serveren for tillegget Elektronisk fakturering. Funksjonsoppsettet kombinerer, blant annet, bruken av ER-konfigurasjonsformater for å opprette konfigurerbare eksport- og importfiler, og bruken av handlinger og handlingsflyt for å gjøre det mulig å opprette konfigurerbare regler for å sende forespørsler, importere svar og analysere svarinnholdet.
+"Funksjonen Elektronisk fakturering" er det generelle navnet på ressursen som er konfigurert og publisert til å bruke serveren for tillegget Elektronisk fakturering. Funksjonsoppsettet kombinerer, blant annet, bruken av ER-konfigurasjonsformater for å opprette konfigurerbare eksport- og importfiler, og bruken av handlinger og handlingsflyt for å gjøre det mulig å opprette konfigurerbare regler for å sende forespørsler, importere svar og analysere svarinnholdet.
 
-Illustrasjonen nedenfor viser hovedkomponentene i en funksjon for tillegget Elektronisk fakturering.
+Illustrasjonen nedenfor viser hovedkomponentene i en funksjon for Elektronisk fakturering.
 
-![Oversikt over funksjon for tillegget Elektronisk fakturering](media/e-Invoicing-services-feature-setup-Overview-e-Invoicing-feature.png)
+![Oversikt over funksjon for Elektronisk fakturering](media/e-Invoicing-services-feature-setup-Overview-e-Invoicing-feature.png)
 
 På grunn av variasjoner i fakturaformater og handlingsflyter kan funksjonsoppsettet variere etter land eller region, eller i henhold til forretningskrav.
 
-## <a name="set-up-the-electronic-invoicing-add-on-feature"></a>Konfigurere funksjonen for tillegget Elektronisk fakturering
+## <a name="set-up-the-electronic-invoicing-feature"></a>Definere funksjonen Elektronisk fakturering
 
-Installasjonsprosessen må fullføres i RCS-miljøet. Følg disse trinnene for å opprette en ny funksjon for tillegget Elektronisk fakturering.
+Installasjonsprosessen må fullføres i RCS-miljøet. Følg disse trinnene for å opprette en ny funksjon for Elektronisk fakturering.
 
 1. Logg på RCS-miljøet.
-2. I **Globaliseringsfunksjoner**-arbeidsområder, i delen **Funksjoner**, velger du flisen **Elektronisk fakturering-tillegg**.
-3. På siden **Funksjoner for tillegget Elektronisk fakturering** velger du **Importer** for å importere ER-datamodellkonfigurasjonen fra det globale repositoriet.
-4. Velg **Legg til** for å opprette en funksjon for tillegget Elektronisk fakturering. Du kan enten opprette funksjonen fra grunnen av eller avlede den fra en eksisterende funksjon for tillegget Elektronisk fakturering.
+2. I arbeidsområdet **Globaliseringsfunksjoner**, i **Funksjoner**-delen velger du flisen **Elektronisk fakturering**.
+3. På siden **Funksjoner for Elektronisk fakturering** velger du **Importer** for å importere ER-datamodellkonfigurasjonen fra det globale repositoriet.
+4. Velg **Legg til** for å opprette en funksjon for Elektronisk fakturering. Du kan enten opprette funksjonen fra grunnen av eller avlede den fra en eksisterende funksjon for Elektronisk fakturering.
 
-    ![Legge til en funksjon for tillegget Elektronisk fakturering](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature.png)
+    ![Legge til en funksjon for Elektronisk fakturering](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature.png)
 
 > [!NOTE]
-> Når du oppretter en ny funksjon for tillegget Elektronisk fakturering, har det et versjonsnummer, og standardstatusen er satt til **Utkast**.
+> Når du oppretter en ny funksjon for Elektronisk fakturering, har den et versjonsnummer, og standardstatusen er satt til **Utkast**.
 
 ### <a name="configurations"></a>Konfigurasjoner
 
-Konfigurasjoner har ER-formatkonfigurasjonene som kreves for transformasjoner og for å opprette filene som skal utveksles i løpet av kommunikasjonen med tredjeparts webtjenester. En funksjon for tillegget Elektronisk fakturering kan ha så mange ER-filformatkonfigurasjoner som kreves, basert på den tekniske spesifikasjonen for integrering som leveres av webtjenesteleverandøren.
+Konfigurasjoner har ER-formatkonfigurasjonene som kreves for transformasjoner og for å opprette filene som skal utveksles i løpet av kommunikasjonen med tredjeparts webtjenester. En funksjon for Elektronisk fakturering kan ha så mange ER-filformatkonfigurasjoner som kreves, basert på den tekniske spesifikasjonen for integrering som leveres av webtjenesteleverandøren.
 
-Følg disse trinnene for å legge til ER-formater i funksjonen for tillegg for Elektronisk fakturering.
+Følg disse trinnene for å legge til ER-formater i funksjonen for Elektronisk fakturering.
 
-1. På siden for **Funksjoner for tillegget Elektronisk fakturering** i kategorien **Konfigurasjoner** velger du **Legg til** for å legge til ER-filformatkonfigurasjoner for funksjonen for tillegget Elektronisk fakturering.
+1. På siden for **Funksjoner for Elektronisk fakturering** i kategorien **Konfigurasjoner** velger du **Legg til** for å legge til ER-filformatkonfigurasjoner for funksjonen for Elektronisk fakturering.
 
-    ![Legge til en funksjonskonfigurasjoner for tillegget Elektronisk fakturering](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Configurations.png)
+    ![Legge til funksjonskonfigurasjoner for Elektronisk fakturering](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Configurations.png)
 
     > [!NOTE]
-    > Når du oppretter en funksjon for tillegget Elektronisk fakturering fra grunnen av, må du legge til alle ER-filformatkonfigurasjoner manuelt. Når du avleder en funksjon for tillegget Elektronisk fakturering fra en eksisterende funksjon, opprettes ER-filformatkonfigurasjonene automatisk, fordi de arves fra den opprinnelige funksjonen for tillegget Elektronisk fakturering.
+    > Når du oppretter en funksjon for Elektronisk fakturering fra grunnen av, må du legge til alle ER-filformatkonfigurasjoner manuelt. Når du avleder en funksjon for Elektronisk fakturering fra en eksisterende funksjon, opprettes ER-filformatkonfigurasjonene automatisk, fordi de arves fra den opprinnelige funksjonen for Elektronisk fakturering.
 
 2. Velg **Rediger** for å åpne siden **Formatutforming**, der du kan redigere ER-filformatkonfigurasjonen.
 
-    ![Redigere funksjonskonfigurasjoner for tillegget Elektronisk fakturering](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Configurations.png)
+    ![Redigere funksjonskonfigurasjoner for Elektronisk fakturering](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Configurations.png)
 
     > [!NOTE]
     > Når du redigerer formatet, settes statusen for konfigurasjonsversjonen til **Utkast**.
@@ -83,20 +81,20 @@ Følg disse trinnene for å legge til ER-formater i funksjonen for tillegg for E
 
 ### <a name="feature-setups"></a>Funksjonsoppsett
 
-Funksjonsoppsett kapsler inn reglene for kommunikasjon og sikkerhet med en webtjeneste fra en tredjepart. En funksjon for tillegget Elektronisk fakturering kan ha så mange funksjonsoppsett som er nødvendig, basert på forretningsregelen du vil oppnå.
+Funksjonsoppsett kapsler inn reglene for kommunikasjon og sikkerhet med en webtjeneste fra en tredjepart. En funksjon for Elektronisk fakturering kan ha så mange funksjonsoppsett som er nødvendig, basert på forretningsregelen du vil oppnå.
 
-Følg disse trinnene for å legge til funksjonsoppsett i funksjonen for tillegget Elektronisk fakturering.
+Følg disse trinnene for å legge til funksjonsoppsett i funksjonen for Elektronisk fakturering.
 
-1. På siden for **Funksjoner for tillegget Elektronisk fakturering** i kategorien **Oppsett** velger du **Legg til** for å legge til funksjonsoppsett i funksjonen for tillegget Elektronisk fakturering.
+1. På siden for **Funksjoner for Elektronisk fakturering** i kategorien **Oppsett** velger du **Legg til** for å legge til funksjonsoppsett i funksjonen for Elektronisk fakturering.
 
-    ![Legge til oppsett for funksjon for tillegget Elektronisk fakturering](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Setups.png)
+    ![Legge til oppsett for funksjon for Elektronisk fakturering](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Setups.png)
 
     > [!NOTE]
-    > Når du oppretter en funksjon for tillegget Elektronisk fakturering fra grunnen av, må du legge til alle funksjonsoppsettene du trenger, manuelt. Når du avleder en funksjon for tillegget Elektronisk fakturering fra en eksisterende funksjon, opprettes alle funksjonsoppsett automatisk, fordi de arves fra den opprinnelige funksjonen for tillegget Elektronisk fakturering.
+    > Når du oppretter en funksjon for Elektronisk fakturering fra grunnen av, må du legge til alle funksjonsoppsettene du trenger, manuelt. Når du avleder en funksjon for Elektronisk fakturering fra en eksisterende funksjon, opprettes alle funksjonsoppsett automatisk, fordi de arves fra den opprinnelige funksjonen for Elektronisk fakturering.
 
 2. Velg **Rediger** for å redigere funksjonsversjonsoppsettet.
 
-    ![Redigere funksjonsoppsett for tillegget Elektronisk fakturering](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Setups.png)
+    ![Redigere oppsett for funksjon for Elektronisk fakturering](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Setups.png)
 
 3. Bruk siden for **funksjonsversjonsoppsett** til å konfigurere handlinger, relevansregler og variabler.
 
@@ -104,7 +102,7 @@ Følg disse trinnene for å legge til funksjonsoppsett i funksjonen for tillegge
 
 ### <a name="actions"></a>Handlinger
 
-Handlinger er en forhåndsdefinert liste over operasjoner som kjøres i sekvensiell rekkefølge. Denne listen representerer analysen av fremgangsmåten som kreves for full utførelse av funksjonen for tillegget Elektronisk fakturering. Handlingene kan omfatte, i den samme funksjonen for tillegget Elektronisk fakturering, kommunikasjon i begge retninger; sende en forespørsel om et mål og motta et svar og analysere innholdet.
+Handlinger er en forhåndsdefinert liste over operasjoner som kjøres i sekvensiell rekkefølge. Denne listen representerer analysen av fremgangsmåten som kreves for full utførelse av funksjonen Elektronisk fakturering. Handlingene kan omfatte, i den samme funksjonen Elektronisk fakturering, kommunikasjon i begge retninger; sende en forespørsel om et mål og motta et svar og analysere innholdet.
 
 Hver handling inneholder en forhåndsdefinert liste over parametere som kreves for at handlingen skal oppnå sitt formål. Tilleggsparametere kan eventuelt angis.
 
@@ -255,7 +253,7 @@ De tilgjengelige parameterne varierer avhengig av hvilken handling som er valgt 
 
 ### <a name="applicability-rules"></a>Relevansregler
 
-Relevansregler gjør det mulig å opprette logiske regler som bestemmer brukskonteksten for funksjonsoppsettet. Samsvaret mellom konteksten som er gitt av forretningsdokumentet som er sendt til behandling, sammen med gyldighetsregelkriteriene, bestemmer dermed hvilken funksjon for tillegget Elektronisk fakturering som brukes til å behandle innsendingen.
+Relevansregler gjør det mulig å opprette logiske regler som bestemmer brukskonteksten for funksjonsoppsettet. Samsvaret mellom konteksten som er gitt av forretningsdokumentet som er sendt til behandling, sammen med gyldighetsregelkriteriene, bestemmer dermed hvilken funksjon for Elektronisk fakturering som brukes til å behandle innsendingen.
 
 #### <a name="set-up-applicability-rules"></a>Konfigurere relevansregler
 
@@ -290,7 +288,7 @@ Følgende tabell beskriver feltene som er tilgjengelige i kategorien **Relevansr
 
 ### <a name="variables"></a>Variabler
 
-Du kan opprette variabler og deretter bruke dem som inndataverdi for en parameter for en bestemt handling. Du kan også bruke dem til utveksling, mellom tjenestene for Elektronisk fakturering-tillegget og klienten, informasjon som er resultatet av utførelsen av en bestemt handling som en del av flyten av innsendinger.
+Du kan opprette variabler og deretter bruke dem som inndataverdi for en parameter for en bestemt handling. Du kan også bruke dem til utveksling, mellom tjenestene for Elektronisk fakturering og klienten, informasjon som er resultatet av utførelsen av en bestemt handling som en del av flyten av innsendinger.
 
 #### <a name="set-up-variables"></a>Konfigurer variabler
 
@@ -318,45 +316,45 @@ Valideringen kontrollerer konsekvensen for hele konfigurasjonen. Hvis for eksemp
 
 ## <a name="environments"></a>Miljøer
 
-Et miljø for tillegget Elektronisk fakturering må være knyttet til funksjonen for tillegget Elektronisk fakturering og være aktivert for det. Miljøer for tillegget Elektronisk fakturering må opprettes og publiseres på forhånd ved hjelp av konfigurasjon av globaliseringsfunksjoner på organisasjonens RCS-konto.
+Et miljø for tillegget Elektronisk fakturering må være knyttet til funksjonen Elektronisk fakturering og være aktivert for det. Miljøer for Elektronisk fakturering må opprettes og publiseres på forhånd ved hjelp av konfigurasjon av globaliseringsfunksjoner på organisasjonens RCS-konto.
 
-Følg disse trinnene for å aktivere et miljø for tillegget Elektronisk fakturering for funksjonen for tillegget Elektronisk fakturering.
+Følg disse trinnene for å aktivere et miljø for Elektronisk fakturering for funksjonen Elektronisk fakturering.
 
-1. På siden for **Funksjoner for tillegget Elektronisk fakturering**, i kategorien **Miljøer**, velger du **Aktiver** for å legge til et miljø for tillegget Elektronisk fakturering.
+1. På siden for **Funksjoner for Elektronisk fakturering**, i kategorien **Miljøer**, velger du **Aktiver** for å legge til et miljø for Elektronisk fakturering.
 2. I **Gyldig fra**-feltet angir du datoen for når det nye miljøet trer i kraft.
 
-![Aktivere et miljø for tillegget Elektronisk fakturering](media/e-Invoicing-services-feature-setup-Select-Enable-e-Invoicing-feature-Environment.png)
+![Aktivere et miljø for Elektronisk fakturering](media/e-Invoicing-services-feature-setup-Select-Enable-e-Invoicing-feature-Environment.png)
 
 ## <a name="organizations"></a>Organisasjoner
 
-Funksjonen for tillegget Elektronisk fakturering kan deles på tvers av flere organisasjoner.
+Funksjonen Elektronisk fakturering kan deles på tvers av flere organisasjoner.
 
-- På siden **Funksjoner for tillegget Elektronisk fakturering**, i kategorien **Organisasjoner**, velger du **Del med** for å legge til organisasjonen du vil dele funksjonen for tillegget Elektronisk fakturering med.
+- På siden **Funksjoner for Elektronisk fakturering**, i kategorien **Organisasjoner**, velger du **Del med** for å legge til organisasjonen du vil dele funksjonen for Elektronisk fakturering med.
 
-Hvis du vil slutte å dele funksjonen for tillegget Elektronisk fakturering med organisasjonen, velger du **Opphev deling**.
+Hvis du vil slutte å dele funksjonen for Elektronisk fakturering med organisasjonen, velger du **Opphev deling**.
 
 ## <a name="versions"></a>Versjoner
 
-Versjoner bidrar til å kontrollere livssyklusen til funksjonen for tillegget Elektronisk fakturering ved å styre statusen. Du kan opprette en ny versjon av en eksisterende funksjon for tillegget Elektronisk fakturering, eller, når all konfigurasjon for funksjonen for tillegget Elektronisk fakturering er fullført, kan du endre statusen for funksjonen til **Fullført** og deretter til **Publiser**.
+Versjoner bidrar til å kontrollere livssyklusen til funksjonen for Elektronisk fakturering ved å styre statusen. Du kan opprette en ny versjon av en eksisterende funksjon for Elektronisk fakturering, eller, når all konfigurasjon for funksjonen for Elektronisk fakturering er fullført, kan du endre statusen for funksjonen til **Fullført** og deretter til **Publiser**.
 
-### <a name="create-a-new-version-of-an-existing-electronic-invoicing-add-on-feature"></a>Opprette en ny versjon av en eksisterende funksjon for tillegget Elektronisk fakturering
+### <a name="create-a-new-version-of-an-existing-electronic-invoicing-feature"></a>Opprette en ny versjon av en eksisterende funksjon for Elektronisk fakturering
 
-1. På siden for **Funksjoner for tillegget Elektronisk fakturering**, i rutenettet til venstre, velger du funksjonen for tillegget Elektronisk fakturering.
-2. I kategorien **Versjoner** velger du **Ny** for å legge til en ny versjon av funksjonen for tillegget Elektronisk fakturering.
+1. På siden for **Funksjoner for Elektronisk fakturering**, i rutenettet til venstre, velger du funksjonen for Elektronisk fakturering.
+2. I kategorien **Versjoner** velger du **Ny** for å legge til en ny versjon av funksjonen for Elektronisk fakturering.
 
-### <a name="change-the-status-of-the-electronic-invoicing-add-on-feature"></a>Endre statusen for funksjonen for tillegget Elektronisk fakturering
+### <a name="change-the-status-of-the-electronic-invoicing-feature"></a>Endre statusen for funksjonen for Elektronisk fakturering
 
-Følg disse trinnene for å behandle livssyklusen for funksjonen for tillegget Elektronisk fakturering.
+Følg disse trinnene for å behandle livssyklusen for funksjonen for Elektronisk fakturering.
 
-1. På siden for **Funksjoner for tillegget Elektronisk fakturering**, i rutenettet til venstre, velger du funksjonen for tillegget Elektronisk fakturering.
+1. På siden for **Funksjoner for Elektronisk fakturering**, i rutenettet til venstre, velger du funksjonen for Elektronisk fakturering.
 2. I kategorien **Versjoner** velger du **Endre status**, og deretter endrer du statusen fra **Utkast** til **Fullført**.
-3. Du blir bedt om å bekrefte at du vil fullføre funksjonen for tillegget Elektronisk fakturering og alle komponentene. Velg **Ja** for å bekrefte handlingen eller **Nei** for å avbryte den.
+3. Du blir bedt om å bekrefte at du vil fullføre funksjonen for Elektronisk fakturering og alle komponentene. Velg **Ja** for å bekrefte handlingen eller **Nei** for å avbryte den.
 
     > [!NOTE]
-    > Når du velger **Ja**, blir statusen for konfigurasjonsversjoner, som er komponenter av funksjonen for tillegget Elektronisk fakturering, automatisk endret fra **Utkast** til **Fullført**.
+    > Når du velger **Ja**, blir statusen for konfigurasjonsversjoner, som er komponenter av funksjonen for Elektronisk fakturering, automatisk endret fra **Utkast** til **Fullført**.
 
 4. Velg **Endre status**, og deretter endrer du statusen fra **Utkast** til **Publiser**.
-5. Du blir bedt om å bekrefte at du vil publisere funksjonen for tillegget Elektronisk fakturering og alle komponentene til Globalt repositorium. Velg **Ja** for å bekrefte handlingen eller **Nei** for å avbryte den.
+5. Du blir bedt om å bekrefte at du vil publisere funksjonen for Elektronisk fakturering og alle komponentene til Globalt repositorium. Velg **Ja** for å bekrefte handlingen eller **Nei** for å avbryte den.
 
     > [!NOTE]
     > Når du velger **Ja**, endres statusen for konfigurasjonsversjoner automatisk fra **Fullført** til **Delt**.

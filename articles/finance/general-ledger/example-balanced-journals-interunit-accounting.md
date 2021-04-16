@@ -2,11 +2,9 @@
 title: Balanserte journaler for interenhetsregnskap
 description: Denne artikkelen viser hvordan en journal belastes automatisk når en balanserende finansdimensjon er valgt på Finans-siden.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerParameters
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8c5f73606708b8c32a7a8ebc364af6ba57c4c343
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: a5a926adcc631ec286f37796713466eb0144494c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5205529"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5818398"
 ---
 # <a name="balanced-journals-for-interunit-accounting"></a>Balanserte journaler for interenhetsregnskap
 
@@ -32,7 +30,7 @@ Denne artikkelen viser hvordan en journal belastes automatisk når en balanseren
 
 Hvis kontooppføringer ikke balanseres på nivået for verdiene for finansdimensjonen, blir det automatisk opprettet tilleggskontooppføringer for å balansere journalen. Disse kontooppføringene bruker posteringstypene **Enhetsintern - debet** og **Enhetsintern - kredit** på siden **Kontoer for automatiske transaksjoner** for å bestemme hovedkontoen. For eksempel Forretningsenhet, som er det andre segmentet i finanskontoen, er valgt som den balanserende finansdimensjonen, og følgende regnskapsoppføringer skal opprettes.
 
-|                      |           |
+| &nbsp;               | &nbsp;    |
 |----------------------|-----------|
 | 6100 – MSP – OU\_256 | 100,00 D |
 | 6100 – NY – OU\_249  | 100,00 D |
@@ -45,7 +43,7 @@ I dette tilfellet bestemmes følgende saldoer:
 
 Følgende regnskapsoppføringer opprettes derfor automatisk for å balansere journalen på nivået til finansdimensjonsverdiene.
 
-|                                   |           |
+| &nbsp;                            | &nbsp;    |
 |-----------------------------------|-----------|
 | (Enhetsintern debet) – MSP – OU\_256 | 100,00 D |
 | (Enhetsintern kredit) – NY – OU\_249 | 100,00 K |

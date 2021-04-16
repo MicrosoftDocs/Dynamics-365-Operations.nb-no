@@ -2,11 +2,9 @@
 title: Komme i gang med leasing av aktiva
 description: Dette emnet beskriver funksjonen for leasing av aktiva og går gjennom fremgangsmåten for å opprette leasing av aktiva og vise informasjon for leasingavtalene.
 author: moaamer
-manager: Ann Beebe
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-09-24
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: b4f1bdf74dc5319f0b3ba145969b064ad33d5010
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 6d5b51e89ec0e64182671872573ec0140939a836
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5229604"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5814134"
 ---
 # <a name="asset-leasing-get-started"></a>Komme i gang med leasing av aktiva
 
@@ -41,16 +39,16 @@ Leasing av aktiva inneholder følgende hovedkomponenter:
 
 - **Leieavtale** – Utleieren eier aktivaet og blir enig med leier om utleie av et anleggsmiddel for en bestemt periode i bytte for periodisk leiebetaling. I tillegg til den juridiske kontrakten mellom utleier og leier, inneholder leieavtalen administrasjonsbeslutninger, for eksempel sannsynligheten for å gjennomføre et fornyelsesalternativ og overføring av eierskap.
 
-- **Beregning og klassifisering av leieavtale i henhold til regnskapsstandard** – Beregningen og klassifiseringen av leieavtalen identifiserer regnskapsstandarden som skal brukes i den første og den etterfølgende målingen, i tillegg til klassifiseringstesten som avgjør hva leietypen skal være. En leieavtale kan være en finansiell leie, en gjeldende leie, en kortsiktig leie eller en lavverdileie. Systemet beregner også nåverdien av fremtidige, minste leiebetalinger for vurdering og klassifisering.
+- **Beregning og klassifisering av leieavtale i henhold til regnskapsstandard** – Beregningen og klassifiseringen av leieavtalen identifiserer regnskapsstandarden som skal brukes i den første og den etterfølgende målingen, i tillegg til klassifiseringstesten som avgjør hva leietypen skal være. En leieavtale kan være en finansiell leie, en gjeldende leie, en kortsiktig leie eller en lavverdileie. Systemet beregner også netto nåverdi av fremtidige, minste leiebetalinger for vurdering og klassifisering.
 
-- **Leietransaksjoner** – Leie av anleggsmidler støtter den opprinnelige anerkjennelsen av anleggsmiddelets leie i balansen, i tillegg til etterfølgende målinger for leieavtaler i balanse eller leie utenfor balanse. Den opprinnelige anerkjennelsestransaksjonen måler nåverdien av fremtidig minste leiebetaling. Disse dataene brukes til å fastslå verdien for første bruksrettseiendel og leieforpliktelse, som påvirker organisasjonens balanse. De etterfølgende målingene av månedlige leietransaksjoner innebærer akkumulering av rente for leieforpliktelsen, noe som øker leieforpliktelsen. Den måler også avsetningen av leiebetalinger som reduserer leieforpliktelsen, og som deretter vil bli betalt til utleier. Målingen omfatter også amortisering av bruksrettseiendelen.
+- **Leietransaksjoner** – Leie av anleggsmidler støtter den opprinnelige anerkjennelsen av anleggsmiddelets leie i balansen, i tillegg til etterfølgende målinger for leieavtaler i balanse eller leie utenfor balanse. Den opprinnelige anerkjennelsestransaksjonen måler netto nåverdi av fremtidig minste leiebetaling. Disse dataene brukes til å fastslå verdien for første bruksrettseiendel og leieforpliktelse, som påvirker organisasjonens balanse. De etterfølgende målingene av månedlige leietransaksjoner innebærer akkumulering av rente for leieforpliktelsen, noe som øker leieforpliktelsen. Den måler også avsetningen av leiebetalinger som reduserer leieforpliktelsen, og som deretter vil bli betalt til utleier. Målingen omfatter også amortisering av bruksrettseiendelen.
 
   For leieavtaler utenfor balanse vil systemet beregne den lineære leieutgiften med hensyn til hva som er minst: den økonomiske levetiden til eiendelen eller leieavtalen. Leiejusteringer måler kontraktsendringer, for eksempel en leieutvidelse eller forlengelse, og transaksjonen for verdiforringelsen som bruker bruksrettseiendelen for kostnader som er fradragsberettiget.
 
   Leie av anleggsmidler integreres med økonomimodulen for å sikre at alle posterte leietransaksjoner oppdaterer kontoplanen din. Leie av anleggsmidler integreres med leverandører for å spore utleierfakturaer i leverandør og ta fremtidige betalinger derfra. Ved hjelp av integrering med anleggsmidler, kan du spore leieavtaler i journalen for anleggsmidler og postere transaksjoner for bruksrettseiendeler, inkludert innledende gjenkjenning, avskrivning og verdiforringelse av anleggsmiddelet, i anleggsmidler.   
 
 ## <a name="asset-leasing-components"></a>Komponenter for leie av anleggsmiddel 
-Leie av anleggsmidler tilordner leieinformasjon, betalingsplaner, start- og sluttdatoer og betalingsfrekvensen. Den vil også automatisere beregninger for nåverdi, månedlige leiebetalinger, rente og leieamortisering. Systemet utfører klassifiseringstester for leie, avhengig av konfigurasjonen. Systemet oppretter og posterer også de tilsvarende leietransaksjonene, som er basert på rammeverket som er definert av regnskapsstandarden du følger.
+Leie av anleggsmidler tilordner leieinformasjon, betalingsplaner, start- og sluttdatoer og betalingsfrekvensen. Den vil også automatisere beregninger for netto nåverdi, månedlige leiebetalinger, rente og leieamortisering. Systemet utfører klassifiseringstester for leie, avhengig av konfigurasjonen. Systemet oppretter og posterer også de tilsvarende leietransaksjonene, som er basert på rammeverket som er definert av regnskapsstandarden du følger.
 
 Diagrammet nedenfor viser leietablået, leieavtalen, beregnet betalingsplan, klassifiseringstestene for leieavtaler og leietablåer, og de tilsvarende regnskapstransaksjonene.
 
@@ -62,13 +60,13 @@ Diagrammet nedenfor viser leietablået, leieavtalen, beregnet betalingsplan, kla
 
 - **Levetid for anleggsmiddel** – Dette representerer de gjenstående periodene for levetiden til et anleggsmiddel, fra startdatoen for leieavtalen. Levetiden til et anleggsmiddel vil bli tatt hensyn til i oppsettet for klassifiseringstesten. Den er forskjellig fra levetiden som er definert i anleggsmidler.
 
-- **Trinnvis lånerente** – Dette er rentesatsen som vil bli brukt til å beregne nåverdi. Systemet vil bruke den implisitte satsen hvis den er definert i leiedataene, til å beregne nåverdien av leiebetalingene. Hvis den implisitte satsen ikke er definert, vil systemet bruke den trinnvise lånerenten.
+- **Trinnvis lånerente** – Dette er rentesatsen som vil bli brukt til å beregne netto nåverdi. Systemet vil bruke den implisitte satsen hvis den er definert i leiedataene, til å beregne netto nåverdi av leiebetalingene. Hvis den implisitte satsen ikke er definert, vil systemet bruke den trinnvise lånerenten.
 
 - **Annuitetstype** – Dette er leiebetalingen som forfaller enten i begynnelsen av betalingsperioden eller på slutten av perioden. Dette kan være forskuddsbetaling eller annuitetsforfall (i begynnelsen av perioden for leiebetaling), eller vanlig annuitet (på slutten av perioden for leiebetaling).
 
   Den første måneden vil bli ansett som periode null for forskuddsbetaling. Den første måneden blir ansett som periode én for etterskuddsbetaling.
 
-- **Sammensetningsintervall** – Dette representerer antall perioder som renten har i løpet av året. Dette kan være månedlig (12 perioder per år), kvartalsvis (4 perioder per år), halvårs (2 perioder per år) eller årlig (1 periode per år). Antallet perioder vil bli vurdert i beregning av nåverdien.
+- **Sammensetningsintervall** – Dette representerer antall perioder som renten har i løpet av året. Dette kan være månedlig (12 perioder per år), kvartalsvis (4 perioder per år), halvårs (2 perioder per år) eller årlig (1 periode per år). Antallet perioder vil bli vurdert i beregning av netto nåverdi.
 
 - **Startdato** – Dette er datoen som utleier gjør anleggsmiddelet tilgjengelig for bruk av leier. Alle beregninger og transaksjoner for leieavtaler baseres på startdatoen. Startdatoen må være i begynnelsen av en periode (den første i måneden) for å sikre nøyaktigheten til etterfølgende beregninger. Du kan bruke feltet **Kontraktsdato for signering** til å angi den faktiske datoen da kontrakten ble signert.
 
@@ -81,7 +79,7 @@ Diagrammet nedenfor viser leietablået, leieavtalen, beregnet betalingsplan, kla
 
 - **Betalingsfrekvens** – Dette angir om betalingen er månedlig, kvartalsvis, halvårlig eller årlig. Sluttdatoen beregnes automatisk basert på startdatoen og angitt antall perioder.
 
-- **Betalingsplan** – Dette er den beregnede nåverdien, basert på hvor lang tid som dekkes av de leiebetalingene, beløpet for betalingene, sammensetningsperiodene og annuitetstypen.
+- **Betalingsplan** – Dette er den beregnede netto nåverdien, basert på hvor lang tid som dekkes av de leiebetalingene, beløpet for betalingene, sammensetningsperiodene og annuitetstypen.
 
 - **Perioder** – Dette er leieperiodene som gjenspeiler den sammensetningen internt og annuitetstypen. Sammensetningsintervallet bestemmer hvordan perioder skal deles. Du kan angi følgende sammensetningsintervaller:
 
@@ -92,10 +90,10 @@ Diagrammet nedenfor viser leietablået, leieavtalen, beregnet betalingsplan, kla
 
 Den første perioden starter med perioden null, hvis annuitetstypen er annuitetsforfall. Hvis ikke starter den første perioden med perioden en, hvis annuitetstypen er etterskuddsbetaling.
 
-- **Måneder** – Dette angir antall kalendermåneder i forhold til leieavtalen. Betalingsbeløpet er det forfalte beløpet som er definert i betalingsfrekvensen. Den beregnede nåverdien er den nåværende verdibaserte leiebetalingen per periode, sammensetningsintervallene og den trinnvise lånerenten.
+- **Måneder** – Dette angir antall kalendermåneder i forhold til leieavtalen. Betalingsbeløpet er det forfalte beløpet som er definert i betalingsfrekvensen. Den beregnede netto nåverdien er den nåværende verdibaserte leiebetalingen per periode, sammensetningsintervallene og den trinnvise lånerenten.
 
 > [!NOTE] 
-> Nåverdien beregnes basert på kontantstrømligningen for rabatten.
+> Netto nåverdi beregnes basert på kontantstrømligningen for rabatten.
 
 - **Bøker** – Dette er det forhåndskonfigurerte oppsettet som vil bli knyttet til hver leieavtale. Tablået definerer den brukte regnskapsstandarden, leietypene og terskelen som brukes som grunnlag for klassifiseringstestene. Klassifiseringstester brukes til å angi leasing leietypen automatisk.
 
@@ -107,7 +105,7 @@ Den første perioden starter med perioden null, hvis annuitetstypen er annuitets
 
   - **Leieavtale** – Dette er prosentdelen av levetiden som skal brukes i klassifiseringstesten. Systemet klassifiserer leieavtalen som finansiell hvis leietypen er satt til automatisk, og hvis leieperioden for anleggsmiddelets levetid er større enn eller lik prosentdelen som er definert her.
 
-  - **Nåverdi** – Dette er prosentdelen av anleggsmiddelets virkelige verdi som skal brukes i klassifiseringstesten. Systemet klassifiserer leieavtalen som finansiell hvis leietypen er satt til automatisk, og hvis nåverdien for fremtidige leiebetalinger for anleggsmiddelets virkelige verdi er større enn eller lik prosentdelen som er definert her.
+  - **Netto nåverdi** – Dette er prosentdelen av anleggsmiddelets virkelige verdi som skal brukes i klassifiseringstesten. Systemet klassifiserer leieavtalen som finansiell hvis leietypen er satt til automatisk, og hvis netto nåverdi for fremtidige leiebetalinger for anleggsmiddelets virkelige verdi er større enn eller lik prosentdelen som er definert her.
 
   - **Korttidsleie** – Hvis leieavtalen er mindre enn eller lik den definerte verdien, klassifiseres leieavtalen som korttidsleie.
 
@@ -115,7 +113,7 @@ Den første perioden starter med perioden null, hvis annuitetstypen er annuitets
 
   - **Leieklassifisering og transaksjoner** Leieklassifiseringen er en automatisert prosess for å klassifisere leieavtaler basert på definerte terskler i andre tablåer enn klassifiseringstestkriterier for å identifisere om leieavtalen er en finansiell leie, gjeldende leie, korttidsleie eller lavverdileie. Dette brukes også til å identifisere om prosessen for utsatte leie etterfølges.
 
-Klassifiseringstestene omfatter overføring av eierskap, kjøpsalternativ, leieperiode, nåverdi og unikt anleggsmiddel. Diagrammet nedenfor illustrerer klassifiseringtesten for leien.
+Klassifiseringstestene omfatter overføring av eierskap, kjøpsalternativ, leieperiode, netto nåverdi og unikt anleggsmiddel. Diagrammet nedenfor illustrerer klassifiseringtesten for leien.
 
 [![Klassifiseringstest for leie](./media/overview-03.png)](./media/overview-03.png)
 
@@ -124,22 +122,22 @@ Hver leietype håndterer regnskap forskjellig for ulike leietransaksjoner. Trans
 ## <a name="asset-leasing-transactions"></a>Transaksjoner for leie av anleggsmiddel
 
 #### <a name="initial-recognition"></a>Opprinnelig føring 
-Den opprinnelige gjenkjenningen av et leid anleggsmiddel bruker den beregnede nåverdien, slik at den kan rapporteres i balansen. Regnskapsoppføringen for denne genereres automatisk. Denne transaksjonen debiterer kontoen for bruksrettseiendelen, og krediterer kontoen for gjeldende leieforpliktelse. Hvis et anleggsmiddel er knyttet til leieavtalen, vil den innledende gjenkjenningsoppføringen gjenspeiles som anleggsmiddelanskaffelse. I dette scenariet må du definere en posteringsprofil for anleggsmiddel som skal posteres til kontoen for bruksrettseiendelen. 
+Den opprinnelige gjenkjenningen av et leid anleggsmiddel bruker den beregnede netto nåverdien, slik at den kan rapporteres i balansen. Regnskapsoppføringen for denne genereres automatisk. Denne transaksjonen debiterer kontoen for bruksrettseiendelen, og krediterer kontoen for gjeldende leieforpliktelse. Hvis et anleggsmiddel er knyttet til leieavtalen, vil den innledende gjenkjenningsoppføringen gjenspeiles som anleggsmiddelanskaffelse. I dette scenariet må du definere en posteringsprofil for anleggsmiddel som skal posteres til kontoen for bruksrettseiendelen. 
 
 > [!NOTE]
 > Gjeldende leier støttes bare av amerikansk GAAP ASC 842.
 
 |     Type                                          |     Debet                     |     Kreditt                            |
 |-----------------------------------------------    |-----------------------------  |------------------------------------   |
-|     Gjeldende   leie i henhold til  amerikansk GAAP              |     Bruksrettseiendel      |     Gjeldende   leieforpliktelse       |
-|     Finansiell leie   i henhold til IFRS og amerikansk GAAP        |     Bruksrettseiendel      |     Gjeldende   leieforpliktelse       |
+|     Gjeldende leie i henhold til amerikansk GAAP            |     Bruksrettseiendel        |     Driftsleiegjeld     |
+|     Finansiell leie i henhold til IFRS og amerikansk GAAP      |     Bruksrettseiendel        |     Leiegjeld for finans       |
 
 #### <a name="lease-liability-amortization-interest-expense"></a>Nedbetaling av leieforpliktelse (renteutgift) 
 Renten for en leieavtale gjenkjennes ved å beregne renter for leieavtalens startsaldo, leiebetaling for periode, lånerente og perioder for sammensetningsintervall per år. Rentebeløpet øker kontoen for gjeldende leieforpliktelse ved å kreditere den, noe som vil bli gjenspeilet i organisasjonens balanse. Transaksjonen inkluderer også en debetoppføring til kontoen for renteutgifter, som gjenspeiles på resultatregnskapet for finansielle leier, og til kontoen for leieutgifter for gjeldende leier.
 
 |     Type                                          |     Debet                     |     Kreditt                            |
 |-----------------------------------------------    |-----------------------------  |------------------------------------   |
-|     Oppføring for gjeldende leieforpliktelse i henhold til amerikansk GAAP ASC 842    |     Renteutgift          |     Driftsleiegjeld         |
+|     Oppføring for gjeldende leieforpliktelse i henhold til amerikansk GAAP ASC 842    |     Leieutgift         |     Driftsleiegjeld         |
 |     Oppføring for finansiell leieforpliktelse i henhold til IFRS og amerikansk GAAP      |     Renteutgift          |     Leiegjeld for finans           |
 
 #### <a name="accrued-lease-payment"></a>Påløpt leiebetaling
@@ -151,7 +149,7 @@ En påløpt leiebetaling gjenkjennes som en fremtidige leiebetaling som forfalle
 |     Finansiell leie   i henhold til IFRS og amerikansk GAAP        |  Leiegjeld for finans      |   Leverandørgjeld (underfinans) / gjeld  |
 
 #### <a name="asset-depreciation"></a>Avskrivning av anleggsmiddel
-Bruksrettseiendelen avskrives over med hensyn til det som er minst – anleggsmiddelets levetid eller leieperioden. Metoden for beregning av avskrivning for amerikansk GAAP (ASC 842) er basert på forskjellen mellom leieavtalen for den lineære leieutgiften og rentebeløpet. Rente på finansielle leier beregnes ved å bruke en standard lineær metode. Leieavskrivningen påvirker resultatregnskapet ved å debitere renteutgifter. Balansen påvirkes av den akkumulerte kontoen for bruksrettseiendelen for finansielle leier. For gjeldende leier krediterer avskrivningen kontoen for leieutgifter. Hvis leieavtalen er koblet til et anleggsmiddel, blir avskrivningstransaksjonene bare utført fra anleggsmiddelmodulen. 
+Bruksrettseiendelen avskrives over med hensyn til det som er minst – anleggsmiddelets levetid eller leieperioden. Metoden for beregning av avskrivning for gjeldende leie i amerikansk GAAP (ASC 842) er basert på forskjellen mellom leieavtalen for den lineære leieutgiften og rentebeløpet. Avskrivning på finansielle leier beregnes ved å bruke en standard lineær metode. Leieavskrivningen påvirker resultatregnskapet ved å debitere renteutgifter. Balansen påvirkes av den akkumulerte kontoen for bruksrettseiendelen for finansielle leier. Hvis leieavtalen er koblet til et anleggsmiddel, blir avskrivningstransaksjonene bare utført fra anleggsmiddelmodulen. 
 
 |     Type                                          |     Debet                     |     Kreditt                            |
 |-----------------------------------------------    |-----------------------------  |------------------------------------   |

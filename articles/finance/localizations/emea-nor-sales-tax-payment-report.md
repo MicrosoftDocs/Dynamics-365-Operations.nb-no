@@ -6,20 +6,18 @@ ms.author: epodkolz
 ms.date: 11/10/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-manager: annbe
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Norway
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 64cf0cd1bd439e85f2dae7d32c0c7082123221c8
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: cfe0459a8d1e4a6f65c856b163532d5758b67ea4
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5250542"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5813447"
 ---
 # <a name="vat-statement-for-norway"></a>MVA-oppgave for Norge
 

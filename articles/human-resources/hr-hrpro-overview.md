@@ -2,11 +2,9 @@
 title: Oversikt
 description: Brukerveiledningen for Dynamics 365 Human Resources gir deg instruksjoner om hvordan du konfigurerer Human Resources, definerer personale, definerer kompensasjon og fordeler for de ansatte og administrerer arbeidsstyrken.
 author: andreabichsel
-manager: tfehr
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: EssWorkspace
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 38848fe326deb4dd1e63c9f090765e8a0af2f649
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: b6393fe8679981c9d512a4d0f654391ba9d85452
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5467969"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5794787"
 ---
 # <a name="overview"></a>Oversikt
 

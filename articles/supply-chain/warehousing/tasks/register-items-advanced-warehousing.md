@@ -1,12 +1,10 @@
 ---
 title: Registrere varer for en vare for avanserte lageraktiviteter ved hjelp av en journal for vareankomst
-description: Denne fremgangsmåten viser hvordan du registrerer varer ved hjelp av vareankomstjournalen når du bruker avanserte lagerstyringsprosesser.
+description: Dette emnet presenterer et scenario som viser hvordan du registrerer varer ved hjelp av vareankomstjournalen når du bruker avanserte lagerstyringsprosesser.
 author: ShylaThompson
-manager: tfehr
-ms.date: 08/29/2018
+ms.date: 03/24/2021
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WMSJournalTable, WMSJournalCreate, WHSLicensePlate
 audience: Application User
@@ -16,65 +14,66 @@ ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c25fb55afb01ed59b66045f24400e03e2ec60b2a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: c58aa1cec6c0bfe33fa1ef90267dcd8ac1218157
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5238900"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5830840"
 ---
 # <a name="register-items-for-an-advanced-warehousing-enabled-item-using-an-item-arrival-journal"></a>Registrere varer for en vare for avanserte lageraktiviteter ved hjelp av en journal for vareankomst
 
 [!include [banner](../../includes/banner.md)]
 
-Denne fremgangsmåten viser hvordan du registrerer varer ved hjelp av vareankomstjournalen når du bruker avanserte lagerstyringsprosesser. Dette gjøres vanligvis av en mottaksassistent. 
+Dette emnet presenterer et scenario som viser hvordan du registrerer varer ved hjelp av vareankomstjournalen når du bruker avanserte lagerstyringsprosesser. Dette gjøres vanligvis av en mottaksassistent.
 
-Du kan kjøre denne fremgangsmåten i demonstrasjonsselskapet USMF eller ved hjelp av dine egne data. Du må ha en bekreftet bestilling med en åpen bestillingslinje før du starter denne veiledningen. Varen på linjen må lagres, og den må ikke bruke produktvarianter, og kan ikke ha sporingsdimensjoner. Og varene må være tilknyttet en lagringsdimensjonsgruppe som er aktivert for lagerstyringsprosess. Lageret som brukes, må være aktivert for lagerprosjektstyringsprosesser, og lokasjonen som du bruker for mottak, må være nummerskiltkontrollert. Hvis du bruker USMF, kan du bruke firmakonto 1001, lager 51 og vare M9200 til å opprette din bestilling. 
+## <a name="enable-sample-data"></a>Aktivere eksempeldata
 
-Noter nummeret på bestillingen som du oppretter, og noter også varenummeret og området som du brukte for bestillingslinjen.
+Hvis du vil gå gjennom dette scenariet ved hjelp av eksempelpostene og verdiene som er angitt i dette emnet, må du bruke et system der standard demodata er installert, og du må velge den juridiske enheten *USMF* før du begynner.
 
+Du kan i stedet gå gjennom dette scenariet ved å erstatte verdier fra dine egne data hvis du har følgende data tilgjengelige:
 
-## <a name="create-an-item-arrival-journal-header"></a>Opprette et hode for vareankomstjournal
-1. Gå til Vareankomst.
-2. Klikk på Ny.
-3. Skriv inn en verdi i Navn-feltet.
-    * Hvis du bruker USMF, kan du velge WHS. Hvis du bruker andre data, må journalen med det valgte navnet ha følgende egenskaper: Kontroller plukklokasjon plukklokasjon må settes til Nei og Karantenestyring må settes til Nei.  
-4. Skriv inn en verdi i Nummer-feltet.
-5. Skriv inn en verdi i Område-feltet.
-    * Velg området som du brukte for bestillingslinjen. Dette skal fungere som en standardverdi som vil være standard for alle linjene i journalen. Hvis du har brukt lageret 51 USMF, kan du velge området 5.  
-6. Skriv inn en verdi i Lager-feltet.
-    * Velg et gyldig lager for området du har valgt. Dette skal fungere som en standardverdi som vil være standard for alle linjene i journalen. Hvis du bruker eksempelverdiene i USMF, velger du 51.  
-7. Skriv inn en verdi i feltet Lokasjon.
-    * Velg en gyldig lokasjon i lageret du har valgt. Lokasjonen må være tilknyttet en lokasjonsprofil, som er nummerskiltkontrollert. Dette skal fungere som en standardverdi som vil være standard for alle linjene i journalen. Hvis du bruker eksempelverdiene i USMF, velger du Bulk-008.  
-8. Høyreklikk på rullegardinpilen i feltet Nummerskilt, og velg deretter Vis detaljer.
-9. Klikk på Ny.
-10. Skriv inn en verdi i feltet Nummerskilt.
-    * Noter verdien.  
-11. Klikk på Lagre.
-12. Lukk siden.
-13. Skriv inn en verdi i feltet Nummerskilt.
-    * Angi verdien for nummerskiltet du nettopp opprettet. Dette skal fungere som en standardverdi som vil være standard for alle linjene i journalen.  
-14. Klikk på OK.
+- Du må ha en bekreftet bestilling med en åpen bestillingslinje.
+- Varen på linjen må være lagerført. Den må ikke brukes produktvarianter og må ikke ha sporingsdimensjoner.
+- Varen må være tilknyttet en lagringsdimensjonsgruppe som har lagerbehandlingsprosessen aktivert.
+- Lageret som brukes, må være aktivert for lagerprosjektstyringsprosesser, og lokasjonen som du bruker for mottak, må være nummerskiltkontrollert.
 
-## <a name="add-a-line"></a>Legge til en linje
-1. Klikk på Legg til linje.
-2. Skriv inn en verdi i Varenummer-feltet.
-    * Angi varenummeret som du brukte på bestillingslinjen.  
-3. Angi et tall i feltet Antall.
-    * Angi antallet du vil registrere.  
-    * Dato-feltet bestemmer hvilken dato når lagerbeholdningen for denne varen skal registreres i lageret.  
-    * Parti-ID-en fylles ut av systemet hvis den kan identifiseres unikt fra informasjonen. Ellers må du legge den til manuelt. Dette er et obligatorisk felt, som kobler denne registreringen til en bestemt kildedokumentlinje.  
+## <a name="create-an-item-arrival-journal-header-that-uses-warehouse-management"></a>Opprett et journalhode for vareankomst som bruker lagerstyring
 
-## <a name="complete-the-registration"></a>Fullføre registreringen
-1. Klikk på Valider.
-    * Dette kontrollerer at journalen er klar for postering. Hvis valideringen mislykkes, må du rette opp feilene før du kan postere journalen.  
-2. Klikk på OK.
-    * Når du har klikket OK, kontrollerer du meldingen. Det skal være en melding om at journalen er OK.  
-3. Klikk på Poster.
-4. Klikk på OK.
-    * Når du har klikket OK, kontrollerer du meldingslinjen. Det skal være en melding om at operasjonen er fullført.  
-5. Lukk siden.
+Dette scenariet viser hvordan du oppretter et journalhode for vareankomst som bruker lagerbehandling:
 
+1. Kontroller at systemet inneholder en bekreftet bestilling som oppfyller kravene som er beskrevet i den forrige delen. Dette scenariet bruker en bestilling for firmaet *USMF*, leverandørkontoen *1001*, lageret *51*, med en ordrelinje for *10 PL* (10 paller) med varenummer *M9200*.
+1. Noter deg bestillingsnummeret som du vil bruke.
+1. Gå til **Lagerstyring \> Loggoppføringer \> Vareankomst \> Vareankomst**.
+1. Velg **Ny** i handlingsruten.
+1. Dialogboksen **Opprett lagerbehandlingsjournal** åpnes. Velg et journalnavn i **Navn**-feltet.
+    - Hvis du bruker *USMF*-eksempeldata, velger du *WHS*.
+    - Hvis du bruker dine egne data, må journalen du velger, ha **Kontroller plukklokasjon** satt til *Nei* og **Karantenestyring** satt til *Nei*.
+1. Angi **Referanse** til *Bestilling*.
+1. Angi **Kontonummer** til *1001*.
+1. Angi **Nummer** til nummeret på bestillingen som du identifiserte for denne øvelsen.
+
+    ![Vareankomstjournal](../media/item-arrival-journal-header.png "Vareankomstjournal")
+
+1. Velg **OK** for å opprette journalhodet.
+1. I **Journallinjer**-delen velger du **Legg til linje** og angir følgende data:
+    - **Varenummer** – Angi til *M9200*. **Sted**, **Lager** og **Antall** blir angitt basert på lagertransaksjonsdataene for de 10 pallene (1000 per stk.).
+    - **Lokasjon** – Angi til *001*. Denne bestemte lokasjonen sporer ikke nummerskilt.
+
+    ![Vareankomstjournallinje](../media/item-arrival-journal-line.png "Vareankomstjournallinje")
+
+    > [!NOTE]
+    > **Dato**-feltet bestemmer hvilken dato når lagerbeholdningen for denne varen skal registreres i lageret.  
+    >
+    > **Parti-ID** fylles ut av systemet hvis den kan identifiseres unikt fra informasjonen. Ellers må du angi den manuelt. Dette er et obligatorisk felt, som kobler denne registreringen til en bestemt kildedokumentlinje.  
+
+1. Velg **Valider** i handlingsruten. Dette kontrollerer at journalen er klar for postering. Hvis valideringen mislykkes, må du rette opp feilene før du kan postere journalen.  
+1. Dialogboksen **Kontroller journal** åpnes. Velg **OK**.
+1. Gå gjennom meldingslinjen. Det skal være en melding om at operasjonen er fullført.  
+1. Velg **Poster** i handlingsruten.
+1. Dialogboksen **Poster journal** åpnes. Velg **OK**.
+1. Gå gjennom meldingslinjen. Det skal være meldinger om at operasjonen er fullført.
+1. Velg **Funksjoner > Produktmottak** i handlingsruten for å oppdatere bestillingslinjen og postere et produktmottak.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
