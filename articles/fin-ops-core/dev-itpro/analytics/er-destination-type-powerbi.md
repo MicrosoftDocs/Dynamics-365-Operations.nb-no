@@ -2,7 +2,6 @@
 title: Power BI ER-måltype
 description: Dette emnet inneholder informasjon om hvordan du konfigurerer Power BI ER-måltypen for utgående dokumenter.
 author: NickSelin
-manager: AnnBe
 ms.date: 01/23/2020
 ms.topic: article
 ms.prod: ''
@@ -16,27 +15,27 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: AX 10.0.09
-ms.openlocfilehash: a6b6a2e4bc3c0eca8185f501121d9d1ba1b4e063
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 964ed05eaba2a4dbba904b4ce0e0be33d0925fb5
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5561980"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5753462"
 ---
-# <a name="power-bi-destination"></a><span data-ttu-id="57484-103">Power BI-mål</span><span class="sxs-lookup"><span data-stu-id="57484-103">Power BI destination</span></span>
+# <a name="power-bi-destination"></a><span data-ttu-id="b047c-103">Power BI-mål</span><span class="sxs-lookup"><span data-stu-id="b047c-103">Power BI destination</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="57484-104">Du kan konfigurere et Microsoft Power BI-mål for hver Mappe- eller Fil-komponent i et elektronisk rapporteringsformat (ER) som er konfigurert til å generere utgående dokumenter.</span><span class="sxs-lookup"><span data-stu-id="57484-104">You can configure a Microsoft Power BI destination for each folder or file component of an Electronic reporting (ER) format that is configured to generate outbound documents.</span></span> <span data-ttu-id="57484-105">Basert på innstillingen for målet lagres et generert dokument i en tidligere konfigurert SharePoint-mappe.</span><span class="sxs-lookup"><span data-stu-id="57484-105">Based on the setting of the destination, a generated document is stored in a previously configured SharePoint folder.</span></span>
+<span data-ttu-id="b047c-104">Du kan konfigurere et Microsoft Power BI-mål for hver Mappe- eller Fil-komponent i et elektronisk rapporteringsformat (ER) som er konfigurert til å generere utgående dokumenter.</span><span class="sxs-lookup"><span data-stu-id="b047c-104">You can configure a Microsoft Power BI destination for each folder or file component of an Electronic reporting (ER) format that is configured to generate outbound documents.</span></span> <span data-ttu-id="b047c-105">Basert på innstillingen for målet lagres et generert dokument i en tidligere konfigurert SharePoint-mappe.</span><span class="sxs-lookup"><span data-stu-id="b047c-105">Based on the setting of the destination, a generated document is stored in a previously configured SharePoint folder.</span></span>
 
-<span data-ttu-id="57484-106">Sett **Aktivert** til **Ja** for å bruke ER-konfigurasjonen for å ordne overføring av data fra Dynamics 365 Finance-forekomsten til Microsoft Power BI-tjenester.</span><span class="sxs-lookup"><span data-stu-id="57484-106">Set **Enabled** to **Yes** to use your ER configuration to arrange the transfer of data from your Dynamics 365 Finance instance to Microsoft Power BI services.</span></span> <span data-ttu-id="57484-107">De overførte filene lagres på en Microsoft SharePoint-serverforekomst som må konfigureres for dette formålet.</span><span class="sxs-lookup"><span data-stu-id="57484-107">The transferred files are stored on a Microsoft SharePoint Server instance that must be configured for that purpose.</span></span> <span data-ttu-id="57484-108">Hvis du vil ha mer informasjon, kan du se [Konfigurere elektronisk rapportering (ER) for å hente data til Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md).</span><span class="sxs-lookup"><span data-stu-id="57484-108">For more information, see [Configure Electronic reporting (ER) to pull data into Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md).</span></span>
+<span data-ttu-id="b047c-106">Sett **Aktivert** til **Ja** for å bruke ER-konfigurasjonen for å ordne overføring av data fra Dynamics 365 Finance-forekomsten til Microsoft Power BI-tjenester.</span><span class="sxs-lookup"><span data-stu-id="b047c-106">Set **Enabled** to **Yes** to use your ER configuration to arrange the transfer of data from your Dynamics 365 Finance instance to Microsoft Power BI services.</span></span> <span data-ttu-id="b047c-107">De overførte filene lagres på en Microsoft SharePoint-serverforekomst som må konfigureres for dette formålet.</span><span class="sxs-lookup"><span data-stu-id="b047c-107">The transferred files are stored on a Microsoft SharePoint Server instance that must be configured for that purpose.</span></span> <span data-ttu-id="b047c-108">Hvis du vil ha mer informasjon, kan du se [Konfigurere elektronisk rapportering (ER) for å hente data til Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md).</span><span class="sxs-lookup"><span data-stu-id="b047c-108">For more information, see [Configure Electronic reporting (ER) to pull data into Power BI](general-electronic-reporting-report-configuration-get-data-powerbi.md).</span></span>
 
-<span data-ttu-id="57484-109">[![Målinnstilling-siden](./media/ER_Destinations-EnablePowerBIDestination.png)](./media/ER_Destinations-EnablePowerBIDestination.png)</span><span class="sxs-lookup"><span data-stu-id="57484-109">[![Destination setting page](./media/ER_Destinations-EnablePowerBIDestination.png)](./media/ER_Destinations-EnablePowerBIDestination.png)</span></span>
+<span data-ttu-id="b047c-109">[![Målinnstilling-siden](./media/ER_Destinations-EnablePowerBIDestination.png)](./media/ER_Destinations-EnablePowerBIDestination.png)</span><span class="sxs-lookup"><span data-stu-id="b047c-109">[![Destination setting page](./media/ER_Destinations-EnablePowerBIDestination.png)](./media/ER_Destinations-EnablePowerBIDestination.png)</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="57484-110">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="57484-110">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="b047c-110">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="b047c-110">Additional resources</span></span>
 
-- [<span data-ttu-id="57484-111">Oversikt over elektronisk rapportering (ER)</span><span class="sxs-lookup"><span data-stu-id="57484-111">Electronic reporting (ER) overview</span></span>](general-electronic-reporting.md)
-- [<span data-ttu-id="57484-112">Mål for elektronisk rapportering (ER)</span><span class="sxs-lookup"><span data-stu-id="57484-112">Electronic reporting (ER) destinations</span></span>](electronic-reporting-destinations.md)
+- [<span data-ttu-id="b047c-111">Oversikt over elektronisk rapportering (ER)</span><span class="sxs-lookup"><span data-stu-id="b047c-111">Electronic reporting (ER) overview</span></span>](general-electronic-reporting.md)
+- [<span data-ttu-id="b047c-112">Mål for elektronisk rapportering (ER)</span><span class="sxs-lookup"><span data-stu-id="b047c-112">Electronic reporting (ER) destinations</span></span>](electronic-reporting-destinations.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
