@@ -1,12 +1,10 @@
 ---
 title: Aktivavisning
 description: Dette emnet beskriver aktivavisning i Aktivastyring.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetObjectTree, EntAssetFunctionalLocationTree
 audience: Application User
@@ -14,39 +12,39 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2a770831c564d44de534642cc462b27b0818e9a2
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 4a7bf1cf07178f570f32e3fa4c4c1e5a2106b10d
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5253116"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5837855"
 ---
-# <a name="asset-view"></a><span data-ttu-id="31e00-103">Aktivavisning</span><span class="sxs-lookup"><span data-stu-id="31e00-103">Asset view</span></span>
+# <a name="asset-view"></a><span data-ttu-id="3812e-103">Aktivavisning</span><span class="sxs-lookup"><span data-stu-id="3812e-103">Asset view</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
  
 
-<span data-ttu-id="31e00-104">Dette emnet beskriver aktivavisning i Aktivastyring.</span><span class="sxs-lookup"><span data-stu-id="31e00-104">This topic describes the asset view in Asset Management.</span></span> <span data-ttu-id="31e00-105">Siden **Aktivavisning** viser aktive aktiva og arbeidssteder i en trevisning.</span><span class="sxs-lookup"><span data-stu-id="31e00-105">The **Asset view** page shows active assets and functional locations in a tree view.</span></span> <span data-ttu-id="31e00-106">Derfor kan du enkelt få en oversikt over aktivarelasjoner til arbeidssteder.</span><span class="sxs-lookup"><span data-stu-id="31e00-106">Therefore, you can easily get an overview of asset relations to functional locations.</span></span> <span data-ttu-id="31e00-107">I tillegg kan du vise detaljert informasjon om arbeidssteder, aktiva og tilknyttede stykklister.</span><span class="sxs-lookup"><span data-stu-id="31e00-107">Additionally, you can view detailed information about functional locations, assets, and related bills of materials (BOMs).</span></span> <span data-ttu-id="31e00-108">Du kan også få en rask oversikt over aktive meldinger og arbeidsordrer som er knyttet til et aktivum.</span><span class="sxs-lookup"><span data-stu-id="31e00-108">You can also get a quick overview of active maintenance requests and work orders that are related to an asset.</span></span>
+<span data-ttu-id="3812e-104">Dette emnet beskriver aktivavisning i Aktivastyring.</span><span class="sxs-lookup"><span data-stu-id="3812e-104">This topic describes the asset view in Asset Management.</span></span> <span data-ttu-id="3812e-105">Siden **Aktivavisning** viser aktive aktiva og arbeidssteder i en trevisning.</span><span class="sxs-lookup"><span data-stu-id="3812e-105">The **Asset view** page shows active assets and functional locations in a tree view.</span></span> <span data-ttu-id="3812e-106">Derfor kan du enkelt få en oversikt over aktivarelasjoner til arbeidssteder.</span><span class="sxs-lookup"><span data-stu-id="3812e-106">Therefore, you can easily get an overview of asset relations to functional locations.</span></span> <span data-ttu-id="3812e-107">I tillegg kan du vise detaljert informasjon om arbeidssteder, aktiva og tilknyttede stykklister.</span><span class="sxs-lookup"><span data-stu-id="3812e-107">Additionally, you can view detailed information about functional locations, assets, and related bills of materials (BOMs).</span></span> <span data-ttu-id="3812e-108">Du kan også få en rask oversikt over aktive meldinger og arbeidsordrer som er knyttet til et aktivum.</span><span class="sxs-lookup"><span data-stu-id="3812e-108">You can also get a quick overview of active maintenance requests and work orders that are related to an asset.</span></span>
 
-1. <span data-ttu-id="31e00-109">Velg **Aktivastyring** \> **Felles** \> **Aktiva** \> **Aktivavisning**.</span><span class="sxs-lookup"><span data-stu-id="31e00-109">Select **Asset management** \> **Common** \> **Assets** \> **Asset view**.</span></span>
-2. <span data-ttu-id="31e00-110">Hvis du vil endre visningen som vises på siden, velger du en ny verdi i **Visning**-feltet.</span><span class="sxs-lookup"><span data-stu-id="31e00-110">To change the view that is shown on the page, select a new value in the **View** field.</span></span>
+1. <span data-ttu-id="3812e-109">Velg **Aktivastyring** \> **Felles** \> **Aktiva** \> **Aktivavisning**.</span><span class="sxs-lookup"><span data-stu-id="3812e-109">Select **Asset management** \> **Common** \> **Assets** \> **Asset view**.</span></span>
+2. <span data-ttu-id="3812e-110">Hvis du vil endre visningen som vises på siden, velger du en ny verdi i **Visning**-feltet.</span><span class="sxs-lookup"><span data-stu-id="3812e-110">To change the view that is shown on the page, select a new value in the **View** field.</span></span>
 
     > [!NOTE]
-    > <span data-ttu-id="31e00-111">Standardvisningen som vises når du åpner siden **Aktivavisning**, avhenger av verdien som er valgt i **Visning**-feltet i fanen **Aktiva** på siden **Parametere i Aktivastyring** (**Aktivastyring** \> **Oppsett** \> **Parametere i Aktivastyring**).</span><span class="sxs-lookup"><span data-stu-id="31e00-111">The default view that is shown when you open the **Asset view** page depends on the value that is selected in the **View** field on the **Assets** tab of the **Asset management parameters** page (**Asset management** \> **Setup** \> **Asset management parameters**).</span></span>
+    > <span data-ttu-id="3812e-111">Standardvisningen som vises når du åpner siden **Aktivavisning**, avhenger av verdien som er valgt i **Visning**-feltet i fanen **Aktiva** på siden **Parametere i Aktivastyring** (**Aktivastyring** \> **Oppsett** \> **Parametere i Aktivastyring**).</span><span class="sxs-lookup"><span data-stu-id="3812e-111">The default view that is shown when you open the **Asset view** page depends on the value that is selected in the **View** field on the **Assets** tab of the **Asset management parameters** page (**Asset management** \> **Setup** \> **Asset management parameters**).</span></span>
 
-<span data-ttu-id="31e00-112">Hurtigfanen på høyre side av siden viser detaljer om den valgte visningen.</span><span class="sxs-lookup"><span data-stu-id="31e00-112">On the right side of the page, FastTabs shows details of the selected view.</span></span>
+<span data-ttu-id="3812e-112">Hurtigfanen på høyre side av siden viser detaljer om den valgte visningen.</span><span class="sxs-lookup"><span data-stu-id="3812e-112">On the right side of the page, FastTabs shows details of the selected view.</span></span>
 
-<span data-ttu-id="31e00-113">Brødsmulesporet som vises over trevisningen, viser det gjeldende merkede området i trevisningen.</span><span class="sxs-lookup"><span data-stu-id="31e00-113">The breadcrumb trail that appears above the tree view shows the current selection in the tree view.</span></span> <span data-ttu-id="31e00-114">Dette brødsmulesporet bruker følgende format:</span><span class="sxs-lookup"><span data-stu-id="31e00-114">This breadcrumb trail uses the following format:</span></span>
+<span data-ttu-id="3812e-113">Brødsmulesporet som vises over trevisningen, viser det gjeldende merkede området i trevisningen.</span><span class="sxs-lookup"><span data-stu-id="3812e-113">The breadcrumb trail that appears above the tree view shows the current selection in the tree view.</span></span> <span data-ttu-id="3812e-114">Dette brødsmulesporet bruker følgende format:</span><span class="sxs-lookup"><span data-stu-id="3812e-114">This breadcrumb trail uses the following format:</span></span>
 
-<span data-ttu-id="31e00-115">ID for arbeidssted / ID for arbeidssted (hvis det er flere arbeidssteder) \> Aktiva-ID / Aktiva-ID (hvis det er flere aktiva) – Varenummer.</span><span class="sxs-lookup"><span data-stu-id="31e00-115">Functional location ID / Functional location ID (if there is more than one functional location) \> Asset ID / Asset ID (if there is more than one asset) - Item number.</span></span>
+<span data-ttu-id="3812e-115">ID for arbeidssted / ID for arbeidssted (hvis det er flere arbeidssteder) \> Aktiva-ID / Aktiva-ID (hvis det er flere aktiva) – Varenummer.</span><span class="sxs-lookup"><span data-stu-id="3812e-115">Functional location ID / Functional location ID (if there is more than one functional location) \> Asset ID / Asset ID (if there is more than one asset) - Item number.</span></span>
 
-<span data-ttu-id="31e00-116">Hvis du har valgt et aktivum i trevisningen, kan du velge **Aktive forespørsler** eller **Aktive arbeidsordrer** for å vise meldingene eller arbeidsordrene som er relatert til aktivumet.</span><span class="sxs-lookup"><span data-stu-id="31e00-116">If you've selected an asset in the tree view, you can select **Active requests** or **Active work orders** to view the maintenance requests or work orders that are related to the asset.</span></span> <span data-ttu-id="31e00-117">Du kan også velge **Åpne** \> **Arbeidssted**, **Aktiva** eller **Stykkliste for aktiva** for å åpne den tilknyttede visningen.</span><span class="sxs-lookup"><span data-stu-id="31e00-117">You can also select **Open** \> **Functional location**, **Asset**, or **Asset BOM** to open the related view.</span></span>
+<span data-ttu-id="3812e-116">Hvis du har valgt et aktivum i trevisningen, kan du velge **Aktive forespørsler** eller **Aktive arbeidsordrer** for å vise meldingene eller arbeidsordrene som er relatert til aktivumet.</span><span class="sxs-lookup"><span data-stu-id="3812e-116">If you've selected an asset in the tree view, you can select **Active requests** or **Active work orders** to view the maintenance requests or work orders that are related to the asset.</span></span> <span data-ttu-id="3812e-117">Du kan også velge **Åpne** \> **Arbeidssted**, **Aktiva** eller **Stykkliste for aktiva** for å åpne den tilknyttede visningen.</span><span class="sxs-lookup"><span data-stu-id="3812e-117">You can also select **Open** \> **Functional location**, **Asset**, or **Asset BOM** to open the related view.</span></span>
 
-<span data-ttu-id="31e00-118">Alternativet **Arbeidssteder for aktiva** som du kan velge i **Visning**-feltet, er også tilgjengelig i alle aktivaoppslag der du kan velge et aktivum.</span><span class="sxs-lookup"><span data-stu-id="31e00-118">The **Asset functional locations** option that you can select in the **View** field is also available in any asset lookup where you can select an asset.</span></span> <span data-ttu-id="31e00-119">Trevisningen vises i fanen **Aktivavisning**, der du for eksempel [oppretter et aktivum](../objects/create-an-object.md), oppretter en melding eller oppretter en arbeidsordre.</span><span class="sxs-lookup"><span data-stu-id="31e00-119">The tree view is shown on an **Asset view** tab, for example, where you [create an asset](../objects/create-an-object.md), create a maintenance request, or create a work order.</span></span>
+<span data-ttu-id="3812e-118">Alternativet **Arbeidssteder for aktiva** som du kan velge i **Visning**-feltet, er også tilgjengelig i alle aktivaoppslag der du kan velge et aktivum.</span><span class="sxs-lookup"><span data-stu-id="3812e-118">The **Asset functional locations** option that you can select in the **View** field is also available in any asset lookup where you can select an asset.</span></span> <span data-ttu-id="3812e-119">Trevisningen vises i fanen **Aktivavisning**, der du for eksempel [oppretter et aktivum](../objects/create-an-object.md), oppretter en melding eller oppretter en arbeidsordre.</span><span class="sxs-lookup"><span data-stu-id="3812e-119">The tree view is shown on an **Asset view** tab, for example, where you [create an asset](../objects/create-an-object.md), create a maintenance request, or create a work order.</span></span>
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
