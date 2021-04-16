@@ -1,12 +1,10 @@
 ---
-title: Administrasjonskomponenter for Elektronisk fakturering-tillegget
-description: Dette emnet inneholder informasjon om komponentene som er knyttet til administrasjon av tillegget Elektronisk fakturering.
+title: Administrasjonskomponenter for elektronisk fakturering
+description: Dette emnet inneholder informasjon om komponentene som er knyttet til administrasjon av Elektronisk fakturering.
 author: gionoder
-manager: AnnBe
-ms.date: 03/12/2021
+ms.date: 03/29/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,47 +15,47 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 70ef47dd45200a14c9d780f3c280c554d0e52ac3
-ms.sourcegitcommit: 543772ee97efe215cf6f2ec6e092cc1568919f20
+ms.openlocfilehash: 2e859875e124796e49000cd5ea94cfb75ecd768a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "5592580"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840034"
 ---
-# <a name="electronic-invoicing-add-on-administration-components"></a>Administrasjonskomponenter for Elektronisk fakturering-tillegget
+# <a name="electronic-invoicing-administration-components"></a>Administrasjonskomponenter for elektronisk fakturering
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
-Dette emnet inneholder informasjon om komponentene som er knyttet til administrasjon av tillegget Elektronisk fakturering. Det inneholder også informasjon om hvordan du konfigurerer tillegget for Elektronisk fakturering.
+
+Dette emnet inneholder informasjon om komponentene som er knyttet til administrasjon av Elektronisk fakturering. Det inneholder også informasjon om hvordan du konfigurerer Elektronisk fakturering.
 
 ## <a name="azure"></a>Azure
 
-Bruk Microsoft Azure for å opprette key vault-hemmelighetene og lagringskontoen. Deretter bruker du konfigurasjonen av tillegget for Elektronisk fakturering.
+Bruk Microsoft Azure for å opprette key vault-hemmelighetene og lagringskontoen. Deretter bruker du konfigurasjonen av Elektronisk fakturering.
 
 ## <a name="lifecycle-services"></a>Lifecycle Services
 
-Bruk Microsoft Dynamics Lifecycle Services (LCS) til å aktivere tillegget for mikrotjenestene på LCS-distribusjonsprosjektet.
+Bruk Microsoft Dynamics Lifecycle Services (LCS) til å aktivere mikrotjenestene på LCS-distribusjonsprosjektet.
 
 > [!NOTE]
-> Installasjonen av mikrotjenestetillegget i LCS krever minst en virtuell maskin på nivå 2. Hvis du vil ha mer informasjon om miljøplanlegging, kan du se [Miljøplanlegging](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
+> Installasjonen av mikrotjenesten i LCS krever minst en virtuell maskin på nivå 2. Hvis du vil ha mer informasjon om miljøplanlegging, kan du se [Miljøplanlegging](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
  
 
 ## <a name="regulatory-configuration-services"></a>Regulatory Configuration Services
 
-Dynamics 365 Regulatory Configuration Services (RCS) er grensesnittet som brukes til å konfigurere tillegget for Elektronisk fakturering. Ressurser som miljøer og funksjoner for elektroniske fakturering opprettes, vedlikeholdes og driftes i RCS. Når ressursene er klare, publiseres de i tilleggstjenesten for Elektronisk fakturering.
+Dynamics 365 Regulatory Configuration Services (RCS) er grensesnittet som brukes til å konfigurere Elektronisk fakturering. Ressurser som miljøer og funksjoner for elektroniske fakturering opprettes, vedlikeholdes og driftes i RCS. Når ressursene er klare, publiseres de i tjenesten for Elektronisk fakturering.
 
 For RCS-registrering kan du se [Regulatory Services](https://marketing.configure.global.dynamics.com/).
 
 Hvis du vil ha mer informasjon om RCS, kan du se [Regulatory Configuration Services (RCS) – globaliseringsfunksjoner](rcs-globalization-feature.md)
 
-### <a name="integration-with-the-electronic-invoicing-add-on"></a>Integrering med Elektronisk fakturering-tillegget
+### <a name="integration-with-electronic-invoicing"></a>Integrering med Elektronisk fakturering 
 
-Før du kan bruke RCS til å konfigurere elektroniske fakturaer, må du konfigurere RCS til å tillate kommunikasjon med tillegget for Elektronisk fakturering. Du fyller ut denne konfigurasjonen i kategorien **Tillegg for elektronisk fakturering** på siden **Parametere for elektronisk rapportering**.
+Før du kan bruke RCS til å konfigurere elektroniske fakturaer, må du konfigurere RCS til å tillate kommunikasjon med Elektronisk fakturering. Du fyller ut denne konfigurasjonen i kategorien **Elektronisk fakturering** på siden **Parametere for elektronisk rapportering**.
 
 #### <a name="service-endpoint"></a>Tjenestesluttpunkt
 
-Tillegget for elektronisk fakturering er tilgjengelig i flere geografiske områder for Azure-datasenteret. I tabellen nedenfor finner du en oversikt over tilgjengelighet per område.
+Elektronisk fakturering er tilgjengelig i flere geografiske områder for Azure-datasenteret. I tabellen nedenfor finner du en oversikt over tilgjengelighet per område.
 
 | Azure-datasentergeografi |
 |----------------------------|
@@ -68,39 +66,39 @@ Tillegget for elektronisk fakturering er tilgjengelig i flere geografiske områd
 
 ### <a name="service-environments"></a>Tjenestemiljøer
 
-Tjenestemiljøer er logiske partisjoner som opprettes for å støtte utføring av funksjonene for Elektronisk fakturering i tillegget for Elektronisk fakturering. Sikkserhetshemmelighetene og de digitale sertifikatene, og styringen (det vil si tilgangstillatelser), må konfigureres på tjenestemiljønivå.
+Tjenestemiljøer er logiske partisjoner som opprettes for å støtte utføring av funksjonene for elektronisk fakturering i Elektronisk fakturering. Sikkserhetshemmelighetene og de digitale sertifikatene, og styringen (det vil si tilgangstillatelser), må konfigureres på tjenestemiljønivå.
 
 Kunder kan opprette så mange tjenestemiljøer de vil. Alle tjenestemiljøene som en kunde oppretter, er uavhengige av hverandre.
 
-Tjenestemiljøer må opprettes og vedlikeholdes i RCS. Når tjenestemiljøene er klare, må de publiseres til Elektronisk fakturering-tillegget.
+Tjenestemiljøer må opprettes og vedlikeholdes i RCS. Når tjenestemiljøene er klare, må de publiseres til Elektronisk fakturering.
 
 #### <a name="service-environment-status"></a>Tjenesemiljøstatus
 
 Tjenestemiljøer kan administreres via status. Mulige alternativer er:
 
 - **Ikke publisert** – Miljøet er opprettet, men det er ennå ikke publisert.
-- **Publisert** – Miljøet er publisert i tillegget for Elektronisk fakturering.
+- **Publisert** – Miljøet er publisert i Elektronisk fakturering.
 - **Endret** – Attributtene for et publisert miljø er endret, men endringene er ikke publisert ennå.
 
 #### <a name="customer-secrets"></a>Kundehemmeligheter
 
-Tillegget Elektronisk fakturering er ansvarlig for lagring av alle forretningsdata i Azure-ressursene som firmaet ditt eier. For å sikre at tjenesten fungerer som den skal, og at alle forretningsdataene som trengs for og genereres av tillegget Elektronisk fakturering, bare åpnes av tillegget, må du opprette to hoved-Azure-ressurser:
+Tjenesten Elektronisk fakturering er ansvarlig for lagring av alle forretningsdata i Azure-ressursene som firmaet ditt eier. For å sikre at tjenesten fungerer som den skal, og at det blir gitt tilgang til alle forretningsdataene som trengs for og genereres av Elektronisk fakturering, på riktig måte, må du opprette to hoved-Azure-ressurser:
 
 - En Azure Storage-konto (blob-lagring) som lagrer elektroniske fakturaer
 - Et Azure Key Vault som lagrer sertifikater og URIen (Uniform Resource Identifier) for lagringskontoen
 
 > [!NOTE]
-> En dedikert Key Vault- og kundelagringskonto må tilordnes spesifikt for bruk med tillegget Elektroniske fakturering.
+> En dedikert Key Vault- og kundelagringskonto må tilordnes spesifikt for bruk med Elektronisk fakturering.
 
 Hvis du vil ha mer informasjon, kan du se [Opprette en Azure Storage-konto og et Key Vault](e-invoicing-create-azure-storage-account-key-vault.md).
 
 #### <a name="users"></a>Brukere
 
-Hvert tjenestemiljø må vise en liste over brukerne som kan koble seg til fra Dynamics 365 Finance og Dynamics 365 Supply Chain Management i Elektronisk fakturering-tillegget.
+Hvert tjenestemiljø må vise en liste over brukerne som kan koble seg til fra Dynamics 365 Finance og Dynamics 365 Supply Chain Management i Elektronisk fakturering.
 
 #### <a name="publication"></a>Publisering
 
-Tjenestemiljøene må de publiseres til Elektronisk fakturering-tillegget før de kan brukes. Det er bare tilgang til publiserte miljøer fra Finance og Supply Chain Management. I tillegg må et tjenestemiljø publiseres før eventuelle oppdateringer av attributtene trer i kraft på den elektroniske faktureringstjenesten.
+Tjenestemiljøene må de publiseres til Elektronisk fakturering før de kan brukes. Det er bare tilgang til publiserte miljøer fra Finance og Supply Chain Management. I tillegg må et tjenestemiljø publiseres før eventuelle oppdateringer av attributtene trer i kraft på den elektroniske faktureringstjenesten.
 
 ### <a name="connected-applications"></a>Tilkoblede programmer
 
@@ -110,25 +108,25 @@ Gjennom de tilkoblede programmene kan du konfigurere deler av Elektronisk faktur
 
 ## <a name="finance-and-supply-chain-management"></a>Finance og Supply Chain Management
 
-### <a name="integration-with-electronic-invoicing-add-on"></a>Integrering med Elektronisk fakturering-tillegg
+### <a name="integration-with-electronic-invoicing"></a>Integrering med Elektronisk fakturering
 
-Før du kan bruke Finance og Supply Chain Management til å utstede elektroniske fakturaer via tillegget for Elektronisk fakturering, må tillegget konfigureres slik at det er tillatt å kommunisere med tjenesten.
+Før du kan bruke Finance og Supply Chain Management til å utstede elektroniske fakturaer via Elektronisk fakturering, må det konfigureres slik at det er tillatt å kommunisere med tjenesten.
 
-#### <a name="electronic-invoicing-add-on-integration-feature"></a>Integreringsfunksjon for tillegget Elektronisk fakturering
+#### <a name="electronic-invoicing-integration-feature"></a>Integreringsfunksjon for Elektronisk fakturering
 
-Hvis du vil aktivere kommunikasjon mellom Finance og Supply Chain Management og tillegget for Elektronisk fakturering, må du aktivere funksjonen for **Integrering av tillegget Elektronisk fakturering** i arbeidsområdet for **Funksjonsbehandling**.
+Hvis du vil aktivere kommunikasjon mellom Finance og Supply Chain Management og Elektronisk fakturering, må du aktivere funksjonen for **Integrering av Elektronisk fakturering** i arbeidsområdet for **Funksjonsbehandling**.
 
 #### <a name="service-endpoint"></a>Tjenestesluttpunkt
 
-Endepunktet for tjeneste er URL-adressen der tillegget for Elektronisk fakturering er plassert. Før du elektroniske fakturaer kan utstedet må endepunktet for tjenesten konfigurere i Finance og Supply Chain Management, slik at det er tillatt å kommunisere med tjenesten.
+Endepunktet for tjeneste er URL-adressen der Elektronisk fakturering er plassert. Før du elektroniske fakturaer kan utstedet må endepunktet for tjenesten konfigurere i Finance og Supply Chain Management, slik at det er tillatt å kommunisere med tjenesten.
 
-For å konfigurere tjenestesluttpunktet, kan du gå til **Organisasjonsadministrasjon \> Oppsett \> parametere for elektronisk dokument**, og deretter, i fanen **Innsendingstjenester** i feltet **URL for tillegg for Elektronisk faktura**, angir du URL-en som beskrevet i tabellen som er beskrevet i delen **Tjenestesluttpunkt**.
+For å konfigurere tjenestesluttpunktet, kan du gå til **Organisasjonsadministrasjon \> Oppsett \> parametere for elektronisk dokument**, og deretter, i fanen **Innsendingstjenester** i feltet **URL for Elektronisk faktura**, angir du URL-en som beskrevet i tabellen som er beskrevet i delen **Tjenestesluttpunkt**.
 
 #### <a name="environments"></a>Miljøer
 
-Miljønavnet som angis i Finance og Supply Chain Management, refererer til navnet på miljøet som opprettes i RCS og publiseres i tillegget til Elektronisk fakturering.
+Miljønavnet som angis i Finance og Supply Chain Management, refererer til navnet på miljøet som opprettes i RCS og publiseres i Elektronisk fakturering.
 
-Miljøet må konfigureres i kategorien **Innsendingstjenester** på siden **Parameter for elektronisk dokument**, slik at hver forespørsel om å utstede elektroniske fakturaer, inneholder miljøet der tillegget for Elektronisk fakturering kan fastslå hvilken elektronisk faktureringsfunksjon som må behandle forespørselen.
+Miljøet må konfigureres i kategorien **Innsendingstjenester** på siden **Parameter for elektronisk dokument**, slik at hver forespørsel om å utstede elektroniske fakturaer, inneholder miljøet der Elektronisk fakturering kan fastslå hvilken elektronisk faktureringsfunksjon som må behandle forespørselen.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

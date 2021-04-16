@@ -1,12 +1,10 @@
 ---
 title: Kontantstrømprognose
 description: Dette emnet gir en oversikt over prosessen for kontantstrømprognose. Det forklarer også hvordan kontantstrømprognose er integrert med andre moduler i systemet.
-author: saraschi2
-manager: AnnBe
-ms.date: 08/03/2020
+author: JodiChristiansen
+ms.date: 12/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerCovParameters
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 98bf906569f99c74fef747381e8f27b1d9f91a5f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 2a0bcb5266472b3d0e936d27c9f599d2c6b16d7a
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5232471"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5819656"
 ---
 # <a name="cash-flow-forecasting"></a>Kontantstrømprognose
 
@@ -45,8 +43,7 @@ Kontantstrømprognose kan integreres med økonomi, leverandører, kunder, budsje
 - **Budsjettregisteroppføringer** – budsjettregisteroppføringer som er valgt for kontantstrømprognoser.
 - **Behovsprognoser** – linjer for lagerprognosemodell som er valgt for kontantstrømprognoser.
 - **Forsyningsprognoser** – linjer for lagerprognosemodell som er valgt for kontantstrømprognoser.
-
-Selv om det ikke er noen direkte integrasjon med Prosjektstyring og regnskap, kan du ta med prosjekttransaksjoner i kontantstrømprognosen på flere måter. Posterte prosjektfakturaer tas med i prognosen som en del av åpne kundetransaksjoner. Prosjektstartede salgsordrer og bestillinger tas med i prognosen som åpne ordrer etter at de er registrert i systemet. Du kan også overføre prosjektprognoser til en finansbudsjettmodell. Denne finansbudsjettmodellen tas deretter med i kontantstrømprognosen som en del av budsjettregisteroppføringene.
+- **Prosjektprognoser** – Prosjektstyring og regnskapsprognoser ved hjelp av prognosemodell.
 
 ## <a name="configuration"></a>Konfigurasjon
 
@@ -96,6 +93,14 @@ Prognoser for lagerforsyning og -behov kan tas med i kontantstrømprognoser. Vel
 En ny fane på siden **Oppsett for kontantstrømprognose** lar deg styre hvilke finansdimensjoner du vil bruke i arbeidsområdet **Kontantstrømprognose**. Denne fanen vises bare når funksjonen for kontantstrømprognose er aktivert. 
 
 I fanen **Dimensjoner** velger du dimensjoner som skal brukes til filtrering, fra listen over dimensjoner, og bruker piltastene til å flytte dem til høyre kolonne. Du kan bare velge to dimensjoner til filtrering av data for kontantstrømprognose. 
+
+### <a name="project-management-and-accounting"></a>Prosjektstyring og regnskap
+
+I versjon 10.0.17 aktiverer en ny funksjon integrering med prosjektstyring og regnskap og kontantstrømprognoser. I arbeidsområdet **Funksjonsstyring** slår du på funksjonen **Prosjektprognose for kontantstrøm** for å inkludere prognoser for kostnader og inntekter i kontantstrømprognosen. I kategorien **Prosjektstyring og regnskap** på siden **Oppsett for kontantstrømprognose** velger du prosjekttypene og transaksjonstypene som skal tas med i kontantstrømprognosen. Deretter velger du prosjektprognosemodellen. En reduksjonstypeundermodell fungerer best. Likviditetskontoene som ble angitt i kundeoppsettet, brukes som standard likviditetskontoer. Derfor trenger du ikke angi standard likviditetskontoer når du definerer kontantstrømprognosen. En budsjettmodell kan også brukes, men bare én type kan velges på siden **Oppsett for kontantstrømprognose** for prosjektstyring og regnskap. En prognosemodell gir mest fleksibilitet når prosjektstyring, regnskap eller Project Operations brukes.
+
+Når funksjonen for kontantstrømprosjektprognose er aktivert, kan kontantstrømprognosen vises for hvert prosjekt på **Alle prosjekter**-siden. Velg **Kontantstrømprognose** i **Prognose**-gruppen i **Plan**-fanen i handlingsruten. I arbeidsområdene for **Kontantstrømoversikt** (se delen [Rapportering](#reporting) senere i dette emnet) viser transaksjonstypen for prosjektprognose innflytene (prognoseinntekt for prosjekt) og utflytene (prognosekostnader for prosjekt). Beløpene kan bare inkluderes hvis feltet **Prosjektfase** i arbeidsområdene **Kontantstrømoversikt** er angitt til **Pågår**.
+
+Prosjekttransaksjoner er fremdeles inkludert i kontantstrømprognosen på flere måter, uansett om funksjonen **Prosjektprognose for kontantstrøm** er aktivert. Posterte prosjektfakturaer tas med i prognosen som en del av åpne kundetransaksjoner. Prosjektstartede salgsordrer og bestillinger tas med i prognosen som åpne ordrer etter at de er registrert i systemet. Du kan også overføre prosjektprognoser til en finansbudsjettmodell. Denne finansbudsjettmodellen tas deretter med i kontantstrømprognosen som en del av budsjettregisteroppføringene. Hvis du har aktivert funksjonen **Prosjektprognose for kontantstrøm**, må du ikke overføre prosjektprognoser til en budsjettmodell i finans, fordi denne handlingen vil føre til at prosjektprognosene telles to ganger.
 
 ### <a name="calculation"></a>Beregning
 

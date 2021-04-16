@@ -2,11 +2,9 @@
 title: Leieposteringstyper
 description: Dette emnet beskriver posteringstypene som brukes ved transaksjoner for leie av anleggsmidler.
 author: moaamer
-manager: Ann Beebe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 9b7d8c545c1addaa570d54855bbad6c576783007
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: ddc229f3ab8e048390f27503e2c6c26bd1a6f24f
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5229508"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5841147"
 ---
 # <a name="lease-posting-types"></a>Leieposteringstyper
 
@@ -90,15 +88,6 @@ Kontoen er knyttet til kontoen for bruksrettseiendelen. Denne kontoen krediteres
 **Eksempeljournaloppføringer:** Avskrivningsavsetning<br>
 **Debet:** Avskrivningskostnad XXX<br>
 **Kredit:** Akkumulert avskrivning XXX
-
-## <a name="retained-earnings"></a>Tilbakeholdt overskudd
-
-Kontoen som er knyttet til tilbakeholdt overskudd. Denne kontoen kan enten debiteres eller krediteres i en journaloppføring for overgangsjustering ved å bruke den fullstendige retrospektive metoden eller det kumulative oppdateringsalternativet for metode A. Differansen mellom den opprinnelige bruksrettseiendelen og leieforpliktelsen posteres til tilbakeholdt overskudd. I sjeldne tilfeller påvirkes også tilbakeholdt overskudd under endring av leieavtaler hvis klassifiseringen av en leieavtale endres fra finansiell til gjeldende for å skrive bruksrettseiendelen opp eller ned, slik at den samsvarer med leieforpliktelsen.
-
-**Eksempeljournaloppføringer:** Overgangsjustering (fullstendig retrospektiv eller kumulativ oppsamlingsalternativ A-metoden)<br>
-**Debet:** Leieforpliktelse XXX<br>
-**Kredit:** Leieaktiva XXX<br>
-**Kredit:** Tilbakeholdt overskudd XXX
 
 ## <a name="variable-payment"></a>Variabel betaling
 

@@ -2,11 +2,9 @@
 title: Dimensjonshierarki
 description: Dette emnet gir informasjon om dimensjonshierarkier. Du bruker et dimensjonshierarki for å definere rapporteringsstruktur, kostnadspolicyer og sikkerhetsoppsett i Kostnadsregnskap.
 author: AndersGirke
-manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMDimensionHierarchy,
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 2a2e48b15bedd25b685686fa18a91f30b600331c
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: fdf280031e2ad2356a1a2ef3bba75d1f74c8e4de
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5217392"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810180"
 ---
 # <a name="dimension-hierarchy"></a>Dimensjonshierarki
 
@@ -124,12 +122,13 @@ Et dimensjonshierarki som oppfyller organisasjonens rapporteringskrav, kan defin
 
 Dimensjonshierarkiet for rapportering kan defineres som vist her.
 
-|                   | Dimensjonsmedlemsområder   |                         |
+**Dimensjonsmedlemsområder**
+
+|   Noder           |   Fra dimensjonsmedlem   |   Til dimensjonsmedlem   |
 |-------------------|---------------------------|-------------------------|
-| **Noder**         | **Fra dimensjonsmedlem** | **Til dimensjonsmedlem** |
 | Organisasjon      |                           |                         |
 | &nbsp;&nbsp;Administrator         |                           |                         |
-|&nbsp;&nbsp;&nbsp;&nbsp;Finans   | CC002                     | CC003                   |
+| &nbsp;&nbsp;&nbsp;&nbsp;Finans   | CC002                     | CC003                   |
 |                   | CC007                     | CC007                   |
 | &nbsp;&nbsp;&nbsp;&nbsp;Personale        | CC001                     | CC001                   |
 | &nbsp;&nbsp;Produksjon    |                           |                         |
@@ -146,12 +145,13 @@ Et dimensjonshierarki som oppfyller organisasjonens rapporteringskrav, kan defin
 
 Dimensjonshierarkiet for policyen kan defineres som vist her.
 
-|                   | Dimensjonsmedlemsområder   |                         |
+**Dimensjonsmedlemsområder**
+
+|   Noder           |   Fra dimensjonsmedlem   |   Til dimensjonsmedlem   |
 |-------------------|---------------------------|-------------------------|
-| **Noder**         | **Fra dimensjonsmedlem** | **Til dimensjonsmedlem** |
 | Kostnadsatferd     |                           |                         |
 | &nbsp;&nbsp;Fast kostnad    | 10001                     | 10011                   |
-|&nbsp;&nbsp;Variabel kostnad | 40001                     | 40010                   |
+| &nbsp;&nbsp;Variabel kostnad | 40001                     | 40010                   |
 
 > [!NOTE]
 > Under **Dimensjonsmedlemsområder** kan en node inneholde 1:_n_ dimensionsmedlemsområder. Du kan sette inn dimensjonsmedlems-ID-er som ennå ikke finnes som dimensjonsmedlemmer. Denne fremgangsmåten gjør hierarkiet fleksibelt for fremtiden.  
@@ -297,9 +297,10 @@ Alle ledere vil potensielt kunne få tilgang til svært sensitive forretningsdat
 
 En ny **Brukere**-hurtigfane er tilgjengelig i hierarkidesigneren. Her kan du sette inn én eller flere bruker-ID-er på hver node i hierarkiet.
 
-|                 | Brukere            | Dimensjonsmedlemsområder   |                         |
+**Brukere og dimensjonsmedlemsområder**
+
+|   Noder         |   Bruker-ID        |   Fra-dimensjonsmedlem   |   Til dimensjonsmedlem   |
 |-----------------|------------------|---------------------------|-------------------------|
-| **Noder**       | **Bruker-ID**      | **Fra dimensjonsmedlem** | **Til dimensjonsmedlem** |
 | Organisasjon    | Benjamin, Claire |                           |                         |
 | &nbsp;&nbsp;Administrator         | April            |                           |                         |
 | &nbsp;&nbsp;&nbsp;&nbsp;Finans   | Charlotte           | CC002                     | CC003                   |

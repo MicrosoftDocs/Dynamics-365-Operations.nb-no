@@ -2,11 +2,9 @@
 title: Funksjoner som er fjernet eller avskrevet i Dynamics 365 Finance
 description: Dette emnet beskriver funksjoner som er fjernet eller som er planlagt for fjerning fra Dynamics 365 Finance.
 author: roschlom
-manager: AnnBe
 ms.date: 02/08/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: roschlom
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 14428491383883c1fc2a8cdcd1975e1f1cb71b40
-ms.sourcegitcommit: e9d19f25e64cf4d1c1d07c8031a7081454a6f79e
+ms.openlocfilehash: 5a8f5dbc52eab78697de0d3a48d8cceb42c36540
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "5474069"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5836919"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Funksjoner som er fjernet eller avskrevet i Dynamics 365 Finance
 
@@ -39,7 +37,7 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 
 ### <a name="lcs-repository-as-a-storage-option-for-electronic-reporting-configurations"></a>LCS-repositorium som lagringsalternativ for elektroniske rapporteringskonfigurasjoner
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Erstattes med det nye globale RCS-repositoriet (Regulatory Configuration Service) |
 | **Erstattet med en annen funksjon?**   | Ja |
@@ -51,7 +49,7 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 
 ### <a name="vat-declaration-cz-and-control-statement-export-cz-electronic-reporting-formats-for-czech-republic"></a>"MVA-deklarering (CZ)" og "Kontrolloppgaveeksport (CZ)" Formater for elektronisk rapportering for Den tsjekkiske republikk
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Erstattes med nye formater |
 | **Erstattet med en annen funksjon?**   | Ja |
@@ -61,7 +59,7 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 
 ### <a name="ledger-transaction-export-format-be-electronic-reporting-format-and-respective-ledger-transaction-export-be-model-for-belgium"></a>"Format for eksport av finanstransaksjon (BE)" Elektronisk rapporteringsformat og tilsvarende "modell for eksport av finanstransaksjon (BE)" for Belgia
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Erstattet med nytt ER-format under modellen "Standard revisjonsfil (SAF-T)".  |
 | **Erstattet med en annen funksjon?**   | Ja |
@@ -71,7 +69,7 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 
 ### <a name="vat-100-report-for-the-united-kingdom-in-ssrs-format"></a>"VAT 100"-rapport for Storbritannia i SSRS-format
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Erstattet med nytt ER-format – "Mva-deklarering Excel (UK)"-formatet under "Mva-deklareringsmodell".  |
 | **Erstattet med en annen funksjon?**   | Ja |
@@ -83,7 +81,7 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 
 ### <a name="internet-explorer-11-support-for-dynamics-365-is-deprecated"></a>Internet Explorer 11-støtte for Dynamics 365 er avskrevet
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Fra og med desember 2020 er Microsoft Internet Explorer 11-støtte for alle Dynamics 365-produkter avskrevet, og Internet Explorer 11 støttes ikke etter august 2021.<br><br>Dette vil påvirke kunder som bruker Dynamics 365-produkter som er utformet for bruk via et Internet Explorer 11-grensesnitt. Etter august 2021 støttes ikke Internet Explorer 11 for slike Dynamics 365-produkter. |
 | **Erstattet med en annen funksjon?**   | Vi anbefaler at kundene går over til Microsoft Edge.|
@@ -95,7 +93,7 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 
 ### <a name="polish-ssrs-reports-sales-vat-register-purchase-vat-register-eu-summary-vat-register--feature-reference-pl-00014"></a>Polske SSRS-rapporter: register for utgående mva, register for inngående mva, sammendrag av mva-register for EU – funksjonsreferanser PL-00014
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Ikke lovpålagt.  |
 | **Erstattet med en annen funksjon?**   | Ja (Excel-format for standard revisjonsfil med mva-deklarering - JPK_VDEK) |
@@ -107,7 +105,7 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 
 ### <a name="norwegian-standard-main-accounts"></a>Norske standard hovedkontoer
 
-|   |  |
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Utform på nytt  |
 | **Erstattet med en annen funksjon?**   | Ja (erstattet med programspesifikke parametere i ER-formatet) |
@@ -118,7 +116,8 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 ## <a name="features-removed-or-deprecated-in-the-finance-1007-release"></a>Fjernede eller avskrevne funksjoner i Finance 10.0.7
 
 ### <a name="workflow-request-change-dialog-box-no-longer-includes-user-selection-drop-down-list"></a>Dialogboksen Endring av arbeidsflytforespørsel inneholder ikke lenger en rullegardinliste for brukervalg
-|   |  |
+
+| &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Endret til funksjonen med kontogruppevalg.  |
 | **Erstattet med en annen funksjon?**   | Ja |

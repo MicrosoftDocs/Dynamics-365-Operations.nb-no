@@ -1,12 +1,10 @@
 ---
-title: Konfigurere tillegget for elektronisk fakturering i RCS (Regulatory Configuration Services)
-description: Dette emnet beskriver hvordan du konfigurerer tillegget for elektronisk fakturering i Dynamics 365 Regulatory Configuration Services (RCS).
+title: Konfigurere elektronisk fakturering i RCS (Regulatory Configuration Services)
+description: Dette emnet beskriver hvordan du konfigurerer elektronisk fakturering i Dynamics 365 Regulatory Configuration Services (RCS).
 author: gionoder
-manager: AnnBe
-ms.date: 01/28/2021
+ms.date: 03/29/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,34 +15,32 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 99fac9a42dc2b180c220612c66fe753d43e5bd7f
-ms.sourcegitcommit: 543772ee97efe215cf6f2ec6e092cc1568919f20
+ms.openlocfilehash: 9958091db4a3d7ce0b625e5adc8e2a6b37878618
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "5592628"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840250"
 ---
-# <a name="configure-the-electronic-invoicing-add-on-in-regulatory-configuration-services-rcs"></a>Konfigurere tillegget for elektronisk fakturering i RCS (Regulatory Configuration Services)
+# <a name="configure-electronic-invoicing-in-regulatory-configuration-services-rcs"></a>Konfigurere elektronisk fakturering i RCS (Regulatory Configuration Services)
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/banner.md)]
+Dette emnet inneholder informasjon om konfigurasjonsfunksjonene i elektronisk fakturering i Dynamics 365 Regulatory Configuration Services (RCS).
 
-Dette emnet inneholder informasjon om konfigurasjonsfunksjonene i tillegget for elektronisk fakturering i Dynamics 365 Regulatory Configuration Services (RCS).
-
-Via konfigurasjonsfunksjonene hjelper tillegget for elektronisk fakturering deg med å oppfylle forretningsmessige og forskriftsmessige krav til elektroniske fakturaer uten at du trenger å bruke koding. I scenarioer der elektroniske fakturaer må godkjennes elektronisk av en webtjeneste, hjelper konfigurasjonsfunksjonene deg også med å oppfylle kravene til utveksling av meldinger med en webtjenester, uten å gjøre noen kode.
+Via konfigurasjonsfunksjonene hjelper elektronisk fakturering deg med å oppfylle forretningsmessige og forskriftsmessige krav til elektroniske fakturaer uten at du trenger å bruke koding. I scenarioer der elektroniske fakturaer må godkjennes elektronisk av en webtjeneste, hjelper konfigurasjonsfunksjonene deg også med å oppfylle kravene til utveksling av meldinger med en webtjenester, uten å gjøre noen kode.
 
 ## <a name="electronic-reporting"></a>Elektronisk rapportering
 
-Elektronisk rapportering (ER) støtter tillegget for elektronisk fakturering.
+Elektronisk rapportering (ER) støtter elektronisk fakturering.
 
-Datamodelltilordningen og formatene er konfigurerbare komponenter som opprettes og vedlikeholdes gjennom ER og brukes i tillegget for elektronisk fakturering. ER-formatdesigneren er verktøyet for oppretting og vedlikehold av filformater. Den brukes til å konfigurere funksjonene for elektronisk fakturering.
+Datamodelltilordningen og formatene er konfigurerbare komponenter som opprettes og vedlikeholdes gjennom ER og brukes i elektronisk fakturering. ER-formatdesigneren er verktøyet for oppretting og vedlikehold av filformater. Den brukes til å konfigurere funksjonene for elektronisk fakturering.
 
 Hvis du vil ha mer informasjon, se [Oversikt over elektronisk rapportering (ER)](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
 
 ## <a name="electronic-invoicing-features"></a>Elektronisk fakturering-funksjoner
 
-Funksjonene for elektronisk fakturering genererer elektroniske fakturaer via tillegget for elektronisk fakturering. De omfatter konfigurasjonsregler og bruker dem til å behandle data som Microsoft Dynamics 365 Finance og Dynamics 365 Supply Chain Management sender til tillegget for elektronisk fakturering og til elektroniske fakturaer.
+Funksjonene for elektronisk fakturering genererer elektroniske fakturaer via elektronisk fakturering. De omfatter konfigurasjonsregler og bruker dem til å behandle data som Microsoft Dynamics 365 Finance og Dynamics 365 Supply Chain Management sender til elektronisk fakturering og til elektroniske fakturaer.
 
 Funksjonene støtter også scenarioer der samsvar med filformatspesifikasjoner er nødvendig, og utdataene er en frittstående elektronisk fil. I de fleste tilfeller publiseres filformatspesifikasjonene av skattemyndighetene.
 
@@ -81,13 +77,13 @@ Følgende tabell viser funksjonene for elektronisk fakturering som for øyeblikk
 
 Funksjonene for elektronisk fakturering består av følgende grupper av konfigurerbare komponenter:
 
-- **Formater** – Ved bruk av formater kan du konfigurere hva det elektroniske fakturerings tillegget må generere når et elektronisk dokument blir til en elektronisk faktura. Formater inkluderer formatkonfigurasjonen for den elektroniske fakturaen og for filer og meldinger som brukes til å sende forespørsler og motta svar når kommunikasjon med en ekstern webtjeneste er nødvendig.
-- **Handlinger** – Handlinger lar deg konfigurere hvordan tillegget for elektronisk fakturering genererer transformasjonen av et elektronisk dokument som Finance og Supply Chain Management sendte til en elektronisk faktura.
-- **Gjeldende regler** – Med gjeldende regler kan du konfigurere konteksten som tillegget for elektronisk fakturering må vurdere å behandle en elektronisk fakturering-funksjon.
-- **Variabler** – Variabler lar deg konfigurere støtten for oppbygging av konfigurasjonslogikken. Variabler kan fungere som inndata for verdier for å utføre en bestemt handling. Alternativt kan de fungere som en utveksling av verdier mellom Finance og Supply Chain Management og tillegget for elektronisk fakturering.
-- **Elektronisk dokumentmodelltilordning** – Med den elektroniske dokumentmodelltilordningen kan du konfigurere ER-modelltilordningen. Modelltilordningen definerer datatilordningen til den abstrakte fakturaen som er integrert i tillegget for elektronisk fakturering når elektroniske dokumenter sendes.
+- **Formater** – Ved bruk av formater kan du konfigurere hva elektronisk fakturering må generere når et elektronisk dokument blir til en elektronisk faktura. Formater inkluderer formatkonfigurasjonen for den elektroniske fakturaen og for filer og meldinger som brukes til å sende forespørsler og motta svar når kommunikasjon med en ekstern webtjeneste er nødvendig.
+- **Handlinger** – Handlinger lar deg konfigurere hvordan elektronisk fakturering genererer transformasjonen av et elektronisk dokument som Finance og Supply Chain Management sendte til en elektronisk faktura.
+- **Gjeldende regler** – Med gjeldende regler kan du konfigurere konteksten som elektronisk fakturering må vurdere å behandle en elektronisk fakturering-funksjon.
+- **Variabler** – Variabler lar deg konfigurere støtten for oppbygging av konfigurasjonslogikken. Variabler kan fungere som inndata for verdier for å utføre en bestemt handling. Alternativt kan de fungere som en utveksling av verdier mellom Finance og Supply Chain Management og elektronisk fakturering.
+- **Elektronisk dokumentmodelltilordning** – Med den elektroniske dokumentmodelltilordningen kan du konfigurere ER-modelltilordningen. Modelltilordningen definerer datatilordningen til den abstrakte fakturaen som er integrert i elektronisk fakturering når elektroniske dokumenter sendes.
 - **Fakturakontekstmodell** – Med fakturakontekstmodellen kan du konfigurere ER-fakturakontekstmodellen og definere konteksten til en elektronisk faktureringsfunksjon.
-- **Svartyper** – Svartyper lar deg konfigurere hva tillegget for elektronisk fakturering må oppdatere i Finance og Supply Chain Management som et resultat av den elektroniske fakturabehandlingen.
+- **Svartyper** – Svartyper lar deg konfigurere hva elektronisk fakturering må oppdatere i Finance og Supply Chain Management som et resultat av den elektroniske fakturabehandlingen.
 
 ### <a name="formats"></a>Formater
 
@@ -237,7 +233,7 @@ Funksjonsversjoner av elektronisk fakturering følger en livssyklus med opptil t
 
 - **Utkast** – Hvis en funksjonsversjon har denne statusen, kan du redigere konfigurasjonsattributtene og alle artefaktene (for eksempel filformatkonfigurasjoner).
 - **Fullfør** – Hvis en funksjonsversjon har denne statusen, er den publisert til det globale repositoriet som er tilknyttet organisasjonen. Du kan ikke lenger redigere funksjonsversjonen eller noen av ER-komponentene.
-- **Publisert** – Hvis en funksjonsversjon har denne statusen, er den publisert i tillegget for elektronisk fakturering. Du kan ikke lenger redigere funksjonsversjonen eller noen av ER-komponentene.
+- **Publisert** – Hvis en funksjonsversjon har denne statusen, er den publisert i elektronisk fakturering. Du kan ikke lenger redigere funksjonsversjonen eller noen av ER-komponentene.
 
 ### <a name="feature-configurations"></a>Funksjonskonfigurasjoner
 
@@ -266,14 +262,14 @@ Gjennom programoppsettet kan du konfigurere delen av en elektronisk fakturerings
 
 I RCS bruker du kommandoen **Distribuer** til å målutgi en versjon av en elektronisk faktureringsfunksjon. Velg **Distribuer**, og velg deretter ett av følgende alternativer for å definere målet for distribusjonen: 
 
-- **Servicemiljø** – Når målet for distribusjonen er servicemiljøet, blir versjonen av den elektroniske faktureringsfunksjonen publisert i servicemiljøet. Tillegget for elektronisk fakturering er da klart til å motta og behandle elektroniske dokumenter som Finance og Supply Chain Management sender.
+- **Servicemiljø** – Når målet for distribusjonen er servicemiljøet, blir versjonen av den elektroniske faktureringsfunksjonen publisert i servicemiljøet. Elektronisk fakturering er da klar til å motta og behandle elektroniske dokumenter som Finance og Supply Chain Management sender.
 - **Tilkoblet program** – Når målet for distribusjonen er det tilkoblede programmet, skrives konfigurasjonen som følger med programoppsettet, i forekomsten Finance og Supply Chain Management som tidligere er tilknyttet.
 
 Bare versjoner av elektronisk fakturering-funksjon med statusen **Fullført** kan distribueres til et servicemiljø eller et tilkoblet program.
 
 ### <a name="removing-feature-versions"></a>Fjerne funksjonsversjoner
 
-I RCS bruker du kommandoen **Fjern distribusjon** til å fjerne en bestemt versjon av den elektroniske faktureringsfunksjonen fra et servicemiljø i tillegget for elektronisk fakturering.
+I RCS bruker du kommandoen **Fjern distribusjon** til å fjerne en bestemt versjon av den elektroniske faktureringsfunksjonen fra et servicemiljø i elektronisk fakturering.
 
 > [!IMPORTANT]
 > Kommandoen **Fjern distribusjon** fungerer bare i servicemiljøer. Den fjerner ikke versjoner av elektronisk fakturering-funksjoner fra tilkoblede programmer.

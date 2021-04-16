@@ -2,11 +2,9 @@
 title: Opprette en fasilitetsavtale for garantibrevet
 description: Denne oppgaven oppretter en bankfasilitetsavtale for å behandle et garantibrev.
 author: panolte
-manager: AnnBe
 ms.date: 11/10/2016
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b9c93a76bc7e29cb98834b9028748330710a4cef
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: e01012df3a5d4b11f332048947ec83962c8b2efd
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5225470"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5834818"
 ---
 # <a name="create-a-bank-facility-agreement-for-the-letter-of-guarantee"></a>Opprette en fasilitetsavtale for garantibrevet
 

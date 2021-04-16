@@ -1,8 +1,7 @@
 ---
 title: Finne informasjon ved hjelp av oppslag
-description: Mange felt har oppslag som kan hjelpe deg å finne riktig og ønsket verdi. Flere forbedringer er lagt til oppslag som gjør disse kontrollene mer brukervennlige og gjør brukere mer produktive. I dette emnet du vil lære mer om disse nye oppslagsfunksjonene og får flere nyttige tips for bruke oppslag i systemet på best mulig måte.
+description: I dette emnet får du lære mer om oppslagsfunksjoner, og du får flere nyttige tips for å bruke oppslag i systemet på best mulig måte.
 author: jasongre
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6ae5f31c2cc46bf395acfbd053168e88aa69ebdc
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: adb8e1a0fef93fdd66a4cbac82689ff7a19aca4a
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5566300"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5754782"
 ---
 # <a name="find-information-by-using-lookups"></a>Finne informasjon ved hjelp av oppslag
 
