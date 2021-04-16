@@ -2,11 +2,9 @@
 title: Redusere dagene på abonnementsgebyr
 description: Hvis du vil redusere antall dager for en eksisterende abonnementsavgift, kan du opprette en ny transaksjon der du fjerner tidsperioden som ikke lenger skal være del av abonnementsavgiftsintervallet.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMASubscriptionTable
 audience: Application User
@@ -17,39 +15,39 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 65cd852ca3ce0446550f9ac148a14bbc6bcae500
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 5e8158c99d2447835f3656027fd73d7c22121536
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5234783"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5836092"
 ---
-# <a name="reduce-the-days-on-subscription-fees"></a><span data-ttu-id="7de4e-103">Redusere dagene på abonnementsgebyr</span><span class="sxs-lookup"><span data-stu-id="7de4e-103">Reduce the days on subscription fees</span></span> 
+# <a name="reduce-the-days-on-subscription-fees"></a><span data-ttu-id="cf528-103">Redusere dagene på abonnementsgebyr</span><span class="sxs-lookup"><span data-stu-id="cf528-103">Reduce the days on subscription fees</span></span> 
 
 [!include [banner](../includes/banner.md)]
 
 
-<span data-ttu-id="7de4e-104">Hvis du vil redusere antall dager for en eksisterende abonnementsavgift, kan du opprette en ny transaksjon der du fjerner tidsperioden som ikke lenger skal være del av abonnementsavgiftsintervallet.</span><span class="sxs-lookup"><span data-stu-id="7de4e-104">To reduce the number of days of an existing subscription fee, you can create a new transaction in which you remove the period of time that should no longer be part of the subscription fee interval.</span></span>
+<span data-ttu-id="cf528-104">Hvis du vil redusere antall dager for en eksisterende abonnementsavgift, kan du opprette en ny transaksjon der du fjerner tidsperioden som ikke lenger skal være del av abonnementsavgiftsintervallet.</span><span class="sxs-lookup"><span data-stu-id="cf528-104">To reduce the number of days of an existing subscription fee, you can create a new transaction in which you remove the period of time that should no longer be part of the subscription fee interval.</span></span>
 
-## <a name="reduce-the-days-on-a-subscription-fee"></a><span data-ttu-id="7de4e-105">Redusere dager på en abonnementsavgift</span><span class="sxs-lookup"><span data-stu-id="7de4e-105">Reduce the days on a subscription fee</span></span>
+## <a name="reduce-the-days-on-a-subscription-fee"></a><span data-ttu-id="cf528-105">Redusere dager på en abonnementsavgift</span><span class="sxs-lookup"><span data-stu-id="cf528-105">Reduce the days on a subscription fee</span></span>
 
-1.  <span data-ttu-id="7de4e-106">Klikk på **Servicestyring** \> **Felles** \> **Serviceabonnementer** \> **Alle serviceabonnementer**.</span><span class="sxs-lookup"><span data-stu-id="7de4e-106">Click **Service management** \> **Common** \> **Service subscriptions** \> **All service subscriptions**.</span></span> <span data-ttu-id="7de4e-107">Velg serviceabonnementet, og klikk **Abonnementsavgifter** i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="7de4e-107">Select the service subscription, and on the Action Pane, click **Subscription fees**</span></span>
+1.  <span data-ttu-id="cf528-106">Klikk på **Servicestyring** \> **Felles** \> **Serviceabonnementer** \> **Alle serviceabonnementer**.</span><span class="sxs-lookup"><span data-stu-id="cf528-106">Click **Service management** \> **Common** \> **Service subscriptions** \> **All service subscriptions**.</span></span> <span data-ttu-id="cf528-107">Velg serviceabonnementet, og klikk **Abonnementsavgifter** i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="cf528-107">Select the service subscription, and on the Action Pane, click **Subscription fees**</span></span>
 
-2.  <span data-ttu-id="7de4e-108">I feltet **Abonnementstype** velger du **Reduksjonsdager**.</span><span class="sxs-lookup"><span data-stu-id="7de4e-108">In the **Subscription type** field, select **Reduction days**.</span></span>
+2.  <span data-ttu-id="cf528-108">I feltet **Abonnementstype** velger du **Reduksjonsdager**.</span><span class="sxs-lookup"><span data-stu-id="cf528-108">In the **Subscription type** field, select **Reduction days**.</span></span>
 
-3.  <span data-ttu-id="7de4e-109">Bruk feltet **Fra dato** og feltet **Til dato** til å definere datointervallet for abonnementsavgiften du vil fjerne fra abonnementsavgiftsperioden, og klikk deretter **OK**.</span><span class="sxs-lookup"><span data-stu-id="7de4e-109">Use the **From date** field and the **To date** fields to define the date interval of the subscription fee that you want to remove from the subscription fee period, and then click **OK**.</span></span>
+3.  <span data-ttu-id="cf528-109">Bruk feltet **Fra dato** og feltet **Til dato** til å definere datointervallet for abonnementsavgiften du vil fjerne fra abonnementsavgiftsperioden, og klikk deretter **OK**.</span><span class="sxs-lookup"><span data-stu-id="cf528-109">Use the **From date** field and the **To date** fields to define the date interval of the subscription fee that you want to remove from the subscription fee period, and then click **OK**.</span></span>
 
-<span data-ttu-id="7de4e-110">Hvis du vil vise transaksjonene som ble opprettet, i skjemaet **Abonnement**, klikker du **Gebyrtransaksjoner**.</span><span class="sxs-lookup"><span data-stu-id="7de4e-110">To view the transaction that was created, in the **Subscription** form, click **Fee transactions**.</span></span>
+<span data-ttu-id="cf528-110">Hvis du vil vise transaksjonene som ble opprettet, i skjemaet **Abonnement**, klikker du **Gebyrtransaksjoner**.</span><span class="sxs-lookup"><span data-stu-id="cf528-110">To view the transaction that was created, in the **Subscription** form, click **Fee transactions**.</span></span>
 
-## <a name="example"></a><span data-ttu-id="7de4e-111">Eksempel</span><span class="sxs-lookup"><span data-stu-id="7de4e-111">Example</span></span>
+## <a name="example"></a><span data-ttu-id="cf528-111">Eksempel</span><span class="sxs-lookup"><span data-stu-id="cf528-111">Example</span></span>
 
-<span data-ttu-id="7de4e-112">Hvis en periode for abonnementstransaksjon går fra 1. januar til 31. januar, og du vil redusere perioden med 10 dager, oppretter du en ny transaksjon der perioden er 1. januar til 10. januar.</span><span class="sxs-lookup"><span data-stu-id="7de4e-112">If a subscription transaction period runs from January 1 to January 31, and you want to reduce the period by 10 days, create a new transaction in which the reduction period is January 1 to January 10.</span></span> <span data-ttu-id="7de4e-113">(Reduksjonsperioden kan også være 5. januar til 15. januar eller en vilkårlig periode på ti dager.)</span><span class="sxs-lookup"><span data-stu-id="7de4e-113">(The reduction period could also be January 5 to January 15, or any other ten day period).</span></span>
+<span data-ttu-id="cf528-112">Hvis en periode for abonnementstransaksjon går fra 1. januar til 31. januar, og du vil redusere perioden med 10 dager, oppretter du en ny transaksjon der perioden er 1. januar til 10. januar.</span><span class="sxs-lookup"><span data-stu-id="cf528-112">If a subscription transaction period runs from January 1 to January 31, and you want to reduce the period by 10 days, create a new transaction in which the reduction period is January 1 to January 10.</span></span> <span data-ttu-id="cf528-113">(Reduksjonsperioden kan også være 5. januar til 15. januar eller en vilkårlig periode på ti dager.)</span><span class="sxs-lookup"><span data-stu-id="cf528-113">(The reduction period could also be January 5 to January 15, or any other ten day period).</span></span>
 
-<span data-ttu-id="7de4e-114">I tillegg hvis **Fra dato** i reduksjonsperioden er 21. januar (31 minus 10), kan du angi **Til dato** til en hvilken som helst dato etter 31. januar, og det fjernes automatisk 10 dager fra avgiftstransaksjonsperioden.</span><span class="sxs-lookup"><span data-stu-id="7de4e-114">Also, if the **From date** on the reduction period is January 21 (31 minus 10), you could set the **To date** to any date after January 31, and 10 days will still be removed from the fee transaction period.</span></span>
+<span data-ttu-id="cf528-114">I tillegg hvis **Fra dato** i reduksjonsperioden er 21. januar (31 minus 10), kan du angi **Til dato** til en hvilken som helst dato etter 31. januar, og det fjernes automatisk 10 dager fra avgiftstransaksjonsperioden.</span><span class="sxs-lookup"><span data-stu-id="cf528-114">Also, if the **From date** on the reduction period is January 21 (31 minus 10), you could set the **To date** to any date after January 31, and 10 days will still be removed from the fee transaction period.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="7de4e-115">Se også</span><span class="sxs-lookup"><span data-stu-id="7de4e-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="cf528-115">Se også</span><span class="sxs-lookup"><span data-stu-id="cf528-115">See also</span></span>
 
-[<span data-ttu-id="7de4e-116">Reduksjonsdager – eksempel</span><span class="sxs-lookup"><span data-stu-id="7de4e-116">Reduction days example</span></span>](reduction-days-example.md)
+[<span data-ttu-id="cf528-116">Reduksjonsdager – eksempel</span><span class="sxs-lookup"><span data-stu-id="cf528-116">Reduction days example</span></span>](reduction-days-example.md)
 
   
 
