@@ -2,11 +2,9 @@
 title: Hvordan arbeidere bruker grensesnittet for produksjonsutførelse
 description: Dette emnet beskriver hvordan du bruker grensesnittet for produksjonsutførelse fra synspunktet til en arbeider.
 author: johanhoffmann
-manager: tfehr
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgProductionFloorExecution
 audience: Application User
@@ -15,17 +13,16 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 38bc07d37b5c51f143846110c87cff9952d52b0e
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 02046da5e2487e203c9658c255f95a7c403d0b10
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500796"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5814662"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Hvordan arbeidere bruker grensesnittet for produksjonsutførelse
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Grensesnittet for produksjonsutførelse er optimalisert for berøringsinteraksjon. Utformingen gir visuell kontrast som oppfyller tilgjengelighetskravene for Shop Floor-miljøer. Den har alle de samme funksjonene som jobbkortenheten. Det gjør imidlertid også at flere jobber kan startes parallelt fra en jobbliste. (Denne funksjonen er også kjent som *bunting av jobber*). I tillegg kan arbeidere fra en jobbliste åpne en veiledning som ble opprettet i Microsoft Dynamics 365-veiledningen. På denne måten kan de finne en visuell veiledning i en HoloLens.
 
@@ -90,7 +87,7 @@ I **Min maskin**-fanen kan arbeidere velge et aktivum som er koblet til en maski
 
 1. **Innstillinger** – Velg tannhjulikonet for å åpne en dialogboks der du kan velge hvilke tellere du vil vise for det valgte maskinaktivumet. Verdiene for disse tellerne vises øverst i **Aktivastyring**-fanen. På **Innstillinger**-menyen (som vises på skjermbildet nedenfor) kan du aktivere opptil fire tellere. For hver teller du vil aktivere, bruker du oppslagsfeltet øverst i flisen til å velge en teller. Oppslagsfeltet viser alle tellerne som er knyttet til aktivumet som er valgt øverst på **Aktivastyring**-siden. Angi at hver teller skal overvåke **Aggregert**-verdien eller den siste **Faktisk**-verdien for telleren. Hvis du for eksempel angir en teller som sporer hvor mange timer maskinen har kjørt, setter du den til **Aggregert**. Hvis du angir at en teller skal måle sist oppdaterte temperatur eller trykk, setter du den til **Faktisk**. Velg **OK** for å lagre innstillingene og lukke dialogboksen.
 
-    ![Min maskin-fanen](media/pfei-my-machine-tab-settings.png "Min maskin-fanen")
+    ![Innstillingene på Min maskin-fanen](media/pfei-my-machine-tab-settings.png "Innstillingene på Min maskin-fanen")
 
 1. **Be om vedlikehold** – Velg denne knappen for å åpne en dialogboks der du kan opprette en melding. Du kan gi en beskrivelse og en merknad. En bruker av Supply Chain Management blir gjort oppmerksom på forespørselen og kan deretter konvertere meldingen til en arbeidsordre for vedlikehold.
 1. **Registrer nedetid** – Velg denne knappen for å åpne en dialogboks der du kan registrere nedetid for maskin. Du kan velge en årsakskode og angi en dato / et tidsrom for nedetiden. Registreringen av nedetid for maskin brukes til å beregne effektiviteten til maskinaktivumet.

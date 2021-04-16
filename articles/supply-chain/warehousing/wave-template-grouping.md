@@ -2,11 +2,9 @@
 title: Gruppering av bølgemal
 description: Bølgemalgruppering gjør det mulig for systemet å bruke bølgemaloppsett til å fastslå, basert på kriterier du definerer, hvordan de skal dele frigitte linjer og tilordne dem til nye eller eksisterende bølger. Denne funksjonen kan være nyttig på lagre der bølger opprettes basert på bestemte kriterier, men der ledere foretrekker å opprette bølger automatisk i stedet for å bruke dem manuelt.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWaveTableListPage, WHSWaveTemplateTable
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 520338683443105ffd1df7fc2569cd95a5f50879
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: a591624f6611148abe4888e67d8d3a9bbea9cd27
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5245136"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5838040"
 ---
 # <a name="wave-template-grouping"></a>Gruppering av bølgemal
 

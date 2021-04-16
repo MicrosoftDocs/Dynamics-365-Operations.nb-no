@@ -1,12 +1,10 @@
 ---
 title: Vedlikeholdsplaner
 description: Dette emnet beskriver vedlikeholdsplaner i Aktivastyring.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 01/20/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetMaintenancePlan, EntAssetObjectType, EntAssetCounterType, EntAssetWorkOrderLifecycleModel
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 09ae8b0ce56b08db0ba400b19676bd698c90a561
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 143b9337dc9ca530383575e0f9bb16e4313ce96b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500820"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5839613"
 ---
 # <a name="maintenance-plans"></a>Vedlikeholdsplaner
 
@@ -195,8 +193,6 @@ Illustrasjonen nedenfor viser et eksempel på vedlikeholdsplaner for et aktivum 
 
 ## <a name="counter-based-maintenance-enhancements"></a>Tellerbaserte vedlikeholdsforbedringer
 
-[!INCLUDE [preview-banner-section](../../../includes/preview-banner-section.md)]
-
 Funksjonen *Tellerbaserte vedlikeholdsforbedringer* innfører følgende funksjonalitet:
 
 - Alternativet for å sette inn en teller med verdien *0* (null) automatisk når et anleggsmiddel blir opprettet. Dette alternativet kan være nyttig når du bruker prediktivt vedlikehold som er basert på tellere. Når funksjonen *Tellerbaserte vedlikeholdsforbedringer* ikke brukes, må tellere med verdien *0* (null) settes inn manuelt.
@@ -209,7 +205,7 @@ Funksjonen *Tellerbaserte vedlikeholdsforbedringer* innfører følgende funksjon
 Før du kan bruke denne funksjonen, må den være aktivert i systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
 
 - **Modul:** *Aktivastyring*
-- **Funksjonsnavn:** *(Forhåndsversjon) Tellerbaserte vedlikeholdsforbedringer*
+- **Funksjonsnavn:** *Tellerbaserte vedlikeholdsforbedringer*
 
 ### <a name="create-and-initialize-counters-when-an-asset-is-created"></a>Opprette og initialisere tellere når et aktivum opprettes
 

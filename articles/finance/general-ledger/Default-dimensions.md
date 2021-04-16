@@ -2,11 +2,9 @@
 title: Finansdimensjoner og postering
 description: Når du planlegger og definerer kontoplanen, må du vurdere hvordan de ulike komponentene fungerer sammen når du posterer et dokument eller en journal. Disse komponentene inkluderer kontostrukturer, avanserte regler og belastningsfordeling og faste dimensjoner. Dette emnet beskriver hva hver enkelt komponent er og hvordan komponentene fungerer sammen.
 author: aprilolson
-manager: AnnBe
 ms.date: 08/04/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerChartofAccounts,DimensionDetails
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 086270fda7da17c60239c7c86e9ff4ab3f31ef77
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 7783c22659c5a2b070648c82a8b72e49e17b8e34
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5225253"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823866"
 ---
 # <a name="financial-dimensions-and-posting"></a>Finansdimensjoner og postering 
 

@@ -2,11 +2,9 @@
 title: Evaluere den opprinnelige forutsigelsesmodellen for kundebetaling (forhåndsversjon)
 description: Dette emnet beskriver fremgangsmåten du kan bruke for å forstå forutsigelsesmodellen for kundebetaling, og vurdere effektiviteten.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 9cbe0308902071c066d18ce71e6e33422207e8ba
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 56ec9795f0eb8b15dd00578bf35739eaa9e3d086
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5245598"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5818634"
 ---
 # <a name="evaluate-the-initial-customer-payment-prediction-model-preview"></a>Evaluere den opprinnelige forutsigelsesmodellen for kundebetaling (forhåndsversjon)
 
@@ -68,7 +66,7 @@ Hvis du vil ha en dypere analyse av resultatene, er et godt utgangspunkt å gå 
 
 Du kan utvide disse dataene på følgende måte.
 
-|                          | Forventet Til planlagt tid | Forventet Forsinket | Forventet Svært sent |
+| &nbsp;                   | Forventet Til planlagt tid | Forventet Forsinket | Forventet Svært sent |
 |--------------------------|-------------------|----------------|---------------------|
 | Faktisk betaling Til planlagt tid   | **71**            | 0              | 21                  |
 | Faktisk forsinket betaling      | 5                 | **0**          | 27                  |

@@ -2,11 +2,9 @@
 title: Kassefunksjoner for Norge
 description: Dette emnet gir en oversikt over hvilke kasse-funksjoner som er tilgjengelige for Norge. Det inneholder også retningslinjer for hvordan du konfigurerer funksjonen.
 author: EvgenyPopovMBS
-manager: vastrup
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailPosPermissionGroup, RetailFunctionalityProfile, RetailFormLayout, RetailParameters
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Application update 4
-ms.openlocfilehash: cd8cd0d643d9279d2deba705642a3df9dde2381b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: ae681841442e79c7515a3f06fab674081ba096d0
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5225693"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5798805"
 ---
 # <a name="cash-register-functionality-for-norway"></a>Kassefunksjoner for Norge
 

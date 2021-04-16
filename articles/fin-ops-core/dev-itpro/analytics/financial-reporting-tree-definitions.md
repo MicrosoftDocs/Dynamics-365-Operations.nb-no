@@ -1,27 +1,26 @@
 ---
 title: Definisjoner av rapporteringstre i finansrapporter
 description: Denne artikkelen beskriver rapporteringstredefinisjoner. En rapporteringstredefinisjon er en rapportkomponent som definerer strukturen til en organisasjon.
-author: ShylaThompson
-manager: AnnBe
-ms.date: 10/07/2019
+author: jinniew
+ms.date: 04/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: roschlom
 ms.custom: 57592
 ms.assetid: 747faa47-9a23-4277-bc11-8d0a1267c3a4
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 367df467d20fb7c60821c9de1f86758196f4faf3
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 42612a14b81f78199aa5678d6f8525e4bd87ca8c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5568781"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5819944"
 ---
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Definisjoner av rapporteringstre i finansrapporter
 
@@ -74,7 +73,7 @@ Følg fremgangsmåten nedenfor for å opprette en rapporteringstredefinisjon.
     | Inkluder/tegnposisjon       | Dette avsnittet viser dimensjonene som er definert i de økonomiske dataene, og viser antall tegn i den lengste verdien som er definert for hver dimensjon. Merk av for en dimensjon for å inkludere denne dimensjonen i hierarkiet for rapporteringstreet. |
     | Segmenter hierarki og områder     | Dette avsnittet viser dimensjonshierarkiet. Du kan flytte dimensjonene i listen for å endre rapporteringsrekkefølgen. Du kan angi en rekke verdier i hver dimensjon i feltene **Fra dimensjon** og **Til dimensjon**. Hvis du ikke angir et område, settes alle dimensjonsverdier inn i rapporteringstreet.<blockquote>[!NOTE] Hvis du bruker flere dimensjoner, blir bare dimensjonskombinasjoner det er postert til, returnert i resultatene.</blockquote> |
 
-    Hvis du vil vise et skjermbilde som viser et eksempel på dialogboksen **Sette inn rapporteringsenheter fra dimensjoner**, kan du se avsnittet "Eksempel på Sett inn rapporteringsenheter fra dialogboksen Dimensjoner" senere i denne artikkelen.
+    For en illustrasjon som viser et eksempel på dialogboksen **Sette inn rapporteringsenheter fra dimensjoner**, kan du se avsnittet "Eksempel på Sett inn rapporteringsenheter fra dialogboksen Dimensjoner" senere i denne artikkelen.
 
 5. Hvis du vil opprette flere segmenter (for eksempel ved å dele opp ett segment i to kortere segmenter), klikker du den aktuelle posisjonen i feltet **Tegnposisjon**, og deretter klikker du **Del segmenter**.
 6. Hvis du vil slå sammen to segmenter til ett segment, klikker du en av segmentboksene for å slå sammen, og deretter klikker du **Kombiner segmenter**.
@@ -186,23 +185,23 @@ Her er strukturen for rapporteringsenhetene i følgende rapporteringstre:
 - Rapporteringsenhetene på det laveste nivået (Home Sales, Auto Sales, Client Services, and Operations) representerer avdelinger i de økonomiske dataen. Disse rapporteringsenhetene er i det skyggelagte området i diagrammet.
 - Sammendragsenhetene på høyere nivå summerer informasjon fra detaljenhetene.
 
-[![ContosoEntertainmentSummaryReportStructure](./media/contosoentertainmentsummaryreportstructure.png)](./media/contosoentertainmentsummaryreportstructure.png)
+[![Rapportstruktur for Contoso-sammendrag – eksempel 1](./media/contosoentertainmentsummaryreportstructure.png)](./media/contosoentertainmentsummaryreportstructure.png)
 
 ### <a name="reporting-unit-structure--example-2"></a>Struktur for rapporteringsenhet – Eksempel 2
 
 I diagrammet nedenfor har rapporteringstre en organisasjonsstruktur som er delt inn etter forretningsfunksjon.
 
-[![summaryofallunitscontoso](./media/summaryofallunitscontoso.png)](./media/summaryofallunitscontoso.png)
+[![Rapportstruktur for Contoso-sammendrag – eksempel 2](./media/summaryofallunitscontoso.png)](./media/summaryofallunitscontoso.png)
 
 ### <a name="example-of-the-insert-reporting-units-from-dimensions-dialog-box"></a>Eksempel på dialogboksen Sett inn rapporteringsenheter fra dimensjoner
 
 Illustrasjonen nedenfor viser et eksempel på dialogboksen **Sett inn rapporteringsenheter fra dimensjoner**. I dette eksemplet returnerer resultatene kombinasjonen av forretningsenheter, kostsentre og avdelinger.
 
-[![InsertReportingUnits](./media/insertreportingunits.png)](./media/insertreportingunits.png)
+[![Sett inn rapporteringsenheter](./media/insertreportingunits.png)](./media/insertreportingunits.png)
 
 Den resulterende rapporteringstredefinisjonen er sortert etter forretningsenhet, deretter etter kostsenter og til slutt etter avdeling. Dimensjonen for den femte rapporteringsenheten er **Forretningsenhet = \[001\], Kostsenter =\[\], Avdeling = \[022\]**, og identifiserer en rapporteringsenhet for kontoer som er spesifikke for forretningsenhet 001 og avdeling 022.
 
-[![Rapporteringstre](./media/reportingtree-1024x646.png)](./media/reportingtree.png)
+[![Illustrasjon av rapporteringstreet](./media/reportingtree-1024x646.png)](./media/reportingtree.png)
 
 ### <a name="examples-of-data-roll-up"></a>Eksempler på opprulling av data
 
@@ -210,11 +209,11 @@ Eksemplene nedenfor viser mulig informasjon som brukes i en rapporteringstredefi
 
 #### <a name="example-1"></a>Eksempel 1
 
-[![MutliCompanyRollUp](./media/mutlicompanyrollup.png)](./media/mutlicompanyrollup.png)
+[![Opprulling av flere firmaer](./media/mutlicompanyrollup.png)](./media/mutlicompanyrollup.png)
 
 #### <a name="example-2"></a>Eksempel 2
 
-[![CrossCompanyDepartmentRollUp](./media/crosscompanydepartmentrollup.png)](./media/crosscompanydepartmentrollup.png)
+[![Opprullet avdeling på tvers av firmaer](./media/crosscompanydepartmentrollup.png)](./media/crosscompanydepartmentrollup.png)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

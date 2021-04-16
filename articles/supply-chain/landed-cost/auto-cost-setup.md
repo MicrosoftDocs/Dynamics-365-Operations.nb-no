@@ -2,7 +2,6 @@
 title: Automatisk kosnadsoppsett
 description: Dette emnet beskriver hvordan du definerer kostnadsregler for forskjellige innkommende sjøreisenivåer. På grunnlag av disse reglene beregner systemet kostnadene og legger dem til automatisk. Brukerne behøver derfor ikke å legge til kostnadene manuelt.
 author: sherry-zheng
-manager: tfehr
 ms.date: 01/21/2021
 ms.topic: article
 ms.prod: ''
@@ -16,17 +15,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-21
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 86dcbfbe6e00e7324e29541da6d682794e7487b3
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 2e9135019323db74a4dca9343d315cbbf9683e32
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5501156"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5841965"
 ---
 # <a name="auto-costs-setup"></a>Automatisk kosnadsoppsett
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Du kan bruke siden **Automatiske kostnader** til å definere kostnadsregler for forskjellige kostnadsområder (for eksempel sjøreiser, forsendelsescontainere, elegioer, bestillinger, varer eller overføringsordrelinjer). På grunnlag av reglene, og feltene brukerne velger når de oppretter poster for ett av kostnadsområdene, beregner systemet kostnadene og legger dem til automatisk. Brukerne behøver derfor ikke å legge til kostnadene manuelt.
 
