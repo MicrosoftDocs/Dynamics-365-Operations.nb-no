@@ -2,11 +2,9 @@
 title: Utligne en delvis leverandørbetaling som har rabatter på kreditnotaer
 description: Denne artikkelen leder deg gjennom et scenario der en kreditnota utlignes mot en faktura.
 author: abruer
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a9a23ef6bff5f135e7f4189add776aeed18fbe79
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 6e634796c7143c14a872c721f298f3ab28cbddd6
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5227310"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5827848"
 ---
 # <a name="settle-a-partial-vendor-payment-that-has-discounts-on-credit-notes"></a>Utligne en delvis leverandørbetaling som har rabatter på kreditnotaer
 
@@ -42,10 +40,10 @@ Fabrikams leverandører gi kontantrabatter på kreditnotaer. Leverandør 3050 gi
 
 Rabattinformasjonen for kreditnotaen vises nederst på siden **Utlign åpne transaksjoner**.
 
-|                              |           |
+| Felt                        | Verdi     |
 |------------------------------|-----------|
 | Kontantrabattdato           | 13.07.2015 |
-| Kontantrabattbeløp         | 2,00      |
+| Kontantrabattbeløp         | 2.00      |
 | Bruk kontantrabatt            | Normal    |
 | Kontantrabatt brukt          | 0,00      |
 | Kontantrabattbeløp som skal brukes | 2,00      |

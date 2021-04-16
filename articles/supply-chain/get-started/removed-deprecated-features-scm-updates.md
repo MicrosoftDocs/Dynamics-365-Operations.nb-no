@@ -2,11 +2,9 @@
 title: Funksjoner som er fjernet eller avskrevet i Dynamics 365 Supply Chain Management
 description: Dette emnet beskriver funksjoner som er fjernet eller som er planlagt for fjerning i Dynamics 365 Supply Chain Management.
 author: kamaybac
-manager: tfehr
 ms.date: 12/07/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 9c91ffcb03793db2f2ef3a9631ab549ace3f735d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 2e41510f1f5810dde9683235384f89008f888471
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5259097"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5821279"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-supply-chain-management"></a>Funksjoner som er fjernet eller avskrevet i Dynamics 365 Supply Chain Management
 
@@ -35,6 +33,18 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 > [!NOTE]
 > Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekniske referanserapporter](https://docs.microsoft.com/dynamics/s-e/). Du kan sammenligne de ulike versjonene av disse rapportene for å lære om objekter som er endret eller fjernet i hver versjon av Finance and Operations-apper.
 
+## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10018-release"></a>Fjernede eller avskrevne funksjoner i Supply Chain Management 10.0.18
+
+### <a name="dynamics-365-for-finance-and-operations---warehousing-the-warehouse-app"></a>Dynamics 365 for Finance and Operations - Warehousing (lagerappen)
+
+|   |  |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Fra april 2021 er *Dynamics 365 for Finance and Operations - Warehousing* (lagerappen) avskrevet, og den støttes ikke etter april 2022. Den erstattes nå av *mobilappen Lagerstyring*, som ble lansert sammen med versjon 10.0.17 av Supply Chain Management. Den nye appen er en fullstendig erstatning, men bruker samme underliggende rammeverk, noe som gjør det enkelt å migrere. Om nødvendig kan de to appene brukes side ved side for å hjelpe brukerne med å justere gradvis når de lærer å bruke den nye appen.<br><br>For mer informasjon om den nye mobilappen Lagerstyring kan du se [Mobilappen Lagerstyring](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application) og [Installere og koble til mobilappen Lagerstyring](../warehousing/install-configure-warehouse-management-app.md). |
+| **Erstattet med en annen funksjon?**   | Ja, erstattet av den nye mobilappen Lagerstyring. |
+| **Berørte produktområder**         | Supply Chain Management - Warehouse-app |
+| **Distribusjonsalternativ**              | Skyen og lokalt |
+| **Status**                         | Avskrevet. Lagerappen vil motta støtte med feilrettinger og sikkerhetskorrigeringer, men funksjonsforbedringer vil ikke lenger være tilgjengelig. Etter april 2022 vil den gamle lagerappen ikke lenger støttes, og kunder blir bedt om å flytte til den nye mobilappen Lagerstyring. Den gamle lagerappen fjernes deretter fra Microsoft Store og Google Play-butikk.  |
+
 ## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10015-release"></a>Fjernede eller avskrevne funksjoner i Supply Chain Management 10.0.15
 
 ### <a name="internet-explorer-11-support-for-dynamics-365-is-deprecated"></a>Internet Explorer 11-støtte for Dynamics 365 er avskrevet
@@ -42,7 +52,7 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 |   |  |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Fra og med desember 2020 er Microsoft Internet Explorer 11-støtte for alle Dynamics 365-produkter avskrevet, og Internet Explorer 11 støttes ikke etter august 2021.<br><br>Dette vil påvirke kunder som bruker Dynamics 365-produkter som er utformet for bruk via et Internet Explorer 11-grensesnitt. Etter august 2021 støttes ikke Internet Explorer 11 for slike Dynamics 365-produkter. |
-| **Erstattet med en annen funksjon?**   | Det anbefales at kundene går over til Microsoft Edge.|
+| **Erstattet med en annen funksjon?**   | Vi anbefaler at kundene går over til Microsoft Edge.|
 | **Berørte produktområder**         | Alle Dynamics 365-produkter |
 | **Distribusjonsalternativ**              | Alle|
 | **Status**                         | Avskrevet. Internet Explorer 11 støttes ikke etter august 2021.|

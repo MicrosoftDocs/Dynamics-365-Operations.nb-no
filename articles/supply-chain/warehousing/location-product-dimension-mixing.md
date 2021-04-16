@@ -2,11 +2,9 @@
 title: Kombinasjon av produktdimensjoner for lokasjon
 description: Dette emnet inneholder informasjon om kombinasjon av produktdimensjoner for lokasjon. Denne lokasjonsprofilfunksjonaliteten bidrar til å forbedre lokasjonsstyringen når produktvarianter eller produkter som har dimensjoner, brukes, for eksempel i motebransjen. Den lar deg bestemme om konfigurasjoner, farger, stiler og størrelser kan blandes for en bestemt lokasjonsprofil, eller om bare én av disse dimensjonene eller en kombinasjon av dem kan legges til samme lokasjon.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationProfile, WHSReservationHierarchy, WHSInventTableReservationHierarchy
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: b0309c7a7240d7cac9e5b5724a028f2dc70199e4
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 28f59052a74b6d8b263c7a8a8b6061f2c4b34c89
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5217035"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5831296"
 ---
 # <a name="location-product-dimension-mixing"></a>Kombinasjon av produktdimensjoner for lokasjon
 
@@ -206,9 +204,9 @@ Du oppretter en bestilling som har tre linjer: to linjer for samme produktnummer
 
 1. Velg **Lagre**.
 
-### <a name="receive-purchase-order-lines-in-the-warehouse-app"></a>Motta bestillingslinjer i lagerappen
+### <a name="receive-purchase-order-lines-in-the-warehouse-management-mobile-app"></a>Motta bestillingslinjer i mobilappen Lagerstyring
 
-1. Logg på lagerappen som en bruker som er aktivert for lager *24*.
+1. Logg på mobilappen Lagerstyring som en bruker som er aktivert for lager *24*.
 1. Velg **Inngående**-menyen.
 1. Velg **PO-linjemottak**.
 1. Velg **PONUM**-feltet, og angi bestillingsnummeret.

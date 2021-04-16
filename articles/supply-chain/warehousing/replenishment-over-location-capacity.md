@@ -2,11 +2,9 @@
 title: Etterfylling over lokasjonskapasitet
 description: Dette emnet inneholder informasjon om funksjonen Etterfylling over lokasjonskapasitet. Denne funksjonen aktiverer alt etterfyllingsarbeid som vil være nødvendig å opprette for dagen, og administrerer tilgjengelighet for etterfyllingsarbeidet for å sikre at plukklokasjonen ikke går ut av beholdning eller går over kapasitet.
 author: mirzaab
-manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSReplenishmentTemplates, WHSLocationLimit
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 1e4acfea3484acaafd982d0f22c2303f921f909f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 309df56671bf258e1669ae6d5393de01e2b500f0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5228399"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823245"
 ---
 # <a name="replenishment-over-location-capacity"></a>Etterfylling over lokasjonskapasitet
 
@@ -241,7 +239,7 @@ Avhengig av beholdningsantallene kan arbeidsantallene som opprettes, variere noe
 
 #### <a name="on-hand-inventory-license-plate-id"></a>Nummerskilt-ID for lagerbeholdning
 
-Senere i dette scenariet skal du bruke lagerappen (eller en emulator), der du må identifisere nummerskiltet for å fullføre plukke- og etterfyllingsscenariene.
+Senere i dette scenariet skal du bruke mobilappen Lagerstyring (eller en emulator), der du må identifisere nummerskiltet for å fullføre plukke- og etterfyllingsscenariene.
 
 Følg denne fremgangsmåten for å finne ID-ene til nummerskiltene som du vil trenge senere.
 
@@ -266,7 +264,7 @@ Du vil utføre etterfylling av lagerlokasjon for de to første arbeids-ID-ene. A
 
 #### <a name="replenishment"></a>Etterfylling
 
-1. Logg på lagerappen som en bruker på lageret *61*. (Angi *61* som bruker-ID og *1* som passord.)
+1. Logg på mobilappen Lagerstyring som en bruker som er aktivert i lager *61*. (Angi *61* som bruker-ID og *1* som passord.)
 1. Gå til **Beholdning \> Etterfylling**.
 
     Du blir bedt om å fullføre det første etterfyllingsarbeidet. Varenummeret, antallet og lokasjonen det skal plukkes fra, vises.
@@ -296,7 +294,7 @@ Før nok beholdning er plukket fra lokasjonen for å få den under terskelen for
 
 Før den gjenstående etterfyllingsarbeidsoppgaven kan fullføres, må plukklokasjonen tømmes til et nivå der blokkeringen for det gjenstående etterfyllingsarbeidet kan oppheves. Med andre ord kan ikke summen av lagerbeholdningen på lokasjonen og etterfyllingsantallet overskride verdien for **Overflytantall**. Når denne summen er mindre enn overløpsantallet, blir blokkeringen av det gjenstående etterfyllingsarbeidet opphevet.
 
-1. Logg på lagerappen som en bruker på lageret *61*. (Angi *61* som bruker-ID og *1* som passord.)
+1. Logg på mobilappen Lagerstyring som en bruker som er aktivert i lager *61*. (Angi *61* som bruker-ID og *1* som passord.)
 1. Gå til **Utgående \> Salgsplukking**.
 1. Angi den første arbeids-ID-en for salgsordre 1.
 

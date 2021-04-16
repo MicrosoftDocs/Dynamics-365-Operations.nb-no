@@ -2,11 +2,9 @@
 title: Kundeordrer på salgssted (POS)
 description: Dette emnet gir informasjon om kundeordrer på salgssted (POS). Kundeordrer er også kjent som spesialbestillinger. Emnet inneholder en beskrivelse av relaterte parametere og flyter for transaksjonen.
 author: josaw1
-manager: AnnBe
 ms.date: 01/06/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: RetailFunctionalityProfile
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: f60e07c1faae9bc3cb6d3c843e72e6000cff7591
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: a310c7067b399fb35ccc8a1b17d8bd6822a27a62
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5220516"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5821014"
 ---
 # <a name="customer-orders-in-point-of-sale-pos"></a>Kundeordrer på salgssted (POS)
 
@@ -61,7 +59,8 @@ I Commerce versjon 10.0.12 og nyere kan organisasjoner definere om lager- eller 
 
 Når du arbeider med kundeordrer i POS, må du vurdere noen av innstillingene til butikkanalen. Disse innstillingene finner du på siden **Butikker** i Commerce Headquarters.
 
-- **Lager** – Dette feltet angir lageret som brukes til å oppfylle ordrer som er konfigurert for forsendelse fra butikken.
+- **Lager** – Dette feltet angir lageret som skal brukes ved avvikling av lager for kontantoppdretting og hentingsordrer for kunder som er knyttet til denne butikken. Den beste fremgangsmåten er å oppmuntre til bruk av unike lagre for hver butikkkanal, for å unngå konflikt mellom forretningslogikkproblemer i hele butikkene.
+- **Forsendelseslager** – Dette feltet angir lageret som skal brukes ved avvik i lageret for kundeordrer som skal sendes fra den valgte butikken. Hvis funksjonen **Mulighet til å angi lokasjoner, som Forsendelse eller Plukking, som er aktivert i en oppfyllelsesgruppe**, er aktivert i miljøet ditt, kan POS-brukere velge et bestemt lager som skal sendes fra i POS, i stedet for å velge en butikk det skal sendes fra. Når denne funksjonen er aktivert, er derfor ikke forsendelseslageret lenger i bruk, siden brukeren vil plukke det bestemte lageret for å levere ordren fra når ordren opprettes.
 - **Tilordning for oppfyllelsesgruppe** – Velg denne knappen (i kategorien **Oppsett** i handlingsruten) for å koble til oppfyllelsesgruppene det refereres til, for å vise alternativer for hentelokasjoner eller forsendelsesopprinnelse når kundeordrer opprettes i POS.
 - **Bruk destinasjonsbasert avgift** – Dette alternativet angir om forsendelsesadressen brukes til å fastslå avgiftsgruppen som er brukt på ordrelinjer som er sendt til kundens adresse.
 - **Bruk kundebasert avgift** – Dette alternativet angir om mva-gruppen som er definert for kundens leveringsadresse, brukes til å definere avgift for kundeordrer som opprettes i POS for levering til kundens hjem.

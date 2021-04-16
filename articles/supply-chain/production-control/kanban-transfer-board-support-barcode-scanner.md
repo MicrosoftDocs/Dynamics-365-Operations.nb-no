@@ -2,11 +2,9 @@
 title: Støtte for Kanban-overføringskort for strekkodelesere
 description: Kanban-overføringskortet støtter skannerinndata fra et kontrollprogram for strekkodeskanner for å velge, starte, fylle ut og tømme en kanban-jobb.
 author: ChristianRytt
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanBoardTransferJob
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8b6d65430d09c293fd5bca032b8b0e88c971d5a9
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 2a7073fb5d77e2d11569e86b92433864371f0e1d
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5246099"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5825873"
 ---
 # <a name="kanban-transfer-board-support-for-barcode-scanners"></a>Støtte for Kanban-overføringskort for strekkodelesere
 
