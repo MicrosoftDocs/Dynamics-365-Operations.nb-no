@@ -2,11 +2,9 @@
 title: Konfigurere farlige materialer
 description: Dette emnet forklarer hvordan du konfigurerer dataene som kreves for å klassifisere varer som farlige materialer. Når du oppretter en salgsordre som inkluderer en vare som er klassifisert som et farlig materiale, genererer systemet dokumentasjon for farlig materiale for den aktuelle salgsordren når den sendes.
 author: dasani-madipalli
-manager: tfehr
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,17 +12,16 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 0f0b706568048480cf5bf85cfcb4388666432212
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 5cf323272926936ba6397a9f98cfff8d8a31d091
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5266109"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5820352"
 ---
 # <a name="set-up-hazardous-materials"></a>Konfigurere farlige materialer
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Hvis du vil bruke funksjonaliteten for farlig materiale, må du først konfigurere dataene som er nødvendige for å klassifisere varer som farlig materiale. Når du deretter oppretter en salgsordre som inkluderer en vare som er klassifisert som et farlig materiale, genererer systemet dokumentasjon for farlig materiale for den aktuelle salgsordren når den sendes.
 

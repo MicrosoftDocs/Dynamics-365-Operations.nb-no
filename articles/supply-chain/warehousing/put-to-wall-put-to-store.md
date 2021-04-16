@@ -2,11 +2,9 @@
 title: Plasser til vegg – plasser til butikk
 description: Dette emnet inneholder informasjon om funksjonen for Plasser til vegg – plasser til butikk. Med denne funksjonaliteten kan du håndtere scenarier der du må konsolidere et produkt i et oppsamlingsområde for forhåndspakker basert på konfigurerbare kriterier. Det bidrar til å redusere plukktiden fordi det tillater plukking til et enkelt målnummerskilt og kan bruke flere plasseringsposisjoner enn klyngeplukking.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationType, WHSLocationProfile, WHSLocation, WHSPackProfile, WHSWaveStepCode, WHSOutboundSortTemplate, WHSPostMethod, WHSWaveTemplateTable, WHSLocDirTable, WHSWorkClass, WHSWorkTemplateTable
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: e2dcfa18af457ea21618704bafa2ed81c615d952
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: cf34a61d0b3f784b5a424473588d05bf8703635c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5228519"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823293"
 ---
 # <a name="put-to-wall---put-to-store"></a>Plasser til vegg – plasser til butikk
 
@@ -524,7 +522,7 @@ Nå som alt lager er plassert til sorteringslokasjonen, må den sorteres til den
 
 Hvis sorteringsposisjoner skal lukkes manuelt, må alternativet **Sorteringsposisjonen automatisk lukking** for den utgående sorteringsmalen settes til *Nei*, og det må gjøres en lukking før lageret kan flyttes til rampedøren. Stillinger kan lukkes på forskjellige måter:
 
-- Via lagerappen:
+- Via mobilappen Lagerstyring:
 
     - Brukeren kan skanne én av varene som allerede finnes på posisjonen, og deretter velge **Lukk** for å lukke posisjonen.
     - Hvis brukeren skanner en container som allerede er sortert container, vises det en feilmelding. Brukeren kan imidlertid fremdeles fortsette å lukke posisjonen.

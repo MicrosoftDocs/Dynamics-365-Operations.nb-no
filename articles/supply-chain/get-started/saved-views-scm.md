@@ -2,11 +2,9 @@
 title: Standard lagrede visninger for Supply Chain Management
 description: Dette emnet beskriver standard lagrede visninger som er tilgjengelige, og forklarer hvordan du aktiverer dem.
 author: kamaybac
-manager: annbe
 ms.date: 02/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -16,17 +14,16 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 08002a1ff40c8baca475bc19a1220fe4c4b23bcd
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 1636d37b40c826fb9b922636d68c56963a791af5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500700"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5821255"
 ---
 # <a name="standard-saved-views-for-supply-chain-management"></a>Standard lagrede visninger for Supply Chain Management
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Microsoft Dynamics 365 Supply Chain Management har flere lagrede visninger du kan aktivere og bruke etter behov. Noen av disse standard lagrede visningene er optimalisert og navngitt for en bestemt rolle eller oppgave (for eksempel «Kvalitetskontroll» eller «Mottak»). Andre er optimalisert slik at de bare inneholder feltene og innstillingene som Microsoft-bruksstatistikk angir brukes oftest av kunder. Disse lagrede visningene kalles vanligvis *forenklede* visninger. Dette emnet beskriver standard lagrede visninger som er tilgjengelige, og forklarer hvordan du aktiverer og tilpasser dem.
 
@@ -82,14 +79,16 @@ Tabellen nedenfor beskriver de lagrede visningene som er tilgjengelige for modul
 
 ## <a name="saved-views-for-the-production-control-module"></a>Lagrede visninger for modulen Produksjonskontroll
 
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
 Tabellen nedenfor beskriver de lagrede visningene som er tilgjengelige for modulen Produksjonskontroll.
 
 | Side | Visningsnavn | Vis beskrivelse | Funksjonsnavn |
 |---|---|---|---|
-| Side for stykkliste for produksjonsordre | Forenklet | Denne forenklede visningen omfatter bare feltene som brukes oftest. Dermed får du en raskere oversikt og en effektivisert arbeidsprosess. | Lagrede visninger for produksjonskontroll |
-| Side for produksjonsordredetaljer | Forenklet | Denne forenklede visningen omfatter bare feltene som brukes oftest. Dermed får du en raskere oversikt og en effektivisert arbeidsprosess. | Lagrede visninger for produksjonskontroll |
-| Side for plukkliste for produksjonsordre | Forenklet | Denne forenklede visningen omfatter bare feltene som brukes oftest. Dermed får du en raskere oversikt og en effektivisert arbeidsprosess. | Lagrede visninger for produksjonskontroll |
-| Listeside for produksjonsordrer | Forenklet | Denne forenklede visningen omfatter bare feltene som brukes oftest. Dermed får du en raskere oversikt og en effektivisert arbeidsprosess. | Lagrede visninger for produksjonskontroll |
+| Side for stykkliste for produksjonsordre | Forenklet | Denne forenklede visningen omfatter bare feltene som brukes oftest. Dermed får du en raskere oversikt og en effektivisert arbeidsprosess. | (Forhåndsversjon) Lagrede visninger for produksjonskontroll |
+| Side for produksjonsordredetaljer | Forenklet | Denne forenklede visningen omfatter bare feltene som brukes oftest. Dermed får du en raskere oversikt og en effektivisert arbeidsprosess. | (Forhåndsversjon) Lagrede visninger for produksjonskontroll |
+| Side for plukkliste for produksjonsordre | Forenklet | Denne forenklede visningen omfatter bare feltene som brukes oftest. Dermed får du en raskere oversikt og en effektivisert arbeidsprosess. | (Forhåndsversjon) Lagrede visninger for produksjonskontroll |
+| Listeside for produksjonsordrer | Forenklet | Denne forenklede visningen omfatter bare feltene som brukes oftest. Dermed får du en raskere oversikt og en effektivisert arbeidsprosess. | (Forhåndsversjon) Lagrede visninger for produksjonskontroll |
 
 ## <a name="saved-views-for-the-sales-and-marketing-module"></a>Lagrede visninger for modulen Salg og markedsføring
 

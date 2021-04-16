@@ -2,7 +2,6 @@
 title: Behandling av varer i transitt
 description: Dette emnet beskriver hvordan du arbeider med ordrer for varer i transitt. Når en ordre eller sjøreise er satt opp til å bruke behandling av varer i transitt, kan varer faktureres før de er mottatt på lageret for forbruk.
 author: sherry-zheng
-manager: tfehr
 ms.date: 01/13/2021
 ms.topic: article
 ms.prod: ''
@@ -16,17 +15,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 77e30f8679c9422e895432c023997b5ff4768ebd
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 9a1316de8d79f3ce34bb28812993d096cbd0c2ce
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500410"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823415"
 ---
 # <a name="goods-in-transit-processing"></a>Behandling av varer i transitt
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Dette emnet beskriver hvordan du arbeider med ordrer for varer i transitt. Denne typen ordre brukes bare av modulen **Netto innkjøpspris**. Når en ordre eller sjøreise er satt opp til å bruke behandling av varer i transitt, trenger du ikke vente til varer er mottatt på lager før du kan fakturere dem. I stedet faktureres varene når de går ut av leverandørens lager eller opprinnelseshavn, og de økonomiske kostnadene gjenkjennes når sjøreisen starter. Ved hjelp av denne funksjonaliteten kan du ta eierskap av lageret på riktig måte, ettersom varer ofte blir eiendommen til organisasjonen din når de forlater forsendelseshavnen.
 
@@ -135,7 +133,7 @@ Netto innkjøpspris legger til følgende arbeidsopprettingsprosesser i menyeleme
 
 Konfigurasjonsinnstillingene for disse prosessene ligner innstillingene for [arbeidsopprettingsprosessene for mottak og plassering av bestillinger](https://technet.microsoft.com/library/dn553216.aspx). Prosessen *Mottak og plassering av vare for varer i transitt* legger også til følgende felt.
 
-- **Aktiver forsendelsescontainer fullført** – Hvis dette alternativet er satt til *Ja*, gir lagerappen et tilleggsalternativ som kalles **Forsendelsescontainer fullført** når plasseringsarbeidet er fullført. Når det er merket av for dette alternativet, blir arbeideren bedt om å bekrefte at containeren er fullført. På dette tidspunktet behandles alle korte mottak som en undertransaksjon.
+- **Aktiver forsendelsescontainer fullført** – Hvis dette alternativet er satt til *Ja*, gir mobilappen Lagerstyring et tilleggsalternativ som kalles **Forsendelsescontainer fullført** når plasseringsarbeidet er fullført. Når det er merket av for dette alternativet, blir arbeideren bedt om å bekrefte at containeren er fullført. På dette tidspunktet behandles alle korte mottak som en undertransaksjon.
 
 ### <a name="location-directives"></a>Lokasjonsdirektiver
 

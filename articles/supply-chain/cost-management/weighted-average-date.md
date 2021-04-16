@@ -2,11 +2,9 @@
 title: Dato avveid gjennomsnitt
 description: Dato avveid gjennomsnitt er en lagermodell basert på avveid gjennomsnitt-prinsippet, hvor frigivelser fra lageret verdsettes til gjennomsnittsverdien av varene som er mottatt på lageret for hver separate dag i lageravslutningsperioden.
 author: AndersGirke
-manager: tfehr
 ms.date: 10/25/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f82a7b9f21d27ff368bc7c5824055bf29ce20e8a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 563fa291754f7f795fa64d530de49b9fe4083c56
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5235490"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5821303"
 ---
 # <a name="weighted-average-date"></a>Dato avveid gjennomsnitt
 

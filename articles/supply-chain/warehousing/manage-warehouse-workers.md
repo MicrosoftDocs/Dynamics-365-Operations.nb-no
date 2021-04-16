@@ -1,12 +1,10 @@
 ---
 title: Administrere lagerarbeidere
-description: Denne artikkelen beskriver hvordan du kan bruke lagerappen for å kontrollere og overvåke arbeidet som utføres av ansatte i lagrene.
+description: Denne artikkelen beskriver hvordan du kan bruke mobilappen Lagerstyring for å kontrollere og overvåke arbeidet som utføres av ansatte i lagrene.
 author: perlynne
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmWorker, InventLocation, WHSLaborStandards, WHSWorker, WHSWorkTable, WHSWorkTableListPage, WHSResetUserPassword
 audience: Application User
@@ -17,18 +15,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 18dbcf32f85bca51bf48e5ed8c64fedc99f66082
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 9f5676879f631fce9c9c674250a07723131906fa
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5216841"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5818974"
 ---
 # <a name="manage-warehouse-workers"></a>Administrere lagerarbeidere
 
 [!include [banner](../includes/banner.md)]
 
-Denne artikkelen beskriver hvordan du kan bruke lagerappen for å kontrollere og overvåke arbeidet som utføres av ansatte i lagrene.
+Denne artikkelen beskriver hvordan du kan bruke mobilappen Lagerstyring for å kontrollere og overvåke arbeidet som utføres av ansatte i lagrene.
 
 Hvis du bruker funksjonaliteten i Lagerstyring, refereres alle lagerarbeideroperasjoner til som *arbeid*. Arbeid, for eksempel plukking, flytting og telling av lagerbeholdningen, registreres ved hjelp av mobilenheter. Før en lagermedarbeider kan utføre arbeidet må han eller hun være knyttet til en arbeider i Personale. Hver **arbeider**-konto kan ha flere lagerarbeidsbrukere tilknyttet. Disse arbeidsbrukerene kan arbeide i forskjellige lagre og kan ha ulike tilgangsnivåer til de ulike mobilenhetsmenyene. Du kan tenke på lagerarbeidsbrukerne som flere pålogginger for den valgte arbeideren. Hver arbeidsbruker har et standardlager, og bestemte arbeidsflyter vises av menyeelementene som er tilgjengelig for denne arbeidsbrukeren. 
 

@@ -2,11 +2,9 @@
 title: Angi ulike dimensjoner for pakking og lagring
 description: Dette emnet viser hvordan du angir hvilken prosess (pakking, lagring eller nestet pakking) hver angitte dimensjon skal brukes til.
 author: mirzaab
-manager: tfehr
 ms.date: 01/28/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResPhysicalProductDimensions, WHSPhysDimUOM
 audience: Application User
@@ -16,17 +14,16 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-28
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: aa5cbf807e809238489c539d3ad8c0bc34421774
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: e997f8bccde7856303d8b3c6407143598ccc6030
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5501300"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5818926"
 ---
 # <a name="set-different-dimensions-for-packing-and-storage"></a>Angi ulike dimensjoner for pakking og lagring
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Noen varer pakkes eller lagres på en slik måte at du kanskje må spore fysiske dimensjoner ulikt for hver av flere forskjellige prosesser. Med funksjonen *Dimensjoner for pakking av produkt* kan du definere én eller flere dimensjonstyper for hvert produkt. Hver dimensjonstype gir et sett med fysiske mål (vekt, bredde, dybde og høyde) og fastsetter prosessen der de fysiske målingsverdiene gjelder. Når denne funksjonen er aktivert, støtter systemet følgende dimensjonstyper:
 
@@ -64,15 +61,15 @@ Legg til en ny fysisk dimensjon for et produkt ved å gjøre følgende:
 1. Velg produktet med **Varenummer** *A0001*.
 1. I handlingsruten i åpner du fanen **Administrer lager**, og i gruppen **Lager** velger du **Fysiske produktdimensjoner**.
 1. Siden **Fysiske produktdimensjoner** åpnes. Velg **Ny** i handlingsruten for å legge til en ny dimensjon i rutenettet med følgende innstillinger:
-    - **Fysisk dimensjonstype** – *Pakking*
-    - **Fysisk enhet** – *stk.*
-    - **Vekt** – *4*
-    - **Vektenhet** – *kg*
-    - **Dybde** – *3*
-    - **Høyde** – *4*
-    - **Bredde** – *3*
-    - **Lengde** – *cm*
-    - **Volumenhet** – *cm3*
+    - **Fysisk dimensjonstype** - *Pakking*
+    - **Fysisk enhet** - *stk.*
+    - **Vekt** - *4*
+    - **Vektenhet** - *kg*
+    - **Dybde** - *3*
+    - **Høyde** - *4*
+    - **Bredde** - *3*
+    - **Lengde** - *cm*
+    - **Volumenhet** - *cm3*
 
 **Volum**-feltet beregnes automatisk basert på innstillingene for **Dybde**, **Høyde** og **Bredde**.
 
@@ -80,20 +77,20 @@ Legg til en ny fysisk dimensjon for et produkt ved å gjøre følgende:
 
 Gå til **Lagerstyring \> Oppsett \> Containere \> Containertyper**, og opprett en ny post med følgende innstillinger:
 
-- **Containertypekode** – *Kort eske*
-- **Beskrivelse** – *Kort eske*
-- **Maksimal nettovekt** – *50*
-- **Volum** – *144*
-- **Lengde** – *6*
-- **Bredde** – *6*
-- **Høyde** – *4*
+- **Containertypekode** - *Kort eske*
+- **Beskrivelse** - *Kort eske*
+- **Maksimal nettovekt** - *50*
+- **Volum** - *144*
+- **Lengde** - *6*
+- **Bredde** - *6*
+- **Høyde** - *4*
 
 #### <a name="create-a-container-group"></a>Opprette en containergruppe
 
 Gå til **Lagerstyring \> Oppsett \> Containere \> Containergrupper**, og opprett en ny post med følgende innstillinger:
 
-- **Containergruppe-ID** – *Kort eske*
-- **Beskrivelse** – *Kort eske*
+- **Containergruppe-ID** - *Kort eske*
+- **Beskrivelse** - *Kort eske*
 
 Legg til en ny linje i **Detaljer**-delen. Sett **Containertype** til *Kort eske*.
 
