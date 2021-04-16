@@ -2,11 +2,9 @@
 title: Synkronisere arbeidsordrer med prosjekt fra Field Service til Supply Chain Management
 description: Dette emnet drøfter maler og underliggende oppgave som brukes til å synkronisere arbeidsordrer med et prosjektnummer fra Dynamics 365 Field Service til Dynamics 365 Supply Chain Management.
 author: ChristianRytt
-manager: tfehr
 ms.date: 03/12/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -18,64 +16,64 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: d2364378ce8992666e374ec6f665c180d2fa1981
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d733bf3256fa1f6c572bd0aa35c228490d409bbc
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5258029"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5836500"
 ---
-# <a name="synchronize-work-orders-with-project-from-field-service-to-supply-chain-management"></a><span data-ttu-id="2592e-103">Synkronisere arbeidsordrer med prosjekt fra Field Service til Supply Chain Management</span><span class="sxs-lookup"><span data-stu-id="2592e-103">Synchronize work orders with project from Field Service to Supply Chain Management</span></span>
+# <a name="synchronize-work-orders-with-project-from-field-service-to-supply-chain-management"></a><span data-ttu-id="910b4-103">Synkronisere arbeidsordrer med prosjekt fra Field Service til Supply Chain Management</span><span class="sxs-lookup"><span data-stu-id="910b4-103">Synchronize work orders with project from Field Service to Supply Chain Management</span></span>
 
 [!include[banner](../includes/banner.md)]
 
-<span data-ttu-id="2592e-104">Dette emnet drøfter maler og underliggende oppgave som brukes til å synkronisere arbeidsordrer med et prosjektnummer fra Dynamics 365 Field Service til Dynamics 365 Supply Chain Management.</span><span class="sxs-lookup"><span data-stu-id="2592e-104">This topic discusses the templates and underlying task that are used to synchronize work orders with a project number from Dynamics 365 Field Service to Dynamics 365 Supply Chain Management.</span></span>
+<span data-ttu-id="910b4-104">Dette emnet drøfter maler og underliggende oppgave som brukes til å synkronisere arbeidsordrer med et prosjektnummer fra Dynamics 365 Field Service til Dynamics 365 Supply Chain Management.</span><span class="sxs-lookup"><span data-stu-id="910b4-104">This topic discusses the templates and underlying task that are used to synchronize work orders with a project number from Dynamics 365 Field Service to Dynamics 365 Supply Chain Management.</span></span>
 
-<span data-ttu-id="2592e-105">[![Synkronisering av forretningsprosesser mellom Supply Chain Management og Field Service](./media/FSSOprojectOW.png)](./media/FSSOprojectOW.png)</span><span class="sxs-lookup"><span data-stu-id="2592e-105">[![Synchronization of business processes between Supply Chain Management and Field Service](./media/FSSOprojectOW.png)](./media/FSSOprojectOW.png)</span></span>
+<span data-ttu-id="910b4-105">[![Synkronisering av forretningsprosesser mellom Supply Chain Management og Field Service](./media/FSSOprojectOW.png)](./media/FSSOprojectOW.png)</span><span class="sxs-lookup"><span data-stu-id="910b4-105">[![Synchronization of business processes between Supply Chain Management and Field Service](./media/FSSOprojectOW.png)](./media/FSSOprojectOW.png)</span></span>
 
-<span data-ttu-id="2592e-106">Den brukte **Arbeidsordrer med prosjekt (Field Service til Supply Chain Management)**-malen er basert på **Arbeidsordrer (Field Service til Supply Chain Management)**-malen.</span><span class="sxs-lookup"><span data-stu-id="2592e-106">The used **Work Orders with Project (Field Service to Supply Chain Management)** template is based on the **Work Orders (Field Service to Supply Chain Management)** template.</span></span> <span data-ttu-id="2592e-107">Hvis du vil ha mer informasjon, kan du se [Synkronisere arbeidsordrer i Field Service til salgsordrer i Supply Chain Management](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order).</span><span class="sxs-lookup"><span data-stu-id="2592e-107">For more information, see [Synchronize work orders in Field Service to sales orders in Supply Chain Management](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order).</span></span>
+<span data-ttu-id="910b4-106">Den brukte **Arbeidsordrer med prosjekt (Field Service til Supply Chain Management)**-malen er basert på **Arbeidsordrer (Field Service til Supply Chain Management)**-malen.</span><span class="sxs-lookup"><span data-stu-id="910b4-106">The used **Work Orders with Project (Field Service to Supply Chain Management)** template is based on the **Work Orders (Field Service to Supply Chain Management)** template.</span></span> <span data-ttu-id="910b4-107">Hvis du vil ha mer informasjon, kan du se [Synkronisere arbeidsordrer i Field Service til salgsordrer i Supply Chain Management](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order).</span><span class="sxs-lookup"><span data-stu-id="910b4-107">For more information, see [Synchronize work orders in Field Service to sales orders in Supply Chain Management](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order).</span></span>
 
-<span data-ttu-id="2592e-108">Dette emnet beskriver bare forskjellene mellom de to malene:</span><span class="sxs-lookup"><span data-stu-id="2592e-108">This topic only describes the differences between the two templates:</span></span>
-- <span data-ttu-id="2592e-109">**Arbeidsordrer med prosjekt (Field Service til Supply Chain Management)**</span><span class="sxs-lookup"><span data-stu-id="2592e-109">**Work Orders with Project (Field Service to Supply Chain Management)**</span></span>
-- <span data-ttu-id="2592e-110">**Arbeidsordrer (Field Service til Supply Chain Management)**</span><span class="sxs-lookup"><span data-stu-id="2592e-110">**Work Orders (Field Service to Supply Chain Management)**</span></span>
+<span data-ttu-id="910b4-108">Dette emnet beskriver bare forskjellene mellom de to malene:</span><span class="sxs-lookup"><span data-stu-id="910b4-108">This topic only describes the differences between the two templates:</span></span>
+- <span data-ttu-id="910b4-109">**Arbeidsordrer med prosjekt (Field Service til Supply Chain Management)**</span><span class="sxs-lookup"><span data-stu-id="910b4-109">**Work Orders with Project (Field Service to Supply Chain Management)**</span></span>
+- <span data-ttu-id="910b4-110">**Arbeidsordrer (Field Service til Supply Chain Management)**</span><span class="sxs-lookup"><span data-stu-id="910b4-110">**Work Orders (Field Service to Supply Chain Management)**</span></span>
 
-<span data-ttu-id="2592e-111">Den viktigste forskjellen er at denne malen inneholder tilordning av prosjektnummeret som er tilordnet arbeidsordren i Field Service. Dette sikrer at salgsordren som opprettes i Supply Chain Management, inneholder prosjektnummeret, og at fakturering kan skje på det relaterte prosjektet.</span><span class="sxs-lookup"><span data-stu-id="2592e-111">The main difference is that this template includes mapping of the project number assigned to the Work order in Field Service, ensuring that the Sales order created in Supply Chain Management include the project number and that invoicing can happen on the related project.</span></span> <span data-ttu-id="2592e-112">I tillegg til dette bruker malen avansert spørring og filtrering.</span><span class="sxs-lookup"><span data-stu-id="2592e-112">Besides this the template use Advanced Query and Filtering.</span></span>
+<span data-ttu-id="910b4-111">Den viktigste forskjellen er at denne malen inneholder tilordning av prosjektnummeret som er tilordnet arbeidsordren i Field Service. Dette sikrer at salgsordren som opprettes i Supply Chain Management, inneholder prosjektnummeret, og at fakturering kan skje på det relaterte prosjektet.</span><span class="sxs-lookup"><span data-stu-id="910b4-111">The main difference is that this template includes mapping of the project number assigned to the Work order in Field Service, ensuring that the Sales order created in Supply Chain Management include the project number and that invoicing can happen on the related project.</span></span> <span data-ttu-id="910b4-112">I tillegg til dette bruker malen avansert spørring og filtrering.</span><span class="sxs-lookup"><span data-stu-id="910b4-112">Besides this the template use Advanced Query and Filtering.</span></span>
 
-## <a name="templates-and-tasks"></a><span data-ttu-id="2592e-113">Maler og oppgaver</span><span class="sxs-lookup"><span data-stu-id="2592e-113">Templates and tasks</span></span>
+## <a name="templates-and-tasks"></a><span data-ttu-id="910b4-113">Maler og oppgaver</span><span class="sxs-lookup"><span data-stu-id="910b4-113">Templates and tasks</span></span>
 
-<span data-ttu-id="2592e-114">**Navnet på malen i Dataintegrasjon:**</span><span class="sxs-lookup"><span data-stu-id="2592e-114">**Name of the template in Data integration:**</span></span>
+<span data-ttu-id="910b4-114">**Navnet på malen i Dataintegrasjon:**</span><span class="sxs-lookup"><span data-stu-id="910b4-114">**Name of the template in Data integration:**</span></span>
 
-- <span data-ttu-id="2592e-115">Arbeidsordrer med prosjekt (Field Service til Supply Chain Management)</span><span class="sxs-lookup"><span data-stu-id="2592e-115">Work Orders with Project (Field Service to Supply Chain Management)</span></span>
+- <span data-ttu-id="910b4-115">Arbeidsordrer med prosjekt (Field Service til Supply Chain Management)</span><span class="sxs-lookup"><span data-stu-id="910b4-115">Work Orders with Project (Field Service to Supply Chain Management)</span></span>
 
-<span data-ttu-id="2592e-116">**Navnet på oppgaven i Dataintegrasjonprosjektet:**</span><span class="sxs-lookup"><span data-stu-id="2592e-116">**Name of the task in the Data integration project:**</span></span>
+<span data-ttu-id="910b4-116">**Navnet på oppgaven i Dataintegrasjonprosjektet:**</span><span class="sxs-lookup"><span data-stu-id="910b4-116">**Name of the task in the Data integration project:**</span></span>
 
-- <span data-ttu-id="2592e-117">WorkOrderHeader</span><span class="sxs-lookup"><span data-stu-id="2592e-117">WorkOrderHeader</span></span>
-- <span data-ttu-id="2592e-118">WorkOrderHeaderProject</span><span class="sxs-lookup"><span data-stu-id="2592e-118">WorkOrderHeaderProject</span></span>
-- <span data-ttu-id="2592e-119">WorkOrderProduct</span><span class="sxs-lookup"><span data-stu-id="2592e-119">WorkOrderProduct</span></span>
-- <span data-ttu-id="2592e-120">WorkOrderService</span><span class="sxs-lookup"><span data-stu-id="2592e-120">WorkOrderService</span></span>
+- <span data-ttu-id="910b4-117">WorkOrderHeader</span><span class="sxs-lookup"><span data-stu-id="910b4-117">WorkOrderHeader</span></span>
+- <span data-ttu-id="910b4-118">WorkOrderHeaderProject</span><span class="sxs-lookup"><span data-stu-id="910b4-118">WorkOrderHeaderProject</span></span>
+- <span data-ttu-id="910b4-119">WorkOrderProduct</span><span class="sxs-lookup"><span data-stu-id="910b4-119">WorkOrderProduct</span></span>
+- <span data-ttu-id="910b4-120">WorkOrderService</span><span class="sxs-lookup"><span data-stu-id="910b4-120">WorkOrderService</span></span>
 
-## <a name="field-service-crm-solution"></a><span data-ttu-id="2592e-121">CRM-løsning for Field Service</span><span class="sxs-lookup"><span data-stu-id="2592e-121">Field Service CRM solution</span></span>
-<span data-ttu-id="2592e-122">Feltet **Eksternt prosjekt** er lagt til arbeidsordreenheten.</span><span class="sxs-lookup"><span data-stu-id="2592e-122">The **External Project** field has been added to the Work Order entity.</span></span> <span data-ttu-id="2592e-123">Dette feltet er et oppslag, og ved å kode arbeidsordren med et prosjekt, kobles salgsordren til et prosjekt i Supply Chain Management.</span><span class="sxs-lookup"><span data-stu-id="2592e-123">This field is a lookup and buy tagging your Work Order with a project the Sales Order will then be connected to a Project within Supply Chain Management.</span></span> <span data-ttu-id="2592e-124">Når **systemstatusen** endres fra Åpen – pågår(690,970,000) til en høyere status, låses feltet **Eksternt prosjekt**, og du kan ikke legge til, fjerne eller endre verdien.</span><span class="sxs-lookup"><span data-stu-id="2592e-124">When the **System Status** changes from Open – In Progress(690,970,000) to a higher status, the **External Project** field will be locked and you can't add, remove, or change the value.</span></span>
+## <a name="field-service-crm-solution"></a><span data-ttu-id="910b4-121">CRM-løsning for Field Service</span><span class="sxs-lookup"><span data-stu-id="910b4-121">Field Service CRM solution</span></span>
+<span data-ttu-id="910b4-122">Feltet **Eksternt prosjekt** er lagt til arbeidsordreenheten.</span><span class="sxs-lookup"><span data-stu-id="910b4-122">The **External Project** field has been added to the Work Order entity.</span></span> <span data-ttu-id="910b4-123">Dette feltet er et oppslag, og ved å kode arbeidsordren med et prosjekt, kobles salgsordren til et prosjekt i Supply Chain Management.</span><span class="sxs-lookup"><span data-stu-id="910b4-123">This field is a lookup and buy tagging your Work Order with a project the Sales Order will then be connected to a Project within Supply Chain Management.</span></span> <span data-ttu-id="910b4-124">Når **systemstatusen** endres fra Åpen – pågår(690,970,000) til en høyere status, låses feltet **Eksternt prosjekt**, og du kan ikke legge til, fjerne eller endre verdien.</span><span class="sxs-lookup"><span data-stu-id="910b4-124">When the **System Status** changes from Open – In Progress(690,970,000) to a higher status, the **External Project** field will be locked and you can't add, remove, or change the value.</span></span>
 
-## <a name="template-mapping-in-data-integration"></a><span data-ttu-id="2592e-125">Maltilordning i Dataintegrering</span><span class="sxs-lookup"><span data-stu-id="2592e-125">Template mapping in Data integration</span></span>
+## <a name="template-mapping-in-data-integration"></a><span data-ttu-id="910b4-125">Maltilordning i Dataintegrering</span><span class="sxs-lookup"><span data-stu-id="910b4-125">Template mapping in Data integration</span></span>
 
-<span data-ttu-id="2592e-126">Følgende illustrasjoner viser en tilordning av malen i Dataintegrering.</span><span class="sxs-lookup"><span data-stu-id="2592e-126">The following illustrations show the template mapping in Data integration.</span></span>
+<span data-ttu-id="910b4-126">Følgende illustrasjoner viser en tilordning av malen i Dataintegrering.</span><span class="sxs-lookup"><span data-stu-id="910b4-126">The following illustrations show the template mapping in Data integration.</span></span>
 
-### <a name="work-orders-with-project-field-service-to-supply-chain-management-workorderheader"></a><span data-ttu-id="2592e-127">Arbeidsordrer med prosjekt (Field Service til Supply Chain Management): WorkOrderHeader</span><span class="sxs-lookup"><span data-stu-id="2592e-127">Work Orders with Project (Field Service to Supply Chain Management): WorkOrderHeader</span></span>
+### <a name="work-orders-with-project-field-service-to-supply-chain-management-workorderheader"></a><span data-ttu-id="910b4-127">Arbeidsordrer med prosjekt (Field Service til Supply Chain Management): WorkOrderHeader</span><span class="sxs-lookup"><span data-stu-id="910b4-127">Work Orders with Project (Field Service to Supply Chain Management): WorkOrderHeader</span></span>
 
-<span data-ttu-id="2592e-128">[![Maltilordning i Dataintegrering](./media/FSWOP1.png)](./media/FSWOP1.png)</span><span class="sxs-lookup"><span data-stu-id="2592e-128">[![Template mapping in Data integration](./media/FSWOP1.png)](./media/FSWOP1.png)</span></span>
+<span data-ttu-id="910b4-128">[![Maltilordning i Dataintegrering](./media/FSWOP1.png)](./media/FSWOP1.png)</span><span class="sxs-lookup"><span data-stu-id="910b4-128">[![Template mapping in Data integration](./media/FSWOP1.png)](./media/FSWOP1.png)</span></span>
 
-### <a name="work-orders-with-project-field-service-to-supply-chain-management-workorderheaderproject"></a><span data-ttu-id="2592e-129">Arbeidsordrer med prosjekt (Field Service til Supply Chain Management): WorkOrderHeaderProject</span><span class="sxs-lookup"><span data-stu-id="2592e-129">Work Orders with Project (Field Service to Supply Chain Management): WorkOrderHeaderProject</span></span>
+### <a name="work-orders-with-project-field-service-to-supply-chain-management-workorderheaderproject"></a><span data-ttu-id="910b4-129">Arbeidsordrer med prosjekt (Field Service til Supply Chain Management): WorkOrderHeaderProject</span><span class="sxs-lookup"><span data-stu-id="910b4-129">Work Orders with Project (Field Service to Supply Chain Management): WorkOrderHeaderProject</span></span>
 
-<span data-ttu-id="2592e-130">[![Maltilordning i Dataintegrering](./media/FSWOP2.png)](./media/FSWOP2.png)</span><span class="sxs-lookup"><span data-stu-id="2592e-130">[![Template mapping in Data integration](./media/FSWOP2.png)](./media/FSWOP2.png)</span></span>
+<span data-ttu-id="910b4-130">[![Maltilordning i Dataintegrering](./media/FSWOP2.png)](./media/FSWOP2.png)</span><span class="sxs-lookup"><span data-stu-id="910b4-130">[![Template mapping in Data integration](./media/FSWOP2.png)](./media/FSWOP2.png)</span></span>
 
-### <a name="work-orders-with-project-field-service-to-supply-chain-management-workorderproduct"></a><span data-ttu-id="2592e-131">Arbeidsordrer med prosjekt (Field Service til Supply Chain Management): WorkOrderProduct</span><span class="sxs-lookup"><span data-stu-id="2592e-131">Work Orders with Project (Field Service to Supply Chain Management): WorkOrderProduct</span></span>
+### <a name="work-orders-with-project-field-service-to-supply-chain-management-workorderproduct"></a><span data-ttu-id="910b4-131">Arbeidsordrer med prosjekt (Field Service til Supply Chain Management): WorkOrderProduct</span><span class="sxs-lookup"><span data-stu-id="910b4-131">Work Orders with Project (Field Service to Supply Chain Management): WorkOrderProduct</span></span>
 
-<span data-ttu-id="2592e-132">[![Maltilordning i Dataintegrering](./media/FSWOP3.png)](./media/FSWOP3.png)</span><span class="sxs-lookup"><span data-stu-id="2592e-132">[![Template mapping in Data integration](./media/FSWOP3.png)](./media/FSWOP3.png)</span></span>
+<span data-ttu-id="910b4-132">[![Maltilordning i Dataintegrering](./media/FSWOP3.png)](./media/FSWOP3.png)</span><span class="sxs-lookup"><span data-stu-id="910b4-132">[![Template mapping in Data integration](./media/FSWOP3.png)](./media/FSWOP3.png)</span></span>
 
-### <a name="work-orders-with-project-field-service-to-supply-chain-management-workorderservice"></a><span data-ttu-id="2592e-133">Arbeidsordrer med prosjekt (Field Service til Supply Chain Management): WorkOrderService</span><span class="sxs-lookup"><span data-stu-id="2592e-133">Work Orders with Project (Field Service to Supply Chain Management): WorkOrderService</span></span>
+### <a name="work-orders-with-project-field-service-to-supply-chain-management-workorderservice"></a><span data-ttu-id="910b4-133">Arbeidsordrer med prosjekt (Field Service til Supply Chain Management): WorkOrderService</span><span class="sxs-lookup"><span data-stu-id="910b4-133">Work Orders with Project (Field Service to Supply Chain Management): WorkOrderService</span></span>
 
-<span data-ttu-id="2592e-134">[![Maltilordning i Dataintegrering](./media/FSWOP4.png)](./media/FSWOP4.png)</span><span class="sxs-lookup"><span data-stu-id="2592e-134">[![Template mapping in Data integration](./media/FSWOP4.png)](./media/FSWOP4.png)</span></span>
+<span data-ttu-id="910b4-134">[![Maltilordning i Dataintegrering](./media/FSWOP4.png)](./media/FSWOP4.png)</span><span class="sxs-lookup"><span data-stu-id="910b4-134">[![Template mapping in Data integration](./media/FSWOP4.png)](./media/FSWOP4.png)</span></span>
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
