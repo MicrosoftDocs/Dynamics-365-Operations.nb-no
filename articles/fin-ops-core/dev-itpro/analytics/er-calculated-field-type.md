@@ -2,7 +2,6 @@
 title: Støtte for parameterkall fra ER-datakilder for Beregnet felt-typen
 description: Dette emnet inneholder informasjon om hvordan du bruker Beregnet felt-typen for ER-datakilder.
 author: NickSelin
-manager: AnnBe
 ms.date: 08/06/2020
 ms.topic: article
 ms.prod: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1c2c13cd3f165826e0d5b5ac901ffa61895301e7
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 897133a27f9d3da2f576ce675c0949f824cde881
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5569207"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749495"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>Støtte for parameterkall fra ER-datakilder for Beregnet felt-typen
 
@@ -194,7 +193,7 @@ På siden **Formatutforming** krever det konfigurerte parameterberegnede feltet 
 
 ![Vist liste over nivåer for beregnede felt](media/er-calculated-field-type-08.png)
 
-### <a name="use-the-configured-calculated-field-for-binding-format-elements"></a>Bruke det konfigurerte beregnede feltet til binding av formatelementer
+### <a name="use-the-configured-calculated-field-for-binding-format-elements&quot;></a>Bruke det konfigurerte beregnede feltet til binding av formatelementer
 
 1. Velg **Model.Data2.Levels** for å velge det konfigurerte beregnede feltet.
 2. Velg formatelementet **Statement.Taxation.Regular**.
@@ -215,7 +214,7 @@ På siden **Formatutforming** krever det konfigurerte parameterberegnede feltet 
 9. Velg **Bind**.
 10. Velg **Ja** for å bekrefte veksling av gjeldende brukerdatakilde, **Level3**, til den nye datakilden, **Levels**, i alle kjedede formatelementer under det valgte formatelementet.
 
-   Når du angir argumentet for det parameterberegnede feltet for XML-elementet som representerer et avgiftsnivå (for eksempel **Model.Data2.Levels("Redusert")** som en tekstverdi), trenger du ikke gjøre det samme for kjedede XML-attributter. Bindingene deres arver automatisk verdien til argumentet som er definert på overordnet nivå (**Model.Data2.Levels.aggregated.Base**, ikke **Model.Data2.Levels("Redusert").aggregated.Base**).
+   Når du angir argumentet for det parameterberegnede feltet for XML-elementet som representerer et avgiftsnivå (for eksempel **Model.Data2.Levels(&quot;Redusert")** som en tekstverdi), trenger du ikke gjøre det samme for kjedede XML-attributter. Bindingene deres arver automatisk verdien til argumentet som er definert på overordnet nivå (**Model.Data2.Levels.aggregated.Base**, ikke **Model.Data2.Levels("Redusert").aggregated.Base**).
 
 Gjentakende kall til parameterberegnede felt støttes ikke.
 

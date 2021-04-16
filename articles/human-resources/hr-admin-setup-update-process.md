@@ -2,11 +2,9 @@
 title: Oppdatere prosess
 description: Microsoft Dynamics 365 Human Resources er ekte programvare som tjeneste (SaaS) som gir kontinuerlige, berøringsfrie serviceoppdateringer for program- og plattformendringer.
 author: andreabichsel
-manager: tfehr
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 27561bfd9cb4f115cc507954c837ea93f9c93b72
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: 4069e369b1a9f15372d1e29e3809198b90b12c7e
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5466838"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5791539"
 ---
 # <a name="update-process"></a>Oppdatere prosess
 
@@ -58,14 +56,14 @@ Når det er nødvendig, tilbyr Human Resources også følgende typer korrigering
 
 Versjoner er gjennomgått, testet og godkjent i et internt miljø. Etter at buildene er godkjent, distribueres de deretter til produksjon.
 
-## <a name="release-cadence-exceptions-in-2020"></a>Unntak fra lanseringsfrekvens i 2020
+## <a name="release-cadence-exceptions-in-2021"></a>Unntak fra lanseringsfrekvens i 2021
 
-Hvis du vil ha en konto for helligdager, er utgivelsesplanen for november og desember 2020 som følger:
+Hvis du vil ha en konto for helligdager, er utgivelsesplanen for november og desember 2021 som følger:
 
-- Novemberutgivelse: 2–13. november
-- Desemberutgivelse: 30. november til 11. desember
+- Novemberutgivelse: 1–14. november
+- Desemberutgivelse: 29. november til 12. desember
  
-Lanseringsfrekvensen på to uker vil fortsette som vanlig den 11. januar 2021.
+Lanseringsfrekvensen på to uker vil fortsette som vanlig den 10. januar 2022.
 
 ## <a name="communications"></a>Kommunikasjoner
 
