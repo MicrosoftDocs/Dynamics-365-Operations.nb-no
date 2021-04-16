@@ -1,12 +1,10 @@
 ---
-title: Nummerskilt som mottar via lagerappen
-description: Dette emnet forklarer hvordan du konfigurerer lagerappen for å støtte bruk av en prosess for nummerskiltmottak for å motta fysisk beholdning.
+title: Nummerskiltmottak via mobilappen Lagerstyring
+description: Dette emnet forklarer hvordan du konfigurerer mobilappen Lagerstyring for å støtte bruk av en prosess for nummerskiltmottak for å motta fysisk beholdning.
 author: perlynne
-manager: tfehr
 ms.date: 04/29/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSParameters, WHSRFMenuItem, WHSLicensePlate, WHSPackingStructure
 audience: Application User
@@ -15,18 +13,18 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: f921d08572038d2ac53948825a8ca2459103b7f7
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 8c662da296bea7def443cb166bd3f7e501c9abcc
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5245160"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823197"
 ---
-# <a name="license-plate-receiving-via-the-warehouse-app"></a>Nummerskilt som mottar via lagerappen
+# <a name="license-plate-receiving-via-the-warehouse-management-mobile-app"></a>Nummerskiltmottak via mobilappen Lagerstyring
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet forklarer hvordan du konfigurerer lagerappen, slik at den støtter bruk av en prosess for nummerskiltmottak for å motta fysisk beholdning.
+Dette emnet forklarer hvordan du konfigurerer mobilappen Lagerstyring slik at den støtter bruk av en prosess for nummerskiltmottak for å motta fysisk beholdning.
 
 Du kan bruke denne funksjonaliteten til raskt å registrere mottak av innkommende beholdning som er relatert til et forhåndsvarsel for forsendelse. Systemet oppretter automatisk et forhåndsvarsel for forsendelse når lagerstyringsprosesser brukes til å sende en overføringsordre. For bestillingsprosessen kan et forhåndsvarsel for forsendelse registreres manuelt, eller det kan importeres automatisk ved hjelp av en innkommende dataenhetsprosess for forhåndsvarsel for forsendelse.
 
@@ -72,7 +70,7 @@ Hvis du vil gjøre denne funksjonaliteten tilgjengelig i systemet, må du aktive
 
 ## <a name="show-or-skip-the-receiving-summary-page"></a>Vise eller hoppe over mottakssammendragssiden
 
-Du kan bruke funksjonen *Kontroller om det skal vises en mottakssammendragsside på mobilenheter* for å dra nytte av en mer detaljert flyt i appen for lagerstyring som en del av prosessen for mottak av nummerskilt.
+Du kan bruke funksjonen *Kontroller om det skal vises en mottakssammendragsside på mobilenheter* for å dra nytte av en mer detaljert flyt i mobilappen Lagerstyring som en del av prosessen for mottak av nummerskilt.
 
 Når denne funksjonen er aktivert, vil menyelementer på mobilenheter for mottak av nummerskilt eller mottak og plassering av nummerskilt gi en innstilling for **visning av mottakssammendragsside**. Denne innstillingen har følgende alternativer:
 

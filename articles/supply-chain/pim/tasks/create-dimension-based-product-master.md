@@ -2,11 +2,9 @@
 title: Opprette en dimensjonsbasert produktstandard
 description: Denne fremgangsmåten viser hvordan du oppretter en ny produktstandard med dimensjonsbasert konfigurasjon-teknologi.
 author: ShylaThompson
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResProductListPage, EcoResProductCreate, EcoResProductMasterDraftFormPart
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c3913bdf574036ed30f99701bf2b64ed0f713b1d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 59ee63a634400ebe8446d9f78299966eaac37061
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5226081"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5819968"
 ---
 # <a name="create-a-dimension-based-product-master"></a>Opprette en dimensjonsbasert produktstandard
 
