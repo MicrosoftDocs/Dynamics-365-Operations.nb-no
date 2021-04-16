@@ -2,11 +2,9 @@
 title: Sende fakturaer til arbeidsflytsystemet og avstemme produktkvitteringslinjer
 description: Dette emnet beskriver prosessen for å sende leverandørfakturaer til arbeidsflytsystemet og automatisk samsvare posterte produktkvitteringslinjer med leverandørfakturaer.
 author: abruer
-manager: AnnBe
 ms.date: 09/08/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-09-08
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 534b5dbc54a516fea0b3f7090042d247c1076737
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 84699746349024854a4eeb9cee62960ec38bc338
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5231548"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5827824"
 ---
 # <a name="submit-invoices-to-the-workflow-system-and-match-product-receipt-lines"></a>Sende fakturaer til arbeidsflytsystemet og avstemme produktkvitteringslinjer
 
@@ -41,7 +39,9 @@ Verdien **Innsendte av** i arbeidsflyten er bruker-ID-en som ble angitt for bakg
 
 Som en del av en berøringsfri faktureringsprosess, kan systemet automatisk samsvare posterte produktkvitteringer med fakturalinjer. Det må defineres et treveis kontrollpolicy for denne oppgaven. Denne funksjonen er tilgjengelig hvis funksjonen **Automatisering av leverandørfaktura** er aktivert på siden **Funksjonsbehandling**.
 
-Prosessen vil kjøre til det samsvarende produktkvitteringsantallet er lik fakturaantallet. Som en del av denne prosessen kan du angi det maksimale antall ganger som systemet skal prøve å samsvare produktkvitteringer med en fakturalinje før prosessen mislykkes. Prosessen kjøres i bakgrunnen, enten hver time eller hver dag. Du kan kjøre den automatiserte samsvarsprosessen som en del av prosessen for å sende fakturaer til arbeidsflytsystemet. Du kan også kjøre den som en frittstående prosess. Innstillingene for prosessen for samsvaring av produktkvittering med fakturalinjer konfigureres i kategorien **Automatisering av leverandørfaktura** på siden **Leverandørparametere** (**Leverandør \> Oppsett \> Leverandørparametere**).
+Samsvarsprosessen vil kjøre til det samsvarende produktkvitteringsantallet er lik fakturaantallet. Hvis det imidlertid finnes flere produktmottak for én enkelt fakturalinje, må du kjøre prosessen flere ganger for å oppnå samsvarende antall. Du kan angi det maksimale antall ganger som systemet skal prøve å samsvare produktkvitteringer med en fakturalinje før prosessen mislykkes. Prosessen kjøres i bakgrunnen, enten hver time eller hver dag. 
+
+Du kan kjøre den automatiserte samsvarsprosessen som en del av prosessen for å sende fakturaer til arbeidsflytsystemet. Du kan også kjøre den som en frittstående prosess. Innstillingene for prosessen for samsvaring av produktkvittering med fakturalinjer konfigureres i kategorien **Automatisering av leverandørfaktura** på siden **Leverandørparametere** (**Leverandør \> Oppsett \> Leverandørparametere**).
 
 Fakturalinjer som har en treveis kontrollpolicy, der det samsvarende mottaksantallet er mindre enn fakturaantallet, blir inkludert i den automatiske mottaksprosessen.
 

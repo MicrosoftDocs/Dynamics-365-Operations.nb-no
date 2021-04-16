@@ -2,11 +2,9 @@
 title: Sammenslåing av anleggsmidler, verdimodeller og avskrivningstablåer
 description: 'I tidligere versjoner var det to vurderingskonsepter for anleggsmidler: verdimodeller og avskrivningstablåer. I versjonen Microsoft Dynamics 365 for Operations (1611) er verdimodellfunksjonaliteten og funksjonaliteten for avskrivningstablå slått sammen til ett enkelt konsept som kalles et tablå.'
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 26409b6416a5b4e93ccd051b1625633ea12e22ac
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: f027a856dbd596ede84c39e30ee2227aab9329f2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5212475"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5826744"
 ---
 # <a name="fixed-asset-value-model-and-depreciation-book-merge"></a>Sammenslåing av anleggsmidler, verdimodeller og avskrivningstablåer
 
@@ -34,9 +32,8 @@ Den nye tablåfunksjonaliteten er basert på tidligere verdimodellfunksjonalitet
 ## <a name="setup"></a>Konfigurer
 Som standard posterer tablåer både i økonomimodulen (Finans) og underfinansjournalen for anleggsmiddel. Tablåer har et nytt alternativ, **Poster i økonomimodul**, som lar deg deaktivere postering i økonomimodulen og postere bare til underfinansjournal for anleggsmiddel. Denne funksjonen ligner tidligere posteringsvirkemåte for avskrivningstablåer. Journalnavnoppsettet har et nytt posteringslag som heter Ingen. Dette posteringslaget ble lagt til spesifikt for anleggsmiddeltransaksjoner. Hvis du vil postere transaksjoner for tablåer som ikke poster til økonomimodulen, må du bruke et journalnavn med posteringslaget satt til **Ingen**.
 
-|                                                  |                                 |                                 |                                                         |
+| &nbsp;                                           | Avskrivningstablå               | Verdimodell                     | Tablå (ny)                                              |
 |--------------------------------------------------|---------------------------------|---------------------------------|---------------------------------------------------------|
-|                                                  | Avskrivningstablå               | Verdimodell                     | Tablå (ny)                                              |
 | Poster til økonomimodul                                   | Aldri                           | Alltid                          | Alternativ for å postere til økonomimodulen                                |
 | Posteringslag                                   | Gjelder ikke her                  | 3. Gjeldende, Operasjoner og Mva | 11: Gjeldende, Operasjoner, Mva, 7 egendefinerte lag og Ingen |
 | Journalnavn                                    | Journalnavn for avskrivningstablå | Finans – Journalnavn              | Finans – Journalnavn                                      |
@@ -46,9 +43,8 @@ Som standard posterer tablåer både i økonomimodulen (Finans) og underfinansjo
 ## <a name="processes"></a>Prosesser
 Prosesser bruker nå en felles side. Noen prosesser tillates bare hvis alternativet **Poster til økonomimodul** er satt til **Ingen** i tablåoppsettet.
 
-|                                |                           |                     |                                          |
+| &nbsp;                                           | Avskrivningstablå               | Verdimodell                     | Tablå (ny)                                              |
 |--------------------------------|---------------------------|---------------------|------------------------------------------|
-|                                | Avskrivningstablå         | Verdimodell         | Tablå (ny)                               |
 | Transaksjonsoppføring              | Journal for avskrivningstablå | Anleggsmiddeljournal | Anleggsmiddeljournal                      |
 | Bonusavskrivning             | Tillatt                   | Ikke tillatt         | Tillatt                                  |
 | Slett historiske transaksjoner | Tillatt                   | Ikke tillatt         | Tillatt, med mindre du legger til i økonomimodulen |
@@ -57,9 +53,8 @@ Prosesser bruker nå en felles side. Noen prosesser tillates bare hvis alternati
 ## <a name="inquiries-and-reports"></a>Forespørsler og rapporter
 Forespørsler og rapporter støtter alle tablåer. Rapporter som ikke finnes i tabellen nedenfor støttet tidligere både avskrivningstablåer for verdimodeller, og fortsetter å støtte alle tablåtyper. **Posteringslag**-feltet er også lagt til i rapporter, slik at du lettere kan gjenkjenne transaksjonsposteringene.
 
-|                                       |                                |                          |                          |
+| &nbsp;                                           | Avskrivningstablå               | Verdimodell                     | Tablå (ny)                                              |
 |---------------------------------------|--------------------------------|--------------------------|--------------------------|
-|                                       | Avskrivningstablå              | Verdimodell              | Tablå (ny)               |
 | Forespørsler                             | Avskrivningstablåtransaksjoner | Anleggsmiddeltransaksjoner | Anleggsmiddeltransaksjoner |
 | Anleggsmiddelutdrag                 | Ikke tillatt                    | Tillatt                  | Tillatt                  |
 | Anleggsmiddelbasis                     | Tillatt                        | Ikke tillatt              | Tillatt                  |

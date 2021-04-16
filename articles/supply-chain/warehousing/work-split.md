@@ -2,11 +2,9 @@
 title: Oppdelt arbeid
 description: Dette emnet gir informasjon om funksjonen for oppdelt arbeid. Med denne funksjonen kan du dele opp store arbeidsordrer i flere mindre arbeidsordrer som deretter kan tilordnes til flere lagerarbeidere. På denne måten kan det samme arbeidet plukkes samtidig av flere lagerarbeidere.
 author: mirzaab
-manager: tfehr
 ms.date: 10/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -15,12 +13,12 @@ ms.search.industry: WHSWorkTableListPage
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-15
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6dbf0f6dd0c691db74eaad2174d8f9849b4cb26a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: eae1e722a7c4d819cbca398eb14a2b36fa04eec5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5245088"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5830768"
 ---
 # <a name="work-split"></a>Oppdelt arbeid
 
@@ -69,7 +67,7 @@ Funksjonen *Oppdelt arbeid* legger til følgende to knapper i fanen **Arbeid** i
 >
 > - Arbeidet deles for øyeblikket av en annen bruker. Hvis du prøver å åpne delingssiden for arbeid som allerede deles av en annen bruker, får du følgende feilmelding: Arbeidet med ID \#\#\#\# deles for øyeblikket. Prøv på nytt om noen minutter. Hvis du fortsatt får denne meldingen, kontakter du en overordnet.
 
-En ny arbeidsblokkeringsårsak, *Del arbeid*, angir når arbeids-ID-en er i ferd med å deles opp. Det vises både på siden **Del arbeid** og i lagerappen hvis en bruker prøver å kjøre arbeidet. Når det brukes blokkeringsårsaker, endres navnet på det **Blokkert bølge**-feltet fra arbeids-ID-en til **Blokkert**.
+En ny arbeidsblokkeringsårsak, *Del arbeid*, angir når arbeids-ID-en er i ferd med å deles opp. Det vises både på siden **Del arbeid** og i mobilappen Lagerstyring hvis en bruker prøver å kjøre arbeidet. Når det brukes blokkeringsårsaker, endres navnet på det **Blokkert bølge**-feltet fra arbeids-ID-en til **Blokkert**.
 
 ## <a name="initiate-a-work-split"></a>Starte en arbeidsoppdeling
 
@@ -147,9 +145,9 @@ Hvis du vil fullføre deling av arbeidet, må du fjerne blokkeringsårsaken *Del
 
 Når blokkeringsårsaken *Delt arbeid* er fjernet, kan arbeidet kjøres på mobilenheten, forutsatt at statusen **Blokkert** er satt til *Nei* på arbeids-ID-en.
 
-## <a name="user-blocking-on-the-warehouse-app"></a>Brukerblokkering i lagerappen
+## <a name="user-blocking-on-the-warehouse-management-mobile-app"></a>Brukerblokkering i mobilappen Lagerstyring
 
-Hvis du prøver å bruke lagerappen til å kjøre plukkarbeid mot en arbeids-ID som deles, får du følgende feilmelding: Arbeidet med ID \#\#\#\# deles for øyeblikket. Hvis du får denne meldingen, velger du **Avbryt**. Deretter kan du fortsette å behandle annet arbeid.
+Hvis du prøver å bruke mobilappen Lagerstyring til å kjøre plukkarbeid mot en arbeids-ID som deles, får du følgende feilmelding: Arbeidet med ID \#\#\#\# deles for øyeblikket. Hvis du får denne meldingen, velger du **Avbryt**. Deretter kan du fortsette å behandle annet arbeid.
 
 ## <a name="other-blocked-operations"></a>Andre blokkerte operasjoner
 

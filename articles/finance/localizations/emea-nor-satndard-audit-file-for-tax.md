@@ -6,20 +6,18 @@ ms.author: elgolu
 ms.date: 04/27/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-manager: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Norway
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 24db144963244d6f3493bfa5f403ca6a20971dc4
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 5c0bd539c703854e3b0f167594a708ec2e1e80bf
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5262820"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5832714"
 ---
 # <a name="standard-audit-file-for-tax-saf-t-for-norway"></a>Standard revisjonsfil for avgift (SAF-T) for Norge
 

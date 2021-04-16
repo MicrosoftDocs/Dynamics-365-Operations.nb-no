@@ -2,11 +2,9 @@
 title: Bruke en kontantrabatt utenfor kontantrabattperioden
 description: Denne artikkelen inneholder to scenarier som viser hvordan en kontantrabatt kan tas, selv om betalingen skjer utenfor kontantrabattperioden.
 author: abruer
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0df635e78fff1994b9a9e1abc99c67470852ad81
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 47acacf9b1e9667e86fcdd5ce1ed62e79d8afec3
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5235867"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810228"
 ---
 # <a name="take-a-cash-discount-outside-the-cash-discount-period"></a>Bruke en kontantrabatt utenfor kontantrabattperioden
 
@@ -43,7 +41,7 @@ April markerer fakturaen for betaling. Ingen kontantrabatt brukes fordi betaling
 
 Rabattinformasjonen vises nederst på siden **Utlign transaksjoner**.
 
-|                              |           |
+| Felt                        | Verdi     |
 |------------------------------|-----------|
 | Kontantrabattdato           | 12/7/2015 |
 | Kontantrabattbeløp         | -20,00    |
@@ -61,7 +59,7 @@ Hvis både fakturaen og betalingen er postert, kan fremdeles kontantrabatten bru
 
 Rabattinformasjonen vises nederst på siden **Utlign åpne transaksjoner**. Rabattbeløpet som brukes er 20,00, fordi beløpet som skal utlignes for fakturaen er standardbeløpet 1,980.00.
 
-|                              |           |
+| Felt                        | Verdi     |
 |------------------------------|-----------|
 | Kontantrabattdato           | 12/7/2015 |
 | Kontantrabattbeløp         | -20,00    |
@@ -78,7 +76,7 @@ April oppdaterer verdien i feltet **Beløp som skal utlignes** til **500,00**. V
 
 Rabattinformasjonen vises nederst på siden **Utlign åpne transaksjoner**. Verdien i feltet **Kontantrabattbeløp som skal brukes** er **5,05**, fordi beløpet som skal utlignes for fakturaen ble endret til betalingsbeløpet, 500,00.
 
-|                              |           |
+| Felt                        | Verdi     |
 |------------------------------|-----------|
 | Kontantrabattdato           | 12/7/2015 |
 | Kontantrabattbeløp         | -20,00    |

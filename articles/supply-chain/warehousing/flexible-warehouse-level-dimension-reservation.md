@@ -2,11 +2,9 @@
 title: Fleksibel retningslinje for dimensjonsreservasjon på lagernivå
 description: Dette emnet beskriver retningslinjen for beholdningsreservasjon som lar virksomheter som selger partisporede produkter og kjører logistikken som WMS-aktiverte operasjoner, reservere spesifikke partier for kundesalgsordrer, selv om reservasjonshierarkiet som er assosiert med produktene, ikke tillater reservasjon av spesifikke partier.
 author: perlynne
-manager: tfehr
 ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSReservationHierarchy, WHSWorkTrans, WHSWorkInventTrans, WHSInventTableReservationHierarchy, WHSReservationHierarchyCreate, WHSInventTableReservationHierarchy
 audience: Application User
@@ -15,33 +13,33 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: b7d855914e59d90dd082c9e9a027604579a2f411
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 17ae3cc788c60917807acece2fc21f6c52d8ffe0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5235418"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835684"
 ---
-# <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Fleksibel retningslinje for dimensjonsreservasjon på lagernivå
+# <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Fleksibel dimensjonsreservasjonspolicy for lagernivå
 
 [!include [banner](../includes/banner.md)]
 
-Når et hierarki for beholdningsreservasjon av "Parti under\[plassering\]"-typen er assosiert med produkter, kan bedrifter som selger partisporede produkter og kjører logistikken som operasjoner som er aktivert for Microsoft Dynamics 365 Warehouse Management System (WMS), ikke reservere spesifikke partier av disse produktene for kundesalgsordrer.
+Når et hierarki for beholdningsreservasjon av *Parti-under\[plassering\]*-typen er assosiert med produkter, kan bedrifter som selger partisporede produkter og kjører logistikken som operasjoner som er aktivert for Microsoft Dynamics 365 Warehouse Management System (WMS), ikke reservere spesifikke partier av disse produktene for kundesalgsordrer.
 
 På lignende måte kan ikke bestemte lisensplater reserveres for produkter i salgsordrer når disse produktene er knyttet til standard reservasjonshierarki.
 
-Dette emnet beskriver retningslinjen for beholdningsreservasjon som lar disse virksomhetene reservere spesifikke partier eller lisensalter, selv når produktene er assosiert med et "Parti under\[plassering\]"-reservasjonshierarki.
+Dette emnet beskriver retningslinjen for beholdningsreservasjon som lar disse virksomhetene reservere spesifikke partier eller lisensalter, selv når produktene er assosiert med et *Parti-under\[plassering\]*-reservasjonshierarki.
 
 ## <a name="inventory-reservation-hierarchy"></a>Beholdningsreservasjonshierarki
 
 Dette avsnittet oppsummerer det eksisterende beholdningsreservasjonshierarkiet.
 
-Beholdningsreservasjonshierarkiet dikterer følgende: For lagringsdimensjoner angir etterspørselsordren de obligatoriske dimensjonene for sted, lager og beholdningsstatus, mens lagerlogikken har ansvar for å tilordne et sted til de forespurte kvantitetene og for å reservere stedet. Med andre ord gjelder følgende: I samhandlingene mellom etterspørselsordren og lagervirksomheten, forventes etterspørselsordren å indikere hvor ordren må sendes fra (det vil si hvilket sted og lager). Lageret er deretter avhengig av logikken for å finne påkrevd kvantitet i lagerlokalene.
+Lagerreservasjonshierarkiet angir at så langt det gjelder lagerdimensjoner, har behovsordren de obligatoriske dimensjonene område, lager og lagerstatus. De obligatoriske dimensjonene er med andre ord alle dimensjonene over lokasjonsdimensjonen i reservasjonshierarkiet, mens lagerlogikken er ansvarlig for å tilordne en lokasjon til de ønskede antallene og reservere lokasjonen. I samhandlingene mellom etterspørselsordren og lagervirksomheten, forventes etterspørselsordren å indikere hvor ordren må sendes fra (det vil si hvilket sted og lager). Lageret er deretter avhengig av logikken for å finne påkrevd kvantitet i lagerlokalene.
 
 For å gjenspeile virksomhetens driftsmodell er sporingsdimensjoner (parti- og serienumre) imidlertid gjenstand for mer fleksibilitet. Et beholdningsreservasjonshierarki kan omfatte scenarioer der følgende betingelser gjelder:
 
-- Virksomheten avhenger av lagervirksomheten når det gjelder administrering av plukking av kvantiteter som har parti- eller serienumre, etter at kvantitetene er funnet i lagerlokalene. Denne modellen henvises ofte til som *Parti under\[plassering\]*. Den brukes vanligvis når et produkts parti- eller serienummeridentifikasjon ikke er viktig for kundene som legger inn etterspørselen hos det selgende selskapet.
-- Hvis parti- eller serienumre er en del av en kundes ordrespesifikasjon, og de registreres i etterspørselsordren, blir lageroperasjonene som finner kvantitetene på lageret, begrenset av de spesifikke forespurte numrene og har ikke lov til å endre dem. Denne modellen henvises til som *Parti over\[plassering\]*.
+- Virksomheten avhenger av lagervirksomheten når det gjelder administrering av plukking av kvantiteter som har parti- eller serienumre, *etter* at kvantitetene er funnet i lagerlokalene. Denne modellen henvises ofte til som *Parti-under\[plassering\]* eller *Serie-under\[plassering\]*. Den brukes vanligvis når et produkts parti- eller serienummeridentifikasjon ikke er viktig for kundene som legger inn etterspørselen hos det selgende selskapet.
+- Virksomheten avhenger av lagervirksomheten når det gjelder administrering av plukking av kvantiteter som har parti- eller serienumre, *før* kvantitetene er funnet i lagerlokalene. Hvis parti- eller serienumre er nødvendig som en del av en kundes ordrespesifikasjon, registreres de i etterspørselsordren, og lageroperasjonene som finner kvantitetene på lageret, har ikke lov til å endre dem. Denne modellen henvises ofte til som *Parti-over\[plassering\]* eller *Serie-over\[plassering\]*. Siden dimensjonene over lokasjonen er de spesifikke kravene til behovet som må oppfylles, vil ikke lagerlogikken tildele dem. Disse dimensjonene **må** alltid angis på etterspørselsordren eller i de tilknyttede reserveringene.
 
 I disse scenarioene er utfordringen at bare ett beholdningsreservasjonshierarki kan tilordnes til hvert utgitte produkt. For at WMS skal kunne håndtere sporede elementer gjelder derfor følgende: Etter at hierarkitildelingen bestemmer når parti- eller serienummeret skal reserveres (enten når etterspørselsordren tas imot eller under lagerplukkearbeidet), kan denne timingen ikke endres på et ad hoc-grunnlag.
 
@@ -49,16 +47,16 @@ I disse scenarioene er utfordringen at bare ett beholdningsreservasjonshierarki 
 
 ### <a name="business-scenario"></a>Forretningsscenario
 
-I dette scenarioet bruker et selskap en beholdningsstrategi der fullførte varer spores etter partinumre. Dette selskapet bruker også WMS-arbeidsbelastning. Fordi denne arbeidsbelastningen har velutstyrt logikk for planlegging og drift av lagerplukkings- og forsendelsesoperasjoner for partiaktiverte varer, er de fleste av de fullførte varene tilknyttet et "Parti under\[plassering\]"-beholdningsreservasjonshierarki. Fordelen med denne typen driftsoppsett er at beslutninger (som faktisk er reservasjonsbeslutninger) om hvilke partier du skal plukkes, og hvor de skal settes på lageret, utsettes til lagerplukkingsoperasjonene starter. De utføres ikke når kundens ordre legges inn.
+I dette scenarioet bruker et selskap en beholdningsstrategi der fullførte varer spores etter partinumre. Dette selskapet bruker også WMS-arbeidsbelastning. Fordi denne arbeidsbelastningen har velutstyrt logikk for planlegging og drift av lagerplukkings- og forsendelsesoperasjoner for partiaktiverte varer, er de fleste av de fullførte varene tilknyttet et *Parti-under\[plassering\]*-beholdningsreservasjonshierarki. Fordelen med denne typen driftsoppsett er at beslutninger (som faktisk er reservasjonsbeslutninger) om hvilke partier du skal plukkes, og hvor de skal settes på lageret, utsettes til lagerplukkingsoperasjonene starter. De utføres ikke når kundens ordre legges inn.
 
-Selv om "Parti under\[plassering\]"-reservasjonshierarkiet tjener selskapets forretningsmessige mål godt, krever mange av selskapets etablerte kunder det samme partiet som de kjøpte tidligere, når de bestiller produkter på nytt. Derfor leter selskapet etter fleksibilitet i måten partireservasjonsreglene håndteres på, slik at det – avhengig av kundenes etterspørsel etter samme vare – oppstår følgende atferd:
+Selv om *Parti under\[plassering\]*-reservasjonshierarkiet tjener selskapets forretningsmessige mål godt, krever mange av selskapets etablerte kunder det samme partiet som de kjøpte tidligere, når de bestiller produkter på nytt. Derfor leter selskapet etter fleksibilitet i måten partireservasjonsreglene håndteres på, slik at det – avhengig av kundenes etterspørsel etter samme vare – oppstår følgende atferd:
 
 - Et partinummer kan registreres og reserveres når ordren tas imot av salgsprosessoren, og det kan ikke endres under lageroperasjoner og/eller tas imot av andre krav. Denne atferden er med på å garantere at partinummeret som ble bestilt, sendes til kunden.
 - Hvis partinummeret ikke er viktig for kunden, kan lageroperasjonen bestemme et partinummer under plukkearbeid, etter at salgsordreregistrering og reservasjon er utført.
 
 ### <a name="allowing-reservation-of-a-specific-batch-on-the-sales-order"></a>Tillate reservering av et bestemt parti i salgsordren
 
-For å imøtekomme ønsket fleksibilitet i partireservasjonsatferden for varer som er assosiert med et "Parti under\[plassering\]"-beholdningsreservasjonshierarki, må beholdningsledere merke av i **Tillat reservasjon på etterspørselsordre**-avmerkingsboksen for **Partinummer**-nivået på **Beholdningsreservasjonshierarkier**-siden.
+For å imøtekomme ønsket fleksibilitet i partireservasjonsatferden for varer som er assosiert med et *Parti-under\[plassering\]*-beholdningsreservasjonshierarki, må beholdningsledere merke av i **Tillat reservasjon på etterspørselsordre**-avmerkingsboksen for **Partinummer**-nivået på **Beholdningsreservasjonshierarkier**-siden.
 
 ![Gjøre beholdningsreservasjonshierarkiet fleksibelt](media/Flexible-inventory-reservation-hierarchy.png)
 
@@ -69,25 +67,25 @@ Når **Partinummer**-nivået i hierarkiet er valgt, vil alle dimensjoner over de
 >
 > **Partinummer** og **Nummerskilt** er de eneste nivåene i hierarkiet som er åpne for den fleksible reservasjonsretningslinjen. Med andre ord kan du ikke merke av for **Tillat reservasjon på etterspørselsordre** for nivået **Plassering** eller **Serienummer**.
 >
-> Hvis reservasjonshierarkiet inkluderer serienummerdimensjonen (som alltid må være under **Partinummer**-nivået), og hvis du har aktivert partispesifikk reservasjon for partinummeret, vil systemet fortsette å håndtere serienummerreservasjon og plukkeoperasjoner, basert på reglene som gjelder for "Serienr. under\[plassering\]"-reservasjonsretningslinjen.
+> Hvis reservasjonshierarkiet inkluderer serienummerdimensjonen (som alltid må være under **Partinummer**-nivået), og hvis du har aktivert partispesifikk reservasjon for partinummeret, vil systemet fortsette å håndtere serienummerreservasjon og plukkeoperasjoner, basert på reglene som gjelder for *Serie-under\[plassering\]*-reservasjonsretningslinjen.
 
-Du kan når som helst tillate partispesifikk reservasjon for et eksisterende "Parti under\[plassering\]"-reservasjonshierarki i distribusjonen. Denne endringen påvirker ikke reservasjoner og åpent lagerarbeid som ble opprettet før endringen fant sted. **Tillat reservasjon på etterspørselsordre**-avmerkingsboksen kan imidlertid ikke tømmes hvis det finnes beholdningstransaksjoner med utstedelsestypen **Reservert bestilt**, **Reservert fysisk** eller **Bestilt** for én eller flere varer som er tilknyttet til dette reservasjonshierarkiet.
+Du kan når som helst tillate partispesifikk reservasjon for et eksisterende *Parti-under\[plassering\]*-reservasjonshierarki i distribusjonen. Denne endringen påvirker ikke reservasjoner og åpent lagerarbeid som ble opprettet før endringen fant sted. **Tillat reservasjon på etterspørselsordre**-avmerkingsboksen kan imidlertid ikke tømmes hvis det finnes beholdningstransaksjoner med utstedelsestypen **Reservert bestilt**, **Reservert fysisk** eller **Bestilt** for én eller flere varer som er tilknyttet til dette reservasjonshierarkiet.
 
 > [!NOTE]
 > Hvis eksisterende reservasjonshierarki for en vare ikke tillater partispesifikasjon på ordren, kan du tilordne den på nytt til et reservasjonshierarki som tillater partispesifikasjon, forutsatt at hierarkinivåstrukturen er lik i begge hierarkier. Bruk **Endre reservasjonshierarki for varer**-funksjonen til å gjennomføre omtilordningen. Denne endringen kan være relevant når du vil forhindre fleksibel partireservering for et delsett av partisporede elementer, men tillate den for resten av produktporteføljen.
 
-Uavhengig av om du har merket av i **Tillat reservasjon på etterspørselsordre**-avmerkingsboksen, gjelder følgende: Hvis du ikke vil reservere et spesifikt partinummer for varen på en ordrelinje, vil standard lagerstyringslogikk som er gyldig for et "Parti under\[plassering\]"-reservasjonshierarki, fremdeles gjelde.
+Uavhengig av om du har merket av i **Tillat reservasjon på etterspørselsordre**-avmerkingsboksen, gjelder følgende: Hvis du ikke vil reservere et spesifikt partinummer for varen på en ordrelinje, vil standard lagerstyringslogikk som er gyldig for et *Parti-under\[plassering\]*-reservasjonshierarki, fremdeles gjelde.
 
 ### <a name="reserve-a-specific-batch-number-for-a-customer-order"></a>Reservere et bestemt partinummer for en kundeordre
 
-Etter at "Parti under\[plassering\]"-beholdningsreservasjonshierarki for en partisporet vare er satt opp for å tillate reservasjon av spesifikke partinumre på salgsordrer, kan salgsordreprosessorer ta imot kundeordrer for samme vare på en av følgende måter, avhengig av kundens forespørsel:
+Etter at et *Parti-under\[plassering\]*-beholdningsreservasjonshierarki for en partisporet vare er satt opp for å tillate reservasjon av spesifikke partinumre på salgsordrer, kan salgsordreprosessorer ta imot kundeordrer for samme vare på en av følgende måter, avhengig av kundens forespørsel:
 
 - **Angi ordredetaljer uten å angi et partinummer** – Denne fremgangsmåten skal brukes når produktets partispesifikasjon ikke er viktig for kunden. Alle eksisterende prosesser som er knyttet til håndtering av en ordre av denne typen i systemet, forblir uendret. Ingen ekstra hensyn kreves fra brukerne.
 - **Angi ordredetaljer og reserver et bestemt partinummer** – Denne fremgangsmåten skal brukes når kunden ber om et bestemt parti. Vanligvis vil kunder be om et bestemt parti når de ombestiller et produkt som de har kjøpt tidligere. Denne typen partispesifikk reservasjon omtales som *Ordreigangsatt reservasjon*.
 
 Følgende sett med regler er gyldig når kvantiteter behandles, og et partinummer er bundet til en bestemt ordre:
 
-- For å tillate reservasjon av et spesifikt partinummer for en vare under "Parti under\[plassering\]"-reservasjonsretningslinjen må systemet reservere alle dimensjoner opp gjennom plasseringen. Dette området inkluderer vanligvis nummerskiltdimensjonen.
+- For å tillate reservasjon av et spesifikt partinummer for en vare under *Parti-under\[plassering\]*-reservasjonsretningslinjen må systemet reservere alle dimensjoner opp gjennom plasseringen. Dette området inkluderer vanligvis nummerskiltdimensjonen.
 - Plasseringsdirektiver brukes ikke når det opprettes plukkarbeid for en salgslinje som bruker ordrebundet partireservering.
 - Under lagerbehandling av arbeid for ordrebundne partier har verken brukeren eller systemet lov til å endre partinummeret. (Denne behandlingen omfatter unntakshåndtering.)
 
@@ -131,19 +129,19 @@ For dette eksempelet må demonstrasjonsdata være installert, og du må bruke **
 2. Velg **Ny**.
 3. På salgsordretoppteksten, i **Kundekonto**-feltet angir du **US-003**.
 4. Legg til en linje for den nye varen, og angi **10** som kvantiteten. Sørg for at **Lager**-feltet er satt til **24**.
-5. På **Salgsordrelinjer**-hurtigfanen velger du **Beholdning**, og går deretter til **Vedlikehold**-gruppen og velger **Partireservasjon**. **Partireservasjon**-siden viser en liste over partier som er tilgjengelige for reservasjon for ordrelinjen. For dette eksempelet viser den en kvantitet på **20** for partinummer **B11** og en kvantitet på **10** for partinummer **B22**. Vær oppmerksom på at **Partireservasjon**-siden ikke kan åpnes fra en linje hvis varen på denne linjen er assosiert med "Parti under\[plassering\]"-reservasjonshierarki med mindre den er satt opp for å tillate partispesifikk reservasjon.
+5. På **Salgsordrelinjer**-hurtigfanen velger du **Beholdning**, og går deretter til **Vedlikehold**-gruppen og velger **Partireservasjon**. **Partireservasjon**-siden viser en liste over partier som er tilgjengelige for reservasjon for ordrelinjen. For dette eksempelet viser den en kvantitet på **20** for partinummer **B11** og en kvantitet på **10** for partinummer **B22**. Vær oppmerksom på at **Partireservasjon**-siden ikke kan åpnes fra en linje hvis varen på denne linjen er assosiert med *Parti-under\[plassering\]*-reservasjonshierarkiet med mindre den er satt opp for å tillate partispesifikk reservasjon.
 
     > [!NOTE]
     > Hvis du vil reservere et bestemt parti for en salgsordre, må du bruke **Partireservasjon**-siden.
     >
-    > Hvis du oppgir partinummeret direkte på salgsordrelinjen, vil systemet fungere som om du skrev inn en spesifikk partiverdi for en vare som er underlagt "Parti under\[plassering\]"-reservasjonsretningslinjen. Når du lagrer linjen, får du en advarselmelding. Hvis du bekrefter at partinummeret skal angis direkte på ordrelinjen, vil ikke linjen bli håndtert av den vanlige lagerbehandlingslogikken.
+    > Hvis du oppgir partinummeret direkte på salgsordrelinjen, vil systemet fungere som om du skrev inn en spesifikk partiverdi for en vare som er underlagt *Parti-under\[plassering\]*-reservasjonsretningslinjen. Når du lagrer linjen, får du en advarselmelding. Hvis du bekrefter at partinummeret skal angis direkte på ordrelinjen, vil ikke linjen bli håndtert av den vanlige lagerbehandlingslogikken.
     >
-    > Hvis du reserverer kvantiteten fra **Reservasjon**-siden, vil ikke noe spesifikt parti bli reservert, og kjøringen av lageroperasjoner for linjen vil følge reglene som gjelder under "Parti under\[plassering\]"-reservasjonsretningslinjen.
+    > Hvis du reserverer kvantiteten fra **Reservasjon**-siden, vil ikke noe spesifikt parti bli reservert, og kjøringen av lageroperasjoner for linjen vil følge reglene som gjelder under *Parti-under\[plassering\]*-reservasjonsretningslinjen.
 
-    Generelt fungerer og samhandles denne siden med på samme måte som den fungerer og samhandles med for varer som har et tilknyttet reservasjonshierarki i "Parti over\[plassering\]"-typen. Følgende unntak gjelder imidlertid:
+    Generelt fungerer og samhandles denne siden med på samme måte som for varer som har et tilknyttet reservasjonshierarki i *Parti-over\[plassering\]*-typen. Følgende unntak gjelder imidlertid:
 
     - **Partinumre bundet til kildelinjen**-hurtigfanen viser partinumrene som er reservert for ordrelinjen. Partiverdiene i rutenettet vises gjennom oppfyllingssyklusen til ordrelinjen, inkludert lagerbehandlingsstadiene. På **Oversikt**-hurtigfanen vises vanlig bestillingslinjereservasjon (det vil si reservasjon som utføres for dimensjonene over **Plassering**-nivået) derimot i rutenettet opp til tidspunktet lagerarbeidet opprettes på. Deretter overtar arbeidsenheten linjereservasjonen, og linjereservasjonen vises ikke lenger på siden. **Partinumre bundet til kildelinjen**-hurtigfanen bidrar til å garantere at salgsordreprosessoren kan vise partinumrene som ble bundet til kundens ordre, når som helst i løpet av livssyklusen, opp gjennom faktureringen.
-    - I tillegg til å reservere et bestemt parti kan en bruker manuelt velge den partispesifikke plasseringen og nummerskiltet i stedet for å la systemet velge dem automatisk. Denne funksjonen er knyttet til utformingen av den ordreigangsatte partireservasjonsmekanismen. Som nevnt tidligere, gjelder følgende: Når et partinummer er reservert for en vare under "Parti under\[plassering\]"-reservasjonsretningslinjen må systemet reservere alle dimensjoner opp gjennom plasseringen. Derfor vil lagerarbeid ha de samme lagringsdimensjonene som ble reservert av brukerne som jobbet med ordrene, og det kan hende at det ikke alltid representerer varelagerplasseringen som er praktisk, eller til og med mulig, for plukkeoperasjoner. Hvis ordreprosessorer er klare over lagerbegrensningene, kan det være lurt manuelt å velge de spesifikke plasseringene og nummerskiltene når de reserverer et parti. I slike tilfeller må brukeren bruke **Visningsdimensjoner**-funksjonaliteten på sidetoppteksten og legge til plasseringen og nummerskiltet i rutenettet på **Oversikt**-hurtigfanen.
+    - I tillegg til å reservere et bestemt parti kan en bruker manuelt velge den partispesifikke plasseringen og nummerskiltet i stedet for å la systemet velge dem automatisk. Denne funksjonen er knyttet til utformingen av den ordreigangsatte partireservasjonsmekanismen. Som nevnt tidligere, gjelder følgende: Når et partinummer er reservert for en vare under *Parti-under\[plassering\]*-reservasjonsretningslinjen må systemet reservere alle dimensjoner opp gjennom plasseringen. Derfor vil lagerarbeid ha de samme lagringsdimensjonene som ble reservert av brukerne som jobbet med ordrene, og det kan hende at det ikke alltid representerer varelagerplasseringen som er praktisk, eller til og med mulig, for plukkeoperasjoner. Hvis ordreprosessorer er klare over lagerbegrensningene, kan det være lurt manuelt å velge de spesifikke plasseringene og nummerskiltene når de reserverer et parti. I slike tilfeller må brukeren bruke **Visningsdimensjoner**-funksjonaliteten på sidetoppteksten og legge til plasseringen og nummerskiltet i rutenettet på **Oversikt**-hurtigfanen.
 
 6. På **Partireservasjon**-siden velger du linjen for parti **B11**, og velger deretter **Reserver linje**. Det er ikke angitt noen logikk for tilordning av plasseringen og nummerskilt under automatisk reservasjon. Du kan angi kvantiteten manuelt i **Reservasjon**-feltet. Vær oppmerksom på at **Partinumre bundet til kildelinjen**-hurtigfanen, parti **B11** vises som **Bind**.
 
@@ -172,7 +170,7 @@ For dette eksempelet må demonstrasjonsdata være installert, og du må bruke **
     Arbeidet som håndterer plukkoperasjonen for partikvantiteter som er bundet til salgsordrelinjen, har følgende egenskaper:
 
     - For opprettelse av arbeid bruker systemet arbeidsmaler, men ikke plasseringsdirektiver. Alle standardinnstillingene som er definert for arbeidsmaler, for eksempel et maksimalt antall plukklinjer eller en bestemt måleenhet, brukes for å bestemme når nytt arbeid skal opprettes. Reglene som er assosiert med plasseringsdirektiver for identifisering av plukkplasseringer blir ikke vurdert, fordi den ordreigangsatte reservasjonen allerede angir alle beholdningsdimensjonene. Disse beholdningsdimensjonene inkluderer dimensjonene på lageroppbevaringsnivået. Derfor arver arbeidet disse dimensjonene uten å måtte sjekke plasseringsdirektiver.
-    - Partinummeret vises ikke på plukklinjen (noe som også er tilfelle for arbeidslinjen som opprettes for en vare som har et tilknyttet "Parti over\[plassering\]"-reservasjonshierarki). I stedet vises "fra"-partinummeret og alle andre lagringsdimensjoner på arbeidslinjens arbeidsbeholdningstransaksjon som det henvises til fra de tilhørende beholdningstransaksjonene.
+    - Partinummeret vises ikke på plukklinjen (noe som også er tilfelle for arbeidslinjen som opprettes for en vare som har et tilknyttet *Parti-over\[plassering\]*-reservasjonshierarki). I stedet vises "fra"-partinummeret og alle andre lagringsdimensjoner på arbeidslinjens arbeidsbeholdningstransaksjon som det henvises til fra de tilhørende beholdningstransaksjonene.
 
         ![Lagerbeholdningstransaksjon for arbeid som stammer fra ordreigangsatt reservasjon](media/Work-inventory-transactions-for-order-committed-reservation.png)
 
@@ -215,7 +213,7 @@ Du kan aktivere reservasjon av nummerskilt for ordren på et hvilket som helst s
 
 Selv om det er merket av for **Tillat reservasjon på etterspørselsordre** for **Nummerskilt**-nivået, er det fremdeles mulig *ikke* å reservere et bestemt nummerskilt i ordren. I dette tilfellet gjelder standard lageroperasjonslogikk som er gyldig for reservasjonshierarkiet.
 
-Hvis du vil reservere et bestemt nummerskilt, må du bruke en prosess av typen [åpen dataprotokoll (OData)](../../fin-ops-core/dev-itpro/data-entities/odata.md). I appen kan du foreta denne reservasjonen direkte fra en salgsordre ved å bruke alternativet **Ordreigangsatte reservasjoner per nummerskilt** for kommandoen **Åpne i Excel**. I enhetsdataene som åpnes i Excel-tillegget, må du angi følgende data for reservasjon, og deretter velge **Publiser** for å sende dataene tilbake til Supply Chain Management:
+Hvis du vil reservere en bestemt lisensavtale, må du bruke en prosess av typen [Open Data Protocol (OData)](../../fin-ops-core/dev-itpro/data-entities/odata.md). I programmet kan du gjøre denne reservasjonen direkte fra en salgsordre ved å bruke alternativet **Ordreigangsatte reservasjoner per nummerskilt** under kommandoen **Åpne i Excel**. I enhetsdataene som åpnes i Excel-tillegget, må du angi følgende data for reservasjon, og deretter velge **Publiser** for å sende dataene tilbake til Supply Chain Management:
 
 - Referanse (bare *Salgsordre*-verdien støttes.)
 - Ordrenummer (verdien kan avledes fra partiet).
@@ -409,7 +407,7 @@ Følgende tabeller inneholder en oversikt som viser hvordan systemet håndterer 
 <td>Ja</td>
 <td>
 <ol>
-<li>Velg <strong>Overstyr plassering</strong>-menyelementet på lagerappen når du begynner plukkarbeid.</li>
+<li>Velg <strong>Overstyr plassering</strong>-menyelementet i mobilappen Lagerstyring når du begynner plukkarbeid.</li>
 <li>Velg <strong>Foreslå</strong>.</li>
 <li>Bekreft den nye plasseringen som foreslås, basert på tilgjengeligheten av partikvantitet.</li>
 </ol>
@@ -423,10 +421,10 @@ Følgende tabeller inneholder en oversikt som viser hvordan systemet håndterer 
 <td>Gjelder ikke</td>
 </tr>
 <tr>
-<td>Nei</td>
+<td>Ingen</td>
 <td>
 <ol>
-<li>Velg <strong>Overstyr plassering</strong>-menyelementet på lagerappen når du begynner plukkarbeid.</li>
+<li>Velg <strong>Overstyr plassering</strong>-menyelementet i mobilappen Lagerstyring når du begynner plukkarbeid.</li>
 <li>Angi en plassering manuelt.</li>
 </ol>
 </td>
@@ -454,7 +452,7 @@ Følgende tabeller inneholder en oversikt som viser hvordan systemet håndterer 
 <td>Gjelder ikke</td>
 <td>
 <ol>
-<li>Velg menyelementet <strong>Full</strong> på lagerappen når du behandler plukkarbeid.</li>
+<li>Velg menyelementet <strong>Full</strong> i mobilappen Lagerstyring når du behandler plukkarbeid.</li>
 <li>I <strong>Plukkvantitet</strong>-feltet angir du en delvis kvantitet for den påkrevde plukkingen for å indikere hele kapasiteten.</li>
 </ol>
 </td>
@@ -529,7 +527,7 @@ Følgende tabeller inneholder en oversikt som viser hvordan systemet håndterer 
 <td>Ja</td>
 <td>
 <ol>
-<li>Start en flytting på lagerappen.</li>
+<li>Start en bevegelse i mobilappen Lagerstyring.</li>
 <li>Angi "fra"- og "til"-plasseringene.</li>
 </ol></td>
 <td>
@@ -645,7 +643,7 @@ Følgende tabeller inneholder en oversikt som viser hvordan systemet håndterer 
 <td>Ja</td>
 <td>
 <ol>
-<li>Velg <strong>Plukk med mangler</strong>-menyelementet på lagerappen når du kjører plukkarbeid.</li>
+<li>Velg menyelementet <strong>Plukk med mangler</strong> i mobilappen Lagerstyring når du kjører plukkarbeid.</li>
 <li>I feltet <strong>Plukkekvantitet</strong> angir du <strong>0</strong> (null).</li>
 <li>I <strong>Årsak</strong>-feltet angir du <strong>Ingen ny fordeling</strong>.</li>
 </ol>
@@ -674,7 +672,7 @@ Følgende tabeller inneholder en oversikt som viser hvordan systemet håndterer 
 <td>Ja</td>
 <td>
 <ol>
-<li>Velg <strong>Plukk med mangler</strong>-menyelementet på lagerappen når du kjører plukkarbeid.</li>
+<li>Velg menyelementet <strong>Plukk med mangler</strong> i mobilappen Lagerstyring når du kjører plukkarbeid.</li>
 <li>I feltet <strong>Plukkekvantitet</strong> angir du <strong>0</strong> (null).</li>
 <li>I <strong>Årsak</strong>-feltet angir du <strong>Ingen ny fordeling</strong>.</li>
 </ol>
@@ -698,7 +696,7 @@ Følgende tabeller inneholder en oversikt som viser hvordan systemet håndterer 
 <td>Ja</td>
 <td>
 <ol>
-<li>Velg <strong>Plukk med mangler</strong>-menyelementet på lagerappen når du kjører plukkarbeid.</li>
+<li>Velg menyelementet <strong>Plukk med mangler</strong> i mobilappen Lagerstyring når du kjører plukkarbeid.</li>
 <li>I <strong>Kvantitet for plukking med mangler</strong>-feltet angir du <strong>0</strong> (null).</li>
 <li>I <strong>Årsak</strong>-feltet velger du <strong>Plukking med mangler med manuell omfordeling</strong>.</li>
 <li>Velg plasseringen/nummerskiltet i listen.</li>
@@ -721,10 +719,10 @@ Følgende tabeller inneholder en oversikt som viser hvordan systemet håndterer 
 </tr>
 <tr>
 <td>Et arbeidsunntak av <strong>Plukk med mangler</strong>-typen settes opp, der <strong>Ny fordeling av vare</strong> = <strong>Manuell</strong>, <strong>Juster beholdning</strong> = <strong>Ja</strong> og <strong>Fjern reservasjoner</strong> = <strong>Nei</strong>. I tillegg er <strong>Tillat manuell omfordeling av varer</strong>-alternativet aktivert for arbeideren.</td>
-<td>Nei</td>
+<td>Ingen</td>
 <td>
 <ol>
-<li>Velg <strong>Plukk med mangler</strong>-menyelementet på lagerappen når du kjører plukkarbeid.</li>
+<li>Velg menyelementet <strong>Plukk med mangler</strong> i mobilappen Lagerstyring når du kjører plukkarbeid.</li>
 <li>I <strong>Kvantitet for plukking med mangler</strong>-feltet angir du <strong>0</strong> (null).</li>
 <li>I <strong>Årsak</strong>-feltet velger du <strong>Plukking med mangler med manuell omfordeling</strong>.</li>
 </ol>
@@ -734,10 +732,10 @@ Følgende tabeller inneholder en oversikt som viser hvordan systemet håndterer 
 </tr>
 <tr>
 <td>Et arbeidsunntak av <strong>Plukk med mangler</strong>-typen settes opp, der <strong>Ny fordeling av vare</strong> = <strong>Manuell</strong>, <strong>Juster beholdning</strong> = <strong>Ja</strong> og <strong>Fjern reservasjoner</strong> = <strong>Ja</strong>. I tillegg er <strong>Tillat manuell omfordeling av varer</strong>-alternativet aktivert for arbeideren.</td>
-<td>Nei</td>
+<td>Ingen</td>
 <td>
 <ol>
-<li>Velg <strong>Plukk med mangler</strong>-menyelementet på lagerappen når du kjører plukkarbeid.</li>
+<li>Velg menyelementet <strong>Plukk med mangler</strong> i mobilappen Lagerstyring når du kjører plukkarbeid.</li>
 <li>I <strong>Kvantitet for plukking med mangler</strong>-feltet angir du <strong>0</strong> (null).</li>
 <li>I <strong>Årsak</strong>-feltet velger du <strong>Plukking med mangler med manuell omfordeling</strong>.</li>
 <li>Velg plasseringen/nummerskiltet i listen.</li>
@@ -761,7 +759,7 @@ Følgende tabeller inneholder en oversikt som viser hvordan systemet håndterer 
 <td>Gjelder ikke</td>
 <td>
 <ol>
-<li>Velg <strong>Plukk med mangler</strong>-menyelementet på lagerappen når du kjører plukkarbeid.</li>
+<li>Velg menyelementet <strong>Plukk med mangler</strong> i mobilappen Lagerstyring når du kjører plukkarbeid.</li>
 <li>I <strong>Kvantitet for plukking med mangler</strong>-feltet angir du <strong>0</strong> (null).</li>
 <li>I <strong>Årsak</strong>-feltet velger du <strong>Plukking med mangler med automatisk omfordeling</strong>.</li>
 </ol>
@@ -853,6 +851,14 @@ Følgende tabeller inneholder en oversikt som viser hvordan systemet håndterer 
     - Plukking av overføringsordrer og råvarer
 
 - Regelen for konsolidering av containere for pakking etter direktivenhet har begrensninger. For ordreigangsatte reservasjoner anbefaler vi at du ikke bruker maler for containerbygging i tilfeller der **Pakk etter direktivenhet**-feltet er aktivert. I gjeldende utforming brukes ikke plasseringsdirektiver når det opprettes lagerarbeid. Derfor brukes bare den laveste enheten i enhetssekvensgruppen (beholdningsenheten) under bølgetrinnet containerbruk.
+
+## <a name="see-also"></a>Se også
+
+- [Partinumre i Lagerstyring](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/batch-numbers-in-warehouse-management)
+- [Reservere samme parti for en salgsordre](../sales-marketing/reserve-same-batch-sales-order.md)
+- [Plukke eldste parti på en mobilenhet](pick-oldest-batch.md)
+- [Parti- og nummerskiltbekreftelse](batch-and-license-plate-confirmation.md)
+- [Feilsøke reserveringer i lagerstyring](troubleshoot-warehouse-reservations.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

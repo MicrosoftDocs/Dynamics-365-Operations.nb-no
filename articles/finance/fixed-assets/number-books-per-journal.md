@@ -2,11 +2,9 @@
 title: Antall tablåer per journal
 description: Dette emnet beskriver relasjonen mellom journalene og aktivatablåene når du oppretter en anleggsmiddelanskaffelse eller et avskrivningsforslag via en satsvis jobb. Du kan definere maksimalt antall tablåer som skal tas med for hver anskaffelse og for avskrivning.
 author: moaamer
-manager: Ann Beebe
 ms.date: 11/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-11-19
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 7f266e458802e65f0955ae8f8933f9bee2eca972
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: e948b4353d0216f1e09019a98319e343bd535861
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5256721"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5822039"
 ---
 # <a name="number-of-books-per-journal"></a>Antall tablåer per journal
 
@@ -43,11 +41,14 @@ Du kan bruke satsvis behandling til å kjøre avskrivning for samme settet med a
 
 Jobben for satsvis behandling utelukker lukkede tablåer. I en satsvis jobb for avskrivning, er for eksempel 10 i de første 2 000 tablåene lukket. I dette tilfellet vil den første journalen inneholde tablåer som er knyttet til anleggsmidlene som er nummerert fra 1 til og med 2011. Den andre journalen vil deretter inneholde tablåer som er knyttet til anleggsmidlene som er nummerert fra 2012 til og med 4000.
 
+> [!NOTE]
+> Hvis du har ID-er for anleggsmidler med forskjellige skilletegn (for eksempel – eller /), og du oppretter anleggsmiddeltransaksjoner i satsvise jobber, må du kjøre en egen satsvis jobb for hver type skilletegn. Systemet kan ikke behandle forskjellige skilletegn innenfor den samme satsvise jobben.
+
 Grensen for antall tabler brukes hvis dupliserte aktiva-IDer ikke finnes i samme journal. Hvis aktiva-IDen er den samme som tablå-IDen, kan imidlertid antall tablåer per journal overstiges for å beholde aktiva-IDen i samme journal.
 
 Det finnes for eksempel 5 001 anleggsmiddel-IDer, tre tablåer er knyttet til hver anleggsmiddel-ID, og hvert anleggsmiddeltablå posteres til det samme posteringslaget. Du kjører avskrivning for tre påfølgende måneder, uten sammendrag.  Avskrivningsjournalen blir opprettet ved hjelp av en satsvis jobb, og systemet vil opprette sju journaler som har 667 anleggsmiddel-IDer og tre tablåer for hver anleggsmiddel-ID. Resultatet vil være 2 001 tablåer. I løpet av tre måneder vil det derfor være 6 003 journallinjer for å vedlikeholde de samme anleggsmiddel-IDene i samme journal. Systemet vil også opprette én journal som har 332 anleggsmiddel-IDer og tre tablåer for hver anleggsmiddel-ID. I løpet av tre måneder vil det være 2 988 linjer.
 
-> [!Note] 
+> [!NOTE] 
 > Hvis parameteren **Summer avskrivning** er aktivert når du oppretter et avskrivningsforslag, har ikke verdien i feltet **Antall tablåer per journal – Avskrivningsforslag** noen virkning. I dette tilfellet er antallet tablåer per journal 6000, som er den interne definerte grensen.
 
 

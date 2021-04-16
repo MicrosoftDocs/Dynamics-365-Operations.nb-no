@@ -2,7 +2,6 @@
 title: Netto innkjøpspris vs. Transportstyring
 description: 'Microsoft Dynamics 365 Supply Chain Management tilbyr to forskjellige moduler for arbeid med transport: Transportstyring (TMS) og Netto innkjøpspris. Dette emnet oppsummerer funksjonaliteten de to modulene har til felles, og fremhever forskjellene mellom dem.'
 author: sherry-zheng
-manager: tfehr
 ms.date: 12/04/2020
 ms.topic: article
 ms.prod: ''
@@ -15,17 +14,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-04
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 9349537754d7e6fd0e278c55d5d762267953800c
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: bb5ecaa237eed2a1902c965fd42b31cc1708a4e2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500724"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5833863"
 ---
 # <a name="landed-cost-vs-transportation-management"></a>Netto innkjøpspris vs. Transportstyring
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Microsoft Dynamics 365 Supply Chain Management tilbyr to forskjellige moduler for arbeid med transport: **Transportstyring** (TMS) and **Netto innkjøpspris**. Dette emnet oppsummerer funksjonaliteten de to modulene har til felles, og fremhever forskjellene mellom dem. Du kan bruke denne informasjonen til å avgjøre hvilken modul som passer best til din forretningspraksis. Du vil kanskje finne ut at en forretningspraksis fungerer bedre med TMS, mens en annen fungerer best med Netto innkjøpspris. Avhengig av forretningskravene kan du deretter velge å bruke én modul eksklusivt, eller du kan kombinere de to modulene.
 
@@ -158,15 +156,15 @@ Både TMS og Netto innkjøpspris formidler funksjonalitet for administrasjon av 
 
 ### <a name="tms-receiving-by-container-features"></a>Funksjoner for mottak i container i TMS
 
-TMS støtter innkommende ASN-er, alle varianter av mottak via lagerappen og alle mottaksmetoder via Supply Chain Management-klienten.
+TMS støtter innkommende ASN-er, alle varianter av mottak via mobilappen Lagerstyring og alle mottaksmetoder via Supply Chain Management-klienten.
 
 ### <a name="landed-cost-receiving-by-container-features"></a>Funksjoner for mottak i container i Netto innkjøpspris
 
 Når det gjelder mottak i container, oppretter Netto innkjøpspris forsendelsescontainerposter og knytter bestillinger til en bestemt forsendelsescontainer ved hjelp av container-ID-en. Indirekte kostnader kan deretter brukes på denne forsendelsescontaineren, slik at de knyttes til de relevante bestillingene.
 
-Containere i Netto innkjøpspris kan mottas ved hjelp av en ny mottakstype som er kjent som *mottak av varer i transitt*, via ankomstjournaler eller mobilenhetsmottak. Når ankomstjournaler brukes, kan antallene initialiseres fra ordren for varene i transitt eller de opprinnelige bestillingslinjene i containeren. Netto innkjøpspris formidler to arbeidstyper for mottak via lagerappen.
+Containere i Netto innkjøpspris kan mottas ved hjelp av en ny mottakstype som er kjent som *mottak av varer i transitt*, via ankomstjournaler eller mobilenhetsmottak. Når ankomstjournaler brukes, kan antallene initialiseres fra ordren for varene i transitt eller de opprinnelige bestillingslinjene i containeren. Netto innkjøpspris formidler to arbeidstyper for mottak via mobilappen Lagerstyring.
 
-Netto innkjøpspris formidler ikke et ASN for elektronisk mottak av varer. I tillegg støtter ikke modulen lagerappflyter som behandler lastmottak, numerskiltmottak eller mottak av kombinert nummerskilt.
+Netto innkjøpspris formidler ikke et ASN for elektronisk mottak av varer. I tillegg støtter ikke modulen flyter i mobilappen Lagerstyring som behandler lastmottak, numerskiltmottak eller mottak av kombinert nummerskilt.
 
 ## <a name="rate-shopping-by-vendor"></a>Innhenting av rater etter leverandør
 

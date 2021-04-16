@@ -1,12 +1,10 @@
 ---
-title: Komme i gang med tillegget Elektronisk fakturering
-description: Dette emnet inneholder informasjon som vil hjelpe deg med å komme i gang med tillegget Elektronisk fakturering i Microsoft Dynamics 365 Finance og Dynamics 365 Supply Chain Management.
+title: Komme i gang med Elektronisk fakturering
+description: Dette emnet inneholder informasjon som vil hjelpe deg med å komme i gang med Elektronisk fakturering i Microsoft Dynamics 365 Finance og Dynamics 365 Supply Chain Management.
 author: gionoder
-manager: AnnBe
-ms.date: 02/22/2021
+ms.date: 03/29/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,83 +15,82 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 56227e031f8205836bcae9ce26006fc8091c2863
-ms.sourcegitcommit: 543772ee97efe215cf6f2ec6e092cc1568919f20
+ms.openlocfilehash: cf553f2ffecf18859b88932e68360231ca46410f
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "5592556"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840130"
 ---
-# <a name="get-started-with-the-electronic-invoicing-add-on"></a>Komme i gang med tillegget Elektronisk fakturering
+# <a name="get-started-with-electronic-invoicing"></a>Komme i gang med Elektronisk fakturering
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet inneholder informasjon som vil hjelpe deg med å komme i gang med tillegget Elektronisk fakturering.
-
-Tabellen nedenfor viser funksjonene for elektronisk fakturering og forretningsdokumentene de kan brukes på.
-
-| Funksjonsnavn                         | Forretningsdokument |
-|--------------------------------------|-------------------|
-| Østerrikske elektroniske fakturaer (AT)    | <p>Salgsfaktura</p><p>Prosjektfaktura</p> |
-| Belgisk elektronisk faktura (BE)      | <p>Salgsfaktura</p><p>Prosjektfaktura</p> |
-| Brasiliansk NF-e (BR)                  | <p>Regnskapsdokumentmodell 55</p><p>Korreksjonsbrev</p> |
-| Brasiliansk NFS-e ABRASF Curitiba (BR) | Skattedokument for tjeneste |
-| Dansk elektronisk faktura (DK)       | <p>Salgsfaktura</p><p>Prosjektfaktura</p> |
-| Egyptisk elektronisk faktura (EG)     | <p>Salgsfaktura</p><p>Prosjektfaktura</p> |
-| Estisk elektronisk faktura (EE)     | <p>Salgsfaktura</p><p>Prosjektfaktura</p> |
-| Finsk elektronisk faktura (FI)       | <p>Salgsfaktura</p><p>Prosjektfaktura</p> |
-| Fransk elektronisk faktura (FR)       | <p>Salgsfaktura</p><p>Prosjektfaktura</p> |
-| Tysk elektronisk faktura (DE)       | <p>Salgsfaktura</p><p>Prosjektfaktura</p> |
-| FatturaPA (IT)                       | <p>Salgsfaktura</p><p>Prosjektfaktura</p> |
-| Meksikansk CFDI Interfactura (MX)       | <p>Salgsfaktura</p><p>Følgeseddel</p><p>Lageroverføring</p><p>Betalingstillegg</p> |
-| Nederlandsk elektronisk faktura (NL)        | <p>Salgsfaktura</p><p>Prosjektfaktura</p> |
-| Norsk elektronisk faktura (NO)    | <p>Salgsfaktura</p><p>Prosjektfaktura</p> |
-| Spansk elektronisk faktura (ES)      | <p>Salgsfaktura</p><p>Prosjektfaktura</p> |
-| Elektronisk faktura i PEPPOL-format            | <p>Salgsfaktura</p><p>Prosjektfaktura</p> |
+Dette emnet inneholder informasjon som vil hjelpe deg med å komme i gang med elektronisk fakturering. Dette emnet leder deg gjennom de vanlige konfigurasjonstrinnene i RCS (Regulatory Configuration Services) og Dynamics 365 Finance, og beskriver trinnene du må følge for å sende forretningsdokumenter og gjennomgå behandlingsresultatene.
 
 ## <a name="prerequisites"></a>Forutsetninger
 
 Før du kan fullføre trinnene i dette emnet må følgende forutsetninger være på plass:
 
-- Konfigurer Regulatory Configuration Service (RCS) og Microsoft Dynamics 365 Finance- eller Dynamics 365 Supply Chain Management-miljøet, slik at du kan sende til tillegget for elektronisk fakturering.
-- Opprett et servicemiljø, og publiser det i tillegget for elektronisk fakturering. Hvis du vil ha mer informasjon, kan du se [Komme i gang med tjenesteadministrasjon for tillegget for elektronisk fakturering](e-invoicing-get-started-service-administration.md).
-- Opprett et tilkoblet program. Hvis du vil ha mer informasjon, kan du se [Komme i gang med tjenesteadministrasjon for tillegget for elektronisk fakturering](e-invoicing-get-started-service-administration.md).
+- Konfigurer Microsoft Dynamics Lifecycle Services (LCS), RCS (Regulatory Configuration Service) og Microsoft Dynamics 365 Finance- eller Dynamics 365 Supply Chain Management-miljøet ditt. Hvis du vil ha mer informasjon, kan du se [Komme i gang med tjenesteadministrasjon for elektronisk fakturering](e-invoicing-get-started-service-administration.md).
 - Opprett en konfigurasjonsleverandør for organisasjonen. Hvis du ha mer informasjon, kan du se [Opprette konfigurasjonsleverandører og merke dem som aktive](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
 ## <a name="import-an-electronic-invoicing-feature-from-the-microsoft-configuration-provider"></a>Importere en funksjon for elektronisk fakturering fra Microsoft-konfigurasjonsleverandøren 
 
 1. Logg deg på kontoen for Regulatory Configuration Service (RCS).
-2. I delen **Funksjoner** i arbeidsområdet **Globaliseringsfunksjon** velger du flisen **Tillegg for elektronisk fakturering**.
+2. I arbeidsområdet **Globaliseringsfunksjon**, i **Funksjoner**-delen velger du flisen **Elektronisk fakturering**.
 3. Velg **Importer**, og velg deretter **Synkroniser**.
 4. Filtrer **Konfigurasjonsleverandør**-kolonnen etter termen **Microsoft**.
 5. Velg navnet på en funksjon for elektronisk fakturering fra tabellen i begynnelsen av dette emnet, og velg deretter **Importer**.
 
 ## <a name="create-an-electronic-invoicing-feature-under-your-organization-provider"></a>Opprette en funksjon for Elektronisk fakturering under organisasjonsleverandøren
 
-1. I RCS velger du flisen **Tillegg for elektronisk fakturering** i delen **Funksjoner** i arbeidsområdet **Globaliseringsfunksjon**.
+1. I RCS, i **Funksjoner**-delen i arbeidsområdet **Globaliseringsfunksjon** velger du flisen **Elektronisk fakturering**.
 2. Velg **Legg til** > **Basert på eksisterende funksjon**, og i feltet **Navn** angir du navnet på funksjonen for Elektronisk fakturering.
 3. I **Beskrivelse**-feltet skriver du inn en beskrivelse av funksjonen.
 4. I **Basefunksjonsfeltet** velger du den importerte funksjonen for elektronisk fakturering fra Microsofts konfigurasjonsleverandør.
 5. Velg **Opprett funksjon**.
 
-## <a name="configure-the-electronic-invoicing-feature"></a>Konfigurere funksjonene for Elektronisk fakturering
+## <a name="country-specific-configuration-for-electronic-invoicing-feature"></a>Landspesifikk konfigurasjon for funksjon for elektronisk fakturering
 
-Avhengig av landet eller området kan det hende at funksjonen for Elektronisk fakturering krever tilleggskonfigurasjon. 
+Avhengig av landet eller området kan det hende at funksjonen for Elektronisk fakturering krever spesifikk konfigurasjon. 
 
 Hvis du vil ha mer informasjon om disse trinnene, kan du se i "Komme i gang"-dokumentasjonen som er tilgjengelig for landet eller området ditt.
+
+## <a name="import-the-model-mapping-configurations-from-electronic-reporting"></a>Importer konfigurasjoner av modelltilordning fra elektronisk rapportering
+
+1. Velg arbeidsområdet **Elektronisk rapportering** i RCS.
+2. Fra listen over **Microsoft**-konfigurasjonsleverandører velger du **Repositorier**.
+3. Velg **Globalt**, og velg deretter **Åpne** i handlingsruten.
+4. Importer modelltilordningskonfigurasjonene i henhold til følgende tabell etter funksjonsnavn.
+
+| Funksjonsnavn                         | Modelltilordningskonfigurasjon |
+|--------------------------------------|-----------------------------|
+| Østerrikske elektroniske fakturaer (AT)    | <p>Kontekstmodell for kundefaktura</p><p>Fakturamodell</p> |
+| Belgisk elektronisk faktura (BE)      | <p>Kontekstmodell for kundefaktura</p><p>Fakturamodell</p> |
+| Brasiliansk NF-e (BR)                  | <p>Kontekstmodell for kundefaktura</p><p>Regnskapsdokumenter</p><p>Svarmeldingsmodell</p> |
+| Brasiliansk NFS-e ABRASF Curitiba (BR) | <p>Kontekstmodell for kundefaktura</p><p>Regnskapsdokumenter</p><p>Svarmeldingsmodell</p> |
+| Dansk elektronisk faktura (DK)       | <p>Kontekstmodell for kundefaktura</p><p>Fakturamodell</p> |
+| Egyptisk elektronisk faktura (EG)     | <p>Kontekstmodell for kundefaktura</p><p>Fakturamodell</p><p>Svarmeldingsmodell</p> |
+| Estisk elektronisk faktura (EE)     | <p>Kontekstmodell for kundefaktura</p><p>Fakturamodell</p> |
+| Finsk elektronisk faktura (FI)       | <p>Kontekstmodell for kundefaktura</p><p>Fakturamodell</p> |
+| Fransk elektronisk faktura (FR)       | <p>Kontekstmodell for kundefaktura</p><p>Fakturamodell</p> |
+| Tysk elektronisk faktura (DE)       | <p>Kontekstmodell for kundefaktura</p><p>Fakturamodell</p> |
+| FatturaPA (IT)                       | <p>Kontekstmodell for kundefaktura</p><p>Fakturamodell</p> |
+| Meksikansk CFDI Interfactura (MX)       | <p>Kontekstmodell for kundefaktura</p><p>Fakturamodell</p><p>Svarmeldingsmodell</p> |
+| Nederlandsk elektronisk faktura (NL)        | <p>Kontekstmodell for kundefaktura</p><p>Fakturamodell</p> |
+| Norsk elektronisk faktura (NO)    | <p>Kontekstmodell for kundefaktura</p><p>Fakturamodell</p> |
+| Spansk elektronisk faktura (ES)      | <p>Kontekstmodell for kundefaktura</p><p>Fakturamodell</p> |
+| Elektronisk faktura i PEPPOL-format            | <p>Kontekstmodell for kundefaktura</p><p>Fakturamodell</p> |
+
 
 ## <a name="configure-the-application-setup"></a>Konfigurere programoppsettet
 
 1. Velg funksjonen for Elektronisk fakturering som du opprettet.
-2. I kategorien **Versjon** kontrollerer du at versjonen **Utkast** er valgt.
-3. Velg **Programoppsett** i kategorien **Oppsett**.
-
-    > [!NOTE]
-    > Kontroller at organisasjonen er angitt som **Aktiv** konfigurasjonsleverandør. Hvis du ha mer informasjon, kan du se [Opprette konfigurasjonsleverandører og merke dem som aktive.](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
-
-4. Velg **Funksjonsoppsett**, og velg deretter **Tilkoblet program**.
-5. I delen **Elektroniske dokumenttyper** velger du **Legg til**.
-6. For hvert forretningsdokument som funksjonen støtter, velger og angir du en **Tabellnavn**-verdi i henhold til følgende tabell.
+2. Velg **Programoppsett** i kategorien **Oppsett**.
+3. Velg tilkoblingen som er knyttet til forekomsten av Finance eller Supply Chain Management i feltet **Koble til program**.
+4. I delen **Elektroniske dokumenttyper** velger du **Legg til**.
+5. Velg og angi en verdi for **Tabellnavn** i henhold til følgende tabell.
 
     | Funksjonsnavn                         | Forretningsdokument | Tabellnavn |
     |--------------------------------------|-------------------|------------|
@@ -114,7 +111,7 @@ Hvis du vil ha mer informasjon om disse trinnene, kan du se i "Komme i gang"-dok
     | Spansk elektronisk faktura (ES)      | <p>Salgsfaktura</p><p>Prosjektfaktura</p> | <p>Kundefakturajournal</p><p>Prosjektfaktura</p> |
     | Elektronisk faktura i PEPPOL-format            | <p>Salgsfaktura</p><p>Prosjektfaktura</p> | <p>Kundefakturajournal</p><p>Prosjektfaktura</p> |
 
-7. For hvert forretningsdokument som funksjonen støtter, velger og angir du en **Kontekst**-verdi i henhold til følgende tabell.
+7. For hvert tabellnavn du oppretter, velger og angir du en kontekstverdi i henhold til følgende tabell.
 
     | Funksjonsnavn                         | Forretningsdokument | Kontekst |
     |--------------------------------------|-------------------|---------|
@@ -135,7 +132,7 @@ Hvis du vil ha mer informasjon om disse trinnene, kan du se i "Komme i gang"-dok
     | Spansk elektronisk faktura (ES)      | <p>Salgsfaktura</p><p>Prosjektfaktura</p> | <p>Kontekstmodell for kundefaktura – kundefakturakontekst</p><p>Kontekstmodell for kundefaktura – projektfakturakontekst</p> |
     | Elektronisk faktura i PEPPOL-format            | <p>Salgsfaktura</p><p>Prosjektfaktura</p> | <p>Kontekstmodell for kundefaktura – kundefakturakontekst</p><p>Kontekstmodell for kundefaktura – projektfakturakontekst</p> |
 
-8. For hvert forretningsdokument som funksjonen støtter, velger og angir du en **Forretningsdokumenttilordning**-verdi i henhold til følgende tabell.
+8. For hvert taballnavn og kontekst velger og angir du en verdi for tilordning av forretningsdokument i henhold til følgende tabell.
 
     | Funksjonsnavn                         | Forretningsdokument | Tilordning av forretningsdokument |
     |--------------------------------------|-------------------|---------------------------|
@@ -156,21 +153,32 @@ Hvis du vil ha mer informasjon om disse trinnene, kan du se i "Komme i gang"-dok
     | Spansk elektronisk faktura (ES)      | <p>Salgsfaktura</p><p>Prosjektfaktura</p> | <p>Fakturamodelltilordning – kundefaktura</p><p>Fakturamodelltilordning – prosjektfaktura</p> |
     | Elektronisk faktura i PEPPOL-format            | <p>Salgsfaktura</p><p>Prosjektfaktura</p> | <p>Fakturamodelltilordning – kundefaktura</p><p>Fakturamodelltilordning – prosjektfaktura</p> |
 
-Avhengig av landet eller området kan det hende at funksjonen for Elektronisk fakturering krever tilleggskonfigurasjon.
+
+## <a name="country-specific-configuration-of-application-setup"></a>Landspesifikk konfigurasjon av programoppsett
+
+Avhengig av landet eller området kan det hende at programoppsettet krever spesifikk konfigurasjon. 
 
 Hvis du vil ha mer informasjon om disse trinnene, kan du se i "Komme i gang"-dokumentasjonen som er tilgjengelig for landet eller området ditt.
 
-## <a name="deploy-the-electronic-invoicing-feature"></a>Distribuere funksjonene for Elektronisk fakturering
+## <a name="deploy-the-electronic-invoicing-feature-to-service-environment"></a>Distribuere funksjonen for elektronisk fakturering til servicemiljø
 
 1. Velg versjonen av funksjonen for Elektronisk fakturering du vil distribuere, i kategorien **Versjoner**.
 2. Velg **Endre status** \> **Fullført**.
 3. Velg **Endre status** \> **Publiser**.
 4. Velg **Distribuer**.
+5. Sett alternativet **Distribuer til tilkoblet program** til **Nei**.
+6. Sett alternativet **Distribuer til servicemiljø** til **Ja**.
+7. I feltet **Servicemiljø** velger du servicemiljøet for Elektronisk fakturering der du vil distribuere funksjonen for Elektronisk fakturering.
+8. I **Fra dato**-feltet velger du datoen da funksjonen for Elektronisk fakturering må bli gyldig i Elektronisk fakturering.
+9. Velg **OK**.
+
+## <a name="deploy-the-electronic-invoicing-feature-to-connected-application"></a>Distribuere funksjonen for elektronisk fakturering til et tilkoblet program
+
+1. Velg en versjon av funksjonen for Elektronisk fakturering du vil distribuere, i kategorien **Versjoner**.
+4. Velg **Distribuer**.
 5. Sett alternativet **Distribuer til tilkoblet program** til **Ja**.
-6. Velg tilkoblingen som er knyttet til forekomsten av Finance eller Supply Chain Management på siden **Koble til program**.
-7. Sett alternativet **Distribuer til servicemiljø** til **Ja**.
-8. I feltet **Servicemiljø** velger du servicemiljøet for tillegget Elektronisk fakturering der du vil distribuere funksjonen for Elektronisk fakturering.
-9. I **Fra dato**-feltet velger du datoen da funksjonen for Elektronisk fakturering må bli gyldig i tillegget for Elektronisk fakturering.
+6. Velg tilkoblingen som er knyttet til forekomsten av Finance eller Supply Chain Management i feltet **Koble til program**.
+7. Sett alternativet **Distribuer til servicemiljø** til **Nei**.
 10. Velg **OK**.
 
 ## <a name="turn-on-the-electronic-invoicing-feature-in-finance-or-supply-chain-management"></a>Slå på funksjonen for Elektronisk fakturering i Finance eller Supply Chain Management
@@ -228,11 +236,11 @@ Hvis du vil ha mer informasjon om disse trinnene, kan du se i "Komme i gang"-dok
 
 ## <a name="related-topics"></a>Relaterte emner
 
-- [Oversikt over tillegg for elektronisk fakturering](e-invoicing-service-overview.md)
-- [Komme i gang med tjenesteadministrasjon for tillegget for elektronisk fakturering](e-invoicing-get-started-service-administration.md)
-- [Komme i gang med tillegget Elektronisk fakturering for Brasil](e-invoicing-bra-get-started.md)
-- [Komme i gang med tillegget Elektronisk fakturering for Mexico](e-invoicing-mex-get-started.md)
-- [Komme i gang med tillegget Elektronisk fakturering for Italia](e-invoicing-ita-get-started.md)
+- [Oversikt over elektronisk fakturering](e-invoicing-service-overview.md)
+- [Komme i gang med tjenesteadministrasjon for elektronisk fakturering](e-invoicing-get-started-service-administration.md)
+- [Komme i gang med Elektronisk fakturering for Brasil](e-invoicing-bra-get-started.md)
+- [Komme i gang med Elektronisk fakturering for Mexico](e-invoicing-mex-get-started.md)
+- [Komme i gang med Elektronisk fakturering for Italia](e-invoicing-ita-get-started.md)
 - [Elektroniske fakturaer for kunde i Egypt](emea-egy-e-invoices.md)
 
 

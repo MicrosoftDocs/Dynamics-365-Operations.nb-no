@@ -2,11 +2,9 @@
 title: Opprette og tilordne en kostnadsfordelingspolicy til en kostnadskontrollenhet
 description: Bruk denne fremgangsmåten til å opprette og tilordne en policy for tildeling av kostnader og de tilsvarende til en enhet for kontroll av kostnaden.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/28/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMCostAccountingLedgerPolicyAssignment
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b22dba0106721c095e6ce2e9b76cb9f5267e1c28
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 1cff10132e8007be885e9c69d97cf96c30d69f50
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5208733"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5822861"
 ---
 # <a name="create-and-assign-a-cost-allocation-policy-to-a-cost-control-unit"></a>Opprette og tilordne en kostnadsfordelingspolicy til en kostnadskontrollenhet
 
