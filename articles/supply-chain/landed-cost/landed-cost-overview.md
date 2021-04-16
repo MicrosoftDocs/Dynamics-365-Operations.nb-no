@@ -2,7 +2,6 @@
 title: Modulen Netto innkjøpspris
 description: Modulen Netto innkjøpspris hjelper virksomheter med å strømlinjeforme innkommende forsendelsesoperasjoner ved å gi brukere fullstendig økonomisk kontroll og logistikkontroll over importert frakt, fra produsent til lager.
 author: sherry-zheng
-manager: tfehr
 ms.date: 12/07/2020
 ms.topic: article
 ms.prod: ''
@@ -15,17 +14,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 9d04c377080a1d301efb771b98c249f610a3289d
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 524fcdbcf9ba607fe9bcec1f1e894beb45f265e6
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500338"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823343"
 ---
 # <a name="landed-cost-module"></a>Modulen Netto innkjøpspris
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Modulen **Netto innkjøpspris** hjelper virksomheter med å strømlinjeforme innkommende forsendelsesoperasjoner ved å gi brukere fullstendig økonomisk kontroll og logistikkontroll over importert frakt, fra produsent til lager. For importerte varer kan netto innkjøpspris utgjøre 40 prosent eller mer av den totale kostnaden for hver importerte vare. Derfor er utfordringen å gi nøyaktige estimater for netto innkjøpspris.
 

@@ -2,11 +2,9 @@
 title: Arbeide med forhåndsinnstillinger for stil
 description: Dette emnet beskriver hvordan du arbeider med forhåndsinnstillinger for områdestiler i områdebyggeren for Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-manager: annbe
 ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,20 +14,18 @@ ms.search.region: Global
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 55d333c3ae94b17dabaef3c697c698f068a06543
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 7279b52f801c2cb2f156d220d1a456b773d10f33
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5226597"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5791757"
 ---
 # <a name="work-with-style-presets"></a>Arbeide med forhåndsinnstillinger for stil
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet beskriver hvordan du arbeider med forhåndsinnstillinger for områdestiler i områdebyggeren for Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Oversikt
 
 En forhåndsinnstilling for stil er et lagret sett med alle redigerbare stilverdier i hele temaet for området. Den kan brukes til øyeblikkelig å endre utseendet på et område i områdebygger. Med forhåndsinnstillinger for stil kan Commerce-områdebyggere raskt endre, forhåndsvise og aktivere et sett med stilverdier for hele området uten å måtte bruke CSS eller distribuere temaer. Skriftstiler, knappestiler og områdefarger er vanlige eksempler på stilvariabler som kan behandles gjennom forhåndsinnstillinger for stil.
 

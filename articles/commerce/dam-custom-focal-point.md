@@ -2,11 +2,9 @@
 title: Tilpasse bildefokuspunkter
 description: Dette emnet beskriver hvordan du tilpasser bildefokuspunkter i områdebygger for Microsoft Dynamics 365 Commerce.
 author: psimolin
-manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -17,20 +15,18 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: fca209c9827192f50c2f1a5bd9e78146214e1e0e
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 962caff0e8e41487231c6075fa7b2df2a59dca48
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5222567"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5799307"
 ---
 # <a name="customize-image-focal-points"></a>Tilpasse bildefokuspunkter
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet beskriver hvordan du tilpasser bildefokuspunkter i områdebygger for Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Oversikt
 
 Når et bilde lastes opp til mediebiblioteket for Commerce-områdebygger, prøver systemet å bestemme bildets fokuspunkt. Hvis for eksempel bildet har en person på seg, vil systemet sette fokuspunktet til personens ansikt som er standard. I de fleste tilfeller fungerer fokuspunktet automatisk bra for alle visningsporter, men noen ganger vil du kanskje justere fokuspunktet for å sikre at en bestemt del av bildet alltid er synlig.
 

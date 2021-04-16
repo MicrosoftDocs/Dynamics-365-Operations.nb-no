@@ -2,30 +2,27 @@
 title: Behandling av Faktisk vekt-produkt med lagerstyring
 description: Dette emnet beskriver hvordan du bruker arbeidsmaler og lokasjonsdirektiver for å bestemme hvordan og hvor arbeid utføres i lageret.
 author: perlynne
-manager: tfehr
 ms.date: 08/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSCatchWeightTag, WHSCatchWeightItemHandlingPolicy, TMSLoadBuildWorkbench
+ms.search.form: WHSCatchWeightTag, WHSCatchWeightItemHandlingPolicy, TMSLoadBuildWorkbench, WHSCatchWeightTagRegistration, WHSCatchWeightTagFullDimDiscrepancies, WHSCatchWeightTagChangeWeightDropDownDialog, WHSCatchWeightLinkWorkLineTagDropDownDialog
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 45f8d53b5ac212866a9c693e0039631507e14dd7
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 3882e40b4083f9246a03db3078cae8e18bec3c1e
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5233085"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5808924"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>Behandling av Faktisk vekt-produkt med lagerstyring
 
 [!include [banner](../includes/banner.md)]
-
 
 ## <a name="feature-exposure"></a>Funksjonseksponering
 
@@ -52,7 +49,7 @@ Siden vekten på lagerbeholdningen når den kommer inn på et lager kan være fo
 > [!NOTE]
 > Mobilenhetsaktivitet vil bare utløse transaksjonsjusteringer hvis metoden for utgående vektavvik for varens policy for behandling av faktisk vekt-varer er **Tillat vektavvik**.
 
-**Eksempel 1**
+### <a name="example-1"></a>Eksempel 1
 
 Under produksjonsprosessen **Rapporter som fullført** registreres den innkommende vekten for et nummerskilt som inneholder åtte bokser med et faktisk vekt-produkt, som 80,1 kg. Nummerskiltet lagres deretter i området for ferdigvarer, og i løpet av lagringsperioden reduseres vekten noe.
 
@@ -60,7 +57,7 @@ Senere i salgsordreplukkingsprosessen blir vekten for det samme nummerskiltet re
 
 I dette tilfellet justerer systemet automatisk forskjellen ved å postere en transaksjon for den manglende 0,3 kg.
 
-**Eksempel 2**
+### <a name="example-2"></a>Eksempel 2
 
 I definisjonen er et produkt konfigurert til å godta en minimumsvekt på 8 kg og en maksimumsvekt på 12 kg for faktisk vekt-enheten **Boks**.
 
@@ -106,7 +103,7 @@ Når en vare spores av kode, finnes parameteren **Registreringsmetode for utgåe
 **Når sporing av faktisk vekt-koder brukes**, må en kode alltid opprettes for hver faktisk vekt-enhet som mottas, og hver kode må alltid være knyttet til en vekt.
 
 For eksempel **Boks** er faktisk vekt-enheten, og du får én pall med åtte bokser. I dette tilfellet må det opprettes åtte unike faktisk vekt-koder, og en vekt må knyttes til hver kode. Avhengig av den innkommende faktisk vekt-koden, kan enten vekten på alle åtte boksene registreres og gjennomsnittlig vekt kan deretter distribueres til hver boks, eller en unik vekt kan registreres for hver boks.
-Når du bruker funksjonen **Bruk eksisterende variabel vekt-koder ved rapportering av produksjonsordrer som ferdigstilte** med prosessen aktivert via et menyelement for mobilenhet, blir lageret oppdatert basert på eksisterende informasjon om variabel vekt-kode. Som et resultat ber ikke lagerappen om å registrere variabel vekt-kodedataene som en del av en produksjonsrapport som en ferdig operasjon.
+Når du bruker funksjonen **Bruk eksisterende variabel vekt-koder ved rapportering av produksjonsordrer som ferdigstilte** med prosessen aktivert via et menyelement for mobilenhet, blir lageret oppdatert basert på eksisterende informasjon om variabel vekt-kode. Som et resultat ber ikke mobilappen Lagerstyring om å registrere variabel vekt-kodedataene som en del av en produksjonsrapport som en ferdig operasjon.
 
 **Når sporing av faktisk vekt-koder ikke brukes**, kan vekten registres for hvert dimensjonssett (for eksempel for hver(t) nummerskilt og sporingsdimensjon). Vekten kan også registreres basert på et aggregert nivå, for eksempel fem nummerskilt (paller).
 
@@ -194,7 +191,11 @@ Ikke alle arbeidsflyter støtter behandling av faktisk vekt-produkter med lagers
 
 ### <a name="catch-weight-tags"></a>Faktisk vekt-koder
 
-En kode for faktisk vekt kan opprettes ved hjelp av en lagerapprosess, den kan opprettes manuelt i skjemaet, eller den kan opprettes ved hjelp av en dataenhetsprosess. Hvis en kode for faktisk vekt blir knyttet til en innkommende kildedokumentlinje, for eksempel bestillingslinjen, registreres koden. Hvis linjen brukes til utgående behandling, blir koden oppdatert som levert.
+En kode for faktisk vekt kan opprettes ved hjelp av en prosess i mobilappen Lagerstyring, den kan opprettes manuelt i skjemaet **Lagerstyring > Forespørsler og rapporter > Faktisk vekt-kode**, eller den kan opprettes ved hjelp av en dataenhetsprosess. Hvis en kode for faktisk vekt blir knyttet til en innkommende kildedokumentlinje, for eksempel bestillingslinjen, registreres koden. Hvis linjen brukes til utgående behandling, blir koden oppdatert som levert. Du kan vise alle de historiske registreringshendelsene for faktisk vekt-kode via alternativet for **Registrering av faktisk vekt-kode** fra siden **Faktisk vekt-kode**.
+
+Du kan bruke alternativet **Endre faktisk vekt-kode** til å oppdatere vektverdien for en varig faktisk vekt-kode manuelt. Legg merke til at vekten for lagerbeholdningen ikke blir justert som en del av denne manuelle prosessen, men du kan lett bruke siden **Beholdningsavvik for varer med faktisk vekt-kode** til å slå opp eventuelle avvik mellom de gjeldende aktive faktisk vekt-kodene og den gjeldende lagerbeholdningen.
+
+Andre manuelle alternativer er **Registrer kode** på en kildedokumentlinje og **Registrer arbeid** mot et eksisterende lagerarbeid.
 
 I tillegg til begrensningene som for øyeblikket gjelder for faktisk vekt-produkter, har kodede, faktisk vekt-produkter andre begrensninger som gjelder for øyeblikket.
 
