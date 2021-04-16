@@ -2,10 +2,8 @@
 title: Skrive ut og kansellere bølgeetiketter
 description: Dette emnet beskriver hvordan du annullerer og skriver ut eksisterende bølgeetiketter på nytt.
 author: GarmMSFT
-manager: PJacobse
 ms.date: 07/09/2020
 ms.topic: article
-ms.service: dynamics-ax-applications
 ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSWaveTableListPage, WHSWorkException, WHSMobileDisplayWaveLabelListLookup, WHSWaveLabelLayout, WHSWaveLabelType, WHSWaveLabelTemplateGroup
 audience: Application User
 ms.reviewer: PJacobse
@@ -13,12 +11,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-09
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 3d67052d47cf23acbb51354773fbd306545bbfa7
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 0b309a0e40541463db4d71fa9e7cac5db2d799be
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5228375"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5817371"
 ---
 # <a name="reprint-and-void-wave-labels"></a>Skrive ut og kansellere bølgeetiketter
 
@@ -218,5 +216,8 @@ Arbeidsunntak kontrollerer virkemåten til plukking med mangler. Følg disse tri
 1. Velg arbeidsunntakskoden du opprettet for dette scenariet.
 1. Hvis du valgte det riktige unntaket, vil avmerkingsboksen **Annuller og skriv ut på nytt** være tilgjengelig. Merk av i denne boksen og bekreft. Ved bekreftelse blir etikettrullsekvensen som identifiseres av feltet **Etikettversjons-ID**, beregnet på nytt basert på det endrede arbeidslinjeantallet. Den skrives deretter ut på nytt på den angitte skriveren.
 
+## <a name="additional-resources"></a>Tilleggsressurser
+
+- [Bølgeetikettutskrift](configure-wave-label-printing.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

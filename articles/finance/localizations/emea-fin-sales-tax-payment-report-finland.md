@@ -6,20 +6,18 @@ ms.author: AnnBe
 ms.date: 03/23/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-manager: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Norway
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1864ca6a1db24ea38cc1f55f53cf29fbd794eeb9
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b650d70bcd0cd802707b446b3fafef05af25c960
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5226199"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5826104"
 ---
 # <a name="sales-tax-report-for-finland"></a>Mva-rapport for Finland
 
