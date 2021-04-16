@@ -2,7 +2,6 @@
 title: WHERE ER-funksjonen
 description: Dette emnet gir generell informasjon om hvordan du bruker ER-funksjonen WHERE.
 author: NickSelin
-manager: kfend
 ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
@@ -16,58 +15,58 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ca218f87eb1f9235ab475809fbbdfecf3fe0c7fb
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: bdf5c658fda83399c7bcffeaaf07005164c53f8a
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5566048"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745503"
 ---
-# <a name="where-er-function"></a><span data-ttu-id="32ae3-103">WHERE ER-funksjonen</span><span class="sxs-lookup"><span data-stu-id="32ae3-103">WHERE ER function</span></span>
+# <a name="where-er-function"></a><span data-ttu-id="9d7a2-103">WHERE ER-funksjonen</span><span class="sxs-lookup"><span data-stu-id="9d7a2-103">WHERE ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="32ae3-104">`WHERE`-funksjonen returnerer den angitte listen som en *postliste*-verdi etter at den er filtrert i henhold til den angitte betingelsen.</span><span class="sxs-lookup"><span data-stu-id="32ae3-104">The `WHERE` function returns the specified list as a *Record list* value after it has been filtered according to the specified condition.</span></span>
+<span data-ttu-id="9d7a2-104">`WHERE`-funksjonen returnerer den angitte listen som en *postliste*-verdi etter at den er filtrert i henhold til den angitte betingelsen.</span><span class="sxs-lookup"><span data-stu-id="9d7a2-104">The `WHERE` function returns the specified list as a *Record list* value after it has been filtered according to the specified condition.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="32ae3-105">Syntaks</span><span class="sxs-lookup"><span data-stu-id="32ae3-105">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="9d7a2-105">Syntaks</span><span class="sxs-lookup"><span data-stu-id="9d7a2-105">Syntax</span></span>
 
 ```vb
 WHERE (list, condition)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="32ae3-106">Argumenter</span><span class="sxs-lookup"><span data-stu-id="32ae3-106">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="9d7a2-106">Argumenter</span><span class="sxs-lookup"><span data-stu-id="9d7a2-106">Arguments</span></span>
 
-<span data-ttu-id="32ae3-107">`list`: *Postliste*</span><span class="sxs-lookup"><span data-stu-id="32ae3-107">`list`: *Record list*</span></span>
+<span data-ttu-id="9d7a2-107">`list`: *Postliste*</span><span class="sxs-lookup"><span data-stu-id="9d7a2-107">`list`: *Record list*</span></span>
 
-<span data-ttu-id="32ae3-108">Den gyldige banen til en datakilde av *Postliste*-datatypen.</span><span class="sxs-lookup"><span data-stu-id="32ae3-108">The valid path of a data source of the *Record list* data type.</span></span>
+<span data-ttu-id="9d7a2-108">Den gyldige banen til en datakilde av *Postliste*-datatypen.</span><span class="sxs-lookup"><span data-stu-id="9d7a2-108">The valid path of a data source of the *Record list* data type.</span></span>
 
-<span data-ttu-id="32ae3-109">`condition`: *Boolsk*</span><span class="sxs-lookup"><span data-stu-id="32ae3-109">`condition`: *Boolean*</span></span>
+<span data-ttu-id="9d7a2-109">`condition`: *Boolsk*</span><span class="sxs-lookup"><span data-stu-id="9d7a2-109">`condition`: *Boolean*</span></span>
 
-<span data-ttu-id="32ae3-110">Et gyldig betingelsesuttrykk som brukes til å filtrere poster i den angitte listen.</span><span class="sxs-lookup"><span data-stu-id="32ae3-110">A valid conditional expression that is used to filter records of the specified list.</span></span>
+<span data-ttu-id="9d7a2-110">Et gyldig betingelsesuttrykk som brukes til å filtrere poster i den angitte listen.</span><span class="sxs-lookup"><span data-stu-id="9d7a2-110">A valid conditional expression that is used to filter records of the specified list.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="32ae3-111">Returverdier</span><span class="sxs-lookup"><span data-stu-id="32ae3-111">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="9d7a2-111">Returverdier</span><span class="sxs-lookup"><span data-stu-id="9d7a2-111">Return values</span></span>
 
-<span data-ttu-id="32ae3-112">*Postliste*</span><span class="sxs-lookup"><span data-stu-id="32ae3-112">*Record list*</span></span>
+<span data-ttu-id="9d7a2-112">*Postliste*</span><span class="sxs-lookup"><span data-stu-id="9d7a2-112">*Record list*</span></span>
 
-<span data-ttu-id="32ae3-113">Den resulterende listen over oppføringer.</span><span class="sxs-lookup"><span data-stu-id="32ae3-113">The resulting list of records.</span></span>
+<span data-ttu-id="9d7a2-113">Den resulterende listen over oppføringer.</span><span class="sxs-lookup"><span data-stu-id="9d7a2-113">The resulting list of records.</span></span>
 
-## <a name="usage-notes"></a><span data-ttu-id="32ae3-114">Bruksnotater</span><span class="sxs-lookup"><span data-stu-id="32ae3-114">Usage notes</span></span>
+## <a name="usage-notes"></a><span data-ttu-id="9d7a2-114">Bruksnotater</span><span class="sxs-lookup"><span data-stu-id="9d7a2-114">Usage notes</span></span>
 
-<span data-ttu-id="32ae3-115">Denne funksjonen er ulik [FILTER](er-functions-list-filter.md)-funksjonen fordi den angitte betingelsen brukes på en ER-datakilde av typen *Postposte* som finnes i minnet.</span><span class="sxs-lookup"><span data-stu-id="32ae3-115">This function differs from the [FILTER](er-functions-list-filter.md) function, because the specified condition is applied to any Electronic reporting (ER) data source of the *Record list* type that is present in memory.</span></span>
+<span data-ttu-id="9d7a2-115">Denne funksjonen er ulik [FILTER](er-functions-list-filter.md)-funksjonen fordi den angitte betingelsen brukes på en ER-datakilde av typen *Postposte* som finnes i minnet.</span><span class="sxs-lookup"><span data-stu-id="9d7a2-115">This function differs from the [FILTER](er-functions-list-filter.md) function, because the specified condition is applied to any Electronic reporting (ER) data source of the *Record list* type that is present in memory.</span></span>
 
-<span data-ttu-id="32ae3-116">Hvis argumentene som er konfigurert for denne funksjonen (`list` og `condition`), tillater at denne forespørselen skal oversettes til det direkte SQL-kallet, utløses en varselmelding ved utformingstid.</span><span class="sxs-lookup"><span data-stu-id="32ae3-116">If the arguments that are configured for this function (`list` and `condition`) allow this request to be translated to the direct SQL call, a warning message is thrown at design time.</span></span> <span data-ttu-id="32ae3-117">Denne meldingen informerer brukeren om at ytelsen kan forbedres hvis [FILTER](er-functions-list-filter.md)-funksjonen brukes i stedet for `WHERE`.</span><span class="sxs-lookup"><span data-stu-id="32ae3-117">This message informs the user that performance might be improved if the [FILTER](er-functions-list-filter.md) function is used instead of `WHERE`.</span></span>
+<span data-ttu-id="9d7a2-116">Hvis argumentene som er konfigurert for denne funksjonen (`list` og `condition`), tillater at denne forespørselen skal oversettes til det direkte SQL-kallet, utløses en varselmelding ved utformingstid.</span><span class="sxs-lookup"><span data-stu-id="9d7a2-116">If the arguments that are configured for this function (`list` and `condition`) allow this request to be translated to the direct SQL call, a warning message is thrown at design time.</span></span> <span data-ttu-id="9d7a2-117">Denne meldingen informerer brukeren om at ytelsen kan forbedres hvis [FILTER](er-functions-list-filter.md)-funksjonen brukes i stedet for `WHERE`.</span><span class="sxs-lookup"><span data-stu-id="9d7a2-117">This message informs the user that performance might be improved if the [FILTER](er-functions-list-filter.md) function is used instead of `WHERE`.</span></span>
 
-## <a name="example-1"></a><span data-ttu-id="32ae3-118">Eksempel 1</span><span class="sxs-lookup"><span data-stu-id="32ae3-118">Example 1</span></span>
+## <a name="example-1"></a><span data-ttu-id="9d7a2-118">Eksempel 1</span><span class="sxs-lookup"><span data-stu-id="9d7a2-118">Example 1</span></span>
 
-<span data-ttu-id="32ae3-119">Hvis **Leverandør** er konfigurert som en ER-datakilde som refererer til VendTable-tabellen, returnerer uttrykket `WHERE (Vendors, Vendors.VendGroup = "40")` en liste over bare leverandører som tilhører leverandørgruppe 40.</span><span class="sxs-lookup"><span data-stu-id="32ae3-119">If **Vendor** is configured as an ER data source that refers to the VendTable table, the expression `WHERE (Vendors, Vendors.VendGroup = "40")` returns a list of only vendors that belong to vendor group 40.</span></span>
+<span data-ttu-id="9d7a2-119">Hvis **Leverandør** er konfigurert som en ER-datakilde som refererer til VendTable-tabellen, returnerer uttrykket `WHERE (Vendors, Vendors.VendGroup = "40")` en liste over bare leverandører som tilhører leverandørgruppe 40.</span><span class="sxs-lookup"><span data-stu-id="9d7a2-119">If **Vendor** is configured as an ER data source that refers to the VendTable table, the expression `WHERE (Vendors, Vendors.VendGroup = "40")` returns a list of only vendors that belong to vendor group 40.</span></span>
 
-## <a name="example-2"></a><span data-ttu-id="32ae3-120">Eksempel 2</span><span class="sxs-lookup"><span data-stu-id="32ae3-120">Example 2</span></span>
+## <a name="example-2"></a><span data-ttu-id="9d7a2-120">Eksempel 2</span><span class="sxs-lookup"><span data-stu-id="9d7a2-120">Example 2</span></span>
 
-<span data-ttu-id="32ae3-121">Hvis du angir datakilden **DS** for typen *Beregnet felt*, og den inneholder uttrykket `SPLIT ("A|B|C", "|")`, returnerer uttrykket `WHERE( DS, DS.Value = "B")` en liste med bare én post som inneholder teksten **"B"** i **Verdi**-feltet.</span><span class="sxs-lookup"><span data-stu-id="32ae3-121">If you enter data source **DS** of the *Calculated field* type, and it contains the expression `SPLIT ("A|B|C", "|")`, the expression `WHERE( DS, DS.Value = "B")` returns a list of only one record that contains the text **"B"** in the **Value** field.</span></span>
+<span data-ttu-id="9d7a2-121">Hvis du angir datakilden **DS** for typen *Beregnet felt*, og den inneholder uttrykket `SPLIT ("A|B|C", "|")`, returnerer uttrykket `WHERE( DS, DS.Value = "B")` en liste med bare én post som inneholder teksten **"B"** i **Verdi**-feltet.</span><span class="sxs-lookup"><span data-stu-id="9d7a2-121">If you enter data source **DS** of the *Calculated field* type, and it contains the expression `SPLIT ("A|B|C", "|")`, the expression `WHERE( DS, DS.Value = "B")` returns a list of only one record that contains the text **"B"** in the **Value** field.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="32ae3-122">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="32ae3-122">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="9d7a2-122">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="9d7a2-122">Additional resources</span></span>
 
-[<span data-ttu-id="32ae3-123">Listefunksjoner</span><span class="sxs-lookup"><span data-stu-id="32ae3-123">List functions</span></span>](er-functions-category-list.md)
+[<span data-ttu-id="9d7a2-123">Listefunksjoner</span><span class="sxs-lookup"><span data-stu-id="9d7a2-123">List functions</span></span>](er-functions-category-list.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

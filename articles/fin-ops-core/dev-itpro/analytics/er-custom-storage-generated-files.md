@@ -2,7 +2,6 @@
 title: Angi egendefinerte lagerplasseringer for genererte dokumenter
 description: Dette emnet forklarer hvordan du utvider listen over lagringssteder for dokumenter som genereres av Elektronisk rapportering (ER)-formater.
 author: NickSelin
-manager: AnnBe
 ms.date: 10/29/2020
 ms.topic: article
 ms.prod: ''
@@ -13,53 +12,53 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 146e7fb5fefbecabc99c2978b52eb0e782da0322
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 25719de3d86785442e00f7375de525b95bdb094d
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5562220"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5753702"
 ---
-# <a name="specify-custom-storage-locations-for-generated-documents"></a><span data-ttu-id="7a224-103">Angi egendefinerte lagerplasseringer for genererte dokumenter</span><span class="sxs-lookup"><span data-stu-id="7a224-103">Specify custom storage locations for generated documents</span></span>
+# <a name="specify-custom-storage-locations-for-generated-documents"></a><span data-ttu-id="085b8-103">Angi egendefinerte lagerplasseringer for genererte dokumenter</span><span class="sxs-lookup"><span data-stu-id="085b8-103">Specify custom storage locations for generated documents</span></span>
 
 [!include[banner](../includes/banner.md)]
 
-<span data-ttu-id="7a224-104">API (Application programming interface) for Elektronisk rapportering-rammeverket (ER) lar deg utvide listen over lagringssteder for dokumenter som ER-formater genererer.</span><span class="sxs-lookup"><span data-stu-id="7a224-104">The application programming interface (API) of the Electronic reporting (ER) framework lets you extend the list of storage locations for documents that ER formats generate.</span></span> <span data-ttu-id="7a224-105">Dette emnet forklarer hvordan du legger til en egendefinert lagringsplassering for genererte dokumenter ved å delegere oppgaven med å opprette ER-mål til standardmålfabrikk og deretter implementere en egendefinert klasse som har sin egen logikk.</span><span class="sxs-lookup"><span data-stu-id="7a224-105">This topic explains how to add a custom storage location for generated documents by delegating the task of creating ER destinations to the default destination factory and then implementing a custom class that has its own destination logic.</span></span>
+<span data-ttu-id="085b8-104">API (Application programming interface) for Elektronisk rapportering-rammeverket (ER) lar deg utvide listen over lagringssteder for dokumenter som ER-formater genererer.</span><span class="sxs-lookup"><span data-stu-id="085b8-104">The application programming interface (API) of the Electronic reporting (ER) framework lets you extend the list of storage locations for documents that ER formats generate.</span></span> <span data-ttu-id="085b8-105">Dette emnet forklarer hvordan du legger til en egendefinert lagringsplassering for genererte dokumenter ved å delegere oppgaven med å opprette ER-mål til standardmålfabrikk og deretter implementere en egendefinert klasse som har sin egen logikk.</span><span class="sxs-lookup"><span data-stu-id="085b8-105">This topic explains how to add a custom storage location for generated documents by delegating the task of creating ER destinations to the default destination factory and then implementing a custom class that has its own destination logic.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="7a224-106">Forutsetninger</span><span class="sxs-lookup"><span data-stu-id="7a224-106">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="085b8-106">Forutsetninger</span><span class="sxs-lookup"><span data-stu-id="085b8-106">Prerequisites</span></span>
 
-<span data-ttu-id="7a224-107">Distribuer en topologi som støtter fortløpende bygging.</span><span class="sxs-lookup"><span data-stu-id="7a224-107">Deploy a topology that supports continuous build.</span></span> <span data-ttu-id="7a224-108">Hvis du vil ha mer informasjon, kan du se [Distribuere topologier som støtter sammenhengende automatisering av bygging og testing](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation).</span><span class="sxs-lookup"><span data-stu-id="7a224-108">For more information, see [Deploy topologies that support continuous build and test automation](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation).</span></span> <span data-ttu-id="7a224-109">Du må ha tilgang til denne topologien for én av følgende roller:</span><span class="sxs-lookup"><span data-stu-id="7a224-109">You must have access to this topology for one of the following roles:</span></span>
+<span data-ttu-id="085b8-107">Distribuer en topologi som støtter fortløpende bygging.</span><span class="sxs-lookup"><span data-stu-id="085b8-107">Deploy a topology that supports continuous build.</span></span> <span data-ttu-id="085b8-108">Hvis du vil ha mer informasjon, kan du se [Distribuere topologier som støtter sammenhengende automatisering av bygging og testing](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation).</span><span class="sxs-lookup"><span data-stu-id="085b8-108">For more information, see [Deploy topologies that support continuous build and test automation](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation).</span></span> <span data-ttu-id="085b8-109">Du må ha tilgang til denne topologien for én av følgende roller:</span><span class="sxs-lookup"><span data-stu-id="085b8-109">You must have access to this topology for one of the following roles:</span></span>
 
-- <span data-ttu-id="7a224-110">Utvikler av elektronisk rapportering</span><span class="sxs-lookup"><span data-stu-id="7a224-110">Electronic reporting developer</span></span>
-- <span data-ttu-id="7a224-111">Funksjonell konsulent for elektronisk rapportering</span><span class="sxs-lookup"><span data-stu-id="7a224-111">Electronic reporting functional consultant</span></span>
-- <span data-ttu-id="7a224-112">Systemansvarlig</span><span class="sxs-lookup"><span data-stu-id="7a224-112">System administrator</span></span>
+- <span data-ttu-id="085b8-110">Utvikler av elektronisk rapportering</span><span class="sxs-lookup"><span data-stu-id="085b8-110">Electronic reporting developer</span></span>
+- <span data-ttu-id="085b8-111">Funksjonell konsulent for elektronisk rapportering</span><span class="sxs-lookup"><span data-stu-id="085b8-111">Electronic reporting functional consultant</span></span>
+- <span data-ttu-id="085b8-112">Systemansvarlig</span><span class="sxs-lookup"><span data-stu-id="085b8-112">System administrator</span></span>
 
-<span data-ttu-id="7a224-113">Du må også ha tilgang til utviklingsmiljøet for denne topologien.</span><span class="sxs-lookup"><span data-stu-id="7a224-113">You must also have access to the development environment for this topology.</span></span>
+<span data-ttu-id="085b8-113">Du må også ha tilgang til utviklingsmiljøet for denne topologien.</span><span class="sxs-lookup"><span data-stu-id="085b8-113">You must also have access to the development environment for this topology.</span></span>
 
-<span data-ttu-id="7a224-114">Alle oppgavene i dette emnet kan fullføres i **USMF**-firmaet.</span><span class="sxs-lookup"><span data-stu-id="7a224-114">All the tasks in this topic can be completed in the **USMF** company.</span></span>
+<span data-ttu-id="085b8-114">Alle oppgavene i dette emnet kan fullføres i **USMF**-firmaet.</span><span class="sxs-lookup"><span data-stu-id="085b8-114">All the tasks in this topic can be completed in the **USMF** company.</span></span>
 
-## <a name="import-the-fixed-asset-roll-forward-er-format"></a><span data-ttu-id="7a224-115">Importere ER-formatet Rull anleggsmidler forover</span><span class="sxs-lookup"><span data-stu-id="7a224-115">Import the Fixed asset roll forward ER format</span></span>
+## <a name="import-the-fixed-asset-roll-forward-er-format"></a><span data-ttu-id="085b8-115">Importere ER-formatet Rull anleggsmidler forover</span><span class="sxs-lookup"><span data-stu-id="085b8-115">Import the Fixed asset roll forward ER format</span></span>
 
-<span data-ttu-id="7a224-116">For å generere dokumentene du planlegger å legge til en egendefinert lagringsplassering for, kan du [importere](er-download-configurations-global-repo.md) ER-formatkonfigurasjonen **Rull anleggsmidler forover** til gjeldende topologi.</span><span class="sxs-lookup"><span data-stu-id="7a224-116">To generate the documents that you plan to add a custom storage location for, [import](er-download-configurations-global-repo.md) the **Fixed asset roll forward** ER format configuration into the current topology.</span></span>
+<span data-ttu-id="085b8-116">For å generere dokumentene du planlegger å legge til en egendefinert lagringsplassering for, kan du [importere](er-download-configurations-global-repo.md) ER-formatkonfigurasjonen **Rull anleggsmidler forover** til gjeldende topologi.</span><span class="sxs-lookup"><span data-stu-id="085b8-116">To generate the documents that you plan to add a custom storage location for, [import](er-download-configurations-global-repo.md) the **Fixed asset roll forward** ER format configuration into the current topology.</span></span>
 
 ![Konfigurasjonsrepositorium-side](./media/er-custom-storage-generated-files-import-format.png)
 
-## <a name="run-the-fixed-asset-roll-forward-report"></a><span data-ttu-id="7a224-118">Kjøre Rull anleggsmidler forover-rapporten</span><span class="sxs-lookup"><span data-stu-id="7a224-118">Run the Fixed asset roll forward report</span></span>
+## <a name="run-the-fixed-asset-roll-forward-report"></a><span data-ttu-id="085b8-118">Kjøre Rull anleggsmidler forover-rapporten</span><span class="sxs-lookup"><span data-stu-id="085b8-118">Run the Fixed asset roll forward report</span></span>
 
-1. <span data-ttu-id="7a224-119">Gå til **Anleggsmidler** \> **Forespørsler og rapporter** \> **Transaksjonsrapporter** \> **Rull anleggsmidler forover**.</span><span class="sxs-lookup"><span data-stu-id="7a224-119">Go to **Fixed assets** \> **Inquiries and reports** \> **Transaction reports** \> **Fixed asset roll forward**.</span></span>
-2. <span data-ttu-id="7a224-120">Angi **1/1/2017** (1. januar 2017) i **Fra dato**-feltet.</span><span class="sxs-lookup"><span data-stu-id="7a224-120">In the **From date** field, enter **1/1/2017** (January 1, 2017).</span></span>
-3. <span data-ttu-id="7a224-121">Angi **1/31/2017** (31. januar 2017) i **Til dato**-feltet.</span><span class="sxs-lookup"><span data-stu-id="7a224-121">In the **To date** field, enter **1/31/2017** (January 31, 2017).</span></span>
-4. <span data-ttu-id="7a224-122">I **Valuta-felt** velger du **Regnskapsvaluta**.</span><span class="sxs-lookup"><span data-stu-id="7a224-122">In the **Currency field**, select **Accounting currency**.</span></span>
-5. <span data-ttu-id="7a224-123">I feltet **Formattilordning** velger du **Rull anleggsmidler forover**.</span><span class="sxs-lookup"><span data-stu-id="7a224-123">In the **Format mapping** field, select **Fixed asset roll forward**.</span></span>
-6. <span data-ttu-id="7a224-124">Velg **OK**.</span><span class="sxs-lookup"><span data-stu-id="7a224-124">Select **OK**.</span></span>
+1. <span data-ttu-id="085b8-119">Gå til **Anleggsmidler** \> **Forespørsler og rapporter** \> **Transaksjonsrapporter** \> **Rull anleggsmidler forover**.</span><span class="sxs-lookup"><span data-stu-id="085b8-119">Go to **Fixed assets** \> **Inquiries and reports** \> **Transaction reports** \> **Fixed asset roll forward**.</span></span>
+2. <span data-ttu-id="085b8-120">Angi **1/1/2017** (1. januar 2017) i **Fra dato**-feltet.</span><span class="sxs-lookup"><span data-stu-id="085b8-120">In the **From date** field, enter **1/1/2017** (January 1, 2017).</span></span>
+3. <span data-ttu-id="085b8-121">Angi **1/31/2017** (31. januar 2017) i **Til dato**-feltet.</span><span class="sxs-lookup"><span data-stu-id="085b8-121">In the **To date** field, enter **1/31/2017** (January 31, 2017).</span></span>
+4. <span data-ttu-id="085b8-122">I **Valuta-felt** velger du **Regnskapsvaluta**.</span><span class="sxs-lookup"><span data-stu-id="085b8-122">In the **Currency field**, select **Accounting currency**.</span></span>
+5. <span data-ttu-id="085b8-123">I feltet **Formattilordning** velger du **Rull anleggsmidler forover**.</span><span class="sxs-lookup"><span data-stu-id="085b8-123">In the **Format mapping** field, select **Fixed asset roll forward**.</span></span>
+6. <span data-ttu-id="085b8-124">Velg **OK**.</span><span class="sxs-lookup"><span data-stu-id="085b8-124">Select **OK**.</span></span>
 
 ![Dialogboksen for kjøretid for Rull anleggsmidler forover-rapporten](./media/er-custom-storage-generated-files-runtime-dialog.png)
 
-<span data-ttu-id="7a224-126">I Microsoft Excel kan du se gjennom det utgående dokumentet som er generert og tilgjengelig for nedlasting.</span><span class="sxs-lookup"><span data-stu-id="7a224-126">In Microsoft Excel, review the outbound document that is generated and available for download.</span></span> <span data-ttu-id="7a224-127">Denne virkemåten er [standard virkemåte](electronic-reporting-destinations.md#default-behavior) for et ER-format som ingen [mål](electronic-reporting-destinations.md) er konfigurert for, og som kjører i interaktiv modus.</span><span class="sxs-lookup"><span data-stu-id="7a224-127">This behavior is the [default behavior](electronic-reporting-destinations.md#default-behavior) for an ER format that no [destinations](electronic-reporting-destinations.md) are configured for, and that is running in interactive mode.</span></span>
+<span data-ttu-id="085b8-126">I Microsoft Excel kan du se gjennom det utgående dokumentet som er generert og tilgjengelig for nedlasting.</span><span class="sxs-lookup"><span data-stu-id="085b8-126">In Microsoft Excel, review the outbound document that is generated and available for download.</span></span> <span data-ttu-id="085b8-127">Denne virkemåten er [standard virkemåte](electronic-reporting-destinations.md#default-behavior) for et ER-format som ingen [mål](electronic-reporting-destinations.md) er konfigurert for, og som kjører i interaktiv modus.</span><span class="sxs-lookup"><span data-stu-id="085b8-127">This behavior is the [default behavior](electronic-reporting-destinations.md#default-behavior) for an ER format that no [destinations](electronic-reporting-destinations.md) are configured for, and that is running in interactive mode.</span></span>
 
-## <a name="review-the-source-code"></a><span data-ttu-id="7a224-128">Gå gjennom kildekoden</span><span class="sxs-lookup"><span data-stu-id="7a224-128">Review the source code</span></span>
+## <a name="review-the-source-code"></a><span data-ttu-id="085b8-128">Gå gjennom kildekoden</span><span class="sxs-lookup"><span data-stu-id="085b8-128">Review the source code</span></span>
 
-<span data-ttu-id="7a224-129">Gå gjennom koden for `generateReportByGER()`-metoden for `AssetRollForwardService`-klasse.</span><span class="sxs-lookup"><span data-stu-id="7a224-129">Review the code of the `generateReportByGER()` method of the `AssetRollForwardService` class.</span></span> <span data-ttu-id="7a224-130">Legg merke til at `Run()`-metoden brukes til å kalle opp ER-rammeverket og generere rapporten **Rull anleggsmidler forover**.</span><span class="sxs-lookup"><span data-stu-id="7a224-130">Notice that the `Run()` method is used to call the ER framework and generate the **Fixed asset roll forward** report.</span></span>
+<span data-ttu-id="085b8-129">Gå gjennom koden for `generateReportByGER()`-metoden for `AssetRollForwardService`-klasse.</span><span class="sxs-lookup"><span data-stu-id="085b8-129">Review the code of the `generateReportByGER()` method of the `AssetRollForwardService` class.</span></span> <span data-ttu-id="085b8-130">Legg merke til at `Run()`-metoden brukes til å kalle opp ER-rammeverket og generere rapporten **Rull anleggsmidler forover**.</span><span class="sxs-lookup"><span data-stu-id="085b8-130">Notice that the `Run()` method is used to call the ER framework and generate the **Fixed asset roll forward** report.</span></span>
 
 ```xpp
 class AssetRollForwardService extends SysOperationServiceBase
@@ -113,12 +112,12 @@ class AssetRollForwardService extends SysOperationServiceBase
 }
 ```
 
-## <a name="modify-the-source-code"></a><span data-ttu-id="7a224-131">Endre kildekoden</span><span class="sxs-lookup"><span data-stu-id="7a224-131">Modify the source code</span></span>
+## <a name="modify-the-source-code"></a><span data-ttu-id="085b8-131">Endre kildekoden</span><span class="sxs-lookup"><span data-stu-id="085b8-131">Modify the source code</span></span>
 
-1. <span data-ttu-id="7a224-132">I Visual Studio-prosjektet legger du til en ny klasse (`AssetRollForwardDestination` i dette eksemplet), og skriver kode for å implementere det egendefinerte målet for **Rull anleggsmidler forover**-rapporter som genereres.</span><span class="sxs-lookup"><span data-stu-id="7a224-132">In your Visual Studio project, add a new class (`AssetRollForwardDestination` in this example), and write code to implement your custom destination for **Fixed asset roll forward** reports that are generated.</span></span>
+1. <span data-ttu-id="085b8-132">I Visual Studio-prosjektet legger du til en ny klasse (`AssetRollForwardDestination` i dette eksemplet), og skriver kode for å implementere det egendefinerte målet for **Rull anleggsmidler forover**-rapporter som genereres.</span><span class="sxs-lookup"><span data-stu-id="085b8-132">In your Visual Studio project, add a new class (`AssetRollForwardDestination` in this example), and write code to implement your custom destination for **Fixed asset roll forward** reports that are generated.</span></span>
 
-    - <span data-ttu-id="7a224-133">`new()`-metoden er utformet for å hente det opprinnelige ER-målobjektet og den programlogikkbaserte parameteren som angir den egendefinerte lokasjonen der genererte rapporter skal lagres.</span><span class="sxs-lookup"><span data-stu-id="7a224-133">The `new()` method is designed to get the original ER destination object and the application logic–driven parameter that specifies the custom location where generated reports should be stored.</span></span> <span data-ttu-id="7a224-134">I dette eksemplet er den egendefinerte plasseringen navnet på en mappe i det lokale filsystemet til serveren som kjører AOS-tjenesten.</span><span class="sxs-lookup"><span data-stu-id="7a224-134">In this example, the custom location is the name of a folder of the local file system of the server that runs the Application Object Server (AOS) service.</span></span>
-    - <span data-ttu-id="7a224-135">`saveFile()`-metoden er utformet for å lagre et generert dokument i en mappe i det lokale filsystemet på serveren som kjører AOS-tjenesten.</span><span class="sxs-lookup"><span data-stu-id="7a224-135">The `saveFile()` method is designed to save a generated document to a folder of the local file system of the server that runs the AOS service.</span></span>
+    - <span data-ttu-id="085b8-133">`new()`-metoden er utformet for å hente det opprinnelige ER-målobjektet og den programlogikkbaserte parameteren som angir den egendefinerte lokasjonen der genererte rapporter skal lagres.</span><span class="sxs-lookup"><span data-stu-id="085b8-133">The `new()` method is designed to get the original ER destination object and the application logic–driven parameter that specifies the custom location where generated reports should be stored.</span></span> <span data-ttu-id="085b8-134">I dette eksemplet er den egendefinerte plasseringen navnet på en mappe i det lokale filsystemet til serveren som kjører AOS-tjenesten.</span><span class="sxs-lookup"><span data-stu-id="085b8-134">In this example, the custom location is the name of a folder of the local file system of the server that runs the Application Object Server (AOS) service.</span></span>
+    - <span data-ttu-id="085b8-135">`saveFile()`-metoden er utformet for å lagre et generert dokument i en mappe i det lokale filsystemet på serveren som kjører AOS-tjenesten.</span><span class="sxs-lookup"><span data-stu-id="085b8-135">The `saveFile()` method is designed to save a generated document to a folder of the local file system of the server that runs the AOS service.</span></span>
 
     ```xpp
     using Microsoft.Dynamics365.LocalizationFramework;
@@ -176,7 +175,7 @@ class AssetRollForwardService extends SysOperationServiceBase
     }
     ```
 
-2. <span data-ttu-id="7a224-136">I Visual Studio-prosjektet legger du til en ny klasse (`AssetRollForwardDestinationFactory` i dette eksemplet) og skriver kode for å definere en egendefinert målfabrikk som delegerer opprettelsen av et mål til standardmålfabrikken, og for å bryte en fildestinasjon med ditt eget mål.</span><span class="sxs-lookup"><span data-stu-id="7a224-136">In your Visual Studio project, add a new class (`AssetRollForwardDestinationFactory` in this example), and write code to set up a custom destination factory that delegates the creation of a destination to the default destination factory, and to wrap a file destination with your own destination.</span></span>
+2. <span data-ttu-id="085b8-136">I Visual Studio-prosjektet legger du til en ny klasse (`AssetRollForwardDestinationFactory` i dette eksemplet) og skriver kode for å definere en egendefinert målfabrikk som delegerer opprettelsen av et mål til standardmålfabrikken, og for å bryte en fildestinasjon med ditt eget mål.</span><span class="sxs-lookup"><span data-stu-id="085b8-136">In your Visual Studio project, add a new class (`AssetRollForwardDestinationFactory` in this example), and write code to set up a custom destination factory that delegates the creation of a destination to the default destination factory, and to wrap a file destination with your own destination.</span></span>
 
     ```xpp
     using Microsoft.Dynamics365.LocalizationFramework;
@@ -253,10 +252,10 @@ class AssetRollForwardService extends SysOperationServiceBase
     }
     ```
 
-3. <span data-ttu-id="7a224-137">Endre den eksisterende `AssetRollForwardService`-klassen, og skriv kode for å definere en egendefinert målfabrikk for rapportkjøringen.</span><span class="sxs-lookup"><span data-stu-id="7a224-137">Modify the existing `AssetRollForwardService` class, and write code to set up a custom destination factory for the report runner.</span></span> <span data-ttu-id="7a224-138">Legg merke til at når en egendefinert målfabrikk opprettes, blir den programdrevne parameteren som angir en målmappe, sendt.</span><span class="sxs-lookup"><span data-stu-id="7a224-138">Notice that when a custom destination factory is constructed, the application-driven parameter that specifies a target folder is passed.</span></span> <span data-ttu-id="7a224-139">På denne måten brukes målmappen til å lagre genererte filer.</span><span class="sxs-lookup"><span data-stu-id="7a224-139">In this way, that target folder is used to store generated files.</span></span>
+3. <span data-ttu-id="085b8-137">Endre den eksisterende `AssetRollForwardService`-klassen, og skriv kode for å definere en egendefinert målfabrikk for rapportkjøringen.</span><span class="sxs-lookup"><span data-stu-id="085b8-137">Modify the existing `AssetRollForwardService` class, and write code to set up a custom destination factory for the report runner.</span></span> <span data-ttu-id="085b8-138">Legg merke til at når en egendefinert målfabrikk opprettes, blir den programdrevne parameteren som angir en målmappe, sendt.</span><span class="sxs-lookup"><span data-stu-id="085b8-138">Notice that when a custom destination factory is constructed, the application-driven parameter that specifies a target folder is passed.</span></span> <span data-ttu-id="085b8-139">På denne måten brukes målmappen til å lagre genererte filer.</span><span class="sxs-lookup"><span data-stu-id="085b8-139">In this way, that target folder is used to store generated files.</span></span>
 
     > [!NOTE] 
-    > <span data-ttu-id="7a224-140">Kontroller at den angitte mappen (**c:\\0** i dette eksemplet) finnes i det lokale filsystemet på serveren som kjører AOS-tjenesten.</span><span class="sxs-lookup"><span data-stu-id="7a224-140">Make sure that the specified folder (**c:\\0** in this example) is present in the local file system of the server that runs the AOS service.</span></span> <span data-ttu-id="7a224-141">Hvis ikke vil unntaket [DirectoryNotFoundException](https://docs.microsoft.com/dotnet/api/system.io.directorynotfoundexception?view=netcore-3.1) oppstå under kjøring.</span><span class="sxs-lookup"><span data-stu-id="7a224-141">Otherwise, a [DirectoryNotFoundException](https://docs.microsoft.com/dotnet/api/system.io.directorynotfoundexception?view=netcore-3.1) exception will be thrown at runtime.</span></span>
+    > <span data-ttu-id="085b8-140">Kontroller at den angitte mappen (**c:\\0** i dette eksemplet) finnes i det lokale filsystemet på serveren som kjører AOS-tjenesten.</span><span class="sxs-lookup"><span data-stu-id="085b8-140">Make sure that the specified folder (**c:\\0** in this example) is present in the local file system of the server that runs the AOS service.</span></span> <span data-ttu-id="085b8-141">Hvis ikke vil unntaket [DirectoryNotFoundException](https://docs.microsoft.com/dotnet/api/system.io.directorynotfoundexception?view=netcore-3.1) oppstå under kjøring.</span><span class="sxs-lookup"><span data-stu-id="085b8-141">Otherwise, a [DirectoryNotFoundException](https://docs.microsoft.com/dotnet/api/system.io.directorynotfoundexception?view=netcore-3.1) exception will be thrown at runtime.</span></span>
 
     ```xpp
     using Microsoft.Dynamics365.LocalizationFramework;
@@ -321,25 +320,25 @@ class AssetRollForwardService extends SysOperationServiceBase
     }
     ```
 
-4. <span data-ttu-id="7a224-142">Bygg prosjektet på nytt.</span><span class="sxs-lookup"><span data-stu-id="7a224-142">Rebuild your project.</span></span>
+4. <span data-ttu-id="085b8-142">Bygg prosjektet på nytt.</span><span class="sxs-lookup"><span data-stu-id="085b8-142">Rebuild your project.</span></span>
 
-## <a name="re-run-the-fixed-asset-roll-forward-report"></a><span data-ttu-id="7a224-143">Kjøre Rull anleggsmidler forover-rapporten på nytt</span><span class="sxs-lookup"><span data-stu-id="7a224-143">Re-run the Fixed asset roll forward report</span></span>
+## <a name="re-run-the-fixed-asset-roll-forward-report"></a><span data-ttu-id="085b8-143">Kjøre Rull anleggsmidler forover-rapporten på nytt</span><span class="sxs-lookup"><span data-stu-id="085b8-143">Re-run the Fixed asset roll forward report</span></span>
 
-1. <span data-ttu-id="7a224-144">Gå til **Anleggsmidler** \> **Forespørsler og rapporter** \> **Transaksjonsrapporter** \> **Rull anleggsmidler forover**.</span><span class="sxs-lookup"><span data-stu-id="7a224-144">Go to **Fixed assets** \> **Inquiries and reports** \> **Transaction reports** \> **Fixed asset roll forward**.</span></span>
-2. <span data-ttu-id="7a224-145">Angi **1/1/2017** i feltet **Fra dato**.</span><span class="sxs-lookup"><span data-stu-id="7a224-145">In the **From date** field, enter **1/1/2017**.</span></span>
-3. <span data-ttu-id="7a224-146">Angi **1/31/2017** i feltet **Til dato**.</span><span class="sxs-lookup"><span data-stu-id="7a224-146">In the **To date** field, enter **1/31/2017**.</span></span>
-4. <span data-ttu-id="7a224-147">I **Valuta-felt** velger du **Regnskapsvaluta**.</span><span class="sxs-lookup"><span data-stu-id="7a224-147">In the **Currency field**, select **Accounting currency**.</span></span>
-5. <span data-ttu-id="7a224-148">I feltet **Formattilordning** velger du **Rull anleggsmidler forover**.</span><span class="sxs-lookup"><span data-stu-id="7a224-148">In the **Format mapping** field, select **Fixed asset roll forward**.</span></span>
-6. <span data-ttu-id="7a224-149">Velg **OK**.</span><span class="sxs-lookup"><span data-stu-id="7a224-149">Select **OK**.</span></span>
-7. <span data-ttu-id="7a224-150">Bla i den lokale mappen **C:\\0** for å finne den genererte filen.</span><span class="sxs-lookup"><span data-stu-id="7a224-150">Browse the local **C:\\0** folder to find the generated file.</span></span>
+1. <span data-ttu-id="085b8-144">Gå til **Anleggsmidler** \> **Forespørsler og rapporter** \> **Transaksjonsrapporter** \> **Rull anleggsmidler forover**.</span><span class="sxs-lookup"><span data-stu-id="085b8-144">Go to **Fixed assets** \> **Inquiries and reports** \> **Transaction reports** \> **Fixed asset roll forward**.</span></span>
+2. <span data-ttu-id="085b8-145">Angi **1/1/2017** i feltet **Fra dato**.</span><span class="sxs-lookup"><span data-stu-id="085b8-145">In the **From date** field, enter **1/1/2017**.</span></span>
+3. <span data-ttu-id="085b8-146">Angi **1/31/2017** i feltet **Til dato**.</span><span class="sxs-lookup"><span data-stu-id="085b8-146">In the **To date** field, enter **1/31/2017**.</span></span>
+4. <span data-ttu-id="085b8-147">I **Valuta-felt** velger du **Regnskapsvaluta**.</span><span class="sxs-lookup"><span data-stu-id="085b8-147">In the **Currency field**, select **Accounting currency**.</span></span>
+5. <span data-ttu-id="085b8-148">I feltet **Formattilordning** velger du **Rull anleggsmidler forover**.</span><span class="sxs-lookup"><span data-stu-id="085b8-148">In the **Format mapping** field, select **Fixed asset roll forward**.</span></span>
+6. <span data-ttu-id="085b8-149">Velg **OK**.</span><span class="sxs-lookup"><span data-stu-id="085b8-149">Select **OK**.</span></span>
+7. <span data-ttu-id="085b8-150">Bla i den lokale mappen **C:\\0** for å finne den genererte filen.</span><span class="sxs-lookup"><span data-stu-id="085b8-150">Browse the local **C:\\0** folder to find the generated file.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="7a224-151">Fordi `originDestination`-objektet ikke brukes i `AssetRollForwardDestination`-objektet i dette eksemplet, ignoreres konfigurasjonene for ER-format[målene](electronic-reporting-destinations.md) under kjøring.</span><span class="sxs-lookup"><span data-stu-id="7a224-151">Because the `originDestination` object isn't used in the `AssetRollForwardDestination` object in this example, the configurations for the ER format [destinations](electronic-reporting-destinations.md) will be ignored at runtime.</span></span>
+> <span data-ttu-id="085b8-151">Fordi `originDestination`-objektet ikke brukes i `AssetRollForwardDestination`-objektet i dette eksemplet, ignoreres konfigurasjonene for ER-format[målene](electronic-reporting-destinations.md) under kjøring.</span><span class="sxs-lookup"><span data-stu-id="085b8-151">Because the `originDestination` object isn't used in the `AssetRollForwardDestination` object in this example, the configurations for the ER format [destinations](electronic-reporting-destinations.md) will be ignored at runtime.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="7a224-152">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="7a224-152">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="085b8-152">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="085b8-152">Additional resources</span></span>
 
-- [<span data-ttu-id="7a224-153">Mål for elektronisk rapportering (ER)</span><span class="sxs-lookup"><span data-stu-id="7a224-153">Electronic reporting (ER) destinations</span></span>](electronic-reporting-destinations.md)
-- [<span data-ttu-id="7a224-154">Startside med utvidelsesmuligheter</span><span class="sxs-lookup"><span data-stu-id="7a224-154">Extensibility home page</span></span>](../extensibility/extensibility-home-page.md)
+- [<span data-ttu-id="085b8-153">Mål for elektronisk rapportering (ER)</span><span class="sxs-lookup"><span data-stu-id="085b8-153">Electronic reporting (ER) destinations</span></span>](electronic-reporting-destinations.md)
+- [<span data-ttu-id="085b8-154">Startside med utvidelsesmuligheter</span><span class="sxs-lookup"><span data-stu-id="085b8-154">Extensibility home page</span></span>](../extensibility/extensibility-home-page.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,7 +2,6 @@
 title: VALUEIN ER-funksjonen
 description: Dette emnet gir generell informasjon om hvordan du bruker ER-funksjonen VALUEIN.
 author: NickSelin
-manager: kfend
 ms.date: 08/18/2020
 ms.topic: article
 ms.prod: ''
@@ -16,81 +15,81 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e5a0ac314a61abce610407550e65479cbf5a6b5b
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 909aef5e52817a67e400f3132cb5d6ecc8a18906
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5565838"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5751756"
 ---
-# <a name="valuein-er-function"></a><span data-ttu-id="289c5-103">VALUEIN ER-funksjonen</span><span class="sxs-lookup"><span data-stu-id="289c5-103">VALUEIN ER function</span></span>
+# <a name="valuein-er-function"></a><span data-ttu-id="7e4f5-103">VALUEIN ER-funksjonen</span><span class="sxs-lookup"><span data-stu-id="7e4f5-103">VALUEIN ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="289c5-104">`VALUEIN`-funksjonen bestemmer om de angitte inndataene samsvarer med en verdi for et angitt element i den angitte listen.</span><span class="sxs-lookup"><span data-stu-id="289c5-104">The `VALUEIN` function determines whether the specified input matches any value of a specified item in the specified list.</span></span> <span data-ttu-id="289c5-105">Den returnerer en *boolsk* verdi av **SANN** hvis de angitte inndataene samsvarer med resultatet av å kjøre det angitte uttrykket for minst én post i den angitte listen.</span><span class="sxs-lookup"><span data-stu-id="289c5-105">It returns a *Boolean* value of **TRUE** if the specified input matches the result of running the specified expression for at least one record of the specified list.</span></span> <span data-ttu-id="289c5-106">Hvis ikke returneres den *boolske* verdien **USANN**.</span><span class="sxs-lookup"><span data-stu-id="289c5-106">Otherwise, it returns a *Boolean* value of **FALSE**.</span></span>
+<span data-ttu-id="7e4f5-104">`VALUEIN`-funksjonen bestemmer om de angitte inndataene samsvarer med en verdi for et angitt element i den angitte listen.</span><span class="sxs-lookup"><span data-stu-id="7e4f5-104">The `VALUEIN` function determines whether the specified input matches any value of a specified item in the specified list.</span></span> <span data-ttu-id="7e4f5-105">Den returnerer en *boolsk* verdi av **SANN** hvis de angitte inndataene samsvarer med resultatet av å kjøre det angitte uttrykket for minst én post i den angitte listen.</span><span class="sxs-lookup"><span data-stu-id="7e4f5-105">It returns a *Boolean* value of **TRUE** if the specified input matches the result of running the specified expression for at least one record of the specified list.</span></span> <span data-ttu-id="7e4f5-106">Hvis ikke returneres den *boolske* verdien **USANN**.</span><span class="sxs-lookup"><span data-stu-id="7e4f5-106">Otherwise, it returns a *Boolean* value of **FALSE**.</span></span>
 
-## <a name="syntax"></a><span data-ttu-id="289c5-107">Syntaks</span><span class="sxs-lookup"><span data-stu-id="289c5-107">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="7e4f5-107">Syntaks</span><span class="sxs-lookup"><span data-stu-id="7e4f5-107">Syntax</span></span>
 
 ```vb
 VALUEIN (input, list, list item expression)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="289c5-108">Argumenter</span><span class="sxs-lookup"><span data-stu-id="289c5-108">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="7e4f5-108">Argumenter</span><span class="sxs-lookup"><span data-stu-id="7e4f5-108">Arguments</span></span>
 
-<span data-ttu-id="289c5-109">`input`: *Felt*</span><span class="sxs-lookup"><span data-stu-id="289c5-109">`input`: *Field*</span></span>
+<span data-ttu-id="7e4f5-109">`input`: *Felt*</span><span class="sxs-lookup"><span data-stu-id="7e4f5-109">`input`: *Field*</span></span>
 
-<span data-ttu-id="289c5-110">Den gyldige banen til et element i en datakilde i *Postliste*-typen.</span><span class="sxs-lookup"><span data-stu-id="289c5-110">The valid path of an item of a data source of the *Record list* type.</span></span> <span data-ttu-id="289c5-111">Verdien for dette elementet samsvares.</span><span class="sxs-lookup"><span data-stu-id="289c5-111">The value of this item will be matched.</span></span>
+<span data-ttu-id="7e4f5-110">Den gyldige banen til et element i en datakilde i *Postliste*-typen.</span><span class="sxs-lookup"><span data-stu-id="7e4f5-110">The valid path of an item of a data source of the *Record list* type.</span></span> <span data-ttu-id="7e4f5-111">Verdien for dette elementet samsvares.</span><span class="sxs-lookup"><span data-stu-id="7e4f5-111">The value of this item will be matched.</span></span>
 
-<span data-ttu-id="289c5-112">`list`: *Postliste*</span><span class="sxs-lookup"><span data-stu-id="289c5-112">`list`: *Record list*</span></span>
+<span data-ttu-id="7e4f5-112">`list`: *Postliste*</span><span class="sxs-lookup"><span data-stu-id="7e4f5-112">`list`: *Record list*</span></span>
 
-<span data-ttu-id="289c5-113">Den gyldige banen til en datakilde av *Postliste*-datatypen.</span><span class="sxs-lookup"><span data-stu-id="289c5-113">The valid path of a data source of the *Record list* data type.</span></span>
+<span data-ttu-id="7e4f5-113">Den gyldige banen til en datakilde av *Postliste*-datatypen.</span><span class="sxs-lookup"><span data-stu-id="7e4f5-113">The valid path of a data source of the *Record list* data type.</span></span>
 
-<span data-ttu-id="289c5-114">`list item expression`: *Boolsk*</span><span class="sxs-lookup"><span data-stu-id="289c5-114">`list item expression`: *Boolean*</span></span>
+<span data-ttu-id="7e4f5-114">`list item expression`: *Boolsk*</span><span class="sxs-lookup"><span data-stu-id="7e4f5-114">`list item expression`: *Boolean*</span></span>
 
-<span data-ttu-id="289c5-115">Et gyldig betingelsesuttrykk som enten henviser til eller inneholder ett enkelt felt i den angitte listen som skal brukes for den samsvarende.</span><span class="sxs-lookup"><span data-stu-id="289c5-115">A valid conditional expression that either points to or contains a single field of the specified list that should be used for the matching.</span></span>
+<span data-ttu-id="7e4f5-115">Et gyldig betingelsesuttrykk som enten henviser til eller inneholder ett enkelt felt i den angitte listen som skal brukes for den samsvarende.</span><span class="sxs-lookup"><span data-stu-id="7e4f5-115">A valid conditional expression that either points to or contains a single field of the specified list that should be used for the matching.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="289c5-116">Returverdier</span><span class="sxs-lookup"><span data-stu-id="289c5-116">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="7e4f5-116">Returverdier</span><span class="sxs-lookup"><span data-stu-id="7e4f5-116">Return values</span></span>
 
-<span data-ttu-id="289c5-117">*Boolsk*</span><span class="sxs-lookup"><span data-stu-id="289c5-117">*Boolean*</span></span>
+<span data-ttu-id="7e4f5-117">*Boolsk*</span><span class="sxs-lookup"><span data-stu-id="7e4f5-117">*Boolean*</span></span>
 
-<span data-ttu-id="289c5-118">Den resulterende *boolske* verdien.</span><span class="sxs-lookup"><span data-stu-id="289c5-118">The resulting *Boolean* value.</span></span>
+<span data-ttu-id="7e4f5-118">Den resulterende *boolske* verdien.</span><span class="sxs-lookup"><span data-stu-id="7e4f5-118">The resulting *Boolean* value.</span></span>
 
-## <a name="usage-notes"></a><span data-ttu-id="289c5-119">Bruksnotater</span><span class="sxs-lookup"><span data-stu-id="289c5-119">Usage notes</span></span>
+## <a name="usage-notes"></a><span data-ttu-id="7e4f5-119">Bruksnotater</span><span class="sxs-lookup"><span data-stu-id="7e4f5-119">Usage notes</span></span>
 
-<span data-ttu-id="289c5-120">Generelt oversettes `VALUEIN`-funksjonen til et sett med **OR**-betingelser.</span><span class="sxs-lookup"><span data-stu-id="289c5-120">In general, the `VALUEIN` function is translated to a set of **OR** conditions.</span></span> <span data-ttu-id="289c5-121">Hvis listen over **OR**-betingelser er stor, og den maksimal totale lengde på en SQL-setning kan overstiges, bør du vurdere å bruke [`VALUEINLARGE`](er-functions-logical-valueinlarge.md)-funksjonen.</span><span class="sxs-lookup"><span data-stu-id="289c5-121">If the list of **OR** conditions is large and the maximum total length of an SQL statement might be exceeded, consider using the [`VALUEINLARGE`](er-functions-logical-valueinlarge.md) function.</span></span>
+<span data-ttu-id="7e4f5-120">Generelt oversettes `VALUEIN`-funksjonen til et sett med **OR**-betingelser.</span><span class="sxs-lookup"><span data-stu-id="7e4f5-120">In general, the `VALUEIN` function is translated to a set of **OR** conditions.</span></span> <span data-ttu-id="7e4f5-121">Hvis listen over **OR**-betingelser er stor, og den maksimal totale lengde på en SQL-setning kan overstiges, bør du vurdere å bruke [`VALUEINLARGE`](er-functions-logical-valueinlarge.md)-funksjonen.</span><span class="sxs-lookup"><span data-stu-id="7e4f5-121">If the list of **OR** conditions is large and the maximum total length of an SQL statement might be exceeded, consider using the [`VALUEINLARGE`](er-functions-logical-valueinlarge.md) function.</span></span>
 
 ```vb
 (input = list.item1.value) OR (input = list.item2.value) OR …
 ```
 
-<span data-ttu-id="289c5-122">I noen tilfeller kan den oversettes til en database SQL-setning ved hjelp av `EXISTS JOIN`-operatoren.</span><span class="sxs-lookup"><span data-stu-id="289c5-122">In some cases, it can be translated to a database SQL statement by using the `EXISTS JOIN` operator.</span></span>
+<span data-ttu-id="7e4f5-122">I noen tilfeller kan den oversettes til en database SQL-setning ved hjelp av `EXISTS JOIN`-operatoren.</span><span class="sxs-lookup"><span data-stu-id="7e4f5-122">In some cases, it can be translated to a database SQL statement by using the `EXISTS JOIN` operator.</span></span>
 
-## <a name="example-1"></a><span data-ttu-id="289c5-123">Eksempel 1</span><span class="sxs-lookup"><span data-stu-id="289c5-123">Example 1</span></span>
+## <a name="example-1"></a><span data-ttu-id="7e4f5-123">Eksempel 1</span><span class="sxs-lookup"><span data-stu-id="7e4f5-123">Example 1</span></span>
 
-<span data-ttu-id="289c5-124">Du definerer **Liste**-datakilden for *Beregnet felt*-typen i modelltilordningen.</span><span class="sxs-lookup"><span data-stu-id="289c5-124">In your model mapping, you define the **List** data source of the *Calculated field* type.</span></span> <span data-ttu-id="289c5-125">Denne datakilden inneholder uttrykket `SPLIT ("a,b,c", ",")`.</span><span class="sxs-lookup"><span data-stu-id="289c5-125">This data source contains the expression `SPLIT ("a,b,c", ",")`.</span></span>
+<span data-ttu-id="7e4f5-124">Du definerer **Liste**-datakilden for *Beregnet felt*-typen i modelltilordningen.</span><span class="sxs-lookup"><span data-stu-id="7e4f5-124">In your model mapping, you define the **List** data source of the *Calculated field* type.</span></span> <span data-ttu-id="7e4f5-125">Denne datakilden inneholder uttrykket `SPLIT ("a,b,c", ",")`.</span><span class="sxs-lookup"><span data-stu-id="7e4f5-125">This data source contains the expression `SPLIT ("a,b,c", ",")`.</span></span>
 
-<span data-ttu-id="289c5-126">Når en datakilde kalles og den er konfigurert som `VALUEIN ("B", List, List.Value)`-uttrykket, returneres **SANN**.</span><span class="sxs-lookup"><span data-stu-id="289c5-126">When a data source is called, if it has been configured as the `VALUEIN ("B", List, List.Value)` expression, it returns **TRUE**.</span></span> <span data-ttu-id="289c5-127">I dette tilfellet oversettes `VALUEIN` -funksjonen til følgende sett med betingelser: `(("B" = "a") or ("B" = "b") or ("B" = "c"))`, der `("B" = "b")` er lik **SANN**.</span><span class="sxs-lookup"><span data-stu-id="289c5-127">In this case, the `VALUEIN` function is translated to the following set of conditions: `(("B" = "a") or ("B" = "b") or ("B" = "c"))`, where `("B" = "b")` equals **TRUE**.</span></span>
+<span data-ttu-id="7e4f5-126">Når en datakilde kalles og den er konfigurert som `VALUEIN ("B", List, List.Value)`-uttrykket, returneres **SANN**.</span><span class="sxs-lookup"><span data-stu-id="7e4f5-126">When a data source is called, if it has been configured as the `VALUEIN ("B", List, List.Value)` expression, it returns **TRUE**.</span></span> <span data-ttu-id="7e4f5-127">I dette tilfellet oversettes `VALUEIN` -funksjonen til følgende sett med betingelser: `(("B" = "a") or ("B" = "b") or ("B" = "c"))`, der `("B" = "b")` er lik **SANN**.</span><span class="sxs-lookup"><span data-stu-id="7e4f5-127">In this case, the `VALUEIN` function is translated to the following set of conditions: `(("B" = "a") or ("B" = "b") or ("B" = "c"))`, where `("B" = "b")` equals **TRUE**.</span></span>
 
-<span data-ttu-id="289c5-128">Når en datakilde kalles og den er konfigurert som `VALUEIN ("B", List, LEFT(List.Value, 0))`-uttrykket, returneres **USANN**.</span><span class="sxs-lookup"><span data-stu-id="289c5-128">When a data source is called, if it has been configured as the `VALUEIN ("B", List, LEFT(List.Value, 0))` expression, it returns **FALSE**.</span></span> <span data-ttu-id="289c5-129">I dette tilfellet oversettes `VALUEIN`-funksjonen til følgende betingelse: `("B" = "")`, som ikke er lik **SANN**.</span><span class="sxs-lookup"><span data-stu-id="289c5-129">In this case, the `VALUEIN` function is translated to the following condition: `("B" = "")`, which doesn't equal **TRUE**.</span></span>
+<span data-ttu-id="7e4f5-128">Når en datakilde kalles og den er konfigurert som `VALUEIN ("B", List, LEFT(List.Value, 0))`-uttrykket, returneres **USANN**.</span><span class="sxs-lookup"><span data-stu-id="7e4f5-128">When a data source is called, if it has been configured as the `VALUEIN ("B", List, LEFT(List.Value, 0))` expression, it returns **FALSE**.</span></span> <span data-ttu-id="7e4f5-129">I dette tilfellet oversettes `VALUEIN`-funksjonen til følgende betingelse: `("B" = "")`, som ikke er lik **SANN**.</span><span class="sxs-lookup"><span data-stu-id="7e4f5-129">In this case, the `VALUEIN` function is translated to the following condition: `("B" = "")`, which doesn't equal **TRUE**.</span></span>
 
-<span data-ttu-id="289c5-130">Den øvre grensen for antall tegn i teksten i en slik betingelse er 32 768 tegn.</span><span class="sxs-lookup"><span data-stu-id="289c5-130">The upper limit for the number of characters in the text of such a condition is 32,768 characters.</span></span> <span data-ttu-id="289c5-131">Du bør derfor ikke opprette datakilder som kan overstige denne grensen ved kjøretid.</span><span class="sxs-lookup"><span data-stu-id="289c5-131">Therefore, you should not create data sources that might exceed this limit at runtime.</span></span> <span data-ttu-id="289c5-132">Hvis grensen overskrides, slutter programmet å kjøre, og et unntak blir registrert.</span><span class="sxs-lookup"><span data-stu-id="289c5-132">If the limit is exceeded, the application stops running, and an exception is thrown.</span></span> <span data-ttu-id="289c5-133">Denne situasjonen kan for eksempel oppstå hvis datakilden er konfigurert som `WHERE (List1, VALUEIN (List1.ID, List2, List2.ID)`, og **List1** og **List2**-listene inneholder et stort antall poster.</span><span class="sxs-lookup"><span data-stu-id="289c5-133">For example, this situation can occur if the data source is configured as `WHERE (List1, VALUEIN (List1.ID, List2, List2.ID)`, and the **List1** and **List2** lists contain a large volume of records.</span></span>
+<span data-ttu-id="7e4f5-130">Den øvre grensen for antall tegn i teksten i en slik betingelse er 32 768 tegn.</span><span class="sxs-lookup"><span data-stu-id="7e4f5-130">The upper limit for the number of characters in the text of such a condition is 32,768 characters.</span></span> <span data-ttu-id="7e4f5-131">Du bør derfor ikke opprette datakilder som kan overstige denne grensen ved kjøretid.</span><span class="sxs-lookup"><span data-stu-id="7e4f5-131">Therefore, you should not create data sources that might exceed this limit at runtime.</span></span> <span data-ttu-id="7e4f5-132">Hvis grensen overskrides, slutter programmet å kjøre, og et unntak blir registrert.</span><span class="sxs-lookup"><span data-stu-id="7e4f5-132">If the limit is exceeded, the application stops running, and an exception is thrown.</span></span> <span data-ttu-id="7e4f5-133">Denne situasjonen kan for eksempel oppstå hvis datakilden er konfigurert som `WHERE (List1, VALUEIN (List1.ID, List2, List2.ID)`, og **List1** og **List2**-listene inneholder et stort antall poster.</span><span class="sxs-lookup"><span data-stu-id="7e4f5-133">For example, this situation can occur if the data source is configured as `WHERE (List1, VALUEIN (List1.ID, List2, List2.ID)`, and the **List1** and **List2** lists contain a large volume of records.</span></span>
 
-<span data-ttu-id="289c5-134">I noen tilfeller kan `VALUEIN`-funksjonen oversettes til en databasesetning ved hjelp av `EXISTS JOIN`-operatoren.</span><span class="sxs-lookup"><span data-stu-id="289c5-134">In some cases, the `VALUEIN` function is translated to a database statement by using the `EXISTS JOIN` operator.</span></span> <span data-ttu-id="289c5-135">Denne virkemåter skjer når [`FILTER`](er-functions-list-filter.md)-funksjonen brukes og følgende betingelser er oppfylt:</span><span class="sxs-lookup"><span data-stu-id="289c5-135">This behavior occurs when the [`FILTER`](er-functions-list-filter.md) function is used and the following conditions are met:</span></span>
+<span data-ttu-id="7e4f5-134">I noen tilfeller kan `VALUEIN`-funksjonen oversettes til en databasesetning ved hjelp av `EXISTS JOIN`-operatoren.</span><span class="sxs-lookup"><span data-stu-id="7e4f5-134">In some cases, the `VALUEIN` function is translated to a database statement by using the `EXISTS JOIN` operator.</span></span> <span data-ttu-id="7e4f5-135">Denne virkemåter skjer når [`FILTER`](er-functions-list-filter.md)-funksjonen brukes og følgende betingelser er oppfylt:</span><span class="sxs-lookup"><span data-stu-id="7e4f5-135">This behavior occurs when the [`FILTER`](er-functions-list-filter.md) function is used and the following conditions are met:</span></span>
 
-- <span data-ttu-id="289c5-136">**BE OM SPØRRING**-valget er deaktivert for datakilden for `VALUEIN`-funksjonen som refererer til listen over poster.</span><span class="sxs-lookup"><span data-stu-id="289c5-136">The **ASK FOR QUERY** option is turned off for the data source of the `VALUEIN` function that refers to the list of records.</span></span> <span data-ttu-id="289c5-137">Ingen flere betingelser brukes på denne datakilden ved kjøretid.</span><span class="sxs-lookup"><span data-stu-id="289c5-137">No additional conditions will be applied to this data source at runtime.</span></span>
-- <span data-ttu-id="289c5-138">Ingen nestede uttrykk konfigureres for datakilden for `VALUEIN`-funksjonen som refererer til listen over poster.</span><span class="sxs-lookup"><span data-stu-id="289c5-138">No nested expressions are configured for the data source of the `VALUEIN` function that refers to the list of records.</span></span>
-- <span data-ttu-id="289c5-139">Et listeelement for `VALUEIN`-funksjonen refererer til et felt for den angitte datatypen, ikke til et uttrykk eller en metode for datakilden.</span><span class="sxs-lookup"><span data-stu-id="289c5-139">A list item of the `VALUEIN` function refers to a field of the specified data source, not to an expression or method of that data source.</span></span>
+- <span data-ttu-id="7e4f5-136">**BE OM SPØRRING**-valget er deaktivert for datakilden for `VALUEIN`-funksjonen som refererer til listen over poster.</span><span class="sxs-lookup"><span data-stu-id="7e4f5-136">The **ASK FOR QUERY** option is turned off for the data source of the `VALUEIN` function that refers to the list of records.</span></span> <span data-ttu-id="7e4f5-137">Ingen flere betingelser brukes på denne datakilden ved kjøretid.</span><span class="sxs-lookup"><span data-stu-id="7e4f5-137">No additional conditions will be applied to this data source at runtime.</span></span>
+- <span data-ttu-id="7e4f5-138">Ingen nestede uttrykk konfigureres for datakilden for `VALUEIN`-funksjonen som refererer til listen over poster.</span><span class="sxs-lookup"><span data-stu-id="7e4f5-138">No nested expressions are configured for the data source of the `VALUEIN` function that refers to the list of records.</span></span>
+- <span data-ttu-id="7e4f5-139">Et listeelement for `VALUEIN`-funksjonen refererer til et felt for den angitte datatypen, ikke til et uttrykk eller en metode for datakilden.</span><span class="sxs-lookup"><span data-stu-id="7e4f5-139">A list item of the `VALUEIN` function refers to a field of the specified data source, not to an expression or method of that data source.</span></span>
 
-<span data-ttu-id="289c5-140">Vurder å bruke dette alternativet i stedet for [`WHERE`](er-functions-list-where.md)-funksjonen som er beskrevet tidligere i dette eksemplet.</span><span class="sxs-lookup"><span data-stu-id="289c5-140">Consider using this option instead of the [`WHERE`](er-functions-list-where.md) function that is described earlier in this example.</span></span>
+<span data-ttu-id="7e4f5-140">Vurder å bruke dette alternativet i stedet for [`WHERE`](er-functions-list-where.md)-funksjonen som er beskrevet tidligere i dette eksemplet.</span><span class="sxs-lookup"><span data-stu-id="7e4f5-140">Consider using this option instead of the [`WHERE`](er-functions-list-where.md) function that is described earlier in this example.</span></span>
 
-## <a name="example-2"></a><span data-ttu-id="289c5-141">Eksempel 2</span><span class="sxs-lookup"><span data-stu-id="289c5-141">Example 2</span></span>
+## <a name="example-2"></a><span data-ttu-id="7e4f5-141">Eksempel 2</span><span class="sxs-lookup"><span data-stu-id="7e4f5-141">Example 2</span></span>
 
-<span data-ttu-id="289c5-142">Du definerer de følgende datakildene i modelltilordningen:</span><span class="sxs-lookup"><span data-stu-id="289c5-142">You define the following data sources in your model mapping:</span></span>
+<span data-ttu-id="7e4f5-142">Du definerer de følgende datakildene i modelltilordningen:</span><span class="sxs-lookup"><span data-stu-id="7e4f5-142">You define the following data sources in your model mapping:</span></span>
 
-- <span data-ttu-id="289c5-143">**I**-datakilden for *Tabellposter*-typen.</span><span class="sxs-lookup"><span data-stu-id="289c5-143">The **In** data source of the *Table records* type.</span></span> <span data-ttu-id="289c5-144">Denne datakilden refererer til Intrastat-tabellen.</span><span class="sxs-lookup"><span data-stu-id="289c5-144">This data source refers to the Intrastat table.</span></span>
-- <span data-ttu-id="289c5-145">**Port**-datakilden for *Tabellposter*-typen.</span><span class="sxs-lookup"><span data-stu-id="289c5-145">The **Port** data source of the *Table records* type.</span></span> <span data-ttu-id="289c5-146">Denne datakilden refererer til IntrastatPort-tabellen.</span><span class="sxs-lookup"><span data-stu-id="289c5-146">This data source refers to the IntrastatPort table.</span></span>
+- <span data-ttu-id="7e4f5-143">**I**-datakilden for *Tabellposter*-typen.</span><span class="sxs-lookup"><span data-stu-id="7e4f5-143">The **In** data source of the *Table records* type.</span></span> <span data-ttu-id="7e4f5-144">Denne datakilden refererer til Intrastat-tabellen.</span><span class="sxs-lookup"><span data-stu-id="7e4f5-144">This data source refers to the Intrastat table.</span></span>
+- <span data-ttu-id="7e4f5-145">**Port**-datakilden for *Tabellposter*-typen.</span><span class="sxs-lookup"><span data-stu-id="7e4f5-145">The **Port** data source of the *Table records* type.</span></span> <span data-ttu-id="7e4f5-146">Denne datakilden refererer til IntrastatPort-tabellen.</span><span class="sxs-lookup"><span data-stu-id="7e4f5-146">This data source refers to the IntrastatPort table.</span></span>
 
-<span data-ttu-id="289c5-147">Når en datakilde kalles opp som er konfigurert som uttrykket `FILTER (In, VALUEIN(In.Port, Port, Port.PortId)`, genereres følgende SQL-setning for å returnere filtrerte poster i Intrastat-tabellen.</span><span class="sxs-lookup"><span data-stu-id="289c5-147">When a data source is called that has been configured as the `FILTER (In, VALUEIN(In.Port, Port, Port.PortId)` expression, the following SQL statement is generated to return filtered records of the Intrastat table.</span></span>
+<span data-ttu-id="7e4f5-147">Når en datakilde kalles opp som er konfigurert som uttrykket `FILTER (In, VALUEIN(In.Port, Port, Port.PortId)`, genereres følgende SQL-setning for å returnere filtrerte poster i Intrastat-tabellen.</span><span class="sxs-lookup"><span data-stu-id="7e4f5-147">When a data source is called that has been configured as the `FILTER (In, VALUEIN(In.Port, Port, Port.PortId)` expression, the following SQL statement is generated to return filtered records of the Intrastat table.</span></span>
 
 ```vb
 select … from Intrastat
@@ -98,26 +97,26 @@ exists join TableId from IntrastatPort
 where IntrastatPort.PortId = Intrastat.Port
 ```
 
-<span data-ttu-id="289c5-148">For **dataAreaId**-feltene genereres den endelige SQL-setningen ved hjelp av `IN`-operatoren.</span><span class="sxs-lookup"><span data-stu-id="289c5-148">For **dataAreaId** fields, the final SQL statement is generated by the using `IN` operator.</span></span>
+<span data-ttu-id="7e4f5-148">For **dataAreaId**-feltene genereres den endelige SQL-setningen ved hjelp av `IN`-operatoren.</span><span class="sxs-lookup"><span data-stu-id="7e4f5-148">For **dataAreaId** fields, the final SQL statement is generated by the using `IN` operator.</span></span>
 
-## <a name="example-3"></a><span data-ttu-id="289c5-149">Eksempel 3</span><span class="sxs-lookup"><span data-stu-id="289c5-149">Example 3</span></span>
+## <a name="example-3"></a><span data-ttu-id="7e4f5-149">Eksempel 3</span><span class="sxs-lookup"><span data-stu-id="7e4f5-149">Example 3</span></span>
 
-<span data-ttu-id="289c5-150">Du definerer de følgende datakildene i modelltilordningen:</span><span class="sxs-lookup"><span data-stu-id="289c5-150">You define the following data sources in your model mapping:</span></span>
+<span data-ttu-id="7e4f5-150">Du definerer de følgende datakildene i modelltilordningen:</span><span class="sxs-lookup"><span data-stu-id="7e4f5-150">You define the following data sources in your model mapping:</span></span>
 
-- <span data-ttu-id="289c5-151">**Le**-datakilden for *Beregnet felt*-typen.</span><span class="sxs-lookup"><span data-stu-id="289c5-151">The **Le** data source of the *Calculated field* type.</span></span> <span data-ttu-id="289c5-152">Denne datakilden inneholder uttrykket `SPLIT ("DEMF,GBSI,USMF", ",")`.</span><span class="sxs-lookup"><span data-stu-id="289c5-152">This data source contains the expression `SPLIT ("DEMF,GBSI,USMF", ",")`.</span></span>
-- <span data-ttu-id="289c5-153">**I**-datakilden for *Tabellposter*-typen.</span><span class="sxs-lookup"><span data-stu-id="289c5-153">The **In** data source of the *Table records* type.</span></span> <span data-ttu-id="289c5-154">Denne datakilden refererer til Intrastat-tabellen, og alternativet **Kryssfirma** er aktivert for den.</span><span class="sxs-lookup"><span data-stu-id="289c5-154">This data source refers to the Intrastat table, and the **Cross-company** option is turned on for it.</span></span>
+- <span data-ttu-id="7e4f5-151">**Le**-datakilden for *Beregnet felt*-typen.</span><span class="sxs-lookup"><span data-stu-id="7e4f5-151">The **Le** data source of the *Calculated field* type.</span></span> <span data-ttu-id="7e4f5-152">Denne datakilden inneholder uttrykket `SPLIT ("DEMF,GBSI,USMF", ",")`.</span><span class="sxs-lookup"><span data-stu-id="7e4f5-152">This data source contains the expression `SPLIT ("DEMF,GBSI,USMF", ",")`.</span></span>
+- <span data-ttu-id="7e4f5-153">**I**-datakilden for *Tabellposter*-typen.</span><span class="sxs-lookup"><span data-stu-id="7e4f5-153">The **In** data source of the *Table records* type.</span></span> <span data-ttu-id="7e4f5-154">Denne datakilden refererer til Intrastat-tabellen, og alternativet **Kryssfirma** er aktivert for den.</span><span class="sxs-lookup"><span data-stu-id="7e4f5-154">This data source refers to the Intrastat table, and the **Cross-company** option is turned on for it.</span></span>
 
-<span data-ttu-id="289c5-155">Når en datakilde kalles opp som er konfigurert som uttrykket `FILTER (In, VALUEIN (In.dataAreaId, Le, Le.Value)`, inneholder den endelige SQL-setningen følgende betingelse.</span><span class="sxs-lookup"><span data-stu-id="289c5-155">When a data source is called that has been configured as the `FILTER (In, VALUEIN (In.dataAreaId, Le, Le.Value)` expression, the final SQL statement contains the following condition.</span></span>
+<span data-ttu-id="7e4f5-155">Når en datakilde kalles opp som er konfigurert som uttrykket `FILTER (In, VALUEIN (In.dataAreaId, Le, Le.Value)`, inneholder den endelige SQL-setningen følgende betingelse.</span><span class="sxs-lookup"><span data-stu-id="7e4f5-155">When a data source is called that has been configured as the `FILTER (In, VALUEIN (In.dataAreaId, Le, Le.Value)` expression, the final SQL statement contains the following condition.</span></span>
 
 ```vb
 Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
 ```
 
-## <a name="additional-resources"></a><span data-ttu-id="289c5-156">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="289c5-156">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="7e4f5-156">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="7e4f5-156">Additional resources</span></span>
 
-[<span data-ttu-id="289c5-157">Logiske funksjoner</span><span class="sxs-lookup"><span data-stu-id="289c5-157">Logical functions</span></span>](er-functions-category-logical.md)
+[<span data-ttu-id="7e4f5-157">Logiske funksjoner</span><span class="sxs-lookup"><span data-stu-id="7e4f5-157">Logical functions</span></span>](er-functions-category-logical.md)
 
-[<span data-ttu-id="289c5-158">VALUEINLARGE-funksjoner</span><span class="sxs-lookup"><span data-stu-id="289c5-158">VALUEINLARGE functions</span></span>](er-functions-logical-valueinlarge.md)
+[<span data-ttu-id="7e4f5-158">VALUEINLARGE-funksjoner</span><span class="sxs-lookup"><span data-stu-id="7e4f5-158">VALUEINLARGE functions</span></span>](er-functions-logical-valueinlarge.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

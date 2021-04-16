@@ -2,7 +2,6 @@
 title: Integrert avgift
 description: Dette emnet beskriver integreringen av avgiftsdata mellom Finance and Operations og Dataverse .
 author: robinarh
-manager: AnnBe
 ms.date: 09/06/2019
 ms.topic: article
 ms.prod: ''
@@ -17,14 +16,14 @@ ms.search.industry: ''
 ms.author: rhaertle
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 7501ef21492a96c81b971e1d9077beaba9be897b
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: a7992520b57b4c19b6dc8e13bd8e9ffc87b40f5a
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5560343"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750648"
 ---
-# <a name="integrated-tax"></a><span data-ttu-id="58384-103">Integrert avgift</span><span class="sxs-lookup"><span data-stu-id="58384-103">Integrated tax</span></span>
+# <a name="integrated-tax"></a><span data-ttu-id="f797b-103">Integrert avgift</span><span class="sxs-lookup"><span data-stu-id="f797b-103">Integrated tax</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
@@ -32,21 +31,21 @@ ms.locfileid: "5560343"
 
 
 
-<span data-ttu-id="58384-104">Avgiftsoppsettsdata definerer oppsettet for både indirekte avgifter (mva, merverdiavgift, salgsskatt) og kildeskatt.</span><span class="sxs-lookup"><span data-stu-id="58384-104">Tax setup data defines the setup for both indirect taxes (VAT, GST, Sales tax) and withholding tax.</span></span> <span data-ttu-id="58384-105">Den beskriver avgiftsberegningsregelen, mva-satsen, avgiftsregnskapet, utligningen og andre begreper.</span><span class="sxs-lookup"><span data-stu-id="58384-105">It describes the tax calculation rule, tax rate, tax accounting, settlement, and other concepts.</span></span>
+<span data-ttu-id="f797b-104">Avgiftsoppsettsdata definerer oppsettet for både indirekte avgifter (mva, merverdiavgift, salgsskatt) og kildeskatt.</span><span class="sxs-lookup"><span data-stu-id="f797b-104">Tax setup data defines the setup for both indirect taxes (VAT, GST, Sales tax) and withholding tax.</span></span> <span data-ttu-id="f797b-105">Den beskriver avgiftsberegningsregelen, mva-satsen, avgiftsregnskapet, utligningen og andre begreper.</span><span class="sxs-lookup"><span data-stu-id="f797b-105">It describes the tax calculation rule, tax rate, tax accounting, settlement, and other concepts.</span></span>
 
-## <a name="templates"></a><span data-ttu-id="58384-106">Maler</span><span class="sxs-lookup"><span data-stu-id="58384-106">Templates</span></span>
+## <a name="templates"></a><span data-ttu-id="f797b-106">Maler</span><span class="sxs-lookup"><span data-stu-id="f797b-106">Templates</span></span>
 
-<span data-ttu-id="58384-107">Avgiftsdata inkluderer en samling tabelltilordninger som fungerer sammen under datasamhandling, som vist i følgende tabell.</span><span class="sxs-lookup"><span data-stu-id="58384-107">Tax data includes a collection of table maps that work together during data interaction, as shown in the following table.</span></span>
+<span data-ttu-id="f797b-107">Avgiftsdata inkluderer en samling tabelltilordninger som fungerer sammen under datasamhandling, som vist i følgende tabell.</span><span class="sxs-lookup"><span data-stu-id="f797b-107">Tax data includes a collection of table maps that work together during data interaction, as shown in the following table.</span></span>
 
-<span data-ttu-id="58384-108">Finance and Operations-apper</span><span class="sxs-lookup"><span data-stu-id="58384-108">Finance and Operations apps</span></span> | <span data-ttu-id="58384-109">Modelldrevne apper i Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="58384-109">Model-driven apps in Dynamics 365</span></span> | <span data-ttu-id="58384-110">beskrivelse</span><span class="sxs-lookup"><span data-stu-id="58384-110">Description</span></span> |
+<span data-ttu-id="f797b-108">Finance and Operations-apper</span><span class="sxs-lookup"><span data-stu-id="f797b-108">Finance and Operations apps</span></span> | <span data-ttu-id="f797b-109">Modelldrevne apper i Dynamics 365</span><span class="sxs-lookup"><span data-stu-id="f797b-109">Model-driven apps in Dynamics 365</span></span> | <span data-ttu-id="f797b-110">beskrivelse</span><span class="sxs-lookup"><span data-stu-id="f797b-110">Description</span></span> |
 -------------------------|---------------------------------|----|
-<span data-ttu-id="58384-111">Merverdiavgiftsgruppe for vare</span><span class="sxs-lookup"><span data-stu-id="58384-111">Item sales tax group</span></span> | <span data-ttu-id="58384-112">msdyn_taxitemgroups</span><span class="sxs-lookup"><span data-stu-id="58384-112">msdyn_taxitemgroups</span></span> |
-<span data-ttu-id="58384-113">Skattemyndigheter</span><span class="sxs-lookup"><span data-stu-id="58384-113">Sales tax authorities</span></span> | <span data-ttu-id="58384-114">msdyn_taxauthorities</span><span class="sxs-lookup"><span data-stu-id="58384-114">msdyn_taxauthorities</span></span> |
-<span data-ttu-id="58384-115">Enhet for mva-fritakskoder for CDS</span><span class="sxs-lookup"><span data-stu-id="58384-115">Sales tax exempt code entity CDS</span></span> | <span data-ttu-id="58384-116">msdyn_taxexemptcodes</span><span class="sxs-lookup"><span data-stu-id="58384-116">msdyn_taxexemptcodes</span></span> |
-<span data-ttu-id="58384-117">Mva-grupper</span><span class="sxs-lookup"><span data-stu-id="58384-117">Sales tax groups</span></span> | <span data-ttu-id="58384-118">msdyn_taxgroups</span><span class="sxs-lookup"><span data-stu-id="58384-118">msdyn_taxgroups</span></span> |
-<span data-ttu-id="58384-119">Finansposteringsgrupper for mva V2</span><span class="sxs-lookup"><span data-stu-id="58384-119">Sales tax ledger posting groups V2</span></span> | <span data-ttu-id="58384-120">msdyn_taxpostinggroups</span><span class="sxs-lookup"><span data-stu-id="58384-120">msdyn_taxpostinggroups</span></span> |
-<span data-ttu-id="58384-121">Kildeskattkoder</span><span class="sxs-lookup"><span data-stu-id="58384-121">Withholding tax codes</span></span> | <span data-ttu-id="58384-122">msdyn_withholdingtaxcodes</span><span class="sxs-lookup"><span data-stu-id="58384-122">msdyn_withholdingtaxcodes</span></span> |
-<span data-ttu-id="58384-123">Kildeskattgrupper</span><span class="sxs-lookup"><span data-stu-id="58384-123">Withholding tax groups</span></span> | <span data-ttu-id="58384-124">msdyn_withholdingtaxgroups</span><span class="sxs-lookup"><span data-stu-id="58384-124">msdyn_withholdingtaxgroups</span></span> | 
+<span data-ttu-id="f797b-111">Merverdiavgiftsgruppe for vare</span><span class="sxs-lookup"><span data-stu-id="f797b-111">Item sales tax group</span></span> | <span data-ttu-id="f797b-112">msdyn_taxitemgroups</span><span class="sxs-lookup"><span data-stu-id="f797b-112">msdyn_taxitemgroups</span></span> |
+<span data-ttu-id="f797b-113">Skattemyndigheter</span><span class="sxs-lookup"><span data-stu-id="f797b-113">Sales tax authorities</span></span> | <span data-ttu-id="f797b-114">msdyn_taxauthorities</span><span class="sxs-lookup"><span data-stu-id="f797b-114">msdyn_taxauthorities</span></span> |
+<span data-ttu-id="f797b-115">Enhet for mva-fritakskoder for CDS</span><span class="sxs-lookup"><span data-stu-id="f797b-115">Sales tax exempt code entity CDS</span></span> | <span data-ttu-id="f797b-116">msdyn_taxexemptcodes</span><span class="sxs-lookup"><span data-stu-id="f797b-116">msdyn_taxexemptcodes</span></span> |
+<span data-ttu-id="f797b-117">Mva-grupper</span><span class="sxs-lookup"><span data-stu-id="f797b-117">Sales tax groups</span></span> | <span data-ttu-id="f797b-118">msdyn_taxgroups</span><span class="sxs-lookup"><span data-stu-id="f797b-118">msdyn_taxgroups</span></span> |
+<span data-ttu-id="f797b-119">Finansposteringsgrupper for mva V2</span><span class="sxs-lookup"><span data-stu-id="f797b-119">Sales tax ledger posting groups V2</span></span> | <span data-ttu-id="f797b-120">msdyn_taxpostinggroups</span><span class="sxs-lookup"><span data-stu-id="f797b-120">msdyn_taxpostinggroups</span></span> |
+<span data-ttu-id="f797b-121">Kildeskattkoder</span><span class="sxs-lookup"><span data-stu-id="f797b-121">Withholding tax codes</span></span> | <span data-ttu-id="f797b-122">msdyn_withholdingtaxcodes</span><span class="sxs-lookup"><span data-stu-id="f797b-122">msdyn_withholdingtaxcodes</span></span> |
+<span data-ttu-id="f797b-123">Kildeskattgrupper</span><span class="sxs-lookup"><span data-stu-id="f797b-123">Withholding tax groups</span></span> | <span data-ttu-id="f797b-124">msdyn_withholdingtaxgroups</span><span class="sxs-lookup"><span data-stu-id="f797b-124">msdyn_withholdingtaxgroups</span></span> | 
 
 
 [!include [banner](../../includes/dual-write-symbols.md)]

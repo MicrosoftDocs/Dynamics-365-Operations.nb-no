@@ -2,7 +2,6 @@
 title: Aktiver brukere for mottak av arbeidsflytrelaterte e-postmeldinger
 description: Du kan konfigurere systemet slik at det sendes e-postmeldinger til brukere når det oppstår arbeidsflytrelaterte hendelser.
 author: jasongre
-manager: AnnBe
 ms.date: 06/01/2020
 ms.topic: business-process
 ms.prod: ''
@@ -14,32 +13,32 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9a81e01c36081ce7131ee65344f583755fa3bfd3
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 3207727c8deba97eebfd7516e9600238e5e79b3d
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5564196"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5747255"
 ---
-# <a name="enable-users-to-receive-workflow-related-email-messages"></a><span data-ttu-id="2ec33-103">Aktiver brukere for mottak av arbeidsflytrelaterte e-postmeldinger</span><span class="sxs-lookup"><span data-stu-id="2ec33-103">Enable users to receive workflow-related email messages</span></span>
+# <a name="enable-users-to-receive-workflow-related-email-messages"></a><span data-ttu-id="26a65-103">Aktiver brukere for mottak av arbeidsflytrelaterte e-postmeldinger</span><span class="sxs-lookup"><span data-stu-id="26a65-103">Enable users to receive workflow-related email messages</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="2ec33-104">Du kan konfigurere systemet slik at det sendes e-postmeldinger til brukere når det oppstår arbeidsflytrelaterte hendelser.</span><span class="sxs-lookup"><span data-stu-id="2ec33-104">You can configure the system to send email messages to users when workflow-related events occur.</span></span> <span data-ttu-id="2ec33-105">E-postmeldinger kan for eksempel sendes til brukere når dokumentene er tilordnet til dem for godkjenning.</span><span class="sxs-lookup"><span data-stu-id="2ec33-105">For example, email messages can be sent to users when documents are assigned to them for approval.</span></span> <span data-ttu-id="2ec33-106">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="2ec33-106">The demo data company used to create this procedure is USMF.</span></span>
+<span data-ttu-id="26a65-104">Du kan konfigurere systemet slik at det sendes e-postmeldinger til brukere når det oppstår arbeidsflytrelaterte hendelser.</span><span class="sxs-lookup"><span data-stu-id="26a65-104">You can configure the system to send email messages to users when workflow-related events occur.</span></span> <span data-ttu-id="26a65-105">E-postmeldinger kan for eksempel sendes til brukere når dokumentene er tilordnet til dem for godkjenning.</span><span class="sxs-lookup"><span data-stu-id="26a65-105">For example, email messages can be sent to users when documents are assigned to them for approval.</span></span> <span data-ttu-id="26a65-106">Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.</span><span class="sxs-lookup"><span data-stu-id="26a65-106">The demo data company used to create this procedure is USMF.</span></span>
 
-1. <span data-ttu-id="2ec33-107">Gå til **Navigasjonsrute > Moduler > Systemadministrasjon > Brukere > Brukere**.</span><span class="sxs-lookup"><span data-stu-id="2ec33-107">Go to **Navigation pane > Modules > System administration > Users > Users**.</span></span>
-2. <span data-ttu-id="2ec33-108">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="2ec33-108">In the list, find and select the desired record.</span></span>
-3. <span data-ttu-id="2ec33-109">Klikk på **Brukeralternativer** i **handlingsruten**.</span><span class="sxs-lookup"><span data-stu-id="2ec33-109">On the **Action pane**, click **User options**.</span></span>
-4. <span data-ttu-id="2ec33-110">Klikk på fanen **Arbeidsflyt**. Kontroller at **Varslinger**-delen er utvidet.</span><span class="sxs-lookup"><span data-stu-id="2ec33-110">Click the **Workflow** tab. Make sure that the **Notifications** section is expanded.</span></span> <span data-ttu-id="2ec33-111">I delen **Varslinger** kan du angi hvordan du vil at brukeren skal varsles om arbeidsflytrelaterte hendelser.</span><span class="sxs-lookup"><span data-stu-id="2ec33-111">In the **Notifications** section, you can specify how you want the user to be notified about workflow-related events.</span></span>  
-5. <span data-ttu-id="2ec33-112">Velg et alternativ i feltet **Varslingstype for arbeidsflyt for linjeelement**.</span><span class="sxs-lookup"><span data-stu-id="2ec33-112">In the **Line-item workflow notification type** field, select an option.</span></span>
-    - <span data-ttu-id="2ec33-113">Gruppert – Varslinger for linjeelementer grupperes i en enkelt e-postmelding.</span><span class="sxs-lookup"><span data-stu-id="2ec33-113">Grouped – Notifications for line items are grouped into a single email message.</span></span>
-    - <span data-ttu-id="2ec33-114">Enkeltvis – En e-postmelding sendes for hvert linjeelement.</span><span class="sxs-lookup"><span data-stu-id="2ec33-114">Individual – An email message is sent for each line item.</span></span>  
-    - <span data-ttu-id="2ec33-115">Hvis du vil at brukeren skal motta varslinger i klienten, merker du av for **Send varslinger i e-post**.</span><span class="sxs-lookup"><span data-stu-id="2ec33-115">If you want the user to receive notifications in the client, select the **Send notifications in email** check box.</span></span>  
-6. <span data-ttu-id="2ec33-116">Klikk på **Lagre**.</span><span class="sxs-lookup"><span data-stu-id="2ec33-116">Click **Save**.</span></span>
-7. <span data-ttu-id="2ec33-117">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="2ec33-117">Close the page.</span></span>
+1. <span data-ttu-id="26a65-107">Gå til **Navigasjonsrute > Moduler > Systemadministrasjon > Brukere > Brukere**.</span><span class="sxs-lookup"><span data-stu-id="26a65-107">Go to **Navigation pane > Modules > System administration > Users > Users**.</span></span>
+2. <span data-ttu-id="26a65-108">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="26a65-108">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="26a65-109">Klikk på **Brukeralternativer** i **handlingsruten**.</span><span class="sxs-lookup"><span data-stu-id="26a65-109">On the **Action pane**, click **User options**.</span></span>
+4. <span data-ttu-id="26a65-110">Klikk på fanen **Arbeidsflyt**. Kontroller at **Varslinger**-delen er utvidet.</span><span class="sxs-lookup"><span data-stu-id="26a65-110">Click the **Workflow** tab. Make sure that the **Notifications** section is expanded.</span></span> <span data-ttu-id="26a65-111">I delen **Varslinger** kan du angi hvordan du vil at brukeren skal varsles om arbeidsflytrelaterte hendelser.</span><span class="sxs-lookup"><span data-stu-id="26a65-111">In the **Notifications** section, you can specify how you want the user to be notified about workflow-related events.</span></span>  
+5. <span data-ttu-id="26a65-112">Velg et alternativ i feltet **Varslingstype for arbeidsflyt for linjeelement**.</span><span class="sxs-lookup"><span data-stu-id="26a65-112">In the **Line-item workflow notification type** field, select an option.</span></span>
+    - <span data-ttu-id="26a65-113">Gruppert – Varslinger for linjeelementer grupperes i en enkelt e-postmelding.</span><span class="sxs-lookup"><span data-stu-id="26a65-113">Grouped – Notifications for line items are grouped into a single email message.</span></span>
+    - <span data-ttu-id="26a65-114">Enkeltvis – En e-postmelding sendes for hvert linjeelement.</span><span class="sxs-lookup"><span data-stu-id="26a65-114">Individual – An email message is sent for each line item.</span></span>  
+    - <span data-ttu-id="26a65-115">Hvis du vil at brukeren skal motta varslinger i klienten, merker du av for **Send varslinger i e-post**.</span><span class="sxs-lookup"><span data-stu-id="26a65-115">If you want the user to receive notifications in the client, select the **Send notifications in email** check box.</span></span>  
+6. <span data-ttu-id="26a65-116">Klikk på **Lagre**.</span><span class="sxs-lookup"><span data-stu-id="26a65-116">Click **Save**.</span></span>
+7. <span data-ttu-id="26a65-117">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="26a65-117">Close the page.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="2ec33-118">E-postmalen for arbeidsflyt hentes enten fra systemets e-postmaler eller organisasjonens e-postmaler, avhengig av om arbeidsflyten er på systemnivå (ikke firmaspesifikk) eller organisasjonsnivå (firmaspesifikk).</span><span class="sxs-lookup"><span data-stu-id="2ec33-118">The workflow email templates will be sourced from either system email templates or organization email templates depending on whether the workflow is a system-level (not company specific) or organization-level (company specific) workflow.</span></span>
+> <span data-ttu-id="26a65-118">E-postmalen for arbeidsflyt hentes enten fra systemets e-postmaler eller organisasjonens e-postmaler, avhengig av om arbeidsflyten er på systemnivå (ikke firmaspesifikk) eller organisasjonsnivå (firmaspesifikk).</span><span class="sxs-lookup"><span data-stu-id="26a65-118">The workflow email templates will be sourced from either system email templates or organization email templates depending on whether the workflow is a system-level (not company specific) or organization-level (company specific) workflow.</span></span>
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

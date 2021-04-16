@@ -2,7 +2,6 @@
 title: PLIT ER-funksjonen
 description: Dette emnet gir generell informasjon om hvordan du bruker ER-funksjonen SPLIT.
 author: NickSelin
-manager: kfend
 ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
@@ -16,74 +15,74 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 806a0995f0c138f4e80396bb993bc6f41bc7c827
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: 5c99ee5e8129ed45253893dc83acdef99b4ce2c9
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5567348"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745599"
 ---
-# <a name="split-er-function"></a><span data-ttu-id="1448b-103">PLIT ER-funksjonen</span><span class="sxs-lookup"><span data-stu-id="1448b-103">SPLIT ER function</span></span>
+# <a name="split-er-function"></a><span data-ttu-id="c71bc-103">PLIT ER-funksjonen</span><span class="sxs-lookup"><span data-stu-id="c71bc-103">SPLIT ER function</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="1448b-104">`SPLIT`-funksjonen deler den angitte inndatastrengen inn i delstrenger og returnerer resultatet som en ny *Postliste*-verdi.</span><span class="sxs-lookup"><span data-stu-id="1448b-104">The `SPLIT` function splits the specified input string into substrings and returns the result as a new *Record list* value.</span></span>
+<span data-ttu-id="c71bc-104">`SPLIT`-funksjonen deler den angitte inndatastrengen inn i delstrenger og returnerer resultatet som en ny *Postliste*-verdi.</span><span class="sxs-lookup"><span data-stu-id="c71bc-104">The `SPLIT` function splits the specified input string into substrings and returns the result as a new *Record list* value.</span></span>
 
-## <a name="syntax-1"></a><span data-ttu-id="1448b-105">Syntaks 1</span><span class="sxs-lookup"><span data-stu-id="1448b-105">Syntax 1</span></span>
+## <a name="syntax-1"></a><span data-ttu-id="c71bc-105">Syntaks 1</span><span class="sxs-lookup"><span data-stu-id="c71bc-105">Syntax 1</span></span>
 
 ```vb
 SPLIT (input, length)
 ```
 
-<span data-ttu-id="1448b-106">Denne syntaksen brukes til å dele opp den angitte inndatastrengen i delstrenger, der hver har den angitte lengden.</span><span class="sxs-lookup"><span data-stu-id="1448b-106">This syntax is used to split the specified input string into substrings, each of which has the specified length.</span></span>
+<span data-ttu-id="c71bc-106">Denne syntaksen brukes til å dele opp den angitte inndatastrengen i delstrenger, der hver har den angitte lengden.</span><span class="sxs-lookup"><span data-stu-id="c71bc-106">This syntax is used to split the specified input string into substrings, each of which has the specified length.</span></span>
 
-## <a name="syntax-2"></a><span data-ttu-id="1448b-107">Syntaks 2</span><span class="sxs-lookup"><span data-stu-id="1448b-107">Syntax 2</span></span>
+## <a name="syntax-2"></a><span data-ttu-id="c71bc-107">Syntaks 2</span><span class="sxs-lookup"><span data-stu-id="c71bc-107">Syntax 2</span></span>
 
 ```vb
 SPLIT (input, delimiter)
 ```
 
-<span data-ttu-id="1448b-108">Denne syntaksen brukes til å dele opp den angitte inndatastrengen i delstrenger, basert på det angitte skilletegnet.</span><span class="sxs-lookup"><span data-stu-id="1448b-108">This syntax is used to split the specified input string into substrings, based on the specified delimiter.</span></span>
+<span data-ttu-id="c71bc-108">Denne syntaksen brukes til å dele opp den angitte inndatastrengen i delstrenger, basert på det angitte skilletegnet.</span><span class="sxs-lookup"><span data-stu-id="c71bc-108">This syntax is used to split the specified input string into substrings, based on the specified delimiter.</span></span>
 
-## <a name="arguments"></a><span data-ttu-id="1448b-109">Argumenter</span><span class="sxs-lookup"><span data-stu-id="1448b-109">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="c71bc-109">Argumenter</span><span class="sxs-lookup"><span data-stu-id="c71bc-109">Arguments</span></span>
 
-<span data-ttu-id="1448b-110">`input`: *Streng*</span><span class="sxs-lookup"><span data-stu-id="1448b-110">`input`: *String*</span></span>
+<span data-ttu-id="c71bc-110">`input`: *Streng*</span><span class="sxs-lookup"><span data-stu-id="c71bc-110">`input`: *String*</span></span>
 
-<span data-ttu-id="1448b-111">Teksten som skal deles opp.</span><span class="sxs-lookup"><span data-stu-id="1448b-111">The text to split.</span></span>
+<span data-ttu-id="c71bc-111">Teksten som skal deles opp.</span><span class="sxs-lookup"><span data-stu-id="c71bc-111">The text to split.</span></span>
 
-<span data-ttu-id="1448b-112">`length`: *Heltall*</span><span class="sxs-lookup"><span data-stu-id="1448b-112">`length`: *Integer*</span></span>
+<span data-ttu-id="c71bc-112">`length`: *Heltall*</span><span class="sxs-lookup"><span data-stu-id="c71bc-112">`length`: *Integer*</span></span>
 
-<span data-ttu-id="1448b-113">Maksimumslengden på en enkelt delstreng.</span><span class="sxs-lookup"><span data-stu-id="1448b-113">The maximum length of a single substring.</span></span>
+<span data-ttu-id="c71bc-113">Maksimumslengden på en enkelt delstreng.</span><span class="sxs-lookup"><span data-stu-id="c71bc-113">The maximum length of a single substring.</span></span>
 
-<span data-ttu-id="1448b-114">`delimiter`: *Streng*</span><span class="sxs-lookup"><span data-stu-id="1448b-114">`delimiter`: *String*</span></span>
+<span data-ttu-id="c71bc-114">`delimiter`: *Streng*</span><span class="sxs-lookup"><span data-stu-id="c71bc-114">`delimiter`: *String*</span></span>
 
-<span data-ttu-id="1448b-115">Et skilletegn som brukes til å skille delstrenger.</span><span class="sxs-lookup"><span data-stu-id="1448b-115">A delimiter that is used to separate substrings.</span></span>
+<span data-ttu-id="c71bc-115">Et skilletegn som brukes til å skille delstrenger.</span><span class="sxs-lookup"><span data-stu-id="c71bc-115">A delimiter that is used to separate substrings.</span></span>
 
-## <a name="return-values"></a><span data-ttu-id="1448b-116">Returverdier</span><span class="sxs-lookup"><span data-stu-id="1448b-116">Return values</span></span>
+## <a name="return-values"></a><span data-ttu-id="c71bc-116">Returverdier</span><span class="sxs-lookup"><span data-stu-id="c71bc-116">Return values</span></span>
 
-<span data-ttu-id="1448b-117">*Postliste*</span><span class="sxs-lookup"><span data-stu-id="1448b-117">*Record list*</span></span>
+<span data-ttu-id="c71bc-117">*Postliste*</span><span class="sxs-lookup"><span data-stu-id="c71bc-117">*Record list*</span></span>
 
-<span data-ttu-id="1448b-118">Den resulterende listen over oppføringer.</span><span class="sxs-lookup"><span data-stu-id="1448b-118">The resulting list of records.</span></span>
+<span data-ttu-id="c71bc-118">Den resulterende listen over oppføringer.</span><span class="sxs-lookup"><span data-stu-id="c71bc-118">The resulting list of records.</span></span>
 
-## <a name="usage-notes"></a><span data-ttu-id="1448b-119">Bruksnotater</span><span class="sxs-lookup"><span data-stu-id="1448b-119">Usage notes</span></span>
+## <a name="usage-notes"></a><span data-ttu-id="c71bc-119">Bruksnotater</span><span class="sxs-lookup"><span data-stu-id="c71bc-119">Usage notes</span></span>
 
-<span data-ttu-id="1448b-120">Poststrukturen for listen som returneres, består av **Verdi**-feltet for *Streng*-typen.</span><span class="sxs-lookup"><span data-stu-id="1448b-120">The record structure of the list that is returned consists of the **Value** field of the *String* type.</span></span> <span data-ttu-id="1448b-121">Hver post i listen som returneres, inneholder genererte delstrenger i dette feltet.</span><span class="sxs-lookup"><span data-stu-id="1448b-121">Every record of the list that is returned contains generated substrings in this field.</span></span>
+<span data-ttu-id="c71bc-120">Poststrukturen for listen som returneres, består av **Verdi**-feltet for *Streng*-typen.</span><span class="sxs-lookup"><span data-stu-id="c71bc-120">The record structure of the list that is returned consists of the **Value** field of the *String* type.</span></span> <span data-ttu-id="c71bc-121">Hver post i listen som returneres, inneholder genererte delstrenger i dette feltet.</span><span class="sxs-lookup"><span data-stu-id="c71bc-121">Every record of the list that is returned contains generated substrings in this field.</span></span>
 
-<span data-ttu-id="1448b-122">Hvis `delimiter`-argumentet er tomt, består den nye listen som returneres, av én post som har **Verdi**-feltet av *Streng*-typen.</span><span class="sxs-lookup"><span data-stu-id="1448b-122">If the `delimiter` argument is empty, the new list that is returned consists of one record that has the **Value** field of the *String* type.</span></span> <span data-ttu-id="1448b-123">Dette feltet viser inndatateksten.</span><span class="sxs-lookup"><span data-stu-id="1448b-123">This field contains the input text.</span></span>
+<span data-ttu-id="c71bc-122">Hvis `delimiter`-argumentet er tomt, består den nye listen som returneres, av én post som har **Verdi**-feltet av *Streng*-typen.</span><span class="sxs-lookup"><span data-stu-id="c71bc-122">If the `delimiter` argument is empty, the new list that is returned consists of one record that has the **Value** field of the *String* type.</span></span> <span data-ttu-id="c71bc-123">Dette feltet viser inndatateksten.</span><span class="sxs-lookup"><span data-stu-id="c71bc-123">This field contains the input text.</span></span>
 
-<span data-ttu-id="1448b-124">Hvis `input`-argumentet er tomt, returneres det en ny, tom liste.</span><span class="sxs-lookup"><span data-stu-id="1448b-124">If the `input` argument is empty, a new empty list is returned.</span></span> <span data-ttu-id="1448b-125">Hvis enten `input` eller `delimiter`-argumentet ikke er angitt (null), iverksettes et programunntak.</span><span class="sxs-lookup"><span data-stu-id="1448b-125">If either the `input` or `delimiter` argument is unspecified (null), an application exception is thrown.</span></span>
+<span data-ttu-id="c71bc-124">Hvis `input`-argumentet er tomt, returneres det en ny, tom liste.</span><span class="sxs-lookup"><span data-stu-id="c71bc-124">If the `input` argument is empty, a new empty list is returned.</span></span> <span data-ttu-id="c71bc-125">Hvis enten `input` eller `delimiter`-argumentet ikke er angitt (null), iverksettes et programunntak.</span><span class="sxs-lookup"><span data-stu-id="c71bc-125">If either the `input` or `delimiter` argument is unspecified (null), an application exception is thrown.</span></span>
 
-## <a name="example-1"></a><span data-ttu-id="1448b-126">Eksempel 1</span><span class="sxs-lookup"><span data-stu-id="1448b-126">Example 1</span></span>
+## <a name="example-1"></a><span data-ttu-id="c71bc-126">Eksempel 1</span><span class="sxs-lookup"><span data-stu-id="c71bc-126">Example 1</span></span>
 
-<span data-ttu-id="1448b-127">`SPLIT ("abcd", 3)` returnerer en ny liste som består av to poster som har **Verdi**-feltet av *Streng* typen.</span><span class="sxs-lookup"><span data-stu-id="1448b-127">`SPLIT ("abcd", 3)` returns a new list that consists of two records that have the **Value** field of the *String* type.</span></span> <span data-ttu-id="1448b-128">**Verdi**-feltet i den første posten inneholder teksten **"abc"**, og **Verdi**-feltet i den andre posten inneholder teksten **"d"**.</span><span class="sxs-lookup"><span data-stu-id="1448b-128">The **Value** field in the first record contains the text **"abc"**, and the **Value** field in the second record contains the text **"d"**.</span></span>
+<span data-ttu-id="c71bc-127">`SPLIT ("abcd", 3)` returnerer en ny liste som består av to poster som har **Verdi**-feltet av *Streng* typen.</span><span class="sxs-lookup"><span data-stu-id="c71bc-127">`SPLIT ("abcd", 3)` returns a new list that consists of two records that have the **Value** field of the *String* type.</span></span> <span data-ttu-id="c71bc-128">**Verdi**-feltet i den første posten inneholder teksten **"abc"**, og **Verdi**-feltet i den andre posten inneholder teksten **"d"**.</span><span class="sxs-lookup"><span data-stu-id="c71bc-128">The **Value** field in the first record contains the text **"abc"**, and the **Value** field in the second record contains the text **"d"**.</span></span>
 
-## <a name="example-2"></a><span data-ttu-id="1448b-129">Eksempel 2</span><span class="sxs-lookup"><span data-stu-id="1448b-129">Example 2</span></span>
+## <a name="example-2"></a><span data-ttu-id="c71bc-129">Eksempel 2</span><span class="sxs-lookup"><span data-stu-id="c71bc-129">Example 2</span></span>
 
-<span data-ttu-id="1448b-130">`SPLIT ("XAb aBy", "aB")` returnerer en ny liste som består av tre poster som har **Verdi**-feltet av *Streng* typen.</span><span class="sxs-lookup"><span data-stu-id="1448b-130">`SPLIT ("XAb aBy", "aB")` returns a new list that consists of three records that have the **Value** field of the *String* type.</span></span> <span data-ttu-id="1448b-131">**Verdi**-feltet i den første posten inneholder teksten **"X"**, **Verdi**-feltet i den andre posten inneholder teksten **"&nbsp;"**, og **Verdi**-feltet i den tredje posten inneholder teksten **"y"**.</span><span class="sxs-lookup"><span data-stu-id="1448b-131">The **Value** field in the first record contains the text **"X"**, the **Value** field in the second record contains the text **"&nbsp;"**, and the **Value** field in the third record contains the text **"y"**.</span></span> 
+<span data-ttu-id="c71bc-130">`SPLIT ("XAb aBy", "aB")` returnerer en ny liste som består av tre poster som har **Verdi**-feltet av *Streng* typen.</span><span class="sxs-lookup"><span data-stu-id="c71bc-130">`SPLIT ("XAb aBy", "aB")` returns a new list that consists of three records that have the **Value** field of the *String* type.</span></span> <span data-ttu-id="c71bc-131">**Verdi**-feltet i den første posten inneholder teksten **"X"**, **Verdi**-feltet i den andre posten inneholder teksten **"&nbsp;"**, og **Verdi**-feltet i den tredje posten inneholder teksten **"y"**.</span><span class="sxs-lookup"><span data-stu-id="c71bc-131">The **Value** field in the first record contains the text **"X"**, the **Value** field in the second record contains the text **"&nbsp;"**, and the **Value** field in the third record contains the text **"y"**.</span></span> 
 
-## <a name="additional-resources"></a><span data-ttu-id="1448b-132">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="1448b-132">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="c71bc-132">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="c71bc-132">Additional resources</span></span>
 
-[<span data-ttu-id="1448b-133">Listefunksjoner</span><span class="sxs-lookup"><span data-stu-id="1448b-133">List functions</span></span>](er-functions-category-list.md)
+[<span data-ttu-id="c71bc-133">Listefunksjoner</span><span class="sxs-lookup"><span data-stu-id="c71bc-133">List functions</span></span>](er-functions-category-list.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

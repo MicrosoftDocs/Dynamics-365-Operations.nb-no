@@ -2,7 +2,6 @@
 title: Startside for mobilapp
 description: Dette emnet beskriver Finance and Operations-mobilappen (Dynamics 365) og inneholder koblinger til ressursene som kan hjelpe deg med å implementere den i din organisasjon.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 01/22/2020
 ms.topic: article
 ms.prod: ''
@@ -15,49 +14,49 @@ ms.search.region: Global
 ms.author: cgarty
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.openlocfilehash: 925d1fff51317b592a7af61ebd797fa70ab5b6f4
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: cda743983f84edf0fa8c513013de812698cbb9ba
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5567194"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748227"
 ---
-# <a name="mobile-app-home-page"></a><span data-ttu-id="75d7a-103">Startside for mobilapp</span><span class="sxs-lookup"><span data-stu-id="75d7a-103">Mobile app home page</span></span>
+# <a name="mobile-app-home-page"></a><span data-ttu-id="8792b-103">Startside for mobilapp</span><span class="sxs-lookup"><span data-stu-id="8792b-103">Mobile app home page</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="75d7a-104">Dette emnet beskriver **Finance and Operations-mobilappen (Dynamics 365)** og inneholder koblinger til ressursene som kan hjelpe deg med å implementere den i din organisasjon.</span><span class="sxs-lookup"><span data-stu-id="75d7a-104">This topic describes the **Finance and Operations (Dynamics 365)** mobile app and provides links to resources that can help you implement it in your organization.</span></span>
+<span data-ttu-id="8792b-104">Dette emnet beskriver **Finance and Operations-mobilappen (Dynamics 365)** og inneholder koblinger til ressursene som kan hjelpe deg med å implementere den i din organisasjon.</span><span class="sxs-lookup"><span data-stu-id="8792b-104">This topic describes the **Finance and Operations (Dynamics 365)** mobile app and provides links to resources that can help you implement it in your organization.</span></span>
 
-<a name="overview"></a><span data-ttu-id="75d7a-105">Oversikt</span><span class="sxs-lookup"><span data-stu-id="75d7a-105">Overview</span></span>
+<a name="overview"></a><span data-ttu-id="8792b-105">Oversikt</span><span class="sxs-lookup"><span data-stu-id="8792b-105">Overview</span></span>
 --------
 
-<span data-ttu-id="75d7a-106">Mobilappen lar organisasjoner gjøre sine forretningsprosesser tilgjengelige på mobilenheter.</span><span class="sxs-lookup"><span data-stu-id="75d7a-106">The mobile app enables your organization to make its business processes available on mobile devices.</span></span> <span data-ttu-id="75d7a-107">Når IT-administrator har aktivert mobile arbeidsområder for organisasjonen, kan brukere logger på appen og umiddelbart begynne å kjøre forretningsprosesser fra mobilenhetene.</span><span class="sxs-lookup"><span data-stu-id="75d7a-107">After your IT admin enables the mobile workspaces for your organization, users can sign in to the app and immediately begin to run business processes from their mobile devices.</span></span> <span data-ttu-id="75d7a-108">Mobilappen inneholder følgende funksjoner som kan hjelpe med å øke produktiviteten:</span><span class="sxs-lookup"><span data-stu-id="75d7a-108">The mobile app includes the following features that can help increase productivity:</span></span>
+<span data-ttu-id="8792b-106">Mobilappen lar organisasjoner gjøre sine forretningsprosesser tilgjengelige på mobilenheter.</span><span class="sxs-lookup"><span data-stu-id="8792b-106">The mobile app enables your organization to make its business processes available on mobile devices.</span></span> <span data-ttu-id="8792b-107">Når IT-administrator har aktivert mobile arbeidsområder for organisasjonen, kan brukere logger på appen og umiddelbart begynne å kjøre forretningsprosesser fra mobilenhetene.</span><span class="sxs-lookup"><span data-stu-id="8792b-107">After your IT admin enables the mobile workspaces for your organization, users can sign in to the app and immediately begin to run business processes from their mobile devices.</span></span> <span data-ttu-id="8792b-108">Mobilappen inneholder følgende funksjoner som kan hjelpe med å øke produktiviteten:</span><span class="sxs-lookup"><span data-stu-id="8792b-108">The mobile app includes the following features that can help increase productivity:</span></span>
 
-- <span data-ttu-id="75d7a-109">Brukere kan vise, redigere og behandle forretningsdata, selv om de har uregelmessige nettverkstilkobling eller mobilenhetene er helt frakoblet.</span><span class="sxs-lookup"><span data-stu-id="75d7a-109">Users can view, edit, and act on business data, even if they have intermittent network connectivity or their mobile devices are completely offline.</span></span> <span data-ttu-id="75d7a-110">Når en enhet oppretter en nettverkstilkobling, synkroniseres automatisk frakoblede dataoperasjoner.</span><span class="sxs-lookup"><span data-stu-id="75d7a-110">When a device reestablishes a network connection, offline data operations are automatically synchronized.</span></span>
-- <span data-ttu-id="75d7a-111">IT-administratorer eller utviklere kan bygge og publisere mobile arbeidsområder som er skreddersydd til organisasjonen.</span><span class="sxs-lookup"><span data-stu-id="75d7a-111">IT admins or developers can build and publish mobile workspaces that have been tailored to their organization.</span></span> <span data-ttu-id="75d7a-112">Appen bruker dine eksisterende koderessurser.</span><span class="sxs-lookup"><span data-stu-id="75d7a-112">The app uses your existing code assets.</span></span> <span data-ttu-id="75d7a-113">Derfor trenger du ikke å implementere valideringsprosedyrene, forretningslogikken eller sikkerhetskonfigurasjonen på nytt.</span><span class="sxs-lookup"><span data-stu-id="75d7a-113">Therefore, you don't have to re-implement your validation procedures, business logic, or security configuration.</span></span>
-- <span data-ttu-id="75d7a-114">IT-administratorer eller utviklere kan lett utforme mobile arbeidsområder ved hjelp av pek og klikk-arbeidsområdeutformingen som er inkludert i webklienten.</span><span class="sxs-lookup"><span data-stu-id="75d7a-114">IT admins or developers can easily design mobile workspaces by using the point-and-click workspace designer that is included with the web client.</span></span>
-- <span data-ttu-id="75d7a-115">IT-administratorer eller utviklere kan også optimalisere frakoblet-funksjonene for arbeidsområder ved hjelp av utvidelsesrammeverket for forretningslogikk.</span><span class="sxs-lookup"><span data-stu-id="75d7a-115">IT admins or developers can optionally optimize the offline capabilities of workspaces by using the Business logic extensibility framework.</span></span> <span data-ttu-id="75d7a-116">Fordi dataene fremdeles behandles når en enhet er frakoblet, forblir mobile scenarioer rike og jevne, selv om enheter ikke har konstant nettverkstilkobling.</span><span class="sxs-lookup"><span data-stu-id="75d7a-116">Because data continues to be processed while a device is offline, your mobile scenarios remain rich and fluid, even if devices don't have constant network connectivity.</span></span>
+- <span data-ttu-id="8792b-109">Brukere kan vise, redigere og behandle forretningsdata, selv om de har uregelmessige nettverkstilkobling eller mobilenhetene er helt frakoblet.</span><span class="sxs-lookup"><span data-stu-id="8792b-109">Users can view, edit, and act on business data, even if they have intermittent network connectivity or their mobile devices are completely offline.</span></span> <span data-ttu-id="8792b-110">Når en enhet oppretter en nettverkstilkobling, synkroniseres automatisk frakoblede dataoperasjoner.</span><span class="sxs-lookup"><span data-stu-id="8792b-110">When a device reestablishes a network connection, offline data operations are automatically synchronized.</span></span>
+- <span data-ttu-id="8792b-111">IT-administratorer eller utviklere kan bygge og publisere mobile arbeidsområder som er skreddersydd til organisasjonen.</span><span class="sxs-lookup"><span data-stu-id="8792b-111">IT admins or developers can build and publish mobile workspaces that have been tailored to their organization.</span></span> <span data-ttu-id="8792b-112">Appen bruker dine eksisterende koderessurser.</span><span class="sxs-lookup"><span data-stu-id="8792b-112">The app uses your existing code assets.</span></span> <span data-ttu-id="8792b-113">Derfor trenger du ikke å implementere valideringsprosedyrene, forretningslogikken eller sikkerhetskonfigurasjonen på nytt.</span><span class="sxs-lookup"><span data-stu-id="8792b-113">Therefore, you don't have to re-implement your validation procedures, business logic, or security configuration.</span></span>
+- <span data-ttu-id="8792b-114">IT-administratorer eller utviklere kan lett utforme mobile arbeidsområder ved hjelp av pek og klikk-arbeidsområdeutformingen som er inkludert i webklienten.</span><span class="sxs-lookup"><span data-stu-id="8792b-114">IT admins or developers can easily design mobile workspaces by using the point-and-click workspace designer that is included with the web client.</span></span>
+- <span data-ttu-id="8792b-115">IT-administratorer eller utviklere kan også optimalisere frakoblet-funksjonene for arbeidsområder ved hjelp av utvidelsesrammeverket for forretningslogikk.</span><span class="sxs-lookup"><span data-stu-id="8792b-115">IT admins or developers can optionally optimize the offline capabilities of workspaces by using the Business logic extensibility framework.</span></span> <span data-ttu-id="8792b-116">Fordi dataene fremdeles behandles når en enhet er frakoblet, forblir mobile scenarioer rike og jevne, selv om enheter ikke har konstant nettverkstilkobling.</span><span class="sxs-lookup"><span data-stu-id="8792b-116">Because data continues to be processed while a device is offline, your mobile scenarios remain rich and fluid, even if devices don't have constant network connectivity.</span></span>
 
-## <a name="elements-of-the-mobile-app"></a><span data-ttu-id="75d7a-117">Elementer i mobilappen</span><span class="sxs-lookup"><span data-stu-id="75d7a-117">Elements of the mobile app</span></span>
-<span data-ttu-id="75d7a-118">Navigasjon i mobilappen består av fire grunnleggende begreper: instrumentbord, arbeidsområder, sider og handlinger.</span><span class="sxs-lookup"><span data-stu-id="75d7a-118">Navigation in the mobile app consists of four basic concepts: the dashboard, workspaces, pages, and actions.</span></span> 
+## <a name="elements-of-the-mobile-app"></a><span data-ttu-id="8792b-117">Elementer i mobilappen</span><span class="sxs-lookup"><span data-stu-id="8792b-117">Elements of the mobile app</span></span>
+<span data-ttu-id="8792b-118">Navigasjon i mobilappen består av fire grunnleggende begreper: instrumentbord, arbeidsområder, sider og handlinger.</span><span class="sxs-lookup"><span data-stu-id="8792b-118">Navigation in the mobile app consists of four basic concepts: the dashboard, workspaces, pages, and actions.</span></span> 
 
-<span data-ttu-id="75d7a-119">[![Navigasjonsbegreper i mobilappen](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)</span><span class="sxs-lookup"><span data-stu-id="75d7a-119">[![Navigation concepts in the mobile app](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)</span></span>
+<span data-ttu-id="8792b-119">[![Navigasjonsbegreper i mobilappen](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)</span><span class="sxs-lookup"><span data-stu-id="8792b-119">[![Navigation concepts in the mobile app](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)</span></span>
 
-1. <span data-ttu-id="75d7a-120">Når du starter appen, går du til **instrumentbord**.</span><span class="sxs-lookup"><span data-stu-id="75d7a-120">When you start the app, you go to the **dashboard**.</span></span>
-2. <span data-ttu-id="75d7a-121">På instrumentbordet kan du se en liste over **arbeidsområder** som er publisert.</span><span class="sxs-lookup"><span data-stu-id="75d7a-121">On the dashboard, you can see a list of **workspaces** that have been published.</span></span>
-3. <span data-ttu-id="75d7a-122">I hver arbeidsområdet kan du se en liste over **sider** som er tilgjengelige for arbeidsområdet.</span><span class="sxs-lookup"><span data-stu-id="75d7a-122">In each workspace, you can see a list of **pages** that are available for that workspace.</span></span>
-4. <span data-ttu-id="75d7a-123">Når du er på en side, kan du utføre flere handlinger.</span><span class="sxs-lookup"><span data-stu-id="75d7a-123">After you're on a page, you can perform several actions.</span></span> <span data-ttu-id="75d7a-124">Her er noen eksempler:</span><span class="sxs-lookup"><span data-stu-id="75d7a-124">Here are some examples:</span></span>
+1. <span data-ttu-id="8792b-120">Når du starter appen, går du til **instrumentbord**.</span><span class="sxs-lookup"><span data-stu-id="8792b-120">When you start the app, you go to the **dashboard**.</span></span>
+2. <span data-ttu-id="8792b-121">På instrumentbordet kan du se en liste over **arbeidsområder** som er publisert.</span><span class="sxs-lookup"><span data-stu-id="8792b-121">On the dashboard, you can see a list of **workspaces** that have been published.</span></span>
+3. <span data-ttu-id="8792b-122">I hver arbeidsområdet kan du se en liste over **sider** som er tilgjengelige for arbeidsområdet.</span><span class="sxs-lookup"><span data-stu-id="8792b-122">In each workspace, you can see a list of **pages** that are available for that workspace.</span></span>
+4. <span data-ttu-id="8792b-123">Når du er på en side, kan du utføre flere handlinger.</span><span class="sxs-lookup"><span data-stu-id="8792b-123">After you're on a page, you can perform several actions.</span></span> <span data-ttu-id="8792b-124">Her er noen eksempler:</span><span class="sxs-lookup"><span data-stu-id="8792b-124">Here are some examples:</span></span>
 
-    - <span data-ttu-id="75d7a-125">Vis detaljerte data.</span><span class="sxs-lookup"><span data-stu-id="75d7a-125">View detailed data.</span></span>
-    - <span data-ttu-id="75d7a-126">Naviger til andre sider for relaterte data, for eksempel enhetsdetaljer eller linjer.</span><span class="sxs-lookup"><span data-stu-id="75d7a-126">Navigate to other pages for related data, such as entity details or lines.</span></span>
-    - <span data-ttu-id="75d7a-127">Se en liste over **handlinger** som er tilgjengelige for denne siden.</span><span class="sxs-lookup"><span data-stu-id="75d7a-127">See a list of **actions** that are available for that page.</span></span> <span data-ttu-id="75d7a-128">Handlinger lar deg opprette eller redigere eksisterende data.</span><span class="sxs-lookup"><span data-stu-id="75d7a-128">Actions let you create or edit existing data.</span></span>
+    - <span data-ttu-id="8792b-125">Vis detaljerte data.</span><span class="sxs-lookup"><span data-stu-id="8792b-125">View detailed data.</span></span>
+    - <span data-ttu-id="8792b-126">Naviger til andre sider for relaterte data, for eksempel enhetsdetaljer eller linjer.</span><span class="sxs-lookup"><span data-stu-id="8792b-126">Navigate to other pages for related data, such as entity details or lines.</span></span>
+    - <span data-ttu-id="8792b-127">Se en liste over **handlinger** som er tilgjengelige for denne siden.</span><span class="sxs-lookup"><span data-stu-id="8792b-127">See a list of **actions** that are available for that page.</span></span> <span data-ttu-id="8792b-128">Handlinger lar deg opprette eller redigere eksisterende data.</span><span class="sxs-lookup"><span data-stu-id="8792b-128">Actions let you create or edit existing data.</span></span>
 
-## <a name="implementation-process"></a><span data-ttu-id="75d7a-129">Implementeringsprosess</span><span class="sxs-lookup"><span data-stu-id="75d7a-129">Implementation process</span></span>
-<span data-ttu-id="75d7a-130">Illustrasjonen nedenfor viser prosessen med implementing av både mobile arbeidsområder som leveres av Microsoft, og egendefinerte mobile arbeidsområder.</span><span class="sxs-lookup"><span data-stu-id="75d7a-130">The following illustration shows the process for implementing both mobile workspaces that are provided by Microsoft and custom mobile workspaces.</span></span> 
+## <a name="implementation-process"></a><span data-ttu-id="8792b-129">Implementeringsprosess</span><span class="sxs-lookup"><span data-stu-id="8792b-129">Implementation process</span></span>
+<span data-ttu-id="8792b-130">Illustrasjonen nedenfor viser prosessen med implementing av både mobile arbeidsområder som leveres av Microsoft, og egendefinerte mobile arbeidsområder.</span><span class="sxs-lookup"><span data-stu-id="8792b-130">The following illustration shows the process for implementing both mobile workspaces that are provided by Microsoft and custom mobile workspaces.</span></span> 
 
-<span data-ttu-id="75d7a-131">[![Implementeringsprosess for mobilapper](./media/Mobile-implementation-process-5.png)](./media/Mobile-implementation-process-5.png)</span><span class="sxs-lookup"><span data-stu-id="75d7a-131">[![Mobile apps implementation process](./media/Mobile-implementation-process-5.png)](./media/Mobile-implementation-process-5.png)</span></span>
+<span data-ttu-id="8792b-131">[![Implementeringsprosess for mobilapper](./media/Mobile-implementation-process-5.png)](./media/Mobile-implementation-process-5.png)</span><span class="sxs-lookup"><span data-stu-id="8792b-131">[![Mobile apps implementation process](./media/Mobile-implementation-process-5.png)](./media/Mobile-implementation-process-5.png)</span></span>
 
-<span data-ttu-id="75d7a-132">Tabellen nedenfor inneholder koblinger til ressurser som kan hjelpe deg med å implementere både mobile arbeidsområder som leveres av Microsoft, og egendefinerte mobile arbeidsområder.</span><span class="sxs-lookup"><span data-stu-id="75d7a-132">The following table includes links to resources that can help you implement both mobile workspaces that are provided by Microsoft and custom mobile workspaces.</span></span> <span data-ttu-id="75d7a-133">Tallene i den første kolonnen samsvarer med de nummererte trinnene i den forrige illustrasjonen.</span><span class="sxs-lookup"><span data-stu-id="75d7a-133">The numbers in the first column correspond to the numbered steps in the previous illustration.</span></span>
+<span data-ttu-id="8792b-132">Tabellen nedenfor inneholder koblinger til ressurser som kan hjelpe deg med å implementere både mobile arbeidsområder som leveres av Microsoft, og egendefinerte mobile arbeidsområder.</span><span class="sxs-lookup"><span data-stu-id="8792b-132">The following table includes links to resources that can help you implement both mobile workspaces that are provided by Microsoft and custom mobile workspaces.</span></span> <span data-ttu-id="8792b-133">Tallene i den første kolonnen samsvarer med de nummererte trinnene i den forrige illustrasjonen.</span><span class="sxs-lookup"><span data-stu-id="8792b-133">The numbers in the first column correspond to the numbered steps in the previous illustration.</span></span>
 
 <table>
 <colgroup>
@@ -68,91 +67,91 @@ ms.locfileid: "5567194"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="75d7a-134">Trinn</span><span class="sxs-lookup"><span data-stu-id="75d7a-134">Step</span></span></th>
-<th><span data-ttu-id="75d7a-135">Rolle</span><span class="sxs-lookup"><span data-stu-id="75d7a-135">Role</span></span></th>
-<th><span data-ttu-id="75d7a-136">Handling</span><span class="sxs-lookup"><span data-stu-id="75d7a-136">Action</span></span></th>
-<th><span data-ttu-id="75d7a-137">Ressurser som hjelper deg med å fullføre handlingen</span><span class="sxs-lookup"><span data-stu-id="75d7a-137">Resources to help you complete the action</span></span></th>
+<th><span data-ttu-id="8792b-134">Trinn</span><span class="sxs-lookup"><span data-stu-id="8792b-134">Step</span></span></th>
+<th><span data-ttu-id="8792b-135">Rolle</span><span class="sxs-lookup"><span data-stu-id="8792b-135">Role</span></span></th>
+<th><span data-ttu-id="8792b-136">Handling</span><span class="sxs-lookup"><span data-stu-id="8792b-136">Action</span></span></th>
+<th><span data-ttu-id="8792b-137">Ressurser som hjelper deg med å fullføre handlingen</span><span class="sxs-lookup"><span data-stu-id="8792b-137">Resources to help you complete the action</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="75d7a-138">1</span><span class="sxs-lookup"><span data-stu-id="75d7a-138">1</span></span></td>
-<td><span data-ttu-id="75d7a-139">Systemansvarlig</span><span class="sxs-lookup"><span data-stu-id="75d7a-139">System administrator</span></span></td>
-<td><span data-ttu-id="75d7a-140">Implementer Finance and Operations-appen i organisasjonen.</span><span class="sxs-lookup"><span data-stu-id="75d7a-140">Implement the Finance and Operations app in your organization.</span></span></td>
-<td><ul><li><span data-ttu-id="75d7a-141">Hvis du ennå ikke har distribuert en versjon av Microsoft Dynamics 365, kan du se <a href="../deployment/deploy-demo-environment.md">Distribuere et demomiljø</a>.</span><span class="sxs-lookup"><span data-stu-id="75d7a-141">If you haven&#39;t yet deployed a version of Microsoft Dynamics 365, see <a href="../deployment/deploy-demo-environment.md">Deploy a demo environment</a>.</span></span></li><li><span data-ttu-id="75d7a-142">Hvis du vil se en oversikt over mobile arbeidsområder som kan brukes, kan du se <a href="mobile-workspaces-released.md">Mobile arbeidsområder som nylig er utgitt</a>.</span><span class="sxs-lookup"><span data-stu-id="75d7a-142">To see a list of mobile workspaces that can be used, see <a href="mobile-workspaces-released.md">Mobile workspaces recently released</a>.</span></span></li></ul></td>
+<td><span data-ttu-id="8792b-138">1</span><span class="sxs-lookup"><span data-stu-id="8792b-138">1</span></span></td>
+<td><span data-ttu-id="8792b-139">Systemansvarlig</span><span class="sxs-lookup"><span data-stu-id="8792b-139">System administrator</span></span></td>
+<td><span data-ttu-id="8792b-140">Implementer Finance and Operations-appen i organisasjonen.</span><span class="sxs-lookup"><span data-stu-id="8792b-140">Implement the Finance and Operations app in your organization.</span></span></td>
+<td><ul><li><span data-ttu-id="8792b-141">Hvis du ennå ikke har distribuert en versjon av Microsoft Dynamics 365, kan du se <a href="../deployment/deploy-demo-environment.md">Distribuere et demomiljø</a>.</span><span class="sxs-lookup"><span data-stu-id="8792b-141">If you haven&#39;t yet deployed a version of Microsoft Dynamics 365, see <a href="../deployment/deploy-demo-environment.md">Deploy a demo environment</a>.</span></span></li><li><span data-ttu-id="8792b-142">Hvis du vil se en oversikt over mobile arbeidsområder som kan brukes, kan du se <a href="mobile-workspaces-released.md">Mobile arbeidsområder som nylig er utgitt</a>.</span><span class="sxs-lookup"><span data-stu-id="8792b-142">To see a list of mobile workspaces that can be used, see <a href="mobile-workspaces-released.md">Mobile workspaces recently released</a>.</span></span></li></ul></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="75d7a-143">2</span><span class="sxs-lookup"><span data-stu-id="75d7a-143">2</span></span></td>
-<td><span data-ttu-id="75d7a-144">Systemansvarlig</span><span class="sxs-lookup"><span data-stu-id="75d7a-144">System administrator</span></span></td>
-<td><span data-ttu-id="75d7a-145"><strong>Hvis du bruker Microsoft Dynamics 365 for Operations versjon 1611:</strong> Last ned og installer KB-er som aktiverer de mobile arbeidsområdene fra Microsoft.</span><span class="sxs-lookup"><span data-stu-id="75d7a-145"><strong>If you&#39;re using Microsoft Dynamics 365 for Operations version 1611:</strong> Download and install KBs that enable the mobile workspaces that are provided by Microsoft.</span></span></td>
-<td><span data-ttu-id="75d7a-146">Hvis du vil ha mer informasjon, se følgende emner:</span><span class="sxs-lookup"><span data-stu-id="75d7a-146">See the following topics for more information:</span></span>
+<td><span data-ttu-id="8792b-143">2</span><span class="sxs-lookup"><span data-stu-id="8792b-143">2</span></span></td>
+<td><span data-ttu-id="8792b-144">Systemansvarlig</span><span class="sxs-lookup"><span data-stu-id="8792b-144">System administrator</span></span></td>
+<td><span data-ttu-id="8792b-145"><strong>Hvis du bruker Microsoft Dynamics 365 for Operations versjon 1611:</strong> Last ned og installer KB-er som aktiverer de mobile arbeidsområdene fra Microsoft.</span><span class="sxs-lookup"><span data-stu-id="8792b-145"><strong>If you&#39;re using Microsoft Dynamics 365 for Operations version 1611:</strong> Download and install KBs that enable the mobile workspaces that are provided by Microsoft.</span></span></td>
+<td><span data-ttu-id="8792b-146">Hvis du vil ha mer informasjon, se følgende emner:</span><span class="sxs-lookup"><span data-stu-id="8792b-146">See the following topics for more information:</span></span>
 <ul>
 
-<li><span data-ttu-id="75d7a-147"><a href="../../../finance/cost-accounting/cost-controlling-mobile-workspace.md">Mobile arbeidsområder for kostnadskontroll</a></span><span class="sxs-lookup"><span data-stu-id="75d7a-147"><a href="../../../finance/cost-accounting/cost-controlling-mobile-workspace.md">Cost controlling mobile workspaces</a></span></span></li>
-<li><span data-ttu-id="75d7a-148"><a href="../../../supply-chain/inventory/inventory-on-hand-mobile-workspace.md">Mobilt arbeidsområde for lagerbeholdning</a></span><span class="sxs-lookup"><span data-stu-id="75d7a-148"><a href="../../../supply-chain/inventory/inventory-on-hand-mobile-workspace.md">Inventory on-hand mobile workspace</a></span></span></li>
-<li><span data-ttu-id="75d7a-149"><a href="../../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md">Mobile arbeidsområder for salgsordrer</a></span><span class="sxs-lookup"><span data-stu-id="75d7a-149"><a href="../../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md">Sales orders mobile workspaces</a></span></span></li>
-<li><span data-ttu-id="75d7a-150"><a href="../../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md">Mobilt arbeidsområde for leverandørsamarbeid</a></span><span class="sxs-lookup"><span data-stu-id="75d7a-150"><a href="../../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md">Vendor collaboration mobile workspace</a></span></span></li>
-<li><span data-ttu-id="75d7a-151"><a href="../../../finance/project-management/project-time-entry-mobile-workspace.md">Mobilt arbeidsområde for registrering av prosjekttid</a></span><span class="sxs-lookup"><span data-stu-id="75d7a-151"><a href="../../../finance/project-management/project-time-entry-mobile-workspace.md">Project time entry mobile workspace</a></span></span></li>
-<li><span data-ttu-id="75d7a-152"><a href="../../../finance/expense-management/expense-management-mobile-workspace.md">Mobilt arbeidsområde for reiseregninger og utlegg</a></span><span class="sxs-lookup"><span data-stu-id="75d7a-152"><a href="../../../finance/expense-management/expense-management-mobile-workspace.md">Expense management mobile workspace</a></span></span></li>
+<li><span data-ttu-id="8792b-147"><a href="../../../finance/cost-accounting/cost-controlling-mobile-workspace.md">Mobile arbeidsområder for kostnadskontroll</a></span><span class="sxs-lookup"><span data-stu-id="8792b-147"><a href="../../../finance/cost-accounting/cost-controlling-mobile-workspace.md">Cost controlling mobile workspaces</a></span></span></li>
+<li><span data-ttu-id="8792b-148"><a href="../../../supply-chain/inventory/inventory-on-hand-mobile-workspace.md">Mobilt arbeidsområde for lagerbeholdning</a></span><span class="sxs-lookup"><span data-stu-id="8792b-148"><a href="../../../supply-chain/inventory/inventory-on-hand-mobile-workspace.md">Inventory on-hand mobile workspace</a></span></span></li>
+<li><span data-ttu-id="8792b-149"><a href="../../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md">Mobile arbeidsområder for salgsordrer</a></span><span class="sxs-lookup"><span data-stu-id="8792b-149"><a href="../../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md">Sales orders mobile workspaces</a></span></span></li>
+<li><span data-ttu-id="8792b-150"><a href="../../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md">Mobilt arbeidsområde for leverandørsamarbeid</a></span><span class="sxs-lookup"><span data-stu-id="8792b-150"><a href="../../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md">Vendor collaboration mobile workspace</a></span></span></li>
+<li><span data-ttu-id="8792b-151"><a href="../../../finance/project-management/project-time-entry-mobile-workspace.md">Mobilt arbeidsområde for registrering av prosjekttid</a></span><span class="sxs-lookup"><span data-stu-id="8792b-151"><a href="../../../finance/project-management/project-time-entry-mobile-workspace.md">Project time entry mobile workspace</a></span></span></li>
+<li><span data-ttu-id="8792b-152"><a href="../../../finance/expense-management/expense-management-mobile-workspace.md">Mobilt arbeidsområde for reiseregninger og utlegg</a></span><span class="sxs-lookup"><span data-stu-id="8792b-152"><a href="../../../finance/expense-management/expense-management-mobile-workspace.md">Expense management mobile workspace</a></span></span></li>
 
 </ul></td>
 </tr>
 <tr class="odd">
-<td><span data-ttu-id="75d7a-153">3</span><span class="sxs-lookup"><span data-stu-id="75d7a-153">3</span></span></td>
-<td><span data-ttu-id="75d7a-154">Systemansvarlig</span><span class="sxs-lookup"><span data-stu-id="75d7a-154">System administrator</span></span></td>
-<td><span data-ttu-id="75d7a-155">Publisere de mobile arbeidsområdene som leveres av Microsoft.</span><span class="sxs-lookup"><span data-stu-id="75d7a-155">Publish the mobile workspaces that are provided by Microsoft.</span></span></td>
-<td><span data-ttu-id="75d7a-156"><a href="publish-mobile-workspace.md">Publisere mobile arbeidsområder</a>
-</span><span class="sxs-lookup"><span data-stu-id="75d7a-156"><a href="publish-mobile-workspace.md">Publish a mobile workspace</a>
+<td><span data-ttu-id="8792b-153">3</span><span class="sxs-lookup"><span data-stu-id="8792b-153">3</span></span></td>
+<td><span data-ttu-id="8792b-154">Systemansvarlig</span><span class="sxs-lookup"><span data-stu-id="8792b-154">System administrator</span></span></td>
+<td><span data-ttu-id="8792b-155">Publisere de mobile arbeidsområdene som leveres av Microsoft.</span><span class="sxs-lookup"><span data-stu-id="8792b-155">Publish the mobile workspaces that are provided by Microsoft.</span></span></td>
+<td><span data-ttu-id="8792b-156"><a href="publish-mobile-workspace.md">Publisere mobile arbeidsområder</a>
+</span><span class="sxs-lookup"><span data-stu-id="8792b-156"><a href="publish-mobile-workspace.md">Publish a mobile workspace</a>
 </span></span></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="75d7a-157">4</span><span class="sxs-lookup"><span data-stu-id="75d7a-157">4</span></span></td>
-<td><span data-ttu-id="75d7a-158">Utvikler eller uavhengig programvareleverandør (ISV)</span><span class="sxs-lookup"><span data-stu-id="75d7a-158">Developer or independent software vendor (ISV)</span></span></td>
-<td><span data-ttu-id="75d7a-159">Bruk mobilplattformen til å opprette egendefinerte mobile arbeidsområder.</span><span class="sxs-lookup"><span data-stu-id="75d7a-159">Use the mobile platform to create custom mobile workspaces.</span></span></td>
-<td><span data-ttu-id="75d7a-160"><a href="platform/mobile-platform-home-page.md">Mobil plattform</a></span><span class="sxs-lookup"><span data-stu-id="75d7a-160"><a href="platform/mobile-platform-home-page.md">Mobile platform</a></span></span></td>
+<td><span data-ttu-id="8792b-157">4</span><span class="sxs-lookup"><span data-stu-id="8792b-157">4</span></span></td>
+<td><span data-ttu-id="8792b-158">Utvikler eller uavhengig programvareleverandør (ISV)</span><span class="sxs-lookup"><span data-stu-id="8792b-158">Developer or independent software vendor (ISV)</span></span></td>
+<td><span data-ttu-id="8792b-159">Bruk mobilplattformen til å opprette egendefinerte mobile arbeidsområder.</span><span class="sxs-lookup"><span data-stu-id="8792b-159">Use the mobile platform to create custom mobile workspaces.</span></span></td>
+<td><span data-ttu-id="8792b-160"><a href="platform/mobile-platform-home-page.md">Mobil plattform</a></span><span class="sxs-lookup"><span data-stu-id="8792b-160"><a href="platform/mobile-platform-home-page.md">Mobile platform</a></span></span></td>
 </tr>
 <tr class="odd">
-<td><span data-ttu-id="75d7a-161">5</span><span class="sxs-lookup"><span data-stu-id="75d7a-161">5</span></span></td>
-<td><span data-ttu-id="75d7a-162">ISV</span><span class="sxs-lookup"><span data-stu-id="75d7a-162">ISV</span></span></td>
-<td><span data-ttu-id="75d7a-163">Opprett en distribuerbar pakke som inneholder egendefinerte mobile arbeidsområder, og laste opp pakken til Microsoft Dynamics Lifecycle Services (LCS).</span><span class="sxs-lookup"><span data-stu-id="75d7a-163">Create a deployable package that contains custom mobile workspaces, and upload the package to Microsoft Dynamics Lifecycle Services (LCS).</span></span></td>
-<td><span data-ttu-id="75d7a-164"><a href="../deployment/create-apply-deployable-package.md">Opprette en distribuerbar pakke</a></span><span class="sxs-lookup"><span data-stu-id="75d7a-164"><a href="../deployment/create-apply-deployable-package.md">Create a deployable package</a></span></span></td>
+<td><span data-ttu-id="8792b-161">5</span><span class="sxs-lookup"><span data-stu-id="8792b-161">5</span></span></td>
+<td><span data-ttu-id="8792b-162">ISV</span><span class="sxs-lookup"><span data-stu-id="8792b-162">ISV</span></span></td>
+<td><span data-ttu-id="8792b-163">Opprett en distribuerbar pakke som inneholder egendefinerte mobile arbeidsområder, og laste opp pakken til Microsoft Dynamics Lifecycle Services (LCS).</span><span class="sxs-lookup"><span data-stu-id="8792b-163">Create a deployable package that contains custom mobile workspaces, and upload the package to Microsoft Dynamics Lifecycle Services (LCS).</span></span></td>
+<td><span data-ttu-id="8792b-164"><a href="../deployment/create-apply-deployable-package.md">Opprette en distribuerbar pakke</a></span><span class="sxs-lookup"><span data-stu-id="8792b-164"><a href="../deployment/create-apply-deployable-package.md">Create a deployable package</a></span></span></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="75d7a-165">6</span><span class="sxs-lookup"><span data-stu-id="75d7a-165">6</span></span></td>
-<td><span data-ttu-id="75d7a-166">Systemansvarlig</span><span class="sxs-lookup"><span data-stu-id="75d7a-166">System administrator</span></span></td>
-<td><span data-ttu-id="75d7a-167">Bruk den distribuerbare pakken som inneholder de egendefinerte arbeidsområdene fra den uavhengige programvareleverandøren.</span><span class="sxs-lookup"><span data-stu-id="75d7a-167">Apply the deployable package that contains the custom workspaces that are provided by the independent software vendor (ISV).</span></span></td>
-<td><span data-ttu-id="75d7a-168"><a href="../deployment/apply-deployable-package-system.md">Bruke en distribuerbar pakke</a></span><span class="sxs-lookup"><span data-stu-id="75d7a-168"><a href="../deployment/apply-deployable-package-system.md">Apply a deployable package</a></span></span></td>
+<td><span data-ttu-id="8792b-165">6</span><span class="sxs-lookup"><span data-stu-id="8792b-165">6</span></span></td>
+<td><span data-ttu-id="8792b-166">Systemansvarlig</span><span class="sxs-lookup"><span data-stu-id="8792b-166">System administrator</span></span></td>
+<td><span data-ttu-id="8792b-167">Bruk den distribuerbare pakken som inneholder de egendefinerte arbeidsområdene fra den uavhengige programvareleverandøren.</span><span class="sxs-lookup"><span data-stu-id="8792b-167">Apply the deployable package that contains the custom workspaces that are provided by the independent software vendor (ISV).</span></span></td>
+<td><span data-ttu-id="8792b-168"><a href="../deployment/apply-deployable-package-system.md">Bruke en distribuerbar pakke</a></span><span class="sxs-lookup"><span data-stu-id="8792b-168"><a href="../deployment/apply-deployable-package-system.md">Apply a deployable package</a></span></span></td>
 </tr>
 <tr class="odd">
-<td><span data-ttu-id="75d7a-169">7</span><span class="sxs-lookup"><span data-stu-id="75d7a-169">7</span></span></td>
-<td><span data-ttu-id="75d7a-170">Systemansvarlig</span><span class="sxs-lookup"><span data-stu-id="75d7a-170">System administrator</span></span></td>
-<td><span data-ttu-id="75d7a-171">Publisere de egendefinerte mobile arbeidsområdene som leveres av den uavhengige programvareleverandøren.</span><span class="sxs-lookup"><span data-stu-id="75d7a-171">Publish the custom mobile workspaces that are provided by the ISV.</span></span></td>
-<td><span data-ttu-id="75d7a-172"><a href="publish-mobile-workspace.md">Publisere et mobilt arbeidsområde</a></span><span class="sxs-lookup"><span data-stu-id="75d7a-172"><a href="publish-mobile-workspace.md">Publish a mobile workspace</a></span></span></td>
+<td><span data-ttu-id="8792b-169">7</span><span class="sxs-lookup"><span data-stu-id="8792b-169">7</span></span></td>
+<td><span data-ttu-id="8792b-170">Systemansvarlig</span><span class="sxs-lookup"><span data-stu-id="8792b-170">System administrator</span></span></td>
+<td><span data-ttu-id="8792b-171">Publisere de egendefinerte mobile arbeidsområdene som leveres av den uavhengige programvareleverandøren.</span><span class="sxs-lookup"><span data-stu-id="8792b-171">Publish the custom mobile workspaces that are provided by the ISV.</span></span></td>
+<td><span data-ttu-id="8792b-172"><a href="publish-mobile-workspace.md">Publisere et mobilt arbeidsområde</a></span><span class="sxs-lookup"><span data-stu-id="8792b-172"><a href="publish-mobile-workspace.md">Publish a mobile workspace</a></span></span></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="75d7a-173">8</span><span class="sxs-lookup"><span data-stu-id="75d7a-173">8</span></span></td>
-<td><span data-ttu-id="75d7a-174">Bruker</span><span class="sxs-lookup"><span data-stu-id="75d7a-174">User</span></span></td>
-<td><span data-ttu-id="75d7a-175">Last ned og installer mobilappen.</span><span class="sxs-lookup"><span data-stu-id="75d7a-175">Download and install the mobile app.</span></span></td>
-<td><span data-ttu-id="75d7a-176">
-<a href="https://go.microsoft.com/fwlink/?linkid=850662">Finance and Operations-app for Android</a></span><span class="sxs-lookup"><span data-stu-id="75d7a-176">
-<a href="https://go.microsoft.com/fwlink/?linkid=850662">Finance and Operations app for Android</a></span></span><BR/><span data-ttu-id="75d7a-177">
-<a href="https://go.microsoft.com/fwlink/?linkid=850663">Finance and Operations-app for iOS</a></span><span class="sxs-lookup"><span data-stu-id="75d7a-177">
+<td><span data-ttu-id="8792b-173">8</span><span class="sxs-lookup"><span data-stu-id="8792b-173">8</span></span></td>
+<td><span data-ttu-id="8792b-174">Bruker</span><span class="sxs-lookup"><span data-stu-id="8792b-174">User</span></span></td>
+<td><span data-ttu-id="8792b-175">Last ned og installer mobilappen.</span><span class="sxs-lookup"><span data-stu-id="8792b-175">Download and install the mobile app.</span></span></td>
+<td><span data-ttu-id="8792b-176">
+<a href="https://go.microsoft.com/fwlink/?linkid=850662">Finance and Operations-app for Android</a></span><span class="sxs-lookup"><span data-stu-id="8792b-176">
+<a href="https://go.microsoft.com/fwlink/?linkid=850662">Finance and Operations app for Android</a></span></span><BR/><span data-ttu-id="8792b-177">
+<a href="https://go.microsoft.com/fwlink/?linkid=850663">Finance and Operations-app for iOS</a></span><span class="sxs-lookup"><span data-stu-id="8792b-177">
 <a href="https://go.microsoft.com/fwlink/?linkid=850663">Finance and Operations app for iOS</a></span></span><BR/>
-<span data-ttu-id="75d7a-178">(Windows Phone støttes ikke)</span><span class="sxs-lookup"><span data-stu-id="75d7a-178">(Windows Phone unsupported)</span></span>
+<span data-ttu-id="8792b-178">(Windows Phone støttes ikke)</span><span class="sxs-lookup"><span data-stu-id="8792b-178">(Windows Phone unsupported)</span></span>
 </td>
 </tr>
 <tr class="odd">
-<td><span data-ttu-id="75d7a-179">9</span><span class="sxs-lookup"><span data-stu-id="75d7a-179">9</span></span></td>
-<td><span data-ttu-id="75d7a-180">Bruker</span><span class="sxs-lookup"><span data-stu-id="75d7a-180">User</span></span></td>
-<td><span data-ttu-id="75d7a-181">Logg på og bruk mobilappen.</span><span class="sxs-lookup"><span data-stu-id="75d7a-181">Sign in, and use the mobile app.</span></span> <span data-ttu-id="75d7a-182">Appen inneholder de mobile arbeidsområdene som er publisert av systemadministrator.</span><span class="sxs-lookup"><span data-stu-id="75d7a-182">The app includes the mobile workspaces that have been published by the system administrator.</span></span></td>
-<td><span data-ttu-id="75d7a-183">Hvis du vil se en oversikt over mobile arbeidsområder som Microsoft leverer, kan du se <a href="mobile-workspaces-released.md">Mobile arbeidsområder som nylig er utgitt</a>.</span><span class="sxs-lookup"><span data-stu-id="75d7a-183">To see a list of mobile workspaces that are provided by Microsoft, see <a href="mobile-workspaces-released.md">Mobile workspaces recently released</a>.</span></span>
+<td><span data-ttu-id="8792b-179">9</span><span class="sxs-lookup"><span data-stu-id="8792b-179">9</span></span></td>
+<td><span data-ttu-id="8792b-180">Bruker</span><span class="sxs-lookup"><span data-stu-id="8792b-180">User</span></span></td>
+<td><span data-ttu-id="8792b-181">Logg på og bruk mobilappen.</span><span class="sxs-lookup"><span data-stu-id="8792b-181">Sign in, and use the mobile app.</span></span> <span data-ttu-id="8792b-182">Appen inneholder de mobile arbeidsområdene som er publisert av systemadministrator.</span><span class="sxs-lookup"><span data-stu-id="8792b-182">The app includes the mobile workspaces that have been published by the system administrator.</span></span></td>
+<td><span data-ttu-id="8792b-183">Hvis du vil se en oversikt over mobile arbeidsområder som Microsoft leverer, kan du se <a href="mobile-workspaces-released.md">Mobile arbeidsområder som nylig er utgitt</a>.</span><span class="sxs-lookup"><span data-stu-id="8792b-183">To see a list of mobile workspaces that are provided by Microsoft, see <a href="mobile-workspaces-released.md">Mobile workspaces recently released</a>.</span></span>
 </td>
 </tr>
 </tbody>
 </table>
 
-## <a name="troubleshooting"></a><span data-ttu-id="75d7a-184">Feilsøking</span><span class="sxs-lookup"><span data-stu-id="75d7a-184">Troubleshooting</span></span>
-[<span data-ttu-id="75d7a-185">Ressurser for mobil plattform</span><span class="sxs-lookup"><span data-stu-id="75d7a-185">Mobile platform resources</span></span>](platform/mobile-platform-home-page.md#troubleshooting-the-app)
+## <a name="troubleshooting"></a><span data-ttu-id="8792b-184">Feilsøking</span><span class="sxs-lookup"><span data-stu-id="8792b-184">Troubleshooting</span></span>
+[<span data-ttu-id="8792b-185">Ressurser for mobil plattform</span><span class="sxs-lookup"><span data-stu-id="8792b-185">Mobile platform resources</span></span>](platform/mobile-platform-home-page.md#troubleshooting-the-app)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
