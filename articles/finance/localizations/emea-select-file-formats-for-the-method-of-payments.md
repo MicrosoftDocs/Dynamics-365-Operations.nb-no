@@ -2,11 +2,9 @@
 title: Filformater for betalingsmåter
 description: Dette emnet beskriver to metoder for å få filformater du kan bruke for betalingsmåter.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustPaymMode, VendPaymMode
 audience: Application User
@@ -16,40 +14,40 @@ ms.search.region: Belgium, France, Germany, Norway, Spain, Sweden, Switzerland
 ms.author: v-lenest
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: beeee6922b4d3baeb2f818d1d540f86a4843d714
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 97bf9a70c1fc170ca8878a99bd16c9a0cb9c7309
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5236227"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5818292"
 ---
-# <a name="file-formats-for-methods-of-payment"></a><span data-ttu-id="1e399-103">Filformater for betalingsmåter</span><span class="sxs-lookup"><span data-stu-id="1e399-103">File formats for methods of payment</span></span>
+# <a name="file-formats-for-methods-of-payment"></a><span data-ttu-id="3590a-103">Filformater for betalingsmåter</span><span class="sxs-lookup"><span data-stu-id="3590a-103">File formats for methods of payment</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="1e399-104">Dette emnet beskriver to metoder for å få filformater du kan bruke for betalingsmåter.</span><span class="sxs-lookup"><span data-stu-id="1e399-104">This topic describes the two methods for getting file formats that you can use for methods of payment.</span></span>
+<span data-ttu-id="3590a-104">Dette emnet beskriver to metoder for å få filformater du kan bruke for betalingsmåter.</span><span class="sxs-lookup"><span data-stu-id="3590a-104">This topic describes the two methods for getting file formats that you can use for methods of payment.</span></span>
 
-<span data-ttu-id="1e399-105">Det finnes to metoder du kan bruke til å få filformater for bruk med betalingsmåten, ER-filformater (elektronisk rapportering) eller et X ++-filformater.</span><span class="sxs-lookup"><span data-stu-id="1e399-105">There are two methods that you can use to get file formats for use with methods of payment, electronic reporting (ER) file formats or X++ file formats.</span></span> <span data-ttu-id="1e399-106">Når du setter opp en betalingsmåte for en kunde eller leverandør, angir du hvilke filformater og standarder som skal brukes for betalinger og hvordan betalinger vil bli behandlet.</span><span class="sxs-lookup"><span data-stu-id="1e399-106">When you set up a method of payment for a customer or vendor, you indicate which file formats and standards should be used for payments and how payments will be processed.</span></span> <span data-ttu-id="1e399-107">Du kan velge blant følgende typer formater:</span><span class="sxs-lookup"><span data-stu-id="1e399-107">You can select from the following types of formats:</span></span>
+<span data-ttu-id="3590a-105">Det finnes to metoder du kan bruke til å få filformater for bruk med betalingsmåten, ER-filformater (elektronisk rapportering) eller et X ++-filformater.</span><span class="sxs-lookup"><span data-stu-id="3590a-105">There are two methods that you can use to get file formats for use with methods of payment, electronic reporting (ER) file formats or X++ file formats.</span></span> <span data-ttu-id="3590a-106">Når du setter opp en betalingsmåte for en kunde eller leverandør, angir du hvilke filformater og standarder som skal brukes for betalinger og hvordan betalinger vil bli behandlet.</span><span class="sxs-lookup"><span data-stu-id="3590a-106">When you set up a method of payment for a customer or vendor, you indicate which file formats and standards should be used for payments and how payments will be processed.</span></span> <span data-ttu-id="3590a-107">Du kan velge blant følgende typer formater:</span><span class="sxs-lookup"><span data-stu-id="3590a-107">You can select from the following types of formats:</span></span>
 
--   <span data-ttu-id="1e399-108">Eksporter</span><span class="sxs-lookup"><span data-stu-id="1e399-108">Export</span></span>
--   <span data-ttu-id="1e399-109">Importer</span><span class="sxs-lookup"><span data-stu-id="1e399-109">Import</span></span>
--   <span data-ttu-id="1e399-110">Retur</span><span class="sxs-lookup"><span data-stu-id="1e399-110">Return</span></span>
--   <span data-ttu-id="1e399-111">Remittering</span><span class="sxs-lookup"><span data-stu-id="1e399-111">Remittance</span></span>
+-   <span data-ttu-id="3590a-108">Eksporter</span><span class="sxs-lookup"><span data-stu-id="3590a-108">Export</span></span>
+-   <span data-ttu-id="3590a-109">Importer</span><span class="sxs-lookup"><span data-stu-id="3590a-109">Import</span></span>
+-   <span data-ttu-id="3590a-110">Retur</span><span class="sxs-lookup"><span data-stu-id="3590a-110">Return</span></span>
+-   <span data-ttu-id="3590a-111">Remittering</span><span class="sxs-lookup"><span data-stu-id="3590a-111">Remittance</span></span>
 
-### <a name="method-1-electronic-reporting-file-formats"></a><span data-ttu-id="1e399-112">Metode 1: formater for elektronisk rapportering</span><span class="sxs-lookup"><span data-stu-id="1e399-112">Method 1: Electronic reporting file formats</span></span>
+### <a name="method-1-electronic-reporting-file-formats"></a><span data-ttu-id="3590a-112">Metode 1: formater for elektronisk rapportering</span><span class="sxs-lookup"><span data-stu-id="3590a-112">Method 1: Electronic reporting file formats</span></span>
 
-<span data-ttu-id="1e399-113">For filformater som er basert på ER-konfigurasjoner, må du importere konfigurasjonene fra Lifecycle Services (LCS).</span><span class="sxs-lookup"><span data-stu-id="1e399-113">For file formats that are based on ER configurations, you must import the configurations from Lifecycle Services (LCS).</span></span> <span data-ttu-id="1e399-114">Hvis du vil ha mer informasjon, kan du se [Laste ned elektroniske rapporteringskonfigurasjoner fra Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).</span><span class="sxs-lookup"><span data-stu-id="1e399-114">For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).</span></span> <span data-ttu-id="1e399-115">Når du har importert rapporteringskonfigurasjoner for disse filformatene, kan du velge de importerte formatene på siden **Betalingsmåter**.</span><span class="sxs-lookup"><span data-stu-id="1e399-115">After you import reporting configurations for those file formats, the imported formats will be available to select on the **Methods of payment** page.</span></span> <span data-ttu-id="1e399-116">Prosessen med å importere og velge filformater for Europa ligner på fremgangsmåten for Japan.</span><span class="sxs-lookup"><span data-stu-id="1e399-116">The process for importing and selecting file formats for Europe is similar to the procedure for Japan.</span></span> <span data-ttu-id="1e399-117">Hvis du vil ha mer informasjon, se [Aktivere JBA-betalingsfilformatet](tasks/jba-payment-file-format.md)</span><span class="sxs-lookup"><span data-stu-id="1e399-117">For more details, see [Enable the JBA payment file format](tasks/jba-payment-file-format.md)</span></span>
+<span data-ttu-id="3590a-113">For filformater som er basert på ER-konfigurasjoner, må du importere konfigurasjonene fra Lifecycle Services (LCS).</span><span class="sxs-lookup"><span data-stu-id="3590a-113">For file formats that are based on ER configurations, you must import the configurations from Lifecycle Services (LCS).</span></span> <span data-ttu-id="3590a-114">Hvis du vil ha mer informasjon, kan du se [Laste ned elektroniske rapporteringskonfigurasjoner fra Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).</span><span class="sxs-lookup"><span data-stu-id="3590a-114">For more information, see [Download Electronic reporting configurations from Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).</span></span> <span data-ttu-id="3590a-115">Når du har importert rapporteringskonfigurasjoner for disse filformatene, kan du velge de importerte formatene på siden **Betalingsmåter**.</span><span class="sxs-lookup"><span data-stu-id="3590a-115">After you import reporting configurations for those file formats, the imported formats will be available to select on the **Methods of payment** page.</span></span> <span data-ttu-id="3590a-116">Prosessen med å importere og velge filformater for Europa ligner på fremgangsmåten for Japan.</span><span class="sxs-lookup"><span data-stu-id="3590a-116">The process for importing and selecting file formats for Europe is similar to the procedure for Japan.</span></span> <span data-ttu-id="3590a-117">Hvis du vil ha mer informasjon, se [Aktivere JBA-betalingsfilformatet](tasks/jba-payment-file-format.md)</span><span class="sxs-lookup"><span data-stu-id="3590a-117">For more details, see [Enable the JBA payment file format](tasks/jba-payment-file-format.md)</span></span>
 
-### <a name="method-2-x-file-formats"></a><span data-ttu-id="1e399-118">Metode 2: X++-filformater</span><span class="sxs-lookup"><span data-stu-id="1e399-118">Method 2: X++ file formats</span></span>
+### <a name="method-2-x-file-formats"></a><span data-ttu-id="3590a-118">Metode 2: X++-filformater</span><span class="sxs-lookup"><span data-stu-id="3590a-118">Method 2: X++ file formats</span></span>
 
-<span data-ttu-id="1e399-119">For å velge filformatene som er basert på X++-kode, kan du fullføre trinnene nedenfor.</span><span class="sxs-lookup"><span data-stu-id="1e399-119">To select file formats that are based on X++ code, complete the following steps.</span></span>
+<span data-ttu-id="3590a-119">For å velge filformatene som er basert på X++-kode, kan du fullføre trinnene nedenfor.</span><span class="sxs-lookup"><span data-stu-id="3590a-119">To select file formats that are based on X++ code, complete the following steps.</span></span>
 
-1.  <span data-ttu-id="1e399-120">Gå til siden **Betalingsmåter**.</span><span class="sxs-lookup"><span data-stu-id="1e399-120">Go to the **Methods of payment** page.</span></span>
-2.  <span data-ttu-id="1e399-121">På **Filformater**-hurtigfanen klikker du **Oppsett**.</span><span class="sxs-lookup"><span data-stu-id="1e399-121">On the **File formats** FastTab, click **Setup**.</span></span>
-3.  <span data-ttu-id="1e399-122">Velg kategorien som samsvarer med filformattypen.</span><span class="sxs-lookup"><span data-stu-id="1e399-122">Select the tab that corresponds with the file format type.</span></span>
-4.  <span data-ttu-id="1e399-123">Velg et filformat fra **Tilgjengelig**-listen og flytt det til **Valgt**-listen med pilkontrollen.</span><span class="sxs-lookup"><span data-stu-id="1e399-123">Select a file format from the **Available** list and move it to the **Selected** list with the arrow control.</span></span>
-5.  <span data-ttu-id="1e399-124">Lukk siden **Filformater for betalingsmåter**.</span><span class="sxs-lookup"><span data-stu-id="1e399-124">Close the **File formats for methods of payment** page.</span></span>
-6.  <span data-ttu-id="1e399-125">På **Filformater**-hurtigfanen velger du filformatet som skal brukes for betalingsmåten, fra det aktuelle filformatfeltet.</span><span class="sxs-lookup"><span data-stu-id="1e399-125">On the **File formats** FastTab, select the file format to use for the method of payment from the appropriate file format field.</span></span> <span data-ttu-id="1e399-126">Alternativene for generell elektronisk rapportering skal settes til **Ingen** for X++-filformater.</span><span class="sxs-lookup"><span data-stu-id="1e399-126">The General electronic reporting options should be set to **No** for X++ file formats.</span></span>
+1.  <span data-ttu-id="3590a-120">Gå til siden **Betalingsmåter**.</span><span class="sxs-lookup"><span data-stu-id="3590a-120">Go to the **Methods of payment** page.</span></span>
+2.  <span data-ttu-id="3590a-121">På **Filformater**-hurtigfanen klikker du **Oppsett**.</span><span class="sxs-lookup"><span data-stu-id="3590a-121">On the **File formats** FastTab, click **Setup**.</span></span>
+3.  <span data-ttu-id="3590a-122">Velg kategorien som samsvarer med filformattypen.</span><span class="sxs-lookup"><span data-stu-id="3590a-122">Select the tab that corresponds with the file format type.</span></span>
+4.  <span data-ttu-id="3590a-123">Velg et filformat fra **Tilgjengelig**-listen og flytt det til **Valgt**-listen med pilkontrollen.</span><span class="sxs-lookup"><span data-stu-id="3590a-123">Select a file format from the **Available** list and move it to the **Selected** list with the arrow control.</span></span>
+5.  <span data-ttu-id="3590a-124">Lukk siden **Filformater for betalingsmåter**.</span><span class="sxs-lookup"><span data-stu-id="3590a-124">Close the **File formats for methods of payment** page.</span></span>
+6.  <span data-ttu-id="3590a-125">På **Filformater**-hurtigfanen velger du filformatet som skal brukes for betalingsmåten, fra det aktuelle filformatfeltet.</span><span class="sxs-lookup"><span data-stu-id="3590a-125">On the **File formats** FastTab, select the file format to use for the method of payment from the appropriate file format field.</span></span> <span data-ttu-id="3590a-126">Alternativene for generell elektronisk rapportering skal settes til **Ingen** for X++-filformater.</span><span class="sxs-lookup"><span data-stu-id="3590a-126">The General electronic reporting options should be set to **No** for X++ file formats.</span></span>
 
 
 

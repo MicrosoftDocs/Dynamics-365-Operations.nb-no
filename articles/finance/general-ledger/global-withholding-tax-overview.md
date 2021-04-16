@@ -2,11 +2,9 @@
 title: Global kildeskatt
 description: Dette emnet gir informasjon om global funksjonalitet for kildeskatt og hvordan du definerer det. Global kildeskattfunksjonalitet er utvidet for leverandør- og kundetransaksjoner, slik at kildeskatt beregnes på varenivå.
 author: roschlom
-manager: AnnBe
 ms.date: 01/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,33 +15,33 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2020-01-12
 ms.dyn365.ops.version: AX 10.0.16
-ms.openlocfilehash: 25fc503d6145872b8e9f28b8d9a4d7b9c1ba53a4
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 9a73d34fb4fbf007cbb5a996cfa6e9719532869c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5249173"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5826672"
 ---
-# <a name="global-withholding-tax"></a><span data-ttu-id="b7e6c-104">Global kildeskatt</span><span class="sxs-lookup"><span data-stu-id="b7e6c-104">Global withholding tax</span></span>
+# <a name="global-withholding-tax"></a><span data-ttu-id="25680-104">Global kildeskatt</span><span class="sxs-lookup"><span data-stu-id="25680-104">Global withholding tax</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="b7e6c-105">Dette emnet gir informasjon om global funksjonalitet for kildeskatt og forklarer hvordan du definerer det.</span><span class="sxs-lookup"><span data-stu-id="b7e6c-105">This topic provides information about global withholding tax functionality and explains how to set it up.</span></span> <span data-ttu-id="b7e6c-106">Den nye funksjonen er tilgjengelig i versjon 10.0.17 og senere.</span><span class="sxs-lookup"><span data-stu-id="b7e6c-106">The new functionality is available in version 10.0.17 and later.</span></span>
+<span data-ttu-id="25680-105">Dette emnet gir informasjon om global funksjonalitet for kildeskatt og forklarer hvordan du definerer det.</span><span class="sxs-lookup"><span data-stu-id="25680-105">This topic provides information about global withholding tax functionality and explains how to set it up.</span></span> <span data-ttu-id="25680-106">Den nye funksjonen er tilgjengelig i versjon 10.0.17 og senere.</span><span class="sxs-lookup"><span data-stu-id="25680-106">The new functionality is available in version 10.0.17 and later.</span></span>
 
-<span data-ttu-id="b7e6c-107">Global kildeskattfunksjonalitet er utvidet for leverandør- og kundetransaksjoner, slik at kildeskatt beregnes på varenivå.</span><span class="sxs-lookup"><span data-stu-id="b7e6c-107">Global withholding tax functionality is enhanced for vendor and customer transactions, so that withholding tax is calculated at the item level.</span></span> <span data-ttu-id="b7e6c-108">Saldoen på kildeskattkontoen fra kjøpstransaksjoner kan utlignes ved å kjøre betalingsjobben for kildeskatt mot utligningskontoen for kildeskatt.</span><span class="sxs-lookup"><span data-stu-id="b7e6c-108">The balance in the withholding tax account from purchase transactions can be settled by running the withholding tax payment job against the withholding tax settlement account.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="b7e6c-109">Global kildeskatt støtter ikke funksjonen **Vedlikehold tillegg** på bestillings-, leverandørfaktura- og salgsordresidene.</span><span class="sxs-lookup"><span data-stu-id="b7e6c-109">Global withholding tax doesn't support the **Maintain charges** function on the purchase order, vendor invoice, and sales order pages.</span></span>
-
-## <a name="turn-on-global-withholding-tax"></a><span data-ttu-id="b7e6c-110">Slå på global kildeskatt</span><span class="sxs-lookup"><span data-stu-id="b7e6c-110">Turn on global withholding tax</span></span>
-
-1. <span data-ttu-id="b7e6c-111">I **Funksjonsbehandling**-arbeidsområdet velger du **Global kildeskatt**, og deretter velger du **Aktiver nå**.</span><span class="sxs-lookup"><span data-stu-id="b7e6c-111">In the **Feature management** workspace, select **Global withholding tax**, and then select **Enable now**.</span></span>
-2. <span data-ttu-id="b7e6c-112">Gå til **Avgift \> Oppsett \> Parametere \> Parametere for økonomimodul** og deretter, i kategorien **Kildeskatt**, setter du alternativet **Aktiver global kildeskatt** til **Ja**.</span><span class="sxs-lookup"><span data-stu-id="b7e6c-112">Go to **Tax \> Setup \> Parameters \> General ledger parameters**, and then, on the **Withholding tax** tab, set the **Enable global withholding tax** option to **Yes**.</span></span>
-3. <span data-ttu-id="b7e6c-113">Velg **Lagre**.</span><span class="sxs-lookup"><span data-stu-id="b7e6c-113">Select **Save**.</span></span>
-4. <span data-ttu-id="b7e6c-114">Oppdatere siden i webleseren.</span><span class="sxs-lookup"><span data-stu-id="b7e6c-114">Refresh the page in your web browser.</span></span>
+<span data-ttu-id="25680-107">Global kildeskattfunksjonalitet er utvidet for leverandør- og kundetransaksjoner, slik at kildeskatt beregnes på varenivå.</span><span class="sxs-lookup"><span data-stu-id="25680-107">Global withholding tax functionality is enhanced for vendor and customer transactions, so that withholding tax is calculated at the item level.</span></span> <span data-ttu-id="25680-108">Saldoen på kildeskattkontoen fra kjøpstransaksjoner kan utlignes ved å kjøre betalingsjobben for kildeskatt mot utligningskontoen for kildeskatt.</span><span class="sxs-lookup"><span data-stu-id="25680-108">The balance in the withholding tax account from purchase transactions can be settled by running the withholding tax payment job against the withholding tax settlement account.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="b7e6c-115">Global kildeskattfunksjonalitet kan ikke aktiveres for land/områder der det allerede finnes lokale kildeskattløsninger.</span><span class="sxs-lookup"><span data-stu-id="b7e6c-115">Global withholding tax functionality can’t be turned on for countries/regions where localized withholding tax solutions already exist.</span></span> <span data-ttu-id="b7e6c-116">Disse områdene omfatter, men er ikke begrenset til India, Brasil, Thailand, Saudi-Arabia, Irland, Storbritannia og USA.</span><span class="sxs-lookup"><span data-stu-id="b7e6c-116">These areas include but are not restricted to India, Brazil, Thailand, Saudi Arabia, Ireland, Great Britain and the United States.</span></span>
+> <span data-ttu-id="25680-109">Global kildeskatt støtter ikke funksjonen **Vedlikehold tillegg** på bestillings-, leverandørfaktura- og salgsordresidene.</span><span class="sxs-lookup"><span data-stu-id="25680-109">Global withholding tax doesn't support the **Maintain charges** function on the purchase order, vendor invoice, and sales order pages.</span></span>
+
+## <a name="turn-on-global-withholding-tax"></a><span data-ttu-id="25680-110">Slå på global kildeskatt</span><span class="sxs-lookup"><span data-stu-id="25680-110">Turn on global withholding tax</span></span>
+
+1. <span data-ttu-id="25680-111">I **Funksjonsbehandling**-arbeidsområdet velger du **Global kildeskatt**, og deretter velger du **Aktiver nå**.</span><span class="sxs-lookup"><span data-stu-id="25680-111">In the **Feature management** workspace, select **Global withholding tax**, and then select **Enable now**.</span></span>
+2. <span data-ttu-id="25680-112">Gå til **Avgift \> Oppsett \> Parametere \> Parametere for økonomimodul** og deretter, i kategorien **Kildeskatt**, setter du alternativet **Aktiver global kildeskatt** til **Ja**.</span><span class="sxs-lookup"><span data-stu-id="25680-112">Go to **Tax \> Setup \> Parameters \> General ledger parameters**, and then, on the **Withholding tax** tab, set the **Enable global withholding tax** option to **Yes**.</span></span>
+3. <span data-ttu-id="25680-113">Velg **Lagre**.</span><span class="sxs-lookup"><span data-stu-id="25680-113">Select **Save**.</span></span>
+4. <span data-ttu-id="25680-114">Oppdatere siden i webleseren.</span><span class="sxs-lookup"><span data-stu-id="25680-114">Refresh the page in your web browser.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="25680-115">Global kildeskattfunksjonalitet kan ikke aktiveres for land/områder der det allerede finnes lokale kildeskattløsninger.</span><span class="sxs-lookup"><span data-stu-id="25680-115">Global withholding tax functionality can’t be turned on for countries/regions where localized withholding tax solutions already exist.</span></span> <span data-ttu-id="25680-116">Disse områdene omfatter, men er ikke begrenset til India, Brasil, Thailand, Saudi-Arabia, Irland, Storbritannia og USA.</span><span class="sxs-lookup"><span data-stu-id="25680-116">These areas include but are not restricted to India, Brazil, Thailand, Saudi Arabia, Ireland, Great Britain and the United States.</span></span>
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

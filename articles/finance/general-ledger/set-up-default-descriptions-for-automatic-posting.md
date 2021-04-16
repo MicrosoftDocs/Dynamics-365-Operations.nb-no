@@ -2,11 +2,9 @@
 title: Definere standardbeskrivelser for automatisk postering
 description: Dette emnet forklarer hvordan du definerer standardtekst som brukes til å beskrive regnskapsoppføringer som posteres automatisk til økonomimodulen. Du kan definere standard beskrivelsestekst ved å bruke frihåndstekst eller velge faste variabler.
 author: aprilolson
-manager: AnnBe
 ms.date: 07/23/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
@@ -16,76 +14,76 @@ ms.search.region: global
 ms.author: aolson
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 5955b796cbc7917eb5500b96c879d1b0819d2edc
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 3963b4ed63021dd3c84a0d87b768486dcb0f386d
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5204864"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5837087"
 ---
-# <a name="set-up-default-descriptions-for-automatic-posting"></a><span data-ttu-id="bdb8b-104">Definere standardbeskrivelser for automatisk postering</span><span class="sxs-lookup"><span data-stu-id="bdb8b-104">Set up default descriptions for automatic posting</span></span>
+# <a name="set-up-default-descriptions-for-automatic-posting"></a><span data-ttu-id="0817c-104">Definere standardbeskrivelser for automatisk postering</span><span class="sxs-lookup"><span data-stu-id="0817c-104">Set up default descriptions for automatic posting</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="bdb8b-105">Dette emnet forklarer hvordan du definerer standardtekst som brukes til å beskrive regnskapsoppføringer som posteres automatisk til økonomimodulen.</span><span class="sxs-lookup"><span data-stu-id="bdb8b-105">This topic explains how to set up default text that is used to describe accounting entries that are posted automatically to the general ledger.</span></span> <span data-ttu-id="bdb8b-106">Du kan definere standard beskrivelsestekst ved å bruke frihåndstekst eller velge faste variabler.</span><span class="sxs-lookup"><span data-stu-id="bdb8b-106">You can set up default description text by using free-form text or by selecting fixed variables.</span></span>
+<span data-ttu-id="0817c-105">Dette emnet forklarer hvordan du definerer standardtekst som brukes til å beskrive regnskapsoppføringer som posteres automatisk til økonomimodulen.</span><span class="sxs-lookup"><span data-stu-id="0817c-105">This topic explains how to set up default text that is used to describe accounting entries that are posted automatically to the general ledger.</span></span> <span data-ttu-id="0817c-106">Du kan definere standard beskrivelsestekst ved å bruke frihåndstekst eller velge faste variabler.</span><span class="sxs-lookup"><span data-stu-id="0817c-106">You can set up default description text by using free-form text or by selecting fixed variables.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="bdb8b-107">For enkelte transaksjonstyper i noen land eller områder kan du også inkludere tekst fra felter i Microsoft Dynamics AX-databasen som er relatert til disse transaksjonstypene.</span><span class="sxs-lookup"><span data-stu-id="bdb8b-107">For some transaction types in some countries or regions, you can also include text from fields in the Microsoft Dynamics AX database that are related to those transaction types.</span></span> <span data-ttu-id="bdb8b-108">Hvis du vil ha en liste over transaksjonstypene og landene og regionene, se [Valgfritt: Legge til annen tekst i standardbeskrivelser](#optional-add-other-text-to-default-descriptions) senere i dette emnet.</span><span class="sxs-lookup"><span data-stu-id="bdb8b-108">For a list of the transaction types, and the countries and regions, see the [Optional: Add other text to default descriptions](#optional-add-other-text-to-default-descriptions) section later in this topic.</span></span>
+> <span data-ttu-id="0817c-107">For enkelte transaksjonstyper i noen land eller områder kan du også inkludere tekst fra felter i Microsoft Dynamics AX-databasen som er relatert til disse transaksjonstypene.</span><span class="sxs-lookup"><span data-stu-id="0817c-107">For some transaction types in some countries or regions, you can also include text from fields in the Microsoft Dynamics AX database that are related to those transaction types.</span></span> <span data-ttu-id="0817c-108">Hvis du vil ha en liste over transaksjonstypene og landene og regionene, se [Valgfritt: Legge til annen tekst i standardbeskrivelser](#optional-add-other-text-to-default-descriptions) senere i dette emnet.</span><span class="sxs-lookup"><span data-stu-id="0817c-108">For a list of the transaction types, and the countries and regions, see the [Optional: Add other text to default descriptions](#optional-add-other-text-to-default-descriptions) section later in this topic.</span></span>
 
-## <a name="set-up-default-descriptions"></a><span data-ttu-id="bdb8b-109">Definere standardbeskrivelser</span><span class="sxs-lookup"><span data-stu-id="bdb8b-109">Set up default descriptions</span></span>
+## <a name="set-up-default-descriptions"></a><span data-ttu-id="0817c-109">Definere standardbeskrivelser</span><span class="sxs-lookup"><span data-stu-id="0817c-109">Set up default descriptions</span></span>
 
-1. <span data-ttu-id="bdb8b-110">Gå til **Organisasjonsstyring** \> **Oppsett** \> **Standardbeskrivelser**.</span><span class="sxs-lookup"><span data-stu-id="bdb8b-110">Go to **Organization administration** \> **Setup** \> **Default descriptions**.</span></span>
-2. <span data-ttu-id="bdb8b-111">Velg **Ny** i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="bdb8b-111">On the Action Pane, select **New**.</span></span>
-3. <span data-ttu-id="bdb8b-112">Velg transaksjonstypen du vil opprette en standardbeskrivelse for i feltet **Beskrivelse**.</span><span class="sxs-lookup"><span data-stu-id="bdb8b-112">In the **Description** field, select the type of transaction to create a default description for.</span></span>
-4. <span data-ttu-id="bdb8b-113">I **Språk**-feltet velger du språket denne beskrivelsen gjelder for.</span><span class="sxs-lookup"><span data-stu-id="bdb8b-113">In the **Language** field, select the language that the description applies to.</span></span>
-5. <span data-ttu-id="bdb8b-114">I **Tekst**-feltet angir du standardbeskrivelsen.</span><span class="sxs-lookup"><span data-stu-id="bdb8b-114">In the **Text** field, enter the default description.</span></span> <span data-ttu-id="bdb8b-115">Du kan skrive inn tekst i feltet, eller du kan bruke én eller flere av de følgende fritekstvariablene:</span><span class="sxs-lookup"><span data-stu-id="bdb8b-115">You can type text in the field, or you can use one or more of the following free-text variables:</span></span>
+1. <span data-ttu-id="0817c-110">Gå til **Organisasjonsstyring** \> **Oppsett** \> **Standardbeskrivelser**.</span><span class="sxs-lookup"><span data-stu-id="0817c-110">Go to **Organization administration** \> **Setup** \> **Default descriptions**.</span></span>
+2. <span data-ttu-id="0817c-111">Velg **Ny** i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="0817c-111">On the Action Pane, select **New**.</span></span>
+3. <span data-ttu-id="0817c-112">Velg transaksjonstypen du vil opprette en standardbeskrivelse for i feltet **Beskrivelse**.</span><span class="sxs-lookup"><span data-stu-id="0817c-112">In the **Description** field, select the type of transaction to create a default description for.</span></span>
+4. <span data-ttu-id="0817c-113">I **Språk**-feltet velger du språket denne beskrivelsen gjelder for.</span><span class="sxs-lookup"><span data-stu-id="0817c-113">In the **Language** field, select the language that the description applies to.</span></span>
+5. <span data-ttu-id="0817c-114">I **Tekst**-feltet angir du standardbeskrivelsen.</span><span class="sxs-lookup"><span data-stu-id="0817c-114">In the **Text** field, enter the default description.</span></span> <span data-ttu-id="0817c-115">Du kan skrive inn tekst i feltet, eller du kan bruke én eller flere av de følgende fritekstvariablene:</span><span class="sxs-lookup"><span data-stu-id="0817c-115">You can type text in the field, or you can use one or more of the following free-text variables:</span></span>
 
-    - <span data-ttu-id="bdb8b-116">**%1** – Legg til transaksjonsdatoen.</span><span class="sxs-lookup"><span data-stu-id="bdb8b-116">**%1** – Add the transaction date.</span></span>
-    - <span data-ttu-id="bdb8b-117">**%2** – Legg til en identifikator som tilsvarer dokumenttypen som posteres til økonomimodulen.</span><span class="sxs-lookup"><span data-stu-id="bdb8b-117">**%2** – Add an identifier that corresponds to the document type that is being posted to the general ledger.</span></span> <span data-ttu-id="bdb8b-118">Fo transaksjonstyper som er relatert til fakturaer for eksempel, legger variabelen **%2** til fakturanummeret.</span><span class="sxs-lookup"><span data-stu-id="bdb8b-118">For example, for transaction types that are related to invoices, the **%2** variable adds the invoice number.</span></span>
-    - <span data-ttu-id="bdb8b-119">**%3** – Legg til en identifikator som er relatert til dokumenttypen som posteres til økonomimodulen.</span><span class="sxs-lookup"><span data-stu-id="bdb8b-119">**%3** – Add an identifier that is related to the document type that is being posted to the general ledger.</span></span> <span data-ttu-id="bdb8b-120">For transaksjonstyper som er relatert til fakturaer for eksempel, legger variabelen **%3** til kundens kontonummer.</span><span class="sxs-lookup"><span data-stu-id="bdb8b-120">For example, for transaction types that are related to invoices, the **%3** variable adds the customer account number.</span></span>
+    - <span data-ttu-id="0817c-116">**%1** – Legg til transaksjonsdatoen.</span><span class="sxs-lookup"><span data-stu-id="0817c-116">**%1** – Add the transaction date.</span></span>
+    - <span data-ttu-id="0817c-117">**%2** – Legg til en identifikator som tilsvarer dokumenttypen som posteres til økonomimodulen.</span><span class="sxs-lookup"><span data-stu-id="0817c-117">**%2** – Add an identifier that corresponds to the document type that is being posted to the general ledger.</span></span> <span data-ttu-id="0817c-118">Fo transaksjonstyper som er relatert til fakturaer for eksempel, legger variabelen **%2** til fakturanummeret.</span><span class="sxs-lookup"><span data-stu-id="0817c-118">For example, for transaction types that are related to invoices, the **%2** variable adds the invoice number.</span></span>
+    - <span data-ttu-id="0817c-119">**%3** – Legg til en identifikator som er relatert til dokumenttypen som posteres til økonomimodulen.</span><span class="sxs-lookup"><span data-stu-id="0817c-119">**%3** – Add an identifier that is related to the document type that is being posted to the general ledger.</span></span> <span data-ttu-id="0817c-120">For transaksjonstyper som er relatert til fakturaer for eksempel, legger variabelen **%3** til kundens kontonummer.</span><span class="sxs-lookup"><span data-stu-id="0817c-120">For example, for transaction types that are related to invoices, the **%3** variable adds the customer account number.</span></span>
 
-## <a name="optional-add-other-text-to-default-descriptions"></a><span data-ttu-id="bdb8b-121">Valgfritt: Legge til annen tekst i standardbeskrivelser</span><span class="sxs-lookup"><span data-stu-id="bdb8b-121">Optional: Add other text to default descriptions</span></span>
+## <a name="optional-add-other-text-to-default-descriptions"></a><span data-ttu-id="0817c-121">Valgfritt: Legge til annen tekst i standardbeskrivelser</span><span class="sxs-lookup"><span data-stu-id="0817c-121">Optional: Add other text to default descriptions</span></span>
 
-<span data-ttu-id="bdb8b-122">For enkelte transaksjonstyper i noen land eller områder, kan tekst inkluderes i standardbeskrivelsene som kommer fra felt i dataene som er relatert til disse transaksjonstypene.</span><span class="sxs-lookup"><span data-stu-id="bdb8b-122">For some transaction types in some countries or regions, default descriptions can include text that comes from fields in your data that are related to those transaction types.</span></span> <span data-ttu-id="bdb8b-123">Følgende liste viser transaksjonstyper og land/områder som dette alternativet er tilgjengelig for.</span><span class="sxs-lookup"><span data-stu-id="bdb8b-123">The following lists show the transaction types, and the countries and regions, that this option is available for.</span></span>
+<span data-ttu-id="0817c-122">For enkelte transaksjonstyper i noen land eller områder, kan tekst inkluderes i standardbeskrivelsene som kommer fra felt i dataene som er relatert til disse transaksjonstypene.</span><span class="sxs-lookup"><span data-stu-id="0817c-122">For some transaction types in some countries or regions, default descriptions can include text that comes from fields in your data that are related to those transaction types.</span></span> <span data-ttu-id="0817c-123">Følgende liste viser transaksjonstyper og land/områder som dette alternativet er tilgjengelig for.</span><span class="sxs-lookup"><span data-stu-id="0817c-123">The following lists show the transaction types, and the countries and regions, that this option is available for.</span></span>
 
-<span data-ttu-id="bdb8b-124">**Transaksjonstyper**</span><span class="sxs-lookup"><span data-stu-id="bdb8b-124">**Transaction types**</span></span>
+<span data-ttu-id="0817c-124">**Transaksjonstyper**</span><span class="sxs-lookup"><span data-stu-id="0817c-124">**Transaction types**</span></span>
 
-<span data-ttu-id="bdb8b-125">Du kan legge til annen tekst i standardbeskrivelser for transaksjonstyper som er knyttet til følgende dokumenttyper:</span><span class="sxs-lookup"><span data-stu-id="bdb8b-125">You can add other text to default descriptions for transaction types that are related to the following document types:</span></span>
+<span data-ttu-id="0817c-125">Du kan legge til annen tekst i standardbeskrivelser for transaksjonstyper som er knyttet til følgende dokumenttyper:</span><span class="sxs-lookup"><span data-stu-id="0817c-125">You can add other text to default descriptions for transaction types that are related to the following document types:</span></span>
 
-- <span data-ttu-id="bdb8b-126">Kundefakturaer</span><span class="sxs-lookup"><span data-stu-id="bdb8b-126">Customer invoices</span></span>
-- <span data-ttu-id="bdb8b-127">Kundekredittnotaer</span><span class="sxs-lookup"><span data-stu-id="bdb8b-127">Customer credit notes</span></span>
-- <span data-ttu-id="bdb8b-128">Kundekontantbetalinger</span><span class="sxs-lookup"><span data-stu-id="bdb8b-128">Customer cash payments</span></span>
-- <span data-ttu-id="bdb8b-129">Leverandørbetalinger</span><span class="sxs-lookup"><span data-stu-id="bdb8b-129">Vendor payments</span></span>
-- <span data-ttu-id="bdb8b-130">Salgsordre</span><span class="sxs-lookup"><span data-stu-id="bdb8b-130">Sales orders</span></span>
-- <span data-ttu-id="bdb8b-131">Bestillinger</span><span class="sxs-lookup"><span data-stu-id="bdb8b-131">Purchase orders</span></span>
-- <span data-ttu-id="bdb8b-132">Lagerjournaler</span><span class="sxs-lookup"><span data-stu-id="bdb8b-132">Inventory journals</span></span>
-- <span data-ttu-id="bdb8b-133">Hovedplanlegging (MPS)</span><span class="sxs-lookup"><span data-stu-id="bdb8b-133">Master planning (MRP)</span></span>
-- <span data-ttu-id="bdb8b-134">Anleggsmidler</span><span class="sxs-lookup"><span data-stu-id="bdb8b-134">Fixed assets</span></span>
+- <span data-ttu-id="0817c-126">Kundefakturaer</span><span class="sxs-lookup"><span data-stu-id="0817c-126">Customer invoices</span></span>
+- <span data-ttu-id="0817c-127">Kundekredittnotaer</span><span class="sxs-lookup"><span data-stu-id="0817c-127">Customer credit notes</span></span>
+- <span data-ttu-id="0817c-128">Kundekontantbetalinger</span><span class="sxs-lookup"><span data-stu-id="0817c-128">Customer cash payments</span></span>
+- <span data-ttu-id="0817c-129">Leverandørbetalinger</span><span class="sxs-lookup"><span data-stu-id="0817c-129">Vendor payments</span></span>
+- <span data-ttu-id="0817c-130">Salgsordre</span><span class="sxs-lookup"><span data-stu-id="0817c-130">Sales orders</span></span>
+- <span data-ttu-id="0817c-131">Bestillinger</span><span class="sxs-lookup"><span data-stu-id="0817c-131">Purchase orders</span></span>
+- <span data-ttu-id="0817c-132">Lagerjournaler</span><span class="sxs-lookup"><span data-stu-id="0817c-132">Inventory journals</span></span>
+- <span data-ttu-id="0817c-133">Hovedplanlegging (MPS)</span><span class="sxs-lookup"><span data-stu-id="0817c-133">Master planning (MRP)</span></span>
+- <span data-ttu-id="0817c-134">Anleggsmidler</span><span class="sxs-lookup"><span data-stu-id="0817c-134">Fixed assets</span></span>
 
-<span data-ttu-id="bdb8b-135">**Land og områder**</span><span class="sxs-lookup"><span data-stu-id="bdb8b-135">**Countries and regions**</span></span>
+<span data-ttu-id="0817c-135">**Land og områder**</span><span class="sxs-lookup"><span data-stu-id="0817c-135">**Countries and regions**</span></span>
 
-<span data-ttu-id="bdb8b-136">Dette alternativet er tilgjengelig for følgende land og regioner:</span><span class="sxs-lookup"><span data-stu-id="bdb8b-136">This option is available for the following countries and regions:</span></span>
+<span data-ttu-id="0817c-136">Dette alternativet er tilgjengelig for følgende land og regioner:</span><span class="sxs-lookup"><span data-stu-id="0817c-136">This option is available for the following countries and regions:</span></span>
 
-- <span data-ttu-id="bdb8b-137">Brasil</span><span class="sxs-lookup"><span data-stu-id="bdb8b-137">Brazil</span></span>
-- <span data-ttu-id="bdb8b-138">Kina</span><span class="sxs-lookup"><span data-stu-id="bdb8b-138">China</span></span>
-- <span data-ttu-id="bdb8b-139">Tsjekkia</span><span class="sxs-lookup"><span data-stu-id="bdb8b-139">Czech Republic</span></span>
-- <span data-ttu-id="bdb8b-140">Øst-Europa</span><span class="sxs-lookup"><span data-stu-id="bdb8b-140">Eastern Europe</span></span>
-- <span data-ttu-id="bdb8b-141">Ungarn</span><span class="sxs-lookup"><span data-stu-id="bdb8b-141">Hungary</span></span>
-- <span data-ttu-id="bdb8b-142">India</span><span class="sxs-lookup"><span data-stu-id="bdb8b-142">India</span></span>
-- <span data-ttu-id="bdb8b-143">Japan</span><span class="sxs-lookup"><span data-stu-id="bdb8b-143">Japan</span></span>
-- <span data-ttu-id="bdb8b-144">Litauen</span><span class="sxs-lookup"><span data-stu-id="bdb8b-144">Lithuania</span></span>
-- <span data-ttu-id="bdb8b-145">Latvia</span><span class="sxs-lookup"><span data-stu-id="bdb8b-145">Latvia</span></span>
-- <span data-ttu-id="bdb8b-146">Polen</span><span class="sxs-lookup"><span data-stu-id="bdb8b-146">Poland</span></span>
-- <span data-ttu-id="bdb8b-147">Russland</span><span class="sxs-lookup"><span data-stu-id="bdb8b-147">Russia</span></span>
+- <span data-ttu-id="0817c-137">Brasil</span><span class="sxs-lookup"><span data-stu-id="0817c-137">Brazil</span></span>
+- <span data-ttu-id="0817c-138">Kina</span><span class="sxs-lookup"><span data-stu-id="0817c-138">China</span></span>
+- <span data-ttu-id="0817c-139">Tsjekkia</span><span class="sxs-lookup"><span data-stu-id="0817c-139">Czech Republic</span></span>
+- <span data-ttu-id="0817c-140">Øst-Europa</span><span class="sxs-lookup"><span data-stu-id="0817c-140">Eastern Europe</span></span>
+- <span data-ttu-id="0817c-141">Ungarn</span><span class="sxs-lookup"><span data-stu-id="0817c-141">Hungary</span></span>
+- <span data-ttu-id="0817c-142">India</span><span class="sxs-lookup"><span data-stu-id="0817c-142">India</span></span>
+- <span data-ttu-id="0817c-143">Japan</span><span class="sxs-lookup"><span data-stu-id="0817c-143">Japan</span></span>
+- <span data-ttu-id="0817c-144">Litauen</span><span class="sxs-lookup"><span data-stu-id="0817c-144">Lithuania</span></span>
+- <span data-ttu-id="0817c-145">Latvia</span><span class="sxs-lookup"><span data-stu-id="0817c-145">Latvia</span></span>
+- <span data-ttu-id="0817c-146">Polen</span><span class="sxs-lookup"><span data-stu-id="0817c-146">Poland</span></span>
+- <span data-ttu-id="0817c-147">Russland</span><span class="sxs-lookup"><span data-stu-id="0817c-147">Russia</span></span>
 
-### <a name="add-text-to-default-descriptions"></a><span data-ttu-id="bdb8b-148">Legge til tekst i standardbeskrivelser</span><span class="sxs-lookup"><span data-stu-id="bdb8b-148">Add text to default descriptions</span></span>
+### <a name="add-text-to-default-descriptions"></a><span data-ttu-id="0817c-148">Legge til tekst i standardbeskrivelser</span><span class="sxs-lookup"><span data-stu-id="0817c-148">Add text to default descriptions</span></span>
 
-<span data-ttu-id="bdb8b-149">Når du har fullført trinnene i [Definere standardbeskrivelser](#set-up-default-descriptions) tidligere i dette emnet, følger du denne fremgangsmåten for å legge til annen tekst i standardbeskrivelsene.</span><span class="sxs-lookup"><span data-stu-id="bdb8b-149">After you complete the steps in the [Set up default descriptions](#set-up-default-descriptions) section earlier in this topic, follow these steps to add other text to the default descriptions.</span></span>
+<span data-ttu-id="0817c-149">Når du har fullført trinnene i [Definere standardbeskrivelser](#set-up-default-descriptions) tidligere i dette emnet, følger du denne fremgangsmåten for å legge til annen tekst i standardbeskrivelsene.</span><span class="sxs-lookup"><span data-stu-id="0817c-149">After you complete the steps in the [Set up default descriptions](#set-up-default-descriptions) section earlier in this topic, follow these steps to add other text to the default descriptions.</span></span>
 
-1. <span data-ttu-id="bdb8b-150">Velg **Legg til** på hurtigfanen **Parametere**.</span><span class="sxs-lookup"><span data-stu-id="bdb8b-150">On the **Parameters** FastTab, select **Add**.</span></span>
-2. <span data-ttu-id="bdb8b-151">Velg databasetabellen du vil legge til parameterdata i beskrivelsen fra, i **Referansetabell**-feltet.</span><span class="sxs-lookup"><span data-stu-id="bdb8b-151">In the **Reference table** field, select the database table from which to add parameter data to the description.</span></span>
-3. <span data-ttu-id="bdb8b-152">Velg feltet du vil legge til parameterdata i beskrivelsen fra, i **Referansefelt**-feltet.</span><span class="sxs-lookup"><span data-stu-id="bdb8b-152">In the **Reference field** field, select the field from which to add parameter data to the description.</span></span>
-4. <span data-ttu-id="bdb8b-153">Gjenta trinn 1 til og med 3 hvis du vil legge til flere parametere.</span><span class="sxs-lookup"><span data-stu-id="bdb8b-153">Repeat steps 1 through 3 to add more parameters.</span></span>
+1. <span data-ttu-id="0817c-150">Velg **Legg til** på hurtigfanen **Parametere**.</span><span class="sxs-lookup"><span data-stu-id="0817c-150">On the **Parameters** FastTab, select **Add**.</span></span>
+2. <span data-ttu-id="0817c-151">Velg databasetabellen du vil legge til parameterdata i beskrivelsen fra, i **Referansetabell**-feltet.</span><span class="sxs-lookup"><span data-stu-id="0817c-151">In the **Reference table** field, select the database table from which to add parameter data to the description.</span></span>
+3. <span data-ttu-id="0817c-152">Velg feltet du vil legge til parameterdata i beskrivelsen fra, i **Referansefelt**-feltet.</span><span class="sxs-lookup"><span data-stu-id="0817c-152">In the **Reference field** field, select the field from which to add parameter data to the description.</span></span>
+4. <span data-ttu-id="0817c-153">Gjenta trinn 1 til og med 3 hvis du vil legge til flere parametere.</span><span class="sxs-lookup"><span data-stu-id="0817c-153">Repeat steps 1 through 3 to add more parameters.</span></span>
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

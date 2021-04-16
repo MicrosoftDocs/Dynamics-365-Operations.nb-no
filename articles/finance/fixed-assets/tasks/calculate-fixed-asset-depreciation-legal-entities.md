@@ -2,11 +2,9 @@
 title: Beregne avskrivning av anleggsmidler på tvers av juridiske enheter
 description: Avskrivning av anleggsmidler kan kjøres på tvers av juridiske enheter i ett enkelt trinn.
 author: saraschi2
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetParameters, AssetProposalDepreciation, DefaultDashboard, LedgerJournalTable
 audience: Application User
@@ -15,40 +13,40 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8d228c387e8a6bf956f729a69e2296130db32dbd
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 85a1e71967fb126be29a76a8a29ea5e4ae2b2199
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5210053"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5818470"
 ---
-# <a name="calculate-fixed-asset-depreciation-across-legal-entities"></a><span data-ttu-id="750c9-103">Beregne avskrivning av anleggsmidler på tvers av juridiske enheter</span><span class="sxs-lookup"><span data-stu-id="750c9-103">Calculate fixed asset depreciation across legal entities</span></span>
+# <a name="calculate-fixed-asset-depreciation-across-legal-entities"></a><span data-ttu-id="fe2bf-103">Beregne avskrivning av anleggsmidler på tvers av juridiske enheter</span><span class="sxs-lookup"><span data-stu-id="fe2bf-103">Calculate fixed asset depreciation across legal entities</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="750c9-104">Avskrivning av anleggsmidler kan kjøres på tvers av juridiske enheter i ett enkelt trinn.</span><span class="sxs-lookup"><span data-stu-id="750c9-104">Fixed asset depreciation can be run across legal entities in a single step.</span></span> <span data-ttu-id="750c9-105">Denne prosedyren viser deg hvordan du definerer og kjører prosessen for flere juridiske enheter.</span><span class="sxs-lookup"><span data-stu-id="750c9-105">This procedure shows you to how set up and run the process for multiple legal entities.</span></span> <span data-ttu-id="750c9-106">Den bruker regnskapsførerrollen og demodataene for den juridiske enheten USMF.</span><span class="sxs-lookup"><span data-stu-id="750c9-106">It uses the accountant role and demo data for the USMF legal entity.</span></span>
+<span data-ttu-id="fe2bf-104">Avskrivning av anleggsmidler kan kjøres på tvers av juridiske enheter i ett enkelt trinn.</span><span class="sxs-lookup"><span data-stu-id="fe2bf-104">Fixed asset depreciation can be run across legal entities in a single step.</span></span> <span data-ttu-id="fe2bf-105">Denne prosedyren viser deg hvordan du definerer og kjører prosessen for flere juridiske enheter.</span><span class="sxs-lookup"><span data-stu-id="fe2bf-105">This procedure shows you to how set up and run the process for multiple legal entities.</span></span> <span data-ttu-id="fe2bf-106">Den bruker regnskapsførerrollen og demodataene for den juridiske enheten USMF.</span><span class="sxs-lookup"><span data-stu-id="fe2bf-106">It uses the accountant role and demo data for the USMF legal entity.</span></span>
 
 
-## <a name="set-up-cross-company-depreciation-run-journals"></a><span data-ttu-id="750c9-107">Definere journaler for avskrivningskjøring på tvers av firmaet</span><span class="sxs-lookup"><span data-stu-id="750c9-107">Set up cross company depreciation run journals</span></span>
-1. <span data-ttu-id="750c9-108">Gå til Anleggsmidler > Oppsett > Parametere for anleggsmidler.</span><span class="sxs-lookup"><span data-stu-id="750c9-108">Go to Fixed assets > Setup > Fixed assets parameters.</span></span>
-2. <span data-ttu-id="750c9-109">Vis delen Forslag til anleggsmidler.</span><span class="sxs-lookup"><span data-stu-id="750c9-109">Expand the Fixed asset proposals section.</span></span>
-3. <span data-ttu-id="750c9-110">Klikk Legg til.</span><span class="sxs-lookup"><span data-stu-id="750c9-110">Click Add.</span></span>
-4. <span data-ttu-id="750c9-111">Angi eller velg en verdi i Posteringslag-feltet.</span><span class="sxs-lookup"><span data-stu-id="750c9-111">In the Posting layer field, enter or select a value.</span></span>
-5. <span data-ttu-id="750c9-112">Angi eller velg en verdi i feltet Journalnavn.</span><span class="sxs-lookup"><span data-stu-id="750c9-112">In the Journal name field, enter or select a value.</span></span>
-    * <span data-ttu-id="750c9-113">Gjenta journaloppsettet på siden Parametere for anleggsmidler i hver juridiske enhet.</span><span class="sxs-lookup"><span data-stu-id="750c9-113">Repeat the journal setup on the Fixed asset parameters page in each legal entity.</span></span>  
+## <a name="set-up-cross-company-depreciation-run-journals"></a><span data-ttu-id="fe2bf-107">Definere journaler for avskrivningskjøring på tvers av firmaet</span><span class="sxs-lookup"><span data-stu-id="fe2bf-107">Set up cross company depreciation run journals</span></span>
+1. <span data-ttu-id="fe2bf-108">Gå til Anleggsmidler > Oppsett > Parametere for anleggsmidler.</span><span class="sxs-lookup"><span data-stu-id="fe2bf-108">Go to Fixed assets > Setup > Fixed assets parameters.</span></span>
+2. <span data-ttu-id="fe2bf-109">Vis delen Forslag til anleggsmidler.</span><span class="sxs-lookup"><span data-stu-id="fe2bf-109">Expand the Fixed asset proposals section.</span></span>
+3. <span data-ttu-id="fe2bf-110">Klikk Legg til.</span><span class="sxs-lookup"><span data-stu-id="fe2bf-110">Click Add.</span></span>
+4. <span data-ttu-id="fe2bf-111">Angi eller velg en verdi i Posteringslag-feltet.</span><span class="sxs-lookup"><span data-stu-id="fe2bf-111">In the Posting layer field, enter or select a value.</span></span>
+5. <span data-ttu-id="fe2bf-112">Angi eller velg en verdi i feltet Journalnavn.</span><span class="sxs-lookup"><span data-stu-id="fe2bf-112">In the Journal name field, enter or select a value.</span></span>
+    * <span data-ttu-id="fe2bf-113">Gjenta journaloppsettet på siden Parametere for anleggsmidler i hver juridiske enhet.</span><span class="sxs-lookup"><span data-stu-id="fe2bf-113">Repeat the journal setup on the Fixed asset parameters page in each legal entity.</span></span>  
 
-## <a name="depreciation-run"></a><span data-ttu-id="750c9-114">Avskrivningskjøring</span><span class="sxs-lookup"><span data-stu-id="750c9-114">Depreciation run</span></span>
-1. <span data-ttu-id="750c9-115">Gå til Anleggsmidler > Journaloppføringer > Opprett avskrivningsforslag.</span><span class="sxs-lookup"><span data-stu-id="750c9-115">Go to Fixed assets > Journal entries > Create depreciation proposal.</span></span>
-2. <span data-ttu-id="750c9-116">Angi eller velg en verdi i Posteringslag-feltet.</span><span class="sxs-lookup"><span data-stu-id="750c9-116">In the Posting layer field, enter or select a value.</span></span>
-    * <span data-ttu-id="750c9-117">Journalnavnet brukes som standard fra Parametere for anleggsmidler.</span><span class="sxs-lookup"><span data-stu-id="750c9-117">The journal name will default from the Fixed asset parameters.</span></span> <span data-ttu-id="750c9-118">Det kan endres her for gjeldende juridiske enhet.</span><span class="sxs-lookup"><span data-stu-id="750c9-118">It can be changed here for the current legal entity.</span></span>  
-3. <span data-ttu-id="750c9-119">Angi en dato i Til dato-feltet.</span><span class="sxs-lookup"><span data-stu-id="750c9-119">In the To date field, enter a date.</span></span>
-    * <span data-ttu-id="750c9-120">Velg de juridiske enhetene som skal inkluderes i avskrivningskjøringen.</span><span class="sxs-lookup"><span data-stu-id="750c9-120">Select the legal entities to be included in the depreciation run.</span></span>  
-    * <span data-ttu-id="750c9-121">Bare juridiske enheter med journaler som er definert for Forslag til anleggsmidler på siden Parametere for anleggsmidler vises i listen.</span><span class="sxs-lookup"><span data-stu-id="750c9-121">Only legal entities with journals set up for Fixed asset proposals on the Fixed asset parameters page will be shown in the list.</span></span>  
-4. <span data-ttu-id="750c9-122">Velg Ja i feltet Poster journaler.</span><span class="sxs-lookup"><span data-stu-id="750c9-122">Select Yes in the Post journals field.</span></span>
-    * <span data-ttu-id="750c9-123">Filtreringsfeltene inkluderer alle anleggsmidler, grupper og tablåer for de juridiske enhetene som er valgt for denne avskrivningskjøringen.</span><span class="sxs-lookup"><span data-stu-id="750c9-123">Filtering fields include all fixed assets, groups, and books for the legal entities selected for this depreciation run.</span></span>  
-    * <span data-ttu-id="750c9-124">Alternativet Satsvis behandling er aktivert som standard.</span><span class="sxs-lookup"><span data-stu-id="750c9-124">The Batch processing option is enabled by default.</span></span> <span data-ttu-id="750c9-125">Når dette alternativet er aktivert, vil oppretting og postering av avskrivningsjournalen kjøres i bakgrunnen.</span><span class="sxs-lookup"><span data-stu-id="750c9-125">When this option is enabled, the depreciation journal creation and posting will run in the background.</span></span>  
-5. <span data-ttu-id="750c9-126">Klikk Opprett journal.</span><span class="sxs-lookup"><span data-stu-id="750c9-126">Click Create journal.</span></span>
-6. <span data-ttu-id="750c9-127">Gå til Anleggsmidler > Journaloppføringer > Anleggsmiddeljournal.</span><span class="sxs-lookup"><span data-stu-id="750c9-127">Go to Fixed assets > Journal entries > Fixed assets journal.</span></span>
+## <a name="depreciation-run"></a><span data-ttu-id="fe2bf-114">Avskrivningskjøring</span><span class="sxs-lookup"><span data-stu-id="fe2bf-114">Depreciation run</span></span>
+1. <span data-ttu-id="fe2bf-115">Gå til Anleggsmidler > Journaloppføringer > Opprett avskrivningsforslag.</span><span class="sxs-lookup"><span data-stu-id="fe2bf-115">Go to Fixed assets > Journal entries > Create depreciation proposal.</span></span>
+2. <span data-ttu-id="fe2bf-116">Angi eller velg en verdi i Posteringslag-feltet.</span><span class="sxs-lookup"><span data-stu-id="fe2bf-116">In the Posting layer field, enter or select a value.</span></span>
+    * <span data-ttu-id="fe2bf-117">Journalnavnet brukes som standard fra Parametere for anleggsmidler.</span><span class="sxs-lookup"><span data-stu-id="fe2bf-117">The journal name will default from the Fixed asset parameters.</span></span> <span data-ttu-id="fe2bf-118">Det kan endres her for gjeldende juridiske enhet.</span><span class="sxs-lookup"><span data-stu-id="fe2bf-118">It can be changed here for the current legal entity.</span></span>  
+3. <span data-ttu-id="fe2bf-119">Angi en dato i Til dato-feltet.</span><span class="sxs-lookup"><span data-stu-id="fe2bf-119">In the To date field, enter a date.</span></span>
+    * <span data-ttu-id="fe2bf-120">Velg de juridiske enhetene som skal inkluderes i avskrivningskjøringen.</span><span class="sxs-lookup"><span data-stu-id="fe2bf-120">Select the legal entities to be included in the depreciation run.</span></span>  
+    * <span data-ttu-id="fe2bf-121">Bare juridiske enheter med journaler som er definert for Forslag til anleggsmidler på siden Parametere for anleggsmidler vises i listen.</span><span class="sxs-lookup"><span data-stu-id="fe2bf-121">Only legal entities with journals set up for Fixed asset proposals on the Fixed asset parameters page will be shown in the list.</span></span>  
+4. <span data-ttu-id="fe2bf-122">Velg Ja i feltet Poster journaler.</span><span class="sxs-lookup"><span data-stu-id="fe2bf-122">Select Yes in the Post journals field.</span></span>
+    * <span data-ttu-id="fe2bf-123">Filtreringsfeltene inkluderer alle anleggsmidler, grupper og tablåer for de juridiske enhetene som er valgt for denne avskrivningskjøringen.</span><span class="sxs-lookup"><span data-stu-id="fe2bf-123">Filtering fields include all fixed assets, groups, and books for the legal entities selected for this depreciation run.</span></span>  
+    * <span data-ttu-id="fe2bf-124">Alternativet Satsvis behandling er aktivert som standard.</span><span class="sxs-lookup"><span data-stu-id="fe2bf-124">The Batch processing option is enabled by default.</span></span> <span data-ttu-id="fe2bf-125">Når dette alternativet er aktivert, vil oppretting og postering av avskrivningsjournalen kjøres i bakgrunnen.</span><span class="sxs-lookup"><span data-stu-id="fe2bf-125">When this option is enabled, the depreciation journal creation and posting will run in the background.</span></span>  
+5. <span data-ttu-id="fe2bf-126">Klikk Opprett journal.</span><span class="sxs-lookup"><span data-stu-id="fe2bf-126">Click Create journal.</span></span>
+6. <span data-ttu-id="fe2bf-127">Gå til Anleggsmidler > Journaloppføringer > Anleggsmiddeljournal.</span><span class="sxs-lookup"><span data-stu-id="fe2bf-127">Go to Fixed assets > Journal entries > Fixed assets journal.</span></span>
 
 
 
