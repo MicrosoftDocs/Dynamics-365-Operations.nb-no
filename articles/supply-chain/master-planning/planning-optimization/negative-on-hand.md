@@ -2,11 +2,9 @@
 title: Planlegging med negative lagerbeholdningsantall
 description: Dette emnet forklarer hvordan negativ beholdning håndteres når du bruker planleggingsoptimalisering.
 author: ChristianRytt
-manager: tfehr
 ms.date: 02/18/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
@@ -18,74 +16,74 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-02-18
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: ba36d87a991a3b0088800313da2cac3a769f2894
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 1c403e23309dda36dd1c99e22bbae0aa2d6d76a4
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5232308"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5813105"
 ---
-# <a name="planning-with-negative-on-hand-quantities"></a><span data-ttu-id="a66e6-103">Planlegging med negative lagerbeholdningsantall</span><span class="sxs-lookup"><span data-stu-id="a66e6-103">Planning with negative on-hand quantities</span></span>
+# <a name="planning-with-negative-on-hand-quantities"></a><span data-ttu-id="b4f27-103">Planlegging med negative lagerbeholdningsantall</span><span class="sxs-lookup"><span data-stu-id="b4f27-103">Planning with negative on-hand quantities</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="a66e6-104">Hvis systemet viser et negativt antall av lagerbeholdningen, behandler planleggingsmotoren antallet som 0 (null) for å unngå overforsyning.</span><span class="sxs-lookup"><span data-stu-id="a66e6-104">If the system shows a negative aggregate on-hand quantity, the planning engine treats the quantity as 0 (zero) to help avoid over-supply.</span></span> <span data-ttu-id="a66e6-105">Slik fungerer denne funksjonaliteten:</span><span class="sxs-lookup"><span data-stu-id="a66e6-105">Here is how this functionality works:</span></span>
+<span data-ttu-id="b4f27-104">Hvis systemet viser et negativt antall av lagerbeholdningen, behandler planleggingsmotoren antallet som 0 (null) for å unngå overforsyning.</span><span class="sxs-lookup"><span data-stu-id="b4f27-104">If the system shows a negative aggregate on-hand quantity, the planning engine treats the quantity as 0 (zero) to help avoid over-supply.</span></span> <span data-ttu-id="b4f27-105">Slik fungerer denne funksjonaliteten:</span><span class="sxs-lookup"><span data-stu-id="b4f27-105">Here is how this functionality works:</span></span>
 
-1. <span data-ttu-id="a66e6-106">Funksjonen for planleggingsoptimalisering samler opp beholdningsantall på det laveste nivået av dekningsdimensjoner.</span><span class="sxs-lookup"><span data-stu-id="a66e6-106">The planning optimization feature aggregates on-hand quantities at the lowest level of coverage dimensions.</span></span> <span data-ttu-id="a66e6-107">(Hvis *sted* for eksempel ikke er en dekningsdimensjon, samler planleggingsoptimalisering lagerbeholdningsantall på nivået *lager*.)</span><span class="sxs-lookup"><span data-stu-id="a66e6-107">(For example, if *location* isn't a coverage dimension, planning optimization aggregates on-hand quantities at the *warehouse* level.)</span></span>
-1. <span data-ttu-id="a66e6-108">Hvis det samlede lagerbeholdningsantallet på det laveste nivået av dekningsdimensjoner er negativt, forutsetter systemet at beholdningsantallet virkelig er 0 (null).</span><span class="sxs-lookup"><span data-stu-id="a66e6-108">If the aggregate on-hand quantity at the lowest level of coverage dimensions is negative, the system assumes that the on-hand quantity is really 0 (zero).</span></span>
+1. <span data-ttu-id="b4f27-106">Funksjonen for planleggingsoptimalisering samler opp beholdningsantall på det laveste nivået av dekningsdimensjoner.</span><span class="sxs-lookup"><span data-stu-id="b4f27-106">The planning optimization feature aggregates on-hand quantities at the lowest level of coverage dimensions.</span></span> <span data-ttu-id="b4f27-107">(Hvis *sted* for eksempel ikke er en dekningsdimensjon, samler planleggingsoptimalisering lagerbeholdningsantall på nivået *lager*.)</span><span class="sxs-lookup"><span data-stu-id="b4f27-107">(For example, if *location* isn't a coverage dimension, planning optimization aggregates on-hand quantities at the *warehouse* level.)</span></span>
+1. <span data-ttu-id="b4f27-108">Hvis det samlede lagerbeholdningsantallet på det laveste nivået av dekningsdimensjoner er negativt, forutsetter systemet at beholdningsantallet virkelig er 0 (null).</span><span class="sxs-lookup"><span data-stu-id="b4f27-108">If the aggregate on-hand quantity at the lowest level of coverage dimensions is negative, the system assumes that the on-hand quantity is really 0 (zero).</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="a66e6-109">Planleggingssystemet kan bare være like nøyaktig som inndataene.</span><span class="sxs-lookup"><span data-stu-id="a66e6-109">The planning system can be only as precise as the input data.</span></span> <span data-ttu-id="a66e6-110">Hvis inndataene er unøyaktige, vil negative lagerposter vise at beholdningsinformasjonen i Microsoft Dynamics 365 Supply Chain Management ikke er synkronisert med den virkelige verden.</span><span class="sxs-lookup"><span data-stu-id="a66e6-110">If the input data is inaccurate, negative on-hand records will indicate that the inventory information in Microsoft Dynamics 365 Supply Chain Management is out of sync with the real world.</span></span> <span data-ttu-id="a66e6-111">Derfor vil planleggingsresultatet bli feil.</span><span class="sxs-lookup"><span data-stu-id="a66e6-111">Therefore, the planning result will be flawed.</span></span> <span data-ttu-id="a66e6-112">Hvis du vil ha et nøyaktig planleggingsresultat, må du minimere antallet poster som viser et negativt beholdningsantall.</span><span class="sxs-lookup"><span data-stu-id="a66e6-112">To get a precise planning result, you should minimize the number of records that show a negative on-hand quantity.</span></span>
+> <span data-ttu-id="b4f27-109">Planleggingssystemet kan bare være like nøyaktig som inndataene.</span><span class="sxs-lookup"><span data-stu-id="b4f27-109">The planning system can be only as precise as the input data.</span></span> <span data-ttu-id="b4f27-110">Hvis inndataene er unøyaktige, vil negative lagerposter vise at beholdningsinformasjonen i Microsoft Dynamics 365 Supply Chain Management ikke er synkronisert med den virkelige verden.</span><span class="sxs-lookup"><span data-stu-id="b4f27-110">If the input data is inaccurate, negative on-hand records will indicate that the inventory information in Microsoft Dynamics 365 Supply Chain Management is out of sync with the real world.</span></span> <span data-ttu-id="b4f27-111">Derfor vil planleggingsresultatet bli feil.</span><span class="sxs-lookup"><span data-stu-id="b4f27-111">Therefore, the planning result will be flawed.</span></span> <span data-ttu-id="b4f27-112">Hvis du vil ha et nøyaktig planleggingsresultat, må du minimere antallet poster som viser et negativt beholdningsantall.</span><span class="sxs-lookup"><span data-stu-id="b4f27-112">To get a precise planning result, you should minimize the number of records that show a negative on-hand quantity.</span></span>
 
-## <a name="example-1"></a><span data-ttu-id="a66e6-113">Eksempel 1</span><span class="sxs-lookup"><span data-stu-id="a66e6-113">Example 1</span></span>
+## <a name="example-1"></a><span data-ttu-id="b4f27-113">Eksempel 1</span><span class="sxs-lookup"><span data-stu-id="b4f27-113">Example 1</span></span>
 
-<span data-ttu-id="a66e6-114">Lager 13 konfigureres på følgende måte:</span><span class="sxs-lookup"><span data-stu-id="a66e6-114">Warehouse 13 is configured in the following manner:</span></span>
+<span data-ttu-id="b4f27-114">Lager 13 konfigureres på følgende måte:</span><span class="sxs-lookup"><span data-stu-id="b4f27-114">Warehouse 13 is configured in the following manner:</span></span>
 
-- <span data-ttu-id="a66e6-115">**Dekningskode:** Min/maks</span><span class="sxs-lookup"><span data-stu-id="a66e6-115">**Coverage code:** Min./Max.</span></span>
-- <span data-ttu-id="a66e6-116">**Minimum:** 15 stykker (stk.)</span><span class="sxs-lookup"><span data-stu-id="a66e6-116">**Minimum:** 15 pieces (pcs.)</span></span>
-- <span data-ttu-id="a66e6-117">**Maksimum:** 25 stk.</span><span class="sxs-lookup"><span data-stu-id="a66e6-117">**Maximum:** 25 pcs.</span></span>
+- <span data-ttu-id="b4f27-115">**Dekningskode:** Min/maks</span><span class="sxs-lookup"><span data-stu-id="b4f27-115">**Coverage code:** Min./Max.</span></span>
+- <span data-ttu-id="b4f27-116">**Minimum:** 15 stykker (stk.)</span><span class="sxs-lookup"><span data-stu-id="b4f27-116">**Minimum:** 15 pieces (pcs.)</span></span>
+- <span data-ttu-id="b4f27-117">**Maksimum:** 25 stk.</span><span class="sxs-lookup"><span data-stu-id="b4f27-117">**Maximum:** 25 pcs.</span></span>
 
-<span data-ttu-id="a66e6-118">Det laveste nivået av dekningsdimensjoner er *lager*, og følgende lagerbeholdninger registreres på nivået *sted*:</span><span class="sxs-lookup"><span data-stu-id="a66e6-118">The lowest level of coverage dimensions is *warehouse*, and the following on-hand quantities are recorded at the *location* level:</span></span>
+<span data-ttu-id="b4f27-118">Det laveste nivået av dekningsdimensjoner er *lager*, og følgende lagerbeholdninger registreres på nivået *sted*:</span><span class="sxs-lookup"><span data-stu-id="b4f27-118">The lowest level of coverage dimensions is *warehouse*, and the following on-hand quantities are recorded at the *location* level:</span></span>
 
-- <span data-ttu-id="a66e6-119">**Område 1, lager 13, sted 1:** 20 stk.</span><span class="sxs-lookup"><span data-stu-id="a66e6-119">**Site 1, warehouse 13, location 1:** 20 pcs.</span></span>
-- <span data-ttu-id="a66e6-120">**Område 1, lager 13, sted 2:** &minus;8 stk.</span><span class="sxs-lookup"><span data-stu-id="a66e6-120">**Site 1 warehouse 13, location 2:** &minus;8 pcs.</span></span>
+- <span data-ttu-id="b4f27-119">**Område 1, lager 13, sted 1:** 20 stk.</span><span class="sxs-lookup"><span data-stu-id="b4f27-119">**Site 1, warehouse 13, location 1:** 20 pcs.</span></span>
+- <span data-ttu-id="b4f27-120">**Område 1, lager 13, sted 2:** &minus;8 stk.</span><span class="sxs-lookup"><span data-stu-id="b4f27-120">**Site 1 warehouse 13, location 2:** &minus;8 pcs.</span></span>
 
-<span data-ttu-id="a66e6-121">Derfor er det totale beholdningsantallet 12 stk. for lager 13.</span><span class="sxs-lookup"><span data-stu-id="a66e6-121">Therefore, the aggregate on-hand quantity for warehouse 13 is 12 pcs.</span></span> <span data-ttu-id="a66e6-122">(= 20 stk.</span><span class="sxs-lookup"><span data-stu-id="a66e6-122">(= 20 pcs.</span></span> <span data-ttu-id="a66e6-123">&minus; 8 stk.).</span><span class="sxs-lookup"><span data-stu-id="a66e6-123">&minus; 8 pcs.).</span></span>
+<span data-ttu-id="b4f27-121">Derfor er det totale beholdningsantallet 12 stk. for lager 13.</span><span class="sxs-lookup"><span data-stu-id="b4f27-121">Therefore, the aggregate on-hand quantity for warehouse 13 is 12 pcs.</span></span> <span data-ttu-id="b4f27-122">(= 20 stk.</span><span class="sxs-lookup"><span data-stu-id="b4f27-122">(= 20 pcs.</span></span> <span data-ttu-id="b4f27-123">&minus; 8 stk.).</span><span class="sxs-lookup"><span data-stu-id="b4f27-123">&minus; 8 pcs.).</span></span>
 
-<span data-ttu-id="a66e6-124">I dette tilfellet bruker planleggingsmotoren et samlet lagerbeholdningsantall på 12 stk.</span><span class="sxs-lookup"><span data-stu-id="a66e6-124">In this case, the planning engine uses an aggregate on-hand quantity of 12 pcs.</span></span> <span data-ttu-id="a66e6-125">for lager 13.</span><span class="sxs-lookup"><span data-stu-id="a66e6-125">for warehouse 13.</span></span>
+<span data-ttu-id="b4f27-124">I dette tilfellet bruker planleggingsmotoren et samlet lagerbeholdningsantall på 12 stk.</span><span class="sxs-lookup"><span data-stu-id="b4f27-124">In this case, the planning engine uses an aggregate on-hand quantity of 12 pcs.</span></span> <span data-ttu-id="b4f27-125">for lager 13.</span><span class="sxs-lookup"><span data-stu-id="b4f27-125">for warehouse 13.</span></span>
 
-<span data-ttu-id="a66e6-126">Resultatet er en planlagt bestilling på 13 stk.</span><span class="sxs-lookup"><span data-stu-id="a66e6-126">The result is a planned order of 13 pcs.</span></span> <span data-ttu-id="a66e6-127">(= 25 stk.</span><span class="sxs-lookup"><span data-stu-id="a66e6-127">(= 25 pcs.</span></span> <span data-ttu-id="a66e6-128">&minus; 12 stk.) for å fylle på lager 13 fra 12 stk.</span><span class="sxs-lookup"><span data-stu-id="a66e6-128">&minus; 12 pcs.) to refill warehouse 13 from 12 pcs.</span></span> <span data-ttu-id="a66e6-129">til 25 stk.</span><span class="sxs-lookup"><span data-stu-id="a66e6-129">to 25 pcs.</span></span>
+<span data-ttu-id="b4f27-126">Resultatet er en planlagt bestilling på 13 stk.</span><span class="sxs-lookup"><span data-stu-id="b4f27-126">The result is a planned order of 13 pcs.</span></span> <span data-ttu-id="b4f27-127">(= 25 stk.</span><span class="sxs-lookup"><span data-stu-id="b4f27-127">(= 25 pcs.</span></span> <span data-ttu-id="b4f27-128">&minus; 12 stk.) for å fylle på lager 13 fra 12 stk.</span><span class="sxs-lookup"><span data-stu-id="b4f27-128">&minus; 12 pcs.) to refill warehouse 13 from 12 pcs.</span></span> <span data-ttu-id="b4f27-129">til 25 stk.</span><span class="sxs-lookup"><span data-stu-id="b4f27-129">to 25 pcs.</span></span>
 
-## <a name="example-2"></a><span data-ttu-id="a66e6-130">Eksempel 2</span><span class="sxs-lookup"><span data-stu-id="a66e6-130">Example 2</span></span>
+## <a name="example-2"></a><span data-ttu-id="b4f27-130">Eksempel 2</span><span class="sxs-lookup"><span data-stu-id="b4f27-130">Example 2</span></span>
 
-<span data-ttu-id="a66e6-131">Lager 13 konfigureres på følgende måte:</span><span class="sxs-lookup"><span data-stu-id="a66e6-131">Warehouse 13 is configured in the following manner:</span></span>
+<span data-ttu-id="b4f27-131">Lager 13 konfigureres på følgende måte:</span><span class="sxs-lookup"><span data-stu-id="b4f27-131">Warehouse 13 is configured in the following manner:</span></span>
 
-- <span data-ttu-id="a66e6-132">**Dekningskode:** Min/maks</span><span class="sxs-lookup"><span data-stu-id="a66e6-132">**Coverage code:** Min./Max.</span></span>
-- <span data-ttu-id="a66e6-133">**Minimum:** 15 stk.</span><span class="sxs-lookup"><span data-stu-id="a66e6-133">**Minimum:** 15 pcs.</span></span>
-- <span data-ttu-id="a66e6-134">**Maksimum:** 25 stk.</span><span class="sxs-lookup"><span data-stu-id="a66e6-134">**Maximum:** 25 pcs.</span></span>
+- <span data-ttu-id="b4f27-132">**Dekningskode:** Min/maks</span><span class="sxs-lookup"><span data-stu-id="b4f27-132">**Coverage code:** Min./Max.</span></span>
+- <span data-ttu-id="b4f27-133">**Minimum:** 15 stk.</span><span class="sxs-lookup"><span data-stu-id="b4f27-133">**Minimum:** 15 pcs.</span></span>
+- <span data-ttu-id="b4f27-134">**Maksimum:** 25 stk.</span><span class="sxs-lookup"><span data-stu-id="b4f27-134">**Maximum:** 25 pcs.</span></span>
 
-<span data-ttu-id="a66e6-135">Det laveste nivået av dekningsdimensjoner er *lager*, og følgende lagerbeholdninger registreres på nivået *sted*:</span><span class="sxs-lookup"><span data-stu-id="a66e6-135">The lowest level of coverage dimensions is *warehouse*, and the following on-hand quantities are recorded at the *location* level:</span></span>
+<span data-ttu-id="b4f27-135">Det laveste nivået av dekningsdimensjoner er *lager*, og følgende lagerbeholdninger registreres på nivået *sted*:</span><span class="sxs-lookup"><span data-stu-id="b4f27-135">The lowest level of coverage dimensions is *warehouse*, and the following on-hand quantities are recorded at the *location* level:</span></span>
 
-- <span data-ttu-id="a66e6-136">**Område 1, lager 13, sted 1:** 4 stk.</span><span class="sxs-lookup"><span data-stu-id="a66e6-136">**Site 1, warehouse 13, location 1:** 4 pcs.</span></span>
-- <span data-ttu-id="a66e6-137">**Område 1, lager 13, sted 2:** &minus;8 stk.</span><span class="sxs-lookup"><span data-stu-id="a66e6-137">**Site 1 warehouse 13, location 2:** &minus;8 pcs.</span></span>
+- <span data-ttu-id="b4f27-136">**Område 1, lager 13, sted 1:** 4 stk.</span><span class="sxs-lookup"><span data-stu-id="b4f27-136">**Site 1, warehouse 13, location 1:** 4 pcs.</span></span>
+- <span data-ttu-id="b4f27-137">**Område 1, lager 13, sted 2:** &minus;8 stk.</span><span class="sxs-lookup"><span data-stu-id="b4f27-137">**Site 1 warehouse 13, location 2:** &minus;8 pcs.</span></span>
 
-<span data-ttu-id="a66e6-138">Derfor er det totale beholdningsantallet &minus;4 stk. for lager 13.</span><span class="sxs-lookup"><span data-stu-id="a66e6-138">Therefore, the aggregate on-hand quantity for warehouse 13 is &minus;4 pcs.</span></span> <span data-ttu-id="a66e6-139">(= 4 stk.</span><span class="sxs-lookup"><span data-stu-id="a66e6-139">(= 4 pcs.</span></span> <span data-ttu-id="a66e6-140">&minus; 8 stk.).</span><span class="sxs-lookup"><span data-stu-id="a66e6-140">&minus; 8 pcs.).</span></span> <span data-ttu-id="a66e6-141">Det er med andre ord mindre enn 0 (null).</span><span class="sxs-lookup"><span data-stu-id="a66e6-141">In other words, it's less than 0 (zero).</span></span>
+<span data-ttu-id="b4f27-138">Derfor er det totale beholdningsantallet &minus;4 stk. for lager 13.</span><span class="sxs-lookup"><span data-stu-id="b4f27-138">Therefore, the aggregate on-hand quantity for warehouse 13 is &minus;4 pcs.</span></span> <span data-ttu-id="b4f27-139">(= 4 stk.</span><span class="sxs-lookup"><span data-stu-id="b4f27-139">(= 4 pcs.</span></span> <span data-ttu-id="b4f27-140">&minus; 8 stk.).</span><span class="sxs-lookup"><span data-stu-id="b4f27-140">&minus; 8 pcs.).</span></span> <span data-ttu-id="b4f27-141">Det er med andre ord mindre enn 0 (null).</span><span class="sxs-lookup"><span data-stu-id="b4f27-141">In other words, it's less than 0 (zero).</span></span>
 
-<span data-ttu-id="a66e6-142">I dette tilfellet forutsetter planleggingsmotoren at beholdningen for lager 13 er 0 stk.</span><span class="sxs-lookup"><span data-stu-id="a66e6-142">In this case, the planning engine assumes that the on-hand quantity for warehouse 13 is 0 pcs.</span></span> <span data-ttu-id="a66e6-143">i stedet for &minus;4 stk.</span><span class="sxs-lookup"><span data-stu-id="a66e6-143">instead of &minus;4 pcs.</span></span>
+<span data-ttu-id="b4f27-142">I dette tilfellet forutsetter planleggingsmotoren at beholdningen for lager 13 er 0 stk.</span><span class="sxs-lookup"><span data-stu-id="b4f27-142">In this case, the planning engine assumes that the on-hand quantity for warehouse 13 is 0 pcs.</span></span> <span data-ttu-id="b4f27-143">i stedet for &minus;4 stk.</span><span class="sxs-lookup"><span data-stu-id="b4f27-143">instead of &minus;4 pcs.</span></span>
 
-<span data-ttu-id="a66e6-144">Resultatet er en planlagt bestilling på 25 stk.</span><span class="sxs-lookup"><span data-stu-id="a66e6-144">The result is a planned order of 25 pcs.</span></span> <span data-ttu-id="a66e6-145">(= 25 stk.</span><span class="sxs-lookup"><span data-stu-id="a66e6-145">(= 25 pcs.</span></span> <span data-ttu-id="a66e6-146">&minus; 0 stk.) for å fylle på lager 13 fra 0 stk.</span><span class="sxs-lookup"><span data-stu-id="a66e6-146">&minus; 0 pcs.) to refill warehouse 13 from 0 pcs.</span></span> <span data-ttu-id="a66e6-147">til 25 stk.</span><span class="sxs-lookup"><span data-stu-id="a66e6-147">to 25 pcs.</span></span>
+<span data-ttu-id="b4f27-144">Resultatet er en planlagt bestilling på 25 stk.</span><span class="sxs-lookup"><span data-stu-id="b4f27-144">The result is a planned order of 25 pcs.</span></span> <span data-ttu-id="b4f27-145">(= 25 stk.</span><span class="sxs-lookup"><span data-stu-id="b4f27-145">(= 25 pcs.</span></span> <span data-ttu-id="b4f27-146">&minus; 0 stk.) for å fylle på lager 13 fra 0 stk.</span><span class="sxs-lookup"><span data-stu-id="b4f27-146">&minus; 0 pcs.) to refill warehouse 13 from 0 pcs.</span></span> <span data-ttu-id="b4f27-147">til 25 stk.</span><span class="sxs-lookup"><span data-stu-id="b4f27-147">to 25 pcs.</span></span>
 
-## <a name="related-resources"></a><span data-ttu-id="a66e6-148">Relaterte ressurser</span><span class="sxs-lookup"><span data-stu-id="a66e6-148">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="b4f27-148">Relaterte ressurser</span><span class="sxs-lookup"><span data-stu-id="b4f27-148">Related resources</span></span>
 
-[<span data-ttu-id="a66e6-149">Oversikt over planleggingsoptimalisering</span><span class="sxs-lookup"><span data-stu-id="a66e6-149">Planning Optimization overview</span></span>](planning-optimization-overview.md)
+[<span data-ttu-id="b4f27-149">Oversikt over planleggingsoptimalisering</span><span class="sxs-lookup"><span data-stu-id="b4f27-149">Planning Optimization overview</span></span>](planning-optimization-overview.md)
 
-[<span data-ttu-id="a66e6-150">Komme i gang med planleggingsoptimalisering</span><span class="sxs-lookup"><span data-stu-id="a66e6-150">Get started with Planning Optimization</span></span>](get-started.md)
+[<span data-ttu-id="b4f27-150">Komme i gang med planleggingsoptimalisering</span><span class="sxs-lookup"><span data-stu-id="b4f27-150">Get started with Planning Optimization</span></span>](get-started.md)
 
-[<span data-ttu-id="a66e6-151">Tilpassingsanalyse av planleggingsoptimalisering</span><span class="sxs-lookup"><span data-stu-id="a66e6-151">Planning Optimization fit analysis</span></span>](planning-optimization-fit-analysis.md)
+[<span data-ttu-id="b4f27-151">Tilpassingsanalyse av planleggingsoptimalisering</span><span class="sxs-lookup"><span data-stu-id="b4f27-151">Planning Optimization fit analysis</span></span>](planning-optimization-fit-analysis.md)
 
-[<span data-ttu-id="a66e6-152">Vise planhistorikk og planleggingslogger</span><span class="sxs-lookup"><span data-stu-id="a66e6-152">View plan history and planning logs</span></span>](plan-history-logs.md)
+[<span data-ttu-id="b4f27-152">Vise planhistorikk og planleggingslogger</span><span class="sxs-lookup"><span data-stu-id="b4f27-152">View plan history and planning logs</span></span>](plan-history-logs.md)
 
-[<span data-ttu-id="a66e6-153">Annullere en planleggingsjobb</span><span class="sxs-lookup"><span data-stu-id="a66e6-153">Cancel a planning job</span></span>](cancel-planning-job.md)
+[<span data-ttu-id="b4f27-153">Annullere en planleggingsjobb</span><span class="sxs-lookup"><span data-stu-id="b4f27-153">Cancel a planning job</span></span>](cancel-planning-job.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
