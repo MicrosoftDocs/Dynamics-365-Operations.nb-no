@@ -2,11 +2,9 @@
 title: Fakturaautomatisering for skannede dokumenter
 description: Dette emnet forklarer hvilke funksjoner som er tilgjengelige for ende-til-ende-automatisering av leverandørfakturaer, også fakturaer som inneholder vedlegg.
 author: abruer
-manager: AnnBe
-ms.date: 05/22/2020
+ms.date: 03/24/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendEditInvoiceHeaderStagingListPage
 audience: Application User
@@ -15,18 +13,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 05a796e7ea520e7f25be9e0a1f766b08f75254bb
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d776ad4eda623f55a69d81eefd0e88842d9da401
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5239657"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5841243"
 ---
 # <a name="invoice-automation-for-scanned-documents"></a>Fakturaautomatisering for skannede dokumenter
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet forklarer hvilke funksjoner som er tilgjengelige for ende-til-ende-automatisering av leverandørfakturaer, også fakturaer som inneholder vedlegg.
+Dette emnet forklarer hvilke dataenheter som er tilgjengelige for ende-til-ende-automatisering av leverandørfakturaer, inkludert fakturaer med vedlegg.
 
 Organisasjoner som ønsker å strømlinjeforme leverandørprosessene for (AP), identifiserer ofte fakturabehandling som ett av de øverste prosessområdene som bør være mer effektivt. I mange tilfeller setter disse organisasjonene behandling av papirfakturaer ut til en tredjepartsleverandør av tjenester for optisk tegngjenkjenning (OCR). Deretter mottar de maskinlesbare fakturametadata sammen med et skannet bilde av hver faktura. For å få hjelp med automatisering bygges deretter en løsning for den siste delen for å aktivere forbruk av disse artefakterene i faktureringssystemet. Nå er denne automatiseringen for den siste delen aktivert som standard, gjennom en løsning for automatisering av fakturaer.
 
@@ -90,9 +88,9 @@ Fakturaer som importeres via datapakker, kan knyttes til den juridiske enheten s
 
 I situasjoner der leverandørfakturaer kommer til Finance and Operations via integrasjon, må det være enkelt for et teammedlem i leverandører å behandle unntak eller mislykkede fakturaer og opprette ventende fakturaer fra mislykkede fakturaer. Denne unntaksbehandlingen for leverandørfakturaer er nå en del av Finance and Operations.
 
-### <a name="exceptions-list-page"></a>Side med liste over unntak
+### <a name="vendor-invoices-that-failed-to-import-list-page"></a>Leverandørfakturaer som ikke kunne importere listeside
 
-Den nye listesiden for fakturaunntak er tilgjengelig på **Leverandører** > **Fakturaer** > **Importfeil** > **Leverandørfakturaer som ikke ble importert**. Denne siden viser alle hodepostene for leverandørfakturaer fra oppsamlingstabellen for dataenheten for leverandørfakturahode. Vær oppmerksom på at du kan vise de samme postene fra arbeidsområdet **Databehandling**, der du også kan utføre de samme handlingene som er angitt i funksjonen for unntaksbehandling. Imidlertid er brukergrensesnittet i funksjonen for unntaksbehandling optimalisert for en funksjonell bruker.
+Den nye listesiden for fakturaunntak er tilgjengelig på **Leverandører** > **Fakturaer** > **Importfeil** > **Leverandørfakturaer som ikke ble importert**. Denne siden viser alle hodepostene for leverandørfakturaer fra oppsamlingstabellen for dataenheten for leverandørfakturahode. Merk at du kan vise de samme postene fra arbeidsområdet **Dataadministrasjon**. Du kan også utføre de samme handlingene som er angitt i funksjonen for unntaksbehandling, fra arbeidsområdet **Dataadministrasjon**. Funksjonen for unntakshåndtering er optimalisert for en funksjonsbruker, som gjør det enklere å bruke den.
 
 ![Side med liste over unntak](media/vendor_invoice_automation_02.png)
 
@@ -118,24 +116,17 @@ Denne listesiden inneholder følgende felt som kommer inn via feeden:
 Denne listesiden har også en forhåndsvisningsrute som kan brukes på følgende måter:
 
 + Vis hele feilmeldingen, slik at du ikke trenger å utvide **Feilmelding**-kolonnen i rutenettet.
-+ Vis hele listen over vedlegg for fakturaen, hvis vedlegg fulgte med fakturaen.
 
 Listesiden støtter følgende handlinger:
 
 + **Rediger** – åpne unntaksposten i redigeringsmodus, slik at du kan løse problemene.
 + **Alternativer** – få tilgang til standardalternativene som er tilgjengelige på listesider. Du kan bruke alternativet **Legg til i arbeidsområde** for å feste unntakslistesiden til arbeidsområdet som en liste eller flis.
 
-### <a name="exception-details-page"></a>Side for unntaksdetaljer
+### <a name="vendor-invoices-that-failed-to-import-details-page"></a>Leverandørfakturaer som ikke kunne importere detaljside
 
-Når du starter redigeringsmodus, vises siden for unntaksdetaljer for fakturaen som har problemer. Hvis det ikke finnes vedlegg, vises fakturaen og standardvedlegget side ved side på siden for unntaksdetaljer.
+Når du starter redigeringsmodus, åpnes siden **Leverandørfakturaer som ikke kunne importere detaljer** for fakturaen som har problemer. Hvis det er problemer med en faktura som har et vedlegg, vises ikke vedlegget. Tilknytningen må legges ved fakturaen på nytt.
 
-![Side for unntaksdetaljer](media/vendor_invoice_automation_03.png)
-
-I den forrige illustrasjonen var det ikke noen linjer for leverandørfakturahodet som kom inn. Linjedelen er derfor tom.
-
-Siden for unntaksdetaljer støtter følgende operasjon:
-
-+ **Opprett ventende faktura** – Når du har løst problemene på fakturaen som en del av behandling av unntak, kan du klikke denne knappen for å opprette den ventende fakturaen. Opprettelse av ventende fakturaer skjer i bakgrunnen (som en asynkron operasjon).
+På siden **Leverandørfakturaer som ikke kunne importere detaljer** kan du opprette en ventende faktura. Når du har løst problemene på en faktura som en del av behandling av et unntak, kan du velge knappen **Opprett ventende faktura** for å opprette den ventende fakturaen. Den ventende fakturaen opprettes i bakgrunnen. 
 
 ### <a name="shared-service-vs-organization-based-exception-processing"></a>Unntaksbehandling for delte tjenester i forhold til organisasjonsbasert unntaksbehandling
 
@@ -187,7 +178,7 @@ Bare ett dokument kan angis som standardvedlegget. Når du har opprettet et doku
 
 En ny knapp som er tilgjengelig på forespørselssidene **Behandling av unntak**, **Faktura som venter** og **Fakturajournal**, lar deg vise eller skjule visningsprogrammet for vedlegg.
 
-### <a name="security"></a>Sikkerhet
+## <a name="security"></a>Sikkerhet
 
 Følgende handlinger i visningsprogrammet for vedlegg styres via rollebasert sikkerhet:
 
@@ -212,7 +203,7 @@ Følgende roller gir skrivebeskyttet tilgang eller lese-/skrivetilgang til visni
 + **Regnskapsassistent** og **Regnskapssjef leverandørreskontro** – Plikten Vedlikehold leverandørfakturaer er tilordnet disse rollene.
 + **Regnskapsassistent**, **Regnskapssjef leverandørreskontro**, **Assistent for sentraliserte leverandørbetalinger** og **Leverandørbetalingsassistent** – Plikten Forespørsel om leverandørfakturastatus er tilordnet til disse rollene.
 
-### <a name="invoice-exception-details-page"></a>Side for fakturaunntaksdetaljer
+### <a name="vendor-invoice-attachment"></a>Leverandørfakturavedlegg
 
 Følgende rettigheter gir skrivebeskyttet tilgang eller lese-/skrivetilgang til visningsprogrammet for vedlegg for handlingene for utheving, blokkering og merknad.
 

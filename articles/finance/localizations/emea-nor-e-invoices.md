@@ -2,11 +2,9 @@
 title: Elektroniske fakturaer for kunde i Norge
 description: Dette emnet forklarer hvordan du konfigurerer og elektroniske fakturaer for kunder i Norge.
 author: ilkond
-manager: AnnBe
 ms.date: 11/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Norway
 ms.author: ilyako
 ms.search.validFrom: 2019-11-01
 ms.dyn365.ops.version: 10.0.08
-ms.openlocfilehash: f691f1ab9c095699af7be4cac1402e9ea7116eb5
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: a05357d64667dd859347a98760306f32ae0f02d0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5262822"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5842307"
 ---
 # <a name="customer-electronic-invoices-in-norway"></a>Elektroniske fakturaer for kunde i Norge
 

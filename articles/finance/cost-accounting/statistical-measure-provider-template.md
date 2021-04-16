@@ -2,11 +2,9 @@
 title: Leverandørmaler for statistiske dimensjonsmedlemmer og leverandører av måling
 description: Dette emnet gir informasjon om statistiske dimensjonsmedlemmer og maler for leverandør av statistisk måling. Statistiske dimensjonsmedlemmere kan brukes som tildelingsgrunnlag i policyer som kostnadsdistribusjon og kostnadstildeling. De kan også brukes til å rapportere ikke-monetært kostnadsforbruk.
 author: AndersGirke
-manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMCostAccountingLedgerSourceEntryProvider, CAMStatisticalDimension, CAMAXStatisticalMeasureProviderTemplate, CAMAXStatisticalMeasureProviderConfiguration, CAMStatisticalDimensionMember, CAMDataConnectorStatisticalMeasure, CAMImportedStatisticalMeasure, CAMImportedStatisticalMeasureProviderConfiguration
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 1ceb274c05874438206c1b3f8fc279a6f39e2b69
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 330b7dfd3937d0d7c4a394b55972d75e876aea17
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5208829"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5833072"
 ---
 # <a name="provider-templates-for-statistical-dimension-members-and-measure-providers"></a>Leverandørmaler for statistiske dimensjonsmedlemmer og leverandører av måling
 
@@ -162,7 +160,7 @@ Etter at kildedataene for statistisk måling er behandlet, opprettes følgende s
 
 **Statistiske oppføringer**
 
-| Kostnadsobjekt |    | Regnskapsdato | Statistisk medlem av dimensjon |  beskrivelse        | Størrelse |
+| Kostnadsobjekt |  beskrivelse  | Regnskapsdato | Statistisk medlem av dimensjon |  beskrivelse        | Størrelse |
 |-------------|----|-----------------|------------------------------|---------------------|-----------|
 | CC001       | Personale | 31.01.2017      | Heltidsansatte                         | Heltidsansatte | 1,00      |
 | CC002       | FI | 31.01.2017      | Heltidsansatte                         | Heltidsansatte | 2.00      |
@@ -328,7 +326,7 @@ Gå til **kostnadsregnskapsfinans** \> **faktisk versjon** \> **behandle** \> **
 
 **Statistiske oppføringer**
 
-| Kostnadsobjekt |    | Regnskapsdato | Statistisk medlem av dimensjon |      beskrivelse                   | Størrelse  |
+| Kostnadsobjekt | beskrivelse | Regnskapsdato | Statistisk medlem av dimensjon |      beskrivelse                   | Størrelse  |
 |-------------|----|-----------------|------------------------------|-------------------------|------------|
 | CC001       | Personale | 31.01.2017      | Elektrisitet                  | Strømforbruk | 2,450.00   |
 | CC002       | FI | 31.01.2017      | Elektrisitet                  | Strømforbruk | 4,100.00   |
@@ -336,11 +334,11 @@ Gå til **kostnadsregnskapsfinans** \> **faktisk versjon** \> **behandle** \> **
 
 Hvis tildelingsgrunnlaget for det forhåndsdefinerte dimensjonsmedlemmet Strøm, tildeles som et tildelingsgrunnlag i en kostnadsdistribusjonsregel, blir kostnaden distribuert ved hjelp av følgende tildelingsfaktor.
 
-| Kostnadsobjekt |    | Størrelse | Tildelingsfaktor          |
-|-------------|----|-----------|----------------------------|
-| CC001       | Personale | 2,450.00  | (2 450 ÷ 21 550) × beløp  |
-| CC002       | FI | 4,100.00  | (4 100 ÷ 21 550) × beløp  |
-| CC003       | LO | 15,000.00 | (15 000 ÷ 21 550) × beløp |
+| Kostnadsobjekt | beskrivelse   | Størrelse | Tildelingsfaktor          |
+|-------------|---------------|-----------|----------------------------|
+| CC001       | Personale            | 2 450,00  | (2 450 ÷ 21 550) × beløp  |
+| CC002       | FI            | 4,100.00  | (4 100 ÷ 21 550) × beløp  |
+| CC003       | LO            | 15,000.00 | (15 000 ÷ 21 550) × beløp |
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

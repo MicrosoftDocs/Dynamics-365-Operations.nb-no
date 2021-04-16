@@ -2,11 +2,9 @@
 title: Konfigurere og administrere databaselogging
 description: Du kan spore endringer i tabeller og felt i Dynamics 365 Human Resources med databaselogging.
 author: andreabichsel
-manager: tfehr
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8057ebd0bc061c6bf78d8674c45e0885ffce681c
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
+ms.openlocfilehash: d22ff9f3ce68c81f37840342c795d7d162eb027b
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5467655"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5801341"
 ---
 # <a name="configure-and-manage-database-logging"></a>Konfigurere og administrere databaselogging
 
@@ -68,7 +66,22 @@ For å forbedre ytelsen begrenses loggoppføringer ved å velge bestemte felt du
 Du kan bruke veiviseren **Registrerer databaseendringer** til å konfigurere databaselogging. Veiviseren gir en fleksibel måte å konfigurere logging for tabeller eller felt på.
 
 1. Gå til **Systemadministrasjon > Koblinger > Database > Oppsett av databaselogg**. Velg **Ny** for å starte veiviseren **Registrerer databaseendringer**.
-2. Fullfør veiviseren.
+2. Velg **Neste**. 
+3. På siden **Tabeller og felt** i veiviseren velger du tabellene og feltene du vil aktivere databaselogging på, og velger **Neste**.
+
+   > [!Note]
+   > Databaselogging er ikke tilgjengelig på alle tabeller i Human Resources-databasen. Hvis du velger **Vis alle tabeller** under listen, utvides listen over tabeller og felt som viser alle databasetabeller som det er tilgjengelig databaselogging for, men dette er et delsett av den fullstendige listen over databasetabeller.
+
+4. På siden **Endringstyper** i veiviseren velger du dataoperasjonene du vil spore endringer for hver av tabellene og feltene for, og velger **Neste**. Se tabellen nedenfor hvis du vil ha en beskrivelse av dataoperasjonene som er tilgjengelige for logging.
+5. På **Fullfør**-siden kan du se gjennom endringene som blir gjort, og velge **Fullfør**.
+
+| Operasjon | beskrivelse |
+| -- | -- |
+| Spor nye transaksjoner | Opprett en logg for nye poster som er opprettet i tabellen. |
+| Oppdatering | Opprett en logg for oppdateringer av tabellposter, eller oppdateringer til enkeltvis valgte felt i tabellen. Hvis du velger å logge oppdateringer for tabellen, opprettes det en loggpost hver gang det gjøres en oppdatering i et hvilket som helst felt i en hvilken som helst post i tabellen. Hvis du velger å logge oppdateringer for bestemte felt, opprettes det bare en loggpost når det gjøres oppdateringer i disse feltene for tabellposter. |
+| Delete | Opprett en logg for poster som er slettet fra tabellen. |
+| Gi nøkkel nytt navn | Opprett en loggpost når en tabellnøkkel får nytt navn. |
+
 
 ## <a name="clean-up-database-logs"></a>Rydder opp i databaselogger
 

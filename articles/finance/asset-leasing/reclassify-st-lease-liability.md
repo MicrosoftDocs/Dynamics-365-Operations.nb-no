@@ -2,11 +2,9 @@
 title: Omklassifisere den kortsiktige delen av en leieforpliktelse
 description: Dette emnet forklarer hvordan du oppretter en månedlig journaloppføring for å reklassifisere en del av leieforpliktelsen som kortsiktig.
 author: moaamer
-manager: Ann Beebe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 9189033987a3072c7122e1a198768d9de6aa2a52
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 7d98d66b5fe9d32a86eb75d937fedfdca6773ac4
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5254089"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823101"
 ---
 # <a name="reclassify-the-short-term-portion-of-lease-liability"></a>Omklassifisere den kortsiktige delen av leieforpliktelse
 
@@ -38,8 +36,7 @@ Følg denne fremgangsmåten for å opprette og postere en journaloppføring for 
 2. I dialogboksen **Opprettelse av bunkejournal**, i feltet for **Velg tidsplan**, velger du **Omklassifisering av kortsiktig leieforpliktelse**.
 3. I feltet **Leiegruppe** velger du en leiegruppe. Du kan også velge tablå-ID i feltet **Tablå-ID**.
 4. Aktiver **Post**-parameteren. Hvis posten skal opprettes, men ikke posteres, lar du denne parameteren være deaktivert.
-5. Aktiver **Forhåndsvis for postering**-parameter for å vise posten før den posteres.
-6. Velg **OK**.
+5. Velg **OK**.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

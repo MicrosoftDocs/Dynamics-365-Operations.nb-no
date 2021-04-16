@@ -2,7 +2,6 @@
 title: Når skal et data mart tilbakestilles
 description: Dette emnet viser en oversikt over forhold som kan forbedres ved å tilbakestille et data mart, og forhold der det er usannsynlig at tilbakestilling av data mart hjelper.
 author: jinniew
-manager: AnnBe
 ms.date: 12/15/2020
 ms.topic: article
 ms.prod: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2020-12-15
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 71324d4aa2d20dd6ae4729412a017d130ab0144f
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.openlocfilehash: c88994a336528650bf8ab6e239c873fa6cd36c46
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5563743"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5754150"
 ---
 # <a name="when-to-reset-a-data-mart"></a>Når skal et data mart tilbakestilles
 

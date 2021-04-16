@@ -2,11 +2,9 @@
 title: Utligne en delvis kundebetaling som har flere rabattperioder
 description: Denne artikkelen viser hvordan delvis kundebetalinger gjøres opp når det er flere rabattperioder.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8c5047debd0f3d035ec5fc8bc24745183b28e9f0
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 1a15f952671152ac9e8b88e7394ec41220f964c0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5241720"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835106"
 ---
 # <a name="settle-a-partial-customer-payment-that-has-multiple-discount-periods"></a>Utligne en delvis kundebetaling som har flere rabattperioder
 
@@ -56,7 +54,7 @@ På 28. juni gjør kunden 4031 en delvis innbetaling av 294,00. Fordi 28. juni e
 
 Rabattinformasjonen vises nederst på siden **Utlign åpne transaksjoner**. Hvis du ikke endrer verdien for **beløp som skal utlignes** til **294,00**, vil verdiene for **kontantrabattbeløpet** som vises, variere. Imidlertid vil 6,00 behandles som kontantrabatten når betalingen er postert, fordi utligning justerer automatisk verdien for **beløp som skal utlignes** for deg.
 
-|                              |           |
+| &nbsp;                       | &nbsp;    |
 |------------------------------|-----------|
 | Kontantrabattdato           | 30/6/2015 |
 | Kontantrabattbeløp         | 20,00     |
@@ -75,7 +73,7 @@ Når Magnus posterer betalingen, er fakturasaldoen 700,00.
 
 Rabattinformasjonen vises nederst på siden **Utlign åpne transaksjoner**.
 
-|                              |           |
+| &nbsp;                       | &nbsp;    |
 |------------------------------|-----------|
 | Kontantrabattdato           | 09/7/2015 |
 | Kontantrabattbeløp         | 30,00     |

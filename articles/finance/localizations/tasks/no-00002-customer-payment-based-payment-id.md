@@ -2,11 +2,9 @@
 title: NO-00002 Kundebetaling basert på betalings-ID
 description: Denne oppgaven hjelper deg med å konfigurere og vedlikeholde norske betalings-ID-er.
 author: EvgenyPopovMBS
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankCustPaymIdTable, LogisticsCountryRegionPaymentIdType_NO, CustTable, CustPaymMode, CustGroup,  CustInvoiceJournal
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Norway
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3ec0bb2012ac283fc05d1476f7e05bb3ff72df0e
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: dd71af4c57b8318b124ef9774935b5c1e78374fc
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5264960"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5840861"
 ---
 # <a name="no-00002-customer-payment-based-on-payment-id"></a>NO-00002 Kundebetaling basert på betalings-ID
 

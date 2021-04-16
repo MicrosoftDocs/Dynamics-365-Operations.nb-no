@@ -2,11 +2,9 @@
 title: Utligne en delvis leverandørbetaling før rabattdatoen og en endelige betaling etter rabattdatoen
 description: Denne artikkelen veileder deg gjennom et scenario der flere delvise betalinger foretas, noen innenfor kontantrabattperioden og andre utenfor kontantrabattperioden.
 author: abruer
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e125ca5fbebcf062eb17f56a2ef6669d1b6d6ae3
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d34a9dd53b6a287ef512a5479c0ad1a51211577b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5227334"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810348"
 ---
 # <a name="settle-partial-payment-before-discount-date-and-final-payment-after-discount-date"></a>Utligne en delvis leverandørbetaling før rabattdatoen og en endelige betaling etter rabattdatoen
 
@@ -48,7 +46,7 @@ Fabrikam kjøper varer fra leverandøren 3057. Fabrikam får en kontantrabatt p�
 
 Rabattinformasjonen vises nederst på siden **Utlign åpne transaksjoner**.
 
-|                              |           |
+| Felt                        | Verdi     |
 |------------------------------|-----------|
 | Kontantrabattdato           | 09/7/2015 |
 | Kontantrabattbeløp         | -10,00    |
@@ -73,10 +71,10 @@ April betaler resten av fakturaen 15. juli, som er etter rabattperioden. På sid
 
 Rabattinformasjonen vises nederst på siden **Utlign transaksjoner**. April kan se at hun allerede har fått en 3,00-rabatt.
 
-|                              |           |
+| Felt                        | Verdi     |
 |------------------------------|-----------|
 | Kontantrabattdato           | 09/7/2015 |
-| Kontantrabattbeløp         | 0,00      |
+| Kontantrabattbeløp         | 0.00      |
 | Bruk kontantrabatt            | Normal    |
 | Kontantrabatt brukt          | -3,00     |
 | Kontantrabattbeløp som skal brukes | 0,00      |
@@ -99,10 +97,10 @@ Hvis leverandøren lar April ta rabatt selv om hun betaler etter rabattdatoen, k
 
 Rabattinformasjonen vises nederst på siden **Utlign transaksjoner**.
 
-|                              |           |
+| Felt                        | Verdi     |
 |------------------------------|-----------|
 | Kontantrabattdato           | 09/7/2015 |
-| Kontantrabattbeløp         | 7,00      |
+| Kontantrabattbeløp         | 7.00      |
 | Bruk kontantrabatt            | Alltid    |
 | Kontantrabatt brukt          | -3,00     |
 | Kontantrabattbeløp som skal brukes | -7,00     |

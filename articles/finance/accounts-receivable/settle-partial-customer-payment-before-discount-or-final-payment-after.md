@@ -2,11 +2,9 @@
 title: Utligne en delvis leverandørbetaling før rabattdatoen med en endelige betaling etter rabattdatoen
 description: Denne artikkelen beskriver virkningen av utligning av betalinger mot fakturaer for kunder. Scenariet fokuserer på virkningen i underfinan, ikke i økonomimodulen.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 87408e864ab8e6101fc908e744231f10d0d2e664
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: dd10e0c6e426d95aa5e96c4b9b59a8a81017b540
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5250560"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835153"
 ---
 # <a name="settle-partial-payment-before-discount-date-with-final-payment-after-discount-date"></a>Utligne en delvis leverandørbetaling før rabattdatoen med en endelige betaling etter rabattdatoen
 
@@ -48,7 +46,7 @@ Fabrikam selger varer til kunden 4027. Fabrikam tilbyr en kontantrabatt på 1 pr
 
 Rabattinformasjonen vises nederst på siden **Utlign åpne transaksjoner**. Hvis du ikke endrer verdien for **Beløp som skal utlignes** til 297,00, vil verdiene for **Kontantrabattbeløp** som vises, variere. Imidlertid vil 3,00 behandles som kontantrabatten når betalingen er postert, fordi utligning justerer automatisk verdien for **Beløp som skal utlignes** for deg.
 
-|                              |           |
+| Felt                        | Verdi     |
 |------------------------------|-----------|
 | Kontantrabattdato           | 09/7/2015 |
 | Kontantrabattbeløp         | 10,00     |
@@ -73,10 +71,10 @@ Den 11. juli, som er etter rabattperioden, betaler kunde 4027 resten av denne fa
 
 Rabattinformasjonen vises nederst på siden **Utlign åpne transaksjoner**.
 
-|                              |           |
+| Felt                        | Verdi     |
 |------------------------------|-----------|
 | Kontantrabattdato           | 09/7/2015 |
-| Kontantrabattbeløp         | 0,00      |
+| Kontantrabattbeløp         | 0.00      |
 | Bruk kontantrabatt            | Normal    |
 | Kontantrabatt brukt          | 3,00      |
 | Kontantrabattbeløp som skal brukes | 0,00      |
@@ -89,10 +87,10 @@ Hvis Magnus endrer verdien i feltet **Bruk kontantrabatt** til **Alltid**, ovest
 
 Rabattinformasjonen vises nederst på siden **Utlign åpne transaksjoner**.
 
-|                              |           |
+| Felt                        | Verdi     |
 |------------------------------|-----------|
 | Kontantrabattdato           | 09/7/2015 |
-| Kontantrabattbeløp         | 7,00      |
+| Kontantrabattbeløp         | 7.00      |
 | Bruk kontantrabatt            | Alltid    |
 | Kontantrabatt brukt          | 3,00      |
 | Kontantrabattbeløp som skal brukes | 7,00      |
