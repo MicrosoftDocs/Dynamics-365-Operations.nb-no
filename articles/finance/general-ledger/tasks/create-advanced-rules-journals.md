@@ -2,11 +2,9 @@
 title: Opprette avanserte regler for journaler
 description: Denne fremgangsmåten viser hvordan du oppretter avanserte regler for journaler.
 author: aprilolson
-manager: AnnBe
 ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalSetup, LedgerJournalControl, CompanyLookup, LedgerJournalPostControl
 audience: Application User
@@ -15,47 +13,47 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e61ed731c4040e7351e20421f6cf217ae9a4641d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: cd753d521dc4ad4c1e46bf51d9c1e4aa0ba02721
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5222365"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5832808"
 ---
-# <a name="create-advanced-rules-for-journals"></a><span data-ttu-id="183e7-103">Opprette avanserte regler for journaler</span><span class="sxs-lookup"><span data-stu-id="183e7-103">Create advanced rules for journals</span></span>
+# <a name="create-advanced-rules-for-journals"></a><span data-ttu-id="396d0-103">Opprette avanserte regler for journaler</span><span class="sxs-lookup"><span data-stu-id="396d0-103">Create advanced rules for journals</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="183e7-104">Denne fremgangsmåten viser hvordan du oppretter avanserte regler for journaler.</span><span class="sxs-lookup"><span data-stu-id="183e7-104">This procedure steps through creating advanced rules for journals.</span></span> <span data-ttu-id="183e7-105">Dette omfatter definering av journalkontroll og brukerposteringsrestriksjoner.</span><span class="sxs-lookup"><span data-stu-id="183e7-105">This includes setting up journal control and user posting restrictions.</span></span> <span data-ttu-id="183e7-106">Denne prosedyren bruker demonstrasjonsdatafirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="183e7-106">This procedure uses the USMF demo data company.</span></span>
+<span data-ttu-id="396d0-104">Denne fremgangsmåten viser hvordan du oppretter avanserte regler for journaler.</span><span class="sxs-lookup"><span data-stu-id="396d0-104">This procedure steps through creating advanced rules for journals.</span></span> <span data-ttu-id="396d0-105">Dette omfatter definering av journalkontroll og brukerposteringsrestriksjoner.</span><span class="sxs-lookup"><span data-stu-id="396d0-105">This includes setting up journal control and user posting restrictions.</span></span> <span data-ttu-id="396d0-106">Denne prosedyren bruker demonstrasjonsdatafirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="396d0-106">This procedure uses the USMF demo data company.</span></span>
 
 
-## <a name="set-up-journal-control"></a><span data-ttu-id="183e7-107">Definere journalkontroll</span><span class="sxs-lookup"><span data-stu-id="183e7-107">Set up journal control</span></span>
-1. <span data-ttu-id="183e7-108">I **navigasjonsruten** går du til **Moduler > Økonomimodul > Journaloppsett > Journalnavn**.</span><span class="sxs-lookup"><span data-stu-id="183e7-108">In the **Navigation pane**, go to **Modules > General ledger > Journal setup > Journal names**.</span></span>
-2. <span data-ttu-id="183e7-109">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="183e7-109">In the list, find and select the desired record.</span></span>
-3. <span data-ttu-id="183e7-110">Klikk **Journalkontroll** i **handlingsruten**.</span><span class="sxs-lookup"><span data-stu-id="183e7-110">On the **Action pane**, click **Journal control**.</span></span>
-4. <span data-ttu-id="183e7-111">Klikk **Legg til** i hurtigfanen **Hvilke kontotyper kan posteres?**</span><span class="sxs-lookup"><span data-stu-id="183e7-111">In the **Which account types can be posted** fastTab, click **Add**.</span></span>
-5. <span data-ttu-id="183e7-112">Klikk rullegardinknappen i feltet **Firmakontoer** for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="183e7-112">In the **Company accounts** field, click the drop-down button to open the lookup.</span></span>
-6. <span data-ttu-id="183e7-113">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="183e7-113">In the list, find and select the desired record.</span></span>
-7. <span data-ttu-id="183e7-114">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="183e7-114">In the list, click the link in the selected row.</span></span>
-8. <span data-ttu-id="183e7-115">Klikk **Legg til** i hurtigfanen **Hvilke segmentverdier er gyldige for denne journalen?**</span><span class="sxs-lookup"><span data-stu-id="183e7-115">In the **Which segment values are valid for this journal** fastTab, click **Add**.</span></span>
-9. <span data-ttu-id="183e7-116">Klikk rullegardinknappen i feltet **Kontostruktur** for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="183e7-116">In the **Account structure** field, click the drop-down button to open the lookup.</span></span>
-10. <span data-ttu-id="183e7-117">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="183e7-117">In the list, find and select the desired record.</span></span>
-11. <span data-ttu-id="183e7-118">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="183e7-118">In the list, click the link in the selected row.</span></span>
-12. <span data-ttu-id="183e7-119">Klikk rullegardinknappen i feltet **Segment** for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="183e7-119">In the **Segment** field, click the drop-down button to open the lookup.</span></span>
-13. <span data-ttu-id="183e7-120">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="183e7-120">In the list, click the link in the selected row.</span></span>
-14. <span data-ttu-id="183e7-121">Klikk rullegardinknappen i feltet **Fra verdi** for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="183e7-121">In the **From value** field, click the drop-down button to open the lookup.</span></span>
-15. <span data-ttu-id="183e7-122">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="183e7-122">In the list, find and select the desired record.</span></span>
-16. <span data-ttu-id="183e7-123">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="183e7-123">In the list, click the link in the selected row.</span></span>
-17. <span data-ttu-id="183e7-124">Klikk rullegardinknappen i feltet **Til verdi** for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="183e7-124">In the **To value** field, click the drop-down button to open the lookup.</span></span>
-18. <span data-ttu-id="183e7-125">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="183e7-125">In the list, find and select the desired record.</span></span>
-19. <span data-ttu-id="183e7-126">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="183e7-126">In the list, click the link in the selected row.</span></span>
+## <a name="set-up-journal-control"></a><span data-ttu-id="396d0-107">Definere journalkontroll</span><span class="sxs-lookup"><span data-stu-id="396d0-107">Set up journal control</span></span>
+1. <span data-ttu-id="396d0-108">I **navigasjonsruten** går du til **Moduler > Økonomimodul > Journaloppsett > Journalnavn**.</span><span class="sxs-lookup"><span data-stu-id="396d0-108">In the **Navigation pane**, go to **Modules > General ledger > Journal setup > Journal names**.</span></span>
+2. <span data-ttu-id="396d0-109">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="396d0-109">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="396d0-110">Klikk **Journalkontroll** i **handlingsruten**.</span><span class="sxs-lookup"><span data-stu-id="396d0-110">On the **Action pane**, click **Journal control**.</span></span>
+4. <span data-ttu-id="396d0-111">Klikk **Legg til** i hurtigfanen **Hvilke kontotyper kan posteres?**</span><span class="sxs-lookup"><span data-stu-id="396d0-111">In the **Which account types can be posted** fastTab, click **Add**.</span></span>
+5. <span data-ttu-id="396d0-112">Klikk rullegardinknappen i feltet **Firmakontoer** for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="396d0-112">In the **Company accounts** field, click the drop-down button to open the lookup.</span></span>
+6. <span data-ttu-id="396d0-113">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="396d0-113">In the list, find and select the desired record.</span></span>
+7. <span data-ttu-id="396d0-114">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="396d0-114">In the list, click the link in the selected row.</span></span>
+8. <span data-ttu-id="396d0-115">Klikk **Legg til** i hurtigfanen **Hvilke segmentverdier er gyldige for denne journalen?**</span><span class="sxs-lookup"><span data-stu-id="396d0-115">In the **Which segment values are valid for this journal** fastTab, click **Add**.</span></span>
+9. <span data-ttu-id="396d0-116">Klikk rullegardinknappen i feltet **Kontostruktur** for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="396d0-116">In the **Account structure** field, click the drop-down button to open the lookup.</span></span>
+10. <span data-ttu-id="396d0-117">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="396d0-117">In the list, find and select the desired record.</span></span>
+11. <span data-ttu-id="396d0-118">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="396d0-118">In the list, click the link in the selected row.</span></span>
+12. <span data-ttu-id="396d0-119">Klikk rullegardinknappen i feltet **Segment** for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="396d0-119">In the **Segment** field, click the drop-down button to open the lookup.</span></span>
+13. <span data-ttu-id="396d0-120">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="396d0-120">In the list, click the link in the selected row.</span></span>
+14. <span data-ttu-id="396d0-121">Klikk rullegardinknappen i feltet **Fra verdi** for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="396d0-121">In the **From value** field, click the drop-down button to open the lookup.</span></span>
+15. <span data-ttu-id="396d0-122">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="396d0-122">In the list, find and select the desired record.</span></span>
+16. <span data-ttu-id="396d0-123">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="396d0-123">In the list, click the link in the selected row.</span></span>
+17. <span data-ttu-id="396d0-124">Klikk rullegardinknappen i feltet **Til verdi** for å åpne oppslaget.</span><span class="sxs-lookup"><span data-stu-id="396d0-124">In the **To value** field, click the drop-down button to open the lookup.</span></span>
+18. <span data-ttu-id="396d0-125">Finn og velg ønsket post i listen.</span><span class="sxs-lookup"><span data-stu-id="396d0-125">In the list, find and select the desired record.</span></span>
+19. <span data-ttu-id="396d0-126">Klikk koblingen i den valgte raden i listen.</span><span class="sxs-lookup"><span data-stu-id="396d0-126">In the list, click the link in the selected row.</span></span>
 
-## <a name="set-up-posting-restrictions"></a><span data-ttu-id="183e7-127">Definere posteringsrestriksjoner</span><span class="sxs-lookup"><span data-stu-id="183e7-127">Set up posting restrictions</span></span>
-1. <span data-ttu-id="183e7-128">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="183e7-128">Close the page.</span></span>
-2. <span data-ttu-id="183e7-129">Klikk **Posteringsrestriksjoner**.</span><span class="sxs-lookup"><span data-stu-id="183e7-129">Click **Posting restrictions**.</span></span>
-3. <span data-ttu-id="183e7-130">Velg Etter brukergruppe i feltet **Hvordan vil du konfigurere posteringsrestriksjoner?**</span><span class="sxs-lookup"><span data-stu-id="183e7-130">In the **How do you want to set up posting restrictions** field, select 'By user group'.</span></span>
-4. <span data-ttu-id="183e7-131">Merk av for gruppen som du vil tillate postering for dette journalnavnet for, i treet.</span><span class="sxs-lookup"><span data-stu-id="183e7-131">In the tree, check 'the group that you want to allow posting for this journal name.'.</span></span>
-5. <span data-ttu-id="183e7-132">Klikk **OK**.</span><span class="sxs-lookup"><span data-stu-id="183e7-132">Click **OK**.</span></span>
+## <a name="set-up-posting-restrictions"></a><span data-ttu-id="396d0-127">Definere posteringsrestriksjoner</span><span class="sxs-lookup"><span data-stu-id="396d0-127">Set up posting restrictions</span></span>
+1. <span data-ttu-id="396d0-128">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="396d0-128">Close the page.</span></span>
+2. <span data-ttu-id="396d0-129">Klikk **Posteringsrestriksjoner**.</span><span class="sxs-lookup"><span data-stu-id="396d0-129">Click **Posting restrictions**.</span></span>
+3. <span data-ttu-id="396d0-130">Velg Etter brukergruppe i feltet **Hvordan vil du konfigurere posteringsrestriksjoner?**</span><span class="sxs-lookup"><span data-stu-id="396d0-130">In the **How do you want to set up posting restrictions** field, select 'By user group'.</span></span>
+4. <span data-ttu-id="396d0-131">Merk av for gruppen som du vil tillate postering for dette journalnavnet for, i treet.</span><span class="sxs-lookup"><span data-stu-id="396d0-131">In the tree, check 'the group that you want to allow posting for this journal name.'.</span></span>
+5. <span data-ttu-id="396d0-132">Klikk **OK**.</span><span class="sxs-lookup"><span data-stu-id="396d0-132">Click **OK**.</span></span>
 
 
 

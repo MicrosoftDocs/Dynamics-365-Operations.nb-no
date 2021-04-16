@@ -2,11 +2,9 @@
 title: Definere leiejournalnavn
 description: Dette emnet forklarer hvordan du definerer navn på leierjournaler. Leiejournalnavn angir journalene som oppføringer som kommer fra aktivaleie, posteres til.
 author: moaamer
-manager: Ann Beebe
 ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,25 +15,25 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 98595848593e3abd63701b52c7a67ec61288a96e
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: e45475530ae56ec51bbfb5642d351822c9abfd7b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5249635"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5823005"
 ---
-# <a name="set-up-lease-journal-names"></a><span data-ttu-id="d7705-104">Definere leiejournalnavn</span><span class="sxs-lookup"><span data-stu-id="d7705-104">Set up lease journal names</span></span>
+# <a name="set-up-lease-journal-names"></a><span data-ttu-id="32532-104">Definere leiejournalnavn</span><span class="sxs-lookup"><span data-stu-id="32532-104">Set up lease journal names</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="d7705-105">Leiejournalnavn angir journalene som aktivaleietransaksjoner posteres til.</span><span class="sxs-lookup"><span data-stu-id="d7705-105">Lease journal names specify the journals that Asset leasing transactions are posted to.</span></span> <span data-ttu-id="d7705-106">Bare journalnavn som er tilordnet til **Aktivaleie**-journaltyper, vises i feltene **Opprinnelig føring** og **Månedlig journalnavn** på siden **Parametere for aktivaleie**.</span><span class="sxs-lookup"><span data-stu-id="d7705-106">Only journal names that are assigned to the **Asset leasing** journal type appear in the **Initial Recognition** and **Monthly Journal Name** fields on the **Asset leasing parameters** page.</span></span> <span data-ttu-id="d7705-107">Bare journaltypen **registrering av leverandørfaktura** kan tilordnes til feltet for **fakturajournalnavn**.</span><span class="sxs-lookup"><span data-stu-id="d7705-107">Only **vendor invoice recording** journal type can be assigned to the **Invoice journal name** field.</span></span>
+<span data-ttu-id="32532-105">Leiejournalnavn angir journalene som aktivaleietransaksjoner posteres til.</span><span class="sxs-lookup"><span data-stu-id="32532-105">Lease journal names specify the journals that Asset leasing transactions are posted to.</span></span> <span data-ttu-id="32532-106">Bare journalnavn som er tilordnet til **Aktivaleie**-journaltyper, vises i feltene **Opprinnelig føring** og **Månedlig journalnavn** på siden **Parametere for aktivaleie**.</span><span class="sxs-lookup"><span data-stu-id="32532-106">Only journal names that are assigned to the **Asset leasing** journal type appear in the **Initial Recognition** and **Monthly Journal Name** fields on the **Asset leasing parameters** page.</span></span> <span data-ttu-id="32532-107">Bare journaltypen **registrering av leverandørfaktura** kan tilordnes til feltet for **fakturajournalnavn**.</span><span class="sxs-lookup"><span data-stu-id="32532-107">Only **vendor invoice recording** journal type can be assigned to the **Invoice journal name** field.</span></span>
 
-<span data-ttu-id="d7705-108">Følg denne fremgangsmåten for å konfigurere navn på leiejournaler:</span><span class="sxs-lookup"><span data-stu-id="d7705-108">To configure lease journal names, follow these steps.</span></span>
+<span data-ttu-id="32532-108">Følg denne fremgangsmåten for å konfigurere navn på leiejournaler:</span><span class="sxs-lookup"><span data-stu-id="32532-108">To configure lease journal names, follow these steps.</span></span>
 
-1. <span data-ttu-id="d7705-109">Gå til **Aktivaleie \> Oppsett \> Parametere for aktivaleie**.</span><span class="sxs-lookup"><span data-stu-id="d7705-109">Go to **Asset leasing \> Setup \> Asset leasing parameters**.</span></span>
-2. <span data-ttu-id="d7705-110">Gå til kategorien **Generelt** i feltet **navn på journal for opprinnelig føring**, og velg en journal.</span><span class="sxs-lookup"><span data-stu-id="d7705-110">On the **General** tab, in the **Initial recognition journal name** field, and select a journal.</span></span> <span data-ttu-id="d7705-111">Alle journaloppføringer for opprinnelig føring posteres til dette journalnavnet.</span><span class="sxs-lookup"><span data-stu-id="d7705-111">All initial recognition journal entries will be posted to this journal name.</span></span>
-3. <span data-ttu-id="d7705-112">I feltet for **fakturajournalnavn** velger du en journal.</span><span class="sxs-lookup"><span data-stu-id="d7705-112">In the **Invoice journal name** field, select a journal.</span></span> <span data-ttu-id="d7705-113">Hvis alternativet **Betal til leverandør** er satt til **Ja** for leietablået, vil leie- og utgiftsbetalingsfakturaer posteres til dette journalnavnet.</span><span class="sxs-lookup"><span data-stu-id="d7705-113">If the **Pay to vendor** option is set to **Yes** for the lease book, lease and expense payment invoices will be posted to this journal name.</span></span>
-4. <span data-ttu-id="d7705-114">I feltet for **leiejournalnavn** velger du en journal.</span><span class="sxs-lookup"><span data-stu-id="d7705-114">In the **Lease journal name** field, select a journal.</span></span> <span data-ttu-id="d7705-115">Alle poster for avskrivning, rente og kortsiktige omklassifiseringer vil bli postert til dette journalnavnet.</span><span class="sxs-lookup"><span data-stu-id="d7705-115">All depreciation, interest, and short-term reclassification entries will be posted to this journal name.</span></span> <span data-ttu-id="d7705-116">Hvis alternativet **Betal til leverandør** er satt til **Nei** for leietablået, vil leiebetalings- og utgiftsbetalingsoppføringer også posteres til dette journalnavnet.</span><span class="sxs-lookup"><span data-stu-id="d7705-116">If the **Pay to vendor** option is set to **No** for the lease book, lease payments and expense payment entries will also be posted to this journal name.</span></span>
+1. <span data-ttu-id="32532-109">Gå til **Aktivaleie \> Oppsett \> Parametere for aktivaleie**.</span><span class="sxs-lookup"><span data-stu-id="32532-109">Go to **Asset leasing \> Setup \> Asset leasing parameters**.</span></span>
+2. <span data-ttu-id="32532-110">Gå til kategorien **Generelt** i feltet **navn på journal for opprinnelig føring**, og velg en journal.</span><span class="sxs-lookup"><span data-stu-id="32532-110">On the **General** tab, in the **Initial recognition journal name** field, and select a journal.</span></span> <span data-ttu-id="32532-111">Alle journaloppføringer for opprinnelig føring posteres til dette journalnavnet.</span><span class="sxs-lookup"><span data-stu-id="32532-111">All initial recognition journal entries will be posted to this journal name.</span></span>
+3. <span data-ttu-id="32532-112">I feltet for **fakturajournalnavn** velger du en journal.</span><span class="sxs-lookup"><span data-stu-id="32532-112">In the **Invoice journal name** field, select a journal.</span></span> <span data-ttu-id="32532-113">Hvis alternativet **Betal til leverandør** er satt til **Ja** for leietablået, vil leie- og utgiftsbetalingsfakturaer posteres til dette journalnavnet.</span><span class="sxs-lookup"><span data-stu-id="32532-113">If the **Pay to vendor** option is set to **Yes** for the lease book, lease and expense payment invoices will be posted to this journal name.</span></span>
+4. <span data-ttu-id="32532-114">I feltet for **leiejournalnavn** velger du en journal.</span><span class="sxs-lookup"><span data-stu-id="32532-114">In the **Lease journal name** field, select a journal.</span></span> <span data-ttu-id="32532-115">Alle poster for avskrivning, rente og kortsiktige omklassifiseringer vil bli postert til dette journalnavnet.</span><span class="sxs-lookup"><span data-stu-id="32532-115">All depreciation, interest, and short-term reclassification entries will be posted to this journal name.</span></span> <span data-ttu-id="32532-116">Hvis alternativet **Betal til leverandør** er satt til **Nei** for leietablået, vil leiebetalings- og utgiftsbetalingsoppføringer også posteres til dette journalnavnet.</span><span class="sxs-lookup"><span data-stu-id="32532-116">If the **Pay to vendor** option is set to **No** for the lease book, lease payments and expense payment entries will also be posted to this journal name.</span></span>
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
