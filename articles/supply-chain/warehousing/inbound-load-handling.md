@@ -2,11 +2,9 @@
 title: Lagerhåndtering av innkommende laster for bestillinger
 description: Dette emnet beskriver lagerhåndteringsprosessen for innkommende laster for bestillinger.
 author: omulvad
-manager: tfehr
 ms.date: 03/21/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanningWorkbench, WHSRFMenu, WHSRFMenuItem
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: fec2e7f39569c52ec17c5d0b2474eca720e0180a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 095ef3bb9fff26915bf4fbeb7e240ae9175e315c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5235346"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835636"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Lagerhåndtering av innkommende laster for bestillinger
 
@@ -66,7 +64,7 @@ Når en innkommende last først ankommer lageret, må lagermedarbeidere registre
 
 - **En meny for mobilenheter som er konfigurert til å støtte mottak av laster**
 
-    [Lagerappen](install-configure-warehousing-app.md) for mobilenheter støtter følgende arbeidsopprettelsesprosesser:
+    [Mobilappen Lagerstyring](../warehousing/install-configure-warehouse-management-app.md) for mobilenheter støtter følgende arbeidsopprettelsesprosesser:
 
     - Mottak av lastvare
     - Mottak og plassering av lastvare
@@ -285,7 +283,7 @@ For å arbeide deg gjennom disse scenarioene ved å bruke de angitte eksempelpos
 
 Før lagermottaksassistenter kan bruke en mobilenhet til å registrere innkommende beholdning som er knyttet til en last, må du opprette et menyelement for mobilenheter for dette formålet.
 
-I denne delen skal du opprette et menyelement på en mobilenhet og legge det til på en eksisterende meny. En lagerarbeider kan deretter velge menyelementet i lagerappen.
+I denne delen skal du opprette et menyelement på en mobilenhet og legge det til på en eksisterende meny. En lagerarbeider kan deretter velge menyelementet i mobilappen Lagerstyring.
 
 1. Gå til **Lagerstyring \> Oppsett \> Mobilenhet \> Menyelementer på mobilenheten**, og kontroller at menyen på mobilenheten inkluderer et menyelement med følgende innstillinger:
 

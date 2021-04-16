@@ -2,11 +2,9 @@
 title: Installere og koble til lagerappen
 description: Dette emnet beskriver hvordan du installerer lagerappen på hver av de mobile enhetene og konfigurerer den til å koble til Microsoft Dynamics 365 Supply Chain Management-miljøet ditt. Du kan konfigurere hver enhet manuelt, eller du kan importere tilkoblingsinnstillinger via en fil eller ved å skanne en QR-kode.
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 05/25/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
 audience: Application User, IT Pro
@@ -18,19 +16,19 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 3d2920d015aab5e4f0a1966d2a2574fb659a7c80
-ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
+ms.openlocfilehash: c92fe991c8651d7665de2e850d8649b72f525f4c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5486983"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835578"
 ---
 # <a name="install-and-connect-the-warehouse-app"></a>Installere og koble til lagerappen
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> Dette emnet beskriver hvordan du konfigurerer den gamle lagerappen. Hvis du ser etter informasjon om hvordan du konfigurerer den nye mobilappen Lagerstyring, kan du se [Installere og koble til mobilappen Lagerstyring](install-configure-warehouse-management-app.md).
+> Dette emnet beskriver hvordan du konfigurerer den gamle lagerappen (som nå er avskrevet). Hvis du ser etter informasjon om hvordan du konfigurerer den nye mobilappen Lagerstyring, kan du se [Installere og koble til mobilappen Lagerstyring](install-configure-warehouse-management-app.md).
 
 > [!NOTE]
 > Dette emnet beskriver hvordan du konfigurerer lagerappen for skydistribusjoner. Hvis du leter etter informasjon om hvordan du konfigurerer lagerappen for lokale distribusjoner, kan du se [Lager for lokale distribusjoner](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).

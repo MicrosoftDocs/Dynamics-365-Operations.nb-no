@@ -2,11 +2,9 @@
 title: Arbeide med lokasjonsdirektiver
 description: Dette emnet beskriver hvordan du arbeider med lokasjonsdirektiver. Lokasjonsdirektiver er brukerdefinerte regler som bidrar til å identifisere plukke- og plasseringslokasjoner for lagerbevegelse.
 author: Mirzaab
-manager: tfehr
 ms.date: 11/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocDirTable, WHSLocDirHint, WHSLocDirTableUOM, WHSLocDirFailure
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 84821fe4e7c5054b2121dbd7f9e536c80080b978
-ms.sourcegitcommit: 1f23adbc6c7e6f9ffe8c48c10659b9fae2155aeb
+ms.openlocfilehash: 91482bb24356a14a8d44e887620548cdf6f4c5d3
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5470525"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5838400"
 ---
 # <a name="work-with-location-directives"></a>Arbeide med lokasjonsdirektiver
 
@@ -152,7 +150,7 @@ Feltene i hurtigfanen **Lokasjonsdirektiver** er spesifikke for arbeidsordretype
     > [!IMPORTANT]
     > Hvis du skal kunne utføre både plasseringer med flere varer og enkelt-SKU-plasseringer, må du angi to linjer som har samme struktur og oppsett, men du må sette alternativet **Flere SKU-er** til *Ja* for en linje og *Ingen* for den andre. For plasseringsoperasjoner må du derfor ha to identiske lokasjonsdirektiver, selv om du ikke må skille mellom én eller flere SKU-er i en arbeids-ID. Hvis du ikke definerer begge disse plasseringsdirektivene, vil det komme uventede forretningsprosesslokasjoner fra lokasjonsdirektivet som er brukt. Du må bruke et lignende oppsett for lokasjonsdirektiver som har **arbeidstypen** *plukk* hvis du må behandle ordrer som omfatter flere SKU-er.
 
-    Bruk alternativet **Flere SKU-er** for arbeidslinjer som behandler mer enn ett varenummer. (Varenummeret vil være tomt i arbeidsdetaljene, og det vil bli vist som **Flere** på behandlingssidene i lagerappen.)
+    Bruk alternativet **Flere SKU-er** for arbeidslinjer som behandler mer enn ett varenummer. (Varenummeret vil være tomt i arbeidsdetaljene, og det vil bli vist som **Flere** på behandlingssidene i mobilappen Lagerstyring.)
 
     I et typisk eksempelscenario er en arbeidsmal satt opp slik at den har mer enn ett plukk/plasser-par. I dette tilfellet vil du kanskje søke etter en bestemt oppsamlingslokasjon som skal brukes for linjer med **arbeidstypen** *Plasser*.
 
@@ -171,7 +169,7 @@ Feltene i hurtigfanen **Lokasjonsdirektiver** er spesifikke for arbeidsordretype
     > [!NOTE]
     > Dette feltet er bare tilgjengelig for valgte arbeidsordretyper der etterfyllingen er tillatt. Hvis du vil ha en fullstendig liste, kan du se [Felter som er spesifikke for arbeidsordretyper](#fields-specific-types).
 
-- **Disposisjonskode** – Dette feltet brukes til lokasjonsdirektiver som har arbeidsordretypen *Bestillinger*, *Plasser ferdigvarer* eller *Returordrer* og arbeidstypen *Plasser*. Bruk det til å lede flyten til å bruke et bestemt lokasjonsdirektiv, avhengig av disposisjonskoden som en arbeider som er valgt i lagerappen. Du kan for eksempel sende returnerte varer til en inspeksjonslokasjon før de returneres til lager. En disposisjonskode kan knyttes til en lagerstatus. På denne måten kan det brukes til å endre lagerstatusen som en del av en mottaksprosess. Du kan for eksempel ha en disposisjonskode, *Spørsmål og svar*, som setter lagerstatusen til *Spørsmål og svar*. Du kan deretter ha et eget lokasjonsdirektiv for å flytte lageret til en karantenelokasjon.
+- **Disposisjonskode** – Dette feltet brukes til lokasjonsdirektiver som har arbeidsordretypen *Bestillinger*, *Plasser ferdigvarer* eller *Returordrer* og arbeidstypen *Plasser*. Bruk det til å lede flyten til å bruke et bestemt lokasjonsdirektiv, avhengig av disposisjonskoden som en arbeider som er valgt i mobilappen Lagerstyring. Du kan for eksempel sende returnerte varer til en inspeksjonslokasjon før de returneres til lager. En disposisjonskode kan knyttes til en lagerstatus. På denne måten kan det brukes til å endre lagerstatusen som en del av en mottaksprosess. Du kan for eksempel ha en disposisjonskode, *Spørsmål og svar*, som setter lagerstatusen til *Spørsmål og svar*. Du kan deretter ha et eget lokasjonsdirektiv for å flytte lageret til en karantenelokasjon.
 
     > [!NOTE]
     > Dette feltet er bare tilgjengelig for valgte arbeidsordretyper der etterfyllingen er tillatt. Hvis du vil ha en fullstendig liste, kan du se [Felter som er spesifikke for arbeidsordretyper](#fields-specific-types).

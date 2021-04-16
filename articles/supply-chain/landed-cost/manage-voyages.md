@@ -2,7 +2,6 @@
 title: Administrere sjøreiser
 description: Dette emnet beskriver hvordan du arbeider med sjøreiser. En sjøreise representerer som regel et fartøy. Avhengig av praksis og fremgangsmåter kan den imidlertid representere en leverandør, en bestilling eller en annen vare som gir mening for organisasjonen.
 author: sherry-zheng
-manager: tfehr
 ms.date: 12/14/2020
 ms.topic: article
 ms.prod: ''
@@ -16,17 +15,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 850fbb2077a592ec4ba8578cab4795d573464f54
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 0b1414efbdde77af5d7fa15ff066e4ddcfd6bad2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5501012"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5833791"
 ---
 # <a name="manage-voyages"></a>Administrere sjøreiser
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 En sjøreise representerer som regel et fartøy. Avhengig av praksis og fremgangsmåter kan den imidlertid representere en leverandør, en bestilling eller en annen vare som gir mening for organisasjonen.
 
@@ -74,9 +72,9 @@ Tabellen nedenfor beskriver handlingene som er tilgjengelige i handlingsruten p�
 | Poster faktura | Poster en faktura for alle bestillingslinjer i sjøreisen. Hvis varene på sjøreisen går gjennom behandling av varer i transitt, faktureres bestillingslinjene før mottaksprosessen er utført. Når den opprinnelige bestillingen faktureres, opprettes ordrene for varer i transitt som er knyttet til de opprinnelige bestillingslinjene. Disse ordrene kan deretter mottas av lageret. Hvis det brukes flere forsendelser, åpnes det en ny dialogboks for fakturapostering for hvert firma. |
 | Send overføringsordre | Poster en sjøreise for overføringsordre for alle overføringsordrelinjer i sjøreisen. Når denne knappen er valgt, er bare overføringsordrer tilgjengelige for oppdatering. |
 | Motta overføringsordre | Poster en kvittering for overføringsordre for alle overføringsordrelinjer i sjøreisen. |
-| Motta varer i transitt | Motta alle ordrelinjer som er i transit i sjøreisen. Denne knappen er ett av tre alternativer som er tilgjengelige for mottak av varer i transitt for en sjøreise. (De to andre alternativene er knappen **Opprett ankomstjournal**, som beskrives senere i denne tabellen, og lagerappen.) Dette alternativet er det enkleste alternativet, og det vil behandle varene i transitt ut av transittlageret og til det endelige destinasjonslageret. Hvis du vil ha mer kontroll over prosessen, kan du bruke ankomstjournalen eller en mobilenhet til å behandle mottak av varer. |
+| Motta varer i transitt | Motta alle ordrelinjer som er i transit i sjøreisen. Denne knappen er ett av tre alternativer som er tilgjengelige for mottak av varer i transitt for en sjøreise. (De to andre alternativene er knappen **Opprett ankomstjournal**, som beskrives senere i denne tabellen, og mobilappen Lagerstyring.) Dette alternativet er det enkleste alternativet, og det vil behandle varene i transitt ut av transittlageret og til det endelige destinasjonslageret. Hvis du vil ha mer kontroll over prosessen, kan du bruke ankomstjournalen eller en mobilenhet til å behandle mottak av varer. |
 | Finn automatiske kostnader | Finn relevante sjøreisekostnader. Hvis disse kostnadene allerede er funnet eller oppdatert, får du følgende melding: Ikke-fakturerte kostnadslinjer finnes. Vil du overskrive dem? Eventuelle kostnader som ikke var knyttet til sjøreisen, blir funnet. Sjøreisekostnader som er knyttet til en sjøreise og som er fakturert, vil ikke bli overskrevet. |
-| Opprett ankomstjournal | <p>Åpne dialogboksen **Opprett ankomstjournal** der du kan opprette en ankomstjournal som angir en lokasjon. Dialogboksen inneholder følgende alternativer:</p><ul><li>**Opprett fra varer i transitt** eller **Opprett fra overføringsordre** – Etiketten for dette alternativet endres avhengig av om du bruker varer i transittprosessen. Sett alternativet til *Ja* for å åpne en ankomstjournalside, som lar deg behandle en standard ankomstjournal for varene i transitt som er knyttet til ankomstjournalen. Hvis varen allerede er mottatt i det endelige mållageret, vil den ikke bli lagt til i ankomstjournallinjene.</li><li>**Initialiser antall** – Sett dette alternativet til *Ja* for å initialisere antallet som skal mottas, basert på antallet varer som er angitt på sjøreiselinjen. Hvis sjøreiselinjen er delvis mottatt, vil dette antallet være gjenværende antall. Det anbefales at du setter dette alternativet til *Ja*.</li><li>**Opprett fra ordrelinjer** – Sett dette alternativet til *Ja* for å bruke verdien fra ordrelinjene.</li></ul><p>Denne knappen er ett av tre alternativer som er tilgjengelige for mottak av varer for en sjøreise. (De andre alternativene er knappen **Motta varer i transitt**, som ble beskrevet tidligere i denne tabellen, og lagerappen.)</p> |
+| Opprett ankomstjournal | <p>Åpne dialogboksen **Opprett ankomstjournal** der du kan opprette en ankomstjournal som angir en lokasjon. Dialogboksen inneholder følgende alternativer:</p><ul><li>**Opprett fra varer i transitt** eller **Opprett fra overføringsordre** – Etiketten for dette alternativet endres avhengig av om du bruker varer i transittprosessen. Sett alternativet til *Ja* for å åpne en ankomstjournalside, som lar deg behandle en standard ankomstjournal for varene i transitt som er knyttet til ankomstjournalen. Hvis varen allerede er mottatt i det endelige mållageret, vil den ikke bli lagt til i ankomstjournallinjene.</li><li>**Initialiser antall** – Sett dette alternativet til *Ja* for å initialisere antallet som skal mottas, basert på antallet varer som er angitt på sjøreiselinjen. Hvis sjøreiselinjen er delvis mottatt, vil dette antallet være gjenværende antall. Det anbefales at du setter dette alternativet til *Ja*.</li><li>**Opprett fra ordrelinjer** – Sett dette alternativet til *Ja* for å bruke verdien fra ordrelinjene.</li></ul><p>Denne knappen er ett av tre alternativer som er tilgjengelige for mottak av varer for en sjøreise. (De andre alternativene er knappen **Motta varer i transitt**, som ble beskrevet tidligere i denne tabellen, og mobilappen Lagerstyring.)</p> |
 | Avsett kostnader | Du kan avsette kostnader der en kostnadstype har en finanskonto angitt for debet. Denne knappen brukes vanligvis når lageret er i transitt, eller når varene er mottatt og fakturert. |
 | Samle kostnader | Flytt kostnader fra forsendelsescontainernivået til sjøreisenivået. Du kan bruke denne knappen i et scenario for delt tjeneste/forsendelses der flere enheter deler en forsendelsescontainer eller kartongplass. Denne har for eksempel en forsendelsescontainer på 12 meter og en forsendelsescontainer på 6 meter, og fordelingen gjøres etter volum. I dette tilfellet kan varene/enhetene som deler eller bruker plassen i forsendelsescontaineren på 20 meter, bli gjenstand for økonomisk straff. Hvis noen organisasjoner skal kunne distribuere kostnadene riktig, kan det hende de vil overføre kostnadene til sjøreisen og distribuere dem på grunnlag av metoden for sjøreisefordelingsnivået. |
 | Endre reisemal | Åpne en dialogboks der du kan endre sjøreisemalen. Når du endrer malen, slettes sjøreisekostnadene. Derfor kan det hende du må velge **Søk etter automatiske kostnader** (se beskrivelsen tidligere i denne tabellen) eller legge til kostnader manuelt på nytt. |

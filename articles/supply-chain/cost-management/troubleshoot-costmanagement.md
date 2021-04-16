@@ -1,12 +1,10 @@
 ---
 title: Feilsøk kostnadsstyring
 description: Dette emnet beskriver hvordan du løser problemer som kan oppstå mens du arbeider med kostnadsstyring.
-author: riluan
-manager: tfehr
+author: AndersGirke
 ms.date: 10/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventAgingStorage, InventAgingStorageChart, InventAgingStorageDetails, InventValueProcess, InventValueReportSetup, InventClosing
 audience: Application User
@@ -15,15 +13,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: riluan
+ms.author: aevengir
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: dceaca64132857d796a16c2450a372ba05712cf5
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: fc6a48a44a529c82c2a9ee818af95569d9bcb249
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5262459"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5834295"
 ---
 # <a name="troubleshoot-cost-management"></a>Feilsøk kostnadsstyring
 
@@ -37,7 +35,7 @@ Funksjonene [Lagring av rapport for aldersfordeling for lager](inventory-aging-r
 
 Delsummer kan forårsake problemer når resultatet eksporteres, spesielt hvis brukerne endrer postrekkefølgen.
 
-Hvis du vil kontrollere delsummene, kan du eksportere resultatet til Microsoft Excel. Hvis du vil kontrollere delsummer i Supply Chain Management, kan du også bruke [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å aktivere funksjonene *Ny rutenettetkontroll* og *(Forhåndsversjon) Gruppering i rutenett*, som gir en mye mer fleksibel måte å se delsummen på for alle grupper etter kolonne. Hvis du vil ha mer informasjon, se [Rutenettfunksjoner](../../fin-ops-core/fin-ops/get-started/grid-capabilities.md).
+Hvis du vil kontrollere delsummene, kan du eksportere resultatet til Microsoft Excel. Hvis du vil kontrollere delsummer i Supply Chain Management, kan du også bruke [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å aktivere funksjonene *Ny rutenettetkontroll* og *Gruppering i rutenett*, som gir en mye mer fleksibel måte å se delsummen på for alle grupper etter kolonne. Hvis du vil ha mer informasjon, se [Rutenettfunksjoner](../../fin-ops-core/fin-ops/get-started/grid-capabilities.md).
 
 ### <a name="inventory-value-storage-report-doesnt-support-ledger-account-information"></a>Rapport for oppbevaring av lagerverdi støtter ikke finanskontoinformasjon
 
