@@ -2,11 +2,9 @@
 title: Generere rapporter om Internett-kanal
 description: Dette emnet beskriver hvordan du genererer rapporter for Internett-kanalen i Microsoft Dynamics 365 Commerce.
 author: psimolin
-manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,21 +14,18 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3ec93bd8ef8dea6ca979dee1819a9c9abcc38a2e
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: f70f42f2650a439c7131f228588c11124d326aec
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5251487"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792373"
 ---
 # <a name="generate-online-channel-reports"></a>Generere rapporter om Internett-kanal
-
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet beskriver hvordan du genererer rapporter for Internett-kanalen i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Oversikt
 
 Du kan generere og vise flere rapporter i Handel for å se hvordan det går med Internett-kanalen din.
 

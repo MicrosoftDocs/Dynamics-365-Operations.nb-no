@@ -2,11 +2,9 @@
 title: Domener i Dynamics 365 Commerce
 description: Dette emnet beskriver hvordan domener behandles i Microsoft Dynamics 365 Commerce.
 author: BrShoo
-manager: AnnBe
-ms.date: 09/03/2020
+ms.date: 03/17/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: retail
 ms.author: BrShoo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: bafa49cc570ddf7e0ff9c3dcb1b6902fb341b790
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 8d4381c64b69f8b62dcb509407c4f04dcee696ae
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5225795"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792805"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Domener i Dynamics 365 Commerce
 
@@ -40,7 +38,7 @@ Når du klargjør et e-handelsmiljø i [Microsoft Dynamics Lifecycle Services (L
 
 Illustrasjonen nedenfor viser LCS for e-handelsklargjøring med boksen **Støttede vertsnavn** uthevet. 
 
-![LCS for e-handelsklargjøring med boksen **Støttede vertsnavn** uthevet](./media/Domains_ProvisioningeCommerceScreen.png)
+![LCS for e-handelsklargjøring med boksen **Støttede vertsnavn** uthevet](./media/Domains_ProvisioningeCommerceScreen_publish.png)
 
 Du kan opprette en serviceforespørsel for å legge til flere domener i et miljø hvis klargjøring allerede har skjedd. Hvis du vil opprette en serviceforespørsel i LCS, kan du i miljøet gå til **Kundestøtte \> Kundestøtteproblemer** og velge **Send en hendelse**.
 
