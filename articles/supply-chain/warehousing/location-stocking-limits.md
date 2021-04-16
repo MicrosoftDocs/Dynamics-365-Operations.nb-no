@@ -2,11 +2,9 @@
 title: Lokasjon – lagringsgrenser
 description: Dette emnet beskriver funksjonaliteten til lagringsgrenser for lokasjon.
 author: perlynne
-manager: tfehr
 ms.date: 11/11/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationLimit
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-11-11
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: e336b54b894669f8a49091473314e1d7d2639e5f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: b9fb3c35f2f2e0fd7c0e3afe132efb4c51f163a9
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5216987"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5831272"
 ---
 # <a name="location-stocking-limits"></a>Lokasjon – lagringsgrenser
 
@@ -83,7 +81,7 @@ I dette eksemplet skal du kjøre en bestillingsmottaksflyt for to linjer. Du må
 
 Du vil først motta et antall på *4* av enheten *PL* i størrelse *S*, og se over plasseringslinjelokasjonene for arbeidet som opprettes. Du vil deretter motta et antall på *4* av enheten *PL* i størrelse *L*, og se over plasseringslinjelokasjonene for arbeidet som opprettes.
 
-1. I lagerappen logger du deg på ved å bruke *24* som bruker-ID og *1* som passord.
+1. I mobilappen Lagerstyring logger du deg på ved å bruke *24* som bruker-ID og *1* som passord.
 1. Velg **Inngående** \> **Kjøpsmottak**.
 1. Motta *4* *PL* av varenummer *D0013* i størrelse *S*.
 1. Se gjennom det plasseringsarbeidet som ble opprettet. Du skal se følgende resultat:

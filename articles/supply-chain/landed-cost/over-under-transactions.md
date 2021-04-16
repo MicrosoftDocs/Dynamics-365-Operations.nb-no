@@ -2,7 +2,6 @@
 title: Over-/undertransaksjoner
 description: Dette emnet formidler informasjon som vil hjelpe deg med å definere detaljene for policyer for over-/undertransaksjoner, slik at systemet kan bestemme hvordan overbehandlingen og underbehandlingen av varer behandles når de mottas.
 author: sherry-zheng
-manager: tfehr
 ms.date: 01/13/2021
 ms.topic: article
 ms.prod: ''
@@ -16,17 +15,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 9027d5dc73ebd78a65429f7bc63a1ebf8ef60dac
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: c7e75e39877b36e482dd4aaa5cc7c8f84d57d81b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500988"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5833743"
 ---
 # <a name="overunder-transactions"></a>Over-/undertransaksjoner
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Når ordrene i en sjøreise behandles, forventer systemet at vareantallet som mottas i det endelige destinasjonslageret, stemmer overens med antallet som er angitt på bestillingslinjene som er knyttet til sjøreisen. Ettersom det nøyaktige antallet på bestillingslinjene ikke alltid er mottatt på lageret, definerer imidlertid modulen **Netto innkjøpspris** et sett med regler som brukes til å håndtere overmottak og undermottak av varer. Disse reglene er spesielt viktige fordi den opprinnelige bestillingen er fakturert og ikke lenger kan endres. Ved å definere detaljene for policyer for over-/undertransaksjoner, kan systemet fastslå hvordan overbehandlingen og underbehandlingen av varer håndteres når de mottas. Du kan også manuelt styre over- og underlager ved å bruke siden **Over-/undertransaksjoner**.
 

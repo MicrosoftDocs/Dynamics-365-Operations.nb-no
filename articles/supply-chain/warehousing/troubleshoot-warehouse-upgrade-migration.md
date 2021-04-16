@@ -2,11 +2,9 @@
 title: Feilsøke oppgradering og overføring til avansert lagerstyring
 description: Dette emnet beskriver hvordan du løser vanlige problemer som kan oppstå mens du oppgraderer og overføre til avansert lagerstyring.
 author: perlynne
-manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: f5bfee31ce27e919086f978fb3ff88ca61a65eba
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 953b828667a01157767c3ca79349fe972b0fbe9b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5208093"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5826401"
 ---
 # <a name="troubleshoot-upgrade-and-migration-to-advanced-warehouse-management"></a>Feilsøke oppgradering og overføring til avansert lagerstyring
 
@@ -34,11 +32,11 @@ Dette emnet beskriver hvordan du løser vanlige problemer som kan oppstå mens d
 
 ### <a name="issue-description"></a>Problembeskrivelse
 
-Du får denne feilmeldingen i lagerappen, fordi selvsignerte sertifikater ikke er klarerte i lokale Android 8+-miljøer.
+Du får denne feilmeldingen i mobilappen Lagerstyring, fordi selvsignerte sertifikater ikke er klarerte i lokale Android 8+-miljøer.
 
 ### <a name="issue-resolution"></a>Problemløsning
 
-Bruk en ekstern (offentlig) sertifiseringsinstans (CA). En hurtigreparasjon for dette problemet er tilgjengelig i versjon 1.9.0.0 av lagerappen. Hvis du vil ha mer informasjon om dette problemet og hvordan du løser det, kan du se [Feilsøke tilkoblingsproblemer for lagerapp](troubleshoot-warehouse-app-connection.md).
+Bruk en ekstern (offentlig) sertifiseringsinstans (CA). En hurtigreparasjon for dette problemet er tilgjengelig i versjon 1.9.0.0 av lagerappen. Hvis du vil ha mer informasjon om dette problemet og hvordan du løser det, kan du se [Feilsøke tilkoblingsproblemer i mobilappen Lagerstyring](troubleshoot-warehouse-app-connection.md).
 
 ## <a name="what-is-the-approved-process-for-moving-from-basic-warehousing-to-advanced-warehousing"></a>Hva er den godkjente prosessen for flytting fra grunnleggende lager til avansert lagerstyring?
 

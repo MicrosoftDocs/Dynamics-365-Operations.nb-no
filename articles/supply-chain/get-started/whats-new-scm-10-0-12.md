@@ -2,11 +2,9 @@
 title: Hva er nytt eller endret i Dynamics 365 Supply Chain Management (10.0.12. august 2020)
 description: Dette emnet beskriver funksjoner som enten er nye eller endret i Dynamics 365 Supply Chain Management 10.0.12.
 author: kamaybac
-manager: tfehr
 ms.date: 05/29/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 8fdd831bd774f65e1737d5dec3046fa5ea978390
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 0513dffb6395eaf00f4c71df91938a5db6486daf
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5258977"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5832208"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10012-august-2020"></a>Hva er nytt eller endret i Dynamics 365 Supply Chain Management (10.0.12. august 2020)
 
@@ -47,11 +45,11 @@ Denne versjonen inneholder følgende funksjoner: Funksjonstitlene kobler til mer
 
 - [Viktig kunnskap om IoT-intelligens](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/iot-intelligence-core-insights) <br> - Hvis du vil ha mer informasjon, kan du se [Startside for IoT-intelligens](../iot/iot-intelligence-home-page.md).
 
-- [Forbedringer for nummerskiltmottak i lagerappen (fortsettelse)](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app-continued)<br> - Hvis du vil ha mer informasjon, se [Nummerskiltmottak via lagerappen](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
+- [Forbedringer for nummerskiltmottak i lagerappen (fortsettelse)](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app-continued)<br> - Hvis du vil ha mer informasjon, se [Nummerskiltmottak via mobilappen Lagerstyring](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
 
-- [Massedistribusjon for Warehouse Mobile App](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/mass-deployment-warehouse-mobile-app)<br> - Hvis du vil ha mer informasjon, kan du se [Oversikt over installasjon og konfigurasjon av lagerappen](../warehousing/install-configure-warehousing-app.md).
+- [Massedistribusjon for Warehouse Mobile App](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/mass-deployment-warehouse-mobile-app)<br> - Hvis du vil ha mer informasjon, kan du se [Installere og koble til mobilappen Lagerstyring](../warehousing/install-configure-warehouse-management-app.md).
 
-- [Maksimal utførelsestid for jobben Opprydding i beholdningsoppføringer for lagerstyring](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/maximum-execution-time-warehouse-management-on-hand-entries-cleanup-job)<br> - Hvis du vil ha mer informasjon, kan du se [Oppryddingsjobb for lagerstyringsposter](../warehousing/onhand-cleanup.md).
+- [Maksimal kjøringstid for jobben Opprydding i beholdningsoppføringer for lagerstyring](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/maximum-execution-time-warehouse-management-on-hand-entries-cleanup-job)<br> - Hvis du vil ha mer informasjon, kan du se [Oppryddingsjobb for lagerstyringsposter](../warehousing/onhand-cleanup.md).
 
 - [Støtte for planleggingsoptimalisering for kjøpsavtaler](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/planning-optimization-support-purchase-trade-agreements)<br> - Hvis du vil ha mer informasjon, kan du se [Hovedplanlegging med forretningsavtaler](../master-planning/planning-optimization/purchase-trade-agreement.md).
 

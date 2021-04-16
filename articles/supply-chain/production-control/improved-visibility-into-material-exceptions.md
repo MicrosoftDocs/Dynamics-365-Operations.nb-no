@@ -2,13 +2,11 @@
 title: Oversikt over materialeunntak
 description: Dette emnet beskriver hvordan du får bedre innsyn i unntak for råvarer for produksjonsordrer og partiordrer.
 author: johanhoffmann
-manager: tfehr
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: JmgShopSupervisorWorkspace, WHSProdWaveTableListPage
+ms.search.form: JmgShopSupervisorWorkspace, WHSProdWaveTableListPage, WHSProdWaveTableManageBOMPool
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 1705903
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 87f82733388501f2f902e7ebba8b547d9ae5ed16
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: d06bd5baeb6b8b6995fe1ae47f14bab458b8ecc2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5246171"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5831992"
 ---
 # <a name="visibility-into-material-exceptions"></a>Oversikt over materialeunntak
 
@@ -59,7 +57,11 @@ Når du velger flisen, åpnes **Frigi til lager**-siden. Denne siden viser antal
 
 Når en stykkliste- eller formellinje frigis, legges den til en ny produksjonsbølge eller en eksisterende åpen bølge, avhengig av konfigurasjonen av produksjonsbølgemalen. Gjennom konfigurasjonen av bølgemalen kan du også definere en bølge slik at den behandles automatisk når en stykkliste- eller formellinje frigis. Når bølgen er behandlet, genereres det lagerarbeid for råvareplukking. Hvis bølgemalen er konfigurert slik at bølger ikke behandles ved frigivelsen, forblir bølgen i en ubehandlet tilstand. Flisen **Ubehandlede bølger som krever oppmerksomhet** viser antallet stykkliste- og formellinjer som er frigitt til lageret på ubehandlede bølger, og som har en råvaredato som er tidligere enn eller lik arbeidsområdedatoen. Linjene må også brukes av en operasjonsressurs som brukes på filteret i arbeidsområdet.
 
-Når flisen er valgt, åpnes **Alle produksjonsbølger**-siden. Denne siden er filtrert etter hvor mange åpne bølger som inneholder bølgelinjer fra frigitte stykkliste- og formellinjer som oppfyller kriteriene for flisen. Fra **Alle produksjonsbølger**-siden kan du behandle bølgen manuelt.
+Når flisen er valgt, åpnes **Alle produksjonsbølger**-siden. Denne siden er filtrert etter hvor mange åpne bølger som inneholder bølgelinjer fra frigitte stykkliste- og formellinjer som oppfyller kriteriene for flisen.
+
+### <a name="manually-maintain-production-waves"></a>Vedlikehold produksjonsbølger manuelt
+
+På siden **Alle produksjonsbølger** kan du bruke knapper på **Bølge**-fanen i handlingsruten til å **behandle** og **frigi** en bølge manuelt. Du kan også bruke alternativet **Vedlikehold produksjoner** til å vise og vedlikeholde **Produksjonsstykklisteutvalg**-data, som brukes til å håndtere bølgeprosessen.
 
 ## <a name="open-warehouse-work-needing-attention"></a>Åpent lagerarbeid som krever oppmerksomhet
 

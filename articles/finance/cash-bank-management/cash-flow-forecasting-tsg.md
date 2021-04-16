@@ -2,11 +2,9 @@
 title: Feilsøke konfigurasjon av kontantstrømprognose
 description: Dette emnet inneholder svar på spørsmål du kan ha når du konfigurerer kontantstrømprognoser. Den omhandler ofte stilte spørsmål om oppsettet for kontantstrøm, oppdateringer for kontantstrøm og Power BI-kontantstrøm.
 author: panolte
-manager: AnnBe
-ms.date: 12/03/2020
+ms.date: 03/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerCovParameters
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2020-12-30
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: d1cde9321259753bd0cacab3706c7f8455598ff3
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 7b4760d7a0d0c14e2df8df20c2f81ec41e077cc0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5232495"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5827320"
 ---
 # <a name="troubleshoot-cash-flow-forecasting-setup"></a>Feilsøke konfigurasjon av kontantstrømprognose
 
@@ -47,11 +45,19 @@ Flere trinn må fullføres før kontantstrømprognoser kan vises i Power BI-visn
 
 ## <a name="why-did-cash-flow-power-bi-work-in-previous-versions-but-is-now-blank"></a>Hvorfor fungerte Power BI-kontantstrøm i tidligere versjoner, men er nå tom?
 
-Kontroller at målingene for "kontantstrømmåling V2" og "LedgerCovLiquidityMeasurement" fra enhetslager er konfigurert. Hvis du vil ha mer informasjon om hvordan du arbeider med enhetslager, kan du se [Power BI-integrering med enhetslager](../../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md). Kontroller at alle trinnene som er nødvendige for å vise Power BI-innhold, er fullført. Hvis du vil ha mer informasjon, kan du se [Power BI-innholdet Kontantstrømoversikt](Cash-Overview-Power-BI-content.md).
+Kontroller at målingene for "kontantstrømmåling V2" og "LedgerCovLiquidityMeasurement" fra enhetslager er konfigurert. Hvis du vil ha mer informasjon om hvordan du arbeider med data i enhetsbutikk, kan du se [Power BI-integrering med enhetslager](../../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md). Kontroller at alle trinnene som kreves for å vise Power BI-innhold, er fullført. Hvis du vil ha mer informasjon, kan du se [Power BI-innholdet Kontantstrømoversikt](Cash-Overview-Power-BI-content.md).
 
 ## <a name="have-the-entity-store-entities-been-refreshed"></a>Er enhetslagerenhetene oppdatert?
 
 Du må oppdatere enhetene regelmessig for å sikre at dataene er oppdatert og nøyaktige. Hvis du vil oppdatere en bestemt enhet manuelt, kan du gå til **Systemadministrasjon \> Oppsett \> Enhetslager**, velge enheten og deretter velge **Oppdater**. Dataene kan også oppdateres automatisk. Sett alternativet **Automatisk oppdatering aktivert** til **Ja** på siden **Enhetslager**.
 
+## <a name="which-calculation-method-should-be-used-when-calculating-cash-flow-forecasts"></a>Hvilken beregningsmetode skal brukes når kontantstrømprognoser beregnes?
+
+Beregningsmetoden for kontantstrømprognose har to viktige valgalternativer. Alternativet **Ny** vil beregne kontantstrømprognoser for nye dokumenter og dokumenter som er endret siden den siste satsvise jobben ble kjørt. Dette alternativet går raskere, fordi det behandler et mindre delsett med dokumenter. Alternativet **Totalt** beregner kontantstrømprognoser på nytt for hvert dokument i systemet. Dette alternativet tar mer tid, fordi det har mer arbeid å fullføre.
+
+### <a name="how-do-i-improve-the-performance-of-the-cash-flow-forecasting-recurring-batch-job"></a>Hvordan forbedrer jeg ytelsen til kontantstrømprognosene for gjentakende satsvis jobb?
+
+Vi anbefaler at du kjører kontantstrømprognosen én gang hver dag i perioder med mindre trafikk ved hjelp av **Ny beregning**-metoden. Vi anbefaler at du bruker denne fremgangsmåten seks dager i uken. Deretter kjører du en kontantstrømprognose én gang i uken med beregningsmetoden **Totalt** på dagen med minst aktivitet.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

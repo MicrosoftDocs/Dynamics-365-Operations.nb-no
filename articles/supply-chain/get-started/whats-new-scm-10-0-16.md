@@ -2,11 +2,9 @@
 title: Hva er nytt eller endret i Dynamics 365 Supply Chain Management 10.0.16 (februar 2021)
 description: Dette emnet beskriver funksjoner som enten er nye eller endret i Dynamics 365 Supply Chain Management 10.0.16.
 author: kamaybac
-manager: annbe
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-11-31
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: f9eb0685fcefe5d0734dc01fa82971958c3952d2
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 070e1a763977a9b5aad1a4f1336f6202f9f332cc
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5236081"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5829987"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10016-february-2021"></a>Hva er nytt eller endret i Dynamics 365 Supply Chain Management 10.0.16 (februar 2021)
 
@@ -35,11 +33,13 @@ Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynam
 
 ## <a name="features-included-in-this-release"></a>Funksjoner inkludert i denne versjonen
 
-Denne versjonen inneholder følgende funksjoner: Noen av funksjonene i listen er fortsatt i forhåndsversjon, mens andre kanskje allerede er allment tilgjengelige. Følg koblingene til [frigivelsesplanen](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) for å se de offisielle frigivelsesdatoene for hver funksjon.
+Denne versjonen inneholder følgende funksjoner: Følg koblingene til [frigivelsesplanen](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) for å se de offisielle frigivelsesdatoene for hver funksjon.
 
 - [Tilpassbart grensesnitt for produksjonsutførelse](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/customizable-shop-floor-execution-interface)<br> - Hvis du vil ha mer informasjon, kan du se [Definere en enhet for å kjøre grensesnittet for produksjonsutførelse](../production-control/production-floor-execution-setup.md).
 
 - [Tillegg for lagersynlighet for Dynamics 365 Supply Chain Management](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/inventory-visibility-add-in-dynamics-365-supply-chain-management-preview)<br> - Hvis du vil ha mer informasjon, kan du se [Tillegg for lagersynlighet](../inventory/inventory-visibility.md)
+
+- Enhetlig nummerserie for jobb-ID-er<br> - Hvis du vil ha mer informasjon, kan du se [Enhetlig nummerserie for jobb-ID-er](../production-control/unified-job-ids.md).
 
 - [Valider nummerskilter på kildedokumentlinjer](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/validate-license-plates-source-document-lines)<br> - Hvis du vil ha mer informasjon, kan du se [Oversikt over lagerkonfigurasjon](../warehousing/warehouse-configuration.md).
 
@@ -75,7 +75,7 @@ Vi har nylig lagt til eller betydelig oppdatert følgende hjelpeemner. De er ikk
 - [Feilsøke salgsordrer](../sales-marketing/troubleshooting-sales.md)
 - [Feilsøke salgstilbud](../sales-marketing/troubleshooting-salesquotation.md)
 - [Feilsøke oppgradering og overføring til avansert lagerstyring](../warehousing/troubleshoot-warehouse-upgrade-migration.md)
-- [Feilsøke tilkoblingsproblemer for lagerapp](../warehousing/troubleshoot-warehouse-app-connection.md)
+- [Feilsøke problemer med tilkobling til mobilappen Lagerstyring](../warehousing/troubleshoot-warehouse-app-connection.md)
 - [Feilsøk lagerkonfigurasjon](../warehousing/troubleshoot-warehouse-configuration.md)
 - [Feilsøke lageretterfylling](../warehousing/troubleshoot-warehouse-replenishment.md)
 - [Feilsøke lageroppsett](../warehousing/troubleshoot-warehouse-setup.md)
