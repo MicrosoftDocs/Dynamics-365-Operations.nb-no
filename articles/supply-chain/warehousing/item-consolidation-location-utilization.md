@@ -2,11 +2,9 @@
 title: Varekonsolidering – lokasjonsutnyttelse
 description: Dette emnet gir informasjon om funksjonalitet som gjør det enkelt for lagerledere å vise og filtrere volumbruk av lokasjoner på tvers av lageret. Ledere kan velge lokasjoner og opprette lagerflyttingsarbeid direkte fra siden for varekonsolidering for å konsolidere varer og dermed gjøre bedre bruk av lagerplass.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSPhysDimUOM, WHSMovementType, WHSItemConsolidationForm, WHSRFMenu, WHSRFMenuItem
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 3b20b41d27e5faeac7ea88940c086ae33390dc29
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 892190ea7bad34dfd308796b93a1828e0e8e11b9
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5217011"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835583"
 ---
 # <a name="item-consolidation---location-utilization"></a>Varekonsolidering – lokasjonsutnyttelse
 
@@ -149,7 +147,7 @@ Denne delen beskriver hvordan du kan klargjøre systemet til å bruke varekonsol
 
 ## <a name="example-scenario"></a>Eksempelscenario
 
-Følgende scenario bruker lagerappen på en mobilenhet for å lage en *justering inn* på to steder i lageret.
+Følgende scenario bruker mobilappen Lagerstyring for å lage en *justering inn* på to steder i lageret.
 
 ### <a name="add-inventory-to-locations"></a>Legge til lager på lokasjoner
 

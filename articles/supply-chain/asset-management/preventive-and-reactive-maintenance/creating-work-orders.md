@@ -2,11 +2,9 @@
 title: Opprette arbeidsordrer
 description: Dette emnet forklarer hvordan du oppretter arbeidsordrer i Aktivastyring.
 author: johanhoffmann
-manager: tfehr
 ms.date: 02/01/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetMaintenancePlan, EntAssetObjectCalendarListPage, EntAssetObjectCalendarListPagePoolsOpen
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 76306fb31e7e5297e6a5d64b97b5bd09b64349ee
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 3982232e5008d6f8c283d6cecfaf2fa6e66150a1
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500580"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5836740"
 ---
 # <a name="creating-work-orders"></a>Opprette arbeidsordrer
 
@@ -62,8 +60,6 @@ Følg denne fremgangsmåten for å opprette arbeidsordrer som er basert på vedl
 
 ## <a name="group-work-order-lines-that-are-automatically-created-while-a-maintenance-plan-runs"></a>Gruppere arbeidsordrelinjer som opprettes automatisk mens en vedlikeholdsplan kjører
 
-[!INCLUDE [preview-banner-section](../../../includes/preview-banner-section.md)]
-
 Med denne funksjonen kan du definere regler for gruppering av arbeidsordrelinjer under én arbeidsordre når systemet er konfigurert slik at det genererer arbeidsordrer automatisk, basert på en vedlikeholdsplan. Tidligere kunne automatisk genererte arbeidsordrer bare inneholde én linje. Nå kan du imidlertid gruppere arbeidsordrer etter for eksempel aktiva, aktivatype eller funksjonslokasjon. (Manuelt genererte arbeidsordrer kan allerede grupperes på denne måten, som beskrevet i den forrige delen i dette emnet.)
 
 ### <a name="enable-grouping-for-automatically-generated-work-orders"></a>Aktivere gruppering for automatisk genererte arbeidsordrer
@@ -71,7 +67,7 @@ Med denne funksjonen kan du definere regler for gruppering av arbeidsordrelinjer
 Før du kan bruke denne funksjonen, må den være aktivert i systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
 
 - **Modul:** *Aktivastyring*
-- **Funksjonsnavn:** *(Forhåndsversjon) Bruk regler for gruppering av arbeidsordrer mens en vedlikeholdsplan kjører*
+- **Funksjonsnavn:** *Bruk regler for gruppering av arbeidsordrer mens en vedlikeholdsplan kjører*
 
 ### <a name="set-up-grouping-for-automatically-generated-work-orders"></a>Konfigurere gruppering for automatisk genererte arbeidsordrer
 

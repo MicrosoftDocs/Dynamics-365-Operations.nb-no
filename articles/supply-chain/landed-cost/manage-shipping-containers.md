@@ -2,7 +2,6 @@
 title: Administrere forsendelsescontainere
 description: Dette emnet beskriver hvordan du arbeider med forsendelsescontainere. Forsendelsescontainere brukes til å gruppere varer som er fysisk gruppert sammen. De brukes også i tilfeller der kostnader bare må deles på tvers av disse varene, vanligvis fordi de er fysisk sammen.
 author: sherry-zheng
-manager: tfehr
 ms.date: 12/14/2020
 ms.topic: article
 ms.prod: ''
@@ -16,17 +15,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: e75deb5f4acd647408e93957bb99f04f548108f6
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.openlocfilehash: 9b42292194d40f6b0cc6203130bedc1fbb45eec8
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5501348"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5833815"
 ---
 # <a name="manage-shipping-containers"></a>Administrere forsendelsescontainere
 
 [!include [banner](../../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Forsendelsescontainere brukes til å gruppere varer som er fysisk gruppert sammen. De brukes også i tilfeller der kostnader bare må deles på tvers av disse varene, vanligvis fordi de er fysisk sammen.
 

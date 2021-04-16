@@ -2,11 +2,9 @@
 title: Installere og koble til mobilappen Lagerstyring
 description: Dette emnet beskriver hvordan du installerer mobilappen Lagerstyring på hver av mobilenhetene og konfigurerer den slik at den kobler til Microsoft Dynamics 365 Supply Chain Management-miljøet ditt.
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 02/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
 audience: Application User, IT Pro
@@ -18,20 +16,19 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e1e8c8b1464a38a0145cbdcdcb4882db00d3c4c1
-ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
+ms.openlocfilehash: 378fff6274902025b1fca487874f37ed30df25ed
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5487031"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835612"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Installere og koble til mobilappen Lagerstyring
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 > [!NOTE]
-> Dette emnet beskriver hvordan du konfigurerer mobilappen Lagerstyring. Hvis du ser etter informasjon om hvordan du konfigurerer den gamle lagerappen, kan du se [Installere og koble til lagerappen](../../supply-chain/warehousing/install-configure-warehousing-app.md).
+> Dette emnet beskriver hvordan du konfigurerer mobilappen Lagerstyring. Hvis du ser etter informasjon om hvordan du konfigurerer den gamle lagerappen (nå avskrevet), kan du se [Installer og koble til lagerappen](../../supply-chain/warehousing/install-configure-warehousing-app.md).
 
 Dette emnet beskriver hvordan du laster ned og installerer mobilappen Lagerstyring på hver av mobilenhetene, og hvordan du konfigurerer appen slik at den kobler til Supply Chain Management-miljøet ditt. Du kan konfigurere hver enhet manuelt, eller du kan importere tilkoblingsinnstillinger via en fil eller ved å skanne en QR-kode.
 

@@ -2,11 +2,9 @@
 title: Arbeidsbelastninger for lagerstyring for sky- og kantskalaenheter
 description: Dette emnet inneholder informasjon om funksjonen som gjør det mulig å kjøre valgte prosesser fra arbeidsbelastningen for lagerstyring.
 author: perlynne
-manager: tfeyr
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, SysSecRolesEditUsers
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 9b5d8c9e77fb98dfb7031a3868303970fe3bf865
-ms.sourcegitcommit: 4835acc3edacf8277937723d3f85a7875bd8de83
+ms.openlocfilehash: 6372e08b7ec737f3abd2f2bd5d4f387eaf869f03
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "5580971"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5832400"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Skalaenheter for sky og kant for arbeidsbelastninger for lagerstyring
 
@@ -70,7 +68,7 @@ Senteret eier følgende data:
 - Ordretilordning og utgående lastbehandling
 - Prosessene for frigivelse til lager, forsendelsesoppretting, bølgeoppretting og bølgesluttbehandling
 
-Skalaenhetene eier den faktiske bølgebehandlingen (for eksempel arbeidsfordeling, etterfyllingsarbeid og oppretting av behovsbetinget arbeid) etter frigivelsen av bølgen. Derfor kan lagerarbeidere behandle utgående arbeid ved å bruke en lagerapp som er knyttet til skalaenheten.
+Skalaenhetene eier den faktiske bølgebehandlingen (for eksempel arbeidsfordeling, etterfyllingsarbeid og oppretting av behovsbetinget arbeid) etter frigivelsen av bølgen. Derfor kan lagerarbeidere behandle utgående arbeid ved å bruke en Lagerstyring-mobilapp som er knyttet til skalaenheten.
 
 ![Bølgebehandlingsflyt](./media/wes-wave-processing-ga.png "Bølgebehandlingsflyt")
 
@@ -94,7 +92,7 @@ Du må logge på senteret for å bruke prosessen *Frigi til lager*. Gå til en a
 
 Når du bruker **Automatisk frigivelse av bestillinger**, kan du velge bestemte bestillingslinjer basert på en spørring. Et typisk scenario vil være å sette opp en gjentakende satsvis jobb som frigir alle bekreftede bestillingslinjer som forventes å ankomme neste dag.
 
-Arbeideren kan kjøre mottaksprosessen ved å bruke en lagerapp som er knyttet til skalaenheten. Dataene registreres deretter av skalaenheten, og de rapporteres mot den inngående lagerordren. Oppretting og behandling av etterfølgende plassering vil også bli behandlet av skalaenheten.
+Arbeideren kan kjøre mottaksprosessen ved å bruke en Lagerstyring-mobilapp som er knyttet til skalaenheten. Dataene registreres deretter av skalaenheten, og de rapporteres mot den inngående lagerordren. Oppretting og behandling av etterfølgende plassering vil også bli behandlet av skalaenheten.
 
 Hvis du ikke bruker prosessen *frigivelsen til lager*, og dermed ikke bruker *lagerordrer*, kan senteret behandle lagermottak og arbeidsbehandling uavhengig av skalaenheter.
 
@@ -117,10 +115,10 @@ Brukere som fungerer som lagerledere både på senteret og skalaenheter, bør ti
 Følgende lagerkjøringsprosesser kan aktiveres for en WES-arbeidsbelastning på en skalaenhet:
 
 - Valgte bølgemetoder for salgs- og overføringsordrer (tildeling, behovsetterfylling, containerbruk, arbeidsoppretting og bølgeetikettutskrift)
-- Behandle lagerarbeid for salgs- og overføringsordre ved hjelp av lagerappen (inkludert etterfyllingsarbeid)
-- Foreta spørringer i lagerbeholdningen ved hjelp av lagerappen
-- Opprette og kjøre lagerbevegelser ved hjelp av lagerappen
-- Registrere bestillinger og utføre plasseringsarbeid ved hjelp av lagerappen
+- Behandle lagerarbeid for salgs- og overføringsordre ved hjelp av mobilappen Lagerstyring (inkludert etterfyllingsarbeid)
+- Foreta spørringer i lagerbeholdningen ved hjelp av mobilappen Lagerstyring
+- Opprett og kjør lagerbevegelser ved hjelp av mobilappen Lagerstyring
+- Registrer bestillinger og utfør plasseringsarbeid ved hjelp av mobilappen Lagerstyring
 
 Følgende arbeidsordretyper støttes for øyeblikket for WES-arbeidsbelastninger på skalaenhetsdistribusjoner:
 
@@ -133,7 +131,7 @@ Følgende arbeidsordretyper støttes for øyeblikket for WES-arbeidsbelastninger
 Ingen andre typer behandling eller lagerarbeid for kildedokumenter støttes for øyeblikket på skalaenheter. For en WES-arbeidsbelastning på en skalaenhet kan du for eksempel ikke foreta et overføringsordremottak (overføringsmottak) eller behandle syklustellingsarbeid.
 
 > [!NOTE]
-> Menyelementer og knapper på mobilenheter for funksjoner som ikke støttes, vises ikke i _lagerappen_ når den er koblet til en skalaenhetsdistribusjon.
+> Menyelementer og knapper på mobilenheter for funksjoner som ikke støttes, vises ikke i _mobilappen Lagerstyring_ når den er koblet til en skalaenhetsdistribusjon.
 
 > [!WARNING]
 > Når du kjører en arbeidsbelastning på en skalaenhet, kan du ikke kjøre prosesser som ikke støttes for dette bestemte lageret, i senteret. Tabellene som vises senere i dette emnet, dokumenterer funksjonene som støttes.
@@ -164,7 +162,7 @@ Følgende lagerstyringsfunksjonalitet støttes ikke for øyeblikket for arbeidsb
 - Lagerarbeidsbehandling med forsendelsesmerknader
 - Lagerarbeidsbehandling med utløsing av syklustellingsterskel
 - Lagerarbeidsbehandling med materialhåndtering/lagerautomatisering
-- Bruk av avbildning av produktstandarddata (for eksempel i lagerappen)
+- Bruk av avbildning av produktstandarddata (for eksempel i mobilappen Lagerstyring)
 
 > [!WARNING]
 > Enkelte lagerfunksjoner blir ikke tilgjengelige for lagre som kjører arbeidsbelastninger for lagerstyring på en skalaenhet, og støttes heller ikke i senteret eller i arbeidsbelastningen for skalaenhet.
@@ -252,9 +250,9 @@ Følgende tabell viser hvilke funksjoner for lageroperatsjoner og unntaksbehandl
 | Endre lager                                   | Ja | Ja                          |
 | Bevegelse                                           | Ja | Ja                          |
 | Flytting etter mal                               | Ja | Ja                          |
-| Lageroverføring                                 | Ja | Nei                           |
-| Opprett overføringsordre fra lagerapp           | Ja | Nei                           |
-| Justering (inn/ut)                                | Ja | Nei                           |
+| Lageroverføring                                 | Ja | Ingen                           |
+| Opprett overføringsordre fra mobilappen Lagerstyring           | Ja | Ingen                           |
+| Justering (inn/ut)                                | Ja | Ingen                           |
 | Endring av beholdningsstatus                            | Ja | Nei                           |
 | Syklustelling og behandling av tellingsavvik | Ja | Nei                           |
 | Skrive ut etikett på nytt (nummerskilteutskrift)             | Ja | Ja                          |
