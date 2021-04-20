@@ -5,6 +5,8 @@
       items:
         - name: Nyheter eller endringer i Human Resources
           href: hr-admin-whats-new.md
+        - name: 5. april 2021
+          href: hr-whats-new-2021-04-05.md
         - name: 22. mars 2021
           href: hr-whats-new-2021-03-22.md
         - name: 8. mars 2021
@@ -87,7 +89,7 @@
               href: hr-admin-setup-update-process.md
         - name: Konfigurere dataintegrering
           items:
-            - name: Velge en dataintegreringsteknologi
+            - name: Velg en dataintegreringsteknologi
               href: hr-admin-integration-choose-technology.md
             - name: Vanlige spørsmål om begrensning
               href: hr-admin-integration-throttling-faq.md
@@ -95,13 +97,13 @@
               href: hr-admin-integration-common-data-service.md
             - name: Dataverse-tabeller
               href: hr-developer-entities.md
-            - name: Konfigurere virtuelle Dataverse-tabeller
+            - name: Konfigurer virtuelle Dataverse-tabeller
               href: hr-admin-integration-common-data-service-virtual-entities.md
             - name: Vanlige spørsmål om virtuelle tabeller for Human Resources
               href: hr-admin-virtual-entity-faq.md
-            - name: Konfigurere integrering med Finance
+            - name: Konfigurer integrering med Finance
               href: hr-admin-integration-finance.md
-            - name: Konfigurere integrering med Dayforce
+            - name: Konfigurer integrering med Dayforce
               href: hr-admin-integration-dayforce.md
             - name: Opprette en app for regelmessig dataeksport
               href: hr-admin-integration-recurring-data-export.md
@@ -113,9 +115,9 @@
                   href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/human-resources/toc.json
                 - name: Oppdatere enhetsdata i Excel
                   href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/human-resources/toc.json
-                - name: Opprette opplevelser for Åpne i Excel
+                - name: Opprett opplevelser for Åpne i Excel
                   href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/human-resources/toc.json
-                - name: Feilsøke Office-integrering
+                - name: Feilsøk Office-integrering
                   href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/human-resources/toc.json
         - name: Konfigurere databehandling
           items:
@@ -301,13 +303,15 @@
           href: hr-developer-custom-fields.md
         - name: Konfigurere dataintegrering
           items:
-            - name: Velge en dataintegreringsteknologi
+            - name: Velg en dataintegreringsteknologi
               href: hr-admin-integration-choose-technology.md
             - name: Konfigurer Dataverse-integrering
               href: hr-admin-integration-common-data-service.md
-            - name: Konfigurere integrering med Finance
+            - name: Konfigurer virtuelle Dataverse-tabeller
+              href: hr-admin-integration-common-data-service-virtual-entities.md
+            - name: Konfigurer integrering med Finance
               href: hr-admin-integration-finance.md
-            - name: Konfigurere integrering med Dayforce
+            - name: Konfigurer integrering med Dayforce
               href: hr-admin-integration-dayforce.md
             - name: Opprette en app for regelmessig dataeksport
               href: hr-admin-integration-recurring-data-export.md
@@ -317,10 +321,16 @@
                   href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json
                 - name: Oppdatere enhetsdata i Excel
                   href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Opprette opplevelser for Åpne i Excel
+                - name: Opprett opplevelser for Åpne i Excel
                   href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Feilsøke Office-integrering
+                - name: Feilsøk Office-integrering
                   href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Feilsøk utvikling med virtuelle Dataverse-tabeller
+          items:
+            - name: Optimaliser virtuelle Dataverse-tabellspørringer
+              href: hr-developer-optimize-virtual-table-queries.md
+            - name: Vanlige spørsmål om virtuelle tabeller for Human Resources
+              href: hr-admin-virtual-entity-faq.md
         - name: API-referanse for enhet
           items:
             - name: Godkjenning
@@ -419,13 +429,29 @@
                   href: hr-admin-integration-ats-api-screening-frequency-generate-from.md
                 - name: Kompetansenivåtype
                   href: hr-admin-integration-ats-api-skill-level-type.md
+        - name: API for lønnsintegrering
+          items:
+            - name: Innføring
+              href: hr-admin-integration-payroll-api-introduction.md
+            - name: Generer og gå gjennom lønnsenheter
+              href: hr-admin-integration-payroll-api-generate-review-entities.md
+            - name: Lønnsansatt
+              href: hr-admin-integration-payroll-api-payroll-employee.md
+            - name: Adresse til lønnsarbeider
+              href: hr-admin-integration-payroll-api-payroll-worker-address.md
+            - name: Fast kompensasjonsplan for lønn
+              href: hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md
+            - name: Lønnsstillingsjobb
+              href: hr-admin-integration-payroll-api-payroll-position-job.md
+            - name: Lønnsstilling
+              href: hr-admin-integration-payroll-api-payroll-position.md
     - name: Brukerveiledning
       items:
         - name: Oversikt
           href: hr-hrpro-overview.md
-        - name: Definere Human Resources
+        - name: Definer Human Resources
           items:
-            - name: Konfigurere parametere for Human Resources
+            - name: Konfigurer parametere for Human Resources
               href: hr-setup-parameters.md
             - name: Konfigurere delte parametere for Human Resources
               href: hr-setup-shared-parameters.md

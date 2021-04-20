@@ -4,7 +4,7 @@
       items:
         - name: Startside for Dynamics 365 Finance
           href: index.md
-        - name: Komme i gang
+        - name: Kom i gang
           items:
             - name: Før du kjøper
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/finance/toc.json
@@ -618,7 +618,7 @@
               href: general-ledger/Default-dimensions.md
             - name: Legge til finansdimensjoner i arbeidsområdet for økonomidirektøren
               href: general-ledger/CFO-workspace.md
-            - name: Opprette kontostrukturer
+            - name: Opprett kontostrukturer
               href: general-ledger/tasks/create-account-structures.md
             - name: Oversikt over budsjettering
               href: budgeting/basic-budgeting-overview-configuration.md
@@ -722,7 +722,7 @@
               href: expense-management/travel-req.md
             - name: Personlige utgifter i en reiseregningsrapport
               href: expense-management/personal-expenses.md
-        - name: Anleggsmidler
+        - name: Faste objekter
           items:
             - name: Startside for anleggsmidler
               href: fixed-assets/fixed-assets.md
@@ -930,11 +930,13 @@
                   href: general-ledger/set-up-default-descriptions-for-automatic-posting.md
                 - name: Kontosaldoer i økonomimodulen
                   href: general-ledger/general-ledger-account-balances.md
-                - name: Definere finansdimensjoner
+                - name: Definer finansdimensjoner
                   href: general-ledger/tasks/define-financial-dimensions.md
-                - name: Vedlikeholde standardmaler for finansdimensjon
+                - name: Vedlikehold standardmaler for finansdimensjon
                   href: general-ledger/tasks/maintain-financial-dimension-default-templates.md
-                - name: Opprette kontostrukturer
+                - name: Finansdimensjonssett
+                  href: general-ledger/financial-dimension-sets.md
+                - name: Opprett kontostrukturer
                   href: general-ledger/tasks/create-account-structures.md
                 - name: Finansdimensjoner og postering
                   href: general-ledger/default-dimensions.md
@@ -1408,44 +1410,72 @@
               href: public-sector/tasks/create-fund-type-public-sector.md
             - name: Legge til en sertifiseringstype for en leverandør i offentlig sektor
               href: public-sector/tasks/add-certification-type-vendor-public-sector.md
-            - name: Beregne kanadisk avstemt mva
+            - name: Beregne kanadisk avstemt mva.
               href: public-sector/Calculating-Canadian-Harmonized-sales-tax.md
         - name: Globalisering
           items:
             - name: Globaliseringsressurser
               href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/finance/toc.json
+            - name: Globaliseringstjenester
+              items:
+                - name: Oversikt over globaliseringstjenester
+                  href: localizations/globalization-services-overview.md
+                - name: Regulatory Configuration Service
+                  items:
+                    - name: Oversikt over Regulatory Configuration Service
+                      href: localizations/rcs-overview.md
+                    - name: Regulatory Configuration Service – globaliseringsfunksjoner
+                      href: localizations/rcs-globalization-feature.md
+                    - name: Opprett ER-konfigurasjoner i Regulatory Configuration Service og last dem opp til det globale repositoriet
+                      href: localizations/rcs-global-repo-upload.md
+                - name: Elektronisk fakturering
+                  items:
+                    - name: Oversikt over elektronisk fakturering
+                      href: localizations/e-invoicing-service-overview.md
+                    - name: Administrasjonskomponenter for elektronisk fakturering
+                      href: localizations/e-invoicing-service-administration.md
+                    - name: Konfigurer elektronisk fakturering i RCS (Regulatory Configuration Services)
+                      href: localizations/e-invoicing-configuration-rcs.md
+                    - name: Utsted elektroniske fakturaer i Finance og Supply Chain Management
+                      href: localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md
+                    - name: Opprett en Azure-lagringskonto og et Key Vault
+                      href: localizations/e-invoicing-create-azure-storage-account-key-vault.md
+                    - name: Kom i gang
+                      items:
+                        - name: Kom i gang med tjenesteadministrasjon for elektronisk fakturering
+                          href: localizations/e-invoicing-get-started-service-administration.md
+                        - name: Kom i gang med elektronisk fakturering
+                          href: localizations/e-invoicing-get-started.md
+                        - name: Kom i gang med elektronisk fakturering for Brasil
+                          href: localizations/e-invoicing-bra-get-started.md
+                        - name: Kom i gang med elektronisk fakturering for Egypt
+                          href: localizations/e-invoicing-eg-get-started.md
+                        - name: Kom i gang med elektronisk fakturering for Italia
+                          href: localizations/e-invoicing-ita-get-started.md
+                        - name: Kom i gang med elektronisk fakturering for Mexico
+                          href: localizations/e-invoicing-mex-get-started.md
+                        - name: Definer elektronisk fakturering
+                          href: localizations/e-invoicing-setup.md
+                    - name: Vanlige spørsmål om elektronisk fakturering
+                      href: localizations/e-invoicing-faq.md
+                - name: Avgiftsberegning
+                  items:
+                    - name: Oversikt over avgiftsberegning
+                      href: localizations/global-tax-calcuation-service-overview.md
+                    - name: Kom i gang med avgiftsberegning
+                      href: localizations/global-get-started-with-tax-calculation-service.md
+                    - name: Støtte for avgiftsfunksjon for overføringsordrer
+                      href: localizations/tasks/Tax-feature-support-for-transfer-order.md
+                    - name: Legg til datafelter i avgiftskonfigurasjoner
+                      href: localizations/tax-service-add-data-fields-tax-configurations.md
+                    - name: Legg til datafelter i avgiftsintegreringen ved hjelp av tillegg
+                      href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md
+                    - name: Flere mva-registreringsnumre
+                      href: localizations/emea-multiple-vat-registration-numbers.md
+                    - name: Konfigurer et miljø for hoveddataoppslag
+                      href: localizations/tax-service-set-up-environment-master-data-lookup.md
             - name: Forskriftsmessige oppdateringer
               href: localizations/regulatory-updates.md
-            - name: Elektronisk fakturering
-              items:
-                - name: Oversikt over elektronisk fakturering
-                  href: localizations/e-invoicing-service-overview.md
-                - name: Administrasjonskomponenter for elektronisk fakturering
-                  href: localizations/e-invoicing-service-administration.md
-                - name: Konfigurere elektronisk fakturering i RCS (Regulatory Configuration Services)
-                  href: localizations/e-invoicing-configuration-rcs.md
-                - name: Utstede elektroniske fakturaer i Finance og Supply Chain Management
-                  href: localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md
-                - name: Opprette en Azure-lagringskonto og et Key Vault
-                  href: localizations/e-invoicing-create-azure-storage-account-key-vault.md
-                - name: Komme i gang
-                  items:
-                    - name: Komme i gang med tjenesteadministrasjon for elektronisk fakturering
-                      href: localizations/e-invoicing-get-started-service-administration.md
-                    - name: Komme i gang med Elektronisk fakturering
-                      href: localizations/e-invoicing-get-started.md
-                    - name: Komme i gang med Elektronisk fakturering for Brasil
-                      href: localizations/e-invoicing-bra-get-started.md
-                    - name: Komme i gang med Elektronisk fakturering for Egypt
-                      href: localizations/e-invoicing-eg-get-started.md
-                    - name: Komme i gang med Elektronisk fakturering for Italia
-                      href: localizations/e-invoicing-ita-get-started.md
-                    - name: Komme i gang med Elektronisk fakturering for Mexico
-                      href: localizations/e-invoicing-mex-get-started.md
-                    - name: Definere Elektronisk fakturering
-                      href: localizations/e-invoicing-setup.md
-                - name: Vanlige spørsmål om Elektronisk fakturering
-                  href: localizations/e-invoicing-faq.md
             - name: Australia
               items:
                 - name: Oversikt over Australia
@@ -1468,6 +1498,8 @@
                   href: localizations/emea-aut-packing-material-fee-calculation.md
                 - name: Mva-oppgave
                   href: localizations/emea-aut-vat-statement-details.md
+                - name: Rapport for tjenester over grenser
+                  href: localizations/emea-aut-cross-border-services-report.md
             - name: Bahrain
               items:
                 - name: Oversikt over Bahrain
@@ -1486,13 +1518,15 @@
                   href: localizations/emea-bel-coda-bank-statement-import.md
                 - name: Opprette og overføre transaksjoner til BLWI
                   href: localizations/tasks/be-00011-create-transfer-blwi.md
-                - name: Eksportere finanstransaksjoner
+                - name: Eksporter finanstransaksjoner
                   href: localizations/emea-bel-export-ledger-transactions.md
                 - name: INTERVAT-avgiftsdeklarering
                   href: localizations/emea-bel-intervat-tax-declaration.md
                 - name: Avstemmingsrapporter
                   href: localizations/emea-bel-reconciliation-reports.md
-                - name: Definere rapportering for betalingssaldo
+                - name: Journalrapporter
+                  href: localizations/emea-bel-journal-reports.md
+                - name: Definer rapportering for betalingssaldo
                   href: localizations/tasks/be-00011-set-up-payment-balance-reporting.md
                 - name: Definer og vedlikehold PRODCOM
                   href: localizations/emea-bel-prodcom-report.md
@@ -1736,7 +1770,7 @@
                   href: localizations/czech-republic.md
                 - name: Kreditnota på kontantrabatt
                   href: localizations/emea-cze-credit-note-cash-discount.md
-                - name: Anleggsmidler
+                - name: Faste objekter
                   items:
                     - name: Avrunding av avskrivning
                       href: localizations/emea-cze-depreciation-rounding.md
@@ -2118,32 +2152,6 @@
                       href: localizations/ind-news-letter-10-0-13.md
                     - name: Nyheter eller endringer i 10.0.14
                       href: localizations/apac-ind-news-letter-10-0-14.md
-                - name: Anleggsmidler
-                  items:
-                    - name: Oversikt over anleggsmidler i India
-                      href: localizations/apac-ind-fixed-assets.md
-                    - name: Knytte en dagsbasert kalender til et anleggsmiddeltablå
-                      href: localizations/tasks/apac-ind-attach-day-based-calendar.md
-                    - name: Beregn skiftavskrivning
-                      href: localizations/tasks/apac-ind-shift-depreciation-rates.md
-                    - name: Opprette en lagermodellgruppe for kapitalvarer
-                      href: localizations/tasks/apac-ind-create-inventory-model-group.md
-                    - name: Opprette og postere avskrivning
-                      href: localizations/apac-ind-calculate-post-depreciation.md
-                    - name: Definere type skift og bransje for tablåer og knytte til anleggsmiddel
-                      href: localizations/tasks/apac-ind-books-shift-industry-types.md
-                    - name: Tilbakeføre anleggsmiddeltransaksjoner
-                      href: localizations/apac-ind-reverse-fixed-assets-transactions.md
-                    - name: Beregn skiftavskrivning
-                      href: localizations/apac-ind-calculation-shift-depreciation.md
-                    - name: Definere en dagsbasert økonomisk kalender
-                      href: localizations/tasks/apac-ind-day-based-calendar.md
-                    - name: Definere parametere for å beregne avskrivning
-                      href: localizations/tasks/apac-ind-set-up-depreciation.md
-                    - name: Angi anleggsmiddelgruppeavskrivning for avskrivningstablåer
-                      href: localizations/tasks/apac-ind-set-up-asset-group-dep.md
-                    - name: Overføring av kapitalvarer til anleggsmiddelet
-                      href: localizations/tasks/apac-ind-transfer-capital-items.md
                 - name: Indirekte avgifter
                   items:
                     - name: India GST
@@ -2300,11 +2308,15 @@
                                   href: localizations/apac-ind-GST-revise-advanced-payment-tax.md
                                 - name: Refunderinger for kundebetaling
                                   href: localizations/apac-ind-GST-customer-payment-refund.md
+                            - name: Prosjektstyringstransaksjoner
+                              items:
+                                - name: Prosjekttransaksjoner for Goods and Service Tax (GST)
+                                  href: localizations/apac-ind-gst-project-transactions.md
                             - name: Avgiftsjustering
                               items:
                                 - name: Justering av avgiftsbeløp
                                   href: localizations/apac-ind-GST-tax-adjustments.md
-                                - name: Opprette en avgiftsjournal
+                                - name: Opprett en avgiftsjournal
                                   href: localizations/apac-ind-GST-tax-journal.md
                             - name: Forespørsler for avgiftsdokument
                               items:
@@ -2330,12 +2342,38 @@
                       items:
                         - name: Inkludere GST ved beregning av avgiftsfradrag
                           href: localizations/apac-ind-GST-include-gst-calculating-tax-deductions.md
-                        - name: Inkludere GST ved beregning av avgiftsinnkrevinger
+                        - name: Inkluder GST ved beregning av avgiftsinnkrevinger
                           href: localizations/apac-ind-GST-include-gst-calculating-tax-collections.md
                         - name: Vanlige spørsmål om mva-terskler
                           href: localizations/apac-ind-tax-thresholds.md
                         - name: TCS på salg av varer
                           href: localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md
+                - name: Faste objekter
+                  items:
+                    - name: Oversikt over faste objekter i India
+                      href: localizations/apac-ind-fixed-assets.md
+                    - name: Knytt en dagsbasert kalender til et fast objekttablå
+                      href: localizations/tasks/apac-ind-attach-day-based-calendar.md
+                    - name: Beregn skiftavskrivning
+                      href: localizations/tasks/apac-ind-shift-depreciation-rates.md
+                    - name: Opprette en lagermodellgruppe for kapitalvarer
+                      href: localizations/tasks/apac-ind-create-inventory-model-group.md
+                    - name: Opprette og postere avskrivning
+                      href: localizations/apac-ind-calculate-post-depreciation.md
+                    - name: Definere type skift og bransje for tablåer og knytte til anleggsmiddel
+                      href: localizations/tasks/apac-ind-books-shift-industry-types.md
+                    - name: Tilbakeføre anleggsmiddeltransaksjoner
+                      href: localizations/apac-ind-reverse-fixed-assets-transactions.md
+                    - name: Beregn skiftavskrivning
+                      href: localizations/apac-ind-calculation-shift-depreciation.md
+                    - name: Definere en dagsbasert økonomisk kalender
+                      href: localizations/tasks/apac-ind-day-based-calendar.md
+                    - name: Definere parametere for å beregne avskrivning
+                      href: localizations/tasks/apac-ind-set-up-depreciation.md
+                    - name: Angi objektgruppeavskrivning for avskrivningstablåer
+                      href: localizations/tasks/apac-ind-set-up-asset-group-dep.md
+                    - name: Overføring av kapitalvarer til det faste objektet
+                      href: localizations/tasks/apac-ind-transfer-capital-items.md
             - name: Italia
               items:
                 - name: Oversikt over Italia
@@ -2798,7 +2836,7 @@
                       href: localizations/rus-incoming-VAT-restoring.md
                     - name: Behandle fakturaer for eksporthandel
                       href: localizations/rus-export-trade.md
-                - name: Anleggsmidler
+                - name: Faste objekter
                   items:
                     - name: Oversikt over anleggsmidler
                       href: localizations/rus-fixed-assets-overview.md
@@ -2958,11 +2996,13 @@
                       href: localizations/rus-cash-flow-tax-registers.md
                     - name: Registrer for vurderte utgifter
                       href: localizations/rus-rated-expenses-registers.md
+                    - name: Registre for leverandørgjeldskatt og gjeldsavskrivninger
+                      href: localizations/rus-accounts-payable-debt-tax-registers-and-debt-write-offs.md
             - name: Saudi-Arabia
               items:
                 - name: Oversikt over Saudi-Arabia
                   href: localizations/saudi-arabia.md
-                - name: Merverdiavgift
+                - name: Utgående merverdiavgift
                   href: localizations/apac-sau-sales-tax.md
                 - name: Zakat-rapportering for Saudi-Arabia
                   href: localizations/emea-sau-zakat-reporting.md
@@ -3034,19 +3074,25 @@
                   href: localizations/thailand.md
                 - name: Lagerkortrapporter
                   href: localizations/apac-tha-stock-card-reports.md
+                - name: Avgiftsfakturaer
+                  href: localizations/apac-tha-tax-invoices.md
                 - name: Avgiftsfaktura for erstatning/justering
                   href: localizations/apac-tha-substitution-and-adjustment-invoices.md
-                - name: Urealisert mva
+                - name: Urealisert mva.
                   href: localizations/apac-tha-unrealized-vat.md
-                - name: Dimensjoner for skatteavdeling
+                - name: Gjennomsnittlig mva. for innkjøpstransaksjoner
+                  href: localizations/apac-tha-average-vat-for-purchase-transactions.md
+                - name: Dimensjoner for avgiftsavdeling
                   href: localizations/apac-tha-tax-branch-dimensions.md
-                - name: Mva-rapport for salg
+                - name: Rapport for utgående mva.
                   href: localizations/apac-tha-sales-vat-report.md
+                - name: Gjennomsnittlig mva. for innkjøpstransaksjoner
+                  href: localizations/apac-tha-average-vat-for-purchase-transactions.md
                 - name: Kildeskatt
                   href: localizations/apac-tha-withholding-tax.md
             - name: De forente arabiske emirater (UAE)
               items:
-                - name: Definere og rapportere merverdiavgift (mva)
+                - name: Definer og rapporter merverdiavgift (mva.)
                   href: localizations/uae-vat-setup-reporting.md
             - name: Storbritannia
               items:
@@ -3086,9 +3132,9 @@
           items:
             - name: Oversikt over Human Resources
               href: ../fin-ops-core/fin-ops/hr/hr-landing-page.md
-            - name: Definere Human Resources
+            - name: Definer Human Resources
               items:
-                - name: Konfigurere parametere for Human Resources
+                - name: Konfigurer parametere for Human Resources
                   href: ../human-resources/hr-setup-parameters.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurere delte parametere for Human Resources
                   href: ../human-resources/hr-setup-shared-parameters.md?toc=/dynamics365/finance/toc.json
@@ -3865,17 +3911,19 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/dynamics365/finance/toc.json
                         - name: Opprette formater
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/dynamics365/finance/toc.json
-                        - name: Kjøre formater for å bruke dokumentbehandlingsfiler
+                        - name: Kjør formater for å bruke dokumentbehandlingsfiler
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/finance/toc.json
-                        - name: Endre og kjøre formater for å bruke dokumentbehandlingsfiler
+                        - name: Endre og kjør formater for å bruke dokumentbehandlingsfiler
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/finance/toc.json
-                    - name: Feilsøke datakilder
-                      href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/finance/toc.json
-                    - name: Bruke STREKKODE til å generere strekkodebilder
+                    - name: Bruk STREKKODE til å generere strekkodebilder
                       href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/finance/toc.json
-                - name: Konfigurere modelltilordninger
+                    - name: Konfigurer OPPSLAG-datakilder for å bruke ER-programspesifikke parametere
+                      href: ../fin-ops-core/dev-itpro/analytics/er-lookup-data-sources.md?toc=/dynamics365/finance/toc.json
+                    - name: Feilsøk datakilder
+                      href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/finance/toc.json
+                - name: Konfigurer modelltilordninger
                   items:
-                    - name: Konfigurere modelltilordninger for landkontekstavhengig ER
+                    - name: Konfigurer modelltilordninger for landkontekstavhengig ER
                       href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/finance/toc.json
                     - name: Administrere ER-modelltilordning i separate ER-konfigurasjoner
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/finance/toc.json
@@ -4033,7 +4081,7 @@
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/finance/toc.json
             - name: Åpne enhetsdata i Excel og oppdatere dem ved hjelp av Excel-tillegg
               href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/finance/toc.json
-            - name: Opprette opplevelser for Åpne i Excel
+            - name: Opprett opplevelser for Åpne i Excel
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/finance/toc.json
             - name: Legge til maler på menyen Åpne linjer i Excel
               href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/finance/toc.json
