@@ -228,6 +228,8 @@
                               href: data-entities/dual-write/party-gab.md
                             - name: Bruke Power Portal med partdatamodellen
                               href: data-entities/dual-write/party-gab-portal.md
+                            - name: Oppgrader til parten og den globale adressebokmodellen
+                              href: data-entities/dual-write/upgrade-party-gab.md
                             - name: Merknadsintegrering
                               href: data-entities/dual-write/notes-integration.md
                             - name: Tilordningsreferanse
@@ -708,15 +710,17 @@
                   href: dev-tools/projects.md
                 - name: Verktøytillegg for Visual Studio
                   href: dev-tools/developer-tools-add-ins.md
-                - name: Oppdatere utviklingsverktøyene for Visual Studio
+                - name: Oppdater utviklingsverktøyene for Visual Studio
                   href: dev-tools/update-development-tools.md
             - name: Programmeringsspråk for X++
               items:
                 - name: X++ og feilsøkerfunksjoner
                   href: dev-tools/new-x-debugger-features.md
-                - name: Feilsøke X++-kode
+                - name: Visual Studio 2017-krav for X++
+                  href: dev-tools/developer-tools-vs2017.md
+                - name: Feilsøk X++-kode
                   href: dev-tools/debug-xpp.md
-                - name: EventHandlerResult-klasser i forespørsels- eller svarscenarier
+                - name: EventHandlerResult-klasser i forespørsels- eller svarscenarioer
                   href: dev-tools/event-handler-result-class.md
                 - name: Skrive forretningslogikk ved hjelp av C#- og X++-kildekode
                   href: dev-tools/write-business-logic.md
@@ -1026,10 +1030,14 @@
                       href: perf-test/atl-faq.md
             - name: Datoeffektivitet
               href: dev-tools/date-effectivity.md
-            - name: ISV-lisensiering
-              href: dev-tools/isv-licensing.md
-            - name: ISV-lisensiering lokalt
-              href: dev-tools/isv-licensing-on-prem.md
+            - name: Utvikling for uavhengige programvareleverandører
+              items:
+                - name: Koble X++-moduler til pakker ved hjelp av ISV Studio
+                  href: dev-tools/isv-studio-solutions.md
+                - name: ISV-lisensiering
+                  href: dev-tools/isv-licensing.md
+                - name: ISV-lisensiering lokalt
+                  href: dev-tools/isv-licensing-on-prem.md
         - name: "EUs personvernforordning\_(GDPR)"
           items:
             - name: Oversikt over EUs personvernforordning (GDPR)
@@ -1136,16 +1144,16 @@
                   href: lifecycle-services/translation-service-overview.md
                 - name: Oversette brukergrensesnittfiler
                   href: lifecycle-services/use-translation-service.md
-                - name: Oversette dokumentasjonsfiler
+                - name: Oversett dokumentasjonsfiler
                   href: lifecycle-services/use-translation-service-ua.md
                 - name: Filer for oversettelsesminne
                   href: lifecycle-services/use-translation-service-tm.md
         - name: Microsoft Power Platform-integrering
           items:
+            - name: Microsoft Power Platform-integrering med Finance and Operations
+              href: power-platform/overview.md
             - name: Virtuelle enheter
               items:
-                - name: Microsoft Power Platform-integrering med Finance and Operations
-                  href: power-platform/overview.md
                 - name: Enhetsmodellering
                   href: power-platform/entity-modeling.md
                 - name: Håndtering av applivssyklus
@@ -1164,7 +1172,7 @@
           items:
             - name: Ressurser for mobil plattform
               href: mobile-apps/platform/mobile-platform-home-page.md
-            - name: Komme i gang
+            - name: Kom i gang
               items:
                 - name: Komme i gang med mobile platform
                   href: mobile-apps/platform/mobile-platform-getting-started.md
@@ -1450,15 +1458,17 @@
               href: /power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
             - name: Få støtte for Finance and Operations som styres av 21Vianet i Kina
               href: lifecycle-services/21vianet-support.md
-            - name: Konfigurere kundestøtte for Finance and Operations-apper
+            - name: Konfigurer kundestøtte for Finance and Operations-apper
               href: lifecycle-services/support-experience.md
             - name: Behandle kundestøtteopplevelser for Finance and Operations-apper
               href: lifecycle-services/cloud-powered-support-lcs.md
+            - name: Produksjonsstøtte og -overvåking
+              href: ../fin-ops/imp-lifecycle/production-support-monitoring.md
         - name: Systemadministrasjon
           items:
             - name: Startside for systemadministrasjon
               href: sysadmin/system-administration-home-page.md
-            - name: Legge til koblinger i juridiske vilkår og personvernerklæring
+            - name: Legg til koblinger i juridiske vilkår og personvernerklæring
               href: sysadmin/legal-terms-privacy-statement.md
             - name: Rapport for lisenskoder og konfigurasjonsnøkler
               href: sysadmin/license-codes-configuration-keys-report.md
