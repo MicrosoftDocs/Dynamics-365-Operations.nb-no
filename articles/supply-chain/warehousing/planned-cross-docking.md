@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 49807c90c145eee55fae2d515fd19925eb2d944c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 11e044e04e05c68af676bf97e6085e9975da5c1d
+ms.sourcegitcommit: bef7bd2aac00d7eb837fd275d383b7a5c3f1c1ee
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5810420"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "5911254"
 ---
 # <a name="planned-cross-docking"></a>Planlagt direkteoverføring
 
@@ -28,19 +28,21 @@ Dette emnet beskriver avansert, planlagt direkteoverføring. Planlagt direkteove
 
 Direkteoverføring la arbeiderne hoppe over den inngående plasseringen og utgående plukking av lageret som allerede er merket for en utgående ordre. Derfor reduseres antall ganger beholdningen berøres, der det er mulig. Fordi det i tillegg er mindre samhandling med systemet, økes tids- og plassbesparelsene på lageret.
 
-Før direkteoverføring kan kjøres, må brukeren konfigurere en ny direkteoverføringsmal der forsyningskilden og andre sett med krav for direkteoverføring er angitt. Når den utgående ordren opprettes, må linjen merkes mot en inngående ordre som inneholder den samme varen.
+Før du kan kjøre direkteoverføring, må du konfigurere en ny direkteoverføringsmal der forsyningskilden og andre sett med krav for direkteoverføring er angitt. Når den utgående ordren opprettes, må linjen merkes mot en inngående ordre som inneholder den samme varen. Du kan velge direktivkodefeltet i malen for direkteoverføring, på samme måte som du oppretter etterfylling og bestillinger.
 
 På tidspunktet for mottak av inngående ordre, identifiserer direkteoverføringsoppsettet automatisk behovet for direkteoverføring og oppretter bevegelsesarbeidet for det nødvendige antallet, basert på oppsettet til lokasjonsdirektivet.
 
 > [!NOTE]
-> Lagertransaksjoner avregistreres **ikke** når direkteoverføringsarbeid blir avbrutt, selv om innstillingen for denne funksjonen er aktivert i lagestyringsparametere.
+> Lagertransaksjoner avregistreres *ikke* når direkteoverføringsarbeid blir avbrutt, selv om innstillingen for denne funksjonen er aktivert i lagestyringsparametere.
 
 ## <a name="turn-on-the-planned-cross-docking-features"></a>Aktivere funksjonene for planlagt direkteoverføring
 
 Hvis systemet ikke allerede inneholder funksjonene som er beskrevet i dette emnet, kan du gå til [Funksjonsstyring](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere følgende funksjoner i følgende rekkefølge:
 
 1. *Planlagt direkteoverføring*
-2. *Kryssoverføringsmaler med lokasjonsdirektiver*
+1. *Kryssoverføringsmaler med lokasjonsdirektiver*
+    > [!NOTE]
+    > Ved hjelp av denne funksjonen kan **Direktivkode**-feltet angis i malen for direkteoverføring, på samme måte som du oppretter etterfyllingsmaler. Hvis du aktiverer denne funksjonen, kan du legge til en direktivkode på arbeidsmallinjene for direkteoverføring for den endelige *Plasser*-linjen. Dette sikrer at den endelige plasseringslokasjonen kan bestemmes under oppretting av arbeidsprosesser før du vurderer arbeidsmaler.
 
 ## <a name="setup"></a>Installasjon
 
@@ -88,9 +90,9 @@ Planlagt direkteoverføring er implementert som en lastposteringsmetode. Når du
 
         Dette alternativet angir om forsyningen skal valideres på nytt under mottak. Hvis dette alternativet er satt til *Ja*, kontrolleres både vinduet maksimal tid og området for utløpsdager.
 
-    - **Direktivkode** La dette feltet stå tomt
+    - **Direktivkode:** La dette feltet stå tomt
 
-        Ved hjelp av dette alternativet kan systemet bruke lokasjonsdirektiver til å bidra til å finne den beste lokasjonen å flytte lageret for direkteoverføring til. Du kan definere alternativet ved å tilordne en direktivkode til hver relevante direkteoverføringsmal. Hver direktivkode identifiserer et unikt lokasjonsdirektiv.
+        Dette alternativet aktiveres av funksjonen *Kryssoverføringsmaler med lokasjonsdirektiver*. Systemet bruker lokasjonsdirektiver til å bidra til å finne den beste lokasjonen å flytte lageret for direkteoverføring til. Du kan definere alternativet ved å tilordne en direktivkode til hver relevante direkteoverføringsmal. Hvis en direktivkode er angitt, søker systemet etter lokasjonsdirektiver per direktivkode når arbeid må genereres. På denne måten kan du begrense lokasjonsdirektiver som brukes for en bestemt direkteoverføringsmal.
 
     - **Validerer tidsvindu:** *Ja*
 

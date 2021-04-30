@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9d2d590c95aa4069a1bed306910486c47200cdfd
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a5befac6c72153332319eefc1aaeab30c33f4c69
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794859"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892257"
 ---
 # <a name="integration-with-finance-faq"></a>Vanlige spørsmål om integrasjon med Finance
 
@@ -50,7 +50,7 @@ Som standard er Dataverse-integreringen deaktivert i nye miljøer som ikke inneh
 
 ## <a name="can-i-create-a-new-mapping-without-using-the-templates"></a>Kan jeg opprette en ny tilordning uten å bruke malene?
 
-Malene er startpunktet. Du kan opprette din egen mal, men en mal er alltid nødvendig når du oppretter et prosjekt for integrasjon. Hvis du vil ha mer informasjon om dataintegrator (DI), maler og prosjekter, kan du se [Integrere data til Microsoft Dataverse](https://docs.microsoft.com/powerapps/administrator/data-integrator).
+Malene er startpunktet. Du kan opprette din egen mal, men en mal er alltid nødvendig når du oppretter et prosjekt for integrasjon. Hvis du vil ha mer informasjon om dataintegrator (DI), maler og prosjekter, kan du se [Integrere data til Microsoft Dataverse](/powerapps/administrator/data-integrator).
 
 ## <a name="can-i-map-financial-dimensions-to-transfer-between-human-resources-and-finance"></a>Kan jeg tilordne finansdimensjoner for å overføre mellom Human Resources og Finance?
 
@@ -145,7 +145,7 @@ Integreringen til Finance er en totrinns prosess. Først bekrefter du at Human R
 
 Hvis dataene ikke vises som forventet i Dataverse, må du kontrollere at enheten støttes i integreringen. Hvis du vil inkludere flere data i Dataverse, må en endring utføres på Microsoft-siden.
 
-Hvis enheten støttes og dataene er tilgjengelige i Dataverse, må du kontrollere tilordningen er riktig i Dataintegrator. Hvis integratoren ser ok ut, må du bekrefte at databehandlingsjobbene er kjørt. Feil kan oppstå under kjøring av satsvise jobber. Hvis du vil ha mer informasjon om Databehandling, kan du se [Databehandling](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json).
+Hvis enheten støttes og dataene er tilgjengelige i Dataverse, må du kontrollere tilordningen er riktig i Dataintegrator. Hvis integratoren ser ok ut, må du bekrefte at databehandlingsjobbene er kjørt. Feil kan oppstå under kjøring av satsvise jobber. Hvis du vil ha mer informasjon om Databehandling, kan du se [Databehandling](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json).
 
 ## <a name="the-addresses-for-my-employees-are-incorrect-after-i-import-them-into-finance-what-should-i-do"></a>Adressene til mine ansatte er feil når jeg importere dem til Finance. Hva gjør jeg?
 
@@ -172,15 +172,15 @@ Oppdater dataenhetene i Finance ved å gå til **Databehandling \> Rammeverkpara
 
 - Dataintegrator (DI): 
 
-  - [Integrere data til Microsoft Dataverse](https://docs.microsoft.com/powerapps/administrator/data-integrator)
+  - [Integrere data til Microsoft Dataverse](/powerapps/administrator/data-integrator)
 
-  - [Feiladministrasjon og feilsøking av dataintegrator](https://docs.microsoft.com/powerapps/administrator/data-integrator-error-management)
+  - [Feiladministrasjon og feilsøking av dataintegrator](/powerapps/administrator/data-integrator-error-management)
 
-  - [Svare på DSR-forespørsler om systemgenererte logger i Power Apps, Microsoft Power Automate og Dataverse](https://docs.microsoft.com/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
+  - [Svare på DSR-forespørsler om systemgenererte logger i Power Apps, Microsoft Power Automate og Dataverse](/powerapps/administrator/powerapps-gdpr-dsr-guide-systemlogs)
 
 - Databehandling:
 
-  - [Databehandling](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/fin-and-ops/toc.json)
+  - [Databehandling](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

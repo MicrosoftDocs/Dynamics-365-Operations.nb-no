@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: fa6a57266838fff4c34384337200fc6f24cbe640
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4b66fd7c0ca79f21ff51beee22e4fc57c37a1904
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821183"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909603"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10011-july-2020"></a>Hva er nytt eller endret i Dynamics 365 Supply Chain Management 10.0.11. (juli 2020)
 
@@ -33,19 +33,19 @@ Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynam
 
 ## <a name="features-included-in-this-release"></a>Funksjoner inkludert i denne versjonen
 
-Denne versjonen inneholder følgende funksjoner: Funksjonstitlene kobler til mer informasjon på [Utgivelsesplaner](https://docs.microsoft.com/dynamics365/release-plans/)-området. Flere koblinger peker mot ekstra dokumentasjon eller videoer som for øyeblikket er tilgjengelige for denne funksjonen. De fleste av disse funksjonene må aktiveres ved hjelp av [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) før du kan bruke dem.
+Denne versjonen inneholder følgende funksjoner: Funksjonstitlene kobler til mer informasjon på [Utgivelsesplaner](/dynamics365/release-plans/)-området. Flere koblinger peker mot ekstra dokumentasjon eller videoer som for øyeblikket er tilgjengelige for denne funksjonen. De fleste av disse funksjonene må aktiveres ved hjelp av [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) før du kan bruke dem.
 
-- [Lagring av rapport for lagerbeholdning](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/inventory-on-hand-report-storage)
+- [Lagring av rapport for lagerbeholdning](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/inventory-on-hand-report-storage)
 
-- [Forbedringer for nummerskiltmottak i lagerappen](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app)<br> - Hvis du vil ha mer informasjon, se [Nummerskiltmottak via mobilappen Lagerstyring](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
+- [Forbedringer for nummerskiltmottak i lagerappen](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app)<br> - Hvis du vil ha mer informasjon, se [Nummerskiltmottak via mobilappen Lagerstyring](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
 
-- [Forbedringer av linjereservasjon i skjemaet for partinummerreservasjon](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/line-reservation-enhancements-batch-number-reservation-form)<br> - Hvis du vil ha mer informasjon, kan du se [Reservere samme parti for en salgsordre](../sales-marketing/reserve-same-batch-sales-order.md).
+- [Forbedringer av linjereservasjon i skjemaet for partinummerreservasjon](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/line-reservation-enhancements-batch-number-reservation-form)<br> - Hvis du vil ha mer informasjon, kan du se [Reservere samme parti for en salgsordre](../sales-marketing/reserve-same-batch-sales-order.md).
 
-- [Nye dataenheter for produksjonsområdet](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
+- [Nye dataenheter for produksjonsområdet](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
 
-- [Overmottak for lastantall](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement)<br> - For mer informasjon, se [Lagerhåndtering av innkommende laster for bestillinger](../warehousing/inbound-load-handling.md).
+- [Overmottak for lastantall](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement)<br> - For mer informasjon, se [Lagerhåndtering av innkommende laster for bestillinger](../warehousing/inbound-load-handling.md).
 
-- [Rapportere som fullført på partinumre fra jobbkortenheten](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/report-as-finished-batch-numbers-job-card-device)<br> - For mer informasjon, se [Ferdigmelde fra jobbkortenheten](../production-control/report-finished-job-device.md).
+- [Rapportere som fullført på partinumre fra jobbkortenheten](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/report-as-finished-batch-numbers-job-card-device)<br> - For mer informasjon, se [Ferdigmelde fra jobbkortenheten](../production-control/report-finished-job-device.md).
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
@@ -61,7 +61,7 @@ Hvis du vil ha informasjon om feilrettinger som er inkludert i hver av oppdateri
 
 Er du spent på kommende og nylig utgitte tilleggspakkefunksjoner i våre bedriftsprogrammer eller -plattform?
 
-Se [Dynamics 365: 2020-frigivelsesbølge 1-planen](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/index). Vi har registrert alle detaljene, ende til ende, øverst til nederst, i et enkelt dokument som du kan bruke i planleggingen.
+Se [Dynamics 365: 2020-frigivelsesbølge 1-planen](/dynamics365-release-plan/2020wave1/index). Vi har registrert alle detaljene, ende til ende, øverst til nederst, i et enkelt dokument som du kan bruke i planleggingen.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Fjernede og avskrevne funksjoner i Supply Chain Management
 

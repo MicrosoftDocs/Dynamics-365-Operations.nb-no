@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 599f9728019cd6bc59c59a4f08df06c6c9c9ac31
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f70e377d6844b5c4f9201f0a561ad9cfcab2eda1
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798425"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890131"
 ---
 # <a name="applicant-tracking-system-integration-api-introduction"></a>Innføring i API for søkersporingssystemintegrering
 
@@ -45,21 +45,21 @@ Denne API-en er bygd på Microsoft Dataverse (tidligere kalt Common Data Service
 
 Hvis du vil ha mer generell informasjon om Microsoft Dataverse-web-API-en, kan du se:
 
-- [Hva er Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)
-- [Bruke Microsoft Dataverse-web-API-en](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview)
-- [Utviklerveiledning for Microsoft Dataverse](https://docs.microsoft.com/powerapps/developer/data-platform)
+- [Hva er Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)
+- [Bruke Microsoft Dataverse-web-API-en](/powerapps/developer/data-platform/webapi/overview)
+- [Utviklerveiledning for Microsoft Dataverse](/powerapps/developer/data-platform)
 
-Dokumentasjonen ovenfor inneholder detaljer og utviklerveiledning for bruk av web-API for Dataverse, for eksempel [administrasjon av godkjenning](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/authenticate-web-api), [utføre operasjoner](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/perform-operations-web-api), [bruke Postman med API-en](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/use-postman-web-api) og [bruker endringssporing eller deltatokener](https://docs.microsoft.com/powerapps/developer/data-platform/use-change-tracking-synchronize-data-external-systems) med API-en.
+Dokumentasjonen ovenfor inneholder detaljer og utviklerveiledning for bruk av web-API for Dataverse, for eksempel [administrasjon av godkjenning](/powerapps/developer/data-platform/webapi/authenticate-web-api), [utføre operasjoner](/powerapps/developer/data-platform/webapi/perform-operations-web-api), [bruke Postman med API-en](/powerapps/developer/data-platform/webapi/use-postman-web-api) og [bruker endringssporing eller deltatokener](/powerapps/developer/data-platform/use-change-tracking-synchronize-data-external-systems) med API-en.
 
 ### <a name="option-sets"></a>Alternativsett
 
-Datamodellen for ATS-integrerings-API-en som er beskrevet i dette dokumentet, inneholder alternativsett som inneholder opplistingsverdier som er knyttet til enhetsegenskaper. Hvis du vil ha detaljert informasjon om hvordan du arbeider med alternativsett i web-API for Dataverse, kan du se [Opprette og oppdatere alternativsett ved hjelp av web-API-en](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/create-update-optionsets). Alternativsett defineres for hvert Dataverse-miljø.
+Datamodellen for ATS-integrerings-API-en som er beskrevet i dette dokumentet, inneholder alternativsett som inneholder opplistingsverdier som er knyttet til enhetsegenskaper. Hvis du vil ha detaljert informasjon om hvordan du arbeider med alternativsett i web-API for Dataverse, kan du se [Opprette og oppdatere alternativsett ved hjelp av web-API-en](/powerapps/developer/data-platform/webapi/create-update-optionsets). Alternativsett defineres for hvert Dataverse-miljø.
 
 ### <a name="virtual-tables-for-human-resources-in-dataverse"></a>Virtuelle tabeller for Human Resources i Dataverse
 
 Sluttpunktene for ATS-integrerings-API-en bruker de virtuelle tabellplattformfunksjonene i Microsoft Dataverse. Som standard distribueres ikke de virtuelle tabellene og de tilknyttede API-sluttpunktene for Human Resources-miljøene, som gjør det mulig for organisasjoner å fastslå hvilke OData-sluttpunkter som vises for miljøet. For å kunne bruke API-en må de virtuelle tabellene for Human Resources-enhetene genereres for miljøet. 
 
-Hvis du vil ha informasjon om generering av de virtuelle tabellene for API, kan du se [Konfigurere virtuelle Dataverse-tabeller](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities).
+Hvis du vil ha informasjon om generering av de virtuelle tabellene for API, kan du se [Konfigurere virtuelle Dataverse-tabeller](./hr-admin-integration-common-data-service-virtual-entities.md).
 
 ## <a name="data-model"></a>Datamodell
 
@@ -134,8 +134,8 @@ Alternativsett:
 ## <a name="see-also"></a>Se også
 
 [Rekruttere jobbkandidater](hr-personnel-recruit.md)<br>
-[Hva er Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)<br>
-[Bruke Microsoft Dataverse-web-API-en](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/overview)<br>
-[Opprette og oppdatere alternativsett ved hjelp av web-API](https://docs.microsoft.com/powerapps/developer/data-platform/webapi/create-update-optionsets)<br>
+[Hva er Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)<br>
+[Bruke Microsoft Dataverse-web-API-en](/powerapps/developer/data-platform/webapi/overview)<br>
+[Opprette og oppdatere alternativsett ved hjelp av web-API](/powerapps/developer/data-platform/webapi/create-update-optionsets)<br>
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

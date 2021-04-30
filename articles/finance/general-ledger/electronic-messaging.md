@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 42896c85fe72690aadafb878eb7e899c6fe10c32
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: dd49edeb92e6a23723b1b6b6ea7800b69a81bd0f
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823794"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897606"
 ---
 # <a name="electronic-messaging"></a>Elektronisk meldingssystem
 
@@ -29,7 +29,7 @@ Myndigheter og lovgivende myndighetene i forskjellige land og områder over hele
 
 Funksjonen for elektroniske meldinger i Finance støtter forskjellige prosesser for elektronisk samhandling mellom Finance og systemene som myndigheter og juridiske myndigheter tilbyr for rapportering, sending og mottak av offisiell informasjon.
 
-Funksjonen for elektroniske meldinger er integrert i modulen **Elektronisk rapportering**-modulen (ER). Derfor kan du definere ER-formater for elektroniske meldinger. For mer informasjon, se [Elektronisk rapportering (ER)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting).
+Funksjonen for elektroniske meldinger er integrert i modulen **Elektronisk rapportering**-modulen (ER). Derfor kan du definere ER-formater for elektroniske meldinger. For mer informasjon, se [Elektronisk rapportering (ER)](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting).
 
 Elektroniske meldinger er basert på følgende enheter:
 
@@ -56,7 +56,7 @@ Funksjonen for elektroniske meldinger støtter følgende scenarioer:
 
 ## <a name="set-up-electronic-messaging"></a>Opprette elektroniske meldinger
 
-Elektroniske meldinger kan hjelpe deg med å opprettholde ulike elektroniske rapporteringsprosesser for ulike dokumenttyper. I enkelte komplekse tilfeller defineres elektroniske meldinger slik at de har en kombinasjon av mange meldingsstatuser, meldingselementstatuser, handlinger, tilleggsfelt og kjørbare klasser. Pakker med data enheter er tilgjengelige for import for disse scenarioene. Hvis du bruker disse dataenhetspakkene, bør du importere dem til en juridisk enhet ved hjelp av verktøyet for behandling av data. Hvis du vil ha mer informasjon om hvordan du bruker verktøyet for databehandling, kan du se [Databehandling](../../dev-itpro/data-entities/data-entities-data-packages.md).
+Elektroniske meldinger kan hjelpe deg med å opprettholde ulike elektroniske rapporteringsprosesser for ulike dokumenttyper. I enkelte komplekse tilfeller defineres elektroniske meldinger slik at de har en kombinasjon av mange meldingsstatuser, meldingselementstatuser, handlinger, tilleggsfelt og kjørbare klasser. Pakker med data enheter er tilgjengelige for import for disse scenarioene. Hvis du bruker disse dataenhetspakkene, bør du importere dem til en juridisk enhet ved hjelp av verktøyet for behandling av data. Hvis du vil ha mer informasjon om hvordan du bruker verktøyet for databehandling, kan du se [Databehandling](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).
 
 Hvis du ikke importerer en dataenhetspakke, kan du manuelt definere funksjonen Elektroniske meldinger. I dette tilfellet må du definere følgende elementer:
 

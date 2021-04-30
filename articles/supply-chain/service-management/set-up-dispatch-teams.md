@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 697f5c71182fbe675c02e13a2162d791d72ced06
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6d55bb294885a1ff2352ff65296145fd4fe32044
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835804"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909066"
 ---
 # <a name="set-up-dispatch-teams"></a>Definer fordelingsteam 
 
@@ -47,7 +47,7 @@ Dette emnet beskriver hvordan du oppretter et fordelingsteam. Når du har oppret
 
 
 > [!NOTE]
-> <P>Du kan tilordne en arbeider til dette fordelingsteamet i <STRONG>Arbeider</STRONG>-skjemaet. Hvis du vil ha mer informasjon om hvordan du tilordner en arbeider til et fordelingsteam, kan du se <A href="https://technet.microsoft.com/library/dn776288(v=ax.60)">Fordel arbeidere (skjema)</A>.</P>
+> <P>Du kan tilordne en arbeider til dette fordelingsteamet i <STRONG>Arbeider</STRONG>-skjemaet. Hvis du vil ha mer informasjon om hvordan du tilordner en arbeider til et fordelingsteam, kan du se <A href="/dynamicsax-2012//dispatch-workers-form">Fordel arbeidere (skjema)</A>.</P>
 
 
 

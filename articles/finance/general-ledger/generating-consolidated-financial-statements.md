@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 2db444d4a5e40c1bbfdab9e044aff43031b6e9f4
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0c0eab7b0b1325d18f77ab5b8c9704781beba856
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826696"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897870"
 ---
 # <a name="generate-consolidated-financial-statements"></a>Generere konsoliderte regnskapsoppgjør
 
@@ -34,7 +34,7 @@ Den enkleste metoden for å konsolidere ved hjelp av Finansrapportering er å br
 3. Opprett et rapporteringstre som inkluderer en rapporteringsnode for hvert firma som du bruker i konsoliderte rapporter.
 
 > [!TIP]
-> Hvis du vil ha mer informasjon om hvordan du oppretter og behandler raddefinisjoner, kolonnedefinisjoner og rapporteringstrær, se [Komponenter for finansrapport](../../dev-itpro/analytics/financial-report-components.md).
+> Hvis du vil ha mer informasjon om hvordan du oppretter og behandler raddefinisjoner, kolonnedefinisjoner og rapporteringstrær, se [Komponenter for finansrapport](../../fin-ops-core/dev-itpro/analytics/financial-report-components.md).
 
 Illustrasjonen nedenfor viser hvordan du kan bruke en definisjon for rapporteringstre i Finansrapport til å identifisere hvert enkelt firma som du vil konsolidere.
 

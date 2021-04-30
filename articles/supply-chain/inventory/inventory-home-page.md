@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2bdf4a1ae691e50f7e41374db6c2dde10b9329cb
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 40d443e52a2b781a40e2db1dbccd2351405ffff1
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809572"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909749"
 ---
 # <a name="inventory-management-overview"></a>Oversikt over beholdningsstyring
 
@@ -51,7 +51,7 @@ Gå til [Veikart for Microsoft Dynamics 365](https://roadmap.dynamics.com/) for 
 Hvis du vil finne ut mer, kan du se [Lagerlukking](../cost-management/inventory-close.md).
 
 ### <a name="manufacturing-and-supply-chain-management-blogs"></a>Blogger for produksjon og Supply Chain Management
-Du kan finne meninger, nyheter og annen informasjon om lagerstyring og andre løsninger, i [Dynamics AX Manufacturing R&D-teambloggen](https://blogs.msdn.microsoft.com/axmfg) og [Supply Chain Management i Dynamics AX R&D-teambloggen](https://blogs.msdn.microsoft.com/dynamicsaxscm).
+Du kan finne meninger, nyheter og annen informasjon om lagerstyring og andre løsninger, i [Dynamics AX Manufacturing R&D-teambloggen](/archive/blogs/axmfg/) og [Supply Chain Management i Dynamics AX R&D-teambloggen](https://blogs.msdn.microsoft.com/dynamicsaxscm).
 
 ### <a name="task-guides"></a>Oppgaveveiledninger
 Mer hjelp er tilgjengelig som oppgaveveiledninger. For å få tilgang til oppgaveveiledninger klikker du på **Hjelp**-knappen på en side

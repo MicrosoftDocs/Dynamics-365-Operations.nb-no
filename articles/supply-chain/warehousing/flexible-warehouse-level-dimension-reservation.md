@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 17ae3cc788c60917807acece2fc21f6c52d8ffe0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 13b81459fe3449a90839dac7637118f09afe2e55
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835684"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910239"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Fleksibel dimensjonsreservasjonspolicy for lagernivå
 
@@ -854,7 +854,7 @@ Følgende tabeller inneholder en oversikt som viser hvordan systemet håndterer 
 
 ## <a name="see-also"></a>Se også
 
-- [Partinumre i Lagerstyring](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/batch-numbers-in-warehouse-management)
+- [Partinumre i Lagerstyring](/dynamicsax-2012/appuser-itpro/batch-numbers-in-warehouse-management)
 - [Reservere samme parti for en salgsordre](../sales-marketing/reserve-same-batch-sales-order.md)
 - [Plukke eldste parti på en mobilenhet](pick-oldest-batch.md)
 - [Parti- og nummerskiltbekreftelse](batch-and-license-plate-confirmation.md)

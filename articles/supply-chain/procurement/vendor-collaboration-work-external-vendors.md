@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d8d2b1f98803bc159d3164d4a7c883e088ca7e56
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5f0ed7d3344b43c477923ebd8c69acfb6630e6f4
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837663"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910407"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>Leverandørsamarbeid med eksterne leverandører
 
@@ -33,7 +33,7 @@ Hvis du vil ha mer informasjon om hva eksterne leverandører kan gjøre i grense
 > [!NOTE]
 > Informasjonen om leverandørsamarbeid i dette emnet gjelder bare for gjeldende versjonen av Supply Chain Management. I Microsoft Dynamics AX 7.0 (februar 2016) og Microsoft Dynamics AX programversjon 7.0.1 (mai 2016) kan du samarbeide med leverandører ved hjelp av modulen **Leverandørportal**. Hvis du vil ha mer informasjon om modulen **Leverandørportal**, kan du se [Samarbeide med leverandører ved hjelp av leverandørportalen](collaborate-vendors-vendor-portal.md).
 
-Hvis du vil ha mer informasjon om hvordan leverandører kan bruke leverandørsamarbeid i faktureringsprosesser, kan du se [Arbeidsområde for leverandørsamarbeidsfakturering](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md). Hvis du vil ha informasjon om hvordan du klargjør en ny bruker for leverandørsamarbeid, kan du se[Administrere brukere av leverandørsamarbeid](manage-vendor-collaboration-users.md).
+Hvis du vil ha mer informasjon om hvordan leverandører kan bruke leverandørsamarbeid i faktureringsprosesser, kan du se [Arbeidsområde for leverandørsamarbeidsfakturering](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md). Hvis du vil ha informasjon om hvordan du klargjør en ny bruker for leverandørsamarbeid, kan du se[Administrere brukere av leverandørsamarbeid](manage-vendor-collaboration-users.md).
 
 ## <a name="defining-the-information-that-is-shown-to-vendors-when-they-respond-to-pos"></a>Definere informasjonen som vises til leverandører når de svarer på bestillinger
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 56ec9795f0eb8b15dd00578bf35739eaa9e3d086
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 266f94b6a32c88307258aa99f2ac0c6bf9c50a84
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818634"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897918"
 ---
 # <a name="evaluate-the-initial-customer-payment-prediction-model-preview"></a>Evaluere den opprinnelige forutsigelsesmodellen for kundebetaling (forhåndsversjon)
 
@@ -41,7 +41,7 @@ Denne koblingen tar deg til AI Builder, der du kan lære mer om den gjeldende mo
 
 Siden som åpnes, viser følgende informasjon:
 
-- I **Ytelse**-delen gir modellens ytelsesklasse et overslag over modellens kvalitet. Hvis du vil ha mer informasjon om denne klassen, kan du se [Ytelse for prognosemodell](https://docs.microsoft.com/ai-builder/prediction-performance) i veiviseren for AI Builder.
+- I **Ytelse**-delen gir modellens ytelsesklasse et overslag over modellens kvalitet. Hvis du vil ha mer informasjon om denne klassen, kan du se [Ytelse for prognosemodell](/ai-builder/prediction-performance) i veiviseren for AI Builder.
 - Delen **Data med mest innflytelse** viser hvor viktige forskjellige inndatatyper er for modellen din. Du kan evaluere denne listen og de tilsvarende prosentandelene for å fastslå om informasjonen samsvarer med det du vet om firmaet og markedet.
 
     [![Delene Ytelse og Data med mest innflytelse for forutsigelsesmodellen](./media/models.png)](./media/models.png)

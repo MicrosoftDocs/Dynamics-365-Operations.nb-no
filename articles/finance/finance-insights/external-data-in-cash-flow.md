@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2020-06-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 7d5768a6cb2b3623333fab93a42ac5840e87ec68
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: ddfc0670a5fca24d996e9ab605e267f9f3f26f19
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818627"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897894"
 ---
 # <a name="use-external-data-in-cash-flow-forecasts-preview"></a>Bruke eksterne data i kontantstrømprognoser (forhåndsversjon)
 
@@ -33,7 +33,7 @@ Eksterne data kan registreres eller importeres til kontantstrømprognoser. Dette
 
 Bruk kategorien **Ekstern kilde** på siden **Oppsett for kontantstrømprognose** (**Kontant- og bankbehandling \> Kontantstrømprognose**) for å angi innstillinger som støtter bruk av eksterne data i kontantstrømprognoser.
 
-Hvis du vil ha informasjon om oppsettet, se [Kontantstrømprognose](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/cash-flow-forecasting).
+Hvis du vil ha informasjon om oppsettet, se [Kontantstrømprognose](../cash-bank-management/cash-flow-forecasting.md).
 
 Hvis du vil angi eksterne data for kontantstrømprognoser, kan du bruke Åpne i Excel-opplevelsen for å registrere og endre eksterne data. Velg knappen **Eksterne data**, og velg deretter enten **Legg til eksterne data** eller **Rediger eksisterende eksterne data**. Når Microsoft Excel-filen åpnes, kan du angi informasjon i følgende felt:
 

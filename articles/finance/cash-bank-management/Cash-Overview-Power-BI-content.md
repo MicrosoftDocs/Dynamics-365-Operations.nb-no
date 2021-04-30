@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 794a8b19224858a690f2b857c0d7278ed177d531
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d070ddd350bc1ca9edb311cfd9f015aca1e7cc78
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5830598"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897458"
 ---
 # <a name="cash-overview-power-bi-content"></a>Power BI-innhold i Kontantstrømoversikt
 
@@ -38,7 +38,7 @@ Følgende oppsett må være fullført for at data skal kunne vises i Power BI-vi
 2. Gå til **Økonomi > Kalendere > Regnskapskalendere** for å validere regnskapskalenderdatoer som er tilordnet den aktive tidsperioden.
 3. Gå til **Økonomimodul > Oppsett > Finans** for å angi **Regnskapsvaluta** og **Type valutakurs**.
 4. Definer valutakurser mellom transaksjonsvalutaer og regnskapsvaluta, regnskapsvaluta og systemvaluta samt regnskapsvaluta og bankvalutaer. Du kan gjøre dette ved å gå til **Økonomimodul > Valutaer > Valutakurser**.
-5. Konfigurer og kjør kontantstrømprognoser. Hvis du vil ha mer informasjon om hvordan du definerer kontantstrømprognoser, kan du se [Kontantstrømprognose](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/cash-flow-forecasting). 
+5. Konfigurer og kjør kontantstrømprognoser. Hvis du vil ha mer informasjon om hvordan du definerer kontantstrømprognoser, kan du se [Kontantstrømprognose](./cash-flow-forecasting.md). 
 6. Gå til **Systemadministrasjon > Oppsett > Enhetslager** for å oppdatere den aggregerte målingen **LedgerCovLiquidityMeasurement**.
 
 ## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innholdet

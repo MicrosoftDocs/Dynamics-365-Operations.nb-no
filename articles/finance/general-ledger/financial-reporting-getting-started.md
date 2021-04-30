@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d37af06a33667f7cfe5df182d5197dee5edc912b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4de7f7f5f501024b7698736ded80405b9291cb58
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811296"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897042"
 ---
 # <a name="get-started-with-financial-reporting"></a>Komme i gang med Financial Reporting 
 
@@ -148,7 +148,7 @@ Problem 1: Rapportutforming starter ikke når du velger **Ny** eller **Rediger**
 * Under Internet Explorer velger du **Innstillinger**, og deretter velger du **Alternativer for Internett**. Velg **Sikkerhet**-kategorien. Velg Klarerte områder. I området merket Sikkerhetsnivå for denne sonen endrer du alternativet til **Middels–lavt**.
 * Deaktiver popup-blokkering i leseren.
 * Arbeidsstasjoner kreves for å installere Microsoft .NET Framework 4.6.2 eller senere. Denne versjonen av Microsoft .NET Framework kan lastes ned og installeres fra [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=53345).
-* Hvis du bruker Chrome-leseren, må du installere et ClickOnce-tillegg for å kunne laste ned Rapportutforming-klienten. Hvis du kjører Chrome i inkognitomodus, må du kontrollere at ClickOnce-tillegget er aktivert for inkognitomodus. Hvis du vil ha mer informasjon om Chrome ClickOnce-utvidelsen, kan du se [Systemkrav for skydistribusjoner](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/system-requirements).
+* Hvis du bruker Chrome-leseren, må du installere et ClickOnce-tillegg for å kunne laste ned Rapportutforming-klienten. Hvis du kjører Chrome i inkognitomodus, må du kontrollere at ClickOnce-tillegget er aktivert for inkognitomodus. Hvis du vil ha mer informasjon om Chrome ClickOnce-utvidelsen, kan du se [Systemkrav for skydistribusjoner](../../fin-ops-core/fin-ops/get-started/system-requirements.md).
 * Hvis du bruker Microsoft Edge med en Chrome-leser, trenger du ikke å installere et ClickOnce-tillegg for Edge Chromium. Du må imidlertid aktivere alternativet ClickOnce for å laste ned rapportformingsklienten. Hvis du kjører i inkognitomodus, må du kontrollere at ClickOnce-tillegget er aktivert for inkognitomodus.
      1. Åpne en ny nettleser i Microsoft Edge.
      2. Angi **edge://flags**, og velg **Enter**.

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 378fff6274902025b1fca487874f37ed30df25ed
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f46c5d4ec78a1e5ed708687e8da6eb379697d5f4
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835612"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908958"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Installere og koble til mobilappen Lagerstyring
 
@@ -50,7 +50,7 @@ Før du kan bruke appen, må en relatert funksjon aktiveres i systemet. Administ
 
 For mindre distribusjoner kan det ofte være lurt å installere appen på hver enhet fra den relevante butikken og deretter konfigurere tilkoblingen manuelt til miljøene du bruker.
 
-For større distribusjoner kan du automatisere distribusjon og/eller konfigurasjon av appen, noe som gjør det mer hensiktsmessig å administrere mange enheter. Du kan for eksempel bruke en administrasjonsløsning for mobilenhet og en administrasjonsløsning for mobilprogram, for eksempel [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune). Hvis du vil ha informasjon om hvordan du bruker Intune til å legge til apper, kan du se [Legge til apper i Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-add).
+For større distribusjoner kan du automatisere distribusjon og/eller konfigurasjon av appen, noe som gjør det mer hensiktsmessig å administrere mange enheter. Du kan for eksempel bruke en administrasjonsløsning for mobilenhet og en administrasjonsløsning for mobilprogram, for eksempel [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). Hvis du vil ha informasjon om hvordan du bruker Intune til å legge til apper, kan du se [Legge til apper i Microsoft Intune](/mem/intune/apps/apps-add).
 
 ### <a name="install-the-app-from-an-app-store"></a>Installere appen fra en appbutikk
 
@@ -65,10 +65,10 @@ Den enkleste måten å installere appen på én enhet på, er å installere den 
 Som et alternativ til å installere fra en appbutikk, kan du i stedet laste ned appen fra Microsoft App Center. App Center inneholder installerbare pakker du kan legge ved siden av. I tillegg til den gjeldende versjonen kan du også laste ned tidligere versjoner, og du kan få forhåndsvisningsversjoner med kommende funksjoner som du kan prøve ut. Hvis du vil laste ned gjeldende, tidligere eller forhåndsvise versjoner av lagerstyringsappen fra Microsoft App Center, bruker du én av følgende koblinger:
 
 - **Windows (UWP):** [Lagerstyring (Windows)](https://go.microsoft.com/fwlink/?linkid=2154406)  
-    Hvis du vil ha instruksjoner om hvordan du installerer en nedlastet pakke på en Windows-enhet og deretter konfigurerer de nødvendige sertifikatene, kan du se [Installere en build fra App Center](https://docs.microsoft.com/appcenter/distribution/installation).
+    Hvis du vil ha instruksjoner om hvordan du installerer en nedlastet pakke på en Windows-enhet og deretter konfigurerer de nødvendige sertifikatene, kan du se [Installere en build fra App Center](/appcenter/distribution/installation).
 
 - **Android:** [Lagerstyring (Android)](https://go.microsoft.com/fwlink/?linkid=2154613)  
-    Hvis du laster ned en forhåndsversjon, må du gå gjennom noen ekstra trinn for å installere den. Hvis du vil ha mer informasjon, kan du se [Teste Android-apper](https://docs.microsoft.com/appcenter/distribution/testers/testing-android).
+    Hvis du laster ned en forhåndsversjon, må du gå gjennom noen ekstra trinn for å installere den. Hvis du vil ha mer informasjon, kan du se [Teste Android-apper](/appcenter/distribution/testers/testing-android).
 
 ## <a name="create-a-web-service-application-in-azure-active-directory"></a><a name="create-service"></a>Opprette en webtjenesteapp i Azure Active Directory
 
@@ -103,11 +103,11 @@ For at mobilappen Lagerstyring skal kunne kommunisere med en bestemt Supply Chai
 
 Hvis du vil ha mer informasjon om hvordan du definerer webtjenesteapper i Azure AD, kan du se følgende ressurser:
 
-- Hvis du vil ha instruksjoner som viser hvordan du bruker Windows PowerShell til å konfigurere webtjenesteapper i Azure AD, kan du se [Fremgangsmåte: Bruke Azure PowerShell til å opprette en tjenestekontohaver med et sertifikat](https://docs.microsoft.com/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
+- Hvis du vil ha instruksjoner som viser hvordan du bruker Windows PowerShell til å konfigurere webtjenesteapper i Azure AD, kan du se [Fremgangsmåte: Bruke Azure PowerShell til å opprette en tjenestekontohaver med et sertifikat](/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
 - Hvis du vil ha fullstendig informasjon om hvordan du oppretter en webtjenesteapp manuelt i Azure AD, kan du se følgende emner:
 
-    - [Hurtigstart: Registrere en app med Microsoft-identitetsplattformen](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)
-    - [Fremgangsmåte: Bruke portalen til å opprette en Azure AD-app og tjenestekontohaver som har tilgang til ressurser](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal)
+    - [Hurtigstart: Registrere en app med Microsoft-identitetsplattformen](/azure/active-directory/develop/quickstart-register-app)
+    - [Fremgangsmåte: Bruke portalen til å opprette en Azure AD-app og tjenestekontohaver som har tilgang til ressurser](/azure/active-directory/develop/howto-create-service-principal-portal)
 
 ## <a name="create-and-configure-a-user-account-in-supply-chain-management"></a>Opprette og konfigurere en brukerkonto i Supply Chain Management
 
@@ -135,7 +135,7 @@ Godkjenning med Azure AD er en sikker metode for å koble en mobil enhet til Sup
 
 Sertifikater kan brukes som hemmeligheter for å bevise appens identitet når det bes om en token. Fellesdelen av sertifikatet lastes opp til appregistreringen i Azure-portalen, mens det fullstendige sertifikatet må distribueres på hver enhet der mobilappen Lagerstyring er installert. Organisasjonen din er ansvarlig for å administrere sertifikatet når det gjelder rotasjon og så videre. Du kan bruke selvsignerte sertifikater, men du bør alltid bruke sertifikater som ikke kan eksporteres.
 
-Du må angi at sertifikatet skal være tilgjengelig lokalt på hver enhet der du kjører mobilappen Lagerstyring. Hvis du vil ha informasjon om hvordan du behandler sertifikater for Intune-kontrollerte enheter hvis du bruker Intune, kan du se [Bruke sertifikater til godkjenning i Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/certificates-configure).
+Du må angi at sertifikatet skal være tilgjengelig lokalt på hver enhet der du kjører mobilappen Lagerstyring. Hvis du vil ha informasjon om hvordan du behandler sertifikater for Intune-kontrollerte enheter hvis du bruker Intune, kan du se [Bruke sertifikater til godkjenning i Microsoft Intune](/mem/intune/protect/certificates-configure).
 
 ## <a name="configure-the-application-by-importing-connection-settings"></a>Konfigurere appen ved å importere tilkoblingsinnstillinger
 

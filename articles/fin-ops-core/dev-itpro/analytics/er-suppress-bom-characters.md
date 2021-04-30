@@ -13,25 +13,25 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9fabc308b1b0682c6fdce3e81e7335417846bebd
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: d5ada93c0192aadac70c38c8c8c4f3af86ff6fc3
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743539"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893282"
 ---
 # <a name="design-er-configurations-to-suppress-bom-characters-in-generated-files"></a>Utforme ER-konfigurasjoner for å slette BOM-tegn i genererte filer
 
 [!include [banner](../includes/banner.md)]
 
-Du kan utforme en [løsning](er-quick-start1-new-solution.md) for [Elektronisk rapportering (ER)](general-electronic-reporting.md) for å generere utgående dokumenter. Hvis du vil generere dokumentene som tekst- eller XML-filer, må løsningen omfatte en ER-[konfigurasjon](general-electronic-reporting.md#Configuration) som inneholder en komponent for ER-[format](general-electronic-reporting.md#FormatComponentOutbound). Hvis du vil angi [tegnkodingen](https://docs.microsoft.com/windows/win32/intl/character-sets) som representerer tegnsettet i genererte filer, må ER-formatet inneholde formatelementet **Felles\\Fil**. Hvis du vil konfigurere ER-formatkomponenten, åpner du [utkast](general-electronic-reporting.md#component-versioning)versjonen av ER-konfigurasjonen i ER-formatutformingen og legger til elementet **Felles\\Fil**. I **Koding**-feltet angir du kodingen for utgående filer som genereres ved kjøretid ved hjelp av denne komponenten.
+Du kan utforme en [løsning](er-quick-start1-new-solution.md) for [Elektronisk rapportering (ER)](general-electronic-reporting.md) for å generere utgående dokumenter. Hvis du vil generere dokumentene som tekst- eller XML-filer, må løsningen omfatte en ER-[konfigurasjon](general-electronic-reporting.md#Configuration) som inneholder en komponent for ER-[format](general-electronic-reporting.md#FormatComponentOutbound). Hvis du vil angi [tegnkodingen](/windows/win32/intl/character-sets) som representerer tegnsettet i genererte filer, må ER-formatet inneholde formatelementet **Felles\\Fil**. Hvis du vil konfigurere ER-formatkomponenten, åpner du [utkast](general-electronic-reporting.md#component-versioning)versjonen av ER-konfigurasjonen i ER-formatutformingen og legger til elementet **Felles\\Fil**. I **Koding**-feltet angir du kodingen for utgående filer som genereres ved kjøretid ved hjelp av denne komponenten.
 
 > [!NOTE]
 > Hvis formatet inneholder feil kodingsnavn, oppstår det en feil når du lagrer endringene i innstillingene for formatet.
 
 ![Legge til et rotelement på Formatutforming-siden](./media/er-suppress-bom-characters-image1.gif)
 
-Hvis du angir **UTF-8**, **UTF-16** eller **UTF-32** som kodingen, blir alternativet **Slett BOM-tegn** tilgjengelig. Sett dette alternativet til **Ja** for å slette [merker for byterekkefølge (BOM-tegn)](https://docs.microsoft.com/globalization/encoding/byte-order-mark) i utgående filer som genereres ved kjøretid når det redigerbare ER-formatet kjøres.
+Hvis du angir **UTF-8**, **UTF-16** eller **UTF-32** som kodingen, blir alternativet **Slett BOM-tegn** tilgjengelig. Sett dette alternativet til **Ja** for å slette [merker for byterekkefølge (BOM-tegn)](/globalization/encoding/byte-order-mark) i utgående filer som genereres ved kjøretid når det redigerbare ER-formatet kjøres.
 
 > [!NOTE]
 > Hvis du lar **Koding**-feltet være tomt, brukes standard **UTF-8**-koding.

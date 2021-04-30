@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 9a1316de8d79f3ce34bb28812993d096cbd0c2ce
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fff3c3cfe5d0628fd4df6e719b72bc134c9d9c0a
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823415"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909457"
 ---
 # <a name="goods-in-transit-processing"></a>Behandling av varer i transitt
 
@@ -40,7 +40,7 @@ Når du aktiverer modulen **Netto innkjøpspris**, utvides enheten *Leveringsbet
 
 Når alternativet **Varer i transittstyring** er satt til *Ja* for gjeldende leveringsbetingelser, settes varene til lageret for varer i transitt. Denne handlingen utløses bare hvis lagermottaket ikke behandles før en faktura behandles. Når leveringsbetingelsene for en ordre er satt til å bruke varer i transitt, kan ikke brukere lenger postere en produktkvittering for bestillingen. Hvis de prøver, oppstår det en feil. Feilmeldingen angir at de må bruke funksjonaliteten for varer i transitt for å fortsette.
 
-Hvis du vil arbeide med leveringsbetingelser for varer i transitt, kan du gå til **Innkjøp og leverandører \> Oppsett \> Distribusjon \> Leveringsbetingelser**. Tabellen nedenfor beskriver feltene som modulen **Netto innkjøpspris** legger til på siden **Leveringsbetingelser** for å støtte funksjonaliteten for varer i transitt. Begge feltene er i hurtigfanen **Generelt**. Hvis du vil ha mer informasjon om de andre feltene på denne siden, kan du se [Leveringsbetingelser (skjema)](https://technet.microsoft.com/library/aa575567.aspx).
+Hvis du vil arbeide med leveringsbetingelser for varer i transitt, kan du gå til **Innkjøp og leverandører \> Oppsett \> Distribusjon \> Leveringsbetingelser**. Tabellen nedenfor beskriver feltene som modulen **Netto innkjøpspris** legger til på siden **Leveringsbetingelser** for å støtte funksjonaliteten for varer i transitt. Begge feltene er i hurtigfanen **Generelt**. Hvis du vil ha mer informasjon om de andre feltene på denne siden, kan du se [Leveringsbetingelser (skjema)](/dynamicsax-2012//terms-of-delivery-form).
 
 | Felt | beskrivelse |
 |---|---|
@@ -55,7 +55,7 @@ Netto innkjøpspris legger til to nye lagertyper: *varer i transitt* og *underle
 
 Lagertypen *Varer i transitt* vil bli tilknyttet lageret for varer i transitt, og dette lageret vil bli brukt til å behandle varene i transittordrer for varer i transitt før de mottas ved det endelige destinasjonslageret. Vanligvis er ett lager for varer i transitt nok for hvert område hvis Område og Lager er de eneste lagerdimensjonene som brukes til lagerstyring. Hvis lagerlokasjonsdimensjonen også brukes, må det defineres et lager for varer i transitt for hver kombinasjon av et område og et lager, slik at standardlokasjonen også kan angis.
 
-Hvis du vil arbeide med innstillinger for varer i transitt for lagrene, kan du gå til **Lagerstyring \> Oppsett \> Lageroppdeling \> Lagre**. Tabellen nedenfor beskriver feltene som modulen **Netto innkjøpspris** legger til på siden **Lagre** for å støtte funksjonaliteten for varer i transitt. Begge feltene vises i hurtigfanen **Generelt**. Hvis du vil ha informasjon om andre felter på siden, kan du se [Lagre (skjema)](https://technet.microsoft.com/library/aa620570.aspx).
+Hvis du vil arbeide med innstillinger for varer i transitt for lagrene, kan du gå til **Lagerstyring \> Oppsett \> Lageroppdeling \> Lagre**. Tabellen nedenfor beskriver feltene som modulen **Netto innkjøpspris** legger til på siden **Lagre** for å støtte funksjonaliteten for varer i transitt. Begge feltene vises i hurtigfanen **Generelt**. Hvis du vil ha informasjon om andre felter på siden, kan du se [Lagre (skjema)](/dynamicsax-2012//warehouses-form).
 
 | Felt | beskrivelse |
 |---|---|
@@ -109,7 +109,7 @@ Du kan også motta varer ved å opprette en ankomstjournal. Du kan opprette en a
     - **Opprett fra varer i transitt** – Sett dette alternativet til *Ja* for å ta antall fra de valgte transittlinjene for den valgte sjøreisen, containeren eller folioen.
     - **Opprett fra ordrelinjer** – Sett dette alternativet til *Ja* for å angi standardantallet i ankomstjournalen fra bestillingslinjene. Standardantallet i ankomstjournalen kan bare defineres på denne måten hvis antallet på bestillingslinjen samsvarer med antallet på ordren for varer i transitt.
 
-1. Behandle ankomstjournalen som beskrevet i [Registrere varemottak med en vareankomstjournal](https://technet.microsoft.com/library/aa571129.aspx).
+1. Behandle ankomstjournalen som beskrevet i [Registrere varemottak med en vareankomstjournal](/dynamicsax-2012/appuser-itpro/register-item-receipts-with-an-item-arrival-journal).
 
 > [!NOTE]
 > Ankomstjournalen brukes vanligvis i situasjoner der det brukes lokasjoner og parti-/seriesporing, men lagerstyring brukes ikke.
@@ -131,15 +131,14 @@ Netto innkjøpspris legger til følgende arbeidsopprettingsprosesser i menyeleme
 - Mottak av varer i transitt-vare
 - Mottak og plassering av vare for varer i transitt
 
-Konfigurasjonsinnstillingene for disse prosessene ligner innstillingene for [arbeidsopprettingsprosessene for mottak og plassering av bestillinger](https://technet.microsoft.com/library/dn553216.aspx). Prosessen *Mottak og plassering av vare for varer i transitt* legger også til følgende felt.
+Konfigurasjonsinnstillingene for disse prosessene ligner innstillingene for [arbeidsopprettingsprosessene for mottak og plassering av bestillinger](/dynamicsax-2012/appuser-itpro/configure-mobile-devices-for-warehouse-work). Prosessen *Mottak og plassering av vare for varer i transitt* legger også til følgende felt.
 
 - **Aktiver forsendelsescontainer fullført** – Hvis dette alternativet er satt til *Ja*, gir mobilappen Lagerstyring et tilleggsalternativ som kalles **Forsendelsescontainer fullført** når plasseringsarbeidet er fullført. Når det er merket av for dette alternativet, blir arbeideren bedt om å bekrefte at containeren er fullført. På dette tidspunktet behandles alle korte mottak som en undertransaksjon.
 
 ### <a name="location-directives"></a>Lokasjonsdirektiver
 
-Netto innkjøpspris legger til en ny arbeidsordretype med navnet *Varer i transitt* på siden **Lokasjonsdirektiver**. Denne arbeidsordretypen må konfigureres på samme måte som [arbeidsordretypene for bestillinger](https://technet.microsoft.com/library/dn553184.aspx).
+Netto innkjøpspris legger til en ny arbeidsordretype med navnet *Varer i transitt* på siden **Lokasjonsdirektiver**. Denne arbeidsordretypen må konfigureres på samme måte som [arbeidsordretypene for bestillinger](/dynamicsax-2012/appuser-itpro/create-a-work-template).
 
 ### <a name="work-templates"></a>Arbeidsmaler
 
-Netto innkjøpspris legger til en ny arbeidsordretype med navnet *Varer i transitt* på siden **Arbeidsmaler**. Denne arbeidsordretypen må konfigureres på samme måte som [arbeidsmaler for bestilling](https://technet.microsoft.com/library/dn553184.aspx).
-
+Netto innkjøpspris legger til en ny arbeidsordretype med navnet *Varer i transitt* på siden **Arbeidsmaler**. Denne arbeidsordretypen må konfigureres på samme måte som [arbeidsmaler for bestilling](/dynamicsax-2012/appuser-itpro/create-a-work-template).

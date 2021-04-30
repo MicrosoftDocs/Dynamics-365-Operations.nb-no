@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 42612a14b81f78199aa5678d6f8525e4bd87ca8c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1a884031905e59e7bfedab9af7b97a7c54e40895
+ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5819944"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5866308"
 ---
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Definisjoner av rapporteringstre i finansrapporter
 
@@ -52,9 +52,7 @@ En rapporteringstredefinisjonen inneholder kolonnene som er beskrevet i tabellen
 | Enhetsbeskrivelse      | Tittelen for rapporteringsenheten vises i topp- eller bunnteksten på rapporten hvis du angir **UnitDesc** som kode i fanen **Topptekst og bunntekst** i rapportdefinisjonen. Tittelen vises i radbeskrivelsen for rapporten hvis du angir **UnitDesc** i **Beskrivelse**-cellen for raddefinisjonen. |
 | Dimensjoner            | En rapporteringsenhet som henter informasjon direkte fra de økonomiske dataen. Den definerer den logisk plassering og lengdene for kontoen og tilknyttede segmenter. Hver rad for rapporteringsenhet må ha en dimensjon i denne kolonnen. Du kan også legge en dimensjon i en rad for sammendragsenhet (for eksempel for utgifter som er direkte relatert til denne enheten). Hvis du angir en dimensjon i en rad for sammendragsenhet, må kontoer som brukes i overordnede enheter ikke brukes i underordnede enheter. Hvis ikke, kan det hende beløpene blir duplisert. |
 | Raddefinisjoner       | Navnet på raddefinisjonen for rapporteringsenheten. Den samme raddefinisjonen brukes for hver enhet i rapporteringstreet. Når du genererer en rapport, brukes denne raddefinisjonen for hver rapporteringsenhet. Raddefinisjonen kan inneholde flere koblinger til finansdimensjoner. Hvis en raddefinisjon er angitt i rapporteringstreet, merker du av for **Bruk raddefinisjon fra rapporteringstre** i fanen **Rapport** i rapportdefinisjonen. |
-| Radkobling              | Radkoblingen som skal brukes for rapporteringsenheten. Radkoblinger defineres for raddefinisjonen for å identifisere finansdimensjonene det skal kobles til. |
-| Ekstern kobling         | Radkoblingen som skal brukes for denne rapporteringsenheten. Radkoblinger er definert for raddefinisjonen for å identifisere rapporten som skal kobles til. |
-| Ekstern fil         | Filbanen til regnearket for finansrapportering som det skal hentes data fra. |
+| Kobling til finansdimensjoner| Koblingen til finansdimensjoner som skal brukes for rapporteringsenheten. Koblinger til finansdimensjoner defineres for raddefinisjonen for å identifisere finansdimensjonene det skal kobles til. |
 | Sidealternativer          | Denne kolonnen angir om detaljene for rapporteringsenhet undertrykkes når rapporten vises eller skrives ut. |
 | Opprulling i %              | Prosentdelen av rapporteringsenheten som skal tilordnes til den overordnede enheten. Prosentdelen du angir i denne kolonnen, gjelder for hver rad i raddefinisjonen før verdien i raden legges til den overordnede rapporten. Hvis en underordnet enhet for eksempel skal deles likt mellom to avdelinger, blir beløpene i hver rad multiplisert med 50 prosent før verdien legges til i avdelingsrapporten. Én rapporteringsenhet kan ikke ha to overordnede enheter. Hvis du vil tilordne beløpene fra en rapportering til to overordnede enheter, kan du opprette en annen rapporteringsenhet som har samme dimensjon for å rulle opp de ekstra 50 prosentene. Skriv inn hele prosentdeler uten desimaltegn. **25** representerer for eksempel 25 prosent allokering til overordnet. Hvis du tar med et desimaltegn (**,25**), vil 0,25 prosent allokeres til overordnet. Hvis du vil bruke en prosentdel som er mindre enn én prosent, kan du bruke alternativet **Tillat opprulling &lt;1%** i rapportdefinisjonen. Dette alternativet er i fanen **Tilleggsalternativer** i dialogboksen **Rapportinnstillinger**. Du kan åpne denne dialogboksen fra **Annet**-knappen i fanen **Innstillinger** i rapportdefinisjonen. |
 | Enhetssikkerhet         | Begrensninger for brukere og grupper som har tilgang til informasjon for rapporteringsenheten. |
@@ -113,10 +111,10 @@ Hver rapporteringstredefinisjon vises i unike visninger. Det finnes en grafisk v
 
 Følgende typer rapporteringsenheter brukes i finansrapportering:
 
-- En detaljenhet henter informasjon direkte fra de økonomiske dataene, fra en Excel-regneark eller fra et annet regneark for finansrapportering.
+- En detaljenhet henter informasjon direkte fra de økonomiske dataene.
 - En sammendragsenhet summerer data fra enheter på lavere nivå.
 
-En overordnet rapporteringsenhet er en sammendragsenhet som samler sammendragsinformasjonen fra en detaljenhet. En sammendragsenhet kan være både en detaljenhet og en sammendragsenhet. Derfor kan en sammendragsenhet hente informasjon fra en enhet på lavere nivå, økonomiske data eller et Excel-regneark. En overordnet enhet kan være en underordnet enhet for en overordnet enhet på høyere nivå. En underordnet rapporteringsenhet kan være en detaljenhet som henter informasjon direkte fra de økonomiske dataene eller et Excel-regneark. En underordnet rapporteringsenhet kan også være en mellomliggende sammendragsenhet. Den kan med andre ord være den overordnede enheten for en enhet på et lavere nivå, og også den underordnede enheten for en sammendragsenhet på høyere nivå. I det vanligste scenariet for rapporteringsenheter har overordnede enheter en tom celle i kolonnen **Dimensjoner**, og underordnede enheter har koblinger til bestemte dimensjoner eller jokertegnkombinasjoner for dimensjoner.
+En overordnet rapporteringsenhet er en sammendragsenhet som samler sammendragsinformasjonen fra en detaljenhet. En sammendragsenhet kan være både en detaljenhet og en sammendragsenhet. Derfor kan en sammendragsenhet hente informasjon fra en enhet på lavere nivå eller økonomiske data. En overordnet enhet kan være en underordnet enhet for en overordnet enhet på høyere nivå. En underordnet rapporteringsenhet kan være en detaljenhet som henter informasjon direkte fra de økonomiske dataene. En underordnet rapporteringsenhet kan også være en mellomliggende sammendragsenhet. Den kan med andre ord være den overordnede enheten for en enhet på et lavere nivå, og også den underordnede enheten for en sammendragsenhet på høyere nivå. I det vanligste scenariet for rapporteringsenheter har overordnede enheter en tom celle i kolonnen **Dimensjoner**, og underordnede enheter har koblinger til bestemte dimensjoner eller jokertegnkombinasjoner for dimensjoner.
 
 ### <a name="organize-reporting-units"></a> Ordne rapporteringsenheter
 
@@ -162,25 +160,12 @@ Du kan hindre at bestemte brukere eller grupper får tilgang til en rapportering
 3. Velg et navn, og klikk deretter **Fjern** i dialogboksen **Enhetssikkerhet**.
 4. Klikk på **OK**.
 
-### <a name="link-to-reports"></a>Koble til rapporter
-
-Når du har opprettet en **rapportkolonne** i raddefinisjonen, og har angitt rapporten som skal tas med i rapporten, må du oppdatere rapporteringstreet med den koblede kolonnen og informasjonen om rapporten. En rapport kan importeres til enheter i rapporteringstreet.
-
-### <a name="identify-the-report-in-a-reporting-tree"></a>Identifisere rapporten i rapporteringstreet
-
-1. Åpne rapporteringstreet som skal endres i Rapportutforming.
-2. Informasjonscellene i **Raddefinisjoner**-kolonnen er basert på informasjonen for den valgte raden, fordi samme raddefinisjon må brukes i alle enheter i rapporteringstreet. Dobbeltklikk **Raddefinisjoner**-cellen, og velg deretter raddefinisjonen som inneholder informasjon om rapporten.
-3. I **Regnearkkobling**-cellen for rapporteringsenhet velger du koblingsnavnet som samsvarer med rapporten.
-4. I cellen **Bane til arbeidsbok eller rapport** for en rapporteringsenhet, skriver du inn navnet på rapporten eller går til den valgte rapporten.
-5. Hvis du vil angi et regneark i en rapport, skriver du inn navnet på regnearket i cellen **Regnearknavn**.
-6. Gjenta trinn 3 til 5 for alle rapporteringsenheter som skal motta data fra en rapport. Hvis du vil hindre at feil data vises i rapporten, må du passe på at de riktige rapportnavnene vises i den tilsvarende enheten i rapporteringstreet
-
 ## <a name="examples"></a>Eksempler
 ### <a name="reporting-unit-structure--example-1"></a>Struktur for rapporteringsenhet – Eksempel 1
 
 Her er strukturen for rapporteringsenhetene i følgende rapporteringstre:
 
-- Rapporteringsenheten Contoso Japan en overordnet enhet for de underordnede enhetene Contoso Japan Sales og Contoso Japan Consulting.
+- Rapporteringsenheten Contoso Japan er en overordnet enhet for de underordnede enhetene Contoso Japan Sales og Contoso Japan Consulting.
 - Avdelingsenheten Contoso Japan Sales er både en underordnet enhet for Contoso Japan-enheten og en overordnet enhet for enhetene Home Sales og Auto Sales.
 - Rapporteringsenhetene på det laveste nivået (Home Sales, Auto Sales, Client Services, and Operations) representerer avdelinger i de økonomiske dataen. Disse rapporteringsenhetene er i det skyggelagte området i diagrammet.
 - Sammendragsenhetene på høyere nivå summerer informasjon fra detaljenhetene.

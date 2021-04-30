@@ -2,7 +2,8 @@
 title: Butikkvelgermodul
 description: Dette emnet dekker butikkvelgermodulen og beskriver hvordan du legger den til områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 09/15/2020
+manager: annbe
+ms.date: 04/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +16,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e73338666c0bd8c0dc8df840b308ec758ee812dd
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 22ec78c8e0545698f05f8f8ec261b5e927d698c7
+ms.sourcegitcommit: 74f5b04b482b2ae023c728e0df0eb78305493c6a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798639"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "5853423"
 ---
 # <a name="store-selector-module"></a>Butikkvelgermodul
 
@@ -32,11 +33,32 @@ Kunder kan bruke butikkvelgermodulen til å hente frem et produkt i en valgt but
 
 Med butikkvelgermodulen kan brukere angi en lokasjon (by, delstat, adresse og så videre) for å søke etter butikker innen en søkeradius. Når modulen åpnes for første gang, brukes kundens nettleserposisjon til å finne butikker (hvis samtykke er gitt).
 
-## <a name="store-selector-module-usage-in-e-commerce"></a>Bruk av butikkvelgermodul i e-handel
+## <a name="store-selector-module-usage"></a>Bruk av butikkvelgermodul
 
 - En butikkvelgermodul kan brukes på en produktdetaljside (PDP) til å velge en butikk for plukking.
 - En butikkvelgermodul kan brukes på en handlevognside til å velge en butikk for plukking.
 - En butikkvelgermodul kan brukes på en frittstående side som viser alle tilgjengelige butikker.
+
+## <a name="fulfillment-group-setup-in-commerce-headquarters"></a>Konfigurasjon av oppfyllelsesgrupper i Commerce Headquarters
+
+For at butikkvelgeren skal vise tilgjengelige butikker, må oppfyllelsesgruppen være definert i Commerce Headquarters. Hvis du vil ha mer informasjon, kan du se [Definere oppfyllelsesgrupper](customer-orders-overview.md#set-up-fulfillment-groups).
+
+I tillegg må breddegrad og lengdegrad for butikklokasjonen være definert i hovedkontoret for hver butikk i oppfyllelsesgruppen.
+
+Hvis du vil angi bredde- og lengdegrad for en butikklokasjon i Commerce Headquarters, gjør du følgende.
+
+1. Gå til **Lagerstyring \> Oppsett \> Lageroppdeling**.
+1. Velg lagerlokasjonen i den venstre ruten.
+1. På hurtigfanen **Adresser** velger du **Avansert**.
+
+    ![Eksempel på butikkdetaljer i hovedkontoret](./media/Store-address.png)
+
+1. I handlingsruten velger du **Rediger**.
+1. På hurtigfanen **Generelt** angir du verdier for **Breddegrad** og **Lengdegrad**.
+
+    ![Eksempel på oppsett av breddegrad og lengdegrad for en butikk i hovedkontoret](./media/Store-latitude-longitude.png)
+
+1. Velg **Lagre** i handlingsruten. 
 
 ## <a name="bing-maps-integration"></a>Bing Maps-integrering
 
@@ -48,6 +70,7 @@ Når det gjelder REST API-et for autoforslag, må du kontrollere at følgende UR
 - For direktivet **img-src** legger du til **&#42;.virtualearth.net**.
 - For direktivet **script-src** **legger du til  &#42;.bing.com, &#42;.virtualearth.net**.
 - For direktivet **script style-src** legger du til **&#42;.bing.com**.
+
  
 ## <a name="pickup-in-store-mode"></a>Hent i butikk-modus
 

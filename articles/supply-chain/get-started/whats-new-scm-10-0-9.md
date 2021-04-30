@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-02-19
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: f50636eaf633820e5cf746e2c5ee818cf670616b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fdfe4d5042e0a6a7948a09334dc675e210e765a1
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813153"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909821"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1009-april-2020"></a>Hva er nytt eller endret i Dynamics 365 Supply Chain Management 10.0.9. (april 2020)
 
@@ -33,67 +33,67 @@ Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynam
 
 ## <a name="features-included-in-this-release"></a>Funksjoner inkludert i denne versjonen
 
-Denne versjonen inneholder følgende funksjoner: Funksjonstitlene kobler til mer informasjon på [Utgivelsesplaner](https://docs.microsoft.com/dynamics365/release-plans/)-området. Flere koblinger peker mot ekstra dokumentasjon eller videoer som for øyeblikket er tilgjengelige for denne funksjonen. Noen av disse funksjonene kan også ha blitt tatt med i en tidligere inkrementell versjon, men ble ikke annonsert i tidligere *Hva er nytt*-emne, så vi legger dem til her. De fleste av disse funksjonene må aktiveres ved hjelp av [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) før du kan bruke dem.
+Denne versjonen inneholder følgende funksjoner: Funksjonstitlene kobler til mer informasjon på [Utgivelsesplaner](/dynamics365/release-plans/)-området. Flere koblinger peker mot ekstra dokumentasjon eller videoer som for øyeblikket er tilgjengelige for denne funksjonen. Noen av disse funksjonene kan også ha blitt tatt med i en tidligere inkrementell versjon, men ble ikke annonsert i tidligere *Hva er nytt*-emne, så vi legger dem til her. De fleste av disse funksjonene må aktiveres ved hjelp av [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) før du kan bruke dem.
 
-- [Avansert lastplanlegging under en bølge](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/advanced-load-building-during-wave)<br> - Hvis du vil ha mer informasjon, kan du se [Avansert lastplanlegging under bølge](../warehousing/advanced-load-building-during-wave.md).
+- [Avansert lastplanlegging under en bølge](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/advanced-load-building-during-wave)<br> - Hvis du vil ha mer informasjon, kan du se [Avansert lastplanlegging under bølge](../warehousing/advanced-load-building-during-wave.md).
 
-- [Automatisk frigivelse av forsendelse for kryssoverføring](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/auto-release-shipment-cross-dock)<br> - Hvis du vil ha mer informasjon, kan du se [Automatisk frigivelse av forsendelse for direkteoverføring](../warehousing/auto-release-shipment-for-cross-docking.md).
+- [Automatisk frigivelse av forsendelse for kryssoverføring](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/auto-release-shipment-cross-dock)<br> - Hvis du vil ha mer informasjon, kan du se [Automatisk frigivelse av forsendelse for direkteoverføring](../warehousing/auto-release-shipment-for-cross-docking.md).
 
-- [Beregn leveringsdato for bestilling basert på leveringstider og arbeidsdager (offentlig sektor)](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/calculate-po-delivery-date-based-lead-times-working-days-public-sector)
+- [Beregn leveringsdato for bestilling basert på leveringstider og arbeidsdager (offentlig sektor)](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/calculate-po-delivery-date-based-lead-times-working-days-public-sector)
 
-- [Produktbehandling for faktisk vekt med lagerstyring](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/catch-weight-product-processing-warehouse-management)<br> - Hvis du vil ha mer informasjon, kan du se [Behandling av Faktisk vekt-produkt med lagerstyring](../warehousing/catch-weight-processing.md) og videoen [Forbedringer av faktisk vekt-produkter](https://www.microsoft.com/videoplayer/embed/RE4jzx8).
+- [Produktbehandling for faktisk vekt med lagerstyring](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/catch-weight-product-processing-warehouse-management)<br> - Hvis du vil ha mer informasjon, kan du se [Behandling av Faktisk vekt-produkt med lagerstyring](../warehousing/catch-weight-processing.md) og videoen [Forbedringer av faktisk vekt-produkter](https://www.microsoft.com/videoplayer/embed/RE4jzx8).
 
-- [Sammenligning av lagervarepriser](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/compare-item-price-storage)<br> - Hvis du vil ha mer informasjon, se [Rapport for sammenligning av lagervarepriser](../cost-management/compare-item-price.md).
+- [Sammenligning av lagervarepriser](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/compare-item-price-storage)<br> - Hvis du vil ha mer informasjon, se [Rapport for sammenligning av lagervarepriser](../cost-management/compare-item-price.md).
 
-- [Konsolider forsendelsesforbedringer](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/consolidate-shipment-enhancements)
+- [Konsolider forsendelsesforbedringer](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/consolidate-shipment-enhancements)
 
-- [Direkteoverføring](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/planned-cross-docking)<br> - Hvis du vil ha mer informasjon, se videoen [Planlagt direkteoverføring](https://www.microsoft.com/videoplayer/embed/RE4f7LF).
+- [Direkteoverføring](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/planned-cross-docking)<br> - Hvis du vil ha mer informasjon, se videoen [Planlagt direkteoverføring](https://www.microsoft.com/videoplayer/embed/RE4f7LF).
 
-- Ytterligere faktisk vekt-integrering [10.0.1](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.1), [10.0.2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.2), [10.0.3](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.3), [10.0.4](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.4), [10.0.5](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.5), [10.0.6](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.6), [10.0.7](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.7)<br> - Hvis du vil ha mer informasjon, kan du se [Behandling av Faktisk vekt-produkt med lagerstyring](../warehousing/catch-weight-processing.md) og videoen [Forbedringer av faktisk vekt-produkter](https://www.microsoft.com/videoplayer/embed/RE4jzx8).
+- Ytterligere faktisk vekt-integrering [10.0.1](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.1), [10.0.2](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.2), [10.0.3](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.3), [10.0.4](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.4), [10.0.5](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.5), [10.0.6](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.6), [10.0.7](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/further-catch-weight-integration-10.0.7)<br> - Hvis du vil ha mer informasjon, kan du se [Behandling av Faktisk vekt-produkt med lagerstyring](../warehousing/catch-weight-processing.md) og videoen [Forbedringer av faktisk vekt-produkter](https://www.microsoft.com/videoplayer/embed/RE4jzx8).
 
-- [Integrasjon av anleggsmidler med livsløp for aktivabehandling](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/fixed-assets-integration-asset-management-lifecycle)<br> - Hvis du vil ha mer informasjon, kan du se [Integrere aktivabehandling med anleggsmidler](../asset-management/integration-to-fixed-assets/fixed-asset-integration.md).
+- [Integrasjon av anleggsmidler med livsløp for aktivabehandling](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/fixed-assets-integration-asset-management-lifecycle)<br> - Hvis du vil ha mer informasjon, kan du se [Integrere aktivabehandling med anleggsmidler](../asset-management/integration-to-fixed-assets/fixed-asset-integration.md).
 
-- [Fleksibel dimensjonsreservasjon for lagernivå](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/flexible-warehouse-level-dimension-reservation)<br> - For mer informasjon, se [Fleksibel dimensjonsreservasjonspolicy for lagernivå](../warehousing/flexible-warehouse-level-dimension-reservation.md).
+- [Fleksibel dimensjonsreservasjon for lagernivå](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/flexible-warehouse-level-dimension-reservation)<br> - For mer informasjon, se [Fleksibel dimensjonsreservasjonspolicy for lagernivå](../warehousing/flexible-warehouse-level-dimension-reservation.md).
 
-- [Forbedret jobbkortenhet](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/improved-job-card-device)<br> - Hvis du vil ha mer informasjon, se [Rapportere fremdrift på en mobil jobbenhet](../production-control/tasks/report-progress-mobile-job-device.md) og [Ferdigmelde fra jobbkortenheten](../production-control/report-finished-job-device.md).
+- [Forbedret jobbkortenhet](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/improved-job-card-device)<br> - Hvis du vil ha mer informasjon, se [Rapportere fremdrift på en mobil jobbenhet](../production-control/tasks/report-progress-mobile-job-device.md) og [Ferdigmelde fra jobbkortenheten](../production-control/report-finished-job-device.md).
 
-- [Innkommende kvalitetskontroll](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/inbound-quality-check)
+- [Innkommende kvalitetskontroll](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/inbound-quality-check)
 
-- [Lagring av rapport for aldersfordeling for lager](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/inventory-aging-report-storage)
+- [Lagring av rapport for aldersfordeling for lager](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/inventory-aging-report-storage)
 
-- [Lagring av lagerverdirapport](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/inventory-value-report-storage)<br> - Hvis du vil ha mer informasjon, kan du se [Rapport for oppbevaring av lagerverdi](../cost-management/inventory-value-report-storage.md)
+- [Lagring av lagerverdirapport](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/inventory-value-report-storage)<br> - Hvis du vil ha mer informasjon, kan du se [Rapport for oppbevaring av lagerverdi](../cost-management/inventory-value-report-storage.md)
 
-- [Gantt-diagram over fremdriften for hovedplanlegging](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/master-planning-progress-gantt-chart)<br> - Hvis du vil ha mer informasjon, kan du se [Overvåke en kjøring av hovedplanlegging](../master-planning/tasks/monitor-master-planning-run.md) og videoen [Forbedring av MRP-ytelse og anvendelighet](https://www.microsoft.com/videoplayer/embed/RE4myrJ).
+- [Gantt-diagram over fremdriften for hovedplanlegging](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/master-planning-progress-gantt-chart)<br> - Hvis du vil ha mer informasjon, kan du se [Overvåke en kjøring av hovedplanlegging](../master-planning/tasks/monitor-master-planning-run.md) og videoen [Forbedring av MRP-ytelse og anvendelighet](https://www.microsoft.com/videoplayer/embed/RE4myrJ).
 
-- [Nye dataenheter for produksjonsområdet](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
+- [Nye dataenheter for produksjonsområdet](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
 
-- [Utgående sortering](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/outbound-sorting)<br> - Hvis du vil ha mer informasjon, kan du se [Utgående sortering](../warehousing/outbound-sorting.md).
+- [Utgående sortering](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/outbound-sorting)<br> - Hvis du vil ha mer informasjon, kan du se [Utgående sortering](../warehousing/outbound-sorting.md).
 
-- [Pakking i forhold til lagringsdimensjoner](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/packing-vs.-storage-dimensions)
+- [Pakking i forhold til lagringsdimensjoner](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/packing-vs.-storage-dimensions)
 
-- [Parallellisert autorisasjon av planlagte bestillinger](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/parallelized-firming-planned-orders)<br> - Hvis du vil ha mer informasjon, kan du se [Parallelliser autorisasjon](../master-planning/maintain-planned-orders.md#parallelize-firming) og videoen [Forbedring av MRP-ytelse og anvendelighet](https://www.microsoft.com/videoplayer/embed/RE4myrJ).
+- [Parallellisert autorisasjon av planlagte bestillinger](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/parallelized-firming-planned-orders)<br> - Hvis du vil ha mer informasjon, kan du se [Parallelliser autorisasjon](../master-planning/maintain-planned-orders.md#parallelize-firming) og videoen [Forbedring av MRP-ytelse og anvendelighet](https://www.microsoft.com/videoplayer/embed/RE4myrJ).
 
-- [Planleggingsoptimalisering for distribusjon](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/planning-optimization-distribution)<br> - Hvis du vil ha mer informasjon, se [Oversikt over planleggingsoptimalisering](../master-planning/planning-optimization/planning-optimization-overview.md).
+- [Planleggingsoptimalisering for distribusjon](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/planning-optimization-distribution)<br> - Hvis du vil ha mer informasjon, se [Oversikt over planleggingsoptimalisering](../master-planning/planning-optimization/planning-optimization-overview.md).
 
-- [Forbedring av kjøpsavtaler](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/purchase-agreement-enhancements)<br> - Hvis du vil ha mer informasjon, kan du se [Kjøpsavtaler](../procurement/purchase-agreements.md).
+- [Forbedring av kjøpsavtaler](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/purchase-agreement-enhancements)<br> - Hvis du vil ha mer informasjon, kan du se [Kjøpsavtaler](../procurement/purchase-agreements.md).
 
-- [Plasseringsklynger](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/put-away-clusters) <br> - Hvis du vil ha mer informasjon, kan du se videoen [Plasseringsklynger](https://www.microsoft.com/videoplayer/embed/RE4f5aB).
+- [Plasseringsklynger](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/put-away-clusters) <br> - Hvis du vil ha mer informasjon, kan du se videoen [Plasseringsklynger](https://www.microsoft.com/videoplayer/embed/RE4f5aB).
 
-- [Plasser til vegg/plasser til butikk](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/put-wallput-store)<br> - Hvis du vil ha mer informasjon, kan du se [Plasser til vegg – plasser til butikk](../warehousing/put-to-wall-put-to-store.md).
+- [Plasser til vegg/plasser til butikk](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/put-wallput-store)<br> - Hvis du vil ha mer informasjon, kan du se [Plasser til vegg – plasser til butikk](../warehousing/put-to-wall-put-to-store.md).
 
-- [Motta sortering](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/receive-sortation)
+- [Motta sortering](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/receive-sortation)
 
-- [Forsendelse av småpakker](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/small-package-shipping-sps)
+- [Forsendelse av småpakker](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/small-package-shipping-sps)
 
-- [Leverandørbud – spørsmål fra leverandører og oppsummerte svar](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/vendor-bidding-questions-vendors-summarized-responses)
+- [Leverandørbud – spørsmål fra leverandører og oppsummerte svar](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/vendor-bidding-questions-vendors-summarized-responses)
 
-- [Visuell planlegging for arbeidsoppdrag i Aktivabehandling](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/visual-scheduling-work-orders-asset-management)<br> - Hvis du vil ha mer informasjon, kan du se [Arbeide med planlagte arbeidsordrer ved hjelp av et Gantt-diagram](../asset-management/work-order-scheduling/schedule-work-orders.md#gantt).
+- [Visuell planlegging for arbeidsoppdrag i Aktivabehandling](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/visual-scheduling-work-orders-asset-management)<br> - Hvis du vil ha mer informasjon, kan du se [Arbeide med planlagte arbeidsordrer ved hjelp av et Gantt-diagram](../asset-management/work-order-scheduling/schedule-work-orders.md#gantt).
 
-- [Lagersporing](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-slotting)<br> - Hvis du vil ha mer informasjon, kan du se [Lagersporing](../warehousing/warehouse-slotting.md).
+- [Lagersporing](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/warehouse-slotting)<br> - Hvis du vil ha mer informasjon, kan du se [Lagersporing](../warehousing/warehouse-slotting.md).
 
-- [Forbedringer av bølgeetikettutskrift](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-label-printing-enhancements)
+- [Forbedringer av bølgeetikettutskrift](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-label-printing-enhancements)
 
-- [Bølgetrinnkode](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-step-code)<br> - For mer informasjon, se [Bølgetrinnkoder](../warehousing/wave-step-codes.md).
+- [Bølgetrinnkode](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/wave-step-code)<br> - For mer informasjon, se [Bølgetrinnkoder](../warehousing/wave-step-codes.md).
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
@@ -109,7 +109,7 @@ Hvis du vil ha informasjon om feilrettinger som er inkludert i hver av oppdateri
 
 Er du spent på kommende og nylig utgitte tilleggspakkefunksjoner i våre bedriftsprogrammer eller -plattform?
 
-Se [Dynamics 365: 2020-frigivelsesbølge 1-planen](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/index). Vi har registrert alle detaljene, ende til ende, øverst til nederst, i et enkelt dokument som du kan bruke i planleggingen.
+Se [Dynamics 365: 2020-frigivelsesbølge 1-planen](/dynamics365-release-plan/2020wave1/index). Vi har registrert alle detaljene, ende til ende, øverst til nederst, i et enkelt dokument som du kan bruke i planleggingen.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Fjernede og avskrevne funksjoner i Supply Chain Management
 

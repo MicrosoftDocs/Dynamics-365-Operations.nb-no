@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 46b232da404fe2106ce4b5455ea4d682a08aaa53
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 5ec5b8d0ad1e85a9c4fc7c3eb762c2c7b0b52e8d
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743635"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893306"
 ---
 # <a name="customize-electronic-reporting-configurations-to-generate-an-electronic-document"></a>Tilpasse konfigurasjoner for elektronisk rapportering for å generere et elektronisk dokument
 
@@ -667,8 +667,8 @@ Statusen for versjon 32.6.7.2 endres fra **Utkast** til **Fullført**, og versjo
 - [Oversikt over elektronisk rapportering](general-electronic-reporting.md)
 - [Laste ned ER-konfigurasjoner fra Lifecycle Services](download-electronic-reporting-configuration-lcs.md)
 - [Last ned ER-konfigurasjoner fra det globale repositoriet for konfigurasjonstjenesten](er-download-configurations-global-repo.md)
-- [Opprett en fritekstfaktura](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/create-free-text-invoice-new)
-- [Opprette og arbeide med egendefinerte felt](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/user-defined-fields)
+- [Opprett en fritekstfaktura](../../../finance/accounts-receivable/create-free-text-invoice-new.md)
+- [Opprette og arbeide med egendefinerte felt](../../fin-ops/get-started/user-defined-fields.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

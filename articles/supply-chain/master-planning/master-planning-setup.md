@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: fe7ff2ab877182dd3145e39574aa7229c48b6057
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e30b02a6f98f638954adc7ec335babd518b92bf4
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5833407"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909409"
 ---
 # <a name="set-up-master-planning"></a>Definere hovedplanlegging
 
@@ -106,11 +106,11 @@ I hurtigfanen **Generelt** på **Hovedplaner**-siden (**Hovedplanlegging \> Opps
 
 ### <a name="operations-scheduling"></a>Grovplanlegging
 
-Du kan bruke grovplanlegging for å få et generelt estimat over produksjonsprosessen over tid. Grovplanlegging deler ikke operasjonene for produksjonsruten inn i jobber. Hvis du vil ha mer informasjon om grovplanlegging, kan du se [Grovplanlegging](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling).
+Du kan bruke grovplanlegging for å få et generelt estimat over produksjonsprosessen over tid. Grovplanlegging deler ikke operasjonene for produksjonsruten inn i jobber. Hvis du vil ha mer informasjon om grovplanlegging, kan du se [Grovplanlegging](/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling).
 
 ### <a name="job-scheduling"></a>Finplanlegging
 
-Finplanlegging er en mer detaljert planleggingsmetode der hver operasjon deles inn i individuelle oppgaver eller jobber. Finplanlegging omfatter informasjon om kapasitet. Den brukes vanligvis til å planlegge enkeltjobber på shop floor i en umiddelbar eller kortsiktig tidsramme. Hvis du vil ha mer informasjon om finplanlegging, kan du se [Finplanlegging](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
+Finplanlegging er en mer detaljert planleggingsmetode der hver operasjon deles inn i individuelle oppgaver eller jobber. Finplanlegging omfatter informasjon om kapasitet. Den brukes vanligvis til å planlegge enkeltjobber på shop floor i en umiddelbar eller kortsiktig tidsramme. Hvis du vil ha mer informasjon om finplanlegging, kan du se [Finplanlegging](/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
 
 ## <a name="time-fences-in-days"></a>Horisonter i dager
 
@@ -158,7 +158,7 @@ Handlingsmeldinger foreslår endringer som kan gjøres i den eksisterende forsyn
 
 Når du setter alternativet **Handlingsmelding** til **Ja**, kan du overstyre handlingsmeldingshorisonten som defineres for varen under hovedplanlegging. I dette tilfellet angir du antall dager som hovedplanleggingen skal generere handlingsmeldinger for krav. Handlingsmeldingshorisonten beregnes fremover fra og med gjeldende dato.
 
-Hvis du vil ha mer informasjon om handlingsmeldinger, kan du se [Handlingsmeldinger](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/action-messages).
+Hvis du vil ha mer informasjon om handlingsmeldinger, kan du se [Handlingsmeldinger](/dynamics365/unified-operations/supply-chain/master-planning/action-messages).
 
 > [!NOTE]
 > Beregningen av handlingsmeldinger forårsaker en lengre kjøretid for hovedplanlegging. Hvis handlingsmeldinger ikke analyseres og brukes regelmessig (daglig, ukentlig og så videre), bør du vurdere å deaktivere beregningen under hovedplanleggingskjøringen. Hvis du vil deaktivere beregningen, kan du sette **Handlingsmelding**-horisonten til **0** (null) på **Hovedplaner**-siden for hovedplanen du kjører. Kontroller også at innstillingen **Handlingsmelding** er deaktivert for alle dekningsgruppene.
@@ -223,7 +223,7 @@ Leveringstid + Negative dager + Gjeldende dato - Behovsdato
 
 Systemet bruker bare de planlagte forsyningsordrene som er innenfor denne horisonten, og det oppretter en ny planlagt ordre utenfor den. Fordelen med dynamiske negative dager er at de tar med den individuelle produktleveringstiden, for å bruke eksisterende ordrer på nytt og unngå å opprette nye planlagte ordrer som ender opp med en senere dag på grunn av forsinkelser forårsaket av leveringstiden. 
 
-Hvis du vil ha mer informasjon, kan du se [Negative dager og dynamiske negative dager](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/more-about-dynamic-negative-days).
+Hvis du vil ha mer informasjon, kan du se [Negative dager og dynamiske negative dager](/dynamics365/unified-operations/supply-chain/master-planning/more-about-dynamic-negative-days).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

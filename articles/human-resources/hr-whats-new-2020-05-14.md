@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-05-14
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e70d8fc62150d68503552754e94c7130d8960c76
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f8244d512c9e1236fc52cd4a91cdc78cc2b9b984
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5802365"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893107"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-14-2020"></a>Hva er nytt eller endret i Dynamics 365 Human Resources (14. mai 2020)
 
@@ -33,7 +33,7 @@ Dette emnet beskriver funksjoner som enten er nye eller endret i Dynamics 365 Hu
 
 ## <a name="platform-changes"></a>Plattformendringer
 
-Plattformendringer er inkludert i denne ukens frigivelse. Hvis du vil ha mer informasjon, kan du se [Platformoppdateringer for versjon 10.0.10 av Finance and Operations-apper (mai 2020)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34). Denne versjonen inneholder feilrettinger og endringer i lagrede visninger.
+Plattformendringer er inkludert i denne ukens frigivelse. Hvis du vil ha mer informasjon, kan du se [Platformoppdateringer for versjon 10.0.10 av Finance and Operations-apper (mai 2020)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34.md). Denne versjonen inneholder feilrettinger og endringer i lagrede visninger.
  
 ## <a name="ensure-dataverse-picklists-are-consistent-with-leave-enums-436343"></a>Sørg for at plukklister i Dataverse er konsekvente med permisjonsopplistinger (436343)
 
@@ -116,7 +116,7 @@ Du kan angi en type overføringspermisjon for overføringssaldoer der overførin
 ## <a name="see-also"></a>Se også
 
 [Nyheter eller endringer i Human Resources](hr-admin-whats-new.md)</br>
-[Oversikt over lanseringsbølge 2 i 2019 for Dynamics 365 Human Resources](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Oversikt over lanseringsbølge 2 i 2019 for Dynamics 365 Human Resources](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Oppdatere prosess](hr-admin-setup-update-process.md)</br>
 [Behandle funksjoner](hr-admin-manage-features.md)
 

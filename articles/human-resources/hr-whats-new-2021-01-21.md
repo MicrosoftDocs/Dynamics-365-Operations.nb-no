@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-01-21
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 14df61a68ed402365bd26257cfc5e9b6b4c14db3
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 2bf587933aa24e772e6cebca94ee6e8648ec7f10
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5803375"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890681"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-january-21-2021"></a>Hva er nytt eller endret i Dynamics 365 Human Resources 21 januar 2021
 
@@ -31,7 +31,7 @@ Dette emnet beskriver funksjoner som er nye, endret eller kommer snart i Dynamic
 
 Hvis du vil ha mer informasjon om oppdateringsprosessen og tidsplanen, kan du se [Oppdatere prosess](hr-admin-setup-update-process.md).
 
-Hvis du vil ha mer informasjon om nye funksjoner og deres forventede generelle tilgjengelighetsdatoer, se [Oversikt over Dynamics 365 Human Resources 2020-frigivelsesbølge 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
+Hvis du vil ha mer informasjon om nye funksjoner og deres forventede generelle tilgjengelighetsdatoer, se [Oversikt over Dynamics 365 Human Resources 2020-frigivelsesbølge 2](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
 
 
 ## <a name="in-this-release"></a>I denne versjonen
@@ -44,8 +44,8 @@ Følgende funksjoner er allment tilgjengelige i denne versjonen.
 
 | Funksjon | Lanseringsplan | Dokumentasjon |
 | --- | --- | --- |
-| Platform update 10.0.16(40) | -- | [Plattformoppdateringer for versjon 10.0.16 av Finance and Operations-apper (februar 2021)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-16) |
-| Utvidede arbeidsflytforespørsler og -godkjenninger | [Forbedringer i arbeidsflyten for organisasjons- og personalstyring](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) | [Konfigurasjonsalternativ for å plassere listen Arbeidselementer som er tilordnet til meg](https://docs.microsoft.com/dynamics365/human-resources/hr-whats-new-2020-09-03#configuration-option-to-position-work-items-assigned-to-me-list-477004) |
+| Platform update 10.0.16(40) | -- | [Plattformoppdateringer for versjon 10.0.16 av Finance and Operations-apper (februar 2021)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-16.md) |
+| Utvidede arbeidsflytforespørsler og -godkjenninger | [Forbedringer i arbeidsflyten for organisasjons- og personalstyring](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) | [Konfigurasjonsalternativ for å plassere listen Arbeidselementer som er tilordnet til meg](./hr-whats-new-2020-09-03.md#configuration-option-to-position-work-items-assigned-to-me-list-477004) |
 | ACA-samsvarsoppdateringer for skjema 1095-C, skjema 1095-B og elektronisk rapportering i eldre fordeler | -- | -- | 
 | Fordelsbehandling støtter nå ACA-samsvarsrapportering for USA-baserte juridiske enheter | -- | [Generere ACA-rapporter i fordelsbehandling](hr-benefits-management-aca-reports.md) |
 | Fordelsbehandling har nå enheter for fordelssatslag og dobbelt nivå for fordelssats eksponert  | -- | -- |
@@ -80,13 +80,13 @@ Følgende nye funksjoner er i forhåndsversjon. Hvis du vil ha mer informasjon o
 
 | Funksjon | Lanseringsplan | Dokumentasjon |
 | --- | --- | --- |
-| Human Resources-app i Microsoft Teams | [Ansattopplevelsen fro permisjon og fravær i Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) | [Human Resources-app i Teams](https://go.microsoft.com/fwlink/?linkid=2127841)<br>[Behandle permisjonsforespørsler i Teams](hr-teams-leave-app.md) |
-| Integrasjon med LinkedIn Talent Hub | [Integrasjon med LinkedIn Talent Hub](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/integration-linkedin-talent-hub) | [Integrere med LinkedIn Talent Hub](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-linkedin) |
-| Visning av permisjon for ledere på tvers av firmaer | [Visning av ansattpermisjon for ledere på tvers av firmaer](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/cross-company-view-employee-leave-managers) | [Konfigurere permisjons- og fraværsparametere](https://docs.microsoft.com/dynamics365/human-resources/hr-leave-and-absence-parameters) |
-|Gi ekstra innsikt i permisjonssaldoer| [Gi ekstra innsikt i permisjonssaldoer](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/provide-additional-insight-into-leave-balances) | [Administrere ansattpermisjon](https://docs.microsoft.com/dynamics365/human-resources/hr-leave-and-absence-manage-employee-leave) |
-| Ledere kan sende inn rekrutteringsforespørsler for stillinger | [Ledere kan sende inn en rekrutteringsforespørsel for åpne stillinger](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/manager-submit-request-recruit-open-positions) | [Legg til en rekrutteringsforespørsel](https://docs.microsoft.com/dynamics365/human-resources/hr-personnel-recruit#add-a-recruiting-request) |
-| Forbedret kandidatprofil i Personalstyring | [Forbedret kandidatprofil i personalstyring](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/enhanced-candidate-profile-personnel-management) | [Legg til eller rediger en kandidatprofil](https://docs.microsoft.com/dynamics365/human-resources/hr-personnel-recruit#add-or-edit-a-candidate-profile) |
-| Aktiver forenklede integreringer med rekrutteringsleverandører | [Aktiver forenklede integreringer med rekrutteringsleverandører](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/enable-simplified-integration-recruiting-providers) | [Rekruttere jobbkandidater](https://docs.microsoft.com/dynamics365/human-resources/hr-personnel-recruit) |
+| Human Resources-app i Microsoft Teams | [Ansattopplevelsen fro permisjon og fravær i Microsoft Teams](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) | [Human Resources-app i Teams](./hr-admin-teams-leave-app.md)<br>[Behandle permisjonsforespørsler i Teams](hr-teams-leave-app.md) |
+| Integrasjon med LinkedIn Talent Hub | [Integrasjon med LinkedIn Talent Hub](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/integration-linkedin-talent-hub) | [Integrere med LinkedIn Talent Hub](./hr-admin-integration-linkedin.md) |
+| Visning av permisjon for ledere på tvers av firmaer | [Visning av ansattpermisjon for ledere på tvers av firmaer](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/cross-company-view-employee-leave-managers) | [Konfigurere permisjons- og fraværsparametere](./hr-leave-and-absence-parameters.md) |
+|Gi ekstra innsikt i permisjonssaldoer| [Gi ekstra innsikt i permisjonssaldoer](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/provide-additional-insight-into-leave-balances) | [Administrere ansattpermisjon](./hr-leave-and-absence-manage-employee-leave.md) |
+| Ledere kan sende inn rekrutteringsforespørsler for stillinger | [Ledere kan sende inn en rekrutteringsforespørsel for åpne stillinger](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/manager-submit-request-recruit-open-positions) | [Legg til en rekrutteringsforespørsel](./hr-personnel-recruit.md#add-a-recruiting-request) |
+| Forbedret kandidatprofil i Personalstyring | [Forbedret kandidatprofil i personalstyring](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/enhanced-candidate-profile-personnel-management) | [Legg til eller rediger en kandidatprofil](./hr-personnel-recruit.md#add-or-edit-a-candidate-profile) |
+| Aktiver forenklede integreringer med rekrutteringsleverandører | [Aktiver forenklede integreringer med rekrutteringsleverandører](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/enable-simplified-integration-recruiting-providers) | [Rekruttere jobbkandidater](./hr-personnel-recruit.md) |
 
 ## <a name="coming-soon"></a>Kommer snart
 | Funksjon | Detaljer |
@@ -94,20 +94,20 @@ Følgende nye funksjoner er i forhåndsversjon. Hvis du vil ha mer informasjon o
 | E-postbekreftelse for fordelsregistreringer | Denne funksjonen vil gi et alternativ for å sende en bekreftelses-e-post til ansatte når de sjekker ut fra fordelsregistreringen i Ansattselvbetjening. Hvis du vil ha mer informasjon, kan du se [Konfigurere fordelsstyringsparametre per firma](hr-benefits-setup-parameters-per-company.md). |
 | Ferdigheter som angis av en leder for de ansatte, kan godkjennes automatisk av en arbeidsflyt | Kommer snart. |
 
-Hvis du vil ha en fullstendig liste over de planlagte funksjonene og de planlagte versjonene, kan du se [Oversikt over Dynamics 365 Human Resources 2020-frigivelsesbølge 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
+Hvis du vil ha en fullstendig liste over de planlagte funksjonene og de planlagte versjonene, kan du se [Oversikt over Dynamics 365 Human Resources 2020-frigivelsesbølge 2](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
 
 ## <a name="terminology-updates-for-microsoft-dataverse"></a>Terminologioppdateringer for Microsoft Dataverse
 
-I november 2020 endret Common Data Service navn til [Microsoft Dataverse](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro). Se den [offisielle kunngjøringen](https://powerapps.microsoft.com/blog/reshape-the-future-of-work-with-microsoft-dataverse-for-teams-now-generally-available/) på Power Apps-bloggen for å få mer informasjon. Sammen med denne navneendringen er noe terminologi i Dataverse oppdatert. *Enhet* er nå for eksempel *tabell* og *felt* er nå *kolonne*. Hvis du vil ha mer informasjon, kan du se [Terminologioppdateringer](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro#terminology-updates).
+I november 2020 endret Common Data Service navn til [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro). Se den [offisielle kunngjøringen](https://powerapps.microsoft.com/blog/reshape-the-future-of-work-with-microsoft-dataverse-for-teams-now-generally-available/) på Power Apps-bloggen for å få mer informasjon. Sammen med denne navneendringen er noe terminologi i Dataverse oppdatert. *Enhet* er nå for eksempel *tabell* og *felt* er nå *kolonne*. Hvis du vil ha mer informasjon, kan du se [Terminologioppdateringer](/powerapps/maker/data-platform/data-platform-intro#terminology-updates).
 
 I denne versjonen har terminologien knyttet til Dynamics 365 Human Resources-integreringen med Dataverse, blitt oppdatert i hele programmet for å gjenspeile disse endringene. Skjemaet for **Common Data Service-integrering** er eksempelvis nå **Microsoft Dataverse-integrering**.
 
-Hvis du vil lære mer om Dynamics 365 Human Resources-integrering med Microsoft Dataverse, kan du se [Konfigurere Microsoft Dataverse-integrering](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service) og [Konfigurere virtuelle Microsoft Dataverse-tabeller](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities).
+Hvis du vil lære mer om Dynamics 365 Human Resources-integrering med Microsoft Dataverse, kan du se [Konfigurere Microsoft Dataverse-integrering](./hr-admin-integration-common-data-service.md) og [Konfigurere virtuelle Microsoft Dataverse-tabeller](./hr-admin-integration-common-data-service-virtual-entities.md).
 
 ## <a name="see-also"></a>Se også
 
 [Nyheter eller endringer i Human Resources](hr-admin-whats-new.md)</br>
-[Oversikt over lanseringsbølge 2 i 2020 for Dynamics 365 Human Resources](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)</br>
+[Oversikt over lanseringsbølge 2 i 2020 for Dynamics 365 Human Resources](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)</br>
 [Oppdatere prosess](hr-admin-setup-update-process.md)</br>
 [Behandle funksjoner](hr-admin-manage-features.md)
 

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-06-25
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 49853eaaf9d4e0fa44c22b3f0927ae4ab034cf8e
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 15e40152041ca6f531350a8403492dd98f8f3f0c
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5802317"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5891919"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-june-23-2020"></a>Hva er nytt eller endret i Dynamics 365 Human Resources (23. juni 2020)
 
@@ -75,7 +75,7 @@ Du kan nå endre feltene ved hjelp av tilpasningsfunksjonene i Human Resources. 
 
 ## <a name="human-resources-application-in-teams"></a>Human Resources-søknad i Teams
 
-Ansatte kan se og be om fravær fra jobb i Microsoft Teams. De kan kommunisere med en robot for å opprette permisjonsforespørsler. For mer informasjon, se [Human Resources-app i Teams](https://go.microsoft.com/fwlink/?linkid=2127841). 
+Ansatte kan se og be om fravær fra jobb i Microsoft Teams. De kan kommunisere med en robot for å opprette permisjonsforespørsler. For mer informasjon, se [Human Resources-app i Teams](./hr-admin-teams-leave-app.md). 
 
 ## <a name="data-management-framework-dmf-entities-for-benefits-management"></a>Data Management Framework (DMF)-enheter for Fordelsbehandling
  
@@ -125,7 +125,7 @@ Sjekklisteenheter for pålasting, avlasting, overføringer og forretningsprosess
 ## <a name="see-also"></a>Se også
 
 [Nyheter eller endringer i Human Resources](hr-admin-whats-new.md)</br>
-[Oversikt over lanseringsbølge 2 i 2019 for Dynamics 365 Human Resources](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Oversikt over lanseringsbølge 2 i 2019 for Dynamics 365 Human Resources](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Oppdatere prosess](hr-admin-setup-update-process.md)</br>
 [Behandle funksjoner](hr-admin-manage-features.md)
 
