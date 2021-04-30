@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-07-01
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 59a421b5e81366845901c44486acb3dfa3781850
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: cdcbc828fadce641cbee2cc6135be819a03275c9
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753654"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894106"
 ---
 # <a name="defer-the-execution-of-sequence-elements-in-er-formats"></a>Utsette kjøringen av sekvenselementer i ER-formater
 
@@ -42,7 +42,7 @@ Hvis du vil vite mer om denne funksjonen, kan du fullføre eksemplet i dette emn
 
 ## <a name="example-defer-the-execution-of-a-sequence-element-in-an-er-format"></a><a name="Example"></a>Eksempel: Utsette kjøringen av et sekvenselement i et ER-format
 
-Følgende trinn forklarer hvordan en bruker med [rollen](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/tasks/assign-users-security-roles) systemadministrator eller funksjonell konsulent for elektronisk rapportering kan konfigurere et ER-format som inneholder et sekvenselement der kjøringsrekkefølgen er forskjellig fra rekkefølgen i formathierarkiet.
+Følgende trinn forklarer hvordan en bruker med [rollen](../sysadmin/tasks/assign-users-security-roles.md) systemadministrator eller funksjonell konsulent for elektronisk rapportering kan konfigurere et ER-format som inneholder et sekvenselement der kjøringsrekkefølgen er forskjellig fra rekkefølgen i formathierarkiet.
 
 Disse trinnene kan utføres i **USMF**-selskapet i Microsoft Dynamics 365 Finance.
 

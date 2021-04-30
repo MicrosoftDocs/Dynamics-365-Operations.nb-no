@@ -16,22 +16,23 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: a8c263104e209a81e33ea0db9e5fecddff3bc95b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a6d6979093c67d2d89b88678712f4c0205c63194
+ms.sourcegitcommit: 639175a39da38edd13e21eeb5a1a5ca62fa44d99
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809788"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "5899101"
 ---
-# <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Sky- og kantskalaenheter for arbeidsbelastninger for produksjonskjøring
+# <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Skalaenheter for sky og kant for arbeidsbelastninger for produksjonsutførelse
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
 > [!WARNING]
+> Arbeidsbelastningen for produksjonsutførelse er tilgjengelig som forhåndsversjon på dette tidspunktet.
 > Noen forretningsfunksjoner støttes ikke fullstendig i den offentlige forhåndsversjonen når arbeidsbelastningsskalaenheter brukes.
 
-Når det gjelder produksjonskjøring, gir sky- og kantskalaenheter følgende funksjoner, selv når kantenhetene ikke er koblet til senteret:
+Ved produksjonsutførelse leverer skalaenheter følgende funksjoner:
 
 - Maskinoperatører og produksjonsledere har tilgang til driftsproduksjonsplanen.
 - Maskinoperatører kan holde planen oppdatert ved å kjøre separat og behandle produksjonsjobber.
@@ -108,5 +109,6 @@ Hvis du vil se gjennom historikken for produksjonsjobber som er behandlet på en
 
 Jobben _Behandle produksjonssenter til skalaenhet_ behandler data fra senteret til skalaenheten. Denne jobben startes automatisk når arbeidsbelastningen for produksjonskjøring distribueres. Du kan imidlertid kjøre den manuelt når som helst ved å gå til **Produksjonskontroll \> Periodiske oppgaver \> Back-office-arbeidsbelastningsbehandling \> Behandle produksjonssenter til skalaenhet**.
 
+[!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

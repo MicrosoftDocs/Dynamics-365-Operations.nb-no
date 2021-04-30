@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 132d91c2a17fa5116d7aa6650e4ee807a03030bb
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 8fe6d8a4ca42cd1f3c3b26a9c52f1a639170252c
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5802293"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894612"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-october-6-2020"></a>Hva er nytt eller endret i Dynamics 365 Human Resources (6. oktober 2020)
 
@@ -30,7 +30,7 @@ ms.locfileid: "5802293"
 
 Dette emnet beskriver funksjoner som er nye, endret eller kommer snart i Dynamics 365 Human Resources. Hvis du vil ha mer informasjon om oppdateringsprosessen og tidsplanen, kan du se [Oppdatere prosess](hr-admin-setup-update-process.md).
 
-Hvis du vil ha mer informasjon om nye funksjoner og deres forventede generelle tilgjengelighetsdatoer, se [Oversikt over Dynamics 365 Human Resources 2020-frigivelsesbølge 2](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
+Hvis du vil ha mer informasjon om nye funksjoner og deres forventede generelle tilgjengelighetsdatoer, se [Oversikt over Dynamics 365 Human Resources 2020-frigivelsesbølge 2](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
 
 ## <a name="in-this-release"></a>I denne versjonen
 
@@ -42,7 +42,7 @@ Følgende funksjon er vanligvis tilgjengelig i denne versjonen.
 
 | Funksjon | Lanseringsplan | Dokumentasjon |
 | --- | --- | --- |
-| Ekstra innsikt i permisjonskalendere | [Gi ekstra innsikt i permisjonskalender-visninger](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/provide-additional-insight-leave-calendar-views) | [Vise team- og firmakalender](hr-employee-self-service-calendar.md) |
+| Ekstra innsikt i permisjonskalendere | [Gi ekstra innsikt i permisjonskalender-visninger](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/provide-additional-insight-leave-calendar-views) | [Vise team- og firmakalender](hr-employee-self-service-calendar.md) |
 
 ### <a name="bug-fixes"></a>Feilrettinger
 
@@ -70,9 +70,9 @@ Følgende nye funksjoner er i forhåndsversjon. Hvis du vil ha mer informasjon o
 
 | Funksjon | Lanseringsplan | Dokumentasjon |
 | --- | --- | --- |
-| Human Resources-app i Microsoft Teams | [Ansattopplevelsen fro permisjon og fravær i Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) | [Human Resources-app i Teams](https://go.microsoft.com/fwlink/?linkid=2127841)<br>[Behandle permisjonsforespørsler i Teams](hr-teams-leave-app.md) |
-| Utvidede arbeidsflytforespørsler og -godkjenninger | [Forbedringer i arbeidsflyten for organisasjons- og personalstyring](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) | [Konfigurasjonsalternativ for å plassere listen Arbeidselementer som er tilordnet til meg](https://docs.microsoft.com/dynamics365/human-resources/hr-whats-new-2020-09-03#configuration-option-to-position-work-items-assigned-to-me-list-477004) |
-| Virtuelle enheter i Dataverse for Human Resources | [Utvide Dynamics 365 Human Resources-kjernedata i Dataverse](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/expand-dynamics-365-human-resources-core-data-common-data-service) | [Konfigurere virtuelle enheter for Dataverse](hr-admin-integration-common-data-service-virtual-entities.md) |
+| Human Resources-app i Microsoft Teams | [Ansattopplevelsen fro permisjon og fravær i Microsoft Teams](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) | [Human Resources-app i Teams](./hr-admin-teams-leave-app.md)<br>[Behandle permisjonsforespørsler i Teams](hr-teams-leave-app.md) |
+| Utvidede arbeidsflytforespørsler og -godkjenninger | [Forbedringer i arbeidsflyten for organisasjons- og personalstyring](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) | [Konfigurasjonsalternativ for å plassere listen Arbeidselementer som er tilordnet til meg](./hr-whats-new-2020-09-03.md#configuration-option-to-position-work-items-assigned-to-me-list-477004) |
+| Virtuelle enheter i Dataverse for Human Resources | [Utvide Dynamics 365 Human Resources-kjernedata i Dataverse](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/expand-dynamics-365-human-resources-core-data-common-data-service) | [Konfigurere virtuelle enheter for Dataverse](hr-admin-integration-common-data-service-virtual-entities.md) |
 
 ## <a name="coming-soon"></a>Kommer snart
 
@@ -82,14 +82,14 @@ Følgende nye funksjoner er planlagt for fremtidig frigivelser:
 
 - **Årsakskoder for fordelsstyring**: Årsakskoder for fordelsstyring kombineres snart med eksisterende årsakskoder i Human Resources. Hvis du har opprettet årsakskoder i fordelsstyringen som er over 15 tegn, må du endre navnet på årsakskoden i skjemaet **Årsakskoder** for Fordelsbehandling slik at det består av 15 tegn eller mindre. Når du har oppdatert navnet, vises årsakskoden under det eksisterende årsakskodeskjemaet i Personaladministrasjon. Denne endringen vil være tilgjengelig i fremtiden, og vil ikke påvirke eksisterende funksjonalitet.
 
-- **Egendefinerte koblinger i Lederselvbetjening**: For å støtte ledere utvider vi funksjoner i Lederselvbetjening. Vi legger til muligheten for å legge til egendefinerte koblinger i kategorien **Mitt team**. Denne funksjonen ligner på funksjonen for egendefinerte koblinger i kategorien **Min informasjon** i ansattselvbetjening. Hvis du vil ha mer informasjon, se [Egendefinerte koblinger i Lederselvbetjening](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/custom-links-manager-self-service).
+- **Egendefinerte koblinger i Lederselvbetjening**: For å støtte ledere utvider vi funksjoner i Lederselvbetjening. Vi legger til muligheten for å legge til egendefinerte koblinger i kategorien **Mitt team**. Denne funksjonen ligner på funksjonen for egendefinerte koblinger i kategorien **Min informasjon** i ansattselvbetjening. Hvis du vil ha mer informasjon, se [Egendefinerte koblinger i Lederselvbetjening](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/custom-links-manager-self-service).
 
-Hvis du vil ha en fullstendig liste over de planlagte funksjonene og de planlagte versjonene, kan du se [Oversikt over Dynamics 365 Human Resources 2019-frigivelsesbølge 2](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/).
+Hvis du vil ha en fullstendig liste over de planlagte funksjonene og de planlagte versjonene, kan du se [Oversikt over Dynamics 365 Human Resources 2019-frigivelsesbølge 2](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/).
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Nyheter eller endringer i Human Resources](hr-admin-whats-new.md)</br>
-[Oversikt over lanseringsbølge 2 i 2020 for Dynamics 365 Human Resources](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)</br>
+[Oversikt over lanseringsbølge 2 i 2020 for Dynamics 365 Human Resources](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)</br>
 [Oppdatere prosess](hr-admin-setup-update-process.md)</br>
 [Behandle funksjoner](hr-admin-manage-features.md)
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2020-04-28
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 4af14a66c839ccee02008057ad1de8ef5b9d291b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 50cfea6656e1f13532b018784fa64b2aac10fc7f
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813923"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908573"
 ---
 # <a name="integrate-dynamics-365-supply-chain-management-asset-management-with-dynamics-365-guides"></a>Integrere Dynamics 365 Supply Chain Management (Aktivabehandling) med Dynamics 365 Guides
 
@@ -30,12 +30,12 @@ Før du kan dra nytte av veiledninger for arbeidsordrer for aktivabehandling, m�
 - [Konfigurer Dynamics 365 Supply Chain Management](../../fin-ops-core/fin-ops/index.md) versjon 10.0.9 eller senere.
 - [Aktivere toveis skriving for Supply Chain Management-apper](../../fin-ops-core/dev-itpro/data-entities/dual-write/enable-dual-write.md).
 - [Aktiver testversjon](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md#features-flighted-in-data-management-and-enabling-flighted-features) for **MRGuidesFeature**-funksjonen. (For produksjonsmiljøer må du først sende en støtteforespørsel for å få leieren din lagt til i kontrollgruppen.)
-- [Slå på følgende konfigurasjonsnøkler](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/license-code-and-configuration-key-reference) på **Lisenskonfigurasjon**-siden:
+- [Slå på følgende konfigurasjonsnøkler](/dynamicsax-2012/appuser-itpro/license-code-and-configuration-key-reference) på **Lisenskonfigurasjon**-siden:
 
     - Aktivabehandling \> Aktivabehandling, blandet virkelighet
     - Blandet virkelighet \> Blandet virkelighet-veiledning
 
-- [Konfigurer Dynamics 365 Guides](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup#step-2-create-a-common-data-service-environment-and-install-the-dynamics-365-guides-solution) versjon 200.0.0.96 eller senere.
+- [Konfigurer Dynamics 365 Guides](/dynamics365/mixed-reality/guides/setup#step-2-create-a-common-data-service-environment-and-install-the-dynamics-365-guides-solution) versjon 200.0.0.96 eller senere.
 
 ## <a name="use-dynamics-365-guides-with-asset-management"></a>Bruke Dynamics 365 Guides med aktivastyring
 
@@ -47,8 +47,8 @@ Følg disse trinnene for å knytte en veiledning til en mal for kontrolliste for
 
 1. Opprett en veiledning ved å bruke Dynamics 365 Guides-PC og HoloLens-apper. Hvis du vil ha informasjon om hvordan du oppretter en veiledning, kan du se emnene nedenfor:
 
-    - [Bruke PC-appen til å opprette en veiledning](https://docs.microsoft.com/dynamics365/mixed-reality/guides/pc-app-overview)
-    - [Bruke HoloLens-appen til å plassere hologrammene](https://docs.microsoft.com/dynamics365/mixed-reality/guides/hololens-app-overview)
+    - [Bruke PC-appen til å opprette en veiledning](/dynamics365/mixed-reality/guides/pc-app-overview)
+    - [Bruke HoloLens-appen til å plassere hologrammene](/dynamics365/mixed-reality/guides/hololens-app-overview)
 
 1. I Supply Chain Management [oppretter du en mal for vedlikeholdssjekkliste](setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md#create-a-maintenance-checklist-template).
 1. Knytt til veiledningen du opprettet ved hjelp av kontrollistelinjen for vedlikehold i den nye malen for vedlikeholdssjekkliste:

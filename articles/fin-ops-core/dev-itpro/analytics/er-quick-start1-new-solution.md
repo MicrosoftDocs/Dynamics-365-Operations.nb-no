@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 986beb6d46ac69192206c86fc3660c2e2345d6a9
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 6a3e0e4a8389fdd6580f66004d86ef4b1980dd9f
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743733"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5891799"
 ---
 # <a name="design-a-new-er-solution-to-print-a-custom-report"></a>Utforme en ny ER-løsning for å skrive ut en egendefinert rapport
 
@@ -119,7 +119,7 @@ De følgende trinnene forklarer hvordan en bruker en rolle som systemansvarlig, 
 
 - [Tilleggsressurser](#References)
 
-I dette eksemplet skal du opprette en ny ER-løsning for [Spørreskjema](https://docs.microsoft.com/dynamics365/human-resources/hr-learning-questionnaires)-modulen. Denne nye ER-løsningen lar deg utforme en rapport ved å bruke et Microsoft Excel-regneark som en mal. Deretter kan du generere **Spørreskjema**-rapporten i Excel- eller PDF-format, i tillegg til å generere den eksisterende SQL Server Reporting Services-rapporten (SSRS). Du kan også endre den nye rapporten senere på forespørsel. Ingen koding er nødvendig.
+I dette eksemplet skal du opprette en ny ER-løsning for [Spørreskjema](../../../human-resources/hr-learning-questionnaires.md)-modulen. Denne nye ER-løsningen lar deg utforme en rapport ved å bruke et Microsoft Excel-regneark som en mal. Deretter kan du generere **Spørreskjema**-rapporten i Excel- eller PDF-format, i tillegg til å generere den eksisterende SQL Server Reporting Services-rapporten (SSRS). Du kan også endre den nye rapporten senere på forespørsel. Ingen koding er nødvendig.
 
 1. Hvis du vil kjøre den eksisterende rapporten, går du til **Spørreskjema** \> **Utforming** \> **Spørreskjemaer-rapporten**.
 

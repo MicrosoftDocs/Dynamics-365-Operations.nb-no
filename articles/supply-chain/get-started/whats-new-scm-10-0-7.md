@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 031feb3c2fa55b182deb0863cb1fc3d63652a03f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5004cb2ce2b601c51c641c2e9d6d2c4788729af9
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814882"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909311"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1007-january-2020"></a>Hva er nytt eller endret i Dynamics 365 Supply Chain Management 10.0.7 (januar 2020)
 
@@ -50,7 +50,7 @@ Microsoft Dynamics 365 Supply Chain Management 10.0.7 inkluderer plattformoppdat
 ### <a name="dynamics-365-2019-release-wave-2-plan"></a>Dynamics 365: 2019-frigivelsesbølge 2-planen
 Er du spent på kommende og nylig utgitte tilleggspakkefunksjoner i våre bedriftsprogrammer eller -plattform?
 
-Se [Dynamics 365: 2019-frigivelsesbølge 2-planen](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/). Vi har registrert alle detaljene, ende til ende, øverst til nederst, i et enkelt dokument som du kan bruke i planleggingen.
+Se [Dynamics 365: 2019-frigivelsesbølge 2-planen](/dynamics365-release-plan/2019wave2/). Vi har registrert alle detaljene, ende til ende, øverst til nederst, i et enkelt dokument som du kan bruke i planleggingen.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Fjernede og avskrevne funksjoner i Supply Chain Management
 

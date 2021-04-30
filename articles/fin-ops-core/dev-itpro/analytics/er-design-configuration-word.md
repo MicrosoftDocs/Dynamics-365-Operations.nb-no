@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: 4885caf017fa0f9d36d293fa32aad53c21d3f162
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 7790d7e581b9b4260a4c57af84b02a182dde953d
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753582"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894082"
 ---
 # <a name="design-a-new-er-configuration-to-generate-reports-in-word-format"></a>Utforme en ny ER-konfigurasjon for å generere rapporter i Word-format
 
@@ -38,7 +38,7 @@ Hvis du vil bruke et Word-dokument som en mal for rapporter i Word-format, kan d
 Er-formatkomponenten for løsningen må inneholde formatelementet **Excel\\Fil**, og dette formatelementet må være koblet til Word-dokumentet som skal brukes som mal for genererte rapporter ved kjøretid. Hvis du vil konfigurere ER-formatkomponenten, må du åpne [utkast](general-electronic-reporting.md#component-versioning)versjonen for den opprettede ER-konfigurasjonen i ER-formatutformingen. Legg deretter til elementet **Excel\\Fil**, knytt Word-malen til det redigerbare ER-formatet, og koble denne malen til elementet **Excel\\Fil** du la til.
 
 > [!NOTE]
-> Når du knytter til en mal manuelt, må du bruke en [dokumenttype](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management#configure-document-types) som tidligere har blitt [konfigurert](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents) for dette formålet, i ER-parameterne for å lagre maler i ER-formater.
+> Når du knytter til en mal manuelt, må du bruke en [dokumenttype](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types) som tidligere har blitt [konfigurert](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents) for dette formålet, i ER-parameterne for å lagre maler i ER-formater.
 
 ![Tilknytte en mal på Formatutforming-siden](./media/er-design-configuration-word-image3.gif)
 
@@ -46,11 +46,11 @@ Du kan legge til de nestede elementene **Excel\\Område** og **Excel\\Celle** fo
 
 ![Legge til nestede elementer på Formatutforming-siden](./media/er-design-configuration-word-image4.gif)
 
-Når du lagrer endringene i ER-formatet på utformingstidspunktet, lagres den hierarkiske formatstrukturen i den tilknyttede Word-malen som en [egendefinert XML-del](https://docs.microsoft.com/visualstudio/vsto/custom-xml-parts-overview?view=vs-2019) med navnet **Rapport**. Du må ha tilgang til den endrede malen, laste den ned fra Finance, lagre den lokalt og åpne den i skrivebordsversjonen av Word. Illustrasjonen nedenfor viser den lokalt lagrede eksempelmalen for kontrollrapporten som inneholder den egendefinerte XML-delen **Rapport**.
+Når du lagrer endringene i ER-formatet på utformingstidspunktet, lagres den hierarkiske formatstrukturen i den tilknyttede Word-malen som en [egendefinert XML-del](/visualstudio/vsto/custom-xml-parts-overview?view=vs-2019) med navnet **Rapport**. Du må ha tilgang til den endrede malen, laste den ned fra Finance, lagre den lokalt og åpne den i skrivebordsversjonen av Word. Illustrasjonen nedenfor viser den lokalt lagrede eksempelmalen for kontrollrapporten som inneholder den egendefinerte XML-delen **Rapport**.
 
 ![Forhåndsvise eksempelrapportmalen i skrivebordsversjonen av Word](./media/er-design-configuration-word-image5.gif)
 
-Når bindinger for formatelementene **Excel\\Område** og **Excel\\Celle** kjøres ved kjøretid, kommer dataene som hver binding leverer, inn i det genererte Word-dokumentet som et enkeltfelt i den egendefinerte XML-delen **Rapport**. Hvis du vil angi verdiene fra feltene i den egendefinerte XML-delen i et generert dokument, må du legge til de riktige Word-[innholdskontrollene](https://docs.microsoft.com/office/client-developer/word/content-controls-in-word) i Word-malen, slik at de kan fungere som plassholdere for data som fylles ut ved kjøretid. Hvis du vil angi hvordan innholdskontroller skal fylles ut, tilordner du hver innholdskontroll til det aktuelle feltet i den egendefinerte XML-delen **Rapport**.
+Når bindinger for formatelementene **Excel\\Område** og **Excel\\Celle** kjøres ved kjøretid, kommer dataene som hver binding leverer, inn i det genererte Word-dokumentet som et enkeltfelt i den egendefinerte XML-delen **Rapport**. Hvis du vil angi verdiene fra feltene i den egendefinerte XML-delen i et generert dokument, må du legge til de riktige Word-[innholdskontrollene](/office/client-developer/word/content-controls-in-word) i Word-malen, slik at de kan fungere som plassholdere for data som fylles ut ved kjøretid. Hvis du vil angi hvordan innholdskontroller skal fylles ut, tilordner du hver innholdskontroll til det aktuelle feltet i den egendefinerte XML-delen **Rapport**.
 
 ![Legge til og tilordne innholdskontroller i skrivebordsversjonen av Word](./media/er-design-configuration-word-image6.gif)
 

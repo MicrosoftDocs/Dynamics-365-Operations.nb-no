@@ -1,169 +1,195 @@
 ---
-title: Sky- og kantskalaenheter for arbeidsbelastninger for produksjon og lagerstyring
+title: Bruk skalaenheter for å øke fleksibiliteten for arbeidsbelastninger i Supply Chain Management
 description: Dette emnet inneholder informasjon om sky- og kantskalaenheter for arbeidsbelastninger for produksjon og lagerstyring.
 author: cabeln
-ms.date: 10/06/2020
+ms.date: 04/13/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: ''
-ms.assetid: ''
-ms.search.region: global
-ms.search.industry: SCM
+ms.search.region: Global
 ms.author: cabeln
-ms.search.validFrom: 2020-09-23
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 3eacc9d0cf53fa8af3ff166006cb8fab32445331
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.search.validFrom: 2021-04-13
+ms.dyn365.ops.version: 10.0.19
+ms.openlocfilehash: c47088edd89413d196e904bc7eaa115585bf8464
+ms.sourcegitcommit: 639175a39da38edd13e21eeb5a1a5ca62fa44d99
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5836716"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "5899149"
 ---
-# <a name="cloud-and-edge-scale-units-for-manufacturing-and-warehouse-management-workloads"></a>Sky- og kantskalaenheter for arbeidsbelastninger for produksjon og lagerstyring
+# <a name="use-scale-units-to-help-increase-resilience-for-supply-chain-management-workloads"></a>Bruk skalaenheter for å øke fleksibiliteten for arbeidsbelastninger i Supply Chain Management
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Sky- og kantskalaenheter muliggjør distribusjon av arbeidsmengder for produksjon og lagerkjøring blant ulike miljøer. Denne funksjonaliteten kan bidra til å forbedre ytelsen, forhindre tjenesteavbrudd og gi maksimal oppetid. Den leveres av følgende tilleggsprogrammer:
+> [!IMPORTANT]
+> Skalaenhetsfunksjonen for Microsoft Dynamics 365 Supply Chain Management gjøres tilgjengelig for deg under de betingelsene som styrer bruken av tjenesten. Hvis du vil ha mer informasjon, kan du se [Juridisk informasjon om Microsoft Dynamics](https://go.microsoft.com/fwlink/?LinkID=290927).
+>
+> Hvis du aktiverer sky- og kantskalaenheter, bekrefter du at du forstår at noen data som er knyttet til konfigurasjonen og behandling av sky- og kantskalaenheter, kan lagres i et datasenter som er plassert i USA. Hvis du vil lære mer om databehandling for sky- og kantskalaenheter, kan du se [Databehandling under behandling av skalaenheter](#data-processing-management) senere i dette emnet.
 
-- Cloud Scale Unit-tillegget for Dynamics 365 Supply Chain Management
-- Edge Scale Unit-tillegget for Dynamics 365 Supply Chain Management
+## <a name="core-value-proposition-for-scale-units"></a>Kjerneverdiforslag for skalaenheter
 
 Firmaer som jobber med produksjon og distribusjon, må kunne kjøre viktige forretningsprosesser hele døgnet, uten avbrudd og ved skala. Med sky- og kantskalaenheter kan firmaer kjøre viktige produksjons- og lagerprosesser uten avbrudd, selv når det gjelder nettverkstilkobling eller forsinkelsesproblemer.
 
-## <a name="public-preview-information"></a>Informasjon om offentlig forhåndsversjon
+Sky- og kantskalaenheter muliggjør distribusjon av arbeidsmengder for produksjon og lagerkjøring blant ulike miljøer. Denne funksjonaliteten kan bidra til å forbedre ytelsen, forhindre tjenesteavbrudd og gi maksimal oppetid. Skalaenheter leveres ved hjelp av følgende tillegg for Supply Chain Management-abonnementet:
 
-Forhåndsversjonen gir ett miljø som fungerer som et skybasert senter for Dynamics 365 Supply Chain Management-miljøet ditt og ett miljø som fungerer som en skyskalaenhet.
+- Cloud Scale Unit-tillegget for Dynamics 365 Supply Chain Management (*tilgjengelig april 2021*)
+- Edge Scale Unit-tillegget for Dynamics 365 Supply Chain Management (*tilgjengelig snart*)
 
-<!-- You will also be able to use Local Business Data (LBD) to configure an on-premises environment as an edge scale unit for the hub you received as part of the preview program.-->
-
-### <a name="preview-availability"></a>Forhåndsversjonstilgjengelighet
-
-Forhåndsversjonen for sky- og kantskalaenheter blir tilgjengelig for eksisterende kunder av Supply Chain Management i oktober 2020.
-
-Hvis du vil ha tilgang til forhåndsversjoen for oktober 10.0.15/Platform Update 39 for distribusjon i miljøet for [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/v2), må du være del av forhåndsversjonsprogrammet for tidlig tilgang (også kalt PEAP) for Supply Chain Management. Du kan bli med i PEAP hvis du allerede er medlem av [Dynamics Insider Program](https://experience.dynamics.com/insider). Velg programmet som heter Finance and Operations: Forhåndsversjonsprogram for tidlig tilgang (PEAP).
-
-> [!IMPORTANT]
-> Skalaenhetsfunksjonen for Supply Chain Management blir bare tilgjengelig hvis du godtar [vilkårene for Cloud + Edge-forhåndsversjonen for Finance and Operations](https://Aka.ms/SCMCnETerms).
-
-### <a name="data-processing-for-the-preview"></a>Databehandling for forhåndsversjonen
-
-Under den offentlige forhåndsversjonen vil enkelte administrasjonstjenester bare bli driftet i USA. Når funksjonen imidlertid blir allment tilgjengelig, vil disse administrasjonstjenestene være tilgjengelige i alle de samme områdene som støttes av Supply Chain Management. Dette påvirker overføring og lagring av administrativ informasjon som brukes av skalaenhetsbehandling, inkludert:
-
-- Leiernavn og ID-er
-- ID-er for LCS-prosjekter
-- Administrator-e-post som brukes til å logge på
-- Miljø-ID-er for senter og skalaenheter
-- Arbeidsbelastningskonfigurasjoner
-- Innsamlede måledata (for eksempel ventetid og gjennomstrømming) som vises på kartanalysesiden
-
-Data som overføres til og lagres i datasentrene i USA, blir slettet når forhåndsversjonsmiljøet avsluttes.
-
-### <a name="sign-up-for-the-preview"></a>Registrere deg for forhåndsvisning
-
-Hvis du vil registrere deg for Cloud- og Edge-forhåndsversjonen for Supply Chain Management, må organisasjonen din allerede ha et aktivert Supply Chain Management-skymiljø.
-
-Skalaenhetsfunksjonene er for tiden i offentlig forhåndsversjon. Når du registrerer deg, må du bruke en brukerkonto på den bestemte leieren. Du må også være en prosjekteier eller en miljøadministrator i LCS for et aktivt Dynamics 365 LCS-prosjekt i den leieren.
-
-Når du registrerer deg for forhåndsversjonen, velger du en leier og går gjennom registreringstrinnene. Så snart Microsoft kan tildele forhåndsversjonskapasiteten, sender vi deg en e-post som inneholder klargjøringsdetaljer og kampanjekodene for to miljøer (et senter og en skalaenhet) for det riktige LCS-prosjektet. Deretter kan du distribuere de to miljøene som sandkassemiljøer med lag 2. Disse miljøene vil være gyldige i 60 dager fra opprettelsesdatoen til kampanjekodene. Du må ikke bruke de to miljøene før trinnet som er beskrevet i det neste avsnittet, er fullført.
-
-Når du har bekreftet med Microsoft at de to miljøene er distribuert ved hjelp av kampanjekodene, blir et av miljøene konfigurert til å fungere som et senter, og det andre blir konfigurert til å fungere som en skalaenhet. Du kan deretter konfigurere skalaenhetene og distribuere valgte arbeidsbelastninger for lagerstyring og produksjon ved å bruke [Scale Unit Manager-portalen](https://aka.ms/SCMSUM).
-
-Forhåndsversjonsmiljøer blir automatisk slettet etter 60 dager. De kan imidlertid bli slettet tidligere hvis det ser ut til at de ikke brukes. Når forhåndsversjonsmiljøet er slettet, kan du registrere deg og sette deg i kø for en ny forhåndsversjonsdistribusjon.
-
-Hvis du vil registrere deg for forhåndsversjonen, går du til [Scale Unit Manager-portalen](https://aka.ms/SCMSUM).
-
-### <a name="limitations-that-apply-during-the-preview-period"></a>Begrensninger som gjelder under forhåndsversjonsperioden
-
-> [!IMPORTANT]
-> For den første fasen av forhåndsversjonsprogrammet for denne funksjonen støtter Microsoft bare sentre som har skyskalaenheter, ikke sentre med kantskalaenheter. Kantskalaenheter installeres lokalt og forventes å bli tilgjengelige i en kommende fase av programmet.
-
-siden sky- og kantskalaenheter er en forhåndsversjonsfunksjon, er tjenester som er tilknyttet disse, for øyeblikket tilgjengelige i begrensede land og områder. Hvis du aktiverer sky- og kantskalaenheter, bekrefter du at du forstår at noen data som er knyttet til konfigurasjonen og behandling av sky- og kantskalaenheter, kan lagres i et datasenter som er plassert i USA. Hvis du aktiverer sky- og kantskalaenheter, godtar du også [vilkårene for Cloud- + Edge-forhåndsversjon for Finance and Operations](https://Aka.ms/SCMCnETerms). Hvis du vil ha mer informasjon om sky- og kantskalaenheter, kan du se [dokumentasjonen](https://aka.ms/scmcne).
-
-Personvernet ditt er viktig for Microsoft. Les [personvernerklæringen](https://aka.ms/privacy) for å finne ut mer.
-
-> [!IMPORTANT]
-> Noen forretningsfunksjoner støttes ikke fullstendig i den offentlige forhåndsversjonen når arbeidsbelastninger brukes på skalaenheter. Hvis du vil ha mer informasjon om de funksjonelle arbeidsbelastningene, kan du se avsnittene senere i dette emnet.
+Funksjoner for arbeidsbelastninger lanseres kontinuerlig gjennom inkrementelle forbedringer.
 
 ## <a name="scale-units-and-dedicated-workloads"></a>Skalaenheter og dedikerte arbeidsbelastninger
 
+Skalerings enheter utvider Supply Chain Management-sentermiljøet ved å legge til dedikert behandlingskapasitet. Skalaenheter kan kjøres i skyen. De kan også kjøre på kanten på det lokale anlegget.
+
 :::image type="content" source="./media/cloud_edge-HeroDiagram.png" alt-text="Dynamics 365 med skalaenheter":::
 
-Skalerings enheter utvider Supply Chain Management-sentermiljøet ved å legge til dedikert behandlingskapasitet. Skalaenheter kan kjøres i skyen. De kan også kjøre på kanten på det lokale anlegget. Skalaenheter kan midlertidig kobles fra sentermiljøet. Når de er koblet til, mottar skalaenheter all informasjonen som kreves for å kjøre den dedikerte behandlingen for tildelte arbeidsbelastninger.
+Skalaenheter gir fleksibilitet, pålitelighet og skala for de tilordnede arbeidsmengdene. Kantskalaenheter kan kobles midlertidig fra nettskymiljøet, og arbeiderne kan fortsette å jobbe i de tilordnede arbeidsmengdene på kanten.
 
-:::image type="content" source="media/cloud_edge-previewoptions.png" alt-text="Skalaenhetsalternativer i offentlig forhåndsversjon":::
+En *arbeidsbelastning* er et definert sett med forretningsfunksjoner som kan beregnes som en faktor og delegeres til en skalaenhet. Selv om arbeidsbelastningen for lagerstyring er lansert, er arbeidsbelastningen for produksjonsutførelse fremdeles i forhåndsversjon.
 
-For den offentlige forhåndsversjonen kan du konfigurere et sentermiljø med valgte arbeidsbelastninger på en skyskalaenhet ved hjelp Scale Unit Manager-portalen. Forhåndsversjonsdeltakere som har tilgang til et lokalt forretningsdatamiljø (LBD), kan også konfigurere LBD-miljøet som en kantskalaenhet.
+Du kan konfigurere sentermiljøet og skyskalaenhetene for utvalgte arbeidsbelastninger ved hjelp av [Scale Unit Manager-portalen](https://sum.dynamics.com). Du kan også tilordne flere arbeidsbelastninger per skalaenhet. Hvis du vil ha informasjon om forutsetningene og begrensningene for skyskalaenheter i den gjeldende versjonen, kan du se [Forutsetninger og begrensninger for skyskalaenheter](#cloud-scale-unit-prerequisites) senere i dette emnet.
 
-En arbeidsbelastning er et definert sett med forretningsfunksjoner som kan beregnes som en faktor og delegeres til en skalaenhet. Forhåndsversjonsfunksjonen er for øyeblikket to typer arbeidsbelastninger:
+### <a name="dedicated-warehouse-management-workload-capabilities-in-a-scale-unit"></a>Dedikerte funksjoner for arbeidsbelastning for lagerstyring i en skalaenhet
 
-- Produksjonsutførelse
-- Lagerstyring
+Lagerstyringens arbeidsbelastning er den første distribuerte arbeidsbelastningen for skalaenheter som er lansert for allmenn tilgjengelighet.
 
-Du kan tilordne én av hver type arbeidsbelastning per skalaenhet. 
+For lagerstyring leverer skalaenheter følgende funksjoner:
+
+- Systemet kan behandle utvalgte bølgemetoder for salgsordrer og etterfylling på forespørsel.
+- Lagermedarbeidere kan kjøre lagerarbeid for salg og etterfyllings på forespørsel ved hjelp av mobilappen Lagerstyring.
+- Lagerarbeidere kan be om lagerbeholdning ved hjelp av mobilappen Lagerstyring.
+- Lagerarbeidere kan opprette og kjøre lagerflyttinger ved hjelp av mobilappen Lagerstyring.
+- Lagerarbeidere kan registrere bestillinger og utføre plasseringer ved hjelp av mobilappen Lagerstyring.
+
+Hvis du vil ha mer informasjon, kan du se [Arbeidsbelastninger for lagerstyring for sky- og kantskalaenheter](cloud-edge-workload-warehousing.md).
 
 ### <a name="dedicated-manufacturing-execution-workload-capabilities-in-a-scale-unit"></a>Dedikerte funksjoner for arbeidsbelastning for produksjonskjøring i en skalaenhet
 
-Når det gjelder produksjonskjøring, gir sky- og kantskalaenheter følgende funksjoner, selv når kantenhetene ikke er koblet til skyen:
+Den første lanseringen av produksjonsarbeidsbelastningen er i forhåndsversjon og leverer følgende funksjoner:
 
 - Maskinoperatører og produksjonsledere har tilgang til driftsproduksjonsplanen.
 - Maskinoperatører kan holde planen oppdatert ved å kjøre separat og behandle produksjonsjobber.
 - Produksjonslederen kan justere driftsplanen.
 - Arbeidere kan få tilgang til tid og fremmøte for innstempling og utstempling på kanten for å sikre riktig beregning av arbeiderlønn.
 
-Hvis du vil ha mer informasjon, kan du se [detaljer for arbeidsbelastning for produksjonsskalaenhet](cloud-edge-workload-manufacturing.md).
+Hvis du vil ha mer informasjon, kan du se [Arbeidsbelastninger for produksjonsutførelse for sky- og kantskalaenheter](cloud-edge-workload-manufacturing.md).
 
-### <a name="dedicated-warehouse-management-workload-capabilities-in-a-scale-unit"></a>Dedikerte funksjoner for arbeidsbelastning for lagerstyring i en skalaenhet
+## <a name="considerations-before-you-enable-the-distributed-hybrid-topology-for-supply-chain-management"></a>Vurderinger før du aktiverer den distribuerte, hybride topologien for Supply Chain Management
 
-Når det gjelder lagerstyring, gir sky- og kantskalaenheter følgende funksjoner, selv når kantenhetene ikke er koblet til skyen:
+Ved å aktivere den distribuerte, hybride topologien kan du endre skymiljøet i Supply Chain Management, slik at det fungerer som et senter. Du kan også tilknytte flere miljøer som er konfigurert som skalaenheter i skyen eller på kanten.
 
-- Behandling av valgte bølgemetoder er aktivert for salgsordrer og etterfylling på forespørsel.
-- Lagermedarbeidere kan kjøre lagerarbeid for salg og etterfyllings på forespørsel ved hjelp av mobilappen Lagerstyring.
-- Lagerarbeidere kan be om lagerbeholdning ved hjelp av mobilappen Lagerstyring.
-- Lagerarbeidere kan opprette og kjøre lagerflyttinger ved hjelp av mobilappen Lagerstyring.
-- Lagerarbeidere kan registrere bestillinger og utføre plasseringer ved hjelp av mobilappen Lagerstyring.
+### <a name="prerequisites-and-limitations-for-cloud-scale-units"></a><a name="cloud-scale-unit-prerequisites"></a>Forutsetninger og begrensninger for skyskalaenheter
 
-Hvis du vil ha mer informasjon, kan du se [detaljer for arbeidsbelastning for lagerskalaenhet](cloud-edge-workload-warehousing.md).
+I den gjeldende lanseringen av skalaenheter er det noen funksjoner som ennå ikke er tilgjengelige, men som kan legges til i trinnvise lanseringer over tid.
 
-## <a name="onboard-scale-units-for-your-supply-chain-management-environment"></a>Innføring av skalaenheter for Supply Chain Management-miljøet
+#### <a name="you-must-be-a-licensed-customer-of-supply-chain-management"></a>Du må være en lisensiert Supply Chain Management-kunde
 
-### <a name="deploy-the-preview-for-cloud-and-edge-scale-units"></a>Distribuer forhåndsversjonen for sky- og kantskalaenheter
+For å ta i bruk den distribuerte topologien må du ha en lisens for Supply Chain Management. Det eksisterende skymiljøet vil bli senteret i den hybride topologien. Du kan deklarere både sandkassemiljøer og produksjonsmiljøer som sentermiljøer, og du kan legge til skalaenheter i henhold til tilleggene du skaffer.
 
-Følgende illustrasjon viser registreringen og klargjøringsflyten for den offentlige forhåndsversjonen for skyskalaenheter.
+#### <a name="your-existing-project-must-be-administered-via-the-global-commercial-version-of-lcs"></a>Eksisterende prosjekter må administreres via den globale kommersielle versjonen av LCS
 
-:::image type="content" source="media/cloud_edge-previewsignup.png" alt-text="Registreringstrinn for forhåndsversjon":::
+Eksisterende Microsoft Dynamics Lifecyle Services-prosjekter (LCS) må oppfylle følgende versjonskrav:
 
-### <a name="select-your-lcs-project-tenant-and-the-detailed-preview-process"></a>Velg LCS-prosjektleieren og den detaljerte forhåndsversjonsprosessen
+- Prosjektet må administreres via den globale kommersielle versjonen av LCS på [lcs.dynamics.com](https://lcs.dynamics.com).
+- Lokale versjoner av LCS (for eksempel [eu.lcs.dynamics.com](https://eu.lcs.dynamics.com) og [fr.lcs.dynamics.com](https://fr.lcs.dynamics.com)) støttes ikke.
+- Governmental Cloud-versjoner av LCS støttes ikke.
+- Mooncake-versjonen av LCS støttes ikke.
 
-I den offentlige forhåndsversjonen viser [Scale Unig Manager-portalen](https://aka.ms/SCMSUM) listen over leiere som kontoen din er en del av, og hvor du er en eier eller miljøadministrator for et LCS-prosjekt.
+#### <a name="your-current-production-environment-must-be-of-the-self-service-type-in-lcs"></a>Det gjeldende produksjonsmiljøet må være av den selvbetjente typen i LCS
 
-Hvis leieren du leter etter, ikke finnes i listen, kan du gå til [LCS](https://lcs.dynamics.com/v2) og kontrollere at du er en miljøadministrator eller en prosjekteier for LCS-prosjektet for denne leieren. Vær oppmerksom på at bare Azure Active Directory-kontoer (Azure AD) fra den valgte leieren er autorisert til å fullføre registreringen.
+Det gjeldende produksjonsmiljøet må være tagget med **Selvbetjent**-typen i LCS. Denne typen indikerer at leieren i LCS-prosjektet allerede er konvertert, slik at det støtter Azure Service Fabric-vertsmodellen.
+
+> [!IMPORTANT]
+> Miljøtyper som kjører som infrastruktur som en tjeneste (IaaS), støttes ikke. Disse miljøene merkes vanligvis med typen **Microsoft-administrert** i LCS. Hvis du har miljøer av denne typen, kan du samarbeide med Microsoft-kontakten for å forstå tidslinjen for migrering til typen **Selvbetjent**.
+
+Microsoft er i ferd med en overfang for alle skymiljøer i Supply Chain Management fra en IaaS-modell til en topologi som driftes i Service Fabric. Denne flyttingen gir bedre skalerbarhet og bidrar til å forenkle serviceadministrasjonen. Derfor er distribusjons- og vedlikeholdsoperasjoner raskere. På samme måte migreres servicekomponenter til konseptet med mikrotjenester, og servicevertsmodellen vil [gå over](https://docs.microsoft.com/virtualization/windowscontainers/about/containers-vs-vm) fra en VM-modell (virtuell maskin) til en lett arkitektur med beholdere.
+
+I siste instans vil den samme Service Fabric-baserte tjenesteinfrastrukturen som er basert på beholdere, drive både sky- og kantforekomster av tjenesten, uansett om en forekomst ligger i skyen eller en skalaenhet i skyen eller på kanten.
+
+Før du kan ta i bruk den hybride topologien som støtter skalaenheter, må prosjektleiere gå over til den Service Fabric-driftede modellen. I tillegg må ethvert miljø som fungerer som et senter, konverteres.
+
+> [!TIP]
+> Hvis du vil spørre om statusen til LCS-prosjektleieren, kan du slå opp typen miljø i [LCS](https://lcs.dynamics.com/) eller ta kontakt med partneren din eller Microsoft-kontakten.
+
+#### <a name="local-business-data-on-premises-environments-arent-supported-as-hubs-for-scale-units"></a>Lokale forretningsdatamiljøer (lokale miljøer) støttes ikke som sentre for skalaenheter
+
+Lokale miljøer kan ikke fungere som sentre for skalaenheter. Sentermiljøer må alltid være skybaserte.
+
+#### <a name="scale-unit-management-capabilities-are-limited"></a>Administrasjonsfunksjoner for skalaenheter er begrenset
+
+Administrasjonsfunksjoner som kan bidra med bevegelser av arbeidsbelastninger, er begrenset. Enkente administrasjonsoperasjoner støttes ikke via selvbetjening, og du må kanskje be om støtte via en partner eller Microsoft-kontakt. Eksempler inkluderer noen arbeidsbelastningsbevegelser mellom skalaenheter og midlertidige ad hoc-bevegelser i nødscenarier.
+
+#### <a name="metrics-and-measurements-arent-yet-available"></a>Måledata og målinger er ennå ikke tilgjengelig
+
+Måledata og målinger som kan hjelpe deg med å velge det beste programmet for skalaenheter, er ennå ikke tilgjengelige. Samarbeid med Microsoft-kontakten din eller implementeringspartneren for å velge det mest fordelaktige programmet.
+
+### <a name="data-processing-during-management-of-scale-units"></a><a name="data-processing-management"></a>Databehandling under administrasjon av skalaenheter
+
+Når du aktiverer Dynamics 365-miljøet for å støtte den distribuerte, hybride topologien for sky- og kantskalaenheter, vil enkelte administrasjonstjenester bare drifts i USA, som for LCS. Denne virkemåten påvirker overføringen og lagringen av noe administrativ informasjon og konfigurasjonsinformasjon som brukes av [Scale Unit Manager-portalen](https://sum.dynamics.com). Her er noen eksempler:
+
+- Leiernavn og ID-er
+- ID-er for LCS-prosjekter
+- E-postadresser til administrator og prosjekteier som brukes ved pålogging
+- Miljø-ID-er for senteret og skalaenhetene
+- Konfigurasjoner av arbeidsbelastninger, inkludert navn og fysiske adresser for juridiske enheter og anlegg, slik at topologien kan vises på et geografisk kart
+- Innsamlet metrikk (for eksempel ventetid og produksjon) som blir vist på kartanalysesiden for å hjelpe deg med å velge den mest fordelaktige bruken av skalaenhetene dine.
+
+Data som overføres til og lagres i datasentre i USA, blir slettet i henhold til Microsofts retningslinjer for databevaring. Personvernet ditt er viktig for Microsoft. Les [personvernerklæringen](https://go.microsoft.com/fwlink/?LinkId=521839) for å finne ut mer.
+
+## <a name="onboarding-in-two-stages"></a>Pålasting to stadier
+
+Prosessen med pålastning i en distribuert, hybrid topologi har to stadier. I det første stadiet må du validere tilpasninger for å sikre at de fungerer i den distribuerte topologien som har skalaenheter. Sandkasse- og produksjonsmiljøer flyttes bare i løpet av det andre stadiet.
+
+### <a name="stage-1-evaluate-customizations-in-one-box-development-environments"></a>Stadium 1: Evaluere tilpasninger i utviklingsmiljøer med én boks
+
+Før du begynner å pålaste sandkasse- eller produksjonsmiljøet, anbefaler vi at du utforsker skalaenheter i et utviklingsoppsett, for eksempel miljø med én boks (kalles også et nivå 1-miljø), slik at du kan validere prosesser, tilpasninger og løsninger. I løpet av dette stadiet blir data og tilpasninger brukt i miljøene med én boks. Ett miljø tar rollen som senteret, og det andre tar rollen som en skalaenhet. Dette oppsettet gir den beste måten å identifisere og løse problemer på. Den nyeste builden for tidlig tilgang (PEAP) kan også brukes til å fullføre dette stadiet.
+
+For stadium 1 bør du bruke [distribusjonsverktøy for skalaenheter for utviklingsmiljøer med én boks](https://github.com/microsoft/SCMScaleUnitDevTools). Ved hjelp av disse verktøyene kan du konfigurere senteret og skalere enhetene i ett eller to separate miljøer med én boks. Verktøyene leveres som binær lansering og i kildekode på GitHub. Studer wiki-en til prosjektet, som omfatter en [trinnvis bruksveiledning](https://github.com/microsoft/SCMScaleUnitDevTools/wiki/Step-by-step-usage-guide) som beskriver hvordan verktøyene brukes.
+
+### <a name="stage-2-acquire-add-ins-and-deploy-in-your-sandbox-and-production-environments"></a>Stadium 2: Skaffe tillegg, og distribuere dem i sandkasse- og produksjonsmiljøene
+
+Hvis du vil klargjøre ett av sandkasse- eller produksjonsmiljøene i den nye topologien, må du anskaffe tillegg for én eller flere skyskalaenheter (og for kantskalaenheter i fremtiden). Tilleggene vil gi tilsvarende prosjekt- og miljøspor i [LCS](https://lcs.dynamics.com/), slik at skalaenhetsmiljøene kan distribueres.
+
+> [!NOTE]
+> Tilleggene for skalaenhetene er ikke sammenknyttet til et begrenset antall brukere, men kan brukes av alle brukere i det eksisterende abonnementet, basert på rollene som administratoren tilordner.
+
+Skalaenheter tilbys i flere lagerenheter (SKU-er) og prissettingsalternativer. Derfor kan du velge det alternativet som passer best til ditt planlagte månedlige transaksjonsvolum og ytelseskrav.
+
+SKU-en på grunnivå kalles *Grunnleggende*, og den mer utførende SKU-en kalles *Standard*. Hver SKU er forhåndslastet med et bestemt antall månedlige transaksjoner. Du kan imidlertid øke det månedlige transaksjonsbudsjettet ved å legge til overbetalingstillegg for hver SKU.
+
+:::image type="content" source="media/SKUs-highlevel.png" alt-text="Tillegg for skyskalaenheter":::
+
+> [!TIP]
+> Samarbeid med partneren din og Microsoft for å forstå den månedlige transaksjonsstørrelsen du trenger, for å identifisere størrelsen på transaksjonen som passer best til dine behov.
+
+Innkjøpet av hvert skalaenhetstillegg gir deg ikke bare et månedlig volum av transaksjoner, men gir deg også rett til et bestemt antall miljøspor i LCS. For hvert Cloud Scale Unit-tillegg har du rett på én ny produksjonsplass og én ny plass i sandkassen. Under introduksjonsprosessen vil det bli lagt til et nytt LCS-prosjekt som har disse plassene. Bruksrettighetene for disse plasene er bundet, slik at disse må brukes som skalaenheter som har et skysenter.
+
+Tillegg for overforbruk gir deg ikke rett til nye miljøplasser.
+
+Hvis du vil anskaffe flere sandkassemiljøer, kan du kjøpe ekstra vanlige sandkasseplasser. Microsoft kan deretter hjelpe deg med å aktivere disse plassene som skalaenheter for sandkasser for den hybride topologien.
+
+## <a name="onboard-to-the-distributed-hybrid-topology-for-supply-chain-management"></a>Ta i bruk den distribuerte, hybride topologien for Supply Chain Management
+
+### <a name="select-your-lcs-project-tenant-and-the-detailed-onboarding-process"></a>Velg LCS-prosjektleieren og den detaljerte pålastingsprosessen
+
+Når du er ferdig med å planlegge hvordan du vil ta i bruk den distribuerte, hybride topologien for Supply Chain Management, bruker du [Scale Unit Manager-portalen](https://aka.ms/SCMSUM) til å starte pålastingsprosessen. I portalen velger du fanen **Dynamics 365-leiere**. Denne fanen viser listen over leiere som kontoen din er en del av, og hvor du er en eier eller miljøadministrator for et LCS-prosjekt.
+
+Hvis leieren du leter etter, ikke finnes i listen, kan du gå til [LCS](https://lcs.dynamics.com/v2) og kontrollere at du er en miljøadministrator eller en prosjekteier for LCS-prosjektet for denne leieren. Bare Azure Active Directory-kontoer (Azure AD) fra den valgte leieren er autorisert til å fullføre registreringen.
 
 > [!NOTE]
 > Etter at du har brukt endringer på LCS, kan det ta opptil 30 minutter før listen over leiere gjenspeiler endringene.
 
-Listen viser registreringsstatusen for hver leier.
+Listen viser pålastingsstatusen for hver leier.
 
-:::image type="content" source="media/cloud_edge-Signup1.png" alt-text="Registreringsalternativ for en leier":::
+:::image type="content" source="media/cloud_edge-EnableHybrid1.png" alt-text="Liste over leiere på fanen Dynamics 365-leiere":::
 
-Velg **Klikk på her for å registrere deg**-kobling for å registrere en LCS-leier som skal delta i forhåndsversjonen. Du må godta vilkårene. Du må også oppgi en e-postadresse for firma som Microsoft kan sende kommunikasjon som er knyttet til registreringsprosessen for forhåndsversjonen, til.
+Velg **Klikk her for å komme i gang** for å be om pålasting for LCS-leieren. Du må godta vilkårene. Du må også oppgi en e-postadresse for firma der Microsoft kan sende kommunikasjon som er knyttet til pålastingsprosessen.
 
-:::image type="content" source="media/cloud_edge-Signup2.png" alt-text="Registreringsinnsending for en leier":::
+:::image type="content" source="media/cloud_edge-EnableHybrid2.png" alt-text="Registreringsinnsending for en leier":::
 
-Microsoft vil se gjennom forespørselen din og gi deg beskjed om de neste trinnene ved å sende en e-post til adressen du har oppgitt i registreringsskjemaet.
+Microsoft vil se gjennom forespørselen din og gi deg beskjed om de neste trinnene ved å sende en e-post til adressen du har oppgitt i registreringsskjemaet. Microsoft vil samarbeide nøye med deg for å aktivere skalaenheter i hybridtopologien for forretningsscenariet.
 
-Når du har fått tilgang til forhåndsversjonsprogrammet, mottar du to kampanjekoder for LCS-prosjektet. Du kan nå bruke disse kampanjekodene til å distribuere to miljøer i LCS. Miljøene må bruke PEAP-utgaven 10.0.15 eller nyere. Når du er ferdig med å bruke kampanjekodene, må du varsle Microsoft (som beskrevet) slik at vi kan fullføre aktiveringen av miljøene for forhåndsversjonsfunksjonene. Microsoft gir deg beskjed når dette konfigurasjonstrinnet er fullført.
-
-Du kan nå starte å konfigurere skalaenheter og arbeidsbelastninger i forhåndsversjonsmiljøet.
-
-> [!IMPORTANT]
-> Når du konfigurerer skyskalaenheter, kan du [utføre alle de nødvendige trinnene i Scale Unit Manager-portalen](#scale-unit-manager-portal).
-<!-- 
-> If want to use edge scale units with your preview deployment, you must do all scale unit configuration in the user interface on the hub as described in [Configure the hub environment for use with edge scale units](cloud-edge-edge-scale-units-lbd.md#configure-the-hub-environment). You can't use Scale Unit Manager portal if you include an edge scale unit. -->
+Når pålastingen er fullført, kan du bruke porten til å konfigurere skalaenheter og arbeidsbelastninger.
 
 ### <a name="manage-cloud-scale-units-and-workloads-by-using-the-scale-unit-manager-portal"></a><a name="scale-unit-manager-portal"></a>Administrer skalaenheter og arbeidsbelastninger ved å bruke Scale Unit Manager-portalen
 
@@ -171,21 +197,15 @@ Gå til [Scale Unit Manager-portalen](https://aka.ms/SCMSUM), og logg på ved hj
 
 :::image type="content" source="media/cloud_edge-Manage.png" alt-text="Administrering av skalaenhet og arbeidsbelastning":::
 
-Hvis du vil legge til en eller flere skalaenheter som er tilgjengelige i topologien, velger du **Legg til skalaenheter**. I forhåndsversjonen skal du se skyskalaenheten du distribuerte fra en av kampanjekodene du mottok som en del av forhåndsversjonsprogrammet.
+Hvis du vil legge til en eller flere skalaenheter som er tilgjengelige i abonnementene, velger du **Legg til skalaenheter**.
 
-<!--  [!IMPORTANT]
-> In the public preview, the Scale Unit Manager portal shows the cloud scale unit that you received as part of the preview program. Any edge scale unit that you created based on an LBD configuration can't be managed in the Scale Unit Manager portal yet. For configuration details, see [Deploy custom edge scale units on custom hardware using LBD](cloud-edge-edge-scale-units-lbd.md) -->
-
-I **Definerte arbeidsbelastninger**-fanen bruker du **Opprett arbeidsbelastning**-knappen til å legge til en arbeidsbelastning for lagerstyring eller produksjonskjøring i en av skalaenhetene. For hver arbeidsbelastning må du angi konteksten for prosessene som skal eies av arbeidsbelastningen. Når det gjelder arbeidsbelastninger for lagerstyring, er konteksten et bestemt lager på et bestemt område og en bestemt juridisk enhet. For arbeidsbelastninger for produksjonskjøring er konteksten et bestemt område i en juridisk enhet.
+I **Definerte arbeidsbelastninger**-fanen bruker du **Opprett arbeidsbelastning**-knappen til å legge til en arbeidsbelastning for lagerstyring i en av skalaenhetene. For hver arbeidsbelastning må du angi konteksten for prosessene som skal eies av arbeidsbelastningen. Når det gjelder arbeidsbelastninger for lagerstyring, er konteksten et bestemt lager på et bestemt område og en bestemt juridisk enhet.
 
 :::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Oppretting av arbeidsbelastning":::
 
-> [!IMPORTANT]
-> Med Scale Unit Manager-portalen i forhåndsversjonen kan du ikke fjerne arbeidsbelastninger fra skalaenheter eller oppheve tilordning av en skalaenhet fra en senter etter at tilordningen er opprettet. Hvis du må fjerne en tilordning, kontakter du kontaktpersonen for administrasjonen av forhåndsversjonsprogrammet.
+> [!TIP]
+> Over tid vil inkrementelle forbedringer legges til i Scale Unit Manager-opplevelsen for å gjøre det enklere å styre livssyklusadministrasjonen. De spesifikke egenskapene for den gjeldende versjonen er dokumentert i en håndbok for pålasting som er tilgjengelig for kunder som er i ferd med å ta i bruk den distribuerte, hybride topologien for Supply Chain Management. <!-- KFM: Add a link to the handbook when it is published -->
 
-<!-- ### Create an edge scale unit using your custom on-premises hardware appliance
-
-In the public preview, you can create on-premises edge scale units on your custom hardware using the LBD environments. For details, see [Deploy custom edge scale units on custom hardware using LBD](cloud-edge-edge-scale-units-lbd.md). -->
-
+[!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

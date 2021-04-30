@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a94c5371db10fa4f0090f2d177b1a01233ab0f30
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fe02a7b785b7d53763f314eec4d9b23fe723173a
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826041"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910191"
 ---
 # <a name="inventory-journals"></a>Lagerjournaler
 
@@ -95,7 +95,7 @@ Dataenheter støtter følgende typer integrasjonsscenarioer:
 -    Synkron tjeneste (OData)
 -  Asynkron integrering
 
-Hvis du vil ha mer informasjon, kan du se [Dataenheter](../../dev-itpro/data-entities/data-entities.md).
+Hvis du vil ha mer informasjon, kan du se [Dataenheter](../../fin-ops-core/dev-itpro/data-entities/data-entities.md).
 
 > [!NOTE]
 > Ikke alle lagerjournaler er OData-aktivert. Derfor kan du ikke bruke Excel-datakoblingen for å hente data som er publisert, oppdatert og importert tilbake til Supply Chain Management. 
@@ -113,7 +113,7 @@ Disse to lagerjournalene støtter bare *Initialiser lager*-scenarioet som en del
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Dataenheter](../../dev-itpro/data-entities/data-entities.md)
+[Dataenheter](../../fin-ops-core/dev-itpro/data-entities/data-entities.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

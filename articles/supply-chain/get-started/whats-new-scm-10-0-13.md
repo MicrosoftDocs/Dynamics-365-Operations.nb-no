@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: f405fba2b28ccae6b3aadbcf683d050040587cde
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f491cebacad1e289e6b004d573916eaf8ec0e110
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832184"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909555"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10013-october-2020"></a>Nyheter eller endringer i Dynamics 365 Supply Chain Management 10.0.13 (oktober 2020)
 
@@ -33,23 +33,23 @@ Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynam
 
 ## <a name="features-included-in-this-release"></a>Funksjoner inkludert i denne versjonen
 
-Denne versjonen inneholder følgende funksjoner: Funksjonstitlene kobler til mer informasjon på [Utgivelsesplaner](https://docs.microsoft.com/dynamics365/release-plans/)-området. Flere koblinger peker mot ekstra dokumentasjon som for øyeblikket er tilgjengelig for denne funksjonen. De fleste av disse funksjonene må aktiveres ved hjelp av [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) før du kan bruke dem.
+Denne versjonen inneholder følgende funksjoner: Funksjonstitlene kobler til mer informasjon på [Utgivelsesplaner](/dynamics365/release-plans/)-området. Flere koblinger peker mot ekstra dokumentasjon som for øyeblikket er tilgjengelig for denne funksjonen. De fleste av disse funksjonene må aktiveres ved hjelp av [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) før du kan bruke dem.
 
-- [Endre terminologien for "kansellering av lagerlukking" til "tilbakeføring av lagerlukking"](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/change-terminology-inventory-closing-cancellation-inventory-closing-reverse)<br> - For mer informasjon, se [Lagerlukking](../cost-management/inventory-close.md).
+- [Endre terminologien for "kansellering av lagerlukking" til "tilbakeføring av lagerlukking"](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/change-terminology-inventory-closing-cancellation-inventory-closing-reverse)<br> - For mer informasjon, se [Lagerlukking](../cost-management/inventory-close.md).
 
-- [Bekreft utgående forsendelser fra satsvise jobber](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/confirm-outbound-shipments-batch-jobs)<br> - Hvis du vil ha mer informasjon, kan du se [Bekreft utgående forsendelser fra satsvise jobber](../warehousing/confirm-outbound-shipments-from-batch-jobs.md).
+- [Bekreft utgående forsendelser fra satsvise jobber](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/confirm-outbound-shipments-batch-jobs)<br> - Hvis du vil ha mer informasjon, kan du se [Bekreft utgående forsendelser fra satsvise jobber](../warehousing/confirm-outbound-shipments-from-batch-jobs.md).
 
-- [Delegering av flere innkjøpsarbeidsvarer](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/delegation-multiple-purchasing-work-items)<br> - Hvis du vil ha mer informasjon, se [Delegere arbeidselementer i en arbeidsflyt](../../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md).
+- [Delegering av flere innkjøpsarbeidsvarer](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/delegation-multiple-purchasing-work-items)<br> - Hvis du vil ha mer informasjon, se [Delegere arbeidselementer i en arbeidsflyt](../../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md).
 
-- [Angi serienumre under ferdigrapportering fra jobbkortenheten](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/enter-serial-numbers-while-reporting-as-finished-job-card-device)<br> - For mer informasjon, se [Ferdigmelde fra jobbkortenheten](../production-control/report-finished-job-device.md).
+- [Angi serienumre under ferdigrapportering fra jobbkortenheten](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/enter-serial-numbers-while-reporting-as-finished-job-card-device)<br> - For mer informasjon, se [Ferdigmelde fra jobbkortenheten](../production-control/report-finished-job-device.md).
 
-- [Nye lagerdimensjoner for sporing av produktversjon og forbedret utvidbarhet](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/new-inventory-dimensions-product-version-tracking-enhanced-extensibility)<br> - Hvis du vil ha mer informasjon, kan du se [Produktdimensjoner](../pim/product-dimensions.md).
+- [Nye lagerdimensjoner for sporing av produktversjon og forbedret utvidbarhet](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/new-inventory-dimensions-product-version-tracking-enhanced-extensibility)<br> - Hvis du vil ha mer informasjon, kan du se [Produktdimensjoner](../pim/product-dimensions.md).
 
-- [Ordreigangsatt reservasjon basert på nummerskilt](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/order-committed-reservation-based-license-plates-lp-picking-processing)<br> - For mer informasjon, se [Fleksibel nummerskiltreservering](../warehousing/flexible-warehouse-level-dimension-reservation.md#flexible-license-plate-reservation).
+- [Ordreigangsatt reservasjon basert på nummerskilt](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/order-committed-reservation-based-license-plates-lp-picking-processing)<br> - For mer informasjon, se [Fleksibel nummerskiltreservering](../warehousing/flexible-warehouse-level-dimension-reservation.md#flexible-license-plate-reservation).
 
-- [Oversikt over arbeidsplukklinje](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/work-pick-line-overview)
+- [Oversikt over arbeidsplukklinje](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/work-pick-line-overview)
 
-- [Forbedringer for arbeidspolicy for innkommende arbeid](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/work-policy-enhancements-inbound-work)<br> - Hvis du vil ha mer informasjon, se [Lagerpolicyer](../warehousing/warehouse-work-policies.md).
+- [Forbedringer for arbeidspolicy for innkommende arbeid](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/work-policy-enhancements-inbound-work)<br> - Hvis du vil ha mer informasjon, se [Lagerpolicyer](../warehousing/warehouse-work-policies.md).
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
@@ -65,7 +65,7 @@ Hvis du vil ha informasjon om feilrettinger som er inkludert i hver av oppdateri
 
 Er du spent på kommende og nylig utgitte tilleggspakkefunksjoner i våre bedriftsprogrammer eller -plattform?
 
-Se [Dynamics 365: 2020-frigivelsesbølge 2-planen](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/index). Vi har registrert alle detaljene, ende til ende, øverst til nederst, i et enkelt dokument som du kan bruke i planleggingen.
+Se [Dynamics 365: 2020-frigivelsesbølge 2-planen](/dynamics365-release-plan/2020wave2/index). Vi har registrert alle detaljene, ende til ende, øverst til nederst, i et enkelt dokument som du kan bruke i planleggingen.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Fjernede og avskrevne funksjoner i Supply Chain Management
 

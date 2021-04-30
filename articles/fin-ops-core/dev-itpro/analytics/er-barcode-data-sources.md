@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: Version 10.0.13
-ms.openlocfilehash: 08b9d03517a600cf46b1093cfa3bc454621eabd0
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: cbc2b5870e855ff4d4a099a51cbb6887dd30bba7
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748371"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893558"
 ---
 # <a name="use-barcode-data-sources-to-generate-bar-code-images"></a>Bruke strekkodedatakilder for å generere strekkodebilder
 
@@ -37,7 +37,7 @@ ER støtter nå **Strekkode**-datakildetypen. Derfor kan du nå generere en avbi
 
 Følgende plassholdere kan brukes i rapportmaler til å angi strekkodebilder:
 
-- [Bilde](https://docs.microsoft.com/office/client-developer/word/content-controls-in-word)-innholdskontroll for Word
+- [Bilde](/office/client-developer/word/content-controls-in-word)-innholdskontroll for Word
 - [Bilde](https://support.office.com/article/insert-pictures-3c51edf4-22e1-460a-b372-9329a8724344)-objekt i Excel
 
 Ved å bruke en datakilde av typen **Strekkode** kan du generere strekkoder i følgende formater:

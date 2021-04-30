@@ -14,12 +14,12 @@ ms.search.region: global
 ms.author: dabourq
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: dee77f6967cc72fdcc81d5cff9a39d13248af588
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8f6affd05e658f39d567f7512c71d944636588ff
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811044"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907945"
 ---
 # <a name="vendor-collaboration-mobile-workspace"></a>Mobilt arbeidsområde for leverandørsamarbeid
 
@@ -57,7 +57,7 @@ Det mobile arbeidsområdet for **leverandørsamarbeid** gjør det mulig for en l
 Forutsetningene varierer avhengig av hvilken versjon av Microsoft Dynamics 365 som er distribuert i organisasjonen.
 
 ### <a name="prerequisites-if-you-use-supply-chain-management"></a>Forutsetninger hvis du bruker Supply Chain Management
-Hvis Supply Chain Management har blitt innført i organisasjonen din, må systemadministrator publisere det mobile arbeidsområdet **Leverandørsamarbeid**. Hvis du vil ha instruksjoner, kan du se [Publisere et mobilt arbeidsområde](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+Hvis Supply Chain Management har blitt innført i organisasjonen din, må systemadministrator publisere det mobile arbeidsområdet **Leverandørsamarbeid**. Hvis du vil ha instruksjoner, kan du se [Publisere et mobilt arbeidsområde](../../fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Forutsetninger hvis du bruker Microsoft Dynamics 365 for Operations versjon 1611 med plattformoppdatering 3 eller senere
 Hvis Microsoft Dynamics 365 for Operations versjon 1611 med plattformoppdatering 3 eller senere er distribuert i organisasjonen, må systemansvarlig oppfylle følgende forutsetninger. 
@@ -77,7 +77,7 @@ Hvis Microsoft Dynamics 365 for Operations versjon 1611 med plattformoppdatering
 <td>KB 3216943 er en binær oppdatering som er nødvendig hvis du bruker plattformoppdatering 3. Systemansvarlig må følge disse trinnene for å implementere denne KB-en.
 <ol>
 <li>Laste ned KB 3216943 fra Microsoft Dynamics Lifecycle Services (LCS).</li>
-<li>Installer den binære oppdateringen, som leveres som en distribuerbar pakke. Hvis du vil ha informasjon om hvordan du bruker en distribuerbar pakke, kan du se <a href="../../dev-itpro/deployment/apply-deployable-package-system.md">Bruke en distribuerbar pakke</a>.</li>
+<li>Installer den binære oppdateringen, som leveres som en distribuerbar pakke. Hvis du vil ha informasjon om hvordan du bruker en distribuerbar pakke, kan du se <a href="/dynamics365/fin-ops-core/dev-itpro/deployment/apply-deployable-package-system">Bruke en distribuerbar pakke</a>.</li>
 </ol></td>
 </tr>
 <tr class="even">
@@ -85,14 +85,14 @@ Hvis Microsoft Dynamics 365 for Operations versjon 1611 med plattformoppdatering
 <td>Systemansvarlig</td>
 <td>KB 4013633 er en X++-oppdatering eller metadatahurtigreparasjon som inneholder det mobile arbeidsområdet for <strong>lagerbeholdning</strong>. Systemadministrator må følge trinnene nedenfor for å implementere KB 4013633.
 <ol>
-<li><a href="../../dev-itpro/migration-upgrade/download-hotfix-lcs.md">Last ned hurtigreparasjonen for metadata fra LCS</a>.</li>
-<li><a href="../../dev-itpro/migration-upgrade/install-metadata-hotfix-package.md">Installer hurtigreparasjonen for metadata</a>.</li><li><a href="../../dev-itpro/deployment/create-apply-deployable-package.md">Opprett en distribuerbar pakke</a> som inneholder <strong>SCMMobile</strong>-modellen, og last deretter opp den distribuerbare pakken til LCS.</li>
-<li><a href="../../dev-itpro/deployment/apply-deployable-package-system.md">Bruk den distribuerbare pakken</a>.</li>
+<li><a href="/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/download-hotfix-lcs">Last ned hurtigreparasjonen for metadata fra LCS</a>.</li>
+<li><a href="/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Installer hurtigreparasjonen for metadata</a>.</li><li><a href="/dynamics365/fin-ops-core/dev-itpro/deployment/create-apply-deployable-package">Opprett en distribuerbar pakke</a> som inneholder <strong>SCMMobile</strong>-modellen, og last deretter opp den distribuerbare pakken til LCS.</li>
+<li><a href="/dynamics365/fin-ops-core/dev-itpro/deployment/apply-deployable-package-system">Bruk den distribuerbare pakken</a>.</li>
 </ol></td>
 </tr>
 <tr class="odd">
 <td>Det mobile arbeidsområdet for <strong>leverandørsamarbeid</strong> må publiseres.</td><td>Systemansvarlig</td>
-<td>Se <a href="../../dev-itpro/mobile-apps/publish-mobile-workspace.md">Publisere et mobilt arbeidsområde</a>.</td>
+<td>Se <a href="/dynamics365/fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace">Publisere et mobilt arbeidsområde</a>.</td>
 </tr>
 <tr class="even">
 <td>Leverandørbrukeren må ha tilgang til webgrensesnittet for leverandørsamarbeid i webklienten og må angi en bruker for leverandørsamarbeid.</td><td>Innkjøpsansvarlige og systemansvarlig</td>

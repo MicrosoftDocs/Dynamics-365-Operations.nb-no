@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 05b5126b29351ca3093e75e878682f7a07186898
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: a39dbdcae29df5e838673dc1fe77ae7e76ebfc86
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752972"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908347"
 ---
 # <a name="view-and-update-entity-data-with-excel"></a>Vise og oppdatere enhetsdata med Excel 
 
@@ -45,7 +45,7 @@ Hvis du vil vite mer om hvordan du bruker Excel-tillegget, kan du se den korte v
 2. Velg et **Åpne i Excel**-alternativ, og åpne arbeidsboken som genereres. Denne arbeidsboken har bindingsinformasjonen for enheten, en peker til miljøet og en peker til Excel-tillegget.
 3. I Excel velger du **Aktivere redigering** for å aktivere kjøring av Excel-tillegget. Excel-tillegg kjøres i en rute til høyre i Excel-vinduet.
 4. Hvis du kjører Excel-tillegget for første gang, velger du **Klarer tillegget**.
-5. Hvis du blir bedt om å logge på, velger du **Logg på**, og deretter logger du på ved å bruke samme legitimasjon som du brukte til å logge på Finance and Operations-appen. Excel-tillegget bruker en tidligere påloggingskontekst fra nettleseren og logger deg automatisk på, hvis det er mulig. (Hvis du vil ha mer informasjon om nettleseren som brukes basert på operativsystemet, kan du se [Nettlesere som brukes av Office-tillegg](https://docs.microsoft.com/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins.)) For å sikre at påloggingen var vellykket, kontrollerer du brukernavnet i øvre høyre hjørne i Excel-tillegget. 
+5. Hvis du blir bedt om å logge på, velger du **Logg på**, og deretter logger du på ved å bruke samme legitimasjon som du brukte til å logge på Finance and Operations-appen. Excel-tillegget bruker en tidligere påloggingskontekst fra nettleseren og logger deg automatisk på, hvis det er mulig. (Hvis du vil ha mer informasjon om nettleseren som brukes basert på operativsystemet, kan du se [Nettlesere som brukes av Office-tillegg](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins.)) For å sikre at påloggingen var vellykket, kontrollerer du brukernavnet i øvre høyre hjørne i Excel-tillegget. 
 
 Excel-tillegg leser automatisk dataene for enheten du valgte. Legg merke til at det ikke vises data i arbeidsboken før Excel-tillegget leser dem inn.
 
@@ -60,7 +60,7 @@ Excel-tillegg leser automatisk dataene for enheten du valgte. Legg merke til at 
 
 6. Velg **OK**, og velg deretter **Ja** for å bekrefte endringen. Excel-tillegget startes på nytt og laster inn metadata.
 
-    **Utforming**-knappen er nå tilgjengelig. Hvis Excel-tillegget har en **Laste inn appleter**-knapp, er du sannsynligvis ikke logget på som riktig bruker. Hvis du vil ha mer informasjon, kan du se "Laste inn appleter-knappen vises" i delen [Feilsøking](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/office-integration/use-excel-add-in#troubleshooting) i dette emnet.
+    **Utforming**-knappen er nå tilgjengelig. Hvis Excel-tillegget har en **Laste inn appleter**-knapp, er du sannsynligvis ikke logget på som riktig bruker. Hvis du vil ha mer informasjon, kan du se "Laste inn appleter-knappen vises" i delen [Feilsøking](../office-integration/use-excel-add-in.md#troubleshooting) i dette emnet.
 
 7. Velg **Utforming**. Excel-tillegget henter metadata for enhet.
 8. Velg **Legg til tabell**. Det vises en liste over enheter. Enhetene vises i formatet "Navn – Etikett".
@@ -138,7 +138,7 @@ Det finnes enkelte problemer som kan løses ved hjelp av noen enkle trinn.
 
 - **Laste inn appleter-knappen vises** – Hvis Excel-tillegget har en **Laste inn appleter**-knapp etter pålogging, er du sannsynligvis ikke logget på som riktig bruker. Hvis du vil løse dette problemet, kontrollerer du at riktig brukernavn vises øverst til høyre i Excel-tillegget. Hvis feil brukernavn vises, velger du det, logger av og på igjen.
 - **Du får feilmeldingen "Forbudt"** – Hvis du får feilmeldingen "Forbudt" når Excel-tillegget laster inn metadata, har kontoen som er logget Excel-tillegget, ikke tillatelse til å bruke tjenesten, forekomsten eller databasen. Hvis du vil løse dette problemet, kontrollerer du at riktig brukernavn vises øverst til høyre i Excel-tillegget. Hvis feil brukernavn vises, velger du det, logger av og på igjen.
-- **En tom nettside vises over Excel** – Hvis det åpnes en tom nettside i løpet av påloggingsprosessen, krever kontoen AD FS, men versjonen av Excel som kjører Excel-tillegget, er ikke ny nok til å laste inn dialogboksen for pålogging. Hvis du vil løse dette problemet, oppdaterer du Excel-versjonen du bruker. Hvis du vil oppdatere versjonen av Excel når du er i en virksomhet som er på den utsatte kanalen, kan du bruke [distribusjonsverktøyet for Office](https://technet.microsoft.com/library/jj219422.aspx) til [flytte fra den utsatte kanalen til gjeldende kanal](https://technet.microsoft.com/library/mt455210.aspx).
+- **En tom nettside vises over Excel** – Hvis det åpnes en tom nettside i løpet av påloggingsprosessen, krever kontoen AD FS, men versjonen av Excel som kjører Excel-tillegget, er ikke ny nok til å laste inn dialogboksen for pålogging. Hvis du vil løse dette problemet, oppdaterer du Excel-versjonen du bruker. Hvis du vil oppdatere versjonen av Excel når du er i en virksomhet som er på den utsatte kanalen, kan du bruke [distribusjonsverktøyet for Office](/deployoffice/overview-office-deployment-tool) til [flytte fra den utsatte kanalen til gjeldende kanal](/deployoffice/overview-update-channels).
 - **Du får et tidsavbrudd når du publiserer dataendringer** – Hvis du får tidsavbruddsmeldinger mens du prøver å publisere dataendringer til en enhet, bør du vurdere å redusere størrelsen på publiseringspartiet for den berørte arbeidsboken. Enheter som utløser større mengder logikk for postendringer, kan kreve at oppdateringer sendes i mindre partier, slik at tidsavbrudd kan unngås.
 
 

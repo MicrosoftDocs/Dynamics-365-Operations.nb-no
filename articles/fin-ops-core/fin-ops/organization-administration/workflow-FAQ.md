@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11604389ff598c70e15709c9e3e04b6ec436f6a6
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 64ce34cf38e4d6f37d9d417b70843a8308a408a8
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5747207"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890363"
 ---
 # <a name="workflow-faq"></a>Vanlige spørsmål om arbeidsflyt
 
@@ -45,9 +45,9 @@ Det er viktig å være oppmerksom på følgende vedrørende tilføying av varsle
     - I en fremtidig oppdatering kommer vi til å legge til en Handlingssenter-melding slik at en bruker tilordnes et arbeidselement for arbeidsflyt. 
 - Legge til varslinger i arbeidsflyter
     - Handlingssenter-meldinger kan opprettes for bestemte brukere, for eksempel en melding som er opprettet fra en arbeidsflyt i X++.
-    - [Arbeidsflyter har forretningshendelser](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow) som kunden kan bruke til å utløse flyter som har varslingene de ser etter.   
+    - [Arbeidsflyter har forretningshendelser](../../dev-itpro/business-events/business-events-workflow.md) som kunden kan bruke til å utløse flyter som har varslingene de ser etter.   
 
-Hvis en bruker ikke får riktig varsling fra handlingssenteret når de tilordnes et arbeidselement for arbeidsflyt, bruker du [Forretningshendelser for arbeidsflyt](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow) med Microsoft Power Automate til å gi flere eller andre varslinger.
+Hvis en bruker ikke får riktig varsling fra handlingssenteret når de tilordnes et arbeidselement for arbeidsflyt, bruker du [Forretningshendelser for arbeidsflyt](../../dev-itpro/business-events/business-events-workflow.md) med Microsoft Power Automate til å gi flere eller andre varslinger.
 
 ## <a name="why-is-workflow-editor-not-able-to-start-under-ad-fs"></a>Hvorfor kan ikke arbeidsflytredigering starte under AD FS?
 Når du kjører under Active Directory Federation Services (AD FS) i et oppgradert miljø, kan redigeringsprogrammet for arbeidsflyt ha problemer med å starte. I så fall må du kontrollere at URL-en "https://dynamicsaxworkfloweditor/" er lagt til i egenskapen **Microsoft Dynamics 365 for Operations Lokalt - Arbeidsflyt - Opprinnelig program** i ADFS-innstillingene.

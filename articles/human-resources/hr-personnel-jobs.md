@@ -16,12 +16,12 @@ ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 1c481a468b2d624f029082fe27e7f14ecf7c068d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: ad7feb837594186f4282103881745c4cfc944d52
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5803495"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5891060"
 ---
 # <a name="set-up-the-components-of-a-job"></a>Definere komponentene for en jobb
 
@@ -86,7 +86,7 @@ Du vedlikeholder jobboppgaver ved hjelp av **Jobboppgaver**-siden. Angi et navn 
 Du bruker ansvarsområder for å angi arbeidsrollene, prosessene og produktene som en arbeider som er i en stilling for jobben, har ansvaret for. Et eksempel på et ansvarsområde for en jobb med navnet "Regnskap" kan være "Økonomisk rapportering for produkt A". Du vedlikeholder ansvarsområder ved hjelp av **Ansvarsområder**-siden, som du finner ved hjelp av funksjonen Søk. Angi et navn for ansvaret og en kort beskrivelse av det på **Ansvarsområder**-siden. Du kan legge inn tilleggsinformasjon i **Merknad**-feltet. Notatene kan oppdateres for en bestemt jobb uten å endre notatene du har angitt her.
 
 ## <a name="steps-for-creating-a-job"></a>Fremgangsmåter for å opprette en jobb
-Se artikkelen [Definere nye jobber](../fin-and-ops/hr/tasks/define-new-jobs.md) for trinnvis fremgangsmåte for å opprette en ny jobb. 
+Se artikkelen [Definere nye jobber](./hr-personnel-define-jobs.md) for trinnvis fremgangsmåte for å opprette en ny jobb. 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

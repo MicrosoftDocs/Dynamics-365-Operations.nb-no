@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 23ee82922a2103d02a4c1fe0c364fa381c4984c3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3acdde483cb997b4a16a497f145c7c087c6906b5
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5842016"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909725"
 ---
 # <a name="product-readiness"></a>Produktklargjøring
 
@@ -142,7 +142,7 @@ For hver rad du legger til, angir du følgende felter:
 | Bedrift | Hvis du setter **Utfør i**-feltet til *Ett firma*, velger du firmaet. |
 | Eiertype | Velg om klargjøringskontroller som raden genererer, skal tilordnes til en person eller et team. |
 | Eier | Velg personen eller teamet som klargjøringskontroller som raden genererer, tilordnes til. |
-| Spørreskjema | Velg spørreskjemaet som skal brukes for sjekklisten. Sjekklisten er en lokal sjekkliste i firmaet der klargjøringskontrollen utføres. Systemet må kunne vurdere om sjekklisten er riktig besvart. Sjekklisten må derfor konfigureres slik at det utføres en evaluering basert på riktige svar. Hvis du vil ha mer informasjon om hvordan du oppretter spørreskjemaer, kan du se [Bruke spørreskjemaer](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/using-questionnaires) og det tilknyttede emner. |
+| Spørreskjema | Velg spørreskjemaet som skal brukes for sjekklisten. Sjekklisten er en lokal sjekkliste i firmaet der klargjøringskontrollen utføres. Systemet må kunne vurdere om sjekklisten er riktig besvart. Sjekklisten må derfor konfigureres slik at det utføres en evaluering basert på riktige svar. Hvis du vil ha mer informasjon om hvordan du oppretter spørreskjemaer, kan du se [Bruke spørreskjemaer](/dynamicsax-2012/appuser-itpro/using-questionnaires) og det tilknyttede emner. |
 | Automatisk godkjenning | Poster for klargjøringskontroll omfatter avmerkingsboksen **Godkjent** som angir godkjenningsstatusen. Merk av for **Automatisk godkjenning** for kontroller som skal settes til godkjent umiddelbart etter at den tilordnede brukeren har fullført dem. Fjern merket i denne avmerkingsboksen for å kreve eksplisitt godkjenning som et ekstra trinn. |
 | Obligatorisk | Merk av i denne avmerkingsboksen for kontroller som må fullføres av den tilordnede brukeren. Du kan ikke hoppe over obligatoriske kontroller. |
 

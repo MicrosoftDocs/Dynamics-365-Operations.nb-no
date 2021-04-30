@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bcb57082a49fc07a4139aa37f9507890ca7ed620
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 1647b7fbf84a78051e745e918954df32a2e7e1dd
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5805088"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890010"
 ---
 # <a name="configure-integration-with-dayforce"></a>Konfigurere integrasjon med Dayforce
 
@@ -53,8 +53,8 @@ Når integreringen er slått på, opprettes dataeksportpakken og -filene, og fre
 
 Hvis du vil ha mer informasjon om Azure Storage-kontoer og Azure Storage-tilkoblingsstrenger, kan du se følgende Azure-artikler:
 
-- [Om Azure Storage-kontoer](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2ffiles%2ftoc.json)
-- [Konfigurere Azure Storage-tilkoblingsstrenger](https://docs.microsoft.com/azure/storage/common/storage-configure-connection-string)
+- [Om Azure Storage-kontoer](/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2ffiles%2ftoc.json)
+- [Konfigurere Azure Storage-tilkoblingsstrenger](/azure/storage/common/storage-configure-connection-string)
 
 ### <a name="technical-details-when-payroll-integration-is-enabled"></a>Tekniske detaljer når lønnsintegrasjon er aktivert
 
@@ -65,6 +65,7 @@ Aktivering av lønnsintegrasjonen har to hovedvirkninger:
 
 > [!NOTE]
 > Datapakken som overføres til SFTP-endepunktet, krypteres ved hjelp av en nøkkel som er unik for pakken. Nøkkelen er i et Azure Key Vault som bare Ceridian har tilgang til. Det går ikke an å dekryptere og undersøke innholdet i datapakken. Hvis du må undersøke innholdet i datapakken, må du eksportere dataprosjektet «Eksport av lønnsintegrasjon» manuelt, laste det ned, og deretter åpne det. Pakken verken krypteres eller overføres når du foretar manuell eksport.
+> For forekomster der integreringsfilene sendes fra et Dynamics 365 Human Resources UAT-miljø eller et sandkassemiljø til et Ceridian Dayforce-testmiljø, kan du bruke følgende Key Vault-URL: https://payrollintegrationprod.vault.azure.net.
 
 ## <a name="configure-your-data"></a>Konfigurere dataene dine 
 
@@ -124,10 +125,10 @@ Dayforce oppretter følgende fradrag, basert på lønnsinnvirkning som er define
 
 Hvis du vil ha mer informasjon om hvordan du definerer og administrerer et program for fordeler, kan du se følgende artikler:
 
-- [Levere et program for ansattfordeler](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/deliver-employee-benefits-program)
-- [Opprett en ny fordel](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/create-new-benefit)
-- [Definere rettighetsregler og policyer for fordel](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-benefit-eligibility-rules-policies)
-- [Registrere og fjerne fordeler fra arbeidere](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-remove-benefits-workers)
+- [Levere et program for ansattfordeler](/dynamics365/unified-operations/fin-and-ops/hr/tasks/deliver-employee-benefits-program)
+- [Opprett en ny fordel](/dynamics365/unified-operations/fin-and-ops/hr/tasks/create-new-benefit)
+- [Definere rettighetsregler og policyer for fordel](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-benefit-eligibility-rules-policies)
+- [Registrere og fjerne fordeler fra arbeidere](/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-remove-benefits-workers)
 
 #### <a name="compensation"></a>Kompensasjon 
 
@@ -137,20 +138,20 @@ Dayforce bruker kompensasjonsinformasjon til å beregne timesats eller årlig sa
 
 Hvis du vil ha mer informasjon om kompensasjonsplaner, kan du se følgende artikler:
 
-- [Opprette planer for fast kompensasjon](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
-- [Opprette variable kompensasjonsplaner](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-variable-compensation-plans)
-- [Utvikle struktur og planer for lønn/kompensasjon](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/develop-salary-compensation-structure-plan)
-- [Behandle kompensasjon](https://docs.microsoft.com/dynamics365/unified-operations/talent/process-compensation)
-- [Definere kompensasjonsprosess og beregne resultater](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-compensation-process-calculate-results)
-- [Registrere en ansatt i en fast kompensasjonsplan](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-fixed-compensation-plan)
-- [Registrere en ansatt i en variabel kompensasjonsplan](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-variable-compensation-plan)
+- [Opprette planer for fast kompensasjon](/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
+- [Opprette variable kompensasjonsplaner](/dynamics365/unified-operations/talent/create-variable-compensation-plans)
+- [Utvikle struktur og planer for lønn/kompensasjon](/dynamics365/unified-operations/fin-and-ops/hr/tasks/develop-salary-compensation-structure-plan)
+- [Behandle kompensasjon](/dynamics365/unified-operations/talent/process-compensation)
+- [Definere kompensasjonsprosess og beregne resultater](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-compensation-process-calculate-results)
+- [Registrere en ansatt i en fast kompensasjonsplan](/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-fixed-compensation-plan)
+- [Registrere en ansatt i en variabel kompensasjonsplan](/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-variable-compensation-plan)
 
 #### <a name="jobs"></a>Jobber 
 
 En jobb er en samling oppgaver og ansvarsområder som kreves av en person som utfører en jobb. Hvis du vil ha mer informasjon, kan du se følgende artikler:
 
-- [Definere komponentene for en jobb](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-job)
-- [Definere nye jobber](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-jobs)
+- [Definere komponentene for en jobb](/dynamics365/unified-operations/talent/create-job)
+- [Definere nye jobber](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-jobs)
 
 ##### <a name="positions"></a>Stillinger
 
@@ -174,8 +175,8 @@ Hvis flere stillinger i samme avdeling er knyttet til den samme jobben, konsolid
 
 Hvis du vil ha mer informasjon, kan du se følgende artikler:
 
-- [Organisere arbeidsstyrken ved bruk av avdelinger, jobber og stillinger](https://docs.microsoft.com/dynamics365/unified-operations/talent/departments-jobs-positions#positions)
-- [Definere stillinger](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/set-up-positions)
+- [Organisere arbeidsstyrken ved bruk av avdelinger, jobber og stillinger](/dynamics365/unified-operations/talent/departments-jobs-positions#positions)
+- [Definere stillinger](/dynamics365/unified-operations/fin-and-ops/hr/tasks/set-up-positions)
 
 #### <a name="departments"></a>Avdelinger
 
@@ -183,8 +184,8 @@ En avdeling er en driftsenhet som representerer en kategori eller et funksjonsom
 
 Hvis du vil ha mer informasjon, kan du se følgende artikler:
 
-- [Opprette en avdeling og knytte den til avdelingshierarkiet](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-department-add-department-hierarchy)
-- [Definere nye avdelinger](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-departments)
+- [Opprette en avdeling og knytte den til avdelingshierarkiet](/dynamics365/unified-operations/talent/create-department-add-department-hierarchy)
+- [Definere nye avdelinger](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-departments)
 
 #### <a name="pay-cycles-and-pay-periods"></a>Lønnssykluser og lønnsperioder
 

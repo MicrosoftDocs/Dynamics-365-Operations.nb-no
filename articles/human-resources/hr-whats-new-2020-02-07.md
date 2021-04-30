@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-02-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: adfedbfeb3f4602d0c4d9b8cccec80749eaae2a4
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: b2b9f2b244f0f49d1ae0bd1cb220653583ee23a5
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5790530"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890988"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-7-2020"></a>Hva er nytt eller endret i Dynamics 365 Human Resources (7. februar 2020)?
 
@@ -55,7 +55,7 @@ Følgende forhåndsversjonsfunksjoner er tilgjengelige fra 3. februar 2020:
 
 ### <a name="platform-update-32"></a>Plattform update 32 
 
-Platform Update 32 er snart tilgjengelig. [Finn ut mer om Platform Update 32 her](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32).
+Platform Update 32 er snart tilgjengelig. [Finn ut mer om Platform Update 32 her](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32.md).
 
 ### <a name="updated-dataverse-solution"></a>Oppdatert Dataverse-løsning
 
@@ -75,7 +75,7 @@ En ny Dataverse-løsning vil snart være tilgjengelig med følgende endringer:
 ## <a name="see-also"></a>Se også
 
 [Nyheter eller endringer i Personale?](hr-admin-whats-new.md)</br>
-[Oversikt over lanseringsbølge 2 i 2019 for Dynamics 365 Human Resources](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Oversikt over lanseringsbølge 2 i 2019 for Dynamics 365 Human Resources](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Oppdatere prosess](hr-admin-setup-update-process.md)</br>
 [Behandle funksjoner](hr-admin-manage-features.md)
 

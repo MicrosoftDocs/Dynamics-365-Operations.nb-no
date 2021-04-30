@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d5051bbf9e550add6a0cfc5e23f3aeb7b379ef03
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 9a285e3c60df713ceaee1fae72b2a1d54fa5c431
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5789642"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890753"
 ---
 # <a name="performance-management"></a>Ytelsesstyring
 
@@ -93,7 +93,7 @@ Du kan også bruke **Kompetanser**-delen for å diskutere, gjennomgå og vurdere
 
 Du kan opprette nye vurderinger som er basert på maler som du har opprettet. Du kan for eksempel ha en mal for én-til-én-vurderinger, utviklingsplaner eller periodiske vurderinger. Du kan velge malen når du oppretter en ny vurdering.
 
-Hvis du vil skrive ut gjennomganger, velger du **Skriv ut gjennomgang**. Hvis du ikke ser knappen på siden for **Gjennomgang**, må du kontrollere at du har aktivert funksjonen i arbeidsområdet **Funksjonsbehandling**. Hvis du vil ha mer informasjon om funksjonsbehandling, kan du se [Oversikt over funksjonsbehandling](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+Hvis du vil skrive ut gjennomganger, velger du **Skriv ut gjennomgang**. Hvis du ikke ser knappen på siden for **Gjennomgang**, må du kontrollere at du har aktivert funksjonen i arbeidsområdet **Funksjonsbehandling**. Hvis du vil ha mer informasjon om funksjonsbehandling, kan du se [Oversikt over funksjonsbehandling](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 > [!NOTE]
 > Muligheten til å skrive ut ytelsesgjennomganger er bare tilgjengelig i personalmiljøet. Den er ikke tilgjengelig i Dynamics 365 Finance.

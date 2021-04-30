@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 45c8b1d0ea12c8e42f3a4383f16105b0b0cfb5c6
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0b173f856c79973eec6ce884e7b8e44420c93fc7
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825332"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909138"
 ---
 # <a name="purchase-order-overview"></a>Oversikt over bestilling
 
@@ -41,7 +41,7 @@ Artiklene nedenfor inneholder en oversikt over de ulike stadiene som en bestilli
 -   [Opprette bestillinger](purchase-order-creation.md)
 -   [Godkjenne og bekrefte bestillinger](purchase-order-approval-confirmation.md)
 -   [Mottaksseddel mot bestillinger](product-receipt-against-purchase-orders.md)
--   [Oversikt over leverandørfakturaer](../../financials/accounts-payable/vendor-invoices-overview.md)
+-   [Oversikt over leverandørfakturaer](../../finance/accounts-payable/vendor-invoices-overview.md)
 
 ## <a name="types-of-purchase-orders"></a>Bestillingstyper
 Det finnes tre bestillingstyper: Når du oppretter en bestilling, må du angi type. Du kan definere en standard ordretype for nye bestillinger på siden **Parametere for innkjøp og leverandører**.
@@ -85,7 +85,7 @@ Feltet **Godkjenningsstatus** brukes når en bestilling går gjennom en vurderin
 
 [Mottaksseddel mot bestillinger](product-receipt-against-purchase-orders.md)
 
-[Oversikt over leverandørfakturaer](../../financials/accounts-payable/vendor-invoices-overview.md)
+[Oversikt over leverandørfakturaer](../../finance/accounts-payable/vendor-invoices-overview.md)
 
 
 

@@ -2,11 +2,11 @@
 title: Postere avskrivning for bruksrettseiendel (forhåndsversjon)
 description: Dette emnet forklarer hvordan du oppretter journaloppføringen for nedbetalingen som kreves for leieavtaler som er oppført i balansen til en organisasjon.
 author: moaamer
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: AssetLeaseAssetSchedule
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: c64f19d4cf334a6cbcacaaa3753dbafe8cbf1ffe
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: ba26e83202163eb8e750705eb1bbb1c97cee813e
+ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823077"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5881500"
 ---
 # <a name="record-right-of-use-asset-depreciation-preview"></a>Postere avskrivning for bruksrettseiendel (forhåndsversjon)
 

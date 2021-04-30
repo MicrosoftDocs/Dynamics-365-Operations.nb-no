@@ -12,12 +12,12 @@ ms.reviewer: kfend
 ms.search.region: Norway
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: cfe0459a8d1e4a6f65c856b163532d5758b67ea4
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: def7c052bb31baeca7888d136476d06249719e19
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813447"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5891150"
 ---
 # <a name="vat-statement-for-norway"></a>MVA-oppgave for Norge
 
@@ -85,7 +85,7 @@ Her er et eksempel for rapportering hver andre måned.
 ## <a name="configure-the-er-model-and-format-for-the-report"></a>Konfigurere ER modellen og formatet for rapporten
 Hvis du vil kontrollere eller endre rapporteringsformatene, må du bruke elektronisk rapporteringsfunksjonalitet (ER). Du kan finne MVA-oppgaveformatet for juridiske enheter som har en primæradresse i Norge i på siden **Konfigurasjoner** (**Organisasjonsstyring** > **Elektronisk rapportering** > **Konfigurasjoner**). I treet for ER-modeller utvider du noden **MVA-deklarerasjonsmodell** og velger deretter **MVA-deklarasjon (NO)**.
 
-Du kan bruke utformingen for å vise eller endre konfigurasjonen du valgte i modelltreet. For mer informasjon, se [Elektronisk rapportering](../../dev-itpro/analytics/general-electronic-reporting.md).
+Du kan bruke utformingen for å vise eller endre konfigurasjonen du valgte i modelltreet. For mer informasjon, se [Elektronisk rapportering](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
 
 > [!NOTE]
 > Samme MVA-deklarasjonsmodell brukes for Østerrike, Tsjekkia, Estland, Finland, Latvia, Litauen og Norge. Denne modellen samler avgiftsdata som kreves for MVA-deklarerasjonen.

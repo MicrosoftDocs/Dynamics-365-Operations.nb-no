@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f2f40bec79c0b5ce26882e1146c1751b9b6eee01
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 1c8d939fef4fd0f9e189ca37318c2c0306511785
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753318"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893914"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Utforme en konfigurasjon til å generere dokumenter i Excel-format
 
@@ -159,7 +159,7 @@ For en komponent av typen **Ark** kan du legge til flere komponenter av typen **
 
 Under den tillagte komponenten av typen **Bunntekst** legger du til de obligatoriske, nestede komponentene av typen **Tekst\\Streng**, **Tekst\\Dato og klokkeslett** eller en annen type. Konfigurer bindingene for disse komponentene til å angi hvordan bunnteksten på siden fylles ut.
 
-Du kan også bruke spesielle [formateringskoder](https://docs.microsoft.com/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers) til å formatere innholdet i en generert bunntekst på riktig måte. Hvis du vil lære hvordan du bruker denne fremgangsmåten, følger du trinnene i [Eksempel 1](#example-1) senere i dette emnet.
+Du kan også bruke spesielle [formateringskoder](/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers) til å formatere innholdet i en generert bunntekst på riktig måte. Hvis du vil lære hvordan du bruker denne fremgangsmåten, følger du trinnene i [Eksempel 1](#example-1) senere i dette emnet.
 
 > [!NOTE]
 > Når du konfigurerer ER-formater, må du huske å vurdere Excel-[grensen](https://support.microsoft.com/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3) og det maksimale antallet tegn for én topptekst eller bunntekst.

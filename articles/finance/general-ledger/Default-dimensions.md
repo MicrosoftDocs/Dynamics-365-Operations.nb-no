@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 7783c22659c5a2b070648c82a8b72e49e17b8e34
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 46e8fba0c1269aa8b81e0df8d415fe11b2307924
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823866"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897314"
 ---
 # <a name="financial-dimensions-and-posting"></a>Finansdimensjoner og postering 
 
@@ -83,17 +83,17 @@ Standarddimensjonen i journalhodet fører til at avdeling 023 brukes som standar
 
 Når linjen posteres, brukes imidlertid den faste dimensjonen, og linjen posteres til avdeling 022. Illustrasjonen nedenfor viser det posterte bilaget, der den faste dimensjonen brukes for salgskontoen.
 
-[![Bilagstransaksjoner](./media/voucher-transactions.png)](./media/voucher-transactions.png)
+[![Bilagstransaksjoner med fast dimensjon brukt](./media/voucher-transactions.png)](./media/voucher-transactions.png)
 
 ### <a name="example-2"></a>Eksempel 2
 
 Dette eksemplet bruker samme oppsett som det første eksemplet. Vi vil imidlertid legge til en annen komponent og bruke avdelingsdimensjonen som balansedimensjon. I illustrasjonen nedenfor er **Avdeling** angitt som den balanserende finansdimensjonen for USMF-finans.
 
-[![Finans](./media/ledger.png)](./media/ledger.png)
+[![Illustrasjon som viser Avdeling som balanserende finansdimensjon](./media/ledger.png)](./media/ledger.png)
 
 Når det samme journalhodeoppsettet brukes, og den samme transaksjonen posteres, brukes den faste dimensjonen først. Balanseringslogikken brukes deretter for å garantere at hver avdeling har en balansert oppføring. Illustrasjonen nedenfor viser bilagstransaksjonene som inkluderer balanseoppføringen etter at den faste dimensjonen er brukt.
 
-[![Bilagstransaksjoner](./media/voucher-transactions2.png)](./media/voucher-transactions2.png)
+[![Bilagstransaksjoner etter at balanseringsoppføringen er brukt](./media/voucher-transactions2.png)](./media/voucher-transactions2.png)
 
 ### <a name="example-3"></a>Eksempel 3
 
@@ -119,11 +119,11 @@ Noen av følgende ressurser refererer til en tidligere versjon av programvaren. 
 
 [Planlegge kontoplanen](plan-chart-of-accounts.md) 
 
-[Planlegging av kontoplanen i AX 2012 (blogg)](https://blogs.msdn.microsoft.com/axsa/2014/06/12/planning-your-chart-of-accounts-in-ax-2012-part-1-of-7/) – Denne koblingen går til del 1 av en serie på sju deler.
+[Planlegging av kontoplanen i AX 2012 (blogg)](/archive/blogs/axsa/planning-your-chart-of-accounts-in-ax-2012-part-1-of-7) – Denne koblingen går til del 1 av en serie på sju deler.
 
-[Dimensjonen som fører til regnskapsdistribusjoner](https://blogs.msdn.microsoft.com/ax_gfm_framework_team_blog/2013/12/16/dimension-defaulting-in-accounting-distributions-part-1-introduction/)
+[Dimensjonen som fører til regnskapsdistribusjoner](/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-in-accounting-distributions-part-1-introduction)
 
-[Dimensjonen som fører til dimensjonsrammeverk](https://docs.microsoft.com/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-part-1-financial-dimensions-discovery)
+[Dimensjonen som fører til dimensjonsrammeverk](/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-part-1-financial-dimensions-discovery)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

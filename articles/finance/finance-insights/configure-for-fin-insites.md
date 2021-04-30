@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 2443bb057a8b7fe280ed26ecae4e50f671b5e082
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 54117c009cfeb7307938cc6bd43e774ccfedcfb1
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818806"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908836"
 ---
 # <a name="configuration-for-finance-insights-preview"></a>Konfigurasjon for Finance Insights (forhåndsversjon)
 
@@ -69,7 +69,7 @@ Du kan fullføre de manuelle konfigurasjonstrinnene nedenfor, eller du kan gjør
     13. Velg **Ressurser \> Alle eldre innstillinger**.
     14. Velg **Innstillinger** i det øverste navigasjonsfeltet, og velg deretter **Tilpassinger**.
     15. Velg **Utviklerressurser**.
-    16. Sett feltet **ID for referanseinformasjon for forekomst** til verdien for ID-en for Dataverse-organisasjon du noterte tidligere.
+    16. Kopier verdien for **Dataverse-organisasjons-ID**.
     17. Noter deg URL-adressen for Dataverse-organisasjonen på adresselinjen i nettleseren. URL-adressen kan for eksempel være `https://org42b2b3d3.crm.dynamics.com`.
 
 2. Hvis du har tenkt å bruke funksjonen Kontantstrømprognoser eller Budsjettprognoser, følger du disse trinnene for å oppdatere merknadsgrensen for organisasjonen til minst 50 megabyte (MB):
@@ -286,12 +286,12 @@ catch {
 
 # <a name="use-a-windows-powershell-script"></a>[Bruke et Windows PowerShell-skript](#tab/use-a-powershell-script)
 
-Et Windows PowerShell-skript er oppgitt, slik at du lett kan konfigurere Azure-ressursene som er beskrevet i [Konfigurere eksport til Azure Data Lake](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/configure-export-data-lake). Hvis du foretrekker å konfigurere manuelt, kan du hoppe over denne fremgangsmåten og fortsette med fremgangsmåten i delen [Manuell konfigurasjon](#manual-setup).
+Et Windows PowerShell-skript er oppgitt, slik at du lett kan konfigurere Azure-ressursene som er beskrevet i [Konfigurere eksport til Azure Data Lake](../../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md). Hvis du foretrekker å konfigurere manuelt, kan du hoppe over denne fremgangsmåten og fortsette med fremgangsmåten i delen [Manuell konfigurasjon](#manual-setup).
 
 > [!NOTE]
 > Følg fremgangsmåten nedenfor for å kjøre PowerShell-skriptet. Det kan hende at Azure CLI-alternativet «Prøv det» eller å kjøre skriptet på PC-en ikke fungerer.
 
-Følg denne fremgangsmåten for å konfigurere Azure ved hjelp av Windows PowerShell-skriptet. Du må ha rettigheter til å opprette en Azure-ressursgruppe, Azure-ressurser og et Azure AD-program. Hvis du vil ha informasjon om de nødvendige tillatelsene, kan du se [Kontrollere Azure AD-tillatelser](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal#permissions-required-for-registering-an-app).
+Følg denne fremgangsmåten for å konfigurere Azure ved hjelp av Windows PowerShell-skriptet. Du må ha rettigheter til å opprette en Azure-ressursgruppe, Azure-ressurser og et Azure AD-program. Hvis du vil ha informasjon om de nødvendige tillatelsene, kan du se [Kontrollere Azure AD-tillatelser](/azure/active-directory/develop/howto-create-service-principal-portal#permissions-required-for-registering-an-app).
 
 1. I [Azure-portalen](https://portal.azure.com) går du til Azure-målabonnementet. Velg **Cloud Shell**-knappen til høyre for **Søk**-feltet.
 2. Velg **PowerShell**.
@@ -943,18 +943,7 @@ finally {
 ```
 ---
 
-## <a name="configure-the-entity-store"></a>Konfigurere enhetslageret
 
-Følg denne fremgangsmåten for å konfigurere enhetslageret i Finance-miljøet ditt.
-
-1. Gå til **Systemadministrasjon \> Oppsett \> Systemparametere \> Datatilkoblinger**.
-2. Sett alternativet **Aktiver Data Lake-integrasjon** til **Ja**.
-3. Angi verdier i følgende Key Vault-felter:
-
-    - **Program-ID (klient)** – Angi programklient-ID-en du opprettet tidligere.
-    - **Programhemmelighet** – Angi hemmeligheten du lagret for programmet du opprettet tidligere.
-    - **DNS-navn** – Du kan finne DNS-navnet (Domain Name System) på siden for programdetaljer for programmet du opprettet tidligere.
-    - **Hemmelig navn** – Angi **storage-account-connection-string**.
 
 ## <a name="configure-the-data-lake"></a>Konfigurere datasjøen
 
@@ -991,6 +980,19 @@ Tillegget installeres innen noen minutter.
     | ID for CDS-leier (katalog-ID fra AAD)               | Leier-ID-en for Dataverse-forekomsten. Du finner denne verdien ved å åpne [Azure-portalen](https://portal.azure.com), gå til **Azure Active Directory** og kopiere verdien for **Leier-ID**. |
     | Angi brukerobjekt-ID for personen som har rollen Systemansvarlig | Azure AD-brukerobjekt-ID-en for brukeren i Dataverse. Denne brukeren må være en systemansvarlig for Dataverse-forekomsten. Du finner denne verdien ved å åpne [Azure-portalen](https://portal.azure.com), gå til **Azure Active Directory\> Brukere**, velger brukeren og deretter kopiere verdien for **Objekt-ID** i **Identitet**-delen. |
     | Er dette standard CDS-miljø for leieren?      | Hvis Dataverse-forekomsten var den første produksjonsforekomsten som ble opprettet, merker du av her. Hvis Dataverse-forekomsten ble opprettet manuelt, fjerner du merket her. |
+
+## <a name="configure-the-entity-store"></a>Konfigurere enhetslageret
+
+Følg denne fremgangsmåten for å konfigurere enhetslageret i Finance-miljøet ditt.
+
+1. Gå til **Systemadministrasjon \> Oppsett \> Systemparametere \> Datatilkoblinger**.
+2. Sett alternativet **Aktiver Data Lake-integrasjon** til **Ja**.
+3. Angi verdier i følgende Key Vault-felter:
+
+    - **Program-ID (klient)** – Angi programklient-ID-en du opprettet tidligere.
+    - **Programhemmelighet** – Angi hemmeligheten du lagret for programmet du opprettet tidligere.
+    - **DNS-navn** – Du kan finne DNS-navnet (Domain Name System) på siden for programdetaljer for programmet du opprettet tidligere.
+    - **Hemmelig navn** – Angi **storage-account-connection-string**.
 
 ## <a name="feedback-and-support"></a>Tilbakemelding og støtte
 

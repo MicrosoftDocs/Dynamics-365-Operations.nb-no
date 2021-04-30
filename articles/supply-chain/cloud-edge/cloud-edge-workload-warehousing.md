@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 6372e08b7ec737f3abd2f2bd5d4f387eaf869f03
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d6dffb1ea03b8d11519087163d2837d6cfe3df4e
+ms.sourcegitcommit: 639175a39da38edd13e21eeb5a1a5ca62fa44d99
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832400"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "5899173"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Skalaenheter for sky og kant for arbeidsbelastninger for lagerstyring
 
@@ -33,13 +33,13 @@ ms.locfileid: "5832400"
 
 ## <a name="warehouse-execution-on-scale-units"></a>Lagerkjøring på skalaenheter
 
-Denne funksjonen gjør det mulig for skalaenheter å kjøre valgte prosesser fra lagerstyringsfunksjonene. Skyskalaenheter kjører arbeidsbelastningene sine i skyen ved å bruke dedikert behandlingskapasitet i det valgte Microsoft Azure-området. For kantskalaenheter kan du kjøre noen arbeidsbelastninger uavhengig lokalt, også når skalaenhetene er midlertidig koblet fra skyen.
+Denne funksjonen gjør det mulig for skalaenheter å kjøre valgte prosesser fra lagerstyringsfunksjonene.
 
 I dette emnet kalles lagerstyringskjøringer i et lager som defineres som en skalaenhet, et *lagerkjøringssystem* (*WES*).
 
 ## <a name="prerequisites"></a>Forutsetninger
 
-Du må ha et Dynamics 365 Supply Chain Management-senter og en skalaenhet som er distribuert med arbeidsbelastningen for lagerstyring. Hvis du vil ha mer informasjon om arkitekturen og distribusjonsprosessen, kan du se [Sky- og kantskalaenheter for arbeidsbelastninger for produksjon og lagerstyring](cloud-edge-landing-page.md).
+Du må ha et Dynamics 365 Supply Chain Management-senter og en skalaenhet som er distribuert med arbeidsbelastningen for lagerstyring. Hvis du vil ha mer informasjon om arkitekturen og distribusjonsprosessen, kan du se [Bruk skalaenheter for å øke fleksibiliteten for arbeidsbelastninger i Supply Chain Management](cloud-edge-landing-page.md).
 
 ## <a name="how-the-wes-workload-works-on-scale-units"></a>Hvordan WES-arbeidsbelastninger fungerer på skalaenheter
 
@@ -297,6 +297,8 @@ I arbeidsbelastningen på skalaenheter kan du administrere følgende satsvise jo
 - Behandle bølgetabellposter
 - Lagersenter til meldingsprosessor for skalaenhet
 - Behandle forespørsler om oppdatering av antall for lagerordrelinjer
+
+[!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

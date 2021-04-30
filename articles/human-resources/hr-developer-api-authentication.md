@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3dffe1db98ba39fde2229e69bc70bdbf113ff6ad
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 94d76a9f6d4a3d7afcb9b85d961899880ca9fc75
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793687"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893454"
 ---
 # <a name="authentication"></a>Godkjenning
 
@@ -82,7 +82,7 @@ GET https://{cluster}.hr.talent.dynamics.com/namespaces/{namespace_guid}/data/Jo
         - For webapper oppgir du den primære URL-adressen til appen. `http://localhost:31544` kan for eksempel være URL-adressen til en webapp som kjører på din lokale maskin. Brukerne bruker deretter denne URL-adressen til å logge seg inn på en webklientapp.
         - For offentlige klientapper angir du URI-en som Azure AD bruker til å returnere tokensvar. Angi en verdi som er spesifikk for appen, for eksempel `myapp://auth`.
 
-        Hvis du vil se bestemte eksempler for webapper eller innebygde apper, kan du se hurtigstartene på [Microsoft-identitesplattformen (tidligere Azure Active Directory for utviklere)](https://docs.microsoft.com/azure/active-directory/develop/#quickstarts).
+        Hvis du vil se bestemte eksempler for webapper eller innebygde apper, kan du se hurtigstartene på [Microsoft-identitesplattformen (tidligere Azure Active Directory for utviklere)](/azure/active-directory/develop/#quickstarts).
 
 5. Under **API-tillatelser** velger du **Legg til en tillatelse**. Deretter går du til fanen **API-er organisasjonen min bruker**, søker etter **Dynamics 365 Human Resources** og legger deretter til tillatelsen **user\_impersonation** for appen. Program-ID-en for Human Resources er f9be0c49-aa22-4ec6-911a-c5da515226ff. Bruk denne ID-en til å sikre at du har valgt riktig program.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 915815d6be726141aa78d55c4fe98b75ae762189
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f1d7c6960dc48bb1bb780ecbbb36a58a1bbd7352
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835900"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908214"
 ---
 # <a name="service-management-overview"></a>Oversikt over servicestyring
 
@@ -64,7 +64,7 @@ Diagrammet nedenfor illustrerer høynivå-forretningsprosessene for **Servicesty
 Servicestyring kan integreres med følgende moduler:
 
   - [Oversikt over salg og markedsføring](../sales-marketing/overview-sales-marketing.md)
-  - [Personale](https://docs.microsoft.com/dynamics365/unified-operations/talent/index)
+  - [Personale](/dynamics365/unified-operations/talent/index)
 
   
 

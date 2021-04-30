@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4d80680f66d8669425482a54066f48af8ebcfbc8
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: ae36f1436ddd7f41bf0c3510b47cbc440224f484
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5805112"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890058"
 ---
 # <a name="configure-dataverse-virtual-tables"></a>Konfigurere virtuelle Dataverse-tabeller
 
@@ -34,7 +34,7 @@ Dynamics 365 Human Resources er en virtuell datakilde i Microsoft Dataverse. Den
 Hvis du vil aktivere CRUD-operasjoner på Human Resources-enheter fra Dataverse, må du gjøre enhetene tilgjengelige som virtuelle tabeller i Dataverse. Dette lar deg utføre CRUD-operasjoner fra Dataverse og Microsoft Power Platform i Human Resources. Operasjonene støtter også den fullstendige forretningslogikken for Human Resources for å sikre dataintegritet ved skriving av data til enhetene.
 
 > [!NOTE]
-> Human Resources-enheter tilsvarer Dataverse-tabeller. Hvis du vil ha mer informasjon om Dataverse (tidligere Common Data Service) og terminologioppdateringer, kan du se [Hva er Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)
+> Human Resources-enheter tilsvarer Dataverse-tabeller. Hvis du vil ha mer informasjon om Dataverse (tidligere Common Data Service) og terminologioppdateringer, kan du se [Hva er Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)
 
 ## <a name="available-virtual-tables-for-human-resources"></a>Tilgjengelige virtuelle tabeller for Human Resources
 
@@ -51,7 +51,7 @@ Virtuelle tabeller for Human Resources er ikke det samme som de interne Datavers
 De interne tabellene for Human Resources genereres separat og vedlikeholdes i HCM Common-løsningen i Dataverse. For interne tabeller lagres dataene i Dataverse og krever synkronisering med appdatabasen for Human Resources.
 
 > [!NOTE]
-> Hvis du vil ha en liste over de interne Dataverse-tabellene for Human Resources, kan du se [Dataverse-tabeller](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities).
+> Hvis du vil ha en liste over de interne Dataverse-tabellene for Human Resources, kan du se [Dataverse-tabeller](./hr-developer-entities.md).
 
 ## <a name="setup"></a>Installasjon
 
@@ -71,7 +71,7 @@ Hvis du vil ha mer informasjon om aktivering og deaktivering av funksjoner, kan 
 
 ### <a name="register-the-app-in-microsoft-azure"></a>Registrere appen i Microsoft Azure
 
-Du må registrere Human Resources-forekomsten i Azure Portal slik at Microsoft-identitetsplattform kan tilby godkjennings- og autorisasjonstjenester for appen og brukerne. Hvis du vil ha mer informasjon om registrering av apper i Azure, kan du se [Hurtigstart: Registrer en app i Microsoft-identitetsplattformen](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
+Du må registrere Human Resources-forekomsten i Azure Portal slik at Microsoft-identitetsplattform kan tilby godkjennings- og autorisasjonstjenester for appen og brukerne. Hvis du vil ha mer informasjon om registrering av apper i Azure, kan du se [Hurtigstart: Registrer en app i Microsoft-identitetsplattformen](/azure/active-directory/develop/quickstart-register-app).
 
 1. Åpne [Microsoft Azure-portalen](https://portal.azure.com).
 
@@ -93,7 +93,7 @@ Du må registrere Human Resources-forekomsten i Azure Portal slik at Microsoft-i
 
 10. Angi en beskrivelse, velg en varighet og velg **Legg til**.
 
-11. Noter verdien for hemmeligheten. Du angir denne informasjonen når du [konfigurerer datakilden for den virtuelle tabellen](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-table-data-source).
+11. Registrer verdien for hemmeligheten fra **Verdi**-egenskapen til tabellen. Du angir denne informasjonen når du [konfigurerer datakilden for den virtuelle tabellen](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-table-data-source).
 
     > [!IMPORTANT]
     > Husk å notere hemmelighetens verdi. Hemmeligheten vises aldri på nytt når du forlater denne siden.
@@ -215,12 +215,11 @@ Hurtigmenyen viser de siste utførelsesresultatene for prosessen. Du kan vise lo
 
 ## <a name="see-also"></a>Se også
 
-[Hva er Dataverse?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)<br>
-[Tabeller i Dataverse](https://docs.microsoft.com/powerapps/maker/common-data-service/entity-overview)<br>
-[Oversikt over tabellrelasjoner](https://docs.microsoft.com/powerapps/maker/common-data-service/relationships-overview)<br>
-[Opprette og redigere virtuelle tabeller som inneholder data fra en ekstern datakilde](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-virtual-entities)<br>
-[Hva er Power Apps-portaler?](https://docs.microsoft.com/powerapps/maker/portals/overview)<br>
-[Oversikt over oppretting av apper i Power Apps](https://docs.microsoft.com/powerapps/maker/)
-
+[Hva er Dataverse?](/powerapps/maker/common-data-service/data-platform-intro)<br>
+[Tabeller i Dataverse](/powerapps/maker/common-data-service/entity-overview)<br>
+[Oversikt over tabellrelasjoner](/powerapps/maker/common-data-service/relationships-overview)<br>
+[Opprette og redigere virtuelle tabeller som inneholder data fra en ekstern datakilde](/powerapps/maker/common-data-service/create-edit-virtual-entities)<br>
+[Hva er Power Apps-portaler?](/powerapps/maker/portals/overview)<br>
+[Oversikt over oppretting av apper i Power Apps](/powerapps/maker/)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

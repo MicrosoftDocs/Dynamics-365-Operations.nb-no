@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 2335721cfe8fd7ff3f76e3c7ca2560a56d45d583
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9ecf6ef7b7f052ebbb1201dcd04a7431f5b72ce5
+ms.sourcegitcommit: b64c52d85aa6f110f3b1959a5521637dd8631b5b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818686"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5867453"
 ---
 # <a name="create-a-data-integrator-project-preview"></a>Opprette et dataintegratorprosjekt (forhåndsversjon)
 
@@ -59,6 +59,7 @@ Dette emnet forklarer hvordan du oppretter et dataintegratorprosjekt.
     1. Opprett dataintegrasjonsprosjekter for følgende maler ved hjelp av tilkoblingssettet du nettopp opprettet:
 
         - Resultater av innsikt i kundebetaling (CDS til Fin and Ops)
+            - Hvis du bruker versjon 10.0.17 eller senere, må du bruke malen med navnet Resultater av innsikt i kundebetaling (CDS til Fin and Ops 10.0.17+).
         - Resultater av tidsserie for kontantstrøm (CDS til Fin and Ops)
         - Resultater av tidsserie for budsjett (CDS til Fin and Ops)
 

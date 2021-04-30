@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 74422a9f2b737053288d21ba7a578c854cab1335
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 83ebcf96aa6a5b5c757285be1c5602ac4e8f50fc
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5747327"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890864"
 ---
 # <a name="set-up-number-sequences-on-an-individual-basis"></a>Konfigurere nummerserier enkeltvis
 
@@ -30,7 +30,7 @@ Dette emnet forklarer hvordan du konfigurerer nummerserier enkeltvis. Nummerseri
 2. Velg **Nummerserie**.
 3. Skriv inn en verdi i feltet **Nummerseriekode**.
 4. Skriv inn en verdi i **Navn**-feltet.
-5. I hurtigfanen **Omfangsparametere** velger du et omfang for nummerserien og velger omfangsverdier fra rullegardinlisten. Omfanget angir hvilke organisasjoner som bruker nummerserien. Nummerserier som har et annet omfang enn **Delt**, kan i tillegg ha segmenter som samsvarer med omfanget. En nummerserie med omfanget **Juridisk enhet** kan for eksempel inneholder et segment for en juridisk enhet. Hvis du vil ha mer informasjon om omfang, kan du se [Oversikt over nummerserie](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview). 
+5. I hurtigfanen **Omfangsparametere** velger du et omfang for nummerserien og velger omfangsverdier fra rullegardinlisten. Omfanget angir hvilke organisasjoner som bruker nummerserien. Nummerserier som har et annet omfang enn **Delt**, kan i tillegg ha segmenter som samsvarer med omfanget. En nummerserie med omfanget **Juridisk enhet** kan for eksempel inneholder et segment for en juridisk enhet. Hvis du vil ha mer informasjon om omfang, kan du se [Oversikt over nummerserie](../number-sequence-overview.md). 
 6. Utvid seksjonen **Segmenter**.
     - Definer formatet for nummerserien ved å legge til, fjerne og ordne segmenter.  
     - Nummerserier for alle områder kan inneholde *Konstant-segmenter* og *Alfanumerisk-segmenter*. Konstant-segmenter inneholder et sett med alfanumeriske tegn som ikke endres. Bruk denne segmenttypen til å legge til en bindestrek eller andre skilletegn mellom nummerseriesegmenter. Alfanumerisk-segmenter inneholder en kombinasjon av nummertegn (#) og &-tegn. Disse tegnene representerer bokstaver og tall som økes hver gang et nummer i serien brukes. Bruk nummertegnet (#) for å angi økende tall og et &-tegn for å angi økende bokstaver. Formatet `#####_2014` oppretter for eksempel serien `00001_2014`, `00002_2014` og så videre. Det må finnes minimum ett alfanumerisk segment. Omfangselementer, for eksempel firma eller juridisk enhet, er ikke obligatorisk. Hvis du ikke inkluderer omfangselementer i formatet, genereres det imidlertid tall per omfang for den valgte referansen.  

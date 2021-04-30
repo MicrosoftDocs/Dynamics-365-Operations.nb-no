@@ -2,7 +2,7 @@
 title: PLIT ER-funksjonen
 description: Dette emnet gir generell informasjon om hvordan du bruker ER-funksjonen SPLIT.
 author: NickSelin
-ms.date: 12/12/2019
+ms.date: 04/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5c99ee5e8129ed45253893dc83acdef99b4ce2c9
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 26b6ddeb2880fc220283b6389327a497549a4511
+ms.sourcegitcommit: 74f5b04b482b2ae023c728e0df0eb78305493c6a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745599"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "5853449"
 ---
 # <a name="split-er-function"></a>PLIT ER-funksjonen
 
@@ -79,6 +79,14 @@ Hvis `input`-argumentet er tomt, returneres det en ny, tom liste. Hvis enten `in
 ## <a name="example-2"></a>Eksempel 2
 
 `SPLIT ("XAb aBy", "aB")` returnerer en ny liste som består av tre poster som har **Verdi**-feltet av *Streng* typen. **Verdi**-feltet i den første posten inneholder teksten **"X"**, **Verdi**-feltet i den andre posten inneholder teksten **"&nbsp;"**, og **Verdi**-feltet i den tredje posten inneholder teksten **"y"**. 
+
+## <a name="example-3"></a>Eksempel 3
+
+Du kan bruke [INDEX](er-functions-list-index.md)-funksjonen til å få tilgang til individuelle elementer for den angitte inndatastrengen. Hvis du angir **MyList**-datakilden av **Beregnet felt**-typen og konfigurer den for `SPLIT("abc", 1)`-uttrykket, vil uttrykket `INDEX(MyList,2).Value` returnere teksten **"b"**.
+
+## <a name="example-4"></a>Eksempel 4
+
+[ENUMERATE](er-functions-list-enumerate.md)-funksjonen kan også hjelpe deg med å få tilgang til individuelle elementer for den angitte inndatastrengen. Hvis du først angir **MyList**-datakilden av **Beregnet felt**-typen og konfigurer `SPLIT("abc", 1)`-uttrykket for den og deretter angir **EnumeratedList**-datakilden av **Beregnet felt**-typen og konfigurer `ENUMERATE(MyList)`-uttrykket for den, returnerer uttrykket `FIRSTORNULL(WHERE(EnumeratedList, EnumeratedList.Number=2)).Value` teksten **"b"**.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

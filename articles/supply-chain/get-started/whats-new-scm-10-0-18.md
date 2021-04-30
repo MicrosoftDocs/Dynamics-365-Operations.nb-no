@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: dc53d2c40414993e43ac90ce4f878c7d1c425eb2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: ae65afbcaca1f2f390520e1108d8363c3e248c60
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832136"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909359"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10018-may-2021"></a>Forhåndsversjon av Dynamics 365 Supply Chain Management 10.0.18 (mai 2021)
 
@@ -35,15 +35,15 @@ Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynam
 
 ## <a name="features-included-in-this-release"></a>Funksjoner inkludert i denne versjonen
 
-Denne versjonen inneholder følgende funksjoner: Følg koblingene til [frigivelsesplanen](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) for å se de offisielle frigivelsesdatoene for hver funksjon.
+Denne versjonen inneholder følgende funksjoner: Følg koblingene til [frigivelsesplanen](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) for å se de offisielle frigivelsesdatoene for hver funksjon.
 
-- Automatisk frigivelse av bestillinger (utvidelse for [Lagerkjøring med skalaenheter i skyen](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-scale-units-cloud))<br> - Hvis du vil ha mer informasjon, kan du se [Arbeidsbelastninger for lagerstyring for sky- og kantskalaenheter](../cloud-edge/cloud-edge-workload-warehousing.md).
+- Automatisk frigivelse av bestillinger (utvidelse for [Lagerkjøring med skalaenheter i skyen](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-scale-units-cloud))<br> - Hvis du vil ha mer informasjon, kan du se [Arbeidsbelastninger for lagerstyring for sky- og kantskalaenheter](../cloud-edge/cloud-edge-workload-warehousing.md).
 
-- [Ytelsesforbedringer og arkivering av bedriftsskala](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enterprise-scale-inventory-performance-improvements-archiving)<br> - Hvis du vil ha mer informasjon, kan du se [Arkivere lagertransaksjoner](../inventory/archive-inventory-transactions.md)
+- [Ytelsesforbedringer og arkivering av bedriftsskala](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enterprise-scale-inventory-performance-improvements-archiving)<br> - Hvis du vil ha mer informasjon, kan du se [Arkivere lagertransaksjoner](../inventory/archive-inventory-transactions.md)
 
-- [Rabattbehandling](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/rebate-management)<br> - Hvis du vil ha mer informasjon, kan du se [Oversikt over rabattbehandlingsmodul](../rebate-management/rebate-management-overview.md).
+- [Rabattbehandling](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/rebate-management)<br> - Hvis du vil ha mer informasjon, kan du se [Oversikt over rabattbehandlingsmodul](../rebate-management/rebate-management-overview.md).
 
-- Forenklet grensesnitt for bare inn- og utstempling (utvidelse for [Forbedret grensesnitt for produksjonsgulvutførelse for produksjon](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enhanced-production-floor-execution-interface-manufacturing))<br> - Hvis du vil ha mer informasjon, kan du se [Konfigurere grensesnittet for produksjonsutførelse](../production-control/production-floor-execution-configure.md).
+- Forenklet grensesnitt for bare inn- og utstempling (utvidelse for [Forbedret grensesnitt for produksjonsgulvutførelse for produksjon](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enhanced-production-floor-execution-interface-manufacturing))<br> - Hvis du vil ha mer informasjon, kan du se [Konfigurere grensesnittet for produksjonsutførelse](../production-control/production-floor-execution-configure.md).
 
 De fleste av disse funksjonene må aktiveres ved hjelp av [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) før du kan bruke dem. Noen av funksjonene i listen er fortsatt i forhåndsversjon, mens andre kanskje allerede er allment tilgjengelige. 
 
@@ -70,7 +70,7 @@ Hvis du vil ha informasjon om feilrettinger som er inkludert i hver av oppdateri
 
 Er du spent på kommende og nylig utgitte tilleggspakkefunksjoner i våre bedriftsprogrammer eller -plattform?
 
-Se [Dynamics 365: 2021-frigivelsesbølge 1-planen](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/). Vi har registrert alle detaljene, ende til ende, øverst til nederst, i et enkelt dokument som du kan bruke i planleggingen.
+Se [Dynamics 365: 2021-frigivelsesbølge 1-planen](/dynamics365-release-plan/2021wave1/). Vi har registrert alle detaljene, ende til ende, øverst til nederst, i et enkelt dokument som du kan bruke i planleggingen.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Fjernede og avskrevne funksjoner i Supply Chain Management
 

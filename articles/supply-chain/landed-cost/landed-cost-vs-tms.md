@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-04
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: bb5ecaa237eed2a1902c965fd42b31cc1708a4e2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 244d378316caf639c3520a1179dd82955d94220a
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5833863"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909481"
 ---
 # <a name="landed-cost-vs-transportation-management"></a>Netto innkjøpspris vs. Transportstyring
 
@@ -51,8 +51,8 @@ TMS og Netto innkjøpspris deler ikke referansedata for enheter som kostnadsopps
 
 Følgende rapporter fungerer ikke sammen med funksjonen for varer i transitt som Netto innkjøpspris gir:
 
-- [Rapporten Totalsummer for konserninterne varer i transitt](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/intercompany-goods-in-transit-totals-report-intercompanygoodsintransittotals)
-- [Rapporten Totalsummer for konserninterne varer i transitt](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/intercompany-goods-in-transit-totals-report-intercompanygoodsintransittotals)
+- [Rapporten Totalsummer for konserninterne varer i transitt](/dynamicsax-2012/appuser-itpro/intercompany-goods-in-transit-totals-report-intercompanygoodsintransittotals)
+- [Rapporten Totalsummer for konserninterne varer i transitt](/dynamicsax-2012/appuser-itpro/intercompany-goods-in-transit-totals-report-intercompanygoodsintransittotals)
 
 Disse rapportene forutsetter at varer settes i transitt så snart du har utstedt en salgsfølgeseddel, og at de tas til lager fra transitt ved mottak. Varer i transitt behandles imidlertid ikke på denne måten. Hvis du bruker varene i transitt og konserninterne funksjoner sammen, vil derfor resultatene for begge disse rapportene være feil.
 

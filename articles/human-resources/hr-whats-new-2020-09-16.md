@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-09-16
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bf0e2d90b07cb488429311d04dfbc4d1d3520842
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6b07bfb27bbe5e546dac9d72666b3225cc202670
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800099"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890705"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-16-2020"></a>Hva er nytt eller endret i Dynamics 365 Human Resources (16. september 2020)
 
@@ -33,7 +33,7 @@ Dette emnet beskriver funksjoner som enten er nye eller endret i Dynamics 365 Hu
 
 ## <a name="included-in-this-release"></a>Inkludert i denne versjonen
 
--  [Lagrede visninger – generell tilgjengelighet](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability)<br>- Hvis du vil ha mer informasjon se [Lagrede visninger](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/saved-views). 
+-  [Lagrede visninger – generell tilgjengelighet](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability)<br>- Hvis du vil ha mer informasjon se [Lagrede visninger](../fin-ops-core/fin-ops/get-started/saved-views.md). 
 
 - Skjemaet **Stillingshandlinger** har et oppdatert dimensjonsrutenett og en ny dialog (469495).
 
@@ -76,21 +76,21 @@ Dette emnet beskriver funksjoner som enten er nye eller endret i Dynamics 365 Hu
 
 Ansatte kan se og be om fravær fra jobb i Microsoft Teams. De kan kommunisere med en robot for å opprette permisjonsforespørsler. Hvis du vil ha mer informasjon, kan du se:
 
-- [Ansattopplevelsen fro permisjon og fravær i Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) i Dynamics 365-planen for lanseringsbølge 1 i 2020
-- [Human Resources-app i Teams](https://go.microsoft.com/fwlink/?linkid=2127841) i Human Resources-dokumentasjon
+- [Ansattopplevelsen fro permisjon og fravær i Microsoft Teams](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) i Dynamics 365-planen for lanseringsbølge 1 i 2020
+- [Human Resources-app i Teams](./hr-admin-teams-leave-app.md) i Human Resources-dokumentasjon
 
 ### <a name="human-resources-app-in-teams-preview-features"></a>Human Resources-app i Teams-evalueringsfunksjoner
  
 -  **Varslinger**: Innsendere og godkjennere av fritidsforespørsler vil bli varslet i Human Resources-appen i Teams. Godkjennere kan godkjenne eller avslå forespørsler om fritid. Innsendere vil bli varslet hvis forespørselen ble godkjent eller avvist. Hvis du vil ha mer informasjon, kan du se:
-   - [Ansattopplevelsen fro permisjon og fravær i Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/employee-leave-absence-experience-teams) i Dynamics 365-planen for lanseringsbølge 2 i 2020
-   - [Aktivere varslinger for Human Resources-appen i Teams](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-teams-leave-app#enable-notifications-for-the-human-resources-app-in-teams) i Human Resources-dokumentasjon
-   - [Aktivere eller deaktivere Teams-varslinger for enkeltstående brukere](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-teams-leave-app#turn-teams-notifications-on-or-off-for-individual-users) i Human Resources-dokumentasjonen
-   - [Teams-varslinger](https://docs.microsoft.com/dynamics365/human-resources/hr-teams-leave-app#teams-notifications) i Human Resources-dokumentasjonen
-   - [Vise permisjonskalenderen for Teams](https://docs.microsoft.com/dynamics365/human-resources/hr-teams-leave-app#view-your-teams-leave-calendar) i Human Resources-dokumentasjonen
+   - [Ansattopplevelsen fro permisjon og fravær i Microsoft Teams](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/employee-leave-absence-experience-teams) i Dynamics 365-planen for lanseringsbølge 2 i 2020
+   - [Aktivere varslinger for Human Resources-appen i Teams](./hr-admin-teams-leave-app.md#enable-notifications-for-the-human-resources-app-in-teams) i Human Resources-dokumentasjon
+   - [Aktivere eller deaktivere Teams-varslinger for enkeltstående brukere](./hr-admin-teams-leave-app.md#turn-teams-notifications-on-or-off-for-individual-users) i Human Resources-dokumentasjonen
+   - [Teams-varslinger](./hr-teams-leave-app.md#respond-to-teams-notifications) i Human Resources-dokumentasjonen
+   - [Vise permisjonskalenderen for Teams](./hr-teams-leave-app.md#view-your-teams-leave-calendar) i Human Resources-dokumentasjonen
  
 - **Fritidskalender for leder**: Ledere kan se godkjent og ventende fritid for direkte underordnede i en kalendervisning. Denne visningen gir en enkel forståelse av når teammedlemmene er borte fra arbeid. Hvis du vil ha mer informasjon, kan du se:
-   - [Ansattopplevelsen fro permisjon og fravær i Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/employee-leave-absence-experience-teams) i Dynamics 365-planen for lanseringsbølge 2 i 2020
-   - [Vise permisjonskalenderen for Teams](https://docs.microsoft.com/dynamics365/human-resources/hr-teams-leave-app#view-your-teams-leave-calendar) i Human Resources-dokumentasjonen
+   - [Ansattopplevelsen fro permisjon og fravær i Microsoft Teams](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/employee-leave-absence-experience-teams) i Dynamics 365-planen for lanseringsbølge 2 i 2020
+   - [Vise permisjonskalenderen for Teams](./hr-teams-leave-app.md#view-your-teams-leave-calendar) i Human Resources-dokumentasjonen
 
 ### <a name="configuration-option-to-position-work-items-assigned-to-me-list-477004"></a>Konfigurasjonsalternativ for å plassere listen Arbeidselementer som er tilordnet til meg (477004)
 
@@ -98,7 +98,7 @@ Et nytt alternativ er nå tilgjengelig for å plassere listen **Arbeidselementer
 
 Denne funksjonen fremmer også arbeidsflytalternativene som vises i personalhandlingsskjemaene. Arbeidsflytalternativer vises også over hurtigkategorien for handlingen for rask tilgang. Hvis du vil ha mer informasjon, kan du se: 
 
-- [Forbedringer i arbeidsflyten for organisasjons- og personalstyring](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) i Dynamics 365 2020-frigivelsesbølge 2-planen
+- [Forbedringer i arbeidsflyten for organisasjons- og personalstyring](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) i Dynamics 365 2020-frigivelsesbølge 2-planen
 
 ![Arbeidselementer som er tilordnet til meg](./media/hr-workflow-work-items-assigned-to-me.png)
 
@@ -106,7 +106,7 @@ Denne funksjonen fremmer også arbeidsflytalternativene som vises i personalhand
 
 ### <a name="leave-and-absence-calendar"></a>Kalender for permisjon og fravær
 
-Denne versjonen inneholder flere kalenderalternativer for permisjons- og fraværskalendere. Hvis du vil ha mer informasjon, kan du se [Vise team- og firmakalendere](https://docs.microsoft.com/dynamics365/human-resources/hr-employee-self-service-calendar).
+Denne versjonen inneholder flere kalenderalternativer for permisjons- og fraværskalendere. Hvis du vil ha mer informasjon, kan du se [Vise team- og firmakalendere](./hr-employee-self-service-calendar.md).
 
 ## <a name="coming-soon"></a>Kommer snart
 
@@ -121,7 +121,7 @@ Sjekklisteenheter for pålasting, avlasting, overføringer og forretningsprosess
 ## <a name="see-also"></a>Se også
 
 [Nyheter eller endringer i Human Resources](hr-admin-whats-new.md)</br>
-[Oversikt over lanseringsbølge 2 i 2019 for Dynamics 365 Human Resources](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[Oversikt over lanseringsbølge 2 i 2019 for Dynamics 365 Human Resources](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Oppdatere prosess](hr-admin-setup-update-process.md)</br>
 [Behandle funksjoner](hr-admin-manage-features.md)
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 648a793b15df5597c0c4c6f2f972e28bb0ce79a5
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ef556c44ac0241f19e9e1891fb3ce32294667827
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750920"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909869"
 ---
 # <a name="before-you-buy"></a>Før du kjøper
 
@@ -86,7 +86,7 @@ For tilleggsressurser, se:
 
 ## <a name="step-four-learn-about-fasttrack-and-plan-your-deployment"></a>Trinn fire: Lære om FastTrack og planlegge distribusjonen
 
-Microsoft FastTrack for Dynamics 365 er vår kundesuksesstjeneste utformet for å hjelpe deg med å gå til Dynamics 365 smidig og trygt, slik at du raskere kan realisere forretningsverdier. Når du deltar i programmet FastTrack, får du veiledning om anbefalte fremgangsmåter og hvordan du planlegger for vellykket høyt volum. Du vil også lære måter å aktivere nye brukere og ttvid egenskaper – alle i ditt eget tempo. I tillegg har du tilgang til Microsoft tekniske ressurser for å gjøre opplevelsen med Dynamics 365 vellykket. Hvis du vil ha mer informasjon, kan du se [Microsoft FastTrack](fasttrack-dynamics-365-overview.md).
+Microsoft FastTrack for Dynamics 365 er vår kundesuksesstjeneste utformet for å hjelpe deg med å gå til Dynamics 365 smidig og trygt, slik at du raskere kan realisere forretningsverdier. Når du deltar i programmet FastTrack, får du veiledning om anbefalte fremgangsmåter og hvordan du planlegger for vellykket høyt volum. Du vil også lære måter å aktivere nye brukere og ttvid egenskaper – alle i ditt eget tempo. I tillegg har du tilgang til Microsoft tekniske ressurser for å gjøre opplevelsen med Dynamics 365 vellykket. Hvis du vil ha mer informasjon, kan du se [Microsoft FastTrack](/dynamics365/fasttrack/).
 
 ## <a name="if-you-are-upgrading-from-dynamics-ax-2012-or-migrating-from-ax-2009"></a>Hvis du oppgraderer fra Dynamics AX 2012 eller migrerer fra AX 2009
 

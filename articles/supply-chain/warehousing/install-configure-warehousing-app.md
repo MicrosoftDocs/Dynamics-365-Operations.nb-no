@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c92fe991c8651d7665de2e850d8649b72f525f4c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: aeb9675477e728c28c38b1ef43fa6055acd23360
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835578"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909385"
 ---
 # <a name="install-and-connect-the-warehouse-app"></a>Installere og koble til lagerappen
 
@@ -31,7 +31,7 @@ ms.locfileid: "5835578"
 > Dette emnet beskriver hvordan du konfigurerer den gamle lagerappen (som nå er avskrevet). Hvis du ser etter informasjon om hvordan du konfigurerer den nye mobilappen Lagerstyring, kan du se [Installere og koble til mobilappen Lagerstyring](install-configure-warehouse-management-app.md).
 
 > [!NOTE]
-> Dette emnet beskriver hvordan du konfigurerer lagerappen for skydistribusjoner. Hvis du leter etter informasjon om hvordan du konfigurerer lagerappen for lokale distribusjoner, kan du se [Lager for lokale distribusjoner](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
+> Dette emnet beskriver hvordan du konfigurerer lagerappen for skydistribusjoner. Hvis du leter etter informasjon om hvordan du konfigurerer lagerappen for lokale distribusjoner, kan du se [Lager for lokale distribusjoner](../../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
 
 Lagerappen er tilgjengelig fra Google Play-butikken og Microsoft Store. Den leveres som en frittstående komponent. Derfor må du laste den ned på hver enhet og deretter konfigurere den for å koble til Microsoft Dynamics 365 Supply Chain Management-miljøet.
 
@@ -54,7 +54,7 @@ Bruk en av følgende koblinger til å laste ned appen:
 - **Windows (UWP):** [Dynamics 365 for Finance and Operations – Lager i Microsoft Store](https://www.microsoft.com/store/apps/9p1bffd5tstm)
 - **Android:** [Warehousing - Dynamics 365 i Google Play Store](https://play.google.com/store/apps/details?id=com.Microsoft.Dynamics365forOperationsWarehousing)
 
-For mindre distribusjoner kan det være lurt å installere appen fra den relevante butikken på hver enhet og deretter konfigurere tilkoblingen manuelt til miljøene du bruker. I versjon 1.7.0.0 og nyere av lagerappen kan du imidlertid også automatisere distribusjon og/eller konfigurasjon for apper. Du vil kanskje synes denne fremgangsmåten er nyttig hvis du administrerer mange enheter, og du bruker en administrasjonsløsning for mobilenheter, for eksempel [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune). Hvis du vil ha informasjon om hvordan du bruker Intune til å legge til apper, kan du se [Legge til apper i Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-add).
+For mindre distribusjoner kan det være lurt å installere appen fra den relevante butikken på hver enhet og deretter konfigurere tilkoblingen manuelt til miljøene du bruker. I versjon 1.7.0.0 og nyere av lagerappen kan du imidlertid også automatisere distribusjon og/eller konfigurasjon for apper. Du vil kanskje synes denne fremgangsmåten er nyttig hvis du administrerer mange enheter, og du bruker en administrasjonsløsning for mobilenheter, for eksempel [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). Hvis du vil ha informasjon om hvordan du bruker Intune til å legge til apper, kan du se [Legge til apper i Microsoft Intune](/mem/intune/apps/apps-add).
 
 ## <a name="create-a-web-service-application-in-azure-active-directory"></a><a name="create-service"></a>Opprette en webtjenesteapp i Azure Active Directory
 
@@ -89,11 +89,11 @@ For at lagerappen skal kunne kommunisere med en bestemt Supply Chain Management-
 
 Hvis du vil ha mer informasjon om hvordan du definerer webtjenesteapper i Azure AD, kan du se følgende ressurser:
 
-- Hvis du vil ha instruksjoner som viser hvordan du bruker Windows PowerShell til å konfigurere webtjenesteapper i Azure AD, kan du se [Fremgangsmåte: Bruke Azure PowerShell til å opprette en tjenestekontohaver med et sertifikat](https://docs.microsoft.com/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
+- Hvis du vil ha instruksjoner som viser hvordan du bruker Windows PowerShell til å konfigurere webtjenesteapper i Azure AD, kan du se [Fremgangsmåte: Bruke Azure PowerShell til å opprette en tjenestekontohaver med et sertifikat](/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
 - Hvis du vil ha fullstendig informasjon om hvordan du oppretter en webtjenesteapp manuelt i Azure AD, kan du se følgende emner:
 
-    - [Hurtigstart: Registrere en app med Microsoft-identitetsplattformen](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)
-    - [Fremgangsmåte: Bruke portalen til å opprette en Azure AD-app og tjenestekontohaver som har tilgang til ressurser](https://docs.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal)
+    - [Hurtigstart: Registrere en app med Microsoft-identitetsplattformen](/azure/active-directory/develop/quickstart-register-app)
+    - [Fremgangsmåte: Bruke portalen til å opprette en Azure AD-app og tjenestekontohaver som har tilgang til ressurser](/azure/active-directory/develop/howto-create-service-principal-portal)
 
 ## <a name="create-and-configure-a-user-account-in-supply-chain-management"></a>Opprette og konfigurere en brukerkonto i Supply Chain Management
 
@@ -121,7 +121,7 @@ Godkjenning med Azure AD er en sikker metode for å koble en mobil enhet til Sup
 
 Sertifikater kan brukes som hemmeligheter for å bevise appens identitet når det bes om en token. Fellesdelen av sertifikatet lastes opp til appregistreringen i Azure-portalen, mens det fullstendige sertifikatet må distribueres på hver enhet der lagerstyringsappen er installert. Organisasjonen din er ansvarlig for å administrere sertifikatet når det gjelder rotasjon og så videre. Du kan bruke selvsignerte sertifikater, men du bør alltid bruke sertifikater som ikke kan eksporteres.
 
-Du må angi at sertifikatet skal være tilgjengelig lokalt på hver enhet der du kjører lagerstyringsappen. Hvis du vil ha informasjon om hvordan du behandler sertifikater for Intune-kontrollerte enheter hvis du bruker Intune, kan du se [Bruke sertifikater til godkjenning i Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/certificates-configure).
+Du må angi at sertifikatet skal være tilgjengelig lokalt på hver enhet der du kjører lagerstyringsappen. Hvis du vil ha informasjon om hvordan du behandler sertifikater for Intune-kontrollerte enheter hvis du bruker Intune, kan du se [Bruke sertifikater til godkjenning i Microsoft Intune](/mem/intune/protect/certificates-configure).
 
 ## <a name="configure-the-application-by-importing-connection-settings"></a>Konfigurere appen ved å importere tilkoblingsinnstillinger
 

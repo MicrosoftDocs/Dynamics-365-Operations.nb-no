@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2f6dbcbd92a99699ce8d7e91c1a7e89a6063035f
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: df2c55a8a69efa20c6d8c41e97c9e1f80ee1640d
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795147"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892759"
 ---
 # <a name="prepare-for-human-resources-go-live"></a>Klargjøre for å aktivere med Human Resources
 
@@ -43,7 +43,7 @@ Følgende tabell viser alle trinnene i prosessen, forventet varighet og hvem som
 | 2 | Fullfør og send sjekkliste | Etter at testing av brukergodkjenning er fullført | Partner/kunde | Følg instruksjonene som er oppgitt i [FastTrack-aktiveringsvurderingen](hr-admin-go-live-prepare.md#fasttrack-go-live-assessment). |
 | 3 | Prosjektvurdering (FastTrack) | FastTrack-arkitekt* | Arkitekten leverer vurdering etter at sjekklisten er mottatt, og fortsetter gjennomgangen til spørsmålene blir avklart og løsninger er på plass, hvis det er aktuelt. |
 | 4 | Prosjekt-workshop (FastTrack) | FastTrack-arkitekt* | |
-| 5 | Import av datapakke | Er avhengig av prosjektet | Partner/kunde | Følg instruksjonene i [Oversikt over databehandling](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages).|
+| 5 | Import av datapakke | Er avhengig av prosjektet | Partner/kunde | Følg instruksjonene i [Oversikt over databehandling](../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).|
 | 6 | Produksjonsklar | Når alle tidligere trinn er fullført | Partner/kunde | Partner/kunde kan ta kontroll over produksjonsmiljøet.|
 | 7 | Overgangsaktiviteter | Er avhengig av prosjektet | Partner/kunde | |
 | 8 | Aktivering | Er avhengig av prosjektet | Kunde | |
@@ -66,7 +66,7 @@ I løpet av UAT-fasen må du teste alle forretningsprosessene du har implementer
 
 - Det anbefales at UAT-prosessen starter med et rent og nytt miljø der dataene fra GULL-konfigurasjonen kopieres til miljøet før starten av UAT-prosessen. Det anbefales at du bruker produksjonsmiljøet som GULL-miljø til du går i gang med å produsere på et bestemt tidspunkt.
 - Prøvesaker dekker hele omfanget av krav. 
-- Test ved å bruke overførte data. Disse dataene bør inneholde hoveddata, for eksempel arbeidere, jobber og stillinger. Ta også med åpningssaldoer som permisjons- og fraværsavsetninger. Til slutt skal du ta med åpne transaksjoner, for eksempel registrering av gjeldende fordeler. Fullstendig testing med alle typer data, selv om datasettet ikke er sluttført. 
+- Test ved å bruke overførte data. Dette bør inkludere data, for eksempel arbeidere, jobber og stillinger. Ta også med åpningssaldoer som permisjons- og fraværsavsetninger. Til slutt skal du ta med åpne transaksjoner, for eksempel registrering av gjeldende fordeler. Fullstendig testing med alle typer data, selv om datasettet ikke er sluttført. 
 - Test ved å bruke de riktige sikkerhetsrollene (standardroller og egendefinerte roller) som er tilordnet til brukerne. 
 - Kontroller at løsningen er i samsvar med alle bransjespesifikke forskriftsmessige krav. 
 - Dokumenter alle funksjoner og hent godkjenning fra kunden. 
@@ -86,7 +86,7 @@ Før du aktiverer, må du utføre en testaktivering for å teste trinnene som er
 
 ## <a name="fasttrack-go-live-assessment"></a>FastTrack-aktiveringsvurdering
 
-Kunder som er kvalifisert for FastTrack, og er engasjert med en FastTrack-løsningsarkitekt, vil fullføre en aktiveringsgjennomgangen med Microsoft FastTrack. Hvis du vil ha mer informasjon, kan du se [Microsoft FastTrack](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview). 
+Kunder som er kvalifisert for FastTrack, og er engasjert med en FastTrack-løsningsarkitekt, vil fullføre en aktiveringsgjennomgangen med Microsoft FastTrack. Hvis du vil ha mer informasjon, kan du se [Microsoft FastTrack](/dynamics365/fasttrack/). 
 
 Om lag åtte uker før aktivering, vil FastTrack-teamet be deg fylle ut en [sjekkliste for aktivering](https://go.microsoft.com/fwlink/?linkid=2146013).
 

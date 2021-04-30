@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: ac0efbbe645969cdf0419bf533d34e38b76fb67a
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 7decdb1d759284c616ecf928c10f99098627472d
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751238"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893584"
 ---
 # <a name="configure-action-dependent-er-destinations"></a>Konfigurere handlingsavhengige ER-mål
 
@@ -60,7 +60,7 @@ Hvis du velger dokumenttypen **Hvilken som helst**, blir **Identifisert automati
     - Når **Send**-handlingen angis ved kjøretid, brukes ER-målet **E-post**.
     - Når **Skriv ut**-handlingen angis ved kjøretid, brukes ER-målet **Skriver**.
 
-Du kan for eksempel bruke ER-formatet **Fritekstfaktura (Excel)** til å skrive ut en [fritekstfaktura](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/create-free-text-invoice-new) når du posterer den. Hvis du vil rute et generert dokument, må du konfigurere ER-mål for dette ER-formatet. Det kan for eksempel hende at du må konfigurere disse ER-målene for å kunne gjøre følgende med et generert dokument:
+Du kan for eksempel bruke ER-formatet **Fritekstfaktura (Excel)** til å skrive ut en [fritekstfaktura](../../../finance/accounts-receivable/create-free-text-invoice-new.md) når du posterer den. Hvis du vil rute et generert dokument, må du konfigurere ER-mål for dette ER-formatet. Det kan for eksempel hende at du må konfigurere disse ER-målene for å kunne gjøre følgende med et generert dokument:
 
 - arkivere dokumentet hvis ER-formatet kjøres, men ingen handlingskode er angitt (for eksempel når dokumentet blir sendt elektronisk)
 - forhåndsvise dokumentet i en nettleser når en bruker utfører **Vis**-handlingen.
@@ -82,7 +82,7 @@ Illustrasjonen nedenfor viser hvordan du kan oppnå den samme alternative konfig
 
 Hvis brukerhandlinger er klargjort av brukere som har de aktuelle [tillatelsene](electronic-reporting-destinations.md#security-considerations) til å endre konfigurerte målinnstillinger ved kjøretid, når et ER-format kjøres, vises det en dialogboks der du kan endre de konfigurerte målinnstillingene. Denne dialogboksen er valgfri, og utseendet avhenger av hvordan oppkallet som ER-rammeverket utfører for å kjøre et ER-format, er implementert. Hvis denne dialogboksen vises, blir ER-målet i den aktivert i henhold til brukerhandlingen som angis.
 
-Illustrasjonen nedenfor viser et eksempel på dialogboksen **Mål for elektronisk rapporteringsformat** som vises når en fritekstfaktura [posteres](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/create-free-text-invoice-new) og ER-formatet **Fritekstfaktura (Excel)** kjøres for å generere dette dokumentet, hvis **Skriver**-handlingen ble klargjort og ER-mål ble konfigurert for dette formatet som vist tidligere i dette emnet.
+Illustrasjonen nedenfor viser et eksempel på dialogboksen **Mål for elektronisk rapporteringsformat** som vises når en fritekstfaktura [posteres](../../../finance/accounts-receivable/create-free-text-invoice-new.md) og ER-formatet **Fritekstfaktura (Excel)** kjøres for å generere dette dokumentet, hvis **Skriver**-handlingen ble klargjort og ER-mål ble konfigurert for dette formatet som vist tidligere i dette emnet.
 
 ![Dialogboks der du kan endre de opprinnelig konfigurerte ER-målene for kjøring av ER-format](./media/er-destination-action-dependent-02.gif)
 

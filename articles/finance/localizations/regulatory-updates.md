@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: c5e8f4e7b27cdffe97d73e67d33f023155b60ef0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2f235726d163b9262fabee4d0a1118600a60eee1
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822763"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890782"
 ---
 # <a name="regulatory-updates"></a>Forskriftsmessige oppdateringer
 
@@ -25,7 +25,7 @@ ms.locfileid: "5822763"
 
 Dette emnet viser de forskriftsmessige oppdateringene som er planlagt og utgitt i Dynamics 365 Finance-støttede lokaliseringer. Leveringstidslinjer kan bli endret, og forventet funksjonalitet kan være forskjellig eller blir kanskje ikke utgitt. Les [Microsofts policy](https://go.microsoft.com/fwlink/p/?linkid=2007332) for mer informasjon. 
 
-Forskriftsmessige oppdateringer er funksjoner som er implementert for å støtte ny eller endret landspesifikk lovgivning. Hvis du vil ha mer informasjon om planlagte og utgitte landsspesifikke funksjoner, kan du se [Lanseringsplaner for Dynamics 365 og Power Platform](https://docs.microsoft.com/business-applications-release-notes/index).
+Forskriftsmessige oppdateringer er funksjoner som er implementert for å støtte ny eller endret landspesifikk lovgivning. Hvis du vil ha mer informasjon om planlagte og utgitte landsspesifikke funksjoner, kan du se [Lanseringsplaner for Dynamics 365 og Power Platform](/business-applications-release-notes/index).
 
 Microsoft arbeider for å implementere nye lovbestemte krav så tidlig som mulig. Den faktiske leveringsdatoen avhenger av kunngjøringsdatoen for loven, tilgjengeligheten til kravdetaljene fra de lokale myndighetene, tilgjengeligheten av verktøyene for validering og størrelsen og kompleksiteten i endringen.
 

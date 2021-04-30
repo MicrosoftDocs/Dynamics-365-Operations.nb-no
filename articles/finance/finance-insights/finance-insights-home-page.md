@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 502205f76f1519153caf6e976ffbb5eb9412c4ea
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b1f034017c2cd8736c1e3ce286924bf305961390
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818566"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5898066"
 ---
 # <a name="finance-insights-home-page-preview"></a>Startside for Finance Insights (forhåndsversjon)
 
@@ -31,7 +31,7 @@ Finance Insights gir konfigurerbare og utvidbare modeller som hjelper deg med å
 
 Forhåndsversjonen av Finance Insights er tilgjengelig for prøvedistribusjoner i USA, Europa og Storbritannia. Microsoft legger gradvis til støtte for flere områder.
 
-Evalueringsfunksjonalitet kan og bør bare aktiveres i sandkassemiljøer på lag 2. Oppsett og AI-modeller for kunstig intelligens som er opprettet i et sandkassemiljø, kan ikke overføres til et produksjonsmiljø. Hvis du vil ha mer informasjon, kan du se [Ekstra vilkår for bruk for Microsoft Dynamics 365-forhåndsversjoner](https://docs.microsoft.com/dynamics365/legal/supp-dynamics365-preview#:~:text=Supplemental%20Terms%20of%20Use%20for%20Microsoft%20Dynamics%20365,%28governing%20your%20use%20of%20Microsoft%20Dynamics%20365%20Online%29.).
+Evalueringsfunksjonalitet kan og bør bare aktiveres i sandkassemiljøer på lag 2. Oppsett og AI-modeller for kunstig intelligens som er opprettet i et sandkassemiljø, kan ikke overføres til et produksjonsmiljø. Hvis du vil ha mer informasjon, kan du se [Ekstra vilkår for bruk for Microsoft Dynamics 365-forhåndsversjoner](/dynamics365/legal/supp-dynamics365-preview#:~:text=Supplemental%20Terms%20of%20Use%20for%20Microsoft%20Dynamics%20365,%28governing%20your%20use%20of%20Microsoft%20Dynamics%20365%20Online%29.).
 
 ## <a name="prerequisites"></a>Forutsetninger
 
@@ -43,7 +43,7 @@ Hvis du vil bruke forhåndsversjonsprogrammet, fyller du ut [Finance Insights-fo
 
 ### <a name="system-requirements"></a>Systemkrav
 
-Et lag 2-sandkassemiljø (flerboks) kreves for å forhåndsvise Finance Insights. Hvis du vil ha bakgrunnsinformasjon om miljøene, se [Miljøplanlegging](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/imp-lifecycle/environment-planning).
+Et lag 2-sandkassemiljø (flerboks) kreves for å forhåndsvise Finance Insights. Hvis du vil ha bakgrunnsinformasjon om miljøene, se [Miljøplanlegging](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
 
 ### <a name="version-requirements"></a>Versjonskrav
 
@@ -79,7 +79,7 @@ Du må opprette et dataintegreringsprosjekt, slik at data som maskinlæringsmode
 Når du har fullført konfigurasjonstrinnene og konfigurert demodata, må du aktivere og definere hver funksjon du planlegger å bruke: kundebetalingsprediksjoner, kontantstrømprognoser og budsjettforslag.
 
 ### <a name="enable-customer-payment-predictions"></a>Aktivere kundebetalingsprognoser
-Hvis du bruker demodata til å teste kundebetalingsprediksjoner, må du kanskje importere flere demodata for å opprette AI-modellen på en vellykket måte. Hvis du vil ha en spesifikk fremgangsmåte for å importere demodata, kan du se [Konfigurere demodata for betalingsprediksjoner](set-up-demo-data.md).
+Hvis du bruker demodata til å teste kundebetalingsprediksjoner, må du kanskje importere flere demodata for å opprette AI-modellen på en vellykket måte. 
 
 Hvis du vil aktivere kundebetalingsprediksjoner, må du fullføre et sett med trinn for å bygge en maskinlæringsmodell som bruker organisasjonens data til å generere prediksjoner om når kunder sannsynligvis vil betale utestående fakturaer, og når bestemte fakturaer sannsynligvis vil bli betalt. Hvis du vil ha mer informasjon og de spesifikke trinnene som skal fullføres, kan du se [Aktivere kundebetalingsprognoser](enable-cust-paymnt-prediction.md). 
 

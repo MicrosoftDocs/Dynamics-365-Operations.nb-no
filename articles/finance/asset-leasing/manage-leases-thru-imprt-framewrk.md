@@ -2,11 +2,11 @@
 title: Administrere leie via rammeverket for leieimport
 description: Dette emnet forklarer hvordan du bruker rammeverket for leieimport til å justere flere leieavtaler samtidig.
 author: moaamer
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: AssetLeaseLeaseImportHeader
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 26fb195ff18dc0c86d3546b782265043c2c78bf4
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 083adf0a4bb74ac65e6f8b5077f65c74eb3fa337
+ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5819800"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5880916"
 ---
 # <a name="manage-leases-through-the-lease-import-framework"></a>Administrere leie via rammeverket for leieimport
 
@@ -53,7 +53,7 @@ Med sammenligningsfunksjonen kan du sammenligne en post du skal importere, med d
 > [!NOTE]
 > Sammenligningsfunksjonaliteten fungerer ikke for leieavtaler som har prosesstypen **Legg til post**, fordi det ikke er noe å sammenligne mot denne leieavtalen.
 >
-> Hvis du vil sammenligne flere leieavtaler samtidig, går du til **Aktivaleie \> rammeverket for import av leieavtale \> Periodisk \> Sammenlign**, og deretter velger du **Sammenlign**.
+> Hvis du vil sammenligne flere leieavtaler samtidig, går du til **Aktivaleie \> rammeverket for import av leieavtale \> Periodisk**, og deretter velger du **Sammenlign**.
 
 For hver enhet kan du vise forskjellene mellom det som finnes i systemet, og det som finnes i oppsamlingstabellene. Velg **Vis forskjeller** for hver enhet i oppsamlingstabellene. Dialogboksen som vises, viser den gjeldende verdien og den foreslåtte oppsamlingsverdien.
 
@@ -62,17 +62,17 @@ Du kan også oppdatere oppsamlingsverdien ved å endre den i kolonnen **Ny verdi
 Du kan validere leieavtaler for å sikre at postene kan hentes inn i systemet uten å introdusere feil. Før en leieavtale overføres, kjører systemet flere valideringer for å sikre at posten blir importert. Velg **Valider** for å validere en enkelt leieavtale.
 
 > [!NOTE]
-> Hvis du vil validere flere leieavtaler samtidig, går du til **Aktivaleie \> rammeverket for import av leieavtale \> Periodisk \> Valider**, og deretter velger du **Sammenlign**.
+> Hvis du vil validere flere leieavtaler samtidig, går du til **Aktivaleie \> rammeverket for import av leieavtale \> Periodisk**, og deretter velger du **Valider**.
 
 Hvis du vil behandle en enkelt leieavtale, velger du å **overføre leieposter** på siden **Importhode**. Når en leieavtale overføres, utfører systemet handlingen som er angitt i **Prosesstype**-feltet.
 
 > [!NOTE]
-> Hvis du vil validere flere leieavtaler samtidig, går du til **Aktivaleie \> rammeverket for import av leieavtale \> Periodisk \> Valider**, og deretter velger du **Sammenlign**.
+> Hvis du vil overføre flere leieavtaler samtidig, går du til **Aktivaleie \> rammeverket for import av leieavtale \> Periodisk**, og deretter velger du **Overfør**.
 
 Når leieavtalene er sammenlignet, kan du kjøre en rapport for å vise forskjellene for hver leieavtale som er inkludert i import-IDen. Hvis du vil kjøre rapporten for én leieavtale, velger du leieavtalen i oppsamlingsdataene, og deretter velger du **sammenlign og vis rapport \> rapport om forskjeller**.
 
 > [!NOTE]
-> Hvis du vil validere flere leieavtaler samtidig, går du til **Aktivaleie \> Forespørsler og rapporter \> rapport om forskjeller**, og deretter velger du **Sammenlign**.
+> Hvis du vil sammenligne flere leieavtaler samtidig, går du til **Aktivaleie \> rammeverket for import av leieavtale \> Periodisk**, og deretter velger du **Sammenlign**. 
 
 ## <a name="set-up-update-fields"></a>Definere oppdateringsfelt
 

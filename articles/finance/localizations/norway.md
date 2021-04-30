@@ -13,12 +13,12 @@ ms.search.region: Norway
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8a027d007d241c84a493cb423f5947f980e00ecb
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b9f933ea6b37f7b6dea312a4b6f31f0c38194e5c
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813947"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5894658"
 ---
 # <a name="norway-overview"></a>Oversikt over Norge
 
@@ -31,8 +31,8 @@ Dette emnet inneholder koblinger til dokumentasjonsressurser for Norge.
 - [Format for nettoimport](emea-nor-nets-import-format.md)
 - [Mva-oppgave](emea-nor-sales-tax-payment-report.md)
 - [Standard revisjonsfil for avgift (SAF-T)](emea-nor-satndard-audit-file-for-tax.md)
-- [Kassefunksjonalitet](../../retail/localizations/emea-nor-cash-registers.md)
-- [Retningslinjer for distribusjon for kassaapparater](../../retail/localizations/emea-nor-loc-deployment-guidelines.md)
+- [Kassefunksjonalitet](../../commerce/localizations/emea-nor-cash-registers.md)
+- [Retningslinjer for distribusjon for kassaapparater](../../commerce/localizations/emea-nor-loc-deployment-guidelines.md)
 - [Eksport av elektroniske fakturaer for kunde](emea-nor-e-invoices.md)
 
 

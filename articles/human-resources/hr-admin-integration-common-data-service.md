@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 080f66e4e13df44a77f0499c6d69686f0e3d7021
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: bf406a954f5bb8b49627b58a901d0721cdad407b
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5801197"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5890034"
 ---
 # <a name="configure-dataverse-integration"></a>Konfigurer Dataverse-integrering
 
@@ -30,7 +30,7 @@ ms.locfileid: "5801197"
 Du kan aktivere eller deaktivere integrering mellom Microsoft Dataverse og Dynamics 365 Human Resources. Du kan også vise synkroniseringsdetaljene, slette sporingsdata og synkronisere en tabell på nytt for å hjelpe til med å feilsøke dataproblemer mellom de to miljøene.
 
 > [!NOTE]
-> Hvis du vil ha mer informasjon om Dataverse (tidligere Common Data Service) og terminologioppdateringer, kan du se [Hva er Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)
+> Hvis du vil ha mer informasjon om Dataverse (tidligere Common Data Service) og terminologioppdateringer, kan du se [Hva er Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)
 
 Når du deaktiverer integrering, kan brukere gjøre endringer i Human Resources eller Dataverse, men disse endringene synkroniseres ikke mellom de to miljøene.
 
@@ -124,8 +124,8 @@ Slik kjører du en fullstendig synkronisering av en tabell mellom Human Resource
 [Dataverse-tabeller](hr-developer-entities.md)<br>
 [Konfigurere virtuelle Dataverse-tabeller](hr-admin-integration-common-data-service-virtual-entities.md)<br>
 [Vanlige spørsmål om virtuelle tabeller for Human Resources](hr-admin-virtual-entity-faq.md)<br>
-[Hva er Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)<br>
-[Terminologioppdateringer](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro#terminology-updates)
+[Hva er Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)<br>
+[Terminologioppdateringer](/powerapps/maker/data-platform/data-platform-intro#terminology-updates)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

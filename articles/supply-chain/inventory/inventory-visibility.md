@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: e294ada8dd3e764987aa363adb2614416986575b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d09c7be5de75511b10d7a69d4b8ac12917b0dbe8
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821135"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910431"
 ---
 # <a name="inventory-visibility-add-in"></a>Tillegg for lagersynlighet
 
@@ -39,7 +39,7 @@ Dette emnet beskriver hvordan du installerer og konfigurerer tillegget for lager
 
 Du må installere tillegget for lagersynlighet ved hjelp av Microsoft Dynamics Lifecycle Services (LCS). LCS er en samarbeidsportal som gir et miljø og et sett med jevnlig oppdaterte tjenester som hjelper deg med å administrere applivssyklusen til Dynamics 365 Finance and Operations-appene dine.
 
-Hvis du vil ha mer informasjon, se [Lifecycle Services-ressurser](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs).
+Hvis du vil ha mer informasjon, se [Lifecycle Services-ressurser](../../fin-ops-core/dev-itpro/lifecycle-services/lcs.md).
 
 ### <a name="prerequisites"></a>Forutsetninger
 
@@ -48,10 +48,13 @@ Før du kan installere tillegget for lagersynlighet, må du gjøre følgende:
 - Hent et LCS-implementeringsprosjekt med minst ett miljø som er distribuert.
 - Sørg for at forutsetningene for å definere tillegg som er oppført i [Tilleggsoversikt](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md), er fullført. Lagersynlighet krever ikke kobling til dobbel skriving.
 - Kontakt lagersynlighetsteamet på [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) for å få følgende tre obligatoriske filer:
-
     - `Inventory Visibility Dataverse Solution.zip`
     - `Inventory Visibility Configuration Trigger.zip`
     - `Inventory Visibility Integration.zip` (hvis versjonen av Supply Chain Management du kjører, er eldre enn versjon 10.0.18)
+- Følg instruksjonene gitt i [Hurtigstart: Registrere en app med Microsoft-identitetsplattformen](/azure/active-directory/develop/quickstart-register-app) for å registrere en app og legge til en klienthemmelighet for AAD under Azure-abonnementet ditt.
+    - [Registrere en app](/azure/active-directory/develop/quickstart-register-app)
+    - [Legge til en klienthemmelighet](/azure/active-directory/develop/quickstart-register-app#add-a-certificate)
+    - **App-ID (klient)**, **Klienthemmelighet** og **Leier-ID** vil bli brukt i trinnene nedenfor.
 
 > [!NOTE]
 > Landene og områdene som støttes for øyeblikket, omfatter Canada, USA og Den europeiske union (EU).
@@ -64,7 +67,7 @@ Gjør følgende for å konfigurere Dataverse.
 
 1. Legg til et serviceprinsipp i leieren:
 
-    1. Installer Azure AD PowerShell-modul v2 som beskrevet i [Installer Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2).
+    1. Installer Azure AD PowerShell-modul v2 som beskrevet i [Installer Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2).
     1. Kjør følgende PowerShell-kommando.
 
         ```powershell
@@ -80,7 +83,12 @@ Gjør følgende for å konfigurere Dataverse.
     1. Velg **Ny**. Sett app-ID-en til *3022308a-b9bd-4a18-b8ac-2ddedb2075e1*. (Objekt-ID-en lastes automatisk når du lagrer endringene.) Du kan tilpasse navnet. Du kan for eksempel endre til *Lagersynlighet*. Når du er ferdig, velg **Lagre**.
     1. Velg **Tilordne rolle**, og velg deretter **Systemadministrator**. Hvis det finnes en rolle kalt **Common Data Service-bruker**, velger du den også.
 
-    Hvis du vil ha mer informasjon, kan du se [Opprette en appbruker](https://docs.microsoft.com/power-platform/admin/create-users-assign-online-security-roles#create-an-application-user).
+    Hvis du vil ha mer informasjon, kan du se [Opprette en appbruker](/power-platform/admin/create-users-assign-online-security-roles#create-an-application-user).
+
+1. Hvis standardspråket for Dataverse ikke er **engelsk**:
+
+    1. Gå til **Avanserte innstillinger \> Administrasjon \> Språk**,
+    1. Velg **Engelsk (språkkode=1033)**, og velg **Bruk**.
 
 1. Importer `Inventory Visibility Dataverse Solution.zip`-filen, som inkluderer relaterte enheter for konfigurasjon av Dataverse og Power Apps:
 
@@ -158,12 +166,12 @@ Sørg for at følgende funksjoner er aktivert i miljøet i Supply Chain Manageme
 
     Finn LCS-miljøets Azure-område, og skriv deretter inn URL-adressen. URL-adressen har følgende skjema:
 
-    `https://inventoryservice.<RegionShortName>-il301.gateway.prod.island.powerapps.com/`
+    `https://inventoryservice.<RegionShortName>-il301.gateway.prod.island.powerapps.com`
 
     Hvis du for eksempel er i Europa, vil miljøet ditt ha en av følgende URL-adresser:
 
-    - `https://inventoryservice.neu-il301.gateway.prod.island.powerapps.com/`
-    - `https://inventoryservice.weu-il301.gateway.prod.island.powerapps.com/`
+    - `https://inventoryservice.neu-il301.gateway.prod.island.powerapps.com`
+    - `https://inventoryservice.weu-il301.gateway.prod.island.powerapps.com`
 
     Følgende områder er for øyeblikket tilgjengelige.
 
@@ -212,13 +220,13 @@ Hent et token for sikkerhetstjeneste ved å gjøre følgende:
 
     ```json
     {
-    "token_type": "Bearer",
-    "expires_in": "3599",
-    "ext_expires_in": "3599",
-    "expires_on": "1610466645",
-    "not_before": "1610462745",
-    "resource": "0cdb527f-a8d1-4bf8-9436-b352c68682b2",
-    "access_token": "eyJ0eX...8WQ"
+        "token_type": "Bearer",
+        "expires_in": "3599",
+        "ext_expires_in": "3599",
+        "expires_on": "1610466645",
+        "not_before": "1610462745",
+        "resource": "0cdb527f-a8d1-4bf8-9436-b352c68682b2",
+        "access_token": "eyJ0eX...8WQ"
     }
     ```
 
@@ -255,6 +263,43 @@ Hent et token for sikkerhetstjeneste ved å gjøre følgende:
         "expires_in": 1200
     }
     ```
+
+### <a name="sample-request"></a><a name="inventory-visibility-sample-request"></a>Eksempelforespørsel
+
+For din referanse har du her et eksempel på en http-forespørsel. Du kan bruke alle verktøy eller kodingsspråk til å sende denne forespørselen, for eksempel ``Postman``.
+
+```json
+# Url
+# replace {RegionShortName} and {EnvironmentId} with your value
+https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/onhand
+
+# Method
+Post
+
+# Header
+# replace {access_token} with the one get from security service
+Api-version: "1.0"
+Content-Type: "application/json"
+Authorization: "Bearer {access_token}"
+
+# Body
+{
+    "id": "id-bike-0001",
+    "organizationId": "usmf",
+    "productId": "Bike",
+    "quantities": {
+        "pos": {
+            "inbound": 5
+        }  
+    },
+    "dimensions": {
+        "SizeId": "Small",
+        "ColorId": "Red",
+        "SiteId": "1",
+        "LocationId": "11"
+    }
+}
+```
 
 ### <a name="configure-the-inventory-visibility-api"></a><a name="inventory-visibility-configuration"></a>Konfigurer API-en for lagersynlighet
 
@@ -338,7 +383,7 @@ Her er en eksempelspørring på produktet med farge- og størrelseskombinasjon.
 {
     "filters": {
         "OrganizationId": ["usmf"],
-        "ProductId": ["MyProduct"],
+        "ProductId": ["MyProduct1", "MyProduct2"],
         "LocationId": ["21"],
         "SiteId": ["2"],
         "ColorId": ["Red"]
@@ -350,6 +395,8 @@ Her er en eksempelspørring på produktet med farge- og størrelseskombinasjon.
     "returnNegative": true
 }
 ```
+
+For `filters`-feltet støtter for øyeblikket bare `ProductId` flere verdier. Hvis `ProductId` er en tom matrise, vil alle produkter bli spurt etter.
 
 #### <a name="custom-measurement"></a>Egendefinert mål
 

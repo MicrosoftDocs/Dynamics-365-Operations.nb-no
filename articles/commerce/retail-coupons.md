@@ -15,12 +15,12 @@ ms.search.industry: retail
 ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 9d8b9977d733c87566249bcb9658b80c4350c17d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a4de42c23bf96591d1ac99ed32438fe34a485998
+ms.sourcegitcommit: 05868764acd3d77970724a30c49c5ae5ffb6ca5b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792031"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5906655"
 ---
 # <a name="set-up-coupons-for-retail-sales"></a>Definere kuponger for detaljhandelssalg
 
@@ -38,6 +38,8 @@ Hvis du vil opprette en kupong, oppretter du rabatten og kupongen separat. Deret
 
 > [!NOTE]
 > Når en kupong er koblet til en rabatt, blir flere felt på rabattsiden i Commerce skrivebeskyttet, fordi de styres av kuponginnstillingene. Disse feltene omfatter feltene for status og standard datointervall.
+> 
+> Når du bruker kupongen i telefonsenterkanalen, må du velge **Omberegn**-knappen **(Selg-fanen > Beregn > Omberegn)** for at rabatten som er knyttet til kupongen, skal bli brukt. Dette tilleggstrinnet blir fjernet i en fremtidig versjon.
 
 ### <a name="limited-use-coupons"></a>Kuponger med begrenset bruk
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: ff00b577428c96804af5af29a91c7048bf736400
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 62bc6587ad80fd318038f5dfc5ff68821b2a65cd
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753342"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893938"
 ---
 # <a name="allow-users-to-set-up-an-er-format-reference-inquiring-a-format-from-the-global-repository"></a>Tillate brukere å konfigurere en ER-formatreferanse som forespør et format fra det globale repositoriet
 
@@ -30,7 +30,7 @@ Du kan bruke [Elektronisk rapportering](general-electronic-reporting.md)-rammeve
 
 Vanligvis må du angi hva slags ER-format som må brukes i en bestemt forretningsprosess. Hvis du vil gjøre dette, velger du ett enkelt ER-format i et oppslagsfelt som er konfigurert som del av forretningsprosesspesifikke parametere. Disse oppslagsfeltene implementeres vanligvis ved å bruke riktig API for ER-rammeverket. Hvis du vil ha mer informasjon, kan du se [ER-rammeverks-API – kode for å vise et formatkartleggingsoppslag](er-apis-app73.md#code-to-display-a-format-mapping-lookup).
 
-Når du konfigurerer [utenrikshandelparametere](https://docs.microsoft.com/dynamics365/finance/localizations/emea-intrastat#set-up-foreign-trade-parameters), må du for eksempel sette opp referansene til individuelle ER-formater som skal brukes til å generere Intrastat-deklarasjonen og Intrastat-deklarasjonskontrollrapporten. Skjermbildene nedenfor viser hvordan ER-formater-oppslagsfeltet ser ut på **Utenrikshandelparametere**-siden.
+Når du konfigurerer [utenrikshandelparametere](../../../finance/localizations/emea-intrastat.md#set-up-foreign-trade-parameters), må du for eksempel sette opp referansene til individuelle ER-formater som skal brukes til å generere Intrastat-deklarasjonen og Intrastat-deklarasjonskontrollrapporten. Skjermbildene nedenfor viser hvordan ER-formater-oppslagsfeltet ser ut på **Utenrikshandelparametere**-siden.
 
 Hvis gjeldende Finans-forekomst ikke inneholder noen ER-formater relatert til Intrastat-forretningsprosess, vil dette oppslagsfeltet være tomt.
 

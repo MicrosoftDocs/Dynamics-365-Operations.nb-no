@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 5c9ab724034a9bb40cfe155b748a0c7e25978add
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e6fff06cb6194f17444025f7ea1f9dbb46e4f3ea
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5833359"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907649"
 ---
 # <a name="intercompany-planning"></a>Konsernintern planlegging
 
@@ -45,8 +45,8 @@ Hvis du kjører hovedplanlegging fra en hovedplan som inkluderer planlagt nedstr
 
 Hvis du vil bruke konsernintern planlegging, må du klargjøre systemet på følgende måte:
 
-1. De relevante produktene må frigis i alle de relevante firmaene. Hvis du vil ha mer informasjon, kan du se [Konfigurer og bruk konsernintern handel i Dynamics 365 Supply Chain Management ](https://docs.microsoft.com/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/) på Microsoft Learn.
-1. Nedstrømsetterspørsel må dekkes av innkjøp fra en leverandør som har en konsernintern relasjon til oppstrømsfirmaet, og relevante standard lagerdimensjoner (område og lager) på kunden. Hvis du vil ha mer informasjon, kan du se [Konfigurer og bruk konsernintern handel i Dynamics 365 Supply Chain Management ](https://docs.microsoft.com/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/) på Microsoft Learn.
+1. De relevante produktene må frigis i alle de relevante firmaene. Hvis du vil ha mer informasjon, kan du se [Konfigurer og bruk konsernintern handel i Dynamics 365 Supply Chain Management](/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/) på Microsoft Learn.
+1. Nedstrømsetterspørsel må dekkes av innkjøp fra en leverandør som har en konsernintern relasjon til oppstrømsfirmaet, og relevante standard lagerdimensjoner (område og lager) på kunden. Hvis du vil ha mer informasjon, kan du se [Konfigurer og bruk konsernintern handel i Dynamics 365 Supply Chain Management](/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/) på Microsoft Learn.
 1. Hovedplanen i oppstrømsfirmaet må inkludere planlagt nedstrømsetterspørsel, og det relevante firmaet og hovedplanen må være angitt i nedstrømsplanene.
 
 ## <a name="include-planned-downstream-demand"></a>Inkluder planlagt nedstrøms etterspørsel

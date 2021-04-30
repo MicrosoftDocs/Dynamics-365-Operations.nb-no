@@ -12,14 +12,14 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
-ms.search.validFrom: 2020-11-31
+ms.search.validFrom: 2020-11-30
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 070e1a763977a9b5aad1a4f1336f6202f9f332cc
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 82afad71340e97ef1f86159d013e842d456b2a46
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5829987"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909925"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10016-february-2021"></a>Hva er nytt eller endret i Dynamics 365 Supply Chain Management 10.0.16 (februar 2021)
 
@@ -33,17 +33,17 @@ Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynam
 
 ## <a name="features-included-in-this-release"></a>Funksjoner inkludert i denne versjonen
 
-Denne versjonen inneholder følgende funksjoner: Følg koblingene til [frigivelsesplanen](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) for å se de offisielle frigivelsesdatoene for hver funksjon.
+Denne versjonen inneholder følgende funksjoner: Følg koblingene til [frigivelsesplanen](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/planned-features) for å se de offisielle frigivelsesdatoene for hver funksjon.
 
-- [Tilpassbart grensesnitt for produksjonsutførelse](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/customizable-shop-floor-execution-interface)<br> - Hvis du vil ha mer informasjon, kan du se [Definere en enhet for å kjøre grensesnittet for produksjonsutførelse](../production-control/production-floor-execution-setup.md).
+- [Tilpassbart grensesnitt for produksjonsutførelse](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/customizable-shop-floor-execution-interface)<br> - Hvis du vil ha mer informasjon, kan du se [Definere en enhet for å kjøre grensesnittet for produksjonsutførelse](../production-control/production-floor-execution-setup.md).
 
-- [Tillegg for lagersynlighet for Dynamics 365 Supply Chain Management](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/inventory-visibility-add-in-dynamics-365-supply-chain-management-preview)<br> - Hvis du vil ha mer informasjon, kan du se [Tillegg for lagersynlighet](../inventory/inventory-visibility.md)
+- [Tillegg for lagersynlighet for Dynamics 365 Supply Chain Management](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/inventory-visibility-add-in-dynamics-365-supply-chain-management-preview)<br> - Hvis du vil ha mer informasjon, kan du se [Tillegg for lagersynlighet](../inventory/inventory-visibility.md)
 
 - Enhetlig nummerserie for jobb-ID-er<br> - Hvis du vil ha mer informasjon, kan du se [Enhetlig nummerserie for jobb-ID-er](../production-control/unified-job-ids.md).
 
-- [Valider nummerskilter på kildedokumentlinjer](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/validate-license-plates-source-document-lines)<br> - Hvis du vil ha mer informasjon, kan du se [Oversikt over lagerkonfigurasjon](../warehousing/warehouse-configuration.md).
+- [Valider nummerskilter på kildedokumentlinjer](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/validate-license-plates-source-document-lines)<br> - Hvis du vil ha mer informasjon, kan du se [Oversikt over lagerkonfigurasjon](../warehousing/warehouse-configuration.md).
 
-- [Visualisering av utgående arbeidsmengde for lagerstyring](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management--workload-visualization)<br> - Hvis du vil ha mer informasjon, kan du se [Visualisering av utgående arbeidsmengde](../warehousing/outbound-workload-visualization.md)
+- [Visualisering av utgående arbeidsmengde for lagerstyring](/dynamics365-release-plan/2020wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management--workload-visualization)<br> - Hvis du vil ha mer informasjon, kan du se [Visualisering av utgående arbeidsmengde](../warehousing/outbound-workload-visualization.md)
 
 De fleste av disse funksjonene må aktiveres ved hjelp av [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) før du kan bruke dem.
 
@@ -99,7 +99,7 @@ Hvis du vil ha informasjon om feilrettinger som er inkludert i hver av oppdateri
 
 Er du spent på kommende og nylig utgitte tilleggspakkefunksjoner i våre bedriftsprogrammer eller -plattform?
 
-Se [Dynamics 365: 2020-frigivelsesbølge 2-planen](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/index). Vi har registrert alle detaljene, ende til ende, øverst til nederst, i et enkelt dokument som du kan bruke i planleggingen.
+Se [Dynamics 365: 2020-frigivelsesbølge 2-planen](/dynamics365-release-plan/2020wave2/index). Vi har registrert alle detaljene, ende til ende, øverst til nederst, i et enkelt dokument som du kan bruke i planleggingen.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Fjernede og avskrevne funksjoner i Supply Chain Management
 

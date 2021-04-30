@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-10-01
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: a167e6ba4a3b4161e964e5018944af0901000b01
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4e8d65cc1f946f921523607eff850b29f9ff9bf1
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841485"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910167"
 ---
 # <a name="automatic-allocation-of-charges"></a>Automatisk tilordning av tillegg
 
@@ -144,7 +144,7 @@ Når tilleggskodene er definert, følger du disse trinnene for å definere de au
     - **Område** og **Lager** – Angi et område og lager hvis tillegg bare skal brukes for et bestemt område og lager.
     - **Behold** – Merk av i denne boksen for å beholde tilleggstransaksjonene etter fakturering, slik at tillegget brukes hver gang du oppretter en ny faktura for den valgte kundekontoen.
 
-1. **Bare for salgsordrer:** Hvis du vil beregne fordelte tillegg, kan du se [Fordelte tillegg i salgsordrer](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/about-tiered-charges-on-sales-orders) for mer informasjon.
+1. **Bare for salgsordrer:** Hvis du vil beregne fordelte tillegg, kan du se [Fordelte tillegg i salgsordrer](/dynamicsax-2012/appuser-itpro/about-tiered-charges-on-sales-orders) for mer informasjon.
 
 ## <a name="allocate-charges-from-the-header-to-a-line"></a>Tilordne tillegg fra hodet til en linje
 

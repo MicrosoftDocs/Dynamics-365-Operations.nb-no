@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 80799b770f0ede9ca1175a44dd738ae635d012c2
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 038e741978bce033621bad428321a4b14ac90650
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793831"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5889842"
 ---
 # <a name="manage-features-in-human-resources"></a>Vedlikeholde funksjoner i Human Resources
 
@@ -29,9 +29,9 @@ ms.locfileid: "5793831"
 
 Som en del av vår kontinuerlige distribusjonen av ny funksjonalitet for Microsoft Dynamics 365 Human Resources vil vi at kunder får nye funksjoner så snart som mulig. Vi tilbyr forhåndsversjon av funksjoner, som nesten er klar for generelle tilgjengeligheten og har gjennomgått omfattende testing. Vi er bare ute etter en endelig runde med tilbakemelding og godkjenning før vi gjør dem generelt tilgjengelige.
 
-Hvis du vil ha mer informasjon om nye funksjoner i Human Resources, kan du se [Hva er nytt i Human Resources](hr-admin-whats-new.md) og [lanseringsplan for Dynamics 365 og Power Platform ](https://docs.microsoft.com/dynamics365/release-plans/#pivot=products&panel=products1).
+Hvis du vil ha mer informasjon om nye funksjoner i Human Resources, kan du se [Hva er nytt i Human Resources](hr-admin-whats-new.md) og [lanseringsplan for Dynamics 365 og Power Platform ](/dynamics365/release-plans/?panel=products1#pivot=products).
 
-Arbeidsområdet **Funksjonsbehandling** inneholder en liste over funksjoner som leveres i hver utgivelse. Nye funksjoner er deaktivert som standard. Du kan bruke arbeidsområdet til å aktivere dem og vise dokumentasjonen for dem. Hvis du vil ha mer informasjon om funksjonsbehandling, kan du se [Oversikt over funksjonsbehandling](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+Arbeidsområdet **Funksjonsbehandling** inneholder en liste over funksjoner som leveres i hver utgivelse. Nye funksjoner er deaktivert som standard. Du kan bruke arbeidsområdet til å aktivere dem og vise dokumentasjonen for dem. Hvis du vil ha mer informasjon om funksjonsbehandling, kan du se [Oversikt over funksjonsbehandling](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 Alle nye funksjoner blir forhåndsvist i minst 30 dager, og vanligvis 30-60 dager. Større funksjoner er vanligvis tilgjengelig i oktober og april i hvert år etter forhåndsvisningsperioden. Så snart du ser nye funksjoner i arbeidsområdet for **funksjonsbehandling**, kan du aktivere dem. Det kan hende at noen funksjoner er aktivert som standard.
 
@@ -93,6 +93,6 @@ Ikke ta med personlige data (informasjon som kan identifisere deg) i tilbakemeld
 ## <a name="see-also"></a>Se også
 
 - [Hva er nytt i Human Resources](hr-admin-whats-new.md)
-- [Lanseringsplan for Dynamics 365 og Power Platform](https://docs.microsoft.com/dynamics365/release-plans/#pivot=products&panel=products1)
+- [Lanseringsplan for Dynamics 365 og Power Platform](/dynamics365/release-plans/?panel=products1#pivot=products)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

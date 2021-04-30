@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 5f4c91c16363b978932d74c7e8b4420b3a8366d3
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 0f92ace4e7e765c326c62095fb57e3343d8d303b
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752714"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909773"
 ---
 # <a name="available-mobile-workspaces"></a>Tilgjengelige mobile arbeidsområder
 
@@ -31,9 +31,9 @@ Dette emnet viser de mobile arbeidsområdene som er tilgjengelige for bruk med D
 |[Firmakatalog](company-directory-mobile-workspace.md)| Lar deg vise og kontakte andre ansatte i organisasjonen.| 2017. juni |    
 |[Mitt team](manager-self-service-mobile-workspace.md)| Du kan vise direkte underordnede og underordnede og utvidede stab, samt gi ros til enkeltpersoner i rapporteringskjeden.|2017. juni |     
 |[Fakturagodkjenning](invoice-approval-mobile-workspace.md)| Gir en oversikt over fakturaer som er tilordnet til deg gjennom arbeidsflytprosessen leverandørfakturahode.| 2017. juni   |
-| [Reiseregning og utlegg](../../../finance/expense-management/expense-management-mobile-workspace.md) | Du kan registrere og laste opp en kvittering, slik at du kan knytte det til en reiseregningsrapport senere. Det mobile arbeidsområdet lar deg også raskt opprette en utgiftslinje ved hjelp av en tilknyttet kvittering. | 2017. april |
+| [Reiseregning og utlegg](/dynamics365/project-operations/prod-exp/expense-management-mobile-workspace) | Du kan registrere og laste opp en kvittering, slik at du kan knytte det til en reiseregningsrapport senere. Det mobile arbeidsområdet lar deg også raskt opprette en utgiftslinje ved hjelp av en tilknyttet kvittering. | 2017. april |
 | [Godkjenning av bestilling](../../../supply-chain/procurement/purchase-order-mobile-workspace.md) | Vise og svare på bestillinger med handlinger som «godta» eller «avvis». | 2017. april |
-| [Tidsoppføring for prosjekt](../../../finance/project-management/project-time-entry-mobile-workspace.md) | Du kan angi og lagre tid mot et prosjekt ved hjelp av mobilenheten. | 2017. mars |
+| [Tidsoppføring for prosjekt](/dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace) | Du kan angi og lagre tid mot et prosjekt ved hjelp av mobilenheten. | 2017. mars |
 | [Kostnadskontroll](../../../finance/cost-accounting/cost-controlling-mobile-workspace.md)     | Kostsenterledere kan se kostsenterresultater.                                                                                               |  2017. januar        |
 | [Lagerbeholdning ](../../../supply-chain/inventory/inventory-on-hand-mobile-workspace.md)    | Få innsikt i reservert og tilgjengelig beholdning.                                                                                                    |   2017. januar       |
 | [Salgsordrer](../../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md)         | Du kan holde deg oppdatert om salgsordrene.                                                                                                                          |  2017. januar                  |

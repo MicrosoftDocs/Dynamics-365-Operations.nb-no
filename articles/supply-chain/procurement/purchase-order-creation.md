@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f4679ce27b248770b9998914407cd2eb21d7dd16
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4b19c01afa162cce309443c9270ee1b39aeb0328
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825404"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909162"
 ---
 # <a name="create-purchase-orders"></a>Opprette bestillinger
 
@@ -65,7 +65,7 @@ Noen ganger vil du kanskje dele antallet du har bestilt, slik at ulike deler av 
 Tillegg kan legges automatisk til bestillingslinjer hvis automatiske tillegg er definert for leverandøren eller leverandørtilleggsgruppen, og for varen eller varens kostnadsgruppe. Imidlertid legges vanligvis tillegg til manuelt på ordrelinjenivå. Hvis du vil legge til et tillegg, åpner du siden **Vedlikehold tillegg** ved hjelp av handlingen **Vedlikehold tillegg** på siden **Finans** -menyen i visningen **Linjer**. Fordelen med å legge til tillegg direkte på ordrelinjenivå er at tillegget kan tildeles som en lagerkost. Hvis du vil definere tilleggskoder for kontoproduktkostnader, bruker du debetalternativet **Vare**. Disse tilleggstypene må tildeles fra bestillingshodet til linjene før ordren kan bekreftes. Du kan for eksempel tilordne tillegg basert på antallet på hver linje. Kategorien for tillegg påvirker også hvordan tillegg etterberegnes. Faste tillegg angir for eksempel et fast beløp, og prosenttillegg beregnes som en prosent av nettobeløpet for ordrelinjen. Bestillinger kan tilordnes til en last, og lasten kan inneholde et estimat over den forventede kostnaden for transportkostnadene. Du kan tildele denne utgiften fra lasten tilbake til bestillingslinjene.
 
 ## <a name="purchase-order-actions"></a>Bestillingshandlinger
-Når du har lagt til hodet og linjene i bestillingen, må du ofte fullføre flere trinn før bestillingen er klar til å bli bekreftet. Fordi så mange alternativer er tilgjengelige, kan det være nyttig å bruke [Handlingsøk](../../fin-and-ops/get-started/action-search.md) for å finne det relevante menyelementet.  
+Når du har lagt til hodet og linjene i bestillingen, må du ofte fullføre flere trinn før bestillingen er klar til å bli bekreftet. Fordi så mange alternativer er tilgjengelige, kan det være nyttig å bruke [Handlingsøk](../../fin-ops-core/fin-ops/get-started/action-search.md) for å finne det relevante menyelementet.  
 
 Du kan konfigurere produkter i ordren, slik at de har tilleggsvarer. Tilleggsvarer er varer som må eller kan kjøpes sammen med andre produkter. Tilleggsprodukter kan legges til kostnadsfritt som medfølgende produkter, eller du kan avgjøre om du vil legge dem til i ordren eller ikke. Du kan se gjennom tilleggsvarene etter hver ordrelinje som legges til. Du vil imidlertid sannsynligvis finne det enklere å se gjennom og legge til relevante tilleggsvarer for alle ordrelinjene ved hjelp av siden **Tilleggsvarer**, som du kan åpne i handlingsruten.  
 

@@ -13,12 +13,12 @@ ms.search.region: Norway
 ms.author: ilyako
 ms.search.validFrom: 2019-11-01
 ms.dyn365.ops.version: 10.0.08
-ms.openlocfilehash: a05357d64667dd859347a98760306f32ae0f02d0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 55e7cf5c5c6929716c9f4a74a1da072d26b289f3
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5842307"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893766"
 ---
 # <a name="customer-electronic-invoices-in-norway"></a>Elektroniske fakturaer for kunde i Norge
 
@@ -44,7 +44,7 @@ I arbeidsområdet **Elektronisk rapportering** importerer du følgende ER-format
 > [!NOTE]
 > Disse formatene er basert på konfigurasjonen **Fakturamodell** og bruker konfigurasjonen **Fakturamodelltilordning**. Alle nødvendige tilleggskonfigurasjoner importeres automatisk.
 
-Hvis du vil ha mer informasjon om hvordan du importerer ER-konfigurasjoner, kan du se [Laste ned konfigurasjoner for elektronisk rapportering fra Lifecycle Services](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
+Hvis du vil ha mer informasjon om hvordan du importerer ER-konfigurasjoner, kan du se [Laste ned konfigurasjoner for elektronisk rapportering fra Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 ### <a name="reference-the-imported-er-format-configurations"></a>Referere til de importerte ER-formatkonfigurasjonene
 

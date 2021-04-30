@@ -2,7 +2,7 @@
 title: Funksjoner som er fjernet eller avskrevet i Dynamics 365 Finance
 description: Dette emnet beskriver funksjoner som er fjernet eller som er planlagt for fjerning fra Dynamics 365 Finance.
 author: roschlom
-ms.date: 02/08/2021
+ms.date: 04/14/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 5a8f5dbc52eab78697de0d3a48d8cceb42c36540
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e0db5c35e58ab7a7cbf31642072d25ee5d8ba868
+ms.sourcegitcommit: 04817103dc8e87a679d371575927284b8ce080b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5836919"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "5898293"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Funksjoner som er fjernet eller avskrevet i Dynamics 365 Finance
 
@@ -31,7 +31,20 @@ Dette emnet beskriver funksjoner som er fjernet eller som er planlagt for fjerni
 Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivningene for din egen planlegging. 
 
 > [!NOTE]
-> Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekniske referanserapporter](https://docs.microsoft.com/dynamics/s-e/global/axtechrefrep_61). Du kan sammenligne de ulike versjonene av disse rapportene for å lære om objekter som er endret eller fjernet i hver versjon av Finance and Operations-apper.
+> Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekniske referanserapporter](/dynamics/s-e/global/axtechrefrep_61). Du kan sammenligne de ulike versjonene av disse rapportene for å lære om objekter som er endret eller fjernet i hver versjon av Finance and Operations-apper.
+
+## <a name="features-removed-or-deprecated-in-the-finance-10020-release"></a>Fjernede eller avskrevne funksjoner i Finance 10.0.20
+
+### <a name="rtir-query-invoice-data-request-hu-format-configuration"></a>Formatkonfigurasjonen RTIR-spørring om fakturadataforespørsel (HU)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Utelatt fra behandling av elektroniske meldinger for samhandling med ungarsk elektronisk faktureringssystem |
+| **Erstattet med en annen funksjon?**   | Ingen |
+| **Berørte produktområder**         | Søknad |
+| **Distribusjonsalternativ**              | Alle |
+| **Status**                         | Avskrevet: Etter 15. april 2022 planlegger vi ikke lenger å støtte formatkonfigurasjonen "RTIR-spørring om fakturadataforespørsel (HU)". |
+
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10017-release"></a>Fjernede eller avskrevne funksjoner i Finance 10.0.17
 

@@ -2,7 +2,7 @@
 title: Oversikt over administrasjon av forretningsdokument
 description: Dette emnet gir informasjon om hvordan du bruker funksjonen for administrasjon av forretningsdokument i ER-rammeverket.
 author: NickSelin
-ms.date: 12/15/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f5589925b7bfba3d9315c3828fd1ec5993a09a59
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 01067a253651bbeddcc5f02c8c15c916b25b6684
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749543"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5891311"
 ---
 # <a name="business-document-management-overview"></a>Oversikt over administrasjon av forretningsdokument
 
@@ -45,9 +45,9 @@ Hvis du vil bruke administrasjon av forretningsdokument til å redigere maler i 
 
 ## <a name="business-document-availability"></a>Tilgjengelighet av forretningsdokument
 
-Du finner en fullstendig liste over alle rapportene som er planlagt for oktober 2019-utgivelsen, i [Rapportering av konfigurerbare forretningsdokumenter i Word og Excel](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details).
+Du finner en fullstendig liste over alle rapportene som er planlagt for oktober 2019-utgivelsen, i [Rapportering av konfigurerbare forretningsdokumenter i Word og Excel](/dynamics365-release-plan/2019wave2/dynamics365-finance-operations/configurable-business-documents-reporting-word-excel-pdf#feature-details).
 
-Du finner en fullstendig liste over alle rapportene som er planlagt for oktober 2020-utgivelsen, i [Konfigurerbare forretningsdokumenter – Word-maler](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-finance/configurable-business-documents-word-templates).
+Du finner en fullstendig liste over alle rapportene som er planlagt for oktober 2020-utgivelsen, i [Konfigurerbare forretningsdokumenter – Word-maler](/dynamics365-release-plan/2020wave1/dynamics365-finance/configurable-business-documents-word-templates).
 
 Flere rapporter blir tilgjengelige i fremtidige versjoner. Spesielle varslinger om flere rapporter blir sendt separat. Hvis du vil vite hvordan du går gjennom listen over tilgjengelige rapporter, kan du se delen [Liste over ER-konfigurasjoner som er utgitt i Finance for å støtte konfigurerbare forretningsdokumenter](#list-of-configurations-cbd) nedenfor.
 
@@ -272,7 +272,23 @@ Alternativet **Rediger mal** er tilgjengelig for den valgte malen. Dette alterna
 
 ![Bekrefte begynnelsen på redigeringsprosessen for å opprette en ny mal](./media/BDM-Overview-EditingTemplate4.png)
 
+Hvis det ikke finnes noen leverandør, vil det bli tilbudt å opprette en. Hvis det ikke finnes en aktiv leverandør, vil det bli tilbudt en for aktivering.
+
+Hvis du vil opprette en leverandør, endrer du navnet på leverandøren i **Navn**-feltet, oppdaterer Internett-adressen til den nye leverandøren i feltet **Internett-adresse** og velger **OK** for å bekrefte.
+
+   ![Opprette ny leverandør i BDM](./media/bdm_create_provider.png)
+
+Hvis du vil aktivere eksisterende leverandør, velger du navnet på leverandøren i **Konfigurasjonsleverandør**-feltet, og velger **OK** for å angi leverandøren som aktiv.
+
+   ![Aktivere leverandør i BDM](./media/bdm_choose_provider.png)
+
+> [!NOTE]
+> Hver BDM-mal refererer til leverandøren som forfatteren av konfigurasjonen. Dette er årsaken til hvorfor en aktiv leverandør er nødvendig for malen.
+
+
 **Nytt dokument**-alternativet er alltid tilgjengelig for en mal i en ER-formatkonfigurasjon levert av gjeldende og en annen leverandør (Microsoft i dette eksempelet) som ikke har noen revisjoner. Den redigerte malen blir deretter lagret i en ny ER-formatkonfigurasjon som genereres automatisk.
+
+
 
 ### <a name="start-editing-a-template"></a>Begynn å redigere en mal
 
@@ -419,7 +435,7 @@ Sannsynligvis er du logget på den gjeldende forekomsten av appen for Azure AD-d
 
 ## <a name="list-of-er-configurations-that-have-been-released-in-finance-to-support-configurable-business-documents"></a><a name="list-of-configurations-cbd"></a>Liste over ER-konfigurasjoner som er utgitt i Finance for å støtte konfigurerbare forretningsdokumenter
 
-[Listen](general-electronic-reporting.md#list-of-configurations) over ER-konfigurasjoner for Finance oppdateres hele tiden. Åpne det [globale repositoriet](er-download-configurations-global-repo.md) for å se gjennom listen over ER-konfigurasjoner som støttes for øyeblikket. Du kan [filtrere](https://docs.microsoft.com/dynamics365/finance/localizations/enhanced-filtering-global-repo) det globale repositoriet for å se gjennom listen over ER-konfigurasjoner som brukes til å støtte konfigurerbare forretningsdokumenter.
+[Listen](general-electronic-reporting.md#list-of-configurations) over ER-konfigurasjoner for Finance oppdateres hele tiden. Åpne det [globale repositoriet](er-download-configurations-global-repo.md) for å se gjennom listen over ER-konfigurasjoner som støttes for øyeblikket. Du kan [filtrere](../../../finance/localizations/enhanced-filtering-global-repo.md) det globale repositoriet for å se gjennom listen over ER-konfigurasjoner som brukes til å støtte konfigurerbare forretningsdokumenter.
 
 ![Filtrere innholdet i det globale repositoriet på siden Konfigurasjonsrepositorium](./media/bdm-overview-filterglobalrepo.gif)
 

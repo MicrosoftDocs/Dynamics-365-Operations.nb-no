@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: b7df4933c1373893e00f48ea3a21bd5af40719a9
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2786d350fde2399aadb35dc653bc15123e0e6d91
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840226"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893808"
 ---
 # <a name="create-an-azure-storage-account-and-a-key-vault"></a>Opprett en Azure Storage-konto og en Key Vault
 
@@ -30,8 +30,8 @@ ms.locfileid: "5840226"
 
 Før du kan fullføre trinnene i dette emnet, må du sørge for at følgende oppgaver er fullført:
 
-- Opprette en nøkkelhvelvressurs i Azure. Hvis du vil ha mer informasjon om mål, se [Om Azure Key Vault](https://docs.microsoft.com/azure/key-vault/general/overview).
-- Opprett en Azure Storage-konto (Blob Storage). Hvis du vil ha mer informasjon, se [Vedlikeholde Azure Storage-konto](https://docs.microsoft.com/azure/storage/blobs/).
+- Opprette en nøkkelhvelvressurs i Azure. Hvis du vil ha mer informasjon om mål, se [Om Azure Key Vault](/azure/key-vault/general/overview).
+- Opprett en Azure Storage-konto (Blob Storage). Hvis du vil ha mer informasjon, se [Vedlikeholde Azure Storage-konto](/azure/storage/blobs/).
 
 ## <a name="overview"></a>Oversikt
 
@@ -83,4 +83,3 @@ I dette emnet fullfører du to hovedtrinn:
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-

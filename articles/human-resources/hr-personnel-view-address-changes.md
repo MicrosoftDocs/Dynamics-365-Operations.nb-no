@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-08-07
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 5eca902ee7df7eb6835caf6f64b17f3f004b0776
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 387caeee3ba44e1fbc661e2c31915b75dd80c31e
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5802461"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892135"
 ---
 # <a name="view-and-manage-address-changes"></a>Vise og behandle adresseendringer
 
@@ -125,9 +125,9 @@ HR-personale kan vise og overvåke adresseendringer fra arbeidsområdet **Person
 Når du velger **Adresseendringer**-flisen, viser en ny side detaljene for alle adresseendringer. Du kan også velge **Inkluder fremtidige adresseendringer** i øvre høyre hjørne for å vise adresseendringer med en fremtidig dato.
 
 > [!NOTE]
-> Hvis du vil motta et varsel eller en e-postmelding om disse adresseendringene, kan du opprette en ny varslingsregel på **Alternativer**-fanen i handlingsruten. Hvis du vil ha mer informasjon om varslingsregler, kan du se [Opprette varslingsregler](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/create-alerts).<br><br>
+> Hvis du vil motta et varsel eller en e-postmelding om disse adresseendringene, kan du opprette en ny varslingsregel på **Alternativer**-fanen i handlingsruten. Hvis du vil ha mer informasjon om varslingsregler, kan du se [Opprette varslingsregler](../fin-ops-core/fin-ops/get-started/create-alerts.md).<br><br>
 
-> Hvis du vil konfigurere en arbeidsflyt for adresseendringene, kan du velge alternativet **Send eksternt** i varslingsregelen og deretter bruke Power Automate til å utløse forretningshendelsen og konfigurere en arbeidsflyt. Hvis du vil ha mer informasjon, kan du se [Varsler som forretningshendelser](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/create-alerts#alerts-as-business-events).
+> Hvis du vil konfigurere en arbeidsflyt for adresseendringene, kan du velge alternativet **Send eksternt** i varslingsregelen og deretter bruke Power Automate til å utløse forretningshendelsen og konfigurere en arbeidsflyt. Hvis du vil ha mer informasjon, kan du se [Varsler som forretningshendelser](../fin-ops-core/fin-ops/get-started/create-alerts.md#alerts-as-business-events).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

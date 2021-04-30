@@ -2,11 +2,11 @@
 title: Startside for Aktivaleie
 description: Dette emnet gir en oversikt over dokumentasjon for Aktivaleie og koblinger til bestemte emner.
 author: moaamer
-ms.date: 10/27/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: AssetLeaseLeasingWorkspace
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 4464
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-27
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 532601d08d52e9edaf97253df4efd2fc10985dc0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 202a353929fbcd8d81593db155d7bfeebb8f3021
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816154"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5898116"
 ---
 # <a name="asset-leasing-home-page"></a>Startside for Aktivaleie
 
@@ -28,7 +28,9 @@ ms.locfileid: "5816154"
 
 Dette emnet inneholder en liste over hjelpeemnene som er tilgjengelige for Aktivaleie og omfatter koblinger til bestemte emner. 
 
-Aktivaleie er en avansert funksjon for behandling, sporing og automatisering av mindre, økonomiske transaksjoner for leide eiendeler i Microsoft Dynamics 365 Finance. Leasing av aktiva overholder internasjonale regnskapsstandarder (IFRS 16) og amerikanske GAAP-standarder (ASC 842). Aktivaleie registrerer og behandler informasjon om leieavtalene og beregner journaloppføringer gjennom livssyklusen til leieavtalen fra opprinnelig føring, månedlige journaloppføringer, til verdiforringelse og avslutning av leieavtalen.  
+Aktivaleie er en avansert funksjon for behandling, sporing og automatisering av mindre, økonomiske transaksjoner for leide eiendeler i Microsoft Dynamics 365 Finance. Leasing av aktiva overholder internasjonale regnskapsstandarder (IFRS 16) og amerikanske GAAP-standarder (ASC 842). Aktivaleie registrerer og behandler informasjon om leieavtalene og beregner journaloppføringer gjennom livssyklusen til leieavtalen fra opprinnelig føring, månedlige journaloppføringer, til verdiforringelse og avslutning av leieavtalen.
+
+Før du kan bruke denne funksjonen, må den være aktivert i systemet. Administratorer kan bruke **Funksjonsbehandling**-arbeidsområdet til å kontrollere funksjonsstatusen og aktivere den hvis den kreves. I arbeidsområdet **Funksjonsbehandling** finner og velger du funksjonen **Aktivaleie**, og deretter klikker du på knappen **Aktiver nå**.
 
 ## <a name="asset-leasing-topics"></a>Aktivaleieemner
 Følgende emne er tilgjengelig for å gjøre det enklere å konfigurere og bruke Aktivaleie. 
@@ -82,7 +84,7 @@ Dette emnet beskriver rapportene som er tilgjengelige for aktivaleieavtaler.
 
 ### <a name="whats-new-and-in-development"></a>Hva er nytt og hva er under utvikling?
 
-Gå til [Lanseringsplaner for Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158) for å se hvilke nye funksjoner som er planlagt. 
+Gå til [Lanseringsplaner for Microsoft Dynamics 365](/dynamics365/release-plans/) for å se hvilke nye funksjoner som er planlagt. 
 
 ### <a name="blogs"></a>Blogger
 

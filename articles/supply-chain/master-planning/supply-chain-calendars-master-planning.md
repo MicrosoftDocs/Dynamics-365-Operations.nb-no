@@ -14,12 +14,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: dcc66549bf6bdd67438bea9ac3c29c3f01e2674e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7a53efb753a75916c85dc4a45a3c64872a7f5d32
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841773"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908377"
 ---
 # <a name="calendars-and-master-planning"></a>Kalendere og hovedplanlegging
 
@@ -90,7 +90,7 @@ For å angi datoene når en kunde kan motta leveringer, kan du tilordne en motta
 
 Legg merke til at det er bare er mulig å inkludere én kalender per kunde. Hvis du vil inkludere en kalender for hver ulik adresse for en kunde, kan du opprette én kunde per adresse og deretter tilordne den aktuelle kalenderen. 
 
-Den ønskede leveringsdatoen på salgsordrelinjene påvirkes av kundekalenderen og metoden for leveringsdatokontroll. Du kan lese mer om hvordan den tidligste leveringsdatoen beregnes, i [Ordrebekreftelse.](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-dates-available-promise-calculations).
+Den ønskede leveringsdatoen på salgsordrelinjene påvirkes av kundekalenderen og metoden for leveringsdatokontroll. Du kan lese mer om hvordan den tidligste leveringsdatoen beregnes, i [Ordrebekreftelse.](/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-dates-available-promise-calculations).
 
 ### <a name="shipping-calendar-for-a-legal-entity"></a>Leveringskalender for en juridisk enhet
 For å angi datoene som en juridisk enhet kan sende varer, kan du definere en leveringskalender under **Organisasjonsstyring > Organisasjoner > Juridiske enheter**. Velg juridisk enhet, og legg til kalenderen i **Utenrikshandel og logistikk**-fanen i **Leveringskalender**-feltet. Leveringskalenderen vil fungere som en kilde for standarder for alle lagerkalendere i den juridiske enheten. 

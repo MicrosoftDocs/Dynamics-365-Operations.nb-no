@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 91482bb24356a14a8d44e887620548cdf6f4c5d3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f46d55bf7a670e983fb65a9ca303bc02568247ed
+ms.sourcegitcommit: bef7bd2aac00d7eb837fd275d383b7a5c3f1c1ee
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838400"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "5911302"
 ---
 # <a name="work-with-location-directives"></a>Arbeide med lokasjonsdirektiver
 
@@ -44,8 +44,8 @@ Før du kan opprette et lokasjonsdirektiv, må du følge denne fremgangsmåten f
 1. Gå til **Lagerstyring \> Oppsett \> Lager \> Lagre**.
 1. Opprett et lager.
 1. På hurtigfanen **Lager** setter du alternativet **Bruk lagerstyringsprosesser** til *Ja*.
-1. Opprett lokasjoner, lokasjonstyper, lokasjonsprofiler og lokasjonsformater. Hvis du vil ha mer informasjon, kan du se [Konfigurere lokasjoner i et WMS-aktivert lager](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/tasks/configure-locations-wms-enabled-warehouse).
-1. Opprett steder, soner og sonegrupper. Hvis du vil ha mer informasjon, kan du se [Lageroppsett](https://docs.microsoft.com/dynamics365/commerce/channels-setup-warehouse) og [Konfigurere lokasjoner i et WMS-aktivert lager](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/tasks/configure-locations-wms-enabled-warehouse).
+1. Opprett lokasjoner, lokasjonstyper, lokasjonsprofiler og lokasjonsformater. Hvis du vil ha mer informasjon, kan du se [Konfigurere lokasjoner i et WMS-aktivert lager](./tasks/configure-locations-wms-enabled-warehouse.md).
+1. Opprett steder, soner og sonegrupper. Hvis du vil ha mer informasjon, kan du se [Lageroppsett](../../commerce/channels-setup-warehouse.md) og [Konfigurere lokasjoner i et WMS-aktivert lager](./tasks/configure-locations-wms-enabled-warehouse.md).
 
 ## <a name="work-order-types-for-location-directives"></a>Arbeidsordretyper for lokasjonsdirektiver
 
@@ -143,7 +143,7 @@ Feltene i hurtigfanen **Lokasjonsdirektiver** er spesifikke for arbeidsordretype
 - **Direktivkode** – Velg direktivkoden som skal knyttes til en arbeidsmal eller etterfyllingsmal. På siden **Direktivkode** kan du opprette nye koder som kan brukes til å koble arbeidsmaler eller etterfyllingsmaler til lokasjonsdirektiver. Direktivkoder kan også brukes til å opprette en kobling mellom en hvilken som helst linje i en arbeidsmal og et lokasjonsdirektiv (for eksempel en rampedør eller en stadieplassering).
 
     > [!TIP]
-    > Hvis en direktivkode er angitt, søker ikke systemet etter lokasjonsdirektiver etter sekvensnummer når arbeid må genereres. Det vil i stedet søke etter direktivkode. På denne måten kan du være mer nøyaktig angående lokasjonsmalen som brukes for et spesifikt trinn i en arbeidsmal, for eksempel trinnet for oppsamling av materialer.
+    > Hvis en direktivkode er angitt, søker ikke systemet etter lokasjonsdirektiver etter sekvensnummer når arbeid må genereres. Det vil i stedet søke etter direktivkode. På denne måten kan du være mer nøyaktig angående lokasjonsdirektivet som brukes for et spesifikt trinn i en arbeidsmal, for eksempel trinnet for oppsamling av materialer.
 
 - **Flere SKU-er** – Sett dette alternativet til *Ja* for å aktivere flere lagerenheter (SKU-er) som skal brukes på en lokasjon. Flere SKU-er må for eksempel være aktivert for rampedørplasseringen. Hvis du aktiverer flere SKU-er, blir plasseringen angitt i arbeid som forventet. Plasseringslokasjonen kan imidlertid bare håndtere en plassering for flere varer (hvis arbeid inneholder forskjellige SKU-er som må plukkes og plasseres). Det vil ikke være mulig å behandle en enkelt SKU-plassering. Hvis du setter dette alternativet til *Nei*, vil plasseringslokasjonen bare angis hvis plasseringen bare har én SKU-type.
 
@@ -249,7 +249,7 @@ I dette scenariet må du definere to lokasjonsdirektivhandlinger. Den første ha
 
 ## <a name="next-step"></a>Neste trinn
 
-Når du har opprettet lokasjonsdirektiver, kan du knytte hver direktivkode til en arbeidsmalkode for arbeidsoppretting. Hvis du vil ha mer informasjon, kan du se [Kontrollere lagerarbeid ved hjelp av arbeidsmaler og lokasjonsdirektiver](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/control-warehouse-location-directives).
+Når du har opprettet lokasjonsdirektiver, kan du knytte hver direktivkode til en arbeidsmalkode for arbeidsoppretting. Hvis du vil ha mer informasjon, kan du se [Kontrollere lagerarbeid ved hjelp av arbeidsmaler og lokasjonsdirektiver](./control-warehouse-location-directives.md).
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

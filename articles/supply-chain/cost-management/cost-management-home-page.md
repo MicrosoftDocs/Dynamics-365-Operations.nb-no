@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1a1594babd6f27a6af867267d2ae745549355d3c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0a42709621c692bb9a20ade0d1835893f534ec4e
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839373"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908788"
 ---
 # <a name="cost-management-home-page"></a>Startside for kostnadsstyring
 
@@ -43,7 +43,7 @@ Du får tilgang til Lagerregnskap og Produksjonsregnskap fra **Kostnadsadministr
 
 Produksjonsregnskap lar deg håndtere [Etterkalkulering av jobbordre](production-order-cost-analysis.md) i produksjonsordrer og partiordrer, samt [Backflush-etterkalkulering](backflush-costing.md) i lean manufacturing.
 
-[Kostnadsbehandling-innhold for Power BI](../../dev-itpro/analytics/cost-management-content-pack.md) gir ledere innsikt i beholdning og VIA-lager, og hvordan kostnadsflyten går gjennom dem etter kategori over tid. Informasjonen kan også brukes som et detaljert supplement til regnskapsoppgjøret.
+[Kostnadsbehandling-innhold for Power BI](../../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md) gir ledere innsikt i beholdning og VIA-lager, og hvordan kostnadsflyten går gjennom dem etter kategori over tid. Informasjonen kan også brukes som et detaljert supplement til regnskapsoppgjøret.
 
 ### <a name="additional-resources"></a>Tilleggsressurser
 
@@ -57,7 +57,7 @@ Gå til [Veikart for Microsoft Dynamics 365](https://roadmap.dynamics.com/) for 
 
 #### <a name="blogs"></a>Blogger
 
-Du kan finne meninger, nyheter og annen informasjon om kostnadsstyring, i [Dynamics AX Manufacturing R&D-teambloggen](https://blogs.msdn.microsoft.com/axmfg) og [Supply Chain Management i Dynamics AX R&D-teambloggen](https://blogs.msdn.microsoft.com/dynamicsaxscm). Selv om noen av disse innleggene ble skrevet for tidligere versjoner av kostnadsstyring, vil de samme begrepene fortsatt kunne brukes, og fremgangsmåtene ligner også på den gjeldende versjonen.
+Du kan finne meninger, nyheter og annen informasjon om kostnadsstyring, i [Dynamics AX Manufacturing R&D-teambloggen](/archive/blogs/axmfg/) og [Supply Chain Management i Dynamics AX R&D-teambloggen](https://blogs.msdn.microsoft.com/dynamicsaxscm). Selv om noen av disse innleggene ble skrevet for tidligere versjoner av kostnadsstyring, vil de samme begrepene fortsatt kunne brukes, og fremgangsmåtene ligner også på den gjeldende versjonen.
 
 #### <a name="task-guides"></a>Oppgaveveiledninger
 

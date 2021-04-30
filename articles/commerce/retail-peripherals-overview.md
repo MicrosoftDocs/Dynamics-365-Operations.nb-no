@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d2cbab3177756fbf5df4f07350a6449f0b22e028
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6f60d2e654d37b86d92478b6cd961b917711ef8c
+ms.sourcegitcommit: 011468a6cffea8641bebc2922e0676d9f44b36fc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791953"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "5857279"
 ---
 # <a name="peripherals"></a>Eksterne enheter
 
@@ -142,6 +142,9 @@ Når det gjelder eksterne enheter, er UWP relatert til Windows-støtte for Plug 
 ### <a name="keyboard-wedge"></a>Tastaturkortleser
 
 Tastaturkortleserenheter sender data til datamaskinen som om dataene ble skrevet på et tastatur. Feltet som er aktivt på salgsstedet vil derfor motta dataene som skannes eller leses. I enkelte tilfeller kan denne virkemåten føre til at feil type data skannes inn i feil felt. En strekkode kan for eksempel skannes inn i et felt som er ment for registrering av kredittkortdata. I mange tilfeller er det logisk at det er salgsstedet som bestemmer om dataene som skannes eller leses, er en strekkode eller kortlesing. Derfor behandles dataene på riktig måte. Når enheter konfigureres som OPOS-enheter i stedet for tastaturkortleserenheter, er det imidlertid mer kontroll over hvordan dataene fra disse enhetene kan brukes, fordi mer er "kjent" om enheten som dataene kommer fra. Data fra en strekkodeskanner gjenkjennes for eksempel automatisk som en strekkode, og den tilknyttede posten i databasen finnes enklere og raskere enn hvis et søk etter en generell streng blir brukt, noe som er tilfelle for tastaturkortleserenheter.
+
+> [!NOTE]
+> Når tastaturkortleserskannere brukes på salgsstedet, må de programmeres for å kunne sende en vognretur, eller en **Enter**-hendelse, etter det sist skannede tegnet. Hvis denne konfigurasjonen ikke utføres, vil ikke tastaturkortleserskannere fungere riktig. Se i dokumentasjonen som leveres av enhetsprodusenten, for informasjon om hvordan du legger til vognreturhendelsen.  
 
 ### <a name="native-printer"></a>Opprinnelig skriver
 

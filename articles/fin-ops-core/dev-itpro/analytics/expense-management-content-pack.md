@@ -14,12 +14,12 @@ ms.search.industry: Manufacturing
 ms.author: kfend
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: aadf43d478eb4bf5af20df02dcc6399a7a2e71a5
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 8e95fa06745840a6ba1782f135af0e7625c934aa
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743513"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893258"
 ---
 # <a name="expense-management-power-bi-content"></a>Reiseregning og utlegg for Power BI-innhold
 
@@ -41,7 +41,7 @@ To Power BI-innholdspakker er tilgjengelige for bruk med reiseregninger i versjo
 Alle beløpene vises i selskapsvalutaen. Data for alle firmaer som vises, men hvis nødvendig kan du legge et firmafilter. 
 
 ## <a name="accessing-the-power-bi-content"></a>Tilgang til Power BI-innholdet
-Du finner Power BI-innholdet Expense Admin Dashboard.pbix og Expense Personal Dashboard.pbix i biblioteket Delte aktiva i Microsoft Dynamics Lifecycle Services (LCS). Hvis du vil ha mer informasjon om hvordan du laster ned innholdet og implementerer det i organisasjonen, kan du se [Power BI-innhold i LCS fra Microsoft og partnerne](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/).
+Du finner Power BI-innholdet Expense Admin Dashboard.pbix og Expense Personal Dashboard.pbix i biblioteket Delte aktiva i Microsoft Dynamics Lifecycle Services (LCS). Hvis du vil ha mer informasjon om hvordan du laster ned innholdet og implementerer det i organisasjonen, kan du se [Power BI-innhold i LCS fra Microsoft og partnerne](/archive/blogs/dynamicsaxbi/power-bi-content-from-microsoft-and-your-partners).
 Innholdet er tilgjengelig fra arbeidsområdet for reiseregninger som innebygd Power Bi-innhold. En utgiftseier får tilgang til personlige utgifter for seg selv, men bare regnskapsassistenter og -ledere hos leverandører har tilgang til admin-innhold for å vise alle brukerens utgiftsdata.
 
 ## <a name="refreshing-the-power-bi-content"></a>Oppdatere Power BI-innhold
