@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2019-05-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 725bce4b3aa7feb61bd7d7ded1be07f803424e57
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 7c6e4dcbd854cfadbc34f0040dcffd277d32a8d9
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745203"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909040"
 ---
 # <a name="set-up-and-install-regression-suite-automation-tool-tutorial"></a>Opplæring i installasjon og konfigurasjon av Regression Suite Automation Tool
 
@@ -54,7 +54,7 @@ Dette emnet hjelper deg å konfigurere og komme i gang med RSAT og verktøyene s
 
 ### <a name="user-eligibility"></a>Brukerrettigheter
 
-Kontroller at brukeren er opprettet i Azure DevOps og har et abonnementsnivå som gir tilgang til Azure Test Plans. En lisens for Azure DevOps Test Plans kreves bare hvis brukeren skal opprette og administrere testtilfeller (det vil si at ikke alle RSAT-brukere trenger denne lisensen). Hvis du vil ha informasjon om lisenskrav, kan du se [Lisenskrav](https://docs.microsoft.com/azure/devops/test/manual-test-permissions#license-requirements).
+Kontroller at brukeren er opprettet i Azure DevOps og har et abonnementsnivå som gir tilgang til Azure Test Plans. En lisens for Azure DevOps Test Plans kreves bare hvis brukeren skal opprette og administrere testtilfeller (det vil si at ikke alle RSAT-brukere trenger denne lisensen). Hvis du vil ha informasjon om lisenskrav, kan du se [Lisenskrav](/azure/devops/test/manual-test-permissions#license-requirements).
 
 ### <a name="create-a-new-azure-devops-project"></a>Opprette et nytt Azure DevOps-prosjekt
 

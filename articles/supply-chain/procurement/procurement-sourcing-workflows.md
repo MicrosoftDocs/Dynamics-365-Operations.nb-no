@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fd9ee69e180f2ff605c4f373a95d2346ccc73c0e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 126e9969f312ff7f6a6c64b733708754e7659214
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5807950"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909237"
 ---
 # <a name="procurement-and-sourcing-workflows"></a>Arbeidsflyter for innkjøp og leverandører
 
@@ -47,7 +47,7 @@ Arbeidsflyttypene nedenfor er tilgjengelige for Innkjøp og leverandører.
 | Arbeidsflyt for søknad om tillegging av leverandører | Opprett arbeidsflyter for gjennomgang og godkjenning for å legge til nye leverandører via leverandørforespørsler. |
 
 > [!IMPORTANT]
-> Når du legger til en ny arbeidsflyt, kan det hende at du også ser følgende foreldede arbeidsflyter som vises i dialogboksen **Opprett arbeidsflyt**. Disse er knyttet til funksjonaliteten *bekreftelse på mottak* som var tilgjengelig i [Dynamics AX 2012](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-procurement-and-sourcing-workflows), men som nå er avskrevet. Disse arbeidsflytene støttes ikke.
+> Når du legger til en ny arbeidsflyt, kan det hende at du også ser følgende foreldede arbeidsflyter som vises i dialogboksen **Opprett arbeidsflyt**. Disse er knyttet til funksjonaliteten *bekreftelse på mottak* som var tilgjengelig i [Dynamics AX 2012](/dynamicsax-2012/appuser-itpro/set-up-procurement-and-sourcing-workflows), men som nå er avskrevet. Disse arbeidsflytene støttes ikke.
 > 
 > - Varslingsarbeidsflyt for forfallsdato for levering
 > - Varslingsarbeidsflyt for fakturamottak

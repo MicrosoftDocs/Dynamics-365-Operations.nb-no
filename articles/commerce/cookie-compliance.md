@@ -2,7 +2,7 @@
 title: Samsvar for informasjonskapsel
 description: Dette emnet beskriver vurderinger for overholdelse av informasjonskapsler og standardpolicyene som er inkludert i Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 08/31/2020
+ms.date: 04/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2cc2089bc3052c0c59cb0414f8301123a9a30df2
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: efc84bcea2fb6c28c0b13d4469e858e82cc1c073
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796033"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908190"
 ---
 # <a name="cookie-compliance"></a>Informasjonskapselsamsvar
 
@@ -50,6 +50,57 @@ Tabellen nedenfor viser gjeldende referanseliste over informasjonskapsler for Dy
 | x-ms-cpim-slice                             | Brukes til å rute forespørsler til den aktuelle serverforekomsten for produksjonsgodkjenning. |
 | x-ms-cpim-sso:rushmoreb2c.onmicrosoft.com_0 | Brukes til vedlikehold av SSO-økten.                        |
 | x-ms-cpim-trans                             | Brukes til å spore transaksjoner (antallet åpne faner som godkjennes mot et forretning-til-forbruker-område) (B2C), inkludert den gjeldende transaksjonen. |
+| \_msdyn365___muid_                            | Brukes hvis eksperimentering er aktivert for miljøet, brukt som userId til eksperimenteringsformål. |
+| \_msdyn365___exp_                             | Brukes hvis eksperimentering er aktivert for miljøet, brukes til å måle ytelsesbelastningsfordeling.         |
+
+
+
+Hvis en områdebruker velger noen koblinger på sosiale medier på et område, vil informasjonskapslene som ligger i tabellen nedenfor, også spores i nettleseren.
+
+
+| Domene                      | Informasjonskapsel               | beskrivelse                                                  | Kilde                                          |
+| --------------------------- | ------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| .linkedin.com                | UserMatchHistory         | Synkronisering av ID for LinkedIn-annonser                                      | LinkedIn-oppdatering og innsiktstagg                                |
+| .linkedin.com               | li_sugr                  | Nettleser-ID                                           | LinkedIn-innsiktstagg hvis IP-adressen ikke er i et angitt land |
+| .linkedin.com               | BizographicsOptOut       | Bestemmer utmeldingsstatusen for tredjepartssporing.              | LinkedIn-gjestekontroller og bransjeutmeldingssider           |
+| .linkedin.com               | \_guid                    | Nettleser-ID for Google-annonser.                            | LinkedIn-oppdatering                                                |
+| .linkedin.com               | li_oatml                 | Indikrekte medlems-ID for konverteringssporing, ny målretting og analyse. | LinkedIn-annonser og innsiktstagger                                |
+| Diverse førstepartsdomener | li_fat_id                | Indikrekte medlems-ID for konverteringssporing, ny målretting og analyse. | LinkedIn-annonser og innsiktstagger                                |
+| .adsymptotic.com            | U                        | Nettleser-ID                                           | LinkedIn-innsiktstagg hvis IP-adressen ikke er i et angitt land |
+| .linkedin.com                | bcookie                  | Informasjonkapsel for nettleser-ID                                            | Forespørsler til LinkedIn                                         |
+| .linkedin.com                | bscookie                 | Informasjonskapsel for sikker nettleser                                        | Forespørsler til LinkedIn                                         |
+| .linkedin.com               | lang                     | Angir standard nasjonal innstilling og standardspråk.                                 | Forespørsler til LinkedIn                                         |
+| .linkedin.com                | lidc                     | Brukes til ruting.                                             | Forespørsler til LinkedIn                                         |
+| .linkedin.com               | aam_uuid                 | Adobe Audience Manager-informasjonskapsel                                                     | Angi for ID-synkronisering                                              |
+| .linkedin.com               | \_ga                      | Google Analytics-informasjonskapsel                                            | Google Analytics                                             |
+| .linkedin.com               | \_gat                     | Google Analytics-informasjonskapsel                                             | Google Analytics                                             |
+| .linkedin.com               | liap                     | Google Analytics-informasjonskapsel                                             | Google Analytics                                             |
+| .linkedin.com               | lissc                    |                                                              |                                                              |
+| .facebook.com               | c_user                   | Informasjonskapselen inneholder bruker-IDen til den påloggede brukeren.  |   Facebook                                                           |
+| .facebook.com               | datr                     | Brukes til å identifisere nettleseren som brukes til tilkobling til Facebook, uavhengig av pålogget bruker. | Facebook                                                             |
+| .facebook.com               | wd                       | Lagrer dimensjonene for nettleservinduet og brukes av Facebook til å optimalisere gjengivelsen av siden. | Facebook                                                             |
+| .facebook.com               | xs                       | Tosifret tall som representerer øktnummeret. Andre del av verdien er en økthemmelighet. |  Facebook                                                            |
+| .facebook.com               | fr                       | Inneholder en unik nettleser- og bruker-ID som brukes til målrettet reklame. |  Facebook                                                            |
+| .facebook.com               | sb                       | Brukes til å forbedre venneforslag på Facebook.                                |  Facebook                                                            |
+| .facebook.com               | spin                     |                                                              |  Facebook                                                            |
+| .twitter.com                | guest_id                 |                                                              |  Twitter                                                            |
+| .twitter.com                | kdt                      |                                                              |  Twitter                                                             |
+| .twitter.com                | personalization_id       | Informasjonskapselen inneholder bruker-IDen til den påloggede brukeren.  |  Twitter                                                             |
+| .twitter.com                | remember_checked_on      |                                                              | Twitter                                                              |
+| .twitter.com                | twid                     |                                                              |  Twitter                                                             |
+| .pinterest.com              | \_auth                    | Informasjonskapselen inneholder bruker-IDen til den påloggede brukeren.  |   Pinterest                                                           |
+| .pinterest.com              | \_b                       |                                                              |   Pinterest                                                           |
+| .pinterest.com              | \_pinterest_pfob          |                                                              |  Pinterest                                                            |
+| .pinterest.com              | \_pinterest_referrer      | Informasjonskapselen inneholder sider når brukeren velger Pinterest-knappen.      |  Pinterest                                                            |
+| .pinterest.com              | \_pinterest_sess          | Informasjonskapselen inneholder sider når brukeren velger Pinterest-knappen.      |  Pinterest                                                            |
+| .pinterest.com              | \_routing_id              |                                                              |  Pinterest                                                            |
+| .pinterest.com              | bei                      |                                                              |  Pinterest                                                            |
+| .pinterest.com              | cm_sub                   | Inneholder en bruker-ID og tidsstemplet da informasjonskapselen ble opprettet. |  Pinterest                                                            |
+| .pinterest.com              | csrftoken                | Informasjonskapselen inneholder sider når brukeren velger Pinterest-knappen.      | Pinterest                                                             |
+| .pinterest.com              | sessionFunnelEventLogged | Informasjonskapselen inneholder sider når brukeren velger Pinterest-knappen.      | Pinterest                                                             |
+| .pinterest.com              | Lokalt lager            |                                                              |  Pinterest                                                            |
+| .pinterest.com              | Tjenestearbeidere          |                                                              |  Pinterest                                                            |
+
 
 ## <a name="site-user-cookie-consent-on-an-e-commerce-site"></a>Godkjenning av områdebrukerens informasjonskapsel på et e-handelsområde 
 

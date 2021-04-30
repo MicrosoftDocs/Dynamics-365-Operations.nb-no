@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: dcb952ccc68f5f19119f8b72285667e259b00429
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5c4cad305e3d130b3283ca3424c84f60e2d13307
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840731"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907821"
 ---
 # <a name="install-set-up-and-update-the-customer-portal"></a>Installere, konfigurere og oppdatere kundeportalen
 
@@ -27,7 +27,7 @@ ms.locfileid: "5840731"
 
 For å implementere kundeportalen må du ha følgende lisenser:
 
-- **Power Apps-portaler** – denne lisensen kreves for å være vert for kundeportalen. Portaler lisensieres basert på bruk. Du finner mer informasjon i [Lisenskrav for Power Apps-portaler](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq#portals).
+- **Power Apps-portaler** – denne lisensen kreves for å være vert for kundeportalen. Portaler lisensieres basert på bruk. Du finner mer informasjon i [Lisenskrav for Power Apps-portaler](/power-platform/admin/powerapps-flow-licensing-faq#portals).
 - **Dobbel skriving** – Du må ha de nødvendige lisensene for å kunne bruke to dobbel skriving for Supply Chain Management-tabeller. Hvis du vil ha mer informasjon, kan du se [systemkravene for dobbeltskriving](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-system-req.md).
 
 ## <a name="dependencies-on-dual-write-and-power-apps-portals"></a>Avhengigheter for dobbeltskriving og Power Apps-portaler
@@ -40,7 +40,7 @@ Til forskjell fra andre funksjoner fra Supply Chain Management, ligger kundeport
 
 ## <a name="required-setup-to-enable-the-customer-portal"></a><a name="required-setup"></a>Nødvendig konfigurasjon for å aktivere kundeportalen
 
-Når du er sikker på at du har de nødvendige lisensene, kan du konfigurere dobbeltskriving som beskrevet i [instruksjoner for innledende synkronisering med dobbeltskriving](../../fin-ops-core/dev-itpro/data-entities/dual-write/initial-sync.md).
+Når du er sikker på at du har de nødvendige lisensene, kan du konfigurere dobbeltskriving som beskrevet i [instruksjoner for innledende synkronisering med dobbeltskriving](/dynamics365/supply-chain/sales-marketing/enable-entity-map).
 
 Pass på at du aktiverer følgende tabelltilordninger i dobbel skriving:
 
@@ -74,14 +74,14 @@ Du kan legge til flere funksjoner i kundeportalen senere. Alle endringer som Mic
 
 Hvis du vil lære hvordan du kan definere og tilpasse kundeportalen, bør du starte med å se gjennom følgende dokumentasjon for den underliggende teknologien:
 
-- [Dokumentasjon for Power Apps-portaler](https://docs.microsoft.com/powerapps/maker/portals/overview)
+- [Dokumentasjon for Power Apps-portaler](/powerapps/maker/portals/overview)
 - [Dokumentasjon for dobbel skriving](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md)
 
 For å administrere portalene effektivt må du forstå Power Apps-portalene og Microsoft Dataverse-livssyklusen. Hvis du vil ha mer informasjon, kan du se følgende ressurser:
 
-- [Om portalens livssyklus](https://docs.microsoft.com/powerapps/maker/portals/admin/portal-lifecycle)
-- [Oppgradere en portal](https://docs.microsoft.com/powerapps/maker/portals/admin/upgrade-portal)
-- [Overføre en portalkonfigurasjon](https://docs.microsoft.com/powerapps/maker/portals/admin/migrate-portal-configuration)
+- [Om portalens livssyklus](/powerapps/maker/portals/admin/portal-lifecycle)
+- [Oppgradere en portal](/powerapps/maker/portals/admin/upgrade-portal)
+- [Overføre en portalkonfigurasjon](/powerapps/maker/portals/admin/migrate-portal-configuration)
 - [Administrasjon livssyklus for løsning: Dynamics 365 for Customer Engagement-apper](https://www.microsoft.com/download/details.aspx?id=57777)
 
 

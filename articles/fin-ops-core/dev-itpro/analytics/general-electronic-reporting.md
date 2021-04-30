@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f172e4d3e9c175a93d6fd64f0aa1933a48860bca
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: d22a6fc336708028ce4953df50360c233398303d
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750064"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893183"
 ---
 # <a name="electronic-reporting-er-overview"></a>Oversikt over elektronisk rapportering (ER)
 
@@ -183,11 +183,11 @@ Legg merke til at denne typen repositorium er tilgjengelig i følgende miljøer:
 
 Hvis du vil ha mer informasjon, kan du se [Importere elektroniske rapporteringskonfigurasjoner](./electronic-reporting-import-ger-configurations.md).
 
-Et **RCS**-repositorium gir tilgang til listen over konfigurasjoner for en bestemt forekomst av [RCS-konfigurasjonstjenesten](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration) som ble valgt under registrering av repositoriet. Med ER kan du importere fullførte eller delte konfigurasjoner fra den valgte forekomsten av RCS til den gjeldende forekomsten, slik at du kan bruke dem til elektronisk rapportering.
+Et **RCS**-repositorium gir tilgang til listen over konfigurasjoner for en bestemt forekomst av [RCS-konfigurasjonstjenesten](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration) som ble valgt under registrering av repositoriet. Med ER kan du importere fullførte eller delte konfigurasjoner fra den valgte forekomsten av RCS til den gjeldende forekomsten, slik at du kan bruke dem til elektronisk rapportering.
 
 Hvis du vil ha mer informasjon, kan du se [Importere elektroniske rapporteringskonfigurasjoner fra RCS](./rcs-download-configurations.md).
 
-Et **globalt repositorium** gir tilgang til listen over konfigurasjoner i det globale repositoriet i [konfigurasjonstjenesten](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration). Denne typen ER-repositorium kan bare registreres for Microsoft-leverandøren. Fra det globale repositoriet kan du importere den nyeste versjonen av ER-konfigurasjoner til den gjeldende forekomsten.
+Et **globalt repositorium** gir tilgang til listen over konfigurasjoner i det globale repositoriet i [konfigurasjonstjenesten](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration). Denne typen ER-repositorium kan bare registreres for Microsoft-leverandøren. Fra det globale repositoriet kan du importere den nyeste versjonen av ER-konfigurasjoner til den gjeldende forekomsten.
 
 Hvis du vil ha mer informasjon, kan du se [Importere ER-konfigurasjoner fra det globale repositoriet for konfigurasjonstjenesten](./er-download-configurations-global-repo.md).
 

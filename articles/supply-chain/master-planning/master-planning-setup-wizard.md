@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 770800e63de73c60e0e811734d4273ff2392620f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c55c36358b8acf93ab25a358d4d7cd6a4212c2b2
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5829697"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909433"
 ---
 # <a name="master-planning-setup-wizard"></a>Veiviser for oppsett for hovedplanlegging
 
@@ -45,13 +45,13 @@ Den første siden i veiviseren spør om de spesifikke kravene i firmaet. Svarene
 
 Hvis antall tråder som er beregnet overskrider 75 prosent av det tilgjengelige antallet tråder, er det avkortet til 75 prosent av antall tråder som er tilgjengelig for hver kunde. (Antall tilgjengelige tråder vil bli fastsatt for hver kunde.)
 
-For mer informasjon, se [Antall tråder](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-threads).
+For mer informasjon, se [Antall tråder](/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-threads).
 
 ### <a name="bundle-size"></a>Buntstørrelse
 
 Buntstørrelsen vil bli satt til **1**. Denne verdien er ofte den beste verdien, fordi den bidrar til å forbedre ytelsen til hovedplanlegging.
 
-Hvis du vil ha mer informasjon, kan du se [Antall oppgaver i oppgavebunt for hjelper](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-tasks-in-helper-task-bundle).
+Hvis du vil ha mer informasjon, kan du se [Antall oppgaver i oppgavebunt for hjelper](/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-tasks-in-helper-task-bundle).
 
 ### <a name="firming-bundle-size"></a>Størrelse på autoriseringsbunt
 
@@ -64,7 +64,7 @@ Buntberegning = (antall planlagte bestillinger × (autorisasjonshorisont ÷ dekn
 
 Bufferstørrelsen vil bli satt til **Maksimum**. Denne verdien er ofte den beste verdien, fordi den bidrar til å forbedre ytelsen til hovedplanlegging.
 
-Hvis du vil ha mer informasjon, kan du se [Tildele tid til jobber i en jobbunt](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/allocate-time-jobs-job-bundle).
+Hvis du vil ha mer informasjon, kan du se [Tildele tid til jobber i en jobbunt](/dynamics365/unified-operations/supply-chain/production-control/allocate-time-jobs-job-bundle).
 
 ### <a name="manufacturing-setup"></a>Produksjonsoppsett
 
@@ -88,7 +88,7 @@ De gjenstående spørsmålene på denne siden og svarene følger etter samme skj
 - **Ja, som definert i denne hovedplanen** – alternativet **Prognoseplan (horisont)** settes til **Ja**. Antallet dager du angir, vil bli brukt, og vil overstyre verdiene som er angitt i dekningsgruppene.
 - **Ja, som definert i dekningsgruppen** – alternativet **Prognoseplan (horisont)** settes til **Nei**.
 
-Hvis du vil ha mer informasjon, se [Finplanlegging](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
+Hvis du vil ha mer informasjon, se [Finplanlegging](/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
 
 ## <a name="scheduling-options"></a>Planleggingsalternativer
 
@@ -99,7 +99,7 @@ Svaret på det første spørsmålet på denne siden (om du må planlegge operasj
 - **Ja** – jobbplanlegging vil bli brukt.
 - **Nei** – grovplanlegging vil bli brukt.
 
-Hvis du vil ha mer informasjon, kan du se [Grovplanlegging](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling) og [Finplanlegging](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
+Hvis du vil ha mer informasjon, kan du se [Grovplanlegging](/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling) og [Finplanlegging](/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
 
 ## <a name="updates-of-demand-and-supply"></a>Oppdatering av behov og forsyning
 

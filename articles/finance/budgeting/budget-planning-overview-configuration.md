@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14a5e1cea5a249b6087ef87560dd06bc026dd129
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9ed56920ca1b4f2ac1313f7025b7a3c7245e9913
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822137"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5898216"
 ---
 # <a name="budget-planning-overview"></a>Oversikt over budsjettplanlegging
 
@@ -75,7 +75,7 @@ Følgende illustrasjon viser et eksemplet der firmaets hovedkontor beregner bel�
 
 På siden **Organisasjonshierarki** kan du angi et organisasjonshierarki som en budsjettplanleggingshierarki for hver budsjettplanleggingsprosess. Budsjettplanleggingshierarkiet trenger ikke samsvarer med standard organisasjonshierarki som brukes til andre formål. Siden dette hierarkiet brukes til å samle og distribuere data, vil du kanskje det har en annen struktur. I eksempelskjemaet er salgsavdelingen under et hovedkontornivå som inkluderer budsjettet- og økonomiavdeling. Denne strukturen avviker sannsynlig fra strukturen som brukes til å administrere driften for salgsavdelingene. Bare ett organisasjonshierarki kan tilordnes hver budsjettplanleggingsprosess.
 
-Hvis du vil ha mer informasjon, kan du se [Organisasjoner og organisasjonshierarkier](../../fin-and-ops/organization-administration/organizations-organizational-hierarchies.md).
+Hvis du vil ha mer informasjon, kan du se [Organisasjoner og organisasjonshierarkier](../../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md).
 
 ### <a name="user-security"></a>Brukersikkerhet
 
@@ -163,7 +163,7 @@ I tillegg til kolonner for budsjettbeløp, kan du definere kolonner for prosjekt
 
 I eksempelskjemaet vil du kanskje opprette kolonner for scenariene "PY-salg,"kontrakter" og "prognose". (Illustrasjonen nedenfor viser den aktuelle delen av skjemaet). Du kan deretter velge ut én eller alle scenariene inn i separate kolonner for hvert kvartal av regnskapsåret, slik at salgsavdelingslederen nøyaktig kan angi prognosebeløp for hver periode.
 
-[![Kolonner](./media/columns.png)](./media/columns.png)
+[![Illustrasjon av deler av skjemaet for å legge til kolonner](./media/columns.png)](./media/columns.png)
 
 Du kan også angi om hvert oppsettelement (kolonne) kan redigeres, og om de er tilgjengelige i alle regnearkmaler som opprettes for dette oppsettet. I oppsettet som brukes for estimatstadiet i eksempelskjemaet, kan prognosekolonnene redigeres, mens kolonnene for PY-salg og kontrakter.
 

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-02-22
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 53e9c42f718665165be97e5022a9e767b0436e59
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 61f86cd6168d700a5316768b328466b08d9e8f51
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5802221"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5892615"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-22-2021"></a>Nyheter eller endringer i Dynamics 365 Human Resources 22. februar 2021
 
@@ -32,7 +32,7 @@ Dette emnet beskriver funksjoner som er nye, endret eller kommer snart i Dynamic
 
 Hvis du vil ha mer informasjon om oppdateringsprosessen og tidsplanen, kan du se [Oppdatere prosess](hr-admin-setup-update-process.md).
 
-Hvis du vil ha mer informasjon om nye funksjoner og deres forventede generelle tilgjengelighetsdatoer, se [Oversikt over Dynamics 365 Human Resources 2021-frigivelsesbølge 1](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).
+Hvis du vil ha mer informasjon om nye funksjoner og deres forventede generelle tilgjengelighetsdatoer, se [Oversikt over Dynamics 365 Human Resources 2021-frigivelsesbølge 1](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).
 
 ## <a name="in-this-release"></a>I denne versjonen
 
@@ -44,7 +44,7 @@ Følgende funksjoner er allment tilgjengelige i denne versjonen.
 
 | Funksjon | Lanseringsplan | Dokumentasjon |
 | --- | --- | --- |
-| Dynamics 365 Human Resources-app for Microsoft Teams | [Ansattopplevelsen fro permisjon og fravær i Microsoft Teams](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) | [Human Resources-app i Teams](https://go.microsoft.com/fwlink/?linkid=2127841)<br>[Behandle permisjonsforespørsler i Teams](hr-teams-leave-app.md) |
+| Dynamics 365 Human Resources-app for Microsoft Teams | [Ansattopplevelsen fro permisjon og fravær i Microsoft Teams](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) | [Human Resources-app i Teams](./hr-admin-teams-leave-app.md)<br>[Behandle permisjonsforespørsler i Teams](hr-teams-leave-app.md) |
 
 ### <a name="bug-fixes"></a>Feilrettinger
 
@@ -68,9 +68,9 @@ Følgende nye funksjoner er i forhåndsversjon. Hvis du vil ha mer informasjon o
 
 | Funksjon | Lanseringsplan | Dokumentasjon |
 | --- | --- | --- |
-| Visning av permisjon for ledere på tvers av firmaer | [Visning av ansattpermisjon for ledere på tvers av firmaer](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/cross-company-view-employee-leave-managers) | [Konfigurere permisjons- og fraværsparametere](https://docs.microsoft.com/dynamics365/human-resources/hr-leave-and-absence-parameters) |
-| Arbeidsområde for fordelsbehandling | [Arbeidsområdet Fordelsbehandling (forhåndsversjon)](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/benefits-management-workspace) | [Arbeidsområde for fordelsbehandling](hr-benefits-management-workspace.md) |
-| Du kan hindre at ansatte redigerer kontaktdetaljer for virksomhet. | [Begrense at ansatte redigerer kontaktdetaljer for virksomhet.](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/restrict-employees-editing-business-contact-details) | [Begrense redigering av personlige opplysninger](hr-employee-self-service-restrict-editing.md)|
+| Visning av permisjon for ledere på tvers av firmaer | [Visning av ansattpermisjon for ledere på tvers av firmaer](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/cross-company-view-employee-leave-managers) | [Konfigurere permisjons- og fraværsparametere](./hr-leave-and-absence-parameters.md) |
+| Arbeidsområde for fordelsbehandling | [Arbeidsområdet Fordelsbehandling (forhåndsversjon)](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/benefits-management-workspace) | [Arbeidsområde for fordelsbehandling](hr-benefits-management-workspace.md) |
+| Du kan hindre at ansatte redigerer kontaktdetaljer for virksomhet. | [Begrense at ansatte redigerer kontaktdetaljer for virksomhet.](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/restrict-employees-editing-business-contact-details) | [Begrense redigering av personlige opplysninger](hr-employee-self-service-restrict-editing.md)|
 
 ## <a name="coming-soon"></a>Kommer snart
 
@@ -78,15 +78,15 @@ Følgende nye funksjoner er i forhåndsversjon. Hvis du vil ha mer informasjon o
 | --- | --- |
 | Ferdigheter som angis av en leder for de ansatte, kan godkjennes automatisk av en arbeidsflyt | Kommer snart. |
 
-Hvis du vil ha en fullstendig liste over de planlagte funksjonene og de planlagte versjonene, kan du se [Oversikt over Dynamics 365 Human Resources 2021-frigivelsesbølge 1](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).
+Hvis du vil ha en fullstendig liste over de planlagte funksjonene og de planlagte versjonene, kan du se [Oversikt over Dynamics 365 Human Resources 2021-frigivelsesbølge 1](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).
 
 ## <a name="terminology-updates-for-microsoft-dataverse"></a>Terminologioppdateringer for Microsoft Dataverse
 
-I november 2020 endret Common Data Service navn til [Microsoft Dataverse](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro). Se den [offisielle kunngjøringen](https://powerapps.microsoft.com/blog/reshape-the-future-of-work-with-microsoft-dataverse-for-teams-now-generally-available/) på Power Apps-bloggen for å få mer informasjon. Med denne navneendringen er deler av terminologien i Dataverse oppdatert. *Enhet* er nå for eksempel *tabell* og *felt* er nå *kolonne*. Hvis du vil ha mer informasjon, kan du se [Terminologioppdateringer](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro#terminology-updates).
+I november 2020 endret Common Data Service navn til [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro). Se den [offisielle kunngjøringen](https://powerapps.microsoft.com/blog/reshape-the-future-of-work-with-microsoft-dataverse-for-teams-now-generally-available/) på Power Apps-bloggen for å få mer informasjon. Med denne navneendringen er deler av terminologien i Dataverse oppdatert. *Enhet* er nå for eksempel *tabell* og *felt* er nå *kolonne*. Hvis du vil ha mer informasjon, kan du se [Terminologioppdateringer](/powerapps/maker/data-platform/data-platform-intro#terminology-updates).
 
 I denne versjonen har terminologien knyttet til Dynamics 365 Human Resources-integreringen med Dataverse, blitt oppdatert i hele programmet for å gjenspeile disse endringene. Skjemaet for **Common Data Service-integrering** er eksempelvis nå **Microsoft Dataverse-integrering**.
 
-Hvis du vil lære mer om Dynamics 365 Human Resources-integrering med Microsoft Dataverse, kan du se [Konfigurere Microsoft Dataverse-integrering](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service) og [Konfigurere virtuelle Microsoft Dataverse-tabeller](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities).
+Hvis du vil lære mer om Dynamics 365 Human Resources-integrering med Microsoft Dataverse, kan du se [Konfigurere Microsoft Dataverse-integrering](./hr-admin-integration-common-data-service.md) og [Konfigurere virtuelle Microsoft Dataverse-tabeller](./hr-admin-integration-common-data-service-virtual-entities.md).
 
 ## <a name="updates-to-service-deployment"></a>Oppdateringer av tjenestedistribusjon
 
@@ -94,12 +94,12 @@ Fra og med versjonen fra 22. februar 2021 blir distribusjonen av regionale tjene
 
 Vi vil fortsette å følge distribusjonsfrekvensen på to uker. Kundene kan imidlertid legge merke til at oppdateringer vanligvis brukes i Human Resources-miljøet på en annen dag i syklusen for to uker enn i tidligere versjoner.
 
-Hvis du vil ha mer informasjon om serviceoppdateringsprosessen, kan du se [Oppdateringsprosess](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-setup-update-process).
+Hvis du vil ha mer informasjon om serviceoppdateringsprosessen, kan du se [Oppdateringsprosess](./hr-admin-setup-update-process.md).
 
 ## <a name="see-also"></a>Se også
 
 [Nyheter eller endringer i Human Resources](hr-admin-whats-new.md)</br>
-[Oversikt over lanseringsbølge 1 i 2021 for Dynamics 365 Human Resources](https://docs.microsoft.com/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/)</br>
+[Oversikt over lanseringsbølge 1 i 2021 for Dynamics 365 Human Resources](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/)</br>
 [Oppdatere prosess](hr-admin-setup-update-process.md)</br>
 [Behandle funksjoner](hr-admin-manage-features.md)
 

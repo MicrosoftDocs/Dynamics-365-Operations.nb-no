@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 9958091db4a3d7ce0b625e5adc8e2a6b37878618
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d7945cc899cf161f294dfcc3f6d1a9a79c9453ab
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840250"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897726"
 ---
 # <a name="configure-electronic-invoicing-in-regulatory-configuration-services-rcs"></a>Konfigurere elektronisk fakturering i RCS (Regulatory Configuration Services)
 
@@ -50,6 +50,14 @@ Funksjonene støtter dessuten utveksling av meldinger med eksterne webtjenester 
 
 Tilgjengeligheten for funksjonene for elektronisk fakturering er avhengig av landet eller området. Noen funksjoner er generelt tilgjengelige, mens andre er i forhåndsversjon.
 
+#### <a name="generally-available-features"></a>Allment tilgjengelige funksjoner
+
+Følgende tabell viser funksjonene for elektronisk fakturering som for er allment tilgjengelige.
+
+| Land/område | Funksjonsnavn                         | Forretningsdokument |
+|----------------|--------------------------------------|-------------------|
+| Egypt          | Egyptisk elektronisk faktura (EG) | Salgs- og prosjektfakturaer |
+
 #### <a name="preview-features"></a>Forhåndsvisningsfunksjoner
 
 Følgende tabell viser funksjonene for elektronisk fakturering som for øyeblikket er i forhåndsversjon.
@@ -61,7 +69,6 @@ Følgende tabell viser funksjonene for elektronisk fakturering som for øyeblikk
 | Brasil         | Brasiliansk NF-e (BR)                  | Regnskapsdokumentmodell 55, korreksjonsbrev, annulleringer og forkastelser |
 | Brasil         | Brasiliansk NFS-e ABRASF Curitiba (BR) | Skattedokumenter for tjenester |
 | Danmark        | Dansk elektronisk faktura (DK)       | Salgs- og prosjektfakturaer |
-| Egypt          | Egyptisk elektronisk faktura (EG) | Salgs- og prosjektfakturaer |
 | Estland        | Estisk elektronisk faktura (EE)     | Salgs- og prosjektfakturaer |
 | Finland        | Finsk elektronisk faktura (FI)      | Salgs- og prosjektfakturaer |
 | Frankrike         | Fransk elektronisk faktura (FR)       | Salgs- og prosjektfakturaer |
@@ -202,6 +209,91 @@ Tabellen nedenfor viser de tilgjengelige handlingene, og om de for øyeblikket e
 | Kalle opp meksikansk PAC-tjeneste                      | Integrer med meksikansk PAC-tjeneste for CFDI-innsending.                      | I forhåndsvisning           |
 | Behandle svar                              | Analyser svaret du mottok fra webtjenestesamtalen.                     | Generelt tilgjengelig  |
 | Bruke MS Power Automate                         | Integrer med flyten som er innebygd i Microsoft Power Automate.                       | I forhåndsvisning           |
+
+### <a name="applicability-rules"></a>Relevansregler
+
+Relevansregler er konfigurerbare setninger som er definert på funksjonsnivå for elektronisk fakturering. Reglene er konfigurert til å gi en kontekst for utføring av funksjoner for elektronisk fakturering ved hjelp av funksjonssettet for elektronisk fakturering.
+
+Når et forretningsdokument fra Finance eller Supply Chain Management sendes inn til elektronisk fakturering, har ikke forretningsdokumentet en eksplisitt referanse som tillater at funksjonen for elektronisk fakturering er satt til å anrope en bestemt elektronisk faktureringsfunksjon for å behandle innsendingen.
+
+Når forretningsdokumentet er riktig konfigurert, inneholder imidlertid forretningsdokumentet de nødvendige elementene som gjør det mulig for elektronisk fakturering å løse hvilken elektronisk faktureringsfunksjon som må velges, og deretter generere den elektroniske fakturaen.
+
+Med relevansregler kan funksjonene for elektronisk fakturering definere de nøyaktige elektroniske faktureringsfunksjonene som må brukes til å behandle innsendingen. Dette gjøres ved å samsvare innholdet fra det innsendte forretningsdokumentet med setningene fra relevansreglene.
+
+For eksempel distribueres to funksjoner for elektronisk fakturering med relaterte relevansregler til funksjonalitetssettet for elektronisk fakturering.
+
+| Funksjon for elektronisk fakturering | Relevansregler        |
+|------------------------------|--------------------------- |
+| A                            | <p>Land = BR</p><p>og</p><p>Juridisk enhet = BRMF</p>  |
+| T                            | <p>Land = MX</p><p>og</p><p>Juridisk enhet = MXMF</p>  |
+
+Hvis et forretningsdokument fra Finance eller Supply Chain Management sendes inn til funksjonssettet for elektronisk fakturering, inneholder forretningsdokumentet følgende attributter som er fylt ut som:
+
+- Land = BR
+- Juridisk enhet = BRMF
+
+Funksjonen for elektronisk fakturering vil velge den elektroniske faktureringsfunksjonen **A** for å behandle innsendingen og generere den elektroniske fakturaen.
+
+På samme måte, hvis forretningsdokumentet inneholder:
+
+- Land = MX
+- Juridisk enhet = MXMF
+
+Elektronisk faktureringsfunksjon **B** velges for å generere den elektroniske fakturaen.
+
+Konfigurasjonen av relevansregler kan ikke være tvetydig. Dette betyr at to eller flere funksjoner for elektronisk fakturering ikke kan ha de samme setningene, ellers vil det ikke føre til noe valg. Hvis det finnes duplisering av funksjoner for elektronisk fakturering, kan du unngå tvetydighet ved å bruke flere setninger for å tillate at funksjonene for elektronisk fakturering er satt til å skille mellom de to funksjonene for elektronisk fakturering.
+
+Se for eksempel på funksjon **C** for elektronisk fakturering. Denne funksjonen er en kopi av funksjon **A** for elektronisk fakturering.
+
+| Funksjon for elektronisk fakturering | Relevansregler        |
+|------------------------------|--------------------------- |
+| A                            | <p>Land = BR</p><p>og</p><p>Juridisk enhet = BRMF</p>  |
+| K                            | <p>Land = BR</p><p>og</p><p>Juridisk enhet = BRMF</p>  |
+
+I dette eksemplet er funksjon **C** foran en innsending av et forretningsdokument som inneholder følgende:
+
+- Land = BR
+- Juridisk enhet = BRMF
+
+Funksjonen for elektronisk fakturering kan ikke skille ut hvilken funksjon for elektronisk fakturering som må brukes til å behandle innsendingen, fordi innsendingene inneholder nøyaktig samme setninger.
+
+Hvis du vil lage et skille mellom de to funksjonene ved hjelp av gjeldende regler, må du legge til en ny setning i én av funksjonene for å tillate at funksjonene for elektronisk fakturering er satt til å velge riktig elektronisk faktureringsfunksjon.
+
+| Funksjon for elektronisk fakturering | Relevansregler        |
+|------------------------------|--------------------------- |
+| A                            | <p>Land = BR</p><p>og</p><p>Juridisk enhet = BRMF</p>  |
+| K                            | <p>Land = BR</p><p>og</p><p>Juridisk enhet = BRMF</p><p>og</p><p>Modell=55</p>  |
+
+Følgende ressurser er tilgjengelige for å støtte oppretting av mer komplekse setninger:
+
+Logiske operatorer:
+- Og
+- Eller
+
+Operatortyper:
+- Equal
+- Not equal
+- Greater than
+- Less than
+- Større enn eller lik
+- Mindre eller lik
+- Contains
+- Begynner med
+
+Datatyper:
+- Streng
+- Antall
+- Boolsk
+- Dato
+- UUID
+
+Mulighet til å gruppere og oppheve gruppering av setninger.
+Eksemplet ser ut som dette.
+
+| Funksjon for elektronisk fakturering | Relevansregler        |
+|------------------------------|--------------------------- |
+| K                            | <p>Land = BR</p><p>og</p><p>(Juridisk enhet = BRMF</p><p>eller</p><p>Modell=55)</p>  |
+
 
 ## <a name="configuration-providers"></a>Konfigurasjonsleverandører
 

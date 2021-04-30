@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 095ef3bb9fff26915bf4fbeb7e240ae9175e315c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 62317f7e42c5392dce32a667f05f22e5c970abc7
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835636"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910021"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Lagerhåndtering av innkommende laster for bestillinger
 
 Dette emnet beskriver lagerhåndteringsprosessen for innkommende laster for bestillinger.
 
-For hver innkommende last bør systemet allerede inneholde en tilknyttet salgsordre, og kan også inneholde en relatert lastespesifikasjon og/eller transportplan. Hvis du vil ha mer informasjon om hvordan du oppretter og behandler innkommende laster, kan du se [Forretningsprosess: planlegging av transport for innkommende laster](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/business-process-planning-transportation-for-inbound-loads).
+For hver innkommende last bør systemet allerede inneholde en tilknyttet salgsordre, og kan også inneholde en relatert lastespesifikasjon og/eller transportplan. Hvis du vil ha mer informasjon om hvordan du oppretter og behandler innkommende laster, kan du se [Forretningsprosess: planlegging av transport for innkommende laster](/dynamicsax-2012/appuser-itpro/business-process-planning-transportation-for-inbound-loads).
 
 ## <a name="overview-how-inbound-loads-are-created-registered-and-received"></a>Oversikt: Hvordan innkommende laster opprettes, registreres og mottas
 
@@ -38,11 +38,11 @@ Illustrasjonen nedenfor viser den vanlige flyten for håndtering av innkommende 
 
 1. **En inngående lastepost opprettes for å planlegge ankomsten og innholdet.**
 
-    Den innkommende lasteposten representerer en leverandørforsendelse av én eller flere bestillinger. Lasten forventes å ankomme lageret som én fysisk transportenhet (for eksempel et vognlass). Den innkommende lasteposten brukes til planlegging, og logistikkkoordinatoren kan spore lastens fremdrift fra leverandøren. Den brukes også til å registrere ordrelinjeantall og behandle fremdriften via lageroperasjoner, for eksempel ankomst og plasseringsarbeid. Laster kan enten opprettes automatisk eller manuelt, og de kan være basert på enten en bestilling eller en avansert forsendelsesmerknad (ASN) fra leverandøren. Hvis du vil ha mer informasjon, kan du se [Opprette eller endre en innkommende last](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/create-or-modify-an-inbound-load).
+    Den innkommende lasteposten representerer en leverandørforsendelse av én eller flere bestillinger. Lasten forventes å ankomme lageret som én fysisk transportenhet (for eksempel et vognlass). Den innkommende lasteposten brukes til planlegging, og logistikkkoordinatoren kan spore lastens fremdrift fra leverandøren. Den brukes også til å registrere ordrelinjeantall og behandle fremdriften via lageroperasjoner, for eksempel ankomst og plasseringsarbeid. Laster kan enten opprettes automatisk eller manuelt, og de kan være basert på enten en bestilling eller en avansert forsendelsesmerknad (ASN) fra leverandøren. Hvis du vil ha mer informasjon, kan du se [Opprette eller endre en innkommende last](/dynamicsax-2012/appuser-itpro/create-or-modify-an-inbound-load).
 
 1. **Leverandøren bekrefter lastfordeling.**
 
-    Når leverandøren fordeler lasten, bekrefter logistikk koordinatoren i det mottakende lageret lasteforsendelsen. Hvis mottaksfirmaet bruker modulen **Transportstyring**, utløser inngående forsendelsesbekreftelse andre lastebehandlingsprosesser som er knyttet til innkommende laster. Hvis du vil ha mer informasjon, se [Bekrefte en last for forsendelse](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/confirm-a-load-for-shipping).
+    Når leverandøren fordeler lasten, bekrefter logistikk koordinatoren i det mottakende lageret lasteforsendelsen. Hvis mottaksfirmaet bruker modulen **Transportstyring**, utløser inngående forsendelsesbekreftelse andre lastebehandlingsprosesser som er knyttet til innkommende laster. Hvis du vil ha mer informasjon, se [Bekrefte en last for forsendelse](/dynamicsax-2012/appuser-itpro/confirm-a-load-for-shipping).
 
 1. **Lasten ankommer lageret, og arbeidere registrerer antall.**
 

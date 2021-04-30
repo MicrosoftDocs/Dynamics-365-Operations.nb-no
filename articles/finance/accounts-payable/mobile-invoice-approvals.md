@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 5d3b85e076292b9d41de6a4cf3198ed9b38d27c8
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9e6138ccd92019f52afab0d8ed4b8cf64d66ff24
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5828040"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897702"
 ---
 # <a name="mobile-invoice-approvals"></a>Mobile fakturagodkjenninger
 
@@ -32,7 +32,7 @@ Mobilfunksjoner lar forretningsbrukere utforme mobilopplevelser. For avanserte s
 
 | Forutsetning                                                                                            | beskrivelse                                                                                                                                                          |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Før du leser håndboken for mobil                                                                                |[Mobil plattform](../../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md)                                                                                                  |
+| Før du leser håndboken for mobil                                                                                |[Mobil plattform](../../fin-ops-core/dev-itpro/mobile-apps/platform/mobile-platform-home-page.md)                                                                                                  |
 | Dynamics 365 Finance                                                                              | Et miljø som har versjon 1611 og Platform update 3 (november 2016)                   |
 | Installer hurtigreparasjon KB 3204341.                                                                              | Oppgaveregistrering kan feilaktig registrere to Lukk-kommandoer for rullegardindialoger. Dette er inkludert i Platform update 3 (november-oppdatering 2016). |
 | Installer hurtigreparasjon KB 3207800.                                                                              | Denne hurtigreparasjonen gjør at vedlegg skal vises på den mobile klienten. Dette er inkludert i Platform update 3 (november-oppdatering 2016).           |
@@ -213,7 +213,7 @@ Hvis du vil utforme siden med fakturadetaljer for mobil, kan du bruke siden **Ve
 
 11. Når du har lagt til alle feltene fra de forrige to trinnene, klikker du **Ferdig**. Siden må ligne på følgende illustrasjon.
     
-    [![Side når felt er lagt til](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
+    [![Illustrasjon som viser ekstra felter som er lagt til](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
 
 12. Klikk **Ferdig** for å avslutte redigeringsmodus.
 

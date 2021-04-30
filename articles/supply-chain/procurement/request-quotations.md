@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df430dada52ac1aa910a3d2007aacf65d8032383
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 48830c975f1bdfd953f57e7c0b6601a78e3a521b
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812553"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5910045"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>Oversikt over tilbudsforespørsler (RFQ-er)
 
@@ -43,7 +43,7 @@ Du kan opprette en tilbudsforespørselssak fra planlagte bestillinger, fra en in
 
 Når du har klargjort tilbudsforespørselssaken og lagt til leverandører, velger du **Send** (**Send og publiser** for offentlig sektor) for tilbudsforespørselssaken. Det genereres en RFQ-journal for hver leverandør som du har sendt tilbudsforespørselen til. Du kan konfigurere utskriftsinnstillingene for sendingshandlingen for å skrive ut en rapport for hver leverandør til et arkiv eller sende en rapport til e-postadressen for hver leverandør. Tilbudsforespørselsjournalen for hver leverandør kan dessuten brukes til å generere en rapport som du kan sende eller sende på nytt til en leverandør senere. Du kan også konfigurere handlingen Send slik at den genererer et svarark som leverandøren kan fylle ut.
 
-Dette emnet dekker prosessen for å håndtere tilbudsforespørsler når leverandørsamarbeid ikke er brukt. Hvis systemet er definert for leverandørsamarbeid, kan leverandører legge inn bud direkte i Supply Chain Management. Hvis du vil ha mer informasjon, kan du se [Leverandørsamarbeid med kunder](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) og [Leverandørsamarbeid med eksterne leverandører](vendor-collaboration-work-external-vendors.md).
+Dette emnet dekker prosessen for å håndtere tilbudsforespørsler når leverandørsamarbeid ikke er brukt. Hvis systemet er definert for leverandørsamarbeid, kan leverandører legge inn bud direkte i Supply Chain Management. Hvis du vil ha mer informasjon, kan du se [Leverandørsamarbeid med kunder](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) og [Leverandørsamarbeid med eksterne leverandører](vendor-collaboration-work-external-vendors.md).
 
 Hvis du må endre en tilbudsforespørsel etter at du har sendt den, kan du sende tilbudsforespørselen på nytt til leverandører når du er ferdig, ved hjelp av de to tilleggshandlingene: Opprett og Fullfør.
 
@@ -165,7 +165,7 @@ Hvis du konfigurerer endringsprosessen slik at den blir mer restriktiv, må du, 
 
 Hvis du konfigurerer endringsprosessen slik at den er mindre restriktiv, trenger du ikke velge **Opprett** før du kan endre feltene i en tilbudsforespørselssak som allerede er sendt. Du må imidlertid manuelt legge til en endringsmerknad i tilbudsforespørselen og sende saken på nytt. Vær oppmerksom på at denne fremgangsmåten kan bare brukes hvis ingen av svarene (budene) er endret. Hvis du har angitt et svar, og det er i en **Mottatt**-tilstand, er **Send**-knappen utilgjengelig. I så fall må du velge **Opprett** og **Fullfør**, slik du må du i den mer restriktive prosessen. Svaret tilbakestilles deretter for å gjenspeile endringene i tilbudsforespørselssaken.
 
-Hvis leverandører bruker grensesnittet for leverandørsamarbeid til å legge inn bud, må du alltid bruke endringsprosessen til å varsle leverandører om endringer i tilbudsforespørselssaken. Denne prosessen forhindrer en situasjon der leverandører byr på en utdatert tilbudsforespørselssak mens budet er under behandling. Hvis du vil ha mer informasjon om leverandørsamarbeid, kan du se [Leverandørsamarbeid med eksterne leverandører](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-external-vendors).
+Hvis leverandører bruker grensesnittet for leverandørsamarbeid til å legge inn bud, må du alltid bruke endringsprosessen til å varsle leverandører om endringer i tilbudsforespørselssaken. Denne prosessen forhindrer en situasjon der leverandører byr på en utdatert tilbudsforespørselssak mens budet er under behandling. Hvis du vil ha mer informasjon om leverandørsamarbeid, kan du se [Leverandørsamarbeid med eksterne leverandører](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-external-vendors).
 
 Hvis du vil invitere flere leverandører til å by, og ingen endringer er gjort i tilbudsforespørselssaken, kan du bruke **Send**-knappen. Leverandørene du har lagt til, vises på **Send**-siden, og de mottar e-postinvitasjonen.
 

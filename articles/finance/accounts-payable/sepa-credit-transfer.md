@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 760763078d10c56c8bc485601a2f14979d28ac11
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 158d96e748b982c87be3f8b08f68d1fdb919aeeb
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5830742"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897168"
 ---
 # <a name="sepa-credit-transfer-overview"></a>Oversikt over SEPA-kredittoverføring
 
@@ -54,7 +54,7 @@ Betalingsformatet for kredittoverføringer for EU-land implementeres ved hjelp a
 Du bør alltid gå til det delte ativabiblioteket i Microsoft Dynamics Lifecycle services (LCS) og vise den mest oppdaterte listen over tilgjengelige filer som har en aktivatypen **TYSK konfigurasjon**. Den neste delen, "Hva må jeg konfigurere?", inneholder en kobling til emnet som forklarer hvordan du oppretter et LCS-repositorium for å se gjennom tilgjengelige konfigurasjoner og importere valgte konfigurasjoner.
 
 ## <a name="what-do-i-have-to-set-up"></a>Hva må jeg konfigurere?
--   Før du kan opprette kredittoverføringsfiler må minst én aktiv kredittoverføringskonfigurasjon importeres til ER-konfigurasjonene. hvis du vil ha mer informasjon, kan du se [Laste ned elektroniske rapporteringskonfigurasjoner fra Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+-   Før du kan opprette kredittoverføringsfiler må minst én aktiv kredittoverføringskonfigurasjon importeres til ER-konfigurasjonene. hvis du vil ha mer informasjon, kan du se [Laste ned elektroniske rapporteringskonfigurasjoner fra Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 -   Når du konfigurerer betalingsmåter for leverandør, merker du av for **Generell elektronisk rapportering** og velger riktig kredittoverføringsformat (for eksempel **ISO 20022-kredittoverføring (AT)**) som eksportformatkonfigurasjon.
 -   Du må også angi juridisk enhet og bankkontoinformasjon.
 -   Bankkontonumre, IBAN-er og noen ganger SWIFT-koder (BIC-er) eller andre ID-er som er nødvendige for å opprette gyldige kredittoverføringsbetalinger. Derfor må du definere dem for leverandørens bankkonto og bankkontoen for organisasjonen som ber om overføringen.

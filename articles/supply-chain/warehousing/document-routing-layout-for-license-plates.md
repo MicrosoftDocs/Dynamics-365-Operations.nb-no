@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2012-04-01
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: faf54fec2885f868c66987a7b481559d0c5615d0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6b5bf6815f225dcca8f9e89e2c85942ce8a2ccd7
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838280"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5907993"
 ---
 # <a name="document-routing-layout-for-license-plate-labels"></a>Dokumentrutingsoppsett for nummerskiltetiketter
 
@@ -73,7 +73,7 @@ Eksemplene nedenfor viser hvordan du kan tilpasse feltet for arbeidsantall (**An
 - Hvis du alltid vil vise fire sifre (ved å bruke nuller som plassholdere), bruker du `$Qty:0000$`. Hvis for eksempel antallet er 10, vil etiketten vise "0010".
 - Hvis du alltid vil vise to desimaler, bruker du `$Qty:0.00$`. Hvis for eksempel antallet er 10, vil etiketten vise "10,00".
 
-Hvis du vil ha en fullstendig liste over de tilgjengelige tallformatstrengene, kan du se [Egendefinerte tallformatstrenger](https://docs.microsoft.com/dotnet/standard/base-types/custom-numeric-format-strings).
+Hvis du vil ha en fullstendig liste over de tilgjengelige tallformatstrengene, kan du se [Egendefinerte tallformatstrenger](/dotnet/standard/base-types/custom-numeric-format-strings).
 
 ## <a name="custom-string-formats"></a>Egendefinerte strengformater
 
@@ -95,7 +95,7 @@ $PrintedDate:dd-MM-yyyy$
 
 I dette eksemplet vil datoen 30. april 2020 skrives ut som "30-04-2020".
 
-Hvis du vil ha en fullstendig liste over de tilgjengelige dato- og klokkeslettformatene, kan du se [Egendefinerte formatstrenger for dato/klokkeslett](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings).
+Hvis du vil ha en fullstendig liste over de tilgjengelige dato- og klokkeslettformatene, kan du se [Egendefinerte formatstrenger for dato/klokkeslett](/dotnet/standard/base-types/custom-date-and-time-format-strings).
 
 ## <a name="print-individual-lines-from-multiline-data"></a>Skrive ut enkeltlinjer fra flerlinjedata
 
