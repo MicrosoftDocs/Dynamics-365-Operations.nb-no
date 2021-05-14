@@ -4,18 +4,17 @@ description: Dette emnet beskriver funksjonaliteten for part og global adressebo
 author: RamaKrishnamoorthy
 ms.date: 02/22/2021
 ms.topic: article
-ms.service: dynamics-ax-applications
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: e7bec58f8094a1448017822e7d8840368cc482b8
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: e2b0abb2826f81ed87b4f0f37dba32c1d8d749c2
+ms.sourcegitcommit: 194d68b24cd36db21e9029044bed18983fd9810c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750794"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5937892"
 ---
 # <a name="party-and-global-address-book"></a>Part og global adressebok
 
@@ -23,29 +22,29 @@ ms.locfileid: "5750794"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Part og global adressebok er konsepter i Finance and Operations-programmer. En part kan være en organisasjon eller en person. Det er praktisk å lagre og administrere egenskapene til en **part** globalt, for eksempel navn, språk, kontakter og adresser. Når en egenskapsverdi endres ett sted, gjenspeiles den alle steder der **parten** er involvert.
+*Part* og *global adressebok* er konsepter i Finance and Operations-programmer. En part kan være en organisasjon eller en person. Det er praktisk å lagre og administrere egenskapene til en part globalt, for eksempel navn, språk, kontakter og adresser. Når en egenskapsverdi endres ett sted, gjenspeiles den alle steder der parten er involvert.
 
 ## <a name="party"></a>Part
 
-En *part* er en person eller en organisasjon som er involvert i bedriften. Ved hjelp av partskonseptet kan en person eller en organisasjon ha flere roller (arbeider, kunde, leverandør eller kontakt) i en virksomhet. Rollen er basert på konteksten og formålet. Her er noen eksempler fra to fiktive virksomheter, Contoso og Fabrikam.
+En part er en person eller en organisasjon som er involvert i en bedrift. Når et partskonsept brukes, kan en person eller en organisasjon ha flere roller i en virksomhet (for eksempel arbeider, kunde, leverandør eller kontakt). Rollen er basert på konteksten og formålet. Her er noen eksempler på roller fra to fiktive virksomheter, Contoso og Fabrikam:
 
-+ **Arbeider**: En ansatt. For eksempel en ansatt hos Contoso.
-+ **Leverandør**: En leverandørorganisasjon, eller en enkelt innehaver som leverer varer eller tjenester til en virksomhet. Hvis for eksempel Fabrikam selger forsyninger til Contoso, får Fabrikam rollen som leverandør.
-+ **Kontakt**: En person som kan kontaktes. Hvis Contoso for eksempel kjøper forsyninger fra Fabrikam, vil en ansatt hos Contoso kontakte kontakten hos Fabrikam.
-+ **Kunde**: En kunde er en person eller et firma som kjøper ting fra et firma. Hvis Contoso for eksempel kjøper forsyninger fra Fabrikam, er Contoso en kunde hos Fabrikam.
++ **Arbeider** – En ansatt. Et eksempel er en ansatt hos Contoso.
++ **Leverandør** – En leverandørorganisasjon, eller en enkelt innehaver som leverer varer eller tjenester til en virksomhet. Hvis for eksempel Fabrikam selger forsyninger til Contoso, er Fabrikam en leverandør for Contoso.
++ **Kontakt** – En person som kan kontaktes. Hvis Contoso for eksempel kjøper forsyninger fra Fabrikam, vil ansatte hos Contoso kontakte kontakten hos Fabrikam.
++ **Kunde** – En kunde er en person eller et firma som kjøper ting fra et firma. Hvis Contoso for eksempel kjøper forsyninger fra Fabrikam, er Contoso en kunde hos Fabrikam.
 
 Partsmodellen brukes ofte til å representere middels til komplekse relasjoner mellom organisasjoner og personer, spesielt når en part spiller mer enn én rolle. Her er noen vanlige eksempler:
 
 + En part kan være både en kunde og en leverandør. I Nord-Amerika selger for eksempel Fabrikam elektriske kabler til Contoso og kjøper ferdig monterte høyttalere fra Contoso. I Europa selger Fabrikam deler til Contoso, men kjøper ikke noe fra Contoso.
 + En part kan være både en ansatt og en kunde. En ansatt hos Contoso kjøper for eksempel elektronikk fra Contoso til personlig bruk.
-+ Det kan være en mange-til-mange-relasjon mellom en person og en organisasjon. Fabrikam leverer for eksempel servicespesialister og ansetter en plasseringskoordinator. Koordinatoren matcher servicespesialistene med arbeidsforespørsler fra flere av Fabrikams kunder. Contoso er en av kundekontoene. Når Contoso trenger en spesialist, kontakter Contoso koordinatoren, som deretter legger til rette for forespørselen. Koordinatoren håndterer forespørsler for alle kunder og oppretter en mange-til-mange-relasjon.
++ Det kan være en mange-til-mange-relasjon mellom en person og en organisasjon. Fabrikam leverer for eksempel servicespesialister og ansetter en plasseringskoordinator. Plasseringskoordinatoren matcher servicespesialistene med arbeidsforespørsler fra flere av Fabrikams kunder. Contoso er en av Fabrikams kunder. Når Contoso trenger en servicespesialist, kontakter firmaet plasseringskoordinatoren, som deretter legger til rette for forespørselen. Fordi plasseringskoordinatoren håndterer forespørsler for alle kunder, er en N:N-relasjon involvert.
 
-Følgende bilde viser datamodellen for part:
+Følgende bilde viser datamodellen for part.
 
 ![Datamodell for part](media/party-gab-image1.png)
 
-> [!Tip]
-> Når du prøver å opprette en ny kontopost, bruker du "Part"-feltet til å søke etter posten per navn. Hvis du finner posten, trenger du bare å velge posten. Systemet fyller automatisk ut alle dataene fra parten. Du trenger ikke angi alle de nødvendige feltene manuelt. Du finner denne virkemåten på Konto-, Kontakt- og Leverandør-skjemaene som følger med.
+> [!TIP]
+> Når du prøver å opprette en ny kontopost, bruker du **Part** -feltet til å søke etter posten per navn. Hvis du finner posten, trenger du da bare å velge posten. Systemet fyller automatisk ut alle dataene fra parten. Du trenger ikke angi alle de nødvendige feltene manuelt. Du finner denne virkemåten på **Konto-**, **Kontakt-** og **Leverandør**-sidene som følger med.
 
 Ikke alle partsroller i Finance and Operations-apper støttes av dobbel skriving. Hvis du vil ha en fullstendig liste over partsroller, kan du se [Oversikt over global adressebok](../../../fin-ops/organization-administration/overview-global-address-book.md).
 
@@ -53,136 +52,253 @@ Ikke alle partsroller i Finance and Operations-apper støttes av dobbel skriving
 
 Den globale adresseboken er en katalog med postadresser og elektroniske adresser til organisasjonene og personene som deltar i en virksomhet.
 
-Den globale adresseboken lagrer og håndterer så mange postadresser og elektroniske adresser som nødvendig. La oss for eksempel anta at Fabrikam har bensinstasjoner på 50 lokasjoner. Hver lokasjon har separat postadresse, e-postadresse og telefonnummer. Alle forretningskjøp faktureres til hovedbensinstasjonen, men innkjøp sendes direkte til den bestemte bensinstasjonen som anmodet om innkjøpet. Den globale adresseboken lagrer hovedbensinstasjonen som fakturaadresse, og hver bensinstasjon som leveringsadresse for Fabrikam. Adressene kan lagres én gang og hentes etter behov for tilbud og ordrer.
+Den globale adresseboken lagrer og håndterer så mange postadresser og elektroniske adresser som nødvendig. La oss for eksempel anta at Fabrikam har bensinstasjoner på 50 lokasjoner. Hver lokasjon har separat postadresse, e-postadresse og telefonnummer. Alle forretningskjøp faktureres til hovedbensinstasjonen, men sendes direkte til den bestemte bensinstasjonen som anmodet om innkjøpet. Den globale adresseboken lagrer hovedbensinstasjonen som fakturaadresse for Fabrikam, og lagrer hver bensinstasjon som leveringsadresse. Adressene kan lagres én gang og hentes etter behov for tilbud og ordrer.
 
-En person eller en organisasjon kan ha mer enn én rolle, basert på forretningskonteksten. Når de gjør dette, kan det hende at postadressene og de elektroniske adressene er like. I så fall skal en adresseendring i én rolle vises for den andre rollen, og omvendt. Den globale adresseboken lagrer og håndterer adresser globalt.
+Det kan hende at en person eller en organisasjon spiller mer enn én rolle, og den samme postadressen og den elektroniske adressen kan brukes for alle rollene, avhengig av forretningskonteksten. I så fall skal en adresseendring i én rolle vises i alle de andre rollene. Den globale adresseboken lagrer og håndterer adresser globalt.
 
-![Datamodell for global adressebok](media/party-gab-image2.png)
+Illustrasjonen nedenfor viser datamodellen for den globale adresseboken.
 
-## <a name="contacts"></a>Kontakter
+![Datamodell for den globale adresseboken](media/party-gab-image2.png)
 
-I Customer Engagement-apper er en *kontakt* en person. **Kontakt**-tabellen har imidlertid blitt overbelastet for å representere en person, en portalbruker, en B2C-kunde eller en leverandør. Representasjonen er implisitt, og du kan ikke se forskjellen uten å se nærmere på tilknyttede transaksjoner. **Kontakt**-tabellen er begrenset til å ha et 1:1-forhold med **Konto**-tabellen. Som en del av en modell med part og global adressebok innfører dobbel skriving eksplisitte egenskaper for klaassifisering, og dobbel skriving tillater N:N-relasjoner mellom en **kontakt** og en organisasjon (Konto-enhet eller Leverandør-enhet).
+## <a name="contact"></a>Kontakt
+
+I Customer Engagement-apper er en kontakt en person. **Kontakt**-tabellen har imidlertid blitt overbelastet for å representere en person, en portalbruker, en forretning-til-forbruker (B2C)-kunde eller en leverandør. Representasjonen er implisitt, og du kan ikke se forskjellen uten å se nærmere på tilknyttede transaksjoner. **Kontakt**-tabellen er begrenset til å ha et 1:1-forhold med **Konto**-tabellen. Som en del av en modell med part og global adressebok innfører dobbel skriving eksplisitte egenskaper for klassifisering og tillater N:N-relasjoner mellom en kontakt som er er person, og en organisasjon (**Konto**-enhet eller **Leverandør**-enhet).
 
 Det finnes to typer **Kontakt**-rader:
 
-+ Stripet kontakt – Kontakt-rad med en obligatorisk verdi i **Firma**-feltet.
-+ Ustripet kontakt – Kontakt-rad med tomt **Firma**-felt.
++ **Stripet kontakt** – En **Kontakt**-rad der **Firma**-feltet har en obligatorisk verdi.
++ **Ustripet kontakt** – En **Kontakt**-rad med tomt **Firma**-felt.
 
-**Kontakt**-tabellen kan lagre disse radtypene:
+**Kontakt**-tabellen kan lagre disse radtypene.
 
-Radtype | beskrivelse
----|---
-En person som er kunde, for eksempel en salgbar kontakt eller B2C-kunde. | En stripet kontaktoppføring der **Firma**-feltet ikke er tomt, og der **Er kunde**-feltet er angitt til **Ja**.
-En person som er leverandør, for eksempel en enkelt innehaver som leverandør. | En stripet kontaktoppføring der **Firma**-feltet ikke er tomt, og der **Er leverandør**-feltet er angitt til **Ja**.
-En person som er både en kunde og en leverandør. | En stripet kontaktoppføring der **Firma**-feltet ikke er tomt, **Er kunde**-feltet er angit til **Ja** og **Er leverandør**-feltet er angitt til **Ja**. En person kan være både en produsent for ett produkt og en forbruker for et annet produkt. Både Finance and Operations-apper dobbel skriving støtter denne relasjonen.
-En person som er kontaktperson for en organisasjon, men ikke kunde eller leverandør. | En ustripet kontaktoppføring der **Firma**-feltet er tomt, **Er kunde**-feltet er angitt til **Nei** og **Er leverandør**-feltet er angitt til **Nei**.
+| Radtype | beskrivelse |
+|----------|-------------|
+| En person som er kunde (for eksempel en salgbar kontakt eller B2C-kunde) | En stripet kontaktoppføring der **Firma**-feltet ikke er tomt, og der **Er kunde**-feltet er angitt til **Ja**. |
+| En person som er leverandør (for eksempel en enkelt innehaver som leverandør) | En stripet kontaktoppføring der **Firma**-feltet ikke er tomt, og der **Er leverandør**-feltet er angitt til **Ja**. |
+| En person som er både en kunde og en leverandør | En stripet kontaktoppføring der **Firma**-feltet ikke er tomt, **Er kunde**-feltet er angit til **Ja** og **Er leverandør**-feltet er angitt til **Ja**. En person kan være både en produsent for ett produkt og en forbruker for et annet produkt. Både Finance and Operations-apper dobbel skriving støtter denne relasjonen. |
+| En person som er kontaktperson for en organisasjon, men ikke kunde eller leverandør | En ustripet kontaktoppføring der **Firma**-feltet er tomt, **Er kunde**-feltet er angitt til **Nei** og **Er leverandør**-feltet er angitt til **Nei**. |
 
-## <a name="contact-for-party"></a>Kontakt for part
+## <a name="contact-for-party-table"></a>Kontakt for part-tabell
 
-**Kontakt for part** lagrer og håndterer N:N-relasjoner mellom **Konto**-rader og **Kontakt**-rader. Den kan filtrere ut de stripede **Kontakt**-radene fra ustripede rader og tilknytte bare de ustripede **Kontakt**-radene til **Konto**- eller **Leverandør**-rader.
+Tabellen **Kontakt for part** lagrer og håndterer N:N-relasjoner mellom **Konto**-rader og **Kontakt**-rader. Den kan filtrere ut de stripede **Kontakt**-radene fra ustripede rader og tilknytte bare de ustripede **Kontakt**-radene til **Konto**- eller **Leverandør**-rader.
 
-Natasha Jones og Miguel Reyes er for eksempel veterinærer som betjener gårder i nærområdet. Natasha betjener Seattle-området, og Miguel opererer i Kent. I Customer Engagement-appen er gårdene representert som kunder, og veterinærene er kontaktpersoner. En enkelt **Kontakt**-post for Natasha er tilknyttet alle gårdene som Natasha arbeider med. På samme måte er en enkelt **Kontakt**-post for Miguel tilknyttet alle gårdene som Miguel arbeider med.
+Natasha Jones og Miguel Reyes er for eksempel veterinærer som betjener gårder i nærområdet. Natasha betjener Seattle-området, og Miguel opererer i Kent. I Customer Engagement-appen er gårdene representert som kunder, og veterinærene som kontaktpersoner. En enkelt **Kontakt**-post for Natasha er tilknyttet alle gårdene som Natasha arbeider med. På samme måte er en enkelt **Kontakt**-post for Miguel tilknyttet alle gårdene som Miguel arbeider med.
 
-Disse relasjonene er lagret i tabellen **Kontakt for part**. Du kan finne informasjonen i de medfølgende skjemaene:
+Disse relasjonene er lagret i tabellen **Kontakt for part**. Du finner denne informasjonen på **Konto-**, **Kontakt-** og **Leverandør**-sidene som følger med:
 
-+ Når du er i **Konto**-skjemaet, finnes det en fane med navnet **Tilknyttede kontakter**. Bruk denne fanen til å knytte én eller flere kontakter til **Konto**-raden. I dette skjemaet tilordner du en kontaktperson for en organisasjon. Når du har tilordnet kontakter, kan du velge en som primærkontakt for denne kontoen. Ved hjelp **Hurtigopprett**-skjemaet kan du bare velge en kontaktperson. Virkemåten er den samme som når du bruker **Leverandør**-skjemaet, og posttypen er **Organisasjon**.
-+ Når du er i **Kontakt**-skjemaet og raden er en kunde eller leverandør eller begge deler (en stripet kontakt), finnes det en fane med navnet **Tilknyttede kontakter**. Bruk denne fanen til å tilknytte én eller flere kontakter. I dette skjemaet tilordner du en kontaktperson for B2C-kunden eller -leverandøren. Når du har tilordnet kontakter, kan du velge en som primærkontakt. Ved hjelp **Hurtigopprett**-skjemaet kan du bare velge en kontaktperson.
-+ Når du er i **Kontakt**-skjemaet og raden er en kontaktperson (en ustripet kontakt), finnes det en fane med navnet **Tilknyttede organisasjoner**. Bruk denne fanen til å tilknytte én eller flere kunder eller leverandører. I dette skjemaet tilordner du en kunde eller leverandør til den underliggende kontaktpersonen. Kunden eller leverandøren kan være en organisasjon, en person eller begge deler. Du kan bare velge én verdi fra de fire feltene på et gitt tidspunkt.
++ På **Konto**-siden kan du bruke kategorien **Tilknyttede kontakter** til å knytte én eller flere kontakter til **Konto**-raden. På denne måten tilordner du en kontaktperson for en organisasjon. Du kan deretter velge én kontakt som primærkontakt for kontoen. Hvis du bruker **hurtigoppretting**-siden, kan du bare velge en kontaktperson. Virkemåten er den samme som når du bruker **Leverandør**-siden, og posttypen er **Organisasjon**.
++ Når raden er en kunde, leverandør eller begge deler på **Kontakt**-siden, kan du bruke kategorien **Tilknyttede kontakter** til å knytte én eller flere kontakter. På denne måten tilordner du kontaktpersoner for B2C-kunden eller -leverandøren. Du kan deretter velge én kontakt som primærkontakt. Hvis du bruker **hurtigoppretting**-siden, kan du bare velge en kontaktperson.
++ Når raden er en kontaktperson på **Kontakt**-siden (en ustripet kontakt), kan du bruke kategorien **Tilknyttede kontakter** til å knytte én eller flere kontakter eller leverandører. På denne måten tilordner du kunder eller leverandører til den underliggende kontaktpersonen. Kunden eller leverandøren kan være en organisasjon, en person eller begge deler. Du kan bare velge én verdi fra ett de fire feltene om gangen:
 
-    ![Fanen Tilknyttede organisasjoner](media/party-gab-image3.png)
+    + Hvis du velger en verdi i **Part-ID**-feltet, tilordnes den underliggende kontakten til alle rollene til den valgte parten.
+    + Hvis du velger verdi i feltet **Tilknyttet kontakt**, velger du den stripede kontakten som er av typen **Person**.
+    + Hvis du velger en verdi i feltet **Tilknyttet konto** eller **Tilknyttet leverandør**, velger du en organisasjon.
 
-    + Hvis du velger **Part-ID**, tilordnes den underliggende kontakten til alle rollene til den valgte parten.
-    + Hvis du velger **Tilknyttet kontakt**, velger du den stripede kontakten som er av typen person.
-    + Hvis du velger **Tilknyttet konto** eller **Leverandør**, velger du en organisasjon.
+    ![Kategorien Tilknyttede organisasjoner på kontaktsiden](media/party-gab-image3.png)
 
-    Uansett hva du velger, opprettes tilknytningen på partsnivå og gjelder alle rollene til parten og lagres i "Kontakt for part"-enheten.
+    Uansett hva du velger, opprettes tilknytningen på partsnivå og gjelder alle rollene til parten og lagres i **Kontakt for part**-enheten.
 
-> [!Note]
-> Visningsnavnet for tabellen **Kontakt for part** i Customer Engagement-appen er **Kontakt for kunde/leverandør**.
+> [!NOTE]
+> Visningsnavnet for tabellen **Kontakt for part** i Customer Engagement-apper er **Kontakt for kunde/leverandør**.
 
-Når du åpner en **Kontakt**-rad der **Er kunde** er **Nei** og **Er leverandør** er **Nei**, vises fanen **Tilknyttede organisasjoner**. Bruk denne fanen til å tilknytte én eller flere kunde- eller leverandørorganisasjoner til kontakten.
+Når du åpner en **Kontakt**-rad der både **Er kunde**-feltet og **Er leverandør** er satt til **Nei**, vises kategorien **Tilknyttede organisasjoner**. Bruk denne kategorien til å knytte én eller flere kunde- eller leverandørorganisasjoner til kontakten.
 
-Når du åpner en **Kontakt**-rad der **Er kunde** er **Ja** eller **Er leverandør** er **Ja**, vises fanen **Tilknyttede kontakter**. Bruk denne fanen til å tilknytte én eller flere kontakter.
+Når du åpner en **Kontakt**-rad der enten **Er kunde**-feltet eller **Er leverandør** er satt til **Ja**, vises kategorien **Tilknyttede kontakter**. Bruk denne fanen til å tilknytte én eller flere kontakter.
 
-## <a name="postal-address"></a>Postadresse
+## <a name="postal-addresses"></a>Postadresser
 
-En ny fane med navnet **Adresser** er innført i skjemaene **Konto**, **Kontakt** og **Leverandør**. **Adresser**-skjemaet støtter N-adresser ved å bruke et rutenett, som vist i dette bildet:
+En ny fane med navnet **Adresser** er innført på sidene **Konto**, **Kontakt** og **Leverandør**. Denne kategorien støtter flere postadresser ved hjelp av et rutenett, som vist i illustrasjonen nedenfor.
 
-![Rutenett for postadresse](media/party-gab-image4.png)
+![Rutenett for postadresser](media/party-gab-image4.png)
 
-+ Kolonnen **Postadresseroller** viser formålet med adressen.
-+ **Er primær**-kolonnen viser primæradressen.
-+ **Adressenummer**-kolonnen viser adresserekkefølgen.
-+ Med knappen **+ Ny adresse** kan du opprette en ny adresse. Du kan opprette så mange adresser som du vil.
+Rutenettet inneholder følgende kolonner:
 
-Feltene **Adresse 1** og **Adresse 2** på **Sammendrag**-fanen på **Konto**-skjemaet samsvarer med henholdsvis **Levering**- og **Faktura**-adressene.
++ **Postadresseroller** – formålet med postadressen.
++ **Er primær** – En verdi som angir om adressen er primæradressen.
++ **Adressenummer** – Adresseordren.
 
-![Sammendrag-fanen for postadresse](media/party-gab-image5.png)
+Du kan bruke **Ny adresse**-knappen over rutenettet til å opprette så mange postadresser du vil.
 
-Feltene **Adresse 1**, **Adresse 2** og **Adresse 3** på **Sammendrag**-fanen i **Kontakt**-skjemaet samsvarer med henholdsvis **Forretning**-, **Levering**- og **Faktura**-adressene.
+Feltene **Adresse 1** og **Adresse 2** på **Sammendrag**-fanen på **Konto**-siden samsvarer med henholdsvis **Levering**- og **Faktura**-adressene.
 
-## <a name="electronic-address"></a>Elektronisk adresse
+![Sammendrag-fanen for postadresser](media/party-gab-image5.png)
 
-En ny fane med navnet **Elektroniske adresser** er innført i skjemaene **Konto**, **Kontakt** og **Leverandør**. **Adresser**-skjemaet støtter N-adresser ved å bruke et rutenett, som vist i dette bildet:
+Feltene **Adresse 1**, **Adresse 2** og **Adresse 3** på **Sammendrag**-fanen i **Kontakt**-siden samsvarer med henholdsvis **Forretning**-, **Levering**- og **Faktura**-adressene.
 
-![Rutenett for elektronisk adresse](media/party-gab-image6.png)
+## <a name="electronic-addresses"></a>Elektroniske adresser
 
-+ **Type**-kolonnen viser adressetypen.
-+ **Er primær**-kolonnen viser primæradressen.
-+ Kolonnen **Formål** viser formålet med den elektroniske adressen.
-+ Med knappen **+ Ny elektronisk adresse** kan du opprette en ny adresse. Du kan opprette så mange adresser som du vil.
+En ny fane med navnet **Elektroniske adresser** er innført på sidene **Konto**, **Kontakt** og **Leverandør**. Denne kategorien støtter flere elektroniske adresser ved hjelp av et rutenett, som vist i illustrasjonen nedenfor.
 
-Elektroniske adresser er bare tilgjengelige i dette rutenettet. I fremtidige versjoner blir alle felter for elektroniske adresser og postadresser fjernet fra andre faner, for eksempel fanene **Sammendrag** og **Detaljer**.
+![Rutenett for elektroniske adresser](media/party-gab-image6.png)
 
-## <a name="setup-instructions"></a>Installasjonsinstruksjoner
+Rutenettet inneholder følgende kolonner:
 
-Hvis du er en eksisterende kunde med dobbel skriving, kreves følgende instruksjoner for oppsett. Ellers kan du hoppe over denne delen.
++ **Type** – Typen elektronisk adresse.
++ **Er primær** En verdi som angir om adressen er primæradressen.
++ **Formål** – Formålet med den elektroniske adressen.
 
-1. Stopp følgende tilordninger fordi de ikke er obligatoriske lenger. I stsedet kan du kjøre Contacts V2-tilordningen (msdyn_contactforparties).
+Du kan bruke **Ny elektronisk adresse**-knappen over rutenettet til å opprette så mange adresser du vil.
+
+Elektroniske adresser er bare tilgjengelige i dette rutenettet. I fremtidige versjoner blir alle felter for elektroniske adresser og postadresser fjernet fra andre faner (for eksempel fanene **Sammendrag** og **Detaljer**).
+
+## <a name="setup"></a>Installasjon
+
+1. Installer den nyeste versjonen (2.2.2.60 eller senere) av [løsningen for orkestrering av apper med dobbel skriving](https://aka.ms/dual-write-app).
+
+2. Installer [Løsninger for part med dobbel skriving og global adressebok](https://aka.ms/dual-write-gab).
+
+3. Stopp følgende tilordninger fordi de ikke er obligatoriske lenger. I stedet kjører du `Contacts V2 (msdyn_contactforparties)`-tilordningen.
 
     + CDS-kontakter v2 og Kontakter (refererer til kundekontakter)
     + CDS-kontakter v2 og Kontakter (refererer til leverandørkontakter)
 
-2. Følgende enhetstilordninger oppdateres for partsfunksjonalitet, så den nyeste versjonen må brukes på disse tilordningene.
+4. Følgende enhetstilordninger oppdateres for partsfunksjonalitet, så den nyeste versjonen må brukes på disse tilordningene.
 
-Tilordning | Oppdater til denne versjonen | Endringer
----|---|---
-Kunder V3 (kontoer) | 1.0.0.5 |Fjernet PartyNumber og andre partsrelaterte felt som navn, personlige opplysninger, postadressefelt, elektronisk kontaktadressefelt osv.
-Kunde V3 (kontakter) | 1.0.0.5 | Fjernet PartyNumber og andre partsrelaterte felt som navn, personlige opplysninger, postadressefelt, elektronisk kontaktadressefelt osv.
-Leverandører V2 (msdyn_vendors) | 1.0.0.6 | Fjernet PartyNumber og andre partsrelaterte felt som navn, personlige opplysninger, postadressefelt, elektronisk kontaktadressefelt osv.
-CDS-salgstilbudshoder (tilbud) | 1.0.0.6 | Erstattet kontaktpersonen med ContactforParty-referanse.
-Salgsfakturahoder V2 (fakturaer) | 1.0.0.4 | Erstattet kontaktpersonen med ContactforParty-referanse.
-CDS-salgsordrehoder (salesorders) | 1.0.0.5 | Erstattet kontaktpersonen med ContactforParty-referanse.
-Kontakter V2 (msdyn_contactforparties) | 1.0.0.2 | Dette er en ny tilordning. Hvis du har en tidligere versjon av partsløsningen, må du oppdatere denne tilordningen kartet til den nyeste versjonen som nevnt.
-Postadressesteder for CDS-part (msdyn_partypostaladdresses) | 1.0.0.1  | Dette er en ny tilordning som er lagt til som en del av forhåndsversjonen for en tidligere part.
-Historikk for CDS-postadresse V2 (msdyn_postaladdresses) | | Dette er en ny tilordning som er lagt til som en del av forhåndsversjonen for en tidligere part.
-CDS-postadressesteder (msdyn_postaladdresscollections) | | Dette er en ny tilordning som er lagt til som en del av forhåndsversjonen for en tidligere part.
-Partskontakter V3 (msdyn_partyelectronicaddresses) | | Dette er en ny tilordning som er lagt til som en del av denne versjonen.
+    Tilordning | Oppdater til denne versjonen | Endringer
+    ---|---|---
+    `CDS Parties (msdyn_parties)`| 1.0.0.0 | Dette er en ny tilordning som er lagt til som en del av denne versjonen.
+    `Contacts V2 (msdyn_contactforparties)`| 1.0.0.5 | Dette er en ny tilordning som er lagt til som en del av denne versjonen.
+    `Customers V3 (accounts)` | 1.0.0.5 |Fjernet `PartyNumber` og andre partsrelaterte felt som navn, personlige opplysninger, postadressefelt og elektronisk kontaktadressefelt.
+    `Customer V3 (contacts)` | 1.0.0.5 | Fjernet `PartyNumber` og andre partsrelaterte felt som navn, personlige opplysninger, postadressefelt og elektronisk kontaktadressefelt.
+    `Vendors V2 (msdyn_vendors)` | 1.0.0.6 | Fjernet `PartyNumber` og andre partsrelaterte felt som navn, personlige opplysninger, postadressefelt og elektronisk kontaktadressefelt.
+    `CDS Sales quotation headers (quotes)` | 1.0.0.7 | Erstattet kontaktpersonen med `ContactforParty`-referanse.
+    `Sales invoice headers V2 (invoices)` | 1.0.0.4 | Erstattet kontaktpersonen med `ContactforParty`-referanse.
+    `CDS Sales order headers (salesorders)` | 1.0.0.5 | Erstattet kontaktpersonen med `ContactforParty`-referanse.
+    `CDS Party postal address locations (msdyn_partypostaladdresses)` | 1.0.0.1  | Dette er en ny tilordning som er lagt til som en del av denne versjonen.
+    `CDS postal address history V2 (msdyn_postaladdresses)` | 1.0.0.1 | Dette er en ny tilordning som er lagt til som en del av denne versjonen.
+    `CDS postal address locations (msdyn_postaladdresscollections)` | 1.0.0.0 | Dette er en ny tilordning som er lagt til som en del av denne versjonen.
+    `Party Contacts V3 (msdyn_partyelectronicaddresses)` | 1.0.0.0 | Dette er en ny tilordning som er lagt til som en del av denne versjonen.
+    `Complimentary Closings ( msdyn_compliemntaryclosings)` | 1.0.0.0 | Dette er en ny tilordning som er lagt til som en del av denne versjonen.
+    `Decision making roles (msdyn_decisionmakingroles)` | 1.0.0.0 | Dette er en ny tilordning som er lagt til som en del av denne versjonen.
+    `Loyalty levels (msdyn_loyaltylevels)` | 1.0.0.0 | Dette er en ny tilordning som er lagt til som en del av denne versjonen.
+    `Contact person titles (msdyn_salescontactpersontitles)` | 1.0.0.0 | Dette er en ny tilordning som er lagt til som en del av denne versjonen.
+    `Personal character types (msdyn_personalcharactertypes)` | 1.0.0.0 | Dette er en ny tilordning som er lagt til som en del av denne versjonen.
+    `Salutations (msdyn_salutations)` | 1.0.0.0 | Dette er en ny tilordning som er lagt til som en del av denne versjonen.
+    `Employment job functions (msdyn_employmentjobfunctions)` | 1.0.0.0 | Dette er en ny tilordning som er lagt til som en del av denne versjonen.
+
+5. Før du kjører tilordningene ovenfor, må du oppdatere integreringsnøklene manuelt som beskrevet i fremgangsmåten nedenfor. Velg deretter **Lagre**.
+
+    | Tilordning | Nøkler |
+    |-----|------|
+    | Konto |  accountnumber [Kontonummer]<br>msdyn_company.cdm_companycode [Selskap (Selskapskode)] |
+    | Kontakt | msdyn_contactpersonid [Kontonummer/Kontaktperson-ID]<br>msdyn_company.cdm_companycode [Selskap (Selskapskode)] |
+    | Kontakt for kunde/leverandør | msdyn_contactforpartynumber [Kontakt for partsnummer]<br>msdyn_associatedcompanyid.cdm_companycode [Tilknyttet selskap (Firmakode)] |
+    | Leverandør | msdyn_vendoraccountnumber [Leverandørens kontonummer]<br>msdyn_company.cdm_companycode [Selskap (Selskapskode)]|
+
+6. I Dataverse har tegngrensene for duplikatregistreringsregler økt fra 450 til 700 tegn. Ved hjelp av denne grensen kan du legge til en eller flere nøkler i duplikatregistreringsreglene. Utvid duplikatregistreringsregelen for **Kontoer**-tabellen ved å angi følgende felt.
+
+    | Felt | Verdi |
+    |-------|-------|
+    | Navn | Kontoer med samme kontonavn. |
+    | beskrivelse | Oppdager kontoposter som har samme verdi i kontonavnattributtet. |
+    | Basisposttype | Konto |
+    | Samsvarende posttype | Konto |
+    | Kontonavn (felt) | Nøyaktig samsvar |
+    | Firma (felt) | Nøyaktig samsvar |
+    | Relasjonstype (felt) | Nøyaktig samsvar |
+    | Parts-ID (felt) | Nøyaktig samsvar |
+    | Velg (felt) | (tomt) |
+
+    ![Duplikatregel for kontoer](media/duplicate-rule-1.PNG)
+
+7. Utvid duplikatregistreringsregelen for **Kontakter**-tabellen ved å angi følgende felt.
+
+    | Felt | Verdi |
+    |-------|-------|
+    | Navn | Kontakter med samme fornavn og etternavn. |
+    | beskrivelse | Oppdager kontaktposter som har de samme verdiene i fornavn- og etternavn-feltene. |
+    | Basisposttype | Kontakt |
+    | Samsvarende posttype | Kontakt |
+    | Fornavn (felt) | Nøyaktig samsvar |
+    | Etternavn (felt) | Nøyaktig samsvar |
+    | Firma (felt) | Nøyaktig samsvar |
+    | Parts-ID (felt) | Nøyaktig samsvar |
+    | Velg (felt) | (tomt) |
+
+    ![Duplikatregel for kontakter](media/duplicate-rule-2.PNG)
+
+8. Hvis du er en eksisterende kunde med dobbel skriving, følger du instruksjonene i [Oppgrader til parten og den globale adressebokmodellen](upgrade-party-gab.md) og oppgraderer dataene.
+
+9. Kjør tilordningene i følgende rekkefølge. Hvis du får en feilmelding som angir at "prosjektvalidering mislyktes. Manglende målfelt...", åpner du kartet og velger **Oppdater tabeller**. Deretter kjører du kartet.
+
+    Finance and Operations-app | Kundeengasjementsapp  
+    ----------------------------|------------------------
+    [CDS-parter](mapping-reference.md#220) | msdyn_parties
+    [Postadressesteder for CDS](mapping-reference.md#234) | msdyn_postaladdresscollections
+    [Historikk for CDS-postadresse V2](mapping-reference.md#235) | msdyn_postaladdresses
+    [Postadressesteder for CDS-part](mapping-reference.md#233) | msdyn_partypostaladdresses
+    [Partskontakter V3](mapping-reference.md#236) | msdyn_partyelectronicaddresses
+    [Kunder V3](mapping-reference.md#101) | kontoer
+    [Kunder V3](mapping-reference.md#116) | kontakter
+    [Leverandører V2](mapping-reference.md#202) | msdyn_vendors
+    [Kontaktpersontitler](mapping-reference.md#223) | msdyn_salescontactpersontitles
+    [Avsluttende hilsener](mapping-reference.md#222) | msdyn_complimentaryclosings
+    [Hilsener](mapping-reference.md#228) | msdyn_salutations
+    [Roller for beslutningstaking](mapping-reference.md#224) | msdyn_decisionmakingroles
+    [Jobbfunksjoner for ansettelse](mapping-reference.md#225) | msdyn_employmentjobfunctions
+    [Fordelsnivåer](mapping-reference.md#226) | msdyn_loyaltylevels
+    [Typer personlige tegn](mapping-reference.md#227) | msdyn_personalcharactertypes
+    [Kontakter V2](mapping-reference.md#221) | msdyn_contactforparties
+    [CDS-salgstilbudshode](mapping-reference.md#215) | tilbud
+    [CDS-salgsordrehoder](mapping-reference.md#217) | salesorders
+    [Salgsfakturahoder V2](mapping-reference.md#118) | fakturaer
+
+> [!Note]
+> Kartet `CDS Contacts V2 (contacts)` er kartet som du stoppet i trinn 1. Når du prøver å kjøre andre kart, kan disse 2 kartene vises i listen over avhengige kart. Ikke kjør disse kartene.
+
+> [!Note]
+> Hvis parten og den globale adressebokløsningen er installert, må du deaktivere plugin-modulen kalt `Microsoft.Dynamics.SCMExtended.Plugins.Plugins.LeadPrimaryContactPostCreate: QualifyLead of lead`. Hvis du avinstallerer parten og den globale adressebokløsningen, må du aktivere plugin-modulen på nytt.
+
+> [!Note]
+> Feltet `msdyn_*partynumber` (ett enkelt linjetekstfelt) som er inkludert i tabellene for **konto**, **kontakt** og **leverandør**, skal ikke brukes fremover. Etikettnavnet har prefikset **(Avskrevet)** for klarhet. I stedet bruker du **msdyn_partyid**-feltet. Feltet er et oppslag i **msdyn_party**-tabellen.
+
+> Tabellnavn | Gammelt felt | Nytt felt
+> --------|-------|--------
+> Konto | `msdyn_partynumber` | `msdyn_partyid`
+> Kontakt | `msdyn_partynumber` | `msdyn_partyid`
+> msdyn_vendor | `msdyn_vendorpartynumber` | `msdyn_partyid`
 
 ## <a name="templates"></a>Maler
 
 En samling tabelltilordninger fungerer sammen for samhandling mellom parter og den globale adresseboken, som vist i følgende tabell.
 
-Finance and Operations-app | Kundeengasjementsapp     | beskrivelse
-----------------------------|-----------------------------|------------
-[Kontaktpersontitler](mapping-reference.md#223) | msdyn_salescontactpersontitles |
-[Kunder V3](mapping-reference.md#101) | kontoer |
-[Kunder V3](mapping-reference.md#116) | kontakter |
-[CDS-parter](mapping-reference.md#220) | msdyn_parties |
-[Postadressesteder for CDS-part](mapping-reference.md#233) | msdyn_partypostaladdresses |
-[Historikk for CDS-postadresse V2](mapping-reference.md#235) | msdyn_postaladdresses |
-[Postadressesteder for CDS](mapping-reference.md#234) | msdyn_postaladdresscollections |
-[CDS-salgstilbudshode](mapping-reference.md#215) | tilbud |
-[CDS-salgsordrehoder](mapping-reference.md#217) | salesorders |
-[Avsluttende hilsener](mapping-reference.md#222) | msdyn_complimentaryclosings |
-[Kontakter V2](mapping-reference.md#221) | msdyn_contactforparties |
-[Roller for beslutningstaking](mapping-reference.md#224) | msdyn_decisionmakingroles |
-[Jobbfunksjoner for ansettelse](mapping-reference.md#225) | msdyn_employmentjobfunctions |
-[Fordelsnivåer](mapping-reference.md#226) | msdyn_loyaltylevels |
-[Partskontakter V3](mapping-reference.md#236) | msdyn_partyelectronicaddresses |
-[Typer personlige tegn](mapping-reference.md#227) | msdyn_personalcharactertypes |
-[Salgsfakturahoder V2](mapping-reference.md#118) | fakturaer |
-[Hilsener](mapping-reference.md#228) | msdyn_salutations |
-[Leverandører V2](mapping-reference.md#202) | msdyn_vendors |
+| Finance and Operations-app | Kundeengasjementsapp | beskrivelse |
+|----------------------------|-------------------------|-------------|
+| [Kontaktpersontitler](mapping-reference.md#223) | msdyn\_salescontactpersontitles |
+| [Kunder V3](mapping-reference.md#101) | kontoer |
+| [Kunder V3](mapping-reference.md#116) | kontakter |
+| [CDS-parter](mapping-reference.md#220) | msdyn\_parties |
+| [Postadressesteder for CDS-part](mapping-reference.md#233) | msdyn\_partypostaladdresses |
+| [Historikk for CDS-postadresse V2](mapping-reference.md#235) | msdyn\_postaladdresses |
+| [Postadressesteder for CDS](mapping-reference.md#234) | msdyn\_postaladdresscollections |
+| [CDS-salgstilbudshode](mapping-reference.md#215) | tilbud |
+| [CDS-salgsordrehoder](mapping-reference.md#217) | salesorders |
+| [Avsluttende hilsener](mapping-reference.md#222) | msdyn\_complimentaryclosings |
+| [Kontakter V2](mapping-reference.md#221) | msdyn\_contactforparties |
+| [Roller for beslutningstaking](mapping-reference.md#224) | msdyn\_decisionmakingroles |
+| [Jobbfunksjoner for ansettelse](mapping-reference.md#225) | msdyn\_employmentjobfunctions |
+| [Fordelsnivåer](mapping-reference.md#226) | msdyn\_loyaltylevels |
+| [Partskontakter V3](mapping-reference.md#236) | msdyn\_partyelectronicaddresses |
+| [Typer personlige tegn](mapping-reference.md#227) | msdyn\_personalcharactertypes |
+| [Salgsfakturahoder V2](mapping-reference.md#118) | fakturaer |
+| [Hilsener](mapping-reference.md#228) | msdyn\_salutations |
+| [Leverandører V2](mapping-reference.md#202) | msdyn\_vendors |
 
 Hvis du vil ha mer informasjon, kan du se [Referanse for lesetilgang til skrivetilgang](mapping-reference.md).
+
+## <a name="known-issues-and-limitations"></a>Kjente problemer og begrensninger
+
++ Når du oppretter en kunde sammen med adresse og lagrer den i Finance and Operations-apper, kan det hende at adressen ikke synkroniseres med **Adresse**-tabellen. Dette skyldes et sekvenseringsproblem med plattform for dobbel skriving. Det er mulig å omgå dette ved å opprette kunden først og lagre den. Deretter legger du til adressen.
++ Når en kundepost har en primæradresse i Finance and Operations-apper, og du oppretter en ny kontakt for denne kunden, arver kontaktposten en primæradresse fra den tilknyttede kundeposten. Dette skjer også for leverandørkontakten. Dataverse støtter for øyeblikket ikke denne virkemåten. Hvis dobbel skriving er aktivert, vil en kundekontakt som arves med en primæradresse fra Finance and Operations-appen, synkroniseres med Dataverse sammen med adressen.
++ Elektroniske adresser fra `msdyn_partyelectronicaddress`-tabellen flyter ikke til de elektroniske adressefeltene i **konto**- og **kontakt**-tabellene. Vi planlegger å løse dette problemet i en trinnvis frigivelse. De eksisterende dataene i de elektroniske adressefeltene i **konto**- og **kontakt**-tabellene blir ikke overskrevet.
++ Elektroniske adresser angitt i elektronisk adresse-fanen i **Konto**, **Kontakt** og **Leverandør**-skjemaer, kommer fra `msdyn_partyelectronicaddress`-tabellen. Denne informasjonen flyter ikke til de tilknyttede transaksjonene, for eksempel salgsordre, tilbud og bestilling. Vi planlegger å løse dette problemet i en trinnvis frigivelse. De eksisterende dataene i de elektroniske adressefeltene i konto- og kontaktpostene vil fortsatt fungere på transaksjoner som salgsordre, tilbud og bestilling.
++ I Finance and Operations-apper kan du opprette en kontaktpost fra **Legg til kontakt**-skjemaet. Når du prøver å opprette en ny kontakt fra **Vis kontakt**-skjemaet, mislykkes handlingen. Dette er et kjent problem.
+
+    ![Kjent problem med Legg til kontakt](media/party-gab-contact-issue.png)
+
++ **Innledende synkronisering** støtter ikke feltene **Tilgjengelig fra** og **Tilgjengelig til** på **ContactForParty**, fordi DIXF konverterer verdien til en streng i stedet for et heltall. Konverteringen utløser feilen `Cannot convert the literal '<say 08:00:00>’ to the expected type edm.int32`.
++ Hvis en postadresse for eksempel brukes til mer enn én årsak, for eksempel forretningskommunikasjonsadresse og faktureringsadresse, skal den vises som `Business;Invoice` som vist på bildet nedenfor. Hvis du legger til et mellomrom mellom verdiene, vil du få en feil.
+
+    ![Kjent problem med adresse](media/party-gab-address-issue.png)
+
++ Du kan ikke angi en fremtidig datert postadresse ved hjelp av en Finance and Operations-app med dobbel skriving, fordi Dataverse ikke støtter datoeffektivitet. Hvis du angir en fremtidig datert postadresse ved hjelp av en Finance and Operations-app, synkroniseres den til Dataverse fullt, og du ser adressen i brukergrensesnittet umiddelbart. Alle oppdateringer til denne posten vil føre til en feil når den er fremtidig datert og ikke gjeldende i Finance and Operations-appen.

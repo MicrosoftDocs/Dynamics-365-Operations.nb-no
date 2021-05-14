@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b87b411ed24f89a674ec3fb7ac44d3ab1d8a720a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2cb9e33d7bab6ca9cd378ec40baa796d1a933ece
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5819993"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5921371"
 ---
 # <a name="create-a-product-configuration-model"></a>Opprette en produktkonfigurasjonsmodell
 
@@ -28,57 +28,59 @@ Denne prosedyren viser hvordan du oppretter en produktkonfigurasjonsmodell og an
 
 
 ## <a name="create-a-product-model"></a>Opprette en produktmodell
-1. Klikk på Definisjon av produktvariantmodell.
-2. Klikk på Produktkonfigurasjonsmodeller.
-3. Klikk på Ny.
-4. Skriv inn en verdi i Navn-feltet.
-5. Skriv inn en verdi i feltet Beskrivelse.
-6. Velg et alternativ i feltet Problemløserstrategi.
+
+1. Gå til **Behandling av produktinformasjon \> Produkter \> Produktkonfigurasjonsmodeller**.
+1. Velg **Ny**.
+1. Skriv inn en verdi i **Navn**-feltet.
+1. Skriv inn en verdi i **Beskrivelse**-feltet.
+1. Velg et alternativ i feltet **Problemløserstrategi**.
     * Problemløserstrategien bestemmer hvordan restriksjonene i en restriksjonsbasert produktkonfigurasjonsmodell skal behandles. Dette valget kan ha innvirkning på ytelsen til produktkonfigurasjonsmodellen.  
-7. Skriv inn en verdi i Navn-feltet.
+1. Skriv inn en verdi i **Navn**-feltet.
     * Rotkomponenten representerer produktkonfigurasjonsmodellen, men den kan også brukes i andre produktmodeller.  
-8. Klikk på OK.
-9. Velg et alternativ i feltet Bruk konfigurasjoner på nytt.
+1. Velg **OK**.
+1. Velg et alternativ i feltet **Bruk konfigurasjoner** på nytt.
     * Hvis parameteren Bruk konfigurasjoner på nytt er satt til Ja, kontrollerer systemet for identiske konfigurasjoner etter hver konfigurasjonsøkt og bruker dem på nytt hvis det blir funnet et nøyaktig samsvar.  
 
 ## <a name="add-attributes"></a>Legg til attributter
-1. Utvid delen Attributter.
-2. Klikk på Legg til.
+
+1. Utvid delen **Attributter**.
+2. Velg **Legg til**.
 3. Merk den valgte raden i listen.
-4. Skriv inn en verdi i Navn-feltet.
-5. Skriv inn en verdi i feltet Problemløsernavn.
+4. Skriv inn en verdi i **Navn**-feltet.
+5. Skriv inn en verdi i feltet **Problemløsernavn**.
     * Problemløsernavnet brukes i problemløseren for begrensning for produktkonfiguratoren. Det må ikke inneholde mellomrom eller spesialtegn med unntak av _ (understrekingstegn).  
-6. Skriv inn en verdi i feltet Beskrivelse.
+6. Skriv inn en verdi i **Beskrivelse**-feltet.
     * Den beskrivende teksten vises for konfigurasjonsbrukeren, og kan derfor fungere som hjelp til å velge riktig attributtverdi.  
-7. Angi eller velg en verdi i Attributtype-feltet.
+7. Angi eller velg en verdi i **Attributtype**-feltet.
     * Attributtypen bestemmer hvilke verdier som er tilgjengelige for attributtet.  
-8. Merk av for Ta med i gjenbruk.
+8. Merk av for **Ta med i gjenbruk**.
     * Dette alternativet er bare tilgjengelig når alternativet Bruk konfigurasjoner på nytt er valgt. Når du inkluderer attributtet i avmerkingsboksen for gjenbruk, betyr det at attributtet vurderes når systemet søker etter et nøyaktig samsvar.  
 
 ## <a name="add-subcomponents"></a>Legge til delkomponenter
-1. Utvid delen Underkomponenter.
-2. Klikk på Legg til.
+
+1. Utvid delen **Underkomponenter**.
+2. Velg **Legg til**.
 3. Merk den valgte raden i listen.
-4. Skriv inn en verdi i Navn-feltet.
-5. Skriv inn en verdi i feltet Problemløsernavn.
-6. Skriv inn en verdi i feltet Beskrivelse.
-7. Angi eller velg en verdi i feltet Komponent.
+4. Skriv inn en verdi i **Navn**-feltet.
+5. Skriv inn en verdi i feltet **Problemløsernavn**.
+6. Skriv inn en verdi i **Beskrivelse**-feltet.
+7. Angi eller velg en verdi i feltet **Komponent**.
     * Hver underkomponent må referere til en komponentdefinisjon. Denne utformingen støtter gjenbrukbare komponenter og sikrer at når en komponent er definert, så kan den brukes i mange produktmodeller.  
-8. Klikk på Lagre.
-9. Klikk på Detaljer om stykklistelinje.
+8. Velg **Lagre**.
+9. Velg **Stykklistelinjedetaljer**.
     * I skjemaet Detaljer om stykklistelinje kan brukeren velge de nødvendige egenskapene for delkomponenten. Hver egenskap kan gis en fast verdi eller tilordnes til et attributt. Tilordning til et attributt fører til at egenskapen Stykklistelinje får ulike verdier avhengig av konfigurasjonsvalget.  
-10. Angi eller velg en verdi i Varenummer-feltet.
+10. Angi eller velg en verdi i **Varenummer**-feltet.
     * Hver underkomponent representerer en konfigurerbar produktstandard med teknologi for restriksjonsbasert konfigurasjon. Referansen utføres via varenummeret.  
-11. Merk av for Sett.
-12. Velg Ja i feltet Beregning.
+11. Merk av for **Sett**.
+12. Velg **Ja** i feltet **Beregning**.
     * Når du angir beregningsalternativet, sikrer du at produktet vil bli inkludert når du kjører en kostberegning for produktet.  
-13. Klikk på fanen Oppsett.
-14. Merk av for Sett.
-15. Angi et tall i feltet Antall.
+13. Velg **Oppsett**-fanen.
+14. Merk av for **Sett**.
+15. Angi et tall i **Antall**-feltet.
     * Antall-feltet bestemmer hvor mye av dette produktet som skal forbrukes i det konfigurerte produktet.  
-16. Merk av for Sett.
-17. Angi et tall i feltet Per serie.
-18. Klikk på OK.
+16. Merk av for **Sett**.
+17. Angi et tall i feltet **Per serie**.
+18. Velg **OK**.
 
 
 

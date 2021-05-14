@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-19
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: f0ea2ee208cdbb8f9fa6668bbcb6e15252a7c1b1
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6f6d689c596b4ec924cb50ec3bea8ce907e6dc6b
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5828232"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920993"
 ---
 # <a name="troubleshoot-inbound-warehouse-operations"></a>Feilsøke innkommende lageroperasjoner
 
@@ -56,7 +56,7 @@ Når du har kjørt den periodiske oppgaven *Oppdater produktkvitteringer*, bekre
 
 ### <a name="issue-resolution"></a>Problemløsning
 
-En ny inngående lastbehandlingsfunksjon, *Overmottak for lastantall*, løser dette problemet. Hvis du aktiverer denne funksjonen, går du til [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktiverer følgende funksjoner (i rekkefølgen de er oppført):
+En ny inngående lastbehandlingsfunksjon, *Overmottak for lastantall*, løser dette problemet. Hvis du aktiverer denne funksjonen, går du til arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktiverer følgende funksjoner (i rekkefølgen de er oppført):
 
 1. Knytt bestillingsbeholdningstransaksjoner til belastning
 1. Overmottak for belastningsantall

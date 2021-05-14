@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 18df36fe2d147ce395c113eacaf69d8016b38303
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c0163844d7999468e288ba2d612662d1dd6f22df
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818067"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5921395"
 ---
 # <a name="enter-the-gtin-code-for-a-product"></a>Angi GTIN-koden for et produkt
 
@@ -26,18 +26,17 @@ ms.locfileid: "5818067"
 
 GTIN-koder tilordnes av GS1-organisasjonen. I dette eksemplet vil du angi en kode for produktnummer M0001 i demonstrasjonsselskapet USMF.
 
-1. Klikk på Vedlikehold av frigitt produkt.
-2. Klikk på Frigitte produkter.
-3. Vis Produktbilde-faktaboksen.
-4. Finn og velg ønsket post i listen.
-5. Klikk på Administrer lager i handlingsruten.
-6. Klikk på GTIN-koder.
-7. Klikk på Ny.
-8. Merk den valgte raden i listen.
-9. Angi eller velg en verdi i Enhet-feltet.
-10. Velg et alternativ i feltet for GTIN-kode.
-11. Skriv inn en verdi i GTIN-feltet.
-12. Lukk siden.
+1. Gå til **Behandling av produktinformasjon \> Produkter \> Frigitte produkter**.
+1. Vis **Produktbilde**-faktaboksen.
+1. Finn og velg ønsket post i listen.
+1. Velg **Administrer lager** på handlingsruten.
+1. Velg **GTIN-koder**.
+1. Velg **Ny**.
+1. Merk den valgte raden i listen.
+1. Angi eller velg en verdi i **Enhet**-feltet.
+1. Velg et alternativ i feltet for **GTIN-kode**.
+1. Skriv inn en verdi i **GTIN-felt**.
+1. Lukk siden.
 
 
 
