@@ -94,12 +94,12 @@
                   items:
                     - name: Nyheter eller endringer på startsiden for Commerce
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.19 (juli 2021)
+                      href: get-started/whats-new-commerce-10-0-19.md
                     - name: Commerce 10.0.18 (mai 2021)
                       href: get-started/whats-new-commerce-10-0-18.md
                     - name: Commerce 10.0.17 (april 2021)
                       href: get-started/whats-new-commerce-10-0-17.md
-                    - name: Commerce 10.0.16 (februar 2021)
-                      href: get-started/whats-new-commerce-10-0-16.md
                 - name: Funksjoner som er fjernet eller avskrevet
                   items:
                     - name: Funksjoner som er fjernet eller avskrevet på startsiden
@@ -180,11 +180,13 @@
                   href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/commerce/toc.json
                 - name: Rutenettfunksjoner
                   href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/commerce/toc.json
-                - name: Opprette og arbeide med egendefinerte felt
+                - name: Opprett og arbeid med egendefinerte felter
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/commerce/toc.json
-                - name: Bygge inn lerretsapper fra Power Apps
+                - name: Bygg inn lerretsapper fra Power Apps
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/commerce/toc.json
-                - name: Finne informasjon ved hjelp av oppslag
+                - name: Bygg inn tredjepartsapper
+                  href: ../fin-ops-core/fin-ops/get-started/embed-website.md?toc=/dynamics365/commerce/toc.json
+                - name: Finn informasjon ved hjelp av oppslag
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/commerce/toc.json
                 - name: Endre datoen for en økt
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/change-date-session.md?toc=/dynamics365/commerce/toc.json
@@ -280,6 +282,8 @@
                   href: dev-itpro/secure-retail-cloud-pos.md
                 - name: Konfigurasjon og installasjon av Retail Hardware Station
                   href: retail-hardware-station-configuration-installation.md
+                - name: Massedistribusjon av forseglede Commerce-selvbetjeningskomponenter
+                  href: dev-itpro/Enhanced-Mass-Deployment.md
                 - name: Massedistribusjon av gamle selvbetjeningskomponenter
                   href: dev-itpro/retail-mass-deployment.md
                 - name: Hendelser for Commerce-komponent for diagnose og feilsøking
@@ -368,9 +372,9 @@
                       href: pos-operations.md
                     - name: Enhetsaktivering av en tilpasset Modern POS
                       href: dev-itpro/retail-POS-activation-changes.md
-                    - name: Aktiver godkjenning av Azure Active Directory for salgsstedspålogging
+                    - name: Konfigurer Azure Active Directory-godkjenning for salgsstedspålogging
                       href: aad-pos-logon.md
-                    - name: Produkt- og kundesøk på salgsstedet
+                    - name: Produkt- og kundesøk i salgssted
                       href: POS-search-improvements.md
                     - name: Søke etter produkter og produktvarianter under ordreregistrering
                       href: ../supply-chain/pim/search-products-product-variants.md?toc=/dynamics365/commerce/toc.json
@@ -634,13 +638,15 @@
                   href: tender_based_discounts.md
                 - name: Oversikt over leveringsrabatt
                   href: retail-shipping-discount.md
-                - name: Konfigurere kuponger
+                - name: Konfigurer gave med innkjøpskampanjer
+                  href: gift-with-purchase.md
+                - name: Konfigurer kuponger
                   href: retail-coupons.md
-                - name: Vise rabatter i salgssted
+                - name: Vis rabatter i salgssted
                   href: discounts-pos.md
                 - name: Prisrapporter
                   href: price-report.md
-                - name: Opprette kanalspesifikke forretningsavtaler
+                - name: Opprett kanalspesifikke forretningsavtaler
                   href: tasks/base-price-trade-agreements.md
                 - name: Opprette forretningsavtaler ved hjelp av kategoriprisregler
                   href: tasks/category-pricing-rules-trade-agreements.md
@@ -756,15 +762,17 @@
                   href: order-fulfillment-overview.md
                 - name: Definere ordreoppfyllelse for butikker
                   href: order-fulfillment-pos-setup.md
-                - name: Vise ordrevarslinger i salgssted
+                - name: Vis ordrevarslinger i salgssted
                   href: notifications-pos.md
-                - name: Selge kontinuitetsprogrammer og prosessalgsordrer
+                - name: Selg kontinuitetsprogrammer og prosessalgsordrer
                   href: tasks/use-continuity-program.md
+                - name: Aktiver innsjekkingsmeldinger for kunde i salgsstedet
+                  href: enable-customer-check-in.md
             - name: Returer
               items:
                 - name: Sammenkoblede refunderinger
                   href: dev-itpro/linked-refunds.md
-                - name: Selge og gå tilbake til produkter som ikke er inkludert i et butikksortiment
+                - name: Selg og gå tilbake til produkter som ikke er inkludert i et butikksortiment
                   href: sell-return-outside-assortments.md
                 - name: Konfigurere og behandle en utveksling i en returordre
                   href: orderexchanges.md
@@ -920,9 +928,11 @@
                   href: search-engine-optimization-considerations.md
                 - name: Behandle policy for innholdssikkerhet (CSP)
                   href: manage-csp.md
-                - name: Velge bort samling for webaktivitetshendelse
+                - name: Velg bort samling for nettaktivitetshendelse
                   href: web-activity-opt-out.md
-            - name: Administrere områdeinnholdet ditt
+                - name: Bruk måleenhetsinnstillinger
+                  href: unit-of-measure.md
+            - name: Administrer områdeinnholdet ditt
               items:
                 - name: Måter å legge til innhold på
                   href: add-manage-content.md
@@ -1090,8 +1100,10 @@
                       href: ship-address-module.md
                     - name: Leveringsalternativmodul
                       href: delivery-options-module.md
-                    - name: Hente informasjonsmodul
+                    - name: Modul for henteinformasjon
                       href: pickup-info-module.md
+                    - name: Modul for innsjekking for henting
+                      href: check-in-pickup-module.md
                     - name: Modul for ordredetaljer
                       href: order-confirmation-module.md
                     - name: Gavekortmodul
@@ -1190,18 +1202,28 @@
               href: sales-performance-products.md
             - name: Vurdere kunde- og produktlønnsomhet
               href: assess-customer-product-profitability.md
-            - name: Analysere butikkytelse
+            - name: Analyser butikkytelse
               href: store-performance-information.md
-            - name: 'Definere RFM-analyse (Nyheter, Hyppighet og Økonomisk)'
+            - name: 'Definer RFM-analyse (Nyheter, Hyppighet og Økonomisk)'
               href: set-up-rfm-analysis.md
+            - name: Definer Microsoft Clarity i Dynamics 365 Commerce
+              href: set-up-clarity.md
         - name: Globalisering
           items:
             - name: Oversikt over økonomisk integrering for Commerce-kanal
               href: localizations/fiscal-integration-for-retail-channel.md
-            - name: Definere økonomisk integrering for Commerce-kanal
+            - name: Definer økonomisk integrering for Commerce-kanal
               href: localizations/setting-up-fiscal-integration-for-retail-channel.md
             - name: Brukerdefinerte sertifikatprofiler for detaljhandelsbutikker
               href: localizations/certificate-profiles-for-retail-stores.md
+            - name: Regulatory Configuration Service
+              items:
+                - name: Oversikt over Regulatory Configuration Service
+                  href: ../finance/localizations/rcs-overview.md?toc=/dynamics365/commerce/toc.json
+                - name: Regulatory Configuration Service – globaliseringsfunksjoner
+                  href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/commerce/toc.json
+                - name: Opprett ER-konfigurasjoner i Regulatory Configuration Service og last dem opp til det globale repositoriet
+                  href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
             - name: Østerrike
               items:
                 - name: Eksempel på integrering av tjenesten for avgiftsmessig transaksjon for Østerrike
@@ -2210,11 +2232,13 @@
                       href: e-commerce-extensibility/module-test-file.md
                     - name: Modulfilen props.autogenerated.ts
                       href: e-commerce-extensibility/module-props-autogenerated-ts-file.md
+                    - name: Forhåndsinnstilte modulkonfigurasjoner
+                      href: e-commerce-extensibility/module-config-presets.md
                 - name: Utvikle moduler
                   items:
-                    - name: Opprette en ny modul
+                    - name: Opprett en ny modul
                       href: e-commerce-extensibility/create-new-module.md
-                    - name: Klone en modulbibliotekmodul
+                    - name: Klon en modulbibliotekmodul
                       href: e-commerce-extensibility/clone-starter-module.md
                     - name: Legge til modulkonfigurasjonsfelt
                       href: e-commerce-extensibility/add-module-config-fields.md
@@ -2414,8 +2438,20 @@
                   href: implementation-considerations-devices.md
                 - name: Visningshendelser og -behandlinger for salgsstedshandlekurv
                   href: dev-itpro/cart-view-handlers.md
-                - name: Legge til egendefinerte knapper i topptekstlinjen for salgssted
+                - name: Legg til egendefinerte knapper i topptekstlinjen for salgssted
                   href: dev-itpro/pos-header-bar.md
+                - name: Salgsstedsuavhengig emballasje-SDK
+                  items:
+                    - name: Oversikt over salgsstedsutvidelse
+                      href: dev-itpro/pos-extension/pos-extension-overview.md
+                    - name: Kom i gang med salgsstedsutvidelser
+                      href: dev-itpro/pos-extension/pos-extension-getting-started.md
+                    - name: Opprett et pakkeprosjekt for salgsstedsutvidelse
+                      href: dev-itpro/pos-extension/create-pos-extension-package.md
+                    - name: Opprett en appx-fil for Modern POS-utvidelse
+                      href: dev-itpro/pos-extension/create-pos-extension-appx.md
+                    - name: Feilsøk en salgsstedsutvidelse
+                      href: dev-itpro/pos-extension/debug-pos-extension.md
             - name: Utvidelsesmulighet for Hardware Station
               items:
                 - name: Hardware Station og utvidelsesmulighet

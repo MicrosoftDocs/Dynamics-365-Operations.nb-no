@@ -13,43 +13,40 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 81e573593fbbb0bf87e53c5cbd985b38a8db89ac
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8607de5705354aa58c985fb536f3e1d52acd1f37
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841605"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5921295"
 ---
-# <a name="create-a-sales-order-for-a-configurable-product"></a><span data-ttu-id="30848-103">Opprette en salgsordre for et konfigurerbart produkt</span><span class="sxs-lookup"><span data-stu-id="30848-103">Create a sales order for a configurable product</span></span>
+# <a name="create-a-sales-order-for-a-configurable-product"></a><span data-ttu-id="371cf-103">Opprette en salgsordre for et konfigurerbart produkt</span><span class="sxs-lookup"><span data-stu-id="371cf-103">Create a sales order for a configurable product</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="30848-104">Denne prosedyren viser hvordan du bruker en konfigurasjonsmal for et produkt på en salgsordre.</span><span class="sxs-lookup"><span data-stu-id="30848-104">This procedure shows how to apply a configuration template to a product on a sales order.</span></span> <span data-ttu-id="30848-105">Dette eksemplet bruker høyttalermodellen D0006 i demonstrasjonsdatafirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="30848-105">This example uses the D0006 speaker model in the USMF demo data company.</span></span> <span data-ttu-id="30848-106">En salgsordrebehandler bruker vanligvis denne prosedyren.</span><span class="sxs-lookup"><span data-stu-id="30848-106">Typically, a sales order processor uses this procedure.</span></span>
+<span data-ttu-id="371cf-104">Denne prosedyren viser hvordan du bruker en konfigurasjonsmal for et produkt på en salgsordre.</span><span class="sxs-lookup"><span data-stu-id="371cf-104">This procedure shows how to apply a configuration template to a product on a sales order.</span></span> <span data-ttu-id="371cf-105">Dette eksemplet bruker høyttalermodellen D0006 i demonstrasjonsdatafirmaet USMF.</span><span class="sxs-lookup"><span data-stu-id="371cf-105">This example uses the D0006 speaker model in the USMF demo data company.</span></span> <span data-ttu-id="371cf-106">En salgsordrebehandler bruker vanligvis denne prosedyren.</span><span class="sxs-lookup"><span data-stu-id="371cf-106">Typically, a sales order processor uses this procedure.</span></span>
 
+## <a name="create-a-sales-order"></a><span data-ttu-id="371cf-107">Opprette en salgsordre</span><span class="sxs-lookup"><span data-stu-id="371cf-107">Create a sales order</span></span>
 
-## <a name="create-a-sales-order"></a><span data-ttu-id="30848-107">Opprette en salgsordre</span><span class="sxs-lookup"><span data-stu-id="30848-107">Create a sales order</span></span>
-1. <span data-ttu-id="30848-108">Klikk på Salgsordrebehandling og -spørring.</span><span class="sxs-lookup"><span data-stu-id="30848-108">Click Sales order processing and inquiry.</span></span>
-2. <span data-ttu-id="30848-109">Klikk på Ny.</span><span class="sxs-lookup"><span data-stu-id="30848-109">Click New.</span></span>
-3. <span data-ttu-id="30848-110">Klikk på Salgsordre.</span><span class="sxs-lookup"><span data-stu-id="30848-110">Click Sales order.</span></span>
-4. <span data-ttu-id="30848-111">Velg US-001 i Kundekonto-feltet.</span><span class="sxs-lookup"><span data-stu-id="30848-111">In the Customer account field, select US-001.</span></span> 
-5. <span data-ttu-id="30848-112">Klikk på OK.</span><span class="sxs-lookup"><span data-stu-id="30848-112">Click OK.</span></span>
-6. <span data-ttu-id="30848-113">Velg D0006 i feltet Varenummer.</span><span class="sxs-lookup"><span data-stu-id="30848-113">In the Item number field, select D0006.</span></span>
-    * <span data-ttu-id="30848-114">Du må velge et konfigurerbart produkt for denne oppgaven.</span><span class="sxs-lookup"><span data-stu-id="30848-114">For this task, you must select a configurable product.</span></span>  
-7. <span data-ttu-id="30848-115">Klikk på Produkt og forsyning.</span><span class="sxs-lookup"><span data-stu-id="30848-115">Click Product and supply.</span></span>
-8. <span data-ttu-id="30848-116">Klikk på Konfigurer linje.</span><span class="sxs-lookup"><span data-stu-id="30848-116">Click Configure line.</span></span>
-    * <span data-ttu-id="30848-117">Vær oppmerksom på at prisen er endret, basert på konfigurasjonen som ble valgt, og at feltet for å ta med kabel er satt til sann.</span><span class="sxs-lookup"><span data-stu-id="30848-117">Note that the price has changed, based on the configuration that was selected, and that the Include cable field is now set to True.</span></span>  
-    * <span data-ttu-id="30848-118">Vær oppmerksom på standardprisen og innstillingene som er valgt for kabelen.</span><span class="sxs-lookup"><span data-stu-id="30848-118">Note the default price and the settings that are selected for the cable.</span></span>  
-9. <span data-ttu-id="30848-119">Klikk på Last inn mal.</span><span class="sxs-lookup"><span data-stu-id="30848-119">Click Load template.</span></span>
-    * <span data-ttu-id="30848-120">Dette eksemplet viser hvordan du kan bruke en mal for å velge en forhåndsdefinert konfigurasjon.</span><span class="sxs-lookup"><span data-stu-id="30848-120">This example shows how you can apply a template to select a predefined configuration.</span></span> <span data-ttu-id="30848-121">Hvis du bruker denne prosedyren som en oppgaveveiledning og ønsker å se andre attributtverdier som er tilgjengelige, må du klikke Lås opp-knappen.</span><span class="sxs-lookup"><span data-stu-id="30848-121">If you're using this procedure as a task guide and want to see the other attribute values that are available, you must click the Unlock button.</span></span>  
-10. <span data-ttu-id="30848-122">Klikk på OK.</span><span class="sxs-lookup"><span data-stu-id="30848-122">Click OK.</span></span>
-11. <span data-ttu-id="30848-123">Klikk på OK.</span><span class="sxs-lookup"><span data-stu-id="30848-123">Click OK.</span></span>
-12. <span data-ttu-id="30848-124">Vis seksjonen Linjedetaljer.</span><span class="sxs-lookup"><span data-stu-id="30848-124">Expand the Line details section.</span></span>
-13. <span data-ttu-id="30848-125">Klikk på fanen Produkt.</span><span class="sxs-lookup"><span data-stu-id="30848-125">Click the Product tab.</span></span>
-    * <span data-ttu-id="30848-126">Konfigurasjonen for varen er nå oppført under produktdimensjonene.</span><span class="sxs-lookup"><span data-stu-id="30848-126">The configuration of the item is now listed under the product dimensions.</span></span>  
-14. <span data-ttu-id="30848-127">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="30848-127">Close the page.</span></span>
-
-## <a name="select-the-product-configuration"></a><span data-ttu-id="30848-128">Velge produktkonfigurasjonen</span><span class="sxs-lookup"><span data-stu-id="30848-128">Select the product configuration</span></span>
-
+1. <span data-ttu-id="371cf-108">Gå til **Salg og markedsføring \> Arbeidsområder \> Salgsordrebehandling og -spørring**.</span><span class="sxs-lookup"><span data-stu-id="371cf-108">Go to **Sales and marketing \> Workspaces \> Sales order processing and inquiry**.</span></span>
+1. <span data-ttu-id="371cf-109">Velg **Ny**.</span><span class="sxs-lookup"><span data-stu-id="371cf-109">Select **New**.</span></span>
+1. <span data-ttu-id="371cf-110">Velg **Salgsordre**.</span><span class="sxs-lookup"><span data-stu-id="371cf-110">Select **Sales order**.</span></span>
+1. <span data-ttu-id="371cf-111">Velg *US-001* i **Kundekonto**-feltet.</span><span class="sxs-lookup"><span data-stu-id="371cf-111">In the **Customer account** field, select *US-001*.</span></span> 
+1. <span data-ttu-id="371cf-112">Velg **OK**.</span><span class="sxs-lookup"><span data-stu-id="371cf-112">Select **OK**.</span></span>
+1. <span data-ttu-id="371cf-113">Velg *D0006* i feltet **Varenummer**.</span><span class="sxs-lookup"><span data-stu-id="371cf-113">In the **Item number** field, select *D0006*.</span></span>
+    * <span data-ttu-id="371cf-114">Du må velge et konfigurerbart produkt for denne oppgaven.</span><span class="sxs-lookup"><span data-stu-id="371cf-114">For this task, you must select a configurable product.</span></span>  
+1. <span data-ttu-id="371cf-115">Velg **Produkt og forsyning**.</span><span class="sxs-lookup"><span data-stu-id="371cf-115">Select **Product and supply**.</span></span>
+1. <span data-ttu-id="371cf-116">Velg **Konfigurer linje**.</span><span class="sxs-lookup"><span data-stu-id="371cf-116">Select **Configure line**.</span></span>
+    * <span data-ttu-id="371cf-117">Vær oppmerksom på at prisen er endret, basert på konfigurasjonen som ble valgt, og at feltet for å **ta med kabel** er satt til *Sann*.</span><span class="sxs-lookup"><span data-stu-id="371cf-117">Note that the price has changed, based on the configuration that was selected, and that the **Include cable** field is now set to *True*.</span></span>  
+    * <span data-ttu-id="371cf-118">Vær oppmerksom på standardprisen og innstillingene som er valgt for kabelen.</span><span class="sxs-lookup"><span data-stu-id="371cf-118">Note the default price and the settings that are selected for the cable.</span></span>  
+1. <span data-ttu-id="371cf-119">Velg **Lastmal**.</span><span class="sxs-lookup"><span data-stu-id="371cf-119">Select **Load template**.</span></span>
+    * <span data-ttu-id="371cf-120">Dette eksemplet viser hvordan du kan bruke en mal for å velge en forhåndsdefinert konfigurasjon.</span><span class="sxs-lookup"><span data-stu-id="371cf-120">This example shows how you can apply a template to select a predefined configuration.</span></span> <span data-ttu-id="371cf-121">Hvis du bruker denne prosedyren som en oppgaveveiledning og ønsker å se andre attributtverdier som er tilgjengelige, må du velge **Lås opp**-knappen.</span><span class="sxs-lookup"><span data-stu-id="371cf-121">If you're using this procedure as a task guide and want to see the other attribute values that are available, you must select the **Unlock** button.</span></span>  
+1. <span data-ttu-id="371cf-122">Velg **OK**.</span><span class="sxs-lookup"><span data-stu-id="371cf-122">Select **OK**.</span></span>
+1. <span data-ttu-id="371cf-123">Velg **OK**.</span><span class="sxs-lookup"><span data-stu-id="371cf-123">Select **OK**.</span></span>
+1. <span data-ttu-id="371cf-124">Vis delen **Linjedetaljer**.</span><span class="sxs-lookup"><span data-stu-id="371cf-124">Expand the **Line details** section.</span></span>
+1. <span data-ttu-id="371cf-125">Velg **Produkt**-fanen.</span><span class="sxs-lookup"><span data-stu-id="371cf-125">Select the **Product** tab.</span></span>
+    * <span data-ttu-id="371cf-126">Konfigurasjonen for varen er nå oppført under produktdimensjonene.</span><span class="sxs-lookup"><span data-stu-id="371cf-126">The configuration of the item is now listed under the product dimensions.</span></span>  
+1. <span data-ttu-id="371cf-127">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="371cf-127">Close the page.</span></span>
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

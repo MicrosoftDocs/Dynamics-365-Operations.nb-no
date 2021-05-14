@@ -1,8 +1,8 @@
 ---
 title: Kontrollere varekvaliteten
-description: Dette emnet forklarer hvordan du behandler en kvalitetsordre.
+description: Dette emnet beskriver hvordan du behandler kvalitetsordre.
 author: perlynne
-ms.date: 08/01/2019
+ms.date: 03/23/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -14,40 +14,47 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 47e7156e5c57d5f983564cc966b4108f1180ff8d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: ec67e7864db12178c0f3cfe8b93d510a46e8a0d4
+ms.sourcegitcommit: 8362f3bd32ce8b9a5af93c8e57daef732a93b19e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825921"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5956140"
 ---
-# <a name="inspect-the-quality-of-goods"></a><span data-ttu-id="90cba-103">Kontrollere varekvaliteten</span><span class="sxs-lookup"><span data-stu-id="90cba-103">Inspect the quality of goods</span></span>
+# <a name="inspect-the-quality-of-goods"></a><span data-ttu-id="d0a84-103">Kontrollere varekvaliteten</span><span class="sxs-lookup"><span data-stu-id="d0a84-103">Inspect the quality of goods</span></span>
 
 [!include [banner](../../includes/banner.md)]
 
-<span data-ttu-id="90cba-104">Dette emnet forklarer hvordan du behandler en kvalitetsordre.</span><span class="sxs-lookup"><span data-stu-id="90cba-104">This topic explains how to process a quality order.</span></span> <span data-ttu-id="90cba-105">Du kan bruke denne veiledningen i USMF-demodatafirmaet.</span><span class="sxs-lookup"><span data-stu-id="90cba-105">You can run this guide in demo data company USMF.</span></span> <span data-ttu-id="90cba-106">Før du starter denne eksempelprosedyren, må du bekrefte bestillingen "000016" og postere en produktkvittering.</span><span class="sxs-lookup"><span data-stu-id="90cba-106">Before you start this example procedure, you need to confirm purchase order "000016" and post a product receipt.</span></span> <span data-ttu-id="90cba-107">Dermed opprettes automatisk en kvalitetsordre.</span><span class="sxs-lookup"><span data-stu-id="90cba-107">This will automatically create a quality order.</span></span> <span data-ttu-id="90cba-108">Kvalitetsinspeksjoner utføres vanligvis av en kvalitetsassistent.</span><span class="sxs-lookup"><span data-stu-id="90cba-108">Quality inspections are typically carried out by a quality clerk.</span></span>
+<span data-ttu-id="d0a84-104">Dette emnet beskriver hvordan du behandler kvalitetsordre.</span><span class="sxs-lookup"><span data-stu-id="d0a84-104">This topic describes how to process quality orders.</span></span> <span data-ttu-id="d0a84-105">Kvalitetsinspeksjoner utføres vanligvis av en kvalitetsassistent.</span><span class="sxs-lookup"><span data-stu-id="d0a84-105">Quality inspections are typically done by a quality clerk.</span></span>
 
+<span data-ttu-id="d0a84-106">Hvis standard demodata er installert, kan du bruke dem til å fullføre prosedyrene i dette emnet.</span><span class="sxs-lookup"><span data-stu-id="d0a84-106">If the standard demo data is installed, you can use it to complete the procedures in this topic.</span></span> <span data-ttu-id="d0a84-107">For å bruke demodata velger du den juridiske enheten *USMF* før du begynner.</span><span class="sxs-lookup"><span data-stu-id="d0a84-107">To use the demo data, select the *USMF* legal entity before you begin.</span></span> <span data-ttu-id="d0a84-108">Deretter må du bekrefte bestillingen *000016* og postere et produktmottak.</span><span class="sxs-lookup"><span data-stu-id="d0a84-108">You must then confirm purchase order *000016* and post a product receipt.</span></span> <span data-ttu-id="d0a84-109">En kvalitetsordre genereres automatisk.</span><span class="sxs-lookup"><span data-stu-id="d0a84-109">A quality order is automatically generated.</span></span>
 
-## <a name="select-a-quality-order"></a><span data-ttu-id="90cba-109">Velge en kvalitetsordre</span><span class="sxs-lookup"><span data-stu-id="90cba-109">Select a quality order</span></span>
-1. <span data-ttu-id="90cba-110">I navigasjonsruten går du til **Moduler > Lagerstyring > Periodiske oppgaver > Kvalitetsstyring > Kvalitetsordrer**.</span><span class="sxs-lookup"><span data-stu-id="90cba-110">In the navigation pane, go to **Modules > Inventory management > Periodic tasks > Quality management > Quality orders**.</span></span>
-2. <span data-ttu-id="90cba-111">Velg kvalitetsordren som ble opprettet før du startet denne prosedyren.</span><span class="sxs-lookup"><span data-stu-id="90cba-111">Select the quality order that was created before you started this procedure.</span></span>  
+## <a name="step-1-select-a-quality-order"></a><span data-ttu-id="d0a84-110">Trinn 1: Velge en kvalitetsordre</span><span class="sxs-lookup"><span data-stu-id="d0a84-110">Step 1: Select a quality order</span></span>
 
-## <a name="record-test-results"></a><span data-ttu-id="90cba-112">Registere testresultater</span><span class="sxs-lookup"><span data-stu-id="90cba-112">Record test results</span></span>
-1. <span data-ttu-id="90cba-113">Velg **Resultater**.</span><span class="sxs-lookup"><span data-stu-id="90cba-113">Select **Results**.</span></span>
-2. <span data-ttu-id="90cba-114">Velg **Rediger**.</span><span class="sxs-lookup"><span data-stu-id="90cba-114">Select **Edit**.</span></span>
-3. <span data-ttu-id="90cba-115">Angi et tall i **Resultatantall**-feltet.</span><span class="sxs-lookup"><span data-stu-id="90cba-115">In the **Result quantity** field, enter a number.</span></span>
-4. <span data-ttu-id="90cba-116">Velg det ønskede oppslaget på rullegardinmenyen i **Resultat**-feltet.</span><span class="sxs-lookup"><span data-stu-id="90cba-116">In the **Outcome** field, select the desired record in the drop-down menu.</span></span>  
-- <span data-ttu-id="90cba-117">I dette eksemplet er resultatet basert på et forhåndsdefinert resultat.</span><span class="sxs-lookup"><span data-stu-id="90cba-117">In this example the result is based on a pre-defined outcome.</span></span> <span data-ttu-id="90cba-118">Vanligvis vil du registrere et mer spesifikt testresultat, for eksempel en størrelse eller annen dimensjon.</span><span class="sxs-lookup"><span data-stu-id="90cba-118">Normally you would record a more specific test result, for example a size or other dimension.</span></span>  
-5. <span data-ttu-id="90cba-119">Velg **Lagre**.</span><span class="sxs-lookup"><span data-stu-id="90cba-119">Select **Save**.</span></span>
-6. <span data-ttu-id="90cba-120">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="90cba-120">Close the page.</span></span>
+<span data-ttu-id="d0a84-111">For å velge en kvalitetsordre følger du disse trinnene.</span><span class="sxs-lookup"><span data-stu-id="d0a84-111">To select a quality order, follow these steps.</span></span>
 
-## <a name="validate-the-quality-order"></a><span data-ttu-id="90cba-121">Valider kvalitetsordren</span><span class="sxs-lookup"><span data-stu-id="90cba-121">Validate the quality order</span></span>
-1. <span data-ttu-id="90cba-122">Velg **Valider**.</span><span class="sxs-lookup"><span data-stu-id="90cba-122">Select **Validate**.</span></span>
-2. <span data-ttu-id="90cba-123">I feltet **Validert av** velger du brukeren som utfører inspeksjonen, fra rullegardinmenyen.</span><span class="sxs-lookup"><span data-stu-id="90cba-123">In the **Validated by** field, select the user performing the inspection from the drop-down menu.</span></span>  
-3. <span data-ttu-id="90cba-124">Klikk på **Velg**.</span><span class="sxs-lookup"><span data-stu-id="90cba-124">Click **Select**.</span></span>
-4. <span data-ttu-id="90cba-125">Velg **OK**.</span><span class="sxs-lookup"><span data-stu-id="90cba-125">Select **OK**.</span></span>
-5. <span data-ttu-id="90cba-126">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="90cba-126">Close the page.</span></span>
+1. <span data-ttu-id="d0a84-112">Gå til **Lagerstyring \> Periodiske oppgaver \> Kvalitetsstyring \> Kvalitetsordrer**.</span><span class="sxs-lookup"><span data-stu-id="d0a84-112">Go to **Inventory management \> Periodic tasks \> Quality management \> Quality orders**.</span></span>
+1. <span data-ttu-id="d0a84-113">Velg kvalitetsordren som ble generert før du startet denne prosedyren.</span><span class="sxs-lookup"><span data-stu-id="d0a84-113">Select the quality order that was generated before you started this procedure.</span></span>
 
+## <a name="step-2-record-test-results"></a><span data-ttu-id="d0a84-114">Trinn 2: Registere testresultater</span><span class="sxs-lookup"><span data-stu-id="d0a84-114">Step 2: Record test results</span></span>
 
+<span data-ttu-id="d0a84-115">Følg disse trinnene for å registrere testresultater.</span><span class="sxs-lookup"><span data-stu-id="d0a84-115">To record test results, follow these steps.</span></span>
+
+1. <span data-ttu-id="d0a84-116">Velg **Resultater**.</span><span class="sxs-lookup"><span data-stu-id="d0a84-116">Select **Results**.</span></span>
+1. <span data-ttu-id="d0a84-117">Velg **Rediger**.</span><span class="sxs-lookup"><span data-stu-id="d0a84-117">Select **Edit**.</span></span>
+1. <span data-ttu-id="d0a84-118">Angi et tall i **Resultatantall**-feltet.</span><span class="sxs-lookup"><span data-stu-id="d0a84-118">In the **Result quantity** field, enter a number.</span></span>
+1. <span data-ttu-id="d0a84-119">Velg ønsket oppføring i feltet **Resultat**.</span><span class="sxs-lookup"><span data-stu-id="d0a84-119">In the **Outcome** field, select the desired record.</span></span> <span data-ttu-id="d0a84-120">I dette eksemplet er resultatet basert på et forhåndsdefinert resultat.</span><span class="sxs-lookup"><span data-stu-id="d0a84-120">In this example, the result is based on a predefined outcome.</span></span> <span data-ttu-id="d0a84-121">Vanligvis vil du registrere et mer spesifikt testresultat, for eksempel en størrelse eller annen dimensjon.</span><span class="sxs-lookup"><span data-stu-id="d0a84-121">Usually, you will record a more specific test result, such as a size or other dimension.</span></span>
+1. <span data-ttu-id="d0a84-122">Velg **Lagre**.</span><span class="sxs-lookup"><span data-stu-id="d0a84-122">Select **Save**.</span></span>
+1. <span data-ttu-id="d0a84-123">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="d0a84-123">Close the page.</span></span>
+
+## <a name="step-3-validate-the-quality-order"></a><span data-ttu-id="d0a84-124">Trinn 3: Valider kvalitetsordren</span><span class="sxs-lookup"><span data-stu-id="d0a84-124">Step 3: Validate the quality order</span></span>
+
+<span data-ttu-id="d0a84-125">For å validere kvalitetsordren følger du disse trinnene.</span><span class="sxs-lookup"><span data-stu-id="d0a84-125">To validate the quality order, follow these steps.</span></span>
+
+1. <span data-ttu-id="d0a84-126">Velg **Valider**.</span><span class="sxs-lookup"><span data-stu-id="d0a84-126">Select **Validate**.</span></span>
+1. <span data-ttu-id="d0a84-127">Velg brukeren som gjennomfører inspeksjonen, i feltet **Godkjent av**.</span><span class="sxs-lookup"><span data-stu-id="d0a84-127">In the **Validated by** field, select the user who is doing the inspection.</span></span>
+1. <span data-ttu-id="d0a84-128">Velg **Velg**.</span><span class="sxs-lookup"><span data-stu-id="d0a84-128">Select **Select**.</span></span>
+1. <span data-ttu-id="d0a84-129">Velg **OK**.</span><span class="sxs-lookup"><span data-stu-id="d0a84-129">Select **OK**.</span></span>
+1. <span data-ttu-id="d0a84-130">Lukk siden.</span><span class="sxs-lookup"><span data-stu-id="d0a84-130">Close the page.</span></span>
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

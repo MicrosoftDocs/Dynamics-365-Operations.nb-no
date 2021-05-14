@@ -13,30 +13,28 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2021-03-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: f9b37ffe1f3c13672bfed29918bfc6d108b0eaea
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: f11043005ba6ec32b81b923aa78248100134c130
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744645"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923381"
 ---
-# <a name="removed-or-deprecated-features-home-page"></a><span data-ttu-id="7b1a7-103">Funksjoner som er fjernet eller avskrevet på startsiden</span><span class="sxs-lookup"><span data-stu-id="7b1a7-103">Removed or deprecated features home page</span></span>
+# <a name="removed-or-deprecated-features-home-page"></a><span data-ttu-id="b2ba6-103">Funksjoner som er fjernet eller avskrevet på startsiden</span><span class="sxs-lookup"><span data-stu-id="b2ba6-103">Removed or deprecated features home page</span></span>
 
 [!include[banner](../includes/banner.md)]
 
-## <a name="removed-or-deprecated-features-in-finance-and-operations-apps"></a><span data-ttu-id="7b1a7-104">Funksjoner som er fjernet eller avskrevet i Finance and Operations-apper</span><span class="sxs-lookup"><span data-stu-id="7b1a7-104">Removed or deprecated features in Finance and Operations apps</span></span>
-<span data-ttu-id="7b1a7-105">Følgende emner gir informasjon om fjernede eller utskrevete funksjoner i Finance and Operations-apper:</span><span class="sxs-lookup"><span data-stu-id="7b1a7-105">The following topics provide information about removed or deprecated features in Finance and Operations apps:</span></span>
+## <a name="removed-or-deprecated-features-in-finance-and-operations-apps"></a><span data-ttu-id="b2ba6-104">Funksjoner som er fjernet eller avskrevet i Finance and Operations-apper</span><span class="sxs-lookup"><span data-stu-id="b2ba6-104">Removed or deprecated features in Finance and Operations apps</span></span>
+<span data-ttu-id="b2ba6-105">Følgende emner gir informasjon om fjernede eller utskrevete funksjoner i Finance and Operations-apper:</span><span class="sxs-lookup"><span data-stu-id="b2ba6-105">The following topics provide information about removed or deprecated features in Finance and Operations apps:</span></span>
 
-- [<span data-ttu-id="7b1a7-106">Funksjoner som er fjernet eller avskrevet i Dynamics 365 Commerce</span><span class="sxs-lookup"><span data-stu-id="7b1a7-106">Removed or deprecated features in Dynamics 365 Commerce</span></span>](../../../commerce/get-started/removed-deprecated-features-commerce.md)
-- [<span data-ttu-id="7b1a7-107">Funksjoner som er fjernet eller avskrevet i Dynamics 365 Finance</span><span class="sxs-lookup"><span data-stu-id="7b1a7-107">Removed or deprecated features in Dynamics 365 Finance</span></span>](../../../finance/get-started/removed-deprecated-features-finance.md)
-- [<span data-ttu-id="7b1a7-108">Funksjoner som er fjernet eller avskrevet i Dynamics 365 Supply Chain Management</span><span class="sxs-lookup"><span data-stu-id="7b1a7-108">Removed or deprecated features in Dynamics 365 Supply Chain Management</span></span>](../../../supply-chain/get-started/removed-deprecated-features-scm-updates.md)
-- [<span data-ttu-id="7b1a7-109">Fjernede eller avskrevne Platform-funksjoner</span><span class="sxs-lookup"><span data-stu-id="7b1a7-109">Removed or deprecated platform features</span></span>](../../dev-itpro/get-started/removed-deprecated-features-platform-updates.md)
-- [<span data-ttu-id="7b1a7-110">Fjernede eller utgåtte funksjoner i Lifecycle Services (LCS)</span><span class="sxs-lookup"><span data-stu-id="7b1a7-110">Removed or deprecated features in Lifecycle Services (LCS)</span></span>](../../dev-itpro/lifecycle-services/removed-deprecated-features.md)
-- [<span data-ttu-id="7b1a7-111">Fjernede eller avskrevne funksjoner i tidligere versjoner</span><span class="sxs-lookup"><span data-stu-id="7b1a7-111">Removed or deprecated features in previous releases</span></span>](../../dev-itpro/migration-upgrade/deprecated-features.md)
+- [<span data-ttu-id="b2ba6-106">Funksjoner som er fjernet eller avskrevet i Dynamics 365 Commerce</span><span class="sxs-lookup"><span data-stu-id="b2ba6-106">Removed or deprecated features in Dynamics 365 Commerce</span></span>](../../../commerce/get-started/removed-deprecated-features-commerce.md)
+- [<span data-ttu-id="b2ba6-107">Funksjoner som er fjernet eller avskrevet i Dynamics 365 Finance</span><span class="sxs-lookup"><span data-stu-id="b2ba6-107">Removed or deprecated features in Dynamics 365 Finance</span></span>](../../../finance/get-started/removed-deprecated-features-finance.md)
+- [<span data-ttu-id="b2ba6-108">Funksjoner som er fjernet eller avskrevet i Dynamics 365 Supply Chain Management</span><span class="sxs-lookup"><span data-stu-id="b2ba6-108">Removed or deprecated features in Dynamics 365 Supply Chain Management</span></span>](../../../supply-chain/get-started/removed-deprecated-features-scm-updates.md)
+- [<span data-ttu-id="b2ba6-109">Fjernede eller avskrevne Platform-funksjoner</span><span class="sxs-lookup"><span data-stu-id="b2ba6-109">Removed or deprecated platform features</span></span>](../../dev-itpro/get-started/removed-deprecated-features-platform-updates.md)
+- [<span data-ttu-id="b2ba6-110">Fjernede eller utgåtte funksjoner i Lifecycle Services (LCS)</span><span class="sxs-lookup"><span data-stu-id="b2ba6-110">Removed or deprecated features in Lifecycle Services (LCS)</span></span>](../../dev-itpro/lifecycle-services/removed-deprecated-features.md)
+- [<span data-ttu-id="b2ba6-111">Fjernede eller avskrevne funksjoner i tidligere versjoner</span><span class="sxs-lookup"><span data-stu-id="b2ba6-111">Removed or deprecated features in previous releases</span></span>](../../dev-itpro/migration-upgrade/deprecated-features.md)
 
-## <a name="deprecations-in-the-microsoft-power-platform"></a><span data-ttu-id="7b1a7-112">Avskrivninger i Microsoft Power Platform</span><span class="sxs-lookup"><span data-stu-id="7b1a7-112">Deprecations in the Microsoft Power Platform</span></span>
-<span data-ttu-id="7b1a7-113">Følgende emner gir informasjon om avskrivninger i Microsoft Power Platform:</span><span class="sxs-lookup"><span data-stu-id="7b1a7-113">The following topic provides information about deprecations in the Microsoft Power Platform:</span></span>
+## <a name="deprecations-in-the-microsoft-power-platform"></a><span data-ttu-id="b2ba6-112">Avskrivninger i Microsoft Power Platform</span><span class="sxs-lookup"><span data-stu-id="b2ba6-112">Deprecations in the Microsoft Power Platform</span></span>
+<span data-ttu-id="b2ba6-113">Følgende emner gir informasjon om avskrivninger i Microsoft Power Platform:</span><span class="sxs-lookup"><span data-stu-id="b2ba6-113">The following topic provides information about deprecations in the Microsoft Power Platform:</span></span>
 
-- [<span data-ttu-id="7b1a7-114">Viktige endringer (avskrivninger) som kommer Power Apps, Power Automate og Customer Engagement-apper</span><span class="sxs-lookup"><span data-stu-id="7b1a7-114">Important changes (deprecations) coming in Power Apps, Power Automate, and customer engagement apps</span></span>](https://docs.microsoft.com/power-platform/important-changes-coming)
-
-
+- [<span data-ttu-id="b2ba6-114">Viktige endringer (avskrivninger) som kommer Power Apps, Power Automate og Customer Engagement-apper</span><span class="sxs-lookup"><span data-stu-id="b2ba6-114">Important changes (deprecations) coming in Power Apps, Power Automate, and customer engagement apps</span></span>](/power-platform/important-changes-coming)

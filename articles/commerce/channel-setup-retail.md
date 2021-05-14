@@ -2,7 +2,7 @@
 title: Definere en detaljhandelskanal
 description: Dette emnet beskriver hvordan du oppretter en ny detaljhandelskanal i Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 01/27/2020
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,167 +14,198 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 713cbe68c151b6893519843611089941cabf0e70
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 3f1f5dc2c8402d9b6b68a049f804932812eb74c0
+ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800597"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5937540"
 ---
-# <a name="set-up-a-retail-channel"></a><span data-ttu-id="04f2d-103">Konfigurere en Retail-kanal</span><span class="sxs-lookup"><span data-stu-id="04f2d-103">Set up a retail channel</span></span>
+# <a name="set-up-a-retail-channel"></a><span data-ttu-id="048c4-103">Konfigurere en Retail-kanal</span><span class="sxs-lookup"><span data-stu-id="048c4-103">Set up a retail channel</span></span>
 
 [!include [banner](includes/banner.md)]
 
-<span data-ttu-id="04f2d-104">Dette emnet beskriver hvordan du oppretter en ny detaljhandelskanal i Microsoft Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="04f2d-104">This topic describes how to create a new retail channel in Microsoft Dynamics 365 Commerce.</span></span>
+<span data-ttu-id="048c4-104">Dette emnet beskriver hvordan du oppretter en ny detaljhandelskanal i Microsoft Dynamics 365 Commerce.</span><span class="sxs-lookup"><span data-stu-id="048c4-104">This topic describes how to create a new retail channel in Microsoft Dynamics 365 Commerce.</span></span>
 
-<span data-ttu-id="04f2d-105">Dynamics 365 Commerce støtter flere kanaler for detaljhandel.</span><span class="sxs-lookup"><span data-stu-id="04f2d-105">Dynamics 365 Commerce supports multiple retail channels.</span></span> <span data-ttu-id="04f2d-106">Disse detaljhandelskanalene omfatter nettbutikker, telefonsentre og detaljhandelsbutikker (også kalt fysiske butikker).</span><span class="sxs-lookup"><span data-stu-id="04f2d-106">These retail channels include online stores, call centers, and retail stores (also known as brick-and-mortar stores).</span></span> <span data-ttu-id="04f2d-107">Hver detaljhandelsbutikkanal kan ha sine egne betalingsmåter, prisgrupper, salgsstedskasser, inntekts- og utgiftskontoer og ansatte.</span><span class="sxs-lookup"><span data-stu-id="04f2d-107">Each retail store channel can have its own payment methods, price groups, point of sale (POS) registers, income accounts and expense accounts, and staff.</span></span> <span data-ttu-id="04f2d-108">Du må sette opp alle disse elementene før du kan opprette en detaljhandelsbutikkanal.</span><span class="sxs-lookup"><span data-stu-id="04f2d-108">You must set up all of these elements before you can create a retail store channel.</span></span> 
+<span data-ttu-id="048c4-105">Dynamics 365 Commerce støtter flere kanaler for detaljhandel.</span><span class="sxs-lookup"><span data-stu-id="048c4-105">Dynamics 365 Commerce supports multiple retail channels.</span></span> <span data-ttu-id="048c4-106">Disse detaljhandelskanalene omfatter nettbutikker, telefonsentre og detaljhandelsbutikker (også kalt fysiske butikker).</span><span class="sxs-lookup"><span data-stu-id="048c4-106">These retail channels include online stores, call centers, and retail stores (also known as brick-and-mortar stores).</span></span> <span data-ttu-id="048c4-107">Hver detaljhandelsbutikkanal kan ha sine egne betalingsmåter, prisgrupper, salgsstedskasser, inntekts- og utgiftskontoer og ansatte.</span><span class="sxs-lookup"><span data-stu-id="048c4-107">Each retail store channel can have its own payment methods, price groups, point of sale (POS) registers, income accounts and expense accounts, and staff.</span></span> <span data-ttu-id="048c4-108">Du må sette opp alle disse elementene før du kan opprette en detaljhandelsbutikkanal.</span><span class="sxs-lookup"><span data-stu-id="048c4-108">You must set up all of these elements before you can create a retail store channel.</span></span> 
 
-<span data-ttu-id="04f2d-109">Før det opprettes en detaljhandelskanal, må du kontrollere at du følger [forutsetningene for kanal](channels-prerequisites.md).</span><span class="sxs-lookup"><span data-stu-id="04f2d-109">Before a retail channel is created, ensure you follow the [channel prerequisites](channels-prerequisites.md).</span></span>
+<span data-ttu-id="048c4-109">Før det opprettes en detaljhandelskanal, må du kontrollere at du følger [forutsetningene for kanal](channels-prerequisites.md).</span><span class="sxs-lookup"><span data-stu-id="048c4-109">Before a retail channel is created, ensure you follow the [channel prerequisites](channels-prerequisites.md).</span></span>
 
-## <a name="create-and-configure-a-new-retail-channel"></a><span data-ttu-id="04f2d-110">Opprette og konfigurere en ny detaljhandelskanal</span><span class="sxs-lookup"><span data-stu-id="04f2d-110">Create and configure a new retail channel</span></span>
+## <a name="create-and-configure-a-new-retail-channel"></a><span data-ttu-id="048c4-110">Opprette og konfigurere en ny detaljhandelskanal</span><span class="sxs-lookup"><span data-stu-id="048c4-110">Create and configure a new retail channel</span></span>
 
-1. <span data-ttu-id="04f2d-111">I navigasjonsruten går du til **Moduler \> Kanaler \> Butikker \> Alle butikker**.</span><span class="sxs-lookup"><span data-stu-id="04f2d-111">In the navigation pane, go to **Modules \> Channels \> Stores \> All stores**.</span></span>
-1. <span data-ttu-id="04f2d-112">I handlingsruten velger du **Ny**.</span><span class="sxs-lookup"><span data-stu-id="04f2d-112">On the action pane, select **New**.</span></span>
-1. <span data-ttu-id="04f2d-113">I **Navn**-feltet oppgir du et navn for den nye kanalen.</span><span class="sxs-lookup"><span data-stu-id="04f2d-113">In the **Name** field, provide a name for the new channel.</span></span>
-1. <span data-ttu-id="04f2d-114">Oppgi et unikt butikknummer i **Butikknummer**-feltet.</span><span class="sxs-lookup"><span data-stu-id="04f2d-114">In the **Store number** field, provide a unique store number.</span></span> <span data-ttu-id="04f2d-115">Nummeret kan være alfanumerisk med opptil 10 tegn.</span><span class="sxs-lookup"><span data-stu-id="04f2d-115">The number can be alphanumeric with a maximum of 10 characters.</span></span>
-1. <span data-ttu-id="04f2d-116">Angi den riktige juridiske enheten i rullegardinlisten **Juridisk enhet**.</span><span class="sxs-lookup"><span data-stu-id="04f2d-116">In the **Legal entity** drop-down list, enter the appropriate legal entity.</span></span>
-1. <span data-ttu-id="04f2d-117">Angi det riktige lageret i rullegardinlisten **Lager**.</span><span class="sxs-lookup"><span data-stu-id="04f2d-117">In the **Warehouse** drop-down list, enter the appropriate warehouse.</span></span>
-1. <span data-ttu-id="04f2d-118">Velg riktig tidssone i feltet **Tidssone for butikk**.</span><span class="sxs-lookup"><span data-stu-id="04f2d-118">In the **Store time zone** field, select the appropriate time zone.</span></span>
-1. <span data-ttu-id="04f2d-119">I rullegardinlisten **Merverdiavgiftsgruppe** velger du riktig merverdiavgiftsgruppe for butikken.</span><span class="sxs-lookup"><span data-stu-id="04f2d-119">In the **Sales tax group** drop-down list, select an appropriate sales tax group for the store.</span></span>
-1. <span data-ttu-id="04f2d-120">Velg riktig valuta i **Valuta**-feltet.</span><span class="sxs-lookup"><span data-stu-id="04f2d-120">In the **Currency** field, select the appropriate currency.</span></span>
-1. <span data-ttu-id="04f2d-121">Angi en gyldig adressebok i feltet **Adressebok for kunde**.</span><span class="sxs-lookup"><span data-stu-id="04f2d-121">In the **Customer address book** field, provide a valid address book.</span></span>
-1. <span data-ttu-id="04f2d-122">Angi en gyldig standardkunde i feltet **Standardkunde**.</span><span class="sxs-lookup"><span data-stu-id="04f2d-122">In the **Default customer** field, provide a valid default customer.</span></span>
-1. <span data-ttu-id="04f2d-123">I feltet **Funksjonalitetsprofil** velger du en funksjonalitetsprofil hvis det er aktuelt.</span><span class="sxs-lookup"><span data-stu-id="04f2d-123">In the **Functionality profile** field, select a functionality profile if applicable.</span></span>
-1. <span data-ttu-id="04f2d-124">I feltet **Profil for e-postvarsling** oppgir du en gyldig profil for e-postvarsling.</span><span class="sxs-lookup"><span data-stu-id="04f2d-124">In the **Email notification profile** field, provide a valid email notification profile.</span></span>
-1. <span data-ttu-id="04f2d-125">Velg **Lagre** i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="04f2d-125">On the action pane, select **Save**.</span></span>
+1. <span data-ttu-id="048c4-111">I navigasjonsruten går du til **Moduler \> Kanaler \> Butikker \> Alle butikker**.</span><span class="sxs-lookup"><span data-stu-id="048c4-111">In the navigation pane, go to **Modules \> Channels \> Stores \> All stores**.</span></span>
+1. <span data-ttu-id="048c4-112">Velg **Ny** i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="048c4-112">On the Action Pane, select **New**.</span></span>
+1. <span data-ttu-id="048c4-113">I **Navn**-feltet oppgir du et navn for den nye kanalen.</span><span class="sxs-lookup"><span data-stu-id="048c4-113">In the **Name** field, provide a name for the new channel.</span></span>
+1. <span data-ttu-id="048c4-114">Oppgi et unikt butikknummer i **Butikknummer**-feltet.</span><span class="sxs-lookup"><span data-stu-id="048c4-114">In the **Store number** field, provide a unique store number.</span></span> <span data-ttu-id="048c4-115">Nummeret kan være alfanumerisk med opptil 10 tegn.</span><span class="sxs-lookup"><span data-stu-id="048c4-115">The number can be alphanumeric with a maximum of 10 characters.</span></span>
+1. <span data-ttu-id="048c4-116">Angi den riktige juridiske enheten i rullegardinlisten **Juridisk enhet**.</span><span class="sxs-lookup"><span data-stu-id="048c4-116">In the **Legal entity** drop-down list, enter the appropriate legal entity.</span></span>
+1. <span data-ttu-id="048c4-117">Angi det riktige lageret i rullegardinlisten **Lager**.</span><span class="sxs-lookup"><span data-stu-id="048c4-117">In the **Warehouse** drop-down list, enter the appropriate warehouse.</span></span>
+1. <span data-ttu-id="048c4-118">Velg riktig tidssone i feltet **Tidssone for butikk**.</span><span class="sxs-lookup"><span data-stu-id="048c4-118">In the **Store time zone** field, select the appropriate time zone.</span></span>
+1. <span data-ttu-id="048c4-119">I rullegardinlisten **Merverdiavgiftsgruppe** velger du riktig merverdiavgiftsgruppe for butikken.</span><span class="sxs-lookup"><span data-stu-id="048c4-119">In the **Sales tax group** drop-down list, select an appropriate sales tax group for the store.</span></span>
+1. <span data-ttu-id="048c4-120">Velg riktig valuta i **Valuta**-feltet.</span><span class="sxs-lookup"><span data-stu-id="048c4-120">In the **Currency** field, select the appropriate currency.</span></span>
+1. <span data-ttu-id="048c4-121">Angi en gyldig adressebok i feltet **Adressebok for kunde**.</span><span class="sxs-lookup"><span data-stu-id="048c4-121">In the **Customer address book** field, provide a valid address book.</span></span>
+1. <span data-ttu-id="048c4-122">Angi en gyldig standardkunde i feltet **Standardkunde**.</span><span class="sxs-lookup"><span data-stu-id="048c4-122">In the **Default customer** field, provide a valid default customer.</span></span>
+1. <span data-ttu-id="048c4-123">I feltet **Funksjonalitetsprofil** velger du en funksjonalitetsprofil hvis det er aktuelt.</span><span class="sxs-lookup"><span data-stu-id="048c4-123">In the **Functionality profile** field, select a functionality profile if applicable.</span></span>
+1. <span data-ttu-id="048c4-124">I feltet **Profil for e-postvarsling** oppgir du en gyldig profil for e-postvarsling.</span><span class="sxs-lookup"><span data-stu-id="048c4-124">In the **Email notification profile** field, provide a valid email notification profile.</span></span>
+1. <span data-ttu-id="048c4-125">Velg **Lagre** i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="048c4-125">On the Action Pane, select **Save**.</span></span>
 
-<span data-ttu-id="04f2d-126">Bildet nedenfor viser opprettelsen av en ny detaljhandelskanal.</span><span class="sxs-lookup"><span data-stu-id="04f2d-126">The following image shows the creation of a new retail channel.</span></span>
+<span data-ttu-id="048c4-126">Bildet nedenfor viser opprettelsen av en ny detaljhandelskanal.</span><span class="sxs-lookup"><span data-stu-id="048c4-126">The following image shows the creation of a new retail channel.</span></span>
 
 ![Ny detaljhandelskanal](media/channel-setup-retail-1.png)
 
-<span data-ttu-id="04f2d-128">Bildet nedenfor viser et eksempel på en detaljhandelskanal.</span><span class="sxs-lookup"><span data-stu-id="04f2d-128">The following image shows an example retail channel.</span></span>
+<span data-ttu-id="048c4-128">Bildet nedenfor viser et eksempel på en detaljhandelskanal.</span><span class="sxs-lookup"><span data-stu-id="048c4-128">The following image shows an example retail channel.</span></span>
 
 ![Eksempel på detaljhandelskanal](media/channel-setup-retail-2.png)
 
-## <a name="other-settings"></a><span data-ttu-id="04f2d-130">Andre innstillinger</span><span class="sxs-lookup"><span data-stu-id="04f2d-130">Other settings</span></span>
+## <a name="other-settings"></a><span data-ttu-id="048c4-130">Andre innstillinger</span><span class="sxs-lookup"><span data-stu-id="048c4-130">Other settings</span></span>
 
-<span data-ttu-id="04f2d-131">Det finnes mange andre valgfrie innstillinger som kan angis i delene **Utdrag/avslutning/** og **Diverse**, basert på behovene til detaljhandelsbutikken.</span><span class="sxs-lookup"><span data-stu-id="04f2d-131">There are numerous other optional settings that can be set in the **Statement/closing** and **Miscellaneous** sections, based on the needs of the retail store.</span></span>
+<span data-ttu-id="048c4-131">Det finnes mange andre valgfrie innstillinger som kan angis i delene **Utdrag/avslutning/** og **Diverse**, basert på behovene til detaljhandelsbutikken.</span><span class="sxs-lookup"><span data-stu-id="048c4-131">There are numerous other optional settings that can be set in the **Statement/closing** and **Miscellaneous** sections, based on the needs of the retail store.</span></span>
 
-<span data-ttu-id="04f2d-132">I tillegg kan du se [Skjermoppsett for salgssted](pos-screen-layouts.md) for informasjon om hvordan du konfigurerer standard skjermoppsett i delen **Skjermoppsett**, og [Konfigurere og installere Retail Hardware Station](retail-hardware-station-configuration-installation.md) for konfigurasjonsinformasjon om delen **Maskinvarestasjoner**.</span><span class="sxs-lookup"><span data-stu-id="04f2d-132">In addition, see [Screen layouts for the point of sale (POS)](pos-screen-layouts.md) for information on setting up the default screen layout in the **Screen layout** section and [Configure and install Retail hardware station](retail-hardware-station-configuration-installation.md) for setup information about the **Hardware stations** section.</span></span>
+<span data-ttu-id="048c4-132">I tillegg kan du se [Skjermoppsett for salgssted](pos-screen-layouts.md) for informasjon om hvordan du konfigurerer standard skjermoppsett i delen **Skjermoppsett**, og [Konfigurere og installere Retail Hardware Station](retail-hardware-station-configuration-installation.md) for konfigurasjonsinformasjon om delen **Maskinvarestasjoner**.</span><span class="sxs-lookup"><span data-stu-id="048c4-132">In addition, see [Screen layouts for the point of sale (POS)](pos-screen-layouts.md) for information on setting up the default screen layout in the **Screen layout** section and [Configure and install Retail hardware station](retail-hardware-station-configuration-installation.md) for setup information about the **Hardware stations** section.</span></span>
 
-<span data-ttu-id="04f2d-133">Bildet nedenfor viser et eksempel på en konfigurasjon av et detaljhandelskanaloppsett.</span><span class="sxs-lookup"><span data-stu-id="04f2d-133">The following image shows an example retail channel setup configuration.</span></span>
+<span data-ttu-id="048c4-133">Bildet nedenfor viser et eksempel på en konfigurasjon av et detaljhandelskanaloppsett.</span><span class="sxs-lookup"><span data-stu-id="048c4-133">The following image shows an example retail channel setup configuration.</span></span>
 
 ![Eksempel på konfigurasjon av detaljhandelskanal](media/channel-setup-retail-3.png)
 
-## <a name="additional-channel-set-up"></a><span data-ttu-id="04f2d-135">Ekstra kanaloppsett</span><span class="sxs-lookup"><span data-stu-id="04f2d-135">Additional channel set up</span></span>
+## <a name="additional-channel-set-up"></a><span data-ttu-id="048c4-135">Ekstra kanaloppsett</span><span class="sxs-lookup"><span data-stu-id="048c4-135">Additional channel set up</span></span>
 
-<span data-ttu-id="04f2d-136">Du finner flere elementer som må konfigureres for en kanal, i **handlingsruten** under **Oppsett**-delen.</span><span class="sxs-lookup"><span data-stu-id="04f2d-136">There are additional items that need to be set up for a channel that can be found on the **Action pane** under the **Set up** section.</span></span>
+<span data-ttu-id="048c4-136">Du finner flere elementer som må konfigureres for en kanal, i handlingsruten under **Oppsett**-delen.</span><span class="sxs-lookup"><span data-stu-id="048c4-136">There are additional items that need to be set up for a channel that can be found on the Action Pane under the **Set up** section.</span></span>
 
-<span data-ttu-id="04f2d-137">Andre oppgaver som kreves for oppsett av Internett-kanal, omfatter definere betalingsmåter, kontantoppgjør, leveringsmåter, inntekts-/utgiftskonto, inndelinger, gruppetilordning for oppfyllelse og safer.</span><span class="sxs-lookup"><span data-stu-id="04f2d-137">Additional tasks required for online channel setup include setting up payment methods, cash declaration, modes of delivery, income/expense account, sections, the fulfillment group assignment, and safes.</span></span>
+<span data-ttu-id="048c4-137">Andre oppgaver som kreves for oppsett av Internett-kanal, omfatter definere betalingsmåter, kontantoppgjør, leveringsmåter, inntekts-/utgiftskonto, inndelinger, gruppetilordning for oppfyllelse og safer.</span><span class="sxs-lookup"><span data-stu-id="048c4-137">Additional tasks required for online channel setup include setting up payment methods, cash declaration, modes of delivery, income/expense account, sections, the fulfillment group assignment, and safes.</span></span>
 
-<span data-ttu-id="04f2d-138">Følgende bilde viser diverse tilleggsalternativer for detaljhandelskanaloppsett i kategorien **Oppsett**.</span><span class="sxs-lookup"><span data-stu-id="04f2d-138">The following image shows various additional retail channel setup options on the **Set up** tab.</span></span>
+<span data-ttu-id="048c4-138">Følgende bilde viser diverse tilleggsalternativer for detaljhandelskanaloppsett i kategorien **Oppsett**.</span><span class="sxs-lookup"><span data-stu-id="048c4-138">The following image shows various additional retail channel setup options on the **Set up** tab.</span></span>
 
 ![Definere kanal](media/channel-setup-retail-4.png)
 
-### <a name="set-up-payment-methods"></a><span data-ttu-id="04f2d-140">Definere betalingsmåter</span><span class="sxs-lookup"><span data-stu-id="04f2d-140">Set up payment methods</span></span>
+### <a name="set-up-payment-methods"></a><span data-ttu-id="048c4-140">Definere betalingsmåter</span><span class="sxs-lookup"><span data-stu-id="048c4-140">Set up payment methods</span></span>
 
-<span data-ttu-id="04f2d-141">Hvis du vil definere betalingsmåter, følger du disse trinnene for hver betalingstype som støttes på denne kanalen.</span><span class="sxs-lookup"><span data-stu-id="04f2d-141">To set up payment methods, for each payment type supported on this channel follow these steps.</span></span>
+<span data-ttu-id="048c4-141">Hvis du vil definere betalingsmåter, følger du disse trinnene for hver betalingstype som støttes på denne kanalen.</span><span class="sxs-lookup"><span data-stu-id="048c4-141">To set up payment methods, for each payment type supported on this channel follow these steps.</span></span>
 
-1. <span data-ttu-id="04f2d-142">I handlingsruten velger du kategorien **Oppsett** og deretter **Betalingsmåter**.</span><span class="sxs-lookup"><span data-stu-id="04f2d-142">On the action pane, select the **Set Up** tab, then select **Payment methods**.</span></span>
-1. <span data-ttu-id="04f2d-143">I handlingsruten velger du **Ny**.</span><span class="sxs-lookup"><span data-stu-id="04f2d-143">On the action pane, select **New**.</span></span>
-1. <span data-ttu-id="04f2d-144">Velg en ønsket betalingsmåte i navigasjonsruten.</span><span class="sxs-lookup"><span data-stu-id="04f2d-144">In the navigation pane, select a desired payment method.</span></span>
-1. <span data-ttu-id="04f2d-145">I delen **Generelt** angir du et **operasjonsnavn** og konfigurerer eventuelle andre ønskede innstillinger.</span><span class="sxs-lookup"><span data-stu-id="04f2d-145">In the **General** section, provide an **Operation name** and configure any other desired settings.</span></span>
-1. <span data-ttu-id="04f2d-146">Konfigurer eventuelle tilleggsinnstillinger som kreves for betalingstypen.</span><span class="sxs-lookup"><span data-stu-id="04f2d-146">Configure any additional settings as required for the payment type.</span></span>
-1. <span data-ttu-id="04f2d-147">Velg **Lagre** i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="04f2d-147">On the action pane, select **Save**.</span></span>
+1. <span data-ttu-id="048c4-142">I handlingsruten velger du kategorien **Oppsett** og deretter **Betalingsmåter**.</span><span class="sxs-lookup"><span data-stu-id="048c4-142">On the Action Pane, select the **Set Up** tab, then select **Payment methods**.</span></span>
+1. <span data-ttu-id="048c4-143">Velg **Ny** i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="048c4-143">On the Action Pane, select **New**.</span></span>
+1. <span data-ttu-id="048c4-144">Velg en ønsket betalingsmåte i navigasjonsruten.</span><span class="sxs-lookup"><span data-stu-id="048c4-144">In the navigation pane, select a desired payment method.</span></span>
+1. <span data-ttu-id="048c4-145">I delen **Generelt** angir du et **operasjonsnavn** og konfigurerer eventuelle andre ønskede innstillinger.</span><span class="sxs-lookup"><span data-stu-id="048c4-145">In the **General** section, provide an **Operation name** and configure any other desired settings.</span></span>
+1. <span data-ttu-id="048c4-146">Konfigurer eventuelle tilleggsinnstillinger som kreves for betalingstypen.</span><span class="sxs-lookup"><span data-stu-id="048c4-146">Configure any additional settings as required for the payment type.</span></span>
+1. <span data-ttu-id="048c4-147">Velg **Lagre** i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="048c4-147">On the Action Pane, select **Save**.</span></span>
 
-<span data-ttu-id="04f2d-148">Bildet nedenfor viser et eksempel på en kontantbetalingsmåte.</span><span class="sxs-lookup"><span data-stu-id="04f2d-148">The following image shows an example of a cash payment method.</span></span>
+<span data-ttu-id="048c4-148">Bildet nedenfor viser et eksempel på en kontantbetalingsmåte.</span><span class="sxs-lookup"><span data-stu-id="048c4-148">The following image shows an example of a cash payment method.</span></span>
 
 ![Eksempel på betalingsmåter](media/channel-setup-retail-5.png)
 
-### <a name="set-up-cash-declaration"></a><span data-ttu-id="04f2d-150">Definere kKontantoppgjør</span><span class="sxs-lookup"><span data-stu-id="04f2d-150">Set up cash declaration</span></span>
+### <a name="set-up-cash-declaration"></a><span data-ttu-id="048c4-150">Definere kKontantoppgjør</span><span class="sxs-lookup"><span data-stu-id="048c4-150">Set up cash declaration</span></span>
 
-1. <span data-ttu-id="04f2d-151">I handlingsruten velger du kategorien **Oppsett** og deretter **Kontantoppgjør**.</span><span class="sxs-lookup"><span data-stu-id="04f2d-151">On the action pane, select the **Set Up** tab, and then select **Cash declaration**.</span></span>
-1. <span data-ttu-id="04f2d-152">Velg **Ny** i handlings ruten, og opprett deretter alle aktuelle **Mynt**- og **Seddel**-størrelser.</span><span class="sxs-lookup"><span data-stu-id="04f2d-152">On the action pane, select **New**, and then create all **Coin** and **Note** denominations that are applicable.</span></span>
+1. <span data-ttu-id="048c4-151">I handlingsruten velger du kategorien **Oppsett** og deretter **Kontantoppgjør**.</span><span class="sxs-lookup"><span data-stu-id="048c4-151">On the Action Pane, select the **Set Up** tab, and then select **Cash declaration**.</span></span>
+1. <span data-ttu-id="048c4-152">Velg **Ny** i handlingsruten, og opprett deretter alle aktuelle **Mynt**- og **Seddel**-størrelser.</span><span class="sxs-lookup"><span data-stu-id="048c4-152">On the Action Pane, select **New**, and then create all **Coin** and **Note** denominations that are applicable.</span></span>
 
-<span data-ttu-id="04f2d-153">Bildet nedenfor viser et eksempel på et kontantoppgjør.</span><span class="sxs-lookup"><span data-stu-id="04f2d-153">The following image shows an example of a cash declaration.</span></span>
+<span data-ttu-id="048c4-153">Bildet nedenfor viser et eksempel på et kontantoppgjør.</span><span class="sxs-lookup"><span data-stu-id="048c4-153">The following image shows an example of a cash declaration.</span></span>
 
 ![Definere kontantoppgjør](media/channel-setup-retail-6.png)
 
-### <a name="set-up-modes-of-delivery"></a><span data-ttu-id="04f2d-155">Definer leveringsmåter</span><span class="sxs-lookup"><span data-stu-id="04f2d-155">Set up modes of delivery</span></span>
+### <a name="set-up-modes-of-delivery"></a><span data-ttu-id="048c4-155">Definer leveringsmåter</span><span class="sxs-lookup"><span data-stu-id="048c4-155">Set up modes of delivery</span></span>
 
-<span data-ttu-id="04f2d-156">Du kan se de konfigurerte leveringsmåtene ved å velge **Leveringsmåter** fra kategorien **Oppsett** i **handlingsruten**.</span><span class="sxs-lookup"><span data-stu-id="04f2d-156">You can see the configured modes of delivery by selecting **Modes of delivery** from the **Set up** tab on the **Action pane**.</span></span>  
+<span data-ttu-id="048c4-156">Du kan se de konfigurerte leveringsmåtene ved å velge **Leveringsmåter** fra kategorien **Oppsett** i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="048c4-156">You can see the configured modes of delivery by selecting **Modes of delivery** from the **Set up** tab on the Action Pane.</span></span>  
 
-<span data-ttu-id="04f2d-157">Hvis du vil endre eller legge til en leveringsmåte, følger du disse trinnene.</span><span class="sxs-lookup"><span data-stu-id="04f2d-157">To change or add a mode of delivery, follow these steps.</span></span>
+<span data-ttu-id="048c4-157">Hvis du vil endre eller legge til en leveringsmåte, følger du disse trinnene.</span><span class="sxs-lookup"><span data-stu-id="048c4-157">To change or add a mode of delivery, follow these steps.</span></span>
 
-1. <span data-ttu-id="04f2d-158">I navigasjonsruten går du til **Moduler \> Lagerstyring \> Leveringsmåter**.</span><span class="sxs-lookup"><span data-stu-id="04f2d-158">In the navigation pane, go to **Modules \> Inventory management \> Modes of delivery**.</span></span>
-1. <span data-ttu-id="04f2d-159">Velg **Ny** i handlingsruten for å opprette en ny leveringsmåte, eller velg en eksisterende måte.</span><span class="sxs-lookup"><span data-stu-id="04f2d-159">On the action pane, select **New** to create a new mode of delivery, or select an existing mode.</span></span>
-1. <span data-ttu-id="04f2d-160">I delen **Detaljhandelskanaler** velger du **Legg til linje** for å legge til kanalen.</span><span class="sxs-lookup"><span data-stu-id="04f2d-160">In the **Retail channels** section, select **Add line** to add the channel.</span></span> <span data-ttu-id="04f2d-161">Legge til kanaler ved hjelp av organisasjonsnoder i stedet for å legge til hver kanal for seg, kan effektivisere tillegg av kanaler</span><span class="sxs-lookup"><span data-stu-id="04f2d-161">Adding channels using organization nodes instead of adding each channel individually can streamline adding channels.</span></span>
+1. <span data-ttu-id="048c4-158">I navigasjonsruten går du til **Moduler \> Lagerstyring \> Leveringsmåter**.</span><span class="sxs-lookup"><span data-stu-id="048c4-158">In the navigation pane, go to **Modules \> Inventory management \> Modes of delivery**.</span></span>
+1. <span data-ttu-id="048c4-159">Velg **Ny** i handlingsruten for å opprette en ny leveringsmåte, eller velg en eksisterende måte.</span><span class="sxs-lookup"><span data-stu-id="048c4-159">On the Action Pane, select **New** to create a new mode of delivery, or select an existing mode.</span></span>
+1. <span data-ttu-id="048c4-160">I delen **Detaljhandelskanaler** velger du **Legg til linje** for å legge til kanalen.</span><span class="sxs-lookup"><span data-stu-id="048c4-160">In the **Retail channels** section, select **Add line** to add the channel.</span></span> <span data-ttu-id="048c4-161">Legge til kanaler ved hjelp av organisasjonsnoder i stedet for å legge til hver kanal for seg, kan effektivisere tillegg av kanaler</span><span class="sxs-lookup"><span data-stu-id="048c4-161">Adding channels using organization nodes instead of adding each channel individually can streamline adding channels.</span></span>
 
-<span data-ttu-id="04f2d-162">Bildet nedenfor viser et eksempel på en leveringsmåte.</span><span class="sxs-lookup"><span data-stu-id="04f2d-162">The following image shows an example of a mode of delivery.</span></span>
+<span data-ttu-id="048c4-162">Bildet nedenfor viser et eksempel på en leveringsmåte.</span><span class="sxs-lookup"><span data-stu-id="048c4-162">The following image shows an example of a mode of delivery.</span></span>
 
 ![Definer leveringsmåter](media/channel-setup-retail-7.png)
 
-### <a name="set-up-incomeexpense-account"></a><span data-ttu-id="04f2d-164">Definere inntekts-/utgiftskonto</span><span class="sxs-lookup"><span data-stu-id="04f2d-164">Set up income/expense account</span></span>
+### <a name="set-up-incomeexpense-account"></a><span data-ttu-id="048c4-164">Definere inntekts-/utgiftskonto</span><span class="sxs-lookup"><span data-stu-id="048c4-164">Set up income/expense account</span></span>
 
-<span data-ttu-id="04f2d-165">Gjør følgende for å konfigurere en inntekts-/utgiftskonto.</span><span class="sxs-lookup"><span data-stu-id="04f2d-165">To set up income/expense account, follow these steps.</span></span>
+<span data-ttu-id="048c4-165">Gjør følgende for å konfigurere en inntekts-/utgiftskonto.</span><span class="sxs-lookup"><span data-stu-id="048c4-165">To set up income/expense account, follow these steps.</span></span>
 
-1. <span data-ttu-id="04f2d-166">I handlingsruten velger du kategorien **Oppsett** og deretter **Inntekts-/utgiftskonto**.</span><span class="sxs-lookup"><span data-stu-id="04f2d-166">On the action pane, select the **Set Up** tab, and then select **Income/Expense account**.</span></span>
-1. <span data-ttu-id="04f2d-167">I handlingsruten velger du **Ny**.</span><span class="sxs-lookup"><span data-stu-id="04f2d-167">On the action pane, select **New**.</span></span>
-1. <span data-ttu-id="04f2d-168">Under **Navn** skriver du inn et navn.</span><span class="sxs-lookup"><span data-stu-id="04f2d-168">Under **Name**, enter a name.</span></span>
-1. <span data-ttu-id="04f2d-169">Under **Søkenavn** skriver du inn et søkenavn.</span><span class="sxs-lookup"><span data-stu-id="04f2d-169">Under **Search name**, enter a search name.</span></span>
-1. <span data-ttu-id="04f2d-170">Under **Kontotype** angir du kontotypen.</span><span class="sxs-lookup"><span data-stu-id="04f2d-170">Under **Account type**, enter the account type.</span></span>
-1. <span data-ttu-id="04f2d-171">Skriv inn tekst for **Meldingslinje 1**, **Meldingslinje 2**, **Bilagstekst 1** og **Bilagstekst 2** etter behov.</span><span class="sxs-lookup"><span data-stu-id="04f2d-171">Enter text for **Message line 1**, **Message line 2**, **Slip text 1**, and **Slip text 2** as needed.</span></span>
-1. <span data-ttu-id="04f2d-172">Angi posteringsinformasjon under **Postering**.</span><span class="sxs-lookup"><span data-stu-id="04f2d-172">Under **Posting**, enter posting information.</span></span>
-1. <span data-ttu-id="04f2d-173">Velg **Lagre** i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="04f2d-173">On the action pane, select **Save**.</span></span>
+1. <span data-ttu-id="048c4-166">I handlingsruten velger du kategorien **Oppsett** og deretter **Inntekts-/utgiftskonto**.</span><span class="sxs-lookup"><span data-stu-id="048c4-166">On the Action Pane, select the **Set Up** tab, and then select **Income/Expense account**.</span></span>
+1. <span data-ttu-id="048c4-167">Velg **Ny** i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="048c4-167">On the Action Pane, select **New**.</span></span>
+1. <span data-ttu-id="048c4-168">Under **Navn** skriver du inn et navn.</span><span class="sxs-lookup"><span data-stu-id="048c4-168">Under **Name**, enter a name.</span></span>
+1. <span data-ttu-id="048c4-169">Under **Søkenavn** skriver du inn et søkenavn.</span><span class="sxs-lookup"><span data-stu-id="048c4-169">Under **Search name**, enter a search name.</span></span>
+1. <span data-ttu-id="048c4-170">Under **Kontotype** angir du kontotypen.</span><span class="sxs-lookup"><span data-stu-id="048c4-170">Under **Account type**, enter the account type.</span></span>
+1. <span data-ttu-id="048c4-171">Skriv inn tekst for **Meldingslinje 1**, **Meldingslinje 2**, **Bilagstekst 1** og **Bilagstekst 2** etter behov.</span><span class="sxs-lookup"><span data-stu-id="048c4-171">Enter text for **Message line 1**, **Message line 2**, **Slip text 1**, and **Slip text 2** as needed.</span></span>
+1. <span data-ttu-id="048c4-172">Angi posteringsinformasjon under **Postering**.</span><span class="sxs-lookup"><span data-stu-id="048c4-172">Under **Posting**, enter posting information.</span></span>
+1. <span data-ttu-id="048c4-173">Velg **Lagre** i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="048c4-173">On the Action Pane, select **Save**.</span></span>
 
-<span data-ttu-id="04f2d-174">Bildet nedenfor viser et eksempel på en inntekts/utgiftskonto.</span><span class="sxs-lookup"><span data-stu-id="04f2d-174">The following image shows an example of an income/expense account.</span></span>
+<span data-ttu-id="048c4-174">Bildet nedenfor viser et eksempel på en inntekts/utgiftskonto.</span><span class="sxs-lookup"><span data-stu-id="048c4-174">The following image shows an example of an income/expense account.</span></span>
 
 ![Definere inntekts-/utgiftskontoer](media/channel-setup-retail-8.png)
 
-### <a name="set-up-sections"></a><span data-ttu-id="04f2d-176">Definere seksjoner</span><span class="sxs-lookup"><span data-stu-id="04f2d-176">Set up sections</span></span>
+### <a name="set-up-sections"></a><span data-ttu-id="048c4-176">Definere seksjoner</span><span class="sxs-lookup"><span data-stu-id="048c4-176">Set up sections</span></span>
 
-<span data-ttu-id="04f2d-177">Gjør følgende for å konfigurere seksjoner.</span><span class="sxs-lookup"><span data-stu-id="04f2d-177">To set up sections, follow these steps.</span></span>
+<span data-ttu-id="048c4-177">Gjør følgende for å konfigurere seksjoner.</span><span class="sxs-lookup"><span data-stu-id="048c4-177">To set up sections, follow these steps.</span></span>
 
-1. <span data-ttu-id="04f2d-178">I handlingsruten velger du kategorien **Oppsett** og klikker deretter **Seksjoner**.</span><span class="sxs-lookup"><span data-stu-id="04f2d-178">On the action pane, select the **Set Up** tab and click **Sections**.</span></span>
-1. <span data-ttu-id="04f2d-179">I handlingsruten velger du **Ny**.</span><span class="sxs-lookup"><span data-stu-id="04f2d-179">On the action pane, select **New**.</span></span>
-1. <span data-ttu-id="04f2d-180">Under **Seksjonsnummer** angir du et seksjonsnummer.</span><span class="sxs-lookup"><span data-stu-id="04f2d-180">Under **Section number**, enter a section number.</span></span>
-1. <span data-ttu-id="04f2d-181">Angi en beskrivelse under **Beskrivelse**.</span><span class="sxs-lookup"><span data-stu-id="04f2d-181">Under **Description**, enter a description.</span></span>
-1. <span data-ttu-id="04f2d-182">Under **Seksjonsstørrelse** angir du en seksjonsstørrelse.</span><span class="sxs-lookup"><span data-stu-id="04f2d-182">Under **Section size**, enter a section size.</span></span>
-1. <span data-ttu-id="04f2d-183">Konfigurer tilleggsinnstillinger for **Generelt** og **Salgsstatistikk** etter behov.</span><span class="sxs-lookup"><span data-stu-id="04f2d-183">Configure additional settings for **General** and **Sales statistics** as needed.</span></span>
-1. <span data-ttu-id="04f2d-184">Velg **Lagre** i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="04f2d-184">On the action pane, select **Save**.</span></span>
+1. <span data-ttu-id="048c4-178">I handlingsruten velger du kategorien **Oppsett** og klikker deretter **Seksjoner**.</span><span class="sxs-lookup"><span data-stu-id="048c4-178">On the Action Pane, select the **Set Up** tab and click **Sections**.</span></span>
+1. <span data-ttu-id="048c4-179">Velg **Ny** i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="048c4-179">On the Action Pane, select **New**.</span></span>
+1. <span data-ttu-id="048c4-180">Under **Seksjonsnummer** angir du et seksjonsnummer.</span><span class="sxs-lookup"><span data-stu-id="048c4-180">Under **Section number**, enter a section number.</span></span>
+1. <span data-ttu-id="048c4-181">Angi en beskrivelse under **Beskrivelse**.</span><span class="sxs-lookup"><span data-stu-id="048c4-181">Under **Description**, enter a description.</span></span>
+1. <span data-ttu-id="048c4-182">Under **Seksjonsstørrelse** angir du en seksjonsstørrelse.</span><span class="sxs-lookup"><span data-stu-id="048c4-182">Under **Section size**, enter a section size.</span></span>
+1. <span data-ttu-id="048c4-183">Konfigurer tilleggsinnstillinger for **Generelt** og **Salgsstatistikk** etter behov.</span><span class="sxs-lookup"><span data-stu-id="048c4-183">Configure additional settings for **General** and **Sales statistics** as needed.</span></span>
+1. <span data-ttu-id="048c4-184">Velg **Lagre** i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="048c4-184">On the Action Pane, select **Save**.</span></span>
 
-### <a name="set-up-a-fulfillment-group-assignment"></a><span data-ttu-id="04f2d-185">Definere en gruppetilordning for oppfyllelse</span><span class="sxs-lookup"><span data-stu-id="04f2d-185">Set up a fulfillment group assignment</span></span>
+### <a name="set-up-a-fulfillment-group-assignment"></a><span data-ttu-id="048c4-185">Definere en gruppetilordning for oppfyllelse</span><span class="sxs-lookup"><span data-stu-id="048c4-185">Set up a fulfillment group assignment</span></span>
 
-<span data-ttu-id="04f2d-186">Hvis du vil konfigurere en gruppetilordning for oppfyllelse, gjør du følgende.</span><span class="sxs-lookup"><span data-stu-id="04f2d-186">To set up a fulfillment group assignment, follow these steps.</span></span>
+<span data-ttu-id="048c4-186">Hvis du vil konfigurere en gruppetilordning for oppfyllelse, gjør du følgende.</span><span class="sxs-lookup"><span data-stu-id="048c4-186">To set up a fulfillment group assignment, follow these steps.</span></span>
 
-1. <span data-ttu-id="04f2d-187">I handlingsruten velger du kategorien **Oppsett** og deretter **Gruppetilordning for oppfyllelse**.</span><span class="sxs-lookup"><span data-stu-id="04f2d-187">On the action pane, select the **Set up** tab, then select **Fulfillment group assignment**.</span></span>
-1. <span data-ttu-id="04f2d-188">I handlingsruten velger du **Ny**.</span><span class="sxs-lookup"><span data-stu-id="04f2d-188">On the action pane, select **New**.</span></span>
-1. <span data-ttu-id="04f2d-189">I rullegardinlisten **Oppfyllelsesgruppe** velger du en oppfyllelsesgruppe.</span><span class="sxs-lookup"><span data-stu-id="04f2d-189">In the **Fulfillment group** drop-down list, select a fulfillment group.</span></span>
-1. <span data-ttu-id="04f2d-190">Angi en beskrivelse i rullegardinlisten **Beskrivelse**.</span><span class="sxs-lookup"><span data-stu-id="04f2d-190">In the **Description** drop-down list, enter a description.</span></span>
-1. <span data-ttu-id="04f2d-191">Velg **Lagre** i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="04f2d-191">On the action pane, select **Save**</span></span>
+1. <span data-ttu-id="048c4-187">I handlingsruten velger du kategorien **Oppsett** og deretter **Gruppetilordning for oppfyllelse**.</span><span class="sxs-lookup"><span data-stu-id="048c4-187">On the Action Pane, select the **Set up** tab, then select **Fulfillment group assignment**.</span></span>
+1. <span data-ttu-id="048c4-188">Velg **Ny** i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="048c4-188">On the Action Pane, select **New**.</span></span>
+1. <span data-ttu-id="048c4-189">I rullegardinlisten **Oppfyllelsesgruppe** velger du en oppfyllelsesgruppe.</span><span class="sxs-lookup"><span data-stu-id="048c4-189">In the **Fulfillment group** drop-down list, select a fulfillment group.</span></span>
+1. <span data-ttu-id="048c4-190">Angi en beskrivelse i rullegardinlisten **Beskrivelse**.</span><span class="sxs-lookup"><span data-stu-id="048c4-190">In the **Description** drop-down list, enter a description.</span></span>
+1. <span data-ttu-id="048c4-191">Velg **Lagre** i handlingsruten</span><span class="sxs-lookup"><span data-stu-id="048c4-191">On the Action Pane, select **Save**</span></span>
 
-<span data-ttu-id="04f2d-192">Det følgende bildet viser et eksempel på et oppsett for gruppetilordning for oppfyllelse.</span><span class="sxs-lookup"><span data-stu-id="04f2d-192">The following image shows an example of a fulfillment group assignment setup.</span></span>
+<span data-ttu-id="048c4-192">Det følgende bildet viser et eksempel på et oppsett for gruppetilordning for oppfyllelse.</span><span class="sxs-lookup"><span data-stu-id="048c4-192">The following image shows an example of a fulfillment group assignment setup.</span></span>
 
 ![Definere gruppetilordninger for oppfyllelse](media/channel-setup-retail-9.png)
 
-### <a name="set-up-safes"></a><span data-ttu-id="04f2d-194">Definere safer</span><span class="sxs-lookup"><span data-stu-id="04f2d-194">Set up safes</span></span>
+### <a name="set-up-safes"></a><span data-ttu-id="048c4-194">Definere safer</span><span class="sxs-lookup"><span data-stu-id="048c4-194">Set up safes</span></span>
 
-<span data-ttu-id="04f2d-195">Gjør følgende for å konfigurere safer.</span><span class="sxs-lookup"><span data-stu-id="04f2d-195">To set up safes, follow these steps.</span></span>
+<span data-ttu-id="048c4-195">Gjør følgende for å konfigurere safer.</span><span class="sxs-lookup"><span data-stu-id="048c4-195">To set up safes, follow these steps.</span></span>
 
-1. <span data-ttu-id="04f2d-196">I handlingsruten velger du kategorien **Oppsett** og klikker deretter **Safer**.</span><span class="sxs-lookup"><span data-stu-id="04f2d-196">On the action pane, select the **Set Up** tab and click **Safes**.</span></span>
-1. <span data-ttu-id="04f2d-197">I handlingsruten velger du **Ny**.</span><span class="sxs-lookup"><span data-stu-id="04f2d-197">On the action pane, select **New**.</span></span>
-1. <span data-ttu-id="04f2d-198">Angi et navn for safen.</span><span class="sxs-lookup"><span data-stu-id="04f2d-198">Enter a name for the safe.</span></span>
-1. <span data-ttu-id="04f2d-199">Velg **Lagre** i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="04f2d-199">On the action pane, select **Save**.</span></span>
+1. <span data-ttu-id="048c4-196">I handlingsruten velger du kategorien **Oppsett** og klikker deretter **Safer**.</span><span class="sxs-lookup"><span data-stu-id="048c4-196">On the Action Pane, select the **Set Up** tab and click **Safes**.</span></span>
+1. <span data-ttu-id="048c4-197">Velg **Ny** i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="048c4-197">On the Action Pane, select **New**.</span></span>
+1. <span data-ttu-id="048c4-198">Angi et navn for safen.</span><span class="sxs-lookup"><span data-stu-id="048c4-198">Enter a name for the safe.</span></span>
+1. <span data-ttu-id="048c4-199">Velg **Lagre** i handlingsruten.</span><span class="sxs-lookup"><span data-stu-id="048c4-199">On the Action Pane, select **Save**.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="04f2d-200">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="04f2d-200">Additional resources</span></span>
+### <a name="ensure-unique-transaction-ids"></a><span data-ttu-id="048c4-200">Sikre unike transaksjons-IDer</span><span class="sxs-lookup"><span data-stu-id="048c4-200">Ensure unique transaction IDs</span></span>
 
-[<span data-ttu-id="04f2d-201">Oversikt over kanaler</span><span class="sxs-lookup"><span data-stu-id="04f2d-201">Channels overview</span></span>](channels-overview.md)
+<span data-ttu-id="048c4-201">Når det gjelder Commerce versjon 10.0.18, er transaksjons-IDer som genereres for salgsstedet (POS), sekvensielle, og omfatter følgende deler:</span><span class="sxs-lookup"><span data-stu-id="048c4-201">As of the Commerce version 10.0.18 , transaction IDs generated for the point of sale (POS) are sequential and include the following parts:</span></span>
 
-[<span data-ttu-id="04f2d-202">Forutsetninger for kanaloppsett</span><span class="sxs-lookup"><span data-stu-id="04f2d-202">Channel setup prerequisites</span></span>](channels-prerequisites.md)
+- <span data-ttu-id="048c4-202">En fast del, som er en sammenslåing av butikk-ID og terminal-ID.</span><span class="sxs-lookup"><span data-stu-id="048c4-202">A fixed part, which is a concatenation of store ID and terminal ID.</span></span> 
+- <span data-ttu-id="048c4-203">En sekvensiell del, som er en nummerserie.</span><span class="sxs-lookup"><span data-stu-id="048c4-203">A sequential part, which is a number sequence.</span></span> 
 
-[<span data-ttu-id="04f2d-203">Definere en Internett-kanal</span><span class="sxs-lookup"><span data-stu-id="04f2d-203">Set up an online channel</span></span>](channel-setup-online.md)
+<span data-ttu-id="048c4-204">Nærmere bestemt er formatet *{store}-{terminal}-{numbersequence}*.</span><span class="sxs-lookup"><span data-stu-id="048c4-204">Specifically, the format is *{store}-{terminal}-{numbersequence}*.</span></span> 
 
-[<span data-ttu-id="04f2d-204">Definere en telefonsenterkanal</span><span class="sxs-lookup"><span data-stu-id="04f2d-204">Set up a call center channel</span></span>](channel-setup-callcenter.md)
+<span data-ttu-id="048c4-205">Fordi transaksjons-IDer kan genereres i frakoblede og elektroniske moduser, har det forekommet generering av dupliserte transaksjons-IDer.</span><span class="sxs-lookup"><span data-stu-id="048c4-205">Because transaction IDs can be generated in offline and online modes, there have been instances of duplicate transaction IDs being generated.</span></span> <span data-ttu-id="048c4-206">Eliminering av duplikate transaksjons-IDer krever manuell datafiksing.</span><span class="sxs-lookup"><span data-stu-id="048c4-206">Eliminating duplicate transaction IDs requires a lot of manual data fixing.</span></span> 
+
+<span data-ttu-id="048c4-207">Med Commerce versjon 10.0.19 er formatet for transaksjons-ID oppdatert for å fjerne den sekvensielle delen, og i stedet brukes et 13-sifret nummer som genereres ved å beregne tiden i millisekunder siden 1970.</span><span class="sxs-lookup"><span data-stu-id="048c4-207">With Commerce version 10.0.19, the transaction ID format has been updated to remove the sequential part and instead uses a 13-digit number generated by calculating the time in milliseconds since 1970.</span></span> <span data-ttu-id="048c4-208">Med denne endringen er det nye transaksjons-ID-formatet *{store}-{terminal}-{millisecondsSince1970}*.</span><span class="sxs-lookup"><span data-stu-id="048c4-208">With this change, the new transaction ID format is *{store}-{terminal}-{millisecondsSince1970}*.</span></span> <span data-ttu-id="048c4-209">Denne oppdateringen gjør transaksjons-IDen ikke-sekvensiell og sikrer at transaksjons-IDer alltid er unike.</span><span class="sxs-lookup"><span data-stu-id="048c4-209">This update makes the transaction ID non-sequential and ensures that transaction IDs are always unique.</span></span> 
+
+> [!NOTE]
+> <span data-ttu-id="048c4-210">Transaksjons-IDer er bare beregnet for bruk av interne systemer, så de må ikke være sekvensielle.</span><span class="sxs-lookup"><span data-stu-id="048c4-210">Transaction IDs are meant for internal system use only, so they are not required to be sequential.</span></span> <span data-ttu-id="048c4-211">Mange land krever imidlertid at mottaks-IDer er sekvensielle.</span><span class="sxs-lookup"><span data-stu-id="048c4-211">However, many countries require receipt IDs to be sequential.</span></span>
+
+<span data-ttu-id="048c4-212">Den nye funksjonen for transaksjons-ID-format kan aktiveres fra arbeidsområdet for **Funksjonsbehandling**.</span><span class="sxs-lookup"><span data-stu-id="048c4-212">The new transaction ID format feature can be enabled from the **Feature management** workspace.</span></span> 
+
+<span data-ttu-id="048c4-213">Følg denne fremgangsmåten for å aktivere bruk av nye transaksjons-IDer:</span><span class="sxs-lookup"><span data-stu-id="048c4-213">To enable the use of new transaction IDs, follow these steps:</span></span>
+
+1. <span data-ttu-id="048c4-214">I Commerce headquarters går du til **Systemadministrasjon \> Arbeidsområder \> Funksjonsbehandling**.</span><span class="sxs-lookup"><span data-stu-id="048c4-214">In Commerce headquarters, go to **System administration \> Workspaces \> Feature management**.</span></span>
+1. <span data-ttu-id="048c4-215">Filter for "Retail og Commerce"-modulen.</span><span class="sxs-lookup"><span data-stu-id="048c4-215">Filter for the "retail and commerce" module.</span></span>
+1. <span data-ttu-id="048c4-216">Søk etter funksjonsnavnet **Aktiver ny transaksjons-ID for å unngå dupliserte transaksjons-IDer**.</span><span class="sxs-lookup"><span data-stu-id="048c4-216">Search for the **Enable new transaction id to avoid duplicate transaction ids** feature name.</span></span>
+1. <span data-ttu-id="048c4-217">Velg funksjonen, og velg deretter **Aktiver nå** i den høyre ruten.</span><span class="sxs-lookup"><span data-stu-id="048c4-217">Select the feature, and then select **Enable Now** in the right pane.</span></span>  
+1. <span data-ttu-id="048c4-218">Gå til **Detaljhandel og handel \> IT for detaljhandel og handel \> Distribusjonsplan**.</span><span class="sxs-lookup"><span data-stu-id="048c4-218">Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**.</span></span>
+1. <span data-ttu-id="048c4-219">Kjør **1070-kanalkonfigurasjonen** og **1170 Oppgaveregistrering for salgssted** for å synkronisere den aktiverte funksjonen til butikkene.</span><span class="sxs-lookup"><span data-stu-id="048c4-219">Run the **1070 Channel configuration** and **1170 POS task recorder** jobs to synchronize the enabled feature to the stores.</span></span>
+1. <span data-ttu-id="048c4-220">Når endringene er sendt til butikkene, må salgsstedsterminalene lukkes og åpnes på nytt for å kunne bruke det nye transaksjons-ID-formatet.</span><span class="sxs-lookup"><span data-stu-id="048c4-220">After the changes have been sent to the stores, POS terminals must be closed and reopened to use the new transaction ID format.</span></span> 
+
+> [!NOTE]
+> <span data-ttu-id="048c4-221">Når den nye funksjonen for transaksjons-ID-format er aktivert, kan du ikke deaktivere denne funksjonen.</span><span class="sxs-lookup"><span data-stu-id="048c4-221">After the new transaction ID format feature is enabled, you will not be able to disable this feature.</span></span> <span data-ttu-id="048c4-222">Hvis den må deaktiveres, kan du kontakte Commerce Support.</span><span class="sxs-lookup"><span data-stu-id="048c4-222">If it must be disabled, please contact Commerce Support.</span></span>
+
+## <a name="additional-resources"></a><span data-ttu-id="048c4-223">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="048c4-223">Additional resources</span></span>
+
+[<span data-ttu-id="048c4-224">Oversikt over kanaler</span><span class="sxs-lookup"><span data-stu-id="048c4-224">Channels overview</span></span>](channels-overview.md)
+
+[<span data-ttu-id="048c4-225">Kanaloppsettsforutsetninger</span><span class="sxs-lookup"><span data-stu-id="048c4-225">Channel setup prerequisites</span></span>](channels-prerequisites.md)
+
+[<span data-ttu-id="048c4-226">Definere en Internett-kanal</span><span class="sxs-lookup"><span data-stu-id="048c4-226">Set up an online channel</span></span>](channel-setup-online.md)
+
+[<span data-ttu-id="048c4-227">Definere en telefonsenterkanal</span><span class="sxs-lookup"><span data-stu-id="048c4-227">Set up a call center channel</span></span>](channel-setup-callcenter.md)
 
 
 

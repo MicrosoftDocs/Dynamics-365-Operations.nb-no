@@ -15,98 +15,82 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5064ea3b9435d0fb9e97c00df6b17a304b8a6a0f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 799619e6fc03174c8ad47512ea839ca7b2aab20e
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5827728"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5898142"
 ---
-# <a name="accounts-receivable-home-page"></a><span data-ttu-id="669d1-103">Startside for kunder</span><span class="sxs-lookup"><span data-stu-id="669d1-103">Accounts receivable home page</span></span>
+# <a name="accounts-receivable-home-page"></a><span data-ttu-id="5f6ef-103">Startside for kunder</span><span class="sxs-lookup"><span data-stu-id="5f6ef-103">Accounts receivable home page</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="669d1-104">Bruk kundereskontro til å spore alle kundefakturaer og innkommende betalinger.</span><span class="sxs-lookup"><span data-stu-id="669d1-104">Use Accounts receivable to track customer invoices and incoming payments.</span></span> 
+<span data-ttu-id="5f6ef-104">Bruk kundereskontro til å spore alle kundefakturaer og innkommende betalinger.</span><span class="sxs-lookup"><span data-stu-id="5f6ef-104">Use Accounts receivable to track customer invoices and incoming payments.</span></span> 
 
-<span data-ttu-id="669d1-105">Du kan opprette kundefakturaer som er basert på salgsordrer eller følgesedler.</span><span class="sxs-lookup"><span data-stu-id="669d1-105">You can create customer invoices that are based on sales orders or packing slips.</span></span> <span data-ttu-id="669d1-106">Du kan også registrere fritekstfakturaer som ikke er knyttet til salgsordrer.</span><span class="sxs-lookup"><span data-stu-id="669d1-106">You can also enter free text invoices that are not related to sales orders.</span></span> <span data-ttu-id="669d1-107">Du kan motta betalinger ved hjelp av flere ulike betalingstyper.</span><span class="sxs-lookup"><span data-stu-id="669d1-107">You can receive payments by using several different payment types.</span></span> <span data-ttu-id="669d1-108">Disse omfatter veksler, kontanter, sjekker, kredittkort og elektroniske betalinger.</span><span class="sxs-lookup"><span data-stu-id="669d1-108">These include bills of exchange, cash, checks, credit cards, and electronic payments.</span></span> <span data-ttu-id="669d1-109">Hvis organisasjonen har flere juridiske enheter, kan du bruke sentraliserte betalinger til å registrere betalinger i én juridisk enhet på vegne av de andre juridiske enhetene.</span><span class="sxs-lookup"><span data-stu-id="669d1-109">If your organization includes multiple legal entities, you can use centralized payments to record payments in a single legal entity on behalf of the other legal entities.</span></span>
-
-
-<span data-ttu-id="669d1-110">**Forretningsprosesser**</span><span class="sxs-lookup"><span data-stu-id="669d1-110">**Business processes**</span></span>
-
-<span data-ttu-id="669d1-111">[![Forretningsprosess](./media/AR-process.PNG)](./media/AR-process.PNG)</span><span class="sxs-lookup"><span data-stu-id="669d1-111">[![Business process](./media/AR-process.PNG)](./media/AR-process.PNG)</span></span>
-
-## <a name="set-up-accounts-receivable"></a><span data-ttu-id="669d1-112">Definere Kunder</span><span class="sxs-lookup"><span data-stu-id="669d1-112">Set up Accounts receivable</span></span>
-
-<span data-ttu-id="669d1-113">Bruk kunder til å spore kundefakturaer og betalinger du mottar fra kunder.</span><span class="sxs-lookup"><span data-stu-id="669d1-113">Use Accounts receivable to track customer invoices and payments that you receive from customers.</span></span> <span data-ttu-id="669d1-114">Du kan definere kundegrupper, kunder, posteringsprofiler, rentenotaer, purringer, provisjoner, og parametere som angår kunder, tillegg, leveringer og mål, veksler og andre typer kundeinformasjon.</span><span class="sxs-lookup"><span data-stu-id="669d1-114">You can set up customer groups, customers, posting profiles, interest notes, collection letters, commissions, and parameters regarding customers, charges, deliveries and destinations, bills of exchange, and other types of Accounts receivable information.</span></span> 
-
-:::row:::
-    :::column:::
-        - [<span data-ttu-id="669d1-115">Regnskapsdistribusjoner og underfinansjournaloppføringer for fritekstfakturaer</span><span class="sxs-lookup"><span data-stu-id="669d1-115">Accounting distributions and subledger journal entries for free text invoices</span></span>](accounting-distributions-subledger-journal-entries-free-text-invoices.md)
-        - [<span data-ttu-id="669d1-116">Kundeposteringsprofiler</span><span class="sxs-lookup"><span data-stu-id="669d1-116">Customer posting profiles</span></span>](customer-posting-profiles.md)
-        - [<span data-ttu-id="669d1-117">Kredittkortoppsett, godkjenning og registrering</span><span class="sxs-lookup"><span data-stu-id="669d1-117">Credit card setup, authorization, and capture</span></span>](credit-card-authorizations.md)
-        - [<span data-ttu-id="669d1-118">Opprette en kundefaktura</span><span class="sxs-lookup"><span data-stu-id="669d1-118">Create a customer invoice</span></span>](configure-customer-invoices.md)
-        - [<span data-ttu-id="669d1-119">Definere og behandle gjentakende fakturaer</span><span class="sxs-lookup"><span data-stu-id="669d1-119">Set up and process recurring invoices</span></span>](set-up-process-recurring-invoices.md)
-        - [<span data-ttu-id="669d1-120">Korrigere en fritekstfaktura</span><span class="sxs-lookup"><span data-stu-id="669d1-120">Correct a free text invoice</span></span>](correct-free-text-invoice.md)
-    :::column-end:::
-    :::column:::
-        - [<span data-ttu-id="669d1-121">Definere veksler</span><span class="sxs-lookup"><span data-stu-id="669d1-121">Set up bills of exchange</span></span>](set-up-bills-exchange.md)
-        - [<span data-ttu-id="669d1-122">Definere rentesatser for en rentekode</span><span class="sxs-lookup"><span data-stu-id="669d1-122">Set up interest rates for an interest code</span></span>](set-up-interest-rates-interest-code.md)
-        - [<span data-ttu-id="669d1-123">Frafalle, gjenoppta eller reversere rentegebyrer</span><span class="sxs-lookup"><span data-stu-id="669d1-123">Waive, reinstate, or reverse interest fees</span></span>](waive-reinstate-reverse-interest-fees.md)
-        - [<span data-ttu-id="669d1-124">Oversikt over SEPA-avtalegiro</span><span class="sxs-lookup"><span data-stu-id="669d1-124">SEPA direct debit overview</span></span>](sepa-direct-debit-overview.md)
-        - [<span data-ttu-id="669d1-125">Definere mandat for SEPA Direct Debit</span><span class="sxs-lookup"><span data-stu-id="669d1-125">Set up SEPA direct debit mandate</span></span>](sepa-direct-debit-mandate.md)
-        - [<span data-ttu-id="669d1-126">Lukke Kunde</span><span class="sxs-lookup"><span data-stu-id="669d1-126">Close Accounts receivable</span></span>](close-accounts-receivable.md)
-    :::column-end:::
-:::row-end:::
+<span data-ttu-id="5f6ef-105">Du kan opprette kundefakturaer som er basert på salgsordrer eller følgesedler.</span><span class="sxs-lookup"><span data-stu-id="5f6ef-105">You can create customer invoices that are based on sales orders or packing slips.</span></span> <span data-ttu-id="5f6ef-106">Du kan også registrere fritekstfakturaer som ikke er knyttet til salgsordrer.</span><span class="sxs-lookup"><span data-stu-id="5f6ef-106">You can also enter free text invoices that are not related to sales orders.</span></span> <span data-ttu-id="5f6ef-107">Du kan motta betalinger ved hjelp av flere ulike betalingstyper.</span><span class="sxs-lookup"><span data-stu-id="5f6ef-107">You can receive payments by using several different payment types.</span></span> <span data-ttu-id="5f6ef-108">Disse omfatter veksler, kontanter, sjekker, kredittkort og elektroniske betalinger.</span><span class="sxs-lookup"><span data-stu-id="5f6ef-108">These include bills of exchange, cash, checks, credit cards, and electronic payments.</span></span> <span data-ttu-id="5f6ef-109">Hvis organisasjonen har flere juridiske enheter, kan du bruke sentraliserte betalinger til å registrere betalinger i én juridisk enhet på vegne av de andre juridiske enhetene.</span><span class="sxs-lookup"><span data-stu-id="5f6ef-109">If your organization includes multiple legal entities, you can use centralized payments to record payments in a single legal entity on behalf of the other legal entities.</span></span>
 
 
-## <a name="set-up-credit-and-collections"></a><span data-ttu-id="669d1-127">Definere kredit og innkrevinger</span><span class="sxs-lookup"><span data-stu-id="669d1-127">Set up credit and collections</span></span>
+<span data-ttu-id="5f6ef-110">**Forretningsprosesser**</span><span class="sxs-lookup"><span data-stu-id="5f6ef-110">**Business processes**</span></span>
 
-<span data-ttu-id="669d1-128">Informasjon om kundeinnkrevinger administreres i én sentral visning på siden Innkrevinger.</span><span class="sxs-lookup"><span data-stu-id="669d1-128">Accounts receivable collections information is managed in one central view, the Collections page.</span></span> <span data-ttu-id="669d1-129">Ledere for kreditt og innkreving kan bruke denne sentrale visningen til å administrere innkreving.</span><span class="sxs-lookup"><span data-stu-id="669d1-129">Credit and collections managers can use this central view to manage collections.</span></span> <span data-ttu-id="669d1-130">Innkrevingsagenter kan begynne innkrevingsprosessen fra kundelister som genereres ved hjelp av forhåndsdefinerte innkrevingskriterier eller fra kundesiden.</span><span class="sxs-lookup"><span data-stu-id="669d1-130">Collections agents can begin the collections process from customer lists that are generated by using predefined collection criteria, or from the Customers page.</span></span>
+<span data-ttu-id="5f6ef-111">[![Forretningsprosess](./media/AR-process.PNG)](./media/AR-process.PNG)</span><span class="sxs-lookup"><span data-stu-id="5f6ef-111">[![Business process](./media/AR-process.PNG)](./media/AR-process.PNG)</span></span>
 
-[<span data-ttu-id="669d1-131">Kredit og innkrevinger i Kunde</span><span class="sxs-lookup"><span data-stu-id="669d1-131">Credit and collections in Accounts receivable</span></span>](collections-credit-accounts-receivable.md)
+## <a name="set-up-accounts-receivable"></a><span data-ttu-id="5f6ef-112">Definere Kunder</span><span class="sxs-lookup"><span data-stu-id="5f6ef-112">Set up Accounts receivable</span></span>
 
-[<span data-ttu-id="669d1-132">Konfigurere kunder, kredit og innkrevinger</span><span class="sxs-lookup"><span data-stu-id="669d1-132">Configure Accounts receivables and Credit and collections</span></span>](accounts-receivables-set-up-overview.md)
+<span data-ttu-id="5f6ef-113">Bruk kunder til å spore kundefakturaer og betalinger du mottar fra kunder.</span><span class="sxs-lookup"><span data-stu-id="5f6ef-113">Use Accounts receivable to track customer invoices and payments that you receive from customers.</span></span> <span data-ttu-id="5f6ef-114">Du kan definere kundegrupper, kunder, posteringsprofiler, rentenotaer, purringer, provisjoner, og parametere som angår kunder, tillegg, leveringer og mål, veksler og andre typer kundeinformasjon.</span><span class="sxs-lookup"><span data-stu-id="5f6ef-114">You can set up customer groups, customers, posting profiles, interest notes, collection letters, commissions, and parameters regarding customers, charges, deliveries and destinations, bills of exchange, and other types of Accounts receivable information.</span></span> 
 
-[<span data-ttu-id="669d1-133">Definere kredit og innkrevinger</span><span class="sxs-lookup"><span data-stu-id="669d1-133">Set up Credit and collections</span></span>](set-up-collections.md)
+- [<span data-ttu-id="5f6ef-115">Regnskapsdistribusjoner og underfinansjournaloppføringer for fritekstfakturaer</span><span class="sxs-lookup"><span data-stu-id="5f6ef-115">Accounting distributions and subledger journal entries for free text invoices</span></span>](accounting-distributions-subledger-journal-entries-free-text-invoices.md)
+- [<span data-ttu-id="5f6ef-116">Kundeposteringsprofiler</span><span class="sxs-lookup"><span data-stu-id="5f6ef-116">Customer posting profiles</span></span>](customer-posting-profiles.md)
+- [<span data-ttu-id="5f6ef-117">Kredittkortoppsett, godkjenning og registrering</span><span class="sxs-lookup"><span data-stu-id="5f6ef-117">Credit card setup, authorization, and capture</span></span>](credit-card-authorizations.md)
+- [<span data-ttu-id="5f6ef-118">Opprette en kundefaktura</span><span class="sxs-lookup"><span data-stu-id="5f6ef-118">Create a customer invoice</span></span>](configure-customer-invoices.md)
+- [<span data-ttu-id="5f6ef-119">Definere og behandle gjentakende fakturaer</span><span class="sxs-lookup"><span data-stu-id="5f6ef-119">Set up and process recurring invoices</span></span>](set-up-process-recurring-invoices.md)
+- [<span data-ttu-id="5f6ef-120">Korrigere en fritekstfaktura</span><span class="sxs-lookup"><span data-stu-id="5f6ef-120">Correct a free text invoice</span></span>](correct-free-text-invoice.md)
+- [<span data-ttu-id="5f6ef-121">Definere veksler</span><span class="sxs-lookup"><span data-stu-id="5f6ef-121">Set up bills of exchange</span></span>](set-up-bills-exchange.md)
+- [<span data-ttu-id="5f6ef-122">Definere rentesatser for en rentekode</span><span class="sxs-lookup"><span data-stu-id="5f6ef-122">Set up interest rates for an interest code</span></span>](set-up-interest-rates-interest-code.md)
+- [<span data-ttu-id="5f6ef-123">Frafalle, gjenoppta eller reversere rentegebyrer</span><span class="sxs-lookup"><span data-stu-id="5f6ef-123">Waive, reinstate, or reverse interest fees</span></span>](waive-reinstate-reverse-interest-fees.md)
+- [<span data-ttu-id="5f6ef-124">Oversikt over SEPA-avtalegiro</span><span class="sxs-lookup"><span data-stu-id="5f6ef-124">SEPA direct debit overview</span></span>](sepa-direct-debit-overview.md)
+- [<span data-ttu-id="5f6ef-125">Definere mandat for SEPA Direct Debit</span><span class="sxs-lookup"><span data-stu-id="5f6ef-125">Set up SEPA direct debit mandate</span></span>](sepa-direct-debit-mandate.md)
+- [<span data-ttu-id="5f6ef-126">Lukke Kunde</span><span class="sxs-lookup"><span data-stu-id="5f6ef-126">Close Accounts receivable</span></span>](close-accounts-receivable.md)
+    
+## <a name="set-up-credit-and-collections"></a><span data-ttu-id="5f6ef-127">Definere kredit og innkrevinger</span><span class="sxs-lookup"><span data-stu-id="5f6ef-127">Set up credit and collections</span></span>
 
-## <a name="set-up-payments-and-settlements"></a><span data-ttu-id="669d1-134">Definere betalinger og utligninger</span><span class="sxs-lookup"><span data-stu-id="669d1-134">Set up payments and settlements</span></span>
+<span data-ttu-id="5f6ef-128">Informasjon om kundeinnkrevinger administreres i én sentral visning på siden Innkrevinger.</span><span class="sxs-lookup"><span data-stu-id="5f6ef-128">Accounts receivable collections information is managed in one central view, the Collections page.</span></span> <span data-ttu-id="5f6ef-129">Ledere for kreditt og innkreving kan bruke denne sentrale visningen til å administrere innkreving.</span><span class="sxs-lookup"><span data-stu-id="5f6ef-129">Credit and collections managers can use this central view to manage collections.</span></span> <span data-ttu-id="5f6ef-130">Innkrevingsagenter kan begynne innkrevingsprosessen fra kundelister som genereres ved hjelp av forhåndsdefinerte innkrevingskriterier eller fra kundesiden.</span><span class="sxs-lookup"><span data-stu-id="5f6ef-130">Collections agents can begin the collections process from customer lists that are generated by using predefined collection criteria, or from the Customers page.</span></span>
 
-<span data-ttu-id="669d1-135">Godta ulike typer betalinger fra kunder som veksler, kontanter, sjekker, kredittkort og elektroniske betalinger.</span><span class="sxs-lookup"><span data-stu-id="669d1-135">Accept different types of payments from customers, such as bills of exchange, cash, checks, credit cards, and electronic payments.</span></span> 
+- [<span data-ttu-id="5f6ef-131">Kredit og innkrevinger i Kunde</span><span class="sxs-lookup"><span data-stu-id="5f6ef-131">Credit and collections in Accounts receivable</span></span>](collections-credit-accounts-receivable.md)
+- [<span data-ttu-id="5f6ef-132">Konfigurere kunder, kredit og innkrevinger</span><span class="sxs-lookup"><span data-stu-id="5f6ef-132">Configure Accounts receivables and Credit and collections</span></span>](accounts-receivables-set-up-overview.md)
+- [<span data-ttu-id="5f6ef-133">Definere kredit og innkrevinger</span><span class="sxs-lookup"><span data-stu-id="5f6ef-133">Set up Credit and collections</span></span>](set-up-collections.md)
 
-:::row:::
-    :::column:::
-        - [<span data-ttu-id="669d1-136">Bruke en kundebetaling til å utligne flere fakturaer som strekker seg over flere rabattperioder</span><span class="sxs-lookup"><span data-stu-id="669d1-136">Use a customer payment to settle multiple invoices that span multiple discount periods</span></span>](customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
-        - [<span data-ttu-id="669d1-137">Sentraliserte betalinger for kunde</span><span class="sxs-lookup"><span data-stu-id="669d1-137">Centralized payments for Accounts receivable</span></span>](centralized-payments-accounts-receivable.md)
-        - [<span data-ttu-id="669d1-138">Utligne en delvis kundebetaling og den endelige betalingen i sin helhet før rabattdatoen</span><span class="sxs-lookup"><span data-stu-id="669d1-138">Settle a partial customer payment and the final payment in full before the discount date</span></span>](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
-        - [<span data-ttu-id="669d1-139">Utligne en delvis kundebetaling før rabattdatoen med en endelige betaling etter rabattdatoen</span><span class="sxs-lookup"><span data-stu-id="669d1-139">Settle a partial customer payment before the discount date with a final payment after the discount date</span></span>](settle-partial-customer-payment-before-discount-or-final-payment-after.md)
-    :::column-end:::
-    :::column:::
-        - [<span data-ttu-id="669d1-140">Utligne en delvis kundebetaling som har rabatter på kreditnotaer</span><span class="sxs-lookup"><span data-stu-id="669d1-140">Settle a partial customer payment that has discounts on credit notes</span></span>](settle-partial-customer-payment-discounts-credit-notes.md)
-        - [<span data-ttu-id="669d1-141">Utligne en delvis kundebetaling som har flere rabattperioder</span><span class="sxs-lookup"><span data-stu-id="669d1-141">Settle a partial customer payment that has multiple discount periods</span></span>](settle-partial-customer-payment-multiple-discount-periods.md)
-        - [<span data-ttu-id="669d1-142">Refundere kunder</span><span class="sxs-lookup"><span data-stu-id="669d1-142">Reimburse customers</span></span>](reimburse-customers.md)
-        - [<span data-ttu-id="669d1-143">Kundebetalinger for et delbeløp</span><span class="sxs-lookup"><span data-stu-id="669d1-143">Customer payments for a partial amount</span></span>](customer-payments-partial-amount.md)
-    :::column-end:::
-:::row-end:::
+## <a name="set-up-payments-and-settlements"></a><span data-ttu-id="5f6ef-134">Definere betalinger og utligninger</span><span class="sxs-lookup"><span data-stu-id="5f6ef-134">Set up payments and settlements</span></span>
 
+<span data-ttu-id="5f6ef-135">Godta ulike typer betalinger fra kunder som veksler, kontanter, sjekker, kredittkort og elektroniske betalinger.</span><span class="sxs-lookup"><span data-stu-id="5f6ef-135">Accept different types of payments from customers, such as bills of exchange, cash, checks, credit cards, and electronic payments.</span></span> 
 
-### <a name="additional-resources"></a><span data-ttu-id="669d1-144">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="669d1-144">Additional resources</span></span>
+- [<span data-ttu-id="5f6ef-136">Bruke en kundebetaling til å utligne flere fakturaer som strekker seg over flere rabattperioder</span><span class="sxs-lookup"><span data-stu-id="5f6ef-136">Use a customer payment to settle multiple invoices that span multiple discount periods</span></span>](customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
+- [<span data-ttu-id="5f6ef-137">Sentraliserte betalinger for kunde</span><span class="sxs-lookup"><span data-stu-id="5f6ef-137">Centralized payments for Accounts receivable</span></span>](centralized-payments-accounts-receivable.md)
+- [<span data-ttu-id="5f6ef-138">Utligne en delvis kundebetaling og den endelige betalingen i sin helhet før rabattdatoen</span><span class="sxs-lookup"><span data-stu-id="5f6ef-138">Settle a partial customer payment and the final payment in full before the discount date</span></span>](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
+- [<span data-ttu-id="5f6ef-139">Utligne en delvis kundebetaling før rabattdatoen med en endelige betaling etter rabattdatoen</span><span class="sxs-lookup"><span data-stu-id="5f6ef-139">Settle a partial customer payment before the discount date with a final payment after the discount date</span></span>](settle-partial-customer-payment-before-discount-or-final-payment-after.md)
+- [<span data-ttu-id="5f6ef-140">Utligne en delvis kundebetaling som har rabatter på kreditnotaer</span><span class="sxs-lookup"><span data-stu-id="5f6ef-140">Settle a partial customer payment that has discounts on credit notes</span></span>](settle-partial-customer-payment-discounts-credit-notes.md)
+- [<span data-ttu-id="5f6ef-141">Utligne en delvis kundebetaling som har flere rabattperioder</span><span class="sxs-lookup"><span data-stu-id="5f6ef-141">Settle a partial customer payment that has multiple discount periods</span></span>](settle-partial-customer-payment-multiple-discount-periods.md)
+- [<span data-ttu-id="5f6ef-142">Refundere kunder</span><span class="sxs-lookup"><span data-stu-id="5f6ef-142">Reimburse customers</span></span>](reimburse-customers.md)
+- [<span data-ttu-id="5f6ef-143">Kundebetalinger for et delbeløp</span><span class="sxs-lookup"><span data-stu-id="5f6ef-143">Customer payments for a partial amount</span></span>](customer-payments-partial-amount.md)
+   
+### <a name="additional-resources"></a><span data-ttu-id="5f6ef-144">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="5f6ef-144">Additional resources</span></span>
 
-#### <a name="whats-new-and-in-development"></a><span data-ttu-id="669d1-145">Hva er nytt og hva er under utvikling?</span><span class="sxs-lookup"><span data-stu-id="669d1-145">What's new and in development</span></span>
+#### <a name="whats-new-and-in-development"></a><span data-ttu-id="5f6ef-145">Hva er nytt og hva er under utvikling?</span><span class="sxs-lookup"><span data-stu-id="5f6ef-145">What's new and in development</span></span>
 
-<span data-ttu-id="669d1-146">Gå til [Veikart for Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158) for å se hvilke nye funksjoner som er planlagt.</span><span class="sxs-lookup"><span data-stu-id="669d1-146">Go to the [Microsoft Dynamics 365 Roadmap](https://go.microsoft.com/fwlink/?linkid=2010158) to see what new features are planned.</span></span> 
+<span data-ttu-id="5f6ef-146">Gå til [Veikart for Microsoft Dynamics 365](/dynamics365/release-plans/) for å se hvilke nye funksjoner som er planlagt.</span><span class="sxs-lookup"><span data-stu-id="5f6ef-146">Go to the [Microsoft Dynamics 365 Roadmap](/dynamics365/release-plans/) to see what new features are planned.</span></span> 
 
-#### <a name="blogs"></a><span data-ttu-id="669d1-147">Blogger</span><span class="sxs-lookup"><span data-stu-id="669d1-147">Blogs</span></span>
+#### <a name="blogs"></a><span data-ttu-id="5f6ef-147">Blogger</span><span class="sxs-lookup"><span data-stu-id="5f6ef-147">Blogs</span></span>
 
-<span data-ttu-id="669d1-148">Du kan finne meninger, nyheter og annen informasjon om Kunder og andre løsninger i bloggen for [Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) bloggen [Microsoft Dynamics 365 Finance and Operations - Financials](https://community.dynamics.com/365/financeandoperations/b/financials).</span><span class="sxs-lookup"><span data-stu-id="669d1-148">You can find opinions, news, and other information about Accounts receivable and other solutions on the [Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) and the [Microsoft Dynamics 365 Finance and Operations - Financials blog](https://community.dynamics.com/365/financeandoperations/b/financials).</span></span>
+<span data-ttu-id="5f6ef-148">Du kan finne meninger, nyheter og annen informasjon om Kunder og andre løsninger i bloggen for [Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) bloggen [Microsoft Dynamics 365 Finance and Operations - Financials](https://community.dynamics.com/365/financeandoperations/b/financials).</span><span class="sxs-lookup"><span data-stu-id="5f6ef-148">You can find opinions, news, and other information about Accounts receivable and other solutions on the [Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) and the [Microsoft Dynamics 365 Finance and Operations - Financials blog](https://community.dynamics.com/365/financeandoperations/b/financials).</span></span>
 
-<span data-ttu-id="669d1-149">[Microsoft Dynamics Operations Partner Community-bloggen](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gir Microsoft Dynamics-partnere én ressurs der de kan finne ut mer om hva som er nytt og populært i Dynamics 365.</span><span class="sxs-lookup"><span data-stu-id="669d1-149">The [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gives Microsoft Dynamics Partners a single resource where they can learn what is new and trending in Dynamics 365.</span></span>
+<span data-ttu-id="5f6ef-149">[Microsoft Dynamics Operations Partner Community-bloggen](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gir Microsoft Dynamics-partnere én ressurs der de kan finne ut mer om hva som er nytt og populært i Dynamics 365.</span><span class="sxs-lookup"><span data-stu-id="5f6ef-149">The [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gives Microsoft Dynamics Partners a single resource where they can learn what is new and trending in Dynamics 365.</span></span>
 
-#### <a name="task-guides"></a><span data-ttu-id="669d1-150">Oppgaveveiledninger</span><span class="sxs-lookup"><span data-stu-id="669d1-150">Task guides</span></span>
-<span data-ttu-id="669d1-151">Mer hjelp er tilgjengelig som oppgaveveiledninger i programmet.</span><span class="sxs-lookup"><span data-stu-id="669d1-151">Additional help is available as task guides inside the application.</span></span> <span data-ttu-id="669d1-152">For å få tilgang til oppgaveveiledninger klikker du på Hjelp-knappen på en side.</span><span class="sxs-lookup"><span data-stu-id="669d1-152">To access task guides, click the Help button on any page.</span></span>
+#### <a name="task-guides"></a><span data-ttu-id="5f6ef-150">Oppgaveveiledninger</span><span class="sxs-lookup"><span data-stu-id="5f6ef-150">Task guides</span></span>
+<span data-ttu-id="5f6ef-151">Mer hjelp er tilgjengelig som oppgaveveiledninger i programmet.</span><span class="sxs-lookup"><span data-stu-id="5f6ef-151">Additional help is available as task guides inside the application.</span></span> <span data-ttu-id="5f6ef-152">For å få tilgang til oppgaveveiledninger klikker du på Hjelp-knappen på en side.</span><span class="sxs-lookup"><span data-stu-id="5f6ef-152">To access task guides, click the Help button on any page.</span></span>
 
-#### <a name="videos"></a><span data-ttu-id="669d1-153">Videoer</span><span class="sxs-lookup"><span data-stu-id="669d1-153">Videos</span></span>
+#### <a name="videos"></a><span data-ttu-id="5f6ef-153">Videoer</span><span class="sxs-lookup"><span data-stu-id="5f6ef-153">Videos</span></span>
 
-<span data-ttu-id="669d1-154">Se instruksjonsvideoene som nå er tilgjengelige på [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).</span><span class="sxs-lookup"><span data-stu-id="669d1-154">Check out the how-to videos that are now available on the [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).</span></span>
+<span data-ttu-id="5f6ef-154">Se instruksjonsvideoene som nå er tilgjengelige på [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).</span><span class="sxs-lookup"><span data-stu-id="5f6ef-154">Check out the how-to videos that are now available on the [Microsoft Dynamics 365 YouTube Channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).</span></span>
 
 
 
