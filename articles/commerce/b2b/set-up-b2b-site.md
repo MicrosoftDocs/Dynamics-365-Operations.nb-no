@@ -2,7 +2,8 @@
 title: Definere et B2B-e-handelsområde
 description: Dette emnet beskriver hvordan du konfigurerer et bedrift-til-bedrift-e-handelsområde (B2B) i Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 01/20/2021
+manager: AnnBe
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +15,17 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 3c6ea6118c3ba0ab77fea91b2eafa75c89b8d71d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: db33bf941303c6a74f9c6b2d5a782762f7180f1b
+ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799763"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5937512"
 ---
 # <a name="set-up-a-b2b-e-commerce-site"></a>Definere et e-handelsområde for B2B
 
 [!include [banner](../../includes/banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
 
 E-handelsområder for bedrift-til-bedrift (B2B) har noen nøkkelfunksjoner som optimaliserer arbeidsflyten for en B2B-bruker. Dette emnet beskriver hvordan du konfigurerer et B2B-e-handelsområde i Microsoft Dynamics 365 Commerce. Det går gjennom modulene og områdeinnstillingene som må konfigureres for å aktivere B2B-spesifikke scenarier.
 
@@ -283,9 +285,35 @@ For å opprette en side for fakturadetaljer i områdebyggeren følger du denne f
 1. Velg **Lagre**, velg **Fullfør redigering** for å sjekke inn siden, og velg deretter **Publiser** for å publisere den.
 1. Publiser URL-adressen for siden.
 
+## <a name="add-a-quick-add-module-to-the-cart-page"></a>Legge til en Hurtigtillegg-modul i handlekurvsiden
+
+Med Hurtigtillegg-modulen kan du raskt legge til flere varer i handlekurven ved å bruke vare-IDer (kalles også lagerenhet \[SKU\] ID-er). Hurtigtillegg-modulen legges til på kurvsiden for et område.
+
+Følg denne fremgangsmåten for å legge til en Hurtigtillegg-modul på handlekurvsiden i Commerce-områdebyggeren.
+
+1. Gå til **Maler**, og velg områdets handlekurvsidemal.
+1. Velg **Rediger**.
+1. På **Hoved**-sporet på **Standardside**-modulen velger du ellipseknappen (**...**), og deretter velger du **Legg til modul**.
+1. I dialogboksen **Legg til modul** velger du **Beholder**-modulen, og deretter velger du **OK**.
+1. I **Beholder**-sporet velger du ellipsen (**…**), og deretter velger du **Legg til modul**.
+1. I dialogboksen **Legg til modul** velger du **Hurtigtillegg**-modulen, og deretter velger du **OK**.
+1. Velg **Lagre**, velg **Fullfør redigering** for å sjekke inn malen, og velg deretter **Publiser** for å publisere den.
+1. Gå til **Sider**, og velg områdets handlekurvsidemal.
+1. På **Hoved**-sporet på **Standardside**-modulen velger du ellipseknappen (**...**), og deretter velger du **Legg til modul**.
+1. I dialogboksen **Legg til modul** velger du **Beholder**-modulen, og deretter velger du **OK**.
+1. I egenskapsruten for **Container**-modulen under **Bredde** velger du **Fyll container**.
+1. I **Beholder**-sporet velger du ellipsen (**…**), og deretter velger du **Legg til modul**.
+1. I dialogboksen **Legg til modul** velger du **Hurtigtillegg**-modulen, og deretter velger du **OK**.
+1. Velg **Lagre**, velg **Fullfør redigering** for å sjekke inn siden, og velg deretter **Publiser** for å publisere den.
+
+> [!NOTE] 
+> Hurtigtillegg-modulen er tilgjengelig fra Commerce versjon 10.0.17-versjonen. Hvis du oppdaterer fra en eldre versjon av Commerce, må du manuelt oppdatere appsettings.json-filen. Hvis du vil ha instruksjoner, kan du se [Oppdateringer for SDK og modulbibliotek](../e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
+
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Oversikt over modulbibliotek](../starter-kit-overview.md)
+
+[Oppdateringer for SDK og modulbibliotek](../e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file)
 
 [Oversikt over redigering av side](../authoring-home-overview.md)
 
@@ -299,7 +327,7 @@ For å opprette en side for fakturadetaljer i områdebyggeren følger du denne f
 
 [Innholdsblokkmodul](../add-hero-module.md)
 
-[Produktsamling](../product-collection-module-overview.md)
+[Produktsamlingsmodul](../product-collection-module-overview.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,8 +1,8 @@
 ---
-title: Beregne beholdningstilgjengelighet for detaljhandelskanaler
-description: Dette emnet beskriver alternativene som er tilgjengelige for å vise lagerbeholdningen for butikken og Internett-kanalene.
+title: Beregne lagertilgjengelighet for detaljhandelskanaler
+description: Dette emnet beskriver hvordan et firma kan bruke Microsoft Dynamics 365 Commerce til å vise estimert beholdningstilgjengelighet for produkter i nett- og butikkanaler.
 author: hhainesms
-ms.date: 08/13/2020
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,78 +14,105 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 29efccab017d9dff98872871bfe953fba19d2c30
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: fdf6df7e393bcc401e770bd1b8afcaedcadc2660
+ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799691"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5937440"
 ---
 # <a name="calculate-inventory-availability-for-retail-channels"></a>Beregne lagertilgjengelighet for detaljhandelskanaler
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Dette emnet beskriver hvordan et firma kan bruke Microsoft Dynamics 365 Commerce til å vise estimert beholdningstilgjengelighet for produkter i nett- og butikkanaler.
 
-## <a name="accuracy-of-calculation"></a>Beregningens nøyaktighet
+## <a name="accuracy-of-inventory-availability"></a>Nøyaktighet for lagertilgjengelighet
 
-Commerce bruker flere servere og databaser for å sikre skalerbarhet og ytelse. Det er derfor viktig at du forstår at de tilgjengelige beholdningsverdiene som gis via POS-programmet (salgssted), e-Commerce API-ene for beholdningstilgjengelighet (APIer) og lagerbeholdningssidene i Commerce Headquarters ikke kan være 100 prosent nøyaktig i sanntid. Hvis transaksjoner som er opprettet for produkter i nett- eller butikkanalen ennå ikke er synkronisert med Commerce Headquarters-serveren og -databasen, kan det hende at lagerbeholdnings sidene i Commerce Headquarters ikke viser en nøyaktig lagerverdi i sanntid for disse produktene. Hvis du har konfigurert firmaet slik at brukere i Commerce Headquarters eller andre integrerte programmer kan selge, motta, returnere eller på annen måte justere lageret ut av en butikk eller et elektronisk lager, kan det hende at salgsstedet eller den elektroniske kanalen ikke har all informasjon som kreves for å vise en nøyaktig beholdningsverdi for varer i sanntid.
+Commerce bruker flere servere og databaser for å sikre skalerbarhet og ytelse. Det er derfor viktig at du forstår at de tilgjengelige beholdningsverdiene som gis via POS-programmet (salgssted), e-Commerce API-ene for beholdningstilgjengelighet (APIer) og lagerbeholdningssidene i Commerce Headquarters ikke kan være 100 prosent nøyaktig i sanntid. Hvis transaksjoner som er opprettet for produkter i nett- eller butikkanalen ennå ikke er synkronisert med Headquarters, kan det hende at lagerbeholdningssidene i Headquarters ikke viser en nøyaktig lagerverdi i sanntid for disse produktene. Hvis du har konfigurert firmaet slik at brukere i Headquarters eller andre integrerte programmer kan selge, motta, returnere eller på annen måte justere lageret ut av en butikk eller et elektronisk lager, kan det hende at salgsstedet eller den elektroniske kanalen ikke har all informasjon som kreves for å vise nøyaktige sanntidsverdier for varer.
 
-Dette emnet beskriver datasynkroniseringsprosessene som kan kjøres ofte for å begrense ventetiden for data mellom programmer og kanaler. Det er imidlertid viktig at du forstår at alle tilgjengelige lagerbeholdningsdata som oppgis i løpet av driftsdagen, regnes som en anslått verdi. Hvis du prøver å sammenligne lagerbeholdningsinformasjonen som programmet har, med faktisk fysisk lager på hyllene, eller hvis du prøver å sammenligne lagerbeholdnings verdiene som vises i salgsstedet med lagerbeholdningsdataene du finner for det samme lageret i Commerce Headquarters, kan verdiene være forskjellige. Denne forskjellen i løpet av driftsdagen er forventet og må ikke regnes som et problem. Hvis du vil revidere data og kontrollere at verdiene som oppgis i API-ene for lagertilgjengelighet og i handelshovedkvarteret samsvarer med de faktiske fysiske enhetene du finner på butikken eller i lagerhyllene, er det best å gjøre det etter at kanaloperasjonene er stoppet for dagen, og alle transaksjoner er riktig synkronisert mellom handelshovedkvarteret og kanalen.
+Det er viktig å forstå at alle tilgjengelige lagerbeholdningsdata som oppgis i løpet av driftsdagen, regnes som en anslått verdi. Hvis du prøver å sammenligne lagerbeholdningsinformasjonen som programmet har, med faktisk fysisk lager på hyllene, eller hvis du prøver å sammenligne lagerbeholdnings verdiene som vises i salgsstedet med lagerbeholdningsdataene du finner for det samme lageret i Headquarters, kan verdiene være forskjellige. Denne forskjellen i løpet av driftsdagen er forventet og må ikke regnes som et problem. Hvis du vil revidere data og kontrollere at verdiene som oppgis på salgsstedet, i API-ene og i headquarters, samsvarer med de faktiske fysiske enhetene du finner på butikken eller i lagerhyllene, er det best å gjøre det etter at kanaloperasjonene er stoppet for dagen, og alle transaksjoner er riktig synkronisert mellom headquarters og kanalene.
 
-## <a name="use-inventory-lookup-apis-for-e-commerce-inventory-availability-requests"></a>Bruk AP-Ier for lageroppslag for e-handelsforespørsler om lagertilgjengelighet
+## <a name="channel-side-inventory-calculation"></a>Lagerberegning på kanalsiden
 
-Du kan bruke følgende API-er til å vise lagertilgjengelighet for et produkt når kundene handler i et område for e-handel.
+Lagerberegningen på kanalsiden er en mekanisme som tar de siste kjente kanallagerdataene i Commerce Headquarters som en basislinje og deretter faktorer i flere lagerendringer som oppstod på kanalsiden, som ikke er inkludert i denne basislinjen for å beregne en forhåndsberegnet lagerbeholdning i nær sanntid. 
 
-- **GetEstimatedAvailability** – Bruk denne API-en til å få lagertilgjengelighet for varen i lageret for e-handelskanalen eller alle lagre som er koblet til konfigurasjonen av oppfyllelsesgruppen for e-handelskanalen. Denne API-en kan også brukes på lagre i et bestemt søkeområde eller en radius, basert på data lengdegrad og breddegrad.
-- **GetEstimatedProductWarehouseAvailability** – Bruk denne API-en til å be om beholdning for en vare fra et bestemt lager. Du kan for eksempel bruke den til å vise lagertilgjengelighet i scenarioer som involverer ordreplukking.
+Følgende lagerendringer vurderes for øyeblikket i logikken for lagerberegning på kanalsiden:
 
-> [!NOTE]
-> Disse API-ene erstatter API-ene **GetProductAvailabilities** og **GetAvailableInventoryNearby** i Dynamics 365 Retail versjon 10.0.7 og tidligere.
+- Lager solgt via hentesalgstransaksjoner i butikk
+- Lager solgt via kundeordrer i butikk eller online-kanal
+- Lager returnert til butikk
+- Lager oppfylt (plukk, pakke, forsendelse) fra butikklager
 
-Begge API-ene henter data fra Commerce-serveren og gir et overslag over lagerbeholdningen for en bestemt kombinasjon av et produkt eller en produktvariant og et lager. Selv om andre API-er som er tilgjengelige på Commerce-serveren, kan gå direkte til handelshovedkvarteret for å hente lagerbeholdningsantall for produkter, anbefaler vi ikke at de brukes i et miljø med e-handel, på grunn av potensielle ytelsesproblemer og den relaterte innvirkningen som disse hyppige forespørslene kan ha på Commerce Headquarters-serverne. Hvis lagerbeholdningen blir beregnet gjennom Commerce-serveren, er det mer sannsynlig at beregningen tar med varer som ble solgt i nylige e-handelstransaksjoner som ennå ikke er synkronisert til Commerce Headquarters. Selv om det er mulig at Commerce Headquarters ikke har informasjon om disse transaksjonene, har Commerce-serveren og kanaldatabasen dataene. Derfor blir det tatt hensyn til dataene, og dette kan bidra til å gi et mer nøyaktig estimat over den tilgjengelige beholdningen for et produkt.
+Før du kan bruke lagerberegningen på kanalsiden, må du sende et periodisk øyeblikksbilde av lagerdata fra hovedkontoret som opprettes av **Produkttilgjengelighet**-jobben, til kanaldatabasene. Det statiske utvalget representerer informasjonen som Headquarters har om beholdningstilgjengelighet for en bestemt kombinasjon av et produkt eller en produktvariant og et lager. Det omfatter bare lagertransaksjonene som ble behandlet og postert i Headquarters da øyeblikksbildet ble tatt, og det kan hende at det ikke er 100 prosent nøyaktig i sanntid på grunn av den konstante salgsbehandlingen som skjer på tvers av distribuerte servere.
 
-### <a name="get-started-with-e-commerce-calculated-inventory-availability"></a>Kom i gang med beregnet lager tilgjengelighet for e-handel
-
-Før du bruker de to APIene som ble nevnt tidligere, må du aktivere funksjonen **Beregning av optimalisert produkttilgjengelighet** via arbeidsområdet **Funksjonsbehandling** i Commerce Headquarters.
-
-Før API-ene kan beregne det beste estimatet for beholdningstilgjengelighet for en vare, må et periodisk statisk utvalg av beholdsningstilgjengelighet fra Commerce Headquarters behandles og sendes til kanaldatabasen som Commerce Scale Unit for e-handel bruker. Det statiske utvalget representerer informasjonen som Commerce Headquarters har om beholdningstilgjengelighet for en bestemt kombinasjon av et produkt eller en produktvariant og et lager. Dette kan inkludere lagerjusteringer eller bevegelser som forårsakes av lagertilganger, eller av forsendelser eller andre prosesser som utføres i Commerce Headquarters, og som e-handelskanalen har informasjon om, bare på grunn av synkroniseringsprosessen.
-
-Det statiske utvalget av databasen som jobben **Produkttilgjengelighet** oppretter, beregner bare beholdningstransaksjonene som ble behandlet og postert i Commerce Headquarters da det statiske utvalget ble tatt. Hvis beholdningen ble solgt for et produkt i et butikklager gjennom et kontantsalg eller et asynkront kundeordresalg i POS-programmet, har ikke Commerce Headquarters direkte informasjon om den tilknyttede lageravgangstransaksjonen for salget. Det vil ha informasjon om beholdningen som er solgt for disse typene butikksalg, bare etter at P-jobben laster opp den tilknyttede transaksjonen fra butikkens kanaldatabase til Commerce Headquarters, og den tilknyttede salgsordren opprettes via utdragspostering eller posteringsprosessene for fordelingsfeed. Prosessen med å opprette ordren i Commerce Headquarters oppretter de tilknyttede beholdningstransaksjonene. For ordrer for e-handelskanalen har Commerce Headquarters bare informasjon om beholdningstransaksjonene, etter at transaksjonene er sendt til Commerce Headquarters via P-jobben, og ordresynkroniseringsprosessen er fullført. Det er derfor viktig at du forstår at verdien for lagerets statiske utvalg som er oppgitt i jobben **Produkttilgjengelighet**, ikke er 100 prosent nøyaktig i sanntid på grunn av den konstante salgsbehandlingen som skjer på tvers av distribuerte servere.
+- Hvis beholdningen ble solgt for et produkt i en butikk via hentesalgs- eller asynkront kundeordresalg i POS-programmet, har ikke Headquarters direkte informasjon om den tilknyttede lageravgangstransaksjonen for salget. Headquarters vil ha informasjon om beholdningen som er solgt for disse typene butikksalg, bare etter at P-jobben laster opp den tilknyttede transaksjonen fra butikkens kanaldatabase til Headquarters, og de tilknyttede salgsordrene opprettes via utdragspostering eller posteringsprosessene for fordelingsfeed. Prosessen med å opprette ordren i Headquarters oppretter de tilknyttede beholdningstransaksjonene. 
+- For ordrer for e-handelskanalen har Headquarters bare informasjon om beholdningstransaksjonene etter at transaksjonene er sendt til Headquarters via P-jobben og ordresynkroniseringsprosessen er fullført.
 
 Følg denne fremgangsmåten for å ta et øyeblikksbilde av lager i Commerce Headquarters.
 
 1. Gå til **Retail og Commerce \> IT for Retail og Commerce \> Produkter og beholdning \> Produkttilgjengelighet**.
-1. Velg **OK** for å kjøre jobben **Produkttilgjengelighet**. Du kan også planlegge denne jobben slik at den kjøres i et parti.
+1. Velg **OK** for å kjøre jobben **Produkttilgjengelighet**. Du kan også planlegge denne jobben, slik at den kjøres i et parti.
 
-Når jobben **Produkttilgjengelighet** er ferdig kjørt, må dataene som ble tatt opp, sendes til databasene for e-handelskanalen, slik at det siste statiske utvalget av Commerce Headquarters-beholdningen kan vurderes i beregningen av den estimerte lagerbeholdningen.
+Når jobben **Produkttilgjengelighet** er ferdig kjørt, må dataene som ble tatt opp, sendes til kanaldatabasene, slik at det siste statiske utvalget av Headquarters-beholdningen kan vurderes i beregningen av den estimerte lagerbeholdningen.
+
+Følg denne fremgangsmåten for å synkronisere øyeblikksbildedata fra hovedkontoret til kanaldatabasene.
 
 1. Gå til **Detaljhandel og handel \> IT for detaljhandel og handel \> Distribusjonsplan**.
-1. Kjør jobben **1130** (**Produkttilgjengelighet**) for å synkronisere dataene fra det statiske utvalget som jobben **Produkttilgjengelighet** opprettet fra Commerce Headquarters til kanaldatabasene dine.
+1. Kjør jobben **1130** (**Produkttilgjengelighet**) for å synkronisere dataene fra det statiske utvalget som jobben **Produkttilgjengelighet** opprettet fra Headquarters til kanaldatabasene dine.
 
-Når beholdningstilgjengelighet forespørres fra fra API-en **GetEstimatedAvailability** eller **GetEstimatedProductWarehouseAvailability**, kjøres en beregning for å få best mulig beregning av beholdningen for produktet. Beregningen refererer til en hvilken som helst e-handelskundeordre i kanaldatabasen, men som ikke ble tatt med i dataene for det statiske utvalget som 1130-jobben leverte. Denne logikken utføres ved å spore den siste behandlede lagertransaksjonen fra Commerce Headquarters og sammenligne den med transaksjonene i kanaldatabasen. Det gir et utgangspunkt for logikken for beregning på kanalsiden, slik at de ekstra lagerflyttingene som oppstod for salgstransaksjoner for kundeordre i kanal for e-handel, kan settes sammen til den estimerte lagerverdien som API-en viser.
+## <a name="inventory-availability-apis-for-e-commerce"></a>API-er for lagertilgjengelighet for e-handel
 
-Logikken for beregning av kanalsiden returnerer en estimert fysisk tilgjengelig verdi og en total tilgjengelig verdi for det forespurte produktet og lageret. Verdiene kan vises på ditt e-handelsområde hvis du vil, eller de kan brukes til å utløse andre forretningslogikker på ditt e-handelsområde. Du kan for eksempel vise en "ikke på lager"-melding i stedet for det faktiske lagerantallet som API-en sendte.
+Commerce inneholder følgende APIer for e-handelscenarier for å spørre etter lagertilgjengelighet for et produkt:
 
-Beregningslogikken som API-ene for e-handel på kanalsiden bruker for den estimerte lagerverdien, kan evaluere lageret basert bare på kundeordrer som er opprettet i kanaldatabasen, men som ennå ikke er synkronisert og postert i Commerce Headquarters. Hvis kanaldatabasen også inneholder transaksjonsdata for kontantsalg for butikkspesifikke lagre, vil kontantsalget ikke faktoreres til beregning av ehandel på kanalsiden for disse lagrene.
+- **GetEstimatedAvailability** – Bruk denne API-en til å spørre etter lagerbeholdning for et produkt eller en produktvariant i det elektroniske kanallageret eller lagrene som er koblet til den elektroniske kanalens innfrielsesgruppe.
+- **GetEstimatedProductWarehouseAvailability** – Bruk denne API-en til å spørre om beholdning for et produkt eller en produktvariant fra et bestemt lager.
 
-## <a name="configure-the-inventory-lookup-operation-in-the-pos-channel"></a>Konfigurer lageroppslagsoperasjonen i POS-kanalen
+> [!NOTE]
+> Disse API-ene erstatter API-ene **GetProductAvailabilities** og **GetAvailableInventoryNearby** i Commerce-versjon 10.0.7 og tidligere.
 
-I Retail versjon 10.0.9 og tidligere brukte operasjonen **Beholdningsoppslag** fra POS et servicekall i sanntid til Commerce Headquarters for å få beholdningsinformasjon for det valgte produktet, både for brukerens gjeldende butikk og andre butikker som er konfigurert for oppfyllelsesgruppen som en del av kanalkonfigurasjonen for butikken. I Commerce versjon 10.0.10 og senere kan du slå av servicekall i sanntid til Commerce Headquarters. I stedet kan du bruke beregning på kanalsiden på Commerce-serveren til å fastslå lagerbeholdningen som er fysisk tilgjengelig for butikken og andre lokasjoner som er definert i oppfyllelsesgruppen. Denne kanalberegnede lagerkonfigurasjonen er også nyttig for steder der Internett-tilkoblingen er upålitelig, fordi du ikke behøver å være tilkoblet for å få lageroppslag fra Commerce Headquarters.
+Begge APIer brukes internt i beregningslogikken på kanalsiden og returner estimert **fysisk tilgjengelig** antall, **totalt tilgjengelig antall** , **måleenhet (UoM)** og **lagernivå** for det ønskede produktet og lageret. De returnerte verdiene kan vises på ditt e-handelsområde hvis du vil, eller de kan brukes til å utløse andre forretningslogikker på ditt e-handelsområde. Du kan for eksempel hindre innkjøp av produkter med et lager uten lagernivå.
 
-Når beregning på kanalsiden er riktig konfigurert og administrert, kan det gi et mer pålitelig estimat over gjeldende butikkbeholdning, fordi dette bruker transaksjonsdataene som er i handelskanaldatabasen, men som Commerce Headquarters kanskje ikke har informasjon om ennå. Hvis du for eksempel bruker det eksisterende servicekallet i sanntid for lageroppslag i POS, vil ikke Commerce Headquarters ennå ha informasjon om kontantsalg som akkurat har skjedd for et produkt. Derfor vil lagerbeholdningsverdien som er returnert av Commerce Headquarters for dette produktet, sannsynligvis overskride butikkens faktiske lagerbeholdning med én enhet. Hvis du imidlertid bruker beregning på kanalsiden, kan kontantsalget faktoreres inn i beregningen og trekkes fra beholdningsverdien som vises. Selv om verdiene som både kanalsiden og servicekallet i sanntid oppgir, bare er estimater av lagerbeholdningen, er verdien som beregning på kanalsiden oppgir, mye mer sannsynlig å være nøyaktig for den gjeldende butikken.
+Selv om andre API-er som er tilgjengelige på Commerce-serveren, kan gå direkte til headquarters for å hente lagerbeholdningsantall for produkter, anbefaler vi ikke at de brukes i et miljø med e-handel, på grunn av potensielle ytelsesproblemer og den relaterte innvirkningen som disse hyppige forespørslene kan ha på Headquarters-serverne. Med beregning på kanalsiden kan de to APIene som er nevnt ovenfor, i tillegg gi et mer nøyaktig estimat over tilgjengeligheten til et produkt ved å ta hensyn til transaksjonene som er opprettet i kanalene som ennå ikke er kjent for headquarters.
 
-### <a name="get-started-with-pos-channel-side-calculated-inventory-availability"></a>Kom i gang med beregnet lagertilgjengelighet for POS-kanalsiden
+For å bruke de to APIene må du aktivere funksjonen **Beregning av optimalisert produkttilgjengelighet** via arbeidsområdet **Funksjonsbehandling** i hovedkontoret. Hvis de elektroniske kanalene og butikkanalene bruker samme oppfyllelseslagrene, må du også aktivere funksjonen for **utvidet logikk for lagerberegning på e-handelskanalene** for å ha beregningslogikken på kanalsiden i de to APIene for å angi faktorer i de uposterte transaksjonene (kontantoverføring, kundeordrer og returer) som opprettes i butikkanalen. Du må kjøre jobben **1070** (**Kanalkonfigurasjon**) etter at du har aktivert disse funksjonene.
 
-Hvis du vil bruke logikken for beregning av tilgjengelighet og slå av sanntidstjenestekall for lageroppslag fra salgsstedsappen, må du først aktivere funksjonen **Beregning av optimalisert produkttilgjengelighet** via arbeidsområdet **Funksjonsbehandling** i Commerce Headquarters. I tillegg til å aktivere funksjonen, må du endre **funksjonalitetsprofilen**.
+Følg denne fremgangsmåten for å definere hvordan produktantallet skal returneres i API-resultatet.
 
-Hvis du vil endre **funksjonalitetsprofilen**, gjør du følgende:
+1. Gå til **Detaljhandel og handel \> Hovedkvarteroppsett \> Parametere \> Handelsparametere**.
+1. Velg kategorien **Lager**. Deretter konfigurerer du verdien for innstillingen **Antall i API-utdata** i hurtigfanen for **Lagertilgjengelighet for APIer for e-Commerce**.
+1. Kjør jobben **1070** (**Kanalkonfigurasjon**) for å synkronisere den siste innstillingen for kanalene.
+
+Innstillingen **Antall i API-utdata** gir tre alternativer:
+
+- **Returlagerantall** - Fysisk tilgjengelig og totalt tilgjengelig antall for et forespurt produkt returneres i API-utdata.
+- **Returlagerantall som trekker fra lagerbufferen** - Antallet som returneres i API-utdataene, justeres ved å trekke fra lagerbufferverdien. Hvis du vil ha mer informasjon om lagerbufferen, kan du se [Konfigurere lagerbuffere og lagernivåer](inventory-buffers-levels.md).
+- **Ikke returlagerantall** - Bare lagernivået returneres i API-utdataene. Hvis du vil ha mer informasjon om lagernivå, kan du se [Konfigurere lagerbuffere og lagernivåer](inventory-buffers-levels.md).
+
+Du kan bruke `QuantityUnitTypeValue`-API-parameteren til å angi enhetstypen du vil at APIene skal returnere antall i. Denne parameteren støtter alternativene **lagerenheten** (standard), **innkjøpsenhet** og **salgsenhet**. Det returnerte antallet avrundes til den definerte presisjonen i tilsvarende måleenhet (måleenhet) i hovedkontoret.
+
+**GetEstimatedAvailability**-API-en tilbyr følgende inndataparametere som støtter forskjellige spørringsscenarier:
+
+- `DefaultWarehouseOnly` – Bruk denne parameteren til å spørre etter lagerbeholdning for et produkt i den elektroniske k+analens standardlager. 
+- `FilterByChannelFulfillmentGroup` og `SearchArea` - Bruk disse to parameterne til å spørre etter lager for et produkt fra alle plukklokasjoner innenfor et bestemt søkeområde, basert på `longitude`, `latitude` og `radius`. 
+- `FilterByChannelFulfillmentGroup` og `DeliveryModeTypeFilterValue` - Bruk disse to parameterne til å spørre etter lagerbeholdning for et produkt fra bestemte lagre som er koblet til innfrielsesgruppen for en online-kanal, og er konfigurert til å støtte bestemte leveringsmåter. Parameteren `DeliveryModeTypeFilterValue` støtter alternativene **alle** (standard), **forsendelse** og **henting**. I et scenario der en nettordre kan oppfylles fra flere forsendelseslagre, kan du for eksempel bruke disse to parameterne til å utføre spørringer mot tilgjengelighet av et produkts lager i alle disse forsendelseslagrene. API-en i dette tilfellet returnerer produktets beholdningsantall og lagernivå i hvert forsendelseslager, pluss et aggregert antall og et akkumulert lagernivå fra alle forsendelseslagre i spørringsområdet.
+ 
+Commerce-modulene kjøpsboks, butikkvelger, ønskerliste, handlekurv og handlekurvikon bruker APIene og parameterne som er nevnt ovenfor, for å vise lagernivåmeldinger for hele e-handelområdet. Commerce-områdebygger inneholder ulike lagerinnstillinger for å kontrollere salgs- og innkjøpsvirkemåten. For mer informasjon, se [Bruke beholdningsinnstillinger](inventory-settings.md).
+
+## <a name="pos-inventory-lookup-with-channel-side-calculation"></a>Lageroppslag for salgssted med beregning på kanalsiden
+
+I Commerce-versjon 10.0.9 og tidligere brukte operasjonen **Beholdningsoppslag** på salgsstedet et servicekall i sanntid til Headquarters for å få beholdningsinformasjon for det valgte produktet, både for brukerens gjeldende butikk og andre butikker som er konfigurert for oppfyllelsesgruppen som en del av kanalkonfigurasjonen for butikken. I Commerce-versjon 10.0.10 og senere kan du slå av serviceanrop i sanntid til hovedkontoret og i stedet bruke beregning på kanalsiden på Commerce-serveren til å fastslå lagerbeholdningen som er fysisk tilgjengelig for butikken og andre lokasjoner som er definert i innfrielsesgruppen. Denne kanalberegnede lagerkonfigurasjonen er også nyttig for steder der Internett-tilkoblingen er upålitelig, fordi du ikke behøver å være tilkoblet for å få lageroppslag fra hovedkvarteret.
+
+Når beregning på kanalsiden er riktig konfigurert og administrert, kan det gi et mer pålitelig estimat over gjeldende butikkbeholdning, fordi dette bruker transaksjonsdataene som er i handelskanaldatabasen, men som hovedkvarteret kanskje ikke har informasjon om ennå. Hvis du for eksempel bruker det eksisterende servicekallet i sanntid for lageroppslag på salgsstedet, vil ikke hovedkvarteret ennå ha informasjon om kontantsalg som akkurat har skjedd for et produkt. Derfor vil lagerbeholdningsverdien som er returnert av hovedkvarteret for dette produktet, sannsynligvis overskride butikkens faktiske lagerbeholdning med én enhet. Hvis du imidlertid bruker beregning på kanalsiden, kan kontantsalget faktoreres inn i beregningen og trekkes fra beholdningsverdien som vises. Selv om verdiene som både kanalsiden og servicekallet i sanntid oppgir, bare er estimater av lagerbeholdningen, er verdien som beregning på kanalsiden oppgir, mye mer sannsynlig å være nøyaktig for den gjeldende butikken.
+
+Følg denne fremgangsmåten for å konfigurere **Lageroppslag** for salgsstedet i hovedkontoret for å bruke beregningslogikken på kanalsiden og slå av servicekall i sanntid.
 
 1. Gå til **Retail og Commerce \> Kanaloppsett \> Salgsstedsoppsett \> Salgsstedsprofiler \> Funksjonalitetsprofiler**.
 1. Velg en funksjonalitetsprofil.
-1. I hurtigfanen **Funksjoner**, i delen **Beregning av lagertilgjengelighet** endrer du verdien i feltet **Modus for beregning av lagertilgjengelighet** fra **Sanntidstjeneste** til **Kanal**. Som standard bruker alle funksjonalitetsprofiler servicekall i sanntid. Derfor må du endre verdien i dette feltet hvis du vil bruke logikken for beregning på kanalsiden. Hver detaljhandelsbutikk som er koblet til den valgte funksjonalitetsprofilen, påvirkes av denne endringen.
+1. I hurtigfanen **Funksjoner**, i delen **Beregning av lagertilgjengelighet** endrer du verdien i feltet **Modus for beregning av lagertilgjengelighet** fra **Sanntidstjeneste** til **Kanal**. Som standard bruker alle funksjonalitetsprofiler servicekall i sanntid. Du må endre verdien i dette feltet hvis du vil bruke logikken for beregning på kanalsiden. Hver detaljhandelsbutikk som er koblet til den valgte funksjonalitetsprofilen, påvirkes av denne endringen.
 
-Du må deretter synkronisere endringene i kanalen via distribusjonsplanprosessen, ved å gjøre følgende:
+Du må deretter synkronisere endringene i kanalene via distribusjonsplanprosessen i Headquarters, ved å gjøre følgende:
 
 1. Gå til **Detaljhandel og handel \> IT for detaljhandel og handel \> Distribusjonsplan**.
 1. Kjør jobben **1070** (**Kanalkonfigurasjon**).
@@ -100,17 +127,16 @@ Hvis du vil sikre det best mulige estimatet for lageret, er det viktig at du bru
 
 - **P-jobben** – P-jobben finnes på siden **Ddistribusjonsplaner** og bør kjøres ofte. Denne jobben bringer e-handelsordrer, asynkrone kundeordrer som POS oppretter, og kontantbestillinger som er opprettet fra kanaldatabasene, til Commerce Headquarters, slik at de kan behandles videre. Før disse dataene er synkronisert fra kanalen til Commerce Headquarters, har ikke Commerce Headquarters informasjon om lagerjusteringer av produkter i lagrene som blir resultatet av disse transaksjonene.
 - **Synkroniser ordrer** – Denne jobben behandler rå transaksjonsdata i Commerce Headquarters som P-jobben tilbyr, og konverterer e-handel og asynkrone kundeordretransaksjoner til salgsordrer i Commerce Headquarters. Før denne jobben er behandlet og salgsordrene er opprettet, blir det ikke opprettet noen lagertransaksjoner. Lagerbeholdningen i Commerce Headquarters vil derfor ikke vurdere transaksjonene.
-- **Beregn transaksjonsutdrag satsvis** – For kontanttransaksjoner som opprettes i butikken, sikrer fordelingsfeedposteringen at lageret som er knyttet til salget, oppdateres effektivt. Hvis du vil ha den mest effektive behandlingen av lagertransaksjoner for kontant, må du konfigurere systemet til å bruke [fordelingsfeedpostering](https://docs.microsoft.com/dynamics365/commerce/trickle-feed).
+- **Beregn transaksjonsutdrag satsvis** – For kontanttransaksjoner som opprettes i butikken, sikrer fordelingsfeedposteringen at lageret som er knyttet til salget, oppdateres effektivt. Hvis du vil ha den mest effektive behandlingen av lagertransaksjoner for kontant, må du konfigurere systemet til å bruke [fordelingsfeedpostering](./trickle-feed.md).
 - **Poster transaksjonsutdrag satsvis** – Denne jobben er også nødvendig for fordelingsfeedpostering. Den følger etter jobben **Beregn transaksjonsutdrag satsvis**. Denne jobben posterer de beregnede utdragene systematisk, slik at salgsordrer for kontantsalg opprettes i Commerce Headquarters og Commerce Headquarters mer nøyaktig gjenspeiler butikkens lager.
 - **Produkttilgjengelighet** – Denne jobben oppretter et øyeblikksbilde av lageret fra Commerce Headquarters.
 - **1130 (Produkttilgjengelighet)** – Denne jobben finnes på siden **Distribusjonsplaner**, og bør kjøres umiddelbart etter jobben **Produkttilgjengelighet**. Denne jobben transporterer lagerutvalgsdata fra Commerce Headquarters til kanaldatabasene.
 
-Det anbefales at du ikke kjører disse satsvise jobbene for ofte (med bare noen minutters mellomrom). Hyppige kjøringer vil overbelaste Commerce Headquarters (HQ) og kan påvirke ytelsen. Generelt er det god praksis å kjøre produkttilgjengelighet og 1130-jobber på en timesbasis, og planlegge P-jobb, synkronisere ordrer og trickle feed posteringsrelaterte jobber med samme eller høyere frekvens.
-
 > [!NOTE]
-> Av hensyn til ytelsen vil beregningen bruke en hurtigbuffer for å finne ut om det er gått lang nok tid til å rettferdiggjøre kjøring av logikken på nytt, når beregninger av beholdningstilgjengelighet på kanalsiden brukes til å lage en forespørsel om beholdningstilgjengelighet ved hjelp av API-er for e-handel eller den nye beholdningslogikken på POS-kanalsiden. Standard hurtigbuffer er satt til 60 sekunder. Du har for eksempel slått på beregning på kanalsiden for butikken og vist lagerbeholdningen for et produkt på siden oppslags **Beholdningsoppslag**. Hvis én enhet av produktet deretter blir solgt, vil ikke siden **Beholdningsoppslag** vise den reduserte beholdningen før hurtigbufferen er tømt. Når brukere har postert transaksjoner i POS, skal de vente 60 sekunder før de kontrollerer at lagerbeholdningen er redusert.
+> - Det er god praksis å kjøre **Produkttilgjengelighet** og **1130**-jobber på en timesbasis og planlegge P-jobb, synkronisere ordrer og fordelingsfeedbaserte jobber med samme eller høyere frekvens.
+> - Av hensyn til ytelsen vil beregningen bruke en hurtigbuffer for å finne ut om det er gått lang nok tid til å rettferdiggjøre kjøring av logikken på nytt, når beregninger av beholdningstilgjengelighet på kanalsiden brukes til å lage en forespørsel om beholdningstilgjengelighet ved hjelp av API-er for e-handel eller beholdningslogikken på POS-kanalsiden. Standard hurtigbuffer er satt til 60 sekunder. Du har for eksempel slått på beregning på kanalsiden for butikken og vist lagerbeholdningen for et produkt på siden oppslags **Beholdningsoppslag**. Hvis én enhet av produktet deretter blir solgt, vil ikke siden **Beholdningsoppslag** vise den reduserte beholdningen før hurtigbufferen er tømt. Når brukere har postert transaksjoner i POS, skal de vente 60 sekunder før de kontrollerer at lagerbeholdningen er redusert.
 
-Hvis forretnings krever mindre buffertid, kan du kontakte kundestøtterepresentanten for å få hjelp.
+Hvis forretnings krever mindre buffertid, kan du kontakte kundestøtterepresentanten for å få assistanse.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

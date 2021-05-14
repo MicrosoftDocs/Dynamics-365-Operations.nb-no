@@ -2,7 +2,7 @@
 title: Oversikt over dataimport- og -eksportjobber
 description: Bruk arbeidsområdet for dataadministrasjon for å opprette og administrere dataimport- og -eksportjobber.
 author: Sunil-Garg
-ms.date: 11/02/2020
+ms.date: 04/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1cb38c812aed60bddadce25f66ec77f4e428be71
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: c660cf5aba786fb6f84776f6443f658ebbfa25d5
+ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751006"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5937336"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Oversikt over dataimport- og -eksportjobber
 
@@ -161,19 +161,7 @@ Hvis du vil importere data raskere, kan parallell behandling av importering av f
     - Angi antall poster for importterskel i feltet **Antall poster for importterskel**. Dette bestemmer antallet poster som skal behandles av en tråd. Hvis en fil har 10 K poster, vil et postantall på 2500 med et oppgaveantall på 4 bety at hver tråd vil behandle 2500 poster.
     - I feltet **Antall importoppgaver** angir du antallet importoppgaver. Dette må ikke overskride maksimalt antall bunketråder som er tilordnet for satsvis behandling i **Systemadministrasjon \>Serverkonfigurasjon**.
 
-## <a name="clean-up-the-staging-tables"></a>Rydd opp i staging-tabellene
-Starter i Platform-oppdatering 29, denne funksjonaliteten er avverget. Dette er erstattet av en ny versjon av jobbhistorie oppryddingsfunksjonalitet forklart nedenfor.
-
-Du kan rydde opp i staging-tabellene ved å bruke **Rydd opp i staging**-funksjonen i **Dataadministrasjon**-arbeidsområdet. Du kan bruke følgende alternativer for å velge hvilke oppføringer som skal slettes fra hvilke staging-tabeller:
-
-- **Enhet** – Kun hvis en enhet er gitt, vil alle oppføringer fra den enhetens staging-tabeller slettes. Velg dette alternativet for å rydde opp i alle data for enheten på tvers av alle dataprosjekter og alle jobber.
-- **Jobb-ID** – Kun hvis en Jobb-ID er gitt, vil alle oppføringer for alle enheter i den valgte jobben slettes fra de passende staging-tabellene.
-- **Dataprosjekter** – Hvis kun ett dataprosjekt er valgt, vil alle oppføringer for alle enheter på tvers av jobber for valgte dataprosjekter slettes.
-
-Du kan også kombinere alternativene for å ytterligere begrense oppføringssettet som er slettet.
-
-## <a name="job-history-clean-up-available-in-platform-update-29-and-later"></a>Opprydding i jobbhistorie (tilgjengelig i plattformoppdatering 29 og senere)
-
+## <a name="job-history-clean-up"></a>Opprydding i jobblogg 
 Oppryddingsfunksjonen for jobblogg i dataadministrasjon må brukes til å planlegge en periodisk opprydding av kjøringsloggen. Denne funksjonaliteten erstatter den tidligere oppryddingsfunksjonaliteten for oppsamlingstabellen, som nå er foreldet. De følgende tabellene vil bli fjernet av oppryddingsprosessen.
 
 -   Alle oppsamlingstabeller

@@ -2,7 +2,7 @@
 title: Opprett en Azure Storage-konto og en Key Vault
 description: Dette emnet forklarer hvordan du oppretter en Azure Storage-konto og en Key Vault.
 author: gionoder
-ms.date: 02/12/2021
+ms.date: 04/29/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 2786d350fde2399aadb35dc653bc15123e0e6d91
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 5c2ddad10f9cbedd77a04fe0f42bdc217fd43344
+ms.sourcegitcommit: 54d3ec0c006bfa9d2b849590205be08551c4e0f0
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893808"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "5963245"
 ---
 # <a name="create-an-azure-storage-account-and-a-key-vault"></a>Opprett en Azure Storage-konto og en Key Vault
 
@@ -80,6 +80,10 @@ I dette emnet fullfører du to hovedtrinn:
 11. Velg **Legg til**, og velg deretter **Lagre Key Vault-endringer**.
 12. På siden **Oversikt** kopierer du **DNS-navn**-verdien for Key Vault. Denne verdien vil bli brukt under konfigurasjon av tjenesten i RCS, og vil bli referert til som *Key Vault-URI*.
 
+> [!NOTE]
+> Hvis du vil ha mer sikkerhet på lagringskontoen, konfigurerer du Azure Defender for Storage.
+> 
+> Hvis du vil ha mer informasjon, kan du se [Innføring i Azure Defender for Storage](/azure/security-center/defender-for-storage-introduction).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

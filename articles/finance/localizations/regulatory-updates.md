@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 2f235726d163b9262fabee4d0a1118600a60eee1
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 275a51620fad50f725dad7a37bd8ee776cf0ce4c
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5890782"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941146"
 ---
 # <a name="regulatory-updates"></a>Forskriftsmessige oppdateringer
 
@@ -47,7 +47,8 @@ For de siste forskriftsmessige oppdateringsplanene kan du se tabellen nedenfor.
 |      Brasil         |   2020. oktober      | 10.0.16      |   DRCST-deklarering SC- SEF 262/2020   |
 |      Brasil         |   2020. oktober      | 10.0.16      |   SPED-regnskap ICMS / IPI register C176   |
 |      Brasil         |   2020. desember      | 10,0,17, 10,0,16HF, 10,0,15HF      |   NF-e NT2020.006 – Identifikasjon av den digitale plattformens mellomledd (oppdateringer av oppsett og valideringsregler)   |
-|      Europa        |   2021. januar       | 10.0.17, 10.0.16HF, 10.0.15HF      |   Brexit – Nord-Irland-protokollens innvirkning på rapportering av fellesskapshandel i EU-land  |
+|      Brasil         |   2021. mars         | 10.0.17, 10.0.18, 10.0.19         |    SPED REINF-oppsett 1.5.1
+|      Europa        |   2021. januar       | 10,0,17, 10,0,16HF, 10,0,15HF      |   Brexit – Nord-Irland-protokollens innvirkning på rapportering av fellesskapshandel i EU-land  |
 |      Tyskland        |   2021. januar       | 10.0.16HF      |   ELSTER UstVA MVA-forhåndsvarslingsformat ble utvidet med to nye bokser 37,50 for avskriving av gjeld som ikke kan inndrives  |
 |      Tyskland        |   2021. januar       | 10.0.17      |   Endringer i XML-struktur for ELSTER MVA-forhåndsvarsling (UstVA)  |
 |      Globalt        |   2021. januar       | 10.0.16      |   Aktiver mekanisme for snudd avregning for mva-/GST-skjema  |

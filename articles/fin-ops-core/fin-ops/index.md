@@ -2,7 +2,7 @@
 title: Dokumentasjon for Finance and Operations-app
 description: Dokumentasjon for Finance and Operations-apper.
 author: robinarh
-ms.date: 07/25/2019
+ms.date: 04/13/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 98b9b9e336af58f2223b8b8b47d9229d908c5616
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: be65f8c49d5a4fb87f7d859c1e012d53515ad073
+ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751832"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5893504"
 ---
 # <a name="finance-and-operations-application-documentation"></a>Dokumentasjon for Finance and Operations-app
 
@@ -44,7 +44,7 @@ Mye av dette innholdet gjelder også for de tilknyttede produktene: Dynamics 365
  <p><a href="get-started/purchase-on-premises.md">Kjøpe Finance and Operations (on-premises)</a></p>
 
 <h3><a href="imp-lifecycle/implementation-lifecycle.md">Implementering av livssyklus</a></h3>
-<p><a href="get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></p>
+<p><a href="/dynamics365/fasttrack/">FastTrack for Dynamics 365</a></p>
 <p><a href="imp-lifecycle/onboard.md">Introdusere et prosjekt</a></p>
 <p><a href="imp-lifecycle/prepare-go-live.md">Klargjøre for aktivering</a></p>
 
@@ -76,7 +76,7 @@ Mye av dette innholdet gjelder også for de tilknyttede produktene: Dynamics 365
 <p><a href="../../finance/cost-accounting/cost-accounting-home-page.md">Kostnadsregnskap</a></p>
 <p><a href="../../finance/fixed-assets/fixed-assets.md">Anleggsmidler</a></p>
 <p><a href="../../finance/general-ledger/general-ledger.md">Økonomimodul</a></p>
-<p><a href="../../finance/project-management/overview-project-management-accounting.md">Prosjektstyring</a></p>
+<p><a href="/dynamics365/project-operations/prod-pma/overview-project-management-accounting">Prosjektstyring</a></p>
 <p><a href="../../finance/public-sector/public-sector-functionality.md">Offentlig sektor</a></p>
 <p><a href="../dev-itpro/lcs-solutions/country-region.md">Regionale forskriftsmessige funksjoner</a></p>
 
@@ -126,13 +126,13 @@ Mye av dette innholdet gjelder også for de tilknyttede produktene: Dynamics 365
 </td>
 <td>
 <h3>Relaterte produkter</h3>
-<h4><a href="../../retail/index.md">Dynamics 365 Commerce</a></h4>
-<p><a href="../../retail/call-center-functionality.md">Telefonsenter</p>
-<p><a href="../../retail/define-maintain-retail-channels.md">Kanaloppsett og -behandling</p>
-<p><a href="../../retail/retail-peripherals-overview.md">MPOS og Cloud POS</p>
-<p><a href="../../retail/dev-itpro/dev-retail-home-page.md">Utvikling og administrasjon av Commerce</p>
+<h4><a href="/dynamics365/commerce/">Dynamics 365 Commerce</a></h4>
+<p><a href="../../commerce/call-center-functionality.md">Telefonsenter</p>
+<p><a href="../../commerce/define-maintain-retail-channels.md">Kanaloppsett og -behandling</p>
+<p><a href="../../commerce/retail-peripherals-overview.md">MPOS og Cloud POS</p>
+<p><a href="../../commerce/dev-itpro/dev-retail-home-page.md">Utvikling og administrasjon av Commerce</p>
 
-<h4><a href="../../human-resources/hr-welcome.md">Dynamics 365 Human Resources</a></h4>
+<h4><a href="/dynamics365/human-resources/">Dynamics 365 Human Resources</a></h4>
 <p><a href="../../human-resources/hr-admin-overview.md">Administratorveiledning</a></p>
 <p><a href="../../human-resources/hr-developer-overview.md">Utviklerveiledning</a></p>
 <p><a href="../../human-resources/hr-hrpro-overview.md">Brukerveiledning</a></p>

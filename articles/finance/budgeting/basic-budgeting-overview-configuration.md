@@ -1,8 +1,8 @@
 ---
 title: Oversikt over budsjettering
 description: Nesten alle selskap som bruker finansfunksjonaliteten i Microsoft Dynamics 365 Finance, må være i stand til å opprette rapporter for budsjett i forhold til faktisk. Denne artikkelen forklarer minimumskonfigurasjonen som er nødvendig for å opprette budsjetter i Finance and Operations eller laste dem inn fra et tredjepartsprogram.
-author: ShylaThompson
-ms.date: 01/11/2018
+author: panolte
+ms.date: 04/29/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.reviewer: roschlom
 ms.custom: 60113
 ms.assetid: 28a9793e-d376-47af-a345-69046bad17df
 ms.search.region: global
-ms.author: sigitac
+ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 70428d6603939d8a36c0d3452e6ffdc6e3864865
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 02122d9145552952412c239a7f541e6a727f061e
+ms.sourcegitcommit: fd15b02fc9caa1c05e56abdc276a7f4b23b0d8f3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5827464"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "5960055"
 ---
 # <a name="budgeting-overview"></a>Oversikt over budsjettering
 
@@ -71,7 +71,7 @@ Funksjonalitet som ble introdusert i Microsoft Dynamics 365 Finance versjon 10.0
 
 Med funksjonen for **Budsjettregisteroppføringer bare for antall** kan du postere en budsjettregistreringsoppføring med bare antall-beløp. Du kan for eksempel postere en budsjettoppføring med et antall på 32 og en pris på null, som resulterer i et beløp på null. Du kan deretter bruke dette antallet i konteksten til en regnskapsrapport for å bestemme en pris per antall. Vær oppmerksom på at ingen forespørsler eller rapporter ble oppdatert som en del av denne funksjonen. Funksjonen gjør det bare mulig å postere et beløp på null.
 
-Funksjonen for **Standard beløpstype for budsjettregisteroppføringer** tillater at standard beløpstype i en budsjettregisteroppføring er en annen beløpstype enn utgift. Linjen for budsjettregisteroppføring vil nå være utgift som standard når hovedkontotypen er utgift. Den vil være inntekt som standard når hovedkontotypen er utgift og vil være utgift som standard for alle andre kontotyper.
+Funksjonen for **Standard beløpstype for budsjettregisteroppføringer** tillater at standard beløpstype i en budsjettregisteroppføring er en annen beløpstype enn utgift. Linjen for budsjettregisteroppføring vil nå være utgift som standard når hovedkontotypen er utgift. Den vil være inntekt som standard når hovedkontotypen er inntekt, og den vil være utgift som standard for alle andre kontotyper.
 
 ## <a name="using-workspaces-and-inquiry-pages-to-track-budget-vs-actuals"></a>Bruke arbeidsområder og forespørselssider til å spore budsjett i forhold til faktisk
 Budsjettlederen kan gå gjennom gjeldende tilstand for et budsjett i arbeidsområdet **Finansbudsjetter og prognoser**. Kategoriene for **utgifter over budsjett** og **omsetning under budsjett** gir en rask oversikt over kombinasjonene av finansdimensjoner der budsjettmål ikke oppfylles, eller er nærmer seg terskelen. Du kan tilpasse budsjetterskelprosenten og finansdimensjonssettene som brukes i disse kategoriene ved å klikke **Konfigurer mitt arbeidsområde**. Kan du klikke **Enhetsledere** for å se arbeidere som er ansvarlige for bestemte finansdimensjonskombinasjoner som er valgt i disse kategoriene. Hvis du for eksempel ser at Utgiftsbudsjett for driftsavdelingen overskrider budsjetterskelen, kan du enkelt finne og kontakte lederen for driftsavdelingen for å diskutere saken. 

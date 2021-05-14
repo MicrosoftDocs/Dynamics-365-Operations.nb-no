@@ -2,7 +2,7 @@
 title: Vanlige spørsmål om Elektronisk fakturering
 description: Dette emnet gir informasjon om vanlige spørsmål angående elektronisk fakturering.
 author: gionoder
-ms.date: 03/17/2021
+ms.date: 04/21/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-platform
@@ -16,18 +16,18 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 1ba1a6c5542c10306d4b7494d33e7ff04504fa95
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 2efad243044304b895726ab763fd3744282abd16
+ms.sourcegitcommit: 9283caad2d0636f98579c995784abec19fda2e3f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893784"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5935639"
 ---
-# <a name="electronic-invoicing-faq"></a>Vanlige spørsmål om Elektronisk fakturering
+# <a name="electronic-invoicing-faq"></a>Vanlige spørsmål om elektronisk fakturering
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet gir svar på vanlige spørsmål om elektronisk fakturering. Elektronisk fakturering utvider de elektroniske faktureringsfunksjonene som finnes i Dynamics 365 Finance, Dynamics 365 Supply Chain Management og Dynamics 365 Project Operations. 
+Dette emnet gir svar på vanlige spørsmål om tjenesten for elektronisk fakturering. Elektronisk fakturering utvider de elektroniske faktureringsfunksjonene som finnes i Dynamics 365 Finance, Dynamics 365 Supply Chain Management og Dynamics 365 Project Operations. 
 
 ## <a name="what-is-important-about-electronic-invoicing-and-why-should-it-matter-to-my-organization"></a>Hva er viktig med elektronisk fakturering, og hvorfor bør det bety noe for organisasjonen min?
 
@@ -49,21 +49,21 @@ Elektronisk fakturering utvider de elektroniske faktureringsfunksjonene som finn
    - Skaleringsfunksjoner for et stort antall sendte dokumenter som gir raskere omløpsoperasjon.
    - Mulighet til å dele løsningene dine med andre firmaer.
 
-## <a name="does-electronic-invoicing-support-the-on-premises-installations-of-finance-supply-chain-management-and-project-operations"></a>Støtter elektronisk fakturering lokale installasjoner av Finance, Supply Chain Management og Project Operations? 
+## <a name="does-electronic-invoicing-service-support-the-on-premises-installations-of-finance-supply-chain-management-and-project-operations"></a>Støtter tjenesten for elektronisk fakturering lokale installasjoner av Finance, Supply Chain Management og Project Operations? 
 
 Den gjeldende plattformen tillater ikke bruk av den lokale versjonen, og det er ingen planer om å støtte den i fremtiden.
 
-## <a name="does-electronic-invoicing-interface-with-the-vendor-import-automation-feature"></a>Kan elektronisk fakturering brukes sammen med funksjonen for automatisk leverandørimport?
+## <a name="does-electronic-invoicing-service-interface-with-the-vendor-import-automation-feature"></a>Kan tjenesten for elektronisk fakturering brukes sammen med funksjonen for automatisk leverandørimport?
 
 Nei. Det finnes planer for dette grensesnittet, men det er ingen planlagt tidslinje. Når det er planlagt, vil datoene bli belyst i [Frigivelsesplaner](/dynamics365/release-plans/).
 
-## <a name="how-does-electronic-invoicing-handle-file-attachments-into-the-electronic-invoice-is-a-sharepoint-server-needed-when-embedding-pdf-files-into-the-xml-file"></a>Hvordan håndterer elektronisk fakturering filvedlegg i den elektroniske fakturaen? Er det nødvendig å ha en SharePoint-server ved innebygging av PDF-filer i XML-filen?
+## <a name="how-does-electronic-invoicing-service-handle-file-attachments-into-the-electronic-invoice-is-a-sharepoint-server-needed-when-embedding-pdf-files-into-the-xml-file"></a>Hvordan håndterer tjenesten for elektronisk fakturering filvedlegg i den elektroniske fakturaen? Er det nødvendig å ha en SharePoint-server ved innebygging av PDF-filer i XML-filen?
 
 Filene som er knyttet til den elektroniske fakturaen, håndteres som innebygde binærdata i et XML-element. Det er ikke nødvendig med en SharePoint-server for å bygge inn PDF-filer, men vedlegget må lagres i dokumentbehandlingssystemet Finance, Supply Chain Management og Project Operations.
 
-## <a name="is-electronic-invoicing-available-according-to-the-regulations-of-my-countryregion"></a>Er elektronisk fakturering tilgjengelig i henhold til bestemmelsene i landet/regionen min?
+## <a name="is-electronic-invoicing-service-available-according-to-the-regulations-of-my-countryregion"></a>Er tjenesten for elektronisk fakturering tilgjengelig i henhold til bestemmelsene i landet/regionen min?
 
-Elektronisk fakturering er en mikroserviceplattform som vil være globalt tilgjengelig.
+Tjenesten for elektronisk fakturering er en mikroserviceplattform som vil være globalt tilgjengelig.
 
 Microsoft planlegger å publisere de elektroniske fakturaformatene og integreringene for landene som er funksjonelt lokalisert av Microsoft. Hvis du vil ha mer informasjon, kan du se [Tilgjengelighet av funksjoner for elektronisk fakturering](e-invoicing-configuration-rcs.md#availability-of-electronic-invoicing-features).
 
@@ -77,21 +77,64 @@ For RCS-registrering kan du gå til <https://marketing.configure.global.dynamics
 
 Hvis du vil ha mer informasjon, kan du se [Regulatory Configuration Services (RCS) – globaliseringsfunksjoner](rcs-globalization-feature.md).
 
-## <a name="do-i-need-to-sign-up-to-get-electronic-invoicing--or-just-turn-it-on-in-feature-management"></a>Må jeg registrere meg for å få elektronisk fakturering, eller kan jeg bare aktivere det i Funksjonsstyring?
+## <a name="do-i-need-to-sign-up-to-get-electronic-invoicing-service-or-just-turn-it-on-in-feature-management"></a>Må jeg registrere meg for å få tjenesten for elektronisk fakturering, eller kan jeg bare aktivere det i Funksjonsstyring?
 
 Hvis du har lisens for Finance, Supply Chain Management og Project Operations, kan du se [Komme i gang med tjenesteadministrasjon for tillegget for elektronisk fakturering](e-invoicing-get-started-service-administration.md) for å registrere deg for elektronisk fakturering.
 
-## <a name="does-electronic-invoicing-work-with-tier-1-virtual-machines-what-is-the-minimal-required-environment"></a>Fungerer elektronisk fakturering med virtuelle maskiner på nivå 1? Hva er det minste nødvendige miljøet?
+## <a name="does-electronic-invoicing-service-work-with-tier-1-virtual-machines-what-is-the-minimal-required-environment"></a>Fungerer tjenesten for elektronisk fakturering med virtuelle maskiner på nivå 1? Hva er det minste nødvendige miljøet?
 
-Integrering med elektronisk fakturering krever at minst en virtuell maskin på nivå 2 er vert for Finance eller Supply Chain Management. Hvis du vil ha mer informasjon om miljøplanlegging, kan du se [Miljøplanlegging](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
+Integrering med tjenesten for elektronisk fakturering krever at minst en virtuell maskin på nivå 2 er vert for Finance eller Supply Chain Management. Hvis du vil ha mer informasjon om miljøplanlegging, kan du se [Miljøplanlegging](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
 
-## <a name="does-electronic-invoicing-have-a-test-mode-for-testing-invoice-submission"></a>Har elektronisk fakturering en testmodus for testing av fakturainnsending?
+## <a name="does-electronic-invoicing-service-have-a-test-mode-for-testing-invoice-submission"></a>Har tjenesten for elektronisk fakturering en testmodus for testing av fakturainnsending?
 
 Dette kan oppnås ved hjelp av konfigurasjon. Hvis du vil teste fakturainnsending, kan du koble til Finance eller Supply Chain Management fra et UAT-miljø (brukergodkjenningstest) og sende testfakturaene. Elektronisk fakturering støtter konfigurering av digitale testsertifikater, og når det gjelder e-fakturaer som krever digital godkjenning, støtter oppsett av en URL-adresse fra testwebtjenester som er publisert av skattemyndighetene.
 
-## <a name="is-there-any-documentation-about-the-out-of-box-country-specific-electronic-invoicing-features"></a>Finnes det dokumentasjon om medfølgende landspesifikke funksjoner for elektronisk fakturering?
+## <a name="is-there-any-documentation-about-the-out-of-box-country-specific-electronic-invoicing-features"></a>Finnes det dokumentasjon om medfølgende landspesifikke funksjoner for tjenesten for elektronisk fakturering?
 
 Ja. Hvis du vil ha informasjon om tilgjengeligheten av funksjoner for elektronisk fakturering og formatene de støtter, kan du se [Tilgjengelighet av funksjoner for elektronisk fakturering](e-invoicing-configuration-rcs.md#availability-of-electronic-invoicing-features).
+
+## <a name="does-the-electronic-invoicing-service-allow-a-legal-entity-in-finance-or-supply-chain-management-that-is-configured-for-a-specific-country-to-consume-electronic-invoicing-features-from-different-countryregions"></a>Tillater tjenesten for elektronisk fakturering en juridisk enhet i Finance eller Supply Chain Management som er konfigurert for et bestemt land til å forbruke elektroniske faktureringsfunksjoner fra ulike land/områder?
+
+Ja. Funksjonene for elektronisk fakturering kan brukes til å behandle forretningsdokumentinnsendinger uavhengig av landet til den juridiske enheten, hvis følgende er sann:
+
+   - Forretningsdokumentet som genereres, bruker den riktige dokumentmodelltilordningen.
+   - Det er samsvar mellom forretningsdokumentet og gjeldende regler konfigurert i funksjonen for elektronisk fakturering.
+
+## <a name="does-the-electronic-invoicing-service-use-the-same-configuration-and-design-experience-provided-by-the-electronic-reporting-module-in-finance-and-supply-chain-management"></a>Bruker tjenesten for elektronisk fakturering den samme konfigurasjons- og utformingserfaringen som tilbys av modulen for elektronisk rapportering i Finance og Supply Chain Management? 
+
+Ja. De samme utformingsverktøyene som brukes i ER-modulen (Electronic Reporting) i Finance og Supply Chain Management brukes til å opprette og konfigurere konfigurasjoner for datamodelltilordning og filformat. Disse designerverktøyene brukes også i RCS (Regulatory Configuration Services) til å opprette og konfigurere konfigurasjoner for datamodelltilordning og filformat som brukes i konfigurasjonen av e-faktureringsfunksjonene.
+
+## <a name="can-the-applicability-rules-be-extended-and-configured-so-that-they-arent-tied-to-any-specific-parameter-such-as-a-legal-entity"></a>Kan gjeldende regler utvides og konfigureres, slik at de ikke er knyttet til noen bestemte parametere, for eksempel en juridisk enhet?
+
+Ja. Gjeldende regler er fullt konfigurerbare. Du kan legge til eller fjerne setninger, bygge logikkoperasjoner og gruppere og fjerne gruppering for setninger. Hvis du vil ha mer informasjon, kan du se [Relevansregler](e-invoicing-configuration-rcs.md?toc=/dynamics365/finance/toc.json#applicability-rules).
+
+## <a name="does-the-electronic-invoicing-service-support-adding-other-er-format-configurations-to-generate-other-types-of-documents-does-it-support-sending-the-documents-electronically-to-customers-such-as-a-delivery-note"></a>Støtter tjenesten for elektronisk fakturering å legge til andre ER-formatkonfigurasjoner for å generere andre dokumenttyper? Støtter det sending av dokumentene elektronisk til kunder, for eksempel en følgeseddel?
+
+Du kan bruke andre ER-formatkonfigurasjoner til å lage de ønskede utdatafilene. ER-formatkonfigurasjonen må imidlertid avledes fra samme ER-fakturamodelltilordning som er konfigurert i Finance eller Supply Chain Management for å generere forretningsdokumenter. Ved å sende utdatafilen direkte til kunden som en EDI-transaksjon, støttes ikke innholdet som standard av elektronisk fakturering.
+
+## <a name="does-the-electronic-invoicing-service-support-exchanging-electronic-invoices-with-customers-does-it-support-configuring-different-invoice-formats-for-the-same-invoice"></a>Støtter tjenesten for elektronisk fakturering utveksling av elektroniske fakturaer med kunder? Støtter det konfigurasjon av ulike fakturaformater for den samme fakturaen?
+
+Muligheten til å motta og importere elektroniske fakturaer for leverandører er på kartet, men automatisk sending av de elektroniske fakturaene til kunder støttes ikke nå.
+
+## <a name="does-the-electronic-invoicing-service-extend-to-support-exchanging-edi-messages-with-other-companies"></a>Omfatter tjenesten for elektronisk fakturering støtte utveksling av EDI-meldinger med andre firmaer?
+
+Fokus for tjenesten for elektronisk fakturering er å utveksle elektroniske fakturameldingstyper som drives av forskriftsmessige samsvarskrav. Mottak og import av elektroniske leverandørfakturaer er på kartet, men sending av elektroniske fakturafiler til kundene støtter ikke som standard, bortsett fra i scenarier der sending av den elektroniske fakturaen til kunden er et forskriftsmessig krav.
+
+## <a name="does-the-electronic-invoicing-service-support-importing-or-merging-customizations-made-in-the-er-format-configurations-from-the-legacy-electronic-invoicing-feature"></a>Støtter tjenesten for elektronisk fakturering import eller fletting av tilpasninger som gjøres i ER-formatkonfigurasjonene fra den eldre funksjonen for elektronisk fakturering?
+
+Du kan bruke ER-formatkonfigurasjoner på nytt i tjenesten for elektronisk fakturering. ER-formatkonfigurasjonen må imidlertid avledes fra samme ER-fakturamodelltilordning som funksjonen for elektronisk fakturering av designet til å bruke, og som er konfigurert i Finance eller Supply Chain Management for å generere forretningsdokumenter.
+
+## <a name="does-the-electronic-invoicing-service-support-issuing-electronic-invoices-from-custom-made-tables-if-so-how-do-you-create-the-er-data-model-configurations-for-these-new-tables-and-entities"></a>Støtter tjenesten for elektronisk fakturering utstedelse av elektroniske fakturaer fra egendefinerte tabeller? I så fall, hvordan oppretter du ER-datamodellkonfigurasjonene for disse nye tabellene og enhetene?
+
+Ja. Det krever imidlertid at fakturamodelltilordningen tilpasses og legges til de nødvendige referansene i de egendefinerte tabellene, eller avhengig av kompleksiteten, oppretting av en ny tilordning av fakturamodell.
+
+## <a name="does-the-electronic-invoicing-service-support-different-web-service-endpoints"></a>Støtter tjenesten for elektronisk fakturering forskjellige webtjenestesluttpunkter?
+
+Tjenesten for elektronisk fakturering støtter forskjellige webtjenestesluttpunkter. Du kan bruke konfigurerbar integrasjon med REST-webtjenester eller en rekke parametriserte landspesifikke webtjenesteintegrering. Ulike sluttpunkt kan konfigureres for de samme webtjenestene og APIene ved hjelp av ulike versjoner av konfigurasjoner. Hvis du vil ha mer informasjon, se [Liste over parametere etter handling](e-invoicing-setup.md#list-of-parameters-by-action).
+
+## <a name="is-electronic-invoicing-integrated-with-the-various-invoice-operators-apis-from-the-nordic-countries-or-should-that-be-handled-on-a-case-by-case-basis"></a>Integreres elektronisk fakturering med de ulike fakturaoperatørenes APIer fra de nordiske landene, eller skal de håndteres for hver enkelt sak?
+
+Microsoft utvider kontinuerlig funksjonsdekning for å gi standardintegrasjoner ved hjelp av funksjonene for elektronisk fakturering. Hvis du vil ha mer informasjon om formatene og integreringene som støttes, kan du se [Tilgjengelighet for funksjoner for elektronisk fakturering](e-invoicing-configuration-rcs.md?toc=/dynamics365/finance/toc.json#availability-of-electronic-invoicing-features).
 
 > [!NOTE] 
 > Hvis du ikke fant svaret du er på jakt etter, kan du sende spørsmålet til produktutviklingsgruppen på <D365EInvoicePreview@microsoft.com>. Vi vil enten kontakte deg eller forbedre dekningen av disse vanlige spørsmålene.

@@ -2,7 +2,7 @@
 title: Spore kjøringen av ER-formater for å feilsøke ytelsesproblemer
 description: Dette emnet inneholder informasjon om hvordan du bruker funksjonen ytelsessporing i elektronisk rapportering (ER) for å feilsøke ytelsesproblemer.
 author: NickSelin
-ms.date: 06/12/2019
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 0cf76a9b9af0fc648cb61cefbe92dc7aaa436692
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 13e631d3330eefed09111eca70a5aa111e88274f
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754223"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944659"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Spore utførelse av ER-formater for å feilsøke ytelsesproblemer
 
@@ -47,10 +47,10 @@ Du må også laste ned og lagre følgende filer lokalt.
 
 | Fil                                  | Innhold                               |
 |---------------------------------------|---------------------------------------|
-| Ytelsessporingsmodell.versjon.1     | [Eksempel ER-datamodellkonfigurasjon](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg)    |
-| Ytelsessporingsmetadata.versjon.1  | [Eksempel ER-metadatakonfigurasjon](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg)      |
-| Ytelsessporingstilordning.versjon.1.1 | [Eksempel ER-modelltilordningskonfigurasjon](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Ytelsessporingsformat.versjon.1.1  | [Eksempel ER-formatkonfigurasjon](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg)       |
+| Ytelsessporingsmodell.versjon.1     | [Eksempel ER-datamodellkonfigurasjon](https://download.microsoft.com/download/0/a/a/0aa84e48-8040-4c46-b542-e3bf15c9b2ad/Performancetracemodelversion.1.xml)    |
+| Ytelsessporingsmetadata.versjon.1  | [Eksempel ER-metadatakonfigurasjon](https://download.microsoft.com/download/a/9/3/a937e8c4-1f8a-43e4-83ee-7d599cf7d983/Performancetracemetadataversion.1.xml)      |
+| Ytelsessporingstilordning.versjon.1.1 | [Eksempel ER-modelltilordningskonfigurasjon](https://download.microsoft.com/download/7/7/3/77379bdc-7b22-4cfc-9b64-a9147599f931/Performancetracemappingversion1.1.xml) |
+| Ytelsessporingsformat.versjon.1.1  | [Eksempel ER-formatkonfigurasjon](https://download.microsoft.com/download/8/6/8/868ba581-5a06-459e-b173-fb00f038b37f/Performancetraceformatversion1.1.xml)       |
 
 ### <a name="configure-er-parameters"></a>Konfigurere ER-parametere
 
@@ -84,7 +84,7 @@ For å være tilgjengelig i **Andre**-oppslagsfeltet må en DM-dokumenttype konf
 Anta at du har begynt å utforme en ny ER-løsning for å generere en ny rapport som presenterer leverandørtransaksjoner. For øyeblikket kan du finne transaksjonene for en valgt leverandør på siden **Leverandørtransaksjoner** (gå til **Leverandører \> Leverandører \> Alle leverandør**, velg en leverandør, og deretter, i handlingsruten i kategorien **Leverandør** i gruppen **Transaksjoner**, velger du **Transaksjoner**). Du vil imidlertid ha alle leverandørtransaksjoner samtidig i ett elektronisk dokument i XML-format. Denne løsningen vil bestå av flere ER-konfigurasjoner som inneholder den nødvendige datamodellen, metadataene, modelltilordningen og formatkomponentene.
 
 1. Logg deg på forekomsten av RCS som er klargjort for firmaet ditt.
-2. I denne opplæringen skal du opprette og endre konfigurasjoner for eksempelfirmaet **Litware, Inc.** Kontroller derfor at denne konfigurasjonsleverandøren er lagt til RCS og valgt som aktiv. Hvis du ha instruksjoner, se fremgangsmåten [Opprette konfigurasjonsleverandører og merke dem som aktive](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11).
+2. I denne opplæringen skal du opprette og endre konfigurasjoner for eksempelfirmaet **Litware, Inc.** Kontroller derfor at denne konfigurasjonsleverandøren er lagt til RCS og valgt som aktiv. Hvis du ha instruksjoner, se fremgangsmåten [Opprette konfigurasjonsleverandører og merke dem som aktive](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 3. I arbeidsområdet **Elektronisk rapportering** velger du flisen **Rapporteringskonfigurasjoner**.
 4. På siden **Konfigurasjoner** importerer du ER-konfigurasjoner som du lastet ned som en forutsetning til RCS, i denne rekkefølgen: datamodell, metadata, modelltilordning, format. For hver konfigurasjon følger du disse trinnene:
 
@@ -101,7 +101,7 @@ Anta at du er ferdig med å utforme den første versjonen av ER-løsningen. Nå 
 ### <a name="import-an-er-configuration-from-rcs-into-finance-and-operations"></a><a id='import-configuration'></a>Importere en ER-konfigurasjon fra RCS til Finance and Operations
 
 1. Logg på programforekomsten.
-2. I denne opplæringen skal du importere konfigurasjonene fra RCS-forekomsten (der du utformer ER-komponentene) i forekomsten (der du tester og til slutt bruker dem). Du må derfor kontrollere at alle de nødvendige artefaktene er forberedt. Hvis du vil ha instruksjoner, kan du se fremgangsmåten [Importere ER-konfigurasjoner (Electronic Reporting) fra Regulatory Configuration Service (RCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/rcs-download-configurations).
+2. I denne opplæringen skal du importere konfigurasjonene fra RCS-forekomsten (der du utformer ER-komponentene) i forekomsten (der du tester og til slutt bruker dem). Du må derfor kontrollere at alle de nødvendige artefaktene er forberedt. Hvis du vil ha instruksjoner, kan du se fremgangsmåten [Importere ER-konfigurasjoner (Electronic Reporting) fra Regulatory Configuration Service (RCS)](rcs-download-configurations.md).
 3. Følg disse trinnene for å importere konfigurasjonene fra RCS til programmet:
 
     1. I arbeidsområdet **Elektronisk rapportering**, på flisen for konfigurasjonsleverandøren **Litware, Inc.**, velger du **Repositorier**.

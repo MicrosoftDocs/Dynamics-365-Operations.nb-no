@@ -2,7 +2,7 @@
 title: Kvalitetsstyring for lagerprosesser
 description: Dette emnet inneholder informasjon om funksjonen for kvalitetsstyring for lagerprosesser. Denne funksjonen utvider funksjonaliteten til kvalitetsstyring og lar brukere integrere vareprøvekontroller i lagermottaksprosessen ved hjelp av avansert lagerstyring.
 author: Henrikan
-ms.date: 04/02/2020
+ms.date: 03/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-04-02
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: a049a7832e02dbd2debdd016a6b723726cc25df0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: db23ffcea4da28fa309ccca12540e0edaf00ad6c
+ms.sourcegitcommit: 8362f3bd32ce8b9a5af93c8e57daef732a93b19e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5834271"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5956088"
 ---
 # <a name="quality-management-for-warehouse-processes"></a>Kvalitetsstyring for lagerprosesser
 
@@ -620,5 +620,8 @@ Du har definert arbeids- og plasseringsdataene for lager 51 for å sikre at arbe
 > [!NOTE]
 > Vurder å legge til kvalitet ut-oppføringen i et menyelement for mobilenhet der aktivitetskoden er *Vis åpen arbeidsliste*. Hvis du vil ha et eksempel, se menyelementet mobilenhet med navnet **Arbeidsliste** i demodataene. Legg først til *Kvalitetsordre*-arbeidsklassen i et brukerstyrt menyelement, fordi denne arbeidsklassen kreves for at arbeid skal vises i arbeidslisten. Legg deretter til *Kvalitetsordre*-arbeidsklassen i menyelementet **Arbeidsliste**. Brukere som har tilgang til arbeidslisten, vil da kunne plukke og behandle arbeidet som genereres automatisk av kvalitetsordrevalidering.
 
+## <a name="additional-resources"></a>Tilleggsressurser
+
+- [Oversikt over kvalitets- og avviksstyring](quality-management-processes.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

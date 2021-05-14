@@ -1,8 +1,8 @@
 ---
 title: Opprette og vedlikeholde en lagerblokkering
-description: Denne fremgangsmåten viser hvordan du forhindrer at fysisk lagerbeholdning blir reservert av andre utgående kildedokumenter ved å bruke lagerblokkeringen.
+description: Dette emnet beskriver hvordan du bruker lagerblokkering til å forhindre at fysisk lagerbeholdning blir reservert av andre utgående kildedokumenter.
 author: perlynne
-ms.date: 08/08/2019
+ms.date: 03/23/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -14,41 +14,47 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 319ae6da1e0e504316b2d96001d582e835cef20c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e9aa38ca52da577fff258bb330922ad7f4044330
+ms.sourcegitcommit: 8362f3bd32ce8b9a5af93c8e57daef732a93b19e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5834007"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5956164"
 ---
 # <a name="create-and-maintain-an-inventory-blocking"></a>Opprette og vedlikeholde en lagerblokkering
 
 [!include [banner](../../includes/banner.md)]
 
-Denne fremgangsmåten viser hvordan du forhindrer at fysisk lagerbeholdning blir reservert av andre utgående kildedokumenter ved å bruke lagerblokkeringen. Du kan kjøre prosedyren i demonstrasjonsdatafirmaet USMF med eksempelverdiene som vises. Du må ha en vare med fysisk lagerbeholdning tilgjengelig før du starter denne fremgangsmåten.
+Dette emnet beskriver hvordan du bruker lagerblokkering til å forhindre at fysisk lagerbeholdning blir reservert av andre utgående kildedokumenter. Du må ha en vare som fysisk lagerbeholdning er tilgjengelig for, før du starter denne fremgangsmåten.
 
+## <a name="block-inventory"></a>Sperr beholdning
 
-## <a name="create-an-inventory-blocking"></a>Opprette en lagerblokkering
-1. I **navigasjonsruten** går du til **Moduler > Lagerstyring > Periodiske oppgaver > Lagerblokkering**.
-2. Klikk på **Ny**.
-3. Klikk på rullegardinknappen i **Varenummer**-feltet for å åpne oppslaget.
-4. Velg varen du vil bruke, i listen. Velg et varenummer med fysisk lagerbeholdning som du vil blokkere. Hvis du bruker USMF, kan du velge vare M9201.  
-5. Angi et tall i **Antall**-feltet. Hvis du bruker varen M9201, må du velge mindre enn 200.
-6. Vis hurtigfanen **Lagerdimensjoner**.
-7. Klikk på rullegardinknappen i **Lager**-feltet for å åpne oppslaget.
-8. Finn og velg ønsket post i listen. Hvis du bruker vare M9201, kan du velge lager 51.  
-9. Klikk på **Lagre**.
+Følg denne fremgangsmåten for å opprette en lagerblokkeringspost, slik at lageret er sperret.
+
+1. Gå til **Lagerstyring \> Periodiske oppgaver \> Lagerblokkering**.
+1. Velg **Ny** i handlingsruten.
+1. Angi hodet i den nye blokkeringsposten, angi feltet **Varenummer** til varen du vil blokkere, og angi en beskrivelse.
+1. Skriv inn et antall elementer som skal blokkeres, i hurtigfanen **Generelt** i feltet **Antall**.
+1. Angi området og lageret der varene du vil blokkere, for øyeblikket finnes i hurtigkategorien **Lagerdimensjoner**.
+1. Velg **Lagre** i handlingsruten.
 
 ## <a name="update-the-conditions-of-the-inventory-blocking"></a>Oppdatere betingelsene for lagerblokkeringen
-1. Angi et tall i hurtigfanen **Generelt** i feltet **Antall**. Oppdater lagerantall-feltet for å gjenspeile antallet som skal blokkeres.  
-2. Angi en dato i feltet **Forventet dato**. Du kan angi når den blokkerte lagertransaksjonen forventes å bli tilgjengelig for reservasjon, ved å tilordne en forventet dato. Hvis alternativet Forventede mottak er valgt for lagerblokkeringen, som den er som standard når du manuelt oppretter en blokkering, vises denne datoen på den forventede transaksjonen.  
-3. Klikk på **Lagre**.
 
-## <a name="remove-the-inventory-blocking"></a>Fjerne lagerblokkeringen
-1. Klikk på **Slett** i **handlingsruten**.
-2. Klikk på **Ja**.
-3. Lukk siden.
+Følg denne fremgangsmåten for å oppdatere en lagerblokkeringspost.
 
+1. Gå til **Lagerstyring \> Periodiske oppgaver \> Lagerblokkering**.
+1. I listeruten velger du den relevante blokkeringsposten.
+1. Rediger posten etter behov. Du kan for eksempel endre verdien i feltet **Forventet dato** for å angi når det blokkerte lageret forventes å bli tilgjengelig for reservasjon. Hvis alternativet **Forventede mottak** er valgt, vises datoen på den forventede transaksjonen. (Alternativet **Forventede mottak** velges som standard når du oppretter en blokkeringspost manuelt.)
+1. Velg **Lagre** i handlingsruten.
 
+## <a name="unblock-inventory"></a>Oppheve blokkering av lager
+
+Følg denne fremgangsmåten for å fjerne en lagerblokkeringspost, slik at sperring av lageret oppheves.
+
+1. Gå til **Lagerstyring \> Periodiske oppgaver \> Lagerblokkering**.
+1. I listeruten velger du den relevante blokkeringsposten.
+1. Velg deretter **Slett** i handlingsruten.
+1. Du blir bedt om å bekrefte operasjonen. Klikk på **Ja** for å fortsette.
+1. Lukk siden.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

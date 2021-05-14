@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6539bf6acf0216f1491cbf852f2c9a7063fbe26e
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 9fffe8aa99641846c0052dfa4a42856c8dddb8a5
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752872"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923231"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Hva er nytt eller endret i Dynamics AX 7.0 (februar 2016)
 
@@ -732,7 +732,7 @@ Med detaljhandelsserver og databehandling kan kunder og bedrifter opprette en om
 </tr>
 <tr>
 <td>Flytte data mellom Microsoft Dynamics AX-underkontoen og -kanalene ved å bruke Commerce Data Exchange.</td>
-<td>Commerce Data Exchange er et system som overfører data mellom Microsoft Dynamics AX og detaljhandelskanaler, for eksempel nettbutikker eller fysiske butikker. Hvis du vil ha mer informasjon, kan du se <a href="https://technet.microsoft.com/library/dn741440.aspx">Commerce Data Exchange [AX 2012]</a>.</td>
+<td>Commerce Data Exchange er et system som overfører data mellom Microsoft Dynamics AX og detaljhandelskanaler, for eksempel nettbutikker eller fysiske butikker. Hvis du vil ha mer informasjon, kan du se <a href="/dynamicsax-2012/appuser-itpro/commerce-data-exchange">Commerce Data Exchange [AX 2012]</a>.</td>
 <td>Dette er en funksjonell paritet med Microsoft Dynamics AX 2012 CU8. Vær imidlertid oppmerksom på følgende detaljer:
 <ul>
 <li>Commerce Data Exchange er rekonstruert for skyen.</li>

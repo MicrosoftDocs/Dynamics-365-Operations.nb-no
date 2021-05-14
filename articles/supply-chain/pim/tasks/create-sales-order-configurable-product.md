@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 81e573593fbbb0bf87e53c5cbd985b38a8db89ac
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8607de5705354aa58c985fb536f3e1d52acd1f37
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841605"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5921295"
 ---
 # <a name="create-a-sales-order-for-a-configurable-product"></a>Opprette en salgsordre for et konfigurerbart produkt
 
@@ -26,30 +26,27 @@ ms.locfileid: "5841605"
 
 Denne prosedyren viser hvordan du bruker en konfigurasjonsmal for et produkt på en salgsordre. Dette eksemplet bruker høyttalermodellen D0006 i demonstrasjonsdatafirmaet USMF. En salgsordrebehandler bruker vanligvis denne prosedyren.
 
-
 ## <a name="create-a-sales-order"></a>Opprette en salgsordre
-1. Klikk på Salgsordrebehandling og -spørring.
-2. Klikk på Ny.
-3. Klikk på Salgsordre.
-4. Velg US-001 i Kundekonto-feltet. 
-5. Klikk på OK.
-6. Velg D0006 i feltet Varenummer.
+
+1. Gå til **Salg og markedsføring \> Arbeidsområder \> Salgsordrebehandling og -spørring**.
+1. Velg **Ny**.
+1. Velg **Salgsordre**.
+1. Velg *US-001* i **Kundekonto**-feltet. 
+1. Velg **OK**.
+1. Velg *D0006* i feltet **Varenummer**.
     * Du må velge et konfigurerbart produkt for denne oppgaven.  
-7. Klikk på Produkt og forsyning.
-8. Klikk på Konfigurer linje.
-    * Vær oppmerksom på at prisen er endret, basert på konfigurasjonen som ble valgt, og at feltet for å ta med kabel er satt til sann.  
+1. Velg **Produkt og forsyning**.
+1. Velg **Konfigurer linje**.
+    * Vær oppmerksom på at prisen er endret, basert på konfigurasjonen som ble valgt, og at feltet for å **ta med kabel** er satt til *Sann*.  
     * Vær oppmerksom på standardprisen og innstillingene som er valgt for kabelen.  
-9. Klikk på Last inn mal.
-    * Dette eksemplet viser hvordan du kan bruke en mal for å velge en forhåndsdefinert konfigurasjon. Hvis du bruker denne prosedyren som en oppgaveveiledning og ønsker å se andre attributtverdier som er tilgjengelige, må du klikke Lås opp-knappen.  
-10. Klikk på OK.
-11. Klikk på OK.
-12. Vis seksjonen Linjedetaljer.
-13. Klikk på fanen Produkt.
+1. Velg **Lastmal**.
+    * Dette eksemplet viser hvordan du kan bruke en mal for å velge en forhåndsdefinert konfigurasjon. Hvis du bruker denne prosedyren som en oppgaveveiledning og ønsker å se andre attributtverdier som er tilgjengelige, må du velge **Lås opp**-knappen.  
+1. Velg **OK**.
+1. Velg **OK**.
+1. Vis delen **Linjedetaljer**.
+1. Velg **Produkt**-fanen.
     * Konfigurasjonen for varen er nå oppført under produktdimensjonene.  
-14. Lukk siden.
-
-## <a name="select-the-product-configuration"></a>Velge produktkonfigurasjonen
-
+1. Lukk siden.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

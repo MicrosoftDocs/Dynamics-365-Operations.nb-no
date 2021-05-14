@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 022db87d0a26efa948a618344ed392ab638b8790
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 45c6b1e6e75645bb17ce4defa0bca0e6d2131b6e
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5817995"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5921271"
 ---
 # <a name="maintain-route-for-a-product-model"></a>Vedlikeholde rute for en produktmodell
 
@@ -26,43 +26,43 @@ ms.locfileid: "5817995"
 
 Kjører du denne prosedyren krever det at en eksisterende produktmodellkonfigurasjon finnes. Denne fremgangsmåten bruker modellen for High-end-høyttaler i demofirmaet USMF til å lede deg gjennom prosessen.
 
-
 ## <a name="add-a-route-operation"></a>Legge til en ruteoperasjon
-1. Klikk på Definisjon av produktvariantmodell.
-2. Klikk på Produktkonfigurasjonsmodeller.
-3. Finn og velg ønsket post i listen.
+
+1. Gå til **Behandling av produktinformasjon \> Produkter \> Produktkonfigurasjonsmodeller**.
+1. Finn og velg ønsket post i listen.
     * Velg High-end-høyttalermodellen for denne øvelsen.  
-4. Klikk på koblingen i den valgte raden i listen.
-5. Utvid delen Ruteoperasjoner.
-6. Klikk på Legg til.
-7. Skriv inn en verdi i Navn-feltet.
-8. Skriv inn en verdi i feltet Beskrivelse.
-9. Klikk på Lagre.
+1. Velg koblingen i den valgte raden i listen.
+1. Utvid delen **Ruteoperasjoner**.
+1. Velg **Legg til**.
+1. Skriv inn en verdi i **Navn**-feltet.
+1. Skriv inn en verdi i **Beskrivelse**-feltet.
+1. Velg **Lagre**.
 
 ## <a name="enter-route-operation-details"></a>Angi detaljer om ruteoperasjon
-1. Klikk på Detaljer om ruteoperasjon.
-2. Angi eller velg en verdi i feltet Operasjon.
-3. I Oper. Nei. angir du et nummer.
+
+1. Velg **Detaljer om ruteoperasjon**.
+1. Angi eller velg en verdi i feltet **Operasjon**.
+1. I feltet **Oper.nr.** angir du et nummer.
     * Operasjonsnumre fastsetter rutesekvensen.  
     * Hver egenskap for en ruteoperasjon kan få en statisk verdi eller tilordnes til et attributt. Tilordning til et attributt fører til at verdien blir definert som en del av konfigurasjonen.  
-4. Angi eller velg en verdi i Rutegruppe-feltet.
+1. Angi eller velg en verdi i **Rutegruppe**-feltet.
     * Rutegruppen bestemmer grunnleggende virkemåte for etterkalkulering, forbruk og oppsett.  
-5. Klikk på fanen Oppsett.
-6. Klikk på fanen Tider.
-7. I feltet Prosessantall angir du et nummer.
+1. Velg **Oppsett**-fanen.
+1. Velg **Tider**-fanen.
+1. I feltet **Prosessantall** angir du et nummer.
     * Bestem hvor mange som skal bli behandlet i løpet av én operasjon.  
-8. Angi et tall i feltet Timer/tid.
+1. Angi et tall i feltet **Timer/tid**.
     * Angi tidsforholdet.  
-9. Merk av for Sett.
-10. Angi et tall i feltet Kjøretid.
+1. Merk av for **Sett**.
+1. Angi et tall i feltet **Kjøretid**.
     * Bestem behandlingstiden for antallet som du har angitt.  
-11. Klikk på fanen Ressursbehov.
-12. Klikk på Legg til.
-13. Merk den valgte raden i listen.
-14. Velg et alternativ i feltet Behovstype.
+1. Velg fanen **Ressursbehov**.
+1. Velg **Legg til**.
+1. Merk den valgte raden i listen.
+1. Velg et alternativ i feltet **Behovstype**.
     * Bestem om du vil angi bestemte ressurser eller egenskaper som de må inneha.  
-15. Angi eller velg en verdi i feltet Behov.
-16. Klikk på OK.
+1. Angi eller velg en verdi i feltet **Behov**.
+1. Velg **OK**.
 
 
 

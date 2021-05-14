@@ -2,7 +2,7 @@
 title: Gavekortmodul
 description: Dette emnet dekker gavekortmoduler og beskriver hvordan du legger dem til på områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 09/15/2020
+ms.date: 04/29/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a4e4e06ab7032d68fcd36a8e80bc714ebaaac821
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 8db7e597241f1fd552f6b960c2b57b0ba83da949
+ms.sourcegitcommit: efde05c758b2e02960760d875569d780d77d5550
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797677"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "5962769"
 ---
 # <a name="gift-card-module"></a>Gavekortmodul
 
@@ -63,6 +63,26 @@ I Commerce-områdebygger under **Områdeinnstillinger \> Tillegg** er det en inn
 
 > [!IMPORTANT]
 > Disse innstillingene er tilgjengelige i Dynamics 365 Commerce 10.0.11-versjonen og er bare nødvendige hvis du trenger støtte for SVS- eller Givex-gavekort. Hvis du oppdaterer fra en eldre versjon av Dynamics 365 Commerce, må du manuelt oppdatere appsettings.json-filen. Hvis du vil ha instruksjoner om oppdatering av appsettings.json-filen, se [Oppdateringer for SDK og modulbibliotek](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file). 
+
+## <a name="extend-internal-gift-cards-for-use-in-e-commerce-storefronts"></a>Utvide interne gavekort til bruk i butikkfasader for e-handel på nettet
+
+Interne gavekort er som standard ikke optimalisert for bruk i butikkfasader for e-handel på nettet. Før du tillater bruk av interne gavekort til betaling, bør du derfor konfigurere dem med utvidelser som gjør det sikrere å bruke dem. Her er gavekortområdene du bør utvide før du tillater bruk av interne gavekort i produksjon:
+
+- **Gavekortnummer** – Nummerserier brukes til å generere gavekortnumre for interne gavekort. Siden nummerserier lett kan forutses, bør du utvide genereringen av gavekortnumre slik at tilfeldige, kryptografisk sikre strenger brukes for gavekortnumrene som utstedes.
+- **GetBalance** – **GetBalance**-API-en brukes til å slå opp gavekortsaldoer. Som standard er denne API-en offentlig. Hvis en PIN-kode ikke kreves for å slå opp gavekortsaldoer, er det en risiko for at angrep med rå kraft kan bruke **GetBalance**-APIen til å prøve å slå opp gavekortnumre som har saldoer. Ved å implementere både PIN-krav til interne gavekort og API-begrensning, kan du redusere risikoen.
+- **PIN-kode** – Som standard støtter ikke interne gavekort PIN-koder. Du bør utvide interne gavekort, slik at en PIN-kode kreves for å slå opp saldoer. Denne funksjonaliteten kan også brukes til å låse gavekort etter fortløpende feil forsøk på å angi PIN-kode.
+
+## <a name="enable-gift-card-payments-for-guest-checkout"></a>Aktivere gavekortbetalinger for gjesteutsjekking
+
+Som standard er ikke gavekortbetalinger aktivert for gjestutsjekking (anonym). Følg denne fremgangsmåten for å aktivere dem.
+
+1. I Commerce Headquarters går du til **Retail og Commerce \> Kanaloppsett \> POS-oppsett \> POS \> POS-operasjoner**.
+1. Merk og hold (eller høyreklikk) hodet i rutenettet, og velg deretter **Sett inn kolonner**.
+1. Merk av for **AllowAnonymousAccess** i dialogboksen **Sett inn kolonner**.
+1. Velg **Oppdater**.
+1. For operasjonene **520** (gavekortsaldo) og **214** setter du verdien **AllowAnonymousAccess** til **1**.
+1. Velg **Lagre**.
+1. Kjør planleggerjobben **1090** for å synkronisere endringer i kanaldatabasen. 
 
 ## <a name="add-a-gift-card-module-to-a-page"></a>Legge til en gavekortmodul på en side
 

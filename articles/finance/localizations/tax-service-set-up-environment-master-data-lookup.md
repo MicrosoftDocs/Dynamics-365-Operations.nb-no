@@ -2,7 +2,7 @@
 title: Konfigurer et miljø for hoveddataoppslag
 description: Dette emnet beskriver hvordan du konfigurerer miljøet for å bruke oppslagsfunksjonen for hoveddata i avgiftsberegning.
 author: kai-cloud
-ms.date: 03/31/2021
+ms.date: 04/21/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,31 +16,43 @@ ms.search.region: Global
 ms.author: pashao
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: eda093a75898bace2f3c7968933b83ccafa7fabb
-ms.sourcegitcommit: 66095f1b7e0fd2756aa29fd7deb9ce5392b7e0b2
+ms.openlocfilehash: 9f9b385df1db60b27698d90281c43fabb574af49
+ms.sourcegitcommit: 5f5afb46431e1abd8fb6e92e0189914b598dc7fd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "5869088"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5924160"
 ---
 # <a name="set-up-an-environment-for-master-data-lookup"></a>Konfigurer et miljø for hoveddataoppslag
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
-
 Dette emnet beskriver hvordan du konfigurerer miljøet for å bruke oppslagsfunksjonen for hoveddata i avgiftsberegning.
 
 1. Konfigurer Power Platform-integrering i Lifecycle Services (LCS). Hvis du vil ha mer informasjon, kan du se [Microsoft Power Platform-integrering – oversikt over tillegg](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md).
 2. Konfigurer Dynamics 365 Finance og Microsoft Dataverse. Hvis du vil ha mer informasjon, kan du se [Skaffe løsningen](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#getting-the-solution) og [Godkjenning og autorisasjon](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#authentication-and-authorization).
-3. Importer *forutsetning for avgiftstjenesteløsningen for virtuelle enheter* fra [virtuell enhet for avgiftstjeneste](https://go.microsoft.com/fwlink/?linkid=2158160).
+3. Sett opp følgende enheter. Hvis du vil ha mer informasjon, kan du se [Aktivere virtuelle enheter](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#enabling-virtual-entities).
+      - CompanyInfoEntity
+      - CurrencyEntity
+      - CustCustomerV3Entity
+      - DeliveryTermsEntity
+      - EcoResProductCategoryEntity
+      - EcoResReleasedProductV2Entity
+      - LogisticsAddressCityEntity
+      - LogisticsAddressCountryRegionTranslationEntity
+      - LogisticsAddressStateEntity
+      - PurchProcurementChargeCDSEntity
+      - SalesChargeCDSEntity
+      - TaxGroupEntity
+      - TaxItemGroupHeadingEntity
+      - VendVendorV2Entity
 4. Konfigurer Dynamics 365 Regulatory Configuration Service (RCS). 
 5. Opprett en serviceforespørsel for at Microsoft skal kunne aktivere testversjonering av følgende funksjoner:
 
       - ERCdsFeature
       - TaxServiceCDSFeature
 
-6. I Finance går du til arbeidsområdet **Funksjonsstyring** og aktiverer følgende funksjoner:
+6. Gå til arbeidsområdet **Funksjonsstyring**, og aktiver følgende funksjoner:
 
       - (Forhåndsversjon) Støtte for Dataverse-datakilder for elektronisk rapportering
       - (Forhåndsversjon) Støtte for Dataverse-datakilder for avgiftstjeneste

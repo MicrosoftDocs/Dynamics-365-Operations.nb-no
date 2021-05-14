@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0389548b7867cc9505c9b8fe70c880959f6783b0
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ce49835f167881417000b066fd4a351d26ca0909
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745269"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5921429"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Fjernede eller avskrevne funksjoner i tidligere versjoner
 
@@ -37,7 +37,7 @@ Dette emnet beskriver funksjoner som er fjernet eller avskrevet fra Dynamics 365
 
 Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivningene for din egen planlegging. 
 
-Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekniske referanserapporter](https://docs.microsoft.com/dynamics/s-e/global/axtechrefrep_61). Du kan sammenligne de ulike versjonene av disse rapportene for å lære om objekter som er endret eller fjernet i hver versjon av Finance and Operations-apper.
+Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekniske referanserapporter](/dynamics/s-e/global/axtechrefrep_61). Du kan sammenligne de ulike versjonene av disse rapportene for å lære om objekter som er endret eller fjernet i hver versjon av Finance and Operations-apper.
 
 ## <a name="finance-1007-with-platform-update-31"></a>Finance 10.0.7 med Platform update 31
 
@@ -147,7 +147,7 @@ Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekni
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Årsak til avskrivning/fjerning** | Hodejustering med andre Dynamics- og Office-produkter. Hvis du vil ha mer informasjon, kan du se [Oppdatert navigasjonsfelt som justeres etter Office-hodet](https://docs.microsoft.com/business-applications-release-notes/April19/dynamics365-finance-operations/updatednavbar).
+| **Årsak til avskrivning/fjerning** | Hodejustering med andre Dynamics- og Office-produkter. Hvis du vil ha mer informasjon, kan du se [Oppdatert navigasjonsfelt som justeres etter Office-hodet](/business-applications-release-notes/April19/dynamics365-finance-operations/updatednavbar).
 | **Erstattet med en annen funksjon?**   | Fra og med plattformoppdatering 24 ble et navigasjonsfelt med ny design og søkefunksjon introdusert. |
 | **Berørte produktområder**         | Webklient |
 | **Distribusjonsalternativ**              | Alle |
@@ -161,7 +161,7 @@ Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekni
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Årsak til avskrivning/fjerning** | Eldre virkemåte for standardhandlinger i rutenett fører til at en uventet kolonne har standardhandlingskobling etter at rutenettkolonner er omorganisert via tilpasning. Den nye funksjonen for treg standardhandling retter opp dette. Hvis du vil ha mer informasjon, se [Trege standardhandlinger i rutenett](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action). |
+| **Årsak til avskrivning/fjerning** | Eldre virkemåte for standardhandlinger i rutenett fører til at en uventet kolonne har standardhandlingskobling etter at rutenettkolonner er omorganisert via tilpasning. Den nye funksjonen for treg standardhandling retter opp dette. Hvis du vil ha mer informasjon, se [Trege standardhandlinger i rutenett](/business-applications-release-notes/October18/dynamics365-finance-operations/sticky-default-action). |
 | **Erstattet med en annen funksjon?**   | Fra Platform update 21 ble en funksjon for "trege standardhandlinger" innført. Denne funksjonen kan aktiveres på **Alternativer for klientytelse**-siden. |
 | **Berørte produktområder**         | Rutenett i webklienten |
 | **Distribusjonsalternativ**              | Alle |
@@ -172,7 +172,7 @@ Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekni
 |&nbsp;   | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | "Er en av"-filtreringsopplevelse gikk gjennom en ny utforming i Platform update 22, og planen er at dette skal være eneste "er en av"-filtreringsopplevelse. |
-| **Erstattet med en annen funksjon?**   | Fra Platform update 22 ble en forbedret "er en av"-filtreringsopplevelse tilgjengelig på **Alternativer for klientytelse**-siden. Hvis du vil vite mer, kan du se [Optimalisert "er en av"-filtreringopplevelse](https://docs.microsoft.com/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering). |
+| **Erstattet med en annen funksjon?**   | Fra Platform update 22 ble en forbedret "er en av"-filtreringsopplevelse tilgjengelig på **Alternativer for klientytelse**-siden. Hvis du vil vite mer, kan du se [Optimalisert "er en av"-filtreringopplevelse](/business-applications-release-notes/October18/dynamics365-finance-operations/improved-isoneof-filtering). |
 | **Berørte produktområder**         | Webklient |
 | **Distribusjonsalternativ**              | Alle |
 | **Status**                         | Avskrevet: Fra april 2020 blir den forbedrede "er en av"-opplevelsen standard virkemåte, uten en mekanisme for å gå tilbake til den gamle virkemåten. |
@@ -1333,7 +1333,7 @@ Sites Services lar deg bygge webområder som utvider forretningsprosesser til In
 
 ### <a name="virtual-company-accounts"></a>Virtuelle firmakontoer
 
-Virtuelle firmaer-funksjonen støttes ikke lenger i Dynamics AX. Virtuelle firmaer-funksjonen lar brukere definere tabeller som kan deles av et sett med firmaer. Hvis du vil ha en beskrivelse av funksjonen, kan du se [Firmakontoer og virtuelle firmakontoer](https://msdn.microsoft.com/library/aa834382(v=ax.10).aspx). Funksjonen fungerer ved å gruppere tabeller i samlinger som tilordnes til virtuelle firmaer, som er grupper av eksisterende "virkelige" firmaer. Spørringer opprettes slik at alle selskaper i det virtuelle firmaet kan få tilgang til dataene i tabellene til de tilknyttede tabellsamlingene.
+Virtuelle firmaer-funksjonen støttes ikke lenger i Dynamics AX. Virtuelle firmaer-funksjonen lar brukere definere tabeller som kan deles av et sett med firmaer. Hvis du vil ha en beskrivelse av funksjonen, kan du se [Firmakontoer og virtuelle firmakontoer](../../fin-ops/get-started/ax4-content-retired.md). Funksjonen fungerer ved å gruppere tabeller i samlinger som tilordnes til virtuelle firmaer, som er grupper av eksisterende "virkelige" firmaer. Spørringer opprettes slik at alle selskaper i det virtuelle firmaet kan få tilgang til dataene i tabellene til de tilknyttede tabellsamlingene.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|

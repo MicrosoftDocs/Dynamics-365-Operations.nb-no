@@ -2,7 +2,7 @@
 title: Funksjoner som er fjernet eller avskrevet i Dynamics 365 Supply Chain Management
 description: Dette emnet beskriver funksjoner som er fjernet eller som er planlagt for fjerning i Dynamics 365 Supply Chain Management.
 author: kamaybac
-ms.date: 12/07/2020
+ms.date: 04/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 785f9055c44110d88b9494b5066647511840b646
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: a7a06b5476302e43d107c448c139c235ea57b05b
+ms.sourcegitcommit: 57668404d61359b33e0c0280f2f7c4eb829b1ed2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909653"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "5947550"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-supply-chain-management"></a>Funksjoner som er fjernet eller avskrevet i Dynamics 365 Supply Chain Management
 
@@ -32,6 +32,19 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 
 > [!NOTE]
 > Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekniske referanserapporter](/dynamics/s-e/). Du kan sammenligne de ulike versjonene av disse rapportene for å lære om objekter som er endret eller fjernet i hver versjon av Finance and Operations-apper.
+
+
+## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10019-release"></a>Fjernede eller avskrevne funksjoner i Supply Chain Management 10.0.19
+
+### <a name="job-card-device"></a>Jobbkortenhet
+
+|   |   |
+|---|---|
+| **Årsak til avskrivning/fjerning** | [Jobbkortenheten](../production-control/config-job-card-device.md) erstattes av det nye [grensesnittet for produksjonsutførelse](../production-control/production-floor-execution-configure.md). |
+| **Erstattet med en annen funksjon?**   | Ja, [jobbkortenheten](../production-control/config-job-card-device.md) skal erstattes av det nye [grensesnittet for produksjonsutførelse](../production-control/production-floor-execution-configure.md). |
+| **Berørte produktområder** | Supply Chain Management – produksjonskontroll |
+| **Distribusjonsalternativ** | Skyen og lokalt |
+| **Status** | Avskrevet. Jobbkortenheten vil motta støtte med feilrettinger og sikkerhetskorrigeringer, men funksjonsforbedringer vil ikke lenger være tilgjengelig. Etter april 2022 vil jobbkortenheten ikke lenger støttes, og kunder blir bedt om å flytte til det nye grensesnittet for produksjonsutførelse. |
 
 ## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10018-release"></a>Fjernede eller avskrevne funksjoner i Supply Chain Management 10.0.18
 

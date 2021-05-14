@@ -1,8 +1,8 @@
 ---
 title: Nyheter eller endringer i Human Resources
-description: Hver uke utgir vi en ny versjon for Microsoft Dynamics 365 Human Resources. Emnene som er oppført her, beskriver endringene som er gjort hver uke.
+description: Annenhver uke utgir vi en ny versjon for Microsoft Dynamics 365 Human Resources. Emnene som er oppført her, beskriver endringene som er gjort hver uke.
 author: andreabichsel
-ms.date: 09/01/2020
+ms.date: 04/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2bbcedfe45801d0892d80d3e18f78be00bdfdc40
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 4aaa52fa52964f68405596fd510a1aefca89edbf
+ms.sourcegitcommit: e24e335811727c4b12152323b2bcb25495c08c5b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5892183"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5934850"
 ---
 # <a name="whats-new-or-changed-in-human-resources"></a>Nyheter eller endringer i Human Resources
 
@@ -47,8 +47,9 @@ Hvis du vil ha mer informasjon om kommende funksjoner eller oppdateringsprosesse
 
 ## <a name="human-resources-weekly-releases"></a>Ukentlige utgivelser av Human Resources
 
-Hvis du vil finne ut hva som er nytt eller endret i hver utgivelse av Human Resources annenhver uke, kan du se følgende artikler:
+Hvis du vil finne ut hva som er nytt eller endret i hver utgivelse av Human Resources annenhver uke, kan du se følgende emner:
 
+[19. april 2021](hr-whats-new-2021-04-19.md)</br>
 [5. april 2021](hr-whats-new-2021-04-05.md)</br>
 [22. mars 2021](hr-whats-new-2021-03-22.md)</br>
 [8. mars 2021](hr-whats-new-2021-03-08.md)</br>

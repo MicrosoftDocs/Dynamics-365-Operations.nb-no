@@ -2,7 +2,7 @@
 title: Oversikt over fordelsbehandling
 description: Oversikt over funksjonen Fordelsbehandling i Dynamics 365 Human Resources. Gi de ansatte utvidede fordelsalternativer med en brukervennlig Internett-opplevelse.
 author: andreabichsel
-ms.date: 09/17/2020
+ms.date: 04/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 34b0916e0bf618590bcc56a9a3bc7c61576361cc
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 4ad94d81d7e8bedd3622b3e073e431bc4abaafff
+ms.sourcegitcommit: 5f5afb46431e1abd8fb6e92e0189914b598dc7fd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5805784"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5924236"
 ---
 # <a name="benefits-management-overview"></a>Oversikt over Fordelsbehandling
 
@@ -40,6 +40,10 @@ For å være konkurransedyktig må du tilby et stort utvalg av fordeler for å t
 - Behandling av kvalifisert levetidshendelse støtter fremtidige levetidshendelser.
 
 Hvis du vil ha tilgang til demonstrasjonsdataene, må du distribuere sandkassemiljøet på nytt.
+
+>[!NOTE]
+>Du kan nå tilpasse skjemaer for Fordelsbehandling. Du kan nå legge til egendefinerte felt relatert til dekningssatser i **Dekningsalternativ**-skjemaet for fordelsplaner. Hvis du vil ha mer informasjon om å arbeide med egendefinerte felt, kan du se [Egendefinerte felt](hr-developer-custom-fields.md).
+>![Egendefinerte felt for fordelsbehandling](media/hr-benefits-management-custom-fields.png)
 
 ## <a name="enable-benefits-management"></a>Aktivere Fordelsbehandling
 

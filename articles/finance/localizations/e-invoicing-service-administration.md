@@ -2,7 +2,7 @@
 title: Administrasjonskomponenter for elektronisk fakturering
 description: Dette emnet inneholder informasjon om komponentene som er knyttet til administrasjon av Elektronisk fakturering.
 author: gionoder
-ms.date: 03/29/2021
+ms.date: 04/29/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 2e859875e124796e49000cd5ea94cfb75ecd768a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3ac4a03d75898680b5655421f3024dc6f666464c
+ms.sourcegitcommit: 54d3ec0c006bfa9d2b849590205be08551c4e0f0
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840034"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "5963197"
 ---
 # <a name="electronic-invoicing-administration-components"></a>Administrasjonskomponenter for elektronisk fakturering
 
@@ -87,10 +87,12 @@ Tjenesten Elektronisk fakturering er ansvarlig for lagring av alle forretningsda
 - En Azure Storage-konto (blob-lagring) som lagrer elektroniske fakturaer
 - Et Azure Key Vault som lagrer sertifikater og URIen (Uniform Resource Identifier) for lagringskontoen
 
-> [!NOTE]
-> En dedikert Key Vault- og kundelagringskonto må tilordnes spesifikt for bruk med Elektronisk fakturering.
 
-Hvis du vil ha mer informasjon, kan du se [Opprette en Azure Storage-konto og et Key Vault](e-invoicing-create-azure-storage-account-key-vault.md).
+En dedikert Key Vault- og kundelagringskonto må tilordnes spesifikt for bruk med Elektronisk fakturering. Hvis du vil ha mer informasjon, kan du se [Opprette en Azure Storage-konto og et Key Vault](e-invoicing-create-azure-storage-account-key-vault.md).
+
+Hvis du vil overvåke Key Vault-tilstanden og motta varsler, konfigurerer du Azure Monitor for key vault. Ved å aktivere Key Vault-logging kan du overvåke hvordan, når og hvem som har tilgang til dine Key Vaults. Hvis du vil ha mer informasjon, kan du se [Overvåking og varsling for Azure Key Vault](/azure/key-vault/general/alert) og [Hvordan du aktiverer Key Vault-logging](/azure/key-vault/general/howto-logging?tabs=azure-cli).
+
+Det er en god fremgangsmåte å rotere hemmeligheter med jevne mellomrom. Hvis du vil ha mer informasjon, kan du se i [Hemmelighetsdokumentasjon](/azure/key-vault/secrets/).
 
 #### <a name="users"></a>Brukere
 

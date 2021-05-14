@@ -2,7 +2,7 @@
 title: Bruke ER-konfigurasjoner på nytt med Excel-maler for å generere rapporter i Word-format
 description: Dette emnet beskriver hvordan rapportformater som ble utformet for å generere rapporter som Excel-arbeidsbøker, kan konfigureres slik at de genererer rapporter som Word-dokumenter.
 author: NickSelin
-ms.date: 01/11/2021
+ms.date: 04/23/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ab4cd4a390782936a74977ac2aef3790aa8ac1af
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 413be634e80b87781444e1c1445c78691f4b4b0b
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5891701"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944298"
 ---
 # <a name="reuse-er-configurations-with-excel-templates-to-generate-reports-in-word-format"></a>Bruke ER-konfigurasjoner på nytt med Excel-maler for å generere rapporter i Word-format
 
@@ -36,8 +36,8 @@ For å kunne fullføre disse fremgangsmåtene må du først følge trinnene i op
 
 Du må også laste ned og lagre følgende maler lokalt for eksempelrapporten:
 
-- [Mal for betalingsrapport (SampleVendPaymDocReport.docx)](https://go.microsoft.com/fwlink/?linkid=862266)
-- [Bundet mal for betalingsrapport (SampleVendPaymDocReportBounded.docx)](https://go.microsoft.com/fwlink/?linkid=862266)
+- [Mal for betalingsrapport (SampleVendPaymDocReport.docx)](https://download.microsoft.com/download/0/d/e/0de5a87c-95fc-4dfa-958f-285cb28b5b2b/SampleVendPaymDocReport.docx)
+- [Bundet mal for betalingsrapport (SampleVendPaymDocReportBounded.docx)](https://download.microsoft.com/download/a/1/2/a126cb43-6281-4f7b-bde0-25e03ff9bc1e/SampleVendPaymDocReportBounded.docx)
 
 Disse fremgangsmåtene er for en funksjon som ble lagt til i Dynamics 365 for Operations versjon 1611 (november 2016).
 

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 48bf6f7997d6159077419bcd05d27fd711c8fb4b
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 2ea495259ba29f302753991e260d5a8fa990322b
+ms.sourcegitcommit: e3f11fc9a9dae416a490437678bb482a0094f9a9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5891036"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "5953418"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Behandle permisjonsforespørsler i Teams
 
@@ -207,6 +207,14 @@ Hvis du får en feilmelding under forsøk på å godkjenne permisjonsforespørsl
 1. Kontroller at kontoen du bruker til å logge på Microsoft Teams, er den samme som du bruker til å få tilgang til Dynamics 365 Human Resources.
 
 2. Kontroller at du er en gyldig godkjenner for forespørselen ved å kontrollere arbeidsflytinnstillingene for permisjonsgodkjenning. Hvis du vil ha mer informasjon om arbeidsflyter for permisjonsforespørsel, kan du se [Opprette en permisjonsforespørsel](hr-leave-and-absence-workflow.md).
+
+### <a name="leave-approvers-dont-receive-teams-chat-messages-to-approve-leave-requests"></a>Permisjonsgodkjennere mottar ikke Teams-chatmeldinger for å godkjenne permisjonsforespørsler
+
+1. Sikre at varslinger er aktivert for miljøet og brukeren. Hvis du vil ha mer informasjon, kan du se [Aktiver varslinger for Human Resources-appen i Teams](hr-admin-teams-leave-app.md#enable-notifications-for-the-human-resources-app-in-teams) og [Aktivere eller deaktivere Teams-varslinger for individuelle brukere](hr-admin-teams-leave-app.md#turn-teams-notifications-on-or-off-for-individual-users).
+
+2. Kontroller at brukere blir logget på **Chatter**-kategorien med samme legitimasjon som de bruker for godkjenning av permisjonsforespørsler. Bruk meldingene "logg av" og deretter "logg på" for å logge deg på med riktig legitimasjon.
+
+3. Hvis problemet vedvarer, må du kontrollere statusen til den satsvise jobben for forretningshendelser som systemadministrator. Hvis den er i et ventende stadium eller utførelsesstadium, må du sjekke tilbake om et par minutter. Hvis statusen forblir uendret, kan du logge en støtteforespørsel, slik at teamet kan bidra til å løse problemet.
 
 ## <a name="known-accessibility-issues"></a>Kjente tilgjengelighetsproblemer
 

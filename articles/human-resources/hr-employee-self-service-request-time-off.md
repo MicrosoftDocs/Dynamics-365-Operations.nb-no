@@ -2,7 +2,7 @@
 title: Be om avspasering
 description: Be om avspasering i Dynamics 365 Human Resources.
 author: andreabichsel
-ms.date: 02/03/2020
+ms.date: 04/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0159935e98e720d401923230dd7b69e22581df84
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 4885c91eb0406acda2cf60ed4e30f494ebaa2a99
+ms.sourcegitcommit: 36b3fa236734a387f42c87e9b7b0ddd638ce4302
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5790698"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5924860"
 ---
 # <a name="request-time-off"></a>Be om avspasering
 
@@ -45,7 +45,7 @@ Du kan sende inn forespørsler om avspasering, vise ferie- og og permisjonssaldo
 
 ## <a name="add-an-attachment-to-an-existing-request"></a>Legge til et vedlegg i en eksisterende forespørsel
 
-Når du oppdaterer en eksisterende permisjonsforespørsel, kan du legge til et vedlegg. Du kan også se alle relaterte forespørsler for en bestemt dato. 
+Når du oppdaterer en eksisterende permisjonsforespørsel, kan du legge til et vedlegg. Du kan også se alle relaterte forespørsler for en bestemt dato.
 
 ## <a name="view-leave-balances"></a>Vis permisjonssaldoer
 
@@ -58,6 +58,20 @@ Når du oppdaterer en eksisterende permisjonsforespørsel, kan du legge til et v
 1. I arbeidsområdet **Ansattselvbetjening** velger du **Mer** (...) på flisen **Avspaseringssaldoer**.
 
 2. Hvis du vil vise de godkjente avspaseringsforespørslene, velger du **Godkjent avspasering**. Hvis du vil vise de ventende avspaseringsforespørslene, velger du **Avspaseringsforespørsler**.
+
+## <a name="cancel-time-off-requests"></a>Avbryte fritidsforespørsler
+
+[!include [Preview feature](includes/preview-feature.md)]
+
+1. I arbeidsområdet **Ansattselvbetjening** velger du **Vis fravær** på flisen **Fravær til gode**.
+
+2. Velg én eller flere fraværsforespørsler for annullering i **Fravær**-skjemaet.
+
+3. Velg **Avbryt**-knappen.
+
+4. Skriv inn en kommentar og velg **Send** i ruten for **Annulleringsdetaljer**.
+
+   ![Avbryte permisjonsforespørsel](media/hr-leave-and-absence-cancel.png)
 
 ## <a name="see-also"></a>Se også
 

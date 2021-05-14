@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5064ea3b9435d0fb9e97c00df6b17a304b8a6a0f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 799619e6fc03174c8ad47512ea839ca7b2aab20e
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5827728"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5898142"
 ---
 # <a name="accounts-receivable-home-page"></a>Startside for kunder
 
@@ -39,61 +39,45 @@ Du kan opprette kundefakturaer som er basert på salgsordrer eller følgesedler.
 
 Bruk kunder til å spore kundefakturaer og betalinger du mottar fra kunder. Du kan definere kundegrupper, kunder, posteringsprofiler, rentenotaer, purringer, provisjoner, og parametere som angår kunder, tillegg, leveringer og mål, veksler og andre typer kundeinformasjon. 
 
-:::row:::
-    :::column:::
-        - [Regnskapsdistribusjoner og underfinansjournaloppføringer for fritekstfakturaer](accounting-distributions-subledger-journal-entries-free-text-invoices.md)
-        - [Kundeposteringsprofiler](customer-posting-profiles.md)
-        - [Kredittkortoppsett, godkjenning og registrering](credit-card-authorizations.md)
-        - [Opprette en kundefaktura](configure-customer-invoices.md)
-        - [Definere og behandle gjentakende fakturaer](set-up-process-recurring-invoices.md)
-        - [Korrigere en fritekstfaktura](correct-free-text-invoice.md)
-    :::column-end:::
-    :::column:::
-        - [Definere veksler](set-up-bills-exchange.md)
-        - [Definere rentesatser for en rentekode](set-up-interest-rates-interest-code.md)
-        - [Frafalle, gjenoppta eller reversere rentegebyrer](waive-reinstate-reverse-interest-fees.md)
-        - [Oversikt over SEPA-avtalegiro](sepa-direct-debit-overview.md)
-        - [Definere mandat for SEPA Direct Debit](sepa-direct-debit-mandate.md)
-        - [Lukke Kunde](close-accounts-receivable.md)
-    :::column-end:::
-:::row-end:::
-
-
+- [Regnskapsdistribusjoner og underfinansjournaloppføringer for fritekstfakturaer](accounting-distributions-subledger-journal-entries-free-text-invoices.md)
+- [Kundeposteringsprofiler](customer-posting-profiles.md)
+- [Kredittkortoppsett, godkjenning og registrering](credit-card-authorizations.md)
+- [Opprette en kundefaktura](configure-customer-invoices.md)
+- [Definere og behandle gjentakende fakturaer](set-up-process-recurring-invoices.md)
+- [Korrigere en fritekstfaktura](correct-free-text-invoice.md)
+- [Definere veksler](set-up-bills-exchange.md)
+- [Definere rentesatser for en rentekode](set-up-interest-rates-interest-code.md)
+- [Frafalle, gjenoppta eller reversere rentegebyrer](waive-reinstate-reverse-interest-fees.md)
+- [Oversikt over SEPA-avtalegiro](sepa-direct-debit-overview.md)
+- [Definere mandat for SEPA Direct Debit](sepa-direct-debit-mandate.md)
+- [Lukke Kunde](close-accounts-receivable.md)
+    
 ## <a name="set-up-credit-and-collections"></a>Definere kredit og innkrevinger
 
 Informasjon om kundeinnkrevinger administreres i én sentral visning på siden Innkrevinger. Ledere for kreditt og innkreving kan bruke denne sentrale visningen til å administrere innkreving. Innkrevingsagenter kan begynne innkrevingsprosessen fra kundelister som genereres ved hjelp av forhåndsdefinerte innkrevingskriterier eller fra kundesiden.
 
-[Kredit og innkrevinger i Kunde](collections-credit-accounts-receivable.md)
-
-[Konfigurere kunder, kredit og innkrevinger](accounts-receivables-set-up-overview.md)
-
-[Definere kredit og innkrevinger](set-up-collections.md)
+- [Kredit og innkrevinger i Kunde](collections-credit-accounts-receivable.md)
+- [Konfigurere kunder, kredit og innkrevinger](accounts-receivables-set-up-overview.md)
+- [Definere kredit og innkrevinger](set-up-collections.md)
 
 ## <a name="set-up-payments-and-settlements"></a>Definere betalinger og utligninger
 
 Godta ulike typer betalinger fra kunder som veksler, kontanter, sjekker, kredittkort og elektroniske betalinger. 
 
-:::row:::
-    :::column:::
-        - [Bruke en kundebetaling til å utligne flere fakturaer som strekker seg over flere rabattperioder](customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
-        - [Sentraliserte betalinger for kunde](centralized-payments-accounts-receivable.md)
-        - [Utligne en delvis kundebetaling og den endelige betalingen i sin helhet før rabattdatoen](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
-        - [Utligne en delvis kundebetaling før rabattdatoen med en endelige betaling etter rabattdatoen](settle-partial-customer-payment-before-discount-or-final-payment-after.md)
-    :::column-end:::
-    :::column:::
-        - [Utligne en delvis kundebetaling som har rabatter på kreditnotaer](settle-partial-customer-payment-discounts-credit-notes.md)
-        - [Utligne en delvis kundebetaling som har flere rabattperioder](settle-partial-customer-payment-multiple-discount-periods.md)
-        - [Refundere kunder](reimburse-customers.md)
-        - [Kundebetalinger for et delbeløp](customer-payments-partial-amount.md)
-    :::column-end:::
-:::row-end:::
-
-
+- [Bruke en kundebetaling til å utligne flere fakturaer som strekker seg over flere rabattperioder](customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
+- [Sentraliserte betalinger for kunde](centralized-payments-accounts-receivable.md)
+- [Utligne en delvis kundebetaling og den endelige betalingen i sin helhet før rabattdatoen](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
+- [Utligne en delvis kundebetaling før rabattdatoen med en endelige betaling etter rabattdatoen](settle-partial-customer-payment-before-discount-or-final-payment-after.md)
+- [Utligne en delvis kundebetaling som har rabatter på kreditnotaer](settle-partial-customer-payment-discounts-credit-notes.md)
+- [Utligne en delvis kundebetaling som har flere rabattperioder](settle-partial-customer-payment-multiple-discount-periods.md)
+- [Refundere kunder](reimburse-customers.md)
+- [Kundebetalinger for et delbeløp](customer-payments-partial-amount.md)
+   
 ### <a name="additional-resources"></a>Tilleggsressurser
 
 #### <a name="whats-new-and-in-development"></a>Hva er nytt og hva er under utvikling?
 
-Gå til [Veikart for Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158) for å se hvilke nye funksjoner som er planlagt. 
+Gå til [Veikart for Microsoft Dynamics 365](/dynamics365/release-plans/) for å se hvilke nye funksjoner som er planlagt. 
 
 #### <a name="blogs"></a>Blogger
 

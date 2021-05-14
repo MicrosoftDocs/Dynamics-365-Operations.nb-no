@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fd11068a31b5324d87416e7c00f75a59743f695a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 83587df3963d215fec020150e6b707e431c1b6eb
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813513"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944783"
 ---
 # <a name="set-up-sales-tax-settlement-periods"></a>Definere mva-utligningsperioder
 
@@ -37,9 +37,7 @@ Denne oppgaven bruker demonstrasjonsfirmaet USMF.
 7. Velg det ønskede oppslaget på rullegardinmenyen i feltet **Betalingsbetingelser**. Den relaterte skattemyndigheten kan defineres som en leverandør og mva-utligningen oppretter en åpen leverandørfaktura. Betalingsbetingelsene definerer forfallsdatoen for den åpne leverandørfakturaen.  
 8. Velg en type for utligningsperiodeintervallet.
 9. Angi antall enheter i periodeintervallet per periode. Et kvartal har for eksempel 3 måneder.
-10. Merk av eller fjern merket i avmerkingsboksen **Bruk satsvis behandling for utligning av merverdiavgift**. Utligningsprosessen for utligningsperioden kan behandles som en satsvis jobb i bakgrunnen. Dette anbefales for et stort antall mva-transaksjoner i et periodeintervall.  
-    > [!NOTE]
-    > For øyeblikket støttes ikke dette i Spania, Japan og Nederland.
+10. Merk av eller fjern merket i avmerkingsboksen **Bruk satsvis behandling for utligning av merverdiavgift**. Utligningsprosessen for utligningsperioden kan behandles som en satsvis jobb i bakgrunnen. Dette anbefales for et stort antall mva-transaksjoner i et periodeintervall.
 11. Merk eller fjern merket i avmerkingsboksen **Hindre generering av transaksjoner for motregningsavgift**. Som standard genererer systemet transaksjoner for motregningsavgift under utligningsprosessen, som kan føre til ytelsesproblemer hvis det finnes et stort antall avgiftstransaksjoner i et periodeintervall. Merk av i denne avmerkingsboksen for å hindre generering av transaksjoner for motregningsavgift.
 12. Utvid kategorien **Periodeintervaller**.
 13. Velg **Legg til**.

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8935213c4629de408a48df5e54a2122324e1b3e7
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fbfb754459fad1f3b1509f4f9c65c20e0385b013
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823938"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944720"
 ---
 # <a name="reclassify-fixed-assets"></a>Klassifiser anleggsmidler på nytt
 
@@ -27,11 +27,25 @@ Hvis du vil omklassifisere et anleggsmiddel, må du overføre det til den nye an
 
 Når et anleggsmiddel er omklassifisert:
 
-* Alle tablåer for det eksisterende anleggsmiddelet opprettes for det nye anleggsmiddelet. All informasjon som ble definert for det originale anleggsmiddelet, kopieres til det nye anleggsmiddelet. Statusen til tablåene til det originale anleggsmiddelet er Lukket. 
+- Alle tablåer for det eksisterende anleggsmiddelet opprettes for det nye anleggsmiddelet. All informasjon som ble definert for det originale anleggsmiddelet, kopieres til det nye anleggsmiddelet. Statusen til tablåene til det originale anleggsmiddelet er Lukket. 
 
-* De nye tablåene til det nye anleggsmiddelet inneholder omklassifiseringsdatoen i **Anskaffelsesdato**-feltet. Datoen i feltet **Startdato for avskrivning** kopieres fra den opprinnelige anleggsmiddelinformasjonen. Hvis avskrivningen allerede har begynt, viser feltet **Datoen da avskrivningen sist ble kjørt** omklassifiseringsdatoen. 
+- De nye tablåene for det nye anleggsmiddelet inneholder omklassifiseringsdatoen i **Anskaffelsesdato**-feltet. Datoen i feltet **Startdato for avskrivning** kopieres fra den opprinnelige anleggsmiddelinformasjonen. Hvis avskrivningen allerede har begynt, viser feltet **Datoen da avskrivningen sist ble kjørt** omklassifiseringsdatoen. 
 
-* De eksisterende anleggsmiddeltransaksjonene for det originale anleggsmiddelet avlyses og genereres på nytt for det nye anleggsmiddelet.
+- De eksisterende anleggsmiddeltransaksjonene for det originale anleggsmiddelet avlyses og genereres på nytt for det nye anleggsmiddelet.
+
+- Når et anleggsmiddel som har en overføringstransaksjon er omklassifisert, viser systemet en melding i **handlingssenteret** for å angi at en overføringstransaksjon ikke ble fullført under omklassifiseringsprosessen. Det er nødvendig å fullføre en overføringstransaksjon for å flytte de eksisterende omklassifiseringstransaksjonene til de riktige finansdimensjonene. 
+
+   Under omklassifiseringsprosessen kjører systemet følgende handlinger for å omklassifisere anleggsmiddelsaldoen fra det opprinnelige anleggsmiddelet til det nye anleggsmiddelet. 
+   
+   - Omklassifiseringsprosessen kopierer dataene fra det opprinnelige anleggsmiddeltablået til det nye anleggsmiddeltablået.
+
+   - Omklassifiseringstransaksjonen bruker informasjon fra den opprinnelige posterte anskaffelsen, som omfatter finansdimensjonsinformasjon som er inkludert i anskaffelsestransaksjonen.  
+   
+   - Samtidig tilbakefører omklassifiseringsprosessen den opprinnelige anleggsmiddelanskaffelsen og anleggsmiddeloverføringstransaksjonen. 
+
+Diagrammet og fremgangsmåten nedenfor gir et eksempel på omklassifiseringsprosessen. 
+
+[![Diagram som viser omklassifiseringsprosessen](../media/reclassification-process-01.png)](../media/reclassification-process-01.png)
 
 Følg disse trinnene for å omklassifisere et anleggsmiddel:
 
@@ -42,7 +56,7 @@ Følg disse trinnene for å omklassifisere et anleggsmiddel:
     * Hvis den nye anleggsmiddelgruppen er knyttet til en nummerserie, oppdateres feltet **Nytt anleggsmiddelnummer** med nummeret fra nummerserien til den nye anleggsmiddelgruppen. Ellers oppdateres feltet **Nytt anleggsmiddelnummer** med nummeret fra nummerserien som er definert på siden **Parametere for anleggsmidler**. Hvis en nummerserie ikke er definert på siden **Parametere for anleggsmidler**, angir du et nummer i feltet **Nytt anleggsmiddelnummer**.  
 5. Angi en dato i feltet **Omklassifiseringsdato**.
 6. Angi eller velg en verdi i feltet **Bilagsserie**.
-7. Klikk **OK**.
+7. Velg **OK**.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

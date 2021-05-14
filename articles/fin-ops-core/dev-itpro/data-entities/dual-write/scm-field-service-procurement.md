@@ -9,15 +9,15 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: rhaertle
 ms.search.region: Global
-ms.author: riluan
+ms.author: rhaertle
 ms.search.validFrom: 2020-11-11
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: fcbede8b1a0a9a1dfcb9acbfd7cadb49eb48eecd
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 2c27f06524b91f91d95ef4b901740e7761232c28
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750696"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941115"
 ---
 # <a name="integrate-procurement-between-supply-chain-management-and-field-service"></a>Integrere innkjøp mellom Supply Chain Management og Field Service
 
@@ -46,7 +46,7 @@ Hvis du vil integrere Supply Chain Management med Field Service, må du installe
 ### <a name="prerequisites"></a>Forutsetninger
 
 - **Dobbel skriving** – Hvis du vil ha mer informasjon, kan du se [Startside for dobbel skriving](dual-write-home-page.md#dual-write-setup).
-- **Dynamics 365 Field Service** – Hvis du vil ha mer informasjon, kan du se [Installere Dynamics 365 Field Service](https://docs.microsoft.com/dynamics365/field-service/install-field-service#step-1-install-dynamics-365-field-service).
+- **Dynamics 365 Field Service** – Hvis du vil ha mer informasjon, kan du se [Installere Dynamics 365 Field Service](/dynamics365/field-service/install-field-service#step-1-install-dynamics-365-field-service).
 
 Når dobbel skriving og Field Service er aktivert i Microsoft Dataverse, innfører de flere løsningslag som utvider miljøet med nye metadata, skjemaer, visninger og logikk. Disse løsningene kan aktiveres i hvilken som helst rekkefølge, men installasjonen foretas vanligvis i denne rekkefølgen:
 

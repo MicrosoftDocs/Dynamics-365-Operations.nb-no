@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ed48d41926c801c9017867be2eaa9af85a94b119
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f29a5014b98daa5150e01b541a076237e45ff180
+ms.sourcegitcommit: 6c2f5c3b038f696532c335e20b0fbafa155d6858
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5817683"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "5951965"
 ---
 # <a name="generate-and-process-customer-rebates"></a>Generere og behandle kunderabatter
 
@@ -62,7 +62,7 @@ Denne fremgangsmåten beskriver hvordan du behandler kunderabatter fra kravgener
 
 ## <a name="process-rebate-claims"></a>Behandle rabattkrav
 1. Gå til **Navigasjonsrute > Moduler > Salg og markedsføring > Kunderabatter > Rabatter**.
-    - Siden Rabatter fungerer en arbeidsbenk der kan du gå gjennom, godkjenne og behandle rabattkrav. Nå vil du behandle krav som er opprettet som et resultat av fakturering av en salgsordre for kunden US-009, som rabattavtalen USMF-000001 gjelder for.   
+    - Siden Rabatter fungerer som en arbeidsbenk der kan du gå gjennom, godkjenne og behandle rabattkrav. Nå vil du behandle krav som er opprettet som et resultat av fakturering av en salgsordre for kunden US-009, som rabattavtalen USMF-000001 gjelder for.   
     - Den første linjen representerer et rabattkrav for 800 USD, som er basert på salget av 40 enheter av produkt T0020, beregnet som 20 USD per enhet. Dette tilsvarer betingelsene for det avbruddspunktet for antall i rabattavtalen.  
     - Andre kravet er for USD 2 400, som er basert på salget av 60 enheter av produkt T0020, beregnet på 40 USD per enhet, i henhold til det andre avbruddspunktet for antall i avtalen.  
     - Begge krav er i tilstanden "Som skal beregnes". Dette betyr at de er knyttet til en avtale som sporer kundens salgsytelse periodisk og at de må beregnes på nytt for å ta hensyn til totalvolumet for salg i den aktuelle perioden.   

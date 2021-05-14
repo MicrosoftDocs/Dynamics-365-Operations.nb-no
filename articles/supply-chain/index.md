@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d82f31212245044f27558c3cdea78fbcf4988afb
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e8b92dc975fdae74e134d86169a2b9ceffe63b62
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5829962"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909797"
 ---
 # <a name="supply-chain-management-home-page"></a>Startside for Supply Chain Management
 
@@ -94,16 +94,16 @@ Følgende registreringer for tekniske konferanser beskriver funksjonalitet i Sup
 
 ## <a name="blogs"></a>Blogger
 
-Det finnes mange emner om produksjon og Supply Chain Management i [teambloggen for Dynamics AX Manufacturing R&D](https://blogs.msdn.microsoft.com/axmfg/) og [Supply Chain Management i teambloggen for Dynamics AX R&D](https://blogs.msdn.microsoft.com/dynamicsaxscm/). De fleste av disse ble skrevet for den tidligere versjonen, men fortsatt kan de samme begrepene brukes, og fremgangsmåtene ligner på den gjeldende versjonen.
+Det finnes mange emner om produksjon og Supply Chain Management i [teambloggen for Dynamics AX Manufacturing R&D](/archive/blogs/axmfg/) og [Supply Chain Management i teambloggen for Dynamics AX R&D](https://blogs.msdn.microsoft.com/dynamicsaxscm/). De fleste av disse ble skrevet for den tidligere versjonen, men fortsatt kan de samme begrepene brukes, og fremgangsmåtene ligner på den gjeldende versjonen.
 
 ## <a name="white-papers"></a>Hvitbøker
 
-- [Lean Manufacturing: Leveringskapasitet og Planlegging av Kanban-jobb](https://docs.microsoft.com/dynamics/s-e/)
+- [Lean Manufacturing: Leveringskapasitet og Planlegging av Kanban-jobb](/dynamics/s-e/)
 - [Stykklisteberegning ved hjelp av et kostnadsskjema](https://www.microsoft.com/download/details.aspx?id=101937/)
 
 ## <a name="elearning-courses"></a>e-læringskurs
 
-Gå til [Dynamics 365 Supply Chain Management på Microsoft Learn](https://docs.microsoft.com/learn/browse/?products=dynamics-scm&resource_type=learning%20path) for elektroniske kurs og opplæring.
+Gå til [Dynamics 365 Supply Chain Management på Microsoft Learn](/learn/browse/?products=dynamics-scm&resource_type=learning+path) for elektroniske kurs og opplæring.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

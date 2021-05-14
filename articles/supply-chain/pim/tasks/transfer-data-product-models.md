@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 94372960c7478ec07540edb6bce9ca8bc68ec39f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 799e7bce1ce7fd2d912b2ff5f97da61123f7293a
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825500"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920637"
 ---
 # <a name="transfer-data-for-product-models"></a>Overføre data for produktmodeller
 
@@ -26,14 +26,12 @@ ms.locfileid: "5825500"
 
 Eksport av data for en produktkonfigurasjonsmodell krever at du har minst én produktmodell tilgjengelig. Denne fremgangsmåten bruker High-end-høyttalermodellen i demofirmaet USMF for å vise hvordan du eksporterer data for denne modellen.
 
-1. Klikk på Definisjon av produktvariantmodell.
-2. Klikk på Produktkonfigurasjonsmodeller.
-3. Finn og velg ønsket post i listen.
+1. Gå til **Behandling av produktinformasjon \> Produkter \> Produktkonfigurasjonsmodeller**.
+1. Finn og velg ønsket post i listen.
     * Velg High-end-høyttalermodellen for denne prosedyren.  
-4. Klikk på Modell i handlingsruten.
-5. Klikk på Eksporter produktmodell.
+1. Velg **Modell** i handlingsruten.
+1. Velg **Eksporter produktmodell**.
     * Nedlastingsvirkemåten varierer fra leser til leser avhengig av hvordan sikkerhetsinnstillingene er definert.  
-
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

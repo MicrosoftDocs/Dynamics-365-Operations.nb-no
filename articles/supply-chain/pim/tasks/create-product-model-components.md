@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f62398934d029a3269bd2b6aa33531e6807be490
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6452a126f4962104fca7c62f3518b89fff657f08
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809332"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5921041"
 ---
 # <a name="create-product-model-components"></a>Opprette produktmodellkomponenter
 
@@ -26,14 +26,13 @@ ms.locfileid: "5809332"
 
 Restriksjonsbaserte produktkonfigurasjonsmodeller bruker komponenter som byggesteiner til å opprette produktmodellstrukturen. Komponentene må opprettes før en produktmodell kan bygges. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
 
-1. Klikk på Definisjon av produktvariantmodell.
-2. Klikk på Produktkonfigurasjonsmodeller.
-3. Klikk på Modell i handlingsruten.
-4. Klikk på Komponenter.
-5. Klikk på Ny.
-6. Skriv inn en verdi i Navn-feltet.
-7. Skriv inn en verdi i feltet Beskrivelse.
-8. Lukk siden.
+1. Gå til **Behandling av produktinformasjon \> Produkter \> Produktkonfigurasjonsmodeller**.
+1. Velg **Modell** i handlingsruten.
+1. Velg **Komponenter**.
+1. Velg **Ny**.
+1. Skriv inn en verdi i **Navn**-feltet.
+1. Skriv inn en verdi i **Beskrivelse**-feltet.
+1. Lukk siden.
 
 
 

@@ -2,7 +2,7 @@
 title: Komme i gang med Elektronisk fakturering for Egypt
 description: Dette emnet inneholder informasjon som vil hjelpe deg med å komme i gang med elektronisk fakturering for Egypt i Finance and Supply Chain Management.
 author: gionoder
-ms.date: 03/29/2021
+ms.date: 04/20/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: f6175a50a88d2d636bfafc5988265b8657630758
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: abae35db7e37e65950c05c8e21b8e8555edbf3be
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840202"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920787"
 ---
 # <a name="get-started-with-electronic-invoicing-for-egypt"></a>Komme i gang med Elektronisk fakturering for Egypt
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 Dette emnet inneholder informasjon som vil hjelpe deg med å komme i gang med elektronisk fakturering for Egypt. Emnet veileder deg gjennom konfigurasjonstrinnene som er landavhengige i RCS (Regulatory Configuration Services), og utfyller trinnene som beskrives i [Komme i gang med elektronisk fakturering](e-invoicing-get-started.md).
 

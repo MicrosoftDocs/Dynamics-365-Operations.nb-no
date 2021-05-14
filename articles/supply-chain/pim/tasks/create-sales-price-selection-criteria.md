@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5a616dcfdd755efc9bf0473e9239acb9127f11f8
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 69d22c3321beaa2667ee20bff00acd746714b993
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818163"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920537"
 ---
 # <a name="create-sales-price-selection-criteria"></a>Opprette valgkriterier for salgspris
 
@@ -26,30 +26,30 @@ ms.locfileid: "5818163"
 
 Denne fremgangsmåten viser hvordan du oppretter et valgkriterium for salgspris for attributtbaserte salgsprismodeller. Denne prosedyren krever at minst én salgsprismodell er tilgjengelig. Dette eksemplet bruker prismodellen for salgsprismodellen for høyttalerløsningen i demonstrasjonsdatafirmaet USMF. Produktsjefen bruker vanligvis denne fremgangsmåten.
 
-
 ## <a name="add-a-new-criterion-for-an-existing-sales-price-model"></a>Legge til et nytt kriterium for en eksisterende salgsprismodell
-1. Klikk på Definisjon av produktvariantmodell.
-2. Klikk på Produktkonfigurasjonsmodeller.
-3. I listen velger du raden for produktmodellen for høyttalerløsningen, men ikke klikk koblingen for modellnavnet.
-4. Klikk på Modell i handlingsruten.
-5. Klikk på Prismodellkriterier.
-6. Klikk på Ny.
-7. I Navn-feltet skriver du inn Kundegruppe 10.
+
+1. Gå til **Behandling av produktinformasjon \> Produkter \> Produktkonfigurasjonsmodeller**.
+1. I listen velger du raden for produktmodellen for høyttalerløsningen, men ikke velg koblingen for modellnavnet.
+1. Velg **Modell** i handlingsruten.
+1. Velg **Prismodellkriterier**.
+1. Velg **Ny**.
+1. I **Navn**-feltet skriver du inn Kundegruppe 10.
     * Navnet på prismodellkriteriet brukes til å identifisere de underliggende valgkriteriene.  
-8. Angi eller velg en verdi i feltet Prismodell.
-9. Velg Salgsordre i feltet Ordretype.
+1. Angi eller velg en verdi i feltet **Prismodell**.
+1. Velg **Salgsordre** i feltet *Ordretype*.
     * Ordretypen bestemmer databasefeltene som vil være tilgjengelige for valgspørringen.  
-10. Angi en dato i Gyldig fra-feltet.
-11. Angi en dato i Utløp innen-feltet.
-12. Klikk på Lagre.
+1. Angi en dato i **Gyldig fra**-feltet.
+1. Angi en dato i **Utløp innen**-feltet.
+1. Velg **Lagre**.
 
 ## <a name="create-the-query-for-the-selection-criteria"></a>Opprette spørringen for valgkriteriene
-1. Klikk på Rediger.
-2. Velg Kunder i feltet Tabell. 
-3. Velg Kundegruppe i Felt-feltet.
+
+1. Velg **Rediger**.
+2. Velg **Kunder** i feltet *Tabell*.
+3. Velg **Kundegruppe** i *Felt*-feltet.
     * I dette eksemplet bruker vi en spesifikk kundegruppe for valgkriteriene.  
-4. Velg Kundegruppe 10 i Kriterier-feltet. 
-5. Klikk på OK.
+4. Velg **Kundegruppe 10** i *Kriterier*-feltet.
+5. Velg **OK**.
 
 
 

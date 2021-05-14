@@ -14,12 +14,12 @@
               items:
                 - name: Nyheter eller endringer på startsiden for Plattformoppdateringer
                   href: get-started/whats-new-home-page.md
+                - name: Plattformoppdateringer for 10.0.19 (juli 2021)
+                  href: get-started/whats-new-platform-updates-10-0-19.md
                 - name: Plattformoppdateringer for 10.0.18 (mai 2021)
                   href: get-started/whats-new-platform-updates-10-0-18.md
                 - name: Plattformoppdateringer for 10.0.17 (april 2021)
                   href: get-started/whats-new-platform-updates-10-0-17.md
-                - name: Plattformoppdateringer for 10.0.16 (februar 2021)
-                  href: get-started/whats-new-platform-updates-10-0-16.md
             - name: Funksjoner som er fjernet eller avskrevet
               items:
                 - name: Funksjoner som er fjernet eller avskrevet på startsiden
@@ -303,19 +303,19 @@
                         - name: Konfigurere integrering av Project Service Automation
                           items:
                             - name: Oversikt over Project Service Automation
-                              href: ../../finance/project-management/PSA-integration.md
+                              href: /dynamics365/project-operations/prod-pma/PSA-integration
                             - name: Parametere for integrering av Project Service Automation
-                              href: ../../finance/project-management/PSA-parameters.md
+                              href: /dynamics365/project-operations/prod-pma/PSA-parameters
                             - name: Synkronisere prosjektkontrakter og prosjekter
-                              href: ../../finance/project-management/project-contracts-templates.md
+                              href: /dynamics365/project-operations/prod-pma/project-contracts-templates
                             - name: Synkronisere prosjektoppgaver
-                              href: ../../finance/project-management/project-tasks-template.md
+                              href: /dynamics365/project-operations/prod-pma/project-tasks-template
                             - name: Synkronisere prosjektutgiftskategorier
-                              href: ../../finance/project-management/project-categories-templates.md
+                              href: /dynamics365/project-operations/prod-pma/project-categories-templates
                             - name: Synkronisere prosjektestimater fra og til prosjektprognoser
-                              href: ../../finance/project-management/project-estimates-templates.md
+                              href: /dynamics365/project-operations/prod-pma/project-estimates-templates
                             - name: Synkronisere faktiske prosjektdata til prosjektintegreringsjournalen
-                              href: ../../finance/project-management/project-actuals-templates.md
+                              href: /dynamics365/project-operations/prod-pma/project-actuals-templates
             - name: Bruke eksterne webtjenester
               href: data-entities/consume-external-web-service.md
             - name: Elektronisk meldingssystem
@@ -691,7 +691,7 @@
                     - name: Oversikt over å opprette modeller og datamodellelementer
                       href: dev-tools/create-data-model-elements.md
                     - name: Gi navn til retningslinjer for utvidelser
-                      href: extensibility/NamingGuidelines.md
+                      href: /dynamics365/fin-ops-core/dev-itpro/naming-guidelines-extensions
                     - name: Deaktivere modelltilpassings- og avskrivningsfunksjonalitet
                       href: dev-tools/lock-models.md
                 - name: Rapport for tilpassingsanalyse
@@ -1072,8 +1072,6 @@
                   href: lifecycle-services/getting-started-lcs.md
                 - name: Nyheter eller endringer i Lifecycle Services
                   href: lifecycle-services/whats-new-lcs.md
-                - name: Kjente problemer
-                  href: lifecycle-services/known-issues.md
                 - name: Fjernede eller utgåtte funksjoner i Lifecycle Services (LCS)
                   href: lifecycle-services/removed-deprecated-features.md
             - name: Brukerveiledning for Lifecycle Services
@@ -1398,17 +1396,21 @@
               href: perf-test/rsat/rsat-overview.md
             - name: Installasjon og konfigurasjon
               href: perf-test/rsat/rsat-install-configure.md
-            - name: Bruke Regression Suite Automation Tool
+            - name: Bruk Regression Suite Automation Tool
               href: perf-test/rsat/rsat-run.md
-            - name: Validere forventede verdier
+            - name: Vedlikehold testtilfeller i Regression Suite Automation Tool
+              href: perf-test/rsat/rsat-maintain-test-cases.md
+            - name: Valider forventede verdier
               href: perf-test/rsat/rsat-validate-expected.md
             - name: Kjedetesttilfeller
               href: perf-test/rsat/rsat-chain-test-cases.md
             - name: Avledede testtilfeller
               href: perf-test/rsat/rsat-derived-test-cases.md
+            - name: Oppgrader parameterfilene
+              href: perf-test/rsat/rsat-upgrade-parameter-files.md
             - name: Opplæring for Regression Suite Automation Tool
               href: perf-test/rsat/rsat-tutorial.md
-            - name: Konfigurere brukere som ikke er administratorer
+            - name: Konfigurer brukere som ikke er administratorer
               href: perf-test/rsat/rsat-configure-nonadmin.md
             - name: Anbefalte fremgangsmåter
               href: perf-test/rsat/rsat-best-practices.md
@@ -1582,6 +1584,8 @@
                   href: migration-upgrade/prepare-data-upgrade.md
                 - name: AX 2012-oppgradering – Dataoppgradering i sandkassemiljøer ved hjelp av dacpac-process
                   href: migration-upgrade/upgrade-data-sandbox-dacpac.md
+                - name: Oppgrader fra AX 2012 – SQL-transaksjonsbasert replikering
+                  href: database/replication-setup.md
                 - name: AX 2012-oppgradering – Dataoppgradering i sandkassemiljøer
                   href: migration-upgrade/upgrade-data-sandbox.md
                 - name: AX 2012-oppgradering – Lokale miljøer

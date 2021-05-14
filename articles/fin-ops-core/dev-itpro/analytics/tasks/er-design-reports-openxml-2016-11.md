@@ -2,7 +2,7 @@
 title: ER Utforme en konfigurasjon for generering av rapporter i OPENXML-format (november 2016)
 description: Dette emnet beskriver hvordan du oppretter en ny konfigurasjon for elektronisk rapportering som inneholder en mal for generering av elektroniske dokumenter i OPENXML-format.
 author: NickSelin
-ms.date: 08/12/2019
+ms.date: 04/23/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e2f84621028c36cf79d6fb9ab07707bdb970d97e
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 0f23748f6f1d2c3045b1dc69d8e46821f67da593
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754992"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944274"
 ---
 # <a name="er-design-a-configuration-for-generating-reports-in-openxml-format-november-2016"></a>ER Utforme en konfigurasjon for generering av rapporter i OPENXML-format (november 2016)
 
@@ -28,7 +28,7 @@ Det emnet forklarer hvordan en bruker i rollen Systemansvarlig eller Utvikler av
 
 I dette eksemplet skal du opprette en konfigurasjon for eksempelfirmaet Litware, Inc. Denne fremgangsmåten kan utføres i GBSI-firmaet.
 
-For å fullføre disse trinnene må du først fullføre trinnene i fremgangsmåten "Opprette en konfigurasjonsleverandør og merke den som aktiv". Du må også ha en Excel-fil som importeres når du oppretter malen. Denne filen kan åpnes fra [Mal for betalingsrapport](https://go.microsoft.com/fwlink/?linkid=862266).
+For å fullføre disse trinnene må du først fullføre trinnene i fremgangsmåten "Opprette en konfigurasjonsleverandør og merke den som aktiv". Du må også ha en Excel-fil som importeres når du oppretter malen. Denne filen kan åpnes fra [Mal for betalingsrapport](https://download.microsoft.com/download/3/f/0/3f0658b2-042c-43cf-a776-0f4c7f7cfe4e/SampleVendPaymWsReport.xlsx).
 
 
 ## <a name="upload-the-payments-data-model-configuration"></a>Laste opp modellkonfigurasjon for betalingsdata

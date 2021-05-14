@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 3fd347607f5d64d54d3058f4ef1b0ed60ca54e66
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5e226fa2189ff5ddd04dbd0af27f343451dc6379
+ms.sourcegitcommit: 890a0b3eb3c1f48d786b0789e5bb8641e0b8455e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5831680"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5919899"
 ---
 # <a name="rebate-statuses"></a>Rabattstatuser
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Ved hjelp av rabattstatuser kan du spore statusen til hver rabattbehandlingsavtale. Du kan også bruke dem til rapporterings- og forespørselsformål. Du kan definere og gi navn til så mange rabattstatusverdier du trenger for å støtte forretningsprosessen. 
 

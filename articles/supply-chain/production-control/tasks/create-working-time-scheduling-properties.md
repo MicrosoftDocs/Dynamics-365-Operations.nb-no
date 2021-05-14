@@ -14,12 +14,12 @@ ms.search.industry: Manufacturing
 ms.author: sorenand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1f7e412b7365901e18f476758aa3c5d43de590b2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f8489cc8eac8013041d4c138930feab57e43b81d
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811612"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920911"
 ---
 # <a name="create-working-time-scheduling-properties"></a>Opprette egenskaper for planlegging av driftstider
 
@@ -27,19 +27,21 @@ ms.locfileid: "5811612"
 
 Egenskaper for planlegging av driftstider brukes til å kategorisere tidsintervallene for arbeid og definere innstillingene som operatorer må ta hensyn til. Denne fremgangsmåten viser hvordan du definerer en egenskap for planlegging av driftstider og tilhørende verdier. Du kan gå gjennom denne fremgangsmåten i demonstrasjonsselskapet USMF eller ved hjelp av dine egne data.
 
-1. Gå til Alle arbeidsområder > Administrasjon av livssyklus for ressurs.
-2. Klikk på Egenskaper.
+1. Gå til **Arbeidsområder \> Administrasjon av livssyklus for ressurs**.
+2. Velg **Egenskaper**.
 
 ## <a name="create-property"></a>Opprett egenskap
-1. Klikk på Ny.
-2. Skriv inn en verdi i Egenskap-feltet.
-3. Skriv inn en verdi i Navn-feltet.
+
+1. Velg **Ny**.
+2. Skriv inn en verdi i **Egenskap**-feltet.
+3. Skriv inn en verdi i **Navn**-feltet.
 
 ## <a name="create-property-values"></a>Opprett egenskapsverdier
+
 1. Merk den valgte raden i listen.
-2. Skriv inn en verdi i Navn-feltet.
-3. Skriv inn en verdi i Verdi-feltet.
-4. Klikk på Lagre.
+2. Skriv inn en verdi i **Navn**-feltet.
+3. Skriv inn en verdi i **Verdi**-feltet.
+4. Velg **Lagre**.
 
 
 

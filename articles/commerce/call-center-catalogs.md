@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: a091e059d4528c356a5038c750cac3a3f31a7edb
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 3758ff51de8217a209b40d7dd461e42ea9632f0a
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799660"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5936888"
 ---
 # <a name="call-center-catalogs"></a>Telefonsenterkataloger
 
@@ -39,7 +39,7 @@ Direkte til kunde-markedsføringsfirmaer er svært fokuserte på å spore respon
 
 Gå til **Retail og Commerce** \> **Kataloger og sortimenter** \> **Alle kataloger** for å konfigurere katalogen.
 
-Når du oppretter en ny katalog, må du først koble katalogen til én eller flere kanaler. Dette gjøres i hurtigkategorien **Commerce-kanaler** i skjemaet **Katalogoppsett**. Klikk **Legg til**, og velg én eller flere kanaler. Bare varer som er knyttet til den valgte kanalen [sortimenter](https://docs.microsoft.com/dynamics365/unified-operations/retail/assortments), kan brukes ved opprettelse av katalogen.
+Når du oppretter en ny katalog, må du først koble katalogen til én eller flere kanaler. Dette gjøres i hurtigkategorien **Commerce-kanaler** i skjemaet **Katalogoppsett**. Klikk **Legg til**, og velg én eller flere kanaler. Bare varer som er knyttet til den valgte kanalen [sortimenter](/dynamics365/unified-operations/retail/assortments), kan brukes ved opprettelse av katalogen.
 
 Hvis du vil legge til produkter i en katalog, må du velge et navigasjonshierarki. Navigasjonshierarkiet støtter kategoristrukturen for katalogen. Du må velge blant navigasjonshierarkier som er koblet til kanalene valgt i hurtigkategorien **Commerce-kanaler** på **Katalog**-siden. Hvis en navigasjonskanal ikke ble koblet til en kanal tidligere, kan du gå til **Retail og Commerce** \> **Kanaloppsett** \> **Kanalkategorier og produktattributter** for å koble en navigasjonshierarkistandard til hver av kanalene.
 

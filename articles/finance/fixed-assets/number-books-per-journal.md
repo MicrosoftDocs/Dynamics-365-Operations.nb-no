@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-11-19
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: fb2a25d9e2ffc26f0a37a09cdf3e28a7ca4b84bc
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: c56b5a333854c9a95fdc74b8f98a3552ff0f7719
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5892413"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944807"
 ---
 # <a name="number-of-books-per-journal"></a>Antall tablåer per journal
 
@@ -47,9 +47,5 @@ Jobben for satsvis behandling utelukker lukkede tablåer. I en satsvis jobb for 
 Grensen for antall tabler brukes hvis dupliserte aktiva-IDer ikke finnes i samme journal. Hvis aktiva-IDen er den samme som tablå-IDen, kan imidlertid antall tablåer per journal overstiges for å beholde aktiva-IDen i samme journal.
 
 Det finnes for eksempel 5 001 anleggsmiddel-IDer, tre tablåer er knyttet til hver anleggsmiddel-ID, og hvert anleggsmiddeltablå posteres til det samme posteringslaget. Du kjører avskrivning for tre påfølgende måneder, uten sammendrag.  Avskrivningsjournalen blir opprettet ved hjelp av en satsvis jobb, og systemet vil opprette sju journaler som har 667 anleggsmiddel-IDer og tre tablåer for hver anleggsmiddel-ID. Resultatet vil være 2 001 tablåer. I løpet av tre måneder vil det derfor være 6 003 journallinjer for å vedlikeholde de samme anleggsmiddel-IDene i samme journal. Systemet vil også opprette én journal som har 332 anleggsmiddel-IDer og tre tablåer for hver anleggsmiddel-ID. I løpet av tre måneder vil det være 2 988 linjer.
-
-> [!NOTE] 
-> Hvis parameteren **Summer avskrivning** er aktivert når du oppretter et avskrivningsforslag, har ikke verdien i feltet **Antall tablåer per journal – Avskrivningsforslag** noen virkning. I dette tilfellet er antallet tablåer per journal 6000, som er den interne definerte grensen.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

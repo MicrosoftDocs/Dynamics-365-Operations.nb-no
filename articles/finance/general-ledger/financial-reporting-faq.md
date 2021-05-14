@@ -14,78 +14,57 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: a0718db77399901acc8c88278c5b373b77b3cb16
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 023354b0e2973f63411bf81cbeb0344333c49112
+ms.sourcegitcommit: d63e7e0593084a61362a6cad3937b1fd956c384f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811316"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923031"
 ---
 # <a name="financial-reporting-faq"></a>Vanlige spørsmål om finansrapportering 
 
-Dette emnet viser spørsmål som er knyttet til finansrapportering som andre brukere har hatt. 
-
+Dette emnet gir svar på vanlige spørsmål om finansrapportering. 
 
 ## <a name="how-do-i-restrict-access-to-a-report-using-tree-security"></a>Hvordan begrenser jeg tilgang til en rapport med tresikkerhet?
 
-Scenario: Demonstrasjonsfirmaet USMF har en balanserapport som de ikke vil at alle regnskapsrapporteringsbrukere skal kunne se i D365. Løsning: Du kan bruke tresikkerhet til å begrense tilgang til en rapport, slik at bare bestemte brukere får tilgang til rapporten. 
+Følgende eksempel viser hvordan du begrenser tilgang til en rapport med tresikkerhet.
 
-1.  Logg på Rapportutforming for finansrapportering
+Demofirmaet USMF har en balanserapport som ikke alle finansrapporteringsbrukere skal ha tilgang til. Du kan bruke tresikkerhet til å begrense tilgang til en rapport, slik at bare bestemte brukere får tilgang til rapporten. Følg denne fremgangsmåten for å begrense tilgang: 
 
-2.  Opprett en ny tredefinisjon (Fil | Ny | Tredefinisjon) a.    Dobbeltklikk på linjen **Sammendrag** i kolonnen **Enhetssikkerhet**.
-  i.    Klikk på Brukere og grupper.  
-          1. Velg brukerne eller gruppen som vil ha tilgang til denne rapporten. 
-          
-[![brukerskjermbilde](./media/FR-FAQ_users.png)](./media/FR-FAQ_users.png)
+1. Logg på Financial Reporter Report Designer.
+2. Opprett en ny tredefinisjon. Gå til **Fil > Ny > Tredefinisjon**.
+3. Dobbeltklikk på linjen **Sammendrag** i kolonnen **Enhetssikkerhet**.
+4. Velg **Brukere og grupper**.  
+5. Velg brukerne eller gruppene som må ha tilgang til denne rapporten. 
+6. Velg **Lagre**.
+7. I rapportdefinisjonen legger du til den nye tredefinisjonen.
+8. Velg **Innstilling** i tredefinisjonen. Under **Valg av rapporteringsenhet** velger du **Inkluder alle enheter**.
 
-[![sikkerhetsskjermbilde](./media/FR-FAQ_security.jpg)](./media/FR-FAQ_security.jpg)
+## <a name="how-do-i-identify-which-accounts-do-not-match-my-balances"></a>Hvordan identifiserer jeg hvilke kontoer som ikke samsvarer med saldoene?
 
-  b.    Klikk på **Lagre**.
-  
-[![Lagre-knapp](./media/FR-FAQ_save.png)](./media/FR-FAQ_save.png)
+Hvis du har en rapport som ikke samsvarer saldoene, er det noen trinn du kan gå gjennom for å identifisere hver av kontoene og avvikene. 
 
-3.  I rapportdefinisjonen legger du til den nye tredefinisjonen
+**Financial Reporter Report Designer**
+1. Opprett en ny raddefinisjon i Financial Reporter Report Designer. 
+2. Velg **Rediger > Sett inn rader fra dimensjoner**.
+3. Velg **MainAccount**.  
+4. Velg **OK**.
+5. Lagre raddefinisjonen.
+6. Opprett en ny kolonnedefinisjon
+7. Opprett en ny rapportdefinisjon.
+8. Velg **Innstillinger** og fjern merket for dette alternativet.  
+9. Generer rapporten. 
+10. Eksporter rapporten til Microsoft Excel.
 
-[![tredefinisjonsskjema](./media/FR-FAQ_tree-definition.jpg)](./media/FR-FAQ_tree-definition.jpg)
+**Dynamics 365 Finance** 
+1. I Dynamics 365 Finance går du til **Økonomimodul > Forespørsler og rapporter > Råbalanse**.
+2. Angi følgende parametere:
+   - **Fra-dato** – Angi starten på regnskapsåret.
+   - **Til-dato** – Angi datoen du genererer rapporten for.
+   - **Finansdimensjon** – Angi dette feltet til **Hovedkontosett**.
+ 3. Velg **Beregn**.
+ 4. Eksporter rapporten til Microsoft Excel.
 
-A.  Mens du er i tredefinisjonen klikker du på Innstilling og merker av for Inkluder alle enheter under Valg av rapporteringsenhet
-
-[![skjema for valg av rapporteringsenhet](./media/FR-FAQ_reporting-unit-selection.jpg)](./media/FR-FAQ_reporting-unit-selection.jpg)
-
-**Før:** [![før skjermbilde](./media/FR-FAQ_before.png)](./media/FR-FAQ_before.png)
-
-**Etter:** [![etter skjermbilde](./media/FR-FAQ_after.png)](./media/FR-FAQ_after.png)
-
-Merk: Årsaken til meldingen ovenfor er at brukeren ikke har tilgang til rapporten etter bruk av enhetssikkerhet
-
-
-
-## <a name="how-do-i-determine-which-accounts-do-not-matching-my-balances-in-d365"></a>Hvordan finner jeg ut hvilke kontoer som ikke samsvarer med saldoene i D365?
-
-Når du har en rapport som ikke samsvarer med det du forventer i D365, er det noen trinn du kan gå gjennom for å identifisere disse kontoene og avvikene. 
-
-### <a name="in-financial-reporter-report-designer"></a>I Rapportutforming for finansrapportering
-
-1.  Opprett en ny raddefinisjon a.    Klikk på Rediger | Sett inn rader fra dimensjoner i.  Velg MainAccount [![Velg Hovedskjermbilde_](./media/FR-FAQ_selectmain_.png)](./media/FR-FAQ_selectmain_.png)
-    
-    ii. Klikk på Ok b.    Lagre raddefinisjonen
-
-2.  Opprette en ny kolonnedefinisjon     [![Opprette en ny kolonnedefinisjon](./media/FR-FAQ_column.png)](./media/FR-FAQ_column.png)
-
-3.  Opprett en ny rapportdefinisjon a.    Klikk på Innstillinger og fjern merket for [![Innstillinger-skjema](./media/FR-FAQ_settings.png)](./media/FR-FAQ_settings.png)
-   
-4.  Generer rapporten. 
-
-5.  Eksporter rapporten til Excel.
-
-### <a name="in-d365"></a>I D365: 
-1.  Klikk på Økonomimodul | Forespørsler og rapporter | Råbalanse a.    Parametere i.  Fra-dato: Start på regnskapsår ii. Til-dato: Datoen da du genererte rapporten for iii.    Finansdimensjonssettet Hovedkontosett [![Hovedkontoskjema](./media/FR-FAQ_mainacct.png)](./media/FR-FAQ_mainacct.png)
-      
-  b.    Klikk på Beregn
-
-2.  Eksporter rapporten til Excel
-
-Du skal nå kunne kopiere dataene fra FR Excel-rapporten til D365-råbalanserapporten og sammenligne sluttsaldokolonnene.
-
+Du skal nå kunne kopiere dataene fra Excel-rapporten i finansrapportering til råbalanserapporten slik at du kan sammenligne **sluttsaldokolonnene**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

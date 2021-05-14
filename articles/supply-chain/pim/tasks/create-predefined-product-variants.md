@@ -1,74 +1,109 @@
 ---
 title: Opprette forhåndsdefinerte produktvarianter
 description: Denne fremgangsmåten veileder deg gjennom oppretting av produktvarianter for en produktstandard ved hjelp av kombinasjoner av produktdimensjoner.
-author: ShylaThompson
-ms.date: 08/29/2018
+author: t-benebo
+manager: tfehr
+ms.date: 04/22/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
-ms.search.form: EcoResProductListPage, EcoResProductCreate, EcoResProductDetails, EcoResProductMasterDimension, EcoResProductVariants, EcoResProductVariantSuggestions, EcoResProductVariantsPendingReleaseFormPart
+ms.search.form: EcoResProductListPage, EcoResProductCreate, EcoResProductDetails, EcoResProductMasterDimension, EcoResProductVariants, EcoResProductVariantSuggestions, EcoResProductVariantsPendingReleaseFormPart, EcoResProductVariantSuggestionsEnhanced
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: benebotg
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8340d295ffd072c95d9b174507ef4203131c8165
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.dyn365.ops.version: 10.0.19
+ms.openlocfilehash: acd2e3f1464dfed09ee24764270b06970b747d7c
+ms.sourcegitcommit: cd9016e9787169cb800889d335b9c5919ddbe4af
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809356"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5938208"
 ---
-# <a name="create-predefined-product-variants"></a>Opprette forhåndsdefinerte produktvarianter
+# <a name="predefined-product-variants"></a>Forhåndsdefinerte produktvarianter
 
 [!include [banner](../../includes/banner.md)]
 
-Denne fremgangsmåten veileder deg gjennom oppretting av produktvarianter for en produktstandard ved hjelp av kombinasjoner av produktdimensjoner. Demonstrasjonsfirmaet USMF brukes til å opprette denne fremgangsmåten.
+## <a name="example-scenario-create-predefined-product-variants"></a>Eksempelscenario: Opprette forhåndsdefinerte produktvarianter
 
+Dette eksempelscenarioet viser hvordan du oppretter produktvarianter for en produktstandard ved hjelp av kombinasjoner av produktdimensjoner.
 
-## <a name="create-a-product-master"></a>Opprette en produktstandard
-1. Gå til Behandling av produktinformasjon > Produkter > Produktstandarder.
-2. Klikk på Ny.
-3. Skriv inn en verdi i feltet Produktnummer.
-    * Det er bare obligatorisk å angi et produktnummer manuelt hvis ingen nummerserie er definert for produktnummerfeltet. Hopp med andre ord over dette trinnet hvis nummerserien er definert for feltet.  
-4. Skriv inn en verdi i feltet Produktnavn.
-5. Angi eller velg en verdi i Feltet Produktdimensjonsgruppe.
-    * Velg produktdimensjonsgruppen SizeCol (størrelse og farge).  
-6. Klikk på OK.
+### <a name="make-demo-data-available"></a>Gjøre demodata tilgjengelig
 
-## <a name="add-product-dimensions"></a>Legge til produktdimensjoner
-1. Klikk på Produktdimensjoner.
-    * Dette eksemplet viser hvordan du manuelt angir produktdimensjoner. Du kan også velge en størrelse, farge eller stilgruppe som inkluderer produktdimensjonsverdiene du vil bruke.  
-2. Klikk på Ny.
-3. Merk den valgte raden i listen.
-4. Angi eller velg en verdi i Størrelse-feltet.
-5. Skriv inn en verdi i Navn-feltet.
-6. Klikk på Ny.
-7. Merk den valgte raden i listen.
-8. Angi eller velg en verdi i Størrelse-feltet.
-9. Skriv inn en verdi i Navn-feltet.
-10. Klikk på fanen Farger.
-11. Klikk på Ny.
-12. Merk den valgte raden i listen.
-13. Angi eller velg en verdi i feltet Farge.
-14. Skriv inn en verdi i Navn-feltet.
-15. Klikk på Ny.
-16. Merk den valgte raden i listen.
-17. Angi eller velg en verdi i feltet Farge.
-18. Skriv inn en verdi i Navn-feltet.
-19. Klikk på Lagre.
-20. Lukk siden.
+For å følge dette scenarioet ved å bruke verdiene som er foreslått her, må du ha demonstrasjonsdata installert, og du må velge den juridiske enheten *USMF*.
 
-## <a name="generate-product-variants"></a>Generere produktvarianter
-1. Klikk på Størrelser for produktvarianter.
-2. Klikk på Variantforslag.
-3. Klikk på Velg alt.
-    * I dette eksemplet velges alle mulige varianter. Hvis bare et delsett av de mulige produktdimensjonskombinasjoner skal brukes for å opprette varianter, kan du velge de enkelte postene.  
-4. Klikk på Opprett.
-    * Du kan generere beskrivelser for alle varianter basert på kombinasjonen av produktdimensjonsverdier. Beskrivelser er valgfritt.  
-5. Klikk på Lagre.
+### <a name="step-1-create-a-product-master"></a>Trinn 1: Opprette en produktstandard
 
+Slik opprettes en produktstandard:
 
+1. Gå til **Behandling av produktinformasjon > Produkter > Produktstandarder**.
+1. Velg **Ny**.
+1. Hvis **Produktnummer**-feltet ikke allerede viser et tall, angir du en verdi. Dette er bare nødvendig hvis ingen nummerserie er definert for dette feltet.
+1. Angi et navn i feltet **Produktnavn**.
+1. I feltet **Produktdimensjonsgruppe** velger du produktdimensjonsgruppen *SizeCol* (Størrelse og farge).
+1. Velg **OK** for å opprette og åpne den nye produktstandard.
+
+### <a name="step-2-add-product-dimensions"></a>Trinn 2: Legge til produktdimensjoner
+
+Dette eksemplet viser hvordan du manuelt angir produktdimensjoner. Du kan også velge en størrelse, farge eller stilgruppe som inkluderer produktdimensjonsverdiene du vil bruke.
+
+Slik legger du til produktdimensjoner:
+
+1. Når den nye produktstandarden fremdeles er åpen, velger du **Produktdimensjoner** i handlingsruten.
+1. Åpne kategorien **Størrelse**, og velg **Ny** på verktøylinjen for å legge til en rad i rutenettet. Gjør følgende innstillinger for den nye raden:
+    - **Størrelse:** Velg en størrelsesverdi.
+    - **Navn:** Angi et navn for størrelsen.
+1. Velg **Ny** på verktøylinjen, og legg til en ny størrelse i rutenettet med ny **Størrelse** og nytt **Navn**.
+1. Åpne kategorien **Farger**, og velg **Ny** på verktøylinjen for å legge til en rad i rutenettet. Gjør følgende innstillinger for den nye raden:
+    - **Farge:** Velg en fargeverdi.
+    - **Navn:** Angi et navn for fargen.
+1. Velg **Ny** på verktøylinjen, og legg til en ny farge i rutenettet med ny **Farge** og nytt **Navn**.
+1. Velg **Lagre**.
+1. Lukk siden for å gå tilbake til den nye produktstandarden.
+
+### <a name="step-3-generate-product-variants"></a>Trinn 3: Generere produktvarianter
+
+> [!NOTE]
+> Denne delen beskriver hvordan du genererer produktvarianter når funksjonen *Forbedringer for variantforslagssiden* ikke er aktivert. I neste del finner du informasjon om hvordan du genererer produktvarianter når denne funksjonen er tilgjengelig.
+
+Slik genererer du produktvarianter:
+
+1. Når den nye produktstandarden fremdeles er åpen, velger du **Produktvarianter** i handlingsruten.
+1. Velg **Variantforslag** i handlingsruten.
+1. Systemet genererer en liste med alle mulige kombinasjoner av størrelsene og fargene du definerte for produktet. Velg **Velg alle** på verktøylinjen.
+    - I dette eksemplet velger du alle mulige varianter. Hvis du bare vil bruke et delsett av de mulige produktdimensjonskombinasjonene, merker du bare av i de obligatoriske avmerkingsboksene etter behov.  
+1. Velg **Opprett**.
+1. Velg **Lagre**.
+
+## <a name="improved-variant-suggestions"></a>Forbedrede variantforslag
+
+[!INCLUDE [preview-banner-section](../../../includes/preview-banner-section.md)]
+
+Funksjonen *Forbedringer for variantforslagssiden* forbedrer **Variantforslag** for å adressere ytelses- og brukervennlighetsproblemer for firmaer som har et høyt antall produktdimensjonskombinasjoner. Den utvidede prosessen for valg av produktdimensjonsverdier som du kan generere variantforslag for, gjør det raskere og enklere å identifisere og frigi det relevante settet med produktvarianter.
+
+Følgende forbedringer er lagt til av denne funksjonen:
+
+- **Utsatt generering av variantforslag:** **Variantforslag**-siden viser ikke lenger forslag når du åpner den første gang. I stedet må du uttrykkelig velge hvilke verdier du trenger, og deretter velge **Foreslå**-knappen for å generere kombinasjonene. Dette gjør prosessen mer synlig og interaktiv.
+- **Valg av dimensjonsverdier:** Når du har mange dimensjonsverdier, er du vanligvis interessert i å generere variantforslag som bare omfatter noen få av dem (for eksempel når du introduserer et nytt sett med farger eller stiler). Med den forbedrede utformingen kan du velge dimensjonsverdiene du vil generere produktvariantforslag for. Dette øker relevansen av de foreslåtte variantene betydelig og forbedrer både systemets ytelse og brukerproduktivitet.
+
+### <a name="turn-on-the-variant-suggestions-page-improvements-feature"></a>Aktivere funksjonen Forbedringer for variantforslagssiden
+
+Før du kan bruke funksjonen *Forbedringer for variantforslagssiden* må den aktiveres i systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
+
+- **Modul:** *Behandling av produktinformasjon*
+- **Funksjonsnavn:** *Forbedringer for variantforslagssiden*
+
+### <a name="work-with-the-improved-variant-suggestions"></a>Arbeide med de forbedrede variantforslagene
+
+For å generere produktvariantforslag når funksjonen *Forbedringer for variantforslagssiden* er aktivert:
+
+1. Åpne eller opprett en produktstandard, og legg til de nødvendige produktdimensjonene, som beskrevet i forrige del.
+1. Når den produktstandarden er åpen, velger du **Produktvarianter** i handlingsruten.
+1. Velg **Variantforslag** i handlingsruten.
+1. Velg verdiene du vil bruke for hver av dimensjonene.
+1. På verktøylinjen velger du **Foreslå**.
+1. Systemet genererer en liste med alle mulige kombinasjoner av størrelsene og fargene du valgte. I hurtigkategorien **Foreslåtte varianter** merker du av for hver produktdimensjonskombinasjon du vil bruke, eller velger **Velg alle** på verktøylinjen for å velge alle.  
+1. Velg **Opprett** for å legge til variantene i gjeldende produktstandard.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

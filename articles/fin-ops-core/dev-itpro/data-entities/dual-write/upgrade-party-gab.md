@@ -10,12 +10,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 76e64d483e833782733277a64d8dc37cbeba6130
-ms.sourcegitcommit: 011468a6cffea8641bebc2922e0676d9f44b36fc
+ms.openlocfilehash: 32128d48bfac195530d70b60e67cfd4921fc001e
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "5857376"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941089"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Oppgrader til parten og den globale adressebokmodellen
 
@@ -52,11 +52,11 @@ Disse forutsetningene kreves:
 
 2. Logg på [Microsoft Azure](https://portal.azure.com/).
 
-3. Opprett en [ressursgruppe](https://docs.microsoft.com/azure/azure-resource-manager/management/manage-resource-groups-portal).
+3. Opprett en [ressursgruppe](/azure/azure-resource-manager/management/manage-resource-groups-portal).
 
-4. Opprett en [lagringskonto](https://docs.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-portal) i ressursgruppen som du opprettet.
+4. Opprett en [lagringskonto](/azure/storage/common/storage-account-create?tabs=azure-portal) i ressursgruppen som du opprettet.
 
-5. Opprett en [datafabrikk](https://docs.microsoft.com/azure/data-factory/quickstart-create-data-factory-portal) i ressursgruppen som du opprettet ovenfor.
+5. Opprett en [datafabrikk](/azure/data-factory/quickstart-create-data-factory-portal) i ressursgruppen som du opprettet ovenfor.
 
 6. Åpne datafabrikken og velg flisen **Forfatter og overvåking**.
 
@@ -81,7 +81,7 @@ Disse forutsetningene kreves:
     FO Linked Service_properties_type Properties_service Principal Id | Angi klient-ID-en til programmet.
     Dynamics Crm Linked Service_properties_type Properties_username | Brukernavnet for å koble til Dynamics.
 
-    Hvis du vil ha mer informasjon, kan du se [Forfremme en Resource Manager-mal for hvert miljø manuelt](https://docs.microsoft.com/azure/data-factory/continuous-integration-deployment#manually-promote-a-resource-manager-template-for-each-environment), [Tilkoblede tjenesteegenskaper](https://docs.microsoft.com/azure/data-factory/connector-dynamics-ax#linked-service-properties) og [Kopiere data ved å bruke Azure Data Factory](https://docs.microsoft.com/azure/data-factory/connector-dynamics-crm-office-365#dynamics-365-and-dynamics-crm-online)
+    Hvis du vil ha mer informasjon, kan du se [Forfremme en Resource Manager-mal for hvert miljø manuelt](/azure/data-factory/continuous-integration-deployment#manually-promote-a-resource-manager-template-for-each-environment), [Tilkoblede tjenesteegenskaper](/azure/data-factory/connector-dynamics-ax#linked-service-properties) og [Kopiere data ved å bruke Azure Data Factory](/azure/data-factory/connector-dynamics-crm-office-365#dynamics-365-and-dynamics-crm-online)
 
 10. Etter distribusjonen validerer du datasettene, dataflyten og den tilkoblede tjenesten til datafabrikken.
 
@@ -158,7 +158,7 @@ Disse forutsetningene kreves:
 8. Importer de nye **partsoppføringene** i Finance and Operations-appen.
 
     + Last ned `FONewParty.csv`-filen fra Azure Blob Storage. Banen er `partybootstrapping/output/FONewParty.csv`.
-    + Konverter `FONewParty.csv`-filen til en Excel-fil, og importer Excel-filen til Finance and Operations-appen.  Hvis CSV-import fungerer for deg, kan du importere CSV-filen direkte. Importen kan ta noen timer å kjøre, avhengig av datavolumet. Hvis du vil ha mer informasjon, se [Oversikt over dataimport- og -eksportjobber](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-import-export-job).
+    + Konverter `FONewParty.csv`-filen til en Excel-fil, og importer Excel-filen til Finance and Operations-appen.  Hvis CSV-import fungerer for deg, kan du importere CSV-filen direkte. Importen kan ta noen timer å kjøre, avhengig av datavolumet. Hvis du vil ha mer informasjon, se [Oversikt over dataimport- og -eksportjobber](../data-import-export-job.md).
 
     ![Importer Datavers-partsoppføringene](media/data-factory-import-party.png)
 

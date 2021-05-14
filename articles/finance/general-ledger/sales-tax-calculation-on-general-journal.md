@@ -2,25 +2,25 @@
 title: Mva-beregning på generelle journallinjer
 description: Dette emnet beskriver hvordan merverdiavgift beregnes for ulike kontotyper (leverandør, kunde, finans og prosjekt) på generelle journallinjer.
 author: EricWang
-ms.date: 08/14/2019
+ms.date: 04/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
-ms.author: roschlom
+ms.author: EricWang
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: e4d367fe6cb729c9c5658a9bbbac04e53fdf9644
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d0cb4b282fe2bd5c68af17c741787c4caca98003
+ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815338"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5937312"
 ---
 # <a name="sales-tax-calculation-on-general-journal-lines"></a>Mva-beregning på generelle journallinjer
 [!include [banner](../includes/banner.md)]
@@ -117,7 +117,7 @@ Denne delen beskriver hvordan fortegnet for mva-beløpet beregnes.
 
 ![Siden Mva-transaksjoner](media/sales-tax-amount-sign.jpg)
 
-Tabellen nedenfor viser den generelle regelen for å fastslå fortegnet for mva-beløp i den midlertidige mva-tabellen.
+Tabellen nedenfor viser den generelle regelen for å fastslå mva-retningen og fortegnet for mva-beløp i den midlertidige mva-tabellen.
 
 | Journallinjebeløp | Mva-retning  | Fortegn for mva-beløp |
 |---------------------|----------------------|-----------------------|
@@ -126,7 +126,7 @@ Tabellen nedenfor viser den generelle regelen for å fastslå fortegnet for mva-
 | Negativ            | Innkommende merverdiavgift | Negativ              |
 | Negativ            | Utgående merverdiavgift    | Positiv              |
 
-Det finnes en spesialregel for bilag som bare har **Prosjekt**- eller **Finans**-linjer når det velges en mva-gruppe eller en mva-gruppe for vare på **Finans**-linjen. Denne regelen styres ved hjelp av funksjonen Aktiver uavhengig beregning av merverdiavgift for generelle journaler. Når denne funksjonen er deaktivert, bruker avgiftsbeløpet **Finans**-linjen debet-/kreditretningen for **Prosjekt**-linjen. Når denne funksjonen er aktivert, bruker avgiftsbeløpet **Finans**-linjen sin egen debet-/kreditretning. Tabellene nedenfor viser regelen for hvert scenario. 
+Det finnes en spesialregel for bilag som bare har **Prosjekt**- eller **Finans**-linjer når det velges en mva-gruppe eller en mva-gruppe for vare på **Finans**-linjen. Denne regelen styres ved hjelp av funksjonen **Aktiver uavhengig beregning av merverdiavgift for generelle journaler**. Når denne funksjonen er deaktivert, bruker avgiftsbeløpet **Finans**-linjen debet-/kreditretningen for **Prosjekt**-linjen. Når denne funksjonen er aktivert, bruker avgiftsbeløpet **Finans**-linjen sin egen debet-/kreditretning. Tabellene nedenfor viser regelen for hvert scenario. 
 
 **Regel når funksjonen er aktivert**
 

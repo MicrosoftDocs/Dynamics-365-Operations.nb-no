@@ -2,7 +2,8 @@
 title: Mediegallerimodul
 description: Dette emnet dekker mediegallerimoduler og beskriver hvordan du legger dem til på områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 09/15/2020
+manager: annbe
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +15,17 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: b0b1ec7324ff60ee7cdd01c97c8c08260bd8c947
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: de0bc650393b035adea4570c5e64ecb76283117e
+ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5802821"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5937392"
 ---
 # <a name="media-gallery-module"></a>Mediegallerimodul
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Dette emnet dekker mediegallerimoduler og beskriver hvordan du legger dem til på områdesider i Microsoft Dynamics 365 Commerce.
 
@@ -49,11 +51,13 @@ I eksemplet i følgende illustrasjon er en kjøpeboks på en PDP som er vert for
 |---------------|--------|-------------|
 | Bildekilde | **Sidekontekst** eller **Produkt-ID** | Standardverdien er **Sidekontekst**. Hvis **Sidekontekst** er valgt, forventer modulen at siden oppgir produkt-ID-informasjon. Hvis **Produkt-ID** er valgt, må produkt-ID-en for et bilde angis som verdien for egenskapen **Produkt-ID**. Denne funksjonen er tilgjengelig i Commerce versjon 10.0.12. |
 | Produkt-ID | En produkt-ID | Denne egenskapen gjelder bare hvis verdien for egenskapen **Bildekilde**-egenskapen er **Produkt-ID**. |
-| Bildezoom | **Innebygd** eller **Container** | Denne egenskapen lar brukeren zoome bilder i mediagallerimodulen. Et bilde kan zoomes enten innebygd eller i en separat container ved siden av bildet. Denne funksjonen er tilgjengelig i 10.0.12 |
-| Zoomeskala | Et desimaltall | Denne egenskapen angir skaleringsfaktoren for zooming av bilder. Hvis for eksempel verdien er satt til **2,5**, forstørres bildene 2,5 ganger.|
-| Fullskjerm | **Sann** eller **Usann** | Denne egenskapen angir om bilder kan vises i fullskjermmodus. I fullskjermmodus kan bilder også bli ytterligere forstørret hvis zoomefunksjonen er slått på. Denne funksjonen er tilgjengelig i Commerce versjon 10.0.13. |
+| Bildezoom | **Innebygd** eller **Container** | Denne egenskapen lar brukeren zoome bilder i mediagallerimodulen. Et bilde kan zoomes enten innebygd eller i en separat container ved siden av bildet. Denne funksjonen er tilgjengelig i 10.0.12. |
+| Zoomfaktor | Et desimaltall | Denne egenskapen angir skaleringsfaktoren for zooming av bilder. Hvis for eksempel verdien er satt til **2,5**, forstørres bildene 2,5 ganger. |
+| Fullskjerm | **Sann** eller **Usann** | Denne egenskapen angir om bilder kan vises i fullskjermmodus. I fullskjermmodus kan bilder også bli ytterligere forstørret hvis zoomefunksjonen er slått på. Denne funksjonen er tilgjengelig i Commerce versjon 10.0.13-versjonen. |
+| Kvalitet for zoomet bilde | Et tall fra 1 til og med 100 som representerer en prosent, og som velges ved hjelp av en trackbar-kontroll | Denne egenskapen definerer bildekvaliteten for bilder som zoomes inn. Du kan angi en oppløsning på 100 prosent for å sikre at et zoomet bilde alltid bruker høyest mulig oppløsning. Denne egenskapen gjelder ikke PNG-filer fordi de bruker format uten datatap. Denne funksjonen er tilgjengelig fra og med Commerce versjon 10.0.19-versjonen. |
 | Bilder | Bilder som er valgt fra mediebiblioteket i områdebygger | I tillegg til å bli gjengitt fra et produkt kan bilder kurateres for en mediegallerimodul. Disse bildene blir føyd til alle tilgjengelige produktavbildninger. Denne funksjonen er tilgjengelig i Commerce versjon 10.0.12. |
 | Miniatyrbilderetning | **Loddrett** eller **Vannrett** | Denne egenskapen angir om miniatyrbilder skal vises i en loddrett stripe eller en vannrett stripe. |
+| Skjul hovedproduktbilder for variant | **Sann** eller **Usann** | Hvis denne egenskapen er satt til **Sann** når en variant er valgt, skjules bilder av hovedproduktet hvis varianten ikke har noen bilder. Denne egenskapen påvirker ikke produkter som ikke har noen varianter. |
 
 Illustrasjonen nedenfor viser et eksempel på en mediegallerimodul der alternativene for fullskjerm og zoom er tilgjengelige.
 

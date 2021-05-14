@@ -1,6 +1,6 @@
 ---
 title: Startside for anleggsmidler
-description: Anleggsmidler er varer av verdi, for eksempel bygninger, kjøretøy, land og utstyr, som eies av en enkeltperson eller en organisasjon.
+description: Anleggsmidler er verdivarer som eies av en enkeltperson eller organisasjon. Varene omfatter bygninger, kjøretøy, land og utstyr.
 author: ShylaThompson
 ms.date: 08/31/2017
 ms.topic: index-page
@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1825ee4617d14b421d4a7e6151d645a653a9fcbb
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0356837b96fd21f763c9a60926ba1bc982cf2024
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815674"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897994"
 ---
 # <a name="fixed-assets-home-page"></a>Startside for anleggsmidler
 
 [!include [banner](../includes/banner.md)]
 
-Anleggsmidler er varer av verdi, for eksempel bygninger, kjøretøy, land og utstyr, som eies av en enkeltperson eller en organisasjon. 
+Anleggsmidler er verdivarer som eies av en enkeltperson eller organisasjon. Varene omfatter bygninger, kjøretøy, land og utstyr. 
 
-Du kan definere og skrive inn anskaffelsesinformasjon for anleggsmidler, og deretter behandle dem ved å avskrive dem og angi en kapitaliseringsterskel for å bestemme avskrivning. Du kan beregne justeringer til anleggsmidlene, og du kan også kvitte deg med dem. Når du bruker økonomimodulen sammen med anleggsmidler, kan du vise gjeldende verdi for alle anleggsmidler. Behandlingen av anleggsmidler samsvare med både internasjonale regnskapsstandarder og regnskapslovgivningen i hvert land/område. Kravene kan inneholde regler for registrering av anskaffelses- og avhendingstransaksjoner, avskrivning, levetid, oppskrivinger og nedskrivinger av anleggsmidler. Anleggsmiddelfunksjonalitet inneholder mange av disse standardene og reglene.
+Du kan definere og skrive inn anskaffelsesinformasjon for anleggsmidler, og deretter behandle midlene ved å avskrive dem og angi en kapitaliseringsterskel for å bestemme avskrivning. Du kan beregne justeringer til anleggsmidlene, og du kan også kvitte deg med dem. Når du bruker økonomimodulen sammen med anleggsmidler, kan du vise gjeldende verdi for alle anleggsmidler. Behandlingen av anleggsmidler samsvare med både internasjonale regnskapsstandarder og regnskapslovgivningen i hvert land/område. Kravene kan inneholde regler for registrering av anskaffelses- og avhendingstransaksjoner, avskrivning, levetid, oppskrivinger og nedskrivinger av anleggsmidler. Anleggsmiddelfunksjonalitet inneholder mange av disse standardene og reglene.
 
 [![Forretningsprosess](./media/FA-process.PNG)](./media/FA-process.PNG)
 
@@ -38,7 +38,7 @@ Du kan definere og skrive inn anskaffelsesinformasjon for anleggsmidler, og dere
 
 #### <a name="whats-new-and-in-development"></a>Hva er nytt og hva er under utvikling?
 
-Gå til [Lanseringsplaner for Microsoft Dynamics 365](https://go.microsoft.com/fwlink/?linkid=2010158) for å se hvilke nye funksjoner som er planlagt. 
+Gå til [Lanseringsplaner for Microsoft Dynamics 365](/dynamics365/release-plans/) for å se hvilke nye funksjoner som er planlagt. 
 
 #### <a name="blogs"></a>Blogger
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 49aa17aa376f8536e9d2290292f877d314c2c078
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b4ad73265e321b6339c061a7866b55cb2769954b
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818019"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5921323"
 ---
 # <a name="maintain-bom-for-a-product-configuration-model"></a>Vedlikeholde stykkliste for en produktkonfigurasjonsmodell
 
@@ -26,35 +26,34 @@ ms.locfileid: "5818019"
 
 Kjører du denne prosedyren krever det en eksisterende produktmodellkonfigurasjon. Modellen for High-end-høyttaler i demofirmaet USMF brukes til å opprette denne fremgangsmåten.
 
-
 ## <a name="add-a-bom-line"></a>Legge til en stykklistelinje
-1. Klikk på Definisjon av produktvariantmodell.
-2. Klikk på Produktkonfigurasjonsmodeller.
-3. Finn og velg ønsket post i listen.
+
+1. Gå til **Behandling av produktinformasjon \> Produkter \> Produktkonfigurasjonsmodeller**.
+1. Finn og velg ønsket post i listen.
     * Velg High-end-høyttaleren for denne prosedyren.  
-4. Klikk på koblingen i den valgte raden i listen.
-5. Utvid delen Stykklistelinjer.
-6. Klikk på Legg til.
-7. Skriv inn en verdi i Navn-feltet.
-8. Skriv inn en verdi i feltet Beskrivelse.
-9. Klikk på Lagre.
+1. Velg koblingen i den valgte raden i listen.
+1. Utvid delen **Stykklistelinjer**.
+1. Velg **Legg til**.
+1. Skriv inn en verdi i **Navn**-feltet.
+1. Skriv inn en verdi i **Beskrivelse**-feltet.
+1. Velg **Lagre**.
 
 ## <a name="add-bom-line-details"></a>Legge til detaljer om stykklistelinje
-1. Klikk på Detaljer om stykklistelinje.
-2. Angi eller velg en verdi i Varenummer-feltet.
+
+1. Velg **Stykklistelinjedetaljer**.
+2. Angi eller velg en verdi i **Varenummer**-feltet.
     * Du kan for eksempel velge varen M0055.  
     * For hver Stykklistelinjeegenskap kan du velge om den tar en fast verdi eller er tilordnet til et attributt.  
-3. Merk av for Sett.
-4. Velg Ja i feltet Beregning.
-    * Når du setter Beregning-egenskapen til Ja, sikrer du at stykklistelinjen er inkludert i kostnadsberegning.  
-5. Klikk på fanen Oppsett.
-6. Merk av for Sett.
-7. Angi et tall i feltet Antall.
+3. Merk av for **Sett**.
+4. Velg *Ja* i feltet **Beregning**.
+    * Når du setter **Beregning**-egenskapen til *Ja*, sikrer du at stykklistelinjen er inkludert i kostnadsberegning.  
+5. Velg **Oppsett**-fanen.
+6. Merk av for **Sett**.
+7. Angi et tall i **Antall**-feltet.
     * Antall-feltet bestemmer hvor mye av varen som inngår i stykklisten. Dette kan være en opplagt kandidat for en attributtilordning.  
-8. Klikk på fanen Dimensjon.
+8. Velg fanen **Dimensjon**.
     * Verifiser om noen av produktdimensjonene er aktive, og derfor må ha en verdi eller et attributt tilordnet.  
-9. Klikk på OK.
-
+9. Velg **OK**.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

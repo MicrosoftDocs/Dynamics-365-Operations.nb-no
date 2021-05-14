@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: fb71d941a5cd58701f723e56a07c6b6cca6689bb
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 56446e6a8abfcab83772e446dc7f01c529404b23
+ms.sourcegitcommit: 05210ceefd8816b889019b2a6554855f3c5b2a6c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5830034"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5954651"
 ---
 # <a name="manage-changes-to-engineering-products"></a>Behandle endringer i tekniske produkter
 
@@ -139,13 +139,14 @@ Mens du ser gjennom en forespørsel om endring, i handlingsruten, i **Endringsfo
 
 Som beskrevet i [Tekniske firmaer og dataeierskapsregler](engineering-org-data-ownership-rules.md), varierer produkt dataene du kan redigere, avhengig av hvilken type juridisk enhet du arbeider i (et teknisk firma kontra et driftsfirma). Dataeierskapsregler brukes også for odrer om teknisk endring. Avhengig av den juridiske enheten der du oppretter en ordre om teknisk endring, kan du derfor foreta ulike typer endringer. Her er noen eksempler:
 
-- Når det gjelder ordrer om teknisk endring i et **teknisk firma**, kan du gjøre grunnleggende endringer i de tekniske dataene. Du kan for eksempel opprette nye versjoner av et produkt, endre produktets struktur via stykklisten og endre tekniske attributtverdier. For hvert produkt som påvirkes, velger du en av følgende verdier i **Påvirkning**-feltet:
+- Når det gjelder ordrer om teknisk endring i et *teknisk firma*, kan du gjøre grunnleggende endringer i de tekniske dataene. Du kan for eksempel opprette nye versjoner av et produkt, endre produktets struktur via stykklisten og endre tekniske attributtverdier. For hvert produkt som påvirkes, velger du en av følgende verdier i **Påvirkning**-feltet:
 
     - **Ingen** – Oppdater den eksisterende produktversjonen (oppdatering i versjon).
     - **Ny versjon** – Opprett en ny versjon som er basert på den valgte produktversjonen.
-    - **Nytt produkt** – Opprett helt nytt produkt eller ny produktvariant som er basert på den valgte produktversjonen.
+    - **Nytt produkt** – Opprett helt nytt produkt som er basert på den valgte produktversjonen.
+    - **Ny variant** – Opprett en ny variant som er basert på den valgte produktversjonen. Informasjonen om stykklisten og ruten kopieres.
 
-- Når det gjelder ordrer om teknisk endring i et **driftsfirma**, kan du endre logistikkdataene for produktet. Du kan for eksempel supplere den eksisterende stykklisten med innstillinger for leverandører, legge til lokale ruter eller lokale stykklister, og til og med supplere en stykkliste ved å legge til nye stykklistelinjer for lokale emballasjer, smørevæsker eller instruksjoner på det lokale språket. Suppleringer som brukere gjør i driftsfirmaet, beholdes når nye oppdateringer sendes fra det tekniske firmaet. Hvis du vil ha mer informasjon, kan du se [Tekniske firmaer og dataeierskapsregler](engineering-org-data-ownership-rules.md).
+- Når det gjelder ordrer om teknisk endring i et *driftsfirma*, kan du endre logistikkdataene for produktet. Du kan for eksempel supplere den eksisterende stykklisten med innstillinger for leverandører, legge til lokale ruter eller lokale stykklister, og til og med supplere en stykkliste ved å legge til nye stykklistelinjer for lokale emballasjer, smørevæsker eller instruksjoner på det lokale språket. Suppleringer som brukere gjør i driftsfirmaet, beholdes når nye oppdateringer sendes fra det tekniske firmaet. Hvis du vil ha mer informasjon, kan du se [Tekniske firmaer og dataeierskapsregler](engineering-org-data-ownership-rules.md).
 
     Når ordrer om teknisk endring behandles i det tekniske firmaet, blir produktene opprettet eller oppdatert bare i det tekniske firmaet. Hvis produktets hoveddata også skal oppdateres, må du derfor også frigi produktene til driftsfirmaene.
 

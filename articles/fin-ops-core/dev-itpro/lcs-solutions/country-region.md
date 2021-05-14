@@ -14,19 +14,19 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 95989a395781e790da6aedc9079c3aaebf98f9ae
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b3e7ba3405b6113bf612c685c4cccd9cf50f1187
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748471"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920863"
 ---
 # <a name="globalization-resources"></a>Globaliseringsressurser
 
 ## <a name="local-and-regional-deployments"></a>Lokale og områdespesifikke distribusjoner
 Hvis bestemmelsene fra myndighetene krever at data lagres eller behandles på en annen måte enn det som kreves for andre land/områder, kan det være lands-/områdespesifikke krav som du må ta hensyn til når du distribuerer. Følgende ressurser kan være relevante for deg:
 
-[Finance and Operations-apper styrt av 21Vianet i Kina](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/china-local-deployment)
+[Finance and Operations-apper styrt av 21Vianet i Kina](../deployment/china-local-deployment.md)
 
 ## <a name="localization-and-regulatory-features"></a>Lokalisering og forskriftsmessige funksjoner
 
@@ -60,7 +60,7 @@ Ressursene nedenfor gir informasjon om planlagte og nye lokaliseringsfunksjoner.
 -   [Sende varsler om land-/områdespesifikke forskriftsmessige funksjoner](submit-localization-alerts.md)
 
 #### <a name="dynamics-365-release-plans"></a>Lanseringsplaner for Dynamics 365
-I [Lanseringsplaner for Dynamics 365](https://docs.microsoft.com/business-applications-release-notes/) finner du beskrivelser av nye og forbedrede funksjoner som er planlagt for forretningsprogrammer og programplattformer for Dynamics 365. 
+I [Lanseringsplaner for Dynamics 365](/business-applications-release-notes/) finner du beskrivelser av nye og forbedrede funksjoner som er planlagt for forretningsprogrammer og programplattformer for Dynamics 365. 
 
 #### <a name="finance-and-operations-apps-whats-new"></a>Nyheter i Finance and Operations-apper
 Innholdet i [Nyheter eller endringer på Finance and Operations-startsiden](../../fin-ops/get-started/whats-new-changed.md) angir funksjoner som er inkludert i bestemte versjoner av Finance and Operations-appene.

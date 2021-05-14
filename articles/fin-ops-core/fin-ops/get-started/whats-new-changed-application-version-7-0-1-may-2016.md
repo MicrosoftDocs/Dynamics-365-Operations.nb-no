@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: f1d0361da03f2fc4aaaa749d632192265483db2d
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: c4d762a6750a295b91a1d146b7bf0ae750e2e9bd
+ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752834"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "5923195"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-application-version-701-may-2016"></a>Hva er nytt eller endret i Dynamics AX programversjon 7.0.1 (mai 2016)
 
@@ -76,7 +76,7 @@ Denne artikkelen beskriver funksjoner som enten er nye eller endret i Microsoft 
 </tr>
 <tr>
 <td>Støtte for stykklister som inneholder varer med ulike produktdimensjoner av den samme varen.</td>
-<td>Når du bruker ett eller flere av produktdimensjonene i produksjon, kan det oppstå situasjoner der du vil produsere en vare basert på en annen variant av den samme varen. Hvis du vil ha mer informasjon, kan du se <a href="https://blogs.msdn.microsoft.com/axmfg/2015/12/22/support-for-boms-that-includes-items-with-different-product-dimensions-of-the-same-item/">denne bloggen</a>.</td>
+<td>Når du bruker ett eller flere av produktdimensjonene i produksjon, kan det oppstå situasjoner der du vil produsere en vare basert på en annen variant av den samme varen. Hvis du vil ha mer informasjon, kan du se <a href="/archive/blogs/axmfg/support-for-boms-that-includes-items-with-different-product-dimensions-of-the-same-item">denne bloggen</a>.</td>
 </tr>
 <tr>
 <td>Produksjonsordrer med sirkelstrukturer på første nivå av stykklistene, utelates fra stykklistenivåberegning for planlegging av materialressurs.</td>

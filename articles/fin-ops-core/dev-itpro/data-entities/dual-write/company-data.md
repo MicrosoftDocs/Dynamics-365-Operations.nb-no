@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 1c3af66c0b8daa120c6ba19bd910f7531ffada0e
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 6a858135d377b30d6e8885ae18b2dc50da11813b
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751416"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941035"
 ---
 # <a name="company-concept-in-dataverse"></a>Bedriftskonsept i Dataverse
 
@@ -89,7 +89,7 @@ Det finnes flere måter å fylle ut firmanavnet på automatisk i Customer Engage
 
     :::image type="content" source="media/autopopulate-company-name-3.png" alt-text="Hvis du velger en rad, endres standardfirmaet.":::
 
-+ Hvis du er en systemkonfigurator eller -administrator, og du vil fylle ut firmadata automatisk i et egendefinert skjema, kan du bruke [skjemahendelser](https://docs.microsoft.com/powerapps/developer/model-driven-apps/clientapi/events-forms-grids). Legg til en JavaScript-referanse i **msdyn_/DefaultCompany.js**, og bruk følgende hendelser. Du kan bruke et hvilket som helst standardskjema, for eksempel i skjemaet for **Forretningsforbindelse**.
++ Hvis du er en systemkonfigurator eller -administrator, og du vil fylle ut firmadata automatisk i et egendefinert skjema, kan du bruke [skjemahendelser](/powerapps/developer/model-driven-apps/clientapi/events-forms-grids). Legg til en JavaScript-referanse i **msdyn_/DefaultCompany.js**, og bruk følgende hendelser. Du kan bruke et hvilket som helst standardskjema, for eksempel i skjemaet for **Forretningsforbindelse**.
 
     + **OnLoad**-hendelsen for skjemaet: Angi **defaultCompany**-kolonnen.
     + **OnChange**-hendelse for **Firma**-kolonnen: Angi kolonnen **updateDefaultCompany**.

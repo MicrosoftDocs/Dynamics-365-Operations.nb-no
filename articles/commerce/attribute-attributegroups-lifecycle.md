@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
-ms.openlocfilehash: 9d1d511fa83655dfcb383bdf2c1da84eb4e0ed3e
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a49a0d05a55e72b5dae17933d38d03287a01d5ee
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797263"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5936810"
 ---
 # <a name="manage-attributes-and-attribute-groups"></a>Administere attributter og attributtgrupper
 
@@ -101,7 +101,7 @@ Her er de gjenværende alternativene for attributtet metadata på siden **Attrib
 
 Disse alternativene er egentlig beregnet for å forbedre søkefunksjonen for nettbutikkfasaden. Selv om Commerce ikke inneholder nettbutikkfasade, er eCommerce Publishing Software Development Kit (SDK) inkludert. Kunder kan bruke denne SDK for å plassere varer i en søkeindeks etter eget valg. Selv om den unike produktinformasjonen blir importert, skal kunder fortsatt kunne skille mellom søkbare data, data som kan inngå i spørringen, og så videre. På den måten kan de bygge en optimal indeks for å være sikker på at de bare indeksere attributter som *etter deres synspunktt*, skal indekseres.
 
-Hvis du vil ha informasjon om hensikten med resten av alternativene, se [oversikt over søkeskjemaet i SharePoint Server 2013](https://technet.microsoft.com/library/jj219669.aspx).
+Hvis du vil ha informasjon om hensikten med resten av alternativene, se [oversikt over søkeskjemaet i SharePoint Server 2013](/SharePoint/search/search-schema-overview).
 
 ## <a name="filter-settings-for-attributes"></a>Filterinnstillinger for attributtfilter.
 

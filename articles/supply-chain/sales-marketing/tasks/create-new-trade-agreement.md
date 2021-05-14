@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ad1221bb57aea4c93cb60fc29caec2d3b41798f9
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 592b3d0265a3be92a5a823c6aabdd40b4e3f0a27
+ms.sourcegitcommit: 890a0b3eb3c1f48d786b0789e5bb8641e0b8455e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5836404"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5919947"
 ---
 # <a name="create-a-new-trade-agreement"></a>Opprette en ny forretningsavtale
 
@@ -26,8 +26,8 @@ ms.locfileid: "5836404"
 
 Denne fremgangsmåten viser hvordan du oppretter en forretningsavtale der du registrerer en ny salgspris for produkt som du har avtalt med en bestemt kunde. Du kan kjøre denne fremgangsmåten i demonstrasjonsselskapet USMF eller ved hjelp av dine egne data. Hvis du vil bruke dine egne data, må du før du starter denne veiledningen passe på at et navn på journal for forretningsavtale finnes der standardrelasjonen er satt til Pris (salg).
 
-
 ## <a name="create-and-post-a-new-trade-agreement-journal"></a>Opprette og postere en ny forretningsavtalejournal
+
 1. Gå til **Navigasjonsrute > Moduler > Salg og markedsføring > Salg og markedsføring > Forretningsavtalejournaler**.
 2. Klikk på **Ny**.
 3. Klikk på rullegardinknappen i **Navn**-feltet for å åpne oppslaget.
@@ -58,22 +58,26 @@ Denne fremgangsmåten viser hvordan du oppretter en forretningsavtale der du reg
 20. Klikk på **OK**.
 
 ## <a name="view-trade-agreements-for-a-product"></a>Vise forretningsavtaler for et produkt
+
 1. Gå til **Navigasjonsrute > Moduler > Behandling av produktinformasjon > Produkter > Frigitte produkter**.
 2. I listen finner og velger du produktet som du akkurat har oppdatert prisen for.
 3. I **Handlingsrute** klikker du på **Selg**.
 4. Klikk på **Vis forretningsavtaler**.
     
-    Se gjennom detaljene i forretningsavtalen for priser som du nettopp opprettet.    
+    Se gjennom detaljene i forretningsavtalen for priser som du nettopp opprettet.
 
 5. Lukk siden.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 ### <a name="whitepaper"></a>Hvitbok
+
 Hvis du vil ha mer informasjon, kan du laste ned følgende hvitbok (skrevet for å støtte AX2012, men gjelder fortsatt for Dynamics 365 Supply Chain Management)
-- [Forretningsavtaler](https://mbs.microsoft.com/files/public/CS/AX2012R3/TradeagreementsinAX.pdf)
+
+- [Forretningsavtaler](https://download.microsoft.com/download/0/2/9/02972c8b-0159-4936-a3ef-1e64252b2d2f/TradeAgreementsInAX.pdf)
 
 ### <a name="community-blogs"></a>Fellesskapsblogger
+
 - [Salgspriser i Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/11/14/sales-prices-in-dynamics-365-for-finance-and-operations/#sales_price_in_trade_agreements)
 
 

@@ -2,7 +2,7 @@
 title: Utsette kjøringen av XML-elementer i ER-formater
 description: Dette emnet forklarer hvordan du kan utsette kjøringen av et XML-element i et elektronisk rapporteringsformat (ER).
 author: NickSelin
-ms.date: 03/17/2020
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 361e16b0dba3aa46c71477efaa89a2661a3bcd75
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 07b1d95572fb0b6bbfd34756bf1ecded7b9ff35c
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894058"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944491"
 ---
 # <a name="defer-the-execution-of-xml-elements-in-er-formats"></a>Utsette kjøringen av XML-elementer i ER-formater
 
@@ -59,14 +59,14 @@ Hvis du enda ikke har utført eksempelet i emnet [Utsette kjøringen av sekvense
 
 | Innholdsbeskrivelse            | Filnavn |
 |--------------------------------|-----------|
-| ER-datamodellkonfigurasjon    | [Modell for å lære utsatte elementer.versjon.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
-| Konfigurasjon for ER-modellkartlegging | [Kartlegge for å lære utsatte elementer.versjon.1.1.xml](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| ER-datamodellkonfigurasjon    | [Modell for å lære utsatte elementer.versjon.1.xml](https://download.microsoft.com/download/7/6/0/760933ca-4ac3-4f50-bc0c-c35e596ee066/Modeltolearndeferredelements.version.1.xml) |
+| Konfigurasjon for ER-modellkartlegging | [Kartlegge for å lære utsatte elementer.versjon.1.1.xml](https://download.microsoft.com/download/c/9/c/c9c4b9dd-b700-4385-a087-a84ce9fc1d0f/Mappingtolearndeferredelements.version.1.1.xml) |
 
 Før du begynner, må du også laste ned og lagre følgende konfigurasjon av ER-eksempelløsningen til den lokale datamaskinen.
 
 | Innholdsbeskrivelse     | Filnavn |
 |-------------------------|-----------|
-| ER-formatkonfigurasjon | [Formatere for å lære utsatte XML-elementer.versjon.1.1.xm](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| ER-formatkonfigurasjon | [Formatere for å lære utsatte XML-elementer.versjon.1.1.xm](https://download.microsoft.com/download/4/7/8/478fa846-22e9-4fa0-89b1-d3aeae660067/FormattolearndeferredXMLelements.version.1.1.xml) |
 
 ### <a name="import-the-sample-er-configurations"></a>Importere ER-eksempelkonfigurasjonene
 
@@ -164,7 +164,7 @@ Gjennomgå innstillingene for ER-modellkartleggingskomponenten som er konfigurer
 1. På **Formatutforming**-siden velger du **Kjør**.
 2. Last ned filen som nettleseren tilbyr, og åpne den for gjennomgang.
 
-    ![Nedlastet fil](./media/ER-DeferredXml-Run.png)
+    ![Lastet ned fil i importert format](./media/ER-DeferredXml-Run.png)
 
 Vær oppmerksom på at sammendragsnoden representerer summen av avgiftsverdiene for de behandlede transaksjonene. Fordi formatet er konfigurert til å bruke **model.Data.Summary.Total**-bindingen til å returnere denne summen, beregnes summen ved å kalle til **TotalSum**-aggregeringen av **Gruppert**-datakilden til *GroupBy*-typen i modellkartleggingen. For å beregne denne aggregeringen itererer modellkartleggingen over alle transaksjoner som er valgt i **Filtrert**-datakilden. Ved å sammenligne kjøringstidene for sammendragsnoden og den siste oppføringsnoden kan du bestemme at beregningen av summen tok 12 millisekunder (ms). Ved å sammenligne kjøringstidene for den første og siste oppføringsnoden kan du bestemme at genereringen av alle oppføringsnodene tok 9 ms. Derfor var totalt 21 ms påkrevd.
 
@@ -196,7 +196,7 @@ Hvis transaksjonsvolumet er mye større enn volumet i det gjeldende eksemplet, k
 11. Velg **Lagre**, og velg deretter **Kjør**.
 12. Last ned og gjennomgå filen som nettleseren tilbyr.
 
-    ![Nedlastet fil](./media/ER-DeferredXml-Run1.png)
+    ![Generert liste over avgiftsverdi med løpende total](./media/ER-DeferredXml-Run1.png)
 
     Den siste oppføringsnoden inneholder den løpende summen av avgiftsverdiene, som er beregnet for alle behandlede transaksjoner ved å benytte de genererte utdataene som en datakilde. Denne datakilden starter fra begynnelsen av rapporten og fortsetter til den siste avgiftstransaksjonen. Sammendragsnoden inneholder summen av avgiftsverdiene for alle behandlede transaksjoner som er beregnet i modellkartleggingen ved å benytte datakilden av *GroupBy*-typen. Vær oppmerksom på at disse verdiene er like. Derfor kan den utdatabaserte summeringen brukes i stedet for **GroupBy**. Ved å sammenligne kjøringstidene for den første oppføringsnoden og summeringsnoden kan du bestemme at genereringen av alle oppføringsnodene og summeringen tok 11 ms. Når det gjelder genereringen av oppføringsnoder og summeringen av avgiftsverdier, er det endrede formatet derfor omtrent to ganger raskere enn det opprinnelige formatet.
 
@@ -205,7 +205,7 @@ Hvis transaksjonsvolumet er mye større enn volumet i det gjeldende eksemplet, k
 15. Velg **Lagre**, og velg deretter **Kjør**.
 16. Last ned og gjennomgå filen som nettleseren tilbyr.
 
-    ![Nedlastet fil](./media/ER-DeferredXml-Run2.png)
+    ![Generert liste over avgiftsverdier ved hjelp av redigert formel](./media/ER-DeferredXml-Run2.png)
 
     Vær oppmerksom på at den løpende summen av avgiftsverdier i den siste oppføringsnoden tilsvarer nå summen i sammendragsnoden.
 
@@ -218,7 +218,7 @@ Hvis du for eksempel må presentere summen av avgiftsverdier i rapportens toppte
 3. Velg **Lagre**, og velg deretter **Kjør**.
 4. Last ned og gjennomgå filen som nettleseren tilbyr.
 
-    ![Nedlastet fil](./media/ER-DeferredXml-Run3.png)
+    ![Nedlastet fil med avgiftsverdier for rapporthode](./media/ER-DeferredXml-Run3.png)
 
     Legg merke til at summen av avgiftsverdier i sammendragsnoden nå er lik 0 (null), fordi denne summen nå beregnes på grunnlag av de genererte utdataene. Når den første oppføringsnoden genereres, inneholder ikke de genererte utdataene oppføringsnoder med transaksjonsdetaljer enda. Du kan konfigurere dette formatet til å utsette kjøringen av **Rapport\\Melding\\Sammendrag**-elementet til **Rapport\\Melding\\Oppføring**-elementet er kjørt for alle avgiftstransaksjoner.
 
@@ -232,7 +232,7 @@ Hvis du for eksempel må presentere summen av avgiftsverdier i rapportens toppte
 3. Velg **Lagre**, og velg deretter **Kjør**.
 4. Last ned og gjennomgå filen som nettleseren tilbyr.
 
-    ![Nedlastet fil](./media/ER-DeferredXml-Run4.png)
+    ![Nedlastet fil for utsatt kjøring](./media/ER-DeferredXml-Run4.png)
 
     **Rapport\\Melding\\Sammendrag**-elementet kjøres nå bare etter alle andre elementer som er nestet under det overordnede elementet, **Rapport\\Melding**, har blitt kjørt. Derfor kjøres det etter at **Rapport\\Melding\\Oppføring**-elementet har blitt kjørt for alle avgiftstransaksjoner med **model.Data.List**-datakilden. Kjøringstidene for den første og siste oppføringsnoden, samt for topptekst- og sammendragsnoden, avslører dette faktum.
 

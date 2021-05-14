@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bb242e32d3ad399acc82b855da3096dfa5c2c1a5
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 584bb558ee0afeaffaeb003e9f1d1b0bca42d19d
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809404"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5920687"
 ---
 # <a name="create-dimension-based-configurations"></a>Opprette dimensjonsbaserte konfigurasjoner
 
@@ -26,29 +26,29 @@ ms.locfileid: "5809404"
 
 Denne fremgangsmåten viser hvordan du definerer en konfigurasjon for et dimensjonsbasert produkt. Dette er den siste fremgangsmåten i serien som forklarer hvordan du bygger kombinasjoner for dimensjonsbasert konfigurasjon. Utførelsen av denne fremgangsmåten er avhengig av dataene som ble opprettet i de sju forrige registreringene. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
 
-
 ## <a name="find-the-dimension-based-product-master"></a>Finne den dimensjonsbaserte produktstandarden
-1. Klikk på Vedlikehold av frigitt produkt.
-2. Klikk på Frigitte produkter.
-3. Merk den valgte raden i listen.
+
+1. Gå til **Behandling av produktinformasjon \> Produkter \> Frigitte produkter**.
+1. Merk den valgte raden i listen.
     * Velg den dimensjonsbaserte produktstandarden som du opprettet i den første registreringen i disse trinnene med 8 registreringer.  
 
 ## <a name="create-configurations"></a>Opprette konfigurasjoner
-1. Klikk på Vedlikehold konfigurasjoner i handlingsruten Byggeteknikk.
-2. Klikk på Konfigurer.
-3. Merk den valgte raden i listen.
-4. Angi eller velg en verdi i Varenummer-feltet.
+
+1. Klikk på **Vedlikehold konfigurasjoner** i handlingsruten **Byggeteknikk**.
+1. Velg **Konfigurer**.
+1. Merk den valgte raden i listen.
+1. Angi eller velg en verdi i **Varenummer**-feltet.
     * Velg én av varene i den første konfigurasjonsgruppen.  
-5. Finn og velg ønsket post i listen.
-6. Angi eller velg en verdi i Varenummer-feltet.
+1. Finn og velg ønsket post i listen.
+1. Angi eller velg en verdi i **Varenummer**-feltet.
     * Velg en vare fra den andre konfigurasjonsgruppen.  
-7. Klikk på OK.
-8. Merk den valgte raden i listen.
-9. Skriv inn en verdi i Konfigurasjon-feltet.
+1. Velg **OK**.
+1. Merk den valgte raden i listen.
+1. Skriv inn en verdi i **Konfigurasjon**-feltet.
     * Angi et konfigurasjonsnavn som gjør det enkelt å identifisere konfigurasjonen.  
-10. Skriv inn en verdi i feltet Beskrivelse.
+1. Skriv inn en verdi i **Beskrivelse**-feltet.
     * Angi en beskrivelse av konfigurasjonen for å forklare hva den inneholder.  
-11. Klikk på OK.
+1. Velg **OK**.
 
 
 

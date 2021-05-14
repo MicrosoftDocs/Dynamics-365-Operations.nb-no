@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-08-10
 ms.dyn365.ops.version: Platform update 36
-ms.openlocfilehash: a63ff89a6fcbffc57eff14f310a080a35521ef34
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 0c29d68b29475c2c7040d06e60f7624c49a42002
+ms.sourcegitcommit: 6c2f5c3b038f696532c335e20b0fbafa155d6858
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5890082"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "5951938"
 ---
 # <a name="optimize-byod-scheduled-batch-jobs"></a>Optimalisere planlagte, satsvise BYOD-jobber
 
@@ -89,6 +89,12 @@ BYOD-funksjonen har følgende begrensninger:
 **Problem:** Når en full push forekommer for en enhet, ser du et stort sett med poster i BYOD når du bruker en **select**-setning. Når du utfører et trinnvis push, kan du imidlertid bare se noen få poster i BYOD. Det ser ut som om den trinnvise pushen slettet alle poster og bare la til de endrede postene i BYOD.
 
 **Løsning:** Tabellene for SQL-endringssporing er kanskje ikke i forventet tilstand. I noen tilfeller av denne typen anbefaler vi at du deaktiverer sporing av endringer for enheten og deretter slår den på igjen. Hvis du vil ha mer informasjon, kan du se [Aktivere endringssporing for enheter](../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
+
+### <a name="staging-tables-arent-clearing"></a>Oppsamlingstabeller tømmes ikke
+
+**Problem:** Når du bruker oppsamling for prosjektet, tømmes ikke oppsamlingstabellene på riktig måte. Dataene i tabellene fortsetter derfor å vokse, noe som fører til ytelsesproblemer.
+
+**Løsning:** Sju dager med historikk vedlikeholdes i oppsamlingstabellene. Historiske data som er eldre enn sju dager, tømmes automatisk fra oppsamlingstabellene ved hjelp av den satsvise jobben **Importer/eksporter opprydding i oppsamling**, Hvis denne jobben stopper, blir ikke tabellene tømt riktig. Hvis du starter denne satsvise jobben på nytt, fortsetter prosessen, slik at oppsamlingstabellene automatisk blir tømt.
 
 ## <a name="see-also"></a>Se også
 

@@ -1,5 +1,5 @@
 ---
-title: Arbeidsområde for leverandørfakturaoppføring
+title: Arbeidsområde for automatisering av leverandørfaktura
 description: Dette emnet beskriver hvordan du konfigurerer arbeidsområdet som er relatert til leverandørfakturaer, og som viser informasjonen som er tilgjengelig via Microsoft Power BI.
 author: abruer
 ms.date: 09/28/2020
@@ -14,14 +14,14 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2020-09-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: bac57056af6d85bb30600e13628279801508741d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7216c2f6e593e3ca11d78903f318d5f217b19674
+ms.sourcegitcommit: 375dd11a9e4076394a33e99f11371ab53e80c337
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837267"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5954141"
 ---
-# <a name="vendor-invoice-entry-workspace"></a>Arbeidsområde for leverandørfakturaoppføring
+# <a name="vendor-invoice-automation-workspace"></a>Arbeidsområde for automatisering av leverandørfaktura
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
@@ -30,11 +30,11 @@ Dette emnet beskriver hvordan du konfigurerer arbeidsområdet som er relatert ti
 
 ## <a name="overview"></a>Oversikt
 
-Arbeidsområdet for **leverandørfakturaoppføring** viser informasjon som er knyttet til behandling av leverandørfaktura. Det inneholder en **Mitt arbeid**-visning og en **Analyse – alle selskaper**-side. **Mitt arbeid**-visningen viser sammendragsfliser, rutenett for leverandørtransaksjoner og tilknyttet leverandørinformasjon. Siden **Analyse – alle selskaper** bruker funksjonene i Microsoft Power BI for å vise bilder som er knyttet til leverandørfakturaer.
+Arbeidsområdet for **automatisering av leverandørfaktura** viser informasjon som er knyttet til behandling av leverandørfaktura. Det inneholder en **Mitt arbeid**-visning og en **Analyse – alle selskaper**-side. **Mitt arbeid**-visningen viser sammendragsfliser, rutenett for leverandørtransaksjoner og tilknyttet leverandørinformasjon. Siden **Analyse – alle selskaper** bruker funksjonene i Microsoft Power BI for å vise bilder som er knyttet til leverandørfakturaer.
 
 ## <a name="set-up-the-workspace-to-show-power-bi-content"></a>Angi at arbeidsområdet skal vise Power BI-innhold
 
-Du må fullføre oppsettet før data kan vises i Power BI-visualiseringer i arbeidsområdet for **leverandørfakturaoppføring**.
+Du må fullføre oppsettet før data kan vises i Power BI-visualiseringer i arbeidsområdet for **Automatisering av leverandørfaktura**.
 
 1. I arbeidsområdet for **funksjonsbehandling** filtrerer du listen for å finne funksjonen **Automatisering av leverandørfaktura**.
 3. Velg **Aktiver nå**.
@@ -54,7 +54,7 @@ Hvis du vil vise informasjonen som vises i arbeidsområdet, må du ha sikkerhets
 
 ### <a name="company-selection"></a>Firmavalg
 
-Når funksjonen **Automatiser leverandørfakturaer** er aktivert, vises **Firma**-feltet øverst i arbeidsområdet. Valget i **Firma**-feltet påvirker alle opplysningene som vises i arbeidsområdet. Som standard viser visningen informasjon for firmaet du logget deg på. Hvis du velger et annet firma i **Firma**-feltet, kan du vise informasjon for dette firmaet på arbeidsområdet. Du kan deretter velge en flis i arbeidsområdet for å gå til den tilknyttede siden i det valgte firmaet.
+Når funksjonen **Automatisering av leverandørfaktura** er aktivert, vises **Firma**-feltet øverst i arbeidsområdet. Valget i **Firma**-feltet påvirker alle opplysningene som vises i arbeidsområdet. Som standard viser visningen informasjon for firmaet du logget deg på. Hvis du velger et annet firma i **Firma**-feltet, kan du vise informasjon for dette firmaet på arbeidsområdet. Du kan deretter velge en flis i arbeidsområdet for å gå til den tilknyttede siden i det valgte firmaet.
 
 ### <a name="summary-tiles"></a>Sammendrag-fliser
 

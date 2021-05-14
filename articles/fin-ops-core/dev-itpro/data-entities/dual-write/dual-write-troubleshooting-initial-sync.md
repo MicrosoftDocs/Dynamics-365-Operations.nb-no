@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: c716707140c85b06ad2f084c10c4b2d0ecfea82e
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 709a3c332bb6d086910b257fee9cdec8d2bc81a2
+ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754020"
+ms.lasthandoff: 04/25/2021
+ms.locfileid: "5941061"
 ---
 # <a name="troubleshoot-issues-during-initial-synchronization"></a>Feilsøke problemer under første synkronisering
 
@@ -192,7 +192,7 @@ Hvis noen rader i kundetabellen har verdier i kolonnene **ContactPersonID** og *
 6. Kjør den innledende synkroniseringen på nytt for **Kunder V3 (Kontoer)**-tilordningen. Siden endringssporing er slått av, synkroniseres dataene for **InvoiceAccount** og **ContactPersonId** fra Finance and Operations-appen til Dataverse.
 7. Hvis du vil synkronisere dataene for **InvoiceAccount** og **ContactPersonId** fra Dataverse til Finance and Operations-appen, må du bruke et dataintegrasjonsprosjekt.
 
-    1. Under Power Apps oppretter du et dataintegrasjonsprosjekt mellom **Sales.Account** og **Finance and Operations apps.Kunder V3**-tabeller. Dataretningen må være fra Dataverse til Finance and Operations-appen. Fordi **InvoiceAccount** er et nytt attributt med dobbeltskriving, kan det hende du bør hoppe over innledende synkronisering for dette attributtet. Hvis du vil ha mer informasjon, se [Integrere data i Dataverse](https://docs.microsoft.com/power-platform/admin/data-integrator).
+    1. Under Power Apps oppretter du et dataintegrasjonsprosjekt mellom **Sales.Account** og **Finance and Operations apps.Kunder V3**-tabeller. Dataretningen må være fra Dataverse til Finance and Operations-appen. Fordi **InvoiceAccount** er et nytt attributt med dobbeltskriving, kan det hende du bør hoppe over innledende synkronisering for dette attributtet. Hvis du vil ha mer informasjon, se [Integrere data i Dataverse](/power-platform/admin/data-integrator).
 
         Illustrasjonen nedenfor viser et prosjekt som oppdaterer **CustomerAccount** og **ContactPersonId**.
 

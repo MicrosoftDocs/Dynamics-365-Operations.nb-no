@@ -1,5 +1,5 @@
 ---
-title: Forhåndsversjon av Dynamics 365 Supply Chain Management 10.0.18 (mai 2021)
+title: Hva er nytt eller endret i Dynamics 365 Supply Chain Management versjon 10.0.18 (mai 2021)
 description: Dette emnet beskriver funksjoner som enten er nye eller endret i Dynamics 365 Supply Chain Management 10.0.18.
 author: kamaybac
 ms.date: 03/01/2021
@@ -15,19 +15,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: ae65afbcaca1f2f390520e1108d8363c3e248c60
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: d84520b8f551df847cb5d77d8dcbce1701d3795b
+ms.sourcegitcommit: d77b2175a3364694b5c74e0062e317f612416796
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909359"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5934973"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10018-may-2021"></a>Forhåndsversjon av Dynamics 365 Supply Chain Management 10.0.18 (mai 2021)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10018-may-2021"></a>Hva er nytt eller endret i Dynamics 365 Supply Chain Management versjon 10.0.18 (mai 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Supply Chain Management-forhåndsversjonen 10.0.18. Denne versjonen har et build-nummer 10.0.793, og er tilgjengelig som følger:
+Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Supply Chain Management 10.0.18. Denne versjonen har et build-nummer 10.0.793, og er tilgjengelig som følger:
 
 - **Forhåndsversjon:** Mars 2021
 - **Allmenn tilgjengelighet av versjon (selvoppdatering):** April 2021
@@ -43,9 +42,17 @@ Denne versjonen inneholder følgende funksjoner: Følg koblingene til [frigivels
 
 - [Rabattbehandling](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/rebate-management)<br> - Hvis du vil ha mer informasjon, kan du se [Oversikt over rabattbehandlingsmodul](../rebate-management/rebate-management-overview.md).
 
+- [Policy for eksport av salgsdataenhet](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-data-entity-export-setup-policy)
+
+- [Registrering av ordrereturlinje med desimalpresisjon med og uten faktisk vekt](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-return-order-line-registration-decimal-precision-without-catch-weight)
+
+- [Salgsordrebekreftelse med ett klikk](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/single-click-sales-order-confirmation)
+
+- [Policy for sletting av salgsordre til bestillingslinje](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-order-purchase-order-line-deletion-policy)
+
 - Forenklet grensesnitt for bare inn- og utstempling (utvidelse for [Forbedret grensesnitt for produksjonsgulvutførelse for produksjon](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enhanced-production-floor-execution-interface-manufacturing))<br> - Hvis du vil ha mer informasjon, kan du se [Konfigurere grensesnittet for produksjonsutførelse](../production-control/production-floor-execution-configure.md).
 
-De fleste av disse funksjonene må aktiveres ved hjelp av [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) før du kan bruke dem. Noen av funksjonene i listen er fortsatt i forhåndsversjon, mens andre kanskje allerede er allment tilgjengelige. 
+De fleste av disse funksjonene må aktiveres ved hjelp av [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) før du kan bruke dem.
 
 ## <a name="new-and-updated-documentation-resources"></a>Nye og oppdaterte dokumentasjonsressurser
 

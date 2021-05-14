@@ -2,7 +2,7 @@
 title: Tilpasse brukeropplevelsen
 description: Dette emnet forklarer hvordan du kan tilpasse appen.
 author: jasongre
-ms.date: 09/11/2020
+ms.date: 04/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: efc5afc9d685954bf736686bbed3e7575f76e7e7
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 764444442aedcbf0934f1c636d7440bc0d277043
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744699"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944539"
 ---
 # <a name="personalize-the-user-experience"></a>Tilpasse brukeropplevelsen
 
@@ -98,7 +98,7 @@ Du kan bruke egenskapsvinduet til å tilpasse et element på følgende måter:
 
 Egenskapsvinduet kan inneholde andre tilpasningsfunksjoner avhengig av elementet. Egenskapsvinduet for en flis kan for eksempel la deg å fremme flisen på et instrumentbord, og egenskapsvinduer for elementer på standard instrumentbord kan la deg opprette et nytt tilpasset arbeidsområde.
 
-### <a name="the-personalization-toolbar"></a>Verktøylinjen for tilpassing
+### <a name="personalization-toolbar"></a>Verktøylinje for tilpassing
 
 Hvis du vil gjøre flere endringer på en side eller gjøre endringer som ikke er tilgjengelige gjennom andre mekanismer (for eksempel hvis du vil endre rekkefølgen på elementene), kan du bruke **Tilpassing**-verktøylinjen. Hvis du vil åpne **Tilpassing**-verktøylinjen, følger du et av disse trinnene:
 
@@ -173,7 +173,90 @@ Instrumentbordet er ofte den første siden som vises når du åpner appen. Den k
 
 ## <a name="sharing-personalizations"></a>Dele tilpasninger
 
-Når du tilpasser en side, kan du dele dine personlige tilpasninger med andre brukere ved å eksportere den tilpassede siden. Deretter kan du be andre brukere om å importere den personlige tilpasningsfilen. Du kan også gi dine tilpasninger til en bruker som har administratorrettigheter. Denne brukeren kan deretter ta i bruk tilpasningsfilen din på mange brukere samtidig via **Tilpassing**-administrasjonssiden.
+Når du tilpasser en side, kan du dele dine personlige tilpasninger med andre brukere gjennom flere metoder. I listen nedenfor ordnes metodene i rekkefølge fra de mest anbefalte til minst anbefalte.
+
+1. Publiser visninger til brukere.
+2. Kopier visninger eller tilpasninger til brukere.
+3. Eksporter og importer visninger eller tilpasninger.
+
+### <a name="publish-views-to-users"></a>Publiser visninger til brukere
+
+Hvis funksjonen for [lagrede visninger](saved-views.md) er aktivert, og hvis siden støtter visninger, er det den beste måten å dele tilpasninger med andre brukere på, å publisere visningen til brukere som har én eller flere sikkerhetsroller. Hvis du vil ha mer informasjon, se [Publisere visninger](saved-views.md#publishing-views).
+
+### <a name="copy-views-or-personalizations-to-users"></a>Kopier visninger eller tilpasninger til brukere
+
+Hvis funksjonen for [lagrede visninger](saved-views.md) er slått av, eller hvis siden ikke støtter visninger, er det anbefalt å kopiere dem mellom brukere. Denne metoden er bare tilgjengelig for privilegerte brukere (for eksempel systemadministratorer). Administratorer kan imidlertid slå opp en bestemt brukers tilpasning i systemet (inkludert brukerens personlige visning hvis lagrede visninger er aktivert), og kopiere konfigurasjonen til andre brukere.
+
+Hvis lagrede visninger er aktivert, følger du fremgangsmåten nedenfor for å kopiere tilpasninger.
+
+1. Gå til **Systemadministrasjon \> Oppsett \> Tilpassing**.
+2. Følg denne fremgangsmåten for å kopiere personlige visninger:
+
+    1. Velg **Personlige visninger**.
+    2. Velg de ønskede visningene i listen.
+    3. Velg **Kopier til brukere**.
+    4. Velg brukerne du vil distribuere visninger til.
+
+    Følg denne fremgangsmåten for å kopiere tilpasninger på sider som ikke støtter visninger:
+
+    1. Velg **Brukerinnstillinger**.
+    2. Velg brukeren som har tilpasningen du vil distribuere.
+    3. Velg **Behandle alle tilpasninger**.
+    4. Velg de ønskede tilpasningene i listen.
+    5. Velg **Kopier til brukere**.
+    6. Velg brukerne du vil distribuere tilpasninger til.
+
+Hvis lagrede visninger ikke er aktivert, følger du fremgangsmåten nedenfor for å kopiere en tilpasning.
+
+1. Gå til **Systemadministrasjon \> Oppsett \> Tilpassing**.
+2. Velg **Bruk**.
+3. Velg brukerne du vil distribuere tilpasningen til.
+4. Velg **Velg eksisterende tilpasning**.
+5. Finn og velg (enkelt) tilpasningen du er interessert i.
+6. Velg **OK**.
+
+### <a name="export-and-import-views-or-personalizations"></a>Eksporter og importer visninger eller tilpasninger
+
+En annen måte å dele tilpasninger på, er ved eksport og import. Enkeltbrukere, eller en administrator som handler på deres vegne, kan bruke denne metoden til å eksportere tilpasningene eller visningene, og deretter gi den eksporterte filen til andre brukere for å importere. Brukere kan eventuelt gi sine eksporterte tilpasninger til en bruker med administratorrettigheter, og denne brukeren kan deretter bruke **Tilpassing**-administrasjonssiden til å bruke tilpasningsfilen for mange brukere samtidig.
+
+#### <a name="export"></a>Eksporter
+
+Du kan generelt eksportere én av dine egne visninger eller tilpasninger ved å åpne den aktuelle siden, åpne verktøylinjen for **tilpasning** og deretter velge **Eksporter**. Hvis du vil ha mer informasjon om verktøylinjen, kan du se delen [Verktøylinje for tilpassing](#personalization-toolbar) tidligere i dette emnet. Hvis [lagrede visninger](saved-views.md) er aktivert, kan du også gå til **Innstillinger \> Brukeralternativer \> Tilpassing** for å vise en liste over alle tilpasningene i systemet. Derfra kan du velge visningene eller tilpasningene som skal eksporteres, og deretter velge **Eksporter**.
+
+I tillegg kan administratorer eksportere tilpasningene til andre brukere ved å følge disse trinnene.
+
+1. Gå til **Systemadministrasjon \> Oppsett \> Tilpassing**.
+2. Velg ønsket bruker i kategorien **Brukere**.
+3. Finn og velg visningen eller tilpasningen du er interessert i.
+4. Velg **Eksporter**.
+
+#### <a name="import"></a>Import
+
+Hvis du vil importere en visning eller tilpasning, kan du bare åpne **tilpasningsverktøylinjen** og velge **Importer**. I tillegg kan administratorer importere en fil og umiddelbart gi den til én eller flere brukere.
+
+Hvis lagrede visninger er aktivert, følger du fremgangsmåten nedenfor.
+
+1. Gå til **Systemadministrasjon \> Oppsett \> Tilpassing**.
+2. Velg **Importer visninger \> Brukervisninger** i handlingsruten.
+3. Velg importmodus:
+
+    - **Velg bestemte brukere** – Gi visningen eller tilpasningen til valgte brukere.
+    - **Importer som den er** – Importer visningen eller tilpasningen til den samme brukeren som eksporterte den.
+
+4. Velg **Bla gjennom** og finn og velg tilpasningen som skal importeres.
+5. Velg **Neste**.
+6. Hvis du valgte **Velg bestemte brukere** i trinn 3, velger du brukerne du vil importere tilpasningen til.
+7. Velg **Import**.
+8. Løs konflikter etter behov.
+
+Hvis lagrede visninger ikke er aktivert, følger du fremgangsmåten nedenfor.
+
+1. Gå til **Systemadministrasjon \> Oppsett \> Tilpassing**.
+2. Velg **Bruk**.
+3. Velg brukerne du vil distribuere tilpasningen til.
+4. Velg **Importer tilpasninger fra en fil**.
+5. Velg **Bla gjennom** og finn og velg tilpasningen som skal importeres.
+6. Velg **OK**.
 
 ## <a name="administration-of-personalizations"></a>Administrasjon av tilpasninger
 
@@ -184,8 +267,11 @@ For kunder som har aktivert **Lagrede visninger**-funksjonen, kan du se "Behandl
 For kunder som ennå ikke har aktivert funksjonen [Lagrede visninger](saved-views.md), har denne siden fire kategorier:
 
 - **Bruk** – Du kan importere eller velge en tilpasning for én eller flere brukere. Hvis du vil bruke en tilpasning på én eller flere brukere, må du først velge en rolle og brukere som har denne rollen. Velg deretter en eksisterende tilpasning som skal brukes på de valgte brukerne, eller importer en tilpasningsfil. Tilpasningen blir godkjent og brukes for alle de valgte brukerne neste gang de åpner den valgte siden.
+
 - **Fjern** – Du kan fjerne alle tilpasninger for en side eller et arbeidsområde for én eller flere brukere. Velg først en side eller et arbeidsområde for å se en liste over brukerne som har tilpasset den. Velg deretter brukerne som skal ha fjernet tilpasninger for denne siden eller arbeidsområdet, og velg deretter **Fjern**. Alle tilpasninger som de valgte brukerne har brukt på den valgte siden eller arbeidsområdet, slettes. Du kan ikke angre denne handlingen. Hvis en tilpasning ble lagret for siden eller arbeidsområdet, kan tilpasningen importeres på nytt.
+
 - **Brukere** – Velg en bruker for å vise en liste over sider som brukeren har tilpasset. Du kan deretter aktivere eller deaktivere den valgte brukerens mulighet til å bruke tilpassinger for bestemte sider eller for hele systemet. Du kan også importere, eksportere eller fjerne en tilpassing for brukeren. I tillegg kan du tilbakestille bildeforklaringer for funksjonen for brukeren. Hvis brukeren tidligere har ignorert alle popup-vinduer som introduserer nye funksjoner, vil de da vises igjen neste gang brukeren støter på disse funksjonene.
+
 - **System** – Du kan midlertidig deaktivere tilpasninger for alle brukere i systemet. I dette tilfellet slettes alle personlige tilpasninger for alle brukere, og alle sidene tilbakestilles til standardtilstanden. Hvis du reaktiverer tilpasning senere, vil alle tilpasninger bli brukt på nytt. Du kan også permanent slette alle tilpasninger for alle brukere i systemet. Tilpasninger som er slettet, kan ikke gjenopprettes. Før du utfører denne oppgaven må du eksportere tilpasninger du kanskje vil bruke senere.
 
 ## <a name="personalizing-inventory-dimensions"></a>Tilpasse lagerdimensjoner

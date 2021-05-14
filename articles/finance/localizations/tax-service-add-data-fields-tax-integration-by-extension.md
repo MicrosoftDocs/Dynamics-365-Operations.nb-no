@@ -2,7 +2,7 @@
 title: Legge til datafelt i avgiftsintegrering ved hjelp av utvidelser
 description: Dette emnet beskriver hvordan du bruker utvidelser i X++ til å legge til datafelt i avgiftsintegrasjonen.
 author: qire
-ms.date: 03/26/2021
+ms.date: 04/20/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,18 +16,17 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: fdf112bbdd5245d19ab1d07cfcf94c58bf8208c5
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8e3573f9c9971d4a5af33ece08b7e0b43f2e813a
+ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5830346"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "5921171"
 ---
 # <a name="add-data-fields-in-the-tax-integration-by-using-extension"></a>Legg til datafelt i avgiftsintegrering ved hjelp av utvidelser
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 Dette emnet beskriver hvordan du bruker utvidelser i X++ til å legge til datafelt i avgiftsintegrasjonen. Disse feltene kan utvides til avgiftsdatamodellen for avgiftstjenesten og brukes til å bestemme avgiftskoder. Hvis du vil ha mer informasjon, kan du se [Legge til datafelt i avgiftskonfigurasjoner](tax-service-add-data-fields-tax-configurations.md).
 

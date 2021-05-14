@@ -2,7 +2,8 @@
 title: Modul for leveringsalternativer
 description: Dette emnet dekker moduler for leveringsalternativer og forklarer hvordan du konfigurerer dem i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 08/05/2020
+manager: annbe
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,26 +15,27 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: f97dcd42e22e319d9af7cbf57fce7c10d8565d04
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 12b0281a27dcf5f567bcd6be5530fa8e26a4ae99
+ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5802002"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5937488"
 ---
 # <a name="delivery-options-module"></a>Leveringsalternativmodul
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Dette emnet dekker moduler for leveringsalternativer og forklarer hvordan du konfigurerer dem i Microsoft Dynamics 365 Commerce.
 
 Med moduler for leveringsalternativer kan kunder velge en leveringsmodus, for eksempel forsendelse eller henting for bestillinger på nettet. Det kreves en forsendelsesadresse for å bestemme leveringsmåten. Hvis leveringsadressen endres, må leveringsalternativene hentes på nytt. Hvis en ordre bare omfatter varer som skal plukkes i en butikk, blir denne modulen automatisk skjult.
 
-Hvis du vil ha informasjon om hvordan du konfigurerer leveringsmoduser, kan du se [Konfigurasjon av Internett-kanal](channel-setup-online.md) og [Definere leveringsmåter](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
+Hvis du vil ha informasjon om hvordan du konfigurerer leveringsmoduser, kan du se [Konfigurasjon av Internett-kanal](channel-setup-online.md) og [Definere leveringsmåter](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
 
 Hver leveringsmodus kan ha et tilknyttet gebyr. Hvis du vil ha mer informasjon om hvordan du konfigurerer gebyrer for en nettbutikk, kan du se [Avanserte automatiske gebyrer for omnikanal](omni-auto-charges.md).
 
-I Commerce versjon 10.0.13 er modulen for leveringsalternativer oppdatert for å støtte funksjonene **Hodegebyrer uten fordeling** og **Levering som et linjegebyr**. Hvis fordeling er deaktivert, er forventningen at arbeidsflyten for e-handel ikke tillater en blandet leveringsmodus for varene i handlekurven (det vil si at noen varer er valgt for forsendelse, men andre er valgt for henting). Funksjonen **Hodegebyrer uten fordeling** krever at flagget **Aktiver konsekvent behandling av leveringsmodus i kanal** er aktivert i Commerce Headquarters. Når dette flagget er aktivert, brukes forsendelsesgebyrer på hodenivå eller linjenivå, avhengig av konfigurasjonen i Commerce Headquarters.
+I Commerce versjon 10.0.13 er modulen for leveringsalternativer oppdatert for å støtte funksjonene **Hodegebyrer uten fordeling** og **Levering som et linjegebyr**. Hvis fordeling er deaktivert, er forventningen at arbeidsflyten for e-handel ikke tillater en blandet leveringsmodus for varene i handlekurven (det vil si at noen varer er valgt for forsendelse, men andre er valgt for henting). Funksjonen **Hodegebyrer uten fordeling** krever at flagget **Aktiver konsekvent behandling av leveringsmodus i kanal** er aktivert i Commerce Headquarters. Når funksjonsflagget er aktivert, brukes forsendelsesgebyrer på hodenivå eller linjenivå, avhengig av konfigurasjonen i Commerce Headquarters.
 
 Oppsettet fra Fabrikam støtter en blandet leveringsmodus, der noen varer er valgt for forsendelse, men andre velges for plukking. I denne modusen blir forsendelsesgebyrer fordelt for alle varer som er valgt i leveringsmåten ved levering. For at en blandet leveringsmodus skal fungere, må du først konfigurere funksjonen **Hodegebyrer med fordeling** i Commerce Headquarters. Hvis du vil ha mer informasjon om denne konfigurasjonen, se [Fordele hodegebyrer for å matche salgslinjer](pro-rate-charges-matching-lines.md).
 
@@ -50,6 +52,7 @@ Illustrasjonen nedenfor viser et eksempel på en leveringsalternativer-modul på
 | Overskrift | Overskriftstekst og en overskriftskode (**H1**, **H2**, **H3**, **H4**, **H5** eller **H6**) | En valgfri overskrift for modulen for leveringsalternativer. |
 | Egendefinert CSS-klassenavn | Tekst | Et egendefinert CSS-klassenavn (gjennomgripende stilark) som skal brukes til å gjengi denne modulen, hvis tilgjengelig. |
 | Alternativ for leveringsmåte for filter | **Ikke filtrer** eller **Ikke-leveringsmoduser** | En verdi som angir om modulen for leveringsalternativer skal filtrere ut alle leveringsmoduser som ikke er forsendelse. |
+| Velge et leveringsalternativ automatisk | **Ikke filtrer**, **Velg leveringsalternativ automatisk og vis sammendrag** eller **Velg leveringsalternativ automatisk og ikke vis sammendrag** | Denne egenskapen bruker automatisk det første tilgjengelige leveringsalternativet til kassen, uten at brukeren behøver å velge det. Det bør bare brukes hvis det er ett tilgjengelig leveringsalternativ. Denne egenskapen støttes fra og med Commerce versjon 10.0.19-utgivelsen. |
 
 ## <a name="add-a-delivery-options-module-to-a-checkout-page-and-set-the-required-properties"></a>Legge til en modul for leveringsalternativer på en kasseside og angi de nødvendige egenskapene
 
@@ -77,7 +80,7 @@ En modul for leveringsalternativer kan bare legges til i en kassemodul. Hvis du 
 
 [Fordele hodegebyrer for å matche salgslinjer](pro-rate-charges-matching-lines.md)
 
-[Definer leveringsmåter](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
+[Definer leveringsmåter](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
