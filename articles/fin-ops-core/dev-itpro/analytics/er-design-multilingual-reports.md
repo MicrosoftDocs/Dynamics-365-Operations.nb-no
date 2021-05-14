@@ -2,7 +2,7 @@
 title: Utforme flerspråklige rapporter i elektronisk rapportering
 description: Dette emnet beskriver hvordan du kan bruke etiketter for elektronisk rapportering (ER) til å utforme og generere flerspråklige rapporter.
 author: NickSelin
-ms.date: 09/14/2020
+ms.date: 04/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f5a2e8cca441189020e6274248a48c5e9dd80e00
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 50156b8c6b3553b02d092fad9c72e90c1f70ff78
+ms.sourcegitcommit: 6c2f5c3b038f696532c335e20b0fbafa155d6858
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753558"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "5951991"
 ---
 # <a name="design-multilingual-reports-in-electronic-reporting"></a>Utforme flerspråklige rapporter i elektronisk rapportering
 
@@ -158,6 +158,31 @@ ER støtter ulike måter å angi et språk på for en generert rapport. I **Spr�
 - **Definert under kjøring** – Generer en rapport på et språk som er angitt under kjøring. Hvis du velger denne verdien, konfigurerer du et ER-uttrykk i **Språk**-feltet som returnerer språkkoden for språket, for eksempel språket til den tilsvarende kunden.
 
     ![Angi et språk som er definert under kjøring, som språk for en generert rapport i ER-operasjonsutforming](./media/er-multilingual-labels-language-context-runtime.png)
+
+## <a name="culture-specific-formatting"></a>Kulturspesifikk formatering
+
+ER støtter ulike måter å angi kulturen for en generert rapport. Derfor kan den riktig kulturspesifikke formateringen brukes for dato-, klokkeslett- og numeriske verdier. Når du utformer et ER-format, går du til kategorien **Format** i feltet **Kulturinnstillinger** og velger én av følgende verdier for formatkomponent i **Felles\\Fil**, **Excel\\Fil**, **PDF\\Fil** eller **PDF\\Sammenslåing**-typen:
+
+- **Brukerinnstilling** – Formater verdiene i henhold til brukerens foretrukne kultur. Denne kulturen er definert i feltet **Dato, klokkeslett og nummerformat** i kategorien **Innstillinger** på siden **Brukeralternativer**.
+
+    ![Definere brukerens foretrukne kultur som kultur for en generert rapport i ER-operasjonsutforming](./media/er-multilingual-labels-culture-context-user-preferred.png)
+
+- **Uttrykkelig definert** – Formater verdiene i henhold til kulturen som er angitt i utformingen.
+
+    ![Definere kulturen som er angitt ved utforming som kultur for en generert rapport i ER-operasjonsutforming](./media/er-multilingual-labels-culture-context-fixed.png)
+
+- **Definert under kjøring** – Formater verdiene i henhold til kulturen som er angitt under kjøring. Hvis du velger denne verdien, går du til **Tilordning**-kategorien i feltet **Dato, klokkeslett og nummerformat** og konfigurerer et ER-uttrykk som returnerer kulturkoden for kulturen, for eksempel den som tilhører kunden.
+
+    ![Definere kulturen som er definert ved kjøring som kultur for en generert rapport i ER-operasjonsutforming](./media/er-multilingual-labels-culture-context-runtime.png)
+
+> [!NOTE]
+> En ER-komponent som du definerer en bestemt kultur for, kan inneholde underordnede ER-komponenter som er konfigurert til å fylle ut en tekstverdi. Som standard brukes kulturen til den overordnede komponenten til å formatere verdiene til disse komponentene. Du kan bruke følgende innebygde ER-funksjoner til å konfigurere bindinger for disse komponentene, og bruke en alternativ kultur for verdiformatering:
+>
+> - [DATEFORMAT](er-functions-datetime-dateformat.md#syntax-2)
+> - [DATETIMEFORMAT](er-functions-datetime-datetimeformat.md#syntax-2)
+> - [NUMBERFORMAT](er-functions-text-numberformat.md#syntax-2)
+>
+> I versjon 10.0.20 og senere brukes den nasjonale innstillingen for formatkomponentene for typene **Felles\\Fil** og **Excel\\Fil** til å formatere verdiene under [PDF-konvertering](electronic-reporting-destinations.md#OutputConversionToPDF) av et generert dokument.
 
 ## <a name="translation"></a>Oversettelse
 

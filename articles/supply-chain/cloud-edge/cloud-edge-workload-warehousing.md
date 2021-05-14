@@ -2,7 +2,7 @@
 title: Arbeidsbelastninger for lagerstyring for sky- og kantskalaenheter
 description: Dette emnet inneholder informasjon om funksjonen som gjør det mulig å kjøre valgte prosesser fra arbeidsbelastningen for lagerstyring.
 author: perlynne
-ms.date: 10/06/2020
+ms.date: 04/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,17 @@ ms.search.region: global
 ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: d6dffb1ea03b8d11519087163d2837d6cfe3df4e
-ms.sourcegitcommit: 639175a39da38edd13e21eeb5a1a5ca62fa44d99
+ms.dyn365.ops.version: 10.0.19
+ms.openlocfilehash: 9bdb9529c8b630182a2036e9d116909f9e92bb83
+ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "5899173"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "5944419"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Skalaenheter for sky og kant for arbeidsbelastninger for lagerstyring
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 > [!WARNING]
 > Ikke all forretningsfunksjonalitet for lagerstyring støttes fullt ut for lagre som kjører en arbeidsbelastning på en skalaenhet. Pass på at du bare bruker prosessene som dette emnet beskriver som støttet.
@@ -49,15 +48,16 @@ En skalaenhet kan bare opprettholde dataene den eier. Dataeierskapskonseptet for
 
 Skalaenhetene eier følgende data:
 
-- **Bølgebehandlingsdata** – Utvalgte bølgeprosessmetoder behandles som en del av bølgebehandling for skalaenhet.
-- **Arbeidsbehandlingsdata** – Følgende typer behandling av arbeidsordre støttes:
+- **Data for forsendelsesbølgebehandling** – Utvalgte bølgeprosessmetoder behandles som en del av bølgebehandling for skalaenhet.
+- **Arbeidsbehandlingsdata** – Lagerarbeid som er opprettet i en skalaenhet, vil eies av denne bestemte skaleringsenheten. Følgende typer arbeidsordrebehandling støttes:
 
   - **Lagerbevegelser** (manuell flytting og flytting etter malarbeid)
+  - **Syklusopptelling** og godkjennings-/avslagsprosessen som del av opptellingsoperasjoner
   - **Bestillinger** (plasseringsarbeid via en lagerordre når bestillinger ikke er knyttet til laster)
   - **Salgsordrer** (enkelt plukke- og lastearbeid)
   - **Overføringsordrer** (bare utgående med enkelt plukke- og lastearbeid)
 
-- **Kvitteringsdata for lagerordre** – Disse dataene brukes bare for bestillinger som frigis manuelt til et lager.
+- **Kvitteringsdata for lagerordre** – Disse dataene brukes bare for bestillinger som er frigitt til et lager.
 - **Nummerskiltdata** – Nummerskilter kan opprettes på senteret og skalaenheten. Dedikert konflikthåndtering er angitt. Legg merke til at disse dataene ikke er lagerspesifikke.
 
 ## <a name="outbound-process-flow"></a>Utgående prosessflyt
@@ -72,6 +72,14 @@ Skalaenhetene eier den faktiske bølgebehandlingen (for eksempel arbeidsfordelin
 
 ![Bølgebehandlingsflyt](./media/wes-wave-processing-ga.png "Bølgebehandlingsflyt")
 
+### <a name="process-work-and-ship"></a>Behandle arbeid og forsendelse
+
+Så snart den endelige arbeidsprosessen har plassert lageret på et endelig forsendelsessted (Rampedør), sender skaleringsenheten signaler om at kildedokumentets lagertransaksjoner skal oppdateres til *Plukket*. Før denne prosessen kjøres og blir synkronisert tilbake, vil lagerbeholdningen på vektsenhetsbelastningen være fysisk reservert på lagernivå.
+
+Så snart senteret har oppdatert transaksjonene til *Plukket*, kan den behandle den utgående forsendelsesbekreftelsen og den tilknyttede salgsfølgeseddelen eller overføringsordreforsendelsen for lasten.
+
+![Utgående prosessflyt](./media/WES-outbound-processing-19.png "Utgående prosessflyt")
+
 ## <a name="inbound-process-flow"></a>Inngående prosessflyt
 
 Senteret eier følgende data:
@@ -82,8 +90,8 @@ Senteret eier følgende data:
 
 > [!NOTE]
 > Den inngående bestillingsflyten er konseptuelt forskjellig fra den utgående flyten. Du kan styre det samme lageret på skalaenheten eller i senteret, avhengig av om bestillingen er frigitt til lageret eller ikke. Når du har frigitt en ordre til lageret, kan du bare arbeide med ordren mens du er logget på skalaenheten.
-
-Hvis du bruker prosessen *Frigi til lager*, opprettes [*lagerordrer*](cloud-edge-warehouse-order.md), og eierskap av den relaterte mottaksflyten tilordnes til skalaenheten. Senteret vil ikke kunne registrere innkommende mottak.
+>
+> Hvis du bruker prosessen *Frigi til lager*, opprettes [*lagerordrer*](cloud-edge-warehouse-order.md), og eierskap av den relaterte mottaksflyten tilordnes til skalaenheten. Senteret vil ikke kunne registrere innkommende mottak.
 
 Du må logge på senteret for å bruke prosessen *Frigi til lager*. Gå til en av følgende sider for å kjøre eller planlegge den:
 
@@ -97,6 +105,10 @@ Arbeideren kan kjøre mottaksprosessen ved å bruke en Lagerstyring-mobilapp som
 Hvis du ikke bruker prosessen *frigivelsen til lager*, og dermed ikke bruker *lagerordrer*, kan senteret behandle lagermottak og arbeidsbehandling uavhengig av skalaenheter.
 
 ![Inngående prosessflyt](./media/wes-inbound-ga.png "Inngående prosessflyt")
+
+Når du utfører innkommende registrering via en lagerappmottaksprosess mot lagerordren for skaleringsenhet, vil arbeidsmengden i skalaenheten gi signal om oppdatering av de relaterte bestillingslinjetransaksjonene til *Registrert*. Så snart dette er fullført, kan du kjøre en produktkvittering for bestilling i senteret.
+
+![Innkommende prosessflyt](./media/WES-inbound-processing-19.png "Innkommende prosessflyt")
 
 ## <a name="supported-processes-and-roles"></a>Prosesser og roller som støttes
 
@@ -115,10 +127,13 @@ Brukere som fungerer som lagerledere både på senteret og skalaenheter, bør ti
 Følgende lagerkjøringsprosesser kan aktiveres for en WES-arbeidsbelastning på en skalaenhet:
 
 - Valgte bølgemetoder for salgs- og overføringsordrer (tildeling, behovsetterfylling, containerbruk, arbeidsoppretting og bølgeetikettutskrift)
-- Behandle lagerarbeid for salgs- og overføringsordre ved hjelp av mobilappen Lagerstyring (inkludert etterfyllingsarbeid)
-- Foreta spørringer i lagerbeholdningen ved hjelp av mobilappen Lagerstyring
-- Opprett og kjør lagerbevegelser ved hjelp av mobilappen Lagerstyring
-- Registrer bestillinger og utfør plasseringsarbeid ved hjelp av mobilappen Lagerstyring
+
+- Behandle lagerarbeid for salgs- og overføringsordre ved hjelp av lagerappen (inkludert etterfyllingsarbeid)
+- Foreta spørringer i lagerbeholdningen ved hjelp av lagerappen
+- Opprette og kjøre lagerbevegelser ved hjelp av lagerappen
+- Opprette og behandle syklustellingsarbeid ved hjelp av lagerappen
+- Foreta lagerjusteringer ved hjelp av lagerappen
+- Registrere bestillinger og utføre plasseringsarbeid ved hjelp av lagerappen
 
 Følgende arbeidsordretyper støttes for øyeblikket for WES-arbeidsbelastninger på skalaenhetsdistribusjoner:
 
@@ -126,9 +141,10 @@ Følgende arbeidsordretyper støttes for øyeblikket for WES-arbeidsbelastninger
 - Utstedelse for overføring
 - Etterfylling
 - Lagerbevegelse
+- Syklustelling
 - Bestillinger (koblet til lagerordrer)
 
-Ingen andre typer behandling eller lagerarbeid for kildedokumenter støttes for øyeblikket på skalaenheter. For en WES-arbeidsbelastning på en skalaenhet kan du for eksempel ikke foreta et overføringsordremottak (overføringsmottak) eller behandle syklustellingsarbeid.
+Ingen andre typer behandling eller lagerarbeid for kildedokumenter støttes for øyeblikket på skalaenheter. For en WES-arbeidsbelastning på en skalaenhet kan du for eksempel ikke foreta et overføringsordremottak (overføringsmottak), og i stedet må dette behandles av senterforekomsten.
 
 > [!NOTE]
 > Menyelementer og knapper på mobilenheter for funksjoner som ikke støttes, vises ikke i _mobilappen Lagerstyring_ når den er koblet til en skalaenhetsdistribusjon.
@@ -160,7 +176,6 @@ Følgende lagerstyringsfunksjonalitet støttes ikke for øyeblikket for arbeidsb
 - Behandling med negativ lagerbeholdning
 - Lagerarbeidsbehandling med egendefinerte arbeidstyper
 - Lagerarbeidsbehandling med forsendelsesmerknader
-- Lagerarbeidsbehandling med utløsing av syklustellingsterskel
 - Lagerarbeidsbehandling med materialhåndtering/lagerautomatisering
 - Bruk av avbildning av produktstandarddata (for eksempel i mobilappen Lagerstyring)
 
@@ -186,14 +201,14 @@ Følgende tabell viser hvilke utgående funksjoner som støttes, og hvor de stø
 | Vedlikehold forsendelser for bølge                                  | Ja | Nei |
 | Lagerarbeidsbehandling (inkl. nummerskiltutskrift)        | Nei  | <p>Ja, men bare for de ovennevnte funksjonene som støttes. |
 | Gruppeplukking                                              | Nei  | Ja|
-| Manuell emballasjebehandling, inkludert arbeidsbehandlingen Plukking av containerpakking                                           | Nei <P>En del behandling kan gjøres etter at en innledende plukkeprosess er håndtert av en skalaenhet, men anbefales ikke på grunn av blokkerte operasjoner.</p>  | Nei  |
-| Fjern container fra gruppe                        | Nei  | Nei                           |
+| Manuell emballasjebehandling, inkludert arbeidsbehandlingen Plukking av containerpakking | Nei <P>En del behandling kan gjøres etter at en innledende plukkeprosess er håndtert av en skalaenhet, men anbefales ikke på grunn av blokkerte operasjoner.</p>  | Nei |
+| Fjern container fra gruppe                                  | Nei  | Nei |
 | Utgående sorteringsbehandling                                  | Nei  | Nei |
 | Utskrift av belastningsrelaterte dokumenter                           | Ja | Nei |
 | Fraktbrev og ved generering av forhåndsvarsel for forsendelse                            | Ja | Nei |
-| Forsendelsesbekreftelse                    | Ja  | Nei |
-| Forsendelsesbekreftelse med Bekreft og overfør                    | Nei  | Nei |
-| Behandling av følgeseddel og fakturering                | Ja | Nei |
+| Forsendelsesbekreftelse                                             | Ja | Nei |
+| Forsendelsesbekreftelse med Bekreft og overfør            | Nei  | Nei |
+| Behandling av følgeseddel og fakturering                        | Ja | Nei |
 | Plukking med mangler (salgs- og overføringsordrer)                    | Nei  | Nei |
 | Overplukking (salgs- og overføringsordrer)                     | Nei  | Nei |
 | Endring av arbeidslokasjoner (salgs- og overføringsordrer)         | Nei  | Ja|
@@ -212,31 +227,31 @@ Følgende tabell viser hvilke inngående funksjoner som støttes, og hvor de st�
 
 | Behandle                                                          | Hub | WES-arbeidsbelastning på en skalaenhet<BR>*(Varer som er merket «Ja», gjelder bare for lagerordrer)*</p> |
 |------------------------------------------------------------------|-----|----------------------------------------------------------------------------------|
-| Behandling&nbsp;av&nbsp;kildedokument                                       | Ja | Nei |
+| Behandling&nbsp;av&nbsp;kildedokument                             | Ja | Nei |
 | Last- og transportstyringsbehandling                    | Ja | Nei |
-| Bekreftelse av inngående forsendelse                                            | Ja | Nei |
+| Bekreftelse av inngående forsendelse                                    | Ja | Nei |
 | Bestillingsfrigivelse til lager (lagerordrebehandling) | Ja | Nei |
-| Annullering av lagerordrelinjer<p>Merk at dette bare støttes når det ikke er foretatt noen registrering mot linjen</p>          | Ja | Nei |
+| Annullering av lagerordrelinjer<p>Merk at dette bare støttes når det ikke er foretatt noen registrering mot linjen</p> | Ja | Nei |
 | Motta og plassere bestillingsvarer                       | <p>Ja,&nbsp;når&nbsp;det&nbsp;ikke er en lagerordre</p><p>Nei, når det er en lagerordre</p> | <p>Ja, når en bestilling ikke er en del av en <i>last</i></p> |
-| Bestillingslinjen er mottatt og plassert                        | <p>Ja, når det ikke er en lagerordre</p><p>Nei, når det er en lagerordre</p> | <p>Ja, når en bestilling ikke er en del av en <i>last</i></p></p> |
-| Mottak og plassering av returordre                               | Ja | Nei |
-| Mottak og plassering av kombinerte nummerskilt                        | <p>Ja, når det ikke er en lagerordre</p><p>Nei, når det er en lagerordre</p> | Nei |
-| Mottak av lastvare                                             | <p>Ja, når det ikke er en lagerordre</p><p>Nei, når det er en lagerordre</p> | Nei |
-| Mottak og plassering av nummerskilt                              | <p>Ja, når det ikke er en lagerordre</p><p>Nei, når det er en lagerordre</p> | Nei |
-| Motta og plassere overføringsordrevare                        | Ja | Nei |
-| Mottak og plassering av overføringsordrelinje                        | Ja | Nei |
-| Avbryt arbeid (inngående)                                              | <p>Ja, når det ikke er en lagerordre</p><p>Nei, når det er en lagerordre</p> | <p>Ja, men bare når det ikke er merket av for alternativet <b>Avregistrer mottak når arbeid avbrytes</b> (på siden <b>Lagerstyringsparametere</b>)</p> |
-| Behandling av bestillingsproduktkvittering                          | Ja | Nei |
-| Bestilling som mottas med underlevering                        | <p>Ja, når det ikke er en lagerordre</p><p>Nei, når det er en lagerordre</p> | Ja, men bare ved å utføre en annulleringsforespørsel fra senteret |
-| Bestilling som mottas med overlevering                        | <p>Ja, når det ikke er en lagerordre</p><p>Nei, når det er en lagerordre</p> | Ja  |
-| Mottak med oppretting av arbeidstypen *Direkteoverføring*                   | <p>Ja, når det ikke er en lagerordre</p><p>Nei, når det er en lagerordre</p> | Nei |
+| Bestillingslinjen er mottatt og plassert                       | <p>Ja, når det ikke er en lagerordre</p><p>Nei, når det er en lagerordre</p> | <p>Ja, når en bestilling ikke er en del av en <i>last</i></p></p> |
+| Mottak og plassering av returordre                              | Ja | Nei |
+| Mottak og plassering av kombinerte nummerskilt                       | <p>Ja, når det ikke er en lagerordre</p><p>Nei, når det er en lagerordre</p> | Nei |
+| Mottak av lastvare                                              | <p>Ja, når det ikke er en lagerordre</p><p>Nei, når det er en lagerordre</p> | Nei |
+| Mottak og plassering av nummerskilt                             | <p>Ja, når det ikke er en lagerordre</p><p>Nei, når det er en lagerordre</p> | Nei |
+| Motta og plassere overføringsordrevare                       | Ja | Nei |
+| Mottak og plassering av overføringsordrelinje                       | Ja | Nei |
+| Avbryt arbeid (inngående)                                            | <p>Ja, når det ikke er en lagerordre</p><p>Nei, når det er en lagerordre</p> | <p>Ja, men bare når det ikke er merket av for alternativet <b>Avregistrer mottak når arbeid avbrytes</b> (på siden <b>Lagerstyringsparametere</b>)</p> |
+| Behandling av bestillingsproduktkvittering                        | Ja | Nei |
+| Bestilling som mottas med underlevering                      | <p>Ja, når det ikke er en lagerordre</p><p>Nei, når det er en lagerordre</p> | Ja, men bare ved å utføre en annulleringsforespørsel fra senteret |
+| Bestilling som mottas med overlevering                       | <p>Ja, når det ikke er en lagerordre</p><p>Nei, når det er en lagerordre</p> | Ja  |
+| Mottak med oppretting av arbeidstypen *Direkteoverføring*                 | <p>Ja, når det ikke er en lagerordre</p><p>Nei, når det er en lagerordre</p> | Nei |
 | Mottak med oppretting av arbeidstypen *Kvalitetsordre*                  | <p>Ja, når det ikke er en lagerordre</p><p>Nei, når det er en lagerordre</p> | Nei |
 | Mottak med oppretting av arbeidstypen *Sampling av kvalitetsvare*          | <p>Ja, når det ikke er en lagerordre</p><p>Nei, når det er en lagerordre</p> | Nei |
 | Mottak med oppretting av arbeidstypen *Kvalitet i kvalitetskontroll*       | <p>Ja, når det ikke er en lagerordre</p><p>Nei, når det er en lagerordre</p> | Nei |
 | Mottak med oppretting av kvalitetsordre                            | <p>Ja, når det ikke er en lagerordre</p><p>Nei, når det er en lagerordre</p> | Nei |
-| Arbeidsbehandling – styrt av *Gruppeplassering*                             | Ja | Nei |
-| Arbeidsbehandling med *Plukk med mangler*                                           | Ja | Nei |
-| Nummerskiltlasting                                           | Ja | Nei |
+| Arbeidsbehandling – styrt av *Gruppeplassering*                 | Ja | Nei |
+| Arbeidsbehandling med *Plukk med mangler*                               | Ja | Ingen |
+| Nummerskiltlasting                                           | Ja | Ja |
 
 ### <a name="warehouse-operations-and-exception-handing"></a>Lageroperasjoner og unntaksbehandling
 
@@ -250,11 +265,11 @@ Følgende tabell viser hvilke funksjoner for lageroperatsjoner og unntaksbehandl
 | Endre lager                                   | Ja | Ja                          |
 | Bevegelse                                           | Ja | Ja                          |
 | Flytting etter mal                               | Ja | Ja                          |
-| Lageroverføring                                 | Ja | Ingen                           |
-| Opprett overføringsordre fra mobilappen Lagerstyring           | Ja | Ingen                           |
-| Justering (inn/ut)                                | Ja | Ingen                           |
-| Endring av beholdningsstatus                            | Ja | Nei                           |
-| Syklustelling og behandling av tellingsavvik | Ja | Nei                           |
+| Lageroverføring                                 | Ja | Nei                           |
+| Opprett overføringsordre fra lagerapp           | Ja | Ingen                           |
+| Justering (inn/ut)                                | Ja | Ja, men ikke for justeringsscenariet der lagerreservering må fjernes ved hjelp av innstillingen **Fjern reserveringer** i lagerjusteringstypene.</p>                           |
+| Endring av beholdningsstatus                            | Ja | Ingen                           |
+| Syklustelling og behandling av tellingsavvik | Ja | Ja                           |
 | Skrive ut etikett på nytt (nummerskilteutskrift)             | Ja | Ja                          |
 | Nummerskilt-build                                | Ja | Nei                           |
 | Nummerskilt – bryt                                | Ja | Nei                           |
@@ -286,11 +301,9 @@ Flere satsvise jobber kjøres både på senteret og skalaenheter.
 
 Ved senterdistribusjonen kan du vedlikeholde de satsvise jobbene manuelt. Du kan administrere følgende satsvise jobber under **Lagerstyring \> Periodiske oppgaver \> Back-office-arbeidsbelastningsbehandling**:
 
-- Behandle oppdateringshendelser for arbeidsstatus
 - Skalaenhet til sentermeldingsprosessor
 - Registrer kildeordremottak
 - Fullfør lagerordrer
-- Behandle svar om oppdatering av antall for lagerordrelinjer
 
 I arbeidsbelastningen på skalaenheter kan du administrere følgende satsvise jobber under **Lagerstyring \> Periodiske oppgaver \> Arbeidsbelastningsbehandling**:
 
@@ -299,6 +312,5 @@ I arbeidsbelastningen på skalaenheter kan du administrere følgende satsvise jo
 - Behandle forespørsler om oppdatering av antall for lagerordrelinjer
 
 [!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

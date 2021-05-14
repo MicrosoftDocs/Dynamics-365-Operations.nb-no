@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Version 10.0.7
-ms.openlocfilehash: 8a809b81504fdc31d8f9e0529048269dd7e0c5cc
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: b680ec227ecd70893999950a8be2ad152c476575
+ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800453"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "5937018"
 ---
 # <a name="clienteling-overview"></a>Oversikt over kundeaktiviteter
 
@@ -60,7 +60,7 @@ Salgsmedarbeidere kan du også bruke merknader til å registrere generell kundei
 
 ## <a name="integration-with-dynamics-365-customer-insights"></a>Integrering med Dynamics 365 Customer Insights
 
-Ved å bruke Dynamics 365 Customer Insights-programmet kan forhandlere samle data fra de ulike systemene som kundene bruker til å arbeide interaktivt med forhandlerens merke. De kan deretter bruke disse dataene til å generere en enkelt visning av kunden og ha avledet innsikt. Integrering av Customer Insights med Commerce lar forhandlerne velge ett eller flere mål som skal vises på kundekortet i klientboken. Forhandlere kan for eksempel bruke dataene i Customer Insights til å beregne "frafallssannsynlighet" for en kunde og definere "neste beste handling". Hvis disse verdiene er definert som mål, kan de vises på kundekortet, og de kan gi viktig informasjon til salgsmedarbeidere. Hvis du vil ha mer informasjon om Customer Insights, se dokumentasjonen for [Dynamics 365 Customer Insights](https://docs.microsoft.com/dynamics365/ai/customer-insights/overview). Hvis du vil ha mer informasjon om mål, se [Mål](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-measures).
+Ved å bruke Dynamics 365 Customer Insights-programmet kan forhandlere samle data fra de ulike systemene som kundene bruker til å arbeide interaktivt med forhandlerens merke. De kan deretter bruke disse dataene til å generere en enkelt visning av kunden og ha avledet innsikt. Integrering av Customer Insights med Commerce lar forhandlerne velge ett eller flere mål som skal vises på kundekortet i klientboken. Forhandlere kan for eksempel bruke dataene i Customer Insights til å beregne "frafallssannsynlighet" for en kunde og definere "neste beste handling". Hvis disse verdiene er definert som mål, kan de vises på kundekortet, og de kan gi viktig informasjon til salgsmedarbeidere. Hvis du vil ha mer informasjon om Customer Insights, se dokumentasjonen for [Dynamics 365 Customer Insights](/dynamics365/ai/customer-insights/overview). Hvis du vil ha mer informasjon om mål, se [Mål](/dynamics365/ai/customer-insights/pm-measures).
 
 ## <a name="set-up-clienteling"></a>Definere kundeaktiviteter
 
@@ -73,7 +73,7 @@ Følg denne fremgangsmåten for å aktivere kundeaktiviteter-funksjonaliteten i 
 2. Aktiver **Kundeaktiviteter**-funksjonen ved å velge **Aktiver nå**.
 3. På siden **Parametere for Commerce**, i kategorien **Nummerserie**, velger du raden **Klientbokidentifikator**. Deretter velger du en nummerserie i feltet **Nummerseriekode**. Systemet vil bruke denne nummerserien til å tilordne en ID til klientbøker.
 4. Velg **Lagre**.
-5. Opprett en ny attributtgruppe som inneholder attributtene du vil registrere for kunder som administreres i klientbøker. Du finner instruksjonene i [Attributter og attributtgrupper](https://docs.microsoft.com/dynamics365/retail/attribute-attributegroups-lifecycle).
+5. Opprett en ny attributtgruppe som inneholder attributtene du vil registrere for kunder som administreres i klientbøker. Du finner instruksjonene i [Attributter og attributtgrupper](./attribute-attributegroups-lifecycle.md).
 
     - Definer de nødvendige attributtene som **Kan justeres**. Salgsmedarbeidere kan deretter bruke disse attributtene til å filtrere sin klientbok.
     - Angi visningsrekkefølgen for disse attributtene. Denne visningsrekkefølgen bestemmer hvilke attributter som skal vises på kundekortet i klientboken. En visningsrekkefølge på 1 anses som høyere enn visningsrekkefølgen på 2. Derfor vises attributtet som har en visningsrekkefølge på 1, før attributtet som har en visningsrekkefølge på 2.
@@ -103,18 +103,18 @@ Hvis du vil slå på integreringen av Customer Insights med Commerce, må du kon
 
 Gjør følgende for å konfigurere integrasjonen:
 
-1. Registrer et nytt program i Azure Portal, og noter deg programnavnet, program-IDen og hemmeligheten. Denne informasjonen brukes til tjeneste-til-tjeneste-godkjenning mellom Commerce og Customer Insights. Registrer hemmeligheten på en sikker måte, fordi den må lagres i Key Vault. I eksemplet nedenfor bruker du CI_Access_name, CI_Access_AppID, CI_Access_Secret for henholdsvis programnavn, program-ID og hemmelighet. Du finner mer informasjon i [Hurtigstart: Registrere en app med Microsoft-identitetsplattformen](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
+1. Registrer et nytt program i Azure Portal, og noter deg programnavnet, program-IDen og hemmeligheten. Denne informasjonen brukes til tjeneste-til-tjeneste-godkjenning mellom Commerce og Customer Insights. Registrer hemmeligheten på en sikker måte, fordi den må lagres i Key Vault. I eksemplet nedenfor bruker du CI_Access_name, CI_Access_AppID, CI_Access_Secret for henholdsvis programnavn, program-ID og hemmelighet. Du finner mer informasjon i [Hurtigstart: Registrere en app med Microsoft-identitetsplattformen](/azure/active-directory/develop/quickstart-register-app).
 
     > [!IMPORTANT]
     > Utfør tiltak slik at du husker å endre hemmeligheten før den utløper. Hvis ikke vil integreringen stoppes uventet.
 
 2. Gå til Customer Insights-forekomsten, og søk etter navnet på programmet som ble opprettet ovenfor (i dette eksemplet "CI_Access_name").
-3. Opprett et Azure Key Vault, og noter deg navnet og URL-adressen (i dette eksemplet "KeyVaultName", "KeyVaultURL"). Hvis du vil ha instruksjoner, kan du se [Hurtigstart: Angi og hente en hemmelighet fra Azure Key Vault ved hjelp Azure-portalen](https://docs.microsoft.com/azure/key-vault/quick-create-portal).
+3. Opprett et Azure Key Vault, og noter deg navnet og URL-adressen (i dette eksemplet "KeyVaultName", "KeyVaultURL"). Hvis du vil ha instruksjoner, kan du se [Hurtigstart: Angi og hente en hemmelighet fra Azure Key Vault ved hjelp Azure-portalen](/azure/key-vault/quick-create-portal).
 4. Lagre navnet (i dette eksemplet "CI_Access_Secret") i Key Vault. Når denne hemmeligheten lagres i Key Vault, får den et navn. Merk deg det hemmelige navnet (i dette eksempelet SecretName).
 5. For å få tilgang til hemmeligheten fra Azure Key Vault må du opprette et annet program med program-ID og hemmelighet (i dette eksemplet "KeyVault_Access_AppID" og "KeyVault_Access_Secret"). Registrer hemmeligheten på en trygg måte, fordi den blir ikke vist igjen.
 6. Deretter må du gi programmet tillatelser for å få tilgang til Key Vault fra Commerce ved hjelp av APIer. Gå til programsiden i Azure Portal. Velg **API-tillatelser** under delen **Behandle**. Legg til tillatelser for å få tilgang **Azure key vault**. Velg **Tilgangspolicy** for denne tillatelsen. Velg malen som **Hemmelig administrasjon**, og velg alternativene **Hent**, **Liste**, **Dekrypter** og **Krypter**. 
 5. Gå til **Systemadministrasjon \> Oppsett \> Key Vault-parametere** i Commerce Headquarters, og angi den nødvendige informasjonen for key vault. I feltet **Key Vault-klient** angir du deretter program-IDen du brukte i trinn 4, slik at Commerce kan få tilgang til hemmelighetene i nøkkelhvelvet.
-6. Hvis du vil legge til programmet du opprettet i trinn 1, i listen over sikre programmer (noen ganger kalt en hviteliste), kan du gå til Customer Insights og velge **Visning**-tilgang til programmet. Hvis du vil ha instruksjoner, kan du se [Tillatelser](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-permissions).
+6. Hvis du vil legge til programmet du opprettet i trinn 1, i listen over sikre programmer (noen ganger kalt en hviteliste), kan du gå til Customer Insights og velge **Visning**-tilgang til programmet. Hvis du vil ha instruksjoner, kan du se [Tillatelser](/dynamics365/ai/customer-insights/pm-permissions).
 7. På siden **Systemadministrasjon > Oppsett > Key Vault-parametere** i Commerce HQ oppdateres feltene som beskrevet nedenfor: 
 
 - **Key Vault-URL**: "KeyVaultURL" (fra trinn 3 ovenfor).
