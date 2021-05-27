@@ -361,13 +361,11 @@
                   href: asset-management/objects/object-timeline.md
                 - name: Aktivavisning
                   href: asset-management/objects/object-view.md
-                - name: Oversikt over aktivaattributt
+                - name: Oversikt over objektattributt
                   href: asset-management/objects/object-specification-overview.md
             - name: Oppsett for vedlikeholdsanmodninger
               items:
-                - name: Vedlikeholdsanmodninger
-                  href: asset-management/setup-for-maintenance-requests/requests.md
-                - name: Livsløpstilstander for vedlikeholdsanmodning
+                - name: Meldingsstatuser
                   href: asset-management/setup-for-maintenance-requests/request-stages.md
                 - name: Typer vedlikeholdsanmodninger
                   href: asset-management/setup-for-maintenance-requests/request-types.md
@@ -3343,8 +3341,94 @@
               href: inventory/extend-on-hand-entities.md
         - name: Feilsøking
           items:
+            - name: Kostnadsstyring
+              items:
+                - name: Manglende feltinnstillinger for kopiering av varemodellgrupper til en annen juridisk enhet
+                  href: troubleshooting/costing/copying-item-model-groups.md
+                - name: Rapporten Indirekte kostnader i prosess inneholder slettede produksjonsordrer
+                  href: troubleshooting/costing/indirect-costs-in-pr.md
+                - name: Innkjøpsavsetning postert med beløp null for produktkvittering med null verdi
+                  href: troubleshooting/costing/posting-to-purchase.md
+                - name: Fysisk mottatte bestillinger vises ikke i lagerlukkingsrapporten
+                  href: troubleshooting/costing/purchase-orders-rece.md
+                - name: Det er ingen Fra-dato i fanen Aktive priser på siden Varepris
+                  href: troubleshooting/costing/there-is-no-from-dat.md
             - name: Lagerstyring
               items:
+                - name: Flere lagertransaksjoner for partinumre uten Ved fysisk oppdatering
+                  href: troubleshooting/inventory/multiple-inventory-t.md
+                - name: Tilbakeføring av en rapport som fullført oppretter en uventet åpen transaksjon
+                  href: troubleshooting/inventory/reverse-report-as-fi.md
+                - name: Kan ikke vise nye merknader knyttet til en journal i plukklisterapporten
+                  href: troubleshooting/inventory/unable-to-print-the.md
+                - name: Antallet i en startet karanteneordre oppdateres ikke når ordren deles
+                  href: troubleshooting/inventory/quantity-on-a-start.md
+                - name: Feltet Dato for sist testet oppdateres ikke når det opprettes flere kvalitetsordrer
+                  href: troubleshooting/inventory/the-field-last-test.md
+                - name: Ved deling av et antall for variabel vekt brukes minimum i stedet for pålydende antall
+                  href: troubleshooting/inventory/while-splitting-the.md
+            - name: Hovedplanlegging
+              items:
+                - name: Direkte avledede planlagte ordrer behandles av en gjennomgangsarbeidsflyt
+                  href: troubleshooting/planning/firmed-directly-deri.md
+                - name: Hovedplanlegging genererer planlagte bestillinger for fantomprodukter
+                  href: troubleshooting/planning/planned-orders-are-g.md
+                - name: Bestillingsforslag opprettes når et innkjøp finnes innen negative dager
+                  href: troubleshooting/planning/planning-optimisatio.md
+                - name: Kan ikke laste opp kostprisen i behovsprognoseoppføringer
+                  href: troubleshooting/planning/unable-to-upload-the.md
+                - name: Kan ikke fjerne prognosedimensjonen for lagerbehov fra prognoselinjer
+                  href: troubleshooting/planning/warehouse-removal-fr.md
+            - name: Innkjøp
+              items:
+                - name: Kan ikke fakturere en salgsordre for kunde i VEL-firmaet
+                  href: troubleshooting/procurement/not-able-to-invoice-.md
+                - name: Kan ikke legge til en linje i en innkjøpsrekvisisjon etter å ha bedt om en endring
+                  href: troubleshooting/procurement/purchase-requisition.md
+            - name: Behandling av produktinformasjon
+              items:
+                - name: Kan ikke bruke en mal til å opprette et frigitt produkt
+                  href: troubleshooting/products/apply-template-in-re.md
+                - name: Kan ikke importere en vare ved hjelp av enheten Frigitte produkter V2
+                  href: troubleshooting/products/cannot-import-with-r.md
+                - name: Bestillinger viser ikke oversatt produkttekst
+                  href: troubleshooting/products/when-the-customer-ad.md
+            - name: Produksjonskontroll
+              items:
+                - name: Trekkprinsippinnstillinger på stykklistelinjer overholdes ikke
+                  href: troubleshooting/production/flushing-principle-n.md
+                - name: Partinummeret fjernes når du velger en ny parti-ID
+                  href: troubleshooting/production/when-customer-is-try.md
+                - name: Sene valg overholdes ikke ved tilbakestilling av produksjonsordrer via satsvis jobb
+                  href: troubleshooting/production/late-selection-is-no.md
+                - name: Brukere kan legge tilbake materiallinjer for produkter som er ferdigmeldt
+                  href: troubleshooting/production/raw-material-lines-a.md
+                - name: Feil ved postering av rapport som ferdigmeldingsjournal
+                  href: troubleshooting/production/posting-report-as-.md
+                - name: Lageret i plukklistejournalen oppdateres ikke på en stykklistelinje
+                  href: troubleshooting/production/the-warehouse-in-pic.md
+            - name: Rabattbehandling
+              items:
+                - name: Kumulering av kunderabatter ved å bruke varerabattgrupper mislykkes
+                  href: troubleshooting/rebates/cumulating-customer-.md
+            - name: Salg og markedsføring
+              items:
+                - name: Systemadministratorer kan ikke fjerne ordresperrer fordi de ikke har autorisasjon til dette
+                  href: troubleshooting/sales/system-administrator.md
+            - name: Transportstyring
+              items:
+                - name: Kan bare legge til hovedkontoen som kreditkontoen på grunn av avstemmingsårsaker
+                  href: troubleshooting/transportation/reconciliation-reaso.md
+            - name: Lagerstyring
+              items:
+                - name: Det oppstår en feil når du velger lokasjonen under plukklisteregistrering
+                  href: troubleshooting/warehousing/error-cannot-update.md
+                - name: Pakkestasjonen viser ikke produktmerknader
+                  href: troubleshooting/warehousing/packing-station-not-.md
+                - name: 'Lokasjonsprofilen sperrer negativt lager, men negativ beholdning er tillatt'
+                  href: troubleshooting/warehousing/location-profile-set.md
+                - name: Bare én etikett skrives ut for flere arbeidshoder på en enkelt kvittering
+                  href: troubleshooting/warehousing/when-receipting-prod.md
                 - name: Du kan ikke bekrefte en forsendelse på grunn av en feil med kalenderen
                   href: troubleshooting/warehousing/load-has-active-appo.md
                 - name: Du kan ikke bekrefte en forsendelse på grunn av ufullstendig eller manglende arbeid
