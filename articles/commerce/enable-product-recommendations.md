@@ -16,12 +16,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 59d6b298896c92cbc0f6bbae17096ee1f027b922
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 873266405638cd277eb748ad7e966ba8a4976b13
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799161"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6019865"
 ---
 # <a name="enable-product-recommendations"></a>Aktiver produktanbefalinger
 
@@ -39,7 +39,7 @@ Følgende konfigurasjoner må aktiveres i Back Office før aktivering av anbefal
 2. Kontroller at oppdateringen av enhetslageret er automatisert. For mer informasjon, se [Kontroller at oppdateringen av enhetslageret er automatisert](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
 3. Kontroller at Azure AD-identitetskonfigurasjonen inneholder en oppføring for anbefalinger. Du finner mer informasjon om hvordan du utfører denne handlingen nedenfor.
 
-Kontroller også at RetailSale-mål er aktivert. Hvis du vil lære mer om denne konfigureringsprosessen, kan du se [Arbeide med mål](https://docs.microsoft.com/dynamics365/ai/customer-insights/pm-measures).
+Kontroller også at RetailSale-mål er aktivert. Hvis du vil lære mer om denne konfigureringsprosessen, kan du se [Arbeide med mål](/dynamics365/ai/customer-insights/pm-measures).
 
 ## <a name="azure-ad-identity-configuration"></a>Azure AD-identitetskonfigurasjon
 

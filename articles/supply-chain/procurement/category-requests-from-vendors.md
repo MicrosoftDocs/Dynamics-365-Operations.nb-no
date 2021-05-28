@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: fb3555e6d923fe37479c3204f0b78f7cdf510118
-ms.sourcegitcommit: cd9016e9787169cb800889d335b9c5919ddbe4af
+ms.openlocfilehash: 1951f85f84c3b8b2d42f49d5f464d90d410ebfa2
+ms.sourcegitcommit: 51cad1ce3ed44ebf7eb9bdf553ee2df4c1f03135
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5938522"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "6015957"
 ---
 # <a name="category-requests-from-vendors"></a>Kategoriforespørsler fra leverandører
 
@@ -36,10 +36,7 @@ Når funksjonen er aktivert, kan du fremdeles legge til innkjøpskategorier manu
 
 Før en leverandør kan samhandle med kategoriforespørsler, må det konfigureres for leverandørsamarbeid.
 
-Leverandøren må ha minst én bruker for leverandørsamarbeid. Bare leverandørbrukere som har én eller begge av følgende sikkerhetsroller, kan opprette og sende kategoriforespørsler:
-
-- Leverandørkontakt (ekstern)
-- Leverandøradministrasjon (ekstern)
+Leverandøren må ha minst én bruker for leverandørsamarbeid. Bare leverandørbrukere med sikkerhetsrollen *Leverandøradministrasjon (ekstern)* kan opprette og sende kategoriforespørsler.
 
 Hvis du vil ha mer informasjon, se [Definere og vedlikeholde leverandørsamarbeid](set-up-maintain-vendor-collaboration.md).
 

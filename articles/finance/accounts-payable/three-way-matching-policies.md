@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 829c9c5549c337c5c2b118f3027111831f2632ca
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 41f863d85a1ad52d8fa11a458054728728858d27
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814302"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027800"
 ---
 # <a name="three-way-matching-policies"></a>Treveis kontrollpolicyer
 
@@ -37,9 +37,9 @@ Fabrikam opererer med flere juridiske enheter og ansatte i alle deler av verden.
 
 Fakturakontrollpolicyer i dette eksemplet hjelper personer i følgende roller med å oppfylle dette:
 
--   Ken er kontrolleren til Fabrikam-organisasjonen. Han kan hjelpe personer i organisasjonen med å identifisere og løse problemer med bestilling, mottak og betaling av varer (varer og tjenester) fra leverandører.
+-   Ken er kontrolleren til Fabrikam-organisasjonen. Ken kan hjelpe personer i organisasjonen med å identifisere og løse problemer med bestilling, mottak og betaling av varer (varer og tjenester) fra leverandører.
 -   Phyllis og April er ledere i leverandøravdelingen for Fabrikam i USA. De kan håndheve firmaets policy og sørge for at fakturaer bare betales etter at fakturaene er sammenlignet med bestillingen og mottaket av varer og tjenester, der det er aktuelt.
--   Tony er produksjonssjefen for Fabrikam i USA Han og andre ansatte i produksjonen kan sørge for at varene mottas slik de ble bestilt fra leverandørene, og blir inkludert slik at ansatte har det de trenger for å utføre jobben sin.
+-   Tony er produksjonssjefen for Fabrikam i USA Tony og andre ansatte i produksjonen kan sørge for at varene mottas slik de ble bestilt fra leverandørene, og blir inkludert slik at ansatte har det de trenger for å utføre jobben sin.
 
 ### <a name="prerequisites"></a>Forutsetninger
 
@@ -51,13 +51,13 @@ Fakturakontrollpolicyer i dette eksemplet hjelper personer i følgende roller me
 
     | Varenummer                 | Antall | Enhetspris | Nettobeløp | Tilleggskode        | Gebyrverdi |
     |-----------------------------|----------|------------|------------|---------------------|---------------|
-    | 1500 – CNC Milicron maskin | 5        | 8 000,00   | 40 000,00  | Forsendelse og behandling | 3 000,00      |
+    | 1500 – CNC Milicron maskin | 5        | 8 000,00   | 40 000,00  | Forsendelse og behandling | 3,000.00      |
 
 -   Magnus, en regnskapsmedarbeider hos Contoso, ser gjennom forsendelser for uken. Arnie velger forsendelsestransaksjoner for å fakturere Fabrikam for levering av CNC Milicron-maskinene. Magnus inkluderer et tillegg for forsendelse og håndtering. Fabrikam anser tillegget som en del av anleggsmiddelkostnaden.
 
 ### <a name="scenario"></a>Scenario
 
-1.  Sammy, en arbeider i mottaksavdelingen i Fabrikam, mottar det totale antallet maskiner som sendes fra Contoso. Han angir et antall på 5 på en produktkvittering. Fordi bestillingen er fullstendig mottatt, endres statusen for bestillingen til Mottatt.
+1.  Sammy, en arbeider i mottaksavdelingen i Fabrikam, mottar det totale antallet maskiner som sendes fra Contoso. Sammy angir et antall på 5 på en produktkvittering. Fordi bestillingen er fullstendig mottatt, endres statusen for bestillingen til Mottatt.
 2.  April, en leverandørkoordinator på Fabrikam, legger inn og bekrefter fakturaen som er sendt av Contoso. Hun kontrollerer følgende informasjon:
     -   Ved varer som krever treveis samsvar, samsvarer antallet på fakturalinjen med antallet som ble mottatt. Det mottatte antallet er angitt på produktkvitteringen som er samsvart med fakturaen.
     -   For varer som krever toveis eller treveis samsvar, er prisene på fakturalinjen innenfor toleransene som er definert i Microsoft Dynamics 365 Finance. Dette inkluderer følgende typer prissamsvar:
@@ -66,7 +66,7 @@ Fakturakontrollpolicyer i dette eksemplet hjelper personer i følgende roller me
 
 Papirfakturaen fra Contoso inneholder følgende informasjon.
 
-| Vare                        | Antall | Enhetspris | Nettobeløp |
+| Element                        | Antall | Enhetspris | Nettobeløp |
 |-----------------------------|----------|------------|------------|
 | 1500 – CNC Milicron maskin | 5        | 8 100.00   | 40,500.00  |
 | Forsendelse og behandling       |          |            | 4,000.00   |
@@ -87,7 +87,7 @@ Sammendrag: Ken er kontrolleren i firmaets hovedkontor for en juridisk enhet kal
 Volumet og beløpene er små, og det har vært problemer med leveringen fra noen leverandører i Malaysia. Derfor setter Cassie kontrollnivået for enkelte vare- og leverandørkombinasjoner som er kjøpt i Malaysia, til treveis kontroll. 
 
 Fakturakontrollpolicyer i dette eksemplet hjelper personer i følgende roller med å oppfylle dette:
--   Ken er kontrolleren til Fabrikam-organisasjonen. Han kan hjelpe personer i organisasjonen med å identifisere og løse problemer med bestilling, mottak og betaling av varer (varer og tjenester) fra leverandører.
+-   Ken er kontrolleren til Fabrikam-organisasjonen. Ken kan hjelpe personer i organisasjonen med å identifisere og løse problemer med bestilling, mottak og betaling av varer (varer og tjenester) fra leverandører.
 -   Cassie er regnskapsføreren for Malaysia-kontoret til Fabrikam. Hun kan håndheve firmaets policy og sørge for at fakturaer bare betales etter at de er sammenlignet med bestillingslinjene og produktkvitteringene som representerer mottaket av varer og tjenester. Hun kan også øke kontrollnivået til treveis samsvar for bestemte varer for å kontrollere driftskostnader.
 
 ### <a name="prerequisites"></a>Forutsetninger
@@ -115,7 +115,7 @@ Fakturakontrollpolicyer i dette eksemplet hjelper personer i følgende roller me
 
 Papirfakturaen fra Contoso inneholder følgende informasjon.
 
-| Vare                  | Antall | Enhetspris | Nettobeløp |
+| Element                  | Antall | Enhetspris | Nettobeløp |
 |-----------------------|----------|------------|------------|
 | PH2500 – datamaskin     | 2        | 2 500,00   | 5 000,00   |
 | MM01 – trådløs mus | 2        | 41.00      | 82.00      |

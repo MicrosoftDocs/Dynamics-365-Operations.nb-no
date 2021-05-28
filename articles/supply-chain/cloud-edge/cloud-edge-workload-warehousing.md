@@ -6,7 +6,7 @@ ms.date: 04/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: PurchTable, SysSecRolesEditUsers
+ms.search.form: PurchTable, SysSecRolesEditUsers, SysWorkloadDuplicateRecord
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: ''
@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 9bdb9529c8b630182a2036e9d116909f9e92bb83
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: 3d9bbc91b90cc675f500a990cf36e2aee6c6bccb
+ms.sourcegitcommit: 35fdcc6501e099c54a58583b1e3aba16f02a5ccc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944419"
+ms.lasthandoff: 05/04/2021
+ms.locfileid: "5980956"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Skalaenheter for sky og kant for arbeidsbelastninger for lagerstyring
 
@@ -58,7 +58,10 @@ Skalaenhetene eier følgende data:
   - **Overføringsordrer** (bare utgående med enkelt plukke- og lastearbeid)
 
 - **Kvitteringsdata for lagerordre** – Disse dataene brukes bare for bestillinger som er frigitt til et lager.
-- **Nummerskiltdata** – Nummerskilter kan opprettes på senteret og skalaenheten. Dedikert konflikthåndtering er angitt. Legg merke til at disse dataene ikke er lagerspesifikke.
+- **Nummerskiltdata** – Nummerskilter kan opprettes både på senteret og på skalaenhetene. Dedikert konflikthåndtering er angitt. 
+
+    > [!IMPORTANT]
+    > Nummerskiltdata er ikke lagerspesifikke. Hvis det samme skiltnummer blir opprettet både på senteret og en skalaenhet under samme synkroniseringssyklus, vil neste synkronisering mislykkes. Hvis dette skjer, kan du gå til **Systemadministrasjon > Forespørsler > Arbeidsmengdeforespørsler > Duplikate poster**, der du kan vise og flette dataene.
 
 ## <a name="outbound-process-flow"></a>Utgående prosessflyt
 

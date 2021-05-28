@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a559bdc8f7851e38274d9d23070f969502942ad8
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 68355cb481de210a4a3bdb9e2fce16eca429e3db
+ms.sourcegitcommit: 51cad1ce3ed44ebf7eb9bdf553ee2df4c1f03135
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835876"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "6016061"
 ---
-# <a name="service-object-groups"></a>Serviceobjektgrupper 
+# <a name="service-object-groups"></a>Serviceobjektgrupper
 
 [!include [banner](../includes/banner.md)]
 
@@ -32,17 +32,17 @@ Objektgrupper er nyttige for å kunne sortere og filtrere data til bruk i rappor
 
 Du kan bruke denne grupperingsmetoden for å vise hvor de ulike objektene som firmaet utfører tjenester for, befinner seg. Gruppering av objekter etter geografisk plassering kan også være nyttig hvis du for eksempel må identifisere objektene som firmaet allerede utfører tjenester for, i et bestemt land eller område.
 
-## <a name="example"></a>Eksempel
+## <a name="example-of-grouping-by-geographical-location"></a>Eksempel på gruppering etter geografisk plassering
 
-En kunde fra Belgia ringer ditt servicecenter og vil opprette en en serviceavtale for et objekt, ABC. Du har tilknyttet en objektgruppe for geografisk plassering, Belgia, til alle objekter som betjenes i Belgia. Ved å bruke denne gruppen som et filter, kan du raskt søke for å se om du allerede har en post for ABC i programmet ditt, eller om du må definere et nytt objekt. 
+En kunde fra Belgia ringer ditt servicecenter og vil opprette en en serviceavtale for et objekt, ABC. Du har tilknyttet en objektgruppe for geografisk plassering, Belgia, til alle objekter som betjenes i Belgia. Ved å bruke denne gruppen som et filter, kan du raskt søke for å se om du allerede har en post for ABC i programmet ditt, eller om du må definere et nytt objekt.
 
 ## <a name="group-by-type"></a>Grupper etter type
 
 Du kan bruke denne grupperingsmetoden for å vise hvilke typer av objekter firmaet ditt utfører tjenester for. Gruppering av objekter etter type kan også være nyttig hvis du for eksempel vil opprette et nytt objekt basert på liknende objekter som allerede finnes i programmet.
 
-## <a name="example"></a>Eksempel
+## <a name="example-of-grouping-by-type"></a>Eksempel på gruppering etter type
 
-En kunde ringer og vil opprette en serviceavtale for en luftkondisjoneringsmaskin, HIJ. Du har ikke allerede en oppføring for denne maskinen. Men du har satt opp en objektgruppe som heter Luftkondisjonering, og du har knyttet denne gruppen til alle luftkondisjoneringsobjekter. Derfor kan du raskt søke etter og identifisere alle andre luftkondisjoneringsmaskiner og bruke malinformasjonen fra disse objektene til å opprette serviceavtalelinjer for HIJ. Ved å bruke objektgrupper på denne måten, kan du raskt definere nye objekter og avgjøre hvilke serviceoppgaver som må utføres på dem. 
+En kunde ringer og vil opprette en serviceavtale for en luftkondisjoneringsmaskin, HIJ. Du har ikke allerede en oppføring for denne maskinen. Men du har satt opp en objektgruppe som heter Luftkondisjonering, og du har knyttet denne gruppen til alle luftkondisjoneringsobjekter. Derfor kan du raskt søke etter og identifisere alle andre luftkondisjoneringsmaskiner og bruke malinformasjonen fra disse objektene til å opprette serviceavtalelinjer for HIJ. Ved å bruke objektgrupper på denne måten, kan du raskt definere nye objekter og avgjøre hvilke serviceoppgaver som må utføres på dem.
 
 ## <a name="create-service-object-groups"></a>Opprette serviceobjektgrupper
 

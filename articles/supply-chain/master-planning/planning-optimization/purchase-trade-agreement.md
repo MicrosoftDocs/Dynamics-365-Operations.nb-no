@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 4f50dfa5c2914ce2131cdc44582588be69b35335
-ms.sourcegitcommit: 2eb7a9ae544f504155657c5c584cbac66c21dba4
+ms.openlocfilehash: 570b0995821dcaa2e180b48c25facee01e98f8e3
+ms.sourcegitcommit: 51cad1ce3ed44ebf7eb9bdf553ee2df4c1f03135
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "5961711"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "6015907"
 ---
 # <a name="master-planning-with-purchase-trade-agreements"></a>Hovedplanlegging med forretningsavtaler
 
@@ -67,7 +67,7 @@ Når systemet er klargjort som beskrevet i den forrige delen, bør du følge den
 1. Gjenta denne fremgangsmåten for hvert relevant produkt.
 
 > [!NOTE]
-> Støtte for planleggingsoptimalisering for kjøpsavtaler med flere valutaer. Når du søker etter en forretningsavtale ved hjelp av alternativet **Laveste enhetspris**, vil systemet vurdere forretningsavtalelinjer med ulike valutaer, forutsatt at det er definert en valutakurs mellom forretningsavtalelinjevalutaen og regnskapsvalutaen for den juridiske enheten. Hvis ikke blir forretningsavtalelinjen ignorert, og du vil få en feilmelding under hovedplanleggingen. Hovedplanleggingen vil derfor inkludere informasjon fra alle relevante forretningsavtalelinjer der prisene kan omregnes til regnskapsvalutaen.
+> Støtte for planleggingsoptimalisering for kjøpsavtaler med flere valutaer. Når du søker etter en forretningsavtale ved hjelp av alternativet **Laveste enhetspris**, vil systemet vurdere forretningsavtalelinjer med ulike valutaer, forutsatt at det er definert en valutakurs mellom forretningsavtalelinjevalutaen og regnskapsvalutaen for den juridiske enheten. Hvis ikke blir forretningsavtalelinjen ignorert, og du vil få en feilmelding under hovedplanleggingen. Hovedplanleggingen vil derfor inkludere informasjon fra alle relevante forretningsavtalelinjer der prisene kan omregnes til regnskapsvalutaen. Det er viktig å merke seg at det ikke tas hensyn til avrundingsregler i løpet av priskonverteringen på forretningsavtalen.
 
 ## <a name="examples-of-how-planning-optimization-finds-vendor-and-lead-times"></a>Eksempler på hvordan planleggingsoptimalisering finner leverandør- og leveringstider
 

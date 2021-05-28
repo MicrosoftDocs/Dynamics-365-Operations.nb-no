@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b0c7aa3bc1d4eef7b557bd9b07b31196faab273d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 55c40029082e49c1fbc9d9d5e9361218e5ddc5a0
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791084"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6022478"
 ---
 # <a name="e-commerce-site-overview"></a>Oversikt over e-handelsområde
 
@@ -37,11 +37,11 @@ I Dynamics 365 Commerce bruker du en nettbutikkanal til å opprette produkter, p
 
 Bare én nettbutikkanal må konfigureres før du kan komme i gang med Dynamics 365 Commerce. Et enkelt e-handelsområde kan imidlertid gi Internett-opplevelsen for flere nettbutikker. Hvis for eksempel flere nettbutikker er konfigurert til å støtte forskjellige geografiske områder, kan et enkelt sett med e-handelssider brukes til å gi de unike opplevelsene som er definert av hver butikk. Hvis du vil ha mer informasjon om hvordan du konfigurerer et område til å støtte flere nettbutikker, kan du se [Knytte et nettområde til en kanal](associate-site-online-store.md).
 
-Når en nettbutikk er satt opp, kan den knyttes til Dynamics 365 Commerce-området som vil fungere som din nettbutikkfasade. Hvis du vil ha mer informasjon om nettbutikker og hvordan du konfigurerer dem, kan du se [Konfigurere nettbutikker](https://docs.microsoft.com/dynamics365/unified-operations/retail/online-stores).
+Når en nettbutikk er satt opp, kan den knyttes til Dynamics 365 Commerce-området som vil fungere som din nettbutikkfasade. Hvis du vil ha mer informasjon om nettbutikker og hvordan du konfigurerer dem, kan du se [Konfigurere nettbutikker](/dynamics365/unified-operations/retail/online-stores).
 
 ## <a name="deploy-a-new-e-commerce-tenant"></a>Distribuere en ny e-handelsleier
 
-Under initialisering av et e-handelsområde blir du bedt om å oppgi et domenenavn. Hvis du vil ha mer informasjon om domener i Commerce, kan du se [Konfigurer domenenavnet](configure-your-domain-name.md) og [Domener i Dynamics 365 Commerce](domains-commerce.md). Hvis du vil distribuere en ny e-handelsleier ved hjelp av [Microsoft Dynamics Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide), følger du fremgangsmåten i [Distribuer en ny e-handelsleier](deploy-ecommerce-site.md). Når e-handelsleieren er konfigurert i LCS, får du en kobling til Commerce-områdebygger. Deretter kan du bruke Commerce-områdebygger til å initialisere og konfigurere e-handelsområdene.
+Under initialisering av et e-handelsområde blir du bedt om å oppgi et domenenavn. Hvis du vil ha mer informasjon om domener i Commerce, kan du se [Konfigurer domenenavnet](configure-your-domain-name.md) og [Domener i Dynamics 365 Commerce](domains-commerce.md). Hvis du vil distribuere en ny e-handelsleier ved hjelp av [Microsoft Dynamics Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide), følger du fremgangsmåten i [Distribuer en ny e-handelsleier](deploy-ecommerce-site.md). Når e-handelsleieren er konfigurert i LCS, får du en kobling til Commerce-områdebygger. Deretter kan du bruke Commerce-områdebygger til å initialisere og konfigurere e-handelsområdene.
 
 ## <a name="initialize-your-e-commerce-site"></a>Initialiser e-handelsområdet ditt
 

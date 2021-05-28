@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2adb8b969a6e86becaa3c0a3b59d8f8f259e5a64
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d0d4afd74f9a0f9018629fa92ab6595bfa94f973
+ms.sourcegitcommit: c011a2ef66b38e71ddaf003f7d243677bb2707c5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5834602"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6026211"
 ---
 # <a name="set-up-postdated-checks"></a>Definere etterdaterte sjekker
 
@@ -51,9 +51,13 @@ Rollen til denne prosedyren er kasserer. Denne fremgangsmåten bruker demonstras
     * Motkontoen for betalingsmetoden vil være en bank.  
 17. Angi ønskede verdier i feltet Betalingskonto.
     * Velg bankkontoen som brukes til å trekke fakturabeløpet.  
-18. Klikk Lagre.
+18. Klikk på Lagre.
 19. Lukk siden.
-
-
+> [!NOTE]
+> Hvis du vil postere en etterdatert sjekk til en bankkonto når øktdatoen er senere enn eller lik forfallsdatoen, må du aktivere funksjonen for **Validering av modenhetsdato for postering av betalingsjournal med etterdaterte sjekker til bankkonto**. Ved hjelp av denne funksjonen kan du postere betalingsjournaler for leverandører eller kunder med etterdaterte sjekker når øktdatoen er senere enn eller lik forfallsdatoen.
+> 
+> Når du definerer **Betalingsmåte** (**Leverandør > Betalingsoppsett > Betalingsmåter**), må du ikke fylle ut **Mellomkonto**. I dette tilfellet blir motkontoen fylt ut med bankkontoen, som er definert i **Betalingsmåte**.
+>  
+> Når funksjonen er aktivert og øktdatoen er tidligere enn forfallsdatoen, vises følgende feilmelding ved postering av en betalingsjournal: "Forfallsdatoen må være tidligere eller lik øktdatoen hvis motkontotypen er Bank". Hvis funksjonen ikke er aktivert, kan du postere en betalingsjournal med en etterdatert sjekk når øktdatoen er tidligere enn modenhetsdatoen.    
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

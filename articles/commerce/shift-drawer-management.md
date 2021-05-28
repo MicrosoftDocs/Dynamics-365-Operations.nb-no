@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 9d6fa36d7bb45e1cd9f8c3fbc1e60ac521f1f9b0
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: d9d36bcb05cf466d34d921d8cd5266b6c12a63d7
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795459"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6028257"
 ---
 # <a name="shift-and-cash-drawer-management"></a>Behandling av skift og kassaskuff
 
@@ -45,7 +45,7 @@ Dette er vanligvis brukt oftest. Det brukes forsatt mye. I et "fast kasse"-skift
 
 I et "flytende kasse"-skift kan skiftet og kassen flyttes fra én kasse til en annen. Selv om en kasse bare kan ha ett aktivt skift per kasse, kan skift stoppes og startes opp igjen senere eller på en annen kasse.
 
-En butikk har for eksempel to kasser. Hver kasse åpnes ved starten av dagen når kassereren åpner et nytt skift og angir startbeløpet. Når én kasserer er klar til å ta en pause, stopper kassereren hans eller hennes skift og kassen og fjerner kassen fra kassaskuffen. Denne kassen blir da tilgjengelig for andre kasserere. En annen kasserer kan logge på og åpne sitt eget skift på kassen. Etter at den pausen til den første kassereren er avsluttet, kan denne kassereren gjenoppta hans eller hennes skift når en av de andre kassene blir tilgjengelig. "Flytense kasse"-skift krever ikke noen spesiell konfigurasjon eller tillatelse.
+En butikk har for eksempel to kasser. Hver kasse åpnes ved starten av dagen når kassereren åpner et nytt skift og angir startbeløpet. Når én kasserer er klar til å ta en pause, stopper kassereren skiftet sitt og fjerner kassen fra kassaskuffen. Denne kassen blir da tilgjengelig for andre kasserere. En annen kasserer kan logge på og åpne sitt eget skift på kassen. Etter at pausen til den første kassereren er avsluttet, kan denne kassereren gjenoppta skiftet sitt når en av de andre kassene blir tilgjengelig. "Flytense kasse"-skift krever ikke noen spesiell konfigurasjon eller tillatelse.
 
 ### <a name="single-user"></a>Enkeltbruker
 
@@ -84,7 +84,7 @@ Denne operasjonen er ofte den første operasjonen som utføres et nylig åpnet s
 
 ### <a name="tender-removal"></a>Fjerning av betalingsmidler
 
-*Fjerning av betalingsmidler* er ikke-salgstransaksjoner som utføres i et aktivt skift for å redusere pengebeløpet i kassaskuffen. Denne operasjonen brukes vanligvis sammen med en flytoppføringsoperasjon i et annet skift. Kasse 1 har for eksempel lite vekslepenger, så brukeren på kasse 2 utfører en fjerning av betalingsmidler for å redusere beløpet i kassaskuffen. Brukeren i kasse 1 gjør deretter en flytoppføring for å øke beløpet i hans eller hennes kassaskuff.
+*Fjerning av betalingsmidler* er ikke-salgstransaksjoner som utføres i et aktivt skift for å redusere pengebeløpet i kassaskuffen. Denne operasjonen brukes vanligvis sammen med en flytoppføringsoperasjon i et annet skift. Kasse 1 har for eksempel lite vekslepenger, så brukeren på kasse 2 utfører en fjerning av betalingsmidler for å redusere beløpet i kassaskuffen. Brukeren i kasse 1 gjør deretter en flytoppføring for å øke beløpet i kassaskuffen sin.
 
 ### <a name="suspend-shift"></a>Avbryt skift
 
@@ -154,7 +154,7 @@ Gå til **Retail og Commerce \> Kanaler \> Butikker \> Alle butikker \> Utdrag/a
 
 Dette oppsettet bidrar til at Back Office-utdrag inneholder de samme transaksjonene som skift på salgsstedet, og at dataene blir summert etter dette skiftet.
 
-Hvis du vil ha mer informasjon om utdrag og avslutingsmetoder, kan du se [Butikkonfigurasjoner for detaljhandelsutdrag](https://docs.microsoft.com/dynamics365/unified-operations/retail/tasks/store-configurations-retail-statements).
+Hvis du vil ha mer informasjon om utdrag og avslutingsmetoder, kan du se [Butikkonfigurasjoner for detaljhandelsutdrag](/dynamics365/unified-operations/retail/tasks/store-configurations-retail-statements).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

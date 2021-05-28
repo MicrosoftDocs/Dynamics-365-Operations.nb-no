@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 48427bb52d4e398edba152ff25e28c3625b6a5d3
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 31b9532eea82fd5b88fe59718af7be4d242dc885
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5803591"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027896"
 ---
 # <a name="organize-your-workforce-by-using-departments-jobs-and-positions"></a>Organisere arbeidsstyrken ved hjelp av avdelinger, jobber og stillinger
 
@@ -120,7 +120,7 @@ Når du tilordner en arbeider til en stilling, fyller du denne stillingen. Du ka
 
 Stillinger er viktige elementer i det nederste nivået i et organisasjonshierarki. Du kan angi stillingen en stilling rapporterer til, i stillingsskjemaet. Når du tilordner en arbeider til en stilling som rapporterer til en annen stilling, oppretter du en rapporteringsrelasjon mellom arbeidere som er tilordnet de to stillingene. Stillingen "Regnskapsfører-A" rapporterer for eksempel til stillingen "Regnskapsansvarlig". Kim Akers tilordnes stillingen "Regnskapsansvarlig", og Sanjay Patel tilordnes stillingen "Regnskapsfører-A". Dette betyr at Sanjay Patel rapporterer til Kim Akers. 
 
-Hvis organisasjonen bruker et matrisehierarki eller et annet egendefinert hierarki, kan du konfigurere stillingshierarkityper og deretter legge til rapporteringsrelasjoner i stillinger for hver hierarkitype som du definerer. Lori Penor er for eksempel en daglig leder hos Adventure Works, og tilordnes stillingen "Leder". Lori administrerer utviklingen av et produkt som brukes til å rengjøre noe. Lori trenger en regnskapsfører for å hjelpe til med økonomien for utvikling av produktet. Hun har derfor rekruttert Sanjay Patel som hennes regnskapsfører. Sanjay rapporterer direkte til Kim Akers, men arbeider også sammen med Lori Penor på arbeidet sitt knyttet til Økonomi for å utvikle ryddeverktøyet. 
+Hvis organisasjonen bruker et matrisehierarki eller et annet egendefinert hierarki, kan du konfigurere stillingshierarkityper og deretter legge til rapporteringsrelasjoner i stillinger for hver hierarkitype som du definerer. Lori Penor er for eksempel en daglig leder hos Adventure Works, og tilordnes stillingen "Leder". Lori administrerer utviklingen av et produkt som brukes til å rengjøre noe. Lori trenger en regnskapsfører for å hjelpe til med økonomien for utvikling av produktet. Hun har derfor rekruttert Sanjay Patel som regnskapsfører. Sanjay rapporterer direkte til Kim Akers, men arbeider også sammen med Lori Penor på arbeidet sitt knyttet til Økonomi for å utvikle ryddeverktøyet. 
 
 For det forrige eksemplet ville du fullført følgende oppgaver for å definere relasjonen mellom Sanjay Patel og Lori Penor:
 1.  Opprett en egendefinert stillingshierarkitype kalt "Gjenstand" for å opprette et hierarki som inkluderer stillinger som er ansvarlig for å arbeide med oppryddingsproduktet.
@@ -159,7 +159,7 @@ For noen poster kan du angi fremtidige endringer i posten. Følgende informasjon
 </tbody>
 </table>
 
-Du kan endre informasjonen som er nevnt i den forrige tabellen for en stilling eller en jobb og angi en dato når endringene i stillingen eller jobben skal tre i kraft. En stilling kan for eksempel bare tilordnes én arbeider, men Sanjay Patel, som er tilordnet til stillingen regnskapsfører-A, skal slutte om to uker. Joe Healy erstatter Sanjay Patel når han slutter. Selv om Sanjay fremdeles er tilordnet stillingen sin, kan du tilordne Joe Healy til samme stilling slik at tilordningen bare gjelder etter Sanjays siste dag.
+Du kan endre informasjonen som er nevnt i den forrige tabellen for en stilling eller en jobb og angi en dato når endringene i stillingen eller jobben skal tre i kraft. En stilling kan for eksempel bare tilordnes én arbeider, men Sanjay Patel, som er tilordnet til stillingen regnskapsfører-A, skal slutte om to uker. Joe Healy erstatter Sanjay Patel når Sanjay slutter. Selv om Sanjay fremdeles er tilordnet stillingen sin, kan du tilordne Joe Healy til samme stilling slik at tilordningen bare gjelder etter Sanjays siste dag.
 
 
 

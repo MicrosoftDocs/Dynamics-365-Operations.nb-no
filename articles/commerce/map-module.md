@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: b8c3ab0653fd5e3561d0bfbe85624d912756e2be
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 659211f3a74c38389f991cd2385366d175b0c7c0
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794193"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6020265"
 ---
 # <a name="map-module"></a>Kartmodul
 
@@ -29,7 +29,7 @@ ms.locfileid: "5794193"
 
 Dette emnet dekker kartmoduler og beskriver hvordan du konfigurerer dem i Microsoft Dynamics 365 Commerce.
 
-En kartmodul viser plasseringen av butikker på et interaktivt kart som gjengis ved hjelp av [Bing Maps V8-webkontrollen](https://docs.microsoft.com/bingmaps/v8-web-control/). En API-nøkkel for Bing-kart kreves, og den må legges til på siden Delte parametere for Commerce Headquarters. Kartmoduler gir forskjellige visninger, for eksempel veier, fra luften og på gatenivå, som brukerne kan velge for å vise kartstedene. De tillater også samhandlinger, som å zoome og bruke brukerens plassering.
+En kartmodul viser plasseringen av butikker på et interaktivt kart som gjengis ved hjelp av [Bing Maps V8-webkontrollen](/bingmaps/v8-web-control/). En API-nøkkel for Bing-kart kreves, og den må legges til på siden Delte parametere for Commerce Headquarters. Kartmoduler gir forskjellige visninger, for eksempel veier, fra luften og på gatenivå, som brukerne kan velge for å vise kartstedene. De tillater også samhandlinger, som å zoome og bruke brukerens plassering.
 
 En kartmodul fungerer sammen med butikkvelgermodulen for å bestemme de geografiske lokasjonene til butikkene som må gjengis på et kart. Butikkvelgeren og kartmodulene fungerer sammen når en bruker velger en butikk i en av disse modulene på en områdeside. Kartmoduler kan utvides for andre scenarier, utover samhandling med butikkvelgermoduler. Modultilpassing er imidlertid nødvendig.
 
@@ -76,7 +76,7 @@ Hvis du vil ha detaljert informasjon om hvordan du konfigurerer en kartmodul på
 
 [Behandle Bing-kart for organisasjonen](./dev-itpro/manage-bing-maps.md)
 
-[Bing Maps V8-webkontrollen](https://docs.microsoft.com/bingmaps/v8-web-control/)
+[Bing Maps V8-webkontrollen](/bingmaps/v8-web-control/)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

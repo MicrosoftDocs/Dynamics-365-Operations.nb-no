@@ -1,6 +1,6 @@
 ---
 title: Revaluering av valuta for leverandører og kunder
-description: Endringer i valutakursene kan føre til at den teoretiske verdien (bokført verdi) av åpne kundetransaksjoner i utenlandsk valuta varierer over tid. Denne artikkelen inneholder informasjon om prosessen for revaluering av utenlandsk valuta som du kjører for å oppdatere verdien av åpne transaksjoner i leverandører og kunder.
+description: Dette emnet inneholder informasjon om prosessen for revaluering av utenlandsk valuta som du kjører for å oppdatere verdien av åpne transaksjoner i leverandører og kunder.
 author: kweekley
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0df0ae1aa0e75eb8c64d5ca31fcd3605b5112cdd
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9d4e9a4bfdad4e69b13d7b0324f4978f13d6d295
+ms.sourcegitcommit: c011a2ef66b38e71ddaf003f7d243677bb2707c5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815914"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6026163"
 ---
 # <a name="currency-revaluation-for-accounts-payable-and-accounts-receivable"></a>Revaluering av valuta for leverandører og kunder
 
 [!include [banner](../includes/banner.md)]
 
-Endringer i valutakursene kan føre til at den teoretiske verdien (bokført verdi) av åpne kundetransaksjoner i utenlandsk valuta varierer over tid. Denne artikkelen inneholder informasjon om prosessen for revaluering av utenlandsk valuta som du kjører for å oppdatere verdien av åpne transaksjoner i leverandører og kunder. 
+Endringer i valutakursene kan føre til at den teoretiske verdien (bokført verdi) av åpne kundetransaksjoner i utenlandsk valuta varierer over tid. Dette emnet inneholder informasjon om prosessen for revaluering av utenlandsk valuta som du kjører for å oppdatere verdien av åpne transaksjoner i leverandører og kunder. 
 
 Den teoretiske verdien, eller bokførte verdien, av åpne transaksjoner i utenlandsk valuta varierer over tid på grunn av endringer i valutakursene. Hvis du vil oppdatere verdien av åpne transaksjoner i leverandører og kunder, kan du kjøre prosessen for revaluering av utenlandsk valuta. Revaluering av utenlandsk valuta kan kjøres for både for leverandører og kunder. Prosessen bruker en ny valutakurs til å revaluere de åpne beløpene, eller ikke utlignede beløp, på en bestemt dato. Forskjellen mellom de opprinnelige posterte beløpene og de revaluerte beløpene fører til urealisert fortjeneste eller tap for hver åpen transaksjon. Underfinans for Leverandør og Kunder oppdateres deretter for å gjenspeile urealisert fortjeneste eller tap, og en regnskapspost posteres til økonomimodulen.
 
@@ -55,7 +55,7 @@ En post opprettholdes hver gang du kjører en revaluering av utenlandsk valuta. 
     -   **Postering** – Posteringsprofilen til kundetransaksjonen brukes.
     -   **Velg** – Angi posteringsprofilen i **Posteringsprofil**-feltet.
 -   **Posteringsprofil** – Hvis du velger **Velg** i **Bruk posteringsprofil fra**-feltet, bestemmes posteringsprofilen for transaksjonene for revaluering av utenlandsk valuta av posteringsprofilen i dette feltet.
--   **Finansdimensjoner** – Finansdimensjonene som posteres på regnskapsoppføringene for transaksjonene for revaluering av utenlandsk valuta:
+-   **Finansdimensjoner** – Finansdimensjonene som posteres på regnskapsoppføringene for transaksjonene for revaluering av utenlandsk valuta. Finansdimensjonene valideres ikke mot reglene for kontostrukturen. Kontostrukturen som var på plass da fakturaene ble postert, er kanskje ikke den samme som reglene som var på plass da revalueringen ble fullført. Det er ingen mulighet til å velge bestemte finansdimensjoner i revalueringsprosessen, så kontostrukturvalideringen hoppes over.  
     -   **Ingen** – Ingen finansdimensjoner posteres. Hvis du har en nødvendig finansdimensjon i kontostrukturen, kjøres revalueringsprosessen fremdeles og oppretter regnskapsoppføringer som ikke har noen finansdimensjoner. Du vil få en advarselsmelding først, slik at du kan avbryte revalueringen.
     -   **Tabell** – Finansdimensjonene for kunde- eller leverandørkontoen posteres i transaksjonene for revaluering av utenlandsk valuta.
     -   **Postering** – Finansdimensjonene for transaksjonen som revalueres, posteres i transaksjonene for revaluering av utenlandsk valuta. Som standard brukes finansdimensjonene fra den opprinnelige transaksjonens kunde-/leverandørfinanskonto for revalueringstransaksjonens kunde-/leverandørhovedkonto, og finansdimensjonene fra den opprinnelige transaksjonens finanskonto for utgift/aktiva/omsetning brukes for revalueringstransaksjonens hovedkonto for urealisert tap/vinning.

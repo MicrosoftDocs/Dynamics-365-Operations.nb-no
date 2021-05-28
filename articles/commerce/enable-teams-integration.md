@@ -2,11 +2,9 @@
 title: Aktiver Dynamics 365 Commerce- og Microsoft Teams-integrering
 description: Dette emnet beskriver hvordan du aktiverer Microsoft Dynamics 365 Commerce- og Microsoft Teams-integrering.
 author: gvrmohanreddy
-manager: annbe
 ms.date: 03/31/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: c4d596f27ffe15a97dc04e2ce7e85d21f8e7161f
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: eb0b8b419b302fbd0bc107bca22f8b26774ba3c7
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908401"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6019841"
 ---
 # <a name="enable-dynamics-365-commerce-and-microsoft-teams-integration"></a>Aktiver Dynamics 365 Commerce- og Microsoft Teams-integrering
 
@@ -39,9 +37,9 @@ Før du kan aktivere Microsoft Teams-integrering med Commerce, må du registrere
 
 Følg denne fremgangsmåten for å registrere Teams-programmet med leieren i Azure-portalen.
 
-1. følg trinnene i [Hurtigstart: Registrer en app i Microsoft-identitetsplattformen](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app) for å registrere Teams-appen med leieren i Azure-portalen.
+1. følg trinnene i [Hurtigstart: Registrer en app i Microsoft-identitetsplattformen](/azure/active-directory/develop/quickstart-register-app) for å registrere Teams-appen med leieren i Azure-portalen.
 1. Kopier verdien for **App-ID (klient)** fra **Oversikt**-siden for den registrerte appen. Du bruker denne verdien for å aktivere Teams-integrering i Commerce Headquarters.
-1. Kopier sertifikatverdien som ble angitt da du [la til et sertifikat](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app#add-a-certificate) i trinn 1. Sertifikatet kalles også offentlig nøkkel eller programnøkkel. Du bruker denne verdien for å aktivere Teams-integrering i Commerce Headquarters.
+1. Kopier sertifikatverdien som ble angitt da du [la til et sertifikat](/azure/active-directory/develop/quickstart-register-app#add-a-certificate) i trinn 1. Sertifikatet kalles også offentlig nøkkel eller programnøkkel. Du bruker denne verdien for å aktivere Teams-integrering i Commerce Headquarters.
 
 Følg denne fremgangsmåten for å aktivere Teams-integrering i Commerce Headquarters.
 

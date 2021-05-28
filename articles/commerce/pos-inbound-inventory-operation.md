@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 6efc20de5309bc7ec209a557a4bc12c6a0a42a43
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a14b98cab78896d3a6c2e567cadc1ff9a991a278
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804337"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6018960"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Inngående lageroperasjon i salgsstedet
 
@@ -70,7 +70,7 @@ De satsvise jobbene du oppretter, vil bli brukt til å behandle dokumenter som m
 
 ## <a name="prerequisite-add-inbound-operation-to-the-pos-screen-layout"></a>Forutsetning: Legg til innkommende operasjon i oppsett for POS-skjerm
 
-Før organisasjonen kan bruke funksjonaliteten for innkommende operasjoner, må den konfigurere POS-operasjonen **Innkommende operasjon** på ett eller flere av [POS-skjermoppsettene](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts). Før du distribuerer den nye operasjonen i et produksjonsmiljø, må du kontrollere at du tester den grundig og lære opp brukerne for å bruke den.
+Før organisasjonen kan bruke funksjonaliteten for innkommende operasjoner, må den konfigurere POS-operasjonen **Innkommende operasjon** på ett eller flere av [POS-skjermoppsettene](/dynamics365/unified-operations/retail/pos-screen-layouts). Før du distribuerer den nye operasjonen i et produksjonsmiljø, må du kontrollere at du tester den grundig og lære opp brukerne for å bruke den.
 
 ## <a name="overview"></a>Oversikt
 
@@ -159,9 +159,9 @@ I Commerce versjon 10.0.14 og senere kan brukere motta et produkt som ikke oppri
 
 Denne funksjonen fungerer bare for bestillingsmottak. Det er ikke mulig å motta varer mot overføringsordrer når varene ikke tidligere ble bestilt og sendt fra det utgående lageret.
 
-Brukere kan ikke legge til nye produkter i bestillingen under mottak til salgsstedet hvis [arbeidsflyt for endringsadministrasjon](https://docs.microsoft.com/dynamics365/supply-chain/procurement/purchase-order-approval-confirmation) for bestillingen er aktivert i Commerce Headquarters. Hvis du vil aktivere endringsadministrasjon, må alle endringer i en bestilling først godkjennes før mottaket tillates. Fordi denne prosessen gjør det mulig for en mottaker å legge til nye linjer i bestillingen, vil mottak mislykkes hvis arbeidsflyt for endringsadministrasjon aktiveres. Hvis endringsadministrasjon aktiveres for alle bestillinger eller for leverandøren som er koblet til bestillingen som er aktiv på salgsstedet, kan ikke brukeren legge til nye produkter i bestillingen under mottak til salgsstedet.
+Brukere kan ikke legge til nye produkter i bestillingen under mottak til salgsstedet hvis [arbeidsflyt for endringsadministrasjon](../supply-chain/procurement/purchase-order-approval-confirmation.md) for bestillingen er aktivert i Commerce Headquarters. Hvis du vil aktivere endringsadministrasjon, må alle endringer i en bestilling først godkjennes før mottaket tillates. Fordi denne prosessen gjør det mulig for en mottaker å legge til nye linjer i bestillingen, vil mottak mislykkes hvis arbeidsflyt for endringsadministrasjon aktiveres. Hvis endringsadministrasjon aktiveres for alle bestillinger eller for leverandøren som er koblet til bestillingen som er aktiv på salgsstedet, kan ikke brukeren legge til nye produkter i bestillingen under mottak til salgsstedet.
 
-Funksjonaliteten som gjør det mulig å legge til linjer, kan ikke brukes som en midlertidig løsning for å motta flere produktvolumer som allerede finnes i bestillingen. Overmottak styres gjennom standardinnstillinger for [overmottak](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation#over-receiving-validations) for produktlinjen på bestillingen.
+Funksjonaliteten som gjør det mulig å legge til linjer, kan ikke brukes som en midlertidig løsning for å motta flere produktvolumer som allerede finnes i bestillingen. Overmottak styres gjennom standardinnstillinger for [overmottak](#over-receiving-validations) for produktlinjen på bestillingen.
 
 Hvis valget for å **legge til linjer i bestillingen ved mottak til salgsstedet** er aktivert og en bruker mottar med **Innkommende operasjon** på salgsstedet, og hvis brukeren skanner eller taster en produktstrekkode eller et produktnummer som ikke gjenkjennes som en vare på gjeldende bestilling, men blir gjenkjent som en gyldig vare, mottar brukeren en melding om å legge til varen i bestillingen. Hvis brukeren legger til varen i bestillingen, regnes antallet som er angitt i **Mottar nå**, som det bestilte antallet for bestillingslinjen.
 

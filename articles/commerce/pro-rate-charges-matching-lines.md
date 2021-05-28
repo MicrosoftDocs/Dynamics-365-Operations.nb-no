@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 22939e8fd63a355effecf0c16fecd20377faa3a6
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c36948cc58291b56c1bbe8a3d5c3db52dccc8399
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791060"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6018612"
 ---
 # <a name="prorate-header-charges-to-matching-sales-lines"></a>Fordele hodegebyrer til samsvarende salgslinjer
 
@@ -30,7 +30,7 @@ ms.locfileid: "5791060"
 
 Dette emnet beskriver funksjonen for å gruppere automatiske gebyrer på hodenivå og fordele dem proporsjonalt til handelslinjer. Denne funksjonen er tilgjengelig for transaksjoner som opprettes ved salgsstedet (POS) i Retail-versjon 10.0.1 og salg som er opprettet i et telefonsenter i Retail-versjon 10.0.2.
 
-Denne funksjonen er tilgjengelig bare hvis funksjonen [avanserte automatiske tillegg](https://docs.microsoft.com/dynamics365/unified-operations/retail/omni-auto-charges) er aktivert ved hjelp av alternativet på **Handelsparametere**-siden. I tillegg kan utvidet beregningsmetode for automatiske gebyrer bare brukes på salgsordrer som er opprettet ved hjelp av handelskanaler (salgsstedet, et telefonsenter og e-handelsplattformen til Dynamics).
+Denne funksjonen er tilgjengelig bare hvis funksjonen [avanserte automatiske tillegg](/dynamics365/unified-operations/retail/omni-auto-charges) er aktivert ved hjelp av alternativet på **Handelsparametere**-siden. I tillegg kan utvidet beregningsmetode for automatiske gebyrer bare brukes på salgsordrer som er opprettet ved hjelp av handelskanaler (salgsstedet, et telefonsenter og e-handelsplattformen til Dynamics).
 
 Den nye funksjonaliteten gir organisasjoner større fleksibilitet i måten automatiske gebyrer på hodenivå beregnes og brukes på salgstransaksjoner.
 
@@ -38,7 +38,7 @@ I versjoner av appen som er eldre enn versjon 10.0.1, beregnes automatiske gebyr
 
 For eksempel er automatiske gebyrer på hodenivå definert for leveringsmåten **99** og leveringsmåten **11**. Det opprettes en salgsordre, og leveringsmåten **99** er definert i ordrehodet. Men noen av linjene for salg er satt opp slik at de er sendt ved hjelp av leveringsmåten **11**. I dette tilfellet er det bare gebyrer på hodenivå som er knyttet til leveringsmåten **99**, som blir tatt hensyn til og brukt på salgsordren.
 
-I Commerce har gebyrer på hodenivå en tilleggsfunksjon som lar deg definere en [konfigurasjon av fordelt tillegg](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery) som er basert på ordreverdien. Hvis orderverdien er mellom USD 50,00 og USD 200,00, kan en organisasjon for eksempel belaste et fraktgebyr på USD 5,00. Hvis orderverdien er mellom USD 200,01 og USD 500,00, kan imidlertid fraktkostnadene være USD 4,00.
+I Commerce har gebyrer på hodenivå en tilleggsfunksjon som lar deg definere en [konfigurasjon av fordelt tillegg](/dynamics365/unified-operations/retail/configure-call-center-delivery) som er basert på ordreverdien. Hvis orderverdien er mellom USD 50,00 og USD 200,00, kan en organisasjon for eksempel belaste et fraktgebyr på USD 5,00. Hvis orderverdien er mellom USD 200,01 og USD 500,00, kan imidlertid fraktkostnadene være USD 4,00.
 
 Noen organisasjoner ønsker fordelene med beregningen av fordelte tillegg som følger med gebyrer på hodenivå. I scenarioer med blandede leveringsmåter vil de også være sikre på at tilleggene som er beregnet, er basert på treff med leveringsmåten som er definert på hver salgslinje.
 
@@ -72,7 +72,7 @@ Det opprettes en salgsordre i telefonsenteret, og leveringsmåten settes til **9
 
 I dette scenarioet evalueres hele ordren mot tabellen for automatisk tillegg for leveringsmåten **99**. Hele totalen for alle salgslinjer brukes til å finne et samsvarende nivå i konfigurasjonen for automatisk tillegg, og dette tillegget brukes på ordrehodenivå. I dette eksemplet er ordretotalen USD 165,00, og frakttillegget på USD 15,00 brukes på ordrehodet. Automatiske tillegg som er konfigurert for leveringsmåten **11**, er aldri referert til eller brukt.
 
-I dette scenarioet, hvis en kunde returnerer noen av varene i ordren, og hvis [tilleggskoden er konfigurert slik at den blir refundert](https://docs.microsoft.com/dynamics365/unified-operations/retail/omni-auto-charges#setup-and-configuration-2), blir totalt hodenivåtillegg systematisk brukt til refunderingen, selv om bare noen av varene returneres.
+I dette scenarioet, hvis en kunde returnerer noen av varene i ordren, og hvis [tilleggskoden er konfigurert slik at den blir refundert](/dynamics365/unified-operations/retail/omni-auto-charges#setup-and-configuration-2), blir totalt hodenivåtillegg systematisk brukt til refunderingen, selv om bare noen av varene returneres.
 
 ### <a name="scenario-2"></a>Scenario 2
 

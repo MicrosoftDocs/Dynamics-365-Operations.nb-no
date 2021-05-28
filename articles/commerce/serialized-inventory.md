@@ -13,12 +13,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-08-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 45376e43c00116d403f00c58772aefba6fa33eeb
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: fbd1d9c71ece77cbf4c6ecb741eb6d5e3e3455d9
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794025"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6028161"
 ---
 # <a name="point-of-sale-pos-improvements-for-serialized-products"></a>Salgsstedsforbedringer for serialiserte produkter
 
@@ -30,7 +30,7 @@ Basert på innstillingene i Commerce-hovedkontoret kan produktene klassifiseres 
 
 ## <a name="pos-improvements"></a>POS-forbedringer
 
-- **Serienummer er ikke påkrevd før i kassen** – Tidligere måtte en kasserer som la et serialisert produkt til transaksjonen oppgi et serienummer. Dette kravet ble et problem i kundescenarier, hvis kasserere og salgsforbindelser hadde mulighet til å selge produkter. Frem til betalingstrinnet ble produktene ofte oppdatert i handlekurven. Hver gang en kasserer la til et nytt produkt, ba systemet derfor om å få serienummeret. Dialogboksen for serienummer har nå en **Legg til senere**-knapp. Derfor kan salgsorganisasjonen legge til et element til transaksjonen, men kan oppgi serienummeret senere. Salgsorganisasjonen kan raskt legge til og erstatte serialiserte produkter i handlekurven, og deretter gi serienummer rett før utsjekking. Hvis serienummeret ikke er oppgitt for et serialisert produkt, vil en kasserer motta en feilmelding når den prøver å fullføre transaksjonen. Disse meldingene forteller at kassereren må gi de manglende serienumrene før han eller hun kan fortsette.
+- **Serienummer er ikke påkrevd før i kassen** – Tidligere måtte en kasserer som la et serialisert produkt til transaksjonen oppgi et serienummer. Dette kravet ble et problem i kundescenarier, hvis kasserere og salgsforbindelser hadde mulighet til å selge produkter. Frem til betalingstrinnet ble produktene ofte oppdatert i handlekurven. Hver gang en kasserer la til et nytt produkt, ba systemet derfor kassereren om å få serienummeret. Dialogboksen for serienummer har nå en **Legg til senere**-knapp. Derfor kan salgsorganisasjonen legge til et element til transaksjonen, men kan oppgi serienummeret senere. Salgsorganisasjonen kan raskt legge til og erstatte serialiserte produkter i handlekurven, og deretter gi serienummer rett før utsjekking. Hvis serienummeret ikke er oppgitt for et serialisert produkt, vil en kasserer motta en feilmelding når den prøver å fullføre transaksjonen. Disse meldingene forteller at kassereren må gi de manglende serienumrene før vedkommende kan fortsette.
 
     For hvert serialisert element der man hoppet over serienummeret, vises en kommentar under transaksjonslinjen. Kommentaren forteller at serienummer ikke er oppgitt for denne artikkelen. Derfor kan kassereren raskt finne produkter som mangler serienummer.
 

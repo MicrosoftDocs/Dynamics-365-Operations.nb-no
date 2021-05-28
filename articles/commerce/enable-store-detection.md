@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 71e523cab20281d5db7efff40b5ef4f7293a4765
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 3e26c3130914ebef5a63b79c477d7d5846fd5b71
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799137"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027606"
 ---
 # <a name="enable-location-based-store-detection"></a>Aktivere stedsbasert butikkregistrering
 
@@ -31,7 +31,7 @@ Med stedsbasert butikkregistrering i Commerce kan du gi relevant områdeinnhold 
 
 ## <a name="privacy-notice"></a>Personvernerklæring
 
-Hvis du aktiverer den stedsbaserte butikkregistreringsfunksjonen, sendes informasjon fra kundens webleser til en Microsoft-stedstjeneste. Denne informasjonen brukes deretter til å angi kundeinnholdet som er relevant for hans eller hennes lokasjon. Både informasjon som sendes fra kundens webleser, og den stedsbaserte informasjonen som returneres til kunden, er underlagt retningslinjer for personvern og informasjonskapsler.
+Hvis du aktiverer den stedsbaserte butikkregistreringsfunksjonen, sendes informasjon fra kundens webleser til en Microsoft-stedstjeneste. Denne informasjonen brukes deretter til å angi kundeinnholdet som er relevant for kundens lokasjon. Både informasjon som sendes fra kundens webleser, og den stedsbaserte informasjonen som returneres til kunden, er underlagt retningslinjer for personvern og informasjonskapsler.
 
 ## <a name="turn-on-location-based-store-detection"></a>Aktivere stedsbasert butikkregistrering
 

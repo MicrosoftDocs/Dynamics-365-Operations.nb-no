@@ -5,7 +5,6 @@ author: kailiang
 ms.date: 04/20/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: d1b99046b0e439c9dadbb240050e270a7b2a6914
-ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
+ms.openlocfilehash: 3a5c2b6fb48d98ba045c77ed034d976f7d89af98
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5920961"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6021375"
 ---
 # <a name="tax-feature-support-for-transfer-orders"></a>Støtte for avgiftsfunksjon for overføringsordrer
 
@@ -41,7 +40,7 @@ Følg denne fremgangsmåten for å definere avgiften som er involvert i en overf
 
 1. På siden **Avgiftsfunksjoner**, på **Versjoner**-fanen velger du utkastfunksjonsversjonen, og deretter velger du **Rediger**.
 
-    ![Valg av Rediger](../media/image1.png)
+    ![Valg av Rediger](../media/tax-feature-support-01.png)
 
 2. På siden **Oppsett av avgiftsfunksjoner**, på fanen **Avgiftskoder**, velger du **Legg til** for å opprette nye avgiftskoder. For dette eksemplet opprettes det tre avgiftskoder: **NL-Exempt**, **BE-RC-21** og **BE-RC+21**.
 
@@ -54,7 +53,7 @@ Følg denne fremgangsmåten for å definere avgiften som er involvert i en overf
         4. Velg **Legg til** i **Sats**-tabellen.
         5. Bytt **Er Fritak** til **Ja** i **Generelt**-delen.
 
-        ![Avgiftskoden NL-Exempt](../media/image2.png)
+        ![Avgiftskoden NL-Exempt](../media/tax-feature-support-02.png)
 
     - Når en overføringsordre mottas ved et lager i Belgia, brukes mekanismen for snudd avregning ved hjelp av avgiftskodene **BE-RC-21** og **BE-RC+21**.
         
@@ -67,7 +66,7 @@ Følg denne fremgangsmåten for å definere avgiften som er involvert i en overf
         6. Bytt **Er Snudd avregning** til **Ja** i **Generelt**-delen.
         7. Velg **Lagre**.
 
-        ![BE-RC-21-avgiftskoden for snudd avregning](../media/image3.png)
+        ![BE-RC-21-avgiftskoden for snudd avregning](../media/tax-feature-support-03.png)
         
         Opprett avgiftskoden **BE-RC+21**.
         1. Velg **Legg til**, angi **BE-RC-21** i feltet **Mva-kode**.
@@ -77,7 +76,7 @@ Følg denne fremgangsmåten for å definere avgiften som er involvert i en overf
         5. Angi **21** i **Avgiftssats**-feltet.
         6. Velg **Lagre**.
 
-        ![BE-RC+21-avgiftskoden for snudd avregning](../media/image4.png)
+        ![BE-RC+21-avgiftskoden for snudd avregning](../media/tax-feature-support-04.png)
 
 3. Definer relevansen for avgiftskodene.
 

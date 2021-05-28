@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-14
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: d6e8f63ef00f714109ae650d3cedaf19e5159325
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a9642bd21ffc0770be61677220e0e72986586047
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818758"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6028209"
 ---
 # <a name="results-of-machine-learning-models-preview"></a>Resultat av maskinlæringsmodeller (forhåndsversjon)
 
@@ -63,8 +63,8 @@ Du kan begynne å svare på dette spørsmålet ved å vurdere nøyaktigheten til
 
 Et annet aspekt er også verdt å merke seg. Tenk deg et scenario der en medisinsk test brukes til å oppdage en sykdom i en pasient. Dette problemet er av typen binær klassifisering, der et positivt resultat angir at pasienten har sykdommen. I dette scenarioet må du tenke på virkningen av følgende feil:
 
-- Falske positive, der testen angir at en pasient har sykdommen, men egentlig ikke har den
-- Falske negative, der testen angir at en pasient ikke har sykdommen, men egentlig har den
+- Falske positive, der testen angir at en pasient har sykdommen, men vedkommende egentlig ikke har den.
+- Falske negative, der testen angir at en pasient ikke har sykdommen, men vedkommende egentlig har den.
 
 Begge typer feil er selvsagt uønsket, men hvilken er verst? Det kommer igjen an på konteksten. Hvis det er snakk om en livstruende sykdom som må behandles raskt, prioriteres minimering av falske negative (forhåpentlig etterfulgt av flere tester). I andre mindre kritiske situasjoner kan de som laget modellen, kanskje fokusere på å minimere falske positive i stedet. En rimelig konklusjon er i alle fall at for å kunne effektivt fastsette kvaliteten til en modell, må du har mer informasjon enn det en nøyaktige måleverdi gir.
 

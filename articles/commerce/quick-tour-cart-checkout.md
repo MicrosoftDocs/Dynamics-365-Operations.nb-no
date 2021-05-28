@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d0b5a74a9880a5cabfdbc124f557998540c94a4d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a574494784e9a534307cceff584e047d870dc401
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792249"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027945"
 ---
 # <a name="cart-and-checkout-pages-overview"></a>Oversikt over sider for handlekurv og kasse
 
@@ -83,7 +83,7 @@ Kunden kan fullføre utsjekkingsprosessen som en gjestebruker eller som en pålo
 
 ### <a name="order-summary"></a>Ordresammendrag
 
-Utsjekkingen viser et sammendrag av linjevarene i handlekurven, slik at kunden kan kontrollere ordren før han eller hun utfører den. Linjeelementene kan ikke redigeres i løpet av utsjekkingsflyten. En kobling til handlekurven vises imidlertid i tilfelle brukeren ønsker å gå tilbake og redigere linjeelementer.
+Utsjekkingen viser et sammendrag av linjevarene i handlekurven, slik at kunden kan kontrollere ordren før han eller hun plasserer ordren. Linjeelementene kan ikke redigeres i løpet av utsjekkingsflyten. En kobling til handlekurven vises imidlertid i tilfelle brukeren ønsker å gå tilbake og redigere linjeelementer.
 
 Etter at kunden har gitt leverings- og faktureringsinformasjon, viser ordresammendraget beløpet som forfaller etter fordelspoeng, gavekort og andre betalinger er brukt.
 

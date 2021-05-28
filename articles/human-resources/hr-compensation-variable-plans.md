@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 874d879c04e6b16889ca6900962394036278ba10
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: ab5e0db339615ad9c434e3e65b6f04ff9fb4cc25
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800885"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027776"
 ---
 # <a name="create-variable-compensation-plans"></a>Opprette variable kompensasjonsplaner
 
@@ -38,7 +38,7 @@ Beregningen av variable kompensasjonsbeløp for de ansatte kan baseres på flere
 
 ### <a name="describe-vesting-rules"></a>Beskrive overdragelsesregler
 
-Firmaer kan eventuelt også definere **overdragelsesregler**. Overdragelsesregler beskriver hvordan den variable bonusen skal fordeles over tid. En overdragelsesregel kan for eksempel angi at ansatt vil motta 25 prosent av hans eller hennes totale belønning hvert år i de neste fire årene. Overdragelsesregler er kun til informasjon.
+Firmaer kan eventuelt også definere **overdragelsesregler**. Overdragelsesregler beskriver hvordan den variable bonusen skal fordeles over tid. En overdragelsesregel kan for eksempel angi at ansatt vil motta 25 prosent av den totale belønning hvert år i de neste fire årene. Overdragelsesregler er kun til informasjon.
 
 ## <a name="variable-compensation-plans"></a>Variable kompensasjonsplaner
 Den **variable kompensasjonsplanen** inneholder reglene, beregningsmetodene og standardverdiene for beregningen av variabel kompensasjon for ansatte som er registrert. Når du oppretter en variabel kompensasjonsplan, må du angi den variable kompensasjonstypen. Den variable kompensasjonstypen bestemmer om systemet beregner et valutabeløp eller antall enheter som bonusen. Du må også angi beregningsmetoden:
@@ -49,7 +49,7 @@ Den **variable kompensasjonsplanen** inneholder reglene, beregningsmetodene og s
 Beløpet i den variable belønningen kan være basert på en prosent av den ansattes vanlige grunnlagsinntekt eller et angitt antall enheter.
 
 -   Velg alternativet **Prosent av grunnlag** for å angi en standardprosent, og angi om grunnlaget skal være den ansattes faste lønnssats eller kontrollpunktet for den ansattes kompensasjonsnivå. Kompensasjonsnivået er angitt på den ansattes jobb. Ett av referansepunktene fra kompensasjonsstrukturen kan angis som kontrollpunktet på den faste kompensasjonsplanen. Systemet bruker kompensasjonsnivået fra den ansattes jobb og kryssrefererer det med kontrollpunktet som er oppført i den ansattes faste kompensasjonsplan, for å finne kontrollpunktbeløpet for den ansattes kompensasjonsnivå. Kontrollpunktbeløpet brukes deretter som grunnlaget for belønningen i stedet for den ansattes faste lønnssats.
--   Velg alternativet **Antall enheter** for å angi et standard antall enheter, verdien til hver enhet og valutaen for enhetsverdien hvis kompensasjonsplanen gjelder en ikke-monetær belønning (for eksempel 200 enheter av beholdning med en verdi på NOK 400), eller bare antallet enheter hvis kompensasjonsplanen gjelder en kontantbelønning. Når det gjelder en kontantbelønning, får den ansatte det angitte antallet enheter av valutaen som brukes i hans eller hennes faste kompensasjonsplan (for eksempel 500 enheter på NOK 10). Kontrollen for én-til-én-relasjon kan brukes til å angi om det er en direkte én-til-én-tilordning mellom antallet enheter og enhetsverdien. Når du oppretter en variabel kompensasjonsplan for en kontantbasert plan ved hjelp av antallet enheter, låses dette alternativet automatisk til **Ja**, og enhetsverdien er **10,0000**.
+-   Velg alternativet **Antall enheter** for å angi et standard antall enheter, verdien til hver enhet og valutaen for enhetsverdien hvis kompensasjonsplanen gjelder en ikke-monetær belønning (for eksempel 200 enheter av beholdning med en verdi på NOK 400), eller bare antallet enheter hvis kompensasjonsplanen gjelder en kontantbelønning. Når det gjelder en kontantbelønning, får den ansatte det angitte antallet enheter av valutaen som brukes for den faste kompensasjonsplan (for eksempel 500 enheter på USD 1). Kontrollen for én-til-én-relasjon kan brukes til å angi om det er en direkte én-til-én-tilordning mellom antallet enheter og enhetsverdien. Når du oppretter en variabel kompensasjonsplan for en kontantbasert plan ved hjelp av antallet enheter, låses dette alternativet automatisk til **Ja**, og enhetsverdien er **10,0000**.
 
 Innstillingen for **Ansettelsesregel** lar deg angi om alle de ansatte skal få den samme økningen, uavhengig av ansettelsesdatoen (**Ansettelsesregel** = **Ingen**), eller om ansatte skal få en prosent av belønningen som er basert på hvor lenge de har vært ansatt, i syklusen (**Ansettelsesregel** = **Prosent**). 
 

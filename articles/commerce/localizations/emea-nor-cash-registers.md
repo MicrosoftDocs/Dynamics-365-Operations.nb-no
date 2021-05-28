@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Application update 4
-ms.openlocfilehash: ae681841442e79c7515a3f06fab674081ba096d0
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 1862b78dc47136732c27e70611edfb65ef81fe73
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798805"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6020275"
 ---
 # <a name="cash-register-functionality-for-norway"></a>Kassefunksjoner for Norge
 
@@ -109,7 +109,7 @@ Revisjonsfilen kan eksporteres for følgende scenarioer:
 
 Du kan også sende en rapport fra en juridisk enhet på vegne av en annen juridisk enhet. I så fall må du kjøre eksporten fra den operative juridiske enheten og angi den rapporterende juridiske enheten som avsender av rapporten.
 
-SAF-T-kasseformatet er implementert i Hovedkontor ved hjelp av [Elektronisk rapportering](../../dev-itpro/analytics/general-electronic-reporting.md). 
+SAF-T-kasseformatet er implementert i Hovedkontor ved hjelp av [Elektronisk rapportering](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md). 
 
 ## <a name="setting-up-commerce-for-norway"></a>Konfigurere Handel for Norge
 
@@ -131,7 +131,7 @@ I tillegg angir du organisasjonsnummeret i **Registreringsnummer**-feltet i hurt
 ### <a name="set-up-value-added-tax-vat-per-norwegian-requirements"></a>Definere merverdiavgift (mva) i henhold til norske krav
 
 
-Du må opprette mva-koder, mva-grupper og mva-grupper for varer. Du må også definere mva-informasjon for produkter og tjenester. Hvis du vil ha mer informasjon om hvordan du definerer og bruker mva, kan du se [Oversikt over merverdiavgift](../../financials/general-ledger/indirect-taxes-overview.md).
+Du må opprette mva-koder, mva-grupper og mva-grupper for varer. Du må også definere mva-informasjon for produkter og tjenester. Hvis du vil ha mer informasjon om hvordan du definerer og bruker mva, kan du se [Oversikt over merverdiavgift](../../finance/general-ledger/indirect-taxes-overview.md).
 
 Du må også angi mva-grupper og aktiverer alternativet **Priser inkluderer merverdiavgift** for butikker som finnes i Norge.
 
@@ -200,7 +200,7 @@ Hvis du vil ha mer informasjon om hvordan du arbeider med kvitteringsformater, k
 
 ### <a name="configure-the-saf-t-cash-register-export-format"></a>Konfigurere formatet for eksport av SAF-T-kasse
 
-Konfigurasjon av SAF-T-kasse er tilgjengelig for nedlasting fra Microsoft Dynamics Lifecycle Services (LCS). Hvis du vil ha mer informasjon, kan du se [Importere elektroniske rapporteringskonfigurasjoner](../../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md). Du må laste ned følgende konfigurasjoner:
+Konfigurasjon av SAF-T-kasse er tilgjengelig for nedlasting fra Microsoft Dynamics Lifecycle Services (LCS). Hvis du vil ha mer informasjon, kan du se [Importere elektroniske rapporteringskonfigurasjoner](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md). Du må laste ned følgende konfigurasjoner:
 
 - **Data for detaljhandelskanal.versjon.1** – Datamodellkonfigurasjonen.
 - **Data for DMM Retail-kanal versjon 1.12** – Konfigurasjonen av datamodelltilordningen.

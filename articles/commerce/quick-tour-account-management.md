@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: dc4ae56be1740f0160b4e4777f8db93a6bc4e704
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c61686615495ac64efccf84c697e0e1d594dcaf9
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792273"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027969"
 ---
 # <a name="account-management-pages-overview"></a>Oversikt over kontobehandlingssider
 
@@ -47,7 +47,7 @@ Illustrasjonen nedenfor viser et eksempel på en **Min profil**-side som ble byg
 
 ### <a name="addresses-page"></a>Siden Adresser
 
-Siden **Adresser** lar kunden legge til adresser på hans eller hennes konto. Den viser også en liste over adresser som kunden tidligere har lagt til eller lagret for kontoen. Disse adressene er adresser som kunden har angitt enten på denne siden eller når de legger inn en ordre.
+Siden **Adresser** lar kunden legge til adresser på kontoen sin. Den viser også en liste over adresser som kunden tidligere har lagt til eller lagret for kontoen. Disse adressene er adresser som kunden har angitt enten på denne siden eller når de legger inn en ordre.
 
 Illustrasjonen nedenfor viser et eksempel på siden **Adresser**.
 
@@ -75,7 +75,7 @@ Illustrasjonen nedenfor viser et eksempel på en **Fordelsprogram**-side.
 
 ### <a name="wishlist-page"></a>Ønskelisteside
 
-**Ønskeliste**-siden viser en liste over varene som kunden har lagt til hans eller hennes ønskeliste. Både produkter og produktvarianter kan legges til i ønskelisten. Fra denne siden kan kunden fjerne en vare fra ønskelisten eller legge til en vare direkte i handlekurven.
+**Ønskeliste**-siden viser en liste over varene som kunden har lagt til ønskelisten. Både produkter og produktvarianter kan legges til i ønskelisten. Fra denne siden kan kunden fjerne en vare fra ønskelisten eller legge til en vare direkte i handlekurven.
 
 Illustrasjonen nedenfor viser et eksempel på en **Ønskeliste**-side.
 

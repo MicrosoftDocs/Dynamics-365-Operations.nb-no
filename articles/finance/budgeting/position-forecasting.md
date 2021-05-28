@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 03a195c725854eff1fe6d6fa20bb815673e2e307
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d3ff7ac15a64196d7839177ded5515386184e268
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5827349"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6028233"
 ---
 # <a name="position-forecasting"></a>Stillingsprognose
 
@@ -67,9 +67,9 @@ Jodis organisasjon tilbyr en opplæringsrabatten på 5 prosent av den ansattes g
 
 Jodi vil ikke at prosjektledere skal endre beløpet for fordelen. Derfor velger hun **Ikke tillat kostnadsendringer** i feltet **Overstyring av prognosestilling**. Organisasjonen vil at denne kostnaden skal tilordnes jevnt til hver måned. Derfor velger Jodi **Kvartalsvis** i **Tildelingsmetode**-feltet. 
 
-Deretter legger Jodi til en kostnadsberegningslinje, angir datoene og en hovedkontoen og angir **5,00** som prosent. Organisasjonen har et lokk på 5 000 i året for denne fordelen. Jodi angir derfor dette beløpet som årlig grense. 
+Deretter legger Jodi til en kostnadsberegningslinje, angir datoene og en hovedkontoen og angir **5,00** som prosent. Organisasjonen har en grense på USD 5 000 i året for denne fordelen. Jodi angir derfor dette beløpet som årlig grense. 
 
-Til slutt legger Jodi til alle inntjeningskostnadselementer som brukes for grunnlønn som beregningsgrunnlag. Hennes budsjettkostnadselement er nå klart til å brukes.
+Til slutt legger Jodi til alle inntjeningskostnadselementer som brukes for grunnlønn som beregningsgrunnlag. Budsjettkostnadselement er nå klart til å brukes.
 
 ### <a name="compensation-groups"></a>Kompensasjonsgrupper
 
@@ -137,7 +137,7 @@ Budsjettkostnadselementlinjene må omberegnes når FTE-verdien endres for progno
 
 **Eksempel** 
 
-Organisasjonen vurderer to alternativer for å redusere kostnadene for en regnskapsførerstilling. Ett alternativ er å avslutte stillingen delvis gjennom året. Det andre alternativet er å endre stillingen til halvtid for hele året. Brad har opprettet en prognosestilling for den eksisterende regnskapsførerstillingen i et grunnscenario. Han kopierer denne grunnleggende prognosestillingen til scenario A, angir avgangsdatoen til 31. mai og beregner på nytt. Brad overfører deretter den grunnleggende prognosestillingen til scenario B, endrer FTE-verdien til **0,50**, og beregner på nytt. Brad har nå tre versjoner, der hver har kostnadstotaler som er justert etter alternativene.
+Organisasjonen vurderer to alternativer for å redusere kostnadene for en regnskapsførerstilling. Ett alternativ er å avslutte stillingen delvis gjennom året. Det andre alternativet er å endre stillingen til halvtid for hele året. Brad har opprettet en prognosestilling for den eksisterende regnskapsførerstillingen i et grunnscenario. Brad kopierer denne grunnleggende prognosestillingen til scenario A, angir avgangsdatoen til 31. mai og beregner på nytt. Brad overfører deretter den grunnleggende prognosestillingen til scenario B, endrer FTE-verdien til **0,50**, og beregner på nytt. Brad har nå tre versjoner, der hver har kostnadstotaler som er justert etter alternativene.
 
 #### <a name="assigning-a-compensation-group"></a>Tilordne en kompensasjonsgruppe
 

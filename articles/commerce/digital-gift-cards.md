@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: bd93744cf947dcc343d2b31d3d52b2b748c062a9
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 212f425dc3603f838ce030d9ed86f2e418bef29a
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792877"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6019939"
 ---
 # <a name="e-commerce-digital-gift-cards"></a>Digitale gavekort for e-handel
 
@@ -51,12 +51,12 @@ Digitale gavekortprodukter konfigureres i Commerce Headquarters. Prosessen ligne
 
     ![Gavekortproduktfelt i Commerce headquarters](./media/PostGiftcard.png)
 
-- Hvis et gavekort må ha støtte for flere forhåndsdefinerte beløp (for eksempel $25, $50 og $100), må dimensjonen **Størrelse** brukes til å definere disse forhåndsdefinerte beløpene. Hvert forhåndsdefinerte beløp er en variant. Hvis du vil ha mer informasjon, kan du se [Produktdimensjoner](https://docs.microsoft.com/dynamics365/supply-chain/pim/product-dimensions?toc=/dynamics365/retail/toc.json).
+- Hvis et gavekort må ha støtte for flere forhåndsdefinerte beløp (for eksempel $25, $50 og $100), må dimensjonen **Størrelse** brukes til å definere disse forhåndsdefinerte beløpene. Hvert forhåndsdefinerte beløp er en variant. Hvis du vil ha mer informasjon, kan du se [Produktdimensjoner](../supply-chain/pim/product-dimensions.md?toc=%2fdynamics365%2fretail%2ftoc.json).
 - Hvis kunder må kunne angi et egendefinert beløp for et gavekort, må du først definere en variant som gir rom for et egendefinert beløp. Deretter åpner du produktet fra siden **Frigitte produkter i kategori**, og deretter, i hurtigfanen **Commerce**, angir du feltet **Tast inn pris** til **Må taste inn ny pris**, som vist i illustrasjonen nedenfor. Denne innstillingen sikrer at kunder kan angi en pris når de blar gjennom produktet på en PDP.
 
     ![Tast inn pris-feltet i Commerce Headquarters](./media/KeyInPrice.png)
 
-- Leveringsmåten for et digitalt gavekort må settes til **Elektronisk**. På **Leveringsmåter**-siden (**Retail og Commerce \> Kanaloppsett \> Leveringsmåter**) velger du leveringsmåten **Elektronisk** i listeruten, og deretter legger du til det digitale gavekortproduktet i rutenettet i hurtigfanen **Produkter**, som vist i illustrasjonen nedenfor. Hvis du vil ha mer informasjon, kan du se [Definere leveringsmåter](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
+- Leveringsmåten for et digitalt gavekort må settes til **Elektronisk**. På **Leveringsmåter**-siden (**Retail og Commerce \> Kanaloppsett \> Leveringsmåter**) velger du leveringsmåten **Elektronisk** i listeruten, og deretter legger du til det digitale gavekortproduktet i rutenettet i hurtigfanen **Produkter**, som vist i illustrasjonen nedenfor. Hvis du vil ha mer informasjon, kan du se [Definere leveringsmåter](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
 
     ![Digitale gavekortprodukter på siden Leveringsmåte i Commerce Headquarters](./media/ElectronicMode.PNG)
 
@@ -89,9 +89,9 @@ Følg denne fremgangsmåten for å konfigurere et egendefinert beløp for et dig
 
 [Opprette et nytt produkt i Commerce](create-new-product-commerce.md)
 
-[Definer leveringsmåter](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
+[Definer leveringsmåter](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
 
-[Produktdimensjoner](https://docs.microsoft.com/dynamics365/supply-chain/pim/product-dimensions?toc=/dynamics365/retail/toc.json)
+[Produktdimensjoner](../supply-chain/pim/product-dimensions.md?toc=%2fdynamics365%2fretail%2ftoc.json)
 
 [Definere en profil for e-postvarsling](email-notification-profiles.md)
 

@@ -2,11 +2,9 @@
 title: Konfigurere Azure Active Directory-godkjenning for salgsstedspålogging
 description: Dette emnet beskriver hvordan du konfigurerer Azure Active Directory som godkjenningsmetoden på Microsoft Dynamics 365 Commerce-salgsstedet.
 author: boycezhu
-manager: annbe
 ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -15,12 +13,12 @@ ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 34a7946a56a58655bc9ae23e060fc50ab01f2c6e
-ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
+ms.openlocfilehash: e271bbae84605b4adace1809b53b7cbdb6932da0
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5937464"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6020017"
 ---
 # <a name="configure-azure-active-directory-authentication-for-pos-sign-in"></a>Konfigurere Azure Active Directory-godkjenning for salgsstedspålogging
 

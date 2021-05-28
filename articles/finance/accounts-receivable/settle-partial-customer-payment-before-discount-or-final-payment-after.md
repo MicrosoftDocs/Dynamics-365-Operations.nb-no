@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dd10e0c6e426d95aa5e96c4b9b59a8a81017b540
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4df5ebaf6e8ae8414515bd11087adcd05a88e581
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835153"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027534"
 ---
 # <a name="settle-partial-payment-before-discount-date-with-final-payment-after-discount-date"></a>Utligne en delvis leverandørbetaling før rabattdatoen med en endelige betaling etter rabattdatoen
 
@@ -95,7 +95,7 @@ Rabattinformasjonen vises nederst på siden **Utlign åpne transaksjoner**.
 | Kontantrabatt brukt          | 3,00      |
 | Kontantrabattbeløp som skal brukes | 7,00      |
 
-Magnus endrer verdien i feltet **Bruk kontantrabatt** tilbake til **Normal**, fordi han ikke lar denne kunden bruke den gjenværende kontantrabatten på 7,00. Magnus posterer deretter betalingen. Når Magnus åpner siden **Kundetransaksjoner**, ser han at fakturaen har en saldo på 0,00. Han ser også at det finnes to betalinger. Én betaling er på 297,00 og har en kontantrabatt på 3,00, og den andre betalingen er på 700,00.
+Magnus endrer verdien i feltet **Bruk kontantrabatt** tilbake til **Normal**, fordi han ikke lar denne kunden bruke den gjenværende kontantrabatten på 7,00. Magnus posterer deretter betalingen. Når Magnus åpner siden **Kundetransaksjoner**, har fakturaen en saldo på 0,00. Det finnes to betalinger. Én betaling er på 297,00 og har en kontantrabatt på 3,00, og den andre betalingen er på 700,00.
 
 | Bilag    | transaksjonstype | Dato      | Faktura | Beløp i transaksjonsvaluta, debet | Beløp i transaksjonsvaluta, kredit | Saldo | Valuta |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|

@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c4891f9dcb031f4cb8dfb91f3fe1a301aad9838e
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 64106cb1aeea01f1f227247d32b8b1dfdea98362
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793879"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6020201"
 ---
 # <a name="commerce-inventory-management"></a>Commerce-lagerstyring
 
@@ -39,11 +39,11 @@ Commerce-programmer som kjører på CSU, støtter ikke følgende sporingsdimensj
 
 - Salgsstedsprogrammet kan tilby begrenset støtte for følgende dimensjoner. Salgsstedet kan automatisk angi noen av dimensjonene i lagertransaksjoner basert på konfigurasjonen av lager- eller butikkoppsettet. Salgsstedet støtter imidlertid ikke dimensjonene fullstendig på samme måte som hvis en salgstransaksjon angis manuelt i Commerce Headquarters. 
 
-- **Lagerlokasjon** – Når de bruker de nye POS-operasjonene [Innkommende operasjon](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation) og [Utgående operasjon](https://docs.microsoft.com/dynamics365/commerce/pos-outbound-inventory-operation), kan brukerne velge en lagerlokasjon for å motta varer til eller levere utgående overføringsordrevarer fra. Hvis de bruker den foreldede operasjonen **Plukk og mottak**, er støtte for begrenset lokasjonsadministrasjon tilgjengelig for mottak og forsendelse av utgående overføringer. Denne støtten er bare tilgjengelig hvis alternativet **Bruk lagerstyringsprosess** er aktivert for varen og butikklageret. En lagerlokasjon kan for øyeblikket ikke brukes med lager operasjonen **Lagerantall** eller **Beholdningsoppslag**.
+- **Lagerlokasjon** – Når de bruker de nye POS-operasjonene [Innkommende operasjon](./pos-inbound-inventory-operation.md) og [Utgående operasjon](./pos-outbound-inventory-operation.md), kan brukerne velge en lagerlokasjon for å motta varer til eller levere utgående overføringsordrevarer fra. Hvis de bruker den foreldede operasjonen **Plukk og mottak**, er støtte for begrenset lokasjonsadministrasjon tilgjengelig for mottak og forsendelse av utgående overføringer. Denne støtten er bare tilgjengelig hvis alternativet **Bruk lagerstyringsprosess** er aktivert for varen og butikklageret. En lagerlokasjon kan for øyeblikket ikke brukes med lager operasjonen **Lagerantall** eller **Beholdningsoppslag**.
 
-- **Nummerskilt** – Nummerskilt gjelder bare når alternativet **Bruk lagerstyringsprosess** er aktivert for varen og butikklageret. Hvis lageret mottas i et butikklager ved hjelp av operasjonen **Innkommende operasjon** eller **Plukk og mottak** der lagerstyringsprosessen er aktivert, og lokasjonen som er valgt til å motta varen, er koblet til en lokasjonsprofil som krever nummerskiltkontroll, bruker POS-appen systematisk et nummerskilt på mottakslinjen. POS-brukere kan ikke endre eller behandle disse nummerskiltdataene. Hvis full administrasjon av nummerskilt er nødvendig, anbefales det at butikken bruker [lagerappen](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/install-configure-warehousing-app) eller Back Office-klienten til å administrere mottak av disse varene.
+- **Nummerskilt** – Nummerskilt gjelder bare når alternativet **Bruk lagerstyringsprosess** er aktivert for varen og butikklageret. Hvis lageret mottas i et butikklager ved hjelp av operasjonen **Innkommende operasjon** eller **Plukk og mottak** der lagerstyringsprosessen er aktivert, og lokasjonen som er valgt til å motta varen, er koblet til en lokasjonsprofil som krever nummerskiltkontroll, bruker POS-appen systematisk et nummerskilt på mottakslinjen. POS-brukere kan ikke endre eller behandle disse nummerskiltdataene. Hvis full administrasjon av nummerskilt er nødvendig, anbefales det at butikken bruker [lagerappen](../supply-chain/warehousing/install-configure-warehousing-app.md) eller Back Office-klienten til å administrere mottak av disse varene.
 
-- **Serienummer** – POS-appen gir begrenset støtte for registrering av ett serienummer på en transaksjonssalgslinje for ordrer som er opprettet i POS og har serialiserte varer. Dette serienummeret valideres ikke mot registrerte serienumre som allerede finnes på lageret. Hvis en salgsordre opprettes i telefonsenterkanalen eller oppfylles gjennom Enterprise Resource Planning (ERP), og flere serienumre registreres på en enkelt salgslinje under oppfyllelsesprosessen i ERP, vil ikke de serienumrene kunne brukes eller valideres hvis en retur behandles for ordren i POS. Når lager mottas ved hjelp av operasjonen **Innkommende operasjon**, kan brukere [registrere eller bekrefte de mottatte serienumrene](https://docs.microsoft.com/dynamics365/commerce/pos-serialized-items).
+- **Serienummer** – POS-appen gir begrenset støtte for registrering av ett serienummer på en transaksjonssalgslinje for ordrer som er opprettet i POS og har serialiserte varer. Dette serienummeret valideres ikke mot registrerte serienumre som allerede finnes på lageret. Hvis en salgsordre opprettes i telefonsenterkanalen eller oppfylles gjennom Enterprise Resource Planning (ERP), og flere serienumre registreres på en enkelt salgslinje under oppfyllelsesprosessen i ERP, vil ikke de serienumrene kunne brukes eller valideres hvis en retur behandles for ordren i POS. Når lager mottas ved hjelp av operasjonen **Innkommende operasjon**, kan brukere [registrere eller bekrefte de mottatte serienumrene](./pos-serialized-items.md).
 
 - **Parti-ID** – Salgsstedsprogrammet gir begrenset støtte under utdragsposteringsprosessen hvis en partikontrollert vare blir solgt, men salgsstedsbrukere ikke kan definere parti-IDen som ble solgt eller plukket ved bruk av salgsstedsprogrammet.
 
@@ -56,11 +56,11 @@ Commerce-programmer som kjører på CSU, støtter ikke følgende sporingsdimensj
 
 ## <a name="purchase-orders"></a>Bestillinger
 
-Bestillinger opprettes i Commerce Headquarters. Hvis et butikklager er inkludert i bestillingshodet eller på bestillingslinjer, kan linjene mottas i butikken ved hjelp av operasjonen [Innkommende operasjon](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation) i POS. 
+Bestillinger opprettes i Commerce Headquarters. Hvis et butikklager er inkludert i bestillingshodet eller på bestillingslinjer, kan linjene mottas i butikken ved hjelp av operasjonen [Innkommende operasjon](./pos-inbound-inventory-operation.md) i POS. 
 
 ## <a name="transfer-orders"></a>Overføringsordrer
 
-Overføringsordrer kan opprettes i Commerce Headquarters eller via operasjonen [Innkommende operasjon](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation) eller [Utgående operasjon](https://docs.microsoft.com/dynamics365/commerce/pos-outbound-inventory-operation) i POS. Bruk POS-operasjonen **Innkommende operasjons** til å opprette en forespørsel om overføringsordre der det er sendt lager til butikken fra et annet lager eller butikklokasjon. Bruk POS-operasjonen **Utgående operasjons** til å opprette en forespørsel om overføringsordre der det blir sendt lager fra butikken til et annet lager eller butikklokasjon. Etter at det er opprettet en overføringsordre for en butikk, kan den butikken administrere mottak av lager for overføringsordren via operasjonen **Innkommende operasjon** i POS. Hvis butikken sender lager til en annen lokasjon, brukes operasjonen **Utgående operasjon** i POS til å administrere denne butikkens utgående forsendelsesprosess.
+Overføringsordrer kan opprettes i Commerce Headquarters eller via operasjonen [Innkommende operasjon](./pos-inbound-inventory-operation.md) eller [Utgående operasjon](./pos-outbound-inventory-operation.md) i POS. Bruk POS-operasjonen **Innkommende operasjons** til å opprette en forespørsel om overføringsordre der det er sendt lager til butikken fra et annet lager eller butikklokasjon. Bruk POS-operasjonen **Utgående operasjons** til å opprette en forespørsel om overføringsordre der det blir sendt lager fra butikken til et annet lager eller butikklokasjon. Etter at det er opprettet en overføringsordre for en butikk, kan den butikken administrere mottak av lager for overføringsordren via operasjonen **Innkommende operasjon** i POS. Hvis butikken sender lager til en annen lokasjon, brukes operasjonen **Utgående operasjon** i POS til å administrere denne butikkens utgående forsendelsesprosess.
 
 ## <a name="stock-counts"></a>Lagerantall
 
@@ -68,7 +68,7 @@ Lagertellinger kan være planlagt eller ikke planlagt. Planlagte lageropptelling
 
 ## <a name="inventory-lookup"></a>Beholdningsoppslag
 
-Produktantallet som for øyeblikket finnes på lager for flere butikker og lagere, kan vises på siden **Beholdningsoppslag**. I tillegg til det gjeldende antallet på lager, kan fremtidige antall tilgjengelig for ordre (ATP) vises for hver butikk. Velg butikken du vil vise ATP-antall for, og velg deretter **Vis butikktilgjengelighet**. Hvis du vil ha informasjon om hvilke konfigurasjonsalternativer som er tilgjengelige, kan du se [Beregne lagertilgjengelighet for detaljhandelskanaler](https://docs.microsoft.com/dynamics365/commerce/calculated-inventory-retail-channels).
+Produktantallet som for øyeblikket finnes på lager for flere butikker og lagere, kan vises på siden **Beholdningsoppslag**. I tillegg til det gjeldende antallet på lager, kan fremtidige antall tilgjengelig for ordre (ATP) vises for hver butikk. Velg butikken du vil vise ATP-antall for, og velg deretter **Vis butikktilgjengelighet**. Hvis du vil ha informasjon om hvilke konfigurasjonsalternativer som er tilgjengelige, kan du se [Beregne lagertilgjengelighet for detaljhandelskanaler](./calculated-inventory-retail-channels.md).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

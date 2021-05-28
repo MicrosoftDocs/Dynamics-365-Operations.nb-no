@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: a0e49d1eced3bb62e78c630b137a5b86121682f3
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f3fcfae9f4ab458b4f14f18859f22fc25bf98623
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795243"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027630"
 ---
 # <a name="create-task-lists-and-add-tasks"></a>Opprette oppgavelister og legge til oppgaver
 
@@ -49,7 +49,7 @@ Hvis du vil legge til oppgaver i en oppgaveliste, følger du disse trinnene.
 1. I dialogboksen **Opprett en ny oppgave** skriver du inn et navn på oppgaven i **Navn**-feltet.
 1. I feltet **Forfallsdato samsvarer ikke med måldato** angir du en positiv eller negativ heltallsverdi. Angi for eksempel **-2** hvis oppgaven skal fullføres to dager før oppgavelistens forfalls dato.
 1. I feltet **Merknader** angir du detaljerte instruksjoner.
-1. I feltet **Kontaktperson** angir du navnet på en emneekspert som oppgaveeieren kan kontakte hvis han eller hun trenger hjelp.
+1. I feltet **Kontaktperson** angir du navnet på en emneekspert som oppgaveeieren kan kontakte hvis oppgaveeieren trenger hjelp.
 1. I feltet **Oppgavekobling** angir du en kobling basert på typen oppgave.
 
 > [!TIP]

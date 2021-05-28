@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 3cfe144f7bba2bbc4b25024b68155045271f6366
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 5a2c596293e632bb6c06af56f413fcee9e867563
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795651"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6022737"
 ---
 # <a name="outbound-inventory-operation-in-pos"></a>Utgående lageroperasjon i salgsstedet
 
@@ -71,7 +71,7 @@ De satsvise jobbene du oppretter, vil bli brukt til å behandle dokumenter som m
 
 ## <a name="prerequisite-add-outbound-operation-to-the-pos-screen-layout"></a>Forutsetning: Legg til utgående operasjon i oppsett for POS-skjerm
 
-Før organisasjonen kan bruke funksjonaliteten for utgående operasjoner, må den konfigurere POS-operasjonen **Utgående operasjon** på ett eller flere av [POS-skjermoppsettene](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts). Før du distribuerer den nye operasjonen i et produksjonsmiljø, må du kontrollere at du tester den grundig og lære opp brukerne for å bruke den.
+Før organisasjonen kan bruke funksjonaliteten for utgående operasjoner, må den konfigurere POS-operasjonen **Utgående operasjon** på ett eller flere av [POS-skjermoppsettene](/dynamics365/unified-operations/retail/pos-screen-layouts). Før du distribuerer den nye operasjonen i et produksjonsmiljø, må du kontrollere at du tester den grundig og lære opp brukerne for å bruke den.
 
 ## <a name="overview"></a>Oversikt
 

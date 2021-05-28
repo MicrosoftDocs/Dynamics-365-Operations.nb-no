@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: d4bb8ce1abc07bc57e90e893e7e327761131d52a
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 02e8bb1bfb088a877ef23b7a81982868700f4ae2
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795219"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6028113"
 ---
 # <a name="task-recorder-and-help-for-retail-modern-pos-mpos-and-cloud-pos"></a>Oppgaveopptaker og hjelp for Retail Modern POS (MPOS) og Cloud POS
 
@@ -127,7 +127,7 @@ Du kan bruke feltene **Tekster** og **Merknader** til å legge til tekst som ska
 
 #### <a name="text"></a>Tekst
 
-Teksten du skriver inn i **Tekst**-feltet, vises *over* trinnteksten i oppgaveveiledningen. Denne plasseringen er egnet for tekst som du vil at brukeren leser før han eller hun fullfører trinnet.
+Teksten du skriver inn i **Tekst**-feltet, vises *over* trinnteksten i oppgaveveiledningen. Denne plasseringen er egnet for tekst som du vil at brukeren leser før brukeren fullfører trinnet.
 
 #### <a name="notes"></a>Notater
 
@@ -135,7 +135,7 @@ Teksten du skriver inn i **Merknader**-feltet, vises *under* trinnteksten i oppg
 
 ## <a name="help-in-retail-modern-pos-and-cloud-pos"></a>Hjelp i Retail Modern POS og Cloud POS
 
-Hvis du vil vise dine egne oppgaveopptak i Hjelp-ruten i Retail Modern POS og Cloud POS, slik at de kan vises som tekst, må du lagre oppgaveopptakene i ditt eget Forretningsprosessmodeler-bibliotek og deretter oppdatere hjelpesystemparameterne slik at de peker mot Forretningsprosessmodeler-biblioteket ditt. Hvis du vil ha mer informasjon, kan du se [Connecting the help system](../fin-and-ops/get-started/help-connect.md). Hjelp for Retail Modern POS og Cloud POS søker i LCS i sanntid. Den søker gjennom alle BPM-biblioteker som er valgt i hjelpesystemparametere for Commerce, og viser de relevante resultatene. Du kan åpne **Hjelp**-menyen ved å klikke **Hjelp**-knappen (spørsmålstegn) øverst på skjermen og deretter skrive inn prosessnavnet ditt i søkeboksen og klikke på søkeknappen.
+Hvis du vil vise dine egne oppgaveopptak i Hjelp-ruten i Retail Modern POS og Cloud POS, slik at de kan vises som tekst, må du lagre oppgaveopptakene i ditt eget Forretningsprosessmodeler-bibliotek og deretter oppdatere hjelpesystemparameterne slik at de peker mot Forretningsprosessmodeler-biblioteket ditt. Hvis du vil ha mer informasjon, kan du se [Connecting the help system](../fin-ops-core/fin-ops/get-started/help-connect.md). Hjelp for Retail Modern POS og Cloud POS søker i LCS i sanntid. Den søker gjennom alle BPM-biblioteker som er valgt i hjelpesystemparametere for Commerce, og viser de relevante resultatene. Du kan åpne **Hjelp**-menyen ved å klikke **Hjelp**-knappen (spørsmålstegn) øverst på skjermen og deretter skrive inn prosessnavnet ditt i søkeboksen og klikke på søkeknappen.
 
 [![Hjelp-knappen](./media/help.jpg)](./media/help.jpg)
 

@@ -1,6 +1,6 @@
 ---
 title: Klientfrakoblinger
-description: Denne artikkelen forklarer hva du gjør hvis kunden kobles fra hans eller hennes miljø og ikke vet hvorfor.
+description: Denne artikkelen forklarer hva du gjør hvis kunden kobles fra miljøet og ikke vet hvorfor.
 author: andreabichsel
 ms.date: 02/03/2020
 ms.topic: article
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e9ec43ad0a7d121eb247d81d4b506556a0fa2214
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: db0e8efec1a5a6f01c9b7c4d9334a959fc42886b
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794907"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027993"
 ---
 # <a name="client-disconnects"></a>Klientfrakoblinger
 
@@ -32,7 +32,7 @@ Dette problemet kan oppstå i alle miljøer.
  
 **Symptom** 
 
-Kunden kobles fra hans eller hennes miljø og vet ikke hvorfor. Kunden mottar én av følgende feilmeldinger:
+Kunden kobles fra miljøet og vet ikke hvorfor. Kunden mottar én av følgende feilmeldinger:
 
 - Forbindelsen er brutt. Klikk Lukk for å fortsette å arbeide.
 - Det virker som du har mistet nettverkstilkoblingen. Klikk Prøv på nytt for å prøve på nytt.

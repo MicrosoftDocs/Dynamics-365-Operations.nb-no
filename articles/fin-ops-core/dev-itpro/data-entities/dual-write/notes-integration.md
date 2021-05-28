@@ -5,7 +5,6 @@ author: RamaKrishnamoorthy
 ms.date: 02/22/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -17,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: beab7f2fc4fd96ce7a28734d2449445b3b5d4451
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ed068f4264269334babec9acd59d9d58551333b4
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750842"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6018392"
 ---
 # <a name="note-integration"></a>Merknadsintegrering
 
@@ -34,9 +33,9 @@ I forretningsprosesser samler Microsoft Dynamics 365-brukere ofte inn informasjo
 
 Kundeopplysninger kan klassifiseres på følgende måter:
 
-+ **Handlingsbar informasjon som en Dynamics 365-bruker håndterer på vegne av en kunde** – Contoso (en Dynamics 365-bruker) arrangerer for eksempel en spørrekonkkurranse. En av Contoso-kundene (en kunde) ønsker å delta i spørrekonkkurransen. Kunden ber en Contoso-ansatt om å reservere en plass i spørrekonkkurranse for dem. Reservasjonen skjer i Contosos hendelseskalender for deltakeren.
++ **Handlingsbar informasjon som en Dynamics 365-bruker håndterer på vegne av en kunde** –  Contoso (en Dynamics 365-bruker) arrangerer for eksempel en spørrekonkurranse. En av Contoso-kundene (en kunde) ønsker å delta i spørrekonkkurransen. Kunden ber en Contoso-ansatt om å reservere en plass i spørrekonkkurranse for dem. Reservasjonen skjer i Contoso sin hendelseskalender for deltakeren.
 + **Informasjon som kan behandles for en Dynamics 365-bruker** – En kunde som kjøper en Surface-enhet, legger for eksempel inn spesielle instruksjoner som indikerer at enheten skal pakkes inn i gave før levering. Disse instruksjonene er informasjon som kan behandles, og som bør behandles av Contoso-ansatte som er ansvarlig for emballasje.
-+ **Informasjon som ikke kan behandles**– En kunde besøker for eksempel Contoso-butikken, og uttrykker interesse for *Halo*-spill og spilltilbehør i samtalen med butikkmedarbeideren. Butikkmedarbeideren noterer seg denne informasjonen. Produktanbefalingsmotoren bruker deretter informasjonen til å foreta anbefalinger til kunden.
++ **Informasjon som ikke kan behandles** – En kunde besøker for eksempel Contoso-butikken, og uttrykker interesse for *Halo*-spill og spilltilbehør i samtalen med butikkmedarbeideren. Butikkmedarbeideren noterer seg denne informasjonen. Produktanbefalingsmotoren bruker deretter informasjonen til å foreta anbefalinger til kunden.
 
 Som regel registreres informasjon som kan behandles, som *aktiviteter* i Finance and Operations-apper og Customer Engagement-apper. Informasjon som ikke kan behandles, blir lagret som *merknader* i Finance and Operations-apper, og som *kommentarer* i Customer Engagement-apper.
 

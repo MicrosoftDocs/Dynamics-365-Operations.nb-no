@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 6f60d2e654d37b86d92478b6cd961b917711ef8c
-ms.sourcegitcommit: 011468a6cffea8641bebc2922e0676d9f44b36fc
+ms.openlocfilehash: 91f1963f2bbc01fc4d3a9282d6ac7705bc5287c2
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "5857279"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6018837"
 ---
 # <a name="peripherals"></a>Eksterne enheter
 
@@ -158,7 +158,7 @@ Nettverksadresserbare kassaskuffer, kvitteringsskrivere og betalingsterminaler k
 
 ### <a name="dedicated"></a>Dedikert
 
-Modern POS-klienter for Windows og Android inkluderer **dedikerte** eller innebygde maskinvarestasjoner. Disse klientene kan kommunisere direkte med eksterne enheter ved hjelp av forretningslogikk som er innebygd i applikasjonene. Android-programmet støtter bare nettverksenheter. Hvis du vil ha mer informasjon om støtte for eksterne enheter for Android, kan du se artikkelen [Definere POS Hybrid-app på Android og iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp).
+Modern POS-klienter for Windows og Android inkluderer **dedikerte** eller innebygde maskinvarestasjoner. Disse klientene kan kommunisere direkte med eksterne enheter ved hjelp av forretningslogikk som er innebygd i applikasjonene. Android-programmet støtter bare nettverksenheter. Hvis du vil ha mer informasjon om støtte for eksterne enheter for Android, kan du se artikkelen [Definere POS Hybrid-app på Android og iOS](./dev-itpro/hybridapp.md).
 
 Hvis du vil bruke den dedikerte maskinvarestasjonen, tilordner du en maskinvareprofil til en kasse som skal bruke Modern POS for Windows-eller Android-programmer. Deretter oppretter du en maskinvarestasjon av **Dedikert**-typen for butikken der kassen skal brukes. Start Modern POS i ikke-skuff-modus, og bruk operasjonen **Administrer maskinvarestasjoner** for å aktivere funksjonene for maskinvarestasjoner. Den dedikerte maskinvarestasjonen er aktiv som standard. Deretter logger du av Modern POS, logger deg deretter på igjen og åpner et skift. De eksterne enhetene som er konfigurert i maskinvareprofilen, kan nå brukes. 
 
@@ -199,7 +199,7 @@ Hvis du vil ha mer informasjon, kan du se [Konfigurere, installere og aktivere M
 
 ### <a name="modern-pos-for-android-and-ios-setup-and-configuration"></a>Oppsett og konfigurasjon av Modern POS for Android og iOS
 
-For informasjon, se [Definere POS Hybrid-app på Android og iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp).
+For informasjon, se [Definere POS Hybrid-app på Android og iOS](./dev-itpro/hybridapp.md).
 
 ### <a name="opos-device-setup-and-configuration"></a>Oppsett og konfigurasjon av OPOS-enhet
 
@@ -494,7 +494,7 @@ Denne konfigurasjonen er mest vanlig konfigurasjonen for tradisjonelle, fast kas
 
 ### <a name="modern-pos-for-android-with-an-ipc-built-in-hardware-station"></a>Moderne POS for Android med en IPC-maskinvarestasjon (innebygd)
 
-**Nytt for 10.0.8** – Epson-nettverksskrivere og kassaskuffer som er koblet til disse skriverne via DK-porten, støttes nå for Modern POS for Android-appen. Hvis du vil ha mer informasjon, kan du se artikkelen [Definere POS Hybrid-app på Android og iOS](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp).
+**Nytt for 10.0.8** – Epson-nettverksskrivere og kassaskuffer som er koblet til disse skriverne via DK-porten, støttes nå for Modern POS for Android-appen. Hvis du vil ha mer informasjon, kan du se artikkelen [Definere POS Hybrid-app på Android og iOS](./dev-itpro/hybridapp.md).
 
 ### <a name="all-modern-pos-clients-that-have-a-committed-shared-iis-hardware-station"></a>Alle Modern POS-klienter som har en forpliktet delt IIS-maskinvarestasjon
 
@@ -614,6 +614,9 @@ De eksterne enhetene nedenfor ble testet ved hjelp av IPC-maskinvarestasjonen so
 | Star         | TSP650II | Egendefinert    | Tilkoblet via nettverket   |
 | Star         | mPOP     | OPOS      | Tilkoblet via Bluetooth |
 | HP           | F7M67AA  | OPOS      | USB-drevet             |
+
+> [!NOTE]
+> Skriveren Star TSP 100 støttes ikke av den innebygde maskinvarestasjonen. Den innebygde maskinvarestasjonen bruker en 64-biters prosess, som ikke er kompatibel med eksisterende TP 100-drivere. 
 
 #### <a name="bar-code-scanner"></a>Strekkodeleser
 

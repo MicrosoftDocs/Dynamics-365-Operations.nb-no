@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: dac3eb0da704e06376d8ca969e06fb177ce15a6b
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6b02f94bb2217729f35f0593fe99807273608811
+ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804287"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "6027654"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Tilkoblede og frakoblede salgsstedsoperasjoner (POS)
 
@@ -64,7 +64,7 @@ Følgende kolonner angir hvor operasjonene kan startes:
 | 642 | Utfør alle produkter | Sett leveringsmåten for alle linjer til **Utlevering**. | Ja | Ja | Antall | Ja\* | Antall |
 | 641 | Utfør valgte produkter | Sett leveringsmåten for de valgte linjene til **Utlevering**. | Ja | Ja | Nei | Ja\* | Nei |
 | 647 | Endre leveringsmåte | Endre leveringsmåte for forhåndskonfigurerte forsendelseslinjer. | Ja | Ja | Nei | Nei| Nei |
-| 1215 | Endre passord | Denne operasjonen lar POS-brukeren endre passordet. | Ja | Ja | Ja | Antall | Antall |
+| 1215 | Endre passord | Denne operasjonen lar POS-brukeren endre passordet. | Ja | Ja | Ja | Ingen | Ingen |
 | 123 | Endre måleenhet | Endre måleenheten for det valgte linjeelementet. | Ja | Ja | Antall | Ja | Antall |
 | 639 | Fjern standard selger i transaksjon | Fjerne provisjonssalgsgruppen (selger) fra transaksjonen. | Ja | Ja | Antall | Ja | Antall |
 | 106 | Fjern antall | Tilbakestill antallet på den valgte linjen til **1**. | Ja | Ja | Antall | Ja | Antall |

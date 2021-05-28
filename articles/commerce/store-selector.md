@@ -2,7 +2,6 @@
 title: Butikkvelgermodul
 description: Dette emnet dekker butikkvelgermodulen og beskriver hvordan du legger den til områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
 ms.date: 04/02/2021
 ms.topic: article
 ms.prod: ''
@@ -16,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 22ec78c8e0545698f05f8f8ec261b5e927d698c7
-ms.sourcegitcommit: 74f5b04b482b2ae023c728e0df0eb78305493c6a
+ms.openlocfilehash: 5a9311435264119e8287f1b7da2d0456552231f3
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "5853423"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6021470"
 ---
 # <a name="store-selector-module"></a>Butikkvelgermodul
 
@@ -62,7 +61,7 @@ Hvis du vil angi bredde- og lengdegrad for en butikklokasjon i Commerce Headquar
 
 ## <a name="bing-maps-integration"></a>Bing Maps-integrering
 
-Butikkvelgermodulen er integrert med [Bing Maps REST API-er (Application Programming Interface)](https://docs.microsoft.com/bingmaps/rest-services/) for å bruke Bing-funksjonene for geokoding og autoforslag. En API-nøkkel for Bing-kart kreves, og den må legges til på siden Delte parametere for Commerce Headquarters. API-et for geokoding brukes til å konvertere en sted til breddegrads- og lengdegradsverdier. Integreringen med API-et for autoforslag brukes til å vise søkeforslag når brukere angir steder i søkefeltet.
+Butikkvelgermodulen er integrert med [Bing Maps REST API-er (Application Programming Interface)](/bingmaps/rest-services/) for å bruke Bing-funksjonene for geokoding og autoforslag. En API-nøkkel for Bing-kart kreves, og den må legges til på siden Delte parametere for Commerce Headquarters. API-et for geokoding brukes til å konvertere en sted til breddegrads- og lengdegradsverdier. Integreringen med API-et for autoforslag brukes til å vise søkeforslag når brukere angir steder i søkefeltet.
 
 Når det gjelder REST API-et for autoforslag, må du kontrollere at følgende URL-adresser er tillatt i henhold til områdets sikkerhetspolicy for innhold (CSP). Dette oppsettet gjøres i Commerce-områdebygger ved å legge til tillatte URL-adresser i CSP-direktiver for nettstedet (for eksempel **img-src**). Hvis du vil ha mer informasjon, se [Innholdssikkerhetspolicy](manage-csp.md). 
 
@@ -78,14 +77,14 @@ Butikkvelgermodulen støtter en **Hent i butikk**-modus som viser en liste over 
 
 Butikkvelgermodulen kan legges til en kjøpsboksmodul på en PDP for å vise butikkene der et produkt er tilgjengelig for henting. Den kan også legges til i en handlekurvmodul. I dette tilfellet viser butikkvelgermodulen hentealternativer for hvert vareelement i handlekurven. Butikkvelgermodulen kan også legges til på andre sider eller moduler via utvidelser og tilpassinger.
 
-For at dette scenarioet skal fungere, bør produktene konfigureres slik at leveringsmodusen **henting** brukes. Ellers vil ikke modulen vises på de produktsidene. Hvis du vil ha mer informasjon om hvordan du konfigurerer leveringsmodus, kan du se [Definer leveringsmåter](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
+For at dette scenarioet skal fungere, bør produktene konfigureres slik at leveringsmodusen **henting** brukes. Ellers vil ikke modulen vises på de produktsidene. Hvis du vil ha mer informasjon om hvordan du konfigurerer leveringsmodus, kan du se [Definer leveringsmåter](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
 
 Bildet nedenfor viser et eksempel på en butikkvelgermodul som brukes på en PDP.
 
 ![Eksempel på en butikkvelgermodul som brukes på PDP](./media/BOPIS.PNG)
 
 > [!NOTE]
-> I versjon 10.0.16 og nyere kan en ny funksjon aktiveres, noe som gjør at en organisasjon kan definere flere plukkmoduser for leveringsmåter for kunder.  Hvis denne funksjonen er aktivert, vil butikkvelgeren og andre moduler med e-handel bli forbedret slik at kunden kan velge fra potensielt flere leveringsalternativer hvis de er konfigurert.  Hvis du vil vite mer om denne funksjonen, kan du se [denne dokumentasjonen](https://docs.microsoft.com/dynamics365/commerce/multiple-pickup-modes). 
+> I versjon 10.0.16 og nyere kan en ny funksjon aktiveres, noe som gjør at en organisasjon kan definere flere plukkmoduser for leveringsmåter for kunder.  Hvis denne funksjonen er aktivert, vil butikkvelgeren og andre moduler med e-handel bli forbedret slik at kunden kan velge fra potensielt flere leveringsalternativer hvis de er konfigurert.  Hvis du vil vite mer om denne funksjonen, kan du se [denne dokumentasjonen](./multiple-pickup-modes.md). 
 
 ## <a name="find-stores-mode"></a>Søk etter butikker-modus
 
@@ -157,11 +156,11 @@ Hvis du vil konfigurere butikkvelgermodulen til å vise tilgjengelige butikker f
 
 [Hurtiginnføring i handlekurv og kasse](quick-tour-cart-checkout.md)
 
-[Definer leveringsmåter](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
+[Definer leveringsmåter](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
 
 [Behandle Bing-kart for organisasjonen](dev-itpro/manage-bing-maps.md)
 
-[Bing Maps REST API-er](https://docs.microsoft.com/bingmaps/rest-services/)
+[Bing Maps REST API-er](/bingmaps/rest-services/)
 
 [Kartmodul](map-module.md)
 
