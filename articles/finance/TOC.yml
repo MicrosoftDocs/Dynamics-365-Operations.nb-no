@@ -78,8 +78,6 @@
                       href: get-started/whats-new-changed-10-0-18.md
                     - name: Finance 10.0.17 (april 2021)
                       href: get-started/whats-new-changed-10-0-17.md
-                    - name: Finance 10.0.16 (februar 2021)
-                      href: get-started/whats-new-changed-10-0-16.md
             - name: Funksjoner som er fjernet eller avskrevet
               items:
                 - name: Funksjoner som er fjernet eller avskrevet på startsiden
@@ -426,9 +424,11 @@
                   href: accounts-receivable/settle-partial-customer-payment-before-discount-or-final-payment-after.md
                 - name: Utligne en delvis kundebetaling som har rabatter på kreditnotaer
                   href: accounts-receivable/settle-partial-customer-payment-discounts-credit-notes.md
-                - name: Utligne en delvis kundebetaling som har flere rabattperioder
+                - name: Utlign en delvis kundebetaling som har flere rabattperioder
                   href: accounts-receivable/settle-partial-customer-payment-multiple-discount-periods.md
-                - name: Refundere kunder
+                - name: Kundeforskuddsbetalinger
+                  href: accounts-receivable/customer-prepayments.md
+                - name: Refunder kunder
                   href: accounts-receivable/reimburse-customers.md
                 - name: Kundebetalinger for et delbeløp
                   href: accounts-receivable/customer-payments-partial-amount.md
@@ -482,11 +482,13 @@
               href: accounts-receivable/tasks/process-collection-letters.md
             - name: Behandle eksempel på purrebrev
               href: accounts-receivable/process-collection-letters-example.md
-            - name: Definere og generere informasjon om aldersfordeling for kunde
+            - name: Definer og generer informasjon om aldersfordeling for kunde
               href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
+            - name: Øyeblikksbilde av aldersfordeling for kunde
+              href: accounts-receivable/customer-aging-snapshot.md
             - name: Aldersfordelt saldoliste for kunder
               href: accounts-receivable/customer-aging.md
-            - name: Opprette en avskrivningsjournal for en kunde
+            - name: Opprett en avskrivningsjournal for en kunde
               href: accounts-receivable/tasks/create-write-off-journal-customer.md
             - name: Behandling av avanserte merknader
               href: localizations/emea-ita-exil-structured-notes.md
@@ -510,11 +512,13 @@
               href: budgeting/position-forecasting.md
             - name: Justeringsdokumenter for budsjettplanlegging
               href: budgeting/budget-planning-justification-docs.md
-            - name: Opprette et budsjett fra transaksjonskontoer og totalkontoer
+            - name: Opprett et budsjett fra transaksjonskontoer og totalkontoer
               href: budgeting/create-budget-transaction-accounts-total-accounts.md
+            - name: Budsjettplan fortelling
+              href: budgeting/budget-narrative.md
             - name: Budsjettplanleggingsmaler for Excel
               href: budgeting/budget-planning-excel-templates.md
-            - name: Utvide budsjettplanleggingsoppsettet
+            - name: Utvid budsjettplanleggingsoppsettet
               href: budgeting/extending-budget-planning-layout.md
             - name: Feilsøking av stillingsbudsjettering
               href: budgeting/position-budgeting-set-up-issues.md
@@ -1144,11 +1148,21 @@
                   href: general-ledger/audit-policy-rules.md
                 - name: Brudd på og saker for overvåkingspolicy
                   href: general-ledger/audit-policy-violations-cases.md
-                - name: Definere overvåkingspolicyer for kildedokumenter
+                - name: Definer overvåkingspolicyer for kildedokumenter
                   href: general-ledger/tasks/define-audit-policies-source-documents.md
+            - name: Feilsøking
+              items:
+                - name: Endre regnskaps- eller rapporteringsvalutaen
+                  href: general-ledger/add-change-acctg-rprtg-crrncy.md
+                - name: Endre eller tilordne en finanskalender på nytt
+                  href: general-ledger/change-mdfy-clndr-to-ledger.md
+                - name: Tilbakefør innstillinger for journaler og linjer
+                  href: general-ledger/rvrs-settgs-on-jrnls-lines.md
+                - name: Manglende åpningssaldoer ved årsavslutning
+                  href: general-ledger/yec-mssng-open-blnces.md
         - name: Finansrapportering
           items:
-            - name: Komme i gang med finansrapportering
+            - name: Kom i gang med finansrapportering
               href: general-ledger/financial-reporting-getting-started.md
             - name: Oversikt over finansrapportering
               href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=/dynamics365/finance/toc.json
@@ -1648,8 +1662,16 @@
                       href: localizations/bra-use-tax-exemption-nf-e.md
                 - name: SPED ECD
                   href: localizations/latam-bra-sped-ecd.md
-                - name: SPED-Reinf-avgiftsoppgave
-                  href: localizations/latam-bra-sped-reinf.md
+                - name: SPED-Reinf
+                  items:
+                    - name: Oversikt over SPED-Reinf
+                      href: localizations/latam-bra-sped-reinf-overview.md
+                    - name: Definer elektronisk melding
+                      href: localizations/latam-bra-sped-reinf-electronic-messages.md
+                    - name: Definer regnskapsbøker
+                      href: localizations/latam-bra-sped-reinf-setup-fiscal-books.md
+                    - name: Hendelser
+                      href: localizations/latam-bra-sped-reinf.md
                 - name: SPED-regnskapsoppløsing 13/2019 RJ
                   href: localizations/latam-bra-resolution-13-2019-RJ.md
                 - name: SPED-regnskap 2020 – Utfyllende informasjon om ICMS-ST for SPED-regnskapsoppsett 014
@@ -1782,9 +1804,11 @@
                   href: localizations/tasks/user-operation-log-china-working-rule.md
                 - name: Vanlige spørsmål om mva-kundefakturaer
                   href: localizations/apac-chn-tax-integration-vat-customer-invoices.md
-            - name: Tsjekkia
+                - name: GB/T 24589-2010-eksport
+                  href: localizations/apac-chn-gbt-24589-2010.md
+            - name: Den tsjekkiske republikk
               items:
-                - name: Tsjekkia
+                - name: Den tsjekkiske republikk
                   href: localizations/czech-republic.md
                 - name: Kreditnota på kontantrabatt
                   href: localizations/emea-cze-credit-note-cash-discount.md
@@ -2034,12 +2058,22 @@
                       href: localizations/emea-fra-titres-de-recette-public-sector.md
                     - name: Betalingssperrer for leverandørfaktura
                       href: localizations/emea-fra-vendor-invoice-payment-holds-public-sector.md
-                - name: Godkjenne og postere vekseltrekking
+                - name: Godkjenn og poster vekseltrekking
                   href: localizations/tasks/fr-00004-approve-post-draw-bill-exchange.md
                 - name: Kronologiske fakturaer og bilag
                   href: localizations/emea-fra-chronological-invoices-vouchers.md
-                - name: Opprette standard revisjonsfil for Frankrike (FEC)
-                  href: localizations/emea-fra-fec-audit-file.md
+                - name: Revisjonsfil for Frankrike
+                  items:
+                    - name: Oversikt over revisjonsfil for Frankrike (FEC)
+                      href: localizations/emea-fra-fec-audit-file.md
+                    - name: Forutsetninger for å generere en FEC-revisjonsfil i Frankrike
+                      href: localizations/emea-fra-fec-audit-file-pre-requisites.md
+                    - name: Struktur for Finance-datakilder for FEC
+                      href: localizations/emea-fra-fec-audit-file-structure.md
+                    - name: Klargjør miljøet for å generere en FEC
+                      href: localizations/emea-fra-fec-audit-file-setup.md
+                    - name: Generer en FEC i Dynamics 365 Finance
+                      href: localizations/emea-fra-fec-audit-file-generation.md
                 - name: Kontoutdrag for kunde og leverandør
                   href: localizations/tasks/fr-00002-customer-vendor-account-statements.md
                 - name: Daglig renteberegning for sen betaling og engangsbeløp i fakturaen og purring
@@ -2390,8 +2424,86 @@
                       href: localizations/tasks/apac-ind-set-up-depreciation.md
                     - name: Angi objektgruppeavskrivning for avskrivningstablåer
                       href: localizations/tasks/apac-ind-set-up-asset-group-dep.md
-                    - name: Overføring av kapitalvarer til det faste objektet
+                    - name: Overføring av kapitalvarer til anleggsmiddelet
                       href: localizations/tasks/apac-ind-transfer-capital-items.md
+                - name: India TDS
+                  items:
+                    - name: Oversikt over indisk Tax Deducted at Source (TDS)
+                      href: localizations/apac-ind-TDS-India-TDS-overview.md
+                    - name: Grunnoppsett for TDS
+                      items:
+                        - name: Angi TDS-parameterne
+                          href: localizations/apac-ind-TDS-TDS-parameter-activation.md
+                        - name: Definer TDS-finanskontoer
+                          href: localizations/apac-ind-TDS-TDS-ledger-accounts-setup.md
+                        - name: Definer TDS-registreringsnumre for juridiske enheter
+                          href: localizations/apac-ind-TDS-TDS-registration-numbers-setup-for-legal-entities.md
+                        - name: Definer kildeskattmyndigheter for TDS-avgiftstypen
+                          href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
+                        - name: Definer avgiftskomponentene for TDS-avgiftstypen
+                          href: localizations/apac-ind-TDS-Tax-components-setup-for-TDS-tax-type.md
+                        - name: Definer kildeskattkoder for TDS-avgiftstypen
+                          href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
+                        - name: Definer utligningsperioder for kildeskatt for TDS-avgiftstypen
+                          href: localizations/apac-ind-TDS-Withholding-tax-settlement-periods-setup-for-TDS-tax-type.md
+                        - name: Definer koder for kildeskattrapportering for TDS-avgiftstypen
+                          href: localizations/apac-ind-TDS-Withholding-tax-reporting-codes-setup-for-TDS-tax-type.md
+                        - name: Definer kildeskattkoder for TDS-avgiftstypen
+                          href: localizations/apac-ind-TDS-Withholding-tax-codes-setup-for-TDS-tax-type.md
+                        - name: 'Knytt TDS-avgiftskoder til TDS-avgiftsgrupper, og definer formelen for beregning av TDS'
+                          href: localizations/apac-ind-TDS-Attach-TDS-tax-codes-to-TDS-tax-groups-and-define-formula-to-calculate-TDS.md
+                        - name: Registrer TDS-konsesjonssertifikatnumre
+                          href: localizations/apac-ind-TDS-Record-TDS-concession-certificate-numbers.md
+                        - name: Angi TDS-parametere i leverandører og kunder
+                          href: localizations/apac-ind-TDS-TDS-parameters-setup-in-accounts-payable-parameters-and-accounts-receivable-parameters.md
+                        - name: Definer betalingsplaner med TDS-tildeling
+                          href: localizations/apac-ind-TDS-Payment-schedule-setup-with-TDS-allocation.md
+                        - name: Definer betalingsgebyrer for betalinger til TDS-myndighet
+                          href: localizations/apac-ind-TDS-Payment-fee-setup-to-charge-payment-fee-for-TDS-authority-payments.md
+                        - name: 'TDS-gruppe, PAN og TAN-informasjonsoppsett for leverandører og kunder'
+                          href: localizations/apac-ind-TDS-TDS-group-PAN-and-TAN-information-setup-for-vendors-and-customers.md
+                    - name: Formeldesigner og terskelgrense for TDS-beregning
+                      items:
+                        - name: Formeldesigner for TDS-beregninger
+                          href: localizations/apac-ind-TDS-Formula-designer.md
+                        - name: Terskelgrense og unntaksterskelgrense
+                          href: localizations/apac-ind-TDS-Threshold-limit-and-exception-threshold-limit.md
+                    - name: TDS-beregning på fakturaer
+                      items:
+                        - name: TDS-beregning på fakturaer
+                          href: localizations/apac-ind-TDS-TDS-calcuation-on-invoice.md
+                        - name: Beregn TDS på fakturaer ved hjelp av journaler
+                          href: localizations/apac-ind-TDS-Calculate-TDS-on-invoices-using-journals.md
+                        - name: Beregn TDS-fakturaer ved hjelp av bestillingsskjema og salgsordreskjema
+                          href: localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md
+                        - name: TDS-beregning på fakturaer fra siden Fritekstfaktura
+                          href: localizations/apac-ind-TDS-TDS-calculation-on-invoices-using-free-text-invoice-form.md
+                        - name: Del fakturafunksjonalitet
+                          href: localizations/apac-ind-TDS-Split-invoice-functionality.md
+                    - name: TDS-beregning på betalinger og egenveksler
+                      href: localizations/apac-ind-TDS-TDS-calculation-on-payments-and-promissory-notes.md
+                    - name: TDS-beregning på konserninterne transaksjoner
+                      href: localizations/apac-ind-TDS-TDS-calculation-on-intercompany-transactions.md
+                    - name: TDS-utligningsprosess
+                      items:
+                        - name: TDS-beregning på betalinger og egenveksler
+                          href: localizations/apac-ind-TDS-TDS-calculation-on-payments-and-promissory-notes.md
+                        - name: TDS-beregning på konserninterne transaksjoner
+                          href: localizations/apac-ind-TDS-TDS-calculation-on-intercompany-transactions.md
+                        - name: TDS-utligningsprosess
+                          items:
+                            - name: Kjør den periodiske TDS-utligningsprosessen
+                              href: localizations/apac-ind-TDS-Run-the-periodic-TDS-settlement-process.md
+                            - name: Utlign TDS-betalinger til TDS-myndighetsleverandører og generer TDS challan
+                              href: localizations/apac-ind-TDS-Settle-TDS-payments-to-TDS-authority-vendors-and-generate-TDS-challan.md
+                            - name: Vis posterte TDS-betalinger og -transaksjoner for en TDS-utligningsperiode
+                              href: localizations/apac-ind-TDS-View-TDS-payments-and-TDS-transactions-posted-for-a-TDS-settlement-period.md
+                        - name: Registrer og oppdater TDS-sertifikatnumre og -datoer
+                          items:
+                            - name: Registrer TDS-fradragsberettigede sertifikatnumre
+                              href: localizations/apac-ind-TDS-Record-TDS-recoverable-certificate-numbers.md
+                            - name: Oppdater sertifikatnumre og datoer for TDS-transaksjoner
+                              href: localizations/apac-ind-TDS-Update-certificate-numbers-and-dates-for-TDS-transactions.md
             - name: Italia
               items:
                 - name: Oversikt over Italia

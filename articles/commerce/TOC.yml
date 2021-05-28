@@ -376,13 +376,11 @@
                       href: aad-pos-logon.md
                     - name: Produkt- og kundesøk i salgssted
                       href: POS-search-improvements.md
-                    - name: Søke etter produkter og produktvarianter under ordreregistrering
+                    - name: Søk etter produkter og produktvarianter under ordreregistrering
                       href: ../supply-chain/pim/search-products-product-variants.md?toc=/dynamics365/commerce/toc.json
                     - name: Forbedringer for kontanttransaksjoner
                       href: cash-mgmt.md
-                    - name: Lageroppslag i salgsstedet
-                      href: product-variants-POS.md
-                    - name: Suspendere og gjenoppta transaksjoner i salgsstedet
+                    - name: Suspender og gjenoppta transaksjoner i salgsstedet
                       href: pos-suspend-recall-transactions.md
                     - name: Frakoblet funksjonalitet for salgssted
                       href: pos-offline-functionality.md
@@ -712,13 +710,15 @@
                       href: pos-inbound-inventory-operation.md
                     - name: Utgående lageroperasjon i salgsstedet
                       href: pos-outbound-inventory-operation.md
-                    - name: Beregne lagertilgjengelighet for detaljhandelskanaler
+                    - name: Beregn lagertilgjengelighet for detaljhandelskanaler
                       href: calculated-inventory-retail-channels.md
+                    - name: Lageroppslagsoperasjon i salgsstedet
+                      href: pos-inventory-lookup-operation.md
                 - name: Bestillinger
                   items:
                     - name: Oversikt over bestilling
                       href: ../supply-chain/procurement/purchase-order-overview.md?toc=/dynamics365/commerce/toc.json
-                    - name: Opprette bestillinger
+                    - name: Opprett bestillinger
                       href: ../supply-chain/procurement/purchase-order-creation.md?toc=/dynamics365/commerce/toc.json
                     - name: Mottaksseddel mot bestillinger
                       href: ../supply-chain/procurement/product-receipt-against-purchase-orders.md?toc=/dynamics365/commerce/toc.json
@@ -2448,10 +2448,34 @@
                       href: dev-itpro/pos-extension/pos-extension-getting-started.md
                     - name: Opprett et pakkeprosjekt for salgsstedsutvidelse
                       href: dev-itpro/pos-extension/create-pos-extension-package.md
-                    - name: Opprett en appx-fil for Modern POS-utvidelse
+                    - name: Opprett en .appx-fil for Modern POS-utvidelsespakke
                       href: dev-itpro/pos-extension/create-pos-extension-appx.md
-                    - name: Feilsøk en salgsstedsutvidelse
+                    - name: Feilsøk salgsstedsutvidelser
                       href: dev-itpro/pos-extension/debug-pos-extension.md
+                    - name: Utvidelsespakking og -distribusjon
+                      items:
+                        - name: Opprett en Modern POS-utvidelsespakke
+                          href: dev-itpro/pos-extension/mpos-extension-packaging.md
+                        - name: Kodesignering av en utvidelsespakke for Modern POS (MSIX)
+                          href: dev-itpro/pos-extension/mpos-extension-signing.md
+                        - name: Opprett en utvidelsespakke for Cloud POS
+                          href: dev-itpro/pos-extension/cpos-extension-package.md
+                    - name: Overfør en salgsstedsutvidelse til uavhengig pakkemodell
+                      href: dev-itpro/pos-extension/migrate-pos-extension.md
+                    - name: Utviklingsveiledning for salgsstedsutvidelse
+                      items:
+                        - name: Grunnleggende om salgsstedsutvidelse
+                          href: dev-itpro/pos-extension/pos-extension-basics.md
+                        - name: Opprett en egendefinert visning i salgssted
+                          href: dev-itpro/pos-extension/custom-pos-view.md
+                        - name: Bruk salgsstedskontroller i utvidelser
+                          href: dev-itpro/pos-extension/controls-pos-extension.md
+                        - name: Oppgaver
+                          items:
+                            - name: Bruk Knockout.js i salgsstedsutvidelser
+                              href: dev-itpro/pos-extension/knockout-pos-extension.md
+                            - name: 'Bruk egendefinerte, hodeløse Commerce API-er'
+                              href: dev-itpro/pos-extension/consume-apis-pos.md
             - name: Utvidelsesmulighet for Hardware Station
               items:
                 - name: Hardware Station og utvidelsesmulighet
