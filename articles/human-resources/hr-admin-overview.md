@@ -8,7 +8,6 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -16,91 +15,91 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7a5f6ff75667f79894fce09b4fafeeaf31eea31e
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 2009b3965f032ae54b83835ae481c47b0234a231
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5889770"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6053737"
 ---
-# <a name="administration-overview"></a><span data-ttu-id="57b9c-103">Oversikt over administrasjon</span><span class="sxs-lookup"><span data-stu-id="57b9c-103">Administration overview</span></span>
+# <a name="administration-overview"></a><span data-ttu-id="20d1d-103">Oversikt over administrasjon</span><span class="sxs-lookup"><span data-stu-id="20d1d-103">Administration overview</span></span>
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-<span data-ttu-id="57b9c-104">Denne administratorveiledningen hjelper deg med å sette opp, administrere og feilsøke Dynamics 365 Human Resources.</span><span class="sxs-lookup"><span data-stu-id="57b9c-104">This Administrator Guide helps you set up, manage, and troubleshoot Dynamics 365 Human Resources.</span></span>
+<span data-ttu-id="20d1d-104">Denne administratorveiledningen hjelper deg med å sette opp, administrere og feilsøke Dynamics 365 Human Resources.</span><span class="sxs-lookup"><span data-stu-id="20d1d-104">This Administrator Guide helps you set up, manage, and troubleshoot Dynamics 365 Human Resources.</span></span>
 
-- [<span data-ttu-id="57b9c-105">Systemkrav</span><span class="sxs-lookup"><span data-stu-id="57b9c-105">System requirements</span></span>](hr-admin-system-requirements.md)
+- [<span data-ttu-id="20d1d-105">Systemkrav</span><span class="sxs-lookup"><span data-stu-id="20d1d-105">System requirements</span></span>](hr-admin-system-requirements.md)
 
-- <span data-ttu-id="57b9c-106">Definere og administrere forekomster</span><span class="sxs-lookup"><span data-stu-id="57b9c-106">Set up and manage instances</span></span>
-  - [<span data-ttu-id="57b9c-107">Klargjøre Human Resources</span><span class="sxs-lookup"><span data-stu-id="57b9c-107">Provision Human Resources</span></span>](hr-admin-setup-provision.md)
-  - [<span data-ttu-id="57b9c-108">Kopier en forekomst</span><span class="sxs-lookup"><span data-stu-id="57b9c-108">Copy an instance</span></span>](hr-admin-setup-copy-instance.md)
-  - [<span data-ttu-id="57b9c-109">Fjerne en forekomst</span><span class="sxs-lookup"><span data-stu-id="57b9c-109">Remove an instance</span></span>](hr-admin-setup-remove-instance.md)
-  - [<span data-ttu-id="57b9c-110">Oppdatere prosess</span><span class="sxs-lookup"><span data-stu-id="57b9c-110">Update process</span></span>](hr-admin-setup-update-process.md)
+- <span data-ttu-id="20d1d-106">Definere og administrere forekomster</span><span class="sxs-lookup"><span data-stu-id="20d1d-106">Set up and manage instances</span></span>
+  - [<span data-ttu-id="20d1d-107">Klargjøre Human Resources</span><span class="sxs-lookup"><span data-stu-id="20d1d-107">Provision Human Resources</span></span>](hr-admin-setup-provision.md)
+  - [<span data-ttu-id="20d1d-108">Kopier en forekomst</span><span class="sxs-lookup"><span data-stu-id="20d1d-108">Copy an instance</span></span>](hr-admin-setup-copy-instance.md)
+  - [<span data-ttu-id="20d1d-109">Fjerne en forekomst</span><span class="sxs-lookup"><span data-stu-id="20d1d-109">Remove an instance</span></span>](hr-admin-setup-remove-instance.md)
+  - [<span data-ttu-id="20d1d-110">Oppdatere prosess</span><span class="sxs-lookup"><span data-stu-id="20d1d-110">Update process</span></span>](hr-admin-setup-update-process.md)
 
-- <span data-ttu-id="57b9c-111">Konfigurere dataintegrering</span><span class="sxs-lookup"><span data-stu-id="57b9c-111">Set up data integration</span></span>
-  - [<span data-ttu-id="57b9c-112">Velg en dataintegreringsteknologi</span><span class="sxs-lookup"><span data-stu-id="57b9c-112">Choose a data integration technology</span></span>](hr-admin-integration-choose-technology.md)
-  - [<span data-ttu-id="57b9c-113">Konfigurere Dataverse-integrering</span><span class="sxs-lookup"><span data-stu-id="57b9c-113">Configure Dataverse integration</span></span>](hr-admin-integration-common-data-service.md)
-  - [<span data-ttu-id="57b9c-114">Konfigurere integrering med Finance</span><span class="sxs-lookup"><span data-stu-id="57b9c-114">Configure integration with Finance</span></span>](hr-admin-integration-finance.md)
-  - [<span data-ttu-id="57b9c-115">Konfigurere integrering med Dayforce</span><span class="sxs-lookup"><span data-stu-id="57b9c-115">Configure integration with Dayforce</span></span>](hr-admin-integration-dayforce.md)
-  - [<span data-ttu-id="57b9c-116">Opprette en app for regelmessig dataeksport</span><span class="sxs-lookup"><span data-stu-id="57b9c-116">Create a recurring data export app</span></span>](hr-admin-integration-recurring-data-export.md)
-  - <span data-ttu-id="57b9c-117">Integrere med Office</span><span class="sxs-lookup"><span data-stu-id="57b9c-117">Integrate with Office</span></span>
-    - [<span data-ttu-id="57b9c-118">Opplæring i Office-integrering</span><span class="sxs-lookup"><span data-stu-id="57b9c-118">Office integration tutorial</span></span>](../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
-    - [<span data-ttu-id="57b9c-119">Oppdatere enhetsdata i Excel</span><span class="sxs-lookup"><span data-stu-id="57b9c-119">Update entity data in Excel</span></span>](../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
-    - [<span data-ttu-id="57b9c-120">Opprette opplevelser for Åpne i Excel</span><span class="sxs-lookup"><span data-stu-id="57b9c-120">Create Open in Excel experiences</span></span>](../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
-    - [<span data-ttu-id="57b9c-121">Feilsøke Office-integrering</span><span class="sxs-lookup"><span data-stu-id="57b9c-121">Troubleshoot Office integration</span></span>](../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
+- <span data-ttu-id="20d1d-111">Konfigurere dataintegrering</span><span class="sxs-lookup"><span data-stu-id="20d1d-111">Set up data integration</span></span>
+  - [<span data-ttu-id="20d1d-112">Velg en dataintegreringsteknologi</span><span class="sxs-lookup"><span data-stu-id="20d1d-112">Choose a data integration technology</span></span>](hr-admin-integration-choose-technology.md)
+  - [<span data-ttu-id="20d1d-113">Konfigurere Dataverse-integrering</span><span class="sxs-lookup"><span data-stu-id="20d1d-113">Configure Dataverse integration</span></span>](hr-admin-integration-common-data-service.md)
+  - [<span data-ttu-id="20d1d-114">Konfigurere integrering med Finance</span><span class="sxs-lookup"><span data-stu-id="20d1d-114">Configure integration with Finance</span></span>](hr-admin-integration-finance.md)
+  - [<span data-ttu-id="20d1d-115">Konfigurere integrering med Dayforce</span><span class="sxs-lookup"><span data-stu-id="20d1d-115">Configure integration with Dayforce</span></span>](hr-admin-integration-dayforce.md)
+  - [<span data-ttu-id="20d1d-116">Opprette en app for regelmessig dataeksport</span><span class="sxs-lookup"><span data-stu-id="20d1d-116">Create a recurring data export app</span></span>](hr-admin-integration-recurring-data-export.md)
+  - <span data-ttu-id="20d1d-117">Integrere med Office</span><span class="sxs-lookup"><span data-stu-id="20d1d-117">Integrate with Office</span></span>
+    - [<span data-ttu-id="20d1d-118">Opplæring i Office-integrering</span><span class="sxs-lookup"><span data-stu-id="20d1d-118">Office integration tutorial</span></span>](../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
+    - [<span data-ttu-id="20d1d-119">Oppdatere enhetsdata i Excel</span><span class="sxs-lookup"><span data-stu-id="20d1d-119">Update entity data in Excel</span></span>](../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
+    - [<span data-ttu-id="20d1d-120">Opprette opplevelser for Åpne i Excel</span><span class="sxs-lookup"><span data-stu-id="20d1d-120">Create Open in Excel experiences</span></span>](../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
+    - [<span data-ttu-id="20d1d-121">Feilsøke Office-integrering</span><span class="sxs-lookup"><span data-stu-id="20d1d-121">Troubleshoot Office integration</span></span>](../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
 
-- [<span data-ttu-id="57b9c-122">Behandle funksjoner</span><span class="sxs-lookup"><span data-stu-id="57b9c-122">Manage features</span></span>](hr-admin-manage-features.md)
+- [<span data-ttu-id="20d1d-122">Behandle funksjoner</span><span class="sxs-lookup"><span data-stu-id="20d1d-122">Manage features</span></span>](hr-admin-manage-features.md)
 
-- [<span data-ttu-id="57b9c-123">Konfigurere og administrere databaselogging</span><span class="sxs-lookup"><span data-stu-id="57b9c-123">Configure and manage database logging</span></span>](hr-admin-database-logging.md)
+- [<span data-ttu-id="20d1d-123">Konfigurere og administrere databaselogging</span><span class="sxs-lookup"><span data-stu-id="20d1d-123">Configure and manage database logging</span></span>](hr-admin-database-logging.md)
 
-- <span data-ttu-id="57b9c-124">Utforske brukergrensesnittet</span><span class="sxs-lookup"><span data-stu-id="57b9c-124">Explore the user interface</span></span>
-  - [<span data-ttu-id="57b9c-125">Elementer i brukergrensesnitt</span><span class="sxs-lookup"><span data-stu-id="57b9c-125">User interface elements</span></span>](../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/human-resources/toc.json)
-  - [<span data-ttu-id="57b9c-126">Tilgjengelighetsfunksjoner</span><span class="sxs-lookup"><span data-stu-id="57b9c-126">Accessibility features</span></span>](../fin-ops-core/fin-ops/get-started/accessibility-features.md?toc=/dynamics365/human-resources/toc.json)
-  - [<span data-ttu-id="57b9c-127">Oversikt over funksjonsbehandling</span><span class="sxs-lookup"><span data-stu-id="57b9c-127">Feature management overview</span></span>](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md?toc=/dynamics365/human-resources/toc.json)
-  - [<span data-ttu-id="57b9c-128">Vanlige spørsmål om klient</span><span class="sxs-lookup"><span data-stu-id="57b9c-128">Client FAQ</span></span>](../fin-ops-core/fin-ops/get-started/client-faq.md?toc=/dynamics365/human-resources/toc.json)
-  - [<span data-ttu-id="57b9c-129">Handlingssøk</span><span class="sxs-lookup"><span data-stu-id="57b9c-129">Action search</span></span>](../fin-ops-core/fin-ops/get-started/action-search.md?toc=/dynamics365/human-resources/toc.json)
-  - [<span data-ttu-id="57b9c-130">Avansert syntaks for filtrering og spørring</span><span class="sxs-lookup"><span data-stu-id="57b9c-130">Advanced filtering and query syntax</span></span>](../fin-ops-core/fin-ops/get-started/advanced-filtering-query-options.md?toc=/dynamics365/human-resources/toc.json)
-  - [<span data-ttu-id="57b9c-131">Konfigurere og filtrere arbeidsområder</span><span class="sxs-lookup"><span data-stu-id="57b9c-131">Configure and filter workspaces</span></span>](../fin-ops-core/fin-ops/get-started/configure-filter-workspaces.md?toc=/dynamics365/financehuman-resources/toc.json)
-  - [<span data-ttu-id="57b9c-132">Vise sider side ved side ved hjelp av funksjonen Åpne i nytt vindu</span><span class="sxs-lookup"><span data-stu-id="57b9c-132">Show pages side by side by using the Open in new window feature</span></span>](../fin-ops-core/fin-ops/get-started/display-pages-side-by-side.md?toc=/dynamics365/human-resources/toc.json)
-  - [<span data-ttu-id="57b9c-133">Hurtigtaster</span><span class="sxs-lookup"><span data-stu-id="57b9c-133">Keyboard shortcuts</span></span>](../fin-ops-core/fin-ops/get-started/shortcut-keys.md?toc=/dynamics365/human-resources/toc.json)
-  - [<span data-ttu-id="57b9c-134">Endre bannerne eller logobildene for juridiske enheter</span><span class="sxs-lookup"><span data-stu-id="57b9c-134">Change the banners or logo images for legal entities</span></span>](../fin-ops-core/fin-ops/get-started/tasks/change-banner-or-logo.md?toc=/dynamics365/human-resources/toc.json)
-  - [<span data-ttu-id="57b9c-135">Navigasjonssøk</span><span class="sxs-lookup"><span data-stu-id="57b9c-135">Navigation search</span></span>](../fin-ops-core/fin-ops/get-started/navigation-search.md?toc=/dynamics365/human-resources/toc.json)
-  - [<span data-ttu-id="57b9c-136">Tilpasse brukeropplevelsen</span><span class="sxs-lookup"><span data-stu-id="57b9c-136">Personalize the user experience</span></span>](../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/human-resources/toc.json)
-  - [<span data-ttu-id="57b9c-137">Lagrede visninger</span><span class="sxs-lookup"><span data-stu-id="57b9c-137">Saved views</span></span>](../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/human-resources/toc.json)
-  - [<span data-ttu-id="57b9c-138">Opprette og arbeide med egendefinerte felt</span><span class="sxs-lookup"><span data-stu-id="57b9c-138">Create and work with custom fields</span></span>](../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/human-resources/toc.json)
-  - [<span data-ttu-id="57b9c-139">Bygge inn Microsoft Power Apps</span><span class="sxs-lookup"><span data-stu-id="57b9c-139">Embed Microsoft Power Apps</span></span>](../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/human-resources/toc.json)
-  - [<span data-ttu-id="57b9c-140">Finne informasjon ved hjelp av oppslag</span><span class="sxs-lookup"><span data-stu-id="57b9c-140">Find information by using lookups</span></span>](../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/human-resources/toc.json)
-  - [<span data-ttu-id="57b9c-141">Endre datoen for en økt</span><span class="sxs-lookup"><span data-stu-id="57b9c-141">Change the date for a session</span></span>](../fin-ops-core/fin-ops/organization-administration/tasks/change-date-session.md?toc=/dynamics365/human-resources/toc.json)
-  - [<span data-ttu-id="57b9c-142">Angi en brukers foretrukkede tidssone</span><span class="sxs-lookup"><span data-stu-id="57b9c-142">Set a user's preferred time zone</span></span>](../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/human-resources/toc.json)
-  - [<span data-ttu-id="57b9c-143">Forstå Lifecycle Services</span><span class="sxs-lookup"><span data-stu-id="57b9c-143">Understand Lifecycle Services</span></span>](../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/human-resources/toc.json)
+- <span data-ttu-id="20d1d-124">Utforske brukergrensesnittet</span><span class="sxs-lookup"><span data-stu-id="20d1d-124">Explore the user interface</span></span>
+  - [<span data-ttu-id="20d1d-125">Elementer i brukergrensesnitt</span><span class="sxs-lookup"><span data-stu-id="20d1d-125">User interface elements</span></span>](../fin-ops-core/fin-ops/get-started/user-interface-elements.md?toc=/dynamics365/human-resources/toc.json)
+  - [<span data-ttu-id="20d1d-126">Tilgjengelighetsfunksjoner</span><span class="sxs-lookup"><span data-stu-id="20d1d-126">Accessibility features</span></span>](../fin-ops-core/fin-ops/get-started/accessibility-features.md?toc=/dynamics365/human-resources/toc.json)
+  - [<span data-ttu-id="20d1d-127">Oversikt over funksjonsbehandling</span><span class="sxs-lookup"><span data-stu-id="20d1d-127">Feature management overview</span></span>](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md?toc=/dynamics365/human-resources/toc.json)
+  - [<span data-ttu-id="20d1d-128">Vanlige spørsmål om klient</span><span class="sxs-lookup"><span data-stu-id="20d1d-128">Client FAQ</span></span>](../fin-ops-core/fin-ops/get-started/client-faq.md?toc=/dynamics365/human-resources/toc.json)
+  - [<span data-ttu-id="20d1d-129">Handlingssøk</span><span class="sxs-lookup"><span data-stu-id="20d1d-129">Action search</span></span>](../fin-ops-core/fin-ops/get-started/action-search.md?toc=/dynamics365/human-resources/toc.json)
+  - [<span data-ttu-id="20d1d-130">Avansert syntaks for filtrering og spørring</span><span class="sxs-lookup"><span data-stu-id="20d1d-130">Advanced filtering and query syntax</span></span>](../fin-ops-core/fin-ops/get-started/advanced-filtering-query-options.md?toc=/dynamics365/human-resources/toc.json)
+  - [<span data-ttu-id="20d1d-131">Konfigurere og filtrere arbeidsområder</span><span class="sxs-lookup"><span data-stu-id="20d1d-131">Configure and filter workspaces</span></span>](../fin-ops-core/fin-ops/get-started/configure-filter-workspaces.md?toc=/dynamics365/financehuman-resources/toc.json)
+  - [<span data-ttu-id="20d1d-132">Vise sider side ved side ved hjelp av funksjonen Åpne i nytt vindu</span><span class="sxs-lookup"><span data-stu-id="20d1d-132">Show pages side by side by using the Open in new window feature</span></span>](../fin-ops-core/fin-ops/get-started/display-pages-side-by-side.md?toc=/dynamics365/human-resources/toc.json)
+  - [<span data-ttu-id="20d1d-133">Hurtigtaster</span><span class="sxs-lookup"><span data-stu-id="20d1d-133">Keyboard shortcuts</span></span>](../fin-ops-core/fin-ops/get-started/shortcut-keys.md?toc=/dynamics365/human-resources/toc.json)
+  - [<span data-ttu-id="20d1d-134">Endre bannerne eller logobildene for juridiske enheter</span><span class="sxs-lookup"><span data-stu-id="20d1d-134">Change the banners or logo images for legal entities</span></span>](../fin-ops-core/fin-ops/get-started/tasks/change-banner-or-logo.md?toc=/dynamics365/human-resources/toc.json)
+  - [<span data-ttu-id="20d1d-135">Navigasjonssøk</span><span class="sxs-lookup"><span data-stu-id="20d1d-135">Navigation search</span></span>](../fin-ops-core/fin-ops/get-started/navigation-search.md?toc=/dynamics365/human-resources/toc.json)
+  - [<span data-ttu-id="20d1d-136">Tilpasse brukeropplevelsen</span><span class="sxs-lookup"><span data-stu-id="20d1d-136">Personalize the user experience</span></span>](../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/human-resources/toc.json)
+  - [<span data-ttu-id="20d1d-137">Lagrede visninger</span><span class="sxs-lookup"><span data-stu-id="20d1d-137">Saved views</span></span>](../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/human-resources/toc.json)
+  - [<span data-ttu-id="20d1d-138">Opprette og arbeide med egendefinerte felt</span><span class="sxs-lookup"><span data-stu-id="20d1d-138">Create and work with custom fields</span></span>](../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/human-resources/toc.json)
+  - [<span data-ttu-id="20d1d-139">Bygge inn Microsoft Power Apps</span><span class="sxs-lookup"><span data-stu-id="20d1d-139">Embed Microsoft Power Apps</span></span>](../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/human-resources/toc.json)
+  - [<span data-ttu-id="20d1d-140">Finne informasjon ved hjelp av oppslag</span><span class="sxs-lookup"><span data-stu-id="20d1d-140">Find information by using lookups</span></span>](../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/human-resources/toc.json)
+  - [<span data-ttu-id="20d1d-141">Endre datoen for en økt</span><span class="sxs-lookup"><span data-stu-id="20d1d-141">Change the date for a session</span></span>](../fin-ops-core/fin-ops/organization-administration/tasks/change-date-session.md?toc=/dynamics365/human-resources/toc.json)
+  - [<span data-ttu-id="20d1d-142">Angi en brukers foretrukkede tidssone</span><span class="sxs-lookup"><span data-stu-id="20d1d-142">Set a user's preferred time zone</span></span>](../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/human-resources/toc.json)
+  - [<span data-ttu-id="20d1d-143">Forstå Lifecycle Services</span><span class="sxs-lookup"><span data-stu-id="20d1d-143">Understand Lifecycle Services</span></span>](../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/human-resources/toc.json)
 
-- <span data-ttu-id="57b9c-144">Dokumentasjonsressurser</span><span class="sxs-lookup"><span data-stu-id="57b9c-144">Documentation resources</span></span>
-  - [<span data-ttu-id="57b9c-145">Hjelpesystem</span><span class="sxs-lookup"><span data-stu-id="57b9c-145">Help system</span></span>](../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/human-resources/toc.json)
-  - [<span data-ttu-id="57b9c-146">Koble til hjelpesystemet</span><span class="sxs-lookup"><span data-stu-id="57b9c-146">Connect the Help system</span></span>](../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/human-resources/toc.json)
-  - [<span data-ttu-id="57b9c-147">Vise og eksportere feltbeskrivelser</span><span class="sxs-lookup"><span data-stu-id="57b9c-147">View and export field descriptions</span></span>](../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/human-resources/toc.json)
-  - [<span data-ttu-id="57b9c-148">Oppgaveregistrering</span><span class="sxs-lookup"><span data-stu-id="57b9c-148">Task Recorder</span></span>](../fin-ops-core/dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/human-resources/toc.json)
-  - [<span data-ttu-id="57b9c-149">Lage dokumentasjon eller opplæring med Oppgaveregistrering</span><span class="sxs-lookup"><span data-stu-id="57b9c-149">Create documentation or training with Task Recorder</span></span>](../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/human-resources/toc.json)
+- <span data-ttu-id="20d1d-144">Dokumentasjonsressurser</span><span class="sxs-lookup"><span data-stu-id="20d1d-144">Documentation resources</span></span>
+  - [<span data-ttu-id="20d1d-145">Hjelpesystem</span><span class="sxs-lookup"><span data-stu-id="20d1d-145">Help system</span></span>](../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/human-resources/toc.json)
+  - [<span data-ttu-id="20d1d-146">Koble til hjelpesystemet</span><span class="sxs-lookup"><span data-stu-id="20d1d-146">Connect the Help system</span></span>](../fin-ops-core/fin-ops/get-started/help-connect.md?toc=/dynamics365/human-resources/toc.json)
+  - [<span data-ttu-id="20d1d-147">Vise og eksportere feltbeskrivelser</span><span class="sxs-lookup"><span data-stu-id="20d1d-147">View and export field descriptions</span></span>](../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/human-resources/toc.json)
+  - [<span data-ttu-id="20d1d-148">Oppgaveregistrering</span><span class="sxs-lookup"><span data-stu-id="20d1d-148">Task Recorder</span></span>](../fin-ops-core/dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/human-resources/toc.json)
+  - [<span data-ttu-id="20d1d-149">Lage dokumentasjon eller opplæring med Oppgaveregistrering</span><span class="sxs-lookup"><span data-stu-id="20d1d-149">Create documentation or training with Task Recorder</span></span>](../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/human-resources/toc.json)
 
-- <span data-ttu-id="57b9c-150">Feilsøke Human Resources</span><span class="sxs-lookup"><span data-stu-id="57b9c-150">Troubleshoot Human Resources</span></span>
-  - [<span data-ttu-id="57b9c-151">Få kundestøtte</span><span class="sxs-lookup"><span data-stu-id="57b9c-151">Get support</span></span>](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md)
-  - [<span data-ttu-id="57b9c-152">Optimalisere ytelsen med oppgaver for automatisk opprydding</span><span class="sxs-lookup"><span data-stu-id="57b9c-152">Optimize performance with auto cleanup tasks</span></span>](hr-admin-troubleshooting-batch-history.md)
-  - [<span data-ttu-id="57b9c-153">Analyserapporter blir ikke oppdatert</span><span class="sxs-lookup"><span data-stu-id="57b9c-153">Analytic reports aren't updated</span></span>](hr-admin-troubleshooting-analytic-reports.md)
-  - [<span data-ttu-id="57b9c-154">Kan ikke opprette et miljø i administrasjonssenteret for Power Apps</span><span class="sxs-lookup"><span data-stu-id="57b9c-154">Can't create an environment in the Power Apps Admin center</span></span>](hr-admin-troubleshooting-power-apps.md)
-  - [<span data-ttu-id="57b9c-155">Klientfrakoblinger</span><span class="sxs-lookup"><span data-stu-id="57b9c-155">Client disconnects</span></span>](hr-admin-troubleshooting-disconnect.md)
-  - [<span data-ttu-id="57b9c-156">Unngå avkortet tekst i stillingshierarki</span><span class="sxs-lookup"><span data-stu-id="57b9c-156">Avoid truncated text in position hierarchy</span></span>](hr-admin-troubleshooting-truncate.md)
-  - [<span data-ttu-id="57b9c-157">Kjøre kompensasjonsprosessen</span><span class="sxs-lookup"><span data-stu-id="57b9c-157">Run the compensation process</span></span>](hr-admin-troubleshooting-compensation.md)
-  - [<span data-ttu-id="57b9c-158">Lagre en oppgaveveiledning for LCS</span><span class="sxs-lookup"><span data-stu-id="57b9c-158">Save a task guide to LCS</span></span>](hr-admin-troubleshooting-task-guide.md)
-  - [<span data-ttu-id="57b9c-159">Tilgang til private adresser etter sikkerhetsrolle</span><span class="sxs-lookup"><span data-stu-id="57b9c-159">Access private addresses by security role</span></span>](hr-admin-troubleshooting-private-addresses.md)
-  - [<span data-ttu-id="57b9c-160">Human Resources vises ikke i Dynamics 365-apper</span><span class="sxs-lookup"><span data-stu-id="57b9c-160">Human Resources doesn't appear in Dynamics 365 apps</span></span>](hr-admin-troubleshooting-not-in-apps.md)
-  - [<span data-ttu-id="57b9c-161">Rapporteringsalternativer</span><span class="sxs-lookup"><span data-stu-id="57b9c-161">Reporting options</span></span>](hr-admin-troubleshooting-reporting.md)
-  - [<span data-ttu-id="57b9c-162">Vanlige spørsmål om integrering</span><span class="sxs-lookup"><span data-stu-id="57b9c-162">Integration FAQ</span></span>](hr-admin-troubleshooting-integration.md)
+- <span data-ttu-id="20d1d-150">Feilsøke Human Resources</span><span class="sxs-lookup"><span data-stu-id="20d1d-150">Troubleshoot Human Resources</span></span>
+  - [<span data-ttu-id="20d1d-151">Få kundestøtte</span><span class="sxs-lookup"><span data-stu-id="20d1d-151">Get support</span></span>](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md)
+  - [<span data-ttu-id="20d1d-152">Optimalisere ytelsen med oppgaver for automatisk opprydding</span><span class="sxs-lookup"><span data-stu-id="20d1d-152">Optimize performance with auto cleanup tasks</span></span>](hr-admin-troubleshooting-batch-history.md)
+  - [<span data-ttu-id="20d1d-153">Analyserapporter blir ikke oppdatert</span><span class="sxs-lookup"><span data-stu-id="20d1d-153">Analytic reports aren't updated</span></span>](hr-admin-troubleshooting-analytic-reports.md)
+  - [<span data-ttu-id="20d1d-154">Kan ikke opprette et miljø i administrasjonssenteret for Power Apps</span><span class="sxs-lookup"><span data-stu-id="20d1d-154">Can't create an environment in the Power Apps Admin center</span></span>](hr-admin-troubleshooting-power-apps.md)
+  - [<span data-ttu-id="20d1d-155">Klientfrakoblinger</span><span class="sxs-lookup"><span data-stu-id="20d1d-155">Client disconnects</span></span>](hr-admin-troubleshooting-disconnect.md)
+  - [<span data-ttu-id="20d1d-156">Unngå avkortet tekst i stillingshierarki</span><span class="sxs-lookup"><span data-stu-id="20d1d-156">Avoid truncated text in position hierarchy</span></span>](hr-admin-troubleshooting-truncate.md)
+  - [<span data-ttu-id="20d1d-157">Kjøre kompensasjonsprosessen</span><span class="sxs-lookup"><span data-stu-id="20d1d-157">Run the compensation process</span></span>](hr-admin-troubleshooting-compensation.md)
+  - [<span data-ttu-id="20d1d-158">Lagre en oppgaveveiledning for LCS</span><span class="sxs-lookup"><span data-stu-id="20d1d-158">Save a task guide to LCS</span></span>](hr-admin-troubleshooting-task-guide.md)
+  - [<span data-ttu-id="20d1d-159">Tilgang til private adresser etter sikkerhetsrolle</span><span class="sxs-lookup"><span data-stu-id="20d1d-159">Access private addresses by security role</span></span>](hr-admin-troubleshooting-private-addresses.md)
+  - [<span data-ttu-id="20d1d-160">Human Resources vises ikke i Dynamics 365-apper</span><span class="sxs-lookup"><span data-stu-id="20d1d-160">Human Resources doesn't appear in Dynamics 365 apps</span></span>](hr-admin-troubleshooting-not-in-apps.md)
+  - [<span data-ttu-id="20d1d-161">Rapporteringsalternativer</span><span class="sxs-lookup"><span data-stu-id="20d1d-161">Reporting options</span></span>](hr-admin-troubleshooting-reporting.md)
+  - [<span data-ttu-id="20d1d-162">Vanlige spørsmål om integrering</span><span class="sxs-lookup"><span data-stu-id="20d1d-162">Integration FAQ</span></span>](hr-admin-troubleshooting-integration.md)
 
-## <a name="see-also"></a><span data-ttu-id="57b9c-163">Se også</span><span class="sxs-lookup"><span data-stu-id="57b9c-163">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="20d1d-163">Se også</span><span class="sxs-lookup"><span data-stu-id="20d1d-163">See also</span></span>
 
-- [<span data-ttu-id="57b9c-164">Hva er nytt eller endret i Human Resources</span><span class="sxs-lookup"><span data-stu-id="57b9c-164">What's new or changed in Human Resources</span></span>](hr-admin-whats-new.md)
-- [<span data-ttu-id="57b9c-165">Utviklerveiledning</span><span class="sxs-lookup"><span data-stu-id="57b9c-165">Developer Guide</span></span>](hr-developer-overview.md)
-- [<span data-ttu-id="57b9c-166">Brukerveiledning</span><span class="sxs-lookup"><span data-stu-id="57b9c-166">User Guide</span></span>](hr-hrpro-overview.md)
+- [<span data-ttu-id="20d1d-164">Hva er nytt eller endret i Human Resources</span><span class="sxs-lookup"><span data-stu-id="20d1d-164">What's new or changed in Human Resources</span></span>](hr-admin-whats-new.md)
+- [<span data-ttu-id="20d1d-165">Utviklerveiledning</span><span class="sxs-lookup"><span data-stu-id="20d1d-165">Developer Guide</span></span>](hr-developer-overview.md)
+- [<span data-ttu-id="20d1d-166">Brukerveiledning</span><span class="sxs-lookup"><span data-stu-id="20d1d-166">User Guide</span></span>](hr-hrpro-overview.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
