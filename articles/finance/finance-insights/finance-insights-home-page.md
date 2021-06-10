@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: b1f034017c2cd8736c1e3ce286924bf305961390
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 3a78a162469790d797344ce9311c55bfcecd19f4
+ms.sourcegitcommit: 273903b7b73ac726d447c50f7086e6d8b0f0f74e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5898066"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "6086995"
 ---
 # <a name="finance-insights-home-page-preview"></a>Startside for Finance Insights (forhåndsversjon)
 
@@ -123,10 +123,5 @@ Demonstrasjonsdata for budsjettforslag:
 ## <a name="feedback-and-support"></a>Tilbakemelding og støtte
 
 Send en e-postmelding til [Innsikt i kundebetaling (forhåndsversjon)](mailto:fiap@microsoft.com) hvis du er interessert i å gi tilbakemelding eller trenger støtte.
-
-## <a name="privacy-notice"></a>Personvernerklæring
-
-Forhåndsversjoner (1) kan ha redusert personvern og færre sikkerhetstiltak enn Dynamics 365 Finance and Operations-tjenesten, (2) er ikke inkludert i serviceavtalen (SLA) for denne tjenesten, (3) må ikke brukes til å behandle personlige data eller andre data som er underlagt juridiske eller forskriftsmessige krav, og (4) har begrenset støtte.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

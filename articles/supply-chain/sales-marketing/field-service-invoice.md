@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: f3066741781bd9058e09d7f577a35df4c9b453d4
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 21a77a0289055285f47323803a484c012e662e3a
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5819214"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6102740"
 ---
 # <a name="synchronize-agreement-invoices-in-field-service-to-free-text-invoices-in-supply-chain-management"></a>Synkronisere avtalefakturaer i Field Service til fritekstfakturaer i Supply Chain Management
 
@@ -68,7 +68,7 @@ Kolonnen **Har avtaleopprinnelse** er lagt til i **Fakturalinje**-tabellen. Denn
 **Fakturadato** er et obligatorisk felt i Supply Chain Management. Kolonnen må derfor ha en verdi i Field Service før synkroniseringen utføres. For å imøtekomme dette kravet legges følgende logikk til:
 
 - Hvis **Fakturadato**-kolonnen er tom i **Faktura**-tabellen (det vil si hvis den ikke har en verdi), blir den satt til gjeldende dato når en fakturalinje som stammer fra en avtale, legges til.
-- Brukeren kan endre **Fakturadato**-kolonnen. Men når brukeren prøver å lagre en faktura som stammer fra en avtale, får han eller hun en forretningsprosessfeil hvis **Fakturadato**-kolonnen er tom på fakturaen.
+- Brukeren kan endre **Fakturadato**-kolonnen. Men når brukeren prøver å lagre en faktura som stammer fra en avtale, får vedkommende en forretningsprosessfeil hvis **Fakturadato**-kolonnen er tom på fakturaen.
 
 ## <a name="prerequisites-and-mapping-setup"></a>Forutsetninger og tilordningsdefinisjon
 
@@ -100,11 +100,11 @@ Følgende illustrasjoner viser en tilordning av malen i Dataintegrering.
 
 ### <a name="agreement-invoices-field-service-to-supply-chain-management-invoice-headers"></a>Avtalefakturaer (Field Service til Supply Chain Management): Fakturahoder
 
-[![Maltilordning i Dataintegrering](./media/FSFreeTextInvoice1.png)](./media/FSFreeTextInvoice1.png)
+[![Maltilordning i Dataintegrering for fakturahoder](./media/FSFreeTextInvoice1.png)](./media/FSFreeTextInvoice1.png)
 
 ### <a name="agreement-invoices-field-service-to-supply-chain-management-invoice-lines"></a>Avtalefakturaer (Field Service til Supply Chain Management): Fakturalinjer
 
-[![Maltilordning i Dataintegrering](./media/FSFreeTextInvoice2.png)](./media/FSFreeTextInvoice2.png)
+[![Maltilordning i Dataintegrering for fakturalinjer](./media/FSFreeTextInvoice2.png)](./media/FSFreeTextInvoice2.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

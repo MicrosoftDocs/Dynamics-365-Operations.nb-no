@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b2c69ab02ea9e6a5a5699a204258243d6204413b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e89e8b4860bbafe4bd47d62d2feb7d197f233d24
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825308"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6102788"
 ---
 # <a name="purchasing-policies-overview"></a>Oversikt over innkjøpspolicyer
 
@@ -61,7 +61,7 @@ Policyen 123 er definert for organisasjonshierarkiet Avdeling for Salg Storbrita
 
 Policyen 456 er definert for organisasjonshierarkiet Global innkjøpskontroll for salgs- og markedsføringsavdelingen. I policyen 456 angir ikke kontrollregelen for innkjøpsrekvisisjon at det må iverksettes begrensninger for minimum ordreantall. I denne regelen er valget av alternativet **Benytt begrensninger for minimumsbestillingsantall** opphevet.  
 
-Erik arbeider i Salg Storbritannia – salgsavdeling i Contoso Storbritannia kontoret. Policyene for både organisasjonshierarkiene Avdeling og Global innkjøpskontroll gjelder for hans avdeling. Når Erik oppretter en innkjøpsrekvisisjon, må systemet bestemme hvilken policy som skal brukes. Systemansvarlig konfigurerer innkjøpspolicyparametere for å angi at innkjøpspolicyer må brukes i den følgende prioritetsrekkefølgen:
+Erik arbeider i Salg Storbritannia – salgsavdeling i Contoso Storbritannia-kontoret. Policyene for både organisasjonshierarkiene Avdeling og Global innkjøpskontroll gjelder for hans avdeling. Når Erik oppretter en innkjøpsrekvisisjon, må systemet bestemme hvilken policy som skal brukes. Systemansvarlig konfigurerer innkjøpspolicyparametere for å angi at innkjøpspolicyer må brukes i den følgende prioritetsrekkefølgen:
 
 1.  Global innkjøpskontroll
 2.  Avdeling
@@ -132,7 +132,7 @@ Konsolideringsregel for bestillingsopprettelse og behov definerer policyreglene 
 -   I fanen **Pristoleranse** kan du definere regler for å rute godkjente innkjøpsrekvisisjoner tilbake via gjennomgangsprosessen, når prisen på en vare i en innkjøpskatalog øker. Angi deretter det maksimale beløpet som nettobeløpet for en linjevare i en innkjøpsrekvisisjon kan øke, fra tidspunktet innkjøpsrekvisisjonen godkjennes til tidspunktet bestillingen opprettes. Nettobeløpet beregnes ved å bruke følgende formel: (\[Antall × (enhetspris-rabatt) ÷ prisenhet\] + innkjøpstillegg) × (100-rabattprosent) ÷ 100. Innkjøpsrekvisisjonslinjer som overskrider pristoleransen du har angitt, blir låst for manuell behandling. Reglene du konfigurerer i fanen **Feilbehandling**, bestemmer hvordan innkjøpsrekvisisjonslinjene behandles.
 -   I fanen **Feilbehandling** kan du konfigurere behandlingsregelen som skal brukes for en innkjøpsrekvisisjon hvis den ikke kan valideres når bestillingen opprettes, på grunn av en leverandørfeil eller en pristoleransefeil. Velg ett av følgende alternativer:
     -   **Ingen handling** – innkjøpsrekvisisjonslinjene forblir på siden **Frigi godkjente innkjøpsrekvisisjoner**. Statusen for innkjøpsrekvisisjonslinjene blir værende **Godkjent**. Feilene må imidlertid løses før en bestilling kan genereres for innkjøpsrekvisisjonslinjene.
-    -   **Avbryt innkjøpsrekvisisjonslinjen** – innkjøpsrekvisisjonslinjene avbrytes. Bestilleren kan opprette en ny innkjøpsrekvisisjon for de annullerte linjene hvis han eller hun fortsatt ønsker å rekvirere linjevarene.
+    -   **Avbryt innkjøpsrekvisisjonslinjen** – innkjøpsrekvisisjonslinjene avbrytes. Bestilleren kan opprette en ny innkjøpsrekvisisjon for de annullerte linjene hvis vedkommende fortsatt ønsker å rekvirere linjevarene.
     -   **Opprett en ny innkjøpsrekvisisjonslinje** – innkjøpsrekvisisjonslinjene avbrytes. Deretter genereres nye innkjøpsrekvisisjoner som bare inneholder innkjøpsrekvisisjonslinjene som ikke ble validert. De nye innkjøpsrekvisisjonene som er generert, har statusen **Utkast**. Disse innkjøpsrekvisisjonene kan sendes inn på nytt for gjennomgang etter at valideringsfeilene er løst. Klargjøreren for innkjøpsrekvisisjonslinjene blir varslet om at linjene er annullert, og at nye innkjøpsrekvisisjoner ble generert for de mislykkede innkjøpsrekvisisjonslinjene.
 -   I fanen **Manuell bestillingsopprettelse** kan du definere parameterne som bestemmer om en innkjøpsrekvisisjon må behandles manuelt, eller om den kan konverteres automatisk til en bestilling. Parameterne kan gjelde for interne katalogvarer, eksterne katalogvarer eller ikke-katalogvarer. Velg ett av følgende alternativer:
     -   **Opprett bestillinger manuelt** – manuelt opprette bestillinger for alle innkjøpsrekvisisjoner.

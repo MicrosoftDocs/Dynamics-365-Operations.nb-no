@@ -1,7 +1,7 @@
 ---
 title: Sporing av varer og råmaterialer i beholdning, produksjon og salg
 description: Dette emnet beskriver hvordan du kan bruke varesporing til å identifisere hvor varer eller råmaterialer er brukt, er i bruk, eller vil bli brukt i produksjon og salgsprosesser.
-author: perlynne
+author: sherry-zheng
 ms.date: 11/02/2017
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 30191
 ms.assetid: fdd0939a-855c-430f-a684-94f3baea1df4
 ms.search.region: Global
-ms.author: pjacobse
+ms.author: chuzheng
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7c809962b120832fd340d9970b234ce1e087fcf0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3487f4790e1c32ce827c62dcedde810783bd6fe7
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808094"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6102874"
 ---
 # <a name="item-and-raw-material-tracing-in-inventory-production-and-sales"></a>Sporing av varer og råmaterialer i beholdning, produksjon og salg
 

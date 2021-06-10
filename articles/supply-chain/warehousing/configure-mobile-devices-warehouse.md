@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1d3acbc15b6dc5f698f26aae96c75cc942189c6c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 657dd864885bc7c8216aab95a73f389f21f7cccd
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808804"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6102932"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Definere mobilenheter for lagerarbeid
 
@@ -41,6 +41,7 @@ Hvis du vil opprette et menyelement for en aktivitet eller forespørsel, kan du 
 > Tilleggsfelt kan være tilgjengelige for menyelementer, avhengig av modusen du velger for menyelementet, og om menyelementet brukes til å utføre eksisterende arbeid. Hvis du vil ha informasjon om tilleggsvalgene for feltene, kan du se delen "Flere alternativer for menyelementer" senere i dette emnet.
 
 ## <a name="configure-menu-items-for-activities-and-inquiries"></a>Konfigurere menyelementer for aktiviteter og forespørsler
+
 Hvis **Modus**-feltet for et menyelement er satt til **Indirekte**, kan du opprette et menyelement for å utføre en generell aktivitet eller en spørring som ikke fører til arbeid. Disse omfatter for eksempel ny utskrift av nummerskiltetiketter og forespørsler om varene på en lokasjon. Følgende tabell viser alternativene som er tilgjengelige.
 
 | Alternativ | Beskrivelse |
@@ -64,10 +65,9 @@ Hvis **Modus**-feltet for et menyelement er satt til **Indirekte**, kan du oppre
 | Vis liste over åpent arbeid | Vis en liste over tilgjengelig arbeid for en bestemt bruker. Brukeren kan deretter velge arbeid som skal utføres, og vil bli dirigert til det. Denne listen er ment å vises på nettbrett med skjermstørrelser på 7 tommer eller mer. Når du velger dette alternativet, aktiveres menyelementene **Rediger spørring** og **Feltliste**. På siden **Rediger spørring** kan du definere kriterier for arbeid som vises i listen. På siden **Feltliste** kan du velge hvilke felt som vises i arbeidslisten. Du kan for eksempel redusere antall felt som vises, slik at brukeren raskere kan velge det mest aktuelle arbeidselementet. Du kan også velge hvor mange arbeidsposter som skal vises per side, i feltet **Poster per side** i hurtigfanen **Generelt**. Hvis det er merket av for **Tillat brukere å filtrere arbeid etter transaksjonstype**, inkluderer arbeidslisten en **Filtrer arbeid**-kontroll som brukeren kan bruke til å filtrere etter transaksjonstype. Brukere vil bare se arbeid i arbeidslisten som de har tilgang til. Du må kontrollere at brukere har tillatelse for ett eller flere brukerstyrte menyelementer som støtter den bestemte arbeidsklassetypene som de skal ha tilgang til. Tillatelser kontrolleres når en bruker forsøker å utføre arbeid fra listen.|
 | Opprett overføringsordre fra nummerskilt | Lar lagerarbeidere opprette og behandle overføringsordrer direkte fra mobilappen Lagerstyring. Lagerarbeiderne begynner ved å velge destinasjonslageret, og deretter kan de skanne én eller flere nummerskilt ved hjelp av appen. Når lagerarbeideren velger **Fullfør ordre**, vil en satsvis jobb opprette den nødvendige overføringsordren og ordrelinjene basert på lagerbeholdningen som er registrert for disse nummerskiltene. Hvis du vil ha mer informasjon, kan du se [Opprette overføringsordrer fra lagerappen](create-transfer-order-from-warehouse-app.md)
 
-
 ## <a name="configure-menu-items-to-create-work-for-another-worker-or-process"></a>Konfigurere menyelementer for å opprette arbeid for en annen arbeider eller prosess
-Du kan definere et menyelement som oppretter arbeid for en annen arbeider etter at en innledende handling er utført på mobilenheten. Når én arbeider for eksempel bruker en mobilenhet til å motta en vare, opprettes det plasseringsarbeid for en annen arbeider. På siden **Menyelementer på mobilenheten** i **Modus**-feltet velger du **Arbeid** for å definere et menyelement som oppretter arbeid. I tabellen nedenfor er alternativene i feltet **Arbeidsopprettelsesprosess** ordnet etter arbeidsordretypen.
 
+Du kan definere et menyelement som oppretter arbeid for en annen arbeider etter at en innledende handling er utført på mobilenheten. Når én arbeider for eksempel bruker en mobilenhet til å motta en vare, opprettes det plasseringsarbeid for en annen arbeider. På siden **Menyelementer på mobilenheten** i **Modus**-feltet velger du **Arbeid** for å definere et menyelement som oppretter arbeid. I tabellen nedenfor er alternativene i feltet **Arbeidsopprettelsesprosess** ordnet etter arbeidsordretypen.
 
 <table>
 <tbody>
@@ -232,7 +232,7 @@ I tillegg til å definere menyelementer for å opprette lagerarbeid, kan du defi
 </tr>
 <tr class="even">
 <td>Brukergruppering</td>
-<td>Arbeideren grupperer arbeid manuelt. Dette alternativet er for eksempel nyttig når en arbeider kan velge flere varer samtidig på en lokasjon. Etter at arbeideren er ferdig med å plukke alle de nødvendige varene, kan han eller hun plassere dem.</td>
+<td>Arbeideren grupperer arbeid manuelt. Dette alternativet er for eksempel nyttig når en arbeider kan velge flere varer samtidig på en lokasjon. Etter at arbeideren er ferdig med å plukke alle de nødvendige varene, kan vedkommende plassere dem.</td>
 </tr>
 <tr class="odd">
 <td>Systemgruppering</td>
@@ -249,7 +249,7 @@ I tillegg til å definere menyelementer for å opprette lagerarbeid, kan du defi
 <li><strong>Validert brukerstyrt felt</strong> – Velg feltet som arbeideren skanner for å gruppere arbeidet.</li>
 <li><strong>Validert brukerstyrt etikett</strong> – Angi teksten som informerer arbeideren om hva som skal skannes når plukkarbeid grupperes av systemet.</li>
 </ul>
-Dette alternativet er for eksempel nyttig når flere paller klargjøres for en last. Hvis du velger <strong>LoadId</strong> i feltet <strong>Validert brukerstyrt etikett</strong>, kan arbeideren velge en hvilken som helst pall som er knyttet til lasten. Arbeideren får en feilmelding hvis han eller hun skanner en vare som ikke er knyttet til lasten.</td>
+Dette alternativet er for eksempel nyttig når flere paller klargjøres for en last. Hvis du velger <strong>LoadId</strong> i feltet <strong>Validert brukerstyrt etikett</strong>, kan arbeideren velge en hvilken som helst pall som er knyttet til lasten. Arbeideren får en feilmelding hvis vedkommende skanner en vare som ikke er knyttet til lasten.</td>
 </tr>
 <tr class="odd">
 <td>Gruppeplukking</td>
@@ -407,6 +407,7 @@ Tabellen nedenfor beskriver disse alternativene.
 </table>
 
 ## <a name="require-workers-to-confirm-the-product-location-or-quantity-when-they-pick-items"></a>Krev at arbeidere bekrefter produktet, lokasjonen eller antallet ved plukking av varer
+
 Du kan definere arbeidsbekreftelser som krever at en arbeider bruker en mobilenhet til å registrere lokasjonen eller antallet når de utfører arbeid på lageret. Arbeidsbekreftelser bidrar til å sikre at arbeideren er på riktig sted, eller behandler det riktige antallet varer. Du kan også få Supply Chain Management til å bekrefte arbeiderens registrering automatisk. Hvis du aktiverer automatisk bekreftelse, kan du ikke også kreve bekreftelser for lokasjon eller antall. Arbeidsbekreftelser inneholder også produkter og produktvarianter. I tillegg kan du registrere bekreftelser ved å skanne en strekkode. Hvis du vil bekrefte produkter og produktvarianter, må du angi en ID for produktet eller produktvarianten. Denne IDen kan være en produkt-ID, produktsøk-ID, ekstern ID, GTIN eller strekkode. Når du har angitt ID-en eller skannet strekkoden, vises dimensjonene for produktvarianten på mobilenheten. 
 
 Tabellen nedenfor beskriver de ulike arbeidstypene som du kan bruke arbeidsbekreftelser med.
@@ -426,14 +427,11 @@ Tabellen nedenfor beskriver de ulike arbeidstypene som du kan bruke arbeidsbekre
 > [!NOTE]
 > Du kan kreve produktbekreftelse bare for arbeid av plukkings- og plasseringstyper.
 
-<a name="additional-resources"></a>Tilleggsressurser
---------
+## <a name="additional-resources"></a>Tilleggsressurser
 
-[Definere et menyelement for mobilenhet for å fullføre arbeid av typen Bestilling](tasks/set-up-mobile-device-menu.md)
-
-[Definere et menyelement for mobilenhet for å registrere mottatte varer](tasks/set-up-mobile-device-menu-item-register-received-items.md)
-
-[Beholdningsstatuser](../inventory/inventory-statuses.md)
+- [Definere et menyelement for mobilenhet for å fullføre arbeid av typen Bestilling](tasks/set-up-mobile-device-menu.md)
+- [Definere et menyelement for mobilenhet for å registrere mottatte varer](tasks/set-up-mobile-device-menu-item-register-received-items.md)
+- [Beholdningsstatuser](../inventory/inventory-statuses.md)
 
 
 

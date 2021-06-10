@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 6d4cc52a90b25406080032c7a98caa59f53ce188
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: ea1fe6ba374c77784c88cf8202bff2eace217b6a
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909006"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6102716"
 ---
 # <a name="customize-and-use-the-customer-portal"></a>Tilpasse og bruke kundeportalen
 
@@ -44,7 +44,7 @@ Følgende emner hjelper deg å lære grunnleggende kunnskaper om Power Apps-port
 
 ## <a name="customize-the-order-creation-process"></a>Tilpasse prosessen for ordreopprettelse
 
-Når en bruker sender en ordre ved hjelp av kundeportalen, synkroniseres ordren automatisk til det tilsvarende Dynamics 365 Supply Chain Management-miljøet. Siden brukeren er en ekstern kunde, blir noe påkrevd informasjon med hensikt skjult fra ham eller henne. Denne informasjonen fylles automatisk ut når skjemaet sendes inn.
+Når en bruker sender en ordre ved hjelp av kundeportalen, synkroniseres ordren automatisk til det tilsvarende Dynamics 365 Supply Chain Management-miljøet. Siden brukeren er en ekstern kunde, blir noe påkrevd informasjon med hensikt skjult fra vedkommende. Denne informasjonen fylles automatisk ut når skjemaet sendes inn.
 
 Denne delen viser hvordan du bør konfigurere kontakter for å unngå feil. Den forklarer felter som angis automatisk, og hvordan du kan endre verdien i disse feltene hvis du trenger det.
 
@@ -82,7 +82,7 @@ Her er standardtrinnene for å sende en ordre fra kundeportalen.
 1. Når du er ferdig med å legge til varer, velger du **Neste** på **Varer**-siden.
 1. På **Ordre informasjon**-siden ser du et sammendrag av ordren. Se gjennom ordreinnholdet og leveringsdetaljene. Hvis alt ser riktig ut, velger du **Send** for å sende ordren.
 
-    ![Ordreinformasjonsside](media/customer-portal-order-submit.png "Ordreinformasjonsside")
+    ![Fullført ordreinformasjonsside](media/customer-portal-order-submit.png "Fullført ordreinformasjonsside")
 
 ### <a name="standard-data-setup"></a>Standard datakonfigurasjon
 

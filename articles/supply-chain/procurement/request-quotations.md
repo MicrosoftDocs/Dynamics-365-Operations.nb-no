@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 48830c975f1bdfd953f57e7c0b6601a78e3a521b
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 3ff153d9c16b219158c12f4bb49eb0a0c5d401ac
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5910045"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6102908"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>Oversikt over tilbudsforespørsler (RFQ-er)
 
@@ -83,7 +83,7 @@ Du velger malen som skal brukes for e-postvarsling som sendes til leverandører,
 - %Dato og klokkeslett for utløpsdato%
 - %Date%
 
-Tokenet %Årsak til retur av bud% og %Årsak til endring% erstattes med tekst som innkjøpsansvarlig kan skrive inn når han eller hun fullfører endringen i veiviseren for **endring**. Verdiene for tokenene %Endring klargjort av% og %Company% hentes automatisk fra tilbudsforespørselen. Tokenet %Date% erstattes av dagens dato.
+Tokenet %Årsak til retur av bud% og %Årsak til endring% erstattes med tekst som innkjøpsansvarlig kan skrive inn når vedkommende fullfører endringen i veiviseren for **Endring**. Verdiene for tokenene %Endring klargjort av% og %Company% hentes automatisk fra tilbudsforespørselen. Tokenet %Date% erstattes av dagens dato.
 
 Hvis du vil avbryte en tilbudsforespørsel etter at den er sendt, kan du gjøre det fra tilbudsforespørselssaken. En e-postmal kreves for å sende annulleringsmeldingen til leverandørens kontaktpersoner. Malen må være valgt på siden **Parametere for innkjøp og leverandører**. Når malen er opprettet, kan den inneholde følgende erstatningstokener:
 

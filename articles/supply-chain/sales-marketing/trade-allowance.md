@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 58cdfcf67ab774bbc119f2507920f1fb1d7a562c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 51b734e6a94ffdfabb218a19986f1bec65b839e7
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5824780"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6102812"
 ---
 # <a name="trade-allowance-management"></a>Handelsrabattbehandling
 
@@ -171,7 +171,7 @@ Til å godkjenne en varehandelshendelse av typen **engangsbeløp** velger du hen
 
 ## <a name="settle-the-deduction-that-is-due-and-the-customer-short-pay-by-using-the-deduction-workbench"></a>Utligne fradrag som forfaller og kunden kort betaling ved hjelp av fradrag arbeidsbenk
 
-De forventer seg faktura tilbake velge ofte kunder kort-lønn valgte fakturaene. Hvis du vil unngå problemer med betalingen avstemming senere registrerer clerk i Kunder disse kort betaler som fradrag når han eller hun registrerer de faktiske kundebetalingene. Deretter i arbeidsbenk fradrag, kan disse Kundefradrag lett utlignes mot krav beløpene som forfaller i firmaet.
+De forventer seg faktura tilbake velge ofte kunder kort-lønn valgte fakturaene. Hvis du vil unngå problemer med betalingsavstemming senere, registrerer clerk i Kunder disse korttidsbetalingene som fradrag når de registrerer de faktiske kundebetalingene. Deretter i arbeidsbenk fradrag, kan disse Kundefradrag lett utlignes mot krav beløpene som forfaller i firmaet.
 
 Hvis du vil registrere en kundes korttidsbetaling i betalingsjournalen, velger du **Kunder** \> **Betalinger** \> **Betalingsjournal** og oppretter en ny betalingsjournal. I handlingsruten, velg deretter **Fradrag**. På siden **Fradrag** kan du opprette og spore beløpet som var betalt for lite.
 

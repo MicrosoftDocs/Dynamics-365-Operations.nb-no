@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0b113f0db1d44dc5fbda30e10d62ff939550f299
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 88fb3a947dd15f80238baab5f315c889f47f5b3b
+ms.sourcegitcommit: 273903b7b73ac726d447c50f7086e6d8b0f0f74e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748699"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "6087021"
 ---
 # <a name="access-application-metadata-by-using-connected-applications"></a>Få tilgang til programmetadata ved hjelp av tilkoblede programmer
 
 [!include [banner](../../includes/banner.md)]
 
-De følgende trinnene forklarer hvordan en RCS-bruker (Regulatory Configuration Service) i rollen Systemansvarlig eller Utvikler av elektronisk rapportering kan utforme en ny modelltilordning for elektronisk rapportering (ER) ved å bruke metadata i Finance and Operations. Du får tilgang til programmetadata på nettet ved å bruke det RCS-tilkoblede programmet. Et ER-modelltilordningseksempel blir konfigurert for å gi tilgang til utenrikshandelstransaksjoner. For å fullføre disse trinnene må du først fullføre trinnene i RCS i emnet [Opprette konfigurasjonsleverandører og merke dem som aktive](er-configuration-provider-mark-it-active-2016-11.md). Hvis du ikke har fullført trinnene i emnet [Få tilgang til programmetadata ved hjelp av ER-konfigurasjon](access-application-metadata-er-configuration.md), går du til [siden med eksempler på elektronisk rapportering](https://go.microsoft.com/fwlink/?linkid=862266) for å laste ned og lagre følgende ER-konfigurasjoner: Foreign trade metadata.xml, Foreign trade model.xml, Foreign trade mapping.xml og deretter fullføre trinnene i fremgangsmåten.
+De følgende trinnene forklarer hvordan en RCS-bruker (Regulatory Configuration Service) i rollen Systemansvarlig eller Utvikler av elektronisk rapportering kan utforme en ny modelltilordning for elektronisk rapportering (ER) ved å bruke metadata i Finance and Operations. Du får tilgang til programmetadata på nettet ved å bruke det RCS-tilkoblede programmet. Et ER-modelltilordningseksempel blir konfigurert for å gi tilgang til utenrikshandelstransaksjoner. For å fullføre disse trinnene må du først fullføre trinnene i RCS i emnet [Opprette konfigurasjonsleverandører og merke dem som aktive](er-configuration-provider-mark-it-active-2016-11.md). Hvis du ikke har fullført trinnene i emnet [Få tilgang til programmetadata ved hjelp av ER-konfigurasjon](access-application-metadata-er-configuration.md), laster du ned [siden med eksempler på elektronisk rapportering](https://download.microsoft.com/download/0/4/e/04e13839-e423-442b-a6c2-dd35b1045c2d/Dynamics%20365%20for%20Finance%20and%20Operations%208.1%20Electronic%20reporting%20task%20guides.zip) og lagrer følgende ER-konfigurasjoner: Foreign trade metadata.xml, Foreign trade model.xml, Foreign trade mapping.xml og deretter fullfører du trinnene i fremgangsmåten.
 
 ## <a name="prerequisites"></a>Forutsetninger
 1. Gå til **Alle arbeidsområder** > **Elektronisk rapportering**. 

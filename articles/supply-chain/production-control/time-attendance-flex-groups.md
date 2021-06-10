@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: afffdfba965806d18b148c77774a31bbb3c0c46c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7628f2fc3d3a7e5bb1175edf59f856bc40f9b987
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5831776"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6102836"
 ---
 # <a name="flex-groups"></a>Fleksigrupper
 
@@ -103,7 +103,7 @@ Arbeideren er knyttet til en fleksigruppe som har følgende konfigurasjon:
 - **Minimumslønnstype:** 1302
 - **Lønnstypefaktor:** -1,0
 
-Som differansen mellom arbeiderens fleksikonto og hennes tillatte fleksi-maksim angir, har arbeideren overskredet sin tillatte fleks-maksimum med 4,0 timer.
+Som differansen mellom arbeiderens fleksikonto og vedkommendes tillatte fleksi-maksim angir, har arbeideren overskredet tillatt fleks-maksimum med 4,0 timer.
 
 Når lønnsadministratoren overfører arbeiderens lønnsdata ved å kjøre jobben **Overfør til lønn** eller **Fleksijustering**, gjøres følgende justeringer:
 
