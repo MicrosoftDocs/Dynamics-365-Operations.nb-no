@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 98fc102b308afb90d4665ecd80650f66d531da0b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e3124ac0e161e003986d7e167e292cbb374e1bfa
+ms.sourcegitcommit: 2cd82983357b32f70f4e4a0c15d4d1f69e08bd54
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826720"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "6085456"
 ---
 # <a name="import-format-for-consolidation"></a>Importformat for konsolidering
 
@@ -36,7 +36,7 @@ Tabellen nedenfor viser et importformat du bør bruke når du gjør en konsolide
 | 2            | 110130, 2015/01/01, 1, USD, 0,0,80699.39,0,1 | <ul><li>Hovedkonto-IDen</li><li>Transaksjonsdatoen</li><li>Regnskapsperiodetypen (**0** = Åpning, **1** = Drift og **2** = Lukking)</li><li>Transaksjonsvalutaen</li><li>Debet eller kredit (**0** = debet og **1** = kredit)</li><li>Posteringslaget</li><li>Transaksjonsbeløp</li><li>Antall</li><li>Lokal RecID (tvetydig, unik int64-verdi for transaksjonen)</li></ul> |
 | 3            | USMF0000009, 2017/01/01, FY2017, 1, 2017,01,01, 602200, USD, 6053.6.0 | <ul><li>Oppføringsnummeret (budsjethodetransaksjonsnummer)</li><li>Standarddatoen for budsjetthodet</li><li>Budsjettmodell-IDen</li><li>Heltallsverdien for opplisting for transaksjonstypen (tom, opprinnelig budsjett og så videre)</li><li>Datoen for linjen</li><li>Hovedkonto-IDen for linjen</li><li>Valutakoden for linjen</li><li>Beløpet for linjen, i transaksjonsvalutaen</li><li>Heltallsverdien for opplisting for budsjetttypen for linjen (utgift eller inntekt)</li></ul> |
 | 4            | DEMF | RecordCompany er den juridiske kildeenheten. |
-| 5            | 110130, 2015/01/01, 1, USD, 0,0,80699.39,0,1 | RecordCompany er den juridiske kildeenheten. |
+| 5            | 110130, 2015/01/01, 1, USD, 0,0,80699.39,0,1 | <ul><li>ID for hovedkonto</li><li>Transaksjonsdato</li><li>Regnskapsperiodetypen (0 Åpning, 1 Drift og 2 Lukking)</li><li>Transaksjonsvaluta</li><li>Debet eller kredit (0 for debet og 1 for kredit)</li><li>Posteringslag</li><li>Transaksjonsbeløp</li><li>Antall</li><li>Lokal RecID (tvetydig, unik int64-verdi for transaksjonen)</li></ul>  |
 | 6            | BusinessUnit, 1 Avdeling, 2 | Finansdimensjonsattributtene som er definert i segmentrekkefølgen.<p>Du kan bruke **Eksport**-sidenn til å kontrollere hvordan attributtene er definert.</p> |
 | 7            | 002,1,658 | <ul><li>Finansdimensjonsverdien</li><li>Finansdimensjonen, som indeksen som angis i RecordDimensions</li><li>En tvetydig, unik post-ID som er knyttet til den unike post-IDen fra RecordTrans eller RecordTrans2</li></ul> |
 | 8            | 002,1,1 | <ul><li>Dimensjonsverdier som er knyttet til transaksjonen fra RecordBudget</li><li>Finansdimensjonen, som indeksen som angis i RecordDimensions</li><li>En tvetydig linjepost-ID som justeres etter rekkefølgen til transaksjonslinjene i filen</li></ul> |

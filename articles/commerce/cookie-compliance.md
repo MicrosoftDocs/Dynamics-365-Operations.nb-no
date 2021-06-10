@@ -2,7 +2,7 @@
 title: Samsvar for informasjonskapsel
 description: Dette emnet beskriver vurderinger for overholdelse av informasjonskapsler og standardpolicyene som er inkludert i Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 04/16/2021
+ms.date: 05/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: efc84bcea2fb6c28c0b13d4469e858e82cc1c073
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 8eb610eb819dee09a30368257e36dc88f855e985
+ms.sourcegitcommit: 8c5b3e872825953853ad57fc67ba6e5ae92b9afe
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908190"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "6088393"
 ---
 # <a name="cookie-compliance"></a>Informasjonskapselsamsvar
 
@@ -52,8 +52,7 @@ Tabellen nedenfor viser gjeldende referanseliste over informasjonskapsler for Dy
 | x-ms-cpim-trans                             | Brukes til å spore transaksjoner (antallet åpne faner som godkjennes mot et forretning-til-forbruker-område) (B2C), inkludert den gjeldende transaksjonen. |
 | \_msdyn365___muid_                            | Brukes hvis eksperimentering er aktivert for miljøet, brukt som userId til eksperimenteringsformål. |
 | \_msdyn365___exp_                             | Brukes hvis eksperimentering er aktivert for miljøet, brukes til å måle ytelsesbelastningsfordeling.         |
-
-
+| d365mkt                                       | Brukes hvis lokasjonsbasert registrering for å spore en brukers IP-adresse for butikklokasjonsforslag er aktivert i Commerce-områdebygger ved **Områdeinnstillinger > Generelt > Aktiver lokasjonsbasert butikkregistrering**.      |
 
 Hvis en områdebruker velger noen koblinger på sosiale medier på et område, vil informasjonskapslene som ligger i tabellen nedenfor, også spores i nettleseren.
 

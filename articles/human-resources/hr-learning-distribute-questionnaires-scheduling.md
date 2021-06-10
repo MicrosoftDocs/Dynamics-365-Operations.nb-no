@@ -8,18 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: KMKnowledgeCollectorPlanningTable, KMKnowledgeCollectorPlanningMulti, SysQueryForm, HcmPersonLookup, KMKnowledgeCollectorPlanning, HcmLearningWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8ddad70792c4ebc1785698812fe12406142f07a2
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 952048ce0a2ac94be70d7bde0dc52610f19151ed
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5790626"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6056306"
 ---
 # <a name="distribute-questionnaires-using-scheduling"></a>Distribuere spørreskjemaer ved hjelp av planlegging
 
@@ -57,7 +56,7 @@ Med planlegging av spørreskjema kan du planlegge og distribuere spørreskjemaer
 
     * Eksempel: Kjære %P% Logg på Ansattselvbetjening for å fylle ut spørreskjemaet om ansattes helse.  Contoso  
 
-12. Klikk Lagre.
+12. Klikk på Lagre.
 
 ## <a name="use-the-setup-details-to-select-the-questionnaires-to-be-answered-as-well-as-any-queries-to-use-to-select-respondents"></a>Bruk oppsettsdetaljene til å velge spørreskjemaet/spørreskjemaene som skal besvares, i tillegg til eventuelle spørringer som skal brukes til å velge respondenter.
 

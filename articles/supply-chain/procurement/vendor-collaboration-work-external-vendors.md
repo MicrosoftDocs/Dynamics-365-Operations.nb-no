@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 5f0ed7d3344b43c477923ebd8c69acfb6630e6f4
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 30f7919e5ae0933b389a274d80aaed8e149631e7
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5910407"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6103102"
 ---
 # <a name="vendor-collaboration-with-external-vendors"></a>Leverandørsamarbeid med eksterne leverandører
 
@@ -240,7 +240,7 @@ For offentlig sektor gjør den utvidede funksjonaliteten at en tilbudsforespørs
 - Publisert linje i tilbudsforespørsler
 - Publiserte hodevedlegg for tilbudsforespørsler
 
-Med disse enhetene kan personer som ikke er klargjorte brukere i Supply Chain Management, men som har anonym tilgang til det eksterne området, vise arbeid som er tilgjengelig og lukket. I tillegg gjør den utvidede funksjonaliteten i **Send og publiser** det mulig for brukeren som definerer parametere for tilbudsforespørssaken, å definere en e-postmal. Deretter, når innkjøpsansvarlig oppretter tilbudsforespørselssaken, må han eller hun velge e-postmalen for å sende den nødvendige informasjonen til leverandørene i tilbudsforespørselssaken. 
+Med disse enhetene kan personer som ikke er klargjorte brukere i Supply Chain Management, men som har anonym tilgang til det eksterne området, vise arbeid som er tilgjengelig og lukket. I tillegg gjør den utvidede funksjonaliteten i **Send og publiser** det mulig for brukeren som definerer parametere for tilbudsforespørssaken, å definere en e-postmal. Deretter, når innkjøpsansvarlig oppretter tilbudsforespørselssaken, må vedkommende velge e-postmalen for å sende den nødvendige informasjonen til leverandørene i tilbudsforespørselssaken. 
 
 Brukeren som definerer parametere for tilbudsforespørselsprosessen, kan opprette flere e-postmaler. Disse e-postmaler kan inneholde både statisk tekst og følgende erstatningstokener. Tokene erstattes med kontekstavhengige verdier når det opprettes en e-post.
 

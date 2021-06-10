@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 56446e6a8abfcab83772e446dc7f01c529404b23
-ms.sourcegitcommit: 05210ceefd8816b889019b2a6554855f3c5b2a6c
+ms.openlocfilehash: d31c73964877aeb1556c93b03d276698e8d84d30
+ms.sourcegitcommit: 588f8343aaa654309d2ff735fd437dba6acd9d46
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "5954651"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6115005"
 ---
 # <a name="manage-changes-to-engineering-products"></a>Behandle endringer i tekniske produkter
 
@@ -92,9 +92,13 @@ Denne listen er bare beregnet til informasjon. Du kan derfor legge til så mange
 
 Med **Kilde**-hurtigfanen kan du spore startpunktet for endringsforespørselen. Det er nyttig hvis du for eksempel vil se om endringsforespørselen ble opprettet fra en salgsordre, hvem som opprettet den, og hvilket firma den ble opprettet i.
 
-### <a name="evaluate-the-business-impact-of-a-change-request"></a>Evaluere betydningen av en endringsforespørsel
+### <a name="evaluate-the-business-impact-of-a-change-request-and-send-notifications"></a>Evaluere betydningen av en endringsforespørsel og sende varslinger
 
-Når du går gjennom en forespørsel om endring, kan du søke etter avhengigheter. På denne måten kan du vurdere virkningen av den forespurte endringen på åpne transaksjoner, for eksempel salgsordrer, produksjonsordrer og lagerbeholdninger.
+Når du går gjennom en forespørsel om endring, kan du søke etter avhengigheter. På denne måten kan du vurdere virkningen av den forespurte endringen på åpne transaksjoner, for eksempel salgsordrer, produksjonsordrer og lagerbeholdninger. Når du går gjennom endringsforespørsler, kan du sende meldinger til personene som er ansvarlige for å oppfylle de ulike typene tilknyttede ordrer.
+
+#### <a name="review-affected-transactions-block-selected-transactions-and-send-notifications"></a>Gå gjennom berørte transaksjoner, blokkere valgte transaksjoner og sende varslinger
+
+Hvis du vil gå gjennom berørte transaksjoner, blokkere valgte transaksjoner og sende relaterte varslinger, følger du disse trinnene.
 
 1. Gå til **Behandling av teknisk endring \> Felles \> Behandling av teknisk endring \> Forespørsler om teknisk endring**.
 1. Åpne en eksisterende endringsforespørsel, eller velg **Ny** i handlingsruten for å opprette en ny endringsforespørsel.
@@ -103,7 +107,30 @@ Når du går gjennom en forespørsel om endring, kan du søke etter avhengighete
     - **Søk** – Skanner alle åpne transaksjoner, og åpner deretter **Forretningspåvirkning på åpne transaksjoner**-dialogboksen, som viser alle transaksjonene som vil bli påvirket av endringen.
     - **Vis forrige søk** – Åpne dialogboksen **Forretningspåvirkning på åpne transaksjoner**, som viser resultatene av forrige søk. (Et nytt søk utføres ikke.)
 
-1. Hvis problemet som krever en endring, er kritisk, kan du blokkere de åpne transaksjonene eller varsle den ansvarlige brukeren ved å bruke knappene på verktøylinjen i dialogboksen **Forretningspåvirkning på åpne transaksjoner**.
+1. Dialogboksen **Forretningspåvirkning på åpne transaksjoner** gir et sett med kategorier, der hver viser en liste over berørte transaksjoner av en bestemt type (**Salgsordrer**, **Bestillinger**, **Produksjonsordrer**, **Lager** og så videre). Hver kategori viser også et tall som angir hvor mange transaksjoner av denne typen som påvirkes. Velg en kategori for å vise den relevante listen.
+1. Hvis du vil arbeide med en transaksjon i listen, velger du den, og deretter velger du en av følgende knapper på verktøylinjen:
+
+    - **Vis transaksjon** – Åpne den valgte transaksjonsposten.
+    - **Blokker ordre** – Denne knappen er bare tilgjengelig i kategorien **Salgsordrer**. Velg den for å sperre den valgte salgsordren.
+    - **Blokker linje** – Denne knappen er bare tilgjengelig i kategorien **Bestillinger**. Velg den for å sperre den valgte bestillingslinjen.
+    - **Varsle ansvarlig** – Denne knappen er bare tilgjengelig i kategorien **Salgsordrer**. Velg den for å sende et endringsvarsel til brukeren som er angitt som ansvarlig for den valgte salgsordren.
+    - **Varsle bestiller** – Denne knappen er bare tilgjengelig i kategorien **Bestillinger**. Velg den for å sende et endringsvarsel til brukeren som er angitt som bestiller for den valgte bestillingen.
+    - **Varsle produksjon** – Denne knappen er bare tilgjengelig i kategorien **Produksjonsordrer**. I motsetning til salgsordrer og bestillinger har ikke produksjonsordrer en enkeltbruker som er angitt som ansvarlig for dem fra ende til ende. I stedet tar forskjellige ledere eller planleggere eierskap for et bestemt område eller for en bestemt del av produksjonen (for eksempel for bestemte ressurser eller ressursgrupper). Når du velger denne knappen, får derfor alle brukere som er ansvarlige for ressurser som er relatert til den valgte produksjonsordren, et endringsvarsel.
+    - **Varsle klargjører** – Denne knappen er bare tilgjengelig i kategorien **Innkjøpsrekvisisjon**. Velg den for å sende et endringsvarsel til brukeren som er angitt som klargjører for den valgte innkjøpsrekvisisjonen.
+    - **Varsle salgsansvarlig** – Denne knappen er bare tilgjengelig i kategorien **Tilbud**. Velg den for å sende et endringsvarsel til brukeren som er angitt som ansvarlig for det valgte tilbudet.
+    - **Svinn** – Denne knappen er bare tilgjengelig i kategorien **Lager**. Velg det for å kassere det valgte lageret.
+    - **Vis logg** – Åpne en logg over handlinger som er utført på den valgte transaksjonen, ved å bruke dialogboksen **Forretningspåvirkning på åpne transaksjoner**. (Historikken viser for eksempel om meldinger er sendt eller om transaksjoner er sperret.) 
+    - **Vis alle transaksjoner** – Åpne hele listen over alle transaksjoner, ikke bare de åpne transaksjonene.
+
+#### <a name="review-and-process-change-notifications-for-transactions"></a>Gå gjennom og behandle endringsvarsler for transaksjoner
+
+Du kan lese og behandle endringsmeldingene du mottar på følgende måter:
+
+- Med unntak av produksjonsordrer vil endringsvarsler for transaksjonene du er ansvarlig for, vises i handlingssenteret. Knappen **Vis meldinger** (klokkesymbolet) til høyre på navigasjonslinjen viser når en melding er tilgjengelig for deg i handlingssenteret. Velg **Vis meldinger**-knappen for å åpne handlingssenteret og se gjennom meldingene.
+- Hvis du vil vise alle produksjonsordrer som det er sendt en tekniske melding for, kan du gå til **Produksjonsordrer \> Produksjonsordrer \> Alle produksjonsordrer**. Deretter, i handlingsruten i kategorien **Produksjonsordre**, i gruppen **Forespørsel om teknisk endring**, velger du **Teknisk melding** for å åpne **Teknisk melding**-siden.
+- For produksjonsordrer kan du velge å gå gjennom bare endringsvarslene som gjelder produksjonsressursene du administrerer. Velg arbeidsområdet for **Produksjonsstyring** i handlingsruten, og velg **Konfigurer mitt arbeidsområde** for å filtrere siden, slik at den bare viser informasjon om produksjonsenhetene, gruppene og/eller ressursene som du administrerer. I **Sammendrag**-delen viser en fane med navnet **Produksjonsordrer med endrede produkter** et antall varslinger som samsvarer med filterinnstillingene. Velg denne flisen for å åpne **Teknisk melding**-siden, som viser den fullstendige listen over transaksjoner som oppfyller kriteriene i filteret.
+
+Når du går gjennom produksjonsordrevarslinger på **Teknisk melding**-siden, kan du følge koblinger til tilknyttede endringsordrer eller produksjonsordrer ved å velge kolonneverdier eller bruke de relaterte kommandoene i handlingsruten. Når du er ferdig med å evaluere en endring, og etter at du har annullert eller endret produksjonsordrer etter behov, kan du merke et varsel som løst. Velg meldingen, og velg deretter **Løs** i handlingsruten. Meldingen fjernes fra visningene til alle brukere.
 
 ### <a name="create-a-change-order-from-a-change-request"></a>Opprette en endringsordre fra en endringsforespørsel
 

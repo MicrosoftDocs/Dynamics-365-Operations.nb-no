@@ -1,8 +1,8 @@
 ---
 title: Finansrapporter for råbalanse
 description: Denne artikkelen beskriver standardrapportene for råbalanser. Den beskriver også byggeblokker som er knyttet til disse rapportene, og hvordan du kan endre rapporter som passer dine forretningskrav.
-author: jcart1106
-ms.date: 06/20/2017
+author: jinniew
+ms.date: 05/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6a9902471101b752c4b09d8ae28eb673743b7a53
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 26ec03422315a280f7e779f992cf694eb5f845ea
+ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816937"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6103664"
 ---
 # <a name="trial-balance-financial-reports"></a>Finansrapporter for råbalanse
 
@@ -28,8 +28,7 @@ ms.locfileid: "5816937"
 
 Denne artikkelen beskriver standardrapportene for råbalanser. Den beskriver også byggeblokker som er knyttet til disse rapportene, og hvordan du kan endre rapporter som passer dine forretningskrav. 
 
-<a name="default-trial-balance-reports"></a>Standardrapporter for råbalanse
------------------------------
+## <a name="default-trial-balance-reports"></a>Standardrapporter for råbalanse
 
 Tre råbalanserapporter er tilgjengelige i Finansrapportering.
 
@@ -47,6 +46,9 @@ Finansrapportene for råbalanse bruker byggeblokkene nedenfor.
 | Detaljert råbalanse – Standard               | Råbalanse – standard | Detaljert råbalanse – Standard               |
 | Råbalansesammendrag – Standard                | Råbalanse – standard | Råbalansesammendrag – standard                |
 | Sammendrag Råbalanse Årlig – Standard | Råbalanse – standard | Årlig råbalansesammendrag – standard |
+
+> [!NOTE] 
+> Når du kjører rapporten **Råbalanse** i Financial Reporting, må du huske å merke av for **Vis rader uten beløp** og **Vise rapporter uten aktive rader** i kategorien **Innstillinger**.
 
 ### <a name="row-definition"></a>Raddefinisjon
 
@@ -94,10 +96,7 @@ Hver rapport for råbalanse bruker en annen kolonnedefinisjon. Disse kolonnedefi
     -   **FD** – Økonomiske data som inneholder bare debet for forrige år
     -   **FD** – Økonomiske data som inneholder bare kredit for forrige år
 
-
-
-<a name="additional-resources"></a>Tilleggsressurser
---------
+## <a name="additional-resources"></a>Tilleggsressurser
 
 [Oversikt over finansrapportering](financial-reporting-getting-started.md)
 

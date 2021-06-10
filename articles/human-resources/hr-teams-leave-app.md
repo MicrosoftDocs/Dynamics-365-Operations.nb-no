@@ -2,13 +2,12 @@
 title: Behandle permisjonsforespørsler i Teams
 description: Dette emnet viser hvordan du ber om fridager Dynamics 365 Human Resources-appen i Microsoft Teams.
 author: andreabichsel
-ms.date: 02/23/2021
+ms.date: 05/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: LeaveAbsenceWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -16,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2ea495259ba29f302753991e260d5a8fa990322b
-ms.sourcegitcommit: e3f11fc9a9dae416a490437678bb482a0094f9a9
+ms.openlocfilehash: 661bb8369fe4dbe6cdf6ee0fb05d16f4350ecf5a
+ms.sourcegitcommit: c5c8f19a696ad4a3d68dffd63bfe7b484b999d2b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "5953418"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "6097265"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Behandle permisjonsforespørsler i Teams
 
@@ -33,21 +32,13 @@ Med Dynamics 365 Human Resources-appen i Microsoft Teams kan du raskt be om frid
 
 Du finner Dynamics 365 Human Resources-appen i Teams-butikken.
 
-1. I Microsoft Teams klikker du på ellipsene.
-
-   ![Ellipser for permisjonsapp i Human Resources Teams](./media/hr-teams-leave-app-ellipses.png)
+1. I Microsoft Teams navigerer du til listen over apper.
  
 2. Søk etter Dynamics 365 Human Resources, og velg deretter flisen **Human Resources**.
 
-   ![HR-flis for permisjonsapp i Human Resources Teams](./media/hr-teams-leave-app-human-resources-tile.png)
-
 3. Velg **Legg til** for å installere appen.
 
-   ![Installasjon av permisjonsapp i Human Resources Teams](./media/hr-teams-leave-app-in-store.png)
-
 Hvis appen ikke logger deg på automatisk, velger du kategorien **Innstillinger** for å logge på.
-
-![Kategorien Innstillinger i permisjonsapp for Human Resources Teams](./media/hr-teams-leave-app-settings-tab.png)
 
 > [!NOTE]
 > Hvis du ikke ser en påloggingsdialogboks, må du kontrollere innstillingene for nettleseren for å tillate popup-vinduer. 
@@ -61,20 +52,24 @@ Hvis du har tilgang til mer enn én forekomst av Human Resources, kan du velge h
 
 Når appen er installert, vises det en velkomstmelding med informasjon om hvilke handlingstyper roboten kan utføre på dine vegne.
 
-![Velkomstmelding for robot i permisjonsapp for Human Resources Teams](./media/hr-teams-leave-app-bot.png)
- 
 > [!NOTE]
 > Når du først samhandler med roboten, må du kanskje logge på. Hvis du ikke ser en påloggingsdialogboks, må du kontrollere innstillingene for nettleseren for å tillate popup-vinduer.
 
 Du kan be roboten om å:
 
-- Starte en permisjonsforespørsel for deg.
+- Vis gjeldende permisjonssaldoer. Du kan for eksempel sende en meldingen "Vis permisjonssaldoer".
+
+- Starte en permisjonsforespørsel for deg. Send for eksempel en melding som sier: "Ta fri" eller "Jeg vil ta fri neste torsdag og fredag" for å være mer spesifikk for å be om permisjon for feriepermisjonstypen. 
 
   ![Starte en permisjonsforespørsel i Teams-samtaler](./media/hr-teams-leave-app-initiate.png)
 
 - Samtalen fylles ut en permisjonsforespørsel for deg. Velg **Be om fravær** og rediger detaljene for forespørselen.
 
-  ![Redigere detaljer for permisjonsforespørsel](./media/hr-teams-leave-app-details.png)
+   Hvis du vil sende permisjonsforespørsler for flere permisjonstyper for samme dato, velger du **Del dag med**-alternativet på menyen **Flere alternativer**. 
+
+   Hvis du velger en halvdagspermisjon når permisjonsenheten er i dager, kan du angi om du vil be om fri første halve dag eller den andre halve dagen ved å velge alternativet **Halvdagsdefinisjon** på **Flere alternativer**-menyen.
+   
+   ![Halvdagsdefinisjoner](./media/HalfDayDefinitions.png)
 
 - Når du er ferdig med å redigere detaljene for permisjonsforespørselen, velger du **Send** for å sende den til godkjenning.
 
@@ -91,42 +86,36 @@ I kategorien **Fridager** kan du vise:
 - Forespørsler om fridager
 
 - Utkast til permisjonsforespørsler
-
-![Kategorien Fridager i permisjonsapp for Human Resources Teams](./media/hr-teams-leave-app-timeoff-tab.png)
  
 ### <a name="create-a-new-request"></a>Opprette en ny forespørsel
 
 1. Hvis du vil opprette en ny permisjonsforespørsel, velger du **Ny forespørsel**.
 
-   ![Ny forespørsel i permisjonsapp for Human Resources Teams](./media/hr-teams-leave-app-timeoff-tab-new.png)
-
 2. Angi dagen eller dagene du vil ha fri, og velg deretter **Legg til**.
 
-   ![Tillegg av fridager i permisjonsapp for Human Resources Teams](./media/hr-teams-leave-app-timeoff-tab-add.png)
+   ![Tillegg av fridager i permisjonsapp for Human Resources Teams](./media/TimeOffHours.png)
 
 3. Angi en årsakskode hvis det er aktuelt. Skriv også inn kommentarer og legg til eventuelle vedlegg.
 
-4. Når du er ferdig med å angi informasjon, skriver du inn **Send** for å sende den til godkjenning. Du kan også skrive inn **Lagre som utkast** for å komme tilbake til den senere.
+4. Hvis du vil sende flere permisjonsforespørsler for samme dato for ulike permisjonstyper, velger du **Del dag med**-alternativet på menyen **Flere alternativer**.
+
+5. Velg alternativet for **Halvdagsdefinisjon** for å angi om du vil be om fri for den første halve dagen eller den andre halve dagen. Dette alternativet er tilgjengelig når permisjonsforespørselenheten er i dager og den ønskede mengden er 0,5 dager.
+
+6. Når du er ferdig med å angi informasjon, angir du **Send** for å sende den til godkjenning. Du kan også angi **Lagre som utkast** for å komme tilbake til den senere.
 
 ### <a name="manage-draft-requests"></a>Behandle utkast til forespørsler
 
 1. Velg kategorien **Utkast**.
 
-   ![Kategorien Utkast i permisjonsapp for Human Resources Teams](./media/hr-teams-leave-app-drafts-tab.png)
-
 2. Velg blyanten for å redigere forespørselen, eller velg papirkurven for å slette forespørselen.
 
 3. Gjør nødvendige endringer. Når du er ferdig med å angi informasjon, skriver du inn **Send** for å sende den til godkjenning. Du kan også velge **Lagre som utkast** for å komme tilbake til den senere.
-
-   ![Redigering av utkast i permisjonsapp for Human Resources Teams](./media/hr-teams-leave-app-drafts-edit.png)
    
 ### <a name="respond-to-teams-notifications"></a>Svare på Teams-varslinger
 
 Når du eller en arbeider du er godkjenner for, sender en permisjonsforespørsel, vil du motta en melding i Human Resources-appen i Teams. Du kan merke varslingen for å vise den. Varslinger vises også i **Chat**-området.
 
 Hvis du er godkjenner, kan du velge **Godkjenn** eller **Avvis** i varslingen. Du kan også angi en valgfri melding.
-
-![Varsling om permisjonsforespørsel i Human Resources-appen i Teams](./media/hr-teams-leave-app-notification.png)
 
 ## <a name="send-upcoming-time-off-information-to-your-coworkers"></a>Sende kommende informasjon om fritid til kollegene
 
@@ -138,15 +127,9 @@ Når du har installert Human Resources-appen for Teams, kan du enkelt sende info
 
 2. Velg permisjonsforespørselen du vil dele. Hvis du vil dele et utkast av en permisjonsforespørsel, velger du **Utkast** først.
 
-   ![Velge en forestående permisjonsforespørsel som skal deles](./media/hr-teams-leave-app-chat-search.png)
-
 Permisjonsforespørselen vises i chatten.
 
-![Human Resources-permisjonsforespørselskort](./media/hr-teams-leave-app-chat-card.png)
-
-Hvis du delte en utkastforespørsel, vil den vises som et utkast:
-
-![Human Resources-utkast til permisjonsforespørselskort](./media/hr-teams-leave-app-chat-draft-card.png)
+Hvis du delte en utkastforespørsel, vil den vises som et utkast.
 
 ## <a name="view-your-teams-leave-calendar"></a>Vise teamets persmisjonskalender
 
@@ -155,8 +138,6 @@ Hvis du er leder med direkterapporter, kan du vise gruppens godkjente og uavslut
 1. I Human Resources-appen i Teams velger du **Fritid**.
 
 2. Velg **Teamkalender**. Kalenderen viser de godkjente og uavsluttede fritidene for direkterapporter.
-
-   ![Vise kalender i Human Resources-app i Teams](./media/hr-teams-leave-app-view-calendar.png)
 
    > [!NOTE]
    > Hvis du ikke kan se gruppekalenderen, ber du administratoren om å aktivere den. Hvis du vil ha mer informasjon, kan du se [Installere og konfigurere](hr-admin-teams-leave-app.md#install-and-setup).

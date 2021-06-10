@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b765ae63cfb17e26439758f2a0ed64770ef70881
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a94df9dd706c2540779db70e794e4a0a3f2dd186
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809284"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6103028"
 ---
 # <a name="absence-registration-in-time-and-attendance"></a>Fraværsregistrering i timeregistrering
 
@@ -101,7 +101,7 @@ Tidsregistreringer for arbeider må beregnes og godkjennes før de kan overføre
 
 En godkjenner kan endre tidsregistreringer for en arbeider. Godkjenneren kan også endre alle fravær som arbeideren har registrert. Hvis godkjenneren manuelt angir en tidsperiode som har en fraværskode, overstyres ikke fraværskoden for denne perioden av standard fraværskode fra Parametere for timeregistrering.
 
-En arbeider stempler for eksempel inn 10:00 og velger en fraværskode som angir at hun kommer for sent. Senere informerer arbeideren sin overordnede om at hun hadde en legeavtale fra 08:00 til 10:00. Legeavtalen skal ikke føre til trekk i lønn for arbeideren. I dette tilfellet kan derfor overordnede justere de to timene med fravær fra 08:00 til 10:00 ved å manuelt angi en fraværskode som angir sykdom for disse to timene.
+En arbeider stempler for eksempel inn 10:00 og velger en fraværskode som indikerer at vedkommende kommer for sent. Senere informerer arbeideren sin overordnede om en legeavtale fra 08:00 til 10:00. Legeavtalen skal ikke føre til trekk i lønn for arbeideren. I dette tilfellet kan derfor overordnede justere de to timene med fravær fra 08:00 til 10:00 ved å manuelt angi en fraværskode som angir sykdom for disse to timene.
 
 ### <a name="calculate-and-approve-absence"></a>Beregne og godkjenne fravær
 

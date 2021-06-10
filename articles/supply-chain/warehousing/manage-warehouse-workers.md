@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9f5676879f631fce9c9c674250a07723131906fa
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9d1794d0f34ad9d22f012fc893f3e407eb57614e
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818974"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6102956"
 ---
 # <a name="manage-warehouse-workers"></a>Administrere lagerarbeidere
 
@@ -28,7 +28,7 @@ ms.locfileid: "5818974"
 
 Denne artikkelen beskriver hvordan du kan bruke mobilappen Lagerstyring for å kontrollere og overvåke arbeidet som utføres av ansatte i lagrene.
 
-Hvis du bruker funksjonaliteten i Lagerstyring, refereres alle lagerarbeideroperasjoner til som *arbeid*. Arbeid, for eksempel plukking, flytting og telling av lagerbeholdningen, registreres ved hjelp av mobilenheter. Før en lagermedarbeider kan utføre arbeidet må han eller hun være knyttet til en arbeider i Personale. Hver **arbeider**-konto kan ha flere lagerarbeidsbrukere tilknyttet. Disse arbeidsbrukerene kan arbeide i forskjellige lagre og kan ha ulike tilgangsnivåer til de ulike mobilenhetsmenyene. Du kan tenke på lagerarbeidsbrukerne som flere pålogginger for den valgte arbeideren. Hver arbeidsbruker har et standardlager, og bestemte arbeidsflyter vises av menyeelementene som er tilgjengelig for denne arbeidsbrukeren. 
+Hvis du bruker funksjonaliteten i Lagerstyring, refereres alle lagerarbeideroperasjoner til som *arbeid*. Arbeid, for eksempel plukking, flytting og telling av lagerbeholdningen, registreres ved hjelp av mobilenheter. Før en lagermedarbeider kan utføre arbeidet må vedkommende være knyttet til en arbeider i Human resources. Hver **arbeider**-konto kan ha flere lagerarbeidsbrukere tilknyttet. Disse arbeidsbrukerene kan arbeide i forskjellige lagre og kan ha ulike tilgangsnivåer til de ulike mobilenhetsmenyene. Du kan tenke på lagerarbeidsbrukerne som flere pålogginger for den valgte arbeideren. Hver arbeidsbruker har et standardlager, og bestemte arbeidsflyter vises av menyeelementene som er tilgjengelig for denne arbeidsbrukeren. 
 
 For å opprette en ny arbeidsbruker velger du siden **Arbeidere**, fanen **Generelt**, delen **Lagre** og klikker **Arbeider**. Du må angi en bruker-ID, et brukernavn, et standardlager og et menynavn. Denne menyen lastes inn når brukeren logger på portalen for lagermobilenheter og lar deg definere hvilke menyelementer brukeren har tilgang til. 
 

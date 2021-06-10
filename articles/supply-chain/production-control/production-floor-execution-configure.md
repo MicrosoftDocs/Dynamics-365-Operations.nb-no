@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 79e21977e4ef8bce88c97a8fb253345ccc8d6b4f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 84d845055e175e6f4b8078fabeb3307ee96826f2
+ms.sourcegitcommit: 588f8343aaa654309d2ff735fd437dba6acd9d46
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814736"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6115029"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurere grensesnittet for produksjonsutførelse
 
@@ -71,6 +71,14 @@ Denne funksjonen legger til en fane for aktivastyring i grensesnittet for produk
 
 - Funksjonalitet for anleggsmiddelstyring for grensesnittet for produksjonsutførelse
 
+### <a name="enable-job-search"></a>Aktivere jobbsøk
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
+Ved hjelp av denne funksjonen kan du legge til et søkefelt i jobblisten. Arbeidere kan finne en bestemt jobb ved å angi jobb-IDen eller finne alle jobber for en bestemt ordre ved å angi ordre-IDen. Arbeidere kan angi IDen ved å bruke et tastatur eller ved å skanne en strekkode. Hvis du vil bruke den, aktiverer du følgende funksjon i [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- Jobbsøk for grensesnittet for produksjonsutførelse
+
 ## <a name="work-with-production-floor-execution-configurations"></a>Arbeide med grensesnittet for produksjonsutførelse
 
 Slik oppretter og vedlikeholder du enhetskonfigurasjoner: Gå til **Produksjonskontroll \> Oppsett \> Produksjonsutførelse \> Konfigurere produksjonsutførelse**. Siden **Konfigurere produksjonsutførelse** viser en liste over eksisterende konfigurasjoner. På denne siden kan du utføre følgende handlinger:
@@ -81,6 +89,7 @@ Slik oppretter og vedlikeholder du enhetskonfigurasjoner: Gå til **Produksjonsk
 Deretter konfigurerer du de ulike innstillingene for den valgte enhetskonfigurasjonen. Følgende felt er tilgjengelige:
 
 - **Bare stemple inn og ut** – Sett dette alternativet til *Ja* for å opprette et forenklet grensesnitt som bare gir inn- og utstemplingsfunksjonalitet. Dette deaktiverer de fleste andre alternativene på denne siden. Du må fjerne alle linjene fra hurtigfanen **Fanevalg** før du kan aktivere dette alternativet.
+- **Aktiver søk** - Sett dette alternativet til *Ja* hvis du vil inkludere et søkefelt i jobblisten. Arbeidere kan finne en bestemt jobb ved å angi jobb-IDen eller finne alle jobber for en bestemt ordre ved å angi ordre-IDen. Arbeidere kan angi IDen ved å bruke et tastatur eller ved å skanne en strekkode.
 - **Rapporter antall ved utstempling** – Sett dette alternativet til *Ja* for å be arbeiderne om å rapportere tilbakemelding om jobber som pågår ved utstempling. Når *Nei* er valgt, blir ikke arbeiderne spurt om dette.
 - **Lås ansatt** – Når dette alternativet er satt til *Nei*, blir arbeidere logget av umiddelbart etter at de har utført en registrering (for eksempel en ny jobb). Enheten vil deretter gå tilbake til påloggingssiden. Når dette alternativet er satt til *Ja*, vil arbeidere forbli logget på jobbkortenheten. En arbeider kan imidlertid logge av manuelt slik at en annen arbeider kan logge på når jobbkortetheten fortsetter å kjøre under den samme systembrukerkontoen. Hvis du vil ha mer informasjon om disse kontotypene, kan du se [Tilordnede brukere](config-job-card-device.md#assigned-users).
 - **Bruk det faktiske registreringstidspunktet** – Velg *Ja* for å angi at tidspunktet for hver nye registrering skal være likt det nøyaktige tidspunktet da registreringen ble sendt av en arbeider. Når dette alternativet er satt til *Nei*, brukes påloggingstidspunktet i stedet. Du bør normalt velge *Ja* hvis du har satt **Lås ansatt** og/eller **Én arbeider**-alternativet til *Ja*, i tilfeller der arbeiderne ofte er logget på i lengre perioder.
