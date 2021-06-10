@@ -1,0 +1,440 @@
+---
+title: Tilordne trinnikoner og -titler for mobilappen Warehouse Management
+description: Dette emnet beskriver hvordan du tilordner trinnikoner og -titler for nye eller tilpassede oppgaveflyter for Warehouse Management-mobilappen.
+author: MarkusFogelberg
+ms.date: 05/17/2021
+ms.topic: article
+audience: Application User
+ms.reviewer: kamaybac
+ms.search.region: Global
+ms.author: mafoge
+ms.search.validFrom: 2021-05-17
+ms.dyn365.ops.version: 10.0.17
+ms.openlocfilehash: 9523492d766669e6c38579fba7b5ddd6b3d282fc
+ms.sourcegitcommit: c53de2c09b9296b41653e739178edf29f79e0679
+ms.translationtype: HT
+ms.contentlocale: nb-NO
+ms.lasthandoff: 05/17/2021
+ms.locfileid: "6049370"
+---
+# <a name="assign-step-icons-and-titles-for-the-warehouse-management-mobile-app"></a>Tilordne trinnikoner og -titler for mobilappen Warehouse Management
+
+[!include [banner](../includes/banner.md)]
+
+Dette emnet beskriver hvordan du tilordner trinnikoner og -titler for nye eller tilpassede oppgaveflyter for mobilappen Warehouse Management.
+
+Følgende illustrasjoner viser hvordan trinnikoner og titler vises i mobilappen Warehouse Management.
+
+![Eksempel på et trinnikon og en trinntittel i Warehouse Management-mobilappen](media/step-icon-example.png "Eksempel på et trinnikon og en trinntittel i Warehouse Management-mobilappen")
+
+## <a name="turn-on-this-feature-in-your-system"></a>Aktivere denne funksjonen i systemet
+
+Før du kan bruke denne funksjonen, må den være aktivert i systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
+
+- **Modul:** *Lagerstyring*
+- **Funksjonsnavn:** *Brukerinnstillinger, ikoner og trinntitler for den nye lagerappen*
+
+## <a name="standard-step-ids-classes-and-icons"></a>Standard trinn-IDer, klasser og ikoner
+
+Hvert trinn i en oppgaveflyt identifiseres av en trinn-ID, og hver trinn-ID har en tilsvarende trinnklasse. Trinnikonet og tittelen angis i hver trinnklasse.
+
+### <a name="step-ids-and-step-classes"></a><a name="step-ids-classes"></a>Trinn-IDer og trinnklasser
+
+I tabellen nedenfor finner du en oversikt over alle trinn-IDer som er tilgjengelige, og den tilhørende trinnklassen. Kontrollnavnet til hovedinndatafeltet brukes som trinn-IDen.
+
+Hvis du vil ha et eksempel som viser hvordan disse trinn-IDene og klassene brukes, kan du se implementeringen av metoden `WHSMobileAppStepInfoBuilder.stepId()` i delen [Eksempel: Tilordne trinnikoner og titler for en egendefinert flyt](#example) senere i dette emnet.
+
+| Trinn-ID | Trinnklasse |
+|-|-|
+| BatchDisposition | WHSMobileAppStepBatchDisposition |
+| Transportør | WHSMobileAppStepCarrier |
+| CatchWeight | WHSMobileAppStepCatchWeight |
+| CatchWeightQtyOutboundWeight | WHSMobileAppStepCatchWeight |
+| CatchWeightTag | WHSMobileAppStepCatchWeightTag |
+| CatchWeightTagWeight | WHSMobileAppStepCatchWeightTagWeight |
+| ChangeWarehouseSuccess | WHSMobileAppStepChangeWarehouseSuccess |
+| CheckDigit | WHSMobileAppStepCheckDigit |
+| ClusterId | WHSMobileAppStepClusterId |
+| ClusterPickQtyVerification | WHSMobileAppStepQtyVerification |
+| ClusterPosition | WHSMobileAppStepClusterPosition |
+| ConfigId | WHSMobileAppStepConfigId |
+| Bekreftelse | WHSMobileAppStepConfirmation |
+| ConsolidateFromLicensePlateId | WHSMobileAppStepConsolidateFromLicensePlateId |
+| ConsolidateLPConfirmation | WHSMobileAppStepConsolidateLPConfirmation |
+| ConsolidateToLicensePlateId | WHSMobileAppStepConsolidateToLicensePlateId |
+| ContainerType | WHSMobileAppStepContainerType |
+| CountingReasonCode | WHSMobileAppStepCountingReasonCode |
+| CycleCountingAddLPOrFinish | WHSMobileAppStepCycleCountingAddLPOrFinish |
+| CycleCountQty1 | WHSMobileAppStepCycleCountQty |
+| CycleCountQty2 | WHSMobileAppStepCycleCountQty |
+| CycleCountQty3 | WHSMobileAppStepCycleCountQty |
+| CycleCountQty4 | WHSMobileAppStepCycleCountQty |
+| Disposisjon | WHSMobileAppStepDisposition |
+| DriverCheckInConfirmation | WHSMobileAppStepDriverCheckInConfirmation |
+| DriverCheckInId | WHSMobileAppStepDriverCheckInId |
+| DriverCheckOutConfirmation | WHSMobileAppStepDriverCheckOutConfirmation |
+| DriverCheckOutId | WHSMobileAppStepDriverCheckOutId |
+| ExpDate | WHSMobileAppStepExpDate |
+| FromBatchDisposition | WHSMobileAppStepFromBatchDisposition |
+| FromInventoryStatus | WHSMobileAppStepInventoryStatusFrom |
+| FullQty | WHSMobileAppStepFullQty |
+| InboundPut | WHSMobileAppStepInboundPut |
+| InventBatchId | WHSMobileAppStepBatch |
+| InventColorId | WHSMobileAppStepInventColorId |
+| InventLocation | WHSMobileAppStepInventLocation |
+| InventLocationId | WHSMobileAppStepWarehouse |
+| InventSerialId | WHSMobileAppStepInventSerialId |
+| InventSizeId | WHSMobileAppStepInventSizeId |
+| InventStatusId | WHSMobileAppStepInventStatus |
+| InventStyleId | WHSMobileAppStepInventStyleId |
+| InventVersionId | WHSMobileAppStepInventVersionId |
+| ItemId | WHSMobileAppStepItem |
+| ITMContainerID | ITMMobileAppStepContainerId |
+| ITMShipmentID | ITMMobileAppStepShipmentId |
+| KanbanCardId | WHSMobileAppStepKanbanCard |
+| KanbanCardToEmpty | WHSMobileAppStepKanbanCardToEmpty |
+| KanbanOrCardId | WHSMobileAppStepKanbanCard |
+| LicensePlateId | WHSMobileAppStepLicensePlate |
+| LoadId | WHSMobileAppStepLoadId |
+| LocationLicensePlatePosition | WHSMobileAppStepLocationLicensePlatePosition |
+| LocOrLP | WHSMobileAppStepLocOrLP |
+| LocOrLP_From | WHSMobileAppStepLocOrLPFrom |
+| LocOrLP_To | WHSMobileAppStepLocOrLPTo |
+| LocOrLPCheck | WHSMobileAppStepLocOrLPCheck |
+| LocVerification | WHSMobileAppStepLocVerification |
+| LPAdjustIn | WHSMobileAppStepLPAdjustIn |
+| LPBreakChildLP | WHSMobileAppStepLPBreakChildLP |
+| LPBreakParentLP | WHSMobileAppStepLPBreakParentLP |
+| LPBuildChildLP | WHSMobileAppStepLPBuildChildLP |
+| LPBuildParentLP | WHSMobileAppStepLPBuildParentLP |
+| LPVerification | WHSMobileAppStepLPVerification |
+| MergeContainerId | WHSMobileAppStepMergeContainerId |
+| MixedLPLineNum | WHSMobileAppStepMixedLPLineNum |
+| MobileDeviceQueueMessageCollectionIdentifierId | WHSMobileAppStepSelectOrder |
+| MovementConfirmCancel | WHSMobileAppStepMovementConfirmCancel |
+| NewCaptureWeight | WHSMobileAppStepCatchWeight |
+| NewQty | WHSMobileAppStepNewQty |
+| OutboundCatchWeightTag | WHSMobileAppStepCatchWeightTag |
+| OutboundPut | WHSMobileAppStepOutboundPut |
+| OutboundWeight | WHSMobileAppStepCatchWeight |
+| OverridePutNewLocation | WHSMobileAppStepOverridePutNewLocation |
+| PieceByPieceConfirmation | WHSMobileAppStepQtyVerification |
+| POLineNum | WHSMobileAppStepPOLineNum |
+| Best.nr. | WHSMobileAppStepPONum |
+| PositionFull | WHSMobileAppStepPositionFull |
+| PositionFullQty | WHSMobileAppStepPositionFullQty |
+| Styrke | WHSMobileAppStepPotency |
+| PrinterName | WHSMobileAppStepPrinterName |
+| ProdId | WHSMobileAppStepProdId |
+| ProdLastPalletConfirmation | WHSMobileAppStepProdLastPalletConfirmation |
+| ProductConfirmation | WHSMobileAppStepProductConfirmation |
+| ProductionScrapConfirmation | WHSMobileAppStepProductionScrapConfirmation |
+| Plasser | WHSMobileAppStepPut |
+| PutawayClusterId | WHSMobileAppStepPutawayClusterId |
+| Antall | WHSMobileAppStepQty |
+| QtyAdjust | WHSMobileAppStepQtyAdjust |
+| QtyShort | WHSMobileAppStepQtyShort |
+| QtyToConsume | WHSMobileAppStepQtyToConsume |
+| QtyToPick | WHSMobileAppStepQtyToPick |
+| QtyToPut | WHSMobileAppStepQtyToPut |
+| QtyToScrap | WHSMobileAppStepQtyToScrap |
+| QtyVerification | WHSMobileAppStepQtyVerification |
+| QtyWithScanningLimit | WHSMobileAppStepQtyAdjust |
+| ReasonString | WHSMobileAppStepReasonString |
+| RecvLocationId | WHSMobileAppStepRecvLocationId |
+| RemoveContainerId | WHSMobileAppStepRemoveContainerId |
+| ReprintLabelConfirmation | WHSMobileAppStepReprintLabelConfirmation |
+| RMANum | WHSMobileAppStepRMANum |
+| ShortPickReason | WHSMobileAppStepShortPickReason |
+| SortConOrLP | WHSMobileAppStepSortConOrLP |
+| SortLicensePlateId | WHSMobileAppStepSortLicensePlateId |
+| SortPositionId | WHSMobileAppStepSortPositionId |
+| SortVerification | WHSMobileAppStepSortVerification |
+| StartLocationId | WHSMobileAppStepStartLocationId |
+| StartProdOrderConfirmation | WHSMobileAppStepStartProdOrderConfirmation |
+| TargetLicensePlateId | WHSMobileAppStepTargetLicensePlateId |
+| TOLineNum | WHSMobileAppStepTOLineNum |
+| ToLocation | WHSMobileAppStepToLocation |
+| TONum | WHSMobileAppStepTONum |
+| ToWarehouse | WHSMobileAppStepWarehouseTo |
+| TransportLoadId | WHSMobileAppStepTransportLoadId |
+| WaveLabelId | WHSMobileAppStepWaveLabelId |
+| WaveLblQty | WHSMobileAppStepWaveLblQty |
+| Tykkelse | WHSMobileAppStepWeight |
+| WeightToConsume | WHSMobileAppStepWeightToConsume |
+| WHSAdjustmentType | WHSMobileAppStepWHSAdjustmentType |
+| WHSReceivingException | WHSMobileAppStepWHSReceivingException |
+| WHSWorkException | WHSMobileAppStepWHSWorkException |
+| WHSWorkLicensePlateId | WHSMobileAppStepWorkLicensePlateId |
+| WMSLocationId | WHSMobileAppStepLocation |
+| WorkId | WHSMobileAppStepWorkId |
+| WorkIdToCancel | WHSMobileAppStepWorkIdToCancel |
+| WorkLPIdPutawayCluster | WHSMobileAppStepWorkLPIdPutawayCluster |
+| WorkPoolId | WHSMobileAppStepWorkPoolId |
+| ZoneId | WHSMobileAppStepZoneId |
+
+### <a name="available-step-icons"></a><a name="step-icons"></a>Tilgjengelige trinnikoner
+
+Systemet inneholder en samling standard trinnikoner som du også kan bruke til de egendefinerte trinnene. Du kan ikke laste opp egendefinerte trinnikoner. Derfor må du alltid velge ett av de standard trinnikonene.
+
+Følgende tabell viser hvert standard trinnikon som er tilgjengelig, og navnet.
+
+<table>
+<tbody>
+<tr>
+<td><img src="media/step-icons-about.png" alt="About step icon" title="Om-trinnikon"><br>Om</td>
+<td><img src="media/step-icons-add-lp.png" alt="Add license plate or item step icon" title="Legge til nummerskilt- eller elementtrinnikon"><br>AddLpOrItem</td>
+<td><img src="media/step-icons-batch-disposition.png" alt="Batch disposition step icon" title="Trinnikon for partidisposisjon"><br>BatchDisposition</td>
+<td><img src="media/step-icons-carrier.png" alt="Carrier step icon" title="Transportørt-trinnikon"><br>Transportør</td>
+</tr>
+<tr>
+<td><img src="media/step-icons-cw-tag.png" alt="Catch weight tag step icon" title="Trinnikon for faktisk vekt-kode"><br>CatchWeightTag</td>
+<td><img src="media/step-icons-cw-tag-weight.png" alt="Catch weight tag weight step icon" title="Trinnikon for faktisk vekt-kode"><br>CatchWeightTagWeight</td>
+<td><img src="media/step-icons-check-digit.png" alt="Check digit step icon" title="Trinnikon for kontrollsiffer"><br>CheckDigit</td>
+<td><img src="media/step-icons-check-in-out.png" alt="Check in or out ID step icon" title="Trinnikon for ID for inn- eller utsjekking"><br>CheckInOutId</td>
+</tr>
+<tr>
+<td><img src="media/step-icons-child-lp.png" alt="Child license plate step icon" title="Trinnikon for underordnet nummerskilt"><br>ChildLP</td>
+<td><img src="media/step-icons-cluster-id.png" alt="Cluster ID step icon" title="Trinnikon for klynge-ID"><br>ClusterId</td>
+<td><img src="media/step-icons-cluster-position.png" alt="Cluster position step icon" title="Trinnikon for klyngeposisjon"><br>ClusterPosition</td>
+<td><img src="media/step-icons-config-id.png" alt="Config ID step icon" title="Trinnikon for konfigurasjons-ID"><br>ConfigId</td>
+</tr>
+<tr>
+<td><img src="media/step-icons-configured-field.png" alt="Configured field step icon" title="Trinnikon for konfigurert felt"><br>ConfiguredField</td>
+<td><img src="media/step-icons-con-lp.png" alt="Con or LP step icon" title="Trinnsikon for Con eller LP"><br>ConOrLP</td>
+<td><img src="media/step-icons-consolidate-from-LP.png" alt="Consolidate from license plate ID step icon" title="Trinnikon for konsolider fra nummerskilt-ID"><br>ConsolidateFromLicensePlateID</td>
+<td><img src="media/step-icons-consolidate-to-LP.png" alt="Consolidate to license plate ID step icon" title="Trinnikon for konsolider til nummerskilt-ID"><br>ConsolidateToLicensePlateID</td>
+</tr>
+<tr>
+<td><img src="media/step-icons-container-type.png" alt="Container type step icon" title="Trinnikon for containertype"><br>ContainerType</td>
+<td><img src="media/step-icons-counting.png" alt="Counting step icon" title="Trinnikon for opptelling"><br>Opptelling</td>
+<td><img src="media/step-icons-counting-reason.png" alt="Counting reason code step icon" title="Trinnikonet for årsakskode for telling"><br>CountingReasonCode</td>
+<td><img src="media/step-icons-country-origin.png" alt="Country of origin code step icon" title="Trinnikon for kode for opprinnelsesland"><br>CountryOfOrigin</td>
+</tr>
+<tr>
+<td><img src="media/step-icons-disposition.png" alt="Disposition step icon" title="Trinnikon for disposisjon"><br>Disposisjon</td>
+<td><img src="media/step-icons-done.png" alt="Done step icon" title="Trinnikon for utført"><br>Utført</td>
+<td><img src="media/step-icons-driver-check-in-confirmation.png" alt="Driver check in confirmation step icon" title="Trinikon for bekreftelse for sjåførinnsjekking"><br>DriverCheckInConfirmation</td>
+<td><img src="media/step-icons-driver-check-in-id.png" alt="Driver check in ID step icon" title="Trinnikon for ID for sjåførinnsjekking"><br>DriverCheckInId</td>
+</tr>
+<tr>
+<td><img src="media/step-icons-driver-check-out-id.png" alt="Driver check out ID step icon" title="Trinnikon for ID for sjåførutsjekking"><br>DriverCheckOutId</td>
+<td><img src="media/step-icons-exp-date.png" alt="Expiration date step icon" title="Trinnikon for utløpsdato"><br>ExpDate</td>
+<td><img src="media/step-icons-field.png" alt="Field step icon" title="Trinnikon for felt"><br>Felt</td>
+<td><img src="media/step-icons-from-batch.png" alt="From batch disposition step icon" title="Trinnikon for fra partidisposisjon"><br>FromBatchDisposition</td>
+</tr>
+<tr>
+<td><img src="media/step-icons-from-inventory-status.png" alt="From inventory status step icon" title="Trinnikon for fra lagerstatus"><br>FromInventoryStatus</td>
+<td><img src="media/step-icons-id-attribute.png" alt="ID attribute step icon" title="Trinnikon for ID-attributt"><br>IdAttribute</td>
+<td><img src="media/step-icons-invent-batch-id.png" alt="Inventory batch ID step icon" title="Trinnikon for lagerparti-ID"><br>InventBatchID</td>
+<td><img src="media/step-icons-invent-color-id.png" alt="Inventory color ID step icon" title="Trinnikon for lagerfarge-ID"><br>InventColorID</td>
+</tr>
+<tr>
+<td><img src="media/step-icons-invent-location.png" alt="Inventory location step icon" title="Trinnikon for lagerlokasjon"><br>InventLocation</td>
+<td><img src="media/step-icons-invent-serial-id.png" alt="Inventory serial ID step icon" title="Trinnikon for lagerserie-ID"><br>InventSerialID</td>
+<td><img src="media/step-icons-invent-size-id.png" alt="Inventory size ID step icon" title="Trinnikon for lagerstørrelses-ID"><br>InventSizeID</td>
+<td><img src="media/step-icons-invent-status-id.png" alt="Inventory status ID step icon" title="Trinnikon for fra lagerstatus-ID"><br>InventStatusID</td>
+</tr>
+<tr>
+<td><img src="media/step-icons-invent-style-id.png" alt="Inventory style ID step icon" title="Trinnikon for lagerstil-ID"><br>InventStyleID</td>
+<td><img src="media/step-icons-invent-version-id.png" alt="Inventory version ID step icon" title="Trinnikon for fra lagerversjons-ID"><br>InventVersionID</td>
+<td><img src="media/step-icons-item-id.png" alt="Item ID step icon" title="Trinnikon for element-ID"><br>ItemID</td>
+<td><img src="media/step-icons-itm-contianer-id.png" alt="ITM container ID step icon" title="Trinnikon for ITM-container-ID"><br>ITMContainerID</td>
+</tr>
+<tr>
+<td><img src="media/step-icons-itm-shipment-id.png" alt="ITM shipment ID step icon" title="Trinnikon for ITM-forsendelses-ID"><br>ITMShipmentID</td>
+<td><img src="media/step-icons-kanban-card-id.png" alt="Kanban card ID step icon" title="Trinnikon for Kanban-kort-ID"><br>KanbanCardID</td>
+<td><img src="media/step-icons-kanban-or-card-id.png" alt="Kanban or card ID step icon" title="Trinnikon for Kanban- eller kort-ID"><br>KanbanOrCardID</td>
+<td><img src="media/step-icons-license-plate-id.png" alt="License plate ID step icon" title="Trinnikon for nummerskilt-ID"><br>LicensePlateID</td>
+</tr>
+<tr>
+<td><img src="media/step-icons-load-id.png" alt="Load ID step icon" title="Trinnikon for last-ID"><br>LoadId</td>
+<td><img src="media/step-icons-location-lp-pos.png" alt="Location license plate position step icon" title="Trinnikon for nummerskiltposisjon"><br>LocationLicensePlatePosition</td>
+<td><img src="media/step-icons-location-or-lp.png" alt="Location or license plate step icon" title="Trinnikon for lokasjon og nummerskilt"><br>LocOrLP</td>
+<td><img src="media/step-icons-location-or-lp-check.png" alt="Location or license plate check step icon" title="Trinnikon for lokasjons- og nummerskiltkontroll"><br>LocOrLPCheck</td>
+</tr>
+<tr>
+<td><img src="media/step-icons-location-or-lp-from.png" alt="Location or license plate from step icon" title="Trinnikon for lokasjons- og nummerskilt"><br>LocOrLPFrom</td>
+<td><img src="media/step-icons-location-or-lp-to.png" alt="Location or license plate to step icon" title="Trinnikon for lokasjon og nummerskilt"><br>LocOrLPTo</td>
+<td><img src="media/step-icons-long-process-complete.png" alt="Long process completed step icon" title="Trinnikon for langt prosesstrinn fullført"><br>LongProcessCompleted</td>
+<td><img src="media/step-icons-lp-break-parent.png" alt="LP break parent LP step icon" title="Trinnikon for nummerskilt bryt for overordnede nummerskilt"><br>LPBreakParentLP</td>
+</tr>
+<tr>
+<td><img src="media/step-icons-merge-container.png" alt="Merge container ID step icon" title="Trinnikon for slå sammen container-ID"><br>MergeContainerId</td>
+<td><img src="media/step-icons-mixed-lp-line.png" alt="Mixed license plate line number step icon" title="Trinnikon for kombinert skiltnummer"><br>MixedLPLineNum</td>
+<td><img src="media/step-icons-outbound-weight.png" alt="Outbound weight step icon" title="Trinnikon for utgående vekt"><br>OutboundWeight</td>
+<td><img src="media/step-icons-owner.png" alt="Owner step icon" title="Trinnikon for eier"><br>Eier</td>
+</tr>
+<tr>
+<td><img src="media/step-icons-parent-lp.png" alt="Parent license plate step icon" title="Trinnikon for overordnet nummerskilt"><br>ParentLP</td>
+<td><img src="media/step-icons-please-confirm.png" alt="Please confirm step icon" title="Trinnikon for vennligst bekreft"><br>PleaseConfirm</td>
+<td><img src="media/step-icons-po-line-num.png" alt="Purchase order line number step icon" title="Trinnikon for bestillingslinje"><br>POLineNum</td>
+<td><img src="media/step-icons-po-num.png" alt="Purchase order number step icon" title="Trinnikon for bestillingsnummer"><br>Best.nr.</td>
+</tr>
+<tr>
+<td><img src="media/step-icons-position-full.png" alt="Position full step icon" title="Trinnikon for posisjon full"><br>PositionFull</td>
+<td><img src="media/step-icons-potency.png" alt="Potency step icon" title="Trinnikon for styrke"><br>Styrke</td>
+<td><img src="media/step-icons-printer-name.png" alt="Printer name step icon" title="Trinnikon for skrivernavn"><br>PrinterName</td>
+<td><img src="media/step-icons-prod-id.png" alt="Prod ID step icon" title="Trinnikon for produkt-ID"><br>ProdId</td>
+</tr>
+<tr>
+<td><img src="media/step-icons-product-confirm.png" alt="Product confirmation step icon" title="Trinnikon for produktbekreftelse"><br>ProductConfirmation</td>
+<td><img src="media/step-icons-put.png" alt="Put step icon" title="Trinnikon for Plasser"><br>Plasser</td>
+<td><img src="media/step-icons-putaway-cluster-id.png" alt="Putaway cluster ID step icon" title="Trinnikon for gruppe-ID for plassering"><br>PutawayClusterId</td>
+<td><img src="media/step-icons-qty.png" alt="Quantity step icon" title="Trinnikon for antall"><br>Antall</td>
+</tr>
+<tr>
+<td><img src="media/step-icons-qty-adjust-in.png" alt="Quantity adjust in step icon" title="Trinnikon for juster inn antall"><br>QtyAdjustIn</td>
+<td><img src="media/step-icons-qty-short.png" alt="Quantity short step icon" title="Trinnikon for lavt antall"><br>QtyShort</td>
+<td><img src="media/step-icons-qty-to-consume.png" alt="Quantity to consume step icon" title="Trinnikon for antall som skal konsumeres"><br>QtyToConsume</td>
+<td><img src="media/step-icons-qty-to-put.png" alt="Quantity to put step icon" title="Trinnikon for antall som skal plasseres"><br>QtyToPut</td>
+</tr>
+<tr>
+<td><img src="media/step-icons-qty-to-scrap.png" alt="Quantity to scrap step icon" title="Trinnikon for antall som skal kasseres"><br>QtyToScrap</td>
+<td><img src="media/step-icons-qty-confirmation.png" alt="Quantity confirmation step icon" title="Trinnikon for antallsbekreftelse"><br>QuantityConfirmation</td>
+<td><img src="media/step-icons-raf-end-job.png" alt="Report as finished end job step icon" title="Trinnikon for ferdigmelding av avslutningsjobb"><br>RAFEndJob</td>
+<td><img src="media/step-icons-recv-loc-id.png" alt="Receive location ID step icon" title="Trinnikon for motta plasserings-ID"><br>RecvLocationID</td>
+</tr>
+<tr>
+<td><img src="media/step-icons-remove-container-id.png" alt="Remove container ID step icon" title="Trinnikon for fjern container-ID"><br>RemoveContainerID</td>
+<td><img src="media/step-icons-rma-no.png" alt="RMA number step icon" title="Trinnikon for autorisasjonsreturnummer"><br>RMANum</td>
+<td><img src="media/step-icons-select-order.png" alt="Select order step icon" title="Trinnikon for velg ordre"><br>SelectOrder</td>
+<td><img src="media/step-icons-short-pick-reason.png" alt="Short pick reason step icon" title="Trinnikon for plukk med mangler"><br>ShortPickReason</td>
+</tr>
+<tr>
+<td><img src="media/step-icons-sort-position-id.png" alt="Sort position ID step icon" title="Trinnikon for sporteringsposisjons-ID"><br>SortPositionId</td>
+<td><img src="media/step-icons-target-lp-id.png" alt="Target license plate ID step icon" title="Trinnikon for målnummerskilt-ID"><br>TargetLicensePlateId</td>
+<td><img src="media/step-icons-to-line-no.png" alt="To line number step icon" title="Trinnikon for Til-linjenummer"><br>ToLineNum</td>
+<td><img src="media/step-icons-to-location.png" alt="To location step icon" title="Trinnikon for Til-plassering"><br>ToLocation</td>
+</tr>
+<tr>
+<td><img src="media/step-icons-to-number.png" alt="To number step icon" title="Trinnikon for Til-nummer"><br>ToNum</td>
+<td><img src="media/step-icons-to-warehouse.png" alt="To warehouse step icon" title="Trinnikon for Til-lager"><br>ToWarehouse</td>
+<td><img src="media/step-icons-tranport-load-id.png" alt="Transport load ID step icon" title="Trinnikon for transportlast-ID"><br>TransportLoadId</td>
+<td><img src="media/step-icons-vendor-batch-id.png" alt="Vendor batch ID step icon" title="Trinnikon for leverandørparti-ID"><br>VendBatchId</td>
+</tr>
+<tr>
+<td><img src="media/step-icons-wave-label-id.png" alt="Wave label ID step icon" title="Trinnikon for bølgeetikett-ID"><br>WaveLabelId</td>
+<td><img src="media/step-icons-wave-label-qty.png" alt="Wave label quantity step icon" title="Trinnikon for bølgeetikettantall"><br>WaveLblQty</td>
+<td><img src="media/step-icons-weight.png" alt="Weight step icon" title="Trinnikon for vekt"><br>Tykkelse</td>
+<td><img src="media/step-icons-weight-to-consume.png" alt="Weight to consume step icon" title="Trinnikon for vekt som skal konsumeres"><br>WeightToConsume</td>
+</tr>
+<tr>
+<td><img src="media/step-icons-whs-adjustment-type.png" alt="WHS adjustment type step icon" title="Trinnikon for WHS-justering"><br>WHSAdjustmentType</td>
+<td><img src="media/step-icons-whs-receiving-exception.png" alt="WHS receiving exception step icon" title="Trinnikon for WHS-mottaksunntak"><br>WHSReceivingException</td>
+<td><img src="media/step-icons-wms-location-id.png" alt="WMS location ID step icon" title="Trinnikon for WMS-plasserings-ID"><br>WMSLocationID</td>
+<td><img src="media/step-icons-work-id.png" alt="Work ID step icon" title="Trinnikon for arbeids-ID"><br>WorkId</td>
+</tr>
+<tr>
+<td><img src="media/step-icons-work-id-to-cancel.png" alt="Work ID to cancel step icon" title="Trinnikon for arbeids-ID som skal avbrytes"><br>WorkIdToCancel</td>
+<td><img src="media/step-icons-work-lp-id.png" alt="Work license plate ID step icon" title="Trinnikon for nummerskilt-ID for jobb"><br>WorkLicensePlateId</td>
+<td><img src="media/step-icons-work-lp-putaway-cluster.png" alt="Work license plate ID putaway cluster step icon" title="Trinnikon for plasseringsgruppe for nummerskilt-ID for jobb"><br>WorkLPIDPutawayCluster</td>
+<td><img src="media/step-icons-work-pool-id.png" alt="Work pool ID step icon" title="Trinnikon for arbeidsutvalg-ID"><br>WorkPoolID</td>
+</tr>
+<tr>
+<td><img src="media/step-icons-zone-pool-id.png" alt="Zone ID step icon" title="Trinnikon for sone-ID"><br>ZoneID</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+## <a name="example-assign-step-icons-and-titles-for-a-custom-flow"></a><a name="example"></a>Eksempel: Tilordne trinnikoner og -titler for en egendefinert flyt
+
+Dette eksemplet beskriver hvordan du konfigurerer trinnikoner og -titler for en egendefinert oppgaveflyt. Scenariet er bygd på et eksempel på en egendefinert oppgaveflyt som presenteres og utforskes mer detaljert i følgende kommentarpost: [Tilpasse Warehouse Management-appen](https://cloudblogs.microsoft.com/dynamics365/it/2017/07/06/customizing-the-warehousing-mobile-app). Oppgaveflyten fungerer på følgende måte:
+
+1. Appen viser en side som ber arbeideren om å angi en container-ID (for eksempel ved å skanne en strekkode).
+1. Hvis container-IDen er gyldig, åpner appen en ny side som ber arbeideren om vekten. (Hvis beholder-IDen ikke er gyldig, returneres arbeideren til første side.)
+1. Når arbeideren angir en gyldig vekt, lagrer systemet vekten og returnerer arbeideren til den første siden.
+
+Følgende illustrasjon viser denne oppgaveflyten.
+
+![Oppgaveflytdiagram](media/step-icons-example-task-flow.png "Oppgaveflytdiagram")
+
+### <a name="create-a-step-class-for-the-container-input-page"></a>Opprette en trinnklasse for containerinndatasiden
+
+Med containerinndatasiden kan arbeideren skanne eller angi en container-ID.
+
+![Containerinndataside](media/step-icons-example-container-input.png "Containerinndataside")
+
+På containerinndatasiden er kontrollnavnet for inndatafeltet `ContainerId`. Ettersom dette kontrollnavnet ikke står på [listen over trinn-IDer](#step-ids-classes), vil du ikke finne et eksisterende trinn som er basert på det. Derfor må du opprette en trinnklasse som representerer trinnet. Her er et eksempel:
+
+```xpp
+[WHSMobileAppStepId('ContainerId')]
+final internal class WHSMobileAppStepContainerId extends WHSMobileAppStep
+{
+    private const WHSMobileAppStepIcon PopulationIcon = 'InventBatchID';
+    private const WHSMobileAppStepTitle InputNotFilledTitle = "@WAX:WHSMobileAppStepContainerID_InputNotFilled"; //Scan a container
+    protected void initValues()
+    {
+        defaultStepIcon = PopulationIcon;
+        defaultStepTitle = InputNotFilledTitle;
+    }
+}
+```
+
+Trinnikonets ID lagres i `defaultStepIcon`-klassemedlemmet, og trinntittelen lagres i `defaultStepTitle`-klassemedlemmet.
+
+Hvis du vil tilordne et trinnikon, angir du `defaultStepIcon` til ett av ikon-IDene som vises i delen [Tilgjengelige trinnikoner](#step-icons) tidligere i dette emnet.
+
+### <a name="use-a-standard-or-custom-step-icon-and-title-for-the-weight-input"></a>Bruk et standard eller egendefinert trinnikon og en tittel for vektinndataen
+
+På vektinndatasiden kan du angi en vekt for arbeideren.
+
+![Vektinndataside](media/step-icons-example-weight-input.png "Vektinndataside")
+
+På vektinndatasiden er kontrollnavnet for inndatafeltet `Weight`, som finne i [listen over trinn-IDer](#step-ids-classes). Hvis trinnikonet og -tittelen som er definert i klassen `WHSMobileAppStepWeight`, er akseptabelt for deg, behøver du derfor ikke å endre noe for dette trinnet.
+
+Hvis du imidlertid foretrekker å bruke et annet ikon eller en annen tittel for dette trinnet, kan du overstyre enten metoden `stepId()` eller metoden `stepInfo()` i byggerklassen. Hver oppgaveflyt har sin egen trinninformasjonskonfigurator.
+
+#### <a name="override-the-stepid-method"></a>Overstyre stepId()-metoden
+
+Følgende eksempel viser én måte du kan endre en byggerklasse på ved å overstyre `stepId()`-metoden.
+
+```xpp
+[WHSWorkExecuteMode(WHSWorkExecuteMode:: WeighContainer)]
+public class WHSMobileAppStepInfoBuilderWeighContainer extends WHSMobileAppStepInfoBuilder
+{
+    protected WHSMobileAppStepId stepId()
+    {
+        WHSMobileAppStepId stepIdLocal = super();
+        if (stepIdLocal == 'Weight')
+        {
+            return 'NewWeight';
+        }
+        return stepIdLocal;
+    }
+}
+```
+
+Deretter oppretter du en trinnklasse for `NewWeight`-trinnet. Koden bør ligne på koden for `ContainerId`-eksemplet som ble vist tidligere i dette emnet.
+
+#### <a name="override-the-stepinfo-method"></a>Overstyre stepInfo()-metoden
+
+Følgende eksempel viser én måte du kan endre en byggerklasse på ved å overstyre `stepInfo()`-metoden.
+
+```xpp
+[WHSWorkExecuteMode(WHSWorkExecuteMode:: WeighContainer)]
+public class WHSMobileAppStepInfoBuilderWeighContainer extends WHSMobileAppStepInfoBuilder
+{
+    protected WHSMobileAppStepInfo stepInfo()
+    {
+        if (stepId != 'Weight')
+        {
+            return super();
+        }
+        WHSMobileAppStepInfo stepInfo = WHSMobileAppStepInfo::construct();
+        stepInfo.parmStepIcon('NewIcon');
+        stepInfo.parmStepTitle('NewTitle');
+        return stepInfo;
+    }
+}
+```
+
+Deretter konstruerer du et `WHSMobileAppStepInfo`-objekt og angir ikonet og/eller tittelen direkte.
+
+## <a name="additional-resources"></a>Tilleggsressurser
+
+- [Installere og koble til mobilappen Lagerstyring](install-configure-warehouse-management-app.md)
+- [Brukinnstillinger for mobilenhet](mobile-device-user-settings.md)

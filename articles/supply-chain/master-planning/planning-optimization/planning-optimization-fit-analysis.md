@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 871ac40ea73c8a72e20ff495b9b7e6fe5a12159e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 60f63a49222b3d0f13850b0f39764c6c848aba15
+ms.sourcegitcommit: 3c15a26e9708adc9a75082dc551f0a3a0a7d89f4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812985"
+ms.lasthandoff: 05/17/2021
+ms.locfileid: "6049442"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Analyse for tilpassing av planleggingsoptimalisering
 
@@ -89,13 +89,13 @@ Følgende tabell viser de ulike resultatene som kan vises etter en tilpassingsan
 | Produksjon | Planer inkludert sekvensering: _\#_ | Dette funksjonen venter. For øyeblikket ignoreres sekvensiering når planleggingsoptimalisering aktiveres, uavhengig av denne innstillingen. | Oktober 2021 – April 2022 |
 | Produksjon | Frigitte produksjonsordre som ikke er startet, og der planlagt start er tidligere enn i dag: _\#_ | Dette funksjonen venter. For øyeblikket vil hovedplanleggingen anta at den blir fullført i dag hvis en produksjonsordre blir forsinket. Dette er relevant for frigitte produksjonsordrer der en leveringsdato er i fortiden, men ennå ikke er fullført. | Oktober 2021 – April 2022 |
 | Produksjon | Ressurser som er planlagt med begrenset kapasitet: _\#_ | Dette funksjonen venter. Ressurser som er planlagt med begrenset kapasitet, ignoreres for øyeblikket når planleggingsoptimalisering er aktivert. Planleggingen utføres basert på standard leveringstid fra produktet. | Ubegrenset: Juni 2021. Begrenset: Oktober 2021 |
-| Produksjon | Ruter som brukes i planleggingen: _\#_ | Dette funksjonen venter. Ruter ignoreres for øyeblikket når planleggingsoptimalisering er aktivert. Standard leveringstid fra produktet brukes. | 2021. juni |
+| Produksjon | Ruter som brukes i planleggingen: _\#_ | Dette funksjonen venter. Ruter ignoreres for øyeblikket når planleggingsoptimalisering er aktivert. Standard leveringstid fra produktet brukes. | Juli 2021 |
 | Produksjon | Salgslinjereservasjon ved hjelp av nedbryting: _\#_ | Salgslinjereservasjon som bruker nedbryting, støttes ikke når planleggingsoptimalisering er aktivert. | 2021. oktober |
 | Produksjon | Planlegging med nedbryting av produksjonsordre: _\#_ | Planlegging som bruker nedbryting av produksjonsordrer, støttes ikke når planleggingsoptimalisering er aktivert. Produksjonsordrer kan planlegges enkeltvis. | 2021. oktober |
 | Tilbudsforespørsler | Hovedplaner med tilbudsforespørsler aktivert: _\#_ | Dette funksjonen venter. Tilbudsforespørsler vurderes for øyeblikket ikke som behov når planleggingsoptimalisering aktiveres. De vil ignoreres, uavhengig av denne innstillingen. | Oktober 2021 – April 2022 |
 | Rekvisisjoner | Hovedplaner med rekvisisjoner aktivert: _\#_ | Dette funksjonen støttes nå. Hvis du vil ha mer informasjon, kan du se [Innkjøpsrekvisisjoner](purchase-requisitions.md). | Støttes |
-| Sikkerhetsmarginer | Dekningsgrupper med sikkerhetsmargin: _\#_ | Dette funksjonen støttes nå delvis. Hvis du vil ha mer informasjon, kan du se [Sikkerhetsmarginer](safety-margins.md). | Mottaksmargin: Støttes. Gjenbestillingsmargin og avgangsmargin: april 2021 |
-| Sikkerhetsmarginer | Hovedplaner med sikkerhetsmargin: _\#_ | Dette funksjonen støttes nå delvis. Hvis du vil ha mer informasjon, kan du se [Sikkerhetsmarginer](safety-margins.md). | Mottaksmargin: Støttes. Gjenbestillingsmargin og avgangsmargin: april 2021 |
+| Sikkerhetsmarginer | Dekningsgrupper med sikkerhetsmargin: _\#_ | Dette funksjonen støttes nå delvis. Hvis du vil ha mer informasjon, kan du se [Sikkerhetsmarginer](safety-margins.md). | Mottaksmargin: Støttes. Gjenbestillingsmargin og avgangsmargin - oktober 2021 |
+| Sikkerhetsmarginer | Hovedplaner med sikkerhetsmargin: _\#_ | Dette funksjonen støttes nå delvis. Hvis du vil ha mer informasjon, kan du se [Sikkerhetsmarginer](safety-margins.md). | Mottaksmargin: Støttes. Gjenbestillingsmargin og avgangsmargin - oktober 2021 |
 | Fullføring av sikkerhetslager | Varedekningsposter med "Fyll opp minimum" forskjellig fra "Dagens dato + leveringstid": _\#_ | Planleggingsoptimalisering bruker alltid *Dagens dato + leveringstid*. Denne endringen gjøres for å forberede et forenklet planleggingsoppsett i fremtiden, og for å tilby et gjennomførbart resultat. Hvis leveringstiden ikke er inkludert for sikkerhetslager, vil planlagte bestillinger som opprettes for den gjeldende lagerbeholdningen, alltid bli forsinket på grunn av leveringstiden. Denne virkemåten kan føre til betydelig støy og uønskede planlagte bestillinger. Den beste fremgangsmåten er å endre innstillingen slik at *Dagens dato + leveringstid* brukes. Oppdater hoveddata for å unngå advarsler. | I/T |
 | Salgstilbud | Hovedplaner med salgstilbud aktivert: _\#_ | Dette funksjonen venter. Tilbud ignoreres for øyeblikket når planleggingsoptimalisering er aktivert. De vil ignoreres, uavhengig av denne innstillingen. | Oktober 2021 – April 2022 |
 | Holdbarhet | Hovedplaner med holdbarhet aktivert: _\#_ | Dette funksjonen venter. For øyeblikket ignoreres holdbarhet når planleggingsoptimalisering aktiveres, uavhengig av denne innstillingen. | 2021. oktober |
