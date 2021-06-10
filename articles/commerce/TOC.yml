@@ -94,7 +94,9 @@
                   items:
                     - name: Nyheter eller endringer på startsiden for Commerce
                       href: get-started/whats-new-home-page.md
-                    - name: Commerce 10.0.19 (juli 2021)
+                    - name: Commerce 10.0.20 (juli 2021)
+                      href: get-started/whats-new-commerce-10-0-20.md
+                    - name: Commerce 10.0.19 (juni 2021)
                       href: get-started/whats-new-commerce-10-0-19.md
                     - name: Commerce 10.0.18 (mai 2021)
                       href: get-started/whats-new-commerce-10-0-18.md
@@ -412,7 +414,7 @@
                           href: demo-data.md
                         - name: Visuelle konfigurasjoner av brukergrensesnittet for salgssted
                           href: pos-screen-layouts.md
-                        - name: Installere utforming av oppsett for salgssted
+                        - name: Installer utforming av oppsett for salgssted
                           href: install-pos-layout-designer.md
                         - name: Velge varslingsinnstillinger
                           href: Notifications-POS.md
@@ -554,9 +556,11 @@
                       href: add-qr-code-barcode-email.md
                 - name: Behandle Bing-kart for organisasjonen
                   href: dev-itpro/manage-bing-maps.md
-                - name: Opprette og oppdatere tidsrom for kundehenting
+                - name: Opprett og oppdater tidsrom for kundehenting
                   href: dev-itpro/pickup-timeslots.md
-        - name: Bruke produktene og tjenestene dine i varehandel
+                - name: Konfigurer produktdimensjonsverdier som skal vises som prøver
+                  href: dev-itpro/dimensions-swatch.md
+        - name: Bruk produktene og tjenestene dine i varehandel
           items:
             - name: 'Kategorier, produkter og sortimenter'
               items:
@@ -932,6 +936,8 @@
                   href: web-activity-opt-out.md
                 - name: Bruk måleenhetsinnstillinger
                   href: unit-of-measure.md
+                - name: Bruk visningsinnstillinger for produktdimensjoner
+                  href: dimension-settings.md
             - name: Administrer områdeinnholdet ditt
               items:
                 - name: Måter å legge til innhold på
@@ -1206,7 +1212,7 @@
               href: store-performance-information.md
             - name: 'Definer RFM-analyse (Nyheter, Hyppighet og Økonomisk)'
               href: set-up-rfm-analysis.md
-            - name: Definer Microsoft Clarity i Dynamics 365 Commerce
+            - name: Konfigurer Microsoft Clarity i Dynamics 365 Commerce
               href: set-up-clarity.md
         - name: Globalisering
           items:
@@ -1944,13 +1950,13 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-extended-format-lookup.md?toc=/dynamics365/commerce/toc.json
                 - name: Validere genererte rapporter automatisk
                   items:
-                    - name: Spore genererte rapportresultater og sammenligne dem med grunnlinjeverdier
+                    - name: Spor genererte rapportresultater og sammenlign dem med grunnlinjeverdier
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/commercetoc.json
-                    - name: Forbedringer i sporing av resultater av genererte ER-rapporter og sammenligninger med grunnlinjeverdier
+                    - name: Forbedre sporing av resultatene av genererte ER-rapporter for å sammenligne med grunnlinjeverdier
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/commerce/toc.json
-                    - name: Automatisere testing med ER
+                    - name: Automatiser testing med ER
                       href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/commerce/toc.json
-                - name: Automatisere forretningsprosesser ved hjelp av konfigurasjon av elektronisk rapportering
+                - name: Automatiser forretningsprosesser ved hjelp av konfigurasjon av elektronisk rapportering
                   items:
                     - name: Konfigurere ER for å hente data til Power BI
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/commerce/toc.json
@@ -2262,9 +2268,11 @@
                       href: e-commerce-extensibility/request-properties-object.md
                     - name: Appinnstillinger
                       href: e-commerce-extensibility/app-settings.md
+                    - name: Konfigurer globale konfigurasjonsinnstillinger for områdebygger basert på aktiverte funksjoner
+                      href: e-commerce-extensibility/config-settings-for-features.md
                     - name: Fil for plattformerinnstillinger
                       href: e-commerce-extensibility/platform-settings.md
-                    - name: Utvide en moduldefinisjon
+                    - name: Utvid en moduldefinisjon
                       href: e-commerce-extensibility/extend-module-definition.md
                     - name: Oversikt over API for informasjonskapsel
                       href: e-commerce-extensibility/cookie-api-overview.md
@@ -2366,9 +2374,11 @@
                   href: dev-itpro/UpcomingSDKChanges.md
                 - name: Utviklings- og ALM-endringer fra versjon 10.0.10 til 10.0.13
                   href: dev-itpro/dev-changes-10-13.md
+                - name: Konfigurer en kompileringskontroll for uavhengig emballasje-SDK
+                  href: dev-itpro/build-pipeline.md
                 - name: Slå sammen byggesystemene for Commerce og Finance and Operations
                   href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
-                - name: Overføre SDK for Retail fra Visual Studio 2015 til Visual Studio 2017
+                - name: Overfør SDK for Retail fra Visual Studio 2015 til Visual Studio 2017
                   href: dev-itpro/retail-sdk/migrate-sdk.md
                 - name: Eksempler på utvidelsesmulighet for SDK for Retail
                   href: dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
@@ -2386,11 +2396,13 @@
               items:
                 - name: Skjermoppsett for salgssted
                   href: pos-screen-layouts.md
+                - name: Store Commerce-app i Microsoft Dynamics 365 Commerce
+                  href: dev-itpro/store-commerce.md
                 - name: Åpne URL-adresse på salgssted
                   href: Open-URL-in-POS.md
-                - name: Installere utforming av oppsett for salgssted
+                - name: Installer utforming av oppsett for salgssted
                   href: install-pos-layout-designer.md
-                - name: Utvide skjermvisningen for POS Dual
+                - name: Utvid skjermvisningen for doble salgssteder
                   href: dev-itpro/pos-dual-display-extension.md
                 - name: Legge til egendefinerte kontroller i salgsstedsvisninger
                   href: dev-itpro/pos-custom-control.md
