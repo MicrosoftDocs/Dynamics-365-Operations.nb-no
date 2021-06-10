@@ -5,6 +5,8 @@
       items:
         - name: Nyheter eller endringer i Human Resources
           href: hr-admin-whats-new.md
+        - name: 20. mai 2021
+          href: hr-whats-new-2021-05-20.md
         - name: 3. mai 2021
           href: hr-whats-new-2021-05-03.md
         - name: 19. april 2021
@@ -785,13 +787,19 @@
           items:
             - name: Oversikt over ytelsesstyring
               href: hr-develop-performance-management-overview.md
-            - name: Justere kompetanser for arbeidsstyrke
-              href: hr-develop-skills.md
-            - name: Legge til i ytelsesloggen
+            - name: Kompetanse
+              items:
+                - name: Konfigurer kompetanse
+                  href: hr-develop-skills.md
+                - name: Angi kompetanse
+                  href: hr-develop-enter-skills.md
+                - name: Tilordne kompetanse
+                  href: hr-develop-map-skills.md
+            - name: Legg til i ytelsesjournalen
               href: hr-develop-add-performance-journal.md
-            - name: Opprette et mål
+            - name: Opprett et mål
               href: hr-develop-create-goal.md
-            - name: Opprette en prestasjonsvurdering
+            - name: Opprett en prestasjonsvurdering
               href: hr-develop-create-performance-review.md
         - name: Opprett kurs
           items:

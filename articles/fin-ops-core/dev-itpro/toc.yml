@@ -14,7 +14,9 @@
               items:
                 - name: Nyheter eller endringer på startsiden for Plattformoppdateringer
                   href: get-started/whats-new-home-page.md
-                - name: Plattformoppdateringer for 10.0.19 (juli 2021)
+                - name: Plattformoppdateringer for versjon 10.0.20 (juli 2021)
+                  href: get-started/whats-new-platform-updates-10-0-20.md
+                - name: Plattformoppdateringer for 10.0.19 (juni 2021)
                   href: get-started/whats-new-platform-updates-10-0-19.md
                 - name: Plattformoppdateringer for 10.0.18 (mai 2021)
                   href: get-started/whats-new-platform-updates-10-0-18.md
@@ -940,8 +942,6 @@
                   href: lifecycle-services/getting-started-lcs.md
                 - name: Nyheter eller endringer i Lifecycle Services
                   href: lifecycle-services/whats-new-lcs.md
-                - name: Fjernede eller utgåtte funksjoner i Lifecycle Services (LCS)
-                  href: lifecycle-services/removed-deprecated-features.md
             - name: Brukerveiledning for Lifecycle Services
               href: lifecycle-services/lcs-user-guide.md
             - name: Prosjektinnføring
@@ -1064,6 +1064,10 @@
                       href: data-entities/dual-write/errors-and-alerts.md
                     - name: Håndtering av applivssyklus
                       href: data-entities/dual-write/app-lifecycle-management.md
+                    - name: Brukerangitt teameier
+                      href: data-entities/dual-write/user-specified-team-owner.md
+                    - name: Fjern kobling til og koble til miljøer for dobbel skriving på nytt
+                      href: data-entities/dual-write/relink-environments.md
                 - name: Tilordne begreper mellom apper
                   items:
                     - name: Integrert original for kunde
@@ -1166,13 +1170,15 @@
               items:
                 - name: Oversikt over tillegg
                   href: power-platform/add-ins-overview.md
+            - name: Policyer og kommunikasjon
+              href: /power-platform/admin/policies-communications?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json
         - name: Mobil plattform
           items:
             - name: Ressurser for mobil plattform
               href: mobile-apps/platform/mobile-platform-home-page.md
             - name: Kom i gang
               items:
-                - name: Komme i gang med mobile platform
+                - name: Kom i gang med mobil plattform
                   href: mobile-apps/platform/mobile-platform-getting-started.md
                 - name: Hensyn om arkitektur og utforming
                   href: mobile-apps/platform/mobile-platform-architecture.md

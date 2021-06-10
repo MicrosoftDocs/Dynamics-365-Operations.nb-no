@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-05-05
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 38b2cdb618d92dca7909a145e7fc07ddfc5f4d45
-ms.sourcegitcommit: b67665ed689c55df1a67d1a7840947c3977d600c
+ms.openlocfilehash: 0435deb009173684c7faaf5340e8095c019ec71c
+ms.sourcegitcommit: 2cd82983357b32f70f4e4a0c15d4d1f69e08bd54
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6017061"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "6085480"
 ---
 # <a name="change-the-accounting-or-reporting-currency"></a>Endre regnskaps- eller rapporteringsvalutaen
 
@@ -31,12 +31,12 @@ Dette emnet beskriver hvordan du endrer regnskaps- eller rapporteringsvalutaen, 
 Du vil endre regnskaps- eller rapporteringsvalutaen eller legge til en rapporteringsvaluta i finansoppsettet. Dette skjer vanligvis i følgende scenarioer:
 
 - Feil regnskaps- eller rapporteringsvaluta ble angitt da en juridisk enhet ble konfigurert. Nå vil du endre valutaen.
-- Ingen rapporteringsvaluta ble angitt da en juridisk enhet ble konfigurert. (En rapporteringsvaluta er valgfri.) Nå vil du legge til en rapporteringsvaluta.
+- Det ble angitt en rapporteringsvaluta da en juridisk enhet ble konfigurert, men organisasjonen ønsker nå å fjerne rapporteringsvalutaen.
+- Organisasjonen oppgraderer eller går over til Microsoft Dynamics 365 Finance og ønsker å endre regnskaps- eller rapporteringsvalutaen.
 
 En organisasjon som ikke tidligere har brukt funksjonen Dobbel valuta, ønsker å begynne å bruke den. Dette problemet skjer vanligvis i følgende scenarioer.
 
-- Det ble angitt en rapporteringsvaluta da en juridisk enhet ble konfigurert, men organisasjonen ønsker nå å fjerne rapporteringsvalutaen.
-- Organisasjonen oppgraderer eller går over til Microsoft Dynamics 365 Finance og ønsker å endre regnskaps- eller rapporteringsvalutaen.
+- Ingen rapporteringsvaluta ble angitt da en juridisk enhet ble konfigurert. (En rapporteringsvaluta er valgfri.) Nå vil du legge til en rapporteringsvaluta.
 
 ## <a name="resolution"></a>Løsning
 

@@ -72,6 +72,8 @@
                   items:
                     - name: Nyheter eller endringer på startsiden for Finance
                       href: get-started/whats-new-home-page.md
+                    - name: Finance 10.0.20 (juli 2021)
+                      href: get-started/whats-new-changed-10-0-20.md
                     - name: Finance 10.0.19 (juli 2021)
                       href: get-started/whats-new-changed-10-0-19.md
                     - name: Finance 10.0.18 (mai 2021)
@@ -1160,6 +1162,8 @@
                   href: general-ledger/rvrs-settgs-on-jrnls-lines.md
                 - name: Manglende åpningssaldoer ved årsavslutning
                   href: general-ledger/yec-mssng-open-blnces.md
+                - name: Åpne finansjournalmaler i Office
+                  href: general-ledger/open-fincl-jrnls-in-office.md
         - name: Finansrapportering
           items:
             - name: Kom i gang med finansrapportering
@@ -1502,10 +1506,20 @@
                       href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
                     - name: Legg til datafelter i avgiftsintegreringen ved hjelp av tillegg
                       href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/finance/toc.json
-                    - name: Flere mva-registreringsnumre
-                      href: localizations/emea-multiple-vat-registration-numbers.md?toc=/dynamics365/finance/toc.json
                     - name: Konfigurer et miljø for hoveddataoppslag
                       href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
+                    - name: Flere mva-registreringsnumre
+                      href: localizations/emea-multiple-vat-registration-numbers.md
+                    - name: Rapportering for flere mva-registreringer
+                      items:
+                        - name: Rapportering for flere mva-registreringer
+                          href: localizations/emea-reporting-for-multiple-vat-registrations.md
+                        - name: Nederlandsk rapportering
+                          items:
+                            - name: Mva-deklarering
+                              href: localizations/emea-nl-vat-declaration-netherlands.md
+                            - name: EU-salgsliste
+                              href: localizations/emea-nl-eu-sales-list.md
             - name: Forskriftsmessige oppdateringer
               href: localizations/regulatory-updates.md
             - name: Australia
@@ -2384,15 +2398,29 @@
                               href: localizations/apac-ind-GST-new-GSTR1-GSTR2-return-formats.md
                             - name: Nytt frakoblet verktøy for GSTR for ANX-1 og Innkjøpsregister
                               href: localizations/apac-ind-GST-new-GSTR-offline-tool-ANX1-purchase-register.md
-                            - name: Generere rapportdata for GSTR for avgiftsreturer
+                            - name: Generer rapportdata for GSTR for avgiftsreturer
                               href: localizations/apac-ind-GST-tax-returns.md
-                            - name: Aktivere flerbunkebehandling for GSTR-rapporter
+                            - name: Aktiver flerbunkebehandling for GSTR-rapporter
                               href: localizations/apac-ind-gst-multi-batch-processing-gstr-return.md
+                        - name: Feilsøk GST
+                          items:
+                            - name: Feil avgiftsbeløp etter beregning
+                              href: localizations/apac-ind-GST-troubleshooting-tax-amount-wrong-after-calculation.md
+                            - name: Feil i avgiftskonfigurasjon
+                              href: localizations/apac-ind-GST-troubleshooting-tax-configuration-errors.md
+                            - name: Avgift beregnes ikke
+                              href: localizations/apac-ind-GST-troubleshooting-tax-not-calculated.md
+                            - name: Det tar lengre tid å aktivere utsettelsesreglene enn forventet
+                              href: localizations/apac-ind-GST-troubleshooting-setoff-rule-activate-take-long-time.md
+                            - name: TaxTrans eller bilag genereres ikke
+                              href: localizations/apac-ind-GST-troubleshooting-taxtrans-or-voucher-not-generated.md
+                            - name: ID for avgiftstransaksjon er feil
+                              href: localizations/apac-ind-GST-troubleshooting-tax-transaction-id-incorrect.md
                 - name: Direkte avgifter
                   items:
                     - name: Kildeskatt for India
                       items:
-                        - name: Inkludere GST ved beregning av avgiftsfradrag
+                        - name: Inkluder GST ved beregning av avgiftsfradrag
                           href: localizations/apac-ind-GST-include-gst-calculating-tax-deductions.md
                         - name: Inkluder GST ved beregning av avgiftsinnkrevinger
                           href: localizations/apac-ind-GST-include-gst-calculating-tax-collections.md
@@ -2844,6 +2872,10 @@
                   href: localizations/tasks/nl-00003-semansys-xbrl-integration.md
                 - name: Revisjonsfil (XML Auditfile Financieel XAF)
                   href: localizations/emea-nl-audit-file.md
+                - name: Mva-deklarering (Nederland)
+                  href: localizations/emea-nl-vat-declaration-netherlands.md
+                - name: EU-salgsliste
+                  href: localizations/emea-nl-EU-sales-list.md
             - name: Norge
               items:
                 - name: Oversikt over Norge
@@ -3380,11 +3412,11 @@
                   href: ../human-resources/hr-develop-performance-management-overview.md?toc=/dynamics365/finance/toc.json
                 - name: Justere kompetanser for arbeidsstyrke
                   href: ../human-resources/hr-develop-skills.md?toc=/dynamics365/finance/toc.json
-                - name: Legge til i ytelsesloggen
+                - name: Legg til i ytelsesjournalen
                   href: ../human-resources/hr-develop-add-performance-journal.md?toc=/dynamics365/finance/toc.json
-                - name: Opprette et mål
+                - name: Opprett et mål
                   href: ../human-resources/hr-develop-create-goal.md?toc=/dynamics365/finance/toc.json
-                - name: Opprette en prestasjonsvurdering
+                - name: Opprett en prestasjonsvurdering
                   href: ../human-resources/hr-develop-create-performance-review.md?toc=/dynamics365/finance/toc.json
             - name: Opprett kurs
               items:
@@ -4121,13 +4153,13 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-extended-format-lookup.md?toc=/dynamics365/finance/toc.json
                 - name: Validere genererte rapporter automatisk
                   items:
-                    - name: Spore genererte rapportresultater og sammenligne dem med grunnlinjeverdier
+                    - name: Spor genererte rapportresultater og sammenlign dem med grunnlinjeverdier
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/finance/toc.json
-                    - name: Forbedringer i sporing av resultater av genererte ER-rapporter og sammenligninger med grunnlinjeverdier
+                    - name: Forbedre sporing av resultatene av genererte ER-rapporter for å sammenligne med grunnlinjeverdier
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/finance/toc.json
-                    - name: Automatisere testing med ER
+                    - name: Automatiser testing med ER
                       href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/finance/toc.json
-                - name: Automatisere forretningsprosesser ved hjelp av konfigurasjon av elektronisk rapportering
+                - name: Automatiser forretningsprosesser ved hjelp av konfigurasjon av elektronisk rapportering
                   items:
                     - name: Konfigurere ER for å hente data til Power BI
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/finance/toc.json
