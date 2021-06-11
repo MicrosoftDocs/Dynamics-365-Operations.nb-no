@@ -2,7 +2,7 @@
 title: Mål for elektronisk rapportering (ER)
 description: Dette emnet inneholder informasjon om administrasjon av mål for elektronisk rapportering, måltypene som støttes, og sikkerhetshensyn.
 author: nselin
-ms.date: 02/24/2021
+ms.date: 05/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: fe0c3bc94359c7e6a3eb2476b8096a8a2339ee9d
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 088f1b13e20602345dbec5179c343e27be9cec44
+ms.sourcegitcommit: 2cd82983357b32f70f4e4a0c15d4d1f69e08bd54
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893610"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "6085506"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Mål for elektronisk rapportering (ER)
 
@@ -199,6 +199,34 @@ Hvis du genererer en ER-konfigurasjon i Excel-format og vil konvertere den til P
 > Den valgte sideretningen brukes på alle ER-konfigurasjoner som genereres i Excel-format, og deretter konverteres til PDF-format.
 >
 > Hvis en ER-konfigurasjon i Word-format konverteres til PDF-format, hentes papirretningen for PDF-dokumentet fra Word-dokumentet.
+
+## <a name="output-unfolding"></a>Oppheve folding av utdata
+
+Når du konfigurerer et mål for **Mappe**-komponenten i ER-formatet, kan du angi hvordan utdataene for denne komponenten skal leveres til det konfigurerte målet.
+
+### <a name="make-output-unfolding-available"></a>Gjøre oppheving av folding av utdata tilgjengelig
+
+Hvis du vil gjøre alternativet for oppheving av folding tilgjengelig i gjeldende Finance-forekomst, åpner du arbeidsområdet **Funksjonsbehandling** og slår på funksjonen for **Tillat konfigurasjon av ER-mål for å sende mappeinnhold som separate filer**.
+
+### <a name="applicability"></a>Relevans
+
+Alternativet for oppheving av folding av utdata kan bare konfigureres for formatkomponentene for **Mappe**-typen. Når du begynner å konfigurere en **Mappe**-komponent, blir hurtigkategorien **Generelt** tilgjengelig på siden **Mål for elektronisk rapportering**. 
+
+### <a name="use-the-output-unfolding-option"></a>Bruke alternativet for oppheving av folding av utdata
+
+I hurtigfanen **Generelt** i feltet **Send mappe som** velger du en av følgende verdier:
+
+- **ZIP-arkiv** – Lever en generert fil som en zip-fil.
+- **Separate filer** – Lever hver fil av en generert zipfil som en individuell fil.
+
+    > [!NOTE]
+    > Når du velger **Separate filer**, samles de genererte utdataene i minnet i zippet tilstand. Derfor brukes maksimum [filstørrelsesgrense](er-compress-outbound-files.md) for zipped utdata når den reelle filstørrelsen kan overskride denne grensen. Vi anbefaler at du velger denne verdien når du forventer at størrelsen på de genererte utdataene er ganske stor.
+
+[![Konfigurere et mål for en mappeformatkomponent](./media/er_destinations-set-unfolding-option.png)](./media/er_destinations-set-unfolding-option.png)
+
+### <a name="limitations"></a>Begrensninger
+
+Hvis du angir **Send mappe som**-feltet til **Separate filer** for en **Mappe**-komponent som inneholder andre nestede **Mappe**-komponenter, blir ikke innstillingene brukt rekursivt på de nestede **Mappe**-komponentene.
 
 ## <a name="security-considerations"></a>Sikkerhetshensyn
 

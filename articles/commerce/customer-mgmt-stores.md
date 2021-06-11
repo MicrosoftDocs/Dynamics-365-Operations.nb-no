@@ -2,7 +2,7 @@
 title: Kundebehandling i butikker
 description: Dette emnet beskriver hvordan forhandlere kan aktivere kundebehandlingsfunksjoner ved salgsstedet (POS) i Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 03/05/2021
+ms.date: 05/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: e43f8f5b91f729dc93eccb9e9e4ee21b5a5d1596
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: dd17593d84a8bf262712a84b11829f8ec6c49049
+ms.sourcegitcommit: c5c8f19a696ad4a3d68dffd63bfe7b484b999d2b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019993"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "6097214"
 ---
 # <a name="customer-management-in-stores"></a>Kundebehandling i butikker
 
@@ -35,7 +35,10 @@ Salgsmedarbeidere kan også registrere sekundære e-postadresser og telefonnumre
 
 ## <a name="default-customer-properties"></a>Standard kundeegenskaper
 
-Forhandlere kan bruke siden **Alle butikker** i Commerce Headquarters (**Detaljhandel og handel \> Kanaler \> Butikker**) til å knytte en standardkunde til hver butikk. Commerce kopierer deretter egenskapene som er definert for standardk kunde, til alle nye kundeposter som opprettes. Dialogboksen **Opprett kunde** viser for eksempel egenskaper som arves fra standardkunden som er knyttet til butikken. Disse egenskapene inkluderer kundetypen, kundegruppen, kvitteringsinnstillinger, valuta og språk. Eventuelle ansettelsesforhold (kundegrupper) arves også fra standardkunden. Finansdimensjoner arves imidlertid fra kundegruppen som er knyttet til standardk kunden, ikke fra selve standardkanten.
+Forhandlere kan bruke siden **Alle butikker** i Commerce Headquarters (**Detaljhandel og handel \> Kanaler \> Butikker**) til å knytte en standardkunde til hver butikk. Commerce kopierer deretter egenskapene som er definert for standardk kunde, til alle nye kundeposter som opprettes. Dialogboksen **Opprett kunde** viser for eksempel egenskaper som arves fra standardkunden som er knyttet til butikken. Disse egenskapene inkluderer **kundetype**, **kundegruppe**, **kvitteringsalternativ**, **kvitterings-e-post**, **valuta** og **språk**. Eventuelle **tilknytninger** (kundegrupper) arves også fra standardkunden. **Finansdimensjoner** arves imidlertid fra kundegruppen som er knyttet til standardkunden, ikke fra selve standardkunden.
+
+> [!NOTE]
+> Verdien av **e-postkvittering** blir bare kopiert fra standardkunden hvis e-post-IDen for kvittering ikke er angitt for de nyopprettede kundene. Dette betyr at hvis kvitterings-e-post-IDen finnes på standardkunden, vil alle kundene som er opprettet fra e-handelsområdet, få samme e-post-ID for kvittering, fordi det ikke finnes et brukergrensesnitt for å registrere kvitterings-e-post-IDen fra kunden. Vi anbefaler at du holder **kvitterings-e-post**-feltet tomt for butikkens standardkunde og bare bruker det hvis du har en forretningsprosess som er avhengig av at en kvitterings-e-postadresse vises. 
 
 Salgsmedarbeidere kan registrere flere adresser for en kunde. Kundens navn og telefonnummer arves fra kontaktinformasjonen som er tilknyttet hver adresse. Hurtigfanen **Adresser** i en kundepost inneholder feltet **Formål** som salgsmedarbeidere kan redigere. Hvis kundetypen er **Person**, er standardverdien **Hjem**. Hvis kundetypen er **Organisasjon**, er standardverdien **Virksomhet**. Andre verdier som dette feltet støtter, omfatter **Hjem**, **Kontor** og **Postboks**. Verdien i feltet **Land** for en adresse blir arvet fra den primære adressen som er angitt på siden **Driftsenhet** i Commerce Headquarters under **Organisasjonsstyring \> Organisasjoner \> Driftsenheter**.
 

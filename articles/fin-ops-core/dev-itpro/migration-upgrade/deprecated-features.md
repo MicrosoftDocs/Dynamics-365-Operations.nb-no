@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ce49835f167881417000b066fd4a351d26ca0909
-ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
+ms.openlocfilehash: 11528560ecabb848f2703d11c0a705b2a25d7614
+ms.sourcegitcommit: 180548e3c10459776cf199989d3753e0c1555912
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5921429"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6112627"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Fjernede eller avskrevne funksjoner i tidligere versjoner
 
@@ -104,6 +104,39 @@ Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekni
 | **Distribusjonsalternativ**              | Alle |
 | **Status**                         | Utgått: Innen 1. oktober 2020 planlegger vi å ikke lenger støtte **Lokal avgiftsrapport – funksjonsreferanse IT-00003**. |
 
+## <a name="october-2019-deprecation-announcement"></a>Avskrivningskunngjøring for oktober 2019
+
+### <a name="flowchart-diagrams-in-business-process-modeler"></a>Flytskjemadiagrammer for Forretningsprosessmodelerer
+
+<table>
+<tbody>
+<tr>
+<td><strong>Årsak til avskrivning/fjerning</strong></td>
+<td>Vi avskriver flytskjemakomponenten i BPM (Forretningsprosessmodelerer), fordi eldre utforming forårsaket lav bruk.</td>
+</tr>
+<tr>
+<td><strong>Erstattet med en annen funksjon?</strong></td>
+<td>Nei</td>
+</tr>
+<tr>
+<td><strong>Berørte områder</strong></td>
+<td>Forretningsprosessmodelerer</td>
+</tr>
+<tr>
+<td><strong>Status</strong></td>
+<td>Avskrevet: Komponenten flytdiagram i BPM forventes å bli fjernet i 2020. Følgende funksjonalitet vil være utilgjengelig:
+<ul>
+<li>Alle flytskjemaer vil være skrivebeskyttede og ikke tilgjengelige for redigering. Figuregenskapene som er knyttet til flytskjemaaktiviteter, vil heller ikke være tilgjengelige. Disse flytskjemaene inneholder både standard flytskjemaer som genereres automatisk og tilpassede flytskjemaer som endres basert på disse standard flytskjemaene.</li>
+<li>Prosesstrinnene vil være skrivebeskyttede og ikke tilgjengelige for redigering.</li>     
+<li>Den eldre funksjonen for tilpassings-/gapanalyse vil ikke være tilgjengelig. Derfor blir ingen gapliste automatisk opprettet eller tilgjengelig for eksport.
+<p><strong>Merk:</strong> Denne funksjonen ble tidligere avskrevet og erstattet av Microsoft Azure DevOps-integrasjoner.</p>
+</li>
+<li>Versjonsloggen for flytskjemaet vil ikke være tilgjengelig.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## <a name="finance-and-operations-1005-with-platform-update-29"></a>Finance and Operations 10.0.5 med Platform update 29
 

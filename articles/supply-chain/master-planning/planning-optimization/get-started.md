@@ -2,7 +2,7 @@
 title: Kom i gang med planleggingsoptimalisering
 description: Dette emnet forklarer hvordan du begynner å bruke funksjonen for planleggingsoptimalisering.
 author: ChristianRytt
-ms.date: 10/09/2020
+ms.date: 05/20/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: d346251e82737624edfce88dc7b2ee10280f6877
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: d12e1908e234c841fb705266b2255c6c5e2140e1
+ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907673"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6103599"
 ---
 # <a name="get-started-with-planning-optimization"></a>Komme i gang med planleggingsoptimalisering
 
@@ -58,7 +58,7 @@ Før du kan installere tillegget for planleggingsoptimalisering, må følgende f
 
 - Du må kjøre Supply Chain Management i et LCS-aktivert miljø med høy tilgjengelighet, lag 2 eller høyere (ikke et OneBox-miljø), med Dynamics 365 Supply Chain Management versjon 10.0.7 eller nyere. Hvis du prøver å installere tillegget i et OneBox-miljø, vil ikke installasjonen bli fullført, og du må avbryte installasjonen.
 
-- Systemet må være konfigurert for Power Platform-integrering. Hvis du vil ha mer informasjon, kan du se [Forutsetninger for å konfigurere tillegg](../../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md#prerequisites-for-setting-up-add-ins) og [Konfigurere tillegg](../../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md#set-up-add-ins).
+- Systemet må være konfigurert for Power Platform-integrering. Hvis du vil ha mer informasjon, se [Microsoft Power Platform-integrering med Finance and Operations-apper](../../../fin-ops-core/dev-itpro/power-platform/overview.md).
 
 ### <a name="enable-the-planning-optimization-license"></a>Aktivere lisensen for planleggingsoptimalisering
 

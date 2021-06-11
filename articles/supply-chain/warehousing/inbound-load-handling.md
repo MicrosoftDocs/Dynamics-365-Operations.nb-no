@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 62317f7e42c5392dce32a667f05f22e5c970abc7
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 0c1e6a9490fba0becb4840cbec9d04c22d482511
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5910021"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6103174"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Lagerhåndtering av innkommende laster for bestillinger
 
@@ -127,7 +127,7 @@ Tabellen nedenfor forklarer hvilke alternativer som er tilgjengelige for feltet 
 | Verdi | beskrivelse |
 |---|---|
 | Tillat | Arbeidere kan registrere mottak av antall som overskrider det gjenstående uregistrerte antallet for en valgt last, men bare hvis det totale registrerte antallet ikke overskrider antallet på bestillingslinjen som er knyttet til lasten (etter justering for overleveringsprosenten). |
-| Blokker | <p>Arbeidere kan ikke registrere mottak av antall som overskrider det gjenstående uregistrerte antallet for en valgt last (etter justering for overleveringsprosenten). En arbeider som prøver å registrere mottakene, får en feil og kan ikke fortsette før han eller hun registrerer et antall som er lik eller mindre enn det gjenstående uregistrerte lastantallet.</p><p>Som standard kopieres verdien for overleveringsprosenten på en lastlinje fra den tilknyttede bestillingslinjen. Når feltet <b>Overmottak for last</b> er satt til <i>Blokker</i>, bruker systemet verdien for overleveringsprosent til å beregne det totale antallet som kan registreres for en lastlinje. Denne verdien kan imidlertid overskrives for individuelle laster etter behov. Denne virkemåten blir relevant ved mottaksflyter der noe av eller hele det overskytende antallet som representerer overleveringsprosenten på ordrelinjen, blir distribuert uproporsjonalt på tvers av flere laster. Her er et eksempelscenario:</p><ul><li>Det finnes flere laster for én bestillings linje.</li><li>Bestillingslinjen har en overleveringsprosent som er mer enn 0 (null).</li><li>Antall er allerede registrert mot en eller flere laster uten å ta hensyn til overleveringsprosenten.</li><li>Overleveringsantallet kommer i den siste lasten.</li></ul><p>I dette scenariet kan en mobilenhet brukes til å registrere det ekstra antallet for den siste lasten bare hvis lagersjefen øker overleveringsprosenten for den relevante lastlinjen fra standardverdien til en verdi som er stor nok, slik at hele overleveringen kan registreres med den endelige lasten.</p> |
+| Blokker | <p>Arbeidere kan ikke registrere mottak av antall som overskrider det gjenstående uregistrerte antallet for en valgt last (etter justering for overleveringsprosenten). En arbeider som prøver å registrere mottakene, får en feil og kan ikke fortsette før vedkommende registrerer et antall som er lik eller mindre enn det gjenstående uregistrerte lastantallet.</p><p>Som standard kopieres verdien for overleveringsprosenten på en lastlinje fra den tilknyttede bestillingslinjen. Når feltet <b>Overmottak for last</b> er satt til <i>Blokker</i>, bruker systemet verdien for overleveringsprosent til å beregne det totale antallet som kan registreres for en lastlinje. Denne verdien kan imidlertid overskrives for individuelle laster etter behov. Denne virkemåten blir relevant ved mottaksflyter der noe av eller hele det overskytende antallet som representerer overleveringsprosenten på ordrelinjen, blir distribuert uproporsjonalt på tvers av flere laster. Her er et eksempelscenario:</p><ul><li>Det finnes flere laster for én bestillings linje.</li><li>Bestillingslinjen har en overleveringsprosent som er mer enn 0 (null).</li><li>Antall er allerede registrert mot en eller flere laster uten å ta hensyn til overleveringsprosenten.</li><li>Overleveringsantallet kommer i den siste lasten.</li></ul><p>I dette scenariet kan en mobilenhet brukes til å registrere det ekstra antallet for den siste lasten bare hvis lagersjefen øker overleveringsprosenten for den relevante lastlinjen fra standardverdien til en verdi som er stor nok, slik at hele overleveringen kan registreres med den endelige lasten.</p> |
 | Blokker bare for lukkede laster | Arbeidere kan overskride lastlinjeantall for åpne laster, men ikke for laster som har statusen _Mottatt_. |
 
 > [!NOTE]
@@ -216,7 +216,7 @@ For produktkvitteringspostering av flere registrerte lastantall mot en last som 
 
 ### <a name="post-registered-quantities-from-the-purchase-order-page"></a>Postere registrerte antall fra Bestilling-siden
 
-For produktkvitteringspostering av registrerte antall fra **Bestilling**-siden må brukeren fullføre følgende oppgaver før han eller hun velger handlingen **Produktkvittering**:
+For produktkvitteringspostering av registrerte antall fra **Bestilling**-siden må brukeren fullføre følgende oppgaver før vedkommende velger handlingen **Produktkvittering**:
 
 - Angi **Antall**-feltet i **Parametere**-delen i fanen **Innstillinger** til _Registrert antall_.
 - Angir numrene på bestillingene som skal tas med i posteringen, i feltet **Produktkvittering**.

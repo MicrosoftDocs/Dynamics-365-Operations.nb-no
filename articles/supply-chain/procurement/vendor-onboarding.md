@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 12be18aa245757991daa418d5875d7497939d223
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5c038462bb84c7fe68acc3825482286581e55358
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841437"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6103076"
 ---
 # <a name="onboard-vendors"></a>Ønske leverandører velkommen
 
@@ -33,7 +33,7 @@ Prosessen består av følgende trinn, der forskjellige roller utfører handlinge
 1. **Behandling av OData** – Enhetsimport – Den innledende forespørselen er registreringsforespørselen fra en potensiell leverandør. Denne forespørselen kommer vanligvis fra en kilde, for eksempel et nettsted som drives av en kunde, som tillater anonym tilgang. Leverandører kan registrere seg ved å angi grunnleggende opplysninger, for eksempel leverandørnavn, begrunnelse, organisasjonsnummer og kontaktpersonens navn og e-postadresse. Forespørslene importeres via grensesnittet for databehandling.
 2. **Listeside for registreringsforespørselen fra potensielle leverandører** – Basert på informasjonen som er angitt i registreringsforespørselen fra den potensielle leverandøren, bestemmer en innkjøpsansvarlig om leverandøren skal ønskes velkommen. Innkjøpsansvarlig ser den innkommende forespørselen på listesiden **Registreringsforespørsler fra potensielle leverandører**.
 3. **Arbeidsflyt for brukerklargjøring** – Når en innkjøpsansvarlig har bekreftet informasjonen i den innkommende forespørselen og har bestemt seg for å fortsette med velkomstprosessen, klargjør arbeidsflyten for brukerforespørsler den nye brukeren og sender en e-postinvitasjonen om å godta kontaktpersonen som en godkjent bruker av Microsoft Dynamics 365.
-4. **Veiviser for registrering av leverandører** – Leverandørens kontaktpersoner logger seg på ved hjelp av den nye brukerkontoen. Han eller hun fullfører veiviseren for registrering av leverandører for å oppgi informasjon, som adresser, forretningsinformasjon, innkjøpskategorier og svar på et spørreskjema.
+4. **Veiviser for registrering av leverandører** – Leverandørens kontaktpersoner logger seg på ved hjelp av den nye brukerkontoen. Vedkommende fullfører veiviseren for registrering av leverandører for å oppgi informasjon, som adresser, forretningsinformasjon, innkjøpskategorier og svar på et spørreskjema.
 5. **Arbeidsflyt for godkjenning** – En leverandørforespørsel som inneholder informasjon om registreringen, opprettes. Denne leverandørforespørselen blir sendt til en arbeidsflyt, og rutes til gjennomgang og godkjenning.
 6. **Oppretting av en original for leverandør og endring av brukerrolle** – Når leverandørforespørselen er godkjent, opprettes en leverandørpost. Brukerkontoen til leverandørens kontaktperson får enten tillatelse til å samarbeide med leverandøren, eller den deaktiveres.
 
@@ -72,7 +72,7 @@ Når den registreringsforespørselen fra den potensielle leverandøren er import
 
 ## <a name="submitting-a-prospective-vendor-user-request"></a>Sende inn en brukerforespørsel for potensiell leverandør
 
-Formålet med en brukerforespørsel for potensiell leverandør er å klargjøre personen som sendte den første forespørselen, slik at han eller hun kan logge på Supply Chain Management ved hjelp av e-kontoen som er angitt i registreringsforespørselen for potensiell leverandør.
+Formålet med en brukerforespørsel for potensiell leverandør er å klargjøre personen som sendte den første forespørselen, slik at vedkommende kan logge på Supply Chain Management ved hjelp av e-kontoen som er angitt i registreringsforespørselen for potensiell leverandør.
 
 Brukerforespørselen for potensiell leverandør behandles av arbeidsflyten for brukerforespørsel. Denne arbeidsflyten kommuniseres via Azure AD B2B-samarbeid. Den oppretter en bruker i Supply Chain Management som har de aktuelle sikkerhetsinnstillingene.
 
@@ -87,7 +87,7 @@ Hvis du vil ha informasjon om konfigurasjonen av e-postmeldingen og arbeidsflyte
 
 ## <a name="vendor-registration"></a>Leverandørregistrering
 
-En potensiell leverandørbruker som logger på Supply Chain Management, ser den første siden i registreringsveiviseren for en leverandør, der han eller hun kan angi leverandørinformasjon.
+En potensiell leverandørbruker som logger på Supply Chain Management, ser den første siden i registreringsveiviseren for en leverandør, der vedkommende kan angi leverandørinformasjon.
 
 Veiviseren gjenspeiler konfigurasjonen av leverandørforespørselen. Landet eller regionen der leverandøren har forretningsforbindelser, bestemmer hvilken informasjon som kreves i veiviseren, og hvilken informasjon som er obligatorisk.
 
@@ -127,7 +127,7 @@ Tabellen nedenfor viser statusene leverandørforespørsler kan ha.
 |----------------------------|-------------|
 | Utkast                      | Leverandørforespørselen er ennå ikke sendt. |
 | Forespørsel sendt          | Leverandørforespørselen er sendt, og det første trinnet i arbeidsflyten blir behandlet. |
-| Venter på gjennomgang             | Hvis det er flere korrekturlesere i en arbeidsflytoppgave, kan en kontrollør godta oppgaven med å se gjennom leverandørforespørselen og deretter fullfører gjennomgangen. Hvis det er bare én korrekturleser, kan denne deltakeren fullføre gjennomgangen ved å velge **Fullført** i handlingen. Han eller hun trenger ikke å godta arbeidselementet først. |
+| Venter på gjennomgang             | Hvis det er flere korrekturlesere i en arbeidsflytoppgave, kan en kontrollør godta oppgaven med å se gjennom leverandørforespørselen og deretter fullfører gjennomgangen. Hvis det er bare én korrekturleser, kan denne deltakeren fullføre gjennomgangen ved å velge **Fullført** i handlingen. De trenger ikke å godta arbeidselementet først. |
 | Forespørsel venter på godkjenning   | Leverandørforespørselen er distribuert til deltakerne for godkjenning, og det er mulig å søke etter mer informasjon. En forespørsel om tilleggsinformasjon fører til at arbeidselementet rutes returneres til avsenderen. Leverandørforespørselen kan også godkjennes eller forkastes når den er i denne statusen. |
 | Forespørsel om søknadsendring | Tilleggsinformasjon er forespurt av godkjenneren, og leverandørforespørselen er distribuert til personen som sendte leverandørforespørselen. Innsenderen kan legge til påkrevde informasjon og deretter sende inn leverandørforespørselen på nytt. Hvis en leverandørforespørsel er sendt inn på nytt, endres statusen tilbake til **Forespørsel venter på godkjenning**. |
 | Forespørsel godkjent           | Denne statusen er en endelig tilstand. |

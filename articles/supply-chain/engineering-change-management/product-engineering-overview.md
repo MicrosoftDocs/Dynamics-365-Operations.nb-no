@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: d7c0839ffbea80904ca12d1cba7ba9880f721cdd
-ms.sourcegitcommit: 57668404d61359b33e0c0280f2f7c4eb829b1ed2
+ms.openlocfilehash: d9430fe02abe58f37d2bfd1431b4da61527d0834
+ms.sourcegitcommit: 588f8343aaa654309d2ff735fd437dba6acd9d46
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "5947526"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6115055"
 ---
 # <a name="engineering-change-management-overview"></a>Oversikt over behandling av teknisk endring
 
@@ -50,16 +50,21 @@ Først aktiverer du funksjonene ved å følge disse trinnene.
 
 1. Gå til arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 1. Se etter oppdateringer.
-1. Aktiver funksjonen som heter **Behandling av teknisk endring**.
-1. Hvis du vil bruke funksjonen, aktiverer du også funksjonen som kalles **Produktdimensjon – Versjon**.
+1. Aktiver funksjonen som heter *Behandling av teknisk endring*.
+1. Hvis du vil bruke funksjonen, aktiverer du også funksjonen som kalles *Produktdimensjon – Versjon*.
 
 Deretter aktiverer du konfigurasjonsnøklene ved å følge disse trinnene.
 
 1. Sett systemet i vedlikeholdsmodus, som beskrevet i [Vedlikeholdsmodus](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 1. Gå til **Systemadministrasjon \> Oppsett \> Lisenskonfigurasjon**.
 1. Utvid noden **Handel**.
-1. Aktiver konfigurasjonsnøkkelen for hovedfunksjonen ved å merke av for **Behandling av teknisk endring**. (Det er ikke nødvendig å utvide noden med mindre du også vil deaktivere en eller begge delfunksjonene.)
-1. Hvis du også vil bruke versjonsdimensjonen, merker du også av for **Produktdimensjon – Versjon**. (Denne avmerkingsboksen er lengre nede i listen, og ikke nestet under noden **Behandling av teknisk endring**.)
+1. Aktiver konfigurasjonsnøkkelen for hovedfunksjonen ved å merke av for **Behandling av teknisk endring**.
+1. Utvid noden **Behandling av teknisk endring**, og merk av for eller fjern merket i de følgende avmerkingsboksene etter behov (avhengig av funksjonene du vil bruke):
+
+    - **Attributtsøk** – Merk av i avmerkingsboksen for å aktivere [attributtsøkfunksjonen](engineering-attributes-and-search.md). Vi anbefaler at du aktiverer denne funksjonen, men du kan fjerne merket i denne boksen hvis du ikke vil bruke den.
+    - **Endringsstyring for prosessproduksjon** – Merk av i denne avmerkingsboksen hvis du vil bruke Styring av teknisk endring til å administrere endringer i formler for prosessproduksjon. Hvis du ikke trenger å administrere formler, kan du fjerne merket i denne avmerkingsboksen. Hvis du vil ha mer informasjon, kan du se [Behandle endringer i formler og ingrediensene](manage-formula-changes.md).
+
+1. Hvis du også vil bruke versjonsdimensjonen, merker du av for **Produktdimensjon – Versjon**. (Denne avmerkingsboksen er lengre nede i listen, og ikke nestet under noden **Behandling av teknisk endring**.)
 1. Deaktiver vedlikeholdsmodus, som beskrevet i [Vedlikeholdsmodus](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 
 > [!IMPORTANT]

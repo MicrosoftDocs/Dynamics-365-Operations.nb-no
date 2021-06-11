@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: a4f882f1abc9f758aca77b137b28aa973f925ea9
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: ac8b63b98c37c7429cee792b85f492f3ca1d57c7
+ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019500"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6103634"
 ---
 # <a name="firm-planned-orders"></a>Autoriser planlagte ordrer
 
@@ -77,6 +77,7 @@ Hvis du vil autorisere planlagte bestillinger manuelt, finner du og velger de pl
 
     - **Grupper etter leverandør** – Sett dette alternativet til *Ja* for å gruppere planlagte bestillinger og opprette én bestilling per leverandør under autorisering. Du kan også opprette én bestilling med en linje per planlagt bestilling.
     - **Grupper etter innkjøpergruppe** – Sett dette alternativet til *Ja* for å gruppere bestillingsforslag og opprette én bestilling som kombinerer leverandør- og innkjøpergruppen. Hvis du vil velge dette alternativet, må du også sette alternativet **Grupper etter leverandør** til *Ja*.
+    - **Grupper etter innkjøpsavtale** – Sett dette alternativet til *Ja* for å gruppere planlagte bestillinger som har samme leverandør som eksisterende innkjøpsavtaler, og opprett én bestilling per bestillingsavtale. Dette alternativet blir automatisk aktivert når **Grupper etter leverandør** er aktivert. Hvis du vil bruke **Grupper etter kjøpsavtale**, må **Søk etter kjøpsavtaler** være satt til *Ja* på siden **Parametere for hovedplanlegging**.
     - **Grupper etter periode** (i **Bestillinger**-delen) – Velg perioden du vil gruppere planlagte bestillinger etter. Hvis du vil velge dette alternativet, må du også velge alternativet **Grupper etter leverandør**.
     - **Grupper etter periode** (i **Overføringer**-delen) – Velg perioden du vil gruppere planlagte overføringer etter. Ordrene blir gruppert basert på verdiene **Fra lager** og **Til lager**.
 

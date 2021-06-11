@@ -2,7 +2,7 @@
 title: Søkeresultatmodul
 description: Dette emnet dekker søkeresultatmoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 01/28/2021
+ms.date: 05/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 3409e9e99329def55b173eb78cf03db4a6764c92
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 645022000d8746db3793a8a8611ab8f17c7bcc6e
+ms.sourcegitcommit: 53b797ff1b524f581046b48cdde42f50b37495bc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794121"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6117139"
 ---
 # <a name="search-results-module"></a>Modul for søkeresultater
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Dette emnet dekker søkeresultatmoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
 
@@ -51,9 +52,12 @@ I tabellen nedenfor finner du en oversikt over egenskaper for søkeresultatmodul
 | Skjul visning av kategorihierarki | **Sann** eller **Usann** | Hvis denne egenskapen er satt til **Sann**, vil kategorihierarkivisningen på siden være skjult. Denne egenskapen bør settes til **Sann** hvis du bruker [brødsmulemodulen](add-breadcrumb.md) for å vise kategorihierarkiet.|
 | Inkluder produktattributter i søkeresultater | **Sann** eller **Usann** | Hvis denne egenskapen er satt til **Sann**, blir attributter returnert for produktene i søkeresultatene. Selv om disse attributtene kan vises på et Commerce-område, kreves det en utvidelse.|
 | Vis tilknytningspriser | **Sann** eller **Usann** | Hvis denne egenskapen er satt til **Sann**, vises tilknytningspriser for produkter i søkeresultatene når en pålogget bruker blar gjennom siden. |
+| Oppdatere presiseringspanel | **Sann** eller **Usann** | Hvis denne egenskapen er satt til **Sann**, oppdateres presiseringspanelet når presiseringer velges. I denne modusen vil noen flervalgspresiseringer fungere som enkeltvalgpresiseringer når presiseringspanelet oppdateres. |
 
 > [!IMPORTANT]
-> I Dynamics 365 Commerce 10.0.16-versjonen og senere kan konfigurasjonen **Vis tilknytningspriser** brukes til å vise tilknytningspriser på siden.
+> I Commerce-versjon 10.0.16 og senere kan konfigurasjonen **Vis tilknytningspriser** brukes til å vise tilknytningspriser på siden.
+>
+> I Commerce versjon 10.0.20-versjonen og senere kan du bruke **Oppdatere presiseringspanel**-konfigurasjonen til å oppdatere presiseringspanelet under presiseringsvalg.
 
 ## <a name="supported-modules"></a>Støttede moduler
 

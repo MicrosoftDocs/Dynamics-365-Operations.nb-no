@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 13b81459fe3449a90839dac7637118f09afe2e55
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: ed90e773e1b8c90afc119a471cf844941ad19226
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5910239"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6103052"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Fleksibel dimensjonsreservasjonspolicy for lagernivå
 
@@ -176,7 +176,7 @@ For dette eksempelet må demonstrasjonsdata være installert, og du må bruke **
 
     - Etter at arbeidet er opprettet, blir varens beholdningstransaksjon der **Referanse**-feltet er satt til **Ordreigangsatt reservasjon**, fjernet. Beholdningstransaksjonen der **Referanse**-feltet er satt til **Arbeid**, inneholder nå den fysiske reservasjonen for alle beholdningsdimensjoner for kvantiteten.
 
-        Lageroperasjoner kan fortsette å håndtere utførelsen av arbeidet på vanlig måte. Instruksjonene på mobilenheten vil imidlertid instruere arbeideren om å velge et bestemt partinummer. I lagermiljøer der plasseringene er nummerskiltkontrollert, gjelder følgende: Etter at en arbeider har nådd en plassering som lagrer det samme partiet på flere nummerskilt, kan han eller hun velge fra et hvilket som helst nummerskilt som ikke allerede er reservert (for eksempel av en annen ordreigangsatt reservasjon eller arbeid som stammer fra en reservasjon av denne typen.)
+        Lageroperasjoner kan fortsette å håndtere utførelsen av arbeidet på vanlig måte. Instruksjonene på mobilenheten vil imidlertid instruere arbeideren om å velge et bestemt partinummer. I lagermiljøer der plasseringene er nummerskiltkontrollert, gjelder følgende: Etter at en arbeider har nådd en plassering som lagrer det samme partiet på flere nummerskilt, kan vedkommende velge fra et hvilket som helst nummerskilt som ikke allerede er reservert (for eksempel av en annen ordreigangsatt reservasjon eller arbeid som stammer fra en reservasjon av denne typen.)
 
         Hvis det viser seg at det blir upraktisk å velge fra plasseringen som er spesifisert på arbeidslinjen, kan lageroperatørene bruke en av følgende handlinger for å omdirigere plukking av det spesifikke partiet fra en mer praktisk plassering:
 

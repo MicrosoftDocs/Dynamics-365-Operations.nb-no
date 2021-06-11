@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: e9cd90d74b92754d4a5432485d5dd59c31e34c61
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 45763d5e602946fc3328cc3b565777fb7e549c61
+ms.sourcegitcommit: 588f8343aaa654309d2ff735fd437dba6acd9d46
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841991"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6115103"
 ---
 # <a name="release-product-structures"></a>Frigi produktstrukturer
 
@@ -103,6 +103,7 @@ Angi følgende felter på hurtigfanen **Generelt** til en produktfrigivelsespoli
 | Felt | beskrivelse |
 |---|---|
 | Produkttype | Velg om policyen gjelder for produkter av typen *Vare* eller *Tjeneste*. Du kan ikke endre denne innstillingen etter at du har lagret posten. |
+| Produksjonstype | Dette feltet vises bare når du har aktivert [formelendringsbehandling](manage-formula-changes.md) i systemet. Velg produksjonstypen som denne frigivelsespolicyen gjelder for:<ul><li>**Koprodukt** – Bruk denne frigivelsespolicyen til å administrere koprodukter. Koprodukter produseres under prosessproduksjon, og er ikke versjonsbaserte eller tekniske produkter. Frigivelsespolicyer for koprodukter kan hjelpe deg med å sikre at viktige innstillinger, for eksempel **Lagringsdimensjonsgruppe** og **Sporingsdimensjonsgruppe**, konfigureres ved å bruke en frigitt produktmal før de frigis til et firma.</li><li>**Biprodukt** – Bruk denne frigivelsespolicyen til å administrere biprodukter. Biprodukter produseres under prosessproduksjon og er ikke versjonsbaserte eller tekniske produkter. Frigivelsespolicyer for biprodukter kan hjelpe deg med å sikre at viktige innstillinger, for eksempel **Lagringsdimensjonsgruppe** og **Sporingsdimensjonsgruppe**, konfigureres ved å bruke en frigitt produktmal før de frigis til et firma.</li><li>**Ingen** – Bruk denne policyen til å administrere standardprodukter som ikke er versjonsbaserte eller tekniske produkter, koprodukter eller biprodukter.</li><li>**Planleggingselement** – Bruk denne frigivelsespolicyen til å administrere planleggingselementer som produseres ved hjelp av prosessproduksjon. Planleggingselementer bruker formler. De ligner formelvarer, men de brukes til å produsere bare koprodukter og biprodukter, ikke ferdige produkter.</li><li>**Stykkliste** – Bruk denne frigivelsespolicyen til å administrere tekniske produkter, som ikke bruker formler og vanligvis (men ikke nødvendigvis) omfatter stykklister.</li><li>**Formel** – Bruk denne frigivelsespolicyen til å administrere ferdige varer som produseres ved hjelp av prosessproduksjon. Disse varene vil ha en formel, men ikke en stykkliste.</li></ul> |
 | Bruk maler | Velg ett av følgende alternativer for å angi om og hvordan produktfrigivelsesmaler skal brukes når policyen brukes:<ul><li>**Alltid** – Et malfrigitt produkt alltid må brukes for frigivelser. Hvis du velger dette alternativet, bruker du **Alle produkt**-hurtigfanen til å angi malen som skal brukes for hvert firma du frigir til. Hvis du ikke angir en mal for hvert firma som er oppført i hurtigfanen **Alle produkter**, vil du få en feilmelding når du prøver å lagre policyen.</li><li>**Valgfritt** – Hvis et malfrigitt produkt er angitt for et firma som er oppført i hurtigfanen **Alle produkter**, vil denne malen bli brukt når du frigir til dette firmaet. Hvis ikke vil ingen mal bli brukt. Hvis du velger dette alternativet, kan du lagre policyen uten å tilordne maler til alle firmaer. (Ingen advarsel vil bli vist.)</li><li>**Aldri** – Ingen malfrigitte produkter blir brukt for noen firmaer som du frigir til, selv om en mal er angitt for firmaer som er oppført i hurtigfanen **Alle produkter**. Malkolonnene vil ikke være tilgjengelige.</li></ul> |
 | Aktive | Bruk dette alternativet til å opprettholde frigivelsespolicyene. Angi til *Ja* for alle frigivelsespolicyene du bruker. Angi til *Nei* for å merke en frigivelsespolicy som inaktiv når den ikke brukes. Legg merke til at du ikke kan deaktivere en frigivelsespolicy som er tilordnet til en kategori for teknisk produkt, og du kan bare slette inaktive frigivelsespolicyer. |
 
