@@ -1,5 +1,5 @@
 ---
-title: Konsolidere forsendelser når de frigis til lageret ved hjelp av automatisk frigivelse av salgsordrer
+title: Konsolidere forsendelser som frigis til lageret ved hjelp av automatisk frigivelse av salgsordrer
 description: Dette emnet viser et scenario der flere ordrer frigis til lageret i samme automatiserte fremgangsmåte for automatisk frigivelse-til-lager.
 author: GarmMSFT
 ms.date: 05/12/2020
@@ -13,308 +13,308 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 82a95ecf196ef7c33831da7f4d03df629b17fa53
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c02c8b4cd43e17d6dcf34e1912dbc68c19e60694
+ms.sourcegitcommit: 53b797ff1b524f581046b48cdde42f50b37495bc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5807566"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "6116957"
 ---
-# <a name="consolidate-shipments-when-they-are-released-to-the-warehouse-by-using-automatic-release-of-sales-orders"></a><span data-ttu-id="d6278-103">Konsolidere forsendelser når de frigis til lageret ved hjelp av automatisk frigivelse av salgsordrer</span><span class="sxs-lookup"><span data-stu-id="d6278-103">Consolidate shipments when they are released to the warehouse by using Automatic release of sales orders</span></span>
+# <a name="consolidate-shipments-released-to-the-warehouse-using-automatic-release-of-sales-orders"></a><span data-ttu-id="7f517-103">Konsolidere forsendelser som frigis til lageret ved hjelp av automatisk frigivelse av salgsordrer</span><span class="sxs-lookup"><span data-stu-id="7f517-103">Consolidate shipments released to the warehouse using automatic release of sales orders</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="d6278-104">Dette emnet viser et scenario der flere ordrer frigis til lageret i samme automatiserte fremgangsmåte for automatisk frigivelse-til-lager.</span><span class="sxs-lookup"><span data-stu-id="d6278-104">This topic presents a scenario where multiple orders are released to the warehouse in the same automated release-to-warehouse periodic procedure.</span></span> <span data-ttu-id="d6278-105">Ordrene blir automatisk konsolidert i forsendelser, basert på regler som er definert som policyer for forsendelseskonsolidering.</span><span class="sxs-lookup"><span data-stu-id="d6278-105">The orders will automatically be consolidated into shipments, based on rules that are defined as shipment consolidation policies.</span></span>
+<span data-ttu-id="7f517-104">Dette emnet viser et scenario der flere ordrer frigis til lageret i samme automatiserte fremgangsmåte for automatisk frigivelse-til-lager.</span><span class="sxs-lookup"><span data-stu-id="7f517-104">This topic presents a scenario where multiple orders are released to the warehouse in the same automated release-to-warehouse periodic procedure.</span></span> <span data-ttu-id="7f517-105">Ordrene blir automatisk konsolidert i forsendelser, basert på regler som er definert som policyer for forsendelseskonsolidering.</span><span class="sxs-lookup"><span data-stu-id="7f517-105">The orders will automatically be consolidated into shipments, based on rules that are defined as shipment consolidation policies.</span></span>
 
-<span data-ttu-id="d6278-106">I løpet av  kan du opprette sett med salgsordrer og frigi hvert sett til lageret.</span><span class="sxs-lookup"><span data-stu-id="d6278-106">During the scenario, you will create sets of sales orders and release each set to the warehouse.</span></span> <span data-ttu-id="d6278-107">Du vil deretter se over forsendelsene som ble opprettet eller oppdatert under forsendelseskonsolideringen, basert på de konfigurerte policyene.</span><span class="sxs-lookup"><span data-stu-id="d6278-107">You will then review the shipments that are created or updated during shipment consolidation, based on the configured policies.</span></span>
+<span data-ttu-id="7f517-106">I løpet av  kan du opprette sett med salgsordrer og frigi hvert sett til lageret.</span><span class="sxs-lookup"><span data-stu-id="7f517-106">During the scenario, you will create sets of sales orders and release each set to the warehouse.</span></span> <span data-ttu-id="7f517-107">Du vil deretter se over forsendelsene som ble opprettet eller oppdatert under forsendelseskonsolideringen, basert på de konfigurerte policyene.</span><span class="sxs-lookup"><span data-stu-id="7f517-107">You will then review the shipments that are created or updated during shipment consolidation, based on the configured policies.</span></span>
 
-## <a name="make-demo-data-available"></a><span data-ttu-id="d6278-108">Gjøre demodata tilgjengelig</span><span class="sxs-lookup"><span data-stu-id="d6278-108">Make demo data available</span></span>
+## <a name="make-demo-data-available"></a><span data-ttu-id="7f517-108">Gjøre demodata tilgjengelig</span><span class="sxs-lookup"><span data-stu-id="7f517-108">Make demo data available</span></span>
 
-<span data-ttu-id="d6278-109"> i dette emnet refererer til verdier og poster som er inkludert i standard demodata som leveres med Microsoft Dynamics 365 Supply Chain Management.</span><span class="sxs-lookup"><span data-stu-id="d6278-109">The scenario in this topic references values and records that are included in the standard demo data that is provided for Microsoft Dynamics 365 Supply Chain Management.</span></span> <span data-ttu-id="d6278-110">Hvis du vil bruke verdiene som angis her etter hvert som du utfører øvelsene, må du sørge for å arbeide i et miljø der demodataene er installert, og sette den juridiske enheten til **USMF** før du begynner.</span><span class="sxs-lookup"><span data-stu-id="d6278-110">If you want to use the values that are provided here as you do the exercises, be sure to work in an environment where the demo data is installed, and set the legal entity to **USMF** before you begin.</span></span>
+<span data-ttu-id="7f517-109"> i dette emnet refererer til verdier og poster som er inkludert i standard demodata som leveres med Microsoft Dynamics 365 Supply Chain Management.</span><span class="sxs-lookup"><span data-stu-id="7f517-109">The scenario in this topic references values and records that are included in the standard demo data that is provided for Microsoft Dynamics 365 Supply Chain Management.</span></span> <span data-ttu-id="7f517-110">Hvis du vil bruke verdiene som angis her etter hvert som du utfører øvelsene, må du sørge for å arbeide i et miljø der demodataene er installert, og sette den juridiske enheten til **USMF** før du begynner.</span><span class="sxs-lookup"><span data-stu-id="7f517-110">If you want to use the values that are provided here as you do the exercises, be sure to work in an environment where the demo data is installed, and set the legal entity to **USMF** before you begin.</span></span>
 
-## <a name="set-up-shipment-consolidation-policies-and-product-filters"></a><span data-ttu-id="d6278-111">Definer policyer for forsendelseskonsolidering og produktfiltre</span><span class="sxs-lookup"><span data-stu-id="d6278-111">Set up shipment consolidation policies and product filters</span></span>
+## <a name="set-up-shipment-consolidation-policies-and-product-filters"></a><span data-ttu-id="7f517-111">Definer policyer for forsendelseskonsolidering og produktfiltre</span><span class="sxs-lookup"><span data-stu-id="7f517-111">Set up shipment consolidation policies and product filters</span></span>
 
-<span data-ttu-id="d6278-112"> som beskrives her, forutsetter at du allerede har aktivert funksjonen, utførte øvelsene i [Konfigurere policyer for forsendelseskonsolidering](configure-shipment-consolidation-policies.md) og opprettet policyer og andre poster som er beskrevet der.</span><span class="sxs-lookup"><span data-stu-id="d6278-112">The scenario that is described here assumes that you've already turned on the feature, done the exercises in [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md), and created the policies and other records that are described there.</span></span> <span data-ttu-id="d6278-113">Husk å utføre øvelsene før du fortsetter med dette .</span><span class="sxs-lookup"><span data-stu-id="d6278-113">Be sure to do those exercises before you continue with this scenario.</span></span>
+<span data-ttu-id="7f517-112"> som beskrives her, forutsetter at du allerede har aktivert funksjonen, utførte øvelsene i [Konfigurere policyer for forsendelseskonsolidering](configure-shipment-consolidation-policies.md) og opprettet policyer og andre poster som er beskrevet der.</span><span class="sxs-lookup"><span data-stu-id="7f517-112">The scenario that is described here assumes that you've already turned on the feature, done the exercises in [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md), and created the policies and other records that are described there.</span></span> <span data-ttu-id="7f517-113">Husk å utføre øvelsene før du fortsetter med dette .</span><span class="sxs-lookup"><span data-stu-id="7f517-113">Be sure to do those exercises before you continue with this scenario.</span></span>
 
-## <a name="create-the-sales-orders-for-this-scenario"></a><span data-ttu-id="d6278-114">Opprett salgsordrene for dette </span><span class="sxs-lookup"><span data-stu-id="d6278-114">Create the sales orders for this scenario</span></span>
+## <a name="create-the-sales-orders-for-this-scenario"></a><span data-ttu-id="7f517-114">Opprett salgsordrene for dette </span><span class="sxs-lookup"><span data-stu-id="7f517-114">Create the sales orders for this scenario</span></span>
 
-<span data-ttu-id="d6278-115">Begynn med å opprette en samling salgsordrer du kan arbeide med.</span><span class="sxs-lookup"><span data-stu-id="d6278-115">Start by creating a collection of sales orders that you can work with.</span></span> <span data-ttu-id="d6278-116">Du må arbeide med et lager som er aktivert for prosessen for avansert lager (WMS).</span><span class="sxs-lookup"><span data-stu-id="d6278-116">You must work with a warehouse that is enabled for advanced warehouse (WMS) processes.</span></span> <span data-ttu-id="d6278-117">Med mindre et annet lager er nevnt eksplisitt, må det samme lageret brukes for hvert av de følgende ordresettene.</span><span class="sxs-lookup"><span data-stu-id="d6278-117">Unless a different warehouse is explicitly mentioned, that same warehouse must be used for each of the following sets of orders.</span></span>
+<span data-ttu-id="7f517-115">Begynn med å opprette en samling salgsordrer du kan arbeide med.</span><span class="sxs-lookup"><span data-stu-id="7f517-115">Start by creating a collection of sales orders that you can work with.</span></span> <span data-ttu-id="7f517-116">Du må arbeide med et lager som er aktivert for prosessen for avansert lager (WMS).</span><span class="sxs-lookup"><span data-stu-id="7f517-116">You must work with a warehouse that is enabled for advanced warehouse (WMS) processes.</span></span> <span data-ttu-id="7f517-117">Med mindre et annet lager er nevnt eksplisitt, må det samme lageret brukes for hvert av de følgende ordresettene.</span><span class="sxs-lookup"><span data-stu-id="7f517-117">Unless a different warehouse is explicitly mentioned, that same warehouse must be used for each of the following sets of orders.</span></span>
 
-<span data-ttu-id="d6278-118">Gå til **Kunde \> Ordrer \> Alle salgsordrer**, og opprett en samling av salgsordrer som har innstillingene som er beskrevet i følgende underinndelinger.</span><span class="sxs-lookup"><span data-stu-id="d6278-118">Go to **Accounts receivable \> Orders \> All sales orders**, and create a collection of sales orders that have the settings that are described in the following subsections.</span></span>
+<span data-ttu-id="7f517-118">Gå til **Kunde \> Ordrer \> Alle salgsordrer**, og opprett en samling av salgsordrer som har innstillingene som er beskrevet i følgende underinndelinger.</span><span class="sxs-lookup"><span data-stu-id="7f517-118">Go to **Accounts receivable \> Orders \> All sales orders**, and create a collection of sales orders that have the settings that are described in the following subsections.</span></span>
 
-### <a name="create-order-set-1"></a><span data-ttu-id="d6278-119">Opprett ordresett 1</span><span class="sxs-lookup"><span data-stu-id="d6278-119">Create order set 1</span></span>
+### <a name="create-order-set-1"></a><span data-ttu-id="7f517-119">Opprett ordresett 1</span><span class="sxs-lookup"><span data-stu-id="7f517-119">Create order set 1</span></span>
 
-#### <a name="sales-order-1-1"></a><span data-ttu-id="d6278-120">Salgsordre 1-1</span><span class="sxs-lookup"><span data-stu-id="d6278-120">Sales order 1-1</span></span>
+#### <a name="sales-order-1-1"></a><span data-ttu-id="7f517-120">Salgsordre 1-1</span><span class="sxs-lookup"><span data-stu-id="7f517-120">Sales order 1-1</span></span>
 
-1. <span data-ttu-id="d6278-121">Opprett en salgsordre med følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="d6278-121">Create a sales order that has the following settings:</span></span>
+1. <span data-ttu-id="7f517-121">Opprett en salgsordre med følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="7f517-121">Create a sales order that has the following settings:</span></span>
 
-    - <span data-ttu-id="d6278-122">**Kundekonto:** *US-001*</span><span class="sxs-lookup"><span data-stu-id="d6278-122">**Customer account:** *US-001*</span></span>
-    - <span data-ttu-id="d6278-123">**Leveringsmåte:** *Airwa-Air*</span><span class="sxs-lookup"><span data-stu-id="d6278-123">**Mode of delivery:** *Airwa-Air*</span></span>
+    - <span data-ttu-id="7f517-122">**Kundekonto:** *US-001*</span><span class="sxs-lookup"><span data-stu-id="7f517-122">**Customer account:** *US-001*</span></span>
+    - <span data-ttu-id="7f517-123">**Leveringsmåte:** *Airwa-Air*</span><span class="sxs-lookup"><span data-stu-id="7f517-123">**Mode of delivery:** *Airwa-Air*</span></span>
 
-1. <span data-ttu-id="d6278-124">Legg til en ordrelinje som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="d6278-124">Add an order line that has the following settings:</span></span>
+1. <span data-ttu-id="7f517-124">Legg til en ordrelinje som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="7f517-124">Add an order line that has the following settings:</span></span>
 
-    - <span data-ttu-id="d6278-125">**Varenummer:** *A0001* (en vare uten **Kode 4**-filter tilordnet)</span><span class="sxs-lookup"><span data-stu-id="d6278-125">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
-    - <span data-ttu-id="d6278-126">**Antall:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="d6278-126">**Quantity:** *1.00*</span></span>
+    - <span data-ttu-id="7f517-125">**Varenummer:** *A0001* (en vare uten **Kode 4**-filter tilordnet)</span><span class="sxs-lookup"><span data-stu-id="7f517-125">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
+    - <span data-ttu-id="7f517-126">**Antall:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="7f517-126">**Quantity:** *1.00*</span></span>
 
-#### <a name="sales-order-1-2"></a><span data-ttu-id="d6278-127">Salgsordre 1-2</span><span class="sxs-lookup"><span data-stu-id="d6278-127">Sales order 1-2</span></span>
+#### <a name="sales-order-1-2"></a><span data-ttu-id="7f517-127">Salgsordre 1-2</span><span class="sxs-lookup"><span data-stu-id="7f517-127">Sales order 1-2</span></span>
 
-1. <span data-ttu-id="d6278-128">Opprett en salgsordre med følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="d6278-128">Create a sales order that has the following settings:</span></span>
+1. <span data-ttu-id="7f517-128">Opprett en salgsordre med følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="7f517-128">Create a sales order that has the following settings:</span></span>
 
-    - <span data-ttu-id="d6278-129">**Kundekonto:** *US-001*</span><span class="sxs-lookup"><span data-stu-id="d6278-129">**Customer account:** *US-001*</span></span>
-    - <span data-ttu-id="d6278-130">**Leveringsmåte:** *Airwa-Air*</span><span class="sxs-lookup"><span data-stu-id="d6278-130">**Mode of delivery:** *Airwa-Air*</span></span>
+    - <span data-ttu-id="7f517-129">**Kundekonto:** *US-001*</span><span class="sxs-lookup"><span data-stu-id="7f517-129">**Customer account:** *US-001*</span></span>
+    - <span data-ttu-id="7f517-130">**Leveringsmåte:** *Airwa-Air*</span><span class="sxs-lookup"><span data-stu-id="7f517-130">**Mode of delivery:** *Airwa-Air*</span></span>
 
-1. <span data-ttu-id="d6278-131">Legg til en ordrelinje som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="d6278-131">Add an order line that has the following settings:</span></span>
+1. <span data-ttu-id="7f517-131">Legg til en ordrelinje som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="7f517-131">Add an order line that has the following settings:</span></span>
 
-    - <span data-ttu-id="d6278-132">**Varenummer:** *A0001* (en vare uten **Kode 4**-filter tilordnet)</span><span class="sxs-lookup"><span data-stu-id="d6278-132">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
-    - <span data-ttu-id="d6278-133">**Antall:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="d6278-133">**Quantity:** *1.00*</span></span>
+    - <span data-ttu-id="7f517-132">**Varenummer:** *A0001* (en vare uten **Kode 4**-filter tilordnet)</span><span class="sxs-lookup"><span data-stu-id="7f517-132">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
+    - <span data-ttu-id="7f517-133">**Antall:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="7f517-133">**Quantity:** *1.00*</span></span>
 
-#### <a name="sales-order-1-3"></a><span data-ttu-id="d6278-134">Salgsordre 1-3</span><span class="sxs-lookup"><span data-stu-id="d6278-134">Sales order 1-3</span></span>
+#### <a name="sales-order-1-3"></a><span data-ttu-id="7f517-134">Salgsordre 1-3</span><span class="sxs-lookup"><span data-stu-id="7f517-134">Sales order 1-3</span></span>
 
-1. <span data-ttu-id="d6278-135">Opprett en salgsordre med følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="d6278-135">Create a sales order that has the following settings:</span></span>
+1. <span data-ttu-id="7f517-135">Opprett en salgsordre med følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="7f517-135">Create a sales order that has the following settings:</span></span>
 
-    - <span data-ttu-id="d6278-136">**Kundekonto:** *US-001*</span><span class="sxs-lookup"><span data-stu-id="d6278-136">**Customer account:** *US-001*</span></span>
-    - <span data-ttu-id="d6278-137">**Leveringsmåte:** *10*</span><span class="sxs-lookup"><span data-stu-id="d6278-137">**Mode of delivery:** *10*</span></span>
+    - <span data-ttu-id="7f517-136">**Kundekonto:** *US-001*</span><span class="sxs-lookup"><span data-stu-id="7f517-136">**Customer account:** *US-001*</span></span>
+    - <span data-ttu-id="7f517-137">**Leveringsmåte:** *10*</span><span class="sxs-lookup"><span data-stu-id="7f517-137">**Mode of delivery:** *10*</span></span>
 
-1. <span data-ttu-id="d6278-138">Legg til en ordrelinje som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="d6278-138">Add an order line that has the following settings:</span></span>
+1. <span data-ttu-id="7f517-138">Legg til en ordrelinje som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="7f517-138">Add an order line that has the following settings:</span></span>
 
-    - <span data-ttu-id="d6278-139">**Varenummer:** *A0001* (en vare uten **Kode 4**-filter tilordnet)</span><span class="sxs-lookup"><span data-stu-id="d6278-139">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
-    - <span data-ttu-id="d6278-140">**Antall:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="d6278-140">**Quantity:** *1.00*</span></span>
+    - <span data-ttu-id="7f517-139">**Varenummer:** *A0001* (en vare uten **Kode 4**-filter tilordnet)</span><span class="sxs-lookup"><span data-stu-id="7f517-139">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
+    - <span data-ttu-id="7f517-140">**Antall:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="7f517-140">**Quantity:** *1.00*</span></span>
 
-1. <span data-ttu-id="d6278-141">Legg til en ny ordrelinje som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="d6278-141">Add a second order line that has the following settings:</span></span>
+1. <span data-ttu-id="7f517-141">Legg til en ny ordrelinje som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="7f517-141">Add a second order line that has the following settings:</span></span>
 
-    - <span data-ttu-id="d6278-142">**Varenummer:** *A0002* (en vare uten **Kode 4**-filter tilordnet)</span><span class="sxs-lookup"><span data-stu-id="d6278-142">**Item number:** *A0002* (an item that no **Code 4** filter is assigned to)</span></span>
-    - <span data-ttu-id="d6278-143">**Antall:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="d6278-143">**Quantity:** *1.00*</span></span>
-    - <span data-ttu-id="d6278-144">**Leveringsmåte:** *Airwa-Air*</span><span class="sxs-lookup"><span data-stu-id="d6278-144">**Mode of delivery:** *Airwa-Air*</span></span>
+    - <span data-ttu-id="7f517-142">**Varenummer:** *A0002* (en vare uten **Kode 4**-filter tilordnet)</span><span class="sxs-lookup"><span data-stu-id="7f517-142">**Item number:** *A0002* (an item that no **Code 4** filter is assigned to)</span></span>
+    - <span data-ttu-id="7f517-143">**Antall:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="7f517-143">**Quantity:** *1.00*</span></span>
+    - <span data-ttu-id="7f517-144">**Leveringsmåte:** *Airwa-Air*</span><span class="sxs-lookup"><span data-stu-id="7f517-144">**Mode of delivery:** *Airwa-Air*</span></span>
 
-### <a name="create-order-set-2"></a><span data-ttu-id="d6278-145">Opprett ordresett 2</span><span class="sxs-lookup"><span data-stu-id="d6278-145">Create order set 2</span></span>
+### <a name="create-order-set-2"></a><span data-ttu-id="7f517-145">Opprett ordresett 2</span><span class="sxs-lookup"><span data-stu-id="7f517-145">Create order set 2</span></span>
 
-#### <a name="sales-orders-2-1-and-2-2"></a><span data-ttu-id="d6278-146">Salgsordrer 2-1 og 2-2</span><span class="sxs-lookup"><span data-stu-id="d6278-146">Sales orders 2-1 and 2-2</span></span>
+#### <a name="sales-orders-2-1-and-2-2"></a><span data-ttu-id="7f517-146">Salgsordrer 2-1 og 2-2</span><span class="sxs-lookup"><span data-stu-id="7f517-146">Sales orders 2-1 and 2-2</span></span>
 
-1. <span data-ttu-id="d6278-147">Opprett to identiske salgsordrer som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="d6278-147">Create two identical sales orders that have the following settings:</span></span>
+1. <span data-ttu-id="7f517-147">Opprett to identiske salgsordrer som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="7f517-147">Create two identical sales orders that have the following settings:</span></span>
 
-    - <span data-ttu-id="d6278-148">**Kundekonto:** *US-002*</span><span class="sxs-lookup"><span data-stu-id="d6278-148">**Customer account:** *US-002*</span></span>
+    - <span data-ttu-id="7f517-148">**Kundekonto:** *US-002*</span><span class="sxs-lookup"><span data-stu-id="7f517-148">**Customer account:** *US-002*</span></span>
 
-1. <span data-ttu-id="d6278-149">Legg til en ordrelinje som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="d6278-149">Add an order line that has the following settings:</span></span>
+1. <span data-ttu-id="7f517-149">Legg til en ordrelinje som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="7f517-149">Add an order line that has the following settings:</span></span>
 
-    - <span data-ttu-id="d6278-150">**Varenummer:** *M9200* (en vare der filteret **Kode 4** er satt til *Brannfarlig*)</span><span class="sxs-lookup"><span data-stu-id="d6278-150">**Item number:** *M9200* (an item where the **Code 4** filter is set to *Flammable*)</span></span>
-    - <span data-ttu-id="d6278-151">**Antall:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="d6278-151">**Quantity:** *1.00*</span></span>
+    - <span data-ttu-id="7f517-150">**Varenummer:** *M9200* (en vare der filteret **Kode 4** er satt til *Brannfarlig*)</span><span class="sxs-lookup"><span data-stu-id="7f517-150">**Item number:** *M9200* (an item where the **Code 4** filter is set to *Flammable*)</span></span>
+    - <span data-ttu-id="7f517-151">**Antall:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="7f517-151">**Quantity:** *1.00*</span></span>
 
-1. <span data-ttu-id="d6278-152">Legg til en ny ordrelinje som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="d6278-152">Add a second order line that has the following settings:</span></span>
+1. <span data-ttu-id="7f517-152">Legg til en ny ordrelinje som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="7f517-152">Add a second order line that has the following settings:</span></span>
 
-    - <span data-ttu-id="d6278-153">**Varenummer:** *M9201* (en vare der filteret **Kode 4** er satt til *Eksplosivt*)</span><span class="sxs-lookup"><span data-stu-id="d6278-153">**Item number:** *M9201* (an item where the **Code 4** filter is set to *Explosive*)</span></span>
-    - <span data-ttu-id="d6278-154">**Antall:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="d6278-154">**Quantity:** *1.00*</span></span>
-    - <span data-ttu-id="d6278-155">**Leveringsmåte:** *Airwa-Air*</span><span class="sxs-lookup"><span data-stu-id="d6278-155">**Mode of delivery:** *Airwa-Air*</span></span>
+    - <span data-ttu-id="7f517-153">**Varenummer:** *M9201* (en vare der filteret **Kode 4** er satt til *Eksplosivt*)</span><span class="sxs-lookup"><span data-stu-id="7f517-153">**Item number:** *M9201* (an item where the **Code 4** filter is set to *Explosive*)</span></span>
+    - <span data-ttu-id="7f517-154">**Antall:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="7f517-154">**Quantity:** *1.00*</span></span>
+    - <span data-ttu-id="7f517-155">**Leveringsmåte:** *Airwa-Air*</span><span class="sxs-lookup"><span data-stu-id="7f517-155">**Mode of delivery:** *Airwa-Air*</span></span>
 
-### <a name="create-order-set-3"></a><span data-ttu-id="d6278-156">Opprett ordresett 3</span><span class="sxs-lookup"><span data-stu-id="d6278-156">Create order set 3</span></span>
+### <a name="create-order-set-3"></a><span data-ttu-id="7f517-156">Opprett ordresett 3</span><span class="sxs-lookup"><span data-stu-id="7f517-156">Create order set 3</span></span>
 
-#### <a name="sales-order-3-1"></a><span data-ttu-id="d6278-157">Salgsordre 3-1</span><span class="sxs-lookup"><span data-stu-id="d6278-157">Sales order 3-1</span></span>
+#### <a name="sales-order-3-1"></a><span data-ttu-id="7f517-157">Salgsordre 3-1</span><span class="sxs-lookup"><span data-stu-id="7f517-157">Sales order 3-1</span></span>
 
-1. <span data-ttu-id="d6278-158">Opprett en salgsordre med følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="d6278-158">Create a sales order that has the following settings:</span></span>
+1. <span data-ttu-id="7f517-158">Opprett en salgsordre med følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="7f517-158">Create a sales order that has the following settings:</span></span>
 
-    - <span data-ttu-id="d6278-159">**Kundekonto:** *US-002*</span><span class="sxs-lookup"><span data-stu-id="d6278-159">**Customer account:** *US-002*</span></span>
+    - <span data-ttu-id="7f517-159">**Kundekonto:** *US-002*</span><span class="sxs-lookup"><span data-stu-id="7f517-159">**Customer account:** *US-002*</span></span>
 
-1. <span data-ttu-id="d6278-160">Legg til en ordrelinje som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="d6278-160">Add an order line that has the following settings:</span></span>
+1. <span data-ttu-id="7f517-160">Legg til en ordrelinje som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="7f517-160">Add an order line that has the following settings:</span></span>
 
-    - <span data-ttu-id="d6278-161">**Varenummer:** *M9200* (en vare der filteret **Kode 4** er satt til *Brannfarlig*)</span><span class="sxs-lookup"><span data-stu-id="d6278-161">**Item number:** *M9200* (an item where the **Code 4** filter is set to *Flammable*)</span></span>
-    - <span data-ttu-id="d6278-162">**Antall:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="d6278-162">**Quantity:** *1.00*</span></span>
+    - <span data-ttu-id="7f517-161">**Varenummer:** *M9200* (en vare der filteret **Kode 4** er satt til *Brannfarlig*)</span><span class="sxs-lookup"><span data-stu-id="7f517-161">**Item number:** *M9200* (an item where the **Code 4** filter is set to *Flammable*)</span></span>
+    - <span data-ttu-id="7f517-162">**Antall:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="7f517-162">**Quantity:** *1.00*</span></span>
 
-1. <span data-ttu-id="d6278-163">Legg til en ny ordrelinje som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="d6278-163">Add a second order line that has the following settings:</span></span>
+1. <span data-ttu-id="7f517-163">Legg til en ny ordrelinje som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="7f517-163">Add a second order line that has the following settings:</span></span>
 
-    - <span data-ttu-id="d6278-164">**Varenummer:** *M9201* (en vare der filteret **Kode 4** er satt til *Eksplosivt*)</span><span class="sxs-lookup"><span data-stu-id="d6278-164">**Item number:** *M9201* (an item where the **Code 4** filter is set to *Explosive*)</span></span>
-    - <span data-ttu-id="d6278-165">**Antall:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="d6278-165">**Quantity:** *1.00*</span></span>
-    - <span data-ttu-id="d6278-166">**Leveringsmåte:** *Airwa-Air*</span><span class="sxs-lookup"><span data-stu-id="d6278-166">**Mode of delivery:** *Airwa-Air*</span></span>
+    - <span data-ttu-id="7f517-164">**Varenummer:** *M9201* (en vare der filteret **Kode 4** er satt til *Eksplosivt*)</span><span class="sxs-lookup"><span data-stu-id="7f517-164">**Item number:** *M9201* (an item where the **Code 4** filter is set to *Explosive*)</span></span>
+    - <span data-ttu-id="7f517-165">**Antall:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="7f517-165">**Quantity:** *1.00*</span></span>
+    - <span data-ttu-id="7f517-166">**Leveringsmåte:** *Airwa-Air*</span><span class="sxs-lookup"><span data-stu-id="7f517-166">**Mode of delivery:** *Airwa-Air*</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="d6278-167">Denne ordren er identisk med de to ordrene du opprettet for ordresett 2.</span><span class="sxs-lookup"><span data-stu-id="d6278-167">This order is identical to the two orders that you created for order set 2.</span></span> <span data-ttu-id="d6278-168">Den er imidlertid oppført som sitt eget ordresett, ettersom du kan frigi den separat senere i dette .</span><span class="sxs-lookup"><span data-stu-id="d6278-168">However, it's listed as its own order set because you will release it separately later in this scenario.</span></span>
+> <span data-ttu-id="7f517-167">Denne ordren er identisk med de to ordrene du opprettet for ordresett 2.</span><span class="sxs-lookup"><span data-stu-id="7f517-167">This order is identical to the two orders that you created for order set 2.</span></span> <span data-ttu-id="7f517-168">Den er imidlertid oppført som sitt eget ordresett, ettersom du kan frigi den separat senere i dette .</span><span class="sxs-lookup"><span data-stu-id="7f517-168">However, it's listed as its own order set because you will release it separately later in this scenario.</span></span>
 
-### <a name="create-order-set-4"></a><span data-ttu-id="d6278-169">Opprett ordresett 4</span><span class="sxs-lookup"><span data-stu-id="d6278-169">Create order set 4</span></span>
+### <a name="create-order-set-4"></a><span data-ttu-id="7f517-169">Opprett ordresett 4</span><span class="sxs-lookup"><span data-stu-id="7f517-169">Create order set 4</span></span>
 
-#### <a name="sales-order-4-1"></a><span data-ttu-id="d6278-170">Salgsordre 4-1</span><span class="sxs-lookup"><span data-stu-id="d6278-170">Sales order 4-1</span></span>
+#### <a name="sales-order-4-1"></a><span data-ttu-id="7f517-170">Salgsordre 4-1</span><span class="sxs-lookup"><span data-stu-id="7f517-170">Sales order 4-1</span></span>
 
-1. <span data-ttu-id="d6278-171">Opprett en salgsordre med følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="d6278-171">Create a sales order that has the following settings:</span></span>
+1. <span data-ttu-id="7f517-171">Opprett en salgsordre med følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="7f517-171">Create a sales order that has the following settings:</span></span>
 
-    - <span data-ttu-id="d6278-172">**Kundekonto:** *US-001*</span><span class="sxs-lookup"><span data-stu-id="d6278-172">**Customer account:** *US-001*</span></span>
-    - <span data-ttu-id="d6278-173">**Kunderekvisisjon:** *1*</span><span class="sxs-lookup"><span data-stu-id="d6278-173">**Customer requisition:** *1*</span></span>
+    - <span data-ttu-id="7f517-172">**Kundekonto:** *US-001*</span><span class="sxs-lookup"><span data-stu-id="7f517-172">**Customer account:** *US-001*</span></span>
+    - <span data-ttu-id="7f517-173">**Kunderekvisisjon:** *1*</span><span class="sxs-lookup"><span data-stu-id="7f517-173">**Customer requisition:** *1*</span></span>
 
-1. <span data-ttu-id="d6278-174">Legg til en ordrelinje som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="d6278-174">Add an order line that has the following settings:</span></span>
+1. <span data-ttu-id="7f517-174">Legg til en ordrelinje som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="7f517-174">Add an order line that has the following settings:</span></span>
 
-    - <span data-ttu-id="d6278-175">**Varenummer:** *A0001* (en vare uten **Kode 4**-filter tilordnet)</span><span class="sxs-lookup"><span data-stu-id="d6278-175">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
-    - <span data-ttu-id="d6278-176">**Antall:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="d6278-176">**Quantity:** *1.00*</span></span>
+    - <span data-ttu-id="7f517-175">**Varenummer:** *A0001* (en vare uten **Kode 4**-filter tilordnet)</span><span class="sxs-lookup"><span data-stu-id="7f517-175">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
+    - <span data-ttu-id="7f517-176">**Antall:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="7f517-176">**Quantity:** *1.00*</span></span>
 
-### <a name="create-order-set-5"></a><span data-ttu-id="d6278-177">Opprett ordresett 5</span><span class="sxs-lookup"><span data-stu-id="d6278-177">Create order set 5</span></span>
+### <a name="create-order-set-5"></a><span data-ttu-id="7f517-177">Opprett ordresett 5</span><span class="sxs-lookup"><span data-stu-id="7f517-177">Create order set 5</span></span>
 
-#### <a name="sales-orders-5-1-and-5-2"></a><span data-ttu-id="d6278-178">Salgsordrer 5-1 og 5-2</span><span class="sxs-lookup"><span data-stu-id="d6278-178">Sales orders 5-1 and 5-2</span></span>
+#### <a name="sales-orders-5-1-and-5-2"></a><span data-ttu-id="7f517-178">Salgsordrer 5-1 og 5-2</span><span class="sxs-lookup"><span data-stu-id="7f517-178">Sales orders 5-1 and 5-2</span></span>
 
-1. <span data-ttu-id="d6278-179">Opprett to identiske salgsordrer som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="d6278-179">Create two identical sales orders that have the following settings:</span></span>
+1. <span data-ttu-id="7f517-179">Opprett to identiske salgsordrer som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="7f517-179">Create two identical sales orders that have the following settings:</span></span>
 
-    - <span data-ttu-id="d6278-180">**Kundekonto:** *US-001*</span><span class="sxs-lookup"><span data-stu-id="d6278-180">**Customer account:** *US-001*</span></span>
-    - <span data-ttu-id="d6278-181">**Kunderekvisisjon:** *2*</span><span class="sxs-lookup"><span data-stu-id="d6278-181">**Customer requisition:** *2*</span></span>
+    - <span data-ttu-id="7f517-180">**Kundekonto:** *US-001*</span><span class="sxs-lookup"><span data-stu-id="7f517-180">**Customer account:** *US-001*</span></span>
+    - <span data-ttu-id="7f517-181">**Kunderekvisisjon:** *2*</span><span class="sxs-lookup"><span data-stu-id="7f517-181">**Customer requisition:** *2*</span></span>
 
-1. <span data-ttu-id="d6278-182">Legg til en ordrelinje som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="d6278-182">Add an order line that has the following settings:</span></span>
+1. <span data-ttu-id="7f517-182">Legg til en ordrelinje som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="7f517-182">Add an order line that has the following settings:</span></span>
 
-    - <span data-ttu-id="d6278-183">**Varenummer:** *A0001* (en vare uten **Kode 4**-filter tilordnet)</span><span class="sxs-lookup"><span data-stu-id="d6278-183">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
-    - <span data-ttu-id="d6278-184">**Antall:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="d6278-184">**Quantity:** *1.00*</span></span>
+    - <span data-ttu-id="7f517-183">**Varenummer:** *A0001* (en vare uten **Kode 4**-filter tilordnet)</span><span class="sxs-lookup"><span data-stu-id="7f517-183">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
+    - <span data-ttu-id="7f517-184">**Antall:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="7f517-184">**Quantity:** *1.00*</span></span>
 
-#### <a name="sales-order-5-3"></a><span data-ttu-id="d6278-185">Salgsordre 5-3</span><span class="sxs-lookup"><span data-stu-id="d6278-185">Sales order 5-3</span></span>
+#### <a name="sales-order-5-3"></a><span data-ttu-id="7f517-185">Salgsordre 5-3</span><span class="sxs-lookup"><span data-stu-id="7f517-185">Sales order 5-3</span></span>
 
-1. <span data-ttu-id="d6278-186">Opprett en salgsordre med følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="d6278-186">Create a sales order that has the following settings:</span></span>
+1. <span data-ttu-id="7f517-186">Opprett en salgsordre med følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="7f517-186">Create a sales order that has the following settings:</span></span>
 
-    - <span data-ttu-id="d6278-187">**Kundekonto:** *US-001*</span><span class="sxs-lookup"><span data-stu-id="d6278-187">**Customer account:** *US-001*</span></span>
-    - <span data-ttu-id="d6278-188">**Kunderekvisisjon:** *1*</span><span class="sxs-lookup"><span data-stu-id="d6278-188">**Customer requisition:** *1*</span></span>
+    - <span data-ttu-id="7f517-187">**Kundekonto:** *US-001*</span><span class="sxs-lookup"><span data-stu-id="7f517-187">**Customer account:** *US-001*</span></span>
+    - <span data-ttu-id="7f517-188">**Kunderekvisisjon:** *1*</span><span class="sxs-lookup"><span data-stu-id="7f517-188">**Customer requisition:** *1*</span></span>
 
-1. <span data-ttu-id="d6278-189">Legg til en ordrelinje som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="d6278-189">Add an order line that has the following settings:</span></span>
+1. <span data-ttu-id="7f517-189">Legg til en ordrelinje som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="7f517-189">Add an order line that has the following settings:</span></span>
 
-    - <span data-ttu-id="d6278-190">**Varenummer:** *A0001* (en vare uten **Kode 4**-filter tilordnet)</span><span class="sxs-lookup"><span data-stu-id="d6278-190">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
-    - <span data-ttu-id="d6278-191">**Antall:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="d6278-191">**Quantity:** *1.00*</span></span>
+    - <span data-ttu-id="7f517-190">**Varenummer:** *A0001* (en vare uten **Kode 4**-filter tilordnet)</span><span class="sxs-lookup"><span data-stu-id="7f517-190">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
+    - <span data-ttu-id="7f517-191">**Antall:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="7f517-191">**Quantity:** *1.00*</span></span>
 
-### <a name="create-order-set-6"></a><span data-ttu-id="d6278-192">Opprett ordresett 6</span><span class="sxs-lookup"><span data-stu-id="d6278-192">Create order set 6</span></span>
+### <a name="create-order-set-6"></a><span data-ttu-id="7f517-192">Opprett ordresett 6</span><span class="sxs-lookup"><span data-stu-id="7f517-192">Create order set 6</span></span>
 
-#### <a name="sales-orders-6-1-and-6-2"></a><span data-ttu-id="d6278-193">Salgsordrer 6-1 og 6-2</span><span class="sxs-lookup"><span data-stu-id="d6278-193">Sales orders 6-1 and 6-2</span></span>
+#### <a name="sales-orders-6-1-and-6-2"></a><span data-ttu-id="7f517-193">Salgsordrer 6-1 og 6-2</span><span class="sxs-lookup"><span data-stu-id="7f517-193">Sales orders 6-1 and 6-2</span></span>
 
-1. <span data-ttu-id="d6278-194">Opprett to identiske salgsordrer som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="d6278-194">Create two identical sales orders that have the following settings:</span></span>
+1. <span data-ttu-id="7f517-194">Opprett to identiske salgsordrer som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="7f517-194">Create two identical sales orders that have the following settings:</span></span>
 
-    - <span data-ttu-id="d6278-195">**Kundekonto:** *US-003*</span><span class="sxs-lookup"><span data-stu-id="d6278-195">**Customer account:** *US-003*</span></span>
-    - <span data-ttu-id="d6278-196">**Kunderekvisisjon:** *2*</span><span class="sxs-lookup"><span data-stu-id="d6278-196">**Customer requisition:** *2*</span></span>
+    - <span data-ttu-id="7f517-195">**Kundekonto:** *US-003*</span><span class="sxs-lookup"><span data-stu-id="7f517-195">**Customer account:** *US-003*</span></span>
+    - <span data-ttu-id="7f517-196">**Kunderekvisisjon:** *2*</span><span class="sxs-lookup"><span data-stu-id="7f517-196">**Customer requisition:** *2*</span></span>
 
-1. <span data-ttu-id="d6278-197">Legg til en ordrelinje som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="d6278-197">Add an order line that has the following settings:</span></span>
+1. <span data-ttu-id="7f517-197">Legg til en ordrelinje som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="7f517-197">Add an order line that has the following settings:</span></span>
 
-    - <span data-ttu-id="d6278-198">**Varenummer:** *A0001* (en vare uten **Kode 4**-filter tilordnet)</span><span class="sxs-lookup"><span data-stu-id="d6278-198">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
-    - <span data-ttu-id="d6278-199">**Antall:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="d6278-199">**Quantity:** *1.00*</span></span>
+    - <span data-ttu-id="7f517-198">**Varenummer:** *A0001* (en vare uten **Kode 4**-filter tilordnet)</span><span class="sxs-lookup"><span data-stu-id="7f517-198">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
+    - <span data-ttu-id="7f517-199">**Antall:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="7f517-199">**Quantity:** *1.00*</span></span>
 
-#### <a name="sales-orders-6-3-and-6-4"></a><span data-ttu-id="d6278-200">Salgsordrer 6-3 og 6-4</span><span class="sxs-lookup"><span data-stu-id="d6278-200">Sales orders 6-3 and 6-4</span></span>
+#### <a name="sales-orders-6-3-and-6-4"></a><span data-ttu-id="7f517-200">Salgsordrer 6-3 og 6-4</span><span class="sxs-lookup"><span data-stu-id="7f517-200">Sales orders 6-3 and 6-4</span></span>
 
-1. <span data-ttu-id="d6278-201">Opprett to identiske salgsordrer som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="d6278-201">Create two identical sales orders that have the following settings:</span></span>
+1. <span data-ttu-id="7f517-201">Opprett to identiske salgsordrer som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="7f517-201">Create two identical sales orders that have the following settings:</span></span>
 
-    - <span data-ttu-id="d6278-202">**Kundekonto:** *US-004*</span><span class="sxs-lookup"><span data-stu-id="d6278-202">**Customer account:** *US-004*</span></span>
-    - <span data-ttu-id="d6278-203">**Kunderekvisisjon:** *1*</span><span class="sxs-lookup"><span data-stu-id="d6278-203">**Customer requisition:** *1*</span></span>
+    - <span data-ttu-id="7f517-202">**Kundekonto:** *US-004*</span><span class="sxs-lookup"><span data-stu-id="7f517-202">**Customer account:** *US-004*</span></span>
+    - <span data-ttu-id="7f517-203">**Kunderekvisisjon:** *1*</span><span class="sxs-lookup"><span data-stu-id="7f517-203">**Customer requisition:** *1*</span></span>
 
-1. <span data-ttu-id="d6278-204">Legg til en ordrelinje som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="d6278-204">Add an order line that has the following settings:</span></span>
+1. <span data-ttu-id="7f517-204">Legg til en ordrelinje som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="7f517-204">Add an order line that has the following settings:</span></span>
 
-    - <span data-ttu-id="d6278-205">**Varenummer:** *A0001* (en vare uten **Kode 4**-filter tilordnet)</span><span class="sxs-lookup"><span data-stu-id="d6278-205">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
-    - <span data-ttu-id="d6278-206">**Antall:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="d6278-206">**Quantity:** *1.00*</span></span>
+    - <span data-ttu-id="7f517-205">**Varenummer:** *A0001* (en vare uten **Kode 4**-filter tilordnet)</span><span class="sxs-lookup"><span data-stu-id="7f517-205">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
+    - <span data-ttu-id="7f517-206">**Antall:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="7f517-206">**Quantity:** *1.00*</span></span>
 
-#### <a name="sales-orders-6-5-and-6-6"></a><span data-ttu-id="d6278-207">Salgsordrer 6-5 og 6-6</span><span class="sxs-lookup"><span data-stu-id="d6278-207">Sales orders 6-5 and 6-6</span></span>
+#### <a name="sales-orders-6-5-and-6-6"></a><span data-ttu-id="7f517-207">Salgsordrer 6-5 og 6-6</span><span class="sxs-lookup"><span data-stu-id="7f517-207">Sales orders 6-5 and 6-6</span></span>
 
-1. <span data-ttu-id="d6278-208">Opprett to identiske salgsordrer som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="d6278-208">Create two identical sales orders that have the following settings:</span></span>
+1. <span data-ttu-id="7f517-208">Opprett to identiske salgsordrer som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="7f517-208">Create two identical sales orders that have the following settings:</span></span>
 
-    - <span data-ttu-id="d6278-209">**Kundekonto:** *US-007*</span><span class="sxs-lookup"><span data-stu-id="d6278-209">**Customer account:** *US-007*</span></span>
-    - <span data-ttu-id="d6278-210">**Område:** *6*</span><span class="sxs-lookup"><span data-stu-id="d6278-210">**Site:** *6*</span></span>
-    - <span data-ttu-id="d6278-211">**Lager:** *61*</span><span class="sxs-lookup"><span data-stu-id="d6278-211">**Warehouse:** *61*</span></span>
-    - <span data-ttu-id="d6278-212">**Pulje:** *ShipCons*</span><span class="sxs-lookup"><span data-stu-id="d6278-212">**Pool:** *ShipCons*</span></span>
+    - <span data-ttu-id="7f517-209">**Kundekonto:** *US-007*</span><span class="sxs-lookup"><span data-stu-id="7f517-209">**Customer account:** *US-007*</span></span>
+    - <span data-ttu-id="7f517-210">**Område:** *6*</span><span class="sxs-lookup"><span data-stu-id="7f517-210">**Site:** *6*</span></span>
+    - <span data-ttu-id="7f517-211">**Lager:** *61*</span><span class="sxs-lookup"><span data-stu-id="7f517-211">**Warehouse:** *61*</span></span>
+    - <span data-ttu-id="7f517-212">**Pulje:** *ShipCons*</span><span class="sxs-lookup"><span data-stu-id="7f517-212">**Pool:** *ShipCons*</span></span>
 
-1. <span data-ttu-id="d6278-213">Legg til en ordrelinje som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="d6278-213">Add an order line that has the following settings:</span></span>
+1. <span data-ttu-id="7f517-213">Legg til en ordrelinje som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="7f517-213">Add an order line that has the following settings:</span></span>
 
-    - <span data-ttu-id="d6278-214">**Varenummer:** *A0001* (en vare uten **Kode 4**-filter tilordnet)</span><span class="sxs-lookup"><span data-stu-id="d6278-214">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
-    - <span data-ttu-id="d6278-215">**Antall:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="d6278-215">**Quantity:** *1.00*</span></span>
+    - <span data-ttu-id="7f517-214">**Varenummer:** *A0001* (en vare uten **Kode 4**-filter tilordnet)</span><span class="sxs-lookup"><span data-stu-id="7f517-214">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
+    - <span data-ttu-id="7f517-215">**Antall:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="7f517-215">**Quantity:** *1.00*</span></span>
 
-#### <a name="sales-orders-6-7-and-6-8"></a><span data-ttu-id="d6278-216">Salgsordrer 6-7 og 6-8</span><span class="sxs-lookup"><span data-stu-id="d6278-216">Sales orders 6-7 and 6-8</span></span>
+#### <a name="sales-orders-6-7-and-6-8"></a><span data-ttu-id="7f517-216">Salgsordrer 6-7 og 6-8</span><span class="sxs-lookup"><span data-stu-id="7f517-216">Sales orders 6-7 and 6-8</span></span>
 
-1. <span data-ttu-id="d6278-217">Opprett to identiske salgsordrer som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="d6278-217">Create two identical sales orders that have the following settings:</span></span>
+1. <span data-ttu-id="7f517-217">Opprett to identiske salgsordrer som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="7f517-217">Create two identical sales orders that have the following settings:</span></span>
 
-    - <span data-ttu-id="d6278-218">**Kundekonto:** *US-007*</span><span class="sxs-lookup"><span data-stu-id="d6278-218">**Customer account:** *US-007*</span></span>
-    - <span data-ttu-id="d6278-219">**Område:** *6*</span><span class="sxs-lookup"><span data-stu-id="d6278-219">**Site:** *6*</span></span>
-    - <span data-ttu-id="d6278-220">**Lager:** *61*</span><span class="sxs-lookup"><span data-stu-id="d6278-220">**Warehouse:** *61*</span></span>
-    - <span data-ttu-id="d6278-221">**Pulje:** La dette feltet stå tomt.</span><span class="sxs-lookup"><span data-stu-id="d6278-221">**Pool:** Leave this field blank.</span></span>
+    - <span data-ttu-id="7f517-218">**Kundekonto:** *US-007*</span><span class="sxs-lookup"><span data-stu-id="7f517-218">**Customer account:** *US-007*</span></span>
+    - <span data-ttu-id="7f517-219">**Område:** *6*</span><span class="sxs-lookup"><span data-stu-id="7f517-219">**Site:** *6*</span></span>
+    - <span data-ttu-id="7f517-220">**Lager:** *61*</span><span class="sxs-lookup"><span data-stu-id="7f517-220">**Warehouse:** *61*</span></span>
+    - <span data-ttu-id="7f517-221">**Pulje:** La dette feltet stå tomt.</span><span class="sxs-lookup"><span data-stu-id="7f517-221">**Pool:** Leave this field blank.</span></span>
 
-1. <span data-ttu-id="d6278-222">Legg til en ordrelinje som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="d6278-222">Add an order line that has the following settings:</span></span>
+1. <span data-ttu-id="7f517-222">Legg til en ordrelinje som har følgende innstillinger:</span><span class="sxs-lookup"><span data-stu-id="7f517-222">Add an order line that has the following settings:</span></span>
 
-    - <span data-ttu-id="d6278-223">**Varenummer:** *A0001* (en vare uten **Kode 4**-filter tilordnet)</span><span class="sxs-lookup"><span data-stu-id="d6278-223">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
-    - <span data-ttu-id="d6278-224">**Antall:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="d6278-224">**Quantity:** *1.00*</span></span>
+    - <span data-ttu-id="7f517-223">**Varenummer:** *A0001* (en vare uten **Kode 4**-filter tilordnet)</span><span class="sxs-lookup"><span data-stu-id="7f517-223">**Item number:** *A0001* (an item that no **Code 4** filter is assigned to)</span></span>
+    - <span data-ttu-id="7f517-224">**Antall:** *1.00*</span><span class="sxs-lookup"><span data-stu-id="7f517-224">**Quantity:** *1.00*</span></span>
 
-## <a name="automatic-release-of-sales-orders-to-the-warehouse"></a><span data-ttu-id="d6278-225">Automatisk frigivelse av salgsordrer til lageret</span><span class="sxs-lookup"><span data-stu-id="d6278-225">Automatic release of sales orders to the warehouse</span></span>
+## <a name="automatic-release-of-sales-orders-to-the-warehouse"></a><span data-ttu-id="7f517-225">Automatisk frigivelse av salgsordrer til lageret</span><span class="sxs-lookup"><span data-stu-id="7f517-225">Automatic release of sales orders to the warehouse</span></span>
 
-<span data-ttu-id="d6278-226">For hvert sett med salgsordrer du har opprettet tidligere, vil du fullføre en fremgangsmåte for automatisk frigivelse til lageret.</span><span class="sxs-lookup"><span data-stu-id="d6278-226">For each set of sales orders that you created earlier, you will complete a procedure for automatic release to the warehouse.</span></span> <span data-ttu-id="d6278-227">I hvert tilfelle vil du arbeide med den [grunnleggende fremgangsmåten for frigivelse til lager](#release-procedure) som finnes her.</span><span class="sxs-lookup"><span data-stu-id="d6278-227">In each case, you will work through the [basic release-to-warehouse procedure](#release-procedure) that is provided here.</span></span>
+<span data-ttu-id="7f517-226">For hvert sett med salgsordrer du har opprettet tidligere, vil du fullføre en fremgangsmåte for automatisk frigivelse til lageret.</span><span class="sxs-lookup"><span data-stu-id="7f517-226">For each set of sales orders that you created earlier, you will complete a procedure for automatic release to the warehouse.</span></span> <span data-ttu-id="7f517-227">I hvert tilfelle vil du arbeide med den [grunnleggende fremgangsmåten for frigivelse til lager](#release-procedure) som finnes her.</span><span class="sxs-lookup"><span data-stu-id="7f517-227">In each case, you will work through the [basic release-to-warehouse procedure](#release-procedure) that is provided here.</span></span>
 
-### <a name="basic-release-to-warehouse-procedure"></a><a name="release-procedure"></a><span data-ttu-id="d6278-228">Grunnleggende fremgangsmåte for frigivelse til lager</span><span class="sxs-lookup"><span data-stu-id="d6278-228">Basic release-to-warehouse procedure</span></span>
+### <a name="basic-release-to-warehouse-procedure"></a><a name="release-procedure"></a><span data-ttu-id="7f517-228">Grunnleggende fremgangsmåte for frigivelse til lager</span><span class="sxs-lookup"><span data-stu-id="7f517-228">Basic release-to-warehouse procedure</span></span>
 
-<span data-ttu-id="d6278-229">For hvert sett med salgsordrer du har opprettet tidligere, fullfører du de tre fremgangsmåtene som er skissert i følgende underinndelinger.</span><span class="sxs-lookup"><span data-stu-id="d6278-229">For each set of sales orders that you created earlier, you will complete the three procedures that are outlined in the following subsections.</span></span>
+<span data-ttu-id="7f517-229">For hvert sett med salgsordrer du har opprettet tidligere, fullfører du de tre fremgangsmåtene som er skissert i følgende underinndelinger.</span><span class="sxs-lookup"><span data-stu-id="7f517-229">For each set of sales orders that you created earlier, you will complete the three procedures that are outlined in the following subsections.</span></span>
 
-#### <a name="update-the-wave-template-that-will-be-used-during-release"></a><span data-ttu-id="d6278-230">Oppdatere bølgemalen som vil bli brukt under frigivelse</span><span class="sxs-lookup"><span data-stu-id="d6278-230">Update the wave template that will be used during release</span></span>
+#### <a name="update-the-wave-template-that-will-be-used-during-release"></a><span data-ttu-id="7f517-230">Oppdatere bølgemalen som vil bli brukt under frigivelse</span><span class="sxs-lookup"><span data-stu-id="7f517-230">Update the wave template that will be used during release</span></span>
 
-1. <span data-ttu-id="d6278-231">Gå til **Lagerstyring \> Oppsett \> Bølger \> Bølgemaler**.</span><span class="sxs-lookup"><span data-stu-id="d6278-231">Go to **Warehouse management \> Setup \> Waves \> Wave templates**.</span></span>
-1. <span data-ttu-id="d6278-232">Angi verdien *Forsendelse* for feltet **Bølgemaltype**.</span><span class="sxs-lookup"><span data-stu-id="d6278-232">Set the **Wave template type** field to *Shipping*.</span></span>
-1. <span data-ttu-id="d6278-233">Finn og velg bølgemalen som er knyttet til lageret du brukte i ordresettene du opprettet for dette .</span><span class="sxs-lookup"><span data-stu-id="d6278-233">Find and select the wave template that is associated with the warehouse that you used in the order sets that you created for this scenario.</span></span> <span data-ttu-id="d6278-234">Hvis du for eksempel brukte lager *24*, velger du bølgemalen **24 Standardforsendelse**.</span><span class="sxs-lookup"><span data-stu-id="d6278-234">For example, if you used warehouse *24*, select the **24 Shipping Default** wave template.</span></span> <span data-ttu-id="d6278-235">Hvis du brukte lager *61*, velger du bølgemalen **61 Forsendelse**.</span><span class="sxs-lookup"><span data-stu-id="d6278-235">If you used warehouse *61*, select the **61 Shipping** wave template.</span></span>
-1. <span data-ttu-id="d6278-236">I handlingsruten velger du **Rediger**.</span><span class="sxs-lookup"><span data-stu-id="d6278-236">On the Action Pane, select **Edit**.</span></span>
-1. <span data-ttu-id="d6278-237">Sett alternativet **Behandle bølge ved frigivelse til lager** til *Nei*.</span><span class="sxs-lookup"><span data-stu-id="d6278-237">Set the **Process wave at release to warehouse** option to *No*.</span></span>
+1. <span data-ttu-id="7f517-231">Gå til **Lagerstyring \> Oppsett \> Bølger \> Bølgemaler**.</span><span class="sxs-lookup"><span data-stu-id="7f517-231">Go to **Warehouse management \> Setup \> Waves \> Wave templates**.</span></span>
+1. <span data-ttu-id="7f517-232">Angi verdien *Forsendelse* for feltet **Bølgemaltype**.</span><span class="sxs-lookup"><span data-stu-id="7f517-232">Set the **Wave template type** field to *Shipping*.</span></span>
+1. <span data-ttu-id="7f517-233">Finn og velg bølgemalen som er knyttet til lageret du brukte i ordresettene du opprettet for dette .</span><span class="sxs-lookup"><span data-stu-id="7f517-233">Find and select the wave template that is associated with the warehouse that you used in the order sets that you created for this scenario.</span></span> <span data-ttu-id="7f517-234">Hvis du for eksempel brukte lager *24*, velger du bølgemalen **24 Standardforsendelse**.</span><span class="sxs-lookup"><span data-stu-id="7f517-234">For example, if you used warehouse *24*, select the **24 Shipping Default** wave template.</span></span> <span data-ttu-id="7f517-235">Hvis du brukte lager *61*, velger du bølgemalen **61 Forsendelse**.</span><span class="sxs-lookup"><span data-stu-id="7f517-235">If you used warehouse *61*, select the **61 Shipping** wave template.</span></span>
+1. <span data-ttu-id="7f517-236">I handlingsruten velger du **Rediger**.</span><span class="sxs-lookup"><span data-stu-id="7f517-236">On the Action Pane, select **Edit**.</span></span>
+1. <span data-ttu-id="7f517-237">Sett alternativet **Behandle bølge ved frigivelse til lager** til *Nei*.</span><span class="sxs-lookup"><span data-stu-id="7f517-237">Set the **Process wave at release to warehouse** option to *No*.</span></span>
 
-#### <a name="release-to-the-warehouse"></a><span data-ttu-id="d6278-238">Frigi til lageret</span><span class="sxs-lookup"><span data-stu-id="d6278-238">Release to the warehouse</span></span>
+#### <a name="release-to-the-warehouse"></a><span data-ttu-id="7f517-238">Frigi til lageret</span><span class="sxs-lookup"><span data-stu-id="7f517-238">Release to the warehouse</span></span>
 
-1. <span data-ttu-id="d6278-239">Gå til **Lagerstyring \> Frigi til lager \> Automatisk frigivelse av salgsordrer**.</span><span class="sxs-lookup"><span data-stu-id="d6278-239">Go to **Warehouse management \> Release to warehouse \> Automatic release of sales orders**.</span></span>
-1. <span data-ttu-id="d6278-240">Angi verdien *Alle* for feltet **Antall som skal frigis**.</span><span class="sxs-lookup"><span data-stu-id="d6278-240">Set the **Quantity to release** field to *All*.</span></span>
-1. <span data-ttu-id="d6278-241">I hurtigfanen **Poster som skal inkluderes** velger du **Filter** for å åpne dialogboksen for spørring.</span><span class="sxs-lookup"><span data-stu-id="d6278-241">On the **Records to include** FastTab, select **Filter** to open the query dialog box.</span></span>
-1. <span data-ttu-id="d6278-242">Velg **Legg til** i fanen **Område** for å legge til en rad som har følgende innstillinger i rutenettet:</span><span class="sxs-lookup"><span data-stu-id="d6278-242">On the **Range** tab, select **Add** to add a row that has the following settings to the grid:</span></span>
+1. <span data-ttu-id="7f517-239">Gå til **Lagerstyring \> Frigi til lager \> Automatisk frigivelse av salgsordrer**.</span><span class="sxs-lookup"><span data-stu-id="7f517-239">Go to **Warehouse management \> Release to warehouse \> Automatic release of sales orders**.</span></span>
+1. <span data-ttu-id="7f517-240">Angi verdien *Alle* for feltet **Antall som skal frigis**.</span><span class="sxs-lookup"><span data-stu-id="7f517-240">Set the **Quantity to release** field to *All*.</span></span>
+1. <span data-ttu-id="7f517-241">I hurtigfanen **Poster som skal inkluderes** velger du **Filter** for å åpne dialogboksen for spørring.</span><span class="sxs-lookup"><span data-stu-id="7f517-241">On the **Records to include** FastTab, select **Filter** to open the query dialog box.</span></span>
+1. <span data-ttu-id="7f517-242">Velg **Legg til** i fanen **Område** for å legge til en rad som har følgende innstillinger i rutenettet:</span><span class="sxs-lookup"><span data-stu-id="7f517-242">On the **Range** tab, select **Add** to add a row that has the following settings to the grid:</span></span>
 
-    - <span data-ttu-id="d6278-243">**Tabell:** *Salgsordre*</span><span class="sxs-lookup"><span data-stu-id="d6278-243">**Table:** *Sales order*</span></span>
-    - <span data-ttu-id="d6278-244">**Avledet tabell:** *Salgsordre*</span><span class="sxs-lookup"><span data-stu-id="d6278-244">**Derived table:** *Sales order*</span></span>
-    - <span data-ttu-id="d6278-245">**Felt:** *Salgsordre*</span><span class="sxs-lookup"><span data-stu-id="d6278-245">**Field:** *Sales order*</span></span>
-    - <span data-ttu-id="d6278-246">**Vilkår:** Angi en kommadelt liste over salgsordrenumrene fra ønsket ordresett.</span><span class="sxs-lookup"><span data-stu-id="d6278-246">**Criteria:** Enter a comma-separated list of the sales order numbers from the desired order set.</span></span>
+    - <span data-ttu-id="7f517-243">**Tabell:** *Salgsordre*</span><span class="sxs-lookup"><span data-stu-id="7f517-243">**Table:** *Sales order*</span></span>
+    - <span data-ttu-id="7f517-244">**Avledet tabell:** *Salgsordre*</span><span class="sxs-lookup"><span data-stu-id="7f517-244">**Derived table:** *Sales order*</span></span>
+    - <span data-ttu-id="7f517-245">**Felt:** *Salgsordre*</span><span class="sxs-lookup"><span data-stu-id="7f517-245">**Field:** *Sales order*</span></span>
+    - <span data-ttu-id="7f517-246">**Vilkår:** Angi en kommadelt liste over salgsordrenumrene fra ønsket ordresett.</span><span class="sxs-lookup"><span data-stu-id="7f517-246">**Criteria:** Enter a comma-separated list of the sales order numbers from the desired order set.</span></span>
 
-1. <span data-ttu-id="d6278-247">Velg **OK** for å lagre spørringen.</span><span class="sxs-lookup"><span data-stu-id="d6278-247">Select **OK** to save your query.</span></span>
-1. <span data-ttu-id="d6278-248">Velg **OK** for å starte prosedyren *Automatisk frigivelse til lager*.</span><span class="sxs-lookup"><span data-stu-id="d6278-248">Select **OK** to start the *Automatic release to warehouse* procedure.</span></span>
+1. <span data-ttu-id="7f517-247">Velg **OK** for å lagre spørringen.</span><span class="sxs-lookup"><span data-stu-id="7f517-247">Select **OK** to save your query.</span></span>
+1. <span data-ttu-id="7f517-248">Velg **OK** for å starte prosedyren *Automatisk frigivelse til lager*.</span><span class="sxs-lookup"><span data-stu-id="7f517-248">Select **OK** to start the *Automatic release to warehouse* procedure.</span></span>
 
-#### <a name="review-the-shipment-that-is-created-or-updated"></a><span data-ttu-id="d6278-249">Gå gjennom forsendelsen som er opprettet eller oppdatert</span><span class="sxs-lookup"><span data-stu-id="d6278-249">Review the shipment that is created or updated</span></span>
+#### <a name="review-the-shipment-that-is-created-or-updated"></a><span data-ttu-id="7f517-249">Gå gjennom forsendelsen som er opprettet eller oppdatert</span><span class="sxs-lookup"><span data-stu-id="7f517-249">Review the shipment that is created or updated</span></span>
 
-1. <span data-ttu-id="d6278-250">Gå til **Lagerstyring \> Forsendelser \> Alle forsendelser**.</span><span class="sxs-lookup"><span data-stu-id="d6278-250">Go to **Warehouse management \> Shipments \> All shipments**.</span></span>
-1. <span data-ttu-id="d6278-251">Finn og velg den påkrevde forsendelsen.</span><span class="sxs-lookup"><span data-stu-id="d6278-251">Find and select the required shipment.</span></span>
-1. <span data-ttu-id="d6278-252">Hvis en konsolideringspolicy ble brukt da forsendelsen ble opprettet eller oppdatert, skal den vises i feltet **Policy for forsendelseskonsolidering**.</span><span class="sxs-lookup"><span data-stu-id="d6278-252">If a consolidation policy was used when the shipment was created or updated, you should see it in the **Shipment consolidation policy** field.</span></span>
+1. <span data-ttu-id="7f517-250">Gå til **Lagerstyring \> Forsendelser \> Alle forsendelser**.</span><span class="sxs-lookup"><span data-stu-id="7f517-250">Go to **Warehouse management \> Shipments \> All shipments**.</span></span>
+1. <span data-ttu-id="7f517-251">Finn og velg den påkrevde forsendelsen.</span><span class="sxs-lookup"><span data-stu-id="7f517-251">Find and select the required shipment.</span></span>
+1. <span data-ttu-id="7f517-252">Hvis en konsolideringspolicy ble brukt da forsendelsen ble opprettet eller oppdatert, skal den vises i feltet **Policy for forsendelseskonsolidering**.</span><span class="sxs-lookup"><span data-stu-id="7f517-252">If a consolidation policy was used when the shipment was created or updated, you should see it in the **Shipment consolidation policy** field.</span></span>
 
-### <a name="release-sales-orders-from-order-set-1"></a><span data-ttu-id="d6278-253">Frigi salgsordrer fra ordresett 1</span><span class="sxs-lookup"><span data-stu-id="d6278-253">Release sales orders from order set 1</span></span>
+### <a name="release-sales-orders-from-order-set-1"></a><span data-ttu-id="7f517-253">Frigi salgsordrer fra ordresett 1</span><span class="sxs-lookup"><span data-stu-id="7f517-253">Release sales orders from order set 1</span></span>
 
-<span data-ttu-id="d6278-254">Følg den [grunnleggende fremgangsmåten for frigivelse til lager](#release-procedure) for å frigi salgsordrene fra ordresett 1.</span><span class="sxs-lookup"><span data-stu-id="d6278-254">Follow the [basic release-to-warehouse procedure](#release-procedure) to release the sales orders from order set 1.</span></span>
+<span data-ttu-id="7f517-254">Følg den [grunnleggende fremgangsmåten for frigivelse til lager](#release-procedure) for å frigi salgsordrene fra ordresett 1.</span><span class="sxs-lookup"><span data-stu-id="7f517-254">Follow the [basic release-to-warehouse procedure](#release-procedure) to release the sales orders from order set 1.</span></span>
 
-<span data-ttu-id="d6278-255">Når du er ferdig, skal du kunne se at to forsendelser ble opprettet:</span><span class="sxs-lookup"><span data-stu-id="d6278-255">When you've finished, you should see that two shipments were created:</span></span>
+<span data-ttu-id="7f517-255">Når du er ferdig, skal du kunne se at to forsendelser ble opprettet:</span><span class="sxs-lookup"><span data-stu-id="7f517-255">When you've finished, you should see that two shipments were created:</span></span>
 
-- <span data-ttu-id="d6278-256">Den første forsendelsen inneholder tre linjer og ble opprettet ved hjelp av policyen for forsendelseskonsolidering for *CustomerMode*.</span><span class="sxs-lookup"><span data-stu-id="d6278-256">The first shipment contains three lines and was created by using the *CustomerMode* shipment consolidation policy.</span></span>
-- <span data-ttu-id="d6278-257">Den andre forsendelen, som ikke bruker transportmåten *Airways*, ble opprettet ved hjelp av policyen for forsendelseskonsolidering for *CustomerOrderNo*.</span><span class="sxs-lookup"><span data-stu-id="d6278-257">The second shipment, which doesn't use the *Airways* transportation mode of delivery, was created by using the *CustomerOrderNo* shipment consolidation policy.</span></span>
+- <span data-ttu-id="7f517-256">Den første forsendelsen inneholder tre linjer og ble opprettet ved hjelp av policyen for forsendelseskonsolidering for *CustomerMode*.</span><span class="sxs-lookup"><span data-stu-id="7f517-256">The first shipment contains three lines and was created by using the *CustomerMode* shipment consolidation policy.</span></span>
+- <span data-ttu-id="7f517-257">Den andre forsendelen, som ikke bruker transportmåten *Airways*, ble opprettet ved hjelp av policyen for forsendelseskonsolidering for *CustomerOrderNo*.</span><span class="sxs-lookup"><span data-stu-id="7f517-257">The second shipment, which doesn't use the *Airways* transportation mode of delivery, was created by using the *CustomerOrderNo* shipment consolidation policy.</span></span>
 
-### <a name="release-sales-orders-from-order-set-2"></a><span data-ttu-id="d6278-258">Frigi salgsordrer fra ordresett 2</span><span class="sxs-lookup"><span data-stu-id="d6278-258">Release sales orders from order set 2</span></span>
+### <a name="release-sales-orders-from-order-set-2"></a><span data-ttu-id="7f517-258">Frigi salgsordrer fra ordresett 2</span><span class="sxs-lookup"><span data-stu-id="7f517-258">Release sales orders from order set 2</span></span>
 
-<span data-ttu-id="d6278-259">Følg den [grunnleggende fremgangsmåten for frigivelse til lager](#release-procedure) for å frigi salgsordrene fra ordresett 2.</span><span class="sxs-lookup"><span data-stu-id="d6278-259">Follow the [basic release-to-warehouse procedure](#release-procedure) to release the sales orders from order set 2.</span></span>
+<span data-ttu-id="7f517-259">Følg den [grunnleggende fremgangsmåten for frigivelse til lager](#release-procedure) for å frigi salgsordrene fra ordresett 2.</span><span class="sxs-lookup"><span data-stu-id="7f517-259">Follow the [basic release-to-warehouse procedure](#release-procedure) to release the sales orders from order set 2.</span></span>
 
-<span data-ttu-id="d6278-260">Når du er ferdig, skal du kunne se at tre forsendelser ble opprettet:</span><span class="sxs-lookup"><span data-stu-id="d6278-260">When you've finished, you should see that three shipments were created:</span></span>
+<span data-ttu-id="7f517-260">Når du er ferdig, skal du kunne se at tre forsendelser ble opprettet:</span><span class="sxs-lookup"><span data-stu-id="7f517-260">When you've finished, you should see that three shipments were created:</span></span>
 
-- <span data-ttu-id="d6278-261">Den første forsendelsen inneholder varer med statusen *Brannfarlig*.</span><span class="sxs-lookup"><span data-stu-id="d6278-261">The first shipment contains *Flammable* items.</span></span>
-- <span data-ttu-id="d6278-262">Hver av de to andre forsendelsene inneholder én linje med varen med statusen *Eksplosivt*.</span><span class="sxs-lookup"><span data-stu-id="d6278-262">Each of the other two shipments contains one line that has the *Explosive* item.</span></span>
+- <span data-ttu-id="7f517-261">Den første forsendelsen inneholder varer med statusen *Brannfarlig*.</span><span class="sxs-lookup"><span data-stu-id="7f517-261">The first shipment contains *Flammable* items.</span></span>
+- <span data-ttu-id="7f517-262">Hver av de to andre forsendelsene inneholder én linje med varen med statusen *Eksplosivt*.</span><span class="sxs-lookup"><span data-stu-id="7f517-262">Each of the other two shipments contains one line that has the *Explosive* item.</span></span>
 
-### <a name="release-sales-orders-from-order-set-3"></a><span data-ttu-id="d6278-263">Frigi salgsordrer fra ordresett 3</span><span class="sxs-lookup"><span data-stu-id="d6278-263">Release sales orders from order set 3</span></span>
+### <a name="release-sales-orders-from-order-set-3"></a><span data-ttu-id="7f517-263">Frigi salgsordrer fra ordresett 3</span><span class="sxs-lookup"><span data-stu-id="7f517-263">Release sales orders from order set 3</span></span>
 
-<span data-ttu-id="d6278-264">Følg den [grunnleggende fremgangsmåten for frigivelse til lager](#release-procedure) for å frigi salgsordrene fra ordresett 3.</span><span class="sxs-lookup"><span data-stu-id="d6278-264">Follow the [basic release-to-warehouse procedure](#release-procedure) to release the sales orders from order set 3.</span></span>
+<span data-ttu-id="7f517-264">Følg den [grunnleggende fremgangsmåten for frigivelse til lager](#release-procedure) for å frigi salgsordrene fra ordresett 3.</span><span class="sxs-lookup"><span data-stu-id="7f517-264">Follow the [basic release-to-warehouse procedure](#release-procedure) to release the sales orders from order set 3.</span></span>
 
-<span data-ttu-id="d6278-265">Når du er ferdig, skal du kunne se at følgende handlinger oppstod:</span><span class="sxs-lookup"><span data-stu-id="d6278-265">When you've finished, you should see that the following actions occurred:</span></span>
+<span data-ttu-id="7f517-265">Når du er ferdig, skal du kunne se at følgende handlinger oppstod:</span><span class="sxs-lookup"><span data-stu-id="7f517-265">When you've finished, you should see that the following actions occurred:</span></span>
 
-- <span data-ttu-id="d6278-266">En eksisterende forsendelse (forsendelsen som ble opprettet da ordresett 2 ble frigitt til lageret) ble oppdatert.</span><span class="sxs-lookup"><span data-stu-id="d6278-266">One existing shipment (the shipment that was created when order set 2 was released to the warehouse) was updated.</span></span> <span data-ttu-id="d6278-267">En linje som har elementet *Brannfarlig*, ble lagt til.</span><span class="sxs-lookup"><span data-stu-id="d6278-267">A line that has the *Flammable* item was added.</span></span>
-- <span data-ttu-id="d6278-268">Én ny forsendelse ble opprettet, og den inneholder elementet *Eksplosivt*.</span><span class="sxs-lookup"><span data-stu-id="d6278-268">One new shipment was created that contains the *Explosive* item.</span></span>
+- <span data-ttu-id="7f517-266">En eksisterende forsendelse (forsendelsen som ble opprettet da ordresett 2 ble frigitt til lageret) ble oppdatert.</span><span class="sxs-lookup"><span data-stu-id="7f517-266">One existing shipment (the shipment that was created when order set 2 was released to the warehouse) was updated.</span></span> <span data-ttu-id="7f517-267">En linje som har elementet *Brannfarlig*, ble lagt til.</span><span class="sxs-lookup"><span data-stu-id="7f517-267">A line that has the *Flammable* item was added.</span></span>
+- <span data-ttu-id="7f517-268">Én ny forsendelse ble opprettet, og den inneholder elementet *Eksplosivt*.</span><span class="sxs-lookup"><span data-stu-id="7f517-268">One new shipment was created that contains the *Explosive* item.</span></span>
 
-### <a name="release-sales-orders-from-order-set-4"></a><span data-ttu-id="d6278-269">Frigi salgsordrer fra ordresett 4</span><span class="sxs-lookup"><span data-stu-id="d6278-269">Release sales orders from order set 4</span></span>
+### <a name="release-sales-orders-from-order-set-4"></a><span data-ttu-id="7f517-269">Frigi salgsordrer fra ordresett 4</span><span class="sxs-lookup"><span data-stu-id="7f517-269">Release sales orders from order set 4</span></span>
 
-<span data-ttu-id="d6278-270">Følg den [grunnleggende fremgangsmåten for frigivelse til lager](#release-procedure) for å frigi salgsordrene fra ordresett 4.</span><span class="sxs-lookup"><span data-stu-id="d6278-270">Follow the [basic release-to-warehouse procedure](#release-procedure) to release the sales orders from order set 4.</span></span>
+<span data-ttu-id="7f517-270">Følg den [grunnleggende fremgangsmåten for frigivelse til lager](#release-procedure) for å frigi salgsordrene fra ordresett 4.</span><span class="sxs-lookup"><span data-stu-id="7f517-270">Follow the [basic release-to-warehouse procedure](#release-procedure) to release the sales orders from order set 4.</span></span>
 
-<span data-ttu-id="d6278-271">Når du er ferdig, skal du kunne se at den eksisterende forsendelsen (der feltet **Kunderekvisisjon** er satt til *1*) ble oppdatert.</span><span class="sxs-lookup"><span data-stu-id="d6278-271">When you've finished, you should see that one existing shipment (where the **Customer requisition** field is set to *1*) was updated.</span></span> <span data-ttu-id="d6278-272">En ny linje ble lagt til for forsendelsen.</span><span class="sxs-lookup"><span data-stu-id="d6278-272">One new line was added to it.</span></span>
+<span data-ttu-id="7f517-271">Når du er ferdig, skal du kunne se at den eksisterende forsendelsen (der feltet **Kunderekvisisjon** er satt til *1*) ble oppdatert.</span><span class="sxs-lookup"><span data-stu-id="7f517-271">When you've finished, you should see that one existing shipment (where the **Customer requisition** field is set to *1*) was updated.</span></span> <span data-ttu-id="7f517-272">En ny linje ble lagt til for forsendelsen.</span><span class="sxs-lookup"><span data-stu-id="7f517-272">One new line was added to it.</span></span>
 
-### <a name="release-sales-orders-from-order-set-5"></a><span data-ttu-id="d6278-273">Frigi salgsordrer fra ordresett 5</span><span class="sxs-lookup"><span data-stu-id="d6278-273">Release sales orders from order set 5</span></span>
+### <a name="release-sales-orders-from-order-set-5"></a><span data-ttu-id="7f517-273">Frigi salgsordrer fra ordresett 5</span><span class="sxs-lookup"><span data-stu-id="7f517-273">Release sales orders from order set 5</span></span>
 
-<span data-ttu-id="d6278-274">Følg den [grunnleggende fremgangsmåten for frigivelse til lager](#release-procedure) for å frigi salgsordrene fra ordresett 5.</span><span class="sxs-lookup"><span data-stu-id="d6278-274">Follow the [basic release-to-warehouse procedure](#release-procedure) to release the sales orders from order set 5.</span></span>
+<span data-ttu-id="7f517-274">Følg den [grunnleggende fremgangsmåten for frigivelse til lager](#release-procedure) for å frigi salgsordrene fra ordresett 5.</span><span class="sxs-lookup"><span data-stu-id="7f517-274">Follow the [basic release-to-warehouse procedure](#release-procedure) to release the sales orders from order set 5.</span></span>
 
-<span data-ttu-id="d6278-275">Når du er ferdig, skal du kunne se at følgende handlinger oppstod:</span><span class="sxs-lookup"><span data-stu-id="d6278-275">When you've finished, you should see that the following actions occurred:</span></span>
+<span data-ttu-id="7f517-275">Når du er ferdig, skal du kunne se at følgende handlinger oppstod:</span><span class="sxs-lookup"><span data-stu-id="7f517-275">When you've finished, you should see that the following actions occurred:</span></span>
 
-- <span data-ttu-id="d6278-276">En eksisterende forsendelse (der feltet **Kunderekvisisjon** er satt til *1*) ble oppdatert.</span><span class="sxs-lookup"><span data-stu-id="d6278-276">One existing shipment (where the **Customer requisition** field is set to *1*) was updated.</span></span> <span data-ttu-id="d6278-277">En linje fra salgsordre 5-3 (der feltet **Kunderekvisisjon** er satt til *1*) ble lagt til for salgsordren.</span><span class="sxs-lookup"><span data-stu-id="d6278-277">A line from sales order 5-3 (where the **Customer requisition** field is set to *1*) was added to it.</span></span>
-- <span data-ttu-id="d6278-278">Én ny forsendelse ble opprettet, der linjer fra salgsordre 5-1 og 5-2 grupperes i én forsendelse.</span><span class="sxs-lookup"><span data-stu-id="d6278-278">One new shipment was created, where lines from sales orders 5-1 and 5-2 are grouped into one shipment.</span></span>
+- <span data-ttu-id="7f517-276">En eksisterende forsendelse (der feltet **Kunderekvisisjon** er satt til *1*) ble oppdatert.</span><span class="sxs-lookup"><span data-stu-id="7f517-276">One existing shipment (where the **Customer requisition** field is set to *1*) was updated.</span></span> <span data-ttu-id="7f517-277">En linje fra salgsordre 5-3 (der feltet **Kunderekvisisjon** er satt til *1*) ble lagt til for salgsordren.</span><span class="sxs-lookup"><span data-stu-id="7f517-277">A line from sales order 5-3 (where the **Customer requisition** field is set to *1*) was added to it.</span></span>
+- <span data-ttu-id="7f517-278">Én ny forsendelse ble opprettet, der linjer fra salgsordre 5-1 og 5-2 grupperes i én forsendelse.</span><span class="sxs-lookup"><span data-stu-id="7f517-278">One new shipment was created, where lines from sales orders 5-1 and 5-2 are grouped into one shipment.</span></span>
 
-### <a name="release-sales-orders-from-order-set-6"></a><span data-ttu-id="d6278-279">Frigi salgsordrer fra ordresett 6</span><span class="sxs-lookup"><span data-stu-id="d6278-279">Release sales orders from order set 6</span></span>
+### <a name="release-sales-orders-from-order-set-6"></a><span data-ttu-id="7f517-279">Frigi salgsordrer fra ordresett 6</span><span class="sxs-lookup"><span data-stu-id="7f517-279">Release sales orders from order set 6</span></span>
 
-<span data-ttu-id="d6278-280">Følg den [grunnleggende fremgangsmåten for frigivelse til lager](#release-procedure) for å frigi salgsordrene fra ordresett 6.</span><span class="sxs-lookup"><span data-stu-id="d6278-280">Follow the [basic release-to-warehouse procedure](#release-procedure) to release the sales orders from order set 6.</span></span>
+<span data-ttu-id="7f517-280">Følg den [grunnleggende fremgangsmåten for frigivelse til lager](#release-procedure) for å frigi salgsordrene fra ordresett 6.</span><span class="sxs-lookup"><span data-stu-id="7f517-280">Follow the [basic release-to-warehouse procedure](#release-procedure) to release the sales orders from order set 6.</span></span>
 
-<span data-ttu-id="d6278-281">Når du er ferdig, skal du kunne se at fire forsendelser ble opprettet:</span><span class="sxs-lookup"><span data-stu-id="d6278-281">When you've finished, you should see that four shipments were created:</span></span>
+<span data-ttu-id="7f517-281">Når du er ferdig, skal du kunne se at fire forsendelser ble opprettet:</span><span class="sxs-lookup"><span data-stu-id="7f517-281">When you've finished, you should see that four shipments were created:</span></span>
 
-- <span data-ttu-id="d6278-282">Linjer fra to ordrer for kunde *US-003* ble gruppert i én forsendelse ved hjelp av policyen for forsendelseskonsolidering for *Ordrepulje*.</span><span class="sxs-lookup"><span data-stu-id="d6278-282">Lines from two orders for customer *US-003* were grouped into one shipment by using the *Order pool* shipment consolidation policy.</span></span>
-- <span data-ttu-id="d6278-283">Linjer fra to ordrer for kunde *US-004* ble gruppert i én forsendelse ved hjelp av policyen for forsendelseskonsolidering for *Ordrepulje*.</span><span class="sxs-lookup"><span data-stu-id="d6278-283">Lines from two orders for customer *US-004* were grouped into one shipment by using the *Order pool* shipment consolidation policy.</span></span>
-- <span data-ttu-id="d6278-284">Linjer fra salgsordre 6-5 og 6-6 for kunde *US-007* ble gruppert i én forsendelse ved hjelp av policyen for forsendelseskonsolidering for *Ordrepulje*.</span><span class="sxs-lookup"><span data-stu-id="d6278-284">Lines from sales orders 6-5 and 6-6 for customer *US-007* were grouped into one shipment by using the *Order pool* shipment consolidation policy.</span></span>
-- <span data-ttu-id="d6278-285">Linjer fra salgsordre 6-7 og 6-8 for kunde *US-007* ble gruppert i én forsendelse ved hjelp av policyen for forsendelseskonsolidering for *Kryssordre*.</span><span class="sxs-lookup"><span data-stu-id="d6278-285">Lines from sales orders 6-7 and 6-8 for customer *US-007* were grouped into one shipment by using the *CrossOrder* shipment consolidation policy.</span></span>
+- <span data-ttu-id="7f517-282">Linjer fra to ordrer for kunde *US-003* ble gruppert i én forsendelse ved hjelp av policyen for forsendelseskonsolidering for *Ordrepulje*.</span><span class="sxs-lookup"><span data-stu-id="7f517-282">Lines from two orders for customer *US-003* were grouped into one shipment by using the *Order pool* shipment consolidation policy.</span></span>
+- <span data-ttu-id="7f517-283">Linjer fra to ordrer for kunde *US-004* ble gruppert i én forsendelse ved hjelp av policyen for forsendelseskonsolidering for *Ordrepulje*.</span><span class="sxs-lookup"><span data-stu-id="7f517-283">Lines from two orders for customer *US-004* were grouped into one shipment by using the *Order pool* shipment consolidation policy.</span></span>
+- <span data-ttu-id="7f517-284">Linjer fra salgsordre 6-5 og 6-6 for kunde *US-007* ble gruppert i én forsendelse ved hjelp av policyen for forsendelseskonsolidering for *Ordrepulje*.</span><span class="sxs-lookup"><span data-stu-id="7f517-284">Lines from sales orders 6-5 and 6-6 for customer *US-007* were grouped into one shipment by using the *Order pool* shipment consolidation policy.</span></span>
+- <span data-ttu-id="7f517-285">Linjer fra salgsordre 6-7 og 6-8 for kunde *US-007* ble gruppert i én forsendelse ved hjelp av policyen for forsendelseskonsolidering for *Kryssordre*.</span><span class="sxs-lookup"><span data-stu-id="7f517-285">Lines from sales orders 6-7 and 6-8 for customer *US-007* were grouped into one shipment by using the *CrossOrder* shipment consolidation policy.</span></span>
 
-## <a name="additional-resources"></a><span data-ttu-id="d6278-286">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="d6278-286">Additional resources</span></span>
+## <a name="additional-resources"></a><span data-ttu-id="7f517-286">Tilleggsressurser</span><span class="sxs-lookup"><span data-stu-id="7f517-286">Additional resources</span></span>
 
-- [<span data-ttu-id="d6278-287">Policyer for forsendelseskonsolidering</span><span class="sxs-lookup"><span data-stu-id="d6278-287">Shipment consolidation policies</span></span>](about-shipment-consolidation-policies.md)
-- [<span data-ttu-id="d6278-288">Konfigurere policyer for forsendelseskonsolidering</span><span class="sxs-lookup"><span data-stu-id="d6278-288">Configure shipment consolidation policies</span></span>](configure-shipment-consolidation-policies.md)
+- [<span data-ttu-id="7f517-287">Policyer for forsendelseskonsolidering</span><span class="sxs-lookup"><span data-stu-id="7f517-287">Shipment consolidation policies</span></span>](about-shipment-consolidation-policies.md)
+- [<span data-ttu-id="7f517-288">Konfigurere policyer for forsendelseskonsolidering</span><span class="sxs-lookup"><span data-stu-id="7f517-288">Configure shipment consolidation policies</span></span>](configure-shipment-consolidation-policies.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
