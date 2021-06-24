@@ -14,7 +14,7 @@
               items:
                 - name: Nyheter eller endringer på startsiden for Plattformoppdateringer
                   href: get-started/whats-new-home-page.md
-                - name: Plattformoppdateringer for versjon 10.0.20 (juli 2021)
+                - name: Plattformoppdateringer for versjon 10.0.20 (august 2021)
                   href: get-started/whats-new-platform-updates-10-0-20.md
                 - name: Plattformoppdateringer for 10.0.19 (juni 2021)
                   href: get-started/whats-new-platform-updates-10-0-19.md
@@ -848,15 +848,13 @@
                       href: extensibility/compatibility-checker-tool.md
             - name: Ytelse
               items:
-                - name: Registrere sporinger ved hjelp av Trace Parser
+                - name: Registrer sporinger ved hjelp av Trace Parser
                   href: perf-test/trace-trace-tutorial.md
-                - name: Testing av én bruker med oppgaveopptaker og SDK for Performance
+                - name: Testing av én bruker med SDK for ytelse og oppgaveopptaker
                   href: perf-test/single-user-test-perf-sdk.md
-                - name: Testing av flere brukere med SDK for Performance og en lokal testkontroller
-                  href: perf-test/multi-user-testing-local-test-controller.md
-                - name: Testing av flere brukere med SDK for Performance og Azure DevOps
-                  href: perf-test/multi-user-testing-perfsdk-azuredevops.md
-                - name: Feilsøkingsveiledning for testing med Performance SDK
+                - name: Flerbrukertesting med SDK for ytelse
+                  href: perf-test/perfsdk-multi-user-testing.md
+                - name: Feilsøkingsveiledning for testing med SDK for ytelse
                   href: perf-test/troubleshoot-perf-sdk-user-testing.md
                 - name: SDK for Performance og testing av flere brukere i lokale miljøer
                   href: perf-test/perfsdk-tutorial-lbd.md
@@ -1536,9 +1534,11 @@
                   href: sysadmin/batch-processing-overview.md
                 - name: Satsvis behandling og satsvise servere
                   href: sysadmin/batch-server-overview.md
-                - name: Opprette satsvise jobber
+                - name: Opprett satsvise jobber
                   href: sysadmin/tasks/create-batch-job.md
-                - name: Kopiere en satsvis jobb
+                - name: Aktivering av automatiske nye forsøk på satsvise jobber
+                  href: sysadmin/retryable-batch.md
+                - name: Kopier en satsvis jobb
                   href: sysadmin/copy-batch-job.md
                 - name: Aktive satsvise perioder
                   href: sysadmin/activeperiod.md
@@ -1588,12 +1588,10 @@
                   href: migration-upgrade/data-upgrade-2012.md
                 - name: AX 2012-oppgradering – Oppgradere sjekkliste for dataoppgradering på forhånd
                   href: migration-upgrade/prepare-data-upgrade.md
-                - name: AX 2012-oppgradering – Dataoppgradering i sandkassemiljøer ved hjelp av dacpac-process
-                  href: migration-upgrade/upgrade-data-sandbox-dacpac.md
                 - name: Oppgrader fra AX 2012 – SQL-transaksjonsbasert replikering
                   href: database/replication-setup.md
-                - name: AX 2012-oppgradering – Dataoppgradering i sandkassemiljøer
-                  href: migration-upgrade/upgrade-data-sandbox.md
+                - name: Oppgrader fra AX 2012 – Dataoppgradering i selvbetjeningsmiljøer
+                  href: migration-upgrade/data-upgrade-self-service.md
                 - name: AX 2012-oppgradering – Lokale miljøer
                   href: migration-upgrade/on-prem-upgrade-2012.md
                 - name: AX 2012-oppgradering – Testing av overgang

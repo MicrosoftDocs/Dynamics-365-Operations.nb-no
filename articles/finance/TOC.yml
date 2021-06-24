@@ -72,13 +72,11 @@
                   items:
                     - name: Nyheter eller endringer på startsiden for Finance
                       href: get-started/whats-new-home-page.md
-                    - name: Finance 10.0.20 (juli 2021)
+                    - name: Finance 10.0.20 (august 2021)
                       href: get-started/whats-new-changed-10-0-20.md
-                    - name: Finance 10.0.19 (juli 2021)
+                    - name: Finance 10.0.19 (juni 2021)
                       href: get-started/whats-new-changed-10-0-19.md
                     - name: Finance 10.0.18 (mai 2021)
-                      href: get-started/whats-new-changed-10-0-18.md
-                    - name: Finance 10.0.17 (april 2021)
                       href: get-started/whats-new-changed-10-0-17.md
             - name: Funksjoner som er fjernet eller avskrevet
               items:
@@ -1216,9 +1214,11 @@
               href: finance-insights/finance-insights-home-page.md
             - name: Konfigurasjon og administrasjon
               items:
-                - name: Konfigurere økonomisk innsikt
+                - name: Konfigurer Finance Insights for offentlig forhåndsversjon
+                  href: finance-insights/configure-for-fin-insites-PubPrvw.md
+                - name: Konfigurer Finance Insights
                   href: finance-insights/configure-for-fin-insites.md
-                - name: Aktivere kundebetalingsprognoser
+                - name: Aktiver kundebetalingsprognoser
                   href: finance-insights/enable-cust-paymnt-prediction.md
                 - name: Aktivere kontantstrømprognose
                   href: finance-insights/enable-cash-flow-forecasting.md
@@ -1464,6 +1464,8 @@
                       href: localizations/rcs-globalization-feature.md?toc=/dynamics365/finance/toc.json
                     - name: Opprett ER-konfigurasjoner i Regulatory Configuration Service og last dem opp til det globale repositoriet
                       href: localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
+                    - name: Regulatory Configuration Service – lagringsavvik for Lifecycle Services
+                      href: localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/finance/toc.json
                 - name: Elektronisk fakturering
                   items:
                     - name: Oversikt over elektronisk fakturering
@@ -1476,6 +1478,8 @@
                       href: localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md?toc=/dynamics365/finance/toc.json
                     - name: Opprett en Azure-lagringskonto og et Key Vault
                       href: localizations/e-invoicing-create-azure-storage-account-key-vault.md?toc=/dynamics365/finance/toc.json
+                    - name: Instrumentbord for bruksstyring
+                      href: localizations/e-invoicing-usage-management-dashboard.md?toc=/dynamics365/finance/toc.json
                     - name: Kom i gang
                       items:
                         - name: Kom i gang med tjenesteadministrasjon for elektronisk fakturering
@@ -2416,18 +2420,102 @@
                               href: localizations/apac-ind-GST-troubleshooting-taxtrans-or-voucher-not-generated.md
                             - name: ID for avgiftstransaksjon er feil
                               href: localizations/apac-ind-GST-troubleshooting-tax-transaction-id-incorrect.md
+                            - name: Feil feltverdier i GSTR-rapporten
+                              href: localizations/apac-ind-GST-troubleshooting-field-value-incorrect-GSTR-report-result.md
+                            - name: Feil feltverdi i en fakturajournal eller et bilag
+                              href: localizations/apac-ind-GST-troubleshooting-invoice-journal-wrong.md
+                            - name: Feil finanskonto i bilaget
+                              href: localizations/apac-ind-GST-troubleshooting-ledger-account-voucher-wrong.md
+                            - name: Åpne utformingsverktøyet for gjeldende avgiftskonfigurasjon
+                              href: localizations/apac-ind-GST-troubleshooting-open-designer-current-used-tax-configuration.md
+                            - name: Poster og felter vises ikke i GSTR-rapporten
+                              href: localizations/apac-ind-GST-troubleshooting-records-fields-not-showing-GSTR-report.md
+                            - name: Utsettelsesregelfeil når en avgiftsutligning kjøres
+                              href: localizations/apac-ind-GST-troubleshooting-setoff-rule-error-transactions-on-voucher-not%20balance.md
                 - name: Direkte avgifter
                   items:
                     - name: Kildeskatt for India
                       items:
-                        - name: Inkluder GST ved beregning av avgiftsfradrag
-                          href: localizations/apac-ind-GST-include-gst-calculating-tax-deductions.md
-                        - name: Inkluder GST ved beregning av avgiftsinnkrevinger
-                          href: localizations/apac-ind-GST-include-gst-calculating-tax-collections.md
-                        - name: Vanlige spørsmål om mva-terskler
+                        - name: Vanlige spørsmål om avgiftsterskler
                           href: localizations/apac-ind-tax-thresholds.md
-                        - name: TCS på salg av varer
-                          href: localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md
+                        - name: India TCS
+                          items:
+                            - name: TCS på salg av varer
+                              href: localizations/apac-ind-GST-TCS-on-Sale-of-Goods-Section-206C-(1H).md
+                            - name: Inkluder GST ved beregning av avgiftsinnkrevinger
+                              href: localizations/apac-ind-GST-include-gst-calculating-tax-collections.md
+                        - name: India TDS
+                          items:
+                            - name: Oversikt over indisk Tax Deducted at Source (TDS)
+                              href: localizations/apac-ind-TDS-India-TDS-overview.md
+                            - name: Inkluder GST ved beregning av avgiftsfradrag
+                              href: localizations/apac-ind-GST-include-gst-calculating-tax-deductions.md
+                            - name: Grunnoppsett for TDS
+                              items:
+                                - name: Angi TDS-parameterne
+                                  href: localizations/apac-ind-TDS-TDS-parameter-activation.md
+                                - name: Definer TDS-finanskontoer
+                                  href: localizations/apac-ind-TDS-TDS-ledger-accounts-setup.md
+                                - name: Definer TDS-registreringsnumre for juridiske enheter
+                                  href: localizations/apac-ind-TDS-TDS-registration-numbers-setup-for-legal-entities.md
+                                - name: Definer kildeskattmyndigheter for TDS-avgiftstypen
+                                  href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
+                                - name: Definer avgiftskomponentene for TDS-avgiftstypen
+                                  href: localizations/apac-ind-TDS-Tax-components-setup-for-TDS-tax-type.md
+                                - name: Definer kildeskattkoder for TDS-avgiftstypen
+                                  href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
+                                - name: Definer utligningsperioder for kildeskatt for TDS-avgiftstypen
+                                  href: localizations/apac-ind-TDS-Withholding-tax-settlement-periods-setup-for-TDS-tax-type.md
+                                - name: Definer koder for kildeskattrapportering for TDS-avgiftstypen
+                                  href: localizations/apac-ind-TDS-Withholding-tax-reporting-codes-setup-for-TDS-tax-type.md
+                                - name: Definer kildeskattkoder for TDS-avgiftstypen
+                                  href: localizations/apac-ind-TDS-Withholding-tax-codes-setup-for-TDS-tax-type.md
+                                - name: 'Knytt TDS-avgiftskoder til TDS-avgiftsgrupper, og definer formelen for beregning av TDS'
+                                  href: localizations/apac-ind-TDS-Attach-TDS-tax-codes-to-TDS-tax-groups-and-define-formula-to-calculate-TDS.md
+                                - name: Registrer TDS-konsesjonssertifikatnumre
+                                  href: localizations/apac-ind-TDS-Record-TDS-concession-certificate-numbers.md
+                                - name: Angi TDS-parametere i leverandører og kunder
+                                  href: localizations/apac-ind-TDS-TDS-parameters-setup-in-accounts-payable-parameters-and-accounts-receivable-parameters.md
+                                - name: Definer betalingsplaner med TDS-tildeling
+                                  href: localizations/apac-ind-TDS-Payment-schedule-setup-with-TDS-allocation.md
+                                - name: Definer betalingsgebyrer for betalinger til TDS-myndighet
+                                  href: localizations/apac-ind-TDS-Payment-fee-setup-to-charge-payment-fee-for-TDS-authority-payments.md
+                                - name: 'TDS-gruppe, PAN og TAN-informasjonsoppsett for leverandører og kunder'
+                                  href: localizations/apac-ind-TDS-TDS-group-PAN-and-TAN-information-setup-for-vendors-and-customers.md
+                                - name: Formeldesigner og terskelgrense for TDS-beregning
+                                  items: null
+                                - name: Formeldesigner for TDS-beregninger
+                                  href: localizations/apac-ind-TDS-Formula-designer.md
+                                - name: Terskelgrense og unntaksterskelgrense
+                                  href: localizations/apac-ind-TDS-Threshold-limit-and-exception-threshold-limit.md
+                            - name: TDS-beregning på fakturaer
+                              items:
+                                - name: TDS-beregning på fakturaer
+                                  href: localizations/apac-ind-TDS-TDS-calcuation-on-invoice.md
+                                - name: Beregn TDS på fakturaer ved hjelp av journaler
+                                  href: localizations/apac-ind-TDS-Calculate-TDS-on-invoices-using-journals.md
+                                - name: Beregn TDS-fakturaer ved hjelp av bestillingsskjema og salgsordreskjema
+                                  href: localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md
+                                - name: TDS-beregning på fakturaer fra siden Fritekstfaktura
+                                  href: localizations/apac-ind-TDS-TDS-calculation-on-invoices-using-free-text-invoice-form.md
+                                - name: Del fakturafunksjonalitet
+                                  href: localizations/apac-ind-TDS-Split-invoice-functionality.md
+                            - name: TDS-beregning på betalinger og egenveksler
+                              href: localizations/apac-ind-TDS-TDS-calculation-on-payments-and-promissory-notes.md
+                            - name: TDS-beregning på konserninterne transaksjoner
+                              href: localizations/apac-ind-TDS-TDS-calculation-on-intercompany-transactions.md
+                            - name: TDS-utligningsprosess
+                              items:
+                                - name: TDS-beregning på betalinger og egenveksler
+                                  href: localizations/apac-ind-TDS-TDS-calculation-on-payments-and-promissory-notes.md
+                                - name: TDS-beregning på konserninterne transaksjoner
+                                  href: localizations/apac-ind-TDS-TDS-calculation-on-intercompany-transactions.md
+                                - name: Kjør den periodiske TDS-utligningsprosessen
+                                  href: localizations/apac-ind-TDS-Run-the-periodic-TDS-settlement-process.md
+                                - name: Utlign TDS-betalinger til TDS-myndighetsleverandører og generer TDS challan
+                                  href: localizations/apac-ind-TDS-Settle-TDS-payments-to-TDS-authority-vendors-and-generate-TDS-challan.md
+                                - name: Vis posterte TDS-betalinger og -transaksjoner for en TDS-utligningsperiode
+                                  href: localizations/apac-ind-TDS-View-TDS-payments-and-TDS-transactions-posted-for-a-TDS-settlement-period.md
                 - name: Faste objekter
                   items:
                     - name: Oversikt over faste objekter i India
@@ -2454,84 +2542,12 @@
                       href: localizations/tasks/apac-ind-set-up-asset-group-dep.md
                     - name: Overføring av kapitalvarer til anleggsmiddelet
                       href: localizations/tasks/apac-ind-transfer-capital-items.md
-                - name: India TDS
-                  items:
-                    - name: Oversikt over indisk Tax Deducted at Source (TDS)
-                      href: localizations/apac-ind-TDS-India-TDS-overview.md
-                    - name: Grunnoppsett for TDS
+                    - name: Registrer og oppdater TDS-sertifikatnumre og -datoer
                       items:
-                        - name: Angi TDS-parameterne
-                          href: localizations/apac-ind-TDS-TDS-parameter-activation.md
-                        - name: Definer TDS-finanskontoer
-                          href: localizations/apac-ind-TDS-TDS-ledger-accounts-setup.md
-                        - name: Definer TDS-registreringsnumre for juridiske enheter
-                          href: localizations/apac-ind-TDS-TDS-registration-numbers-setup-for-legal-entities.md
-                        - name: Definer kildeskattmyndigheter for TDS-avgiftstypen
-                          href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
-                        - name: Definer avgiftskomponentene for TDS-avgiftstypen
-                          href: localizations/apac-ind-TDS-Tax-components-setup-for-TDS-tax-type.md
-                        - name: Definer kildeskattkoder for TDS-avgiftstypen
-                          href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
-                        - name: Definer utligningsperioder for kildeskatt for TDS-avgiftstypen
-                          href: localizations/apac-ind-TDS-Withholding-tax-settlement-periods-setup-for-TDS-tax-type.md
-                        - name: Definer koder for kildeskattrapportering for TDS-avgiftstypen
-                          href: localizations/apac-ind-TDS-Withholding-tax-reporting-codes-setup-for-TDS-tax-type.md
-                        - name: Definer kildeskattkoder for TDS-avgiftstypen
-                          href: localizations/apac-ind-TDS-Withholding-tax-codes-setup-for-TDS-tax-type.md
-                        - name: 'Knytt TDS-avgiftskoder til TDS-avgiftsgrupper, og definer formelen for beregning av TDS'
-                          href: localizations/apac-ind-TDS-Attach-TDS-tax-codes-to-TDS-tax-groups-and-define-formula-to-calculate-TDS.md
-                        - name: Registrer TDS-konsesjonssertifikatnumre
-                          href: localizations/apac-ind-TDS-Record-TDS-concession-certificate-numbers.md
-                        - name: Angi TDS-parametere i leverandører og kunder
-                          href: localizations/apac-ind-TDS-TDS-parameters-setup-in-accounts-payable-parameters-and-accounts-receivable-parameters.md
-                        - name: Definer betalingsplaner med TDS-tildeling
-                          href: localizations/apac-ind-TDS-Payment-schedule-setup-with-TDS-allocation.md
-                        - name: Definer betalingsgebyrer for betalinger til TDS-myndighet
-                          href: localizations/apac-ind-TDS-Payment-fee-setup-to-charge-payment-fee-for-TDS-authority-payments.md
-                        - name: 'TDS-gruppe, PAN og TAN-informasjonsoppsett for leverandører og kunder'
-                          href: localizations/apac-ind-TDS-TDS-group-PAN-and-TAN-information-setup-for-vendors-and-customers.md
-                    - name: Formeldesigner og terskelgrense for TDS-beregning
-                      items:
-                        - name: Formeldesigner for TDS-beregninger
-                          href: localizations/apac-ind-TDS-Formula-designer.md
-                        - name: Terskelgrense og unntaksterskelgrense
-                          href: localizations/apac-ind-TDS-Threshold-limit-and-exception-threshold-limit.md
-                    - name: TDS-beregning på fakturaer
-                      items:
-                        - name: TDS-beregning på fakturaer
-                          href: localizations/apac-ind-TDS-TDS-calcuation-on-invoice.md
-                        - name: Beregn TDS på fakturaer ved hjelp av journaler
-                          href: localizations/apac-ind-TDS-Calculate-TDS-on-invoices-using-journals.md
-                        - name: Beregn TDS-fakturaer ved hjelp av bestillingsskjema og salgsordreskjema
-                          href: localizations/apac-ind-TDS-Calculate-TDS-invoices-using-purchase-order-form-and-sales-order-form.md
-                        - name: TDS-beregning på fakturaer fra siden Fritekstfaktura
-                          href: localizations/apac-ind-TDS-TDS-calculation-on-invoices-using-free-text-invoice-form.md
-                        - name: Del fakturafunksjonalitet
-                          href: localizations/apac-ind-TDS-Split-invoice-functionality.md
-                    - name: TDS-beregning på betalinger og egenveksler
-                      href: localizations/apac-ind-TDS-TDS-calculation-on-payments-and-promissory-notes.md
-                    - name: TDS-beregning på konserninterne transaksjoner
-                      href: localizations/apac-ind-TDS-TDS-calculation-on-intercompany-transactions.md
-                    - name: TDS-utligningsprosess
-                      items:
-                        - name: TDS-beregning på betalinger og egenveksler
-                          href: localizations/apac-ind-TDS-TDS-calculation-on-payments-and-promissory-notes.md
-                        - name: TDS-beregning på konserninterne transaksjoner
-                          href: localizations/apac-ind-TDS-TDS-calculation-on-intercompany-transactions.md
-                        - name: TDS-utligningsprosess
-                          items:
-                            - name: Kjør den periodiske TDS-utligningsprosessen
-                              href: localizations/apac-ind-TDS-Run-the-periodic-TDS-settlement-process.md
-                            - name: Utlign TDS-betalinger til TDS-myndighetsleverandører og generer TDS challan
-                              href: localizations/apac-ind-TDS-Settle-TDS-payments-to-TDS-authority-vendors-and-generate-TDS-challan.md
-                            - name: Vis posterte TDS-betalinger og -transaksjoner for en TDS-utligningsperiode
-                              href: localizations/apac-ind-TDS-View-TDS-payments-and-TDS-transactions-posted-for-a-TDS-settlement-period.md
-                        - name: Registrer og oppdater TDS-sertifikatnumre og -datoer
-                          items:
-                            - name: Registrer TDS-fradragsberettigede sertifikatnumre
-                              href: localizations/apac-ind-TDS-Record-TDS-recoverable-certificate-numbers.md
-                            - name: Oppdater sertifikatnumre og datoer for TDS-transaksjoner
-                              href: localizations/apac-ind-TDS-Update-certificate-numbers-and-dates-for-TDS-transactions.md
+                        - name: Registrer TDS-fradragsberettigede sertifikatnumre
+                          href: localizations/apac-ind-TDS-Record-TDS-recoverable-certificate-numbers.md
+                        - name: Oppdater sertifikatnumre og datoer for TDS-transaksjoner
+                          href: localizations/apac-ind-TDS-Update-certificate-numbers-and-dates-for-TDS-transactions.md
             - name: Italia
               items:
                 - name: Oversikt over Italia
@@ -4159,14 +4175,18 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/finance/toc.json
                     - name: Automatiser testing med ER
                       href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/finance/toc.json
-                - name: Automatiser forretningsprosesser ved hjelp av konfigurasjon av elektronisk rapportering
+                - name: Automatiser forretningsprosesser ved hjelp av ER-konfigurasjoner
                   items:
-                    - name: Konfigurere ER for å hente data til Power BI
+                    - name: Konfigurer ER for å hente data til Power BI
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/finance/toc.json
-                    - name: Generere skjemaer for fritekstfaktura (FTI) som kan skrives ut
+                    - name: Generer skjemaer for fritekstfaktura (FTI) som kan skrives ut
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/finance/toc.json
-                - name: Spore kjøring av ER-formater for å feilsøke ytelsesproblemer
-                  href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/finance/toc.json
+                - name: Utform effektive ER-løsninger
+                  items:
+                    - name: Spor kjøring av ER-formater for å feilsøke ytelsesproblemer
+                      href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/finance/toc.json
+                    - name: Feilsøk ytelsesproblemer i ER-konfigurasjoner
+                      href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/finance/toc.json
                 - name: Behandling av forretningsdokument (BDM)
                   items:
                     - name: BDM-oversikt
