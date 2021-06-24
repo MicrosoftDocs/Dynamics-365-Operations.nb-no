@@ -94,7 +94,7 @@
                   items:
                     - name: Nyheter eller endringer på startsiden for Commerce
                       href: get-started/whats-new-home-page.md
-                    - name: Commerce 10.0.20 (juli 2021)
+                    - name: Commerce 10.0.20 (august 2021)
                       href: get-started/whats-new-commerce-10-0-20.md
                     - name: Commerce 10.0.19 (juni 2021)
                       href: get-started/whats-new-commerce-10-0-19.md
@@ -244,7 +244,7 @@
                   href: arch-auth-flow.md
                 - name: Versjonskontrollkrav for Dynamics 365 Commerce-komponent
                   href: arch-component-versioning.md
-                - name: Arkitektur for Commerce Scale Unit
+                - name: Arkitekturen i den hodeløse handelsmotoren
                   href: dev-itpro/retail-server-architecture.md
                 - name: Velg topologi i butikk
                   href: dev-itpro/retail-in-store-topology.md
@@ -254,13 +254,13 @@
                       href: dev-itpro/CDX-Best-Practices.md
                     - name: Kanalkommunikasjon for Commerce Data Exchange og handel
                       href: dev-itpro/define-retail-channel-communications-cdx.md
-                    - name: Feilsøke Commerce Data Exchange
+                    - name: Feilsøk Commerce Data Exchange
                       href: dev-itpro/CDX-Troubleshooting.md
                 - name: Arkitektur for Modern POS
                   href: dev-itpro/retail-modern-pos-architecture.md
-                - name: Publiseringsarkitektur for nettbutikk
+                - name: Publiser en kanal for nettbutikk
                   href: dev-itpro/retail-online-store-publishing-architecture.md
-                - name: Power BI-innhold for Retail Channel Performance
+                - name: Innhold for Retail Channel Performance Power BI
                   href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/commerce/toc.json
                 - name: PA-DSS-sertifisering (Payment Application Data Security Standards)
                   href: dev-itpro/PA-DSS-Certification.md
@@ -546,11 +546,13 @@
                       href: paypal.md
                     - name: Støtte for lommebokbetaling
                       href: wallets.md
+                    - name: Utvidede betalinger i butikkfrontkassen
+                      href: dev-itpro/enhanced-sca.md
                     - name: Vanlige spørsmål om betalinger
                       href: dev-itpro/payments-retail.md
                 - name: E-post og varslinger
                   items:
-                    - name: Konfigurere kvitteringsmeldinger for å bruke egendefinerte oppsett og maler
+                    - name: Konfigurer kvitteringsmeldinger for å bruke egendefinerte oppsett og maler
                       href: configure-emailed-receipt-formats.md
                     - name: Legge til en QR-kode eller strekkode i e-postmeldinger med transaksjon og kvittering
                       href: add-qr-code-barcode-email.md
@@ -772,8 +774,12 @@
                   href: tasks/use-continuity-program.md
                 - name: Aktiver innsjekkingsmeldinger for kunde i salgsstedet
                   href: enable-customer-check-in.md
-            - name: Returer
+            - name: Returer og refusjoner
               items:
+                - name: Opprett returer i salgsstedet
+                  href: POS-returns.md
+                - name: Returner serienummerkontrollerte produkter i salgsstedet
+                  href: POS-serial-returns.md
                 - name: Sammenkoblede refunderinger
                   href: dev-itpro/linked-refunds.md
                 - name: Selg og gå tilbake til produkter som ikke er inkludert i et butikksortiment
@@ -1230,6 +1236,8 @@
                   href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/commerce/toc.json
                 - name: Opprett ER-konfigurasjoner i Regulatory Configuration Service og last dem opp til det globale repositoriet
                   href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
+                - name: Regulatory Configuration Service – lagringsavvik for Lifecycle Services
+                  href: ../finance/localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/commerce/toc.json
             - name: Østerrike
               items:
                 - name: Eksempel på integrering av tjenesten for avgiftsmessig transaksjon for Østerrike
@@ -1238,6 +1246,8 @@
               items:
                 - name: Commerce-lokalisering for Brasil
                   href: localizations/latam-bra-commerce-localization.md
+                - name: Konfigurer og distribuer Commerce-lokalisering for Brasil
+                  href: localizations/latam-bra-deployment.md
             - name: Øst-Europa
               items:
                 - name: Felles
@@ -1958,12 +1968,16 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/commerce/toc.json
                 - name: Automatiser forretningsprosesser ved hjelp av konfigurasjon av elektronisk rapportering
                   items:
-                    - name: Konfigurere ER for å hente data til Power BI
+                    - name: Konfigurer ER for å hente data til Power BI
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/commerce/toc.json
-                    - name: Generere skjemaer for fritekstfaktura (FTI) som kan skrives ut
+                    - name: Generer skjemaer for fritekstfaktura (FTI) som kan skrives ut
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/commerce/toc.json
-                - name: Spore kjøring av ER-formater for å feilsøke ytelsesproblemer
-                  href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/commerce/toc.json
+                - name: Utform effektive ER-løsninger
+                  items:
+                    - name: Spor kjøring av ER-formater for å feilsøke ytelsesproblemer
+                      href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/commerce/toc.json
+                    - name: Feilsøk ytelsesproblemer i ER-konfigurasjoner
+                      href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/commerce/toc.json
                 - name: Behandling av forretningsdokument (BDM)
                   items:
                     - name: BDM-oversikt
@@ -2388,7 +2402,7 @@
                   href: dev-itpro/cloud-dev-box.md
                 - name: Konfigurere versjonsforløp for SDK for Commerce
                   href: dev-itpro/retail-sdk/SDK-build-pipeline.md
-                - name: Laste ned eksempler og pakker fra GitHub og NuGet
+                - name: Last ned eksempler og pakker fra GitHub og NuGet
                   href: dev-itpro/retail-sdk/sdk-github.md
                 - name: Vanlige spørsmål om SDK for Retail
                   href: dev-itpro/retail-sdk/sdk-faq.md

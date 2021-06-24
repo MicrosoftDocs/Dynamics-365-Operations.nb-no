@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4aa89f27925b88be947f27303957cd53089b8290
-ms.sourcegitcommit: fd15b02fc9caa1c05e56abdc276a7f4b23b0d8f3
+ms.openlocfilehash: a2597dda47e3441d2c41497081849a2213974e55
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "5960022"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187922"
 ---
 # <a name="budgeting-home-page"></a>Startside for budsjettering
 
@@ -28,8 +28,7 @@ ms.locfileid: "5960022"
 
 Dette emnet gir en oversikt over komponenter i budsjetteringsfunksjonaliteten, budsjetteringsverktøy og rapporteringsfunksjoner. 
 
-<a name="components-of-budgeting-functionality"></a>Komponenter i budsjetteringsfunksjonaliteten
--------------------------------------
+## <a name="components-of-budgeting-functionality"></a>Komponenter i budsjetteringsfunksjonaliteten
 
 Ressursplanleggingssyklusen for et selskap består vanligvis av planlegging, budsjettering og prognoseaktiviteter.
 

@@ -16,12 +16,12 @@ ms.search.industry: Public sector
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4c4b7221cb5b0ea1fdbb4e05831cdd6dd482e321
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d24035aa326c2232cc77a576d24c15b3a8f9d93b
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823546"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188353"
 ---
 # <a name="public-sector-home-page"></a>Startside for offentlig sektor
 
@@ -63,8 +63,7 @@ Følgende tabell inneholder informasjon om forholdet mellom denne konfigurasjons
 | Underordnede nøkler | Konfigurasjonsnøkkelen **Avansert finansoppføring** (AdvancedLedgerEntry), konfigurasjonsnøkkelen **Offentlig sektor 1099G** (Tax1099G), konfigurasjonsnøkkelen **Offentlig sektor 1099S** (Tax1099S), konfigurasjonsnøkkelen **Fransk forskriftsmessig** |
 
 
-<a name="additional-resources"></a>Tilleggsressurser
---------
+## <a name="additional-resources"></a>Tilleggsressurser
 
 [Planlegge for funksjonalitet for offentlig sektor](plan-public-sector-functionality.md)
 
