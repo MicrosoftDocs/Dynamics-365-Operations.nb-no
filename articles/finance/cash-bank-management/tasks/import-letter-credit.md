@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6ce0a12aff70da1ec556b69198aa5210519b6af2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 841b4b4bb3c2f98ac65491a21bb991945c9f4bc9
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5834746"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193935"
 ---
 # <a name="import-letter-of-credit"></a>Importere remburs
 
@@ -128,7 +128,8 @@ Denne fremgangsmåten bruker demonstrasjonsfirmaet USMF.
 12. Lukk siden.
 13. Lukk siden.
 
-## <a name="verify-import-letter-of-credit-status"></a>Kontrollere statusen for rembursimporten
+## <a name="verify-import-letter-of-credit-status-and-printing"></a>Kontrollere status for rembursimport og utskrift
+
 1. Gå til Kontant- og bankbehandling > Purringer > Importer remburs og importinkasso.
 2. Finn og velg ønsket post i listen.
 3. Klikk koblingen i den valgte raden i listen.

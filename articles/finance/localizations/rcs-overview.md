@@ -2,7 +2,7 @@
 title: Regulatory Configuration Service
 description: Dette emnet gir en oversikt over funksjonene i RCS (Regulatory Configuration Service), og forklarer hvordan du får tilgang til tjenesten.
 author: JaneA07
-ms.date: 04/07/2021
+ms.date: 06/04/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 1eeac7217290e0583fcecdf5b4b5b9153d266240
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 7f946988f124c814452e1774c700d5c7354f39b0
+ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019400"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6216568"
 ---
 # <a name="regulatory-configuration-service"></a>Regulatory Configuration Service
 
@@ -59,9 +59,19 @@ RCS er allment tilgjengelig i følgende områder:
 
 For en komplett liste over områder kan du se [Dynamics 365 og Power Platform: Tilgjengelighet, dataplassering, språk og lokalisering](https://aka.ms/dynamics_365_international_availability_deck).
 
+## <a name="rcs-default-company"></a>Standardfirma for RCS
+
+Funksjonaliteten for utformingstid som brukes i RCS, deles på tvers av alle firmaer. Det finnes ingen firmaspesifikk funksjonalitet. Vi anbefaler derfor at du bruker ett firma, **DAT**, med RCS-miljøet.
+
+I enkelte scenarioer ønsker du imidlertid kanskje at ER-formater bruker parametere som er knyttet til en bestemt juridisk enhet. Det er bare i disse scenarioene du bør bruke bryteren for standardfirma. Hvis du vil ha et eksempel, kan du se [Konfigurere ER-formater slik at de brukere parametere som angis per juridisk enhet](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md).
+
 ## <a name="related-rcs-documentation"></a>Relatert RCS-dokumentasjon
 
-Hvis du vil ha mer informasjon om relaterte komponenter, kan du se følgende dokumentasjon:
+Hvis du vil ha mer informasjon om relaterte komponenter, kan du se følgende emner:
+
+- **RCS:**
+
+    - [Opprette ER-konfigurasjoner i RCS og laste dem opp til det globale repositoriet](rcs-global-repo-upload.md)
 
 - **Globalt repositorium:**
 
@@ -70,7 +80,20 @@ Hvis du vil ha mer informasjon om relaterte komponenter, kan du se følgende dok
     - [Forbedret filtrering i globalt repositorium](enhanced-filtering-global-repo.md)
     - [Last ned ER-konfigurasjoner fra det globale repositoriet](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md)
     - [Avslutt konfigurasjoner i globalt repositorium](discontinuing-configurations-rcs-global-repo.md)
+    - [Regulatory Configuration Service (RCS) – avskrivning av lager for Lifecycle Services (LCS)](rcs-lcs-repo-dep-faq.md)
 
 - **Globaliseringsfunksjon:**
 
     - [Regulatory Configuration Service (RCS) – globaliseringsfunksjon](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-finance/regulatory-configuration-service-simplified-globalization-feature-management-globalization-services)
+
+
+## <a name="troubleshooting-rcs-sign-up"></a>Feilsøke RCS-registrering
+
+Når du registrerer deg for RCS på tjenestesiden, kan det oppstå et problem knyttet til Azure Active Directory (Azure AD). Feilmeldingen du får, angir at registreringen for RCS er deaktivert og må aktiveres før du kan fullføre registreringsprosessen.
+
+![Feilmelding ved RCS-registrering](media/01_RCSSignUpError.jpg)
+
+Problemet oppstår fordi du er blokkert fra å registrere deg for adhocabonnementer, og egenskapen `AllowAdHocSubscriptions` må aktiveres i leieren din. 
+
+- Hvis IT-avdelingen administrerer organisasjonens Azure-leiere, kan du kontakte denne avdelingen for å rapportere problemet.
+- Hvis du er ansvarlig for å administrere Azure-leiere, kan du løse problemene ved å følge trinnene i [Hva er selvbetjent registrering for Azure Active Directory](/azure/active-directory/enterprise-users/directory-self-service-signup#how-do-i-control-self-service-settings).

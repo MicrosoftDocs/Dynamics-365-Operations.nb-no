@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: b773b12b7eb3a8a59627d011f2469a98c5dde58a
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: d683b0b140592e4c93a68f7f58c7d13475b4c2a5
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6058926"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189607"
 ---
 # <a name="compensation-plans"></a>Kompensasjonsplaner
 
@@ -121,8 +121,7 @@ Tabellen nedenfor viser komponenter i kompensasjonsprosessen som kan være integ
 ## <a name="process-events"></a>Prosesshendelser
 En prosesshendelse beregner kompensasjonsinformasjon for en bestemt periode for alle ansatte som er registrert i én eller flere faste eller variable kompensasjonsplaner. Du kan kjøre en prosesshendelse gjentatte ganger for å teste eller oppdatere beregnede kompensasjonsresultater.
 
-<a name="compensation-events"></a>Kompensasjonshendelser
--------------------
+## <a name="compensation-events"></a>Kompensasjonshendelser
 
 Hver gang en prosesshendelse kjøres, opprettes en kompensasjonshendelse.  Kompensasjonshendelser inneholder resultatene av kompensasjonsprosessen for hver ansatt som er inkludert i prosesshendelsen.  Når beregningene er riktige, kan du laste inn kompensasjonshendelsen for å oppdatere kompensasjonsposter for ansatte som er berørt av prosesshendelsen.
 

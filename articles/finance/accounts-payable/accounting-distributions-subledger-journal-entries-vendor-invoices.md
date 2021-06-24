@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 953069dfd39843d39cc92d99318f02819dc31ed0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 513066a597620450f0b482e98e36d31c6f2c980a
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820990"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189099"
 ---
 # <a name="accounting-distributions-and-journal-entries-for-vendor-invoices"></a>Regnskapsdistribusjoner og journaloppføringer for leverandørfakturaer
 
@@ -28,8 +28,7 @@ ms.locfileid: "5820990"
 
 Regnskapsdistribusjoner brukes til å definere hvordan beløp skal gjøres rede for, for eksempel hvordan utgiften, avgiften eller gebyrene skal gjøres rede for på en leverandørfaktura. Alle beløp som må redegjøres for når leverandørfakturaen er journalføres, har én eller flere regnskapsdistribusjoner. 
 
-<a name="accounting-distributions"></a>Regnskapsdistribusjoner 
--------------------------
+## <a name="accounting-distributions"></a>Regnskapsdistribusjoner 
 
 Du kan bruke følgende knapper på Leverandørfaktura-siden til å vise, og eventuelt endre, regnskapsdistribusjonene for hvert beløp i leverandørfakturaen.
 -   **Fordel beløp** – Vis og endre regnskapsdistribusjonene for en enkelt linje og eventuelle underordnede linjer, for eksempel avgifter eller gebyrer. Du kan også vise og endre regnskapsdistribusjonene for den underordnede linjen direkte fra Mva-transaksjoner- eller Tilleggstransaksjoner-siden.
@@ -227,8 +226,7 @@ Når du registrerer en leverandørfaktura, fordeles beløpene på følgende måt
 </table>
 
 
-<a name="distributing-taxes"></a>Distribusjonsavgifter
-------------------
+## <a name="distributing-taxes"></a>Distribusjonsavgifter
 
 Kan ikke opprette regnskapsdistribusjoner for avgifter før avgifter er beregnet. Hvis du vil beregne merverdiavgift, må du fullføre en av de følgende oppgavene på Leverandørfaktura-siden:
 -   Vis fakturatotalen.

@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 3d9bbc91b90cc675f500a990cf36e2aee6c6bccb
-ms.sourcegitcommit: 35fdcc6501e099c54a58583b1e3aba16f02a5ccc
+ms.openlocfilehash: 30ccdf45d4993e9803f86025f8e789d4f75f64dc
+ms.sourcegitcommit: 8d50c905a0c9d4347519549b587bdebab8ffc628
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/04/2021
-ms.locfileid: "5980956"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "6184028"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Skalaenheter for sky og kant for arbeidsbelastninger for lagerstyring
 
@@ -289,14 +289,15 @@ Følgende tabell viser hvilke funksjoner for lageroperatsjoner og unntaksbehandl
 | Endre arbeidspulje i arbeid                           | Ja | Ja                          |
 | Avbryt arbeid                                        | Ja | Ja                          |
 
-
 ### <a name="production"></a>Produksjon
 
-Produksjonsscenarioer med lagerstyring støttes for øyeblikket ikke i arbeidsbelastninger for skalaenhet, som angitt i følgende tabell.
+Tabellen nedenfor oppsummerer hvilke produksjonsscenarioer med lagerstyring som støttes (og ikke støttes) for øyeblikket i arbeidsbelastninger for skalaenhet.
 
 | Behandle | Hub | WES-arbeidsbelastning på en skalaenhet |
 |---------|-----|------------------------------|
-| <p>Alle lagerstyringsprosessene som er knyttet til produksjon. Her er noen eksempler:</p><li>Frigi til lager</li><li>Produksjonsbølgebehandling</li><li>Råvareplukking</li><li>RAF og plassering av ferdigvarer</li><li>Plasser koprodukt og biprodukt</li><li>Kanban plassert</li><li>Kanban-plukking</li><li>Start produksjonsordre</li><li>Produksjonssvinn</li><li>Siste produksjonspall</li><li>Registrer materialforbruk</li><li>Tøm Kanban</li></ul> | Ja | Nei |
+| Ferdigmeld og Plasser ferdigvarer | Ja | Ja |
+| Plasser koprodukt og biprodukt | Ja | Ja |
+| <p>Alle andre lagerstyringsprosesser som er knyttet til produksjon, inkludert følgende:</p><li>Frigi til lager</li><li>Produksjonsbølgebehandling</li><li>Råvareplukking</li><li>Kanban plassert</li><li>Kanban-plukking</li><li>Start produksjonsordre</li><li>Produksjonssvinn</li><li>Siste produksjonspall</li><li>Registrer materialforbruk</li><li>Tøm Kanban</li></ul> | Ja | Nei |
 
 ## <a name="maintaining-scale-units-for-wes"></a>Vedlikeholde skalaenheter for WES
 

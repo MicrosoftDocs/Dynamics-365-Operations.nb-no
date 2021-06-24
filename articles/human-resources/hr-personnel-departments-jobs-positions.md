@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 1279cd1eb0d495107515dd40f7d2e0f9dfd5e080
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 84e7017cb0bd799e27e19fc82009307d2955dea7
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6058830"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189756"
 ---
 # <a name="organize-your-workforce-by-using-departments-jobs-and-positions"></a>Organisere arbeidsstyrken ved hjelp av avdelinger, jobber og stillinger
 
@@ -42,8 +42,7 @@ Eksemplet nedenfor brukes til å illustrere begreper som er beskrevet i denne ar
 |**Personale**|Personale (sentralt)|Personale|
 
 
- <a name="departments"></a>Avdelinger
-------------
+##  <a name="departments"></a>Avdelinger
 
 En avdeling er en driftsenhet som representerer en kategori eller et funksjonsområde i en organisasjon som er ansvarlig for et bestemt område i organisasjonen, for eksempel salg eller regnskap. En avdeling som brukes til å rapportere om funksjonsområder og kan ha resultatansvar. En avdeling kan også inneholde en gruppe med kostsentre. Salg, regnskap og personale er noen eksempler på avdelinger i en organisasjon.
 
@@ -96,8 +95,7 @@ Bruk jobbtyper til å klassifisere lignende jobber i kategorier. Jobbtyper, på 
 
 Bruk ansvarsområder for å angi arbeidsrollene, prosessene og produktene som en arbeider som er i en stilling for jobben, har ansvaret for. Et eksempel på et ansvarsområde for en jobb med navnet "Regnskap" kan være "Økonomisk rapportering for produkt A".
 
-<a name="positions"></a>Stillinger
-----------
+## <a name="positions"></a>Stillinger
 
 Stillinger er et viktig element i det nederste nivået i et organisasjonshierarki. En stilling er én enkeltforekomst av en jobb. Stillingen "Salgssjef (øst)" er for eksempel bare én av stillingene som er knyttet til jobben "Salgssjef". Stillinger finnes i en avdeling, og tilordnes til arbeidere.
 ### <a name="position-creation-and-maintenance"></a>Opprettelse og vedlikehold av stilling

@@ -2,7 +2,7 @@
 title: Opprette et dataintegratorprosjekt (forhåndsversjon)
 description: Dette emnet forklarer hvordan du oppretter et dataintegratorprosjekt.
 author: ShivamPandey-msft
-ms.date: 07/24/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 9ecf6ef7b7f052ebbb1201dcd04a7431f5b72ce5
-ms.sourcegitcommit: b64c52d85aa6f110f3b1959a5521637dd8631b5b
+ms.openlocfilehash: 59f85c64ea7b1f539a245e08b76bd6a34797b0ca
+ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5867453"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6186474"
 ---
 # <a name="create-a-data-integrator-project-preview"></a>Opprette et dataintegratorprosjekt (forhåndsversjon)
 
@@ -67,10 +67,5 @@ Dette emnet forklarer hvordan du oppretter et dataintegratorprosjekt.
 
 > [!NOTE]
 > Hvis du ikke ser de nødvendige enhetene i CDS, kan du gå til **Kreditt og innkreving > Oppsett > Finance Insights > Parametere for økonomisk innsikt**, aktivere funksjonen for kundebetalingsprognoser og klikke på knappen **Opprett prognosemodell**. Når distribusjonen av modell for kunstig intelligens er fullført (vellykket eller mislykket), vil CDS-enhetene som kreves for å opprette integrering, bli distribuert i CDS.
-
-## <a name="privacy-notice"></a>Personvernerklæring
-
-Forhåndsversjoner (1) kan ha redusert personvern og færre sikkerhetstiltak enn Dynamics 365 Finance and Operations-tjenesten, (2) er ikke inkludert i serviceavtalen (SLA) for denne tjenesten, (3) må ikke brukes til å behandle personlige data eller andre data som er underlagt juridiske eller forskriftsmessige krav, og (4) har begrenset støtte.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

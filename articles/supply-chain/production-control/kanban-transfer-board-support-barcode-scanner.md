@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2a7073fb5d77e2d11569e86b92433864371f0e1d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c48c4737c260004ea44109cfb2a0478a3e8653cc
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825873"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190070"
 ---
 # <a name="kanban-transfer-board-support-for-barcode-scanners"></a>Støtte for Kanban-overføringskort for strekkodelesere
 
@@ -29,8 +29,7 @@ ms.locfileid: "5825873"
 
 Kanban-overføringskortet støtter skannerinndata fra et kontrollprogram for strekkodeskanner for å velge, starte, fylle ut og tømme en kanban-jobb.
 
-<a name="registration-modes"></a>Registreringsmoduser
-------------------
+## <a name="registration-modes"></a>Registreringsmoduser
 
 I hurtigfanen **Skanner - registrering** kan du velge registreringsmodus, som styrer handlingen når du skanner et Kanban-kortnummer eller skriver inn nummeret manuelt i feltet Kanban-kortnummer.
 
@@ -42,8 +41,7 @@ I hurtigfanen **Skanner - registrering** kan du velge registreringsmodus, som st
 | Velg                | Registrerer et Kanban-kortnummer og velger den refererte jobben automatisk i Kanban-listen. |
 
  
-<a name="registration-mode-select"></a>Registreringsmodusen Velg
-------------------------
+## <a name="registration-mode-select"></a>Registreringsmodusen Velg
 
 Når du bruker en strekkodeleser til å velge en jobb, endres visningsmodusen for Kanban-kortet. I denne modusen gjelder følgende betingelser:
 

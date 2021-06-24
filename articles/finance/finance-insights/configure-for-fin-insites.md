@@ -1,8 +1,8 @@
 ---
-title: Konfigurasjon for Finance Insights (forhåndsversjon)
-description: Dette emnet forklarer konfigurasjonstrinnene som gjør at systemet kan bruke funksjonene i Finance Insights.
+title: Konfigurasjon for Finance Insights – versjoner opptil 10.0.19
+description: Dette emnet forklarer konfigurasjonstrinnene som gjør at systemet kan bruke funksjonene i Finance Insights for versjoner opptil 10.0.19.
 author: ShivamPandey-msft
-ms.date: 11/25/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 60e4d69157d7b73bd9e47310adae320687230080
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: 6ad06bb6d041fc060b3a99538f6d4d0af333180f
+ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941232"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6186426"
 ---
 # <a name="configuration-for-finance-insights-preview"></a>Konfigurasjon for Finance Insights (forhåndsversjon)
 
@@ -30,6 +30,9 @@ ms.locfileid: "5941232"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
+> [!NOTE]
+> Følgende fremgangsmåter for å konfigurere Finance Insights er gyldige for Microsoft Dynamics 365 Finance-versjoner opptil 10.0.19. Hvis du vil konfigurere Finance Insights i versjon 10.0.20 og nyere, kan du se [Konfigurasjon for Finance Insights (forhåndsversjon) – versjon 10.0.20 og nyere](configure-for-fin-insites-PubPrvw.md).
+
 Finance Insights kombinerer funksjonalitet fra Microsoft Dynamics 365 Finance med Microsoft Dataverse, Azure og AI Builder for å gi organisasjonen kraftige prognoseverktøy. Dette emnet forklarer konfigurasjonstrinnene som gjør at systemet kan bruke funksjonene i Finance Insights.
 
 ## <a name="deploy-dynamics-365-finance"></a>Klargjøre Dynamics 365 Finance
@@ -38,7 +41,7 @@ Klargjør miljøene ved å følge disse trinnene.
 
 1. Opprett eller oppdater et Dynamics 365 Finance-miljø i Microsoft Dynamics Lifecycle Services (LCS). Miljøet krever appversjon 10.0.11 / Platform update 35 eller senere.
 2. Miljøet må være et miljø med høy tilgjengelighet i sandkassemodus. (Denne typen miljø kalles også et miljø på lag 2.) Hvis du vil ha mer informasjon, kan du se [Miljøplanlegging](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
-3. Hvis du bruker Contoso-demonstrasjonsdata, må du ha flere eksempeldata for å kunne bruke funksjonene for kundebetalingsprognoser, kontantstrømprognoser og budsjettprognoser. 
+3. Hvis du konfigurerer Finance Insights i et sandkassemiljø, må du kanskje kopiere produksjonsdata til dette miljøet for at prediksjoner skal kunne fungere. Prediksjonsmodellen bruker flere år med data til å bygge prediksjoner. Contoso-demodataene inneholder ikke nok historiske data til at prediksjonsmodellen kan læres opp tilstrekkelig. 
 
 ## <a name="configure-dataverse"></a>Konfigurer Dataverse
 

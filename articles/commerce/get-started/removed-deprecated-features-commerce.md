@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 5544fefbbf0dfc012e868b672f80cc2be30fe7ce
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: f80d1509c7c363e93b83cb47c1b93ab00bf67180
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020868"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193474"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Funksjoner som er fjernet eller avskrevet i Dynamics 365 Commerce
 
@@ -37,7 +37,7 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 
 ### <a name="full-dataset-generation-interval-is-deprecated"></a>Fullstendig datasettgenereringsintervall blir avskrevet
 
-|   |  |
+|  &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Fra og med denne versjonen, i skjemaet **Parametre for planlegging av handel** i Dynamics 365-hovedkontoret, blir feltet **Fullstendig datasettgenereringsintervall i dager** avskrevet. Hvis du også starter i denne versjonen, fjernes feltet visuelt, slik at verdien ikke kan redigeres. Dette blir stående som verdien **0**. |
 | **Erstattet med en annen funksjon?**   | Nr. |
@@ -49,7 +49,7 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 
 ### <a name="internet-explorer-11-support-for-dynamics-365-is-deprecated"></a>Internet Explorer 11-støtte for Dynamics 365 er avskrevet
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Fra og med desember 2020 er Microsoft Internet Explorer 11-støtte for alle Dynamics 365-produkter avskrevet, og Internet Explorer 11 støttes ikke etter august 2021.<br><br>Dette vil påvirke kunder som bruker Dynamics 365-produkter som er utformet for bruk via et Internet Explorer 11-grensesnitt. Etter august 2021 støttes ikke Internet Explorer 11 for slike Dynamics 365-produkter. |
 | **Erstattet med en annen funksjon?**   | Vi anbefaler at kundene går over til Microsoft Edge.|
@@ -59,7 +59,7 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10011-release"></a>Fjernede eller avskrevne funksjoner i Commerce 10.0.11
 ### <a name="data-action-hooks"></a>Datahandlingsbindinger
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Funksjonen for datahandlingsbindinger er avskrevet på grunn av ytelsesproblemer. |
 | **Erstattet med en annen funksjon?**   | Vi anbefaler i stedet å bruke [overstyringer for datahandling](../e-commerce-extensibility/data-action-overrides.md) til å endre forretningslogikken i datahandlingslaget.|
@@ -68,7 +68,7 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 | **Status**                         | Avskrevet: Fra og med versjon 10.0.11 |
 
 ### <a name="retail-sdk-support-for-visual-studio-2015-msbuild-140-and-retail-sdkreference-libraries-and-tools"></a>Støtte for SDK for Retail for Visual Studio 2015, msbuild 14.0 og SDK for Retail\referansebibliotek og verktøy
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Støtte for SDK for Retail for Visual Studio 2015 er avskrevet og oppdatert til å støtte VS 2017, msbuild 15.0 og alle referansebibliotekene og Commerce-proxy-generatorverktøy i RetailSDK\referanse-mappen flyttet til NuGet-pakker for å forenkle utvidelsesmodellen og SDK-oppgraderingsprosessen.|
 | **Erstattet med en annen funksjon?**   | Vi anbefaler at du følger informasjonen i [Overføre SDK for Retail fra Visual Studio 2015 til Visual Studio 2017](../dev-itpro/retail-sdk/migrate-sdk.md) for å oppdatere systemet. |
@@ -77,7 +77,7 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 | **Status**                         | Avskrevet: Fra og med versjon 10.0.11 |
 
 ### <a name="retail-server-extension-using-iedmmodelextender-and-commercecontroller"></a>Retail Server-utvidelse ved hjelp av IEdmModelExtender og CommerceController
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Retail Server-utvidelse ved hjelp av IEdmModelExtender og CommerceController er avskrevet til å gi forenklet utvidelsesmodell. Den nye implementeringen vil bare ha controller-klassen uten ekstra IEdmModelExtender-klasseimplementering. Dette unngår også avhengigheten med en bestemt OData-versjon (hvis OData-versjonen er oppdatert, kan det hende at utvidelser brytes.) |
 | **Erstattet med en annen funksjon?**   |  Vi anbefaler at du bruker IController-klasseutvidelsesmodellen ved å importere NuGet-pakken (Microsoft.Dynamics.Commerce.Hosting.Contracts). |
@@ -86,7 +86,7 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 | **Status**                         | Avskrevet: Fra og med versjon 10.0.11 |
 
 ### <a name="hardware-station-extension-using-ihardwarestationcontroller"></a>Utvidelse for maskinvarestasjon ved hjelp av IHardwareStationController
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Maskinvarestasjonsutvidelse ved hjelp av IHardwareStationController er avskrevet til fordel for forenklet utvidelsesmodell. Den nye implementeringen vil bare ha IController-klassen uten ekstra klasseimplementering og for å unngå avhengigheten med biblioteker med kjernemaskinvarestasjoner, tidligere utvidelse må referere til flere biblioteker.) |
 | **Erstattet med en annen funksjon?**   | Det anbefales å bruke IController-klasseutvidelsesmodellen ved å importere NuGet-pakken (Microsoft.Dynamics.Commerce.Hosting.Contracts). |
@@ -96,7 +96,7 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10010-release"></a>Fjernede eller avskrevne funksjoner i Commerce 10.0.10
 ### <a name="pos-operation-803---picking-and-receiving"></a>POS-operasjon 803 - Plukk og mottak
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Plukk- og mottaksoperasjoner avskrives på grunn av ny utforming av den nye operasjonen. |
 | **Erstattet med en annen funksjon?**   | Ja. Den er erstattet av to nye POS-operasjoner: innkommende operasjon (804) og utgående operasjon (805).|
@@ -107,7 +107,7 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-1007-release"></a>Fjernede eller avskrevne funksjoner i Commerce 10.0.7
 ### <a name="commerce-getproductavailabilities-and-getavailableinventorynearby-apis"></a>API-er for Commerce GetProductAvailabilities og GetAvailableInventoryNearby
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Nye optimaliserte API-er er opprettet for å erstatte API-ene GetProductAvailabilities og GetAvailableInventoryNearby. |
 | **Erstattet med en annen funksjon?**   | Ja: Den erstattes av APIene GetEstimatedAvailability og GetEstimatedProductWarehouseAvailability. |

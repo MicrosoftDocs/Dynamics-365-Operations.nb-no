@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d2015405f3c7f89ba36f811ca125f3a73bc13c38
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 470b4fa1c8b15ae4a9e9ebef81af9e4ca107422d
+ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753270"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "6223992"
 ---
 # <a name="electronic-reporting-formula-language"></a>Formelspråk i elektronisk rapportering
 
@@ -38,13 +38,13 @@ ER-uttrykk kan inneholde én eller flere av følgende elementer:
 - [Baner](#Paths)
 - [Funksjoner](#Functions)
 
-## <a name=""></a><a name="Constants">Konstanter</a>
+## <a name="constants"></a><a name="Constants"></a>Konstanter
 
 Når du utformer uttrykk, kan du bruke tekst og numeriske konstanter (dvs. verdier som ikke er beregnet). Uttrykket `VALUE ("100") + 20` bruker for eksempel den numeriske konstanten **20** og strengkonstanten **"100"**, og returnerer den numeriske verdien **120**.
 
 ER-formeldesigneren støtter avbruddssekvenser. Derfor kan du angi en uttrykksstreng som skal håndteres på en annen måte. Uttrykket `"Leo Tolstoy ""War and Peace"" Volume 1"` returnerer for eksempel tekststrengen **Leo Tolstoy "Krig og fred" Del 1.**
 
-## <a name=""></a><a name="Operators">Operatører</a>
+## <a name="operators"></a><a name="Operators"></a>Operatører
 
 Tabellen nedenfor viser de aritmetiske operatorene som du kan bruke til å utføre grunnleggende matematiske operasjoner, for eksempel addisjon, subtraksjon, multiplikasjon og divisjon.
 
@@ -88,9 +88,9 @@ Rekkefølgen som delene av et sammensatt uttrykk evalueres i er viktig. Resultat
 
 Hvis et uttrykk inneholder flere etterfølgende operatorer med samme prioritet, evalueres disse operasjonene fra venstre mot høyre. Uttrykket `1 + 6 / 2 \* 3 > 5` returnerer for eksempel **sann**. Vi anbefaler at du bruker parenteser for å eksplisitt angi ønsket rekkefølge på operasjoner i uttrykk, slik at uttrykkene er enklere å lese og vedlikeholde.
 
-## <a name=""></a><a name="References">Referanser</a>
+## <a name="references"></a><a name="References"></a>Referanser
 
-Alle datakilder for gjeldende ER-komponent som er tilgjengelige under utformingen av et uttrykk, kan brukes som navngitte referanser. Gjeldende ER-komponent kan enten være en modelltilordning eller et format. Gjeldende ER-modelltilordning inneholder for eksempel datakilden **ReportingDate** som returnerer en verdi for *DateTime*-datatypen. Hvis du vil ha verdien riktig formatert i det genererende dokumentet, kan du referere til datakilden i uttrykket som `DATETIMEFORMAT (ReportingDate, "dd-MM-yyyy")`.
+Alle datakilder for gjeldende ER-komponent som er tilgjengelige under utformingen av et uttrykk, kan brukes som navngitte referanser. Gjeldende ER-komponent kan enten være en modelltilordning eller et format. Gjeldende ER-modelltilordning inneholder for eksempel datakilden **ReportingDate**, som returnerer en verdi for [*DateTime*](er-formula-supported-data-types-primitive.md#datetime)-datatypen. Hvis du vil ha verdien riktig formatert i det genererende dokumentet, kan du referere til datakilden i uttrykket som `DATETIMEFORMAT (ReportingDate, "dd-MM-yyyy")`.
 
 Alle tegn i navnet på en refererende datakilde som ikke representerer en bokstav i alfabetet, må ha et enkelt anførselstegn (') foran. Hvis navnet på en referansedatakilde inneholder minst ett symbol som ikke representerer en bokstav i alfabetet, må navnet være omsluttet av enkle anførselstegn. Disse ikke-alfabetiske symbolene kan for eksempel være skilletegn eller andre skriftlige symboler. Her er noen eksempler:
 
@@ -99,7 +99,7 @@ Alle tegn i navnet på en refererende datakilde som ikke representerer en boksta
 
 Hvis metodene for programdatakilder har parametere, brukes følgende syntaks for å kalle disse metodene:
 
-- Hvis **isLanguageRTL**-metoden for **System**-datakilden har en **EN-US**-parameter av *Streng*-datatypen, må denne metoden refereres til i et ER-uttrykk som `System.isLanguageRTL("EN-US")`.
+- Hvis **isLanguageRTL**-metoden for **System**-datakilden har en **EN-US**-parameter av [*Streng*](er-formula-supported-data-types-primitive.md#string)-datatypen, må denne metoden refereres til i et ER-uttrykk som `System.isLanguageRTL("EN-US")`.
 - Anførselstegn er ikke obligatorisk når et metodenavn inneholder bare alfanumeriske symboler. De er imidlertid obligatorisk for en metode i en tabell hvis navnet inneholder parentes.
 
 Når du legger til **System**-datakilden i en ER-tilordning som refererer til programklassen **Global**, returnerer uttrykket `System.isLanguageRTL("EN-US ")` den *boolske* verdien **USANN**. Det endrede uttrykket `System.isLanguageRTL("AR")` returnerer den *boolske* verdien **SANN**.
@@ -107,9 +107,9 @@ Når du legger til **System**-datakilden i en ER-tilordning som refererer til pr
 Du kan begrense hvordan verdier blir sendt til parametere av denne metodetypen:
 
 - Bare konstanter kan sendes til metoder av denne typen. Verdiene for konstantene defineres under utformingen.
-- Bare primitive (grunnleggende) datatyper støttes for parametere av denne typen. De primitive datatypene inkluderer *heltall*, *reelle tall*, *boolsk* og *streng*.
+- Bare [primitive](er-formula-supported-data-types-primitive.md) (grunnleggende) datatyper støttes for parametere av denne typen. De primitive datatypene inkluderer *heltall*, *reelle tall*, *boolsk* og *streng*.
 
-## <a name=""></a><a name="Paths">Baner</a>
+## <a name="paths"></a><a name="Paths"></a>Baner
 
 Når et uttrykk refererer til en strukturert datakilde, kan du bruke banedefinisjonen for å velge et bestemt primitivt element i denne datakilden. Tegnet punktum (.) brukes til å skille enkeltelementene i en strukturert datakilde. Gjeldende ER-modelltilordning inneholder for eksempel datakilden **InvoiceTransactions**, og denne datakilden returnerer listen med poster. Oppføringsstrukturen **InvoiceTransactions** inneholder feltene **AmountDebit** og **AmountCredit**, og begge disse feltene returnerer numeriske verdier. Derfor kan du utforme følgende uttrykk for å beregne det fakturerte beløpet: `InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit`. Konstruksjonen `InvoiceTransactions.AmountDebit` i dette uttrykket er banen som brukes til å få tilgang til **AmountDebit**-feltet i **InvoiceTransactions**-datakilden i *Postliste*-typen.
 
@@ -129,7 +129,7 @@ Den gjenstående delen av den absolutte banen vises også i [ER-formelredigering
 
 Hvis du vil ha mer informasjon, kan du se [Bruke en relativ bane i databindinger for ER-modeller og -formater](relative-path-data-bindings-er-models-format.md).
 
-## <a name=""></a><a name="Functions">Funksjoner</a>
+## <a name="functions"></a><a name="Functions"></a>Funksjoner
 
 Innebygde ER-funksjoner kan brukes i ER-uttrykk. Alle datakilder i uttrykkskonteksten (dvs. gjeldende ER-modelltilordning eller ER-format), kan brukes som parametere for anropsfunksjoner i henhold til listen over argumenter for anropsfunksjoner. Konstanter kan også brukes som parametere for anropsfunksjoner. Gjeldende ER-modelltilordning inneholder for eksempel datakilden **InvoiceTransactions**, og denne datakilden returnerer listen med poster. Oppføringsstrukturen **InvoiceTransactions** inneholder feltene **AmountDebit** og **AmountCredit**, og begge disse feltene returnerer numeriske verdier. For å beregne det fakturerte beløpet kan du derfor utforme følgende uttrykk som bruker den innebygde ER-avrundingsfunksjonen: `ROUND (InvoiceTransactions.AmountDebit - InvoiceTransactions.AmountCredit, 2)`.
 
@@ -173,5 +173,8 @@ IF(COUNT (IntrastatTotals)=0, 0.0, IntrastatTotals.aggregated.'$AmountMSTRounded
 
 [Utvide listen over funksjoner for elektronisk rapportering](general-electronic-reporting-formulas-list-extension.md)
 
+[Støttede primitive datatyper](er-formula-supported-data-types-primitive.md)
+
+[Sammensatte datatyper som støttes](er-formula-supported-data-types-composite.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

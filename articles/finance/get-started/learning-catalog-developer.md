@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 9e3976eaf94f6a8440794beebae1ab7241e5aa54
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: cdc16d02f24f24e0f9933542589573ee6b5cde45
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897654"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193385"
 ---
 # <a name="learning-catalog-for-dynamics-365-finance-developers"></a>Opplæringskatalog for Dynamics 365 Finance-utviklere
 
@@ -29,20 +29,20 @@ Katalogen nedenfor er ordnet fra kjernekunnskap til bestemte områder, og fra de
 
 ## <a name="get-started"></a>Kom i gang<a name="get-started"></a>
 
-| Innhold  | beskrivelse     | Formater     | Lengde    |
-|-------------|-----------------|-------------|------------|
-| [Komme i gang med Finance and Operations-apper](/learn/paths/get-started-finance-operations/) | Finn ut hvordan Finance and Operations-apper lar virksomheter administrere sine globale, økonomiske systemer, driftsforretningsprosesser og strømlinjeformede forsyningskjeder for å gi brukerne mulighet til å ta raske, informerte avgjørelser. Ditt første trinn i Finance and Operations-apper-karrieren er å gjøre deg kjent med funksjonene og funksjonaliteten, uansett hvilken rolle du har. | Gratis, selvbetjent elektronisk læringsforløp | 2.2 timer |
-| [Komme i gang med Dynamics 365 Finance](/learn/modules/get-started-financial-management-dyn365-finance/) | Dynamics 365 Finance gir bedriftsbrukere muligheten til å tilpasse seg forretningsmiljøer som endres raskt. Det gir bedrifter alt de trenger til å styre økonomien og administrere midler med nøyaktig informasjon, til økonomisk planlegging og prognose, og hjelper dem med å holde seg oppdatert med analyseverktøy. Siden økonomi er kjernen i enhver bedrift, er det viktig å bli kjent med funksjonene i Dynamics 365 Finance. | Gratis, selvbetjent elektronisk læringsmodul | 1 time |
+| Innhold | beskrivelse | Formater | Lengde |
+|---------|-------------|--------|--------|
+| [Komme i gang med Finance and Operations-apper](https://docs.microsoft.com/learn/paths/get-started-finance-operations/) | Finn ut hvordan Finance and Operations-apper lar virksomheter administrere sine globale, økonomiske systemer, driftsforretningsprosesser og strømlinjeformede forsyningskjeder for å gi brukerne mulighet til å ta raske, informerte avgjørelser. Ditt første trinn i Finance and Operations-apper-karrieren er å gjøre deg kjent med funksjonene og funksjonaliteten, uansett hvilken rolle du har. | Gratis, selvbetjent elektronisk læringsforløp | 2.2 timer |
+| [Komme i gang med Dynamics 365 Finance](https://docs.microsoft.com/learn/modules/get-started-financial-management-dyn365-finance/) | Dynamics 365 Finance gir bedriftsbrukere muligheten til å tilpasse seg forretningsmiljøer som endres raskt. Det gir bedrifter alt de trenger til å styre økonomien og administrere midler med nøyaktig informasjon, til økonomisk planlegging og prognose, og hjelper dem med å holde seg oppdatert med analyseverktøy. Siden økonomi er kjernen i enhver bedrift, er det viktig å bli kjent med funksjonene i Dynamics 365 Finance. | Gratis, selvbetjent elektronisk læringsmodul | 1 time |
 
 ## <a name="core-development-concepts"></a>Begreper for kjerneutvikling<a name="core-development-concepts"></a>
 
-| Innhold  | beskrivelse  | Formater   | Lengde    |
-|-------------|-----------------|-------------|------------|
-| [Innføring i utvikling med Finance and Operations-apper](/learn/paths/introduction-develop-finance-operations/) | Som en utvikler som arbeider med Finance and Operations-apper, er det viktig å ha en god forståelse av hovedarkitekturkomponentene i Dynamics 365-økosystemet og Finance and Operations-apper. Kunnskap om kjernekonsepter for utviklere, inkludert tekniske funksjoner, kildekode, testrammeverk og rapporteringsverktøy, vil støtte dine fremtidige tiltak ved bygging av utviklingsferdigheter som du kan bruke i Finance and Operations-apper. | Gratis, selvbetjent elektronisk læringsforløp | 7.75 timer |
-| [Bygge Finance and Operations-apper](/learn/paths/build-finance-operations/) | Utvikling i Finance and Operations-apper krever en grunnleggende forståelse av oppgavene som kreves for å bygge nye elementer og tilpasse Finance and Operations-apper. Oppgavene omfatter forståelse av X ++-kode og Visual Studio, i tillegg til å kunne opprette og endre de grunnleggende elementene i systemet. | Gratis, selvbetjent elektronisk læringsforløp | 13 timer |
-| [Utvide Finance and Operations-apper](/learn/paths/extending-finance-operations/) | Med utvidelser kan utviklere gjøre endringer i brukeropplevelsen i Finance and Operations-apper ved å implementere endringer i koden som ikke påvirker grunnkoden. Blant andre fordeler gjør utvidelser at utviklerne kan oppdatere Finance and Operations-aper for å holde seg til forretningsprosesser og nødvendige endringer. | Gratis, selvbetjent elektronisk læringsforløp | 2.5 timer |
-| [Koble til Finance and Operations-apper](/learn/paths/connect-finance-operations/) | Integrering og muligheten til å få tilgang til dataene i Finance and Operations-apper er viktige funksjoner. Utviklere som har lært å bygge og utvide kode i Finance and Operations-apper, kan forbedre sin kunnskap om utvikling av dataintegrering og hvordan tilkobling til data kan ha positiv innvirkning på brukere. | Gratis, selvbetjent elektronisk læringsforløp | 5.75 timer |
-| [Overføre data og komme i gang med Finance and Operations-apper](/learn/paths/migrate-data-go-live-finance-operations/) | Som en funksjonell konsulent må du kjenne til hvordan du kan klargjør kundens data for overføring, arbeide med databehandling og utføre bruk av testing av brukeraksept for å komme i gang med Finance and Operations-apper. | Gratis, selvbetjent elektronisk læringsforløp | 4 timer |
+| Innhold | beskrivelse | Formater | Lengde |
+|---------|-------------|--------|--------|
+| [Innføring i utvikling med Finance and Operations-apper](https://docs.microsoft.com/learn/paths/introduction-develop-finance-operations/) | Som en utvikler som arbeider med Finance and Operations-apper, er det viktig å ha en god forståelse av hovedarkitekturkomponentene i Dynamics 365-økosystemet og Finance and Operations-apper. Kunnskap om kjernekonsepter for utviklere, inkludert tekniske funksjoner, kildekode, testrammeverk og rapporteringsverktøy, vil støtte dine fremtidige tiltak ved bygging av utviklingsferdigheter som du kan bruke i Finance and Operations-apper. | Gratis, selvbetjent elektronisk læringsforløp | 7.75 timer |
+| [Bygge Finance and Operations-apper](https://docs.microsoft.com/learn/paths/build-finance-operations/) | Utvikling i Finance and Operations-apper krever en grunnleggende forståelse av oppgavene som kreves for å bygge nye elementer og tilpasse Finance and Operations-apper. Oppgavene omfatter forståelse av X ++-kode og Visual Studio, i tillegg til å kunne opprette og endre de grunnleggende elementene i systemet. | Gratis, selvbetjent elektronisk læringsforløp | 13 timer |
+| [Utvide Finance and Operations-apper](https://docs.microsoft.com/learn/paths/extending-finance-operations/) | Med utvidelser kan utviklere gjøre endringer i brukeropplevelsen i Finance and Operations-apper ved å implementere endringer i koden som ikke påvirker grunnkoden. Blant andre fordeler gjør utvidelser at utviklerne kan oppdatere Finance and Operations-aper for å holde seg til forretningsprosesser og nødvendige endringer. | Gratis, selvbetjent elektronisk læringsforløp | 2.5 timer |
+| [Koble til Finance and Operations-apper](https://docs.microsoft.com/learn/paths/connect-finance-operations/) | Integrering og muligheten til å få tilgang til dataene i Finance and Operations-apper er viktige funksjoner. Utviklere som har lært å bygge og utvide kode i Finance and Operations-apper, kan forbedre sin kunnskap om utvikling av dataintegrering og hvordan tilkobling til data kan ha positiv innvirkning på brukere. | Gratis, selvbetjent elektronisk læringsforløp | 5.75 timer |
+| [Overføre data og komme i gang med Finance and Operations-apper](https://docs.microsoft.com/learn/paths/migrate-data-go-live-finance-operations/) | Som en funksjonell konsulent må du kjenne til hvordan du kan klargjør kundens data for overføring, arbeide med databehandling og utføre bruk av testing av brukeraksept for å komme i gang med Finance and Operations-apper. | Gratis, selvbetjent elektronisk læringsforløp | 4 timer |
 | [Finance And Operations: Utvikling ALM (DYN766PAL)](https://community.dynamics.com/365/b/techtalks/posts/dynamics-365-finance-and-operations---development-alm-february-19-2020) | Dette tekniske foredraget diskuterer begreper for håndtering av applivssyklus, verktøy og de fremgangsmåtene vi anbefaler. Vi dekker hvordan Lifecycle Services, Visual Studio og Azure DevOps virker sammen for å aktivere forretningsprosessfokusert kontinuerlig levering av av løsningens kodegrunnlag, og vedlikehold av miljøene. | Gratis opptak av en webkonferanse | 52 minutter |
 | [Finance and Operations: Utvide Dynamics 365 for Finance and Operations med PowerApps (DYN558PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-extending-dynamics-365-with-powerapps-2-6-2019) | Forstå hvor enkelt det er å bruke Microsoft PowerApps og hvordan det kan integreres med Dynamics 365 for Finance and Operations for å forvandle firmaer digitalt og øke brukerproduktiviteten. | Gratis opptak av en webkonferanse | 43 minutter |
 | [Finance and Operations: Utvidelsesmulighet (DYN518PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-extensibility-10-26-18) | Vi vil gi en oversikt og en oppdatering av Microsofts utvidelsesplaner. Vi vil beskrive detaljert de forskjellige metodene for utvidelse av en løsning, se nærmere på utvidelsesfunksjonene for metadata og muligheten til å forbedre og utvide kode, inkludert via den kraftige kommandokjedefunksjonen. | Gratis opptak av en webkonferanse | 50 minutter |
@@ -58,8 +58,8 @@ Katalogen nedenfor er ordnet fra kjernekunnskap til bestemte områder, og fra de
 
 ## <a name="servicing"></a>Service<a name="servicing"></a>
 
-| Innhold  | beskrivelse  | Formater  | Lengde    |
-|-------------|-----------------|-------------|------------|
+| Innhold | beskrivelse | Formater | Lengde |
+|---------|-------------|--------|--------|
 | [Finance and Operations: Vedlikeholde, støtte og opprettholde produksjon (DYN651PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-servicing-supporting-and-maintaining-production-june-27-2019) | Teknisk foredrag om hvordan du effektivt kan støtte, opprettholde og vedlikeholde Dynamics 365 for Finance and Operations-produksjonsmiljøet ditt. | Gratis opptak av en webkonferanse | 53 minutter |
 | [Finance and Operations: Funksjonsbehandling (DYN641PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-microsoft-managed-continuous-updates-april-2-2019) | Teknisk foredrag om funksjonsbehandlingen. Det omfatter et arbeidsområde der du kan vise, aktivere, deaktivere og planlegge funksjoner som er levert i hver utgivelse. Nye funksjoner er deaktivert som standard. Du kan bruke arbeidsområdet til å aktivere dem og vise dokumentasjonen for dem. Delta på dette møtet for å se hva som leveres i 10.0.3 og våre planer for fremtidige utgivelser. | Gratis opptak av en webkonferanse | 47 minutter |
 | [Finance And Operations: Microsoft-administrerte kontinuerlige oppdateringer (DYN610PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-microsoft-managed-continuous-updates-april-2-2019) | Frekvensen for kontinuerlige oppdateringer for Finance and Operations har begynt! Bli med oss denne timen for å diskutere Microsoft-administrerte kontinuerlige oppdateringer. Brukeropplevelsen er allerede tilgjengelig i Lifecycle Services og kommende oppdateringer. | Gratis opptak av en webkonferanse | 61 minutter |
@@ -68,16 +68,17 @@ Katalogen nedenfor er ordnet fra kjernekunnskap til bestemte områder, og fra de
 
 ## <a name="migration-and-upgrade"></a>Overføring og oppgradering<a name="migration-and-upgrade"></a>
 
-| Innhold  | beskrivelse    | Formater  | Lengde    |
-|-------------|-----------------|-------------|------------|
+| Innhold | beskrivelse | Format | Lengde |
+|---------|-------------|--------|--------|
+| [Oppgradere Dynamics AX 2012 til Finance and Operations-apper](https://docs.microsoft.com/learn/paths/upgrade-ax-2012-finance-operations/) | Lær om de viktigste elementene og anbefalte fremgangsmåter for vellykket oppgradering av Dynamics AX 2012-løsningen til Finance and Operations-apper. Fra de første trinnene i prosessen med å oppdage forskjeller i nøkkelfaktorer, komme i gang med oppgraderingsprosessen og kode- og dataoppgraderingsverktøyene, til de beste måtene å utforme integreringene på, oppdatere og rapportere på, basert på de nyeste funksjonene. | Gratis, selvbetjent elektronisk læringsforløp | 7 timer |
 | [Finance and Operations: Oppgradere fra 7.x til 8+ (DYN519PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-upgrading-from-7-x-to-8-10-30-18) | Delta på vårt neste tekniske foredrag der vi beskriver prosessen for oppgradering fra 7.X til 8.X. Vi beskriver en rekke scenarier og trinn som kan utføres for oppdatering av kode og data. Vi beskriver også oppdage scenarioer for forespørsler om utvidelsesmuligheter og hvordan du registrerer dem der det er nødvendig. Del 1 av 2. | Gratis opptak av en webkonferanse | 61 minutter |
 | [Oppgradere AX2012 til Dynamics 365 for Operations (VIR817PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/ax2012-to-dynamics-365-for-operations-upgrade-april-20-2017) | Dette tekniske foredraget gir en oversikt over hvordan du oppgraderer kode og data fra Dynamics AX 2012 til Dynamics 365 for Operations. | Gratis opptak av en webkonferanse | 45 minutter |
 | [Overføringsverktøy for AX2009 til Dynamics 365 for Operations (VIR809PAL) ](https://community.dynamics.com/365/b/techtalks/posts/ax2009-to-dynamics-365-for-operations-migration-tools-march-2-2017) | Denne økten beskriver verktøy som er tilgjengelige for å hjelpe deg med overføring fra AX2009 til D365 for Operations. | Gratis opptak av en webkonferanse | 55 minutter |
 
 ## <a name="testing"></a>Tester<a name="testing"></a>
 
-| Innhold  | beskrivelse  | Formater  | Lengde    |
-|-------------|-----------------|-------------|------------|
+| Innhold | beskrivelse | Formater | Lengde |
+|---------|-------------|--------|--------|
 | [Finance and Operations: Bibliotek for aksepttest (DYN650PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-acceptance-test-library-june-20-2019) | Teknisk foredrag om hvordan du effektivt kan støtte, opprettholde og vedlikeholde Dynamics 365 for Finance and Operations-produksjonsmiljøet ditt. | Gratis opptak av en webkonferanse | 61 minutter |
 | [Finance and Operations: Regression Suite Automation Tool – Bakgrunn og oppsett (DYN646PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-regression-suite-automation-tool-background-amp-setup-may-28-2019) | Dette er den første av en todelt serie om Regression Suite Automation Testing (RSAT). I denne økten beskriver vi hvordan du holder tritt med kontinuerlige oppdateringer ved hjelp av automatisk testing via RSAT. Opplæring og anbefalinger om oppretting av oppgaveopptak og utføring av tester ved hjelp av RSAT, blir beskrevet, sammen med en trinnvis gjennomgang av installasjonen og oppsettet. | Gratis opptak av en webkonferanse | 70 minutter |
 | [Finance and Operations: Regression Suite Automation Tool – Demonstrasjon av testing av livssyklus (DYN647PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-regression-suite-automation-tool-testing-lifecycle-demo-may-29-2019) | Dette er den andre av en todelt serie om Regression Suite Automation Testing (RSAT). Denne økten dekker en demonstrasjon av hele syklusen for oppretting og lagring av oppgaveopptak innspillinger fra Finance and Operations i BPM-biblioteket i LCS, synkronisering av BPM-biblioteket for å opprette testtilfeller i Azure DevOps, gruppering av testtilfeller til testserier, og innlasting og utførelse av testserier i RSAT. | Gratis opptak av en webkonferanse | 70 minutter |
@@ -89,9 +90,8 @@ Katalogen nedenfor er ordnet fra kjernekunnskap til bestemte områder, og fra de
 
 ## <a name="exam"></a>Eksamen<a name="exam"></a>
 
-| Innhold | beskrivelse  | Formater  |
-|-------------|-----------------|-------------|
-|[Eksamen MB-500: Microsoft Dynamics 365: Finance and Operations-apper for utvikler](/learn/certifications/exams/mb-500) | Denne eksamenen måler din evne til å utføre følgende tekniske oppgaver: planlegge arkitektur og løsningsdesign, bruke utviklerverktøy, utforme og utvikle AOT-elementer, utvikle og teste kode, implementere rapportering, integrere og behandle dataløsninger og implementere sikkerhet og optimalisere ytelsen. | Eksamen: kostnaden varierer etter område |
-
+| Innhold | beskrivelse | Formater |
+|---------|-------------|--------|
+|[Eksamen MB-500: Microsoft Dynamics 365: Finance and Operations-apper for utvikler](https://docs.microsoft.com/learn/certifications/exams/mb-500) | Denne eksamenen måler din evne til å utføre følgende tekniske oppgaver: planlegge arkitektur og løsningsdesign, bruke utviklerverktøy, utforme og utvikle AOT-elementer, utvikle og teste kode, implementere rapportering, integrere og behandle dataløsninger og implementere sikkerhet og optimalisere ytelsen. | Eksamen: kostnaden varierer etter område |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

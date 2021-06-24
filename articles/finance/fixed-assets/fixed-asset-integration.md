@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dc069743c1b28133540eeab98ae6dd5242a5e887
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0e6be2aeb263c339f4e733b98ea4e01194973a9f
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826840"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189790"
 ---
 # <a name="fixed-assets-integration"></a>Integrering av anleggsmidler
 
@@ -28,8 +28,7 @@ ms.locfileid: "5826840"
 
 Anleggsmidler kan integreres med økonomi, lagerstyring, kunder og leverandører. Du kan også konfigurere Anleggsmidler slik at det integreres med bestillinger.
 
-<a name="general-ledger"></a>Økonomimodul
---------------
+## <a name="general-ledger"></a>Økonomimodul
 
 I Økonomimodul summeres vanligvis verdien for alle anleggsmidler i flere hovedkontoer som er nødvendige for finansrapportering. På **Anleggsmidler**-siden kan du imidlertid opprette mange anleggsmiddelposter. Disse oppføringene kan inneholde informasjon som anskaffelsespris, avskrivning og vurdering. Hver gang du posterer en transaksjon for et anleggsmiddel, oppdateres de riktige hovedkontoene. Hovedkontoene for anleggsmidler viser alltid den oppdaterte verdien for anleggsmidlene.
 

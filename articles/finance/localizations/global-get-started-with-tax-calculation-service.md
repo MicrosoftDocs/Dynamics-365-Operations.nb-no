@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 3f8aa791cee1926afe6be347331d47902a3b7304
-ms.sourcegitcommit: f4dc09601bceb5cdc88ee184ce7c8f369e3e6e86
+ms.openlocfilehash: e72b81d4a109db2dd8b4c6ca2ca0b030220e25f3
+ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "6060569"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6216725"
 ---
 # <a name="get-started-with-the-tax-calculation-preview"></a>Kom i gang med avgiftsberegning (forhåndsversjon)
 
@@ -58,7 +58,7 @@ Før du kan fullføre trinnene i dette emnet må følgende forutsetninger være 
 Trinnene i denne delen er ikke knyttet til en bestemt juridisk enhet. Du må bare fullføre denne fremgangsmåten én gang, og du kan fullføre den i en hvilken som helst juridisk enhet i RCS.
 
 1. Logg på [RCS](https://marketing.configure.global.dynamics.com/).
-2. I arbeidsområdet **Elektronisk rapportering** i Finance legger du til en ny konfigurasjonsleverandør. Bruk firmanavnet som navn på leverandøren. Hvis du ha mer informasjon, kan du se [Opprette konfigurasjonsleverandører og merke dem som aktive](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
+2. I arbeidsområdet **Elektronisk rapportering** legger du til en ny konfigurasjonsleverandør. Bruk firmanavnet som navn på leverandøren. Hvis du ha mer informasjon, kan du se [Opprette konfigurasjonsleverandører og merke dem som aktive](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
 3. Velg konfigurasjonsleverandøren du akkurat opprettet, og velg deretter **Angi som aktiv**.
 4. Velg **Microsoft**-konfigurasjonsleverandøren, og velg deretter **Repositorier**.
 5. Velg **Global** i **Type**-feltet.

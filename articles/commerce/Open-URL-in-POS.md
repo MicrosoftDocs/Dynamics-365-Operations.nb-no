@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-30
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 252b24919e4c22233ee8fe7e94c9bc6bbf60dacd
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 43f28d9b7acb05a83544b04f6786dfe91f2d9f18
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796468"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193209"
 ---
-# <a name="open-url-in-pos"></a>Åpne URL-adresse i POS
+# <a name="open-url-in-pos"></a>Åpne URL-adresse på salgssted
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet beskriver hvordan du kan konfigurere en knapp på salgsstedet for detaljhandel (POS) for å åpne en URL-adresse. Denne funksjonen krever ikke tilpasning av koden og kan konfigureres av en person i en ikke-utviklerrolle. 
+Dette emnet beskriver hvordan du kan konfigurere en knapp i POS i Dynamics 365 Commerce for å åpne en nettadresse. Denne funksjonen krever ikke tilpasning av koden og kan konfigureres av en person i en ikke-utviklerrolle. 
 
 Denne funksjonen tillater konfigurasjon av en knapp på salgsstedet ved hjelp av knappgruppedesigneren for å åpne en URL-adresse. Dette støttes for øyeblikket i følgende konfigurasjoner:
 
@@ -46,15 +46,15 @@ Denne konfigurasjonen definerer om du vil åpne URL-adressen i et nytt vindu ell
 
 Med denne funksjonen kan du også angi at ikke-URL-adresser skal åpne et opprinnelig program. Du kan for eksempel angi URL-protokoller, for eksempel MailTo, SIP, IM eller MSTEAMS, som kan behandles av respektive opprinnelige programmer på vertsenheten. For å aktivere dette må du konfigurere URL-adressen med **Åpne i nytt vindu**-alternativet valgt.
 
-- For Windows-datamaskiner kan du se [Eksportere eller importere standard programtilknytninger](https://docs.microsoft.com/windows-hardware/manufacture/desktop/export-or-import-default-application-associations) for å angi standard protokollytilknytninger hvis du setter opp datamaskinen ved å bruke Deployment Image Servicing and Management (DISM).
-- Hvis du bruker MDM, for eksempel Intune, til å administrere Windows-datamaskiner, kan du se [Policy for CSP - programstandarder](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationdefaults).
-- Hvis du er en utvikler som bygger et egendefinert webområde, kan du se [Starte standardappen for en URI](https://docs.microsoft.com/windows/uwp/launch-resume/launch-default-app).
+- For Windows-datamaskiner kan du se [Eksportere eller importere standard programtilknytninger](/windows-hardware/manufacture/desktop/export-or-import-default-application-associations) for å angi standard protokollytilknytninger hvis du setter opp datamaskinen ved å bruke Deployment Image Servicing and Management (DISM).
+- Hvis du bruker MDM, for eksempel Intune, til å administrere Windows-datamaskiner, kan du se [Policy for CSP - programstandarder](/windows/client-management/mdm/policy-csp-applicationdefaults).
+- Hvis du er en utvikler som bygger et egendefinert webområde, kan du se [Starte standardappen for en URI](/windows/uwp/launch-resume/launch-default-app).
 
 ## <a name="open-a-native-app-seamlessly"></a>Åpne i innebygd program sømløst
 
 Windows, iOS og Android tillater også åpning av programmer mer sømløst basert på approtokolltilknytning. Hvis ditt program ikke allerede er konfigurert for å håndtere åpning fra en webleser, må du kanskje få en utvikler til å konfigurere dette.
 
-- For Windows kan du se [Aktivere apper for nettsteder ved hjelp av URI-behandlingsprogrammer](https://docs.microsoft.com/windows/uwp/launch-resume/web-to-app-linking).
+- For Windows kan du se [Aktivere apper for nettsteder ved hjelp av URI-behandlingsprogrammer](/windows/uwp/launch-resume/web-to-app-linking).
 - For iOS kan du se [Universielle koblinger for utviklere](https://developer.apple.com/ios/universal-links/).
 - For Android kan du se [Behandle Android-appkoblinger](https://developer.android.com/training/app-links/).
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7d322d0a59c2d1fe7be98b97bf25c6db8dec2d6e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e57e97847c6aa7a775b0f2639dff93f1e3a9e7a2
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815362"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189379"
 ---
 # <a name="sales-tax-calculation-methods-in-the-origin-field"></a>Beregningsmåter av merverdiavgift i grunnlagsfeltet
 
@@ -52,8 +52,7 @@ Hvis nettobeløpet er 10,00, er AVGIFT 1 1,00 (10,00 x 10%) og AVGIFT 2 = 2,00 (
 | Bare én avgiftskode med opprinnelse = prosenten av bruttobeløpet kan brukes for en transaksjon. Hvis mer enn én eller slik avgiftskode bestemmes for en transaksjon, vises en feil om at merverdiavgift ikke kan beregnes. |
 
 
-<a name="percentage-of-sales-tax"></a>Prosent av merverdiavgift
------------------------
+## <a name="percentage-of-sales-tax"></a>Prosent av merverdiavgift
 
 Når du velger prosent av merverdiavgift i grunnlagsfeltet, beregnes merverdiavgift som en prosent av merverdiavgiften som er valgt i feltet Merverdiavgift på merverdiavgift. Merverdiavgiften som er valgt i feltet Merverdiavgift på merverdiavgift, beregnes først. Den andre merverdiavgiften beregnes deretter basert på det første mva-beløpet.
 ### <a name="example"></a>Eksempel
@@ -119,8 +118,7 @@ Dokumentet / journalen er satt til Beløp inkludert merverdiavgift = Nei Transak
 
 
 
-<a name="additional-resources"></a>Tilleggsressurser
---------
+## <a name="additional-resources"></a>Tilleggsressurser
 
 [Mva-satser basert på feltene grensegrunnlag og beregningsmetoder](marginal-base-field.md)
 

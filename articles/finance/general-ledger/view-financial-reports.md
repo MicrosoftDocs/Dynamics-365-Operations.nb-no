@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2f729b1703a7703a8a604b007bd1c8d9e1f604a6
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 723e0fa52cd7a9377671795e039f5948ce9239f3
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897290"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187800"
 ---
 # <a name="view-financial-reports"></a>Vise finansrapporter
 
@@ -28,8 +28,7 @@ ms.locfileid: "5897290"
 
 Dette emnet beskriver hvordan du kan vise og utforske finansrapporter. Den inneholder informasjon om de forskjellige alternativene du kan bruke på finansrapporter for å endre utseendet og dataene de inneholder.
 
-<a name="financial-reporting-overview"></a>Oversikt over finansrapportering
-----------------------------
+## <a name="financial-reporting-overview"></a>Oversikt over finansrapportering
 
 ## <a name="open-a-financial-report"></a>Åpne en finansrapport
 Hvis du vil åpne en rapport, velger du rapportnavnet. Første gang en rapport åpnes, genereres den automatisk for forrige måned. Hvis du for eksempel åpner en rapport for første gang i august 2015, genereres rapporten for 31. juli 2015. Når en rapport åpnes, kan du begynne å utforske den ved å gå nedover i bestemte deler av data og endre rapportalternativer.
@@ -76,8 +75,7 @@ Når du har fullført angivelse av utskriftsalternativene, klikker du **Skriv ut
 ## <a name="export-a-financial-report"></a>Eksportere en finansrapport
 Klikk **Eksport** i handlingsruten for å eksportere en finansrapport. Rapporten eksporteres til Microsoft Excel, og nettleseren ber deg om å åpne eller lagre den eksporterte filen. Eksportinnstillingene som er definert i rapportutformingen, brukes på den eksporterte rapporten.    
 
-<a name="additional-resources"></a>Tilleggsressurser
---------
+## <a name="additional-resources"></a>Tilleggsressurser
 
 [Finansrapportering](../../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md)
 

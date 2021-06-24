@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 56069b1d2cf72eb29737b0aa7d066c998c0c423c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: dbcdc852bf42038761b4ea19fd7fe7cbfc45f713
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5833647"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187440"
 ---
 # <a name="make-manual-adjustments-to-the-baseline-forecast"></a>Foreta manuelle justeringer i basislinjeprognosen
 
@@ -73,8 +73,7 @@ Siden **Detaljer om behovsprognose** viser følgende informasjon i grafisk forma
 
 Du kan også gjøre manuelle justeringer i prognosen på siden **Detaljer om behovsprognose** ved å endre verdiene i **Prognose**-raden i delen **Prognose**.
 
-<a name="additional-resources"></a>Tilleggsressurser
---------
+## <a name="additional-resources"></a>Tilleggsressurser
 
 [Overvåke prognosenøyaktighet](monitor-forecast-accuracy.md)
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5e08832d39f0428590780d47fd6b686048889cd
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1ce37a85477d65b9592a32dcbe430d09f9dde62b
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835226"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189475"
 ---
 # <a name="set-up-collections"></a>Definere innkreving
 
@@ -40,8 +40,7 @@ Denne artikkelen forklarer hvordan du konfigurerer innkrevingsfunksjonene. Du m�
 
 Disse punktene diskuteres mer detaljert gjennom resten av dette emnet. 
 
-<a name="set-up-aging-period-definitions"></a>Definer definisjoner av aldersfordelingsperiode
--------------------------------
+## <a name="set-up-aging-period-definitions"></a>Definer definisjoner av aldersfordelingsperiode
 
 Angi definisjon av aldersfordelingsperiode. En definisjon på aldersfordelingsperioden definerer kolonnene som vises på listesidene **Aldersfordelte saldoer**, **Innkrevingsaktiviteter** og **Innkrevingssaker**. Den definerer også periodene som vises på siden **Innkrevinger**. Hvis det er definert en kundepulje, brukes aldersfordelingsperioden for puljen. Hvis det ikke er definert puljer, brukes standarddefinisjonen for aldersfordelingsperiode som er angitt på siden **Kundeparametere**. Hvis det ikke er angitt en definisjon av standard aldersfordelingsperiode, brukes den første definisjonen av aldersfordelingsperiode som er angitt på siden **Definisjoner av aldersfordelingsperiode**.
 

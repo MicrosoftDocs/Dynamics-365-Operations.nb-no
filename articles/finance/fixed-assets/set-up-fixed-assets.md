@@ -1,8 +1,8 @@
 ---
 title: Definere anleggsmidler
 description: Dette emnet gir en oversikt over oppsettet av anleggsmiddelmodulen.
-author: ShylaThompson
-ms.date: 01/12/2018
+author: moaamer
+ms.date: 06/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,24 +15,20 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ff025984307f979ce98947f2225971041ebbdbae
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f624ddc2e7b8f59a2ba002d757ce68ee222a7223
+ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818542"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6216592"
 ---
 # <a name="set-up-fixed-assets"></a>Definere anleggsmidler
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet gir en oversikt over oppsettet av **Anleggsmiddel**-modulen.
+Dette emnet gir en oversikt over oppsettet av **Anleggsmiddel**-modulen. 
 
-## <a name="overview"></a>Oversikt
-
-Parametere kontrollerer den generelle virkemåten i anleggsmidler.
-
-Med anleggsmiddelgrupper kan du gruppere aktiva og angi standardattributter for hvert anleggsmiddel som er tilordnet til en gruppe. Tablåer er tilordnet til anleggsmiddelgrupper. Tablåer sporer den økonomiske verdien av et anleggsmiddel over tid med avskrivningskonfigurasjonen som er definert i avskrivningsprofilen.
+Parametere kontrollerer den generelle virkemåten i anleggsmidler. Med anleggsmiddelgrupper kan du gruppere aktiva og angi standardattributter for hvert anleggsmiddel som er tilordnet til en gruppe. Tablåer er tilordnet til anleggsmiddelgrupper. Tablåer sporer den økonomiske verdien av et anleggsmiddel over tid med avskrivningskonfigurasjonen som er definert i avskrivningsprofilen.
 
 Anleggsmidler blir tilordnet til en gruppe når de opprettes. Som standard tilordnes deretter tablåer som er tilordnet anleggsmiddelgruppen, til anleggsmidlet. Tablåer som er konfigurert til å postere til økonomimodulen, er tilknyttet en posteringsprofil. Finanskontoer er definert for hvert tablå i posteringsprofilen, og brukes ved postering av anleggsmiddeltransaksjoner.
 
@@ -49,6 +45,8 @@ Etter at du har definert avskrivningsprofiler, må du opprette de nødvendige ta
 En primær avskrivningsprofil er tilordnet til hvert tablå. Tablåer har også en alternativ avskrivningsprofil, hvis denne typen profil brukes. Hvis du vil inkludere anleggsmiddeltablået i avskrivninger automatisk, må du aktivere alternativet **Beregner avskrivning**. Hvis dette alternativet ikke er aktivert for et anleggsmiddel, hopper avskrivningsforslaget over anleggsmidlet.
 
 Du kan også sette opp avledede tablåer. De angitte avledede transaksjonene blir postert mot de avledede tablåene som en nøyaktig kopi av den primære transaksjonen. Derfor defineres avledede transaksjoner vanligvis for anskaffelse og salg, ikke for avskrivningstransaksjoner. Hvis du vil ha mer informasjon, kan du se [Definere verdimodeller](tasks/set-up-value-models.md).
+
+Du kan bruke et alternativ på siden **Parametere for anleggsmidler** til å aktivere eller deaktivere låsefunksjonaliteten. Du kan aktivere denne funksjonen i **Arbeidsområde for funksjonsbehandling**.
 
 ## <a name="fixed-asset-posting-profiles"></a>Posteringsprofiler for anleggsmidler
 
@@ -73,6 +71,8 @@ Det siste trinnet er å oppdatere parameterne for anleggsmidler.
 Feltet **Kapitaliseringsterskel** bestemmer hvilke anleggsmidler som avskrives. Hvis en innkjøpslinje er merket som et anleggsmiddel, men den ikke oppfyller den angitte kapitaliseringsterskelen, opprettes og oppdateres likevel et anleggsmiddel, men alternativet **Beregn avskrivning** er satt til **Ingen**. Anleggsmidlet avskrives derfor ikke automatisk som en del av avskrivningsforslagene.
 
 Ett viktig alternativ heter **Opprett automatisk avskrivningsjusteringsbeløp med avhending**. Når du setter dette alternativet til **Ja**, justeres anleggsmiddelavskrivningen automatisk, basert på innstillingene for avskrivning ved avhending av anleggsmidler. Et annet alternativ lar deg trekke fra kontantrabatt fra anskaffelsesbeløpet når du kjøper anleggsmidler ved hjelp av en leverandørfaktura.
+
+Parameteren **Lås aktivatablåer i en avskrivningsjournal** lar deg låse aktivatablåer i en avskrivningsjournal. Når avskrivningstransaksjoner posteres, kontrollerer systemet at det samme aktivatablået ikke er lagt til i flere enn én avskrivningsjournal. Hvis det er det, låses aktivatablået, og posteringen stopper. Hvis en aktivatablå-ID er i en låst journal, låses den automatisk opp når posteringen er fullført for den originale journalen. Du kan også låse opp journalen manuelt. 
 
 I hurtigfanen **Bestillinger** kan du konfigurere hvordan du vil at anleggsmidlene skal opprettes som en del av innkjøpsprosessen. Det første alternativet heter **Tillat anleggsmiddelanskaffelse fra innkjøp**. Hvis du setter dette alternativet til **Ja**, oppstår anleggsmiddelanskaffelsen når fakturaen posteres. Hvis du setter dette alternativet til **Nei**, kan du fremdeles plassere et anleggsmiddel på en bestilling og faktura, men anskaffelsen posteres ikke. Postering må gjøres fra anleggsmiddeljournalen som et separat trinn. Med **Opprett anleggsmiddel under postering av mottaksseddel eller faktura**-alternativet kan du opprette nye aktiva "på direkten" under posteringen. Derfor trenger ikke anleggsmiddelet defineres som et anleggsmiddel før transaksjonen. Det siste alternativet, **Søk etter opprettelse av anleggsmidler under linjeregistrering**, gjelder bare for innkjøpsrekvisisjoner.
 

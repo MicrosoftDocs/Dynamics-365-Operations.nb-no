@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 09a420fcf5bb122b7ffa0c6ef8566efad86db4f6
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 16b05bfe2a8deec365bdccf56ddbb375e9c4becd
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5817875"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190022"
 ---
 # <a name="operations-scheduling"></a>Grovplanlegging
 
@@ -74,8 +74,7 @@ Når du kjører grovplanlegging, kan du avbryte bestemte deler av ruten. Disse d
 ## <a name="finite-materials"></a>Begrensede materialer
 Hvis du arbeider med begrenset materiale, avhenger planlegging også av tilgjengeligheten av materialene som kreves for produksjonen. Hvis det ikke er nok tilgjengelige komponenter for produksjonen, kan produksjonen forsinkes. Du kan basere planleggingen på bruk av materialer ved å angi materialene som må være tilgjengelige for produksjon. Når du optimaliserer både ressurskapasitet og tilgjengeligheten av materialer, beregnes produksjonen i henhold til disse begrensningene. En produksjonsordre kan ikke planlegges å starte før kapasitet og materialer er tilgjengelige samtidig og i nødvendige mengder.
 
-<a name="additional-resources"></a>Tilleggsressurser
---------
+## <a name="additional-resources"></a>Tilleggsressurser
 
 [Alternativer for grovplanlegging](operation-scheduling-options.md)
 

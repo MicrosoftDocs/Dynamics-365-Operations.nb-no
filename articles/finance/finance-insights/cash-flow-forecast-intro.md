@@ -2,7 +2,7 @@
 title: Kontantstrømprognose (forhåndsversjon)
 description: Dette emnet beskriver funksjonen for kontantstrømprognoser.
 author: ShivamPandey-msft
-ms.date: 05/19/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-19
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 6e4713aa4662714d1b2a3eeb62adce8608907054
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 64935db3b50e7598f2076ecbec72aba020d4f908
+ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811417"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6186546"
 ---
 # <a name="cash-flow-forecast-preview"></a>Kontantstrømprognose (forhåndsversjon)
 
@@ -62,9 +62,5 @@ Funksjonaliteten for kontantstrømprognose i Dynamics 365 Finance gjør det enkl
 En ny fane på siden **Oppsett for kontantstrømprognose** lar deg styre hvilke finansdimensjoner du vil bruke i arbeidsområdet **Kontantstrømprognose**. Denne fanen vises bare når funksjonen for kontantstrømprognose er aktivert. 
 
 I fanen **Dimensjoner** velger du dimensjoner som skal brukes til filtrering, fra listen over dimensjoner, og bruker piltastene til å flytte dem til høyre kolonne. Du kan bare velge to dimensjoner til filtrering av data for kontantstrømprognose. 
-
-#### <a name="privacy-notice"></a>Personvernerklæring
-Forhåndsversjoner (1) kan ha redusert personvern og færre sikkerhetstiltak enn Dynamics 365 Finance and Operations-tjenesten, (2) er ikke inkludert i serviceavtalen (SLA) for denne tjenesten, (3) må ikke brukes til å behandle personlige data eller andre data som er underlagt juridiske eller forskriftsmessige krav, og (4) har begrenset støtte.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

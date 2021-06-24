@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4d2f1820f79798488c73f20f9c688fa877af4f1b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4960e8418de473d20c9a1948ca606ae76ad1ac19
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816538"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189722"
 ---
 # <a name="demand-forecasting-setup"></a>Oppsett av behovsprognose
 
@@ -88,8 +88,7 @@ I fanen **Tilordningsnøkler** kan du angi parameterne **Prognosealgoritmeparame
 - **Tips om sesongavhengighet**: For sesongbaserte data angir du et tips til prognosemodellen for å forbedre prognosenøyaktigheten. Format: heltall, som representerer antallet perioder som et behovsmønster gjentar seg selv etter. Fyll for eksempel inn 6 for data som gjentar seg selv hver sjette måned.
 - **Prosentandel testsettstørrelse**: Prosentandel historiske data som skal brukes som et testsett for beregning av prognosenøyaktighet. 
 
-<a name="additional-resources"></a>Tilleggsressurser
---------
+## <a name="additional-resources"></a>Tilleggsressurser
 
 [Oversikt over behovsprognose](introduction-demand-forecasting.md)
 

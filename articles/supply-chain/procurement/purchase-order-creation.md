@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4b19c01afa162cce309443c9270ee1b39aeb0328
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: d09b6f693f3396da181a0f47051b7c961aa55e03
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909162"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188251"
 ---
 # <a name="create-purchase-orders"></a>Opprette bestillinger
 
@@ -80,8 +80,7 @@ Bestillinger kan konfigureres til å kreve at budsjettmidler fordeles til ordren
 
 Det kan hende du må forsinke fullføringen av en bestilling. Du vil for eksempel ha mer informasjon om produkter eller tjenester, eller det kan hende du må få godkjenning av forbruket. Det er flere måter å holde tilbake en ordre. Du kan for eksempel vente med å bekrefte ordren. Hvis en arbeidsflyt for endringsadministrasjon brukes, sender du ikke ordren til godkjenning. Hvis du må blokkere alle ordrer for en bestemt leverandør, kan du også merke leverandør som **På vent** for behandling på leverandørstandarden. Det finnes også situasjoner som kan hindre at ordren blir behandlet. Behandling kan for eksempel hindres hvis kredittgrenser er overskredet, eller hvis nødvendige budsjettmidler er ikke tilgjengelige.
 
-<a name="additional-resources"></a>Tilleggsressurser
---------
+## <a name="additional-resources"></a>Tilleggsressurser
 
 [Oversikt over bestilling](purchase-order-overview.md)
 

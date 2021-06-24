@@ -2,7 +2,7 @@
 title: Likviditetsbeholdning (forhåndsversjon)
 description: Dette emnet beskriver hvordan funksjonen Kontantstrømprognose forutsier en organisasjons likviditetsbeholdning for bestemte tider. Det beskriver også alternativene som er tilgjengelige for å vise prognoser for forskjellige perioder.
 author: ShivamPandey-msft
-ms.date: 05/26/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: cf9d3fd905a90a2937bfac97c8e44ea13be4f42e
-ms.sourcegitcommit: 16376a301a0f121f384d77f9976638f701f8e88e
+ms.openlocfilehash: b3b32bac436dc0be7ae4c072f4e560ad6d8b6d81
+ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6123396"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6186498"
 ---
 # <a name="cash-position-preview"></a>Likviditetsbeholdning (forhåndsversjon)
 
@@ -48,6 +48,5 @@ Hvis du vil lagre og redigere likviditetsbeholdningen, oppretter du et øyeblikk
 
 #### <a name="privacy-notice"></a>Personvernerklæring
 Forhåndsversjoner (1) kan ha redusert personvern og færre sikkerhetstiltak enn Dynamics 365 Finance and Operations-tjenesten, (2) er ikke inkludert i serviceavtalen (SLA) for denne tjenesten, (3) må ikke brukes til å behandle personlige data eller andre data som er underlagt juridiske eller forskriftsmessige krav, og (4) har begrenset støtte.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 11528560ecabb848f2703d11c0a705b2a25d7614
-ms.sourcegitcommit: 180548e3c10459776cf199989d3753e0c1555912
+ms.openlocfilehash: f6a2bf4b15a067fd98059ecc41dfd62e4a91862e
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6112627"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193572"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Fjernede eller avskrevne funksjoner i tidligere versjoner
 
@@ -92,7 +92,7 @@ Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekni
 | **Erstattet med en annen funksjon?**   | Nei |
 | **Berørte produktområder**         | Italiensk lokalisering |
 | **Distribusjonsalternativ**              | Alle |
-| **Status**                         | Utgått: Innen 1. oktober 2020 planlegger vi å ikke lenger støtte **Svartelisterapport (IT) – funksjonsreferanse IT-00001**. |
+| **Status**                         | Avskrevet: Vi planlegger å slutte å støtte denne rapporten innen 1. oktober 2020. |
 
 ### <a name="domestic-tax-report--feature-reference-it-00003"></a>Lokal avgiftsrapport – funksjonsreferanse IT-00003
 
@@ -365,6 +365,16 @@ Funksjon for å opprette maler for nye registre for fortjenesteavgift. Denne fun
 | **Distribusjonsalternativ**              | Alle |
 | **Status**                         | Fjernet fra og med Finance and Operations 8.1 med Platform update 20. |
 
+### <a name="payroll-and-human-resources-for-russia"></a>Lønn og personale for Russland
+Landsspesifikk modul for Russland for behandling av informasjon om stabsadministrasjon, timeregistreringsdetaljer for ansatte, lønnsregnskap og oppretting av lønnsoppgaver. 
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Lønn er ikke inkludert i det globale strategiske fokuset i Dynamics 365-porteføljen. Partnere og ISV-er står best stilt til å tilby lønnsfunksjonalitet som samsvarer med lokale forskrifter og skatteoppdateringer.|
+| **Erstattet med en annen funksjon?**   | Ingen|
+| **Berørte produktområder**         | Russisk administrasjon av lønn og personale |
+| **Distribusjonsalternativ**              | Alle |
+| **Status**                         | Avskrevet: Måltidsrammen for funksjonaliteten som skal fjernes, er en av de fremtidige oppdateringene for versjon 10.0. |
 
 ## <a name="finance-and-operations-80-with-platform-update-15"></a>Finance and Operations 8.0 med Platform update 15
 Ingen funksjoner er fjernet eller avskrevet med denne versjonen. Plattformoppdatering 15 er kumulativ og inneholder nye eller endrede funksjoner fra plattformoppdatering 13, plattformoppdatering 14 og plattformoppdatering 15.

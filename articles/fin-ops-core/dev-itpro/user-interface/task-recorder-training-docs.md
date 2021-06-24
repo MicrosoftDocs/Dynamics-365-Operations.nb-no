@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b0be27fc759c525dcc1ffe4f2717b2e2378c52a5
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b07da82086696409b128d76d8845c61b241a34b0
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744169"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188081"
 ---
 # <a name="create-documentation-or-training-with-task-recorder"></a>Lage dokumentasjon eller opplæring med Oppgaveopptaker
 
@@ -31,8 +31,7 @@ Dette emnet forklarer hva Oppgaveopptaker og oppgaveveiledninger er, hvordan du 
 > [!IMPORTANT]
 > Du kan registrere dine egne oppgaveveiledninger for Dynamics 365 Human Resources, men du kan ikke lagre dem i et BPM-bibliotek (forretningsprosessmodellerer) eller åpne dem fra Hjelp-ruten nå. Du kan lagre dem lokalt eller på en nettverksplassering og deretter åpne og spille dem av ved hjelp av Oppgaveopptaker. 
 
-<a name="learn-about-task-recorder"></a>Finn ut mer om oppgaveopptak
--------------------------
+## <a name="learn-about-task-recorder"></a>Finn ut mer om oppgaveopptak
 
 Oppgaveopptak er et verktøy du kan bruke til å registrere handlingene du utfører i brukergrensesnittet for produktet. Når du bruker oppgaveopptakeren, blir alt du gjør i brukergrensesnittet som kjøres mot serveren, for eksempel tilføying av verdier, endring av innstillinger og fjerning av verdier, tatt opp. Samlet kalles trinnene som du registrerer en *oppgaveregistrering*. Oppgaveopptak kan brukes på mange måter:
 
@@ -111,8 +110,7 @@ Du kan laste ned og redigere oppgaveopptak fra Microsoft for å bruke dem i din 
 
 
 
-<a name="additional-resources"></a>Tilleggsressurser
---------
+## <a name="additional-resources"></a>Tilleggsressurser
 
 [Hjelpesystem](../../fin-ops/get-started/help-overview.md)
 

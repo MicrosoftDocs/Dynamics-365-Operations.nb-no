@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 02122d9145552952412c239a7f541e6a727f061e
-ms.sourcegitcommit: fd15b02fc9caa1c05e56abdc276a7f4b23b0d8f3
+ms.openlocfilehash: 9ae13ce4038346cd5b101b5c40fe3b7c5e617fbf
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "5960055"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187946"
 ---
 # <a name="budgeting-overview"></a>Oversikt over budsjettering
 
@@ -28,8 +28,7 @@ ms.locfileid: "5960055"
 
 Nesten alle selskap som bruker finansfunksjonaliteten i Microsoft Dynamics 365 Finance, må være i stand til å opprette rapporter for budsjett i forhold til faktisk. Denne artikkelen forklarer minimumskonfigurasjonen som er nødvendig for å opprette budsjetter i Finance and Operations eller laste dem inn fra et tredjepartsprogram.
 
-<a name="overview"></a>Oversikt
---------
+## <a name="overview"></a>Oversikt
 
 Det godkjente budsjettet for en juridisk enhet vedlikeholdes i et dokument som kalles en *budsjettregisteroppføring*. Linjene i et dokument for budsjettregisteroppføring er kjent som *budsjettkonto*-oppføringer, og inneholder informasjon om finansdimensjoner, datoer og beløpene for det godkjente budsjettet. Budsjettregisteroppføringsdokumentet er integrert med grunnleggende finansrapporter og forespørselssider der faktiske finansbeløp sammenlignes med budsjetterte beløp. 
 

@@ -2,7 +2,7 @@
 title: Aktivere budsjettforslag (forhåndsversjon)
 description: Dette emnet forklarer hvordan du aktiverer funksjonen for budsjettforslag i Finance Insights.
 author: ShivamPandey-msft
-ms.date: 07/24/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 7e90a1a2f2a8e7808f03ce9a6ee58c027bd48d8d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 948a3e051e5964c5c773cefd90c8587cf833a450
+ms.sourcegitcommit: 655b0e16c7aef6182cd58bc816b901470e1bb2ce
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5818710"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "6222540"
 ---
 # <a name="enable-budget-proposals-preview"></a>Aktivere budsjettforslag (forhåndsversjon)
 
@@ -34,7 +34,7 @@ Dette emnet forklarer hvordan du aktiverer funksjonen for budsjettforslag i Fina
     `INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('BudgetIntelligentBudgetRegisterProposalFeature', 1)`
 
     > [!NOTE]
-    > Hvis distribusjonen av Microsoft Dynamics 365 Finance er en Service Fabric-distribusjon, kan du hoppe over dette trinnet. Finance Insights-teamet skal allerede ha aktivert testversjonen for deg. Hvis du ikke ser funksjonen i arbeidsområdet **Funksjonsbehandling** eller får problemer når du prøver å aktivere den, kan du sende e-post til [teamet for forhåndsversjon av appen Finance Insights](mailto:fiap@microsoft.com).
+    > Hopp over dette trinnet hvis du bruker versjon 10.0.20 eller nyere, eller hvis du bruker en Service Fabric-distribusjon. Finance Insights-teamet skal allerede ha aktivert testversjonen for deg. Hvis du ikke ser funksjonen i arbeidsområdet **Funksjonsbehandling** eller får problemer når du prøver å aktivere den, kontakter du <fiap@microsoft.com>.
 
 2. Åpne arbeidsområdet **Funksjonsbehandling**, og følg denne fremgangsmåten:
 
@@ -42,9 +42,5 @@ Dette emnet forklarer hvordan du aktiverer funksjonen for budsjettforslag i Fina
     2. Søk etter **Budsjettforslag**, og aktiver denne funksjonen.
 
 3. Gå til **Budsjettering \> Oppsett \> Grunnleggende budsjettering \> Budsjettforslag (forhåndsversjon)**, og velg **Aktiver funksjon**.
-
-#### <a name="privacy-notice"></a>Personvernerklæring
-Forhåndsversjoner (1) kan ha redusert personvern og færre sikkerhetstiltak enn Dynamics 365 Finance and Operations-tjenesten, (2) er ikke inkludert i serviceavtalen (SLA) for denne tjenesten, (3) må ikke brukes til å behandle personlige data eller andre data som er underlagt juridiske eller forskriftsmessige krav, og (4) har begrenset støtte.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

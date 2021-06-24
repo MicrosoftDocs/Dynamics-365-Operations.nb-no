@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 12497e4b6dde44cc7f3701cf6e00c90f109ff16c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5dcc562f46884cc5bf82611db9ed35436791045b
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825380"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188179"
 ---
 # <a name="purchase-requisition-workflow"></a>Arbeidsflyten for innkjøpsrekvisisjon
 
@@ -105,8 +105,7 @@ Du kan definere utgiftskontrollører på siden **Kontrollører av innkjøpsrekvi
 
 Hvis du vil bruke en av utgiftskontrollørene som du definerer i en arbeidsflyt, må du angi alternativet **Type deltaker** til **Utgiftsdeltakere** i **Tildeling**-egenskapene for det aktuelle arbeidsflytelementet.
 
-<a name="additional-resources"></a>Tilleggsressurser
---------
+## <a name="additional-resources"></a>Tilleggsressurser
 
 [Opprette en rekvisisjon for forbruk](tasks/create-requisition-consumption.md)
 

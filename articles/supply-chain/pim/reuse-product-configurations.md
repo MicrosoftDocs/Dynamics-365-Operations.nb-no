@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8a3aca07388a440ce5168fa4106d90d931f7f194
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fb4c997e8cf8b2456ffe12a552577902da171cc1
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812793"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189850"
 ---
 # <a name="reuse-product-configurations"></a>Gjenbruk av produktkonfigurasjoner
 
@@ -29,8 +29,7 @@ ms.locfileid: "5812793"
 
 Du kan angi at du vil bruke en eksisterende konfigurasjon for et produkt på nytt automatisk. Deretter, når en bruker har fullført en konfigurasjonsøkt, kontrollerer systemet om det allerede finnes en konfigurasjon som tilsvarer brukerens valg. Hvis en tilsvarende konfigurasjon blir funnet, brukes konfigurasjons-IDen, den tilsvarende stykklisten og ruten på nytt.
 
-<a name="requirements-for-reusing-configurations"></a>Krav for gjenbruk av konfigurasjoner
----------------------------------------
+## <a name="requirements-for-reusing-configurations"></a>Krav for gjenbruk av konfigurasjoner
 
 Hvis du vil muliggjøre gjenbruk av konfigurasjoner, må du angi følgende informasjon for komponentene og attributtene på siden **Detaljer om produktkonfigurasjonsmodell**:
 

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 2235545760899c0d945f08b5419154dfdbe4dffc
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1137ee7938b378e5212e355580d005cd49b31dbb
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815770"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189051"
 ---
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Policy for opprullet kost og beregning av administrasjonskostnader 
 
@@ -149,8 +149,7 @@ Regler for kostnadsfordeling kan defineres som følger.
 | CC001                                | Sum         | **Personaletjenester**        |
 | CC002                                | Sum         | **Finanstjenester** |
 
-<a name="brhow-cost-flows-between-cost-centers"></a><br>Hvordan kostnad flyter mellom kostsentre 
----------------------------------------------------
+## <a name="brhow-cost-flows-between-cost-centers"></a><br>Hvordan kostnad flyter mellom kostsentre 
 
 Hvis du vil vite hvordan kostnad flyter mellom kostsentrene i organisasjonen, kan du opprette kostnadselementer av typen **Sekundær** for hvert kostsenter. Disse kostnadselementene brukes deretter til å overføre saldoer mellom kostsentrene under beregningen av indirekte kostnader.
 

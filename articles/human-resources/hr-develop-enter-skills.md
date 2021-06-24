@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: b24d37292a2e9749fb2fde06b9f03fcd13db0bbe
-ms.sourcegitcommit: 48528233e0f02dbd47e96e030254ef65f2bb899e
+ms.openlocfilehash: 5a65f1884ea87bbf2519cc94e4c52a40ac1a91bd
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "6076608"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193983"
 ---
 # <a name="enter-skills"></a>Angi ferdigheter
 
@@ -77,7 +77,7 @@ Hvis du vil legge inn kompetanse uten å kreve godkjenning, må du opprette en a
 
 15. Velg **Lukk**, velg **Arbeidsflyt** i opprettelsesarbeidsflyten, og velg deretter **Lagre og lukk**.
 
-Hvis du vil ha mer informasjon om hvordan du oppretter arbeidsflyter, kan du se [Oversikt over arbeidsflytsystem](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/overview-workflow-system?toc=/dynamics365/human-resources/toc.json).
+Hvis du vil ha mer informasjon om hvordan du oppretter arbeidsflyter, kan du se [Oversikt over arbeidsflytsystem](../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/human-resources/toc.json).
 
 ## <a name="enter-skills-for-a-worker"></a>Angi kompetanse for en arbeider
 

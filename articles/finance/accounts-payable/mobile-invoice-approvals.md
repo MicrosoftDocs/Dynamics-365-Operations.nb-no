@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9e6138ccd92019f52afab0d8ed4b8cf64d66ff24
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 78ab17952801a1d77f321e212bb61e9b45d93216
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897702"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189208"
 ---
 # <a name="mobile-invoice-approvals"></a>Mobile fakturagodkjenninger
 
@@ -27,8 +27,7 @@ ms.locfileid: "5897702"
 
 Mobilfunksjoner lar forretningsbrukere utforme mobilopplevelser. For avanserte scenarier lar plattformen også utviklere utvide egenskapene som de ønsker. Den mest effektive måten å lære noen av de nye konseptene på mobil er å gå gjennom prosessen med å utforme et par scenarier. Dette emnet er ment å gi en praktisk tilnærming til utforming av mobile scenarier ved å ta godkjenning av leverandørfaktura for mobil som et brukstilfelle. Dette emnet hjelper deg med å utforme andre variasjoner av scenarier, og kan også brukes til andre scenarier som ikke er relatert til leverandørfakturaer.
 
-<a name="prerequisites"></a>Forutsetninger
--------------
+## <a name="prerequisites"></a>Forutsetninger
 
 | Forutsetning                                                                                            | beskrivelse                                                                                                                                                          |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f6223cce4a960d3fa3db1f3a17b324201085ea04
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1e22089220edfff3fb53b2101b39f5352817db2a
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822233"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188027"
 ---
 # <a name="budget-planning"></a>Budsjettplanlegging
 
@@ -34,13 +34,12 @@ Formålet med denne øvelsen er å gi en veiledet visning av Microsoft Dynamics 
 - Bruke tildelinger til å justere budsjettplandokumentdata
 - Redigere budsjettplandokumentdata i Excel 
 
-<a name="prerequisites"></a>Forutsetninger 
-------------------
+## <a name="prerequisites"></a>Forutsetninger 
 
 I denne opplæringen må du ha tilgang til Microsoft Dynamics 365 Finance-miljøet med Contoso-demonstrasjonsdata og være klargjort som administrator på forekomsten. Ikke bruk nettleseren i privat modus i denne laben. Logg om nødvendig av eventuelle andre kontoer i nettleseren, og logg på med administratorlegitimasjon. Når du logger på, **MÅ** du merke av for La meg være pålogget. Dermed opprettes det en fast informasjonskapsel som Excel-appen trenger. Hvis du logger på programmet ved å bruke en annen nettleser enn IE, blir du bedt om å logge på i Excel-appen. Når du klikker Logg på i Excel-appen, åpnes et popup-vindu for IE, og når du logger på, **MÅ** du merke av for La meg være pålogget. Hvis du klikker Logg på i Excel-programmet og ingenting ser ut til å skje, må du tømme hurtigbufferen for informasjonskapsler i IE.
 
 ## <a name="scenario-overview"></a>**Oversikt over scenariet**
-Julie jobber som regnskapssjef i Contoso Entertainment Systems i Tyskland (DEMF). Når FY2016 nærmer seg, må hun arbeide med å sette opp firmaets budsjett for kommende år. Budsjettforberedelsen ser slik ut:
+Julia jobber som regnskapssjef i Contoso Entertainment Systems i Tyskland (DEMF). Når FY2016 nærmer seg, må hun arbeide med å sette opp firmaets budsjett for kommende år. Budsjettforberedelsen ser slik ut:
 
 1.  Julie bruker fjorårets faktiske data som utgangspunkt for å lage budsjettet.
 2.  Basert på fjorårets faktiske data oppretter hun estimater for 12 måneder i det kommende året.

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dcdd8097279027df2fa5cf22cc38cc8a5e2a13e3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5f3d82089d2917a0ec0b9ceead7cd1ec22457733
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814590"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188155"
 ---
 # <a name="production-process-overview"></a>Oversikt over produksjonsprosess
 
@@ -74,8 +74,7 @@ Følgende trinn i produksjonslivssyklusen kan forekomme for alle ordretyper i bl
 12. **Periodisk avslutning** – Noen regnskapsprinsipper, som periodisk gjennomsnitt, backflush-etterkalkulering, FIFO eller LIFO, krever periodiske aktiviteter for å lukke lageret eller regnskapsperioden. Vanligvis prøver systemet å rapportere alt material- og ressursforbruk samt korrigeringer av lager og svinn, før periodene lukkes. Denne rapporteringen gjøres vanligvis ved hjelp av lagerbevegelsesjournaler eller justeringsjournaler. Målet er å vurdere det økonomiske resultatet til driftsenheter per periode. I noen tilfeller når tidkrevende produksjonsordrer brukes, som strekker seg over de økonomiske rapporteringsperiodene, brukes produksjonsjournaler til å rapportere produksjonsfremdriften og ressursforbruket ved utløpet av perioden.
 
 
-<a name="additional-resources"></a>Tilleggsressurser
---------
+## <a name="additional-resources"></a>Tilleggsressurser
 
 [Tilbakemeldinger på produksjon](production-feedback.md)
 

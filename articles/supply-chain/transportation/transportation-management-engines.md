@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf9c256c4b9ade408111a46899ee266b2eb0d651
-ms.sourcegitcommit: 890a0b3eb3c1f48d786b0789e5bb8641e0b8455e
+ms.openlocfilehash: 61c745802edc419cb2ae94df6bc293f839cd8a0a
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5920115"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188861"
 ---
 # <a name="transportation-management-engines"></a>Transportbehandlingsmotorer
 
@@ -43,8 +43,7 @@ Tabellen nedenfor viser transportbehandlingsmotorene som er tilgjengelige.
 | **Fraktbrevtype**            | Standardiserer fraktfakturaen og fraktbrevlinjene og brukes til automatisk fraktbrevsamsvar.                                                                                                                                                                                                                |
 
 
-<a name="what-engines-must-be-configured-to-rate-a-shipment"></a>Hvilke motorer må konfigureres for å vurdere en forsendelse?
----------------------------------------------------
+## <a name="what-engines-must-be-configured-to-rate-a-shipment"></a>Hvilke motorer må konfigureres for å vurdere en forsendelse?
 
 Hvis du vil rangere en forsendelse ved hjelp av en bestemt leverandør, må du konfigurere flere transportbehandlingsmotorer. **Ratemotor** er obligatorisk, men andre transportbehandlingsmotorer kan være nødvendige for å støtte **Ratemotor**. **Ratemotoren** kan for eksempel brukes til å hente data fra **kjørelengdemotoren** for beregning av satsen basert på antall kilometer mellom kilden og målet.
 
@@ -62,8 +61,7 @@ I de fleste tilfeller kan du klikke **Parametere**-knappen i oppsettskjemaene fo
 |  <em>MileageEngineCode</em>  |                       Kode for kjørelengdemotor som identifiserer posten for kjørelengdemotor i databasen.                        |
 | <em>ApportionmentEngine</em> |                        Kode for generell motor som identifiserer fordelingsmotoren i databasen.                        |
 
-<a name="how-is-metadata-used-in-transportation-management-engines"></a>Hvordan brukes metadata i transportbehandlingsmotorer?
-----------------------------------------------------------
+## <a name="how-is-metadata-used-in-transportation-management-engines"></a>Hvordan brukes metadata i transportbehandlingsmotorer?
 
 Transportbehandlingsmotorer som er avhengige av data som er definert i Supply Chain Management kan bruke forskjellige dataskjemaer. Transportbehandlingssystemet aktiverer ulike transportbehandlingsmotorer til å bruke de samme generelle fysiske databasetabellene. Hvis du vil sikre at kjøretidstolkingen av motordataene er riktig, kan du definere metadata for databasetabellene. Dette reduserer kostnadene ved bygging av nye transportbehandlingsmotorer fordi flere tabell- og skjemastrukturer ikke er nødvendig i Operations.
 

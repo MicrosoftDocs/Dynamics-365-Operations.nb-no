@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d916b6593b641ec1c8365475103b1520e07e3768
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 64e3624b387820bea3bfea9c2a4b2f48b0aa9822
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821943"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189027"
 ---
 # <a name="balance-sheet-financial-reports"></a>Finansrapporter for balanse
 
@@ -28,8 +28,7 @@ ms.locfileid: "5821943"
 
 Denne artikkelen beskriver standardrapportene for balansen. Den beskriver også byggeblokker som er knyttet til disse rapportene. 
 
-<a name="default-balance-sheet-reports"></a>Standardrapporter for balanse
------------------------------
+## <a name="default-balance-sheet-reports"></a>Standardrapporter for balanse
 
 Det finnes to standardrapporter for balanse. På en av rapportene er delene er stablet. På den andre rapporten er delene ved siden av hverandre.
 
@@ -68,8 +67,7 @@ Kolonnedefinisjonene inneholder ulike typer kolonner for å angi ulike nivåer a
 
 
 
-<a name="additional-resources"></a>Tilleggsressurser
---------
+## <a name="additional-resources"></a>Tilleggsressurser
 
 [Oversikt over finansrapportering](financial-reporting-getting-started.md)
 

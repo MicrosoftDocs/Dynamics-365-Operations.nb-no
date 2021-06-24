@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 037b6de9c23947b8b67faa12f2fc64afa089949c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: bb9b26eaedd9e9645209ce0b4b767170cccfdc48
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811780"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190118"
 ---
 # <a name="bills-of-materials-and-formulas"></a>Stykklister og formler
 
@@ -29,8 +29,7 @@ ms.locfileid: "5811780"
 
 Dette emnet inneholder informasjon om stykklister og formler, som er en sentral del av definisjonen av produktene og produktvariantene. Stykklister og formler angir nødvendige materialer eller ingredienser for et bestemt produkt. Formler kan også angi koprodukter og biprodukter som er mottatt i en bestemt produksjonskontekst. 
 
-<a name="bills-of-materials"></a>Stykklister
-------------------
+## <a name="bills-of-materials"></a>Stykklister
 
 En stykkliste (BOM) definerer komponentene som kreves for å produsere et produkt. Komponentene kan være råmaterialer, halvfabrikata eller ingredienser. I noen tilfeller kan det refereres til tjenester i en stykkliste. Stykklister beskriver imidlertid vanligvis *materialressursene* som kreves.  
 

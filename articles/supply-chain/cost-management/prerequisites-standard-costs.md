@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 92f80ecc611e68210e24e59b696724e1bc9c3a06
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4f2e1620de804f42688ad8d05232e38178b5fb80
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809668"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187728"
 ---
 # <a name="prerequisites-for-standard-costs-overview"></a>Oversikt over forutsetninger for standardkostnader
 
@@ -66,8 +66,7 @@ Bruk siden **Oppsett av etterkalkuleringsversjon** til å opprette én eller fle
 Kunder som vil endre sine eksisterende varer til en lagermodell med standard kostpris, må bruke siden **Standard kostnadskonvertering**.
 
 
-<a name="related-topics"></a>Relaterte emner
---------
+## <a name="related-topics"></a>Relaterte emner
 
 [Oversikt over konvertering av standardkostnad](standard-cost-conversion-overview.md)
 

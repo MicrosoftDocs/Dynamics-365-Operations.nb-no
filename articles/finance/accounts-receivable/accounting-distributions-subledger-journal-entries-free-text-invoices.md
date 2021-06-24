@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9c3609ed396b543bb708ea36f308eee60976e66f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7e3e1e0a757dcd51edcd38bb348e52b756e57334
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837183"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188764"
 ---
 # <a name="accounting-distributions-and-subledger-entries-for-free-text-invoices"></a>Regnskapsdistribusjoner og underfinansoppføringer for fritekstfakturaer
 
@@ -28,8 +28,7 @@ ms.locfileid: "5837183"
 
 Regnskapsdistribusjoner brukes til å definere hvordan beløp skal gjøres rede for, for eksempel hvordan omsetning, avgiften eller gebyrene skal gjøres rede for på en fritekstfaktura. Alle beløp som må redegjøres for når fritekstfakturaen er journalføres, har én eller flere regnskapsdistribusjoner.
 
-<a name="accounting-distributions"></a>Regnskapsdistribusjoner
-------------------------
+## <a name="accounting-distributions"></a>Regnskapsdistribusjoner
 
 Du kan bruke følgende knapper på Fritekstfaktura-siden for å vise, og eventuelt endre, regnskapsdistribusjonene for hvert beløp i fritekstfakturaen.
 

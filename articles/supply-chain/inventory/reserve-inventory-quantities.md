@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d1fcdb43f95892c541be2c31101d8f592f5d5e16
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 052cb56e026fbfe5cf5f6ad5d265337d7b88dc4d
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5834199"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193959"
 ---
 # <a name="reserve-inventory-quantities"></a>Reservere lagerantall
 
@@ -46,7 +46,7 @@ Policyer for lagerreservasjon settes på sidene **Varemodellgrupper**, **Paramet
 
 Delen **Beholdningspolicyer** inneholder policyene for lagerreservasjon som vises nedenfor.
 
-|                         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| &nbsp;                  | &nbsp;                                                                                                                                     |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Policy for reservasjon**  | **Beskrivelse**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | FIFO-datokontrollert    | Hvis du velger alternativet **FIFO-datokontrollert** kontrolleres lagerreservasjonen av en sorteringsdato i henhold til FIFO-prinsippet. Partier reserveres, basert på den tidligste datoen for mottak av varer, i henhold til prinsippet først-inn-først-ut (FIFO).                                                                                                                                                                                                                                                                       |

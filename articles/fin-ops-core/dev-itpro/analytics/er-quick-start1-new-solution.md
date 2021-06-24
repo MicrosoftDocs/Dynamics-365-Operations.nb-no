@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6a3e0e4a8389fdd6580f66004d86ef4b1980dd9f
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 0f5a3ac7cae58d17409ea081ec30f61cecf29ce9
+ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5891799"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "6224040"
 ---
 # <a name="design-a-new-er-solution-to-print-a-custom-report"></a>Utforme en ny ER-løsning for å skrive ut en egendefinert rapport
 
@@ -285,7 +285,7 @@ For å fortsette hopper du over neste prosedyre, [Opprett en ny datamodellkonfig
 
 Statusen til versjon 1 av denne konfigurasjonen endres fra **Utkast** til **Fullført**. Versjon 1 kan ikke lenger endres. Denne versjonen inneholder den konfigurerte datamodellen og kan brukes som basis for andre ER-konfigurasjoner. Versjon 2 av denne konfigurasjonen opprettes og har statusen **Utkast**. Du kan redigere denne versjonen for å justere **Spørreskjema**-datamodellen.
 
-![Versjoner av den redigerbare ER-konfigurasjonen på Konfigurasjoner-siden](./media/er-quick-start1-model-configuration.png)
+![Versjoner av den redigerbare konfigurasjonen på Konfigurasjoner-siden](./media/er-quick-start1-model-configuration.png)
 
 Hvis du vil ha mer informasjon om versjonskontroll for ERkonfigurasjoner, kan du se [Oversikt over elektronisk rapportering (ER)](general-electronic-reporting.md#component-versioning).
 
@@ -799,7 +799,7 @@ Den følgende illustrasjonen viser en generert rapport i Excel-format der spørs
 
 Statusen til versjon 1.1 av denne konfigurasjonen endres fra **Utkast** til **Fullført**. Versjon 1.1 kan ikke lenger endres. Denne versjonen inneholder formatet som er konfigurert, og kan brukes til å skrive ut den egendefinerte rapporten. Versjon 1.2 av denne konfigurasjonen opprettes og har statusen **Utkast**. Du kan redigere denne versjonen for å justere formatet til **Spørreskjema**-rapporten.
 
-![Versjoner av den redigerbare ER-konfigurasjonen på Konfigurasjoner-siden](./media/er-quick-start1-format-configuration.png)
+![Redigerbar ER-konfigurasjon på Konfigurasjoner-siden](./media/er-quick-start1-format-configuration.png)
 
 > [!NOTE]
 > Det konfigurerte formatet er din utforming av **Spørreskjema**-rapporten og inneholder ingen relasjoner til de Finance-spesifikke artefaktene.

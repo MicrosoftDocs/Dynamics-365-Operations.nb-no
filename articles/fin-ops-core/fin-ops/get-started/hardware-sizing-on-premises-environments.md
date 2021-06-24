@@ -2,7 +2,7 @@
 title: Krav til størrelsesangivelse for maskinvare for lokale miljøer
 description: Dette emnet viser kravene til størrelsesangivelse for maskinvare for et lokalt miljø.
 author: sericks007
-ms.date: 11/27/2019
+ms.date: 06/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: c5e6e96ea1ce821233d7104bb9a7af8e793f4264
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: 1ef427ff57c79b64a2435edd902e09a7d99e81d9
+ms.sourcegitcommit: 4a508bd11267f24eeb774af57faa56369beacf51
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923486"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "6168735"
 ---
 # <a name="hardware-sizing-requirements-for-on-premises-environments"></a>Krav til størrelsesangivelse for maskinvare for lokale miljøer
 
@@ -131,6 +131,8 @@ I de fleste tilfeller, med mindre brukes ofte, skal anbefalte minimumskravene ve
 ## <a name="sql-server-reporting-services"></a>SQL Server Reporting Services
 
 For utgivelsen med generell tilgjengelighet, kan bare én SSRS-node distribueres. Overvåk din SSRS-node under testing og øk antall tilgjengelige kjerner for SSRS etter behovet. Pass på at du har en forhåndskonfigurert sekundær node som er tilgjengelig på en virtuell vert som er forskjellig fra SSRS VM. Dette er viktig hvis det er et problem med den virtuelle maskinen som er vert for SSRS eller den virtuelle verten. Hvis dette er tilfellet, må de erstattes.
+
+Fra og med versjon 10.0.17 går det an å konfigurere flere SSRS-noder for å oppnå høy tilgjengelighet. Hvis du vil ha mer informasjon, kan du se [Konfigurere høy tilgjengelighet for SSRS-noder (SQL Server Reporting Services)](../../dev-itpro/deployment/onprem-ssrsha.md).
 
 ## <a name="environment-orchestrator"></a>Environment Orchestrator
 

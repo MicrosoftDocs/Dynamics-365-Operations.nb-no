@@ -2,7 +2,7 @@
 title: Kundebetalingsforutsigelser (forhåndsversjon)
 description: Dette emnet beskriver funksjonene for betalingsprediksjoner som kan hjelpe deg med å forstå de vanlige betalingspraksisene til en kunde. Denne funksjonen kan også hjelpe til med å identifisere omstendigheter som skal føre til at du starter innkrevingsprosesser tidligere enn du ellers ville starte dem.
 author: ShivamPandey-msft
-ms.date: 05/26/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 4151b56b8b385e29d3926dc7e245728158cbcd34
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 84a2342d76dc309fa1fd3de7b2c3de60e62e4d72
+ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5898018"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6186402"
 ---
 # <a name="customer-payment-predictions-preview"></a>Kundebetalingsforutsigelser (forhåndsversjon)
 
@@ -72,10 +72,5 @@ Tidligere var det som regel vanskelig å utvikle og distribuere en kunstig intel
 Den offentlige forhåndsversjonen av Finance Insights er tilgjengelig for prøving for distribusjoner i USA, Europa og Storbritannia. Microsoft legger gradvis til støtte for flere områder.
 
 Funksjoner i offentlige forhåndsversjoner bør bare aktiveres i sandkassemiljøer på lag 2. Oppsett og modeller for kunstig intelligens som er opprettet i et sandkassemiljø, kan kanskje ikke overføres til produksjonsmiljøet. Hvis du vil ha mer informasjon, kan du se [Ekstra vilkår for bruk for Microsoft Dynamics 365-forhåndsversjoner](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md).
-
-## <a name="privacy-notice"></a>Personvernerklæring
-
-Forhåndsversjoner (1) kan ha redusert personvern og færre sikkerhetstiltak enn Dynamics 365 Finance and Operations-tjenesten, (2) er ikke inkludert i serviceavtalen (SLA) for denne tjenesten, (3) må ikke brukes til å behandle personlige data eller andre data som er underlagt juridiske eller forskriftsmessige krav, og (4) har begrenset støtte.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

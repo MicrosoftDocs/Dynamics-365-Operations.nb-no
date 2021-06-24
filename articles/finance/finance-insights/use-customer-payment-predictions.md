@@ -2,7 +2,7 @@
 title: Bruke kundebetalingsforutsigelser (forhåndsversjon)
 description: Dette emnet leder deg gjennom forutsetningene og de brede trinnene som kreves for å bruke en prøveversjon av Finance Insights.
 author: ShivamPandey-msft
-ms.date: 11/16/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-11-16
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: 21c5236b6d7e7ce7bd968f1511723a3646fe7a29
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 1349521d65511864747de6c2fed3a904dea8917e
+ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897798"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6186570"
 ---
 # <a name="use-customer-payment-predictions-preview"></a>Bruke kundebetalingsforutsigelser (forhåndsversjon)
 
@@ -103,10 +103,5 @@ Hvis du ikke er fornøyd med nøyaktigheten, velger du koblingen **Forbedre mode
 Den offentlige forhåndsversjonen av Finance Insights er tilgjengelig for prøving for distribusjoner i USA, Europa og Storbritannia. Microsoft legger gradvis til støtte for flere områder.
 
 Funksjoner i offentlige forhåndsversjoner kan og bør bare aktiveres i sandkassemiljøer på lag 2. Oppsett og modeller for kunstig intelligens som er opprettet i et sandkassemiljø, kan ikke overføres til et produksjonsmiljø. Hvis du vil ha mer informasjon, kan du se [Ekstra vilkår for bruk for Microsoft Dynamics 365-forhåndsversjoner](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md).
-
-## <a name="privacy-notice"></a>Personvernerklæring
-
-Forhåndsversjoner (1) kan ha redusert personvern og færre sikkerhetstiltak enn Dynamics 365 Finance and Operations-tjenesten, (2) er ikke inkludert i serviceavtalen (SLA) for denne tjenesten, (3) må ikke brukes til å behandle personlige data eller andre data som er underlagt juridiske eller forskriftsmessige krav, og (4) har begrenset støtte.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

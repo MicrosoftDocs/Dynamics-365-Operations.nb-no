@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 484a80d9eeb0b652a8363a9ea49f58f9780b6968
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 06e2439da464c53fd648aaf3e3659babdbc50acd
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908934"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188940"
 ---
 # <a name="routes-and-operations"></a>Ruter og operasjoner
 
@@ -29,8 +29,7 @@ ms.locfileid: "5908934"
 
 Dette emnet gir informasjon om ruter og operasjoner. En rute definerer prosessen med å produsere et produkt eller en produktvariant. Den beskriver hvert trinn (operasjon) i produksjonsprosessen, og rekkefølgen disse trinnene må utføres i. For hvert trinn definerer ruten også nødvendige operasjonsressurser, nødvendig oppstillingstid og operasjonstid, og hvordan kostnader skal beregnes.
 
-<a name="overview"></a>Oversikt
---------
+## <a name="overview"></a>Oversikt
 
 En rute beskriver rekkefølgen for operasjonene som kreves for å produsere et produkt eller en produktvariant. For hver operasjon definerer ruten også operasjonsressurser som kreves, tiden som kreves for å definere og utføre operasjonen, og hvordan kostnader skal beregnes. Du kan bruke samme rute for å produsere flere produkter, eller du kan definere en unik rute for hvert produkt eller produktvariant. Du kan også ha flere ruter for samme produkt. I dette tilfellet varierer ruten som brukes, avhengig av faktorer som antallet som skal produseres. Definisjonen av en rute i Supply Chain Management består av fire separate elementer som sammen beskriver produksjonsprosessen:
 

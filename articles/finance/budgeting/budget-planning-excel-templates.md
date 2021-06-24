@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 80190419176848f10d9a3908350d57ddaadfd8c3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9d4e901871267d4f11d9afefc873708663dbabd6
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822185"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190291"
 ---
 # <a name="budget-planning-templates-for-excel"></a>Budsjettplanleggingsmaler for Excel
 
@@ -66,8 +66,7 @@ Pek markøren mot ønsket plassering i Excel-filen. Klikk **Legg til etikett** f
 
 ## <a name="select-add-valuemediabpt7png"></a>[![Velg Legg til verdi](./media/bpt7.png)](./media/bpt7.png)
 
-<a name="add-a-calculated-column-to-budget-plan-document-template-table"></a>Legge til en beregnet kolonne i dokumentmaltabellen for budsjettplan
---------------------------------------------------------------
+## <a name="add-a-calculated-column-to-budget-plan-document-template-table"></a>Legge til en beregnet kolonne i dokumentmaltabellen for budsjettplan
 
 Deretter vil beregnede kolonner bli lagt til den genererte dokumentmalen for budsjettplan. Kolonnen **Total forespørsel** som summerer kolonnene Forespørsel Q1: Forespørsel Q4, og kolonnen **Justering**, som beregner kolonnen **Total forespørsel** på nytt med en forhåndsdefinert faktor.
 

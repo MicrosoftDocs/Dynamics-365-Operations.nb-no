@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 76dd6b21207b61dfb96e4d9538b5e6ffc1c6b02d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 834dc64ce531fb614bc7836e0def16f27ecf5e18
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835131"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188644"
 ---
 # <a name="set-up-and-process-recurring-invoices"></a>Definere og behandle gjentakende fakturaer
 
@@ -28,8 +28,7 @@ ms.locfileid: "5835131"
 
 Denne artikkelen forklarer hvordan du konfigurerer og behandler gjentakende fakturaer. Du kan bruke gjentakende fakturaer hvis du må fakturere kunder for det samme beløpet regelmessig.
 
-<a name="create-a-recurring-free-text-invoice-template"></a>Opprette en mal for gjentakende fritekstfaktura
----------------------------------------------
+## <a name="create-a-recurring-free-text-invoice-template"></a>Opprette en mal for gjentakende fritekstfaktura
 
 Hvis du vil fakturere kunder for de samme tjenestene med jevne mellomrom, må du definere en mal for fritekstfaktura som kan brukes på nytt til å opprette fakturaene. Denne malen inneholder følgende informasjon:
 
@@ -52,13 +51,11 @@ En kunde kan ha flere maler som har forskjellige frekvenser.
 ## <a name="generate-the-recurring-invoices"></a>Generere gjentakende fakturaer
 På siden **Gjentakende fakturaer** er det en oppgave som behandler maler for gjentakende faktura. Du angir fakturadatoen og malen du vil generere fakturaer fra. Fakturaer genereres og tilordnes ett gjentakende ID-nummer for hver gruppe med fakturaer som behandles.
 
-<a name="post-recurring-free-text-invoices"></a>Postere gjentakende fritekstfakturaer
----------------------------------
+## <a name="post-recurring-free-text-invoices"></a>Postere gjentakende fritekstfakturaer
 
 Når gjentakende fakturaer er generert, vises ID-ene for fakturagjentakelse i en posteringsoppgave på siden **Gjentakende fakturaer**. Du kan vise alle fakturaene for en gjentakelses- ID ved å klikke koblingen. Du kan slette enkeltfakturaer under gjennomgangen av fakturaer for gjentakelses-ID-en. Kundens innstillinger for gjentakelse tilbakestilles for denne malen, slik at den kan genereres på nytt senere. Du kan postere én, mange eller alle fakturaer for en gjentakelses-ID. Hvis arbeidsflyter er aktivert, må du klikke **Send** før du kan postere fakturaene.
 
-<a name="print-recurring-free-text-invoices"></a>Skrive ut gjentakende fritekstfakturaer
-----------------------------------
+## <a name="print-recurring-free-text-invoices"></a>Skrive ut gjentakende fritekstfakturaer
 
 Når gjentakende fakturaer er postert, kan du skrive ut fakturaene på listesiden for fritekstfakturaer. Du kan skrive ut fakturaene som er valgt, eller du kan velge et område med fakturaer som skal skrives ut.
 

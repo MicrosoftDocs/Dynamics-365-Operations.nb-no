@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c59a4f098ac19223c5b2fb6808d18d8fea4f4290
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2673ecb09cd479eb10182a4345fe89d8f6b8d404
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815938"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188470"
 ---
 # <a name="letters-of-credit-and-import-collections"></a>Purringer og importinkassoer
 
@@ -28,8 +28,7 @@ ms.locfileid: "5815938"
 
 Denne artikkelen inneholder generell informasjon om purringer og importsamlinger. Begge typer bankdokument brukes ofte til kjøp og salg av varer på tvers av internasjonale grenser.
 
-<a name="letters-of-credit"></a>Purringer
------------------
+## <a name="letters-of-credit"></a>Purringer
 
 Remburser brukes i internasjonale transaksjoner og bidrar til å garantere at betalinger blir foretatt. En remburs er en avtale som utstedes av en bank, der banken godtar å garantere betaling på vegne av en kjøper, så lenge vilkårene i avtalen mellom kjøper og selger er oppfylt. En remburs også omtales som en vareremburs eller bankremburs.
 

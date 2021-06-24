@@ -2,7 +2,7 @@
 title: Oversikt over leverandørfakturaer
 description: Dette emnet inneholder generell informasjon om leverandørfakturaer.
 author: abruer
-ms.date: 12/18/2019
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bd30e7128c688a0880727380e601069a95a28dcd
-ms.sourcegitcommit: eff3da7ea98758f100d44ff7feec17157afc2e80
+ms.openlocfilehash: c12b85103ff136799e5d676f72186e007161e9a9
+ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6111700"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6186354"
 ---
 # <a name="vendor-invoices-overview"></a>Oversikt over leverandørfakturaer
 
@@ -28,7 +28,7 @@ ms.locfileid: "6111700"
 [!include [preview banner](../includes/preview-banner.md)]
 
 
-Dette emnet inneholder generell informasjon om leverandørfakturaer. Leverandørfakturaer er forespørsler om mottatt betaling for produkter og tjenester. Leverandørfakturaer kan representere en faktura for pågående tjenester, eller den kan være basert på bestillinger for bestemte varer og tjenester.
+Dette emnet inneholder generell informasjon om leverandørfakturaer. Leverandørfakturaer er forespørsler om betaling for produkter og tjenester. Leverandørfakturaer kan representere en faktura for pågående tjenester, eller den kan være basert på bestillinger for bestemte varer og tjenester.
 
 ## <a name="vendor-invoices"></a>Leverandørfakturaer
 

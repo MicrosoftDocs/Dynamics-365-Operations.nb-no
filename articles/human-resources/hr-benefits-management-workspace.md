@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-24
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 154c3d70b61869795edc25514e98a28389eeb244
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: cf2c41af6aa8e77eff819cfacc3459ead290642b
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6052247"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193437"
 ---
 # <a name="benefits-management-workspace"></a>Arbeidsområde for fordelsbehandling
 
@@ -31,7 +31,7 @@ ms.locfileid: "6052247"
 Dette emnet beskriver arbeidsområdet **Fordelsbehandling** i Dynamics 365 Human Resources.
 
 > [!NOTE]
-> Hvis du vil vise arbeidsområdet **Fordelsbehandling**, må du først aktivere arbeidsområdet **(Forhåndsversjon) Arbeidsområdet Fordelsbehandling** i Funksjonsstyring. Hvis du vil ha mer informasjon om hvordan du aktiverer forhåndsvisningsfunksjoner, kan du se [Behandle funksjoner](../hr-admin-manage-features.md).<br><br>![Aktivere arbeidsområdet Fordelsbehandling](./media/hr-benefits-management-workspace-enable.png)
+> Hvis du vil vise arbeidsområdet **Fordelsbehandling**, må du først aktivere arbeidsområdet **(Forhåndsversjon) Arbeidsområdet Fordelsbehandling** i Funksjonsstyring. Hvis du vil ha mer informasjon om hvordan du aktiverer forhåndsvisningsfunksjoner, kan du se [Behandle funksjoner](hr-admin-manage-features.md).<br><br>![Aktivere arbeidsområdet Fordelsbehandling](./media/hr-benefits-management-workspace-enable.png)
 
 Arbeidsområdet **Fordelsbehandling** gir deg rask oversikt over fordeler som krever din oppmerksomhet. På denne siden vises følgende:
 

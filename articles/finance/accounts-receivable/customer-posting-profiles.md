@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b03d176791ee476ccddbf519471becafd086b0b7
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 07acb7ef5565fa4a63607f6828e46c1fcf8110cc
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826377"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193624"
 ---
 # <a name="customer-posting-profiles"></a>Kundeposteringsprofiler
 
@@ -28,8 +28,7 @@ ms.locfileid: "5826377"
 
 Kundeposteringsprofiler styrer postering av kundetransaksjoner til økonomimodulen.
 
-<a name="customer-posting-profiles"></a>Kundeposteringsprofiler
--------------------------
+## <a name="customer-posting-profiles"></a>Kundeposteringsprofiler
 
 Kundeposteringsprofiler gjør det mulig å tilordne finanskontoer og dokumentinnstillingene til alle kunder, en kundegruppe eller en enkelt kunde. Disse innstillingene brukes når du oppretter salgsordrer, fritekstfakturaer, utbetalinger, purringer og rentenotaer. For noen transaksjoner kan du velge en posteringsprofil som er forskjellig fra og har forrang for posteringsprofilene som er definert for transaksjoner på denne siden. 
 
@@ -118,7 +117,6 @@ Hvis du vil ha samme posteringsprofil for alle kundetransaksjoner, definerer du 
 </tbody>
 </table>
 
-### 
 
 ### <a name="table-restrictions"></a>**Tabellrestriksjoner**
 

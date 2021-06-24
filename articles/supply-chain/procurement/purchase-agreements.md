@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 972762522b4f7627648f1e1eec9dad73fe503710
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 90bfd55bd865b27aec831957209ce8716cb253c8
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825452"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188283"
 ---
 # <a name="purchase-agreements"></a>Kjøpsavtaler
 
@@ -102,8 +102,7 @@ Hvis du oppretter en konsernintern bestilling som bruker den konserninterne kjø
 ## <a name="financial-dimensions-on-purchase-agreements"></a>finansdimensjoner i kjøpsavtaler
 Du kan kopiere finansdimensjoner til dokumenthoder eller enkeltlinjer i en kjøpsavtale. Hvis du endrer dimensjonene i overskriften for avtalen eller avtalelinjen, vil endringen ikke påvirke frigitte ordrer, men den vil vises på alle nye ordrer.
 
-<a name="additional-resources"></a>Tilleggsressurser
---------
+## <a name="additional-resources"></a>Tilleggsressurser
 
 [Opprette en kjøpsavtale](tasks/create-purchase-agreement.md)
 

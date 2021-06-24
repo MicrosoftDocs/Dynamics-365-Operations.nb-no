@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ceffa7028f4490a88027a2affdc898877cc2db43
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 2fa295c71fb82b4168123970fee6ba71d293e3c8
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5910071"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189674"
 ---
 # <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Samarbeide med leverandører ved hjelp av leverandørportalen
 
@@ -92,8 +92,7 @@ Tabellen nedenfor viser et eksempel på endringene i status og versjon som en be
 |                           Du sender den nye versjonen av bestillingen til leverdnaørportalen.                            |                                                                                                                                                                    Den nye versjonen registreres på leverandørportalen, og statusen endres til <strong>Til ekstern vurdering</strong>.                                                                                                                                                                     |
 |                                Leverandøren godkjenner den nye versjonen av bestillingen.                                 |                                                                                                                                                     Statusen endres til <strong>Bekreftet</strong>, enten automatisk eller når du mottar svaret fra leverandøren og deretter bekrefter bestillingen.                                                                                                                                                     |
 
-<a name="additional-resources"></a>Tilleggsressurser
---------
+## <a name="additional-resources"></a>Tilleggsressurser
 
 [Brukersikkerhet for leverandørportal](configure-security-vendor-portal-users.md)
 

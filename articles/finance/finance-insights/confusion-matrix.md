@@ -2,7 +2,7 @@
 title: Resultat av maskinlæringsmodeller (forhåndsversjon)
 description: Dette emnet beskriver forvirringsmatriser, klassifiseringsproblemer og nøyaktighet i modeller for maskinlæring (ML). Hensikten er å forbedre forståelsen din av nøyaktighet i ML-prediksjonsresultater.
 author: ShivamPandey-msft
-ms.date: 06/05/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-14
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: a9642bd21ffc0770be61677220e0e72986586047
-ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
+ms.openlocfilehash: fe652c32df9417f0f716242a24a26eabd1a16f65
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6028209"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193546"
 ---
 # <a name="results-of-machine-learning-models-preview"></a>Resultat av maskinlæringsmodeller (forhåndsversjon)
 
@@ -129,16 +129,12 @@ For å forenkle beregningene ble det bygd eksempelmatriser for å sammenligne de
 
 Hvis du vil ha mer informasjon om hvordan denne beregningen fungerer, har du her klassifiseringsrapporten sklearn.metrics for modell 1. De tre tilstandene Til planlagt tid, For sent og Svært sent representeres av radene som er merket med henholdsvis 1, 2 og 3. Makrogjennomsnittet er bare gjennomsnittet av kolonnen for F1-poengsum.
 
-|           | presisjon | tilbakekalling   | f1-poengsum |
+| &nbsp;    | presisjon | tilbakekalling   | f1-poengsum |
 |-----------|-----------|----------|----------|
 | **1**     | 0.83      | 0.80     | 0.82     |
 | **2**     | 0.68      | 0.71     | 0.69     |
 | **3**     | 0.50      | 0.50     | 0.50     |
 
 Som disse resultatene viser har de to modellene nesten identiske poengsummer for F1-makronøyaktighet. I dette og mange andre tilfeller er F1-nøyaktighet en bedre indikator på hvor god en modell er. Som for nøyaktighet krever tolkningen av resultatene at du forstår hva som er det viktigste å ta hensyn til i modellen.
-
-#### <a name="privacy-notice"></a>Personvernerklæring
-Forhåndsversjoner (1) kan ha redusert personvern og færre sikkerhetstiltak enn Dynamics 365 Finance and Operations-tjenesten, (2) er ikke inkludert i serviceavtalen (SLA) for denne tjenesten, (3) må ikke brukes til å behandle personlige data eller andre data som er underlagt juridiske eller forskriftsmessige krav, og (4) har begrenset støtte.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

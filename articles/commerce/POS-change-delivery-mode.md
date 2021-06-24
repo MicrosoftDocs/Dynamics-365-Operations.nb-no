@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: a88ca9cc8fc8cde6d738dbc4fcf474f1e27e05dd
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: fd69d82536047c06e94ba4a7e860ef54680619a4
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796396"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193137"
 ---
 # <a name="change-mode-of-delivery-in-pos"></a>Endre leveringsmodus i POS
 
@@ -31,7 +31,7 @@ I Dynamics 365 Commerce versjon 10.0.10 og senere er **Endre leveringsmodus** (6
 
 Med funksjonen for endring av leveringsmåte kan du endre leveringsmåten for én eller flere forsendelseskonfigurerte salgslinjer på POS-transaksjonen. I tidligere versjoner av Commerce måtte du gå gjennom de fullstendige konfigurasjonsflytene **Send alle** eller **Valgt for forsendelse** hvis du ville endre leveringsmåten for en eksisterende linje som ble konfigurert for forsendelse. Denne prosessen var tidkrevende, og kunne føre til utilsiktede endringer i leveringsopprinnelsen eller leveringsdatoen for linjen. De nye funksjonene gir en alternativ metode for effektiv oppdatering av leveringsmåten på disse salgslinjene.
 
-Hvis du vil ha mer informasjon om hvordan du legger til en operasjon på en knapp i POS-rutenettet, kan du se [Skjermoppsett for salgssted](https://docs.microsoft.com/dynamics365/commerce/pos-screen-layouts).
+Hvis du vil ha mer informasjon om hvordan du legger til en operasjon på en knapp i POS-rutenettet, kan du se [Skjermoppsett for salgssted](pos-screen-layouts.md).
 
 Når denne funksjonen er konfigurert i POS-feltet og du velger **Endre leveringsmåte**, åpnes en listeside som gir deg muligheten til å velge linjene i transaksjonen du vil endre leveringsmåten for. Du kan velge noen av eller alle linjene, eller avslutte uten å gjøre noen endringer. Salgslinjene som tidligere ble konfigurert for forsendelse, er de eneste linjene i listen som du kan endre. Hvis du vil endre en linje som er utpekt til plukking eller utlevering, må du bruke operasjonene **Send alle** eller **Valgt for forsendelse**. Hvis du derimot vil endre en linje som er utpekt som en forsendelse til en plukking eller utlevering, må du bruke operasjonene **Plukk alle**, **Plukk valgte produkter**, **Utlevering av alle** eller **Utlevering av valgte**.
 

@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: a6d6979093c67d2d89b88678712f4c0205c63194
-ms.sourcegitcommit: 639175a39da38edd13e21eeb5a1a5ca62fa44d99
+ms.openlocfilehash: 9cd7dd8b9241171bdfdb3cc1379211a2fe99bbe1
+ms.sourcegitcommit: 8d50c905a0c9d4347519549b587bdebab8ffc628
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "5899101"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "6184002"
 ---
 # <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Skalaenheter for sky og kant for arbeidsbelastninger for produksjonsutførelse
 
@@ -72,6 +72,7 @@ Følgende produksjonskjøringsoppgaver kan for øyeblikket kjøres på arbeidsbe
 - Rapporter svinn
 - Indirekte aktivitet
 - Bryt
+- Ferdigmeld og plasser (krever at du også kjører arbeidsmengden for lagerkjøring på skalaenheten, se også [Ferdigmeld og plasser på en skalaenhet](#RAF))
 
 ## <a name="working-with-manufacturing-execution-workloads-on-the-hub"></a>Arbeide med arbeidsbelastninger for produksjonskjøring på senteret
 
@@ -108,6 +109,26 @@ Hvis du vil se gjennom historikken for produksjonsjobber som er behandlet på en
 ### <a name="manufacturing-hub-to-scale-unit-message-processor-job"></a>Jobben Behandle produksjonssenter til skalaenhet
 
 Jobben _Behandle produksjonssenter til skalaenhet_ behandler data fra senteret til skalaenheten. Denne jobben startes automatisk når arbeidsbelastningen for produksjonskjøring distribueres. Du kan imidlertid kjøre den manuelt når som helst ved å gå til **Produksjonskontroll \> Periodiske oppgaver \> Back-office-arbeidsbelastningsbehandling \> Behandle produksjonssenter til skalaenhet**.
+
+<a name="RAF"></a>
+
+## <a name="report-as-finished-and-putaway-on-a-scale-unit"></a>Ferdigmeld og plasser på en skalaenhet
+
+<!-- KFM: 
+This section describes how to enable the abilities to report as finished and then putaway finished items when you are using to a scale unit.
+
+### Enable and use report as finished and putaway on a scale unit -->
+
+I gjeldende utgivelse støttes operasjoner med ferdigmeld og plasser (for ferdige produkter, koprodukter og biprodukter) av [arbeidsmengden for lagerkjøring](cloud-edge-workload-warehousing.md) (ikke arbeidsmengden for produksjonskjøring). Du må derfor gjøre følgende hvis du vil bruke denne funksjonaliteten når du er koblet til en skalaenhet:
+
+- Installer både arbeidsmengden for lagerkjøring og arbeidsmengden for produksjonskjøring på skalaenheten.
+- Bruk mobilappen Warehouse Management til å ferdigmelde og behandle plasseringsarbeidet. Grensesnittet for produksjonsutførelse støtter ikke disse prosessene for øyeblikket.
+
+<!-- KFM: API details needed
+
+### Customize report as finished and putaway functionality
+
+ -->
 
 [!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 

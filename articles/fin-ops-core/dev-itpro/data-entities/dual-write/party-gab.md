@@ -9,12 +9,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: e2b0abb2826f81ed87b4f0f37dba32c1d8d749c2
-ms.sourcegitcommit: 194d68b24cd36db21e9029044bed18983fd9810c
+ms.openlocfilehash: c62290506d32579d926ad1a1d6f090845c0d0f26
+ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5937892"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6216618"
 ---
 # <a name="party-and-global-address-book"></a>Part og global adressebok
 
@@ -143,16 +143,22 @@ Elektroniske adresser er bare tilgjengelige i dette rutenettet. I fremtidige ver
 
 ## <a name="setup"></a>Installasjon
 
-1. Installer den nyeste versjonen (2.2.2.60 eller senere) av [løsningen for orkestrering av apper med dobbel skriving](https://aka.ms/dual-write-app).
+1. Åpne appmiljøet for kundeengasjement.
 
-2. Installer [Løsninger for part med dobbel skriving og global adressebok](https://aka.ms/dual-write-gab).
+2. Installer den nyeste versjonen (2.2.2.60 eller senere) av [løsningen for orkestrering av apper med dobbel skriving](https://aka.ms/dual-write-app).
 
-3. Stopp følgende tilordninger fordi de ikke er obligatoriske lenger. I stedet kjører du `Contacts V2 (msdyn_contactforparties)`-tilordningen.
+3. Installer [Løsninger for part med dobbel skriving og global adressebok](https://aka.ms/dual-write-gab).
+
+4. Åpne Finance and Operations-appen. Gå til Databehandling-modulen, og velg fanen Dobbel skriving. Siden for administrasjon av dobbel skriving åpnes.
+
+5. Bruk begge løsningene som ble installert i trinn 2 og 3, ved hjelp av funksjonen [Bruk løsning](link-your-environment.md).
+
+6. Stopp følgende tilordninger fordi de ikke er obligatoriske lenger. I stedet kjører du `Contacts V2 (msdyn_contactforparties)`-tilordningen.
 
     + CDS-kontakter v2 og Kontakter (refererer til kundekontakter)
     + CDS-kontakter v2 og Kontakter (refererer til leverandørkontakter)
 
-4. Følgende enhetstilordninger oppdateres for partsfunksjonalitet, så den nyeste versjonen må brukes på disse tilordningene.
+7. Følgende enhetstilordninger oppdateres for partsfunksjonalitet, så den nyeste versjonen må brukes på disse tilordningene.
 
     Tilordning | Oppdater til denne versjonen | Endringer
     ---|---|---
@@ -176,7 +182,7 @@ Elektroniske adresser er bare tilgjengelige i dette rutenettet. I fremtidige ver
     `Salutations (msdyn_salutations)` | 1.0.0.0 | Dette er en ny tilordning som er lagt til som en del av denne versjonen.
     `Employment job functions (msdyn_employmentjobfunctions)` | 1.0.0.0 | Dette er en ny tilordning som er lagt til som en del av denne versjonen.
 
-5. Før du kjører tilordningene ovenfor, må du oppdatere integreringsnøklene manuelt som beskrevet i fremgangsmåten nedenfor. Velg deretter **Lagre**.
+8. Før du kjører tilordningene ovenfor, må du oppdatere integreringsnøklene manuelt som beskrevet i fremgangsmåten nedenfor. Velg deretter **Lagre**.
 
     | Tilordning | Nøkler |
     |-----|------|
@@ -185,7 +191,7 @@ Elektroniske adresser er bare tilgjengelige i dette rutenettet. I fremtidige ver
     | Kontakt for kunde/leverandør | msdyn_contactforpartynumber [Kontakt for partsnummer]<br>msdyn_associatedcompanyid.cdm_companycode [Tilknyttet selskap (Firmakode)] |
     | Leverandør | msdyn_vendoraccountnumber [Leverandørens kontonummer]<br>msdyn_company.cdm_companycode [Selskap (Selskapskode)]|
 
-6. I Dataverse har tegngrensene for duplikatregistreringsregler økt fra 450 til 700 tegn. Ved hjelp av denne grensen kan du legge til en eller flere nøkler i duplikatregistreringsreglene. Utvid duplikatregistreringsregelen for **Kontoer**-tabellen ved å angi følgende felt.
+9. I Dataverse har tegngrensene for duplikatregistreringsregler økt fra 450 til 700 tegn. Ved hjelp av denne grensen kan du legge til en eller flere nøkler i duplikatregistreringsreglene. Utvid duplikatregistreringsregelen for **Kontoer**-tabellen ved å angi følgende felt.
 
     | Felt | Verdi |
     |-------|-------|
@@ -201,7 +207,7 @@ Elektroniske adresser er bare tilgjengelige i dette rutenettet. I fremtidige ver
 
     ![Duplikatregel for kontoer](media/duplicate-rule-1.PNG)
 
-7. Utvid duplikatregistreringsregelen for **Kontakter**-tabellen ved å angi følgende felt.
+10. Utvid duplikatregistreringsregelen for **Kontakter**-tabellen ved å angi følgende felt.
 
     | Felt | Verdi |
     |-------|-------|
@@ -217,9 +223,9 @@ Elektroniske adresser er bare tilgjengelige i dette rutenettet. I fremtidige ver
 
     ![Duplikatregel for kontakter](media/duplicate-rule-2.PNG)
 
-8. Hvis du er en eksisterende kunde med dobbel skriving, følger du instruksjonene i [Oppgrader til parten og den globale adressebokmodellen](upgrade-party-gab.md) og oppgraderer dataene.
+11. Hvis du er en eksisterende kunde med dobbel skriving, følger du instruksjonene i [Oppgrader til parten og den globale adressebokmodellen](upgrade-party-gab.md) og oppgraderer dataene.
 
-9. Kjør tilordningene i følgende rekkefølge. Hvis du får en feilmelding som angir at "prosjektvalidering mislyktes. Manglende målfelt...", åpner du kartet og velger **Oppdater tabeller**. Deretter kjører du kartet.
+12. Kjør tilordningene i følgende rekkefølge. Hvis du får en feilmelding som angir at "prosjektvalidering mislyktes. Manglende målfelt...", åpner du kartet og velger **Oppdater tabeller**. Deretter kjører du kartet.
 
     Finance and Operations-app | Kundeengasjementsapp  
     ----------------------------|------------------------

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: b52a1720077c055d416f04cbbe9ec46cbcf319bc
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 808080d9e84c4af1b061d5a4ce76d5fa309e66f7
+ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020417"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6216749"
 ---
 # <a name="rebate-management-posting-setup"></a>Posteringsoppsett for rabattbehandling
 
@@ -43,7 +43,7 @@ I tabellen nedenfor beskrives innstillingene som er tilgjengelige i hodedelen i 
 | beskrivelse | Angi en beskrivelse av profilen. |
 | Modul | Velg typen rabatter og royalty som profilen er forbundet med (*Kunde* eller *Leverandør*). |
 | Type | Velg profiltypen (*Rabatt* eller *Royalty*). |
-| Betalingsmiddel | <p>Dette feltet bestemmer formatet for de posterte rabattutdataene.<p><p>Når **Type**-feltet er satt til *Rabatt*, er følgende verdier tilgjengelige:</p><ul><li>*Ingen* – Det finnes ingen standard posteringstype. Derfor må du definere typen når du behandler.</li><li>*Betal ved å bruke leverandør* – Når du posterer rabatten, opprettes det en leverandørfaktura for remitteringsleverandøren som er definert for rabattkunden.</li><li>*Kundefradrag* – Når du posterer rabatten, opprettes det en kundefradragsjournal for rabattkunden.</li><li>*Kundefradrag for avgiftsfaktura* – Når du posterer rabatten, opprettes det en fritekstfaktura for rabattkunden.</li><li>*Forretningsutgifter* – Når du posterer rabatten, opprettes det en kundefradragsjournal for rabattkunden.</li><li>*Rapportering* – Når du posterer rabatten, opprettes det en kundefradragsjournal for rabattkunden.</li></ul><p>Når **Type**-feltet er satt til *Royalty*, er følgende verdier tilgjengelige:</p><ul><li>*Ingen* – Det finnes ingen standard posteringstype. Derfor må du definere typen når du behandler.</li><li>*Betal ved å bruke leverandør* – Når du posterer rabatten, opprettes det en leverandørfaktura for rabattleverandørkunden.</li><li>*Rapportering* – Når du posterer rabatten, opprettes det en leverandørfaktura for rabattleverandørkunden.</li></ul><p>Hvis du vil ha mer informasjon, kan du se delen [Betalingstyper](#payment-types) nedenfor. |
+| Betalingsmiddel | <p>Dette feltet bestemmer formatet for de posterte rabattutdataene.<p><p>Når **Type**-feltet er satt til *Rabatt*, er følgende verdier tilgjengelige:</p><ul><li>*Betal ved å bruke leverandør* – Når du posterer en kunderabatt, opprettes det en leverandørfaktura for remitteringsleverandøren som er definert for rabattkunden. Når du posterer en leverandørrabatt, opprettes det en leverandørfaktura for rabattleverandørkunden.</li><li>*Kundefradrag* – Når du posterer rabatten, opprettes det en kundefradragsjournal for rabattkunden.</li><li>*Kundefradrag for avgiftsfaktura* – Når du posterer rabatten, opprettes det en fritekstfaktura for rabattkunden.</li><li>*Forretningsutgifter* – Når du posterer rabatten, opprettes det en kundefradragsjournal for rabattkunden.</li><li>*Rapportering* – Når du posterer rabatten, opprettes det en kundefradragsjournal for rabattkunden.</li></ul><p>Når **Type**-feltet er satt til *Royalty*, er følgende verdier tilgjengelige:</p><ul><li>*Betal ved å bruke leverandør* – Når du posterer rabatten, opprettes det en leverandørfaktura for rabattleverandørkunden.</li><li>*Rapportering* – Når du posterer rabatten, opprettes det en leverandørfaktura for rabattleverandørkunden.</li></ul><p>Hvis du vil ha mer informasjon, kan du se delen [Betalingstyper](#payment-types) nedenfor. |
 | Bedrift | Velg firmaet (juridisk enhet) som avsetningene skal avsettes til, og som krav vil bli betalt av. |
 
 ### <a name="payment-types"></a>Betalingstyper
