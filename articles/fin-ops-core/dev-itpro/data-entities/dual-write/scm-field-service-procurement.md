@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-11-11
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 2c27f06524b91f91d95ef4b901740e7761232c28
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: c50aabf94ae37b7b7b214699160bf958ad3ea9fd
+ms.sourcegitcommit: 2cc14f6c537628e79ad2dd17dabf2c246deaa40d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941115"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6219793"
 ---
 # <a name="integrate-procurement-between-supply-chain-management-and-field-service"></a>Integrere innkjøp mellom Supply Chain Management og Field Service
 
@@ -196,23 +196,10 @@ Følgende maler er tilgjengelige for integrering av innkjøpsrelaterte dokumente
 
 | Forsyningskjedeadministrasjon | Field Service | beskrivelse |
 |---|---|---|
-| Bestillingshode V2 | msdyn\_Purchaseorders | Denne tabellen inneholder kolonnene som representerer bestillingshodet. |
-| Bestillingslinjeenhet | msdyn\_PurchaseOrderProducts | Denne tabellen inneholder radene som representerer linjer i en bestilling. Produktnummeret brukes til synkronisering. Dette identifiserer produktet som en lagerenhet (SKU), inkludert produktdimensjoner. Hvis du vil ha mer informasjon om produktintegrering med Dataverse, kan du se [Samlet produktopplevelse](product-mapping.md). |
-| Mottaksseddelhode | msdyn\_purchaseorderreceipts | Denne tabellen inneholder produktkvitteringshoder som opprettes når en produktkvittering posteres i Supply Chain Management. |
-| Mottaksseddellinje | msdyn\_purchaseorderreceiptproducts | Denne tabellen inneholder produktkvitteringslinjer som opprettes når en produktkvittering posteres i Supply Chain Management. |
-| Myk sletting av enhet for bestillingslinje | msdyn\_purchaseorderproducts | Denne tabellen inneholder informasjon om bestillingslinjer som er mykt slettet. En bestillingslinje i Supply Chain Management kan bare slettes mykt når bestillingen er bekreftet eller godkjent, hvis endringsadministrasjon er aktivert. Raden er i databasen i Supply Chain Management og er merket som **IsDeleted**. Siden Dataverse ikke har et begrep om myk sletting, er det viktig at denne informasjonen synkroniseres med Dataverse. Dermed kan linjer som er mykt slettet i Supply Chain Management, slettes fra Dataverse automatisk. I dette tilfellet er logikken for sletting av en linje i Dataverse, i Supply Chain Management Extended. |
-
-[!include [banner](../../includes/dual-write-symbols.md)]
-
-[!include [Currency](includes/productreceiptheader-msdyn-purchaseorderreceipts.md)]
-
-[!include [Currency](includes/productreceiptline-msdyn-purchaseorderreceiptproducts.md)]
-
-[!include [Currency](includes/purchaseorderheadersv2-msdyn-purchaseorders.md)]
-
-[!include [Currency](includes/purchaseorderlinesoftdeletedtable-msdyn-purchaseorderproducts.md)]
-
-[!include [Currency](includes/purchaseorderlinetable-msdyn-purchaseorderproducts.md)]
-
+| [Bestillingshode V2](mapping-reference.md#183) | msdyn\_Purchaseorders | Denne tabellen inneholder kolonnene som representerer bestillingshodet. |
+| [Bestillingslinjeenhet](mapping-reference.md#181) | msdyn\_PurchaseOrderProducts | Denne tabellen inneholder radene som representerer linjer i en bestilling. Produktnummeret brukes til synkronisering. Dette identifiserer produktet som en lagerenhet (SKU), inkludert produktdimensjoner. Hvis du vil ha mer informasjon om produktintegrering med Dataverse, kan du se [Samlet produktopplevelse](product-mapping.md). |
+| [Mottaksseddelhode](mapping-reference.md#185) | msdyn\_purchaseorderreceipts | Denne tabellen inneholder produktkvitteringshoder som opprettes når en produktkvittering posteres i Supply Chain Management. |
+| [Mottaksseddellinje](mapping-reference.md#184) | msdyn\_purchaseorderreceiptproducts | Denne tabellen inneholder produktkvitteringslinjer som opprettes når en produktkvittering posteres i Supply Chain Management. |
+| [Myk sletting av enhet for bestillingslinje](mapping-reference.md#182) | msdyn\_purchaseorderproducts | Denne tabellen inneholder informasjon om bestillingslinjer som er mykt slettet. En bestillingslinje i Supply Chain Management kan bare slettes mykt når bestillingen er bekreftet eller godkjent, hvis endringsadministrasjon er aktivert. Raden er i databasen i Supply Chain Management og er merket som **IsDeleted**. Siden Dataverse ikke har et begrep om myk sletting, er det viktig at denne informasjonen synkroniseres med Dataverse. Dermed kan linjer som er mykt slettet i Supply Chain Management, slettes fra Dataverse automatisk. I dette tilfellet er logikken for sletting av en linje i Dataverse, i Supply Chain Management Extended. |
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

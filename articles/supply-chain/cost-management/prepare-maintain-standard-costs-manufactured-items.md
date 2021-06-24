@@ -16,12 +16,12 @@ ms.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6944782ac236a3f414b1cadfb12b0f0d8c1115b9
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2a82b0a205ac6b7a86b9aca0771303469c6666c1
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821519"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187752"
 ---
 # <a name="prepare-to-maintain-standard-costs-for-manufactured-items"></a>Forberede vedlikehold av standard kostpris for produserte varer
 
@@ -63,8 +63,7 @@ Reglene som tilordnes produserte varer kan påvirke kostnadsberegningene for de 
 
 Hvis du vil bruke rutinginformasjon til kostnadsformål, kreves det flere klargjøringstrinn. Kostnadskategoriene som er tilordet ruteoperasjoner, må for eksempel korrigeres og fullføres.
 
-<a name="related-topics"></a>Relaterte emner
---------
+## <a name="related-topics"></a>Relaterte emner
 
 [Amortisere konstante kostnader for en produsert vare](amortize-constant-costs-manufactured-item.md)
 

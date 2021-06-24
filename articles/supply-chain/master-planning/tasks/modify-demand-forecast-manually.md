@@ -1,5 +1,5 @@
 ---
-title: Endre en behovsprognose manuelt
+title: 'Veiledning: Endre en behovsprognose manuelt'
 description: Dette emnet viser hvordan du endrer prognosen for en vare.
 author: ChristianRytt
 ms.date: 08/12/2019
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5da1d5b1fbd91964e695a704681b1c9ee513a2f1
-ms.sourcegitcommit: 4016c223a985c46e33f9941bf91ba5e1583e1cfd
+ms.openlocfilehash: 1e12ccf90b9971379e8931bd48d6243a855bb795
+ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5889030"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "6224016"
 ---
-# <a name="modify-a-demand-forecast-manually"></a>Endre en behovsprognose manuelt
+# <a name="guide-modify-a-demand-forecast-manually"></a>Veiledning: Endre en behovsprognose manuelt
 
 [!include [banner](../../includes/banner.md)]
 
-Denne fremgangsmåten viser hvordan du endrer prognosen for en vare. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten. Denne fremgangsmåten er ment for produksjonsplanleggeren.
+Denne fremgangsmåten viser hvordan du endrer prognosen for en vare. Denne fremgangsmåten er ment for produksjonsplanleggeren.
 
 ## <a name="modify-the-forecast-for-a-selected-item"></a>Endre prognosen for en utvalgt vare
 
@@ -36,9 +36,9 @@ Slik endrer du prognosen for en utvalgt vare:
 1. Fyll ut de andre feltene etter behov.
 1. Velg **Lagre** i handlingsruten.
 
-## <a name="modify-the-forecast-for-one-or-more-items-microsoft-excel"></a>Endre prognosen for én eller flere varer i Microsoft Excel
+## <a name="modify-the-forecast-for-one-or-more-items-with-microsoft-excel"></a>Endre prognosen for én eller flere varer med Microsoft Excel
 
-Slik endrer du prognosen for én eller flere varer i Microsoft Excel:
+Slik endrer du prognosen for én eller flere varer med Microsoft Excel:
 
 1. Gjør ett av følgende:
     - Åpne **Behovsprognose**-siden for en hvilken som helst vare (det spiller ingen rolle hvilken), som beskrevet i forrige del.

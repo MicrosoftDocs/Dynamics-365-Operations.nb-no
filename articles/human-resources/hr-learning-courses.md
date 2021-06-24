@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: f573dadeab88ead57fdb4b91ade21c244325058c
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 818d96b14e32716e95b57391df5a90f7d32c4bb0
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6054025"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190238"
 ---
 # <a name="set-up-training-courses"></a>Definer opplæringskurs
 
@@ -28,8 +28,7 @@ ms.locfileid: "6054025"
 
 Personaladministratorer og ledere kan bruke kursfunksjonene til å vedlikeholde opplysningene om opplæringen som tilbys ansatte.
 
- <a name="set-up-prerequisites"></a> Definer forutsetninger
----------------------
+##  <a name="set-up-prerequisites"></a> Definer forutsetninger
 
 Følgende informasjon er obligatorisk og må defineres før du oppretter kurs.
 -   **Kurstyper**
@@ -127,8 +126,7 @@ Tabellen nedenfor viser de mulige kursstatusene og handlingene du kan fullføre 
 ## <a name="course-participants"></a>Kursdeltakere
 Kursdeltakere er arbeidere som deltar på et opplæringskurs eller et arrangement. Du kan bare registrere deltakere for åpne kurs. Det største og minste antallet deltakere som kan meldes på et kurs, er definert på hurtigfanen **Generelt** på siden **Kurs**.
 
-<a name="workflow"></a>Arbeidsflyt
---------
+## <a name="workflow"></a>Arbeidsflyt
 
 Ansatte som registrerer seg for et kurs via siden **Ansattselvbetjening**, kan rute registreringen gjennom arbeidsflyt for godkjenning. Du kan tilordne en arbeidsflyt til et kurs i hurtigfanen **Generelt** på **Kurs**-siden.
 

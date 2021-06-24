@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: abc8607e5c3c6ab63a3878b92072bde2ebb0216c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0313bd1a5adc0fdb7a4958c5dfa013cfdc51491a
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814542"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189648"
 ---
 # <a name="register-material-consumption-using-a-mobile-device"></a>Registrere materialforbruk med en mobil enhet
 
@@ -28,8 +28,7 @@ ms.locfileid: "5814542"
 
 Dette emnet beskriver en arbeidsflyt som aktiverer registrering av råvareforbruk i produksjonen ved hjelp av en håndholdt enhet.
 
-<a name="introduction"></a>Introduksjon
-------------
+## <a name="introduction"></a>Introduksjon
 
 Denne arbeidsflyten er relevant hvis det er strenge krav til sporbarhet for materialer. For å vedlikeholde sporbarhet av materialet må det nøyaktige tidspunktet og antallet rapporteres for forbruk i slike tilfeller. Denne prosessen kan ses i motsetning til pre- eller backflushing-operasjoner, der det er en forskyvning mellom tidspunktet for registrering og tidspunktet når det faktiske forbruket finner sted. Dette emnet forklarer hvorfor en strategi for automatisk forbruk ikke kan brukes for noen materialer med krav til sporbarhet. La oss se på et enkelt scenario som forklarer hvordan du konfigurerer en arbeidsflyt for å aktivere registrering av råvareforbruk i produksjonen ved hjelp av en håndholdt enhet. [![konfigurer en arbeidsflyt for å aktivere registrering av råvareforbruk ved å bruke en håndholdt enhet](./media/scenario3.png)](./media/scenario3.png)
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: a7a06b5476302e43d107c448c139c235ea57b05b
-ms.sourcegitcommit: 57668404d61359b33e0c0280f2f7c4eb829b1ed2
+ms.openlocfilehash: a7a9fb619ce3488ad4e3e79292af7acc359b83c5
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "5947550"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193236"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-supply-chain-management"></a>Funksjoner som er fjernet eller avskrevet i Dynamics 365 Supply Chain Management
 
@@ -38,7 +38,7 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 
 ### <a name="job-card-device"></a>Jobbkortenhet
 
-|   |   |
+| &nbsp;  | &nbsp;  |
 |---|---|
 | **Årsak til avskrivning/fjerning** | [Jobbkortenheten](../production-control/config-job-card-device.md) erstattes av det nye [grensesnittet for produksjonsutførelse](../production-control/production-floor-execution-configure.md). |
 | **Erstattet med en annen funksjon?**   | Ja, [jobbkortenheten](../production-control/config-job-card-device.md) skal erstattes av det nye [grensesnittet for produksjonsutførelse](../production-control/production-floor-execution-configure.md). |
@@ -50,7 +50,7 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 
 ### <a name="dynamics-365-for-finance-and-operations---warehousing-the-warehouse-app"></a>Dynamics 365 for Finance and Operations - Warehousing (lagerappen)
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Fra april 2021 er *Dynamics 365 for Finance and Operations - Warehousing* (lagerappen) avskrevet, og den støttes ikke etter april 2022. Den erstattes nå av *mobilappen Lagerstyring*, som ble lansert sammen med versjon 10.0.17 av Supply Chain Management. Den nye appen er en fullstendig erstatning, men bruker samme underliggende rammeverk, noe som gjør det enkelt å migrere. Om nødvendig kan de to appene brukes side ved side for å hjelpe brukerne med å justere gradvis når de lærer å bruke den nye appen.<br><br>For mer informasjon om den nye mobilappen Lagerstyring kan du se [Mobilappen Lagerstyring](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application) og [Installere og koble til mobilappen Lagerstyring](../warehousing/install-configure-warehouse-management-app.md). |
 | **Erstattet med en annen funksjon?**   | Ja, erstattet av den nye mobilappen Lagerstyring. |
@@ -62,7 +62,7 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 
 ### <a name="internet-explorer-11-support-for-dynamics-365-is-deprecated"></a>Internet Explorer 11-støtte for Dynamics 365 er avskrevet
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Fra og med desember 2020 er Microsoft Internet Explorer 11-støtte for alle Dynamics 365-produkter avskrevet, og Internet Explorer 11 støttes ikke etter august 2021.<br><br>Dette vil påvirke kunder som bruker Dynamics 365-produkter som er utformet for bruk via et Internet Explorer 11-grensesnitt. Etter august 2021 støttes ikke Internet Explorer 11 for slike Dynamics 365-produkter. |
 | **Erstattet med en annen funksjon?**   | Vi anbefaler at kundene går over til Microsoft Edge.|
@@ -72,7 +72,7 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 
 ### <a name="use-of-built-in-supply-chain-management-master-planning-engine-for-manufacturing-scenarios"></a>Bruk av innebygd hovedplanleggingsmotor Supply Chain Management for produksjonsscenarioer
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | For å forbedre ytelsen og redusere SQL-databasebelastningen under kjøring av hovedplanlegging, blir den innebygde Supply Chain Management-hovedplanleggingsmotoren erstattet av Planleggingsoptimalisering. Planleggingsoptimalisering gjør det mulig å utføre raske planleggingskjøringer som kan utføres selv i kontortiden. Dette gjør at planleggerne kan reagere umiddelbart på endringer i behovs- eller planleggingsparametere. |
 | **Erstattet med en annen funksjon?**   | Ja, planleggingsoptimalisering erstatter den eksisterende innebygde planleggingsmotoren Supply Chain Management. |
@@ -84,7 +84,7 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 
 ### <a name="use-of-built-in-supply-chain-management-master-planning-engine-for-distribution-scenarios"></a>Bruk av innebygd hovedplanleggingsmotor Supply Chain Management for distribusjonscenarioer
 
-|   |  |
+| &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | For å forbedre ytelsen og redusere SQL-databasebelastningen under kjøring av hovedplanlegging, blir den innebygde Supply Chain Management-hovedplanleggingsmotoren erstattet av Planleggingsoptimalisering. Planleggingsoptimalisering gjør det mulig å utføre raske planleggingskjøringer som kan utføres selv i kontortiden. Dette gjør at planleggerne kan reagere umiddelbart på endringer i behovs- eller planleggingsparametere. |
 | **Erstattet med en annen funksjon?**   | Ja, planleggingsoptimalisering erstatter den eksisterende innebygde planleggingsmotoren Supply Chain Management. |

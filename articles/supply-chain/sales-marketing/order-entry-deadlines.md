@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cf2780edc75891d565a184135d6a915a0e6f8504
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7d64729d6da5c57267d6d62274cce496888548d7
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839083"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189998"
 ---
 # <a name="order-entry-deadlines"></a>Ordrefrister
 
@@ -99,8 +99,7 @@ Følgende tabell viser tidsfristene for ordrer for område A og B, omregnet til 
 
 **Obs!** Hvis det foreligger justering for sommertid, justeres tidsfristene for ordrer i henhold til dette.
 
-<a name="additional-resources"></a>Tilleggsressurser
---------
+## <a name="additional-resources"></a>Tilleggsressurser
 
 [Leveringsplaner](delivery-schedules.md)
 

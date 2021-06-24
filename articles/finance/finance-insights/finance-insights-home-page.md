@@ -2,7 +2,7 @@
 title: Startside for Finance Insights (forhåndsversjon)
 description: Finance Insights gir konfigurerbare og utvidbare modeller som hjelper deg med å forutse firmaets kontantstrøm nøyaktig og intelligent, forutser når du skal motta betaling for utestående fordringer, og genererer et budsjettforslag som kan gjøre budsjettprosessen raskere. Alle disse funksjonene er basert på intelligente maskinlæringsmodeller.
 author: ShivamPandey-msft
-ms.date: 07/20/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 3a78a162469790d797344ce9311c55bfcecd19f4
-ms.sourcegitcommit: 273903b7b73ac726d447c50f7086e6d8b0f0f74e
+ms.openlocfilehash: 4876d2d4ad79dc09ce4b372eedf4c6ab31930957
+ms.sourcegitcommit: 655b0e16c7aef6182cd58bc816b901470e1bb2ce
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "6086995"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "6222516"
 ---
 # <a name="finance-insights-home-page-preview"></a>Startside for Finance Insights (forhåndsversjon)
 
@@ -68,7 +68,9 @@ Kjennskap til prosessen med å opprette og behandle ressurser i Azure, Microsoft
 
 ## <a name="configure-finance-insights"></a>Konfigurere Finance Insights
 
-Du må fullføre noen konfigurasjonstrinn før du kan bruke Finance Insights. Hvis du vil ha mer informasjon om hvordan du konfigurerer Finance Insights, kan du se [Konfigurasjon for Finance Insights](configure-for-fin-insites.md).
+Du må fullføre noen konfigurasjonstrinn før du kan bruke Finance Insights. Hvis du vil ha mer informasjon om hvordan du konfigurerer Finance Insights, kan du se følgende:
+  - For versjoner opptil 10.0.19: [Konfigurasjon for Finance Insights – versjoner opptil 10.0.19](configure-for-fin-insites.md).
+  - For versjon 10.0.20 og nyere: [Konfigurasjon for Finance Insights (forhåndsversjon) – versjon 10.0.20 og nyere](configure-for-fin-insites-PubPrvw.md).
 
 ## <a name="create-a-data-integrator-project"></a>Opprette et dataintegreringsprosjekt
 
@@ -84,10 +86,7 @@ Hvis du bruker demodata til å teste kundebetalingsprediksjoner, må du kanskje 
 Hvis du vil aktivere kundebetalingsprediksjoner, må du fullføre et sett med trinn for å bygge en maskinlæringsmodell som bruker organisasjonens data til å generere prediksjoner om når kunder sannsynligvis vil betale utestående fakturaer, og når bestemte fakturaer sannsynligvis vil bli betalt. Hvis du vil ha mer informasjon og de spesifikke trinnene som skal fullføres, kan du se [Aktivere kundebetalingsprognoser](enable-cust-paymnt-prediction.md). 
 
 ### <a name="enable-cash-flow-forecasting"></a>Aktivere kontantstrømprognose
-Hvis du vil aktivere kontantstrømprognoser, må du fullføre et sett med trinn for å bygge en maskinlæringsmodell som bruker organisasjonens data til å generere kontantstrømprognoser. Hvis du vil ha mer informasjon og de spesifikke trinnene som skal fullføres, kan du se [Aktivere kontantstrømprognoser](enable-cash-flow-forecasting.md) 
-
-### <a name="set-up-and-use-cash-flow-forecasting"></a>Definere og bruke kontantstrømprognoser
-Hvis du vil ha mer informasjon om hvordan du definerer og bruker kontantstrømprognoser, kan du se [Aktivere kontantstrømprognose](enable-cash-flow-forecasting.md). Hvis du vil ha mer informasjon om hvordan du bruker denne funksjonen, kan du se [Kontantstrømprognose](cash-flow-forecast-intro.md).
+Hvis du vil aktivere kontantstrømprognoser, må du fullføre et sett med trinn for å bygge en maskinlæringsmodell som bruker organisasjonens data til å generere kontantstrømprognoser. Hvis du vil ha mer informasjon og de spesifikke trinnene som skal fullføres, kan du se [Aktivere kontantstrømprognose](enable-cash-flow-forecasting.md).
 
 ### <a name="enable-budget-proposals"></a>Aktivere budsjettforslag
 
@@ -111,14 +110,12 @@ Funksjonen for kontantstrømprognose kan hjelpe deg å anslå likviditetsbeholdn
 
 - Hvis du vil ha informasjon om de nye funksjonene i kontantstrømprognoser, kan du se [Kontantstrømprognose](cash-flow-forecast-intro.md).
 - Hvis du vil ha informasjon om hvordan du importerer eksterne data som skal inkluderes i kontantstrømprognosen her, kan du se [Bruke eksterne data i kontantstrømprognoser](external-data-in-cash-flow.md). 
-- Hvis du vil ha informasjon om hvordan du bruker en AI-modell til å projisere langsiktig kontantstrøm, se [Oversikt over kontantstrømprognoser](cash-position.md).
+- Hvis du vil ha informasjon om hvordan du bruker en AI-modell til å projisere kortsiktig kontantstrøm, kan du se [Likviditetsbeholdning](cash-position.md).
 - Hvis du vil ha informasjon om hvordan du lagrer kontantstrømbeholdninger og kontantstrømprognoser som øyeblikksbilder og sammenligner øyeblikksbilder med faktiske data, kan du se [Oversikt over øyeblikksbilder](payment-snapshots.md).
 
 ### <a name="using-budget-proposal"></a>Bruke budsjettforslag
 
 Hvis du vil ha informasjon om hvordan du gjør opprettelsen av et budsjett raskere, kan du se [Budsjettforslag](budget-proposals.md). 
-
-Demonstrasjonsdata for budsjettforslag:
 
 ## <a name="feedback-and-support"></a>Tilbakemelding og støtte
 

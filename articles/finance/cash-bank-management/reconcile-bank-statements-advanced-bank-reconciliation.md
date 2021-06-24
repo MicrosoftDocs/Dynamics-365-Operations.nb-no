@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9e5b097d667186a849b23814917d0d6f837c25de
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0b8e64264795fe90b52471a82220fe87459ca248
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5835010"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188596"
 ---
 # <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Avstemme bankkontoutdrag ved hjelp av avansert bankavstemming
 
@@ -28,8 +28,7 @@ ms.locfileid: "5835010"
 
 Avansert bankavstemming-funksjonen lar deg importere elektroniske bankkontoutdrag og automatisk avstemme dem med banktransaksjoner i Dynamics 365 Finance. Dette emnet beskriver avstemmingsprosessen.  
 
-<a name="import-an-electronic-bank-statement"></a>Importere et elektronisk bankkontoutdrag
------------------------------------
+## <a name="import-an-electronic-bank-statement"></a>Importere et elektronisk bankkontoutdrag
 
 Du importerer bankkontoutdraget ved hjelp av handlingen **Importer utdrag** på siden **Bankkontoutdrag**. På bankkontoutdraget identifiseres bankkontoen av en kombinasjon av verdier som er angitt for bankkontodetaljene. Disse verdiene inkluderer banknavn, bankkontonummer, rutenummer, SWIFT-kode (Society for Worldwide Interbank Financial Telecommunication) og IBAN (International Bank Account nummer). 
 

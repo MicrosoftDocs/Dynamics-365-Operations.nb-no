@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 562cf07348e77d9c2f169e31a852843bea10fcc6
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 780d1e1307b69ec9a31d032039970de454160d6f
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816514"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189698"
 ---
 # <a name="generate-a-statistical-baseline-forecast"></a>Generere en statistisk basislinjeprognose
 
@@ -67,8 +67,7 @@ Hvis prognosen ikke genereres for et stort sett av varer, men, for eksempel for 
 > [!NOTE]
 > En potensielt flat prognose kan skyldes at de historiske dataene ikke har en lang nok historisk tidsramme (minst 3 tidsperioder for å kunne finne mønstre, for eksempel 3 år med månedlig prognose). For å få et bedre resultat kan du prøve å endre kornetheten til tidsintervallet eller øke tidsintervallet.
 
-<a name="additional-resources"></a>Tilleggsressurser
---------
+## <a name="additional-resources"></a>Tilleggsressurser
 
 - [Oppsett av behovsprognose](demand-forecasting-setup.md)
 

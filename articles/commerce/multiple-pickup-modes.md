@@ -2,7 +2,7 @@
 title: Aktiver flere henteleveringsmåter for kundeordrer
 description: Dette emnet forklarer funksjonaliteten i Microsoft Dynamics 365 Commerce som lar deg opprette kundeordrer for henting i en butikk.
 author: hhainesms
-ms.date: 11/17/2020
+ms.date: 06/07/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 124765a3d4d2ebd01e200b76fc862e2c37073b8e
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: ae7df6679c261b5e5dcd39e4ca6fe0e21d993927
+ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020657"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "6216773"
 ---
 # <a name="enable-multiple-pickup-delivery-modes-for-customer-orders"></a>Aktiver flere henteleveringsmåter for kundeordrer
 
@@ -38,7 +38,7 @@ Når du har aktivert funksjonen **Støtte for flere henteleveringsmåter**, kan 
 
 Feltene **Utbæringsleveringsmåte** og **Elektronisk leveringsmåte**, og alternativet **Vis bare transportøralternativer for forsendelsesordrer**, er omplassert til denne hurtigfanen.
 
-Før du konfigurerer flere henteleveringsmåter, må du definere leveringsmåtene. På siden **Leveringsmåter** i Commerce Headquarters legger du til leveringsmåter som skal regnes som henteleveringsmåter. Kontroller at hele konfigurasjonen er fullført. Kontroller for eksempel at leveringsmåten er koblet til riktige kanaler og varer. Når du er ferdig, kjører du jobben **Behandle leveringsmåter** for å opprette relasjonene mellom leveringsmåten, kanalene og varene. Når jobben er ferdig, åpner du siden **Distribusjonsplan** i Commerce Headquarters og kjører **1120**-distribusjonsjobben for å sikre at de relevante Commerce-kanaldatabasene oppdateres med den nye leveringsmåtekonfigurasjonen.
+Før du konfigurerer flere henteleveringsmåter, må du definere leveringsmåtene. På siden **Leveringsmåter** i Commerce Headquarters legger du til leveringsmåter som skal regnes som henteleveringsmåter. Kontroller at hele konfigurasjonen er fullført. Hvis du for eksempel tilbyr henting utenfor butikk som leveringsalternativ for netthandlere i noen butikker, må du opprette en ny leveringsmåte for dette formålet. Du kan opprette denne leveringsmåten ved å bruke «henting utenfor butikk» som beskrivelse. Du må deretter sørge for at leveringsmåten «henting utenfor butikk» tilordnes til alle Commerce-kanalene som tilbyr det, inkludert nettbutikker som kan tilby dette alternativet, og de individuelle butikkanalene som tilbyr denne oppfyllingsmetoden. Leveringsmåter må også knyttes til produktene. Hvis det i dette eksemplet er visse produkter som ikke kan leveres ved å bruke «henting utenfor butikk», må du sørge for at disse varene utelates. Når du er ferdig å legge til eventuelle nye leveringsmåter, kjører du jobben **Behandle leveringsmåter** for å opprette relasjonene mellom leveringsmåten, kanalene og varene. Når jobben er fullført, åpner du siden **Distribusjonsplan** i Commerce Headquarters og kjører **1120**-distribusjonsjobben for å sikre at de relevante Commerce-kanaldatabasene oppdateres med den nye leveringsmåtekonfigurasjonen.
 
 ![Eksempel på en leveringsmåtekonfigurasjon for henting utenfor butikk](media/pickupmodes.png)
 

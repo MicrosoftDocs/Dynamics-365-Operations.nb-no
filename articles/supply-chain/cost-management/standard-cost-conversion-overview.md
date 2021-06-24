@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fdcb45918b404f8a47f27bcea7c02a8397c9336f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 236743277a95b8a1170ca05f93106575ea1cc8e4
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821447"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187608"
 ---
 # <a name="standard-cost-conversion-overview"></a>Oversikt  over standard kostnadskonvertering
 
@@ -92,8 +92,7 @@ I rapporten **Avviksanalyserapport** kan du analysere revalueringsavvik, og i ra
 -   Analyser tilbakedaterte lagerbevegelser. Bruk **Lagerverdi**-rapporten til å vise tilbakedaterte lagerbevegelser som ble angitt etter konverteringen. Fra-datoen og til-datoen i rapporten bør stemme overens med startdatoen for overgangen og konverteringsdatoen (minus én dag). Rapportens utvalgskriterier bør gjenspeile de konverterte varene. Rapporten viser lagerbevegelser som ble utført for standardkostnad i løpet av overgangsperioden.
 
 
-<a name="additional-resources"></a>Tilleggsressurser
---------
+## <a name="additional-resources"></a>Tilleggsressurser
 
 [Forutsetninger for standard kostnadskonvertering](prerequisites-standard-cost-conversion.md)
 

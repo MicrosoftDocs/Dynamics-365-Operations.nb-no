@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7044aa84dc7ea7adc303c250e75ca6fb4a493800
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: edc6da8a54de98696322ace67ada5dfe97af2024
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5831248"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189950"
 ---
 # <a name="replenishment-with-withdrawal-kanbans"></a>Etterfylling med uttak – Kanbaner
 
@@ -30,7 +30,6 @@ ms.locfileid: "5831248"
 Dette emnet beskriver hvordan kanban for uttak brukes til etterfylling av materialer til produksjonsaktiviteter.
 
 ## <a name="workflow-for-material-replenishment-that-uses-the-withdrawal-kanban"></a>Arbeidsflyt for etterfylling av materialer som bruker kanban for uttak
--------------------------------------------------------------------
 
 Kanban for uttak kan brukes til å flytte en kanban for en enkelt vare mellom lagre og produksjonslokasjoner der materialene forbrukes. Kanban for uttak støtter en pull-basert løsning for etterfylling av materialer, der et pull-signal er nødvendig for å utløse forsyning for et bestemt behov. 
 

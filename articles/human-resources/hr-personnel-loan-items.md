@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 33d5e831d3a631aa17e78628a4e88b5e1cfa8c73
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: e4109762a2db3114ad66882092d6729dd9b08364
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6052871"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6190214"
 ---
 # <a name="manage-items-that-are-lent-to-workers"></a>Administrere varer som er lånt ut til arbeidere
 
@@ -41,14 +41,12 @@ Ansatte kan vise postene for varene som er lånt ut til dem, ved hjelp av områd
 
 Ledere kan vise utlånte varer til sine direkte underordnede. De kan også få tilgang til å legge til nye utlånsvarer på vegne av ansatte.
 
- <a name="account-for-lost-or-misplaced-loan-items"></a> Konto for utlånsvarer som er mistet eller kommet bort
------------------------------------------
+##  <a name="account-for-lost-or-misplaced-loan-items"></a> Konto for utlånsvarer som er mistet eller kommet bort
 
 Hvis en vare skades eller kommer bort, må du registrere en fiktiv returpost. Deretter kan du enten slette varen eller beholde den i oversikten, og endre beskrivelsen for å vise at varen ikke er tilgjengelig.
 
 
-<a name="additional-resources"></a>Tilleggsressurser
---------
+## <a name="additional-resources"></a>Tilleggsressurser
 
 [Personale](index.md)
 

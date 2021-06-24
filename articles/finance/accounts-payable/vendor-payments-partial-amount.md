@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a46ebb841b4abe6aa5bd8b06966f4197b27aeaee
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2ee17aeb75e2bdc3b9c36d50914c24aa9d6218b7
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841219"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6189523"
 ---
 # <a name="vendor-payments-for-a-partial-amount"></a>Leverandørbetalinger for et delbeløp
 
@@ -28,8 +28,7 @@ ms.locfileid: "5841219"
 
 Du kan eventuelt opprette en betaling til en leverandør som er mindre enn beløpet i en faktura. Denne artikkelen beskriver de ulike alternativene for håndtering av dette. Hvilke alternativer som er tilgjengelige, avhenger av dine forretningsbehov og konfigurasjon. 
 
-<a name="cash-discount-amounts"></a>Kontantrabattbeløp
----------------------
+## <a name="cash-discount-amounts"></a>Kontantrabattbeløp
 
 En leverandør kan tilby deg en kontantrabatt for å betale en faktura før forfallsdatoen. Du kan for eksempel registrere en faktura for 100,00 som angir en kontantrabatt på 2 prosent hvis fakturaen er betalt innen 10 dager. Forfallsdatoen er om 30 dager. Hvis et betalingsforslag bruker kontantrabatten som et kriterium for å velge en faktura, og hvis forslaget kjøres på eller før kontantrabattdatoen, velges fakturaen for betaling, og betalingen opprettes for 98,00. En kontantrabatt kan også brukes for en engangsbetaling som ble opprettet manuelt.
 

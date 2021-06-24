@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: ac8b63b98c37c7429cee792b85f492f3ca1d57c7
-ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
+ms.openlocfilehash: e2fc40e3e9874d47dd51e773628ba1ce75b8ebab
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6103634"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193887"
 ---
 # <a name="firm-planned-orders"></a>Autoriser planlagte ordrer
 
@@ -102,7 +102,7 @@ Automatisk autorisasjon gjør det mulig å autorisere planlagte bestillinger som
 
 Både planleggingsoptimalisering og den innebygde planleggingsmotoren kan brukes til automatisk autorisering av planlagte bestillinger. Det er imidlertid noen viktige forskjeller. Mens planleggingsoptimalisering for eksempel bruker ordredatoen (det vil si startdatoen) for å bestemme hvilke planlagte bestillinger som skal autoriseres, bruker den innebygde planleggingsmotoren behovsdatoen (det vil si sluttdatoen). Følgende tabell viser en oversikt over forskjellene.
 
-| | Planleggingsoptimalisering | Innebygd planleggingsmotor |
+| Funksjon | Planleggingsoptimalisering | Innebygd planleggingsmotor |
 |---|---|---|
 | **Datogrunnlag** | Automatisk autorisasjon er basert på ordredatoen (Startdato). | Automatisk autorisasjon er basert på behovsdatoen (sluttdato). |
 | **Leveringstid** | Fordi ordredatoen (Startdato) utløser autorisering, trenger du ikke å ta hensyn til leveringstiden som en del av autorisasjonshorisonten. | Hvis du vil ha hjelp til å sikre at ordrer blir autorisert til rett tid, må autorisasjonshorisonten være lenger enn leveringstiden. |

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f1297f405e57c2de4f42f05f78ef52b2d763f0f8
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f57c3405e03651798b7e0aaf1fab84d25f33f7cc
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821991"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187874"
 ---
 # <a name="audit-policy-rules"></a>Overvåkingspolicyregler
 
@@ -28,8 +28,7 @@ ms.locfileid: "5821991"
 
 Du kan bruke overvåkingspolicyer for å evaluere reiseregninger, leverandørfakturaer og bestillinger for å være sikker på at de samsvarer med policyregler du oppretter. Alle reglene som er knyttet til en overvåkingspolicy, kjøres i satsvis modus i henhold til en tidsplan du angir.  Hver policyregel er en forekomst av en policyregeltype. For hver policyregeltype kan bare én policyregel være aktiv om gangen. 
 
-<a name="queries-and-query-types"></a>Spørringer og spørringstyper
------------------------
+## <a name="queries-and-query-types"></a>Spørringer og spørringstyper
 
 Når du oppretter en overvåkingspolicyregel, velger du først en policyregeltype. Policyregeltypen angir applikasjonsobjekttre (AOT)-spørringen som skal brukes som utgangpunkt for å opprette policyregelen. Det angir også hvilken spørringstype som skal brukes for policyregelen. Spørringen bestemmer kildedokumentet som policyregelen evaluerer. Det angir også feltene du velger i kildedokumentet, som identifiserer den juridiske enheten og datoen som skal brukes når dokumenter velges for overvåking. Spørringstypen styrer standardfeltene på spørringssiden og siden Overvåkingspolicyregel. Tabellen nedenfor viser de spørringstypene som er tilgjengelige for overvåkingspolicyregler.
 
@@ -91,8 +90,7 @@ Alle policyreglene for en bestemt overvåkingspolicy deler de samme satsvise par
 
 
 
-<a name="additional-resources"></a>Tilleggsressurser
---------
+## <a name="additional-resources"></a>Tilleggsressurser
 
 [Brudd på og saker for overvåkingspolicy](audit-policy-violations-cases.md)
 [Definere overvåkingspolicyer for kildedokumenter](tasks/define-audit-policies-source-documents.md)

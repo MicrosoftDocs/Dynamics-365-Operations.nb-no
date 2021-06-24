@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: db8b9fdaf05f58d1386513348c11fcc54887d9c8
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6ad41e002f6246311c3755df5baf4a010f9204ee
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826473"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188916"
 ---
 # <a name="monitor-forecast-accuracy"></a>Overvåke prognosenøyaktighet
 
@@ -38,8 +38,7 @@ Supply Chain Management beregner følgende typer prognosenøyaktighet:
 > Hvis du bruker behovsprognose og Microsoft Azure Machine Learning, er beregning av intern modellnøyaktighet basert på testdatasettet. Hvis du vil angi størrelsen på testdatasettet, kan du angi **TEST\_SET\_SIZE\_PERCENT**-parameteren på siden **Parametere for behovsprognose**. For eksempel hvis du setter verdien til **20**, vil de siste 20 prosentene av historiske data bli brukt til å beregne den interne modellnøyaktigheten.
 
 
-<a name="additional-resources"></a>Tilleggsressurser
---------
+## <a name="additional-resources"></a>Tilleggsressurser
 
 [Autorisere en justert prognose](authorize-adjusted-forecast.md)
 

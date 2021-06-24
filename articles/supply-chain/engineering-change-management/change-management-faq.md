@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-03-25
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 69232eed8520bafeb734ffad43b333bf9e36909e
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 9c95c1f2342654ca2bbee57959becc85291eebbc
+ms.sourcegitcommit: a7649b361ec54b49c0e9ee1c1c63a8815f320225
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018691"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6187277"
 ---
 # <a name="engineering-change-management-faq"></a>Vanlige spørsmål om styring av teknisk endring
 
@@ -46,7 +46,7 @@ Dette alternativet er mye enklere å administrere, fordi hvis du vil endre fra �
 
 De fleste organisasjoner velger dette alternativet fordi det gir versjons- og endringsbehandling, men de legger ikke til de ekstra administrasjonskostnadene for å spore versjonen i hver transaksjon, på lager og under hovedplanlegging.
 
-## <a name="which-fields-are-copied-to-the-released-item-template"></a>Hvilke felt kopieres til den frigitte varemalen?
+## <a name="which-fields-are-copied-from-the-released-item-template"></a>Hvilke felter kopieres fra den frigitte varemalen?
 
 Når et teknisk firma oppretter et teknisk produkt, opprettes dette produktet som et frigitt produkt i det tekniske firmaet. Det frigitte produktet som opprettes, er basert på den valgte *frigitte varemalen*. (Den frigitte varemalen er i seg selv et eksisterende frigitt produkt.) Den frigitte varemalen brukes også når produktet frigis til et driftsfirma. I hvert tilfelle definerer den frigitte varemalen de fleste feltverdiene for det frigitte produktet, og disse verdiene kommer fra siden **Frigitt produktdetaljer**.
 

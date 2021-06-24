@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: Release 10.0.6
-ms.openlocfilehash: dee9a6a7e2a5278f069958ce00689b1beb9b1bd7
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a243399536fec3f5361104289c38e550bf8b1144
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792153"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193288"
 ---
 # <a name="ratings-and-reviews-modules"></a>Vurderings- og omtalemoduler
 
@@ -54,7 +54,11 @@ Illustrasjonen nedenfor viser hvordan dialogboksen **Legg til modul** viser rang
 
 Modulen for omtaleskriving inkluderer en **Skriv en vurdering**-knapp som lar brukere logge på, tilordne en vurdering og skrive en omtale av et produkt. Denne modulen lar også brukere redigere en vurdering eller omtale som de tidligere har sendt. Denne modulen vises vanligvis over listemodulene for vurderingshistogram og produktevalueringer på en PDP.
 Følgende illustrasjon viser dialogboksen **Skriv en gjennomgang** som vises når en kunde velger **Skriv en vurdering**. Kunden kan bruke denne dialogboksen til å sende inn en vurdering og en omtale.
-![Dialogboksen Skriv en vurdering](media/rnr-eCommerce-write-review-module.png) Tabellen nedenfor viser egenskapen for Skriv en vurdering-modulen som må konfigureres i redigeringsverktøyet.
+
+![Dialogboksen Skriv en vurdering](media/rnr-eCommerce-write-review-module.png)
+
+Tabellen nedenfor viser egenskapen for Skriv en vurdering-modulen som må konfigureres i redigeringsverktøyet.
+
 | Egenskapsnavn | Verdi        | Egenskapsbeskrivelse                 |
 |---------------|--------------|--------------------------------------|
 | Navn          | Skriv vurdering | Navnet på Skriv en vurdering-modulen |
