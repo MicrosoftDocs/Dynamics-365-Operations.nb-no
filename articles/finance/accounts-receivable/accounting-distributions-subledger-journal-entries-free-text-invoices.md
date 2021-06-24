@@ -15,32 +15,31 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9c3609ed396b543bb708ea36f308eee60976e66f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7e3e1e0a757dcd51edcd38bb348e52b756e57334
+ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837183"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "6188764"
 ---
-# <a name="accounting-distributions-and-subledger-entries-for-free-text-invoices"></a><span data-ttu-id="39dc4-104">Regnskapsdistribusjoner og underfinansoppføringer for fritekstfakturaer</span><span class="sxs-lookup"><span data-stu-id="39dc4-104">Accounting distributions and subledger entries for free text invoices</span></span>
+# <a name="accounting-distributions-and-subledger-entries-for-free-text-invoices"></a><span data-ttu-id="a0af5-104">Regnskapsdistribusjoner og underfinansoppføringer for fritekstfakturaer</span><span class="sxs-lookup"><span data-stu-id="a0af5-104">Accounting distributions and subledger entries for free text invoices</span></span>
 
 [!include [banner](../includes/banner.md)]
 
-<span data-ttu-id="39dc4-105">Regnskapsdistribusjoner brukes til å definere hvordan beløp skal gjøres rede for, for eksempel hvordan omsetning, avgiften eller gebyrene skal gjøres rede for på en fritekstfaktura.</span><span class="sxs-lookup"><span data-stu-id="39dc4-105">Accounting distributions are used to define how an amount will be accounted for, such as how the revenue, tax, or charges will be accounted for on a free text invoice.</span></span> <span data-ttu-id="39dc4-106">Alle beløp som må redegjøres for når fritekstfakturaen er journalføres, har én eller flere regnskapsdistribusjoner.</span><span class="sxs-lookup"><span data-stu-id="39dc4-106">Every amount that must be accounted for when the free text invoice is journalized will have one or more accounting distributions.</span></span>
+<span data-ttu-id="a0af5-105">Regnskapsdistribusjoner brukes til å definere hvordan beløp skal gjøres rede for, for eksempel hvordan omsetning, avgiften eller gebyrene skal gjøres rede for på en fritekstfaktura.</span><span class="sxs-lookup"><span data-stu-id="a0af5-105">Accounting distributions are used to define how an amount will be accounted for, such as how the revenue, tax, or charges will be accounted for on a free text invoice.</span></span> <span data-ttu-id="a0af5-106">Alle beløp som må redegjøres for når fritekstfakturaen er journalføres, har én eller flere regnskapsdistribusjoner.</span><span class="sxs-lookup"><span data-stu-id="a0af5-106">Every amount that must be accounted for when the free text invoice is journalized will have one or more accounting distributions.</span></span>
 
-<a name="accounting-distributions"></a><span data-ttu-id="39dc4-107">Regnskapsdistribusjoner</span><span class="sxs-lookup"><span data-stu-id="39dc4-107">Accounting distributions</span></span>
-------------------------
+## <a name="accounting-distributions"></a><span data-ttu-id="a0af5-107">Regnskapsdistribusjoner</span><span class="sxs-lookup"><span data-stu-id="a0af5-107">Accounting distributions</span></span>
 
-<span data-ttu-id="39dc4-108">Du kan bruke følgende knapper på Fritekstfaktura-siden for å vise, og eventuelt endre, regnskapsdistribusjonene for hvert beløp i fritekstfakturaen.</span><span class="sxs-lookup"><span data-stu-id="39dc4-108">You can use the following buttons in the Free text invoice page to view, and possibly change, the accounting distributions for each amount on the free text invoice.</span></span>
+<span data-ttu-id="a0af5-108">Du kan bruke følgende knapper på Fritekstfaktura-siden for å vise, og eventuelt endre, regnskapsdistribusjonene for hvert beløp i fritekstfakturaen.</span><span class="sxs-lookup"><span data-stu-id="a0af5-108">You can use the following buttons in the Free text invoice page to view, and possibly change, the accounting distributions for each amount on the free text invoice.</span></span>
 
--   <span data-ttu-id="39dc4-109">**Fordel beløp** – Vis og endre regnskapsdistribusjonene for en enkelt linje og eventuelle underordnede linjer, for eksempel avgifter eller gebyrer.</span><span class="sxs-lookup"><span data-stu-id="39dc4-109">**Distribute amounts**—View and change the accounting distributions for an individual line and any child lines, such as taxes or charges.</span></span> <span data-ttu-id="39dc4-110">Du kan også vise og endre regnskapsdistribusjonene for den underordnede linjen direkte fra Mva-transaksjoner- eller Tilleggstransaksjoner-siden.</span><span class="sxs-lookup"><span data-stu-id="39dc4-110">You can also view and change the accounting distributions for the child line directly from the Sales tax transactions page or the Charges transactions page.</span></span>
-    -   <span data-ttu-id="39dc4-111">Endre fritekstfakturahodebeløp, for eksempel tillegg eller avrundingsbeløp for valuta.</span><span class="sxs-lookup"><span data-stu-id="39dc4-111">Change free text invoice header amounts, such as charges or currency rounding amounts.</span></span>
-    -   <span data-ttu-id="39dc4-112">Endre fritekstfakturalinjebeløp.</span><span class="sxs-lookup"><span data-stu-id="39dc4-112">Change free text invoice line amounts.</span></span>
--   <span data-ttu-id="39dc4-113">**Vis distribusjoner** – Vis regnskapsdistribusjonene for alle linjer i dokumentet.</span><span class="sxs-lookup"><span data-stu-id="39dc4-113">**View distributions**—View the accounting distributions for all lines on the document.</span></span> <span data-ttu-id="39dc4-114">Du kan ikke endre regnskapsdistribusjonene fra denne visningen.</span><span class="sxs-lookup"><span data-stu-id="39dc4-114">You can't change the accounting distributions from this view.</span></span>
-    -   <span data-ttu-id="39dc4-115">Vis overskrift og linjebeløp.</span><span class="sxs-lookup"><span data-stu-id="39dc4-115">View header and line amounts.</span></span>
+-   <span data-ttu-id="a0af5-109">**Fordel beløp** – Vis og endre regnskapsdistribusjonene for en enkelt linje og eventuelle underordnede linjer, for eksempel avgifter eller gebyrer.</span><span class="sxs-lookup"><span data-stu-id="a0af5-109">**Distribute amounts**—View and change the accounting distributions for an individual line and any child lines, such as taxes or charges.</span></span> <span data-ttu-id="a0af5-110">Du kan også vise og endre regnskapsdistribusjonene for den underordnede linjen direkte fra Mva-transaksjoner- eller Tilleggstransaksjoner-siden.</span><span class="sxs-lookup"><span data-stu-id="a0af5-110">You can also view and change the accounting distributions for the child line directly from the Sales tax transactions page or the Charges transactions page.</span></span>
+    -   <span data-ttu-id="a0af5-111">Endre fritekstfakturahodebeløp, for eksempel tillegg eller avrundingsbeløp for valuta.</span><span class="sxs-lookup"><span data-stu-id="a0af5-111">Change free text invoice header amounts, such as charges or currency rounding amounts.</span></span>
+    -   <span data-ttu-id="a0af5-112">Endre fritekstfakturalinjebeløp.</span><span class="sxs-lookup"><span data-stu-id="a0af5-112">Change free text invoice line amounts.</span></span>
+-   <span data-ttu-id="a0af5-113">**Vis distribusjoner** – Vis regnskapsdistribusjonene for alle linjer i dokumentet.</span><span class="sxs-lookup"><span data-stu-id="a0af5-113">**View distributions**—View the accounting distributions for all lines on the document.</span></span> <span data-ttu-id="a0af5-114">Du kan ikke endre regnskapsdistribusjonene fra denne visningen.</span><span class="sxs-lookup"><span data-stu-id="a0af5-114">You can't change the accounting distributions from this view.</span></span>
+    -   <span data-ttu-id="a0af5-115">Vis overskrift og linjebeløp.</span><span class="sxs-lookup"><span data-stu-id="a0af5-115">View header and line amounts.</span></span>
 
-## <a name="distributing-amounts"></a><span data-ttu-id="39dc4-116">Distribuere beløp</span><span class="sxs-lookup"><span data-stu-id="39dc4-116">Distributing amounts</span></span>
-<span data-ttu-id="39dc4-117">Når du registrerer en fritekstfaktura, fordeles hvert beløp på følgende måte.</span><span class="sxs-lookup"><span data-stu-id="39dc4-117">When you enter a free text invoice, each amount will be distributed as follows.</span></span>
+## <a name="distributing-amounts"></a><span data-ttu-id="a0af5-116">Distribuere beløp</span><span class="sxs-lookup"><span data-stu-id="a0af5-116">Distributing amounts</span></span>
+<span data-ttu-id="a0af5-117">Når du registrerer en fritekstfaktura, fordeles hvert beløp på følgende måte.</span><span class="sxs-lookup"><span data-stu-id="a0af5-117">When you enter a free text invoice, each amount will be distributed as follows.</span></span>
 
 <table>
 <colgroup>
@@ -50,86 +49,86 @@ ms.locfileid: "5837183"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="39dc4-118">Angi et pengebeløp</span><span class="sxs-lookup"><span data-stu-id="39dc4-118">Type of monetary amount</span></span></th>
-<th><span data-ttu-id="39dc4-119">Der hovedkontoen vises fra</span><span class="sxs-lookup"><span data-stu-id="39dc4-119">Where the main account is displayed from</span></span></th>
-<th><span data-ttu-id="39dc4-120">Rekkefølge som bestemmer hvilken standard finansdimensjon som vises</span><span class="sxs-lookup"><span data-stu-id="39dc4-120">Order of priority that determines which default financial dimension is displayed</span></span></th>
+<th><span data-ttu-id="a0af5-118">Angi et pengebeløp</span><span class="sxs-lookup"><span data-stu-id="a0af5-118">Type of monetary amount</span></span></th>
+<th><span data-ttu-id="a0af5-119">Der hovedkontoen vises fra</span><span class="sxs-lookup"><span data-stu-id="a0af5-119">Where the main account is displayed from</span></span></th>
+<th><span data-ttu-id="a0af5-120">Rekkefølge som bestemmer hvilken standard finansdimensjon som vises</span><span class="sxs-lookup"><span data-stu-id="a0af5-120">Order of priority that determines which default financial dimension is displayed</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="39dc4-121">Fritekstfakturalinje</span><span class="sxs-lookup"><span data-stu-id="39dc4-121">Free text invoice line</span></span></td>
-<td><span data-ttu-id="39dc4-122">Finanskontoen på fritekstfakturalinjen.</span><span class="sxs-lookup"><span data-stu-id="39dc4-122">The ledger account on the free text invoice line.</span></span></td>
+<td><span data-ttu-id="a0af5-121">Fritekstfakturalinje</span><span class="sxs-lookup"><span data-stu-id="a0af5-121">Free text invoice line</span></span></td>
+<td><span data-ttu-id="a0af5-122">Finanskontoen på fritekstfakturalinjen.</span><span class="sxs-lookup"><span data-stu-id="a0af5-122">The ledger account on the free text invoice line.</span></span></td>
 <td><ol>
-<li><span data-ttu-id="39dc4-123">Hvis hovedkontoen er en tildelingskonto, bruker du standardverdien fra tildelingskontodefinisjonen.</span><span class="sxs-lookup"><span data-stu-id="39dc4-123">If the main account is an allocation account, use the default value from the allocation account definition.</span></span></li>
-<li><span data-ttu-id="39dc4-124">Hvis hovedkontoen ikke er en tildelingskonto, bruk standardmalen for finansdimensjon på fritekstfakturalinjen.</span><span class="sxs-lookup"><span data-stu-id="39dc4-124">If the main account is not an allocation account, use the financial dimension default template on the free text invoice line.</span></span></li>
-<li><span data-ttu-id="39dc4-125">Bruk standard finansdimensjonsverdier på fritekstfakturalinjen.</span><span class="sxs-lookup"><span data-stu-id="39dc4-125">Use the default financial dimension values on the free text invoice line.</span></span></li>
-<li><span data-ttu-id="39dc4-126">Bruk standard finansdimensjonsverdier fra hovedkontoen på Kontoplan-siden.</span><span class="sxs-lookup"><span data-stu-id="39dc4-126">Use the default financial dimension values from the ledger account in the Chart of accounts page.</span></span></li>
+<li><span data-ttu-id="a0af5-123">Hvis hovedkontoen er en tildelingskonto, bruker du standardverdien fra tildelingskontodefinisjonen.</span><span class="sxs-lookup"><span data-stu-id="a0af5-123">If the main account is an allocation account, use the default value from the allocation account definition.</span></span></li>
+<li><span data-ttu-id="a0af5-124">Hvis hovedkontoen ikke er en tildelingskonto, bruk standardmalen for finansdimensjon på fritekstfakturalinjen.</span><span class="sxs-lookup"><span data-stu-id="a0af5-124">If the main account is not an allocation account, use the financial dimension default template on the free text invoice line.</span></span></li>
+<li><span data-ttu-id="a0af5-125">Bruk standard finansdimensjonsverdier på fritekstfakturalinjen.</span><span class="sxs-lookup"><span data-stu-id="a0af5-125">Use the default financial dimension values on the free text invoice line.</span></span></li>
+<li><span data-ttu-id="a0af5-126">Bruk standard finansdimensjonsverdier fra hovedkontoen på Kontoplan-siden.</span><span class="sxs-lookup"><span data-stu-id="a0af5-126">Use the default financial dimension values from the ledger account in the Chart of accounts page.</span></span></li>
 </ol></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="39dc4-127">Fritekstfakturalinje for en anleggsmiddelnummer- og verdimodellkombinasjon</span><span class="sxs-lookup"><span data-stu-id="39dc4-127">Free text invoice line for a fixed asset number and value model combination</span></span>
+<td><span data-ttu-id="a0af5-127">Fritekstfakturalinje for en anleggsmiddelnummer- og verdimodellkombinasjon</span><span class="sxs-lookup"><span data-stu-id="a0af5-127">Free text invoice line for a fixed asset number and value model combination</span></span>
 <div class="alert">
 <table>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="39dc4-128"><strong>Obs! </strong></span><span class="sxs-lookup"><span data-stu-id="39dc4-128"><strong>Note</strong></span></span></th>
+<th><span data-ttu-id="a0af5-128"><strong>Obs! </strong></span><span class="sxs-lookup"><span data-stu-id="a0af5-128"><strong>Note</strong></span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span data-ttu-id="39dc4-129">Hovedkontoen på fritekstfakturalinjen blir avhendingskonto for anleggsmiddel.</span><span class="sxs-lookup"><span data-stu-id="39dc4-129">The main account on the free text invoice line will be the fixed asset disposal account.</span></span></td>
+<td><span data-ttu-id="a0af5-129">Hovedkontoen på fritekstfakturalinjen blir avhendingskonto for anleggsmiddel.</span><span class="sxs-lookup"><span data-stu-id="a0af5-129">The main account on the free text invoice line will be the fixed asset disposal account.</span></span></td>
 </tr>
 </tbody>
 </table>
 </div></td>
-<td><span data-ttu-id="39dc4-130">Finanskontoen på fritekstfakturalinjen.</span><span class="sxs-lookup"><span data-stu-id="39dc4-130">The ledger account on the free text invoice line.</span></span></td>
+<td><span data-ttu-id="a0af5-130">Finanskontoen på fritekstfakturalinjen.</span><span class="sxs-lookup"><span data-stu-id="a0af5-130">The ledger account on the free text invoice line.</span></span></td>
 <td><ol>
-<li><span data-ttu-id="39dc4-131">Bruk standard finansdimensjonsverdier på fritekstfakturalinjen.</span><span class="sxs-lookup"><span data-stu-id="39dc4-131">Use the default financial dimension values on the free text invoice line.</span></span></li>
-<li><span data-ttu-id="39dc4-132">Bruk standard finansdimensjonsverdier fra hovedkontoen på Kontoplan-siden.</span><span class="sxs-lookup"><span data-stu-id="39dc4-132">Use the default financial dimension values from the ledger account in the Chart of accounts page.</span></span></li>
+<li><span data-ttu-id="a0af5-131">Bruk standard finansdimensjonsverdier på fritekstfakturalinjen.</span><span class="sxs-lookup"><span data-stu-id="a0af5-131">Use the default financial dimension values on the free text invoice line.</span></span></li>
+<li><span data-ttu-id="a0af5-132">Bruk standard finansdimensjonsverdier fra hovedkontoen på Kontoplan-siden.</span><span class="sxs-lookup"><span data-stu-id="a0af5-132">Use the default financial dimension values from the ledger account in the Chart of accounts page.</span></span></li>
 </ol></td>
 </tr>
 <tr class="odd">
-<td><span data-ttu-id="39dc4-133">Rabattbeløp for fritekstfaktura</span><span class="sxs-lookup"><span data-stu-id="39dc4-133">Free text invoice discount amount</span></span></td>
-<td><span data-ttu-id="39dc4-134">Hovedkontoen for kunderabattfelt på Kontantrabatt-siden.</span><span class="sxs-lookup"><span data-stu-id="39dc4-134">The Main account for customer discounts field in the Cash discounts page.</span></span></td>
+<td><span data-ttu-id="a0af5-133">Rabattbeløp for fritekstfaktura</span><span class="sxs-lookup"><span data-stu-id="a0af5-133">Free text invoice discount amount</span></span></td>
+<td><span data-ttu-id="a0af5-134">Hovedkontoen for kunderabattfelt på Kontantrabatt-siden.</span><span class="sxs-lookup"><span data-stu-id="a0af5-134">The Main account for customer discounts field in the Cash discounts page.</span></span></td>
 <td><ol>
-<li><span data-ttu-id="39dc4-135">Hvis hovedkontoen er en tildelingskonto, bruker du standardverdien fra tildelingskontodefinisjonen.</span><span class="sxs-lookup"><span data-stu-id="39dc4-135">If the main account is an allocation account, use the default value from the allocation account definition.</span></span></li>
-<li><span data-ttu-id="39dc4-136">Hvis hovedkontoen ikke er en tildelingskonto, bruk standardmalen for finansdimensjon på fritekstfakturalinjen.</span><span class="sxs-lookup"><span data-stu-id="39dc4-136">If the main account is not an allocation account, use the financial dimension default template on the free text invoice line.</span></span></li>
-<li><span data-ttu-id="39dc4-137">Bruk standard finansdimensjonsverdier på fritekstfakturalinjen.</span><span class="sxs-lookup"><span data-stu-id="39dc4-137">Use the default financial dimension values on the free text invoice line.</span></span></li>
-<li><span data-ttu-id="39dc4-138">Bruk standard finansdimensjonsverdier fra hovedkontoen på Kontoplan-siden.</span><span class="sxs-lookup"><span data-stu-id="39dc4-138">Use the default financial dimension values from the ledger account in the Chart of accounts page.</span></span></li>
+<li><span data-ttu-id="a0af5-135">Hvis hovedkontoen er en tildelingskonto, bruker du standardverdien fra tildelingskontodefinisjonen.</span><span class="sxs-lookup"><span data-stu-id="a0af5-135">If the main account is an allocation account, use the default value from the allocation account definition.</span></span></li>
+<li><span data-ttu-id="a0af5-136">Hvis hovedkontoen ikke er en tildelingskonto, bruk standardmalen for finansdimensjon på fritekstfakturalinjen.</span><span class="sxs-lookup"><span data-stu-id="a0af5-136">If the main account is not an allocation account, use the financial dimension default template on the free text invoice line.</span></span></li>
+<li><span data-ttu-id="a0af5-137">Bruk standard finansdimensjonsverdier på fritekstfakturalinjen.</span><span class="sxs-lookup"><span data-stu-id="a0af5-137">Use the default financial dimension values on the free text invoice line.</span></span></li>
+<li><span data-ttu-id="a0af5-138">Bruk standard finansdimensjonsverdier fra hovedkontoen på Kontoplan-siden.</span><span class="sxs-lookup"><span data-stu-id="a0af5-138">Use the default financial dimension values from the ledger account in the Chart of accounts page.</span></span></li>
 </ol></td>
 </tr>
 <tr class="even">
-<td><span data-ttu-id="39dc4-139">Mva-beløp for fritekstfaktura</span><span class="sxs-lookup"><span data-stu-id="39dc4-139">Free text invoice sales tax amount</span></span></td>
-<td><span data-ttu-id="39dc4-140">Feltet Konto, utgående mva på siden Finansposteringsgrupper.</span><span class="sxs-lookup"><span data-stu-id="39dc4-140">The Sales tax payable field in the Ledger posting groups page.</span></span></td>
+<td><span data-ttu-id="a0af5-139">Mva-beløp for fritekstfaktura</span><span class="sxs-lookup"><span data-stu-id="a0af5-139">Free text invoice sales tax amount</span></span></td>
+<td><span data-ttu-id="a0af5-140">Feltet Konto, utgående mva på siden Finansposteringsgrupper.</span><span class="sxs-lookup"><span data-stu-id="a0af5-140">The Sales tax payable field in the Ledger posting groups page.</span></span></td>
 <td><ol>
-<li><span data-ttu-id="39dc4-141">Bruk finansdimensjonene som er definert for linjebeløpet for fritekstfakturaen eller distribusjonene for gebyrlinjebeløpet.</span><span class="sxs-lookup"><span data-stu-id="39dc4-141">Use the financial dimensions that are defined on the free text invoice line amount or the distributions for the charge line amount.</span></span></li>
-<li><span data-ttu-id="39dc4-142">Bruk standard finansdimensjonsverdier på fritekstfakturalinjen.</span><span class="sxs-lookup"><span data-stu-id="39dc4-142">Use the default financial dimension values on the free text invoice line.</span></span></li>
-<li><span data-ttu-id="39dc4-143">Bruk standard finansdimensjonsverdier fra hovedkontoen på Kontoplan-siden.</span><span class="sxs-lookup"><span data-stu-id="39dc4-143">Use the default financial dimension values from the ledger account in the Chart of accounts page.</span></span></li>
+<li><span data-ttu-id="a0af5-141">Bruk finansdimensjonene som er definert for linjebeløpet for fritekstfakturaen eller distribusjonene for gebyrlinjebeløpet.</span><span class="sxs-lookup"><span data-stu-id="a0af5-141">Use the financial dimensions that are defined on the free text invoice line amount or the distributions for the charge line amount.</span></span></li>
+<li><span data-ttu-id="a0af5-142">Bruk standard finansdimensjonsverdier på fritekstfakturalinjen.</span><span class="sxs-lookup"><span data-stu-id="a0af5-142">Use the default financial dimension values on the free text invoice line.</span></span></li>
+<li><span data-ttu-id="a0af5-143">Bruk standard finansdimensjonsverdier fra hovedkontoen på Kontoplan-siden.</span><span class="sxs-lookup"><span data-stu-id="a0af5-143">Use the default financial dimension values from the ledger account in the Chart of accounts page.</span></span></li>
 </ol></td>
 </tr>
 <tr class="odd">
-<td><span data-ttu-id="39dc4-144">Gebyrlinjebeløp for fritekstfaktura</span><span class="sxs-lookup"><span data-stu-id="39dc4-144">Free text invoice charge line amount</span></span></td>
-<td><span data-ttu-id="39dc4-145">Kreditkonto-feltet på siden Tilleggskode.</span><span class="sxs-lookup"><span data-stu-id="39dc4-145">The Credit account field in the Charges code page.</span></span></td>
+<td><span data-ttu-id="a0af5-144">Gebyrlinjebeløp for fritekstfaktura</span><span class="sxs-lookup"><span data-stu-id="a0af5-144">Free text invoice charge line amount</span></span></td>
+<td><span data-ttu-id="a0af5-145">Kreditkonto-feltet på siden Tilleggskode.</span><span class="sxs-lookup"><span data-stu-id="a0af5-145">The Credit account field in the Charges code page.</span></span></td>
 <td><ol>
-<li><span data-ttu-id="39dc4-146">Hvis hovedkontoen er en tildelingskonto, bruker du standardverdien fra tildelingskontodefinisjonen.</span><span class="sxs-lookup"><span data-stu-id="39dc4-146">If the main account is an allocation account, use the default value from the allocation account definition.</span></span></li>
-<li><span data-ttu-id="39dc4-147">Hvis hovedkontoen ikke er en tildelingskonto, bruk standardmalen for finansdimensjon på fritekstfakturalinjen.</span><span class="sxs-lookup"><span data-stu-id="39dc4-147">If the main account is not an allocation account, use the financial dimension default template on the free text invoice line.</span></span></li>
-<li><span data-ttu-id="39dc4-148">Bruk standard finansdimensjonsverdier på fritekstfakturalinjen.</span><span class="sxs-lookup"><span data-stu-id="39dc4-148">Use the default financial dimension values on the free text invoice line.</span></span></li>
-<li><span data-ttu-id="39dc4-149">Bruk standard finansdimensjonsverdier fra hovedkontoen på Kontoplan-siden.</span><span class="sxs-lookup"><span data-stu-id="39dc4-149">Use the default financial dimension values from the ledger account in the Chart of accounts page.</span></span></li>
+<li><span data-ttu-id="a0af5-146">Hvis hovedkontoen er en tildelingskonto, bruker du standardverdien fra tildelingskontodefinisjonen.</span><span class="sxs-lookup"><span data-stu-id="a0af5-146">If the main account is an allocation account, use the default value from the allocation account definition.</span></span></li>
+<li><span data-ttu-id="a0af5-147">Hvis hovedkontoen ikke er en tildelingskonto, bruk standardmalen for finansdimensjon på fritekstfakturalinjen.</span><span class="sxs-lookup"><span data-stu-id="a0af5-147">If the main account is not an allocation account, use the financial dimension default template on the free text invoice line.</span></span></li>
+<li><span data-ttu-id="a0af5-148">Bruk standard finansdimensjonsverdier på fritekstfakturalinjen.</span><span class="sxs-lookup"><span data-stu-id="a0af5-148">Use the default financial dimension values on the free text invoice line.</span></span></li>
+<li><span data-ttu-id="a0af5-149">Bruk standard finansdimensjonsverdier fra hovedkontoen på Kontoplan-siden.</span><span class="sxs-lookup"><span data-stu-id="a0af5-149">Use the default financial dimension values from the ledger account in the Chart of accounts page.</span></span></li>
 </ol></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="distributing-taxes"></a><span data-ttu-id="39dc4-150">Distribusjonsavgifter</span><span class="sxs-lookup"><span data-stu-id="39dc4-150">Distributing taxes</span></span>
-<span data-ttu-id="39dc4-151">Kan ikke opprette regnskapsdistribusjoner for avgifter før avgifter er beregnet.</span><span class="sxs-lookup"><span data-stu-id="39dc4-151">Accounting distributions for taxes cannot be created until taxes are calculated.</span></span> <span data-ttu-id="39dc4-152">Hvis du vil beregne merverdiavgift, må du fullføre en av de følgende oppgavene i Fritekstfaktura-skjemaet:</span><span class="sxs-lookup"><span data-stu-id="39dc4-152">To calculate sales taxes, you must complete one of the following tasks in the Free text invoice form:</span></span>
--   <span data-ttu-id="39dc4-153">Vis merverdiavgiften.</span><span class="sxs-lookup"><span data-stu-id="39dc4-153">View the sales tax.</span></span>
--   <span data-ttu-id="39dc4-154">Vis fakturatotalen.</span><span class="sxs-lookup"><span data-stu-id="39dc4-154">View the invoice total.</span></span>
--   <span data-ttu-id="39dc4-155">Vis kontantstrømmen.</span><span class="sxs-lookup"><span data-stu-id="39dc4-155">View the cash flow.</span></span>
--   <span data-ttu-id="39dc4-156">Vis regnskapsdistribusjoner for hele fritekstfakturaen.</span><span class="sxs-lookup"><span data-stu-id="39dc4-156">View accounting distributions for the whole free text invoice.</span></span>
--   <span data-ttu-id="39dc4-157">Vis underfinansjournalen.</span><span class="sxs-lookup"><span data-stu-id="39dc4-157">View the subledger journal.</span></span>
+## <a name="distributing-taxes"></a><span data-ttu-id="a0af5-150">Distribusjonsavgifter</span><span class="sxs-lookup"><span data-stu-id="a0af5-150">Distributing taxes</span></span>
+<span data-ttu-id="a0af5-151">Kan ikke opprette regnskapsdistribusjoner for avgifter før avgifter er beregnet.</span><span class="sxs-lookup"><span data-stu-id="a0af5-151">Accounting distributions for taxes cannot be created until taxes are calculated.</span></span> <span data-ttu-id="a0af5-152">Hvis du vil beregne merverdiavgift, må du fullføre en av de følgende oppgavene i Fritekstfaktura-skjemaet:</span><span class="sxs-lookup"><span data-stu-id="a0af5-152">To calculate sales taxes, you must complete one of the following tasks in the Free text invoice form:</span></span>
+-   <span data-ttu-id="a0af5-153">Vis merverdiavgiften.</span><span class="sxs-lookup"><span data-stu-id="a0af5-153">View the sales tax.</span></span>
+-   <span data-ttu-id="a0af5-154">Vis fakturatotalen.</span><span class="sxs-lookup"><span data-stu-id="a0af5-154">View the invoice total.</span></span>
+-   <span data-ttu-id="a0af5-155">Vis kontantstrømmen.</span><span class="sxs-lookup"><span data-stu-id="a0af5-155">View the cash flow.</span></span>
+-   <span data-ttu-id="a0af5-156">Vis regnskapsdistribusjoner for hele fritekstfakturaen.</span><span class="sxs-lookup"><span data-stu-id="a0af5-156">View accounting distributions for the whole free text invoice.</span></span>
+-   <span data-ttu-id="a0af5-157">Vis underfinansjournalen.</span><span class="sxs-lookup"><span data-stu-id="a0af5-157">View the subledger journal.</span></span>
 
-## <a name="subledger-journals-for-free-text-invoices"></a><span data-ttu-id="39dc4-158"> Underfinansjournaler for fritekstfakturaer</span><span class="sxs-lookup"><span data-stu-id="39dc4-158">Subledger journals for free text invoices</span></span>
-<span data-ttu-id="39dc4-159">Før du posterer en fritekstfaktura, kan du vise den fullstendige regnskapsoppføringen for fakturaen, som inkluderer debet og kredit, for å bekrefte at fakturaen posteres på de riktige kontoene.</span><span class="sxs-lookup"><span data-stu-id="39dc4-159">Before you post a free text invoice, you can view the full accounting entry of the invoice, which includes debits and credits, to verify that the invoice is being posted to the correct accounts.</span></span> <span data-ttu-id="39dc4-160">Denne visningen av den fullstendige regnskapsoppføringen kalles en underfinansjournal.</span><span class="sxs-lookup"><span data-stu-id="39dc4-160">This view of the full accounting entry is called a subledger journal.</span></span> <span data-ttu-id="39dc4-161">Hvis underfinansjournaloppføringen er feil når du forhåndsviser den før du journalfører fritekstfakturaen, kan du ikke endre underfinansjournaloppføringen.</span><span class="sxs-lookup"><span data-stu-id="39dc4-161">If the subledger journal entry is incorrect when you preview it before you journalize the free text invoice, you can't change the subledger journal entry.</span></span> <span data-ttu-id="39dc4-162">I stedet må du endre regnskapsdistribusjonene eller posteringsprofilen.</span><span class="sxs-lookup"><span data-stu-id="39dc4-162">Instead, you must change the accounting distributions or the posting profile.</span></span> <span data-ttu-id="39dc4-163">Regnskapsdistribusjonene brukes til å definere én side av regnskapsoppføringen, debet eller kredit.</span><span class="sxs-lookup"><span data-stu-id="39dc4-163">The accounting distributions are used to define one side of the accounting entry, the debit or the credit.</span></span> <span data-ttu-id="39dc4-164">Motkontooppføringen i underfinansjournalen opprettes fra posteringsprofilene, for eksempel fra kundekontoen eller avgiften.</span><span class="sxs-lookup"><span data-stu-id="39dc4-164">The offsetting subledger journal account entry is created from the posting profiles, such as from the customer account or the tax.</span></span>
+## <a name="subledger-journals-for-free-text-invoices"></a><span data-ttu-id="a0af5-158"> Underfinansjournaler for fritekstfakturaer</span><span class="sxs-lookup"><span data-stu-id="a0af5-158">Subledger journals for free text invoices</span></span>
+<span data-ttu-id="a0af5-159">Før du posterer en fritekstfaktura, kan du vise den fullstendige regnskapsoppføringen for fakturaen, som inkluderer debet og kredit, for å bekrefte at fakturaen posteres på de riktige kontoene.</span><span class="sxs-lookup"><span data-stu-id="a0af5-159">Before you post a free text invoice, you can view the full accounting entry of the invoice, which includes debits and credits, to verify that the invoice is being posted to the correct accounts.</span></span> <span data-ttu-id="a0af5-160">Denne visningen av den fullstendige regnskapsoppføringen kalles en underfinansjournal.</span><span class="sxs-lookup"><span data-stu-id="a0af5-160">This view of the full accounting entry is called a subledger journal.</span></span> <span data-ttu-id="a0af5-161">Hvis underfinansjournaloppføringen er feil når du forhåndsviser den før du journalfører fritekstfakturaen, kan du ikke endre underfinansjournaloppføringen.</span><span class="sxs-lookup"><span data-stu-id="a0af5-161">If the subledger journal entry is incorrect when you preview it before you journalize the free text invoice, you can't change the subledger journal entry.</span></span> <span data-ttu-id="a0af5-162">I stedet må du endre regnskapsdistribusjonene eller posteringsprofilen.</span><span class="sxs-lookup"><span data-stu-id="a0af5-162">Instead, you must change the accounting distributions or the posting profile.</span></span> <span data-ttu-id="a0af5-163">Regnskapsdistribusjonene brukes til å definere én side av regnskapsoppføringen, debet eller kredit.</span><span class="sxs-lookup"><span data-stu-id="a0af5-163">The accounting distributions are used to define one side of the accounting entry, the debit or the credit.</span></span> <span data-ttu-id="a0af5-164">Motkontooppføringen i underfinansjournalen opprettes fra posteringsprofilene, for eksempel fra kundekontoen eller avgiften.</span><span class="sxs-lookup"><span data-stu-id="a0af5-164">The offsetting subledger journal account entry is created from the posting profiles, such as from the customer account or the tax.</span></span>
 
 
 
