@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-updates-10-0-19.md
                 - name: Plattformoppdateringer for 10.0.18 (mai 2021)
                   href: get-started/whats-new-platform-updates-10-0-18.md
-                - name: Plattformoppdateringer for 10.0.17 (april 2021)
-                  href: get-started/whats-new-platform-updates-10-0-17.md
             - name: Funksjoner som er fjernet eller avskrevet
               items:
                 - name: Funksjoner som er fjernet eller avskrevet på startsiden
@@ -276,8 +274,10 @@
               href: data-entities/configure-export-data-lake.md
             - name: Finance and Operations-apper i Azure Data Lake
               href: data-entities/finance-data-azure-data-lake.md
-            - name: Gjøre enhetslager tilgjengelig som Data Lake
+            - name: Gjør enhetslager tilgjengelig som Data Lake
               href: data-entities/entity-store-data-lake.md
+            - name: Endre data i Azure Data Lake
+              href: data-entities/Azure-data-lake-Change-feeds.md
         - name: Databaseflyttingsoperasjoner
           items:
             - name: Oversikt

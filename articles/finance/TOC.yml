@@ -682,7 +682,7 @@
               href: cost-accounting/tasks/configure-cost-control-workspace-parameters.md
             - name: Forstå tilgangslistesikkerhet og RLS i Microsoft Power BI
               href: ../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/dynamics365/finance/toc.json
-            - name: Bruke innholdspakke for Microsoft Power BI-rapportering
+            - name: Bruk innholdspakke for Microsoft Power BI-rapportering
               href: ../fin-ops-core/dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/dynamics365/finance/toc.json
             - name: Bruke arbeidsområde for kostnadskontroll for mobilapp
               href: cost-accounting/cost-controlling-mobile-workspace.md
@@ -1208,9 +1208,9 @@
               href: ../fin-ops-core/dev-itpro/analytics/when-to-reset-data-mart.md?toc=/dynamics365/finance/toc.json
             - name: Vanlige spørsmål om finansrapportering
               href: general-ledger/financial-reporting-faq.md
-        - name: Økonomisk innsikt
+        - name: Finance Insights
           items:
-            - name: Startside for økonomisk innsikt
+            - name: Startside for Finance Insights
               href: finance-insights/finance-insights-home-page.md
             - name: Konfigurasjon og administrasjon
               items:
@@ -1226,7 +1226,7 @@
                   href: finance-insights/enable-budget-proposal.md
                 - name: Opprette dataintegreringsprosjekt
                   href: finance-insights/create-data-integrate-project.md
-            - name: Bruke økonomisk innsikt
+            - name: Bruke Finance Insights
               items:
                 - name: Budsjettforslag
                   href: finance-insights/budget-proposals.md
@@ -1464,6 +1464,8 @@
                       href: localizations/rcs-globalization-feature.md?toc=/dynamics365/finance/toc.json
                     - name: Opprett ER-konfigurasjoner i Regulatory Configuration Service og last dem opp til det globale repositoriet
                       href: localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
+                    - name: Regulatory Configuration Service – slett et RCS-miljø
+                      href: localizations/rcs-delete-environment.md
                     - name: Regulatory Configuration Service – lagringsavvik for Lifecycle Services
                       href: localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/finance/toc.json
                 - name: Elektronisk fakturering
@@ -1524,6 +1526,10 @@
                               href: localizations/emea-nl-vat-declaration-netherlands.md
                             - name: EU-salgsliste
                               href: localizations/emea-nl-eu-sales-list.md
+                        - name: Britisk rapportering
+                          items:
+                            - name: Klargjør for integrering med MTD for mva.
+                              href: localizations/emea-gbr-mtd-vat-integration.md
             - name: Forskriftsmessige oppdateringer
               href: localizations/regulatory-updates.md
             - name: Australia
@@ -3176,11 +3182,13 @@
                       href: localizations/rus-rated-expenses-registers.md
                     - name: Registre for leverandørgjeldskatt og gjeldsavskrivninger
                       href: localizations/rus-accounts-payable-debt-tax-registers-and-debt-write-offs.md
+                    - name: Ugyldige gjeldsreserver i kunder
+                      href: localizations/rus-bad-debts.md
             - name: Saudi-Arabia
               items:
                 - name: Oversikt over Saudi-Arabia
                   href: localizations/saudi-arabia.md
-                - name: Utgående merverdiavgift
+                - name: Merverdiavgift
                   href: localizations/apac-sau-sales-tax.md
                 - name: Zakat-rapportering for Saudi-Arabia
                   href: localizations/emea-sau-zakat-reporting.md
@@ -3288,12 +3296,10 @@
                       href: localizations/tasks/gb-00002-sales-order.md
                     - name: Definere mva-grupper for vare for snudd avregning
                       href: localizations/tasks/gb-00002-item-sales-tax-groups-reverse-charge-vat.md
-                    - name: 'Definere varegrupper, regler og parametere for snudd avregning'
+                    - name: 'Definer varegrupper, regler og parametere for snudd avregning'
                       href: localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
-                    - name: Definere mva-grupper for snudd avregning
+                    - name: Definer mva-grupper for snudd avregning
                       href: localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md
-                - name: Gjøre mva digital
-                  href: localizations/emea-gbr-mtd-vat-integration.md
                 - name: Rapport om statistikk over betalingspraksis
                   href: localizations/emea-gbr-statistics-on-payment-practices-report.md
             - name: USA
@@ -3665,6 +3671,12 @@
               items:
                 - name: Formelspråk
                   href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?toc=/dynamics365/finance/toc.json
+                - name: Datatyper som støttes for ER-formler
+                  items:
+                    - name: Primitive datatyper
+                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-primitive.md?toc=/dynamics365/finance/toc.json
+                    - name: Sammensatte datatyper
+                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-composite.md?toc=/dynamics365/finance/toc.json
                 - name: Funksjoner
                   items:
                     - name: Container
@@ -3927,17 +3939,17 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-qrcode.md?toc=/dynamics365/finance/toc.json
                         - name: 'Tekst: Text'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/finance/toc.json
-            - name: Utforme ER-formater til å generere utgående dokumenter i ulike formater
+            - name: Utform ER-formater til å generere utgående dokumenter i ulike formater
               items:
-                - name: Utforme konfigurasjoner til å generere utgående dokumenter i Excel-format
+                - name: Utform en konfigurasjon for generering av rapporter i OPENXML-format
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/finance/toc.json
+                - name: Utform konfigurasjoner til å generere utgående dokumenter i Excel-format
                   items:
-                    - name: Utforme en konfigurasjon til å generere dokumenter i Excel-format
+                    - name: Utform en konfigurasjon til å generere dokumenter i Excel-format
                       href: ../fin-ops-core/dev-itpro/analytics/er-fillable-excel.md?toc=/dynamics365/finance/toc.json
-                    - name: Eksempel på generering av rapporter i OPENXML-format
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/finance/toc.json
                     - name: Endre ER-formater ved å bruke Excel-maler på nytt
                       href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/finance/toc.json
-                    - name: Legge til kolonner i Excel-rapporter dynamisk som horisontalt utvidbare områder
+                    - name: Legg til kolonner i Excel-rapporter dynamisk som horisontalt utvidbare områder
                       items:
                         - name: Utforme formater for dynamisk å legge til kolonner i Excel-rapporter
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/finance/toc.json
@@ -4211,13 +4223,17 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/finance/toc.json
                     - name: Application update 10.0.17
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?toc=/dynamics365/finance/toc.json
+                    - name: Application update 10.0.19
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/finance/toc.json
                 - name: Angi en egendefinert lagerplassering for genererte dokumenter
                   items:
                     - name: Abonnere på en hendelse for å be om svar fra abonnementsbehandlingen
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/finance/toc.json
-                    - name: Delegere opprettingen av et ER-mål til en egendefinert målfabrikk
+                    - name: Deleger opprettingen av et ER-mål til en egendefinert målfabrikk
                       href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-files.md?toc=/dynamics365/finance/toc.json
-                - name: Initialisere datakildeverdier av typen BRUKERINNDATAPARAMETER fra kildekoden
+                    - name: Implementer et egendefinert mål for genererte dokumenter
+                      href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-destination.md?toc=/dynamics365/finance/toc.json
+                - name: Initialiser datakildeverdier av typen USER INPUT PARAMETER fra kildekoden
                   href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/finance/toc.json
         - name: Mobilapp
           items:
