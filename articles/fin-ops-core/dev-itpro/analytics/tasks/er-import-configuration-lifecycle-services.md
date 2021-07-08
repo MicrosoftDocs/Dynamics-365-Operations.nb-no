@@ -2,7 +2,7 @@
 title: Importere en konfigurasjon fra Lifecycle Services
 description: Dette emnet beskriver hvordan du importerer en ny versjon av en ER-konfigurasjon (Elektronisk rapportering) fra Microsoft Dynamics Lifecycle Services (LCS).
 author: NickSelin
-ms.date: 09/14/2020
+ms.date: 06/17/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,18 +13,21 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 674d0dc02b4a53e455a15a06fdb7f24ca3036ba3
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b58ecb8a7d6f52631dbca7642a4acbcf6ff895a3
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752370"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6270843"
 ---
 # <a name="import-a-configuration-from-lifecycle-services"></a>Importere en konfigurasjon fra Lifecycle Services
 
 [!include [banner](../../includes/banner.md)]
 
 Dette emnet forklarer hvordan en bruker i rollen Systemansvarlig eller Utvikler av elektronisk rapportering kan importere en ny versjon av en [konfigurasjon for elektronisk rapportering (ER)](../general-electronic-reporting.md#Configuration) fra [aktivabiblioteket på prosjektnivå](../../lifecycle-services/asset-library.md) i Microsoft Dynamics Lifecycle Services (LCS).
+
+> [!IMPORTANT]
+> Bruken av Lifecycle Services (LCS) som et lagringsrepositorium for konfigurasjoner for elektronisk rapportering (ER) blir [avskrevet](../../../../finance/get-started/removed-deprecated-features-finance.md#features-removed-or-deprecated-in-the-finance-10017-release). Hvis du vil ha mer informasjon, se [Regulatory Configuration Service (RCS) – avskrivning av lager for Lifecycle Services (LCS)](../../../../finance/localizations/rcs-lcs-repo-dep-faq.md).
 
 I dette eksemplet skal du velge ønsket versjon av ER-konfigurasjonen og importere den for et eksempelfirma med navnet Litware, Inc. Denne fremgangsmåten kan fullføres i alle firmaer, ettersom ER-konfigurasjoner deles mellom firmaer. For å fullføre disse trinnene må du først fullføre trinnene i [Laste opp en ER-konfigurasjon til Lifecycle Services](er-upload-configuration-into-lifecycle-services.md). Tilgang til LCS er også nødvendig.
 

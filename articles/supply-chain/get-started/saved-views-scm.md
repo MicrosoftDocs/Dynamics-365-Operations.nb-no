@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 1636d37b40c826fb9b922636d68c56963a791af5
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1b1077fdb4707bf2c019e86cb073b30465817577
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821255"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6270665"
 ---
 # <a name="standard-saved-views-for-supply-chain-management"></a>Standard lagrede visninger for Supply Chain Management
 
@@ -79,16 +79,14 @@ Tabellen nedenfor beskriver de lagrede visningene som er tilgjengelige for modul
 
 ## <a name="saved-views-for-the-production-control-module"></a>Lagrede visninger for modulen Produksjonskontroll
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 Tabellen nedenfor beskriver de lagrede visningene som er tilgjengelige for modulen Produksjonskontroll.
 
 | Side | Visningsnavn | Vis beskrivelse | Funksjonsnavn |
 |---|---|---|---|
-| Side for stykkliste for produksjonsordre | Forenklet | Denne forenklede visningen omfatter bare feltene som brukes oftest. Dermed får du en raskere oversikt og en effektivisert arbeidsprosess. | (Forhåndsversjon) Lagrede visninger for produksjonskontroll |
-| Side for produksjonsordredetaljer | Forenklet | Denne forenklede visningen omfatter bare feltene som brukes oftest. Dermed får du en raskere oversikt og en effektivisert arbeidsprosess. | (Forhåndsversjon) Lagrede visninger for produksjonskontroll |
-| Side for plukkliste for produksjonsordre | Forenklet | Denne forenklede visningen omfatter bare feltene som brukes oftest. Dermed får du en raskere oversikt og en effektivisert arbeidsprosess. | (Forhåndsversjon) Lagrede visninger for produksjonskontroll |
-| Listeside for produksjonsordrer | Forenklet | Denne forenklede visningen omfatter bare feltene som brukes oftest. Dermed får du en raskere oversikt og en effektivisert arbeidsprosess. | (Forhåndsversjon) Lagrede visninger for produksjonskontroll |
+| Side for stykkliste for produksjonsordre | Forenklet | Denne forenklede visningen omfatter bare feltene som brukes oftest. Dermed får du en raskere oversikt og en effektivisert arbeidsprosess. | Lagrede visninger for produksjonskontroll |
+| Side for produksjonsordredetaljer | Forenklet | Denne forenklede visningen omfatter bare feltene som brukes oftest. Dermed får du en raskere oversikt og en effektivisert arbeidsprosess. | Lagrede visninger for produksjonskontroll |
+| Side for plukkliste for produksjonsordre | Forenklet | Denne forenklede visningen omfatter bare feltene som brukes oftest. Dermed får du en raskere oversikt og en effektivisert arbeidsprosess. | Lagrede visninger for produksjonskontroll |
+| Listeside for produksjonsordrer | Forenklet | Denne forenklede visningen omfatter bare feltene som brukes oftest. Dermed får du en raskere oversikt og en effektivisert arbeidsprosess. | Lagrede visninger for produksjonskontroll |
 
 ## <a name="saved-views-for-the-sales-and-marketing-module"></a>Lagrede visninger for modulen Salg og markedsføring
 

@@ -15,18 +15,21 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 418586113c038c3227f0704495a561eac319bdc9
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 14f0f2b1a4d63101d432b1361379c61a70ac9345
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745093"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271189"
 ---
 # <a name="download-electronic-reporting-configurations-from-lifecycle-services"></a>Laste ned konfigurasjoner for elektronisk rapportering fra Lifecycle Services
 
 [!include [banner](../includes/banner.md)]
 
 Dette emnet forklarer hvordan du laster ned den nyeste versjonen av [Konfigurasjoner for elektronisk rapportering (ER)](general-electronic-reporting.md#Configuration) fra [Delt aktivabibliotek](../lifecycle-services/asset-library.md) i Microsoft Dynamics Lifecycle Services (LCS).
+
+> [!IMPORTANT]
+> Bruken av Lifecycle Services (LCS) som et lagringsrepositorium for konfigurasjoner for elektronisk rapportering (ER) blir [avskrevet](../../../finance/get-started/removed-deprecated-features-finance.md#features-removed-or-deprecated-in-the-finance-10017-release). Hvis du vil ha mer informasjon, se [Regulatory Configuration Service (RCS) – avskrivning av lager for Lifecycle Services (LCS)](../../../finance/localizations/rcs-lcs-repo-dep-faq.md).
 
 1. Logg på programmet med én av følgende roller:
 

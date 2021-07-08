@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: c9e1cadae97bd8f0dea270deaa1a8e09bb28eb4b
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: ee5a195b3d2881ff70fb1f0d4063ed681e874648
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020489"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271083"
 ---
 # <a name="rebate-management-groups"></a>Rabattbehandlingsgrupper
 
 [!include [banner](../includes/banner.md)]
 
-Beregninger av rabatt og fradrag kan drives av grupper. Rabattbehandlingsgrupper kan opprettes for kunder, leverandører og varer. De kan knyttes til en hovedoppføring.
+Beregninger av rabattbehandling kan drives av grupper. Rabattbehandlingsgrupper kan opprettes for kunder, leverandører og varer. De kan knyttes til en hovedoppføring.
 
 ## <a name="rebate-management-customer-groups"></a>Rabattbehandlingskundegrupper
 
@@ -49,10 +49,9 @@ Følg denne fremgangsmåten for å vise, legge til eller fjerne kunder for en va
 1. Gå til **Rabattbehandling \> Oppsett av rabattbehandlingsgrupper \> Kundegrupper**.
 1. Velg gruppen som skal administreres.
 1. Velg **Kunder** i handlingsruten. Siden **Rabattbehandlingsgrupper** vises med en liste over kunder som allerede er medlemmer av den valgte gruppen.
-1. Hvis du vil legge til en ny kunde i gruppen, velger du **Ny** i handlingsruten for å legge til en rad i rutenettet. Angi deretter følgende felter for den nye raden:
+1. Hvis du vil legge til en ny kunde i gruppen, velger du **Ny** i handlingsruten for å legge til en rad i rutenettet. Angi deretter følgende felt for den nye raden:
 
     - **Kundekonto** – Velg kundekonto-ID-en.
-    - **Navn** – Angi et navn og/eller en beskrivelse for kunden.
 
 1. Hvis du vil fjerne en kunde fra gruppen, velger du kunden og velger deretter **Slett** i handlingsruten.
 
@@ -61,10 +60,9 @@ Følg denne fremgangsmåten for å vise, legge til eller fjerne gruppetilordning
 1. Gå til **Kunder \> Kunder \> Alle kunder**.
 1. Velg kunden du vil arbeide med.
 1. I handlingsruten, på fanen **Kunde**, i **Rabattbehandling**-gruppen, velger du **Rabattbehandlingsgrupper**. Siden **Rabattbehandlingsgrupper** vises med en liste over grupper som den valgte kunden allerede hører til i.
-1. Hvis du vil legge til kunden i en ny gruppe, velger du **Ny** i handlingsruten for å legge til en rad i rutenettet. Angi deretter følgende felter for den nye raden:
+1. Hvis du vil legge til kunden i en ny gruppe, velger du **Ny** i handlingsruten for å legge til en rad i rutenettet. Angi deretter følgende felt for den nye raden:
 
     - **Rabattbehandlingsgruppe** – Velg gruppen du vil legge til kunden i.
-    - **Beskrivelse** – Angi en beskrivelse av gruppen (for eksempel for å forklare hvorfor kunden er medlem av den).
 
 1. Hvis du vil fjerne en kunde fra en gruppe, velger du gruppen og velger deretter **Slett** i handlingsruten.
 
@@ -88,10 +86,9 @@ Følg denne fremgangsmåten for å vise, legge til eller fjerne leverandører fo
 1. Gå til **Rabattbehandling \> Oppsett av rabattbehandlingsgrupper \> Leverandørgrupper**.
 1. Velg gruppen som skal administreres.
 1. Velg **Leverandører** i handlingsruten. Siden **Rabattbehandlingsgrupper** vises med en liste over leverandører som allerede er medlemmer av den valgte gruppen.
-1. Hvis du vil legge til en ny leverandør i en gruppe, velger du **Ny** i handlingsruten for å legge til en rad i rutenettet. Angi deretter følgende felter for den nye raden:
+1. Hvis du vil legge til en ny leverandør i en gruppe, velger du **Ny** i handlingsruten for å legge til en rad i rutenettet. Angi deretter følgende felt for den nye raden:
 
     - **Leverandørkonto** – Velg leverandørkonto-ID-en.
-    - **Navn** – Angi et navn og/eller en beskrivelse for leverandøren.
 
 1. Hvis du vil fjerne en leverandør fra gruppen, velger du leverandøren og velger deretter **Slett** i handlingsruten.
 
@@ -100,10 +97,9 @@ Følg denne fremgangsmåten for å vise, legge til eller fjerne gruppetilordning
 1. Gå til **Leverandører \> Leverandører \> Alle leverandører**.
 1. Velg leverandøren du vil arbeide med.
 1. I handlingsruten, på fanen **Leverandør**, i **Rabattbehandling**-gruppen, velger du **Rabattbehandlingsgrupper**. Siden **Rabattbehandlingsgrupper** vises med en liste over grupper som den valgte leverandøren allerede hører til i.
-1. Hvis du vil legge til leverandøren i en ny gruppe, velger du **Ny** i handlingsruten for å legge til en rad i rutenettet. Angi deretter følgende felter for den nye raden:
+1. Hvis du vil legge til leverandøren i en ny gruppe, velger du **Ny** i handlingsruten for å legge til en rad i rutenettet. Angi deretter følgende felt for den nye raden:
 
     - **Rabattbehandlingsgruppe** – Velg gruppen du vil legge til leverandøren i.
-    - **Beskrivelse** – Angi en beskrivelse av gruppen (for eksempel for å forklare hvorfor leverandøren er medlem av den).
 
 1. Hvis du vil fjerne en leverandør fra en gruppe, velger du gruppen og velger deretter **Slett** i handlingsruten.
 
@@ -127,10 +123,9 @@ Følg denne fremgangsmåten for å vise, legge til eller fjerne varer for en val
 1. Gå til **Rabattbehandling \> Oppsett av rabattbehandlingsgrupper \> Varegrupper**.
 1. Velg gruppen som skal administreres.
 1. Velg **Varer** i handlingsruten. Siden **Rabattbehandlingsgrupper** vises med en liste over varer som allerede er medlemmer av den valgte gruppen.
-1. Hvis du vil legge til en ny vare i gruppen, velger du **Ny** i handlingsruten for å legge til en rad i rutenettet. Angi deretter følgende felter for den nye raden:
+1. Hvis du vil legge til en ny vare i gruppen, velger du **Ny** i handlingsruten for å legge til en rad i rutenettet. Angi deretter følgende felt for den nye raden:
 
     - **Varekonto** – Velg varekonto-ID-en.
-    - **Produktnavn** – Angi et navn og/eller en beskrivelse for varen.
 
 1. Hvis du vil fjerne en vare fra gruppen, velger du varen og velger deretter **Slett** i handlingsruten.
 
@@ -139,10 +134,9 @@ Følg denne fremgangsmåten for å vise, legge til eller fjerne gruppetilordning
 1. Gå til **Behandling av produktinformasjon \> Produkter \> Frigitte produkter**.
 1. Velg varen du vil arbeide med.
 1. I handlingsruten, på fanen **Produkt**, i **Rabattbehandling**-gruppen, velger du **Rabattbehandlingsgrupper**. Siden **Rabattbehandlingsgrupper** vises med en liste over grupper som den valgte varen allerede hører til i.
-1. Hvis du vil legge til varen i en ny gruppe, velger du **Ny** i handlingsruten for å legge til en rad i rutenettet. Angi deretter følgende felter for den nye raden:
+1. Hvis du vil legge til varen i en ny gruppe, velger du **Ny** i handlingsruten for å legge til en rad i rutenettet. Angi deretter følgende felt for den nye raden:
 
     - **Rabattbehandlingsgruppe** – Velg gruppen du vil legge til varen i.
-    - **Beskrivelse** – Angi en beskrivelse av gruppen (for eksempel for å forklare hvorfor varen er medlem av den).
 
 1. Hvis du vil fjerne en vare fra en gruppe, velger du gruppen og velger deretter **Slett** i handlingsruten.
 

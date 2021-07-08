@@ -3,7 +3,7 @@ title: Standard revisjonsfil for avgift (SAF-T) for Norge
 description: Dette emnet forklarer hvordan du setter opp og generere standard revisjonsfil for avgift (SAF-T) for juridiske enheter som har en primær postadresse i Norge.
 author: liza-golub
 ms.author: elgolu
-ms.date: 04/27/2020
+ms.date: 06/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.reviewer: kfend
 ms.search.region: Norway
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 65b82dd65fa65d709d9578bf6c419405017944bb
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 50c97c51a3b7c6b47ea7c87138da131345830e8d
+ms.sourcegitcommit: 18ca2df785e9656fdd4e8c0734eca2b2624fda10
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5891148"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "6293962"
 ---
 # <a name="standard-audit-file-for-tax-saf-t-for-norway"></a>Standard revisjonsfil for avgift (SAF-T) for Norge
 
@@ -25,60 +25,45 @@ ms.locfileid: "5891148"
 
 Dette emnet inneholder landsspesifikk informasjon om hvordan du setter opp standard revisjonsfil for avgift (SAF-T) for juridiske enheter som har en primæradresse i Norge.
 
-## <a name="introduction"></a>Innledning
-
 Fra og med januar 2020 er alle selskaper i Norge pålagt av Skatteetaten å gi SAF-T finansielle data. Dette kravet er i samsvar med versjon 1.4 av dokumentasjonen, som ble publisert den 8. juli 2019, og versjon 1.3 av den tekniske dokumentasjonen, som ble publisert den 23. mars 2018, i form av en XML-rapport. Publiseringen av disse delene av dokumentasjonen sammenfaller med versjon 1.1 av "norsk SAF-T økonomiske data" XML Schema Definition (XSD)-skjema som ble utviklet av SAF-T-arbeidsgruppen, Skatteetaten, og basert på "OECD-standard revisjonsfil - Avgifter 2.00,"som ble modifisert 2. februar 2018.
 
-## <a name="overview"></a>Oversikt
+## <a name="setup"></a>Installasjon
 
-For å støtte rapporten **Norsk SAF-T økonomiske data** må Microsoft Dynamics 365 Finance-programmet være en av følgende versjoner eller senere.
+Hvis du vil bruke rapporten **Norsk SAF-T økonomiske data** i Dynamics 365 Finance, må du fullføre følgende oppgaver:
 
-| Versjon av Finance | Build-nummer       |
-|--------------------|--------------------|
-| 10.0.6             | 10.0.234.**20020** |
-| 10.0.7             | 10.0.283.**10012** |
-| 10.0.8             | 10.0.319.**12**    |
-| 10.0.9             | 10.0.328.**20020** |
+1. [Importere konfigurasjoner for elektronisk rapportering (ER)](#import).
+2. [Definer ER-formatet på siden **Parametere for økonomimodul**](#parameters).
+3. [Knytt mva-koder til norske standard mva-koder for merverdiavgift (mva)](#sales).
+4. [Hovedkontoer: Knytt hovedkontoer til norske standardkontoer](#main).
+5. [Aktivere funksjoner i funksjonsbehandling](#features).
 
-Når Finance-programversjonen er egnet, importerer du følgende versjoner eller senere av disse konfigurasjonene for elektronisk rapportering (ER) fra Microsoft Dynamics Lifecycle Services (LCS).
+### <a name="import-electronic-reporting-er-configurations"></a><a name="import"></a>Importere konfigurasjoner for elektronisk rapportering (ER)
 
-| ER-konfigurasjonsnavn              | Konfigurasjonstype | Versjon |
-|------------------------------------|--------------------|---------|
-| Standard revisjonsfil (SAF-T)        | Modell              | 32      |
-| SAF-T økonomiske datamodelltilordning | Modelltilordning      | 32.30   |
-| SAF-T-format (NO)                  | Format (eksport) | 32.41   |
+I Finans importerer du følgende ER-konfigurasjoner (Electronic Reporting) fra det globale repositoriet.
 
-Importer de nyeste versjonene av konfigurasjonene. Versjonsbeskrivelsen inneholder vanligvis nummeret til Microsoft Knowledge Base-artikkelen (KB) som forklarer endringene som konfigurasjonsversjonen introduserte.
+| ER-konfigurasjonsnavn              | Konfigurasjonstype |
+|------------------------------------|--------------------|
+| Standard lydfil (SAF-T)        | Modell              |
+| SAF-T økonomiske datamodelltilordning | Modelltilordning      |
+| SAF-T-format (NO)                  | Format (eksport) |
+
+Hvis du vil ha mer informasjon om hvordan du laster ned ER-konfigurasjoner, kan du se [Laste ned ER-konfigurasjoner fra det Globale repositoriet](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
+
+Importer de nyeste versjonene av konfigurasjonene. Versjonsbeskrivelsen inneholder vanligvis nummeret til Microsoft Knowledge Base-artikkelen (KB) som forklarer endringene som ble introdusert i konfigurasjonsversjonen.
 
 > [!NOTE]
-> Når du er ferdig med å importere alle ER-konfigurasjoner fra tabellen ovenfor, kan du angi alternativet **Standard for modelltilordning** til **Ja** for konfigurasjonen **SAF-T økonomiske datamodelltilordning**.
+> Når du har importert alle ER-konfigurasjoner fra tabellen ovenfor, kan du angi alternativet **Standard for modelltilordning** til **Ja** for konfigurasjonen **SAF-T økonomiske datamodelltilordning**.
 >
 > ![Standardalternativ for modelltilordning er satt til Ja](media/nor-saf-default-model-mapping.jpg)
 
-
-![Last opp og legg til-knappen](media/nor-saf-default-model-mapping.jpg)
-
-Hvis du vil ha mer informasjon om hvordan du laster ned ER-konfigurasjoner fra Microsoft Dynamics Lifecycle Services (LCS), kan du se [Laste ned konfigurasjoner for elektronisk rapportering fra Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
-
-
-## <a name="setup"></a>Oppsett
-
-Hvis du vil begynne å bruke rapporten **Norsk SAF-T økonomiske data** i Finance, må du fullføre følgende oppsett:
-
-- **Parametere for økonomimodul:** Definer ER-formatet på siden **Parametere for økonomimodul**.
-- **Mva-koder:** Knytt mva-koder til norske standard mva-koder for merverdiavgift (mva.).
-- **Hovedkontoer:** Knytt hovedkontoer til norske standardkontoer.
-
-Delene nedenfor forklarer hvordan du gjør hver del av dette oppsettet.
-
-### <a name="general-ledger-parameters"></a>Parametere for økonomimodul
+### <a name="set-up-the-er-format"></a><a name="parameters"></a>Angi ER-formatet 
 
 1. I Finance går du til **Økonomimodul** \> **Finansoppsett** \> **Parametere for økonomimodul**.
 2. På siden **Parametere for økonomimodul**, i kategorien **Standard revisjonsfil for avgift (SAF-T)** i feltet **Standard revisjonsfil for avgift (SAF-T)**, velger du **SAF-T-format (NO)**.
 
 ![Feltet Standard revisjonsfil for avgift (SAF-T) på siden parametere for økonomimodul](media/nor-saf-gl-parameters.jpg)
 
-### <a name="sales-tax-codes"></a>Mva-koder
+### <a name="associate-sales-tax-codes-with-norwegian-standard-value-added-tax-vat-tax-codes"></a><a name="sales"></a>Knytt mva-koder til norske standard mva-koder for merverdiavgift (mva)
 
 Som dokumentasjonen forklarer, må mva-koder i norsk SAF-T Financial-data som brukes i Finance, være knyttet til norske standard mva-koder (\<StandardTaxCode\>) for SAF-T-rapportering. Norske standard mva-koder er tilgjengelige på <https://github.com/Skatteetaten/saf-t>.
 
@@ -93,7 +78,7 @@ Hvis du vil knytte mva-koder som brukes i Finance, med norske standard mva-koder
 
     ![Definere standard mva-kode for den valgte mva-koden](media/not-saf-external-codes-tax.png)
 
-### <a name="main-accounts"></a>Hovedkontoer
+### <a name="associate-main-accounts-with-norwegian-standard-accounts"></a><a name="main"></a>Knytte hovedkontoer til norske standardkontoer
 
 Som dokumentasjonen forklarer, i Norsk SAF-T økonomiske data, må hovedkontoer som brukes i Finance, være knyttet til norske standardkontoer for SAF-T-rapportering. Norske standardkontoer er tilgjengelige på <https://github.com/Skatteetaten/saf-t>.
 
@@ -114,11 +99,21 @@ Hvis du vil knytte **Hovedkontoer** som brukes i Finans, til norske standardkont
 
 Du kan enkelt eksportere oppsettet av applikasjonsspesifikke parametere fra én versjon av en rapport og importere det til en annen versjon ved å velge **Eksporter** eller **Importer** i handlingsruten. Du kan også eksportere oppsettet fra én rapport og importere det til samme rapport i et annet selskap hvis hovedkontoene er de samme i begge selskapene.
 
+### <a name="enable-features-in-feature-management"></a><a name="features"></a>Aktivere funksjoner i funksjonsbehandling
+
+1. Gå til **Funksjonsbehandling** > **Alle**.
+2. I funksjonslisten finner og velger du følgende funksjoner:
+
+    - **Optimalisering av opprettelsestid for spørringsdatakilde under kjøring av ER-rapporter**
+    - **Optimaliser forbruk av datasettminne i kjøretid for ER-rapporter**
+
+3. Velg **Aktiver nå**.
+
 ## <a name="generate-the-norwegian-saf-t-financial-data-report"></a>Generer rapporten Norsk SAF-T økonomiske data
 
 Hvis du vil generere rapporten **Norsk SAF-T økonomiske data**, følger du denne fremgangsmåten.
 
-1. I Finance går du til **Økonomimodul** \> **Forespørsler og rapporter** \> **Standard revisjonsfil for avgift (SAF-T)** \> **Standard revisjonsfil for avgift (SAF-T)**.
+1. I Finance går du til **Økonomimodul** > **Forespørsler og rapporter** > **Standard revisjonsfil for avgift (SAF-T)** > **Standard revisjonsfil for avgift (SAF-T)**.
 2. Angi start- og sluttdatoene for perioden du vil generere rapporten for, i **Fra dato**- og **Til dato**-feltene i dialogboksen for rapporten.
 3. Merk av for **Kunder**, **Leverandører** og **Finansdimensjoner** for å ta med alle postene fra de relaterte tabellene i rapporten.
 
@@ -186,5 +181,14 @@ I samsvar med disse kravene er ER-formatet **SAF-T-format (NO)** implementert fo
 
 Når rapporten er generert, hvis det genereres mer enn én XML-fil, må brukeren manuelt nummerere de genererte filene i zip-arkivet ved å legge til **\_\<file number of total files\>** i filnavnene. Brukeren må likeledes sikre at det ikke mer enn 10 XML-filer i det samme zip-arkivet. Hvis det er mer enn 10 XML-filer i et arkiv, må brukeren manuelt dele det opp i flere arkiver, som hver har maksimalt 10 XML-filer.
 
+## <a name="implementation-details"></a>Implementeringsdetaljer
+
+### <a name="analysistype-and-analysistypedescription-nodes"></a>\<AnalysisType\>- og \<AnalysisTypeDescription\>-noder
+
+SAF-T-rapporten for Norge må inneholde informasjon om **AnalysisTypeTable** under **MasterFiles**-noden i rapporten. **AnalysisTypeTable** må representere en tabell med analysekode-IDene som brukes til ytterligere spesifikasjon av transaksjonsdata. I Finans er **Finansdimensjoner** datakilden for **AnalysisTypeTable**-noden. Når du definerer **Finansdimensjoner** i den juridiske enheten, bruker du **Rapportkolumnnavn**-feltet i **Finansdimensjon**-datakilden for verdien som skal rapporteres i \<AnalysisType\>-noden. Bruk **Dimensjonsnavn**-feltet i datakilden for **Finansdimensjon** for verdien som skal rapporteres i \<AnalysisTypeDescription\>-noden.
+
+### <a name="saf-t-report-and-one-voucher"></a>SAF-T-rapport og Ett bilag
+
+Bruk av Ett bilag-funksjonaliteten introduserer en begrensning for ytterligere SAF-T-rapportering for data hvis ett bilag ble brukt. Vi anbefaler at du angir parameteren **Tillat flere transaksjoner i ett bilag** på siden **Parametere for økonomimodul** til **Nei** i den juridiske enheten din hvis du posterer transaksjoner som er en del av SAF-T-rapporten. Hvis du vil ha mer informasjon om Ett bilag-funksjonaliteten, kan du se [Ett bilag](../general-ledger/one-voucher.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

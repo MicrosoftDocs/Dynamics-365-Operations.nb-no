@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: lbc
 ms.search.validFrom: 2021-04-21
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 23a517e7769dc86ebec30e4f17c62172a6ad8801
-ms.sourcegitcommit: cd9016e9787169cb800889d335b9c5919ddbe4af
+ms.openlocfilehash: f3ebd47ffc85d4ca257b404579d60d679f7929b6
+ms.sourcegitcommit: f9b145ef4a81cec81f420871b4130b05db4f4500
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5938525"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "6301311"
 ---
 # <a name="you-cant-confirm-a-shipment-because-items-havent-been-picked"></a>Du kan ikke bekrefte en forsendelse fordi varer ikke har blitt plukket
 
@@ -36,10 +36,18 @@ Belastningen eller forsendelsen kan ikke bekreftes i gjeldende tilstand, fordi d
 
 - Det relaterte arbeidet er ennå ikke plukket og flyttet til den endelige forsendelseslokasjonen.
 - Det plukkede arbeidsantallet samsvarer ikke med det opprettede arbeidsantallet på belastningslinjen.
+- Lokasjonsdirektivet er konfigurert med emballasjelokasjon som den endelige forsendelseslokasjonen ved bruk av bølgemalcontainerbruk.
 
-## <a name="resolution"></a>Oppløsning
+## <a name="resolution"></a>Løsning
 
-Kontroller de tilknyttede salgsordrene eller overføringsordrene for belastningen eller forsendelsen. Kontroller at alt tilknyttet arbeid er fullført på den endelige forsendelseslokasjonen, og at antallet samsvarer.
+Lasten eller forsendelsen er for øyeblikket i en tilstand der forsendelsesbekreftelsen mislykkes. Du kan løse dette problemet ved å fullføre én eller flere av følgende oppgaver:
+
+- Gå gjennom lastlinjene, og kontroller at alt tilknyttet arbeid er fullført på den endelige forsendelseslokasjonen, og at antallet samsvarer.
+- Avbryt arbeids-IDene som er opprettet med emballasjelokasjonen som endelig forsendelseslokasjon, konfigurer lokasjonsdirektivet på nytt, og slett lasten på nytt.
+
+### <a name="review-your-load-lines-and-make-sure-that-all-the-related-work-has-been-completed-at-the-final-shipping-location-and-that-the-quantities-match"></a>Gå gjennom lastlinjene, og kontroller at alt tilknyttet arbeid er fullført på den endelige forsendelseslokasjonen, og at antallet samsvarer
+
+Bruk følgende fremgangsmåte til å g gjennom lastlinjene, og kontroller at alt tilknyttet arbeid er fullført på den endelige forsendelseslokasjonen, og at antallet samsvarer.
 
 1. Gå til **Lagerstyring \> Laster \> Alle laster**.
 1. Velg belastningen som forsendelsen ikke kan bekreftes for.
@@ -48,3 +56,30 @@ Kontroller de tilknyttede salgsordrene eller overføringsordrene for belastninge
 1. I handlingsruten, i fanen **Laster** i gruppen **Relatert informasjon**, velger du **Arbeid**.
 1. Kontroller at arbeidet er fullført på det endelige forsendelsesstedet, og at det plukkede arbeidsantallet samsvarer med det opprettede arbeidsantallet på belastningslinjen.
 1. Gjenta denne fremgangsmåten for alle belastningslinjer for å være sikker på at alle kriteriene er oppfylt.
+
+### <a name="cancel-the-work-ids-that-have-been-created-with-the-packing-location-as-the-final-shipping-location-reconfigure-the-location-directive-and-rerelease-the-load"></a>Avbryt arbeids-IDene som er opprettet med emballasjelokasjonen som endelig forsendelseslokasjon, konfigurer lokasjonsdirektivet på nytt, og slett lasten på nytt
+
+Bruk fremgangsmåten nedenfor til å avbryte arbeids-IDene som har emballasjelokasjonen som endelig plasseringslokasjon med automatisert containerbruk på plass.
+
+1. Gå til **Lagerstyring \> Periodiske oppgaver \> Rydd opp \> Avbryt arbeid**.
+1. Dialogboksen **Avbryt arbeid** åpnes. Angi IDen for arbeidet du vil avbryte, i **Arbeids-ID**-feltet. Den valgte arbeids-IDen må ha **Arbeidsstatus**-verdien *Åpen*, *Pågår*, *Avbrutt*, *Kombinert* eller *Lukket*.
+1. Velg **OK**.
+1. Velg **Ja** for å bekrefte at du vil avbryte arbeidet.
+1. Gjenta denne fremgangsmåten for de andre arbeids-IDene etter behov.
+
+For mer informasjon, se [Avbryte lagerarbeid for unntaksbehandling](../../warehousing/cancel-warehouse-work.md).
+
+Bruk fremgangsmåten nedenfor til å konfigurere lokasjonsdirektivet på nytt, slik at det ikke bruker emballasjelokasjonen som endelig forsendelseslokasjon når automatisert containerbruk er definert for bølgemalen.
+
+1. Gå til **Lagerstyring \> Oppsett \> Lokasjonsdirektiver**.
+1. Velg *Salgsordrer* i feltet **Arbeidsordretype**.
+1. Velg lokasjonsdirektivet du bruker for automatisert containerbruk.
+1. I **Lokasjonsdirektivhandlinger**-hurtigfaneverktøylinjen velger du **Rediger spørring**.
+1. I dialogboksen for Power Query-redigering, i fanen **Område**, finner du raden der **Felt** er satt til *Lokasjonsprofil*, og kontroller at **Kriterier**-feltet for denne raden ikke er satt til en lokasjonsprofil som har **Lokasjonstype** *Emballasje*. Juster **Kriterier**-feltet for å rette den endelige plasserte lokasjonen.
+
+Bruk fremgangsmåten nedenfor til å slette belastningen på nytt og opprette arbeids-IDer med riktig endelig forsendelseslokasjon.
+
+1. Gå til **Lagerstyring \> Laster \> Arbeidsområde for lastplanlegging**.
+1. I **Last**-delen finner du lasten som må frigis.
+1. I delen **Laster** velger du **Frigi \> Frigi til lager** for å frigi den valgte lasten til lageret.
+1. Gjenta denne fremgangsmåten for de andre lastene etter behov.

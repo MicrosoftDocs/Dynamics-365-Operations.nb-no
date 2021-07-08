@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 4876d2d4ad79dc09ce4b372eedf4c6ab31930957
-ms.sourcegitcommit: 655b0e16c7aef6182cd58bc816b901470e1bb2ce
+ms.openlocfilehash: 9d7eca35d6e5ce8f434f923fef69a6d13a8ac1b3
+ms.sourcegitcommit: c9f55e64416d0bbedfdadafb00e4181921ad0f37
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6222516"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "6261916"
 ---
 # <a name="finance-insights-home-page-preview"></a>Startside for Finance Insights (forhåndsversjon)
 
@@ -32,6 +32,9 @@ Finance Insights gir konfigurerbare og utvidbare modeller som hjelper deg med å
 Forhåndsversjonen av Finance Insights er tilgjengelig for prøvedistribusjoner i USA, Europa og Storbritannia. Microsoft legger gradvis til støtte for flere områder.
 
 Evalueringsfunksjonalitet kan og bør bare aktiveres i sandkassemiljøer på lag 2. Oppsett og AI-modeller for kunstig intelligens som er opprettet i et sandkassemiljø, kan ikke overføres til et produksjonsmiljø. Hvis du vil ha mer informasjon, kan du se [Ekstra vilkår for bruk for Microsoft Dynamics 365-forhåndsversjoner](/dynamics365/legal/supp-dynamics365-preview#:~:text=Supplemental%20Terms%20of%20Use%20for%20Microsoft%20Dynamics%20365,%28governing%20your%20use%20of%20Microsoft%20Dynamics%20365%20Online%29.).
+
+> [!NOTE]
+> Denne funksjonaliteten tilbys som et sett med forhåndsvisningsfunksjoner. Under kjøring av en forhåndsversjonsfunksjon bør du ikke bruke de resulterende maskinopplæringsmodellene til å kjøre eller påvirke forretningsavgjørelser eller budsjetteringsforslag. Bruken av denne funksjonen styres av [Ekstra vilkår for bruk](https://go.microsoft.com/fwlink/?linkid=2105274).
 
 ## <a name="prerequisites"></a>Forutsetninger
 

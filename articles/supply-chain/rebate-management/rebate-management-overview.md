@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 7afad911454916c49cda47253736defdd7e9b16b
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: d271d70791a8fe4ad1581ae8a150ad13bffc7a94
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020465"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271059"
 ---
 # <a name="rebate-management-module-overview"></a>Oversikt over rabattbehandlingsmodul
 
@@ -70,7 +70,7 @@ Rabatter kan konfigureres basert på mange forskjellige parametere. De kan for e
 
 Resultatene av rabattberegning kan også reduseres av andre rabatter, avhengig av om rabatten er satt opp til å beregne på grunnlag av nettobeløpet.
 
-På leverandørsiden kan rabatter beregne prisen basert på en FIFO-regel (først-inn-først-ut), siste innkjøpspris, gjennomsnittlig innkjøpspris eller salgspris.
+På leverandørsiden kan rabatter som er basert på salgsordrer, beregne prisen basert på en FIFO-regel (først-inn-først-ut), siste innkjøpspris, gjennomsnittlig innkjøpspris eller salgspris.
 
 ## <a name="rebate-target-transactions"></a>Rabattmåltransaksjoner
 
@@ -84,11 +84,12 @@ Vareutdata oppretter en gratis varesalgsordre for kunderabatter og en bestilling
 
 Kombinasjonen av de tilknyttede avtalene, frekvensen av beregningene, beregningsgrunnlaget og beregningsmetoden som er valgt, bestemmer nøyaktigheten og presisjonen i rabattberegningene. Rabattavsetningene kan brukes til å avsette posterte verdier og verdier det er gjort krav på.
 
-Avsetninger kan behandles daglig eller månedlig. Funksjonaliteten kan imidlertid tildele eller betale rabatten, eller motta betaling av den, til en hvilken som helst definert frekvens. Brukere kan enkelt justere en plan eller betalingsbeløp når som helst i løpet av utbetalingen.
+Avsetningene kan administreres daglig, ukentlig, månedlig eller i henhold til en egendefinert periode. Funksjonaliteten kan imidlertid tildele eller betale rabatten, eller motta betaling av den, til en hvilken som helst definert frekvens som er den samme som eller lengre enn avsetningsfrekvensen. Avskriving bruker samme frekvens som rabatten. Brukere kan enkelt justere en plan eller betalingsbeløp når som helst i løpet av utbetalingen.
 
 Brukerne trenger ikke lenger å håndtere avtaler eller avsetninger i to trinn. Avsetninger og avskrivinger posteres direkte til finans. Kreditnotaer kan også opprettes automatisk. Derfor er det fullstendig integrasjon med leverandører og kunder. Under behandlingen vurderer beregningene utligningsrabatter, betalte fakturaer, forhandlerrabatter og eksisterende kreditnotaer for å sikre at beløp og verdier beregnes nøyaktig.
 
-Når rabatter beregnes, oppretter prosessen transaksjoner som kan gjennomgås før postering skjer. Deretter kan det opprettes en journal, en kreditnota eller en debettransaksjon. En separat prosess posterer rabatt- og fradragstransaksjoner. Rapporteringskontoutdrag og transaksjonsoversikter kan hentes for å sikre samsvar, effektivitet og gjennomsiktighet.
+Når rabatter beregnes, oppretter prosessen transaksjoner som kan gjennomgås før postering skjer. En separat prosess posterer rabattbehandlingstransaksjoner. En journal, kreditnota eller debettransaksjon kan deretter opprettes under postering til foreslåtte transaksjoner. Rapporteringskontoutdrag og transaksjonsoversikter kan hentes for å sikre samsvar, effektivitet og gjennomsiktighet.
+
 
 ## <a name="guaranteed-royalty-payments"></a>Garanterte royalty-betalinger
 

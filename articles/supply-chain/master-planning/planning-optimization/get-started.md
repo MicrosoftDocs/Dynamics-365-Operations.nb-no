@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: d12e1908e234c841fb705266b2255c6c5e2140e1
-ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
+ms.openlocfilehash: 2867a4f9418e9435e2980fc24314914595ec44d0
+ms.sourcegitcommit: cbbb35c71ab4ff1ae08fa4f7cc97019b207246be
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6103599"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "6301680"
 ---
 # <a name="get-started-with-planning-optimization"></a>Komme i gang med planleggingsoptimalisering
 
@@ -109,6 +109,8 @@ Innstillingen for alternativet **Bruk planleggingsoptimalisering** bestemmer hvi
 
 - **Ja** – planleggingsoptimalisering brukes til hovedplanlegging.
 - **Nei** – den innebygde planleggingsmotoren Supply Chain Management brukes til hovedplanlegging.
+
+Denne innstillingen gjelder for alle juridiske enheter (firmaer). Det er ikke mulig å bruke planleggingsoptimalisering i noen juridiske enheter, og den innebygde hovedplanleggingen i andre juridiske enheter.
 
 > [!NOTE]
 > Hvis eksisterende satsvise planleggingsjobber for den innebygde planleggingsmotoren Supply Chain Management utløses når alternativet **Bruk planleggingsoptimalisering** er satt til **Ja**, vil disse jobbene mislykkes.

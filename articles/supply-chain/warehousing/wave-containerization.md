@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: c62e2d1b361e0ed1ab1ced42997add157b30c828
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 88e38989e3d3e46d0c43779659bc6ea2e29f08e2
+ms.sourcegitcommit: 8e846b52763f90d2232ec7d427839f4722570bce
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019057"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "6292743"
 ---
 # <a name="containerization"></a>Containerbruk
 
@@ -108,6 +108,8 @@ Hvis du vil konfigurere en mal for containerversjon, følger du fremgangsmåten 
 
       - **Pakk i alle åpne containere**– Systemet vurderer om tildelingslinjen får plass i en container som ble opprettet i løpet av containerbruk-syklusen.
       - **Pakk bare i gjeldende container** – Systemet vurderer bare om tildelingslinjen får plass i containeren som ble opprettet sist.
+
+    Hvis du vil ha mer informasjon og eksempler som viser hvordan du arbeider med containerpakkestrategier, kan du se [Strategier for containerpakking](container-packing-strategy-overview.md).
 
 1. Hvis du vil definere regler for pakketildelingslinjer i containere, velger du **Blanding av brudd i kombinasjonslogikk**. Du kan for eksempel opprette en regel som tillater ansatte å pakke tildelingslinjer for to ulike varer, i den samme containeren. Hvis du vil definere en kombinasjonsregel, gjør du følgende:
 

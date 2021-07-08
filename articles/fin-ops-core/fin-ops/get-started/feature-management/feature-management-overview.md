@@ -15,12 +15,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 438e8ba38726a25a2464490f4098f96095b4d5c6
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: 2164c07d1a179a0aa15611b742084d872f41bbfc
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923313"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6270819"
 ---
 # <a name="feature-management-overview"></a>Oversikt over funksjonsbehandling
 
@@ -160,8 +160,8 @@ Policyen er at alle nye funksjoner vil kunne velges i en 12-måneders periode og
 ### <a name="why-isnt-there-a-specific-mandatory-enabled-date"></a>Hvorfor finnes det ikke en bestemt "obligatorisk aktivert-dato"? 
 Tidspunkt for frigivelse av oppdatering varierer, miljøoppdateringstidspunkt varierer, og kunder kan velge å hoppe over enkelte oppdateringer. Derfor er bestemte datoer er vanskelige å bestemme. 
 
-### <a name="wheres-the-documentation-for-features-that-are-being-made-mandatory"></a>Hvor er dokumentasjonen for funksjoner som gjøres obligatoriske? 
-Denne dokumentasjonen kommer fra programgruppene. Disse er ofte nevnt i [Funksjoner som er fjernet eller avskrevet](../../../dev-itpro/migration-upgrade/deprecated-features.md). 
+### <a name="wheres-the-documentation-for-features-that-are-mandatory"></a>Hvor er dokumentasjonen for funksjoner som er obligatoriske? 
+Denne dokumentasjonen kommer hvert Dynamics 365-programteam. Ofte vil disse funksjonene bli nevnt i [Oppdateringer til klientfunksjonstilstander](/dynamics365-release-plan/2021wave1/finance-operations/finance-operations-crossapp-capabilities/updates-client-feature-states) eller [Funksjoner som er fjernet eller avskrevet](../../../dev-itpro/migration-upgrade/deprecated-features.md). 
 
 ### <a name="is-there-an-in-product-notification-or-signal-that-a-feature-is-going-to-be-mandatory-enabled"></a>Finnes det et varsel eller signal i produktet om at en funksjon skal bli obligatorisk aktivert? 
 En varslingsmekanisme som er knyttet til å gjøre en funksjon obligatorisk, finnes ikke i dag.

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 84d845055e175e6f4b8078fabeb3307ee96826f2
-ms.sourcegitcommit: 588f8343aaa654309d2ff735fd437dba6acd9d46
+ms.openlocfilehash: 34d0f3a0ff2a2ce1efd52f7bad2367af5f2f371b
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6115029"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271161"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurere grensesnittet for produksjonsutførelse
 
@@ -64,8 +64,6 @@ Denne funksjonen legger til en knapp i grensesnittet for produksjonsutførelse, 
 - Funksjon for låsing av jobbkortenheten og jobbkortterminal slik at de kan rengjøres
 
 ### <a name="asset-management-functionality-for-the-production-floor-execution-interface"></a>Funksjonalitet for anleggsmiddelstyring for grensesnittet for produksjonsutførelse
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Denne funksjonen legger til en fane for aktivastyring i grensesnittet for produksjonsutførelse. Arbeidere kan bruke denne fanen til å velge et aktivum som er koblet til en maskinressurs som er innenfor det valgte filteret for jobblisten. Arbeideren kan vise statusen og tilstanden til det valgte maskinaktivumet fra tellerverdier for opptil fire valgte tellere. Hvis du vil bruke denne funksjonen, aktiverer du følgende funksjon i [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 

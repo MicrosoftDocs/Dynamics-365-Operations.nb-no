@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 808080d9e84c4af1b061d5a4ce76d5fa309e66f7
-ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
+ms.openlocfilehash: e77022bde6e612392c80cf5fe2b4c1e75ec5775d
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6216749"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271011"
 ---
 # <a name="rebate-management-posting-setup"></a>Posteringsoppsett for rabattbehandling
 
@@ -41,7 +41,7 @@ I tabellen nedenfor beskrives innstillingene som er tilgjengelige i hodedelen i 
 |---|---|
 | Posteringsprofil | Angi et unikt navn for profilen. |
 | beskrivelse | Angi en beskrivelse av profilen. |
-| Modul | Velg typen rabatter og royalty som profilen er forbundet med (*Kunde* eller *Leverandør*). |
+| Modul | Velg modulen som rabatter og royalty for profilen er forbundet med (*Kunde* eller *Leverandør*). |
 | Type | Velg profiltypen (*Rabatt* eller *Royalty*). |
 | Betalingsmiddel | <p>Dette feltet bestemmer formatet for de posterte rabattutdataene.<p><p>Når **Type**-feltet er satt til *Rabatt*, er følgende verdier tilgjengelige:</p><ul><li>*Betal ved å bruke leverandør* – Når du posterer en kunderabatt, opprettes det en leverandørfaktura for remitteringsleverandøren som er definert for rabattkunden. Når du posterer en leverandørrabatt, opprettes det en leverandørfaktura for rabattleverandørkunden.</li><li>*Kundefradrag* – Når du posterer rabatten, opprettes det en kundefradragsjournal for rabattkunden.</li><li>*Kundefradrag for avgiftsfaktura* – Når du posterer rabatten, opprettes det en fritekstfaktura for rabattkunden.</li><li>*Forretningsutgifter* – Når du posterer rabatten, opprettes det en kundefradragsjournal for rabattkunden.</li><li>*Rapportering* – Når du posterer rabatten, opprettes det en kundefradragsjournal for rabattkunden.</li></ul><p>Når **Type**-feltet er satt til *Royalty*, er følgende verdier tilgjengelige:</p><ul><li>*Betal ved å bruke leverandør* – Når du posterer rabatten, opprettes det en leverandørfaktura for rabattleverandørkunden.</li><li>*Rapportering* – Når du posterer rabatten, opprettes det en leverandørfaktura for rabattleverandørkunden.</li></ul><p>Hvis du vil ha mer informasjon, kan du se delen [Betalingstyper](#payment-types) nedenfor. |
 | Bedrift | Velg firmaet (juridisk enhet) som avsetningene skal avsettes til, og som krav vil bli betalt av. |
@@ -66,7 +66,7 @@ Tabellen nedenfor oppsummerer hvordan de forskjellige innstillingene i **Betalin
 > Vurder følgende punkter når du setter opp [Rabattbehandlingsavtaler](rebate-management-deals.md):
 >
 > - For avtaler der feltet **Avstem etter** er satt til *Avtale*, kan du ikke bruke den dynamiske avtalekontoen under postering. Du må bruke en angitt kunde- eller leverandørkonto.
-> - For avtaler der feltet **Avstem etter** er satt til *Linje*, kan du bruke en posteringsprofil som utligner til en dynamisk avtalekonto på avtalelinjen, fordi kunden er definert per avtalelinje.
+> - For avtaler der feltet **Avstem etter** er satt til *Linje*, kan du bruke en posteringsprofil som utligner til en dynamisk avtalekonto på avtalelinjen, fordi kunden eller leverandøren er definert per avtalelinje.
 
 ## <a name="posting-fasttab"></a>Hurtigfanen Postering
 
@@ -74,15 +74,15 @@ I tabellen nedenfor beskrives feltene som er tilgjengelige på hurtigfanen **Pos
 
 | Felt | beskrivelse |
 |---|---|
-| Kredittype | Velg om du vil kreditere en finanskonto eller en kunde eller leverandør. |
-| Kreditkonto | Kontoen som kreditbeløpene posteres til når det utføres rabattavsetninger. Denne kontoen blir også brukt som debetkonto når rabatten posteres for å kreditere kunden. |
+| Kredittype | Velg om du vil kreditere en finanskonto eller en kunde. Hvis **Betalingstype**-feltet i hodet er satt til *Fradrag for avgiftsrakturakunde*, settes dette feltet til *Finanskonto*. For leverandørfakturaer er dette feltet satt til *Finanskonto*. |
+| Kreditkonto | Velg kontoen som kreditbeløpene posteres til når det utføres rabattavsetninger. Denne kontoen blir også brukt som en motkonto når rabatten posteres for å kreditere kunden eller debitere leverandøren. |
 | Journalnavn<br>(I **Avsetning**-delen) | Velg navnet på journalen som skal brukes til å registrere den posterte avsetningen. |
 | Type | Velg om du vil postere rabatten til en finanskonto eller til en kunde eller leverandør. Hvis **Betalingstype**-feltet i hodet er satt til *Fradrag for avgiftsrakturakunde*, settes dette feltet til *Kunde/leverandør*. |
-| Bruk kontokilde | <p>Velg én av følgende verdier:</p><ul><li>*Ingen* – Hvis du velger denne verdien, må du angi en konto i **Rabattkonto**-feltet.</li><li>*Avtalekonto* – Bruk kunde- eller leverandørkontoen som er angitt på rabattlinjen. Du kan bare velge denne verdien for avtaler der feltet **Avstem etter** er satt til *Linje*, og for avtalelinjer der feltet **Kontokode** er satt til *Tabell*. Det gjelder ikke posteringsprofiler for kunderoyalty.</li></ul> |
+| Bruk kontokilde | <p>Velg én av følgende verdier:</p><ul><li>*Fast konto* – Hvis du velger denne verdien, må du angi en konto i **Rabattkonto**-feltet.</li><li>*Avtalelinjekonto* – Bruk kunde- eller leverandørkontoen som er angitt på rabattlinjen. Du kan bare velge denne verdien for avtaler der feltet **Avstem etter** er satt til *Linje*, og for avtalelinjer der feltet **Kontokode** er satt til *Tabell*. Den gjelder ikke kundeposteringsprofiler eller leverandørrabatter som er basert på salgsordrer.</li></ul> |
 | Rabattkonto | Kontoen som den faktiske rabattutgiften blir postert til. |
-| Journalnavn<br>(I **Rabattbehandling**-delen) | Velg navnet på journalen som skal brukes til å postere en kreditnota for rabattbeløpet til kunden. Dette feltet er utilgjengelig når **Betalingstype**-feltet i hodet er satt til *Fradrag for avgiftsfakturakunde*. |
+| Journalnavn<br>(I feltgruppen **Rabattbehandling**) | Velg navnet på journalen som skal brukes til å postere en kreditnota for rabattbeløpet til kunden eller leverandøren. Dette feltet er utilgjengelig når **Betalingstype**-feltet i hodet er satt til *Fradrag for avgiftsfakturakunde*. For kunderabatter vil journalnavn av journaltypen *Daglig* være tilgjengelige. For kunde royalty- og leverandørrabatter vil journalnavn av journaltypen *Registrering av leverandørfaktura* være tilgjengelige. |
 | Varens mva-gruppe | Angi om rabatten er avgiftspliktig. |
-| Journalnavn<br>( **Avskrivning**-delen) | Hvis rabatten som posteres, ikke er lik avsetningen, kan differansen skrives av. Velg navnet på journalen som skal brukes til å registrere den posterte avskrivningen. |
+| Journalnavn<br>(I feltgruppen **Avskrive**) | Hvis rabatten som posteres, ikke er lik avsetningen, kan differansen skrives av. Velg navnet på journalen som skal brukes til å registrere den posterte avskrivningen. |
 
 ## <a name="posting-by-company-fasttab"></a>Hurtigfanen Postering etter firma
 
@@ -92,6 +92,6 @@ Bruk knappene på verktøylinjen til å legge til firmaer i rutenettet eller fje
 
 Merk raden for hvert firma, og skriv deretter inn følgende informasjon ved hjelp av feltene under rutenettet:
 
-- **Debettype** – Velg om du vil debitere en finanskonto eller en kunde eller leverandør.
+- **Debettype** – Velg om du vil debitere en finanskonto eller en leverandør. For kunderabatter og royalties er dette feltet satt til *Finanskonto*.
 - **Debetkonto** – Angi kontoen som debetbeløpet skal posteres til når det utføres rabattavsetninger.
 - **Hovedkonto** – Velg hovedkontoen for avskrivninger.

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 86ca63b1703faa6f57ed2e5591c89a5e84363481
-ms.sourcegitcommit: 318e406b84d43381d450272eb83c5eea9c5cf1c0
+ms.openlocfilehash: ddd4c55f6ebfbe91fb949a92cb379f51d826c465
+ms.sourcegitcommit: cee7887282d372c756c5c11f76684315f249bba5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6059479"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6303470"
 ---
 # <a name="accrue-leave-and-absence-plans"></a>Avsett permisjons- og fraværsplaner
 
@@ -104,11 +104,9 @@ Slett avsetningsposter for en spesifikk plan og et bestemt datoområde. Avsetnin
 
 2. Under **Administrer permisjon** velger du **Slett permisjonsavsetningsrevisjon**.
 
-## <a name="preview-leave-accrual-transaction-auditing"></a>(Forhåndsversjon) Overvåking av permisjonsavsetningstransaksjon
+## <a name="leave-accrual-transaction-auditing"></a>Overvåking av permisjonsavsetningstransaksjon
 
-[!include [Preview feature](includes/preview-feature.md)]
-
-Ved hjelp av denne forhåndsvisningsfunksjonen kan permisjons- og fraværsledere forstå avsetningstransaksjonene for permisjon og fravær som er knyttet til en ansatts fraværssaldoer for en bestemt permisjonstype.
+Ved hjelp av denne funksjonen kan permisjons- og fraværsledere forstå avsetningstransaksjonene for permisjon og fravær som er knyttet til en ansatts fraværssaldoer for en bestemt permisjonstype.
 
 Slik viser du transaksjonsdetaljer:
 

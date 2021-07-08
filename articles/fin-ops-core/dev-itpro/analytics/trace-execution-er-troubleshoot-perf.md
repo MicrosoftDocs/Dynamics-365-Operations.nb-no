@@ -2,7 +2,7 @@
 title: Spore kjøringen av ER-formater for å feilsøke ytelsesproblemer
 description: Dette emnet inneholder informasjon om hvordan du bruker funksjonen ytelsessporing i elektronisk rapportering (ER) for å feilsøke ytelsesproblemer.
 author: NickSelin
-ms.date: 04/23/2021
+ms.date: 06/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 13e631d3330eefed09111eca70a5aa111e88274f
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: 7fbec962fea374afdbabaad48a42dad380708678
+ms.sourcegitcommit: dbffde1944b9d037124415c28053036c9ef1ecb7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944659"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "6295579"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Spore utførelse av ER-formater for å feilsøke ytelsesproblemer
 
@@ -119,12 +119,27 @@ De tilsvarende versjonene av konfigurasjonene for datamodell og modelltilordning
 2. På **Konfigurasjoner**-siden, i handlingsruten i kategorien **Konfigurasjoner** i gruppen **Avanserte innstillinger**, velger du **Brukerparametere**.
 3. Følg disse trinnene i dialogboksen **Brukerparametere** i delen **Kjøringssporing**:
 
-    1. I feltet **Sporingsformat for kjøring** velger du **Feilsøk sporingsformat** for å begynne å samle inn detaljer for kjøringen av ER-format. Når denne verdien er valgt, vil ytelsessporingen samle inn informasjon om tiden som brukes på følgende handlinger:
+    1. I feltet **Sporingsformat for kjøring** angir du formatet på den genererte ytelsessporingen som kjøringsdetaljene er lagret i for ER-format og tilordningselementer:
 
-        - Kjøre hver datakilde i modelltilordningen som kalles for å hente data
-        - Behandler hver formatvare for å angi data i utdataene som genereres
+        - **Feilsøk sporingsformat** – Velg denne verdien hvis du planlegger å kjøre et ER-format interaktivt med kort kjøretid. Samlingen med detaljer om utførelsen av ER-format startes deretter. Når denne verdien er valgt, vil ytelsessporingen samle inn informasjon om tiden som brukes på følgende handlinger:
 
-        Du bruker feltet **Sporingsformat for kjøring** til å angi formatet på den genererte ytelsessporingen som kjøringsdetaljene er lagret i for ER-format og tilordningselementer. Ved å velge **Feilsøk sporingsformat** som verdi kan du analysere innholdet i sporingen i ER-operasjonsutforming og se ER-formatet eller tilordningselementene som er nevnt i sporingen.
+            - Kjøre hver datakilde i modelltilordningen som kalles for å hente data
+            - Behandler hver formatvare for å angi data i utdataene som genereres
+
+            Hvis du velger verdien **Feilsøk sporingsformat**, kan du analysere innholdet i sporingen i ER-operasjonsutforming. Der kan du vise ER-formatet eller tilordningselementene som er nevnt i sporingen.
+
+        - **Aggregert sporingsformat** – Velg denne verdien hvis du planlegger å kjøre et ER-format med lang kjøretid i satsvis modus. Samlingen med aggregerte detaljer om utførelsen av ER-format startes deretter. Når denne verdien er valgt, vil ytelsessporingen samle inn informasjon om tiden som brukes på følgende handlinger:
+
+            - Kjøre hver datakilde i modelltilordningen som kalles for å hente data
+            - Kjøre hver datakilde i formattilordningen som kalles for å hente data
+            - Behandler hver formatvare for å angi data i utdataene som genereres
+
+            Verdien **Aggregert sporingsformat** er tilgjengelig i Microsoft Dynamics 365 Finance-versjon 10.0.20 og senere.
+
+            I ER-formatdesigneren og ER-modelltilordningsdesigneren kan du vise den totale utførelsestiden for en enkelt komponent. I tillegg inneholder sporingen detaljer om utførelsen, for eksempel antall utførelser og minimums- og maksimumstiden for én enkelt utførelse.
+
+            > [!NOTE]
+            > Denne sporingen samles inn basert på banen til de sporede komponentene. Derfor kan statistikken være feil når en enkelt overordnet komponent inneholder flere ikke-navngitte underordnede komponenter, eller når flere underordnede komponenter har samme navn.
 
     2. Angi følgende alternativer til **Ja** for å samle inn bestemte detaljer for utførelsen av ER-modelltilordningen og ER-formatkomponentene:
 

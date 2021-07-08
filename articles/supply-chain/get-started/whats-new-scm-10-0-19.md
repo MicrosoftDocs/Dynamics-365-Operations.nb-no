@@ -1,5 +1,5 @@
 ---
-title: Forhåndsvisning av Dynamics 365 Supply Chain Management 10.0.19 (juni 2021)
+title: Hva er nytt eller endret i Dynamics 365 Supply Chain Management versjon 10.0.19 (juni 2021)
 description: Dette emnet beskriver funksjoner som enten er nye eller endret i Dynamics 365 Supply Chain Management 10.0.19.
 author: kamaybac
 ms.date: 04/23/2021
@@ -10,19 +10,18 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: f0af22dc07e8045546f11d9e58a10c7cb0bfea90
-ms.sourcegitcommit: 588f8343aaa654309d2ff735fd437dba6acd9d46
+ms.openlocfilehash: 7f98eee2a821191cefc27abbbd59373084c8b50c
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6114981"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271455"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10019-june-2021"></a>Forhåndsvisning av Dynamics 365 Supply Chain Management 10.0.19 (juni 2021)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10019-june-2021"></a>Hva er nytt eller endret i Dynamics 365 Supply Chain Management versjon 10.0.19 (juni 2021)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Supply Chain Management-forhåndsversjonen 10.0.19. Denne versjonen har et build-nummer 10.0.837, og er tilgjengelig som følger:
+Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Supply Chain Management, versjon 10.0.19. Denne versjonen har et build-nummer 10.0.837, og er tilgjengelig som følger:
 
 - **Forhåndsversjon:** april 2021
 - **Allmenn tilgjengelighet av versjon (selvoppdatering):** Juni 2021
@@ -32,7 +31,7 @@ Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynam
 
 Denne tabellen viser funksjonene i denne versjonen. *Funksjon*-kolonnen gir koblinger til [frigivelsesplanen](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features), der du kan se de offisielle frigivelsesdatoene for hver funksjon. Kolonnen *Mer informasjon* inneholder mer informasjon og/eller koblinger til tilknyttet dokumentasjon.
 
-De fleste av disse funksjonene må aktiveres ved hjelp av [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) før du kan bruke dem. Noen av funksjonene i listen er fortsatt i forhåndsversjon, mens andre kanskje allerede er allment tilgjengelige.
+De fleste av disse funksjonene må aktiveres ved hjelp av [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) før du kan bruke dem.
 
 | Funksjonsområde | Funksjon | Mer informasjon |
 |---|---|---|

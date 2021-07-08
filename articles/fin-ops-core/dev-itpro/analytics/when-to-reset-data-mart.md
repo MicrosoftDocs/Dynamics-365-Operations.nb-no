@@ -1,8 +1,8 @@
 ---
-title: Når skal et data mart tilbakestilles
-description: Dette emnet viser en oversikt over forhold som kan forbedres ved å tilbakestille et data mart, og forhold der det er usannsynlig at tilbakestilling av data mart hjelper.
+title: Vanlige spørsmål om tilbakestilling av data mart
+description: Dette emnet gir svar på noen vanlige spørsmål om tilbakestilling av data mart.
 author: jinniew
-ms.date: 05/06/2021
+ms.date: 06/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,40 +14,47 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-05-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: bc2c4ee490f3bebd6e7c91609a06f8dfedfcb628
-ms.sourcegitcommit: 5916ea2a94ab9af7aac21f0fc44e194d5ce82917
+ms.openlocfilehash: 7cd96c7bc698986ef1ef07ca88479a3d49f22924
+ms.sourcegitcommit: ecabf43282a3e55f1db40341aa3f3c7950b9e94c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "5988998"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "6266615"
 ---
-# <a name="when-to-reset-a-data-mart"></a>Når skal et data mart tilbakestilles
+# <a name="data-mart-resets-faq"></a>Vanlige spørsmål om tilbakestilling av data mart
 
-Det kan være tidkrevende å tilbakestille et data mart. Denne handlingen er kanskje ikke løsningen som trengs, avhengig av forholdene. Dette emnet viser en oversikt over forhold som kan forbedres ved å tilbakestille et data mart, og forhold der det er usannsynlig at tilbakestilling av data mart hjelper.  
+Dette emnet gir svar på noen vanlige spørsmål om tilbakestilling av data mart. En tilbakestilling av data mart kan være en tidkrevende prosess og, avhengig av omstendighetene, kan det hende at det ikke er den løsningen som kreves. Derfor inneholder dette emnet informasjon om forhold der en tilbakestilling av data mart kan hjelpe, og også forhold der det sannsynligvis ikke vil hjelpe.
 
-## <a name="when-do-i-need-to-do-a-data-mart-reset"></a>Når må jeg tilbakestille et data mart?
-Vurder følgende spørsmål før du tilbakestiller et data mart. Hvis du svarer ja på ett eller flere spørsmål, kan det bety at organisasjonen kan dra nytte av å tilbakestille data mart.
-
-- Ble applikasjonsdatabasen gjenopprettet?
-- Hvis du har åpnet en støttehendelse og en kundestøttetekniker har bedt deg om å tilbakestille data mart som en del av et feilsøkingstrinn?
- 
-## <a name="when-is-it-not-appropriate-to-reset-a-data-mart"></a>Når passer det ikke å tilbakestille et data mart?
-Det finnes visse omstendigheter der vi anbefaler at du ikke tilbakestiller et data mart. Disse omfatter følgende. 
-
-- Du har ytelsesproblemer som er knyttet til en datasynkronisering. 
-- Hvis du har et gjentakende tilbakestillingsmønster av en av følgende årsaker: 
-  - **Manglende data** 
-  - **Fastlåst integreringstilstand** 
-  - **Foreldede poster** – Foreldede poster alene gir ikke nødvendigvis en god grunn til å tilbakestille data mart. Hvis du har et stort datasett, tar det litt tid å kjøre tilbakestillingsprosessen, men den fører sannsynligvis ikke til forbedringer.
- 
 ## <a name="what-is-a-data-mart-reset"></a>Hva er en tilbakestilling av data mart?
-- En tilbakestilling starter bare når eksisterende oppgaver er fullført. Dette sikrer at gamle data ikke settes inn. På dette tidspunktet kan du for eksempel få meldingen «Tilbakestillingen av data mart kan ikke behandles på grunn av en aktiv oppgave. Prøv på nytt senere.»
-- Tilbakestillingen deaktiverer integreringsoppgavene og sletter alle data mart-data. Integreringen aktiveres på nytt.
 
-## <a name="if-i-reset-the-data-mart-will-i-lose-reports-that-ive-already-designed"></a>Hvis jeg tilbakestiller data mart, vil jeg miste rapporter som jeg allerede har utformet? 
-Nei, rapportene lagres i SQL-tabeller som ikke påvirkes av en tilbakestilling av data mart. Hvis du er opptatt av å miste rapporter du har utformet, kan du sikkerhetskopiere utformingene du ikke vil miste. Hvis du vil sikkerhetskopiere dem, åpner du Rapportutforming og går til **Firma > Firmaer > Byggesteiner > Eksporter**.
+En datatilbakestilling av data mart vil deaktivere integreringsoppgavene, slette alle data mart-data og deretter aktivere integreringen på nytt.
+
+For å sikre at de gamle dataene ikke settes inn, kan en datatilbakestilling startes bare etter at eksisterende oppgaver er fullført. Hvis du prøver å tilbakestille data mart før alle oppgavene er fullført, kan du for eksempel få meldingen: "Tilbakestilling av data mart vil ikke kunne behandles på grunn av en aktiv oppgave. Prøv på nytt senere."
+
+## <a name="when-do-i-have-to-do-a-data-mart-reset"></a>Når må jeg tilbakestille et data mart?
+
+Hvis én eller flere av de følgende erklæringene gjelder for din situasjon, kan organisasjonen dra nytte av en tilbakestilling av data mart:
+
+- Applikasjonsdatabasen ble gjenopprettet.
+- Du har åpnet en støtteforespørsel, og en kundestøttetekniker har bedt deg om å tilbakestille data mart som en del av et feilsøkingstrinn.
  
-## <a name="is-it-necessary-for-all-users-to-exit-the-system-to-reset-the-data-mart"></a>Er det nødvendig for alle brukere å avslutte systemet for å tilbakestille data mart?
-Nei, brukere kan fortsette å arbeide i systemet under tilbakestillingen av data mart. De vil imidlertid ikke få tilgang til rapporter som ble opprettet med finansrapportering før tilbakestillingen er fullført. 
+## <a name="when-is-a-data-mart-reset-inappropriate"></a>Når blir et data mart tilbakestilt på feil måte?
+
+Her er noen omstendigheter der vi anbefaler at du ikke tilbakestiller et data mart:
+
+- Du har ytelsesproblemer som er knyttet til datasynkronisering.
+- Du har et gjentakende tilbakestillingsmønster av en av følgende årsaker:
+
+    - **Manglende data** – Hvis du ser at det mangler data, åpner du en støtteforespørsel hos Microsoft for å gå gjennom rapportformatet og mulige problemer med datasynkronisering.
+    - **Fastlåst integreringstilstand**
+    - **Foreldede poster** – Foreldede poster alene gir ikke nødvendigvis en god grunn til å tilbakestille data mart. Hvis du har et stort datasett, tar det litt tid å kjøre tilbakestillingsprosessen, men den fører sannsynligvis ikke til forbedringer.
+
+## <a name="if-i-reset-the-data-mart-will-i-lose-reports-that-ive-already-designed"></a>Hvis jeg tilbakestiller data mart, vil jeg miste rapporter som jeg allerede har utformet?
+
+Nei. Rapportene dine lagres i SQL-tabeller som ikke påvirkes av en tilbakestilling av data mart. Hvis du er opptatt av å miste rapporter du har utformet, kan du sikkerhetskopiere utformingene du ikke vil miste. Hvis du vil sikkerhetskopiere utforminger, åpner du Rapportutforming og går til **Firma \> Firmaer \> Byggesteiner \> Eksporter**.
+ 
+## <a name="do-all-users-have-to-exit-the-system-before-i-can-reset-the-data-mart"></a>Må alle brukerne avslutte systemet før jeg kan tilbakestille data mart?
+
+Nei. Brukere kan fortsette å arbeide i systemet under tilbakestillingen av data mart. De vil imidlertid ikke få tilgang til rapporter som ble opprettet med Financial Reporter før tilbakestillingen er fullført.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 824f7eb66c1d3f03df74a706e8214bcfe1d8efd9
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: 6941a38e96520befd3bdba65956d45a6bbaee4be
+ms.sourcegitcommit: f21659f1c23bc2cd65bbe7fb7210910d5a8e1cb9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941202"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6306395"
 ---
 # <a name="unified-product-experience"></a>Samlet produktopplevelse
 
@@ -124,7 +124,7 @@ Produktdimensjoner er egenskaper som identifiserer en produktvariant. De fire pr
 
 Når et produkt har forskjellige produktdimensjoner (en produktstandard har for eksempel Størrelse og Farge som produktdimensjoner), vil hvert enkelt produkt (det vil si hver produktvariant) defineres som en kombinasjon av disse produktdimensjonene. Produktnummer B0001 er for eksempel en ekstra liten svart T-skjorte, og produktnummer B0002 er en liten svart T-skjorte. I dette tilfellet er de eksisterende kombinasjonene av produktdimensjoner definert. T-skjorten fra det foregående eksemplet kan for eksempel være ekstra liten og svart, liten og svart, medium og svart, eller stor og svart, men den kan ikke være ekstra stor og svart. Det vil si at produktdimensjonene for en produktstandard blir angitt, og varianter kan frigis basert på disse verdiene.
 
-For å holde orden på produktdimensjonene som en produktstandard kan ha, blir følgende tabeller opprettet og tilordnet i Dataverse for hver produktdimensjon. Hvis du vil ha mer informasjon, kan du se [Oversikt over produktinformasjon](../../../supply-chain/pim/product-information.md).
+For å holde orden på produktdimensjonene som en produktstandard kan ha, blir følgende tabeller opprettet og tilordnet i Dataverse for hver produktdimensjon. Hvis du vil ha mer informasjon, kan du se [Oversikt over produktinformasjon](../../../../supply-chain/pim/product-information.md). 
 
 [!include [product colors](includes/EcoResProductMasterColorEntity-msdyn-sharedproductcolors.md)]
 

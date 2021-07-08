@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a7ed310ebdef130b0fb09c5db19397398dc5042
-ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
+ms.openlocfilehash: 7901bcfc239885aa53863729e573d1f37ba67f81
+ms.sourcegitcommit: f21659f1c23bc2cd65bbe7fb7210910d5a8e1cb9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6216848"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6306421"
 ---
 # <a name="inventory-forecasts"></a>Lagerprognoser
 
@@ -353,20 +353,46 @@ Bruk denne fremgangsmåten til å behandle eksisterende prognosetransaksjonslinj
 1. Bruk delen **Finansdimensjoner** til å oppdatere finansdimensjonene til prognoselinjer. Velg finansdimensjonene du vil endre, og angi deretter en verdi som skal brukes på de valgte dimensjonene.
 1. Velg **OK** for å bruke endringene.
 
-## <a name="run-forecast-planning"></a>Kjøre prognoseplanlegging
+## <a name="use-forecasts-with-master-planning"></a>Bruke prognoser med hovedplanlegging
 
-Etter at du har angitt behovsprognosen og/eller forsyningsprognosen, kan du kjøre prognoseplanlegging for å beregne bruttobehov for materialer og kapasitet og generere planlagte bestillinger.
+Når du har angitt behovsprognosen og/eller forsyningsprognosen, kan du inkludere prognosene under hovedplanlegging for å ta hensyn til forventet behov og/eller forsyning i kjøringen av hovedplanlegging. Når prognoser inkluderes i hovedplanleggingen, beregnes det bruttobehov for materialer og kapasitet, og planlagte bestillinger genereres.
 
-1. Gå til **Hovedplanlegging \> Prognose \> Prognoseplanlegging**.
-1. I feltet **Prognoseplan** velger du en prognoseplan.
-1. Aktiver **Spor behandlingstid** for å registrere behandlingstiden for hver planleggingsoppgave.
-1. Angi en verdi i feltet **Antall tråder**. (Hvis du vil ha mer informasjon, kan du se [Forbedre ytelsen for hovedplanlegging](master-planning-performance.md).)
-1. I **Kommentar**-feltet skriver du inn tekst for å ta med eventuell tilleggsinformasjon som kreves.
-1. I hurtigfanen **Poster som skal inkluderes** velger du **Filter** for å begrense utvalget av varer.
-1. Angi parameterne for den satsvise jobben i hurtigfanen **Kjør i bakgrunnen**.
+### <a name="set-up-a-master-plan-to-include-an-inventory-forecast"></a>Definere en hovedplan for å inkludere en lagerprognose
+
+Følg denne fremgangsmåten for å konfigurere en hovedplan, slik at den inneholder en lagerprognose.
+
+1. Gå til **Hovedplanlegging \> Oppsett \> Planer \> Hovedplaner**.
+1. Velg en eksisterende plan, eller opprett en ny plan.
+1. Angi følgende felt i hurtigfanen **Generelt**:
+
+    - **Prognosemodell** – Velg prognosemodellen som skal brukes. Denne modellen blir tatt hensyn til når det genereres et forsyningsforslag for den gjeldende hovedplanen.
+    - **Inkluder forsyningsprognose** – Sett dette alternativet til *Ja* for å inkludere forsyningsprognosen i gjeldende hovedplan. Hvis du setter det til *Nei*, blir ikke transaksjoner for forsyningsprognose inkludert i hovedplanen.
+    - **Inkluder behovsprognose** – Sett dette alternativet til *Ja* for å inkludere behovsprognose i gjeldende hovedplan. Hvis du setter det til *Nei*, blir ikke transaksjoner for behovsprognose inkludert i hovedplanen.
+    - **Metode som brukes til å redusere behovskrav** – Velg metoden som skal brukes til å redusere prognosebehovene. Hvis du vil ha mer informasjon, kan du se [Prognosereduksjonsnøkler](planning-optimization/demand-forecast.md#reduction-keys).
+
+1. I **Horisonter i dager** kan du angi følgende felter for å angi perioden som prognosen skal tas med i:
+
+    - **Prognoseplan** – Sett dette alternativet til *Ja* for å overstyre prognoseplanen som kommer fra de individuelle dekningsgruppene. Sett det til *Nei* for å bruke verdiene fra de individuelle dekningsgruppene for den gjeldende hovedplanen.
+    - **Tidsperiode for prognose** – Hvis du angir **Prognoseplan** til *Ja*, angir du antall dager (fra dagens dato) som behovsprognose skal brukes på.
+
+    > [!IMPORTANT]
+    > Alternativet **Prognoseplan** støttes ikke med Planleggingsoptimalisering ennå.
+
+### <a name="run-a-master-plan-that-includes-an-inventory-forecast"></a>Kjøre en hovedplan som inkluderer en lagerprognose
+
+Følg denne fremgangsmåten for å kjøre en hovedplan som inneholder en lagerprognose.
+
+1. Gå til **Hovedplanlegging \> Arbeidsområder \> Hovedplanlegging**.
+1. I **Hovedplan**-feltet angir eller velger du hovedplanen som du definerte i den forrige fremgangsmåten.
+1. Velg **Kjør** i **Hovedplanlegging**.
+1. I dialogboksen **Hovedplanlegging** angir du alternativet **Spor behandlingstid** til *Ja*.
+1. Angi et tall i feltet **Antall tråder**.
+1. Velg **Filtrer** i hurtigfanen **Poster som skal inkluderes** .
+1. En standard dialogboks for Power Query-redigering vises. I fanen **Område** velger du raden der **Felt**-feltet er satt til *Varenummer*.
+1. Velg varenummeret som skal tas med i planen, i **Kriterier**-feltet.
 1. Velg **OK**.
 
-Hvis du vil vise behovene som beregnes, åpner du **Bruttobehov**-siden. Velg for eksempel **Bruttobehov** i **Behov**-delen i **Plan**-fanen på siden **Frigitte produkter**.
+Hvis du vil vise behovene som beregnes, åpner du **Bruttobehov**-siden. Velg for eksempel **Bruttobehov** i **Behov**-gruppen i **Plan**-fanen på siden **Frigitte produkter** i handlingsruten.
 
 Hvis du vil vise de planlagte bestillingene som genereres, kan du gå til **Hovedplanlegging \> Felles \> Planlagte bestillinger** og velge den aktuelle prognoseplanen.
 
@@ -374,7 +400,8 @@ Hvis du vil vise de planlagte bestillingene som genereres, kan du gå til **Hove
 
 - [Oversikt over behovsprognose](introduction-demand-forecasting.md)
 - [Oppsett av behovsprognose](demand-forecasting-setup.md)
-- [Generere en statistisk basislinjeprognose](generate-statistical-baseline-forecast.md)
+- [Generer en statistisk basislinjeprognose](generate-statistical-baseline-forecast.md)
 - [Foreta manuelle justeringer i basislinjeprognosen](manual-adjustments-baseline-forecast.md)
+- [Hovedplanlegging med behovsprognoser](planning-optimization/demand-forecast.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

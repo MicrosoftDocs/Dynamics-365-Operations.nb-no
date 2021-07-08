@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0f5a3ac7cae58d17409ea081ec30f61cecf29ce9
-ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
+ms.openlocfilehash: 90e5381c2d30753e3ad82a38d7361b411f1d7a87
+ms.sourcegitcommit: 3673eeca1ada0f3e4ec277176515a946706f8a41
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6224040"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6304399"
 ---
 # <a name="design-a-new-er-solution-to-print-a-custom-report"></a>Utforme en ny ER-løsning for å skrive ut en egendefinert rapport
 
@@ -185,7 +185,7 @@ Ved å fullføre trinnene under [Importere en ny datamodellkonfigurasjon](#Impor
 
 ### <a name="import-a-new-data-model-configuration"></a><a name="ImportDataModel"></a>Importere en ny datamodellkonfigurasjon
 
-1. Last ned filen [Questionnaires model.version.1.xml](https://go.microsoft.com/fwlink/?linkid=851448), og lagre den på den lokale datamaskinen.
+1. Last ned filen [Questionnaires model.version.1.xml](https://download.microsoft.com/download/b/6/3/b633bd34-d200-4422-96d9-8f62eb5218f8/Questionnaires_model.version.1.xml), og lagre den på den lokale datamaskinen.
 2. Gå til **Organisasjonsstyring** \> **Arbeidsområder** \> **Elektronisk rapportering**.
 3. I arbeidsområdet **Elektronisk rapportering** velger du **Rapporteringskonfigurasjoner**.
 4. I handlingsruten velger du **Kurs** \> **Last fra XML-fil**.
@@ -300,7 +300,7 @@ Ved å fullføre trinnene under [Importere en ny modelltilordningskonfigurasjon]
 
 ### <a name="import-a-new-model-mapping-configuration"></a><a name="ImportModelMapping"></a>Importere en ny modelltilordningskonfigurasjon
 
-1. Last ned filen [Questionnaires mapping.version.1.1.xml](https://go.microsoft.com/fwlink/?linkid=851448), og lagre den på den lokale datamaskinen.
+1. Last ned filen [Questionnaires mapping.version.1.1.xml](https://download.microsoft.com/download/7/b/2/7b258e4e-4bd5-46a4-8114-27419ae4acd8/Questionnaires_mapping.version.1.1.xml), og lagre den på den lokale datamaskinen.
 2. Gå til **Organisasjonsstyring** \> **Arbeidsområder** \> **Elektronisk rapportering**.
 3. I arbeidsområdet **Elektronisk rapportering** velger du **Rapporteringskonfigurasjoner**.
 4. I handlingsruten velger du **Kurs** \> **Last fra XML-fil**.
@@ -366,7 +366,7 @@ Du må konfigurere datakilder for å få tilgang til apptabellene som inneholder
     2. Velg **Legg til**.
     3. Angi **\$ResultGroup** i **Navn**-feltet.
     4. Velg **Rediger formel**.
-    5. I [ER-formelredigeringsprogram](general-electronic-reporting-formula-designer.md), i **Formel**-feltet, angir du **FIRSTORNULL(\@.'\<Relations'.KMQuestionResultGroup)** til å bruke [banen](er-formula-language.md#paths) til én-til-mange-relasjonen mellom tabellene KMCollection og KMQuestionResultGroup.
+    5. I [ER-formelredigeringsprogram](general-electronic-reporting-formula-designer.md), i **Formel**-feltet, angir du **FIRSTORNULL(\@.'\<Relations'.KMQuestionResultGroup)** til å bruke [banen](er-formula-language.md#Paths) til én-til-mange-relasjonen mellom tabellene KMCollection og KMQuestionResultGroup.
     6. Velg **Lagre**, og lukk formelredigeringsprogrammet.
     7. Velg **OK** for å legge til det nye beregnede feltet.
 
@@ -547,7 +547,7 @@ Statusen til versjon 1.1 av denne konfigurasjonen endres fra **Utkast** til **Fu
 
 ER-rammeverket bruker forhåndsdefinerte maler til å generere rapporter i Microsoft Office-formater (Excel-arbeidsbøker eller Word-dokumenter). Mens den påkrevde rapporten genereres, fylles det ut en mal med nødvendige data i samsvar med den konfigurerte dataflyten. Derfor må du først utforme en mal for den egendefinerte rapporten. Denne malen må utformes som en Excel-arbeidsbok, der strukturen representerer oppsettet til en egendefinert rapport. Du må gi navn til alle Excel-elementer du planlegger å fylle ut med nødvendige data.
 
-1. Last ned filen [Questionnaires report template.xslx](https://go.microsoft.com/fwlink/?linkid=851448), og lagre den på den lokale datamaskinen.
+1. Last ned filen [Questionnaires report template.xlsx](https://download.microsoft.com/download/3/8/2/382c3cf0-87bb-473f-b7bb-3015b4facb74/Questionnaires_report_template.xlsx), og lagre den på den lokale datamaskinen.
 2. Åpne filen i Excel, og gå gjennom strukturen til arbeidsboken.
 
 Som den følgende illustrasjonen viser, er den nedlastede malen utformet for å skrive ut bestemte spørreskjemaer som presenterer spørsmålene i et spørreskjema sammen med riktige svar.
@@ -572,7 +572,7 @@ Ved å fullføre trinnene under [Importere en konstruert formatkonfigurasjon](#F
 
 ### <a name="import-a-designed-format-configuration"></a><a name="FormatImport"></a>Importere en konstruert formatkonfigurasjon
 
-1. Last ned filen [Questionnaires format.version.1.1.xml](https://go.microsoft.com/fwlink/?linkid=851448), og lagre den på den lokale datamaskinen.
+1. Last ned filen [Questionnaires format.version.1.1.xml](https://download.microsoft.com/download/1/b/a/1ba39ec2-257a-44d8-972f-25bf7d18fb41/Questionnaires_format.version.1.1.xml), og lagre den på den lokale datamaskinen.
 2. Gå til **Organisasjonsstyring** \> **Arbeidsområder** \> **Elektronisk rapportering**.
 3. I arbeidsområdet **Elektronisk rapportering** velger du **Rapporteringskonfigurasjoner**.
 4. I handlingsruten velger du **Kurs** \> **Last fra XML-fil**.

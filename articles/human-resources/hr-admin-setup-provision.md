@@ -1,8 +1,8 @@
 ---
 title: Klargjøre Human Resources
-description: Denne artikkelen leder deg gjennom prosessen med å klargjøre et nytt produksjonsmiljø for Microsoft Dynamics 365 Human Resources.
+description: Dette emnet leder deg gjennom prosessen med å klargjøre et nytt produksjonsmiljø for Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
-ms.date: 04/23/2020
+ms.date: 06/14/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e354cec1fb5612afff6e265c4808f4fb2c237a9d
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 2632616834e405d31facdcf3853baaf96066e9aa
+ms.sourcegitcommit: e6437d994c3be0c5bb4a9263af3aa8351020d83a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193730"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "6248827"
 ---
 # <a name="provision-human-resources"></a>Klargjøre Human Resources
 
@@ -28,9 +28,15 @@ ms.locfileid: "6193730"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Denne artikkelen leder deg gjennom prosessen med å klargjøre et nytt produksjonsmiljø for Microsoft Dynamics 365 Human Resources. Denne artikkelen antar at du har kjøpt Human Resources gjennom en Cloud Solution Provider (CSP)- eller enterprise architecture (EA)-avtale. Hvis du har en eksisterende Microsoft Dynamics 365-lisens som allerede inneholder Human Resources-serviceplanen, og du kan ikke fullføre trinnene i denne artikkelen, kan du kontakte kundestøtte.
+Dette emnet leder deg gjennom prosessen med å klargjøre et nytt produksjonsmiljø for Microsoft Dynamics 365 Human Resources. Dette emnet antar at du har kjøpt Human Resources via en Cloud Solution Provider (CSP) eller en enterprise architecture (EA)-avtale. Hvis du har en eksisterende Microsoft Dynamics 365-lisens som allerede inneholder Human Resources-serviceplanen, og du kan ikke fullføre trinnene i denne artikkelen, kan du kontakte kundestøtte.
 
 Det første som må gjøres, er at den globale administratoren må logge på [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com) (LCS) og opprette et nytt Human Resources-prosjekt. Med mindre et lisensieringsproblem hindrer deg i å klargjøre Human Resources, kreves det ikke hjelp fra kundestøtte eller Dynamics Service Engineering (DSE)-representanter.
+
+## <a name="provision-a-human-resources-trial-environment"></a>Klargjøre et Human Resources-prøvemiljø
+
+Før du klargjør den første sandkasse- eller produksjonsmiljøet, kan det hende at du vil klargjøre et [Human Resources-prøvemiljø](https://go.microsoft.com/fwlink/p/?LinkId=2115962) for å validere Human Resources-funksjonaliteten. Prøvemiljøer inneholder fiktive data som kan brukes til å utforske programmet på en sikker måte. Selv om et prøvemiljø eies av brukeren som ba om det, kan andre brukere inviteres gjennom systemadministrasjonsopplevelsen for Human Resources. 
+
+Prøvemiljøene er ikke ment å brukes som produksjonsmiljøer. De er begrenset til en 60-dagers prøveperiode. Når prøveperioden utløper, kan ikke miljøet alle dataene slettes eller gjenopprettes. Miljøet kan ikke konverteres til et sandkasse- eller produksjonsmiljø. Du kan registrere deg for et nytt prøvemiljø etter det eksisterende miljøet er utløpt.
 
 ## <a name="plan-human-resources-environments"></a>Planlegge Human Resources-miljøer
 
@@ -95,8 +101,6 @@ Når du har opprettet et LCS-prosjekt, kan du klargjøre Human Resources i et mi
     > [!NOTE]
     > Hvis du ennå ikke har godkjent for de endelige kravene, kan du distribuere en testforekomst av Human Resources i prosjektet. Du kan deretter bruke denne forekomsten til å teste løsningen til du godkjenner. Hvis du bruker det nye miljøet for testing, må du gjenta denne fremgangsmåten for å opprette et produksjonsmiljø.
 
-    > Du kan vurdere å utnytte et gratis 60-dagers [Human Resources-prøvemiljø](https://go.microsoft.com/fwlink/p/?LinkId=2115962). Selv om et prøvemiljø eies av brukeren som ba om det, kan andre brukere inviteres gjennom systemadministrasjonsopplevelsen for Human Resources. Prøvemiljøer inneholder fiktive data som kan brukes til å utforske programmet på en sikker måte. De er ikke ment å brukes som produksjonsmiljøer. Merk at når prøvemiljøet utløper etter 60 dager, slettes alle dataene i miljøet og de kan ikke gjenopprettes. Du kan registrere deg for et nytt prøvemiljø etter det eksisterende miljøet er utløpt.
-
 ## <a name="select-a-power-apps-environment"></a>Velg et Power Apps-miljø
 
 Du kan integrere og utvide bruken av Human Resources-data ved hjelp av Power Apps-verktøy. Hvis du vil ha informasjon om Power Apps-miljøer, blant annet miljøomfang, miljøtilgang og opprettelse og valg av miljø, kan du se [Kunngjøre Power Apps-miljøer](https://powerapps.microsoft.com/blog/powerapps-environments/). 
@@ -132,7 +136,7 @@ Personale støtter følgende geografier:
 - Canada
 - Asia 
 
-Når du oppretter et Personale-miljø, velger du et Power Apps-miljø som skal knyttes til Personale-miljøet. Personale-miljøet klargjøres deretter i samme Azure-geografi som det valgte Power Apps-miljøet. Du kan velge hvor personalmiljøet og databasen skal ligge fysisk ved å velge geografien når du oppretter Power Apps-miljøet som skal knyttes til Personale-miljøet.
+Når du oppretter et Personale-miljø, velger du et Power Apps-miljø som skal knyttes til Personale-miljøet. Personale-miljøet klargjøres deretter i samme Azure-geografi som det valgte Power Apps-miljøet. Du kan velge hvor Human Resources-miljøet og -databasen skal ligge fysisk ved å velge geografien når du oppretter Power Apps-miljøet som skal knyttes til Human Resources-miljøet.
 
 Du kan velge Azure-*geografien* der miljøet er klargjort, men du kan ikke velge det bestemte Azure-*området*. Automation bestemmer det bestemte området i geografien der miljøet opprettes for å optimalisere belastningsfordeling og ytelse. Du finner informasjon om Azure-geografier og -områder i dokumentasjonen på [Azure-geografier](https://azure.microsoft.com/global-infrastructure/geographies).
 

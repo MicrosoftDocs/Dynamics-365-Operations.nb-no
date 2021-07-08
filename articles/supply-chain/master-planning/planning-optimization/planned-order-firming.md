@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: e2fc40e3e9874d47dd51e773628ba1ce75b8ebab
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 2df579bfb820f871bfcc9c18bd8e5681cdf42447
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193887"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6271214"
 ---
 # <a name="firm-planned-orders"></a>Autoriser planlagte ordrer
 
@@ -123,8 +123,6 @@ Horisonten for automatisk autorisering defineres av antall dager du angir for de
 Hvis du setter alle de tidligere nevnte tidshorisontene til *0* (null), blir automatisk autorisering effektivt deaktivert for de relevante varene som dekkes.
 
 ## <a name="firm-planned-orders-by-using-a-query"></a>Autorisere planlagte ordrer ved hjelp av en spørring
-
-[!INCLUDE [preview-banner-section](../../../includes/preview-banner-section.md)]
 
 Spørringsbasert autorisering lar deg planlegge autorisering basert på kriterier som er definert på forhånd. I motsetning til automatisk autorisering tillater spørringsbasert autorisering automatisert autorisering av ulike delsett av ordrer på ulike tidspunkt. I tillegg kan du bruke enten manuelle eller automatiserte operasjoner til å autorisere ulike typer planlagte bestillinger. Du kan også forhåndsvise hvilke autoriserte ordrer som er valgt, basert på innstillingene. Derfor kan du bekrefte at valget passer til dine forventninger.
 
