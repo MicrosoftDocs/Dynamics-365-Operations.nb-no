@@ -2,7 +2,7 @@
 title: Konfigurere satser
 description: Satser i Microsoft Dynamics 365 Human Resources definerer hvor mye arbeidsgivere og ansatte bidrar til en fordel.
 author: andreabichsel
-ms.date: 06/22/2020
+ms.date: 06/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3d6018decbc429a5e6fbb658369d56a34439f6c7
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 2b6767df573260f32de8409e487f649bdc4779b0
+ms.sourcegitcommit: ecabf43282a3e55f1db40341aa3f3c7950b9e94c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6054986"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "6266663"
 ---
 # <a name="configure-rates"></a>Konfigurere satser
 
@@ -46,7 +46,7 @@ Bruk satser til å bestemme hvor mye ansatte og arbeidsgivere skal betale for hv
    | **Utløp** | Sluttdatoen for satsen. 12/31/2154 (som betyr aldri) er standardverdien. |
    | **Bruk lag** | Laget som skal brukes for beregning av fordelssatsen. Enkelt lag for en fordelssats på ett lag, eller et dobbelt nivå for en fordelssats på to lag. Et eksempel på et dobbelt lag er et lag basert på kjønn og alder. |
    | **Betalingsfrekvens** | Betalingsfrekvensen som bestemmer hvor ofte fordelsbonussatsen betales til fordelsleverandøren. Hvis for eksempel betalingsfrekvensen er månedlig, representerer fordelssatsen det månedlige betalingsbeløpet. |
-   | **Avrunding av sats for lønnsfrekvens** | Metoden for avrunding av satsen: standard eller avkortet. |
+   | **Avrunding av sats for lønnsfrekvens** | Metodene for avrunding av satsen er: Standard, Avrunding, Normal, Nedover og Avrunding opp. </br></br><ul><li>**Standard** – Avrundes alltid oppover. 10,611 avrunder for eksempel til 10,62. -10,231 avrunder til -10,23. </li><li>**Avrunding** – Avrundes alltid nedover. 10,619 avrunder for eksempel til 10,61. -10,231 avrundes til -10,24. </li><li>**Normal** – Desimalverdier som slutter på eller er større enn 5, rundes fra null. Desimalverdier som slutter på eller mindre enn 4, avrundes mot null. 10,615 avrundes for eksempel til 10,62. -10,235 avrundes til -10,24. 10,614 avrundes til 10,61. -10,234 avrundes til -10,23. </li><li>**Nedover** – Avrund mot null. 10,619 avrunder for eksempel til 10,61. -10,231 avrunder til -10,23. </li><li>**Avrundes opp** – Rund av fra null. 10,619 avrunder for eksempel til 10,62. -10,231 avrundes til -10,24. |
    | **Beløp for ikke-røykende ansatt** | Beløpet som fordelsleverandøren tar betalt for en ikke-røykende ansatt. Dette er beløpet arbeidsgiveren betaler til fordelsleverandøren, og bør være basert på betalingsfrekvensen for satsoppsettet. |
    | **Beløp for ikke-røykende arbeidsgiver** | Beløpet som fordelsleverandøren tar betalt for en ikke-røykende ansatt. Dette er beløpet arbeidsgiveren betaler til fordelsleverandøren, og det bør være basert på betalingsfrekvensen for satsoppsettet. |
    | **Beløp for røykende ansatt** | Beløpet som fordelsleverandøren tar betalt for en ansatt som røyker. Dette er beløpet arbeidsgiveren betaler til fordelsleverandøren, og bør være basert på betalingsfrekvensen for satsoppsettet. |

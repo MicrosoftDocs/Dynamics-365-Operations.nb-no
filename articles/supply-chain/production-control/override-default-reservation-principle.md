@@ -14,17 +14,16 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-10
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: a1b2dd204c9a507dba387b0295f3021253e02dc4
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: eb4200deed5407bef6861913cecdad7114ea68cc
+ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814808"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "6270793"
 ---
 # <a name="override-the-default-reservation-principle-for-materials-in-production"></a>Overstyre standard reserveringsprinsipp for materialer i produksjon
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 Med funksjonen *Overstyr standard produksjonsreservering* kan du angi et standard reserveringsprinsipp for hver varemodellgruppe. De ulike reserveringsprinsippene kan derfor automatisk brukes for hver vare som er del av en produksjonsstykkliste eller partiordreformel. Du kan velge om hver varemodellgruppe skal overstyre standard reserveringsprinsipp som er angitt for en ordre, og hvilket reserveringsprinsipp som skal brukes i stedet (*manuell*, *anslag*, *planlegging*, *frigivelse* eller *start*).
 
@@ -37,7 +36,7 @@ Hvis du for eksempel har råvarer eller ingredienser som krever plukkarbeid, må
 Før du kan bruke funksjonen må den være aktivert i systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
 
 - **Modul:** *Produksjonskontroll*
-- **Funksjonsnavn:** *(Forhåndsversjon) Overstyr standard produksjonsreservering*
+- **Funksjonsnavn:** *Overstyr standard produksjonsreservering*
 
 ## <a name="assign-a-production-reservation-policy-to-an-item-model-group"></a>Tilordne en policy for produksjonsreservering til en varemodellgruppe
 
