@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: d68e1b3a4dc31823ec56a525149f16bdc23c0883
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: bc1a8570e60e2b17f27c3e63c5ff847b3cb7a2dd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023492"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358464"
 ---
 # <a name="calculate-tds-on-invoices-using-journals"></a>Beregne TDS for fakturaer ved hjelp av journaler
 
@@ -31,7 +31,7 @@ Dette emnet viser fremgangsmåten for beregning av TDS (Tax Deducted at Source) 
 
 Begynn ved å åpne **Økonomijournaler**-siden (**Økonomimodul > Journaloppføringer > Økonomijournaler**).
 
-[![Økonomijournaler](./media/apac-ind-TDS-57.png)](./media/apac-ind-TDS-57.png)
+[![Økonomijournaler.](./media/apac-ind-TDS-57.png)](./media/apac-ind-TDS-57.png)
 
 1. Opprett journallinjer ved hjelp av journalskjemaene som vises i tabellen. Velg kontotypen og motkontotypen, og angi beløpet for transaksjonen. 
 
@@ -65,6 +65,6 @@ Begynn ved å åpne **Økonomijournaler**-siden (**Økonomimodul > Journaloppfø
 
 8. Angi de andre nødvendige opplysningene. Valider og poster journalen. TDS-beløpet som er beregnet for innkjøpsfakturaer, posteres på leverandørreskontroen. TDS-beløpet som beregnes for salgsfakturaer, posteres på kundereskontroen som er definert for hver TDS-avgiftskode i TDS-gruppen. Leverandørreskontroene eller kundereskontroene for TDS-avgiftskoder defineres på siden **Kildeskattkoder**.
 
-9. Velg **Postert kildeskatt** for å åpne siden **Kildeskattransaksjoner**. I **Verdi**-feltet vises den totale prosentsatsen som brukes til å beregne TDS for transaksjonen.
+9. Velg **Postert kildeskatt** for å åpne siden **Kildeskatt** **transaksjoner**. I **Verdi**-feltet vises den totale prosentsatsen som brukes til å beregne TDS for transaksjonen.
 
    Feltene i fanene **Oversikt**, **Generelt** og **Beløp** på siden Kildeskattransaksjoner viser det beregnede TDS-beløpet og de justerte TDS-beløpsdetaljene for hver TDS-avgiftskode som er knyttet til TDS-gruppen.

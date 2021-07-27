@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: BudgetPlanningWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 106043
+ms.custom:
+- "106043"
+- intro-internal
 ms.assetid: 702f692e-ad1c-4798-8d3e-c3cf8591d3fa
 ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a2597dda47e3441d2c41497081849a2213974e55
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 9ced76e20a54d61fe96b5d2a5118adb0c5eb7ccf
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6187922"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355706"
 ---
 # <a name="budgeting-home-page"></a>Startside for budsjettering
 
@@ -32,7 +34,7 @@ Dette emnet gir en oversikt over komponenter i budsjetteringsfunksjonaliteten, b
 
 Ressursplanleggingssyklusen for et selskap består vanligvis av planlegging, budsjettering og prognoseaktiviteter.
 
-[![Komponenter i budsjetteringsfunksjonaliteten](./media/budgeting-functionality-components.jpg)](./media/budgeting-functionality-components.jpg)
+[![Komponenter i budsjetteringsfunksjonaliteten.](./media/budgeting-functionality-components.jpg)](./media/budgeting-functionality-components.jpg)
 
 Prosessene for både langsiktig strategisk planlegging og årlig budsjettplanlegging støttes gjennom et budsjettplandokument. Budsjettplandokumenter er tett integrert med Microsoft Excel. Brukere kan konfigurere et ubegrenset antall monetære og kvantitative scenarier og kan også definere et organisasjonshierarki for budsjettering for å støtte metoder for budsjettering ovenfra og nedenfra. Når et budsjett er opprettet og godkjent i programmet, kan du konvertere budsjettplanen til en budsjettregisteroppføring. Budsjettregisteroppføringer har verktøy for å vedlikeholde budsjettet og holde beløp sporbare via budsjettkoder. Budsjettregisteroppføringer gjør at du kan endre opprinnelige budsjetter, utføre overføringer og overføre budsjettbeløp fra forrige år. Et firma kan aktivere budsjettkontroll basert på det etablerte budsjettet. Nivået av kontroll avhenger av organisasjonskulturen og modenhetsnivået for organisasjonen. Organisasjoner som har et lavt modenhetsnivå, kan la budsjettet være "som det er" og være mer reaktive enn proaktive hvis et budsjett ikke oppfyller forventningene. Andre organisasjoner kan aktivere policyer for budsjettkontroll som hindrer brukere fra å foreta kjøp hvis budsjettmidler ikke er tilgjengelige.
 
@@ -46,7 +48,7 @@ Svært modne organisasjoner kan opprette en organisasjonskultur der ansatte har 
 -   [Budsjettplanleggingsmaler for Excel](budget-planning-excel-templates.md)
 
 ## <a name="budgeting-tools"></a>Budsjetteringsverktøy
-[![Budsjetteringsverktøy](./media/budgeting-tools.jpg)](./media/budgeting-tools.jpg) 
+[![Budsjetteringsverktøy.](./media/budgeting-tools.jpg)](./media/budgeting-tools.jpg) 
 
 Ytterligere funksjoner for planlegging og budsjettering er tilgjengelige og er integrert med finansbudsjetter.
 

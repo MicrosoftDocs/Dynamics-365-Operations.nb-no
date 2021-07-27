@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2020-03-25
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 09da3c3a79b5540670db25d5466023132d2848f4
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0a9521d9be3c380795abf476646d2d0e1cd36e8e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5832280"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354791"
 ---
 # <a name="moving-average-fallback-cost-sequence"></a>Glidende gjennomsnitt, sekvens for kostnad for tilbakefall
 
@@ -42,7 +42,7 @@ Følg denne fremgangsmåten for å velge sekvensen for kostnad for tilbakefall f
     - **Aktiv kostnad – Siste avgang**
     - **Aktiv kostnad – Varepris** – Organisasjoner kan oppleve ytelsesproblemer hvis de bruker forretningsprosesser der lageret regelmessig blir negativ, og samtidig har et høyt transaksjonsvolum. Denne innstillingen kan bidra til å redusere disse ytelsesproblemene.
 
-![Parametere for lagerregnskap](media/inventory-accounting-parameters.png "Parametere for lagerregnskap")
+![Parametere for lagerregnskap.](media/inventory-accounting-parameters.png "Parametere for lagerregnskap")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

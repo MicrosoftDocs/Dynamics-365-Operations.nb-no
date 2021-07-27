@@ -8,16 +8,17 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 15edf61cba03a57b9b4d2c939228fd064b797942
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5f8c3dc084f4f260f8cc29b3957913e9bc1b762d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5829384"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357005"
 ---
 # <a name="hazardous-materials-overview"></a>Oversikt over farlige materialer
 
@@ -27,7 +28,7 @@ For å overholde samsvar med leverings- og transportforskrifter må organisasjon
 
 Diagrammet nedenfor illustrerer trinnene som trengs for å definere og bruke farlige materialer-funksjonen.
 
-![Oppsett og bruk av farlig materiale-funksjonen](media/hazmat-overview.png "Oppsett og bruk av farlig materiale-funksjonen")
+![Oppsett og bruk av farlig materiale-funksjonen.](media/hazmat-overview.png "Oppsett og bruk av farlig materiale-funksjonen")
 
 Farlige materialer-funksjonen er definert i Behandling av produktinformasjon og inneholder dokumenter som kan skrives ut via Lagerstyring. Derfor er disse områdene de to hovedområdene der du ser gjennom, konfigurerer og bruker funksjonaliteten til denne funksjonen:
 

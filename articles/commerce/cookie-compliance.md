@@ -2,7 +2,7 @@
 title: Samsvar for informasjonskapsel
 description: Dette emnet beskriver vurderinger for overholdelse av informasjonskapsler og standardpolicyene som er inkludert i Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 05/21/2021
+ms.date: 07/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8eb610eb819dee09a30368257e36dc88f855e985
-ms.sourcegitcommit: 8c5b3e872825953853ad57fc67ba6e5ae92b9afe
+ms.openlocfilehash: 71b2e0e8d0a7db6cbbc8b9b4024b067bd5c6a2a1
+ms.sourcegitcommit: 43962e6fedaf55aab2f28f53bc38a69d2ff58403
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "6088393"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "6333075"
 ---
 # <a name="cookie-compliance"></a>Informasjonskapselsamsvar
 
@@ -33,26 +33,27 @@ Hvis du vil vite mer om de grunnleggende prinsippene som Microsoft bruker for sa
 
 Tabellen nedenfor viser gjeldende referanseliste over informasjonskapsler for Dynamics 365 Commerce-områder.
 
-| Navn på informasjonskapsel                               | Bruk                                                        |
-| ------------------------------------------- | ------------------------------------------------------------ |
-| .AspNet.Cookies                             | Lagre Microsoft Azure Active Directory (Azure AD)-godkjenningsinformasjonskapsler for enkel pålogging (single sign-on – SSO). Lagrer krypter hovedinformasjon for brukeren (namn, etternavn, e-post). |
-| &#95;msdyn365___cart&#95;                           | Handlekurv-ID som brukes til å hente liste over produkter som er lagt til i handlekurvforekomst. |
-| &#95;msdyn365___ucc&#95;                            | Sporing av informasjonskapselsamsvar.                          |
-| ai_session                                  | Registrerer hvor mange økter med brukeraktivitet som har tatt med bestemte sider og funksjoner i appen. |
-| ai_user                                     | Oppdager hvor mange personer som brukte appen og funksjonene i den. Brukere telles ved hjelp av anonyme IDer. |
-| b2cru                                       | Butikker omadresserer URL dynamisk.                              |
-| JSESSIONID                                  | Brukes av betalingskoblingen Adyen til å lagre brukerøkt.       |
-| OpenIdConnect.nonce.&#42;                       | Godkjenning                                               |
-| x-ms-cpim-cache:.&#42;                          | Brukes til å vedlikeholde forespørselstilstanden.                      |
-| x-ms-cpim-csrf                              | CRSF-token (forfalskning av forespørsler på tvers av nettsteder) som brukes til beskyttelse fra CRSF.     |
-| x-ms-cpim-dc                                | Brukes til å rute forespørsler til den aktuelle serverforekomsten for produksjonsgodkjenning. |
-| x-ms-cpim-rc.&#42;                              | Brukes til å rute forespørsler til den aktuelle serverforekomsten for produksjonsgodkjenning. |
-| x-ms-cpim-slice                             | Brukes til å rute forespørsler til den aktuelle serverforekomsten for produksjonsgodkjenning. |
-| x-ms-cpim-sso:rushmoreb2c.onmicrosoft.com_0 | Brukes til vedlikehold av SSO-økten.                        |
-| x-ms-cpim-trans                             | Brukes til å spore transaksjoner (antallet åpne faner som godkjennes mot et forretning-til-forbruker-område) (B2C), inkludert den gjeldende transaksjonen. |
-| \_msdyn365___muid_                            | Brukes hvis eksperimentering er aktivert for miljøet, brukt som userId til eksperimenteringsformål. |
-| \_msdyn365___exp_                             | Brukes hvis eksperimentering er aktivert for miljøet, brukes til å måle ytelsesbelastningsfordeling.         |
-| d365mkt                                       | Brukes hvis lokasjonsbasert registrering for å spore en brukers IP-adresse for butikklokasjonsforslag er aktivert i Commerce-områdebygger ved **Områdeinnstillinger > Generelt > Aktiver lokasjonsbasert butikkregistrering**.      |
+| Navn på informasjonskapsel                               | Bruk                                                        | Levetid |
+| ------------------------------------------- | ------------------------------------------------------------ |  ------- |
+| .AspNet.Cookies                             | Lagre Microsoft Azure Active Directory (Azure AD)-godkjenningsinformasjonskapsler for enkel pålogging (single sign-on – SSO). Lagrer krypter hovedinformasjon for brukeren (namn, etternavn, e-post). | Økt |
+| \_msdyn365___cart_                           | Handlekurv-ID som brukes til å hente liste over produkter som er lagt til i handlekurvforekomst. | Økt |
+| \_msdyn365___checkout_cart_                           | Handlekurv-ID som brukes til å hente liste over produkter som er lagt til i handlekurvforekomst. | Økt |
+| \_msdyn365___ucc_                            | Sporing av informasjonskapselsamsvar.                          | 1 år |
+| ai_session                                  | Registrerer hvor mange økter med brukeraktivitet som har tatt med bestemte sider og funksjoner i appen. | 30 minutter |
+| ai_user                                     | Oppdager hvor mange personer som brukte appen og funksjonene i den. Brukere telles ved hjelp av anonyme IDer. | 1 år |
+| b2cru                                       | Butikker omadresserer URL dynamisk.                              | Økt |
+| JSESSIONID                                  | Brukes av betalingskoblingen Adyen til å lagre brukerøkt.       | Økt |
+| OpenIdConnect.nonce.&#42;                       | Godkjenning                                               | 11 minutter |
+| x-ms-cpim-cache:.&#42;                          | Brukes til å vedlikeholde forespørselstilstanden.                      | Økt |
+| x-ms-cpim-csrf                              | CRSF-token (forfalskning av forespørsler på tvers av nettsteder) som brukes til beskyttelse fra CRSF.     | Økt |
+| x-ms-cpim-dc                                | Brukes til å rute forespørsler til den aktuelle serverforekomsten for produksjonsgodkjenning. | Økt |
+| x-ms-cpim-rc.&#42;                              | Brukes til å rute forespørsler til den aktuelle serverforekomsten for produksjonsgodkjenning. | Økt |
+| x-ms-cpim-slice                             | Brukes til å rute forespørsler til den aktuelle serverforekomsten for produksjonsgodkjenning. | Økt |
+| x-ms-cpim-sso:rushmoreb2c.onmicrosoft.com_0 | Brukes til vedlikehold av SSO-økten.                        | Økt |
+| x-ms-cpim-trans                             | Brukes til å spore transaksjoner (antallet åpne faner som godkjennes mot et forretning-til-forbruker-område) (B2C), inkludert den gjeldende transaksjonen. | Økt |
+| \_msdyn365___muid_                            | Brukes hvis eksperimentering er aktivert for miljøet, brukt som bruker-ID til eksperimenteringsformål. | 1 år |
+| \_msdyn365___exp_                             | Brukes hvis eksperimentering er aktivert for miljøet, brukes til å måle ytelsesbelastningsfordeling.         | 1 time |
+| d365mkt                                       | Brukes hvis lokasjonsbasert registrering for å spore en brukers IP-adresse for butikklokasjonsforslag er aktivert i Commerce-områdebygger ved **Områdeinnstillinger \> Generelt \> Aktiver lokasjonsbasert butikkregistrering**.      | 1 time |
 
 Hvis en områdebruker velger noen koblinger på sosiale medier på et område, vil informasjonskapslene som ligger i tabellen nedenfor, også spores i nettleseren.
 

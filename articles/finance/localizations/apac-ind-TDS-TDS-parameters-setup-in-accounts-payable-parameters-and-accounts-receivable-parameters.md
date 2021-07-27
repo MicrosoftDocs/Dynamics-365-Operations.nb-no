@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 4540cdfff2362d8fb7cc2b4cccf9c340be9750ce
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: ccf1557d3c95829421b26d5f84750e3d4236c9e0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023478"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358224"
 ---
 # <a name="set-tds-parameters-in-accounts-payable-and-accounts-receivable"></a>Konfigurere TDS-parametere i Leverandører og Kunder
 
@@ -38,12 +38,12 @@ Dette emnet forklarer hvordan du angir parametere i Leverandører og Kunder for 
     - **Be om** – Brukere får en melding der de blir bedt om å oppdatere TDS-gruppen på ordrelinjene.
 4. Velg **OK**.
 
-    [![Dialogboksen Oppdater ordrelinjer](./media/apac-ind-TDS-26.PNG)](./media/apac-ind-TDS-26.PNG)
+    [![Dialogboksen Oppdater ordrelinjer.](./media/apac-ind-TDS-26.PNG)](./media/apac-ind-TDS-26.PNG)
 
 5. Gå til **Avgift \> Oppsett \> Parametere \> Leverandørparametere**.
 6. Sett alternativet **Produktkvittering** til **Ja** i hurtigfanen **Del basert på leveringsinformasjon** i **Generelt**-fanen hvis du vil postere og dele en produktkvittering som har ulike leveringsadresser og TAN-numre. Hvis du setter dette alternativet til **Nei**, kan du ikke postere en bestillingsfølgeseddel som har ulike leveringsadresser og TAN-numre.
 7. Sett alternativet **Faktura** til **Ja** for å postere og dele en innkjøpsfaktura som har ulike leveringsadresser og TAN-numre.
 
-    [![Hurtigfanen Del basert på leveringsinformasjon](./media/apac-ind-TDS-25.png)](./media/apac-ind-TDS-25.png)
+    [![Hurtigfanen Del basert på leveringsinformasjon.](./media/apac-ind-TDS-25.png)](./media/apac-ind-TDS-25.png)
 
 8. Lukk siden.

@@ -9,19 +9,21 @@ ms.technology: ''
 ms.search.form: WMSOrder, WMSShipment, MCRPickingWorkbench, WMSPickingRegistration, CustomFilterGroup
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 274363
+ms.custom:
+- "274363"
+- intro-internal
 ms.assetid: 375807b2-a426-4f1b-bc1f-2fe00fd48413
 ms.search.region: global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: e9f9da7d6e3ede9816757fb57f0b802ce4d41360
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 29029cfa032f36c4dc0590ff76f44417dc056ef8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825945"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348811"
 ---
 # <a name="outbound-process-overview"></a>Oversikt over utgående prosess
 
@@ -37,7 +39,7 @@ Når plukklister genereres fra enten salgsordrer eller overføringsordrer, oppre
 
 De følgende diagrammer viser en oversikt over prosesesen for utleveringsordrer. 
 
-[![Oversikt over utgående ordreprosess](./media/outbound-order.png)](./media/outbound-order.png)
+[![Oversikt over utgående ordreprosess.](./media/outbound-order.png)](./media/outbound-order.png)
 
 Du kan sette opp utgående regler for å definere hvordan programmet skal håndtere den utgående prosessen. Du kan bruke disse reglene for å kontrolere forsendelsesprosessene. Spesielt kan du bruke reglene for å kontrollere hvilket stadium i prosessen en forsendelse kan sendes under. Følgende innstillinger definerer hvordan utgående prosesser håndteres.
 
@@ -45,31 +47,31 @@ Du kan sette opp utgående regler for å definere hvordan programmet skal håndt
 
 Gå til **Kundefordringer** \> **Oppsett** \> **Parametere for kundefordringer** og deretter i fanen **Oppdateringer** velger du en verdi i feltet **Plukkrutestatus** .
 
-[![Felt for plukkrutestatus for salgsordrer](./media/picking-route-status-sales-order.png)](./media/picking-route-status-sales-order.png)
+[![Felt for plukkrutestatus for salgsordrer.](./media/picking-route-status-sales-order.png)](./media/picking-route-status-sales-order.png)
 
 Hvis feltet **Plukkrutestatus** er satt til **Fullført** vil plukkprosessenen skje automatisk som en del av prosessen for å generere plukklister. Hvis feltet er satt til **Aktivert** må plukklistelinjer oppdateres manuelt.
 
 Det samme oppsett gjelder for overføringsordrer. Gå til **Lagerstyring** \> **Oppsett** \> **Parametere for lagerstyring og administrasjon**, og deretter i fanen **Transport** velger du en verdi i feltet **Plukkrutestatus**.
 
-[![Felt for plukkrutestatus for overføringsordrer](./media/picking-route-status-transfer-order.png)](./media/picking-route-status-transfer-order.png)
+[![Felt for plukkrutestatus for overføringsordrer.](./media/picking-route-status-transfer-order.png)](./media/picking-route-status-transfer-order.png)
 
 ## <a name="end-output-inventory-orders"></a>Avsluttende lagerordre
 
 Gå til **Lagerstyring** \> **Oppsett** \> **Parametere for lagerstyring og administrasjon**, og deretter i fanen **Generelt** velger du et alternativ i feltet **Lagerordre**.
 
-[![Valg for å avslutte utgående lagerordre](./media//end-output-inventory-order.png)](./media//end-output-inventory-order.png)
+[![Valg for å avslutte utgående lagerordre.](./media//end-output-inventory-order.png)](./media//end-output-inventory-order.png)
 
 Hvis lagerarbeideren reduserer antallet på plukklisten, fjernes de tilsvarende lagerantallene fra forsendelsen. Når plukklisten oppdateres på et tidspunkt, blir de gjenstående antallene rapportert tilbake til ordren hvis alternativet **Avslutt utleveringslagerordre** er satt til **Ja**. Hvis alternativet **Avslutt utleveringslagerordre** er satt til **Nei**, beholdes de gjenstående antallene som en åpen utgående ordremengde og må legges til en ny plukkliste som en del av funksjonen **Åpne utleveringsordrer**. 
 
-[![Åpne utgangsordrerkommandoen i Funksjonsmenyen](./media/open-output-order.png)](./media/open-output-order.png)
+[![Åpne utgangsordrerkommandoen i Funksjonsmenyen.](./media/open-output-order.png)](./media/open-output-order.png)
 
-[![Funksjonsmenyen på siden Åpne utgående ordre](./media/open-output-order-function.png)](./media/open-output-order-function.png)
+[![Funksjonsmenyen på siden Åpne utgående ordre.](./media/open-output-order-function.png)](./media/open-output-order-function.png)
 
 ## <a name="reduce-quantity"></a>Reduser antall
 
 Den tredje parameteren du kan bruke som en del av prosessen med å generere plukklister, er **Reduser antallsparameteren** Innstillingen av dette parameterer arbeider sammen med **Reservasjon**-innstillingen som utløser en reservasjonsprosess som en del av frigivelsen til lageret.
 
-[![Reduser antallsparameteren](./media/reduce-quantity.png)](./media/reduce-quantity.png)
+[![Reduser antallsparameteren.](./media/reduce-quantity.png)](./media/reduce-quantity.png)
 
 ## <a name="example-of-an-outbound-process-for-a-sales-order"></a>Eksempel på en utgående prosess for en salgsordre
 
@@ -77,11 +79,11 @@ For dette eksempelet er det en salgsordre for to elementer. Under plukklistegene
 
 Lagerbeholdningen som ikke allerede er reservert, er reservert under plukklistegenerering. Den utilgjengelige beholdningen kan enten fjernes fra salgsordren eller frigis til lageret for utgående prosess senere, når lager er tilgjengelig for plukking.
 
-[![Oppdater plukklisten](./media/update-picking-list.png)](./media/update-picking-list.png)
+[![Oppdater plukklisten.](./media/update-picking-list.png)](./media/update-picking-list.png)
 
 Så snart alle plukklinjer er plukket på siden **Plukklisteregistrering**, er den tilknyttede forsendelsen komplett. Prosessen for pakksedler for salgsordrer kan deretter initialiseres basert det på plukkede inventar.
 
-[![Oppdater ugående forsendelser](./media/outbound-shipments.png)](./media/outbound-shipments.png)
+[![Oppdater ugående forsendelser.](./media/outbound-shipments.png)](./media/outbound-shipments.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

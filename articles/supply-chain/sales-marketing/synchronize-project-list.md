@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 5cb7f8b9a3107a7787c787ace71ab574457b1646
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: eb98f266a217fc16c56c38e2480b85f529fb1862
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5828497"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359843"
 ---
 # <a name="synchronize-project-list-from-supply-chain-management-to-field-service"></a>Synkronisere prosjektliste fra Supply Chain Management til Field Service
 
@@ -29,7 +29,7 @@ ms.locfileid: "5828497"
 
 Dette emnet omhandler malene og de underliggende oppgavene som brukes til å synkronisere prosjekter fra Dynamics 365 Supply Chain Management til Dynamics 365 Field Service.
 
-[![Synkronisering av forretningsprosesser mellom Supply Chain Management og Field Service](./media/FSProjectOW.png)](./media/FSProjectOW.png)
+[![Synkronisering av forretningsprosesser mellom Supply Chain Management og Field Service.](./media/FSProjectOW.png)](./media/FSProjectOW.png)
 
 ## <a name="templates-and-tasks"></a>Maler og oppgaver
 Følgende mal og underliggende oppgaver brukes til å utføre synkronisering av prosjekter fra Supply Chain Management til Field Service.
@@ -63,7 +63,7 @@ Aktivere endringssporing for dataenhetsprosjekter.
 
 ### <a name="projects-supply-chain-management-to-field-service-projects"></a>Prosjekter (Supply Chain Management til Field Service): Prosjekter
 
-[![Maltilordning i Dataintegrering](./media/FSProject1.png)](./media/FSProject1.png)
+[![Maltilordning i Dataintegrering.](./media/FSProject1.png)](./media/FSProject1.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

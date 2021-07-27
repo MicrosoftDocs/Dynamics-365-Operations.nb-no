@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3b9fd32d539a8f2e038f571910314889f92e3fd9
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e3b28475e6432294b3a9ed0c63341122bedca037
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838640"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346184"
 ---
 # <a name="target-entities"></a>Målenheter
 
@@ -34,13 +34,13 @@ I arbeidsområdet **Databehandling** kan du få en oversikt over målenheter, re
 
 2. Klikk på **Dataenheter** i delen **Importer/eksporter**. 
 
-    ![Figur 1](media/01-data-management.png)
+    ![Figur 1.](media/01-data-management.png)
 
 3. På **Målenheter**-siden søker du etter "aktivastyring" i filteret, og trykker på Enter for å vise en liste over enhetene som er knyttet til Aktivastyring.
 
     Figuren nedenfor viser noen av aktivastyringsenhetene.
 
-   ![Figur 2](media/02-data-management.png)
+   ![Figur 2.](media/02-data-management.png)
 
 4. Velg en enhet, og klikk på **Endre måltilordning**.
 
@@ -48,7 +48,7 @@ I arbeidsområdet **Databehandling** kan du få en oversikt over målenheter, re
 
     I figuren nedenfor vises en visualisering av feltene som er knyttet til aktivatypeenheten.
 
-    ![Figur 3](media/03-data-management.png)
+    ![Figur 3.](media/03-data-management.png)
 
 
 

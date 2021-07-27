@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a41fb3118359ab9a597f3c3242759fcbcf1e090a
-ms.sourcegitcommit: 51cad1ce3ed44ebf7eb9bdf553ee2df4c1f03135
+ms.openlocfilehash: 742c6d1b713b8669dcc3544cf84eb340e3e9293b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "6015859"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360406"
 ---
 # <a name="set-up-consignment"></a>Definere forsendelse
 
@@ -61,7 +61,7 @@ En etterfyllingsordre for forsendelse er et dokument som brukes til å be om og 
 
 **Eier**-dimensjonen brukes til å skille informasjon om hvilken lagerbeholdning som eies av leverandøren og hvilken som eies av den juridiske enheten for mottak. Etterfyllingsordrelinjer for forsendelse har statusen **Åpen ordre** så lenge det fullstendige antallet linjer ikke er mottatt eller kansellert. Når det fullstendige antallet er mottatt eller kansellert, endres statusen til **Fullført**. Den fysiske lagerbeholdningen som er knyttet til en etterfyllingsordre for forsendelse kan registreres ved hjelp av en registreringsprosess i tillegg til en oppdateringsprosess for produktmottak. Registreringen kan utføres som del av vareankomstprosessen eller ved å oppdatere ordrelinjene manuelt. Når oppdateringsprosess for produktmottak brukes, opprettes en post i produktkvitteringsjournalen, som kan brukes til å bekrefte mottak av varer til leverandørene.
 
-[![Etterfyllingsordrer for forsendelse](./media/consignment-replenishment-order.png)](./media/consignment-replenishment-order.png)
+[![Etterfyllingsordrer for forsendelse.](./media/consignment-replenishment-order.png)](./media/consignment-replenishment-order.png)
 
 ## <a name="inventory-ownership-change-journal"></a>Endringsjournal for lagereierskap
 
@@ -74,7 +74,7 @@ De eneste lagertransaksjonene som opprettes er de som er knyttet til en postert 
 
 Det er ikke mulig å oppdatere antallet på bestillingslinjene for forsendelsen når bestillingen er opprettet.
 
-[![Endringsjournal for lagereierskap](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)
+[![Endringsjournal for lagereierskap.](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)
 
 ## <a name="vendor-collaboration-in-consignment-processes"></a>Leverandørsamarbeid i forsendelsesprosesser
 
@@ -90,13 +90,13 @@ Hvis du vil ha mer informasjon om hvordan du definerer leverandører med leveran
 
 Hvis du vil registrere fysisk forsendelse for innkommende lager, må du definere en leverandøreier. Dette gjøres på siden **Lagereier**. Når du velger en **leverandørkonto**, genereres det standardverdier for feltene **Navn** og **Eier**. Verdien i **Eier**-feltet vil være synlig for leverandøren, slik at du kanskje vil endre dette hvis dine navn på leverandørkontoer ikke er enkle for eksterne brukere å gjenkjenne. Det er mulig å redigere **Eier**-feltet, men bare frem til når du lagrer posten **Lagereier**. **Navn**-feltet fylles ut med navnet på parten som leverandørkontoen som er knyttet til, og dette kan ikke endres.
 
-[![Beholdningseiere](./media/inventory-owners.png)](./media/inventory-owners.png)
+[![Beholdningseiere.](./media/inventory-owners.png)](./media/inventory-owners.png)
 
 ## <a name="tracking-dimension-group"></a>Sporingsdimensjonsgruppe
 
 Varer som skal brukes i forsendelsesprosesser må være knyttet til en **sporingsdimensjonsgruppe** der **Eier**-dimensjonen er satt til **Aktiv**. Alternativene **Fysisk beholdning** og **Økonomisk lager** er alltid valgt for eierdimensjonen. **Dekningsplanlegg etter dimensjon** er aldri er valgt.
 
-[![Sporingsdimensjonsgruppe](./media/tracking-dimension-group.png)](./media/tracking-dimension-group.png)
+[![Sporingsdimensjonsgruppe.](./media/tracking-dimension-group.png)](./media/tracking-dimension-group.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

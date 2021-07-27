@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: ceb5b7c90cc7efa0049d0278e2c245228e5b52bd
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: 3ff40011ac60c47f6ed667adfcf01bc727334f13
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186792"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358985"
 ---
 # <a name="note-integration"></a>Merknadsintegrering
 
@@ -51,23 +51,23 @@ Følg denne fremgangsmåten for å opprette et notat i en Customer Engagement-ap
 1. Åpne kontoposten for en kunde i Customer Engagement-appen.
 2. I ruten **Tidslinje** velger du plusstegnet (**+**), og deretter velger du **Merknad** for å opprette en merknad.
 
-    ![Oppretting av en merknad i Customer Engagement-appen](media/notes-ce-1.png)
+    ![Oppretting av en merknad i Customer Engagement-appen.](media/notes-ce-1.png)
 
 3. Skriv inn en tittel og en beskrivelse, og velg deretter **Legg til merknad**.
 
-    ![Angivelse av en tittel og en beskrivelse](media/notes-ce-2.png)
+    ![Angivelse av en tittel og en beskrivelse.](media/notes-ce-2.png)
 
     Den nye merknaden legges til på kundetidslinjen.
 
-    ![Ny merknad på kundetidslinjen](media/notes-ce-3.png)
+    ![Ny merknad på kundetidslinjen.](media/notes-ce-3.png)
 
 4. Logg på Finance and Operations-appen og åpne den samme kundeposten. Legg merke til knappen **Vedlegg** (binderssymbol) i øvre høyre hjørne viser at posten har en tilknytning.
 
-    ![Varsling om en tilknytning](media/notes-ce-4.png)
+    ![Varsling om en tilknytning.](media/notes-ce-4.png)
 
 5. Velg knappen **Vedlegg** for å åpne siden **Vedlegg**. Du bør finne merknaden du opprettet i Customer Engagement-appen.
 
-    ![Merknad fra Customer Engagement-appen](media/notes-ce-5.png)
+    ![Merknad fra Customer Engagement-appen.](media/notes-ce-5.png)
 
 Alle oppdateringer av merknaden synkroniseres frem og tilbake mellom Finance and Operations-appen og Customer Engagement-appen.
 
@@ -79,21 +79,21 @@ Følg denne fremgangsmåten for å opprette et notat i en Finance and Operations
 
 1. Velg **Ny** \> **merknad** på siden **Vedlegg** i Finance and Operations-appen.
 
-    ![Oppretting av en merknad i Finance and Operations-appen](media/notes-fo-1.png)
+    ![Oppretting av en merknad i Finance and Operations-appen.](media/notes-fo-1.png)
 
 2. Skriv inn en tittel og et kort sett med instruksjoner, og velg deretter **Lagre**.
 
-    ![Angivelse av en tittel og instruksjoner](media/notes-fo-2.png)
+    ![Angivelse av en tittel og instruksjoner.](media/notes-fo-2.png)
 
 3. Oppdater posten i Customer Engagement-appen. Du bør finne det nye notatet på tidslinjen.
 
-    ![Ny merknad på tidslinjen i Customer Engagement-appen](media/notes-fo-3.png)
+    ![Ny merknad på tidslinjen i Customer Engagement-appen.](media/notes-fo-3.png)
 
 Du kan klassifisere en merknad som enten intern eller ekstern.
 
 - Åpne merknaden på siden **Vedlegg** i Finance and Operations-appen, og velg deretter **Intern** eller **Ekstern** i feltet **Begrensning**.
 
-    ![Restriksjonsfelt](media/notes-fo-4.png)
+    ![Restriksjonsfelt.](media/notes-fo-4.png)
 
 Du kan også opprette en URL.
 
@@ -101,13 +101,13 @@ Du kan også opprette en URL.
 2. Angi en tittel og URL-adressen.
 3. Velg **Intern** eller **Ekstern** i feltet **Begrensning**.
 
-    ![Oppretting av en URL-adresse i Finance and Operations-appen](media/notes-fo-5.png)
+    ![Oppretting av en URL-adresse i Finance and Operations-appen.](media/notes-fo-5.png)
 
 4. Velg **Lagre**.
 
     Ettersom Customer Engagement-apper ikke har en URL-type, er URL-adressen integrert med skrivetilgang som et notat.
 
-    ![URL-adresse som vises som et notat i Customer Engagement-appen](media/notes-ce-6.png)
+    ![URL-adresse som vises som et notat i Customer Engagement-appen.](media/notes-ce-6.png)
 
 > [!NOTE]
 > Filvedlegg støttes ikke.

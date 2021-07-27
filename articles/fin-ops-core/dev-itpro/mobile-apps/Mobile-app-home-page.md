@@ -8,18 +8,18 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.custom: 272853
+ms.custom: intro-internal
 ms.assetid: c99f818f-27b3-4e45-92b4-74272dad0e17
 ms.search.region: Global
 ms.author: cgarty
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.openlocfilehash: 469b03151f3113f44d932a2d6f4bf3fcfa059133
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: e13e99515d52e1e24970908a106ae99a7e8b0d80
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188416"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360822"
 ---
 # <a name="mobile-app-home-page"></a>Startside for mobilapp
 
@@ -39,7 +39,7 @@ Mobilappen lar organisasjoner gjøre sine forretningsprosesser tilgjengelige på
 ## <a name="elements-of-the-mobile-app"></a>Elementer i mobilappen
 Navigasjon i mobilappen består av fire grunnleggende begreper: instrumentbord, arbeidsområder, sider og handlinger. 
 
-[![Navigasjonsbegreper i mobilappen](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)
+[![Navigasjonsbegreper i mobilappen.](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)
 
 1. Når du starter appen, går du til **instrumentbord**.
 2. På instrumentbordet kan du se en liste over **arbeidsområder** som er publisert.
@@ -53,7 +53,7 @@ Navigasjon i mobilappen består av fire grunnleggende begreper: instrumentbord, 
 ## <a name="implementation-process"></a>Implementeringsprosess
 Illustrasjonen nedenfor viser prosessen med implementing av både mobile arbeidsområder som leveres av Microsoft, og egendefinerte mobile arbeidsområder. 
 
-[![Implementeringsprosess for mobilapper](./media/Mobile-implementation-process-5.png)](./media/Mobile-implementation-process-5.png)
+[![Implementeringsprosess for mobilapper.](./media/Mobile-implementation-process-5.png)](./media/Mobile-implementation-process-5.png)
 
 Tabellen nedenfor inneholder koblinger til ressurser som kan hjelpe deg med å implementere både mobile arbeidsområder som leveres av Microsoft, og egendefinerte mobile arbeidsområder. Tallene i den første kolonnen samsvarer med de nummererte trinnene i den forrige illustrasjonen.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a26ee80eb52e40b60ace9b1494b3512d85f04cfe
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 913e5cf8d39dfe36efea0526d84808e7d736b030
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837879"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361165"
 ---
 # <a name="asset-fault-analysis"></a>Feilanalyse av aktivum
 
@@ -60,7 +60,7 @@ I skjermbildet nedenfor er det bare merket av for **Symptom**-knappen.
 - Feilregistreringer er gjort på tre feilsymptomer: "Luftlekkasje", "Sikring er gått" og "Fastkjørt utstyr".  
 - I kolonnen **Sannsynlighets-%** utgjør alle prosentdeler samlet 100 %. Sannsynlighet er basert på alle **Symptom**-registreringer i denne feilanalysen.
 
-![Figur 1](media/06-controlling-and-reporting.png)
+![Figur 1.](media/06-controlling-and-reporting.png)
 
 ### <a name="group-by-symptoms-and-time-period"></a>Gruppere etter symptomer og tidsperiode
 
@@ -69,7 +69,7 @@ I skjermbildet nedenfor er **År** og **Måned** lagt til for å vise hvordan du
 - Feilsymptomene vises nå som registreringer per år/måned.  
 - Hvis du legger til alle prosentdeler for hver måned i kolonnen **Sannsynlighets-%**, blir det 100 % til sammen. Sannsynlighet er basert på alle **Symptom**-registreringene i denne feilanalysen. Hvis du har et stort antall linjer i et anleggsmiddel, men en stor prosentdel vises på en linje, vil dette være en indikasjon på et feilsymptom som bør undersøkes nøyere for å finne en måte å begrense antall registreringer for dette feilsymptomet på.
 
-![Figur 2](media/07-controlling-and-reporting.png)
+![Figur 2.](media/07-controlling-and-reporting.png)
 
 ### <a name="group-by-multiple-symptoms-and-assets"></a>Gruppere etter flere symptomer og aktiva
 
@@ -84,7 +84,7 @@ I skjermbildet nedenfor ble **Aktiva** og **Aktivatype** lagt til for å gi mer 
 - Feilsymptomene er nå delt opp i kombinasjoner av **Aktiva** / **Aktivatype** / **Symptom**.  
 - Hvis du i kolonnen **Sannsynlighets-%** legger til alle prosentdeler for kombinasjonen av **Aktiva** / **Aktivatype** / **Symptom**, utgjør de 100 % til sammen. Sannsynlighet er basert på alle **Symptom**-registreringer i denne feilanalysen. Hvis du har et stort antall linjer i et anleggsmiddel, men en stor prosentdel vises på en linje, vil dette være en indikasjon på et feilsymptom som bør undersøkes nøyere for å finne en måte å begrense antall registreringer for dette feilsymptomet på.
 
-![Figur 3](media/08-controlling-and-reporting.png)
+![Figur 3.](media/08-controlling-and-reporting.png)
 
 **Grupper etter to symptomer, aktiva og aktivatype**
 
@@ -92,7 +92,7 @@ I skjermbildet nedenfor ble **Område** lagt til i **Symptom**, **Aktiva** og **
 
 - Hvis du i kolonnen **Sannsynlighets-%** legger til alle prosentdeler for kombinasjonen av **Aktiva** / **Aktivatype** / **Symptom** for et aktivum, utgjør de 100 % til sammen. Sannsynlighet er basert på kombinasjonen av **Symptom** og **Område** i denne feilanalysen. Hvis du har et stort antall linjer i et anleggsmiddel, men en stor prosentdel vises på en linje, vil dette være en indikasjon på et feilområde som bør undersøkes nøyere for å finne en måte å begrense antall registreringer for dette feilområdet på.  
 
-![Figur 4](media/09-controlling-and-reporting.png)
+![Figur 4.](media/09-controlling-and-reporting.png)
 
 **Grupper etter tre symptomer, aktiva og aktivatyper**
 
@@ -100,7 +100,7 @@ I skjermbildet nedenfor ble **Type** lagt til, og den mest detaljerte beregninge
  
 - Hvis du i kolonnen **Sannsynlighets-%** legger til alle prosentdeler for kombinasjonen av **Aktiva** / **Aktivatype** / **Symptom** for et aktivum, utgjør de 100 % til sammen. Sannsynlighet er basert på kombinasjonen av **Symptom**, **Område** og **Type** i denne feilanalysen. Hvis du har et stort antall linjer i et anleggsmiddel, men en stor prosentdel vises på en linje, vil dette være en indikasjon på en feiltype som bør undersøkes nøyere for å finne en måte å begrense antall registreringer for denne feiltypen på.
 
-![Figur 5](media/10-controlling-and-reporting.png)
+![Figur 5.](media/10-controlling-and-reporting.png)
 
 
 >[!NOTE]

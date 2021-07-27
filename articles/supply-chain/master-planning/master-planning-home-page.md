@@ -9,19 +9,19 @@ ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 92dfb05addc1c791b24f129587b842d22423eb54
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 15fbab7d0260ed714edfbbb5ef54caddb69cae3c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908762"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360011"
 ---
 # <a name="master-planning-home-page"></a>Startside for hovedplanlegging
 
@@ -50,7 +50,7 @@ Hovedplanleggingsplaner omfatter vanligvis kort sikt, som kan være alt fra én 
 
 De følgende opplæringskart viser de store konseptene og oppgavene som utgjør rammen for hovedplanleggingsmodulen. Klikk på koblingene i [Hurtigkoblinger](#quick-links)-delen for å lære hvordan du bruker modulen.
 
-[![Opplæringskart for hovedplanlegging](./media/master-planning-learning-map.png)](./media/master-planning-learning-map.png)
+[![Opplæringskart for hovedplanlegging.](./media/master-planning-learning-map.png)](./media/master-planning-learning-map.png)
 
 ## <a name="quick-links"></a>Hurtigkoblinger
 

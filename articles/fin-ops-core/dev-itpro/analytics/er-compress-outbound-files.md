@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 899af54fbe34841c9b9b6e96b78db96773cf0203
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 5b58a9345b83219296a3570e7bf653ef8624b7a1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894178"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357648"
 ---
 # <a name="compress-large-documents-that-are-generated-in-electronic-reporting"></a>Komprimere store dokumenter som genereres i Elektronisk rapportering 
 
@@ -55,7 +55,7 @@ Før du kan fullføre fremgangsmåten i dette emnet, må du fullføre følgende 
 1. [Kjør det importerte formatet](er-defer-xml-element.md#run-the-imported-format).
 2. Legg merke til at størrelsen på det genererte dokumentet i XML-format er 3 kilobyte (KB).
 
-    ![Forhåndsvisning av det ikke-komprimerte utgående dokumentet](./media/er-compress-outbound-files1.png)
+    ![Forhåndsvisning av det ikke-komprimerte utgående dokumentet.](./media/er-compress-outbound-files1.png)
 
 ### <a name="modify-the-format-to-compress-the-generated-output"></a>Endre formatet for å komprimere det genererte resultatet
 
@@ -80,7 +80,7 @@ Før du kan fullføre fremgangsmåten i dette emnet, må du fullføre følgende 
     > [!NOTE] 
     > Komprimeringsforholdet i XML-filen som denne zip-filen inneholder, er 87 prosent. Komprimeringsforholdet avhenger av hvilke data som komprimeres.
 
-    ![Forhåndsvisning av det komprimerte utgående dokumentet](./media/er-compress-outbound-files2.png)
+    ![Forhåndsvisning av det komprimerte utgående dokumentet.](./media/er-compress-outbound-files2.png)
 
 > [!NOTE]
 > Hvis ER-[målet](electronic-reporting-destinations.md) er konfigurert for formatelementet som genererer utdata (**Rapport**-elementet i dette eksemplet), vil komprimering av utdataene hoppes over.

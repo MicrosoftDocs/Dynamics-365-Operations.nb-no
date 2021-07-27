@@ -9,17 +9,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.custom: intro-internal
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f083115f5dc0cfe0e9ba4786bf79ec4083ab7e78
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 3cd179483458dd3da3b69afaa464c21a11c3df8b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792201"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352018"
 ---
 # <a name="home-page-overview"></a>Oversikt over startside
 
@@ -31,7 +32,7 @@ Startsiden er standardsiden kunder går til når de besøker et område for e-ha
 
 Illustrasjonen nedenfor viser et eksempel på en startside som ble bygd ved hjelp av modulbiblioteket og "Fabrikam"-temaet.
 
-![Eksempel på en startside](./media/Homepage2.PNG)
+![Eksempel på en startside.](./media/Homepage2.PNG)
 
 Toppen av startsiden har en topptekst som viser alle produktkategoriene og andre sider som forhandleren vil at kunder skal bla gjennom. Bunnen på startsiden har en bunntekst som inneholder hurtigkoblinger til ulike emner som kan være av interesser for kunder.
 
@@ -41,13 +42,13 @@ Hoveddelen av startsiden kan utheve produkter, kategorier eller kampanjer ved hj
 
     Illustrasjonen nedenfor viser et eksempel på en startside der det første elementet i hoveddelen er et hovedbanneroppsett av en innholdsblokkmodul som heter "Nye varer".
 
-    ![Eksempel på en hovedbannermodul](./media/Hero.PNG)
+    ![Eksempel på en hovedbannermodul.](./media/Hero.PNG)
 
 - **Funksjon** – Et funksjonsoppsett av en innholdsblokkmodul brukes til å markedsføre produkter eller kampanjer ved hjelp av en kombinasjon av bilder og tekst. Funksjonsoppsett kan brukes uavhengig, eller de kan være plassert i en karusellmodul.
 
     Illustrasjonen nedenfor viser et eksempel på et funksjonsoppsett av en innholdsblokkmodul på en startside.
 
-    ![Eksempler på funksjonsmoduler](./media/Feature.PNG)
+    ![Eksempler på funksjonsmoduler.](./media/Feature.PNG)
 
 - **Tittel** – Et titteloppsett av en innholdsblokkmodul brukes til å vise flere produkter eller produktkategorier ved å bruke en kombinasjon av bilder og tekst i et oppsett med flere kolonner. I illustrasjonen av en startside som vises tidligere i dette emnet, brukes et flisoppsett for gjengivelsen av tre kolonner for varegruppene **Produkter for kvinner**, **Produkter for menn** og **Tilbehør**.
 - **Videospiller** – En videospillermodul kan brukes til å vise videoinnhold på startsiden. Illustrasjonen av en startside som vises tidligere i dette emnet, inneholder en videospillermodul.
@@ -56,7 +57,7 @@ Hoveddelen av startsiden kan utheve produkter, kategorier eller kampanjer ved hj
 
     Illustrasjonen nedenfor viser et eksempel på produktanbefalingsmoduler på en startside.
 
-    ![Eksempler på produktanbefalingsmoduler](./media/Recommendations.PNG)
+    ![Eksempler på produktanbefalingsmoduler.](./media/Recommendations.PNG)
 
 > [!NOTE]
 > Alle modulene som vises her, kan brukes på hvilke som helst områdessider. Plasseringen på hjemmesiden er imidlertid viktig, fordi siden er der kundene først samhandler med området.

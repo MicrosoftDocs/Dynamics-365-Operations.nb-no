@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4b8c1467368cbcbed5049561b52b29388ec21a5f
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 6e500125e1d96f6b595910e1168e2e1baeef0cd3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6055106"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360598"
 ---
 # <a name="integrate-with-linkedin-talent-hub"></a>Integrere med LinkedIn Talent Hub
 
@@ -48,7 +48,7 @@ En systemadministrator må fullføre installasjonsoppgavene for å aktivere inte
 
 5. På **Dynamics 365 Human Resources**-siden velger du miljøet du vil koble LinkedIn Talent Hub til, og deretter velger du **Kobling**.
 
-    ![LinkedIn Talent Hub-pålasting](./media/hr-admin-integration-talent-hub-onboarding.jpg)
+    ![LinkedIn Talent Hub-pålasting.](./media/hr-admin-integration-talent-hub-onboarding.jpg)
 
     > [!NOTE]
     > Du kan bare koble til miljøer der brukerkontoen har administratortilgang til både Human Resources-miljøet og det tilknyttede Power Apps-miljøet. Hvis det ikke vises noen miljøer Human Resources-koblingssiden, må du kontrollere at du har lisensierte Human Resources-miljøer på leieren, og at brukeren du logget deg på koblingssiden som har administratortilgang til både Human Resources-administrasjonsmiljøet og Power Apps-miljøet.
@@ -91,7 +91,7 @@ Det må opprettes en programbruker for LinkedIn Talent Hub-adapteren for å gi t
 
 6. Bruk rullegardinmenyen over listen til å endre visningen fra standardvisningen **Aktiverte brukere** til **Programbrukere**.
 
-    ![Programbrukere-visningen](./media/hr-admin-integration-power-apps-application-users.jpg)
+    ![Programbrukere-visningen.](./media/hr-admin-integration-power-apps-application-users.jpg)
 
 7. Klikk **Ny** på verktøylinjen.
 
@@ -163,7 +163,7 @@ Når en kandidat har gått gjennom rekrutteringsprosessen og har blitt ansatt, k
     - Angi lokasjonen der den ansatte skal være basert, i **Lokasjon**-feltet.
     - Angi eller kontroller den ansattes e-postadresse.
 
-![Eksporter til HRIS-ruten i LinkedIn Talent Hub](./media/hr-admin-integration-linkedin-talent-hub-export.jpg)
+![Eksporter til HRIS-ruten i LinkedIn Talent Hub.](./media/hr-admin-integration-linkedin-talent-hub-export.jpg)
 
 ## <a name="complete-onboarding-in-human-resources"></a>Fullføre pålasting i Human Resources
 

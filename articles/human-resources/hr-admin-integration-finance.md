@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5ed66bb2b2fce659e1e1f029fd60f74149b6526b
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 81b65d1aeeff6c4459fe0b2637013009958cfd55
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6055130"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360646"
 ---
 # <a name="configure-integration-with-finance"></a>Konfigurere integrering med Finance
 
@@ -30,7 +30,7 @@ ms.locfileid: "6055130"
 
 Hvis du vil integrere Dynamics 365 Human Resources med Dynamics 365 Finance, kan du bruke Human Resources til Finance-malen i [Dataintegrator](/powerapps/administrator/data-integrator). Human Resources to Finance-malen gir dataflyt for jobber, stillinger og arbeidere. Malen gjør at data flyter fra Human Resources til Finance, men tillater ikke at data flyter fra Finance til Human Resources.
 
-![Integrasjonsflyt fra Human Resources til Finance](./media/hr-admin-integration-finance-flow.png)
+![Integrasjonsflyt fra Human Resources til Finance.](./media/hr-admin-integration-finance-flow.png)
 
 Løsningen Human Resources til Finance tilbyr følgende typer datasynkronisering:
 
@@ -253,6 +253,6 @@ Sted-ID-en som brukes for arbeideradresse, er ikke en del av nummerserien. Når 
 
 Illustrasjonen nedenfor viser et eksempel på en tilordning av malen i Dataintegrator. 
 
-![Tilordning av mal](./media/IntegrationMapping.png)
+![Tilordning av mal.](./media/IntegrationMapping.png)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

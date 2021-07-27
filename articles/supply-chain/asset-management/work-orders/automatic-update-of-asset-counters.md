@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f15aea2f867de6f0bcf01ecfd046efc44581a1ec
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d1e8a3b34cb359b7ea7f7181d2308f8e021f3c95
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820448"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359131"
 ---
 # <a name="automatic-update-of-asset-counters"></a>Automatisk oppdatering av anleggsmiddeltellere
 
@@ -49,7 +49,7 @@ Som nevnt ovenfor kan automatiske tellere oppdateres fra produksjonsregistrering
 
     Illustrasjonen nedenfor viser et eksempel på dialogboksen **Oppdater aktivatellere**.
 
-    ![Figur 1](media/12-work-orders.png)
+    ![Figur 1.](media/12-work-orders.png)
 
 5. Velg **OK**. 
 
@@ -59,7 +59,7 @@ På siden **Akkumulert verdi for aktivum** kan du få en oversikt over den siste
 
 Illustrasjonen nedenfor viser et eksempel på siden **Akkumulert verdi for aktivum**.
 
-![Figur 2](media/13-work-orders.png)
+![Figur 2.](media/13-work-orders.png)
 
 Merk følgende punkt:
 

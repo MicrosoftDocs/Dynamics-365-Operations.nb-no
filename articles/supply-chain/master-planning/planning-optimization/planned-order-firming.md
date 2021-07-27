@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 2df579bfb820f871bfcc9c18bd8e5681cdf42447
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 00cb05105c047989ea74bbba3360c067b1b98ce8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6271214"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360382"
 ---
 # <a name="firm-planned-orders"></a>Autoriser planlagte ordrer
 
@@ -81,7 +81,7 @@ Hvis du vil autorisere planlagte bestillinger manuelt, finner du og velger de pl
     - **Grupper etter periode** (i **Bestillinger**-delen) – Velg perioden du vil gruppere planlagte bestillinger etter. Hvis du vil velge dette alternativet, må du også velge alternativet **Grupper etter leverandør**.
     - **Grupper etter periode** (i **Overføringer**-delen) – Velg perioden du vil gruppere planlagte overføringer etter. Ordrene blir gruppert basert på verdiene **Fra lager** og **Til lager**.
 
-    ![Parametere-hurtigfanen i dialogboksen Autorisasjon](./media/manual-firming.png "Parametere-hurtigfanen i dialogboksen Autorisasjon")
+    ![Parametere-hurtigfanen i dialogboksen Autorisasjon.](./media/manual-firming.png "Parametere-hurtigfanen i dialogboksen Autorisasjon")
 
 1. I hurtigfanen **Kjør i bakgrunnen** definerer du jobben slik at den kjøres i satsvis modus. Det er imidlertid ingen vits i å definere en gjentakende tidsplan når du gjør manuell autorising. Feltene fungerer på samme måte som de fungerer for andre typer [bakgrunnsjobber](../../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) i Supply Chain Management. For manuell autorisering vil imidlertid den satsvise jobben bare behandle de valgte planlagte ordrene. Den behandler ikke ordrer som passer til filtrene som for øyeblikket brukes på siden.
 1. Velg **OK** for å bruke innstillingene og generere de autoriserte ordrene.
@@ -140,15 +140,15 @@ Følg denne fremgangsmåten for å autorisere en planlagt bestilling ved hjelp a
     - **Autorisasjonshorisont antall dager forover** – Velg hvor langt inn i fremtiden de ulike behovene og andre hensyn må beregnes ved hjelp av hovedplanlegging.
     - **Autorisasjonshorisont antall dager bakover** – Velg hvor langt tilbake i tid de ulike behovene og andre hensyn må beregnes ved hjelp av hovedplanlegging.
 
-    ![Parametere-hurtigfanen i dialogboksen Autorisering av planlagt bestilling](./media/planned-order-firming-main-1.png "Parametere-hurtigfanen i dialogboksen Autorisering av planlagt bestilling")
+    ![Parametere-hurtigfanen i dialogboksen Autorisering av planlagt bestilling.](./media/planned-order-firming-main-1.png "Parametere-hurtigfanen i dialogboksen Autorisering av planlagt bestilling")
 
 1. Hvis du vil angi hvilke poster som skal være med i ordren, velger du **Filter**-knappen i hurtigfanen **Poster som skal inkluderes**. Det vises en standard dialogboks for spørring der du kan definere utvalgskriterier, sorteringskriterier og koblinger. Feltene fungerer på samme måte som for andre typer spørringer i Supply Chain Management. Feltene her er skrivebeskyttet, og viser verdier som er knyttet til spørringen.
 
-    ![Hurtigfanen Poster som skal inkluderes i dialogboksen Autorisering av planlagt bestilling](./media/planned-order-firming-main-2.png "Hurtigfanen Poster som skal inkluderes i dialogboksen Autorisering av planlagt bestilling")
+    ![Hurtigfanen Poster som skal inkluderes i dialogboksen Autorisering av planlagt bestilling.](./media/planned-order-firming-main-2.png "Hurtigfanen Poster som skal inkluderes i dialogboksen Autorisering av planlagt bestilling")
 
 1. Velg **Forhåndsvis** for å forhåndsvise innholdet i den autoriserte ordren, basert på innstillingene dine så langt. Listen over planlagte bestillinger som skal autoriseres, vises som en melding. Du kan deretter justere innstillingene etter behov til forhåndsvisningen viser den autoriserte ordren slik du har til hensikt å gjøre.
 
-    ![Eksempel på forhåndsvisning av autorisert ordre](./media/planned-order-firming-preview.png "Eksempel på forhåndsvisning av autorisert ordre")
+    ![Eksempel på forhåndsvisning av autorisert ordre.](./media/planned-order-firming-preview.png "Eksempel på forhåndsvisning av autorisert ordre")
 
     > [!WARNING]
     > Denne funksjonen vil autorisere alle planlagte bestillinger som samsvarer med filterkriteriene. Ukritisk autorisering av planlagte bestillinger kan føre til at det opprettes mange uønskede innkjøps-, overførings- og produksjonsordrer. Før du fortsetter, må du alltid bruke **Forhånds**-knappen til å validere postene som skal tas med.

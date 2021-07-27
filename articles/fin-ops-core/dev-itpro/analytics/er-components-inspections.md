@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d164dfe10c9736d8b4529a32ffba765f94ad37d9
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 309e613b707222920936d5af995ac57c4c423b40
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753846"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357672"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>Kontrollere den konfigurerte ER-komponenten for å forhindre kjøretidsproblemer
 
@@ -242,7 +242,7 @@ Fremgangsmåten nedenfor viser hvordan dette problemet kan oppstå.
 1. Start å konfigurere ER-datamodellen og ER-modelltilordningskomponentene samtidig.
 2. Legg til et felt med navnet **X** i datamodelltreet, og velg **Heltall** som datatype.
 
-    ![X-feltet og heltallsdatatype er lagt til i datamodustreet på datamodellsiden](./media/er-components-inspections-01.png)
+    ![X-feltet og heltallsdatatype er lagt til i datamodustreet på datamodellsiden.](./media/er-components-inspections-01.png)
 
 3. I uformingen av modelltilordning legger du til en datakilde av typen **Beregnet felt** i ruten **Datakilder**.
 4. Gi den nye datakilden navnet **Y**, og konfigurer den slik at den inneholder uttrykket `INTVALUE(100)`.
@@ -250,17 +250,17 @@ Fremgangsmåten nedenfor viser hvordan dette problemet kan oppstå.
 6. I datamodeldesigner endrer du datatypen for **X**-feltet fra **Heltall** til **Int64**.
 7. Velg **Valider** for å kontrollere den redigerbare modelltilordningskomponenten på siden **Modelltilordningsutforming**.
 
-    ![Validering av den redigerbare modelltilordningskomponenten på siden Modelltilordningsutforming](./media/er-components-inspections-01.gif)
+    ![Validere den redigerbare modelltilordningskomponenten på siden Modelltilordningsutforming.](./media/er-components-inspections-01.gif)
 
 8. Velg **Valider** for å kontrollere modelltilordningskomponenten for valgt ER-konfigurasjon på siden **Konfigurasjoner**.
 
-    ![Inspisering av modelltilordningskomponenten på siden Konfigurasjoner](./media/er-components-inspections-01a.png)
+    ![Inspisering av modelltilordningskomponenten på siden Konfigurasjoner.](./media/er-components-inspections-01a.png)
 
 9. Legg merke til at det oppstår en valideringsfeil. Meldingen angir at verdien for typen **Heltall** som uttrykket `INTVALUE(100)` i datakilden **Y** returnerer, ikke kan lagres i datamodellfeltet **X** av typen **Int64**.
 
 Følgende illustrasjon viser kjøretidsfeilen som oppstår hvis du ignorerer advarselen og velger **Kjør** for å kjøre et format som er konfigurert til å bruke modelltilordningen.
 
-![Kjøretidsfeil på siden Formatutforming](./media/er-components-inspections-01b.png)
+![Kjøretidsfeil på siden Formatutforming.](./media/er-components-inspections-01b.png)
 
 ### <a name="automatic-resolution"></a>Automatisk løsning
 
@@ -290,7 +290,7 @@ Fremgangsmåten nedenfor viser hvordan dette problemet kan oppstå.
 6. I formatstrukturtreet endrer du datatypen til **Y**-formatelementet fra **Heltall** til **Int64**.
 7. Velg **Valider** for å kontrollere den redigerbare formatkomponenten på siden **Formatutforming**.
 
-    ![Validerer type kompatibilitet på Formatutforming-siden](./media/er-components-inspections-02.gif)
+    ![Validerer type kompatibilitet på Formatutforming-siden.](./media/er-components-inspections-02.gif)
 
 8. Legg merke til at det oppstår en valideringsfeil. Meldingen angir at det konfigurerte uttrykket bare kan godta **Int64**-verdier. Derfor kan verdien i datamodellfeltet **X** av typen **Heltall** ikke angis i formatelementet **Y**.
 
@@ -317,7 +317,7 @@ Fremgangsmåten nedenfor viser hvordan dette problemet kan oppstå.
 1. Start å konfigurere ER-datamodellen og ER-modelltilordningskomponentene samtidig.
 2. Legg til et felt med navnet **X** i datamodelltreet, og velg **Heltall** som datatype.
 
-    ![Datamodelltre med X-felt og heltallsdatatype på datamodellsiden](./media/er-components-inspections-01.png)
+    ![Datamodelltre med X-felt og heltallsdatatype på datamodellsiden.](./media/er-components-inspections-01.png)
 
 3. I uformingen av modelltilordning legger du til en datakilde av typen **Beregnet felt** i ruten **Datakilder**.
 4. Gi den nye datakilden navnet **Y**, og konfigurer den slik at den inneholder uttrykket `INTVALUE(100)`.
@@ -325,7 +325,7 @@ Fremgangsmåten nedenfor viser hvordan dette problemet kan oppstå.
 6. Slett datakilden **Y** i ruten **Datakilder** i modelltilordningsutformingen.
 7. Velg **Valider** for å kontrollere den redigerbare modelltilordningskomponenten på siden **Modelltilordningsutforming**.
 
-    ![Inspeksjon av den redigerbare ER-modelltilordningskomponenten på siden Modelltilordningsutforming](./media/er-components-inspections-03.gif)
+    ![Inspeksjon av den redigerbare ER-modelltilordningskomponenten på siden Modelltilordningsutforming.](./media/er-components-inspections-03.gif)
 
 8. Legg merke til at det oppstår en valideringsfeil. Meldingen angir at bindingen for **X**-datamodellfeltet inneholder banen som refererer til **Y**-datakilden, men denne datakilden finnes ikke.
 
@@ -359,13 +359,13 @@ Fremgangsmåten nedenfor viser hvordan dette problemet kan oppstå.
 8. Gi det nye nestede feltet navnet **$AccNumber**, og konfigurer det, slik at det inneholder uttrykket `TRIM(Vendor.AccountNum)`.
 9. Velg **Valider** for å kontrollere den redigerbare modelltilordningskomponenten på siden **Modelltilordningsutforming**, og kontroller at `FILTER(Vendor, Vendor.AccountNum="US-101")`-uttrykket i **Leverandør**-datakilden kan spørres.
 
-    ![Verifisering av uttrykket kan spørres på siden Modelltilordningsutforming](./media/er-components-inspections-04.gif)
+    ![Verifisering av uttrykket kan spørres på siden Modelltilordningsutforming.](./media/er-components-inspections-04.gif)
 
 10. Legg merke til at det oppstår en valideringsfeil, fordi **Leverandør**-datakilden inneholder et nestet felt av typen **Beregnet felt** som ikke tillater at uttrykket for datakilden **FilteredVendor** oversettes til den direkte SQL-setningen.
 
 Følgende illustrasjon viser kjøretidsfeilen som oppstår hvis du ignorerer advarselen og velger **Kjør** for å kjøre et format som er konfigurert til å bruke modelltilordningen.
 
-![Kjøretidsfeil som oppstår når du kjører det redigerbare formatet på formatutformingssiden](./media/er-components-inspections-04a.png)
+![Kjøretidsfeil som oppstår når du kjører det redigerbare formatet på formatutformingssiden.](./media/er-components-inspections-04a.png)
 
 ### <a name="automatic-resolution"></a>Automatisk løsning
 
@@ -396,23 +396,23 @@ Fremgangsmåten nedenfor viser hvordan dette problemet kan oppstå.
     - Velg **Trans**-datakilden som kilde for poster som skal grupperes.
     - I feltet **Utførelseslokasjon** velger du **Spørring** for å angi at du vil kjøre datakilden på databasenivå.
 
-    ![Konfigurere datakilden på siden Rediger GroupBy-parametere](./media/er-components-inspections-05a.gif)
+    ![Konfigurere datakilden på siden Rediger GroupBy-parametere.](./media/er-components-inspections-05a.gif)
 
 6. Velg **Valider** for å kontrollere den redigerbare modelltilordningskomponenten på siden **Modelltilordningsutforming**, og kontroller at den konfigurerte **GroupedTrans**-datakilden kan spørres.
 7. Endre **Trans**-datakilden ved å legge til et nestet felt av typen **Beregnet felt** for å hente det relevante leverandørkontonummeret.
 8. Gi den nye datakilden navnet **$AccNumber**, og konfigurer den slik at den inneholder uttrykket `TRIM(Trans.AccountNum)`.
 
-    ![Konfigurere datakilden på siden Modelltilordningsutforming](./media/er-components-inspections-05a.png)
+    ![Konfigurere datakilden på siden Modelltilordningsutforming.](./media/er-components-inspections-05a.png)
 
 9. Velg **Valider** for å kontrollere den redigerbare modelltilordningskomponenten på siden **Modelltilordningsutforming**, og kontroller at den konfigurerte **GroupedTrans**-datakilden kan spørres.
 
-    ![Validering av ER-modelltilordningskomponenten og kontroll av at datakilden GroupedTrans kan spørres på siden Modelltilordningsutforming](./media/er-components-inspections-05b.png)
+    ![Validering av ER-modelltilordningskomponenten og kontroll av at datakilden GroupedTrans kan spørres på siden Modelltilordningsutforming.](./media/er-components-inspections-05b.png)
 
 10. Legg merke til at det oppstår en valideringsfeil, fordi **Trans**-datakilden inneholder et nestet felt av typen **Beregnet felt** som ikke tillater at kallet etter datakilden **GroupedTrans** oversettes til den direkte SQL-setningen.
 
 Følgende illustrasjon viser kjøretidsfeilen som oppstår hvis du ignorerer advarselen og velger **Kjør** for å kjøre et format som er konfigurert til å bruke modelltilordningen.
 
-![Kjøretidsfeil som oppstår når advarselen ignoreres på siden Formatutforming](./media/er-components-inspections-05c.png)
+![Kjøretidsfeil som oppstår når advarselen ignoreres på siden Formatutforming.](./media/er-components-inspections-05c.png)
 
 ### <a name="automatic-resolution"></a>Automatisk løsning
 
@@ -448,21 +448,21 @@ Fremgangsmåten nedenfor viser hvordan dette problemet kan oppstå.
     2. Legg til **Vendor.FilteredTrans**-datakilden som det andre postsettet som skal slås sammen. Velg **INNER** som type.
     3. I feltet for **Kjøring** velger du **Spørring** for å angi at du vil kjøre datakilden på databasenivå.
 
-    ![Konfigurere datakilden på Join-utformingssiden](./media/er-components-inspections-06a.gif)
+    ![Konfigurere datakilden på Join-utformingssiden.](./media/er-components-inspections-06a.gif)
 
 10. Velg **Valider** for å kontrollere den redigerbare modelltilordningskomponenten på siden **Modelltilordningsutforming**, og kontroller at den konfigurerte **JoinedList**-datakilden kan spørres.
 11. Endre uttrykket for **Vendor.FilteredTrans**-datakilden fra `FILTER(Trans, Trans.AccountNum=Vendor.AccountNum)` til `WHERE(Trans, Trans.AccountNum=Vendor.AccountNum)`.
 12. Velg **Valider** for å kontrollere den redigerbare modelltilordningskomponenten på siden **Modelltilordningsutforming**, og kontroller at den konfigurerte **JoinedList**-datakilden kan spørres.
 
-    ![Validering av den redigerbare modelltilordningskomponenten og kontroll av at JoinedList-datakilden kan spørres på siden Modelltilordningsutforming](./media/er-components-inspections-06b.png)
+    ![Validering av den redigerbare modelltilordningskomponenten og kontroll av at JoinedList-datakilden kan spørres på siden Modelltilordningsutforming.](./media/er-components-inspections-06b.png)
 
 13. Legg merke til at det oppstår en valideringsfeil fordi uttrykket for **Vendor.FilteredTrans**-datakilden ikke kan oversettes til det direkte SQL-kallet. I tillegg tillater ikke det direkte SQL-kallet at kallet for **JoinedList**-datakilden oversettes til den direkte SQL-setningen.
 
-    ![Kjøretidsfeil fra den mislykkede valideringen av JoinedList-datakilden på siden Modelltilordningsutforming](./media/er-components-inspections-06c.png)
+    ![Kjøretidsfeil fra den mislykkede valideringen av JoinedList-datakilden på siden Modelltilordningsutforming.](./media/er-components-inspections-06c.png)
 
 Følgende illustrasjon viser kjøretidsfeilen som oppstår hvis du ignorerer advarselen og velger **Kjør** for å kjøre et format som er konfigurert til å bruke modelltilordningen.
 
-![Kjøre det redigerbare formatet på formatutformingssiden](./media/er-components-inspections-06e.png)
+![Kjøre det redigerbare formatet på formatutformingssiden.](./media/er-components-inspections-06e.png)
 
 ### <a name="automatic-resolution"></a>Automatisk løsning
 
@@ -474,7 +474,7 @@ Ingen alternativer for automatisk korrigering av dette problemet er tilgjengelig
 
 Endre uttrykket for **Vendor.FilteredTrans**-datakilde fra `WHERE(Trans, Trans.AccountNum=Vendor.AccountNum)` tilbake til `FILTER(Trans, Trans.AccountNum=Vendor.AccountNum)`, som advarselen anbefaler.
 
-![Oppdatert uttrykk for datakilde på siden Modelltilordningsutforming](./media/er-components-inspections-06d.png)
+![Oppdatert uttrykk for datakilde på siden Modelltilordningsutforming.](./media/er-components-inspections-06d.png)
 
 #### <a name="option-2"></a>Alternativ 2
 
@@ -497,11 +497,11 @@ Fremgangsmåten nedenfor viser hvordan dette problemet kan oppstå.
 9. Gi den nye datakilden navnet **FilteredVendor**, og konfigurer den slik at den inneholder uttrykket `WHERE(Vendor, Vendor.AccountNum="US-101")`.
 10. Velg **Valider** for å kontrollere den redigerbare modelltilordningskomponenten på siden **Modelltilordningsutforming**.
 
-    ![Kontrollere den redigerbare modelltilordningskomponenten på siden Modelltilordningsutforming](./media/er-components-inspections-07a.png)
+    ![Kontrollere den redigerbare modelltilordningskomponenten på siden Modelltilordningsutforming.](./media/er-components-inspections-07a.png)
 
 11. Legg merke til at valideringsadvarsler anbefaler at du bruker **FILTER**-funksjonen i stedet for **WHERE** -funksjonen for datakildene **FilteredVendor** og **FilteredTrans**.
 
-    ![Anbefaling om å bruke FILTER-funksjonen i stedet for WHERE-funksjonen på siden Modelltilordningsutforming](./media/er-components-inspections-07b.png)
+    ![Anbefaling om å bruke FILTER-funksjonen i stedet for WHERE-funksjonen på siden Modelltilordningsutforming.](./media/er-components-inspections-07b.png)
 
 ### <a name="automatic-resolution"></a>Automatisk løsning
 
@@ -509,7 +509,7 @@ Velg **Løs** for å erstatte **WHERE**-funksjonen med **FILTER**-funksjonen i u
 
 Du kan også velge raden for en enkelt advarsel i rutenettet og deretter velge **Rett opp valgte**. I dette tilfellet endres uttrykket automatisk bare i datakilden som er nevnt i den valgte advarselen.
 
-![Hvis du velger Løs, erstattes WHERE-funksjonen med FILTER-funksjonen automatisk på siden Modelltilordningsutforming](./media/er-components-inspections-07c.png)
+![Hvis du velger Løs, erstattes WHERE-funksjonen med FILTER-funksjonen automatisk på siden Modelltilordningsutforming.](./media/er-components-inspections-07c.png)
 
 ### <a name="manual-resolution"></a>Manuell løsing
 
@@ -530,11 +530,11 @@ Fremgangsmåten nedenfor viser hvordan dette problemet kan oppstå.
 7. Gi den nye datakilden navnet **FilteredVendorTrans**, og konfigurer den slik at den inneholder uttrykket `ALLITEMS(FilteredVendor.'<Relations'.'VendTrans.VendTable_AccountNum')`.
 8. Velg **Valider** for å kontrollere den redigerbare modelltilordningskomponenten på siden **Modelltilordningsutforming**.
 
-    ![Inspeksjon av den redigerbare modelltilordningskomponenten på siden Modelltilordningsutforming](./media/er-components-inspections-08a.png)
+    ![Inspeksjon av den redigerbare modelltilordningskomponenten på siden Modelltilordningsutforming.](./media/er-components-inspections-08a.png)
 
 9. Legg merke til at det oppstår en valideringsadversel. Meldingen anbefaler at du bruker **ALLITEMSQUERY**-funksjonen i stedet for **ALLITEMS**-funksjonen for **FilteredVendorTrans**-datakilden.
 
-    ![Anbefaling om å bruke ALLITEMSQUERY-funksjonen i stedet for ALLITEMS-funksjonen på siden Modelltilordningsutforming](./media/er-components-inspections-08b.png)
+    ![Anbefaling om å bruke ALLITEMSQUERY-funksjonen i stedet for ALLITEMS-funksjonen på siden Modelltilordningsutforming.](./media/er-components-inspections-08b.png)
 
 ### <a name="automatic-resolution"></a>Automatisk løsning
 
@@ -542,7 +542,7 @@ Velg **Løs** for å erstatte **ALLITEMS**-funksjonen med **ALLITEMSQUERY**-funk
 
 Du kan også velge raden for en enkelt advarsel i rutenettet og deretter velge **Rett opp valgte**. I dette tilfellet endres uttrykket automatisk bare i datakilden som er nevnt i den valgte advarselen.
 
-![Valg av Løs på siden Modelltilordningsutforming](./media/er-components-inspections-08c.png)
+![Valg av Løs på siden Modelltilordningsutforming.](./media/er-components-inspections-08c.png)
 
 ### <a name="manual-resolution"></a>Manuell løsing
 
@@ -563,7 +563,7 @@ Fremgangsmåten nedenfor viser hvordan dette problemet kan oppstå.
     - Legg til et nestet felt av typen **Streng**, og gi det navnet **Navn**.
     - Legg til et nestet felt av typen **Streng**, og gi det navnet **AccountNumber**.
 
-    ![Legge til nestede felt på datamodellsiden](./media/er-components-inspections-09a.png)
+    ![Legge til nestede felt på datamodellsiden.](./media/er-components-inspections-09a.png)
 
 6. I uformingen av modelltilordning legger du til en datakilde av typen **Dynamics 365 for Operations \\ Tabellposter** i ruten **Datakilder**.
 7. Gi den nye datakilden navnet **Leverandør**. I **Tabell**-feltet velger **VendTable** for å angi at denne datakilden skal be om tabellen VendTable.
@@ -577,7 +577,7 @@ Fremgangsmåten nedenfor viser hvordan dette problemet kan oppstå.
     - Bind **FilteredVendor.AccountNum** til **Vendor.AccountNumber**.
     - Bind **FilteredVendor.'name()'** til **Vendor.Name**.
 
-    ![Binde datamodellelementer på siden Modelltilordningsutforming](./media/er-components-inspections-09b.png)
+    ![Binde datamodellelementer på siden Modelltilordningsutforming.](./media/er-components-inspections-09b.png)
 
 13. I formatstrukturtreet legger du til følgende elementer for å generere et utgående dokument i XML-format som inneholder leverandørdetaljene:
 
@@ -595,15 +595,15 @@ Fremgangsmåten nedenfor viser hvordan dette problemet kan oppstå.
 
 15. Velg **Valider** for å kontrollere den redigerbare formatkomponenten på siden **Formatutforming**.
 
-    ![Validering av formatelementene du har bundet til datakilder på siden Formatutforming](./media/er-components-inspections-09c.png)
+    ![Validering av formatelementene du har bundet til datakilder på siden Formatutforming.](./media/er-components-inspections-09c.png)
 
 16. Legg merke til at det oppstår en valideringsfeil. Meldingen angir at det kan oppstå en feil for de konfigurerte formatkomponentene **Setning\\Part\\Navn** og **Setning\\Part\\AccountNum** under kjøring hvis listen `model.Vendor` er tom.
 
-    ![Valideringsfeil om en mulig feil for de konfigurerte formatkomponentene](./media/er-components-inspections-09d.png)
+    ![Valideringsfeil om en mulig feil for de konfigurerte formatkomponentene.](./media/er-components-inspections-09d.png)
 
 Følgende illustrasjon viser kjøretidsfeilen som oppstår hvis du ignorerer advarselen og velger **Kjør** for å kjøre formatet og velger kontonummeret for en ikke-eksisterende leverandør. Fordi den forespurte leverandøren ikke finnes, vil `model.Vendor` være tom (det vil si at den ikke inneholder noen poster).
 
-![Kjøretidsfeil som oppstår under formattilordningskjøringen](./media/er-components-inspections-09e.png)
+![Kjøretidsfeil som oppstår under formattilordningskjøringen.](./media/er-components-inspections-09e.png)
 
 ### <a name="automatic-resolution"></a>Automatisk løsning
 
@@ -615,7 +615,7 @@ Du kan velge **Fjern binding** for den valgte raden i rutenettet i fanen **Advar
 
 Du kan binde formatelementet **Setning\\Part\\Navn** til datakildeelementet `model.Vendor`. Under kjøringen kaller denne bindingen datakilden `model.Vendor` først. Når `model.Vendor` returnerer en tom postliste, kjøres ikke de nestede formatelementene. Det skjer derfor ingen valideringsadvarsler for denne formatkonfigurasjonen.
 
-![Binding av formatelementet til datakildeelementet på formatutformingssiden](./media/er-components-inspections-09e.gif)
+![Binding av formatelementet til datakildeelementet på formatutformingssiden.](./media/er-components-inspections-09e.gif)
 
 #### <a name="option-2"></a>Alternativ 2
 
@@ -626,7 +626,7 @@ Endre bindingen for formatelementet **Setning\\Part\\Navn** fra `model.Vendor.Na
 
 Det oppstår derfor ingen valideringsadvarsler for området for **Setning\\Part\\Navn**-formatelementet når det er bundet til uttrykket `FIRSTORNULL(model.Vendor).Name`.
 
-![Endret binding løser valideringsadvarsler på formateringssiden for utforming](./media/er-components-inspections-09f.gif)
+![Endret binding løser valideringsadvarsler på formateringssiden for utforming.](./media/er-components-inspections-09f.gif)
 
 #### <a name="option-3"></a>Alternativ 3
 
@@ -653,11 +653,11 @@ Fremgangsmåten nedenfor viser hvordan dette problemet kan oppstå.
 7. Gi den nye datakilden navnet **FilteredVendor**, og konfigurer den slik at den inneholder uttrykket `FILTER(Vendor, Vendor.AccountNum=RequestedAccountNum)`.
 8. Merk den konfigurerte **Leverandør**-datakilden som hurtigbufret.
 
-    ![Konfigurasjon av modelltilordningskomponenten på siden Modelltilordningsutforming](./media/er-components-inspections-10a.gif)
+    ![Konfigurasjon av modelltilordningskomponenten på siden Modelltilordningsutforming.](./media/er-components-inspections-10a.gif)
 
 9. Velg **Valider** for å kontrollere den redigerbare modelltilordningskomponenten på siden **Modelltilordningsutforming**.
 
-    ![Validering av FILTER-funksjonen som også brukes av datakilden for bufret leverandør på siden Modelltilordningsutforming](./media/er-components-inspections-10a.png)
+    ![Validering av FILTER-funksjonen som også brukes av datakilden for bufret leverandør på siden Modelltilordningsutforming.](./media/er-components-inspections-10a.png)
 
 10. Legg merke til at det oppstår en valideringsfeil. Meldingen angir at **FILTER**-funksjonen ikke kan brukes på den bufrede **Leverandør**-datakilden.
 
@@ -694,7 +694,7 @@ Fremgangsmåten nedenfor viser hvordan dette problemet kan oppstå.
     - Legg til et nestet felt av typen **Streng**, og gi det navnet **Navn**.
     - Legg til et nestet felt av typen **Streng**, og gi det navnet **AccountNumber**.
 
-    ![Tillegg av nestede felt i elementet Leverandør på siden Datamodell](./media/er-components-inspections-11a.png)
+    ![Tillegg av nestede felt i elementet Leverandør på siden Datamodell.](./media/er-components-inspections-11a.png)
 
 6. I uformingen av modelltilordning legger du til en datakilde av typen **Dynamics 365 for Operations \\ Tabellposter** i ruten **Datakilder**.
 7. Gi den nye datakilden navnet **Leverandør**. I **Tabell**-feltet velger **VendTable** for å angi at denne datakilden skal be om tabellen VendTable.
@@ -710,7 +710,7 @@ Fremgangsmåten nedenfor viser hvordan dette problemet kan oppstå.
     > [!NOTE]
     > Datamodellfeltet **Vendor.Name** forblir ubundet.
 
-    ![Datamodellelementer som er bundet til konfigurerte datakilder og et datamoduselement som forblir ubundet på siden for modelltilordningsutforming](./media/er-components-inspections-11b.png)
+    ![Datamodellelementer som er bundet til konfigurerte datakilder og et datamoduselement som forblir ubundet på siden for modelltilordningsutforming.](./media/er-components-inspections-11b.png)
 
 13. I formatstrukturtreet legger du til følgende elementer for å generere et utgående dokument i XML-format som inneholder detaljene for leverandører som det spørres om:
 
@@ -729,15 +729,15 @@ Fremgangsmåten nedenfor viser hvordan dette problemet kan oppstå.
 
 15. Velg **Valider** for å kontrollere den redigerbare formatkomponenten på siden **Formatutforming**.
 
-    ![Validering av ER-formatkomponenten på siden for formatutforming](./media/er-components-inspections-11c.png)
+    ![Validering av ER-formatkomponenten på siden for formatutforming.](./media/er-components-inspections-11c.png)
 
 16. Legg merke til at det oppstår en valideringsadversel. Meldingen angir at **model.Vendor.Name**-datakildefeltet ikke er bundet til en datakilde i modelltilordningen som er konfigurert til å brukes av formatet. Derfor kan det hende at **Setning\\Part\\Navn** ikke fylles under kjøring, og det kan oppstå et kjøretidsunntak.
 
-    ![Validerer ER-formatkomponenten på siden for formatutforming](./media/er-components-inspections-11d.png)
+    ![Validerer ER-formatkomponenten på siden for formatutforming.](./media/er-components-inspections-11d.png)
 
 Følgende illustrasjon viser kjøretidsfeilen som oppstår hvis du ignorerer advarselen og velger **Kjør** for å kjøre formatet.
 
-![Kjøre det redigerbare formatet på formatutformingssiden](./media/er-components-inspections-11e.png)
+![Kjøre det redigerbare formatet på formatutformingssiden.](./media/er-components-inspections-11e.png)
 
 ### <a name="automatic-resolution"></a>Automatisk løsning
 
@@ -766,7 +766,7 @@ Fremgangsmåten nedenfor viser hvordan dette problemet kan oppstå.
 5. I **Excel\\Fil**-elementet velger du arbeidsbokfil A.
 6. Velg **Valider** for å kontrollere den redigerbare formatkomponenten på siden **Formatutforming**.
 
-    ![Validere den redigerbare formatkomponenten i arbeidsbokfilen på siden for formatutforming](./media/er-components-inspections-12a.gif)
+    ![Validere den redigerbare formatkomponenten i arbeidsbokfilen på siden for formatutforming.](./media/er-components-inspections-12a.gif)
 
 7. Legg merke til at det oppstår en valideringsadversel. Meldingen angir at arbeidsbokfilen B. xlsx ikke er koblet til noen komponenter, og at den vil bli fjernet etter at statusen for konfigurasjonsversjonen er endret.
 
@@ -794,11 +794,11 @@ Fremgangsmåten nedenfor viser hvordan dette problemet kan oppstå.
 4. Legg til **Excel\\Celle**-elementet **Tittel** som et nestet element i elementet **Rapport**. I feltet **Excel-område** angir du **ReportTitle**.
 5. Velg **Valider** for å kontrollere den redigerbare formatkomponenten på siden **Formatutforming**.
 
-    ![Validering av de nestede elementene og feltene på siden Formatutforming](./media/er-components-inspections-13a.png)
+    ![Validering av de nestede elementene og feltene på siden Formatutforming.](./media/er-components-inspections-13a.png)
 
 6. Legg merke til at det oppstår en valideringsadversel. Meldingen angir at navnet **ReportTitle** ikke finnes på arket **Ark1** i Excel-malen du bruker.
 
-    ![Valideringsadvarsel om at navnet ReportTitle ikke finnes på Ark1 av Excel-malen](./media/er-components-inspections-13b.png)
+    ![Valideringsadvarsel om at navnet ReportTitle ikke finnes på Ark1 av Excel-malen.](./media/er-components-inspections-13b.png)
 
 ### <a name="automatic-resolution"></a>Automatisk løsning
 

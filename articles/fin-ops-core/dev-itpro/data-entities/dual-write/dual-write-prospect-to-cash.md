@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 33ed1c7f69fa92bbd123042a139dd8fd0ee3e73a
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 7554189c779404559187ecd99f4bca4636054446
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754094"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361412"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Kundeemne til kontanter i dobbel skriving
 
@@ -33,7 +33,7 @@ Et viktig mål for de fleste bedrifter er å konvertere kundeemner til kunder, o
 
 I app-grensesnittene kan du få tilgang til behandlingsstatusene og fakturainformasjonen i sanntid. Derfor er det enklere å administrere funksjoner som produktlagring, lagerhåndtering og oppfyllelse i Supply Chain Management, uten å måtte opprette tilbudene og ordrene på nytt.
 
-![Dataflyt for dobbel skriving i kundeemne til kontanter](../dual-write/media/dual-write-prospect-to-cash[1].png)
+![Dataflyt for dobbel skriving i kundeemne til kontanter.](../dual-write/media/dual-write-prospect-to-cash[1].png)
 
 Hvis du vil ha informasjon om kunde- og kontaktintegrering, kan du se [Integrert originalkunde](customer-mapping.md). Hvis du vil ha informasjon om produktintegrering, kan du se [Samlet produktopplevelse](product-mapping.md).
 

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 84f5e949f0c81f840c8a9086d05bbcfc576e42aa
-ms.sourcegitcommit: b67665ed689c55df1a67d1a7840947c3977d600c
+ms.openlocfilehash: 8709b91b354fa4e1319b406c009bfdadeef48a41
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6017012"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358104"
 ---
 # <a name="inventory-visibility-add-in"></a>Tillegg for lagersynlighet
 
@@ -143,7 +143,7 @@ Når du har forutsetningene på plass, bruker du fremgangsmåten nedenfor hvis d
 
             Hvis du vil ha mer informasjon om denne variabelen, kan du se delen [Konfigurere integrering av lagersynlighet](#setup-inventory-visibility-integration) senere i dette emnet.
 
-        ![Konfigurasjonsutløser](media/configuration-trigger.png "Konfigurasjonsutløser")
+        ![Konfigurasjonsutløser.](media/configuration-trigger.png "Konfigurasjonsutløser")
 
     1. Velg **Aktiver**.
 
@@ -157,7 +157,7 @@ Hvis du vil installere tillegget for lagersynlighet, må du gjøre følgende:
 1. På miljøsiden ruller du ned til du ser delen delen **Miljøtillegg** i delen **Power Platform-integrering**, der du også finner navnet på Dataverse-miljøet.
 1. I delen **Miljøtillegg** velger du **Installer et nytt tillegg**.
 
-    ![Miljøsiden i LCS](media/inventory-visibility-environment.png "Miljøsiden i LCS")
+    ![Miljøsiden i LCS.](media/inventory-visibility-environment.png "Miljøsiden i LCS")
 
 1. Velg koblingen **Installer et nytt tillegg**. En liste over tilgjengelige tillegg åpnes.
 1. Velg **Lagersynlighet** i listen.
@@ -166,7 +166,7 @@ Hvis du vil installere tillegget for lagersynlighet, må du gjøre følgende:
     - **ID for AAD-app (klient)**
     - **Leier-ID for AAD**
 
-    ![Legg til i konfigurasjon-side](media/inventory-visibility-setup.png "Legg til i konfigurasjon-side")
+    ![Legg til i konfigurasjon-side.](media/inventory-visibility-setup.png "Legg til i konfigurasjon-side")
 
 1. Godta vilkåret og betingelsen ved å merke av for **Vilkår og betingelser**.
 1. Velg **Installer**. Statusen for tillegget vil vises som **Installerer**. Når du er ferdig, oppdaterer du siden for å se status endre til **Installert**.

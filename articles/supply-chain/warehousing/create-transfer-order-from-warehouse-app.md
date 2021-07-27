@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: d8bab58727a7031f122864cb7465d9bc5983b467
-ms.sourcegitcommit: 1f2394be857afaefa8749f607cda62dfa00ba2c5
+ms.openlocfilehash: fe5983d40033c0cd15674815067eaa969e97d38b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "6164852"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343631"
 ---
 # <a name="create-transfer-orders-from-the-warehouse-app"></a>Opprette overføringsordrer fra lagerappen
 
@@ -95,7 +95,7 @@ I tillegg til å konfigurere Opprett overføringsordre i menyelementene for mobi
 
 Du er forhandler og har flere nummerskilt som hver inneholder en blanding av varer på en bestemt lokasjon i ett av lagrene (*lager 51*). Du vil aktivere prosessen som gjør at arbeidere kan opprette en overføringsordre til et annet lager (*lager 61*) for en samling av skannede nummerskilt. Du vil automatisk oppdatere overføringsordren så snart det siste nummerskiltet for ordren er identifisert.
 
-![Eksempel på prosess for automatisk overføring av ordre](media/create-transfer-order-from-app-example.png "Eksempel på prosess for automatisk overføring av ordre")
+![Eksempel på prosess for automatisk overføring av ordre.](media/create-transfer-order-from-app-example.png "Eksempel på prosess for automatisk overføring av ordre")
 
 ### <a name="create-a-mobile-device-menu-item-for-creating-transfer-orders"></a>Opprette et menyelement for mobilenhet for å opprette overføringsordrer
 

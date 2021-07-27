@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: a138fd4b525077f12f6575f4b10f682728b71203
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6b89c3feb9287b6f445b1dff7252899532df8819
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838725"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361228"
 ---
 # <a name="create-er-configurations-in-regulatory-configuration-services-rcs-and-upload-them-to-the-global-repository"></a>Opprette ER-konfigurasjoner i Regulatory Configuration Services (RCS) og laste dem opp til det globale repositoriet
 
@@ -51,7 +51,7 @@ Hvis et RCS-miljø allerede er klargjort for ditt firma, bruker du URL-adressen 
 5. Angi et navn og en beskrivelse, og velg deretter **Opprett konfigurasjon** for å opprette en ny avledet versjon.
 6. Velg den nylig avledede konfigurasjonen, legg til en beskrivelse av versjonen, og velg deretter **OK**. Statusen for konfigurasjonen til er endret til **Fullført**.
 
-![Ny konfigurasjonsversjon i RCS](media/RCS_CompleteConfig.JPG)
+![Ny konfigurasjonsversjon i RCS.](media/RCS_CompleteConfig.JPG)
 
 > [!NOTE]
 > Når konfigurasjonsstatusen endres, kan du få en valideringsfeilmelding som er knyttet til de tilkoblede appene. Hvis du vil deaktivere valideringen, velger du **Brukerparametere** i kategorien **Konfigurasjoner**, og deretter setter du alternativet **Hopp over validering ved konfigurasjonens statusendring og rebasering** til **Ja** 
@@ -63,7 +63,7 @@ Hvis du vil dele en ny eller avledet konfigurasjon med organisasjonen, kan du la
 1. Velg den fullførte versjonen av konfigurasjonen, og velg deretter **Last opp til repositorium**.
 2. Velg alternativet **Globalt (Microsoft)**, og velg deretter **Last opp**.
 
-    ![Laste opp til alternativer for repositorium](media/RCS_Upload_to_GlobalRepo_options.JPG)
+    ![Laste opp til alternativer for repositorium.](media/RCS_Upload_to_GlobalRepo_options.JPG)
 
 3. Velg **Ja** i bekreftelsesboksen. 
 4. Oppdater beskrivelsen av versjonen etter behov, og velg deretter **OK**. 
@@ -73,7 +73,7 @@ Statusen for konfigurasjonen oppdateres til **Dele**, og konfigurasjonen lastes 
 - Importere den til Dynamics 365-forekomsten. Hvis du vil ha mer informasjon, kan du se [(ER) Importere konfigurasjoner fra RCS](../../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md).
 - Hvis du vil dele den med en tredjepart eller en ekstern organisasjon, kan du se [RCS Dele konfigurasjoner for elektronisk rapportering (ER) med eksterne organisasjoner](rcs-global-repo-share-configuration.md)
 
-    ![Avledet versjon av Intrastat Contoso-konfigurasjon i det globale repositoriet](media/RCS_Config_upload_GlobalRepo.JPG)
+    ![Avledet versjon av Intrastat Contoso-konfigurasjon i det globale repositoriet.](media/RCS_Config_upload_GlobalRepo.JPG)
 
 ## <a name="delete-a-configuration-from-the-global-repository"></a>Slette en konfigurasjon fra det globale repositoriet
 Fullfør fremgangsmåten nedenfor for å slette en konfigurasjon som organisasjonen har opprettet.
@@ -84,11 +84,11 @@ Fullfør fremgangsmåten nedenfor for å slette en konfigurasjon som organisasjo
 4. I hurtigfanen **Filter** finner du konfigurasjonen du vil slette, ved hjelp av **Filter**-funksjonaliteten.
 5. I hurtigfanen **Versjon** velger du versjonen av konfigurasjonen du vil slette, og deretter velger du **Slett**:
 
-    ![Slette en konfigurasjon fra det globale repositoriet](media/RCS_Delete_from_GlobalRepo.JPG)
+    ![Slette en konfigurasjon fra det globale repositoriet.](media/RCS_Delete_from_GlobalRepo.JPG)
 
 6. Velg **Ja** i bekreftelsesboksen.
 
-    ![Slette bekreftelsesmelding for konfigurasjonsversjon](media/RCS_Delete_from_GlobalRepo_Msg.JPG)
+    ![Slette bekreftelsesmelding for konfigurasjonsversjon.](media/RCS_Delete_from_GlobalRepo_Msg.JPG)
  
 Konfigurasjonsversjonen blir slettet, og bekreftelsesmeldingen vises. 
 

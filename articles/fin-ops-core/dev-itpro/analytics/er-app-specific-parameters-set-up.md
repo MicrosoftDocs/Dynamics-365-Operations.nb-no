@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 4003208a1f02db134bbec1ecf90c1cdd2973e67f
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 9276a633d560bc95c868b9c12438b4f625ed169a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5751160"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351896"
 ---
 # <a name="set-up-the-parameters-of-an-er-format-per-legal-entity"></a>Definere parameterne for et ER-format per juridisk enhet
 
@@ -49,7 +49,7 @@ Hvis du vil fullføre eksemplene i dette emnet, må du ha tilgang til Microsoft 
     
     Følgende illustrasjon viser konfigurasjonene du trenger når du er ferdig.
 
-    ![Siden ER-konfigurasjoner](./media/GER-AppSpecParms-ImportedConfigurations.PNG)
+    ![Siden ER-konfigurasjoner.](./media/GER-AppSpecParms-ImportedConfigurations.PNG)
 
 ## <a name="set-up-parameters-for-the-demf-company"></a>Definer parametere for DEMF-selskapet
 
@@ -59,7 +59,7 @@ Du kan bruke ER-rammeverket til å definere programspesifikke parametere for et 
 2.  I konfigurasjonstreet velger du formatet **Format for å lære hvordan du slår opp LE-data**.
 3.  På Handling-panelet, i kategorien **Konfigurasjoner**, i gruppen **Programspesifikke parametere**, velg **Oppsett**.
 
-    ![Siden ER-programspesifikke parametere](./media/GER-AppSpecParms-LookupForm.PNG)
+    ![Siden ER-programspesifikke parametere.](./media/GER-AppSpecParms-LookupForm.PNG)
     
     På siden **Programspesifikke parametere** kan du konfigurere reglene for **Velger**-datakilden for **Format for å lære hvordan du slår opp LE-data**.
     
@@ -75,14 +75,14 @@ Du kan bruke ER-rammeverket til å definere programspesifikke parametere for et 
 
     Oppslaget viser listen over avgiftskoder for valg. Denne listen er returnert av **Model.Data.Tax**-datakilden som er konfigurert i det grunnleggende ER-formatet. Siden denne datakilden inneholder **navn** -feltet, vises navnet på hver avgiftskode i oppslaget.
 
-    ![Siden ER-programspesifikke parametere](./media/GER-AppSpecParms-LookupForm-CodeFldPicker.PNG)
+    ![Siden ER-programspesifikke parametere.](./media/GER-AppSpecParms-LookupForm-CodeFldPicker.PNG)
     
 7.  Velg mva-koden **VAT19**.
 8.  Klikk på rullegardinpilen i **Oppslagsresultat**-feltet for den nye posten for å åpne oppslaget. Oppslaget presenterer listen med verdier for formatopplistingen for TaxationLevel for utvalg.
 
     Legg merke til at hvis tysk er valgt som foretrukket språk for brukeren du er logget på som, vil etikettene for verdiene i oppslaget være på tysk, forutsatt at de er oversatt i grunnleggende ER-format. Hvis etiketten til en oppslagsdatakilde for eksempel er oversatt, vil denne etiketten vises på brukerens foretrukne språk i **Oppslag**-kategorien.
 
-    ![Siden ER-programspesifikke parametere](./media/GER-AppSpecParms-LookupForm-LookupFldPicker.PNG)
+    ![Siden ER-programspesifikke parametere.](./media/GER-AppSpecParms-LookupForm-LookupFldPicker.PNG)
 
 9.  Velg **Vanlig avgift**-verdien.
 
@@ -120,7 +120,7 @@ Du kan bruke ER-rammeverket til å definere programspesifikke parametere for et 
     
     Ved å legge til den siste posten definerer du følgnde regel: Her gang avgiftskoden som sendes som et argument, ikke oppfyller noen av de tidligere reglene, returnerer oppslagsdatakilden **Annet** som forespurt avgiftsnivå.
 
-    ![Siden ER-programspesifikke parametere](./media/GER-AppSpecParms-LookupForm-RulesSet.PNG)
+    ![Siden ER-programspesifikke parametere.](./media/GER-AppSpecParms-LookupForm-RulesSet.PNG)
     
 16. Velg **Fullført** i **Status**-feltet.
 
@@ -144,7 +144,7 @@ Du kan bruke ER-rammeverket til å definere programspesifikke parametere for et 
 6.  Velg mva-koden **InVAT7**.
 7.  I handlingsruten i kategorien **Mva-kode** i **Forespørsler**-gruppen velger du **Postert merverdiavgift** for å vise informasjon om avgiftsverdien og brukt avgiftssats per avgiftskode.
 
-    ![Siden Postert merverdiavgift](./media/GER-AppSpecParms-Statement.PNG)
+    ![Siden Postert merverdiavgift.](./media/GER-AppSpecParms-Statement.PNG)
 
 8.  Lukk siden Postert merverdiavgift.
 
@@ -160,7 +160,7 @@ Du kan bruke ER-rammeverket til å definere programspesifikke parametere for et 
 
     Oppslaget viser nå en liste over mva-koder for **USMF** selskapsavgiften for valg.
 
-    ![Siden ER-programspesifikke parametere](./media/GER-AppSpecParms-LookupForm-CodeFldPicker2.PNG)
+    ![Siden ER-programspesifikke parametere.](./media/GER-AppSpecParms-LookupForm-CodeFldPicker2.PNG)
     
 8.  Velg mva-koden **EXEMPT**.
 9.  Velg **Ingen avgift**-verdien i **Oppslagsresultat**-feltet for den nye posten.
@@ -170,7 +170,7 @@ Du kan bruke ER-rammeverket til å definere programspesifikke parametere for et 
 13. Velg **Fullført** i **Status**-feltet.
 14. Velg **Lagre**.
 
-    ![Siden ER-programspesifikke parametere](./media/GER-AppSpecParms-LookupForm-RulesSet2.PNG)
+    ![Siden ER-programspesifikke parametere.](./media/GER-AppSpecParms-LookupForm-RulesSet2.PNG)
     
 15. Lukk siden **Programspesifikke parametere**.
 
@@ -225,13 +225,13 @@ I det forrige eksemplet har du fått tilgang til programspesifikke parametere i 
 
 1.  Bruk et eksisterende **ERSolutionAppSpecificParametersDesigner**-menyelement, eller implementer ditt eget **ERSolutionAppSpecificParametersDesigner**-menyelement.
 
-    ![Visual studio-side](./media/GER-AppSpecParms-LookupForm-Access1.PNG)
+    ![Visual studio-side.](./media/GER-AppSpecParms-LookupForm-Access1.PNG)
     
 2.  Følg ett av disse trinnene:
 
     1.  Opprett en ny menyelementknapp, og koble den til den tilsvarende posten fra **ERSolutionTable**-tabellen ved å sette **Datakilde**-egenskapen til **ERSolutionTable**.
     
-        ![Visual studio-side](./media/GER-AppSpecParms-LookupForm-Access2.PNG)
+        ![Visual studio-side.](./media/GER-AppSpecParms-LookupForm-Access2.PNG)
         
     2.  Opprett en enkel knapp, og overstyr **Klikket**-metoden, som vist i følgende eksempel.
     

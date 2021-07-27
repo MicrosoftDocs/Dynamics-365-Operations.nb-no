@@ -9,12 +9,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 90ddbe704ab21d62752b581a813601e8986c2103
-ms.sourcegitcommit: 180548e3c10459776cf199989d3753e0c1555912
+ms.openlocfilehash: 6662b6cad53c832e15fb27b435e277840afd8097
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6112679"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346552"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Oppgrader til parten og den globale adressebokmodellen
 
@@ -89,7 +89,7 @@ Følgende aktiviteter er nødvendige for å forberede for oppgraderingen:
 
 10. Etter distribusjonen validerer du datasettene, dataflyten og den tilkoblede tjenesten til datafabrikken.
 
-   ![Datasett, dataflyt og tilknyttet tjeneste](media/data-factory-validate.png)
+   ![Datasett, dataflyt og tilknyttet tjeneste.](media/data-factory-validate.png)
 
 11. Naviger til **Administrer**. Under **Tilkoblinger** velger du **Tilknyttet tjeneste**. Velg **DynamicsCrmLinkedService**. I skjemaet **Rediger tilknyttet tjeneste (Dynamics CRM)** angir du følgende verdier.
 
@@ -154,7 +154,7 @@ Følgende aktiviteter er nødvendige for å forberede for oppgraderingen:
 
 7. I datafabrikken kjører du malen ved å velge **Utløs nå**, som vist på følgende bilde. Det kan ta noen timer å fullføre denne prosessen basert på datavolumet.
 
-    ![Utløserkjøring](media/data-factory-trigger.png)
+    ![Utløserkjøring.](media/data-factory-trigger.png)
 
     > [!NOTE]
     > Hvis du har tilpasninger for **Konto**, **Kontakt** og **Leverandør**, må du endre malen.
@@ -164,7 +164,7 @@ Følgende aktiviteter er nødvendige for å forberede for oppgraderingen:
     + Last ned `FONewParty.csv`-filen fra Azure Blob Storage. Banen er `partybootstrapping/output/FONewParty.csv`.
     + Konverter `FONewParty.csv`-filen til en Excel-fil, og importer Excel-filen til Finance and Operations-appen. Hvis CSV-import fungerer for deg, kan du importere CSV-filen direkte. Importen kan ta noen timer å kjøre, avhengig av datavolumet. Hvis du vil ha mer informasjon, se [Oversikt over dataimport- og -eksportjobber](../data-import-export-job.md).
 
-    ![Importer Datavers-partsoppføringene](media/data-factory-import-party.png)
+    ![Importer Datavers-partsoppføringene.](media/data-factory-import-party.png)
 
 9. I Customer Engagement-appen aktiverer du følgende trinn for plugin-moduler:
 
@@ -199,7 +199,7 @@ Følgende aktiviteter er nødvendige for å forberede for oppgraderingen:
 3. Datafabrikken kjøres basert på csv-filer som er kommadelt. Hvis det er en feltverdi som har komma, kan det påvirke resultatene. Du må fjerne kommaene.
 4. Kategorien **Overvåking** inneholder informasjon om alle trinn og data som behandles. Velg et bestemt trinn for å feilsøke det.
 
-    ![Kategorien Overvåking](media/data-factory-monitor.png)
+    ![Kategorien Overvåking.](media/data-factory-monitor.png)
 
 ## <a name="learn-more-about-the-template"></a>Finn ut mer om malen
 

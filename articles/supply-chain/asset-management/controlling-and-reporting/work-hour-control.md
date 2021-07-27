@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9ac64b0e40662f30cc615dfbd3f05aba5b37d862
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 88ae7faabe7af25f6e3b95c7217d91e440c94da2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838664"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346208"
 ---
 # <a name="work-hour-control"></a>Arbeidstidskontroll
 
@@ -66,7 +66,7 @@ Skjermbildet nedenfor viser et eksempel på beregning av **timekontroll for akti
 - Feltet **Faktiske timer** viser posterte timer på arbeidsordrer. 
 - Feltet **Igangsatte timer** viser totalt antall timer som firmaet har forpliktet seg til i forhold til arbeidsordrer.
 
-![Eksempel på beregning av timekontroll for aktivum](media/04-controlling-and-reporting.png)
+![Eksempel på beregning av timekontroll for aktivum.](media/04-controlling-and-reporting.png)
 
 En annen måte å gjøre en timeberegning på er å velge flere aktiva i **Alle aktiva** eller **Aktive aktiva**. Deretter klikker du på knappen **Timekontroll** i hurtigfanen **Generelt**. De valgte anleggsmidlene settes automatisk inn i **Aktivum**-feltet i hurtigfanen **Poster som skal inkluderes**. Klikk på **OK** i dialogboksen **Timekontroll for aktivum**, og beregningen for de valgte anleggsmidlene vises. Den samme fremgangsmåten kan brukes for arbeidssteder i **Alle arbeidssteder** eller **Aktive arbeidssteder**, og for arbeidsordrer i **Alle arbeidsordrer** eller **Aktive arbeidsordrer**.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1e626daa89eecf838d7cda0663d00c1c2dbecb76
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fa61f9ab9d38a748742733a4143e6d50b82caf4c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816755"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351591"
 ---
 # <a name="functional-locations-and-assets"></a>Arbeidssteder og aktiva
 
@@ -34,13 +34,13 @@ Dette emnet beskriver arbeidssteder og aktiva i Aktivastyring. Aktivastyring er 
 
 Aktivastyring er integrert sømløst med flere moduler i andre Finance and Operations-apper. Illustrasjonen nedenfor viser grensesnittene med andre moduler.
 
-![Diagram som viser hvordan Aktivastyring har grensesnitt til andre moduler](media/01-overview-image.png)
+![Diagram som viser hvordan Aktivastyring har grensesnitt til andre moduler.](media/01-overview-image.png)
 
 Med Aktivastyring kan du effektivt administrere og utføre alle oppgaver som er knyttet til administrasjon og vedlikehold av mange typer utstyr i firmaet. Dette utstyret omfatter maskiner, produksjonsutstyr og kjøretøyer. Aktivastyring støtter også løsninger på tvers av en rekke bransjer.
 
 Illustrasjonen nedenfor viser en oversikt over de viktigste funksjonene som dekkes av Aktivastyring.
 
-![Diagram som viser hovedfunksjonaliteten i Aktivastyring](media/02-overview-image.png)
+![Diagram som viser hovedfunksjonaliteten i Aktivastyring.](media/02-overview-image.png)
 
 ## <a name="functional-locations-and-assets"></a>Arbeidssteder og aktiva
 
@@ -50,11 +50,11 @@ Aktivakostnader følger alltid plasseringen av aktivumet. Med andre ord, hvis du
 
 Måten du bygger hierarkiet av arbeidssteder på, avhenger av firmaets krav for å opprettholde internt utstyr eller betjene kundeutstyr. Den følgende illustrasjonen viser et eksempel på arbeidssteder som er basert på geografiske lokasjoner.
 
-![Diagram som viser arbeidssteder basert på geografiske steder](media/03-overview-image.png)
+![Diagram som viser arbeidssteder basert på geografiske steder.](media/03-overview-image.png)
 
 Den følgende illustrasjonen viser et eksempel på arbeidssteder som er basert på kunder.
 
-![Diagram som viser arbeidssteder basert på kunder](media/04-overview-image.png)
+![Diagram som viser arbeidssteder basert på kunder.](media/04-overview-image.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

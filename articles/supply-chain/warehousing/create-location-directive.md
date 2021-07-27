@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: f46d55bf7a670e983fb65a9ca303bc02568247ed
-ms.sourcegitcommit: bef7bd2aac00d7eb837fd275d383b7a5c3f1c1ee
+ms.openlocfilehash: a896953a5603d9766f2c4938158088fc9424d5bf
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "5911302"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343754"
 ---
 # <a name="work-with-location-directives"></a>Arbeide med lokasjonsdirektiver
 
@@ -51,7 +51,7 @@ Før du kan opprette et lokasjonsdirektiv, må du følge denne fremgangsmåten f
 
 Mange av feltene som kan angis for lokasjonsdirektiver, er felles for alle arbeidsordretyper. Andre felter er imidlertid spesifikke for bestemte arbeidsordretyper.
 
-![Arbeidsordretyper for lokasjonsdirektiver](media/Location_Directives_Work_Order_Types.png "Arbeidsordretyper for lokasjonsdirektiver")
+![Arbeidsordretyper for lokasjonsdirektiver.](media/Location_Directives_Work_Order_Types.png "Arbeidsordretyper for lokasjonsdirektiver")
 
 > [!NOTE]
 > To arbeidsordretyper, *Annullert arbeid* og *Syklustelling*, brukes bare av systemet. Lokasjonsdirektiver kan ikke opprettes for disse arbeidsordretypene.
