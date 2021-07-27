@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c4003bd78e400994f3c164d2f7e8e3aa5ce93146
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 76b8111ddc9e634ce689999da7b8621f550afc5b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5802075"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349582"
 ---
 # <a name="define-channel-specific-discounts"></a>Definere kanalspesifikke rabatter
 
@@ -37,7 +37,7 @@ Handel bruker prisgrupper til å definere kanalspesifikke rabatter. Prisgrupper 
 
 ## <a name="price-groups"></a>Prisgrupper
 
-[![Prisgrupper](./media/price-groups-1024x608.png)](./media/price-groups.png)
+[![Prisgrupper.](./media/price-groups-1024x608.png)](./media/price-groups.png)
 
 Diagrammet over illustrerer relasjonen mellom enheter som kan være på en transaksjon (kanal, katalog, tilknytning, kunde, fordelskort) og de ulike typene rabatter som kan konfigureres. Alle transaksjoner skjer i en kanal, slik at kanalen er garantert å finnes på en transaksjon. De gjenværende enhetene er valgfrie. Det er en kobling til en relatert prisgruppe på hver hoveddataside der du kan vise og legge til prisgrupper etter behov. En prisgruppe brukes til å relatere fire forskjellige typer enheter til rabatter, prisjusteringer og forretningsavtaler. Vi anbefaler at du planlegger en strategi for hvordan du navngir prisgrupper for å holde orden på dem. Ett alternativ er å bruke en bokstav eller tallprefiks eller suffiks til å skille mellom de ulike typene. For eksempel 1-xxxxx for kanalprisgrupper og 2-xxxxx i katalogprisgrupper. Det er fire forespørselssider som fokuserer på hver handelsenhet som kan ha rabatter som er knyttet til dem.
 

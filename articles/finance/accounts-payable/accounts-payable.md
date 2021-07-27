@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: VendInvoiceWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 21901
+ms.custom:
+- "21901"
+- intro-internal
 ms.assetid: 1e4c2ac4-077b-4678-8733-5cec8f6ff659
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 62e075fc26ee2e183cd859c5ec2c90faa3bfe3ab
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: e284e84c5f049c912d54d2c5ae72a622f5cfdbbd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897016"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344836"
 ---
 # <a name="accounts-payable-home-page"></a>Startside for leverandører
 
@@ -28,13 +30,13 @@ ms.locfileid: "5897016"
 
 Dette emnet gir en oversikt over leverandører. 
 
-Du kan registrere leverandørfakturaer manuelt eller motta dem elektronisk via en dataenhet. Når fakturaene er registrert eller mottatt, kan du se gjennom og godkjenne fakturaene ved hjelp av en fakturagodkjenningsjournal eller siden **Leverandørfaktura**. Du kan bruke fakturasamsvar, leverandørfakturapolicyer og arbeidsflyt til å automatisere kontrollprosessen slik at fakturaer som oppfyller bestemte kriterier, godkjennes automatisk, og de gjenværende fakturaene flagges for gjennomgang av en autorisert bruker.
+Du kan registrere leverandørfakturaer manuelt eller motta dem elektronisk via en dataenhet. Når fakturaene er registrert eller mottatt, kan du se gjennom og godkjenne fakturaene ved hjelp av en fakturagodkjenningsjournal eller siden **Leverandørfaktura**. Du kan bruke fakturakontroll, leverandørfakturapolicyer og arbeidsflyt til å automatisere kontrollprosessen slik at fakturaer som oppfyller bestemte kriterier, godkjennes automatisk, og de gjenværende fakturaene flagges for gjennomgang av en autorisert bruker.
 
 **Forretningsprosesser**
 
-[![Diagram med forretningsprosesser](./media/AP-process.PNG)](./media/AP-process.PNG)
+[![Diagram med forretningsprosesser.](./media/AP-process.PNG)](./media/AP-process.PNG)
 
-## <a name="set-up-accounts-payable"></a>Definere Leverandør
+## <a name="set-up-accounts-payable"></a>Definer leverandør
 
 Definer leverandørgrupper, leverandører, posteringsprofiler, ulike betalingsalternativer og parametere i forbindelse med leverandører, tillegg, leveranser og mål, egenveksler, og annen type informasjon om leverandører. 
 
@@ -118,7 +120,7 @@ Emnene nedenfor gir informasjon om utligninger. Utligning er prosessen med å ut
 
 ### <a name="additional-resources"></a>Tilleggsressurser
 
-#### <a name="whats-new-and-in-development"></a>Hva er nytt og hva er under utvikling?
+#### <a name="whats-new-and-in-development"></a>Nyheter og under utvikling
 
 Gå til [Lanseringsplaner for Microsoft Dynamics 365](/dynamics365/release-plans/) for å se hvilke nye funksjoner som er planlagt. 
 

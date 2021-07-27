@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 1392b767815722c17b1cc72d27fe2bb8a7c32281
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: d562f97ecc3c442be4231470167a0aae86f84fe5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796372"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345166"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Produkt- og kundesøk på salgssted
 
@@ -36,7 +36,7 @@ Som standard gjøres produktsøk i butikkens sortiment. Denne typen søk er ogs�
 
 På siden **Endre katalog** kan ansatte enkelt søke en hvilken som helst butikk, eller de kan søke etter produkter på tvers av alle butikker.
 
-![Endre katalogen](./media/Changecatalog.png "Endre katalogen")
+![Endre katalogen.](./media/Changecatalog.png "Endre katalogen")
 
 Et lokalt produktsøk søker i følgende produktegenskaper:
 
@@ -59,7 +59,7 @@ Et lokalt produktsøk søker i følgende produktegenskaper:
 - Forhandlere kan konfigurere produktsøk for å vise søkeforslag når brukere skriver inn produktnavn. En ny innstilling for denne funksjonaliteten er tilgjengelig i POS-funksjonalitetsprofilen, i en gruppe som heter **Produktsøk**. Innstillingen heter **Vis søkeforslag under skriving**. Denne funksjonaliteten kan hjelpe ansatte å raskt å finne produktet de søker etter, fordi de ikke trenger å skrive hele navnet manuelt.
 - Produktsøkalgoritmen søker nå også etter de søkevilkårene i **Søkenavn**-egenskapen for produktet.
 
-![Produktforslag](./media/Productsuggestions.png "Produktforslag")
+![Produktforslag.](./media/Productsuggestions.png "Produktforslag")
 
 ## <a name="customer-search"></a>Kundesøk
 
@@ -83,7 +83,7 @@ For å søke globalt, kan medarbeidere velge knappen **Filterresultater** neders
 
 Kunde-ID-en vises ikke for kunder som ble spurt fra andre juridiske enheter, fordi det ikke er opprettet noen kunde-ID for disse partene i det nåværende selskapet. Men hvis en medarbeider åpner kundedetaljersiden, genererer systemet automatisk en kunde-ID for denne parten, og forbinder også butikkens kundeadressebøker med kunden. Derfor vil kunden være synlig i lokale butiksøk som gjøres senere.
 
-![Globalt kundesøk](./media/Globalcustomersearch.png "Globalt kundesøk")
+![Globalt kundesøk.](./media/Globalcustomersearch.png "Globalt kundesøk")
 
 ### <a name="additional-local-customer-search-capabilities"></a>Flere funksjoner for lokalt kundesøk
 
@@ -94,11 +94,11 @@ Når brukeren søker etter et telefonnummer, ignorerer systemet spesialtegn (for
 
 Det vanlige kundesøket kan være tidkrevende fordi det søker i flere felt. I stedet kan kasserere søke i en enkelt kundeegenskap, for eksempel navn, e-postadresse eller telefonnummer. Egenskapene som kundesøkealgoritmen bruker, kalles *kundesøkekriterier*. Systemadministratoren kan lett konfigurere ett eller flere kriterier som snarveier som vises i POS. Ettersom søket er begrenset til ett kriterium, vises bare de relevante søkeresultatene, og ytelsen er mye bedre ut enn ytelsen til et standard kundesøk. Illustrasjonen nedenfor viser kundesøksnarveiene i POS.
 
-![Snarveier for kundesøk](./media/SearchShortcutsPOS.png "Snarveier for kundesøk")
+![Snarveier for kundesøk.](./media/SearchShortcutsPOS.png "Snarveier for kundesøk")
 
 Når du skal angi søkekriterier som snarveier, må administratoren åpne **Handelsparametre**-siden i Commerce, og deretter i **POS-søkekriterier**-kategorien velge alle kriteriene som skal vises som snarveier.
 
-![Konfigurere søkesnarveier](./media/ConfigureShortcutsAX.png "Konfigurere søkesnarveier")
+![Konfigurere søkesnarveier.](./media/ConfigureShortcutsAX.png "Konfigurere søkesnarveier")
 
 > [!NOTE]
 > Hvis du legger til for mange snarveier, vil rullegardinmenyen i søkefeltet i POS bli uoversiktlig, og den ansattes søkeopplevelse kan bli påvirket. Vi anbefaler at du bare legger til så mange snarveier som du trenger.

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rubendel
 ms.search.validFrom: 2020-04-20
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 56319035ac092a376f0766c20eee71af6256b6f9
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 5f96302735e8aa1acf5c81992cb4cb49ff4a03ce
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936917"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352500"
 ---
 # <a name="configure-bopis-in-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurere BOPIS i et evalueringsmiljø for Dynamics 365 Commerce
 
@@ -54,7 +54,7 @@ BOPIS -scenarier som involverer en kredittkortbetaling, krever en maskinvarestas
 4. Velg **Last ned**, og velg deretter **Retail Modern POS**. 
 5. Når nedlastingen av **ModernPOSSetup.exe**-filen er fullført, velger du **Åpne fil**.
 
-    ![Åpne fil](./dev-itpro/media/PAYMENTS/openfile.png)
+    ![Åpne fil.](./dev-itpro/media/PAYMENTS/openfile.png)
 
 6. Velg **Neste** for å gå gjennom installasjonsprosessen. Når installasjonen er fullført, velger du **Lukk**.
 

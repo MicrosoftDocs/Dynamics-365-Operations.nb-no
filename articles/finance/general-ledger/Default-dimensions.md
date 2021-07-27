@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 46e8fba0c1269aa8b81e0df8d415fe11b2307924
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 3b042374179de7aa5bbff73719cbe8546920132e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897314"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360694"
 ---
 # <a name="financial-dimensions-and-posting"></a>Finansdimensjoner og postering 
 
@@ -71,29 +71,29 @@ Folk har ofte spørsmål om rekkefølgen de forskjellige komponentene kjører i.
 
 Illustrasjonen nedenfor viser den faste standarddimensjonen som er angitt for hovedkontoen 401100.
 
-[![Standard finansdimensjoner](./media/default-dimensions.png)](./media/default-dimensions.png)
+[![Standard finansdimensjoner.](./media/default-dimensions.png)](./media/default-dimensions.png)
 
 I dette svært enkle eksemplet skal vi registrere en økonomijournal der avdelingsdimensjonen er satt til å bruke standardverdien **023** (Operasjoner). Vi vil registrere og postere en finanskonto. Illustrasjonen nedenfor viser standard finansdimensjonen i økonomimodulhodet.
 
-[![Økonomijournaler](./media/general-journal.png)](./media/general-journal.png)
+[![Økonomijournaler.](./media/general-journal.png)](./media/general-journal.png)
 
 Standarddimensjonen i journalhodet fører til at avdeling 023 brukes som standard på salgskontolinjen. Illustrasjonen nedenfor viser den økonomijournallinjen, der standarddimensjonsverdien **023** fra hodet brukes.
 
-[![Journalbilag](./media/journal-voucher.png)](./media/journal-voucher.png)
+[![Journalbilag.](./media/journal-voucher.png)](./media/journal-voucher.png)
 
 Når linjen posteres, brukes imidlertid den faste dimensjonen, og linjen posteres til avdeling 022. Illustrasjonen nedenfor viser det posterte bilaget, der den faste dimensjonen brukes for salgskontoen.
 
-[![Bilagstransaksjoner med fast dimensjon brukt](./media/voucher-transactions.png)](./media/voucher-transactions.png)
+[![Bilagstransaksjoner med fast dimensjon brukt.](./media/voucher-transactions.png)](./media/voucher-transactions.png)
 
 ### <a name="example-2"></a>Eksempel 2
 
 Dette eksemplet bruker samme oppsett som det første eksemplet. Vi vil imidlertid legge til en annen komponent og bruke avdelingsdimensjonen som balansedimensjon. I illustrasjonen nedenfor er **Avdeling** angitt som den balanserende finansdimensjonen for USMF-finans.
 
-[![Illustrasjon som viser Avdeling som balanserende finansdimensjon](./media/ledger.png)](./media/ledger.png)
+[![Illustrasjon som viser Avdeling som balanserende finansdimensjon.](./media/ledger.png)](./media/ledger.png)
 
 Når det samme journalhodeoppsettet brukes, og den samme transaksjonen posteres, brukes den faste dimensjonen først. Balanseringslogikken brukes deretter for å garantere at hver avdeling har en balansert oppføring. Illustrasjonen nedenfor viser bilagstransaksjonene som inkluderer balanseoppføringen etter at den faste dimensjonen er brukt.
 
-[![Bilagstransaksjoner etter at balanseringsoppføringen er brukt](./media/voucher-transactions2.png)](./media/voucher-transactions2.png)
+[![Bilagstransaksjoner etter at balanseringsoppføringen er brukt.](./media/voucher-transactions2.png)](./media/voucher-transactions2.png)
 
 ### <a name="example-3"></a>Eksempel 3
 
@@ -101,11 +101,11 @@ I dette eksemplet skal vi legge til en avansert regel. Den avanserte regelen ang
 
 Dette eksemplet er viktig på grunn av rekkefølgen. Kontostrukturen bestemmes når hovedkontoen er angitt. Hvis du refererer til kontostrukturoppsettet, kan systemet fastslå at hovedkontoen, forretningsenheten, avdelingen og kostsenteret er relevante. Den avanserte regelen er ennå ikke utløst fordi faste dimensjoner ikke brukes før standarddimensjoner er brukt for journalbilaget under postering. I illustrasjonen nedenfor vies ikke kundesegmentet fordi kriteriene for den avanserte regelen ikke er oppfylt.
 
-[![Finanskonto](./media/drop-down.png)](./media/drop-down.png)
+[![Finanskonto.](./media/drop-down.png)](./media/drop-down.png)
 
 Posteringen vil ikke lykkes fordi den faste dimensjonen ble brukt på slutten av prosessen. Dimensjonsvalidering bestemmer at kundesegmentet er nødvendig hvis hovedkontoen er 401100 og avdelingen 022. Postering kan ikke skje på grunn av valideringsfeilen. Illustrasjonen nedenfor viser meldingen som vises når dimensjonsvalidering angir at kunde er et nødvendig segment.
 
-[![Meldingsdetaljer](./media/message.png)](./media/message.png)
+[![Meldingsdetaljer.](./media/message.png)](./media/message.png)
 
 I dette eksemplet må du overskrive standardverdien slik at den avanserte regelen utløses og du kan angi kundesegmentet. Denne løsningen er imidlertid ikke alltid mulig, og noen brukere er ikke en gang klar over posteringsreglene. Det er derfor viktig at du forstår rekkefølgen som standarddimensjoner brukes i når du setter opp kontoplanen.
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 982d835c6c0d9bf6e19aa0ec1b03bce9aa7d2e5d
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 90622bb8fb6452e4b4002fa5aab491112e98d923
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193756"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345818"
 ---
 # <a name="financial-analysis"></a>Økonomisk analyse
 
@@ -60,7 +60,7 @@ For å vises i regnskapsoppgjørene og inkluderes i forskjellige andre visuelle 
 ## <a name="entity-store"></a>Enhetslager
 Dataene for **Økonomisk analyse** hentes fra enhetslageret (**Systemadministrasjon** \> **Oppsett** \> **Enhetslager**). Hvis du åpner **CFO-oversikt**- eller **Økonomisk analyse**-arbeidsområdet, og følgende advarsel vises i de visuelle effektene, må du oppdatere enhetene.
 
-![Advarsel!](./media/Cantdisplay.png)
+![Advarsel.](./media/Cantdisplay.png)
 
 Du må oppdatere følgende enheter for å vise data i arbeidsområdet **Økonomisk analyse**:
 
@@ -124,7 +124,7 @@ Brukere kan filtrere rapporten ved hjelp av **Filter**-ruten til venstre. Dette 
 - **Visuellnivåfiltre** – Disse filtrene brukes bare på den valgte visuelle effekten. Disse filtrene brukes på toppen av sidenivåfiltrene.
 - **Gjennomgangsfilter** – Dette filteret filtrerer fra en visuell kildeeffekt som brukes på den gjeldende visuelle effekten når du gjennomgår fra den visuelle kildeeffekten til den gjeldende visuelle effekten.
 
-![Filtreringsalternativer](./media/filter.png)
+![Filtreringsalternativer.](./media/filter.png)
 
 Hvis du vil fjerne en bestem filterverdi, velger du slettesymbolet ved siden av den. Ikke fjern et filter ved å velge X. Hvis du velger X, fjernes feltet du filtrerer på, som filteralternativ. Hvis du ved et uhell fjerner et felt fra filteret, lukk arbeidsområdet og åpne det deretter på nytt. Standardfilterinnstillingene blir brukt på nytt.
 
@@ -169,25 +169,25 @@ Ulike nivåer av drilling er tilgjengelig via Power BI. Hvert nivå har ulikt na
 
 I illustrasjonen nedenfor er **Råbalanse**-utdraget trukket sammen til det høyeste nivået i radhierarkiet, hovedkontotypen.
 
-![Råbalansesaldo](./media/trial-balance.png)
+![Råbalansesaldo.](./media/trial-balance.png)
 
 Hvis du vil vise det neste nivået i hierarkiet, hovedkontokategoriene, kan du sette **Drill på**-feltet til **Rader** og velge **Vis** (den tredje knappen etter Drill på-feltet). Du kan nå se alle hovedkontokategoriene. For øyeblikket lar ikke Power BI deg vise bare én rad eller kolonne, men samtidig kunne se alle de andre radene eller kolonnene.
 
-![Råbalanse-neddrilling for rader](./media/trial-balance2.png)
+![Råbalanse-neddrilling for rader.](./media/trial-balance2.png)
 
 Hvis du vil utvide hovedkontoene for alle radene, kan du igjen bruke **Vis**-knappen. Men for å drille ned til hovedkontoene for bare én rad, må du første velge **Drill ned**-knappen (den enkle pilen som peker nedover, til høyre i vinduet), og deretter velge raden for neddrilling. Illustrasjonen nedenfor viser resultatet når **Salg**-raden velges etter **Drill ned**-knappen er valgt.
 
-![Utvid-knapp for råbalanse](./media/trial-balance3.png)
+![Utvid-knapp for råbalanse.](./media/trial-balance3.png)
 
 Når du har drillet ned på en enkelt rad, kreves det flere klikk for å gå tilbake til den fullstendige råbalansen. **Drill opp**-knappen (den første knappen etter **Drill på**-feltet) driller bare opp i forbindelse med **Salg**-kategorien, som vist i illustrasjonen nedenfor.
 
-![Drill opp-knapp for råbalanse](./media/trial-balance4.png)
+![Drill opp-knapp for råbalanse.](./media/trial-balance4.png)
 
 Du kan fortsette å bruke **Drill opp**-knappen for å gå tilbake til det høyeste nivået i summeringen for radene.
 
 Power BII har også en knapp som gjør det mulig å gå til neste nivå i hierarkiet (den andre knappen etter **Drill på**-feltet). Effekten av denne knappen er forskjellig fra effekten av **Vis**-knappen (den tredje knappen etter **Drill på**-feltet), som brukes til å utvide hierarkiet. Når du utvider hierarkiet, beholdes hierarkiet i rapporten. Hvis du for eksempel som vist tidligere utvider på hovedkontotypen, ser du fortsatt hovedkontotypen i rapporten. Men når du går til neste nivå i hierarkiet, viser ikke lenger rapporten overordnet i hierarkiet, som vist i illustrasjonen nedenfor.
 
-![Drill tilbake-knapp for råbalanse](./media/trial-balance5.png)
+![Drill tilbake-knapp for råbalanse.](./media/trial-balance5.png)
 
 Hvis du vil vise transaksjonsinformasjonen bak de summerte saldoene, kan du velge noen beløp for å drille tilbake til Financial and Operations.
 
@@ -226,7 +226,7 @@ For øyeblikket støtter ikke regnskapsoppgjør organisasjonshierarkiene, som la
 ## <a name="data-limitations"></a>Databegrensninger
 Visuelle effekter for regnskapsoppgjøret har en grense for hvor mange rader som kan vises. Grensen er for øyeblikket satt til 30 000. Hvis du overskrider denne grensen, har den visuelle effekten et varselsymbol som varsler deg om dette.
 
-![Databegrensninger](./media/data-limit.png)
+![Databegrensninger.](./media/data-limit.png)
 
 Hvis maksimalt overskrides, blir totalsummene som vises i regnskapsoppgjøret feil fordi ikke alle radene ble lastet inn i den visuelle effekten.
 

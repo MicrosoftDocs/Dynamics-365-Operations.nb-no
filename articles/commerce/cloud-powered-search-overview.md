@@ -8,18 +8,18 @@ ms.prod: ''
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: b5182df9d45a3b5d2572a5b6b391c924ef23bf9a
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: b7e8a37e31201845b94547850b8979a103f0729e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800427"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352670"
 ---
 # <a name="cloud-powered-search-overview"></a>Oversikt over skybaserte søk
 
@@ -41,7 +41,7 @@ Søkerelevans og ytelse er nøkkelfaktorer i omnikanalopplevelsen, fordi produkt
 
 Illustrasjonen nedenfor viser et eksempel på vanlig bla- og søkefunksjonalitet.
 
-![Målside for søk](./media/SearchLanding.png)
+![Målside for søk.](./media/SearchLanding.png)
 
 ## <a name="faceted-navigation-and-choice-summary"></a>Filterbasert navigasjon og valgsammendrag 
 
@@ -51,7 +51,7 @@ Ved hjelp av filterbasert navigasjon kan du konfigurere ulike presiseringer for 
 
 Illustrasjonen nedenfor viser et eksempel på hvordan filterbasert navigasjon brukes i et søk.
 
-![Valgsammendrag](./media/ChoiceSummary.png)
+![Valgsammendrag.](./media/ChoiceSummary.png)
 
 ## <a name="immersive-autosuggest"></a>Dyptgående automatiske forslag
 
@@ -61,7 +61,7 @@ Dynamics 365 Commerce støtter også funksjonalitet for nøkkelordtreff i ulike 
 
 Illustrasjonen nedenfor viser et eksempel der det brukes dyptgående automatiske forslag.
 
-![dyptgående automatiske forslag](./media/ImmersiveAutoSuggestUX.png)
+![dyptgående automatiske forslag.](./media/ImmersiveAutoSuggestUX.png)
 
 ## <a name="sort"></a>Sorter
 
@@ -69,7 +69,7 @@ Bedre sortering i Dynamics 365 Commerce lar kundene sortere, søke etter og bla 
 
 >[!NOTE]
 >Disse skydrevne søkefunksjonene er tilgjengelige fra versjon 10.0.8. Kontroller at det under **Handelsparametere > Konfigurasjonsparametere** finnes en oppføring for ProductSearch. UseAzureSearch satt til true. 
-![Konfigurasjonsparametere for skydrevet søk](./media/CloudPoweredSearchConfigurationParameters.png)
+![Konfigurasjonsparametere for skydrevet søk.](./media/CloudPoweredSearchConfigurationParameters.png)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

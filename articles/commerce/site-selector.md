@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 6e8eefe7afe385ca77eca6027638ff938e1356e3
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: b69156ee79dbbe8cbb8f5eb5988a751f0488d8e5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791781"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357744"
 ---
 # <a name="site-selector-module"></a>Områdevelgermodul
 
@@ -37,7 +37,7 @@ Områdevelgermodulen må være konfigurert med listen over områder (markeder, r
 
 Illustrasjonen nedenfor viser et eksempel på en områdevelgermodul som vises i hodet på en områdeside.
 
-![Eksempel på en områdevelgermodul i toppteksten på en områdeside](./media/ecommerce-sitepicker.PNG)
+![Eksempel på en områdevelgermodul i toppteksten på en områdeside.](./media/ecommerce-sitepicker.PNG)
 
 ## <a name="site-selector-module-properties"></a>Egenskaper for områdevelgermodul
 

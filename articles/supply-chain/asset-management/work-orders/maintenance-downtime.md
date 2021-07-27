@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5c0c584ed53dc4ec8a761065838127dc67cbc41e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 09c20020e5e0b957785a88ad511cedfec50a5f29
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813731"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344622"
 ---
 # <a name="maintenance-downtime-for-work-orders"></a>Nedetid ved vedlikehold for arbeidsordrer
 
@@ -45,7 +45,7 @@ Du kan opprette registreringer av nedetid ved vedlikehold for aktivumet som er v
 
 Illustrasjonen nedenfor viser et eksempel på siden **Årsakskoder for nedetid ved vedlikehold**.
 
-![Figur 1](media/15-work-orders.png)
+![Figur 1.](media/15-work-orders.png)
 
 Når du har opprettet årsakskodene for vedlikeholdsnedetid som du vil bruke, kan du opprette registreringer for nedetid ved vedlikehold for arbeidsordrer og aktiva.
 
@@ -71,15 +71,15 @@ Når du har opprettet årsakskodene for vedlikeholdsnedetid som du vil bruke, ka
 
 Illustrasjonen nedenfor viser et eksempel på en registreringer for nedetid ved vedlikehold.
 
-![Figur 2](media/16-work-orders.png)
+![Figur 2.](media/16-work-orders.png)
 
 Kalenderen som brukes til å beregne en registrering av nedetid ved vedlikehold er avhengig av hva du velger i oppsettet for aktiva og parametere. Hvis en ressurs er valgt for et aktiva i feltet **Ressurs** i hurtigfanen **Anleggsmiddel** på siden **Alle aktiva**, brukes kalenderoppsettet for den tilknyttede ressursgruppen, som vist i følgende illustrasjon.
 
-![Figur 3](media/17-work-orders.png)
+![Figur 3.](media/17-work-orders.png)
 
 Hvis det ikke er valgt en ressurs for aktivumet, brukes standardkalenderen som er valgt på siden **Aktivabehandlingsparametere**, som vist i følgende illustrasjon.
 
-![Figur 4](media/18-work-orders.png)
+![Figur 4.](media/18-work-orders.png)
 
 Klikk på **Aktivabehandling** > **Forespørsler** > **Nedetid ved vedlikehold** hvis du vil se en oversikt over alle registreringer av vedlikeholdsnedetid.
 

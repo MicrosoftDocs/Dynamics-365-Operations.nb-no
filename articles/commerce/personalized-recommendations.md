@@ -16,12 +16,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: dc0fbff437bfa948d70a03479561542106805bdb
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: b6d68d62636b5750cdcdca3f8ccbe155dc249b72
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804435"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352306"
 ---
 # <a name="enable-personalized-recommendations"></a>Aktivere personlige anbefalinger
 
@@ -50,7 +50,7 @@ Følg denne fremgangsmåten for å aktivere tilpassing.
 1. Velg funksjonen **Personlige produktanbefalinger**.
 1. I egenskapsruten **Personlige produktanbefalinger** velger du **Aktiver nå**.
 
-![Aktivere tilpassing](./media/FeatureManagement_Personalized.PNG)
+![Aktivere tilpassing.](./media/FeatureManagement_Personalized.PNG)
 
 > [!NOTE]
 > Når du aktiverer tilpassing, startes prosessen for generering av tilpassede produktanbefalingslister. Det kan være nødvendig med opptil én dag før listene er tilgjengelige og synlige på Internett og salgsstedet.
@@ -73,7 +73,7 @@ Før "Plukkinger for deg"-listen kan vises på en e-handelsside, må følgende b
 
 Illustrasjonen nedenfor viser et eksempel på en "Plukkinger for deg"-liste på en nettbutikkside.
 
-!["Plukkinger for deg"-liste på Internett](./media/picksforyou.png)
+!["Plukkinger for deg"-liste på Internett.](./media/picksforyou.png)
 
 ### <a name="recommended-for-customer-lists-at-the-pos"></a>"Anbefalt for kunde"-lister på salgsstedet
 
@@ -81,7 +81,7 @@ For å forbedre klientopplevelsen kan forhandlerne personliggjøre eksisterende 
 
 Illustrasjonen nedenfor viser et eksempel på en "Anbefalt for kunde"-liste på en salgsstedsterminal.
 
-!["Anbefalt for kunde"-liste på salgsstedet](./media/picksonpos.png)
+!["Anbefalt for kunde"-liste på salgsstedet.](./media/picksonpos.png)
 
 ## <a name="apply-personalization-to-existing-recommendation-lists"></a>Bruke tilpassing på eksisterende anbefalingslister
 
@@ -89,7 +89,7 @@ Forhandlere kan bruke tilpassing for eksisterende anbefalingslister, for eksempe
 
 En pålogget bruker har for eksempel allerede kjøpt den svarte klokken og de brune arbeidsstøvlene som vises i listen "Tendenser – standard" i følgende illustrasjon. Derfor vil brukeren se nye produkter i stedet for disse produktene, som vist i listen "Tendenser – tilpasset".
 
-![Bruke tilpassing](./media/applypersonalization.png)
+![Bruke tilpassing.](./media/applypersonalization.png)
 
 Hvis du vil bruke tilpassing på en eksisterende anbefalingsliste i områdebygger for handel, følger du denne fremgangsmåten.
 
@@ -99,7 +99,7 @@ Hvis du vil bruke tilpassing på en eksisterende anbefalingsliste i områdebygge
 1. I dialogboksen **Velg produktlistekonfigurasjon**, under **Type**, velger du listetypen.
 1. Merk av for **Bruk tilpassing**, og velg deretter **OK**.
 
-    ![Bruke tilpassing på en tendensliste](./media/ApplyPersonalizationToTrending.PNG)
+    ![Bruke tilpassing på en tendensliste.](./media/ApplyPersonalizationToTrending.PNG)
 
 1. Lagre siden, fullfør redigeringen av den, og publiser den. Når siden er publisert, vil påloggede brukere se tilpassede tendenslister.
 

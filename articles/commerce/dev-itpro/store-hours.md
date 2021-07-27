@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: Retail 10.0.1 update
-ms.openlocfilehash: 862b032c75145594be78fb2f4e27ea5616605c4d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6d8c1d4e7edc4b83e2489ac6a0bad18ab55c042b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792935"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348248"
 ---
 # <a name="create-and-update-store-hours"></a>Opprette og oppdatere åpningstid
 
@@ -49,14 +49,14 @@ Hvis du vil konfigurere åpningstid, gjør du følgende:
     > [!NOTE]
     > Du kan opprette flere maler som har overlappende start- og sluttdatoer. Derfor kan du for eksempel definere åpningstid for butikker i forskjellige tidssoner.
 
-    ![Dialogboksen Legg til område](../dev-itpro/media/Storehours1.png "Dialogboksen Legg til område")
+    ![Dialogboksen Legg til område.](../dev-itpro/media/Storehours1.png "Dialogboksen Legg til område")
 
 4. Knytt åpningstidsmalen til butikkene der den skal brukes. I dialogboksen **Velg organisasjonsnoder** velger du butikkene, områdene og organisasjonene som malen skal knyttes til.
 
     - Bare én åpningstidsmal kan knyttes til hver butikk.
     - Bruk pilknappene til å velge butikker, områder eller organisasjoner. Kalenderen vil være tilgjengelig for butikkene eller butikkgruppene, og den vil være synlig på salgsstedet for referanse.
 
-    ![Dialogboksen Velg organisasjonsnoder](../dev-itpro/media/Storehours2.png "Dialogboksen Velg organisasjonsnoder")
+    ![Dialogboksen Velg organisasjonsnoder.](../dev-itpro/media/Storehours2.png "Dialogboksen Velg organisasjonsnoder")
 
 5. På siden **Distribusjonsplan** kjører du jobbene **1070** og **1090** for å gjøre åpningstiden tilgjengelig for salgsstedet.
 
@@ -75,7 +75,7 @@ Følg disse trinnene for å legge til åpningstid på utskrevne salgsstedskvitte
 
 Salgsstedskvitteringer inneholder nå åpningstid. Hvis helligdager er inkludert i malen, vises de på kvitteringen.
 
-![Kvitteringseksempel](../dev-itpro/media/Storehours3.png "Kvitteringseksempel")
+![Kvitteringseksempel.](../dev-itpro/media/Storehours3.png "Kvitteringseksempel")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: v-anamir
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e6c5081f71a18dfac83b7aea950395436b42f50e
-ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
+ms.openlocfilehash: e8a3782e5beb7d16accc0a56447d5db1f1376dd8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5881042"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350190"
 ---
 # <a name="microsoft-office-style-user-interface-in-business-document-management"></a>Brukergrensesnitt i Microsoft Office-stil i Forretningsdokumentbehandling
 
@@ -51,18 +51,18 @@ Følg disse trinnene for å aktivere denne funksjonen for alle juridiske enheter
 
 1. I **Forretningsdokumentadministrering**-arbeidsområdet velger du **Nytt dokument**.
 
-    ![Arbeidsområdet Administrasjon av forretningsdokument](./media/BDM_overview_new_template1.png)
+    ![Arbeidsområdet Administrasjon av forretningsdokument.](./media/BDM_overview_new_template1.png)
 
 2. På **Velg**-fanen velger du dokumentet som skal brukes som mal, og velger deretter **Opprett dokument**.
 
-    ![Forretningsdokumenter-dialogboksen](./media/BDM_overview_new_template2.png)
+    ![Forretningsdokumenter-dialogboksen.](./media/BDM_overview_new_template2.png)
 
 3. I den nye dialogboksen, i **Tittel**-feltet endrer du tittelen etter behov. Tittelteksten brukes til å navngi den nye ER-formatkonfigurasjonen som opprettes automatisk. Utkastversjonen av denne konfigurasjonen (**Kopi av FTI-kunderapport (GER)**) vil inneholde den redigerte malen og vil bli brukt til å kjøre dette ER-formatet for den gjeldende brukeren. Den opprinnelige malen fra den grunnleggende ER-formatkonfigurasjonen vil bli brukt til å kjøre dette ER-formatet for alle andre brukere.
 4. I **Navn** -feltet endrer du navnet på den første revisjonen av den redigerbare malen som skal opprettes automatisk.
 5. I **Kommentar**-feltet oppdater du merknadene for revisjonen av den redigerbare malen som opprettes automatisk.
 6. Velg **OK** for å bekrefte starten på redigeringsprosessen.
 
-    ![Dokumentopprettelse-dialogboksen](./media/BDM_overview_new_template3.png)
+    ![Dokumentopprettelse-dialogboksen.](./media/BDM_overview_new_template3.png)
 
 **Nytt dokument**-knappen brukes til å opprette og redigere en mal i en ER-formatkonfigurasjon som leveres av en annen leverandør. I dette eksemplet er leverandøren Microsoft. Når du velger **Nytt dokument**, kan du vise alle malene som eies av gjeldende leverandør og andre leverandører. Når du har valgt malen, åpnes den for redigering. Den redigerte malen blir deretter lagret i en ny ER-formatkonfigurasjon som genereres automatisk.
 
@@ -71,16 +71,16 @@ Følg denne fremgangsmåten for å oppgi nødvendig informasjon før du laster o
 
 1. I **Forretningsdokumentadministrering**-arbeidsområdet velger du **Nytt dokument**.
 
-    ![Arbeidsområdet Administrasjon av forretningsdokument](./media/BDM_overview_new_template1.png)
+    ![Arbeidsområdet Administrasjon av forretningsdokument.](./media/BDM_overview_new_template1.png)
     
 2. Gå til siden **Opprett en ny mal**, **Last opp**-fanen og deretter **Mal**-fanen, og velg **Bla gjennom** for å søke etter og velge Excel-filen du vil bruke som en mal. I **Mal**-delen er feltene **Tittel** og **Beskrivelse** fylt ut automatisk. De angir navnet på og beskrivelsen av den nye ER-formatkonfigurasjonen som opprettes automatisk. Du kan redigere disse feltene etter behov.
 3. I **Dokumenttype**-delen i **Navn**-feltet angir du typen forretningsdokument. Denne verdien brukes til å søke i den riktige datakilden (det vil si ER-modellkonfigurasjonen).
 
-    ![Mal-fanen](./media/BDM_overview_new_UI_import_21.jpg)
+    ![Mal-fanen.](./media/BDM_overview_new_UI_import_21.jpg)
 
 4. På **Datakilde**-fanen, på hurtigfanen **Filter**, velger du **Bruk filter**. I **Datakilde**-delen fylles **Navn**-feltet ut automatisk, men du kan også velge en verdi manuelt. Du kan bruke filteret til å søke etter riktig datakildenavn etter navn, beskrivelse, kode for land/område og forretningsdokumenttype.
 
-    ![Datakilde-fanen](./media/BDM_overview_new_UI_import_31.jpg)
+    ![Datakilde-fanen.](./media/BDM_overview_new_UI_import_31.jpg)
     
     > [!NOTE]
     > **Filter**-hurtigfanen brukes til å søke i den riktige datakilden (det vil si ER-modellkonfigurasjonen). Du kan redigere alle filterfelt for å finne den mest relevante datakilden for dokumentet du laster opp.
@@ -89,7 +89,7 @@ Følg denne fremgangsmåten for å oppgi nødvendig informasjon før du laster o
     
 5. Velg **Registrer automatisk** i **Tilordning**-fanen. **Rotdefinisjon**-feltet fylles ut automatisk, men du kan også velge en verdi manuelt. Denne fanen viser slutttilordningen for elementene fra malen og modellen.
 
-    ![Tilordning-fanen](./media/BDM_overview_new_UI_import_41.jpg)
+    ![Tilordning-fanen.](./media/BDM_overview_new_UI_import_41.jpg)
     
    > [!NOTE]
    > Tilordningen i **Malstruktur**-delen bruker hele samsvaret mellom etikettene eller beskrivelsene i datakilden på brukerens språk, og i cellenavnet i malen.
@@ -102,11 +102,11 @@ Hvis det ikke finnes leverandør i Elektronisk rapportering, kan du opprette en.
 
 - Hvis du vil opprette en leverandør, endrer du navnet på leverandøren i **Navn**-feltet, oppdaterer Internett-adressen til den nye leverandøren i feltet **Internett-adresse** og velger **OK** for å bekrefte.
 
-    ![Opprette ny leverandør i BDM](./media/bdm_create_provider.png)
+    ![Opprette ny leverandør i BDM.](./media/bdm_create_provider.png)
     
 - Hvis du vil aktivere eksisterende leverandør, velger du navnet på leverandøren i **Konfigurasjonsleverandør**-feltet, og velger **OK** for å angi leverandøren som aktiv.
 
-    ![Aktivere leverandør i BDM](./media/bdm_choose_provider.png)
+    ![Aktivere leverandør i BDM.](./media/bdm_choose_provider.png)
 
 > [!NOTE]
 > Hver BDM-mal refererer til leverandøren som forfatteren av konfigurasjonen. Dette er årsaken til hvorfor en aktiv leverandør er nødvendig for malen.

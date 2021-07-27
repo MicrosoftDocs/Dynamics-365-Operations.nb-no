@@ -9,16 +9,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 87bb31d6456356342773f38699a412aa72ea458e
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 4e8d4f28c42f44dc01c92e51b5e9a69fe7f40fa0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193911"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345386"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Oversikt over finanskonsolideringer og valutaomveksling
 
@@ -66,13 +67,13 @@ Her er noen av konsolideringsscenariene som Konsolider på nettet støtter:
 ## <a name="legal-entity-setup"></a>Oppsett av juridisk enhet
 Før du utfører en konsolidering, må du definere den juridiske enheten. Du kan kjøre konsolideringen så mange ganger du trenger, og alle data vil bli oversatt fra kildefirmaets regnskapsvaluta til valutaen som er definert for det konsoliderte selskapet. For følgende organisasjonsstruktur, hvis du må regne om alle firmaer i Nord-Amerika først til amerikanske dollar (USD) og deretter til euro (EUR), valutaen for moderselskapet, må du derfor ha minst to konsolideringsfirmaer.
 
-![Organisasjonsstruktur](./media/organizational-structure.png "Organisasjonsstruktur")
+![Organisasjonsstruktur.](./media/organizational-structure.png "Organisasjonsstruktur")
 
 I den foregående organisasjonsstrukturen må du ha en juridisk enhet for Nord-Amerika-konsolideringen fordi konsolideringer alltid konsolideres fra regnskapsvalutaen for kildefirmaet til valutaen for det konsoliderte selskapet. I eksemplet, hvis alle firmaer er inkludert i en enkelt konsolidering, blir det meksikanske datterselskapet regnet om fra meksikanske pesos (MXN) til EUR, ikke fra MXN til USD til EUR.
 
 Når du oppretter den juridiske enheten, kan du angi om firmaet skal brukes for både konsolideringsprosessen og elimineringsprosessen, eller bare én av disse prosessene. I illustrasjonen nedenfor brukes firmaet for begge prosessene. Vær oppmerksom på at du ikke kan postere daglige journaler i et konsolidert selskap, men du kan postere dem i et elimineringsfirma. Derfor kan det hende at du vil ha et eget elimineringsfirma.
 
-![Juridisk enhet som brukes til både konsolidering og eliminering](./media/sep-elimination-company.png "Juridisk enhet som brukes til både konsolidering og eliminering")
+![Juridisk enhet som brukes til både konsolidering og eliminering.](./media/sep-elimination-company.png "Juridisk enhet som brukes til både konsolidering og eliminering")
 
 ## <a name="main-accounts-and-consolidation-account-groups"></a>Hovedkontoer og konsolideringskontogrupper
 Ett valg som du må ta, er hvordan du vil konsolidere fra kontoplanen. I konsolideringsprosessen har du tre alternativer for konsolidering av hovedkontoer.
@@ -81,11 +82,11 @@ Det første alternativet er å bruke hovedkontoene fra kildefirmaene. I så fall
 
 Det andre alternativet er å angi en standard konsolideringskonto på siden **Hovedkontoer**. Kontoen tilordnes deretter til konsolideringskontoen. Dette alternativet kan være nyttig når du har ulike kontoplaner eller må tilordne til et diagram som er definert av hovedkontoret.
 
-![Standard konsolideringskonto som er angitt på siden Hovedkontoer](./media/main-accounts.png "Standard konsolideringskonto som er angitt på siden Hovedkontoer")
+![Standard konsolideringskonto som er angitt på siden Hovedkontoer.](./media/main-accounts.png "Standard konsolideringskonto som er angitt på siden Hovedkontoer")
 
 Det tredje alternativet er å bruke konsolideringskontogrupper. Du kan definere så mange konsolideringskontogrupper som du trenger. Deretter, på siden **Flere konsolideringskontoer** bare tilordner du hovedkontoen fra kontoplanen til kontoen som du trenger for denne gruppen.
 
-![Tilordne på siden Flere konsolideringskontoer](./media/additional-consolidation-accounts.png "Tilordne på siden Flere konsolideringskontoer")
+![Tilordne på siden Flere konsolideringskontoer.](./media/additional-consolidation-accounts.png "Tilordne på siden Flere konsolideringskontoer")
 
 ## <a name="consolidating-online"></a>Konsolidere på nettet
 Hvis du vil vite hvordan du registrerer detaljer om konsolideringer på nettet, kan du se [Konsolideringer på nettet](./consolidate-online.md).
@@ -97,7 +98,7 @@ Hvis du vil vise resultatene av konsolideringen, har du flere alternativer:
 - Se gjennom **Råbalanse**-listesiden i det konsoliderte selskapet.
 - I listen over konsolideringstransaksjoner på siden **Konsolideringer**, se på saldoene som er opprettet etter dato for hvert kildefirma for hver periode.
 
-    ![Konsolideringstransaksjoner på siden Konsolideringer](./media/managing-consolidation-transactions.png "Konsolideringstransaksjoner på siden Konsolideringer")
+    ![Konsolideringstransaksjoner på siden Konsolideringer.](./media/managing-consolidation-transactions.png "Konsolideringstransaksjoner på siden Konsolideringer")
 
 Hvis du vil kjøre konsolideringen på nytt, kan du bare behandle konsolideringen. Alternativt kan du først velge **Fjern transaksjoner** på siden **Konsolideringer**.
 I tilfelle saldoene i den konsoliderte kontoen ikke er riktige, kan disse saldoene korrigeres ved hjelp av siden **Justeringer for avslutningsperiode**.
@@ -118,7 +119,7 @@ Du kan finne oppsettet for elimineringer i **Oppsett**-området i modulen **Kons
 
 Du kan angi datoen når elimineringsregelen trer i kraft, og datoen når den utløper, etter behov. Du må angi **Aktiv** til **Ja** hvis du vil at elimineringsregelen skal være tilgjengelig i elimineringsforslagsprosessen. Velg et journalnavn av typen **Eliminering**.
 
-![Grunnleggende egenskaper for en elimineringsregel](./media/ledger-elimination-rule-journal.png "Grunnleggende egenskaper for en elimineringsregel")
+![Grunnleggende egenskaper for en elimineringsregel.](./media/ledger-elimination-rule-journal.png "Grunnleggende egenskaper for en elimineringsregel")
 
 Når du har definert de grunnleggende egenskapene, kan du velg **Linjer** for å definere de faktiske behandlingsreglene. Det finnes to alternativer for elimineringer: eliminere netto endringsbeløp eller definere et fast beløp.
 
@@ -126,7 +127,7 @@ Velg kildekontoene. Du kan bruke stjerne (\*) som et jokertegn.  **1\**velger fo
 
 Når du har valgt kildekontoene, bruker du feltet **Kontospesifikasjon** til å angi kontoen som brukes fra målfirmaet. Velg **Kilde** hvis du vil bruke den samme hovedkontoen som er definert i kildekontoen. Hvis du velger **Brukerdefinert**, må du angi en målkonto.
 
-![Siden Elimineringsregellinje, finans](./media/ledger-elimination-rule-line.png "Siden Elimineringsregellinje, finans")
+![Siden Elimineringsregellinje, finans.](./media/ledger-elimination-rule-line.png "Siden Elimineringsregellinje, finans")
 
 Feltet **Dimensjonsspesifikasjon** fungerer som feltet **Kontospesifikasjon**. Velg **Kilde** for å bruke de samme dimensjonene i målfirmaet og kildefirmaet. Hvis du velger **Brukerdefinert**, må du angi dimensjoner i målfirmaet ved å velge **Måldimensjoner**. Velg deretter kildedimensjoner og finansdimensjoner og verdiene som brukes som en kilde for eliminering.
 

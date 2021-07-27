@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: d80c754b7aa154d9636bb0d9fbfb448987d01e48
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: cc9273cc46e2549765dec4b2bbc9a3030753791d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841797"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353522"
 ---
 # <a name="safety-stock-fulfillment-for-items"></a>Fullføring av sikkerhetslager for varer
 
@@ -72,37 +72,50 @@ Dette scenariet viser hvordan denne parameteren fungerer, og hva som er forskjel
 > [!NOTE]
 > For alle illustrasjonene i dette emnet representerer x-aksen lager, y-aksen dager, linjene lagernivået, pilene transaksjoner, for eksempel salgsordrelinjer, bestillingslinjer eller planlagte ordrer.
 
-[![Vanlig scenario for oppfylling av sikkerhetslager](./media/Scenario1.png)](./media/Scenario1.png) Parameteren **Fyll opp minimum** kan ha følgende verdier:
+[![Vanlig scenario for fullføring av sikkerhetslager.](./media/Scenario1.png)](./media/Scenario1.png)
+**Fyll opp minimum**-parameteren kan ha følgende verdier:
 ### <a name="todays-date"></a>Dagens dato 
 Det angitte minimumsantallet er oppfylt på datoen når hovedplanleggingen kjøres. Systemet prøver å oppfylle sikkerhetslagergrensen så snart som mulig, selv om den kan være urealistisk på grunn av leveringstiden. 
-[![Behov for dagens dato](./media/TodayReq.png)](./media/TodayReq.png) Planlagt bestilling P1 opprettes for dagens dato for å brunge tilgjengelig beholdning over sikkerhetslagernivået på denne datoen. Salgsordrelinjene S1 til S3 fortsetter å senke lagernivået. Planlagte bestillinger P2 til P4 genereres av hovedplanleggingen slik at lagernivået bringes tilbake til sikkerhetsgrensen etter behovet for hver salgsordre.
+[![Behov for dagens dato.](./media/TodayReq.png)](./media/TodayReq.png)
+Planlagt bestilling P1 opprettes for dagens dato for å brunge tilgjengelig beholdning over sikkerhetslagernivået på denne datoen. Salgsordrelinjene S1 til S3 fortsetter å senke lagernivået. Planlagte bestillinger P2 til P4 genereres av hovedplanleggingen slik at lagernivået bringes tilbake til sikkerhetsgrensen etter behovet for hver salgsordre.
 Når dekningskoden **Krav** brukes, opprettes flere planlagte bestillinger. Det er alltid lurt å bruke dekningen **Periode** eller **Min/maks** for varer og materialer som det ofte er behov for, for å kunne etterfylle i grupper. Illustrasjonen nedenfor viser et eksempel på dekningskoden **Periode**.
-[![Periode. Dagens dato](./media/TodayPeriod.png)](./media/TodayPeriod.png) Illustrasjonen nedenfor viser et eksempel på dekningskoden **Min/Maks**.
-[![Min/maks. Dagens dato](./media/TodayMinMax.png)](./media/TodayMinMax.png)
+[![Periode. Dagens dato.](./media/TodayPeriod.png)](./media/TodayPeriod.png)
+Illustrasjonen nedenfor viser et eksempel på dekningskoden **Min/maks.**.
+[![Min/maks. Dagens dato.](./media/TodayMinMax.png)](./media/TodayMinMax.png)
 ### <a name="todays-date--procurement-time"></a>Dagens dato + leveringstid 
 Det angitte minimumsantallet er oppfylt på datoen da hovedplanleggingen er kjørt, pluss leveringstiden for innkjøp eller produksjon. Denne tiden omfatter eventuell sikkerhetsmarginer. Hvis det finnes en forretningsavtale for varen, og du har merket av for **Finn forretningsavtaler** på siden **Hovedplanleggingsparametere**, blir ikke leveringstiden fra forretningsavtalen tatt i betraktning. Leveringstiden hentes fra varens dekningsinnstillinger eller fra selve varen.
 Denne oppfyllingsmodusen oppretter planer med mindre forsinkelser og færre planlagte bestillinger, uavhengig av dekningsgruppen som er definert for varen. Illustrasjonen nedenfor viser resultatet av planen hvis dekningskoden er **Krav** eller **Periode**.  
-[![Krav. Periode. Dagens dato og leveringstid](./media/TodayPLTReq.png)](./media/TodayPLTReq.png) Illustrasjonen nedenfor viser resultatet av planen hvis dekningskoden er **Min/maks**.  
-[![Min/maks. Dagens dato og leveringstid](./media/TodayPLTMinMax.png)](./media/TodayPLTMinMax.png)
+[![Krav. Periode. Dagens dato og leveringstid.](./media/TodayPLTReq.png)](./media/TodayPLTReq.png)
+Illustrasjonen nedenfor viser resultatet av planen hvis dekningskoden er **Min/maks**.  
+[![Min/maks. Dagens dato og leveringstid.](./media/TodayPLTMinMax.png)](./media/TodayPLTMinMax.png)
 ### <a name="first-issue"></a>Første avgang 
 Det angitte minimumsantallet er oppfylt på datoen når det tilgjengelige lageret går under minimumsnivået, som vist i illustrasjonen nedenfor. Selv om det tilgjengelige lageret er under minimumsnivået på datoen når hovedplanlegging kjøres, vil **Første avgang** ikke forsøke å dekke dette før det neste behovet kommer inn.
 Illustrasjonen nedenfor viser et eksempel på dekningskoden **Krav**.
-[![Planlegge en vare med dekningskoden **Krav** og oppfyllingen **Første avgang**](./media/FirstIssueReq.png)](./media/FirstIssueReq.png) Illustrasjonen nedenfor viser et eksempel på dekningskoden **Periode**.
-[![Planlegge en vare med dekningskoden **Periode** og oppfyllingen **Første avgang**](./media/FirstIssuePeriod.png)](./media/FirstIssuePeriod.png) Illustrasjonen nedenfor viser et eksempel på dekningskoden **Min/maks**.
-[![Planlegge en vare med dekningskoden **Min/maks** og oppfyllingen **Første avgang**](./media/FirstIssueMinMax.png)](./media/FirstIssueMinMax.png) På datoen når hovedplanleggingen kjøres, vil **Dagens dato** og **Dagens dato + leveringstid** utløse etterfyllingen umiddelbart, hvis den tilgjengelige beholdningen allerede er under sikkerhetslagergrensen. **Første avgang** venter til det er en annen avgangstransaksjon, for eksempel en salgsordre og stykklistelinjebehov, for varen, og deretter utløses etterfyllingen på datoen for denne transaksjonen. På datoen når hovedplanleggingen kjøres, vil **Dagens dato** og **Første avgang** gi nøyaktig det samme resultatet, som vist i illustrasjonen nedenfor, hvis den tilgjengelige beholdningen ikke er under sikkerhetslagergrensen. 
+[![Planlegge en vare med dekningskoden **Krav** og **Første avgang**.](./media/FirstIssueReq.png)](./media/FirstIssueReq.png)
+Illustrasjonen nedenfor viser et eksempel på dekningskoden **Periode**.
+[![Planlegge en vare med dekningskoden **Periode** og **Første avgang**.](./media/FirstIssuePeriod.png)](./media/FirstIssuePeriod.png)
+Illustrasjonen nedenfor viser et eksempel på dekningskoden **Min/maks.**.
+[![Planlegge en vare med dekningskoden **Min/maks.** og **Første avgang**.](./media/FirstIssueMinMax.png)](./media/FirstIssueMinMax.png)
+På datoen når hovedplanleggingen kjøres, vil **Dagens dato** og **Dagens dato + leveringstid** utløse etterfyllingen umiddelbart, hvis den tilgjengelige beholdningen allerede er under sikkerhetslagergrensen. **Første avgang** venter til det er en annen avgangstransaksjon, for eksempel en salgsordre og stykklistelinjebehov, for varen, og deretter utløses etterfyllingen på datoen for denne transaksjonen. På datoen når hovedplanleggingen kjøres, vil **Dagens dato** og **Første avgang** gi nøyaktig det samme resultatet, som vist i illustrasjonen nedenfor, hvis den tilgjengelige beholdningen ikke er under sikkerhetslagergrensen. 
 
-[![IkkeUnderGrense](./media/ReqFirstIssue.png)](./media/ReqFirstIssue.png) På datoen når hovedplanleggingen kjøres, vil **Dagens dato + leveringstid** gi følgende resultat, fordi det utsetter oppfyllingen til slutten av leveringstiden for etterfyllingen, hvis den tilgjengelige beholdningen ikke er under sikkerhetslagergrensen.
-![Planlegge en vare med dekningskoden **Krav** og oppfyllingen **Første avgang**](./media/ReqTodayLT.png)
+[![IkkeUnderGrense.](./media/ReqFirstIssue.png)](./media/ReqFirstIssue.png)
+På datoen når hovedplanleggingen kjøres, vil **Dagens dato + leveringstid** gi følgende resultat, fordi det utsetter oppfyllingen til slutten av leveringstiden for etterfyllingen, hvis den tilgjengelige beholdningen ikke er under sikkerhetslagergrensen.
+![Planlegge en vare med dekningskoden **Krav** og oppfyllingen **Første avgang**.](./media/ReqTodayLT.png)
 ### <a name="coverage-time-fence"></a>Dekningshorisont
 Det angitte minimumsantallet er oppfylt innenfor perioden som er angitt i feltet **Dekningshorisont**. Dette alternativet er nyttig når hovedplanlegging ikke tillater at tilgjengelig beholdning brukes for reelle bestillinger, for eksempel salg eller overføringer, under forsøk på å opprettholde sikkerhetsnivået. Imidlertid i en fremtidig versjon, vil ikke lenger trenge denne modusen for etterfylling, og dette alternativet vil avverges.
 ## <a name="plan-safety-stock-replenishment-for-first-expired-first-out-fefo-items"></a>Planlegge etterfylling av sikkerhetslager for varer av typen først utløpt først ut (FEFO)
 Når som helst kan lagermottaket med den nyeste utløpsdatoen brukes for sikkerhetslageret, slik at reell etterspørsel, for eksempel salgslinjer eller stykklistelinjer, kan oppfylles i FEFO-rekkefølgen (først utløpt, først ut).
 Hvis du vil se hvordan dette fungerer, kan du se følgende scenario.
-[![FEFO-scenario](./media/FEFOScenario.png)](./media/FEFOScenario.png) Når planleggingen kjører, dekkes den første salgsordren fra den eksisterende lagerbeholdningen og en ny bestilling for det gjenværende antallet.
-[![FEFO1](./media/FEFO1.png)](./media/FEFO1.png) En planlagt bestilling opprettes for å sikre at den tilgjengelige beholdningen importeres tilbake til sikkerhetsgrensen.
-[![FEFO2](./media/FEFO2.png)](./media/FEFO2.png) Når den andre salgsordren er planlagt, brukes den tidligere opprettede planlagte ordren som dekker sikkerhetslageret, til å dekke dette antallet. Derfor rulleres sikkerhetslageret konstant.
-[![FEFO3](./media/FEFO3.png)](./media/FEFO3.png) Til slutt opprettes en annen planlagt ordre for å dekke sikkerhetslageret.
-[![FEFO4](./media/FEFO4.png)](./media/FEFO4.png) Alle partiene utløper i henhold til dette, og planlagte ordrer opprettes for å etterfylle sikkerhetslageret etter det har utløpt.
+[![FEFO-scenario.](./media/FEFOScenario.png)](./media/FEFOScenario.png)
+Når planleggingen kjører, dekkes den første salgsordren fra den eksisterende lagerbeholdningen og en ny bestilling for det gjenværende antallet.
+[![FEFO1.](./media/FEFO1.png)](./media/FEFO1.png)
+En planlagt bestilling opprettes for å sikre at den tilgjengelige beholdningen importeres tilbake til sikkerhetsgrensen.
+[![FEFO2.](./media/FEFO2.png)](./media/FEFO2.png)
+Når den andre salgsordren er planlagt, brukes den tidligere opprettede planlagte ordren som dekker sikkerhetslageret, til å dekke dette antallet. Derfor rulleres sikkerhetslageret konstant.
+[![FEFO3.](./media/FEFO3.png)](./media/FEFO3.png)
+Til slutt opprettes en annen planlagt ordre for å dekke sikkerhetslageret.
+[![FEFO4.](./media/FEFO4.png)](./media/FEFO4.png)
+Alle partiene utløper i henhold til dette, og planlagte ordrer opprettes for å etterfylle sikkerhetslageret etter det har utløpt.
 
 ## <a name="how-master-planning-handles-the-safety-stock-constraint"></a>Hvordan hovedplanlegging håndterer begrensningen for sikkerhetslageret
 

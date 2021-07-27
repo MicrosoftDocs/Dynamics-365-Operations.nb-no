@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c7ed9e62751b6be9fad6de3bf262d37d7977d192
-ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
+ms.openlocfilehash: 2593f3128ec103248e109f3c80f48b9d7a035f54
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6224106"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355352"
 ---
 # <a name="supported-composite-data-types-for-electronic-reporting-formulas"></a>Støttede sammensatte datatyper for formler i elektronisk rapportering
 
@@ -43,13 +43,13 @@ Standardverdien for en *klasse* er **null**.
 
 Illustrasjonen nedenfor viser hvordan datakilden **Systeminformasjon(xInfo)** for **Klasse**-typen legges til for å lage forekomsten av **xInfo**-programklassen og kalle opp **productName()**-metoden for den for å motta navnet på det gjeldende programmet. Navnet på gjeldende program hentes ved kjøretid ved å kjøre bindingen `xInfo.productName`, som ble konfigurert for feltet **Programvarenavn(SoftwareName)** i ER-datamodellen. Denne bindingen kaller opp metoden `productName()` for **xInfo**-programklassen som er representert i den gjeldende modelltilordningen som datakilden **Systeminformasjon(xInfo)**.
 
-[![Konfigurere en Klasse-datakilde i ER-utforming av modelltilordning](./media/er-formula-supported-data-types-composite-class1.gif)](./media/er-formula-supported-data-types-composite-class1.gif)
+[![Konfigurere en Klasse-datakilde i ER-utforming av modelltilordning.](./media/er-formula-supported-data-types-composite-class1.gif)](./media/er-formula-supported-data-types-composite-class1.gif)
 
 Illustrasjonen nedenfor viser hvordan ER-formatet er konfigurert slik at det legger det angitte programnavnet i genererte dokumenter. Feltet **Programvarenavn(SoftwareName)** i den brukte datamodellen var bundet til **Streng**-komponenten som er nestet under XML-elementet **softwareUsed** i ER-formatet. Navnet på det gjeldende programmet legges til ved kjøretid i XML-elementet **softwareUsed** i et generert dokument i XML-format.
 
-[![Konfigurere strukturen for et utgående elektronisk dokument i ER-formatutformingen](./media/er-formula-supported-data-types-composite-class2.png)](./media/er-formula-supported-data-types-composite-class2.png)
+[![Konfigurere strukturen for et utgående elektronisk dokument i ER-formatutformingen.](./media/er-formula-supported-data-types-composite-class2.png)](./media/er-formula-supported-data-types-composite-class2.png)
 
-## <a name="container"></a><a name="container"></a>Beholder
+## <a name="container"></a><a name="container"></a>Container
 
 Datatypen *beholder* består av binært innhold. En verdi for *beholder* kan brukes til å sende bestemt informasjon fra et lager til et generert dokument. I ER-rammeverket brukes denne datatypen ofte til å legge til medieinnhold, for eksempel en firmalogo, i genererte dokumenter.
 
@@ -60,7 +60,7 @@ Standardverdien for en *beholder* er **null**.
 
 Følgende illustrasjon viser hvordan feltet **Punktgrafikk(Image)** for typen *Beholder* er bundet til **Logo**-feltet for datamodell av typen **Beholder** i modelltilordningen **Salgsfaktura**. Denne bindingen gjør firmalogoen tilgjengelig for ethvert ER-format som er utformet for rotdefinisjonen **SalesInvoice** og bruker denne modelltilordningen ved kjøretid.
 
-[![Binde et felt av Beholder-typen i ER-utforming av modelltilordning](./media/er-formula-supported-data-types-composite-container.png)](./media/er-formula-supported-data-types-composite-container.png)
+[![Binde et felt av Beholder-typen i ER-utforming av modelltilordning.](./media/er-formula-supported-data-types-composite-container.png)](./media/er-formula-supported-data-types-composite-container.png)
 
 ## <a name="record"></a><a name="record"></a>Registrer
 
@@ -109,7 +109,7 @@ Standardverdien for et *objekt* er **null**.
 
 Illustrasjonen nedenfor viser hvordan datakilden **ReportDataContract** for typen *Objekt* legges til for å sende informasjon om en generert faktura fra en kildekode til modelltilordningen **Prosjektfaktura**. Teksten i fakturaforekomsten sendes for eksempel som en del av kjøringskonteksten. Denne teksten tas fra kildekoden ved kjøretid ved å kjøre bindingen `ReportDataContract.parmInvoiceInstanceText`, som ble konfigurert for **Merknad**-feltet i ER-datamodellen. Denne bindingen kaller opp metoden `parmInvoiceInstanceText()` for programklassen **PSAProjInvoiceContract** som er representert i den gjeldende modelltilordningen som datakilden **ReportDataContract**.
 
-[![Konfigurere en Objekt-datakilde i ER-utforming av modelltilordning](./media/er-formula-supported-data-types-composite-object.gif)](./media/er-formula-supported-data-types-composite-object.gif)
+[![Konfigurere en Objekt-datakilde i ER-utforming av modelltilordning.](./media/er-formula-supported-data-types-composite-object.gif)](./media/er-formula-supported-data-types-composite-object.gif)
 
 Hvis du vil vite hvordan du sender detaljer om kjøringskonteksten fra kildekode til ER-løsningen som kjører, kan du se [Utarbeide appartefakter for å kalle den utformede rapporten](er-quick-start1-new-solution.md#DevelopCustomCode).
 

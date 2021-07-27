@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-09021
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 063701d5cd5714febeb32907346d9f6e5c2a2ca1
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 9428eda880d534c700646b52310c6b8befdebaf2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804411"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353810"
 ---
 # <a name="pickup-information-module"></a>Hente informasjonsmodul
 
@@ -40,7 +40,7 @@ Hvis flere varer er valgt for henting på tvers av flere butikker, last henteinf
 
 Følgende illustrasjon viser et eksempel på valg av tidspunkt ved hjelp av henteinformasjonsmodulen på en utsjekkingsside.
 
-![Eksempel på en henteinformasjonsmodul på en utsjekkingsside](./dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
+![Eksempel på en henteinformasjonsmodul på en utsjekkingsside.](./dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
 
 ## <a name="module-properties"></a>Modulegenskaper
 
@@ -56,11 +56,11 @@ Hvis du vil ha informasjon om hvordan du legger til en henteinformasjonsmodul p�
 
 Følgende illustrasjon viser et eksempel på en betalingsside for e-handel som inkluderer tidspunkter for hentelinjevarer.
 
-![Eksempel på en betalingsside for e-handel som inkluderer tidspunkter for hentelinjevarer](./dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
+![Eksempel på en betalingsside for e-handel som inkluderer tidspunkter for hentelinjevarer.](./dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Opprett og oppdater tidspunkter for kundehenting](dev-itpro/pickup-timeslots.md)
+[Opprett og oppdater tidsrom for kundehenting](dev-itpro/pickup-timeslots.md)
 
 [Kassemodul](add-checkout-module.md)
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-04-08
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 238123f59c3d85b2b2c64aed9d94c7d8af27eaf2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9f19a6ed70445791433c2db2559f6922b9715c5e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820817"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350652"
 ---
 # <a name="automate-vendor-payment-proposals"></a>Automatisering av betalingsforslag for leverandører
 
@@ -97,11 +97,11 @@ Vi anbefaler at du vurderer om automatiseringen er nyttig for organisasjonen, ba
 
 Når automatiseringsserien for leverandørbetalingsforslag er opprettet, vises forekomstene for hver enkelt betaling i ukevisningen for prosessautomatisering. For leverandørbetalinger er ukesvisningen av prosessautomatisering lagt til både i **Leverandørbetalinger**-arbeidsområdet og på **Prosessautomatisering**-siden.
 
-[![Ukesvisning for prosessautomatisering i Leverandørbetalinger-arbeidsområdet](./media/vendor-payment-proposal-1.png)](./media/vendor-payment-proposal-1.png)
+[![Ukesvisning for prosessautomatisering i Leverandørbetalinger-arbeidsområdet.](./media/vendor-payment-proposal-1.png)](./media/vendor-payment-proposal-1.png)
 
 Ukesvisningen for prosessautomatisering i **Leverandørbetalinger**-arbeidsområdet viser bare automatiseringer av leverandørbetalingsforslag. Den viser alle forekomster av betalinger for den gjeldende uken, for alle juridiske enheter som den påloggede brukeren har sikkerhetstillatelser for. Hvis for eksempel AP-betalingsassistenten er ansvarlig for betalinger i USMF- og USSI-firmaene, ser vedkommende forekomstene av automatisering av leverandørbetalingsforslag for disse to firmaene, men ikke for andre firmaer.
 
-[![Ukesvisning for prosessautomatisering av USMF- og USSI-firmaene](./media/vendor-payment-proposal-2.png)](./media/vendor-payment-proposal-2.png)
+[![Ukesvisning for prosessautomatisering av USMF- og USSI-firmaene.](./media/vendor-payment-proposal-2.png)](./media/vendor-payment-proposal-2.png)
 
 Hver forekomst viser firmaet som betalingsjournalen ble eller blir opprettet for. Hvis betalinger opprettes ved hjelp av sentraliserte betalinger, vises firmaet som betalinger opprettes for. Forekomsten viser ikke nødvendigvis hvilke firmaer hvis fakturaer skal betales.
 

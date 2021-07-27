@@ -9,17 +9,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.custom: intro-internal
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a574494784e9a534307cceff584e047d870dc401
-ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
+ms.openlocfilehash: 81cbabb2499fc0fdf3c043c9b15e4429b036e3c8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6027945"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352042"
 ---
 # <a name="cart-and-checkout-pages-overview"></a>Oversikt over sider for handlekurv og kasse
 
@@ -37,7 +38,7 @@ Handlekurvsidene fungerer som handlepose og inneholder alle varene som er lagt t
 
 Illustrasjonen nedenfor viser et eksempel på en handlekurvside som ble bygd ved hjelp av modulbiblioteket og "Fabrikam"-temaet.
 
-![Eksempel på en handlekurvside](./media/cart2.PNG)
+![Eksempel på en handlekurvside.](./media/cart2.PNG)
 
 Hovedområdet på en handlekurvside viser alle varene som en kunde har lagt til i handlekurven. Alle gjeldende rabatter vises. Disse rabattene inkluderer komplekse rabatter. Eksempler inkluderer "Kjøp 3 varer og få 10 % avslag" eller "Kjøp en flaske og en ryggsekk for å få 10 % rabatt". Ordresammendragmodulen viser beløpet som forfaller etter at rabatter, levering, avgifter og så videre er påført. Det finnes også en promokodemodul som lar kunden bruke eller fjerne kampanjekoder.
 
@@ -53,7 +54,7 @@ Utsjekkingssiden er der kunder angir informasjonen som kreves for å legge inn e
 
 Illustrasjonen nedenfor viser et eksempel på en utsjekkingsside som ble bygd ved hjelp av modulbiblioteket.
 
-![Eksempel på en utsjekkingsside](./media/Checkout.PNG)
+![Eksempel på en utsjekkingsside.](./media/Checkout.PNG)
 
 Hoveddelen av utsjekkingssiden er der all ordreinformasjon samles inn. Denne informasjonen omfatter leveringsadresse, leveringsalternativer og betalingsinformasjon. Kassen har en trinnvis flyt, fordi informasjonen må angis i en bestemt rekkefølge for å kunne behandles. Leveringsadressen må for eksempel angis før forsendelseskostnadene kan beregnes og betalingen kan autoriseres.
 

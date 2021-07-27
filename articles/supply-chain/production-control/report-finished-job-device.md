@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: bd21bdf532e1e607e66bb8f5ef032f0855c99612
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 5da18ff1013f0e767ca64b090eb1559bf05cb056
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811636"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350528"
 ---
 # <a name="report-as-finished-from-the-job-card-device"></a>Ferdigmelde fra jobbkortenheten
 
@@ -85,13 +85,13 @@ For å tillate manuelt tilordne partinumre følger du denne fremgangsmåten for 
 1. Opprette eller velge sporingsnummergruppen som skal konfigureres.
 1. På **Generelt**-hurtigfanen angir du **Manuelt**-alternativet til **Ja**.
 
-    ![En sporingsnummergruppe for manuelle partinumre](media/tracking-number-group-manual.png "En sporingsnummergruppe for manuelle partinumre")
+    ![En sporingsnummergruppe for manuelle partinumre.](media/tracking-number-group-manual.png "En sporingsnummergruppe for manuelle partinumre")
 
 1. Angi andre verdier etter behov, og velg deretter denne sporingsnummergruppen som partinummergruppen for frigitte produkter som du vil bruke dette scenariet for.
 
 Når du bruker dette scenariet, er **Partinummer**-feltet som **Rapporter fremdrift**-siden på jobbkortenheten leverer, en tekstboks der arbeidere kan angi en hvilken som helst verdi.
 
-![Side med fremdriftsrapport med et felt for manuelle partinumre](media/job-card-device-batch-manual.png "Side med fremdriftsrapport med et felt for manuelle partinumre")
+![Side med fremdriftsrapport med et felt for manuelle partinumre.](media/job-card-device-batch-manual.png "Side med fremdriftsrapport med et felt for manuelle partinumre")
 
 ### <a name="set-up-a-tracking-number-group-that-provides-a-list-of-predefined-batch-numbers"></a>Konfigurere en sporingsnummergruppe som gir en liste over forhåndsdefinerte partinumre
 
@@ -102,13 +102,13 @@ For å generere en liste over forhåndsdefinerte partinumre følger du denne fre
 1. På **Generelt**-hurtigfanen angir du **Bare for lagertransaksjoner**-alternativet til **Ja**.
 1. Bruk **Per antall**-feltet til å dele opp partinumre etter antall, basert på verdien du angir. Tenk deg at du har en produksjonsordre på ti stykker, og at **Per antall**-feltet er satt til *2*. I dette tilfellet blir fem partinumre tilordnet produksjonsordren når den opprettes.
 
-    ![En sporingsnummergruppe for forhåndsdefinerte partinumre](media/tracking-number-group-predefined.png "En sporingsnummergruppe for forhåndsdefinerte partinumre")
+    ![En sporingsnummergruppe for forhåndsdefinerte partinumre.](media/tracking-number-group-predefined.png "En sporingsnummergruppe for forhåndsdefinerte partinumre")
 
 1. Angi andre verdier etter behov, og velg deretter denne sporingsnummergruppen som partinummergruppen for frigitte produkter som du vil bruke dette scenariet for.
 
 Når du bruker dette scenariet, er **Partinummer**-feltet som **Rapporter fremdrift**-siden på jobbkortenheten leverer, en rullegardinliste der arbeidere må velge en forhåndsdefinert verdi.
 
-![Side med fremdriftsrapport med en liste over forhåndsdefinerte partinumre](media/job-card-device-batch-predefined.png "Side med fremdriftsrapport med en liste over forhåndsdefinerte partinumre")
+![Side med fremdriftsrapport med en liste over forhåndsdefinerte partinumre.](media/job-card-device-batch-predefined.png "Side med fremdriftsrapport med en liste over forhåndsdefinerte partinumre")
 
 ### <a name="set-up-a-tracking-number-group-that-automatically-assigns-batch-numbers"></a>Konfigurere en sporingsnummergruppe som automatisk tilordner partinumre
 
@@ -119,13 +119,13 @@ Hvis partinumre skal tilordnes automatisk uten inndata fra ansatte, følger du d
 1. På **Generelt**-hurtigfanen angir du **Bare for lagertransaksjoner**-alternativet til **Nei**.
 1. Angi **Manuelt**-alternativet til **Nei**.
 
-    ![En sporingsnummergruppe for faste partinumre](media/tracking-number-group-fixed.png "En sporingsnummergruppe for faste partinumre")
+    ![En sporingsnummergruppe for faste partinumre.](media/tracking-number-group-fixed.png "En sporingsnummergruppe for faste partinumre")
 
 1. Angi andre verdier etter behov, og velg deretter denne sporingsnummergruppen som partinummergruppen for frigitte produkter som du vil bruke dette scenariet for.
 
 Når du bruker dette scenariet, viser **Partinummer**-feltet som **Rapporter fremdrift**-siden på jobbkortenheten leverer, en verdi, men arbeiderne kan ikke redigere den.
 
-![Side med fremdriftsrapport med et fastsatt partinummer](media/job-card-device-batch-fixed.png "Side med fremdriftsrapport med et fastsatt partinummer")
+![Side med fremdriftsrapport med et fastsatt partinummer.](media/job-card-device-batch-fixed.png "Side med fremdriftsrapport med et fastsatt partinummer")
 
 ## <a name="report-serial-controlled-items-as-finished"></a>Rapporter ferdigstillelse av seriekontrollerte varer
 
@@ -165,7 +165,7 @@ For å tillate manuelt tilordne serienumre følger du denne fremgangsmåten for 
 1. Opprette eller velge sporingsnummergruppen som skal konfigureres.
 1. På **Generelt**-hurtigfanen angir du **Manuelt**-alternativet til **Ja**.
 
-    ![Siden med sporingsnummergrupper, serienumre](media/tracking-number-group-manual-serial.png "Siden med sporingsnummergrupper, serienumre")
+    ![Siden med sporingsnummergrupper, serienumre.](media/tracking-number-group-manual-serial.png "Siden med sporingsnummergrupper, serienumre")
 
 1. Angi andre verdier etter behov, og velg deretter denne sporingsnummergruppen som serienummergruppen for frigitte produkter som du vil bruke dette scenariet for.
 
@@ -174,7 +174,7 @@ Når du bruker dette scenariet, er **Serienummer**-feltet som **Rapporter fremdr
 - Hvis du vil merke et serienummer som kassert, velger du **Svinn**-knappen for den aktuelle raden. Arbeideren blir bedt om å oppgi en **feilårsak**.
 - Hvis du vil slette et serienummer, velger du **Slett**-knappen for den aktuelle raden.
 
-![Side med fremdriftsrapport med et felt for manuelle serienumre](media/job-card-device-serial-manual.png "Side med fremdriftsrapport med et felt for manuelle serienumre")
+![Side med fremdriftsrapport med et felt for manuelle serienumre.](media/job-card-device-serial-manual.png "Side med fremdriftsrapport med et felt for manuelle serienumre")
 
 ### <a name="set-up-a-tracking-number-group-that-provides-a-list-of-predefined-serial-numbers"></a>Konfigurere en sporingsnummergruppe som gir en liste over forhåndsdefinerte serienumre
 
@@ -185,13 +185,13 @@ For å generere en liste over forhåndsdefinerte serienumre følger du denne fre
 1. På **Generelt**-hurtigfanen angir du **Bare for lagertransaksjoner**-alternativet til **Ja**.
 1. Bruk **Per antall**-feltet til å dele serienumre per antall på én.
 
-    ![En sporingsnummergruppe for forhåndsdefinerte serienumre](media/tracking-number-group-predefined-sn.png "En sporingsnummergruppe for forhåndsdefinerte serienumre")
+    ![En sporingsnummergruppe for forhåndsdefinerte serienumre.](media/tracking-number-group-predefined-sn.png "En sporingsnummergruppe for forhåndsdefinerte serienumre")
 
 1. Angi andre verdier etter behov, og velg deretter denne sporingsnummergruppen som serienummergruppen for frigitte produkter som du vil bruke dette scenariet for.
 
 Når du bruker dette scenariet, er **Serienummer**-feltet som **Rapporter fremdrift**-siden på jobbkortenheten leverer, en rullegardinliste der arbeidere må velge en forhåndsdefinert verdi.
 
-![Side med fremdriftsrapport med en liste over forhåndsdefinerte serienumre](media/job-card-device-serial-predefined.png "Side med fremdriftsrapport med en liste over forhåndsdefinerte serienumre")
+![Side med fremdriftsrapport med en liste over forhåndsdefinerte serienumre.](media/job-card-device-serial-predefined.png "Side med fremdriftsrapport med en liste over forhåndsdefinerte serienumre")
 
 ### <a name="set-up-a-tracking-number-group-that-automatically-assigns-serial-numbers"></a>Konfigurere en sporingsnummergruppe som automatisk tilordner serienumre
 
@@ -202,13 +202,13 @@ Hvis et serienummer skal tilordnes automatisk uten inndata fra ansatte, følger 
 1. På **Generelt**-hurtigfanen angir du **Bare for lagertransaksjoner**-alternativet til **Nei**.
 1. Angi **Manuelt**-alternativet til **Nei**.
 
-    ![En sporingsnummergruppe for faste serienumre](media/tracking-number-group-fixed-sn.png "En sporingsnummergruppe for faste serienumre")
+    ![En sporingsnummergruppe for faste serienumre.](media/tracking-number-group-fixed-sn.png "En sporingsnummergruppe for faste serienumre")
 
 1. Angi andre verdier etter behov, og velg deretter denne sporingsnummergruppen som serienummergruppen for frigitte produkter som du vil bruke dette scenariet for.
 
 Når du bruker dette scenariet, viser **Serienummer**-feltet som **Rapporter fremdrift**-siden på jobbkortenheten leverer, en verdi, men arbeiderne kan ikke redigere den. Dette scenariet er bare relevant når en produksjonsordre opprettes for et antall på ett stykk av en serienummerkontrollert vare.
 
-![Side med fremdriftsrapport med et fastsatt serienummer](media/job-card-device-serial-fixed.png "Side med fremdriftsrapport med et fastsatt serienummer")
+![Side med fremdriftsrapport med et fastsatt serienummer.](media/job-card-device-serial-fixed.png "Side med fremdriftsrapport med et fastsatt serienummer")
 
 ## <a name="report-as-finished-to-a-license-plate"></a>Ferdigmeld til et nummerskilt
 
@@ -232,7 +232,7 @@ Følg denne fremgangsmåten for å kontrollere om arbeidere bør gjenbruke et ek
     - **Generer nummerskilt** – sett dette alternativet til **Ja** for å generere et nytt nummerskilt for hver rapport som fullføres. Angi **Nei** hvis det skal brukes et eksisterende nummerskilt for hver ferdigmelding.
     - **Skriv ut etikett** – sett dette alternativet til **Ja** hvis arbeideren må skrive ut en nummerskiltetikett for hver ferdigmelding. Angi **Nei** hvis det ikke kreves etiketter. 
 
-![Side for konfigurasjon av jobbkort for enheter](media/config-job-card-raf.png "Side for konfigurasjon av jobbkort for enheter")
+![Side for konfigurasjon av jobbkort for enheter.](media/config-job-card-raf.png "Side for konfigurasjon av jobbkort for enheter")
 
 > [!NOTE]
 > For å konfigurere etiketten går du til **Lagerstyring \> Oppsett \> Dokumentruting \> Dokumentruting**. Hvis du vil ha mer informasjon, kan du se [Aktivere utskrift av nummerskiltetiketter](../warehousing/tasks/license-plate-label-printing.md).

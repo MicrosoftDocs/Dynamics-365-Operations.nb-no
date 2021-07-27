@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d4a1c2f45d77c3ff9a7bb4dffaf12d877dc04e69
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 214f99563f8bb08d8c051f904d0ca0a88267aa6b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936786"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349656"
 ---
 # <a name="set-up-custom-pages-for-user-sign-ins"></a>Definere egendefinerte sider for brukerpålogginger
 
@@ -40,7 +40,7 @@ De egendefinerte Commerce-sidene kan bygges ved hjelp av modulen for pålogging,
 
 Når du konfigurerer Azure AD B2C-leieren og knytter den til handelsmiljøet, går du til **Azure AD B2C**-siden i Azure-portalen, og deretter, på menyen under **Policyer**, velger du **Brukerflyter (policyer)**.
 
-![Brukerflyter (policyer)-kommandoen på menyen](./media/B2C_CustomPage_PoliciesMenu.png)
+![Brukerflyter (policyer)-kommandoen på menyen.](./media/B2C_CustomPage_PoliciesMenu.png)
 
 Nå kan du konfigurere brukerpåloggingsflytene for registrering og pålogging, profilredigering og tilbakestilling av passord.
 
@@ -54,13 +54,13 @@ Følg denne fremgangsmåten for å konfigurere policyen for registrering og pål
 1. I kolonnen **Innhent attributt** merker du av for avmerkingsboksene for **E-postadresse**, **Gitt navn** og **Etternavn**.
 1. I kolonnen **Returkrav** merker du av for **E-postadresser**, **Gitt navn**, **Identitetsleverandør**, **Etternavn** og **Brukers objekt-ID**.
 
-    ![Valgte attributter og krav](./media/B2C_SignInSignUp_Attributes.png)
+    ![Valgte attributter og krav.](./media/B2C_SignInSignUp_Attributes.png)
 
 1. Velg **OK** for å opprette policyen.
 1. Dobbeltklikk det nye policynavnet, og velg deretter **Egenskaper** i navigasjonsruten.
 1. Sett alternativet for **Aktiver JavaScript-valg av sideoppsett (forhåndsvisning)** til **På**.
 
-    ![Egenskapsside for den nye policyen](./media/B2C_SignInSignUp_EnableJavascript.png)
+    ![Egenskapsside for den nye policyen.](./media/B2C_SignInSignUp_EnableJavascript.png)
 
 > [!NOTE]
 > Policynavnet blir fullstendig referert til i handelsmiljøet. (**B2C\_1\_** vil bli inkludert i referansen.) Policyer kan ikke endres etter at de er opprettet. Hvis du erstatter en eksisterende policy for handelsmiljøet ditt, kan du slette den opprinnelige policyen og bygge en ny policy som har samme navn. Hvis miljøet allerede er klargjort, er det også mulig å sende det nye policynavnet via en tjenesteforespørsel.
@@ -150,7 +150,7 @@ Følg disse trinnene for å oppdatere policyen for registrering og pålogging me
     1. For attributtene **E-postadresse**, **Gitt navn** og **Etternavn** velger du **Nei** i kolonnen **Valgfritt**.
 1. Velg **Lagre**.
 
-    ![Konfigurasjon av policy for registreringsside for lokal konto](./media/B2C_SignInSignUp_Recommended_PageLayoutExample.png)
+    ![Konfigurasjon av policy for registreringsside for lokal konto.](./media/B2C_SignInSignUp_Recommended_PageLayoutExample.png)
 
 ### <a name="update-the-profile-editing-policy-with-custom-page-information"></a>Oppdater policyen for profilredigering med egendefinert sideinformasjon
 
@@ -188,11 +188,11 @@ I modulbiblioteket er påloggingsmoduler forhåndsutfylt med standard tekststren
 
 Standardteksten for den glemte passordkoblingen er **Glemt passordet?**. Nedenfor vises denne standardteksten på påloggingssiden.
 
-![Standardtekst for koblingen for glemt passord på påloggingssiden](./media/B2C_SignUp_ModuleFace.png)
+![Standardtekst for koblingen for glemt passord på påloggingssiden.](./media/B2C_SignUp_ModuleFace.png)
 
 I global.json-filen for påloggingsmodulen for modulbiblioteket kan du redigere teksten til **Glemt passord?**, som vist i følgende illustrasjon.
 
-![Oppdatere koblingstekst i påloggingsmodulens global.json-fil](./media/B2C_CustomizingStringsForModule.png)
+![Oppdatere koblingstekst i påloggingsmodulens global.json-fil.](./media/B2C_CustomizingStringsForModule.png)
 
 Når du har oppdatert global.json-filen og publisert endringene, vises den nye koblingsteksten i påloggingsmodulen både på Commerce-siden og på den aktive påloggingssiden.
 

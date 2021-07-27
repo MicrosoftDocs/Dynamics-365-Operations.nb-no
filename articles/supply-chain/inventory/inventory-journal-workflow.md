@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: b53ecec4bb7593cb0a0cae72e4132c49d6ec6a68
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: bcb242214efab3fd632ea0b9e0f3329bb7821dc0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826017"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354767"
 ---
 # <a name="inventory-journal-approval-workflows"></a>Godkjenningsarbeidsflyter for lagerjournal
 
@@ -55,7 +55,7 @@ Slik oppretter du godkjenningsarbeidsflyter for lagerjournal:
     - **Lagerstykklistejournal**
     - **Lagerjusteringsjournal**
 
-    ![Dialogboksen Opprett arbeidsflyt](media/journal-workflow-create-workflow.png "Dialogboksen Opprett arbeidsflyt")
+    ![Dialogboksen Opprett arbeidsflyt.](media/journal-workflow-create-workflow.png "Dialogboksen Opprett arbeidsflyt")
 
 1. Appen for arbeidsflytredigering starter på maskinen din. (Du kan bli bedt om å godkjenne denne handlingen.) Bruk den til å utforme arbeidsflyten etter behov. Hvis du vil ha mer informasjon om hvordan du bruker arbeidsflytredigering, se [Oversikt over arbeidsflytsystem](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md).
 1. Når du har lagret og lukket appen for arbeidsflytredigering, må du velge om du vil aktivere denne arbeidsflytversjonen eller beholde den som inaktiv.
@@ -73,7 +73,7 @@ Slik knytter du en lagerjournalarbeidsflyt til et lagerjournalnavn:
 1. Velg et journalnavn fra listekolonnen for å åpne innstillingssiden.
 1. På **Generelt**-hurtigfanen angir du **Arbeidsflyt for godkjenning** til **Ja**. Hvis du blir bedt om å godkjenne handlingen, velger du **Ja**.
 
-    ![Tilordne en arbeidsflyt til et journalnavn](media/journal-workflow-journal-name.png "Tilordne en arbeidsflyt til et journalnavn")
+    ![Tilordne en arbeidsflyt til et journalnavn.](media/journal-workflow-journal-name.png "Tilordne en arbeidsflyt til et journalnavn")
 
 1. Åpne rullegardinlisten **Arbeidsflyt**, og velg den aktuelle arbeidsflyten. Listen viser hver aktive arbeidsflyt du har opprettet ved hjelp av appen for arbeidsflytredigering.
 
@@ -87,7 +87,7 @@ Når du har tilknyttet et lagerjournalnavn med den samsvarende godkjenningsarbei
 1. Fullfør journalen etter behov.
 1. Når du oppretter eller åpner en lagerjournal med en godkjenningsarbeidsflyt knyttet til den, er knappen **Arbeidsflyt** aktiv i handlingsruten. Når du er klar til å sende journalen til godkjenning, velger du **Arbeidsflyt**-knappen for å åpne en dialogboks, og deretter velger du **Send inn**. Godkjenningsforespørselen vil deretter rute til den aktuelle godkjenneren, som blir varslet ved hjelp av varslingsmetoden som er konfigurert for arbeidsflyten.
 
-    ![Sende inn en journal til godkjenning](media/journal-workflow-inventory-journal.png "Sende inn en journal til godkjenning")
+    ![Sende inn en journal til godkjenning.](media/journal-workflow-inventory-journal.png "Sende inn en journal til godkjenning")
 
 Hvis du vil tilbakekalle en godkjenningsforespørsel, åpner du den relevante journalen, velger **Arbeidsflyt**-knappen og velger deretter **Tilbakekall**. Dette vil tilbakestille arbeidsflyten.
 

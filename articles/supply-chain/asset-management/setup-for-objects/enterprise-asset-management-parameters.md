@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8df8e6204e9c64305387e6aed304142d7f13b33a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6affcc20c2c2e2b8fa9e38cb523e172bb2a79f22
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808334"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349824"
 ---
 # <a name="asset-management-parameters"></a>Parametere i Aktivastyring
 
@@ -99,7 +99,7 @@ Feltene som er beskrevet i listen nedenfor, er knyttet til beregnede vurderingsr
 
 ## <a name="the-document-types-tab"></a>Fanen Dokumenttyper
 
-Velg dokumenttypene som skal være tilgjengelige for utskrift av vedlegg som er knyttet til en arbeidsordrerapport. Denne gjøres ved å velge en en dokumenttype i delen **Tilgjengelig** og velge ![fremoverpilen](media/15-setup-for-objects.png). Hvis du vil fjerne en valgt dokumenttype, velger du dokumenttypen i delen **Valgt** og velger ![tilbakepilen](media/16-setup-for-objects.png).
+Velg dokumenttypene som skal være tilgjengelige for utskrift av vedlegg som er knyttet til en arbeidsordrerapport. Denne gjøres ved å velge en en dokumenttype i delen **Tilgjengelig** og velge ![fremoverpilen.](media/15-setup-for-objects.png). Hvis du vil fjerne en valgt dokumenttype, velger du dokumenttypen i delen **Valgt** og velger ![tilbakepilen](media/16-setup-for-objects.png).
 
 ## <a name="the-number-sequences-tab"></a>Fanen Nummerserier
 

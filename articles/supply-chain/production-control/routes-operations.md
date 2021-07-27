@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 06e2439da464c53fd648aaf3e3659babdbc50acd
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: bfcbeaa64aa00f19dc72cf5256ead47654808ed9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188940"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350504"
 ---
 # <a name="routes-and-operations"></a>Ruter og operasjoner
 
@@ -45,7 +45,7 @@ En rute beskriver rekkefølgen for operasjonene som brukes for å produsere et p
 
 En enkel rute er sekvensielle, og det er bare ett startpunkt for ruten.  
 
-[![Enkel rute](./media/routes-and-operations-1-simple-route.png)](./media/routes-and-operations-1-simple-route.png)  
+[![Enkel rute.](./media/routes-and-operations-1-simple-route.png)](./media/routes-and-operations-1-simple-route.png)  
 
 Hvis du bruker bare enkle ruter i Parametere for produksjonskontroll, genererer Supply Chain Management automatisk operasjonsnumrene (10, 20, 30 og så videre) når du definerer ruten.
 
@@ -53,7 +53,7 @@ Hvis du bruker bare enkle ruter i Parametere for produksjonskontroll, genererer 
 
 Hvis du bruker mer komplekse rutenettverk i Parametere for produksjonskontroll, kan du definere ruter som har flere startpunkt og operasjoner som kan kjøres parallelt.  
 
-[![Rutenettverk](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
+[![Rutenettverk.](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
 
 > [!NOTE]
 > - Hver operasjon kan ha bare én etterfølgende operasjon, og hele ruten må slutte i én enkelt operasjon.
@@ -64,7 +64,7 @@ Hvis du bruker mer komplekse rutenettverk i Parametere for produksjonskontroll, 
 
 Noen ganger kreves en kombinasjon av flere operasjonsressurser som har forskjellige egenskaper, for å utføre en operasjon. Det kan for eksempel hende en monteringsoperasjon krever en maskin, et verktøy og én arbeider for annenhver maskin for å ha oppsyn med operasjonen. Dette eksemplet kan modelleres ved hjelp av parallelle operasjoner, der én operasjon er angitt som den primære operasjonen og den andre er den sekundære.  
 
-[![Rute som har primære og sekundære operasjoner](./media/routes-and-operations-3-parallel-operations.png)](./media/routes-and-operations-3-parallel-operations.png)  
+[![Rute som har primære og sekundære operasjoner.](./media/routes-and-operations-3-parallel-operations.png)](./media/routes-and-operations-3-parallel-operations.png)  
 
 Vanligvis representerer den primære operasjonen flaskehalsressursen og fastsetter operasjonstiden for sekundære operasjoner. Under planlegging som omfatter begrenset kapasitet, må imidlertid ressurser som planlegges for både den primære operasjonen og sekundære operasjoner være tilgjengelige og ha ledig kapasitet på samme tid.  
 

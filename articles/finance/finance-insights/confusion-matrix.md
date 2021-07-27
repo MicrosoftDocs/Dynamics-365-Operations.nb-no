@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-14
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: fe652c32df9417f0f716242a24a26eabd1a16f65
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 32561935958268f35acc24f1cfb823546636c1f6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193546"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349064"
 ---
 # <a name="results-of-machine-learning-models-preview"></a>Resultat av maskinlæringsmodeller (forhåndsversjon)
 
@@ -34,7 +34,7 @@ Etter at et overvåket ML-problem er opplært basert på et sett med historiske 
 
 La oss si at målet er å forutsi om et kjæledyr er en hund eller katt, basert på noen fysiske attributter og atferdsattributter. Hvis du har et testdatasett som inneholder 30 hunder og 20 katter, kan det hende at forvirringsmatrisen ligner på følgende illustrasjon.
 
-![Eksempel på artsprediksjon](media/species-prediction-matrix.png)
+![Eksempel på artsprediksjon.](media/species-prediction-matrix.png)
 
 Tallene i de grønne cellene representerer riktige prediksjoner. Som du kan se, forutsier modellen en høyere prosent av de faktiske kattene riktig. Den generelle nøyaktigheten til modellen er enkel å beregne. I dette tilfellet er den 42 ÷ 50 eller 0,84.
 
@@ -44,7 +44,7 @@ De fleste diskusjoner om forvirringsmatrisen fokuserer på binære klassifiserer
 
 Nå skal vi vurdere et klassifiseringsproblem for et finansscenario med tre tilstander. Modellen forutsier om en kundefaktura kommer til å bli betalt til planlagt tid, for sent eller svært sent. La oss si at av 100 testfakturaer blir 50 betalt til planlagt tid, 35 betalt for sent og 15 betalt svært sent. I dette tilfellet kan en modell produsere en forvirringsmatrise som ligner på den følgende illustrasjonen.
 
-![Modell 1](media/payment-prediction-matrix.png)]
+![Modell 1.](media/payment-prediction-matrix.png)]
 
 En forvirringsmatrise gir betydelig mer informasjon enn en enkel måleverdi for nøyaktighet. Den er likevel relativt lett å forstå. En forvirringsmatrise forteller deg om du har et balansert datasett der utdataklassene har lignende antall. Når det gjelder scenarioet med flere klasser, forteller det deg hvor unøyaktig en prediksjon kan bli når utdataklassene er ordenstall, som i det foregående eksemplet med kundebetalinger.
 
@@ -55,7 +55,7 @@ Siden nøyaktighet er en enkel måling å forstå, er det et godt utgangspunkt f
 
 Hvis du vil ha en grundigere forståelse, må du imidlertid være oppmerksom på flere utfordringer knyttet til nøyaktighet. Hvor nyttig målingen er, avhenger av konteksten til problemet. Et spørsmål som ofte stilles i forhold til modellytelse, er «Hvor god er modellen?» Det er imidlertid ikke nødvendigvis et enkelt svar på dette spørsmålet. La oss se på den følgende forvirringsmatrisen (modell 2).
 
-![Eksempel på betalingsprediksjon med et større utvalg](media/payment-prediction-matrix-2.png)
+![Eksempel på betalingsprediksjon med et større utvalg.](media/payment-prediction-matrix-2.png)
 
 En rask beregning viser at denne modellens nøyaktighet er (70 + 10 + 3) ÷ 100 eller 0,83. Dette resultatet er tilsynelatende bedre enn resultatet for den forrige modellen med flere klasser (modell 1), som har en nøyaktighet på 0,73. Men er den bedre?
 
@@ -87,7 +87,7 @@ Det siste vi skal se på i dette emnet, er et mer avansert mål på ytelsen til 
 
 Før F1-nøyaktighet kan defineres, må to andre måleverdier introduseres: presisjon og tilbakekalling. Presisjon angir hvor mange av totalt antall prediksjoner som er angitt som positive, er riktig tilordnet. Denne måleverdien kalles også den positive forutsigende verdien. Tilbakekalling er det totale antallet av de faktiske positive tilfellene som ble riktig forutsagt. Denne måleverdien kalles også følsomhet.
 
-[![Sanne kontra usanne resultater](./media/tn-fn.png)](./media/tn-fn.png)
+[![Sanne kontra usanne resultater.](./media/tn-fn.png)](./media/tn-fn.png)
 
 I forvirringsmatrisen i den foregående illustrasjonen beregnes disse måleverdiene på følgende måte:
 
@@ -100,7 +100,7 @@ F1-målingen kombinerer presisjon og tilbakekalling. Resultatet er den harmonisk
 
 La oss se på et konkret eksempel. Tidligere i dette emnet var det et eksempel på en modell som forutsa om et dyr var en hund eller en katt. Illustrasjonen gjentas her.
 
-[![Eksempel på artsprediksjon (gjentatt)](./media/species-prediction-matrix.png)](./media/species-prediction-matrix.png)
+[![Eksempel på artsprediksjon (gjentatt).](./media/species-prediction-matrix.png)](./media/species-prediction-matrix.png)
 
 Her er resultatet hvis «Hund» brukes som det positive svaret.
 
@@ -114,9 +114,9 @@ Selv om det ikke er like lett å forstå F1-nøyaktighet, tilføyer det nyanse t
 
 Delen [Modellnøyaktighet](#model-accuracy) i dette emnet sammenlignet de to følgende forvirringsmatrisene. Selv om den første modellen hadde lavere nøyaktighet, ble den regnet for å være en nyttigere modell fordi den hadde større forbedring enn standardgjetningen for en betaling i tide.
 
-![Eksempel på betalingsprediksjon kontra faktiske tilfeller](media/payment-prediction-matrix.png)
+![Eksempel på betalingsprediksjon kontra faktiske tilfeller.](media/payment-prediction-matrix.png)
 
-![Eksempel på betalingsprediksjon med et større utvalg (gjentatt)](media/payment-prediction-matrix-2.png)
+![Eksempel på betalingsprediksjon med et større utvalg (gjentatt).](media/payment-prediction-matrix-2.png)
 
 La oss sammenligne disse to modellene når F1-poengsummen brukes. F1-poengsummen tar hensyn til presisjon og tilbakekalling for hver tilstand, og F1-makroberegningen beregner deretter gjennomsnittet av F1-poengsummen på tvers av tilstandene for å beregne en samlet F1-poengsum. Det finnes andre F1-varianter, men det er mer interessant å vurdere makroversjonen, gitt at det tas like stort hensyn til alle tre tilstandene.
 

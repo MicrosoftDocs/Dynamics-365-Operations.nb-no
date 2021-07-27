@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5b044e4616555559be51b0846327b1d55bfe47b3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 851cf6df576db303d9fefdcd0e732a92a019189a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822545"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354114"
 ---
 # <a name="set-up-preferred-maintenance-workers"></a>Definer foretrukne vedlikeholdspersoner
 
@@ -59,7 +59,7 @@ Jo flere valg du gjør for den samme posten, jo mer spesifikt blir oppsettet.
 
     [!NOTE] Når en foretrukket vedlikeholdsperson velges under planlegging av arbeidsordre, går vanligvis Aktivastyring gjennom alle **Foretrukne vedlikeholdspersoner**-postene for å se etter et mulig treff, og kontrollerer alltid den mest spesifikke kombinasjonen først. Hvis det ikke blir funnet noe treff, brukes standardposten med et valg i enten feltet **Foretrukket vedlikeholdsarbeidsgruppe** eller feltet **Foretrukket vedlikeholdsperson**.
 
-![Figur 1](media/02-work-order-scheduling.png)
+![Figur 1.](media/02-work-order-scheduling.png)
 
 Du kan også definere *ansvarlige* vedlikeholdspersoner som kan velges når en vedlikeholdsforespørsel eller arbeidsordre opprettes. I **Alle arbeidsordrer** og **Alle vedlikeholdsforespørsler** kan du redigere valget hvis det er nødvendig. Se [Ansvarlige vedlikeholdspersoner](../setup-for-maintenance-requests/responsible-workers.md) for å få mer informasjon.
 

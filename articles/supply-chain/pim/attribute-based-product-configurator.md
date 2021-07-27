@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sorenand
 ms.search.validFrom: 2020-08-17
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: c42a11055e98da59e0428a156ca127529589abab
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1538b806a60a9a9950f54c29bd19447c66ac9ec2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812936"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359107"
 ---
 # <a name="attribute-based-sales-prices-for-constraint-based-product-configuration"></a>Attributtbaserte salgspriser for begrensningsbasert produktkonfigurasjon
 
@@ -33,7 +33,7 @@ Slik angir du standardvalutaen:
 1. Åpne fanen **Begrensningsbaserte produktkonfigurasjonsmodeller**.
 1. Åpne rullegardinlisten **Standardvaluta**, og velg valuta.
 
-    ![Angi standardvaluta for begrensningsbasert produktkonfigurasjon](media/prod-config-currency.png "Angi standardvaluta for begrensningsbasert produktkonfigurasjon")
+    ![Angi standardvaluta for begrensningsbasert produktkonfigurasjon.](media/prod-config-currency.png "Angi standardvaluta for begrensningsbasert produktkonfigurasjon")
 
 1. Hvis du vil tilknytte en Excel-fil med prisoppdeling for alle ordre- eller tilbudslinjer, går du til delen **Prismodell** og setter **Legg ved** til *Ja*.
 
@@ -60,7 +60,7 @@ Følgende eksempel viser en basispris for et statisk antall på 899,95 EUR, som 
 - Legg til 119,95 EUR for skak i rosewood-finish.
 - Legg til 12,95 EUR for hver høyttalerhøyde.
 
-![Eksempel på prismodell](media/prod-config-rules-example.png "Eksempel på prismodell")
+![Eksempel på prismodell.](media/prod-config-rules-example.png "Eksempel på prismodell")
 
 ## <a name="add-support-for-multiple-currencies"></a>Legge til støtte for flere valutaer
 
@@ -81,7 +81,7 @@ Slik legger du til eksplisitte priser i tilleggsvaluta:
 
 I eksemplet nedenfor er _EUR_ standardvalutaen, og _USD_ er lagt til som en tilleggsvaluta.
 
-![Eksempel på en modell med flere valutaer](media/prod-config-rules-currency-example.png "Eksempel på en modell med flere valutaer")
+![Eksempel på en modell med flere valutaer.](media/prod-config-rules-currency-example.png "Eksempel på en modell med flere valutaer")
 
 > [!NOTE]
 > Du kan ikke legge til uttrykksregler som er unike for en valuta som ikke er standard. Hvis du vil opprette uttrykksregler som bare gjelder for en annen valuta enn standardvalutaen, kan du sette prisuttrykket for standardvalutaen til null. Deretter angir du det aktuelle uttrykket for valutaen som ikke er standard.
@@ -93,11 +93,11 @@ Hvis du vil teste hvordan salgsprisene fungerer i en konfigurasjonsøkt, åpner 
 - Bruk konfigurasjonsinnstillingene her til å velge produktalternativer, og se deretter hvordan de påvirker verdien som vises for **Pris og forsendelsesdato**.
 - Velg **Vis prisoppdeling** for å laste ned et Excel-dokument som viser detaljert informasjon om hvordan prisen ble beregnet.
 
-![Teste produktmodellen](media/prod-config-test.png "Teste produktmodellen")
+![Teste produktmodellen.](media/prod-config-test.png "Teste produktmodellen")
 
 Det nedlastede regnearket viser både absolutt verdi og dekning som en prosent for hvert aktive priselement. Hvis du har angitt alternativet **Legg ved** for prismodellen på siden **Parametere for produktinformasjonsbehandling**, blir dette Excel-arket lagt ved ordre- eller tilbudslinjen.
 
-![Excel-regneark som viser prisoppdeling](media/prod-config-excel-example.png "Excel-regneark som viser prisoppdeling")
+![Excel-regneark som viser prisoppdeling.](media/prod-config-excel-example.png "Excel-regneark som viser prisoppdeling")
 
 ## <a name="set-up-selection-criteria-for-price-models"></a>Konfigurere utvalgskriterier for prismodeller
 
@@ -116,7 +116,7 @@ Slik konfigurerer du utvalgskriterier for prismodeller:
     - **Gyldig fra** – Angi den første dagen spørringen skal gjelde.
     - **Utløp innen** – Angi den siste datoen spørringen skal gjelde.
 
-    ![Prismodellkriterier](media/prod-config-price-model-criteria.png "Prismodellkriterier")
+    ![Prismodellkriterier.](media/prod-config-price-model-criteria.png "Prismodellkriterier")
 
 1. Velg raden for spørringen du vil definere, og velg deretter **Rediger** i **handlingsruten**. Dialogboksen for spørringsutforming åpnes. Det fungerer som de fleste spørringsutformere i Supply Chain Management. Bruk dette til å definere vilkårene for bruk av prismodellen for den valgte raden.
 
@@ -137,7 +137,7 @@ Det siste trinnet er å angi attributtbaserte salgspriser for produktmodellversj
 1. Velg målproduktkonfigurasjonsmodellen.
 1. Åpne fanen **Modell** i handlingsruten, og gå til **Produktmodelldetaljer**-gruppen og velg **Versjoner**.
 1. **Versjoner**-siden åpnes. Kontroller at **Prismetode** er satt til **Attributtbasert**.
-    ![Sette prismetode til attributtbasert](media/prod-config-versions.png "Sette prismetode til attributtbasert")
+    ![Sette prismetode til attributtbasert.](media/prod-config-versions.png "Sette prismetode til attributtbasert")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

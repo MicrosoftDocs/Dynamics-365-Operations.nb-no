@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d776ad4eda623f55a69d81eefd0e88842d9da401
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 217c5d6d6df88eccf377fbf604eb0a1eb0ba7c9c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5841243"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344812"
 ---
 # <a name="invoice-automation-for-scanned-documents"></a>Fakturaautomatisering for skannede dokumenter
 
@@ -34,7 +34,7 @@ Fakturaautomatiseringsløsningen gjør det mulig å bruke et standardgrensesnitt
 
 Illustrasjonen nedenfor viser et eksempelscenario for integrasjon der Contoso samarbeider med en OCR-tjenesteleverandør for leverandørfakturabehandling. Contosos leverandører sender fakturaer til tjenesteleverandøren via e-post. Ved hjelp av OCR-behandling genererer tjenesteleverandøren fakturametadata (hode og/eller linjer) og et skannet bilde på fakturaen. Et lag med integrasjon omformer deretter disse artefaktene slik at de kan brukes.
 
-![Eksempelscenario for integrasjon](media/vendor_invoice_automation_01.png)
+![Eksempelscenario for integrasjon.](media/vendor_invoice_automation_01.png)
 
 Flere varianter av det forrige scenarioet er mulig hvis fakturaintegrasjon er nødvendig. Migrering av data er et annet brukstilfelle der dette grensesnittet kan brukes til å opprette fakturaer og vedlegg.
 
@@ -92,7 +92,7 @@ I situasjoner der leverandørfakturaer kommer til Finance and Operations via int
 
 Den nye listesiden for fakturaunntak er tilgjengelig på **Leverandører** > **Fakturaer** > **Importfeil** > **Leverandørfakturaer som ikke ble importert**. Denne siden viser alle hodepostene for leverandørfakturaer fra oppsamlingstabellen for dataenheten for leverandørfakturahode. Merk at du kan vise de samme postene fra arbeidsområdet **Dataadministrasjon**. Du kan også utføre de samme handlingene som er angitt i funksjonen for unntaksbehandling, fra arbeidsområdet **Dataadministrasjon**. Funksjonen for unntakshåndtering er optimalisert for en funksjonsbruker, som gjør det enklere å bruke den.
 
-![Side med liste over unntak](media/vendor_invoice_automation_02.png)
+![Side med liste over unntak.](media/vendor_invoice_automation_02.png)
 
 Denne listesiden inneholder følgende felt som kommer inn via feeden:
 
@@ -136,7 +136,7 @@ Unntakslistesiden støtter standard sikkerhetsbegreper som arbeidsområdet **Dat
 + Etter bruker
 + Etter juridisk enhet
 
-![Importjobb som er sikret etter brukerrolle og juridisk enhet](media/vendor_invoice_automation_04.png)
+![Importjobb som er sikret etter brukerrolle og juridisk enhet.](media/vendor_invoice_automation_04.png)
 
 Hvis sikkerheten er konfigurert for fakturaimportjobben, bruker unntakslistesiden disse innstillingene. Brukere vil kunne se bare fakturaunntakspostene som dette oppsettet tillater dem å se.
 

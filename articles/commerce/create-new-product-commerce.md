@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 44a58da0be280b06d96cdeae6929042bb50ed4a6
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 057acf50f16bef3eea55e51571cb6f49b79c5ab1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795721"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352428"
 ---
 # <a name="create-a-new-product-in-commerce"></a>Opprette et nytt produkt i Commerce
 
@@ -49,13 +49,13 @@ Et produkt er først og fremst definert av produktnummer, navn og beskrivelse. A
 
 Følgende bilde viser et eksempelprodukt som legges til.
 
-![Opprette et produkt](media/create-new-product.png)
+![Opprett et produkt.](media/create-new-product.png)
 
 Når et produkt er lagt til, kan ekstra data angis for det, for eksempel **Produktbeskrivelse**, **Variantgrupper**, **Dimensjonsgrupper**, **Produktattributter** og **Relaterte produkter**.
 
 Det følgende bildet viser flere detaljer for produktet.
 
-![Produktdetaljer](media/create-new-product-2.png)
+![Produktdetaljer.](media/create-new-product-2.png)
 
 ### <a name="create-product-variants"></a>Opprett produktvarianter
 
@@ -74,23 +74,23 @@ Hvis du vil selge et produkt, må det først frigis til en juridisk enhet.
 
 1. Fra produktsiden velger du **Frigi produkter**.
 
-    ![Frigi produkt](media/create-new-product-3.png)
+    ![Frigi produkt.](media/create-new-product-3.png)
 
 1. Velg produktet som skal frigis, og velg deretter **Neste**.
 
-    ![Velg produktet som skal frigis](media/create-new-product-4.png)
+    ![Velg produktet som skal frigis.](media/create-new-product-4.png)
 
 1. Velg produktvariantsettet som skal frigis, og velg deretter **Neste**.
 
-    ![Velg variantene som skal frigis](media/create-new-product-5.png)
+    ![Velg variantene som skal frigis.](media/create-new-product-5.png)
 
 1. Velg den juridiske enheten, og velg deretter **Neste**.
 
-    ![Velg juridisk enhet](media/create-new-product-6.png)
+    ![Velg juridisk enhet.](media/create-new-product-6.png)
 
 1. Velg **Fullfør**.
 
-    ![Avslutte produktfrigivelse](media/create-new-product-7.png)
+    ![Avslutt produktfrigivelse.](media/create-new-product-7.png)
 
 ## <a name="configure-a-released-product"></a>Konfigurer et frigitt produkt
 
@@ -105,7 +105,7 @@ Når et produkt er frigitt, vil det kreve ytterligere konfigurasjon som omfatter
 
 Bildet nedenfor viser en eksempelkonfigurasjon for et frigitt produkt.
 
-![Konfigurere et frigitt produkt](media/create-new-product-8.png)
+![Konfigurer et frigitt produkt.](media/create-new-product-8.png)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

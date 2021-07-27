@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9d5e6bb5e070ebbcdb7e99b1b70010acd5fca5ac
-ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
+ms.openlocfilehash: 4e1c70dd0fa89c6cc5a8b4778b073d1cf4a3dadd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6224107"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355328"
 ---
 # <a name="supported-primitive-data-types-for-electronic-reporting-formulas"></a>Støttede primitive datatyper for formler i elektronisk rapportering
 
@@ -112,13 +112,13 @@ En *opplisting* for program kan brukes i uttrykk i enhver ER-modelltilordning og
 
 Illustrasjonen nedenfor viser hvordan du kan legge til modellopplistingen **CustVendCorrectiveReasonCode** i den redigerbare ER-datamodellen.
 
-[![Konfigurere en modellopplisting i ER-datamodellutformingen](./media/er-formula-supported-data-types-primitive-enum1.gif)](./media/er-formula-supported-data-types-primitive-enum1.gif)
+[![Konfigurere en modellopplisting i ER-datamodellutformingen.](./media/er-formula-supported-data-types-primitive-enum1.gif)](./media/er-formula-supported-data-types-primitive-enum1.gif)
 
 En modell *opplisting* kan brukes i uttrykk i enhver ER-modelltilordning og ethvert ER-format som ble opprettet under en datamodell der *opplistingen* ble innført.
 
 Illustrasjonen nedenfor viser hvordan du kan legge til formatopplistingen **Liste over underkategorier for snudd avregning for Natura** i det redigerbare ER-formatet.
 
-[![Konfigurere en formatopplisting i ER-formatutformingen](./media/er-formula-supported-data-types-primitive-enum2.gif)](./media/er-formula-supported-data-types-primitive-enum2.gif)
+[![Konfigurere en formatopplisting i ER-formatutformingen.](./media/er-formula-supported-data-types-primitive-enum2.gif)](./media/er-formula-supported-data-types-primitive-enum2.gif)
 
 En format *opplisting* kan bare brukes i uttrykk av ER-formatet der *opplistingen* ble innført.
 
@@ -126,15 +126,15 @@ Du må bruke riktig type ER-datakilder til å overføre en bestemt opplisting ti
 
 - Du får tilgang til programopplistinger ved hjelp av datakildene **Dynamics 365 for Operations \ Opplisting** og **Generelt \ Inndataparametere for brukere**. Illustrasjonen nedenfor viser hvordan du kan legge til det redigerbare ER-formatet i datakildene **appenumNoYes** og **uipNoYes** som refererer til programopplistingen **NoYes**.
 
-    [![Legge til datakilder for programopplisting i ER-formatutforming](./media/er-formula-supported-data-types-primitive-enum3a.gif)](./media/er-formula-supported-data-types-primitive-enum3a.gif)
+    [![Legge til datakilder for programopplisting i ER-formatutforming.](./media/er-formula-supported-data-types-primitive-enum3a.gif)](./media/er-formula-supported-data-types-primitive-enum3a.gif)
 
 - Du kan få tilgang til datamodellopplistinger ved hjelp av datakildene **Datamodell \ Opplisting** og **Datamodell \ Inndataparametere for brukere for opplisting**. Illustrasjonen nedenfor viser hvordan du kan legge til det redigerbare ER-formatet i datakilden **CustVendCorrectiveReasonCode** som henviser til datamodellopplistingen **CustVendCorrectiveReasonCode**.
 
-    [![Legge til datakilder for modellopplisting i ER-formatutforming](./media/er-formula-supported-data-types-primitive-enum3b.gif)](./media/er-formula-supported-data-types-primitive-enum3b.gif)
+    [![Legge til datakilder for modellopplisting i ER-formatutforming.](./media/er-formula-supported-data-types-primitive-enum3b.gif)](./media/er-formula-supported-data-types-primitive-enum3b.gif)
 
 - Du får tilgang til formatopplistinger ved hjelp av datakildene **Format \ Opplisting** og **Format \ Inndataparametere for brukere for opplisting**. Illustrasjonen nedenfor viser hvordan du kan legge til det redigerbare ER-formatet i datakilden **NaturaReverseCharge** som henviser til formatopplistingen **Underkategorier for snudd avregning for Natura**.
 
-    [![Legge til datakilder for formatopplisting i ER-formatutforming](./media/er-formula-supported-data-types-primitive-enum3c.gif)](./media/er-formula-supported-data-types-primitive-enum3c.gif)
+    [![Legge til datakilder for formatopplisting i ER-formatutforming.](./media/er-formula-supported-data-types-primitive-enum3c.gif)](./media/er-formula-supported-data-types-primitive-enum3c.gif)
 
 En *opplisting* har ingen implisitte konverteringer. Du kan imidlertid bruke konverteringsfunksjonen [TEXT](er-functions-text-text.md) til å konvertere en *opplisting* til en tekststreng. Denne konverteringen er ikke språkavhengig. Hvis du vil vite hvordan du kan knytte en *opplisting* sverdi til de aktuelle språkspesifikke etikettene, kan du se brukseksemplene for funksjonene [LISTOFFIELDS](er-functions-list-listoffields.md) og [GETENUMVALUEBYNAME](er-functions-text-getenumvaluebyname.md).
 

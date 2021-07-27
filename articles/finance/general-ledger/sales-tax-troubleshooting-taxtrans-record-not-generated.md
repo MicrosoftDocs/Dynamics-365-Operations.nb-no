@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 74987506699834d86703702106e5abf87bfa45da
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 284fd4047347386b3893684f077a5980f98a6788
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018787"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350006"
 ---
 # <a name="taxtrans-record-isnt-generated"></a>TaxTrans-post blir ikke generert
 
@@ -26,7 +26,7 @@ ms.locfileid: "6018787"
 
 Hvis du velger **Postert merverdiavgift** for en transaksjon, men **Postert merverdiavgift** -siden enten viser ingen mva-linjer eller mangler en mva-linje, kan det hende at **TaxTrans**-posten ikke er generert.
 
-[![Postert merverdiavgift-side som ikke har noen linjeelementer](./media/taxtrans-is-not-generated-Picture1.png)](./media/taxtrans-is-not-generated-Picture1.png)
+[![Postert merverdiavgift-side som ikke har noen linjeelementer.](./media/taxtrans-is-not-generated-Picture1.png)](./media/taxtrans-is-not-generated-Picture1.png)
 
 Hvis du vil feilsøke dette problemet, følger du trinnene i de følgende delene etter behov.
 
@@ -34,7 +34,7 @@ Hvis du vil feilsøke dette problemet, følger du trinnene i de følgende delene
 
 1. Før du posterer transaksjonen, velger du **Merverdiavgift** på siden **Postering av faktura** for å kontrollere beregningen.
 
-    [![Mva-knappen på Postering av faktura-siden](./media/taxtrans-is-not-generated-Picture2.png)](./media/taxtrans-is-not-generated-Picture2.png)
+    [![Mva-knappen på Postering av faktura-siden.](./media/taxtrans-is-not-generated-Picture2.png)](./media/taxtrans-is-not-generated-Picture2.png)
 
 2. Gå gjennom resultatet av beregningen på siden **Midlertidige mva-transaksjoner**. Hvis det ikke beregnes avgift, kan du se [Avgift beregnes ikke eller avgiftsbeløpet er null](sales-tax-troubleshooting-tax-not-calculated-amount-zero.md).
 
@@ -44,16 +44,16 @@ Hvis du vil feilsøke dette problemet, følger du trinnene i de følgende delene
 2. Velg filtersymbolet i **Bilag**-kolonneoverskriften for å finne **TaxTrans**-posten.
 3. Hvis du finner mva-postene du leter etter, kan du kontrollere datoen. Hvis datoen er forskjellig fra datoen på journalhodet, oppretter du en Forespørsel om Microsoft-tjeneste for mer støtte.
 
-    [![Siden Postert merverdiavgift](./media/taxtrans-is-not-generated-Picture4.png)](./media/taxtrans-is-not-generated-Picture4.png)
+    [![Siden Postert merverdiavgift.](./media/taxtrans-is-not-generated-Picture4.png)](./media/taxtrans-is-not-generated-Picture4.png)
 
 ## <a name="debug-to-check-details"></a>Feilsøke for å kontrollere detaljer
 
 1. Hvis du vil ha mer informasjon om hvordan du feilsøker og finner ut om **TmpTaxWorkTrans** og **TaxUncommitted** er riktig generert, kan du se [Feltverdi i TaxTrans er feil](sales-tax-troubleshooting-field-value-taxtrans-incorrect.md).
 2. Hvis **TaxTmpWorkTrans** eller **TaxUncommitted** genereres på riktig måte, legger du til et stoppunkt på **TaxPost::SaveAndPost()** og **Tax::SaveAndPost** for å feilsøke årsaken til at **TaxTrans** ikke er satt inn.
 
-    [![Stoppunkt som er lagt til i kode](./media/taxtrans-is-not-generated-Picture5.png)](./media/taxtrans-is-not-generated-Picture5.png)
+    [![Stoppunkt som er lagt til i kode.](./media/taxtrans-is-not-generated-Picture5.png)](./media/taxtrans-is-not-generated-Picture5.png)
 
-    [![Resultater av nye stoppunkter](./media/taxtrans-is-not-generated-Picture6.png)](./media/taxtrans-is-not-generated-Picture6.png)
+    [![Resultater av nye stoppunkter.](./media/taxtrans-is-not-generated-Picture6.png)](./media/taxtrans-is-not-generated-Picture6.png)
 
 ## <a name="determine-whether-customization-exists"></a>Fastslå om det finnes tilpasning
 

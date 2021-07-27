@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0a3fd442f20fd40cdf8b845d353ae5d61ce51e29
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 026a549bfb856abc56eeaab21c681a8271ce4f44
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797653"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347522"
 ---
 # <a name="content-block-module"></a>Innholdsblokkmodul
 
@@ -46,15 +46,15 @@ I tillegg kan temaet vise forskjellige egenskaper for hvert oppsett. En temautvi
 
 Bildet nedenfor viser et eksempel på en innholdsblokkmodul med et hovedbanneroppsett.
 
-![Eksempel på en hovedbannermodul](./media/Hero.PNG)
+![Eksempel på en hovedbannermodul.](./media/Hero.PNG)
 
 Bildet nedenfor viser et eksempel på en innholdsblokkmodul med et funksjonsoppsett.
 
-![Eksempler på funksjonsmoduler](./media/Feature.PNG)
+![Eksempler på funksjonsmoduler.](./media/Feature.PNG)
 
 ## <a name="content-block-module-properties"></a>Egenskaper for innholdsblokkmodul
 
-| Egenskapsnavn  | Verdier | Beskrivelse |
+| Egenskapsnavn  | Verdier | beskrivelse |
 |----------------|--------|-------------|
 | Bilde          | Bildefil | Et bilde kan brukes til å vise et produkt eller en kampanje. Et bilde kan lastes opp til bildegalleriet, eller det kan brukes et eksisterende bilde. |
 | Overskrift        | Overskriftstekst og overskriftskode (**H1**, **H2**, **H3**, **H4**, **H5** eller **H6**) | Alle hovedbannermoduler kan ha en overskrift. Som standard brukes **H2**-overskriftskoden for overskriften. Koden kan imidlertid endres for å oppfylle tilgjengelighetskravene. |

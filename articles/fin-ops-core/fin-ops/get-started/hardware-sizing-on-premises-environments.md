@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 1ef427ff57c79b64a2435edd902e09a7d99e81d9
-ms.sourcegitcommit: 4a508bd11267f24eeb774af57faa56369beacf51
+ms.openlocfilehash: 460297651f2766f96c34b258edbe94a7114ee090
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "6168735"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343964"
 ---
 # <a name="hardware-sizing-requirements-for-on-premises-environments"></a>Krav til størrelsesangivelse for maskinvare for lokale miljøer
 
@@ -36,7 +36,7 @@ Når du har gått gjennom dokumentasjonen, kan du starte prosessen med å beregn
 
 Alle faktorene som vises i den følgende illustrasjonen, bidrar til størrelse. Jo mer detaljert informasjon som samles inn, jo mer nøyaktig kan du bestemme størrelse. Maskinvarestørrelse, uten støttedata, vil sannsynlig bli unøyaktig. Det absolutte minstekravet for nødvendige data er toppverdi for transaksjonslinjer per time.
 
-[![Størrelsesangivelse for maskinvare for lokale miljøer](./media/lbd-sizing-01.png)](./media/lbd-sizing-01.png)
+[![Størrelsesangivelse for maskinvare for lokale miljøer.](./media/lbd-sizing-01.png)](./media/lbd-sizing-01.png)
 
 Sett fra venstre mot høyre, er den første og viktigste faktoren som kreves for å beregne nøyaktig størrelse, en transaksjonsprofil eller en transaksjonenkarakterisering. Det er viktig at du alltid finner toppverdien for transaksjonsvolum per time. Hvis det finnes flere perioder med stor belastning, må disse periodene defineres korrekt.
 
