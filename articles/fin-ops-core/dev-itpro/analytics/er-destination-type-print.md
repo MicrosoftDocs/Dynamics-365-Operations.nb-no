@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 7749a458020de664d00e81ccf0e480ae459da617
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: b79c93c4920d7f40e88aa7d463961128ea9e83c8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894010"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347930"
 ---
 # <a name="printer-destination"></a><a name="PrinterDestinationType"></a>Skrivermål
 
@@ -39,7 +39,7 @@ Hvis du vil gjøre **Skriver**-målet tilgjengelig i gjeldende forekomst av Micr
 1. Konvertere utgående dokumenter for elektronisk rapportering fra Microsoft Office-formater til PDF
 2. Dokumentrutingsagent som mål for elektronisk rapportering for utgående dokumenter
 
-[![Aktivere målfunksjonen for ER-skriveren i Funksjonsstyring](./media/ER_Destinations-EnablePrinterDestinationFeature.png)](./media/ER_Destinations-EnablePrinterDestinationFeature.png)
+[![Aktivere målfunksjonen for ER-skriveren i Funksjonsstyring.](./media/ER_Destinations-EnablePrinterDestinationFeature.png)](./media/ER_Destinations-EnablePrinterDestinationFeature.png)
 
 ### <a name="applicability"></a>Relevans
 
@@ -55,7 +55,7 @@ Hvis du vil gjøre **Skriver**-målet tilgjengelig i gjeldende forekomst av Micr
 2. I **Skrivernavn**-feltet velger du påkrevd nettverksskriver.
 3. Sett **Lagre i utskriftsarkiv?**-alternativet til **Ja** for å lagre de genererte utdataene i utskriftsarkivet, slik at de er tilgjengelige for videre utskrift. Hvis du vil ha tilgang til arkiverte utdata senere, går du til **Organisasjonsstyring** \> **Forespørsler og rapporter** \> **Rapportarkiv**.
 
-[![Bruke skrivermålet](./media/ER_Destinations-PrinterDestination.png)](./media/ER_Destinations-PrinterDestination.png)
+[![Bruke skrivermålet.](./media/ER_Destinations-PrinterDestination.png)](./media/ER_Destinations-PrinterDestination.png)
 
 > [!NOTE]
 > **Konverter til PDF**-alternativet trenger ikke å være aktivert når du konfigurerer **Skriver**-målet. PDF-konverteringen for utskriftsformål vil finne sted selv om alternativet er deaktivert.

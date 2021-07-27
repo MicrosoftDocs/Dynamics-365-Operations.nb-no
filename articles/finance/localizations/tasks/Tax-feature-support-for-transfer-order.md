@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 3a5c2b6fb48d98ba045c77ed034d976f7d89af98
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 7b97eca8c2d4fe9f71c3cd8f1e40a3bbb7ee4879
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021375"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348422"
 ---
 # <a name="tax-feature-support-for-transfer-orders"></a>Støtte for avgiftsfunksjon for overføringsordrer
 
@@ -40,7 +40,7 @@ Følg denne fremgangsmåten for å definere avgiften som er involvert i en overf
 
 1. På siden **Avgiftsfunksjoner**, på **Versjoner**-fanen velger du utkastfunksjonsversjonen, og deretter velger du **Rediger**.
 
-    ![Valg av Rediger](../media/tax-feature-support-01.png)
+    ![Valg av Rediger.](../media/tax-feature-support-01.png)
 
 2. På siden **Oppsett av avgiftsfunksjoner**, på fanen **Avgiftskoder**, velger du **Legg til** for å opprette nye avgiftskoder. For dette eksemplet opprettes det tre avgiftskoder: **NL-Exempt**, **BE-RC-21** og **BE-RC+21**.
 
@@ -53,7 +53,7 @@ Følg denne fremgangsmåten for å definere avgiften som er involvert i en overf
         4. Velg **Legg til** i **Sats**-tabellen.
         5. Bytt **Er Fritak** til **Ja** i **Generelt**-delen.
 
-        ![Avgiftskoden NL-Exempt](../media/tax-feature-support-02.png)
+        ![Avgiftskoden NL-Exempt.](../media/tax-feature-support-02.png)
 
     - Når en overføringsordre mottas ved et lager i Belgia, brukes mekanismen for snudd avregning ved hjelp av avgiftskodene **BE-RC-21** og **BE-RC+21**.
         
@@ -66,7 +66,7 @@ Følg denne fremgangsmåten for å definere avgiften som er involvert i en overf
         6. Bytt **Er Snudd avregning** til **Ja** i **Generelt**-delen.
         7. Velg **Lagre**.
 
-        ![BE-RC-21-avgiftskoden for snudd avregning](../media/tax-feature-support-03.png)
+        ![BE-RC-21-avgiftskoden for snudd avregning.](../media/tax-feature-support-03.png)
         
         Opprett avgiftskoden **BE-RC+21**.
         1. Velg **Legg til**, angi **BE-RC-21** i feltet **Mva-kode**.
@@ -76,7 +76,7 @@ Følg denne fremgangsmåten for å definere avgiften som er involvert i en overf
         5. Angi **21** i **Avgiftssats**-feltet.
         6. Velg **Lagre**.
 
-        ![BE-RC+21-avgiftskoden for snudd avregning](../media/tax-feature-support-04.png)
+        ![BE-RC+21-avgiftskoden for snudd avregning.](../media/tax-feature-support-04.png)
 
 3. Definer relevansen for avgiftskodene.
 
@@ -105,11 +105,11 @@ Følg denne fremgangsmåten for å definere avgiften som er involvert i en overf
         6. I **Avgiftskoder**-feltet velger du **BE-RC+21** og **BE-RC-21**.
         7. I **Avgiftsgruppe**-feltet og i **Vareavgiftsgruppe** angir du den relatert mva-gruppen og vareavgiftsgruppen som er definert i Finance-systemet ditt.
 
-        ![Relevansregler](../media/image5.png)
+        ![Relevansregler.](../media/image5.png)
 
 4. Fullfør og publiser den nye avgiftsfunksjonsversjonen.
 
-    [![Endring av statusen for den nye versjonen](../media/image6.png)](../media/image6.png)
+    [![Endring av statusen for den nye versjonen.](../media/image6.png)](../media/image6.png)
 
 ## <a name="set-up-finance-for-transfer-order-transactions"></a>Konfigurer Finance for avgiftsordretransaksjoner
 
@@ -121,7 +121,7 @@ Følg disse trinnene for å aktivere og konfigurere avgifter for overføringsord
     > [!IMPORTANT]
     > Funksjonen **Avgift i overføringsordre** er fullstendig avhengig av avgiftstjenesten. Derfor kan den bare aktiveres etter at du har installert avgiftstjenesten.
 
-    ![Funksjonen Avgift i overføringsordre](../media/image7.png)
+    ![Funksjonen Avgift i overføringsordre.](../media/image7.png)
 
 3. Aktiver avgiftstjenesten, og velg forretningsprosessen **Beholdning**.
 
@@ -131,11 +131,11 @@ Følg disse trinnene for å aktivere og konfigurere avgifter for overføringsord
     1. Gå til **Avgift** \> **Oppsett** \> **Avgiftskonfigurasjon** \> **Oppsett av avgiftstjeneste**.
     2. I **Forretningsprosess**-feltet velger du **Beholdning**.
 
-    ![Angi Forretningsprosess-feltet](../media/image8.png)
+    ![Angi Forretningsprosess-feltet.](../media/image8.png)
 
 4. Kontroller at mekanismen for snudd avregning er konfigurert. Gå til **Økonomimodul** \> **Oppsett** \> **Parametere**, og gå deretter til fanen **Snudd avregning** og bekreft at **Aktiver snudd avregning** er satt til **Ja**.
 
-    ![Aktiver alternativet for snudd avregning](../media/image9.png)
+    ![Aktiver alternativet for snudd avregning.](../media/image9.png)
 
 5. Kontroller at de tilknyttede avgiftskodene, avgiftsgruppene, vareavgiftsgruppene og mva-registreringsnumrene er definert i Finance i henhold til retningslinjene for avgiftstjenesten.
 6. Definer en midlertidig transittkonto. Dette trinnet er bare nødvendig når avgiften som brukes på overføringsordrer, ikke gjelder for en mekanisme for avgiftsfritak eller snudd avregning.
@@ -143,7 +143,7 @@ Følg disse trinnene for å aktivere og konfigurere avgifter for overføringsord
     1. Gå til **Avgift** \> **Oppsett** \> **Merverdiavgift** \> **Finansposteringsgrupper**.
     2. I feltet **Midlertidig transitt** velger du en finanskonto.
 
-    ![Velge en midlertidig transittkonto](../media/image10.png)
+    ![Velge en midlertidig transittkonto.](../media/image10.png)
 
 ## <a name="set-up-basic-inventory-for-transfer-order-transactions"></a>Konfigurer enkel beholdning for avgiftsordretransaksjoner
 
@@ -158,7 +158,7 @@ Følg denne fremgangsmåten for å sette opp enkel beholdning for å aktivere ov
     > [!NOTE]
     > Ett av stedene du oppretter, bør ha navnet **Transitt**. I senere trinn i denne fremgangsmåten tilordner du dette området til transittlageret, slik at avgiftsrelaterte beholdningsbilag kan posteres i "send"- og "motta"-transaksjoner for overføringsordrer. Adressen til transittstedet er ikke relevant for avgiftsberegningen. Du kan derfor la det stå tomt.
 
-    ![Sette opp steder](../media/image11.png)
+    ![Sette opp steder.](../media/image11.png)
 
 2. Opprett lagre for send fra, transitt og send til. Alle adresseopplysninger som vedlikeholdes på et lager, vil overstyre stedsadressen under avgiftsberegningen.
 
@@ -166,24 +166,24 @@ Følg denne fremgangsmåten for å sette opp enkel beholdning for å aktivere ov
     2. Velg **Ny** for å opprette et lager, og tilordne det til det tilsvarende stedet.
     3. Gjenta trinn 2 for å opprette et lager for hvert sted etter behov.
 
-    ![Definere lagre](../media/image12.png)
+    ![Definere lagre.](../media/image12.png)
 
     > [!NOTE]
     > For et send fra-lager må et transittlager være valgt i i **Transittlager**-feltet for overføringsordretransaksjoner.
     >
-    > ![Velge et transittlager](../media/image13.png)
+    > ![Velge et transittlager.](../media/image13.png)
 
 3. Kontroller at konfigurasjonen for beholdningspostering er definert for overføringsordretransaksjoner.
 
     1. Gå til **Lagerstyring** \> **Oppsett** \> **Postering** \> **Postering**.
     2. På **Beholdning**-fanen kontrollerer du at en beholdningskonto er definert både for postering av **Lageravgang** og **Lagertilgang**.
 
-        ![Definere lageravgangs- og lagertilgangspostering](../media/image14.png)
+        ![Definere lageravgangs- og lagertilgangspostering.](../media/image14.png)
 
     3. Kontroller at en finanskonto er satt opp for postering av typen **Overføring, skyldig**.
 
-        ![Definere postering av typen Overføring, skyldig](../media/image15.png)
+        ![Definere postering av typen Overføring, skyldig.](../media/image15.png)
 
     4. Kontroller at en finanskonto er satt opp for postering av typen **Overføring, tilgode**.
 
-        ![Definere postering av typen Overføring, tilgode](../media/image16.png)
+        ![Definere postering av typen Overføring, tilgode.](../media/image16.png)

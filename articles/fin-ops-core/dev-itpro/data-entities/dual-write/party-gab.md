@@ -9,12 +9,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: c62290506d32579d926ad1a1d6f090845c0d0f26
-ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
+ms.openlocfilehash: ce246a51c75cc322f1cfea70c47f00c7dd750ea2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6216618"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346626"
 ---
 # <a name="party-and-global-address-book"></a>Part og global adressebok
 
@@ -41,7 +41,7 @@ Partsmodellen brukes ofte til å representere middels til komplekse relasjoner m
 
 Følgende bilde viser datamodellen for part.
 
-![Datamodell for part](media/party-gab-image1.png)
+![Datamodell for part.](media/party-gab-image1.png)
 
 > [!TIP]
 > Når du prøver å opprette en ny kontopost, bruker du **Part** -feltet til å søke etter posten per navn. Hvis du finner posten, trenger du da bare å velge posten. Systemet fyller automatisk ut alle dataene fra parten. Du trenger ikke angi alle de nødvendige feltene manuelt. Du finner denne virkemåten på **Konto-**, **Kontakt-** og **Leverandør**-sidene som følger med.
@@ -58,7 +58,7 @@ Det kan hende at en person eller en organisasjon spiller mer enn én rolle, og d
 
 Illustrasjonen nedenfor viser datamodellen for den globale adresseboken.
 
-![Datamodell for den globale adresseboken](media/party-gab-image2.png)
+![Datamodell for den globale adresseboken.](media/party-gab-image2.png)
 
 ## <a name="contact"></a>Kontakt
 
@@ -94,7 +94,7 @@ Disse relasjonene er lagret i tabellen **Kontakt for part**. Du finner denne inf
     + Hvis du velger verdi i feltet **Tilknyttet kontakt**, velger du den stripede kontakten som er av typen **Person**.
     + Hvis du velger en verdi i feltet **Tilknyttet konto** eller **Tilknyttet leverandør**, velger du en organisasjon.
 
-    ![Kategorien Tilknyttede organisasjoner på kontaktsiden](media/party-gab-image3.png)
+    ![Kategorien Tilknyttede organisasjoner på kontaktsiden.](media/party-gab-image3.png)
 
     Uansett hva du velger, opprettes tilknytningen på partsnivå og gjelder alle rollene til parten og lagres i **Kontakt for part**-enheten.
 
@@ -109,7 +109,7 @@ Når du åpner en **Kontakt**-rad der enten **Er kunde**-feltet eller **Er lever
 
 En ny fane med navnet **Adresser** er innført på sidene **Konto**, **Kontakt** og **Leverandør**. Denne kategorien støtter flere postadresser ved hjelp av et rutenett, som vist i illustrasjonen nedenfor.
 
-![Rutenett for postadresser](media/party-gab-image4.png)
+![Rutenett for postadresser.](media/party-gab-image4.png)
 
 Rutenettet inneholder følgende kolonner:
 
@@ -121,7 +121,7 @@ Du kan bruke **Ny adresse**-knappen over rutenettet til å opprette så mange po
 
 Feltene **Adresse 1** og **Adresse 2** på **Sammendrag**-fanen på **Konto**-siden samsvarer med henholdsvis **Levering**- og **Faktura**-adressene.
 
-![Sammendrag-fanen for postadresser](media/party-gab-image5.png)
+![Sammendrag-fanen for postadresser.](media/party-gab-image5.png)
 
 Feltene **Adresse 1**, **Adresse 2** og **Adresse 3** på **Sammendrag**-fanen i **Kontakt**-siden samsvarer med henholdsvis **Forretning**-, **Levering**- og **Faktura**-adressene.
 
@@ -129,7 +129,7 @@ Feltene **Adresse 1**, **Adresse 2** og **Adresse 3** på **Sammendrag**-fanen i
 
 En ny fane med navnet **Elektroniske adresser** er innført på sidene **Konto**, **Kontakt** og **Leverandør**. Denne kategorien støtter flere elektroniske adresser ved hjelp av et rutenett, som vist i illustrasjonen nedenfor.
 
-![Rutenett for elektroniske adresser](media/party-gab-image6.png)
+![Rutenett for elektroniske adresser.](media/party-gab-image6.png)
 
 Rutenettet inneholder følgende kolonner:
 
@@ -205,7 +205,7 @@ Elektroniske adresser er bare tilgjengelige i dette rutenettet. I fremtidige ver
     | Parts-ID (felt) | Nøyaktig samsvar |
     | Velg (felt) | (tomt) |
 
-    ![Duplikatregel for kontoer](media/duplicate-rule-1.PNG)
+    ![Duplikatregel for kontoer.](media/duplicate-rule-1.PNG)
 
 10. Utvid duplikatregistreringsregelen for **Kontakter**-tabellen ved å angi følgende felt.
 
@@ -221,7 +221,7 @@ Elektroniske adresser er bare tilgjengelige i dette rutenettet. I fremtidige ver
     | Parts-ID (felt) | Nøyaktig samsvar |
     | Velg (felt) | (tomt) |
 
-    ![Duplikatregel for kontakter](media/duplicate-rule-2.PNG)
+    ![Duplikatregel for kontakter.](media/duplicate-rule-2.PNG)
 
 11. Hvis du er en eksisterende kunde med dobbel skriving, følger du instruksjonene i [Oppgrader til parten og den globale adressebokmodellen](upgrade-party-gab.md) og oppgraderer dataene.
 
@@ -300,11 +300,11 @@ Hvis du vil ha mer informasjon, kan du se [Referanse for lesetilgang til skrivet
 + Elektroniske adresser angitt i elektronisk adresse-fanen i **Konto**, **Kontakt** og **Leverandør**-skjemaer, kommer fra `msdyn_partyelectronicaddress`-tabellen. Denne informasjonen flyter ikke til de tilknyttede transaksjonene, for eksempel salgsordre, tilbud og bestilling. Vi planlegger å løse dette problemet i en trinnvis frigivelse. De eksisterende dataene i de elektroniske adressefeltene i konto- og kontaktpostene vil fortsatt fungere på transaksjoner som salgsordre, tilbud og bestilling.
 + I Finance and Operations-apper kan du opprette en kontaktpost fra **Legg til kontakt**-skjemaet. Når du prøver å opprette en ny kontakt fra **Vis kontakt**-skjemaet, mislykkes handlingen. Dette er et kjent problem.
 
-    ![Kjent problem med Legg til kontakt](media/party-gab-contact-issue.png)
+    ![Kjent problem med Legg til kontakt.](media/party-gab-contact-issue.png)
 
 + **Innledende synkronisering** støtter ikke feltene **Tilgjengelig fra** og **Tilgjengelig til** på **ContactForParty**, fordi DIXF konverterer verdien til en streng i stedet for et heltall. Konverteringen utløser feilen `Cannot convert the literal '<say 08:00:00>’ to the expected type edm.int32`.
 + Hvis en postadresse for eksempel brukes til mer enn én årsak, for eksempel forretningskommunikasjonsadresse og faktureringsadresse, skal den vises som `Business;Invoice` som vist på bildet nedenfor. Hvis du legger til et mellomrom mellom verdiene, vil du få en feil.
 
-    ![Kjent problem med adresse](media/party-gab-address-issue.png)
+    ![Kjent problem med adresse.](media/party-gab-address-issue.png)
 
 + Du kan ikke angi en fremtidig datert postadresse ved hjelp av en Finance and Operations-app med dobbel skriving, fordi Dataverse ikke støtter datoeffektivitet. Hvis du angir en fremtidig datert postadresse ved hjelp av en Finance and Operations-app, synkroniseres den til Dataverse fullt, og du ser adressen i brukergrensesnittet umiddelbart. Alle oppdateringer til denne posten vil føre til en feil når den er fremtidig datert og ikke gjeldende i Finance and Operations-appen.

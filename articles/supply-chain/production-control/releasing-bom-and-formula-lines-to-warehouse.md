@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 5917d3f6acf6db6b5e3ceee1b399839542ce1f6f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 99047bd30b04ccaaa24edbb2e28d5288ed2872f9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811684"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350552"
 ---
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Frigi stykkliste- og formellinjer til lageret
 
@@ -61,7 +61,7 @@ I spørringen for **Automatisk frigivelse av stykkliste- og formellinjer**-parti
 
 Illustrasjonen nedenfor viser en produksjonsordre som har to jobber, 10 og 20, som dekker monteringen og pakkingen for produksjonsordren. Hver jobb er konfigurert til å bruke et antall materialer. I denne illustrasjonen er frigivelseshorisonten som er angitt ved den grønne pilen under tidslinjen,lik antall dager som er angitt i **(LessThanDate())**-kriteriet. For eksempel, **(LessThanDate(2))** angir at jobben bare skal se etter ikke-frigitte antall innenfor en horisont på to dager.
 
-![Eksempel på en produksjonsordre som har to partijobber](media/bach-job-setup.PNG)
+![Eksempel på en produksjonsordre som har to partijobber.](media/bach-job-setup.PNG)
 
 ## <a name="releasing-material-per-operation-number-or-in-proportion-to-the-amount-of-finished-goods"></a>Frigi materiale per operasjonsnummer eller i forhold til mengde ferdigvarer
 
@@ -78,7 +78,7 @@ Hvis du vil kontrollere operasjonene som materialet skal frigis til, bruker du *
 
 Illustrasjonen nedenfor viser en produksjonsordre som har to operasjoner, 10 og 20. I dette eksemplet, hvis du begrenser frigivelsen til operasjon 10, frigis bare materiale M9203.
 
-![Eksempel på frigivelse av materiale per operasjonsnummer](media/two-operations.PNG)
+![Eksempel på frigivelse av materiale per operasjonsnummer.](media/two-operations.PNG)
 
 For en rask demonstrasjon av hvordan du frigir materiale i forhold til mengde ferdigvarer, kan du se denne korte YouTube-videoen om [forbedringer i frigivelsesprosessen for produksjonsordrer](https://www.youtube.com/watch?v=Rm3ojAz6Zu0).
 

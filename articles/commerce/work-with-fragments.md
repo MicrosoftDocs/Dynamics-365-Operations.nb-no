@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1fa55ab83562983273768895db61032ec7199fa6
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 017cdc76368ae4f80131471a289aa03ab06c99bf
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793951"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350214"
 ---
 # <a name="work-with-fragments"></a>Arbeide med fragmenter 
 
@@ -62,7 +62,7 @@ Følg denne fremgangsmåten for å konvertere en tidligere konfigurert modul til
 1. I dialogboksen **Lagre som fragment** angir du et navn på fragmentet.
 1. Velg **OK** for å lagre modulkonfigurasjonen som et fragment som kan legges til andre sider.
 <!-- The following image shows how to save a module configuration as a fragment.-->
-<!--![A screen capture of how to save a module configuration as a fragment](./media/save-as-fragment.png)-->
+<!--![A screen capture of how to save a module configuration as a fragment.](./media/save-as-fragment.png)-->
 
 ### <a name="create-a-new-fragment"></a>Opprett et nytt fragment
 
@@ -73,7 +73,7 @@ Følg denne fremgangsmåten for å opprette et nytt fragment i Commerce-områdeb
 1. Velg en modultype for fragmentet.
 
 <!-- The following image shows where to create a new fragment.-->
-<!-- ![A screen capture of where to create a new fragment](./media/fragment-nav-menu.png)-->
+<!-- ![A screen capture of where to create a new fragment.](./media/fragment-nav-menu.png)-->
 > [!TIP]
 > Når du velger en generisk containermodultype, får du størst fleksibilitet når du må oppdatere og konfigurere fragmentet senere.
 
@@ -88,14 +88,14 @@ Følg denne fremgangsmåten for å legge til et fragment i en side i Commerce-om
 1. I disposisjonsruten til venstre eller direkte i den visuelle sidebyggeren, velger du en container eller et spor der underordnede moduler kan legges til.
 1. Velg ellipsen (**...**) ved siden av navnet på containeren eller sporet.  Hvis du bruker den visuelle sidebyggeren, kan du eventuelt velge plusstegnet (**+**).  
 1. Velg **Legg til fragment**.
-    <!-- ![A screen capture of how to add an existing fragment to a slot or container](./media/add-fragment.png)-->
+    <!-- ![A screen capture of how to add an existing fragment to a slot or container.](./media/add-fragment.png)-->
  
     > [!NOTE]
     > Hvis containeren eller sporet ikke støtter nye underordnede moduler, er alternativet **Legg til fragment** ikke tilgjengelig.
     
 1. Søk etter og velg et fragment du vil legge til, i dialogboksen **Velg fragment**. Hvis det ikke finnes noen tilgjengelige fragmenter, kan det være at du først må opprette et fragment fra en modultype som valgt container eller spor støtter.
 1. Velg det ønskede fragmentet for å legge det til i containeren eller sporet på siden.
-<!--    ![A screen capture of the fragment picker modal window](./media/fragment-picker.png)-->
+<!--    ![A screen capture of the fragment picker modal window.](./media/fragment-picker.png)-->
 
 > [!NOTE]
 > Modulene som er tillatt i en container eller et spor, er definert av malen for siden eller modulenes egne definisjoner.

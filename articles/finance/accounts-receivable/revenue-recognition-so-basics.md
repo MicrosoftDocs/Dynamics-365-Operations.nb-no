@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: e9c6423a7fb604005d4fb7f1eca05a1ef7d210e5
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: ce0879565babfbf526e1aa6864482e60cbabd377
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5817227"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345602"
 ---
 # <a name="revenue-recognition-on-sales-orders"></a>Inntektsføring av salgsordrer
 
@@ -36,7 +36,7 @@ Dette emnet beskriver den grunnleggende funksjonaliteten for føring av inntekt 
 
 Følgende salgsordre er angitt og omfatter tre varer som er definert for inntektsføring.
 
-[![Registrere en salgsordre](./media/revenue-recognition-so-basic-sales-order-header.png)](./media/revenue-recognition-so-basic-sales-order-header.png)
+[![Registrer en salgsordre.](./media/revenue-recognition-so-basic-sales-order-header.png)](./media/revenue-recognition-so-basic-sales-order-header.png)
 
 Det finnes to begreper for inntektsføring:
 
@@ -47,7 +47,7 @@ Det finnes to begreper for inntektsføring:
 
     Den andre varen, S0008, er en servicevare som er definert som en PCS-vare. De opprettholdte utviklingstjenestene leveres til kunden i løpet av en periode på 12 måneder. Derfor tilordnes en **12M**-inntektsplan til produktet som standard. Siden denne varen er en PCS-vare, må kontraktens start- og sluttdatoer defineres. Som standard er start- og sluttdatoen for kontrakten funnet i vare detaljer – fanen Oppsett. I inntektsplanen defineres oppsettet for **12M**, slik at kontrakts vilkårene automatisk fylles ut som vist i følgende illustrasjon.
 
-    [![Inntektsplaner](./media/revenue-recognition-so-basic-revenue-schedules.png)](./media/revenue-recognition-so-basic-revenue-schedules.png)
+    [![Inntektsplaner.](./media/revenue-recognition-so-basic-revenue-schedules.png)](./media/revenue-recognition-so-basic-revenue-schedules.png)
 
     Den tredje varen, S0012, er maskinvare, og ingen inntektsplan er tilordnet som standard. Inntekten for maskin varen føres så snart varen er fakturert.
 
@@ -55,7 +55,7 @@ Det finnes to begreper for inntektsføring:
 
 Hvis du vil vise flere detaljer om inntektsprisen og inntektsplanen, bruker du knappene i gruppen **Inntektsføring** i fanen **Behandle** i handlingsruten i salgsordren. Ettersom salgsordren ikke er bekreftet på dette tidspunktet, er ikke knappene som brukes til inntektsføring, tilgjengelige. Disse knappene blir tilgjengelige eller ikke tilgjengelige etter hvert som salgsordren går gjennom stadiene som fører til oppfyllelse.
 
-[![Topptekst i salgsordre](./media/revenue-recognition-so-basic-sales-order-header-02.png)](./media/revenue-recognition-so-basic-sales-order-header-02.png)
+[![Topptekst i salgsordre.](./media/revenue-recognition-so-basic-sales-order-header-02.png)](./media/revenue-recognition-so-basic-sales-order-header-02.png)
 
 De første tre knappene gir detaljer om inntektsprisen for varene i salgsordreoppsettet for inntektsføring.
 
@@ -70,13 +70,13 @@ De to siste knappene gir detaljer om inntektsplanen for de varene i salgsordren 
 
 I eksemplet nedenfor ble inntektspristildeling utført når salgsordren ble bekreftet. Vær oppmerksom på at selv om inntektsprisene tildeles på en annen måte, må totalbeløpet i feltet **Inntekt som skal føres** fremdeles være identisk med summen for salgsordrelinjene som er fakturert til kunden. Summen av salgsordrelinjene, ekskl. mva., er for eksempel USD 1499. Derfor må summen av verdiene for **Inntekt som skal føres** også være USD 1499.
 
-[![Inntektspristildeling](./media/revenue-recognition-so-basic-revenue-price-allocation.png)](./media/revenue-recognition-so-basic-revenue-price-allocation.png)
+[![Inntektspristildeling.](./media/revenue-recognition-so-basic-revenue-price-allocation.png)](./media/revenue-recognition-so-basic-revenue-price-allocation.png)
 
 Den forventede inntektsføringsplanen blir også opprettet. Inntektsplanen bruker verdien for **Inntekt som skal føres** som beløpet som skal utsettes. Vare S0001 utsetter USD 321,21 i stedet for USD 300, og vare S0008en utsetter USD 160,61 i stedet for USD 100. Vare S0012 vises ikke i den forventede tidsplanen fordi inntekten ikke er utsatt. Når postering skjer, posterer var S0012 USD 1017,18 direkte til inntektsfinanskontoen.
 
-[![Forventet inntektsføringsplan](./media/revenue-recognition-so-basic-expected-rev-rec-schedule.png)](./media/revenue-recognition-so-basic-expected-rev-rec-schedule.png)
+[![Forventet inntektsføringsplan.](./media/revenue-recognition-so-basic-expected-rev-rec-schedule.png)](./media/revenue-recognition-so-basic-expected-rev-rec-schedule.png)
 
-## <a name="create-the-packing-slip"></a>Opprette følgeseddelen
+## <a name="create-the-packing-slip"></a>Opprett følgeseddelen
 
 Deretter kan følgeseddelen opprettes for salgsordren. Ingen inntekt føres når følgeseddelen posteres. Hvis salgsordren ikke ble bekreftet, utløses ikke postering av følgeseddelen at inntektspris blir beregnet. Det utløser heller ikke opprettingen av den forventede eller endelige inntektsføringsplanen. Hvis varemodellgruppen er definert til å utsette inntekter på følgeseddelen, fortsetter den å postere ved hjelp av de gjeldende finanskontoene for posteringsprofil, og ikke de nye utsatte inntektskontoene som brukes i fakturaposteringen.
 
@@ -84,17 +84,17 @@ Deretter kan følgeseddelen opprettes for salgsordren. Ingen inntekt føres når
 
 Det siste trinnet er å fakturere salgsordren. Hvis du ser på fakturaens bilag, vil du se at inntekten for varer S0001 og S0008 ble utsatt (USD 321,21 + 160,61 = 481,82), og det gjenstående beløpet for vare S0012 ble postert til inntekt (1 017,18). Disse verdiene blir til sammen USD 1499, som samsvarer med summen av salgsordrelinjene.
 
-[![Bilagstransaksjoner](./media/revenue-recognition-so-voucher-transactions.png)](./media/revenue-recognition-so-voucher-transactions.png)
+[![Bilagstransaksjoner.](./media/revenue-recognition-so-voucher-transactions.png)](./media/revenue-recognition-so-voucher-transactions.png)
 
-Etter at fakturaen er opprettet, blir knappene **Inntektspristildeling**, **Tildele pris på nytt med nye ordrelinjer** og **Inntektsføringsplan** for inntektsføring tilgjengelige, men knappene **Oppdatere inntektspristildeling** og **Forventet inntektsføringsplan** er utilgjengelige.
+Etter at fakturaen er opprettet, blir knappene **Inntektspristildeling**, **Tildel pris på nytt med nye ordrelinjer** og **Inntektsføringsplan** for inntektsføring tilgjengelige, men knappene **Oppdater inntektspristildeling** og **Forventet inntektsføringsplan** er utilgjengelige.
 
-[![Tilgjengelighet for knapp for tilgjengelig inntektsføring](./media/revenue-recognition-so-basic-after-invoice-buttons.png)](./media/revenue-recognition-so-basic-after-invoice-buttons.png)
+[![Tilgjengelighet for knapp for tilgjengelig inntektsføring.](./media/revenue-recognition-so-basic-after-invoice-buttons.png)](./media/revenue-recognition-so-basic-after-invoice-buttons.png)
 
 Knappen **Inntektspristildeling** er fremdeles tilgjengelig, og dermed kan du vise beregningen av inntektspris. Hvis ingenting er endret på salgsordren etter at det ble bekreftet, vil posteringen av fakturaen ikke endre det beregnede beløpet i feltet **Inntekt som skal føres**.
 
 Den forventede inntektsføringsplanen blir fjernet og erstattet med den endelige inntektsføringsplanen. Detaljene for inntektsplanen beholdes for hver salgsordrelinje, og brukes til å frigi den utsatte inntekten til den faktiske inntekten, fordi kontraktsforpliktelser er oppfylt.
 
-[![Tidsplan for endelig inntektsføring](./media/revenue-recognition-so-revenue-recognition-schedule.png)](./media/revenue-recognition-so-revenue-recognition-schedule.png)
+[![Tidsplan for endelig inntektsføring.](./media/revenue-recognition-so-revenue-recognition-schedule.png)](./media/revenue-recognition-so-revenue-recognition-schedule.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

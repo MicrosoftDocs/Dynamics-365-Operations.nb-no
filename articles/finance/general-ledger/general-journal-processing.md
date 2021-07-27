@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 76dbf5f8f2fc3b33077d559ffcef580a5295adb2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 59dda2207f002402f5153f9c77206b6c644f2679
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815578"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352864"
 ---
 # <a name="general-journal-processing"></a>Behandling av generell journal
 
@@ -42,14 +42,14 @@ På siden **Journalnavn** kan du definere følgende elementer:
 
 Et journalnavn kan bare brukes til justeringer. I så fall kan du angi at bare **Finans**-kontotypen er gyldig på tvers av alle firmaer. 
 
-[![Journalkontrollkontotyper](./media/journal-control-account-types1.png)](./media/journal-control-account-types1.png)
+[![Journalkontrollkontotyper.](./media/journal-control-account-types1.png)](./media/journal-control-account-types1.png)
 
 Et journalnavn kan bare brukes bare for et bestemt segment eller et område for hovedkontoer. 
 
-[![Journalkontrollsegment](./media/journal-control-segment1.png)](./media/journal-control-segment1.png)
+[![Journalkontrollsegment.](./media/journal-control-segment1.png)](./media/journal-control-segment1.png)
 
 Alternativet **Automatisk tilbakeføring** er tilgjengelig i økonomijournaler. Du har for eksempel en justering av avsetning der det faktiske dokumentet ikke har blitt behandlet ennå, som vist i illustrasjonen nedenfor.
-[![Tilbakeføring for økonomijournal](./media/general-journal-reversing1.png)](./media/general-journal-reversing1.png) 
+[![Tilbakeføring for økonomijournal.](./media/general-journal-reversing1.png)](./media/general-journal-reversing1.png) 
 
 Microsoft Excel-tillegget for journaloppføring gir et ekstra nivå med automatisering og gjør dataregistrering enklere. Handlingen **Åpne linjer i Excel** er tilgjengelig på sidene **Økonomijournal** og **Journalbilag**. 
 

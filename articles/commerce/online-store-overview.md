@@ -9,19 +9,19 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application user
 ms.reviewer: josaw
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 55c40029082e49c1fbc9d9d5e9361218e5ddc5a0
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: b7050f954116213f700e4a2b3326547f4d070674
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022478"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353018"
 ---
 # <a name="e-commerce-site-overview"></a>Oversikt over e-handelsområde
 
@@ -47,27 +47,27 @@ Under initialisering av et e-handelsområde blir du bedt om å oppgi et domenena
 
 Når du starter Commerce-områdebygger fra LCS, vises siden **Områder**. Denne siden inneholder to forhåndskonfigurerte områder, **standard** og **fabrikam**, som vist i eksemplet i følgende illustrasjon.
 
-![Områder-siden i Commerce-områdebygger](media/e-commerce-site-01.png)
+![Områder-siden i Commerce-områdebygger.](media/e-commerce-site-01.png)
 
 Når du velger et av disse områdene, blir du bedt om å velge et domenenavn, en standard nettbutikkanal, et støttet språk for den valgte kanalen og en bane. Hvis bare én kanal er brukt, kan du la banen være tom. Flere nettbutikkanaler eller språk kan konfigureres senere i Commerce-områdebygger. Hver tilleggskanal eller hvert språk vil kreve en unik bane. Du har for eksempel to nettkanaler knyttet til ett enkelt område, og domenenavnet for området er `www.fabrikam.com`. I dette tilfellet kan banen for en kanal være standardverdien som ikke har noen bane (`https://www.fabrikam.com`), og den andre kanalen kan settes til en ny bane, for eksempel **site2**, som får nettadressen `https://www.fabrikam.com/site2`. Følgende illustrasjon viser et eksempel på en dialogboks for initialisering av område i Commerce-områdebygger.
 
-![Dialogboksen for initialisering av område i Commerce-områdebygger](media/e-commerce-site-02.png)
+![Dialogboksen for initialisering av område i Commerce-områdebygger.](media/e-commerce-site-02.png)
 
 **Områder**-siden inneholder også en **Nytt område**-knapp. Dialogboksen som vises når du velger denne knappen, ligner på dialogboksen for områdeinitialisering, men den brukes til å opprette et nytt område. Nye områder er tomme. De inneholder ikke samme standardmaler, fragmenter, sider og bilder som leveres med **standard**-og **fabrikam**-områder. Du kan imidlertid, etter behov, åpne en støtteforespørsel for å be om at en kopi av standardinnholdet legges til på et nytt, tomt område. Hvis du vil ha mer informasjon, kan du se [Opprette et e-handelsområde](create-ecommerce-site.md).
 
 Når et nytt område er initialisert, vises **startsiden** for Commerce-områdebygger. Denne siden inneholder koblinger til vanlige handlinger og veiledningsinnhold, som vist i eksemplet i den følgende illustrasjonen.
 
-![Koblinger på startsiden i Commerce-områdebygger](media/e-commerce-site-03.png)
+![Koblinger på startsiden i Commerce-områdebygger.](media/e-commerce-site-03.png)
 
 ## <a name="modify-online-store-channels-or-add-online-store-channels-to-an-e-commerce-site"></a>Endre nettbutikkanaler eller legge til nettbutikkanaler i et e-handelsområde
 
 Etter at et e-handelsområde er opprettet, kan du endre kanalen som den er tilknyttet, ved å følge trinnene i [Tilknytt et e-handelsområde med en nettkanal](associate-site-online-store.md). Eksemplet i illustrasjonen nedenfor viser hvordan et kanaldriftsenhetsnummer (OUN) kan endres på **Kanaler**-siden (**Områdeinnstillinger \> Kanaler**). Når du er ferdig med å gjøre endringer, må du velge **Lagre og publiser**. På denne måten sikrer du at endringen er publisert.
 
-![Kanaler-siden i Commerce-områdebygger](media/e-commerce-site-04.png)
+![Kanaler-siden i Commerce-områdebygger.](media/e-commerce-site-04.png)
 
 Du kan legge til nye kanaler ved å velge **Legg til en kanal**. Hvis du vil legge til nye språk i en kanal, velger du kanalen og velger deretter **Legg til en nasjonal innstilling** i kanaldialogboksen som vises. Før nasjonale innstillinger kan vises i dialogboksen, må de være forhåndskonfigurert for nettbutikkanalen i Commerce Headquarters.
 
-![Kanal-dialogboksen i Commerce-områdebygger](media/e-commerce-site-05.png)
+![Canal-dialogboksen i Commerce-områdebygger.](media/e-commerce-site-05.png)
 
 ## <a name="set-up-an-azure-b2c-tenant"></a>Konfigurere en Azure B2C-leier
 

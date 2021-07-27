@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: ed28928b0f07833d5906a68f780e3bb5bbe0bfe9
-ms.sourcegitcommit: fa99a36c3d30d0c0577fd3f63ed6bf2f71599e40
+ms.openlocfilehash: 03c9406d295fb0dbd22e8072c2695dbef419b706
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "5921223"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353546"
 ---
 # <a name="unit-of-measure-conversion-per-product-variant"></a>Konvertering av måleenhet per produktvariant
 
@@ -56,7 +56,7 @@ Hvis du vil konfigurere en produktstandard til å støtte enhetskonvertering per
     - **Produkt** – Hvis du velger denne verdien, kan du definere en enhetskonvertering for produktstandarden. Denne enhetskonverteringen vil bli brukt som et tilbakefallsområde for alle produktvarianter som ingen enhetskonvertering er definert for.
     - **Produktvariant** – Hvis du velger denne verdien, kan du definere en enhetskonvertering for en bestemt produktvariant. Bruk feltet **Produktvariant** til å velge varianten.
 
-    ![Legge til en ny enhetskonvertering](media/uom-new-conversion.png "Legge til en ny enhetskonvertering")
+    ![Legge til en ny enhetskonvertering.](media/uom-new-conversion.png "Legge til en ny enhetskonvertering")
 
 1. Bruk de andre feltene som finnes, til å definere enhetskonverteringen.
 1. Velg **OK** for å lagre den nye enhetskonverteringen.

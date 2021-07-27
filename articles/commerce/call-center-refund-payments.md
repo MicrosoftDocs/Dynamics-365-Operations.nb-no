@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e3837ccebca0e6644ac5ded98344a5135cfb5d7a
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 130f570646d73e37a790ab90ae9a1d6a48b0f8b8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799595"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351375"
 ---
 # <a name="refund-payment-processing-in-call-centers"></a>Refunderingsbehandling i telefonsentre
 
@@ -37,7 +37,7 @@ Telefonsenteret bruker betalingsmåten til den opprinnelige ordren for å bestem
 
     Illustrasjonen nedenfor viser konfigurasjonen for et scenario der en kunde returnerer produkter fra en salgsordre som er koblet til valutaen USD, og som opprinnelig ble betalt for ved hjelp av betalingstypen vanlig eller sjekk. I dette scenariet vil en refusjon bli utstedt til kunden via en systemgenerert refunderingskontroll. AR-betalingsmåten **REF-CHK** er konfigurert som en betalingstype for refundering av sjekk.
 
-    ![Konfigurasjon av tilbakebetalingsmetoder for telefonsenter for opprinnelige betalinger for vanlig betaling og sjekkbetaling](media/callcenterrefundmethods.png)
+    ![Konfigurasjon av tilbakebetalingsmetoder for telefonsenter for opprinnelige betalinger for vanlig betaling og sjekkbetaling.](media/callcenterrefundmethods.png)
 
 - **Kredittkort** – Når en returordre som opprettes, refererer til original ordre som ble betalt ved hjelp av et kredittkort, bruker samtalesenterlogikken for refusjonsbetalinger samme opprinnelige kredittkort for returordren.
 - **Fordelskort** – Når en returordre som opprettes, refererer til en original ordre som ble betalt ved hjelp av et kundefordelskort, bruker samtalesenterlogikken for refusjonsbetalinger refusjonen på samme fordelskort.
@@ -48,7 +48,7 @@ Hvis betalingstypen for den opprinnelige ordren er ukjent av en hvilken som hels
 
 Illustrasjonen nedenfor viser **Betalingsmåte**-feltet i kategorien **RMA/retur** på siden **Telefonsenterparametere**.
 
-![Betalingsmåte-feltet i kategorien RMA/retur på siden Telefonsenterparametere](media/callcenterrefundparameters.png)
+![Betalingsmåte-feltet i kategorien RMA/retur på siden Telefonsenterparametere.](media/callcenterrefundparameters.png)
 
 > [!NOTE]
 > Reglene for refunderingsbehandling som beskrevet tidligere, gjelder også for ordrer eller ordrelinjer som en samtalesenterbruker avbryter i Commerce Headquarters. Hvis annullering av en ordre eller bestemte ordrelinjer fører til overbetalinger, blir de samme reglene brukt til å generere refunderingsbetalingslinjer.
@@ -82,7 +82,7 @@ Innstillingen **Ja** for alternativet **Bruk kreditt** gjelder bare når returor
 > [!NOTE]
 > For en returordre som ikke har en koblet erstatningsordre, har ikke innstillingen **Ja** for alternativet **Bruk kreditt** noen innvirkning på returordrebetalingslogikken, fordi denne innstillingen bare gjelder for erstatningsordrer.
 
-![Feltet Bruk kredittbetalingsmetode i kategorien RMA/retur på siden Telefonsenterparametere](media/callcenterrefundparameters1.png)
+![Feltet Bruk kredittbetalingsmetode i kategorien RMA/retur på siden Telefonsenterparametere.](media/callcenterrefundparameters1.png)
 
 > [!IMPORTANT]
 > Hvis brukere som oppretter erstatningsordrer, planlegger å bruke alternativet **Bruk kreditt**, bør de ikke kjøre funksjonen **Fullført** på returordren før de angir alternativet **Bruk kreditt** til **Ja**. Når funksjonen **Fullført** er kjørt, beregnes refusjonsbetalingen og brukes på salgsreturordren. Alle forsøk på å sette alternativet **Bruk kreditt** til **Ja** etter at en refusjonsbetaling allerede er beregnet og brukt, vil ikke utløse en omberegning av refusjonsbetalingen, og betalingsmåten som er valgt i feltet **Bruk krediteringsbetaling**, vil ikke bli brukt. Hvis alternativet **Bruk kreditt** må brukes i denne sammenhengen, må brukeren slette erstatningsordren og RMA-en, og deretter starte på nytt og opprette en ny RMA. Denne gangen må brukeren sikre at alternativet **Bruk kreditt** er satt **Ja** før funksjonen **Fullført** kjøres.
@@ -91,14 +91,14 @@ Innstillingen **Ja** for alternativet **Bruk kreditt** gjelder bare når returor
 
 Selv om telefonsenterlogikk systematisk bestemmer betalingsmåten for refundering på den måten som beskrives tidligere i dette emnet, kan det hende at brukerne noen ganger ønsker å overstyre disse betalingene. En bruker kan for eksempel redigere eller fjerne eksisterende refunderingsbetalingslinjer og bruke nye betalingslinjer. Systemberegnede refusjonsbetalinger kan bare endres av brukere som har riktige overstyringstillatelser. Disse tillatelsene kan konfigureres på siden **Overstyr tillatelser** i Retail og Commerce. Hvis du vil gjøre en betalingsoverstyring for refusjon, må brukeren være koblet til en sikkerhetsrolle der alternativet **Tillat alternativ betaling** er angitt til **Ja** på siden **Overstyringstillatelser**.
 
-![Tillate alternativt betalingsalternativ på siden Overstyringstillatelser](media/overridepermissions.png)
+![Tillate alternativt betalingsalternativ på siden Overstyringstillatelser.](media/overridepermissions.png)
 
 En organisasjon kan eventuelt sette alternativet **Tillat betalingsoverstyring** til **Ja** i kategorien **RMA/retur** på siden **Telefonsenterparametere**. I dette tilfellet må en sikkerhetsoverstyringskode velges i feltet **Sikkerhetsoverstyringskode**. Sikkerhetsoverstyringskoden er en alfanumerisk kode som må behandles eksternt, fordi brukere ikke kan vise den i Commerce Headquarters etter at den er angitt. Sikkerhetsoverstyringskoden bør bare være kjent av noen få klarerte nøkkelpersoner i en organisasjon. Når alternativet **Tillat betalingsoverstyring** er satt til **Ja**, har de muligheten til å angi en sikkerhetsoverstyringskode hvis brukere som ikke har de riktige rolletillatelsene, forsøker å endre betalingsmåten på en returordre. Hvis de ikke vet koden, eller hvis en leder eller arbeidsleder ikke kan legge den inn på siden for dem, kan de ikke overstyre returbetalingsmetoden.
 
 > [!NOTE]
 > Hvis sikkerhetsoverstyringskoden går tapt eller blir glemt, må organisasjonen tilbakestille den ved å definere en ny sikkerhetsoverstyringskode i feltet **Sikkerhetsoverstyringskode** i kategorien **RMA/retur** på siden **Telefonsenterparameter**.
 
-![Betalingsoverstyringsparametere i kategorien RMA/retur på siden Telefonsenterparametere](media/overridepaymentparameter.png)
+![Betalingsoverstyringsparametere i kategorien RMA/retur på siden Telefonsenterparametere.](media/overridepaymentparameter.png)
 
 > [!IMPORTANT]
 > Før organisasjoner prøver å overstyre refunderingsbetalinger som bruker betalingstyper for kredittkort, bør de kontrollere at kredittkortbehandleren tillater returer som ikke er koblet til. Mange behandlere krever at refusjoner posteres tilbake til det opprinnelige kortet. Alle forsøk på å utstede en refusjon til et kort som ikke har tidligere hentinger, kan forårsake posteringsfeil hos behandleren.

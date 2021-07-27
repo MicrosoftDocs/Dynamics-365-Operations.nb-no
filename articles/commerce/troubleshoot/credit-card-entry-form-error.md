@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: ea9105481e6c5812565f0d3604906c905bcb5443
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 593c1bdb502330c5dc9f26254dbed809cea7651b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018512"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347398"
 ---
 # <a name="credit-card-entry-page-shows-an-error-at-checkout"></a>Registreringsside for kredittkort viser en feil i betalingsprosessen
 
@@ -32,9 +32,9 @@ Dette emnet gir feilsøkingsveiledning som kan hjelpe når delen **Betalingsmåt
 
 Når du åpner betalingssiden til en nettbutikk, blir ikke delen **Betalingsmåte** lastet og følgende feilmelding vises: "Noe gikk galt. Prøv på nytt senere."
 
-![Feil i betalingsmodul](media/payment-module-error.jpg)
+![Feil i betalingsmodul.](media/payment-module-error.jpg)
 
-## <a name="resolution"></a>Oppløsning
+## <a name="resolution"></a>Løsning
 
 ### <a name="wait-for-the-commerce-scale-unit-cache-to-expire"></a>Vent til bufferen for Commerce Scale Unit utløper
 

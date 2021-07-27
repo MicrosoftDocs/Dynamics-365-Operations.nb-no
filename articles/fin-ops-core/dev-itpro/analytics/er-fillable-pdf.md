@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 7c1c21015a172d7ebaa3577d5d0e55c254ef871e
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 63994a4583e27b0197b9fc42c622f6c0e42c84ee
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753294"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355424"
 ---
 # <a name="design-er-configurations-to-fill-in-pdf-templates"></a>Utforme ER-konfigurasjoner for å fylle ut PDF-maler
 
@@ -115,11 +115,11 @@ I ER-formatkonfigurasjonen som du opprettet, skal du nå utforme ER-formatet som
 
 Illustrasjonen nedenfor viser PDF-malen for den første siden i rapporten.
 
-![Mal 1](media/rcs-ger-filloutpdf-template1.png)
+![Mal 1.](media/rcs-ger-filloutpdf-template1.png)
 
 Illustrasjonen nedenfor viser PDF-malen for de andre sidene i rapporten.
 
-![Mal 2](media/rcs-ger-filloutpdf-template2.png)
+![Mal 2.](media/rcs-ger-filloutpdf-template2.png)
 
 1. Velg **Utforming** på siden **Konfigurasjoner**.
 2. Velg **Legg til rot**.
@@ -146,7 +146,7 @@ Illustrasjonen nedenfor viser PDF-malen for de andre sidene i rapporten.
 
 12. Velg **OK**.
 
-    ![Dialogboksen Importer fra PDF](media/rcs-ger-filloutpdf-importtemplate.png)
+    ![Dialogboksen Importer fra PDF.](media/rcs-ger-filloutpdf-importtemplate.png)
 
 13. Utvid **Utdata** i treet.
 
@@ -176,7 +176,7 @@ Illustrasjonen nedenfor viser PDF-malen for de andre sidene i rapporten.
 
     Legg merke til at det importerte PDF-dokumentet legges ved det redigerte ER-formatet.
 
-    ![Forhåndsvisning av PDF-vedlegg](media/rcs-ger-filloutpdf-attachedtemplate.png)
+    ![Forhåndsvisning av PDF-vedlegg.](media/rcs-ger-filloutpdf-attachedtemplate.png)
 
 19. Fortsett å utforme dette formatet ved å importere den andre PDF-malen, legge til nødvendige bindinger til datakilder og så videre.
 20. Velg **Lagre**.
@@ -215,7 +215,7 @@ Nå skal du importere ER-eksempelformatet som du lastet ned tidligere, slik at d
 1. Velg kategorien **Tilordning** på **Formatutforming**-siden.
 2. Utvid **Sideveksling \> Sider** i treet.
 
-    ![Formeldesigner-siden der modelltreet er utvidet](media/rcs-ger-filloutpdf-reviewformat.png)
+    ![Formeldesigner-siden der modelltreet er utvidet.](media/rcs-ger-filloutpdf-reviewformat.png)
 
     Vær oppmerksom på følgende detaljer:
 
@@ -238,7 +238,7 @@ Nå skal du importere ER-eksempelformatet som du lastet ned tidligere, slik at d
 
     Legg merke til at **Navn**-attributtet for dette formatelementet er definert som **Korrigering 1**. Legg også merke til at **Navn**-uttrykket for formatelementet defineres som **Paging.FldName("Correction",\@.Number)**.
 
-![Formatutforming der tilordning er valgt](media/rcs-ger-filloutpdf-reviewformat2.png)
+![Formatutforming der tilordning er valgt.](media/rcs-ger-filloutpdf-reviewformat2.png)
 
 Legg merke til at **Felt**-formatelementet brukes til å fylle ut et enkelt felt i et utfyllbart PDF-dokument som er definert som en mal for det overordnede **PDF-fil**-formatelementet. Bindingen for **PDF-fil**-formatelementet eller de nestede elementene, hvis det har nestede elementer, angir verdien som angis i tilsvarende PDF-felt. Forskjellige egenskaper for **Felt**-formatelementet kan brukes til å angi hvilket PDF-felt som fylles ut av et individuelt formatelement:
 
@@ -275,7 +275,7 @@ Nå skal du laste inn eksempel-ER-formatet **Intrastat (import from Excel**). De
 
     Når alternativet **Standard for modelltilordning** er satt til **Ja**, tilordnes det importerte ER-formatet **Intrastat (import from Excel)** som standard datakilde for **Intrastat-rapport (PDF)**-formatkonfigurasjonen. Når **Intrastat-rapport (PDF)**-formatkonfigurasjonen kjøres, vil innholdet i Excel-arbeidsboken som analyseres av ER-formatet **Intrastat (import from Excel)**, simulere utenrikshandelstransaksjoner som må rapporteres. Illustrasjonen nedenfor viser et eksempel på en Excel-arbeidsbok.
 
-    ![Excel-arbeidsbok med eksempeldata](media/rcs-ger-filloutpdf-excelworkbook.png)
+    ![Excel-arbeidsbok med eksempeldata.](media/rcs-ger-filloutpdf-excelworkbook.png)
 
 ### <a name="run-the-format-configuration"></a>Kjøre formatkonfigurasjonen
 
@@ -289,11 +289,11 @@ Nå skal du laste inn eksempel-ER-formatet **Intrastat (import from Excel**). De
 
 Illustrasjonen nedenfor viser et eksempel på den første siden i rapporten som genereres.
 
-![Første side i den genererte rapporten](media/rcs-ger-filloutpdf-generatedreport.png)
+![Første side i den genererte rapporten.](media/rcs-ger-filloutpdf-generatedreport.png)
 
 Illustrasjonen nedenfor viser et eksempel på en annen side i rapporten som genereres.
 
-![Annen side i den genererte rapporten](media/rcs-ger-filloutpdf-generatedreport2.png)
+![Annen side i den genererte rapporten.](media/rcs-ger-filloutpdf-generatedreport2.png)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

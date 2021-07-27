@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4618ff2d6880f478683fbed0ed716af5ab8d4d9c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8b95975f5be9ef49eee2fd6c6ff1cbbde49c9336
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5842255"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350600"
 ---
 # <a name="manual-update-of-asset-counters"></a>Manuell oppdatering av anleggsmiddeltellere
 
@@ -54,7 +54,7 @@ Merk følgende punkt:
 
 Illustrasjonen nedenfor viser et eksempel på siden **Aktivatellere**.
 
-![Figur 1](media/11-work-orders.png)
+![Figur 1.](media/11-work-orders.png)
 
 På siden **Aktivatellere** (**Aktivabehandling** > **Forespørsler** > **Aktiva** > **Aktivatellere**) kan du utføre tellerregistreringer for flere aktivumer samtidig etter behov.
 

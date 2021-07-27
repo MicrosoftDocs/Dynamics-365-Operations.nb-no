@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: c36948cc58291b56c1bbe8a3d5c3db52dccc8399
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: cca35be696c8dd9956176e54e77a60f0252e0760
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018612"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352186"
 ---
 # <a name="prorate-header-charges-to-matching-sales-lines"></a>Fordele hodegebyrer til samsvarende salgslinjer
 
@@ -56,9 +56,9 @@ Dette scenariet beskriver virkemåten når alternativet **Fordel til samsvarende
 
 I dette scenarioet har organisasjonen definert gebyrer på hodenivå for relasjon for leveringsmåte **99** og relasjon for leveringsmåte **11**. Ingen automatiske tillegg som er konfigurert for leveringsmåte **21**.
 
-![Automatiske tillegg for leveringsmåte 99 når linjesamsvarsfordeling er slått av](media/99_disabled.png)
+![Automatiske tillegg for leveringsmåte 99 når linjesamsvarsfordeling er slått av.](media/99_disabled.png)
 
-![Automatiske tillegg for leveringsmåte 11 når linjesamsvarsfordeling er slått av](media/11_disabled.png)
+![Automatiske tillegg for leveringsmåte 11 når linjesamsvarsfordeling er slått av.](media/11_disabled.png)
 
 Det opprettes en salgsordre i telefonsenteret, og leveringsmåten settes til **99**. Denne rekkefølgen inneholder fem elementer. To ordrelinjer er konfigurert for å bruke leveringsmåten **99**, to linjer er konfigurert til å bruke leveringsmåten **11**, og én linje er konfigurert for å bruke leveringsmåten **21**, som vist i eksempelet i tabellen nedenfor.
 
@@ -78,9 +78,9 @@ I dette scenarioet, hvis en kunde returnerer noen av varene i ordren, og hvis [t
 
 I dette scenarioet defineres gebyrer på hodenivå for relasjon for leveringsmåte **99** og relasjon for leveringsmåte **11**. Men alternativet **Fordel til samsvarende salgslinjer** settes til **Ja** for disse tabellene for automatisk tillegg.
 
-![Automatiske tillegg for leveringsmåte 99 når linjesamsvarsfordeling er slått på](media/99_enabled.png)
+![Automatiske tillegg for leveringsmåte 99 når linjesamsvarsfordeling er slått på.](media/99_enabled.png)
 
-![Automatiske tillegg for leveringsmåte 11 når linjesamsvarsfordeling er slått på](media/11_enabled.png)
+![Automatiske tillegg for leveringsmåte 11 når linjesamsvarsfordeling er slått på.](media/11_enabled.png)
 
 Dette scenarioet bruker den samme salgsordren som har fem linjer. Leveringsmåte på ordrehodet er satt til **99**, men leveringsmåten for hver vare i salgsordren konfigureres som vist i følgende tabell.
 
@@ -130,9 +130,9 @@ Fordi automatisk tillegg-konfigurasjonen er satt til å fordele til samsvarende 
     - Total produktverdi = USD 15
     - **Gebyrverdi = USD 0** (ingen automatiske gebyrer er konfigurert for denne kombinasjonen av kunde og leveringsmåte.)
 
-    ![Leveringsmodus 11-gebyrer faller innenfor det merkede laget](media/step2mode11.png)
+    ![Leveringsmodus 11-gebyrer faller innenfor det merkede laget.](media/step2mode11.png)
 
-    ![Leveringsmodus 99-gebyrer faller innenfor det merkede laget](media/step2mode99.png)
+    ![Leveringsmodus 99-gebyrer faller innenfor det merkede laget.](media/step2mode99.png)
 
 3. Systemet beregner gebyrverdien som skal brukes på hver linje, basert på fordelingslogikk som vurderer den proporsjonale verdien av linjen i forhold til gruppens totale produktverdi.
 
@@ -163,7 +163,7 @@ Fordi automatisk tillegg-konfigurasjonen er satt til å fordele til samsvarende 
 
 Derfor, i dette eksempelet, tilordnes varen 81334 et fraktgebyr på USD 5,62. Du kan vise disse gebyrene på siden **Vedlikehold tillegg** for salgslinjen. Illustrasjonen nedenfor viser hvordan denne siden ser ut for varen 81334.
 
-![Fordelte tillegg på salgslinje for varen 81334](media/proratedlinecharge.png)
+![Fordelte tillegg på salgslinje for varen 81334.](media/proratedlinecharge.png)
 
 Når denne beregningsmåten brukes i en delvis retur-scenario, hvis tilleggskoden er refunderbar, vil bare delen av tillegget som er tilordnet til denne linjen, refunderes når varen returneres.
 

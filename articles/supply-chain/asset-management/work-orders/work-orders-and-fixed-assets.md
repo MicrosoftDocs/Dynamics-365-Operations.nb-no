@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 65adcd07f1649b2e4eb2e2528507bb15631782ce
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 69653d0dde2d3675a5af5cdc032a3c9c9462d705
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816730"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354090"
 ---
 # <a name="work-orders-and-fixed-assets"></a>Arbeidsordrer og anleggsmidler
 
@@ -34,31 +34,31 @@ I Aktivastyring kan aktiva relateres til anleggsmidler, og du kan opprette arbei
 
 Illustrasjonen nedenfor viser forholdet mellom et investeringsprosjekt i modulen **Prosjektstyring og regnskap** og et arbeidsordrejobbprosjekt.
 
-![Figur 1](media/24-work-orders.png)
+![Figur 1.](media/24-work-orders.png)
 
 Følgende fremgangsmåte beskriver forholdet mellom aktiva, arbeidsordrer, arbeidsordrejobbprosjekter og anleggsmidler.
 
 1. Du oppretter et aktivum som du knytter til et anleggsmiddel.
 
-![Figur 2](media/25-work-orders.png)
+![Figur 2.](media/25-work-orders.png)
 
 2. Når du definerer arbeidsordretyper på siden **Arbeidsordretyper** (**Aktivabehandling** > **Oppsett** > **Arbeidsordrer** > **Arbeidsordretyper**), oppretter du en arbeidsordretype for behandling av investeringer. Se også [Arbeidsordretyper](../setup-for-work-orders/work-order-types.md).
 
-![Figur 3](media/26-work-orders.png)
+![Figur 3.](media/26-work-orders.png)
 
 3. Når du definerer prosjektgrupper for arbeidsordrer i fanen **Prosjektgruppe** på siden **Prosjektoppsett for arbeidsordre** (**Aktivastyring** > **Oppsett** > **Arbeidsordrer** > **Prosjektoppsett**), oppretter du en relasjon mellom arbeidsordretypen som brukes for investeringer, og prosjektgruppen som ble opprettet for investeringer på siden **Prosjektgrupper** i modulen **Prosjektstyring og regnskap** (**Prosjektstyring og regnskap** > **Oppsett** > **Postering** > **Prosjektgrupper**).
 
-![Figur 4](media/27-work-orders.png)
+![Figur 4.](media/27-work-orders.png)
 
 4. Når du oppretter en arbeidsordre som er relatert til et anleggsmiddel, velger du arbeidsordretypen som brukes til å behandle investeringer, for eksempel **Investering**.
 
 5. Når arbeidsordren opprettes, vises den tilknyttede arbeidsordretypen på siden **Alle arbeidsordrer**.
 
-![Figur 5](media/28-work-orders.png)
+![Figur 5.](media/28-work-orders.png)
 
 6. Når arbeidsordren opprettes, opprettes prosjektet som er knyttet til arbeidsordren, på siden **Alle prosjekter** i modulen **Prosjektstyring og regnskap** (**Prosjektstyring og regnskap** > **Prosjekter** > **Alle prosjekter**). Hvis du vil vise prosjektrelatert informasjon, velger du koblingen i feltet **Prosjekt-ID** i fanen **Generelt** i hurtigfanen **Linjedetaljer** i detaljvisningen på siden **Alle arbeidsordrer** i modulen **Aktivabehandling** (**Aktivabehandling** > **Felles** > **Arbeidsordrer** > **Alle arbeidsordrer**).
 
-![Figur 6](media/29-work-orders.png)
+![Figur 6.](media/29-work-orders.png)
 
 7. Hvis du vil se en oversikt over prosjektene som er knyttet til et anleggsmiddel, velger du **Anleggsmidler** > **Anleggsmidler** > **Anleggsmidler** og deretter, i feltet **Anleggsmidlets nummer**, velger du koblingen til anleggsmidlet for å åpne detaljvisningen. Utvid ruten **Beslektet informasjon** til høyre på siden, og velg hurtigfanen **Tilknyttede prosjekter**.
 

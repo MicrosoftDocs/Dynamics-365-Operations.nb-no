@@ -9,17 +9,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.custom: intro-internal
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 39fae603a8ae34a7500ead1d2d1cecff6dc65f1e
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 62cc0bb9d62b0ab90e212b03e6c4efd9734dadec
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804047"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347422"
 ---
 # <a name="templates-and-layouts-overview"></a>Oversikt over maler og oppsett
 
@@ -32,9 +33,9 @@ En god måte å begynne å arbeide med maler på er å forstå de funksjonelle f
 
 Følgende illustrasjon viser sidemodellhierarkiet bak en gjengitt webside.
 
-![Diagram for sidemodell](../commerce/media/page-model-diagram.png)
+![Diagram for sidemodell.](../commerce/media/page-model-diagram.png)
 
-| Enhet        | Basisfunksjon |
+| Entity        | Basisfunksjon |
 |---------------|----------------|
 | Mal      | Maler definerer modulalternativene og grunnstruktur for et sett med oppsett og sideforekomster. |
 | Utseende        | Oppsett definerer det endelige utvalget og ordningen av moduler for en side eller et sett med sider. |
@@ -98,7 +99,7 @@ Forhåndsinnstilt oppsett og egendefinerte oppsett redigeres i forskjellige dele
 
 Følgende illustrasjoner viser scenarier for forhåndsinnstilte og egendefinerte oppsett.
 
-![Forhåndsinnstilte og egendefinerte oppsettsscenarier](../commerce/media/template-figure1.png)
+![Forhåndsinnstilte og egendefinerte oppsettsscenarier.](../commerce/media/template-figure1.png)
 
 Hvis du vil begynne å bruke forhåndsinnstilte oppsett, se [Arbeide med forhåndsinnstilte oppsett](work-with-layouts.md).
 

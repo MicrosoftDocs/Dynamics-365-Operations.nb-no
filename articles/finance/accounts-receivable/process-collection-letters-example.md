@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: fb2651644efd2cadfccb91e48c34dfddc8383e1f
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: e813b4f0c6408a8046fa8203007a0a356ca2c794
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021422"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347814"
 ---
 # <a name="process-collection-letters-example"></a>Behandle eksempel på purring
 
@@ -40,7 +40,7 @@ Når du er ferdig, gjør du følgende.
 
 Illustrasjonen nedenfor viser informasjonen i tabellen slik den vil se ut på **purresiden**. 
 
-[![Definere en purresekvens](./media/Ignore-payments-creditmemos-1.PNG)](./media/Ignore-payments-creditmemos-1.PNG)
+[![Definere en purresekvens.](./media/Ignore-payments-creditmemos-1.PNG)](./media/Ignore-payments-creditmemos-1.PNG)
 
  Nå må du definere de to parameterne som kreves for dette eksemplet.
 
@@ -49,7 +49,7 @@ Illustrasjonen nedenfor viser informasjonen i tabellen slik den vil se ut på **
     1. I hurtigfanen **Innkrevinger** setter du alternativet **Ignorer betalinger og kreditnotaer ved beregning av purrekode** til **Ja**.
     2. Kontroller at feltet **Opprett en purring per** er satt til **Kunde**.
 
-    [![Angi Kundeparametere for kredittinnkrevinger](./media/Ignore-payments-creditmemos-2.PNG)](./media/Ignore-payments-creditmemos-2.PNG)
+    [![Angi Kundeparametere for kredittinnkrevinger.](./media/Ignore-payments-creditmemos-2.PNG)](./media/Ignore-payments-creditmemos-2.PNG)
 
 3. Gå til **Kunder \> Fakturaer \> Alle fritekstfakturaer**, velg **Ny**, og gjør deretter følgende:
 
@@ -74,7 +74,7 @@ Illustrasjonen nedenfor viser informasjonen i tabellen slik den vil se ut på **
 5. Gjenta trinn 4, men angi **-200,00** i feltet **Enhetspris**.
 6. Gå til **Kunder \> Kunder \> Alle kunder** og velg kunde **US-045**. I handlingsruten velger du deretter **Transaksjoner \> Transaksjoner** for å gå gjennom kundetransaksjonene du posterte tidligere.
 
-    [![Gå gjennom de posterte kundetransaksjonene](./media/Ignore-payments-creditmemos-3.PNG)](./media/Ignore-payments-creditmemos-3.PNG)
+    [![Gå gjennom de posterte kundetransaksjonene.](./media/Ignore-payments-creditmemos-3.PNG)](./media/Ignore-payments-creditmemos-3.PNG)
 
     Du må nå opprette purringer for en kunde US-045.
 
@@ -93,7 +93,7 @@ Illustrasjonen nedenfor viser informasjonen i tabellen slik den vil se ut på **
 
     1. Legg merke til at purrekoden i både hodet og transaksjonslinjene er **Purring 1**, ettersom denne purringen er den første purringen i serien. (Hvis du vil vise transaksjonslinjene, må du kanskje velge hurtigfanen **Transaksjoner**.)
 
-   [![Kontrollere at samme purrekode vises i hodet og på linjene](./media/Ignore-payments-creditmemos-4.PNG)](./media/Ignore-payments-creditmemos-4.PNG)
+   [![Kontrollere at samme purrekode vises i hodet og på linjene.](./media/Ignore-payments-creditmemos-4.PNG)](./media/Ignore-payments-creditmemos-4.PNG)
 
     2. Velg **Poster** i handlingsruten.
     3. I feltet **Posteringsdata** angir du **19.01.2021**.
@@ -115,7 +115,7 @@ Illustrasjonen nedenfor viser informasjonen i tabellen slik den vil se ut på **
 
     1. Legg merke til at purrekoden i hodet er **Purring 1**. Koden på transaksjonslinjene er imidlertid **Purring 2**.
 
-   [![Kontrollerer at forskjellige purrekoder vises i hodet og på linjene](./media/Ignore-payments-creditmemos-5.PNG)](./media/Ignore-payments-creditmemos-5.PNG)
+   [![Kontrollerer at forskjellige purrekoder vises i hodet og på linjene.](./media/Ignore-payments-creditmemos-5.PNG)](./media/Ignore-payments-creditmemos-5.PNG)
 
   Kodene varierer fordi alternativet **Ignorer betalinger og kreditnotaer ved beregning av purrekode** er satt til **Ja**.
 
@@ -123,7 +123,7 @@ Illustrasjonen nedenfor viser informasjonen i tabellen slik den vil se ut på **
 
 11. Gå til **Kreditt og innkreving \> Oppsett \> Kundeparametere**, og deretter setter du alternativet **Ignorer betalinger og kreditnotaer ved beregning av purrekode** til **Nei** i fanen **Purringer**.
 
-    [![Setter alternativet Ignorer betalinger og kreditnotaer ved beregning av purrekoden til Nei](./media/Ignore-payments-creditmemos-6.PNG)](./media/Ignore-payments-creditmemos-6.PNG)
+    [![Setter alternativet Ignorer betalinger og kreditnotaer ved beregning av purrekoden til Nei.](./media/Ignore-payments-creditmemos-6.PNG)](./media/Ignore-payments-creditmemos-6.PNG)
 
     Du må nå opprette purringer på nytt for kunde US-045.
 
@@ -140,6 +140,6 @@ Illustrasjonen nedenfor viser informasjonen i tabellen slik den vil se ut på **
 
 13. Gå til **Kreditt og innkrevinger \> Purring \> Gå gjennom og behandle purrebrev**, og legg merke til at purrebrevkoden på både hodet og transaksjonslinene **Purrebrev 2**.
 
-    [![Viser på nytt at samme purrekode vises i hodet og på linjene](./media/Ignore-payments-creditmemos-7.PNG)](./media/Ignore-payments-creditmemos-7.PNG)
+    [![Viser på nytt at samme purrekode vises i hodet og på linjene.](./media/Ignore-payments-creditmemos-7.PNG)](./media/Ignore-payments-creditmemos-7.PNG)
 
     Den samme koden vises begge steder fordi alternativet **Ignorer betalinger og kreditnotaer ved beregning av purrekode** nå er satt til **Nei**.

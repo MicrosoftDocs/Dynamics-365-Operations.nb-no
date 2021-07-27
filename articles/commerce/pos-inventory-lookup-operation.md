@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application update 5, AX 8.0
-ms.openlocfilehash: 873c6413c14d2ee8315c149ee9c495bb59dbd930
-ms.sourcegitcommit: 11ca5863175150b6c39f47a9322caa2186727a26
+ms.openlocfilehash: c0f753febb0d347015fde1374148835f90df55a3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6025454"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353786"
 ---
 # <a name="inventory-lookup-operation-in-pos"></a>Lageroppslag på salgsstedet
 
@@ -45,7 +45,10 @@ For et enkeltprodukt gir lageroppslagsoperasjonen en lageroppslagsliste som vise
 
 Listevisningen over lokasjoner omfatter alle butikker og lagre som er konfigurert i innfrielsesgruppene som den gjeldende butikken er koblet til, som vist i eksempelet nedenfor.
 
-![Listevisning for lageroppslag](media/inventory-lookup-list-view.png)
+![Listevisning for lageroppslag.](media/inventory-lookup-list-view.png)
+
+> [!NOTE]
+> Kontroller at gjeldende butikk er inkludert i de tilknyttede innfrielsesgruppene.
 
 Følgende handlinger er tilgjengelige på applinjen for salgsstedet:
 
@@ -65,7 +68,7 @@ Følgende handlinger er tilgjengelige på applinjen for salgsstedet:
 - **Legg til transaksjon** – Denne handlingen legger til produktet i handlekurven og sender brukeren videre til transaksjonsskjermbildet.
 
 > [!NOTE]
-> Når det gjelder en lokasjonsbasert sortering, bestemmes avstanden mellom en lokasjon og den gjeldende butikken av koordinatene (bredde og lengde) som er definert i Commerce Headquarters. For en butikk er lokasjonsinformasjonen definert i primæradressen til driftsenheten som er tilknyttet butikken. For et lager som ikke er butikk, defineres lokasjonsinformasjonen i lageradressen. Hvis den gjeldende butikken ikke har riktig definerte koordinater, vil det lokasjonsbaserte sorteringsalternativet vise den gjeldende butikken øverst i listen, og deretter sortere andre lokasjoner etter navn.
+> Når det gjelder en lokasjonsbasert sortering, bestemmes avstanden mellom en lokasjon og den gjeldende butikken av koordinatene (bredde og lengde) som er definert i Commerce Headquarters. For en butikk er lokasjonsinformasjonen definert i primæradressen til driftsenheten som er tilknyttet butikken. For et lager som ikke er butikk, defineres lokasjonsinformasjonen i lageradressen. Hvis den gjeldende butikken ikke har definerte koordinater, vil det lokasjonsbaserte sorteringsalternativet vise den gjeldende butikken øverst i listen, og deretter sortere andre lokasjoner etter navn.
 
 > [!NOTE]
 > **Vis butikktilgjengelighet**, **Vis butikklokasjon**, **Hent i butikk** og **Send produkt** er ikke tilgjengelig for ikke-butikklokasjoner.
@@ -76,7 +79,7 @@ For et hovedprodukt med varianter gir lageroppslagsoperasjonen også en dimensjo
 
 Følgende eksempelbilde viser matrisevisningen for lageroppslag på salgsstedet.
 
-![Matrisevisning for lageroppslag](media/inventory-lookup-matrix-view.png)
+![Matrisevisning for lageroppslag.](media/inventory-lookup-matrix-view.png)
 
 I matrisevisningen representerer hver celle en individuell variant, og viser en lagerbeholdningsverdi (fysisk tilgjengelig) nederst i høyre hjørne i tillegg til **reserverte** (fysisk reserverte) og **bestilte** verdier (bestilt i total) i øvre venstre hjørne. Tabellen nedenfor forklarer betydningen av ulike lagerbeholdningsverdier.
 
@@ -103,7 +106,7 @@ Salgsstedsbrukere kan få tilgang til lageroppslagsoperasjonen fra andre sider p
 
 Følgende eksempelbilde viser matrisevisningresultatene fra en PDP på salgsstedet.
 
-![Lageroppslag fra produktdetaljerside](media/inventory-lookup-from-product-details-page.png)
+![Lageroppslag fra produktdetaljerside.](media/inventory-lookup-from-product-details-page.png)
 
 På PDP-en til et hovedprodukt kan du bruke handlingen **Vis alle varianter** på applinjen for å starte matrisevisningen for lageroppslag som viser informasjon om lagertilgjengelighet for den gjeldende butikken for alle varianter av et produkt. For et enkelt produkt viser PDP-verdien lagerbeholdningen (fysisk tilgjengelig) for dette produktet for den gjeldende butikken. I tillegg kan du velge koblingen **Annet butikklager** for å starte lageroppslagsoperasjonen for å kontrollere lagertilgjengeligheten for et produkt på tvers av andre butikker eller lagre.
 

@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 20120-02-28
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 47867447e6d16a0fb4542c17ab184068300b2c1c
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 8f5c8f104d8304cf9a54efcdf6e22efbc3b356b3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019963"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348274"
 ---
 # <a name="seamless-offline-switch-for-gift-card-and-credit-memo-operations"></a>Sømløs bryter for frakoblet modus for gavekort- og kreditnotaoperasjoner
 
@@ -36,7 +36,7 @@ Hvis tilkoblingen til salgsstedet forsvinner etter at et gavekort er lagt til i 
 
 Hvis du vil aktivere funksjonaliteten for å fullføre gavekorttransaksjoner etter at du har byttet til frakoblet modus, kan du gå til kategorien **Postering** på siden **Parametere for Commerce**. I denne kategorien finner du hurtigfanen **Gavekort**, og angi **Tillat avslutning av gavekorttransaksjoner i frakoblet modus** til **Ja**.
 
-![Frakoblet innstilling for gavekort](../media/gift.png)
+![Frakoblet innstilling for gavekort.](../media/gift.png)
 
 Commerce-parametere bufres vanligvis. Etter at innstillingen for denne parameteren er oppdatert og distribusjonsplanen startes for å synkronisere endringen til kanalen, kan det derfor ta opptil 24 timer før endringen trer i kraft. Hvis du vil gjøre endringene gjeldende umiddelbart, tilbakestiller du Microsoft Internet Information Services (IIS).
 
@@ -46,7 +46,7 @@ På samme måte som interne gavekort vedlikeholdes kreditnotaer sentralt i Comme
 
 Hvis du vil aktivere funksjonaliteten for å fullføre kreditnotatransaksjoner etter at du har byttet til frakoblet modus, kan du gå til kategorien **Postering** på siden **Parametere for Commerce**. I denne kategorien finner du hurtigfanen **Kreditnota**, og angi **Tillat avslutning av kreditnotatransaksjoner i frakoblet modus** til **Ja**.
 
-![Frakoblet innstilling for kreditnota](../media/creditmemo.png)
+![Frakoblet innstilling for kreditnota.](../media/creditmemo.png)
 
 Commerce-parametere bufres vanligvis. Etter at innstillingen for denne parameteren er oppdatert og distribusjonsplanen startes for å synkronisere endringen til kanalen, kan det derfor ta opptil 24 timer før endringen trer i kraft. Hvis du vil gjøre endringene gjeldende umiddelbart, tilbakestiller du IIS.
 

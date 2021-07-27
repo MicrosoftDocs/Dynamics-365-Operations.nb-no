@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 15466699b94c284208330d50b840c874534b879c
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: ce5ddf863988475550584384f4cf26f1302768aa
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5910286"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355907"
 ---
 # <a name="synchronize-inventory-level-information-from-supply-chain-management-to-field-service"></a>Synkronisere informasjon om lagernivå fra Supply Chain Management til Field Service 
 
@@ -31,7 +31,7 @@ ms.locfileid: "5910286"
 
 Dette emnet omhandler malene og de underliggende oppgavene som brukes til å synkronisere lagernivåinformasjon fra Dynamics 365 Supply Chain Management til Dynamics 365 Field Service.
 
-[![Synkronisering av forretningsprosesser mellom Supply Chain Management og Field Service](./media/FSOnHandOW.png)](./media/FSOnHandOW.png)
+[![Synkronisering av forretningsprosesser mellom Supply Chain Management og Field Service.](./media/FSOnHandOW.png)](./media/FSOnHandOW.png)
 
 ## <a name="templates-and-tasks"></a>Maler og oppgaver
 Følgende mal og underliggende oppgaver brukes til å synkronisere lagerbeholdningsnivåer fra Supply Chain Management til Field Service.
@@ -89,7 +89,7 @@ Du kan bruke filtre med avansert spørring og filtrering slik at bare bestemte p
 
 ### <a name="product-inventory-supply-chain-management-to-field-service-product-inventory"></a>Produktbeholdning (Supply Chain Management til Field Service): Produktbeholdning
 
-[![Maltilordning i Dataintegrering](./media/FSinventoryLevel1.png)](./media/FSinventoryLevel1.png)
+[![Maltilordning i Dataintegrering.](./media/FSinventoryLevel1.png)](./media/FSinventoryLevel1.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

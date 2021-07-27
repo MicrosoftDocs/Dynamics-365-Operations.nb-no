@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: b1e86cbe1c2b9247f902a8f5777e73f7a9b37929
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: bda264a255a688d64e314d994dc281602c9324cc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797821"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347596"
 ---
 # <a name="checkout-module"></a>Kassemodul
 
@@ -33,7 +33,7 @@ En kassemodul gjengir data basert på handlekurv-IDen. Denne handlekurv-IDen lag
 
 Bildet nedenfor viser et eksempel på en Fabrikam-kassemodul på en kasseside.
 
-![Eksempel på en kassemodul](./media/Checkout.PNG)
+![Eksempel på en kassemodul.](./media/Checkout.PNG)
 
 ## <a name="checkout-module-properties"></a>Egenskaper i kassemodulen
 
@@ -52,13 +52,13 @@ En kassemodul viser et ordresammendrag og inneholder funksjonalitet for å legge
 
     Bildet nedenfor viser et eksempel på en leveringsadressemodul på en kasseside.
 
-    ![Eksempel på en leveringsadressemodul](./media/ecommerce-shippingaddress.PNG)
+    ![Eksempel på en leveringsadressemodul.](./media/ecommerce-shippingaddress.PNG)
 
 - **Leveringsalternativer** – I denne modulen kan en kunde velge en leveringsmodus for en ordre. Hvis du vil ha mer informasjon om denne modulen, kan du se [Modul for leveringsalternativer](delivery-options-module.md).
 
     Bildet nedenfor viser et eksempel på en leveringsalternativer-modul på en kasseside.
  
-    ![Eksempel på en modul for leveringsalternativer](./media/ecommerce-deliveryoptions.PNG)
+    ![Eksempel på en modul for leveringsalternativer.](./media/ecommerce-deliveryoptions.PNG)
 
 - **Container for betalingsdel** – Denne modulen er en container som du kan sette flere moduler i for å opprette en del innenfor betalingsflyten. Du kan for eksempel plassere alle betalingsrelaterte moduler i denne containeren for å vise dem som én inndeling. Denne modulen har bare innvirkning på oppsettet for flyten.
 
@@ -70,7 +70,7 @@ En kassemodul viser et ordresammendrag og inneholder funksjonalitet for å legge
 
     Følgende bilde viser et eksempel på en gavekort-, fordelspoeng- og betalingsmodul på en kasseside.
 
-    ![Eksempel på en gavekort-, fordelspoeng- og betalingsmodul på en kasseside](./media/ecommerce-payments.PNG)
+    ![Eksempel på en gavekort-, fordelspoeng- og betalingsmodul på en kasseside.](./media/ecommerce-payments.PNG)
 
 - **Kontaktinformasjon** – Ved hjelp av denne modulen kan en kunde legge til eller endre kontaktinformasjonen (e-postadresse) for en ordre.
 
@@ -80,7 +80,7 @@ En kassemodul viser et ordresammendrag og inneholder funksjonalitet for å legge
 
     Bildet nedenfor viser et eksempel på vilkår på en kasseside.
 
-    ![Eksempel på vilkår på en betalingsside](./media/ecommerce-checkout-terms.PNG)
+    ![Eksempel på vilkår på en betalingsside.](./media/ecommerce-checkout-terms.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Samhandling med Commerce Scale Unit
 

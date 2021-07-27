@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: ecdf4e5618d3397527bf83977857fbe3f8dbb265
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: de378edbd7d13626302c7129c605b1837ffb579e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799185"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349608"
 ---
 # <a name="create-a-default-customer"></a>Opprette en standardkunde
 
@@ -47,7 +47,7 @@ Hvis du vil opprette en kundegruppe, følger du disse trinnene.
 
 Følgende bilde viser flere konfigurerte kundegrupper.
 
-![Kundegrupper](media/customer-groups.png)
+![Kundegrupper.](media/customer-groups.png)
 
 ## <a name="create-a-customer-address-book"></a>Opprette en kundeadressebok
 
@@ -63,7 +63,7 @@ Hvis du vil opprette en kundeadressebok, følger du disse trinnene.
 
 Bildet nedenfor viser et eksempel på en adressebok.
 
-![Adressebok](media/address-book.png)
+![Adressebok.](media/address-book.png)
 
 ## <a name="create-a-default-customer&quot;></a>Opprette en standardkunde
 
@@ -86,11 +86,11 @@ Hvis du vil opprette en standardkunde, følger du disse trinnene.
 
 Bildet nedenfor viser et eksempel på kundeopprettelse.
 
-![Standardkundeopprettelse](media/default-customer-creation.png)
+![Standardkundeopprettelse.](media/default-customer-creation.png)
 
 Bildet nedenfor viser en standardkundekonfigurasjon.
 
-![Eksempel på kundekonfigurasjon](media/default-customer-configuration1.png)
+![Eksempel på kundekonfigurasjon.](media/default-customer-configuration1.png)
 
 De fleste standardverdiene på Kundedetaljer-skjermbildet kan bli slik de er, men to verdier må endres.
 
@@ -100,13 +100,13 @@ De fleste standardverdiene på Kundedetaljer-skjermbildet kan bli slik de er, me
 
 Bildet nedenfor viser et eksempel på kundekonfigurasjon.
 
-![Eksempel på kundekonfigurasjon](media/default-customer-configuration2.png)
+![Eksempel på kundekonfigurasjon.](media/default-customer-configuration2.png)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Oversikt over kanaler](channels-overview.md)
 
-[Forutsetninger for kanaloppsett](channels-prerequisites.md)
+[Kanaloppsettsforutsetninger](channels-prerequisites.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

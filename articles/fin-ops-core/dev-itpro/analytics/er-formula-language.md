@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 470b4fa1c8b15ae4a9e9ebef81af9e4ca107422d
-ms.sourcegitcommit: 15aacd0e109b05c7281407b5bba4e6cd99116c28
+ms.openlocfilehash: 1e48c02ecc9d69cf14ed257aae56081925cedfe9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6223992"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355400"
 ---
 # <a name="electronic-reporting-formula-language"></a>Formelspråk i elektronisk rapportering
 
@@ -117,15 +117,15 @@ Når et uttrykk refererer til en strukturert datakilde, kan du bruke banedefinis
 
 Hvis banen til en strukturert datakilde starter med et krøllalfategn (@), er det en relativ bane. Krøllalfategnet vises i stedet for den gjenstående delen av den absolutte banen til den hierarkiske trestrukturen som brukes. Illustrasjonen nedenfor viser et eksempel. Her angir den absolutte banen `Ledger.'accountingCurrency()'` at regnskapsvalutaverdien fra **Finans**-datakilden angis i **AccountingCurrency**-feltet i datamodellen.
 
-![Eksempel på en absolutt bane på siden for ER-modelltilordningsutforming](./media/ER-FormulaLanguage-AbsolutePath.png)
+![Eksempel på en absolutt bane på siden for ER-modelltilordningsutforming.](./media/ER-FormulaLanguage-AbsolutePath.png)
 
 Eksemplet i illustrasjonen nedenfor viser hvordan en relativ bane brukes. Den relative banen `@.AccountNum` angir at **AccountNum**-feltet for **Intrastat**-datakilden (som vises ett nivå over **AccountNum**-feltet i datamodellens hierarkiske tre) brukes til å angi kontonummeret for kunden eller leverandøren i datamodellens **AccountNum**-felt.
 
-![Eksempel på en relativ bane på siden for ER-modelltilordningsutforming](./media/ER-FormulaLanguage-RelativePath1.png)
+![Eksempel på en relativ bane på siden for ER-modelltilordningsutforming.](./media/ER-FormulaLanguage-RelativePath1.png)
 
 Den gjenstående delen av den absolutte banen vises også i [ER-formelredigeringen](general-electronic-reporting-formula-designer.md).
 
-![Gjenstående del av den absolutte banen på siden ER-formeldesigner](./media/ER-FormulaLanguage-RelativePath2.png)
+![Gjenstående del av den absolutte banen på siden ER-formeldesigner.](./media/ER-FormulaLanguage-RelativePath2.png)
 
 Hvis du vil ha mer informasjon, kan du se [Bruke en relativ bane i databindinger for ER-modeller og -formater](relative-path-data-bindings-er-models-format.md).
 

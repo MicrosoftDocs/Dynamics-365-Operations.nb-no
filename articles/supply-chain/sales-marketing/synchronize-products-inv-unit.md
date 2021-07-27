@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 0ecb03d7d826fc6d79f1df800da22dc913177ee4
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b65f23516d6be3d5d942d787261f5b8394c9f9c5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5824876"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356957"
 ---
 # <a name="synchronize-products-with-inventory-unit-from-supply-chain-management-to-field-service"></a>Synkronisere produkter med lagerenhet fra Supply Chain Management til Field Service
 
@@ -29,7 +29,7 @@ ms.locfileid: "5824876"
 
 Dette emnet omhandler malene og den underliggende oppgaven som brukes til å synkronisere produkter med lagerenhet fra Dynamics 365 Supply Chain Management til Dynamics 365 Field Service.
 
-[![Synkronisering av forretningsprosesser mellom Supply Chain Management og Field Service](./media/FSProductsOW.png)](./media/FSProductsOW.png)
+[![Synkronisering av forretningsprosesser mellom Supply Chain Management og Field Service.](./media/FSProductsOW.png)](./media/FSProductsOW.png)
 
 Den brukte **Field Service-produkter med lagerenhet (Supply Chain Management til Field Service)**-malen er basert på **Field Service-produkter (Supply Chain Management til Field Service)**-malen. Hvis du vil ha mer informasjon, kan du se [Synkronisere produkter i Supply Chain Management til produkter i Field Service](field-service-product.md).
 
@@ -59,7 +59,7 @@ Følgende illustrasjoner viser en tilordning av malen i Dataintegrering.
 
 ### <a name="field-service-products-with-inventory-unit-supply-chain-management-to-field-service-products"></a>Field Service-produkter med lagerenhet(Supply Chain Management til Field Service): Produkter
 
-[![Maltilordning i Dataintegrering](./media/FSProduct1.png)](./media/FSProduct1.png)
+[![Maltilordning i Dataintegrering.](./media/FSProduct1.png)](./media/FSProduct1.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

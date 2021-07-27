@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-11-17
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 056808b7d4d490bc4d60aa058108d159c1d4867c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b3a8fe37ae97cf3b14f5121274603cd30de3304b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826257"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356781"
 ---
 # <a name="reduce-balance-depreciation-after-a-split"></a>Redusere saldoavskrivning etter en deling
 
@@ -37,7 +37,7 @@ Følgende betingelser gjelder for eksempel:
 - Avskrivningen for det første regnskapsåret er lik $18.000, den månedlige avskrivningen er lik $150, og aktivaet blir deretter avskrevet til november 2019 med $738,75.
 - I november 2019 deles 80 prosent av aktivaet med et anleggsmiddel.
 
-[![Redusere saldoavskrivning etter en deling](./media/reduce-balance-depreciation-after-split.png)](./media/reduce-balance-depreciation-after-split.png)
+[![Redusere saldoavskrivning etter en deling.](./media/reduce-balance-depreciation-after-split.png)](./media/reduce-balance-depreciation-after-split.png)
 
 Beløpet som skal avskrives for det opprinnelige aktivaet, er $1822,25. Dette beløpet er lik netto bokført verdi før delingstransaksjonen posteres ($9 111,25), pluss anskaffelsesjusteringen som genereres under postering av delingstransaksjonen (-$8 000), pluss avskrivningsjusteringen som genereres i løpet av delingstransaksjonen ($711). Derfor er avskrivningen for det andre året (1 822,25 × 18 prosent) ÷ 12 = $27,33.
 

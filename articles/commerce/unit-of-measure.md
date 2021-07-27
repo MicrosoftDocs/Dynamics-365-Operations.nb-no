@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7d338ba207c9a101f5e224ca66555b16a457bcbc
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 076d4a68362dbf11c5fcf223a836f075d07e27a3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6271407"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350334"
 ---
 # <a name="apply-unit-of-measure-settings"></a>Bruke måleenhetsinnstillinger
 
@@ -32,7 +32,7 @@ Et produkt kan selges i forskjellige enheter, for eksempel "hver", "par" og "dus
 
 I illustrasjonen nedenfor er det konfigurert en salg per-måleenhet for et produkt **hv** (hver) i Commerce Headquarters.
 
-![Eksempel på et produkt som er konfigurert med en måleenhet i Commerce Headquarters](./media/Productunit-headquarters.PNG)
+![Eksempel på et produkt som er konfigurert med en måleenhet i Commerce Headquarters.](./media/Productunit-headquarters.PNG)
 
 > [!NOTE]
 > Støtte for bruk og visning av måleenheten er tilgjengelig fra Commerce versjon 10.0.19.
@@ -54,11 +54,11 @@ Moduler som bruker måleenhetsinnstillingene, omfatter modulene kjøpsboks, øns
 
 I eksemplet i illustrasjonen nedenfor viser en produktdetaljside (PDP) måleenheten (**hv**) for et produkt.
 
-![Eksempel på en PDP som viser måleenheten](./media/Productunit-PDP.png)
+![Eksempel på en PDP som viser måleenheten.](./media/Productunit-PDP.png)
 
 I eksemplet i illustrasjonen nedenfor viser en produktsamlingsmoduls måleenheten (**hv**) for et produkt.
 
-![Eksempel på en produktsamlingsmodul som viser måleenheten](./media/Productunit-productcollection.png)
+![Eksempel på en produktsamlingsmodul som viser måleenheten.](./media/Productunit-productcollection.png)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

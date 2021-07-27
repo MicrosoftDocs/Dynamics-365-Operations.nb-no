@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: f57a20ed56a761894b2cedf8835310dac098b098
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 7e6ac62b2b289ef818a083b9ae4d1d74946ae3fc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750624"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346502"
 ---
 # <a name="integrated-vendor-master"></a>Integrert original for leverandør
 
@@ -39,11 +39,11 @@ I begge fremgangsmåtene er leverandørdataene integrert i Dynamics 365 Supply C
 
 Hvis du ikke vil lagre leverandørdata i tabellen **Konto/kontakt** i Dataverse, kan du bruke den nye leverandørutformingen.
 
-![Flyt for leverandørdata](media/dual-write-vendor-data-flow.png)
+![Flyt for leverandørdata.](media/dual-write-vendor-data-flow.png)
 
 Hvis du ikke vil fortsette å lagre leverandørdata i tabellen **Konto/kontakt**, kan du bruke den utvidede leverandørutformingen. Hvis du vil bruke den utvidede leverandørutformingen, må du konfigurere leverandørarbeidsflytene i løsningspakken med dobbel skriving. Hvis du vil ha mer informasjon, se [Bytte mellom leverandørutforminger](vendor-switch.md).
 
-![Utvidet flyt for leverandørdata](media/dual-write-vendor-detail.jpg)
+![Utvidet flyt for leverandørdata.](media/dual-write-vendor-detail.jpg)
 
 > [!TIP]
 > Hvis du bruker Power Apps-portaler for selvbetjeningsleverandører, kan leverandørinformasjonen flyte direkte til Finance and Operations-apper.

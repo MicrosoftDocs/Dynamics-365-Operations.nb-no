@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 96a600279b7a90d6626d23ee8868de13e9dd0f14
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 2b6f9663ed08ab431ffc6ffe3154854250c1b092
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6270891"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350480"
 ---
 # <a name="calculate-inventory-availability-for-retail-channels"></a>Beregne lagertilgjengelighet for detaljhandelskanaler
 
@@ -105,7 +105,7 @@ I Commerce-versjon 10.0.9 og tidligere brukte operasjonen **Beholdningsoppslag**
 
 Når beregning på kanalsiden er riktig konfigurert og administrert, kan det gi et mer pålitelig estimat over gjeldende butikkbeholdning, fordi dette bruker transaksjonsdataene som er i handelskanaldatabasen, men som hovedkvarteret kanskje ikke har informasjon om ennå. Hvis du for eksempel bruker det eksisterende servicekallet i sanntid for lageroppslag på salgsstedet, vil ikke hovedkvarteret ennå ha informasjon om kontantsalg som akkurat har skjedd for et produkt. Derfor vil lagerbeholdningsverdien som er returnert av hovedkvarteret for dette produktet, sannsynligvis overskride butikkens faktiske lagerbeholdning med én enhet. Hvis du imidlertid bruker beregning på kanalsiden, kan kontantsalget faktoreres inn i beregningen og trekkes fra beholdningsverdien som vises. Selv om verdiene som både kanalsiden og servicekallet i sanntid oppgir, bare er estimater av lagerbeholdningen, er verdien som beregning på kanalsiden oppgir, mye mer sannsynlig å være nøyaktig for den gjeldende butikken.
 
-Følg denne fremgangsmåten for å konfigurere **Lageroppslag** for salgsstedet i hovedkontoret for å bruke beregningslogikken på kanalsiden og slå av servicekall i sanntid.
+Hvis du vil konfigurere **Lageroppslag** for salgsstedet i Commerce Headquarters for å bruke beregningslogikken på kanalsiden og slå av servicekall i sanntid, må du først aktivere funksjonen **Beregning av optimalisert produkttilgjengelighet** via arbeidsområdet **Funksjonsbehandling** i Commerce Headquarters, og deretter følge denne fremgangsmåten.
 
 1. Gå til **Retail og Commerce \> Kanaloppsett \> Salgsstedsoppsett \> Salgsstedsprofiler \> Funksjonalitetsprofiler**.
 1. Velg en funksjonalitetsprofil.

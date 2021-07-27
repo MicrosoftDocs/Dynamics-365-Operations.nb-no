@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: ae957f592ad9a1237817fec5d4172295f9a53020
-ms.sourcegitcommit: 655b0e16c7aef6182cd58bc816b901470e1bb2ce
+ms.openlocfilehash: a9b2e8d46debf8e065361d85f10162cda56b62e8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6222592"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349040"
 ---
 # <a name="enable-customer-payment-predictions-preview"></a>Aktivere kundebetalingsprognoser (forhåndsversjon)
 
@@ -51,7 +51,7 @@ Dette emnet forklarer hvordan du aktiverer og konfigurerer funksjonen for kundeb
 
     1. Gå til **Kreditt og innkreving \> Oppsett \> Finance Insights \> Parametere for økonomisk innsikt**.
 
-        [![Siden Parametere for økonomisk innsikt før funksjonen er konfigurert](./media/finance-insights-parameters.png)](./media/finance-insights-parameters.png)
+        [![Siden Parametere for økonomisk innsikt før funksjonen er konfigurert.](./media/finance-insights-parameters.png)](./media/finance-insights-parameters.png)
 
     2. Velg koblingen **Vis datafeltene som brukes i prognosemodellen** i fanen **Innsikt i kundebetaling** på siden **Parametere for økonomisk innsikt** for å åpne siden **Datafelter for prognosemodell**. Der kan du vise standardlisten over felt som brukes til å opprette en prognosemodell basert på kunstig intelligens (AI) for kundebetalingsprognoser.
 
@@ -77,7 +77,7 @@ Dette emnet forklarer hvordan du aktiverer og konfigurerer funksjonen for kundeb
 
 Etter at funksjonen er aktivert og konfigurert, og prognosemodellen er opprettet og fungerer, viser **Prognosemodell**-delen på siden **Parametere for økonomisk innsikt** nøyaktigheten til modellen, som vist i illustrasjonen nedenfor.
 
-[![Nøyaktigheten til prognosemodellen på siden Parametere for økonomisk innsikt](./media/finance-insights-parameters-accuracy.png)](./media/finance-insights-parameters-accuracy.png)
+[![Nøyaktigheten til prognosemodellen på siden Parametere for økonomisk innsikt.](./media/finance-insights-parameters-accuracy.png)](./media/finance-insights-parameters-accuracy.png)
 
 ## <a name="release-details"></a>Frigivelsesdetaljer
 

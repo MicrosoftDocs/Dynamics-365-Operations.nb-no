@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 6f74602cafe3f0848a9e03f17300ca6242fe1545
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 53d01756d803a0ebc9eb366deded4bf3bef3b1f6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893986"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351752"
 ---
 # <a name="download-er-configurations-from-the-global-repository-of-configuration-service"></a>Last ned ER-konfigurasjoner fra det globale repositoriet for konfigurasjonstjenesten
 
@@ -40,7 +40,7 @@ Dette emnet forklarer hvordan du laster ned [elektroniske rapporteringskonfigura
 3. I delen **Konfigurasjonsleverandører** velger du **Microsoft**-flisen.
 3. På **Microsoft**-flisen velger du **Repositorier**.
 
-    ![Arbeidsområdet Elektronisk rapportering](./media/er-download-configurations-global-repo-er-workspace.png)
+    ![Arbeidsområdet Elektronisk rapportering.](./media/er-download-configurations-global-repo-er-workspace.png)
 
 4. På **Konfigurasjonsrepositorier**-siden i rutenettet velger du det eksisterende repositoriet for **Global**-typen. Hvis dette repositoriet ikke vises i rutenettet, gjør du følgende:
 
@@ -52,7 +52,7 @@ Dette emnet forklarer hvordan du laster ned [elektroniske rapporteringskonfigura
 
 5. Velg **Åpne** for å vise listen over ER-konfigurasjoner for det valgte repositoriet.
 
-    ![Konfigurasjonsrepositorier-side](./media/er-download-configurations-global-repo-repositories-list.png)
+    ![Konfigurasjonsrepositorier-side.](./media/er-download-configurations-global-repo-repositories-list.png)
 
 ## <a name="import-a-single-configuration"></a>Importere én enkelt konfigurasjon
 
@@ -63,7 +63,7 @@ Dette emnet forklarer hvordan du laster ned [elektroniske rapporteringskonfigura
     > [!NOTE]
     > **Importer**-knappen er ikke tilgjengelig for ER-konfigurasjonsversjoner som allerede finnes i den gjeldende Finance-forekomsten.
 
-    ![Konfigurasjonsrepositorium-side](./media/er-download-configurations-global-repo-repository-content.png)
+    ![Konfigurasjonsrepositorium-side.](./media/er-download-configurations-global-repo-repository-content.png)
 
 ## <a name="import-filtered-configurations"></a>Importere filtrerte konfigurasjoner
 
@@ -77,7 +77,7 @@ Dette emnet forklarer hvordan du laster ned [elektroniske rapporteringskonfigura
 4. I **Konfigurasjoner**-hurtigkategorien velger du **Importer** for å laste ned de filtrerte konfigurasjonene fra det globale repositoriet til den gjeldende forekomsten.
 5. I **Konfigurasjoner**-hurtigkategorien velger du **Nullstill filter** for å tømme de angitte utvalgsbetingelsene.
 
-    ![Konfigurasjonsrepositorium-side](./media/er-download-configurations-global-repo-filtered-configurations.png)
+    ![Konfigurasjonsrepositorium-side.](./media/er-download-configurations-global-repo-filtered-configurations.png)
 
 > [!NOTE]
 > Avhengig av ER-innstillingene valideres konfigurasjonene når de er importert. Du kan få beskjed om eventuelle problemer som oppdages. Du må løse problemene før du kan bruke den importerte konfigurasjonsversjonen. Hvis du vil ha mer informasjon, se listen over relaterte ressurser for dette emnet.

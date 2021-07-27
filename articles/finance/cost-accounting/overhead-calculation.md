@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 8dc312e66dc666ac6c23bac6b705ffc7893fd06b
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 09d4516c40833771d27db13eac8228bd8c5e0e4a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188003"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355041"
 ---
 # <a name="overhead-calculation"></a>Beregning av indirekte kostnader
 
@@ -48,7 +48,7 @@ Beregning av indirekte kostnader kjører policyene for kostnadsregnskap i riktig
 
 Beregning av indirekte kostnader kjøres uavhengig av versjonen. Derfor kan du beregne budsjettversjonen før den faktiske versjonen. Beregning av indirekte kostnader består av fire trinn, som vist i illustrasjonen nedenfor. I hvert trinn opprettes et journalhode med journaloppføringer. Dette journalhodet inneholder inndataene for hvert beregningstrinn. Policyer og regler som brukes på hver journallinje, og kostposter, genereres som utdata. Derfor må du alltid full sporbarhet. 
 
-[![Beregning av indirekte kostnader](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)
+[![Beregning av indirekte kostnader.](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)
 
 ## <a name="calculate-and-allocate-the-electricity-overhead-cost"></a>Beregne og tildele den indirekte kostnaden for strøm
 I finansbokføring registreres noen kostnader, for eksempel strøm, som et engangsbeløp. Derfor finnes ikke detaljert lederinnsikt for kostnadsregnskap. For å gi riktig lederinnsikt på tvers av alle organisasjonsenheter og nivåer i kostnadsregnskap, må kostnader flyte gjennom organisasjonsenhetene. Denne flyten må være basert på en nøyaktig oversikt over forbruk eller en virkelig vurdering. I økonomimodulen kan en strømkostnad posteres som vist i tabellen nedenfor.
@@ -618,7 +618,7 @@ For mer informasjon, se [Beregn indirekte kostnader](cost-rollup.md#perform-over
 
 Tildelinger brukes til å tildele saldoen på et kostnadsobjekt til andre kostnadsobjekter ved å bruke et tildelingsgrunnlag. Finance støtter gjensidig tildelingsmetode. I den gjensidige tildelingsmetoden gjenkjennes fullstendig de gjensidige tjenestene som hjelpekostnadsobjekter utveksler. Systemet fastslår automatisk riktig rekkefølge for tildelingene. Saldoen på et kostnadsobjekt tildeles av ett enkelt tildelingsgrunnlag. Tildelinger på tvers av dimensjoner for kostnadsobjekter og deres respektive medlemmer, støttes. Tildelingsrekkefølgen styres av kostnadskontrollenheten. 
 
-[![Gjensidig metode](./media/reciprocal-method.png)](./media/reciprocal-method.png)
+[![Gjensidig metode.](./media/reciprocal-method.png)](./media/reciprocal-method.png)
 
 #### <a name="define-the-cost-allocation"></a>Definere kostnadstildelingen
 

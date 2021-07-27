@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
-ms.openlocfilehash: a49a0d05a55e72b5dae17933d38d03287a01d5ee
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: dce26087a81e38c5618b07a9341fee195e3c98c9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936810"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346810"
 ---
 # <a name="manage-attributes-and-attribute-groups"></a>Administere attributter og attributtgrupper
 
@@ -70,7 +70,7 @@ Attributter er basert på *attributtyper*. Attributtypen identifiserer datatypen
     - Gi navn til en attributtype **form**, og legg til følgende verdier: **oval**, **firkantet**, og **rektangulært**.
     - Gi navn til den andre attributtypen **solbrillemerke**, og legg til følgende verdier: **Ray ban**, **Aviator**, og **Oakley**.
 
-![Attributtyper](media/AttributeType.png)
+![Attributtyper.](media/AttributeType.png)
 
 ### <a name="set-up-an-attribute"></a>Definer attributter
 
@@ -79,7 +79,7 @@ Attributter er basert på *attributtyper*. Attributtypen identifiserer datatypen
 3. Opprett et attributt som heter **Glass**.
 4. Angi **Attributtype** til **Form**.
 
-![Attributter](media/Attribute.png)
+![Attributter.](media/Attribute.png)
 
 ## <a name="attribute-metadata"></a>Attributtmetadata
 
@@ -134,7 +134,7 @@ Siden **Innstillinger for filtervisning** inneholder følgende felt:
     - 200 – 500
     - 500 eller mer
 
-![Innstillinger for attributtfilter](media/AttributeFilterSettings.PNG)
+![Innstillinger for attributtfilter.](media/AttributeFilterSettings.PNG)
 
 ## <a name="attribute-groups"></a>Attributtgrupper
 
@@ -142,7 +142,7 @@ Etter at attributtene er definert, kan de tilordnes attributtgrupper. En *attrib
 
 Du kan også angi standardverdier for attributter som er inkludert i en attributtgruppe. Du kan for eksempel legge til et attributt for farge i en attributtgruppe, og velge **blå** som standard attributtverdi. I så fall, når attributtgruppen legges til et produkt som inkluderer farge som ett av attributtene, vises **blå** som standardfarge for produktet.
 
-![Attributtgrupper](media/AttributeGroup.png)
+![Attributtgrupper.](media/AttributeGroup.png)
 
 ### <a name="create-an-attribute-group"></a>Opprette en attributtgruppe
 
@@ -155,7 +155,7 @@ Du kan også angi standardverdier for attributter som er inkludert i en attribut
 
 Én eller flere attributtgrupper kan knyttes til kategorinoder i følgende typer kategorihierarkier: hierarki for Commerce-produkt, kanalnavigasjonshierarkiet for kategorier og ekstra hierarki for produktkategori. Etter at varer er kategorisert, arver de attributtene som er inkludert i attributtgruppene.
 
-![Produkthierarki – Produktattributtgrupper](media/AGRetailProdHierarchy.PNG)
+![Produkthierarki – Produktattributtgrupper.](media/AGRetailProdHierarchy.PNG)
 
 Følg denne fremgangsmåten for å tilordne attributtgrupper til kategorier i hierarki for Commerce-produkt.
 
@@ -200,7 +200,7 @@ Følg denne fremgangsmåten for å tilordne attributtgrupper til kategorier i hi
     3. Velg kategorinoden **Tilbehør** velg kategorien **Moteriktige solbriller** og på hurtigfanen **Kanalproduktattributter** Velger du **Inkluder attributt** for hvert attributt.
     4. Velg kategorinoden **Herreklær**, så kategorien **Bokser**, og på hurtigfanen **Kanalproduktattributter** Velger du **Inkluder attributt** for hvert attributt.
 
-![Kanalkategorier og produktattributter - Attributtgrupper](media/CCPAttrGrp.png)
+![Kanalkategorier og produktattributter - Attributtgrupper.](media/CCPAttrGrp.png)
 
 ## <a name="overriding-attribute-values"></a>Overstyre attributtverdier
 
@@ -214,7 +214,7 @@ Standardverdiene for attributter kan overstyres for enkeltprodukter på produktn
 4. Velg det nødvendige produktet i rutenettet. I handlingsruten, i **Produkt**-kategorien og **Oppsett**-gruppen, velger du **Produktattributter**.
 5. Marker et attributt i venstre rute, og oppdater deretter verdien i den høyre ruten.
 
-![Siden med produktdetaljert – Produktattributtgrupper](media/ProdDetailsProdAttrValues.png)
+![Siden med produktdetaljert – Produktattributtgrupper.](media/ProdDetailsProdAttrValues.png)
 
 ### <a name="override-the-attribute-values-of-products-in-a-catalog"></a>Overstyre attributtverdier for produkter i en katalog
 
@@ -233,7 +233,7 @@ Standardverdiene for attributter kan overstyres for enkeltprodukter på produktn
     > [!NOTE]
     > Hvis delte produktmedier og delte produktattributter opprettes, gjelder de for alle produkter.
 
-![Produktattributtverdi for grupper](media/CatalogProdAttrValues.png)
+![Produktattributtverdi for grupper.](media/CatalogProdAttrValues.png)
 
 ### <a name="override-the-attribute-values-of-products-in-a-channel"></a>Overstyre attributtverdier for produkter i en kanal
 

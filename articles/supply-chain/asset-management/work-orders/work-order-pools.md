@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f07415cc0e2ba80c332387ce86e09ba8aa840f8a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7b0e3e5b25a291517d5ccefa1ed25b20255be187
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839541"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356055"
 ---
 # <a name="work-order-pools"></a>Arbeidsordresamlinger
 
@@ -85,7 +85,7 @@ Hvis du vil slette alle arbeidsordrelinjer, setter du alternativet **Slett arbei
 
 Illustrasjonen nedenfor viser et eksempel på listesiden **Arbeidsordresamling**.
 
-![Figur 1](media/22-work-orders.png)
+![Figur 1.](media/22-work-orders.png)
 
 
 ## <a name="add-a-work-order-to-a-work-order-pool"></a>Legge til en arbeidsordre i en arbeidsordresamling

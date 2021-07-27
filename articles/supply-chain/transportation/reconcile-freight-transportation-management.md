@@ -16,12 +16,12 @@ ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d523af235d645bd282af07d6a1f617bca5fba2dc
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1794c297bef86a62ff5dc24524332df07ea26f39
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809092"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345288"
 ---
 # <a name="reconcile-freight-in-transportation-management"></a>Avstemme frakt i transportstyring
 
@@ -35,13 +35,13 @@ Fraktavstemming kan gjøres manuelt, eller det kan settes opp til å skje automa
 
 Fraktsatser beregnes av satsmotoren som er tilknyttet med den aktuelle transportøren. Når en last er bekreftet, genereres et fraktbrev og fraktsatser overføres til den. Fraktsatsene fordeles som tillegg til det aktuelle kildedokumentet (bestilling, salgsordre, og/eller overføringsordre), avhengig av oppsettet som brukes for den vanlige faktureringsprosessen. Fraktavstemmingsprosessen (som også kalles kontrollprosessen) kan starte så snart fraktfakturaen mottas fra transportøren. Fakturaen kan mottas elektronisk eller på papir. Hvis fakturaen mottas på papir, kan du generere en elektronisk faktura ved hjelp av fraktbrevet som mal.
 
-[![Fraktavstemmingsprosessen](./media/freight-reconcilation-process.jpg)](./media/freight-reconcilation-process.jpg)
+[![Fraktavstemmingsprosessen.](./media/freight-reconcilation-process.jpg)](./media/freight-reconcilation-process.jpg)
 
 ## <a name="manual-reconciliation"></a>Manuell avstemming
 
 Hvis du er avstemmer frakt manuelt, må du sammenligne hver fakturalinje med fraktbrevlinjen eller -linjene for lasten som skal faktureres. Du gjør dette på siden **Samsvare fraktbrev og faktura**. Hvis beløpet på fakturalinjen ikke samsvarer med hvor fraktbrevbeløpet, må du velge en avstemmingsårsak for forskjellen. Hvis det er flere årsaker til avstemming, kan du dele de ikke-samsvarte beløpene på tvers av dem. Årsaken til avstemming bestemmer hvordan differansebeløpene posteres i Finans. Når avstemmingen av hele fakturabeløpet er gjort rede for, sendes sendt til godkjenning, og deretter posteres journalen. Illustrasjonen nedenfor viser hvordan du genererer en fraktfaktura og utfører fraktavstemming.
 
-[![Fraktavstemmingsoppgaver](./media/processflowforfreightreconciliation.jpg)](./media/processflowforfreightreconciliation.jpg)
+[![Fraktavstemmingsoppgaver.](./media/processflowforfreightreconciliation.jpg)](./media/processflowforfreightreconciliation.jpg)
 
 ## <a name="automatic-reconciliation"></a>Automatisk avstemming
 

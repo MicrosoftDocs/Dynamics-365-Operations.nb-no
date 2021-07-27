@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9c19f999a94e6ad8451c208cf204d0b59306b77d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a447dee71e57df07d1e7709bc8e4d075fcc803b8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837807"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343682"
 ---
 # <a name="schedule-maintenance-plans"></a>Planlegg vedlikeholdsplaner
 
@@ -52,14 +52,14 @@ Forebyggende vedlikeholdsplanlegging genererer kalenderoppføringer for aktiva, 
 
 5. Klikk på **OK** for å starte genereringen av vedlikeholdsplanoppføringer for aktiva. De genererte oppføringene vil vises på listesiden **Alle vedlikeholdsplaner**. Illustrasjonen nedenfor viser et eksempel på dialogboksen **Planlegg vedlikeholdsplaner**.
 
-![Figur 1](media/09-preventive-maintenance.png)
+![Figur 1.](media/09-preventive-maintenance.png)
 
 - I dialogboksen **Planlegg vedlikeholdsplaner** kan du definere satsvise jobber i hurtigfanen **Kjør i bakgrunnen** for å generere kalenderoppføringer automatisk med jevne mellomrom.  
 - Når du planlegger forebyggende vedlikehold, vil ikke vedlikeholdsplanlinjer med forventet startdato og -klokkeslett før systemdatoen og -klokkeslettet bli opprettet.  
 
 Figuren nedenfor gir en grafisk illustrasjon av en tidsbasert beregning av vedlikeholdsplan.  
 
-![Figur 2](media/10-preventive-maintenance.jpg)
+![Figur 2.](media/10-preventive-maintenance.jpg)
 
 Angående tellerbaserte vedlikeholdsplaner: I figurene nedenfor vises to forskjellige tellerregistreringssykluser. De er basert på en vedlikeholdsplan som er definert for anleggsmiddelet V0001, som forventer at aktivumet (en bil) kan kjøre cirka 2 000 km hver måned.
 
@@ -69,9 +69,9 @@ I den neste figuren er 2 000 km eller mer registrert hver måned. Derfor oppret
 
 Eksemplene som beskrives her, viser at alle tellerregistreringer som er utført for et anleggsmiddel, viser en trend som beskriver slitasje på aktivumet. Trenden brukes som beregningsgrunnlag på tidspunktet for planleggingen av vedlikeholdsplanen.
 
-![Figur 3](media/11-preventive-maintenance.png)
+![Figur 3.](media/11-preventive-maintenance.png)
 
-![Figur 4](media/12-preventive-maintenance.png)
+![Figur 4.](media/12-preventive-maintenance.png)
 
 
 

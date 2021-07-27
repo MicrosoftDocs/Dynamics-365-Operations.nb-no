@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d1378ae652ea70cba941316f4667052dcb05f717
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 71aefbc9c041074225b379d90db5cecf3849cb59
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812914"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347716"
 ---
 # <a name="improve-scheduling-engine-performance"></a>Forbedre ytelsen til planleggingsmotoren
 
@@ -66,11 +66,11 @@ Tenk deg for eksempel at du kan se en rute som vises i tabellen og bildet nedenf
 | 10 | Sekundær&nbsp;1 | | | | 1 | 20 |
 | 20 | Primær | | 3.00 | 1.00 | 3 | 0 |
 
-![Eksempel på rutediagram](media/scheduling-engine-route.png "Eksempel på rutediagram")
+![Eksempel på rutediagram.](media/scheduling-engine-route.png "Eksempel på rutediagram")
 
 Når du sender denne til motoren, deles den opp i åtte jobber, som vist i illustrasjonen nedenfor (velg bilde for å forstørre det).
 
-[![Jobber for planleggingsmotor](media/scheduling-engine-jobs.png "Jobber for planleggingsmotor")](media/scheduling-engine-jobs-large.png)
+[![Jobber for planleggingsmotor](media/scheduling-engine-jobs.png "Jobber for planleggingsmotor."](media/scheduling-engine-jobs-large.png)
 
 Standardkoblingen mellom to jobber er `FinishStart`, noe som betyr at sluttidspunktet for en jobb må være før starttidspunktet for en annen jobb. Siden oppsettet må utføres av den samme ressursen som senere vil utføre prosessen, finnes det `OnSameResource`-betingelser mellom dem. Mellom jobbene for primær- og sekundæroperasjon for 10, er det `StartStart`- og `FinishFinish`-koblinger, som betyr at jobbene må starte og slutte samtidig, og det finnes `NotOnSameResource`-begrensninger som vil hindre den samme ressursen for primær og sekundær.
 

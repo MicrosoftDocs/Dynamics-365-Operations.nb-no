@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 045d0bf11b11c9a353858ce3ca82c698dbceea7c
-ms.sourcegitcommit: 817716c2e96f24af0ef1d7d5323afdeccdc602f3
+ms.openlocfilehash: 4bebf35a8959d4f72d46d4b40e5487f499b2756d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "6028579"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356658"
 ---
 # <a name="year-end-close-missing-opening-balances"></a>Manglende åpningssaldoer ved årsavslutning
 
@@ -46,15 +46,15 @@ Jeg kjørte årsavslutning med alternativet **Angre forrige avslutning** satt ti
 
 Kontroller først statusen til den satsvise jobben. Avslutning av et år omfatter en rekke separate oppgaver, men det mest kritiske trinnet er den satsvise oppgaven med oppgavebeskrivelsen **Trinn 5.0.0**. Postering av åpningstransaksjonene, og eventuelt avslutningstransaksjonene, til økonomimodulen skjer i dette trinnet. 
 
-[![Satsvis logg](./media/yec-mssng-open-blnces-01.png)](./media/yec-mssng-open-blnces-01.png)
+[![Satsvis logg.](./media/yec-mssng-open-blnces-01.png)](./media/yec-mssng-open-blnces-01.png)
 
 Hvis dette trinnet ble avsluttet, men du ikke ser åpningssaldoer på siden **Forespørsel om råbalanse** (**Økonomimodul > Forespørsler og rapporter > Råbalanse**), kan du se gjennom resultatene for den satsvise jobben ved årsavslutning for å se om trinnet Gjenoppbygg saldoer er fullført.
 
-[![Resultater av den satsvise jobben for årsavslutning](./media/yec-mssng-open-blnces-02.png)](./media/yec-mssng-open-blnces-02.png)
+[![Resultater av den satsvise jobben for årsavslutning.](./media/yec-mssng-open-blnces-02.png)](./media/yec-mssng-open-blnces-02.png)
 
 Hvis dette trinnet av en eller annen grunn har mislykkes, ble åpningstransaksjonene (og eventuelt avslutningstransaksjonene) sannsynligvis postert. Du kan kontrollere at økonomimodultransaksjonene ble postert på riktig måte ved hjelp av siden **Forespørsel om bilagstransaksjoner** ved å angi bilagsnummeret og datoen som er angitt i dialogboksen for årsavslutning, for året du lukket (**Økonomimodul > Forespørsler og rapporter > Bilagstransaksjoner**).
 
-[![Forespørsel om bilagstransaksjoner](./media/yec-mssng-open-blnces-03.png)](./media/yec-mssng-open-blnces-03.png)
+[![Forespørsel om bilagstransaksjoner.](./media/yec-mssng-open-blnces-03.png)](./media/yec-mssng-open-blnces-03.png)
 
 Hvis åpningsbilagene (og eventuelt avslutningsbilagene) finnes, trenger du ikke å kjøre årsavslutningen på nytt. Du kan i stedet se den neste delen for å få informasjon om hvordan du går videre.
 
@@ -66,7 +66,7 @@ Trinnet Gjenoppbygg saldoer i årsavslutningen mislyktes. Må jeg kjøre hele å
 
 Trinnet Gjenoppbygg saldoer oppdaterer økonomimodulsaldoene som brukes når forespørselen om råbalanse genereres.  Det er det siste trinnet i årsavslutningsprosessen.  Hvis dette trinnet er det eneste trinnet som mislyktes, er transaksjonene i økonomimodulen postert.  Du trenger ikke å kjøre årsavslutningen på nytt. Du kan kjøre prosessen for å gjenoppbygge saldoene manuelt ved å bruke siden **Finansdimensjonssett** (**Økonomimodul > Kontoplan > Dimensjoner > Finansdimensjonssett**).
 
-[![Knappen Gjenoppbygg saldoer på siden Finansdimensjonssett](./media/yec-mssng-open-blnces-04.png)](./media/yec-mssng-open-blnces-04.png)
+[![Knappen Gjenoppbygg saldoer på siden Finansdimensjonssett.](./media/yec-mssng-open-blnces-04.png)](./media/yec-mssng-open-blnces-04.png)
 
 Hvis det tar lang tid å behandle dette trinnet, anbefaler vi at du går gjennom anbefalte fremgangsmåter for finansdimensjonssett, som beskrevet i [Anbefalte fremgangsmåter for oppdatering av finansdimensjonssett](https://community.dynamics.com/365/financeandoperations/b/dynamics-365-finance-blog/posts/best-practices-for-updating-financial-dimension-set-dimension-sets). 
 
