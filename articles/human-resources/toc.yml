@@ -349,12 +349,14 @@
                   items:
                     - name: Oversikt over MyLeaveRequests
                       href: hr-developer-api-myleaverequests-overview.md
-                    - name: Sende en permisjonsforespørsel til arbeidsflyt
+                    - name: Send en permisjonsforespørsel til arbeidsflyt
                       href: hr-developer-api-myleaverequests-submit.md
         - name: API for ATS-integrering
           items:
-            - name: Innføring
+            - name: Innledning
               href: hr-admin-integration-ats-api-introduction.md
+            - name: Server-til-server-autorisasjon for ATS-integreringer
+              href: hr-admin-integration-ats-api-s2s-auth.md
             - name: Rekrutteringsforespørsel og relaterte enheter
               items:
                 - name: Rekrutteringsforespørsel
@@ -439,20 +441,44 @@
                   href: hr-admin-integration-ats-api-skill-level-type.md
         - name: API for lønnsintegrering
           items:
-            - name: Innføring
+            - name: Innledning
               href: hr-admin-integration-payroll-api-introduction.md
             - name: Generer og gå gjennom lønnsenheter
               href: hr-admin-integration-payroll-api-generate-review-entities.md
-            - name: Lønnsansatt
-              href: hr-admin-integration-payroll-api-payroll-employee.md
-            - name: Adresse til lønnsarbeider
-              href: hr-admin-integration-payroll-api-payroll-worker-address.md
-            - name: Fast kompensasjonsplan for lønn
-              href: hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md
-            - name: Lønnsstillingsjobb
-              href: hr-admin-integration-payroll-api-payroll-position-job.md
-            - name: Lønnsstilling
-              href: hr-admin-integration-payroll-api-payroll-position.md
+            - name: Parametere for lønnsintegrering
+              href: hr-admin-integration-payroll-api-parameters.md
+            - name: Lønnsenheter
+              items:
+                - name: Lønnsansatt
+                  href: hr-admin-integration-payroll-api-payroll-employee.md
+                - name: Adresse til lønnsarbeider
+                  href: hr-admin-integration-payroll-api-payroll-worker-address.md
+                - name: Fast kompensasjonsplan for lønn
+                  href: hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md
+                - name: Variabel kompensasjonsplan for lønn
+                  href: hr-admin-integration-payroll-api-payroll-variable-compensation-plan.md
+                - name: Lønnsstilling
+                  href: hr-admin-integration-payroll-api-payroll-position.md
+                - name: Lønnsstillingsjobb
+                  href: hr-admin-integration-payroll-api-payroll-position-job.md
+            - name: Permisjons- og fraværsrelaterte enheter
+              items:
+                - name: Permisjonssaldo
+                  href: hr-admin-integration-payroll-api-leave-balance.md
+                - name: Permisjonstype
+                  href: hr-admin-integration-payroll-api-leave-type.md
+                - name: Permisjonsforespørsel
+                  href: hr-admin-integration-payroll-api-leave-request.md
+            - name: Alternativsett
+              items:
+                - name: Kjønn
+                  href: hr-admin-integration-payroll-api-gender.md
+                - name: Nei Ja
+                  href: hr-admin-integration-payroll-api-no-yes.md
+                - name: Belønningstype
+                  href: hr-admin-integration-payroll-api-award-type.md
+                - name: Prosesstype
+                  href: hr-admin-integration-payroll-api-process-type.md
     - name: Brukerveiledning
       items:
         - name: Oversikt
@@ -521,13 +547,13 @@
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/human-resources/toc.json
                     - name: Konfigurere automatiserte oppgaver
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Konfigurere godkjenningsprosesser
+                    - name: Konfigurer godkjenningsprosesser
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Konfigurere godkjenningstrinn
+                    - name: Konfigurer godkjenningstrinn
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Konfigurere manuelle beslutninger
+                    - name: Konfigurer manuelle beslutninger
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Konfigurere betingede beslutninger
+                    - name: Konfigurer betingede beslutninger
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/human-resources/toc.json
                     - name: Konfigurere parallelle aktiviteter
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/human-resources/toc.json
@@ -559,7 +585,7 @@
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/human-resources/toc.json
                     - name: Opprette en SubmitToWorkflow-klasse
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/human-resources/toc.json
-                    - name: Tilknytte en arbeidsflytdokumentklasse til en arbeidsflyttype
+                    - name: Tilknytt en arbeidsflytdokumentklasse til en arbeidsflyttype
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/human-resources/toc.json
                 - name: Rapport for arbeidsflyttyper
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/human-resources/toc.json
@@ -595,21 +621,25 @@
               href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/human-resources/toc.json
             - name: Dato-/klokkeslettdata og tidssoner
               href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/human-resources/toc.json
-        - name: Administrere medarbeidere
+        - name: Administrer medarbeidere
           items:
-            - name: Organisere arbeidsstyrken
+            - name: Organiser arbeidsstyrken
               href: hr-personnel-departments-jobs-positions.md
-            - name: Definere komponentene for en jobb
+            - name: Arbeidsområde for medarbeiderbehandling
+              href: hr-personnel-personnel-management-workspace.md
+            - name: Definer komponentene for en jobb
               href: hr-personnel-jobs.md
-            - name: Definere avdelinger
+            - name: Definer avdelinger
               href: hr-personnel-define-departments.md
-            - name: Legge til en avdeling i et hierarki
+            - name: Legg til en avdeling i et hierarki
               href: hr-personnel-add-department-hierarchy.md
-            - name: Definere jobber
+            - name: Definer jobber
               href: hr-personnel-define-jobs.md
-            - name: Opprette en arbeidstidskalender
+            - name: Stillinger
+              href: hr-personnel-positions.md
+            - name: Opprett en arbeidstidskalender
               href: hr-personnel-create-working-time-calendar.md
-            - name: Rekruttere jobbkandidater
+            - name: Rekrutter jobbkandidater
               href: hr-personnel-recruit.md
             - name: Vanlige spørsmål om medarbeiderhandlinger
               href: hr-personnel-actions-faq.md
@@ -833,7 +863,73 @@
               href: hr-employee-manager-self-service-custom-links.md
             - name: Endre navn på arbeidsområde for selvbetjening for ansatte
               href: hr-employee-self-service-workspace-name.md
-            - name: Redigere personlige opplysninger
+            - name: Rediger personlige opplysninger
               href: hr-employee-manager-self-service-edit-personal-information.md
-            - name: Begrense redigering av personlige opplysninger
+            - name: Begrens redigering av personlige opplysninger
               href: hr-employee-self-service-restrict-editing.md
+        - name: Bruk arbeidsflytsystemet
+          items:
+            - name: Oversikt over arbeidsflytsystem
+              href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/human-resources/toc.json
+            - name: Arkitektur i arbeidsflytsystemet
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-system-architecture.md?toc=/dynamics365/human-resources/toc.json
+            - name: Arbeidsflytelementer
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-elements.md?toc=/dynamics365/human-resources/toc.json
+            - name: Arbeidsflythandlinger
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-actions.md?toc=/dynamics365/human-resources/toc.json
+            - name: Opprette arbeidsflyter
+              items:
+                - name: Oversikt over å opprette arbeidsflyter
+                  href: ../fin-ops-core/fin-ops/organization-administration/create-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurere egenskaper for arbeidsflyt
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurere manuelle oppgaver
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurere automatiserte oppgaver
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurer godkjenningsprosesser
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurer godkjenningstrinn
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurer utgiftskontrollører
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-expenditure-reviewers.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurer manuelle beslutninger
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurer betingede beslutninger
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurere parallelle aktiviteter
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurere parallelle avdelinger
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Konfigurere arbeidsflyter for linjeelement
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/human-resources/toc.json
+            - name: Konfigurere den satsvise jobben Meldingsbehandling for arbeidsflyt som kritisk
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/human-resources/toc.json
+            - name: Delegere arbeidselementer i en arbeidsflyt
+              href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/human-resources/toc.json
+            - name: Vise arbeidsflytlogg
+              href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/human-resources/toc.json
+            - name: Konfigurere systemet til å sende arbeidsflytrelatert e-post til brukere
+              href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/human-resources/toc.json
+            - name: Arbeidsflyttyper
+              items:
+                - name: Opprette en arbeidsflyttype
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create.md?toc=/dynamics365/human-resources/toc.json
+                - name: Sjekkliste for arbeidsflyttype
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-checklist.md?toc=/dynamics365/human-resources/toc.json
+                - name: Opprette en arbeidsflytkategori
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-category.md?toc=/dynamics365/human-resources/toc.json
+                - name: Opprette en spørring for en arbeidsflyttype
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-query.md?toc=/dynamics365/human-resources/toc.json
+                - name: Opprett en ny arbeidsflyttype
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create-new.md?toc=/dynamics365/human-resources/toc.json
+                - name: Opprette en arbeidsflytdokumentklasse
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/human-resources/toc.json
+                - name: Opprette en SubmitToWorkflow-klasse
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Tilknytt en arbeidsflytdokumentklasse til en arbeidsflyttype
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/human-resources/toc.json
+            - name: Rapport for arbeidsflyttyper
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/human-resources/toc.json
+            - name: Vanlige spørsmål om arbeidsflyt
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/human-resources/toc.json

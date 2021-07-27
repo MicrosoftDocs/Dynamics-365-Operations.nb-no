@@ -15,43 +15,27 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 4a64794a0e04516441fab628d441640e4d154b8d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c36fe4c8376ad0364516c0268965c798e20436c6
+ms.sourcegitcommit: 3a9599e9b9458434c0e44d295eabd2304c5650be
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796903"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "6334431"
 ---
 # <a name="return-items-across-multiple-customer-orders-and-invoices"></a>Returnere varer på tvers av flere kunder, ordrer og fakturaer
 
 [!include [banner](includes/banner.md)]
 
 
-Denne artikkelen beskriver to funksjoner som optimaliserer kundeordrereturer via flere fakturaer. 
+Returer kan utføres på tvers av flere ordrer og fakturaer. 
 
-## <a name="enable-refunds-over-multiple-captures"></a>Aktiver refunderinger på tvers av flere registreringer
+## <a name="configure-commerce-to-support-returns-across-multiple-customer-order-and-invoices"></a>Konfigurere Commerce til å støtte returer på tvers av flere kundeordrer og fakturaer
 
-Denne funksjonen aktiverer flere sammenkoblede refusjoner mot samme kundeordre. 
-
-1. Gå til arbeidsområdet **Funksjonsbehandling** og søk etter **Aktiver refusjoner over flere registreringer**.
-2. Velg **Aktiver refusjoner over flere ordrer**, og klikk deretter **Aktiver**. 
-
-## <a name="enable-proper-tax-calculation-for-returns-with-partial-quantity"></a>Aktiver riktig avgiftsberegning for returer med delvis antall
-
-Denne funksjonen sikrer at når en ordre returneres ved hjelp av flere fakturaer, vil avgiften være lik avgiftsbeløpet som opprinnelig ble belastet. 
-
-1. Gå til arbeidsområdet **Funksjonsbehandling** og søk etter **Aktiver riktig avgiftsberegning for returer med delvis antall**.
-2. Velg **Aktiver riktig avgiftsberegning for returer med delvis antall**, og klikk deretter **Aktiver**. 
-
+1. Gå til **Handelsparametere \> Kundeordrer**.
+1. Aktiver parameteren **Aktiver returer for flere ordrer**. 
 
 ## <a name="process-returns"></a>Behandle returer
 
-Når disse funksjonene er aktivert og endringene synkronisert til butikkene, kan kassereren i butikken velge flere salgsordrer for en kunde for kundens retur.
+Når parameteren er aktivert og endringene synkronisert til butikkene, kan kassereren i butikken velge flere salgsordrer for en kunde for kundens retur.
 
 Når ordrene er valgt, vises det en liste over alle returnerbare produkter på tvers av alle fakturaene for ordrene. Kassereren kan deretter velge produktene som skal returneres. Én returordre opprettes for alle de valgte produktene.
-
-Hvis ordren er fullstendig returnert, vil beløpet som returneres til kunden, være lik avgiftsbeløpet som opprinnelig ble belastet.
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 14151
+ms.custom:
+- "14151"
+- intro-internal
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 9d7eca35d6e5ce8f434f923fef69a6d13a8ac1b3
-ms.sourcegitcommit: c9f55e64416d0bbedfdadafb00e4181921ad0f37
+ms.openlocfilehash: f0d709ef81fd43c009bf36aba2d4be949b1a737c
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "6261916"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6338235"
 ---
 # <a name="finance-insights-home-page-preview"></a>Startside for Finance Insights (forhåndsversjon)
 
@@ -29,9 +31,8 @@ ms.locfileid: "6261916"
 
 Finance Insights gir konfigurerbare og utvidbare modeller som hjelper deg med å forutse firmaets kontantstrøm nøyaktig og intelligent, forutser når du skal motta betaling for utestående fordringer, og genererer et budsjettforslag som kan gjøre budsjettprosessen raskere. Alle disse funksjonene er basert på intelligente maskinlæringsmodeller. Når disse nye funksjonene kombineres med automatisering i leverandørbetalinger og -innkrevinger, gir de et rikholdig og intelligent økonomisystem som styrer beslutningsprosessen og hjelper deg med å iverksette handling for å svare effektivt på gjeldende og forventede forretningsutfordringer.
 
-Forhåndsversjonen av Finance Insights er tilgjengelig for prøvedistribusjoner i USA, Europa og Storbritannia. Microsoft legger gradvis til støtte for flere områder.
-
-Evalueringsfunksjonalitet kan og bør bare aktiveres i sandkassemiljøer på lag 2. Oppsett og AI-modeller for kunstig intelligens som er opprettet i et sandkassemiljø, kan ikke overføres til et produksjonsmiljø. Hvis du vil ha mer informasjon, kan du se [Ekstra vilkår for bruk for Microsoft Dynamics 365-forhåndsversjoner](/dynamics365/legal/supp-dynamics365-preview#:~:text=Supplemental%20Terms%20of%20Use%20for%20Microsoft%20Dynamics%20365,%28governing%20your%20use%20of%20Microsoft%20Dynamics%20365%20Online%29.).
+> [!NOTE]
+> Forhåndsversjonen av Finance Insights er tilgjengelig for distribusjoner i USA, Canada, Storbritannia, Europa, Asia/Stillehavskysten, Australia og New Zealand. Microsoft legger gradvis til støtte for flere områder. Hvis du vil aktivere Finance Insights i produksjonsmiljøer, bør funksjoner for [Eksporter til Data Lake](../../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md) aktiveres i produksjonsmiljøet først.
 
 > [!NOTE]
 > Denne funksjonaliteten tilbys som et sett med forhåndsvisningsfunksjoner. Under kjøring av en forhåndsversjonsfunksjon bør du ikke bruke de resulterende maskinopplæringsmodellene til å kjøre eller påvirke forretningsavgjørelser eller budsjetteringsforslag. Bruken av denne funksjonen styres av [Ekstra vilkår for bruk](https://go.microsoft.com/fwlink/?linkid=2105274).
@@ -46,7 +47,7 @@ Hvis du vil bruke forhåndsversjonsprogrammet, fyller du ut [Finance Insights-fo
 
 ### <a name="system-requirements"></a>Systemkrav
 
-Et lag 2-sandkassemiljø (flerboks) kreves for å forhåndsvise Finance Insights. Hvis du vil ha bakgrunnsinformasjon om miljøene, se [Miljøplanlegging](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
+Et lag 2-miljø (flerboks) kreves for å forhåndsvise Finance Insights. Hvis du vil ha bakgrunnsinformasjon om miljøene, se [Miljøplanlegging](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
 
 ### <a name="version-requirements"></a>Versjonskrav
 
@@ -55,8 +56,6 @@ Dette dokumentet gjelder versjon 10.0.11 av Finance and Operations-apper (Platfo
 ### <a name="historical-data-requirements"></a>Historiske datakrav
 
 Minst ett års med kundefakturaer kreves for å lære opp maskinlæringsmodellen som brukes for funksjonen for kundebetalingspredisjoner.
-
-Eksempeldata er tilgjengelig for demosystemer med Contoso-demodatasettet.
 
 ### <a name="role-and-permission-requirements"></a>Krav til roller og tillatelser
 
@@ -72,7 +71,7 @@ Kjennskap til prosessen med å opprette og behandle ressurser i Azure, Microsoft
 ## <a name="configure-finance-insights"></a>Konfigurere Finance Insights
 
 Du må fullføre noen konfigurasjonstrinn før du kan bruke Finance Insights. Hvis du vil ha mer informasjon om hvordan du konfigurerer Finance Insights, kan du se følgende:
-  - For versjoner opptil 10.0.19: [Konfigurasjon for Finance Insights – versjoner opptil 10.0.19](configure-for-fin-insites.md).
+  - For versjoner opptil 10.0.19: [Konfigurasjon for Finance Insights (forhåndsversjon) – versjoner opptil 10.0.19](configure-for-fin-insites.md).
   - For versjon 10.0.20 og nyere: [Konfigurasjon for Finance Insights (forhåndsversjon) – versjon 10.0.20 og nyere](configure-for-fin-insites-PubPrvw.md).
 
 ## <a name="create-a-data-integrator-project"></a>Opprette et dataintegreringsprosjekt

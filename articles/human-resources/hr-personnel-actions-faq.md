@@ -2,7 +2,7 @@
 title: Vanlige spørsmål om personalhandlinger
 description: Denne artikkelen inneholder svar på spørsmål du kan ha hvis organisasjonen bruker personalhandlinger. Personalhandlinger er flere trinn du må fullføre når du utfører bestemte personalrelaterte oppgaver.
 author: andreabichsel
-ms.date: 06/16/2017
+ms.date: 06/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: a458800788d8e0df6c1f937a639eff31dcbb2c06
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 05365eabe6f3c283f5828e468c9323c3fa897fb8
+ms.sourcegitcommit: 43962e6fedaf55aab2f28f53bc38a69d2ff58403
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6054554"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "6333025"
 ---
 # <a name="personnel-actions-faq"></a>Vanlige spørsmål om personalhandlinger
 
@@ -51,7 +51,7 @@ Personalhandlinger kan ha følgende status:
 - **Avslått** – Handlingsforespørselen ble avvist av godkjenneren.
 
 ## <a name="can-i-delete-a-personnel-action"></a>Kan jeg slette en personalhandling?
-Ja, du kan slette personalhandlinger som har statusen **Utkast**, **Feil**, **Mislykket** eller **Avbrutt**.
+Ja, du kan slette personalhandlinger som har statusen **Utkast**, **Feil**, **Mislykket** eller **Avbrutt**. Du kan bare slette personalhandlinger som har statusen **Fullført**, hvis du har angitt alternativet **Tillat sletting av fullførte arbeiderhandlinger** til **Ja** på siden **Delte parametere for Human Resources**.
 
 ## <a name="what-is-the-fastest-way-to-check-the-status-of-a-personnel-action-request"></a>Hva er den raskeste metoden for å kontrollere statusen for en forespørsel om personalhandling?
 Åpne en av listesidene for personalehandling, og velg en personalehandling.
@@ -80,7 +80,7 @@ Hvis du vil løse dette problemet, gjør du følgende:
 > 5. Velg et nivå i Nivå-feltet.
 > 6. Lukk jobbsiden.
 > 7. Lukk stillingssiden.
-> 8. Gå tilbake til kategorien Kompensasjon på arbeidersiden, og velg Fast kompensasjon.  Velg Nny og angi den ansattes stilling i stillingsfeltet.  Angir en verdi i Plan-feltet, og angi deretter den ansattes kompensasjon i feltet Lønnssats.
+> 8. Gå tilbake til kategorien Kompensasjon på arbeidersiden, og velg Fast kompensasjon.  Velg Ny og angi den ansattes stilling i stillingsfeltet.  Angir en verdi i Plan-feltet, og angi deretter den ansattes kompensasjon i feltet Lønnssats.
 
 ## <a name="why-cant-i-change-the-effective-date-in-the-header-of-the-worker-action-form"></a>Hvorfor kan jeg ikke endre gyldig dato i hodet i Arbeiderhandling-skjemaet?
 Du kan ikke endre gyldighetsdatoen fordi feltet fylles ut med den mest logiske datoen for handlingstypen.

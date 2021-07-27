@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-06-03
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 613bd4816e2f0c4fbb56cf79779a08c6a09592bd
-ms.sourcegitcommit: 655b0e16c7aef6182cd58bc816b901470e1bb2ce
+ms.openlocfilehash: eeb3061f215666d0aeb32094b5d04a9ae6e618f2
+ms.sourcegitcommit: f6050b444e636ba662c00d0443c94a99f8ea0b0d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "6222618"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "6309671"
 ---
 # <a name="configuration-for-finance-insights-for-public-preview-preview---version-10020-and-later"></a>Konfigurasjon for Finance Insights for offentlig forhåndsversjon (forhåndsversjon) – versjon 10.0.20 og nyere
 
@@ -33,7 +33,7 @@ ms.locfileid: "6222618"
 Finance Insights kombinerer funksjonalitet fra Microsoft Dynamics 365 Finance med Dataverse, Azure og AI Builder for å gi organisasjonen kraftige prognoseverktøy. Dette emnet forklarer hvordan du konfigurerer Dynamics 365 Finance versjon 10.0.20 slik at systemet kan bruke funksjonene som er tilgjengelige i den offentlige forhåndsversjonen av Finance Insights.
 
 > [!NOTE]
-> Konfigurasjonstrinnene som beskrives i dette emnet, gjelder bare for Finance versjon 10.0.20 og nyere. Hvis du vil konfigurere Finance Insights i versjon 10.0.19 og tidligere, kan du se [Konfigurasjon for Finance Insights – versjoner opptil 10.0.18](configure-for-fin-insites.md).
+> Konfigurasjonstrinnene som beskrives i dette emnet, gjelder bare for Finance versjon 10.0.20 og nyere. Hvis du vil konfigurere Finance Insights i versjon 10.0.19 og tidligere, kan du se [Konfigurasjon for Finance Insights – versjoner opptil 10.0.19](configure-for-fin-insites.md).
 
 ## <a name="deploy-finance"></a>Distribuere Finance
 
@@ -748,6 +748,8 @@ Følg denne fremgangsmåten for å installere Finance Insights-tillegget.
 2. I delen **Miljøtillegg** velger du **Installer et nytt tillegg**.
 3. Velg **Finance Insights**-tillegget.
 4. Godta vilkårene, og velg deretter **Installer**.
+
+Det kan ta flere minutter å installere tillegget.
 
 ## <a name="feedback-and-support"></a>Tilbakemelding og støtte
 

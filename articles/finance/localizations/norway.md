@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: ''
+ms.custom: intro-internal
 ms.search.region: Norway
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b9f933ea6b37f7b6dea312a4b6f31f0c38194e5c
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 8ec78a4581fd95ed727838bb00f24b8b43a868db
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894658"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6336029"
 ---
 # <a name="norway-overview"></a>Oversikt over Norge
 

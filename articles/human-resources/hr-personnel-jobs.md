@@ -2,11 +2,11 @@
 title: Definere komponentene for en jobb
 description: Denne artikkelen beskriver de grunnleggende elementene som en jobb kan inneholde, og gir eksempler på hvordan du kan bruke disse elementene i organisasjonen.
 author: andreabichsel
-ms.date: 06/20/2017
+ms.date: 06/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: HcmJob, HcmJobFunction, HcmJobTask, HcmTitle, HcmPersonnelManagementWorkspace
+ms.search.form: HcmJob, HcmJobFunction, HcmJobTask, HcmTitle, HcmPersonnelManagementWorkspace, HCMJobFamily
 audience: Application User
 ms.author: anbichse
 ms.search.scope: Human Resources
@@ -15,12 +15,12 @@ ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 88dc3cec4880fdcb4d4f8d54b03037f738d2a57a
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: d4e24e64f3fece0807df8fbf4fb206c4588c9332
+ms.sourcegitcommit: 43962e6fedaf55aab2f28f53bc38a69d2ff58403
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6056575"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "6333099"
 ---
 # <a name="set-up-the-components-of-a-job"></a>Definere komponentene for en jobb
 
@@ -44,6 +44,11 @@ Du bruker jobbtyper til å gruppere lignende jobber i kategorier. Jobbtyper er i
 -   **Ikke fritatt fra avgift** – Jobber er ikke fritatt fra overtid under FLSA.
 -   **Gjelder ikke** – FLSA-dekning er ikke tilgjengelig.
 
+## <a name="job-family"></a>Jobbserie
+En jobbfamilie er en gruppe jobber som omfatter lignende arbeid, og som krever lignende opplæring, kunnskap, kompetanse og ekspertise. En jobbfamilie kan kobles til en jobb i hurtigfanen **Jobbklassifisering** på **Jobber**-siden og i hurtigfanen **Generelt** på **Alle stillinger**-siden. Jobbfamilier kan være brede eller spesifikke, avhengig av forretnings- og rapporteringskravene. Noen eksempler på vide jobbfamilier er **faglært arbeid** og **ufaglært arbeid**. Noen eksempler på bestemte jobbfamilier er **regnskap**, **produksjon** og **salg**.
+
+Vedlikehold jobbfamilier ved hjelp av **Jobbfamilie**-siden, som du kan åpne ved hjelp av funksjonen Søk. På **Jobbfamilie**-siden angir du et unikt navn for familien, og skriver inn en detaljert beskrivelse som du planlegger å bruke til jobbene dine.
+
 ## <a name="job-functions"></a>Jobbfunksjoner
 Jobbfunksjoner beskriver funksjonskategori på høynivåplan og relaterer avgifter på høyt nivå. Jobbfunksjoner er ikke nødvendige. Du kan bruke jobbfunksjoner sammen med jobbtyper for å filtrere kompensasjonsplaner for bestemte jobber. Du tilordninger jobbfunksjoner og jobbtyper med kompensasjonsplaner ved å definere rettighetsregler på siden **Rettighetsregler**. Du kan deretter knytte et sett med nivåer til kompensasjonsplanen som gjelder en kombinasjon av jobbtype og jobbfunksjon som du har definert gjennom en rettighetsregel. (Disse funksjonene gjelder både faste og variable kompensasjonsplaner.) Jobbfunksjoner er ikke nødvendige, men hvis du har tenkt å bruke jobbfunksjoner når du definerer rettighetsregler for kompensasjonsstyring, bør du definere jobbfunksjoner før du definerer jobber. Tabellen nedenfor viser noen eksempler på jobbfunksjoner.
 
@@ -53,6 +58,14 @@ Jobbfunksjoner beskriver funksjonskategori på høynivåplan og relaterer avgift
 | Regnskapsfører    | Eksperter        |
 
 Du vedlikeholder jobbfunksjoner ved hjelp av **Jobbfunksjoner**-siden. Angi en ID-kode og en kort beskrivelse av jobbfunksjonen på siden **Jobbfunksjoner**.
+
+## <a name="compensation"></a>Kompensasjon
+Hvis du vil tilordne en fast kompensasjonsplan til en ansatt som har en stilling i en jobb, må du angi kompensasjonsnivåer for jobben. Kompensasjonsnivået brukes når minimums-, midtpunkt- og maksimumsbeløp er angitt i en kompensasjonsstruktur (kompensasjonsrutenett). Når det opprettes en fast kompensasjonsplan, velges kompensasjonsstrukturen. Kompensasjonsstrukturen omfatter også kompensasjonsnivået. Når du velger en fast kompensasjonsplan for en ansatt, avhenger kompensasjonsnivåene som kan velges, av jobben som den ansattes stilling er knyttet til. Hvis du vil ha mer informasjon om hvordan du konfigurerer kompensasjon, kan du se [Kompensasjonsplaner](hr-compensation-overview.md).
+
+## <a name="job-skills"></a>Jobbkompetanse
+Jobbkompetanse beskriver ferdighetene som kreves for å utføre en jobb. Et kompetansenivå må knyttes til hver jobbkompetanse. Kompetansenivåene er brukerdefinert. De angir hvor stor kunnskap eller kompetanse som kreves for ferdigheten. Firmaer kan for eksempel definere numeriske nivåer, for eksempel 1 til og med 5, der **1** indikerer en nybegynner og **5** indikerer en ekspert. Firmaer kan eventuelt sette opp nivåer som er merket **Nybegynner**, **Mellomnivå** eller **Ekspert**. Når kompetansenivået er definert, kan du også angi viktigheten av kompetanse. Hvis en regnskapsfører for eksempel må ha stor kunnskap om Microsoft Excel, kan du opprette en kompetanse med navnet **Excel-kunnskap**. Kompetansenivået kan deretter angis til **Mellomnivå**, og viktigheten kan settes til **Mest**.
+
+Kompetansene som er i en jobb, kan brukes i kompetansesøk. Kompetansesøk kan sammenligne kompetansesettet som kreves for en jobb, og kompetansene som er tilknyttet en arbeider. Deretter kan det bestemme et prosentvis samsvar basert på kompetanse som overlapper hverandre. Hvis du vil lære mer om kompetansesøk, kan du se [Konfigurere kompetanse](hr-develop-skills.md). 
 
 ## <a name="job-tasks"></a>Jobboppgaver
 Jobboppgaver beskriver de grunnleggende oppgavene som må fullføres av en arbeider i en stilling for jobben. Den samme jobboppgaven kan legges til flere jobber, og til stillinger for jobbene som bruker disse jobboppgavene. Tabellen nedenfor viser noen eksempler på jobboppgaver.
