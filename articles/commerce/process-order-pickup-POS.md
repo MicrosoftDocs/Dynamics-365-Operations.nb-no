@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: b5c17a65a54ae88118bc5ecaa25cdadb67861129
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 037c9fb8dfc7aca4535540d92aae3e0ce0f8c638
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5802773"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352162"
 ---
 # <a name="process-customer-order-pickups-in-pos"></a>Behandle kundeordrehentinger på salgssted
 
@@ -32,7 +32,7 @@ Hvis du er butikkbruker, kan du utføre hentingen ved å bruke **Tilbakekall ord
 
 Hvis valgt ordre eller valgte ordrelinjer ikke er konfigurert for henting ved den bestemte butikken, eller hvis ordren allerede er fullstendig hentet, vil ikke **Hent**-operasjonen være tilgjengelig.
 
-![Henteoperasjon](media/pickupoperation.png)
+![Henteoperasjon.](media/pickupoperation.png)
 
 I Microsoft Dynamics 365 Commerce versjon 10.0.17 og senere kan funksjonen for **Forbedret brukeropplevelse for hentebehandling på salgssted** aktiveres gjennom Funksjonsbehandling i Commerce Headquarters. Hvis denne funksjonen er slått av, kan brukere ikke velge henteantall. Som standard er det fullstendige antallet som ble bestilt for linjen, antallet som blir hentet. Denne erfaringen kan være problematisk, fordi brukere kan glemme å velge noen varer for henting når de utfører hentingen gjennom ordreoppfyllelse.
 
@@ -40,13 +40,13 @@ Funksjonen for **Forbedret brukeropplevelse for hentebehandling på salgssted** 
 
 Når funksjonen for **Forbedret brukeropplevelse for hentebehandling på salgssted** er aktivert, og du velger **Hent**-operasjonen, vises dialogboksen **Hent**. Der kan du velge varene og antallene som skal hentes. Som standard regnes alle bestilte antall som har lager i en hentet eller pakket tilstand, som kvalifisert for henting. Som standard blir dette antallet angitt som henteantall. Du kan endre antallet som er angitt, forutsatt at mengden ikke er 0 (null) og ikke overskrider det totale åpne (det vil si ikke-fakturert) antallet for den valgte linjen.
 
-![Dialogboksen Hent](media/pickupselect.png)
+![Dialogboksen Hent.](media/pickupselect.png)
 
 Når du har valgt antallene som skal hentes og deretter velger **Hent**, vises transaksjonssiden. Hvis funksjonen for [omni-kanalbetalinger](omni-channel-payments.md) er aktivert, og det finnes registrerte, forhåndsautoriserte kredittkortbetalinger, må du bruke betalingen.
 
 På transaksjonssiden beregner systemet beløpene som forfaller, ved å beregne totalen som forfaller for de valgte hentevarene, og deretter trekke fra eventuelle tidligere brukte innbetalinger eller autoriserte kredittkortbetalinger. Du må behandle betaling for å fullføre hentetransaksjonen. Hvis [skjermoppsettet](pos-screen-layouts.md) på transaksjonssiden er konfigurert slik at det inkluderer **Fullfør transaksjon**-operasjonen, og ingen beløp forfaller, kan du fullføre transaksjonen uten å velge en betalingsmetode. Hvis **Fullfør transaksjon**-operasjonen ikke er tilgjengelig, kan du velge koblingen for **USD 0,00 forfalt beløp** i ruten **Totaler** for å fullføre transaksjonen uten å velge en betalingsmetode.
 
-![Transaksjonsside for en hentetransaksjon for kundeordre](media/pickupcart.png)
+![Transaksjonsside for en hentetransaksjon for kundeordre.](media/pickupcart.png)
 
 ## <a name="changing-pickup-lines-or-quantities"></a>Endre hentelinjer eller -antall
 
@@ -54,7 +54,7 @@ Hvis du må endre henteantallet etter at du har valgt varene som skal hentes, ka
 
 Hvis funksjonen for **Forbedret brukeropplevelse for hentebehandling på salgssted** er aktivert, kan organisasjoner legge til en knapp for operasjonen **Endre hentelinjer** på skjermoppsettet på transaksjonssiden. Når du har opprettet hentetransaksjonskurven på salgsstedet og valgt varer, kan du velge **Endre hentelinjer** hvis du må endre hentevarene, men ikke vil annullere hele transaksjonen. I dialogboksen **Endre hentelinjer** som vises, kan du endre hentevarene og antallene. Transaksjonskurven oppdateres deretter for å gjenspeile endringene.
 
-![Dialogboksen Endre hentevarer](media/pickupchange.png)
+![Dialogboksen Endre hentevarer.](media/pickupchange.png)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

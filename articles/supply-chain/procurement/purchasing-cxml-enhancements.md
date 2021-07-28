@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-08-03
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: f3bc63fd4b1017a5c96116ff6c9bbcc387869927
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b579ebff28e01caa727a22b01ae636ff713a27aa
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825284"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359963"
 ---
 # <a name="purchasing-cxml-enhancements"></a>Kjøp av cXML-forbedringer
 
@@ -38,7 +38,7 @@ Når du har aktivert funksjonen, bør du konfigurere innstillingene i følgende 
 
 Illustrasjonen nedenfor inneholder en oversikt over denne konfigurasjonen.
 
-![Områder for oppsett av cXML-funksjoner](media/cxml-settings-areas.png "Områder for oppsett av cXML-funksjoner")
+![Områder for oppsett av cXML-funksjoner.](media/cxml-settings-areas.png "Områder for oppsett av cXML-funksjoner")
 
 I tillegg må du definere den [satsvise jobben for bestillingsforespørsel ](#po-batch). Denne satsvise jobben brukes til å sende de bekreftede bestillingene.
 
@@ -46,7 +46,7 @@ I tillegg må du definere den [satsvise jobben for bestillingsforespørsel ](#po
 
 Bruk siden for **cXML-parametere** til å gjøre noen globale innstillinger som gjelder for funksjonaliteten for sending av bestillinger.
 
-![side for parametere for cXML](media/cxml-parameters.png "Side for parametere for cXML")
+![side for parametere for cXML.](media/cxml-parameters.png "Side for parametere for cXML")
 
 Gå til **Innkjøp og leverandører \> Oppsett \> cXML-behandling \> cXML-parametere**, og angi følgende parametere:
 
@@ -67,7 +67,7 @@ Hver gang du bekrefter at en bestilling der alternativet **Send bestilling via c
 - Hvis du vil definere en leverandør, slik at den automatisk bruker cXML for alle nye bestillinger som opprettes fra en rekvisisjon, går du til **Innkjøp og leverandører \> Leverandører \> Alle leverandører** og velger eller oppretter en leverandør for å åpne detaljsiden. På hurtigfanen **Bestillingsstandarder** setter du deretter alternativet **Send bestilling via cXML** til _Ja_. Hvis cXML også automatisk skal brukes for nye bestillinger som **ikke** er opprettet fra en rekvisisjon, må du også sette bestillingsegenskapen **ENABLEMANUALPO** til _Sann_ for den tilknyttede eksterne katalogen, som beskrevet i delen [Angi bestillingsegenskaper](#set-order-properties) senere i dette emnet.
 - For individuelle bestillinger går du til **Innkjøp og leverandører \> Bestillinger \> Alle bestillinger** og velger eller oppretter en bestilling for å åpne detaljsiden. Bytt til visningen **Hode** og deretter, i hurtigfanen **Oppsett**, angir du alternativet **Send bestilling via cXML** etter behov.
 
-![Standardinnstillinger for leverandørbestillinger](media/cxml-order-defaults.png "Standardinnstillinger for leverandørbestillinger")
+![Standardinnstillinger for leverandørbestillinger.](media/cxml-order-defaults.png "Standardinnstillinger for leverandørbestillinger")
 
 ## <a name="set-up-an-external-catalog-to-use-cxml"></a><a name="external-catalog-setup"></a>Opprette en ekstern katalog for å bruke cXML
 
@@ -76,7 +76,7 @@ På siden **Eksterne kataloger** kan du definere eksternordrefunksjonaliteten og
 > [!NOTE]
 > Når du bekrefter en bestilling som kan sendes via cXML, slår systemet på leverandøren som er knyttet til bestillingen, og finner deretter den første aktive eksterne katalogen som er knyttet til denne leverandøren. Systemet bruker deretter innstillingene fra den eksterne katalogen til å sende bestillingen. Hvis det er definert flere eksterne kataloger, bruker systemet bare den første eksterne katalogen den finner, basert på leverandøren i bestillingen. Derfor anbefaler vi at du oppretter bare én ekstern katalog for hver leverandør.
 
-![Innstillinger for ekstern katalog](media/cxml-supplier-catalog.png "Innstillinger for ekstern katalog")
+![Innstillinger for ekstern katalog.](media/cxml-supplier-catalog.png "Innstillinger for ekstern katalog")
 
 ### <a name="set-the-punchout-protocol-type"></a>Angi protokolltype for eksternordre
 
@@ -143,11 +143,11 @@ Som nevnt i delen [Angi bestillingsegenskaper](#set-order-properties), hvis du v
 
 Hvis du vil angi hvilke typer merknader systemet skal se etter, kan du gå til **Innkjøp og leverandører \> Oppsett \> Skjemaer \> Fra oppsett**. Deretter kan du i fanen **Bestilling** sette feltet **Ta med dokumenter av type** til merknadstypen som du ønsker å inkludere. Det er bare tekstnotater som tas med, og ikke dokumentvedlegg.
 
-![Skjemaoppsett-siden](media/cxml-form-setup.png "Skjemaoppsett-siden")
+![Skjemaoppsett-siden.](media/cxml-form-setup.png "Skjemaoppsett-siden")
 
 Vedlegg blir bare inkludert i en bestilling hvis **Type**-feltet er satt til verdien du velger i feltet **Ta med dokumenter av type**, og hvis **Begrensning**-feltet er satt til _Eksternt_. Hvis du vil opprette, vise eller redigere vedlegg for en bestilling, kan du gå til **Innkjøp og leverandører \> Alle bestillinger**, velge eller opprette en bestilling og deretter velge **Vedlegg**-knappen (bindersikonet) øverst til høyre.
 
-![Tilknyttet merknad som er konfigurert til å sendes til en leverandør](media/cxml-note-to-vendor.png "Tilknyttet merknad som er konfigurert til å sendes til en leverandør")
+![Tilknyttet merknad som er konfigurert til å sendes til en leverandør.](media/cxml-note-to-vendor.png "Tilknyttet merknad som er konfigurert til å sendes til en leverandør")
 
 ## <a name="view-the-cxml-cart-message-log-for-external-catalog-punchout"></a><a name="message-log"></a>Vise meldingsloggen for cXML-handlekurv for ekstern katalog for eksternordre
 
@@ -155,7 +155,7 @@ Når du setter feltet **Protokolltype for eksternordre** til _cXML_ for en ekste
 
 Hvis du vil åpne loggen for en ekstern katalog, velger du den relevante katalogen, og deretter velger du **Meldingslogg for cXML-handlekurv** i handlingsruten. **Meldingslogg for cXML-handlekurv** viser en liste over returnerte handlekurver, XMLen som er relatert til disse handlekurvene, og linjene som ble opprettet i den tilknyttede innkjøpsrekvisisjonen.
 
-![Side for meldingslogg for cXML-handlevogn](media/cxml-cart-message-log.png "Side for meldingslogg for cXML-handlekurv")
+![Side for meldingslogg for cXML-handlevogn.](media/cxml-cart-message-log.png "Side for meldingslogg for cXML-handlekurv")
 
 ## <a name="set-the-extrinsic-elements-for-external-catalog-punchout"></a>Angi eksterne elementer for den eksterne katalogen for ekternordre
 
@@ -178,21 +178,21 @@ Bruk følgende fremgangsmåte for å legge til eksterne elementer i en ekstern k
         - **Etternavn** – Bruk etternavnet til kontaktpersonen som er knyttet til brukeren som har tilgang til den eksterne katalogen.
         - **Telefonnummer** – Bruk det primære telefonnummeret til kontaktpersonen som er knyttet til brukeren som har tilgang til den eksterne katalogen.
 
-![Innstillinger for eksternt element](media/cxml-extrinsics.png "Innstillinger for eksternt element")
+![Innstillinger for eksternt element.](media/cxml-extrinsics.png "Innstillinger for eksternt element")
 
 Brukeren eller administratoren vil ikke se de eksterne elementene fordi de ikke blir lagt til før brukeren utfører en eksternordre. De settes automatisk inn mellom **BuyerCookie**- og **BrowserFromPost**-elementene i forespørselsmeldingen for cXML-oppsett. Derfor trenger du ikke å angi dem manuelt i XML-filen når du konfigurerer den eksterne katalogen.
 
-![Eksterne elementer som er lagt til i XML](media/cxml-extrinsics-xml.png "Eksterne elementer som er lagt til i XML")
+![Eksterne elementer som er lagt til i XML.](media/cxml-extrinsics-xml.png "Eksterne elementer som er lagt til i XML")
 
 ## <a name="create-and-process-a-purchase-order"></a><a name="create-po"></a>Opprette og behandle en bestilling
 
 Når du oppretter en bestilling for en leverandør, vil den arve innstillingen fra alternativet **Send bestilling via cXML** fra denne leverandøren. Innstillingen vil imidlertid fortsatt være tilgjengelig i hurtigfanen **Oppsett** i visningen **Hode** i bestillingen, slik at du kan endre den senere etter behov.
 
-![Bestilling angitt til å bruke cXML](media/cxml-purchase-order.png "Bestilling angitt til å bruke cXML")
+![Bestilling angitt til å bruke cXML.](media/cxml-purchase-order.png "Bestilling angitt til å bruke cXML")
 
 Når du oppretter en bestilling fra en innkjøpsrekvisisjon som kom fra en eksternordreflyt, fylles alle nødvendige linjedetaljer ut. Du kan deretter legge til bestillingslinjer manuelt eller kopiere dem fra andre bestillinger. Pass på at du angir alle nødvendige felt. Disse obligatoriske feltene inkluderer det eksterne referansenummeret, som er leverandørnummeret som skal brukes i cXML-meldingen.
 
-![Eksempel på et eksternt referansenummer](media/cxml-line-details.png "Eksempel på et eksternt referansenummer")
+![Eksempel på et eksternt referansenummer.](media/cxml-line-details.png "Eksempel på et eksternt referansenummer")
 
 Når du er ferdig med å fylle ut alle detaljene for bestillingen, må du kontrollere at du bekrefter. Ingen melding sendes med mindre bestillingen er bekreftet. For å bekrefte bestillingen går du til handlingsruten i fanen **Kjøp** i gruppen **Handlinger** og velger **Bekreft**. 
 
@@ -200,17 +200,17 @@ Når bestillingen er bekreftet, kan du vise statusen til bekreftelsen via **Best
 
 Hver bestilling kan ha mange bekreftelser. Hver bekreftelse er merket med et trinnvis nummer. I illustrasjonen nedenfor er bestillingen *00000275*, og bekreftelsen er *00000275-1*. Denne nummereringen gjenspeiler standard Supply Chain Management-funksjonalitet, der endringer i en bestilling, og derfor typen cXML-melding som skal sendes til leverandøren, identifiseres basert på bekreftelsen. Som illustrasjonen viser inneholder siden **Bestillingsbekreftelser** også feltene for **sendestatus for bestilling** og **Leverandørstatus for bestillingsforespørsel**. Hvis du vil ha mer informasjon om de ulike statusverdiene som du kanskje vil se på denne siden, kan du se delen [Overvåke bestillingsforespørsler](#monitor-po-requests) senere i dette emnet.
 
-![Side for bestillingsbekreftelser](media/cxml-po-confirmations.png "Side for bestillingsbekreftelser")
+![Side for bestillingsbekreftelser.](media/cxml-po-confirmations.png "Side for bestillingsbekreftelser")
 
 Hvis du vil vise mer informasjon om dokumentet, velger du **Bestillingsforespørsel** over rutenettet.
 
 Siden **Bestillingsforespørsel** inneholder to rutenett. Rutenettet i den øvre delen av siden har én post for hver bestilling som er merket for sending. Rutenettet i fanen **Logg for bestillingsforespørsel** i den nedre delen av siden kan ha flere poster for den valgte bestillingen, for å angi statusen for hver bekreftelse. Følgende illustrasjon viser bestillingen 00000275 i det øvre rutenettet og dokument 00000275-1 i rutenettet i fanen **Logg for bestillingsforespørsel**.
 
-![Side for bestillingsforespørsel](media/cxml-po-request.png "Side for bestillingsforespørsel")
+![Side for bestillingsforespørsel.](media/cxml-po-request.png "Side for bestillingsforespørsel")
 
 Hvis den satsvise jobben er definert og kjører, vil dokumentet bli sendt. Du kan vise statusendringen etter at dokumentet er sendt. I illustrasjonen nedenfor er feltet for **Sendestatus for bestilling** satt til _Sendt_. Feltet **Leverandørstatus for bestillingsforespørsel** er satt til _Bekreftet_ for å angi at leverandøren mottok dokumentet og kunne lese det og lagre det i systemet. Rutenettet i fanen **Logg for bestillingsforespørsel** viser klokkeslettet da dokumentet ble sendt. Hvis du vil ha mer informasjon om de ulike statusverdiene som du kanskje vil se på denne siden, kan du se delen [Overvåke bestillingsforespørsler](#monitor-po-requests).
 
-![Statusmeldinger på siden for bestillingsforespørsel](media/cxml-po-request-2.png "Statusmeldinger på siden for bestillingsforespørsel")
+![Statusmeldinger på siden for bestillingsforespørsel.](media/cxml-po-request-2.png "Statusmeldinger på siden for bestillingsforespørsel")
 
 ## <a name="schedule-the-purchase-order-request-batch-job"></a><a name="po-batch"></a>Planlegge den satsvise jobben for bestillingsforespørsel
 
@@ -226,7 +226,7 @@ Prosessen vil se etter bestillingsforespørselsdokumenter med statusen *Venter*.
 
 Når ordrer som kan sendes via cXML, bekreftes, går de inn i _Vente_-status. Som det ble beskrevet under [Opprette og behandle en bestilling](#create-po) kan du vise bestillingsstatusen på siden **Bestillingsforespørsel**. Hver bestillingsforespørsel kan ha én av flere statuser, avhengig av parameterne og dataene. Denne delen beskriver de ulike statustypene og verdiene de kan ha. Denne informasjonen kan hjelpe deg med å styre problemer og forstå statusen til bestillingene.
 
-![Betillingsstatus på siden for bestillingsforespørsel](media/cxml-monitor-po-request.png "Betillingsstatus på siden for bestillingsforespørsel")
+![Betillingsstatus på siden for bestillingsforespørsel.](media/cxml-monitor-po-request.png "Betillingsstatus på siden for bestillingsforespørsel")
 
 Rutenettet i den øvre delen av siden **Bestillingsforespørsel** kan vise følgende statusverdier:
 
@@ -262,17 +262,17 @@ Rutenettet i fanen **Logg for bestillingsforespørsel** i den nedre delen av sid
 
 Hvis du vil vise XMLen for bestillingsforespørselsmelding, velger du fanen for **Forespør XML-tekst** nederst på siden for **Bestillingsforespørsel**. Informasjonen i denne fanen kan være nyttig under testing eller feilvalide ring. Hvis du vil gjøre det enklere å lese informasjonen, kan du vise den som en formatert melding. Kopier innholdet i fanen til en tekstfil, og vis det deretter i et XML-redigeringsprogram.
 
-![fanen for Forespør XML-tekst](media/cxml-request-xml-text.png "fanen for Forespør XML-tekst")
+![fanen for Forespør XML-tekst.](media/cxml-request-xml-text.png "fanen for Forespør XML-tekst")
 
 ### <a name="view-the-details-of-the-vendor-response"></a>Vise detaljene for leverandørsvar
 
 Hvis du vil vise innholdet i en leverandørbekreftelse eller feilsvar, velger du fanen **Svar-XML** nederst på siden **Bestillingsforespørsel**.
 
-![fanen Svar-XML](media/cxml-response-xml.png "fanen Svar-XML")
+![fanen Svar-XML.](media/cxml-response-xml.png "fanen Svar-XML")
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-- [Definere en ekstern katalog for PunchOut-e-Procurement](set-up-external-catalog-for-punchout.md)
+- [Definer en ekstern katalog for PunchOut e-procurement](set-up-external-catalog-for-punchout.md)
 - [Bruke eksterne kataloger for PunchOut e-Procurement](use-external-catalogs-for-punchout.md)
 
 

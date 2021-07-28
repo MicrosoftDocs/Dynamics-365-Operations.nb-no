@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 9ffb1378eccf175fbb9bd84228f91ba606125a63
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: c641849b2aec76124b6661f339175325a312efce
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753996"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350842"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Feilsøke problemer under førstegangsinstallasjon
 
@@ -42,7 +42,7 @@ Dette emnet inneholder feilsøkingsinformasjon om dobbel skriving-integrasjon me
 
 Feil på **oppsett-koblingen til Dataverse**-siden skyldes vanligvis ufullstendige oppsetts- eller tillatelsesproblemer. Kontroller at hele tilstandskontrollen bestås på **Oppsett-koblingen til Dataverse**-siden, som vist i illustrasjonen nedenfor. Du kan ikke koble til dobbel skriving med mindre hele tilstandssjekken bestås.
 
-![Vellykket tilstandssjekk](media/health_check.png)
+![Vellykket tilstandssjekk.](media/health_check.png)
 
 Du må ha legitimasjon for Azure AD-leieradministrator for å koble til Finance and Operations- og Dataverse-miljøene. Når du har koblet til miljøene, kan brukere logge på ved hjelp av kontolegitimasjonen og oppdatere en eksisterende tabelltilordning.
 
@@ -77,7 +77,7 @@ For å sikre at dobbeltskriving fungerer som det skal, opprettes firmaene du vel
 4. Velg firmaet som var koblet da du konfigurerte dobbel skriving.
 5. Kontroller at kolonnen **Standard eiende team** har en verdi. I illustrasjonen nedenfor er kolonnen **Standard eiende team** satt til **USMF Dual Write**.
 
-    ![Kontrollere standard eiende team](media/default_owning_team.png)
+    ![Kontrollere standard eiende team.](media/default_owning_team.png)
 
 ## <a name="find-the-limit-on-the-number-of-legal-tables-or-companies-that-can-be-linked-for-dual-write"></a>Finn grensen for antall juridiske tabeller eller firmaer som kan kobles til for dobbeltskriving
 

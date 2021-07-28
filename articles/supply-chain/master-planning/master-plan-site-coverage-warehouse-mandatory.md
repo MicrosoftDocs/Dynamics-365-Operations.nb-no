@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 008061d286505a2e678e15fbff7706da9c410dfe
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 01fd971d6914df9f95c0009d75c6663b97fa11ef
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6187560"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358080"
 ---
 # <a name="master-planning-for-site-coverage-mandatory-warehouse"></a>Hovedplanlegging for område- og lagerdekning, lager obligatorisk
 
@@ -41,7 +41,7 @@ Grafikken nedenfor illustrerer hvordan hovedplanlegging pågår. Parameterne det
 -   Påfyllingsrelasjoner er definert for lageret. Klikk på **Lagerstyring &gt; Oppsett &gt; Lageroppdeling &gt; Lagre**. På **Hovedplanlegging**-fanen kan du se feltgruppen **Hovedlager**.
 -   Standard ordretype er satt til Produksjon, Bestilling eller Kanban. Klikk på **Behandling av produktinformasjon &gt; Produkter &gt; Frigitte produkter**. Velg varen, og klikk deretter **Plan &gt; Standard ordreinnstillinger**. I **Standard ordreinnstillinger**-skjemaet kan du se **Standard ordretype**.
 
-![Behov for sitedekning, lager obligatorisk](./media/multisitedemandexplosionscenarioforsitecoveragewarehousemandatory.jpg)
+![Behov for sitedekning, lager obligatorisk.](./media/multisitedemandexplosionscenarioforsitecoveragewarehousemandatory.jpg)
 
 
 

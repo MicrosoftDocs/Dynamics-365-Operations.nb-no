@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 143b9337dc9ca530383575e0f9bb16e4313ce96b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 435e4c0b7aac8a8dc179ee8e74b985a4c434b7ea
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839613"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361120"
 ---
 # <a name="maintenance-plans"></a>Vedlikeholdsplaner
 
@@ -145,23 +145,23 @@ Nedenfor finner du eksempler på oppsett av tidsbaserte og tellerbaserte vedlike
 
 **Eksempel 1 – tidsbasert vedlikeholdsplanlinje**: En smørejobb kan settes opp med et fast intervall, og skjer én gang i uken. For dette formålet kan du velge Gjentatt fra plandato i **Intervall type**-feltet. Se et eksempel i illustrasjonen nedenfor.
 
-![En servicejobb med et fast intervall som forekommer én gang i uken](media/02-preventive-maintenance.png "En servicejobb med et fast intervall som forekommer én gang i uken")
+![En servicejobb med et fast intervall som forekommer én gang i uken.](media/02-preventive-maintenance.png "En servicejobb med et fast intervall som forekommer én gang i uken")
 
 **Eksempel 2 – tidsbasert vedlikeholdsplanlinje** : En inspeksjonsjobb kan defineres til å utføres omtrent én gang i uken. For dette formålet kan du velge Gjentatt fra siste arbeidsordre i **Intervall type**-feltet. Se et eksempel i illustrasjonen nedenfor.
 
-![En inspeksjonsjobb definert slik at den gjøres omtrent én gang i uken](media/03-preventive-maintenance.png "En inspeksjonsjobb definert slik at den gjøres omtrent én gang i uken")
+![En inspeksjonsjobb definert slik at den gjøres omtrent én gang i uken.](media/03-preventive-maintenance.png "En inspeksjonsjobb definert slik at den gjøres omtrent én gang i uken")
 
 **Eksempel 3 – tellerbasert vedlikeholdsplanlinje**: Den grafiske illustrasjonen nedenfor viser en timeteller som det opprettes en ny vedlikeholdsplanlinje for hver gang det har gått 250 timer. Intervalltypen for denne tellerbaserte linjen er Gjentatt fra startdato. Startdatoen er startdatoen for de tilknyttede aktivaene i detaljvisningen **Alle aktiva** \> hurtigfanen **Vedlikeholdsplaner for aktivum** \> **Startdato**-feltet eller i detaljvisningen **Arbeidssted** \> hurtigfanen **Vedlikeholdsplaner** \> **Startdato**-feltet. Dette er et eksempel på en *forebyggende* vedlikeholdsplan fordi vedlikeholdsplanlinjen opprettes automatisk hver gang terskelen (+ 250) nås.
 
-![En timeteller som oppretter vedlikeholdsplanlinjer med jevne mellomrom](media/04-preventive-maintenance.png "En timeteller som oppretter vedlikeholdsplanlinjer med jevne mellomrom")
+![En timeteller som oppretter vedlikeholdsplanlinjer med jevne mellomrom.](media/04-preventive-maintenance.png "En timeteller som oppretter vedlikeholdsplanlinjer med jevne mellomrom")
 
 **Eksempel 4 – tellerbasert vedlikeholdsplanlinje**: Den grafiske illustrasjonen nedenfor viser en reduksjon i tellerverdi, som måler bremseklosslitasje. En vedlikeholdsplanlinje opprettes når en tellerregistrering under 20 mm opprettes for bremseklossen. Intervalltypen for denne tellerbaserte linjen er "Når nådd under" eller "Én gang fra siste startdato". Dette er et eksempel på en *reaktiv* vedlikeholdsplan fordi vedlikeholdsplanlinjen opprettes ikke før en måling under 20 mm registreres.
 
-![En redusert tellerverdi, der slitasje av bremseklosser måles](media/05-preventive-maintenance.png "En redusert tellerverdi, der slitasje av bremseklosser måles")
+![En redusert tellerverdi, der slitasje av bremseklosser måles.](media/05-preventive-maintenance.png "En redusert tellerverdi, der slitasje av bremseklosser måles")
 
 **Eksempel 5 – tellerbasert vedlikeholdsplanlinje**: Den grafiske illustrasjonen nedenfor viser en teller med en terskel på -18 ° Celsius. En vedlikeholdsplanlinje opprettes når det gjøres en tellerregistrering over -18 ° Celsius. Intervalltypen for denne tellerbaserte linjen er Når nådd over. Dette er et eksempel på en *reaktiv* vedlikeholdsplan fordi vedlikeholdsplanlinjen opprettes ikke før en måling høyere enn -18 ° Celsius registreres.
 
-![En teller med en terskel på -18 °C](media/06-preventive-maintenance.png "En teller med en terskel på -18 °C")
+![En teller med en terskel på -18 °C.](media/06-preventive-maintenance.png "En teller med en terskel på -18 °C")
 
 - Når du oppretter et nytt aktivum og dette aktivumet bruker en aktivatype som er knyttet til en vedlikeholdsplan, settes vedlikeholdsplanen automatisk inn i hurtigfanen **Alle objekter \> Vedlikeholdsplaner**. I **Standarder for aktivatype** på hurtigfanen **Vedlikeholdsplaner** settes også de tilknyttede vedlikeholdsplanene automatisk inn.
 - Hvis du legger til eller fjerner aktivatyper eller arbeidsstedstyper i **Vedlikeholdsplaner**, vil denne endringen bare reflekteres i nye aktiva som opprettes etter du gjorde endringen.
@@ -169,7 +169,7 @@ Nedenfor finner du eksempler på oppsett av tidsbaserte og tellerbaserte vedlike
 
 Illustrasjonen nedenfor viser et eksempel på en vedlikeholdsplan for lastebilservice på siden **Vedlikeholdsplaner**.
 
-![Et eksempel på en vedlikeholdsplan for lastebilservice](media/07-preventive-maintenance.png "Et eksempel på en vedlikeholdsplan for lastebilservice")
+![Et eksempel på en vedlikeholdsplan for lastebilservice.](media/07-preventive-maintenance.png "Et eksempel på en vedlikeholdsplan for lastebilservice")
 
 ## <a name="add-a-maintenance-plan-to-an-asset"></a>Legge til en vedlikeholdsplan for et aktivum
 
@@ -187,7 +187,7 @@ Illustrasjonen nedenfor viser et eksempel på en vedlikeholdsplan for lastebilse
 
 Illustrasjonen nedenfor viser et eksempel på vedlikeholdsplaner for et aktivum på siden **Alle aktiva**.
 
-![Et eksempel på vedlikeholdsplaner som er definert for et aktivum](media/08-preventive-maintenance.png "Et eksempel på vedlikeholdsplaner som er definert for et aktivum")
+![Et eksempel på vedlikeholdsplaner som er definert for et aktivum.](media/08-preventive-maintenance.png "Et eksempel på vedlikeholdsplaner som er definert for et aktivum")
 
 <a id="counter-based-maintenance"></a>
 

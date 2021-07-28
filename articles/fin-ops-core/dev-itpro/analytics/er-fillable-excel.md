@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1c8d939fef4fd0f9e189ca37318c2c0306511785
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 96e1575e2237cab481c368083da1e60fec612087
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893914"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359035"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Utforme en konfigurasjon til å generere dokumenter i Excel-format
 
@@ -39,7 +39,7 @@ Når du legger til en ny formatkonfigurasjon for ER for å generere et utgående
 
 Hvis du vil konfigurere formatkomponenten for ER for konfigurasjonen, velger du **Utforming** i handlingsruten og åpner formatkomponenten for ER for redigering i ER-operasjonsutformingen.
 
-![Siden Konfigurasjoner](./media/er-excel-format-add-format.png)
+![Siden Konfigurasjoner.](./media/er-excel-format-add-format.png)
 
 ## <a name="excel-file-component"></a>Komponent for Excel-fil
 
@@ -47,14 +47,14 @@ Hvis du vil konfigurere formatkomponenten for ER for konfigurasjonen, velger du 
 
 Du må legge til en **Excel\\Fil**-komponent for det konfigurerte ER-formatet for å generere et utgående dokument i Excel-format.
 
-![Excel\Fil-komponent](./media/er-excel-format-add-file-component.png)
+![Excel\Fil-komponent.](./media/er-excel-format-add-file-component.png)
 
 Hvis du vil angi oppsettet for det utgående dokumentet, knytter du en Excel-arbeidsbok som har filtypen XLSX, til **Excel-\\Fil**-komponenten som malen for utgående dokumenter.
 
 > [!NOTE]
 > Når du knytter en mal manuelt, må du bruke en [dokumenttype](../../../fin-ops-core/fin-ops/organization-administration/configure-document-management.md#configure-document-types) som er konfigurert for dette formålet i [ER-parameterne](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents).
 
-![Legge til et vedlegg i Excel\Fil-komponenten](./media/er-excel-format-add-file-component2.png)
+![Legge til et vedlegg i Excel\Fil-komponenten.](./media/er-excel-format-add-file-component2.png)
 
 Hvis du vil angi hvordan den tilknyttede malen skal fylles ut når du kjører det konfigurerte ER-formatet, må du legge til nestede komponenter av typen **Ark**, **Område** og **Celle** i **Excel\\Fil**-komponenten. Hver nestede komponent må knyttes til et Excel-navngitt element.
 
@@ -62,7 +62,7 @@ Hvis du vil angi hvordan den tilknyttede malen skal fylles ut når du kjører de
 
 Du kan velge **Importer fra Excel** i fanen **Import** i handlingsruten for å importere en ny mal til et tomt ER-format. I dette eksemplet opprettes det en **Excel\\Fil**-komponent automatisk, og den importerte malen blir knyttet til den. Alle nødvendige ER-komponenter vil også bli opprettet automatisk, basert på listen over Excel-navngitte elementer som blir funnet.
 
-![Velge Importer fra Excel](./media/er-excel-format-import-template.png)
+![Velge Importer fra Excel.](./media/er-excel-format-import-template.png)
 
 > [!NOTE]
 > Hvis du vil opprette det valgfrie elementet **Ark** i det redigerbare ER-formatet, setter du alternativet **Opprett Excel-ark-element** til **Ja**.
@@ -79,7 +79,7 @@ I fanen **Tilordning** for ER-operasjonsutformingen kan du konfigurere egenskape
 - Hvis et uttrykk for egenskapen **Aktivert** er konfigurert til å returnere **Sann** under kjøring, eller hvis ingen uttrykk er konfigurert i det hele tatt, vil det aktuelle regnearket plasseres i det genererte dokumentet.
 - Hvis et uttrykk for egenskapen **Aktivert** er konfigurert til å returnere **Usann** under kjøring, vil det genererte dokumentet ikke inneholde et regneark.
 
-![Eksempel på en arkkomponent](./media/er-excel-format-sheet-component.png)
+![Eksempel på en arkkomponent.](./media/er-excel-format-sheet-component.png)
 
 ## <a name="range-component"></a>Områdekomponent
 
@@ -182,7 +182,7 @@ Du kan velge **Oppdater fra Excel** i fanen **Import** i handlingsruten for å i
 >
 > Hvis det redigerbare ER-formatet opprinnelig inneholdt **Ark**-elementer, anbefales det at du setter akternativet **Opprett element for Excel-arkformat** til **Ja** når du importerer en oppdatert mal. Hvis ikke, vil alle nestede elementer i det opprinnelige **Ark**-elementet bli opprettet fra grunnen av. Alle bindinger av elementene for nyopprettet format vil derfor gå tapt i det oppdaterte ER-formatet.
 
-![Alternativet Opprett element for Excel-arkformat i dialogboksen Oppdater fra Excel](./media/er-excel-format-update-template.png)
+![Alternativet Opprett element for Excel-arkformat i dialogboksen Oppdater fra Excel.](./media/er-excel-format-update-template.png)
 
 Hvis du vil finne ut mer om denne funksjonen, kan du følge fremgangsmåten i [Endre formater for elektronisk rapportering ved å bruke Excel-maler på nytt](modify-electronic-reporting-format-reapply-excel-template.md).
 
@@ -190,7 +190,7 @@ Hvis du vil finne ut mer om denne funksjonen, kan du følge fremgangsmåten i [E
 
 Når du validerer et ER-format som kan redigeres, utføres det en konsekvenskontroll for å sikre at Excel-navnet finnes i Excel-malen som brukes for øyeblikket. Du vil bli varslet om eventuelle inkonsekvenser. For noen inkonsekvenser vil alternativet for automatisk korrigering av problemer bli tilbudt.
 
-![Valideringsfeilmelding](./media/er-excel-format-validate.png)
+![Valideringsfeilmelding.](./media/er-excel-format-validate.png)
 
 ## <a name="control-the-calculation-of-excel-formulas"></a>Kontrollere beregningen av Excel-formler
 
@@ -209,7 +209,7 @@ Når et utgående dokument i et Microsoft Excel-arbeidsbokformat genereres, kan 
 1. Bruk ER-konfigurasjonene som følger med, til å [generere](er-generate-printable-fti-forms.md) et FTI-dokument (free text invoice).
 2. Gå gjennom bunnteksten til det genererte dokumentet. Legg merke til at det inneholder informasjon om det gjeldende sidetallet og totalt antall sider i dokumentet.
 
-    ![Gå gjennom bunnteksten til et generert dokument i Excel-format](./media/er-fillable-excel-footer-1.gif)
+    ![Gå gjennom bunnteksten til et generert dokument i Excel-format.](./media/er-fillable-excel-footer-1.gif)
 
 3. I ER-formatutformingen [åpner](er-generate-printable-fti-forms.md#features-that-are-implemented-in-the-sample-er-format) du eksempel-ER-formatet for gjennomgang.
 
@@ -222,7 +222,7 @@ Når et utgående dokument i et Microsoft Excel-arbeidsbokformat genereres, kan 
 
     - Den andre komponenten av typen **Streng** fyller ut teksten som inneholder det gjeldende sidenummeret og totalt antall sider i det gjeldende dokumentet.
 
-    ![Gå gjennom komponenten for bunntekst-ER-formatet på siden Formatutforming](./media/er-fillable-excel-footer-2.png)
+    ![Gå gjennom komponenten for bunntekst-ER-formatet på siden Formatutforming.](./media/er-fillable-excel-footer-2.png)
 
 4. Tilpass ER-eksemplets format for å endre den gjeldende bunnteksten på siden:
 
@@ -237,20 +237,20 @@ Når et utgående dokument i et Microsoft Excel-arbeidsbokformat genereres, kan 
         1. Legg til en komponent av typen **Streng** som justerer behandlingsdatoen til høyre, og presenterer det i 8-punkters "Segoe UI Regular"-skrifttype (**"&R&"Segoe UI,Regular"&8"**).
         2. Legg til en komponent av typen **Streng** som fyller ut behandlingsdatoen i et egendefinert format (**"&nbsp;"&DATEFORMAT(SESSIONTODAY(), "yyyy-MM-dd")**).
 
-        ![Gjennomgang av komponenten for bunntekst-ER-formatet på siden Formatutforming](./media/er-fillable-excel-footer-3.png)
+        ![Gjennomgang av komponenten for bunntekst-ER-formatet på siden Formatutforming.](./media/er-fillable-excel-footer-3.png)
 
     4. [Fullfør](er-quick-start2-customize-report.md#CompleteDerivedFormat) utkastversjonen for det avledede ER-format et for **Tilpasset fritekstfaktura (Excel)**.
 
 5. [Konfigurer](er-generate-printable-fti-forms.md#configure-print-management) Utskriftsbehandling for å bruke det avledede ER-formatet for **Tilpasset fritekstfaktura (Excel)** i stedet for eksempel-ER-formatet.
 6. Generer et utskrivbart FTI-dokument, og gå gjennom bunnteksten til det genererte dokumentet.
 
-    ![Gjennomgang av bunnteksten til et generert dokument i Excel-format](./media/er-fillable-excel-footer-4.gif)
+    ![Gjennomgang av bunnteksten til et generert dokument i Excel-format.](./media/er-fillable-excel-footer-4.gif)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Oversikt over elektronisk rapportering](general-electronic-reporting.md)
 
-[Utforme en konfigurasjon for generering av rapporter i OPENXML-format](tasks\er-design-reports-openxml-2016-11.md)
+[Utform en konfigurasjon for generering av rapporter i OPENXML-format](tasks\er-design-reports-openxml-2016-11.md)
 
 [Endre formater for elektronisk rapportering ved å bruke Excel-maler på nytt](modify-electronic-reporting-format-reapply-excel-template.md)
 

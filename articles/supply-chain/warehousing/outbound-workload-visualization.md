@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-08-28
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: f1a405f5bbf8728876213e6c726ae41ebf809626
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: acfde5961f481f5d939f0c6388b80edfd65ee339
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5810492"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351423"
 ---
 # <a name="outbound-workload-visualization"></a>Visualisering av utgående arbeidsmengde
 
@@ -60,7 +60,7 @@ Følg denne fremgangsmåten for å konfigurere visualisering av utgående arbeid
     - **Dager som skal tas med** – Angi hvor mange dager det skal gå før diagrammet skal genereres.
     - **Arbeidsordretype** – Velg de utgående arbeidsordretypene du vil filtrere på.
 
-    ![Konfigurer filtrer-side](media/work-viz-filters-1.png "Konfigurer filtrer-side")
+    ![Konfigurer filtrer-side.](media/work-viz-filters-1.png "Konfigurer filtrer-side")
 
 1. Lukk **Konfigurer filtre**-siden for å gå tilbake til siden **Visualiseringer av utgående arbeidsmengde**.
 
@@ -70,11 +70,11 @@ Følg denne fremgangsmåten for å konfigurere visualisering av utgående arbeid
     - **Sist oppdatert** – Dette feltet viser datoen og klokkeslettet da informasjonen i diagrammet sist ble oppdatert.
     - **Estimert/faktisk tid** – Hvis arbeidsstandarder er konfigurert i systemet, setter du dette alternativet til *Ja* for å vise akkumulerte, estimerte plukktider øverst i hver kolonne i diagrammet. Hvis du ikke bruker arbeidsstandarder, er ikke dette alternativet tilgjengelig.
 
-    ![Eksempelvisualisering](media/work-viz-chart.png "Eksempelvisualisering")
+    ![Eksempelvisualisering.](media/work-viz-chart.png "Eksempelvisualisering")
 
 1. Velg en stolpe i diagrammet for å vise informasjonen i den tilknyttede arbeidslinjen.
 
-    ![Detaljer for arbeidslinje](media/work-viz-work-details.png "Detaljer for arbeidslinje")
+    ![Detaljer for arbeidslinje.](media/work-viz-work-details.png "Detaljer for arbeidslinje")
 
 ## <a name="example-outbound-workload-visualization-for-zones"></a>Eksempel: Visualisering av utgående arbeidsmengde for soner
 
@@ -92,7 +92,7 @@ I dette eksemplet vil du konfigurere en visualisering som viser arbeidslinjer fo
 
 Illustrasjonen nedenfor viser et eksempel på resulterende diagram.
 
-![Visualisering av sone kontra arbeidsstatus](media/work-viz-chart.png "Visualisering av sone kontra arbeidsstatus")
+![Visualisering av sone kontra arbeidsstatus.](media/work-viz-chart.png "Visualisering av sone kontra arbeidsstatus")
 
 Dette diagrammet viser to soner som heter **GULV** og **PARTI**, pluss en sone som har navnet **Tom**. Den **tomme** sonen representerer alle arbeidslinjer som ikke er medlemmer av noen soner. Diagrammet viser alltid alle ikke-relaterte filtrerte data som **tomme**, for å gi så mye synlighet som mulig. I **GULV**-sonen viser diagrammet tre lukkede linjer og fire åpne linjer. I **PARTI**-sonen viser diagrammet fire lukkede linjer, én åpen linje og 24 avbrutte linjer. Til slutt viser diagrammet åtte lukkede linjer som ikke er en del av en sone, og er derfor oppført som **tomme**.
 

@@ -13,12 +13,12 @@ ms.search.region: Norway
 ms.author: ilyako
 ms.search.validFrom: 2019-11-01
 ms.dyn365.ops.version: 10.0.08
-ms.openlocfilehash: 55e7cf5c5c6929716c9f4a74a1da072d26b289f3
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 4d2247bcfbe0dc16f1f0bcdc821512c324c99508
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893766"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348895"
 ---
 # <a name="customer-electronic-invoices-in-norway"></a>Elektroniske fakturaer for kunde i Norge
 
@@ -56,7 +56,7 @@ Hvis du vil ha mer informasjon om hvordan du importerer ER-konfigurasjoner, kan 
     - **Prosjektfaktura:** OIOUBL Prosjektfaktura
     - **Prosjektkreditnota:** OIOUBL Prosjektkreditnota
 
-![Formater for elektroniske dokumenter](media/emea-nor-ger-configs.jpg)
+![Formater for elektroniske dokumenter.](media/emea-nor-ger-configs.jpg)
 
 ## <a name="configure-parameters"></a>Konfigurere parametere
 
@@ -78,7 +78,7 @@ Hvis du vil ha mer informasjon om hvordan du importerer ER-konfigurasjoner, kan 
 3. Sett alternativet **Vedlegg til eFaktura** til **Ja** for å legge en PDF-kopi av den utskrivbare fakturaen ved den elektroniske fakturaen.
 4. I feltet **Avgiftsfritaksnummer** skriver du inn kundens MVA-fritaksnummer.
 
-![Kundeparametere](media/emea-nor-ger-customer.jpg)
+![Kundeparametere.](media/emea-nor-ger-customer.jpg)
 
 ### <a name="units-of-measure-configuration"></a>Konfigurasjon av måleenheter
 
@@ -87,7 +87,7 @@ Hvis du vil ha mer informasjon om hvordan du importerer ER-konfigurasjoner, kan 
 3. I **Kode**-feltet i **Oversikt**-delen på siden **Eksterne koder** angir du en kode som svarer til den valgte enhets-ID-en.
 4. I **Verdi**-feltet i **Verdi**-delen angir du den eksterne koden som skal brukes som enhetskode for internasjonal handel. Denne koden anbefales av [FNs økonomiske kommisjon for Europa (UNECE)](https://docs.peppol.eu/poacc/billing/3.0/codelist/UNECERec20/).
 
-![Konfigurasjon av måleenheter](media/emea-nor-ger-units.jpg)
+![Konfigurasjon av måleenheter.](media/emea-nor-ger-units.jpg)
 
 ### <a name="sales-tax-codes-transformation"></a>Transformasjon av mva-koder
 
@@ -118,11 +118,11 @@ Når du registrerer fritekstfakturaer, fakturaer som er basert på salgsordrer, 
 2. Opprett en prosjektkontrakt, eller velg en eksisterende prosjektkontrakt.
 3. I hurtigfanen **Finansieringskilder** velger eller oppretter du en finansieringskilde av typen **Kunde**, og deretter velger du **Detaljer**.
 
-    ![Finansieringskilder](media/emea-nor-ger-proj-contracts.jpg)
+    ![Finansieringskilder.](media/emea-nor-ger-proj-contracts.jpg)
 
 4. I **Referanser**-delen i hurtigfanen **Andre** på siden **Finansieringskildedetaljer** angir du standardverdier for kontrakten i feltene **Kunderekvisisjon** og **Kundereferanse**. Du kan også angi prosjektspesifikke verdier i de tilsvarende feltene i hurtigfanen **E-faktura**.
 
-    ![Prosjektreferanser](media/emea-nor-ger-proj-refs.jpg)
+    ![Prosjektreferanser.](media/emea-nor-ger-proj-refs.jpg)
 
 5. Følg denne fremgangsmåten for å angi verdier for kunderekvisisjon og referanse direkte på prosjektfakturaforslaget:
 
@@ -130,7 +130,7 @@ Når du registrerer fritekstfakturaer, fakturaer som er basert på salgsordrer, 
     2. Opprett et nytt fakturaforslag, eller velg et eksisterende fakturaforslag.
     3. I **E-faktura**-delen i hurtigfanen **Hode for fakturaforslag** angir du verdier i feltene **Kunderekvisisjon** og **Kundereferanse**.
 
-    ![Prosjektforslag](media/emea-nor-ger-proj-prop.jpg)
+    ![Prosjektforslag.](media/emea-nor-ger-proj-prop.jpg)
 
 ### <a name="customer-accounting-code-registration"></a>Registrering av kunderegnskapskode
 
@@ -147,7 +147,7 @@ Du kan registrere kunderegnskapskoder når du arbeider med fritekstfakturaer, fa
     2. Gå til **Linjer**-visningen.
     3. I **Dimensjonskonto**-feltet i fanen **Generelt** i hurtigfanen **Linjedetaljer** angir du en linjebestemt regnskapskode for hver fakturalinje.
 
-    ![Linjebestemt regnskapskode for en fritekstfaktura](media/emea-nor-ger-fti-cost.jpg)
+    ![Linjebestemt regnskapskode for en fritekstfaktura.](media/emea-nor-ger-fti-cost.jpg)
 
 #### <a name="sales-orders"></a>Salgsordre
 
@@ -167,7 +167,7 @@ Du kan registrere kunderegnskapskoder når du arbeider med fritekstfakturaer, fa
 3. I hurtigfanen **Finansieringskilder** oppretter eller velger du en finansieringskilde av typen **Kunde**, og deretter velger du **Detaljer**.
 4. I **Dimensjonskonto**-feltet i hurtigfanen **E-faktura** på siden **Finansieringskildedetaljer** angir du den prosjektspesifikke standard regnskapskoden.
 
-    ![Prosjektspesifikk regnskapskode](media/emea-nor-ger-proj-cost.jpg)
+    ![Prosjektspesifikk regnskapskode.](media/emea-nor-ger-proj-cost.jpg)
 
 5. Hvis du vil angi kunderegnskapskoder direkte i prosjektfakturaforslag, følger du denne fremgangsmåten:
 
@@ -180,7 +180,7 @@ Du kan registrere kunderegnskapskoder når du arbeider med fritekstfakturaer, fa
     1. Sett alternativet **Linjespesifikk** til **Ja**.
     2. I **Dimensjonskonto**-feltet i hurtigfanen **Transaksjoner for fakturaforslag** angir du en linjebestemt regnskapskode for hver transaksjonslinje.
 
-    ![Transaksjonslinjebestemt regnskapskode](media/emea-nor-ger-proj-prop-cost.jpg)
+    ![Transaksjonslinjebestemt regnskapskode.](media/emea-nor-ger-proj-prop-cost.jpg)
 
 ## <a name="export-customer-electronic-invoices"></a>Eksportere elektroniske fakturaer for kunde
 
@@ -188,7 +188,7 @@ Du kan registrere kunderegnskapskoder når du arbeider med fritekstfakturaer, fa
 
 Når en faktura posteres, kan du generere en elektronisk faktura ved å velge **Send** \> **Original** for den valgte fakturaen.
 
-![Sende en e-faktura](media/emea-nor-ger-einvoice.jpg)
+![Sende en e-faktura.](media/emea-nor-ger-einvoice.jpg)
 
 ### <a name="view-e-invoices"></a>Vise e-fakturaer
 
@@ -197,13 +197,13 @@ Hvis du vil spørre om XML-filene for elektroniske fakturaer som er generert, f�
 1. Gå til **Organisasjonsstyring** \> **Elektronisk rapportering** \> **Elektroniske rapporteringsjobber**.
 2. Velg en jobb, og velg deretter **Vis filer**.
 
-    ![Vis filer-knappen](media/emea-nor-ger-einvoice-open.jpg)
+    ![Vis filer-knappen.](media/emea-nor-ger-einvoice-open.jpg)
 
 3. Velg **Åpne** for å laste ned filen som inneholder den elektroniske fakturaen.
 
 Hvis generering av de elektroniske fakturaene mislykkes på grunn av feil, velger du **Vis logg** \> **Meldingsdetaljer** for å vise flere detaljer om feilmeldingen.
 
-![Meldingsdetaljer](media/emea-nor-ger-einvoice-log.jpg)
+![Meldingsdetaljer.](media/emea-nor-ger-einvoice-log.jpg)
 
 ### <a name="send-e-invoices-to-er-destinations"></a>Sende e-fakturaer til ER-mål
 

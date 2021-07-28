@@ -16,12 +16,12 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: Application update 10.0.10
-ms.openlocfilehash: a9fd5a90d59ec329f8d4a2515e657fb822c098b0
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: d251eb02e7d9db1e61ba8bb6531c90e0e23717b3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792853"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356884"
 ---
 # <a name="show-discounts-in-pos"></a>Vise rabatter i POS
 
@@ -33,7 +33,7 @@ Kampanjer spiller en viktig rolle i motivering av kunder som foretar innkjøpsav
 
 Commerce inkluderer en operasjon med navnet Vis alle rabatter. Denne operasjonen viser alle rabattene som i øyeblikket kjøres i en butikk. Operasjonen Vis alle rabatter kan tilordnes en knapp i salgsstedet (POS), og denne knappen kan legges til på **velkomstsiden** eller **transaksjonssiden**. Illustrasjonen nedenfor viser et eksempel på siden **Alle rabatter** som åpnes.
 
-![Siden Alle rabatter](./media/View_all_discounts.png "Siden Alle rabatter")
+![Siden Alle rabatter.](./media/View_all_discounts.png "Siden Alle rabatter")
 
 For å vise rabatter ser systemet etter alle rabattene som samsvarer med én eller flere av følgende betingelser:
 
@@ -61,11 +61,11 @@ Illustrasjonene nedenfor viser logikken som bestemmer hvilke rabatter som vises 
 
 Følgende illustrasjon viser logikken som brukes når samtidighetskontrollen for rabatt er satt til **Beste pris og sammensatt i prioritet, aldri sammensatt på tvers av prioriteter**.
 
-![Logikk for Beste pris og sammensatt i prioritet, aldri sammensatt på tvers av prioriteter](./media/Model_1.png "Logikk for Beste pris og sammensatt i prioritet, aldri sammensatt på tvers av prioriteter").
+![Logikk for Beste pris og sammensatt i prioritet, aldri sammensatt på tvers av prioriteter.](./media/Model_1.png "Logikk for Beste pris og sammensatt i prioritet, aldri sammensatt på tvers av prioriteter").
 
 Følgende illustrasjon viser logikken som brukes når samtidighetskontrollen for rabatt er satt til **Beste pris bare innen prioritet, alltid sammensatt på tvers av prioriteter**.
 
-![Logikk for Beste pris bare innen prioritet, alltid sammensatt på tvers av prioriteter](./media/Model_2.png "Logikk for Beste pris bare innen prioritet, alltid sammensatt på tvers av prioriteter").
+![Logikk for Beste pris bare innen prioritet, alltid sammensatt på tvers av prioriteter.](./media/Model_2.png "Logikk for Beste pris bare innen prioritet, alltid sammensatt på tvers av prioriteter").
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

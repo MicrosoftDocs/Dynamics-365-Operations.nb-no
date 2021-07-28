@@ -2,7 +2,8 @@
 title: Butikkvelgermodul
 description: Dette emnet dekker butikkvelgermodulen og beskriver hvordan du legger den til områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 04/02/2021
+manager: annbe
+ms.date: 07/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +16,17 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5a9311435264119e8287f1b7da2d0456552231f3
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 341312758e0a6da2e918406e09df618e2475811f
+ms.sourcegitcommit: 7e976059118938b0089e40bef948029a8c088b38
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021470"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "6479382"
 ---
 # <a name="store-selector-module"></a>Butikkvelgermodul
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Dette emnet dekker butikkvelgermodulen og beskriver hvordan du legger den til områdesider i Microsoft Dynamics 365 Commerce.
 
@@ -50,12 +52,12 @@ Hvis du vil angi bredde- og lengdegrad for en butikklokasjon i Commerce Headquar
 1. Velg lagerlokasjonen i den venstre ruten.
 1. På hurtigfanen **Adresser** velger du **Avansert**.
 
-    ![Eksempel på butikkdetaljer i hovedkontoret](./media/Store-address.png)
+    ![Eksempel på butikkdetaljer i hovedkontoret.](./media/Store-address.png)
 
 1. I handlingsruten velger du **Rediger**.
 1. På hurtigfanen **Generelt** angir du verdier for **Breddegrad** og **Lengdegrad**.
 
-    ![Eksempel på oppsett av breddegrad og lengdegrad for en butikk i hovedkontoret](./media/Store-latitude-longitude.png)
+    ![Eksempel på oppsett av breddegrad og lengdegrad for en butikk i hovedkontoret.](./media/Store-latitude-longitude.png)
 
 1. Velg **Lagre** i handlingsruten. 
 
@@ -70,7 +72,6 @@ Når det gjelder REST API-et for autoforslag, må du kontrollere at følgende UR
 - For direktivet **script-src** **legger du til  &#42;.bing.com, &#42;.virtualearth.net**.
 - For direktivet **script style-src** legger du til **&#42;.bing.com**.
 
- 
 ## <a name="pickup-in-store-mode"></a>Hent i butikk-modus
 
 Butikkvelgermodulen støtter en **Hent i butikk**-modus som viser en liste over butikker der et produkt er tilgjengelig for henting. Den viser også åpningstider og produktbeholdning for hver butikk i listen. Butikkvelgermodulen krever konteksten for et produkt for å gjengi produkttilgjengelighet og for å la brukeren legge til produktet i handlekurven hvis produktets leveringsmåte er satt til **henting** på den valgte butikken. For mer informasjon, se [Beholdningsinnstillinger](inventory-settings.md). 
@@ -81,7 +82,7 @@ For at dette scenarioet skal fungere, bør produktene konfigureres slik at lever
 
 Bildet nedenfor viser et eksempel på en butikkvelgermodul som brukes på en PDP.
 
-![Eksempel på en butikkvelgermodul som brukes på PDP](./media/BOPIS.PNG)
+![Eksempel på en butikkvelgermodul som brukes på PDP.](./media/BOPIS.PNG)
 
 > [!NOTE]
 > I versjon 10.0.16 og nyere kan en ny funksjon aktiveres, noe som gjør at en organisasjon kan definere flere plukkmoduser for leveringsmåter for kunder.  Hvis denne funksjonen er aktivert, vil butikkvelgeren og andre moduler med e-handel bli forbedret slik at kunden kan velge fra potensielt flere leveringsalternativer hvis de er konfigurert.  Hvis du vil vite mer om denne funksjonen, kan du se [denne dokumentasjonen](./multiple-pickup-modes.md). 
@@ -92,7 +93,7 @@ Butikkvelgeren støtter også en **Søk etter butikker**-modus. Denne modusen ka
 
 Følgende illustrasjon viser et eksempel på en butikkvelgermodul som brukes sammen med en kartmodul på en side med butikkadresser.
 
-![Eksempel på en butikkvelgermodul og en kartmodul på en side for butikklokasjoner](./media/ecommerce-Storelocator.PNG)
+![Eksempel på en butikkvelgermodul og en kartmodul på en side for butikklokasjoner.](./media/ecommerce-Storelocator.PNG)
 
 ## <a name="render-a-map"></a>Gjengi et kart
 
@@ -110,6 +111,10 @@ Butikkvelgermodulen kan brukes sammen med kartmodulen for å vise butikkadressen
 | Alternativer for autoforslag: maksimalt antall resultater | Tall | Denne egenskapen definerer det maksimale antallet automatisk foreslåtte resultater som kan vises via API-et Bing Autosuggest. |
 | Søkeradius | Tall | Denne egenskapen definerer søkeradius for butikkene, i miles. Hvis ingen verdi er angitt, brukes standard søkeradius på 50 engelske mil. |
 | Vilkår for bruk | URL |  Denne egenskapen angir vilkårene for bruk av URL-adresser som kreves for å bruke Bing Maps-tjenesten. |
+
+## <a name="site-settings"></a>Områdeinnstillinger
+
+Butikkvelgermodulen overholder [innstillingene for Legg til produkt i handlekurv](add-cart-settings.md). Når en vare er lagt til i handlekurven fra butikkvelgermodulen, vil brukerne se de passende konfigurerte arbeidsflytene.
 
 ## <a name="add-a-store-selector-module-to-a-page"></a>Legge til en butikkvelgermodul på en side
 

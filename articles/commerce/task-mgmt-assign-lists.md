@@ -13,12 +13,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 0c4f028367c894c54392963ffc4f6a0f0c04c03a
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 85b021f99a1260e4ed640764e4a3e96a80197768
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795267"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354595"
 ---
 # <a name="assign-task-lists-to-stores-or-employees"></a>Tilordne oppgavelister til butikker eller ansatte
 
@@ -45,7 +45,7 @@ Følg denne fremgangs måten for å starte prosessen med å tilordne en oppgavel
 
 Illustrasjonen nedenfor viser et eksempel på hvordan du finner og velger butikker i dialogboksen **Start prosess**.
 
-![Finne og velge butikker i dialogboksen Start prosess](media/HQ-Assign-Tasks-Lists.png)
+![Finne og velge butikker i dialogboksen Start prosess.](media/HQ-Assign-Tasks-Lists.png)
 
 ## <a name="assign-task-lists-on-a-recurring-basis"></a>Tilordne oppgavelister regelmessig
 
@@ -62,7 +62,7 @@ Forhandleren har noen ganger gjentakende oppgaver, for eksempel "Sjekkliste for 
 
 Illustrasjonen nedenfor viser et eksempel på hvordan du kan angi frekvenskriterier i dialogboksen **Definer regelmessighet**.
 
-![Angi frekvenskriterier i dialogboksen Definer regelmessighet](media/HQ-Assign-Tasks-Lists-Recurrently.png)
+![Angi frekvenskriterier i dialogboksen Definer regelmessighet.](media/HQ-Assign-Tasks-Lists-Recurrently.png)
 
 ## <a name="track-task-list-status"></a>Status for sporing av oppgaveliste
 

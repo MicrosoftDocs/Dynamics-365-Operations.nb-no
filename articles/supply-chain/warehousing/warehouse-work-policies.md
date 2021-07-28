@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 39a9ba00763fac220eff16bdd42aa07cc8e35ba4
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d3f3a02a369cab34b965b2443bb77053377a190e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838136"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353378"
 ---
 # <a name="work-policies"></a>Arbeidspolicyer
 
@@ -200,7 +200,7 @@ Bestillingen er nå mottatt, men intet arbeid er tilknyttet den. Lagerbeholdning
 
 I eksemplet nedenfor er det to produksjonsordrer, *PRD-001* og *PRD-002*. Produksjonsordren *PRD-001* har en operasjon kalt *Montering*, der produktet *SC1* rapporteres som ferdig til lokasjonen *001*. Produksjonsordren *PRD-002* er en operasjon kalt *Maling*, og den bruker *SC1*-produktet fra lokasjonen *001*. Produksjonsordren *PRD-002* bruker også råvaren *RM1* fra lokasjonen *001*. Råmaterialet *RM1* er lagret i lagerlokasjonen *BULK-001* og blir plukket til lokasjon *001* av lagerarbeid for plukking av råvarer. Plukkarbeidet blir generert når produksjonen *PRD-002* frigis.
 
-[![Arbeidspolicyer for lager](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png)
+[![Arbeidspolicyer for lager.](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png)
 
 Når du planlegger å konfigurere en arbeidspolicy for lageret i dette scenariet, bør du vurdere følgende punkter:
 

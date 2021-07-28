@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: ca50f030e67e517a227766f6a30d4bd4b345300b
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 424917f98ec7c4c044fb5cdae78133d1529aefd9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894130"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348170"
 ---
 # <a name="specify-a-custom-storage-location-for-generated-documents"></a>Angi et egendefinert lagringssted for genererte dokumenter
 
@@ -39,7 +39,7 @@ Du må også ha tilgang til utviklingsmiljøet for denne topologien.
 
 I gjeldende topologi [oppretter du et nytt ER-format](tasks/er-format-configuration-2016-11.md) for å generere dokumenter du har tenkt å legge til et egendefinert lagringssted for. Du kan også [importere et eksisterende ER-format til denne topologien](general-electronic-reporting-manage-configuration-lifecycle.md).
 
-![Formatutformingsside](media/er-extend-file-storages-format.png)
+![Formatutformingsside.](media/er-extend-file-storages-format.png)
 
 > [!IMPORTANT]
 > ER-formatet som du oppretter eller importerer, må inneholde minst ett av følgende formatelementer:
@@ -58,7 +58,7 @@ Hvis du vil angi hvordan dokumenter som et ER-format genererer, rutes, må du ko
 3. I **Klasse**-feltet angir du **Tilknytt fil**.
 4. I **Gruppe**-feltet angir du **Fil**.
 
-![Siden Dokumenttyper](media/er-extend-file-storages-document-type.png)
+![Siden Dokumenttyper.](media/er-extend-file-storages-document-type.png)
 
 > [!NOTE]
 > Dokumenttypene er firmaspesifikke. Hvis du vil bruke et ER-format med et konfigurert mål i flere firmaer, må du konfigurere en egen dokumenttype i hvert firma.
@@ -113,14 +113,14 @@ public DocuRef insertFile(
 - **Arkiv** – Når dette målet brukes, opprettes en ny post for ER-formatet som kjøres, i ERFormatMappingRunJobTable-tabellen. **Arkivert**-feltet i denne oppføringen er satt til **Usann**. Hvis kjøringen av ER-formatet er vellykket, knyttes det genererte dokumentet til denne posten, og **AttachingFile()**-hendelsen oppstår. Dokumenttypen som velges i dette ER-målet, bestemmer lagringsstedet for den vedlagte filen (Microsoft Azure Storage eller en Microsoft SharePoint-mappe).
 - **Jobbarkiv** – Når dette målet brukes, opprettes en ny post for ER-skjemaet som kjøres, i ERFormatMappingRunJobTable-tabellen. **Arkivert**-feltet i denne oppføringen er satt til **Sann**. Hvis kjøringen av ER-formatet er vellykket, knyttes det genererte dokumentet til denne posten, og **AttachingFile()**-hendelsen oppstår. Dokumenttypen som konfigureres i ER-parameterne, bestemmer lagringsstedet for den vedlagte filen (Azure Storage eller en Microsoft SharePoint-mappe).
 
-![Siden Parametere for elektronisk rapportering](media/er-extend-file-storages-parameters.png)
+![Siden Parametere for elektronisk rapportering.](media/er-extend-file-storages-parameters.png)
 
 ## <a name="configure-an-er-destination"></a>Konfigurere et ER-mål
 
 1. Konfigurer det arkiverte målet for et av de tidligere nevnte elementene (fil, mappe, sammenslåing eller vedlegg) for ER-formatet du opprettet eller importerte. For å få hjelp kan du se [ER Konfigurere mål](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-destinations-2016-11).
 2. Bruk dokumenttypen du la til tidligere for det konfigurerte målet. (For eksemplet i dette emnet er dokumenttypen **FileX**.)
 
-![Dialogboksen Innstillinger for mål](media/er-extend-file-storages-destination.png)
+![Dialogboksen Innstillinger for mål.](media/er-extend-file-storages-destination.png)
 
 ## <a name="modify-source-code"></a>Endre kildekode
 

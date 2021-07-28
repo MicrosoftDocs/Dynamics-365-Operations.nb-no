@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: a1d0ae4e487c391020947c607d5d7cb5d1ba6af4
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: e83b381e73d28dce0a438a37d5f8ed23b4957adf
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020609"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350384"
 ---
 # <a name="sign-in-link-redirects-back-to-an-e-commerce-site"></a>Påloggingskobling omdirigerer tilbake til et e-handelsområde
 
@@ -43,7 +43,7 @@ Hvis du vil bekrefte at svaradressen er riktig konfigurert i Azure AD B2C-progra
 1. Velg programmet du opprettet i løpet av Azure AD B2C-oppsettet.
 1. Under **Svar-URL** må du kontrollere at listen inneholder oppføringer for både URL-adressen for områdedomenet og den e-handelsgenererte URL-adressen, som vist i eksemplet nedenfor.
 
-    ![URL-oppføringer for Azure AD B2C-svar](media/aad-b2c-reply-url.jpg)
+    ![URL-oppføringer for Azure AD B2C-svar.](media/aad-b2c-reply-url.jpg)
 
 > [!NOTE]
 > Både områdets domene-URL og den e-handelsgenererte URL-adressen må være i et gyldig URL-format som ikke omfatter ledende eller etterfølgende skråstreker.

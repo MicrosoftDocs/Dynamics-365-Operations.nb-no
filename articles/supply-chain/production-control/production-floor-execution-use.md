@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 0ece83a20a33a8f23e8700d1b5d680a11d64fea0
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: c8c50a9a6f9f3c6582e9fd0f28080a3259faab21
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907723"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349776"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Hvordan arbeidere bruker grensesnittet for produksjonsutførelse
 
@@ -32,7 +32,7 @@ Før arbeidere kan begynne å bruke enheten, må en leder eller teknisk stab for
 
 Når enheten er forberedt, vises påloggingssiden på den. Denne siden viser informasjon om statusen for jobber for den lokale arbeidscellen. Denne informasjonen oppdateres med jevne mellomrom. På siden bruker arbeidere kort-IDer til å logge på. Selv om arbeidere ikke trenger å ha en brukerkonto for Supply Chain Management, må de ha en *tidregistrert arbeider*-konto de kan bruke når de logger på.
 
-![Påloggingsside for grensesnittet for produksjonsutførelse](media/pfei-sign-in-page.png "Påloggingsside for grensesnittet for produksjonsutførelse")
+![Påloggingsside for grensesnittet for produksjonsutførelse.](media/pfei-sign-in-page.png "Påloggingsside for grensesnittet for produksjonsutførelse")
 
 De gjenværende delene i dette emnet beskriver hvordan arbeiderne samhandler med grensesnittet.
 
@@ -40,7 +40,7 @@ De gjenværende delene i dette emnet beskriver hvordan arbeiderne samhandler med
 
 fanen **Alle jobber** inneholder en jobbliste som viser alle produksjonsjobbene som har statusen *Ikke startet*, *Stoppet* eller *Startet*. (Dette fanenavnet kan tilpasses og kan være et annet for systemet ditt.)
 
-![fanen Alle jobber](media/pfei-all-jobs-tab.png "fanen Alle jobber")
+![fanen Alle jobber.](media/pfei-all-jobs-tab.png "fanen Alle jobber")
 
 Jobblisten inneholder følgende kolonner: Tallene samsvarer med tallene i den forrige illustrasjonen.
 
@@ -59,7 +59,7 @@ Jobblisten inneholder følgende kolonner: Tallene samsvarer med tallene i den fo
 
 **Aktive jobber**-fanene viser en liste over alle jobber som den påloggede arbeideren allerede har startet. (Dette fanenavnet kan tilpasses og kan være et annet for systemet ditt.)
 
-![Aktive jobber-fanen](media/pfei-active-jobs-tab.png "Aktive jobber-fanen")
+![Aktive jobber-fanen.](media/pfei-active-jobs-tab.png "Aktive jobber-fanen")
 
 Listen over aktive jobber inneholder følgende kolonner:
 
@@ -76,7 +76,7 @@ Listen over aktive jobber inneholder følgende kolonner:
 
 I **Min maskin**-fanen kan arbeidere velge et aktivum som er koblet til en maskinressurs i filteret som er angitt i **Alle jobber**-fanen. Arbeidere kan deretter vise statusen og tilstanden for det valgte aktivumet ved å lese verdier for opptil fire valgte tellere og lister over nylige meldinger og registrerte nedetider. Arbeidere kan også be om vedlikehold for det valgte aktivumet og registrere og redigere nedetid for maskinen. (Dette fanenavnet kan tilpasses og kan være et annet for systemet ditt.)
  
-![Min maskin-fanen](media/pfei-my-machine-tab.png "Min maskin-fanen")
+![Min maskin-fanen.](media/pfei-my-machine-tab.png "Min maskin-fanen")
 
 **Min maskin**-fanen har følgende kolonner. Tallene samsvarer med tallene i den forrige illustrasjonen.
 
@@ -87,7 +87,7 @@ I **Min maskin**-fanen kan arbeidere velge et aktivum som er koblet til en maski
 
 1. **Innstillinger** – Velg tannhjulikonet for å åpne en dialogboks der du kan velge hvilke tellere du vil vise for det valgte maskinaktivumet. Verdiene for disse tellerne vises øverst i **Aktivastyring**-fanen. På **Innstillinger**-menyen (som vises på skjermbildet nedenfor) kan du aktivere opptil fire tellere. For hver teller du vil aktivere, bruker du oppslagsfeltet øverst i flisen til å velge en teller. Oppslagsfeltet viser alle tellerne som er knyttet til aktivumet som er valgt øverst på **Aktivastyring**-siden. Angi at hver teller skal overvåke **Aggregert**-verdien eller den siste **Faktisk**-verdien for telleren. Hvis du for eksempel angir en teller som sporer hvor mange timer maskinen har kjørt, setter du den til **Aggregert**. Hvis du angir at en teller skal måle sist oppdaterte temperatur eller trykk, setter du den til **Faktisk**. Velg **OK** for å lagre innstillingene og lukke dialogboksen.
 
-    ![Innstillingene på Min maskin-fanen](media/pfei-my-machine-tab-settings.png "Innstillingene på Min maskin-fanen")
+    ![Innstillingene på Min maskin-fanen.](media/pfei-my-machine-tab-settings.png "Innstillingene på Min maskin-fanen")
 
 1. **Be om vedlikehold** – Velg denne knappen for å åpne en dialogboks der du kan opprette en melding. Du kan gi en beskrivelse og en merknad. En bruker av Supply Chain Management blir gjort oppmerksom på forespørselen og kan deretter konvertere meldingen til en arbeidsordre for vedlikehold.
 1. **Registrer nedetid** – Velg denne knappen for å åpne en dialogboks der du kan registrere nedetid for maskin. Du kan velge en årsakskode og angi en dato / et tidsrom for nedetiden. Registreringen av nedetid for maskin brukes til å beregne effektiviteten til maskinaktivumet.
@@ -98,7 +98,7 @@ I **Min maskin**-fanen kan arbeidere velge et aktivum som er koblet til en maski
 
 Arbeidere starter en produksjonsjobb ved å velge en jobb i **Alle jobber**-fanen og deretter velge **Start jobb** for å åpne **Start jobb**-dialogboksen.
 
-![Dialogboksen Start jobb](media/pfei-start-job-dialog.png "Dialogboksen Start jobb")
+![Dialogboksen Start jobb.](media/pfei-start-job-dialog.png "Dialogboksen Start jobb")
 
 Arbeidere bruker **Start jobb**-dialogboksen til å bekrefte produksjonsantallet, og starter deretter jobben. Arbeidere kan justere antallet ved å merke av i **Antall**-feltet og deretter bruke det numeriske tastaturet som vises. Arbeidere velger deretter **Start** for å begynne å arbeide på jobben. Dialogboksen **Start jobb** lukkes, og jobben legges til i fanen **Aktive jobber**.
 
@@ -108,13 +108,13 @@ Arbeidere kan starte en jobb som har en hvilken som helst status. Når en arbeid
 
 Når en arbeider fullfører eller delvis fullfører en jobb, kan de rapportere korrekte antall som ble produsert ved å velge en jobb i fanen **Aktive jobber** og deretter velge **Rapportfremdrift**. I dialogboksen **Rapportfremdrift** angir arbeideren deretter det korrekte antallet ved hjelp av det numeriske tastaturet. Antallet er tomt som standard. Når et antall er angitt, kan arbeideren oppdatere statusen for jobben til *pågår*, *stoppet* eller *fullført*.
 
-![Dialogboksen Rapportfremdrift](media/pfei-report-progress-dialog.png "Dialogboksen Rapportfremdrift")
+![Dialogboksen Rapportfremdrift.](media/pfei-report-progress-dialog.png "Dialogboksen Rapportfremdrift")
 
 ## <a name="reporting-scrap"></a>Rapportere svinn
 
 Når en arbeider fullfører eller delvis fullfører en jobb, kan de rapportere svinn som ble produsert ved å velge en jobb i fanen **Aktive jobber** og deretter velge **Rapportere svinn**. I dialogboksen **Rapportere svinn** angir arbeideren deretter svinnantall ved hjelp av det numeriske tastaturet. Arbeideren velger også en årsak (*ingen*, *maskin*, *operatør* eller *materiale*).
 
-![Dialogboksen Rapportere svinn](media/pfei-report-scrap-dialog.png "Dialogboksen Rapportere svinn")
+![Dialogboksen Rapportere svinn.](media/pfei-report-scrap-dialog.png "Dialogboksen Rapportere svinn")
 
 ## <a name="completing-a-job-and-starting-a-new-job"></a>Fullføre en jobb og starte en ny jobb
 

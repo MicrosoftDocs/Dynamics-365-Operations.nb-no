@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 8a946a8325afebf76639991c60135d7425f5f211
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: eca0d30903985126412e1ae0b8e3232c3e4700f4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826768"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351690"
 ---
 # <a name="online-financial-consolidations"></a>Elektroniske finanskonsolideringer
 
@@ -31,7 +31,7 @@ Når du har fullført oppsettet, du angir detaljer om konsolideringer på siden 
 ## <a name="criteria"></a>Vilkår
 I kategorien **Vilkår** på siden **Konsolider [Online]** definerer du kontoene, periodene og typen data som konsolideres.
 
-![Kategorien Kriterier](./media/criteria-consolidate-online.png "Kategorien Kriterier")
+![Kategorien Kriterier.](./media/criteria-consolidate-online.png "Kategorien Kriterier")
 
 Her er en forklaring på feltene i denne kategorien:
 
@@ -57,16 +57,16 @@ Her er en forklaring på feltene i denne kategorien:
 ## <a name="financial-dimensions"></a>Finansdimensjoner
 I kategorien **Finansdimensjoner** kan du angi hvilke dimensjoner som skal inkluderes i konsolideringsfirmaet. Hvis du vil velge en dimensjon, kan du angi feltet **Spesifikasjon** til **Dimensjon** og deretter definere rekkefølgen på dimensjonen i konsolideringsfirmaet.
 
-![Kategorien Finansdimensjoner](./media/financial-dimensions-cons.png "Kategorien Finansdimensjoner")
+![Kategorien Finansdimensjoner.](./media/financial-dimensions-cons.png "Kategorien Finansdimensjoner")
 
 Uavhengig av hvilken rekkefølge du definerer, blir **Hovedkonto** alltid det første segmentet.
 
 ## <a name="legal-entities"></a>Juridiske enheter
 I kategorien **Juridiske enheter** kan du angi hvilke firmaer som skal inkluderes i konsolideringsfirmaet. Du kan også definere eierskapsprosenten for disse firmaene. Hvis du angir mindre enn 100 prosent eierskap, blir den angitte prosenten rullet opp til konsolideringsfirmaet. For eventuelle oversettelsesforskjeller brukes feltet **Kontotypen for konverteringsavvik** til å velge hovedkontoen fra oppsettet på siden **Kontoer for automatiske transaksjoner**.
 
-![Kategorien Juridiske enheter](./media/legal-entities-cons.png "Kategorien Juridiske enheter")
+![Kategorien Juridiske enheter.](./media/legal-entities-cons.png "Kategorien Juridiske enheter")
 
-![Siden Kontoer for automatiske transaksjoner](./media/accounts-for-automatic-cons.png "Siden Kontoer for automatiske transaksjoner")
+![Siden Kontoer for automatiske transaksjoner.](./media/accounts-for-automatic-cons.png "Siden Kontoer for automatiske transaksjoner")
 
 ## <a name="elimination"></a>Eliminering
 I kategorien **Eliminering** har du tre alternativer for behandling av elimineringer:
@@ -75,7 +75,7 @@ I kategorien **Eliminering** har du tre alternativer for behandling av elimineri
 - Velg elimineringsregelen, og deretter i feltet **Forslagsalternativer** velger du **Bare poster**. Dette alternativet behandler elimineringen i løpet av konsolideringsprosessen, og bokfører alt i ett trinn.
 - Kjør et elimineringsforslag separat fra konsolideringsprosessen ved hjelp av elimineringsjournalen.
 
-![Kategorien Eliminering](./media/elimination-cons-onl.png "Kategorien Eliminering")
+![Kategorien Eliminering.](./media/elimination-cons-onl.png "Kategorien Eliminering")
 
 Hvis du vil ha mer informasjon om elimineringer, kan du se [Elimineringsregler](./elimination-rules.md).
 
@@ -86,7 +86,7 @@ I kategorien **Valutaveksling** definerer du juridisk enhet, konto, valutakursty
 - **Transaksjonsdato** – Datoen for hver transaksjon brukes til å velge en valutakurs. Dette alternativet brukes oftest for anleggsmidler og omtales ofte som en historisk kurs. Du får ikke en forhåndsvisning av satsen, fordi det vil være mange satser for de ulike transaksjonene i kontoområdet.
 - **Brukerdefinert sats** – Når du velger dette alternativet, kan du angi valutakursen som du vil bruke. Dette alternativet kan være nyttig for gjennomsnittlige valutakurser eller hvis du konsoliderer mot en fast valutakurs.
 
-![Kategorien Valutaveksling](./media/currency-translation-cons-online.png "Kategorien Valutaveksling")
+![Kategorien Valutaveksling.](./media/currency-translation-cons-online.png "Kategorien Valutaveksling")
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 7b4734fd363cd5ee44f228e0c0f9ce73abad1aaa
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 633717d77f4d31463d51c575d837a65dbb0e5ce2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021858"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358733"
 ---
 # <a name="manage-user-roles-in-microsoft-teams"></a>Behandle brukerroller i Microsoft Teams
 
@@ -30,7 +30,7 @@ Når du oppretter et team for hver butikk eller kanal i Teams, opprettes det et 
 
 Illustrasjonen nedenfor viser et eksempel på en liste over teammedlemmer og deres brukerroller i Microsoft Teams-administrasjonssenteret.
 
-![Teammedlemmer og brukerroller i Microsoft Teams-administrasjonssenteret](media/d365-commerce-teams-integration-user-roles.png)
+![Teammedlemmer og brukerroller i Microsoft Teams-administrasjonssenteret.](media/d365-commerce-teams-integration-user-roles.png)
 
 Hvis du vil ha mer informasjon, kan du se [Tilordne teameiere og -medlemmer i Microsoft Teams](/microsoftteams/assign-roles-permissions).
 

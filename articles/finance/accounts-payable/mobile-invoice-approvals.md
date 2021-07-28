@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 78ab17952801a1d77f321e212bb61e9b45d93216
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 2406df379084fefd4e1ca33c271b69f4dafeb5b5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189208"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358911"
 ---
 # <a name="mobile-invoice-approvals"></a>Mobile fakturagodkjenninger
 
@@ -136,7 +136,7 @@ Den første mobile siden som du bør utforme er listen over fakturaer som er til
 
 1.  I URL-adressen erstatter du navnet på menyelementet med **VendMobileInvoiceAssignedToMeListPage** for å åpne den mobile versjonen av listesiden **Ventende leverandørfakturaer som er tilordnet til meg** i **Leverandører**-modulen. Avhengig av hvor mange fakturaer som du har i systemet tilordnet deg viser denne siden de fakturaene. Du kan bruke filteret til venstre for å finne en spesifikk faktura. Men krever vi ikke en bestemt faktura for dette eksemplet. Vi krever bare noen fakturaen som er tilordnet til deg som kommer til å la deg utforme Mobil-siden. De nye sidene som er tilgjengelige er utformet spesielt for utvikling av mobile scenarier for leverandørfaktura. Derfor må du bruke disse sidene. URL-adressen skal ligne på følgende URL-adresse, og når du har angitt den, må siden som vises i illustrasjonen, vises: https://&lt;yourURL&gt;/?cmp=usmf&mi=**VendMobileInvoiceAssignedToMeListPage**&mode=mobile 
 
-    [![Siden Ventende leverandørfakturaer tilordnet til meg](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)
+    [![Siden Ventende leverandørfakturaer tilordnet til meg.](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)
     
 2.  Klikk på **Innstillinger** (tannhjul)-knappen øverst til høyre på siden, og klikk deretter **Mobile app**
 3.  Velg arbeidsområdet og klikk **Rediger**
@@ -145,7 +145,7 @@ Den første mobile siden som du bør utforme er listen over fakturaer som er til
 6.  Klikk **Ferdig**.
 7.  I mobile designer på **Felt**-kategorien, klikk **Velg felt**. Kolonnene på listesiden over må ligne på følgende illustrasjon. 
 
-    [![Kolonner på siden Ventende leverandørfakturaer som er tilordnet til meg](./media/mobile-invoice-approvals02-1024x117.png)](./media/mobile-invoice-approvals02.png)
+    [![Kolonner på siden Ventende leverandørfakturaer som er tilordnet til meg.](./media/mobile-invoice-approvals02-1024x117.png)](./media/mobile-invoice-approvals02.png)
     
 8.  Legg til de påkrevde kolonnene fra listesiden som vises til brukerne på mobilsiden. Rekkefølgen som du legger til, er rekkefølgen som feltene vises til sluttbrukeren. Vil være den eneste måten å endre rekkefølgen på feltene ved å velge alle feltene på nytt. Basert på kravene for dette scenariet, er følgende åtte felt obligatoriske. Men noen brukere kan vurdere at åtte felt er for mye informasjon å ha på en mobil enhet. Derfor vil vi vise bare de viktigste feltene i den mobile listevisningen. De gjenværende feltene vises i detaljvisningen, som vi vil utforme senere. Nå skal vi legge til følgende felt. Klikk plusstegnet (**+**) i disse kolonnene for å legge dem til på den mobile siden.
     - Navn på leverandør
@@ -156,7 +156,7 @@ Den første mobile siden som du bør utforme er listen over fakturaer som er til
 
     Når feltene er lagt til, må mobilsiden ligne på følgende illustrasjon. 
     
-    [![Side når felt er lagt til](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
+    [![Side når felt er lagt til.](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
 
 9.  Du må også legge til følgende kolonner nå, slik at vi kan aktivere arbeidsflythandlinger senere.
     - Vis fullført oppgave
@@ -175,7 +175,7 @@ Den første mobile siden som du bør utforme er listen over fakturaer som er til
 
 Hvis du vil utforme siden med fakturadetaljer for mobil, kan du bruke siden **VendMobileInvoiceHeaderDetails**. Legg merke til at, avhengig av antall fakturaer som du har på maskinen, denne siden viser den eldste fakturaen (faktura som var opprettet først). Du kan bruke filteret til venstre for å finne en spesifikk faktura. Men krever vi ikke en bestemt faktura for dette eksemplet. Vi krever bare noen fakturadata slik at vi kan utforme mobilsiden. 
 
-[![Arbeidsflytside](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)
+[![Arbeidsflytside.](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)
 
 1. I URL-adressen erstatter du navnet på menyelementet med **VendMobileInvoiceHeaderDetails** for å åpne skjemaet
 
@@ -212,7 +212,7 @@ Hvis du vil utforme siden med fakturadetaljer for mobil, kan du bruke siden **Ve
 
 11. Når du har lagt til alle feltene fra de forrige to trinnene, klikker du **Ferdig**. Siden må ligne på følgende illustrasjon.
     
-    [![Illustrasjon som viser ekstra felter som er lagt til](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
+    [![Illustrasjon som viser ekstra felter som er lagt til.](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
 
 12. Klikk **Ferdig** for å avslutte redigeringsmodus.
 
@@ -322,7 +322,7 @@ Hvis du vil legge til arbeidsflythandlinger, kan du bruke siden **VendMobileInvo
 
 4. Angi **Dokumentbehandling** til **Ja** som vist nedenfor. **Obs!** Hvis det er ingen krav til å vise vedlegg på den mobile enheten, kan du la dette alternativet være angitt til **Nei**, som er standardinnstillingen.
    
-   ![Dokumentstyring](./media/docmanagement-216x300.png)
+   ![Dokumentstyring.](./media/docmanagement-216x300.png)
 
 5. Klikk **Ferdig** for å avslutte redigeringsmodus.
 
@@ -339,7 +339,7 @@ Kravene for dette scenariet bekrefter at det vil bli bare distribusjoner på lin
 
 1.  Erstatt navnet på menyelementet i URL-adressen, slik du gjorde tidligere. Siden som vises bør ligne på følgende illustrasjon.
 
-    [![Alle distribusjoner-siden](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)
+    [![Alle distribusjoner-siden.](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)
 
 2.  Åpne utformingen for mobil fra **Innstillinger** (tannhjul)-knappen.
 

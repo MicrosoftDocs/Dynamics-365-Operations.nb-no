@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: BankTreasurerWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 21941
+ms.custom:
+- "21941"
+- intro-internal
 ms.assetid: d7e22bd8-fd0d-47e1-843f-45ab0193ff8d
 ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e5abef8a25513898d6dbef2604d10373394c95c6
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: c948cf34b198769a67c9e6981ab49c9d4482ef25
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897434"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352888"
 ---
 # <a name="cash-and-bank-management-home-page"></a>Startside for kontant- og bankbehandling
 
@@ -32,11 +34,11 @@ Disse instrumentene inkluderer betalingsbilag, sjekker, veksler og egenveksler. 
 
 **Forretningsprosesser**
 
-[![Forretningsprosess](./media/Cash-process.PNG)](./media/Cash-process.PNG)
+[![Forretningsprosess.](./media/Cash-process.PNG)](./media/Cash-process.PNG)
 
 -   [Kontantrabatt](cash-discounts.md)
 -   [Oversikt over utligning](settlement-overview.md)
--   [Konfigurere utligning](configure-settlement.md)
+-   [Konfigurer utligning](configure-settlement.md)
 -   [Revaluering av utenlandsk valuta for leverandører og kunder](foreign-currency-revaluation-accounts-payable-accounts-receivable.md)
 -   [Purringer](letters-of-credit.md)
 -   [Purringer og importsamlinger](letters-of-credit-import-collections.md)
@@ -81,7 +83,7 @@ Disse instrumentene inkluderer betalingsbilag, sjekker, veksler og egenveksler. 
 
 ### <a name="additional-resources"></a>Tilleggsressurser
 
-#### <a name="whats-new-and-in-development"></a>Hva er nytt og hva er under utvikling?
+#### <a name="whats-new-and-in-development"></a>Nyheter og under utvikling
 
 Gå til [Lanseringsplaner for Microsoft Dynamics 365](/dynamics365/release-plans/) for å se hvilke nye funksjoner som er planlagt. 
 

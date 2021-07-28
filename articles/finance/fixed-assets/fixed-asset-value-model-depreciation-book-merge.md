@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f027a856dbd596ede84c39e30ee2227aab9329f2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 32dfcc65d8b76f7314dcc348299c29d4ccff8d91
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826744"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355586"
 ---
 # <a name="fixed-asset-value-model-and-depreciation-book-merge"></a>Sammenslåing av anleggsmidler, verdimodeller og avskrivningstablåer
 
@@ -27,7 +27,7 @@ ms.locfileid: "5826744"
 
 I tidligere versjoner var det to vurderingskonsepter for anleggsmidler: verdimodeller og avskrivningstablåer. I versjonen Microsoft Dynamics 365 for Operations (1611) er verdimodellfunksjonaliteten og funksjonaliteten for avskrivningstablå slått sammen til ett enkelt konsept som kalles et tablå.
 
-Den nye tablåfunksjonaliteten er basert på tidligere verdimodellfunksjonalitet, men inneholder også all funksjonalitet som tidligere ble angitt i avskrivningstablåer. [![Tablåer som en sammenslåing av verdimodell og avskrivningtablåfunksjonalitet](./media/fixed-assets.png)](./media/fixed-assets.png) På grunn av denne sammenslåingen, kan du nå bruke ett enkelt sett med sider, forespørsler og rapporter for alle prosesser for anleggsmidlet. Tabellen i dette emnet beskriver den tidligere funksjonaliteten for avskrivningstablåer og verdimodeller, sammen med den nye funksjonaliteten for tablåer.
+Den nye tablåfunksjonaliteten er basert på tidligere verdimodellfunksjonalitet, men inneholder også all funksjonalitet som tidligere ble angitt i avskrivningstablåer. [![Tablåer som en sammenslåing av verdimodell og avskrivningtablåfunksjonalitet.](./media/fixed-assets.png)](./media/fixed-assets.png) På grunn av denne sammenslåingen, kan du nå bruke ett enkelt sett med sider, forespørsler og rapporter for alle prosesser for anleggsmidlet. Tabellen i dette emnet beskriver den tidligere funksjonaliteten for avskrivningstablåer og verdimodeller, sammen med den nye funksjonaliteten for tablåer.
 
 ## <a name="setup"></a>Konfigurer
 Som standard posterer tablåer både i økonomimodulen (Finans) og underfinansjournalen for anleggsmiddel. Tablåer har et nytt alternativ, **Poster i økonomimodul**, som lar deg deaktivere postering i økonomimodulen og postere bare til underfinansjournal for anleggsmiddel. Denne funksjonen ligner tidligere posteringsvirkemåte for avskrivningstablåer. Journalnavnoppsettet har et nytt posteringslag som heter Ingen. Dette posteringslaget ble lagt til spesifikt for anleggsmiddeltransaksjoner. Hvis du vil postere transaksjoner for tablåer som ikke poster til økonomimodulen, må du bruke et journalnavn med posteringslaget satt til **Ingen**.

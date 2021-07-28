@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 184a1cb5d3851e26b41340b711c51ef38e06eb53
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: 74005d17e2524b922b0fab1aab5350b85dfad771
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186648"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355682"
 ---
 # <a name="improve-the-prediction-model-preview"></a>Forbedre forutsigelsesmodellen (forhåndsversjon)
 
@@ -33,7 +33,7 @@ Dette emnet beskriver funksjoner du kan bruke til å forbedre ytelsen til foruts
 
 Du velger først ett eller flere av de tre mulige resultatene for fakturaer: **Til planlagt tid**, **Forsinket** og **Svært sent**. Alle de tre resultatene bør velges. Hvis du fjerner merkingen av noen av resultatene, blir fakturaene filtrert ut av opplæringsprosessen, og nøyaktigheten til forutsigelsen blir redusert.
 
-[![Bekrefte resultater](./media/confirm-3-outcomes.png)](./media/confirm-3-outcomes.png)
+[![Bekrefte resultater.](./media/confirm-3-outcomes.png)](./media/confirm-3-outcomes.png)
 
 Hvis organisasjonen bare krever to resultater, endrer du de **Forsinket**- og **Svært sent**-terskelene til 0 (null) dager. På denne måten kan du effektivt skjule forutsigelsen til en binær tilstand **Til planlagt tid** eller **Forsinket**.
 
@@ -51,7 +51,7 @@ De følgende delene viser feltene som er tilgjengelige for faktura- og kundeenhe
 
 Følgende illustrasjon viser feltene som er tilgjengelig for fakturatabellen.
 
-[![Tilgjengelige felt for fakturatabellen](./media/available-fields.png)](./media/available-fields.png)
+[![Tilgjengelige felt for fakturatabellen.](./media/available-fields.png)](./media/available-fields.png)
 
 Følgende felt bør ikke velges for opplæring:
 
@@ -66,7 +66,7 @@ Følgende felt bør ikke velges for opplæring:
 
 Følgende illustrasjon viser feltene som er tilgjengelige for kundetabellen.
 
-[![Tilgjengelige felt for kundetabellen](./media/related-entities.png)](./media/related-entities.png)
+[![Tilgjengelige felt for kundetabellen.](./media/related-entities.png)](./media/related-entities.png)
 
 Følgende felt bør ikke velges for opplæring:
 
@@ -74,8 +74,8 @@ Følgende felt bør ikke velges for opplæring:
 
 ## <a name="filters"></a>Filtre
 
-Filtrene støtter for øyeblikket ikke scenarioet med kundebetalingsforutsigelse. Velg derfor **Hopp over dette trinnet**, og fortsett til sammendragssiden.
+Du kan filtrere fakturaene som brukes til opplæring, ved å definere filterkriterier for felt på fakturaen eller i kundetabellene. Du kan for eksempel angi at en terskel bare skal inkludere fakturaer der summen er lik eller overskrider et bestemt beløp. Du kan også utelate fakturaer som er knyttet til kunder i en bestemt kundegruppe.
 
-[![Fokusmodell med filtre](./media/focus-model-with-filters.png)](./media/focus-model-with-filters.png)
+Hvis du vil ha mer informasjon om filtrering av dataene, kan du se [Opprette en forutsigelsesmodell](https://docs.microsoft.com/ai-builder/prediction-create-model#filter-your-data).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

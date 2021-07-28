@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: c7ff6d8ee7e526e45975cfa500b5e6d6079054dc
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f20b5c36b45fc0d242edb4e5305a4195d6dfbe94
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800693"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351231"
 ---
 # <a name="add-a-channel-to-an-organizational-hierarchy"></a>Legge til en kanal i et organisasjonshierarki
 
@@ -44,7 +44,7 @@ Følg denne fremgangsmåten for å velge et hierarki.
 
 Følgende bilde viser detaljer om organisasjonshierarki for det valgte hierarkiet.
 
-![Detaljer om organisasjonshierarki for det valgte hierarkiet](media/channel-add-to-org-hierarchy-1.png)
+![Detaljer om organisasjonshierarki for det valgte hierarkiet.](media/channel-add-to-org-hierarchy-1.png)
 
 ## <a name="add-a-channel-to-a-hierachy-node"></a>Legge til en kanal i en hierarkinode
 
@@ -58,17 +58,17 @@ Hvis du vil legge til en kanal i en hierarkinode, følger du disse trinnene.
 
 Bildet nedenfor viser hvordan du velger en kanal som skal legges til i en hierarkinode.
 
-![Velge en kanal som skal legges til i en hierarkinode](media/channel-add-to-org-hierarchy-2.png)
+![Velge en kanal som skal legges til i en hierarkinode.](media/channel-add-to-org-hierarchy-2.png)
 
 Det følgende bildet viser et hierarki der ulike kanaler er lagt til.
 
-![Et hierarki med ulike kanaler lagt til](media/channel-add-to-org-hierarchy-3.png)
+![Et hierarki med ulike kanaler lagt til.](media/channel-add-to-org-hierarchy-3.png)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Oversikt over kanaler](channels-overview.md)
 
-[Forutsetninger for kanaloppsett](channels-prerequisites.md)
+[Kanaloppsettsforutsetninger](channels-prerequisites.md)
 
 [Oversikt over organisasjoner og organisasjonshierarkier](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json)
 

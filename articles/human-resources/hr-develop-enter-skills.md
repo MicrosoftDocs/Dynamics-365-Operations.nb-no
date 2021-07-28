@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 5a65f1884ea87bbf2519cc94e4c52a40ac1a91bd
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 8a6b36314d9d98f971cd1619dd3604f20a3770b3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193983"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360526"
 ---
 # <a name="enter-skills"></a>Angi ferdigheter
 
@@ -45,17 +45,17 @@ Hvis du vil legge inn kompetanse uten å kreve godkjenning, må du opprette en a
 
 4. Velg **Arbeiderkompetanse** i ruten **Opprett arbeidsflyt**.
 
-   [![Velge arbeidsflyt for arbeiderkompetanse](media/hr-develop-skills-new-workflow.png)](media/hr-develop-skills-new-workflow.png)
+   [![Velge arbeidsflyt for arbeiderkompetanse.](media/hr-develop-skills-new-workflow.png)](media/hr-develop-skills-new-workflow.png)
 
 5. Velg **Åpne** i dialogboksen **Åpne denne filen?**. Angi påloggingsinformasjon når du blir spurt.
 
 6. Velg arbeidsflytelementet **Godkjenn ferdigheter** i redigeringsprogrammet, og dra det til lerretet.
 
-   [![Velge arbeidsflytelementet Godkjenn ferdigheter](media/hr-develop-skills-element.png)](media/hr-develop-skills-element.png)
+   [![Velge arbeidsflytelementet Godkjenn ferdigheter.](media/hr-develop-skills-element.png)](media/hr-develop-skills-element.png)
 
 7. Koble **Start**-elementet til elementet **Godkjenn ferdigheter 1**, og koble deretter elementet **Godkjenn ferdigheter 1** til **Slutt**-elementet. Det kan hende at du må rulle ned for å se **Slutt**-elementet. Du kan dra det nærmere de andre elementene.
 
-   [![Koble arbeidsflytelementer](media/hr-develop-skills-connect-elements.png)](media/hr-develop-skills-connect-elements.png)
+   [![Koble arbeidsflytelementer.](media/hr-develop-skills-connect-elements.png)](media/hr-develop-skills-connect-elements.png)
 
 8. Dobbeltklikk arbeidsflytelementet **Godkjenn ferdigheter 1**, og høyreklikk **Trinn 1**-elementet. Høyreklikk trinn **Trinn 1**-elementet, og velg deretter **Egenskaper**.
 
@@ -65,7 +65,7 @@ Hvis du vil legge inn kompetanse uten å kreve godkjenning, må du opprette en a
 
 11. Velg **Legg til betingelse**. Velg **Ansattselvbetjeningsferdigheter** etter **Hvor**, og velg deretter **Ansattselvbetjeningsferdigheter.Person**. Etter **er,** velg **felt**, og velg deretter **Bruker til person-forhold. Person**.
 
-    [![Angi betingelse](media/hr-develop-skills-condition.png)](media/hr-develop-skills-condition.png)
+    [![Angi betingelse.](media/hr-develop-skills-condition.png)](media/hr-develop-skills-condition.png)
 
 12. Velg **Tilordning** på venstre navigasjonslinje.
 
@@ -73,7 +73,7 @@ Hvis du vil legge inn kompetanse uten å kreve godkjenning, må du opprette en a
 
 14. Velg **Lederhierarki** i feltet **Hierarkitype:** i kategorien **Hierarkivalg**.
 
-    [![Angi lederhierarki](media/hr-develop-skills-hierarchy.png)](media/hr-develop-skills-hierarchy.png)
+    [![Angi lederhierarki.](media/hr-develop-skills-hierarchy.png)](media/hr-develop-skills-hierarchy.png)
 
 15. Velg **Lukk**, velg **Arbeidsflyt** i opprettelsesarbeidsflyten, og velg deretter **Lagre og lukk**.
 

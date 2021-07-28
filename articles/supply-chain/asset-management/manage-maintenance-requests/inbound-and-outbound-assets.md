@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 1a2bac914330058400a7e4d7d355bd4a00a4522f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 86d85d280b32834c36691535a019ef6d5141bf93
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816802"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356027"
 ---
 # <a name="inbound-and-outbound-assets"></a>Innkommende og utgående aktiva
 
@@ -42,7 +42,7 @@ Oppsettet av Aktivastyring bestemmer om du kan arbeide med inngående og utgåen
 3. Velg **Oppdater tilstand for vedlikeholdsforespørsel**.
 4. Velg **Inngående** (eller en annen livssyklustilstand som du har opprettet for innkommende aktiva), og velg deretter **OK**.
 
-![Registrer aktiva som inngående](media/07-manage-maintenance-requests.png)
+![Registrer aktiva som inngående.](media/07-manage-maintenance-requests.png)
 
 ## <a name="register-inbound-assets-as-received"></a>Registrer innkommende aktiva som mottatt
 
@@ -51,7 +51,7 @@ Oppsettet av Aktivastyring bestemmer om du kan arbeide med inngående og utgåen
 3. Velg **Motta aktiva**.
 4. Angi dato og klokkeslett i feltet **Mottatt**. Velg deretter **OK**. Posten fjernes fra listesiden **Innkommede aktiva**.
 
-![Registrer innkommende aktiva som mottatt](media/08-manage-maintenance-requests.png)
+![Registrer innkommende aktiva som mottatt.](media/08-manage-maintenance-requests.png)
 
 ## <a name="register-assets-as-outbound"></a>Registrer aktiva som utgående
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c1cceb15d64215cb8d5c996df792e863d466f87d
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 627883544f387e53920da268fa8d805c0074de47
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053569"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357367"
 ---
 # <a name="human-resources-app-in-teams"></a>Human Resources-app i Teams
 
@@ -28,11 +28,11 @@ ms.locfileid: "6053569"
 
 Med Microsoft Dynamics 365 Human Resources-appen i Microsoft Teams kan ansatte raskt be om fridager og vise saldoinformasjon for fridager i Microsoft Teams. Ansatte kan samhandle med en robot for å be om informasjon. Kateogrien **Fridager** gir mer detaljert informasjon. I tillegg kan de sende personinformasjon om kommende fritid i grupper og samtaler utenfor Human Resources-appen.
 
-![Robot for permisjonsapp i Human Resources Teams](./media/hr-teams-leave-app-bot.png)
+![Robot for permisjonsapp i Human Resources Teams.](./media/hr-teams-leave-app-bot.png)
 
-![Kategorien Fridager i permisjonsapp for Human Resources Teams](./media/hr-teams-leave-app-timeoff-tab.png)
+![Kategorien Fridager i permisjonsapp for Human Resources Teams.](./media/hr-teams-leave-app-timeoff-tab.png)
 
-![Human Resources-permisjonsforespørselskort](./media/hr-teams-leave-app-chat-card.png)
+![Human Resources-permisjonsforespørselskort.](./media/hr-teams-leave-app-chat-card.png)
 
 ## <a name="install-and-setup"></a>Installere og konfigurere
 
@@ -57,11 +57,11 @@ Hvis du vil at brukere skal motta permisjonsforespørselsvarsler i Teams-appen, 
 
 4. I kategorien **Generelt** setter du **Aktiver varslinger for Teams-app** til **Ja**.
 
-   ![Aktivere varslinger for Teams-appen i Systemparametere](./media/hr-admin-teams-leave-app-enable-notifications.png)
+   ![Aktivere varslinger for Teams-appen i Systemparametere.](./media/hr-admin-teams-leave-app-enable-notifications.png)
 
 5. Hvis du vil aktivere Teams-varslinger for alle brukere, velger du **Ja** i ledeteksten.
 
-   ![Aktivere Teams-varslinger for alle brukere](./media/hr-admin-teams-leave-app-notifications-all-users.png)
+   ![Aktivere Teams-varslinger for alle brukere.](./media/hr-admin-teams-leave-app-notifications-all-users.png)
 
 ### <a name="turn-teams-notifications-on-or-off-for-individual-users"></a>Aktivere eller deaktivere Teams-varslinger for individuelle brukere
 
@@ -77,7 +77,7 @@ Når du har aktivert varsler for Teams-appen i Dynamics 365 Human Resources, kan
 
 5. Sett **Aktiver varslinger for Teams-app** til **Ja** for å aktivere varslinger for brukeren, eller **Nei** for å deaktivere varslinger for brukeren.
 
-   ![Aktivere varslinger for Teams-appen i kategorien Arbeidsflyt i Brukeralternativer](./media/hr-admin-teams-leave-app-notifications.png)
+   ![Aktivere varslinger for Teams-appen i kategorien Arbeidsflyt i Brukeralternativer.](./media/hr-admin-teams-leave-app-notifications.png)
 
 6. Velg **Lagre**.
 

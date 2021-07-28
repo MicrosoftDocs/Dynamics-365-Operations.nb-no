@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: b112bb453e0840120c63038bf8d6897fbf5ff288
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 637d8d211f59711aafe9357dcd48d48f861f722d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798759"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353114"
 ---
 # <a name="navigation-menu-module"></a>Navigasjonsmenymodul
 
@@ -33,7 +33,7 @@ Hovedformålet med navigasjonsmenymoduler er å gjøre det mulig for områdebruk
 Navigasjonsmenymodulen kan legges til i topptekstmodulen på en side. I Fabrikam-temaet viser navigasjonsmenyen to nivåer som standard. I Starter-temaet viser navigasjonsmenyen tre nivåer som standard. Hvis du vil endre antall nivåer, kreves det en visningsutvidelse i temaet.
 
 Følgende illustrasjon viser et eksempel på en navigasjonsmeny for området Fabrikam med to nivåer med kategorihierarki og enkelte statiske menyelementer.
-![Eksempel på en navigasjonsmenymodul](./media/ecommerce-header.png)
+![Eksempel på en navigasjonsmenymodul.](./media/ecommerce-header.png)
 
 ## <a name="navigation-menu-module-properties"></a>Egenskaper for navigasjonsmenymodul
 
@@ -50,7 +50,7 @@ Følgende illustrasjon viser et eksempel på en navigasjonsmeny for området Fab
 | Rotmeny | streng | Denne egenskapen kan brukes til å definere tekst for en egendefinert rot hvis egenskapen **Vis rotmeny** er satt til **sann**. |
 
 Følgende illustrasjon viser et eksempel på et kategoribilde som vises på navigasjonsmenyen for Fabrikam-området.
-![Eksempel på en navigasjonsmenymodul med kategoribilder](./media/ecommerce-categoryimages.PNG)
+![Eksempel på en navigasjonsmenymodul med kategoribilder.](./media/ecommerce-categoryimages.PNG)
 
 ## <a name="add-a-navigation-menu-module-to-a-header-module"></a>Legge til en navigasjonsmenymodul i en topptekstmodul
 

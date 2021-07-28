@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0788091755fb784621e972a0573f7004952e8e11
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 4622b2a26ac6193b1408c029389e4d9f55162418
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792105"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355811"
 ---
 # <a name="ratings-and-reviews-overview"></a>Oversikt over vurderinger og anmeldelser
 
@@ -39,7 +39,7 @@ Funksjonaliteten for vurderinger og omtaler i Dynamics 365 Commerce er en omnika
 
 Illustrasjonen nedenfor viser hvordan løsningen for vurderinger og omtaler fungerer i Dynamics 365 Commerce.
 
-![Vurderinger og omtaler i Dynamics 365 for Commerce](media/Dynamics-365-Commerce-Ratings-and-Reviews-Overview.jpg)
+![Vurderinger og omtaler i Dynamics 365 for Commerce.](media/Dynamics-365-Commerce-Ratings-and-Reviews-Overview.jpg)
 
 Løsningen for vurderinger og omtaler i Dynamics 365 Commerce bruker Azure Cognitive Services til å tilby automatisk endring av upassende ord på 40 språk. Fordi menneskelig godkjenning ikke er nødvendig, reduseres endringskostnadene. Systemet tilbyr også sensurverktøy som kan brukes til å svare på kundeproblemer, tilbakemeldinger og forespørsler om fjerning, og til å behandle dataforespørsler fra brukere.
 

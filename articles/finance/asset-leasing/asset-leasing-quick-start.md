@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: AssetLeaseLeasingWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 4464
+ms.custom:
+- "4464"
+- intro-internal
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-09-24
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 8141badab2561707e2055d7084323ed4310d2421
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 0f0d39e5a3a1a70f57d305da67e160b0b20cedf4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5892439"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360742"
 ---
 # <a name="asset-leasing-get-started"></a>Komme i gang med leasing av aktiva
 
@@ -35,7 +37,7 @@ Hvis du vil ha mer informasjon om regnskapsstandarder, se standard dokumentasjon
 ## <a name="asset-leasing-elements"></a>Elementer i leasing av aktiva
 Diagrammet nedenfor viser hovedelementene i forretningsprosessen for leasingavtaler.
 
-[![Elementer i leasing av aktiva](./media/overview-01.png)](./media/overview-01.png)
+[![Elementer i leasing av aktiva.](./media/overview-01.png)](./media/overview-01.png)
 
 Leasing av aktiva inneholder følgende hovedkomponenter:
 
@@ -54,7 +56,7 @@ Leie av anleggsmidler tilordner leieinformasjon, betalingsplaner, start- og slut
 
 Diagrammet nedenfor viser leietablået, leieavtalen, beregnet betalingsplan, klassifiseringstestene for leieavtaler og leietablåer, og de tilsvarende regnskapstransaksjonene.
 
-[![Leie, leietablå og betalingsplan](./media/overview-02.png)](./media/overview-02.png)
+[![Leie, leietablå og betalingsplan.](./media/overview-02.png)](./media/overview-02.png)
 
 - **Leietablå** – Leieavtaler omfatter all informasjon om leiekontrakt, for eksempel leievilkår, virkelig verdi og leiebetalinger. Det inneholder også regnskapsstandarden du følger, leietype og terskler som vurderes i klassifiseringstester for leie. Leietablået inneholder også leietransaksjonene som er postert til økonomimodulen. 
   
@@ -117,7 +119,7 @@ Den første perioden starter med perioden null, hvis annuitetstypen er annuitets
 
 Klassifiseringstestene omfatter overføring av eierskap, kjøpsalternativ, leieperiode, netto nåverdi og unikt anleggsmiddel. Diagrammet nedenfor illustrerer klassifiseringtesten for leien.
 
-[![Klassifiseringstest for leie](./media/overview-03.png)](./media/overview-03.png)
+[![Klassifiseringstest for leie.](./media/overview-03.png)](./media/overview-03.png)
 
 Hver leietype håndterer regnskap forskjellig for ulike leietransaksjoner. Transaksjonene omfatter innledende gjenkjenning, renteutgift, forfallsbetaling for leie og leieavskrivning, og de er basert på regnskapsstandardene du følger (IFRS 16 eller ASC 842). Finanskontoer defineres under leieposteringsprofilen for hver transaksjonstype og regnskapsrammeverk.
 
@@ -232,7 +234,7 @@ Fullfør fremgangsmåten nedenfor for å opprette en ny leieavtale.
 
    Siden **Betalingsplan** viser en liste over fremtidige betalingsplaner for en leie-ID. Velg **Bekreft plan** for å postere transaksjonene for **opprinnelige gjenkjenning**. 
 
-[![Funksjon for opprinnelig gjenkjenning](./media/overview-13.png)](./media/overview-13.png)
+[![Funksjon for opprinnelig gjenkjenning.](./media/overview-13.png)](./media/overview-13.png)
 
 8. Velg **Opprinnelig gjenkjenning** for å opprette en opprinnelig føringsjournal. 
 
@@ -246,7 +248,7 @@ Fullfør fremgangsmåten nedenfor for å opprette en ny leieavtale.
 
    Siden **Tidsplan for avskrivning av anleggsmidler** viser avskrivningstransaksjonene for den valgte leie-ID-en. 
 
-   [![Transaksjonsside for bruksrettseiendel](./media/overview-20.png)](./media/overview-20.png)
+   [![Transaksjonsside for bruksrettseiendel.](./media/overview-20.png)](./media/overview-20.png)
 
    Siden **Transaksjoner for bruksrettseiendel** viser opprinnelig gjenkjenning, akkumulert avskrivning og anleggsmiddelsaldo. 
 

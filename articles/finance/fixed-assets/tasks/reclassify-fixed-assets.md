@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fbfb754459fad1f3b1509f4f9c65c20e0385b013
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: bf7e689d5b02178758a8f850b3cd735f70898dbc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944720"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356733"
 ---
 # <a name="reclassify-fixed-assets"></a>Klassifiser anleggsmidler på nytt
 
@@ -45,7 +45,7 @@ Når et anleggsmiddel er omklassifisert:
 
 Diagrammet og fremgangsmåten nedenfor gir et eksempel på omklassifiseringsprosessen. 
 
-[![Diagram som viser omklassifiseringsprosessen](../media/reclassification-process-01.png)](../media/reclassification-process-01.png)
+[![Diagram som viser omklassifiseringsprosessen.](../media/reclassification-process-01.png)](../media/reclassification-process-01.png)
 
 Følg disse trinnene for å omklassifisere et anleggsmiddel:
 

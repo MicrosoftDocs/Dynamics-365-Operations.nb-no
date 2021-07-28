@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b901622bbfc8d6b3066879f6456a4ab618ca4076
-ms.sourcegitcommit: 53b797ff1b524f581046b48cdde42f50b37495bc
+ms.openlocfilehash: d6854c11822e07ff06426b7a35eac86cdc0e9b06
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6117239"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356908"
 ---
 # <a name="apply-display-settings-for-product-dimensions"></a>Bruke visningsinnstillinger for produktdimensjoner
 
@@ -33,7 +33,7 @@ Dynamics 365 Commerce støtter størrelse, stil og fargedimensjoner for å skill
 
 I Commerce-områdebyggeren defineres dimensjonsinnstillinger på **Områdeinnstillinger \> Utvidelser \> Dimensjonsinnstillinger**. Illustrasjonen nedenfor viser et eksempel på dimensjonsinnstillinger i områdekonfigurator.
 
-![Eksempel på områdeinnstillinger i Commerce-områdebyggeren](./dev-itpro/media/swatch_site_settings.PNG)
+![Eksempel på områdeinnstillinger i Commerce-områdebyggeren.](./dev-itpro/media/swatch_site_settings.PNG)
 
 To dimensjonsinnstillinger er tilgjengelige:
 
@@ -41,13 +41,13 @@ To dimensjonsinnstillinger er tilgjengelige:
 
     Illustrasjonen nedenfor viser et eksempel der en PDP på en e-handelsside inneholder farge- og størrelsesprøver. I dette eksemplet konfigureres en heksakode for fargedimensjonen. Derfor vises prøver som farger. Men verken en heksakode eller en bilde-URL er konfigurert for størrelsesdimensjonen. Derfor vises tekst.
 
-    ![Eksempel på fargedimensjonen som vises som prøver på en produktdetaljside for e-handel](./dev-itpro/media/swatch_pdp.png)
+    ![Eksempel på fargedimensjonen som vises som prøver på en produktdetaljside for e-handel.](./dev-itpro/media/swatch_pdp.png)
 
 - **Dimensjoner som skal vises i produktkortet** – Angi hvilke dimensjoner som skal vises på produktkort som vises i lister og på listesider. Før en dimensjon kan vises på et produktkort, må denne innstillingen være aktivert for denne dimensjonen. Innstillingen **Dimensjoner som skal vises som bilde** bør også være aktivert. Virkemåten for valg av prøve på produktkort er optimert for fargedimensjonen. For andre dimensjoner kan det være nødvendig å angi et visningstillegg for å tilpasse virkemåten for valg av prøve.
 
     Illustrasjonen nedenfor viser et eksempel der en listeside på et e-handelområde inneholder produktkort som inneholder fargeprøver.
 
-    ![Eksempel på fargedimensjonen som vises som prøver på en listeside for e-handel](./dev-itpro/media/swatch_searchresults.PNG)
+    ![Eksempel på fargedimensjonen som vises som prøver på en listeside for e-handel.](./dev-itpro/media/swatch_searchresults.PNG)
 
 Hvis du vil ha mer informasjon om hvordan du konfigurerer produktdimensjoner slik at de vises som prøver på områdesider, kan du se [Konfigurere produktdimensjonsverdier som skal vises som prøver](./dev-itpro/dimensions-swatch.md).
 

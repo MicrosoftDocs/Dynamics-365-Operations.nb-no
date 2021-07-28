@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-08-19
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 75913edcbac0151d5d27d866ff5430b194c62738
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 447d319f5a96851f7eb3104b3330026d269e7dd1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815266"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358815"
 ---
 # <a name="sales-tax-specification-by-ledger-transaction-report"></a>Rapport for mva-spesifikasjon etter finanstransaksjon
 [!include [banner](../includes/banner.md)]
@@ -54,7 +54,7 @@ Når du genererer rapporten, er følgende felt tilgjengelige. Du kan bruke disse
 
 Hvis du vil vise bare ikke-avgiftskontoer i rapporten, definerer du en filter betingelse, for eksempel en stjerne (\*), som vist i illustrasjonen nedenfor.
 
-![Rapport som viser ikke-avgiftskontoer](media/taxspecperledgertrans.png)
+![Rapport som viser ikke-avgiftskontoer.](media/taxspecperledgertrans.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

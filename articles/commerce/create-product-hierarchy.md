@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 8aef33a501f43105730eaa21a9159eb1398a1b36
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: fe1f194868ad04d8b64218186b2eb90cb34988c2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799571"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352380"
 ---
 # <a name="create-a-new-product-hierarchy"></a>Opprette et nytt produkthierarki
 
@@ -64,7 +64,7 @@ Hvis du vil legge til hierarkinoder, følger du disse trinnene.
 
 Bildet nedenfor viser opprettelsen av en ny produkthierarkinode.
 
-![Opprette et produkthierarki](media/create-product-hierarchy.png)
+![Opprett produkthierarki.](media/create-product-hierarchy.png)
 
 ## <a name="other-settings"></a>Andre innstillinger
 

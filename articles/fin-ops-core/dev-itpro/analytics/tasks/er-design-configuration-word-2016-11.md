@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 413be634e80b87781444e1c1445c78691f4b4b0b
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: d152449b55ab111cf5bac363b38d32c3658a56e3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944298"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359417"
 ---
 # <a name="reuse-er-configurations-with-excel-templates-to-generate-reports-in-word-format"></a>Bruke ER-konfigurasjoner på nytt med Excel-maler for å generere rapporter i Word-format
 
@@ -54,14 +54,14 @@ Disse fremgangsmåtene er for en funksjon som ble lagt til i Dynamics 365 for Op
 5. Velg **Utforming**.
 6. Merk at tittelen på rotformatelementet på **Formatutforming**-siden angir at en Excel-mal for øyeblikket er i bruk.
 
-![Velge den eksisterende konfigurasjonen](../media/er-design-configuration-word-2016-11-image01.gif)
+![Velge den eksisterende konfigurasjonen.](../media/er-design-configuration-word-2016-11-image01.gif)
 
 ## <a name="review-the-downloaded-word-template"></a>Se gjennom den nedlastede Word-malen
 
 1. Åpne malfilen **SampleVendPaymDocReport.docx** du lastet ned tidligere, i skrivebordsversjonen av Word.
 2. Kontroller at malen bare inneholder oppsettet for dokumentet du vil generere som ER-utdata.
 
-![Oppsettet i Word-malen i skrivebordsprogrammet](../media/er-design-configuration-word-2016-11-image02.png)
+![Oppsettet i Word-malen i skrivebordsprogrammet.](../media/er-design-configuration-word-2016-11-image02.png)
 
 ## <a name="replace-the-excel-template-with-the-word-template-and-add-a-custom-xml-part"></a>Erstatte Excel-malen med Word-malen og legge til en egendefinert XML-del
 
@@ -84,7 +84,7 @@ For øyeblikket brukes Excel-dokumentet som en mal til å generere utdataene i O
 
 9. Merk at tittelen på rotformatelementet angir at en Word-mal for øyeblikket er i bruk.
 
-    ![Erstatte Excel-malen med Word-malen og legge til en egendefinert XML-del](../media/er-design-configuration-word-2016-11-image03.gif)
+    ![Erstatte Excel-malen med Word-malen og legge til en egendefinert XML-del.](../media/er-design-configuration-word-2016-11-image03.gif)
 
 10. Velg **Vedlegg** i fanen **Format**.
 
@@ -110,7 +110,7 @@ Hvis du har erfaring med utforming av Word-dokumenter som skjemaer som inneholde
 1. Åpne malfilen **SampleVendPaymDocReportBounded.docx** i skrivebordsversjonen av Word.
 2. Kontroller at malen inneholder oppsettet for dokumentet du vil generere som ER-utdata. Innholdskontrollene som brukes som plassholdere for data som ER skal registrere i denne malen ved kjøretid, er basert på tilordningene som er konfigurert mellom elementer i den egendefinerte XML-delen **Rapport** og innholdskontrollene i Word-dokumentet.
 
-![Forhåndsvisning av Word-mal i skrivebordsprogrammet](../media/er-design-configuration-word-2016-11-image04.png)
+![Forhåndsvisning av Word-mal i skrivebordsprogrammet.](../media/er-design-configuration-word-2016-11-image04.png)
 
 ## <a name="upload-the-word-template-where-the-custom-xml-part-is-mapped-to-content-controls"></a>Laste opp Word-malen der den egendefinerte XML-delen er tilordnet til innholdskontroller
 
@@ -144,7 +144,7 @@ For å kunne kjøre utkastversjonen av det redigerbare formatet må du gjøre de
 3. På **Leverandørbetalinger**-siden merker du alle radene i rutenettet.
 4. Velg **Betalingsstatus** \> **Ingen**.
 
-    ![Betalinger for behandling på Leverandørbetalinger-siden](../media/er-design-configuration-word-2016-11-image05.png)
+    ![Betalinger for behandling på Leverandørbetalinger-siden.](../media/er-design-configuration-word-2016-11-image05.png)
 
 5. Velg **Generer betalinger** i handlingsruten.
 6. Følg denne fremgangsmåten i dialogboksen som vises:
@@ -156,7 +156,7 @@ For å kunne kjøre utkastversjonen av det redigerbare formatet må du gjøre de
 7. I dialogboksen **Parametere for elektronisk rapport** velger du **OK**.
 8. De genererte utdataene vises i Word-format og inneholder detaljene for de behandlede betalingene. Analyser de genererte utdataene.
 
-    ![Genererte utdata i Word-format](../media/er-design-configuration-word-2016-11-image06.png)
+    ![Genererte utdata i Word-format.](../media/er-design-configuration-word-2016-11-image06.png)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

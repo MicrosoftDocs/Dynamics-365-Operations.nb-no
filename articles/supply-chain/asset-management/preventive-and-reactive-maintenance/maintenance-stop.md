@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b2162621968c5b1c3957ea1a1639e71439000918
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e9d024a5096b499b986ec2d5c38c0d6a2b7794d3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837831"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356494"
 ---
 # <a name="maintenance-downtime-activities"></a>Vedlikeholdsnedetid
 
@@ -40,7 +40,7 @@ Når det er valgt aktiva i en registrering av vedlikeholdsnedetid, inkluderes al
 
 Klikk på **Aktivastyring** > **Felles** > **Aktiviteter for vedlikeholdsnedetid** > **Alle aktiviteter for vedlikeholdsnedetid** for å åpne en liste over alle aktivitetene for vedlikeholdsnedetid og se informasjon om aktivitetene. Klikk på en kobling i kolonnen **Aktiviteter for vedlikeholdsnedetid** for å åpne detaljvisningen. Illustrasjonen nedenfor viser et eksempel på listen **Aktiviteter for vedlikeholdsnedetid**.
 
-![Figur 1](media/19-preventive-maintenance.png)
+![Figur 1.](media/19-preventive-maintenance.png)
 
 
 ## <a name="create-a-maintenance-downtime-activity"></a>Opprette en aktivitet for vedlikeholdsnedetid
@@ -61,7 +61,7 @@ Klikk på **Aktivastyring** > **Felles** > **Aktiviteter for vedlikeholdsnedetid
 
 Illustrasjonen nedenfor viser et eksempel på detaljvisningen **Aktiviteter for vedlikeholdsnedetid**.
 
-![Figur 2](media/20-preventive-maintenance.png)
+![Figur 2.](media/20-preventive-maintenance.png)
 
 >[!NOTE]
 >Vedlikeholdsjobbene for arbeidsordrer og vedlikeholdsplanlinjene som er relatert til de valgte aktivaene, oppdateres automatisk hvis nye arbeidsordrer eller vedlikeholdsplanlinjer opprettes etter at du har opprettet aktiviteten for vedlikeholdsnedetid. Hvis du for eksempel planlegger vedlikeholdsplaner eller vedlikeholdsrunder for de tilknyttede aktivaene to dager etter at aktiviteten for vedlikeholdsnedetid ble opprettet, legges nye vedlikeholdsplanlinjer automatisk til i vedlikeholdsnedetidsaktiviteten.
@@ -72,7 +72,7 @@ Illustrasjonen nedenfor viser et eksempel på detaljvisningen **Aktiviteter for 
 
 10. Klikk på **OK** for å starte beregningen. Totalt antall timer vises i oversikten **Kapasitetsbelastning**. I fanen **Kapasitetsbelastning** > **Grupper etter...**-handlingsrutegruppene klikker du på de relevante knappene for å få en mer detaljert oversikt over fordelingen av prognosetimer. Illustrasjonen nedenfor viser resultatet av en **Kapasitetsbelastning**-beregning.
 
-![Figur 3](media/21-preventive-maintenance.png)
+![Figur 3.](media/21-preventive-maintenance.png)
 
 11. Når du har fått en oversikt over kapasitetsbelastningen, hvis du vil foreta justeringer på vedlikeholdsjobber for arbeidsordrer eller vedlikeholdsplanlinjer, går du tilbake til detaljvisningen **Aktiviteter for vedlikeholdsnedetid** og velger linjene du vil justere i hurtigfanene **Resulterende vedlikeholdsjobber for arbeidsordrer** og **Vedlikeholdsplanlinjer**.
 
@@ -89,7 +89,7 @@ Illustrasjonen nedenfor viser et eksempel på detaljvisningen **Aktiviteter for 
 
 16. Klikk på **OK** for å starte beregningen. Totalt antall vareprognoser vises i oversikten **Vareprognose**. I fanen **Vareprognose** > **Grupper etter...**-handlingsrutegruppene klikker du på de relevante knappene for å få en mer detaljert oversikt over fordelingen av prognosevarer. Illustrasjonen nedenfor viser resultatet av en **Vareprognose**-beregning.
 
-![Figur 4](media/22-preventive-maintenance.png)
+![Figur 4.](media/22-preventive-maintenance.png)
 
 - Du kan kopiere aktiva fra én aktivitet for vedlikeholdsnedetid til en annen. I **Alle aktiviteter for vedlikeholdsnedetid** velger du **Kopier aktiviteter for vedlikeholdsnedetid**-knappen, gjør valgene i feltene **Fra aktiviteter for vedlikeholdsnedetid** og **Til aktiviteter for vedlikeholdsnedetid**, og klikker på **OK**.
 - I **Alle aktiviteter for vedlikeholdsnedetid** klikker du på knappen **Vedlikeholdsplanlinjer** eller **Aktive arbeidsordrer** for å åpne de tilknyttede listene og vise linjene som er knyttet til den valgte aktiviteten for vedlikeholdsnedetid.

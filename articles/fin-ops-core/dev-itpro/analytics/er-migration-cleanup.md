@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 97dbb625fc312548fb266b2ef6643a2b8e2b0f81
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 8b6e81e47cd781bbe856676b1cecb50b8ee1adfc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750892"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351055"
 ---
 # <a name="er-migration-cleanup"></a>Opprydding av ER-overføring 
 
@@ -30,11 +30,11 @@ Når du administrerer dine Finance-forekomster, kan det hende du vil overføre g
 
 Hvis du prøver å kjøre et ER-format som bruker en mal til å generere forretningsdokumenter, oppstår det et unntak, og du blir varslet om den manglende malen. Du blir også veiledet til å bruke alternativet for opprydding av ER-overføring til å slette og deretter importere ER-formatkonfigurasjonen som inneholder malen.
 
-[![Kjøre et ER-format](./media/er-migration-cleanup-run.png)](./media/er-migration-cleanup-run.png)
+[![Kjøre et ER-format.](./media/er-migration-cleanup-run.png)](./media/er-migration-cleanup-run.png)
 
 Du får en lignende feil hvis du går til **Konfigurasjoner**-siden (**Organisasjonsstyring** \> **Elektronisk rapportering** \> **Konfigurasjoner**) og i konfigurasjonstreet prøver å slette en ER-formatkonfigurasjon som bruker en mal.
 
-[![Slette et ER-format](./media/er-migration-cleanup-delete.png)](./media/er-migration-cleanup-delete.png)
+[![Slette et ER-format.](./media/er-migration-cleanup-delete.png)](./media/er-migration-cleanup-delete.png)
 
 Fullfør følgende fremgangsmåte for å løse problemer med ER-maler du ikke har tilgang til.
 
@@ -50,7 +50,7 @@ Fullfør følgende fremgangsmåte for å løse problemer med ER-maler du ikke ha
 >
 > Hvis du bruker alternativet for **Overføringsopprydding** for å slette en ER-formatkonfigurasjon når den refererte malen er tilgjengelig i Blob Storage, sletter du bare relaterte konfigurasjonsartefakter i programdatabasen. Den fysiske filen for malen i Blob-lageret blir værende. Filoverskriving i Blob Storage er ikke lenger tillatt. Hvis du vil ha mer informasjon, kan du se [KB4557217](https://fix.lcs.dynamics.com/Issue/Details?kb=4557217). I tillegg vil du ikke lenger kunne importere konfigurasjonene som er slettet, på nytt ved hjelp av overføringsopprydding i dette miljøet. Hvis du vil løse dette problemet, må du finne den tilsvarende filen i Blob Storage og slette den manuelt.
 
-[![Importere et ER-format](./media/er-migration-cleanup-import.png)](./media/er-migration-cleanup-import.png)
+[![Importere et ER-format.](./media/er-migration-cleanup-import.png)](./media/er-migration-cleanup-import.png)
 
 Det kan oppstå et lignende problem hvis du overfører programforekomsten til en annen plassering som er brukt som et overføringsmål mer enn én gang, og der BLOB Storage allerede inneholder ER-malfiler.
 

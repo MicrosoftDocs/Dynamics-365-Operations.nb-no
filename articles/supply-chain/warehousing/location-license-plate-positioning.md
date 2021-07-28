@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: e5fd7a9a9703f9ab6802def0aac096e29aa04f1a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1235f8fa64fbc87a4c22f4dcf0e9ddd4b4565b76
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5831392"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359769"
 ---
 # <a name="location-license-plate-positioning"></a>Nummerskiltposisjonering for lokasjon
 
@@ -88,7 +88,7 @@ Funksjonen må aktiveres i lokasjonsprofilen for hver lokasjon den skal brukes p
 1. Mens **Nummerskilt** fremdeles er valgt, velger du **Legg til tabellsammenkobling**.
 1. I listen over tabeller som vises i **Relasjon**-kolonnen, velger du **Nummerskiltplassering på lokasjon (nummerskilt)**. Velg deretter **Velg** for å legge til **Nummerskiltplassering på lokasjon** i **Lagerdimensjoner**-tabellsammekoblingen.
 
-    ![Tabellsammenkoblinger](media/LpTableJoin.png "Tabellsammenkoblinger")
+    ![Tabellsammenkoblinger.](media/LpTableJoin.png "Tabellsammenkoblinger")
 
 1. Velg **OK** for å bekrefte de oppdaterte, sammenkoblede tabellene og lukke redigeringsprogrammet for spørring.
 1. I hurtigfanen **Lokasjonsdirektivhandlinger** velger du **Rediger spørring** på nytt for å åpne dialogboksen for redigeringsprogram for spørring igjen.
@@ -100,7 +100,7 @@ Funksjonen må aktiveres i lokasjonsprofilen for hver lokasjon den skal brukes p
     - **Felt:** *LP-plassering*
     - **Kriterier:** *1*
 
-    ![Nytt område](media/LpPositionCriteria.png "Nytt område")
+    ![Nytt område.](media/LpPositionCriteria.png "Nytt område")
 
 1. Velg **OK** for å bekrefte endringene og lukke redigeringsprogrammet for spørring.
 
@@ -275,7 +275,7 @@ Nå når funksjonen *Nummerskiltplassering på lokasjon* er konfigurert, og beho
 1. På **Skann en arbeids-ID/nummerskilt-ID**-siden velger du **ID**-feltet og angir deretter arbeids-ID-en fra salgslinjen.
 1. Legg merke til at plukkarbeidet leder deg til å plukke vare *A0002* fra lokasjon *01A01R1S2B*. Du får denne instruksjonen fordi vare *A0002* er på et nummerskilt som er på plassering *1* på den lokasjonen.
 
-    ![Plassering 1-lokasjon](media/LocationLicensePlatePositioning.png "Plassering 1-lokasjon")
+    ![Plassering 1-lokasjon.](media/LocationLicensePlatePositioning.png "Plassering 1-lokasjon")
 
 1. Angi nummerskilt-ID-en du opprettet for lokasjonen, og følg deretter instruksjonene for å velge salgsordren.
 

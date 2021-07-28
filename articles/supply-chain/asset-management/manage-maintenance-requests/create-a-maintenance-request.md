@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 147388d5052bd14851bbddfbb7fe25297a43f104
-ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
+ms.openlocfilehash: 861899e4cd7565309ba513408346912642b7fa9a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "6102980"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354911"
 ---
 # <a name="create-maintenance-requests"></a>Opprette vedlikeholdsforespørsler
 
@@ -52,7 +52,7 @@ Delen **Aktive vedlikeholdsforespørsler** i ruten **Relatert informasjon** til 
 11. Angi eventuelle tilleggsmerknader i feltet **Notater**.
 12. Velg **OK**.
 
-![Opprett forespørsel om vedlikehold](media/03-manage-maintenance-requests.png)
+![Opprett melding.](media/03-manage-maintenance-requests.png)
 
 ## <a name="subsequent-processing-of-maintenance-requests"></a>Påfølgende behandling av vedlikeholdsforespørsler
 
@@ -67,7 +67,7 @@ I detaljvisningen kan du oppdatere forskjellig informasjon. Her er noen eksemple
 - Velg en vedlikeholdsjobbtype og, hvis denne informasjonen er relevant, en relatert vedlikeholdsjobbvariant og et jobbfag.
 - Angi geografiske koordinater i feltene **Breddegrad** og **Lengdegrad**. Alle koordinater som legges til i en vedlikeholdsforespørsel, overføres automatisk til en relatert arbeidsordre. 
 
-![Oppdatere vedlikeholdsforespørsel](media/04-manage-maintenance-requests.png)
+![Oppdatere vedlikeholdsforespørsel.](media/04-manage-maintenance-requests.png)
 
 > [!NOTE]
 > Hvis du velger et aktivum når du oppretter en vedlikeholdsforespørsel, kan du legge til én feil i aktivumet. Etter at vedlikeholdsforespørselen er opprettet, kan du legge til flere feil, etter behov. Hvis du vil legge til feil, velger du **Aktivafeil** på siden **Alle vedlikeholdsforespørsler**.

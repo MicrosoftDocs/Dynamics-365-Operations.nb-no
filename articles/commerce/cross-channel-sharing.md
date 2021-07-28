@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: de317c2fae4607f5b8b887dd5e866d812043dcd3
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a5f35dc48dbdf89e963108e9e8ef6faec326f970
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799523"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349728"
 ---
 # <a name="enable-and-use-cross-channel-sharing"></a>Aktivere og bruke krysskanaldeling
 
@@ -48,15 +48,15 @@ Følg denne fremgangsmåten for å aktivere deling på tvers av kanaler i Commer
 1. Gå til **Områdeinnstillinger \> Funksjoner**.
 1. Sett alternativet for funksjonen **På tvers av kanal** til **På**.
 
-    ![Alternativ for på tvers av kanal satt til På i Commerce-områdebygger](./media/enabling-cross-channel-sharing.png)
+    ![Alternativ for på tvers av kanal satt til På i Commerce-områdebygger.](./media/enabling-cross-channel-sharing.png)
 
 Når du har aktivert deling på tvers av kanaler, vil informasjon om på tvers av kanal vises i **Kanaler**-delen under **Områdeinnstillinger \> Funksjoner**, som vist i eksemplet nedenfor.
 
-![Kanalinformasjon som er synlig etter at deling på tvers av kanal er aktivert](./media/channels-cross-channel.png)
+![Kanalinformasjon som er synlig etter at deling på tvers av kanal er aktivert.](./media/channels-cross-channel.png)
 
 Etter at du har aktivert deling på tvers av kanaler, vil **Kanal**-feltet øverst til høyre i Commerce-områdebygger inneholde et alternativ for **nettbutikk på tvers av kanal** som du kan bruke til å administrere innhold på tvers av kanaler, som vist i illustrasjonen nedenfor.
 
-![Alternativet for nettbutikk på tvers av kanaler i Kanaler-feltet etter at deling på tvers av kanal er aktivert](./media/cross-channel-dropdown.png)
+![Alternativet for nettbutikk på tvers av kanaler i Kanaler-feltet etter at deling på tvers av kanal er aktivert.](./media/cross-channel-dropdown.png)
 
 ## <a name="create-and-use-cross-channel-content"></a>Opprette og bruke innhold på tvers av kanal
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 661bb8369fe4dbe6cdf6ee0fb05d16f4350ecf5a
-ms.sourcegitcommit: c5c8f19a696ad4a3d68dffd63bfe7b484b999d2b
+ms.openlocfilehash: aec6d784fd6bd54297ac4204c834c7f77ed75362
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "6097265"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356518"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Behandle permisjonsforespørsler i Teams
 
@@ -61,7 +61,7 @@ Du kan be roboten om å:
 
 - Starte en permisjonsforespørsel for deg. Send for eksempel en melding som sier: "Ta fri" eller "Jeg vil ta fri neste torsdag og fredag" for å være mer spesifikk for å be om permisjon for feriepermisjonstypen. 
 
-  ![Starte en permisjonsforespørsel i Teams-samtaler](./media/hr-teams-leave-app-initiate.png)
+  ![Starte en permisjonsforespørsel i Teams-samtaler.](./media/hr-teams-leave-app-initiate.png)
 
 - Samtalen fylles ut en permisjonsforespørsel for deg. Velg **Be om fravær** og rediger detaljene for forespørselen.
 
@@ -69,11 +69,11 @@ Du kan be roboten om å:
 
    Hvis du velger en halvdagspermisjon når permisjonsenheten er i dager, kan du angi om du vil be om fri første halve dag eller den andre halve dagen ved å velge alternativet **Halvdagsdefinisjon** på **Flere alternativer**-menyen.
    
-   ![Halvdagsdefinisjoner](./media/HalfDayDefinitions.png)
+   ![Halvdagsdefinisjoner.](./media/HalfDayDefinitions.png)
 
 - Når du er ferdig med å redigere detaljene for permisjonsforespørselen, velger du **Send** for å sende den til godkjenning.
 
-  ![Sende permisjonsforespørsel](./media/hr-teams-leave-app-submit.png)
+  ![Sende permisjonsforespørsel.](./media/hr-teams-leave-app-submit.png)
 
 ## <a name="manage-your-leave-in-teams"></a>Behandle permisjonen i Teams
 
@@ -93,7 +93,7 @@ I kategorien **Fridager** kan du vise:
 
 2. Angi dagen eller dagene du vil ha fri, og velg deretter **Legg til**.
 
-   ![Tillegg av fridager i permisjonsapp for Human Resources Teams](./media/TimeOffHours.png)
+   ![Tillegg av fridager i permisjonsapp for Human Resources Teams.](./media/TimeOffHours.png)
 
 3. Angi en årsakskode hvis det er aktuelt. Skriv også inn kommentarer og legg til eventuelle vedlegg.
 
@@ -123,7 +123,7 @@ Når du har installert Human Resources-appen for Teams, kan du enkelt sende info
 
 1. Velg Human Resources-knappen under chattevinduet i et team eller en chat i Teams.
 
-   ![Human Resources-knapp under chattevinduet](./media/hr-teams-leave-app-chat-button.png)
+   ![Human Resources-knapp under chattevinduet.](./media/hr-teams-leave-app-chat-button.png)
 
 2. Velg permisjonsforespørselen du vil dele. Hvis du vil dele et utkast av en permisjonsforespørsel, velger du **Utkast** først.
 
@@ -173,11 +173,11 @@ Hvis oversettelsene ikke vises som forventet, må du kontrollere at språket du 
 
 I Teams kan du se på **Appspråk** i **Innstillinger**.
 
-![Teams-innstillinger](./media/hr-teams-leave-app-settings.png)
+![Teams-innstillinger.](./media/hr-teams-leave-app-settings.png)
 
 Velg **Innstillinger** og deretter **Brukeralternativer** i Human Resources. Kontroller at feltet **Språk** samsvarer med feltet **Appspråk** i Teams.
 
-![Brukeralternativer for Human Resources](./media/hr-teams-leave-app-user-options.png)
+![Brukeralternativer for Human Resources.](./media/hr-teams-leave-app-user-options.png)
 
 Gi oss beskjed hvis du fremdeles opplever oversettelsesproblemer. Hvis du vil ha informasjon, kan du se [Få støtte for Finance and Operations-apper eller Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
 

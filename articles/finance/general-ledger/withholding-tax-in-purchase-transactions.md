@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2020-01-12
 ms.dyn365.ops.version: AX 10.0.16
-ms.openlocfilehash: faeaf0746532875d3517a208c9c338c112bf2c77
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d605ac0b6e4190f0c0f576d402c9b101d754b347
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816889"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356682"
 ---
 # <a name="withholding-tax-in-purchase-transactions"></a>Kildeskatt i kjøpstransaksjoner
 
@@ -64,15 +64,15 @@ Standard kildeskattgruppe og kildeskattgrupper for vare føres inn på linjene v
 
 Det midlertidige beløpet for kildeskatt er tilgjengelig i feltet **Justert kildeskatt** i kategorien **Totaler** på siden **Bestilling**.
 
-![Kildeskatt er inkludert i bestillingen](media/withholding-tax-adjusted.png)
+![Kildeskatt er inkludert i bestillingen.](media/withholding-tax-adjusted.png)
 
 Kildeskatt beregnes på **Leverandørbetalingsjournal**. Du kan justere gjeldende kildeskattkoder manuelt og de faktiske kildeskattbeløpene i kategorien **Kildeskatt** på siden **Utlign transaksjoner**.
 
-![Kildeskatt kan justeres manuelt på siden Utlign transaksjoner](media/withholding-tax-vendor-payment-tab.png)
+![Kildeskatt kan justeres manuelt på siden Utlign transaksjoner.](media/withholding-tax-vendor-payment-tab.png)
 
 Det avledede kildeskattbeløpet blir trukket fra leverandørbetalingen og postert til **Kildeskattkonto** i et tilknyttet bilag.
 
-![Kildeskattkonto som viser et tilknyttet bilag](media/withholding-tax-adjusted.png)
+![Kildeskattkonto som viser et tilknyttet bilag.](media/withholding-tax-adjusted.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

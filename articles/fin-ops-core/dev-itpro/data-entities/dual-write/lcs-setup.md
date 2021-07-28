@@ -10,12 +10,12 @@ ms.search.region: global
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: eb4170ef6cb09c862f6a4163670c519d5d8077fb
-ms.sourcegitcommit: 365092f735310990e82516110141d42aaf04e654
+ms.openlocfilehash: e604e1491bbafa041fa3f52ad0f8b454c63d47de
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6103575"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359369"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Oppsett av dobbel skriving fra Lifecycle Services
 
@@ -40,7 +40,7 @@ Følg denne fremgangsmåten for å konfigurere en dobbelt skriving fra LCS-siden
 
 2. Velg knappen for **App med dobbel skriving**.
 
-    ![Power Platform-integrering](media/powerplat_integration_step2.png)
+    ![Power Platform-integrering.](media/powerplat_integration_step2.png)
 
 3. Gå gjennom vilkårene og betingelsene, og merk deretter av for **Konfigurer**.
 
@@ -52,7 +52,7 @@ Følg denne fremgangsmåten for å konfigurere en dobbelt skriving fra LCS-siden
 
 7. Velg **Koble til Power Platform-miljø** for å opprette en kobling mellom Dataverse og databasene for det gjeldende miljøet. Dette tar vanligvis 5 minutter eller mindre.
 
-    :::image type="content" source="media/powerplat_integration_step3.png" alt-text="Koble til Power Platform-miljø":::
+    :::image type="content" source="media/powerplat_integration_step3.png" alt-text="Koble til Power Platform-miljø.":::
 
 8. Når koblingen er fullført, vises en hyperkobling. Bruk koblingen til å logge deg på administrasjonsområdet for dobbel skriving i Finance and Operations-miljøet. Derfra kan du definere enhetstilordninger.
 

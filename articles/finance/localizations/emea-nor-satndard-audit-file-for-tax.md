@@ -12,12 +12,12 @@ ms.reviewer: kfend
 ms.search.region: Norway
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 50c97c51a3b7c6b47ea7c87138da131345830e8d
-ms.sourcegitcommit: 18ca2df785e9656fdd4e8c0734eca2b2624fda10
+ms.openlocfilehash: e5fd2ebe86340d1342c612fa6081c855854d5311
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "6293962"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348893"
 ---
 # <a name="standard-audit-file-for-tax-saf-t-for-norway"></a>Standard revisjonsfil for avgift (SAF-T) for Norge
 
@@ -54,14 +54,14 @@ Importer de nyeste versjonene av konfigurasjonene. Versjonsbeskrivelsen innehold
 > [!NOTE]
 > Når du har importert alle ER-konfigurasjoner fra tabellen ovenfor, kan du angi alternativet **Standard for modelltilordning** til **Ja** for konfigurasjonen **SAF-T økonomiske datamodelltilordning**.
 >
-> ![Standardalternativ for modelltilordning er satt til Ja](media/nor-saf-default-model-mapping.jpg)
+> ![Standardalternativ for modelltilordning er satt til Ja.](media/nor-saf-default-model-mapping.jpg)
 
 ### <a name="set-up-the-er-format"></a><a name="parameters"></a>Angi ER-formatet 
 
 1. I Finance går du til **Økonomimodul** \> **Finansoppsett** \> **Parametere for økonomimodul**.
 2. På siden **Parametere for økonomimodul**, i kategorien **Standard revisjonsfil for avgift (SAF-T)** i feltet **Standard revisjonsfil for avgift (SAF-T)**, velger du **SAF-T-format (NO)**.
 
-![Feltet Standard revisjonsfil for avgift (SAF-T) på siden parametere for økonomimodul](media/nor-saf-gl-parameters.jpg)
+![Feltet Standard revisjonsfil for avgift (SAF-T) på siden parametere for økonomimodul.](media/nor-saf-gl-parameters.jpg)
 
 ### <a name="associate-sales-tax-codes-with-norwegian-standard-value-added-tax-vat-tax-codes"></a><a name="sales"></a>Knytt mva-koder til norske standard mva-koder for merverdiavgift (mva)
 
@@ -72,11 +72,11 @@ Hvis du vil knytte mva-koder som brukes i Finance, med norske standard mva-koder
 1. I Finance går du til **Avgift** \> **Indirekte avgifter** \> **Merverdiavgift** \> **Mva-koder**.
 2. På siden **Mva-kode** velger du **Mva-kode**-posten, og deretter, i handlingsruten i kategorien **Mva-kode** i gruppen **Mva-kode**, velger du **Eksterne koder**.
 
-    ![Eksterne koder-knappen i handlingsruten på siden for mva-kode](media/nor-saf-standard-tax-codes.jpg)
+    ![Eksterne koder-knappen i handlingsruten på siden for mva-kode.](media/nor-saf-standard-tax-codes.jpg)
 
 3. På **Eksterne koder**-siden angir du norske standard mva-koder som skal brukes for den valgte posten for mva-koden, for SAF-T-rapportering. På siden **Eksterne koder** velger du identifikatoren for definisjonen av den eksterne koden i feltet **Kode** i delen **Oversikt**, og deretter angir du en standard mva-kode som samsvarer med den valgte **Mva-koden** i feltet **Verdi** i delen **Verdi**.
 
-    ![Definere standard mva-kode for den valgte mva-koden](media/not-saf-external-codes-tax.png)
+    ![Definere standard mva-kode for den valgte mva-koden.](media/not-saf-external-codes-tax.png)
 
 ### <a name="associate-main-accounts-with-norwegian-standard-accounts"></a><a name="main"></a>Knytte hovedkontoer til norske standardkontoer
 
@@ -95,7 +95,7 @@ Hvis du vil knytte **Hovedkontoer** som brukes i Finans, til norske standardkont
 6. Velg verdien **Ikke aktuelt** som den siste betingelsen i listen. Den må være satt til **\*Ikke tom\*** i **Hovedkonto**-kolonnen. Verifiser verdien i **Linje**-kolonnen for at **"Ikke aktuelt"** er den siste betingelsen i tabellen.
 7. Når du er ferdig med å sette opp betingelser, endrer du verdien i **Tilstand**-feltet til **Fullført**, lagrer endringene og lukker siden.
 
-![Standardkonto-feltet på siden Hovedkontoer](media/nor-saf-standard-main-accounts-appsppar.jpg)
+![Standardkonto-feltet på siden Hovedkontoer.](media/nor-saf-standard-main-accounts-appsppar.jpg)
 
 Du kan enkelt eksportere oppsettet av applikasjonsspesifikke parametere fra én versjon av en rapport og importere det til en annen versjon ved å velge **Eksporter** eller **Importer** i handlingsruten. Du kan også eksportere oppsettet fra én rapport og importere det til samme rapport i et annet selskap hvis hovedkontoene er de samme i begge selskapene.
 

@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 1c0dfebb3ef442f67d8489d7aed00305c02cf410
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 2694f48b295ba727870f068e7062f7cdcababdbe
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748903"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350794"
 ---
 # <a name="troubleshoot-live-synchronization-issues"></a>Feilsøke problemer med direkte synkronisering
 
@@ -73,21 +73,21 @@ Hvis det finnes data på begge sider, og du har bekreftet at problemet ikke er r
 
 Du kan få en feilmelding av typen "Ugyldig forespørsel" som ligner på følgende eksempel når du oppretter data i en Finance and Operations-app.
 
-![Eksempel på feilmeldingen om Ugyldig forespørsel](media/error_record_id_source.png)
+![Eksempel på feilmeldingen om Ugyldig forespørsel.](media/error_record_id_source.png)
 
 Hvis du vil løse problemet, må du tilordne den riktige sikkerhetsrollen til teamet for den tilordnede forretningsenheten for Dynamics 365 Sales eller Dynamics 365 Customer Service for å aktivere den manglende rettigheten.
 
 1. I Finance and Operations-appen finner du forretningsenheten som er tilordnet i tilkoblingssettet for dataintegrering.
 
-    ![Organisasjonstilordning](media/mapped_business_unit.png)
+    ![Organisasjonstilordning.](media/mapped_business_unit.png)
 
 2. Logg deg på miljøet i den modelldrevne appen i Dynamics 365, naviger til **Innstilling \> Sikkerhet**, og finn teamet til den tilordnede forretningsenheten.
 
-    ![Team til den tilordnede forretningsenheten](media/setting_security_page.png)
+    ![Team til den tilordnede forretningsenheten.](media/setting_security_page.png)
 
 3. Åpne siden for teamet for redigering, og velg deretter **Behandle roller** for å åpne dialogboksen **Administrere teamroller**.
 
-    ![Knappen Behandle roller](media/manage_team_roles.png)
+    ![Knappen Behandle roller.](media/manage_team_roles.png)
 
 4. Tilordne rollen med lese/skrivetilgang for de relevante tabellene, og velg deretter **OK**.
 

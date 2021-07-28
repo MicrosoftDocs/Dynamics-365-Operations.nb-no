@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4ee5a074c5c6d2e2144181e39917b1cc42dfc015
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: e3dc83b71300387c8123f5533522c5ead7d86333
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944849"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349190"
 ---
 # <a name="improve-the-performance-of-er-solutions-by-adding-parameterized-calculated-field-data-sources"></a>Forbedre ytelsen for ER-løsninger ved å legge til datakilder med parameterisert BEREGNET FELT
 
@@ -56,7 +56,7 @@ Det første trinnet er å importere ER-eksempelløsningen for å generere en lev
     2. Velg **Bla gjennom**, og velg den riktige filen for ER-konfigurasjonen i XML-format.
     3. Velg **OK**.
 
-![Importerte konfigurasjoner på siden Konfigurasjoner](./media/er-calculated-field-ds-performance-imported-configurations.png)
+![Importerte konfigurasjoner på siden Konfigurasjoner.](./media/er-calculated-field-ds-performance-imported-configurations.png)
 
 ## <a name="review-the-sample-er-solution"></a>Gå gjennom ER-eksempelløsningen
 
@@ -76,7 +76,7 @@ Det første trinnet er å importere ER-eksempelløsningen for å generere en lev
 
     Modelltilordningen i denne konfigurasjonen implementerer basisdatamodellen for ER-formater som opprettes for denne modellen og som kjøres i Finance. Derfor vil inneholdet i datakilden **Trans** bli eksponert for ER-formater, for eksempel abstrakte datakilder av typen **model**.
 
-    ![Trans-datakilde på siden Modelltilordningsutforming](media/er-calculated-field-ds-performance-mapping-1.png)
+    ![Trans-datakilde på siden Modelltilordningsutforming.](media/er-calculated-field-ds-performance-mapping-1.png)
 
 4. Lukk siden **Modelltilordningsutforming**.
 5. Lukk siden **Tilordning av modell til datakilde**.
@@ -90,7 +90,7 @@ Det første trinnet er å importere ER-eksempelløsningen for å generere en lev
 
     Dette ER-formatet er utformet for å generere en leverandørtransaksjonsrapport i XML-format.
 
-    ![Formatdatakilder og konfigurerte bindinger for formatelementer på siden Formatutforming](media/er-calculated-field-ds-performance-format.png)
+    ![Formatdatakilder og konfigurerte bindinger for formatelementer på siden Formatutforming.](media/er-calculated-field-ds-performance-format.png)
 
 5. Lukk **Formatutforming**-siden.
 
@@ -103,7 +103,7 @@ Anta at du er ferdig med å utforme den første versjonen av ER-løsningen. Nå 
 1. Velg **DEMF**-firmaet.
 2. Følg fremgangsmåten il [Aktivere ER-ytelsessporing](trace-execution-er-troubleshoot-perf.md#turn-on-the-er-performance-trace) for å generere en ytelsessporing mens et ER-format kjøres.
 
-    ![Dialogboksen Brukerparametere](media/er-calculated-field-ds-performance-format-user-parameters.png)
+    ![Dialogboksen Brukerparametere.](media/er-calculated-field-ds-performance-format-user-parameters.png)
 
 ### <a name="run-the-er-format"></a><a id="run-format"></a>Kjør ER-formatet
 
@@ -124,7 +124,7 @@ Ny informasjon er nå tilgjengelig for noen datakildeelementer av gjeldende mode
 - Den faktiske tiden som ble brukt til å hente data ved hjelp av datakilden
 - Den samme tiden som prosent av den totale tiden som ble brukt til å kjøre hele modelltilordningen
 
-![Informasjon om utføringstid på siden Modelltilordningsutforming](./media/er-calculated-field-ds-performance-mapping-2.png)
+![Informasjon om utføringstid på siden Modelltilordningsutforming.](./media/er-calculated-field-ds-performance-mapping-2.png)
 
 Rutenettet **Ytelsesstatistikk** viser at datakilden **Trans** kaller VendTrans-tabellen én gang. Verdien **\[265\]\[Q:265\]** for datakilden **Trans** angir at 265 leverandørtransaksjoner er hentet fra apptabellen og returneres til datamodellen.
 
@@ -137,7 +137,7 @@ Rutenettet **Ytelsesstatistikk** viser også at gjeldende modelltilordning dupli
 
 - Leverandørtabellen kalles for hver repeterende leverandørtransaksjon, selv om de hentede transaksjonene bare er postert for fem leverandører. Av de 530 kallene er 525 duplikater. Følgende illustrasjon viser meldingen du mottar om duplikatoppringinger (databaseforespørsler).
 
-![Melding om dupliserte databaseforespørsler på siden Modelltilordningsutforming](./media/er-calculated-field-ds-performance-mapping-2a.png)
+![Melding om dupliserte databaseforespørsler på siden Modelltilordningsutforming.](./media/er-calculated-field-ds-performance-mapping-2a.png)
 
 Av den samlede utføringstiden for modelltilordning (ca. åtte sekunder), må du legge merke til at mer enn 80 prosent (omtrent seks sekunder) har blitt brukt til å hente verdier fra apptabellen VendTable. Denne prosentandelen er for stor for to attributter av fem leverandører, sammenlignet med informasjonsvolumet i apptabellen VendTrans.
 
@@ -172,7 +172,7 @@ Følg denne fremgangsmåten for å bruke bufring og en datakilde av typen **Bere
     3. Skriv inn **Box** i **Navn**-feltet i dialogboksen.
     3. Velg **OK**.
 
-    ![Box-datakilde på siden Modelltilordningsutforming](./media/er-calculated-field-ds-performance-mapping-3.png)
+    ![Box-datakilde på siden Modelltilordningsutforming.](./media/er-calculated-field-ds-performance-mapping-3.png)
 
 6. Følg disse trinnene for å legge til en parameterdatakilde av typen **Beregnet felt**:
 
@@ -208,7 +208,7 @@ Følg denne fremgangsmåten for å bruke bufring og en datakilde av typen **Bere
 
 9. Velg **Lagre**.
 
-    ![Vend-datakilde på siden Modelltilordningsutforming](./media/er-calculated-field-ds-performance-mapping-4.png)
+    ![Vend-datakilde på siden Modelltilordningsutforming.](./media/er-calculated-field-ds-performance-mapping-4.png)
 
 10. Lukk siden **Modelltilordningsutforming**.
 11. Lukk siden **Modelltilordninger**.
@@ -232,11 +232,11 @@ Gjenta trinnene i delen [Kjør ER-formatet](#run-format) tidligere i dette emnet
 
 Legg merke til at justeringene du har gjort i modelltilordningen, har eliminert duplikate spørringer til databasen. Antall kall til databasetabeller og datakilder for denne modelltilordningen er også redusert.
 
-![Sporingsinformasjon på siden Modelltilordningsutforming 1](./media/er-calculated-field-ds-performance-mapping-5.png)
+![Sporingsinformasjon på siden Modelltilordningsutforming 1.](./media/er-calculated-field-ds-performance-mapping-5.png)
 
 Den totale utføringstiden er redusert omtrent 20 ganger (fra omtrent 8 sekunder til omtrent 400 millisekunder). Derfor har ytelsen til hele ER-løsningen blitt forbedret.
 
-![Sporingsinformasjon på siden Modelltilordningsutforming 2](./media/er-calculated-field-ds-performance-mapping-5a.png)
+![Sporingsinformasjon på siden Modelltilordningsutforming 2.](./media/er-calculated-field-ds-performance-mapping-5a.png)
 
 ## <a name="appendix-1-download-the-components-of-the-sample-microsoft-er-solution"></a><a name="appendix1"></a>Tillegg 1: Last ned komponentene i Microsoft ER-eksempelløsningen
 
