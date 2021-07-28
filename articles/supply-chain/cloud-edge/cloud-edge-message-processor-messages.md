@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2021-04-21
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 86f15831f11dc9fdcada9639858fd3b18cdc7503
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 35fd48ef300d46d00c07f3231d780d1ba431d8ef
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6271107"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350576"
 ---
 # <a name="message-processor-messages"></a>Meldinger for meldingsprosessor
 
@@ -88,15 +88,15 @@ I dette eksemplet bruk **Når en forretningshendelse oppstår** med *Microsoft P
 
 1. I [Power Automate](https://preview.flow.microsoft.com) oppretter du en ny automatisert skyflyt for flytutløseren **Når en forretningshendelse oppstår – Fin & Ops App (Dynamics 365)** etterfulgt av trinnene **Parse JSON** og **Sende en e-post**, som vist i illustrasjonen nedenfor.
 
-    :::image type="content" source="./media/cloud-edge-power-automate-example1.png" alt-text="Power Automate automatisert skyflyt":::
+    :::image type="content" source="./media/cloud-edge-power-automate-example1.png" alt-text="Power Automate automatisert skyflyt.":::
 
 1. I trinnet **Når en forretningshendelse oppstår** kan du slå opp eller angi huben **Forekomst** etterfulgt av **Kategori** og deretter **Forretningshendelse** *Meldingsbehandlermelding som behandles*, som vist i illustrasjonen nedenfor.
 
-    :::image type="content" source="./media/cloud-edge-power-automate-example2.png" alt-text="Power Automate Når en forretningshendelse oppstår":::
+    :::image type="content" source="./media/cloud-edge-power-automate-example2.png" alt-text="Power Automate Når en forretningshendelse oppstår.":::
 
 1. I trinnet **Parse JSON** angir du et **Skjema** som deinferer de utvidede feltene. Du kan bruke alternativet *Last ned skjema* på siden **Forretningshendelser-katalog** i Supply Chain Management, eller du kan begynne med å lime inn eksempelskjemateksten. Denne eksempelteksten vises etter følgende illustrasjon.
 
-    :::image type="content" source="./media/cloud-edge-power-automate-example3.png" alt-text="Power Automate Parse JSON-trinn":::
+    :::image type="content" source="./media/cloud-edge-power-automate-example3.png" alt-text="Power Automate Parse JSON-trinn.":::
 
     ```json
     {
@@ -183,7 +183,7 @@ I dette eksemplet bruk **Når en forretningshendelse oppstår** med *Microsoft P
 
 1. I trinnet **Send en e-post** kan du velge enkeltfeltene eller begynne ved å lime inn eksempelet med e-postteksten i **Meldingstekst**-feltet. Dette eksemplet vises etter følgende illustrasjon.
 
-    :::image type="content" source="./media/cloud-edge-power-automate-example4.png" alt-text="Power Automate send en e-post-trinnet":::
+    :::image type="content" source="./media/cloud-edge-power-automate-example4.png" alt-text="Power Automate send en e-post-trinnet.":::
 
     ```plaintext
     Message queue: @{body('Parse_JSON')?['MessageQueue']}

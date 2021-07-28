@@ -9,19 +9,21 @@ ms.technology: ''
 ms.search.form: RetailFunctionalityProfile
 audience: Application User
 ms.reviewer: josaw
-ms.custom: 260594
+ms.custom:
+- "260594"
+- intro-internal
 ms.assetid: 6fc835ef-d62e-4f23-9d49-50299be642ca
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: e495ac4f3cc55503cc8b15d4d4640d3468ab7cd2
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 679c8d7895ac82236c12732e1080529f44231947
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936736"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349632"
 ---
 # <a name="customer-orders-in-point-of-sale-pos"></a>Kundeordrer på salgssted (POS)
 
@@ -44,7 +46,7 @@ Før du prøver å bruke kundebestillingsfunksjonalitet i POS, må du sørge for
 
 Hvis du vil bruke kundeordrer, må du konfigurere leveringsmåter som butikkanalen kan bruke. Du må definere minst én leveringsmåte som kan brukes når ordrelinjer sendes til en kunde fra en butikk. Du må også definere minst én hentemåte som kan brukes når ordrelinjer hentes fra butikken. Leveringsmåter defineres på siden **Leveringsmåter** i Commerce Headquarters. Hvis du vil ha mer informasjon om hvordan du konfigurerer leveringsmåter for handelskanaler, kan du se [Definere leveringsmåter](./configure-call-center-delivery.md#define-delivery-modes).
 
-![Siden leveringsmåter](media/customer-order-modes-of-delivery.png)
+![Siden leveringsmåter.](media/customer-order-modes-of-delivery.png)
 
 
 ### <a name="set-up-fulfillment-groups"></a>Definere oppfyllelsesgrupper
@@ -53,7 +55,7 @@ Noen butikker eller lagerlokasjoner vil kanskje ikke kunne innfri kundeordrer. V
 
 I Commerce versjon 10.0.12 og nyere kan organisasjoner definere om lager- eller lager og butikk-kombinasjonene som er definert i oppfyllelsesgrupper, kan brukes til forsendelse, henting eller begge deler. Dette gir ekstra fleksibilitet for virksomheten, slik at du kan bestemme hvilke lagre som kan velges ved oppretting av en kundeordre for varer som skal sendes, i forhold til hvilke butikker som kan velges ved oppretting av en kundeordre for plukking av varer. For å bruke disse konfigurasjonsalternativene, aktiverer du funksjonen **Mulighet til å angi lokasjoner, som Forsendelse eller Henting, som er aktivert i en oppfyllelsesgruppe**. Hvis et lager som er knyttet til en oppfyllelsesgruppe, ikke er en butikk, kan det bare konfigureres som forsendelseslokasjon. Det kan ikke brukes når ordrer for henting er konfigurert i POS.
 
-![Siden oppfyllelsesgrupper](media/customer-order-fulfillment-group.png)
+![Siden oppfyllelsesgrupper.](media/customer-order-fulfillment-group.png)
 
 ### <a name="configure-channel-settings"></a>Konfigurere kanalinnstillinger
 
@@ -65,7 +67,7 @@ Når du arbeider med kundeordrer i POS, må du vurdere noen av innstillingene ti
 - **Bruk destinasjonsbasert avgift** – Dette alternativet angir om forsendelsesadressen brukes til å fastslå avgiftsgruppen som er brukt på ordrelinjer som er sendt til kundens adresse.
 - **Bruk kundebasert avgift** – Dette alternativet angir om mva-gruppen som er definert for kundens leveringsadresse, brukes til å definere avgift for kundeordrer som opprettes i POS for levering til kundens hjem.
 
-![Butikkanaloppsett på siden Butikker](media/customer-order-all-stores.png)
+![Butikkanaloppsett på siden Butikker.](media/customer-order-all-stores.png)
 
 ### <a name="set-up-customer-order-parameters"></a>Definere kundeordreparametere
 
@@ -80,7 +82,7 @@ Før du prøver å opprette kundeordrer i POS, må du konfigurere de aktuelle pa
 - **Kode for forsendelsestillegg** – Hvis alternativet **Bruk avanserte automatiske tillegg** er satt til **Ja**, har denne parameterinnstillingen ingen virkning. Hvis alternativet er satt til **Nei**, blir brukerne bedt om å angi et forsendelsestillegg manuelt når de oppretter kundeordrer i POS. Bruk denne parameteren til å tilordne en kundetilleggskode som skal brukes for ordrer når brukere angir et forsendelsestillegg. Tilleggskoden definerer den økonomiske posteringslogikken for forsendelsestillegget.
 - **Bruk avanserte automatiske tillegg** – Sett dette alternativet til **Ja** for å bruke systemberegnede automatiske tillegg når kundeordrer opprettes i POS. Disse automatiske tilleggene kan brukes til å beregne forsendelsestillegg eller andre ordre- eller varespesifikke tillegg. Hvis du vil ha mer informasjon om hvordan du konfigurerer og bruker avanserte automatiske tillegg, kan du se [Avanserte automatiske tillegg for omnikanal](./omni-auto-charges.md).
 
-![Kategorien kundeordrer på siden Handelsparametere](media/customer-order-parameters.png)
+![Kategorien kundeordrer på siden Handelsparametere.](media/customer-order-parameters.png)
 
 ### <a name="update-transaction-screen-layouts-in-pos"></a>Oppdatere transaksjonsskjermoppsett i POS
 
@@ -95,7 +97,7 @@ Kontroller at [skjermoppsettet](./pos-screen-layouts.md) i POS er konfigurert ti
 - **Endre leveringsmåte** – Denne operasjonen kan brukes til raskt å endre leveringsmåten for linjer som allerede er konfigurert for forsendelse, uten at brukerne må gå gjennom flyten Lever alle produkter eller Send valgte produkter på nytt.
 - **Overstyring av innbetaling** – Denne operasjonen kan brukes til å endre innbetalingsbeløpet som kunden skal betale for den valgte kundeordren.
 
-![Operasjoner på transaksjonsskjermbildet i POS](media/customer-order-screen-layout.png)
+![Operasjoner på transaksjonsskjermbildet i POS.](media/customer-order-screen-layout.png)
 
 ## <a name="work-with-customer-orders-in-pos"></a>Arbeide med kundeordrer på salgssted
 

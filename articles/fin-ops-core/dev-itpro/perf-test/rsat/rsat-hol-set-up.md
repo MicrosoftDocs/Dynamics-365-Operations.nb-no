@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2019-05-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 7c6e4dcbd854cfadbc34f0040dcffd277d32a8d9
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: fc9b330926dfc12890d0bc32e68b4b531616fc2b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909040"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357558"
 ---
 # <a name="set-up-and-install-regression-suite-automation-tool-tutorial"></a>Opplæring i installasjon og konfigurasjon av Regression Suite Automation Tool
 
@@ -67,14 +67,14 @@ RSAT bruker Azure Devops til administrasjon av testtilfeller og testserier, rapp
 - Ikke slett statusen til en arbeidselementtype.
 - Ikke legg til obligatoriske felt i en arbeidselementtype.
 
-![Feilmelding med en liste over anbefalte fremgangsmåter](./media/setup_rsa_tool_02.png)
+![Feilmelding med en liste over anbefalte fremgangsmåter.](./media/setup_rsa_tool_02.png)
 
 For denne opplæringen anbefaler vi for øvrig at du oppretter et nytt Azure DevOps-prosjekt. Hvis du vil ha mer informasjon, kan du se [Problemer ved synkronisering til BPM når du bruker en egendefinert mal for Azure DevOps-prosess (VSTS)](https://blogs.msdn.microsoft.com/lcs/2018/11/28/issues-when-syncing-to-bpm-using-a-custom-azure-devops-vsts-process-template/).
 
 1. Åpne URL-adressen til Azure DevOps (`https://dev.azure.com/<Azure DevOps Name>`).
 2. Velg **Opprett prosjekt** i øvre høyre hjørne på Azure DevOps-siden.
 
-    ![Opprett prosjekt-knappen](./media/setup_rsa_tool_03.png)
+    ![Opprett prosjekt-knappen.](./media/setup_rsa_tool_03.png)
 
 3. Fyll ut følgende felt, og velg deretter **Opprett**:
 
@@ -82,7 +82,7 @@ For denne opplæringen anbefaler vi for øvrig at du oppretter et nytt Azure Dev
     - **Versjonskontroll** – Velg **Team Foundation Version Control**. Vær oppmerksom på at standardalternativet **Git** ikke støttes.
     - **Arbeidselementbehandling**
 
-    ![Dialogboksen Opprett nytt prosjekt](./media/setup_rsa_tool_04.png)
+    ![Dialogboksen Opprett nytt prosjekt.](./media/setup_rsa_tool_04.png)
 
 ### <a name="create-a-personal-access-token"></a>Opprette et personlig tilgangstoken
 
@@ -90,11 +90,11 @@ I denne opplæringen skal du bruke Forretningsprosessmodelerer (BPM) i LCS til �
 
 1. Velg profilikonet i øvre høyre hjørne på siden for Azure DevOps-prosjektet, og velg deretter **Sikkerhet**.
 
-    ![Sikkerhet-kommandoen](./media/setup_rsa_tool_05.png)
+    ![Sikkerhet-kommandoen.](./media/setup_rsa_tool_05.png)
 
 2. Velg **Personlige tilgangstokener** under **Sikkerhet** i venstre rute. Velg deretter **Nytt token**.
 
-    ![Nytt token-knappen i fanen Personlige tilgangstokener i Brukerinnstillinger](./media/setup_rsa_tool_06.png)
+    ![Nytt token-knappen i fanen Personlige tilgangstokener i Brukerinnstillinger.](./media/setup_rsa_tool_06.png)
 
 3. Fyll ut følgende felt, og velg deretter **Opprett**:
 
@@ -102,12 +102,12 @@ I denne opplæringen skal du bruke Forretningsprosessmodelerer (BPM) i LCS til �
     - **Utløp (UTC)** – Velg **Egendefinert**, og bruk deretter datovelgeren til å velge den siste tilgjengelige datoen.
     - **Omfang** – Velg alternativet **Full tilgang**.
 
-    ![Dialogboksen for å opprette et nytt personlig tilgangstoken](./media/setup_rsa_tool_07.png)
+    ![Dialogboksen for å opprette et nytt personlig tilgangstoken.](./media/setup_rsa_tool_07.png)
 
     > [!NOTE]
     > Noter deg det personlige tilgangstokenet som opprettes. Du får bruk for det senere når du foretar RSAT-konfigurasjonen.
 
-    ![Personlig tilgangstoken](./media/setup_rsa_tool_08.png)
+    ![Personlig tilgangstoken.](./media/setup_rsa_tool_08.png)
 
 ## <a name="configure-the-lcs-project"></a>Konfigurere LCS-prosjektet
 
@@ -123,11 +123,11 @@ For LCS-prosjektet kan du bruke en eksisterende kundeimplementering eller et eks
 1. Gå til LCS-implementeringsprosjektet.
 2. Velg **Innstillinger**-knappen (tannhjulsymbolet) i øvre høyre hjørne på siden, og velg deretter **Språkinnstilling**.
 
-    ![Oppdatere språkinnstilling](./media/setup_rsa_tool_09.png)
+    ![Oppdatere språkinnstilling.](./media/setup_rsa_tool_09.png)
 
 3. I feltet **Foretrukket språk** velger du **Engelsk (USA)** og deretter **Lagre**.
 
-    ![Språkinnstilling-fanen i Brukerinnstillinger](./media/setup_rsa_tool_10.png)
+    ![Språkinnstilling-fanen i Brukerinnstillinger.](./media/setup_rsa_tool_10.png)
 
 ### <a name="configure-lcs-to-connect-to-the-azure-devops-project"></a>Konfigurere LCS for å koble til Azure DevOps-prosjektet
 
@@ -136,67 +136,67 @@ Hvis du opprettet et nytt Azure DevOps-prosjekt tidligere, konfigurerer du LCS-p
 1. Gå til LCS-implementeringsprosjektet.
 2. Velg **Meny**-knappen, og velg deretter **Prosjektinnstillinger**.
 
-    ![Prosjektinnstillinger-kommandoen](./media/setup_rsa_tool_11.png)
+    ![Prosjektinnstillinger-kommandoen.](./media/setup_rsa_tool_11.png)
 
 3. I venstre rute velger du **Visual Studio Team Services**, og deretter velger du **Konfigurer Visual Studio Team Services**.
 
-    ![Fanen Visual Studio Team Services i Prosjektinnstillinger](./media/setup_rsa_tool_12.png)
+    ![Fanen Visual Studio Team Services i Prosjektinnstillinger.](./media/setup_rsa_tool_12.png)
 
 4. I feltet **URL-adresse til Azure DevOps-området** angir du URL-adressen til Azure DevOps-området. I feltet **Personlig tilgangstoken** angir du det personlige tilgangstokenet som ble opprettet tidligere.
 
     > [!NOTE]
     > Selv om VSTS nå kalles Azure DevOps, bruker du den gamle URL-adressen til å koble LCS til Azure DevOps-prosjektet. URL-adressen til Azure DevOps som brukes i denne opplæringen, er for eksempel `https://dev.azure.com/D365FOFastTrack/`. I illustrasjonen nedenfor er den imidlertid angitt som `https://D365FOFastTrack.visualstudio.com/`.
 
-    ![Trinn 1 i Konfigurer Visual Studio Team Services](./media/setup_rsa_tool_13.png)
+    ![Trinn 1 i Konfigurer Visual Studio Team Services.](./media/setup_rsa_tool_13.png)
 
 5. Velg **Fortsett**.
 6. I feltet **Visual Studio Team Services-prosjektet** velger du VSTS-prosjektet på det valgte området som skal kobles til LCS-prosjektet. **Prosessmal**-feltet er satt til **Fleksibel** som standard. Når det gjelder en egendefinert mal, ser du gjennom veiledningen for anbefalte fremgangsmåter i delen [Opprette et nytt Azure DevOps-prosjekt](#create-a-new-azure-devops-project). Velg deretter **Fortsett**.
 
-    ![Trinn 2 i Konfigurer Visual Studio Team Services](./media/setup_rsa_tool_14.png)
+    ![Trinn 2 i Konfigurer Visual Studio Team Services.](./media/setup_rsa_tool_14.png)
 
 7. Se gjennom innstillingene, og velg deretter **Lagre**.
 
-    ![Trinn 3 i Konfigurer Visual Studio Team Services](./media/setup_rsa_tool_15.png)
+    ![Trinn 3 i Konfigurer Visual Studio Team Services.](./media/setup_rsa_tool_15.png)
 
 8. Velg **Autoriser** for å autorisere at LCS kan få tilgang til det konfigurerte Azure DevOps-området på vegne av deg, og for å aktivere funksjoner som kan integreres med VSTS.
 
-    ![Autoriser-knappen](./media/setup_rsa_tool_16.png)
+    ![Autoriser-knappen.](./media/setup_rsa_tool_16.png)
 
 9. Det vises en meldingsboks der det står «Du er i ferd med å bli omdirigert til et eksternt område for å gi Lifecycle Services tilgang til å koble til Visual Studio Team Services på dine vegne. Fortsette?» Velg **Ja**.
 
-    ![Meldingsboks](./media/setup_rsa_tool_17.png)
+    ![Meldingsboks.](./media/setup_rsa_tool_17.png)
 
 10. Velg **Godta**.
 
-    ![Autorisere tilgang](./media/setup_rsa_tool_18.png)
+    ![Autorisere tilgang.](./media/setup_rsa_tool_18.png)
 
 11. Hvis du er autorisert som bruker, skal brukergrensesnittet sende deg tilbake til siden for LCS-prosjektinnstillinger.
 
-    ![Autorisert bruker](./media/setup_rsa_tool_19.png)
+    ![Autorisert bruker.](./media/setup_rsa_tool_19.png)
 
 ### <a name="create-a-new-bpm-library"></a>Opprett et nytt BPM-bibliotek
 
 1. Gå til LCS-implementeringsprosjektet.
 2. Velg **Meny**-knappen, og velg deretter **Forretningsprosessmodelerer**.
 
-    ![Kommandoen Forretningsprosessmodelerer](./media/setup_rsa_tool_20.png)
+    ![Kommandoen Forretningsprosessmodelerer.](./media/setup_rsa_tool_20.png)
 
 3. Velg **Nytt bibliotek**.
 
-    ![Nytt bibliotek-knappen](./media/setup_rsa_tool_21.png)
+    ![Nytt bibliotek-knappen.](./media/setup_rsa_tool_21.png)
 
 4. Skriv inn et navn i feltet **Navn på bibliotek**, og velg deretter **Opprett**. For denne opplæringen gir du BPM-biblioteket navnet **RSAT**.
 
-    ![Dialogboksen Opprett nytt bibliotek](./media/setup_rsa_tool_22.png)
+    ![Dialogboksen Opprett nytt bibliotek.](./media/setup_rsa_tool_22.png)
 
 5. Åpne det nye BPM-biblioteket **RSAT**.
 6. Velg prosessen **Eksempel på kjerneforretningsprosess**, og velg deretter **Redigeringsmodus** til høyre.
 
-    ![Redigeringsmodus-knappen](./media/setup_rsa_tool_23.png)
+    ![Redigeringsmodus-knappen.](./media/setup_rsa_tool_23.png)
 
 7. Endre verdien i **Navn**-feltet og **Beskrivelse**-feltet til **Opprett et produkt**. Velg deretter **Lagre**.
 
-    ![Feltene Navn og Beskrivelse](./media/setup_rsa_tool_24.png)
+    ![Feltene Navn og Beskrivelse.](./media/setup_rsa_tool_24.png)
 
 ## <a name="environment"></a>Miljø
 
@@ -219,14 +219,14 @@ Dette trinnet er nødvendig for å kunne koble til LCS, slik at oppgaveopptak ka
 2. Gå til **Systemadministrasjon \> Oppsett \> Systemparametere**.
 3. I feltet **Konfigurasjon av hjelp for Lifecycle Services** i **Hjelp**-fanen velger du det relevante LCS-prosjektet (**RSAT** for denne opplæringen).
 
-    ![Feltet Konfigurasjon av hjelp for Lifecycle Services i Hjelp-fanen](./media/setup_rsa_tool_25.png)
+    ![Feltet Konfigurasjon av hjelp for Lifecycle Services i Hjelp-fanen.](./media/setup_rsa_tool_25.png)
 
     BPM-biblioteker fylles ut i det riktige LCS-prosjektet.
 
 4. Velg **Lagre**.
 5. Du må kanskje oppdatere nettleseren for å kunne se det oppdaterte innholdet i Hjelp.
 
-    ![Varsling om oppdatering av nettleseren](./media/setup_rsa_tool_26.png)
+    ![Varsling om oppdatering av nettleseren.](./media/setup_rsa_tool_26.png)
 
 ## <a name="task-recordings"></a>Oppgaveopptak
 
@@ -240,54 +240,54 @@ Opprett et tilsvarende oppgaveopptak du kan knytte til den enkle forretningspros
 1. Start klienten.
 2. Velg **Innstillinger**-knappen (tannhjulsymbolet) på hovedinstrumentbordet, og velg deretter **Oppgaveopptaker**.
 
-    ![Velge Oppgaveopptaker på Innstillinger-menyen](./media/setup_rsa_tool_27.png)
+    ![Velge Oppgaveopptaker på Innstillinger-menyen.](./media/setup_rsa_tool_27.png)
 
 3. Velg **Opprett opptak**.
 
-    ![Opprett opptak-knappen](./media/setup_rsa_tool_28.png)
+    ![Opprett opptak-knappen.](./media/setup_rsa_tool_28.png)
 
 4. Fyll ut feltene **Navn på opptak** og **Beskrivelse av opptak**, og velg deretter **Start**.
 
-    ![Feltene Navn på opptak og Beskrivelse av opptak](./media/setup_rsa_tool_29.png)
+    ![Feltene Navn på opptak og Beskrivelse av opptak.](./media/setup_rsa_tool_29.png)
 
 5. Ta opp trinnene for å opprette et produkt. Når du er ferdig, velger du **Stopp** for å stoppe opptaket.
 
-    ![Trinn for å opprette et produkt](./media/setup_rsa_tool_30.png)
+    ![Trinn for å opprette et produkt.](./media/setup_rsa_tool_30.png)
 
 6. Velg **Lagre i Lifecycle Services**.
 
-    ![Lagre oppgaveopptak i Lifecycle Services](./media/setup_rsa_tool_31.png)
+    ![Lagre oppgaveopptak i Lifecycle Services.](./media/setup_rsa_tool_31.png)
 
     Bibliotekinformasjon lastes inn fra LCS.
 
-    ![Laste inn bibliotekinformasjon](./media/setup_rsa_tool_32.png)
+    ![Laste inn bibliotekinformasjon.](./media/setup_rsa_tool_32.png)
 
 7. Velg BPM-biblioteket som oppgaveopptaket skal knyttes til. For denne opplæringen velger du BPM-biblioteket **RSAT** som ble opprettet tidligere, og forretningsprosessen **Opprett et produkt** under det. Velg deretter **OK**.
 
-    ![Knytte oppgaveopptaket til et BPM-bibliotek og en forretningsprosess](./media/setup_rsa_tool_33.png)
+    ![Knytte oppgaveopptaket til et BPM-bibliotek og en forretningsprosess.](./media/setup_rsa_tool_33.png)
 
     Meldingen «Lagring i Lifecycle Services er utført» vises.
 
-    ![Melding om vellykket lagring i LCS](./media/setup_rsa_tool_34.png)
+    ![Melding om vellykket lagring i LCS.](./media/setup_rsa_tool_34.png)
 
 8. Hvis du vil lagre oppgaveopptaket lokalt og deretter laste det opp til BPM via LCS, følger du denne fremgangsmåten:
 
     1. Når opptaket er fullført, velger du **Lagre på denne PC-en**.
 
-        ![Lagre på denne PC-en](./media/setup_rsa_tool_35.png)
+        ![Lagre på denne PC-en.](./media/setup_rsa_tool_35.png)
 
     2. I nettleserens varslingsfelt velger du **Lagre** eller **Lagre som** for å lagre filen på den lokale datamaskinen.
 
-        ![Varslingsfelt](./media/setup_rsa_tool_36.png)
+        ![Varslingsfelt.](./media/setup_rsa_tool_36.png)
 
     3. Gå til BPM-biblioteket **RSAT**, og velg forretningsprosessen du vil lagre oppgaveopptaket mot.
     4. Velg **Last opp** i **Oversikt**-fanen.
 
-        ![Last opp-knappen](./media/setup_rsa_tool_37.png)
+        ![Last opp-knappen.](./media/setup_rsa_tool_37.png)
 
     5. Velg **Bla gjennom**, og velg AXTR-filen du lagret tidligere. Velg deretter **Last opp**.
 
-        ![Velge AXTR-filen som skal lastes opp](./media/setup_rsa_tool_38.png)
+        ![Velge AXTR-filen som skal lastes opp.](./media/setup_rsa_tool_38.png)
 
 ### <a name="test-the-synchronization-from-bpm-to-azure-devops"></a>Teste synkroniseringen fra BPM til Azure DevOps
 
@@ -299,36 +299,36 @@ Nå som et oppgaveopptak er knyttet til forretningsprosessen, må du validere at
 1. Gå til BPM-biblioteket, og åpne **RSAT**-biblioteket du opprettet tidligere.
 2. Velg ellipseknappen (**...**), og velg **VSTS-synkronisering**.
 
-    ![Kommandoen VSTS-synkronisering på ellipsemenyen](./media/setup_rsa_tool_39.png)
+    ![Kommandoen VSTS-synkronisering på ellipsemenyen.](./media/setup_rsa_tool_39.png)
 
     Etter at VSTS-synkronisering er fullført, vises det en **Behov**-fane på venstre side som omfatter det tilsvarende Azure DevOps-arbeidselementet.
 
     > [!NOTE]
     > Arbeidselementet som opprettes i Azure DevOps, har navnet på BPM-biblioteket som tittelprefiks.
 
-    ![Behov-fanen](./media/setup_rsa_tool_40.png)
+    ![Behov-fanen.](./media/setup_rsa_tool_40.png)
 
 3. Oppdater siden.
 4. Velg ellipseknappen (**...**). Det vises et ekstra alternativ, **Synkroniser testtilfeller**. Velg dette alternativet.
 
-    ![Kommandoen Synkroniser testtilfeller på ellipsemenyen](./media/setup_rsa_tool_41.png)
+    ![Kommandoen Synkroniser testtilfeller på ellipsemenyen.](./media/setup_rsa_tool_41.png)
 
     > [!NOTE]
     > Hvis alternativet **Synkroniser testtilfeller** ikke er tilgjengelig etter at du har oppdatert siden, går du til hovedsiden for BPM og velger **Synkroniser testtilfeller** for hele biblioteket. På denne måten fremtvinger du en synkronisering for hele biblioteket.
     >
-    > ![Velge Synkroniser testtilfeller for hele biblioteket](./media/setup_rsa_tool_42.png)
+    > ![Velge Synkroniser testtilfeller for hele biblioteket.](./media/setup_rsa_tool_42.png)
 
     Etter at Synkroniser testtilfeller er fullført, blir det opprettet et nytt testtilfelle i **Behov**-fanen.
 
-    ![Nytt testtilfelle i Behov-fanen](./media/setup_rsa_tool_43.png)
+    ![Nytt testtilfelle i Behov-fanen.](./media/setup_rsa_tool_43.png)
 
 5. Gå til Azure DevOps-prosjektet, og velg **Tavler \> Arbeidselementer**.
 
-    ![Kommandoen Arbeidselementer under Tavler](./media/setup_rsa_tool_44.png)
+    ![Kommandoen Arbeidselementer under Tavler.](./media/setup_rsa_tool_44.png)
 
 6. Valider at arbeidselementet og testtilfellet du opprettet ved hjelp av BPM-synkronisering, finnes.
 
-    ![Arbeidselement og testtilfelle](./media/setup_rsa_tool_45.png)
+    ![Arbeidselement og testtilfelle.](./media/setup_rsa_tool_45.png)
 
 ## <a name="install-and-configure-rsat"></a>Installere og konfigurere RSAT
 
@@ -354,16 +354,16 @@ Hvis du vil aktivere godkjenning, må du generere og installere et sertifikat p�
     > [!NOTE]
     > Pass på at du skriver inn **certlm.msc** msc, ikke **certmgr.msc**, fordi sertifikatene er lagret på den lokale datamaskinen.
 
-    ![Sertifikatet D365 Automated testing certificate](./media/setup_rsa_tool_46.png)
+    ![Sertifikatet D365 Automated testing certificate.](./media/setup_rsa_tool_46.png)
 
 3. Høyreklikk på sertifikatet, og velg deretter **Kopier**.
 4. Gå til **Klarerte rotsertifiseringsinstanser \> Sertifikater**.
 
-    ![Sertifikater-mappen under mappen Klarerte rotsertifiseringsinstanser](./media/setup_rsa_tool_47.png)
+    ![Sertifikater-mappen under mappen Klarerte rotsertifiseringsinstanser.](./media/setup_rsa_tool_47.png)
 
 5. Velg **Lim inn** på **Handling**-menyen for å kopiere sertifikatet til plasseringen **Klarerte rotsertifiseringsinstanser**.
 
-    ![Kommandoen Lim inn på Handling-menyen](./media/setup_rsa_tool_48.png)
+    ![Kommandoen Lim inn på Handling-menyen.](./media/setup_rsa_tool_48.png)
 
 6. Hvis du vil hente avtrykket for det installerte sertifikatet, men uten mellomrom eller spesialtegn, åpner du et Windows PowerShell-vindu som administrator og kjører følgende kommandoer:
 
@@ -384,11 +384,11 @@ Hvis du vil aktivere godkjenning, må du generere og installere et sertifikat p�
 1. Opprett en RDP-tilkobling (Remote Desktop Protocol) til AOS-datamaskinen. Påloggingsdetaljer er tilgjengelige på siden for miljødetaljer i LCS.
 2. Åpne Microsoft Internet Information Services (IIS), og finn **AOSService** i listen over områder.
 
-    ![AOSService i listen over områder](./media/setup_rsa_tool_49.png)
+    ![AOSService i listen over områder.](./media/setup_rsa_tool_49.png)
 
 3. Høyreklikk på **Utforsk** for å åpne mappen **\<Drive\>: \\AosService\\WebRoot**. Finn filen **wif.config**.
 
-    ![Filen wif.config i WebRoot-mappen](./media/setup_rsa_tool_50.png)
+    ![Filen wif.config i WebRoot-mappen.](./media/setup_rsa_tool_50.png)
 
 4. Oppdater filen **wif.config** ved å legge til en ny instansoppføring for navnet på sertifikatet og instansen, som vist i eksemplet nedenfor.
 
@@ -434,11 +434,11 @@ if ((Test-Path HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v4.0.30319))
 1. Gå til <https://www.microsoft.com/download/details.aspx?id=57357>, og velg **Download**.
 2. Merk av for alle filene, og velg deretter **Next**.
 
-    ![Merke av for alle filene](./media/setup_rsa_tool_51.png)
+    ![Merke av for alle filene.](./media/setup_rsa_tool_51.png)
 
 3. Dobbeltklikk på MSI-pakken for å kjøre installasjonsprogrammet. Når installasjonen er fullført, velger du **Fullfør**.
 
-    ![Installasjonsprogramfilen for RSAT](./media/setup_rsa_tool_52.png)
+    ![Installasjonsprogramfilen for RSAT.](./media/setup_rsa_tool_52.png)
 
 ### <a name="install-selenium-and-browser-drivers"></a>Installere Selenium og nettleserdrivere
 
@@ -453,46 +453,46 @@ I eldre versjoner av RSAT måtte du installere Selenium og nettleserdrivere. Du 
 
 1. Gå til Azure DevOps-prosjektet, og velg **Testplaner**.
 
-    ![Kommandoen Testplaner](./media/setup_rsa_tool_53.png)
+    ![Kommandoen Testplaner.](./media/setup_rsa_tool_53.png)
 
 2. Velg **Ny testplan**.
 
-    ![Knappen Ny testplan](./media/setup_rsa_tool_54.png)
+    ![Knappen Ny testplan.](./media/setup_rsa_tool_54.png)
 
 3. Fyll ut **Navn**-feltet, og velg deretter **Opprett**. For denne opplæringen gir du testplanen navnet **RSAT-testplan**.
 
-    ![Dialogboksen Ny testplan](./media/setup_rsa_tool_55.png)
+    ![Dialogboksen Ny testplan.](./media/setup_rsa_tool_55.png)
 
 4. Velg plusstegnet (**+**), og velg deretter **Statisk serie** for å opprette en statisk serie under den nye testplanen. Gi den nye testserien navnet **T01 – Produser for lager**.
 
     > [!NOTE]
     > Du kan også opprette en spørringsbasert serie hvis du vil at de nye testtilfellene fra BPM skal hentes inn i RSAT-testserien automatisk.
 
-    ![Opprette en statisk serie](./media/setup_rsa_tool_56.png)
+    ![Opprette en statisk serie.](./media/setup_rsa_tool_56.png)
 
 ### <a name="attach-test-cases-to-test-suites"></a>Knytte testtilfeller til testserier
 
 1. Velg **Legg til eksisterende** på høyre side for å legge til eksisterende testtilfeller i testserien.
 
-    ![Knappen Legg til eksisterende](./media/setup_rsa_tool_57.png)
+    ![Knappen Legg til eksisterende.](./media/setup_rsa_tool_57.png)
 
 2. Velg **Kjør spørring** på siden **Legg til testtilfeller i serie**, og velg deretter testtilfellet som skal legges til i testserien. For denne opplæringen velger du testtilfellet **Opprett et nytt produkt**. Deretter velger du **Legg til testtilfeller** i nedre høyre hjørne på siden (denne knappen vises ikke i illustrasjonen nedenfor).
 
-    ![Kjør spørring-knappen](./media/setup_rsa_tool_58.png)
+    ![Kjør spørring-knappen.](./media/setup_rsa_tool_58.png)
 
     Testtilfellet legges til i testserien **T01 – Produser for lager**.
 
-    ![Testtilfelle lagt til testserien](./media/setup_rsa_tool_59.png)
+    ![Testtilfelle lagt til testserien.](./media/setup_rsa_tool_59.png)
 
 ### <a name="configure-rsat"></a>Konfigurer RSAT
 
 1. Åpne RSAT.
 
-    ![RSAT-ikon](./media/setup_rsa_tool_60.png)
+    ![RSAT-ikon.](./media/setup_rsa_tool_60.png)
 
 2. Du får en advarsel om at Regression Suite Automation Tool krever Selenium, og blir spurt om du vil automatisk laste det ned og installere det nå. Velg **Ja**.
 
-    ![Advarselsmelding om at Regression Suite Automation Tool krever Selenium](./media/setup_rsa_tool_61.png)
+    ![Advarselsmelding om at Regression Suite Automation Tool krever Selenium.](./media/setup_rsa_tool_61.png)
 
 3. Velg **Innstillinger**-knappen (tannhjulsymbolet) i øvre høyre hjørne, og fyll deretter ut følgende felt i dialogboksen som vises:
 
@@ -506,7 +506,7 @@ I eldre versjoner av RSAT måtte du installere Selenium og nettleserdrivere. Du 
         > [!NOTE]
         > Du kan finne vertsnavnet og SOAP-vertsnavnet ved å åpne IIS-behandling, høyreklikke på **Områder \> AOSService** og deretter velge **Rediger bindinger**. Verdiene i **Vertsnavn**-kolonnen gir deg vertsnavnet og SOAP-vertsnavnet (SOAP-vertsnavnet har suffikset **soap** i URL-adressen).
 
-        ![Vertsnavn og SOAP-vertsnavn i Vertsnavn-kolonnen](./media/setup_rsa_tool_63.png)
+        ![Vertsnavn og SOAP-vertsnavn i Vertsnavn-kolonnen.](./media/setup_rsa_tool_63.png)
 
     - **Navn på administratorbruker** – Angi e-postadressen for administratorbruker i testmiljøet.
     - **Avtrykk** – Angi avtrykket for godkjenningssertifikatet, som beskrevet tidligere i denne opplæringen.
@@ -520,7 +520,7 @@ I eldre versjoner av RSAT måtte du installere Selenium og nettleserdrivere. Du 
     - **Tidsavbrudd for testhandling** – Dette feltet styrer tidsavbruddsperioden i minutter for serverforespørsler i Finance and Operation-miljøet. Standardverdien (2 minutter) skal vanligvis være nok. Det kan imidlertid være aktuelt å øke verdien for tregere miljøer hvis det oppstår feil i forbindelse med tidsavbrudd.
     - **Firmanavn** – Angi firmanavnet som skal brukes som standard firma når det opprettes Excel-parameterfiler. Du kan endre firmaet senere ved å redigere Excel-parameterfilen.
 
-    ![Dialogboksen Innstillinger](./media/setup_rsa_tool_62.png)
+    ![Dialogboksen Innstillinger.](./media/setup_rsa_tool_62.png)
 
 4. Velg **Bruk** for å bruke og lagre innstillingene.
 
@@ -532,15 +532,15 @@ I eldre versjoner av RSAT måtte du installere Selenium og nettleserdrivere. Du 
 
 1. Velg **Last inn** for å laste inn **RSAT-testplan** fra Azure DevOps-prosjektet.
 
-    ![Last inn-knappen](./media/setup_rsa_tool_64.png)
+    ![Last inn-knappen.](./media/setup_rsa_tool_64.png)
 
 2. Velg testtilfellet **Opprett et nytt produkt** fra testserien, og velg deretter **Ny \> Generer testkjøring og parameterfiler**.
 
-    ![Kommandoen Generer testkjøring og parameterfiler på Ny-menyen](./media/setup_rsa_tool_65.png)
+    ![Kommandoen Generer testkjøring og parameterfiler på Ny-menyen.](./media/setup_rsa_tool_65.png)
 
     Excel-parameterfilen opprettes i den lokale mappen du angav i RSAT-konfigurasjonen (for eksempel **C:\\Temp\\RegressionTool**).
 
-    ![Excel-parameterfil opprettet](./media/setup_rsa_tool_66.png)
+    ![Excel-parameterfil opprettet.](./media/setup_rsa_tool_66.png)
 
 3. Hvis du vil lagre parameterfilene, velger du **Last opp**. Testautomatiseringsfiler for alle valgte testtilfeller lastes opp til Azure DevOps for fremtidig bruk. (Disse filene omfatter Excel-testparameterfiler.)
 
@@ -553,33 +553,33 @@ I eldre versjoner av RSAT måtte du installere Selenium og nettleserdrivere. Du 
     - **XLSX** – Excel-parameterfil
     - **XML** – Opptaksfil
 
-    ![Filer i Vedlegg-fanen](./media/setup_rsa_tool_67.png)
+    ![Filer i Vedlegg-fanen.](./media/setup_rsa_tool_67.png)
 
 5. Velg testtilfellet som skal kjøres, og velg deretter **Kjør**.
 
     > [!NOTE]
     > Hvis du bruker Internet Explorer, må du kontrollere at skrivebordsoppløsningen er satt til **100 %** i **Skjerminnstillinger \> Skala og oppsett** i Windows før du kjører testtilfeller. Hvis du ikke kan endre denne innstillingen på en virtuell maskin (VM), må du endre den på klienten (den bærbare datamaskinen) som du prøver å få tilgang til VM-en fra. Innstillingene for oppløsning arves deretter av skjerminnstillingene for VM-en.
 
-    ![Skrivebordsoppløsningen satt til 100 %](./media/setup_rsa_tool_68.png)
+    ![Skrivebordsoppløsningen satt til 100 %.](./media/setup_rsa_tool_68.png)
 
 6. Hvis nettleserdriverne ikke er installert på systemet, får du en advarsel om at denne operasjonen krever driveren for \<browser name\>. Deretter blir du spurt om du vil laste den ned og installere den automatisk nå. Velg **Ja**.
 
-    ![Advarsel for Internet Explorer](./media/setup_rsa_tool_69.png)
+    ![Advarsel for Internet Explorer.](./media/setup_rsa_tool_69.png)
 
-    ![Advarsel for Chrome](./media/setup_rsa_tool_70.png)
+    ![Advarsel for Chrome.](./media/setup_rsa_tool_70.png)
 
     > [!NOTE]
     > Hvis du bruker Chrome og får en feilmelding om at økten ikke ble opprettet fordi du bruker feil Chrome-versjon, laster du ned den nyeste Chrome-driveren fra <http://chromedriver.chromium.org/downloads> til mappen **C:\\Programfiler (x86)\\Regression Suite Automation Tool\\Common\\External\\Selenium**.
 
-    ![Feilmelding for Chrome](./media/setup_rsa_tool_71.png)
+    ![Feilmelding for Chrome.](./media/setup_rsa_tool_71.png)
 
     Testtilfellet kjøres, og **Resultat**-feltet oppdateres.
 
-    ![Oppdatert Resultat-felt](./media/setup_rsa_tool_72.png)
+    ![Oppdatert Resultat-felt.](./media/setup_rsa_tool_72.png)
 
     Hvis du har fulgt denne opplæringen slik den er skrevet, mislykkes testtilfellet **Opprett et nytt produkt** fordi oppgaveopptaket for opprettelsen av et produkt lagret produktnavnet som en hardkodet verdi. Hvis du kjører det samme testtilfellet på nytt, skal du få en feilmelding fordi produktet allerede finnes.
 
-    ![Resultat-felt satt til Mislyktes](./media/setup_rsa_tool_72.png)
+    ![Resultat-felt satt til Mislyktes.](./media/setup_rsa_tool_72.png)
 
 ### <a name="view-the-test-results"></a>Vise testresultatene
 
@@ -587,38 +587,38 @@ I eldre versjoner av RSAT måtte du installere Selenium og nettleserdrivere. Du 
 
     Du får en feilmelding.
 
-    ![Feilmelding](./media/setup_rsa_tool_73.png)
+    ![Feilmelding.](./media/setup_rsa_tool_73.png)
 
 2. Velg **Detaljer** for å vise hele feilmeldingen.
 
-    ![Hele feilmeldingen](./media/setup_rsa_tool_74.png)
+    ![Hele feilmeldingen.](./media/setup_rsa_tool_74.png)
 
 3. Hvis du vil vise en detaljert versjon av feilmeldingen i Azure DevOps, velger du **Åpne i Azure DevOps**. I Azure DevOps kan du vise statusen for testtilfellet og den detaljerte feilmeldingen.
 
-    ![Detaljert feilmelding i Azure DevOps](./media/setup_rsa_tool_75.png)
+    ![Detaljert feilmelding i Azure DevOps.](./media/setup_rsa_tool_75.png)
 
 4. Hvis du vil vise testresultatene direkte i Azure DevOps-prosjektet, kan du gå til **Testplaner \> Testplaner \> Kjøringer**. Dobbeltklikk på testkjøringen du vil vise flere detaljer om.
 
-    ![Liste over testkjøringer i Azure DevOps](./media/setup_rsa_tool_76.png)
+    ![Liste over testkjøringer i Azure DevOps.](./media/setup_rsa_tool_76.png)
 
 5. Fanen **Kjøringssammendrag** angir at testtilfellet mislyktes, men den faktiske feilmeldingen vises ikke. Hvis du vil vise den detaljerte feilmeldingen, velger du **Testresultater**-fanen.
 
-    ![Fanen Kjøringssammendrag](./media/setup_rsa_tool_77.png)
+    ![Fanen Kjøringssammendrag.](./media/setup_rsa_tool_77.png)
 
     **Testresultater**-fanen inneholder informasjon om testtilfellet sammen med resultatet og feilmeldingen.
 
-    ![Testresultater-fanen](./media/setup_rsa_tool_78.png)
+    ![Testresultater-fanen.](./media/setup_rsa_tool_78.png)
 
 6. Dobbeltklikk på den aktuelle posten for å vise den detaljerte feilmeldingen.
 
-    ![Detaljert feilmelding](./media/setup_rsa_tool_79.png)
+    ![Detaljert feilmelding.](./media/setup_rsa_tool_79.png)
 
     > [!NOTE]
     > Alle feilmeldinger også tilgjengelige lokalt i **C:\\Brukere\\\$YourUserName\\AppData\\Roaming\\regressionTool\\errormsg-.txt**.
 
 7. Du kan også eksportere resultatene av testkjøringen fra testplannivået ved å velge **Eksporter**.
 
-    ![Eksportere en testplan](./media/setup_rsa_tool_80.png)
+    ![Eksportere en testplan.](./media/setup_rsa_tool_80.png)
 
 ### <a name="modify-the-excel-parameter-file"></a>Endre Excel-parameterfilen
 
@@ -636,23 +636,23 @@ I eldre versjoner av RSAT måtte du installere Selenium og nettleserdrivere. Du 
     > [!NOTE]
     > I tillegg til **Generelt**-fanen inneholder Excel-parameterfilen en datafane for hver skjemaside testtilfellet går til.
 
-    ![Produktnummer-feltet](./media/setup_rsa_tool_81.png)
+    ![Produktnummer-feltet.](./media/setup_rsa_tool_81.png)
 
 4. Velg **Lagre**, og lukk deretter Excel-arbeidsboken.
 5. Velg **Last opp** for å lagre Excel-parameterfilen i Azure DevOps.
 
-    ![Melding om vellykket opplasting](./media/setup_rsa_tool_82.png)
+    ![Melding om vellykket opplasting.](./media/setup_rsa_tool_82.png)
 
     > [!NOTE]
     > Hvis du vil kjøre testtilfeller i en bestemt brukerkontekst, angir du brukerens e-post-ID i **Testbruker**-feltet i **Generelt**-fanen i Excel-parameterfilen. I den nyeste versjonen av RSAT er oppsettet av feltene i Excel-parameterfilen oppdatert, men konseptet er uendret.
     >
-    > ![Testbruker-feltet](./media/setup_rsa_tool_83.png)
+    > ![Testbruker-feltet.](./media/setup_rsa_tool_83.png)
 
 ### <a name="validate-the-results"></a>Validere resultatene
 
 - Velg **Kjør** for å kjøre testtilfellet på nytt, og kontroller at testtilfellet har bestått. Du kan vise testresultatene som beskrevet i delen [Vise testresultatene](#view-the-test-results).
 
-    ![Resultat-feltet satt til Bestått](./media/setup_rsa_tool_84.png)
+    ![Resultat-feltet satt til Bestått.](./media/setup_rsa_tool_84.png)
 
 ### <a name="chaining-of-test-cases"></a>Kjeding av testtilfeller
 
@@ -666,27 +666,27 @@ I denne delen skal du opprette en lagret variabel i det første testtilfellet, o
 2. Velg **Innstillinger**-knappen (tannhjulsymbolet), og velg deretter **Oppgaveopptaker**.
 3. Velg **Rediger opptak**.
 
-    ![Rediger opptak-knappen](./media/setup_rsa_tool_85.png)
+    ![Rediger opptak-knappen.](./media/setup_rsa_tool_85.png)
 
 4. Velg **Åpne fra Lifecycle Services**.
 
-    ![Knappen Åpne fra Lifecycle Services](./media/setup_rsa_tool_86.png)
+    ![Knappen Åpne fra Lifecycle Services.](./media/setup_rsa_tool_86.png)
 
 5. Velg **Velg Lifecycle Services-biblioteket**.
 
-    ![Knappen Velg Lifecycle Services-biblioteket](./media/setup_rsa_tool_87.png)
+    ![Knappen Velg Lifecycle Services-biblioteket.](./media/setup_rsa_tool_87.png)
 
     BPM-biblioteker lastes inn fra LCS.
 
-    ![Laste inn BPM-biblioteker](./media/setup_rsa_tool_88.png)
+    ![Laste inn BPM-biblioteker.](./media/setup_rsa_tool_88.png)
 
 6. Etter at BPM-bibliotekene er lastet inn fra LCS, velger du BPM-biblioteket **RSAT** og forretningsprosessen **Opprett et nytt produkt** som oppgaveopptaket var knyttet til. Velg deretter **OK**.
 
-    ![Velge et BPM-bibliotek og en forretningsprosess](./media/setup_rsa_tool_89.png)
+    ![Velge et BPM-bibliotek og en forretningsprosess.](./media/setup_rsa_tool_89.png)
 
 7. Navnet på det aktuelle oppgaveopptaket angis i feltet **Navn på opptak**. Velg **Start**.
 
-    ![Navnet på oppgaveopptaket i feltet Navn på opptak](./media/setup_rsa_tool_90.png)
+    ![Navnet på oppgaveopptaket i feltet Navn på opptak.](./media/setup_rsa_tool_90.png)
 
 8. Gå til **Behandling av produktinformasjon \> Produkter**, og velg **Ny** for å åpne siden der det opprinnelige oppgaveopptaket, **Opprett et produkt**, ble tatt opp.
 9. Velg **Sett inn trinn**.
@@ -694,15 +694,15 @@ I denne delen skal du opprette en lagret variabel i det første testtilfellet, o
     > [!NOTE]
     > Det nye trinnet settes inn **etter** trinnet du valgte i ruten.
 
-    ![Knappen Sett inn trinn](./media/setup_rsa_tool_91.png)
+    ![Knappen Sett inn trinn.](./media/setup_rsa_tool_91.png)
 
 10. Høyreklikk på **Produktnummer**-feltet, og velg deretter **Oppgaveopptaker \> Kopier**.
 
-    ![Kopier-kommandoen](./media/setup_rsa_tool_92.png)
+    ![Kopier-kommandoen.](./media/setup_rsa_tool_92.png)
 
 11. Det legges til et nytt trinn i ruten. Noter verdien i **Produktnummer**-feltet siden du får behov for det senere.
 
-    ![Nytt trinn lagt til](./media/setup_rsa_tool_93.png)
+    ![Nytt trinn lagt til.](./media/setup_rsa_tool_93.png)
 
 12. Velg **Redigeringen er fullført**.
 13. Velg **Lagre i Lifecycle Services**, og knytt det nye oppgaveopptaket til det samme BPM-biblioteket og den samme forretningsprosessen som det opprinnelige oppgaveopptaket var knyttet til. Hvis du vil ha mer informasjon, kan du se delen [Opprette et oppgaveopptak og lagre det i BPM-biblioteket](#create-a-task-recording-and-save-it-to-the-bpm-library).
@@ -714,7 +714,7 @@ I denne delen skal du opprette en lagret variabel i det første testtilfellet, o
 
 16. Velg **Rediger** for å åpne den nye Excel-parameterfilen. En ny **Lagret variabel**-oppføring vises på linje 9. Denne variabelen, **{{EcoResProductCreate\_Identification\_ProductNumber\_Copy}}**, lagres i XML-filen for oppgaveopptaket og kan brukes i senere tester.
 
-    ![Lagret variabel-oppføringen](./media/setup_rsa_tool_94.png)
+    ![Lagret variabel-oppføringen.](./media/setup_rsa_tool_94.png)
 
 #### <a name="create-a-new-test-case"></a>Opprette et nytt testtilfelle
 
@@ -722,7 +722,7 @@ I denne delen skal du opprette en lagret variabel i det første testtilfellet, o
 2. Velg prosessen **Eksempel på støtteforretningsprosess**, og velg deretter **Redigeringsmodus** til høyre.
 3. Endre verdien i **Navn**-feltet og **Beskrivelse**-feltet til **Frigi produkt**. Velg deretter **Lagre**.
 
-    ![Navnet og beskrivelsen er endret til Frigi produkt](./media/setup_rsa_tool_95.png)
+    ![Navnet og beskrivelsen er endret til Frigi produkt.](./media/setup_rsa_tool_95.png)
 
 #### <a name="create-a-new-task-recording-that-has-a-validate-function"></a>Opprette et nytt oppgaveopptak som har en valideringsfunksjon
 
@@ -731,21 +731,21 @@ I denne delen skal du opprette en lagret variabel i det første testtilfellet, o
     > [!NOTE]
     > Når det gjelder kjedede testtilfeller, anbefaler vi alltid at du finner eller filtrerer for posten du trenger, ved å *skrive inn verdien for feltet manuelt*. På den måten kan verktøyet fastsette posten som handlingen må utføres mot, i det etterfølgende testtilfellet.
 
-    ![Nytt oppgaveopptak som har en valideringsfunksjon](./media/setup_rsa_tool_96.png)
+    ![Nytt oppgaveopptak som har en valideringsfunksjon.](./media/setup_rsa_tool_96.png)
 
     Som den foregående illustrasjonen viser, validerer du verdien i **Produktnummer**-feltet etter at produktet er funnet ved hjelp av hurtigfilteret, men før du velger **Frigi produkter**, for å kontrollere at produkt-ID-en er produkt-ID-en som ble opprettet tidligere. Du kan validere verdien ved å høyreklikke på **Produktnummer**-feltet og deretter velge **Oppgaveopptaker \> Valider \> Gjeldende verdi**.
 
-    ![Validere gjeldende verdi](./media/setup_rsa_tool_97.png)
+    ![Validere gjeldende verdi.](./media/setup_rsa_tool_97.png)
 
 #### <a name="save-the-task-recording-to-bpm"></a>Lagre oppgaveopptaket i BPM
 
 1. Etter at oppgaveopptaket er fullført, velger du **Lagre i Lifecycle Services**.
 
-    ![Lagre fullført oppgaveopptak i Lifecycle Services](./media/setup_rsa_tool_98.png)
+    ![Lagre fullført oppgaveopptak i Lifecycle Services.](./media/setup_rsa_tool_98.png)
 
 2. Bibliotekinformasjon lastes inn fra LCS.
 
-    ![Laste inn bibliotekinformasjon fra LCS](./media/setup_rsa_tool_99.png)
+    ![Laste inn bibliotekinformasjon fra LCS.](./media/setup_rsa_tool_99.png)
 
 3. Velg BPM-biblioteket som oppgaveopptaket skal knyttes til. For denne opplæringen velger du BPM-biblioteket **RSAT** som ble opprettet tidligere, og forretningsprosessen **Frigi produkt** under det. Velg deretter **OK**.
 
@@ -763,22 +763,22 @@ I denne delen skal du opprette en lagret variabel i det første testtilfellet, o
 3. Velg **Kjør spørring** på siden **Legg til testtilfeller i serie**.
 4. Velg det nye testtilfellet som ble opprettet for **Frigi produkt**, og velg deretter **Legg til testtilfeller** i nedre høyre hjørne på siden (denne knappen vises ikke i illustrasjonen nedenfor).
 
-    ![Siden Legg til testtilfeller i serie](./media/setup_rsa_tool_100.png)
+    ![Siden Legg til testtilfeller i serie.](./media/setup_rsa_tool_100.png)
 
     Testserien har nå to testtilfeller.
 
-    ![To testtilfeller i testserien](./media/setup_rsa_tool_101.png)
+    ![To testtilfeller i testserien.](./media/setup_rsa_tool_101.png)
 
 #### <a name="load-test-cases-into-rsat"></a>Laste inn testtilfeller i RSAT
 
 1. Åpne RSAT, og velg **Last inn**.
 2. Testtilfellene lastes inn, og du får en advarsel om at denne handlingen skriver over Excel-testdatafiler, og at lokale endringer går tapt. Du blir også spurt om du vil fortsette. Velg **Ja** for å oppdatere Excel-parameterfiler i det lokale systemet, men ikke Excel-parameterfilene som ble lastet opp til Azure DevOps.
 
-    ![Denne handlingen overskriver Excel-testdatafiler](./media/setup_rsa_tool_102.png)
+    ![Denne handlingen overskriver Excel-testdatafiler.](./media/setup_rsa_tool_102.png)
 
     Begge testtilfellene lastes inn, sammen med Excel-parameterfilen for det første testtilfellet. Siden du valgte **Last opp** i den siste kjøringen, hentes parameterfilene fra Azure DevOps.
 
-    ![Testtilfeller lastet inn](./media/setup_rsa_tool_103.png)
+    ![Testtilfeller lastet inn.](./media/setup_rsa_tool_103.png)
 
 3. Velg bare det andre testtilfellet, og velg deretter **Ny \> Generer testkjøring og parameterfiler**.
 
@@ -787,7 +787,7 @@ I denne delen skal du opprette en lagret variabel i det første testtilfellet, o
 1. Velg bare det andre testtilfellet, og velg deretter **Rediger** for å åpne den tilsvarende Excel-parameterfilen.
 2. Kopier den lagrede variabelen **{{EcoResProductCreate\_Identification\_ProductNumber\_Copy}}** (se delen [Endre et eksisterende oppgaveopptak for å opprette en lagret variabel](#modify-an-existing-task-recording-to-create-a-saved-variable)) fra det første testtilfellet til alle feltene der produktnummeret brukes. I dette tilfellet kopierer du variabelen til feltene **Produktnummer** og **Valider produktnummer** i arket **EcoResProductListPage**.
 
-    ![Feltene Produktnummer og Valider produktnummer](./media/setup_rsa_tool_104.png)
+    ![Feltene Produktnummer og Valider produktnummer.](./media/setup_rsa_tool_104.png)
 
     > [!NOTE]
     > Variabler kan bare sendes mellom tester i den samme testkjøringen. Navnene på variablene må samsvare nøyaktig.
@@ -800,7 +800,7 @@ I denne delen skal du opprette en lagret variabel i det første testtilfellet, o
 1. Velg begge testtilfellene, og velg deretter **Kjør**.
 2. Kontroller at begge testtilfellene har bestått.
 
-    ![Resultat-feltet satt til Bestått for begge testtilfeller](./media/setup_rsa_tool_105.png)
+    ![Resultat-feltet satt til Bestått for begge testtilfeller.](./media/setup_rsa_tool_105.png)
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

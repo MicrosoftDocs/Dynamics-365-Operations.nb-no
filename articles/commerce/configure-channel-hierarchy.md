@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 94d38c5c3a091263b310f346f839e1a67d6c0609
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 79054573fa6f86bea5c4fe014233d71c01020348
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796130"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352596"
 ---
 # <a name="configure-a-channel-to-use-a-channel-navigation-hierarchy"></a>Konfigurere en kanal for å bruke et kanalnavigasjonshierarki
 
@@ -45,7 +45,7 @@ Følg denne fremgangsmåten for å konfigurere en kanal for å bruke et kanalnav
 
 Følgende bilde viser hvordan du konfigurerer en kanal for å bruke et kanalnavigasjonshierarki:
 
-![Eksempel på kanalkonfigurasjon](media/configure-channel-hierarchy-1.png)
+![Eksempel på kanalkonfigurasjon.](media/configure-channel-hierarchy-1.png)
 
 ## <a name="set-attribute-metadata"></a>Angi attributtmetadata
 
@@ -61,9 +61,9 @@ Gjør følgende for å konfigurere attributtmetadata.
 
 Følgende bilde viser et eksempelsett med kanalproduktattributter konfigurert på en kanalkategorinode.
 
-![Kanalattributter på en kanalkategorinode](media/configure-channel-hierarchy-2.png)
+![Kanalattributter på en kanalkategorinode.](media/configure-channel-hierarchy-2.png)
 
-## <a name="publish-changes"></a>Publisere endringer
+## <a name="publish-changes"></a>Publiser endringer
 
 Før endringene kan tre i kraft, må du publisere endringene.
 
@@ -74,11 +74,11 @@ Hvis du vil publisere endringer, gjør du følgende.
 
 Bildet nedenfor viser hvordan du publiserer kanaloppdateringer.
 
-![Publiser kanaloppdateringer](media/configure-channel-hierarchy-3.png)
+![Publiser kanaloppdateringer.](media/configure-channel-hierarchy-3.png)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Opprette et kanalnavigasjonshierarki](create-channel-hierarchy.md)
+[Opprett et hierarki for kanalnavigasjon](create-channel-hierarchy.md)
 
 
 

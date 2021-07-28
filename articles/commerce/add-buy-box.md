@@ -2,7 +2,7 @@
 title: Kjøpsboksmodul
 description: Dette emnet dekker kjøpsboksmoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 09/15/2020
+ms.date: 07/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,20 +14,21 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: dce3c8adcd2926e60d001bddb5c278fac6860268
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 307c9876aa0fed77778fcf81903f9c52e3f5be67
+ms.sourcegitcommit: 7e976059118938b0089e40bef948029a8c088b38
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796228"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "6479238"
 ---
 # <a name="buy-box-module"></a>Kjøpsboksmodul
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Dette emnet dekker kjøpsboksmoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
 
-Begrepet *kjøpsboks* refererer vanligvis til området på en produktdetaljside som er "over folden", og som er vert for all viktig informasjon som kreves for å opprette et produktinnkjøp. (Et område som er "over folden", er synlig når siden lastes inn for første gang, slik at brukere ikke behøver å rulle ned for å se det.)
+Begrepet *kjøpsboks* refererer vanligvis til området på en produktdetaljside (PDP) som er "over folden", og som er vert for all viktig informasjon som kreves for å opprette et produktinnkjøp. (Et område som er "over folden", er synlig når siden lastes inn for første gang, slik at brukere ikke behøver å rulle ned for å se det.)
 
 En kjøpsboks-modul er en spesiell container som brukes til å være vert for alle modulene som vises i innkjøpsboksområdet på en side i produktdetaljer.
 
@@ -35,7 +36,7 @@ URL-adressen til en produktdetaljside inneholder produkt-IDen. All informasjon s
 
 Bildet nedenfor viser et eksempel på en kjøpsboks-modul på en side med produktinformasjon.
 
-![Eksempel på en kjøpsboks-modul](./media/ecommerce-pdp-buybox.PNG)
+![Eksempel på en kjøpsboks-modul.](./media/ecommerce-pdp-buybox.PNG)
 
 ## <a name="buy-box-module-properties-and-slots"></a>Egenskaper og spor for kjøpsboksmodul 
 
@@ -67,14 +68,16 @@ Følgende innstillinger for kjøpsboks-modulen kan konfigureres under **Områdei
 
 - **Antallsgrense for handlevogn-linjeelement** – Denne egenskapen brukes til å angi maksimalt antall for hver vare som kan legges til i handlekurven. En forhandler kan for eksempel bestemme at bare 10 av hvert produkt kan selges i en enkelt transaksjon.
 - **Beholdning** – Hvis du vil ha informasjon om hvordan du bruker beholdningsinnstillinger, kan du se [Bruk beholdningsinnstillinger](inventory-settings.md).
-- **Legg til produkt i handlekurv** – denne egenskapen brukes til å angi atferden etter at en vare er lagt til i handlekurven. De mulige verdiene er **Naviger til handlekurvside**, **Ikke naviger til handlekurvside** og **Vis varsel**. Når verdien er satt til **Naviger til handlekurvside**, sendes brukerne til handlekurvsiden når de har lagt til en vare. Når verdien er satt til **Ikke naviger til handlekurvside**, sendes ikke brukerne til handlekurvsiden når de har lagt til en vare. Når verdien er satt til **Vis varsel**, vises det en bekreftelsesmelding, og brukerne kan fortsette å søke på siden med produktinformasjon. 
+- **Legg til produkt i handlekurv** – Hvis du vil ha informasjon om hvordan du bruker innstillingene for **Legg til produkt i handlekurv**, kan du se [innstillingene for Legg til produkt i handlekurv](add-cart-settings.md).
+
+## <a name="buy-box-module-definition-extensions-in-the-adventure-works-theme"></a>Definisjonstillegg for kjøpsboksmodul i Adventure Works-teamet
+
+Kjøpsboksmodulen som Adventure Works-emnet tilbyr, har en moduldefinisjonsforlengelse som støtter implementering av en produktspesifikasjonsmodul i en trekkspillmodul i en PDP-kjøpsboks. Hvis du vil vise produktspesifikasjonsattributter i en PDP-kjøpsboks, legger du til en produktspesifikasjonsmodul i sporet for trekkspillmodulen i kjøpsbokssporet.
+
 
 > [!IMPORTANT]
-> Innstillingene for **Legg til produkt i handlekurv**-området er tilgjengelige i Dynamics 365 Commerce 10.0.11-versjonen. Hvis du oppdaterer fra en eldre versjon av Dynamics 365 Commerce, må du manuelt oppdatere appsettings.json-filen. Hvis du vil ha instruksjoner om oppdatering av appsettings.json-filen, se [Oppdateringer for SDK og modulbibliotek](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file). 
+> Adventure Works-temaet er tilgjengelig fra Dynamics 365 Commerce-10.0.20-versjonen.
 
-Følgende bilde viser et eksempel på bekreftelsesmeldingen "lagt til i handlekurv" på Fabrikam-området.
-
-![Eksempel på en varslingsmodul](./media/ecommerce-addtocart-notifications.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Samhandling med Commerce Scale Unit
 
@@ -128,7 +131,9 @@ Hvis du vil legge til en kjøpsboksmodul på en ny side og angi de nødvendige e
 
 [Modul for sosial deling](social-share-module.md)
 
-[Beregne lagertilgjengelighet for detaljhandelskanaler](calculated-inventory-retail-channels.md)
+[Innstillinger for Legg til produkt i handlevogn](add-cart-settings.md)
+
+[Beregn lagertilgjengelighet for detaljhandelskanaler](calculated-inventory-retail-channels.md)
 
 [Oppdateringer for SDK og modulbibliotek](e-commerce-extensibility/sdk-updates.md)
 

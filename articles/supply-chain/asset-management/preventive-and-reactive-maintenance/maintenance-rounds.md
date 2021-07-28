@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 62f812c7c7fa06deb5f41508044b029e6c5ca4a0
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 24f019547b9edc932c203d5dc8c73013007af599
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825740"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361048"
 ---
 # <a name="maintenance-rounds"></a>Vedlikeholdsrunder
 
@@ -80,7 +80,7 @@ I **Aktivastyring** kan du opprette vedlikeholdsrunder for ulike aktiva, der du 
 
 Illustrasjonen nedenfor viser et eksempel på en vedlikeholdsrunding som inneholder tre aktiva.
 
-![Figur 1](media/13-preventive-maintenance.png)
+![Figur 1.](media/13-preventive-maintenance.png)
 
 
 ## <a name="schedule-maintenance-rounds"></a>Planlegg vedlikeholdsrunder
@@ -106,9 +106,9 @@ Når du har definert en vedlikeholdsrunde, kjører du en planleggingsjobb for å
 
 De to illustrasjonene nedenfor viser en planlagt jobb dialogboksen **Planlegg vedlikeholdsrunder** og linjer for vedlikeholdsplan som er opprettet i **Alle vedlikeholdsplaner**, som er basert på den planlagte jobben.
 
-![Figur 2](media/14-preventive-maintenance.png)
+![Figur 2.](media/14-preventive-maintenance.png)
 
-![Figur 3](media/15-preventive-maintenance.png)
+![Figur 3.](media/15-preventive-maintenance.png)
 
 - Når arbeidsordrer opprettes manuelt for aktiva som dekkes av en leverandørgaranti, vises en dialogboks for å gjøre brukeren oppmerksom på garantien. Opprettingen av arbeidsordren kan deretter avbrytes. Kontrollen av en garantirelasjon utelates for arbeidsordrer som opprettes automatisk.  
 - Du kan sette opp en satsvis jobb i hurtigfanen **Kjør i bakgrunnen** for å planlegge runder med jevne mellomrom.  

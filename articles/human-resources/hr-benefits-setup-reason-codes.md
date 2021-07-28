@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6fc641233a1bd217de5b9eb6e06560b989f91c7b
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 176ce59547456a14b494caa4dc3c2d8251920fe5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6056354"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360550"
 ---
 # <a name="set-up-reason-codes"></a>Definer årsakskoder
 
@@ -56,15 +56,15 @@ Du vil se et banner på **Koblinger**-siden i arbeidsområdet **Fordelsadministr
 
 1. Velg **Årsakskoder** for å få detaljer om migreringsstatus.
 
-   [![Årsakskoder](./media/hr-benefits-setup-reason-codes-link.png)](./media/hr-benefits-setup-reason-codes-link.png)
+   [![Årsakskoder.](./media/hr-benefits-setup-reason-codes-link.png)](./media/hr-benefits-setup-reason-codes-link.png)
 
 2. Velg en årsakskode som ikke kan migreres.
 
-   [![Årsakskode for migreringsstatus](./media/hr-benefits-setup-reason-codes-status.png)](./media/hr-benefits-setup-reason-codes-status.png)
+   [![Årsakskode for migreringsstatus.](./media/hr-benefits-setup-reason-codes-status.png)](./media/hr-benefits-setup-reason-codes-status.png)
 
 3. Velg **Migrer årsakskode**.
 
-   [![Overfør årsakskode](./media/hr-benefits-setup-reason-codes-migrate.png)](./media/hr-benefits-setup-reason-codes-migrate.png)
+   [![Overfør årsakskode.](./media/hr-benefits-setup-reason-codes-migrate.png)](./media/hr-benefits-setup-reason-codes-migrate.png)
 
 4. I ruten **Migrering av fordelsårsakskode** har du to alternativer for tilordning av en årsakskode for Personaladministrasjon:
 
@@ -73,10 +73,10 @@ Du vil se et banner på **Koblinger**-siden i arbeidsområdet **Fordelsadministr
      > Du kan bare bruke en eksisterende årsakskode i Personaladministrasjon hvis en annen årsakskode for fordelsadministrasjon ikke allerede har migrert til den.
    - Hvis du vil opprette en ny årsakskode i Personaladministrasjon, angir du en ny i **Ny årsakskode**, og deretter skriver inn en beskrivelse i **Ny beskrivelse**.
 
-   [![Tilordne til en årsakskode for personaladministrasjon](./media/hr-benefits-setup-reason-codes-mapping.png)](./media/hr-benefits-setup-reason-codes-mapping.png)
+   [![Tilordne til en årsakskode for personaladministrasjon.](./media/hr-benefits-setup-reason-codes-mapping.png)](./media/hr-benefits-setup-reason-codes-mapping.png)
 
 Etter at årsakskoder er migrert til Personaladministrasjon, blir alternativet for å bruke dem i Fordelsbehandling automatisk satt til **Ja**.
 
-[![Bruke årsakskode i Fordelsbehandling](./media/hr-benefits-setup-reason-codes-use.png)](./media/hr-benefits-setup-reason-codes-use.png)
+[![Bruke årsakskode i Fordelsbehandling.](./media/hr-benefits-setup-reason-codes-use.png)](./media/hr-benefits-setup-reason-codes-use.png)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

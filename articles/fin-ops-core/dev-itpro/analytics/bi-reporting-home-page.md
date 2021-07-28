@@ -8,18 +8,20 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.custom: 27681
+ms.custom:
+- "27681"
+- intro-internal
 ms.assetid: c4624bc8-3661-49e6-9cb4-87778acdc302
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e20b6d586e4effbb56d476504a679c3b0b8adb3c
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 0389ed6ca7926a4981029f6e91be2d1be4b8618e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754500"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354421"
 ---
 # <a name="reporting-and-analytics-with-power-bi-home-page"></a>Startside for rapportering og analyse med Power BI
 
@@ -37,7 +39,7 @@ Arbeidsområder kan bruke omfattende infografikk og bilder som støttes av Micro
 
 Brukere kan samhandle med data ved å klikke eller trykke på bilder på siden. De kan se årsak og virkning, og de kan utføre enkle hva om-operasjoner uten å forlate arbeidsområdet. Takket være enestående interaktive bilder kan brukerne kose seg med å utforske data og oppdage skjulte trender.
 
-![Eksempel på Power BI i et arbeidsområde](./media/Power-BI-in-D365-Workspace.png)
+![Eksempel på Power BI i et arbeidsområde.](./media/Power-BI-in-D365-Workspace.png)
 
 Hvis du vil finne ut mer, kan du se følgende emner:
 
@@ -50,7 +52,7 @@ Hvis du vil finne ut mer, kan du se følgende emner:
 ## <a name="business-documents-and-printing"></a>Forretningsdokumenter og utskrift
 Rapporteringsløsninger brukes ofte til å lagre og kommunisere detaljene i forretningstransaksjoner. Derfor må en rapporteringsløsning kunne produsere fysiske manifestasjoner av forretningsdata ved hjelp av eksisterende enheter, for eksempel skrivere. Salgsfakturaer, kontoutdrag for kunde og sjekker er eksempler på forretningsdokumenter.
 
-[![Eksempel på forretningsdokumenter](./media/image-of-business-documents-1024x632.png)](./media/image-of-business-documents.png)
+[![Eksempel på forretningsdokumenter.](./media/image-of-business-documents-1024x632.png)](./media/image-of-business-documents.png)
 
 Hvis du vil finne ut mer, kan du se følgende emner:
 
@@ -61,7 +63,7 @@ Hvis du vil finne ut mer, kan du se følgende emner:
 ## <a name="electronic-reporting"></a>Elektronisk rapportering
 Det elektroniske rapporteringsverktøyet (ER) er verktøyet du bruker til å konfigurere formater for elektroniske dokumenter som overholder de juridiske kravene i ulike land eller regioner. Programmene for elektronisk rapportering inkluderer revisjon, mva-rapportering og elektronisk fakturering.
 
-[![Eksempel på elektronisk rapportering](./media/electronic-reporting-example.png)](./media/electronic-reporting-example.png)
+[![Eksempel på elektronisk rapportering.](./media/electronic-reporting-example.png)](./media/electronic-reporting-example.png)
 
 Hvis du vil finne ut mer, kan du se følgende emner:
 
@@ -72,7 +74,7 @@ Hvis du vil finne ut mer, kan du se følgende emner:
 ## <a name="financial-reporting"></a>Finansrapportering
 Standard finansrapporter blir formidlet, og de bruker de standard hovedkontokategoriene. Du kan bruke rapportutformingen til å opprette eller endre tradisjonelle regnskapsoppgjør, for eksempel inntektsregnskap og balanse. Deretter kan du dele resultatene med andre medlemmer i organisasjonen. Eksempler på finansrapportering inkluderer balanse, kontantstrøm og oppsummert råbalanse fra år til år.
 
-[![Eksempel på finansrapportering](./media/financial-reporting-example.png)](./media/financial-reporting-example.png)
+[![Eksempel på finansrapportering.](./media/financial-reporting-example.png)](./media/financial-reporting-example.png)
 
 Hvis du vil finne ut mer, kan du se følgende emner:
 

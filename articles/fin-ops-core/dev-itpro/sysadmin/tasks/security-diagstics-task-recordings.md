@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Version 10.0.9
-ms.openlocfilehash: cb4d544d8d74ad10432901381253f84ec9331ae7
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: cb14a22a231d3fcc139228b59af00d405626cd2c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745771"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358555"
 ---
 # <a name="security-diagnostics-for-task-recordings"></a>Sikkerhetsdiagnostikk for oppgaveregistreringer
 
@@ -39,7 +39,7 @@ Dette emnet inneholder informasjon om hvordan du analyserer og administrerer kra
 
 4. Velg en bruker i feltet **Bruker-ID**. Hvis brukeren ikke har tillatelser for noen menyelementer, vil feltet **Manglende tillatelser** oppdateres til **Ja**.
   
-  ![Side for elementdetaljer for sikkerhetsmeny](../media/Security-Menu-Item-Details.png)
+  ![Side for elementdetaljer for sikkerhetsmeny.](../media/Security-Menu-Item-Details.png)
 
 5. Velg **Legg til referanse** for å vise en liste over sikkerhetsobjektene, inkludert roller, plikter og rettigheter, som gir den manglende tillatelsen.
 6. Velg et sikkerhetsobjekt fra listen:

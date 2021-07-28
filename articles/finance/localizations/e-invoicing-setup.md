@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 9aac18155fbc7a87554ac0521cd9f40d11eba9e2
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 35a2abaa2165288097bc07b47320e002efc290e7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5890837"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348492"
 ---
 # <a name="set-up-electronic-invoicing"></a>Definere Elektronisk fakturering
 
@@ -37,7 +37,7 @@ Konfigureringen er avhengig av konfigurasjonen av formatet for Elektronisk rappo
 
 Illustrasjonen nedenfor viser hovedkomponentene i en funksjon for Elektronisk fakturering.
 
-![Oversikt over funksjon for Elektronisk fakturering](media/e-Invoicing-services-feature-setup-Overview-e-Invoicing-feature.png)
+![Oversikt over funksjon for Elektronisk fakturering.](media/e-Invoicing-services-feature-setup-Overview-e-Invoicing-feature.png)
 
 På grunn av variasjoner i fakturaformater og handlingsflyter kan funksjonsoppsettet variere etter land eller region, eller i henhold til forretningskrav.
 
@@ -50,7 +50,7 @@ Installasjonsprosessen må fullføres i RCS-miljøet. Følg disse trinnene for �
 3. På siden **Funksjoner for Elektronisk fakturering** velger du **Importer** for å importere ER-datamodellkonfigurasjonen fra det globale repositoriet.
 4. Velg **Legg til** for å opprette en funksjon for Elektronisk fakturering. Du kan enten opprette funksjonen fra grunnen av eller avlede den fra en eksisterende funksjon for Elektronisk fakturering.
 
-    ![Legge til en funksjon for Elektronisk fakturering](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature.png)
+    ![Legge til en funksjon for Elektronisk fakturering.](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature.png)
 
 > [!NOTE]
 > Når du oppretter en ny funksjon for Elektronisk fakturering, har den et versjonsnummer, og standardstatusen er satt til **Utkast**.
@@ -63,21 +63,21 @@ Følg disse trinnene for å legge til ER-formater i funksjonen for Elektronisk f
 
 1. På siden for **Funksjoner for Elektronisk fakturering** i kategorien **Konfigurasjoner** velger du **Legg til** for å legge til ER-filformatkonfigurasjoner for funksjonen for Elektronisk fakturering.
 
-    ![Legge til funksjonskonfigurasjoner for Elektronisk fakturering](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Configurations.png)
+    ![Legge til funksjonskonfigurasjoner for Elektronisk fakturering.](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Configurations.png)
 
     > [!NOTE]
     > Når du oppretter en funksjon for Elektronisk fakturering fra grunnen av, må du legge til alle ER-filformatkonfigurasjoner manuelt. Når du avleder en funksjon for Elektronisk fakturering fra en eksisterende funksjon, opprettes ER-filformatkonfigurasjonene automatisk, fordi de arves fra den opprinnelige funksjonen for Elektronisk fakturering.
 
 2. Velg **Rediger** for å åpne siden **Formatutforming**, der du kan redigere ER-filformatkonfigurasjonen.
 
-    ![Redigere funksjonskonfigurasjoner for Elektronisk fakturering](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Configurations.png)
+    ![Redigere funksjonskonfigurasjoner for Elektronisk fakturering.](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Configurations.png)
 
     > [!NOTE]
     > Når du redigerer formatet, settes statusen for konfigurasjonsversjonen til **Utkast**.
 
 3. Bruk siden **Formatutforming** til å endre filformatkonfigurasjonen. Hvis du vil ha mer informasjon, kan du se [Opprette konfigurasjoner for elektronisk dokument](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md).
 
-    ![Formatutformingsside](media/e-Invoicing-services-feature-setup-ER-Format-designer.png)
+    ![Formatutformingsside.](media/e-Invoicing-services-feature-setup-ER-Format-designer.png)
 
 ### <a name="feature-setups"></a>Funksjonsoppsett
 
@@ -87,18 +87,18 @@ Følg disse trinnene for å legge til funksjonsoppsett i funksjonen for Elektron
 
 1. På siden for **Funksjoner for Elektronisk fakturering** i kategorien **Oppsett** velger du **Legg til** for å legge til funksjonsoppsett i funksjonen for Elektronisk fakturering.
 
-    ![Legge til oppsett for funksjon for Elektronisk fakturering](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Setups.png)
+    ![Legge til oppsett for funksjon for Elektronisk fakturering.](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Setups.png)
 
     > [!NOTE]
     > Når du oppretter en funksjon for Elektronisk fakturering fra grunnen av, må du legge til alle funksjonsoppsettene du trenger, manuelt. Når du avleder en funksjon for Elektronisk fakturering fra en eksisterende funksjon, opprettes alle funksjonsoppsett automatisk, fordi de arves fra den opprinnelige funksjonen for Elektronisk fakturering.
 
 2. Velg **Rediger** for å redigere funksjonsversjonsoppsettet.
 
-    ![Redigere oppsett for funksjon for Elektronisk fakturering](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Setups.png)
+    ![Redigere oppsett for funksjon for Elektronisk fakturering.](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Setups.png)
 
 3. Bruk siden for **funksjonsversjonsoppsett** til å konfigurere handlinger, relevansregler og variabler.
 
-    ![Handlinger, relevansregler og variabler](media/e-Invoicing-services-feature-setup-View-Actions-Applicability-Rules-Variables.png)
+    ![Handlinger, relevansregler og variabler.](media/e-Invoicing-services-feature-setup-View-Actions-Applicability-Rules-Variables.png)
 
 ### <a name="actions"></a>Handlinger
 
@@ -113,7 +113,7 @@ På siden for **oppsett av funksjonsversjoner** i kategorien **Handlinger** i hu
 - Velg **Ny** eller **Slett** for å legge til nye handlinger eller slette eksisterende handlinger.
 - Velg **Opp** eller **Ned** for å flytte valgte handlinger opp eller ned i rutenettet og dermed endre rekkefølgen som de kjøres i. Handlingene kjøres i den rekkefølgen de vises i, i rutenettet, fra øverst til nederst.
 
-![Behandle handlinger](media/e-Invoicing-services-feature-setup-Manage-Actions.png)
+![Behandle handlinger.](media/e-Invoicing-services-feature-setup-Manage-Actions.png)
 
 Følgende tabell beskriver feltene som er tilgjengelige i hurtigkategorien **Handlinger**.
 
@@ -129,7 +129,7 @@ Følgende tabell beskriver feltene som er tilgjengelige i hurtigkategorien **Han
 
 Hurtigfanen **Parametere** viser parameterne for handlingen som er valgt i hurtigfanen **Handlinger**.
 
-![Hurtigfanen Parametere](media/e-Invoicing-services-feature-setup-View-Actions-Parameters.png)
+![Hurtigfanen Parametere.](media/e-Invoicing-services-feature-setup-View-Actions-Parameters.png)
 
 Følgende tabell beskriver feltene som er tilgjengelige i hurtigkategorien **Parametere**.
 
@@ -259,20 +259,20 @@ Relevansregler gjør det mulig å opprette logiske regler som bestemmer brukskon
 
 1. På siden for **funksjonsversjonsoppsett** i kagetorien **Relevansregler** velger du **Ny** for å legge til en gyldighetsregel.
 
-    ![Behandle relevansregler](media/e-Invoicing-services-feature-setup-Manage-Actions-Applicability-rules.png)
+    ![Behandle relevansregler.](media/e-Invoicing-services-feature-setup-Manage-Actions-Applicability-rules.png)
 
 2. I rutenettet velger du setningene som skal grupperes.
 3. Velg **Grupper setning**.
 
-    ![Gruppere setninger](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-Group-clause.png)
+    ![Gruppere setninger.](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-Group-clause.png)
 
     Når setninger grupperes, legges det til en ny kolonne i rutenettet. Denne kolonnen angir den logiske operatoren for de grupperte setningene.
 
-    ![Logisk operator for grupperte setninger](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-Group-criterias.png)
+    ![Logisk operator for grupperte setninger.](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-Group-criterias.png)
 
 Hvis du vil fjerne grupperingen av setningene, velger du de grupperte setningene som grupperingen skal oppheves for, og deretter velger du alternativet for **Opphev gruppering av setning**.
 
-![Oppheve gruppering av setninger](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-UnGroup-criterias.png)
+![Oppheve gruppering av setninger.](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-UnGroup-criterias.png)
 
 > [!NOTE]
 > Når du opphever gruppering av en setning, må du alltid starte fra det innerste grupperingsnivået.
@@ -294,7 +294,7 @@ Du kan opprette variabler og deretter bruke dem som inndataverdi for en paramete
 
 - På siden for **funksjonsversjonsoppsett**, i kategorien **Variabler**, velger du **Ny** eller **Slett** for å administrere variabler.
 
-    ![Administrere variabler](media/e-Invoicing-services-feature-setup-Manage-Variables.png)
+    ![Administrere variabler.](media/e-Invoicing-services-feature-setup-Manage-Variables.png)
 
 Følgende tabell beskriver feltene som er tilgjengelige i kategorien **Variabler**.
 
@@ -310,7 +310,7 @@ Følgende tabell beskriver feltene som er tilgjengelige i kategorien **Variabler
 
 - På siden for **funksjonsversjonsoppsett**, i handlingsruten, velger du **Valider** for å validere funksjonsversjonsoppsettet.
 
-   ![Velge Valider-knappen](media/e-Invoicing-services-feature-setup-Select-Validate-Button.png)
+   ![Velge Valider-knappen.](media/e-Invoicing-services-feature-setup-Select-Validate-Button.png)
 
 Valideringen kontrollerer konsekvensen for hele konfigurasjonen. Hvis for eksempel en bestemt parameter for en handling er obligatorisk, men verdien forblir tom, oppdager valideringen denne inkonsekvensen, og du får en advarsel.
 
@@ -323,7 +323,7 @@ Følg disse trinnene for å aktivere et miljø for Elektronisk fakturering for f
 1. På siden for **Funksjoner for Elektronisk fakturering**, i kategorien **Miljøer**, velger du **Aktiver** for å legge til et miljø for Elektronisk fakturering.
 2. I **Gyldig fra**-feltet angir du datoen for når det nye miljøet trer i kraft.
 
-![Aktivere et miljø for Elektronisk fakturering](media/e-Invoicing-services-feature-setup-Select-Enable-e-Invoicing-feature-Environment.png)
+![Aktivere et miljø for Elektronisk fakturering.](media/e-Invoicing-services-feature-setup-Select-Enable-e-Invoicing-feature-Environment.png)
 
 ## <a name="organizations"></a>Organisasjoner
 

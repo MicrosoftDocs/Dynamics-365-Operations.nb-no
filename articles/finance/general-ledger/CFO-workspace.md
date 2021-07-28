@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: b42fc4f0e299dc785ef465efc54286effccfb92b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e44e0ff5c36190d0f66afb6a59389fee826d8214
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823842"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360718"
 ---
 # <a name="add-financial-dimensions-to-the-cfo-workspace"></a>Legge til finansdimensjoner i CFO-arbeidsområdet
 
@@ -45,14 +45,14 @@ Dette emnet forklarer hvordan du legger til finansdimensjoner i CFO-arbeidsområ
 11. Endre verdien **Kryssfiltreringsretning** til **Enkelt**.
 12. Merk av for både **Gjør denne relasjonen aktiv** og **Anta referanseintegritet**, velg **OK**, og velg deretter **Lukk**.
 
-    [![Opprette en relasjon](./media/Create-relationship.png)](./media/Create-relationship.png)
+    [![Opprette en relasjon.](./media/Create-relationship.png)](./media/Create-relationship.png)
 
 13. I **Felt**-listen skal du se tabellen og de tilgjengelige finansdimensjonene. Dra finansdimensjonene som du vil bruke, til rapportnivåfiltrene.
 14. Lagre endringene.
 15. I applikasjonsobjekttreet høyreklikker du prosjektet, og velger deretter **Synkroniser**.
 16. Bygge prosjektet, og åpne deretter programmet for å vise resultatene.
 
-    [![Fullført arbeidsområde](./media/workspace.png)](./media/workspace.png)
+    [![Fullført arbeidsområde.](./media/workspace.png)](./media/workspace.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

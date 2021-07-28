@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: c398579a0a408e7f5625a3e801a967955c4b1e5b
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: c731e0284b720394059384e21deea1ea4407718c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020121"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352816"
 ---
 # <a name="tax-isnt-calculated-or-the-tax-amount-is-zero"></a>Avgift beregnes ikke eller avgiftsbeløpet er null
 
@@ -32,17 +32,17 @@ Hvis transaksjonen ikke velger de riktige avgiftskodene, eller hvis den ikke vel
 
 1. I hurtigfanen **Linjedetaljer** i kategorien **Oppsett** i **Merverdiavgift**-delen kontrollerer du at riktig avgiftsgruppe er valgt i feltene **Varens mva-gruppe** og **Merverdiavgiftsgruppe**. Hvis riktig avgiftsgruppe ikke er valgt, velger du dem.
 
-    [![Feltene Varens mva-gruppe og Merverdiavgiftsgruppe](./media/tax-not-calculated-tax-amount-zero-Picture1.png)](./media/tax-not-calculated-tax-amount-zero-Picture1.png)
+    [![Feltene Varens mva-gruppe og Merverdiavgiftsgruppe.](./media/tax-not-calculated-tax-amount-zero-Picture1.png)](./media/tax-not-calculated-tax-amount-zero-Picture1.png)
 
 2. Gå til **Avgift** \> **Indirekte avgifter** \> **Merverdiavgift** \> **Mva-grupper**.
 3. Velg den aktuelle mva-gruppen, og noter deg avgiftskoden i **Mva-kode**-feltet i the **Oppsett**-hurtigfanen.
 
-    [![Siden Mva-grupper](./media/tax-not-calculated-tax-amount-zero-Picture2.png)](./media/tax-not-calculated-tax-amount-zero-Picture2.png)
+    [![Siden Mva-grupper.](./media/tax-not-calculated-tax-amount-zero-Picture2.png)](./media/tax-not-calculated-tax-amount-zero-Picture2.png)
 
 4. Gå til **Avgift** \> **Indirekte avgifter** \> **Merverdiavgift** \> **Vare, mva-grupper**.
 5. Velg den riktige mva-gruppen for vare, og kontroller deretter at mva-koden i **Mva-kode**-feltet samsvarer med mva-koden i mva-gruppen i **Oppsett**-hurtigfanen.
 
-    [![Siden Vare, mva-grupper](./media/tax-not-calculated-tax-amount-zero-Picture3.png)](./media/tax-not-calculated-tax-amount-zero-Picture3.png)
+    [![Siden Vare, mva-grupper.](./media/tax-not-calculated-tax-amount-zero-Picture3.png)](./media/tax-not-calculated-tax-amount-zero-Picture3.png)
 
 6. Hvis avgiftskodene ikke samsvarer, oppdaterer du mva-koden for én av gruppene.
 
@@ -53,12 +53,12 @@ Hvis avgiftskodene er fritatt, eller hvis mva-satsen er 0 (null), blir resultate
 1. Gå til **Avgift** \> **Indirekte avgifter** \> **Merverdiavgift** \> **Mva-grupper**.
 2. Velg den riktige mva-gruppen, og kontroller deretter at det ikke er merket av for **Avgiftsfri** i **Oppsett**-hurtigfanen. Hvis du har merket av for dette feltet, fjerner du merket.
 
-    [![Avmerkingsboksen Avgiftsfri på Mva-grupper-siden](./media/tax-not-calculated-tax-amount-zero-Picture4.png)](./media/tax-not-calculated-tax-amount-zero-Picture4.png)
+    [![Avmerkingsboksen Avgiftsfri på Mva-grupper-siden.](./media/tax-not-calculated-tax-amount-zero-Picture4.png)](./media/tax-not-calculated-tax-amount-zero-Picture4.png)
 
 3. Gå til **Avgift** \> **Indirekte avgifter** \> **Merverdiavgift** \> **Mva-koder**.
 4. Velg den riktige mva-koden, og kontroller deretter at mva-satsverdien i **Verdi**-feltet ikke har verdien 0 (null). Hvis feltet er 0, må du oppdatere feltet slik at det settes til riktig avgiftssats.
 
-    [![Verdi-felt på siden Verdier for merverdiavgiftskode](./media/tax-not-calculated-tax-amount-zero-Picture5.png)](./media/tax-not-calculated-tax-amount-zero-Picture5.png)
+    [![Verdi-felt på siden Verdier for merverdiavgiftskode.](./media/tax-not-calculated-tax-amount-zero-Picture5.png)](./media/tax-not-calculated-tax-amount-zero-Picture5.png)
 
 ## <a name="determine-whether-zero-is-the-correct-tax-amount"></a>Bestem om null er riktig mva-beløp
 
@@ -67,7 +67,7 @@ I noen scenarier er et mva-beløp på 0 (null) riktig. Følg denne fremgangsmåt
 1. Gå til **Økonomimodul** \> **Finansoppsett** \> **Parametere for økonomimodul**.
 2. Kontroller at **Total** er valgt i **Beregningsmetode**-feltet i kategorien **Merverdiavgift**.
 
-    [![Beregningsmetode-felt på siden Parametere for økonomimodul](./media/tax-not-calculated-tax-amount-zero-Picture6.png)](./media/tax-not-calculated-tax-amount-zero-Picture6.png)
+    [![Beregningsmetode-felt på siden Parametere for økonomimodul.](./media/tax-not-calculated-tax-amount-zero-Picture6.png)](./media/tax-not-calculated-tax-amount-zero-Picture6.png)
 
 3. Gå til **Avgift** \> **Indirekte avgifter** \> **Merverdiavgift** \> **Mva-koder**.
 4. Velg den riktige mva-koden, velg **Beregning** \> **Grensegrunnlag**, og kontroller at grensegrunnlaget er satt til **Nettobeløp på fakturasaldo** eller **Fakturatotal inkl. andre mva-beløp**. Hvis du vil ha mer informasjon, kan du se [Fakturatotal inkl. andre mva-beløp](marginal-base-field.md#invoice-total-incl-other-sales-tax-amounts).

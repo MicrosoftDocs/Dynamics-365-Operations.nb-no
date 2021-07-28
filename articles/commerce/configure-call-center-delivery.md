@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: ac3d540ee3d1737e4e8be45394cd5807ae4a8d6f
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 9636348e7840206ad1ef5669eae7f553231cadf1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796154"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352620"
 ---
 # <a name="configure-call-center-delivery-modes-and-charges"></a>Konfigurere leveringsmåter og tillegg for telefonsenter
 
@@ -65,11 +65,11 @@ I **Linjer**-delen kan du definere én eller flere tillegg per valuta, etter beh
 
 Firmaer konfigurerer ofte fordelte tillegg. I slike tilfeller er beløpet som kunder betaler for levering, basert på ordreverdien. For å konfigurere fordelte tillegg angir du verdier i feltene **Fra beløp** og **Til beløp** i tillegg til å definere selve tillegget i **Gebyrverdi**-feltet. For eksempel for alle ordrer som har en verdi som er mindre enn $50, krever en forhandler $5.95 for frakt på land. For ordrer som har en verdi som er lik eller større enn $50, men mindre enn $100, krever en forhandleren $7.95. For ordrer som har en verdi som er lik eller større enn $100, gir forhandleren gratis frakt. Illustrasjonen nedenfor viser konfigurasjonen av disse tilleggene.
 
-![Eksempel på fast fordelte tillegg](media/fixedtieredcharges.png)
+![Eksempel på fast fordelte tillegg.](media/fixedtieredcharges.png)
 
 Du kan bruke en blanding av kategorier for tillegg, avhengig av dine forretningsbehov. For eksempel for alle ordrer som har en verdi som er mindre enn $100, er det et fast tillegg på $9.95 for frakt. For ordrer som har en verdi som er lik eller større enn $100, beregnes leveringstillegg med en sats på 5 prosent av ordreverdien. Illustrasjonen nedenfor viser konfigurasjonen av disse tilleggene.
 
-![Eksempel på blandede fordelte tillegg](media/mixedtieredcharges.png)
+![Eksempel på blandede fordelte tillegg.](media/mixedtieredcharges.png)
 
 ## <a name="apply-delivery-modes-during-order-entry-in-a-call-center"></a>Bruk leveringsmåter under ordreregistrering i et telefonsenter
 

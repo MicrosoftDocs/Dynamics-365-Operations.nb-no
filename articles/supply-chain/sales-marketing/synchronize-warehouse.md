@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: f302f780fa8ba3d387a71770024a1bf7ad42c4ef
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: e69c35745959c6f3a90a7c597d37316e9da5358e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5910264"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359563"
 ---
 # <a name="synchronize-warehouses-from-supply-chain-management-to-field-service"></a>Synkronisere lagre fra Supply Chain Management til Field Service
 
@@ -31,7 +31,7 @@ ms.locfileid: "5910264"
 
 Dette emnet omhandler malene og de underliggende oppgavene som brukes til å synkronisere lagre fra Dynamics 365 Supply Chain Management til Dynamics 365 Field Service.
 
-[![Synkronisering av forretningsprosesser mellom Supply Chain Management og Field Service](./media/FSWarehouseOW.png)](./media/FSWarehouseOW.png)
+[![Synkronisering av forretningsprosesser mellom Supply Chain Management og Field Service.](./media/FSWarehouseOW.png)](./media/FSWarehouseOW.png)
 
 ## <a name="templates-and-tasks"></a>Maler og oppgaver
 Følgende mal og underliggende oppgaver brukes til å utføre synkronisering av lagre fra Supply Chain Management til Field Service.
@@ -77,7 +77,7 @@ Følgende illustrasjon viser en tilordning av malen i Dataintegrering.
 
 ### <a name="warehouses-supply-chain-management-to-field-service-warehouse"></a>Lagre (Supply Chain Management til Field Service): Lagre
 
-[![Maltilordning i Dataintegrering](./media/Warehouse1.png)](./media/Warehouse1.png)
+[![Maltilordning i Dataintegrering.](./media/Warehouse1.png)](./media/Warehouse1.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

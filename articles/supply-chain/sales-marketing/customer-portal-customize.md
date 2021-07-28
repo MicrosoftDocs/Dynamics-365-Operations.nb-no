@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: ea1fe6ba374c77784c88cf8202bff2eace217b6a
-ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
+ms.openlocfilehash: b285cefc35654695ee631cc73baa0ccc2c1b5ac9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "6102716"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359891"
 ---
 # <a name="customize-and-use-the-customer-portal"></a>Tilpasse og bruke kundeportalen
 
@@ -27,7 +27,7 @@ Dette emnet beskriver de ulike sidene som er tilgjengelige som standard i kundep
 
 Kundeportalen tilbyr enkelte nettsider og handlinger som standard. Følgende områdekart gir en oversikt over disse nettsidene og handlingene, og rollene som kan utføre handlingene.
 
-![Områdekart for kundeportal](media/customer-portal-site-map.png "Områdekart for kundeportal")
+![Områdekart for kundeportal.](media/customer-portal-site-map.png "Områdekart for kundeportal")
 
 ## <a name="typical-customizations"></a>Vanlige tilpasninger
 
@@ -61,12 +61,12 @@ Her er standardtrinnene for å sende en ordre fra kundeportalen.
     - **Rekvisisjonsnummer** – angi rekvisisjonsnummeret for ordren. Dette feltet er ikke obligatorisk.
     - **Leveringsland/-område** – angi landet eller området som varene skal leveres til. Dette feltet angis automatisk for brukere som ikke er administratorer.
 
-    ![Ordreinformasjonsside](media/customer-portal-order-information.png "Ordreinformasjonsside")
+    ![Ordreinformasjonsside.](media/customer-portal-order-information.png "Ordreinformasjonsside")
 
 1. Velg **Neste**.
 1. På **Varer**-siden velger du **Legg til vare**.
 
-    ![Varer-side](media/customer-portal-items.png "Varer-side")
+    ![Varer-side.](media/customer-portal-items.png "Varer-side")
 
 1. I **Vareinformasjon**-dialogboksen angir du følgende felt:
 
@@ -75,14 +75,14 @@ Her er standardtrinnene for å sende en ordre fra kundeportalen.
     - **Enhet** – Angi måleenheten (f.eks. **per.**, **kg** eller **boks**).
     - **Estimert nettobeløp** – verdien beregnes som den estimerte prisen på varen × antallet for den valgte enheten.
 
-    ![Dialogboksen Vareinformasjon](media/customer-portal-item-information.png "Dialogboksen Vareinformasjon")
+    ![Dialogboksen Vareinformasjon.](media/customer-portal-item-information.png "Dialogboksen Vareinformasjon")
 
 1. Velg **Send** for å legge til varen i ordren.
 1. Gjenta trinn 4 til 6 til du har lagt til alle varene du vil bestille.
 1. Når du er ferdig med å legge til varer, velger du **Neste** på **Varer**-siden.
 1. På **Ordre informasjon**-siden ser du et sammendrag av ordren. Se gjennom ordreinnholdet og leveringsdetaljene. Hvis alt ser riktig ut, velger du **Send** for å sende ordren.
 
-    ![Fullført ordreinformasjonsside](media/customer-portal-order-submit.png "Fullført ordreinformasjonsside")
+    ![Fullført ordreinformasjonsside.](media/customer-portal-order-submit.png "Fullført ordreinformasjonsside")
 
 ### <a name="standard-data-setup"></a>Standard datakonfigurasjon
 
@@ -147,19 +147,19 @@ Alle kontrollene i kundeportalen er innebygde Power Apps-portalkontroller. Du ka
 
 Den eneste egendefinerte kontrollen som er inkludert i kundeportalmalen, brukes til å opprette flisene på startsiden.
 
-![Fliser på startsiden](media/customer-portal-home-page-tiles.png "Fliser på startsiden")
+![Fliser på startsiden.](media/customer-portal-home-page-tiles.png "Fliser på startsiden")
 
 Følg fremgangsmåten nedenfor for å endre flisene.
 
 1. Åpne [Portal Management-appen](/powerapps/maker/portals/configure/configure-portal).
 1. Velg **Sidemaler** i navigasjonsruten til venstre.
 
-    ![Navigasjonsrute for Portal Management](media/customer-portal-nav.png "Navigasjonsrute for Portal Management")
+    ![Navigasjonsrute for Portal Management.](media/customer-portal-nav.png "Navigasjonsrute for Portal Management")
 
 1. Velg sidemalen som heter **Hjem**.
 1. I **Webmal**-feltet velger du **Hjem**-koblingen for å åpne kildekoden for denne siden.
 
-    ![Webmal-felt](media/customer-portal-web-template.png "Webmal-felt")
+    ![Webmal-felt.](media/customer-portal-web-template.png "Webmal-felt")
 
 1. Nå skal du kunne se alle kildekodene for hjemmesiden, og du kan endre dem slik du ønsker.
 

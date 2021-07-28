@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c94834a491877a69a206f827ad60f12455456e3f
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: c91de72f32f70fba09c6b7e3ca284553d0c858b1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188860"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353450"
 ---
 # <a name="visual-scheduling-for-lean-manufacturing"></a>Visuell planlegging for lean manufacturing
 
@@ -47,7 +47,7 @@ Du kan planlegge bare jobber av **Prosess**-typen. Kanban-jobben og egenskapene,
 ## <a name="kanban-schedule-board"></a>Kanban-plankort
 Siden **Kanban-plankort** inneholder sju hovedelementer, som vist i illustrasjonen nedenfor. 
 
-![Kanban-plankort](./media/kanban-schedule-board-1024x554.png)
+![Kanban-plankort.](./media/kanban-schedule-board-1024x554.png)
 1.  Handlingsrute
 2.  Filter-felt
 3.  Knapp for ikke-planlagte jobber
@@ -71,7 +71,7 @@ Hvis du vil forbedre oversikten som Kanban-plankortet gir, kan du bruke farger t
 ## <a name="plan-unplanned-jobs"></a>Planlegg ikke-planlagte jobber
 Du kan planlegge ikke-planlagte kanban-jobber fra dialogboksen **Planlegg ikke-planlagte jobber**. Hvis du vil åpne denne dialogboksen, klikker du knappen **Ikke-planlagte jobber** som viser gjeldende antall ikke-planlagte jobber. Alternativt kan du klikke **Planlegg ikke-planlagte jobber** i **Kort**-fanen i handlingsruten. Dialogboksen viser en liste over de ikke-planlagte kanban-jobbene for arbeidscellen. Du kan bruke **Filter**-feltet til å filtrere etter alle felt i rutenettet. Du kan for eksempel filtrere etter kanban-jobber for et bestemt produkt. Når du har en filtrert liste over jobbene som du vil planlegge, merker du dem i listen, og klikk deretter **OK**. Hvis du vil bruke automatisk planlegging for jobbene, kan du angi alternativet **Automatisk planlegging** som **Ja**. I dette tilfellet planlegges jobbene i en periode i henhold til forfallsdatoen. Du kan også planlegge jobbene etter periode. Velg ganske enkelt en periode i feltet **Periode**. Illustrasjonen nedenfor viser et eksempel på dialogboksen **Planlegg ikke-planlagte jobber**. 
 
-![Dialogboksen Planlegg ikke-planlagte jobber](./media/plan-unplanned-jobs-1024x564.png)
+![Dialogboksen Planlegg ikke-planlagte jobber.](./media/plan-unplanned-jobs-1024x564.png)
 
 ## <a name="sequence-kanban-jobs-within-the-same-period"></a>Sekvensiere kanban-jobber i den samme perioden
 Du kan endre rekkefølgen for én eller flere valgte jobber innenfor en periode. Denne funksjonen kan være nyttig hvis du vil prioritere enkelte jobber i perioden. Det kan også hende at du vil sekvensiere jobber som har samme produktattributter, for å optimalisere jobbutføring. Du kan endre rekkefølgen ved hjelp av en dra og slipp-operasjon, eller ved hjelp av menyelementene **Bakover** og **Fremover** i **Kort**-fanen i handlingsruten.

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 03150ccdaeaf48754f04a4329cb1bc14ea2b6895
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a9215672f4ace591bf7d964c8fbd3ad483bacca5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840419"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360430"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>Konfigurere policyer for forsendelseskonsolidering
 
@@ -179,7 +179,7 @@ Følg disse trinnene for å opprette en policy for forsendelseskonsolidering for
 1. La verdien for alternativet **Konsolider med åpne forsendelser** være *Nei*.
 1. Velg **Lagre** i handlingsruten.
 1. I hurtigfanen **Konsolideringsfelt** i listen **Gjenværende felt** velger du raden der feltet **Feltnavn** er satt til *Leveringsmåte*.
-1. Velg **Legg til**-knappen ![Pil høyre](media/forward-button.png) for å flytte feltet til listen **Valgte felt**.
+1. Velg **Legg til**-knappen ![høyre pil.](media/forward-button.png) for å flytte feltet til **Valgte felt**-listen.
 1. I handlingsruten velger du **Rediger spørring**.
 1. I rutenettet i fanen **Område** i dialogboksen for redigeringsprogrammet for spørring finner du raden der feltet **Felt** er satt til *Kundekonto*, og deretter angir du verdien *US-001* for feltet **Vilkår** for den raden.
 1. Velg **Legg til** for å legge til en rad som har følgende innstillinger i rutenettet:
@@ -214,7 +214,7 @@ Følg disse trinnene for å opprette en policy for forsendelseskonsolidering for
 1. Sett verdien for alternativet **Konsolider med åpne forsendelser** til *Ja*.
 1. Velg **Lagre** i handlingsruten.
 1. I hurtigfanen **Konsolideringsfelt** i listen **Gjenværende felt** velger du raden der feltet **Feltnavn** er satt til *Leveringsmåte*.
-1. Velg **Legg til**-knappen ![Pil høyre](media/forward-button.png) for å flytte feltet til listen **Valgte felt**.
+1. Velg **Legg til**-knappen ![høyre pil.](media/forward-button.png) for å flytte feltet til **Valgte felt**-listen.
 1. I handlingsruten velger du **Rediger spørring**.
 1. I fanen **Sammenkoblinger** i dialogboksen for redigeringsprogrammet for spørring viser og velger du **Tabeller \> Lastdetaljer** i treet.
 1. Velg **Legg til tabellsammenkobling**.
@@ -251,9 +251,9 @@ Følg disse trinnene for å opprette en policy for forsendelseskonsolidering for
 1. Sett verdien for alternativet **Konsolider med åpne forsendelser** til *Ja*.
 1. Velg **Lagre** i handlingsruten.
 1. I hurtigfanen **Konsolideringsfelt** i listen **Gjenværende felt** velger du raden der feltet **Feltnavn** er satt til *Kunderekvisisjon*.
-1. Velg **Legg til**-knappen ![Pil høyre](media/forward-button.png) for å flytte feltet til listen **Valgte felt**.
+1. Velg **Legg til**-knappen ![høyre pil.](media/forward-button.png) for å flytte feltet til **Valgte felt**-listen.
 1. I listen **Gjenværende felt** velger du raden der feltet **Feltnavn** er satt til *Leveringsmåte*.
-1. Velg **Legg til**-knappen ![Pil høyre](media/forward-button.png) for å flytte feltet til listen **Valgte felt**.
+1. Velg **Legg til**-knappen ![høyre pil.](media/forward-button.png) for å flytte feltet til **Valgte felt**-listen.
 1. I handlingsruten velger du **Rediger spørring**.
 1. I fanen **Område** i dialogboksen for redigeringsprogrammet for spørring finner du raden der feltet **Felt** er satt til *Kundekonto*, og deretter angir du verdien *US-001* for feltet **Vilkår** for den raden.
 1. Velg **OK** for å lukke dialogboksen.
@@ -283,7 +283,7 @@ Følg disse trinnene for å opprette en policy for forsendelseskonsolidering for
 1. La verdien for alternativet **Konsolider med åpne forsendelser** være *Nei*.
 1. Velg **Lagre** i handlingsruten.
 1. I hurtigfanen **Konsolideringsfelt** i listen **Gjenværende felt** velger du raden der feltet **Feltnavn** er satt til *Leveringsmåte*.
-1. Velg **Legg til**-knappen ![Pil høyre](media/forward-button.png) for å flytte feltet til listen **Valgte felt**.
+1. Velg **Legg til**-knappen ![høyre pil.](media/forward-button.png) for å flytte feltet til **Valgte felt**-listen.
 1. I handlingsruten velger du **Rediger spørring**.
 1. Velg **Legg til** i fanen **Område** i dialogboksen for redigeringsprogrammet for spørring for å legge til en rad som har følgende innstillinger i rutenettet:
 
@@ -317,7 +317,7 @@ Denne forretningssaken kan vanligvis løses ved hjelp av standardpolicyene du op
 1. La verdien for alternativet **Konsolider med åpne forsendelser** være *Nei*.
 1. Velg **Lagre** i handlingsruten.
 1. I hurtigfanen **Konsolideringsfelt** i feltet **Gjenværende felt** velger du raden der feltet **Feltnavn** er satt til *Leveringsmåte*.
-1. Velg **Legg til**-knappen ![Pil høyre](media/forward-button.png) for å flytte feltet til listen **Valgte felt**.
+1. Velg **Legg til**-knappen ![høyre pil.](media/forward-button.png) for å flytte feltet til **Valgte felt**-listen.
 1. I handlingsruten velger du **Rediger spørring**.
 1. I fanen **Område** i dialogboksen for redigeringsprogrammet for spørring finner du raden der feltet **Felt** er satt til *Lager*, og deretter angir du verdien *61, 63* for feltet **Vilkår** for den raden.
 1. Velg **OK** for å lukke dialogboksen.

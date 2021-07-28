@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4c5528545e0215b3a3f92b7bd5b492f82274d35a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6fd2a8548d4929a7a3b3b6d20adbc230c5edf6ed
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5833048"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355233"
 ---
 # <a name="cost-control-workspace"></a>Arbeidsområde for kostnadskontroll 
 
@@ -116,7 +116,7 @@ Arbeidsområdet **Kostnadskontroll** er utformet som en webrapport. Derfor kan a
 
 Listen over rapporter som er tilgjengelige for brukere, for eksempel ledere, styres av innstillingen for alternativet **Publisert** på siden **Konfigurasjoner av arbeidsområde for kostnadskontroll**.
 
-![En rapport som brukere kan se i arbeidsområdet for kostnadskontroll](./media/report-cost-control.png)
+![En rapport som brukere kan se i arbeidsområdet for kostnadskontroll.](./media/report-cost-control.png)
 
 En leder kan velge regnskapskalenderperioden som skal vises. Øktdatoen brukes til å fastsette standard gjeldende periode.
 
@@ -136,11 +136,11 @@ Et rutenett viser hvert kostnadselement som er knyttet til dimensjonshierarkinod
 
 To diagrammer viser et sammendrag av faktisk kontra budsjett og budsjettavvik etter periode.
 
-![Diagrammer som viser et sammendrag av faktisk kontra budsjett og budsjettavvik etter periode](./media/cost-element-details-operations.png)
+![Diagrammer som viser et sammendrag av faktisk kontra budsjett og budsjettavvik etter periode.](./media/cost-element-details-operations.png)
 
 Brukere kan klikke på **Kostnadsoppføringer** for å drille ned i oppføringsdetaljene etter behov.
 
-![Kostnadsoppføringer](./media/cost-entries.png)
+![Kostnadsoppføringer.](./media/cost-entries.png)
 
 Leie er for eksempel en utgift som distribueres til kostsentre. En bruker som vil ha klarhet i leiekostnaden som kostsenteret til vedkommende må betale, kan drille ned for å se hvordan leien beregnes.
 
@@ -148,7 +148,7 @@ Hvis du klikker på **Tildelingsgrunnlag** på **Kostnadsoppføringer**-siden, v
 
 I eksemplet nedenfor er tildelingsgrunnlaget av typen **Formeltildelingsgrunnlag**, og formelen vises. Faktorene som definerer formelen, vises. I tillegg viser et rutenett beregningen som utføres per kostnadsobjekt.
 
-![Beregninger per kostnadsobjekt](./media/cost-entries-allocation-base.png)
+![Beregninger per kostnadsobjekt.](./media/cost-entries-allocation-base.png)
 
 Tilleggsressurser 
 

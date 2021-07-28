@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 20f320e84d5faaf964585f30581d24996131031c
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 2e895c2d337139aa9a2b1f21b60675f956da9c7f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5747157"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348559"
 ---
 # <a name="workflow-elements"></a>Arbeidsflytelementer
 
@@ -60,7 +60,7 @@ En *godkjenningsprosess* er en prosess som består av separate trinn. I hvert go
 
 Du kan opprette en arbeidsflyt for å behandle dokumenter eller linjeelementene på et dokument. Du har for eksempel opprettet en godkjenningsarbeidsflyt for timeregistreringer. (Vi refererer til denne arbeidsflyten som *dokumentarbeidsflyten*.) Du kan legge til et *arbeidsflyt for linjeelementer*-elementet som arbeidsflyten for dokumentet. Når linjeelementet kjøres, sendes hvert linjeelement for dokumentet til behandling. Du vil kanskje at alle linjeelementene skal behandles av den samme arbeidsflyten for linjeelement, eller du vil kanskje at hvert linjeelement skal behandles av en annen arbeidsflyt for linjeelement. La oss si at en ansatt har sendt en timeregistrering som ligner den følgende illustrasjonen.
 
-![Arbeidsflyt med linjeelementer](./media/workflow_lineitemworkflow.gif)
+![Arbeidsflyt med linjeelementer.](./media/workflow_lineitemworkflow.gif)
 
 I dette scenariet vil du kanskje opprette følgende arbeidsflyter for linjeelementer:
 

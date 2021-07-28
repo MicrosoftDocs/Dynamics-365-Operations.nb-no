@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0fe387631a1716c6612f9d475faff56d0aef3fdc
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6f23b4c15937a0e61eb64b25eadef58c1fda231e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791686"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354619"
 ---
 # <a name="sync-product-ratings-in-dynamics-365-commerce"></a>Synkronisere produktvurderinger i Dynamics 365 Commerce
 
@@ -59,7 +59,7 @@ Følg denne fremgangsmåten for å kontrollere at **RetailProductRating**-deljob
 
 Illustrasjonen nedenfor viser et eksempel på deljobbdetaljer i Commerce.
 
-![Detaljer i RetailProductRating-deljobben](media/rnr-hq-ratings-sub-job.png)
+![Detaljer i RetailProductRating-deljobben.](media/rnr-hq-ratings-sub-job.png)
 
 > [!NOTE]
 > Hvis du ikke finner deljobben **RetailProductRating** kan det hende at du allerede har kjørt jobben **Synkroniser produktvurderinger** og jobben **1040 CDX** før du initialiserte handelsplanleggeren. I dette tilfellet følger du denne fremgangsmåten for å kjøre jobben **Fullstendig datasynkronisering**.
@@ -83,7 +83,7 @@ Følg denne fremgangsmåten for å importere produktvurderinger til Commerce fra
 
 Illustrasjonen nedenfor viser et eksempel på konfigurasjon av satsvis jobb i Commerce.
 
-![Konfigurasjon av den satsvise jobben for synkroniserings produktvurderinger](media/rnr-hq-batchjob-recurrence.png)
+![Konfigurasjon av den satsvise jobben for synkroniserings produktvurderinger.](media/rnr-hq-batchjob-recurrence.png)
 
 ## <a name="verify-that-the-batch-job-for-product-rating-synchronization-was-successful"></a>Kontrollere at den satsvise jobben for synkronisering av produktvurdering er vellykket
 
@@ -95,7 +95,7 @@ Følg denne fremgangsmåten for å kontrollere at den satsvise jobben for **Synk
 
 Følgende illustrasjon viser et eksempel på detaljene for den satsvise jobben i Commerce når den satsvise jobben er planlagt å kjøres med totimersintervaller.
 
-![Detaljer for den satsvise jobben for synkronisering av produktvurderinger](media/rnr-hq-batchjob-status-checking.png)
+![Detaljer for den satsvise jobben for synkronisering av produktvurderinger.](media/rnr-hq-batchjob-status-checking.png)
 
 ## <a name="make-product-ratings-available-at-the-pos"></a>Gjør produktvurderinger tilgjengelige på salgsstedet
 
@@ -113,15 +113,15 @@ Følg denne fremgangsmåten for å slå på produktvurderinger på salgsstedet:
 
 Følgende illustrasjon viser et eksempel på konfigurasjon av handelsparametere for å slå på produktvurderinger på salgsstedet.
 
-![Konfigurasjon av handelsparametere for produktvurderinger på salgsstedet](media/rnr-hq-enable-ratings-in-pos.png)
+![Konfigurasjon av handelsparametere for produktvurderinger på salgsstedet.](media/rnr-hq-enable-ratings-in-pos.png)
 
 Illustrasjonen nedenfor viser et eksempel på produktvurderinger på salgsstedet.
 
-![Produktvurderinger på salgsstedet](media/rnr-pos-catalog-ratings.png)
+![Produktvurderinger på salgsstedet.](media/rnr-pos-catalog-ratings.png)
 
 Illustrasjonen nedenfor viser et eksempel på produktvurderinger i telefonsenterkanaler.
 
-![Produktvurderinger i en telefonsenterkanal](media/rnr-call-center-ratings.png)
+![Produktvurderinger i en telefonsenterkanal.](media/rnr-call-center-ratings.png)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
