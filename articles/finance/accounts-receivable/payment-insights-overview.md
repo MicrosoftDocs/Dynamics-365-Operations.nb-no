@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 14151
+ms.custom:
+- "14151"
+- intro-internal
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: a1b3b6540a03dc85d5dcd813e8c41ac49ab36728
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 82b301b4b8ba61375a53a8fe6220628500f6cf3d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822401"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359323"
 ---
 # <a name="customer-payment-insights-preview"></a>Innsikt i kundebetaling (forhåndsvisning)
 
@@ -47,11 +49,11 @@ For hver åpne faktura kan Kundebetalingsinnsikt (forhåndsvisning) predikere tr
 
 For å hjelpe organisasjoner med å forstå det totale betalingsbeløpet de kan forvente fra en kunde i én av de tre periodene, til rett tid, for sent og veldig sent, gir Kundebetalingsinnsikt (forhåndsvisning) også en samlet visning av forventede betalinger.
 
-[![Aggregert visning av betalingsprognoser](./media/graphic-payment-reports.png)](./media/graphic-payment-reports.png)
+[![Aggregert visning av betalingsprognoser.](./media/graphic-payment-reports.png)](./media/graphic-payment-reports.png)
 
 Hver faktura blir også tildelt en sannsynlighet for betaling i tide. Hvis sannsynlighet for betaling til rett tid er mindre enn 50 %, blir fakturaene merket med en rød sirkel for å angi at disse fakturaene kan måtte innkreves. 
 
-[![Liste over sannsynligheter for betaling](./media/customer-pymnt-probability-list.png)](./media/customer-pymnt-probability-list.png)
+[![Liste over sannsynligheter for betaling.](./media/customer-pymnt-probability-list.png)](./media/customer-pymnt-probability-list.png)
 
 Innsikt i kundebetaling (forhåndsvisning) inneholder også kontekstavhengig informasjon som forklarer de viktigste faktorene som påvirket prognosene, den gjeldende forretningsstatusen til kunden og detaljer om den historiske kundebetalingsatferden. I mange bedrifter har innkrevingsprosessen vært en reaktiv aktivitet, innkrevingsprosessen starter ikke før fakturaer forfaller. 
 

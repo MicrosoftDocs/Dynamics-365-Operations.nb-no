@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 7decdb1d759284c616ecf928c10f99098627472d
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: e9c9143bdbab450b1793b15937d123607361add6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893584"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358675"
 ---
 # <a name="configure-action-dependent-er-destinations"></a>Konfigurere handlingsavhengige ER-mål
 
@@ -69,11 +69,11 @@ Du kan for eksempel bruke ER-formatet **Fritekstfaktura (Excel)** til å skrive 
 
 Illustrasjonen nedenfor viser hvordan du kan oppnå denne konfigurasjonen av ER-mål som sett med individuelle målposter, når hver post er konfigurert for en individuell brukerhandling:
 
-![Målside for elektronisk rapportering som har handlingsavhengige målinnstillinger for et ER-format når hver målpost er konfigurert for en individuell brukerhandling](./media/er-destination-action-dependent-01.png)
+![Målside for elektronisk rapportering som har handlingsavhengige målinnstillinger for et ER-format når hver målpost er konfigurert for en individuell brukerhandling.](./media/er-destination-action-dependent-01.png)
 
 Illustrasjonen nedenfor viser hvordan du kan oppnå den samme alternative konfigurasjonen av ER-mål som sett med individuelle målposter, når hver post er konfigurert for et enkeltmål:
 
-![Målside for elektronisk rapportering som har handlingsavhengige målinnstillinger for et ER-format når hver målpost er konfigurert for et enkeltmål](./media/er-destination-action-dependent-01a.png)
+![Målside for elektronisk rapportering som har handlingsavhengige målinnstillinger for et ER-format når hver målpost er konfigurert for et enkeltmål.](./media/er-destination-action-dependent-01a.png)
 
 > [!NOTE]
 > Hvis det angis en handlingskode for det kjørende ER-formatet, men ingen mål er konfigurert for denne handlingskoden, brukes den [standard](electronic-reporting-destinations.md#default-behavior) målvirkemåten.
@@ -84,7 +84,7 @@ Hvis brukerhandlinger er klargjort av brukere som har de aktuelle [tillatelsene]
 
 Illustrasjonen nedenfor viser et eksempel på dialogboksen **Mål for elektronisk rapporteringsformat** som vises når en fritekstfaktura [posteres](../../../finance/accounts-receivable/create-free-text-invoice-new.md) og ER-formatet **Fritekstfaktura (Excel)** kjøres for å generere dette dokumentet, hvis **Skriver**-handlingen ble klargjort og ER-mål ble konfigurert for dette formatet som vist tidligere i dette emnet.
 
-![Dialogboks der du kan endre de opprinnelig konfigurerte ER-målene for kjøring av ER-format](./media/er-destination-action-dependent-02.gif)
+![Dialogboks der du kan endre de opprinnelig konfigurerte ER-målene for kjøring av ER-format.](./media/er-destination-action-dependent-02.gif)
 
 > [!NOTE]
 > Hvis du har konfigurert ER-mål for flere komponenter i det kjørende ER-formatet, vises et eget alternativ for hver konfigurerte komponent i ER-formatet.
@@ -103,7 +103,7 @@ Følg denne fremgangsmåten for å kontrollere brukerhandlingskoden som angis.
 6. Filtrer ER-kjøringsloggene på siden **Feilsøkingslogger for konfigurasjon** for å finne loggen for ER-formatkjøring.
 7. Se gjennom loggoppføringene som må inneholde posten som viser den angitte brukerhandlingskoden, hvis det er angitt en handling for ER-formatkjøringen.
 
-    ![Siden Kjøringslogger for elektronisk rapportering, som inneholder informasjon om brukerhandlingskoden som er angitt for den filtrerte kjøringen av et ER-format](./media/er-destination-action-dependent-03.png)
+    ![Siden Kjøringslogger for elektronisk rapportering, som inneholder informasjon om brukerhandlingskoden som er angitt for den filtrerte kjøringen av et ER-format.](./media/er-destination-action-dependent-03.png)
 
 ## <a name=""></a><a name="reports-list-wave1">Liste over forretningsdokumenter (bølge 1)</a>
 

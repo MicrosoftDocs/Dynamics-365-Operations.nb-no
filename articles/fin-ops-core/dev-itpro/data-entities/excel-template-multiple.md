@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: 001795914c683a6182b885b79be7e225ad80e5cd
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 1fcf9f45eb7f3ef111d66c2c30ec529269b0685b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750570"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352918"
 ---
 # <a name="data-templates-with-multiple-worksheets"></a>Datamaler med flere regneark
 
@@ -32,13 +32,13 @@ La oss et eksempel der det er én Excel-fil med regneark som heter **Områder** 
 
 Hvis du legger til den andre enheten, **Lagre**, uten å forlate **Legg til fil**-skjemaet, vil regnearkoppslaget la deg velge **Lagre**-regnearket uten at du må laste opp filen på nytt. Den eneste grunnen til å laste opp en ny fil ville være hvis **Lagre**-dataene var i en annen fil.
 
-![Flere regneark](./media/AddFileMultipleWorkSheets.png)
+![Flere regneark.](./media/AddFileMultipleWorkSheets.png)
 
 ## <a name="fix-worksheet-to-entity-mapping"></a>Ordne tilordning av regneark til enhet
 
 Tilordningen av regnearket til en dataenhet i importjobben kan ordnes fra rutenettet. **Regneark**-kolonnen i rutenettet viser regnearkene fra filen som ble tilknyttet. Du kan velge et annet regneark fra rullegardinlistemenyen. Hvis det valgte regnearket allerede er tilordnet en enhet i dataprosjektet, ber systemet deg om å bekrefte endringen. Vi anbefaler at du order alle tilordninger i rutenettet.
 
-![Oppdatere regnearktilordning](./media/UpdateMappings.png)
+![Oppdatere regnearktilordning.](./media/UpdateMappings.png)
 
 ## <a name="re-map-to-a-new-file"></a>Tilordne på nytt til en ny fil
 

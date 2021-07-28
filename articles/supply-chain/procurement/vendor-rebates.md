@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 2012
-ms.openlocfilehash: e56bf86a11eb34679269eae5ca093d7cc379932b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 42c35fcca90b7dc55c8ef2985283d2ce92c4c8bc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822473"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344226"
 ---
 # <a name="vendor-rebates"></a>Leverandørrabatter
 
@@ -53,7 +53,7 @@ En leverandørrabattavtale er en oversikt over en kontrakt med en leverandør so
 
 Hvis du vil åpne siden **Leverandørrabattavtaler**, velg **Anskaffelse og innkjøp** &gt; **Leverandørrabatter** &gt; **Rabattavtaler**.
 
-![Kjøpsavtale](media/purchase-agreement.PNG)
+![Kjøpsavtale.](media/purchase-agreement.PNG)
 
 På siden **Leverandørrabattavtaler** kan du se informasjon om de forhandlede betingelsene for en leverandøravtale.
 
@@ -129,7 +129,7 @@ Når krav er godkjent kan de behandles som leverandørgjeld. En kreditnota (leve
 
     En rabattopptjeningsjournal er oppført for kravsbeløpet. Denne posteringen debiterer den opptjente leverandørrabatt-mottakskontoen for forventet leverandørkreditt og krediterer den midlertidige opptjente leverandørrabatter-mottakskontoen for forventet gevinst.
 
-    ![Melding](media/message.png)
+    ![Melding.](media/message.png)
 
 5. I rabattlisten velger du linjen, og deretter velger du **Rabatt-transaksjoner** i Handlingsvinduet for å se og navigere til journalbatchnummer for denne rabattopptjeningsposten.
 

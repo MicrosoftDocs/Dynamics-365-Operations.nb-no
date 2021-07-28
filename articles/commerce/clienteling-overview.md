@@ -9,19 +9,21 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.custom: 260624
+ms.custom:
+- "260624"
+- intro-internal
 ms.assetid: a4f9d315-9951-451c-8ee6-37f9b3b15ef0
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Version 10.0.7
-ms.openlocfilehash: b680ec227ecd70893999950a8be2ad152c476575
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 598145bccadbeb44d33adb96388f6af5a8a45f5d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5937018"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352694"
 ---
 # <a name="clienteling-overview"></a>Oversikt over kundeaktiviteter
 
@@ -68,7 +70,7 @@ Følg denne fremgangsmåten for å aktivere kundeaktiviteter-funksjonaliteten i 
 
 1. I arbeidsområdet **funksjonsbehandling** filtrerer du funksjonene etter modulen **Detaljhandel og handel**.
 
-    ![Kundeaktiviteter i listen over funksjoner i modulen Commerce](./media/Enable_clienteling.png "Kundeaktiviteter i listen over funksjoner i modulen Detaljhandel og handel")
+    ![Kundeaktiviteter i listen over funksjoner i modulen Commerce.](./media/Enable_clienteling.png "Kundeaktiviteter i listen over funksjoner i modulen Detaljhandel og handel")
 
 2. Aktiver **Kundeaktiviteter**-funksjonen ved å velge **Aktiver nå**.
 3. På siden **Parametere for Commerce**, i kategorien **Nummerserie**, velger du raden **Klientbokidentifikator**. Deretter velger du en nummerserie i feltet **Nummerseriekode**. Systemet vil bruke denne nummerserien til å tilordne en ID til klientbøker.
@@ -83,7 +85,7 @@ Følg denne fremgangsmåten for å aktivere kundeaktiviteter-funksjonaliteten i 
 
 6. Velg attributtgruppen du nettopp opprettet, på siden **Parametere for Commerce** i kategorien **Kundeaktiviteter** i feltet **Attributtgruppe for klientbok**.
 
-    ![Attributtgruppe for klientbok valgt](./media/Client%20book%20attributes.png "Attributtgruppe for klientbok valgt")
+    ![Attributtgruppe for klientbok valgt.](./media/Client%20book%20attributes.png "Attributtgruppe for klientbok valgt")
 
 7. Hvis du vil registrere aktiviteter som forekommer på salgsstedet, definerer du aktivitetstypene på **Aktivitetstyper**-siden (**Retail og Commerce \> Kunder \> Aktivitetstyper**).
 
@@ -95,7 +97,7 @@ Følg denne fremgangsmåten for å aktivere kundeaktiviteter-funksjonaliteten i 
 
 Etter at du har fullført denne fremgangsmåten, kan salgsmedarbeidere åpne siden kundedetaljer på salgsstedet, og legge kunder til i sin klientbok, vise og registrere aktiviteter og merknader for kunder, og målrette mot kunder ved hjelp av kunde- og klientbok-attributter til å filtrere klientboken. Illustrasjonen nedenfor viser et eksempel på en klientbok.
 
-![Eksempel på en klientbok](./media/client_book.png "Eksempel på en klientbok")
+![Eksempel på en klientbok.](./media/client_book.png "Eksempel på en klientbok")
 
 ## <a name="turn-on-the-integration-of-customer-insights-with-commerce"></a>Slå på integrering av Customer Insights med Commerce
 

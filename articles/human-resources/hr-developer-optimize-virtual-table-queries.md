@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-04-02
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 66fb9f2b50079b5eb4eb16da17b8a473d687d354
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 17316081501ab29aafac476d13947774ecbb61e5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6054914"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346280"
 ---
 # <a name="optimize-dataverse-virtual-table-queries"></a>Optimaliser virtuelle Dataverse-tabellspørringer
 
@@ -50,13 +50,13 @@ Et eksempel der du kan se denne innvirkningen, er i spørringer mot Arbeider-enh
 - **Tidsavbrudd for spørring:** Spørringen kan tidsavbrudd og returnere følgende feil: "Et token ble hentet for å kalle Finance and Operations, men Finance and Operations returnerte en feil av typen InternalServerError."
 - **Uventet feil**: Spørringen kan returnere feiltype 400 med følgende melding: "Det oppstod en uventet feil."
 
-  ![Feiltype 400 på HcmWorkerBaseEntity](./media/HcmWorkerBaseEntityErrorType400.png)
+  ![Feiltype 400 på HcmWorkerBaseEntity.](./media/HcmWorkerBaseEntityErrorType400.png)
 
 - **Begrensning**: Spørringen kan overbruke serverressurser og blir underlagt begrensning. I dette tilfellet returnerer spørringen følgende feil: "Et token ble hentet for å kalle Finance and Operations, men Finance and Operations returnerte en feil av type 429". Hvis du vil ha mer informasjon om begrensning i Human Resources, kan du se [Vanlige spørsmål om begrensning](./hr-admin-integration-throttling-faq.md).
 
-  ![Feiltype 429 på HcmWorkerBaseEntity](./media/HcmWorkerBaseEntityErrorType429.png)
+  ![Feiltype 429 på HcmWorkerBaseEntity.](./media/HcmWorkerBaseEntityErrorType429.png)
 
-## <a name="resolution"></a>Oppløsning
+## <a name="resolution"></a>Løsning
 
 ### <a name="limit-the-number-of-columns-included-in-your-data-query"></a>Begrens antall kolonner som er inkludert i dataspørringen
 
@@ -96,7 +96,7 @@ Hvis du opplever noen av indikasjonene nevnt ovenfor på treg ytelse når du byg
 2. I **Hent data**-vinduet angir du **Common Data Service** i søkeboksen, velger **Common Data Service**-koblingen og velger deretter **Koble til**.
 3. I feltet **Server-URL** i Common Data Service-vinduet angir du organisasjons-URI-en for Dataverse-miljøet, og velger **OK**.
   
-   ![Angi URI-en for Dataverse-miljøet](./media/PowerBIDataverseURLSetup.png)
+   ![Angi URI-en for Dataverse-miljøet.](./media/PowerBIDataverseURLSetup.png)
   
 4. Utvid **Enheter**-noden i navigasjonsvinduet.
 5. I søkeboksen angir du **mshr_hcmworkerbaseentity** og velger deretter enheten.
@@ -113,7 +113,7 @@ Hvis du opplever noen av indikasjonene nevnt ovenfor på treg ytelse når du byg
    in
      selectedWorkerBaseEntityColumns
    ```
-   ![Oppdater spørringen i Avansert redigering for Power Query-redigering](./media/HcmWorkerBaseEntityPowerQueryEditor.png)
+   ![Oppdater spørringen i Avansert redigering for Power Query-redigering.](./media/HcmWorkerBaseEntityPowerQueryEditor.png)
 
 9. Velg **Ferdig**.
 

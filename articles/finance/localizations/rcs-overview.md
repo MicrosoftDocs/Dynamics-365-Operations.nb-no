@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: RCS, Regulatory Configuration Services, Localization
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 97423
+ms.custom:
+- "97423"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 7f946988f124c814452e1774c700d5c7354f39b0
-ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
+ms.openlocfilehash: 8d7020ff1ad1beb06ff7a9ce217f39993c6eceec
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6216568"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358128"
 ---
 # <a name="regulatory-configuration-service"></a>Regulatory Configuration Service
 
@@ -41,7 +43,7 @@ RCS har følgende funksjoner:
 
 Du kan registrere deg for eller logge deg på RCS fra [Regulatory Configuration Service-siden](https://marketing.configure.global.dynamics.com/).
 
-![Registrering for / pålogging på RCS](media/202103_RCS%20Marketing%20page_updated_1.jpg)
+![Registrering for / pålogging på RCS.](media/202103_RCS%20Marketing%20page_updated_1.jpg)
 
 På **Regulatory Configuration Service**-siden må du gå gjennom og godta tilleggsbetingelsene for bruk av tjenesten, og deretter velger du en av følgende knapper:
 
@@ -91,7 +93,7 @@ Hvis du vil ha mer informasjon om relaterte komponenter, kan du se følgende emn
 
 Når du registrerer deg for RCS på tjenestesiden, kan det oppstå et problem knyttet til Azure Active Directory (Azure AD). Feilmeldingen du får, angir at registreringen for RCS er deaktivert og må aktiveres før du kan fullføre registreringsprosessen.
 
-![Feilmelding ved RCS-registrering](media/01_RCSSignUpError.jpg)
+![Feilmelding ved RCS-registrering.](media/01_RCSSignUpError.jpg)
 
 Problemet oppstår fordi du er blokkert fra å registrere deg for adhocabonnementer, og egenskapen `AllowAdHocSubscriptions` må aktiveres i leieren din. 
 

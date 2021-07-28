@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 7bc4b48260907788eb90a19c5dc0b5c8f1d9d3b5
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: a16006a18e552c00fbed5eda7579fbcb77c315ea
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908114"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355931"
 ---
 # <a name="synchronize-contacts-directly-from-sales-to-contacts-or-customers-in-supply-chain-management"></a>Synkronisere kontakter direkte fra Sales til kontakter eller kunder i Supply Chain Management
 
@@ -38,7 +38,7 @@ Dette emnet beskriver malene og de underliggende oppgavene som brukes til å syn
 
 Løsningen Kundeemne til kontanter bruker Dataintegrering-funksjonen til å synkronisere data på tvers av forekomster av Supply Chain Management og Sales. Kundeemne til kontanter-maler som er tilgjengelige med Dataintegrering-funksjonen,tillater flyt av data om kontoer, kontakter, produkter, salgstilbud, salgsordrer og salgsfakturaer mellom Supply Chain Management og Sales. Illustrasjonen nedenfor viser hvordan dataene blir synkronisert mellom Supply Chain Management og Sales.
 
-[![Dataflyt i Kundeemne til kontanter](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
+[![Dataflyt i Kundeemne til kontanter.](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
 ## <a name="templates-and-tasks"></a>Maler og oppgaver
 
@@ -119,11 +119,11 @@ Følgende illustrasjoner viser et eksempel på en tilordning av malen i Datainte
 
 ### <a name="contact-to-contact"></a>Kontakt til kontakt
 
-![Maltilordning i Dataintegrator](./media/contacts-direct-template-mapping-data-integrator-1.png)
+![Maltilordning i Dataintegrator.](./media/contacts-direct-template-mapping-data-integrator-1.png)
 
 ### <a name="contact-to-customer"></a>Kontakt til kunde
 
-![Maltilordning i Dataintegrator](./media/contacts-direct-template-mapping-data-integrator-2.png)
+![Maltilordning i Dataintegrator.](./media/contacts-direct-template-mapping-data-integrator-2.png)
 
 
 ## <a name="related-topics"></a>Relaterte emner

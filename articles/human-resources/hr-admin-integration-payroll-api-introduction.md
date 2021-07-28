@@ -7,18 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e6d8a1cb9619a863184460a74e472af3f06934b6
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 3b6b01053a043477521d7eb1a41bb9f6f51fc0e4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6058566"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360574"
 ---
 # <a name="payroll-integration-api-introduction"></a>Innføring i API for lønnsintegrering
 
@@ -26,7 +26,7 @@ ms.locfileid: "6058566"
 
 Dette dokumentet beskriver API-en for lønnsintegrering i Dynamics 365 Human Resources. API-en gjør det mulig å strømlinjeforme ende-til-ende-integrasjoner mellom Human Resources og partnerlønnssystemer. Den integrerte opplevelsen begynner i Human Resources med ansattprofilen, lønn og fradrag og bidragsinformasjon. Når du ansetter en ansatt og angir den nødvendige profilen og lønnsinformasjon i Human Resources, henter lønnssystemet denne informasjonen som skal brukes ved behandling av lønn. Eventuelle oppdateringer som gjøres til den ansatte eller lønnsinformasjonen, trekkes også for bruk i senere lønnsutbetalinger.
 
-![Flyten i lønnsintegrering](media/hr-admin-integration-payroll-api-introduction-flow.png)
+[![Flyten i lønnsintegrering.](media/hr-admin-integration-payroll-api-introduction-flow.png)](media/hr-admin-integration-payroll-api-introduction-flow-2.png#lightbox)
 
 Human Resources inkluderer følgende komponenter for å aktivere integreringen:
 
@@ -60,7 +60,7 @@ Hvis du vil ha informasjon om generering av de virtuelle tabellene for API, kan 
 
 Diagrammet nedenfor illustrerer relasjonen med API-en. Flere typer har sekundærnøkler til andre, eksisterende enheter i Human Resources som ikke illustreres her. Dette dokumentet inneholder informasjon om enheter som er spesifikke for lønnsintegrasjonsscenarier. Det er imidlertid mange andre enheter i Dataverse Web-API for Human Resources som også kan være relevante for integreringen. Enkelte av disse enhetene refereres til i sekundærnøkkelrelasjoner eller navigasjonsegenskaper.
 
-![Lønnsintegrering, API-datamodell](media/hr-admin-payroll-api-data-model.png)
+[![Lønnsintegrering, API-datamodell.](media/hr-admin-payroll-api-data-model.png)](media/hr-admin-payroll-api-data-model.png#lightbox)
 
 ## <a name="payroll-employee-and-related-entities"></a>Lønnsansatt og relaterte enheter
 
@@ -68,7 +68,8 @@ Enheter:
 
 - [Lønnsansatt](hr-admin-integration-payroll-api-payroll-employee.md)
 - [Adresse til lønnsarbeider](hr-admin-integration-payroll-api-payroll-worker-address.md)
-- [Fast kompensasjonsplan for lønn](hr-admin-integration-ats-api-recruiting-request-education.md)
+- [Fast kompensasjonsplan for lønn](hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md)
+- [Variabel kompensasjonsplan for lønn](hr-admin-integration-payroll-api-payroll-variable-compensation-plan.md)
 - [Lønnsstillingsjobb](hr-admin-integration-payroll-api-payroll-position-job.md)
 - [Lønnsstilling](hr-admin-integration-payroll-api-payroll-position.md)
 

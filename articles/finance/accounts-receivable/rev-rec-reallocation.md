@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 2d961cb4eedda6265b4acd8dbd6f82e8026373fa
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 37c3da576b79d3ae9f6983b5046343a7c8120de6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820575"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356131"
 ---
 # <a name="revenue-recognition-reallocation"></a>Ny tildeling av inntektsføring
 
@@ -48,7 +48,7 @@ Ettersom ny tildeling kan utføres på en salgsordre som er delvis eller fullste
 
 Hver organisasjon må bestemme om rettelsen bare skal oppdateres i økonomimodulen, eller om den også skal oppdatere Kunder. Beslutningen som tas, fastslår den forskriftsmessige innstillingen for alternativet **Poster fakturakorrigeringer til Kunder** på fanen **Inntektsføring** på siden **Parametere for økonomimodul** (**Inntektsføring \> Oppsett \> Parametere for økonomimodul**). Innstillingen som velges, avhenger av det bestemte scenarioet. Hvis du vil ha mer informasjon om mulige scenarioer, kan du bruke koblingene i [Scenarioer for ny tildeling](#scenarios-for-reallocation) senere i dette emnet.
 
-[![Fanen Inntektsføring på siden Parametere for økonomimodul](./media/01_RevRecScenarios.png)](./media/01_RevRecScenarios.png)
+[![Fanen Inntektsføring på siden Parametere for økonomimodul.](./media/01_RevRecScenarios.png)](./media/01_RevRecScenarios.png)
 
 Hvis alternativet **Poster fakturakorrigeringer til Kunder** er satt til **Ja**, gir prosessen for ny tildeling følgende resultat:
 
@@ -74,11 +74,11 @@ Som nevnt kan du bare oppdatere økonomimodulen, eller du kan oppdatere både Ø
 
 ## <a name="run-the-reallocation-process"></a>Kjøre prosessen for ny tildeling
 
-Hvis du vil starte prosessen for ny tildeling, velger du **Tildeling av pris på nytt med nye ordrelinjer** i en salgsordre som du må tildele på nytt. Du kan eventuelt gå til **Inntektsføring \> Periodiske oppgaver \> Tildele pris på nytt med nye ordrelinjer**, og deretter angir du de riktige filtrene, for eksempel kundekontoen.
+Hvis du vil starte prosessen for ny tildeling, velger du **Tildeling av pris på nytt med nye ordrelinjer** i en salgsordre som du må tildele på nytt. Du kan eventuelt gå til **Inntektsføring \> Periodiske oppgaver \> Tildel pris på nytt med nye ordrelinjer**, og deretter angir du de riktige filtrene, for eksempel kundekontoen.
 
-[![Siden Tildele pris på nytt med nye ordrelinjer](./media/02_RevRecScenarios.png)](./media/02_RevRecScenarios.png)
+[![Siden Tildel pris på nytt med nye ordrelinjer.](./media/02_RevRecScenarios.png)](./media/02_RevRecScenarios.png)
 
-Det øvre rutenettet på siden **Tildele pris på nytt med nye ordrelinjer** kalles **Salg**. Det viser en liste over salgsordrene for kunden. Velg salgsordrene som må tildeles på nytt. Du kan ikke velge prosjektsalgsordrer, fordi prosjektsalgsordrer ikke kan tildeles på nytt. Du kan heller ikke velge salgsordrer som allerede har en ny tildelings-ID, fordi salgsordrer som ikke er prosjekter, bare kan tildeles på nytt én gang. Hvis en salgsordre har en ny tildelings-ID, er den allerede merket for ny tildeling av en annen bruker.
+Det øvre rutenettet på siden **Tildel pris på nytt med nye ordrelinjer** kalles **Salg**. Det viser en liste over salgsordrene for kunden. Velg salgsordrene som må tildeles på nytt. Du kan ikke velge prosjektsalgsordrer, fordi prosjektsalgsordrer ikke kan tildeles på nytt. Du kan heller ikke velge salgsordrer som allerede har en ny tildelings-ID, fordi salgsordrer som ikke er prosjekter, bare kan tildeles på nytt én gang. Hvis en salgsordre har en ny tildelings-ID, er den allerede merket for ny tildeling av en annen bruker.
 
 Det nederste rutenettet på siden kalles **Linjer**. Når du har valgt én eller flere salgsordrer i rutenettet **Salg**, viser rutenettet **Linjer** salgsordrelinjene. Velg salgsordrelinjene som må tildeles på nytt. Hvis du bare har valgt én salgsordre, må linjer i den samme salgsordren tildeles på nytt. Denne situasjonen kan oppstå når en av salgsordrelinjene tidligere er fakturert, og deretter ble en ny linje lagt til, eller en eksisterende linje ble fjernet eller avbrutt. Hvis en linje er fjernet, vises den ikke i rutenettet. Derfor kan den ikke velges. Den vil imidlertid fortsatt bli tatt hensyn til når prosessen for ny tildeling kjøres.
 
@@ -86,13 +86,13 @@ Når du er ferdig med å velge de nødvendige salgsordrelinjene, bruker du knapp
 
 - **Oppdater ny tildeling** – Beregn de nye inntektsprisbeløpene for de valgte salgsordrelinjene. Hvis en linje blir fjernet eller avbrutt, blir den nye tildelingen bare utført for de eksisterende linjene du har valgt. Illustrasjonen nedenfor viser et eksempel på salgsordrelinjer før ny tildeling oppdateres.
 
-    [![Salgsordrelinjer før ny tildeling oppdateres](./media/03_RevRecScenarios.png)](./media/03_RevRecScenarios.png)
+    [![Salgsordrelinjer før ny tildeling oppdateres.](./media/03_RevRecScenarios.png)](./media/03_RevRecScenarios.png)
 
     De nye inntektsprisbeløpene vises i kolonnen **Beløp tildelt på nytt** i rutenettet **Linjer**. På dette tidspunktet er den nye tildelingen behandlet, men den er ennå ikke beregnet. Illustrasjonen nedenfor viser et eksempel på salgsordrelinjer etter at den nye tildelingen er oppdatert.
 
-    [![Salgsordrelinjer etter at den nye tildelingen er oppdatert](./media/04_RevRecScenarios.png)](./media/04_RevRecScenarios.png)
+    [![Salgsordrelinjer etter at den nye tildelingen er oppdatert.](./media/04_RevRecScenarios.png)](./media/04_RevRecScenarios.png)
 
-- **Behandle** – Behandle eller postere inntektspriser på nytt. Etter at du har valgt denne knappen, er det ingen måte å tilbakeføre den nye tildelingen på. Hvis du ikke valgte **Oppdater ny tildeling** før du velger **Behandle**, blir den nye tildelingen kjørt automatisk.
+- **Behandle** – Behandle eller poster inntektspriser på nytt. Etter at du har valgt denne knappen, er det ingen måte å tilbakeføre den nye tildelingen på. Hvis du ikke valgte **Oppdater ny tildeling** før du velger **Behandle**, blir den nye tildelingen kjørt automatisk.
 
     - Hvis ingen salgsordrelinjer er fakturert, oppdateres inntektsprisbeløpene på alle salgsordrer som er valgt for ny tildeling.
     - Hvis én eller flere salgsordrelinjer er fakturert, posteres korrigeringen av regnskapsoppføringene, og eventuelle inntektsplandetaljer som ble opprettet for den fakturerte salgsordrelinjen, blir rettet opp.
@@ -100,7 +100,7 @@ Når du er ferdig med å velge de nødvendige salgsordrelinjene, bruker du knapp
 - **Forventet bilag** – Vis en forhåndsvisning av regnskapsoppføringene som er opprettet for alle salgsordrelinjer som er fakturert. Hvis ingen linjer er fakturert, vises ingenting. Hvis du ikke valgte **Oppdater ny tildeling** før du velger **Forventet bilag**, blir den nye tildelingen kjørt automatisk.
 - **Ny tildeling for inntekt** – Åpne en side som viser inntektsspristildelingen for alle de valgte linjene. Du kan ikke endre informasjonen på siden. Siden viser linjebeløpene som ble brukt til å utføre den nye tildelingen.
 
-    [![Linjebeløp som ble brukt for ny tildeling](./media/05_RevRecScenarios.png)](./media/05_RevRecScenarios.png)
+    [![Linjebeløp som ble brukt for ny tildeling.](./media/05_RevRecScenarios.png)](./media/05_RevRecScenarios.png)
 
 - **Tilbakestill data for valgt kunde** – Hvis prosessen for ny tildeling ble startet, men du ikke har fullført prosessen, fjerner du dataene i tabellen for ny tildeling for den valgte kunden. Hvis du for eksempel merker flere salgsordrelinjer for ny tildeling, lar du siden være åpen uten å velge **Behandle**, og deretter blir siden tidsavbrutt. I dette tilfellet vil salgsordrelinjene forbli markert, og de vil ikke være tilgjengelige før en annen bruker kan fullføre prosessen for ny tildeling. Siden kan til og med være tom når den åpnes. I slike situasjoner kan knappen **Tilbakestill data for valgt kunde** brukes til å fjerne ubehandlede salgsordrer, slik at en annen bruker kan fullføre prosessen for ny tildeling.
 

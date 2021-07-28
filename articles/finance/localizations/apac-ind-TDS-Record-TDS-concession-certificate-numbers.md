@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: f543adc8bab5ca224bdb672d6b3c282c2d8531d8
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 97fce25ea8c556f001c84f6836a0a270a9f3524f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023466"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358392"
 ---
 # <a name="record-tds-concession-certificate-numbers"></a>Registrere TDS-konsesjonssertifikatnumre
 
@@ -33,7 +33,7 @@ Dette emnet forklarer hvordan du registrerer TDS-konsesjonssertifikatnumre (Tax 
 2. Velg **TDS** i **Avgiftstype**-feltet for å registrere konsesjonssertifikater for TDS-avgiftstypen.
 3. Trykk på **ALT+N** i **Oversikt**-fanen for å opprette en linje.
 
-    [![Topptekst for den nye linjen](./media/apac-ind-TDS-34.png)](./media/apac-ind-TDS-34.png)
+    [![Topptekst for den nye linjen.](./media/apac-ind-TDS-34.png)](./media/apac-ind-TDS-34.png)
 
 4. I feltet **Kildeskattkode** velger du TDS-avgiftskoden som konsesjonssertifikatene for leverandør er utstedt for. Feltet **Navn på kildeskattkode** viser navnet på TDS-avgiftskoden.
 5. Definer gyldighetsperioden for konsesjonssertifikatet som bruker TDS-avgiftskoden til å beregne TDS for leverandøren på en konsesjonsmessig basis, i feltene **Fra-dato** og **Til-dato**.
@@ -50,6 +50,6 @@ Dette emnet forklarer hvordan du registrerer TDS-konsesjonssertifikatnumre (Tax 
 
 11. Angi TDS-konsesjonssertifikatnummeret i **Sertifikat**-feltet.
 
-    [![Hurtigfanen Sertifikat](./media/apac-ind-TDS-33.png)](./media/apac-ind-TDS-33.png)
+    [![Hurtigfanen Sertifikat.](./media/apac-ind-TDS-33.png)](./media/apac-ind-TDS-33.png)
 
 12. Lukk siden.

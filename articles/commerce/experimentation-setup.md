@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 9976ca461f7e988c32b81565fa2d084709e5ad6e
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 7453f0780d46ec1b3a09fe122938c8729c35aef6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792516"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349238"
 ---
 # <a name="set-up-an-experiment"></a>Konfigurere et eksperiment
 
 Når du [definerer en hypotese og fastslår hvilke suksessmåledata du vil bruke](experimentation-identify.md), må du konfigurere eksperimentet i tredjepartstjenesten. Diagrammet nedenfor viser alle trinnene for å konfigurere og kjøre et eksperiment på et nettsted for e-handel i Dynamics 365 Commerce. Flere trinn er beskrevet i separate emner.
 
-[ ![Brukerreise for eksperimentering – konfigurere](./media/experimentation_setup.svg) ](./media/experimentation_setup.svg#lightbox)
+[ ![Brukerreise for eksperimentering – konfigurere.](./media/experimentation_setup.svg) ](./media/experimentation_setup.svg#lightbox)
 
 
 ## <a name="set-up-your-experiment-in-the-third-party-service"></a>Konfigurere eksperimentet i tredjepartstjenesten

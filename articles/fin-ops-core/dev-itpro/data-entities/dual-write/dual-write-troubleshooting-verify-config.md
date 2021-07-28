@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: af746d1d20ddd1552bce797288c6d62d69d7bd16
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: d903d58fbd5e9d6bd9ecf7943d09525446721ba2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748855"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350770"
 ---
 # <a name="verify-dual-write-configuration-in-finance-and-operations-apps-and-dataverse"></a>Kontrollere konfigurasjonen av dobbel skriving i Finance and Operations og Dataverse
 
@@ -39,11 +39,11 @@ Hvis du vil finne ut om feilene du ser når du prøver å lagre rader for oppdat
 
 + Hvis du har administratorrettigheter i Finance and Operations-appen, går du til **Arbeidsområder \> Databehandling** og velger **Dobbel skriving**-flisen. Hvis detaljene for de koblede miljøene og listen over tabelltilordninger som kjører, vises, er dobbel skriving konfigurert.
 
-    ![Kontrollere Finance and Operations-apptilkoblingen når du har administratorrettigheter](media/verify_fin_ops_1.png)
+    ![Kontrollere Finance and Operations-apptilkoblingen når du har administratorrettigheter.](media/verify_fin_ops_1.png)
 
 + Hvis du ikke har administratorrettigheter, får du feilmeldingen *Kan ikke skrive data til enhet \<entity name\>*. I eksemplet i illustrasjonen nedenfor kan du ikke opprette en kunderad i Finance and Operations-appen, fordi dobbel skriving er konfigurert, men referansedataene for kundegruppen og betalingsbetingelsene finnes ikke i Dataverse.
 
-    ![Kontrollere Finance and Operations-apptilkoblingen når du ikke har administratorrettigheter](media/verify_fin_ops_2.png)
+    ![Kontrollere Finance and Operations-apptilkoblingen når du ikke har administratorrettigheter.](media/verify_fin_ops_2.png)
 
 Hvis du vil ha informasjon om hvordan du løser problemer når du oppretter data i Finance and Operations-apper, kan du se [Feilsøke problemer med direkte synkronisering](dual-write-troubleshooting-live-sync.md).
 
@@ -51,7 +51,7 @@ Hvis du vil ha informasjon om hvordan du løser problemer når du oppretter data
 
 Når du oppretter data og ser **Firma**-kolonnen på sider i Dataverse, er dobbel skriving konfigurert.
 
-![Kontrollere Dataverse-tilkoblingen](media/verify_cds.png)
+![Kontrollere Dataverse-tilkoblingen.](media/verify_cds.png)
 
 Hvis du vil ha informasjon om hvordan du løser problemer når du oppretter data i Dataverse, kan du se [Feilsøke problemer med direkte synkronisering](dual-write-troubleshooting-live-sync.md).
 

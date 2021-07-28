@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: dfe04881e71558ed326025d8f2545c3c611df3aa
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 6a319007b32a8a52bd4a0c0af337ed8fd4062cfa
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796976"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346674"
 ---
 # <a name="adjust-ai-ml-based-product-recommendation-results"></a>Justere resultater for AI-ML-basert produktanbefaling
 
@@ -51,7 +51,7 @@ Avhengig av virksomheten kan bestselgerlisten gi forskjellige resultater enn ten
 
 Produktlisten for "Bestselgere" har én parameter som kan endres:
 
-![Eksempel standardparameter for bestselgerliste](./media/examplebestsellingparameters.PNG)
+![Eksempel standardparameter for bestselgerliste.](./media/examplebestsellingparameters.PNG)
 
 1. **Inkluder salg fra X dager** – Salgstransaksjoner som har oppstått innen det angitte antallet dager før gjeldende dato, kan brukes til å bestille produkter. Standardverdien ovenfor foreslår at alle innkjøp som er gjort for et produkt i løpet av de siste 30 dagene, blir brukt til å bestemme plasseringen av produktet i produktlisten for bestselgere. 
 
@@ -65,13 +65,13 @@ Produktlisten for "Bestselgere" har én parameter som kan endres:
 1.  Hvis du vil legge til produkter i tabellen, velger du **Legg til linje**. 
 1.  Under Produkt-kolonnen søker du etter et produkt etter **navn** eller **produktnummer**.
 
-    ![Eksempel på å søke etter et produkt i den listen over nye produkter](./media/examplenewlistconfiguration1.png)
+    ![Eksempel på å søke etter et produkt i den listen over nye produkter.](./media/examplenewlistconfiguration1.png)
 
 1.  Velg ett av to alternativer under Linjetype-kolonnen:
     -   **Inkluder** – tvinger frem et produkt til fronten av listen
     -   **Ekskluder** – fjerner et produkt fra å vises i listen
     
-    ![Eksempel på å inkludere eller ekskludere et produkt fra listen over nye produkter](./media/examplenewlistconfiguration2.png)
+    ![Eksempel på å inkludere eller ekskludere et produkt fra listen over nye produkter.](./media/examplenewlistconfiguration2.png)
 
 1.  Når du endrer **Visningsrekkefølge**, endres visningsrekkefølgen for produkter merket **inkluder**, i listen.
     - Hvis to produkter har samme verdi for **visningsrekkefølge**, kan den endelige rekkefølgen for disse to resultatene avvike fra backoffice.
@@ -87,11 +87,11 @@ Et *seed-produkt* er produktet du vil generere resultater for. I forbindelse med
 Følg disse trinnene for å legge til eller fjerne resultater for et seed-produkt manuelt:
 1.  Velg **seed-produkt**. 
 1.  Under **Produkt**-kolonnen søker du etter et produkt etter **Navn** eller **Produktnummer**.
-![Eksempel på søk etter produkt på listen Ofte kjøpt sammen](./media/exampleFBTlistconfiguration1.png)
+![Eksempel på søk etter produkt på listen Ofte kjøpt sammen.](./media/exampleFBTlistconfiguration1.png)
 1. Velg ett av to alternativer under **Linjetype**-kolonnen:
     - **Inkluder** – tvinger frem et produkt til fronten av listen
     - **Ekskluder** – fjerner et produkt fra å vises i listen     
-![Eksempel på å inkludere eller ekskludere et produkt på listen Ofte kjøpt sammen](./media/exampleFBTlistconfiguration2.png)
+![Eksempel på å inkludere eller ekskludere et produkt på listen Ofte kjøpt sammen.](./media/exampleFBTlistconfiguration2.png)
 1.  Slik fjerner du produkter fra tabellen: Merk linjen for å fjerne, og velg Fjern.
 
 

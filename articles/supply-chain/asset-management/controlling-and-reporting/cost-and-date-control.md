@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c09dee94891fb78c22e8cf9f203cb7f5531bb968
-ms.sourcegitcommit: 51cad1ce3ed44ebf7eb9bdf553ee2df4c1f03135
+ms.openlocfilehash: 4fd08d9eeb9bb6ac9e3c19ff3c8592086c050182
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "6016143"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354960"
 ---
 # <a name="cost-and-date-control"></a>Kostnads- og datokontroll
 
@@ -58,7 +58,7 @@ Beregningene for aktiva, arbeidssteder og arbeidsordrer er nesten identiske. Den
 
     Figuren nedenfor viser et eksempel på dialogboksen **Kostnadskontroll for aktivum**.
 
-    ![Dialogboksen Kostnadskontroll for aktivum](media/01-controlling-and-reporting.png)
+    ![Dialogboksen Kostnadskontroll for aktivum.](media/01-controlling-and-reporting.png)
 
 10. På siden **Kostnadskontroll for aktivum** klikker du på knappen **Grupper etter** for å vise det nødvendige detaljnivået for beregningen. De valgte **Grupper etter**-knappen er uthevet. Klikk på en knapp for å aktivere eller deaktivere den.
 
@@ -71,7 +71,7 @@ Skjermbildet nedenfor viser et eksempel på beregningsresultater i **Kostnadskon
 - Feltet **Åpen igangsatt kost** viser forpliktelser som skal betales for varer, timer og tjenester du har bestilt eller mottatt, men ennå ikke betalt for. 
 - Feltet **Faktiske kostnader** viser de relaterte kostnadene etter at alle forbruksregistreringene er postert.
 
-![Eksempel på beregningsresultater for kostnadskontroll for aktivum](media/02-controlling-and-reporting.png)
+![Eksempel på beregningsresultater for kostnadskontroll for aktivum.](media/02-controlling-and-reporting.png)
 
 En annen måte å gjøre en kostnadsberegning på er å velge flere aktiva i **Alle aktiva** eller **Aktive aktiva**. Deretter klikker du **Kostnadskontroll**-knappen i fanen **Generelt**. I dialogboksen **Kostnadskontroll for aktivum** settes de valgte anleggsmidlene automatisk inn i **Aktivum**-feltet i hurtigfanen **Poster som skal inkluderes**. Klikk på **OK**, så vises den en beregning av kostnadene for de valgte anleggsmidlene. Den samme fremgangsmåten kan brukes for arbeidssteder i **Alle arbeidssteder** eller **Aktive arbeidssteder**, og for arbeidsordrer i **Alle arbeidsordrer** eller **Aktive arbeidsordrer**.
 
@@ -99,7 +99,7 @@ Skjermbildet nedenfor viser et eksempel på beregningsresultater i **Datokontrol
 - Feltet **Gj.sn. sluttforsinkelse** viser forskjellen i dager mellom planlagt sluttdato for en arbeidsordre sammenlignet med faktisk sluttdato. Hvis for eksempel den faktiske sluttdatoen var tre dager etter den planlagte sluttdatoen, vil 3 vises i dette feltet.  
 - **Forekomster**-feltene viser antall ganger avvik forekommer i forhold til planlagt og faktisk startdato, og planlagt og faktisk sluttdato i arbeidsordren.
 
-![Eksempel på beregningsresultater for Datokontroll for arbeidsordre](media/03-controlling-and-reporting.png)
+![Eksempel på beregningsresultater for Datokontroll for arbeidsordre.](media/03-controlling-and-reporting.png)
 
 
 

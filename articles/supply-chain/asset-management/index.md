@@ -9,18 +9,18 @@ ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d780c7a52570e8e8dbd0c42c6d1aa8e41d2d4819
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 164926714717addc486a69f4ae913dcef2bc4c41
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809884"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361156"
 ---
 # <a name="asset-management-overview"></a>Oversikt over Aktivastyring
 
@@ -32,7 +32,7 @@ Aktivastyring er en avansert modul for håndtering av aktiva og vedlikeholdsjobb
 
 Bildet nedenfor er en illustrasjon av grensesnittene til andre moduler i Finance and Operations.
 
-![Oversikt over hvordan Aktivastyring integreres](media/overview-integrate2.jpg)
+![Oversikt over hvordan Aktivastyring integreres.](media/overview-integrate2.jpg)
 
 Med Aktivastyring kan du effektivt administrere og utføre oppgaver knyttet til administrasjon og service av mange typer utstyr i bedriften din, for eksempel maskiner, produksjonsutstyr og kjøretøyer. Aktivastyring støtter løsninger på tvers av en rekke bransjer.
 

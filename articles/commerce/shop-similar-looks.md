@@ -16,12 +16,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 06b5721c423330b8840bb546bdb144c3189c25bb
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c350e6d6bfd4e699c55a4c0a57695b1b718b7167
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795387"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357768"
 ---
 # <a name="enable-shop-similar-looks-recommendations"></a>Aktivere Kjøp lignende utseender-anbefalinger
 
@@ -68,7 +68,7 @@ Hvis du vil aktivere anbefalingsfunksjonen "kjøp lignende utseende" i Commerce 
 
 Illustrasjonen nedenfor viser funksjonen **Kjøp lignende utseende** på siden **Funksjonsbehandling** i Commerce Headquarters.
 
-![Funksjonen Kjøp lignende utseende på siden Funksjonsbehandling i Commerce Headquarters](./media/enableshopsimilarlooks.png)
+![Funksjonen Kjøp lignende utseende på siden Funksjonsbehandling i Commerce Headquarters.](./media/enableshopsimilarlooks.png)
 
 Når de foregående oppgavene er fullført, forbedres POS-terminaler automatisk med et kontekstavhengig **Kjøp lignende produkter**-panelet. Ved å velge **Se mer** kan brukere av salgsstedsterminaler tas til en dedikert "kjøp likt utseende"-side som kan filtreres ytterligere.
 

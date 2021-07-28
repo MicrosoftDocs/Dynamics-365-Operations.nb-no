@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 0c1e6a9490fba0becb4840cbec9d04c22d482511
-ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
+ms.openlocfilehash: e0b0eb1466d962fb04566b936322db1e4c28f830
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "6103174"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359793"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Lagerhåndtering av innkommende laster for bestillinger
 
@@ -30,7 +30,7 @@ For hver innkommende last bør systemet allerede inneholde en tilknyttet salgsor
 
 Illustrasjonen nedenfor viser den vanlige flyten for håndtering av innkommende laster som har bestillingsantall når de kommer til lageret.
 
-![Prosessen for behandling av innkommende laster](media/inbound-process.png "Prosessen for behandling av innkommende laster")
+![Prosessen for behandling av innkommende laster.](media/inbound-process.png "Prosessen for behandling av innkommende laster")
 
 1. **Leverandøren bekrefter bestillingen.**
 
@@ -293,7 +293,7 @@ I denne delen skal du opprette et menyelement på en mobilenhet og legge det til
 
     Du kan la alle andre innstillinger være som standardverdiene.
 
-    ![Innstillinger for menyelementer på mobilenhet](media/inbound-mobile-menu-items.png "Innstillinger for menyelementer på mobilenhet")
+    ![Innstillinger for menyelementer på mobilenhet.](media/inbound-mobile-menu-items.png "Innstillinger for menyelementer på mobilenhet")
 
     Hvis du vil ha mer informasjon om hvordan du definerer menyelementer for mobilenheter, kan du se [Definere mobilenheter for lagerarbeid](configure-mobile-devices-warehouse.md).
 
@@ -328,7 +328,7 @@ I denne fremgangsmåten oppretter du en bestilling og en tilknyttet last manuelt
     - På hurtigfanen **Last** er feltet **Laststatus** satt til _Åpen_.
     - I delen **Lastlinjer** finnes det en enkelt linje der **Antall**-feltet er satt til _10_ og feltet **Antall for arbeid opprettet** er satt til _0_ (null).
 
-    ![Lastdetaljer](media/inbound-load-details.png "Lastdetaljer")
+    ![Lastdetaljer.](media/inbound-load-details.png "Lastdetaljer")
 
 1. I handlingsruten, i fanen **Send og motta**, velger du **Bekreft \> Innkomende forsendelse**. Legg merke til at **Laststatus** er endret til _Sendt_.
 1. Noter verdien for **Last-ID**, slik at du kan bruke den i neste fremgangsmåte.

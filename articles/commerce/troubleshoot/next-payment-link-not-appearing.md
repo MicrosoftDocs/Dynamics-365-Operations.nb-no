@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: af19a3abd78d543d82f7a8d017e2dc413115a6d8
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 679c2453068695caca03ac9618573eba0686b863
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018440"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347326"
 ---
 # <a name="save-for-my-next-payment-option-doesnt-appear"></a>Alternativet Lagre for min neste betaling vises ikke
 
@@ -34,9 +34,9 @@ Avmerkingsboksen **Lagre for min neste betaling** vises ikke i delen **Betalings
 
 Illustrasjonen nedenfor viser et eksempel på en utsjekkingsside som inneholder avmerkingsboksen **Lagre for min neste betaling**.
 
-![Lagre for min neste betaling i betalingsmodulen](media/payment-module-save-payment.jpg)
+![Lagre for min neste betaling i betalingsmodulen.](media/payment-module-save-payment.jpg)
 
-## <a name="resolution"></a>Oppløsning
+## <a name="resolution"></a>Løsning
 
 ### <a name="verify-that-the-dynamics-365-payment-connector-for-adyen-is-correctly-configured-in-commerce-headquarters"></a>Kontroller at Dynamics 365 Payment Connector for Adyen er riktig konfigurert i Commerce Headquarters
 
@@ -46,7 +46,7 @@ Hvis du vil kontrollere at Dynamics 365 Payment Connector for Adyen er riktig ko
 1. Velg nettbutikken.
 1. I hurtigfanen **Betalingskontoer** kontrollerer du at feltet **Tillat lagring av betalingsinformasjon i e-handel** er satt til **Sann**.
 
-![Tillat lagring av betalingsinformasjon i e-handelsfelt i Commerce Headquarters](media/payment-connector-save-payment.jpg)
+![Tillat lagring av betalingsinformasjon i e-handelsfelt i Commerce Headquarters.](media/payment-connector-save-payment.jpg)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

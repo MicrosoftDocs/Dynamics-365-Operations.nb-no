@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 4238d1aa277bf2f1df30825ef20dbf3095d13ebc
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f6e791ffd15128d2076340515a08b5ea6be70dae
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800573"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346014"
 ---
 # <a name="set-up-organization-hierarchies"></a>Definere organisasjonshierarkier
 
@@ -54,7 +54,7 @@ Bruk følgende fremgangsmåte for å opprette et organisasjonshierarki.
 
 Det følgende bildet viser et eksempel på et organisasjonshierarki som er opprettet for et fiktivt "Adventure Works"-sett med butikker.
 
-![Eksempel på organisasjonshierarki](media/organizational-hierarchies.png)
+![Eksempel på organisasjonshierarki.](media/organizational-hierarchies.png)
 
 ### <a name="add-organizations-to-a-hierarchy"></a>Legge til organisasjoner i et hierarki
 
@@ -67,7 +67,7 @@ Hvis du vil legge til organisasjoner i et hierarki, følger du disse trinnene.
 
 Det følgende bildet viser en juridisk enhet som er lagt til i hierarkiroten med fire kostsentre som er lagt til for kanalene "Kjøpesenter", "Utsalgssted", "Nett" og "Telefonsenter". Det kan også legges til diverse typer detaljhandel-, telefonsenter- og Internett-kanaler.
 
-![Eksempel på hierarkiutformer](media/hierarchy-designer.png)
+![Eksempel på hierarkiutformer.](media/hierarchy-designer.png)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

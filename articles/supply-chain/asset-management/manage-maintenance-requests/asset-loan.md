@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 712f3e7cdfb8d521ae2afb59d90bc5102da53cb7
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9be41f459b8ec8ca8ccad2360218b32299cb319e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813393"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354935"
 ---
 # <a name="asset-loans"></a>Lån av gjenstander
 
@@ -44,7 +44,7 @@ Hvis firmaet ditt mottar aktiva for reparasjons- eller vedlikeholdsjobber fra en
 
 Hvis du vil vise en liste over alle aktivumene du har lånt ut til andre lokasjoner eller kunder, velger du **Anleggsmiddelbehandling** \> **Felles** \> **Lån av gjenstander** \> **Alle lån av gjenstander**. Hvis det er merket av for **Avsluttet** for et aktivum, er aktivumet registrert som returnert til firmaet.
 
-![Behandle vedlikeholdsforespørsler](media/06-manage-maintenance-requests.png)
+![Behandle vedlikeholdsforespørsler.](media/06-manage-maintenance-requests.png)
 
 På siden **Aktive lån av gjenstander** kan du vise en liste over alle lånegjenstander som ennå ikke er returnert til selskapet.
 

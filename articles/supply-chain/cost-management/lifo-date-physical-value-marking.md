@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f6a9f21c6c329ef37d515fa0fbdaca57b4f3be0a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 744111a28256bb737246605ca8a259ff5a3d2b5d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821543"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344574"
 ---
 # <a name="lifo-date-with-physical-value-and-marking"></a>LIFO-dato med fysisk verdi og merking
 
@@ -55,7 +55,7 @@ I dette eksemplet er det ikke merket av for Ta med fysisk verdi for varemodellgr
 
 Det nye glidende gjennomsnittet for kostpris gjenspeiler gjennomsnittet for økonomisk oppdaterte transaksjoner, det vil si USD 15,00. 
 
-Illustrasjonen nedenfor viser virkningene av LIFO-datolagermodellen når alternativet **Ta med fysisk verdi** ikke brukes. ![LIFO-dato med ta med fysisk verdi](./media/lifodatewithoutincludephysicalvalue.gif) 
+Illustrasjonen nedenfor viser virkningene av LIFO-datolagermodellen når alternativet **Ta med fysisk verdi** ikke brukes. ![LIFO-dato med ta med fysisk verdi.](./media/lifodatewithoutincludephysicalvalue.gif) 
 
 **Nøkkel til diagrammet**
 
@@ -90,7 +90,7 @@ Illustrasjonen nedenfor viser disse transaksjonene:
 
 Det nye glidende gjennomsnittet for kostpris gjenspeiler gjennomsnittet for økonomisk oppdaterte transaksjoner, det vil si USD 20,00. 
 
-Illustrasjonen nedenfor viser virkningene av LIFO-lagermodellen når alternativet **Ta med fysisk verdi** brukes. ![LIFO-dato med ta med fysisk verdi](./media/lifodatewithincludephysicalvalue.gif) 
+Illustrasjonen nedenfor viser virkningene av LIFO-lagermodellen når alternativet **Ta med fysisk verdi** brukes. ![LIFO-dato med ta med fysisk verdi.](./media/lifodatewithincludephysicalvalue.gif) 
 
 **Nøkkel til diagrammet**
 
@@ -136,7 +136,7 @@ Illustrasjonen nedenfor viser disse transaksjonene:
 
 Det nye glidende gjennomsnittet av kostprisen gjenspeiler gjennomsnittet av de økonomisk og fysisk oppdaterte transaksjonene med USD 27,50. 
 
-Illustrasjonen nedenfor viser virkningene av LIFO-lagermodellen når merking mellom avganger og tilganger brukes. ![LIFO-dato med merking](./media/lifodatewithmarking.gif) 
+Illustrasjonen nedenfor viser virkningene av LIFO-lagermodellen når merking mellom avganger og tilganger brukes. ![LIFO-dato med merking.](./media/lifodatewithmarking.gif) 
 
 **Nøkkel til diagrammet**
 

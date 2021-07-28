@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: cabeln
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: b1e2006c0d9b9effe331a644aaaa9fa33ff2fb7c
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: da19066f647c17e934a11e4dab7cb370baabfb5c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6270541"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352742"
 ---
 # <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Skalaenheter for sky og kant for arbeidsbelastninger for produksjonsutførelse
 
@@ -44,7 +44,7 @@ Dette emnet beskriver hvordan arbeidsbelastninger for produksjonskjøringer fung
 
 Som den følgende illustrasjonen viser, er produksjonslivssyklusen delt inn i tre faser: *planlegge*, *kjøre* og *fullføre*.
 
-[![Produksjonskjøringsfaser når ett enkelt miljø brukes](media/mes-phases.png "Produksjonskjøringsfaser når ett enkelt miljø brukes")](media/mes-phases-large.png)
+[![Produksjonsutførelsesfaser når et enkelt miljø brukes](media/mes-phases.png "Produksjonsutførelsesfaser når ett enkelt miljø brukes."](media/mes-phases-large.png)
 
 _Planlegge_-fasen omfatter produktdefinisjon, planlegging, oppretting og planlegging av ordrer og frigivelse. Frigivelsestrinnet viser overgangen fra _Planlegg_-fasen til _Kjøre_-fasen. Når en produksjonsordre frigis, vil produksjonsordrejobbene være synlige på produksjonsgulvet og klare til kjøring.
 
@@ -54,7 +54,7 @@ Når en produksjonsjobb er merket som fullført, flyttes den fra _Kjøre_-fasen 
 
 Som den følgende illustrasjonen viser, blir _Kjøre_-fasen delt som en egen arbeidsbelastning når du bruker skalaenheter.
 
-[![Produksjonskjøringsfaser når skalaenheter brukes](media/mes-phases-workloads.png "Produksjonskjøringsfaser når skalaenheter brukes")](media/mes-phases-workloads-large.png)
+[![Produksjonsutførelsesfaser når skaleringsenheter brukes](media/mes-phases-workloads.png "Produksjonsutførelsesfaser når skaleringsenheter brukes.](media/mes-phases-workloads-large.png)
 
 Modellen går nå fra en enkelt forekomstinstallasjon til en modell som er basert på senteret og skalaenhetene. _Planlegge_- og _Fullføre_-fasene kjører som Back-Office-operasjoner på senteret, og arbeidsbelastningen for produksjonskjøring kjører på skalaenhetene. Data overføres asynkront mellom senteret og skalaenhetene.
 
@@ -87,7 +87,7 @@ Selv om jobben vanligvis kjører automatisk, kan du kjøre den manuelt når som 
 
 Hvis du vil se gjennom registreringsbehandlingsloggen, logger du deg på senteret og går til **Produksjonskontroll \> Periodiske oppgaver \> Back-office-arbeidsbelastningsbehandling \> Logg over råregistreringsbehandling**. Siden **Logg for råregistreringsbehandling** viser en liste over behandlede råregistreringer og statusen for hver registrering.
 
-![Siden Logg for råregistreringsbehandling](media/mes-processing-log.png "Siden Logg for råregistreringsbehandling")
+![Siden Logg for råregistreringsbehandling.](media/mes-processing-log.png "Siden Logg for råregistreringsbehandling")
 
 Du kan arbeide med en hvilken som helst registrering i listen ved å velge den og deretter velge en av følgende knapper i handlingsruten:
 

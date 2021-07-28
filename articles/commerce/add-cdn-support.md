@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 59277323e0995f59d3a451395a038fa3708274eb
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 85ca468fe6c440fb333b4c32f59f1d41eb89f4e6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936836"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346834"
 ---
 # <a name="add-support-for-a-content-delivery-network-cdn"></a>Legge til støtte for et innholdsleveringsnettverk (CDN)
 
@@ -74,11 +74,11 @@ Følg disse trinnene for å konfigurere et serverdelsutvalg i Azure Front Door S
 
 Følgende illustrasjon viser dialogboksen **Legg til en serverdel** i Azure Front Door Service, der vertsnavnet for serverdelen er angitt.
 
-![Legge til en dialogboks for serverdelsutvalg](./media/CDN_BackendPool.png)
+![Legge til en dialogboks for serverdelsutvalg.](./media/CDN_BackendPool.png)
 
 Følgende illustrasjon viser dialogboksen **Legg til et serverdelutvalg** i Azure Front Door Service med standardverdier for belastningsfordeling.
 
-![Legge til en dialogboks for serverdelsutvalg (fortsettelse)](./media/CDN_BackendPool_2.png)
+![Legge til en dialogboks for serverdelsutvalg (fortsettelse).](./media/CDN_BackendPool_2.png)
 
 > [!NOTE]
 > Pass på at du deaktiverer **Helsetilstand** når du setter opp din egen Azure Front Door Service for Commerce.
@@ -107,13 +107,13 @@ Hvis domenet er nytt og det ikke er et direkte domene som allerede finnes, kan d
 
 Følgende illustrasjon viser dialogboksen **CNAME-konfigurasjon** i Azure Front Door Service.
 
-![Dialogboksen CNAME-konfigurasjon](./media/CNAME_Configuration.png)
+![Dialogboksen CNAME-konfigurasjon.](./media/CNAME_Configuration.png)
 
 Du kan bruke Azure Front Door Service til å administrere sertifikatet, eller du kan bruke ditt eget sertifikat for det egendefinerte domenet.
 
 Den følgende illustrasjonen viser dialogboksen for **HTTPS for egendefinert domene** i Azure Front Door Service.
 
-![Dialogboksen for HTTPS for egendefinert domene](./media/Custom_Domain_HTTPS.png)
+![Dialogboksen for HTTPS for egendefinert domene.](./media/Custom_Domain_HTTPS.png)
 
 Hvis du vil ha detaljerte instruksjoner om hvordan du legger til et tilpasset domene i Azure Front Door, kan du se [Legge til et egendefinert domene i Front Door](/azure/frontdoor/front-door-custom-domain).
 

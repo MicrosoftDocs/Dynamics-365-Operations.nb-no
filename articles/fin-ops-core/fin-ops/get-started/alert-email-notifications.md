@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2019-1-29
 ms.dyn365.ops.version: Platform update 24
-ms.openlocfilehash: d132ed979a84c2906298c05708cef1ee87f47078
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 9fb5b851c71ac632a045cf09c725a088d13f21ad
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752920"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360264"
 ---
 # <a name="client-alert-notifications-by-email"></a>Varselmeldinger til klient via e-post
 
@@ -36,7 +36,7 @@ Hvis du vil ha mer informasjon om hvordan du konfigurerer e-post, kan du se [Kon
 
 Følgende bilde viser dialogboksen **Opprett varslingsregel**, som nå inneholder alternativet **Send e-post**.
 
-[![Dialogboksen Opprett varslingsregel, der alternativet Send e-post er satt til Ja](./media/Create-alert-rule-form.png)](./media/Create-alert-rule-form.png)
+[![Dialogboksen Opprett varslingsregel, der alternativet Send e-post er satt til Ja.](./media/Create-alert-rule-form.png)](./media/Create-alert-rule-form.png)
 
 > [!NOTE]
 > Når alternativet **Send e-post** er satt til **Ja**, vil varsler fortsatt leveres fra handlingssenteret.
@@ -47,7 +47,7 @@ Tjenesten sender e-postvarslinger ved hjelp av forhåndsdefinerte e-postmaler so
 
 Illustrasjonen nedenfor viser strukturen på varslingene når de mottas via e-post.
 
-[![Malbaserte varslinger for postoppretting, feltendringer og malsletting](./media/Alert-email-templates.png)](./media/Alert-email-templates.png)
+[![Malbaserte varslinger for postoppretting, feltendringer og malsletting.](./media/Alert-email-templates.png)](./media/Alert-email-templates.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

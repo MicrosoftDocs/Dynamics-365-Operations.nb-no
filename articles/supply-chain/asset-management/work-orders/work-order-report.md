@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 804885e6a416fd865933e59f11691768bf1abde4
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3d2aff88880f27d50f3795e97aadf95a86a90cab
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813321"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344598"
 ---
 # <a name="work-order-report"></a>Arbeidsordrerapport
 
@@ -42,11 +42,11 @@ Du kan generere en arbeidsordrerapport som viser detaljert informasjon om én el
 
 Illustrasjonen nedenfor viser et eksempel på hvordan rapportparameterne kan defineres.
 
-![Figur 1](media/20-work-orders.png)
+![Figur 1.](media/20-work-orders.png)
 
 Følgende illustrasjon viser et eksempel på en arbeidsordrerapport som genereres basert på det oppsettet.
 
-![Figur 2](media/21-work-orders.png)
+![Figur 2.](media/21-work-orders.png)
 
 
 

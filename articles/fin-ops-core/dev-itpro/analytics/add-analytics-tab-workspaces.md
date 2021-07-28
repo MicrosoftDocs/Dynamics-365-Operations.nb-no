@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 8e82c9a5ff4b6d7db1a808e5a94206628cdf0930
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 14c8c36b90caa3a9378a739932d734b94985b46c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754604"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354451"
 ---
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Legge til analyse i arbeidsområder ved hjelp av Power BI Embedded
 
@@ -54,11 +54,11 @@ Følg denne fremgangsmåten for å legge til en .pbix-fil som en artefakt i et V
 3. I dialogboksen **Legg til nytt element** under **Operations-artefakter** velger du **Ressurs**-malen.
 4. Angi et navn som skal brukes til å referere til rapporten i X++-metadataene, og klikk deretter **Legg til**.
 
-    ![Dialogboksen Legg til nytt element](media/analytical-workspace-add.png)
+    ![Dialogboksen Legg til nytt element.](media/analytical-workspace-add.png)
 
 5. Finn .pbix-filen som inneholder definisjonen av den analytiske rapporten, og klikk deretter **Åpne**.
 
-    ![Velge en Ressursfil-dialogboks](media/analytical-workspace-select-resource.png)
+    ![Velge en Ressursfil-dialogboks.](media/analytical-workspace-select-resource.png)
 
 Nå som du har lagt til .pbix-filen som en Dynamics 365-ressurs, kan du bygge inn rapportene i arbeidsområder og legge til direkte koblinger ved å bruke menyelementer.
 
@@ -67,7 +67,7 @@ I dette eksemplet vil vi utvide arbeidsområdet **Reservasjonsbehandling** i Fle
 
 Illustrasjonen nedenfor viser hvordan **FMClerkWorkspace**-skjemaet ser ut i utformingen i Microsoft Visual Studio.
 
-![FMClerkWorkspace-skjemaet før endringer](media/analytical-workspace-definition-before.png)
+![FMClerkWorkspace-skjemaet før endringer.](media/analytical-workspace-definition-before.png)
 
 Følg denne fremgangsmåten for å utvide skjemadefinisjonen for den **Reservasjonsbehandling**-arbeidsområdet.
 
@@ -92,7 +92,7 @@ Følg denne fremgangsmåten for å utvide skjemadefinisjonen for den **Reservasj
 
 Illustrasjonen nedenfor viser hvordan utformingen ser ut etter at endringene er brukt.
 
-![FMClerkWorkspace etter endringer](media/analytical-workspace-definition-after.png)
+![FMClerkWorkspace etter endringer.](media/analytical-workspace-definition-after.png)
 
 Nå som du har lagt til skjemakontrollene som skal brukes til å bygge inn arbeidsområderapporten, må du definere størrelsen på den overordnede kontrollen, slik at den passer for oppsettet. Som standard er både **filterrutesiden** og **kategorisiden** synlig i rapporten. Du kan imidlertid endre synligheten for disse kontrollene etter behov for rapportens målbruker.
 
@@ -142,7 +142,7 @@ Gjør følgende for å legge til forretningslogikk som initialiserer rapportvisn
 
 Du har nå fullført oppgaven med å legge til forretningslogikk for å initialisere den innebygde rapportvisningskontrollen. Illustrasjonen nedenfor viser hvordan arbeidsområdet ser ut etter at endringene er brukt.
 
-![Rapport som er innebygd i arbeidsområdet](media/analytical-workspace-final.png)
+![Rapport som er innebygd i arbeidsområdet.](media/analytical-workspace-final.png)
 
 > [!NOTE]
 > Du kan få tilgang til den eksisterende operasjonelle visningen ved hjelp av arbeidsområde-kategoriene under sidetittelen.

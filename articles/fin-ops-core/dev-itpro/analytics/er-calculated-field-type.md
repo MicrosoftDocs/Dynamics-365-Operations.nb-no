@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 897133a27f9d3da2f576ce675c0949f824cde881
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: fb09e1ccd4b2be08e43784330adf4092ca25f5a6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749495"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349166"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>Støtte for parameterkall fra ER-datakilder for Beregnet felt-typen
 
@@ -86,7 +86,7 @@ I dette eksemplet skal du opprette en konfigurasjon for eksempelfirmaet, Litware
 
     Modelltilordningen i denne konfigurasjonen implementerer basisdatamodellen for alle ER-formatene som opprettes for denne modellen og som kjøres i Finance and Operations. Derfor vil inneholder i datakildene **Avgift** og **Gr** bli eksponert for ER-formater, for eksempel abstrakte datakilder.
 
-    ![Siden Modelltilordningsutforming viser datakildene Avgift og Gr](media/er-calculated-field-type-01.png)
+    ![Siden Modelltilordningsutforming viser datakildene Avgift og Gr.](media/er-calculated-field-type-01.png)
 
 5.  Lukk siden **Modelltilordningsutforming**.
 6.  Lukk siden **Modelltilordning**.
@@ -101,21 +101,21 @@ I dette eksemplet skal du opprette en konfigurasjon for eksempelfirmaet, Litware
     - Presenter følgende nivåer for avgifter i avgiftsoppgaven: vanlig, redusert og ingen.
     - Presenter flere detaljer for hvert avgiftsnivå med ulikt antall detaljer på hvert nivå.
 
-    ![Formatutformingsside](media/er-calculated-field-type-02.png)
+    ![Formatutformingsside.](media/er-calculated-field-type-02.png)
 
 4. Velg **Tilordning**.
 5. Vis elementene **Model**, **Data,** og **Summary**. 
 
     Det beregnede feltet **Model.Data.Summary.Level** inneholder uttrykket som returnerer koden for avgiftsnivået (**Vanlig**, **Redusert**, **Ingen** eller **Annet**) som en tekstverdi for avgiftskoder som kan hentes fra datamodellen **Model.Data.Summary** ved kjøretid.
 
-    ![Siden Formatutforming som viser detaljer for datamodellen Modell for å lære om parameterkall](media/er-calculated-field-type-03.png)
+    ![Siden Formatutforming som viser detaljer for datamodellen Modell for å lære om parameterkall.](media/er-calculated-field-type-03.png)
 
 6. Vis elementet **Model**.**Data2**.
 7. Vis elementet **Model**.**Data2.Summary2**.
    
     Datakilden **Model**.**Data2.Summary2** konfigureres til å gruppere transaksjonsdetaljene for datakilden **Model.Data.Summary** etter avgiftsnivå (returneres av det beregnede feltet **Model.Data.Summary.Level**) og beregne aggregeringene.
 
-    ![Siden Formatutforming som viser detaljer om datakilden Model.Data2.Summary2](media/er-calculated-field-type-04.png)
+    ![Siden Formatutforming som viser detaljer om datakilden Model.Data2.Summary2.](media/er-calculated-field-type-04.png)
 
 8. Gå gjennom de beregnede feltene **Model**.**Data2.Level1**, **Model**.**Data2.Level2** og **Model**.**Data2.Level3.** Disse beregnede feltene brukes til å filtrere postlistene **Model**.**Data2. Summary2** og bare returnere poster som representerer et bestemt avgiftsnivå.
 9. Lukk **Formatutforming**-siden.
@@ -155,7 +155,7 @@ Du kan forbedre det angitte formatet ved å legge til ett beregnet felt for å f
 
     Det maksimale antallet parametere som kan angis for ett enkelt beregnet felt er 8.
 
-    ![Kildeliste for parameterdata](media/er-calculated-field-type-05.png)
+    ![Kildeliste for parameterdata.](media/er-calculated-field-type-05.png)
 
 5. Velg **OK**.
 
@@ -165,7 +165,7 @@ Ved å legge til denne parameteren angir du betingelsen som må være tilstede f
 
    Den konfigurerte parameteren er tilgjengelig i listen over datakilder for dette beregnede feltet. Du kan legge til parameteren i det konfigurerte uttrykket ved å velge **Legg til datakilde**.
 
-   ![Datakildefelt](media/er-calculated-field-type-06.png)
+   ![Datakildefelt.](media/er-calculated-field-type-06.png)
 
 ### <a name="define-an-expression-for-adding-a-calculated-field"></a>Definere et uttrykk for å legge til et beregnet felt
 
@@ -181,7 +181,7 @@ Ved å legge til denne parameteren angir du betingelsen som må være tilstede f
 
 5. Velg **Lagre**.
 
-    ![Informasjon for datakildefelt](media/er-calculated-field-type-07.png)
+    ![Informasjon for datakildefelt.](media/er-calculated-field-type-07.png)
 
 6. Lukk siden **Formelutforming**.
 
@@ -191,7 +191,7 @@ Ved å legge til denne parameteren angir du betingelsen som må være tilstede f
 
 På siden **Formatutforming** krever det konfigurerte parameterberegnede feltet **Nivåer** et **Streng**-argument.
 
-![Vist liste over nivåer for beregnede felt](media/er-calculated-field-type-08.png)
+![Vist liste over nivåer for beregnede felt.](media/er-calculated-field-type-08.png)
 
 ### <a name="use-the-configured-calculated-field-for-binding-format-elements&quot;></a>Bruke det konfigurerte beregnede feltet til binding av formatelementer
 
@@ -220,7 +220,7 @@ Gjentakende kall til parameterberegnede felt støttes ikke.
 
 Du kan velge **Rediger formel** og endre argumentet som brukes om standard for det parameterberegnede feltet i den valgte bindingen. Hvis dette argumentet mangler, kan det føre til feil ved kjøretid – brukerne får beskjed om en slik situasjon når gjeldende format blir validert.
 
-![Varsling om valideringsadvarsel](media/er-calculated-field-type-10.png)
+![Varsling om valideringsadvarsel.](media/er-calculated-field-type-10.png)
 
 ## <a name="configure-a-parameterized-calculated-field-to-return-a-record"></a>Konfigurere et parameterberegnede felt til å returnere en post
 Når et parameterberegnet felt returnerer en post, må du støtte binding av enkeltfelt til formatelementer i denne posten. I slike tilfeller er det ingen overordnet binding som inneholder verdien til et argument for å kalle et parameterberegnet felt. Denne verdien må være definert i bindingen til feltet for en enkeltpost.
@@ -272,7 +272,7 @@ Når et parameterberegnet felt returnerer en post, må du støtte binding av enk
 8. Velg **Rediger formel**.
 9. Endre uttrykket til **Model.Data2.LevelRecord("None").aggregated.Base**.
 
-![Oppdatert uttrykk](media/er-calculated-field-type-11.png)
+![Oppdatert uttrykk.](media/er-calculated-field-type-11.png)
 
 ## <a name="remove-calculated-fields-that-are-not-used"></a>Fjerne beregnede felt som ikke brukes
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-12-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 529f419a4e3e4e8807c6938fd2425ae01ce282f9
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: dc883606b832dc75b28f6209b05c0e35a51036b8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6051815"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359683"
 ---
 # <a name="recruit-job-candidates"></a>Rekruttere jobbkandidater
 
@@ -61,13 +61,13 @@ Hvis organisasjonen har flere steder, kan du legge dem til slik at anmodere kan 
 
 3. I feltet **Rekrutteringsforespørselssted** angir du stedsnavnet.
 
-   ![Legg til en rekrutteringsforespørselssted](./media/hr-recruit-0a-add-location.png)
+   ![Legg til en rekrutteringsforespørselssted.](./media/hr-recruit-0a-add-location.png)
 
 4. I **beskrivelsen** skriver du inn en beskrivelse for stedet.
 
 5. Under **Sted** velger du **Legg til**. Hvis den meldingen **Ny adresse** vises, angir du adressen til stedet.
 
-   ![Angi adresse](./media/hr-recruit-0b-address.png)
+   ![Angi adresse.](./media/hr-recruit-0b-address.png)
 
 6. Angi informasjonen for stedets kontakt under **Kontaktinformasjon**.
 
@@ -83,11 +83,11 @@ Ledere kan sende inn rekrutteringsforespørsler i Human Resources. Hvis du bruke
 
 3. Velg **Forespørsel om å rekruttere**.
 
-   ![Start en rekrutteringsforespørsel](./media/hr-recruit-1-request-to-recruit.png)
+   ![Start en rekrutteringsforespørsel.](./media/hr-recruit-1-request-to-recruit.png)
 
 4. Fyll ut feltene **Beskrivelse**, **Jobb** og **Beregnet startdato**.
 
-   ![Fullfør rekrutteringsforespørselen](./media/hr-recruit-2-request-to-recruit.png)
+   ![Fullfør rekrutteringsforespørselen.](./media/hr-recruit-2-request-to-recruit.png)
 
 5. Velg **Fortsett**. Rekrutteringsforespørselen for stillingen din vises.
 
@@ -95,7 +95,7 @@ Ledere kan sende inn rekrutteringsforespørsler i Human Resources. Hvis du bruke
 
 7. Endre eventuell informasjon etter behov under **Jobb**, og velg deretter **Opprett detaljer fra jobb**.
 
-   ![Opprett detaljer fra jobb](./media/hr-recruit-3-create-details-from-job.png)
+   ![Opprett detaljer fra jobb.](./media/hr-recruit-3-create-details-from-job.png)
 
    Resten av rekrutteringsforespørselen vil bli fylt ut med standardinformasjonen for jobben du angav.
 
@@ -103,13 +103,13 @@ Ledere kan sende inn rekrutteringsforespørsler i Human Resources. Hvis du bruke
 
 9. Under **Stillinger** velger du **Legg til**, og deretter velger du en stilling for denne rekrutteringsforespørselen.
 
-   ![Legg til en stilling](./media/hr-recruit-4-select-position.png)
+   ![Legg til en stilling.](./media/hr-recruit-4-select-position.png)
 
 10. Under **Ferdigheter** velger du **Legg til** og velger deretter en ferdighet.
 
 11. Under **Krav til utdannelse** velger du **Legg til**, og deretter velger du verdier fra rullegardinlistene **Utdanning** og **Utdanningsnivå**.
 
-   ![Legg til krav til utdanning](./media/hr-recruit-5-select-educational-requirements.png)
+   ![Legg til krav til utdanning.](./media/hr-recruit-5-select-educational-requirements.png)
 
 12. Legg til kommentarer etter behov under **Kommentar**.
 
@@ -117,7 +117,7 @@ Ledere kan sende inn rekrutteringsforespørsler i Human Resources. Hvis du bruke
 
 14. Når rekrutteringsforespørselen er fullført og du er klar til å starte rekrutteringsprosessen, velger du **Aktiver** på menylinjen.
 
-   ![Aktiver rekrutteringsforespørsel](./media/hr-recruit-6-activate-recruit-request.png)
+   ![Aktiver rekrutteringsforespørsel.](./media/hr-recruit-6-activate-recruit-request.png)
 
 15. Velg **Lagre**.
 
@@ -131,7 +131,7 @@ Hvis du er en leder og ønsker å vise dine egne forespørsler:
 
 3. Under **Informasjon om mitt team** velger du kategorien **Rekrutteringsforespørsler**.
 
-   ![Velg fanen Rekrutteringsforespørsler](./media/hr-recruit-7-recruiting-requests.png)
+   ![Velg fanen Rekrutteringsforespørsler.](./media/hr-recruit-7-recruiting-requests.png)
 
 4. Hvis du vil vise eller redigere en rekrutteringsforespørsel, velger du den i rutenettet.
 
@@ -141,7 +141,7 @@ Hvis du er en HR Pro og ønsker å vise alle rekrutteringsforespørslene:
 
 2. Velg fanen **Rekrutteringsforespørsler**.
 
-   ![Vise rekrutteringsforespørsler i Personaladministrasjon](./media/hr-recruit-8-recruiting-requests-personnel-management.png)
+   ![Vise rekrutteringsforespørsler i Personaladministrasjon.](./media/hr-recruit-8-recruiting-requests-personnel-management.png)
 
 3. Hvis du vil vise eller redigere en rekrutteringsforespørsel, velger du den i rutenettet.
 
@@ -155,7 +155,7 @@ Hvis organisasjonen har integrert med et annet program for å administrere rekru
 
 3. Under **Rekruttering** velger du **Kandidater**.
 
-   ![Vis kandidater](./media/hr-recruit-9-candidates.png)
+   ![Vis kandidater.](./media/hr-recruit-9-candidates.png)
 
 4. Velg **Ny** for å legge til en kandidat. Hvis du vil redigere en eksisterende kandidat fra listen, merker du adressen og velger **Rediger**. Kandidatprofilen vises.
 
@@ -163,7 +163,7 @@ Hvis organisasjonen har integrert med et annet program for å administrere rekru
 
 6. Under **Rekrutteringsforespørsel** velger du en rekrutteringsforespørsel du vil koble kandidaten til. Deretter fyller du ut feltene **Beregnet startdato**, **Ansettelsessjef**, **Stilling** og **Beskrivelse** etter behov.
 
-   ![Koble til rekrutteringsforespørsel](./media/hr-recruit-10-link-to-recruiting-request.png)
+   ![Koble til rekrutteringsforespørsel.](./media/hr-recruit-10-link-to-recruiting-request.png)
 
 7. Fyll ut all informasjonen i følgende områder som du vil ta med i kandidatens post:
    - **Kommentarer**
@@ -182,11 +182,11 @@ Når du er klar til å ansette en kandidat, følger du denne fremgangsmåten for
 
 1. Velg **Ansett** i kandidatskjemaet.
 
-   ![Ansett en kandidat](./media/hr-recruit-11-hire.png)
+   ![Ansett en kandidat.](./media/hr-recruit-11-hire.png)
 
 2. Fyll ut alle feltene under **Detaljer** i skjemaet **Ansett ny arbeider**.
 
-   ![Angi detaljer for ny ansettelse](./media/hr-recruit-12-hire-new-worker.png)
+   ![Angi detaljer for ny ansettelse.](./media/hr-recruit-12-hire-new-worker.png)
 
 3. Under **Stillingsdetaljer** kan du bekrefte og endre informasjon etter behov.
 
@@ -203,7 +203,7 @@ Hvis du bestemmer deg for ikke å ansette en kandidat, kan du følge denne fremg
 
 1. Velg **Ikke ansett** i kandidatskjemaet.
 
-   ![Ikke ansett kandidat](./media/hr-recruit-13-do-not-hire.png)
+   ![Ikke ansett kandidat.](./media/hr-recruit-13-do-not-hire.png)
 
 2. Velg en **årsakskode**, og ta med eventuelle kommentarer.
 
@@ -215,7 +215,7 @@ Om nødvendig kan du forkaste en kandidat etter å ha ansatt vedkommende. En kan
 
 - Velg **Forkast kandidat** i kandidatskjemaet.
 
-  ![Forkast kandidat](./media/hr-recruit-14-dismiss-candidate.png)
+  ![Forkast kandidat.](./media/hr-recruit-14-dismiss-candidate.png)
 
 ## <a name="see-also"></a>Se også
 

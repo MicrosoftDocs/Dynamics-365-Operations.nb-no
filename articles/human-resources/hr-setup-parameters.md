@@ -2,7 +2,7 @@
 title: Konfigurere parametere for Human Resources
 description: Dette emnet forklarer hvordan du konfigurerer firmaspesifikke parametere i Dynamics 365 Human Resources.
 author: andreabichsel
-ms.date: 02/03/2020
+ms.date: 06/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7c4c93e3d2644a380e3d5d2247961a8b6fb34568
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 24d30aa06805b530cc069be0517279a11dff9ed4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6052415"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356542"
 ---
 # <a name="configure-human-resources-parameters"></a>Konfigurere parametere for Human Resources
 
@@ -30,7 +30,7 @@ Innstillingene for noen Human Resources-parametere deles mellom firmaer, mens in
 
 To sider brukes til å angi Human Resources-parametere. For parametere som deles på tvers av firmaer, bruker du siden **Delte parametere for personaladministrasjon**. For parameterne som er firmaspesifikke (altså innstillingene gjelder ett enkelt firma), bruker du siden **Personalparametere**.
 
-![Gå til Human Resources-parametere](./media/hr-employee-self-service-human-resources-parameters.png)
+![Gå til Human Resources-parametere.](./media/hr-employee-self-service-human-resources-parameters.png)
 
 På siden **Personalparametere** er innstillingene delt inn i seks kategorier:
 
@@ -51,14 +51,15 @@ Hver kategori inneholder informasjon som gjelder ett enkelt firma.
 
 Innstillingene i kategorien **Generelt** definerer utseendet til informasjon om fravær, skade og sykdom og nye ansettelser. Innstillingene i denne kategorien definerer også noen standardoppføringer som vises når du arbeider. I denne fanen kan du spesifikt gjøre følgende:
 
-- Velg en farge som skal brukes på åpne fraværstransaksjoner
-- Angi stilarket som skal brukes for rapporter
-- Aktivere integrering mellom kurs og fraværsregistrering
+- Velg en farge som skal brukes på åpne fraværstransaksjoner.
+- Angi stilarket som skal brukes for rapporter.
+- Aktivere integrering mellom kurs og fraværsregistrering.
 - Velg fraværskoden som skal brukes til å kontrollere denne integreringen.
 - Angi hvor lenge hendelsene i tilfelle tilfeller av sykdom skal holdes under åpenhet og på grunn av sykdom.
 - Angi standard identifikasjonsnummer som vises når en ny arbeider blir ansatt.
+- Angi datoen som skal brukes til å beregne serviceår. 
 
-![Fanen Generelt](./media/hr-setup-parameters-general.png)
+![Fanen Generelt.](./media/hr-setup-parameters-general.png)
 
 ## <a name="recruitment"></a>Rekruttering
 
@@ -76,7 +77,7 @@ I Human Resources kan du bruke fanen **Kompensasjon** til å velge å begrense t
 
 Hvis du vil ha mer informasjon om kompensasjon, kan du se [Oversikt over kompensasjonsplaner](hr-compensation-overview.md).
 
-![Kategorien Kompensasjon](./media/hr-setup-parameters-compensation.png)
+![Kategorien Kompensasjon.](./media/hr-setup-parameters-compensation.png)
 
 ## <a name="number-sequences"></a>Nummerserier
 
@@ -96,13 +97,13 @@ Hvis du vil ha mer informasjon, kan du se [Oversikt over nummerserier](../fin-op
 > [!NOTE]
 > Antall timer arbeidet kan ikke overskride 1250, og lengden på ansettelse kan ikke overskride 12 måneder. Disse maksimumsverdier er i overensstemmelse med gjeldende lovgivning i USA.
 
-![Fanen Nummerserier](./media/hr-setup-parameters-number-sequences.png)
+![Fanen Nummerserier.](./media/hr-setup-parameters-number-sequences.png)
 
 ## <a name="fmla"></a>FMLA
 
 I fanen FMLA definerer du FMLA-rettighetskravene og FMLA-rettighetstimene. Hvis du vil ha mer informasjon, kan du se [Konfigurere permisjons- og fraværsparametere](hr-leave-and-absence-parameters.md).
 
-![FMLA-fane](./media/hr-setup-parameters-fmla.png)
+![FMLA-fane.](./media/hr-setup-parameters-fmla.png)
 
 ## <a name="employee-self-service"></a>Ansattselvbetjening
 
@@ -115,7 +116,7 @@ Innstillingene i fanen **Selvbetjening for ansatte** påvirker hvordan Selvbetje
 
 Hvis du vil ha mer informasjon om hvordan du konfigurerer Selvbetjening for ansatte, kan du se [Oversikt over selvbetjening for ansatte og ledere](hr-employee-manager-self-service-overview.md).
 
-![Fanen Selvbetjening for ansatte](./media/hr-setup-parameters-employee-self-service.png)
+![Fanen Selvbetjening for ansatte.](./media/hr-setup-parameters-employee-self-service.png)
 
 ## <a name="manager-self-service"></a>Lederselvbetjening
 
@@ -129,13 +130,13 @@ Innstillingene i fanen **Selvbetjening for leder** påvirker hva ledere ser i Se
 
 Hvis du vil ha mer informasjon om hvordan du konfigurerer Selvbetjening for leder, kan du se [Oversikt over selvbetjening for ansatte og ledere](hr-employee-manager-self-service-overview.md).
 
-![Fanen Selvbetjening for leder](./media/hr-setup-parameters-manager-self-service.png)
+![Fanen Selvbetjening for leder.](./media/hr-setup-parameters-manager-self-service.png)
 
 ## <a name="benefits-management"></a>Fordelsbehandling
 
 I fanen Fordelsstyring kan du konfigurere e-postalternativer for Fordelsstyring. Hvis du vil ha informasjon om hvordan du konfigurerer og bruker Fordelsbehandling, kan du se [Oversikt over fordelsbehandling](hr-benefits-management-overview.md).
 
-![Fanen Fordelsbehandling](./media/hr-setup-parameters-benefits-management.png)
+![Fanen Fordelsbehandling.](./media/hr-setup-parameters-benefits-management.png)
 
 ## <a name="leave-and-absence"></a>Permisjon og fravær
 
@@ -145,7 +146,7 @@ Hvis du vil ha informasjon om hvordan du konfigurerer og bruker Permisjon og fra
 
 I fanen **Betalingsmåter** kan du velge betalingsmåtene som støttes av organisasjonen. Hvis du vil ha mer informasjon om hvordan du konfigurerer kompensasjon, kan du se [Oversikt over kompensasjonsplaner](hr-compensation-overview.md).
 
-![Fanen Betalingsmåter](./media/hr-setup-parameters-payment-methods.png)
+![Fanen Betalingsmåter.](./media/hr-setup-parameters-payment-methods.png)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

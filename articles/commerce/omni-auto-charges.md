@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 0eb1f112430005945b4f82b99ef9cc718c56de65
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 0ff85acfbe16fc28afb2fbcee0baf4b12b1f3e9e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022713"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353066"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Avanserte automatiske tillegg for omnikanal
 
@@ -43,7 +43,7 @@ Med funksjonen for avanserte automatiske gebyrer kan brukerne for salgsstedet ha
 
 På siden **Retail og Commerce \> Hovedkvarteroppsett \> Parametere \> Handelsparametere** går du til kategorien **Kundeordrer**. I hurtigfanen **Gebyrer** setter du **Bruk avanserte automatiske gebyrer** til **Ja**.
 
-![Parameter for avanserte automatiske gebyrer](media/advancedchargesparameter.png)
+![Parameter for avanserte automatiske gebyrer.](media/advancedchargesparameter.png)
 
 Når avanserte automatiske gebyrer er aktivert, blir brukere ikke lenger bedt om å angi en forsendelseskostnad manuelt på salgsstedsterminalen når de oppretter en kundeordre av typen Send alle eller Valgt for forsendelse. Ordregebyrer for salgssted beregnes systematisk og legges til salgsstedstransaksjonen (hvis det finnes en tilsvarende tabell for automatiske gebyrer som samsvarer med kriteriet for ordren som opprettes). Brukere kan også legge til eller vedlikeholde hode- eller linjenivågebyrer manuelt via salgsstedsoperasjoner som nylig er lagt til, som kan legges til skjermoppsettene for salgsstedet.
 
@@ -86,7 +86,7 @@ Konfigurer to ulike automatiske gebyrer på hodenivå. Konfigurer ett for «over
 
 I linjedelen på siden **Automatiske gebyrer** for gebyrene for levering på land definerer du et gebyr som skal brukes for ordrer mellom NOK 0,10 og 1000, som NOK 100,00. Opprett en ny gebyrlinje for å angi at ordrer over NOK 1000,10 ikke har gebyrer.
 
-![Eksempel på to tabeller for automatiske gebyrer](media/headerchargesexample.png)
+![Eksempel på to tabeller for automatiske gebyrer.](media/headerchargesexample.png)
 
 I linjedelen i skjemaet for automatiske gebyrer for gebyrene for levering med fly definerer du et gebyr på NOK 200,00 som skal brukes for alle ordrer (mellom en verdi på NOK 0,10 og NOK 99 999 990).
 
@@ -116,7 +116,7 @@ Gå til **Kunder \> Oppsett for tillegg \> Automatiske gebyrer**.
 
 Sett **Nivå**-rullegardinmenyen til **Linje**, og opprett en ny post for automatiske gebyrer for alle kunder og for det bestemte produktet eller produktgruppen der konfigurasjonsgebyret belastes.
 
-![Eksempel på én tabell for automatiske gebyrer på linjenivå](media/linechargesexample.png)
+![Eksempel på én tabell for automatiske gebyrer på linjenivå.](media/linechargesexample.png)
 
 Send prisene til Commerce Scale Unit / kanaldatabasen slik at salgsstedet kan bruke dem ved å kjøre jobben **1040 distribusjonsplan**.
 
@@ -136,7 +136,7 @@ En forhandler gjør et unntak fra vanlige prosesser ved å tilby å en spesiell 
 
 Kontroller at tilleggskoden som skal brukes i dette scenariet, er riktig konfigurert ved å gå til **Kunder \> Oppsett for tillegg \> Tillegg** for å definere en passende tilleggskode for scenariet.
 
-![Eksempel på gebyrer](media/chargesexample.png)
+![Eksempel på gebyrer.](media/chargesexample.png)
 
 Hvis tillegget skal betraktes som et forsendelsesrelatert tillegg for forsendelsesrelaterte rabatter og tilbud, setter du **Forsendelsesgebyr** for tilleggskoden til **Ja**. Hvis dette gebyret også kan refunderes systematisk under behandlingen av en returtransaksjon i salgsstedprogrammet, setter du **Refunderbar** til **Ja**. **Refunderbar**-flagget er bare tilgjengelig når **Bruk avanserte automatiske gebyrer**-parameteren er satt til **Ja**.
 

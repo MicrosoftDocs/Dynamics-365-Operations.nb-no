@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e7cadc20cc8fd52ecc8c4ab5c2f6c9dc62c2f68b
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: b6feb5319290cc53d82feb28ffa8c049bfadd29b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897582"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355089"
 ---
 # <a name="dimension-hierarchy"></a>Dimensjonshierarki
 
@@ -39,7 +39,7 @@ Dimensjonshierarkier brukes på forskjellige steder i Kostnadregnskap. Et dimens
 
 Her er et eksempel på et dimensjonshierarki.
 
-![Eksempel på et dimensjonshierarki](./media/dimension-hierarchy.png)
+![Eksempel på et dimensjonshierarki.](./media/dimension-hierarchy.png)
 
 Du kan opprette et dimensjonshierarki for følgende typer dimensjoner:
 
@@ -80,7 +80,7 @@ Et dimensjonshierarki opprettes som en trestruktur med node- og bladnoderelasjon
 
 Et lite firma har følgende organisasjonsstruktur, der finans og personale er avdelinger under administrasjon, mens montering og pakking er avdelinger under produksjon.
 
-![Eksempel på en organisasjonsstruktur](./media/dimension-hierarchy-org.png)
+![Eksempel på en organisasjonsstruktur.](./media/dimension-hierarchy-org.png)
 
 En kostnadsobjektdimensjon representerer alle kostsentrene i organisasjonen.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bb2da2d58b7f98fad80d0ea63bf4445ec4d08163
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: baf2c279a656bd67a0850ef9178e1bc984bb9b8b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808358"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351495"
 ---
 # <a name="asset-criticality-types"></a>Type kritisk aktivitet for aktiva
 
@@ -40,7 +40,7 @@ Hvis du vil definere kritikalitet, må du først opprette kritikalitetstypene so
 4. I **Navn**-feltet angir du et navn på kritikalitetstypen.
 5. Angi en faktor i feltet **Faktor**. Denne faktoren brukes under beregning av arbeidsordreplanlegging for å bestemme kritikalitetsposten som skal brukes. (Posten som har den høyeste faktoren er alltid brukt.) Denne innstillingen er relevant hvis, som vist i illustrasjonen nedenfor, det opprettes kritikalitetslinjer som har samme kritikalitetsverdi.
 
-    ![Siden Type kritisk aktivitet](media/23-setup-for-objects.png)
+    ![Siden Type kritisk aktivitet.](media/23-setup-for-objects.png)
 
 ## <a name="set-up-asset-criticalities"></a>Definer kritiske forhold omkring aktiva
 

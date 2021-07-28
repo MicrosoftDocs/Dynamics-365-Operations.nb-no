@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 413847d350ca6b2bdd6153a598ea5b3f34a33818
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0e465594968ac860a9cb8f6f5d679084e5594457
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826281"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355614"
 ---
 # <a name="dispose-of-a-fixed-asset-as-scrap"></a>Fjerne et anleggsmiddel som svinn
 
@@ -43,7 +43,7 @@ Emnet beskriver prosessen med å eliminere transaksjoner for et anleggsmiddel so
 Før du avhender et anleggsmiddel som svinn, må du opprette finanskontoer som er knyttet til anleggsmiddelets anskaffelsesverdi, avskrivning for inneværende år, avskrivning for tidligere år og netto bokført verdi for anleggsmiddelet. Transaksjonstypene for anleggsmiddel vises på siden **Posteringsprofil for anleggsmidler**. Gå til **Anleggsmidler \> Oppsett \> Posteringsprofiler for anleggsmidler**, and deretter velger du **Svinn** i feltet over rutenettet i hurtigfanen **Avhending**. Illustrasjonen nedenfor viser en liste over transaksjonstyper for anleggsmidler på siden **Posteringsprofiler for anleggsmidler**.
 
 
-[![Avhende et anleggsmiddel som svinn, fig. 1](./media/Fixed_asset_Disposal_scrap_scenario_1.png)](./media/Fixed_asset_Disposal_scrap_scenario_1.png)
+[![Avhende et anleggsmiddel som svinn, fig. 1.](./media/Fixed_asset_Disposal_scrap_scenario_1.png)](./media/Fixed_asset_Disposal_scrap_scenario_1.png)
 
 I eksemplet nedenfor ble et anleggsmiddel anskaffet 1. januar 2018, og det blir kassert 31. mars 2019.
 
@@ -58,27 +58,27 @@ Netto bokført verdi = anskaffelsespris – avskrivning
 
 I dette eksemplet ble anleggsmiddelet anskaffet og avskrevet i 15 måneder, fra januar 2018 til mars 2019. Derfor er netto bokført verdi for anleggsmiddelet 9 000,00 USD (24 000,00 USD – 15 000,00 USD).
 
-[![Eksempel på avskrivning av anleggsmiddel](./media/Fixed_asset_Disposal_scrap_scenario_2.png)](./media/Fixed_asset_Disposal_scrap_scenario_2.png)
+[![Eksempel på avskrivning av anleggsmiddel.](./media/Fixed_asset_Disposal_scrap_scenario_2.png)](./media/Fixed_asset_Disposal_scrap_scenario_2.png)
 
 
 Hvis du vil opprette en avhendingsjournal, går du til **Anleggsmidler \> Journaloppføringer \> Anleggsmiddeljournal** og velger **Linjer** i handlingsruten. Velg **Avhending – svinn**, og velg deretter en ID for anleggsmiddel. Hvis du ikke avhende anleggsmiddelet fullstendig, angir du ikke en verdi i **Debet**- eller **Kredit**-feltet.
 
-[![Anleggsmiddeljournal](./media/Fixed_asset_Disposal_scrap_scenario_3.png)](./media/Fixed_asset_Disposal_scrap_scenario_3.png)
+[![Anleggsmiddeljournal.](./media/Fixed_asset_Disposal_scrap_scenario_3.png)](./media/Fixed_asset_Disposal_scrap_scenario_3.png)
 
 Svinntransaksjonen for avhending av anleggsmidler endrer feltverdiene for anleggsmiddeltablået på følgende måter:
 
 - I **Saldo**-delen oppdateres **Status**-feltet til **Kassert**.
 - I **Avgang**-delen blir feltet **Avhendingsdato** satt til datoen da anleggsmiddelet ble kassert.
 
-[![Detaljer i anleggsmiddeljournal](./media/Fixed_asset_Disposal_scrap_scenario_4.png)](./media/Fixed_asset_Disposal_scrap_scenario_4.png)
+[![Detaljer i anleggsmiddeljournal.](./media/Fixed_asset_Disposal_scrap_scenario_4.png)](./media/Fixed_asset_Disposal_scrap_scenario_4.png)
 
 Illustrasjonen nedenfor viser anleggsmiddelsaldoen.
 
-[![Anleggsmiddelsaldo](./media/Fixed_asset_Disposal_scrap_scenario_5.png)](./media/Fixed_asset_Disposal_scrap_scenario_5.png)
+[![Anleggsmiddelsaldo.](./media/Fixed_asset_Disposal_scrap_scenario_5.png)](./media/Fixed_asset_Disposal_scrap_scenario_5.png)
 
 Illustrasjonen nedenfor viser bilaget som er postert.
 
-[![Netto bokført verdi](./media/Fixed_asset_Disposal_scrap_scenario_6.png)](./media/Fixed_asset_Disposal_scrap_scenario_6.png)
+[![Netto bokført verdi.](./media/Fixed_asset_Disposal_scrap_scenario_6.png)](./media/Fixed_asset_Disposal_scrap_scenario_6.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

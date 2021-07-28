@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 60d566e3ef1fa4bc0cea960f7c75094f51823550
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 4ff6b8495f3ef0d75ffc8f829a9f332f507789d0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838232"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358056"
 ---
 # <a name="quality-check"></a>Kvalitetskontroll
 
@@ -310,7 +310,7 @@ Når bestillingen er opprettet, kan den mottas ved hjelp av menyelementet **PO-l
 
     Siden **Kvalitetskontroll** som vises, har ingen oppføringsfelt. Den har bare bekreftelsesknappen (hakemerke) nederst og menyknappen (**≡**) øverst. (Meny-knappen kalles noen ganger for hamburgeren eller hamburgerknappen.) Hvis du vil ekspedere kvalitetskontrollprosessen, må brukere bare bekrefte siden **Kvalitetskontroll** når pallen består kvalitetskontrollen.
 
-    ![Siden Kvalitetskontroll](media/quality-check.png "Siden Kvalitetskontroll")
+    ![Siden Kvalitetskontroll.](media/quality-check.png "Siden Kvalitetskontroll")
 
 1. Velg bekreftelsesknappen for å bestå kvalitetskontrollen for pall 1 fra linje 1.
 

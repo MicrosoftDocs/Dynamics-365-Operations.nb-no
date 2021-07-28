@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b7e5726f7e4beea1584b9a8e142212531ba1db56
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 6e87781762112955902d8a5807092a842f53f6af
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6051743"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356566"
 ---
 # <a name="understand-date-and-time-fields"></a>Forstå felt for dato og klokkeslett
 
@@ -36,13 +36,13 @@ ms.locfileid: "6051743"
 
 Når du viser data i et **Dato og klokkeslett**-felt, justerer Human Resources datoen og klokkeslettet basert på brukerens tidssone som er angitt i **Brukeralternativer**-skjemaet (**Felles > Oppsett > Brukeralternativer**). Dato- og klokkeslettinformasjonen du angir i feltet, er kanskje ikke lik informasjonen som er skrevet til databasen.
 
-[![Brukeralternativer-skjema](./media/useroptionsform.png)](./media/useroptionsform.png)
+[![Brukeralternativer-skjema.](./media/useroptionsform.png)](./media/useroptionsform.png)
 
 ## <a name="understanding-date-and-time-fields-in-forms"></a>Forstå Dato og klokkeslett-felt i skjemaer 
 
 **Dato og klokkeslett**-data som vises på skjermen, er ikke de samme som dataene som er lagret i databasen hvis brukerens tidssone ikke er satt til UTC (Coordinated Universal Time). Data i **Dato og klokkeslett**-felt lagres alltid som UTC.
 
-[![Arbeiderskjema UTC](./media/worker-form.png)](./media/worker-form.png)
+[![Arbeiderskjema UTC.](./media/worker-form.png)](./media/worker-form.png)
 
 ## <a name="understand-date-and-time-fields-in-the-database"></a>Forstå Dato og klokkeslett-felt i databasen 
 
@@ -52,7 +52,7 @@ I eksemplet ovenfor er starttidspunktet et tidspunkt, ikke en bestemt dato. Ved 
   
 I eksemplet nedenfor blir ansettelsen til ansatt 000724 aktiv på samme tid uavhengig av tidssonen. Den ansatte vil være aktiv 04/30/2019 i GMT-tidssonen, som er det samme som 05/01/2019 i GMT+12:00-tidssonen. Begge refererer til samme tidspunkt og ikke en bestemt dato. 
 
-[![Arbeiderskjema GMT](./media/worker-form2.png)](./media/worker-form2.png)
+[![Arbeiderskjema GMT.](./media/worker-form2.png)](./media/worker-form2.png)
 
 ## <a name="date-and-time-data-in-data-management-framework-excel-dataverse-and-power-bi"></a>Dato og klokkeslett-data i Data Management Framework, Excel, Dataverse og Power BI 
 
@@ -68,27 +68,27 @@ Når du bruker eksterne kilder som DMF til å vise eller redigere data, må du h
 
 **Human Resources med brukertidssone satt til UTC**
 
-[![Arbeiderskjema satt til UTC](./media/worker-form3.png)](./media/worker-form3.png)
+[![Arbeiderskjema satt til UTC.](./media/worker-form3.png)](./media/worker-form3.png)
 
 **Human Resources med brukertidssone satt til GMT + 12:00** 
 
-[![Arbeiderskjema satt til GMT](./media/worker-form4.png)](./media/worker-form4.png)
+[![Arbeiderskjema satt til GMT.](./media/worker-form4.png)](./media/worker-form4.png)
 
 **Excel via OData**
 
-[![Excel via OData](./media/Excelviaodata.png)](./media/Excelviaodata.png)
+[![Excel via OData.](./media/Excelviaodata.png)](./media/Excelviaodata.png)
 
 **DMF-oppsamling**
 
-[![DMF-oppsamling](./media/DMFStaging.png)](./media/DMFStaging.png)
+[![DMF-oppsamling.](./media/DMFStaging.png)](./media/DMFStaging.png)
 
 **DMF-eksport**
 
-[![DMF-eksport](./media/DMFexport.png)](./media/DMFexport.png)
+[![DMF-eksport.](./media/DMFexport.png)](./media/DMFexport.png)
 
 **Excel via Dataverse**
 
-[![Excel via Dataverse](./media/ExcelCDS.png)](./media/ExcelCDS.png)
+[![Excel via Dataverse.](./media/ExcelCDS.png)](./media/ExcelCDS.png)
 
 ## <a name="see-also"></a>Se også
 

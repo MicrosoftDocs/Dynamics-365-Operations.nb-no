@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f38b01d94fd2efcce5de210f77124fdc24be6e39
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 50ace9a2f8f5fa39dc927e11f0acd707167ef126
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837903"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346232"
 ---
 # <a name="register-consumption"></a>Registrere forbruk
 
@@ -54,7 +54,7 @@ I noen tilfeller kan du legge til eller slette prognoselinjer i en arbeidsordre.
 
 Skjermbildet nedenfor viser et eksempel på time- og vareregistreringer for en arbeidsordre i **Arbeidsordrejournaler**.
 
-![Figur 1](media/01-consumption.png)
+![Figur 1.](media/01-consumption.png)
 
 
 ## <a name="split-hours-on-work-orders-with-several-work-order-jobs"></a>Dele timer i arbeidsordrer med flere arbeidsordrejobber
@@ -73,13 +73,13 @@ Hvis en arbeidsordre inneholder flere arbeidsordrejobber, kan du registrere arbe
 
 6. Sett inn antall arbeidstimer som skal deles, i **Timer**-feltet.
 
-    ![Figur 2](media/02-consumption.png)
+    ![Figur 2.](media/02-consumption.png)
 
 7. Klikk på **OK**.
 
 *Eksempel:* I skjermbildet nedenfor vises journallinjer for en arbeidsordre som inneholder tre arbeidsordrejobber. Den første linjen som inneholder tre arbeidstimer, er delt, og én arbeidstime er registrert på hver arbeidsordrejobb. Når de tre timeregistreringslinjene er opprettet, bestemmer du hva du skal gjøre med den opprinnelige timeregistreringslinjen (den første linjen i eksemplet). Du kan beholde den slik den er, eller slette den. 
 
-![Figur 3](media/03-consumption.png)
+![Figur 3.](media/03-consumption.png)
 
 ## <a name="financial-dimensions-on-consumption-registrations"></a>Finansdimensjoner på forbruksregistreringer
 

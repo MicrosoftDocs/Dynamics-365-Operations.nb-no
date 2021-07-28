@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 52baa707c36f3468263782dc8ec735e44af88e38
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 422b1f7f8dc99e1c96da9e266cadcdc09e7aac71
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804239"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347472"
 ---
 # <a name="configure-and-run-job-to-post-statements"></a>Konfigurere og kjøre jobben for å postere utdrag
 
@@ -31,9 +31,9 @@ Denne prosedyren hjelper med å konfigurere og kjøre en gjentakende satsvis job
 2. Klikk på Poster utdrag satsvis.
     * Velg et organisasjonshierarki, og velg deretter en enkelt butikk eller node i organisasjonsnodetreet. Velg en node hvis du vil opprette den satsvise jobben for en gruppe med butikker.  
     * Klikk pilen for å legge til valget.  
-3. Klikk på kategorien Kjør i bakgrunnen. ![Kjør i bakgrunnen](../dev-itpro/media/runbackground.png "Kjør i bakgrunnen") 
+3. Klikk på kategorien Kjør i bakgrunnen. ![Kjør i bakgrunnen.](../dev-itpro/media/runbackground.png "Kjør i bakgrunnen") 
 4. Merk av eller fjern merket for Satsvis behandling.
-![Satsvis behandling](../dev-itpro/media/batchprocessing.png "Satsvis behandling og gjentakelse") 
+![Satsvis behandling.](../dev-itpro/media/batchprocessing.png "Satsvis behandling og gjentakelse") 
 5. Klikk Regelmessighet.
 6. Angi en dato i Startdato-feltet.
 7. Angi et tidspunkt i Starttidspunkt-feltet.
