@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a4a963bcfe5932f5642b43751ccd96c472fec0d9
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: ba4f0eca471cf9734230bb2a23d53ff2e233ba2f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6055010"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361237"
 ---
 # <a name="create-a-recurring-data-export-app"></a>Opprette en app for gjentakende dataeksport
 
@@ -63,13 +63,13 @@ På slutten av denne øvelsen vil du ha en logisk app som er koblet til Human Re
 
 Den fullførte logiske appen ligner på den følgende illustrasjonen.
 
-![Oversikt over logisk app](media/integration-logic-app-overview.png)
+![Oversikt over logisk app.](media/integration-logic-app-overview.png)
 
 ### <a name="step-1-create-a-data-export-project-in-human-resources"></a>Trinn 1: Opprette et dataeksportprosjekt i Human Resources
 
 I Human Resources oppretter du et dataeksportprosjekt som eksporterer arbeidere. Gi prosjektet navnet **Eksporter arbeidere**, og kontroller at alternativet **Generer data pakke** er satt til **Ja**. Legg til en enkelt enhet (**arbeider**) i prosjektet, og velg formatet du vil eksportere i. (Microsoft Excel-formatet brukes i denne opplæringen.)
 
-![Dataprosjektet Eksporter arbeidere](media/integration-logic-app-export-workers-project.png)
+![Dataprosjektet Eksporter arbeidere.](media/integration-logic-app-export-workers-project.png)
 
 > [!IMPORTANT]
 > Husk navnet på dataeksportprosjektet. Du kommer til å trenge det når du oppretter den logiske appen i neste trinn.
@@ -80,12 +80,12 @@ Mesteparten av øvelsen omfatter oppretting av den logiske appen.
 
 1. Opprett en logisk app i Azure-portalen.
 
-    ![Side for å opprette logisk app](media/integration-logic-app-creation-1.png)
+    ![Side for å opprette logisk app.](media/integration-logic-app-creation-1.png)
 
 2. Start med en tom logisk app i Logic Apps Designer.
 3. Legg til en [utløser for gjentakelsesplan](/azure/connectors/connectors-native-recurrence) for å kjøre appen hvert døgn (eller etter en plan du velger selv).
 
-    ![Dialogboks for gjentakelse](media/integration-logic-app-recurrence-step.png)
+    ![Dialogboks for gjentakelse.](media/integration-logic-app-recurrence-step.png)
 
 4. Kall DMF REST-API-en [ExportToPackage](../fin-ops-core/dev-itpro/data-entities/data-management-api.md#exporttopackage) for å planlegge eksporten av datapakken.
 
@@ -97,7 +97,7 @@ Mesteparten av øvelsen omfatter oppretting av den logiske appen.
         > [!NOTE]
         > Human Resources-tjenesten har enda ikke en kontakt som viser alle API-ene som utgjør REST-API-en for DMF-pakke, for eksempel **ExportToPackage**. Du må i stedet kalle API-ene ved å bruke rå HTTPS-forespørsler via HTTP med Azure AD-koblingen. Denne koblingen bruker Azure Active Directory (Azure AD) for godkjenning og autorisasjon til Human Resources.
 
-        ![HTTP med Azure AD-kontakt](media/integration-logic-app-http-aad-connector-step.png)
+        ![HTTP med Azure AD-kontakt.](media/integration-logic-app-http-aad-connector-step.png)
 
     2. Logg deg på Human Resources-miljøet via HTTP med Azure AD-kontakten.
     3. Konfigurer en HTTP **POST**-forespørsel for å kalle DMF REST-API-en **ExportToPackage**.
@@ -116,21 +116,21 @@ Mesteparten av øvelsen omfatter oppretting av den logiske appen.
             }
             ```
 
-        ![Aktivere en HTTP-forespørselshandling](media/integration-logic-app-export-to-package-step.png)
+        ![Aktivere en HTTP-forespørselshandling.](media/integration-logic-app-export-to-package-step.png)
 
     > [!TIP]
     > Du vil kanskje gi nytt navn til hvert trinn, slik at det blir mer meningsfylt enn standardnavnet, **Aktiver en HTTP-forespørsel**. Du kan for eksempel endre navnet på dette trinnet til **ExportToPackage**.
 
 5. [Initialiser en variabel](/azure/logic-apps/logic-apps-create-variables-store-values#initialize-variable) for å lagre kjørestatusen til **ExportToPackage**-forespørselen.
 
-    ![Handlingen Initialiser variabel](media/integration-logic-app-initialize-variable-step.png)
+    ![Handlingen Initialiser variabel.](media/integration-logic-app-initialize-variable-step.png)
 
 6. Vent til kjørestatusen for dataeksporten er **Vellykket**.
 
     1. Legg til en [Til-løkke](/azure/logic-apps/logic-apps-control-flow-loops#until-loop) som gjentas til verdien av **ExecutionStatus**-variabelen er **Vellykket**.
     2. Legg til en **Forsinkelse**-handling som venter fem sekunder før den spør etter gjeldende kjørestatus for eksporten.
 
-        ![Beholder for Til-løkke](media/integration-logic-app-until-loop-step.png)
+        ![Beholder for Til-løkke.](media/integration-logic-app-until-loop-step.png)
 
         > [!NOTE]
         > Sett grenseantallet til **15** for å vente i maksimalt 75 sekunder (15 gjentakelser x 5 sekunder) for at eksporten skal fullføres. Hvis eksporten tar mer tid, justerer du grenseantallet etter behov.        
@@ -146,9 +146,9 @@ Mesteparten av øvelsen omfatter oppretting av den logiske appen.
             > [!NOTE]
             > Du må kanskje angi verdien for **Teksten i forespørselen:** enten i kodevisning eller i funksjonsredigeringsprogrammet i utformingen.
 
-        ![Aktivere en HTTP-forespørselshandling 2](media/integration-logic-app-get-execution-status-step.png)
+        ![Aktivere en HTTP-forespørselshandling 2.](media/integration-logic-app-get-execution-status-step.png)
 
-        ![Angi variabelhandling](media/integration-logic-app-set-variable-step.png)
+        ![Angi variabelhandling.](media/integration-logic-app-set-variable-step.png)
 
         > [!IMPORTANT]
         > Verdien for handlingen **Angi variabel** (**body('Invoke\_an\_HTTP\_request\_2')?['value']**) er forskjellig fra verdien for teksten **Aktivere en HTTP-forespørsel 2**, selv om verdiene vises på samme måte i utformingen.
@@ -161,7 +161,7 @@ Mesteparten av øvelsen omfatter oppretting av den logiske appen.
         - **URL-adresse til forespørselen:** https://\<hostname\>/namespaces/\<namespace\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExportedPackageUrl
         - **Teksten i forespørselen:** {"executionId": body('GetExportedPackageURL')?['value']}
 
-        ![GetExportedPackageURL-handlingen](media/integration-logic-app-get-exported-package-step.png)
+        ![GetExportedPackageURL-handlingen.](media/integration-logic-app-get-exported-package-step.png)
 
 8. Last ned den eksporterte pakken.
 
@@ -173,7 +173,7 @@ Mesteparten av øvelsen omfatter oppretting av den logiske appen.
             > [!NOTE]
             > Du må kanskje angi verdien for **URI** enten i kodevisning eller i funksjonsredigeringsprogrammet i utformingen.
 
-        ![HTTP GET-handling](media/integration-logic-app-download-file-step.png)
+        ![HTTP GET-handling.](media/integration-logic-app-download-file-step.png)
 
         > [!NOTE]
         > Denne forespørselen krever ingen ekstra godkjenning fordi URL-adressen som API-en **GetExportedPackageUrl** returnerer, inneholder et token for delte tilgangssignaturer som gir tilgang til å laste ned filen.
@@ -187,7 +187,7 @@ Mesteparten av øvelsen omfatter oppretting av den logiske appen.
         - **Filenavn:** worker\_package.zip
         - **Filinnhold:** Teksten fra forrige trinn (dynamisk innhold)
 
-        ![Opprett fil-handling](media/integration-logic-app-create-file-step.png)
+        ![Opprett fil-handling.](media/integration-logic-app-create-file-step.png)
 
 ### <a name="step-3-test-the-logic-app"></a>Trinn 3: Teste den logiske appen
 
@@ -197,7 +197,7 @@ Hvis det rapporteres en feil i et hvilket som helst trinn, velger du det mislykk
 
 Illustrasjonen nedenfor viser hvordan Logic Apps Designer ser ut når alle trinnene i den logiske appen er kjørt vellykket.
 
-![Vellykket kjøring av logisk app](media/integration-logic-app-successful-run.png)
+![Vellykket kjøring av logisk app.](media/integration-logic-app-successful-run.png)
 
 ## <a name="summary"></a>Sammendrag
 

@@ -2,7 +2,7 @@
 title: Topptekstmodul
 description: Dette emnet dekker topptekstmoduler og beskriver hvordan du oppretter sideoverskrifter i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 10/20/2020
+ms.date: 07/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6b14178431b281daa827749781dd16481f8bfb74
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 21bf454e57c62a2542ed055bb0913c48ab70e235
+ms.sourcegitcommit: 7e976059118938b0089e40bef948029a8c088b38
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799923"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "6479262"
 ---
 # <a name="header-module"></a>Topptekstmodul
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Dette emnet dekker topptekstmoduler og beskriver hvordan du oppretter sideoverskrifter i Microsoft Dynamics 365 Commerce.
 
@@ -33,7 +34,7 @@ Topptekstmodulen inneholder en områdelogo, koblinger til navigasjonshierarkiet,
 
 Bildet nedenfor viser et eksempel på en topptekstmodul på en hjemmeside.
 
-![Eksempel på en topptekstmodul](./media/ecommerce-header.png)
+![Eksempel på en topptekstmodul.](./media/ecommerce-header.png)
 
 ## <a name="properties-of-a-header-module"></a>Egenskaper for en topptekstmodul
 
@@ -58,9 +59,16 @@ Følgende moduler kan brukes i en topptekstmodul:
 - **Butikkvelger** - Butikkvelgermodulen kan tas med i en hodemoduls butikkvelgerspor. Det gjør det mulig for brukere å søke etter og finne nærliggende butikker. Brukere kan også angi en foretrukket butikk. Denne butikken vil deretter bli vist i hodet. Når butikkvelgermodulen er inkludert i hodemodulen, må **Modus**-egenskapen angis til **Søk etter butikker**. Hvis du vil ha mer informasjon, se [Butikkvelgermodul](store-selector.md).
 
 > [!NOTE]
-> - Støtte for bruk av handlekurvikon-modulen i hodemoduler er tilgjengelig i Dynamics 365 Commerce 10.0.11-versjonen.
-> - Støtte for bruk av områdevelgermodulen i hodemoduler er tilgjengelig i Dynamics 365 Commerce 10.0.14-versjonen.
-> - Støtte for bruk av butikkvelgermodulen i hodemoduler er tilgjengelig i Dynamics 365 Commerce 10.0.15-versjonen.
+> - Støtte for bruk av handlekurvikon-modulen i hodemoduler er tilgjengelig fra Dynamics 365 Commerce 10.0.11-versjonen.
+> - Støtte for bruk av områdevelger-modulen i hodemoduler er tilgjengelig fra Dynamics 365 Commerce 10.0.14-versjonen.
+> - Støtte for bruk av butikkvelger-modulen i hodemoduler er tilgjengelig fra Dynamics 365 Commerce 10.0.15-versjonen.
+
+## <a name="header-module-in-the-adventure-works-theme"></a>Hodemodulen i Adventure Works-emnet
+
+I Adventure Works-emnet støtter hodemodulen **Mobillogo**-egenskapen. Ved hjelp av denne egenskapen kan det angis en logo for mobilvisningsrapporter. **Mobillogo**-egenskapen er tilgjengelig som moduldefinisjonsnummer.
+
+> [!IMPORTANT]
+> Adventure Works-temaet er tilgjengelig fra Dynamics 365 Commerce-10.0.20-versjonen.
 
 ## <a name="create-a-header-fragment-for-a-page"></a>Opprette et topptekstfragment for en side
 

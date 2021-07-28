@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5161755b9e15e93fbb5eeb6404ea0820f7068ea7
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 09930af8b6ce78a2a88382772a44de173875856a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796081"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352548"
 ---
 # <a name="configure-ratings-and-reviews"></a>Konfigurere vurderinger og anmeldelser
 
@@ -46,7 +46,7 @@ Følg denne fremgangsmåten for å konfigurere et område for å vise vurderinge
 
 Illustrasjonen nedenfor viser hvordan denne konfigurasjonen ser ut i Dynamics 365 Commerce.
 
-![Konfigurere et område for å vise vurderinger og omtaler](media/rnr-eCommerce-site-appsettings.png)
+![Konfigurere et område for å vise vurderinger og omtaler.](media/rnr-eCommerce-site-appsettings.png)
 
 ## <a name="link-a-product-rating-to-the-reviews-section-of-a-pdp"></a>Koble en produktvurdering til omtaledelen i en PDP
 
@@ -60,7 +60,7 @@ Følg denne fremgangsmåten for å koble en produktomtale til **Vurderinger**-de
 
 Illustrasjonen nedenfor viser hvordan denne konfigurasjonen ser ut i Dynamics 365 Commerce.
 
-![Koble en produktvurdering til omtaledelen i en PDP](media/rnr-eCommerce-buy-box-rating-summary.png)
+![Koble en produktvurdering til omtaledelen i en PDP.](media/rnr-eCommerce-buy-box-rating-summary.png)
 
 ## <a name="configure-the-link-for-the-privacy-and-policy-page"></a>Konfigurere koblingen for siden for personvern og policy
 
@@ -75,7 +75,7 @@ Følg disse trinnene for å konfigurere koblingen for siden for personvern og po
 
 Illustrasjonen nedenfor viser hvordan denne konfigurasjonen ser ut i Dynamics 365 Commerce.
 
-![Konfigurere koblingen for siden for personvern og policy](media/rnr-eCommerce-rnr-privacy-policy-link.png)
+![Konfigurere koblingen for siden for personvern og policy.](media/rnr-eCommerce-rnr-privacy-policy-link.png)
 
 ## <a name="configure-ratings-and-reviews-modules-on-product-details-pages"></a>Konfigurere vurderings- og omtalemoduler på sider med produktdetaljer
 

@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 3c7dafe55fc7072aa12b98ff42ed7d9e4719f4cd
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 51526c8409e0a04cf35e2dbd63cb4a3bd7d121e0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804703"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352968"
 ---
 # <a name="determine-the-optimal-combination-of-overlapping-discounts"></a>Bestemme den optimale kombinasjonen av overlappende rabatter
 
@@ -39,11 +39,11 @@ Du kan opprette et ubegrenset antall rabatter på et felles sett med produkter. 
 
 I dette eksemplet er to produkter nødvendig for å kvalifisere for hver rabatt og rabattene kan ikke kombineres. Rabatter i dette eksemplet er **Beste pris**-rabatter. Begge produkter som er kvalifisert for begge rabatter. Her er de to rabattene.
 
-![Eksempel på to Beste pris-rabatter](./media/overlapping-discount-combo-01.jpg)
+![Eksempel på to Beste pris-rabatter.](./media/overlapping-discount-combo-01.jpg)
 
 For to produkter avhenger den beste av disse to rabattene av prisene på de to produktene. Når prisen på begge produktene er lik eller nesten lik, er rabatt 1 bedre. Når prisen på et produkt er betydelig mindre enn prisen på det andre produktet, er rabatt 2 bedre. Her er den matematiske regelen for evaluering av disse to rabattene mot hverandre.
 
-![Regel for å evaluere rabattene](./media/overlapping-discount-combo-02.jpg)
+![Regel for å evaluere rabattene.](./media/overlapping-discount-combo-02.jpg)
 
 > [!NOTE]
 > Når prisen på produkt 1 er identisk med to tredjedeler av prisen på produktet 2, er de to rabattene like. I dette eksemplet varierer effektive rabattprosenten for rabatt 1 fra noen få prosent (når prisene på de to produktene er langt fra hverandre) til maksimalt 25 prosent (når de to produktene har samme pris). Effektiv rabattprosent for rabatt 2 er fast. Den er alltid 20 prosent. Fordi den effektive rabattprosenten for rabatt 1 har et område som kan være mer enn eller mindre enn rabatt 2, avhenger av beste rabatt av prisene på de to produktene som må være rabattert. I dette eksemplet er beregningen fullført raskt, fordi bare to rabatter trer i kraft på bare to produkter. Det er bare to mulige kombinasjoner: en bruk av rabatt 1 eller en bruk av rabatt 2. Det finnes ingen unntak å beregne. Verdien av hver rabatt beregnes ved å bruke begge produktene, og den beste rabatten brukes.
@@ -57,11 +57,11 @@ Deretter bruker vi fire produkter og de samme to rabattene. Alle fire produkter 
 
 Hvis du vil lese tabellene, kan du bruke et produkt fra en rad og ett produkt fra en kolonne. For eksempel, i tabellen for rabatt 1 får du når du kombinerer de to $20-produktene $10 avslag. I tabellen for diskonto 2 når du kombinerer produktet for $15 og produktet for $5 får du $4 avslag.
 
-![Eksempel som bruker fire produkter for de samme to rabattene](./media/overlapping-discount-combo-03.jpg)
+![Eksempel som bruker fire produkter for de samme to rabattene.](./media/overlapping-discount-combo-03.jpg)
 
 Først finner vi den største rabatten som er tilgjengelig fra hvilke som helst to produkter ved hjelp av en av rabattene. De to tabellene viser rabattbeløpet for alle kombinasjoner av de to produktene. De skyggelagte delene i tabellene representerer enten tilfeller der et produkt er forbundet med seg selv, som vi ikke kan gjøre, eller en omvendt sammenkobling av to produkter som gir det samme rabattbeløpet og kan ignoreres. Ved å se på tabellene kan du se at rabatt 1 for de to varene til $20 er den største rabatten som er tilgjengelig for en av rabattene for alle fire produkter. (Denne rabatten er uthevet i grønt i den første tabellen.) Dermed er det bare $15-produktet og $5-produktet igjen. Ved å se på de to tabellene på nytt kan du se at for disse to produktene gir rabatt 1 en rabatt på $2,50, mens rabatt 2 gir en rabatt på $4. Derfor velger vi rabatt 2. Totalrabatten er $14. Hvis du vil gjøre det enklere å visualisere denne diskusjonen, er her to andre tabeller som viser den effektive rabattprosenten for alle mulige kombinasjoner av to produkter, både for rabatt 1 og rabatt 2. Bare halvparten av listen over kombinasjoner er inkludert, fordi rekkefølge de to produktene legges inn i rabatten, er uten betydning for disse to rabattene. Den høyeste effektive rabatten (25 prosent) er uthevet i grønt, og den laveste effektive rabatten (10 prosent) er uthevet i rødt.
 
-![Effektiv rabattprosent for alle kombinasjoner av to produkter for begge rabatter](./media/overlapping-discount-combo-04.jpg)
+![Effektiv rabattprosent for alle kombinasjoner av to produkter for begge rabatter.](./media/overlapping-discount-combo-04.jpg)
 
 > [!NOTE]
 > Når prisene varierer, og to eller flere rabatter konkurrerer, er den eneste måten å garantere de beste kombinasjonene av rabatter å evaluere begge rabatter og sammenligne dem.
@@ -70,7 +70,7 @@ Først finner vi den største rabatten som er tilgjengelig fra hvilke som helst 
 
 Denne delen fortsetter eksemplet fra den forrige delen. Vi vil legge til flere produkter og en annen rabatt, og se hvor mange kombinasjoner som må beregnes og sammenlignes. Tabellen nedenfor viser hvor mange mulige kombinasjoner av rabatter etter hvert som produktantallet øker. Den tabell viser hva som skjer både når det er to overlappende rabatter, som i forrige eksempel, og tre overlappende rabatter. Antall mulige kombinasjoner av rabatter som må evalueres, overskrider snart det som til og med en rask datamaskin kan beregne og sammenligne raskt nok til å være akseptabel for handelstransaksjoner.
 
-![Antall mulige kombinasjoner av rabatter etter hvert som produktantallet øker](./media/overlapping-discount-combo-05.jpg)
+![Antall mulige kombinasjoner av rabatter etter hvert som produktantallet øker.](./media/overlapping-discount-combo-05.jpg)
 
 Når enda større antall eller flere overlappende rabatter trer i kraft, blir totalt antall mulige kombinasjoner av rabatter raskt flere millioner, og tiden som er nødvendig for å vurdere og velge den beste mulige kombinasjonen, blir raskt merkbar. Noen optimaliseringer har blitt gjort i prismotoren for å redusere det totale antallet kombinasjoner som må evalueres. Fordi antallet overlappende rabatter og antallene i en transaksjon ikke er begrenset, må imidlertid alltid et stort antall kombinasjoner evalueres når det er snakk om overlappende rabatter. Det er dette problemet som rangeringsmetoden med marginalverdi løser.
 
@@ -78,7 +78,7 @@ Når enda større antall eller flere overlappende rabatter trer i kraft, blir to
 
 For å løse problemet med et eksponentielt økende antall kombinasjoner som må evalueres, finnes det en optimalisering som beregner verdien per delte produkt for hver rabatt i settet med produkter som to eller flere rabatter kan brukes på. Vi henviser til denne verdien som **marginalverdien** for rabatten for de delte produktene. Marginalverdien er gjennomsnitt økning per produkt av det totale rabattbeløpet når de delte produktene er inkludert i hver rabatt. Marginalverdien beregnes ved å ta det totale rabattbeløpet (DTotal), trekke fra rabattbeløpet uten delte produkter (DMinus\\ delt), og dele denne differansen med antall delte produkter (ProductsShared).
 
-![Formel for beregning av marginal verdi](./media/overlapping-discount-combo-06.jpg)
+![Formel for beregning av marginal verdi.](./media/overlapping-discount-combo-06.jpg)
 
 Etter marginalverdien av hver rabatt i et delt sett med produkter er beregnet, brukes rabattene på de delte produktene i rekkefølge, utførlig, fra høyeste marginalverdi til laveste marginalverdi. Alle gjenværende rabattmuligheter blir ikke sammenlignet hver gang etter en enkelt forekomst av en rabatt er brukt for denne metoden. I stedet er overlappende rabatter sammenlignet én gang og brukes deretter i rekkefølge. Ingen flere sammenligninger utføres. Du kan konfigurere grenseverdien for å bytte til metoden med marginalverdi i kategorien **Rabatt** på siden **Handelsparametere**. Akseptabel tid til å beregne den totale rabatten varierer på tvers av bransjer for detaljhandel. Nå er imidlertid denne tiden vanligvis mellom noen titalls millisekunder til ett sekund.
 

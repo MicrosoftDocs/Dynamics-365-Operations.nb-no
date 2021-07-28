@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6b675d4af6fb9a080f3f3a13e64b2c5b6ad4b783
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 8b288a0d6b7516faf635486fbaad885344d2cc6f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022428"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352090"
 ---
 # <a name="provision-a-dynamics-365-commerce-evaluation-environment"></a>Klargjøre et evalueringsmiljø for Dynamics 365 Commerce
 
@@ -90,16 +90,16 @@ Gjør følgende for å distribuere miljøet.
 1. I feltet **Programversjon** velger du den nyeste versjonen. Hvis du har et bestemt behov for å velge en annen programversjon enn den nyeste versjonen, må du ikke velge en tidligere versjon enn **10.0.14**.
 1. I **Plattformversjon**-feltet bruker du plattformversjonen som automatisk velges for den valgte programversjonen. 
 
-    ![Velge program- og plattformversjoner](./media/project1.png)
+    ![Velge program- og plattformversjoner.](./media/project1.png)
 
 1. Velg **Neste**.
 1. Velg **Demo** som miljøtopologien.
 
-    ![Velge miljøtopologien 1](./media/project2.png)
+    ![Velge miljøtopologien 1.](./media/project2.png)
 
 1. På **Distribusjonsmiljø**-siden angir du et miljønavn. La Avanserte innstillinger stå som de er.
 
-    ![Distribusjonsmiljø-siden](./media/project4.png)
+    ![Distribusjonsmiljø-siden.](./media/project4.png)
 
 1. Juster VM-størrelsen etter behov. (Vi anbefaler VM-lagerenhet \[SKU\] **D13 v2**.)
 1. Se gjennom vilkårene for prising og lisensiering, og merk deretter av i avmerkingsboksen for å angi at du godtar dem.

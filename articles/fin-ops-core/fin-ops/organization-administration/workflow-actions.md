@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df08bdffb2bda67269eec9f1572bd76af9ae1e11
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 2da54d147c7e9c8a42ef9de94abcbe7f36c98295
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5747183"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355754"
 ---
 # <a name="actions-in-workflow-approval-processes"></a>Handlinger i godkjenningsprosesser i en arbeidsflyt
 
@@ -29,7 +29,7 @@ Denne artikkelen forklarer handlingene som hver deltaker i en godkjenningsproses
 
 En arbeidsflyt kan omfatte flere grupper av personer: avsenderen, personer tilordnet oppgaver, beslutningstakere og godkjennere. I følgende arbeidsflyt for reiseregning nedenfor er Erik avsenderen, medlemmer av køen er personer som er tilordnet oppgaven, Jon er beslutningstaker, og Dag, Jorunn og Karen er godkjennerne.
 
-[![Arbeidsflyt\_WithManualDecision](./media/workflow_withmanualdecision.gif)](./media/workflow_withmanualdecision.gif)
+[![Arbeidsflyt\_WithManualDecision.](./media/workflow_withmanualdecision.gif)](./media/workflow_withmanualdecision.gif)
 
 De følgende avsnittene forklarer arbeidsflythandlingene hver gruppe kan utføre.
 

@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 64b228954c040050f605d60cd416c112f3b12e25
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f00ca2748c3c8f7ec839069f21a5846377b6be04
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5802051"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349558"
 ---
 # <a name="connect-peripherals-to-the-point-of-sale-pos"></a>Koble eksterne enheter til salgsstedet
 
@@ -78,7 +78,7 @@ Mens selve maskinvarestasjonen er angitt på kanalnivå og inkluderer forekomsts
 
 ### <a name="mpos-with-connected-peripheral-devices"></a>MPOS med tilkoblede eksterne enheter
 
-[![Tradisjonelt fast salgssted](./media/traditional-300x279.png)](./media/traditional.png)
+[![Tradisjonelt fast salgssted.](./media/traditional-300x279.png)](./media/traditional.png)
 
 Hvis du vil koble MPOS til enheter på salgssted i et tradisjonelt scenario for fast salgssted, må du først gå til kassen og tilordne en maskinvareprofil til den. Du kan finne kassen på salgsstedet under **Detaljhandel og handel** &gt; **Kanaloppsett** &gt; **Oppsett av salgssted** &gt; **Kasser**. 
 
@@ -97,7 +97,7 @@ Til slutt går du til MPOS og bruker operasjonen **Velg maskinvarestasjon** for 
 
 ### <a name="mpos-or-cloud-pos-with-a-stand-alone-hardware-station"></a>MPOS eller Cloud POS en frittstående maskinvarestasjon
 
-[![Delte eksterne enheter](./media/shared-300x254.png)](./media/shared.png)
+[![Delte eksterne enheter.](./media/shared-300x254.png)](./media/shared.png)
 
 I dette scenariet er en frittstående maskinvarestasjon delt mellom MPOS- og Cloud POS-klienter. Dette scenariet krever at du oppretter en profil for maskinvarestasjon for å angi nedlastingspakken, port og maskinvareprofil som maskinvarestasjonen bruker. Du kan finne profilen for maskinvarestasjon på **Detaljhandel og handel** &gt; **Kanaloppsett** &gt; **Oppsett av salgssted** &gt; **Salgsstedsprofiler** &gt; **Maskinvarestasjonsprofiler**. 
 

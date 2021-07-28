@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: yabinl
 ms.search.validFrom: 2019-02-01
 ms.dyn365.ops.version: AX 10.0.0, Retail Feb 2019 update
-ms.openlocfilehash: dd07c9c95639c8e69e1013fd7da283cf51b60ed0
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 4d4f2ee97db52c055136912b237412b1148c26bd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804533"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352354"
 ---
 # <a name="restrict-payment-methods-for-returns-without-a-receipt"></a>Begrense betalingsmåter for returer uten en kvittering
 
@@ -38,7 +38,7 @@ Du må fullføre følgende oppgaver hvis du vil definere betalingsmåter.
 3. Definere betalingsmåter i butikker. Knytt betalingsmåter til hver butikk, og angi deretter de butikkspesifikke innstillingene for hvert betalingsmåte.
 4. Definer kortbetalingsmåter for butikker. Fullfør kortoppsettet for alle kortbetalingsmåter som butikken godtar.
 
-![Butikkoppsett](media/NoReceiptReturns1.png "Oppsett av detaljhandel") 
+![Butikkoppsett.](media/NoReceiptReturns1.png "Oppsett av detaljhandel") 
 
 
 ## <a name="restrict-payment-methods-for-returns-without-a-receipt"></a>Begrense betalingsmåter for returer uten en kvittering
@@ -49,12 +49,12 @@ Standardverdien for av/på er **Nei**, som sikrer at betalingsmåten er tillatt 
 
 Når **Begrens for refusjoner uten kvittering** er satt til **Ja**, tillates ikke den valgte betalingsmåten for refusjoner. 
 
-![Butikkbetalingsmåte](media/NoReceiptReturns3.png "Betalingsmåte for detaljhandel") 
+![Butikkbetalingsmåte.](media/NoReceiptReturns3.png "Betalingsmåte for detaljhandel") 
 
 > [!NOTE]
 > Når en kasserer legger til en betalingsmåte som er begrenset for refusjon uten kvittering, vises en melding for å bekrefte de akseptable betalingsmåtene.
 
-![Akseptable betalingsmåter](media/NoReceiptReturns4.png "Akseptable betalingsmåter") 
+![Akseptable betalingsmåter.](media/NoReceiptReturns4.png "Akseptable betalingsmåter") 
 
 Hvis en transaksjon har både en retur med kvittering og en retur uten kvittering, fremtvinges ikke begrensningsbetingelsene, fordi transaksjonen vil være en returarbeidsflyt med kvittering. 
 

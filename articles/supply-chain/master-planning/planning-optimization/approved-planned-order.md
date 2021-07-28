@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-08-21
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 71ec26bea2063bcf8b6d302a7ece804b3ac934b3
-ms.sourcegitcommit: 3673eeca1ada0f3e4ec277176515a946706f8a41
+ms.openlocfilehash: 94ecd623d445e23cc41829c51429e4783daa49f9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6304373"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355979"
 ---
 # <a name="view-manage-and-approve-planned-orders"></a>Vise, behandle og godkjenne planlagte bestillinger
 
@@ -65,7 +65,7 @@ Godkjenning av planlagte ordrer er et valgfritt trinn i prosessen med å opprett
 
 Illustrasjonen nedenfor viser hvordan du kan bruke **Status**-verdien som er tilordnet hver planlagte ordre, til å implementere en godkjenningsarbeidsflyt. Når du skal implementere en godkjenningsprosess, justerer du **Status**-verdien manuelt for hver planlagte ordre som beskrevet i den forrige delen.
 
-![Planlagt ordreflyt](media/approved-planned-orders-1.png)
+![Planlagt ordreflyt.](media/approved-planned-orders-1.png)
 
 > [!TIP]
 > Det anbefales at du godkjenner alle endrede planlagte bestillinger. Ellers blir endringene ignorert og overskrevet av neste planleggingskjøring.

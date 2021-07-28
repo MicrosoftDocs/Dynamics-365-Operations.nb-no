@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: fd33b1775afefed798f1e9bb7601f4112222c430
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: f4add6d32c34993338b0e587723df12d0a33ce43
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023479"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358272"
 ---
 # <a name="tds-group-pan-and-tan-information-setup-for-vendors-and-customers"></a>Konfigurasjon av informasjon om TDS-gruppe, PAN og TAN for leverandører og kunder
 
@@ -31,7 +31,7 @@ Dette emnet forklarer hvordan du konfigurerer informasjon om TDS-gruppe (Tax Ded
 
 1. Gå til **Leverandører \> Leverandører \> Alle leverandører** eller **Kunder \> Kunder \> Alle kunder**.
 
-    [![Siden Alle leverandører](./media/apac-ind-TDS-55.png)](./media/apac-ind-TDS-55.png)
+    [![Siden Alle leverandører.](./media/apac-ind-TDS-55.png)](./media/apac-ind-TDS-55.png)
 
 2. Velg **Ny** i handlingsruten for å opprette en leverandør eller kunde, og angi de nødvendige detaljene. Du kan alternativt velge en eksisterende leverandør eller kunde.
 3. Sett alternativet **Beregn kildeskatt** til **Ja** i **Kildeskatt**-delen i hurtigfanen **Faktura og levering** for å beregne kildeskatt, TDS eller TCS (Tax Collected at Source) for leverandøren eller kunden.
@@ -54,13 +54,13 @@ Dette emnet forklarer hvordan du konfigurerer informasjon om TDS-gruppe (Tax Ded
     - Selskap
     - HUF
     - Firma
-    - Enkeltperson
+    - Enkeltvis
     - AOP
     - BOI
     - Lokale myndigheter
-    - Andre
+    - Annet
 
-    [![Hurtigfanen Avgiftsinformasjon](./media/apac-ind-TDS-56.png)](./media/apac-ind-TDS-56.png)
+    [![Hurtigfanen Avgiftsinformasjon.](./media/apac-ind-TDS-56.png)](./media/apac-ind-TDS-56.png)
 
 9. Velg **Registrerings-ID-er** i **Registrering**-gruppen i **Leverandør**-fanen i handlingsruten for å åpne siden **Administrer adresser**.
 10. Velg **Legg til** eller **Rediger** i hurtigfanen **Avgiftsinformasjon** på siden **Administrer adresser** for å åpne siden **Administrer avgiftsinformasjon**, der du kan vedlikeholde oppføringen for avgiftsregistrering.

@@ -14,12 +14,12 @@ ms.search.region: global
 ms.author: dabourq
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 8f6affd05e658f39d567f7512c71d944636588ff
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: ad4ba2781c1b1086f2b554ec1db0f0f970d2d671
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907945"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351447"
 ---
 # <a name="vendor-collaboration-mobile-workspace"></a>Mobilt arbeidsområde for leverandørsamarbeid
 
@@ -120,12 +120,12 @@ Laste ned og installere Finance and Operations-mobilappen:
 4.  Første gang du logger deg på, blir du bedt om brukernavn og passord. Angi legitimasjon.
 5.  Når du har logget deg på, vises tilgjengelige arbeidsområder for firmaet. Legg merke til at hvis systemansvarlig senere publiserer et nytt arbeidsområde, må du oppdatere listen over mobile arbeidsområder.
 
-    [![Hent for å oppdatere](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+    [![Hent for å oppdatere.](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="use-the-vendor-collaboration-mobile-workspace"></a>Bruk det mobile arbeidsområdet for leverandørsamarbeid
 Når du velger arbeidsområdet for **leverandørsamarbeid**, vises følgende alternativer.
 
-![Mobilt arbeidsområde for leverandørsamarbeid](./media/vendor-collaboration-mobile-app.png)
+![Mobilt arbeidsområde for leverandørsamarbeid.](./media/vendor-collaboration-mobile-app.png)
 
 Arbeidsområdet for **leverandørsamarbeid** inneholder følgende sider.
 

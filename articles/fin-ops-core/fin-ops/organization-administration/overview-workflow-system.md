@@ -8,18 +8,20 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
-ms.custom: 56381
+ms.custom:
+- "56381"
+- intro-internal
 ms.assetid: 20b78595-e1d9-439a-ae1c-a776a3438919
 ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dbcab469e1dc8c139d180abdb7ed0bd8fba488a5
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: dc73f1bde3407c144dc1cd48283385c19713430e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5747741"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349090"
 ---
 # <a name="workflow-system-overview"></a>Oversikt over arbeidsflytsystem
 
@@ -39,7 +41,7 @@ Workflow er et system som kjører på Application Object Server (AOS). Arbeidsfl
 
 En arbeidsflyt representerer en forretningsprosess. Det definerer hvordan et dokument går eller flyttes gjennom systemet ved å vise hvem som må utføre en oppgave, ta avgjørelser eller godkjenne et dokument. Illustrasjonen nedenfor viser for eksempel en arbeidsflyt for reiseregninger.
 
-![Arbeidsflyt med elementer som er tilordnet til brukere](./media/workflow_user.gif)
+![Arbeidsflyt med elementer som er tilordnet til brukere.](./media/workflow_user.gif)
 
 Hvis du vil forstå denne arbeidsflyten bedre, kan vi anta at Erik sender en reiseregningsrapport på NOK 42 000. I denne situasjonen må Henrik gå gjennom kvitteringene som Erik sendte til ham. Deretter må Dag og Jorunn godkjenne reiseregningsrapporten. La oss nå anta at Erik sender en reiseregningsrapport på NOK 11 000. I denne situasjonen må Henrik se gjennom kvitteringene, og Dag, Jorunn og Karen må godkjenne reiseregningsrapporten.
 

@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 60ad0dd821dc91576a59cf73ec46da4aefd34a2f
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 94abcf7189dc7c1f5587eb06d47650dc707c5007
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794265"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352404"
 ---
 # <a name="manage-ratings-and-reviews"></a>Administrere vurderinger og anmeldelser
 
@@ -45,7 +45,7 @@ Gjør følgende for å lese en omtale i Commerce-områdebygger:
 
 Flere filtre gjør at du kan begrense omtalene etter periode, rangering, kanal eller betydning (fjernet, svart på eller rapportert).
 
-![Startside for sensur](media/rnr-moderation-home.png) 
+![Startside for sensur.](media/rnr-moderation-home.png) 
 
 ## <a name="respond-to-a-review"></a>Svare på en omtale 
 
@@ -59,7 +59,7 @@ Gjør følgende for å svare på en omtale i Commerce-områdebygger:
 1. Skriv inn svarteksten og navnet som skal vises for svareren. Standard svarnavn er **Moderator**.
 1. Når du er ferdig, velg du **Legg inn svar**.
 
-![Svare på en omtale](media/rnr-moderation-response.png) 
+![Svare på en omtale.](media/rnr-moderation-response.png) 
 
 ## <a name="take-down-a-review"></a>Fjerne en omtale 
 
@@ -82,7 +82,7 @@ Gjør følgende for å finne og slette kundedata i Commerce-områdebygger:
 1. Hvis kunden har omtaleaktivitet (for eksempel innsending av omtaler, stemmer om nyttigheten til en annen kundes omtale eller merknader om en annen kundes omtale), vises resultatene. For hvert element er det en **Slett**-knapp.
 1. Velg **Slett** for hvert element som må slettes. Velg **Ja** når du blir bedt om å bekrefte. 
     
-![Slette kundedata](media/rnr-moderation-delete-reviews.png) 
+![Slette kundedata.](media/rnr-moderation-delete-reviews.png) 
 
 > [!NOTE]
 > - Det kan ta opptil sju dager før data blir fjernet fra systemet. Moderatorer bør varsle kunder om denne forsinkelsen.
@@ -106,19 +106,19 @@ Gjør følgende for å vise trender for vurderinger og omtaler i Commerce-områd
 1. Gå til **Hjem \> Omtaler \> Rapportering**.
 1. Velg **PowerBI-mal** for å laste ned malen.
 
-    ![Last ned Power BI-malen](media/rnr-moderation-reports.png) 
+    ![Last ned Power BI-malen.](media/rnr-moderation-reports.png) 
 
 1. Åpne den nedlastede malen ved hjelp av Power BI-appen. Lukk dialogboksen **Tilgang til webinnhold** som vises, og lukk deretter "Oppdater"-feilmeldingen som vises.
 1. Gå til **Hjem**, velg **Rediger spørringer**, og velg deretter **Innstillinger for datakilde**.
 1. Velg **Endre kilde** i dialogboksen **Innstillinger for datakilde**.
 1. I feltet **URL** angir du banen til omtaledataene du lastet ned i forrige prosedyre (for eksempel **c:\\reviews\\ReviewsData.csv**).
 
-    ![URL-felt i dialogboks for kommadelte verdier](media/rnr-powerbi-datasource-settings.png) 
+    ![URL-felt i dialogboks for kommadelte verdier.](media/rnr-powerbi-datasource-settings.png) 
 
 1. Velg **OK**, og velg deretter **Bruk endringer**. Det vil ta ett til to minutter å bruke endringene i datakilden.
 1. Velg **Trendark** for å vise trender for vurderinger og omtaler.
 
-    ![Trender for vurderinger og omtaler](media/rnr-powerbi-dashboard-template.png) 
+    ![Trender for vurderinger og omtaler.](media/rnr-powerbi-dashboard-template.png) 
     
 ## <a name="additional-resources"></a>Tilleggsressurser
 

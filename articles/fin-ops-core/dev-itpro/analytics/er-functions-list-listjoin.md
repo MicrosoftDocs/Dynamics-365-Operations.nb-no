@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9b300cef0a508f7cc37397480738091158efdead
-ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
+ms.openlocfilehash: 5fe49184ee4023e8b4f54dd7f5107be8c711d4b8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6027921"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353736"
 ---
 # <a name="listjoin-er-function"></a>LISTJOIN ER-funksjonen
 
@@ -66,15 +66,15 @@ Du angir deretter datakilden **Post 2** av `Container`-typen. Denne datakilden i
 - **Beløp** Dette feltet inneholder et uttrykk som returnerer en verdi av `Real`-typen.
 - **IsValid** Dette feltet inneholder et uttrykk som returnerer en verdi av `Boolean`-typen.
 
-![Siden ER-utforming av modelltilordning](./media/er-functions-list-listjoin-image1.gif)
+![Siden ER-utforming av modelltilordning.](./media/er-functions-list-listjoin-image1.gif)
 
 I dette tilfellet returnerer uttrykket `LISTJOIN(LIST('Record 1'), LIST('Record 2'))` en ny liste som inneholder to poster.
 
-![Utformingsside for ER-modelltilordning med to poster](./media/er-functions-list-listjoin-image2.gif)
+![Utformingsside for ER-modelltilordning med to poster.](./media/er-functions-list-listjoin-image2.gif)
 
 Strukturen i denne listen består av et enkelt **Beløp**-felt av `Real`-typen, fordi dette feltet er det eneste feltet som vises i alle argumentene til den kalte funksjonen.
 
-![Beløpsfelt på siden ER-utforming av modelltilordning](./media/er-functions-list-listjoin-image3.gif)
+![Beløpsfelt på siden ER-utforming av modelltilordning.](./media/er-functions-list-listjoin-image3.gif)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

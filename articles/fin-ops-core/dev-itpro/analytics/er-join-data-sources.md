@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-03-01
 ms.dyn365.ops.version: Release 10.0.1
-ms.openlocfilehash: be5646eaf395310c8b34586ef1274a41b5b97029
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: 5b4899cad01a0ed2424dcc5d29e9fb5cca65a6a9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944733"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351103"
 ---
 # <a name="use-join-data-sources-to-get-data-from-multiple-application-tables-in-electronic-reporting-er-model-mappings"></a>Bruke JOIN-datakilder til å hente data fra flere programtabeller i modelltilordninger for elektronisk rapportering (ER)
 
@@ -69,7 +69,7 @@ På forhånd må du også laste ned og lagre følgende eksempel-ER-konfigurasjon
 | **Innholdsbeskrivelse**  | **Filnavn**   |
 |--------------------------|-----------------|
 | Eksempel **ER-datamodell**-konfigurasjonsfil, som brukes som datakilde for eksemplene.| [Modell for å lære JOIN-datakilder.versjon.1.1.xml](https://download.microsoft.com/download/5/c/1/5c1d8a57-6ebd-425b-bc5d-c71dde92c6af/ModeltolearnJOINdatasources.version.1.xml) |
-| Eksempelkonfigurasjonsfil for **ER-modelltilordning**, som implementerer ER-datamodellen for eksemplene. | [Tilordning for å lære JOIN-datakilder.versjon.1.1.xml](https://user-images.githubusercontent.com/19827601/115923048-86b10400-a432-11eb-9e57-c37a02effcb4.png)|
+| Eksempelkonfigurasjonsfil for **ER-modelltilordning**, som implementerer ER-datamodellen for eksemplene. | [Tilordning for å lære JOIN-datakilder.versjon.1.1.xml](https://download.microsoft.com/download/9/2/f/92f339ca-41fc-4f5e-b458-6983c957d3dd/MappingtolearnJOINdatasources.version.1.1.xml)|
 | Eksempelkonfigurasjonsfil for **ER-format**. Denne filen beskriver dataene for å fylle ut ER-formatkomponenten for eksemplene. | [Format for å lære JOIN-datakilder.versjon.1.1.xml](https://download.microsoft.com/download/f/f/8/ff8f1b48-14d0-4c73-9145-bcdf8b5265bc/FormattolearnJOINdatasources.version.1.1.xml) |
 
 ### <a name="activate-a-configurations-provider"></a>Aktivere en konfigurasjonsleverandør
@@ -78,7 +78,7 @@ På forhånd må du også laste ned og lagre følgende eksempel-ER-konfigurasjon
 2. Gå til **Organisasjonsstyring \> Arbeidsområder \> Elektronisk rapportering**.
 3. På **Lokaliseringskonfigurasjoner**-siden i **Konfigurasjonsleverandører**-delen må du sørge for at konfigurasjonsleverandør for eksempelselskapet [Litware, Inc.](http://www.litware.com) er oppført, og at den er merket som **Aktiv**. Hvis du ikke ser denne konfigurasjonsleverandøren, følger du trinnene i prosedyren [Opprette en konfigurasjonsleverandør og merke den som aktiv](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
-    ![Arbeidsområdet Elektronisk rapportering](./media/GER-JoinDS-ActiveProvider.PNG)
+    ![Arbeidsområdet Elektronisk rapportering.](./media/GER-JoinDS-ActiveProvider.PNG)
 
 ### <a name="import-sample-er-configuration-files"></a>Importere ER-eksempelkonfigurasjonsfiler
 
@@ -101,7 +101,7 @@ På forhånd må du også laste ned og lagre følgende eksempel-ER-konfigurasjon
 5. I konfigurasjonstreet utvider du elementet for **Modell for å lære JOIN-datakilder** samt andre modellelementer (når det er tilgjengelig).
 6. Se på listen over ER-konfigurasjoner i treet i tillegg til versjonsdetaljer i hurtigfanen **Versjoner** – de brukes som datakilden for eksempelrapporten.
 
-    ![Side for konfigurasjoner for elektronisk rapportering](./media/GER-JoinDS-ConfigurationsTree.PNG)
+    ![Side for konfigurasjoner for elektronisk rapportering.](./media/GER-JoinDS-ConfigurationsTree.PNG)
 
 ### <a name="turn-on-execution-trace-options"></a>Slå på alternativer for utførelsessporing
 
@@ -109,7 +109,7 @@ På forhånd må du også laste ned og lagre følgende eksempel-ER-konfigurasjon
 2. Velg **Brukerparametere**.
 3. Angi parametere for utførelsessporing som vist på skjermbildet nedenfor.
 
-    ![Siden brukerparametere for elektronisk rapportering](./media/GER-JoinDS-Parameters.PNG)
+    ![Siden brukerparametere for elektronisk rapportering.](./media/GER-JoinDS-Parameters.PNG)
 
     Når disse parameterne er aktivert, genereres utførelsessporingen for hver utføring av den importerte ER-formatfilen. Ved hjelp av detaljer om generert utførelsessporing kan du analysere utførelsen av ER-format- og ER-modelltilordninger. Gå til siden [Spore utførelse av ER-format for å feilsøke ytelsesproblemer](trace-execution-er-troubleshoot-perf.md) for flere detaljer om sporingsfunksjonen for ER-utførelse.
 
@@ -128,13 +128,13 @@ Se gjennom innstillingene for komponenten for ER-modelltilordning. Komponenten k
     3. Bindingen **ConfigurationTitle: String = @.'>Relations'.Solution.Name** angir at navnet på en ER-konfigurasjon er tatt fra feltet **Name** i tabellen **ERSolutionTable** via mange-til-én-relasjonen (**>Relations**) mellom tabellene **ERSolutionVersionTable** og **ERSolutionTable**. Navn på ER-konfigurasjoner av gjeldende programforekomst vises i konfigurasjonstreet på siden **Konfigurasjoner**.
     4. Bindingen **@.'>Relations'.Solution.'>Relations'.SolutionVendor.Name** betyr at navnet på konfigurasjonsleverandøren som eier gjeldende konfigurasjon, hentes fra feltet **Name** i tabellen **ERVendorTable**, via mange-til-én-realsjonen mellom tabellene **ERSolutionTable** og **ERVendorTable**. Navnene på ER-konfigurasjonsleverandørene vises i konfigurasjonstreet på siden **Konfigurasjoner** på sidehodet for hver konfigurasjon. Du finner hele listen med ER-konfigurasjonsleverandører på tabellsiden **Organisasjonsstyring \> Elektronisk rapportering \> Konfigurasjonsleverandør**.
 
-    ![Siden ER-utforming av modelltilordning, liste over datamodellelementer som er bundet](./media/GER-JoinDS-Set1Review.PNG)
+    ![Siden ER-utforming av modelltilordning, liste over datamodellelementer som er bundet.](./media/GER-JoinDS-Set1Review.PNG)
 
 6. I konfigurasjonstreet utvider du datamodellelementet **Set1.Summary**:
 
     1. Bindingene **VersionsNumber: Integer = VersionsSummary.aggregated.VersionsNumber** angir at elementet **Set1.Summary.VersionsNumber** er bundet til **VersionsNumber**-aggregasjonfeltet i **VersionsSummary**-datakilden av **GroupBy**-typen som ble konfigurert til å returnere antallet poster i tabellen **ERSolutionVersionTable** via datakilden **Versions**.
 
-    ![Rediger parametersiden Grupper etter](./media/GER-JoinDS-Set1GroupByReview.PNG)
+    ![Rediger parametersiden Grupper etter.](./media/GER-JoinDS-Set1GroupByReview.PNG)
 
 7. Lukk siden.
 
@@ -144,18 +144,18 @@ Se gjennom innstillingene for komponenten for ER-modelltilordning. Komponenten k
 
 1. I konfigurasjonstreet utvider du datamodellelementene **Set2** og **Set2.Details**. Bindingen **Details: Record list = Details** angir at elementet **Set2.Details** er bundet til **Details**-datakilden som er konfigurert som datakilde av typen **Join**.
 
-    ![Er-modelltilordningsutformingssiden som viser utvidede Set2:Record-datamodellelementer](./media/GER-JoinDS-Set2Review.PNG)
+    ![Er-modelltilordningsutformingssiden som viser utvidede Set2:Record-datamodellelementer.](./media/GER-JoinDS-Set2Review.PNG)
 
     Datakilden for **Join** kan legges til ved å velge datakilden **Functions\Join**:
 
-    ![Siden ER-utforming av modelltilordning, JOIN-datakildetype](./media/GER-JoinDS-AddJoinDS.PNG)
+    ![Siden ER-utforming av modelltilordning, JOIN-datakildetype.](./media/GER-JoinDS-AddJoinDS.PNG)
 
 2. Velg datakilden **Details**.
 3. Velg **Rediger** i ruten **Datakilder**.
 4. Velg **Rediger join**.
 5. Velg **Vis detaljer**.
 
-    ![Siden med JOIN-parametre for datakilde](./media/GER-JoinDS-JoinDSEditor.PNG)
+    ![Siden med JOIN-parametre for datakilde.](./media/GER-JoinDS-JoinDSEditor.PNG)
 
     Denne siden brukes til å utforme den påkrevde datakilden for **Join-type**. Under kjøring vil denne datakilden opprette én enkelt sammenføyet liste med poster fra datakildene i rutenettet **Sammenkoblet liste**. Sammenføyning av poster starter fra datakilden **ConfigurationProviders** som er i rutenettet som første (**Type**-kolonnen er tom for den). Poster med alle andre datakilder vil bli føyd sammen til poster av den overordnede datakilden basert på rekkefølgen i dette rutenettet. Alle Join-datakilder må konfigureres som en datakilde nestet under en måldatakilde (`1Versions`-datakilden er nestet under én `1Configurations`, datakilden `1Configurations` som er nestet under én **ConfigurationProviders**). Hver konfigurerte datakilde må inneholde betingelsene for Join-sammenkoblingen. I datakilden for denne bestemte **Join** er følgende Join-sammenkoblinger definert:
 
@@ -178,7 +178,7 @@ Se gjennom innstillingene for komponenten for ER-modelltilordning. Komponenten k
     - Bindingen **VersionsNumber: Integer = DetailsSummary.aggregated.VersionsNumber** angir at elementet **Set2.Summary.VersionsNumber** er bundet til **VersionsNumber**-aggregasjonfeltet i **DetailsSummary**-datakilden av **GroupBy**-typen som ble konfigurert til å returnere antallet sammenkoblede poster i **Details**-datakilden av typen **Join**.
     - Stedsalternativet **Utfør** er konfigurert som **Spørring**, som betyr at denne **GroupBy**-datakilden utføres under kjøring som et direkte SQL-kall på databasenivå. Denne virkemåten er mulig fordi basisdatakilden **Details** for typen **Join** er konfigurert som utført på databasenivå.
 
-    ![Siden for GROUPBY-datakildeparametere](./media/GER-JoinDS-Set2GroupByReview.PNG)
+    ![Siden for GROUPBY-datakildeparametere.](./media/GER-JoinDS-Set2GroupByReview.PNG)
 
 9. Lukk siden.
 10. Velg **Avbryt**.
@@ -196,21 +196,21 @@ Se gjennom innstillingene for komponenten for ER-modelltilordning. Komponenten k
 
     Dette formatet er utformet for å fylle ut en generert tekstfil med en ny linje for hver versjon av en ER-konfigurasjon (**Versjon**-sekvens). Hver genererte linje inneholder navnet på en konfigurasjonsleverandør som eier den gjeldende konfigurasjonen, konfigurasjonsnavnet og konfigurasjonsversjonen atskilt med semikolon. Den siste linjen i den genererte filen vil inneholde antall oppdagede versjoner av ER-konfigurasjoner (**Sammendrag**-sekvens).
 
-    ![Side med ER-formatutforming, kategorien Format](./media/GER-JoinDS-FormatReview.PNG)
+    ![Side med ER-formatutforming, kategorien Format.](./media/GER-JoinDS-FormatReview.PNG)
 
     Datakildene **Data** og **Sammendrag** brukes til å fylle ut konfigurasjonsversjonsdetaljer for den genererte filen:
 
     - Informasjon fra datamodellen **Set1** brukes når du velger **Nei** for datakilden **Velger** under kjøring på siden med brukerdialogboks når ER-format kjøres.
     - Informasjon fra datamodellen **Set2** brukes når du velger **Ja** for datakilden **Velger** under kjøring på siden med brukerdialogboks.
 
-    ![Side med ER-formatutforming, kategorien Tilordning](./media/GER-JoinDS-FormatMappingReview.PNG)
+    ![Side med ER-formatutforming, kategorien Tilordning.](./media/GER-JoinDS-FormatMappingReview.PNG)
 
 9. Velg **Kjør**.
 10. Velg **Nei** på dialogbokssiden i feltet **Bruk JOIN-datakilder**.
 11. Velg **OK**.
 12. Se gjennom den genererte filen.
 
-    ![Fil generert av elektronisk rapportparametere som ikke bruker JOIN-datakilde](./media/GER-JoinDS-Set1Run.PNG)
+    ![Fil generert av elektronisk rapportparametere som ikke bruker JOIN-datakilde.](./media/GER-JoinDS-Set1Run.PNG)
 
 #### <a name="analyze-er-format-execution-trace"></a>Analysere utførelsessporing i ER-format
 
@@ -224,7 +224,7 @@ Se gjennom innstillingene for komponenten for ER-modelltilordning. Komponenten k
     - **ERSolutionTable** er kalt så mange ganger som du har konfigurasjonsversjonsposter i **ERSolutionVersionTable** -tabellen, men antallet slike kall kan til tider bli redusert for å forbedre ytelsen.
     - **ERVendorTable** er kalt to ganger for hver konfigurasjonsversjonspost som ble oppdaget i tabellen **ERSolutionVersionTable**, men antallet slike kall kan imidlertid blir redusert.
 
-    ![Utførelsesstatistikk på siden ER-utforming av modelltilordning](./media/GER-JoinDS-Set1Run2.PNG)
+    ![Utførelsesstatistikk på siden ER-utforming av modelltilordning.](./media/GER-JoinDS-Set1Run2.PNG)
 
 5. Lukk siden.
 
@@ -236,7 +236,7 @@ Se gjennom innstillingene for komponenten for ER-modelltilordning. Komponenten k
 4. Velg **OK**.
 5. Se gjennom den genererte filen.
 
-    ![Fil generert av elektronisk rapportparametere som bruker JOIN-datakilde](./media/GER-JoinDS-Set2Run.PNG)
+    ![Fil generert av elektronisk rapportparametere som bruker JOIN-datakilde.](./media/GER-JoinDS-Set2Run.PNG)
 
 #### <a name="analyze-er-format-execution-trace"></a><a name="analyze"></a> Analysere utførelsessporing i ER-format
 
@@ -249,11 +249,11 @@ Se gjennom innstillingene for komponenten for ER-modelltilordning. Komponenten k
 
     - Programdatabasen har blitt kalt én gang for å hente poster fra tabellene **ERVendorTable**, **ERSolutionTable** og **ERSolutionVersionTable** for å få tilgang til de obligatoriske feltene.
 
-    ![Utførelsesstatistikkdetaljer på siden ER-utforming av modelltilordning](./media/GER-JoinDS-Set2Run2.PNG)
+    ![Utførelsesstatistikkdetaljer på siden ER-utforming av modelltilordning.](./media/GER-JoinDS-Set2Run2.PNG)
 
     - Programdatabasen har blitt kalt én gang for å beregne antallet konfigurasjonsversjoner ved hjelp av sammenføyninger som ble konfigurert i datakilden **Detaljer**.
 
-    ![Siden ER-utforming av modelltilordning som viser programdatabaseanrop](./media/GER-JoinDS-Set2Run3.PNG)
+    ![Siden ER-utforming av modelltilordning som viser programdatabaseanrop.](./media/GER-JoinDS-Set2Run3.PNG)
 
 ## <a name="limitations"></a>Begrensninger
 

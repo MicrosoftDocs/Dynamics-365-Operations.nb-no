@@ -684,10 +684,18 @@
               href: ../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/dynamics365/finance/toc.json
             - name: Bruk innholdspakke for Microsoft Power BI-rapportering
               href: ../fin-ops-core/dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/dynamics365/finance/toc.json
-            - name: Bruke arbeidsområde for kostnadskontroll for mobilapp
+            - name: Bruk arbeidsområde for kostnadskontroll for mobilapp
               href: cost-accounting/cost-controlling-mobile-workspace.md
-        - name: Elektronisk meldingssystem
-          href: general-ledger/electronic-messaging.md
+        - name: Elektroniske meldinger
+          items:
+            - name: Oversikt over elektroniske meldinger
+              href: general-ledger/electronic-messaging.md
+            - name: Definer elektroniske meldinger
+              href: general-ledger/electronic-messaging-setup.md
+            - name: Arbeid med funksjonen Elektroniske meldinger
+              href: general-ledger/electronic-messaging-work-with-em.md
+            - name: Kall opp et enkelt eksporterings-ER-format for å generere en Excel-rapport
+              href: general-ledger/electronic-messaging-example.md
         - name: Reiseregning og utlegg
           items:
             - name: Oversikt over reiseregning og utlegg
@@ -1216,17 +1224,27 @@
               items:
                 - name: Konfigurer Finance Insights for offentlig forhåndsversjon
                   href: finance-insights/configure-for-fin-insites-PubPrvw.md
-                - name: Konfigurer Finance Insights
+                - name: Konfigurer Finance Insights for privat forhåndsvisning
                   href: finance-insights/configure-for-fin-insites.md
                 - name: Aktiver kundebetalingsprognoser
                   href: finance-insights/enable-cust-paymnt-prediction.md
-                - name: Aktivere kontantstrømprognose
+                - name: Aktiver kontantstrømprognose
                   href: finance-insights/enable-cash-flow-forecasting.md
-                - name: Aktivere budsjettforslag
+                - name: Aktiver budsjettforslag
                   href: finance-insights/enable-budget-proposal.md
-                - name: Opprette dataintegreringsprosjekt
+                - name: Opprett dataintegreringsprosjekt
                   href: finance-insights/create-data-integrate-project.md
-            - name: Bruke Finance Insights
+                - name: Presiser og forbedre forutsigelsene
+                  items:
+                    - name: Resultater av maskinlæringsmodeller
+                      href: finance-insights/confusion-matrix.md
+                    - name: Evaluer den opprinnelige forutsigelsesmodellen for kundebetaling
+                      href: finance-insights/evaluate-payment-prediction.md
+                    - name: Forbedre forutsigelsesmodellen
+                      href: finance-insights/improve-model.md
+                    - name: Livssyklus for modelladministrasjon
+                      href: finance-insights/model-manage-lifecycle.md
+            - name: Bruk Finance Insights
               items:
                 - name: Budsjettforslag
                   href: finance-insights/budget-proposals.md
@@ -1238,16 +1256,10 @@
                   href: finance-insights/external-data-in-cash-flow.md
                 - name: Kundebetalingsforutsigelser
                   href: finance-insights/payment-insights-overview.md
-                - name: Bruke kundebetalingsforutsigelser
+                - name: Bruk kundebetalingsforutsigelser
                   href: finance-insights/use-customer-payment-predictions.md
                 - name: Oversikt over øyeblikksbilder
                   href: finance-insights/payment-snapshots.md
-                - name: Resultater av maskinopplæringsmodeller
-                  href: finance-insights/confusion-matrix.md
-                - name: Evaluere den opprinnelige forutsigelsesmodellen for kundebetaling
-                  href: finance-insights/evaluate-payment-prediction.md
-                - name: Forbedre forutsigelsesmodellen
-                  href: finance-insights/improve-model.md
         - name: Prosjektstyring og regnskap
           items:
             - name: Oversikt over prosjektstyring og regnskap
@@ -1492,8 +1504,6 @@
                           href: localizations/e-invoicing-bra-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: Kom i gang med elektronisk fakturering for Egypt
                           href: localizations/e-invoicing-eg-get-started.md?toc=/dynamics365/finance/toc.json
-                        - name: Kom i gang med elektronisk fakturering for Italia
-                          href: localizations/e-invoicing-ita-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: Kom i gang med elektronisk fakturering for Mexico
                           href: localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: Definer elektronisk fakturering
@@ -2196,38 +2206,40 @@
                   href: localizations/india.md
                 - name: Omfang for indiske lokaliseringer
                   href: localizations/apac-ind-scope.md
-                - name: Hva som er nytt eller endret for India-lokalisering
+                - name: Nyheter eller endringer for India-lokalisering
                   items:
-                    - name: Hva er nytt eller endret i 10.0.0
-                      href: localizations/apac-ind-news-letter-10-0-00.md
-                    - name: Hva er nytt eller endret i 10.0.01
-                      href: localizations/apac-ind-news-letter-10-0-01.md
-                    - name: Hva er nytt eller endret i 10.0.02
-                      href: localizations/apac-ind-news-letter-10-0-02.md
-                    - name: Hva er nytt eller endret i 10.0.03
-                      href: localizations/apac-ind-news-letter-10-0-03.md
-                    - name: Hva er nytt eller endret i 10.0.04
-                      href: localizations/apac-ind-news-letter-10-0-04.md
-                    - name: Hva er nytt eller endret i 10.0.05
-                      href: localizations/apac-ind-news-letter-10-0-05.md
-                    - name: Hva er nytt eller endret i 10.0.06
-                      href: localizations/apac-ind-news-letter-10-0-06.md
-                    - name: Hva er nytt eller endret i 10.0.07
-                      href: localizations/apac-ind-news-letter-10-0-07.md
-                    - name: Hva er nytt eller endret i 10.0.08
-                      href: localizations/apac-ind-news-letter-10-0-08.md
-                    - name: Hva er nytt eller endret i 10.0.09
-                      href: localizations/apac-ind-news-letter-10-0-09.md
-                    - name: Hva er nytt eller endret i 10.0.10
-                      href: localizations/apac-ind-news-letter-10-0-10.md
-                    - name: Hva er nytt eller endret i 10.0.11
-                      href: localizations/apac-ind-news-letter-10-0-11.md
-                    - name: Hva er nytt eller endret i 10.0.12
-                      href: localizations/apac-ind-news-letter-10-0-12.md
-                    - name: Nyheter eller endringer i 10.0.13
-                      href: localizations/ind-news-letter-10-0-13.md
+                    - name: Nyheter eller endringer i 10.0.15–10.0.19
+                      href: localizations/ind-news-letter-10-0-15-19.md
                     - name: Nyheter eller endringer i 10.0.14
                       href: localizations/apac-ind-news-letter-10-0-14.md
+                    - name: Nyheter eller endringer i 10.0.13
+                      href: localizations/ind-news-letter-10-0-13.md
+                    - name: Nyheter eller endringer i 10.0.12
+                      href: localizations/apac-ind-news-letter-10-0-12.md
+                    - name: Nyheter eller endringer i 10.0.11
+                      href: localizations/apac-ind-news-letter-10-0-11.md
+                    - name: Nyheter eller endringer i 10.0.10
+                      href: localizations/apac-ind-news-letter-10-0-10.md
+                    - name: Nyheter eller endringer i 10.0.09
+                      href: localizations/apac-ind-news-letter-10-0-09.md
+                    - name: Nyheter eller endringer i 10.0.08
+                      href: localizations/apac-ind-news-letter-10-0-08.md
+                    - name: Nyheter eller endringer i 10.0.07
+                      href: localizations/apac-ind-news-letter-10-0-07.md
+                    - name: Nyheter eller endringer i 10.0.06
+                      href: localizations/apac-ind-news-letter-10-0-06.md
+                    - name: Nyheter eller endringer i 10.0.05
+                      href: localizations/apac-ind-news-letter-10-0-05.md
+                    - name: Nyheter eller endringer i 10.0.04
+                      href: localizations/apac-ind-news-letter-10-0-04.md
+                    - name: Nyheter eller endringer i 10.0.03
+                      href: localizations/apac-ind-news-letter-10-0-03.md
+                    - name: Nyheter eller endringer i 10.0.02
+                      href: localizations/apac-ind-news-letter-10-0-02.md
+                    - name: Nyheter eller endringer i 10.0.01
+                      href: localizations/apac-ind-news-letter-10-0-01.md
+                    - name: Nyheter eller endringer i 10.0.0
+                      href: localizations/apac-ind-news-letter-10-0-00.md
                 - name: Indirekte avgifter
                   items:
                     - name: India GST
@@ -2282,12 +2294,14 @@
                               href: localizations/apac-ind-GST-map-configuration-tax-types.md
                             - name: Definere pris-og prosenttabeller
                               href: localizations/apac-ind-GST-set-up-rate-percentage-tables.md
-                            - name: Definere et mva-hierarki og utsettelsesregler
+                            - name: Definer et mva-hierarki og utsettelsesregler
                               href: localizations/apac-ind-GST-set-up-activate-tax-hierarchy-tree.md
                             - name: Referansegrupper for India GST
                               href: localizations/apac-ind-gst-reference-groups.md
                         - name: Avgiftstransaksjoner
                           items:
+                            - name: GST TDS på betaling av varer og tjenester
+                              href: localizations/ind-gst-tds-payment-goods-services.md
                             - name: Innkjøpstransaksjoner
                               items:
                                 - name: Innkjøp fra uregistrerte leverandører
@@ -2438,6 +2452,8 @@
                               href: localizations/apac-ind-GST-troubleshooting-records-fields-not-showing-GSTR-report.md
                             - name: Utsettelsesregelfeil når en avgiftsutligning kjøres
                               href: localizations/apac-ind-GST-troubleshooting-setoff-rule-error-transactions-on-voucher-not%20balance.md
+                            - name: Standard feltverdi i avgiftsinformasjon er ikke som forventet
+                              href: localizations/apac-ind-GST-troubleshooting-default-value-in-tax-information-not-expected.md
                 - name: Direkte avgifter
                   items:
                     - name: Kildeskatt for India
@@ -2456,6 +2472,10 @@
                               href: localizations/apac-ind-TDS-India-TDS-overview.md
                             - name: Inkluder GST ved beregning av avgiftsfradrag
                               href: localizations/apac-ind-GST-include-gst-calculating-tax-deductions.md
+                            - name: TDS på kjøp av varer under 194Q
+                              href: localizations/ind-tds-purchases-goods.md
+                            - name: Poster TDS/TCS på ikke-filer med høyere avgiftssats
+                              href: localizations/post-tds-tcs-non-filers-higher-tax.md
                             - name: Grunnoppsett for TDS
                               items:
                                 - name: Angi TDS-parameterne
@@ -3326,19 +3346,19 @@
                   href: /dynamics365/finance/hr-workflow-manage-employee-information?toc=%2fdynamics365%2ffinance%2ftoc.json
                 - name: Forstå felt for dato og klokkeslett
                   href: ../human-resources/hr-setup-date-time-fields.md?toc=/dynamics365/finance/toc.json
-            - name: Administrere medarbeidere
+            - name: Administrer medarbeidere
               items:
-                - name: Organisere arbeidsstyrken
+                - name: Organiser arbeidsstyrken
                   href: ../human-resources/hr-personnel-departments-jobs-positions.md?toc=/dynamics365/finance/toc.json
-                - name: Definere komponentene for en jobb
+                - name: Definer komponentene for en jobb
                   href: ../human-resources/hr-personnel-jobs.md?toc=/dynamics365/finance/toc.json
-                - name: Definere avdelinger
+                - name: Definer avdelinger
                   href: ../human-resources/hr-personnel-define-departments.md?toc=/dynamics365/finance/toc.json
-                - name: Legge til en avdeling i et hierarki
+                - name: Legg til en avdeling i et hierarki
                   href: ../human-resources/hr-personnel-add-department-hierarchy.md?toc=/dynamics365/finance/toc.json
-                - name: Definere jobber
+                - name: Definer jobber
                   href: ../human-resources/hr-personnel-define-jobs.md?toc=/dynamics365/finance/toc.json
-                - name: Opprette en arbeidstidskalender
+                - name: Opprett en arbeidstidskalender
                   href: ../human-resources/hr-personnel-create-working-time-calendar.md?toc=/dynamics365/finance/toc.json
                 - name: Vanlige spørsmål om medarbeiderhandlinger
                   href: ../human-resources/hr-personnel-actions-faq.md?toc=/dynamics365/finance/toc.json
@@ -4347,13 +4367,15 @@
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/finance/toc.json
                     - name: Konfigurere automatiserte oppgaver
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/finance/toc.json
-                    - name: Konfigurere godkjenningsprosesser
+                    - name: Konfigurer godkjenningsprosesser
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/finance/toc.json
-                    - name: Konfigurere godkjenningstrinn
+                    - name: Konfigurer godkjenningstrinn
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/finance/toc.json
-                    - name: Konfigurere manuelle beslutninger
+                    - name: Konfigurer utgiftskontrollører
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-expenditure-reviewers.md?toc=/dynamics365/finance/toc.json
+                    - name: Konfigurer manuelle beslutninger
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/finance/toc.json
-                    - name: Konfigurere betingede beslutninger
+                    - name: Konfigurer betingede beslutninger
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/finance/toc.json
                     - name: Konfigurere parallelle aktiviteter
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/finance/toc.json
@@ -4385,7 +4407,7 @@
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/finance/toc.json
                     - name: Opprette en SubmitToWorkflow-klasse
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/finance/toc.json
-                    - name: Tilknytte en arbeidsflytdokumentklasse til en arbeidsflyttype
+                    - name: Tilknytt en arbeidsflytdokumentklasse til en arbeidsflyttype
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/finance/toc.json
                 - name: Rapport for arbeidsflyttyper
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/finance/toc.json

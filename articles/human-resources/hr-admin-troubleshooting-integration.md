@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d2ac28a1bd09cf68c711295116fb007bdfab2070
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 946d0433df41ce7067b8b0673db680abb42b7792
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053401"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357295"
 ---
 # <a name="integration-with-finance-faq"></a>Vanlige spørsmål om integrasjon med Finance
 
@@ -37,7 +37,7 @@ Nr. Hvis du redigerer Human Resources-appbrukeren, kan integreringen mellom Huma
 | --- | --- | --- | --- |
 | Dynamics365 for Talent | f9be0c49-aa22-4ec6-911a-c5da515226ff | 27fd8129-4b3c-43f7-b1bf-47495d3a049b | f9be0c49-aa22-4ec6-911a-c5da515226ff |
 
-![Standardinnstillinger for Talent-appbruker](media/DynamicsApplicationUser.png)
+![Standardinnstillinger for Talent-appbruker.](media/DynamicsApplicationUser.png)
 
 ## <a name="is-all-data-synchronized-or-just-some-data-entities"></a>Er alle data synkronisert eller bare noen dataenheter?
 
@@ -57,7 +57,7 @@ Finansdimensjoner er ikke i Dataverse og er dermed ikke en del av standardmalen.
 
 For data som ligger i Finance, men ikke finnes i Human Resources, koble sammen de to systemene ved å bruke **Konfigurer koblinger** i Human Resources.
 
-![Tilordne finansdimensjoner](media/MapFinancialDimensions.png)
+![Tilordne finansdimensjoner.](media/MapFinancialDimensions.png)
 
 ## <a name="sometimes-when-i-import-employees-they-go-into-inactive-workers-in-finance-why"></a>Noen ganger når jeg importerer ansatte, blir de inaktive arbeidere i Finance. Hvorfor?
 
@@ -71,14 +71,14 @@ Datasynkronisering følger tidsplanen for kjøring. Integreringen henter en post
 
 Ved hjelp av "Avansert spørring" kan du filtrere og endre kildedataene før de sendes til målet.
 
-![Avansert spørring for aktive arbeidere](media/MapOnlyActiveWorkersAdvancedQuery.png)
+![Avansert spørring for aktive arbeidere.](media/MapOnlyActiveWorkersAdvancedQuery.png)
 
 ## <a name="can-i-specify-which-fields-to-send-to-finance-for-a-specific-entity"></a>Kan jeg angi hvilke felt som skal sendes til Finance for en bestemt enhet?
 
 Feltene kan legges til eller fjernes fra integrasjonsoppgaven. Ikke alle datafelt som finnes i Dataverse-tabellen, fylles ut fra Human Resources.
 Tilleggsdata fylles via Power Apps.
 
-![Legge til eller fjerne felt fra en integrasjonsoppgave](media/SpecifyFieldsIncludedInIntegration.png)
+![Legge til eller fjerne felt fra en integrasjonsoppgave.](media/SpecifyFieldsIncludedInIntegration.png)
 
 ## <a name="i-set-up-integration-as-a-batch-job-but-human-resources-lost-connection-to-the-destination-system-how-can-i-send-the-same-set-of-changes-to-the-destination-system"></a>Jeg har satt opp integrasjon som en satsvis jobb, men Human Resources mistet forbindelsen til målsystemet. Hvordan kan jeg sende det samme settet med endringer til målsystemet?
 
@@ -126,21 +126,21 @@ Spor tiden fra Dataintegrator-kjøringshistorikken, og se etter indeksen -1 i Fi
 
 1. Lagre oppgaveindeksen fra Dataintegrator (i dette eksemplet er det "9").
 
-    ![Lagre oppgaveindeksen fra Dataintegrator](media/CaptureTaskIndex.png)
+    ![Lagre oppgaveindeksen fra Dataintegrator.](media/CaptureTaskIndex.png)
 
 2. Spor kjøretiden for prosjektet.
 
-    ![Spore kjøretiden for prosjektet](media/CaptureTimeOfExecution.png)
+    ![Spore kjøretiden for prosjektet.](media/CaptureTimeOfExecution.png)
 
 3. Identifiser indeks -1 i Finance. I dette eksemplet samsvarer prosjektet med suffikset "8" og utførelsestiden for indeksen "0"-prosjektet med kjøretiden i trinn 2.
 
-    ![Identifisere indeks](media/IdentifyIndex.png)
+    ![Identifisere indeks.](media/IdentifyIndex.png)
 
 ## <a name="after-integrating-human-resources-and-finance-i-dont-see-my-human-resources-data-in-finance-what-do-i-do"></a>Etter å ha integrert Human Resources og Finance, ser jeg ikke Human Resources-dataene mine i Finance. Hva gjør jeg?
 
 Integreringen til Finance er en totrinns prosess. Først bekrefter du at Human Resources-dataene er oppdaterte og tilgjengelige i Dataverse. Dette er en nær sanntidssynkronisering og kan kontrolleres i Power Apps ved å se på dataene i datatabeller.
 
-![Data i Dataverse](media/DataInCDS.png)
+![Data i Dataverse.](media/DataInCDS.png)
 
 Hvis dataene ikke vises som forventet i Dataverse, må du kontrollere at enheten støttes i integreringen. Hvis du vil inkludere flere data i Dataverse, må en endring utføres på Microsoft-siden.
 
@@ -165,7 +165,7 @@ Kontroller også at du velger de riktige juridiske enhetene for det tilknyttede 
 
 Oppdater dataenhetene i Finance ved å gå til **Databehandling \> Rammeverkparametere \> Enhetsinnstillinger \> Oppdater enhetsliste**. Dette tar noen minutter å fullføre, og deretter skal du se tilordningene. Dette problemet skjer ved opprettelse av nye prosjekter.
 
-![Mangler felttilordning](media/MissingFieldMapping.png)
+![Mangler felttilordning.](media/MissingFieldMapping.png)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

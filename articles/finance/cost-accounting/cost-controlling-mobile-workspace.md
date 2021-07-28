@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: aevengir
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 569f932b256054f2d93a6d699ca5d5af3da08ca6
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: df727f3e66691409b98d2f74f78329b03e638959
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897942"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355209"
 ---
 # <a name="cost-controlling-mobile-workspace"></a>Mobilt arbeidsområde for kostnadskontroll
 
@@ -70,7 +70,7 @@ Det mobile arbeidsområdet **Kostnadskontroll** har følgende handlinger, visnin
 
     Når du velger en kobling, vises et kort for hvert kostnadselement. Følgende beløp vises på hvert kort: faktisk, budsjett, budsjettavvik, budsjettavviks-%, revidert budsjett, revidert budsjettavvik og revidert budsjettavviks-%.
     
-    [![Kort for et kostnadselement ](./media/Cost-controlling.png)](./media/Cost-controlling.png)
+    [![Kort for et kostnadselement.](./media/Cost-controlling.png)](./media/Cost-controlling.png)
 
 ## <a name="prerequisites"></a>Forutsetninger
 Forutsetningene varierer avhengig av hvilken versjon av Microsoft Dynamics 365 som er distribuert i organisasjonen.
@@ -125,7 +125,7 @@ Laste ned og installere Finance and Operations-mobilappen:
 3.  Første gang du logger deg på, blir du bedt om brukernavn og passord. Angi legitimasjon.
 4.  Når du har logget deg på, vises tilgjengelige arbeidsområder for firmaet. Legg merke til at hvis systemansvarlig senere publiserer et nytt arbeidsområde, må du oppdatere listen over mobile arbeidsområder.
 
-[![Hent for å oppdatere](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+[![Hent for å oppdatere.](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="view-the-performance-of-your-cost-center-by-using-the-cost-controlling-mobile-workspace"></a>Vise ytelsen til kostsenteret ved hjelp av det mobile arbeidsområdet for kostnadskontroll
 

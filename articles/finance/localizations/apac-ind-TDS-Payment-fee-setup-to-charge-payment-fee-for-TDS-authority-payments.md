@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: b52331bb1c7a1bc2c764008112f3df9cc0385995
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 9213827ea1ad342beb7ac2fe586606651cfdcfa1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023493"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358440"
 ---
 # <a name="set-up-payment-fees-for-tds-authority-payments"></a>Konfigurere betalingsgebyrer for TDS-myndighetsbetalinger
 
@@ -31,7 +31,7 @@ Dette emnet forklarer hvordan du konfigurerer betalingsgebyrer som belastes for 
 
 1. Gå til **Leverandører \> Betalingsoppsett \> Betalingsgebyr**.
 
-    [![Siden Betalingsgebyr](./media/apac-ind-TDS-28.png)](./media/apac-ind-TDS-28.png)
+    [![Siden Betalingsgebyr.](./media/apac-ind-TDS-28.png)](./media/apac-ind-TDS-28.png)
 
 2. Velg **Nytt** for å opprette et betalingsgebyr, og angi de nødvendige detaljene.
 3. Velg typen betalingsgebyr i **Gebyrtype**-feltet:
@@ -46,7 +46,7 @@ Dette emnet forklarer hvordan du konfigurerer betalingsgebyrer som belastes for 
 5. Angi de andre nødvendige opplysningene.
 6. Velg **Oppsett av betalingsgebyr** i handlingsruten for å åpne siden **Oppsett av betalingsgebyr**, der du kan konfigurere betalingsgebyrer for ulike kombinasjoner av banker, betalingsmåter, betalingsspesifikasjoner, valutaer og datointervaller.
 
-    [![Siden Oppsett av betalingsgebyr](./media/apac-ind-TDS-21.png)](./media/apac-ind-TDS-21.png)
+    [![Siden Oppsett av betalingsgebyr.](./media/apac-ind-TDS-21.png)](./media/apac-ind-TDS-21.png)
 
 7. Angi hvilke banker du vil definere betalingsgebyret for, i **Grupperinger**-feltet i **Oversikt**-fanen:
 
@@ -64,7 +64,7 @@ Dette emnet forklarer hvordan du konfigurerer betalingsgebyrer som belastes for 
 15. Angi valutakoden for gebyret i **Gebyrvaluta**-feltet.
 16. Velg **Generelt**-fanen for å vise eller endre detaljene for den valgte bankkontoen.
 
-    [![Fanen Generelt](./media/apac-ind-TDS-22.png)](./media/apac-ind-TDS-22.png)
+    [![Fanen Generelt.](./media/apac-ind-TDS-22.png)](./media/apac-ind-TDS-22.png)
 
 16. I **Minimum**-feltet angir du minimumsbeløpet for transaksjonen som skal aktivere gebyret.
 17. I **Maksimum**-feltet angir du maksimumsbeløpet for transaksjonen som skal aktivere gebyret.
@@ -74,7 +74,7 @@ Dette emnet forklarer hvordan du konfigurerer betalingsgebyrer som belastes for 
 21. I feltet **Vare, mva-gruppe** velger du mva-gruppen for vare som skal brukes til å beregne mva for vare for avgiftsbeløpet.
 22. Velg **Intervall**-fanen. 
 
-    [![Intervall-fanen](./media/apac-ind-TDS-23.png)](./media/apac-ind-TDS-23.png)
+    [![Intervall-fanen.](./media/apac-ind-TDS-23.png)](./media/apac-ind-TDS-23.png)
 
 23. Angi antall dager mellom posteringsdatoen (diskonteringsdato) for betalingen og forfallsdatoen for egenvekselen i **Dager**-feltet.
 24. I feltet **Prosent/beløp** velger du om spesifikasjonen er en prosent eller et angitt beløp.

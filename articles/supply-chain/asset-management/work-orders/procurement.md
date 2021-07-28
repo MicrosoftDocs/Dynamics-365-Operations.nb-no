@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 18556e35d63ea20b181c525b758788dc0f89f701
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f3e01dd85cbe8e2b2c9095431f3e0aead817a5a5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5842231"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352768"
 ---
 # <a name="procurement"></a>Innkjøp
 
@@ -36,7 +36,7 @@ Listesiden **Innkjøpsrekvisisjon for arbeidsordre** (**Aktivastyring** > **Fell
 
 Illustrasjonen nedenfor viser et eksempel på listesiden **Innkjøpsrekvisisjon for arbeidsordre**.
 
-![Figur 1](media/08-work-orders.png)
+![Figur 1.](media/08-work-orders.png)
 
 
 Listesiden **Innkjøp for arbeidsordre** (**Aktivastyring** > **Felles** > **Innkjøp** > **Innkjøp for arbeidsordre**) viser en liste over innkjøpsordrer som er knyttet til arbeidsordrer. Når du velger en arbeidsordrejobb på denne siden, kan du bruke knappene i gruppen **Vis** i fanen **Innkjøp for arbeidsordre** i handlingsrutefanen til å utføre forskjellige handlinger:
@@ -47,7 +47,7 @@ Listesiden **Innkjøp for arbeidsordre** (**Aktivastyring** > **Felles** > **Inn
 
 Illustrasjonen nedenfor viser et eksempel på listesiden **Innkjøp for arbeidsordre**.
 
-![Figur 2](media/09-work-orders.png)
+![Figur 2.](media/09-work-orders.png)
 
 
 På listesiden **Innkjøp for arbeidsordre** og listesiden **Innkjøpsrekvisisjon for arbeidsordre** vises et symbol som er knyttet til leveringsdatokontroll på høyre side av hver linje. Hvis symbolet er et utropstegn i en rød sirkel, betyr det at levering av den tilknyttede bestillingen eller innkjøpsrekvisisjonen kan bli forsinket.
@@ -93,7 +93,7 @@ Hvis du vil vise eller angi aktivitetsnummeret som er knyttet til en bestillings
 
 Illustrasjonen nedenfor viser et eksempel på siden **Bestilling**, med fokus på **Aktivitetsnummer**.
 
-![Figur 3](media/10-work-orders.png)
+![Figur 3.](media/10-work-orders.png)
 
 Hvis du vil vise eller angi aktivitetsnummeret som er knyttet til en linje for arbeidsordreinnkjøpsrekvisisjon, velger du innkjøpsrekvisisjonsposten på listesiden **Innkjøpsrekvisisjon for arbeidsordre**, og deretter velger du koblingen for innkjøpsrekvisisjonen i kolonnen **Innkjøpsrekvisisjon**. Du finner feltet **Aktivitetsnummer** i fanen **Prosjekt** på hurtigfanen **Linjedetaljer**.
 

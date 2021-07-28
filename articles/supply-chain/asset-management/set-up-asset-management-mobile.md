@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-22
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: bc170df2fc58ae6b42fbc8834caad0bb7cd16f69
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9c8f202a813520129867b57e660e8d995c20ed87
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837783"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351519"
 ---
 # <a name="set-up-the-asset-management-mobile-workspace"></a>Konfigurere det mobile arbeidsområdet Aktivastyring
 
@@ -47,7 +47,7 @@ Hvis du vil gjøre funksjoner for aktivastyring tilgjengelige i mobilappen Finan
 1. I Supply Chain Management velger du **Innstillinger**-knappen (tannhjulsymbolet i øvre høyre hjørne), og deretter velger du **Mobilapp** på menyen.
 1. Finn flisen **Aktivastyring** i dialogboksen **Administrer mobilapp**. Hvis den inneholder teksten «I metadata – ikke publisert», er arbeidsområdet ennå ikke publisert. Hvis den inneholder teksten «I metadata – publisert», er arbeidsområdet allerede publisert, og du kan hoppe over resten av denne fremgangsmåten.
 
-    ![Dialogboksen Administrer mobilapp](media/mobile-workspaces.png "Dialogboksen Administrer mobilapp")
+    ![Dialogboksen Administrer mobilapp.](media/mobile-workspaces.png "Dialogboksen Administrer mobilapp")
 
 1. Velg flisen **Aktivastyring**, og velg deretter **Publiser** på verktøylinjen. Etter noen sekunder skal du få en varsling om at arbeidsområdet er publisert. I tillegg skal teksten på flisen endres til «I metadata – publisert».
 
@@ -60,22 +60,22 @@ Hvis du vil gjøre funksjoner for aktivastyring tilgjengelige i mobilappen Finan
 
 1. Åpne appen Finance and Operations (Dynamics 365). Påloggingssiden skal vises. Angi URL-adressen din for Supply Chain Management i **Logg på**-feltet, eller velg en nylig URL-adresse i listen **Siste miljøer**, og trykk deretter på **Koble til**.
 
-    ![Påloggingsside](media/mobile-app-sign-in.png "Påloggingsside")
+    ![Påloggingsside.](media/mobile-app-sign-in.png "Påloggingsside")
 
 1. Hvis du blir bedt om å bekrefte tilkoblingen, merker du av for **Jeg forstår** og trykker deretter på **Koble til**.
 1. På siden **Velg en konto** bruker du Microsoft-kontoen til å logge deg på mobilprogrammet.
 
     Siden **Arbeidsområder** vises. Den viser alle de mobile arbeidsområdene som er publisert av Supply Chain Management-forekomsten din.
 
-    ![Liste over arbeidsområder](media/mobile-app-workspaces.png "Liste over arbeidsområder")
+    ![Liste over arbeidsområder.](media/mobile-app-workspaces.png "Liste over arbeidsområder")
 
 1. Hvis du må endre den juridiske enheten (firmaet), trykker du på Meny-knappen (noen ganger kalt hamburgeren eller hamburgerknappen) i øvre venstre hjørne, og deretter trykker du på **Endre firma**.
 
-    ![Endre den juridiske enheten](media/mobile-app-change-comp.png "Endre den juridiske enheten")
+    ![Endre den juridiske enheten.](media/mobile-app-change-comp.png "Endre den juridiske enheten")
 
 1. Velg arbeidsområdet du vil arbeide med, på **Arbeidsområder**-siden for å åpne det.
 
-    ![Mobilt arbeidsområde for aktivabehandling](media/mobile-app-asset-workspace.png "Mobilt arbeidsområde for aktivabehandling")
+    ![Mobilt arbeidsområde for aktivabehandling.](media/mobile-app-asset-workspace.png "Mobilt arbeidsområde for aktivabehandling")
 
 ## <a name="work-with-the-asset-management-mobile-workspace"></a>Arbeide med det mobile arbeidsområdet Aktivastyring
 

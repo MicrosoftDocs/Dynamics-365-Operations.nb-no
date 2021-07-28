@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 8229dc84040b1f3bd46d75c13795f0dc9b7e71f1
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 105fdc1b8e8c9e30c0d305894910194591707193
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897774"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356709"
 ---
 # <a name="one-voucher"></a>Ett bilag
 
@@ -33,18 +33,18 @@ Med den eksisterende funksjonaliteten for finansjournaler (generell journal, anl
 
 - Definer journalnavnet (**Økonomimodul** \> **Journaloppsett** \> **Journalnavn**) slik at feltet **Nytt bilag** er satt til **Bare ett bilagsnummer**. Hver linje du legger til i journalen, inkluderes nå i det samme bilaget. Derfor kan bilaget angis som et bilag med flere linjer, som en konto/motkonto på samme linje eller som en kombinasjon.
 
-    [![Enkeltlinje](./media/same-line.png)](./media/same-line.png)
+    [![Enkeltlinje.](./media/same-line.png)](./media/same-line.png)
 
     > [!IMPORTANT]
     > Definisjonen av Ett bilag dekker **ikke** tilfeller der journalnavnene er angitt som **Bare ett bilagsnummer**, men brukeren angir deretter et bilag som bare inkluderer finanskontotyper. I dette emnet betyr Ett bilag at det er ett enkelt bilag som inneholder mer enn én leverandør, kunde, bank, aktiva eller prosjekt.
 
 - Angi et bilag med flere linjer der det ikke er noen motkonto.
 
-    [![Bilag med flere linjer](./media/Multi-line.png)](./media/Multi-line.png)
+    [![Bilag med flere linjer.](./media/Multi-line.png)](./media/Multi-line.png)
 
 - Angi et bilag der både kontoen og motkontoen inneholder en underfinansjournalkontotype, for eksempel **Leverandør**/**Leverandør**, **Kunde**/**Kunde**, **Leverandør**/**Kunde** eller **Bank**/**Bank**.
 
-    [![Underfinansbilag](./media/subledger.png)](./media/subledger.png)
+    [![Underfinansbilag.](./media/subledger.png)](./media/subledger.png)
 
 ## <a name="issues-with-one-voucher"></a>Problemer med Ett bilag
 
@@ -52,11 +52,11 @@ Funksjonen Ett bilag forårsaker problemer under utligning, avgiftsberegning, tr
 
 La oss for eksempel si at du posterer følgende bilag med flere linjer.
 
-[![Eksempel på et bilag med flere linjer](./media/example.png)](./media/example.png)
+[![Eksempel på et bilag med flere linjer.](./media/example.png)](./media/example.png)
 
 Deretter genererer du rapporten **Utgifter etter leverandør** i arbeidsområdet **Økonomisk innsikt**. På denne rapporten er utgiftskontosaldoer gruppert etter leverandørgruppe og deretter leverandør. Når du genererer rapporten, kan ikke systemet fastslå hvilken leverandørgruppe/leverandører som påløp utgiften på 250,00. Det mangler transaksjonsdetaljer, og derfor forutsetter systemet at hele summen på 250,00 ble påløpt av den første leverandøren på bilaget. Utgiften 250,00, som er inkludert på saldoen for hovedkontoen 600120, vises derfor under den leverandørgruppen/leverandøren. Men det er svært sannsynlig at den første leverandøren på bilaget ikke var den riktige leverandøren. Rapporten er derfor sannsynligvis feil.
 
-[![Utgifter etter leverandørrapport](./media/expenses.png)](./media/expenses.png)
+[![Utgifter etter leverandørrapport.](./media/expenses.png)](./media/expenses.png)
 
 ## <a name="the-future-of-one-voucher"></a>Fremtiden for Ett bilag
 

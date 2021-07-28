@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 764444442aedcbf0934f1c636d7440bc0d277043
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: 279212d05615805dd74c702b2b98c344c87fdc78
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944539"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348685"
 ---
 # <a name="personalize-the-user-experience"></a>Tilpasse brukeropplevelsen
 
@@ -85,7 +85,7 @@ Noen av mest vanlige og viktigste endringene som gjøres på en side, er tilgjen
 
 De vanligste typene tilpasninger er i tillegg tilgjengelige ved å høyreklikke et element og deretter velge **Tilpass**. (Vær oppmerksom på at ikke alle elementene på siden kan tilpasses.) Når du bruker denne tilpasningsmetoden, vises elementets *egenskapsvindu*.
 
-![Tilpasse egenskapene for et element](./media/cli-element-property-window.png)
+![Tilpasse egenskapene for et element.](./media/cli-element-property-window.png)
 
 Du kan bruke egenskapsvinduet til å tilpasse et element på følgende måter:
 
@@ -107,7 +107,7 @@ Hvis du vil gjøre flere endringer på en side eller gjøre endringer som ikke e
 - Velg **Tilpass denne siden** i gruppen **Tilpass** i fanen **Alternativer** på handlingssiden til en hvilken som helst side.
 - Velg knappen **Innstillinger** (tannhjulsymbolet) i navigasjonsfeltet, og velg deretter **Tilpass**.
 
-[![Verktøylinje for tilpassing](./media/restyledPersonalizationToolbar.png)](./media/restyledPersonalizationToolbar.png)
+[![Verktøylinje for tilpassing.](./media/restyledPersonalizationToolbar.png)](./media/restyledPersonalizationToolbar.png)
 
 #### <a name="navigating-the-page"></a>Navigere på siden
 
@@ -147,7 +147,7 @@ For enkelte sider som inneholder lister, er tilpasningsfunksjonen **Legg til i a
 > [!NOTE]
 > Hvis funksjonen [Lagrede visninger](saved-views.md) er aktivert, er innholdet du dytter til et arbeidsområde, direkte koblet til en visning. Visningsspørringen brukes til å hente data i arbeidsområdet, og tilsvarende flis eller kobling i arbeidsområdet åpner siden til denne visningen, slik at visningensspørring og personlige tilpasninger brukes på den. Hvis visningen oppdateres, vil de tilhørende arbeidsområdeelementene bli justert til den nye visningsdefinisjonen.
 
-[![Legg til i arbeidsområde](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png)
+[![Legg til i arbeidsområde.](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png)
 
 - Hvis du vil legge til et arbeidsområde, sorterer eller filtrerer du først på siden, slik at den viser informasjonen slik du vil at den skal vises i arbeidsområdet. (Hvis funksjonen **Lagrede visninger** er aktivert, kan du ikke fortsette før du har lagret en visning som har disse betingelsene.) Velg deretter **Legg til i arbeidsområde**. Velg et arbeidsområde, og deretter, i **Presentasjon**-feltet, velger du **Liste**. Når du har valgt **Konfigurer**, vises en dialogboks der du kan velge hvilke kolonner som skal vises i listen i arbeidsområdet. Du kan også angi etiketten som brukes for listen i arbeidsområdet.
 - Hvis du vil legge til en flis i et arbeidsområde, må du først filtrere listen på siden slik at den viser dataene som skal oppsummeres, eller som du vil ha rask tilgang til. (Hvis funksjonen **Lagrede visninger** er aktivert, kan du ikke fortsette før du har lagret en visning som har disse betingelsene.) Velg deretter **Legg til i arbeidsområde**. Velg et arbeidsområde, og deretter, i **Presentasjon**-feltet, velger du **Flis**. Når du har valgt **Konfigurer**, vises en dialogboks der du kan angi etiketten som skal brukes for flisen i arbeidsområdet. Du kan også angi om ruten skal vise et tall. Når flisen er lagt til i arbeidsområdet, kan du velge den for å åpne den gjeldende siden fra arbeidsområdet. Deretter kan du vise den filtrerte listen som er knyttet til brikken.

@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: BrShoo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 0a494a36d1d8fa55521c416efd4262d860e1a708
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: fb010f5cb70668913b937b73ba05144f0b99549a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022842"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356836"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Domener i Dynamics 365 Commerce
 
@@ -38,7 +38,7 @@ Når du klargjør et e-handelsmiljø i [Microsoft Dynamics Lifecycle Services (L
 
 Illustrasjonen nedenfor viser LCS for e-handelsklargjøring med boksen **Støttede vertsnavn** uthevet. 
 
-![LCS for e-handelsklargjøring med boksen **Støttede vertsnavn** uthevet](./media/Domains_ProvisioningeCommerceScreen_publish.png)
+![LCS for e-handelsklargjøring med boksen **Støttede vertsnavn** uthevet.](./media/Domains_ProvisioningeCommerceScreen_publish.png)
 
 Du kan opprette en serviceforespørsel for å legge til flere domener i et miljø hvis klargjøring allerede har skjedd. Hvis du vil opprette en serviceforespørsel i LCS, kan du i miljøet gå til **Kundestøtte \> Kundestøtteproblemer** og velge **Send en hendelse**.
 
@@ -56,7 +56,7 @@ Når du konfigurerer et område i områdebyggeren for første gang, vises dialog
 
 Følgende illustrasjon viser dialogboksen **Konfigurer området** for et område kalt "standard" når du åpner området for første gang i områdebyggeren.
 
-![**Dialogboksen Konfigurer område**](./media/Domains_SetupyoursiteScreen.png)
+![**Dialogboksen Konfigurer område**.](./media/Domains_SetupyoursiteScreen.png)
 
 Ved hjelp av boksen **Velg et domene** kan du knytte et av de støttede vertsnavnene som er oppgitt for området i LCS, til området i områdebyggeren.
 
@@ -79,11 +79,11 @@ Når området er satt opp med en bane, vil alle URL-adresser som er tilknyttet s
 
 Den følgende illustrasjonen viser dialogboksen **Ny URL-adresse** i områdebyggeren med eksempel på uthevet URL-adressebane. 
 
-![Dialogboksen **Ny URL-adresse** i områdebyggeren](./media/Domains_PageSetup2a.png)
+![Dialogboksen **Ny URL-adresse** i områdebyggeren.](./media/Domains_PageSetup2a.png)
 
 Den følgende illustrasjonen viser siden **URL-adresser** i områdebyggeren med eksempel på uthevet URL-adresse i listen.
 
-![Kjør brukerflyt-alternativet policyflyt](./media/Domains_URLsInSiteBuilder2a.png)
+![Kjør brukerflyt-alternativet policyflyt.](./media/Domains_URLsInSiteBuilder2a.png)
 
 ## <a name="domains-in-site-builder"></a>Domener i områdebyggeren
 

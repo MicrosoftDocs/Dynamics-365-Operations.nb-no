@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d37efef723a7ca5e5f2333ff41cdf8351156e9bb
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 393239571de8a8d845107a8a8a151748c6b963c2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821615"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356003"
 ---
 # <a name="fifo-with-physical-value-and-marking"></a>FIFO med fysisk verdi og merking
 
@@ -51,7 +51,7 @@ I dette eksemplet er det ikke merket av for Ta med fysisk verdi for varemodellgr
 
 Det nye glidende gjennomsnittet for kostpris gjenspeiler gjennomsnittet for økonomisk oppdaterte transaksjoner. Illustrasjonene nedenfor viser virkningene av FIFO-lagermodellen for denne transaksjonsserien når alternativet **Ta med fysisk verdi** ikke brukes. 
 
-![FIFO uten ta med fysisk verdi](./media/fifowithoutincludephysicalvalue.gif) 
+![FIFO uten ta med fysisk verdi.](./media/fifowithoutincludephysicalvalue.gif) 
 
 **Nøkkel til diagrammet**
 
@@ -83,7 +83,7 @@ Hvis det er merket av i avmerkingsboksen **Ta med fysisk verdi** for en vare på
 
 Transaksjon 5b utlignes mot 1b. Det vi være en justering på negative USD 11,25 for denne avgangstransaksjonen. Det nye glidende gjennomsnittet av kostprisen gjenspeiler gjennomsnittet av de økonomisk og fysisk oppdaterte transaksjonene, USD 27,50. Illustrasjonen nedenfor viser virkningene av FIFO-lagermodellen for denne transaksjonsserien når alternativet **Ta med fysisk verdi** brukes. 
 
-![FIFO med ta med fysisk verdi](./media/fifowithincludephysicalvalue.gif) 
+![FIFO med ta med fysisk verdi.](./media/fifowithincludephysicalvalue.gif) 
 
 **Nøkkel til diagrammet**
 
@@ -115,7 +115,7 @@ Merking er en prosess som lar deg koble, eller merke, en avgangstransaksjon til 
 
 Det nye glidende gjennomsnittet av kostprisen gjenspeiler gjennomsnittet av de økonomisk og fysisk oppdaterte transaksjonene, USD 27,50. Illustrasjonen nedenfor viser virkningen FIFO-lagermodellen på denne transaksjonsserien når det brukes merking mellom avganger og tilganger. 
 
-![FIFO med merking](./media/fifowithmarking.gif) 
+![FIFO med merking.](./media/fifowithmarking.gif) 
 
 **Nøkkel til diagrammet**
 

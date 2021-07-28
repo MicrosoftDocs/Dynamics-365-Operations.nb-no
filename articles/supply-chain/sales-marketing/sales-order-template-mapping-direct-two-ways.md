@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: f0e26c63635179dc4c145f8d08e85fd110d9caac
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 63363678cb34af97781830d36d94fac1a7415394
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5817779"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360880"
 ---
 # <a name="synchronization-of-sales-orders-directly-between-sales-and-supply-chain-management"></a>Synkronisering av salgsordrer direkte mellom Sales og Supply Chain Management
 
@@ -35,7 +35,7 @@ Dette emnet drøfter maler og underliggende oppgaver som brukes til å kjøre sy
 
 Løsningen Kundeemne til kontanter bruker Dataintegrering-funksjonen til å synkronisere data på tvers av forekomster av Supply Chain Management og Sales. Kundeemne til kontanter-maler som er tilgjengelige med Dataintegrering-funksjonen,tillater flyt av data for kontoer, kontakter, produkter, salgstilbud, salgsordrer og salgsfakturaer mellom Supply Chain Management og Sales. Illustrasjonen nedenfor viser hvordan dataene blir synkronisert mellom Supply Chain Management og Sales.
 
-[![Dataflyt i Kundeemne til kontanter](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
+[![Dataflyt i Kundeemne til kontanter.](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
 ## <a name="templates-and-tasks"></a>Maler og oppgaver
 
@@ -189,19 +189,19 @@ Følgende illustrasjoner viser et eksempel på en tilordning av malen i Datainte
 
 ### <a name="sales-orders-supply-chain-management-to-sales---direct-orderheader"></a>Salgsordrer (Supply Chain Management til Sales) – direkte: OrderHeader
 
-[![Maltilordning i Dataintegrering](./media/sales-order-direct-template-mapping-data-integrator-1.png)](./media/sales-order-direct-template-mapping-data-integrator-1.png)
+[![Maltilordning i Dataintegrering.](./media/sales-order-direct-template-mapping-data-integrator-1.png)](./media/sales-order-direct-template-mapping-data-integrator-1.png)
 
 ### <a name="sales-orders-supply-chain-management-to-sales---direct-orderline"></a>Salgsordrer (Supply Chain Management til Sales) – direkte: OrderLine
 
-[![Maltilordning i Dataintegrering](./media/sales-order-direct-template-mapping-data-integrator-2.png)](./media/sales-order-direct-template-mapping-data-integrator-2.png)
+[![Maltilordning i Dataintegrering.](./media/sales-order-direct-template-mapping-data-integrator-2.png)](./media/sales-order-direct-template-mapping-data-integrator-2.png)
 
 ### <a name="sales-orders-sales-to-supply-chain-management---direct-orderheader"></a>Salgsordrer Sales til (Supply Chain Management) – direkte: OrderHeader
 
-[![Maltilordning i Dataintegrering](./media/sales-order-direct-template-mapping-data-integrator-3.png)](./media/sales-order-direct-template-mapping-data-integrator-3.png)
+[![Maltilordning i Dataintegrering.](./media/sales-order-direct-template-mapping-data-integrator-3.png)](./media/sales-order-direct-template-mapping-data-integrator-3.png)
 
 ### <a name="sales-orders-sales-to-supply-chain-management---direct-orderline"></a>Salgsordrer (Sales til Supply Chain Management) – direkte: OrderLine
 
-[![Maltilordning i Dataintegrering](./media/sales-order-direct-template-mapping-data-integrator-4.png)](./media/sales-order-direct-template-mapping-data-integrator-4.png)
+[![Maltilordning i Dataintegrering.](./media/sales-order-direct-template-mapping-data-integrator-4.png)](./media/sales-order-direct-template-mapping-data-integrator-4.png)
 
 ## <a name="related-topics"></a>Relaterte emner
 

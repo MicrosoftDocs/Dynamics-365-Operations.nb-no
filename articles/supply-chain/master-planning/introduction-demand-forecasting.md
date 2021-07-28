@@ -9,19 +9,21 @@ ms.technology: ''
 ms.search.form: ReqDemPlanCreateForecastDialog
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 72004
+ms.custom:
+- "72004"
+- intro-internal
 ms.assetid: 916707c9-1333-460f-a0fa-4e95f6fda2ad
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9e00c980183708c5b9e995fb2a26d45baf13ca14
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: cd029ae873ee604beb841568ce7f15b2e1575060
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5829744"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348787"
 ---
 # <a name="demand-forecasting-overview"></a>Oversikt over behovsprognose
 
@@ -61,7 +63,7 @@ Tre viktige temaer er implementert i behovsprognose:
 
 Diagrammet nedenfor viser grunnleggende flyt i behovsprognose.
 
-[![diagram for innføring i behovsprognose](./media/demand-forecasting-introduction.png)](./media/demand-forecasting-introduction.png)
+[![diagram for innføring i behovsprognose.](./media/demand-forecasting-introduction.png)](./media/demand-forecasting-introduction.png)
 
 Generering av behovsprognose starter i Supply Chain Management. Historiske transaksjonsdata fra Supply Chain Management-transaksjonsdatabasen samles inn og fyller ut en oppsamlingstabell. Denne oppsamlingstabellen mates senere til en Machine Learning-tjeneste. Ved å utføre minimal tilpassing kan du koble ulike datakilder til oppsamlingstabellen. Datakildene kan omfatte Microsoft Excel-filer, kommadelte (CSV)-filer og data fra Microsoft Dynamics AX 2009 og Microsoft Dynamics AX 2012. Derfor kan du generere behovsprognoser som vurderer historiske data som er spredt mellom flere systemer. Hoveddata, for eksempel elementnavn og enheter, må imidlertid være de samme på tvers av ulike datakilder.
 

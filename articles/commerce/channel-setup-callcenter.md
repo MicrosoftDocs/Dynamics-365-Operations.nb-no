@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: e89c63c90aa8d46fd23900897a54165e14fb635d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 34fa845c72f23485a2573d6bb4cf38b66c7adb7c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800669"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351206"
 ---
 # <a name="set-up-a-call-center-channel"></a>Konfigurere en telefonsenterkanal
 
@@ -54,11 +54,11 @@ Hvis du vil opprette og konfigurere en ny telefonsenterkanal, gjør du følgende
 
 Bildet nedenfor viser opprettelsen av en ny telefonsenterkanal.
 
-![Ny telefonsenterkanal](media/channel-setup-callcenter-1.png)
+![Ny telefonsenterkanal.](media/channel-setup-callcenter-1.png)
 
 Bildet nedenfor viser et eksempel på en telefonsenterkanal.
 
-![Eksempel på telefonsenterkanal](media/channel-setup-callcenter-2.png)
+![Eksempel på telefonsenterkanal.](media/channel-setup-callcenter-2.png)
 
 ## <a name="additional-channel-setup"></a>Ekstra kanaloppsett
 
@@ -66,7 +66,7 @@ Andre oppgaver som kreves for oppsett av telefonsenterkanal, omfatter definere b
 
 Bildet nedenfor viser oppsettsalternativene **Leveringsmåter** og **Betalingsmåter** i kategorien **Oppsett**.
 
-![Ekstra konfigurasjonshandlinger for telefonsenterkanal](media/channel-setup-callcenter-3.png)
+![Ekstra konfigurasjonshandlinger for telefonsenterkanal.](media/channel-setup-callcenter-3.png)
 
 ### <a name="set-up-payment-methods"></a>Definere betalingsmåter
 
@@ -81,7 +81,7 @@ Hvis du vil definere betalingsmåter, følger du disse trinnene for hver betalin
 
 Bildet nedenfor viser et eksempel på en kontantbetalingsmåte.
 
-![Eksempel på betalingsmåter](media/channel-setup-callcenter-payments.png)
+![Eksempel på betalingsmåter.](media/channel-setup-callcenter-payments.png)
 
 ### <a name="set-up-modes-of-delivery"></a>Definer leveringsmåter
 
@@ -97,7 +97,7 @@ Følg denne fremgangsmåten for å endre eller legge til en leveringsmåte som s
 
 Bildet nedenfor viser et eksempel på en leveringsmåte.
 
-![Definer leveringsmåter](media/channel-setup-retail-7.png)
+![Definer leveringsmåter.](media/channel-setup-retail-7.png)
 
 ### <a name="set-up-channel-users"></a>Definere kanalbrukere
 

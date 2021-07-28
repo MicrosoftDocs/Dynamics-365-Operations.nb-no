@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2021-01-01
 ms.dyn365.ops.version: AX 10.0.15
-ms.openlocfilehash: 637962cf63bfd8c2330726f33545f939ec91d58d
-ms.sourcegitcommit: dbffde1944b9d037124415c28053036c9ef1ecb7
+ms.openlocfilehash: cf82abbe5493eac9665323738441fa016205e9ef
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "6295824"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355013"
 ---
 # <a name="regulatory-configuration-service-rcs---delete-an-rcs-environment"></a>Regulatory Configuration Service (RCS) – Slette et RCS-miljø
 
@@ -38,11 +38,11 @@ Før du kan fullføre trinnene i dette emnet må følgende forutsetninger være 
 1. Åpne RCS, og velg arbeidsområdeflisen **Elektronisk rapportering**.
 2. Velg **Slett RCS-miljø** i delen **Relaterte koblinger**.
 
-    ![Slette RCS-miljø-kobling i delen Relaterte koblinger](media/01_RCS-Delete-Environ-Related-Link.PNG)
+    ![Slette RCS-miljø-kobling i delen Relaterte koblinger.](media/01_RCS-Delete-Environ-Related-Link.PNG)
 
 3. I dialogboksen som vises, kan du se gjennom meldingene om omfanget av sletting av miljøet.
 
-    ![Meldinger i dialogboksen Slett RCS-miljø](media/01_RCS-Delete-Environ-Msg_noGUID.PNG)
+    ![Meldinger i dialogboksen Slett RCS-miljø.](media/01_RCS-Delete-Environ-Msg_noGUID.PNG)
 
     > [!IMPORTANT]
     > Sletting av et RCS-miljø kan ikke tilbakeføres.

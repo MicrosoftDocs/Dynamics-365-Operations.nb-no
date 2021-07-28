@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: f35adab3075ba810964a41899ba95ae40c115e83
-ms.sourcegitcommit: 588f8343aaa654309d2ff735fd437dba6acd9d46
+ms.openlocfilehash: 0ebb34f58a4bfbe8bda935d7b40e9d89c3dacd03
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6115207"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353994"
 ---
 # <a name="invoke-process-automation-flows-to-create-quality-orders"></a>Starte prosessautomeringsflyter for å opprette kvalitetsordrer
 
@@ -30,7 +30,7 @@ Du kan laste ned malen for automatisk løsning [her](https://aka.ms/D365SCMQuali
 
 Hvis du vil ha en oversikt over denne funksjonen og egenskapene, kan du se følgende video: [Bruke RPA til å opprette kvalitetsordrer i Dynamics 365 Supply Chain Management](https://www.youtube.com/watch?v=LFbzJ6-H89w)
 
-![Automatiseringsalternativer med RPA](media/rpa-automation-options.png "Automatiseringsalternativer med RPA")
+![Automatiseringsalternativer med RPA.](media/rpa-automation-options.png "Automatiseringsalternativer med RPA")
 
 Power Automate-løsningsmalen omfatter en skyautomatiseringsflyt og en automatisk flyt på skrivebord som automatiserer opprettelsen av kvalitetsordrer i Supply Chain Management.
 
@@ -38,7 +38,7 @@ Automatiseringen kan startes som svar på mange hendelser og signaler, inkludert
 
 Løsningsparametere er inkludert for å konfigurere automatisering for et bestemt brukssted i et produksjonsanlegg.
 
-![Opprett kvalitetsordre](media/rpa-create-quality-roder.png "Opprett kvalitetsordre")
+![Opprett kvalitetsordre.](media/rpa-create-quality-roder.png "Opprett kvalitetsordre")
 
 Hvis du vil ha en trinnvis veiledning om hvordan du laster ned, installerer og bruker eksempelløsningen til å automatisere oppretting av kvalitetsordrer, kan du se [Automatisere oppretting av kvalitetsordrer på Dynamics 365 Supply Chain Management med automatisering med robotteknologi ved hjelp av Power Automate Desktop](/power-automate/desktop-flows/dynamics365-scm-rpa).
 

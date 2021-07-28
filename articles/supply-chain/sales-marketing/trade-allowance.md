@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 51b734e6a94ffdfabb218a19986f1bec65b839e7
-ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
+ms.openlocfilehash: 35ceb14d4d048959ae6a1740791bd4d57f33b34c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "6102812"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359539"
 ---
 # <a name="trade-allowance-management"></a>Handelsrabattbehandling
 
@@ -59,7 +59,7 @@ En handelsrabattavtale er et belønningsprogram der betal for ytelse monetære b
 
 Midler som er tildelt til handelsrabattavtaler, registreres på **Midler**-siden. Du åpner **Midler**-siden ved å velge **Salg og markedsføring** \> **Handelsrabatter** \> **Midler** \> **Midler**.
 
-![Midler-siden](./media/trade-allowance-management-funds-page.png "Midler-siden")
+![Midler-siden.](./media/trade-allowance-management-funds-page.png "Midler-siden")
 
 På **Midler**-siden kan du vise detaljene for kampanjemidler.
 
@@ -75,7 +75,7 @@ Når middeldefinisjonen er på plass, er neste trinn i planleggingen av kampanje
 
 Handelsrabattavtaler registreres på siden **Handelsrabattavtaler**. Åpne siden **Handelsrabattavtaler** ved å velge **Salg og markedsføring** \> **Handelsrabatter** \> **Handelsrabattavtaler**.
 
-![Siden Handelsrabattavtaler](./media/trade-allowance-management-agreements-page.png "Siden Handelsrabattavtaler")
+![Siden Handelsrabattavtaler.](./media/trade-allowance-management-agreements-page.png "Siden Handelsrabattavtaler")
 
 #### <a name="header"></a>Hode
 
@@ -103,7 +103,7 @@ fanen **Varehandelshendelser** viser hvilke typer hendelser som er dekket av en 
 
 Når du velger varehandelshendelsen og deretter velger **Beløp**-fanen, blir detaljer for hendelsen funnet.
 
-![Linjer i handelsrabattavtale](./media/trade-allowance-management-agreements-lines.png "Linjer i handelsrabattavtale")
+![Linjer i handelsrabattavtale.](./media/trade-allowance-management-agreements-lines.png "Linjer i handelsrabattavtale")
 
 I delen **Handelsrabattlinjer** angir du antalls- eller mengdeområdene som kunden må oppnå, for definisjoner for å få belønninger.
 

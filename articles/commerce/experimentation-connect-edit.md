@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 4c9c9463162f21cdaf40f1c4ed6d5ae51e97cb88
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 4dbfa96e6393bae6ad4ffa642b39a5d04c596c29
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799090"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349382"
 ---
 # <a name="connect-an-experiment-and-edit-variations"></a>Koble til et eksperiment og redigere variasjoner
 
@@ -28,7 +28,7 @@ Dette emnet beskriver hvordan du kobler til eksperimentet i Commerce og gjør en
 
 Diagrammet nedenfor viser alle trinnene for å konfigurere og kjøre et eksperiment på et nettsted for e-handel i Dynamics 365 Commerce. Flere trinn er beskrevet i separate emner.
 
-[ ![Brukerreise for eksperimentering – koble til og redigere](./media/experimentation_connect_edit.svg) ](./media/experimentation_connect_edit.svg#lightbox)
+[ ![Brukerreise for eksperimentering – koble til og redigere.](./media/experimentation_connect_edit.svg) ](./media/experimentation_connect_edit.svg#lightbox)
 
 Når du har [konfigurert eksperimentet](experimentation-setup.md) i en tredjepartstjeneste, kobler du eksperimentet til i Dynamics 365 Commerce og redigerer eksperimentvariasjonene.
 

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 24c322712edf1277eabfdd708f528d89bcf43640
-ms.sourcegitcommit: 4cbd83e21a78459e4711a2dedba0f5a7acc3c841
+ms.openlocfilehash: ffb1cedc08b033532580fda1349ade32b7dc1eb1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "6261752"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354815"
 ---
 # <a name="cloud-and-edge-scale-units-for-manufacturing-and-warehouse-management-workloads"></a>Skalaenheter for sky og kant for arbeidsbelastninger for produksjons- og lagerstyring
 
@@ -41,7 +41,7 @@ Funksjoner for arbeidsbelastninger lanseres kontinuerlig gjennom inkrementelle f
 
 Skalerings enheter utvider Supply Chain Management-sentermiljøet ved å legge til dedikert behandlingskapasitet. Skalaenheter kan kjøres i skyen. De kan også kjøre på kanten på det lokale anlegget.
 
-:::image type="content" source="./media/cloud_edge-HeroDiagram.png" alt-text="Dynamics 365 med skalaenheter":::
+:::image type="content" source="./media/cloud_edge-HeroDiagram.png" alt-text="Dynamics 365 med skalaenheter.":::
 
 Skalaenheter gir fleksibilitet, pålitelighet og skala for de tilordnede arbeidsmengdene. Kantskalaenheter kan kobles midlertidig fra nettskymiljøet, og arbeiderne kan fortsette å jobbe i de tilordnede arbeidsmengdene på kanten.
 
@@ -157,7 +157,7 @@ Skalaenheter tilbys i flere lagerenheter (SKU-er) og prissettingsalternativer. D
 
 SKU-en på grunnivå kalles *Grunnleggende*, og den mer utførende SKU-en kalles *Standard*. Hver SKU er forhåndslastet med et bestemt antall månedlige transaksjoner. Du kan imidlertid øke det månedlige transaksjonsbudsjettet ved å legge til overbetalingstillegg for hver SKU.
 
-:::image type="content" source="media/SKUs-highlevel.png" alt-text="Tillegg for skyskalaenheter":::
+:::image type="content" source="media/SKUs-highlevel.png" alt-text="Tillegg for skyskalaenheter.":::
 
 > [!TIP]
 > Samarbeid med partneren din og Microsoft for å forstå den månedlige transaksjonsstørrelsen du trenger, for å identifisere størrelsen på transaksjonen som passer best til dine behov.
@@ -181,11 +181,11 @@ Hvis leieren du leter etter, ikke finnes i listen, kan du gå til [LCS](https://
 
 Listen viser pålastingsstatusen for hver leier.
 
-:::image type="content" source="media/cloud_edge-EnableHybrid1.png" alt-text="Liste over leiere på fanen Dynamics 365-leiere":::
+:::image type="content" source="media/cloud_edge-EnableHybrid1.png" alt-text="Liste over leiere på fanen Dynamics 365-leiere.":::
 
 Velg **Klikk her for å komme i gang** for å be om pålasting for LCS-leieren. Du må godta vilkårene. Du må også oppgi en e-postadresse for firma der Microsoft kan sende kommunikasjon som er knyttet til pålastingsprosessen.
 
-:::image type="content" source="media/cloud_edge-EnableHybrid2.png" alt-text="Registreringsinnsending for en leier":::
+:::image type="content" source="media/cloud_edge-EnableHybrid2.png" alt-text="Registreringsinnsending for en leier.":::
 
 Microsoft vil se gjennom forespørselen din og gi deg beskjed om de neste trinnene ved å sende en e-post til adressen du har oppgitt i registreringsskjemaet. Microsoft vil samarbeide nøye med deg for å aktivere skalaenheter i hybridtopologien for forretningsscenariet.
 
@@ -195,13 +195,13 @@ Når pålastingen er fullført, kan du bruke porten til å konfigurere skalaenhe
 
 Gå til [Scale Unit Manager-portalen](https://aka.ms/SCMSUM), og logg på ved hjelp av leierkontoen. På **Konfigurer skalaenheter** kan du legge til et sentermiljø hvis det ikke allerede er oppført. Du kan deretter velge senteret du vil konfigurere med skalaenheter og arbeidsbelastninger.
 
-:::image type="content" source="media/cloud_edge-Manage.png" alt-text="Administrering av skalaenhet og arbeidsbelastning":::
+:::image type="content" source="media/cloud_edge-Manage.png" alt-text="Administrering av skalaenhet og arbeidsbelastning.":::
 
 Hvis du vil legge til en eller flere skalaenheter som er tilgjengelige i abonnementene, velger du **Legg til skalaenheter**.
 
 I **Definerte arbeidsbelastninger**-fanen bruker du **Opprett arbeidsbelastning**-knappen til å legge til en arbeidsbelastning for lagerstyring i en av skalaenhetene. For hver arbeidsbelastning må du angi konteksten for prosessene som skal eies av arbeidsbelastningen. Når det gjelder arbeidsbelastninger for lagerstyring, er konteksten et bestemt lager på et bestemt område og en bestemt juridisk enhet.
 
-:::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Oppretting av arbeidsbelastning":::
+:::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Oppretting av arbeidsbelastning.":::
 
 > [!TIP]
 > Over tid vil inkrementelle forbedringer legges til i Scale Unit Manager-opplevelsen for å gjøre det enklere å styre livssyklusadministrasjonen. De spesifikke egenskapene for den gjeldende versjonen er dokumentert i en håndbok for pålasting som er tilgjengelig for kunder som er i ferd med å ta i bruk den distribuerte, hybride topologien for Supply Chain Management. <!-- KFM: Add a link to the handbook when it is published -->

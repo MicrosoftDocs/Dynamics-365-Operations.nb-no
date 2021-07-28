@@ -8,18 +8,18 @@ ms.prod: ''
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f380f3f56727d927d7cd328fef3c9d999afa2873
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f9fffb5b4f51c86076d62ac2a44bdc779490c7bd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794355"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351279"
 ---
 # <a name="default-category-landing-page-and-search-results-page-overview"></a>Oversikt over standard kategorimålside og søkeresultatside
 
@@ -31,7 +31,7 @@ Dette emnet gir en oversik over standard kategorimålside og søkeresultatside i
 
 Standard kategorimålside er siden som brukere av webområder vanligvis kommer til når de velger en kategori i navigasjonshierarkiet. Kategorisiden lar deg bla gjennom, og du kan også sortere og presisere de kategoriserte produktene.
 
-![Standard kategorimålside](./media/SimpleCategoryLandingDressCategory.png)
+![Standard kategorimålside.](./media/SimpleCategoryLandingDressCategory.png)
 
 Øverst på siden er det en topptekst som viser alle produktkategoriene og andre sider som varehandelslederen har kategorisert. Konfigurasjon utføres som en del av konfigurasjonen av kanalnavigeringshierarkiet. På bunnen av siden er det en bunntekst som inneholder hurtigkoblinger til ulike emner som en kunde kan være interessert i.
 
@@ -55,7 +55,7 @@ Følgende komponenter er grunnleggende for en kategori:
 
 Hvis du vil at en kategorimålside skal ha en mer skreddersydd opplevelse for en bestemt kategori, kan du "supplere" kategorimålsiden for denne kategorien. Du kan for eksempel legge til en markedsføringsvideo og enkelte kategoribeskrivelser for å få en kundes oppmerksomhet. Hvis du vil ha mer informasjon, se [Supplere en kategorimålside](enrich-category-page.md).
 
-![Supplere kategorimålside](./media/CategoryLandingPages.png)
+![Supplere kategorimålside.](./media/CategoryLandingPages.png)
 
 ## <a name="auto-suggest-and-search-results-pages"></a>Automatisk foreslå og søke på resultatsider
 
@@ -69,11 +69,11 @@ Her er noen av forslagstypene som kan vises:
 - **Produkter** gir deg direkte koblinger til siden for produktdetaljer.
 - **Søkeforslag for kategoriområde** viser ulike kategorier og lar brukere søke etter nøkkelordet i en bestemt kategori.
 
-![Dyptgående automatiske forslag](./media/ImmersiveAutoSuggestUX.png)
+![Dyptgående automatiske forslag.](./media/ImmersiveAutoSuggestUX.png)
 
 Når brukere velger et av nøkkelordene eller kategorisøkforslag for område, eller når det ikke er forslag til søkeordet de legger inn, omdirigeres de til en søkeresultatside. Brukerne kan deretter bla gjennom, sortere og begrense listen over søkeresultater for å finne ønsket element.
 
-![Søkemålside](./media/SearchLanding.png)
+![Søkemålside.](./media/SearchLanding.png)
 
 Følgende komponenter er grunnleggende for en søkeresultatside:
 
@@ -94,7 +94,7 @@ Følgende komponenter er grunnleggende for en søkeresultatside:
 
 >[!NOTE]
 >Disse skydrevne søkefunksjonene er tilgjengelige fra versjon 10.0.8. Kontroller at det under **Handelsparametere > Konfigurasjonsparametere** finnes en oppføring for ProductSearch. UseAzureSearch satt til true. 
-![Konfigurasjonsparametere for skydrevet søk](./media/CloudPoweredSearchConfigurationParameters.png)
+![Konfigurasjonsparametere for skydrevet søk.](./media/CloudPoweredSearchConfigurationParameters.png)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: d06bd5baeb6b8b6995fe1ae47f14bab458b8ecc2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: beacff21c6468e9c4b387a654e95f25572c0ede9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5831992"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348374"
 ---
 # <a name="visibility-into-material-exceptions"></a>Oversikt over materialeunntak
 
@@ -37,7 +37,7 @@ En ikke frigitt stykklistelinje eller formellinje krever tilsyn hvis råvaredato
 
 Det blå feltet representerer en produksjonsjobb som er planlagt for en ressurs, i illustrasjonen nedenfor. Jobben er planlagt å starte 1. mai 2017 (01.05.2017). Denne datoen er råvaredatoen. Materialene som er tilordnet jobben på stykkliste- og formellinjene, må altså være klar på denne datoen. Den andre datoen i figuren, 6. mai 2017 (06.05.2017) representerer arbeidsområdedatoen. I dette eksemplet er råvaredatoen før arbeidsområdedatoen. Derfor har datoen da forbruket av råvarer skulle starte, passert, og stykkliste- og formellinjene oppfyller kriteriene for å kreve oppmerksomhet.
 
-![Eksempel på en produksjonsjobb der råvaredatoen er før arbeidsområdedatoen](./media/improved-visibility.png)
+![Eksempel på en produksjonsjobb der råvaredatoen er før arbeidsområdedatoen.](./media/improved-visibility.png)
 
 ## <a name="unreleased-material-lines-needing-attention"></a>Ikke-frigitte materiallinjer som krever oppmerksomhet
 

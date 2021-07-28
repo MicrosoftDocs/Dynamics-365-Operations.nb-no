@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a1a25e3d5bc1cc5c1c7509186451fdfef50dd6cf
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c8a22a356053789f97fd4f3f9437d57978a67943
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792345"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352138"
 ---
 # <a name="add-product-recommendations-on-pos"></a>Legge til produktanbefalinger i POS
 
@@ -39,7 +39,7 @@ Produktanbefalingene er aktivert for følgende POS-scenarier. De er tilgjengelig
 
     - Hvis en butikkansatt besøker en **Produktdetaljer**-side når vedkommende ser på tidligere transaksjoner på tvers av forskjellige kanaler, foreslår anbefalingstjenesten flere varer som sannsynligvis kjøpes sammen.
 
-    [![Anbefalinger på siden Produktdetaljer](./media/proddetails.png)](./media/proddetails.png)
+    [![Anbefalinger på siden Produktdetaljer.](./media/proddetails.png)](./media/proddetails.png)
 
 2. På **Transaksjon**-siden:
 
@@ -48,7 +48,7 @@ Produktanbefalingene er aktivert for følgende POS-scenarier. De er tilgjengelig
     > [!NOTE]
     > For å vise anbefalinger på **Transaksjon**-siden må forhandler oppdatere skjermvisningen i Dynamics 365 Commerce. **Anbefalinger**-kontrollen må slippes på **Transaksjon**-siden.
 
-    [![Anbefalinger på siden Transaksjoner](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
+    [![Anbefalinger på siden Transaksjoner.](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
 
 ## <a name="configure-commerce-to-enable-pos-recommendations"></a>Konfigurere Commerce for å aktivere anbefalinger for salgssted
 

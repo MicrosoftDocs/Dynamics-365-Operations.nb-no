@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: f6e8fb2baf85be0eaecfffcc7ec6cbb457c3bb04
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: eec18dbffe33bc6366b4282d05189b31620616d6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021896"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351255"
 ---
 # <a name="content-delivery-network-implementation-options"></a>Implementeringsalternativer for innholdsleveringsnettverk
 
@@ -40,7 +40,7 @@ Alle de tre CDN-implementeringsalternativene leverer bare dynamisk HTML-innhold 
 
 Illustrasjonen nedenfor viser en oversikt over Commerce-arkitekturen.
 
-![Oversikt over Commerce-arkitekturen](media/Commerce_CDN-Option_ComparisonModels.png)
+![Oversikt over Commerce-arkitekturen.](media/Commerce_CDN-Option_ComparisonModels.png)
 
 Hvis du vil ha mer informasjon om hvordan du definerer en forekomst av Azure Front Door for Commerce-området, kan du se [Legg til CDN-støtte](add-cdn-support.md).
 
@@ -54,7 +54,7 @@ I tabellen nedenfor finner du en oversikt over fordeler og ulemper ved å bruke 
 
 Illustrasjonen nedenfor viser arkitekturen i forekomsten av den Commerce-formidlede forekomsten for Azure Front Door.
 
-![Commerce-formidlet forekomst av Azure Front Door](media/Commerce_CDN-Option_CommerceFrontDoor.png)
+![Commerce-formidlet forekomst av Azure Front Door.](media/Commerce_CDN-Option_CommerceFrontDoor.png)
 
 ## <a name="use-a-customer-owned-azure-front-door-instance"></a>Bruke en kundeeid forekomst av Azure Front Door
 
@@ -66,7 +66,7 @@ I tabellen nedenfor finner du en oversikt over fordeler og ulemper ved å bruke 
 
 Illustrasjonen nedenfor viser en Commerce-infrastruktur som omfatter en kundeeid forekomst av Azure Front Door.
 
-![Commerce-infrastruktur som omfatter en kundeeid forekomst av Azure Front Door](media/Commerce_CDN-Option_CustomerOwnedAzureFrontDoor.png)
+![Commerce-infrastruktur som omfatter en kundeeid forekomst av Azure Front Door.](media/Commerce_CDN-Option_CustomerOwnedAzureFrontDoor.png)
 
 ## <a name="use-an-external-cdn-service"></a>Bruke en ekstern CDN-tjeneste
 
@@ -78,7 +78,7 @@ I tabellen nedenfor finner du en oversikt over fordeler og ulemper ved bruk av e
 
 Illustrasjonen nedenfor viser en Commerce-infrastruktur som omfatter en ekstern CDN-tjeneste.
 
-![Commerce-infrastruktur som omfatter en ekstern CDN-tjeneste](media/Commerce_CDN-Option_ExternalFrontDoor.png)
+![Commerce-infrastruktur som omfatter en ekstern CDN-tjeneste.](media/Commerce_CDN-Option_ExternalFrontDoor.png)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

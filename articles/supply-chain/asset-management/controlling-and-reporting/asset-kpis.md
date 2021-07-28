@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 90759931fcbdb1e5acbd62f8a40e5b37b918f31a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b2122cb123e041d2194fa1ef5fd8024ec4c1a2a0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813875"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361096"
 ---
 # <a name="asset-kpis"></a>KPI-er for aktivum
 
@@ -82,7 +82,7 @@ I tabellen nedenfor finner du en beskrivelse av feltene på siden **KPI-er for a
 
 Figuren nedenfor viser et skjermbilde av en KPI-beregning for fire aktiva.
 
-![Skjermbilde av en KPI-beregning for fire aktiva](media/11-controlling-and-reporting.png)
+![Skjermbilde av en KPI-beregning for fire aktiva.](media/11-controlling-and-reporting.png)
 
 - Du kan velge flere aktiva i **Alle aktiva** og klikke knappen **KPI-er for aktiva** i fanen **Generelt**. Deretter klikker du **OK** i dialogboksen **Beregn KPI-er for aktivum** for å beregne KPIer for de valgte aktivaene.  
 - Resultater fra en KPI-beregning kan omfatte [registreringer av nedetid ved vedlikehold](../work-orders/maintenance-downtime.md), avhengig av oppsettet og bruken av årsakskoder for nedetid ved vedlikehold. 

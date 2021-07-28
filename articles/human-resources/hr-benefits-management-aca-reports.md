@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-12-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 1417232baeaf03721bd0b25cc3f9fd5f750c65d5
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: b8a83982ad36abfe9032cae50fe4f09339985dc8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6052271"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353668"
 ---
 # <a name="generate-aca-reports-in-benefits-management"></a>Generere ACA-rapporter i fordelsbehandling
 
@@ -48,11 +48,11 @@ Affordable Care-dekningsgrupper hjelper deg med å administrere denne informasjo
 
 1. I arbeidsområdet **Fordelsbehandling** velger du **Affordable Care-dekningsgruppe**.
 
-    ![Velge Affordable Care-dekningsgruppe](./media/hr-benefits-management-aca-coverage-group.png)
+    ![Velge Affordable Care-dekningsgruppe.](./media/hr-benefits-management-aca-coverage-group.png)
 
 2. Velg **Ny** for å opprette en ny Affordable Care-dekningsgruppe eller **Rediger** for å endre en eksisterende gruppe.
 
-    ![Velge Ny eller Rediger](./media/hr-benefits-management-aca-new.png)
+    ![Velge Ny eller Rediger.](./media/hr-benefits-management-aca-new.png)
 
 3. Angi følgende felt.
 
@@ -67,7 +67,7 @@ Affordable Care-dekningsgrupper hjelper deg med å administrere denne informasjo
     | Gruppe gyldig fra | Den første datoen denne posten er gyldig. |
     | Gruppe gyldig til og med | Den siste datoen denne posten er gyldig. Hvis det ikke er noen utløpsdato, angir du **Aldri**. |
 
-    ![Opprette en dekningsgruppe](./media/hr-benefits-management-aca-new-group.png)
+    ![Opprette en dekningsgruppe.](./media/hr-benefits-management-aca-new-group.png)
 
 4. Velg **Lagre**.
 
@@ -77,11 +77,11 @@ Affordable Care-dekningsgrupper hjelper deg med å administrere denne informasjo
 2. Velg gruppen du vil tilordne ansatte til.
 3. Velg **Massetilordning**.
 
-    ![Velge Massetilordning](./media/hr-benefits-management-aca-mass-assignment.png)
+    ![Velge Massetilordning.](./media/hr-benefits-management-aca-mass-assignment.png)
 
 4. Velg ansatte i listen, og velg **Tilordne**.
 
-    ![Tilordne valgte ansatte til en gruppe](./media/hr-benefits-management-aca-assign-coverage-group.png)
+    ![Tilordne valgte ansatte til en gruppe.](./media/hr-benefits-management-aca-assign-coverage-group.png)
 
 ## <a name="maintain-multiple-versions-of-coverage-options"></a>Vedlikeholde flere versjoner av dekningalternativer
 
@@ -111,12 +111,12 @@ Følg denne fremgangsmåten for å angi unntak for verdier til en Affordable Car
 2. Velg ansatt i listen.
 3. I kategorien **Ansettelse** i delen **Mer informasjon** velger du **Affordable Care-dekning**.
 
-    ![Endre alternativer for én ansatt](./media/hr-benefits-management-aca-change-single-employee.png)
+    ![Endre alternativer for én ansatt.](./media/hr-benefits-management-aca-change-single-employee.png)
 
 4. Velg **Rediger**.
 5. For hver måned som krever endringer, merker du av for **Overstyr standard**, og deretter endrer du de andre verdiene etter behov.
 
-    ![Overstyre standardverdier](./media/hr-benefits-management-aca-override-default.png)
+    ![Overstyre standardverdier.](./media/hr-benefits-management-aca-override-default.png)
 
 6. Velg **Lagre**.
 
@@ -131,7 +131,7 @@ Følg denne fremgangsmåten for å angi om en fordelsplan må rapporteres.
 3. Velg **Rediger**.
 4. Sett alternativet **Rapportert under Affordable Care Act** til **Ja**.
 
-    ![Rapportere helsedekning](./media/hr-benefits-management-aca-report-coverage.png)
+    ![Rapportere helsedekning.](./media/hr-benefits-management-aca-report-coverage.png)
 
 5. Velg **Lagre**.
 
@@ -147,23 +147,23 @@ Du kan også generere ACA 1095-B- og 1095-C-skjemaer, og distribuer dem deretter
     > [!NOTE]
     > Hvis du skriver ut 1095-C-skjemaer for mer enn 500 ansatte, får du mer enn én PDF-fil. Det anbefales at du øker verdien til feltet **Maksimum filstørrelse** på siden **Parametere for dokumentstyring** til **150**. (Du kan åpne den siden raskt ved å bruke søkefeltet i navigasjonsfeltet.)
     >
-    > ![Endre maksimumsfilstørrelse](./media/hr-benefits-management-aca-maximum-file-size.png)
+    > ![Endre maksimumsfilstørrelse.](./media/hr-benefits-management-aca-maximum-file-size.png)
 
 3. Hvis du vil kontrollere statusen til rapportene og vise dem, bruker du søkefeltet på navigasjonslinjen til å åpne siden **Elektroniske rapporteringsjobber**.
 
-    ![Søke etter siden Elektroniske rapporteringsjobber](./media/hr-benefits-management-aca-search-electronic-reporting-jobs.png)
+    ![Søke etter siden Elektroniske rapporteringsjobber.](./media/hr-benefits-management-aca-search-electronic-reporting-jobs.png)
 
 4. Velg rapporten som skal vises, og velg deretter **Vis filer**.
 
-    ![Viser filer](./media/hr-benefits-management-aca-show-files.png)
+    ![Viser filer.](./media/hr-benefits-management-aca-show-files.png)
 
 5. Velg **Åpne**.
 
-    ![Åpne en fil](./media/hr-benefits-management-aca-open-file.png)
+    ![Åpne en fil.](./media/hr-benefits-management-aca-open-file.png)
 
 6. Åpne zip-filen i varslingsfeltet som vises nederst i webleservinduet, og velg deretter rapporten. Du kan vise eller skrive ut PDF-filen.
 
-    ![Eksempel 1095-C-skjema](./media/hr-benefits-management-aca-1095-c-form.png)
+    ![Eksempel 1095-C-skjema.](./media/hr-benefits-management-aca-1095-c-form.png)
 
 ## <a name="view-aca-coverage-information"></a>Vise ACA-dekningsinformasjon
 
@@ -178,7 +178,7 @@ Følg disse trinnene for å vise informasjonen.
 1. I arbeidsområdet **Fordelsbehandling** velger du **Affordable Care-dekning for arbeidere**.
 2. Velg en gruppe i feltet **Gruppenavn**.
 
-    ![Vise ACA-dekning](./media/hr-benefits-management-aca-view-coverage.png)
+    ![Vise ACA-dekning.](./media/hr-benefits-management-aca-view-coverage.png)
 
 Hvis noen av standardverdiene fra Affordable Care-dekningsgruppen har blitt overstyrt, vises en stjerne ved siden av verdien som ble endret. Hvis verdiene for alle tolv månedene er de samme, og ikke har blitt overstyrt, vises verdien i **Alle 12 måneder**-kolonnen.
 
@@ -198,11 +198,11 @@ Følg denne fremgangsmåten for å eksportere hvilke som helst av listene til Mi
 
 Hvis du må rapportere dekkede personer fordi du gir selvforsikret dekning, kan du vise avhengige som dekkes av fordelsplaner, som er merket som **ACA-rapporterbar**. Velg **Vis avhengig dekning** i handlingsruten.
 
-![Vise avhengig dekning](./media/hr-benefits-management-aca-view-dependent-coverage.png)
+![Vise avhengig dekning.](./media/hr-benefits-management-aca-view-dependent-coverage.png)
 
 Dekningsinformasjon for de ansattes avhengige vises.
 
-![Avhengig dekning](./media/hr-benefits-management-aca-dependents.png)
+![Avhengig dekning.](./media/hr-benefits-management-aca-dependents.png)
 
 > [!NOTE]
 > Siden viser bare fordelsplaner som er merket som **ACA-rapporterbare**.

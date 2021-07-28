@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 6a858135d377b30d6e8885ae18b2dc50da11813b
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: ab063c66712b43818f58eee1493ec168771ae97a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941035"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350965"
 ---
 # <a name="company-concept-in-dataverse"></a>Bedriftskonsept i Dataverse
 
@@ -43,7 +43,7 @@ Fordi forretningsenhet og firma ikke er identiske konsepter, er det ikke mulig �
 
 Illustrasjonen nedenfor viser et eksempel på dette dataoppsettet i Dataverse.
 
-![Dataoppsett i Dataverse](media/dual-write-company-1.png)
+![Dataoppsett i Dataverse.](media/dual-write-company-1.png)
 
 På grunn av denne konfigurasjonen eies alle rader som er relatert til USMF-firmaet, av et team som er koblet til USMF-forretningsenheten i Dataverse. Derfor kan en hvilken som helst bruker som har tilgang til denne forretningsenheten gjennom en sikkerhetsrolle som er satt til synlighet på forretningsenhetsnivå, nå se disse radene. Følgende eksempel viser hvordan grupper kan brukes til å gi riktig tilgang til disse radene.
 
@@ -52,21 +52,21 @@ På grunn av denne konfigurasjonen eies alle rader som er relatert til USMF-firm
 + "USMF Sales"-teamet er knyttet til USMF-forretningsenheten som ble nevnt tidligere.
 + Derfor kan medlemmer av "USMF Sales"-teamet se alle kontoer som eies av "USMF DW"-brukeren, som ville ha kommet fra USMF-firmatabellen i Finance and Operations.
 
-![Hvordan team kan brukes](media/dual-write-company-2.png)
+![Hvordan team kan brukes.](media/dual-write-company-2.png)
 
 Som den foregående illustrasjonen viser, er denne 1:1-tilordningen mellom forretningsenhet, firma og team bare et utgangspunkt. I dette eksemplet opprettes en ny forretningsenhet for "Europa" manuelt i Dataverse som overordnet for både DEMF og ESMF. Denne nye rotforretningsenheten er ikke relatert til dobbel skriving. Den kan imidlertid brukes til å gi medlemmer av "EUR Sales"-gruppen tilgang til kontodata i både DEMF og ESMF ved å angi data synligheten til **overordnet/underordnet bu** i den tilknyttede sikkerhetsrollen.
 
 Et siste emne for å diskutere er hvordan dobbel skriving bestemmer hvilket eierteam det skal tildeles rader til. Denne virkemåten styres av kolonnen **Standard eiende team** i cdm\_Company-raden. Når en cdm\_Company-rad er aktivert for dobbel skriving, oppretter en plugin-modul automatisk den tilknyttede forretningsenheten og eiergruppen (hvis den ikke allerede finnes), og angir kolonnen **Standard eiende team**. Administratoren kan endre denne kolonnen til en annen verdi. Administratoren kan imidlertid ikke tømme kolonnen så lenge tabellen er aktivert for dobbel skriving.
 
 > [!div class="mx-imgBorder"]
-![Kolonnen Standard eiende team](media/dual-write-default-owning-team.jpg)
+![Kolonnen Standard eiende team.](media/dual-write-default-owning-team.jpg)
 
 ## <a name="company-striping-and-bootstrapping"></a>Selskapets striping og bootstrapping
 
 Dataverse-integrasjon bringer selskapet paritet ved hjelp av en bedrifts-ID til stripe data. Som følgende illustrasjon viser, er alle firmaspesifikke tabeller utvidet slik at de har en mange-til-én-relasjon (N:1) til cdm\_Company-tabellen.
 
 > [!div class="mx-imgBorder"]
-![N:1-relasjon mellom en firmaspesifikk tabell og cdm_Company-tabellen](media/dual-write-bootstrapping.png)
+![N:1-relasjon mellom en firmaspesifikk tabell og cdm_Company-tabellen.](media/dual-write-bootstrapping.png)
 
 + Når et selskap er lagt til og lagret for rader, blir verdien skrivebeskyttet. Derfor bør brukerne sørge for at de velger riktig firma.
 + Bare rader som har firmadata, er kvalifisert for dobbelt skriving mellom programmet og Dataverse.
@@ -98,7 +98,7 @@ Det finnes flere måter å fylle ut firmanavnet på automatisk i Customer Engage
 
 Hvis du vil bruke filtrering basert på firmakonteksten i de egendefinerte skjemaene eller på egendefinerte oppslagskolonner som er lagt til i standardskjemaene, åpner du skjemaet og bruker delen **Relatert oppføringsfiltrering** til å bruke firmafilteret. Du må angi dette for hver oppslagskolonne som krever filtrering, basert på det underliggende firmaet for en gitt rad. Innstillingen vises for **Forretningsforbindelse** i følgende illustrasjon.
 
-:::image type="content" source="media/apply-company-context.png" alt-text="Bruk firmakontekst":::
+:::image type="content" source="media/apply-company-context.png" alt-text="Bruk firmakontekst.":::
 
 
 

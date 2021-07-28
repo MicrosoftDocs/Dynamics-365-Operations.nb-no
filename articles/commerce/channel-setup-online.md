@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: f0f1e0f3e7145c66b8f2b082b44ad7035c57d947
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: dc76c3c8c3da11202ebb29f4c5c0df72892c094a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936950"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351182"
 ---
 # <a name="set-up-an-online-channel"></a>Konfigurere en nettkanal
 
@@ -55,11 +55,11 @@ Hvis du vil opprette og konfigurere en ny Internett-kanal, gjør du følgende:
 
 Bildet nedenfor viser opprettelsen av en ny Internett-kanal.
 
-![Ny Internett-kanal](media/channel-setup-online-1.png)
+![Ny Internett-kanal.](media/channel-setup-online-1.png)
 
 Bildet nedenfor viser et eksempel på en Internett-kanal.
 
-![Eksempel på Internett-kanal](media/channel-setup-online-2.png)
+![Eksempel på Internett-kanal.](media/channel-setup-online-2.png)
 
 ## <a name="set-up-languages"></a>Definere språk
 
@@ -75,7 +75,7 @@ Andre oppgaver som kreves for oppsett av Internett-kanal, omfatter definere beta
 
 Bildet nedenfor viser oppsettsalternativene **Leveringsmåter**, **Betalingsmåter** og **Gruppetilordning for oppfyllelse** i kategorien **Oppsett**.
 
-![Ekstra konfigurasjonshandlinger for Internett-kanal](media/channel-setup-online-3.png)
+![Ekstra konfigurasjonshandlinger for Internett-kanal.](media/channel-setup-online-3.png)
 
 ### <a name="set-up-payment-methods"></a>Definere betalingsmåter
 
@@ -90,7 +90,7 @@ Hvis du vil definere betalingsmåter, følger du disse trinnene for hver betalin
 
 Bildet nedenfor viser et eksempel på en kontantbetalingsmåte.
 
-![Eksempel på betalingsmåter](media/channel-setup-retail-5.png)
+![Eksempel på betalingsmåter.](media/channel-setup-retail-5.png)
 
 ### <a name="set-up-modes-of-delivery"></a>Definer leveringsmåter
 
@@ -104,7 +104,7 @@ Hvis du vil endre eller legge til en leveringsmåte, følger du disse trinnene.
 
 Bildet nedenfor viser et eksempel på en leveringsmåte.
 
-![Definer leveringsmåter](media/channel-setup-retail-7.png)
+![Definer leveringsmåter.](media/channel-setup-retail-7.png)
 
 ### <a name="set-up-a-fulfillment-group-assignment"></a>Definere en gruppetilordning for oppfyllelse
 
@@ -118,13 +118,13 @@ Hvis du vil konfigurere en gruppetilordning for oppfyllelse, gjør du følgende.
 
 Det følgende bildet viser et eksempel på et oppsett for gruppetilordning for oppfyllelse.
 
-![Definere gruppetilordning for oppfyllelse](media/channel-setup-retail-9.png)
+![Definere gruppetilordning for oppfyllelse.](media/channel-setup-retail-9.png)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Oversikt over kanaler](channels-overview.md)
 
-[Forutsetninger for kanaloppsett](channels-prerequisites.md)
+[Kanaloppsettsforutsetninger](channels-prerequisites.md)
 
 [Definere en detaljhandelskanal](channel-setup-retail.md)
 

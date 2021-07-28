@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 6e0a6a05fcb4afb8c8965e25c3089bc1b3d98431
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 70e57a928ecd3f5d10ebd3d0fc3f52870d40fcd9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023473"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358176"
 ---
 # <a name="set-up-tax-components-for-the-tds-tax-type"></a>Konfigurere avgiftskomponenter for TDS-avgiftstypen
 
@@ -33,7 +33,7 @@ Følg trinnene nedenfor for å konfigurere TDS-komponenter.
 
 1. Gå til **Avgift \> Oppsett \> Kildeskatt \> Komponenter for kildeskatt**.
 
-    [![Siden Komponenter for kildeskatt](./media/apac-ind-TDS-9.png)](./media/apac-ind-TDS-9.png)
+    [![Siden Komponenter for kildeskatt.](./media/apac-ind-TDS-9.png)](./media/apac-ind-TDS-9.png)
 
 2. Velg **TDS** i **Avgiftstype**-feltet for å definere komponenter for kildeskatt for TDS-avgiftstypen.
 3. I handlingsruten velger du **Ny** for å opprette en linje.
@@ -50,7 +50,7 @@ Følg trinnene nedenfor for å konfigurere TDS-komponenter.
 
     Hvis unntaksterskelbeløpet for eksempel er 5 000, beregnes TDS for en bestemt fakturalinje hvis fakturalinjebeløpet overskrider 5 000 (det vil si hvis det er 5 001 eller mer).
 
-    [![Terskel-siden](./media/apac-ind-TDS-10.png)](./media/apac-ind-TDS-10.png)
+    [![Terskel-siden.](./media/apac-ind-TDS-10.png)](./media/apac-ind-TDS-10.png)
 
     > [!NOTE]
     > Unntaksterskelbeløpet må være mindre enn eller likt terskelbeløpet.
@@ -66,6 +66,6 @@ Følg trinnene nedenfor for å konfigurere TDS-komponenter.
 
 14. Velg **OK** for å kopiere og opprette TDS-komponenter for den andre TDS-komponentgruppen på siden **Komponenter for kildeskatt**.
 
-    [![Dialogboksen Kopier komponenter for kildeskatt](./media/apac-ind-TDS-11.png)](./media/apac-ind-TDS-11.png)
+    [![Dialogboksen Kopier komponenter for kildeskatt.](./media/apac-ind-TDS-11.png)](./media/apac-ind-TDS-11.png)
 
 15. Lukk siden.

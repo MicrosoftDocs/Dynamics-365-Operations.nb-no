@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: f7f80928e1d3f5d4892f72d4bd2fd09b70a26c1f
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: ddee15c28455dc1736e37ff6132e1360e2d135ac
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6270713"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351946"
 ---
 # <a name="electronic-reporting-advanced-formula-editor"></a>Redigeringsprogram med avansert formel for elektronisk rapportering
 
@@ -45,7 +45,7 @@ Fullfør følgende trinn for å begynne å bruke redigeringsprogrammet med avans
 2.  På **Konfigurasjoner**-siden, i handlingsruten i kategorien **Konfigurasjoner** i gruppen **Avanserte innstillinger**, velger du **Brukerparametere**.
 3.  I delen **Kjøringssporing** i dialogboksen **Brukerparametere** setter du parameteren **Aktiver redigeringsprogram med avansert formel** til **Ja**.
 
-[![Dialogboksen Brukerparametere, parameteren Aktiver redigeringsprogram med avansert formel er merket](./media/ER-AdvEditor-Activate.png)](./media/ER-AdvEditor-Activate.png)
+[![Dialogboksen Brukerparametere, parameteren Aktiver redigeringsprogram med avansert formel er merket.](./media/ER-AdvEditor-Activate.png)](./media/ER-AdvEditor-Activate.png)
 
 > [!NOTE]
 > Vær oppmerksom på at denne parameteren er brukerspesifikk og selskapsspesifikk.
@@ -58,7 +58,7 @@ Fra og med Microsoft Dynamics 365 Finance versjon 10.0.19 kan du styre hvilke ER
 4.  På **Konfigurasjoner**-siden, i handlingsruten i fanen **Konfigurasjoner** i gruppen **Avanserte innstillinger**, velger du **Brukerparametere**.
 5.  I dialogboksen **Brukerparametere** finner du parameteren **Deaktiver avansert formelredigering**, og kontroller at den er satt til **Nei**.
 
-[![Dialogboksen Brukerparametere, parameteren Deaktiver redigeringsprogram med avansert formel er merket](./media/ER-AdvEditor-Activate2.png)](./media/ER-AdvEditor-Activate2.png)
+[![Dialogboksen Brukerparametere, parameteren Deaktiver redigeringsprogram med avansert formel er merket.](./media/ER-AdvEditor-Activate2.png)](./media/ER-AdvEditor-Activate2.png)
 
 > [!NOTE]
 > Verdiene til parameterne **Aktiver avansert formelredigeringsprogram** og **Deaktiver avansert formelredigering** holdes separate for hver bruker og tilbys i dialogboksen **Brukerparametere**, avhengig av statusen til funksjonen **Angi det avanserte formelredigeringsprogrammet for ER som standard for alle brukere**.
@@ -67,7 +67,7 @@ Fra og med Microsoft Dynamics 365 Finance versjon 10.0.19 kan du styre hvilke ER
 
 Når du skriver et sammensatt uttrykk som består av flere rader med kode, blir innrykket for en ny angitt linje automatisk basert på innrykket for den forrige raden. Du kan velge linjer og endre det tilhørende innrykket ved å skrive inn **Tab** eller **Shift+Tab**.
 
-[![GIF av ER-formelredigeringsprogrammet som viser valg av linjer og endring av innrykk](./media/ER-AdvEditor-Indentation.gif)](./media/ER-AdvEditor-Indentation.gif)
+[![GIF av ER-formelredigeringsprogrammet som viser valg av linjer og endring av innrykk.](./media/ER-AdvEditor-Indentation.gif)](./media/ER-AdvEditor-Indentation.gif)
 
 Med autoformatering kan du holde hele uttrykket velformatert for å gjøre ytterligere vedlikehold enklere samt for å forenkle forståelsen av den konfigurerte logikken.
 
@@ -75,7 +75,7 @@ Med autoformatering kan du holde hele uttrykket velformatert for å gjøre ytter
 
 Redigeringsprogrammet kan fullføre ord for å hjelpe deg å skrive uttrykk raskere og unngå skrivefeil. Når du begynner å legge til ny tekst, tilbyr redigeringsprogrammet automatisk en liste med funksjoner som støttes i ER-funksjonene, som inneholder tegnene du har angitt. Du kan også utløse IntelliSense på et hvilket som helst sted i et konfigurert uttrykk ved å skrive inn **Ctrl+mellomrom**.
 
-[![GIF av ER-formelredigeringsprogrammet som viser utløsning av IntelliSense](./media/ER-AdvEditor-Intelisense.gif)](./media/ER-AdvEditor-Intelisense.gif)
+[![GIF av ER-formelredigeringsprogrammet som viser utløsning av IntelliSense.](./media/ER-AdvEditor-Intelisense.gif)](./media/ER-AdvEditor-Intelisense.gif)
 
 ## <a name=""></a><a name="CodeCompletion">Kodefullføring</a>
 
@@ -85,7 +85,7 @@ Redigeringsprogrammet utfører automatisk kodefullføring ved å:
 - Sette inn det andre anførselstegnet når det første er angitt, slik at markøren beholdes inne i anførselstegnene
 - Sette inn det andre doble anførselstegnet når det første er angitt, slik at markøren beholdes inne i anførselstegnene
 
-[![GIF av ER-formelredigeringsprogram som viser at redigeringsprogrammet fullfører koden automatisk](./media/ER-AdvEditor-CodeCompletion.gif)](./media/ER-AdvEditor-CodeCompletion.gif)
+[![GIF av ER-formelredigeringsprogram som viser at redigeringsprogrammet fullfører koden automatisk.](./media/ER-AdvEditor-CodeCompletion.gif)](./media/ER-AdvEditor-CodeCompletion.gif)
 
 Når du peker til den innlagte parentesen, utheves det andre parentesen automatisk for å vise konstruksjonen de støtter.
 
@@ -101,7 +101,7 @@ Hvis du for eksempel vil hoppe til linje **8**, gjør du følgende:
 
 - Trykk på **F1**, skriv inn **G**, velg **Gå til linje**, angi verdien **8** og trykk deretter på **Enter**.
 
-[![GIF av ER-formelredigeringsprogrammet som viser hvordan du finner deler av et uttrykk ved hjelp av kommandopaletten](./media/ER-AdvEditor-Goto.gif)](./media/ER-AdvEditor-Goto.gif)
+[![GIF av ER-formelredigeringsprogrammet som viser hvordan du finner deler av et uttrykk ved hjelp av kommandopaletten.](./media/ER-AdvEditor-Goto.gif)](./media/ER-AdvEditor-Goto.gif)
 
 ## <a name=""></a><a name="CodeStructuring">Kodestrukturering</a>
 
@@ -123,7 +123,7 @@ Hvis du vil oppheve folding av alle områder, gjør du følgende:
   
 - Trykk på **F1**, skriv inn **UN**, velg **Opphev folding av alle** og trykk deretter på **Enter**
 
-[![GIF av ER-formelredigeringsprogrammet som viser hvordan koden foldes ut](./media/ER-AdvEditor-ToggleFold.gif)](./media/ER-AdvEditor-ToggleFold.gif)
+[![GIF av ER-formelredigeringsprogrammet som viser hvordan koden foldes ut.](./media/ER-AdvEditor-ToggleFold.gif)](./media/ER-AdvEditor-ToggleFold.gif)
 
 ## <a name=""></a><a name="FindAndReplace">Søk og erstatt</a>
 
@@ -151,13 +151,13 @@ Hvis du vil endre alle forekomster av en bestemt tekst, velger du teksten i uttr
   
 - Trykk på **F1**, skriv inn **C** og velg deretter påkrevd alternativ for å endre den merkede teksten. Angi den alternative teksten.
 
-[![GIF av ER-formelredigeringsprogrammet som viser søk og erstatt](./media/ER-AdvEditor-Find.gif)](./media/ER-AdvEditor-Find.gif)
+[![GIF av ER-formelredigeringsprogrammet som viser søk og erstatt.](./media/ER-AdvEditor-Find.gif)](./media/ER-AdvEditor-Find.gif)
 
 ## <a name=""></a><a name="DataPasting">Innliming av datakilder og funksjoner</a>
 
 Du kan velge **Legg til datakilde**, som utfører innliming til det gjeldende uttrykket av en datakilde som er valgt på venstre **Datakilde** i-panel. Tilsvarende kan du velge **Legg til funksjonen**, som utfører innliming til det gjeldende uttrykket av en funksjon som er valgt på høyre **Funksjoner**-panel. Hvis du bruker ER-formelredigeringsprogrammet, vil en valgt funksjon eller en valgt datakilde alltid bli limt inn på slutten av det konfigurerte uttrykket. Når du bruker ER-redigeringsprogrammet med avansert formel kan en valgt funksjon eller en valgt datakilde limes inn til en hvilken som helst del av det konfigurerte uttrykket. Du må bruke markøren for å angi hvor du vil lime inn dataene.
 
-[![GIF av ER-redigeringsprogrammet som viser hvordan du legger til en datakilde og limer inn en funksjon](./media/ER-AdvEditor-PasteValue.gif)](./media/ER-AdvEditor-PasteValue.gif)
+[![GIF av ER-redigeringsprogrammet som viser hvordan du legger til en datakilde og limer inn en funksjon.](./media/ER-AdvEditor-PasteValue.gif)](./media/ER-AdvEditor-PasteValue.gif)
 
 ## <a name=""></a><a name="SyntaxColorization">Syntaksfargelegging</a>
 
@@ -165,7 +165,7 @@ Forskjellige farger brukes for øyeblikket til å utheve følgende deler av uttr
 
 - Teksten i doble parenteser som kan representere en etikett-ID for en tekstkonstant.
 
-[![ER-formelredigeringsprogram](./media/ER-AdvEditor-SyntaxColorization.png)](./media/ER-AdvEditor-SyntaxColorization.png)
+[![ER-formelredigeringsprogram.](./media/ER-AdvEditor-SyntaxColorization.png)](./media/ER-AdvEditor-SyntaxColorization.png)
 
 ## <a name="limitations"></a>Begrensninger
 

@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c58aa1cec6c0bfe33fa1ef90267dcd8ac1218157
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: af427e8df2ac7a3a3b5a7fd6edb740400f6bbeaf
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5830840"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358008"
 ---
 # <a name="register-items-for-an-advanced-warehousing-enabled-item-using-an-item-arrival-journal"></a>Registrere varer for en vare for avanserte lageraktiviteter ved hjelp av en journal for vareankomst
 
@@ -53,14 +53,14 @@ Dette scenariet viser hvordan du oppretter et journalhode for vareankomst som br
 1. Angi **Kontonummer** til *1001*.
 1. Angi **Nummer** til nummeret på bestillingen som du identifiserte for denne øvelsen.
 
-    ![Vareankomstjournal](../media/item-arrival-journal-header.png "Vareankomstjournal")
+    ![Vareankomstjournal.](../media/item-arrival-journal-header.png "Vareankomstjournal")
 
 1. Velg **OK** for å opprette journalhodet.
 1. I **Journallinjer**-delen velger du **Legg til linje** og angir følgende data:
     - **Varenummer** – Angi til *M9200*. **Sted**, **Lager** og **Antall** blir angitt basert på lagertransaksjonsdataene for de 10 pallene (1000 per stk.).
     - **Lokasjon** – Angi til *001*. Denne bestemte lokasjonen sporer ikke nummerskilt.
 
-    ![Vareankomstjournallinje](../media/item-arrival-journal-line.png "Vareankomstjournallinje")
+    ![Vareankomstjournallinje.](../media/item-arrival-journal-line.png "Vareankomstjournallinje")
 
     > [!NOTE]
     > **Dato**-feltet bestemmer hvilken dato når lagerbeholdningen for denne varen skal registreres i lageret.  

@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 38a616c418c3b32490c9adaf69a69af0d47d3478
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 892f8001c52cd40d748c81f27c2f83618b84e5c2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019452"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350408"
 ---
 # <a name="set-up-an-e-commerce-development-environment-to-debug-against-a-tier-1-retail-server-virtual-machine"></a>Konfigurere et utviklingsmiljø for e-handel for feilsøking mot en virtuell maskin for Retail Server på Lag 1
 
@@ -38,13 +38,13 @@ Når du feilsøker mot et Lag 1-miljø, ettersom området nå kaller en annen Re
 
 Illustrasjonen nedenfor viser et eksempel på en feil som kan oppstå når en variant er valgt på en produktdetaljerside.
 
-![Feil når en variant er valgt på en produktdetaljerside](media/unhandled-rejection-error.jpg)
+![Feil når en variant er valgt på en produktdetaljerside.](media/unhandled-rejection-error.jpg)
 
 Illustrasjonen nedenfor viser et eksempel på en lignende feil i webleserens feilsøkingsverktøy (F12 Developer Tools). Feilmeldingen nevner et brudd på direktivet for innholdssikkerhetspolicy.
 
-![Feil under feilsøkingsverktøy](media/debugger-tools-error.JPG)
+![Feil under feilsøkingsverktøy.](media/debugger-tools-error.JPG)
 
-## <a name="resolution"></a>Oppløsning
+## <a name="resolution"></a>Løsning
 
 ### <a name="disable-the-content-security-policy-for-the-site-in-commerce-site-builder"></a>Deaktivere innholdssikkerhetspolicy for området i Commerce-områdebyggeren
 

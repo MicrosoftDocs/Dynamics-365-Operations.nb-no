@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-04-06
-ms.openlocfilehash: c4f663ae36f7d4ea3db9888e618f2fe3bf8c3256
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 073f89b5ae44e20d1d2e854341afaa176f9b6280
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748953"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350941"
 ---
 # <a name="currency-data-type-migration-for-dual-write"></a>Migrering av valutadatatype for dobbelt skriving
 
@@ -82,13 +82,13 @@ Det er noen av begrensninger:
 
 Når migreringen er fullført, kan administratorer angi valutapresisjonen. Gå til **Innstillinger \> Administrasjon**, og velg **Systeminnstillinger**. I **Generelt**-fanen endrer du verdien for kolonnen **Sett valutapresisjonen som brukes for prissetting i hele systemet**, som vist i illustrasjonen nedenfor.
 
-![Systeminnstillinger for valuta](media/currency-system-settings.png)
+![Systeminnstillinger for valuta.](media/currency-system-settings.png)
 
 ### <a name="business-management-currencies"></a>Forretningsstyring: Valutaer
 
 Hvis du krever at valutapresisjonen for en bestemt valuta er forskjellig fra valutapresisjonen som brukes til prissetting, kan du endre den. Gå til **Innstillinger \> Forretningsstyring**, velg **Valutaer**, og velg valutaen som skal endres. Deretter setter du **Valutapresisjon**-kolonnen til ønsket antall desimalplasser, som vist i følgende illustrasjon.
 
-![Valutainnstillinger for en bestemt nasjonal innstilling](media/specific-currency.png)
+![Valutainnstillinger for en bestemt nasjonal innstilling.](media/specific-currency.png)
 
 ### <a name="tables-currency-column"></a>tabeller: Valuta-kolonne
 

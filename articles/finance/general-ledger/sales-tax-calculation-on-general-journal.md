@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: EricWang
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: d0cb4b282fe2bd5c68af17c741787c4caca98003
-ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
+ms.openlocfilehash: c019c597f4734f92f5d9aacdff1cbb30f9fb0a60
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5937312"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358839"
 ---
 # <a name="sales-tax-calculation-on-general-journal-lines"></a>Mva-beregning på generelle journallinjer
 [!include [banner](../includes/banner.md)]
@@ -55,7 +55,7 @@ I andre tilfeller er mva-retningen innkommende merverdiavgift.
 
 Diagrammet nedenfor illustrerer regelen grafisk.
 
-![Muligheter for avgiftsretning for prosjektkontoer](media/Sales-Tax-Direction-Vendor.jpg)
+![Muligheter for avgiftsretning for prosjektkontoer.](media/Sales-Tax-Direction-Vendor.jpg)
 
 ### <a name="account-type-is-vendor"></a>Kontotype er Leverandør
 
@@ -73,7 +73,7 @@ I andre tilfeller er mva-retningen innkommende merverdiavgift.
 
 Diagrammet nedenfor illustrerer regelen grafisk.
 
-![Muligheter for avgiftsretning for leverandørkontoer](media/Sales-Tax-Direction-Vendor.jpg)
+![Muligheter for avgiftsretning for leverandørkontoer.](media/Sales-Tax-Direction-Vendor.jpg)
 
 ### <a name="account-type-is-customer"></a>Kontotype er Kunde
 
@@ -89,7 +89,7 @@ I andre tilfeller er mva-retningen Utgående merverdiavgift.
 
 Diagrammet nedenfor illustrerer regelen grafisk.
 
-![Muligheter for avgiftsretning for kundekontoer](media/Sales-Tax-Direction-Customer.jpg)
+![Muligheter for avgiftsretning for kundekontoer.](media/Sales-Tax-Direction-Customer.jpg)
 
 ### <a name="account-type-is-ledger"></a>Kontotype er Finans
 
@@ -103,7 +103,7 @@ Hvis journalbeløpet imidlertid er debet (positivt), er mva-retningen Innkommend
 
 Diagrammet nedenfor illustrerer regelen grafisk.
 
-![Muligheter for avgiftsretning for finanskontoer](media/Sales-Tax-Direction-Ledger.jpg)
+![Muligheter for avgiftsretning for finanskontoer.](media/Sales-Tax-Direction-Ledger.jpg)
 
 #### <a name="override-the-sales-tax-direction"></a>Overstyre mva-retningen
 
@@ -115,7 +115,7 @@ Gå til **Økonomimodul \> Kontoplan \> Kontoer \> Hovedkontoer**, og velg hurti
 
 Denne delen beskriver hvordan fortegnet for mva-beløpet beregnes.
 
-![Siden Mva-transaksjoner](media/sales-tax-amount-sign.jpg)
+![Siden Mva-transaksjoner.](media/sales-tax-amount-sign.jpg)
 
 Tabellen nedenfor viser den generelle regelen for å fastslå mva-retningen og fortegnet for mva-beløp i den midlertidige mva-tabellen.
 

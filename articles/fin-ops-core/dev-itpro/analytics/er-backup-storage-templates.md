@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-13
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b41760bb58cbef66146b3f1af6f30c6a35a18727
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 305576b79fdb11f29de9207662de0fe4b4dd6eb5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743853"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351848"
 ---
 # <a name="backup-storage-of-er-templates"></a>Sikkerhetskopiere ER-maler
 
@@ -65,19 +65,19 @@ Hvis du vil konfigurere parameteren **Kjør automatisk prosedyren for å gjenopp
 > [!NOTE]
 > Denne parameteren er definert som programbruker og loggføres firmaspesifikk.
 
-![Siden ER-konfigurasjoner](./media/GER-BackupTemplates-1.png)
+![Siden ER-konfigurasjoner.](./media/GER-BackupTemplates-1.png)
 
 Illustrasjonen nedenfor viser et eksempel på meldingen som vises når parameteren **Kjør automatisk prosedyren for å gjenopprette de ødelagte malene satsvis** er satt til **På**.
 
-![Siden Leverandørbetalingsjournal](./media/GER-BackupTemplates-2.png)
+![Siden Leverandørbetalingsjournal.](./media/GER-BackupTemplates-2.png)
 
 Illustrasjonen nedenfor viser den satsvise prosessen **Gjenopprett skadede maler fra sikkerhetskopi i intern database** på siden **Satsvis jobb**.
 
-![Siden Satsvis jobb](./media/GER-BackupTemplates-3.png)
+![Siden Satsvis jobb.](./media/GER-BackupTemplates-3.png)
 
 Utførelsesloggen for den fullførte satsvise prosessen **Gjenopprett skadede maler fra sikkerhetskopi i intern database** inneholder informasjon om malene som er gjenopprettet fra lagringsplasseringen for sikkerhetskopier til den primære lagringsplasseringen.
 
-![Siden Logg for satsvis jobb](./media/GER-BackupTemplates-4.png)
+![Siden Logg for satsvis.](./media/GER-BackupTemplates-4.png)
 
 Prosessen for å automatisk opprette sikkerhetskopier av maler som finnes i ER-formatkonfigurasjoner, er aktivert som standard. Hvis du vil stoppe sikkerhetskopiering av maler, setter du alternativet **Stopp sikkerhetskopiering av maler** til **Ja** i kategorien **Vedlegg** på siden **Parametere for elektronisk rapportering**. Du kan åpne denne siden fra arbeidsområdet **Elektronisk rapportering**.
 
@@ -85,7 +85,7 @@ Hvis du setter alternativet **Stopp sikkerhetskopiering av maler** til **Ja** og
 
 Hvis du oppgraderte miljøet til Finance and Operations versjon 10.0.5 (oktober 2019) og vil overføre til et nytt miljø som omfatter ER-formatkonfigurasjoner som kan kjøres, velger du **Fyll ut plassering for sikkerhetskopi** på siden **Parametere for elektronisk rapportering** før overføringen utføres. Denne knappen starter prosessen for å ta sikkerhetskopier av alle tilgjengelige maler, slik at de kan lagres på lagringsplasseringen for sikkerhetskopier for ER-maler.
 
-![Siden Parametere for elektronisk rapportering](./media/GER-BackupTemplates-5.png)
+![Siden Parametere for elektronisk rapportering.](./media/GER-BackupTemplates-5.png)
 
 ## <a name="manual-recovery"></a>Manuell gjenoppretting
 

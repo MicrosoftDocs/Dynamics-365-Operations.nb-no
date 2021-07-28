@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 8c2ae3368db47363a65e8ecd6317bb0432829802
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ccad9c55c0200d008525c7d3fdaeeef99b7eecfb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748831"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350746"
 ---
 # <a name="general-troubleshooting"></a>Generell feilsøking
 
@@ -44,16 +44,16 @@ Når du har installert Package Deployer-verktøyet, installerer du løsningspakk
 
 1. Last ned den nyeste løsningspakkefilen fra Yammer.com. Når zip-filen for pakken er lastet ned, høyreklikker du den og velger **Egenskaper**. Merk av for **Fjern blokkering**, og velg deretter **Bruk**. Hvis du ikke ser avmerkingsboksen **Fjern blokkering,** er blokkeringen av zip-filen allerede fjernet, og du kan hoppe over dette trinnet.
 
-    ![Dialogboksen Egenskaper](media/unblock_option.png)
+    ![Dialogboksen Egenskaper.](media/unblock_option.png)
 
 2. Pakk ut zip-filen for pakken, og kopier alle filene i mappen **Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.438**.
 
-    ![Innholdet i mappen Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.438](media/extract_package.png)
+    ![Innholdet i mappen Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.438.](media/extract_package.png)
 
 3. Lim inn alle de kopierte filene i **Verktøy**-mappen i Package Deployer-verktøyet. 
 4. Kjør **PackageDeployer.exe** for å velge Dataverse-miljøet og installere løsningene.
 
-    ![Innhold i Verktøy-mappen](media/paste_copied_files.png)
+    ![Innhold i Verktøy-mappen.](media/paste_copied_files.png)
 
 ## <a name="enable-and-view-the-plug-in-trace-log-in-dataverse-to-view-error-details"></a><a id="enable-view-trace"></a>Aktivere og vise plugin-sporingsloggen i Dataverse for å vise feildetaljer
 

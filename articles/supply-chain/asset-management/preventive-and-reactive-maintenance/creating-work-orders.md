@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 3982232e5008d6f8c283d6cecfaf2fa6e66150a1
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d2fe07790f64f7e7f672980f80a3e56804cefd66
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5836740"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351543"
 ---
 # <a name="creating-work-orders"></a>Opprette arbeidsordrer
 
@@ -48,7 +48,7 @@ Følg denne fremgangsmåten for å opprette arbeidsordrer som er basert på vedl
 
     Dialogboksen **Opprett arbeidsordrer** vises. Det totale antallet prognosetimer for de valgte linjene vises i feltet **Vedlikeholdsprognosetimer**.
 
-    ![Dialogboksen Opprett arbeidsordrer](media/18-preventive-maintenance.png)
+    ![Dialogboksen Opprett arbeidsordrer.](media/18-preventive-maintenance.png)
 
 1. I **Parametere**-delen angir du antall arbeidsordrer som skal opprettes. Velg ett av følgende alternativer:
 

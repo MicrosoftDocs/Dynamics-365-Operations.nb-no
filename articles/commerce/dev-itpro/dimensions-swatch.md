@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-09-20
 ms.dyn365.ops.version: Retail 10.0.20 update
-ms.openlocfilehash: 08564ce7af7412f2501b917b3496942004402611
-ms.sourcegitcommit: 53b797ff1b524f581046b48cdde42f50b37495bc
+ms.openlocfilehash: 513ec2f48a3c7c81a41fd64a9752067d12eb4ec8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6117238"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353868"
 ---
 # <a name="configure-product-dimension-values-to-appear-as-swatches"></a>Konfigurere produktdimensjonsverdier som skal vises som prøver
 
@@ -39,11 +39,11 @@ Funksjonen for visning av dimensjoner som prøver gjør det mulig for Commerce �
 
 Illustrasjonen nedenfor viser et eksempel der farger vises som prøver på en Commerce PDP.
 
-![Eksempel på farger som vises som prøver på en produktdetaljside](../dev-itpro/media/swatch_pdp.png)
+![Eksempel på farger som vises som prøver på en produktdetaljside.](../dev-itpro/media/swatch_pdp.png)
 
 Illustrasjonen nedenfor viser et eksempel der farger vises som prøver på en Commerce-søkeresultatlisteside.
 
-![Eksempel på farger som vises som prøver på en søkeresultatlisteside](../dev-itpro/media/swatch_searchresults.PNG)
+![Eksempel på farger som vises som prøver på en søkeresultatlisteside.](../dev-itpro/media/swatch_searchresults.PNG)
 
 ## <a name="enable-the-display-dimensions-as-swatches-feature-in-commerce-headquarters"></a>Aktivere visningsdimensjonene som prøvefunksjon i Commerce Headquarters
 
@@ -57,15 +57,15 @@ Konfigurasjonen kan utføres på et hvilket som helst av følgende nivåer:
 
 - **Dimensjon** – I Commerce Headquarters åpner du siden for en dimensjon ved å søke etter **Farge**, **Størrelse** eller **Stil**. På hver side viser et rutenett dimensjonsverdiene. Du kan styre verdiene for visningsrekkefølge, heksakode og bilde-URL. Illustrasjonen nedenfor viser en eksempelkonfigurasjon på siden **Farger**.
 
-    ![Eksempel på dimensjonskonfigurasjon på Farger-siden](../dev-itpro/media/swatch_Color.PNG)
+    ![Eksempel på dimensjonskonfigurasjon på Farger-siden.](../dev-itpro/media/swatch_Color.PNG)
 
 - **Dimensjonsgruppe**– I Dynamics 365 Commerce kan du bruke **RefinerGroup**-egenskapen til å opprette dimensjonsgrupper. Hvis dimensjonsgrupper er definert, åpner du den gjeldende siden ved å søke etter **Fargegruppe**, **Størrelsesgruppe** eller **Stilgruppe**. På hver side kan du styre verdier for heksakode, bilde-URL og presiseringsgruppe. Illustrasjonen nedenfor viser en eksempelkonfigurasjon på siden **Fargegrupper**.
 
-    ![Eksempel på dimensjonskonfigurasjon på Fargegrupper-siden](../dev-itpro/media/swatch_colorGroup.PNG)
+    ![Eksempel på dimensjonskonfigurasjon på Fargegrupper-siden.](../dev-itpro/media/swatch_colorGroup.PNG)
 
 - **Produktdimensjon (under produktoppretting)** – Når du oppretter et nytt produkt, kan du bruke siden **Produktdimensjoner** for å angi dimensjonsverdiene. For eksisterende produkter kan feltene for **Heksakode**, **URL** (for bilder) og **RefinerGroup** allerede være angitt. Du kan imidlertid endre verdier etter behov. Illustrasjonen nedenfor viser en eksempelkonfigurasjon på siden **Produktdimensjoner**.
 
-    ![Eksempel på dimensjonskonfigurasjon på Produktdimensjoner-siden](../dev-itpro/media/swatch_product_dimensions.PNG)
+    ![Eksempel på dimensjonskonfigurasjon på Produktdimensjoner-siden.](../dev-itpro/media/swatch_product_dimensions.PNG)
 
 > [!NOTE]
 > Prosessen med å administrere konfigurasjoner av heksakode og bilde-URL følger det samme mønsteret som brukes til å styre visningsrekkefølgen til dimensjoner.
@@ -76,7 +76,7 @@ For de fleste fargedimensjoner bør du angi en heksakodefargeverdi på dimensjon
 
 Illustrasjonen nedenfor viser et eksempel der fargedimensjoner konfigureres ved hjelp av heksakodeverdier.
 
-![Eksempel på dimensjonskonfigurasjon som bruker heksakoder](../dev-itpro/media/swatch_color_hexcode.png)
+![Eksempel på dimensjonskonfigurasjon som bruker heksakoder.](../dev-itpro/media/swatch_color_hexcode.png)
 
 ## <a name="configure-dimension-values-by-using-image-urls"></a>Konfigurere dimensjonsverdier ved hjelp av bilde-URLer
 
@@ -86,13 +86,13 @@ Du må laste opp hvert bilde til Commerce-områdebyggeren og publisere det. Dere
 
 Illustrasjonen nedenfor viser et eksempel der bilde-URLene brukes for konfigurasjonen på siden **Farger**.
 
-![Eksempel på dimensjonskonfigurasjon som bruker bilde-URLer](../dev-itpro/media/swatch_color_urls.PNG)
+![Eksempel på dimensjonskonfigurasjon som bruker bilde-URLer.](../dev-itpro/media/swatch_color_urls.PNG)
 
 Du kan bruke en mediemal til å definere bilde-URLer, på samme som for produkt- og kategoribilder. Når du laster opp bilder til områdebygger, må filnavnkonvensjoner og filbaner være konsekvente.
 
 Illustrasjonen nedenfor viser et eksempel der bilde-URLene brukes for konfigurasjonen av en mediemal.
 
-![Eksempel på konfigurasjon av mediemal](../dev-itpro/media/swatch_media_template.PNG)
+![Eksempel på konfigurasjon av mediemal.](../dev-itpro/media/swatch_media_template.PNG)
 
 ## <a name="configure-dimension-values-by-using-both-hex-codes-and-image-urls"></a>Konfigurere dimensjonsverdier ved hjelp av både heksakoder og bilde-URLer
 
@@ -100,7 +100,7 @@ For de fleste fargedimensjoner kan du konfigurere både heksakoder og bilde-URLe
 
 Illustrasjonen nedenfor viser et eksempel der både heksakoder og bilde-URLene brukes for konfigurasjonen på siden **Farger**.
 
-![Eksempel på dimensjonskonfigurasjon som bruker både heksakoder og bilde-URLer](../dev-itpro/media/swatch_color_hexandimage.png)
+![Eksempel på dimensjonskonfigurasjon som bruker både heksakoder og bilde-URLer.](../dev-itpro/media/swatch_color_hexandimage.png)
 
 ## <a name="configure-refiner-groups"></a>Konfigurere presiseringsgrupper
 
@@ -110,7 +110,7 @@ Hvis for eksempel fargedimensjonsverdiene er "blå", "blårutete", "blåvask" og
 
 Eksemplet i illustrasjonen nedenfor viser forholdet mellom egenskapene **Farge** og **RefinerGroup** i Commerce Headquarters.
 
-![Eksempel på behandling av presiseringsgruppe](../dev-itpro/media/swatch_refiner_group.png)
+![Eksempel på behandling av presiseringsgruppe.](../dev-itpro/media/swatch_refiner_group.png)
 
 ## <a name="manage-images-in-commerce-site-builder"></a>Behandle bilder i Commerce-områdebygger
 
@@ -118,7 +118,7 @@ Hvis det brukes bilde-URL-adresser for dimensjonsverdier, må de tilsvarende bil
 
 Illustrasjonen nedenfor viser et eksempel der dialogboksen **Opplastingsfiler** brukes til å laste opp bilder til mediabiblioteket for områdekonfiguratoren. Den uthever kategoriene **Størrelse**, **Farge** og **Stil** som er tilgjengelige for valg.
 
-![Eksempel på bildefilkategorier under opplasting til mediebibliotek for områdekonfigurator](../dev-itpro/media/swatch_sitebuilder.png)
+![Eksempel på bildefilkategorier under opplasting til mediebibliotek for områdekonfigurator.](../dev-itpro/media/swatch_sitebuilder.png)
 
 ## <a name="enable-swatch-display-on-e-commerce-site-pages"></a>Aktivere prøvevisning e-handelsområdesider
 

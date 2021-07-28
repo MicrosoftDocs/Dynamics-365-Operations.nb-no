@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: AssetWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 21481
+ms.custom:
+- "21481"
+- intro-internal
 ms.assetid: d6bb2f19-73b9-43fa-8042-b530c75896bf
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0356837b96fd21f763c9a60926ba1bc982cf2024
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 62b4285f2f5ad93e0a888dd47d22ab5f2caa184c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897994"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355562"
 ---
 # <a name="fixed-assets-home-page"></a>Startside for anleggsmidler
 
@@ -30,13 +32,13 @@ Anleggsmidler er verdivarer som eies av en enkeltperson eller organisasjon. Vare
 
 Du kan definere og skrive inn anskaffelsesinformasjon for anleggsmidler, og deretter behandle midlene ved å avskrive dem og angi en kapitaliseringsterskel for å bestemme avskrivning. Du kan beregne justeringer til anleggsmidlene, og du kan også kvitte deg med dem. Når du bruker økonomimodulen sammen med anleggsmidler, kan du vise gjeldende verdi for alle anleggsmidler. Behandlingen av anleggsmidler samsvare med både internasjonale regnskapsstandarder og regnskapslovgivningen i hvert land/område. Kravene kan inneholde regler for registrering av anskaffelses- og avhendingstransaksjoner, avskrivning, levetid, oppskrivinger og nedskrivinger av anleggsmidler. Anleggsmiddelfunksjonalitet inneholder mange av disse standardene og reglene.
 
-[![Forretningsprosess](./media/FA-process.PNG)](./media/FA-process.PNG)
+[![Forretningsprosess.](./media/FA-process.PNG)](./media/FA-process.PNG)
 
 
 
 ### <a name="additional-resources"></a>Tilleggsressurser
 
-#### <a name="whats-new-and-in-development"></a>Hva er nytt og hva er under utvikling?
+#### <a name="whats-new-and-in-development"></a>Nyheter og under utvikling
 
 Gå til [Lanseringsplaner for Microsoft Dynamics 365](/dynamics365/release-plans/) for å se hvilke nye funksjoner som er planlagt. 
 

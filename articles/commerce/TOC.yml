@@ -930,8 +930,10 @@
                   href: authoring-home-overview.md
                 - name: Behandle brukere og roller
                   href: manage-ecommerce-users-roles.md
-                - name: Bruke lagerinnstillinger
+                - name: Bruk lagerinnstillinger
                   href: inventory-settings.md
+                - name: Bruk innstillinger for legg til produkt i handlekurv
+                  href: add-cart-settings.md
                 - name: Vurderinger for søkemotoroptimalisering (SEO) for området
                   href: search-engine-optimization-considerations.md
                 - name: Behandle policy for innholdssikkerhet (CSP)
@@ -1012,15 +1014,19 @@
                       href: create-dynamic-pages.md
                 - name: Områdenavigering
                   items:
-                    - name: Tilpasse områdenavigering
+                    - name: Tilpass områdenavigering
                       href: customize-site-navigation.md
-                    - name: Opprette en URL-adresse for side
+                    - name: Opprett en URL-adresse for side
                       href: create-page-URL.md
-            - name: Administrere digitale aktiva
+                - name: Adventure Works-tema
+                  items:
+                    - name: Oversikt over Adventure Works-tema
+                      href: adventure-works-theme.md
+            - name: Administrer digitale aktiva
               items:
                 - name: Oversikt over behandling av digitale aktiva
                   href: dam-overview.md
-                - name: Laste opp bilder
+                - name: Last opp bilder
                   href: dam-upload-images.md
                 - name: Laste opp video
                   href: dam-upload-video.md
@@ -1070,6 +1076,16 @@
                       href: add-hero-module.md
                     - name: Videospillermodul
                       href: add-video-player.md
+                    - name: Aktiv bildemodul
+                      href: active-image-module.md
+                    - name: Bildelistemodul
+                      href: image-list-module.md
+                    - name: Interaktiv funksjonsmodul
+                      href: interactive-feature-module.md
+                    - name: Abonnementsmodul
+                      href: subscribe-module.md
+                    - name: Flislistemodul
+                      href: tile-list-module.md
                 - name: Moduler for topptekst og bunntekst
                   items:
                     - name: Topptekstmodul
@@ -1314,6 +1330,10 @@
                   href: localizations/emea-nor-cash-registers.md
                 - name: Retningslinjer for distribusjon for kassaapparater
                   href: localizations/emea-nor-loc-deployment-guidelines.md
+            - name: Russland
+              items:
+                - name: Commerce-lokalisering for Russland
+                  href: localizations/rus-commerce-localization.md
             - name: Sverige
               items:
                 - name: Kassefunksjonalitet
@@ -2142,13 +2162,15 @@
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/commerce/toc.json
                     - name: Konfigurere automatiserte oppgaver
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/commerce/toc.json
-                    - name: Konfigurere godkjenningsprosesser
+                    - name: Konfigurer godkjenningsprosesser
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/commerce/toc.json
-                    - name: Konfigurere godkjenningstrinn
+                    - name: Konfigurer godkjenningstrinn
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/commerce/toc.json
-                    - name: Konfigurere manuelle beslutninger
+                    - name: Konfigurer utgiftskontrollører
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-expenditure-reviewers.md?toc=/dynamics365/commerce/toc.json
+                    - name: Konfigurer manuelle beslutninger
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/commerce/toc.json
-                    - name: Konfigurere betingede beslutninger
+                    - name: Konfigurer betingede beslutninger
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/commerce/toc.json
                     - name: Konfigurere parallelle aktiviteter
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/commerce/toc.json
@@ -2180,7 +2202,7 @@
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/commerce/toc.json
                     - name: Opprette en SubmitToWorkflow-klasse
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/commerce/toc.json
-                    - name: Tilknytte en arbeidsflytdokumentklasse til en arbeidsflyttype
+                    - name: Tilknytt en arbeidsflytdokumentklasse til en arbeidsflyttype
                       href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/commerce/toc.json
                 - name: Rapport for arbeidsflyttyper
                   href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/commerce/toc.json
@@ -2558,7 +2580,9 @@
                   href: dev-itpro/extensions-shipping-carrier-integration.md
                 - name: Utvidelser for kanaldatabase
                   href: dev-itpro/channel-db-extensions.md
-                - name: Aktivere egendefinert CDX-synkronisering via utvidelse
+                - name: Fjern Cloud Scale Unit-utvidelser
+                  href: dev-itpro/retail-sdk/remove-csu-package.md
+                - name: Aktiver egendefinert CDX-synkronisering via utvidelse
                   href: dev-itpro/cdx-extensibility.md
                 - name: Definere og angi ordreattributter
                   href: dev-itpro/order-attributes.md

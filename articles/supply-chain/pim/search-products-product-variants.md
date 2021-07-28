@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0b99f668061f429baf56cddb957049833bd74939
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8867eabde5fb0999e0a67f11cfa29e1e4fbc6855
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5812745"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359987"
 ---
 # <a name="search-for-products-and-product-variants-during-order-entry"></a>Søk etter produkter og produktvarianter under ordreregistrering
 
@@ -58,7 +58,7 @@ Hvis du skriver inn "høyt 05", vil du ikke får noen treff. Dette skyldes at de
 Du kan begrense antallet søkeresultater ved å bruke feltet **Antall resultater** på siden **Salg og markedsføring &gt; Oppsett &gt; Søk &gt; Søkeparametere**. Hvis du setter dette feltet til 0, returneres alle søkeresultatene. Hvis du setter det til 10, returneres det for eksempel maksimalt 10 søkeresultater.
 
 ## <a name="configure-the-product-search"></a>Konfigurere produktsøket
-Før du kan bruke søkefunksjonen for produktet og produktvarianten, følger du denne fremgangsmåten for å konfigurere produktsøket. [![3 trinn for å konfigurere produktsøk\_AXAppFall](./media/3-steps-to-configure-product-search_axappfall.png)](./media/3-steps-to-configure-product-search_axappfall.png)
+Før du kan bruke søkefunksjonen for produktet og produktvarianten, følger du denne fremgangsmåten for å konfigurere produktsøket. [![3 trinn for å konfigurere produktsøk\_AXAppFall.](./media/3-steps-to-configure-product-search_axappfall.png)](./media/3-steps-to-configure-product-search_axappfall.png)
 
 ### <a name="step-1-include-all-the-relevant-product-and-product-variant-identifiers-and-dimensions-in-the-search-criteria"></a>Trinn 1: Ta med ID-er og dimensjoner for alle relevante produkter og produktvarianter i søkekriteriene
 

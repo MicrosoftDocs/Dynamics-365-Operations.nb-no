@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 72b5831e3d2bc2e839b0a569fb314a8ec074a5a1
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b652045b130eca7e8236b4952b7c829e53a2269e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5746417"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352944"
 ---
 # <a name="getenumvaluebyname-er-function"></a>GETENUMVALUEBYNAME ER-funksjonen
 
@@ -62,7 +62,7 @@ Det blir ikke registrert noe unntak hvis en *opplisting*-verdi ikke blir funnet 
 
 I følgende illustrasjon introduseres opplistingen **ReportDirection** i en datamodell. Legg merke til at etiketter er definert for opplistingsverdiene.
 
-![Tilgjengelige verdier for en datamodellopplisting](./media/ER-data-model-enumeration-values.PNG)
+![Tilgjengelige verdier for en datamodellopplisting.](./media/ER-data-model-enumeration-values.PNG)
 
 Illustrasjonen nedenfor viser disse detaljene:
 
@@ -70,7 +70,7 @@ Illustrasjonen nedenfor viser disse detaljene:
 - Uttrykket `$IsArrivals` er utformet for å bruke den modellopplistingsbaserte **$Direction**-datakilden som en parameter for denne funksjonen.
 - Verdien av denne sammenligningen er **SANN**.
 
-![Eksempel på en datamodellopplisting](./media/ER-data-model-enumeration-usage.PNG)
+![Eksempel på en datamodellopplisting.](./media/ER-data-model-enumeration-usage.PNG)
 
 ## <a name="example-2"></a>Eksempel 2
 
@@ -78,14 +78,14 @@ Funksjonene `GETENUMVALUEBYNAME` og [`LISTOFFIELDS`](er-functions-list-listoffie
 
 I følgende illustrasjon introduseres datakilden **TransType** i en modelltilordning. Denne datakilden refererer til programopplistingen **LedgerTransType**.
 
-![Datakilde for en modelltilordning som refererer til en programopplisting](./media/er-functions-text-getenumvaluebyname-example2-1.png)
+![Datakilde for en modelltilordning som refererer til en programopplisting.](./media/er-functions-text-getenumvaluebyname-example2-1.png)
 
 Følgende illustrasjon viser datakilden **TransTypeList** som konfigureres i en modelltilordning. Denne datakilden er konfigurert basert på **TransType**-programopplistingen. Funksjonen `LISTOFFIELDS` brukes til å returnere alle opplistingsverdier som en liste med poster som inneholder felt. På denne måten vises detaljene for hver opplistingsverdi.
 
 > [!NOTE]
 > Feltet **EnumValue** er konfigurert for datakilden **TransTypeList** ved hjelp av uttrykket `GETENUMVALUEBYNAME(TransType, TransTypeList.Name)`. Dette feltet returnerer en nummereringsverdi for hver post i denne listen.
 
-![Datakilde for en modelltilordning som returnerer alle opplistingsverdier for en valgt opplisting som en liste med oppføringer](./media/er-functions-text-getenumvaluebyname-example2-2.png)
+![Datakilde for en modelltilordning som returnerer alle opplistingsverdier for en valgt opplisting som en liste med oppføringer.](./media/er-functions-text-getenumvaluebyname-example2-2.png)
 
 Følgende illustrasjon viser datakilden **VendTrans** som konfigureres i en modelltilordning. Denne datakilden returnerer leverandørtransaksjonsposter fra **VendTrans**-programtabellen. Finanstypen for hver transaksjon defineres av verdien til **TransType**-feltet.
 
@@ -94,11 +94,11 @@ Følgende illustrasjon viser datakilden **VendTrans** som konfigureres i en mode
 >
 > Feltet **TransTypeTitle** er bundet til **LedgerType**-feltet i en datamodell som gjør at denne informasjonen kan brukes i alle ER-format som bruker datamodellen som en datakilde.
 
-![Datakilde for en modelltilordning som returnerer leverandørtransaksjoner](./media/er-functions-text-getenumvaluebyname-example2-3.png)
+![Datakilde for en modelltilordning som returnerer leverandørtransaksjoner.](./media/er-functions-text-getenumvaluebyname-example2-3.png)
 
 Illustrasjonen nedenfor viser hvordan du kan bruke [feilsøkingsprogrammet for datakilde](er-debug-data-sources.md) til å teste den konfigurerte modelltilordningen.
 
-![Bruke feilsøkingsprogrammet for datakilde til å teste den konfigurerte modelltilordningen](./media/er-functions-text-getenumvaluebyname-example2-4.gif)
+![Bruke feilsøkingsprogrammet for datakilde til å teste den konfigurerte modelltilordningen.](./media/er-functions-text-getenumvaluebyname-example2-4.gif)
 
 Feltet **LedgerType** i en datamodell viser etiketter med transaksjonstyper som forventet.
 
