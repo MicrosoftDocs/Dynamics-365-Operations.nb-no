@@ -9,18 +9,18 @@ ms.technology: ''
 ms.search.form: EntAssetWorkOrderLineNote, EntAssetWorkOrderTable, EntAssetWorkOrderActive, EntAssetWorkOrderHoursInfoPart, EntAssetWorkOrderLineListPage, EntAssetWorkOrderAddObjectBOMItem, EntAssetWorkOrderTablePoolAdd, EntAssetWorkOrderPurchReqListPagePreviewPane, EntAssetWorkOrderPoolReferenceAdd, EntAssetWorkOrderWorkspace, EntAssetWorkOrderTableAdjust, EntAssetWorkOrderGantt, EntAssetWorkOrderNotes, EntAssetWorkOrderActivePart, EntAssetWorkOrderTableInfoPart, EntAssetWorkOrderLineListPagePreviewPane, EntAssetWorkOrderTool, EntAssetMobileWorkOrderLineDetails, EntAssetMobileWorkOrderLineList, EntAssetMobileWorkOrderDetails
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b0f33dad05fc9a17fc673525ac5ab79f9cf0ab08
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f66786d634bc08f07d1739af5e49c902640a469a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821639"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352792"
 ---
 # <a name="introduction-to-work-orders"></a>Innføring i arbeidsordrer
 
@@ -51,7 +51,7 @@ Velg **Aktivastyring** > **Felles** > **Arbeidsordrer** > **Alle arbeidsordrer**
 
 Illustrasjonen nedenfor viser et eksempel på listesiden **Alle arbeidsordrer**.
 
-![Figur 1](media/01-work-orders.png)
+![Figur 1.](media/01-work-orders.png)
 
 Klikk på **Aktivastyring** > **Felles** > **Arbeidsordrer** > **Aktive arbeidsordrer** for å se en liste over aktive arbeidsordrer. 
 
@@ -69,7 +69,7 @@ Her er noen måter du kan bruke siden **Alle arbeidsordrer** på:
 
 Illustrasjonen nedenfor viser et eksempel på detaljvisningen **Alle arbeidsordrer**.
 
-![Figur 2](media/02-work-orders.png)
+![Figur 2.](media/02-work-orders.png)
 
 
 Knappene i handlingsruten er ordnet i kategorier. Følgende tabell beskriver kort hvilke knapper som er knyttet til Aktivastyring:

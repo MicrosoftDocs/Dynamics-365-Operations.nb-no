@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5f5cfdcb5e930d2dc5830ad7cd9c85c88b3d40f7
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 7fa0b6f315008e6af774470c775bd34106201b16
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813755"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347122"
 ---
 # <a name="schedule-work-orders"></a>Planlegg arbeidsordrer
 
@@ -56,7 +56,7 @@ Bare arbeidsordrer med en arbeidsordrelivssyklustilstand som tillater planleggin
 
 *Eksempel:* I figuren nedenfor vil formelen som er satt inn i **Forventet start**-feltet, generere arbeidsordreplanlegging for alle arbeidsordrer med forventet startdato en uke fra nå og senere. Denne formelen kan være nyttig når du kjører arbeidsordreplanlegging fortløpende, men vil sikre at arbeidsordrene som er planlagt for de neste 5-6 dagene, ikke planlegges på nytt.
 
-![Figur 1](media/03-work-order-scheduling.png)
+![Figur 1.](media/03-work-order-scheduling.png)
 
 Arbeidsordretypen som er knyttet til arbeidsordrer, kan definere planlegging for én vedlikeholdsperson (**Aktivastyring** > **Oppsett** > **Arbeidsordrer** > **Arbeidsordretyper** > **Én vedlikeholdsperson**-veksleknappen satt til Ja). Dette betyr at hvis arbeidsordretypen brukes i en arbeidsordre, settes veksleknappen **Én vedlikeholdsperson** automatisk til Ja på detaljsiden **Alle arbeidsordrer** > **Hode**-visningen > **Tidsplan**-hurtigfanen. Under arbeidsordreplanleggingen vil alle arbeidsordrejobber som opprettes i arbeidsordren, bli planlagt til samme vedlikeholdsperson. Hvis det er nødvendig, kan du redigere valget på **Én vedlikeholdsperson**-veksleknappen i **Alle arbeidsordrer** slik at du kan planlegge flere arbeidere eller én arbeider for arbeidsordrejobbene.
 

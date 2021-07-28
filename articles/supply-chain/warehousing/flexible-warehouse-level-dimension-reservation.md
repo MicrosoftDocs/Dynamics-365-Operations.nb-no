@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: ed90e773e1b8c90afc119a471cf844941ad19226
-ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
+ms.openlocfilehash: eca0b61e1fa6760bfed1a9f9979deddccf6fb1a5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "6103052"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343780"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Fleksibel dimensjonsreservasjonspolicy for lagernivå
 
@@ -58,7 +58,7 @@ Selv om *Parti under\[plassering\]*-reservasjonshierarkiet tjener selskapets for
 
 For å imøtekomme ønsket fleksibilitet i partireservasjonsatferden for varer som er assosiert med et *Parti-under\[plassering\]*-beholdningsreservasjonshierarki, må beholdningsledere merke av i **Tillat reservasjon på etterspørselsordre**-avmerkingsboksen for **Partinummer**-nivået på **Beholdningsreservasjonshierarkier**-siden.
 
-![Gjøre beholdningsreservasjonshierarkiet fleksibelt](media/Flexible-inventory-reservation-hierarchy.png)
+![Gjøre beholdningsreservasjonshierarkiet fleksibelt.](media/Flexible-inventory-reservation-hierarchy.png)
 
 Når **Partinummer**-nivået i hierarkiet er valgt, vil alle dimensjoner over det nivået og opp gjennom **Plassering**-nivået valgt automatisk. (Som standard er alle dimensjoner over **Plassering**-nivået forhåndsvalgt.) Denne atferden gjenspeiler logikken der alle dimensjoner i området mellom partinummeret og plasseringen også reserveres automatisk etter at du har reservert et spesifikt partinummer på ordrelinjen.
 
@@ -145,7 +145,7 @@ For dette eksempelet må demonstrasjonsdata være installert, og du må bruke **
 
 6. På **Partireservasjon**-siden velger du linjen for parti **B11**, og velger deretter **Reserver linje**. Det er ikke angitt noen logikk for tilordning av plasseringen og nummerskilt under automatisk reservasjon. Du kan angi kvantiteten manuelt i **Reservasjon**-feltet. Vær oppmerksom på at **Partinumre bundet til kildelinjen**-hurtigfanen, parti **B11** vises som **Bind**.
 
-    ![Binde et spesifikt partinummer til en salgsordrelinje på Partireservasjon-siden](media/Batch-reservation-form-with-order-committed-reservation.png)
+    ![Binde et spesifikt partinummer til en salgsordrelinje på Partireservasjon-siden.](media/Batch-reservation-form-with-order-committed-reservation.png)
 
     > [!NOTE]
     > Reservasjon av kvantiteten på en salgsordrelinje kan utføres på tvers av flere partier. På samme måte kan reservasjon av samme parti utføres mot flere plasseringer og nummerskilt (hvis nummerskilt er aktivert for plasseringene).
@@ -154,7 +154,7 @@ For dette eksempelet må demonstrasjonsdata være installert, og du må bruke **
 
 7. Gå til **Administrering av produktinformasjon** \> **Produkter** \> **Frigitte produkter**. Velg varen, og velg deretter **Administrer beholdning** \> **Vis** \> **Transaksjoner**.
 
-    ![Ordreigangsatt reservasjon som lagertransaksjonstype](media/Inventory-transactions-for-order-committed-reservation.png)
+    ![Ordreigangsatt reservasjon som lagertransaksjonstype.](media/Inventory-transactions-for-order-committed-reservation.png)
 
 8. Gjennomgå varens lagertransaksjoner som er knyttet til salgsordrelinjereservasjonen.
 
@@ -172,7 +172,7 @@ For dette eksempelet må demonstrasjonsdata være installert, og du må bruke **
     - For opprettelse av arbeid bruker systemet arbeidsmaler, men ikke plasseringsdirektiver. Alle standardinnstillingene som er definert for arbeidsmaler, for eksempel et maksimalt antall plukklinjer eller en bestemt måleenhet, brukes for å bestemme når nytt arbeid skal opprettes. Reglene som er assosiert med plasseringsdirektiver for identifisering av plukkplasseringer blir ikke vurdert, fordi den ordreigangsatte reservasjonen allerede angir alle beholdningsdimensjonene. Disse beholdningsdimensjonene inkluderer dimensjonene på lageroppbevaringsnivået. Derfor arver arbeidet disse dimensjonene uten å måtte sjekke plasseringsdirektiver.
     - Partinummeret vises ikke på plukklinjen (noe som også er tilfelle for arbeidslinjen som opprettes for en vare som har et tilknyttet *Parti-over\[plassering\]*-reservasjonshierarki). I stedet vises "fra"-partinummeret og alle andre lagringsdimensjoner på arbeidslinjens arbeidsbeholdningstransaksjon som det henvises til fra de tilhørende beholdningstransaksjonene.
 
-        ![Lagerbeholdningstransaksjon for arbeid som stammer fra ordreigangsatt reservasjon](media/Work-inventory-transactions-for-order-committed-reservation.png)
+        ![Lagerbeholdningstransaksjon for arbeid som stammer fra ordreigangsatt reservasjon.](media/Work-inventory-transactions-for-order-committed-reservation.png)
 
     - Etter at arbeidet er opprettet, blir varens beholdningstransaksjon der **Referanse**-feltet er satt til **Ordreigangsatt reservasjon**, fjernet. Beholdningstransaksjonen der **Referanse**-feltet er satt til **Arbeid**, inneholder nå den fysiske reservasjonen for alle beholdningsdimensjoner for kvantiteten.
 
@@ -207,7 +207,7 @@ Før du kan bruke fleksibel nummerskiltreservering, må to funksjoner aktiveres 
 
 Hvis du vil aktivere nummerskiltreservering for en ordre, må du merke av for **Tillat reservasjon på etterspørselsordre** for **Nummerskilt**-nivået på siden **Beholdningsreservasjonshierarkier** for hierarkiet som er knyttet til den aktuelle varen.
 
-![Siden Beholdningsreservasjonshierarkier for et fleksibelt hierarki for nummerskiltreservasjon](media/Flexible-LP-reservation-hierarchy.png)
+![Siden Beholdningsreservasjonshierarkier for et fleksibelt hierarki for nummerskiltreservasjon.](media/Flexible-LP-reservation-hierarchy.png)
 
 Du kan aktivere reservasjon av nummerskilt for ordren på et hvilket som helst sted i distribusjonen. Denne endringen påvirker ikke reservasjoner eller åpent lagerarbeid som ble opprettet før endringen fant sted. Du kan imidlertid ikke fjerne merket for **Tillat reservasjon på etterspørselsordre** hvis det finnes åpne utgående beholdningstransaksjoner med utstedelsesstatusen *På bestilling*, *Reservert bestilt* eller *Reservert fysisk* for én eller flere varer som er tilknyttet til dette reservasjonshierarkiet.
 
@@ -227,7 +227,7 @@ Når salgsordrelinjen som bruker en tildelt nummerskiltreservasjon, behandles av
 
 Hvis en lagerarbeidsvare består av linjer som er lik en fullstendig pall og har antall igangsatt av nummerskilt, kan du optimalisere plukkeprosessen ved å bruke menyelementet for en mobilenhet der alternativet **Behandle etter nummerskilt** er satt til *Ja*. En lagerarbeider kan deretter skanne et nummerskilt for å fullføre en plukking i stedet for å måtte skanne varene fra arbeidet én etter én.
 
-![Menyelementet for mobilenhet der alternativet Behandle etter nummerskilt er satt til Ja](media/Handle-by-LP-menu-item.png)
+![Menyelementet for mobilenhet der alternativet Behandle etter nummerskilt er satt til Ja.](media/Handle-by-LP-menu-item.png)
 
 Fordi funksjonen **Behandle etter nummerskilt** ikke støtter arbeid som dekker flere paller, er det bedre å ha et separat arbeidselement for forskjellige nummerskilt. Hvis du vil bruke denne fremgangsmåten, legger du til eltet **ID for ordreigangsatt nummerskilt** som et arbeidshodeskift på **Arbeidsmal**-siden.
 
@@ -249,7 +249,7 @@ Dette scenarioet refererer til verdier og poster som er inkludert i standard dem
 1. I **Navn**-feltet angir du en verdi (for eksempel *FlexibleLP*).
 1. I **Beskrivelse**-feltet angir du en verdi (for eksempel *Fleksibel nummerskiltreservasjon*).
 1. I **Valgt**-listen velger du **Partinummer**, **Serienummer** og **Eier**.
-1. Velg **Fjern**-knappen ![bakoverpil](media/backward-button.png) for å flytte de valgte oppføringene til listen **Tilgjengelig**.
+1. Velg **Fjern**-knappen ![bakoverpil.](media/backward-button.png) for å flytte de valgte postene til **Tilgjengelig**-listen.
 1. Velg **OK**.
 1. I raden for **Nummerskilt**-dimensjonsnivået merker du av i **Tillat reservasjon på etterspørselsordre**-avmerkingsboksen. **Plassering**-nivået velges automatisk, og du kan ikke fjerne avmerkingen i avmerkingsboksen for det.
 1. Velg **Lagre**.

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-03-15
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: fe533052b0e5b04a7d27b954ba644761c631d6d7
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1bddb76d17b65e3485680675b77750fca714407d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838867"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350078"
 ---
 # <a name="numbering-documents-and-vouchers-chronologically"></a>Nummerere dokumenter og bilag kronologisk
 
@@ -69,7 +69,7 @@ Hvis du vil definere nummerserier, kan du gå til **Organisasjonsstyring** > **N
 
 Angi et selskap for hver nummerserie. Segmentene i nummerseriene må defineres slik at de gir kronologisk rekkefølge for perioder. Segmentnavnene kan for eksempel inneholde et spesielt prefiks som identifiserer en bestemt periode.
 
-![Oppsett av nummerserier](media/chrono-num-sequence.jpg)
+![Oppsett av nummerserier.](media/chrono-num-sequence.jpg)
 
 ### <a name="configure-number-sequence-groups"></a>Konfigurere nummerseriegrupper
 
@@ -77,7 +77,7 @@ Hvis du vil konfigurere nummerseriegrupper, kan du gå til **Kunde** > **Oppsett
 
 For hver gruppe i **Referanse**-delen velger du en av dokumentreferansene som støttes, og i **Nummerseriekode**-feltet kan du se en nummerserie som ble opprettet tidligere for den tilknyttede perioden.
 
-![Oppsett av nummerseriegruppe](media/chrono-num-sequence-group.jpg)
+![Oppsett av nummerseriegruppe.](media/chrono-num-sequence-group.jpg)
 
 På samme måte konfigurerer du nummerseriegrupper i modulene **Leverandør** og **Prosjektstyring og regnskap**.
 
@@ -85,7 +85,7 @@ På samme måte konfigurerer du nummerseriegrupper i modulene **Leverandør** og
 
 Hvis du vil konfigurere kronologi for nummerseriegrupper, kan du gå til **Organisasjonsstyring** > **Nummerserier** > **Kronologiske nummerseriegrupper**. Definere anvendelsesvilkår for nummerseriegrupper.
 
-![Oppsett av kronologiske numre](media/chrono-num-sequence-group-period.jpg)
+![Oppsett av kronologiske numre.](media/chrono-num-sequence-group-period.jpg)
 
 | Felt            | beskrivelse                                                                                                                                                                                                                                                                                                                                                                                   |
 |---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

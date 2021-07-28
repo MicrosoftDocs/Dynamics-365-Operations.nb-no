@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 9c776cedb65804f8cadbe324082c2abac435f906
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: f9953d1a996f6f68600a7fd04719e9b112494175
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186620"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349903"
 ---
 #  <a name="vat-declaration-for-egypt-eg-00002"></a>MVA-deklarering for Egypt (EG-00002)
 
@@ -77,7 +77,7 @@ Ved hjelp av de programspesifikke parameterne kan du fastsette kriteriene for hv
 
 Rapportene i salgs- og innkjøpsboken for Egypt inkluderer et sett med kolonner som samsvarer med bestemte transaksjonsklassifiseringer som typer operasjoner, produkter og dokumenter som er spesifikke for Egypt. I stedet for å inkludere disse nye klassifiseringene som nye oppføringsdata når transaksjonene posteres, bestemmes klassifiseringene basert på forskjellige oppslag som introduseres i **Konfigurasjoner** > **Konfigurere programspesifikke parametere** > **Oppsett** for å oppfylle mva-kravene for Egypt. 
 
-![Siden Programspesifikke parametere](media/egypt-vat-declaration-setup1.png)
+![Siden Programspesifikke parametere.](media/egypt-vat-declaration-setup1.png)
 
 Disse følgende oppslagskonfigurasjonene brukes til å klassifisere transaksjonene i rapporter for mva-bøker for innkjøp og salg.
 
@@ -206,7 +206,7 @@ Hvis du vil generere mva-returskjemarapporten formatet Microsoft Excel, definere
 2. Velg **Mva-deklarering Excel (EG)** i feltet **Tilordning av format for mva-oppgave** i delen **Mva-alternativer** i fanen **Mva**. Hvis du lar feltet stå tomt, genereres standard mva-rapport i SSRS-format.
 3. Velg **Kategorihierarki**. Ved hjelp av denne kategorien kan varekoden i transaksjoner for fanen Utenrikshandel tillate at brukere kan velge og klassifisere varer og tjenester. Beskrivelsen av denne klassifiseringen er beskrevet i salgs- og innkjøpstransaksjonsrapporter. Denne konfigurasjonen er valgfri.
 
-![Deklareringsskjema](media/egypt-vat-declaration-setup2.png)
+![Deklareringsskjema.](media/egypt-vat-declaration-setup2.png)
 
 
 ## <a name="generate-a-vat-return-report"></a>Generere en rapport for mva-retur

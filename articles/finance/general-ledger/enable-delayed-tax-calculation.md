@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-09-18
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: acf5ead6ed90d4dbb41de08520cde8085a7f3935
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c58a5bfbc140eb770415a96d1d9c5748e3e2d132
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823722"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350030"
 ---
 # <a name="enable-delayed-tax-calculation-on-journals"></a>Aktivere forsinket avgiftsberegning i journaler
 [!include [banner](../includes/banner.md)]
@@ -45,14 +45,14 @@ Systemet gir prioritet til innstillingen for journalhodet. Som standard hentes d
 1. Gå til **Økonomimodul \> Finansoppsett \> Parametere for økonomimodul**.
 2. I kategorien **Merverdiavgift** i hurtigfanen **Generelt** angir du alternativet **Forsinket avgiftsberegning** til **Ja**.
 
-![Parametere for økonomimodul-bildet](media/delayed-tax-calculation-gl.png)
+![Parametere for økonomimodul-bildet.](media/delayed-tax-calculation-gl.png)
 
 ## <a name="turn-on-delayed-tax-calculation-at-the-journal-name-level"></a>Aktivere forsinket mva-beregning på journalnavnnivå
 
 1. Gå til **Økonomimodul \> Journaloppsett \> Journalnavn**.
 2. I hurtigfanen **Generelt** i delen **Merverdiavgift** angir du alternativet **Forsinket avgiftsberegning** til **Ja**.
 
-![Journalnavnbilde](media/delayed-tax-calculation-journal-name.png)
+![Journalnavnbilde.](media/delayed-tax-calculation-journal-name.png)
 
 ## <a name="turn-on-delayed-tax-calculation-at-the-journal-header-level"></a>Aktivere forsinket mva-beregning på journalhodenivå
 
@@ -61,7 +61,7 @@ Systemet gir prioritet til innstillingen for journalhodet. Som standard hentes d
 3. Velg et journalnavn.
 4. I kategorien **Oppsett** setter du alternativet for **Forsinket avgiftsberegning** til **Ja**.
 
-![Bilde av økonomijournalsiden](media/delayed-tax-calculation-journal-header.png)
+![Bilde av økonomijournalsiden.](media/delayed-tax-calculation-journal-header.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

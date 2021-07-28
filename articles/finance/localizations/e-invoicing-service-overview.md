@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 97423
+ms.custom:
+- "97423"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: a6a8ea3fcad980dc02f489e07a7b21fe1c1b5a5a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: c3a0cc24a77b29cedaa10ebb4d6e2ad2a4cbf629
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839986"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344764"
 ---
 # <a name="electronic-invoicing-overview"></a>Oversikt over elektronisk fakturering
 
@@ -98,7 +100,7 @@ Når Elektronisk fakturering er installert fra LCS, og det nødvendige oppsettet
 
 Illustrasjonen nedenfor viser hvordan dataflyter til og fra Elektronisk fakturering.
 
-![Dataflyt for Elektronisk fakturering](media/e-invoicing-service-data-flow-diagram-overview.png)
+![Dataflyt for Elektronisk fakturering.](media/e-invoicing-service-data-flow-diagram-overview.png)
 
 ## <a name="privacy-notice"></a>Personvernerklæring
 Aktivering og bruk av Elektronisk fakturering kan kreve sending av begrensede data, som inkluderer registrerings-IDen for organisasjonen. Dette overføres til tredjepartsleverandører autorisert av skattemyndighetene for å sende elektroniske fakturaer i de forhåndsdefinerte formatene som kreves for integrering med disse myndighetenes webtjenester. Data som er importert fra disse eksterne systemene til denne Dynamics 365-elektroniske tjenesten, er underlagt vår [personvernerklæring](https://go.microsoft.com/fwlink/?LinkId=512132). Hvis du vil ha mer informasjon, kan du se delene om personvernerklæring i dokumentasjon for landspesifikke funksjoner.

@@ -8,18 +8,20 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 92303
+ms.custom:
+- "92303"
+- intro-internal
 ms.assetid: 65ca9992-bbfa-4224-bf0e-067a25c7e6a4
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 42934a88065da015334455b6c37f57591611360f
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 92077c0d8a9c9f3820171fd4ffd8aedb02f59602
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188131"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359867"
 ---
 # <a name="sales-and-marketing-overview"></a>Oversikt over salg og markedsføring
 
@@ -29,18 +31,18 @@ Du kan bruke salg og markedsføring til å hente, lagre og bruke ulike typer dat
 
 ## <a name="marketing"></a>Markedsføring
 
-Du bruker markedsføringskampanjer og aktiviteter for å finne og bygge relasjoner med potensielle kunder, slik at de første samhandlingene kan utvikles til salgsrelasjoner. Denne arbeidsflyten viser forretningsprosessen for markedsføring. [![Forretningsprosess for markedsføring](./media/marketing01.jpg)](./media/marketing01.jpg)
+Du bruker markedsføringskampanjer og aktiviteter for å finne og bygge relasjoner med potensielle kunder, slik at de første samhandlingene kan utvikles til salgsrelasjoner. Denne arbeidsflyten viser forretningsprosessen for markedsføring. [![Forretningsprosess for markedsføring.](./media/marketing01.jpg)](./media/marketing01.jpg)
 
 ### <a name="relationships"></a>Relasjoner
 
-I salg og markedsføring kan de første samhandlingene du har med potensielle kunder, oppstå i ulike situasjoner. Du finner for eksempel en potensiell kunde mens du deltar på en varemesse, eller du kan ha et mulig kundeemne med en kunde etter at organisasjonen har kjørt en masseutsendelseskampanje. Det er svært viktig at du forstår flyten for enheten for en part før denne parten blir en kunde. Grafikken nedenfor viser flyten for enhetsrelasjoner når en potensiell kunde blir en faktisk kunde. [![Salg og markedsføring 01](./media/salesandmarketing01.jpg)](./media/salesandmarketing01.jpg)
+I salg og markedsføring kan de første samhandlingene du har med potensielle kunder, oppstå i ulike situasjoner. Du finner for eksempel en potensiell kunde mens du deltar på en varemesse, eller du kan ha et mulig kundeemne med en kunde etter at organisasjonen har kjørt en masseutsendelseskampanje. Det er svært viktig at du forstår flyten for enheten for en part før denne parten blir en kunde. Grafikken nedenfor viser flyten for enhetsrelasjoner når en potensiell kunde blir en faktisk kunde. [![Salg og markedsføring 01.](./media/salesandmarketing01.jpg)](./media/salesandmarketing01.jpg)
 
 ### <a name="campaigns"></a>Kampanjer
 
 En kampanje er målrettet mot kontakter for prospekter, kundeemner, salgsmuligheter og kunder som er valgt til å delta i kampanjen. I Supply Chain Management kan du kan opprette flere typer kampanjer, for eksempel telemarketing, post- og e-post-kampanjer, for maksimere kundepotensialet. Etter hvert som kampanjen går fremover og du får positive svar, kan du starte salgsprosessen med disse mottakerne som har respondert positivt på kampanjen.
 
 ## <a name="sales"></a>Salg
-Du kan bruke salgsfunksjonaliteten til å opprette tilbud, mersalg og kryssalg til nye og eksisterende kunder, opprette salgsordrer og opprette salgsfakturaer for kunder. Denne arbeidsflyten viser forretningsprosessen for salg. [![Forretningsprosess for salg](./media/sales01.jpg)](./media/sales01.jpg)
+Du kan bruke salgsfunksjonaliteten til å opprette tilbud, mersalg og kryssalg til nye og eksisterende kunder, opprette salgsordrer og opprette salgsfakturaer for kunder. Denne arbeidsflyten viser forretningsprosessen for salg. [![Forretningsprosess for salg.](./media/sales01.jpg)](./media/sales01.jpg)
 
 ### <a name="sales-quotations"></a>Salgstilbud
 

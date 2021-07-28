@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 5204fb80dcf3dc2342e9d37f18b9d4f587de1808
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: e84f882f69fbc7fceae8a6e0332716a82830dfdc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754300"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344054"
 ---
 # <a name="row-definitions-in-financial-report-designer"></a>Raddefinisjoner i Utforming av finansrapport
 
@@ -158,7 +158,7 @@ Formateringen som er angitt i raddefinisjonen, overstyrer all formatering som er
 
 1. Åpne raddefinisjonen som skal endres, i Rapportutforming.
 2. Velg cellene som skal formateres. Hvis du vil velge flere celler, holder du nede CTRL-tasten når du velger cellen.
-3. Klikk på verktøylinjeknappen for formatet som skal brukes. Hvis du for eksempel vil rykke inn en rad, velger du raden og klikk deretter **Øk innrykk** ![Øk innrykk](media/indent.gif "Øk innrykk") på verktøylinjen.
+3. Klikk på verktøylinjeknappen for formatet som skal brukes. Hvis du for eksempel vil rykke inn en rad, velger du raden og klikk deretter **Øk innrykk** ![Øk innrykk.](media/indent.gif "Øk innrykk") på verktøylinjen.
 
 ### <a name="adjust-columns-while-you-design-reports"></a>Justere kolonner mens du utformer rapporter
 

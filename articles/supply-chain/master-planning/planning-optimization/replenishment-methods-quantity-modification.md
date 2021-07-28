@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d5e0e671e624de2646a47647ef08d3567599b884
-ms.sourcegitcommit: 4cbd83e21a78459e4711a2dedba0f5a7acc3c841
+ms.openlocfilehash: d693d306929140c9640ed34d756399d70b81a12f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "6261702"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347764"
 ---
 # <a name="replenishment-methods-and-quantity-modification"></a>Etterfyllingsmetoder og antallsendring
 
@@ -34,15 +34,15 @@ Følgende dekningskoder kan brukes i planleggingsoptimalisering:
 
 - **Periode** – Etterfyllingsmetoden kombinerer alt behovet for en periode i én ordre for produktet. Ordren vil bli planlagt for den første dagen i perioden, og antallet vil oppfylle nettobehovet i den etablerte perioden. Perioden begynner med det første behovet for produktet og dekker den definerte tidslengden. Neste periode starter med de neste behovene til produktet. *Periode*-dekningskoden brukes ofte for ikke-forutsigbare lagertrekk, sesongprodukter eller produkter med høy kostnad. Illustrasjonen nedenfor viser et eksempel.
 
-    ![Eksempel på bruk av Periode-dekningskode](./media/coverage-code-period.png "Eksempel på bruk av Periode-dekningskode")
+    ![Eksempel på bruk av Periode-dekningskode.](./media/coverage-code-period.png "Eksempel på bruk av Periode-dekningskode")
 
 - **Behov** – I etterfyllingsmetoden oppretter systemet et bestillingsforslag, en overføring eller en produksjonsordre per behov for produktet. Denne metoden brukes for kostbare produkter som har uregelmessig etterspørsel. Dekningskoden *Behov* brukes ofte for konfigurerbare produkter eller bestillingsscenarier. Illustrasjonen nedenfor viser et eksempel.
 
-    ![Eksempel på bruk av Behov-dekningskode](./media/coverage-code-requirement.png "Eksempel på bruk av Behov-dekningskode")
+    ![Eksempel på bruk av Behov-dekningskode.](./media/coverage-code-requirement.png "Eksempel på bruk av Behov-dekningskode")
 
 - **Min/maks** – Etterfyllingsmetoden er basert på lagernivået. Den definerer etterfyllingen av lager opptil et bestemt nivå når det forutsagte lagerbeholdningsnivået er under en bestemt terskel. Etterfyllingsantallet vil være differansen mellom maksimumsnivået og det forhåndsberegnede nivået. Dekningskoden *Min/maks* brukes ofte til forutsigbare lagertrekk, mest solgte produkter eller billigste produkter. Illustrasjonen nedenfor viser et eksempel.
 
-    ![Eksempel på bruk av Min/maks-dekningskode](./media/coverage-code-min-max.png "Eksempel på bruk av Min/maks-dekningskode")
+    ![Eksempel på bruk av Min/maks-dekningskode.](./media/coverage-code-min-max.png "Eksempel på bruk av Min/maks-dekningskode")
 
 - **Manuell** – I etterfyllingsmetoden foreslår ikke systemet kjøps-, overførings- eller produksjonsordrer for produktet. I stedet er det planleggeren for produktet som er ansvarlig for å opprette de nødvendige ordrene for etterfylling av produktet. Den *manuelle* dekningskoden brukes ofte for produkter som systemgenererte planlagte bestillinger ikke er ønsket for.
 

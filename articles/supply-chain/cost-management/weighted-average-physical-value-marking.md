@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2a9cdd16f0a1592690547a687a731de83a720018
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: ce87f14c17aa44d73de22e7f1711794a499c67de
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5830130"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352718"
 ---
 # <a name="weighted-average-with-physical-value-and-marking"></a>Direkte utligning med fysisk verdi og merking
 
@@ -65,7 +65,7 @@ I scenariet i følgende deler er økonomisk oppdaterte avganger og tilganger pos
 
 Diagrammet nedenfor illustrerer denne serien av transaksjoner, og viser virkningen av å velge lagermodellen for avveid gjennomsnitt og prinsippet for direkte utligning uten alternativet Ta med fysisk verdi. 
 
-![Direkte utligning for avveid gjennomsnitt uten ta med fysisk verdi](./media/weightedaveragedirectsettlementwithoutincludephysicalvalue.gif) 
+![Direkte utligning for avveid gjennomsnitt uten ta med fysisk verdi.](./media/weightedaveragedirectsettlementwithoutincludephysicalvalue.gif) 
 
 **Nøkkel til diagram**
 - Lagertransaksjoner vises med loddrette piler.
@@ -99,7 +99,7 @@ Følgende transaksjoner illustreres i grafikken nedenfor:
 
 Diagrammet nedenfor illustrerer denne serien av transaksjoner, og viser virkningen av å velge lagermodellen for avveid gjennomsnitt og prinsippet for summert utligning uten alternativet Ta med fysisk verdi. 
 
-![Summert utligning for avveid gjennomsnitt uten ta med fysisk verdi](./media/weightedaveragesummarizedsettlementwithoutincludephysicalvalue.gif) 
+![Summert utligning for avveid gjennomsnitt uten ta med fysisk verdi.](./media/weightedaveragesummarizedsettlementwithoutincludephysicalvalue.gif) 
 
 **Nøkkel til diagram**
 - Lagertransaksjoner vises med loddrette piler.
@@ -128,7 +128,7 @@ Følgende transaksjoner illustreres i grafikken nedenfor:
 
 Diagrammet nedenfor illustrerer denne serien av transaksjoner, og viser virkningen av å velge lagermodellen for avveid gjennomsnitt og prinsippet for direkte utligning med alternativet Ta med fysisk verdi. 
 
-![Direkte utligning for avveid gjennomsnitt uten ta med fysisk verdi](./media/weightedaveragedirectsettlementwithincludephysicalvalue.gif) 
+![Direkte utligning for avveid gjennomsnitt uten ta med fysisk verdi.](./media/weightedaveragedirectsettlementwithincludephysicalvalue.gif) 
 
 **Nøkkel til diagram**
 - Lagertransaksjoner vises med loddrette piler.
@@ -161,7 +161,7 @@ Følgende transaksjoner illustreres i grafikken nedenfor:
 
 Diagrammet nedenfor illustrerer denne serien av transaksjoner, og viser virkningen av å velge lagermodellen for avveid gjennomsnitt og prinsippet for summert utligning uten alternativet Ta med fysisk verdi. 
 
-![Summert utligning for avveid gjennomsnitt med ta med fysisk verdi](./media/weightedaveragesummarizedsettlementwithincludephysicalvalue.gif) 
+![Summert utligning for avveid gjennomsnitt med ta med fysisk verdi.](./media/weightedaveragesummarizedsettlementwithincludephysicalvalue.gif) 
 
 **Nøkkel til diagram**
 - Lagertransaksjoner vises med loddrette piler.
@@ -209,7 +209,7 @@ Det nye glidende gjennomsnittet av kostprisen gjenspeiler gjennomsnittet av de �
 
 Diagrammet nedenfor illustrerer denne serien av transaksjoner, og viser virkningen av å velge lagermodellen for avveid gjennomsnitt med merking. 
 
-![Avveid gjennomsnitt med merking](./media/weightedaveragewithmarking.gif) 
+![Avveid gjennomsnitt med merking.](./media/weightedaveragewithmarking.gif) 
 
 **Nøkkel til diagram**
 - Lagertransaksjoner vises med loddrette piler.

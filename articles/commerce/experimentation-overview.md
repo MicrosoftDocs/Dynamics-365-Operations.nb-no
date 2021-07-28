@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 7e415bc0a4ced11c5bb8393fe5dfe03a5f7cdd6c
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 658396e87b3007216f6fa11c6ad3923daeb8a67d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798993"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349334"
 ---
 # <a name="experimentation-in-dynamics-365-commerce"></a>Eksperimentering i Dynamics 365 Commerce
 Bruk eksperimentering i Dynamics 365 Commerce for å validere hypoteser om effektiviteten til dine e-handelssider og ta avgjørelser med datadrevet selvtillit. Commerce støtter A/B-testing for sider, moduler og fragmenter, og lar deg måle virkningen av foreslåtte endringer på nettstedet ditt.
@@ -39,7 +39,7 @@ Du kan opprette, redigere og behandle side- og innholdsbehandling, kalt **varias
 ## <a name="experimentation-lifecycle"></a>Livssyklus for eksperimentering
 Konfigurasjon av et eksperiment, oppretting av variasjoner og kjøring av et eksperiment er en gjentakende prosess. Diagrammet nedenfor illustrerer livssyklusen for eksperimentering i Commerce og tredjepartstjenesten. 
 
-[ ![Livssyklus for eksperimentering](./media/experimentation_lifecycle.svg) ](./media/experimentation_lifecycle.svg#lightbox)
+[ ![Livssyklus for eksperimentering.](./media/experimentation_lifecycle.svg) ](./media/experimentation_lifecycle.svg#lightbox)
 
 Hvis du vil finne ut mer om hvert trinn i eksperimenteringsprosessen, kan du se emnene nedenfor.
 - [Identifisere en hypotese og fastslå måledataene for et eksperiment](experimentation-identify.md)

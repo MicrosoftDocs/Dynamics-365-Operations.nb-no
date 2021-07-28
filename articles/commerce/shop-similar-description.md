@@ -16,12 +16,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: ce01ef1d4b916d955685b4d01dafd3d54d6fcebd
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: baf6064fbddc3b49cfb0d950896c0b448bddb560
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795411"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357792"
 ---
 # <a name="enable-shop-similar-description-recommendations"></a>Aktivere anbefalinger av typen Kjøp lignende beskrivelse
 
@@ -79,7 +79,7 @@ Hvis du vil legge til en **Kjøp med lignende beskrivelse**-knapp for en PDP ved
 
 Den følgende illustrasjonen viser avmerkingsboksen **Aktiver kobling til kjøp med lignende beskrivelse** og knappen **Kjøp med lignende beskrivelse** i et eksempel-PDP i områdebyggeren.
 
-![Avmerkingsboksen Aktiver kobling til kjøp med lignende beskrivelse og knappen Kjøp med lignende beskrivelse på en PDP i områdebyggeren](./media/ter_site_builder_buybox_button.png)
+![Avmerkingsboksen Aktiver kobling til kjøp med lignende beskrivelse og knappen Kjøp med lignende beskrivelse på en PDP i områdebyggeren.](./media/ter_site_builder_buybox_button.png)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

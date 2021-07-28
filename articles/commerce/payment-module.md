@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 09c7504eda0d389738b9d13b73f33472dc8f5fe3
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 1d4aaa40ee0128a281fe76072e021774a52c9a9e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804485"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352330"
 ---
 # <a name="payment-module"></a>Betalingsmodul
 
@@ -46,7 +46,7 @@ Adyen-betalingskoblingen støtter også sterk kundegodkjenning (SCA). En del av 
 
 Følgende illustrasjon viser et eksempel på en gavekort-, fordels- og Adyen-betalingsmodul på en kasseside.
 
-![Eksempel på en gavekort-, fordelspoeng- og Adyen-betalingsmodul på en kasseside](./media/ecommerce-payments.PNG)
+![Eksempel på en gavekort-, fordelspoeng- og Adyen-betalingsmodul på en kasseside.](./media/ecommerce-payments.PNG)
 
 ## <a name="dynamics-365-payment-connector-for-paypal"></a>Dynamics 365 Payment Connector for PayPal
 
@@ -59,10 +59,10 @@ Når betalingsmodulen er konfigurert til å bruke PayPal-betalingskoblingen, vis
 PayPal-betalingskoblingen krever ikke en faktureringsadressemodul fordi alle faktureringsrelaterte opplysninger håndteres av PayPal i dens iframe. Du trenger imidlertid modulene leveringsadresse og leveringsalternativer.
 
 Følgende illustrasjon viser et eksempel på to betalingsmoduler på en utsjekkingsside, en som er konfigurert med Adyen-betalingskoblingen og den andre med PayPal-betalingskoblingen.
-![Eksempel på Adyen- og PayPay-betalingsmoduler på en kasseside](./media/ecommerce-paypal.png)
+![Eksempel på Adyen- og PayPay-betalingsmoduler på en kasseside.](./media/ecommerce-paypal.png)
 
 Følgende illustrasjon viser et eksempel på PayPal iframe som aktiveres ved hjelp av PayPal-knappen. 
-![Eksempel på Paypal iframe på en utsjekkingsside](./media/ecommerce-paypal-iframe.png)
+![Eksempel på Paypal iframe på en utsjekkingsside.](./media/ecommerce-paypal-iframe.png)
 
 ## <a name="payment-module-properties"></a>Egenskaper for betalingsmodul
 
@@ -76,7 +76,7 @@ Følgende illustrasjon viser et eksempel på PayPal iframe som aktiveres ved hje
 |Er primærbetaling|  **Sann** eller **Usann** | Hvis den er **sann**, vil eventuelle feilmeldinger bli generert fra primærbetalingskoblingen på betalingssiden. Hvis både Adyen- og PayPal-betalingskoblingene er konfigurert, setter du Adyen til **sann**, som ble lagt til i Commerce-utgivelsen 10.0.14.|
 
 Følgende illustrasjon viser et eksempel på **Støttede betalingsmiddeltyper**-verdien som er satt til PayPal i betalingskoblingskonfigurasjonen i Commerce Headquarters.
-![Eksempel på støttede betalingsmiddeltyper i Commerce Headquarters](./media/ecommerce-paymenttendertypes.png)
+![Eksempel på støttede betalingsmiddeltyper i Commerce Headquarters.](./media/ecommerce-paymenttendertypes.png)
 
 ## <a name="billing-address"></a>Faktureringsadresse
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 5df46de9dadfa0b7160a9b340ef36fdf963a0ad3
-ms.sourcegitcommit: 6c2f5c3b038f696532c335e20b0fbafa155d6858
+ms.openlocfilehash: e43c4c00545dfecb2f9a2192f81cd25300e3d6e6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "5951914"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352476"
 ---
 # <a name="create-a-channel-navigation-hierarchy"></a>Opprett et hierarki for kanalnavigasjon
 
@@ -49,7 +49,7 @@ Følg denne fremgangsmåten for å opprette et kanalnavigasjonshierarki.
 
 Bildet nedenfor viser et eksempel på en rotnode.
 
-![Eksempel på rotnode](media/create-channel-hierarchy-1.png)
+![Eksempel på rotnode.](media/create-channel-hierarchy-1.png)
 
 ## <a name="create-navigation-category-nodes"></a>Opprette navigasjonskategorinoder
 
@@ -65,7 +65,7 @@ Hvis du vil opprette eventuelle ekstra navigasjonskategorinoder for å represent
 
 Følgende bilde viser et eksempel på et fullført kanalnavigasjonshierarki.
 
-![Eksempel på kanalhierarki](media/create-channel-hierarchy-2.png)
+![Eksempel på kanalhierarki.](media/create-channel-hierarchy-2.png)
 
 ## <a name="add-products-to-category-nodes"></a>Legge til produkter i kategorinoder
 
@@ -81,7 +81,7 @@ Hvis du vil legge til produkter i kategorinoder, følger du disse trinnene.
 
 Det følgende bildet viser en eksempelnode med produkter lagt til.
 
-![Produkter lagt til i en kategorinode](media/create-channel-hierarchy-3.png)
+![Produkter lagt til i en kategorinode.](media/create-channel-hierarchy-3.png)
 
 ## <a name="add-product-attribute-groups-to-category-nodes"></a>Legge til produktattributtgrupper i kategorinoder
 
@@ -97,7 +97,7 @@ Hvis du vil legge til en attributtgruppe i en kategorinode, følger du disse tri
 
 Det følgende bildet viser en eksempelnode med produktattributtgrupper lagt til.
 
-![Produktattributtgrupper i en node](media/create-channel-hierarchy-4.png)
+![Produktattributtgrupper i en node.](media/create-channel-hierarchy-4.png)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

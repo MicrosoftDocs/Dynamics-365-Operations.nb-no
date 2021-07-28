@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 294c7bbb328c31c6c3fdc16a72267224d7c71b27
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: dcac72a60eac6abb29a017eb4ce02a71dca572d3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809740"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344550"
 ---
 # <a name="lifo-with-physical-value-and-marking"></a>LIFO med fysisk verdi og merking
 
@@ -53,7 +53,7 @@ I dette eksemplet er det ikke merket av for Ta med fysisk verdi for varemodellgr
 
 Det nye glidende gjennomsnittet for kostpris gjenspeiler gjennomsnittet for økonomisk oppdaterte transaksjoner, det vil si USD 15,00. Illustrasjonen nedenfor viser virkningene av LIFO-lagermodellen for denne transaksjonsserien når alternativet **Ta med fysisk verdi** ikke brukes. 
 
-![LIFO uten ta med fysisk verdi](./media/lifowithoutincludephysicalvalue.gif) 
+![LIFO uten ta med fysisk verdi.](./media/lifowithoutincludephysicalvalue.gif) 
 
 **Nøkkel til diagrammet**
 
@@ -89,7 +89,7 @@ Transaksjonen 6a justeres mot tilgangstransaksjonen 4b. Systemet vil ikke utlign
 
 Illustrasjonen nedenfor viser virkningene av LIFO-lagermodellen for denne transaksjonsserien når alternativet **Ta med fysisk verdi** brukes. 
 
-![LIFO med ta med fysisk verdi](./media/lifowithincludephysicalvalue.gif) 
+![LIFO med ta med fysisk verdi.](./media/lifowithincludephysicalvalue.gif) 
 
 **Nøkkel til diagrammet**
 
@@ -133,7 +133,7 @@ Det nye glidende gjennomsnittet av kostprisen gjenspeiler gjennomsnittet av de �
 
 Illustrasjonen nedenfor viser virkningen LIFO-lagermodellen på denne transaksjonsserien når det brukes merking mellom avganger og tilganger. 
 
-![LIFO med merking](./media/lifowithmarking.gif) 
+![LIFO med merking.](./media/lifowithmarking.gif) 
 
 **Nøkkel til diagram**
 

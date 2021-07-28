@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 724048991fc8864ef72a5155af66b9c709f4b875
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 5f7ae0888656dd452af17e33d600f7894b801b1d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893962"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351728"
 ---
 # <a name="import-updated-versions-of-er-configurations"></a>Importere oppdaterte versjoner av ER-konfigurasjoner
 
@@ -41,11 +41,11 @@ Dette emnet forklarer hvordan du importerer oppdaterte versjoner av ER-konfigura
 2. Gå til **Organisasjonsstyring** \> **Arbeidsområder** \> **Elektronisk rapportering**.
 3. På siden **Lokaliseringskonfigurasjoner**, i delen **Relaterte koblinger**, velger du flisen **Importer versjonsoppdateringer av konfigurasjoner**.
 
-    ![Side for lokaliseringskonfigurasjoner](./media/er-download-updated-versions-global-repo1.png)
+    ![Side for lokaliseringskonfigurasjoner.](./media/er-download-updated-versions-global-repo1.png)
 
 4. I dialogboksen **Importer versjonsoppdateringer for elektroniske rapporteringskonfigurasjoner**, i **Kjøremodus**-feltet, velger du **Vis bare tilgjengelige oppdateringer**. Velg deretter **OK**. 
 
-    ![Kjøremodus-feltet satt til Bare vis tilgjengelige oppdateringer](./media/er-download-updated-versions-global-repo2.png)
+    ![Kjøremodus-feltet satt til Bare vis tilgjengelige oppdateringer.](./media/er-download-updated-versions-global-repo2.png)
 
 5. Se gjennom meldingene du mottar. Disse meldingene inneholder følgende informasjon om ER-konfigurasjonene i gjeldende Finance-forekomst, og hvordan de sammenlignes med innholdet i det globale repositoriet:
 
@@ -72,14 +72,14 @@ Dette emnet forklarer hvordan du importerer oppdaterte versjoner av ER-konfigura
 4. I dialogboksen **Importer versjonsoppdateringer for elektroniske rapporteringskonfigurasjoner**, i **Kjøremodus**-feltet velger du **Importer nyeste oppdateringer** for å importere de nyeste versjonene av ER-konfigurasjoner fra det globale repositoriet til gjeldende Finance-forekomst.
 5. Hvis du vil planlegge en satsvis jobb for importen, angir du **Satsvis behandling**-alternativet til **Ja** i **Kjør i bakgrunnen**-hurtigfanen. Hvis du vil gjenta importen regelmessig, kan du konfigurere den nødvendige gjentakelsen.
 
-    ![Kjøre modus-feltet satt til Importer nyeste oppdateringer](./media/er-download-updated-versions-global-repo5.png)
+    ![Kjøre modus-feltet satt til Importer nyeste oppdateringer.](./media/er-download-updated-versions-global-repo5.png)
 
 6. Velg **OK**.
 7. Følg ett av disse trinnene for å finne ut hvilke konfigurasjonsversjoner som er importert:
 
     - Hvis du kjører importen interaktivt i stedet for å bruke en satsvis jobb, kan du se gjennom meldingene du mottar.
 
-        ![Meldinger mottatt under en interaktiv importkjøring](./media/er-download-updated-versions-global-repo6.png)
+        ![Meldinger mottatt under en interaktiv importkjøring.](./media/er-download-updated-versions-global-repo6.png)
 
     - Hvis du kjører importen i satsvis modus, følger du denne fremgangsmåten:
 
@@ -87,7 +87,7 @@ Dette emnet forklarer hvordan du importerer oppdaterte versjoner av ER-konfigura
         2. Finn og velg jobben **Importer versjonsoppdateringer for elektroniske rapporteringskonfigurasjoner**, og velg **Logg over satsvis jobb** i handlingsruten i **Satsvis jobb**-fanen for å vise jobbloggen.
         3. På **Logg for satsvis jobb**-siden velger du **Logg**. Velg **Meldingsdetaljer**-koblingen i meldingen du mottar, for å vise jobbloggen.
 
-        ![Jobblogg](./media/er-download-updated-versions-global-repo7.png)
+        ![Jobblogg.](./media/er-download-updated-versions-global-repo7.png)
 
 > [!IMPORTANT]
 > Vi anbefaler ikke at du planlegger en regelmessig satsvis jobb for å importere oppdaterte versjoner av ER-konfigurasjoner direkte fra det globale repositoriet til et produksjonsmiljø, fordi de importerte versjonene umiddelbart vil være tilgjengelige for bruk. Bruk i stedet denne fremgangsmåten til å distribuere versjoner av ER-konfigurasjoner til et sandkassemiljø. De kan evalueres i sandkassemiljøet før de distribueres til et produksjonsmiljø.

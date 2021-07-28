@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 3f1f5dc2c8402d9b6b68a049f804932812eb74c0
-ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
+ms.openlocfilehash: fe6262fa8a7fb27fda7642180f605376af726e54
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5937540"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346064"
 ---
 # <a name="set-up-a-retail-channel"></a>Konfigurere en Retail-kanal
 
@@ -50,11 +50,11 @@ Før det opprettes en detaljhandelskanal, må du kontrollere at du følger [foru
 
 Bildet nedenfor viser opprettelsen av en ny detaljhandelskanal.
 
-![Ny detaljhandelskanal](media/channel-setup-retail-1.png)
+![Ny detaljhandelskanal.](media/channel-setup-retail-1.png)
 
 Bildet nedenfor viser et eksempel på en detaljhandelskanal.
 
-![Eksempel på detaljhandelskanal](media/channel-setup-retail-2.png)
+![Eksempel på detaljhandelskanal.](media/channel-setup-retail-2.png)
 
 ## <a name="other-settings"></a>Andre innstillinger
 
@@ -64,7 +64,7 @@ I tillegg kan du se [Skjermoppsett for salgssted](pos-screen-layouts.md) for inf
 
 Bildet nedenfor viser et eksempel på en konfigurasjon av et detaljhandelskanaloppsett.
 
-![Eksempel på konfigurasjon av detaljhandelskanal](media/channel-setup-retail-3.png)
+![Eksempel på konfigurasjon av detaljhandelskanal.](media/channel-setup-retail-3.png)
 
 ## <a name="additional-channel-set-up"></a>Ekstra kanaloppsett
 
@@ -74,7 +74,7 @@ Andre oppgaver som kreves for oppsett av Internett-kanal, omfatter definere beta
 
 Følgende bilde viser diverse tilleggsalternativer for detaljhandelskanaloppsett i kategorien **Oppsett**.
 
-![Definere kanal](media/channel-setup-retail-4.png)
+![Definere kanal.](media/channel-setup-retail-4.png)
 
 ### <a name="set-up-payment-methods"></a>Definere betalingsmåter
 
@@ -89,7 +89,7 @@ Hvis du vil definere betalingsmåter, følger du disse trinnene for hver betalin
 
 Bildet nedenfor viser et eksempel på en kontantbetalingsmåte.
 
-![Eksempel på betalingsmåter](media/channel-setup-retail-5.png)
+![Eksempel på betalingsmåter.](media/channel-setup-retail-5.png)
 
 ### <a name="set-up-cash-declaration"></a>Definere kKontantoppgjør
 
@@ -98,7 +98,7 @@ Bildet nedenfor viser et eksempel på en kontantbetalingsmåte.
 
 Bildet nedenfor viser et eksempel på et kontantoppgjør.
 
-![Definere kontantoppgjør](media/channel-setup-retail-6.png)
+![Definere kontantoppgjør.](media/channel-setup-retail-6.png)
 
 ### <a name="set-up-modes-of-delivery"></a>Definer leveringsmåter
 
@@ -112,7 +112,7 @@ Hvis du vil endre eller legge til en leveringsmåte, følger du disse trinnene.
 
 Bildet nedenfor viser et eksempel på en leveringsmåte.
 
-![Definer leveringsmåter](media/channel-setup-retail-7.png)
+![Definer leveringsmåter.](media/channel-setup-retail-7.png)
 
 ### <a name="set-up-incomeexpense-account"></a>Definere inntekts-/utgiftskonto
 
@@ -129,7 +129,7 @@ Gjør følgende for å konfigurere en inntekts-/utgiftskonto.
 
 Bildet nedenfor viser et eksempel på en inntekts/utgiftskonto.
 
-![Definere inntekts-/utgiftskontoer](media/channel-setup-retail-8.png)
+![Definere inntekts-/utgiftskontoer.](media/channel-setup-retail-8.png)
 
 ### <a name="set-up-sections"></a>Definere seksjoner
 
@@ -155,7 +155,7 @@ Hvis du vil konfigurere en gruppetilordning for oppfyllelse, gjør du følgende.
 
 Det følgende bildet viser et eksempel på et oppsett for gruppetilordning for oppfyllelse.
 
-![Definere gruppetilordninger for oppfyllelse](media/channel-setup-retail-9.png)
+![Definere gruppetilordninger for oppfyllelse.](media/channel-setup-retail-9.png)
 
 ### <a name="set-up-safes"></a>Definere safer
 

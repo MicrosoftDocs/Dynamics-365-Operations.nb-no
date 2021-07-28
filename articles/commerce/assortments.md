@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: jeffbl
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Application update 5
-ms.openlocfilehash: 74df8ac27c2028582b8909db0a7260b9b0ed38f5
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a81a779dd484d30397c89076d081413a72560f0b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797287"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348713"
 ---
 # <a name="assortment-management"></a>Sortimentstyring
 
@@ -35,27 +35,27 @@ Den generelle produktsammensetningen av en kanal bestemmes av de publiserte sort
 
 I eksemplet nedenfor er en unik sortiment konfigurert for hver butikk. I dette tilfellet er bare produkt 1 tilgjengelig i butikk 1, og bare produkt 2 er tilgjengelig i butikk 2.
 
-![Hvert produkt er tilgjengelig i én butikk](./media/Managing-assortments-figure1.png)
+![Hvert produkt er tilgjengelig i én butikk.](./media/Managing-assortments-figure1.png)
 
 Hvis du vil gjøre produkt 2 tilgjengelig i butikk 1, kan du legge produktet til sortiment 1.
 
-![Produkt 2 lagt til i sortiment 1](./media/Managing-assortments-figure2.png)
+![Produkt 2 lagt til i sortiment 1.](./media/Managing-assortments-figure2.png)
 
 Du kan også legge butikk 1 til sortiment 2.
 
-![Butikk 1 lagt til i sortiment 2](./media/Managing-assortments-figure3.png)
+![Butikk 1 lagt til i sortiment 2.](./media/Managing-assortments-figure3.png)
 
 ### <a name="organization-hierarchies"></a>Organisasjonshierarkier
 
 I tilfeller der flere kanaler deler samme produktsortimentene, kan du konfigurere sortimentene ved hjelp av organisasjonshierarkiet for sortimenter i Commerce. Når noder fra dette hierarkiet legges til, er alle kanaler i denne noden og de underordnede nodene inkludert.
 
-![Organisasjonshierarki](./media/Managing-assortments-figure4.png)
+![Organisasjonshierarki.](./media/Managing-assortments-figure4.png)
 
 ### <a name="product-categories"></a>Produktkategorier
 
 På samme måte kan du på produkt-siden inkludere produktgrupper ved hjelp av kategorihierarkier for produkter. Du kan konfigurere sortimenter ved å inkludere én eller flere kategorihierarkinoder. I så fall omfatter sortimentet alle produkter i kategorinoden og de underordnede nodene.
 
-![Produktkategorier](./media/Managing-assortments-figure5.png)
+![Produktkategorier.](./media/Managing-assortments-figure5.png)
 
 ### <a name="excluded-products-or-categories"></a>Ekskluderte produkter eller kategorier
 
@@ -64,7 +64,7 @@ I tillegg til å inkludere produkter og kategorier i sortimenter, kan du bruke a
 > [!NOTE]
 > Hvis et produkt per definisjon er både inkludert og ekskludert i én eller flere sortimenter, skal produktet alltid regnes som ekskludert.
 
-![Ekskludert produkt](./media/Managing-assortments-figure6.png)
+![Ekskludert produkt.](./media/Managing-assortments-figure6.png)
 
 ### <a name="global-and-released-products"></a>Globale og frigitte produkter
 

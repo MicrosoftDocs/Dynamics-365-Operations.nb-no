@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 85f6188bff4d3535369e4af145f8f55a3263c4a3
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 2811e61045c0a830d1c814d760820a364893efcc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794169"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352234"
 ---
 # <a name="retail-sales-price-management"></a>Salgsprisbehandling for Retail
 
@@ -46,7 +46,7 @@ En prisgruppe er bare et navn, en beskrivelse, og eventuelt en prissettingsprior
 
 Illustrasjonen nedenfor viser hvordan prisgrupper brukes. I denne illustrasjonen ser du at "Prisgruppe" bokstavelig talt er i sentrum av pris- og rabattstyring. Handelsenhetene som du kan bruke til å administrere differensielle priser og rabatter, vises til venstre, og de faktiske pris- og rabattpostene er til høyre.
 
-![Prisgrupper](./media/PriceGroups.png "Prisgrupper")
+![Prisgrupper.](./media/PriceGroups.png "Prisgrupper")
 
 Når du oppretter prisgrupper, bør du ikke bruke en enkelt prisgruppe for flere typer enheter for handel. Hvis ikke kan det være vanskelig å finne ut hvorfor en bestemt pris eller rabatt blir brukt på en transaksjon.
 

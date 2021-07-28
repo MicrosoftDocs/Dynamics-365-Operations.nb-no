@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 563fa291754f7f795fa64d530de49b9fe4083c56
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9990df3e57d65c77a75913efaf30675528d411b4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821303"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343706"
 ---
 # <a name="weighted-average-date"></a>Dato avveid gjennomsnitt
 
@@ -39,7 +39,7 @@ Avveid gjennomsnitt = (\[Q1 × P1\] + \[Q2 × P2\] + \[Q *n* × P *n*\]) ÷ (Q1 
 
 Når lagerlukking pågår, utføres beregningen hver dag i hele lukkingsperioden, som vist i illustrasjonen nedenfor. 
 
-![Dato avveid gjennomsnitt for daglig beregningsmodell](./media/weightedaveragedatedailycalculationmodel.gif) 
+![Dato avveid gjennomsnitt for daglig beregningsmodell.](./media/weightedaveragedatedailycalculationmodel.gif) 
 
 Lagertransaksjoner som forlater lageret, for eksempel salgsordrer, lagerjournaler og produksjonsordrer, forekommer til en estimert kostpris på posteringsdatoen. Denne estimerte kostprisen kalles også glidende gjennomsnitt av kostpris. På datoen for lagerlukking analyserer systemet lagertransaksjonene for tidligere perioder, tidligere dager og gjeldende dato. Denne analysen brukes til å avgjøre hvilket av de følgende prinsippene for lukking som skal brukes:
 
@@ -72,7 +72,7 @@ Illustrasjonen nedenfor viser disse transaksjonene:
 -   2b. Økonomisk lageravgang oppdateres med et antall på 2 til kostpris USD 10,00 per stykk.
 -   3. Lagerlukkingen er utført med metoden for direkte utligning for å utligne økonomiske lagertilganger mot økonomiske lageravganger.
 
-![Direkte utligning med dato for avveid gjennomsnitt når alternativet Ta med fysisk verdi ikke brukes](./media/weightedaveragedatedirectsettlementwithoutincludephysicalvalue.gif) 
+![Direkte utligning med dato for avveid gjennomsnitt når alternativet Ta med fysisk verdi ikke brukes.](./media/weightedaveragedatedirectsettlementwithoutincludephysicalvalue.gif) 
 
 **Nøkkel til illustrasjonen:**
 
@@ -126,7 +126,7 @@ Systemet genererer og posterer den summerte lageroverføringstransaksjonen. I ti
 
 Illustrasjonen nedenfor viser denne serien av transaksjoner og virkningen av å bruke lagermodellen for avveid gjennomsnitt og prinsippet for summert utligning, men uten å bruke alternativet **Ta med fysisk verdi**. 
 
-![Summert utligning med dato for avveid gjennomsnitt når alternativet Ta med fysisk verdi ikke brukes](./media/weightedaveragedatesummarizedsettlementwithoutincludephysicalvalue.gif) 
+![Summert utligning med dato for avveid gjennomsnitt når alternativet Ta med fysisk verdi ikke brukes.](./media/weightedaveragedatesummarizedsettlementwithoutincludephysicalvalue.gif) 
 
 **Nøkkel til illustrasjonen**
 
@@ -175,7 +175,7 @@ Du kan merke en avgangstransaksjon mot en tilgang før transaksjonen er postert.
 
 Det nye glidende gjennomsnittet av kostprisen gjenspeiler gjennomsnittet av de økonomisk og fysisk oppdaterte transaksjonene med USD 27,50. Diagrammet nedenfor viser denne serien av transaksjoner og virkningen av å bruke lagermodellen med dato for avveid gjennomsnitt og merking.
 
-![Dato for avveid gjennomsnitt med merking](./media/weightedaveragedatewithmarking.gif) 
+![Dato for avveid gjennomsnitt med merking.](./media/weightedaveragedatewithmarking.gif) 
 
 **Nøkkel til illustrasjonen:**
 

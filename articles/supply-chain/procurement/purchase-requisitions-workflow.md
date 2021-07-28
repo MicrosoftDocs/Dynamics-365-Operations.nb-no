@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5dcc562f46884cc5bf82611db9ed35436791045b
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 4a8e3378a1d31101d111673cf66f75e807cd05a7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188179"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353474"
 ---
 # <a name="purchase-requisition-workflow"></a>Arbeidsflyten for innkjøpsrekvisisjon
 
@@ -51,7 +51,7 @@ Illustrasjonen nedenfor viser hvordan en innkjøpsrekvisisjon kan flyte gjennom 
 -   **Innkjøpsagent** – brukeren som foretar en gjennomgang av innkjøp og kan godkjenne dokumentet.
 -   **Bestillerens leder** – brukeren som foretar en ledergjennomgang og kan se gjennom og godkjenne dokumentet.
 
-![Vurderingsprosess for arbeidsflyt for innkjøpsrekvisisjon](./media/purchreqworkflowoverview_submission.gif)  
+![Vurderingsprosess for arbeidsflyt for innkjøpsrekvisisjon.](./media/purchreqworkflowoverview_submission.gif)  
 I dette eksemplet omfatter arbeidsflytprosessen for innkjøpsrekvisisjonen følgende trinn:
 
 1.  Klargjøreren sender en innkjøpsrekvisisjon til gjennomgang.
@@ -74,7 +74,7 @@ I dette eksemplet er følgende roller inkludert i arbeidsflytprosessen:
 -   **Avdelingsleder** – brukeren som foretar en utgiftsgjennomgang og kan se gjennom og godkjenne dokumentet.
 -   **Gruppeleder** – brukeren som foretar en signaturfullmaktsgjennomgang og kan se gjennom og godkjenne dokumentet.
 
-![Vurderingsprosess for arbeidsflyt for innkjøpsrekvisisjonslinje](./media/purchreqlineworkflowoverview.gif)  
+![Vurderingsprosess for arbeidsflyt for innkjøpsrekvisisjonslinje.](./media/purchreqlineworkflowoverview.gif)  
 I dette eksemplet omfatter arbeidsflytprosessen for innkjøpsrekvisisjonslinjene følgende trinn:
 
 1.  Klargjøreren sender en innkjøpsrekvisisjon til gjennomgang. Hver linje rutes til kontrolløren som er konfigurert til å motta den i arbeidsflytprosessen.

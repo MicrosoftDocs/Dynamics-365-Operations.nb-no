@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 131d14f1f1aa329bd71b1f8a4015192736bd8e44
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 682910350832e441ed13c716c0c18200a3b7865d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022581"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351079"
 ---
 # <a name="configure-lookup-data-sources-to-use-er-application-specific-parameters"></a>Konfigurer Oppslag-datakilder for å bruke ER-programspesifikke parametere 
 
@@ -44,38 +44,38 @@ Du kan konfigurere følgende typer **Oppslag**-datakilder, avhengig av typen ver
 
 Illustrasjonen nedenfor viser hvordan en formatnummerering kan konfigureres i ER-eksempelformatet.
 
-   ![Viser en formatnummerering som et grunnlag for den konfigurerte oppslagsdatakilden](./media/er-lookup-data-sources-img1.gif)
+   ![Viser en formatnummerering som et grunnlag for den konfigurerte oppslagsdatakilden.](./media/er-lookup-data-sources-img1.gif)
 
 Illustrasjonen nedenfor viser formatkomponentene som ble konfigurert til å rapportere forskjellige typer avgifter i en annen del av en generert rapport.
 
-   ![Viser formatdelene for å rapportere forskjellige typer avgifter separat](./media/er-lookup-data-sources-img2.png)
+   ![Viser formatdelene for å rapportere forskjellige typer avgifter separat.](./media/er-lookup-data-sources-img2.png)
 
 Illustrasjonen nedenfor viser hvordan ER-operasjonsutforming tillater tilføyelse av en datakilde av typen **Formatnummerering\Oppslag**.  Den tilføyde datakilden konfigureres som returnering av en verdi for `List of taxation levels`-formatnummereringen.
 
-   ![Legge til en ER-datakilde av typen Formatnummerering\Oppslag](./media/er-lookup-data-sources-img3.gif)
+   ![Legge til en ER-datakilde av typen Formatnummerering\Oppslag.](./media/er-lookup-data-sources-img3.gif)
 
 Illustrasjonen nedenfor viser hvordan den tilføyde datakilden konfigureres for å bruke **Kode**-feltet i **Model.Data.Tax**-oppføringslisten for **Modell**-datakilden som en parameter som må være angitt for alle konfigurerte regler.
 
-![Konfigurere parametere for den tilføyde datakilden av typen Formatnummerering\Oppslag](./media/er-lookup-data-sources-img4.gif)
+![Konfigurere parametere for den tilføyde datakilden av typen Formatnummerering\Oppslag.](./media/er-lookup-data-sources-img4.gif)
 
 Den tilføyde `Model.Data.Tax`-datakilden konfigureres for å angi en avgiftskode for hver konfigurerte regel ved å få tilgang til poster i **TaxTable**-programtabellen.
 
-   ![Gjennomgang av oppslagsdatakilden for ett firmat av typen Formatnummerering\Oppslag](./media/er-lookup-data-sources-img5.gif)
+   ![Gjennomgang av oppslagsdatakilden for ett firmat av typen Formatnummerering\Oppslag.](./media/er-lookup-data-sources-img5.gif)
 
 Du kan definere oppslagsreglene for det valgte ER-formatet ved å bruke grensesnittet som automatisk justeres etter strukturen til den konfigurerte datakilden. For øyeblikket krever dette grensesnittet at du for hver regel må angi den returnerte verdien som `List of taxation levels`-verdien for formatnummerering, i tillegg til mva-koden som en parameter.
 
-   ![Sette opp reglene for den konfigurerte datakilden](./media/er-lookup-data-sources-img6.gif)
+   ![Sette opp reglene for den konfigurerte datakilden.](./media/er-lookup-data-sources-img6.gif)
 
 Illustrasjonen nedenfor viser hvordan `Model.Data.Summary.LevelByLookup`-datakilden av typen **Beregnet felt** kan konfigureres til å kalle den konfigurerte **Oppslag**-datakilden ved å oppgi de nødvendige parameterne. For å behandle dette kallet ved kjøretid går ER gjennom listen over konfigurerte regler i den definerte rekkefølgen for å finne den første regelen som oppfyller betingelsene som er angitt. I dette eksemplet er det regelen som inneholder avgiftskoden som samsvarer med den angitte. Da blir den mest passende regelen funnet, og opplistingsverdien som er konfigurert for regelen som blir funnet, blir returnert av denne datakilden.
 
 > [!NOTE]
 > Et unntak opprettes når ingen gjeldende regel blir funnet. Du kan forhindre disse unntakene ved å konfigurere flere regler på slutten av regellisten for å håndtere tilfeller når en ikke-konfigurert verdi eller ingen verdi oppgis. Bruk alternativene **\*Ikke tom\*** og **\*Tom\*** i henhold til dette.  
 >
-> ![Legge til en datakilde for å kalle den konfigurerte oppslagsdatakilden](./media/er-lookup-data-sources-img7.png)
+> ![Legge til en datakilde for å kalle den konfigurerte oppslagsdatakilden.](./media/er-lookup-data-sources-img7.png)
 
 Når du setter alternativet **Kryssfirma** til **Ja** for den redigerbare oppslagsdatakilden, legger du til en ny påkrevd **Firma**-parameter i settet med parametere for denne datakilden. Verdien til **Firma**-parameteren må angis ved kjøretid når oppslagsdatakilden kalles. Når firmakoden angis ved kjøretid, brukes reglene som er konfigurert for dette firmaet til å finne den mest passende regelen, og den tilsvarende verdien returneres. Illustrasjonen nedenfor viser hvordan du kan gjøre dette og hvordan settet med parametere for den redigerbare datakilden endres.
 
-   ![Gjennomgang av oppslagsdatakilden for kryssfirma av typen Formatnummerering\Oppslag](./media/er-lookup-data-sources-img8.gif)
+   ![Gjennomgang av oppslagsdatakilden for kryssfirma av typen Formatnummerering\Oppslag.](./media/er-lookup-data-sources-img8.gif)
 
 > [!NOTE]
 > Velg hvert firma separat for å konfigurere regelsettet for denne oppslagsdatakilden for det redigerbare ER-formatet. Et unntak inntreffer ved kjøretid når kryssfirmaoppslaget kalles med koden til firmaet som oppslagsinnstillingen ikke ble fullført for.
@@ -84,7 +84,7 @@ Når du setter alternativet **Kryssfirma** til **Ja** for den redigerbare oppsla
 
 De utvidede funksjonene i **Oppslag**-datakildene er tilgjengelige fra versjon 10.0.19. Når du setter alternativet **Utvidet** til **Ja** for den redigerbare oppslagsdatakilden, transformeres den konfigurerte oppslagsdatakilden til den strukturerte datakilden, som tilbyr de ytterligere funksjonene for å analysere det konfigurerte regelsettet. Illustrasjonen nedenfor viser denne transformasjonen.
 
-   ![Gjennomgang av den strukturerte oppslagsdatakilden av typen Formatnummerering\Oppslag](./media/er-lookup-data-sources-img9.gif)
+   ![Gjennomgang av den strukturerte oppslagsdatakilden av typen Formatnummerering\Oppslag.](./media/er-lookup-data-sources-img9.gif)
 
 - Underelementet **Oppslag** er utformet som en funksjon for å finne den regelen som passer best, fra settet med konfigurerbare regler basert på settet med parametere som er angitt.
 - Underelementet **IsLookupResultSet** er utformet som en funksjon for å godta den angitte verdien av den grunnleggende opplistingsdatakilden, og returnere den *boolske* verdien **Sann** når settet med regler inneholder minst én regel der den angitte opplistingsverdien ble konfigurert som en returnert verdi. Denne funksjonen returnerer den *boolske* verdien **Usann** når det ikke er konfigurert noen regler til å returnere den angitte opplistingsverdien.

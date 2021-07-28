@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: edc6da8a54de98696322ace67ada5dfe97af2024
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 1c8a6b4152215bc912d99f2f4c250defa75278c3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189950"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356933"
 ---
 # <a name="replenishment-with-withdrawal-kanbans"></a>Etterfylling med uttak – Kanbaner
 
@@ -35,7 +35,7 @@ Kanban for uttak kan brukes til å flytte en kanban for en enkelt vare mellom la
 
 Følgende scenario viser et pull-baserte etterfyllingssystem der et pull-signal utløser opprettelsen av en kanban for å etterfylle materialer for en produksjonsprosess. 
 
-[![Pull-signal utløser opprettelsen av en kanban for å etterfylle materiale for en produksjonsprosess](./media/material-replenishment-with-withdrawal-kanban.png)](./media/material-replenishment-with-withdrawal-kanban.png)
+[![Pull-signal utløser opprettelsen av en kanban for å etterfylle materiale for en produksjonsprosess.](./media/material-replenishment-with-withdrawal-kanban.png)](./media/material-replenishment-with-withdrawal-kanban.png)
 
 1.  Uttak Kanban
 2.  Kanban "fra"-lokasjon og plasseringsgslokasjon for lagerarbeid
@@ -72,7 +72,7 @@ Hvis avstanden mellom lagerlokasjoner og produksjonsinnleveringsstedet er liten,
 
 I dette scenariet, er overføringsaktiviteten for uttaks-kanbanen konfigurert til å overføre mellom to steder i det samme lageret. Overfør aktiviteten for uttaks-kanbanen slik at den blir fylt ut automatisk. 
 
-[![Overføringsaktiviteten fullføres automatisk når kanban-plukkarbeidet er behandlet](./media/transfer-activities-when-processing-kanban-picking.png)](./media/transfer-activities-when-processing-kanban-picking.png)
+[![Overføringsaktiviteten fullføres automatisk når kanban-plukkarbeidet er behandlet.](./media/transfer-activities-when-processing-kanban-picking.png)](./media/transfer-activities-when-processing-kanban-picking.png)
 
 1.  Delt lager for råvarer og produksjon
 2.  Lagerlokasjoner for råvarer

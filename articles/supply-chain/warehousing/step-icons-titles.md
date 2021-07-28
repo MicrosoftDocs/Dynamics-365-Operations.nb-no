@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2021-05-17
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 9523492d766669e6c38579fba7b5ddd6b3d282fc
-ms.sourcegitcommit: c53de2c09b9296b41653e739178edf29f79e0679
+ms.openlocfilehash: a74847b50512d2f712e5a9a5125e520afc732591
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/17/2021
-ms.locfileid: "6049370"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344501"
 ---
 # <a name="assign-step-icons-and-titles-for-the-warehouse-management-mobile-app"></a>Tilordne trinnikoner og -titler for mobilappen Warehouse Management
 
@@ -25,7 +25,7 @@ Dette emnet beskriver hvordan du tilordner trinnikoner og -titler for nye eller 
 
 Følgende illustrasjoner viser hvordan trinnikoner og titler vises i mobilappen Warehouse Management.
 
-![Eksempel på et trinnikon og en trinntittel i Warehouse Management-mobilappen](media/step-icon-example.png "Eksempel på et trinnikon og en trinntittel i Warehouse Management-mobilappen")
+![Eksempel på et trinnikon og en trinntittel i Warehouse Management-mobilappen.](media/step-icon-example.png "Eksempel på et trinnikon og en trinntittel i Warehouse Management-mobilappen")
 
 ## <a name="turn-on-this-feature-in-your-system"></a>Aktivere denne funksjonen i systemet
 
@@ -350,13 +350,13 @@ Dette eksemplet beskriver hvordan du konfigurerer trinnikoner og -titler for en 
 
 Følgende illustrasjon viser denne oppgaveflyten.
 
-![Oppgaveflytdiagram](media/step-icons-example-task-flow.png "Oppgaveflytdiagram")
+![Oppgaveflytdiagram.](media/step-icons-example-task-flow.png "Oppgaveflytdiagram")
 
 ### <a name="create-a-step-class-for-the-container-input-page"></a>Opprette en trinnklasse for containerinndatasiden
 
 Med containerinndatasiden kan arbeideren skanne eller angi en container-ID.
 
-![Containerinndataside](media/step-icons-example-container-input.png "Containerinndataside")
+![Containerinndataside.](media/step-icons-example-container-input.png "Containerinndataside")
 
 På containerinndatasiden er kontrollnavnet for inndatafeltet `ContainerId`. Ettersom dette kontrollnavnet ikke står på [listen over trinn-IDer](#step-ids-classes), vil du ikke finne et eksisterende trinn som er basert på det. Derfor må du opprette en trinnklasse som representerer trinnet. Her er et eksempel:
 
@@ -382,7 +382,7 @@ Hvis du vil tilordne et trinnikon, angir du `defaultStepIcon` til ett av ikon-ID
 
 På vektinndatasiden kan du angi en vekt for arbeideren.
 
-![Vektinndataside](media/step-icons-example-weight-input.png "Vektinndataside")
+![Vektinndataside.](media/step-icons-example-weight-input.png "Vektinndataside")
 
 På vektinndatasiden er kontrollnavnet for inndatafeltet `Weight`, som finne i [listen over trinn-IDer](#step-ids-classes). Hvis trinnikonet og -tittelen som er definert i klassen `WHSMobileAppStepWeight`, er akseptabelt for deg, behøver du derfor ikke å endre noe for dette trinnet.
 

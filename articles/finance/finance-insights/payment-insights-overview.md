@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 14151
+ms.custom:
+- "14151"
+- intro-internal
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 84a2342d76dc309fa1fd3de7b2c3de60e62e4d72
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: 64b03faa76e16a4e587f26ec2fb9bf1e34d226df
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186402"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355658"
 ---
 # <a name="customer-payment-predictions-preview"></a>Kundebetalingsforutsigelser (forhåndsversjon)
 
@@ -53,11 +55,11 @@ For hver åpne faktura tilordner funksjonen tre betalingssannsynligheter:
 
 Funksjonen gir også en aggregert visning av forventede betalinger.
 
-[![Aggregert visning av betalingsprognoser](./media/graphic-payment-reports.png)](./media/graphic-payment-reports.png)
+[![Aggregert visning av betalingsprognoser.](./media/graphic-payment-reports.png)](./media/graphic-payment-reports.png)
 
 Hver faktura blir tildelt en sannsynlighet for betaling i tide. Fakturaer med sannsynlighet for betaling til rett tid som er mindre enn 50 %, merkes med en rød sirkel for å angi at de kan kreve oppmerksomhet fra innkrevingsagenter.
 
-[![Liste over sannsynligheter for betaling](./media/customer-pymnt-probability-list.png)](./media/customer-pymnt-probability-list.png)
+[![Liste over sannsynligheter for betaling.](./media/customer-pymnt-probability-list.png)](./media/customer-pymnt-probability-list.png)
 
 Funksjonen for kundebetalingsprediksjoner inneholder også kontekstavhengig informasjon som forklarer prediksjonen. Denne informasjonen omfatter de viktigste faktorene som påvirket prediksjonen, firmaets gjeldende forretningsrelasjon til kunden, og detaljer om kundens historiske betalingsvirkemåte.
 

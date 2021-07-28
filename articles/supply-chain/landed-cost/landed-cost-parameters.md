@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 3340ea07414eb92997ab4a9d6fa46cd075f8f9db
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: ea0f60424ff1ee40a4231aa9cc129bb942fca519
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021013"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353570"
 ---
 # <a name="landed-cost-parameters-setup"></a>Oppsett for parametere for netto innkjøpspris
 
@@ -31,7 +31,7 @@ Du bruker siden **Parametere for netto innkjøpspris** til å definere generell 
 
 Hvis du vil arbeide med parameterne, kan du gå til **Netto innkjøpspris \> Oppsett \> Parametere for netto innkjøpspris**, og deretter angir du feltene slik som beskrevet i følgende underdeler.
 
-![Siden Parametere for netto innkjøpspris](media/landed-cost-parameters.png "Siden Parametere for netto innkjøpspris")
+![Siden Parametere for netto innkjøpspris.](media/landed-cost-parameters.png "Siden Parametere for netto innkjøpspris")
 
 ## <a name="general-tab"></a>Fanen Generelt
 

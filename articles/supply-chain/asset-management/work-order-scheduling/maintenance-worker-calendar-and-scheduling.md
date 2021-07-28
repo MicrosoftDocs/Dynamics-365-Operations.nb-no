@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e1abf029e6f72c1c6a827a00483bb34c4abcaec5
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3e5cc7d21a9993985d1ad1fc2684777ff7ceb138
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808142"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354138"
 ---
 # <a name="maintenance-worker-calendar-and-scheduling"></a>Kalender for vedlikeholdspersoner og planlegging
 
@@ -32,7 +32,7 @@ Når du planlegger arbeidsordrer, oppretter du en plan for vedlikeholdspersoner,
 
 Skjermbildet nedenfor viser et eksempel på en vedlikeholdsperson som er knyttet til en ressurs som bruker arbeidstidskalenderen "Produksjon".
 
-![Figur 1](media/01-work-order-scheduling.png)
+![Figur 1.](media/01-work-order-scheduling.png)
 
 Kalenderoppsett for verktøy og aktiva er ikke nødvendig i forbindelse med arbeidsordreplanlegging. Det antas at verktøy og aktiva er tilgjengelige hele døgnet for vedlikehold.
 

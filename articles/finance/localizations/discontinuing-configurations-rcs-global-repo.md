@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2021-02-02
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: 2bd22e991de376cfd93f75158f1f29716d2559e1
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 1d25d583580af3d73a3ac1eaebc9f7d8413c6563
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018739"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360216"
 ---
 # <a name="discontinue-configurations-in-the-rcs-global-repository"></a>Avslutte konfigurasjoner i det globale RCS-repositoriet
 
@@ -45,7 +45,7 @@ Fullfør trinnene nedenfor for å avslutte konfigurasjonen.
 2. Sett parameteren **Avslutt** til **Ja**.
 3. Velg **OK** for å avslutte konfigurasjonene. Feltet **Utgått dato** fylles ut når du lagrer endringene.
 
-![Avslutte konfigurasjonsinformasjon](media/Discontinue-details-2.png)
+![Avslutte konfigurasjonsinformasjon.](media/Discontinue-details-2.png)
   
 Du kan tilbakestille konfigurasjonen til **Delt** eller justere avsluttingsinformasjon når som helst. Hvis du deler en konfigurasjon, angir du datoen for **Støttet til** og all annen informasjon relatert til avsluttingen, for å angi planene for fremtidig avslutting.
 

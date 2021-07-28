@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 8c9aaa3868167806ce3189d724621991ec7e53eb
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: afb9f95458089e854335399ea3d14ba229c02bbd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022817"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349879"
 ---
 #  <a name="withholding-tax-declaration-for-egypt-eg-00005"></a>Deklarering av kildeskatt for Egypt (EG-00005)
 
@@ -103,7 +103,7 @@ Hvis du vil generere rapporter for WHT-deklareringsskjema i Microsoft Excel, def
 2. Velg **WHT-deklarering Excel (EG)** i feltet **Tilordning av format for WHT-deklarering** i fanen **Kildeskatt**. Hvis du lar feltet stå tomt, genereres standard mva-rapport i SSRS-format.
 
 
-![Deklareringsskjema](media/egypt-wht-declaration-setup1.png)
+![Deklareringsskjema.](media/egypt-wht-declaration-setup1.png)
 
 ## <a name="generate-the-withholding-declaration-forms"></a>Generere skjemaene for kildeskattdeklarering
 Prosessen med å klargjøre og sende et skjema for kildeskattdeklarering for en bestemt periode er basert på kildeskattransaksjonene som er postert under utligningen og postering av betalingsavgiftsjobben. Hvis du vil ha mer informasjon om global kildeskatt, kan du se [Global kildeskatt](../general-ledger/global-withholding-tax-overview.md).

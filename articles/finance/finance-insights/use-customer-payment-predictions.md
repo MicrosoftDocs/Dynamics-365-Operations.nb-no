@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-11-16
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: 1349521d65511864747de6c2fed3a904dea8917e
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: 873a11f3151344de63ee0b01b586ccbffe0df51b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186570"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355634"
 ---
 # <a name="use-customer-payment-predictions-preview"></a>Bruke kundebetalingsforutsigelser (forhåndsversjon)
 
@@ -38,13 +38,13 @@ Arbeidsområdet **Behandle kundekreditt og innkrevinger** inneholder to nye flis
 - Flisen **Betalingspresisjon per transaksjon** viser antall åpne kundetransaksjoner som har en betalingssannsynlighet som er mindre enn 50 prosent i **Til planlagt tid**-perioden. Du kan velge denne flisen for å åpne listesiden **Betalingsprediksjoner per transaksjon**.
 - Flisen **Kunder med forventet høy forsinket-saldo** viser antall kunder der mer enn halvparten (50 prosent) av den totale saldoen forventes å betale forsinket og/eller svært sent. Du kan velge denne flisen for å åpne listesiden **Betalingsprediksjon per kunde**.
 
-[![Arbeidsområdet Behandle kundekreditt og innkrevinger](./media/manage-customer-credit-collections.png)](./media/manage-customer-credit-collections.png)
+[![Arbeidsområdet Behandle kundekreditt og innkrevinger.](./media/manage-customer-credit-collections.png)](./media/manage-customer-credit-collections.png)
 
 ### <a name="payment-predictions-per-transaction-list-page"></a>Listesiden Betalingsprediksjoner per transaksjon
 
 På listesiden **Betalingspredisjoner per transaksjon** kan du vise sannsynligheten for betaling for åpne transaksjoner i periodene **Til planlagt tid**, **Forsinket** og **Svært sent**. For hver transaksjon i rutenettet viser kolonnen **Til planlagt tid-sannsynlighet** sannsynligheten for at fakturaen betales på eller før forfallsdatoen. Hvis sannsynligheten for at en betaling betales innen fristen er mindre enn 50 prosent, vises en rød sirkel ved siden av prosenten i kolonnen **Til planlagt tid-sannsynlighet** for å angi risikoen for sen betaling.
 
-[![Siden Betalingsprediksjoner per transaksjon](./media/payment-predictions-per-transaction.png)](./media/payment-predictions-per-transaction.png)
+[![Siden Betalingsprediksjoner per transaksjon.](./media/payment-predictions-per-transaction.png)](./media/payment-predictions-per-transaction.png)
 
 Ruten **Relatert informasjon** til høyre på siden viser flere detaljer om prediksjoner:
 
@@ -54,13 +54,13 @@ Ruten **Relatert informasjon** til høyre på siden viser flere detaljer om pred
 
 Dataene i delen for **Viktigste faktorer** og i hurtigfanene **Kundeinnsikt** og **Kundehistorikk** bidrar til å forklare betalingsprediksjonene. Det kan bidra til å øke tiltroen til effekten av prediksjonene.
 
-[![Grafiske indikatorer for betalingsprediksjoner på siden Relatert informasjon](./media/payment-prediction-gauges.png)](./media/payment-prediction-gauges.png)
+[![Grafiske indikatorer for betalingsprediksjoner på siden Relatert informasjon.](./media/payment-prediction-gauges.png)](./media/payment-prediction-gauges.png)
 
 ### <a name="payment-prediction-per-customer-list-page"></a>Listesiden Betalingspredisjon per kunde
 
 Listesiden **Betalingsprediksjon per kunde** viser den totale åpne saldoen, og beløpet som forventes å bli betalt **Til planlagt tid**, **Forsinket** og **Svært sent**.
 
-[![Listesiden Betalingspredisjoner per kunde](./media/payment-predictions-per-transaction-02.png)](./media/payment-predictions-per-transaction-02.png)
+[![Listesiden Betalingspredisjoner per kunde.](./media/payment-predictions-per-transaction-02.png)](./media/payment-predictions-per-transaction-02.png)
 
 Betalingsbeløpet i hver samling beregnes som summen av det vektede gjennomsnittet av transaksjonssaldoen. Dette beløpet beregnes på grunnlag av betalingssannsynligheten i hver samling.
 
@@ -92,11 +92,11 @@ Dataene i delen for **Viktigste faktorer** og i hurtigfanene **Kundeinnsikt** og
 
 Du kan vise nøyaktigheten av betalingsprediksjoner ved å gå til **Kreditt og innkrevinger \> Oppsett \> Finance insights \> Parametere for økonomisk innsikt**. I kategorien **Innsikt i kundebetaling** viser delen **Prognosemodell** nøyaktigheten til forutsigelsesmodellen som en prosent.
 
-[![Nøyaktigheten av betalingspredisjoner](./media/finance-insights-parameters-accuracy-2nd.png)](./media/finance-insights-parameters-accuracy-2nd.png)
+[![Nøyaktigheten av betalingspredisjoner.](./media/finance-insights-parameters-accuracy-2nd.png)](./media/finance-insights-parameters-accuracy-2nd.png)
 
 Hvis du ikke er fornøyd med nøyaktigheten, velger du koblingen **Forbedre modellnøyaktighet** for å åpne utvidelsesopplevelsen for AI Builder. I utvidelsesopplevelsen for AI Builder kan du velge eller avbryte merkingen av felter til du har valgt feltene du tror er viktigst for å forutse sannsynligheten for betaling på en nøyaktig måte. Når du er ferdig, kan du enkelt trene opp forutsigelsesmodellen igjen og publisere endringene. Den nylig opplærte forutsigelsesmodellen vil automatisk bli plukket opp for prediksjoner i Dynamics 365 Finance.
 
-[![Utvidelsesopplevelse for AI Builder](./media/ai-builder.png)](./media/ai-builder.png)
+[![Utvidelsesopplevelse for AI Builder.](./media/ai-builder.png)](./media/ai-builder.png)
 
 ## <a name="release-details"></a>Frigivelsesdetaljer
 

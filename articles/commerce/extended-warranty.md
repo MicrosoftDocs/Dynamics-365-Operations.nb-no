@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: sijoshi
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 567f102cfe78a92e2e6f1243fb531dd3366c9bf2
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 699c285ba0f92df4ccc05790b813ff423c01b62a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792469"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353834"
 ---
 # <a name="create-and-configure-extended-warranties"></a>Opprette og konfigurere utvidede garantier
 
@@ -81,7 +81,7 @@ Følg denne fremgangsmåten for å opprette en garantivare i Commerce.
 
     For en garanti på to år kan du for eksempel sette **Tidsenhet**-feltet til **År** og feltet **Tidslengde** til **2**. Du kan også sette feltet **Tidsenhet** til **Måned(er)** og feltet **Tidslengde** til **24**, som vist i følgende illustrasjon.
 
-    ![Siden produktdetaljer for en garantivare](./media/ew-time-properties.png)
+    ![Siden produktdetaljer for en garantivare.](./media/ew-time-properties.png)
 
 1. Velg **Lagre** for å lagre garantivaren.
 1. Frigi garantiproduktet til firmaet slik at det kan selges. Hvis du vil ha mer informasjon, kan du se [Definere detaljhandelsprodukter](set-up-retail-products.md).
@@ -94,7 +94,7 @@ Følg denne fremgangsmåten for å opprette en garantivare i Commerce.
 
     Følgende illustrasjon viser for eksempel at feltet **Prisområdebase** er satt til **Basispris**, feltet **Nedre grense** er satt til USD 500, og **Øvre grense**-feltet er satt til USD 1000.
     
-    ![Siden Detaljer om frigitt produkt for en garantivare](./media/ew-release-product-details.png)
+    ![Siden Detaljer om frigitt produkt for en garantivare.](./media/ew-release-product-details.png)
 
 1. Plasser garantivaren i kanalen der den skal selges. Hvis du vil ha mer informasjon, kan du se [Definere sortimenter](set-up-assortments.md).
 
@@ -161,11 +161,11 @@ To salgsstedsoperasjoner lar salgsmedarbeideren selge garantivarer under arbeids
 
 Følgende illustrasjon viser et eksempel på en salgsstedsterminalside med en ledetekst for å legge til en garantivare for det gjeldende kjøpet av en garantiberettiget vare.
 
-![Eksempel på en ledetekst for å legge til en garantivare for det gjeldende kjøpet](./media/ew-sell-warranty.png)
+![Eksempel på en ledetekst for å legge til en garantivare for det gjeldende kjøpet.](./media/ew-sell-warranty.png)
 
 Følgende illustrasjon viser et eksempel på funksjonen for å legge til en garantivare for en garantiberettiget vare som er solgt tidligere.
 
-![Eksempel på funksjonen for å legge til en garantivare for en tidligere solgt garantiberettiget vare](./media/ew-add-warranty-existing.png)
+![Eksempel på funksjonen for å legge til en garantivare for en tidligere solgt garantiberettiget vare.](./media/ew-add-warranty-existing.png)
 
 ## <a name="process-warranty-transactions"></a>Behandle garantitransaksjoner
 

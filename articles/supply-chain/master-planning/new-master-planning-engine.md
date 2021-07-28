@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.search.validFrom: 2020-11-05
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e227cabdd205b7a0c1fe784fc719b538e6ea4443
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: e9aa911ca22ca2beeffe6bec95f17f94142065e4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907697"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348763"
 ---
 # <a name="migration-to-planning-optimization-for-master-planning"></a>Overføring til planleggingsoptimalisering for hovedplanlegging
 
@@ -65,7 +65,7 @@ Når de nødvendige funksjonene blir tilgjengelige, vil Microsoft angi en respit
 
 Følgende flytdiagram oppsummerer informasjonen som oppgis i dette emnet, slik at du raskt kan finne ut om du bør be om et unntak. Hvis du må be om et unntak, kan du fylle ut og sende inn [spørreskjemaet om migrering og unntak i Planleggingsoptimalisering](https://go.microsoft.com/fwlink/?linkid=2144962).
 
-![Unntaksflytskjema](media/exception-diagram.png "Unntaksflytskjema")
+![Unntaksflytskjema.](media/exception-diagram.png "Unntaksflytskjema")
 
 > [!NOTE]
 > Du kan bare be om et unntak for leiere som for øyeblikket inkluderer, eller kommer til å inkludere, et produksjonsmiljø, ikke bare for leiere med sandkassemiljøer. Hvis du må deaktivere unntaksfeilen for planleggingsoptimalisering i en infrastruktur som en tjeneste (IaaS), kjører du SQL-spørringen som følger med i [sandkassemiljøer](#faq-sandbox).

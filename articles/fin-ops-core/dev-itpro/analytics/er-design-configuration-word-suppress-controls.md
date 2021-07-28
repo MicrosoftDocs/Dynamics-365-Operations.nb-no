@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: 8c99203110cfdc7f8123c30488611d55f48e8f67
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: e6ab75c970c6c14d4977b6c739ba46e33f4962e9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753608"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348050"
 ---
 # <a name="suppress-word-content-controls-in-generated-reports"></a>Skjule Word-innholdskontroller i genererte rapporter
 
@@ -63,7 +63,7 @@ Du må også laste ned og lagre følgende mal for eksempelrapporten:
     > [!NOTE]
     > Den gjentagende innholdskontrollen merkes av nøkkelen **SummaryLines** som samsvarer med feltet for den egendefinerte XML-delen den er tilordnet.
 
-    ![Oppsett for Word-mal](./media/er-design-configuration-word-suppress-controls-image1.gif)
+    ![Oppsett for Word-mal.](./media/er-design-configuration-word-suppress-controls-image1.gif)
 
 ## <a name="select-the-existing-er-report-configuration"></a>Velg den eksisterende ER-rapportkonfigurasjonen
 
@@ -98,7 +98,7 @@ For øyeblikket brukes filen SampleVendPaymDocReportBounded.docx som en mal for 
 7. Velg **OK**.
 8. I dialogboksen **Parametere for elektronisk rapport** velger du **OK** og analyserer de genererte utdataene.
 
-    ![Betalinger for behandling på Leverandørbetalinger-siden](./media/er-design-configuration-word-suppress-controls-image2.gif)
+    ![Betalinger for behandling på Leverandørbetalinger-siden.](./media/er-design-configuration-word-suppress-controls-image2.gif)
 
     Resultatet vises i Word-format, og inneholder sammendragsdelen.
 
@@ -149,7 +149,7 @@ Hvis du vil skrive inn sammendragsdelen i et generert dokument basert på foresp
 
 9. Velg **Lagre** for å lagre endringene i det redigerbare formatet.
 
-    ![De genererte utdataene i Word-format](./media/er-design-configuration-word-suppress-controls-image3.gif)
+    ![De genererte utdataene i Word-format.](./media/er-design-configuration-word-suppress-controls-image3.gif)
 
 ## <a name="run-the-modified-format-to-create-word-output"></a>Kjøre det endreded formatet for å opprette Word-utdata
 
@@ -163,7 +163,7 @@ Hvis du vil skrive inn sammendragsdelen i et generert dokument basert på foresp
 8. Velg **Ja** feltet **Skjul sammendragsdel** i dialogboksen **Parametere for elektronisk rapport**.
 9. Velg **OK** og analyser de genererte utdataene.
 
-    ![Genererte utdata i Word-format](./media/er-design-configuration-word-suppress-controls-image4.gif)
+    ![Genererte utdata i Word-format.](./media/er-design-configuration-word-suppress-controls-image4.gif)
 
     Legg merke til at utdataene ikke inneholder sammendragsdelen fordi det er skjedd en feil.
 

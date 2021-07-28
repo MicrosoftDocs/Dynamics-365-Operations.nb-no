@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: ccc2cbf11e405facf310d93e5458cfe12a43146d
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: c75525749d9015387cc112beda104238a93698e9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020225"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346698"
 ---
 # <a name="map-stores-and-teams-if-there-are-pre-existing-teams-in-microsoft-teams"></a>Tilordne butikker og grupper hvis det finnes eksisterende grupper i Microsoft Teams
 
@@ -57,7 +57,7 @@ Følg denne fremgangsmåten for å tilordne butikker og tilsvarende grupper i Co
 
 Følgende eksempelbilde viser gruppen **Eksporter Teams-tilordning** i Commerce med **Legg til enhet**-elementer og de eksporterte CSV-filhodene uthevet.
 
-![Eksporter Teams-tilordning i Commerce med Legg til enhet-elementer og de eksporterte CSV-filhodene uthevet](media/d365-commerce-data-mgmt-export-entity.png)
+![Eksporter Teams-tilordning i Commerce med Legg til enhet-elementer og de eksporterte CSV-filhodene uthevet.](media/d365-commerce-data-mgmt-export-entity.png)
 
 > [!NOTE]
 > Når du har fullført trinnene ovenfor, følger du trinnene i [Synkroniser oppgavebehandling mellom Microsoft Teams og POS](synchronize-tasks-teams-pos.md) for å synkronisere oppgavebehandling. 

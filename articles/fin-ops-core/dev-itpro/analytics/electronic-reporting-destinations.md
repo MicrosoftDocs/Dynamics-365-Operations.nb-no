@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 088f1b13e20602345dbec5179c343e27be9cec44
-ms.sourcegitcommit: 2cd82983357b32f70f4e4a0c15d4d1f69e08bd54
+ms.openlocfilehash: 3774a6258fcefb361c5c2ed709dd7700b1dc071d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "6085506"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351158"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Mål for elektronisk rapportering (ER)
 
@@ -62,7 +62,7 @@ Hvis du setter **Satsvis behandling**-alternativet til **Ja**, kjøres et ER-for
 > [!NOTE]
 > Jobbeskrivelsen informerer deg om kjøringen av en ER-formattilordning. Det inneholder også navnet på ER-komponenten som kjøres.
 
-[![Kjøre et ER-format](./media/ER_Destinations-RunInBatchMode.png)](./media/ER_Destinations-RunInBatchMode.png)
+[![Kjøre et ER-format.](./media/ER_Destinations-RunInBatchMode.png)](./media/ER_Destinations-RunInBatchMode.png)
 
 Du kan finne informasjon om denne jobben på flere steder:
 
@@ -74,17 +74,17 @@ Du kan finne informasjon om denne jobben på flere steder:
 
 - På siden **Elektroniske rapporteringsjobber** velger du **Vis filer** for å vise listen over eventuelle feil og advarsler som ble generert under jobbutførelsen.
 
-    [![Se gjennom ER-jobblisten](./media/ER_Destinations-ReviewERJobs.png)](./media/ER_Destinations-ReviewERJobs.png)
+    [![Se gjennom ER-jobblisten.](./media/ER_Destinations-ReviewERJobs.png)](./media/ER_Destinations-ReviewERJobs.png)
 
 ### <a name="user-configured-behavior"></a>Brukerkonfigurert virkemåte
 
 På **Mål for elektronisk rapportering**-siden kan du overstyre standardatferden for en konfigurasjon. Importerte konfigurasjoner vises ikke på denne siden før du velger **Ny** og deretter velger du en konfigurasjon å opprette innstillinger for i feltet **Referanse**.
 
-[![Velge en konfigurasjon i referansefeltet](./media/ER_Destinations-SelectFormat.png)](./media/ER_Destinations-SelectFormat.png)
+[![Velge en konfigurasjon i referansefeltet.](./media/ER_Destinations-SelectFormat.png)](./media/ER_Destinations-SelectFormat.png)
 
 Når du har opprettet en referanse, kan du opprette et filmål for hver **Mappe**- eller **Fil**-komponent i ER-referanseformatet.
 
-[![Opprette et filmål](./media/ER_Destinations-ConfigureElementDestination.png)](./media/ER_Destinations-ConfigureElementDestination.png)
+[![Opprette et filmål.](./media/ER_Destinations-ConfigureElementDestination.png)](./media/ER_Destinations-ConfigureElementDestination.png)
 
 Deretter kan du i **Målinnstillinger**-dialogboksen aktivere og deaktivere individuelle mål for filmålet. **Innstillinger**-knappen brukes til å kontrollere alle mål for et valgt filmål. I dialogboksen **Innstillinger for mål** kan du kontrollere hver målet separat ved å sette alternativet **Aktivert** for det.
 
@@ -92,7 +92,7 @@ I versjoner av Finans **før versjon 10.0.9** kan du opprette **ett filmål** fo
 
 Du kan for eksempel bruke denne funksjonaliteten til å konfigurere filmål for en filkomponent som brukes til å generere et utgående dokument i Excel-format. Ett mål ([Arkiv](er-destination-type-archive.md)) kan konfigureres til å lagre den opprinnelige Excel-filen i ER-jobberarkivet, og et annet mål ([E-post](er-destination-type-email.md)) kan konfigureres til samtidig å [konvertere](#OutputConversionToPDF) Excel-filen til PDF-format og sende PDF-filen per e-post.
 
-[![Konfigurere flere mål for ett enkelt formatelement](./media/ER_Destinations-SampleDestinations.png)](./media/ER_Destinations-SampleDestinations.png)
+[![Konfigurere flere mål for ett enkelt formatelement.](./media/ER_Destinations-SampleDestinations.png)](./media/ER_Destinations-SampleDestinations.png)
 
 Når du kjører et ER-format, kjøres alltid alle målene som ble konfigurert for komponentene for formatet. I Finance **versjon 10.0.17 og nyere** er i tillegg funksjonaliteten for ER-mål forbedret og lar deg nå konfigurere ulike sett med mål for ett ER-format. Denne konfigurasjonen merker hvert sett som konfigurert for en bestemt brukerhandling. API-en for ER er [utvidet](er-apis-app10-0-17.md), slik at en handling som brukeren utfører ved å kjøre et ER-format, kan tilbys. Handlingskoden som tilbys, sendes til ER-mål. Du kan kjøre ulike mål for et ER-format, avhengig av handlingskoden som tilbys. Hvis du vil ha mer informasjon, kan du se [Konfigurere handlingsavhengige ER-mål](er-action-dependent-destinations.md).
 
@@ -116,11 +116,11 @@ Du kan definere mål bare for ER-konfigurasjoner som er importert, og formater s
 
 Når du konfigurerer filmål for et valgt format, kan du konfigurere dem for hele formatet.
 
-[![Konfigurasjonskobling](./media/ER_Destinations-ConfigurationLink.png)](./media/ER_Destinations-ConfigurationLink.png)
+[![Konfigurasjonskobling.](./media/ER_Destinations-ConfigurationLink.png)](./media/ER_Destinations-ConfigurationLink.png)
 
 Samtidig har du kanskje flere [versjoner](general-electronic-reporting.md#component-versioning) av formatet som er importert til gjeldende Finans-forekomst. Du kan vise dem hvis du velger **Konfigurasjon**-koblingen som tilgjengeliggjøres når du velger **Referanse**-feltet.
 
-[![Konfigurasjonsversjoner](./media/ER_Destinations-ConfigurationVersions.png)](./media/ER_Destinations-ConfigurationVersions.png)
+[![Konfigurasjonsversjoner.](./media/ER_Destinations-ConfigurationVersions.png)](./media/ER_Destinations-ConfigurationVersions.png)
 
 Som standard brukes konfigurerte mål bare når du kjører en ER-formatversjon som har statusen **Fullført** eller **Delt**. Noen ganger må du imidlertid bruke konfigurerte mål når utkastversjonen av et ER-format kjøres. Du kan for eksempel endre en utkastversjon av formatet, og det er lurt å bruke konfigurerte mål til å teste hvordan genererte utdata vil bli levert. Følg disse trinnene for å bruke mål for et ER-format når utkastversjonen kjøres.
 
@@ -128,7 +128,7 @@ Som standard brukes konfigurerte mål bare når du kjører en ER-formatversjon s
 2. På **Konfigurasjoner**-siden, i handlingsruten i fanen **Konfigurasjoner** i gruppen **Avanserte innstillinger**, velger du **Brukerparametere**.
 3. Sett **Bruk mål for utkaststatus**-alternativet til **Ja**.
 
-[![Bruk mål for utkaststatus-alternativet](./media/ER_Destinations-UserSetting1.png)](./media/ER_Destinations-UserSetting1.png)
+[![Bruk mål for utkaststatus-alternativet.](./media/ER_Destinations-UserSetting1.png)](./media/ER_Destinations-UserSetting1.png)
 
 Hvis du vil bruke utkastversjonen av et ER-format, må du markere ER-formatet tilsvarende.
 
@@ -136,11 +136,11 @@ Hvis du vil bruke utkastversjonen av et ER-format, må du markere ER-formatet ti
 2. På **Konfigurasjoner**-siden, i handlingsruten i fanen **Konfigurasjoner** i gruppen **Avanserte innstillinger**, velger du **Brukerparametere**.
 3. Sett **Kjør innstilling**-alternativet til **Ja**.
 
-[![Kjør innstilling-alternativet](./media/ER_Destinations-UserSetting2.png)](./media/ER_Destinations-UserSetting2.png)
+[![Kjør innstilling-alternativet.](./media/ER_Destinations-UserSetting2.png)](./media/ER_Destinations-UserSetting2.png)
 
 Når du har fullført dette oppsettet, blir **Kjør utkast**-alternativet tilgjengelig for ER-formatene du endrer. Sett dette alternativet til **Ja** for å begynne å bruke utkastversjonen av formatet når formatet kjøres.
 
-[![Kjør utkast-alternativet](./media/ER_Destinations-FormatSetting.png)](./media/ER_Destinations-FormatSetting.png)
+[![Kjør utkast-alternativet.](./media/ER_Destinations-FormatSetting.png)](./media/ER_Destinations-FormatSetting.png)
 
 ## <a name="destination-failure-handling"></a><a name="DestinationFailure"></a>Håndtering av målfeil
 
@@ -148,7 +148,7 @@ Vanligvis kjøres et ER-format innenfor omfanget til en bestemt bedriftsprosess.
 
 Du konfigurerer for eksempel behandling av leverandørbetaling slik at ER-formatet for **ISO20022-kredittoverføring** kjøres for å generere betalingsfilen og tilleggsdokumentene (for eksempel følgeskrivet og kontrollrapporten). Hvis behandlingen av en betaling skal anses som fullført bare hvis følgeskrivet er levert via e-post, må du merke av i **Stopp behandling ved feil**-avmerkingsboksen for **Følgeskriv**-komponenten i riktig filmål, som vist i følgende illustrasjon. I dette tilfellet vil statusen til betalingen som er valgt for behandling, bli endret fra **Ingen** til **Sendt** bare når følgeskrivet som genereres, godtas for levering av en e-postleverandør som er konfigurert i Finans-forekomsten.
 
-[![Konfigurere prosesshåndtering for filmålfeil](./media/ER_Destinations-StopProcessingAtDestinationFailure.png)](./media/ER_Destinations-StopProcessingAtDestinationFailure.png)
+[![Konfigurere prosesshåndtering for filmålfeil.](./media/ER_Destinations-StopProcessingAtDestinationFailure.png)](./media/ER_Destinations-StopProcessingAtDestinationFailure.png)
 
 Hvis du opplever avmerkingen i **Stopp behandling ved feil**-avmerkingsboksen for **Følgeskriv**-komponenten i målet, vil en betaling bli ansett som behandlet selv når levering av følgeskrivet via e-post mislykkes. Status for betalingen vil bli endret fra **Ingen** til **Sendt** selv når følgeskrivet ikke kan sendes fordi mottakerens eller avsenderens e-postadresse eksempelvis mangler eller er feil.
 
@@ -160,7 +160,7 @@ Du kan bruke alternativet PDF-konvertering til å konvertere utdata i Microsoft 
 
 Hvis du vil gjøre alternativet PDF-konvertering tilgjengelig i gjeldende Finans-forekomst, åpner du **Funksjonsadministrering**-arbeidsområdet og aktiverer funksjonen **Konverter utgående dokumenter for elektronisk rapportering fra Microsoft Office-formater til PDF**.
 
-[![Aktivere PDF-konvertering av utgående dokumenter-funksjonen i Funksjonsadministrering](./media/ER_Destinations-EnablePdfConversionFeature.png)](./media/ER_Destinations-EnablePdfConversionFeature.png)
+[![Aktivere PDF-konvertering av utgående dokumenter-funksjonen i Funksjonsadministrering.](./media/ER_Destinations-EnablePdfConversionFeature.png)](./media/ER_Destinations-EnablePdfConversionFeature.png)
 
 ### <a name="applicability"></a>Relevans
 
@@ -185,13 +185,13 @@ Bare de vanlige systemskriftene i Windows-operativsystemet brukes til å konvert
 
 Hvis du vil aktivere PDF-konvertering for et filmål, merker du av i **Konverter til PDF**-avmerkingsboksen.
 
-[![Aktivere PDF-konvertering for et filmål](./media/ER_Destinations-TurnOnPDFConversion.png)](./media/ER_Destinations-TurnOnPDFConversion.png)
+[![Aktivere PDF-konvertering for et filmål.](./media/ER_Destinations-TurnOnPDFConversion.png)](./media/ER_Destinations-TurnOnPDFConversion.png)
 
 ### <a name=""></a><a name="SelectPdfPageOrientation">Velg en sideretning for PDF-konvertering</a>
 
 Hvis du genererer en ER-konfigurasjon i Excel-format og vil konvertere den til PDF-format, kan du angi papirretningen til PDF-dokumentet. Når du merker av for **Konverter til PDF** for å slå på PDF-konvertering for en fildestinasjon som produserer en utdatafil i Excel-format, blir **Sresultatproduktideretning**-feltet tilgjengelig på hurtigfanen **PDF-konverteringsinnstillinger**. Velg den foretrukne retningen i **Sideretning**-feltet.
 
-[![Velge en sideretning for PDF-konvertering](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)
+[![Velge en sideretning for PDF-konvertering.](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)
 
 > [!NOTE]
 > Hvis du vil ha muligheten til å velge PDF-papirretningen, må du installere Finance versjon 10.0.10 eller nyere.
@@ -222,7 +222,7 @@ I hurtigfanen **Generelt** i feltet **Send mappe som** velger du en av følgende
     > [!NOTE]
     > Når du velger **Separate filer**, samles de genererte utdataene i minnet i zippet tilstand. Derfor brukes maksimum [filstørrelsesgrense](er-compress-outbound-files.md) for zipped utdata når den reelle filstørrelsen kan overskride denne grensen. Vi anbefaler at du velger denne verdien når du forventer at størrelsen på de genererte utdataene er ganske stor.
 
-[![Konfigurere et mål for en mappeformatkomponent](./media/er_destinations-set-unfolding-option.png)](./media/er_destinations-set-unfolding-option.png)
+[![Konfigurere et mål for en mappeformatkomponent.](./media/er_destinations-set-unfolding-option.png)](./media/er_destinations-set-unfolding-option.png)
 
 ### <a name="limitations"></a>Begrensninger
 

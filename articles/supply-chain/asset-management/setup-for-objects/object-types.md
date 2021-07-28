@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6b493c6993ebd466c153e999fa2592105b78d0f2
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: ba8151e6f6b53f53e8ab54821d86a371b3341775
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825716"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347170"
 ---
 # <a name="asset-types"></a>Aktivatyper
 
@@ -45,9 +45,9 @@ Først definerer du de nødvendige aktivatypene. Deretter oppretter du aktivamod
 7. Velg **Lagre**.
 8. I hurtigfanen **Vedlikeholdsjobbtyper** velger du vedlikeholdsjobbtypene som skal relateres til aktivatypen.
 
-    - Hvis du vil velge en vedlikeholdsjobbtype, velger du den i feltet **Gjenværende vedlikeholdsjobbtyper**, og deretter velger du pil høyre ![Pil høyre](media/29-setup-for-objects.png) for å flytte den til delen **Valgte vedlikeholdsjobbtyper**.
-    - Hvis du vil velge alle tilgjengelige vedlikeholdsjobbtyper, velger du ![Videresend alle-pilknappen](media/30-setup-for-objects.png). Alle vedlikeholdsjobbtyper overføres fra feltet **Gjenværende vedlikeholdsjobbtyper** til feltet **Valgte vedlikeholdsjobbtyper**.
-    - Hvis du vil avbryte valget av en vedlikeholdsjobbtype, velger du den i feltet **Valgte vedlikeholdsjobbtyper**, og deretter velger du pil venstre ![Pil venstre](media/31-setup-for-objects.png) for å flytte den til feltet **Gjenværende vedlikeholdsjobbtyper**.
+    - Hvis du vil velge en vedlikeholdsjobbtype, velger du den i feltet **Gjenværende vedlikeholdsjobbtyper**, og deretter velger du pil høyre ![Pil høyre-knappen.](media/29-setup-for-objects.png) for å flytte den til delen **Valgte vedlikeholdsjobbtyper**.
+    - Hvis du vil velge alle tilgjengelige vedlikeholdsjobbtyper, velger du ![Videresend alle-pilknappen.](media/30-setup-for-objects.png) . Alle vedlikeholdsjobbtyper overføres fra feltet **Gjenværende vedlikeholdsjobbtyper** til feltet **Valgte vedlikeholdsjobbtyper**.
+    - Hvis du vil avbryte valget av en vedlikeholdsjobbtype, velger du den i feltet **Valgte vedlikeholdsjobbtyper**, og deretter velger du pil venstre ![Pil venstre-knappen.](media/31-setup-for-objects.png) for å flytte den til delen **Gjenværende vedlikeholdsjobbtyper**.
 
 9. Du kan også velge tellere som skal være knyttet til aktivatypen. På hurtigfanen **Tellere** foretar du valg ved hjelp av metodene som er beskrevet for vedlikeholdsjobbtyper i trinn 8. Hvis du vil ha informasjon om hvordan du definerer tellere, se [Tellere](counters.md).
 10. Du kan også velge attributtypene som skal være knyttet til aktivatypen. På hurtigfanen **Attributtyper** foretar du valg ved hjelp av metodene som er beskrevet for vedlikeholdsjobbtyper i trinn 8. Hvis du vil opprette den foretrukne sekvensen med attributtverdier, velger du en attributtype i feltet **Valgte attributtyer** og bruker pil opp og pil ned til å flytte den. Sekvensen av attributtyper vises på aktiva som bruker denne aktivatypen. Hvis du vil ha mer informasjon om aktivaattributter, se [Vedlikeholdsattributtyper](../setup-for-functional-locations/specification-types.md).

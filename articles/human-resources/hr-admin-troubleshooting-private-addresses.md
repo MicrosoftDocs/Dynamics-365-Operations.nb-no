@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2edcef338f0ff8fcf231d4314fc972284397d000
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 15616a9b3673a4c1842e389b976a80d599e2e77f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053329"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346328"
 ---
 # <a name="access-to-private-addresses-by-security-role"></a>Tilgang til private adresser etter sikkerhetsrolle
 
@@ -37,7 +37,7 @@ For å løse problemet må kunden følge denne fremgangsmåten for den duplisert
 2. På fanen **Sikkerhet for privat lokasjon** flytter du den nye sikkerhetsrollen fra listen **Tilgjengelige roller** til listen **Valgte roller**.
 3. Velg **Lagre**.
 
-![Siden for parametere for global adressebok](media/GAD-parameters.png)
+![Siden for parametere for global adressebok.](media/GAD-parameters.png)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

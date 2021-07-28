@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 97509ac662fad6181cbd60e5e0a44f674410acb9
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 92a95e5a0f603eb5f9afbf14ba924df168e44203
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754044"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350866"
 ---
 # <a name="troubleshoot-issues-from-upgrades-of-finance-and-operations-apps"></a>Feilsøke problemer med oppgradering av Finance and Operations-apper
 
@@ -68,7 +68,7 @@ På siden **Dobbel skriving** kan du få en feilmelding som ligner på følgende
 
 *Manglende kildefelt feltnavn \<field name\> i skjemaet.*
 
-![Eksempel på feilmeldingen om manglende kildekolonne](media/error_missing_field.png)
+![Eksempel på feilmeldingen om manglende kildekolonne.](media/error_missing_field.png)
 
 Du kan løse problemet ved først å følge disse trinnene for å kontrollere at kolonnene finnes i tabellen.
 

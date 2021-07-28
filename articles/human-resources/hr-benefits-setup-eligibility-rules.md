@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1b4673631f9c7d2310d8bdb08e0b25027bc8dedf
-ms.sourcegitcommit: 4c880b152e81350f023b944c2ab13e60498e2c7b
+ms.openlocfilehash: f7679afa29e5e4ef8482c71558275297d7359362
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "6093926"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351663"
 ---
 # <a name="configure-eligibility-rules-and-options"></a>Konfigurere rettighetsregler og -alternativer
 
@@ -137,20 +137,20 @@ Du kan definere regler som har flere kriterier. Når du definerer flere kriterie
 
 Regelen **Aktive ansatte** over består for eksempel av følgende kriterier. For at den ansatte skal være kvalifisert basert på **Aktiv ansatt**-regelen, må den ansatte være ansatt i juridisk enhet USMF *og* ha stillingstypen heltid.  
 
-![Kriterier i en rettighetsregel](media/CriteriaWithinAnEligibilityRule.png) 
+![Kriterier i en rettighetsregel.](media/CriteriaWithinAnEligibilityRule.png) 
  
 ### <a name="multiple-conditions-within-criteria"></a>Flere betingelser innenfor kriterier
 
 Reglene kan utvides ytterligere for å bruke flere betingelser innenfor ett enkelt kriterium. Den ansatte må oppfylle minst én bestemt betingelse for å være kvalifisert. Hvis du vil bygge på eksemplet ovenfor, kan regelen for **Aktive ansatte** utvides ytterligere til å omfatte ansatte som også er deltidsansatte. Derfor må den ansatte nå være en ansatt i USMF *og* enten heltids- eller deltidsansatt.  
 
-![Flere betingelser innenfor kriterier](media/MultipleConditionsWithinCriteria.png) 
+![Flere betingelser innenfor kriterier.](media/MultipleConditionsWithinCriteria.png) 
  
 ### <a name="eligibility-conditions-within-a-custom-field-criterion"></a>Rettighetsbetingelser innenfor et egendefinert feltkriterium 
 I likhet ovenstående kan egendefinerte felt brukes ved oppretting av rettighetsregler og arbeid på samme måte. Det kan for eksempel hende at du vil tilby internettrefusjon til de ansatte i Fargo og København som jobber hjemmefra, fordi internettkostnadene er høyere på disse stedene. Du gjør dette ved å opprette to egendefinerte felt: **Kontoradresse** (plukkliste) og **Jobber hjemmefra** (avmerkingsboks). Deretter oppretter du en regel som kalles **WFH-ansatte**. Kriteriet for regelen er der **Kontoradresse = Fargo** eller **København**, *og* der arbeid **Jobber hjemmefra = Ja**.
 
 Egendefinerte rettighetsregler må defineres som angitt i følgende bilde. 
 
-![Rettighetsbetingelser innenfor et egendefinert feltkriterium](media/EligibilityConditionsWithinACustomFieldCriterion.png) 
+![Rettighetsbetingelser innenfor et egendefinert feltkriterium.](media/EligibilityConditionsWithinACustomFieldCriterion.png) 
  
 ## <a name="configure-bundles"></a>Konfigurere bunter
 

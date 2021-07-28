@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 709a3c332bb6d086910b257fee9cdec8d2bc81a2
-ms.sourcegitcommit: a202bf67c3c2c054e2a47cb7b3145cb7c0ee635e
+ms.openlocfilehash: 9a6be5f4e08a92171892549c017c15c66b1bde2e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/25/2021
-ms.locfileid: "5941061"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350818"
 ---
 # <a name="troubleshoot-issues-during-initial-synchronization"></a>Feilsøke problemer under første synkronisering
 
@@ -38,7 +38,7 @@ Dette emnet inneholder feilsøkingsinformasjon om dobbel skriving-integrasjon me
 
 Når du har aktivert tilordningsmalene, skal statusen for tilordningene være **Kjører**. Hvis statusen er **Kjører ikke**, oppstod det feil under første synkronisering. Hvis du vil vise feilene, velger du fanen **Detaljer om innledende synkronisering** på siden **Dobbel skriving**.
 
-![Feil i fanen Detaljer om innledende synkronisering](media/initial_sync_status.png)
+![Feil i fanen Detaljer om innledende synkronisering.](media/initial_sync_status.png)
 
 ## <a name="you-cant-complete-initial-synchronization-400-bad-request"></a>Du kan ikke fullføre første synkronisering: 400 Ugyldig forespørsel
 
@@ -85,7 +85,7 @@ Følg fremgangsmåten nedenfor for å løse problemet.
 1. Logg på Finance and Operations-appen.
 2. På siden **Azure Active Directory-programmer** sletter du **DtAppID**-klienten, og deretter legger du den til på nytt.
 
-![DtAppID-klient i listen over Azure AD-programmer](media/aad_applications.png)
+![DtAppID-klient i listen over Azure AD-programmer.](media/aad_applications.png)
 
 ## <a name="self-reference-or-circular-reference-failures-during-initial-synchronization"></a>Egenreferanse- eller sirkelreferansefeil under innledende synkronisering
 
@@ -115,11 +115,11 @@ Hvis rader i leverandørtabellen har verdier i kolonnene **PrimaryContactPersonI
     2. Søk etter **primarycontactperson** for å finne kildekolonnen **PrimaryContactPersonId**.
     3. Velg **Handlinger**, og velg deretter **Slett**.
 
-        ![Slette kolonnen PrimaryContactPersonId](media/vend_selfref3.png)
+        ![Slette kolonnen PrimaryContactPersonId.](media/vend_selfref3.png)
 
     4. Gjenta disse trinnene for å slette kolonnen **InvoiceVendorAccountNumber**.
 
-        ![Slette kolonnen InvoiceVendorAccountNumber](media/vend-selfref4.png)
+        ![Slette kolonnen InvoiceVendorAccountNumber.](media/vend-selfref4.png)
 
     5. Lagre endringene i tilordningen.
 
@@ -129,11 +129,11 @@ Hvis rader i leverandørtabellen har verdier i kolonnene **PrimaryContactPersonI
     2. Velg **Leverandører V2**-tabellen.
     3. I handlingsruten velger du **Alternativer**, og deretter velger du **Endringssporing**.
 
-        ![Velge alternativet Endringssporing](media/selfref_options.png)
+        ![Velge alternativet Endringssporing.](media/selfref_options.png)
 
     4. Velg **Deaktiver endringssporing**.
 
-        ![Velge Deaktiver endringssporing](media/selfref_tracking.png)
+        ![Velge Deaktiver endringssporing.](media/selfref_tracking.png)
 
 3. Kjør den innledende synkroniseringen for tilordningen **Leverandører V2 (msdyn\_vendors)**. Den innledende synkroniseringen skal kjøres uten feil.
 4. Kjør den innledende synkroniseringen for **CDS-kontakter V2 (kontakter)**-tilordningen. Du må synkronisere denne tilordningen hvis du vil synkronisere den primære kontaktkolonnen i leverandørtabellen, siden innledende synkronisering også må utføres for kontaktradene.
@@ -162,11 +162,11 @@ Hvis noen rader i kundetabellen har verdier i kolonnene **ContactPersonID** og *
     2. Søk etter **contactperson** for å finne kildekolonnen **ContactPersonID**.
     3. Velg **Handlinger**, og velg deretter **Slett**.
 
-        ![Slette kolonnen ContactPersonID](media/cust_selfref3.png)
+        ![Slette kolonnen ContactPersonID.](media/cust_selfref3.png)
 
     4. Gjenta disse trinnene for å slette kolonnen **InvoiceAccount**.
 
-        ![Slette kolonnen InvoiceAccount](media/cust_selfref4.png)
+        ![Slette kolonnen InvoiceAccount.](media/cust_selfref4.png)
 
     5. Lagre endringene i tilordningen.
 
@@ -176,11 +176,11 @@ Hvis noen rader i kundetabellen har verdier i kolonnene **ContactPersonID** og *
     2. Velg **Kunder V3**-tabellen.
     3. I handlingsruten velger du **Alternativer**, og deretter velger du **Endringssporing**.
 
-        ![Velge alternativet Endringssporing](media/selfref_options.png)
+        ![Velge alternativet Endringssporing.](media/selfref_options.png)
 
     4. Velg **Deaktiver endringssporing**.
 
-        ![Velge Deaktiver endringssporing](media/selfref_tracking.png)
+        ![Velge Deaktiver endringssporing.](media/selfref_tracking.png)
 
 3. Kjør den innledende synkroniseringen på nytt for **Kunder V3 (Kontoer)**-tilordningen. Den innledende synkroniseringen skal kjøres uten feil.
 4. Kjør den innledende synkroniseringen for **CDS-kontakter V2 (kontakter)**-tilordningen.
@@ -196,7 +196,7 @@ Hvis noen rader i kundetabellen har verdier i kolonnene **ContactPersonID** og *
 
         Illustrasjonen nedenfor viser et prosjekt som oppdaterer **CustomerAccount** og **ContactPersonId**.
 
-        ![Dataintegrasjonsprosjekt for å oppdatere CustomerAccount og ContactPersonId](media/cust_selfref6.png)
+        ![Dataintegrasjonsprosjekt for å oppdatere CustomerAccount og ContactPersonId.](media/cust_selfref6.png)
 
     2. Legg til firmakriteriene i filteret på Dataverse-siden, slik at bare radene som samsvarer med filterkriteriene, blir oppdatert i Finance and Operations-appen. Velg filterknappen for å legge til et filter. Deretter, i dialogboksen **Rediger spørring**, kan du legge til en filterspørring som for eksempel **\_msdyn\_company\_value eq '\<guid\>'**. 
 
@@ -204,7 +204,7 @@ Hvis noen rader i kundetabellen har verdier i kolonnene **ContactPersonID** og *
 
         Hvis du ikke angir en filterspørring for **\_msdyn\_company\_value**, blir alle radene synkronisert.
 
-        ![Legge til en filterspørring](media/cust_selfref7.png)
+        ![Legge til en filterspørring.](media/cust_selfref7.png)
 
     Den innledende synkroniseringen av radene er nå fullført.
 

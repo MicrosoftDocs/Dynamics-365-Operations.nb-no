@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-09-20
 ms.dyn365.ops.version: Retail 10.0.15 update
-ms.openlocfilehash: c3da7474f9a61e97ee11688a18cb91a5ad1ccb5c
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: e2369b17244525023541cdbd0a0da3f2a2a09b30
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791171"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355458"
 ---
 # <a name="create-and-update-time-slots-for-customer-pickup"></a>Opprett og oppdater tidspunkter for kundehenting
 
@@ -34,7 +34,7 @@ Tidspunktfunksjonen gjør det mulig for forhandlere å definere et tidspunkt for
 
 Følgende illustrasjon viser et eksempel på valg av tidspunkt under e-handelsbetaling.
 
-![Eksempel på valg av tidspunkt under e-handelsbetaling](../dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
+![Eksempel på valg av tidspunkt under e-handelsbetaling.](../dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
 
 ## <a name="time-slot-properties"></a>Egenskaper for tidspunkt
 
@@ -60,7 +60,7 @@ Et tidspunkt defineres ved hjelp av følgende egenskaper:
 - **Aktive dager** – Angi dagene i uken når hentetidspunkter er aktive. Denne egenskapen gjør at forhandleren definerer dagene den vil støtte henteordrer.
 - **Detaljhandelskanaler** – Angi detaljhandelskanalene. Hvert tidspunkt kan knyttes til én eller flere detaljhandelsbutikker. Avhengig av hver butikks åpningstid, kan én eller flere tidspunktoppføringer opprettes og knyttes til en kanal. 
 
-<!-- ![HQ Timeslot overview](../dev-itpro/media/Curbside_timeslot_Settings_overview.PNG) -->
+<!-- ![HQ Timeslot overview.](../dev-itpro/media/Curbside_timeslot_Settings_overview.PNG) -->
 
 Bare én tidspunktmal kan konfigureres per kanal. Disse kanalene omfatter fysiske butikker, telefonsentre, mobile enheter og e-handel-områder.
 
@@ -85,14 +85,14 @@ Følg denne fremgangsmåten for å konfigurere tidspunktfunksjonen i Commerce He
     > [!NOTE]
     > Du kan opprette flere maler, men bare én mal kan knyttes til én enkelt kanal eller butikk.
 
-    ![Dialogboksen Ordrehenting – tidsinnstillinger](../dev-itpro/media/Curbside_timeslot_Settings_Page.PNG)
+    ![Dialogboksen Ordrehenting – tidsinnstillinger.](../dev-itpro/media/Curbside_timeslot_Settings_Page.PNG)
 
 1. Når du er ferdig, velg **OK**.
 1. Hvis tidspunkt på en dag varierer, oppretter du flere oppføringer i hurtigfanen **Ordrehenting – tidsinnstillinger** for å sikre at datoene og klokkeslettene ikke overlapper hverandre.
 1. På hurtigfanen **Detaljhandelskanaler** velger du **Legg til** for å knytte tidspunktmalen til butikkene eller kanalene der den skal brukes.
 1. I dialogboksen **Velg organisasjonsnoder** bruker du pilknappene til å velge (eller fjerne valg av) butikkene, områdene og organisasjonene som malen skal knyttes til.
 
-    <!-- ![HQ Timeslot overview](../dev-itpro/media/Curbside_timeslot_Settings_overview.PNG) -->
+    <!-- ![HQ Timeslot overview.](../dev-itpro/media/Curbside_timeslot_Settings_overview.PNG) -->
 
 1. Når du er ferdig, velg **OK**.
 1. På siden **Distribusjonsplan** kjører du **1070**- og **1135**-jobber for å synkronisere data til kanalene.
@@ -103,7 +103,7 @@ Når en ordre eller ordrelinje identifiseres for henting på salgsstedet, kan se
 
 Følgende illustrasjon viser et eksempel på valg av tidspunkt for en salgsstedsordre.
 
-![Et eksempel på valg av tidspunkt for en salgsstedsordre](../dev-itpro/media/Curbside_timeslot_POS.png)
+![Et eksempel på valg av tidspunkt for en salgsstedsordre.](../dev-itpro/media/Curbside_timeslot_POS.png)
 
 ## <a name="time-slot-selection-for-e-commerce-orders"></a>Tidspunktvalg for e-handelsordrer
 
@@ -114,17 +114,17 @@ Hvis du vil ha informasjon om hvordan du gjør valg av tidspunkt tilgjengelig fo
 
 Illustrasjonen nedenfor viser et eksempel på en e-handelsordre der et hentetidspunkt er valgt.
 
-![Eksempel på en e-handelsordre der et hentetidspunkt er valgt](../dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
+![Eksempel på en e-handelsordre der et hentetidspunkt er valgt.](../dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
 
 ## <a name="time-slot-selection-for-call-center-orders"></a>Tidspunktvalg for telefonsenterordrer
 
 I telefonsenterappen kan telefonsenteragenter velge hentebutikken eller -lokasjonen, i tillegg til en dato og et tidspunkt slik det er merket i illustrasjonen nedenfor.
 
-![Eksempel på en telefonsenterordre der et hentetidspunkt er valgt](../dev-itpro/media/Curbside_timeslot_callcenter.png)
+![Eksempel på en telefonsenterordre der et hentetidspunkt er valgt.](../dev-itpro/media/Curbside_timeslot_callcenter.png)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Henteinformasjonsmodul](../pickup-info-module.md)
+[Modul for henteinformasjon](../pickup-info-module.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

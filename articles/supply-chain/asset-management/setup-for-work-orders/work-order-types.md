@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6bdc9d226d8e1aa6960cac38b95b0245e46ee1ab
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d89d7c652837e881f7fcb6014fe017eedc2f876c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825596"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351471"
 ---
 # <a name="work-order-types"></a>Arbeidsordretyper
 
@@ -48,7 +48,7 @@ Hvis du vil ha mer informasjon om livssyklustilstander for arbeidsordrer og pros
 
 8. Velg **Lagre**.
 
-![Arbeidsordretyper](media/16-setup-for-work-orders.png)
+![Arbeidsordretyper.](media/16-setup-for-work-orders.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

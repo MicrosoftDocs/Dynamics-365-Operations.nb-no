@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: 23d02cf96faf3753303435acc148bf71e487d791
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c38717ca9c57913ea22f2dd7712b49f39d2e556e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799924"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349704"
 ---
 # <a name="enable-and-configure-auto-charges-by-channel"></a>Aktivere og konfigurere automatiske avregninger etter kanal
 
@@ -66,7 +66,7 @@ Følg denne fremgangsmåten for å tilordne et standardhierarki til et formål f
 1. Velg **Kjør nå** i handlingsruten.
 1. Gjenta de to forrige trinnene for å kjøre jobbene **1070** (**Kanalkonfigurasjon**) og **1110** (**Global konfigurasjon**).
 
-![Konfigurasjon av formålet for automatisk gebyr for detaljhandel per organisasjonshierarki](media/Auto-charges-org-hierarchy-purpose.png)
+![Konfigurasjon av formålet for automatisk gebyr for detaljhandel per organisasjonshierarki.](media/Auto-charges-org-hierarchy-purpose.png)
 
 ## <a name="define-auto-charges-by-channel"></a>Definere automatiske gebyrer per kanal
 
@@ -86,7 +86,7 @@ Følg denne fremgangsmåten for å definere automatiske gebyrer per kanal i Comm
 1. Velg **Kjør nå** i handlingsruten.
 1. Gjenta de to forrige trinnene for å kjøre jobbene **1070** (**Kanalkonfigurasjon**) og **1110** (**Global konfigurasjon**).
     
-![Automatiske gebyrer definert per kanal](media/Auto-charges-line-charge-by-channel.png)
+![Automatiske gebyrer definert per kanal.](media/Auto-charges-line-charge-by-channel.png)
 
 ## <a name="example-scenario"></a>Eksempelscenario
 
@@ -94,7 +94,7 @@ I følgende eksempel vises fremgangsmåten som kreves for å konfigurere et prod
 
 Organisasjonen definerer en gebyrkode som heter **RESIRKULERING**, som vist i følgende illustrasjon.
 
-![Gebyrkoden RESIRKULERING](media/Auto-charges-charge-code.png)
+![Gebyrkoden RESIRKULERING.](media/Auto-charges-charge-code.png)
 
 Et automatisk gebyr opprettes på linjenivå. Det har følgende konfigurasjon:
 
@@ -112,13 +112,13 @@ En linje for automatiske gebyrer opprettes. Det har følgende konfigurasjon:
 - Feltet **Kategori** settes til **Fast**.
 - Feltet **Gebyrer** settes til **USD 6,25**.
 
-![Konfigurasjon av automatisk gebyr på linjenivå og linjen for automatiske gebyrer](media/Auto-charges-recyclingfee-line-fee.png)
+![Konfigurasjon av automatisk gebyr på linjenivå og linjen for automatiske gebyrer.](media/Auto-charges-recyclingfee-line-fee.png)
 
 I POS-appen opprettes det en salgsordre i butikkanalen **San Francisco**. Linjen **Gebyrer** viser resirkulasjonsgebyret på **USD 6,25**.
 
 Ved å velge **Transaksjonsalternativer \> Gebyrer \> Behandle gebyrer** i POS-appen kan du vise gebyrkoden og beskrivelsen for resirkuleringsgebyret.
 
-![Resirkuleringsgebyr i POS-appen](media/pos-auto-charges-recyclingfee-line-fee.png)
+![Resirkuleringsgebyr i POS-appen.](media/pos-auto-charges-recyclingfee-line-fee.png)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

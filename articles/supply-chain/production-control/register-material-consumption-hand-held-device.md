@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0313bd1a5adc0fdb7a4958c5dfa013cfdc51491a
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 2c70b6ecd284acc8817970e090583603d1b8e110
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189648"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345410"
 ---
 # <a name="register-material-consumption-using-a-mobile-device"></a>Registrere materialforbruk med en mobil enhet
 
@@ -30,7 +30,7 @@ Dette emnet beskriver en arbeidsflyt som aktiverer registrering av råvareforbru
 
 ## <a name="introduction"></a>Introduksjon
 
-Denne arbeidsflyten er relevant hvis det er strenge krav til sporbarhet for materialer. For å vedlikeholde sporbarhet av materialet må det nøyaktige tidspunktet og antallet rapporteres for forbruk i slike tilfeller. Denne prosessen kan ses i motsetning til pre- eller backflushing-operasjoner, der det er en forskyvning mellom tidspunktet for registrering og tidspunktet når det faktiske forbruket finner sted. Dette emnet forklarer hvorfor en strategi for automatisk forbruk ikke kan brukes for noen materialer med krav til sporbarhet. La oss se på et enkelt scenario som forklarer hvordan du konfigurerer en arbeidsflyt for å aktivere registrering av råvareforbruk i produksjonen ved hjelp av en håndholdt enhet. [![konfigurer en arbeidsflyt for å aktivere registrering av råvareforbruk ved å bruke en håndholdt enhet](./media/scenario3.png)](./media/scenario3.png)
+Denne arbeidsflyten er relevant hvis det er strenge krav til sporbarhet for materialer. For å vedlikeholde sporbarhet av materialet må det nøyaktige tidspunktet og antallet rapporteres for forbruk i slike tilfeller. Denne prosessen kan ses i motsetning til pre- eller backflushing-operasjoner, der det er en forskyvning mellom tidspunktet for registrering og tidspunktet når det faktiske forbruket finner sted. Dette emnet forklarer hvorfor en strategi for automatisk forbruk ikke kan brukes for noen materialer med krav til sporbarhet. La oss se på et enkelt scenario som forklarer hvordan du konfigurerer en arbeidsflyt for å aktivere registrering av råvareforbruk i produksjonen ved hjelp av en håndholdt enhet. [![konfigurer en arbeidsflyt for å aktivere registrering av råvareforbruk ved å bruke en håndholdt enhet.](./media/scenario3.png)](./media/scenario3.png)
 
 ### <a name="scenario-details"></a>Scenariodetaljer
 
