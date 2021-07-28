@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c3827c5cff009453c820e70f00bfa4f36d78973f
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 3bf1c8081eea86fd14600174d843447b727d0226
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5755258"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347954"
 ---
 # <a name="modify-row-definition-cells"></a>Endre celler for raddefinisjon
 
@@ -174,7 +174,7 @@ I **Formatkode**-kolonnen i en raddefinisjon, angir formatkodene **DES**, **LFT*
 
 I eksemplet nedenfor vil en bruker hindre utskrift av overskriften og understrekinger i **Kontanter totalt** i rapporten, fordi det ikke var aktivitet i noen av kontantkontoene. I rad 220 (som formatkoden **---** angir, er en formateringsrad) i cellen **Relaterte formler/rader/enheter**, skriver brukeren derfor inn **250**, som er radkoden til beløpsraden brukeren vil skjule.
 
-[![RelatedRowsRowDefinition](./media/relatedrowsrowdefinition-1024x144.png)](./media/relatedrowsrowdefinition.png)
+[![RelatedRowsRowDefinition.](./media/relatedrowsrowdefinition-1024x144.png)](./media/relatedrowsrowdefinition.png)
 
 ## <a name="select-the-base-row-for-a-column-calculation"></a>Velge basisraden for en kolonneberegning
 I tilhørende rapportering tilordner du én eller flere basisrader i raddefinisjonen ved hjelp av formatkoden **CBR** (endre basisrad). En basisrad refereres deretter av en beregning i kolonnedefinisjonen. Her er noen vanlige eksempler CBR-beregninger:
@@ -399,7 +399,7 @@ Cellen **Kobling til finansdimensjoner** inneholder koblinger til de økonomiske
 2. Dobbeltklikk en celle i kolonnen **Kobling til finansdimensjoner**.
 3. Dobbeltklikk en celle under dimensjonsnavnet i dialogboksen **Dimensjoner**.
 4. I dialogboksen for dimensjonen velger du **Enkeltvis eller område**.
-5. I **Fra**-feltet angir du startdimensjonen eller klikker ![Bla gjennom](media/browse.gif "Bla gjennom") for å søke etter tilgjengelige dimensjoner. Hvis du vil angi et intervall av dimensjoner, kan du angi sluttdimensjonen i **Til**-feltet.
+5. I **Fra**-feltet angir du startdimensjonen, eller klikker ![Bla gjennom.](media/browse.gif "Bla gjennom") for å søke etter tilgjengelige dimensjoner. Hvis du vil angi et intervall av dimensjoner, kan du angi sluttdimensjonen i **Til**-feltet.
 6. Klikk **OK** for å lukke dialogboksen for dimensjonen. Dialogboksen **Dimensjoner** viser oppdatert dimensjon eller område.
 7. Klikk **OK** for å lukke dialogboksen **Dimensjoner**..
 
@@ -476,7 +476,7 @@ Tabellen nedenfor beskriver feltene i dialogboksen **Dimensjoner**.
 
 | Vare                | Beskrivelse |
 |---------------------|-------------|
-| Enkeltvis eller område | I **Fra**-feltet angir du navnet på en konto eller klikker **Bla gjennom**-knappen ![Bla gjennom](media/browse.gif "Bla gjennom") for å bla gjennom etter kontoen. Hvis du vil merke et område, kan du angi eller bla gjennom etter en verdi i **Til**-feltet. |
+| Enkeltvis eller område | I **Fra**-feltet angir du navnet på en konto eller klikker **Bla gjennom**-knappen ![Bla gjennom.](media/browse.gif "Bla gjennom") for å søke etter kontoen. Hvis du vil merke et område, kan du angi eller bla gjennom etter en verdi i **Til**-feltet. |
 | Dimensjonsverdisett | I **Navn**-feltet angir du navnet på et dimensjonsverdisett. Hvis du vil opprette, endre, kopiere, eller slette et sett, klikker du **Behandle dimensjonsverdisett**. **Formel**-feltet fylles ut med formelen fra cellen **Kobling til finansdimensjoner** for dette dimensjonsverdisettet i raddefinisjonen. |
 | Totalkontoer   | I **Navn**-feltet angir eller blar du gjennom etter en dimensjon for totalkontoer. **Formel**-feltet fylles ut med formelen i cellen **Kobling til finansdimensjoner** for denne totalkontoen i rapportdefinisjonen. |
 

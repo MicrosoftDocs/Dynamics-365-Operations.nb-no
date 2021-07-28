@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f7b28a33dff4af6bf2b97db825a5a8304213f3a0
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 57f5d23533c2fd17593648a15745fa770fc01dc4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796492"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345214"
 ---
 # <a name="show-order-notifications-in-the-point-of-sale-pos"></a>Vise ordrevarslinger på salgsstedet (POS)
 
@@ -72,14 +72,14 @@ Salgsstedsknappene kan nå vise et tall som kan hjelpe arbeiderne med å finne u
 
 Illustrasjonen nedenfor viser innstillingene for aktivt innhold i rutenettet for knappen.
 
-![Innstillinger for aktivt innhold i utforming for knappegruppe](./media/ButtonGridDesigner.png "Innstillinger for aktivt innhold i utforming for knappegruppe")
+![Innstillinger for aktivt innhold i utforming for knappegruppe.](./media/ButtonGridDesigner.png "Innstillinger for aktivt innhold i utforming for knappegruppe")
 
 Hvis du vil vise varslingsantallet på en knapp, må du kontrollere at riktig skjermoppsett oppdateres. Hvis du vil bestemme skjermoppsettet som brukes av POS, velger du **Innstillinger**-ikonet øverst til høyre, og noterer **Skjermoppsett-ID** og **Oppsettsoppløsning**. Med Edge-leseren går du nå til **Skjermoppsett**-siden i , finner **Skjermoppsett-ID** og **Oppsettsoppløsning** som ble identifisert ovenfor, og merker av for **Aktiver direkte innhold**. Gå til **Retail og Commerce \> IT for Retail og Commerce \> Distribusjonsplan** og kjør 1090 (registre)-jobben for å synkronisere oppsettsendringer.
 
-![Finne skjermoppsettet som brukes av salgsstedet](./media/Choose_screen_layout.png "Finne skjermoppsettet")
+![Finne skjermoppsettet som brukes av salgsstedet.](./media/Choose_screen_layout.png "Finne skjermoppsettet")
 
 Illustrasjonen nedenfor viser resultatet av å velge **Øverst til høyre** og **Midtstill** i feltet **Innholdsjustering** for knapper i ulike størrelser.
 
-![Aktivt innhold på salgsstedsknapper](./media/ButtonsWithLiveContent.png "Aktivt innhold på salgsstedsknapper")
+![Aktivt innhold på salgsstedsknapper.](./media/ButtonsWithLiveContent.png "Aktivt innhold på salgsstedsknapper")
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

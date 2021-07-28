@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: LedgerJournalTransVendInvoice, LedgerJournalTransVendPaym, VendPaymMode
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 11124
+ms.custom:
+- "11124"
+- intro-internal
 ms.assetid: 36b0f870-16d4-4bbb-8da5-e747e69b970d
 ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 158d96e748b982c87be3f8b08f68d1fdb919aeeb
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 03732ecd5a0cd59d15fa1f9f0691571bd0a19606
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897168"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346456"
 ---
 # <a name="sepa-credit-transfer-overview"></a>Oversikt over SEPA-kredittoverføring
 
@@ -30,7 +32,7 @@ Denne artikkelen inneholder generell informasjon om ISO 20022-kredittoverføring
 
 ## <a name="what-is-a-credit-transfer-message"></a>Hva er en kredittoverføringsmelding?
 Kredittoverføringsmeldingen er en forespørsel som initialiseringsparten (firmaet) sender for å flytte midler fra sin egen konto til en kreditor. Det er mange land-/områdespesifikke og bankspesifikke implementeringer av kredittoverføringsmeldinger. Noen av dem brukes innenfor ett land, og andre blir standarder. En godt etablert verdensomspennende standard er ISO 20022 og dens initieringsmeldinger, for eksempel kredittoverføring. Illustrasjonen nedenfor viser relasjoner og dekning for valgte kredittoverføringsmeldinger. 
-![Kredittoverføring](./media/credit-transfer.jpg) Kredittoverføringsmeldinger 
+![Kredittoverføring.](./media/credit-transfer.jpg) Kredittoverføringsmeldinger 
 
 ## <a name="what-are-iso-20022-and-sepa-payments"></a>Hva er ISO 20022- og SEPA-betalinger?
 Felles eurobetalingsområde (SEPA) er satt opp av EU-kommisjonen og angir at alle elektroniske betalinger betraktes som innenlandsbetalinger, uavhengig av landet/regionen der personen, virksomheten eller organisasjonen, og banken befinner seg. Det er ingen forskjell mellom nasjonale betalinger og betalinger over grenser. SEPA omfatter de 28 EU-medlemslandene pluss Island, Liechtenstein, Norge, Sveits, Monaco og San Marino. SEPA bidrar til å danne ett marked for betalingstransaksjoner i EØS. I siste instans forventes det at SEPA til slutt reduserer antall betalingsformater som banker, bedrifter og enkeltpersoner må arbeide med. EU-kommisjonen fastsatte det juridiske grunnlaget for SEPA-betalinger via PSD-direktivet (Payment Services Directive). EPC (European Payments Council) støtter SEPA gjennom følgende aktiviteter:

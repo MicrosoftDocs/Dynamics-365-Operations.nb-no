@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: e9af56a8a82938fa7d23e8096db2c59ed5fcb517
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 1d8e8ce51d9e7f962a4d4e39db502089d846d748
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6271286"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346722"
 ---
 # <a name="media-gallery-module"></a>Mediegallerimodul
 
@@ -41,7 +41,7 @@ Her er noen brukseksempler for mediegallerimoduler:
 
 I eksemplet i følgende illustrasjon er en kjøpeboks på en PDP som er vert for produkt bilder, ved hjelp av en mediegallerimodul.
 
-![Eksempel på en kjøpeboks på en produktdetaljside som er vert for produktavbildninger ved hjelp av en mediegallerimodul](./media/ecommerce-pdp-buybox.PNG)
+![Eksempel på en kjøpeboks på en produktdetaljside som er vert for produktavbildninger ved hjelp av en mediegallerimodul.](./media/ecommerce-pdp-buybox.PNG)
 
 ## <a name="media-gallery-properties"></a>Egenskaper for mediegalleri
 
@@ -59,11 +59,11 @@ I eksemplet i følgende illustrasjon er en kjøpeboks på en PDP som er vert for
 
 Illustrasjonen nedenfor viser et eksempel på en mediegallerimodul der alternativene for fullskjerm og zoom er tilgjengelige.
 
-![Eksempel på en mediegallerimodul der alternativene for fullskjerm og zoom er tilgjengelige](./media/ecommerce-media-zoom.png)
+![Eksempel på en mediegallerimodul der alternativene for fullskjerm og zoom er tilgjengelige.](./media/ecommerce-media-zoom.png)
 
 Illustrasjonen nedenfor viser et eksempel på en mediegallerimodul med kuraterte bilder (det vil si at de angitte bildene ikke er avhengige av produkt-ID-en eller sidekonteksten).
 
-![Eksempel på en mediegallerymodul med kuraterte bilder](./media/ecommerce-media-curated.PNG)
+![Eksempel på en mediegallerymodul med kuraterte bilder.](./media/ecommerce-media-curated.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Samhandling med Commerce Scale Unit
 

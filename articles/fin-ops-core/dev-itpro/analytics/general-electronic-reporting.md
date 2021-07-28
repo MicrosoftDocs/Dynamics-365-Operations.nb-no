@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: 58941
+ms.custom:
+- "58941"
+- intro-internal
 ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
 ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 26088a01b0e849a5df559631591ec65d7885452b
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: 05c77b913c1c2281ca45a3dea8fef2223a1dcfbb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944371"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345696"
 ---
 # <a name="electronic-reporting-er-overview"></a>Oversikt over elektronisk rapportering (ER)
 
@@ -101,7 +103,7 @@ En formatkomponent gjør det mulig å vedlegge bestemte filer, som kan brukes i 
 
 Illustrasjonen nedenfor viser hvordan dataene flyter for disse formatene.
 
-[![Dataflyt for utgående formatkomponenter](./media/ER-overview-02.png)](./media/ER-overview-02.png)
+[![Dataflyt for utgående formatkomponenter.](./media/ER-overview-02.png)](./media/ER-overview-02.png)
 
 Hvis du vil kjøre en enkelt ER-formatkonfigurasjonen og generere et utgående elektroniske dokument, må du identifisere tilordningen til formatkonfigurasjonen.
 
@@ -115,7 +117,7 @@ En formatkomponent er oppsettet for det innkommende dokumentet som importeres un
 
 Illustrasjonen nedenfor viser hvordan dataene flyter for disse formatene.
 
-[![Dataflyt for innkommende formatkomponenter](./media/ER-overview-03.png)](./media/ER-overview-03.png)
+[![Dataflyt for innkommende formatkomponenter.](./media/ER-overview-03.png)](./media/ER-overview-03.png)
 
 Hvis du vil kjøre en enkelt ER-formatkonfigurasjon for å importere data fra et innkommende elektronisk dokument, må du identifisere ønsket tilordning til en formatkonfigurasjonen samt integreringspunktet til en modelltilordning. Du kan bruke samme modelltilordning og mål med ulike formater for ulike typer innkommende dokumenter.
 
@@ -290,7 +292,7 @@ ER lar deg automatisk innføre endringer av den nyeste versjonen av basiskompone
 
 Listen over ER-konfigurasjoner for Finance oppdateres hele tiden. Åpne det [globale repositoriet](er-download-configurations-global-repo.md) for å se gjennom listen over ER-konfigurasjoner som støttes for øyeblikket. I hurtigfanen **Avviklingsdetaljer** kan du gå gjennom informasjonen om konfigurasjonene som er avviklet eller ikke lenger vedlikeholdes. 
 
-![Innhold i det globale repositoriet på siden Konfigurasjonsrepositorium](./media/er-overview-03.gif)
+![Innhold i det globale repositoriet på siden Konfigurasjonsrepositorium.](./media/er-overview-03.gif)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

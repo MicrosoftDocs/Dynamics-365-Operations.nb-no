@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b23edee0884b595a0da6ebd7eca0cf0391ff33f7
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 32a1acba8b4ca9484cbbc4b23ba496521ec4f61b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6190094"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347692"
 ---
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a>Direkteoverføring fra produksjonsordrer til utleveringsporter
 
@@ -42,7 +42,7 @@ Et produkt rapporteres som fullført til produksjonsutleveringsstedet (3), og en
 -   Hvis en lastebil er allerede tilordnet til rampedøren, blir truckføreren bedt om å laste produktet rett på lastebilen.
 -   Hvis det ikke er noen planlagt aktivitet for overføring av produktet, blir truckføreren bedt om å plassere produktet et sted på det interne lageret (5).
 
-[![Opportunistisk direkteoverføring](./media/scenario1.png)](./media/scenario1.png)
+[![Opportunistisk direkteoverføring.](./media/scenario1.png)](./media/scenario1.png)
 
 ## <a name="configure-cross-docking"></a>Konfigurere direkteoverføring
 Du konfigurerer prosessen direkteoverføring i **arbeidspolicyer**. En arbeidspolicy inneholder en arbeidsordretype, sted og produkt. I eksemplet nedenfor er direkteoverføring konfigurert for produkt X og lokasjon Y.

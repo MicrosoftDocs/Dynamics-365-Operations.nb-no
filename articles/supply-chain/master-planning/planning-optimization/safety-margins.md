@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-9-14
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 9dc305f46dad6b372721805669529bbc9ac554e8
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 428de5304b3f6f9b861e765d5084d5573b79df90
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908299"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347740"
 ---
 # <a name="safety-margins"></a>Sikkerhetsmarginer
 
@@ -41,7 +41,7 @@ Det finnes tre typer sikkerhetsmarginer:
 
 Illustrasjonen nedenfor viser hvordan disse sikkerhetsmarginene gjelder over tid.
 
-![Sikkerhetsmarginer](media/safety-margins-1.png)
+![Sikkerhetsmarginer.](media/safety-margins-1.png)
 
 Alle marginer er definert i dager. Standardverdien, *0* (null), angir at ingen margin er i bruk. Hvis du definerer flere marginer, legger de alle til den totale tiden fra forsyningens *ordredato* til etterspørselens *behovsdato*. Et oppsett har for eksempel ingen leveringstid, og alle tre margintypene er satt til én dag. I dette tilfellet vil det være tre dager mellom forsyningsordredatoen og etterspørselsbehovsdatoen, så hvis ordredatoen er 1. juli, vil behovsdatoen være 4. juli.
 
@@ -51,7 +51,7 @@ Mottaksmarginen er sannsynligvis den mest brukte av de tre sikkerhetsmarginene. 
 
 Illustrasjonen nedenfor uthever mottaksmargin.
 
-![Mottaksmargin](media/safety-margins-2.png)
+![Mottaksmargin.](media/safety-margins-2.png)
 
 Mottaksmarginen brukes vanligvis som en buffer for å sikre tiden for lagerregistrering eller andre tidkrevende prosesser som ikke blir registrert som en del av den generelle leveringstiden i systemet. For innkjøp er én fordel at *leveringsdatoen* for bestillingen flyttes videre fremover i henhold til dette. Hvis du øker leveringstiden i stedet for å bruke en sikkerhetsmargin, vil leverandøren likevel bli bedt om å levere i siste liten.
 
@@ -66,7 +66,7 @@ Legg merke til at en mottaksmargin ikke brukes når lagerbeholdningen brukes som
 
 Illustrasjonen nedenfor uthever gjenbestillingsmarginen.
 
-![Gjenbestillingsmargin](media/safety-margins-3.png)
+![Gjenbestillingsmargin.](media/safety-margins-3.png)
 
 Gjenbestillingsmarginen legges til før varens leveringstid for alle planlagte ordrer under hovedplanlegging. Derfor sikres tilleggstiden for en forsyningsordre. Denne marginen brukes vanligvis som en buffer for å sikre tiden for godkjenningsprosesser eller andre interne prosesser som kreves ved opprettingen av forsyningsordrer. Gjenbestillingsmarginen plasseres mellom forsyningens *ordredato* og *startdato*.
 
@@ -77,7 +77,7 @@ Gjenbestillingsmarginen legges til før varens leveringstid for alle planlagte o
 
 Illustrasjonen nedenfor uthever avgangsmarginen.
 
-![Avgangsmargin](media/safety-margins-4.png)
+![Avgangsmargin.](media/safety-margins-4.png)
 
 Avgangsmarginen trekkes fra etterspørselens behovsdato under hovedplanleggingen. Den bildrar til å sikre at du har tid til å respondere på og sende innkommende ordrer. Denne marginen brukes vanligvis som en buffer for å sikre tid for forsendelse og tilknyttede utgående lagerprosesser.
 
@@ -165,7 +165,7 @@ Illustrasjonen nedenfor viser en matrise som oppsummerer hvilke kalendere som gj
 - **Lager (WH):** Gul
 - **Leverandør (V):** Blå
 
-[![Matrise for oversikt over kalenderoppsett](media/safety-margins-calendar-matrix.png)](media/safety-margins-calendar-matrix-high.png)
+[![Matrise for oversikt over kalenderoppsett.](media/safety-margins-calendar-matrix.png)](media/safety-margins-calendar-matrix-high.png)
 
 ## <a name="calculating-delays"></a>Beregne forsinkelser
 
@@ -173,7 +173,7 @@ Alle tre typer sikkerhetsmarginer tas med når systemet fastslår om en ordre er
 
 En vare har for eksempel innledende tid på én dag og en mottaksmargin på tre dager. En salgsordre for denne varen er angitt som nødvendig i dag. I dette tilfellet blir forsinkelsen beregnet som *leveringstid* + *mottaksmargin* = fire dager. Hvis i dag er 14. august, fører de fire dagene med forsinkelse til at leveringen blir 18. august. Illustrasjonen nedenfor viser dette eksemplet.
 
-![Eksempel på forsinkelsesberegning](media/safety-margins-delays.png)
+![Eksempel på forsinkelsesberegning.](media/safety-margins-delays.png)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

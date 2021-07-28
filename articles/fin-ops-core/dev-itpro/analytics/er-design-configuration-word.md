@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: 7790d7e581b9b4260a4c57af84b02a182dde953d
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 7bc02a97005f84f7ac01f9fd9371f2a0a29314c4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894082"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346650"
 ---
 # <a name="design-a-new-er-configuration-to-generate-reports-in-word-format"></a>Utforme en ny ER-konfigurasjon for å generere rapporter i Word-format
 
@@ -26,37 +26,37 @@ ms.locfileid: "5894082"
 
 Hvis du vil generere rapporter som Microsoft Word-dokumenter, må du utforme en mal for rapportene, for eksempel ved å bruke skrivebordsversjonen av Word. Illustrasjonen nedenfor viser eksempelmalen for kontrollrapporten som kan genereres for å vise detaljer om behandlede leverandørbetalinger.
 
-![Eksempelmal for kontrollrapporten i skrivebordsversjonen av Word](./media/er-design-configuration-word-image1.png)
+![Eksempelmal for kontrollrapporten i skrivebordsversjonen av Word.](./media/er-design-configuration-word-image1.png)
 
 Hvis du vil bruke et Word-dokument som en mal for rapporter i Word-format, kan du konfigurere en ny [løsning](er-quick-start1-new-solution.md) for [Elektronisk rapportering (ER)](general-electronic-reporting.md). Denne løsningen må inneholde en ER-[konfigurasjon](general-electronic-reporting.md#Configuration) som inneholder en komponent for ER-[format](general-electronic-reporting.md#FormatComponentOutbound).
 
 > [!NOTE]
 > Når du oppretter en ny ER-formatkonfigurasjon for å generere rapporter i Word-format, må du enten velge **Word** som formattype i rullegardinboksen **Opprett konfigurasjon** eller la **Formattype**-feltet stå tomt.
 
-![Opprette en formatkonfigurasjon på Konfigurasjoner-siden](./media/er-design-configuration-word-image2.gif)
+![Opprette en formatkonfigurasjon på Konfigurasjoner-siden.](./media/er-design-configuration-word-image2.gif)
 
 Er-formatkomponenten for løsningen må inneholde formatelementet **Excel\\Fil**, og dette formatelementet må være koblet til Word-dokumentet som skal brukes som mal for genererte rapporter ved kjøretid. Hvis du vil konfigurere ER-formatkomponenten, må du åpne [utkast](general-electronic-reporting.md#component-versioning)versjonen for den opprettede ER-konfigurasjonen i ER-formatutformingen. Legg deretter til elementet **Excel\\Fil**, knytt Word-malen til det redigerbare ER-formatet, og koble denne malen til elementet **Excel\\Fil** du la til.
 
 > [!NOTE]
 > Når du knytter til en mal manuelt, må du bruke en [dokumenttype](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types) som tidligere har blitt [konfigurert](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents) for dette formålet, i ER-parameterne for å lagre maler i ER-formater.
 
-![Tilknytte en mal på Formatutforming-siden](./media/er-design-configuration-word-image3.gif)
+![Tilknytte en mal på Formatutforming-siden.](./media/er-design-configuration-word-image3.gif)
 
 Du kan legge til de nestede elementene **Excel\\Område** og **Excel\\Celle** for elementet **Excel\\Fil** for å angi strukturen til dataene som skal registreres i genererte rapporter ved kjøretid. Du må deretter binde disse elementene til datakilder i det redigerbare ER-formatet for å angi de faktiske dataene som skal registreres i genererte rapporter ved kjøretid.
 
-![Legge til nestede elementer på Formatutforming-siden](./media/er-design-configuration-word-image4.gif)
+![Legge til nestede elementer på Formatutforming-siden.](./media/er-design-configuration-word-image4.gif)
 
 Når du lagrer endringene i ER-formatet på utformingstidspunktet, lagres den hierarkiske formatstrukturen i den tilknyttede Word-malen som en [egendefinert XML-del](/visualstudio/vsto/custom-xml-parts-overview?view=vs-2019) med navnet **Rapport**. Du må ha tilgang til den endrede malen, laste den ned fra Finance, lagre den lokalt og åpne den i skrivebordsversjonen av Word. Illustrasjonen nedenfor viser den lokalt lagrede eksempelmalen for kontrollrapporten som inneholder den egendefinerte XML-delen **Rapport**.
 
-![Forhåndsvise eksempelrapportmalen i skrivebordsversjonen av Word](./media/er-design-configuration-word-image5.gif)
+![Forhåndsvise eksempelrapportmalen i skrivebordsversjonen av Word.](./media/er-design-configuration-word-image5.gif)
 
 Når bindinger for formatelementene **Excel\\Område** og **Excel\\Celle** kjøres ved kjøretid, kommer dataene som hver binding leverer, inn i det genererte Word-dokumentet som et enkeltfelt i den egendefinerte XML-delen **Rapport**. Hvis du vil angi verdiene fra feltene i den egendefinerte XML-delen i et generert dokument, må du legge til de riktige Word-[innholdskontrollene](/office/client-developer/word/content-controls-in-word) i Word-malen, slik at de kan fungere som plassholdere for data som fylles ut ved kjøretid. Hvis du vil angi hvordan innholdskontroller skal fylles ut, tilordner du hver innholdskontroll til det aktuelle feltet i den egendefinerte XML-delen **Rapport**.
 
-![Legge til og tilordne innholdskontroller i skrivebordsversjonen av Word](./media/er-design-configuration-word-image6.gif)
+![Legge til og tilordne innholdskontroller i skrivebordsversjonen av Word.](./media/er-design-configuration-word-image6.gif)
 
 Du må deretter erstatte den opprinnelige Word-malen i det redigerbare ER-formatet med den endrede malen som nå inneholder Word-innholdskontroller som ble tilordnet til feltene i den egendefinerte XML-delen **Rapport**.
 
-![Erstatte malen på Formatutforming-siden](./media/er-design-configuration-word-image7.gif)
+![Erstatte malen på Formatutforming-siden.](./media/er-design-configuration-word-image7.gif)
 
 Når du kjører det konfigurerte ER-formatet, brukes den tilknyttede Word-malen til å generere en ny rapport. De faktiske dataene lagres i Word-rapporten som en egendefinert XML-del med navnet **Rapport**. Når den genererte rapporten åpnes, fylles Word-innholdskontrollene ut med data fra den egendefinerte XML-delen **Rapport**.
 

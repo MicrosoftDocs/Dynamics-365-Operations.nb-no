@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-11-11
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: c50aabf94ae37b7b7b214699160bf958ad3ea9fd
-ms.sourcegitcommit: 2cc14f6c537628e79ad2dd17dabf2c246deaa40d
+ms.openlocfilehash: d61fdbb8efd8251cac6db7d5acab3caeb03f7879
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6219793"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346600"
 ---
 # <a name="integrate-procurement-between-supply-chain-management-and-field-service"></a>Integrere innkjøp mellom Supply Chain Management og Field Service
 
@@ -31,7 +31,7 @@ Denne integreringen støtter oppretting av bestillinger og, i de fleste tilfelle
 
 Illustrasjonen nedenfor viser tabellene i begge systemene og hvordan de er tilordnet til hverandre. Bestillinger i Field Service refererer til en *konto* rad, mens bestillinger i Supply Chain Management refererer til en *leverandør* rad. For å løse integreringen bruker dobbel skriving en referanse til å koble *leverandør* rader til *konto* rader. Hvis du vil ha mer informasjon, kan du se [Integrert original for leverandør](vendor-mapping.md).
 
-![Tilordninger for innkjøp](media/scm-field-service-tables.png)
+![Tilordninger for innkjøp.](media/scm-field-service-tables.png)
 
 ## <a name="prerequisites"></a>Forutsetninger
 

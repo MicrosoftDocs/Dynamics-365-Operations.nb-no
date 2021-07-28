@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b37bc608b3b987016622d9cd0abc66e420025d26
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: 06859fc123e53ad58120bae6f936176176009ee1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944443"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345720"
 ---
 # <a name="configure-electronic-reporting-er-to-pull-data-into-power-bi"></a>Konfigurere elektronisk rapportering (ER) for å hente data til Power BI
 
@@ -53,12 +53,12 @@ Hvis du vil fullføre eksemplet i dette emnet, må du ha følgende tilgang:
 1. På siden **Parametere for dokumentstyring** konfigurerer du tilgang til SharePoint-serveren som skal brukes i firmaet som du er logget på (DEMF-firmaet i dette eksemplet).
 2. Test tilkoblingen til SharePoint-serveren for å være sikker på at du har fått tilgang.
 
-    [![Siden Parametere for dokumentstyring](./media/ger-power-bi-sharepoint-server-setting-1024x369.png)](./media/ger-power-bi-sharepoint-server-setting.png)
+    [![Siden Parametere for dokumentstyring.](./media/ger-power-bi-sharepoint-server-setting-1024x369.png)](./media/ger-power-bi-sharepoint-server-setting.png)
 
 3. Åpne det konfigurerte SharePoint-området. Opprett en ny mappe hvor ER lagrer Excel-filer som har forretningsdataene som Power BI-rapportene krever som en kilde for Power BI-datasett.
 4. På **Dokumenttyper**-siden kan du opprette en ny dokumenttype som skal brukes for å få tilgang til SharePoint-mappen du nettopp opprettet. Angi **Fil** i **Gruppe**-feltet, og **SharePoint** i **Plassering**-feltet, og angi deretter adressen til SharePoint-mappen.
 
-    [![Siden Dokumenttyper](./media/ger-power-bi-sharepoint-document-type-1024x485.png)](./media/ger-power-bi-sharepoint-document-type.png)
+    [![Siden Dokumenttyper.](./media/ger-power-bi-sharepoint-document-type-1024x485.png)](./media/ger-power-bi-sharepoint-document-type.png)
 
 ## <a name="configure-er-parameters"></a>Konfigurere ER-parametere
 1. I arbeidsområdet **Elektronisk rapportering** klikker du koblingen **Parametere for elektronisk rapportering**.
@@ -68,23 +68,23 @@ Hvis du vil fullføre eksemplet i dette emnet, må du ha følgende tilgang:
 ## <a name="use-an-er-data-model-as-the-source-of-data"></a>Bruke en ER-datamodell som datakilde
 Du må ha en ER-datamodell som kilde for forretningsdata som skal brukes i Power BI-rapporter. Denne datamodellen lastes fra databasen for ER-konfigurasjoner. Hvis du vil ha mer informasjon, kan du se [Laste ned elektroniske rapporteringskonfigurasjoner fra Lifecycle Services](download-electronic-reporting-configuration-lcs.md) eller spille av oppgaveveiledningen **ER Importere en konfigurasjon fra Lifecycle Services**. Velg **Intrastat** som datamodellen som lastes opp fra det valgte repositoriet for ER-konfigurasjoner. (I dette eksemplet brukes versjon 1 av modellen.) Du kan deretter få tilgang til **Intrastat** ER-modellkonfigurasjonen på **Konfigurasjoner**-siden.
 
-[![Intrastat ER-modellkonfigurasjon på Konfigurasjoner-siden](./media/ger-power-bi-data-model-1024x371.png)](./media/ger-power-bi-data-model.png)
+[![Intrastat ER-modellkonfigurasjon på Konfigurasjoner-siden.](./media/ger-power-bi-data-model-1024x371.png)](./media/ger-power-bi-data-model.png)
 
 ## <a name="design-an-er-format-configuration"></a>Utforme en ER-formatkonfigurasjon
 Du må opprette en ny ER-formatkonfigurasjon som bruker **Intrastat**-datamodellen som kilde for forretningsdata. Denne formatkonfigurasjonen må generere utdataresultatene som elektroniske dokumenter i OpenXML-format (Excel-fil). Hvis du vil ha mer informasjon, kan du spille av oppgaveveiledningen **ER Opprette en konfigurasjon for rapporter i OPENXML-format**. Gi navn til den nye konfigurasjonen **Importer/eksporter aktiviteter**, som vist i illustrasjonen nedenfor. Bruk Excel-filen [ER data - Import- og eksportdetaljer](https://download.microsoft.com/download/f/7/5/f755c0fd-025c-4aa9-920b-909abb8302ad/ER-data-import-and-export-details.xlsx) som mal når du utformer ER-formatet. (Hvis du vil ha informasjon om hvordan du importerer en formatmal, spiller du av oppgaveveiledningen).
 
-[![Konfigurasjonen Importer/eksporter aktiviteter](media/ger-power-bi-format-configuration.png)](media/ger-power-bi-format-configuration.png)
+[![Konfigurasjonen Importer/eksporter aktiviteter.](media/ger-power-bi-format-configuration.png)](media/ger-power-bi-format-configuration.png)
 
 Følg fremgangsmåten nedenfor hvis du vil endre formatkonfigurasjonen **Importer/eksporter aktiviteter**.
 
 1. Klikk **Utforming**.
 2. I kategorien **Format** gir du navn til filelementet for dette formatet **Excel-utdatafil**.
 
-    [![Elementet Excel-utdatafil](./media/ger-power-bi-format-configuration-file-element-name-1024x395.png)](./media/ger-power-bi-format-configuration-file-element-name.png)
+    [![Elementet Excel-utdatafil.](./media/ger-power-bi-format-configuration-file-element-name-1024x395.png)](./media/ger-power-bi-format-configuration-file-element-name.png)
 
 3. I kategorien **Tilordning** angir du navnet på Excel-filen som blir generert når dette formatet kjøres. Konfigurer det beslektede uttrykket for å returnere verdien **Import- og eksportdetaljer** (XLSX-filtypen legges til automatisk).
 
-    [![Formatutforming](./media/ger-power-bi-format-configuration-output-file-name-1024x396.png)](./media/ger-power-bi-format-configuration-output-file-name.png)
+    [![Formatutforming.](./media/ger-power-bi-format-configuration-output-file-name-1024x396.png)](./media/ger-power-bi-format-configuration-output-file-name.png)
 
 4. Legg til et nytt dataelement for kilden for dette formatet. (Denne opplistingen er nødvendig for ytterligere databinding.)
 
@@ -92,19 +92,19 @@ Følg fremgangsmåten nedenfor hvis du vil endre formatkonfigurasjonen **Importe
     2. Velg **Datamodellopplisting** som datakildetype.
     3. Se datamodellopplistingen **Retning**.
 
-    [![direction_enum](./media/ger-power-bi-format-configuration-mapping-added-enum-1024x454.png)](./media/ger-power-bi-format-configuration-mapping-added-enum.png)
+    [![direction_enum.](./media/ger-power-bi-format-configuration-mapping-added-enum-1024x454.png)](./media/ger-power-bi-format-configuration-mapping-added-enum.png)
 
 5. Fullføre bindingen av elementene i **Intrastat**-datamodellen og elementer som er utformet for format, som vist i illustrasjonen nedenfor.
 
-    [![Fullføring av bindingen](./media/ger-power-bi-format-configuration-mapping-details-1024x454.png)](./media/ger-power-bi-format-configuration-mapping-details.png)
+    [![Fullføring av bindingen.](./media/ger-power-bi-format-configuration-mapping-details-1024x454.png)](./media/ger-power-bi-format-configuration-mapping-details.png)
 
 Når det er kjørt, genererer ER-formatet utdataresultatet i Excel-format. Den sender detaljene for Intrastat-transaksjonene til utdataresultatet, og skiller dem som transaksjoner som beskriver importaktiviteter eller eksportaktiviteter. Klikk **Kjør** for å teste det nye ER-formatet for Intrastat-transaksjoner på **Intrastat**-siden (**Mva** &gt; **Deklarasjoner** &gt; **Utenrikshandel** &gt; **Intrastat**).
 
-[![Siden Intrastat](./media/ger-power-bi-format-test-run-transactions-1024x322.png)](./media/ger-power-bi-format-test-run-transactions.png)
+[![Siden Intrastat.](./media/ger-power-bi-format-test-run-transactions-1024x322.png)](./media/ger-power-bi-format-test-run-transactions.png)
 
 Følgende utdataresultat blir generert: Filen får navnet **Import- og eksportdetaljer.xlsx**, slik du angav i formatinnstillingene.
 
-[![Import- og eksportdetaljer.xlsx](./media/ger-power-bi-format-test-run-output-1024x472.png)](./media/ger-power-bi-format-test-run-output.png)
+[![Import- og eksportdetaljer.xlsx.](./media/ger-power-bi-format-test-run-output-1024x472.png)](./media/ger-power-bi-format-test-run-output.png)
 
 ## <a name="configure-the-er-destination"></a>Konfigurere ER-målet
 Du må konfigurere ER-rammeverket for å sende utdataresultatet av den nye ER-formatkonfigurasjonen på en spesiell måte.
@@ -126,35 +126,35 @@ Klikk **innstillinger** for den nye målposten. Følg deretter fremgangsmåten n
 1. I trekonfigurasjonene på **Konfigurasjoner**-siden (**Organisasjonsstyring** &gt; **Elektronisk rapportering** &gt; **Konfigurasjoner**) velger du konfigurasjonen **Importer/eksporter aktiviteter** som du opprettet tidligere.
 2. Endre statusen til versjon 1.1 fra **Utkast** til **Fullført** for å gjøre dette formatet tilgjengelig for bruk.
 
-    [![Importere/eksportere aktivitetkonfigurasjon på Konfigurasjoner-siden](./media/ger-power-bi-format-configuration-complete-1024x401.png)](./media/ger-power-bi-format-configuration-complete.png)
+    [![Importere/eksportere aktivitetkonfigurasjon på Konfigurasjoner-siden.](./media/ger-power-bi-format-configuration-complete-1024x401.png)](./media/ger-power-bi-format-configuration-complete.png)
 
 3. Velg den fullførte versjonen av konfigurasjonen **Importer/eksporter aktiviteter**, og klikk deretter **Kjør**. Legg merke til at det konfigurerte målet blir brukt til utdataresultatet som genereres i Excel-format.
 4. Sett alternativet **Satsvis behandling** til **Ja** for å kjøre denne rapporten i uovervåket modus.
 5. Klikk **Regelmessighet** for å planlegge nødvendige gjentakelse for den satsvise kjøringen. Gjentakelsen definerer hvor ofte de oppdaterte dataene overføres til Power BI.
 
-    [![Dialogboksen Parametere for elektronisk rapport](./media/ger-power-bi-format-configuration-run-to-schedule-1024x413.png)](./media/ger-power-bi-format-configuration-run-to-schedule.png)
+    [![Dialogboksen Parametere for elektronisk rapport.](./media/ger-power-bi-format-configuration-run-to-schedule-1024x413.png)](./media/ger-power-bi-format-configuration-run-to-schedule.png)
 
 6. Når den er konfigurert, finner du ER-rapportkjøringsjobben på siden **Satsvise jobber** (**Systemadministrasjon &gt; Forespørsler &gt; Satsvise jobber**).
 
-    [![Siden Satsvise jobber](./media/ger-power-bi-format-configuration-running-job-1024x410.png)](./media/ger-power-bi-format-configuration-running-job.png)
+    [![Siden Satsvise jobber.](./media/ger-power-bi-format-configuration-running-job-1024x410.png)](./media/ger-power-bi-format-configuration-running-job.png)
 
 7. Når denne jobben kjøres for første gang, opprettes en ny Excel-fil med det konfigurerte navnet i den valgte SharePoint-mappen i målet. Hver gang jobben kjøres, opprettes en ny versjon av denne Excel-filen i målet.
 
-    [![Ny versjon av Excel-filen](./media/ger-power-bi-output-file-in-sharepoint-server-folder-2-1024x412.png)](./media/ger-power-bi-output-file-in-sharepoint-server-folder-2.png)
+    [![Ny versjon av Excel-filen.](./media/ger-power-bi-output-file-in-sharepoint-server-folder-2-1024x412.png)](./media/ger-power-bi-output-file-in-sharepoint-server-folder-2.png)
 
 ## <a name="create-a-power-bi-dataset-by-using-the-output-result-of-the-er-format"></a>Opprette et Power BI-datasett ved hjelp av utdataresultatet av ER-formatet
 1. Logg på Power BI, og åpne en eksisterende Power BI-gruppe (arbeidsområde) eller opprett en ny gruppe. Klikk **Legg til** under **Filer** under **Importer eller koble til data**, eller klikk plusstegnet (**+**) ved siden av **Datasett** i ruten til venstre.
 
-    [![Opprette et datasett](./media/ger-power-bi-add-dataset-1024x524.png)](./media/ger-power-bi-add-dataset.png)
+    [![Opprette et datasett.](./media/ger-power-bi-add-dataset-1024x524.png)](./media/ger-power-bi-add-dataset.png)
 
 2. Velg alternativet **SharePoint – gruppeområder**, og skriv inn banen til SharePoint-serveren du bruker (`https://ax7partner.litware.com` i vårt eksempel).
 3. Gå til mappen **/Shared Documents/GER data/PowerBI**, og velg Excel-filen du opprettet som datakilde for det nye Power BI-datasettet.
 
-    [![Velge Excel-filen](./media/ger-power-bi-add-dataset-select-excel-file-1024x522.png)](./media/ger-power-bi-add-dataset-select-excel-file.png)
+    [![Velge Excel-filen.](./media/ger-power-bi-add-dataset-select-excel-file-1024x522.png)](./media/ger-power-bi-add-dataset-select-excel-file.png)
 
 4. Klikk **Koble til**, og klikk deretter **Importer**. Det opprettes et nytt datasett som er basert på den valgte Excel-filen. Datasettet kan også legges til automatisk i det nyopprettede instrumentbordet.
 
-    [![Datasett på instrumentbordet](./media/ger-power-bi-added-dataset-1024x489.png)](./media/ger-power-bi-added-dataset.png)
+    [![Datasett på instrumentbordet.](./media/ger-power-bi-added-dataset-1024x489.png)](./media/ger-power-bi-added-dataset.png)
 
 5. Konfigurer oppdateringsplanen for datasettet for å fremtvinge en regelmessig oppdatering. Periodiske oppdateringer aktiverer bruk av nye forretningsdata som kommer via regelmessig kjøring av ER-rapporten gjennom nye versjoner av Excel-filen som opprettes på SharePoint-serveren.
 
@@ -168,17 +168,17 @@ Klikk **innstillinger** for den nye målposten. Følg deretter fremgangsmåten n
 
 3. Lagre Power BI-rapporten som **Rapport for import- og eksportdetaljer**.
 
-    [![Rapporten Import- og eksportdetaljer](./media/ger-power-bi-added-report-1024x498.png)](./media/ger-power-bi-added-report.png)
+    [![Rapporten Import- og eksportdetaljer.](./media/ger-power-bi-added-report-1024x498.png)](./media/ger-power-bi-added-report.png)
 
     Vær oppmerksom på at kartet viser landene/områdene som er nevnt i Excel-filen (Østerrike og Sveits i dette eksemplet). Disse landene/områdene er fargelagt for å vise størrelsen på andelen av fakturerte beløp for hver av dem.
 
 4. Oppdater listen over Intrastat-transaksjoner. Eksporttransaksjonen som stammer fra Italia legges til.
 
-    [![Listen Intrastat-transaksjoner](./media/ger-power-bi-new-run-new-transaction-1024x321.png)](./media/ger-power-bi-new-run-new-transaction.png)
+    [![Listen Intrastat-transaksjoner.](./media/ger-power-bi-new-run-new-transaction-1024x321.png)](./media/ger-power-bi-new-run-new-transaction.png)
 
 5. Vent til den neste planlagte kjøringen av ER-rapporten og den neste planlagte oppdateringen av Power BI-datasettet. Deretter kan du se gjennom Power BI-rapporten (velg å bare vise importerte transaksjoner). Det oppdaterte kartet viser nå Italia.
 
-    [![Oppdatert kart](./media/ger-power-bi-new-run-new-map-1024x511.png)](./media/ger-power-bi-new-run-new-map.png)
+    [![Oppdatert kart.](./media/ger-power-bi-new-run-new-map-1024x511.png)](./media/ger-power-bi-new-run-new-map.png)
 
 ## <a name="access-power-bi-report-in-finance"></a>Tilgang til Power BI-rapport i Finance
 Konfigurer integrering med Power BI. Hvis du vil ha mer informasjon, kan du se [Konfigurere Power BI-integrering for arbeidsområder](configure-power-bi-integration.md).
@@ -187,7 +187,7 @@ Konfigurer integrering med Power BI. Hvis du vil ha mer informasjon, kan du se [
 2. Velg Power BI-rapporten **Import- og eksportdetaljer** som du opprettet, for å vise denne rapporten som et handlingselement på den valgte siden.
 3. Klikk på handlingselementet for å åpne siden som viser rapporten som du utformet i Power BI.
 
-    [![Import og eksporter detaljrapport utformet i Power BI](./media/ger-power-bi-review-bi-report-in-ax-form-1024x586.png)](./media/ger-power-bi-review-bi-report-in-ax-form.png)
+    [![Import og eksporter detaljrapport utformet i Power BI.](./media/ger-power-bi-review-bi-report-in-ax-form-1024x586.png)](./media/ger-power-bi-review-bi-report-in-ax-form.png)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

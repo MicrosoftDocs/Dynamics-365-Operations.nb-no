@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 154ec719e16e4826b0e24deb5ecadf587d938e3c
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 1fce2570e1b0cc334fc0e92e5e83c53a4566b4a4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800501"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345990"
 ---
 # <a name="warehouse-set-up"></a>Lageroppsett
 
@@ -45,7 +45,7 @@ Følg denne fremgangsmåten for å konfigurere et lagerområde.
 
 Bildet nedenfor viser et eksempel på et lagerområde.
 
-![Eksempel på lagerområde](media/warehouse-site.png)
+![Eksempel på lagerområde.](media/warehouse-site.png)
 
 ## <a name="set-up-a-warehouse&quot;></a>Definere et lager
 
@@ -98,7 +98,7 @@ Følg denne fremgangs måten for å definere lagerbeholdningslokasjoner for stan
     
 Følgende bilde viser et oppsett av en lagerlokasjon i San Francisco.
 
-![Eksempel på lagerlokasjonsoppsett](media/warehouse-inventory-locations.png)
+![Eksempel på lagerlokasjonsoppsett.](media/warehouse-inventory-locations.png)
     
 ## <a name="complete-warehouse-setup"></a>Komplett lageroppsett
 
@@ -121,7 +121,7 @@ Følg fremgangsmåten nedenfor for å fullføre lageroppsettet.
 
 Følgende bilde viser detaljer for et konfigurert lager.
 
-![Eksempel på konfigurert lager](media/warehouse-sample.png)
+![Eksempel på konfigurert lager.](media/warehouse-sample.png)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

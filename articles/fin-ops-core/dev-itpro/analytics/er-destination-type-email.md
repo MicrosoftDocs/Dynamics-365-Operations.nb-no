@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: a575c04a5042e4db08f387bc7bce46225c109844
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: f2d8d441ad742252f3be7dc207544387f5224c37
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753510"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348002"
 ---
 # <a name="email-er-destination-type"></a>Sende ER-måltype per e-post
 
@@ -48,13 +48,13 @@ Hvis du vil sende en utdatafil eller flere utdatafiler via e-post, går du til s
 
 Du kan konfigurere e-postadresser for ER på to måter. Konfigurasjonen kan fullføres på samme måte som Utskriftsbehandling-funksjonen fullfører den, eller du kan løse en e-postadresse ved å bruke en direkte referanse til ER-konfigurasjonen via en formel.
 
-[![Sette alternativet Enabled til Ja for et e-postmål](./media/ER_Destinations-EnableSingleDestination.png)](./media/ER_Destinations-EnableSingleDestination.png)
+[![Sette alternativet Enabled til Ja for et e-postmål.](./media/ER_Destinations-EnableSingleDestination.png)](./media/ER_Destinations-EnableSingleDestination.png)
 
 ## <a name="email-address-types"></a>Typer e-postadresser
 
 Hvis du velger **Rediger** ved siden av **Til**- eller **Kopi**-feltet i dialogboksen **Målinnstillinger**, vises dialogboksen **E-post til**. Velg **Legg til**, og velg deretter typen e-postadresse som skal brukes. To typer støttes for øyeblikket: **E-post for utskriftsbehandling** og **E-post for konfigurasjon**.
 
-[![Velge type e-postadresse](./media/ER_Destinations-EmailSelectAddressType.png)](./media/ER_Destinations-EmailSelectAddressType.png)
+[![Velge type e-postadresse.](./media/ER_Destinations-EmailSelectAddressType.png)](./media/ER_Destinations-EmailSelectAddressType.png)
 
 ### <a name="print-management-email"></a>E-post for utskriftsbehandling
 
@@ -84,7 +84,7 @@ Når du har valgt den ønskede rollen, velger du **Bind**-knappen (kjedesymbol) 
 
 På siden **Formelutforming**, i feltet **Formel**, angir du en dokumentspesifikk referanse til en støttet rolle. I stedet for å skrive inn referansen, går du til ruten **Datakilde** og velger datakildenoden som representerer en konto for den konfigurerte rollen, og deretter velger du **Legg til datakilde** for å oppdatere formelen. Hvis du for eksempel konfigurerer e-postmålet for konfigurasjonen **ISO 20022 Kredittoverføring** som brukes til å behandle leverandørbetalinger, er noden som representerer en leverandørkonto `'$PaymentsForCoveringLetter'.Creditor.Identification.SourceID`.
 
-![Konfigurere en e-postkildekonto](./media/er_destinations-emaildefineaddresssource.gif)
+![Konfigurere en e-postkildekonto.](./media/er_destinations-emaildefineaddresssource.gif)
 
 Hvis kontonumrene til den konfigurerte rollen er unike for hele forekomsten av Microsoft Dynamics 365 Finance, kan feltet for **firma for e-postkilde** i dialogboksen **E-post til** være tomt.
 
@@ -108,7 +108,7 @@ Hvis du vil angi hvilke typer e-postadresser som må brukes ved kjøring, går d
 
 Velg **Konfigurer e-post** som e-postadressetype hvis konfigurasjonen du bruker, har en node i datakildene som returnerer enten én e-postadresse eller flere e-postadresser som er atskilt med semikolon (;). Du kan bruke [datakilder](general-electronic-reporting.md#FormatComponentOutbound) og [funksjoner](er-formula-language.md#functions) i formeldesigneren for å hente en riktig formatert e-postadresse eller riktig formaterte e-postadresser som er atskilt med semikolon. Hvis du for eksempel bruker **ISO 20022 Kredittoverføring**-konfigurasjonen, er noden som representerer den primære e-postadressen for en leverandør fra leverandørens kontaktopplysninger som følgebrevet skal sendes til, `'$PaymentsForCoveringLetter'.Creditor.ContactDetails.Email`.
 
-[![Konfigurere en e-postadressekilde](./media/ER_Destinations-EmailDefineAddressSource2.png)](./media/ER_Destinations-EmailDefineAddressSource2.png)
+[![Konfigurere en e-postadressekilde.](./media/ER_Destinations-EmailDefineAddressSource2.png)](./media/ER_Destinations-EmailDefineAddressSource2.png)
 
 ## <a name="group-format-components"></a><a id="grouping"></a>Gruppere formatkomponenter
 
@@ -126,11 +126,11 @@ Hvis du vil dele opp gruppen for formatkomponenter, går du til hurtigfanen **Fi
 
 Følgende illustrasjon viser strukturen til et ER-format som ble konfigurert til å produsere en zippet utgående fil som inneholder et purrebrev og riktige kundefakturaer i PDF-format.
 
-[![Struktur for et ER-format som genererer utgående dokumenter](./media/ER_Destinations-Email-Grouping1.png)](./media/ER_Destinations-Email-Grouping1.png)
+[![Struktur for et ER-format som genererer utgående dokumenter.](./media/ER_Destinations-Email-Grouping1.png)](./media/ER_Destinations-Email-Grouping1.png)
 
 Følgende illustrasjon viser prosessen, som beskrevet i dette emnet, med gruppering av individuelle komponenter og aktivering av **E-post**-målet for den nye gruppen, slik at det sendes en purrenota sammen med riktig kundefaktura som e-postvedlegg.
 
-[![Gruppere individuelle komponenter og aktivere e-postmålet](./media/ER_Destinations-Email-Grouping2.gif)](./media/ER_Destinations-Email-Grouping2.gif)
+[![Gruppere individuelle komponenter og aktivere e-postmålet.](./media/ER_Destinations-Email-Grouping2.gif)](./media/ER_Destinations-Email-Grouping2.gif)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

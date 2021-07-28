@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 053dff19da6e51d23383d667c340c49f3eff1b27
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 37a82a2bf9fc73b81e5a61b120e7bed73b8c4521
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825188"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346136"
 ---
 # <a name="subcontracting"></a>Utsetting
 
@@ -39,7 +39,7 @@ I den juridiske enheten HQUS produseres avanserte høyttalere. I løpet av produ
 
 Illustrasjonen nedenfor viser de tre operasjonene og materialene som de bruker.
 
-![Før-montering, lakkering og fullføring, og materialene de bruker](./media/subcontract01_operations-materials.png)
+![Før-montering, lakkering og fullføring, og materialene de bruker.](./media/subcontract01_operations-materials.png)
 
 ## <a name="setup"></a>Installasjon
 
@@ -52,41 +52,41 @@ Denne prosedyren tar deg gjennom installasjonen av frigitt produkt D8100, "Lakke
 1. Velg **Behandling av produktinformasjon \> Produkter \> Frigitte produkter** for å åpne siden **Detaljer om frigitt produkt**.
 2. Skriv inn **D8100** i hurtigfilterfeltet for å finne det eksisterende frigitte produktet.
 
-    ![Filtrering for frigitt produkt D8100 på siden Detaljer om frigitt produkt](./media/subcontract02_filtering-released-products.png)
+    ![Filtrering for frigitt produkt D8100 på siden Detaljer om frigitt produkt.](./media/subcontract02_filtering-released-products.png)
 
 3. I handlingsruten i fanen **Utvikling** velger du **Rute** for å åpne **Rute**-siden.
 
     **Rute**-siden viser de åtte ruteversjonene for det frigitte produktet D8100. De åtte ruteversjonene er fordelt mellom fire ruter på område 1 og område 5. Rute 000400 brukes for etterkalkulering, rute 00041 brukes når lakkeringsoperasjonen er en intern operasjon, og rute 00042 som brukes når lakkeringsoperasjonen er en ekstern operasjon.
 
-    ![Åtte ruteversjoner på Rute-siden](./media/subcontract03_route-page.png)
+    ![Åtte ruteversjoner på Rute-siden.](./media/subcontract03_route-page.png)
 
 4. I den øvre ruten, i **Versjoner**-rutenettet, velger du ruteversjon **00042** for område **5**.
 5. I den nedre ruten, i fanen **Oversikt**, velger du operasjon **20** (**Cbnt CtSc**) i rutenettet.
 
-    ![Operasjon 20 ruteversjon 00042 for område 5 valgt](./media/subcontract04_route-version-operation.png)
+    ![Operasjon 20 ruteversjon 00042 for område 5 valgt.](./media/subcontract04_route-version-operation.png)
 
 6. Velg fanen **Generelt**.
 
     Legg merke til at feltet **Rutetype** er satt til **Leverandør**. Denne verdien angir at operasjon 20 (Cbnt CtSc) er en utsatt operasjon.
 
-    ![Rutetype-feltet satt til Leverandør i fanen Generelt](./media/subcontract05_general-tab.png)
+    ![Rutetype-feltet satt til Leverandør i fanen Generelt.](./media/subcontract05_general-tab.png)
 
 7. Velg fanen **Ressursbehov**.
 
     Funksjonene blir brukt til å finne en aktuell ressurs under produksjonsplanlegging. For operasjon 20 (Cbnt CtSc), legg merke til at en ressurs som har to egenskaper, **Lakkering** og **Lakkerte kabinetter**, kreves.
 
-    ![Egenskapene Lakkering og Lakkerte kabinetter i fanen Ressurskrav](./media/subcontract06_resource-requirements-tab.png)
+    ![Egenskapene Lakkering og Lakkerte kabinetter i fanen Ressurskrav.](./media/subcontract06_resource-requirements-tab.png)
 
 8. Velg **Gjeldende ressurser** for å åpne dialogboksen **Gjeldende ressurser** .
 
     Det finnes tre ressurser som samsvarer med ressurskravene for operasjonen. Legg merke til at 8851 og 8852 er av **Leverandør**-typen.
 
-    ![Tre aktuelle ressurser i dialogboksen Gjeldende ressurser](./media/subcontract07_applicable-resources-dialog.png)
+    ![Tre aktuelle ressurser i dialogboksen Gjeldende ressurser.](./media/subcontract07_applicable-resources-dialog.png)
 
 9. Velg **OK** for å lukke dialogboksen **Gjeldende ressurser** og gå tilbake til **Rute**-siden.
 10. Lukk **Rute**-siden for å returnere til siden **Detaljer om frigitt produkt**.
 
-    ![Siden Detaljer om frigitt produkt](./media/subcontract08_released-product-details-page.png)
+    ![Siden Detaljer om frigitt produkt.](./media/subcontract08_released-product-details-page.png)
 
 11. I handlingsruten i fanen **Utvikling** velger du **Stykklisteversjoner** for å åpne **Stykklisteversjoner**-siden.
 
@@ -94,7 +94,7 @@ Denne prosedyren tar deg gjennom installasjonen av frigitt produkt D8100, "Lakke
 
     Legg merke til at vare S8050 er et produkt av **Service**-varetypen. Denne varen representerer arbeidet som er satt ut.
 
-    ![Fire stykklisteversjoner på siden Stykklisteversjoner](./media/subcontract09_bom-versions-page.png)
+    ![Fire stykklisteversjoner på siden Stykklisteversjoner.](./media/subcontract09_bom-versions-page.png)
 
 12. På hurtigfanen **Stykklistelinjer**, velg **Rediger** for å åpne dialogboksen **Rediger stykklistelinje**.
 
@@ -102,7 +102,7 @@ Denne prosedyren tar deg gjennom installasjonen av frigitt produkt D8100, "Lakke
 
     Legg merke til at stykklistelinjen er koblet til lakkeringsoperasjonen gjennom operasjonsnummeret (i dette tilfellet 20).
 
-    ![Dialogboksen Rediger stykklistelinje](./media/subcontract10_edit-bom-line-dialog.png)
+    ![Dialogboksen Rediger stykklistelinje.](./media/subcontract10_edit-bom-line-dialog.png)
 
 ### <a name="create-a-password-for-warehouse-workers"></a>Opprett et passord for lagerarbeidere
 
@@ -111,7 +111,7 @@ Du må definere et passord for lagerarbeiderne som bruker den håndholdte enhete
 1. Velg **Lagerstyring \> Oppsett \> Arbeider** for å åpne siden **Arbeidsbrukere**.
 2. På hurtigfanen **Brukere** merker du raden for bruker **51**.
 
-    ![Siden Arbeidsbrukere](./media/subcontract11_work-users-page.png)
+    ![Siden Arbeidsbrukere.](./media/subcontract11_work-users-page.png)
 
 3. Velg **Tilbakestill passord**.
 4. I feltene **Passord** og **Bekreft passord**, angi **1**.
@@ -126,14 +126,14 @@ En produksjonsordre på 10 deler opprettes for produkt D8100, "Lakkert kabinett"
 1. Velg **Produksjonskontroll \> Produksjonsordrer \> Alle produksjonsordrer** for å åpne siden **Alle produksjonsordrer**.
 2. I handlingsruten velger du **Ny produksjonsordre** for å åpne dialogboksen **Opprett produksjonsordre**.
 
-    ![Dialogboksen Opprett produksjonsordre](./media/subcontract12_create-production-order-dialog.png)
+    ![Dialogboksen Opprett produksjonsordre.](./media/subcontract12_create-production-order-dialog.png)
 
 3. Velg **D8100** i feltet **Varenummer**.
 4. Feltene for lagerdimensjoner vises når du velger varenummeret. I **Farge**-feltet velger du **Krom**.
 
     Det vises en meldingsboks der du blir spurt om de aktive versjonene for stykklisten og ruten skal settes inn.
 
-    ![Meldingsboks](./media/subcontract13_message-box.png)
+    ![Meldingsboks.](./media/subcontract13_message-box.png)
 
 5. Velg **Ja**. 
 
@@ -149,15 +149,15 @@ En produksjonsordre på 10 deler opprettes for produkt D8100, "Lakkert kabinett"
     > [!NOTE]
     > Både for stykklisten og ruten brukes versjon 000042 til å sette ut lakkeringen av kabinettet til leverandør US-801.
 
-    ![Verdier angitt i dialogboksen Opprett produksjonsordre](./media/subcontract14_create-production-order-dialog-set.png)
+    ![Verdier angitt i dialogboksen Opprett produksjonsordre.](./media/subcontract14_create-production-order-dialog-set.png)
 
 9. Velg **Opprett** for å opprette produksjonsordren og gå tilbake til siden **Alle produksjonsordrer**.
 
-    ![Ny produksjonsordre på siden Alle produksjonsordrer](./media/subcontract15_new-production-order.png)
+    ![Ny produksjonsordre på siden Alle produksjonsordrer.](./media/subcontract15_new-production-order.png)
 
 10. i handlingsruten, i fanen **Produksjonsordre** velger du **Estimat** for å åpne dialogboksen **Estimat**.
 
-    ![Dialogboksen Estimat](./media/subcontract16_estimate-dialog.png)
+    ![Dialogboksen Estimat.](./media/subcontract16_estimate-dialog.png)
 
 11. Velg **OK** for å bekrefte estimatet og gå tilbake til siden **Alle produksjonsordrer**.
 
@@ -168,7 +168,7 @@ En produksjonsordre på 10 deler opprettes for produkt D8100, "Lakkert kabinett"
 
     Legg merke til at det er en referanse til bestillingen som ble generert da produksjonsordren ble estimert for servicevare S8050.
 
-    ![Stykklistelinjer i produksjonsordre på Stykkliste-siden](./media/subcontract17_production-order-bom-lines.png)
+    ![Stykklistelinjer i produksjonsordre på Stykkliste-siden.](./media/subcontract17_production-order-bom-lines.png)
 
 13. Lukk **Stykkliste**-siden for å returnere til siden **Alle produksjonsordrer**.
 14. i handlingsruten, i fanen **Planlegg** velger du **Planlegg jobber** for å åpne dialogboksen **Finplanlegging**.
@@ -177,24 +177,24 @@ En produksjonsordre på 10 deler opprettes for produkt D8100, "Lakkert kabinett"
     - Velg **Fremover fra i morgen** i **Planleggingsretning**-feltet.
     - Sett **Begrenset kapasitet** til **Ja**.
 
-    ![Dialogboksen Finplanlegging](./media/subcontract18_job-scheduling-dialog.png)
+    ![Dialogboksen Finplanlegging.](./media/subcontract18_job-scheduling-dialog.png)
 
 16. Velg **OK** for å lukke dialogboksen **Finplanlegging** og gå tilbake til siden **Alle produksjonsordrer**.
 17. I handlingsruten, i fanen **Planlegg** velger du **Gantt** for å åpne siden **Gantt-diagram - Ressursvisning**.
 
     Gantt-diagrammet gir en visuell oversikt over hvordan produksjonsjobbene er planlagt på ressursene. Legg merke til at den eksterne lakkeringen består av tre jobber: en prosessjobb, en transportjobb og en køtidjobb.
 
-    ![Gantt-diagram på siden Gantt-diagram - Ressursvisning](./media/subcontract19_gantt-chart.png)
+    ![Gantt-diagram på siden Gantt-diagram - Ressursvisning.](./media/subcontract19_gantt-chart.png)
 
 18. Lukk siden **Gantt-diagram - Ressursvisning** for å returnere til siden **Alle produksjonsordrer**.
 19. I handlingsruten, i fanen **Produksjonsordre** velger du **Frigi** for å åpne dialogboksen **Frigi**.
 
-    ![Dialogboksen Frigi](./media/subcontract20_release-dialog.png)
+    ![Dialogboksen Frigi.](./media/subcontract20_release-dialog.png)
 
 20. Velg **OK** for å lukke dialogboksen **Frigi**.
 21. Velg **Produksjonskontroll \> Periodiske oppgaver \> Frigi til lager \> Automatisk frigivelse av stykkliste og formellinjer** for å åpne dialogboksen **Automatisk frigivelse av stykkliste og formellinjer**.
 
-    ![Dialogboksen Automatisk frigivelse av stykkliste og formellinjer](./media/subcontract21_auto-release-bom-formula-lines-dialog.png)
+    ![Dialogboksen Automatisk frigivelse av stykkliste og formellinjer.](./media/subcontract21_auto-release-bom-formula-lines-dialog.png)
 
 22. Velg **OK** for å kjøre jobben Automatisk frigivelse av stykkliste og formellinjer.
 
@@ -220,7 +220,7 @@ En produksjonsordre på 10 deler opprettes for produkt D8100, "Lakkert kabinett"
     - I feltet **Fra oper.nr.** velg **10**.
     - I feltet **Til oper.nr.** velg **10**.
 
-    ![Verdier angitt i fanen Generelt 1](./media/subcontract23_start-dialog.png)
+    ![Verdier angitt i fanen Generelt 1.](./media/subcontract23_start-dialog.png)
 
 31. Velg **OK** for å lukke dialogboksen **Start** og gå tilbake til siden **Alle produksjonsordrer**.
 
@@ -238,7 +238,7 @@ En produksjonsordre på 10 deler opprettes for produkt D8100, "Lakkert kabinett"
     - I feltet **Antall** angi **10**.
     - Sett alternativet **Poster plukkliste nå** til **Nei**.
 
-    ![Verdier angitt i fanen Generelt 2](./media/subcontract24_general-tab.png)
+    ![Verdier angitt i fanen Generelt 2.](./media/subcontract24_general-tab.png)
 
 35. Velg **OK** for å lukke dialogboksen **Start** og gå tilbake til siden **Alle produksjonsordrer**.
 
@@ -247,57 +247,57 @@ En produksjonsordre på 10 deler opprettes for produkt D8100, "Lakkert kabinett"
 36. I handlingsruten, i fanen **Vis** velger du **Plukkliste** for å åpne siden **Plukkliste**.
 37. Velg plukklisten som ikke er postert, og velg deretter journalnummeret for å vise journallinjene.
 
-    ![Journallinjer på siden Plukkliste](./media/subcontract25_picking-list.png)
+    ![Journallinjer på siden Plukkliste.](./media/subcontract25_picking-list.png)
 
 38. I handlingsruten, velger du **Skriv ut** \> **Plukklisterapport** for å åpne dialogboksen **Plukklisterapport**.
 39. Angi alternativet **Bruk følgeseddeloppsett** til **Ja**.
 
-    ![Dialogboksen Plukklisterapport](./media/subcontract26_picking-list-report-dialog.png)
+    ![Dialogboksen Plukklisterapport.](./media/subcontract26_picking-list-report-dialog.png)
 
 40. Velg **OK** for å generere en **Plukkliste**-rapport.
 
     I dette tilfellet skrives en leverandørfølgeseddel ut fra produksjonsplukklistejournalen. Følgeseddelen angir materialene som sendes til leverandøren som skal utføre lakkeringsoperasjonen.
 
-    ![Plukklisterapport](./media/subcontract27_picking-list-report.png)
+    ![Plukklisterapport.](./media/subcontract27_picking-list-report.png)
 
 41. Lukk **Plukkliste**-rapporten for å gå tilbake til **Plukkliste**-siden.
 42. I handlingsruten, velger du **Poster** for å åpne dialogboksen **Poster journal**.
 
-    ![Dialogboksen Poster journal](./media/subcontract28_post-journal-dialog.png)
+    ![Dialogboksen Poster journal.](./media/subcontract28_post-journal-dialog.png)
 
 43. Velg **OK** for å lukke dialogboksen **Poster journal**.
 44. Åpne bestillingen.
 
-    ![Bestilling-siden](./media/subcontract29_purchase-order-page.png)
+    ![Bestilling-siden.](./media/subcontract29_purchase-order-page.png)
 
 45. I handlingsruten, i fanen **Kjøp** velger du **Bekreft**.
 46. Velg **Poster** for å åpne dialogboksen **Poster journal**.
 47. Velg **OK** for å lukke dialogboksen **Poster journal** og gå tilbake til siden **Bestilling**.
 48. Endre enhetsprisen fra **33** til **40**.
 
-    ![Enhetspris endret på siden Bestilling](./media/subcontract30_unit-price.png)
+    ![Enhetspris endret på siden Bestilling.](./media/subcontract30_unit-price.png)
 
 49. Bekreft bestillingen på nytt.
 50. Mottaksseddel.
 
-    ![Dialogboksen Poster mottaksseddel](./media/subcontract31_posting-product-receipt-dialog.png)
+    ![Dialogboksen Poster mottaksseddel.](./media/subcontract31_posting-product-receipt-dialog.png)
 
 51. Kjøpsfaktura.
 52. Oppdater samsvarsstatusen.
 
-    ![Siden Leverandørfaktura](./media/subcontract32_vendor-invoice-page.png)
+    ![Siden Leverandørfaktura.](./media/subcontract32_vendor-invoice-page.png)
 
 53. Ferdigmeld.
 
-    ![Dialogboksen Ferdigmeld](./media/subcontract33_report-as-finished-dialog.png)
+    ![Dialogboksen Ferdigmeld.](./media/subcontract33_report-as-finished-dialog.png)
 
 54. Slutt.
 
-    ![Dialogboks Slutt](./media/subcontract34_end-dialog.png)
+    ![Dialogboks Slutt.](./media/subcontract34_end-dialog.png)
 
 55. Kostnadssammenligning.
 
-    ![Kostnadssammenligningsdiagrammer](./media/subcontract35_cost-comparison-charts.png)
+    ![Kostnadssammenligningsdiagrammer.](./media/subcontract35_cost-comparison-charts.png)
 
 Manglende oppsett i data.
 

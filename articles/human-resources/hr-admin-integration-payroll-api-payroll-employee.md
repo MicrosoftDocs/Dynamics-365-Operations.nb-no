@@ -13,18 +13,24 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 87efbf7063de373e1e0b844ff1b942cdaab4a021
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 57501d07f6b9cffdff9f37737df8c278c574cf30
+ms.sourcegitcommit: 89bb2a7f402deed32998eddc1e56e75250e3d15e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6055058"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "6314291"
 ---
 # <a name="payroll-employee"></a>Lønnsansatt
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Dette emnet inneholder informasjon og en eksempelspørring for Lønnsansatt-enheten i Dynamics 365 Human Resources.
+Dette emnet beskriver Lønnsansatt-enheten for Dynamics 365 Human Resources.
+
+Fysisk navn: mshr_payrollemployeeentity.
+
+### <a name="description"></a>beskrivelse
+
+Denne enheten gir informasjon om den ansatte. Du må definere [parameterne for lønnsintegrering](hr-admin-integration-payroll-api-parameters.md) før du bruker denne enheten.
 
 ## <a name="properties"></a>Egenskaper
 
@@ -35,7 +41,7 @@ Dette emnet inneholder informasjon og en eksempelspørring for Lønnsansatt-enhe
 | **Etternavn**<br>mshr_lastname<br>*Streng* | Skrivebeskyttet<br>Obligatorisk | Ansattes etternavn. |
 | **ID for juridisk enhet**<br>mshr_legalentityID<br>*Streng* | Skrivebeskyttet<br>Obligatorisk | Angir den juridiske enheten (firmaet). |
 | **Gyldig fra**<br>mshr_namevalidfrom<br>*Motregning av dato/klokkeslett* | Skrivebeskyttet <br>Obligatorisk | Datoen som ansattinformasjonen er gyldig fra.  |
-| **Kjønn**<br>mshr_gender<br>*Int32* | Skrivebeskyttet<br>Obligatorisk | Den ansattes kjønn. |
+| **Kjønn**<br>mshr_gender<br>[mshr_hcmpersongender-alternativsett](hr-admin-integration-payroll-api-gender.md) | Skrivebeskyttet<br>Obligatorisk | Den ansattes kjønn. |
 | **Enhets-ID for lønnsansatt**<br>mshr_payrollemployeeentityid<br>*GUID* | Obligatorisk<br>Systemgenerert | En systemgenerert GUID-verdi som entydig identifiserer den ansatte. |
 | **Startdato for ansettelse**<br>mshr_employmentstartdate<br>*Motregning av dato/klokkeslett* | Skrivebeskyttet<br>Obligatorisk | Startdatoen for den ansattes ansettelse. |
 | **ID for Identifikasjonstype**<br>mshr_identificationtypeid<br>*Streng* |Skrivebeskyttet<br>Obligatorisk | Identifikasjonstypen som er definert for den ansatte. |
@@ -59,25 +65,30 @@ GET [Organizaton URI]/api/data/v9.1/mshr_payrollemployeeentities?$filter=mshr_pe
 
 ```json
 {
-         "mshr_legalentityid": "USMF",
-            "mshr_personnelnumber": "000041",
-            "mshr_employmentstartdate": "2011-04-05T07:00:00Z",
-            "mshr_employmentenddate": "2154-12-31T23:59:59Z",
-            "mshr_firstname": "Cassie",
-            "mshr_middlename": "Lassie",
-            "mshr_lastname": "Hicks",
-            "mshr_namevalidfrom": "2021-03-12T20:34:25Z",
-            "mshr_namevalidto": "2154-12-31T23:59:59Z",
-            "mshr_birthdate": "1987-09-12T00:00:00Z",
-            "mshr_gender": 200000002,
-            "mshr_identificationtypeid": "SSN",
-            "mshr_identificationnumber": "888-99-9342",
-            "mshr_dataareaid": "USMF",
-            "mshr_primaryfield": "000041 | USMF | 4/5/2011 07:00:00 am",
-            "_mshr_fk_worker_id_value": "000000ad-0000-0000-d5ff-004105000000",
-            "_mshr_fk_employment_id_value": "00000d0d-0000-0000-0600-014105000000",
-            "_mshr_fk_fixedcompplan_id_value": "0000029f-0000-0000-d5ff-004105000000",
-            "mshr_payrollemployeeentityid": "00000d3c-0000-0000-d5ff-004105000000",
-            "_mshr_dataareaid_id_value": null
+    "mshr_legalentityid": "USMF",
+    "mshr_personnelnumber": "000041",
+    "mshr_employmentstartdate": "2011-04-05T07:00:00Z",
+    "mshr_employmentenddate": "2154-12-31T23:59:59Z",
+    "mshr_firstname": "Cassie",
+    "mshr_middlename": "Lassie",
+    "mshr_lastname": "Hicks",
+    "mshr_namevalidfrom": "2021-03-12T20:34:25Z",
+    "mshr_namevalidto": "2154-12-31T23:59:59Z",
+    "mshr_birthdate": "1987-09-12T00:00:00Z",
+    "mshr_gender": 200000002,
+    "mshr_identificationtypeid": "SSN",
+    "mshr_identificationnumber": "888-99-9342",
+    "mshr_dataareaid": "USMF",
+    "mshr_primaryfield": "000041 | USMF | 4/5/2011 07:00:00 am",
+    "_mshr_fk_worker_id_value": "000000ad-0000-0000-d5ff-004105000000",
+    "_mshr_fk_employment_id_value": "00000d0d-0000-0000-0600-014105000000",
+    "_mshr_fk_fixedcompplan_id_value": "0000029f-0000-0000-d5ff-004105000000",
+    "mshr_payrollemployeeentityid": "00000d3c-0000-0000-d5ff-004105000000",
+    "_mshr_dataareaid_id_value": null
 }
 ```
+## <a name="see-also"></a>Se også
+
+[Innføring i API for lønnsintegrering](hr-admin-integration-payroll-api-introduction.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

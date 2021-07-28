@@ -13,12 +13,12 @@ ms.search.industry: WHSWorkTableListPage
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-15
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: eae1e722a7c4d819cbca398eb14a2b36fa04eec5
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6844f3962562a02609333ef7d6963801852af4b0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5830768"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344152"
 ---
 # <a name="work-split"></a>Oppdelt arbeid
 
@@ -51,7 +51,7 @@ Funksjonen *Oppdelt arbeid* legger til følgende to knapper i fanen **Arbeid** i
 - **Del arbeid** – Del opp gjeldende arbeids-ID i flere mindre arbeids-ID-er som kan behandles av individuelle arbeidere.
 - **Avbryt arbeidsoppdelingsøkt** – Avbryt arbeidsoppdelingsøkten, og gjør arbeidet tilgjengelig for behandling.
 
-![Knappene Del opp Arbeid og Avbryt arbeidsoppdelingsøkt](media/Work_split_buttons.png "Knappene Del opp Arbeid og Avbryt arbeidsoppdelingsøkt")
+![Knappene Del opp Arbeid og Avbryt arbeidsoppdelingsøkt.](media/Work_split_buttons.png "Knappene Del opp Arbeid og Avbryt arbeidsoppdelingsøkt")
 
 > [!IMPORTANT]
 > Knappen **Del arbeid** er ikke tilgjengelig hvis noen av følgende betingelser er oppfylt:
@@ -94,7 +94,7 @@ Følg denne fremgangsmåten for å dele arbeid.
 
     Feltet **Arbeidsblokkeringsårsak** for gjeldende arbeid vil bli satt til *Delt arbeid*, og arbeidet blir blokkert.
 
-    ![Blokkeringsårsak](media/Blocking_reason.png "Blokkeringsårsak")
+    ![Blokkeringsårsak.](media/Blocking_reason.png "Blokkeringsårsak")
 
 1. Velg linjene som skal fjernes fra den gjeldende arbeids-ID-en, og legg til en ny arbeids-ID. Følgende hendelser skjer:
 

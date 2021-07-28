@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2020-04-28
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 50cfea6656e1f13532b018784fa64b2aac10fc7f
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 3793dca681e28b90e96469256f368620393704f2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908573"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344276"
 ---
 # <a name="integrate-dynamics-365-supply-chain-management-asset-management-with-dynamics-365-guides"></a>Integrere Dynamics 365 Supply Chain Management (Aktivabehandling) med Dynamics 365 Guides
 
@@ -56,38 +56,38 @@ Følg disse trinnene for å knytte en veiledning til en mal for kontrolliste for
     1. I hurtigfanen **Vedlikeholdssjekklistelinjer** velger du linjen du vil knytte veiledningen til.
     1. På hurtigfanen **Tilknyttede veiledninger** velger du **Legg til veiledning**.
 
-        ![Knytte en veiledning til en kontrollistelinje for vedlikehold](media/am-guides-integration-add-guide.png "Knytte en veiledning til en kontrollistelinje for vedlikehold")
+        ![Knytte en veiledning til en kontrollistelinje for vedlikehold.](media/am-guides-integration-add-guide.png "Knytte en veiledning til en kontrollistelinje for vedlikehold")
 
     1. I **Navn**-feltet velger du veiledningen og deretter **Lagre**.
 
-        ![Velg en veiledning i Navn-feltet](media/am-guides-integration-select-guide.png "Velg en veiledning i Navn-feltet")
+        ![Velg en veiledning i Navn-feltet.](media/am-guides-integration-select-guide.png "Velg en veiledning i Navn-feltet")
 
 1. Knytt kontrollistemalen for vedlikehold til en jobbtype:
 
     1. [Opprett en vedlikeholdsjobbtype](setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md#create-a-maintenance-job-type), eller velg en eksisterende vedlikeholdsjobbtype.
     1. Velg **Standarder for vedlikeholdsjobbtype** i handlingsruten.
 
-        ![Knappen Standarder for vedlikeholdsjobbtype](media/am-guides-integration-job-defaults.png "Knappen Standarder for vedlikeholdsjobbtype")
+        ![Knappen Standarder for vedlikeholdsjobbtype.](media/am-guides-integration-job-defaults.png "Knappen Standarder for vedlikeholdsjobbtype")
 
     1. Opprett en linje, og velg deretter **Lagre**.
 
-        ![Opprett en linje](media/am-guides-integration-add-line.png "Opprett en linje")
+        ![Opprett en linje.](media/am-guides-integration-add-line.png "Opprett en linje")
 
     1. Velg **Sjekkliste for vedlikehold** på handlingsruten.
 
-        ![Knappen Sjekkliste for vedlikehold](media/am-guides-integration-maintenance-checklist.png "Knappen Sjekkliste for vedlikehold")
+        ![Knappen Sjekkliste for vedlikehold.](media/am-guides-integration-maintenance-checklist.png "Knappen Sjekkliste for vedlikehold")
 
     1. På hurtigfanen **Vedlikeholdssjekklistelinjer** legger du til en linje, og deretter endrer du verdien i feltet **Type** til **Mal**.
 
-        ![Endre Type-verdien](media/am-guides-integration-checklist-lines.png "Endre Type-verdien")
+        ![Endre Type-verdien.](media/am-guides-integration-checklist-lines.png "Endre Type-verdien")
 
     1. I hurtigfanen **Linjedetaljer** i feltet **Mal** velger du malen du vil knytte veiledningen til, og deretter valger du **Lagre**.
 
-        ![Velg malen](media/am-guides-integration-checklist-line-details.png "Velg malen")
+        ![Velg malen.](media/am-guides-integration-checklist-line-details.png "Velg malen")
 
 1. [Opprett en arbeidsordre](work-orders/manually-created-workorders.md#create-work-order), og velg deretter vedlikeholdsjobbtypen som bruker sjekklistemalen for vedlikehold som du knyttet veiledningen til. Veiledning knyttes automatisk til arbeidsordren.
 
-    ![Velg en vedlikeholdsjobbtype](media/am-guides-integration-create-work-order.png "Velg en vedlikeholdsjobbtype")
+    ![Velg en vedlikeholdsjobbtype.](media/am-guides-integration-create-work-order.png "Velg en vedlikeholdsjobbtype")
 
 1. Vis veiledningen som er knyttet til arbeidsordren og arbeiderne:
 
@@ -95,11 +95,11 @@ Følg disse trinnene for å knytte en veiledning til en mal for kontrolliste for
     1. [Åpne kontrollisten for vedlikehold](asset-management-mobile-workspace.md#view-maintenance-checklist-on-a-work-order-job) for arbeidsordren.
     1. Velg en sjekklistelinje for å vise den tilknyttede veiledningen.
 
-        ![Veiledning tilknyttet en sjekklistelinje](media/am-guides-integration-show-guide.png "Veiledning tilknyttet en sjekklistelinje")
+        ![Veiledning tilknyttet en sjekklistelinje.](media/am-guides-integration-show-guide.png "Veiledning tilknyttet en sjekklistelinje")
 
     1. Åpne veiledningen på HoloLens.
 
-        ![Åpne veiledningen på HoloLens](media/am-guides-integration-hololens-select.png "Åpne veiledningen på HoloLens")
+        ![Åpne veiledningen på HoloLens.](media/am-guides-integration-hololens-select.png "Åpne veiledningen på HoloLens")
 
 > [!NOTE]
 > Du kan også tilknytte en veiledning direkte i kontrolliste for vedlikehold for en arbeidsordre eller en jobbtype.

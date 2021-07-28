@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e84a8c3f69bb1a429c6fd9679ba671a185cf6378
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d86c16ecd2105a7f118cf77aa078f553feb2d933
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838352"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345264"
 ---
 # <a name="cycle-counting"></a>Syklustelling
 
@@ -34,7 +34,7 @@ Syklustelling er en lagerprosess som du kan bruke til å overvåke varer i lager
 2.  **Behandle syklustellingen** – Når du har opprettet syklustellingsarbeid, utfører du syklustellingsarbeidet ved å telle varene på en lagerlokasjon og bruker deretter en mobilenhet til å angi resultatet i Dynamics 365 Supply Chain Management. Alternativt kan du telle varer i en lagerlokasjon uten å opprette syklustellingsarbeid. Denne prosessen kalles *spotsyklustelling*.
 3.  **Rette opp differanser i tellingsverdien** – Etter en syklustelling får alle varer som har differanser i tellingsverdien, arbeidsstatusen **Venter på gjennomgang** på **Alt arbeid**-siden. Du kan løse disse forskjellene på siden **Syklustellingsarbeid venter på gjennomgang**.
 
-Illustrasjonen nedenfor viser syklustellingsprosessen. ![Behandle flyt for syklustelling](./media/performcyclecountinginawarehouselocation.jpg)
+Illustrasjonen nedenfor viser syklustellingsprosessen. ![Behandle flyt for syklustelling.](./media/performcyclecountinginawarehouselocation.jpg)
 
 ## <a name="cycle-counting-prerequisites"></a>Forhåndskrav for syklustelling
 Tabellen nedenfor viser forutsetninger som må være på plass før du kan bruke syklustelling.

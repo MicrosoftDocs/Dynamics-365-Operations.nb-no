@@ -9,17 +9,17 @@ ms.technology: ''
 ms.search.form: DefaultDashboard
 audience: Application User
 ms.reviewer: rhaertle
-ms.custom: 62303
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: be65f8c49d5a4fb87f7d859c1e012d53515ad073
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: bc81c7eed4724f9f68b592b23818781e1b047ebf
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893504"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6340307"
 ---
 # <a name="finance-and-operations-application-documentation"></a>Dokumentasjon for Finance and Operations-app
 
@@ -40,13 +40,13 @@ Mye av dette innholdet gjelder også for de tilknyttede produktene: Dynamics 365
 <td>
 <h3><a href="get-started/before-you-buy.md">Før du kjøper</a></h3>
 <p><a href="../dev-itpro/dev-tools/sign-up-preview-subscription.md">Registrere deg for et forhåndsvisningsabonnement</a></p>
- <p><a href="../dev-itpro/deployment/choose-deployment-type.md">Velge et distribusjonsalternativ</a></p>
- <p><a href="get-started/purchase-on-premises.md">Kjøpe Finance and Operations (on-premises)</a></p>
+ <p><a href="../dev-itpro/deployment/choose-deployment-type.md">Velg et distribusjonsalternativ</a></p>
+ <p><a href="get-started/purchase-on-premises.md">Kjøp Finance and Operations (on-premises)</a></p>
 
 <h3><a href="imp-lifecycle/implementation-lifecycle.md">Implementering av livssyklus</a></h3>
 <p><a href="/dynamics365/fasttrack/">FastTrack for Dynamics 365</a></p>
-<p><a href="imp-lifecycle/onboard.md">Introdusere et prosjekt</a></p>
-<p><a href="imp-lifecycle/prepare-go-live.md">Klargjøre for aktivering</a></p>
+<p><a href="imp-lifecycle/onboard.md">Introduser et prosjekt</a></p>
+<p><a href="imp-lifecycle/prepare-go-live.md">Klargjør for aktivering</a></p>
 
 <h3><a href="../dev-itpro/lifecycle-services/oneversion-overview.md">Oppdatering av én versjonstjeneste</a></h3>
 <p><a href="get-started/one-version.md">Vanlige spørsmål om oppdatering av én versjonstjeneste</a></p>

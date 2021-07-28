@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bf211e9f256a7489cdc3c38ed2d2198bd1dd6789
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 86474d22f7a1426ed1c8f61c346ac7a6f67173f2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813827"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345434"
 ---
 # <a name="forecasts-work-orders-and-projects"></a>Prognoser, arbeidsordrer og prosjekter
 
@@ -58,13 +58,13 @@ Noe av denne informasjonen finnes kanskje ikke i en arbeidsordre. Derfor utføre
 
 I illustrasjonen nedenfor, på grunn av hvordan aktivatypen **Lastebilmotor** er konfigurert, vil for eksempel alle arbeidsordrejobber som opprettes med aktivatypen **Lastebilmotor**, være et underprosjekt med prosjekt-ID-000186.
 
-![Figur 1](media/01-integration-to-pma.png)
+![Figur 1.](media/01-integration-to-pma.png)
 
 Formålet med prosjekt-ID/en i arbeidsordrejobben og det relaterte aktivitetsnummeret, er å spore kostnader som er knyttet til arbeidsordrejobben, og aktivumet som er valgt for det, i modulen **Prosjektstyring og regnskap**. (Hvis du vil vise prosjekt-ID-en og aktivitetsnummeret, velger du **Aktivabehandling** > **Felles** > **Arbeidsordrer** > **Alle arbeidsordrer**, og deretter velger du arbeidsordren. I hurtigfanen **Linjedetaljer** viser feltet **Prosjekt-ID** prosjekt-ID-en, og feltet **Aktivitetsnummer** viser aktivitetsnummeret.) Hvis du vil ha mer informasjon om kostnadskontroll i Aktivastyring, kan du se [Kostnads- og datokontroll](../controlling-and-reporting/cost-and-date-control.md).
 
 Illustrasjonen nedenfor vises en grafisk oversikt over arbeidsordreprosjekter og relaterte prosjektaktiviteter.
 
-![Figur 2](media/02-integration-to-pma.png)
+![Figur 2.](media/02-integration-to-pma.png)
 
 Når en ny arbeidsordrejobb blir opprettet i en arbeidsordre, opprettes det automatisk et arbeidsordreprosjekt for jobben. Finansdimensjonene for anleggsmiddelet som er relatert til arbeidsordrejobben, overføres automatisk til arbeidsordreprosjektet.
 
@@ -86,17 +86,17 @@ For å bidra til å sikre riktig bruk av livssyklustilstander for arbeidsordre o
 
 Illustrasjonene nedenfor viser tilknytningene mellom arbeidsordreprosjektgrupper, tilknyttede prosjekttyper, prosjektstadier og livssyklustilstander for arbeidsordre.
 
-![Figur 3](media/03-integration-to-pma.png)
+![Figur 3.](media/03-integration-to-pma.png)
 
-![Figur 4](media/04-integration-to-pma.png)
+![Figur 4.](media/04-integration-to-pma.png)
 
-![Figur 5](media/05-integration-to-pma.png)
+![Figur 5.](media/05-integration-to-pma.png)
 
 Hvis du vil ha mer informasjon om hvordan du definerer arbeidsordreprosjekter, kan du se [Prosjektoppsett for arbeidsordre](../setup-for-work-orders/work-order-project-setup.md). Hvis du vil ha mer informasjon om hvordan du oppretter livssyklustilstander for arbeidsordrer, kan du se [i Livssyklustilstand for arbeidsordre](../setup-for-work-orders/work-order-lifecycle-states.md).
 
 Illustrasjonen nedenfor viser en grafisk oversikt over de ulike prosjektene som er opprettet i modulen **Aktivastyring** for å muliggjøre integrering med modulen **Prosjektstyring og regnskap**. Den viser også arbeidsprosessene som prosjektene er relatert til.
 
-![Figur 6](media/06-integration-to-pma.png)
+![Figur 6.](media/06-integration-to-pma.png)
 
 
 

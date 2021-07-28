@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 294ad788c97850880b479d3c3c44cc19d55e9a6e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0646f8b6371ffbb5d203f8fd062999fb22613240
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837159"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345632"
 ---
 # <a name="revenue-recognition-setup"></a>Inntektsføringsoppsett
 [!include [banner](../includes/banner.md)]
@@ -72,7 +72,7 @@ Innstillinger for inntektsføring blir konfigurert i fanen **Inntektsføring** p
     - Sett dette alternativet til **Nei** for å begrense postering av den korrigeringstransaksjonen til økonomimodulen. Når dette alternativet er satt til **Nei**, opprettes det ingen flere dokumenter i Kunder for korrigeringen av det interne regnskapet. Når fakturaen betales, bruker utligningsprosessen den gamle regnskapsposten til å postere eventuelle kontantrabatter, eller realisert fortjeneste eller tap.
     - Sett dette alternativet til **Ja** for automatisk å opprette et tilbakeføringsdokument og ny faktura for den korrigeringstransaksjonen i Kunder. Ettersom denne korrigeringen er en intern regnskapskorrigering, blir ikke de nye dokumentene sendt eller formidlet til kunden. Tilbakeføringsdokumentet utlignes mot den opprinnelige fakturaen, og den nye, korrigerte fakturaen betales av kunden. Vær oppmerksom på at alle tre dokumentene vises i rapporter, for eksempel kundeutdraget.
 
-[![Oppsettsinformasjon](./media/revenue-recognition-setup-info.png)](./media/revenue-recognition-setup-info.png)
+[![Oppsettsinformasjon.](./media/revenue-recognition-setup-info.png)](./media/revenue-recognition-setup-info.png)
 
 ## <a name="revenue-schedules"></a>Inntektsplaner
 
@@ -82,7 +82,7 @@ Hvis du fører inntekt etter milepæl, anbefaler det at du oppretter en inntekts
 
 Inntektsplaner opprettes på siden **Inntektsplaner** (**Inntektsføring \> Oppsett \> Inntektsplaner**).
 
-[![Inntektsplaner](./media/revenue-recognition-revenue-schedules.png)](./media/revenue-recognition-revenue-schedules.png)
+[![Inntektsplaner.](./media/revenue-recognition-revenue-schedules.png)](./media/revenue-recognition-revenue-schedules.png)
 
 Angi beskrivende verdier i feltene **Inntektsplan** og **Beskrivelse**. Følgende tilleggsinnstillinger brukes til å opprette inntektsplanen når fakturaen er postert.
 
@@ -104,7 +104,7 @@ Angi beskrivende verdier i feltene **Inntektsplan** og **Beskrivelse**. Følgend
 
 Velg knappen **Detaljer for inntektsplan** for å vise de generelle periodene og prosentandelene som føres i hver periode. Som standard er verdien for **Føringsprosent** likt tildelt på tvers av antall perioder. Hvis føringsgrunnlaget er satt til **Månedlig** eller **Forekomster**, kan føringsprosenten endres. Når du endrer føringsprosenten, får du melding om at totalen ikke er lik 100 prosent. Hvis du mottar meldingen, kan du fortsette å redigere linjer. Den totale prosenten må imidlertid være lik 100 før du lukker siden.
 
-[![Detaljer for inntektsplan](./media/revenue-recognition-revenue-schedule-details.png)](./media/revenue-recognition-revenue-schedule-details.png)
+[![Detaljer for inntektsplan.](./media/revenue-recognition-revenue-schedule-details.png)](./media/revenue-recognition-revenue-schedule-details.png)
 
 ## <a name="inventory-setup"></a>Lageroppsett
 
@@ -139,7 +139,7 @@ Varegrupper og frigitte produkter kan defineres ved hjelp av medianprismetoden e
 
 Når du er ferdig med å konfigurere innstillingene for det frigitte produktet, må du definere inntektsprisen manuelt ved å registrere gjennomsnittsprisen eller medianprisen (hvis du bruker medianprismetoden) på siden **Inntektspriser** (gå til **Inntektsføring \> Oppsett \> Lageroppsett \> Frigitte produkter**, og velg deretter **Inntektspriser** i gruppen **Inntektsføring** i fanen **Selg** i handlingsruten).
 
-[![Inntektspriser](./media/revenue-recognition-revenue-prices.png)](./media/revenue-recognition-revenue-prices.png)
+[![Inntektspriser.](./media/revenue-recognition-revenue-prices.png)](./media/revenue-recognition-revenue-prices.png)
 
 Inntektsprisen som er definert manuelt på denne siden, brukes til å bestemme inntektspristildelingen for hver salgsordre, basert på kriteriene som er definert. Hvert kriterium samsvarer med salgsordrelinjen for å bestemme inntektsprisen som skal brukes i tildelingsprosessen.
 
@@ -181,7 +181,7 @@ Når du definerer en buntvare, må du angi en verdi i to felt på siden **Frigit
 
 Komponentene må deretter tilordnes til den overordnede varen for bunt/stykkliste på siden **Stykklisteversjoner** (gå til **Inntektsføring \> Oppsett \> Lager- og produktoppsett \> Frigitte produkter**, og klikk deretter **Stykklisteversjoner** i gruppen **Stykkliste** i fanen **Utvikle** i handlingsruten). Hvis du vil ha mer informasjon, kan du se dokumentasjonen for oppsett av stykklister.
 
-[![Frigitte produkter, tidsplaner for stykkliste](./media/revenue-recognition-bom-scheduleds.jpg)](./media/revenue-recognition-bom-scheduleds.jpg)
+[![Frigitte produkter, tidsplaner for stykkliste.](./media/revenue-recognition-bom-scheduleds.jpg)](./media/revenue-recognition-bom-scheduleds.jpg)
 
 Hvis den overordnede vare- og pakke komponenten for bunt er satt til tildeling, blir inntektsprisen for bunten distribuert til komponentene, basert på prosentene for inntektsbidrag.
 

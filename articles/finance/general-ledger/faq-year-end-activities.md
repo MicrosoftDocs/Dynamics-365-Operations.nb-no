@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 379bb8a1f969a74618db0e57c84c2038db1b631c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9ceacdbe36cc946b64d13b3faff2b3b1ca59afbb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822837"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345482"
 ---
 # <a name="year-end-activities-faq"></a>Vanlige spørsmål om årssluttaktiviteter 
 
@@ -27,9 +27,9 @@ ms.locfileid: "5822837"
 Dette emnet er kompilert for å bidra med aktiviteter for årsavslutning. Informasjonen i dette emnet fokuserer først og fremst på spørsmål som gjelder lukkeaktiviteter ved årsavslutning for økonomi- og leverandørmodulen.
 
 ## <a name="general-ledger-how-do-i-know-that-were-running-year-end-close-and-not-undoing-year-end-close"></a>Økonomi: Hvordan vet jeg at vi kjører årsavslutning og ikke angrer årsavslutning?
-Vi har sett at organisasjoner prøver å kjøre årsavslutningen, men i stedet utførte vi opphevet årsavslutning. Hvis årsavslutningen avsluttes ganske raskt, eller årsavslutningen ikke genererer åpningssaldoer, validerer du innstillingen **Angre forrige avslutning** i **Årsavslutning** (**Økonomi > Periodeslutt > Årsavslutning > Kjør årsavslutning**). 
+Vi har sett at organisasjoner prøver å kjøre årsavslutningen, men i stedet utførte vi opphevet årsavslutning. Hvis årsavslutningen avsluttes ganske raskt, eller årsavslutningen ikke genererer åpningssaldoer, validerer du innstillingen **Angre forrige avslutning** i **Årsavslutning** (**Økonomimodul > Periodeslutt > Årsavslutning > Kjør årsavslutning**). 
 
-[![Kjøre årsavslutning i forhold til å angre årsavslutning](./media/faq-2020-yr-end-01.png)](./media/faq-2020-yr-end-01.png)
+[![Kjøring av årsavslutning i forhold til å angre årsavslutning.](./media/faq-2020-yr-end-01.png)](./media/faq-2020-yr-end-01.png)
 
 Hvis valget **Angre forrige avslutning** er satt til **Ja**, blir den forrige årsavslutningen reversert. Når du kjører en angring, blir alle sluttsaldo- og åpningssaldooppføringer slettet, som om årsavslutningen aldri var blitt kjørt. Bilagene blir slettet. Årsavslutningen kjøres ikke automatisk på nytt. Du må starte prosessen på nytt, og denne gangen må du endre verdien for **Angre forrige avslutning** til **Nei**. 
 
@@ -39,11 +39,11 @@ Hvis valget **Angre forrige avslutning** er satt til **Ja**, blir den forrige å
 ## <a name="general-ledger-what-is-the-difference-between-undo-and-delete-gl-parameter-for-year-end-close"></a>Økonomi: Hva er forskjellen mellom angring og sletting av GL-parameter for årsavslutning?
 Det kan hende det er forvirring rundt forskjellen mellom parameteren **Angre forrige avslutning**, som er i dialogboksen **Årsavslutning**, og parameteren **Slett årsavslutningstransaksjoner under overføring** i økonomimodulen (**Økonomimodul > Periodeslutt > Årsavslutning > Kjør årsavslutning**).  
 
-[![Forskjellen mellom angring og sletting av GL-parameter for årsavslutning](./media/faq-2020-yr-end-02.png)](./media/faq-2020-yr-end-02.png)
+[![Forskjellen mellom angring og sletting av GL-parameter for årsavslutning.](./media/faq-2020-yr-end-02.png)](./media/faq-2020-yr-end-02.png)
 
 Velg **Angre forrige avslutning** i rullegardinmenyen når du kjører årsavslutningsprosessen for å slette alle sluttsaldo- og åpningssaldooppføringer, som om årsavslutningen aldri var kjørt. Bilagene vil bli slettet. Årsavslutningen kjøres ikke automatisk på nytt. Hvis du vil kjøre årsavslutningen, må du starte denne prosessen på nytt, denne gangen med å endre verdien for **Angre forrige avslutning** til **Nei** (**Økonomimodul > Finansoppsett > Parametere for økonomimodul**). 
 
-[![Innstillingen Parameter for økonomimodul](./media/faq-2020-yr-end-03.png)](./media/faq-2020-yr-end-03.png)
+[![Innstillingen Parameter for økonomimodul.](./media/faq-2020-yr-end-03.png)](./media/faq-2020-yr-end-03.png)
 
 Parameteren **Slett årsavslutningstransaksjoner under overføring** i økonomimodulen brukes bare under kjøring (ikke angring) av årsavslutningen (valget **Angre forrige avslutning** er satt til **Nei**). Hvis parameteren er satt til **Ja**, slettes alle sluttsaldo- og åpningssaldooppføringer, og årsavslutningen kjøres på nytt. Denne prosessen brukes når organisasjonen vil at alle transaksjoner, inkludert justeringer siden forrige årsavslutning, skal posteres i én enkelt regnskapsoppføring for sluttsaldoen og åpningssaldooppføringer. 
 
@@ -58,9 +58,9 @@ Du kan foreta en rekke endringer for å forbedre ytelsen ved årsavslutningen. D
 ### <a name="dimension-sets"></a>Dimensjonssett
 Når du kjører årsavslutningen, bygges hver dimensjonssettsaldo på nytt, noe som påvirker ytelsen direkte. Noen organisasjoner oppretter dimensjonssett unødvendig fordi de ble brukt på et tidspunkt, eller kan bli brukt på et tidspunkt.  Disse unødvendige dimensjonssettene bygges fremdeles opp på nytt i løpet av årsavslutningen, noe som legger tid til prosessen. Ta deg tid til å evaluere dimensjonssettene og slette alle unødvendige dimensjonssett.
 
-Unødvendige dimensjonssett påvirker også den satsvise jobben **BudgetDimensionFocusOppgavetializeBalance** (**Økonomimodul > Kontoplan > Dimensjoner > Finansdimensjonssett**).
+Unødvendige dimensjonssett påvirker også den satsvise jobben **BudgetDimensionFocusInitializeBalance** (**Økonomimodul > Kontoplan > Dimensjoner > Finansdimensjonssett**).
 
-[![Finansdimensjonssett](./media/faq-2020-yr-end-04.png)](./media/faq-2020-yr-end-04.png)
+[![Finansdimensjonssett.](./media/faq-2020-yr-end-04.png)](./media/faq-2020-yr-end-04.png)
 
 ### <a name="year-end-close-template-configuration"></a>Konfigurasjon av årsavslutningsmal
 Ved hjelp av årsavslutningsmalen kan organisasjonene velge finansdimensjonsnivået som skal vedlikeholdes ved overføring av resultatsaldoer til opptjente inntekter. Innstillingene gjør at en organisasjon kan vedlikeholde de detaljerte finansdimensjonene (**Avslutt alle**) når saldoene flyttes til opptjente inntekter eller velger å summere beløpene til én dimensjonsverdi (**Avslutt én**). Dette kan defineres for hver finansdimensjon. Hvis du vil ha mer informasjon om disse innstillingene, kan du se emnet [Årsavslutning](year-end-close.md).
@@ -70,16 +70,16 @@ Det anbefales at du evaluerer organisasjonens krav, og lukker så mange dimensjo
 ### <a name="10013-update-or-later"></a>10.0.13-oppdatering eller senere
 Hvis du har oppdatert til versjon 10.0.13 eller senere siden forrige gang organisasjonen kjørte en årsavslutning, kan årsavslutningsprosessen ta lengre tid på grunn av [HashV2-funksjonsimplementeringen](https://community.dynamics.com/365/financeandoperations/b/dynamics-365-finance-blog/posts/verify-hash-function-changes-after-update-to-dynamics-365-finance-2020-release-wave-2). (Begrepet *hash* refererer til et felt som beregnes fra andre strengfelter. API-en for å beregne GUID-verdien for hash ble oppdatert for å forbedre sikkerheten.) For at årsavslutningsprosessen skal gå raskere, anbefales det at du bygger opp saldoene på dimensjonssettene på nytt før du kjører årsavslutningen. Hvis du allerede har utført en gjenoppbygging av dimensjonssettsaldoene etter å ha utført 10.0.13-oppdateringen, er det ikke nødvendig å kjøre gjenoppbyggingsprosessen på nytt.
  
-## <a name="general-ledger--what-does-the-period-close--year-end-close-do"></a>Økonomi – Hva gjør periodeavslutningen – årsavslutningen?
+## <a name="general-ledger--what-does-the-period-close--year-end-close-do"></a>Økonomimodul – Hva gjør periodeavslutningen – årsavslutningen?
  
-[![Periodeavslutning, årsavslutning](./media/faq-2020-yr-end-05.png)](./media/faq-2020-yr-end-05.png)
+[![Periodeavslutning, årsavslutning.](./media/faq-2020-yr-end-05.png)](./media/faq-2020-yr-end-05.png)
 
 ### <a name="performance-improvements-for-rebuilding-financial-dimension-sets-new-feature"></a>Ytelsesforbedringer for gjenoppbygging av finansdimensjonssett (ny funksjon)
 En ny funksjon som er lagt til i versjon 10.0.16, forbedrer ytelsen til årsavslutnings- og konsolideringsprosessene. Funksjonen får navnet Ytelsesforbedringer for gjenoppbygging av finansdimensjonssett. Denne funksjonen endrer hvordan dimensjonssett bygges opp på nytt, slik at de bare bygges opp på nytt for et relevant tidsrom. I de tidligere versjonene ble dimensjonssettene bygget opp på nytt for alle datoer. Hvis du for eksempel avslutter 2020, vil systemet bare bygge opp saldoene på nytt for transaksjoner i regnskapsåret 2020. Hvis du kjører konsolidering for et datointervall på 1. november 2020 til 30. november 2020, vil systemet bare bygge opp saldoene på nytt for dette datoområdet.
 
 Ettersom denne funksjonen betraktes som en endring som brytes, må du aktivere den ved hjelp av arbeidsområdet for **Funksjonsbehandling**.
  
-[![Årsavslutning](./media/faq-2020-yr-end-06.png)](./media/faq-2020-yr-end-06.png)
+[![Årsavslutning.](./media/faq-2020-yr-end-06.png)](./media/faq-2020-yr-end-06.png)
 
 ## <a name="accounts-payable-what-changes-have-been-made-to-support-1099-year-end-reporting-for-2020"></a>Leverandør: Hvilke endringer er gjort for å støtte 1099-årsavslutningsrapportering for 2020?
 
@@ -114,15 +114,15 @@ Nei. Update 1099-rutinen utføres mot én leverandør om gangen. Hvis dette krav
 ## <a name="accounts-payable-1099--recalculate-existing-1099-amounts-vs-update-all-in-the-update-1099-utility"></a>Leverandør: 1099 – Omberegn eksisterende 1099-beløp i forhold til Oppdater alle i verktøyet for Update 1099.
 Hvis du merker av for **Beregn eksisterende 1099-beløp å nytt** tilbakestilles 1099-beløpet til det totale antallet betalte verdier, når dette antallet brukes sammen med avmerkingsboksen **Oppdater alle**. 
 
-[![1099-avgiftstransaksjoner: Før kjøring av oppdateringsrutine](./media/faq-2020-yr-end-07.png)](./media/faq-2020-yr-end-07.png)
+[![1099-avgiftstransaksjoner: Før kjøring av oppdateringsrutine.](./media/faq-2020-yr-end-07.png)](./media/faq-2020-yr-end-07.png)
 
 Avmerkingsboksen **Omberegn eksisterende 1099-beløp** trer bare i kraft når det er delvise 1099-verdier i fakturaen, eller hvis den ble endret i 1099-avgiftsskjemaet. La oss for eksempel anta at du har en faktura som er USD 1000,00, men brukeren skriver inn et 1099-beløp manuelt på fakturaen på USD 500,00.
 
-[![1099-avgiftstransaksjoner: Merking av både Oppdater alle og Beregning av eksisterende 1099-beløp på nytt](./media/faq-2020-yr-end-08.png)](./media/faq-2020-yr-end-08.png)
+[![1099-avgiftstransaksjoner: Merking av både Oppdater alle og Beregning av eksisterende 1099-beløp på nytt.](./media/faq-2020-yr-end-08.png)](./media/faq-2020-yr-end-08.png)
 
 Når denne betales, vil USD 500,00 bli 1099-beløpet som betales. Hvis du utfører omberegningsrutinen, vil systemet endre 1099-beløpet til USD 1000,00, som er totalsummen som ble betalt.
 
-[![1099-avgiftstransaksjoner: Etter at 1099-rutinen er kjørt](./media/faq-2020-yr-end-09.png)](./media/faq-2020-yr-end-09.png)
+[![1099-avgiftstransaksjoner: Etter at 1099-rutinen er kjørt.](./media/faq-2020-yr-end-09.png)](./media/faq-2020-yr-end-09.png)
 
 ## <a name="accounts-payable-1099--manually-create-1099-transactions"></a>Leverandør: 1099 – Manuell oppretting av 1099-transaksjoner
 Det kan hende at en organisasjon manuelt må opprette 1099-transaksjoner som ikke er knyttet til fakturaen. Du kan legge til manuelle 1099-transaksjoner ved å gå til **Leverandører > Periodiske oppgaver > 1099-avgift > Leverandørutligning for 1099**. Velg knappen **Manuelle 1099-transaksjoner**. 

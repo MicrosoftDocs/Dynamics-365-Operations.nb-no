@@ -9,19 +9,19 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: moonma
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 044a5c21e4ebf1bf83edc74335e655b9388bc1d4
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: fc7d47897d1a332ba1af7305525f9e75bca12afd
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5795603"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6337509"
 ---
 # <a name="product-recommendations-overview"></a>Oversikt over produktanbefalinger
 
@@ -32,6 +32,9 @@ Microsoft Dynamics 365 Commerce kan brukes til å vise produktanbefalinger på w
 Produktanbefalinger gjør at kundene enkelt og raskt kan finne produkter de vil ha, samtidig som de får en god handleopplevelse. Krysssalg og ettersalg kan til og med brukes til å hjelpe kunder med å finne flere produkter enn de opprinnelig hadde til hensikt å kjøpe. Når anbefalinger brukes til å hjelpe med produktoppdaging, kan de opprette flere konverteringsmuligheter, øke salgsinntektene og til og med bidra til å forbedre kundetilfredsheten og -loyaliteten.
 
 I e-handel er produktanbefalinger basert på Microsofts anbefalinger fra teknologi for maskinlæring i stor skala.
+
+Denne tjenesten er et tillegg til Dynamics 365 Commerce. Hvis du vil ha mer informasjon, kan du laste ned den nyeste [Microsoft Dynamics 365-lisenshåndboken](https://go.microsoft.com/fwlink/?LinkId=866544).
+
 
 ## <a name="recommendation-service"></a>Anbefalingstjeneste
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.20
-ms.openlocfilehash: 496c4fe5230a599acf60fac39e51c43db372f92c
-ms.sourcegitcommit: 927574c77f4883d906e5c7bddf0af9b717e492bf
+ms.openlocfilehash: c7be9e2d32384df23a4609d82216804fc945061a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "6129824"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345190"
 ---
 # <a name="create-returns-in-pos"></a>Opprette returer i POS
 
@@ -48,7 +48,7 @@ Hvis det blir funnet en transaksjon eller ordre som samsvarer med søkekriterien
 
 For hver ordrelinje i listen over produkter som kan returneres, viser POS informasjon om det opprinnelige bestillingsantallet og antallet fra alle returer som er behandlet tidligere. Returantallet som en bruker angir for en ordrelinje, må være mindre enn eller lik verdien i feltet **Tilgjengelig for retur**.
 
-![Siden Produkter som kan returneres](media/returnslist.png)
+![Siden Produkter som kan returneres.](media/returnslist.png)
 
 Hvis en bruker har det fysiske produktet under returbehandling og produktet har en strekkode, kan brukeren skanne strekkoden for å registrere returen. Hver skanning av strekkoden øker returantallet med én vare. Hvis strekkodeetiketten imidlertid har et innebygd antall, angis dette antallet i **Returnerer nå**-feltet.
 
@@ -97,6 +97,13 @@ Hvis informasjonen på kanalsiden av en eller annen årsak ikke er oppdatert og 
 
 > [!NOTE]
 > Når funksjonen **Enhetlig returbehandling i POS** er aktivert, blir nye valgfrie funksjoner som støtter validering av serialiserte produktreturer, tilgjengelige. Hvis du vil ha mer informasjon, kan du se [Returnere serienummerkontrollerte produkter i Point of Sale (POS)](POS-serial-returns.md).
+
+## <a name="enable-proper-tax-calculation-for-returns-with-partial-quantity"></a>Aktiver riktig avgiftsberegning for returer med delvis antall
+
+Denne funksjonen sikrer at når en ordre returneres ved hjelp av flere fakturaer, vil avgiften være lik avgiftsbeløpet som opprinnelig ble belastet.
+1.  Gå til arbeidsområdet **Funksjonsbehandling** og søk etter **Aktiver riktig avgiftsberegning for returer med delvis antall**.
+2.  Velg **Aktiver riktig avgiftsberegning for returer med delvis antall**, og klikk deretter **Aktiver**.
+
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

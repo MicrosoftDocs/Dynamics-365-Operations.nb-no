@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-29
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: 84c97bdbe00285d7992a25edbf5d42ffe9b58903
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a8ddc7022a1e9a7db14aaa67efcd442025b0f9d8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814518"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344479"
 ---
 # <a name="replenishment-strategies"></a>Etterfyllingsstrategier
 
@@ -45,7 +45,7 @@ Før du kan bruke denne funksjonen, må den være aktivert i systemet. Administr
 
 For å gå tilgang til malene går du til **Lagerstyring \> Oppsett \> Etterfylling \> Etterfyllingsmaler**. I **Oversikt**-delen kan du velge eller opprette en etterfyllingsmal for bølgebehov der feltet **Etterfyllingstype** er satt til *Bølgebehov*. Deretter definerer du linjene for etterfyllingsmalen i delen **Detaljer for etterfyllingsmal**. For hver linje velger du etterfyllingsstrategien du vil bruke, i feltet **Etterfyllingsstrategi**.
 
-![Etterfyllingsmaler-siden](media/ReplenTempWaveDmdMaxLocCap.png "Etterfyllingsmaler-siden")
+![Etterfyllingsmaler-siden.](media/ReplenTempWaveDmdMaxLocCap.png "Etterfyllingsmaler-siden")
 
 Hvis kolonnen **Etterfyllingsstrategi** ikke vises i rutenettet i delen **Detaljer for etterfyllingsmal**, må du kontrollere at funksjonen er aktivert, og at den valgte etter fyllingsmalen har etterfyllingstypen for *Bølgebehov*.
 
@@ -85,7 +85,7 @@ Hvis du angir etterfyllingsstrategien til *Maksimal stedskapasitet* i stedet, f�
 - **Etterfyllingsarbeid 1:** Plukk 4 esker fra bulklokasjonen, og plasser dem på lokasjon Plukk-001.
 - **Etterfyllingsarbeid 2:** Plukk 5 esker fra bulklokasjonen, og plasser dem på lokasjon Plukk-002.
 
-[![Eksempel 1](media/ReplenTemp_example_1.png "Eksempel 1")](media/ReplenTemp_example_1_large.png)
+[![Eksempel 1.](media/ReplenTemp_example_1.png "Eksempel 1")](media/ReplenTemp_example_1_large.png)
 
 ### <a name="example-2"></a>Eksempel 2
 
@@ -109,7 +109,7 @@ Avhengig av innstillingen for alternativet **Tillat deling** i lokasjonsdirektiv
 
 Resultatene er forskjellige på grunn av informasjonen som er tilgjengelig når du oppretter arbeidet. Når **Tillat deling** er satt til *Ja* i lokasjonsdirektivene for etterfyllingsplukking, vet du at du har klart å finne 160 stk. Du kan derfor opprette arbeid for dette antallet. Når alternativet **Tillat deling** er satt til *Nei*, vet du imidlertid ikke om eksistensen av 160 stk. Fordi det ekstra antallet du har bestemt å etterfylle, var 3 esker, dropper du det ekstra antallet og prøver det opprinnelige antallet på nytt.
 
-[![Eksempel 2](media/ReplenTemp_example_2.png "Eksempel 2")](media/ReplenTemp_example_2_large.png)
+[![Eksempel 2.](media/ReplenTemp_example_2.png "Eksempel 2")](media/ReplenTemp_example_2_large.png)
 
 For å få maksimumsantallet til etterfyllingslokasjonene må du derfor sette alternativet **Tillat deling** til *Ja* i lokasjonsdirektivene for etterfyllingsplukking.
 

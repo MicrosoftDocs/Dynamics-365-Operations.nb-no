@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 84b3a3630d3809c05f87242784207c3c4af160ce
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 1351b9f22416e8ce6d90022997f0a15e9eb4042a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018586"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344377"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Definere en B2C-leier i Commerce
 
@@ -40,7 +40,7 @@ Dynamics 365 Commerce bruker Azure AD B2C til å støtte brukerlegitimasjon og g
 1. Logg på [Azure-portalen](https://portal.azure.com/).
 1. Velg **Opprett en ressurs** fra menyen for Azure-portal. Pass på at du bruker abonnementet og katalogen som skal kobles til Commerce-miljøet.
 
-    ![Opprette en ressurs i Azure-portalen](./media/B2CImage_1.png)
+    ![Opprette en ressurs i Azure-portalen.](./media/B2CImage_1.png)
 
 1. Gå til **Identitet \> Azure Active Directory B2C**.
 1. På siden **Opprett ny B2C-leier eller koble til en eksisterende leier** bruker du et av alternativene nedenfor som passer best til firmaets behov:
@@ -52,25 +52,25 @@ Dynamics 365 Commerce bruker Azure AD B2C til å støtte brukerlegitimasjon og g
         1. For **Land eller område** velger du aktuelt land eller område.
         1. Velg **Opprett** for å opprette leieren.
 
-     ![Opprette en ny Azure AD-leier](./media/B2CImage_2.png)
+     ![Opprette en ny Azure AD-leier.](./media/B2CImage_2.png)
 
      - **Koble en eksisterende Azure AD B2C-leier til Azure-abonnementet**: Bruk dette alternativet hvis du allerede har en Azure AD B2C-leier du vil koble til.
         1. Velg **Koble en eksisterende Azure AD B2C-leier til Azure-abonnementet**.
         1. For **Azure AD B2C-leier** velger du den riktige B2C-leieren. Hvis det vises en melding i valgboksen om at det ikke ble funnet noen kvalifiserte B2C-leiere, har du ikke en eksisterende kvalifisert B2C-leier, og må opprette en ny.
         1. For **Ressursgruppe** velger du **Opprett ny**. Angi et **navn** på ressursgruppen som skal inneholde leieren, velg **ressursgruppelokasjonen**, og velg deretter **Opprett**.
 
-    ![Koble en eksisterende Azure AD B2C-leier til Azure-abonnementet](./media/B2CImage_3.png)
+    ![Koble en eksisterende Azure AD B2C-leier til Azure-abonnementet.](./media/B2CImage_3.png)
 
 1. Når den nye Azure AD B2C-katalogen er opprettet (dette kan ta litt tid), vil det vises en kobling til den nye katalogen på instrumentbordet. Denne koblingen fører deg til siden "Velkommen til Azure Active Directory B2C".
 
-    ![Kobling til ny AAD-katalog](./media/B2CImage_4.png)
+    ![Kobling til ny AAD-katalog.](./media/B2CImage_4.png)
 
 > [!NOTE]
 > Hvis du har flere abonnementer i Azure-kontoen eller har konfigurert B2C-leieren uten å koble til et aktivt abonnement, vil et **Feilsøking**-banner gi deg beskjed om å koble leieren til et abonnement. Velg feilsøkingsmeldingen, og følg instruksjonene for å løse problemet med abonnement.
 
 Bildet nedenfor viser et eksempel på et Azure AD B2C **Feilsøking**-banner.
 
-![Advarsel som viser at katalogen ikke har et aktivt abonnement](./media/B2CImage_5.png)
+![Advarsel som viser at katalogen ikke har et aktivt abonnement.](./media/B2CImage_5.png)
 
 ## <a name="create-the-b2c-application"></a>Opprette B2C-programmet
 
@@ -136,11 +136,11 @@ Følg denne fremgangsmåten for å opprette en brukerflytpolicy for registrering
 
 Bildet nedenfor er et eksempel på brukerflyt for Azure AD B2C registrering og pålogging.
 
-![Policyinnstillinger for registrering og pålogging](./media/B2CImage_11.png)
+![Policyinnstillinger for registrering og pålogging.](./media/B2CImage_11.png)
 
 Bildet nedenfor viser alternativet **Kjør brukerflyt** i brukerflyten Azure AD B2C registering og pålogging.
 
-![Kjør brukerflyt-alternativet policyflyt](./media/B2CImage_23.png)
+![Kjør brukerflyt-alternativet policyflyt.](./media/B2CImage_23.png)
    
 ### <a name="create-a-profile-editing-user-flow-policy"></a>Opprette en brukerflytpolicy for profilredigering
 
@@ -161,7 +161,7 @@ Følg denne fremgangsmåten for å opprette en brukerflytpolicy for profilredige
 
 Det følgende bildet viser et eksempel på brukerflyten for Azure AD B2C-profilredigering.
 
-![Opprette brukerflyten for profilredigering](./media/B2CImage_12.png)
+![Opprette brukerflyten for profilredigering.](./media/B2CImage_12.png)
 
 ### <a name="create-a-password-reset-user-flow-policy"></a>Opprette en brukerflytpolicy for tilbakestilling av passord
 
@@ -225,18 +225,18 @@ Følg denne fremgangsmåten for å legge til og konfigurere en leverandør av so
 
 Følgende bilde viser eksempler på skjermbildene **Legg til identitetsleverandør** og **Konfigurere sosial identitetsleverandør** i Azure AD B2C.
 
-![Legge til en leverandør av sosiale identiteter i programmet](./media/B2CImage_14.png)
+![Legge til en leverandør av sosiale identiteter i programmet.](./media/B2CImage_14.png)
 
 Det følgende bildet viser et eksempel på hvordan du kan velge identitetsleverandører på siden Azure AD B2C **identitetsleverandører**.
 
-![Velg hver sosial identitetsleverandør du vil aktivere for policyen](./media/B2CImage_16.png)
+![Velg hver sosial identitetsleverandør du vil aktivere for policyen.](./media/B2CImage_16.png)
 
 Bildet nedenfor viser et eksempel på et standard påloggingsskjermbilde med en påloggingsknapp for sosial identitetsleverandør.
 
 > [!NOTE]
 > Hvis du bruker de egendefinerte sidene som er innebygd i Commerce for brukerflytene, må knappene for sosiale identietsleverandører legges til ved hjelp av utvidbarhetsfunksjonene i Commerce-modulbiblioteket. Når du setter opp programmer hos en bestemt sosial identitetsleverandør, kan det i noen tilfeller være at URL-adresser eller konfigurasjonsstrenger skiller mellom store og små bokstaver. Se tilkoblingsinstruksjonene til den sosiale identitetsleverandøren for å få mer informasjon.
  
-![Eksempel på standard påloggingsskjerm med påloggingsknappen for sosial identitetsleverandør](./media/B2CImage_17.png)
+![Eksempel på standard påloggingsskjerm med påloggingsknappen for sosial identitetsleverandør.](./media/B2CImage_17.png)
 
 ## <a name="update-commerce-headquarters-with-the-new-azure-ad-b2c-information"></a>Oppdater Commerce Headquarters med den nye Azure AD B2C-informasjonen
 
@@ -291,15 +291,15 @@ Følg denne fremgangsmåten for å samle inn nødvendig programinformasjon.
 
 Bildet nedenfor viser et eksempel på siden **Azure AD B2C-programmer**.
 
-![Gå til B2C-programmet i leieren](./media/B2CImage_19.png)
+![Gå til B2C-programmet i leieren.](./media/B2CImage_19.png)
 
 Bildet nedenfor viser et eksempel på et programs **Egenskaper**-side i Azure AD B2C. 
 
-![Kopier program-IDen fra egenskapene for B2C-programmet](./media/B2CImage_21.png)
+![Kopier program-IDen fra egenskapene for B2C-programmet.](./media/B2CImage_21.png)
 
 Bildet nedenfor viser et eksempel på brukerflytpolicyer på siden **Azure AD B2C – brukerflyter (policyer)**.
 
-![Samle navnene på hver B2C-policyflyt](./media/B2CImage_22.png)
+![Samle navnene på hver B2C-policyflyt.](./media/B2CImage_22.png)
 
 ### <a name="enter-your-aad-b2c-tenant-application-information-into-commerce"></a>Skriv inn programinformasjon om AAD-B2C-leieren i Commerce
 

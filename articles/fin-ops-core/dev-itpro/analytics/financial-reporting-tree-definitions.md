@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 1a884031905e59e7bfedab9af7b97a7c54e40895
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 97ecd7996ed2d8fb12c1038aa296450d3481e6fd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866308"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345792"
 ---
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Definisjoner av rapporteringstre i finansrapporter
 
@@ -170,23 +170,23 @@ Her er strukturen for rapporteringsenhetene i følgende rapporteringstre:
 - Rapporteringsenhetene på det laveste nivået (Home Sales, Auto Sales, Client Services, and Operations) representerer avdelinger i de økonomiske dataen. Disse rapporteringsenhetene er i det skyggelagte området i diagrammet.
 - Sammendragsenhetene på høyere nivå summerer informasjon fra detaljenhetene.
 
-[![Rapportstruktur for Contoso-sammendrag – eksempel 1](./media/contosoentertainmentsummaryreportstructure.png)](./media/contosoentertainmentsummaryreportstructure.png)
+[![Rapportstruktur for Contoso-sammendrag – eksempel 1.](./media/contosoentertainmentsummaryreportstructure.png)](./media/contosoentertainmentsummaryreportstructure.png)
 
 ### <a name="reporting-unit-structure--example-2"></a>Struktur for rapporteringsenhet – Eksempel 2
 
 I diagrammet nedenfor har rapporteringstre en organisasjonsstruktur som er delt inn etter forretningsfunksjon.
 
-[![Rapportstruktur for Contoso-sammendrag – eksempel 2](./media/summaryofallunitscontoso.png)](./media/summaryofallunitscontoso.png)
+[![Rapportstruktur for Contoso-sammendrag – eksempel 2.](./media/summaryofallunitscontoso.png)](./media/summaryofallunitscontoso.png)
 
 ### <a name="example-of-the-insert-reporting-units-from-dimensions-dialog-box"></a>Eksempel på dialogboksen Sett inn rapporteringsenheter fra dimensjoner
 
 Illustrasjonen nedenfor viser et eksempel på dialogboksen **Sett inn rapporteringsenheter fra dimensjoner**. I dette eksemplet returnerer resultatene kombinasjonen av forretningsenheter, kostsentre og avdelinger.
 
-[![Sett inn rapporteringsenheter](./media/insertreportingunits.png)](./media/insertreportingunits.png)
+[![Sett inn rapporteringsenheter.](./media/insertreportingunits.png)](./media/insertreportingunits.png)
 
 Den resulterende rapporteringstredefinisjonen er sortert etter forretningsenhet, deretter etter kostsenter og til slutt etter avdeling. Dimensjonen for den femte rapporteringsenheten er **Forretningsenhet = \[001\], Kostsenter =\[\], Avdeling = \[022\]**, og identifiserer en rapporteringsenhet for kontoer som er spesifikke for forretningsenhet 001 og avdeling 022.
 
-[![Illustrasjon av rapporteringstreet](./media/reportingtree-1024x646.png)](./media/reportingtree.png)
+[![Illustrasjon av rapporteringstreet.](./media/reportingtree-1024x646.png)](./media/reportingtree.png)
 
 ### <a name="examples-of-data-roll-up"></a>Eksempler på opprulling av data
 
@@ -194,11 +194,11 @@ Eksemplene nedenfor viser mulig informasjon som brukes i en rapporteringstredefi
 
 #### <a name="example-1"></a>Eksempel 1
 
-[![Opprulling av flere firmaer](./media/mutlicompanyrollup.png)](./media/mutlicompanyrollup.png)
+[![Opprulling av flere firmaer.](./media/mutlicompanyrollup.png)](./media/mutlicompanyrollup.png)
 
 #### <a name="example-2"></a>Eksempel 2
 
-[![Opprullet avdeling på tvers av firmaer](./media/crosscompanydepartmentrollup.png)](./media/crosscompanydepartmentrollup.png)
+[![Opprullet avdeling på tvers av firmaer.](./media/crosscompanydepartmentrollup.png)](./media/crosscompanydepartmentrollup.png)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

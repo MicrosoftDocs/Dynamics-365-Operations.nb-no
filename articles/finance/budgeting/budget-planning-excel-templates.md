@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9d4e901871267d4f11d9afefc873708663dbabd6
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 7c94cdfda4bab43cfc753374d517e22fd21da4bd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6190291"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343844"
 ---
 # <a name="budget-planning-templates-for-excel"></a>Budsjettplanleggingsmaler for Excel
 
@@ -37,17 +37,17 @@ Budsjettplandokumenter kan vises og redigeres ved hjelp av ett eller flere oppse
 1. Åpne **listen over budsjettplaner** (**Budsjettering** &gt; **Budsjettplaner**). 
 2. Klikk **Ny** for å opprette et nytt budsjettplandokument. 
 
-   [![Liste over budsjettplaner](./media/bpt11-1024x552.png)](./media/bpt11.png) 
+   [![Liste over budsjettplaner.](./media/bpt11-1024x552.png)](./media/bpt11.png) 
 
 3. Bruk alternativet **Legg til linje** for å legge til linjer. Klikk **Oppsett** for å vise oppsettkonfigurasjonen for budsjettplandokument. 
 
-   [![Legg til budsjettplaner](./media/bpt2-1024x274.png)](./media/bpt2.png) 
+   [![Legg til budsjettplaner.](./media/bpt2-1024x274.png)](./media/bpt2.png) 
 
 Du kan gå gjennom oppsettkonfigurasjonen og justere den etter behov. 
 1. Gå til **Mal** &gt; **Generer** for å opprette en Excel-fil for dette oppsettet. 
 2. Etter at malen er generert, går du til **Mal** &gt; **Vis** for å åpne og se gjennom dokumentmalen for budsjettplan. Du kan lagre Excel-filen på den lokale stasjonen. 
 
-[![Lagre som](./media/bpt3-1024x545.png)](./media/bpt3.png)
+[![Lagre som.](./media/bpt3-1024x545.png)](./media/bpt3.png)
 
 > [!NOTE] 
 > Oppsettet av budsjettplandokumentet kan ikke redigeres etter at det er knyttet til en Excel-mal. Hvis du vil endre oppsettet, sletter du den tilknyttede Excel-malfilen og genererer den på nytt. Dette er nødvendig for å holde feltene i oppsettet og regnearket synkronisert. 
@@ -64,7 +64,7 @@ I kategorien **Utforming** klikker du **Legg til felt** og velger **BudgetPlanHe
 
 Pek markøren mot ønsket plassering i Excel-filen. Klikk **Legg til etikett** for å legge til feltetiketten i den valgte plasseringen. Velg **Legge til verdi** for å legge til verdifeltet i det valgte stedet. Klikk på **Ferdig** for å lukke utformingen.
 
-## <a name="select-add-valuemediabpt7png"></a>[![Velg Legg til verdi](./media/bpt7.png)](./media/bpt7.png)
+## <a name="select-add-valuemediabpt7png"></a>[![Velg Legg til verdi.](./media/bpt7.png)](./media/bpt7.png)
 
 ## <a name="add-a-calculated-column-to-budget-plan-document-template-table"></a>Legge til en beregnet kolonne i dokumentmaltabellen for budsjettplan
 
@@ -72,11 +72,11 @@ Deretter vil beregnede kolonner bli lagt til den genererte dokumentmalen for bud
 
 Klikk **Utforming** i **Datakobling** for å legge til kolonner i tabellen. Klikk **Rediger** ved siden av **BudgetPlanWorksheet**-datakilden for å begynne å legge til kolonner.
 
-[![Begynne å legge til kolonner](./media/bpt8-1024x301.png)](./media/bpt8.png) 
+[![Begynne å legge til kolonner.](./media/bpt8-1024x301.png)](./media/bpt8.png) 
 
 Den valgte feltgruppen viser kolonnene som er tilgjengelige i malen. Klikk **Formel** for å legge til en ny kolonne. Gi den nye kolonnen et navn, og lim deretter inn formelen inn i **Formel**-feltet. Klikk **Oppdater** for å sette inn kolonnen.
 
-[![Legge til og sette inn kolonne](./media/bpt12-1024x565.png)](./media/bpt12.png)
+[![Legge til og sette inn kolonne.](./media/bpt12-1024x565.png)](./media/bpt12.png)
 
 > [!NOTE] 
 > Hvis du vil definere formelen, oppretter du formelen i regnearket, og deretter kopierer du den til **Utforming**-vinduet. En tabell bundet til Finance and Operations får vanligvis navnet «AXTable1». For å summere Forespørsel Q1: Forespørsel Q4 i regnearket, formelen = AxTable1\[Forespørsel Q1\]+ AxTable1\[Forespørsel Q2\]+ AxTable1\[Forespørsel Q3\]+ AxTable1\[Forespørsel Q4\].
@@ -85,11 +85,11 @@ Gjenta disse trinnene for å sette inn **Justering**-kolonnen. Bruk formelen = A
 
 Lagre og lukk Excel-filen. Under **Oppsett** klikker du på **Mal &gt; Last opp** for å laste opp den lagrede Excel-malen som skal brukes for budsjettplanen. 
 
-[![Last opp Excel-mal](./media/bpt10-1024x352.png)](./media/bpt10.png) 
+[![Last opp Excel-mal.](./media/bpt10-1024x352.png)](./media/bpt10.png) 
 
 Lukk **Oppsett**-glidebryteren. I **Budsjettplan**-dokument klikker du **Regneark** for å vise og redigere dokumentet i Excel. Merk at den justerte Excel-malen ble brukt til å opprette dette budsjettplanregnearket, og beregnede kolonner blir oppdatert ved hjelp av formler som ble definert i de forrige trinnene. 
 
-[![Vise og redigere dokument i Excel](./media/bpt111-1024x431.png)](./media/bpt111.png)
+[![Vise og redigere dokument i Excel.](./media/bpt111-1024x431.png)](./media/bpt111.png)
 
 ## <a name="tips--tricks-for-creating-budget-plan-templates"></a>Tips og triks for å opprette budsjettplanmaler
 ### <a name="can-i-add-and-use-additional-data-sources-to-a-budget-plan-template"></a>Kan jeg legge til og bruke flere datakilder i en budsjettplanmal?
@@ -102,21 +102,21 @@ Du kan bruke **Filter**-alternativet i **Datakobling** til å legge til ønskede
 
 Ja, åpne alternativene for **Datakobling** for å skjule **Utforming**-alternativet fra andre brukere.
 
-[![Alternativer for åpne datakobling](./media/bpt13-1024x565.png)](./media/bpt13.png)
+[![Alternativer for åpne datakobling.](./media/bpt13-1024x565.png)](./media/bpt13.png)
 
 Utvid **Alternativer for datakobling** og fjern merket for **Aktiver utforming**. Dette skjuler **Utforming**-alternativet fra **Datakobling**.
 
-[![Alternativ for å skjule utforming fra datakobling](./media/bpt14-1024x592.png)](./media/bpt14.png)
+[![Alternativ for å skjule utforming fra datakobling.](./media/bpt14-1024x592.png)](./media/bpt14.png)
 
 ### <a name="can-i-prevent-users-from-accidently-closing-the-data-connector-while-working-with-data"></a>Kan jeg hindre at brukere ved et uhell lukker datakoblingen under arbeid med data?
 
 Vi anbefaler å låse malen for å hindre brukere i å lukke den. Du aktiverer låsen ved å klikke **Datakobling**. Det vises en pil i øvre høyre hjørne. 
 
-[![Slå på låsen](./media/bpt15-1024x285.png)](./media/bpt15.png) 
+[![Slå på låsen.](./media/bpt15-1024x285.png)](./media/bpt15.png) 
 
 Klikk pilen for en åpne en tilleggsmeny. Velg **Lås**.
 
-### <a name="select-lockmediabpt16png"></a>[![Velg Lås](./media/bpt16-1024x614.png)](./media/bpt16.png)
+### <a name="select-lockmediabpt16png"></a>[![Velg Lås.](./media/bpt16-1024x614.png)](./media/bpt16.png)
 
 ### <a name="can-i-use-other-excel-features-like-cell-formatting-colors-conditional-formatting-and-charts-with-my-budget-plan-templates"></a>Kan jeg bruke andre Excel-funksjoner, som celleformatering, farger, betinget formatering og diagrammer, med mine budsjettplanmaler?
 

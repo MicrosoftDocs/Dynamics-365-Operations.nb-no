@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 7fbec962fea374afdbabaad48a42dad380708678
-ms.sourcegitcommit: dbffde1944b9d037124415c28053036c9ef1ecb7
+ms.openlocfilehash: 23b965bb51a4323164ae52bf70050133c9c9c9da
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "6295579"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344888"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Spore utførelse av ER-formater for å feilsøke ytelsesproblemer
 
@@ -56,14 +56,14 @@ Du må også laste ned og lagre følgende filer lokalt.
 
 Hver ER-ytelsessporing som genereres i programmet, lagres som et vedlegg til utførelsesloggposten. Dokumentbehandlingsrammeverket (DM) brukes til å administrere disse vedleggene. Du må konfigurere ER-parameterne på forhånd for å angi DM-dokumenttypen som skal brukes til å knytte ytelsesspor. I arbeidsområdet **Elektronisk rapportering** velger du **Parametere for elektronisk rapportering**. På siden **Parametere for elektronisk rapportering** i kategorien **Vedlegg** på siden **Andre** velger du deretter DM-dokumenttypen som skal brukes for ytelsessporinger.
 
-![Siden Parametere for elektronisk rapportering](./media/GER-PerfTrace-GER-Parameters-DocumentType.png)
+![Siden Parametere for elektronisk rapportering.](./media/GER-PerfTrace-GER-Parameters-DocumentType.png)
 
 For å være tilgjengelig i **Andre**-oppslagsfeltet må en DM-dokumenttype konfigureres på følgende måte på siden **Dokumenttyper** (**Organisasjonsstyring \> Dokumentstyring \> Dokumenttyper**):
 
 - **Klasse:** Tilknytt fil
 - **Gruppe:** Fil
 
-![Siden Dokumenttyper](./media/GER-PerfTrace-DM-DocumentType.png)
+![Siden Dokumenttyper.](./media/GER-PerfTrace-DM-DocumentType.png)
 
 > [!NOTE]
 > Den valgte dokumenttypen må være tilgjengelig i alle firmaer av gjeldende forekomst, fordi DM-vedlegg er firmaspesifikke.
@@ -72,7 +72,7 @@ For å være tilgjengelig i **Andre**-oppslagsfeltet må en DM-dokumenttype konf
 
 ER-ytelsessporinger som genereres, importeres til RCS for analyse ved hjelp av ER-formatdesigneren og ER-tilordningsdesigneren. Fordi ER-ytelsesspor lagres som vedlegg i utførelsesloggposten som er relatert til ER-formatet, må du konfigurere RCS-parametere på forhånd, for å angi DM-dokumenttypen som skal brukes for å knytte til ytelsessporinger. For RCS-forekomsten som er klargjort for ditt firma, går du til **Elektronisk rapportering** og velger **Parametere for elektronisk rapportering**. På siden **Parametere for elektronisk rapportering** i kategorien **Vedlegg** på siden **Andre** velger du deretter DM-dokumenttypen som skal brukes for ytelsessporinger.
 
-![Siden Parametere for elektronisk rapportering i RCS](./media/GER-PerfTrace-RCS-Parameters-DocumentType.png)
+![Siden Parametere for elektronisk rapportering i RCS.](./media/GER-PerfTrace-RCS-Parameters-DocumentType.png)
 
 For å være tilgjengelig i **Andre**-oppslagsfeltet må en DM-dokumenttype konfigureres på følgende måte på siden **Dokumenttyper** (**Organisasjonsstyring \> Dokumentstyring \> Dokumenttyper**):
 
@@ -92,7 +92,7 @@ Anta at du har begynt å utforme en ny ER-løsning for å generere en ny rapport
     2. Velg **Bla gjennom** for å velge den riktige filen for den nødvendige ER-konfigurasjonen i XML-format.
     3. Velg **OK**.
 
-    ![Siden Konfigurasjoner i RCS](./media/GER-PerfTrace-RCS-ImportedConfigurations.png)
+    ![Siden Konfigurasjoner i RCS.](./media/GER-PerfTrace-RCS-ImportedConfigurations.png)
 
 ## <a name="run-the-er-solution-to-trace-execution"></a>Kjør ER-løsningen for å spore kjøring
 
@@ -109,7 +109,7 @@ Anta at du er ferdig med å utforme den første versjonen av ER-løsningen. Nå 
     3. I hurtigfanen **Konfigurasjoner** velger du **Ytelsessporingsformat**- konfigurasjonen.
     4. I **Versjoner**-hurtigkategorien velger du versjon **1.1** av den valgte konfigurasjonen, og deretter velger du **Importer**.
 
-    ![Konfigurasjonsrepositorium-side](./media/GER-PerfTrace-GER-ImportedConfigurations.png)
+    ![Konfigurasjonsrepositorium-side.](./media/GER-PerfTrace-GER-ImportedConfigurations.png)
 
 De tilsvarende versjonene av konfigurasjonene for datamodell og modelltilordning importeres automatisk som forutsetninger for den importerte ER-formatkonfigurasjonen.
 
@@ -156,7 +156,7 @@ De tilsvarende versjonene av konfigurasjonene for datamodell og modelltilordning
     > [!NOTE]
     > Parameterne i dialogboksen **Brukerparametere** er spesifikke for brukeren og det gjeldende firmaet.
 
-    ![Dialogboksen Brukerparametere](./media/GER-PerfTrace-GER-UserParameters.png)
+    ![Dialogboksen Brukerparametere.](./media/GER-PerfTrace-GER-UserParameters.png)
 
 ### <a name="run-the-er-format"></a><a id='run-format'></a>Kjør ER-formatet
 
@@ -177,11 +177,11 @@ Ytelsessporinger kobles fra kilde-ER-formatet og kan serialiseres til en ekstern
 2. På siden **Kjøringslogger for elektronisk rapportering**, i venstre rute i feltet **Konfigurasjonsnavn**, velger du **Ytelsessporingsformat** for å finne loggpostene som er generert ved å utføre **Ytelsessporingsformat**.
 3. Velg **Vedlegg**-knappen (bindersikonet) i øvre høyre hjørne på siden, eller trykk på **Ctrl+Skift+A**.
 
-    ![Vedlegg-knappen på siden Kjøringslogger for elektronisk rapportering](./media/GER-PerfTrace-GER-DebugLog.png)
+    ![Vedlegg-knappen på siden Kjøringslogger for elektronisk rapportering.](./media/GER-PerfTrace-GER-DebugLog.png)
 
 4. På siden **Vedlegg for Kjøringslogger for elektronisk rapportering** velger du **Åpne** for å hente ytelsessporing som en zip-fil og lagre den lokalt.
 
-    ![Vedlegg for Kjøringslogger for elektronisk rapportering](./media/GER-PerfTrace-GER-DebugLog-AttachedTrace.png)
+    ![Vedlegg for Kjøringslogger for elektronisk rapportering.](./media/GER-PerfTrace-GER-DebugLog-AttachedTrace.png)
 
 > [!NOTE]
 > Sporingen som genereres, har en referanse til kilde-ER-rapporten via en unik rapport-ID bare i **GUID**-format. Versjonsnummereringen for formatet vurderes ikke.
@@ -198,7 +198,7 @@ Legg merke til at tilknytningen mellom ytelsessporingen som er generert for det 
 6. Velg **Bla gjennom** for å velge ZIP-filen du eksporterte tidligere.
 7. Velg **OK**.
 
-    ![Dialogboksen Resultatinnstillinger for ytelsessporing i RCS](./media/GER-PerfTrace-RCS-ImportedPerfTrace.png)
+    ![Dialogboksen Resultatinnstillinger for ytelsessporing i RCS.](./media/GER-PerfTrace-RCS-ImportedPerfTrace.png)
 
 ### <a name="use-the-performance-trace-for-analysis-in-rcs--format-execution"></a>Bruke ytelsessporing for analyse i RCS – Formatutførelse
 
@@ -209,7 +209,7 @@ Legg merke til at tilknytningen mellom ytelsessporingen som er generert for det 
     - Den faktiske tiden som ble brukt på å legge inn data i de genererte utdataene ved hjelp av formatvaren
     - Den samme tiden som prosent av den totale tiden som ble brukt til å generere hele utdataene
 
-    ![Formatutformingsside i RCS](./media/GER-PerfTrace-RCS-TraceInfoInFormat.png)
+    ![Formatutformingsside i RCS.](./media/GER-PerfTrace-RCS-TraceInfoInFormat.png)
 
 2. Lukk siden **Formatutforming**.
 
@@ -232,7 +232,7 @@ Legg merke til at ER informerer deg om at gjeldende modelltilordning dupliserer 
 - Det blir laget ett kall for å angi detaljer for hver transaksjon i datamodellen, basert på konfigurerte bindinger.
 - Det blir laget ett kall for å angi det beregnede antallet transaksjoner per leverandør i datamodellen.
 
-![Melding om dupliserte databaseforespørsler på siden Modelltilordningsutforming i RCS](./media/GER-PerfTrace-RCS-TraceInfoInMapping1.png)
+![Melding om dupliserte databaseforespørsler på siden Modelltilordningsutforming i RCS.](./media/GER-PerfTrace-RCS-TraceInfoInMapping1.png)
 
 Verdien **\[Q:530\]** angir at VendTrans-tabellen ble kalt 530 ganger for å returnere en post fra denne tabellen til VendTable/\<Relasjoner/VendTrans.VendTable\_AccountNum-datakilden. Verdien **\[530\]** angir at datakilden VendTable/\<Relasjoner/VendTrans.VendTable\_AccountNum ble kalt 530 ganger for å returnere en post fra den datakilden og angi detaljer fra den i datamodellen.
 
@@ -240,7 +240,7 @@ Vi anbefaler at du bruker hurtigbufring for datakilden VendTable/\<Relasjoner/Ve
 
 Det kan også være nyttig å redusere antall kall som gjøres til datakilden for LedgerTransTypeList-datakilden. Denne datakilden brukes til å knytte hver verdi for **LedgerTransType**-opplistingen til etiketten. Ved hjelp av denne datakilden kan du finne en passende etikett og angi den i datamodellen for hver leverandørtransaksjon. Gjeldende antall kall til denne datakilden (9027) er ganske høy for 265 transaksjoner.
 
-![Siden Modelltilordningsutforming i RCS som viser 9027 kall til datakilden](./media/GER-PerfTrace-RCS-TraceInfoInMapping1a.png)
+![Siden Modelltilordningsutforming i RCS som viser 9027 kall til datakilden.](./media/GER-PerfTrace-RCS-TraceInfoInMapping1a.png)
 
 ## <a name="improve-the-model-mapping-based-on-information-from-the-execution-trace"></a>Forbedre modelltilordningen basert på informasjon fra kjøringssporingen
 
@@ -253,7 +253,7 @@ Det kan også være nyttig å redusere antall kall som gjøres til datakilden fo
     3. Utvid elementet **VendTable**, utvid listen med en-til-mange-relasjoner for datakilden VendTable (**\<Relasjoner**-elementet), og velg elementet **VendTrans.VendTable\_AccountNum**.
     4. Velg **Hurtigbuffer**.
 
-    ![Hurtigbufre installasjonen for å hindre dupliserte kall](./media/GER-PerfTrace-RCS-ChangeMapping-Cache.png)
+    ![Hurtigbufre installasjonen for å hindre dupliserte kall.](./media/GER-PerfTrace-RCS-ChangeMapping-Cache.png)
 
 2. Følg disse trinnene for å hente LedgerTransTypeList-datakilden til området for VendTable-datakilden:
 
@@ -274,7 +274,7 @@ Det kan også være nyttig å redusere antall kall som gjøres til datakilden fo
     3. Velg **VendTable.\$TransType**-elementet.
     4. Velg **Hurtigbuffer**.
 
-    ![Bufre oppsett av $TransType-feltet](./media/GER-PerfTrace-RCS-ChangeMapping-Cache2.png)
+    ![Bufre oppsett av $TransType-feltet.](./media/GER-PerfTrace-RCS-ChangeMapping-Cache2.png)
 
 4. Følg disse trinnene for å endre feltet **\$TransTypeRecord**, slik at det begynner å bruke det hurtigbufrede feltet **\$TransType**:
 
@@ -329,19 +329,19 @@ Gjenta trinnene i delen [Bruke ytelsessporing for analyse i RCS – modelltilord
 
 Legg merke til at justeringene du har gjort i modelltilordningen, har eliminert duplikate spørringer til databasen. Antall kall til databasetabeller og datakilder for denne modelltilordningen er også redusert. Derfor har ytelsen til hele ER-løsningen blitt forbedret.
 
-![Sporingsinformasjon for VendTable-datakilden på siden Modelltilordningsutforming i RCS](./media/GER-PerfTrace-RCS-TraceInfoInMapping2.png)
+![Sporingsinformasjon for VendTable-datakilden på siden Modelltilordningsutforming i RCS.](./media/GER-PerfTrace-RCS-TraceInfoInMapping2.png)
 
 I sporingsinformasjonen angir verdien **\[12\]** for VendTable-datakilden at denne datakilden ble kalt 12 ganger. Verdien **\[Q:6\]** angir at seks samtaler ble oversatt til databasekall til tabellen VendTable. Verdien **\[C:6\]** angir at postene som ble hentet fra databasen, ble bufret, og at seks andre kall ble behandlet ved hjelp av hurtigbufferen.
 
 Legg merke til at antall kall til LedgerTransTypeList-datakilden er redusert fra 9027 til 240.
 
-![Sporingsinformasjon for LedgerTransTypeList-datakilden på siden Modelltilordningsutforming i RCS](./media/GER-PerfTrace-RCS-TraceInfoInMapping2a.png)
+![Sporingsinformasjon for LedgerTransTypeList-datakilden på siden Modelltilordningsutforming i RCS.](./media/GER-PerfTrace-RCS-TraceInfoInMapping2a.png)
 
 ## <a name="review-the-execution-trace-in-the-application"></a>Se gjennom utførelsessporingen i programmet
 
 I tillegg til RCS kan enkelte versjoner tilby funksjoner for en ER-rammeverkutformingsopplevelse. Disse versjonene har alternativet **Aktiver utformingsmodus** som kan aktiveres. Du finner dette alternativet i kategorien **Generelt** på siden **Parametere for elektronisk rapportering**, som du kan åpne fra arbeidsområdet **Elektronisk rapportering**.
 
-![Alternativet Aktiver utformingsmodus på siden Parametere for elektronisk rapportering](./media/GER-PerfTrace-GER-Parameters-DesignMode.png)
+![Alternativet Aktiver utformingsmodus på siden Parametere for elektronisk rapportering.](./media/GER-PerfTrace-GER-Parameters-DesignMode.png)
 
 Hvis du bruker en av disse versjonene, kan du analysere detaljene for genererte ytelsessporinger direkte i programmet. Du trenger ikke å eksportere dem fra programmet og importere dem til RCS.
 
@@ -359,7 +359,7 @@ Gjenta trinnene i delen [Kjør ER-formatet](#run-format) tidligere i dette emnet
 
 Legg merke til at nettleseren tilbyr en zip-fil for nedlasting. Denne filen inneholder ytelsessporingen i PerfView-format. Du kan deretter bruke verktøyet for PerfView-ytelsesanalyse til å analysere detaljene i ER-formatkjøringen.
 
-![Informasjon om ytelsessporing i PerfView-format](./media/GER-PerfTrace2-PerfViewTrace1.PNG)
+![Informasjon om ytelsessporing i PerfView-format.](./media/GER-PerfTrace2-PerfViewTrace1.PNG)
 
 ## <a name="use-external-tools-to-review-an-execution-trace-that-includes-database-queries"></a>Bruke eksterne verktøy til å se gjennom en utførelsessporing som inneholder databasespørringer
 
@@ -375,7 +375,7 @@ På grunn av forbedringer i ER-rammeverket gir ytelsessporingen som genereres i 
     - Sett alternativet **Samle inn spørringsstatistikk** til **Ja**.
     - Sett alternativet **Spor spørring** til **Ja**.
 
-    ![Delen Utføringssporing, dialogboksen Brukerparametere](./media/GER-PerfTrace2-GER-UserParameters.PNG)
+    ![Delen Utføringssporing, dialogboksen Brukerparametere.](./media/GER-PerfTrace2-GER-UserParameters.PNG)
 
 ### <a name="run-the-er-format"></a>Kjøre ER-formatet
 
@@ -383,7 +383,7 @@ Gjenta trinnene i delen [Kjør ER-formatet](#run-format) tidligere i dette emnet
 
 Legg merke til at nettleseren tilbyr en zip-fil for nedlasting. Denne filen inneholder ytelsessporingen i PerfView-format. Du kan deretter bruke verktøyet for PerfView-ytelsesanalyse til å analysere detaljene i ER-formatkjøringen. Denne sporingen inneholder nå detaljene for tilgang til SQL-database under utførelsen av ER-formatet.
 
-![Sporingsinformasjon for det utførte ER-formatet i PerfView](./media/GER-PerfTrace2-PerfViewTrace2.PNG)
+![Sporingsinformasjon for det utførte ER-formatet i PerfView.](./media/GER-PerfTrace2-PerfViewTrace2.PNG)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

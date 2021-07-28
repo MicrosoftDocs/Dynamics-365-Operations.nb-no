@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: a8609cb026e7738eab96980bc9fe4a53340272eb
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: e4245f5951cc4891b378f2343a1563ced33bc937
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743587"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345846"
 ---
 # <a name="trace-generated-report-results-and-compare-them-with-baseline-values"></a>Spore genererte rapportresultater og sammenligne dem med basisverdier
 
@@ -52,7 +52,7 @@ For å kunne fullføre trinnene i dette eksemplet må du først fullføre trinne
 2. I **Klasse**-feltet angir du **Tilknytt fil**.
 3. I **Gruppe**-feltet angir du **Fil**.
 
-![Siden Dokumenttyper](media/GER-BaselineSample-SetupDocumentType.PNG "Skjermbilde av siden Dokumenttyper")
+![Siden Dokumenttyper.](media/GER-BaselineSample-SetupDocumentType.PNG "Skjermbilde av siden Dokumenttyper")
 
 > [!NOTE]
 > Du må konfigurere en ny dokumenttype som har det samme navnet, for hvert datasett der du planlegger å bruke ER-grunnlinjefunksjonen.
@@ -61,11 +61,11 @@ For å kunne fullføre trinnene i dette eksemplet må du først fullføre trinne
 
 1. I delen **Relaterte koblinger** i arbeidsområdet **Elektronisk rapportering** velger du **Parametere for elektronisk rapportering**.
 
-    ![Arbeidsområdet Elektronisk rapportering](media/GER-BaselineSample-ERWorkspace.PNG "Skjermbilde av siden arbeidsområdet Elektronisk rapportering")
+    ![Arbeidsområdet Elektronisk rapportering.](media/GER-BaselineSample-ERWorkspace.PNG "Skjermbilde av siden arbeidsområdet Elektronisk rapportering")
 
 2. I **Grunnlinje**-feltet i **Vedlegg**-fanen angir eller velger du dokumenttypen du nettopp opprettet.
 
-    ![Vedlegg-kategorien på siden Parametere for elektronisk rapportering](media/GER-BaselineSample-ERParameters.PNG "Skjermbilde av siden Parametere for elektronisk rapportering")
+    ![Vedlegg-kategorien på siden Parametere for elektronisk rapportering.](media/GER-BaselineSample-ERParameters.PNG "Skjermbilde av siden Parametere for elektronisk rapportering")
 
 3. Velg **Lagre**, og lukk deretter siden **Parametere for elektronisk rapportering**.
 
@@ -76,7 +76,7 @@ For å kunne fullføre trinnene i dette eksemplet må du først fullføre trinne
 3. Skriv inn **Modell for å lære ER-grunnlinjer** i **Navn**-feltet i rullegardinboksen.
 4. Velg **Opprett konfigurasjon** for å bekrefte opprettelsen av en ny ER-datamodelloppføring.
 
-![Rullegardinlisten Opprett konfigurasjon](media/GER-BaselineSample-ModelAdd.PNG "Skjermbilde av Rullegardinlisten Opprett konfigurasjon")
+![Rullegardinlisten Opprett konfigurasjon.](media/GER-BaselineSample-ModelAdd.PNG "Skjermbilde av Rullegardinlisten Opprett konfigurasjon")
 
 ### <a name="design-a-data-model"></a>Utforme en datamodell
 
@@ -90,7 +90,7 @@ For å kunne fullføre trinnene i dette eksemplet må du først fullføre trinne
 8. Velg **Endre status**.
 9. Velg **Fullfør**, og velg deretter **OK**.
 
-![Siden Konfigurasjoner](media/GER-BaselineSample-ModelComplete.PNG "Skjermbilde av Konfigurasjoner-siden")
+![Siden Konfigurasjoner.](media/GER-BaselineSample-ModelComplete.PNG "Skjermbilde av Konfigurasjoner-siden")
 
 ### <a name="add-a-new-er-format-configuration"></a>Legg til en ny ER-formatkonfigurasjon
 
@@ -99,7 +99,7 @@ For å kunne fullføre trinnene i dette eksemplet må du først fullføre trinne
 3. I **Navn**-feltet angir du **Format for å lære ER-grunnlinjer**.
 4. Velg **Opprett konfigurasjon** for å bekrefte opprettelsen av en ny ER-formatoppføring.
 
-![Rullegardinlisten Opprett konfigurasjon](media/GER-BaselineSample-FormatAdd.PNG "Skjermbilde av Rullegardinlisten Opprett konfigurasjon")
+![Rullegardinlisten Opprett konfigurasjon.](media/GER-BaselineSample-FormatAdd.PNG "Skjermbilde av Rullegardinlisten Opprett konfigurasjon")
 
 ### <a name="design-a-format"></a>Utforme et format
 
@@ -128,7 +128,7 @@ I dette eksemplet skal du opprette et enkelt ER-format for å generere XML-dokum
     2. Angi **ID** i **Navn**-feltet.
     3. Velg **OK**.
 
-    ![Formatutformingsside](media/GER-BaselineSample-FormatLayoutDesign.PNG "Skjermbilde av siden Formatutforming")
+    ![Formatutformingsside.](media/GER-BaselineSample-FormatLayoutDesign.PNG "Skjermbilde av siden Formatutforming")
 
 8. Velg **Slett** i **Tilordning**-fanen.
 9. Velg **Legg til rot**.
@@ -141,7 +141,7 @@ I dette eksemplet skal du opprette et enkelt ER-format for å generere XML-dokum
 11. Velg **Utdata\\Dokument\\ID** i treet.
 12. Velg **Bind**, og velg deretter **Lagre**.
 
-![Formatutformingsside](media/GER-BaselineSample-FormatMappingDesign.PNG "Skjermbilde av siden Formatutforming")
+![Formatutformingsside.](media/GER-BaselineSample-FormatMappingDesign.PNG "Skjermbilde av siden Formatutforming")
 
 Det konfigurerte formatet genererer en XML-fil basert på den utformede strukturen. Denne XML-filen inneholder **Rot**-elementet som har **ID**-attributtet som er satt til verdien brukeren angir i dialogboksen for ER-kjøretid.
 
@@ -151,11 +151,11 @@ Det konfigurerte formatet genererer en XML-fil basert på den utformede struktur
 2. Angi **1** i **Angi ID**-feltet.
 3. Velg **OK**.
 
-    ![Dialogboksen Parametere for elektronisk rapport](media/GER-BaselineSample-FormatRunToMakeBaselineFile1.PNG "Skjermbilde av dialogboksen Parametere for elektronisk rapport")
+    ![Dialogboksen Parametere for elektronisk rapport.](media/GER-BaselineSample-FormatRunToMakeBaselineFile1.PNG "Skjermbilde av dialogboksen Parametere for elektronisk rapport")
 
 4. Lagre en lokal kopi av filen **out.Admin.xml** som genereres, slik at du kan bruke den senere som en grunnlinje for dette ER-formatet.
 
-    ![Varsling om den genererte filen på Konfigurasjoner-siden](media/GER-BaselineSample-FormatRunToMakeBaselineFile2.PNG "Skjermbilde av varslingen om den genererte filen på Konfigurasjoner-siden")
+    ![Varsling om den genererte filen på Konfigurasjoner-siden.](media/GER-BaselineSample-FormatRunToMakeBaselineFile2.PNG "Skjermbilde av varslingen om den genererte filen på Konfigurasjoner-siden")
 
 ### <a name="configure-er-parameters-to-use-the-baseline-feature"></a>Konfigurere ER-parametere for å bruke grunnlinjefunksjonen
 
@@ -163,20 +163,20 @@ Det konfigurerte formatet genererer en XML-fil basert på den utformede struktur
 2. Sett alternativet **Kjør i feilsøkingsmodus** til **Ja**.
 3. Velg **OK**.
 
-![Dialogboksen Brukerparametere](media/GER-BaselineSample-ERUserParameters.PNG "Skjermbilde av dialogboksen Brukerparametere")
+![Dialogboksen Brukerparametere.](media/GER-BaselineSample-ERUserParameters.PNG "Skjermbilde av dialogboksen Brukerparametere")
 
 ### <a name="add-a-new-baseline-for-designed-er-format"></a>Legge til en ny grunnlinje for utformet ER-format
 
 1. Gå til **Organisasjonsstyring** \> **Elektronisk rapportering** \> **Konfigurasjoner**.
 2. Velg **Grunnlinjer** i handlingsruten.
 
-    ![Skjermbilde av Grunnlinjer-knapper på Konfigurasjoner-siden](media/GER-BaselineSample-OpenBaselinePage.PNG "Skjermbilde av Grunnlinjer-knapen på Konfigurasjoner-siden")
+    ![Skjermbilde av Grunnlinjer-knapper på Konfigurasjoner-siden.](media/GER-BaselineSample-OpenBaselinePage.PNG "Skjermbilde av Grunnlinjer-knapen på Konfigurasjoner-siden")
 
 3. Velg **Ny** i handlingsruten.
 4. Velg ER-formatet **Format for å lære ER-grunnlinjer** du utformet tidligere.
 5. Velg **Lagre**.
 
-![Siden Grunnlinjer for elektronisk rapporteringsformat](media/GER-BaselineSample-AddBaseline.PNG "Skjermbilde av siden Grunnlinjer for elektronisk rapporteringsformat")
+![Siden Grunnlinjer for elektronisk rapporteringsformat.](media/GER-BaselineSample-AddBaseline.PNG "Skjermbilde av siden Grunnlinjer for elektronisk rapporteringsformat")
 
 Grunnlinjen legges til for formatet **Format for å lære ER-grunnlinjer**.
 
@@ -186,7 +186,7 @@ Grunnlinjen legges til for formatet **Format for å lære ER-grunnlinjer**.
 2. Velg **Ny** \> **Fil** i handlingsruten. I ER-parameterne skal dokumenttypen **Fil** tidligere ha vært valgt som dokumenttypen som brukes til å lagre grunnlinjefiler.
 3. Velg **Bla gjennom**, og velg filen **out.Admin.xml** som ble generert da du kjørte det konfigurerte ER-formatet tidligere.
 
-    ![Vedlegg-siden](media/GER-BaselineSample-UploadBaselineFile.PNG "Skjermbilde av Vedlegg-siden")
+    ![Vedlegg-siden.](media/GER-BaselineSample-UploadBaselineFile.PNG "Skjermbilde av Vedlegg-siden")
 
 4. Lukk **Vedlegg**-siden.
 5. Velg **Ny** i hurtigfanen **Grunnlinjer**.
@@ -201,7 +201,7 @@ Grunnlinjen legges til for formatet **Format for å lære ER-grunnlinjer**.
 10. I **Grunnlinje**-feltet angir eller velger du vedlegget **out.Admin**.
 11. Velg **Lagre**.
 
-![Siden Grunnlinjer for elektronisk rapporteringsformat](media/GER-BaselineSample-SetupBaselineLine.PNG "Skjermbilde av siden Grunnlinjer for elektronisk rapporteringsformat")
+![Siden Grunnlinjer for elektronisk rapporteringsformat.](media/GER-BaselineSample-SetupBaselineLine.PNG "Skjermbilde av siden Grunnlinjer for elektronisk rapporteringsformat")
 
 ### <a name="run-the-designed-er-format-and-review-the-log-to-analyze-the-results"></a>Kjøre det utformede ER-formatet og se gjennom loggen for å analysere resultatene
 
@@ -212,7 +212,7 @@ Grunnlinjen legges til for formatet **Format for å lære ER-grunnlinjer**.
 5. Velg **OK**.
 6. Gå til **Organisasjonsstyring** \> **Elektronisk rapportering** \> **Feilsøkingslogger for konfigurasjon**.
 
-    ![Siden Kjøringslogger for elektronisk rapportering](media/GER-BaselineSample-ReviewBaselineComparison1.PNG "Skjermbilde av siden Kjøringslogger for elektronisk rapportering")
+    ![Siden Kjøringslogger for elektronisk rapportering.](media/GER-BaselineSample-ReviewBaselineComparison1.PNG "Skjermbilde av siden Kjøringslogger for elektronisk rapportering")
 
     > [!NOTE]
     > Utførelsesloggen inneholder informasjon om resultatene av sammenligningen av den genererte filen med den konfigurerte grunnlinjen. I dette eksemplet angir loggen at den genererte filen og grunnlinjen er like.
@@ -228,7 +228,7 @@ Grunnlinjen legges til for formatet **Format for å lære ER-grunnlinjer**.
 5. Velg **OK**.
 6. Gå til **Organisasjonsstyring** \> **Elektronisk rapportering** \> **Feilsøkingslogger for konfigurasjon**.
 
-    ![Siden Kjøringslogger for elektronisk rapportering](media/GER-BaselineSample-ReviewBaselineComparison2.PNG "Skjermbilde av siden Kjøringslogger for elektronisk rapportering")
+    ![Siden Kjøringslogger for elektronisk rapportering.](media/GER-BaselineSample-ReviewBaselineComparison2.PNG "Skjermbilde av siden Kjøringslogger for elektronisk rapportering")
 
     > [!NOTE]
     > Utførelsesloggen inneholder informasjon om resultatene av sammenligningen av den genererte filen med den konfigurerte grunnlinjen. I dette eksemplet angir loggen at den genererte filen og grunnlinjen er forskjellige.

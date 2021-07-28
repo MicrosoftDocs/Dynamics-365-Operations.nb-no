@@ -16,12 +16,12 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: Application update 10.0.9
-ms.openlocfilehash: cabce32a43e55f3a3f19bc2d78547d9bab0d89a2
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a08d14369057ceb9b23e9d6f9a79847c6175f88e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792055"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345088"
 ---
 # <a name="reset-receipt-numbers"></a>Tilbakestille kvitteringsnumre 
 
@@ -55,7 +55,7 @@ Følg denne fremgangsmåten for å aktivere tilbakestilling.
 1. I feltet **Type tilbakestilling av kvittering** velger du **Bare én gang** eller **Årlig**.
 1. Velg **OK**.
 
-![Velge en dato for tilbakestilling av kvittering](media/Enable_receipt_reset.png "Velge en dato for tilbakestilling av kvittering")
+![Velge en dato for tilbakestilling av kvittering.](media/Enable_receipt_reset.png "Velge en dato for tilbakestilling av kvittering")
 
 Når du har valgt en dato, vises den i kolonnen **Neste tilbakestillingsdato for kvitteringsnummer**. Tilbakestillingsdatoen gjelder for alle kvitteringstransaksjonstyper. Derfor vil kvitteringsnummerserien bli tilbakestilt for alle kvitteringstyper.
 

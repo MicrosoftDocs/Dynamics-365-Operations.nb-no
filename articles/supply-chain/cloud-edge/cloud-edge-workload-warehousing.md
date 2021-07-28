@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 30ccdf45d4993e9803f86025f8e789d4f75f64dc
-ms.sourcegitcommit: 8d50c905a0c9d4347519549b587bdebab8ffc628
+ms.openlocfilehash: dc065684952cbbe2a324b766dc8c465371cdb49d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "6184028"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345506"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Skalaenheter for sky og kant for arbeidsbelastninger for lagerstyring
 
@@ -73,7 +73,7 @@ Senteret eier følgende data:
 
 Skalaenhetene eier den faktiske bølgebehandlingen (for eksempel arbeidsfordeling, etterfyllingsarbeid og oppretting av behovsbetinget arbeid) etter frigivelsen av bølgen. Derfor kan lagerarbeidere behandle utgående arbeid ved å bruke en Lagerstyring-mobilapp som er knyttet til skalaenheten.
 
-![Bølgebehandlingsflyt](./media/wes-wave-processing-ga.png "Bølgebehandlingsflyt")
+![Bølgebehandlingsflyt.](./media/wes-wave-processing-ga.png "Bølgebehandlingsflyt")
 
 ### <a name="process-work-and-ship"></a>Behandle arbeid og forsendelse
 
@@ -81,7 +81,7 @@ Så snart den endelige arbeidsprosessen har plassert lageret på et endelig fors
 
 Så snart senteret har oppdatert transaksjonene til *Plukket*, kan den behandle den utgående forsendelsesbekreftelsen og den tilknyttede salgsfølgeseddelen eller overføringsordreforsendelsen for lasten.
 
-![Utgående prosessflyt](./media/WES-outbound-processing-19.png "Utgående prosessflyt")
+![Utgående prosessflyt.](./media/WES-outbound-processing-19.png "Utgående prosessflyt")
 
 ## <a name="inbound-process-flow"></a>Inngående prosessflyt
 
@@ -107,11 +107,11 @@ Arbeideren kan kjøre mottaksprosessen ved å bruke en Lagerstyring-mobilapp som
 
 Hvis du ikke bruker prosessen *frigivelsen til lager*, og dermed ikke bruker *lagerordrer*, kan senteret behandle lagermottak og arbeidsbehandling uavhengig av skalaenheter.
 
-![Inngående prosessflyt](./media/wes-inbound-ga.png "Inngående prosessflyt")
+![Inngående prosessflyt.](./media/wes-inbound-ga.png "Inngående prosessflyt")
 
 Når du utfører innkommende registrering via en lagerappmottaksprosess mot lagerordren for skaleringsenhet, vil arbeidsmengden i skalaenheten gi signal om oppdatering av de relaterte bestillingslinjetransaksjonene til *Registrert*. Så snart dette er fullført, kan du kjøre en produktkvittering for bestilling i senteret.
 
-![Innkommende prosessflyt](./media/WES-inbound-processing-19.png "Innkommende prosessflyt")
+![Innkommende prosessflyt.](./media/WES-inbound-processing-19.png "Innkommende prosessflyt")
 
 ## <a name="supported-processes-and-roles"></a>Prosesser og roller som støttes
 
