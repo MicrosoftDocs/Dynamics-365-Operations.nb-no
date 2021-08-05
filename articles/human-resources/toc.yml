@@ -5,6 +5,8 @@
       items:
         - name: Nyheter eller endringer i Human Resources
           href: hr-admin-whats-new.md
+        - name: 12. juli 2021
+          href: hr-whats-new-2021-07-12.md
         - name: 22. juni 2021
           href: hr-whats-new-2021-06-22.md
         - name: 20. mai 2021
@@ -251,10 +253,12 @@
               href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/human-resources/toc.json
         - name: Human Resources-app i Teams
           href: hr-admin-teams-leave-app.md
-        - name: Klargjøre for aktivering
+        - name: Klargjør for aktivering
           href: hr-admin-go-live-prepare.md
         - name: Vanlige spørsmål om aktivering
           href: hr-admin-go-live-faq.md
+        - name: Vanlige spørsmål om Human Resources-infrastruktursammenslåing
+          href: hr-infrastructure-merge-faq.md
         - name: Dokumentasjonsressurser
           items:
             - name: Hjelpesystem
@@ -687,11 +691,13 @@
               href: hr-compensation-enroll-employees-fixed.md
             - name: Registrere ansatte i en variabel kompensasjonsplan
               href: hr-compensation-enroll-employees-variable.md
-            - name: Definere kompensasjonsprosess og beregne resultater
+            - name: Definer kompensasjonsprosess og beregn resultater
               href: hr-compensation-define-process.md
             - name: Behandle kompensasjonsplaner
               href: hr-compensation-process.md
-        - name: Administrere fordeler
+            - name: Merk en ansatt som Klar til betaling
+              href: hr-compensation-payroll.md
+        - name: Administrer fordeler
           items:
             - name: Fordelsbehandling
               items:
@@ -709,21 +715,21 @@
                       href: hr-benefits-setup-eligibility-rules.md
                     - name: Konfigurere alternativer for personlige kontaktrettigheter
                       href: hr-benefits-setup-contact-eligibility-options.md
-                    - name: Opprette dekningsalternativer
+                    - name: Opprett dekningsalternativer
                       href: hr-benefits-setup-coverage-options.md
-                    - name: Definere betalingshyppigheter
+                    - name: Definer betalingshyppigheter
                       href: hr-benefits-setup-payment-frequencies.md
-                    - name: Konfigurere hendelsestyper for levetid
+                    - name: Konfigurer hendelsestyper for levetid
                       href: hr-benefits-setup-life-event-types.md
-                    - name: Opprette plantyper
+                    - name: Oversikt over plantype
                       href: hr-benefits-setup-plan-types.md
                     - name: Definer årsakskoder
                       href: hr-benefits-setup-reason-codes.md
-                    - name: Definere lagkoder
+                    - name: Definer lagkoder
                       href: hr-benefits-setup-tier-codes.md
-                    - name: Konfigurere satser
+                    - name: Konfigurer satser
                       href: hr-benefits-setup-rates.md
-                    - name: Konfigurere fradrag
+                    - name: Konfigurer fradrag
                       href: hr-benefits-setup-deductions.md
                     - name: Konfigurere ventedager
                       href: hr-benefits-setup-waiting-days.md
@@ -801,15 +807,17 @@
               href: hr-leave-and-absence-manage-employee-leave.md
             - name: Vise analyse for permisjon og fravær
               href: hr-leave-and-absence-analytics.md
-            - name: Administrere forespørsler om permisjon og fravær
+            - name: Administrer forespørsler om permisjon og fravær
               href: hr-employee-self-service-manage-requests.md
-            - name: Be om fridager
+            - name: Be om fritid
               href: hr-employee-self-service-request-time-off.md
-            - name: Vise team- og firmakalendere
+            - name: Vis team- og firmakalendere
               href: hr-employee-self-service-calendar.md
-            - name: Administrere policyer for kjøp og salg av permisjon
+            - name: Konfigurer fraværsbehandlingsrollen
+              href: hr-configure-absence-manager.md
+            - name: Administrer policyer for kjøp og salg av permisjon
               href: hr-leave-and-absence-manage-buy-and-sell-leave-policies.md
-            - name: Opprette arbeidsflyter for kjøps- og salgspermisjon
+            - name: Opprett arbeidsflyter for kjøps- og salgspermisjon
               href: hr-leave-and-absence-buy-sell-workflow.md
             - name: Kjøpe og selge permisjon
               href: hr-employee-self-service-buy-sell-leave.md

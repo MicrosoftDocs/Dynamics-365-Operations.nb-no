@@ -76,8 +76,6 @@
                       href: get-started/whats-new-changed-10-0-20.md
                     - name: Finance 10.0.19 (juni 2021)
                       href: get-started/whats-new-changed-10-0-19.md
-                    - name: Finance 10.0.18 (mai 2021)
-                      href: get-started/whats-new-changed-10-0-17.md
             - name: Funksjoner som er fjernet eller avskrevet
               items:
                 - name: Funksjoner som er fjernet eller avskrevet på startsiden
@@ -184,7 +182,7 @@
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/finance/toc.json
                 - name: Miljøplanlegging
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/finance/toc.json
-                - name: Klargjøre for aktivering
+                - name: Klargjør for aktivering
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/finance/toc.json
                 - name: Vanlige spørsmål om aktivering
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/finance/toc.json
@@ -1566,6 +1564,8 @@
                   href: localizations/emea-aut-vat-statement-details.md
                 - name: Rapport for tjenester over grenser
                   href: localizations/emea-aut-cross-border-services-report.md
+                - name: Innkjøpsavgifter
+                  href: localizations/emea-aut-purchase-duties.md
             - name: Bahrain
               items:
                 - name: Oversikt over Bahrain
@@ -1990,8 +1990,12 @@
                       href: localizations/tasks/transfer-transactions-intrastat.md
                     - name: Angi en lasteadresse for en fellesskapstransaksjon
                       href: localizations/tasks/eur-00002-specify-lading-address-intra-community.md
-                    - name: Generere en Intrastat-deklarering for EU
+                    - name: Generer en Intrastat-deklarering for EU
                       href: localizations/tasks/eur-00002-eu-intrastat-declaration.md
+                    - name: Fransk Intrastat
+                      href: localizations/emea-fra-intrastat.md
+                    - name: Italiensk Intrastat
+                      href: localizations/emea-ita-intrastat.md
                 - name: Lagerjournalrapporter
                   href: localizations/emea-set-up-report-inventory-journal-names.md
                 - name: Tidsfrister for utstedelse av faktura
@@ -2964,10 +2968,16 @@
                   href: localizations/emea-pol-interest-calculation.md
                 - name: Omsetnings- og saldoutdrag
                   href: localizations/emea-pol-turnover-balances-statement.md
-                - name: Dele kursforskjell for leverandør/kunde
+                - name: Del kursforskjell for leverandør/kunde
                   href: localizations/emea-pol-split-ap-ar-exchange-difference.md
-                - name: 'MVA-deklarering med registre (JPK_V7M, VDEK)'
+                - name: 'Mva-deklarering med registre (JPK_V7M, VDEK)'
                   href: localizations/emea-pol-vdek.md
+                - name: Klargjør for JPK-V7M-rapportering
+                  href: localizations/emea-pol-vdek-setup.md
+                - name: JPK-V7M-rapportering
+                  href: localizations/emea-pol-vdek-reporting.md
+                - name: Detaljer om bestemte forretningsscenarioer i JPK-V7M-rapporten
+                  href: localizations/emea-pol-vdek-scenarios.md
             - name: Qatar
               items:
                 - name: Oversikt over Qatar
@@ -3204,6 +3214,8 @@
                       href: localizations/rus-accounts-payable-debt-tax-registers-and-debt-write-offs.md
                     - name: Ugyldige gjeldsreserver i kunder
                       href: localizations/rus-bad-debts.md
+                    - name: Beregning av avgiftsaktivum og skattegjeldsregistre
+                      href: localizations/rus-calculation-tax-asset-tax-liability-registers.md
             - name: Saudi-Arabia
               items:
                 - name: Oversikt over Saudi-Arabia
@@ -3424,11 +3436,11 @@
                   href: ../human-resources/hr-compensation-enroll-employees-fixed.md?toc=/dynamics365/finance/toc.json
                 - name: Registrere ansatte i en variabel kompensasjonsplan
                   href: ../human-resources/hr-compensation-enroll-employees-variable.md?toc=/dynamics365/finance/toc.json
-                - name: Definere kompensasjonsprosess og beregne resultater
+                - name: Definer kompensasjonsprosess og beregn resultater
                   href: ../human-resources/hr-compensation-define-process.md?toc=/dynamics365/finance/toc.json
                 - name: Behandle kompensasjonsplaner
                   href: ../human-resources/hr-compensation-process.md?toc=/dynamics365/finance/toc.json
-            - name: Administrere fordeler
+            - name: Administrer fordeler
               items:
                 - name: Definere og administrere et fordelsprogram
                   href: ../human-resources/hr-benefits-manage-program.md?toc=/dynamics365/finance/toc.json
@@ -3995,9 +4007,11 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/dynamics365/finance/toc.json
                         - name: Gå gjennom konfigurasjoner for å generere rapporter i Office-formatene som har innebygde bilder
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/finance/toc.json
-                        - name: Generere rapporter i Office-formater som har innebygde bilder
+                        - name: Generer rapporter i Office-formater som har innebygde bilder
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/finance/toc.json
-                - name: Dele opp genererte XML-filer basert på filstørrelse og innholdsmengde
+                    - name: Utforme et ER-format for å generere en rapport i Excel med innebygde bilder i topptekster og bunntekster
+                      href: ../fin-ops-core/dev-itpro/analytics/er-embed-images-header-footer-excel-reports.md?toc=/dynamics365/finance/toc.json
+                - name: Del opp genererte XML-filer basert på filstørrelse og innholdsmengde
                   href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/finance/toc.json
                 - name: Skjule stykklistetegn i genererte filer
                   href: ../fin-ops-core/dev-itpro/analytics/er-suppress-bom-characters.md?toc=/dynamics365/finance/toc.json

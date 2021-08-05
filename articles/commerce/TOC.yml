@@ -98,8 +98,6 @@
                       href: get-started/whats-new-commerce-10-0-20.md
                     - name: Commerce 10.0.19 (juni 2021)
                       href: get-started/whats-new-commerce-10-0-19.md
-                    - name: Commerce 10.0.18 (mai 2021)
-                      href: get-started/whats-new-commerce-10-0-18.md
                 - name: Funksjoner som er fjernet eller avskrevet
                   items:
                     - name: Funksjoner som er fjernet eller avskrevet på startsiden
@@ -206,7 +204,7 @@
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/commerce/toc.json
                 - name: Miljøplanlegging
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/commerce/toc.json
-                - name: Klargjøre for aktivering
+                - name: Klargjør for aktivering
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/commerce/toc.json
                 - name: Vanlige spørsmål om aktivering
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/commerce/toc.json
@@ -896,11 +894,13 @@
                   href: manage-robots-txt-files.md
                 - name: Laste opp masseomdirigeringer for URL-adresse
                   href: upload-bulk-redirects.md
-                - name: Konfigurere en B2C-leier i Commerce
+                - name: Konfigurer en B2C-leier i Commerce
                   href: set-up-B2C-tenant.md
-                - name: Definere egendefinerte sider for brukerpålogginger
+                - name: Definer egendefinerte sider for brukerpålogginger
                   href: custom-pages-user-logins.md
-                - name: Konfigurere flere B2C-leiere i et Commerce-miljø
+                - name: Aktiver automatisk kobling av identitetsposter til kundekontoer
+                  href: identity-record-linking.md
+                - name: Konfigurer flere B2C-leiere i et Commerce-miljø
                   href: configure-multi-B2C-tenants.md
                 - name: Domener i Dynamics 365 Commerce
                   href: domains-commerce.md
@@ -1016,12 +1016,14 @@
                   items:
                     - name: Tilpass områdenavigering
                       href: customize-site-navigation.md
-                    - name: Opprett en URL-adresse for side
+                    - name: Opprett en nettadresse for side
                       href: create-page-URL.md
                 - name: Adventure Works-tema
                   items:
                     - name: Oversikt over Adventure Works-tema
                       href: adventure-works-theme.md
+                    - name: Installer Adventure Works-teamet
+                      href: install-adventure-works.md
             - name: Administrer digitale aktiva
               items:
                 - name: Oversikt over behandling av digitale aktiva
@@ -1790,9 +1792,9 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/dynamics365/commerce/toc.json
                         - name: Gå gjennom konfigurasjoner for å generere rapporter i Office-formatene som har innebygde bilder
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/commerce/toc.json
-                        - name: Generere rapporter i Office-formater som har innebygde bilder
+                        - name: Generer rapporter i Office-formater som har innebygde bilder
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/commerce/toc.json
-                - name: Dele opp genererte XML-filer basert på filstørrelse og innholdsmengde
+                - name: Del opp genererte XML-filer basert på filstørrelse og innholdsmengde
                   href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/commerce/toc.json
                 - name: Skjule stykklistetegn i genererte filer
                   href: ../fin-ops-core/dev-itpro/analytics/er-suppress-bom-characters.md?toc=/dynamics365/commerce/toc.json

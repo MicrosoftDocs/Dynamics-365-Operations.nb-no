@@ -76,8 +76,6 @@
                       href: get-started/whats-new-scm-10-0-20.md
                     - name: Supply Chain Management 10.0.19 (juni 2021)
                       href: get-started/whats-new-scm-10-0-19.md
-                    - name: Supply Chain Management 10.0.18 (mai 2021)
-                      href: get-started/whats-new-scm-10-0-18.md
                 - name: Funksjoner som er fjernet eller avskrevet
                   items:
                     - name: Funksjoner som er fjernet eller avskrevet på startsiden
@@ -186,7 +184,7 @@
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Miljøplanlegging
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Klargjøre for aktivering
+                - name: Klargjør for aktivering
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Vanlige spørsmål om aktivering
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/supply-chain/toc.json
@@ -1187,9 +1185,9 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Gå gjennom konfigurasjoner for å generere rapporter i Office-formatene som har innebygde bilder
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Generere rapporter i Office-formater som har innebygde bilder
+                        - name: Generer rapporter i Office-formater som har innebygde bilder
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Dele opp genererte XML-filer basert på filstørrelse og innholdsmengde
+                - name: Del opp genererte XML-filer basert på filstørrelse og innholdsmengde
                   href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Skjule stykklistetegn i genererte filer
                   href: ../fin-ops-core/dev-itpro/analytics/er-suppress-bom-characters.md?toc=/dynamics365/supply-chain/toc.json
@@ -1997,17 +1995,15 @@
                   href: procurement/purchase-order-creation.md
                 - name: Opprette en bestilling
                   href: procurement/tasks/create-purchase-order.md
-                - name: Opprette en bestilling med en leveringsplan
+                - name: Opprett en bestilling med en leveringsplan
                   href: procurement/tasks/create-purchase-order-delivery-schedule.md
-                - name: Opprette en bestilling for en engangsleverandør
+                - name: Opprett en bestilling for en engangsleverandør
                   href: procurement/tasks/create-purchase-order-one-time-supplier.md
-                - name: Opprette en frigivelsesordre for innkjøp ved oppretting av bestillingen
-                  href: procurement/tasks/create-purchase-release-order-creating-purchase-order.md
-                - name: Opprette en frigivelsesordre for innkjøp fra en innkjøpsavtale
+                - name: Bruk en innkjøpsavtale ved oppretting av en bestilling
                   href: procurement/tasks/create-purchase-release-order-purchase-agreement.md
-                - name: Opprette en innkjøpsreturordre
+                - name: Opprett en innkjøpsreturordre
                   href: procurement/tasks/create-purchase-return-order.md
-                - name: Opprette prosjektbestilling
+                - name: Opprett prosjektbestilling
                   href: procurement/tasks/create-project-purchase-order.md
                 - name: Opprette en innkjøpsgjentakelsesordre
                   href: procurement/tasks/create-repeat-purchase-order.md
