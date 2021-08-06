@@ -2,7 +2,7 @@
 title: Oversikt over øyeblikksbilder (forhåndsversjon)
 description: Dette emnet beskriver øyeblikksbildefunksjonen, som gjør at du kan lagre en kontantflytprognose for analyse eller sammenligning med faktiske data senere. Når du genererer en kontantstrømprognose, kan du lagre denne prognosen som et øyeblikksbilde. Du kan deretter bruke disse øyeblikksbildene til å redigere kontoene som var inkludert i prognosen, eller sammenligne prognosen i øyeblikksbildet med faktiske data.
 author: ShivamPandey-msft
-ms.date: 06/03/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,17 +17,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-19
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 23df01603e74847f6f01a1eaa84b8fd3bb1d6e59
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: cf39e5233b2ef4d50d6c5ace57ba2574ed5fe6fe
+ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6337214"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "6638350"
 ---
 # <a name="snapshots-overview-preview"></a>Oversikt over øyeblikksbilder (forhåndsversjon)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Ved hjelp av øyeblikksbilder kan organisasjoner redigere og lagre informasjon om likviditetsbeholdningen og kontantstrømprognoser på et tidspunkt. Du kan sammenligne øyeblikksbildet med faktisk finans, undersøke avviket og bruke denne informasjonen til å forbedre kontantstrømprognoser over tid. Mer spesifikt kan øyeblikksbilder brukes på følgende måter:
 

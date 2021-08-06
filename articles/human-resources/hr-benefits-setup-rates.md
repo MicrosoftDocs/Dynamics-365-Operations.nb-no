@@ -2,7 +2,7 @@
 title: Konfigurere satser
 description: Satser i Microsoft Dynamics 365 Human Resources definerer hvor mye arbeidsgivere og ansatte bidrar til en fordel.
 author: andreabichsel
-ms.date: 06/15/2021
+ms.date: 06/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2b6767df573260f32de8409e487f649bdc4779b0
-ms.sourcegitcommit: ecabf43282a3e55f1db40341aa3f3c7950b9e94c
+ms.openlocfilehash: 85cf561828aa8ef9d80df31436f473b29406e2fd
+ms.sourcegitcommit: 08797bc43e93ea05711c5a70dd7cdb82cada667a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "6266663"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6558351"
 ---
 # <a name="configure-rates"></a>Konfigurere satser
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Satser i Microsoft Dynamics 365 Human Resources definerer hvor mye arbeidsgivere og ansatte bidrar til en fordel. Verdien kan være et beløp eller fleksible kreditter, avhengig av konfigurasjonen.
+Satser definerer hvor mye arbeidsgivere og ansatte bidrar til en fordel. Verdien kan være et beløp eller flere fleksible kreditter, avhengig av konfigurasjonen.
 
 Bruk satser til å bestemme hvor mye ansatte og arbeidsgivere skal betale for hver fordel, basert på flere faktorer. Dekningssatser gjelder for dato, slik at du kan holde en historisk oversikt over satser. 
 
@@ -42,10 +42,10 @@ Bruk satser til å bestemme hvor mye ansatte og arbeidsgivere skal betale for hv
    | --- | --- |
    | **Sats** | Et unikt navn som identifiserer fordelssatsen. |
    | **Beskrivelse** | En beskrivelse av fordelssatsen. |
-   | **Effektiv** | Datoen når satsen er effektiv. Standardverdien er gjeldende systemdato. 
+   | **Effektiv** | Datoen satsen blir aktiv. Standardverdien er gjeldende systemdato. Denne datoen bør være på eller før fordelsperioden. En god praksis er å sette denne datoen til datoen for fordelsplanen. |
    | **Utløp** | Sluttdatoen for satsen. 12/31/2154 (som betyr aldri) er standardverdien. |
-   | **Bruk lag** | Laget som skal brukes for beregning av fordelssatsen. Enkelt lag for en fordelssats på ett lag, eller et dobbelt nivå for en fordelssats på to lag. Et eksempel på et dobbelt lag er et lag basert på kjønn og alder. |
-   | **Betalingsfrekvens** | Betalingsfrekvensen som bestemmer hvor ofte fordelsbonussatsen betales til fordelsleverandøren. Hvis for eksempel betalingsfrekvensen er månedlig, representerer fordelssatsen det månedlige betalingsbeløpet. |
+   | **Bruk lag** |  Bruk dette feltet hvis du har logikk som må brukes til å bestemme en sats. Hvis for eksempel en sats må øke basert på alder, velger du en verdi her. Velg **Enkelt lag** for en fordelssats på ett lag, eller et **dobbelt nivå** for en fordelssats på to lag. Et eksempel på et dobbelt lag er et lag basert på kjønn og alder. Når du har valgt en verdi, velger du **Handlinger** og deretter **Lagsatser**. Hvis du har en flat sats som ikke endres, lar du dette feltet stå tomt. |
+   | **Betalingsfrekvens** | Angi hvor ofte fordelspremieprisen skal betales til fordelsleverandøren. Satsene du angir på siden som er beskrevet senere i dette emnet, er basert på betalingsfrekvensen du angir her. Hvis du for eksempel angir **Månedlig** i dette feltet, og du angir en ansattsats på **USD 100**, antas det at fordelen vil koste den ansatte USD 100 per måned. En ansatt kan imidlertid bli betalt to ganger i måneden, basert på fordelsbetalingsfrekvensen som er angitt på ansattposten. Når den ansatte logger seg på selvbetjening for ansatte, vil beløpet som de betaler, i dette tilfelle være USD 50 fordi satsen som ansattselvbetjeningen viser, er basert på den ansattes betalingsfrekvens. |
    | **Avrunding av sats for lønnsfrekvens** | Metodene for avrunding av satsen er: Standard, Avrunding, Normal, Nedover og Avrunding opp. </br></br><ul><li>**Standard** – Avrundes alltid oppover. 10,611 avrunder for eksempel til 10,62. -10,231 avrunder til -10,23. </li><li>**Avrunding** – Avrundes alltid nedover. 10,619 avrunder for eksempel til 10,61. -10,231 avrundes til -10,24. </li><li>**Normal** – Desimalverdier som slutter på eller er større enn 5, rundes fra null. Desimalverdier som slutter på eller mindre enn 4, avrundes mot null. 10,615 avrundes for eksempel til 10,62. -10,235 avrundes til -10,24. 10,614 avrundes til 10,61. -10,234 avrundes til -10,23. </li><li>**Nedover** – Avrund mot null. 10,619 avrunder for eksempel til 10,61. -10,231 avrunder til -10,23. </li><li>**Avrundes opp** – Rund av fra null. 10,619 avrunder for eksempel til 10,62. -10,231 avrundes til -10,24. |
    | **Beløp for ikke-røykende ansatt** | Beløpet som fordelsleverandøren tar betalt for en ikke-røykende ansatt. Dette er beløpet arbeidsgiveren betaler til fordelsleverandøren, og bør være basert på betalingsfrekvensen for satsoppsettet. |
    | **Beløp for ikke-røykende arbeidsgiver** | Beløpet som fordelsleverandøren tar betalt for en ikke-røykende ansatt. Dette er beløpet arbeidsgiveren betaler til fordelsleverandøren, og det bør være basert på betalingsfrekvensen for satsoppsettet. |
@@ -66,6 +66,9 @@ Du kan bruke lagsatser i satsoppsettet hvis satsen varierer avhengig av ulike fa
 
 Du kan også bruke doble lag. Hvis du velger **Dobbelt lag** for verdien **Bruk lag** i skjemaet **Satsoppsett**, kan du definere satser basert på to dimensjoner. Du kan for eksempel konfigurere et system med dobbelt lag for å si at hvis du er en mann og alderen er opptil 34,99, er beløpet for ikke-røyker lik 2. Hvis du er mann og alderen er opptil 39,99, er beløpet for ikke-røyker lik 3. Hvis du er kvinne og alderen er opptil 34,99, er beløpet for ikke-røyker lik 1,8. Hvis du er kvinne og alderen er opptil 39,99, er beløpet for ikke-røyker lik 2,8.
 
+> [!IMPORTANT]
+> Et alternativ under **Personlige opplysninger** i arbeiderposten brukes til å angi om den ansatte er en røyker. Hvis den ansatte registreres som en røyker, brukes satsen for røyker. (Røykerindikasjonen vises aldri for den ansatte.)
+   
 1. I arbeidsområdet **Fordelsbehandling**, under **Oppsett**, velger du **Satser**.
 
 2. Velg en eller flere satser fra listen, velg **Handlinger**, og velg deretter **Lagsatser**.
@@ -92,6 +95,7 @@ Du kan også bruke doble lag. Hvis du velger **Dobbelt lag** for verdien **Bruk 
    | **Røykersats for fleksikreditt** | Antall fleksikreditter fordelen koster, basert på beregningen som er definert for lagnivået for røykere. |
 
 5. Velg **Lagre**. 
+
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

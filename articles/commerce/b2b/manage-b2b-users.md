@@ -2,24 +2,24 @@
 title: Administrere forretningspartnerbrukere på B2B-e-handelssider
 description: Dette emnet beskriver hvordan administratorer kan legge til, redigere og slette forretningspartnere på forretnings-til-bedrift-e-handelsområder (B2B).
 author: josaw1
-ms.date: 01/20/2021
+ms.date: 07/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: RetailOperations
+ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: v-chgri
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: josaw
+ms.author: brshoo
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 6beee4cc4c0dd36f49a38ee49a1a23ad9b513360
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 88f613be59a0c7b0d5efcdc0bef2c5a54506f9eb
+ms.sourcegitcommit: 0c77dbb8547cd36fce3977ca9515fa1474efa77a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936662"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "6655612"
 ---
 # <a name="manage-business-partner-users-on-b2b-e-commerce-websites"></a>Administrere forretningspartnerbrukere på B2B-e-handelssider
 
@@ -67,7 +67,7 @@ Følg denne fremgangsmåten for å godkjenne og definere en forretningspartnerad
 
 1. Gå til **IT Detaljhandel og handel \> Distribusjonsplan**, og kjør jobben **1010** (**Kunder**) for å sende de nylig opprettede kunde- og kundehierarkipostene til kanaldatabasen.
 
-Når forespørselen er godkjent, og kunde- og kundehierarkipostene er synkronisert med kanaldatabasen, kan anmoderen logge seg på e-handelsstedet for B2B ved hjelp av e-postadressen som ble oppgitt da forespørselen ble sendt. Brukerne kan bruke registreringsflyten til å definere passordet for kontoen.
+Når forespørselen er godkjent, og kunde- og kundehierarkipostene er synkronisert med kanaldatabasen, kan anmoderen logge seg på e-handelsstedet for B2B ved hjelp av e-postadressen som ble oppgitt da forespørselen ble sendt. Brukerne kan bruke registreringsflyten til å definere passordet for kontoen. Hvis du vil aktivere identitetsleverandør (Azure AD B2C)-posten som skal knyttes til B2B-kundeposten som ble opprettet ved registrering eller pålogging, følger du instruksjonene i [Aktiver automatisk kobling av identitetsposter til kundekontoer](../identity-record-linking.md).
 
 ## <a name="onboard-additional-business-partner-users"></a>Pålaste flere forretningspartnerbrukere
 
@@ -83,7 +83,7 @@ Følg denne fremgangsmåten for å pålaste flere forretningspartnerbrukere på 
 
 1. Kjør jobben **1010** (**Kunder**) for å synkronisere den nye forretningspartnerbrukeren til kanaldatabasen.
 
-Når kundeposten er synkronisert, settes statusen til brukeren på webområdet for B2B-e-handel til **Aktiv**, og den nye brukeren kan logge seg på B2B-webområdet for e-handel ved hjelp av e-postadressen. Brukerne kan bruke registreringsflyten til å definere passordet for kontoen.
+Når kundeposten er synkronisert, settes statusen til brukeren på webområdet for B2B-e-handel til **Aktiv**, og den nye brukeren kan logge seg på B2B-webområdet for e-handel ved hjelp av e-postadressen. Brukerne kan bruke registreringsflyten til å definere passordet for kontoen. Hvis du vil aktivere identitetsleverandør (Azure AD B2C)-posten som skal knyttes til B2B-kundeposten som ble opprettet ved registrering eller pålogging, følger du instruksjonene i [Aktiver automatisk kobling av identitetsposter til kundekontoer](../identity-record-linking.md).
 
 ## <a name="edit-business-partner-user-details"></a>Redigere brukerdetaljer for forretningspartner
 

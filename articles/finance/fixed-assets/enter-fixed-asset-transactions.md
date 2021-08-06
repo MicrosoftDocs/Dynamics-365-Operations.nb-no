@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3540cf17050a953a97c7291a1bcbe5ebf6fb670e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2f9cd8846688e6b70f3ac2034caa1a9e3015355e
+ms.sourcegitcommit: f9b40df70a77136529fbc790325ed657eb203731
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815722"
+ms.lasthandoff: 07/20/2021
+ms.locfileid: "6645378"
 ---
 # <a name="fixed-asset-transaction-options"></a>Alternativer for transaksjon av anleggsmiddel
 
@@ -46,7 +46,7 @@ Når en bestilling eller Lager til anleggsmidler-journalen brukes til anskaffels
 ## <a name="general-ledger"></a>Økonomimodul
 Alle typer anleggsmiddeltransaksjoner kan posteres på siden Økonomijournal. Du kan også bruke journaler i Anleggsmidler til å postere anleggsmiddeltransaksjoner.
 
-## <a name="options-for-entering-fixed-asset-transaction-types"></a>Alternativer for å angi anleggsmiddeltransaksjonstyper
+### <a name="options-for-entering-fixed-asset-transaction-types"></a>Alternativer for å angi anleggsmiddeltransaksjonstyper
 
 
 | transaksjonstype                    | Modul                   | Opsjoner                                   |
@@ -61,10 +61,20 @@ Alle typer anleggsmiddeltransaksjoner kan posteres på siden Økonomijournal. Du
 | ** **                               | Økonomimodul           | Økonomijournal                           |
 | ** **                               | Kundereskontro      | Fritekstfaktura                         |
 
-
 Den gjenværende verdien for nedskrivningsperioder for anleggsmiddelet oppdateres ikke når en journallinje for avskrivningstransaksjonstype opprettes manuelt eller importeres via en dataenhet. Denne verdien oppdateres når avskrivningsforslagsprosessen brukes til å opprette journallinjen.
 
 Hvis du vil ha mer informasjon, se [Integrering av anleggsmidler](fixed-asset-integration.md).
 
+### <a name="transactions-that-require-different-voucher-numbers"></a>Transaksjoner som krever ulike bilagsnumre
+
+Følgende anleggsmiddeltransaksjoner bruker forskjellige bilagsnumre:
+
+- En ekstra anskaffelse gjøres på et anleggsmiddel og "oppsamlingsavskrivning" beregnes.
+- Et anleggsmiddel er delt.
+- En parameter for å beregne avskrivning ved avhending aktiveres, og deretter avhendes anleggsmiddelet.
+- Servicedatoen for et anleggsmiddel er før anskaffelsesdatoen. Derfor posteres en avskrivningsjustering.
+
+> [!NOTE]
+> Når du angir transaksjoner, må du kontrollere at alle transaksjonene gjelder det samme anleggsmidlet. Bilaget blir ikke postert hvis det inneholder mer enn ett anleggsmiddel, selv om **Nytt bilag**-feltet er satt til **Bare ett bilagsnummer** på **Journalnavn**-siden i økonomimodulen. Hvis du tar med flere anleggsmidler i bilaget, vises meldingen "Det kan bare være én anleggsmiddeltransaksjon per bilag", og du vil ikke kunne postere bilaget.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

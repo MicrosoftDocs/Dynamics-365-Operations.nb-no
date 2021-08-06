@@ -2,7 +2,7 @@
 title: Vanlige spørsmål om tilbakestilling av data mart
 description: Dette emnet gir svar på noen vanlige spørsmål om tilbakestilling av data mart.
 author: jinniew
-ms.date: 06/09/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-05-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 7cd96c7bc698986ef1ef07ca88479a3d49f22924
-ms.sourcegitcommit: ecabf43282a3e55f1db40341aa3f3c7950b9e94c
+ms.openlocfilehash: 90abe1fc3e84e0a9777f3eabd790a4b7e9b509c5
+ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "6266615"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "6638273"
 ---
 # <a name="data-mart-resets-faq"></a>Vanlige spørsmål om tilbakestilling av data mart
 
@@ -37,6 +37,9 @@ Hvis én eller flere av de følgende erklæringene gjelder for din situasjon, ka
 
 - Applikasjonsdatabasen ble gjenopprettet.
 - Du har åpnet en støtteforespørsel, og en kundestøttetekniker har bedt deg om å tilbakestille data mart som en del av et feilsøkingstrinn.
+ 
+> [!NOTE]
+> Prosessen med å tilbakestille et datatorg påvirkes av antallet økonomi- og budsjettransaksjoner i databasen. Avhengig av antall transaksjoner i systemet, kan en tilbakestilling av datatorg fullføres på bare 15 minutter, eller det kan ta opptil fire timer. Hvis tilbakestillingen tar mer enn fire timer, anbefaler vi at du kontakter kundestøtte.
  
 ## <a name="when-is-a-data-mart-reset-inappropriate"></a>Når blir et data mart tilbakestilt på feil måte?
 

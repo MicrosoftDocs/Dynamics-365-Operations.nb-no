@@ -2,7 +2,7 @@
 title: Kom i gang med avgiftsberegning
 description: Dette emnet forklarer hvordan du konfigurerer avgiftsberegning.
 author: wangchen
-ms.date: 05/17/2021
+ms.date: 07/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 454608c2c3a86b71cf181129c762c837c5165902
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: b76184b3f1a97941fea7539aa3fac2c11b1f59b1
+ms.sourcegitcommit: cef2986e24d0510957b5db742545c266dec4275c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6336662"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6644980"
 ---
 # <a name="get-started-with-the-tax-calculation-preview"></a>Kom i gang med avgiftsberegning (forhåndsversjon)
 
@@ -58,15 +58,16 @@ Før du kan fullføre trinnene i dette emnet må følgende forutsetninger være 
 Trinnene i denne delen er ikke knyttet til en bestemt juridisk enhet. Du må bare fullføre denne fremgangsmåten én gang, og du kan fullføre den i en hvilken som helst juridisk enhet i RCS.
 
 1. Logg på [RCS](https://marketing.configure.global.dynamics.com/).
-2. I arbeidsområdet **Elektronisk rapportering** legger du til en ny konfigurasjonsleverandør. Bruk firmanavnet som navn på leverandøren. Hvis du ha mer informasjon, kan du se [Opprette konfigurasjonsleverandører og merke dem som aktive](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
-3. Velg konfigurasjonsleverandøren du akkurat opprettet, og velg deretter **Angi som aktiv**.
-4. Velg **Microsoft**-konfigurasjonsleverandøren, og velg deretter **Repositorier**.
-5. Velg **Global** i **Type**-feltet.
-6. Velg **Åpne**.
-7. Gå til **Avgiftsdatamodell**, utvid filtreet, og velg deretter **Avgiftskonfigurasjon**.
-8. Velg den siste versjonen, og velg deretter **Importer**.
-9. Gå tilbake til arbeidsområdet **Globaliseringsfunksjoner (forhåndsversjon)**, velg **Funksjoner**, velg flisen **Avgiftsberegning**, og velg deretter **Legg til**.
-10. Velg en av følgende funksjonstyper:
+2. I arbeidsområdet **Funksjonsbehandling** velger og aktiverer du funksjonen **Globaliseringsfunksjoner**.
+3. I arbeidsområdet **Elektronisk rapportering** legger du til en ny konfigurasjonsleverandør. Bruk firmanavnet som navn på leverandøren. Hvis du ha mer informasjon, kan du se [Opprette konfigurasjonsleverandører og merke dem som aktive](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
+4. Velg konfigurasjonsleverandøren du akkurat opprettet, og velg deretter **Angi som aktiv**.
+5. Velg **Microsoft**-konfigurasjonsleverandøren, og velg deretter **Repositorier**.
+6. Velg **Global** i **Type**-feltet.
+7. Velg **Åpne**.
+8. Gå til **Avgiftsdatamodell**, utvid filtreet, og velg deretter **Avgiftskonfigurasjon**.
+9. Velg den siste versjonen, og velg deretter **Importer**.
+10. Gå tilbake til arbeidsområdet **Globaliseringsfunksjoner**, velg **Funksjoner**, velg flisen **Avgiftsberegning**, og velg deretter **Legg til**.
+11. Velg en av følgende funksjonstyper:
 
     - **Ny funksjon** – Opprett et funksjonsoppsett som har tomt innhold.
     - **Basert på eksisterende funksjon** – Opprett en funksjon fra en eksisterende funksjon, og kopier innholdet fra det eksisterende funksjonsoppsettet.

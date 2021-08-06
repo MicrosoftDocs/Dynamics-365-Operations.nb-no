@@ -2,7 +2,7 @@
 title: Forslag til leieavslutning
 description: Dette emnet beskriver hvordan du foreslår oppsigelse av leie.
 author: moaamer
-ms.date: 04/12/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2021-1-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 6b32f9e8f80827e04269ac8cb6a4fbb5a13af8bc
-ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
+ms.openlocfilehash: 003eaa3f9e5ad653daed2e973044f384972b0331
+ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5881114"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "6638494"
 ---
 # <a name="propose-a-lease-for-termination"></a>Foreslå oppsigelse av leie
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Hvis en leieavtale avsluttes tidlig, kan aktivaleie registrere en oppsigelsesjournaloppføring for å skrive av leieforpliktelsen, aktiva for bruksrettighet og akkumulert avskrivning, og bokføre gevinst eller tap. Prosessen med tidlig avslutning avslutter en leieavtale og de tilhørende leietablåene. Den stopper ikke enkeltstående leietablåer. Dette emnet beskriver funksjonaliteten som lar deg foreslå en leieavtale for oppsigelse og behandle journaloppføringen for oppsigelse av leie.
 

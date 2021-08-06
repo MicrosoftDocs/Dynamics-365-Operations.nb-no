@@ -2,7 +2,7 @@
 title: Opprette dekningsalternativer
 description: Dekningsalternativer i Microsoft Dynamics 365 Human Resources er nivåer av dekning for en deltakers valg i en fordelsplan eller et program.
 author: andreabichsel
-ms.date: 04/06/2020
+ms.date: 06/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,21 +15,25 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d9f67a97ec57bade840e1035c6011b94427a77c4
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 1e8f13075a9835963c231a8e4e8a737368a952ba
+ms.sourcegitcommit: 08797bc43e93ea05711c5a70dd7cdb82cada667a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6055586"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6558231"
 ---
 # <a name="create-coverage-options"></a>Opprette dekningsalternativer
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Dekningsalternativer i Microsoft Dynamics 365 Human Resources er nivåer av dekning for en deltakers valg i en fordelsplan eller et program. Dekningsalternativer kan for eksempel inkludere **Bare ansatte** for en medisinsk plan, eller **2x lønn** for en forsikringsplan for livstid. Når det er definert, kan du bruke alternativer for fordelsdekning på nytt. Du kan knytte et alternativ til én eller flere planer.
+Dekningsalternativer bestemmer hvem som bør dekkes, eller hvor mye dekning som er tilgjengelig i en forsikringsplan. For en medisinsk plan kan du for eksempel ha et **bare ansatt**-alternativ, et **ansatt + 1**-alternativ, og et **familie**-alternativ. For livsforsikring kan du tilby dekning for **1 x lønn** eller **2 x lønn**.
 
-Når du har definert dekningsalternativer, knytter du dekningsalternativene til en fordelsplantype. Plantypen knyttes deretter til en fordelsplan eller et program. Dekningsalternativer som er knyttet til en plantype, er tilgjengelige for alle planer som opprettes med denne plantypen. 
+Når alternativer for fordelsdekning er definert, kan du bruke dem på nytt. Du kan knytte et alternativ til én eller flere planer.
 
+> [!IMPORTANT]
+> Når du har definert dekningsalternativer, knytter du dem til en fordelsplantype. Plantypen knyttes deretter til en fordelsplan eller et program. Dekningsalternativer som er knyttet til en plantype, er tilgjengelige for alle planer som opprettes med denne typen.
+
+## <a name="create-coverage-options"></a>Opprette dekningsalternativer
 1. I arbeidsområdet **Fordelsbehandling**, under **Oppsett**, velger du **Dekningsalternativer**.
 
 2. Velg **Ny**.
@@ -40,7 +44,7 @@ Når du har definert dekningsalternativer, knytter du dekningsalternativene til 
    | --- | --- |
    | **Dekningsalternativ** | Et unikt navn på dekningsalternativet. |
    | **Beskrivelse** | En beskrivelse av dekningsalternativet. |
-   | **Dekningskode** | Dekningskoder som tilordner minimums- og maksimumsbeløp for hver enkelt berettigede, dekkede persontype. En dekningskode angir hvem som er dekket av eller hvor mye dekning som er tillatt for en plantype. Du kan uttrykke dekningsbeløpet som et valutabeløp eller en prosent. For eksempel:</br></br>- **Emp+1** – for å være kvalifisert må den ansatte ha én avhengig valgt (hvis flere er valgt, er de ikke lenger kvalifisert).</br></br>- **Emp+familie** – for å være kvalifisert må den ansatte ha minst to avhengige valgt. |
+   | **Dekningskode** | Dekningskoder som tilordner minimums- og maksimumsbeløp for hver enkelt berettigede, dekkede persontype. En dekningskode angir hvem som er dekket av eller hvor mye dekning som er tillatt for en plantype. Du kan uttrykke dekningsbeløpet som et valutabeløp eller en prosent. For eksempel:<ul><li>**Emp+1** – for å være kvalifisert må den ansatte ha én avhengig valgt (hvis flere er valgt, er de ikke lenger kvalifisert).</li><li>**Emp+family** – for å være kvalifisert må den ansatte ha minst to avhengige valgt.</li></ul> |
    | **Maksimalt antall** | Det maksimale antall avhengige. |
    | **Status** | Statusen for dekningsalternativet. Hvis statusen for dekningsalternativet er satt til Inaktiv, kan ikke dekningsalternativet velges på plantyper. |
    | **Prosent** | Prosentbeløpet. Dette feltet er bare aktivt hvis % x lønn ble valgt i Dekningskode-feltet. |

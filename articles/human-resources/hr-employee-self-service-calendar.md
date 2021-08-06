@@ -2,7 +2,7 @@
 title: Opprette en teamkalender
 description: Du kan vise og opprette teamkalendere i Dynamics 365 Human Resources.
 author: andreabichsel
-ms.date: 11/02/2020
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: cedff4031c6455b446af9c56a770a00f3b2efc80
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 52ae36f499871087cc086bcaf8c345af41d06943
+ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6052103"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6639396"
 ---
 # <a name="view-team-and-company-calendars"></a>Vise team- og firmakalendere
 
@@ -30,7 +30,7 @@ Du kan vise team- og firmakalendere i Dynamics 365 Human Resources. Teamkalender
 
 ## <a name="view-your-team-calendar-as-an-employee"></a>Vise teamkalenderen som en ansatt
 
-1. I arbeidsområdet **Ansattselvbetjening** velger du **Fraværskalender for team** under **Sammendrag**.
+- I arbeidsområdet **Ansattselvbetjening** velger du **Fraværskalender for team** under **Sammendrag**.
 
 ## <a name="view-your-team-calendar-as-a-manager"></a>Vise teamkalenderen som en leder
 
@@ -39,6 +39,21 @@ Du kan vise team- og firmakalendere i Dynamics 365 Human Resources. Teamkalender
 2. Velg **Permisjon og fravær**, og velg deretter **Vis fraværskalender for ledere**.
 
 Ledere kan også få tilgang til teamkalenderen fra **Ventende fritidsforespørsler for teamet mitt**, **Godkjent avspasering** og **Avspaseringsforespørsler**. 
+
+## <a name="view-your-absence-manager-calendar-as-the-absence-manager"></a>Vise fraværsbehandlingskalenderen som fraværsansvarlig
+
+> [!NOTE]
+> Hvis du vil vise fraværsbehandlingskalenderen, må du først aktivere funksjonen for **(forhåndsversjon) fraværsbehandling for å administrere permisjon** i Funksjonsbehandling. Hvis du vil ha mer informasjon om å aktivere forhåndsversjonsfunksjoner, kan du se [Behandle funksjoner](hr-admin-manage-features.md).
+
+Brukere i fraværsbehandlingsrollen kan vise tidsforespørsler i kalenderen. Hvis du vil ha tilgang til fraværskalenderen, kan du følge disse trinnene.
+
+1. I arbeidsområdet **Ansattselvbetjening** velger du **Fraværsbehandling** og deretter **Fraværsbehandlingskalender**.
+
+2. Angi ønskede datoer i **Dato**-feltet.
+
+3. Oppdater visningsalternativene etter behov.
+
+Fraværsbehandlingskalenderen viser alle postene for de ansatte som rapporterer til fraværslederen i permisjonshierarkiet.
 
 ## <a name="view-a-company-calendar"></a>Vise en firmakalender
 
@@ -64,13 +79,11 @@ Kalenderkonfigurasjon med permisjons- og fraværsparametere bestemmer tilgjengel
 
 Du kan også filtrere kalendere etter leder eller avdeling. Den primære stillingstilordningen bestemmer hvilke ansatte som vises når disse filtrene stilles inn. 
 
->[!IMPORTANT]
->Visning av permisjon og fravær på tvers av firmaer er for øyeblikket i forhåndsversjon. Du må aktivere den i **sandkassemiljøet**. Hvis du vil ha mer informasjon om aktivering av evalueringsfunksjonalitet, kan du se [Behandle funksjoner](hr-admin-manage-features.md).<br><br>
->Deretter må du aktivere funksjonen i **delte parametere for Human Resources** for å vise filteret for juridisk enhet i kalendere. Hvis du vil ha mer informasjon, kan du se [Konfigurere permisjons- og fraværsparametere](hr-leave-and-absence-parameters.md).<br><br>
->Du kan filtrere kalenderen etter juridisk enhet. Hvis du vil se alle ansatte uavhengig av juridisk enhet, fjerner du filterboksen og velger Enter. 
+> [!IMPORTANT]
+> Du kan aktivere funksjonen **Permisjonsvisning på tvers av firmaer** i Funksjonsbehandling. Deretter må du aktivere funksjonen på siden **delte parametere for Human Resources** for å vise filteret for juridisk enhet i kalendere. Hvis du vil ha mer informasjon, kan du se [Konfigurere permisjons- og fraværsparametere](hr-leave-and-absence-parameters.md).
+> 
+> Du kan filtrere kalenderen etter juridisk enhet. Hvis du vil se alle ansatte uavhengig av juridisk enhet, fjerner du filterfeltet og velger **Enter**. 
 
 Hvis du vil ha informasjon om kalenderinnstillinger, kan du se [Konfigurere kalenderparametere](hr-leave-and-absence-parameters.md?configure-calendar-parameters).
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

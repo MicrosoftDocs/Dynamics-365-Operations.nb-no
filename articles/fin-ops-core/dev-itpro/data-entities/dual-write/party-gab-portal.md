@@ -1,6 +1,6 @@
 ---
-title: Bruke Power Portal med partdatamodellen
-description: Dette emnet beskriver endringene i webrollene i Power Portal på grunn av partdatamodellen i dobbel skriving.
+title: Bruke Microsoft Power Apps-portaler med partdatamodellen
+description: Dette emnet beskriver endringene i webrollene i Microsoft Power Apps-portaler på grunn av partdatamodellen i dobbel skriving.
 author: RamaKrishnamoorthy
 ms.date: 03/22/2021
 ms.topic: article
@@ -9,14 +9,14 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-22
-ms.openlocfilehash: 3b03603038d05305c63fc2890a196670ae343e53
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: ca9d4ad1efa128ba274cd84b1c2f672fe70975a5
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6358623"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542569"
 ---
-# <a name="using-power-portal-with-the-party-data-model"></a>Bruke Power Portal med partdatamodellen
+# <a name="using-microsoft-power-apps-portals-with-the-party-data-model"></a>Bruke Microsoft Power Apps-portaler med partdatamodellen
 
 [!INCLUDE[banner](../../includes/banner.md)]
 
@@ -44,13 +44,13 @@ Følg denne fremgangsmåten for å opprette disse nye tabelltillatelsene:
 
     Du må opprette tre nye tillatelser:
 
-    + Kontakt til part-tilkobling
-    + Part til konto-tilkobling
-    + Konto til ordre-tilkobling
+    + **Kontakt** til **part**-tabelltilkobling
+    + **Part** til **konto**-tabelltilkobling
+    + **Konto** til **ordre**-tabelltilkobling
 
 4. Opprett og lagre en ny tillatelse for Kontakt til part-tilkoblingen ved å angi disse parameterne:
 
-    + **Navn:** Part til konto-tilkobling (eller ditt valg)
+    + **Navn**: **Part** til **konto**-tabelltilordning (eller ditt valg)
     + **Tabellnavn**: msdyn_contactforparty
     + **Nettsted**: Kundeportal
     + **Omfang:** Kontakt

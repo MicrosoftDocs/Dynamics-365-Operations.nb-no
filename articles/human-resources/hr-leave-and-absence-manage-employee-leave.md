@@ -2,7 +2,7 @@
 title: Administrere ansattpermisjon
 description: Administrere ansattpermisjon i Dynamics 365 Human Resources.
 author: andreabichsel
-ms.date: 11/02/2020
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 33080fc5ca43f3d83ee9d17565f4c229ced7b94f
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: c161e324a1ebe5b30c95d6d3e0468da671a7c2de
+ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6055634"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6639468"
 ---
 # <a name="manage-employee-leave"></a>Administrere ansattpermisjon
 
@@ -44,12 +44,11 @@ Du kan behandle en ansatts permisjon etter permisjonstype. Dette inkluderer utl�
 
 Du kan inkludere en årsakskode og kommentar når du justerer en ansatts permisjonssaldo. 
 
->[!IMPORTANT]
->Visning av ytterligere informasjon om permisjonssaldoer er i forhåndsversjon. Du må aktivere den i **sandkassemiljøet**. Hvis du vil ha mer informasjon om aktivering av evalueringsfunksjonalitet, kan du se [Behandle funksjoner](hr-admin-manage-features.md).<br>
->Når du holder pekeren over en hvilken som helst permisjonssaldo, ser du følgende:<br>
->- **Tilgjengelig**: Totalt i år – ta i inneværende år
->- **Totalt i år**: Alle avsetninger, justeringer og overføring for året
->- **Tatt i år**: All godkjent permisjon
+Når du peker over en eventuell permisjonssaldo, vises følgende informasjon:
+
+- **Tilgjengelig** – **Totalt i inneværende år**-verdien minus verdien for **Tatt dette året**.
+- **Totalt i inneværende år** – Alle avsetninger, justeringer og overføring for året.
+- **Tatt i år** – All godkjent permisjon.
 
 ## <a name="see-also"></a>Se også
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 57501d07f6b9cffdff9f37737df8c278c574cf30
-ms.sourcegitcommit: 89bb2a7f402deed32998eddc1e56e75250e3d15e
+ms.openlocfilehash: 672db002ddf8d12aaab5b97241390c036ad7ab5c
+ms.sourcegitcommit: 8fb79920bea14746a71551a4456236a6386bfcea
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "6314291"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "6538860"
 ---
 # <a name="payroll-employee"></a>Lønnsansatt
 
@@ -32,15 +32,19 @@ Fysisk navn: mshr_payrollemployeeentity.
 
 Denne enheten gir informasjon om den ansatte. Du må definere [parameterne for lønnsintegrering](hr-admin-integration-payroll-api-parameters.md) før du bruker denne enheten.
 
+>[!IMPORTANT] 
+>Feltene **FirstName**, **MiddleName**, **LastName**, **NameValidFrom** og **NameValidTo** vil ikke lenger være tilgjengelige på denne enheten. Dette er for å sikre at det bare er én datoeffektiv datakilde under denne enheten, som er **HcmEmployment** med feltene **EmploymentStartDate** og **EmploymentEndDate**.
+
+>Disse feltene vil være tilgjengelige på **DirPersonNameHistoricalEntity**, som ble frigitt i platformoppdatering 43. Det finnes en OData-relasjon fra **PayrollEmployeeEntity** til **DirPersonNameHistoricalEntity** i **Person**-feltet. Alternativt kan **DirPersonNameHistoricalEntity**-enheten spørres direkte via OData ved hjelp av det offentlige navnet, **PersonHistoricalNames**.
+
+
 ## <a name="properties"></a>Egenskaper
 
 | Egenskap<br>**Fysisk navn**<br>**_Type_** | Bruk | beskrivelse |
 | --- | --- | --- |
 | **Personalnummer**<br>mshr_personnelnumber<br>*Streng* | Skrivebeskyttet<br>Obligatorisk | Det unike personalnummeret til den ansatte. |
 | **Primærfelt**<br>mshr_primaryfield<br>*Streng* | Obligatorisk<br>Systemgenerert |  |
-| **Etternavn**<br>mshr_lastname<br>*Streng* | Skrivebeskyttet<br>Obligatorisk | Ansattes etternavn. |
 | **ID for juridisk enhet**<br>mshr_legalentityID<br>*Streng* | Skrivebeskyttet<br>Obligatorisk | Angir den juridiske enheten (firmaet). |
-| **Gyldig fra**<br>mshr_namevalidfrom<br>*Motregning av dato/klokkeslett* | Skrivebeskyttet <br>Obligatorisk | Datoen som ansattinformasjonen er gyldig fra.  |
 | **Kjønn**<br>mshr_gender<br>[mshr_hcmpersongender-alternativsett](hr-admin-integration-payroll-api-gender.md) | Skrivebeskyttet<br>Obligatorisk | Den ansattes kjønn. |
 | **Enhets-ID for lønnsansatt**<br>mshr_payrollemployeeentityid<br>*GUID* | Obligatorisk<br>Systemgenerert | En systemgenerert GUID-verdi som entydig identifiserer den ansatte. |
 | **Startdato for ansettelse**<br>mshr_employmentstartdate<br>*Motregning av dato/klokkeslett* | Skrivebeskyttet<br>Obligatorisk | Startdatoen for den ansattes ansettelse. |
@@ -50,8 +54,6 @@ Denne enheten gir informasjon om den ansatte. Du må definere [parameterne for l
 | **Gyldig til**<br>mshr_namevalidto<br>*Motregning av dato/klokkeslett* |  Skrivebeskyttet<br>Obligatorisk | Datoen som ansattinformasjonen er gyldig til. |
 | **Fødselsdato**<br>mshr_birthdate<br>*Motregning av dato/klokkeslett* | Skrivebeskyttet <br>Obligatorisk | Den ansattes fødselsdato. |
 | **Identifikasjonsnummer til**<br>mshr_identificationnumber<br>*Streng* | Skrivebeskyttet <br>Obligatorisk |Identifikasjonsnummeret som er definert for den ansatte.  |
-| **Fornavn**<br>mshr_firstname<br>*Streng* | Skrivebeskyttet<br>Obligatorisk | Ansattes fornavn. |
-| **Mellomnavn**<br>mshr_middlename<br>*Streng* | Skrivebeskyttet<br>Obligatorisk |Ansattes mellomnavn.  |
 
 ## <a name="example-query-for-payroll-employee"></a>Eksempelspørring for lønnsansatt
 
@@ -69,11 +71,6 @@ GET [Organizaton URI]/api/data/v9.1/mshr_payrollemployeeentities?$filter=mshr_pe
     "mshr_personnelnumber": "000041",
     "mshr_employmentstartdate": "2011-04-05T07:00:00Z",
     "mshr_employmentenddate": "2154-12-31T23:59:59Z",
-    "mshr_firstname": "Cassie",
-    "mshr_middlename": "Lassie",
-    "mshr_lastname": "Hicks",
-    "mshr_namevalidfrom": "2021-03-12T20:34:25Z",
-    "mshr_namevalidto": "2154-12-31T23:59:59Z",
     "mshr_birthdate": "1987-09-12T00:00:00Z",
     "mshr_gender": 200000002,
     "mshr_identificationtypeid": "SSN",

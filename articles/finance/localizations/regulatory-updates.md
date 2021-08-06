@@ -1,8 +1,8 @@
 ---
 title: Forskriftsmessige oppdateringer
 description: Dette emnet inneholder en liste over planlagte og frigitte forskriftsmessige oppdateringer for Microsoft Dynamics 365 Finance.
-author: ShylaThompson
-ms.date: 02/04/2021
+author: VStamberg
+ms.date: 07/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 24743bd15f77769e2d4ca81981284995ce3a576e
-ms.sourcegitcommit: 927574c77f4883d906e5c7bddf0af9b717e492bf
+ms.openlocfilehash: b6519465ca4e205eb86a595f82ce1278a9a90ce2
+ms.sourcegitcommit: bf2daeccbe3f2826e734f409bfc823820144aa23
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "6129783"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "6617973"
 ---
 # <a name="regulatory-updates"></a>Forskriftsmessige oppdateringer
 
@@ -39,51 +39,34 @@ For de siste forskriftsmessige oppdateringsplanene kan du se tabellen nedenfor.
 
 |Land|Frigivelsesdato|Versjon|Forskriftsmessig oppdatering|
 |--------------------|---------------|-------|-------| 
-|      Brasil         |   Mai 2021, desember 2020      | 10.0.20, 10.0.19, 10.0.17      |   NF-e NT2020.006 – Identifikasjon av den digitale plattformens mellomledd (oppdateringer av oppsett og valideringsregler)   |
+|      Australia         |   2021. juni      | 10.0.21      |   AU – Betalingstidsrapporteringsregning 2020 for Microsoft Dynamics 365 Finance   |
+|      Brasil         |   Mai 2021, february 2021      | 10.0.20, 10.0.19      |   NF-e NT2020.006 – Identifikasjon av den digitale plattformens mellomledd (oppdateringer av oppsett og valideringsregler)   |
 |      Brasil         |   2021. mars         | 10.0.19         |    SPED REINF-oppsett 1.5.1  |
-|      Brasil         |   2021. februar         | 10.0.18         |    SPED-regnskap 015 – RS-regler |
-|      Brasil         |   2021. mars         | 10.0.17 HF       |    Elektronisk faktura for brasiliansk tjeneste (by) for NFS-e  |
 |      Brasil         |   2021. april         | 10.0.20        |    SPED ECD Layout 9  |
 |      Brasil         |   2021. mai         | 10.0.20         |    SPED-bidrag – versjonsveiledning 1.34  |
-|      Egypt         |   2021. februar         | 10.0.17         |    Skjema og rapporter for mva-retur  |
-|      Egypt        |   2021. februar         | 10.0.17         |    Konfigurasjon av fakturaoppsett  |
-|      Egypt         |   2021. februar         | 10.0.17         |    Skjema 41 for kildeskattdeklarering  |
-|      Egypt         |   2021. februar         | 10.0.17         |    Skjema 11 for kildeskattdeklarering  |
-|      Egypt         |   2021. februar         | 10.0.17         |    Referanser til opprinnelige fakturaer i kreditnotaer  |
-|      Europa        |   2021. januar       | 10.0.17      |   Brexit – Nord-Irland-protokollens innvirkning på rapportering av fellesskapshandel i EU-land  |
-|      Frankrike        |   2021. mars       | 10.0.18      |   Detaljhandel – sertifisert oppdatering for POS-system – Dynamics 365 Commerce  |
+|      Brasil         |   2021. juni         | 10.0.21         |    SPED ECF - Layout 7  |
+|      Brasil         |   2021. mai         | 10.0.20         |    NF-e NT2020.005 v1.10 - Valideringsregler og oppdateringer PED ECF - oppsett 7  |
+|      Brasil         |   2021. mai         | 10.0.21         |    SPED Reinf 1.5.1 - Endringer i webservicemetoden hendelse 5011  |
 |      Frankrike        |   2021. april       | 10.0.20      |   Forbedring av fransk eksport for dataarkivering (FEC)  |
-|      Tyskland        |   2021. januar       | 10.0.17      |   Endringer i XML-struktur for ELSTER MVA-forhåndsvarsling (UstVA)  |
 |      Tyskland        |   2021. mars       | 10.0.19      |   GDPDU-tillegg for anleggsmiddeltabell og -transaksjoner  |
 |      Tyskland        |   2021. april       | 10.0.20HF      |   Endringer i e-faktureringsformat (xRechnung) i Tyskland siden 2021  |
-|      Globalt        |   2021. januar       | 10.0.17      |   Kildeskatt på linjenivå  |
-|      Globalt        |   2021. januar       | 10.0.17      |   Betaling av kildeskatt  |
-|      Globalt        |   2021. januar       | 10.0.17      |   Kildeskatt i salgsordrer  |
-|      Globalt        |   2021. januar       | 10.0.17      |   Terskel for kildeskatt på fakturabeløp  |
-|      Globalt        |   2021. januar       | 10.0.17      |   Frigivelse av validering av fakturadato etter postert følgeseddel gjort tilgjengelig for alle land  |
-|      Ungarn        |   2021. februar       | 10.0.17HF, 10.0.18      |   Online faktureringssystem v.3.0  |
-|      India         |   2021. februar      | 10.0.17HF, 10.0.18      |   GST-e-fakturaer: informasjon om eWay-følgeseddel  |
-|      India         |   2021. mars      | 10.0.17HF, 10.0.18HF, 10.0.19      |   GST-e-fakturaer: eksportordrer, regnes som eksport, SEZ  |
-|      India         |   2021. mars      | 10.0.17HF, 10.0.18HF, 10.0.19      |   QR-kode for Dynamics på B2C-faktura  |
+|      India         |   2021. mars      | 10.0.19      |   GST-e-fakturaer: eksportordrer, regnes som eksport, SEZ  |
+|      India         |   2021. mars      | 10.0.19      |   QR-kode for Dynamics på B2C-faktura  |
+|      India         |   2021. juni      | 10.0.21      |   Ny API-versjon for e-faktura (v.1.04)  |
 |      Italia         |   2021. mars      | 10.0.19      |   Endringer av format for fakturakommunikasjon (Esterometro) v.2.1.1  |
-|      Italia        |   2021. mai      | 10.0.17HF, 10.0.18HF, 10.0.19      |   Detaljhandel – oppdatering av eksempel på integrering av bilagsskriver for å støtte XML RT 2.0  |
+|      Italia        |   2021. mai      | 10.0.19      |   Detaljhandel – oppdatering av eksempel på integrering av bilagsskriver for å støtte XML RT 2.0  |
 |      Italia         |   2021. mars      | 10.0.19      |   Detaljhandel – muliggjør detaljhandelsspesifikke fakturaer som bryter kronologisk postering  |
 |      Italia         |   2021. februar      | 10.0.19      |   Unik sertifisering – 2021  |
-|      Latvia         |   2020. desember      | 10.0.17      |   Intrastat-formatet oppdateres med start fra 2021  |
-|      Litauen         |   2021. mars      | 10.0.18      |   SAF-T-rapport versjon 2.01  |
-|      Mexico         |   2020. desember      | 10.0.17      |   Oppdatering av "Monto"-attributt |
-|      Nederland         |   2020. desember      | 10.0.17     |   Ny versjon av nederlandsk taksonomi NT15 |
-|      Polen          |   2021. januar     | 10.0.17     |   Polen: JPK_KR (SAF-regnskaspbøker) avklaringer, gjelder fra januar 2021 |
-|      Russland          |   2021. januar     | 10.0.17    |   Et nytt format for avgiftsdeklarering for eiendom (teknisk versjon 5.07 i stedet for 5.06) for 2020-rapporteringen|
+|      Oman         |   2021. juni      | 10.0.21      |   Mva-deklarering  |
+|      Polen          |   2021. juni     | 10.0.21     |   JPK_V7M (VDEK) – forbedring i fremgangsmåter |
+|      Polen          |   Juli 2021     | 10.0.21     |   JPK-V7M nye regler for fullføring fra juli 2021 |
 |      Russland          |   2021. mars     | 10.0.19    |   Deklarering av eiendomsskatt for 2020 må angi gjennomsnittlig årlig verdi for anleggsmidler som kan flyttes|
 |      Russland          |   2021. mars     | 10.0.19HF    |   Deklarering for fortjenesteavgift versjon 5.09 for 2020-rapportering|
 |      Russland          |   2021. mars     | 10.0.19    |   Myndighetenes påbud N 2200 21.12.2020 om bruk av fire nye skjemaer for transportfaktura|
-|      Spania          |   November 2020     | 10.0.17    |   SII-oppdateringsvalidering og feil v.2.1(bis) fra 1. januar 2021|
-|      Thailand          |   2021. februar     | 10.0.17HF    |   Kildeskattskjema Por Ngor Dor 53, 3 og 2 |
+|      Russland          |   2021. juni     | 10.0.21HF, 10.0.20HF, 10.0.19 HF    |   Endringer i utskriftsbare oppsett av fakturaer og korrigeringsfakturaer|
+|      Spania          |   Juli 2021     | 10.0.21    |    OSS / IOSS-scenario - ClaveRegimenEspecialOTrascendencia = 17 - kB 4623605|
+|      Sverige          |   Juli 2021     | 10.0.21    |    Mva-deklareringsformat, inkludert beløp for snudd avregning|
 |      De forente arabiske emirater   |   2021. mai     | 10.0.20    |   Postere betalingsjournal med etterdaterte sjekker til bankkonto |
-|      Storbritannia         |   2020. desember     | 10.0.17    |   Firmaavgiftsregistrering i kundefakturaer (Brexit – Nord-Irland-protokoll)|
-|      Storbritannia          |   2020. desember     | 10.0.17    |   Brexit – Nord-Irland-protokollens innvirkning på firmaer som handler varer både i Storbritannia og NI-lokasjoner|
-|      Storbritannia          |   2021. mars     | 10.0.18    |   MTD-mva> formuleringsendringer i forhåndsvisning av utskriftsoppsett (boksene 2,8,9) 2021|
 
 
 

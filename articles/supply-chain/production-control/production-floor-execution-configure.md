@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 34d0f3a0ff2a2ce1efd52f7bad2367af5f2f371b
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: c1739c9b50cb3f09696bf95730cd62fc9960ed5d
+ms.sourcegitcommit: 908a85987b604a7782407da70fb70ef75c07989f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6271161"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6641086"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurere grensesnittet for produksjonsutførelse
 
@@ -70,8 +70,6 @@ Denne funksjonen legger til en fane for aktivastyring i grensesnittet for produk
 - Funksjonalitet for anleggsmiddelstyring for grensesnittet for produksjonsutførelse
 
 ### <a name="enable-job-search"></a>Aktivere jobbsøk
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Ved hjelp av denne funksjonen kan du legge til et søkefelt i jobblisten. Arbeidere kan finne en bestemt jobb ved å angi jobb-IDen eller finne alle jobber for en bestemt ordre ved å angi ordre-IDen. Arbeidere kan angi IDen ved å bruke et tastatur eller ved å skanne en strekkode. Hvis du vil bruke den, aktiverer du følgende funksjon i [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 

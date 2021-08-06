@@ -2,7 +2,7 @@
 title: Konfigurere permisjons- og fraværstyper
 description: Definer permisjonstyper som de ansatte kan ta i Dynamics 365 Human Resources.
 author: andreabichsel
-ms.date: 06/15/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 39e4c4b9c83ca648c21ac20bd20b739af8a6b9ed
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 63970f69a437864675eada975c54446325fb60e2
+ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6271133"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6639588"
 ---
 # <a name="configure-leave-and-absence-types"></a>Konfigurere permisjons- og fraværstyper
 
@@ -73,6 +73,37 @@ Permisjonstyper i Dynamics 365 Human Resources definerer de ulike typene fravær
  
 4. Definer **Utløpsregler** for permisjonstypen. Når du konfigurerer dette alternativet, kan du velge dager eller måneder som enhet, og angi varigheten for utløpstiden. Gyldighetsdatoen for utløpsregelen brukes til å avgjøre når den satsvise jobben som behandler permisjonsutløpet, eller datoen når regelen trer i kraft. Selve utløpet skjer alltid på startdatoen for avsetningsperioden. Hvis startdatoen for avsetningsperioden for eksempel er 3. august 2021, og utløpsregelen ble definert til 6 måneder, behandles regelen basert på utløpsdatoen fra startdatoen for avsetningsperioden, slik at den vil bli utført 3. februar 2022. Eventuelle permisjonssaldoer som finnes på utløpstidspunktet, trekkes fra permisjonstypen, og gjenspeiles i permisjonssaldoen.
  
+## <a name="configure-the-required-attachment-per-leave-type"></a>Konfigurere nødvendig vedlegg per permisjonstype
+
+> [!NOTE]
+> For å bruke feltet **Vedlegg kreves** må du først slå på funksjonen for å **(forhåndsversjon) konfigurere nødvendige vedlegg for permisjonsforespørsler** i Funksjonsbehandling. Hvis du vil ha mer informasjon om å aktivere forhåndsversjonsfunksjoner, kan du se [Behandle funksjoner](hr-admin-manage-features.md).
+
+1. På siden **Permisjon og fravær**, i kategorien **Koblinger** under **Oppsett**, velger du **Permisjons- og fraværstyper**.
+
+2. Velg en permisjons- og fraværstype i listen. I delen **Generelt** bruker du feltet **Vedlegg kreves** til å angi om et vedlegg må lastes opp når en ansatt sender en ny permisjonsforespørsel for den valgte permisjonstypen. 
+
+Ansatte må laste opp et vedlegg når de sender en ny permisjonsforespørsel som har en permisjonstype der feltet **Vedlegg kreves**, er aktivert. Hvis du vil vise vedlegget som ble lastet opp som en del av en permisjonsforespørsel, kan godkjennere av permisjonsforespørsel bruke **Vedlegg**-alternativet for arbeidselementene som er tilordnet dem. Hvis du får tilgang til en permisjonsforespørsel ved hjelp av Human Resources-appen i Microsoft Teams kan **Vis detaljer**-alternativet for permisjonsforespørselen brukes til å vise detaljer og vedlegg.
+
+## <a name="configure-leave-units-hoursdays-per-leave-type"></a>Konfigurer permisjonsenheter (timer/dager) per permisjonstype
+
+> [!NOTE]
+> Hvis du vil bruke permisjonsenhetene per permisjonstype-funksjonalitet, må du først aktivere funksjonen **(Forhåndsversjon) Konfigurer permisjonsenheter per permisjonstype** i Funksjonsbehandling. Hvis du vil ha mer informasjon om å aktivere forhåndsversjonsfunksjoner, kan du se [Behandle funksjoner](hr-admin-manage-features.md).
+
+> [!IMPORTANT]
+> Som standard bruker permisjonstypene i en juridisk enhet permisjonsenhetene fra konfigurasjonen av permisjonsparametere på juridisk enhet-nivå.
+> 
+> Permisjonsenheten for en permisjons- og fraværstype kan bare endres hvis det ikke er noen permisjonstransaksjoner for denne permisjonstypen.
+> 
+> Når funksjonen er aktivert, kan den ikke deaktiveres.
+
+1. På siden **Permisjon og fravær**, i kategorien **Koblinger** under **Oppsett**, velger du **Permisjons- og fraværstyper**.
+
+2. Velg en permisjons- og fraværstype i listen. Velg permisjonsenheten i **Generelt**-delen i **Enhet**-feltet. Du kan velge **Timer** eller **Dager**.
+
+3. Valgfritt: Hvis du valgte **Timer** i **Enhet**-feltet, kan du bruke feltet **Aktiver halvdagsdefinisjon** til å angi om ansatte kan velge den første halve dagen eller den andre dagen fri hvis de ber om en permisjon halv dag.
+
+Ansatte som sender inn en ny permisjonsforespørsel, kan velge ulike permisjonstyper for å konstruere permisjonsforespørselen. Alle permisjonstyper som er valgt som del av én enkelt permisjonsforespørsel, bør imidlertid ha samme permisjonsenhet. Ansatte kan vise permisjonsenheten for hver permisjonstype i **Be om fridager**-skjemaet.
+
 ## <a name="see-also"></a>Se også
 
 - [Oversikt over permisjon og fravær](hr-leave-and-absence-overview.md)

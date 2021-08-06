@@ -2,7 +2,7 @@
 title: Behandle permisjonsforespørsler i Teams
 description: Dette emnet viser hvordan du ber om fridager Dynamics 365 Human Resources-appen i Microsoft Teams.
 author: andreabichsel
-ms.date: 05/25/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: aec6d784fd6bd54297ac4204c834c7f77ed75362
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 2a74b895052d017ccbe397bfb9a45609646b2f93
+ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6356518"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6639444"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Behandle permisjonsforespørsler i Teams
 
@@ -166,6 +166,10 @@ Hvis du har problemer med å logge på eller bruke Dynamics 365 Human Resources 
 ### <a name="cant-sign-into-the-human-resources-app-in-teams"></a>Kan ikke logge på Human Resources-appen i Teams
 
 Hvis du ikke kan logge på appen, kan det hende at kontoen du bruker til å logge på Microsoft Teams, ikke er tilknyttet en ansattpost i Dynamics 365 Human Resources. Kontakt systemadministrator for å kontrollere at ansattposten er riktig tilknyttet.
+
+### <a name="cant-find-the-dynamics-365-human-resources-environment-in-settings"></a>Finner ikke Dynamics 365 Human Resources-miljøet i Innstillinger
+
+Hvis du ikke kan velge det riktige Dynamics 365-miljøet, er det ikke sikkert at brukerposten er riktig synkronisert. Kontakt systemadministratoren for å opprette brukerposten på nytt og knytte den til brukerlegitimasjonen. Deretter prøver du å logge deg på Human Resources-appen Microsoft Teams om noen minutter.
 
 ### <a name="translations-dont-display-correctly"></a>Oversettelser vises ikke riktig
 

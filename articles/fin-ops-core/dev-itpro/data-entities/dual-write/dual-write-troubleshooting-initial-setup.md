@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: c641849b2aec76124b6661f339175325a312efce
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 0e7316d7749566b74835acded0addb2fa4b0e858
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6350842"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542421"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Feilsøke problemer under førstegangsinstallasjon
 
@@ -71,7 +71,7 @@ Følg denne fremgangsmåten for å gi samtykke for appen.
 
 For å sikre at dobbeltskriving fungerer som det skal, opprettes firmaene du velger under konfigurasjonen, i Dataverse-miljøet. Som standard er disse firmaene skrivebeskyttet, og egenskapen **IsDualWriteEnable** er satt til **Sann**. I tillegg opprettes standard eier av forretningsenheten og teamet og inkluderer firmanavnet. Før du aktiverer tilordningene, må du kontrollere at standard teameier er angitt. Gjør følgende for å finne tabellen **Firmaer (CDM\_Firma)**.
 
-1. Velg filteret øverst til høyre i den modelldrevne appen i Dynamics 365.
+1. Velg filteret i øvre høyre hjørne i kundeengasjementsappen.
 2. Velg **Firma** fra rullegardinlisten.
 3. Velg **Kjør** for å se resultatene.
 4. Velg firmaet som var koblet da du konfigurerte dobbel skriving.

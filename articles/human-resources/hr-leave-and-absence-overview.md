@@ -2,7 +2,7 @@
 title: Oversikt over permisjon og fravær
 description: I Dynamics 365 Human Resources gir arbeidsområdet Permisjon og fravær en fleksibel struktur for å opprette nye permisjonsplaner. Det inneholder også arbeidsflyter for behandling av forespørsler og en intuitiv selvbetjent side der ansatte kan be om fri.
 author: andreabichsel
-ms.date: 06/01/2020
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b41838b447dcbffc656ab759fcc4746abb620661
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 7a3c305910f41ebd775292dee91a6044c2cdb244
+ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6339721"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6639492"
 ---
 # <a name="leave-and-absence-overview"></a>Oversikt over permisjon og fravær
 
@@ -33,8 +33,9 @@ Dynamics 365 Human Resources hjelper deg med å gi arbeiderne flotte fordeler. A
 Før du kan opprette permisjonsplaner for de ansatte, må du utføre noen få konfigurasjonstrinn:
 
 - [Konfigurere permisjons- og fraværsparametere](hr-leave-and-absence-parameters.md)
-- [Opprette en driftstidskalender](hr-leave-and-absence-working-time-calendar.md)
-- [Opprette en arbeidsflyt for permisjonsforespørsel](hr-leave-and-absence-workflow.md)
+- [Opprette en arbeidstidskalender](hr-leave-and-absence-working-time-calendar.md)
+- [Opprette arbeidsflyt for permisjonsforespørsel](hr-leave-and-absence-workflow.md)
+- [Konfigurere fraværsbehandlingsrollen](hr-configure-absence-manager.md)
 
 ## <a name="create-and-manage-leave-plans"></a>Opprette og administrere permisjonsplaner
 
@@ -50,8 +51,9 @@ Før du oppretter permisjonsplaner for arbeiderne, må du opprette permisjons- o
 
 De ansatte kan sende inn avspaseringsforespørsler, og du kan behandle dem i arbeidsområdet **Ansattselvbetjening**.
 
-[Be om fridager](hr-employee-self-service-request-time-off.md)
-[Administrere forespørsler om permisjon og fravær](hr-employee-self-service-manage-requests.md)
+- [Be om fritid](hr-employee-self-service-request-time-off.md)
+- [Administrere forespørsler om permisjon og fravær](hr-employee-self-service-manage-requests.md)
+- [Konfigurere fraværsbehandlingsrollen](hr-configure-absence-manager.md)
 
 
 

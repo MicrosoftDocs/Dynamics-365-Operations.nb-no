@@ -4,30 +4,21 @@ description: Dette emnet inneholder informasjon om kundeemne til kontanter i dob
 author: RamaKrishnamoorthy
 ms.date: 01/07/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 7554189c779404559187ecd99f4bca4636054446
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 0fcbc5b0f571e9f2cf7f1ad7c1e976d022199b47
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6361412"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542277"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Kundeemne til kontanter i dobbel skriving
 
 [!include [banner](../../includes/banner.md)]
-
-
 
 Et viktig mål for de fleste bedrifter er å konvertere kundeemner til kunder, og deretter opprettholde et løpende forretningsforhold med disse kundene. I Microsoft Dynamics 365-apper inntreffer kundeemne til kontanter-prosessen gjennom tilbud eller arbeidsflyter for ordrebehandling, og finansene avstemmes og føres. Integrering av kundeemne til kontanter med dobbel skriving oppretter en arbeidsflyt som tar et tilbud og en ordre som kommer fra enten Dynamics 365 Sales eller Dynamics 365 Supply Chain Management, og gjør tilbudet og ordren tilgjengelig i begge appene.
 
@@ -70,6 +61,7 @@ Salgstilbud kan opprettes i både Sales og Supply Chain Management. Hvis du oppr
 + Kolonnene **Fraktvilkår**, **Betalingsbetingelser**, **Leveringsmetode** og **Leveringsmåte** er ikke en del av standardtilordningene. Hvis du vil tilordne disse kolonnene, må du definere en verditilordning som er spesifikk for dataene i organisasjoner som tabellen synkroniseres mellom.
 
 Hvis du også bruker Field Service-løsningen, må du kontrollere at parameteren **Hurtigoppretting av tilbudslinje** aktiveres på nytt. Hvis du aktiverer parameteren på nytt, kan du fortsette å opprette tilbudslinjer ved hjelp av funksjonen for hurtigoppretting.
+
 1. Gå til Dynamics 365 Sales-programmet.
 2. Velg innstillinger-ikonet i det øverste navigasjonsfeltet.
 3. Velg **Avanserte innstillinger**.
@@ -121,43 +113,25 @@ Kundeemne til kontanter inkluderer en samling tabelltilordninger for viktige omr
 
 | Finance and Operations-apper | Kundeengasjementsapper | beskrivelse |
 |-----------------------------|-----------------------------------|-------------|
-| Salgsfakturahoder V2    | fakturaer                          | Tabellen Salgsfakturahoder V2 i Finance and Operations-appen inneholder fakturaer for salgsordrer og fritekstfakturaer. Det brukes et filter for dobbel skriving i Dataverse som filtrerer ut alle fritekstfakturadokumenter. |
-| Salgsfakturalinjer V2      | invoicedetails                    |             |
-| CDS-salgsordrehoder     | salesorders                       |             |
-| CDS-salgsordrelinjer       | salesorderdetails                 |             |
-| Koder for salgsordregrunnlag    | msdyn\_salesorderorigins          |             |
-| CDS-salgstilbudshode  | tilbud                            |             |
-| CDS-salgstilbudslinjer   | quotedetails                      |             |
+[Alle produkter](mapping-reference.md#138) | msdyn_globalproducts | |
+[Kunder V3](mapping-reference.md#101) | kontoer | |
+[Kunder V3](mapping-reference.md#116) | kontakter | |
+[Kontakter V2](mapping-reference.md#221) | msdyn_contactforparties | |
+[CDS-salgsordrehoder](mapping-reference.md#217) | salesorders | |
+[CDS-salgsordrelinjer](mapping-reference.md#216) | salesorderdetails | |
+[CDS-salgstilbudshode](mapping-reference.md#215) | tilbud | |
+[CDS-salgstilbudslinjer](mapping-reference.md#214) | quotedetails | |
+[Frigitte produkter V2](mapping-reference.md#189) | msdyn_sharedproductdetails | |
+[Salgsfakturahoder V2](mapping-reference.md#118) | fakturaer | Tabellen Salgsfakturahoder V2 i Finance and Operations-appen inneholder fakturaer for salgsordrer og fritekstfakturaer. Det brukes et filter for dobbel skriving i Dataverse som filtrerer ut alle fritekstfakturadokumenter. |
+[Salgsfakturalinjer V2](mapping-reference.md#117) | invoicedetails | |
+[Koder for salgsordregrunnlag](mapping-reference.md#186) | msdyn_salesorderorigins | |
 
-Her er relaterte kjernetabelltilordninger for kundeemne til kontanter:
-
-+ [Kunder V3 til kontoer](customer-mapping.md#customers-v3-to-accounts)
-+ [CDS-kontakter V2 til kontakter](customer-mapping.md#cds-contacts-v2-to-contacts)
-+ [Kunder V3 til kontakter](customer-mapping.md#customers-v3-to-contacts)
-+ [Frigitte produkter V2 til msdyn_sharedproductdetails](product-mapping.md#released-products-v2-to-msdyn_sharedproductdetails)
-+ [Alle produkter til msdyn_globalproducts](product-mapping.md#all-products-to-msdyn_globalproducts)
-+ [Prisliste](product-mapping.md)
+Hvis du vil ha informasjon om prislister, kan du se [Samlet produktopplevelse](product-mapping.md).
 
 ## <a name="limitations"></a>Begrensninger
+
 - Returordrer støttes ikke.
 - Kreditnotaer støttes ikke.
-- Finansdimensjoner må angis for hoveddataene, for eksempel kunde og leverandør. Når en kunde legges til i et tilbud eller en salgsordre, flyter finansdimensjonene som er knyttet til kundeposten, til ordren automatisk. Dobbel skriving omfatter foreløpig ikke finansdimensjonsdata for hoveddata. 
-
-[!include [symbols](../../includes/dual-write-symbols.md)]
-
-[!include [sales invoice](includes/SalesInvoiceHeaderV2Entity-invoice.md)]
-
-[!include [sales invoice line](includes/SalesInvoiceLineV2Entity-invoicedetail.md)]
-
-[!include [sales order header](includes/SalesOrderHeaderCDSEntity-salesorder.md)]
-
-[!include [sales order line](includes/SalesOrderLineCDSEntity-salesorderdetails.md)]
-
-[!include [sales order origin](includes/SalesOrderOriginEntity-msdyn-salesorderorigin.md)]
-
-[!include [sales quotation header](includes/SalesQuotationHeaderCDSEntity-quote.md)]
-
-[!include [sales quotation line](includes/SalesQuotationLineCDSEntity-QuoteDetails.md)]
-
+- Finansdimensjoner må angis for hoveddataene, for eksempel kunde og leverandør. Når en kunde legges til i et tilbud eller en salgsordre, flyter finansdimensjonene som er knyttet til kundeposten, til ordren automatisk. Dobbel skriving omfatter foreløpig ikke finansdimensjonsdata for hoveddata.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

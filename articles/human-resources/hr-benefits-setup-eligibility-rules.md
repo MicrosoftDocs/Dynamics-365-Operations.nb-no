@@ -2,7 +2,7 @@
 title: Konfigurere rettighetsregler og -alternativer
 description: Angi rettighetsregler og alternativer i Fordelsbehandling i Microsoft Dynamics 365 Human Resources.
 author: andreabichsel
-ms.date: 05/20/2021
+ms.date: 06/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,25 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f7679afa29e5e4ef8482c71558275297d7359362
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 25593bc4d136e403c7ba87e044c95f4fae1e7db9
+ms.sourcegitcommit: 08797bc43e93ea05711c5a70dd7cdb82cada667a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6351663"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6558375"
 ---
-# <a name="configure-eligibility-rules-and-options"></a>Konfigurere rettighetsregler og -alternativer
+# <a name="configure-eligibility-rules-and-options"></a>Konfigurere rettighetsregler og -alternativer 
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Når du har konfigurert de nødvendige parameterne for Fordelsbehandling i Microsoft Dynamics 365 Human Resources, kan du opprette rettighetsregler, pakker, perioder og programmer som du vil knytte til dine fordelsplaner.
+Når du har konfigurert de nødvendige parameterne for Fordelsbehandling, kan du opprette rettighetsregler, pakker, perioder og programmer som du vil knytte til dine fordelsplaner.
+
+Rettighetsregler brukes til å fastslå om ansatte er kvalifisert for en plan. Ansatte må oppfylle minst én regel for å være kvalifisert for fordelen. Du har for eksempel to regler i en plan. Den første regelen (linje 1) angir at ansatttypen må være **Ansatt**. Den andre regelen (linje 2) angir at ansatttypen må være heltidsansatt. Derfor er ansatte som oppfyller regel 1, kvalifiserte selv om de bare er ansatt på deltid.
+
+Du kan imidlertid definere én enkelt regel som har flere betingelser. Ansatte må da oppfylle alle betingelsene for regelen for å være kvalifisert for fordelen. Du har for eksempel en regel som kalles **Heltidsansatt**. Denne regelen angir at ansattypet må være **Ansatt** *og* den ansatte må være ansatt på heltid. Ansatte må derfor oppfylle begge betingelsene for regelen for å være kvalifisert.
+
+> [!IMPORTANT]
+> Minst én rettighetsregel må knyttes til hver fordelsplan. Du kan knytte flere regler til en fordel.
 
 ## <a name="create-an-eligibility-rule"></a>Opprette en rettighetsregel
 
@@ -72,7 +79,7 @@ Under åpen registrering kan ansatte velge fordelsplaner. Hvis de ikke er berett
    | **Kvalifisert stillingstype** | Angir stillingstypen(e) som oppfyller rettighetsregelen. For eksempel fulltid. |
    | **Kvalifisert stat** | Angir delstatene eller provinsene som oppfyller rettighetsregelen. For eksempel Nord-Dakota USA eller Britisk Columbia, Canada. |
    | **Kvalifiserte ansettelsesbetingelser** | Angir ansettelsesvilkårene som oppfyller rettighetsregelen. For eksempel, frivillig eller gruppekontrakt. |
-   | **Kvalifisert fagforening** | Angir fagforeningsmedlemskapene som oppfyller rettighetsregelen. For eksempel Forklift Drivers of America. </br></br>Når du bruker en fagforeningsbasert rettighetsregel, må fagforeningsposten ha sluttdatoen fylt ut. Du kan ikke la dette stå tomt. |
+   | **Kvalifisert fagforening** | Angir fagforeningsmedlemskapene som oppfyller rettighetsregelen. For eksempel Forklift Drivers of America.</br></br>Når du bruker en fagforeningsbasert rettighetsregel, må fagforeningsposten ha sluttdatoen fylt ut. Du kan ikke la dette stå tomt. |
    | **Berettiget postnummer** | Angir postnumrene som oppfyller rettighetsregelen. For eksempel 58104. |
 
 5. Under **Flere detaljer** kan du vise følgende tilleggsdetaljer.

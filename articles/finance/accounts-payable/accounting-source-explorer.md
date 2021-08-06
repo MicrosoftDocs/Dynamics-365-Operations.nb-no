@@ -1,7 +1,7 @@
 ---
 title: Regnskapskildeutforsker
 description: Denne artikkelen inneholder informasjon om regnskapskildeutforsker, som du kan bruke for detaljert analyse av kildeinformasjonen bak regnskapsoppføringer i økonomimodulen.
-author: ShylaThompson
+author: rcarlson
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4624a740538493c247b6c3a0f051ed6208c52504
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f1ab7cb7f8f9a42d5f311f8760ff2463055dc178
+ms.sourcegitcommit: f2dfec2f4c427e37a574e6acdfaaf150bc92ebb6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820937"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "6661043"
 ---
 # <a name="accounting-source-explorer"></a>Regnskapskildeutforsker
 
@@ -46,8 +46,10 @@ Når det gjelder kildedokumenter som bruker konseptet referanse-ID-er for kilded
 
 Når det gjelder disse dokumentene, kan du også navigere til det faktiske kildedokumentet fra Regnskapskildeutforsker.
 
-
-
-
+> [!NOTE]
+> Fra versjon 10.0.20 gir **Oppdatering**-knappen to ekstra områder for å begrense den første spørringen som kjøres for å angi data på siden. Disse tilleggsintervallene er også tilgjengelige i versjon 10.0.19 som en serviceoppdatering. Følgende felter ble lagt til:
+>
+> - Fra bilag, Til bilag
+> - Fra hovedkonto, Til hovedkonto
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

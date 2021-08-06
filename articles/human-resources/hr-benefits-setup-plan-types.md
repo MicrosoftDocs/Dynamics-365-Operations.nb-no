@@ -1,8 +1,8 @@
 ---
-title: Opprette plantyper
+title: Oversikt over plantype
 description: En plantype i Microsoft Dynamics 365 Human Resources er en gruppering på høyt nivå av bestemte typer fordeler. Hver plantype har en plantypekode som bestemmer regler for plantypen.
 author: andreabichsel
-ms.date: 04/06/2020
+ms.date: 06/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,24 +15,34 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: eb4746425c2faa3c0b1bd3940bf2e03cf7f9595c
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 806b3839feb1e1bf889747986388a56113c3ebe1
+ms.sourcegitcommit: 08797bc43e93ea05711c5a70dd7cdb82cada667a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6057868"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6558279"
 ---
-# <a name="create-plan-types"></a>Opprette plantyper
+# <a name="plan-type-overview"></a>Oversikt over plantype
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-En plantype i Microsoft Dynamics 365 Human Resources er en gruppering på høyt nivå av bestemte typer fordeler. Hver plantype har en plantypekode som bestemmer regler for plantypen. Plantypen Enkelt liv ville for eksempel ha plantypekoden Liv fordi den er en type livsforsikringsplan og må følge reglene som er angitt for livsplantypekoden. En annen plantype kan være Ekstra liv, også med plantypekoden Liv.
+En plantype er en gruppering på høyt nivå av bestemte typer fordeler. Hver plantype har en plantypekode som bestemmer regler for plantypen. Plantypen **Enkelt liv** ville for eksempel ha plantypekoden **Liv** fordi den er en type livsforsikringsplan og må følge reglene som er angitt for plantypekoden **Liv**. En annen plantype kan være **Ekstra liv**. Denne plantypen vil også ha plantypkoden **Liv**.
 
 Hver plantype angir om en ansatt kan registrere seg i én plan av typen eller flere. En ansatt kan for eksempel sannsynligvis registrere seg både for polisene Enkelt liv og Ekstra liv av plantypen Liv. En ansatt kan sannsynligvis registrere seg for bare én polise av typen Medisinsk.
 
 Hvis en plantype omfatter kontakter, angir plantypen om kontakter er mottakere eller avhengige. En Enkelt liv-plantype vil for eksempel ha mottakere, mens en Enkel medisin-plantype vil ha avhengige. I noen tilfeller kan det hende at en plan ikke har noen personlige kontakter. For eksempel en fleksibel forbrukskonto eller et parkeringsfradrag.
 
 En plantype kan definere dekningsalternativer. Dekningsalternativene er definert i skjemaet Dekningsalternativ. Et dekningsalternativ kan angi fordelsbeløpet eller hvilke kontakter som er berettiget til plantypen. Hvis kontakttypen for eksempel er Mottaker, bør dekningsalternativet definere vilkårene for hva mottakeren kan motta når fordelen utnyttes. Hvis kontakt typen er Avhengig, bør dekningsalternativet definere forholdet mellom den avhengige og den ansatte. 
+
+> [!IMPORTANT]
+> Skjemaet inneholder nøkkeldata som påvirker alternativene som er tilgjengelige når en ny fordelsplan opprettes:
+>
+> - **Plantypekode** – Dette feltet påvirker hva som vises i kategorien **Konfigurasjon** når den faktiske fordelen er definert.  
+> - **Samtidig registrering** – Dette feltet avgjør om flere registreringer er tillatt. (For en medisinsk plan er dette feltet vanligvis satt til **Én registrering**.)
+> - **Kontakttype** – Dette feltet gjør det mulig å legge til avhengige eller mottakere i en plan. Hvis den er satt til **Ingen**, har ikke ansatte som har registrert seg i fordeler, muligheten til å velge enten en mottaker eller en avhengig.
+> - **Dekningsalternativer** – Bruk dette feltet til å koble dekningsalternativene til plantypene. Den definerer enten personene som skal dekkes av denne plantypen, eller dekningsbeløpene som er tilgjengelige for denne plantypen. Du kan for eksempel angi at dekningen for en medisinsk plantype bare skal være tilgjengelig for den ansatte, den ansatte og en annen person, eller den ansatte og deres familie.
+
+## <a name="create-plan-types"></a>Opprette plantyper
 
 1. I arbeidsområdet **Fordelsbehandling**, under **Oppsett**, velger du **Plantyper**.
 

@@ -2,7 +2,7 @@
 title: Oversikt over Adventure Works-tema
 description: Dette emnet gir en oversikt over Adventure Works-emnet, og beskriver hvordan det brukes på områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 07/08/2021
+ms.date: 07/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,36 +14,48 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: c7557a36a948de5ae877d74bbbdea78821099b82
-ms.sourcegitcommit: 7e976059118938b0089e40bef948029a8c088b38
+ms.openlocfilehash: c8183d09e15f83606d84fddd02cb2dfb9b2fb528
+ms.sourcegitcommit: 0c77dbb8547cd36fce3977ca9515fa1474efa77a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "6479509"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "6655638"
 ---
 # <a name="adventure-works-theme-overview"></a>Oversikt over Adventure Works-tema
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Dette emnet gir en oversikt over Adventure Works-emnet, og beskriver hvordan det brukes på områdesider i Microsoft Dynamics 365 Commerce.
 
 Dynamics 365 Commerce har et tema for e-handel som kalles Adventure Works. Adventure Works-temaet handler om sport og fritidsprodukter, og er optimalisert for en omfattende og utvidet fortellingserfaring. Det gir et moderne utseende, nytt oppsett og animasjonseffekter som skaper en oppslukende, engasjernde handleopplevelse for e-handelskunder.
 
-Adventure Works-emnet inneholder følgende nye arbeidsflyter:
+## <a name="trial-environments-in-commerce"></a>Prøvemiljøer i Commerce
+
+Hvis du vil se hvordan Adventure Works-emnet ser ut når det distribueres for bedrift-til-kunde- (B2C) og bedrift-til-bedrift-områder (B2B), kan du gå til følgende prøveområder:
+
+- [B2C-området Adventure Works](https://www.adventure-works.com/)
+- [B2B-området Adventure Works](https://www.adventure-works.com/business)
+
+## <a name="theme-capabilities"></a>Temafunksjoner
+
+Adventure Works-emnet inneholder følgende nye funksjoner:
 
 - Videospillermodulen støtter nå overskrift, avsnitt og koblingsfunksjonalitet for ytterligere fortelling.
-- Handlingen Legg til handlekurv starter minikurven i stedet for å gi en melding.
+- Det er bedre overganger for innhold gjennom animasjon.
+- Handlingen "Legg til handlekurv" starter minikurven i stedet for å gi en melding.
 - Modulen for hurtigvisning er en rute som vises både på skrivebordet og i mobilvisninger.
-- En tom kurv kan nå presentere kampanjer.
+- Det finnes nye oppsett for områdesidene. 
+- Markedsføringsinnhold kan konfigureres for kurven og minikurven når de er tomme.
+- Minikurven kan vise kampanjemeldinger, for eksempel "Gratis levering ved bestilling over 500 kroner."
+- Beskrivelseskort gjengis på søke- og kategorisider.
 
-Adventure Works-emnet inneholder følgende fortellingsmoduler i Commerce-modulbiblioteket:
+Adventure Works-temaet inneholder nå følgende fortellingsmoduler i Commerce-modulbiblioteket:
 
-- Flislistemodul
-- Interaktiv funksjonsmodul
-- Abonner-modul
-- Aktiv bildemodul
-- Bildelistemodul
+- [Flislistemodul](tile-list-module.md)
+- [Interaktiv funksjonsmodul](interactive-feature-module.md)
+- [Aktiv bildemodul](active-image-module.md)
+- [Abonnementsmodul](subscribe-module.md)
+- [Bildelistemodul](image-list-module.md)
 
 Adventure Works-emnet svarer fullstendig og gir en optimalisert erfaring for visning på skrivebord, mobil og nettbrett.
 
@@ -77,6 +89,10 @@ Adventure Works-emnet inneholder flere emneutvidelser, for eksempel **Visningsti
 På samme måte omfatter andre moduler moduldefinisjonstillegg. For eksempel inneholder [kurvikonmodulen](cart-icon-module.md) to ekstra **Tom kurv**- og **Kampanjeinnhold**-spor som implementeres ved hjelp av moduldefinisjonstillegg. I tillegg er det lagt til en ny **Mobillogo**-egenskap i hodemodulen for å støtte en logo på mobilvisninger. Denne egenskapen implementeres som filtypen for definisjon av hodemodulen.
 
 Hvis du vil ha mer informasjon om emneutvidelser, kan du se [Emnetillegg](e-commerce-extensibility/theme-module-extensions.md).
+
+## <a name="install-the-adventure-works-theme"></a>Installere Adventure Works-temaet
+
+Hvis du vil ha mer informasjon om hvordan du installerer Adventure Works-temaet, kan du se [Installere Adventure Works-temaet](install-adventure-works.md).
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

@@ -2,7 +2,7 @@
 title: Opprette og oppdatere en retur- og refusjonspolicy for en kanal
 description: Dette emnet beskriver hvordan du definerer en retur- og refusjonspolicy for en kanal.
 author: ShalabhjainMSFT
-ms.date: 07/02/2021
+ms.date: 07/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-01-21
 ms.dyn365.ops.version: Retail 10.0.9 update
-ms.openlocfilehash: 6cb2bb77a62ee9fc2ea6115949e30496bf3365c4
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: ca5797cfc2d92c4cbc98d3f64d60e1fd260f0418
+ms.sourcegitcommit: 08797bc43e93ea05711c5a70dd7cdb82cada667a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6345114"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6558303"
 ---
 # <a name="create-and-update-a-returns-and-refunds-policy-for-a-channel"></a>Opprette og oppdatere en retur- og refunderingspolicy for en kanal
 
@@ -36,12 +36,21 @@ Omfanget av policyen er for øyeblikket begrenset til å angi betalingsmidlene s
 
 ## <a name="enable-return-policy"></a>Aktivere returpolicy
 
-Hvis du vil aktivere returpolicyfunksjonaliteten for en kanal, gjør du følgende:
+Hvis du vil aktivere funksjonen for kanalreturpolicy i Commerce Headquarters, gjør du følgende.
 
 1. Gå til arbeidsområdet **Funksjonsbehandling** i Dynamics 365 Commerce.
 1. Søk etter funksjonen **Aktiver kanalreturpolicyer** i listen over funksjonsnavn.
 1. Velg **Aktiver nå**.
-1. På **Distribusjonsplan**-siden kjører du **1110**-jobben (global konfigurasjon) for å distribuere funksjonsendringen. 
+1. På **Distribusjonsplan**-siden kjører du **1110**-jobben (global konfigurasjon) for å distribuere funksjonsendringen.
+
+## <a name="initialize-the-commerce-scheduler"></a>Initialisere handelsplanleggeren
+
+Når du har aktivert funksjonen **Aktiver kanalreturpolicy**, må du initialisere handelsplanleggeren for å sikre at endringer i funksjonsdatabasen blir lagt til via Commerce Data Exchange (CDX)-synkronisering. 
+
+Følg denne fremgangsmåten for å starte handelsplanleggeren i Commerce Headquarters.
+
+- Gå til **Retail og Commerce \> Hovedkvarteroppsett \> Handelsplanlegger \> Initialiser handelsplanlegger**. Du kan også søke etter "Initialiser handelsplanlegger".
+- I dialogboksen **Initialiser handelsplanlegger** kontrollerer du at alternativet **Slett eksisterende konfigurasjon** er satt til **Nei**, og deretter velger du **OK**.
 
 ## <a name="configure-return-policy"></a>Konfigurere returpolicy
 
