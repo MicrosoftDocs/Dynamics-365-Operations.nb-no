@@ -4,24 +4,17 @@ description: Dette emnet beskriver integreringen av kundedata mellom Finance and
 author: RamaKrishnamoorthy
 ms.date: 07/15/2019
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 5af584eb0bdb65942921847219b46b8f93dae79d
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 8f85759f650e1c0e2a1d228b6429d218edac8ef4
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6350917"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542545"
 ---
 # <a name="integrated-customer-master"></a>Integrert original for kunde
 
@@ -29,8 +22,7 @@ ms.locfileid: "6350917"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-
-Kundedata kan styres i mer enn ett Dynamics 365-program. En kunderad kan for eksempel komme fra salgsaktivitet i Dynamics 365 Sales (en modelldrevet app i Dynamics 365), eller en rad kan stamme fra detaljhandelsaktivitet i Dynamics 365 Commerce (en Finance and Operations-app). Uansett hvor kundedataene kommer fra, er de integrert bak kulissene. Integrert original for kunde gir deg fleksibilitet til å styre kundedata i alle Dynamics 365-programmer, og gir en omfattende visning av kunden på tvers av Dynamics 365-programserien.
+Kundedata kan styres i mer enn ett Dynamics 365-program. En kunderad kan for eksempel komme fra salgsaktivitet i Dynamics 365 Sales (en kundeengasjementsapp), eller en rad kan stamme fra detaljhandelsaktivitet i Dynamics 365 Commerce (en Finance and Operations-app). Uansett hvor kundedataene kommer fra, er de integrert bak kulissene. Integrert original for kunde gir deg fleksibilitet til å styre kundedata i alle Dynamics 365-programmer, og gir en omfattende visning av kunden på tvers av Dynamics 365-programserien.
 
 ## <a name="customer-data-flow"></a>Kundedataflyt
 
@@ -50,43 +42,18 @@ Når en ikke-salgbar kontakt deltar i en tilbuds- eller en ordreprosess er **Sel
 
 Kundedata inkluderer all informasjon om kunden, for eksempel kundegruppe, adresser, kontaktinformasjon, betalingsprofil, fakturaprofil og fordelsstatus. En samling tabelltilordninger fungerer sammen under kundedatasamhandling, som vist i følgende tabell.
 
-Finance and Operations-apper | Andre Dynamics 365-apper         | Beskrivelse
+Finance and Operations-apper | Kundeengasjementsapper         | beskrivelse
 ----------------------------|---------------------------------|------------
-CDS-kontakter V2             | kontakter                        | Denne malen synkroniserer all primær, sekundær og tertiær informasjon, både for kunder og leverandører.
-Kundegrupper             | msdyn_customergroups            | Denne malen synkroniserer kundegruppeinformasjon.
-Kundebetalingsmåte     | msdyn_customerpaymentmethods    | Denne malen synkroniserer informasjon om kundebetalingsmåte.
-Kunder V3                | kontoer                        | Denne malen synkroniserer kundens hoveddata for kommersielle og organisatoriske kunder.
-Kunder V3                | kontakter                        | Denne malen synkroniserer hoveddata for kunder for forbrukere og sluttbrukere.
-Navnevedlegg                | msdyn_nameaffixes               | Denne malen synkroniserer referansedata for navnevedlegg, både for kunder og leverandører.
-Betalingsdagslinjer, CDS V2    | msdyn_paymentdaylines           | Denne malen synkroniserer referansedata om betalingsdagslinjer, både for kunder og leverandører.
-Betalingsdager, CDS            | msdyn_paymentdays               | Denne malen synkroniserer referansedata om betalingsdager, både for kunder og leverandører.
-Linjer i betalingsplan      | msdyn_paymentschedulelines      | Synkroniserer referansedata om betalingsplanlinjer, både for kunder og leverandører.
-Betalingsplan            | msdyn_paymentschedules          | Denne malen synkroniserer referansedata om betalingsplan, både for kunder og leverandører.
-Betalingsbetingelser            | msdyn_paymentterms              | Denne malen synkroniserer referansedata om betalingsbetingelser, både for kunder og leverandører.
-
-[!include [banner](../../includes/dual-write-symbols.md)]
-
-[!include [mapping contacts contacts](includes/CDSContactsV2-contacts.md)]
-
-[!include [mapping customer group](includes/CustCustomerGroup-msdyn-customergroups.md)]
-
-[!include [mapping customer payment method](includes/CustomerPaymentMethod-msdyn-customerpaymentmethods.md)]
-
-[!include [mapping customer accounts](includes/CustomersV3-accounts.md)]
-
-[!include [mapping customer contacts](includes/CustomersV3-contacts.md)]
-
-[!include [mapping name affixes](includes/NameAffixes-msdyn-nameaffixes.md)]
-
-[!include [mapping payment day lines](includes/PaymentDayLinesCdsV2-msdyn-paymentdaylines.md)]
-
-[!include [mapping payment days](includes/PaymentDaysCds-msdyn-paymentdays.md)]
-
-[!include [mapping payment schedule lines](includes/PaymentScheduleLines-msdyn-paymentschedulelines.md)]
-
-[!include [mapping payment schedules](includes/PaymentSchedules-msdyn-paymentschedules.md)]
-
-[!include [mapping terms of payment](includes/TermsofPayment-msdyn-paymentterms.md)]
-
+[CDS-kontakter V2](mapping-reference.md#115) | kontakter | Denne malen synkroniserer all primær, sekundær og tertiær informasjon, både for kunder og leverandører.
+[Kundegrupper](mapping-reference.md#126) | msdyn_customergroups | Denne malen synkroniserer kundegruppeinformasjon.
+[Kundebetalingsmåte](mapping-reference.md#127) | msdyn_customerpaymentmethods | Denne malen synkroniserer informasjon om kundebetalingsmåte.
+[Kunder V3](mapping-reference.md#101) | kontoer | Denne malen synkroniserer kundens hoveddata for kommersielle og organisatoriske kunder.
+[Kunder V3](mapping-reference.md#116) | kontakter | Denne malen synkroniserer hoveddata for kunder for forbrukere og sluttbrukere.
+[Navnevedlegg](mapping-reference.md#155) | msdyn_nameaffixes | Denne malen synkroniserer referansedata for navnevedlegg, både for kunder og leverandører.
+[Betalingsdagslinjer, CDS V2](mapping-reference.md#157) | msdyn_paymentdaylines | Denne malen synkroniserer referansedata om betalingsdagslinjer, både for kunder og leverandører.
+[Betalingsdager, CDS](mapping-reference.md#158) | msdyn_paymentdays | Denne malen synkroniserer referansedata om betalingsdager, både for kunder og leverandører.
+[Linjer i betalingsplan](mapping-reference.md#159) | msdyn_paymentschedulelines | Synkroniserer referansedata om betalingsplanlinjer, både for kunder og leverandører.
+[Betalingsplan](mapping-reference.md#160) | msdyn_paymentschedules | Denne malen synkroniserer referansedata om betalingsplan, både for kunder og leverandører.
+[Betalingsbetingelser](mapping-reference.md#161) | msdyn_paymentterms | Denne malen synkroniserer referansedata om betalingsbetingelser, både for kunder og leverandører.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

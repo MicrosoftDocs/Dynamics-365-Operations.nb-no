@@ -2,7 +2,7 @@
 title: Likviditetsbeholdning (forhåndsversjon)
 description: Dette emnet beskriver hvordan funksjonen Kontantstrømprognose forutsier en organisasjons likviditetsbeholdning for bestemte tider. Det beskriver også alternativene som er tilgjengelige for å vise prognoser for forskjellige perioder.
 author: ShivamPandey-msft
-ms.date: 06/03/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: b3b32bac436dc0be7ae4c072f4e560ad6d8b6d81
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: 1935be3b2d52e19b764e6afdf00a8bc546f801df
+ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186498"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "6638758"
 ---
 # <a name="cash-position-preview"></a>Likviditetsbeholdning (forhåndsversjon)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Likviditetsbeholdning er prosjekteringen av kontantstrøm som forutsies på kort sikt. Den er basert på prosjekteringen av kontantkvitteringer fra kunder som betaler utestående fakturaer og ordrer, og også på prosjekteringen av kontantutbetalinger som betales til leverandører for innkjøpsfakturaer og -ordrer.
 

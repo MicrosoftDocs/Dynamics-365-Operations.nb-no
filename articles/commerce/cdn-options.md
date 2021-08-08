@@ -2,7 +2,7 @@
 title: Implementeringsalternativer for innholdsleveringsnettverk
 description: Dette emnet gjennomgår de ulike alternativene for CDN-implementering (Content Delivery Network) som kan brukes i Microsoft Dynamics 365 Commerce-miljøer. Disse alternativene omfatter innebygde, Commerce-formidlede forekomster av Azure Front Door og kundeeide forekomster av Azure Front Door.
 author: BrianShook
-ms.date: 03/11/2021
+ms.date: 07/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: eec18dbffe33bc6366b4282d05189b31620616d6
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 0e6425d7e473d1d1c263624599d54c6b040d90cb
+ms.sourcegitcommit: a52ad281071b3a49c461e5853e82f302dd33095a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6351255"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "6657125"
 ---
 # <a name="content-delivery-network-implementation-options"></a>Implementeringsalternativer for innholdsleveringsnettverk
 
@@ -50,7 +50,7 @@ I tabellen nedenfor finner du en oversikt over fordeler og ulemper ved å bruke 
 
 | Fordeler | Ulemper |
 |------|------|
-| <ul><li>Forekomsten er inkludert i Commerce-kostnaden.</li><li>Ettersom forekomsten administreres av Commerce-teamet, kreves det mindre vedlikehold, og det finnes trinn for delt oppsett.</li><li>Den Azure-driftede infrastrukturen er skalerbar, sikker og pålitelig.</li><li>SSL-sertifikatet (Secure Sockets Layer) krever et engangsoppsett og fornyes automatisk.</li><li>Forekomsten blir overvåket for feil og mangler av Commerce-teamet.</li></ul> | <ul><li>En WAF støttes ikke.</li><li>Det finnes ingen bestemte tilpassinger eller justeringer.</li><li>Forekomsten avhenger av Commerce-teamet for oppdateringer eller endringer.</li><li>En separat forekomst av Azure Front Door kreves for apex-domener, og det kreves ekstra arbeid for å integrere apex-domener Azure DNS.</li><li>Det er ikke angitt noe telemetri om svar per andre (RPS) eller om feilraten til kunden.</li></ul> |
+| <ul><li>Forekomsten er inkludert i Commerce-kostnaden.</li><li>Ettersom forekomsten administreres av Commerce-teamet, kreves det mindre vedlikehold, og det finnes trinn for delt oppsett.</li><li>Den Azure-driftede infrastrukturen er skalerbar, sikker og pålitelig.</li><li>SSL-sertifikatet (Secure Sockets Layer) krever et engangsoppsett og fornyes automatisk.</li><li>Forekomsten blir overvåket for feil og mangler av Commerce-teamet.</li></ul> | <ul><li>En brannmur for nettbaserte apper støttes ikke.</li><li>Det finnes ingen bestemte tilpassinger eller justeringer.</li><li>Forekomsten avhenger av Commerce-teamet for oppdateringer eller endringer.</li><li>En separat forekomst av Azure Front Door kreves for apex-domener, og det kreves ekstra arbeid for å integrere apex-domener Azure DNS.</li><li>Det er ikke angitt noe telemetri om svar per andre (RPS) eller om feilraten til kunden.</li></ul> |
 
 Illustrasjonen nedenfor viser arkitekturen i forekomsten av den Commerce-formidlede forekomsten for Azure Front Door.
 
@@ -74,7 +74,7 @@ I tabellen nedenfor finner du en oversikt over fordeler og ulemper ved bruk av e
 
 | Fordeler | Ulemper |
 |------|------|
-| <ul><li>Dette alternativet er nyttig når det eksisterende domenet allerede er vert for en ekstern CDN.</li><li>Konkurrerende CDN-er (for eksempel Akamai) kan ha flere WAF-funksjoner.</li></ul> | <ul><li>En separat kontrakt og ekstra etterkalkulering kreves.</li><li>SSL kan påløpe ekstra kostnader.</li><li>Ettersom tjenesten er atskilt fra skystrukturen i Azure, må tilleggsinfrastruktur administreres.</li><li>Tjenesten kan kreve lengre tidsinvesteringer i endepunkts- og sikkerhetsoppsett.</li><li>Tjenesten er selvstyrt.</li><li>Tjenesten er selvovervåket.</li></ul> |
+| <ul><li>Dette alternativet er nyttig når det eksisterende domenet allerede er vert for en ekstern CDN.</li><li>Brannmur for nettbaserte apper: Avhenger av ekstern leverandør.</li></ul> | <ul><li>En separat kontrakt og ekstra etterkalkulering kreves.</li><li>SSL kan påløpe ekstra kostnader.</li><li>Ettersom tjenesten er atskilt fra skystrukturen i Azure, må tilleggsinfrastruktur administreres.</li><li>Tjenesten kan kreve lengre tidsinvesteringer i endepunkts- og sikkerhetsoppsett.</li><li>Tjenesten er selvstyrt.</li><li>Tjenesten er selvovervåket.</li></ul> |
 
 Illustrasjonen nedenfor viser en Commerce-infrastruktur som omfatter en ekstern CDN-tjeneste.
 

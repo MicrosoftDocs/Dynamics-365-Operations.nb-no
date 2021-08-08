@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2c53d28192c5bf673baccd76e4cfb6e0453fe29d
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: e155263daf2f33531abefdc45c5046a5ab5bca11
+ms.sourcegitcommit: 787c94b35f343f4c38fc8efaaa0cfaf20a846368
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6337935"
+ms.lasthandoff: 07/21/2021
+ms.locfileid: "6647212"
 ---
 # <a name="procurement-and-sourcing-home-page"></a>Startside for innkjøp og leverandører
 
@@ -78,9 +78,8 @@ Innkjøp og leverandører dekker alle trinnene fra å identifisere et behov for 
 -   [Opprette bestilling for en engangsleverandør](tasks/create-purchase-order-one-time-supplier.md)
 -   [Opprette en bestilling med en leveringsplan](tasks/create-purchase-order-delivery-schedule.md)
 -   [Opprette en innkjøpsreturordre](tasks/create-purchase-return-order.md)
--   [Opprette en frigivelsesordre for innkjøp fra en innkjøpsavtale](tasks/create-purchase-release-order-purchase-agreement.md)
--   [Opprette en frigivelsesordre for innkjøp ved oppretting av bestillingen](tasks/create-purchase-release-order-creating-purchase-order.md)
--   [Opprette en etterfyllingsordre for forsendelse](../inventory/tasks/create-consignment-replenishment-order.md)
+-   [Bruk en kjøpsavtale ved oppretting av en bestilling](tasks/create-purchase-release-order-purchase-agreement.md)
+-   [Opprette en ny etterfyllingsordre for forsendelse](../inventory/tasks/create-consignment-replenishment-order.md)
 
 ## <a name="prices-and-discounts"></a>Priser og rabatter
 -   [Kjøpsavtaler](purchase-agreements.md)

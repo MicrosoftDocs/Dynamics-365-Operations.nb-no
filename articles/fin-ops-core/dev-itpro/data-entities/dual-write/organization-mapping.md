@@ -4,24 +4,17 @@ description: Dette emnet beskriver integreringen av organisasjonsdata mellom Fin
 author: RamaKrishnamoorthy
 ms.date: 07/15/2019
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 77625e6e80bfa45add6839df89d9aae27e41d456
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: d1ad3bc4eef1650b927d9f6dd699f788994c7e87
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6355304"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542593"
 ---
 # <a name="organization-hierarchy-in-dataverse"></a>Organisasjonshierarki i Dataverse
 
@@ -45,32 +38,17 @@ Tabeltilordninger for organisasjonshierarki er tilgjengelige for enveissynkronis
 
 Produktinformasjonen inneholder all informasjonen som er knyttet til produktet og definisjonen, for eksempel produktdimensjonene eller sporings- og lagerdimensjonene. Som følgende tabell viser opprettes en samling tabelltilordning for å synkronisere produkter og beslektet informasjon.
 
-Finance and Operations-apper | Andre Dynamics 365-apper | beskrivelse
+Finance and Operations-apper | Kundeengasjementsapper     | beskrivelse
 -----------------------|--------------------------------|---
-Formål for organisasjonshierarki | msdyn_internalorganizationhierarchypurposes | Denne malen gir enveis synkronisering av formålstabellen for organisasjonshierarkiet.
-Type organisasjonshierarki | msdyn_internalorganizationhierarchytypes | Denne malen gir enveis synkronisering av typetabellen for organisasjonshierarkiet.
-Organisasjonshierarki – publisert | msdyn_internalorganizationhierarchies | Denne malen gir enveis synkronisering av den publiserte tabellen for organisasjonshierarkiet.
-Driftsenhet | msdyn_internalorganizations |
-Juridiske enheter | msdyn_internalorganizations |
-Juridiske enheter | cdm_companies | Gir toveis synkronisering av informasjon om juridisk enhet (firma).
-
-[!include [banner](../../includes/dual-write-symbols.md)]
-
-[!include [Organization hierarchy purposes](includes/OrganizationHierarchyPurpose-msdyn-internalorganizationhierarchypurposes.md)]
-
-[!include [Organization hierarchy type](includes/OrganizationHierarchyType-msdyn-internalorganizationhierarchytypes.md)]
-
-[!include [Organization hierarchy - published](includes/OrganizationHierarchyPublished-msdyn-internalorganizationhierarchies.md)]
+[Juridiske enheter](mapping-reference.md#102) | cdm_companies | Gir toveis synkronisering av informasjon om juridisk enhet (firma).
+[Juridiske enheter](mapping-reference.md#142) | msdyn_internalorganizations |
+[Driftsenhet](mapping-reference.md#143) | msdyn_internalorganizations |
+[Organisasjonshierarki – publisert](mapping-reference.md#139) | msdyn_internalorganizationhierarchies | Denne malen gir enveis synkronisering av den publiserte tabellen for organisasjonshierarkiet.
+[Formål for organisasjonshierarki](mapping-reference.md#140) | msdyn_internalorganizationhierarchypurposes | Denne malen gir enveis synkronisering av formålstabellen for organisasjonshierarkiet.
+[Type organisasjonshierarki](mapping-reference.md#141) | msdyn_internalorganizationhierarchytypes | Denne malen gir enveis synkronisering av typetabellen for organisasjonshierarkiet.
 
 ## <a name="internal-organization"></a>Intern organisasjon
 
 Informasjon om intern organisasjon i Dataverse kommer fra to tabeller, **driftsenhet** og **juridiske enheter**.
-
-[!include [Operating unit](includes/OperatingUnit-msdyn-internalorganizations.md)]
-
-[!include [Legal entities](includes/LegalEntities-msdyn-internalorganizations.md)]
-
-[!include [Legal entities](includes/LegalEntities-Companies.md)]
-
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
