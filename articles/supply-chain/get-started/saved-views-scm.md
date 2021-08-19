@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 1b1077fdb4707bf2c019e86cb073b30465817577
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 2544591773bea7d54b4da4ac25ed3fed3f9e3594c5f791a0975c0349583b695c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6270665"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6728633"
 ---
 # <a name="standard-saved-views-for-supply-chain-management"></a>Standard lagrede visninger for Supply Chain Management
 
@@ -77,6 +77,18 @@ Tabellen nedenfor beskriver de lagrede visningene som er tilgjengelige for modul
 | Bestillingsdetaljer | Økonomistyring | Denne forenklede visningen er optimalisert for å utføre økonomirelaterte aktiviteter, for eksempel fakturering og kontroll av priser, totaler og tillegg. | Lagrede visninger for bestillinger |
 | Bestillingsdetaljer | Ordregodkjenning | Denne forenklede visningen er optimalisert for godkjenning av nye bestillinger. | Lagrede visninger for bestillinger |
 
+## <a name="saved-views-for-the-product-information-management-module"></a>Lagrede visninger for Produktinformasjon-styringsmodulen
+
+Tabellen nedenfor beskriver de lagrede visningene som er tilgjengelige for Produktinformasjon-styringsmodulen.
+
+| Side | Visningsnavn | Vis beskrivelse | Funksjonsnavn |
+|---|---|---|---|
+| Liste over frigitte produkter | Produktoppretting | En forenklet sidevisning som bare inneholder feltene som oftest brukes ved oppretting av produkter. | Lagrede visninger for frigitte produkter |
+| Detaljer om frigitt produkt | Produktoppretting | En forenklet sidevisning som bare inneholder feltene som oftest brukes ved oppretting av produkter. | Lagrede visninger for frigitte produkter |
+| Detaljer om frigitt produkt | Administrasjon av logistikkinformasjon | En forenklet sidevisning som bare inneholder feltene som oftest brukes ved administrering av logistikkinformasjon for produkter. | Lagrede visninger for frigitte produkter |
+| Detaljer om frigitt produkt | Behandling av innkjøpsinformasjon | En forenklet sidevisning som bare inneholder feltene som oftest brukes ved administrering av innkjøpsinformasjon for produkter. | Lagrede visninger for frigitte produkter |
+| Detaljer om frigitt produkt | Behandling av salgsinformasjon | En forenklet sidevisning som bare inneholder feltene som oftest brukes ved administrering av salgsrelatert informasjon for produkter. | Lagrede visninger for frigitte produkter |
+
 ## <a name="saved-views-for-the-production-control-module"></a>Lagrede visninger for modulen Produksjonskontroll
 
 Tabellen nedenfor beskriver de lagrede visningene som er tilgjengelige for modulen Produksjonskontroll.
@@ -110,7 +122,7 @@ Tabellen nedenfor beskriver de lagrede visningene som er tilgjengelige for modul
 | Alle forsendelser | Innkommende behandling | Denne forenklede visningen omfatter bare feltene som oftest brukes til å behandle innkommende forsendelser. | Lagrede visninger for forsendelsesbehandling |
 | Alle forsendelser | Utgående behandling | Denne forenklede visningen omfatter bare feltene som oftest brukes til å behandle utgående forsendelser. | Lagrede visninger for forsendelsesbehandling |
 | Alle bølger | Forenklet | Denne forenklede visningen omfatter bare feltene som brukes oftest. Dermed får du en raskere oversikt og en effektivisert arbeidsprosess. | Lagret visning for bølgebehandling |
-| Arbeidsområde for lastplanlegging | Forenklet | Denne forenklede visningen omfatter bare feltene som brukes oftest. Dermed får du en raskere oversikt og en effektivisert arbeidsprosess. | Lagret visning for arbeidsområde for arbeidsplanlegging |
+| Arbeidsområde for lastplanlegging | Forenklet | Denne forenklede visningen omfatter bare feltene som brukes oftest. Dermed får du en raskere oversikt og en effektivisert arbeidsprosess. | Lagret visning for arbeidsområdet for lastplanlegging |
 | Arbeidsdetaljer | Forenklet | Denne forenklede visningen omfatter bare feltene som brukes oftest. Dermed får du en raskere oversikt og en effektivisert arbeidsprosess. | Lagret visning for arbeidsdetaljsiden |
 
 

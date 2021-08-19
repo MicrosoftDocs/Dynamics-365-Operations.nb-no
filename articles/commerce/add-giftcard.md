@@ -2,7 +2,7 @@
 title: Gavekortmodul
 description: Dette emnet dekker gavekortmoduler og beskriver hvordan du legger dem til på områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 04/29/2021
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 7fc35c67a2d9b641f03f11ed5d06913e10d8e25b
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 5a4aaf8e072f6547fe1dcf6fa156d2e144fd03ed806a2dc809a2cedb991461f7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6347507"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6728345"
 ---
 # <a name="gift-card-module"></a>Gavekortmodul
 
@@ -48,11 +48,17 @@ Bildet nedenfor viser et eksempel på en gavekortmodul på en kasseside.
 
 - **Vis flere felt** – Denne egenskapen definerer hvilke felt som skal vises for gavekort i tillegg til gavekortnummeret, som alltid vises som standard. Noen gavekort støtter for eksempel visning av et personlig identifikasjonsnummer (PIN), og andre støtter visning av en PIN-kode og en utløpsdato. Alternativt kan denne egenskapen settes til "Ingen", som bare vil vise gavekortnummeret og ingen flere felt.
 
-Verdier som støttes:
--   PIN-kode
--   Utløpsdato
--   PIN-kode og utløpsdato 
--   None
+    Følgende verdier støttes:
+
+    - PIN-kode
+    - Utløpsdato
+    - PIN-kode og utløpsdato 
+    - None
+
+- **Aktiver for gjestebrukere** – Når denne egenskapen er aktivert, kan gjestebrukere løse inn eller sjekke saldoer på gavekort. Dette egenskapen krever at anonym tilgang (gjestetilgang) for gavekort aktiveres i Commerce headquarters. Hvis du vil ha mer informasjon, kan du se [Aktiver gavekortbetalinger for gjestekassen](#enable-gift-card-payments-for-guest-checkout).
+
+> [!IMPORTANT]
+> Egenskapen **Aktiver for gjestebrukere** er tilgjengelig fra og med Commerce, versjon 10.0.21. Den krever at Commerce-modulbibliotekpakken versjon 9.31 er installert.
 
 ## <a name="site-settings-for-gift-card-modules"></a>Områdeinnstillinger for gavekortmoduler
 

@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c7f70e20dfc2eb8608c5dfae027c87dc457eb842
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: e99c59eba133427dad6d6a27a96b64f06621c932924293e3978d7f540e86153e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791589"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6726413"
 ---
 # <a name="define-channel-attributes"></a> Definere kanalattributter
 
@@ -31,7 +31,7 @@ Forbedre kanalen ved å legge til kanal- og produktattributter. Du må legge til
 ## <a name="define-channel-product-attribute"></a>Definer kanalproduktattributt.
 1. Gå til Detaljhandel og handel > Kanaloppsett > Kanalkategorier og produktattributter.
 2. Velg Contoso Retail\Mote\Houston i treet.
-3. Klikk Rediger.
+3. Klikk på Rediger.
 4. Angi eller velg en verdi i Kategorihierarki-feltet.
     * Navigasjonshierarkiet brukes til å navigere produktet i kanalene.  
 5. Vis Attributtgruppe-delen.

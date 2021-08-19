@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: abc8dc112ab577ddcbd208f898a8d4e487bc2998
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d35504ab2fe6b8143d040bda505a904ab179b6137472073d788515f392faaef9
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5827776"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6722893"
 ---
 # <a name="research-or-resolve-exceptions"></a>Undersøke eller løse unntak
 
@@ -62,8 +62,8 @@ Denne registreringen bruker demonstrasjonsfirmaet USMF. Rollen regnskapssjef lev
 3. Skriv inn en verdi i Navn-feltet.
 4. Skriv inn en verdi i feltet Beskrivelse.
 5. Vis eller skjul delen Policyorganisasjoner.
-6. Velg "Contoso Entertainment System USA" i treet.
-7. Klikk Legg til.
+6. Velg Contoso Entertainment System USA i treet.
+7. Klikk på Legg til.
 8. Vis eller skjul delen Policyregler.
 9. Klikk Opprett policyregel.
 10. Skriv inn en verdi i feltet Beskrivelse av policyregel.
