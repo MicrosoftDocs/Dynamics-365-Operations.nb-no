@@ -2,7 +2,7 @@
 title: Opprette e-postmaler for transaksjonshendelser
 description: Dette emnet beskriver hvordan du oppretter, laster opp og konfigurerer e-postmaler for transaksjonshendelser i Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
-ms.date: 03/01/2021
+ms.date: 05/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,20 +14,18 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: bfc773bec035ceee151e2e2dd8925aa772747452
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 2da1044cd332d841a8c18f7139d0d8c09bad95f446494034060e59416b4018b8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019889"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6718713"
 ---
 # <a name="create-email-templates-for-transactional-events"></a>Opprette e-postmaler for transaksjonshendelser
 
 [!include [banner](includes/banner.md)]
 
 Dette emnet beskriver hvordan du oppretter, laster opp og konfigurerer e-postmaler for transaksjonshendelser i Microsoft Dynamics 365 Commerce.
-
-## <a name="overview"></a>Oversikt
 
 Dynamics 365 Commerce inneholder en bruksklar prosess for sending av e-postmeldinger som varsler kunder om transaksjonshendelser (for eksempel når en ordre er plassert, en ordre er klar for henting, eller en ordre er levert). Dette emnet beskriver prosedyren for å opprette, laste opp og konfigurere e-postmalene som brukes til å sende transaksjons-e-postmeldinger.
 
@@ -79,26 +77,33 @@ Følgende plassholdere henter og viser data som er definert på salgsordrenivå 
 | Plassholdernavn     | Plassholderverdi                                            |
 | -------------------- | ------------------------------------------------------------ |
 | customername         | Navnet på kunden som la inn ordren.               |
-| salesid              | Salgs-ID-en for ordren.                                   |
-| deliveryaddress      | Leveringsadressen for sendte ordrer.                     |
 | customeraddress      | Adressen til kunden.                                 |
 | customeremailaddress | E-postadressen som kunden la inn i betalingsprosessen.     |
+| salesid              | Salgs-ID-en for ordren.                                   |
+| orderconfirmationid  | Tverrkanals-ID-en som ble generert ved ordreoppretting. |
+| channelid            | ID-en til detaljhandelen eller nettkanalen som bestillingen ble gjort gjennom. |
+| deliveryname         | Navnet som er angitt for leveringsadressen.        |
+| deliveryaddress      | Leveringsadressen for sendte ordrer.                     |
 | deliverydate         | Leveringsdatoen.                                           |
 | shipdate             | Forsendelsesdatoen.                                               |
 | modeofdelivery       | Leveringsmåten for ordren.                              |
+| ordernetamount       | Det totale beløpet for ordren, minus den totale avgiften.         |
+| rabatt             | Den totale rabatten for ordren.                            |
 | tillegg              | De totale gebyrene for ordren.                             |
 | mva                  | Den totale avgiften for ordren.                                 |
 | sum                | Det totale beløpet for ordren.                              |
-| ordernetamount       | Det totale beløpet for ordren, minus den totale avgiften.         |
-| rabatt             | Den totale rabatten for ordren.                            |
 | storename            | Navnet på butikken der ordren ble lagt inn.            |
 | storeaddress         | Adressen til butikken som la inn ordren.              |
 | storeopenfrom        | Åpningstidene til butikken som la inn ordren.         |
 | storeopento          | Åpningstidene til butikken som la inn ordren.         |
-| pickupstorename      | Navnet på butikken der ordren blir hentet.     |
-| pickupstoreaddress   | Adressen til butikken der ordren blir hentet.  |
-| pickupopenstorefrom  | Åpningstidene til butikken der ordren blir hentet. |
-| pickupopenstoreto    | Åpningstidene til butikken der ordren blir hentet. |
+| pickupstorename      | Navnet på butikken der ordren blir hentet.\* |
+| pickupstoreaddress   | Adressen til butikken der ordren blir hentet.\* |
+| pickupopenstorefrom  | Åpningstidene til butikken der ordren blir hentet.\* |
+| pickupopenstoreto    | Åpningstidene til butikken der ordren blir hentet.\* |
+| pickupchannelid      | Kanal-ID-en for butikken som er angitt for en hentemåte for levering.\* |
+| packingslipid        | ID-en til følgeseddelen som ble generert da linjer i en ordre ble pakket.\* |
+
+\* Disse plassholderne returnerer bare data når de brukes for varslingstypen **Ordre klar for henting**. 
 
 ### <a name="order-line-placeholders-sales-line-level"></a>Plassholdere for ordrelinje (salgslinjenivå)
 
@@ -106,7 +111,10 @@ Følgende plassholdere henter og viser data for individuelle produkter (linjer) 
 
 | Plassholdernavn               | Plassholderverdi |
 |--------------------------------|-------------------|
-| productid                      | Produkt-ID-en for linjen. |
+| productid                      | <p>ID-en for produktet. Denne ID-en står for varianter.</p><p><strong>Obs!</strong> Denne plassholderen er avskrevet til fordel for **lineproductrecid**.</p> |
+| lineproductrecid               | ID-en for produktet. Denne ID-en står for varianter. Den identifiserer en vare unikt på variantnivå. |
+| lineitemid                     | Produktnivå-ID-en for produktet. (Denne ID-en står ikke for varianter.) |
+| lineproductvariantid           | ID-en for produktvarianten. |
 | lineproductname                | Navnet på produktet. |
 | lineproductdescription         | Beskrivelsen av produktet. |
 | linequantity                   | Antallet enheter som ble bestilt for linjen, pluss måleenheten (for eksempel **stk.** eller **par**). |
@@ -125,6 +133,8 @@ Følgende plassholdere henter og viser data for individuelle produkter (linjer) 
 | linedeliverydate               | Leveringsdatoen for linjen. |
 | linedeliverymode               | Leveringsmåten for linjen. |
 | linedeliveryaddress            | Leveringsadressen for linjen. |
+| linepickupdate                 | Hentedatoen som kunden har angitt, for ordrer som bruker en henteleveringsmåte. |
+| linepickuptimeslot             | Tidsområdet for henting som kunden har angitt, for ordrer som bruker en henteleveringsmåte. |
 | giftcardnumber                 | Gavekortnummeret for produkter av typen gavekort. |
 | giftcardbalance                | Gavekortsaldoen for produkter av typen gavekort. |
 | giftcardmessage                | Gavekortmeldingen for produkter av typen gavekort. |

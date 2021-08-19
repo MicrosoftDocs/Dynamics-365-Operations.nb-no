@@ -94,6 +94,8 @@
                   items:
                     - name: Nyheter eller endringer på startsiden for Commerce
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.21 (oktober 2021)
+                      href: get-started/whats-new-commerce-10-0-21.md
                     - name: Commerce 10.0.20 (august 2021)
                       href: get-started/whats-new-commerce-10-0-20.md
                     - name: Commerce 10.0.19 (juni 2021)
@@ -512,12 +514,20 @@
                       href: ../finance/accounts-receivable/credit-card-authorizations.md?toc=/dynamics365/commerce/toc.json
                     - name: Konfigurere kontantstørrelser for salgsstedet
                       href: cash-denominations.md
-                    - name: Konfigurere kredittkortbehandling
+                    - name: Konfigurer kredittkortbehandling
                       href: tasks/configure-credit-card-processing.md
                     - name: Hopp over dialogboksen Endre forfall på salgsstedet
                       href: dev-itpro/skip-change-due.md
-                    - name: Betalingskobling for Ayden
-                      href: dev-itpro/adyen-connector.md
+                    - name: Dynamics 365 Payment Connector for Adyen
+                      items:
+                        - name: Oversikt over Dynamics 365 Payment Connector for Adyen
+                          href: dev-itpro/adyen-connector.md
+                        - name: Konfigurer Dynamics 365 Payment Connector for Adyen
+                          href: dev-itpro/adyen-connector-setup.md
+                        - name: Vanlige spørsmål om Dynamics 365 Payment Connector for Adyen
+                          href: dev-itpro/adyen-connector-faq.md
+                        - name: Feilsøk problemer med Dynamics 365 Payment Connector for Adyen
+                          href: dev-itpro/adyen-connector-troubleshoot.md
                     - name: Lagre betalingsmåter på nett med Adyen-koblingen
                       href: dev-itpro/adyen-connector-listPI.md
                     - name: Sterk kundegodkjenning (SCA) ved hjelp av Adyen-koblingen
@@ -1180,13 +1190,17 @@
                   href: cloud-powered-search-overview.md
             - name: Rapportering
               items:
-                - name: Generere rapporter om Internett-kanal
+                - name: Generer rapporter om Internett-kanal
                   href: generate-reports.md
+            - name: Målretting
+              items:
+                - name: 'Målretting av enheter, markeder og geografisk plassering'
+                  href: targeting-overview.md
             - name: Eksperimentering
               items:
                 - name: Eksperimentering i Dynamics 365 Commerce
                   href: experimentation-overview.md
-                - name: Finne en hypotese og bestemme mål for et eksperiment
+                - name: Finn en hypotese og bestem måledata for et eksperiment
                   href: experimentation-identify.md
                 - name: Definere et eksperiment
                   href: experimentation-setup.md
@@ -1336,6 +1350,10 @@
               items:
                 - name: Commerce-lokalisering for Russland
                   href: localizations/rus-commerce-localization.md
+                - name: Konfigurer Commerce-lokalisering for Russland
+                  href: localizations/rus-commerce-setup.md
+                - name: Forskuddsbetalinger i Commerce for Russland
+                  href: localizations/rus-commerce-prepayments.md
             - name: Sverige
               items:
                 - name: Kassefunksjonalitet
