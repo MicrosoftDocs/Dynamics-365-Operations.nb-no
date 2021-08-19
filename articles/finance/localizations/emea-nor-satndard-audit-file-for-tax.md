@@ -12,12 +12,12 @@ ms.reviewer: kfend
 ms.search.region: Norway
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e5fd2ebe86340d1342c612fa6081c855854d5311
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: cf99ad5e4a6c7c18f1600c5061a6cc4438c6f020b714337ee53f559e3bbf3d66
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6348893"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6734502"
 ---
 # <a name="standard-audit-file-for-tax-saf-t-for-norway"></a>Standard revisjonsfil for avgift (SAF-T) for Norge
 

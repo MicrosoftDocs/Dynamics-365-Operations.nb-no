@@ -1,8 +1,8 @@
 ---
 title: Oppsett av dobbel skriving fra Lifecycle Services
 description: Dette emnet forklarer hvordan du konfigurerer en tilkobling med dobbel skriving fra Microsoft Dynamics Lifecycle Services (LCS).
-author: RamaKrishnamoorthy
-ms.date: 05/11/2021
+author: laneswenka
+ms.date: 08/03/2021
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
@@ -10,12 +10,12 @@ ms.search.region: global
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: e604e1491bbafa041fa3f52ad0f8b454c63d47de
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 060734154607263b5fed80b21fc9355b513ea26e3b1be88498310905531dceaa
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6359369"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6729049"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Oppsett av dobbel skriving fra Lifecycle Services
 
@@ -66,5 +66,18 @@ Hvis du vil definere skrivetilgang for et eksisterende Dataverse-miljø, må du 
 
 > [!NOTE]
 > Du kan ikke koble fra miljøer ved hjelp av LCS. Hvis du vil oppheve koblingen til et miljø, åpner du arbeidsområdet **Dataintegrering** i Finance and Operations-miljøet, og deretter velger du **Koble fra**.
+
+## <a name="linking-mismatch"></a>Koblingskonflikt
+
+Det er mulig at LCS-miljøet er koblet til en Dataverse-forekomst, mens skrivemiljøet er koblet til en annen Dataverse-forekomst. Denne koblingskonflikten kan forårsake uventet virkemåte, og det kan ende opp med å sende data til feil miljø. Det anbefalte miljøet som skal brukes til dobbel skriving, er det som opprettes som en del av Power Platform-integreringen, og langsiktig, er dette den eneste måten å etablere en kobling mellom miljøer på.
+
+Hvis miljøet ditt har en koblingskonflikt, viser LCS en advarsel på siden med miljødetaljer som ligner på «Microsoft har oppdaget at miljøet ditt er koblet via dobbel skriving til annet mål enn angitt i Power Platform-integrering, noe som ikke anbefales»:
+
+:::image type="content" source="media/powerplat_integration_mismatchLink.png" alt-text="Power Platform-integreringskoblingskonflikt.":::
+
+Hvis du oppdager denne feilen, finnes det to alternativer basert på dine behov:
+
++ [Koble fra og koble tilbake miljøer for dobbel skriving (Tilbakestill eller endre kobling)](relink-environments.md#scenario-reset-or-change-linking) slik det er angitt på siden med detaljer om LCS-miljøet. Dette er det ideelle alternativet, fordi du kan kjøre det uten Microsoft-støtte.  
++ Hvis du vil at koblingen skal holdes i dobbel skriving, kan du be om hjelp fra Microsoft Kundestøtte til å endre Power Platform-integreringen slik at den bruker det eksisterende Dataverse-miljøet, slik det er dokumentert i den forrige delen.  
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

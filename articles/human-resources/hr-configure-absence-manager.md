@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: hasrivas
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e8a8250b36d2774ac308637253b780592df316cd
-ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
+ms.openlocfilehash: 050874628388629569751afae201ef346af020da09c81d24a69e1a4b5eb41b6f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/19/2021
-ms.locfileid: "6639612"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6732351"
 ---
 # <a name="configure-the-absence-manager-role"></a>Konfigurere fraværsbehandlingsrollen
 
@@ -89,16 +89,21 @@ Fraværsbehandlingsrollen må tilordnes ansatte slik at de kan godkjenne eller a
 
 ## <a name="absence-manager-workspace"></a>Arbeidsområde for fraværsleder
 
-I arbeidsområdet **Ansattselvbetjening** viser fanen **Fraværsbehandling** fraværsinformasjon om de ansatte som er tilordnet til fraværsbehandlingen i permisjonshierarkiet.
+I arbeidsområdet **Ansattselvbetjening** viser fanen **Fraværsbehandling** fraværsinformasjon om de ansatte som er tilordnet til fraværsbehandlingen i permisjonshierarkiet. Fraværsbehandling har flere alternativer: 
+ - Se gjennom forespørsler om fridager.</br>
+ - Send en forespørsel om fravær på vegne av en ansatt.</br>
+ - Vis alle ansatte som er tilordnet dem som en del av permisjonshierarkiet.</br>
+ - Vis fraværslederkalenderen.</br>
 
-I kategorien **Permisjon og fravær** er følgende alternativer tilgjengelige for hver ansatt:
-
-- **Fridager** – Vis saldoer, godkjente fridager og forespørsler om fridager for den valgte ansatte.
-- **Permisjonssaldoer** – Vis en liste over saldoene for de ulike permisjonsplanene for den valgte ansatte.
+I arbeidsområdet for **Fraværsbehandling** finnes det to kategorier:
+ - **Forespørsler om fridager**: Denne fanen viser alle ventende avslagsforespørsler som fraværsansvarlig kan godkjenne. Fraværsansvarlig kan velge flere poster og gjøre noe med dem samtidig. Hvis permisjonsvisning på tvers av firmaer er aktivert, vil denne listen vise ventende fraværsforespørsler på tvers av alle juridiske enheter som de har tilgang til. Ellers vil den vise ventende fraværsforespørsler for den juridiske enheten som er valgt. </br>
+ - **Alle ansatte**: Denne fanen viser alle de ansatte som er tilordnet fraværslederen i permisjonshierarkiet. Det finnes et par tilgjengelige alternativer for hver ansatt:
+    - **Be om fri** – Send en ny fraværsforespørsel for den valgte ansatte.</br>
+    - **Fridager** – Vis saldoer, godkjente fridager og forespørsler om fridager for den valgte ansatte.</br>
 
 ## <a name="approve-time-off-requests"></a>Godkjenne fritidsforespørsler
 
-Fraværsledere kan godkjenne eller avslå fraværsforespørsler for ansatte. De kan også opprette forespørsler på vegne av ansatte etter behov.
+Fraværsledere kan godkjenne eller avslå fraværsforespørsler for ansatte. 
 
 > [!IMPORTANT]
 > Før fraværsledere kan godkjenne eller avslå forespørsler om fridager, må arbeidsflyten for permisjonsforespørsel være konfigurert til å tilordne arbeidselementer for permisjonsforespørsel til dem for gjennomgang.
@@ -109,15 +114,13 @@ Fraværsledere kan godkjenne eller avslå fraværsforespørsler for ansatte. De 
 >
 > Hvis du vil ha mer informasjon om hvordan du oppretter arbeidsflyten for permisjonsforespørsel, kan du se [Opprette en permisjonsforespørsel](hr-leave-and-absence-workflow.md).
 
-1. I arbeidsområdet **Ansattselvbetjening** velger du kategorien **Fraværsbehandling**.
+1. I arbeidsområdet **Ansattselvbetjening** velger du fanen **Fraværsbehandling**.
 
-2. Velg ønsket ansatt i kategorien **Fraværsbehandling**.
+2. Velg fraværsforespørsler som du vil gjøre noe med, i fanen **Fraværsforespørsler**. Du kan velge flere poster i denne listevisningen.
 
-3. Velg **Detaljer** og deretter **Fridager**.
+3. Bruk handlingsknappene øverst i rutenettet til å godkjenne, avslå eller delegere fraværsforespørselen. 
 
-4. Finn fritidsforespørselen, og velg **Godkjenning**-alternativet. Du kan deretter velge et alternativ for å godkjenne eller avbryte fritidsforespørselen.
-
-Statusen **Avbryt** angir at forespørselen er avslått. Statusen **Fullført** angir at forespørselen er godkjent.
+Brukeren kan også bruke flisen **Fraværsforespørsler** til venstre for å navigere til listen over alle arbeidselementer for fraværsforespørsler. 
 
 ## <a name="view-time-off-in-the-calendar"></a>Vise fridager i kalenderen
 

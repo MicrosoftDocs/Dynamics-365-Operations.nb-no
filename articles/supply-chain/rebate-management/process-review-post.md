@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 82b8a4e6ba7ebea7df9f5dad5abc3dfc3ce2687d
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 1a9603df8fd3b2c81c37ca95fd1b13d0b6f4004a38b0cf86846486e3b5d41bfa
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6270767"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6729416"
 ---
 # <a name="process-review-and-post-rebates"></a>Behandle, gjennomgå og postere rabatter
 
@@ -42,7 +42,70 @@ Den periodiske oppgaven **Beregn FIFO-innkjøpspriser** må kjøres for å bereg
 
 Gå til **Rabattbehandling \> Periodiske oppgaver \> Beregn FIFO-innkjøpspriser**. Velg **OK** i dialogboksen som vises, for å kjøre beregningen.
 
-## <a name="process-rebate-management-deals"></a>Behandle rabattbehandlingsavtaler
+## <a name="create-source-transactions"></a>Opprett kildetransaksjoner
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
+Du kan opprette salgsordrer eller bestillinger som har kildetransaksjoner enten før eller etter at du har opprettet en gjeldende rabattbehandlingsavtale.
+
+Du kan definere hver avtalelinje slik at den automatisk oppretter en rabattprovisjon ved å postere leveringen eller fakturaen for en salgsordre eller bestilling. Angi **Transaksjonstype**-feltet for avtalelinjen til *Levering* eller *Faktura*, og sett **Behandle ved postering**-alternativet ved postering til *Ja*. Hvis **Transaksjonstype**-feltet er satt til *Ordre*, er behandling ved postering deaktivert. For kildetransaksjoner som ble opprettet etter at en avtale ble aktivert, kan du fremdeles behandle provisjonen slik det beskrives i delen [Behandle rabattbehandlingsavtaler](#process-deals) senere i dette emnet.
+
+### <a name="enable-price-details"></a>Aktiver prisdetaljer
+
+Før du kan opprette kildetransaksjoner, må du aktivere alternativet **Aktiver prisdetaljer** for kunder.
+
+1. Gå til **Kunder \> Oppsett \> Kundeparametere**.
+1. I fanen **Pris** i hurtigfanen **Prisdetaljer** angir du alternativet **Aktiver prisdetaljer** til *Ja*.
+
+### <a name="create-a-source-transaction"></a>Opprett en kildetransaksjon
+
+Hvis du vil opprette en kildetransaksjon, følger du fremgangsmåten nedenfor.
+
+1. Gå til **Salg og markedsføring \> Salgsordrer \> Alle salgsordrer**.
+1. Velg **Ny**.
+
+    Hvis du vil etterligne måten som rabattkrav genereres på, må du nå opprette en salgsordre, der produktet og antallet vil kvalifisere kunden for en rabatt.
+
+1. Angi eller velg en kunde som kvalifiserer for en rabattavtale, i **Kundekonto**-feltet.
+1. Velg **OK** for å opprette salgsordren.
+1. På hurtigfanen **Salgsordrelinjer** legger du til en linje og angir følgende felter for den:
+
+    - **Varenummer** – Angi en vare som kvalifiserer for en rabatt.
+    - **Antall** – Angi et antall som kvalifiserer for en rabattavtale som inkluderer en linje der **Grunnlag**-feltet er satt til *Antall*.
+    - **Enhetspris** – Angi en pris som kvalifiserer for en rabattavtale som inkluderer en linje der **Grunnlag**-feltet er satt til *Verdi*.
+    - **Område** – Velg et område der produktet er tilgjengelig, og som kvalifiserer for en rabattavtale.
+    - **Lager** – Velg et lager der produktet er tilgjengelig, og som kvalifiserer for en rabattavtale.
+
+1. Velg **Salgsordrelinje \> Prisdetaljer** i hurtigfanen **Salgsordrelinjer** på verktøylinjen. Kommandoen er bare tilgjengelig hvis du aktiverte prisdetaljer som beskrevet i den forrige delen.
+1. På siden **Prisinformasjon**, velg hurtigfanen **Rabattbehandling**. Denne hurtigfanen viser alle rabattbehandlingsavtaler som gjelder for gjeldende ordrelinje, og viser beregnet rabattbeløp i ordrens valuta. Legg merke til at beløpene bare er estimater for fremtidige krav om rabatt. De faktiske rabattbeløpene kan være forskjellige. Her er noen av faktorene som kan påvirke de faktiske beløpene:
+
+    - Det totale salgsvolumet som kunden oppnådde under en periodisk rabattavtale.
+    - Om kunden returnerte alle antall eller delvise antall.
+    - Om den gjeldende salgsordren oppnådde transaksjonstypen (*Ordre, Levering* eller *Faktura*) som er definert for rabattbehandlingsavtalen.
+    - Avtalens **utleveringsverdi**. Et tomt rabattbeløp vil vises for avtaler der **Utlevering**-feltet er satt til *Vare*.
+
+1. I hurtigfanen **Detaljer** legger du merke til at delen **Marginestimat** inkluderer følgende felter. Disse feltene legges til av Rabattbehandling. Alle viser verdier per enhet (mens feltene i hurtigfanen **Rabattbehandling** viser totalverdier for linjen).
+
+    - **Rabattbeløp for rabattbehandling** (bare salgsordrer)
+    - **Royalty-beløp for rabattbehandling** (bare salgsordrer)
+    - **Leverandørrabattbeløp for rabattbehandling** (salgsordrer og bestillinger)
+
+1. Lukk siden **Prisdetaljer**.
+1. Hvis salgsordren ikke skal kvalifisere for rabatter du akkurat har vist, følger du denne fremgangsmåten for å utelate rabatter. (Du vil vanligvis ikke utelukke rabatter.)
+
+    1. I hurtigfanen **Salgsordrelinjer** velger du den relevante linjen.
+    1. I hurtigfanen **Linjedetaljer** angir du alternativet **Ekskluder fra rabattbehandling** til *Ja* i kategorien **Pris og rabatt**. Dette alternativet gjelder ikke bestillinger. Videre utelates bare kunderabatter når dette alternativet er satt til *Ja*. Royalty-rabatter for kunder og leverandørrabatter gjelder fremdeles.
+
+1. I handlingsruten i **Plukk og pakk**-fanen i gruppen **Generer** velger du **Poster følgeseddel**.
+1. Velg **Alle** i **Antall**-feltet i hurtigfanen *Parametere*.
+1. Velg **OK**.
+1. Hvis du blir bedt om å bekrefte operasjonen, velger du **OK**.
+1. I handlingsruten, på **Faktura**-fanen i **Generer**-gruppen, velger du **Faktura**.
+1. Velg **Alle** eller **Følgeseddel** i *Antall*-feltet i hurtigfanen *Parametere*.
+1. Velg **OK**.
+1. Hvis du blir bedt om å bekrefte operasjonen, velger du **OK**.
+
+## <a name="process-rebate-management-deals"></a><a name="process-deals"></a>Behandle rabattbehandlingsavtaler
 
 Når du behandler en avtale, beregner systemet alle relevante rabatter og royalty som er satt opp. Bare valgte avtaler som har beregningsperioder som er klare til å beregnes, og som har statusen *Aktiv*, blir behandlet. Når behandlingen er fullført, genererer systemet et sett med transaksjoner som du kan gå gjennom og deretter postere.
 
@@ -93,9 +156,34 @@ I stedet for å behandle bestemte avtaler eller avtalelinjer kan du kjøre en sa
 1. På hurtigfanen **Kjør i bakgrunnen** kan du konfigurere alternativer for satsvis behandling og planlegging etter behov. Disse innstillingene fungerer på samme måte som de arbeider for andre typer satsvise jobber.
 1. Velg **OK** for å kjøre og/eller planlegge beregningen.
 
+### <a name="process-deals-by-using-the-rebate-workbench"></a>Behandle avtaler ved hjelp av arbeidsområdet for rabatt
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
+I stedet for å behandle bestemte avtaler eller avtalelinjer kan du bruke *arbeidsområdet for rabatt* til å behandle flere avtaler samtidig. Du kan eventuelt bruke postfiltre og/eller definere en gjentakende plan. Du trenger ikke merke noen rader. Systemet behandler alle linjer som oppfyller dato- og filterkravene du definerer.
+
+Følg denne fremgangsmåten for å behandle avtaler ved hjelp av området for rabatt.
+
+1. Gå til **Rabattbehandling \> Rabattbehandlingsavtaler \> Arbeidsområde for rabatt**.
+1. I handlingsruten, på fanen **Arbeidsområde for rabatt**, i **Behandler**-gruppen, velger du én av følgende kommander:
+
+    - **Behandle \> Klargjør** – Klargjør et sett med avsetninger for hver relevante avtalelinjen, men ikke poster avsetningene.
+    - **Behandle \> Rabattbehandling** – Behandle en serie med transaksjoner som oppgir verdien av rabatten for hver avtalelinje.
+    - **Prosess \> Avskrivning** – Behandle avviket mellom provisjon og rabattbehandling som posteres for hver kildetransaksjon per rabattavtale og angitt periode.
+
+1. I dialogboksen **Rabattbehandling**, i **Periode**-delen setter du feltene **Fra dato** og **Til dato** for å definere datoområdet for beregningen.
+1. I delen **Garantiperiode** setter du feltene **Fra dato** og **Til dato** for å definere datoområdet for beregningen.
+1. På hurtigfanen **Poster som skal inkluderes**, kan du definere filtre for å begrense settet med avtaler som den satsvise jobben skal behandle. Disse innstillingene fungerer på samme måte som de arbeider for andre typer satsvise jobber.
+1. På hurtigfanen **Kjør i bakgrunnen** kan du konfigurere alternativer for satsvis behandling og planlegging etter behov. Disse innstillingene fungerer på samme måte som de arbeider for andre typer satsvise jobber.
+1. Velg **OK** for å kjøre og/eller planlegge beregningen.
+
 ## <a name="view-and-edit-rebate-management-transactions"></a>Vis og rediger rabattbehandlingstransaksjoner
 
 Når du behandler én eller flere avtaler, oppretter systemet transaksjoner som du kan vise og kanskje redigere før du posterer dem.
+
+### <a name="view-and-edit-rebate-management-transactions-by-using-the-rebate-deals-list-page"></a>Vis og rediger transaksjoner for rabattbehandling ved å bruke listesiden for rabattavtaler
+
+For å vise og redigere transaksjoner for rabattbehandling ved å bruke listesiden for rabattavtaler gjør du følgende.
 
 1. Følg ett av disse trinnene:
 
@@ -120,6 +208,31 @@ Når du behandler én eller flere avtaler, oppretter systemet transaksjoner som 
 
         - Rediger verdien i feltet **Korrigert beløp**.
         - I handlingsruten velger du **Angi korreksjon**. Deretter angir du en verdi i feltet **Korrigert beløp** i rullegardinlisten som vises.
+
+> [!NOTE]
+> Hvis du bruker en kravprosess når du behandler den neste perioden, vil transaksjonslisten inneholde alle transaksjoner det ikke er gjort krav på, fra den forrige posteringen, i tillegg til eventuelle nye transaksjoner for den valgte perioden.
+
+### <a name="view-and-edit-rebate-management-transactions-by-using-the-rebate-workbench"></a>Vis og rediger transaksjoner for rabattbehandling ved å bruke arbeidsområdet for rabatt
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
+For å vise og redigere transaksjoner for rabattbehandling ved å bruke arbeidsområdet for rabatt gjør du følgende.
+
+1. Gå til **Rabattbehandling \> Rabattbehandlingsavtaler \> Arbeidsområde for rabatt**.
+1. Sett **Vis**-feltet til *Ikke postert*.
+1. Siden **Arbeidsområdet for rabatt** viser en liste over transaksjonene. Hver transaksjon gir relevante detaljer. Disse detaljene varierer, avhengig av transaksjonstypen. Du kan utføre følgende handlinger på denne siden:
+
+    - Hvis du vil vise mer informasjon om en transaksjon, kan du velge den og deretter velge fanen **Generelt**, **Finansdimensjon** eller **Dimensjon**.
+    - Hvis du bruker en kravprosess, kan du merke transaksjoner som enten er gjort krav på eller ikke. Velg de relevante radene, og i handlingsruten, på fanen **Arbeidsområde for rabatt** velger du en av følgende kommander. (Du aktiverer kravprosesser på siden [**Rabattbehandlingsparametere**](rebate-management-parameters.md).)
+
+        - **Angi som gjort krav på** – Merk de valgte transaksjonene som gjort krav på.
+        - **Angi som ikke gjort krav på** – Merk de valgte transaksjonene som ikke gjort krav på.
+
+    - Hvis du vil postere kravet for en eller flere linjer, velger du de relevante linjene. Velg deretter **Poster** i fanen **Arbeidsområde for rabatt**. **Poster**-knappen er tilgjengelig for avsetnings-, rabatt- og avskrivingstransaksjoner. I dialogboksen **Poster** angis **Fra dato**- og **Til dato**-feltene automatisk. Velg **Posteringsdato**-feltet, og velg deretter **OK**.
+    - Hvis du vil justere beløpet som vises for en åpen eller upostert transaksjon, velger du transaksjonen, og deretter følger du ett av disse trinnene:
+
+        - Rediger verdien i feltet **Korrigert beløp**.
+        - Velg deretter **Angi korrigering** i fanen **Arbeidsområde for rabatt**. Deretter angir du en verdi i feltet **Korrigert beløp** i rullegardinlisten som vises.
 
 > [!NOTE]
 > Hvis du bruker en kravprosess når du behandler den neste perioden, vil transaksjonslisten inneholde alle transaksjoner det ikke er gjort krav på, fra den forrige posteringen, i tillegg til eventuelle nye transaksjoner for den valgte perioden.
@@ -180,19 +293,89 @@ I stedet for å postere transaksjoner for bestemte avtaler eller avtalelinjer ka
 1. På hurtigfanen **Kjør i bakgrunnen** kan du konfigurere alternativer for satsvis behandling og planlegging etter behov. Disse innstillingene fungerer på samme måte som de arbeider for andre typer satsvise jobber.
 1. Velg **OK** for å kjøre og/eller planlegge beregningen.
 
-## <a name="review-rebate-management-journals"></a>Gå gjennom rabattbehandlingsjournaler
+### <a name="post-transactions-by-using-the-rebate-workbench"></a>Poster transaksjoner ved hjelp av arbeidsområdet for rabatt
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
+Når du har behandlet avsetnings-, rabatt- eller avskrivingstransaksjoner, følger du denne fremgangsmåten for å bruke arbeidsområdet for rabatt til å gå gjennom og postere de genererte transaksjonene for en eller flere bestemte transaksjonslinjer for alle avtaler.
+
+1. Gå til **Rabattbehandling \> Rabattbehandlingsavtaler \> Arbeidsområde for rabatt**.
+1. I rutenettet velger du raden hver transaksjonslinje du vil postere. Du kan velge ikke-posterte avsetnings-, rabatt- og/eller avskrivingstransaksjoner. Følgende regler gjelder:
+
+    - Systemet vil også postere alle linjer som har samme verdi for **rabattransaksjonsnummer** som linjene du velger.
+    - Systemet posterer ingen linjer av transaksjonstypen *Rabatt* som ikke er merket som krav.
+    - Hvis du velger linjer som allerede er postert, hopper systemet over de posterte linjene.
+    - **Poster**-knappen er bare tilgjengelig hvis du velger minst én upostert linje.
+
+1. I handlingsruten i fanen **Arbeidsområde for rabatt** i gruppen **Behandler** velger du **Poster**.
+1. I **Poster**-dialogboksen som vises, angir du **Posteringsdato**-feltet. Feltene **Fra dato** og **Til dato** angis automatisk, basert på den tidligste **Fra dato**-verdien og den siste **Til dato**-verdien for de valgte radene.
+1. Velg **OK** for å postere transaksjonene.
+
+## <a name="review-rebate-management-journals"></a><a name="review-journals"></a>Gå gjennom rabattbehandlingsjournaler
 
 Når transaksjonene er postert, kan du se gjennom de resulterende journalene, dokumentene eller varene. Måltransaksjoner for rabatter og royalty baseres på betalingstypen som er definert i posteringsprofilen og rabattens utleveringstype. Hvis for eksempel rabattutdataene er satt til *Vare*, opprettes det en salgsordre for en kunderabatt, og det opprettes en bestilling for en leverandørrabatt. Disse ordrene kan vises via måltransaksjonene. Hvis betalingen er definert til å bruke Leverandør, kan det imidlertid opprettes en leverandørfaktura for leverandøren som er definert for kunden, for kunderabatter.
+
+### <a name="review-journals-by-using-the-rebate-deals-list-page"></a>Gå gjennom journaler ved hjelp av listesiden for rabattavtaler
 
 Følg denne fremgangsmåten for å gå gjennom journaloppføringene som er knyttet til en avtale for rabattstyring.
 
 1. Åpne den aktuelle [rabattavtalelistesiden](rebate-management-deals.md) for avtaletypen du vil arbeide med.
 1. Velg avtalen du vil kontrollere journaloppføringer for.
 1. I handlingsruten, på fanen **Rabattbehandlingsavtaler**, i **Transaksjoner**-gruppen, velger du **Transaksjoner** eller **Garantitransaksjoner**, alt etter typen transaksjoner du ønsker å se på.
-1. Kontroller at **Vis**-feltet er satt til *Alle* eller *Postert*.
+1. Sett **Vis**-feltet til *Alle* eller *Postert*.
 1. Finn og velg transaksjonssamlingen du vil undersøke, og velg deretter en av knappene nedenfor i handlingsruten. (Disse knappene er bare tilgjengelige når det finnes relevante posteringer for den valgte transaksjonssamlingen.)
 
     - **Måltransaksjoner** – Gå gjennom relevante journaler og andre typer dokumenter som ble generert av den valgte avtalen.
     - **Varer** – Gå gjennom relevante salgsordrer eller bestillinger som ble generert av den valgte avtalen.
 
 1. En liste over relevante journaler, dokumenter eller varer vises. Hvis du vil vise mer informasjon om en journal, et dokument eller et element, merker du den aktuelle raden og velger deretter **Vis detaljer** i handlingsruten.
+
+### <a name="review-journals-by-using-the-rebate-workbench"></a>Gå gjennom journaler ved hjelp av arbeidsområdet for rabatt
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
+Følg denne fremgangsmåten for å gå gjennom journaler ved hjelp av området for rabatt.
+
+1. Gå til **Rabattbehandling \> Rabattbehandlingsavtaler \> Arbeidsområde for rabatt**.
+1. Sett **Vis**-feltet til _Alle_ eller _Postert_.
+1. Finn og velg linjen du vil undersøke. I handlingsruten, i **Arbeidsområde for rabatt**-fanen og **Vis**-gruppen, velger du **Måltransaksjoner**. Denne knappen er bare tilgjengelig hvis det finnes relevante posteringer for den valgte linjen.
+1. En liste over relevante journaler, dokumenter eller varer vises. Hvis du vil vise mer informasjon om en journal, et dokument eller et element, merker du den aktuelle raden og velger deretter **Vis detaljer** i handlingsruten.
+
+## <a name="rebate-management-transactions-on-the-deduction-workbench"></a>Transaksjoner for rabattbehandling på arbeidsområdet for fradrag
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
+Når du posterer en rabattbehandlingstransaksjon som har en av følgende **betalingstypeverdier**, oppretter systemet en kundefradragsjournal eller en fritekstfaktura for den aktuelle kundekontoen:
+
+- Kundefradrag
+- Fradrag for avgiftsrakturakunde
+- Forretningsutgifter
+- Rapportering
+
+Når en måltransaksjon er opprettet og postert, blir den tilgjengelig som en åpen transaksjon på siden **Arbeidsområde for fradrag** (**Salg og markedsføring \> Handelsrabatt \> Fradrag \> Arbeidsområde for fradrag**). Åpne transaksjoner har verdien **Kravtype** for *Rabattbehandling*, og en verdi for **rabattransaksjonsnummer** er tilgjengelig for å aktivere sporing. Datoen settes til posteringsdatoen for måltransaksjonen for rabattbehandling. Hvis du vil bruke arbeidsområdet for fradrag til å utligne åpne transaksjoner mot eksisterende fradrag for den samme kundekontoen, velger du **Vedlikehold \> Samsvar** i handlingsruten.
+
+Hvis du vil ha mer informasjon, kan du se [Behandle fradrag med arbeidsområdet for fradrag](deduction-workbench.md).
+
+## <a name="purge-unposted-transactions"></a>Slett ikke-posterte transaksjoner
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
+Når du har behandlet avsetnings-, rabatt- eller avskrivingstransaksjoner, følger du denne fremgangsmåten for å slette valgte ikke-posterte transaksjoner.
+
+1. Gå til **Rabattbehandling \> Rabattbehandlingsavtaler \> Arbeidsområde for rabatt**.
+2. Sett **Vis**-feltet til *Ikke postert*.
+3. Finn og velg transaksjonene som skal slettes. I handlingsruten i fanen **Arbeidsområde for rabatt** i gruppen **Behandler** velger du **Slett**.
+4. Velg **OK** for å slette de ikke-posterte transaksjonene.
+
+## <a name="cancel-a-posted-provision"></a>Avbryt en postert avsetning
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
+Når du har behandlet og postert en avsetning, følger du denne fremgangsmåten for å avbryte de posterte avsetningstransaksjonene.
+
+1. Gå til **Rabattbehandling \> Rabattbehandlingsavtaler \> Arbeidsområde for rabatt**.
+2. Sett **Vis**-feltet til *Postert*.
+3. Finn og velg avsetningstransaksjonene som skal avbrytes. I handlingsruten i fanen **Arbeidsområde for rabatt** i gruppen **Behandler** velger du **Avbryt avsetning**.
+4. Velg **OK** for å tilbakeføre transaksjonene.
+
+Disse tilbakeføringene av avsetningene er også synlige i de relevante [rabattstyringsjournalene](#review-journals).
