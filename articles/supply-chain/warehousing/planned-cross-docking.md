@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 9c31b8dd7d69fee40ecefb6c6bc81c9c2dd17ef7
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 81888e0703c53333ab9697c0445270f2f40c7b9ba02f3ba5fa728aef0b78b3a6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6359083"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6730016"
 ---
 # <a name="planned-cross-docking"></a>Planlagt direkteoverføring
 
@@ -117,6 +117,9 @@ Planlagt direkteoverføring er implementert som en lastposteringsmetode. Når du
     - **Sekvensnummer:** *1*
     - **Forsyningskilde:** *Bestilling*
 
+> [!NOTE]
+> Du kan definere en spørring til å kontrollere når en bestemt direkteoverføringsmal brukes. Spørringen for maler for direkteoverføring har bare *InventTable*-tabellen (varer) og den internkoblede *WHSInventTable-tabellen* (WHS-varer). Hvis du vil legge til andre tabeller i spørringen, kan du koble dem sammen ved bare å bruke *eksisterende koblinger* eller *ikke-eksisterende koblinger*. Når du filtrerer på de sammenføyde tabellene, blir det hentet en post fra hovedtabellen for hver samsvarende post i den sammenføyde tabellen. Hvis koblingstypen er *kobling finnes*, avsluttes søket etter at det første samsvaret er funnet. Hvis du for eksempel deltar i salgsordrelinjetabellen til varetabellen, validerer og returnerer systemet varer der minst én salgsordrelinje har den definerte betingelsen. I utgangspunktet hentes dataene fra den overordnede tabellen (varer), ikke fra den underordnede tabellen (salgsordrelinje). Derfor kan du ikke filtrere etter kildedokumenter, for eksempel salgsordrelinjer eller kunder, med en gang.
+
 ### <a name="create-a-work-class"></a>Opprette en arbeidsklasse
 
 1. Gå til **Lagerstyring \> Oppsett \> Arbeid \> Arbeidsklasser**.
@@ -151,6 +154,9 @@ Planlagt direkteoverføring er implementert som en lastposteringsmetode. Når du
     - **Arbeidsklasse-ID:** *CrossDock*
 
 1. Velg **Lagre**, og Bekreft at det er merket av for **Gyldig** for *51 Direkteoverføring*-malen.
+1. Valgfritt: Velg **Rediger spørring** hvis du vil angi kriterier som skal bestemme når og hvor arbeidsmalen skal brukes.
+
+    Du kan definere en spørring til å kontrollere når en bestemt arbeidsmal brukes. Du kan for eksempel angi at en mal bare kan brukes for arbeid på et bestemt sted. Hvis du vil at arbeidsmalen for direkteoverføring skal brukes på en bestemt lokasjon, må du filtrere på **Start lokasjon**-feltet, ikke **Lokasjon**-feltet, fordi arbeidsoppretting for de innkommende prosessene (innkjøp, direkteoverføring og etterfylling) starter fra plasseringslinjen. Når arbeid opprettes, setter lokasjonsdirektivet **Lokasjon**-feltet til plasseringslokasjonen. Plukklokasjonen lagres imidlertid i **Startlokasjon**-feltet.
 
 > [!NOTE]
 > Arbeidsklasse-ID-en for *Plukk*- og *Plasser*-arbeidstypene må være like.
