@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 672db002ddf8d12aaab5b97241390c036ad7ab5c
-ms.sourcegitcommit: 8fb79920bea14746a71551a4456236a6386bfcea
+ms.openlocfilehash: 20e74e97f98d0bc0fd454d54cbf969d4f1b46c7c98b2949b0ed8cfe671312dd2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "6538860"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6768197"
 ---
 # <a name="payroll-employee"></a>Lønnsansatt
 
@@ -33,27 +33,25 @@ Fysisk navn: mshr_payrollemployeeentity.
 Denne enheten gir informasjon om den ansatte. Du må definere [parameterne for lønnsintegrering](hr-admin-integration-payroll-api-parameters.md) før du bruker denne enheten.
 
 >[!IMPORTANT] 
->Feltene **FirstName**, **MiddleName**, **LastName**, **NameValidFrom** og **NameValidTo** vil ikke lenger være tilgjengelige på denne enheten. Dette er for å sikre at det bare er én datoeffektiv datakilde under denne enheten, som er **HcmEmployment** med feltene **EmploymentStartDate** og **EmploymentEndDate**.
-
->Disse feltene vil være tilgjengelige på **DirPersonNameHistoricalEntity**, som ble frigitt i platformoppdatering 43. Det finnes en OData-relasjon fra **PayrollEmployeeEntity** til **DirPersonNameHistoricalEntity** i **Person**-feltet. Alternativt kan **DirPersonNameHistoricalEntity**-enheten spørres direkte via OData ved hjelp av det offentlige navnet, **PersonHistoricalNames**.
-
+>Feltene **FirstName**, **MiddleName**, **LastName**, **NameValidFrom** og **NameValidTo** vil ikke lenger være tilgjengelige på denne enheten. Dette sikrer at det bare er én datoeffektiv datakilde som sikkerhetskopierer denne enheten.
+>Disse feltene vil være tilgjengelige på **DirPersonNameHistoricalEntity**, som ble frigitt i platformoppdatering 43. Det finnes en OData-relasjon fra **PayrollEmployeeEntity** til **DirPersonNameHistoricalEntity** i **Person**-feltet. 
 
 ## <a name="properties"></a>Egenskaper
 
 | Egenskap<br>**Fysisk navn**<br>**_Type_** | Bruk | beskrivelse |
 | --- | --- | --- |
-| **Personalnummer**<br>mshr_personnelnumber<br>*Streng* | Skrivebeskyttet<br>Obligatorisk | Det unike personalnummeret til den ansatte. |
-| **Primærfelt**<br>mshr_primaryfield<br>*Streng* | Obligatorisk<br>Systemgenerert |  |
-| **ID for juridisk enhet**<br>mshr_legalentityID<br>*Streng* | Skrivebeskyttet<br>Obligatorisk | Angir den juridiske enheten (firmaet). |
-| **Kjønn**<br>mshr_gender<br>[mshr_hcmpersongender-alternativsett](hr-admin-integration-payroll-api-gender.md) | Skrivebeskyttet<br>Obligatorisk | Den ansattes kjønn. |
+| **Personalnummer**<br>mshr_personnelnumber<br>*Streng* | Skrivebeskyttet | Det unike personalnummeret til den ansatte. |
+| **Primærfelt**<br>mshr_primaryfield<br>*Streng* | Skrivebeskyttet<br>Systemgenerert |  |
+| **ID for juridisk enhet**<br>mshr_legalentityID<br>*Streng* | Skrivebeskyttet | Angir den juridiske enheten (firmaet). |
+| **Kjønn**<br>mshr_gender<br>[mshr_hcmpersongender-alternativsett](hr-admin-integration-payroll-api-gender.md) | Skrivebeskyttet | Den ansattes kjønn. |
 | **Enhets-ID for lønnsansatt**<br>mshr_payrollemployeeentityid<br>*GUID* | Obligatorisk<br>Systemgenerert | En systemgenerert GUID-verdi som entydig identifiserer den ansatte. |
-| **Startdato for ansettelse**<br>mshr_employmentstartdate<br>*Motregning av dato/klokkeslett* | Skrivebeskyttet<br>Obligatorisk | Startdatoen for den ansattes ansettelse. |
-| **ID for Identifikasjonstype**<br>mshr_identificationtypeid<br>*Streng* |Skrivebeskyttet<br>Obligatorisk | Identifikasjonstypen som er definert for den ansatte. |
-| **Sluttdato for ansettelse**<br>mshr_employmentenddate<br>*Motregning av dato/klokkeslett* | Skrivebeskyttet<br>Obligatorisk |Sluttdatoen for den ansattes ansettelse.  |
-| **Dataområde-ID**<br>mshr_dataareaid_id<br>*GUID* | Obligatorisk <br>Systemgenerert | Systemgenerert GUID-verdi som identifiserer den juridiske enheten (firmaet). |
-| **Gyldig til**<br>mshr_namevalidto<br>*Motregning av dato/klokkeslett* |  Skrivebeskyttet<br>Obligatorisk | Datoen som ansattinformasjonen er gyldig til. |
-| **Fødselsdato**<br>mshr_birthdate<br>*Motregning av dato/klokkeslett* | Skrivebeskyttet <br>Obligatorisk | Den ansattes fødselsdato. |
-| **Identifikasjonsnummer til**<br>mshr_identificationnumber<br>*Streng* | Skrivebeskyttet <br>Obligatorisk |Identifikasjonsnummeret som er definert for den ansatte.  |
+| **Startdato for ansettelse**<br>mshr_employmentstartdate<br>*Motregning av dato/klokkeslett* | Skrivebeskyttet | Startdatoen for den ansattes ansettelse. |
+| **ID for Identifikasjonstype**<br>mshr_identificationtypeid<br>*Streng* |Skrivebeskyttet | Identifikasjonstypen som er definert for den ansatte. |
+| **Sluttdato for ansettelse**<br>mshr_employmentenddate<br>*Motregning av dato/klokkeslett* | Skrivebeskyttet |Sluttdatoen for den ansattes ansettelse.  |
+| **Dataområde-ID**<br>mshr_dataareaid_id<br>*GUID* | Skrivebeskyttet <br>Systemgenerert | Systemgenerert GUID-verdi som identifiserer den juridiske enheten (firmaet). |
+| **Gyldig til**<br>mshr_namevalidto<br>*Motregning av dato/klokkeslett* |  Skrivebeskyttet | Datoen som ansattinformasjonen er gyldig til. |
+| **Fødselsdato**<br>mshr_birthdate<br>*Motregning av dato/klokkeslett* | Skrivebeskyttet | Den ansattes fødselsdato. |
+| **Identifikasjonsnummer til**<br>mshr_identificationnumber<br>*Streng* | Skrivebeskyttet |Identifikasjonsnummeret som er definert for den ansatte.  |
 
 ## <a name="example-query-for-payroll-employee"></a>Eksempelspørring for lønnsansatt
 
