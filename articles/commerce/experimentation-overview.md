@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 658396e87b3007216f6fa11c6ad3923daeb8a67d
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 7641267321e1c97b3f0fa30a97c0519c76fe1b0c0223bdd196b6791d5de7cd8d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6349334"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6747447"
 ---
 # <a name="experimentation-in-dynamics-365-commerce"></a>Eksperimentering i Dynamics 365 Commerce
 Bruk eksperimentering i Dynamics 365 Commerce for å validere hypoteser om effektiviteten til dine e-handelssider og ta avgjørelser med datadrevet selvtillit. Commerce støtter A/B-testing for sider, moduler og fragmenter, og lar deg måle virkningen av foreslåtte endringer på nettstedet ditt.

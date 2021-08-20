@@ -12,12 +12,12 @@ ms.reviewer: kfend
 ms.search.region: Norway
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 06f4c907f7318af1b971e3f32e1a004d13c6c641
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: bca0313870a1e91ed03a1769c7281e1070e1677501253d8e44a8dd7ba068ccd7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6360184"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6752112"
 ---
 # <a name="sales-tax-report-for-finland"></a>Mva-rapport for Finland
 
