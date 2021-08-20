@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bd5a92470b711b9d316e4fe96aecadd7252ff807
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 48fef68dc3e5935f0032ca006840202b53d577e06e5376ead0b66eca2a9c36bb
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6360155"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6740845"
 ---
 # <a name="copy-an-instance"></a>Kopier en forekomst
 
@@ -52,9 +52,9 @@ Følgende hendelser inntreffer når du kopierer en Human Resources-database:
 
 - Dokumenter i Microsoft Azure Blob-lagring kopieres ikke fra ett miljø til et annet. Derfor vil ingen dokumenter og maler som er vedlagt, bli kopiert, og de forblir i kildemiljøet.
 
-- Alle brukere, bortsett fra administratoren og andre brukerkontoer for interne tjenester, vil bli utilgjengelige. Administratorbrukeren kan slette eller nedtone data før andre brukere får tilgang til systemet igjen.
+- Alle brukere, bortsett fra de som har sikkerhetsrollen Systemadministrator og andre interne tjenestebrukerkontoer, vil ikke være tilgjengelige. Administratorbrukeren kan slette eller nedtone data før andre brukere får tilgang til systemet igjen.
 
-- Administratorbrukeren må utføre nødvendige konfigurasjonsendringer, for eksempel koble til integreringsendepunkter på nytt til bestemte tjenester eller URL-adresser.
+- Alle brukere med sikkerhetsrollen Systemadministrator må utføre nødvendige konfigurasjonsendringer, for eksempel koble til integreringsendepunkter på nytt til bestemte tjenester eller URL-adresser.
 
 ## <a name="copy-the-human-resources-database"></a>Kopiere Human Resources-databasen
 
@@ -71,7 +71,7 @@ Hvis du vil fullføre denne oppgaven, kopierer du først en forekomst, og derett
 
 4. I oppgaveruten **Kopier en forekomst**, velger du forekomsten som skal overskrives, og deretter velger du **Kopier**. Vent til verdien i feltet **Kopier status** er oppdatert til **Fullført**.
 
-   ![[Velge forekomst som skal overskrives.](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
+   ![[Velg forekomst som skal overskrives.](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
 
 5. Velg **Power Platform**, og logg deg på administrasjonssenteret for Microsoft Power Platform.
 
@@ -111,7 +111,7 @@ Noen av disse elementene kopieres ikke fordi de er miljøspesifikke. Eksempler i
 
 I tillegg endres følgende statuser når du kopierer en forekomst:
 
-- Alle brukere bortsett fra administratorer settes til **Deaktivert**.
+- Alle brukere, bortsett fra de som har sikkerhetsrollen Systemadministrator, settes til **Deaktivert**.
 
 - Alle satsvise jobber, bortsett fra enkelte systemjobber, settes til **Trekk tilbake**.
 

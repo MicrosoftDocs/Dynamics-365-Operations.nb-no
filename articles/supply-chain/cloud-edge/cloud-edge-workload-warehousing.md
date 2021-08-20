@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: dc065684952cbbe2a324b766dc8c465371cdb49d
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 725b6dea98805baaf3f4d60b3922543067a205bc7196a05f33af21a6cd680a37
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6345506"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6740701"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Skalaenheter for sky og kant for arbeidsbelastninger for lagerstyring
 
@@ -142,7 +142,7 @@ Følgende arbeidsordretyper støttes for øyeblikket for WES-arbeidsbelastninger
 
 - Salgsordre
 - Utstedelse for overføring
-- Etterfylling
+- Etterfylling (ikke inkludert råvarer for produksjon)
 - Lagerbevegelse
 - Syklustelling
 - Bestillinger (koblet til lagerordrer)
@@ -297,7 +297,8 @@ Tabellen nedenfor oppsummerer hvilke produksjonsscenarioer med lagerstyring som 
 |---------|-----|------------------------------|
 | Ferdigmeld og Plasser ferdigvarer | Ja | Ja |
 | Plasser koprodukt og biprodukt | Ja | Ja |
-| <p>Alle andre lagerstyringsprosesser som er knyttet til produksjon, inkludert følgende:</p><li>Frigi til lager</li><li>Produksjonsbølgebehandling</li><li>Råvareplukking</li><li>Kanban plassert</li><li>Kanban-plukking</li><li>Start produksjonsordre</li><li>Produksjonssvinn</li><li>Siste produksjonspall</li><li>Registrer materialforbruk</li><li>Tøm Kanban</li></ul> | Ja | Nei |
+| <p>Alle andre lagerstyringsprosesser som er knyttet til produksjon, inkludert følgende:</p><li>Frigi til lager</li><li>Produksjonsbølgebehandling</li><li>Råvareplukking</li><li>Kanban plassert</li><li>Kanban-plukking</li><li>Start produksjonsordre</li><li>Produksjonssvinn</li><li>Siste produksjonspall</li><li>Registrer materialforbruk</li><li>Tøm Kanban</li></ul> | Ja | Ingen |
+| Etterfylling av råvarer | Ingen | Ingen |
 
 ## <a name="maintaining-scale-units-for-wes"></a>Vedlikeholde skalaenheter for WES
 
