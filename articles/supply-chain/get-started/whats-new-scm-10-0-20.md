@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 09cdb039b9bde3f97db012f1aaaeaf4c8a7df944
-ms.sourcegitcommit: 908a85987b604a7782407da70fb70ef75c07989f
+ms.openlocfilehash: 1aada0d3ebe80e1efb92815c6d429ed5638dabdbac165aa09be1ca281c51b255
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/19/2021
-ms.locfileid: "6641062"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6773519"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10020-august-2021"></a>Hva er nytt eller endret i Dynamics 365 Supply Chain Management (10.0.20. august 2021)
 
@@ -47,7 +47,6 @@ Denne tabellen viser funksjonsforbedringer i denne versjonen. Hvert av disse gir
 
 | Funksjonsområde | Funksjons&nbsp;navn&nbsp; i funksjons&nbsp;behandling | Mer informasjon |
 |---|---|---|
-| Hovedplanlegging | Negative dager for Planleggingsoptimalisering | Ved hjelp av denne funksjonaliteten kan planleggingsoptimalisering vurdere forsinkelsestoleranse basert på **Negative dager**-parameteren som er definert i dekningsgrupper. |
 | Hovedplanlegging | Parallell autorisasjon av justert behovsprognose | Denne funksjonen tillater parallell autorisasjon av justert behovsprognose fra siden **Justert behovsprognose**. Hensikten med denne funksjonen er å øke ytelsen når et høyt antall prognoser godkjennes. Ved autorisasjon kan brukeren angi **Antall tråder** i den autorisasjonsdialogboksen. |
 | Hovedplanlegging | (Forhåndsversjon) Autorisasjon og konsolidering av planlagte masse- og pakkepartiordrer | Med denne funksjonen kan du bruke satsvise jobber til å autorisere og konsolidere planlagte masse- og pakkeordrer. |
 | Produksjonskontroll | Kopier generelle ruter | Denne funksjonen forbedrer kopieringsrutefunksjonen, slik at brukere kan kopiere ruter som ikke er varespesifikke. Det gjør at systemet kan oppdatere all relevant informasjon (for eksempel område, rutegruppe, ressursbehov og ulike tidspunkt) etter at kopieringsrutefunksjonen er brukt til å overskrive en rute som ennå ikke er tilordnet en vare. |

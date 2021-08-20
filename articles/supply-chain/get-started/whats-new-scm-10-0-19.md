@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 98f9fffcbf93871de302a0d8b4b9675889ef5e40
-ms.sourcegitcommit: 908a85987b604a7782407da70fb70ef75c07989f
+ms.openlocfilehash: c1930a47bc133c411a0e6054aa766322a261064a06ac4cec8dcdd12c126dc7cd
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/19/2021
-ms.locfileid: "6641134"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6773543"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10019-june-2021"></a>Hva er nytt eller endret i Dynamics 365 Supply Chain Management versjon 10.0.19 (juni 2021)
 
@@ -35,6 +35,7 @@ De fleste av disse funksjonene må aktiveres ved hjelp av [Funksjonsbehandling](
 
 | Funksjonsområde | Funksjon | Mer informasjon |
 |---|---|---|
+| Lager&nbsp;og&nbsp;logistikk | [Godkjenn og lagre bankdetaljer sendt av en leverandør](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/approve-save-vendor-submitted-bank-details) | [Vedlikehold bankkontoinformasjon for leverandør](../../finance/accounts-payable/maintain-vendor-bank-info.md) |
 | Lager og logistikk | [Eksportoptimalisering av dataenhet for kontaktperson](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/contact-person-data-entity-export-optimization)  | Når denne funksjonen er aktivert, vil ikke endringer i dem føre til at tilknyttede kontakter inkluderes i den neste trinnvise eksporten. Når denne funksjonen er deaktivert, vil endringer i dem føre til at tilknyttede kontakter inkluderes i den neste trinnvise eksporten. |
 | Lager og logistikk | [Inkrementelle forbedringer for lagerutførelsesfunksjoner med vektenheter](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/incremental-enhancements-warehouse-execution-capabilities-scale-units) |[Meldinger for meldingsprosessor](../cloud-edge/cloud-edge-message-processor-messages.md)<br><br>[Lagerbeholdningsjustering](../cloud-edge/cloud-edge-warehouse-inventory-adjustment.md)<br><br>[Skalaenheter for sky og kant for arbeidsbelastninger for lagerstyring](../cloud-edge/cloud-edge-workload-warehousing.md) |
 | Lager og logistikk | [Oppslagsfunksjonalitet for Dokumentinnledning- og Dokumentkonklusjon-felt på salgstilbudsside](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/lookup-functionality-document-introduction-document-conclusion-fields-sales-quotation-page) | Denne funksjonen legger til oppslagsfunksjonalitet for **Dokumentinnledning**- og **Dokumentkonklusjon**-feltene på **Salgstilbud**-siden.<br><br>Denne funksjonen er aktivert som standard. |

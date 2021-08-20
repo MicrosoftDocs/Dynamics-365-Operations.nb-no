@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2321c78ba50ba0bfc996e8bd4e96cfbd0843ec45
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 91d5b7077b033514f699c0393ec151d82dae5bf2551546c7371cb934273310e9
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796760"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6769301"
 ---
 # <a name="manage-assortments-november-2016"></a>Behandle sortimenter (november 2016)
 
@@ -39,10 +39,10 @@ Denne fremgangsmåten viser hvordan du oppretter og publiserer et nytt produktso
 5. Angi en dato i feltet Gyldighetsdato.
 6. Angi en dato i Utløpsdato-feltet.
 7. Utvid delen Handelskanaler.
-8. Klikk Legg til linje.
+8. Klikk på Legg til linje.
 9. Velg Contoso Retail\Electronics\Boston i treet.
-10. Klikk Legg til.
-11. Klikk OK.
+10. Klikk på Legg til.
+11. Klikk på OK.
 12. Utvid seksjonen Produkter.
 13. Klikk Legg til linje.
 14. Angi eller velg en verdi i Kategori-feltet.

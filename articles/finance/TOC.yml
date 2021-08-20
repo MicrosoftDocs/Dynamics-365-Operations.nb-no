@@ -72,6 +72,8 @@
                   items:
                     - name: Nyheter eller endringer på startsiden for Finance
                       href: get-started/whats-new-home-page.md
+                    - name: Finance 10.0.21 (oktober 2021)
+                      href: get-started/whats-new-changed-10-0-21.md
                     - name: Finance 10.0.20 (august 2021)
                       href: get-started/whats-new-changed-10-0-20.md
                     - name: Finance 10.0.19 (juni 2021)
@@ -1168,6 +1170,8 @@
                   href: general-ledger/yec-mssng-open-blnces.md
                 - name: Åpne finansjournalmaler i Office
                   href: general-ledger/open-fincl-jrnls-in-office.md
+                - name: Hvorfor kan jeg ikke tilbakeføre denne transaksjonen?
+                  href: general-ledger/cant-reverse-transctns.md
         - name: Finansrapportering
           items:
             - name: Kom i gang med finansrapportering
@@ -1498,12 +1502,16 @@
                           href: localizations/e-invoicing-get-started-service-administration.md?toc=/dynamics365/finance/toc.json
                         - name: Kom i gang med elektronisk fakturering
                           href: localizations/e-invoicing-get-started.md?toc=/dynamics365/finance/toc.json
+                        - name: Opprett en ny funksjon for elektronisk fakturering
+                          href: localizations/e-invoicing-create-new-e-invoicing-feature.md
                         - name: Kom i gang med elektronisk fakturering for Brasil
                           href: localizations/e-invoicing-bra-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: Kom i gang med elektronisk fakturering for Egypt
                           href: localizations/e-invoicing-eg-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: Kom i gang med elektronisk fakturering for Mexico
                           href: localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/finance/toc.json
+                        - name: Bruk den elektroniske faktureringstjenesten til å importere leverandørfakturaer
+                          href: localizations/e-invoicing-get-started-import-vendor-invoices.md
                         - name: Definer elektronisk fakturering
                           href: localizations/e-invoicing-setup.md?toc=/dynamics365/finance/toc.json
                     - name: Vanlige spørsmål om elektronisk fakturering
@@ -1514,8 +1522,12 @@
                       href: localizations/global-tax-calcuation-service-overview.md?toc=/dynamics365/finance/toc.json
                     - name: Kom i gang med avgiftsberegning
                       href: localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/finance/toc.json
+                    - name: Bestemmelseslogikk for mva-relevans og mva-gruppe for vare
+                      href: localizations/global-sales-tax-group-determination.md?toc=/dynamics365/finance/toc.json
                     - name: Støtte for avgiftsfunksjon for overføringsordrer
                       href: localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/finance/toc.json
+                    - name: Beregning av avgift på toppen av prisen når Priser inkluderer mva. er aktivert
+                      href: localizations/global-exclude-from-tax-base-amount-calculation.md?toc=/dynamics365/finance/toc.json
                     - name: Legg til datafelter i avgiftskonfigurasjoner
                       href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
                     - name: Legg til datafelter i avgiftsintegreringen ved hjelp av tillegg
@@ -1528,6 +1540,10 @@
                       items:
                         - name: Rapportering for flere mva-registreringer
                           href: localizations/emea-reporting-for-multiple-vat-registrations.md
+                        - name: Fransk rapportering
+                          items:
+                            - name: Mva-deklarering
+                          href: localizations/emea-fra-VAT-declaration-preview-France.md
                         - name: Nederlandsk rapportering
                           items:
                             - name: Mva-deklarering
@@ -1544,14 +1560,18 @@
               items:
                 - name: Oversikt over Australia
                   href: localizations/australia.md
+                - name: Bankfilformater for australske banker
+                  href: localizations/apac-aus-bank-file-formats.md
                 - name: Business Activity Statement (BAS)
                   href: localizations/apac-aus-business-activity-statement.md
-                - name: Legge til rapportbokser og generere BAS
+                - name: Legg til rapportbokser og generer BAS
                   href: localizations/tasks/add-bas-report-boxes.md
                 - name: Avskrivning for lavverdipulje
                   href: localizations/apac-aus-low-value-pool-depreciation.md
-                - name: Definere årsakskoder for BAS
+                - name: Definer årsakskoder for BAS
                   href: localizations/tasks/set-up-reason-codes-australia-bas.md
+                - name: Rapporteringsskjema for betalingstider
+                  href: localizations/apac-aus-payment-times-report.md
             - name: Østerrike
               items:
                 - name: Oversikt over Østerrike
@@ -1794,7 +1814,7 @@
                       href: localizations/tasks/br-00061-withholding-taxes-vendors-payments.md
             - name: Canada
               items:
-                - name: GST/HST Internet File Transfer
+                - name: GST/HST Internett-filoverføring
                   href: localizations/can-gst-hst-internet-file-transfer.md
             - name: Kina
               items:
@@ -1802,6 +1822,8 @@
                   href: localizations/china.md
                 - name: Finance and Operations styrt av 21Vianet i Kina
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md
+                - name: Valg av kontogrupper for kinesiske bilagstyper
+                  href: localizations/apac-chn-account-groups-selection.md
                 - name: Stykklistesammenligning
                   href: localizations/apac-chn-bom-comparison.md
                 - name: Kinesisk hierarki for kontoplan
@@ -1864,12 +1886,16 @@
                   href: localizations/emea-set-up-signers-for-printing-forms.md
                 - name: Dele opp perioder i periodiske journaler
                   href: localizations/emea-create-post-periodic-journals.md
-                - name: Oppdatere hvordan beløp vises i rapporter og dokumenter
+                - name: Oppdater hvordan beløp vises i rapporter og dokumenter
                   href: localizations/emea-amount-printing-forms.md
                 - name: Mva-oppgave
                   href: localizations/emea-cze-vat-statement-details.md
                 - name: MVA-deklarering (Tsjekkia)
                   href: localizations/emea-cze-vat-declaration-tax-declaration-model.md
+                - name: Banksymboler for bankkontoer
+                  href: localizations/emea-cze-specify-bank-symbols-for-bank-accounts.md
+                - name: Fellesskapsmerverdiavgift
+                  href: localizations/emea-cze-intra-community-VAT.md
                 - name: Årsavslutning
                   href: localizations/emea-cze-hun-year-end.md
             - name: Danmark
@@ -1990,12 +2016,8 @@
                       href: localizations/tasks/transfer-transactions-intrastat.md
                     - name: Angi en lasteadresse for en fellesskapstransaksjon
                       href: localizations/tasks/eur-00002-specify-lading-address-intra-community.md
-                    - name: Generer en Intrastat-deklarering for EU
+                    - name: Generere en Intrastat-deklarering for EU
                       href: localizations/tasks/eur-00002-eu-intrastat-declaration.md
-                    - name: Fransk Intrastat
-                      href: localizations/emea-fra-intrastat.md
-                    - name: Italiensk Intrastat
-                      href: localizations/emea-ita-intrastat.md
                 - name: Lagerjournalrapporter
                   href: localizations/emea-set-up-report-inventory-journal-names.md
                 - name: Tidsfrister for utstedelse av faktura
@@ -2040,7 +2062,7 @@
                   href: localizations/tasks/set-up-payment-slip-format-project-invoices.md
                 - name: Definere signatarer for utskriftsskjemaer
                   href: localizations/emea-set-up-signers-for-printing-forms.md
-                - name: Definere overføringsdokumentene for varebevegelse i et selskap
+                - name: Definer overføringsdokumentene for varebevegelse i et selskap
                   href: localizations/tasks/set-up-transfer-documents-goods-movement-inside-company.md
                 - name: Angi en lasteadresse for en fellesskapstransaksjon
                   href: localizations/tasks/eur-00002-specify-lading-address-intra-community.md
@@ -2048,7 +2070,7 @@
                   href: localizations/emea-storno.md
                 - name: Avgiftsdirektiver
                   href: localizations/emea-tax-directives.md
-                - name: Oppdatere hvordan beløp vises i rapporter og dokumenter
+                - name: Oppdater hvordan beløp vises i rapporter og dokumenter
                   href: localizations/emea-amount-printing-forms.md
                 - name: Bruke regnskapsdata fra en fakturakonto
                   href: localizations/use-fiscal-data-from-invoice-account.md
@@ -2120,9 +2142,11 @@
                   href: localizations/emea-fra-derogatory-depreciation.md
                 - name: Franske veksler og egenveksler
                   href: localizations/tasks/fr-00004-french-bills-exchange-promissory-notes.md
+                - name: Fransk Intrastat
+                  href: localizations/emea-fra-intrastat.md
                 - name: NAF-koder og siret-numre
                   href: localizations/emea-fra-naf-codes-siret-numbers.md
-                - name: Definere NAF-koder og Siret-numre
+                - name: Definer NAF-koder og Siret-numre
                   href: localizations/tasks/fr-00003-naf-codes-siret-numbers.md
                 - name: Straff for forfalte kundebetalinger
                   href: localizations/emea-fra-apply-penalty-customer-payment-past-due.md
@@ -2134,10 +2158,12 @@
                   href: localizations/emea-fra-print-lump-sum-recovery-text.md
                 - name: RB/SL-avskrivning
                   href: localizations/emea-fra-rbsl-depreciation.md
-                - name: Definere betalingsmåte
+                - name: Definer betalingsmåte
                   href: localizations/tasks/fr-00004-setup-method-payment.md
-                - name: Oppdatere betalingsmåte for kunde
+                - name: Oppdater betalingsmåte for kunde
                   href: localizations/tasks/fr-00004-update-method-payment-customer.md
+                - name: Mva-deklarering
+                  href: localizations/emea-fra-VAT-declaration-preview-France.md
                 - name: DAS-2-rapport
                   href: localizations/emea-fra-das2-report.md
             - name: Tyskland
@@ -2162,14 +2188,18 @@
                   href: localizations/tasks/de-00002-depreciation.md
                 - name: Elektronisk overføring av mva-deklarering (ELSTER)
                   href: localizations/tasks/de-00003-electronic-transmission-elster.md
+                - name: Tysk Intrastat
+                  href: localizations/emea-deu-intrastat.md
                 - name: Mva-deklarering for Tyskland
                   href: localizations/emea-de-vat-declaration.md
                 - name: Rapport om elektroniske fakturaer for kunde
                   href: localizations/emea-deu-e-invoices.md
                 - name: Journallisterapport
                   href: localizations/emea-deu-journal-list-report.md
-                - name: Definere elektroniske avgiftsdeklareringer
+                - name: Definer elektroniske avgiftsdeklareringer
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md?toc=/dynamics365/finance/toc.json
+                - name: Skriv ut en egen etikett for kreditnotaer som stammer fra salg
+                  href: localizations/emea-deu-print-separate-label-credit-memo-originating-sales.md
             - name: Ungarn
               items:
                 - name: Oversikt over Ungarn
@@ -2612,10 +2642,12 @@
                   href: localizations/emea-ita-exil-separate-account-credit.md
                 - name: Sortere salgsfakturalinjer etter følgeseddel
                   href: localizations/emea-ita-exil-invoicing-packing-slips.md
-                - name: Bokføre fakturaer med nullbeløp
+                - name: Bokføring av fakturaer med nullbeløp
                   href: localizations/emea-ita-exil-zero-invoice-posting.md
                 - name: Forbedring av brukervennligheten til bankdata
                   href: localizations/emea-ita-exil-bank-accounts-setup.md
+                - name: Italiensk Intrastat
+                  href: localizations/emea-ita-intrastat.md
                 - name: Diverse tillegg per kilo i en Intrastat-deklarering
                   href: localizations/emea-ita-exil-misc-charges-intrastat.md
                 - name: Formålsbrev – fakturering av vanlige eksportører
@@ -2836,11 +2868,13 @@
                   href: localizations/emea-ltu-isaf.md
                 - name: Standard revisjonsfil for avgift (SAF-T) for Litauen
                   href: localizations/emea-ltu-saf-t.md
+                - name: Definer overføringsdokumentene for varebevegelse i et selskap
+                  href: localizations/tasks/set-up-transfer-documents-goods-movement-inside-company.md
             - name: Malaysia
               items:
                 - name: Oversikt over Malaysia
                   href: localizations/malaysia.md
-                - name: Generere kundekreditt for prosjektsalg
+                - name: Generer kundekreditt for prosjektsalg
                   href: localizations/tasks/my-00011-03-customer-credit-note-project-sales.md
                 - name: Generere kundedebet for prosjektsalg
                   href: localizations/tasks/my-00011-02-customer-debit-note-project-sales-2016-11.md
@@ -2970,14 +3004,18 @@
                   href: localizations/emea-pol-turnover-balances-statement.md
                 - name: Del kursforskjell for leverandør/kunde
                   href: localizations/emea-pol-split-ap-ar-exchange-difference.md
+                - name: Definer og bruk PKWiU-koder for Polen
+                  href: localizations/emea-pol-pkwiu-code.md
                 - name: 'Mva-deklarering med registre (JPK_V7M, VDEK)'
-                  href: localizations/emea-pol-vdek.md
-                - name: Klargjør for JPK-V7M-rapportering
-                  href: localizations/emea-pol-vdek-setup.md
-                - name: JPK-V7M-rapportering
-                  href: localizations/emea-pol-vdek-reporting.md
-                - name: Detaljer om bestemte forretningsscenarioer i JPK-V7M-rapporten
-                  href: localizations/emea-pol-vdek-scenarios.md
+                  items:
+                    - name: 'Oversikt over mva-deklarering med registre (JPK_V7M, VDEK)'
+                      href: localizations/emea-pol-vdek.md
+                    - name: Klargjør for JPK-V7M-rapportering
+                      href: localizations/emea-pol-vdek-setup.md
+                    - name: JPK-V7M-rapportering
+                      href: localizations/emea-pol-vdek-reporting.md
+                    - name: Detaljer om bestemte forretningsscenarioer i JPK-V7M-rapporten
+                      href: localizations/emea-pol-vdek-scenarios.md
             - name: Qatar
               items:
                 - name: Oversikt over Qatar
@@ -3200,6 +3238,8 @@
                       href: localizations/rus-reporting-deferrals.md
                 - name: Avgiftsregnskap
                   items:
+                    - name: Opprett avgiftsregistre og avgiftsregisterjournalen
+                      href: localizations/rus-profit-tax-registers.md
                     - name: Utgifts- og inntektskoder
                       href: localizations/rus-expense-and-income-codes.md
                     - name: Avgiftsregistre for aktiva
@@ -3216,6 +3256,10 @@
                       href: localizations/rus-bad-debts.md
                     - name: Beregning av avgiftsaktivum og skattegjeldsregistre
                       href: localizations/rus-calculation-tax-asset-tax-liability-registers.md
+                    - name: Avgiftsregistre for varebevegelse
+                      href: localizations/rus-goods-movement-tax-registers.md
+                    - name: Andre avgiftsregistre
+                      href: localizations/rus-other-tax-registers.md
             - name: Saudi-Arabia
               items:
                 - name: Oversikt over Saudi-Arabia
@@ -3304,13 +3348,11 @@
                   href: localizations/apac-tha-tax-branch-dimensions.md
                 - name: Rapport for utgående mva.
                   href: localizations/apac-tha-sales-vat-report.md
-                - name: Gjennomsnittlig mva. for innkjøpstransaksjoner
-                  href: localizations/apac-tha-average-vat-for-purchase-transactions.md
                 - name: Kildeskatt
                   href: localizations/apac-tha-withholding-tax.md
             - name: De forente arabiske emirater (UAE)
               items:
-                - name: Definer og rapporter merverdiavgift (mva.)
+                - name: Definere og rapportere merverdiavgift (mva)
                   href: localizations/uae-vat-setup-reporting.md
             - name: Storbritannia
               items:
