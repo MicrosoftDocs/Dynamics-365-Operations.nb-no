@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 8d7020ff1ad1beb06ff7a9ce217f39993c6eceec
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 4ee68b691bba7f3314b5278b0bcc26504c1583335914a1e7c645abd5303f02c6
+ms.sourcegitcommit: fa5ff2a0822aac16b518a2aea0d3389f79793390
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6358128"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "7012019"
 ---
 # <a name="regulatory-configuration-service"></a>Regulatory Configuration Service
 
@@ -49,6 +49,9 @@ På **Regulatory Configuration Service**-siden må du gå gjennom og godta tille
 
 - **Registrer deg** hvis du er en førstegangsbruker av tjenesten, og du bruker en e-postadresse for forretningsvirksomhet til å klargjøre organisasjonen for et servicemiljø.
 - **Logg på** hvis du tidligere har registrert deg for tjenesten, og du ønsker å få tilgang til organisasjonsmiljøet
+
+> [!NOTE] 
+> Når du har registrert deg, anbefaler vi at du legger til en ekstra SysAdmin-bruker i RCS-miljøet. Denne brukeren blir klargjort som medadministrator for miljøet. Dette vil bidra til å sørge for at tilgangen til RCS-miljøet opprettholdes, fordi SysAdmin-rollen er å administrere brukere i dette miljøet. Du kan legge til brukere ved hjelp **RCS-arbeidsområde > Systemadministrasjon**.
 
 ## <a name="regional-availability"></a>Regional tilgjengelighet
 

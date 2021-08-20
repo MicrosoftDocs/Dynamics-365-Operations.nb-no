@@ -2,7 +2,7 @@
 title: Konfigurere og behandle en utveksling i en returordre
 description: Dette emnet forklarer hvordan du konfigurerer en utveksling ved en retur i Dynamics 365 Commerce.
 author: josaw1
-ms.date: 11/12/2018
+ms.date: 07/28/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 46d6e912aca64951da2865f5609a9dc22fbbcbe3
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 488f6fb5af6451bc462566a9714054b49eb1a80b8264528778797f6a39647764
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804607"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6758342"
 ---
 # <a name="configure-and-process-an-exchange-on-a-return-order"></a>Konfigurere og behandle en utveksling i en returordre
 
@@ -30,11 +30,14 @@ I tidligere versjoner av Dynamics 365 Commerce ble returer mot kundeordrer behan
 
 Funksjonaliteten er imidlertid lagt til for å støtte scenarier der utvekslinger blir utført på returordrer. Commerce bruker nå salgsordredokumentet i stedet for returordredokumentet til å behandle disse transaksjonstypene.
 
-## <a name="configure-commerce-to-support-exchanges-on-return-orders"></a>Konfigurere Commerce til å støtte utvekslinger på returordrer
+## <a name="configure-commerce-to-support-exchanges-on-return-orders"></a>Konfigurer Commerce til å støtte utvekslinger på returordrer
 
-Følg denne fremgangsmåten for å konfigurere systemet til å støtte utvekslinger på returordrer.
+> [!NOTE]
+> I Commerce, versjon 10.0.20 og nyere er en ny funksjon kalt Enhetlig returbehandling i salgssted tilgjengelig. Hvis du aktiverer denne funksjonen, er ikke konfigurasjonstrinnene nedenfor nødvendige. **Behandle returer som salgsordrer** blir en permanent konfigurert innstilling, og du kan ikke endre den.
 
-1. Gå til **Detaljhandel og handel \> Hovedkvarteroppsett \> Parametere \> Handelsparametere**. Sett alternativet **Behandle returordrer som salgsordrer** til **Ja** i hurtigfanen **Kundeordrer**.
+Følg denne fremgangsmåten for å konfigurere systemet til å støtte utvekslinger på returordrer (hvis du ikke har aktivert funksjonen **Enhetlig returbehandling i salgssted**.
+
+1. Gå til **Retail og Commerce \> Hovedkvarteroppsett \> Parametere \> Commerce-parametere**. Sett alternativet **Behandle returordrer som salgsordrer** til **Ja** i hurtigfanen **Kundeordrer**.
 2. Kjør jobben **Distribusjonsplan for global konfigurasjon** (**1110**).
 
 ## <a name="make-an-exchange"></a>Gjøre en utveksling

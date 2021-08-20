@@ -72,6 +72,8 @@
                   items:
                     - name: Nyheter eller endringer på startsiden for Supply Chain Management
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.21 (oktober 2021)
+                      href: get-started/whats-new-scm-10-0-21.md
                     - name: Supply Chain Management 10.0.20 (august 2021)
                       href: get-started/whats-new-scm-10-0-20.md
                     - name: Supply Chain Management 10.0.19 (juni 2021)
@@ -1601,6 +1603,8 @@
                   href: master-planning/planning-optimization/planning-optimization-overview.md
                 - name: Kom i gang med planleggingsoptimalisering
                   href: master-planning/planning-optimization/get-started.md
+                - name: Frigivelsesprosess og frigivelseslogg for planleggingsoptimalisering
+                  href: master-planning/planning-optimization/release-process.md
                 - name: Analyse for tilpasning av planleggingsoptimalisering
                   href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
                 - name: Parametere som ikke brukes av planleggingsoptimalisering
@@ -1631,6 +1635,8 @@
                   href: master-planning/planning-optimization/replenishment-methods-quantity-modification.md
                 - name: Dekningshorisonter
                   href: master-planning/planning-optimization/coverage-time-fence.md
+                - name: Nettobehov og utligningsinformasjon med planleggingsoptimalisering
+                  href: master-planning/planning-optimization/net-requirements.md
                 - name: Godkjenn planlagte ordrer
                   href: master-planning/planning-optimization/approved-planned-order.md
                 - name: Autoriser planlagte ordrer
@@ -1709,6 +1715,8 @@
                   href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
                 - name: Samarbeid med kunder for intern forsyningskjede
                   href: master-planning/tasks/collaborate-internal-supply-chain-customers.md
+                - name: Nettobehov og utligningsinformasjon med innebygd hovedplanlegging
+                  href: master-planning/net-requirements-built-in-master-planning.md
             - name: Prognose
               items:
                 - name: Etterspørsels- og forsyningsprognoser
@@ -1965,11 +1973,13 @@
               items:
                 - name: Oversikt over tilbudsforespørsler (RFQ-er)
                   href: procurement/request-quotations.md
-                - name: Opprette en tilbudsforespørsel
+                - name: Opprett en tilbudsforespørsel
                   href: procurement/tasks/create-request-quotation.md
-                - name: Opprette en rekvisisjon som bruker en tilbudsforespørsel
+                - name: Forseglede bud for tilbudsforespørsler
+                  href: procurement/sealed-bidding.md
+                - name: Opprett en rekvisisjon som bruker en tilbudsforespørsel
                   href: procurement/tasks/create-requisition-uses-rfq.md
-                - name: Opprette en poengsummetode for tilbudsforespørsler
+                - name: Opprett en poengsummetode for tilbudsforespørsler
                   href: procurement/tasks/create-scoring-method-rfqs.md
                 - name: Opprette forespørselstyper og poengkriterier for tilbudsforespørsler
                   href: procurement/tasks/create-solicitation-types-scoring-criteria-rfqs.md
@@ -2281,6 +2291,8 @@
               href: engineering-change-management/product-readiness.md
             - name: Frigi produktstruktur
               href: engineering-change-management/release-product-structure.md
+            - name: Generer varianter for tekniske produkter
+              href: engineering-change-management/engineering-variants.md
             - name: Vanlige spørsmål om styring av teknisk endring
               href: engineering-change-management/change-management-faq.md
         - name: Produksjonskontroll
@@ -2601,8 +2613,10 @@
           items:
             - name: Oversikt over rabattbehandlingsmodul
               href: rebate-management/rebate-management-overview.md
-            - name: Sette opp og konfigurere rabattbehandlingsmodulen
+            - name: Sett opp og konfigurer rabattbehandlingsmodulen
               items:
+                - name: Aktiver rabattbehandlingsmodulen for systemet ditt
+                  href: rebate-management/rebate-management-enable.md
                 - name: Rabattbehandlingsparametere
                   href: rebate-management/rebate-management-parameters.md
                 - name: Arbeidsflyter for rabattbehandlingsavtale
@@ -2617,8 +2631,10 @@
                   href: rebate-management/rebate-management-posting.md
             - name: Rabattbehandlingsavtaler
               href: rebate-management/rebate-management-deals.md
-            - name: 'Behandle, gjennomgå og postere rabatter'
+            - name: 'Behandle, gjennomgå og poster rabatter'
               href: rebate-management/process-review-post.md
+            - name: Administrer fradrag ved hjelp av fradragsarbeidsområdet
+              href: rebate-management/deduction-workbench.md
         - name: Salg og markedsføring
           items:
             - name: Oversikt over salg og markedsføring
@@ -3051,12 +3067,14 @@
                   href: landed-cost/manage-folios.md
             - name: Spore innkommende reiser og reiser for forsendelsescontainere
               href: landed-cost/inbound-tracking.md
-            - name: Estimere og behandle netto innkjøpspris
+            - name: Estimer og behandle netto innkjøpspris
               href: landed-cost/estimate-manage-landed-costs.md
             - name: Behandling i transitt
               href: landed-cost/in-transit-processing.md
             - name: Behandle over-/undertransaksjoner
               href: landed-cost/over-under-transactions.md
+            - name: Oppdater sporing for plassering
+              href: landed-cost/update-tracking-putaway.md
             - name: Forespørsler om netto innkjøpspris
               href: landed-cost/landed-cost-inquiries.md
             - name: Rapporter om netto innkjøpspris
@@ -3111,12 +3129,14 @@
                       href: warehousing/troubleshoot-warehouse-partial-release-shipment.md
                 - name: Plukking og pakking
                   items:
-                    - name: Definere gruppeplukking
+                    - name: Definer gruppeplukking
                       href: warehousing/set-up-cluster-picking.md
                     - name: Gruppestilling full
                       href: warehousing/cluster-position-full.md
                     - name: Systemstyrt gruppeplukking
                       href: warehousing/system-directed-cluster-pick.md
+                    - name: Overplukking for salgsordrer og overføringsordrer
+                      href: warehousing/over-picking-for-sales-and-transfer-orders.md
                     - name: Angi ulike dimensjoner for emballasje og lagring
                       href: warehousing/packing-vs-storage-dimensions.md
                     - name: Parti- og nummerskiltbekreftelse
@@ -3509,6 +3529,12 @@
                   href: troubleshooting/transportation/reconciliation-reaso.md
             - name: Lagerstyring
               items:
+                - name: Du kan ikke bekrefte en forsendelse fordi kunden er på vent
+                  href: troubleshooting/warehousing/customer-is-on-hold.md
+                - name: Du kan ikke bekrefte en forsendelse fordi belastningslinjene har et antall på null
+                  href: troubleshooting/warehousing/load-line-quantity-is-zero.md
+                - name: Kan ikke oppdatere en belastningslinje fordi det frigitte antallet vil være negativt
+                  href: troubleshooting/warehousing/released-qty-cannot-be-negative.md
                 - name: Annullerte produktkvitteringer oppdaterer ikke transaksjonsstatusen til registrert
                   href: troubleshooting/warehousing/canceled-product-receipts.md
                 - name: Desimalavrunding av det fysiske oppdateringsantallet er feil
