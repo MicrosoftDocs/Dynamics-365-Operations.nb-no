@@ -1,8 +1,8 @@
 ---
 title: Oversikt over funksjonsbehandling
 description: Dette emnet beskriver funksjonen Funksjonsbehandling og hvordan du kan bruke den.
-author: ChrisGarty
-ms.date: 10/05/2020
+author: Peakerbl
+ms.date: 07/30/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -11,58 +11,92 @@ audience: IT Pro, Application user
 ms.reviewer: sericks
 ms.custom: intro-internal
 ms.search.region: Global
-ms.author: cgarty
+ms.author: peakerbl
 ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: e3cb0c637d47e3267cf63e956c8a7ea45d0623bd
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 9b51e848a965589ef0a14e5b880f213d18abc53097c18eed51320d7443a3b5f0
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6336722"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6741614"
 ---
 # <a name="feature-management-overview"></a>Oversikt over funksjonsbehandling
 
 [!include [banner](../../includes/banner.md)]
+[!include [preview banner](../../includes/preview-banner.md)]
 
-Funksjoner legges til og oppdateres i hver versjon. Funksjonsbehandling-opplevelsen gir et arbeidsområde der du kan vise en liste over funksjoner som er levert i hver versjon. Nye funksjoner er deaktivert som standard. Du kan bruke arbeidsområdet til å aktivere dem og vise dokumentasjonen for dem.
+Funksjoner legges til og oppdateres i hver versjon. Funksjonsbehandling-opplevelsen gir et arbeidsområde der du kan vise en liste over funksjoner som er levert i hver versjon. Du kan deretter bruke arbeidsområdet til å vise dokumentasjon for funksjonen, og til å aktivere eller deaktivere funksjoner.
 
 ## <a name="the-feature-management-workspace"></a>Arbeidsområdet for funksjonsbehandling
 
-Du kan åpne arbeidsområdet **Funksjonsbehandling** ved å velge den aktuelle flisen på instrumentbordet. Du vil se en side som viser en liste over funksjoner for alle versjoner som støttes av Funksjonsbehandling-opplevelsen. Over tid vil Microsoft forbedre Funksjonsbehandling-opplevelsen slik at den inneholder flere funksjoner som hjelper deg å administrere funksjoner.
+Du kan åpne arbeidsområdet **Funksjonsbehandling** ved å velge den aktuelle flisen på instrumentbordet. Du vil se en side som viser en liste over funksjoner for alle versjoner som støttes av Funksjonsbehandling-opplevelsen. 
 
 Funksjonslisten inneholder følgende informasjon:
 
 - **Funksjonsnavn** – En beskrivelse av funksjonen som ble lagt til.
-- **Statusen Aktivert** – Et symbol angir om en funksjon er aktivert (hake), ikke er aktivert (tom), er planlagt aktivert (klokke) eller er obligatorisk aktivert (lås), trenger tilsyn før du aktiverer den (advarsel) eller kan ikke aktiveres (X). Innstillingen som vises, brukes for alle juridiske enheter. Legg merke til at selv om en funksjon er aktivert, kontrolleres den fortsatt av sikkerhet. Funksjonen vil derfor bare være tilgjengelig for brukere som har tilgang til den, basert på sikkerhetsrollen deres. Den vil også bare være tilgjengelig i juridiske enheter som brukeren har tilgang til.
+- **Status** – Et symbol angir om en funksjon er aktivert (hake), er deaktivert (tom), er planlagt aktivert (klokke) eller er obligatorisk (lås), trenger tilsyn før du aktiverer den (advarselssymbol) eller kan ikke aktiveres (X). Innstillingen som vises, brukes for alle juridiske enheter. Legg merke til at selv om en funksjon er aktivert, kontrolleres den fortsatt av sikkerhet. Funksjonen vil derfor bare være tilgjengelig for brukere som har tilgang til den, basert på sikkerhetsrollen deres. Den vil også bare være tilgjengelig i juridiske enheter som brukeren har tilgang til.
 - **Aktiveringsdato** – Datoen da funksjonen ble aktivert eller planlegges å aktiveres.
 - **Funksjon lagt til** – Datoen da funksjonen ble lagt til i miljøet ditt. Denne datoen angis automatisk når du oppdaterer miljøet under de månedlige versjonssyklusene.
+- **Funksjonsstatus** – Gjeldende livssyklusstatus for funksjonen **Forhåndsvisning**, **Frigitt** (vist som tom), **Aktiver som standard** og **Obligatorisk**. Tilstandene er dekket i flere detaljer senere i dette emnet. 
 - **Modul** – Modulen som påvirkes av den nye funksjonen.
+
+> [!NOTE]
+> Kolonnen **Funksjonsstatus** er inkludert fra versjon 10.0.21.
 
 Når du velger en funksjon, vises mer informasjon i detaljruten til høyre for funksjonslisten. Øverst i ruten vil du se funksjonsnavnet, datoen da funksjonen ble lagt til, modulen som påvirkes av funksjonen, og en **Finn ut mer**-kobling. Velg denne koblingen for å vise dokumentasjonen for funksjonen. Hvis dokumentasjon ikke er tilgjengelig, vil du bli ført til en midlertidig side. Detaljruten inneholder også feltet **Kommentarer** der du kan legge til dine egne kommentarer om funksjonen.
 
 Arbeidsområdet **Funksjonsbehandling** har også flere kategorier, som hver viser en liste med funksjoner.
 
 - **Ny** – Denne fanen viser alle funksjoner som er lagt til siden den siste månedlige oppdateringen. Hvis du har hoppet over månedlige oppdateringer, viser fanen alle de nye funksjonene som er lagt til siden forrige gang du oppdaterte. De nyeste funksjonene vises øverst på listen. Totalt antall nye funksjoner vises også på en flis øverst på siden.
-- **Ikke aktivert** – Denne fanen viser alle funksjoner som ikke er aktivert. De nyeste funksjonene vises øverst på listen. Totalt antall nye funksjoner som ikke er aktivert, vises også på en flis øverst på siden.
-- **Planlagt** – Denne fanen viser alle funksjoner som er planlagt aktivert i fremtiden. Funksjonene som har den tidligste planlagte datoen, vises øverst i listen. Totalt antall nye planlagte funksjoner vises også på en flis øverst på siden.
+- **Ikke aktivert** – Denne fanen viser alle funksjoner som ikke er aktivert. De nyeste funksjonene vises øverst på listen. I tillegg viser en flis øverst på siden totalt antall nye funksjoner som for øyeblikket er deaktivert.
+- **Planlagt** – Denne fanen viser alle funksjoner som er planlagt aktivert i fremtiden. Funksjonene som har den tidligste planlagte datoen, vises øverst i listen. I tillegg viser en flis øverst på siden totalt antall planlagte funksjoner.
 - **Alle** – Denne fanen viser alle funksjoner. De nyeste funksjonene vises øverst på listen.
 
-## <a name="turn-on-a-feature"></a>Aktivere en funksjon
+## <a name="feature-states"></a>Funksjonstilstander
+Funksjoner kan gå over mellom flere tilstander, fra å bli lansert i Funksjonsstyring til eventuelt bli obligatoriske i produktet. Denne delen beskriver de gyldige funksjonstilstandene.
+
+### <a name="preview-features-optional"></a>Forhåndsversjonsfunksjoner (valgfritt)
+
+Produktteam kan bestemme at de først skal starte en ny funksjon som en forhåndsversjonsfunksjon. Forhåndsversjonsfunksjoner er ikke aktivert som standard, og de er valgfrie. Det eiende produktteamet oppdaterer funksjoner som frigis etter at de har fullført en vellykket forhåndsversjonsperiode.
+
+> [!NOTE]
+> Forhåndsversjonsfunksjoner er underlagt bestemte [forhåndsversjonsvilkår](https://go.microsoft.com/fwlink/?linkid=2105274). 
+
+### <a name="released-features-optional"></a>Frigitte funksjoner (valgfritt)
+
+**Funksjonstilstand**-kolonnen for disse funksjonene er tom. Funksjoner som først legges til som frigitte, er ikke aktivert som standard, og aktivering av dem er valgfrie. Funksjoner som oppdateres fra forhåndsversjons, beholder aktiveringstilstanden sin.
+
+### <a name="on-by-default-features-optional"></a>Aktivert som standard-funksjoner (valgfritt)
+
+Funksjoner som er oppdatert til **Aktivert som standard**, er aktivert som standard, men de kan deaktiveres. Etter at funksjoner som kan deaktiveres, har vært i **Frigitt**-tilstanden i minst seks måneder, forventes det at de flytter til denne statusen i den neste store versjonen. Funksjoner som går over til **Aktivert som standard**, forventes å bli kommunisert i emnet [Nyheter](../whats-new-changed.md) for versjonen. Oppdateringen startes av det eiende produktteamet.
+
+> [!NOTE]
+> Siden disse funksjonene blir aktivert automatisk, er det viktig at du fastslår om organisasjonen er klar til å innhente disse funksjonene, eller om det kreves mer tid. Hvis det kreves mer tid, kan det være nødvendig å deaktivere disse funksjonene midlertidig. Legg merke til at overgangen til en funksjon til **Aktivert som standard** vanligvis gjøres i hovedversjonen før funksjonen skal bli **obligatorisk**. På det tidspunktet har du ikke muligheten til å deaktivere funksjonen. 
+
+### <a name="released-features-mandatory"></a>Frigitte funksjoner (obligatorisk)
+
+**Frigitt** er den endelige tilstanden for funksjoner. Den indikerer at funksjonene er aktivert, og at du ikke kan deaktivere dem uten å kontakte Microsoft. Valgfrie funksjoner forventes å bli obligatoriske etter to hovedversjoner. Kritiske funksjoner kan, unntaksvis, introduseres som obligatoriske.
+
+## <a name="example-of-expected-feature-lifecycles"></a>Eksempel på forventede livssykluser for funksjoner
+
+Funksjoner som kan deaktiveres, og som ble lagt til som frigitt og valgfri før eller som del av april-utgivelsen, forventes å gå over til **Aktivert som standard** i oktober-utgivelsen. De forventes da å bli **obligatoriske** i april neste år.
+
+Funksjoner som kan deaktiveres, og som ble lagt til som frigitt og valgfri før eller som del av april-utgivelsen, forventes å gå over til **obligatorisk** i april neste år.
+
+## <a name="enable-a-feature"></a>Aktivere en funksjon
 
 Hvis en funksjon ikke er aktivert, vises en **Aktiver nå**-knapp i detaljruten. Du kan bruke denne knappen til å aktivere funksjonen.
 
-- Velg funksjonen du vil aktivere, og velg deretter **Aktiver nå** i detaljruten. Funksjonen er slått på.
+Noen funksjoner kan ikke deaktiveres etter at du har aktivert dem. Hvis funksjonen du prøver å aktivere, ikke kan aktiveres, får du en advarsel. På dette stadiet kan du velge **Avbryt** for å avbryte operasjonen og la funksjonen være deaktivert. Hvis du imidlertid velger **Aktiver** for å aktivere funksjonen, kan du ikke deaktivere den senere.
 
-Enkelte funksjoner kan ikke slås av etter at du har aktivert dem. Hvis funksjonen du prøver å aktivere, ikke kan slås av, får du en advarsel. På dette stadiet kan du velge **Avbryt** for å avbryte operasjonen og la funksjonen være deaktivert. Hvis du imidlertid velger **Aktiver** og aktiverer funksjonen, kan du ikke deaktivere den senere.
-
-Noen funksjoner viser en melding som inneholder tilleggsinformasjon, før du slår dem på. Disse funksjonene indikeres av et gult advarselssymbol. Du bør lese tilleggsinformasjonen nøye for å få en bedre forståelse av hva som vil skje når funksjonen er aktivert. Du kan imidlertid fortsatt velge **Aktiver** for å aktivere funksjonen.
+Noen funksjoner viser en melding som inneholder tilleggsinformasjon, før du aktiverer dem. Disse funksjonene indikeres av et gult advarselssymbol. Du bør lese tilleggsinformasjonen nøye for å sikre at du forstår hva som vil skje når funksjonen er aktivert. Du kan imidlertid fortsatt velge **Aktiver** for å aktivere funksjonen.
 
 Noen funksjoner vil vise en melding om at funksjonen ikke kan aktiveres før en handling er utført. Disse funksjonene indikeres av et rødt X-symbol. Du må utføre handlingene som er beskrevet i beskrivelsen, før funksjonen aktiveres. Hvis du for eksempel ikke kan bruke en funksjon før en konfigurasjonsnøkkel er deaktivert, må du deaktivere konfigurasjonsnøkkelen først og deretter gå tilbake til funksjonsbehandling for å aktivere funksjonen.
 
-Når en funksjon er aktivert, vises en melding under **Finn ut mer**-koblingen i detaljruten. Denne meldingen angir enten at funksjonen ble aktivert eller den fremtidige datoen funksjonen er planlagt å bli aktivert. Den vises hver gang du velger funksjonen i funksjonslisten.
+Når en funksjon er aktivert, vises en melding under **Finn ut mer**-koblingen i detaljruten. Denne meldingen angir enten at funksjonen ble aktivert eller den fremtidige datoen når funksjonen er planlagt å bli aktivert. Den vises hver gang du velger funksjonen i funksjonslisten.
 
 Funksjoner som er planlagt å aktiveres i fremtiden, vises i fanen **Planlagt**. En partiprosess slår den på ved midnatt på den angitte datoen basert på tidssonen som representeres av systemdatoen.
 
@@ -74,35 +108,33 @@ Hvis en funksjon er planlagt å aktiveres i fremtiden, vises en **Planlegg**-kna
 2. I **Aktiveringsdato**-feltet i dialogboksen som vises, angir du den nye datoen funksjonen skal aktiveres.
 3. Velg **Aktiver** for å planlegge funksjonen på nytt, eller **Deaktiver** for å avbryte planen.
 
-## <a name="turn-off-a-feature"></a>Deaktivere en funksjon
+## <a name="disable-a-feature"></a>Deaktivere en funksjon
 
-Hvis en funksjon allerede er aktivert, vises en **Deaktiver**-knapp i detaljruten. Du kan bruke denne knappen til å deaktivere funksjonen. Knappen **Deaktiver** er ikke tilgjengelig hvis funksjonen ikke kan deaktiveres etter at den er aktivert.
+Hvis en funksjon er aktivert, vises en **Deaktiver**-knapp i detaljruten. Du kan bruke denne knappen til å deaktivere funksjonen. **Deaktiver**-knappen er ikke tilgjengelig hvis funksjonen ikke kan deaktiveres. 
 
-- Velg funksjonen for å deaktivere, og velg deretter **Deaktiver** i detaljruten. Funksjonen deaktiveres, og merket i feltet **Aktiveringsdato** fjernes.
+Når en funksjon er deaktivert, vises en melding under **Finn ut mer**-koblingen i detaljruten. Denne meldingen angir at funksjonen ikke er aktivert. Den vises hver gang du velger funksjonen i funksjonslisten. Funksjoner som ikke er aktivert, vises i fanen **Ikke aktivert**.
 
-Når en funksjon deaktiveres, vises en melding under **Finn ut mer**-koblingen i detaljruten. Denne meldingen angir at funksjonen ikke er aktivert ennå. Den vises hver gang du velger funksjonen i funksjonslisten. Funksjoner som ikke er aktivert, vises i fanen **Ikke aktivert**.
+## <a name="features-that-must-be-enabled"></a>Funksjoner som må aktiveres
 
-## <a name="features-that-must-be-turned-on"></a>Funksjoner som må aktiveres
-
-Noen ganger forekommer en kritisk funksjon som må aktiveres automatisk når du gjør en oppdatering. Disse funksjonene aktiveres automatisk på datoen som er angitt i feltet **Aktiver dato**. For disse funksjonene vises en melding under **Finn ut mer**-koblingen i detaljruten. Denne meldingen angir enten at funksjonen ble aktivert eller den fremtidige datoen når funksjonen blir aktivert. Den vises hver gang du velger funksjonen i funksjonslisten.
+Noen ganger forekommer en kritisk funksjon som må aktiveres automatisk når du gjør en oppdatering. Disse funksjonene aktiveres automatisk på datoen som er angitt i feltet **Aktiver dato**. For disse funksjonene vises en melding under **Finn ut mer**-koblingen i detaljruten. Denne meldingen angir enten at funksjonen ble aktivert, eller den fremtidige datoen når funksjonen vil bli aktivert. Den vises hver gang du velger funksjonen i funksjonslisten.
 
 ## <a name="enable-all-features"></a>Aktiver alle funksjoner
 
-Som standard deaktiveres alle funksjoner som legges til i miljøet. Du kan aktivere alle funksjonene ved å velge **Aktiver alle**-knappen. 
+Du kan aktivere alle funksjonene ved å velge **Aktiver alle**-knappen. 
 
 Når du velger **Aktiver alle**, vises et alternativ der du må oppgi følgende informasjon:
+
 - En liste over alle funksjoner som krever bekreftelse før de kan aktiveres. Hvis du vil aktivere funksjonene i listen, velger du **Ja** for knappen **Aktiver funksjoner som krever bekreftelse**.
 - En liste over alle funksjoner som ikke kan aktiveres, vises. Disse funksjonene vil ikke bli aktivert.
 
 Alle funksjoner som kan aktiveres, aktiveres. Hvis en funksjon allerede er planlagt aktivert i fremtiden, vil ikke tidsplanen endres. 
 
-## <a name="turn-on-all-features-automatically"></a>Aktivere alle funksjoner automatisk
+## <a name="enable-all-features-automatically"></a>Aktiver alle funksjoner automatisk
 
-Som standard deaktiveres alle funksjoner som legges til i miljøet, med mindre de er obligatoriske funksjoner. Hvis du vil aktivere alle nye funksjoner automatisk, kan du imidlertid bruke rullegardinlisten under arbeidsområdetittelen til å endre hva som skjer når nye funksjoner legges til.
+Hvis du vil aktivere alle nye funksjoner automatisk, kan du bruke rullegardinlisten under arbeidsområdetittelen til å endre hva som skjer når nye funksjoner legges til.
 
-- Velg `Enable new features automatically` for å aktivere alle nye funksjoner automatisk når de legges til i miljøet ditt.
-- Velg `Do not enable new features automatically` for å deaktivere alle nye funksjoner som standard når de legges til i miljøet ditt.
-
+- Velg **Aktiver nye funksjoner automatisk** for å aktivere alle nye funksjoner automatisk når de legges til i ditt miljø.
+- Velg **Ikke aktiver nye funksjoner automatisk** hvis alle gjeldende nye funksjoner skal deaktiveres som standard når de legges til i ditt miljø.
 
 Når du aktiverer alle funksjonene automatisk, vil dette aktivere alle funksjonene som vil bli aktivert når du klikker på **Aktiver alle**-knappen. Det vil ikke aktivere funksjonene som krever bekreftelse eller funksjoner som ikke kan aktiveres før en handling er utført.
 
@@ -129,19 +161,15 @@ En dataenhet som kalles **Funksjonsbehandling**, lar deg eksportere innstillinge
 Følgende eksempler beskriver hva som skjer når du bruker **Funksjonsbehandling** til å importere data.
 
 - Hvis du endrer verdien i feltet **Aktivert** til **Ja**, aktiveres funksjonen, og feltet **Aktiveringsdato** settes til gjeldende dato.
-- Hvis du endrer verdien i feltet **Aktivert** til **Nei** eller lar feltet **Aktiveringsdato** stå tomt, aktiveres funksjonen, og merket i feltet **Aktiveringsdato** fjernes. Du kan ikke deaktivere en obligatorisk funksjon eller en funksjon som ikke kan deaktiveres når den er slått på.
+- Hvis du endrer verdien i feltet **Aktivert** til **Nei** eller lar feltet **Aktiveringsdato** stå tomt, deaktiveres funksjonen, og merket i feltet **Aktiveringsdato** fjernes. Du kan ikke deaktivere en obligatorisk funksjon eller en funksjon som ikke kan deaktiveres når den er aktivert.
 - Hvis du endrer verdien i feltet **Aktiveringsdato** til en fremtidig dato, planlegges funksjonen for denne datoen.
 - Hvis du endrer verdien i feltet **Aktivert** til **Ja** og endrer verdien i feltet **Aktiveringsdato** til en fremtidig dato, planlegges funksjonen til denne datoen. 
 - Hvis du endrer verdien i feltet **Aktivert** til **Nei**, men du også endrer verdien i feltet **Aktiveringsdato** til en fremtidig dato, planlegges funksjonen til denne datoen.
-- Hvis en funksjon aktiveres og du legger til et **Aktiveringsdato**-felt som er satt til en fremtidig dato, forblir funksjonen aktivert. Hvis du vil planlegge funksjonen på nytt, må du endre feltet **Aktivert** til **Nei**.
+- Hvis en funksjon aktiveres og du legger til et **Aktiveringsdato**-felt som er satt til en fremtidig dato, forblir funksjonen aktivert. Hvis du vil planlegge funksjonen på nytt, må du endre verdien i feltet **Aktivert** til **Nei**.
 
 ## <a name="feature-management-and-flighting"></a>Funksjonsbehandling og testversjonering
 
 Funksjonsbehandling lar deg styre funksjonene som leveres i hver versjon. Testversjonering gir Microsoft Teams mulighet til å gi ut funksjoner til et begrenset antall kunder, slik at funksjonene kan testes og valideres uten at det påvirker alle kundene. Funksjonsbehandling styrer ikke testversjoneringen av funksjoner.
-
-## <a name="new-features-are-optional-for-12-months"></a>Nye funksjoner er valgfrie i 12 måneder
-
-Når en ny ikke-kritisk funksjon er installert, vil den være valgfri i en 12-måneders periode. Dette gjør det mulig for deg og organisasjons å planlegge fremover for når du skal få en funksjon, og få den testet mot dine daglige operasjoner. Hvis du vil ha mer informasjon om forhåndsvisning versjoner, kan du se [Vanlige spørsmål om oppdatering av én versjonstjeneste](../one-version.md#what-about-new-features).
 
 ## <a name="using-feature-management-to-turn-on-isv-features-or-custom-features"></a>Bruke Funksjonsbehandling til å aktivere ISV-funksjoner eller egendefinerte funksjoner
 
@@ -150,13 +178,10 @@ Funksjonsbehandling er for øyeblikket ikke tilgjengelig for funksjoner fra uavh
 ## <a name="frequently-asked-questions-faq"></a>Vanlige spørsmål
 
 ### <a name="when-are-features-added-removed-or-changed"></a>Når blir funksjoner lagt til, fjernet eller endret? 
-Funksjoner legges til, fjernes og endres gjennom kodeendringer. Miljø må oppdateres for å kunne motta disse endringene.
+Funksjoner legges til, fjernes og endres gjennom kodeendringer av eiende produktteam. Miljø må oppdateres for å kunne motta disse endringene.
 
 ### <a name="does-a-feature-become-mandatory-automatically"></a>Blir en funksjon obligatorisk automatisk? 
-Nei, det at en funksjon blir obligatorisk, er ikke en automatisk handling. Produktgruppene må gjøre en kodeendring.
-
-### <a name="when-do-features-become-mandatory"></a>Når blir funksjoner obligatoriske? 
-Policyen er at alle nye funksjoner vil kunne velges i en 12-måneders periode og krever ingen endringsbehandling før du aktiverer funksjonen. Produktgruppene kan velge om de vil gjøre en funksjon obligatorisk etter at perioden er avsluttet. 
+Nei, en funksjon blir ikke obligatorisk automatisk. Det eiende produktteamet må gjøre en kodeendring.
 
 ### <a name="why-isnt-there-a-specific-mandatory-enabled-date"></a>Hvorfor finnes det ikke en bestemt "obligatorisk aktivert-dato"? 
 Tidspunkt for frigivelse av oppdatering varierer, miljøoppdateringstidspunkt varierer, og kunder kan velge å hoppe over enkelte oppdateringer. Derfor er bestemte datoer er vanskelige å bestemme. 
@@ -168,7 +193,9 @@ Denne dokumentasjonen kommer hvert Dynamics 365-programteam. Ofte vil disse funk
 En varslingsmekanisme som er knyttet til å gjøre en funksjon obligatorisk, finnes ikke i dag.
 
 ### <a name="do-features-ever-get-enabled-without-the-customer-knowing-about-it"></a>Blir funksjoner noen gang aktivert uten at kunden vet om det? 
-Ja, hvis funksjonene ikke har en funksjonell innvirkning, kan de aktiveres som standard.
+Ja, funksjoner kan aktiveres uten kundens viten i følgende situasjoner:
+- En funksjon flyttes til **Aktivert som standard**. I denne tilstanden kan funksjonen fremdeles deaktiveres. 
+- En funksjon er oppdatert til **Obligatorisk**. Denne endringen skjer bare i kombinasjon med en hovedversjon. Kritiske funksjoner kan, unntaksvis, flyttes til **Obligatorisk** ved enhver oppdatering.
 
 ### <a name="what-is-feature-flighting-and-how-does-it-relate-to-feature-management"></a>Hva er testversjonering, og hvordan er det knyttet til funksjonshåndtering? 
 Testversjonering av funksjoner er på/av-brytere i sanntid som Microsoft styrer. De er atskilt fra kundekontrollen som er levert av Funksjonsbehandling. 

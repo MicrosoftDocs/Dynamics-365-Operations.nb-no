@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: fd8c306dd6c3aeb7ef41b4eb3f6f8bad040035c2
-ms.sourcegitcommit: 9283caad2d0636f98579c995784abec19fda2e3f
+ms.openlocfilehash: 67240491bba5a81455bff00be22908670880803c3e08091d76e037fa0b5f49ec
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5935611"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6760520"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10017-april-2021"></a>Hva er nytt eller endret i Dynamics 365 Supply Chain Management 10.0.17. (april 2021)
 
@@ -52,6 +52,8 @@ De fleste av disse funksjonene må aktiveres ved hjelp av [Funksjonsbehandling](
 - [Landingskostnad](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/landed-cost)<br> - Hvis du vil ha mer informasjon, kan du se [Modulen Netto innkjøpspris](../landed-cost/landed-cost-overview.md).
 
 - [Pakking i forhold til lagringsdimensjoner](/dynamics365-release-plan/2019wave2/dynamics365-supply-chain-management/packing-vs.-storage-dimensions)<br> - Hvis du vil ha mer informasjon, kan du se [Angi ulike dimensjoner for pakking og lagring](../warehousing/packing-vs-storage-dimensions.md).
+
+- [Parallell bølgetildeling](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/parallel-wave-allocation)<br> - For mer informasjon se [Bølgetildeling](../warehousing/wave-allocation-method.md).
 
 - [Lagrede visninger for lager og logistikk](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/saved-views-inventory-logistics)<br> - Hvis du vil ha mer informasjon, kan du se [Standard lagrede visninger for Supply Chain Management](saved-views-scm.md).
 

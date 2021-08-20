@@ -2,7 +2,7 @@
 title: Oversikt over finansrapportering
 description: Dette emnet beskriver hvor du kan få tilgang til økonomisk rapportering i Microsoft Dynamics 365 Finance og hvordan du bruker de økonomiske rapporteringsfunksjoner.
 author: aprilolson
-ms.date: 12/04/2020
+ms.date: 07/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf07b12d83221952aefb80ab6a5b651bb4ef3762
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: da997af4c4cab7b99dfa14f185de6a7c057d6831b7ee576787c17b550fa60194
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6338163"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6748216"
 ---
 # <a name="get-started-with-financial-reporting"></a>Komme i gang med Financial Reporting 
 
@@ -47,10 +47,10 @@ Hvis du vil opprette og generere finansrapporter for en juridisk enhet, må du a
 -   Kontoplan
 -   Valuta.
 -   Postere en transaksjon til minst én konto
--   MainAccount er oppført i Valgt-kolonnen i **Økonomimodul > Finansoppsett > Oppsett for Financial Reporting**
+-   MainAccount er oppført i **Valgt**-kolonnen i siden **Oppsett for Financial Reporting** (**Økonomimodul > Finansoppsett > Oppsett for Financial Reporting**)
 
 ## <a name="granting-security-access-to-financial-reporting"></a>Tildele sikkerhetstilgang til Financial Reporting
-Funksjonene for økonomisk rapportering er tilgjengelige for brukere som er tilordnet de nødvendige rettighetene og pliktene via sikkerhetsrollene sine. De følgende delene viser disse rettighetene og pliktene sammen med de tilknyttede rollene.
+Funksjonene for Financial Reporting er tilgjengelige for brukere som er tilordnet de nødvendige rettighetene og pliktene via sikkerhetsrollene sine. De følgende delene viser disse rettighetene og pliktene sammen med de tilknyttede rollene.
 
 ### <a name="duties"></a>Plikter
 
@@ -79,7 +79,7 @@ Funksjonene for økonomisk rapportering er tilgjengelige for brukere som er tilo
 | Generer finansrapporter            | Generer finansrapporter            | CEO, CFO, Regnskapsfører                                                            |
 | Vis finansrapporter                | Gå gjennom finansresultat          | Ikke tilordnet                                                                   |
 
-Når en bruker er lagt til eller en rolle er endret, skal brukeren kunne få tilgang til økonomisk rapportering på noen få minutter. 
+Når en bruker er lagt til eller en rolle er endret, skal brukeren kunne få tilgang til Financial Reporting på noen få minutter. 
 
 > [!NOTE]
 > Sysadmin-rollen er lagt til alle roller i Financal Reporting.
@@ -165,10 +165,47 @@ Problem 2: Brukeren er ikke tilordnet de nødvendige tillatelsene til å bruke F
   Hvis en annen bruker kan åpne Rapportutforming, velger du **Verktøy**, og deretter velger du **Integreringsstatus**. Kontroller at integreringskartet, "Firmabrukeres leverandør til selskap", har blitt kjørt riktig fordi du var tilordnet tillatelse til å bruke Financial Reporting. 
 * Det er mulig at en annen feil har forhindret **integrasjon fra Dynamics-bruker til Financial Reporting-bruker** i å fullføres. Det er mulig at en datatorgtilbakestilling er startet og ikke er fullført ennå, eller at det har oppstått en annen systemfeil. Prøv å kjøre prosessen på nytt senere. Hvis problemet vedvarer, kontakter du systemansvarlig.
 
-Problem 3: Du kan fortsette etter påloggingssiden for ClickOnce Rapportutforming, men du kan ikke fullføre påloggingen i Rapportutforming. 
+Problem 3: Du kan fortsette etter påloggingssiden for **ClickOnce Report Designer**, men du kan ikke fullføre påloggingen i Report Designer. 
 
-* Tiden som er angitt på den lokale datamaskinen når du angir påloggingsinformasjonen din, må være innen fem minutter av tiden på Financial Reporting-serveren. Hvis det er en forskjell på mer enn fem minutter, vil ikke systemet tillate pålogging. 
-* I så fall anbefaler vi at du aktiverer alternativet Windows for å stille inn PCens tid automatisk. 
+* Tiden som er angitt på den lokale datamaskinen når du logger på systemet, må være innen fem minutter av tiden på Financial Reporting-serveren. Hvis det er en forskjell på mer enn fem minutter, vil ikke systemet tillate pålogging. 
+* Hvis tiden på datamaskinen er forskjellig fra tiden på Financial Reporting-server, anbefaler vi at du aktiverer Windows-alternativet for å angi datamaskinens tid automatisk. 
+
+## <a name="troubleshoot-report-designer-issues-with-event-viewer"></a>Feilsøk problemer med Report Designer med Hendelsesliste
+
+Du kan bruke hendelseslisten til å analysere noen av problemene som oppstår ved bruk av Financial Reporting. 
+
+### <a name="what-happens-when-you-have-connections-issues-with-financial-reporting"></a>Hva skjer når du har tilkoblinger problemer med Financial Reporting? 
+
+Her er noen trinn du kan gjøre for å gjøre løsningen med Microsoft kundestøtte mer effektiv og gi deg en raskere løsning. 
+ 
+Trinnene nedenfor går gjennom prosessen med å aktivere Hendelseslistemeldinger for Financial Reporting. Loggene som hendelseslisten genererer, vil hjelpe teknikere med å identifisere kilden til tilkoblingsproblemet raskt. Send kopier av disse loggene sammen med forespørselen når du kontakter kundestøtte.
+
+> 1.    Kopier RegisterETW.zip-filen til klientarbeidsstasjonen (helst skrivebordet), og pakk ut [RegisterETW.zip](https://dev.azure.com/msdyneng/e6f12261-a46a-4af1-ac0c-e22bc2c5a478/_apis/git/repositories/ff923027-67f0-43fb-b63c-6d6b6423840f/Items?path=%2F.attachments%2FRegisterETW-c1a35291-6aa6-4462-a2bc-4ba117fd5f8e.zip&download=false&resolveLfs=true&%24format=octetStream&api-version=5.0-preview.1&sanitize=true&versionDescriptor.version=wikiMaster).
+
+> 2.    Kontroller at Windows Hendelsesliste er lukket.
+
+> 3.    Åpne en ledetekst for Administrator PowerShell, og gå til katalogen der RegisterETW.ps1 er plassert.
+
+> 4.    Kjør følgende kommando: .\RegisterETW.ps1
+   
+   Et vellykket utdata i PowerShell vil bli kontrollert med meldingen, **Competed RegisterETW-skriptet**.
+Åpne hendelseslisten på nytt, og du vil nå se disse loggene under **Microsoft > Dynamics** : * MR-Client * MR-DVT * MR-Integration * MR-Logger * MR-Reporting * MR_SchedulerTasks * MR-Sql * MR-TraceManager
+   
+> 5. Reproduser problemet i Report Designer.
+   
+> 6. Eksporter MR-Logger-hendelsen ved hjelp av Hendelsesliste.
+
+## <a name="troubleshoot-issues-connecting-to-financial-reporting"></a>Feilsøk problemer som kobles til Financial Reporting
+
+Problem: Du får feilmeldingen Kan ikke koble til Financial Reporting-serveren.
+
+* Avgjør om problemet oppstår i nettlesere Chrome og Edge.
+* Hvis problemet bare forekommer i én nettleser, kan det være ClickOnce-problem. 
+* Når du får feilmeldingen om tilkobling, velger du **Test** for å teste tilkoblingen for å se hvilken melding som vises. 
+* Problemet kan være et resultat av en annen bruker ikke har tilgang til Financial Reporting. Hvis en bruker ikke har tilgang, mottar de en melding som sier at de ikke har tillatelse.
+* Hvis problemet oppstår på flere nettlesere, må du kontrollere at tidsklokken på arbeidsstasjonen er satt til Automatisk.
+* Samarbeid med en bruker som har sikkerhetsadministratorens rettigheter i Dynamics 365 Finance, og administratorrettigheter til nettverksdomenet, for å logge deg på arbeidsstasjonen for å se om de kan koble seg til. Hvis de kan koble seg til, kan det være knyttet til nettverkstillatelser.
+* Deaktiver brannmuren midlertidig på arbeidsstasjonen. Hvis du deretter kan koble til Report Designer, er problemet med brannmuren. Samarbeid med organisasjonens IT-avdeling for å løse problemet.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 - [Vis finansrapporter](view-financial-reports.md)
