@@ -2,7 +2,7 @@
 title: Konfigurere produktdimensjonsverdier som skal vises som prøver
 description: Dette emnet beskriver hvordan du konfigurerer produktdimensjonsverdier som prøver på Microsoft Dynamics 365 Commerce-hovedkontoret.
 author: anupamar-ms
-ms.date: 05/28/2021
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-09-20
 ms.dyn365.ops.version: Retail 10.0.20 update
-ms.openlocfilehash: 4ffbb6a162e87fd19cdb44224adc8c223ba8e903
-ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
+ms.openlocfilehash: b1cef992b3d4e3889dd1d5dcc21a0d1ba3f55acc166f5003fc79f64fc54a8754
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "6638300"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6764620"
 ---
 # <a name="configure-product-dimension-values-to-appear-as-swatches"></a>Konfigurere produktdimensjonsverdier som skal vises som prøver
 
@@ -46,7 +46,7 @@ Illustrasjonen nedenfor viser et eksempel der farger vises som prøver på en Co
 
 ## <a name="enable-the-display-dimensions-as-swatches-feature-in-commerce-headquarters"></a>Aktivere visningsdimensjonene som prøvefunksjon i Commerce Headquarters
 
-Hvis du vil aktivere visningsdimensjonene som prøvefunksjonen i Commerce headquarters, kan du gå til **Arbeidsområder \> Funksjonsbehandling**, og slå på funksjonen **Aktiver bildestøtte for produktdimensjonsverdier** . Når dette funksjonsflagget er aktivert, legges det til tre nye felt for hver dimensjon i de aktuelle tabellene i Commerce Headquarters: **Heksakode**, **URL** (for bilder) og **RefinerGroup**.
+Hvis du vil aktivere visningsdimensjonene som prøvefunksjonen i Commerce Headquarters, kan du gå til **Arbeidsområder \> Funksjonsbehandling**, og slå på funksjonen **Aktiver en mekanisme som representerer dimensjoner som prøve**. Når dette funksjonsflagget er aktivert, legges det til tre nye felt for hver dimensjon i de aktuelle tabellene i Commerce Headquarters: **Heksakode**, **URL** (for bilder) og **RefinerGroup**.
 
 ## <a name="configure-dimension-values-in-commerce-headquarters"></a>Konfigurere dimensjonsverdier i Commerce Headquarters
 
@@ -125,9 +125,22 @@ Før prøver kan vises på e-handelsområdesider som krever dimensjonsvalg, for 
 
 I tillegg bør du aktivere egenskapen **Inkluder produktattributter i søkeresultater** for søkeresultatmoduler. Hvis området bruker tilpassede kategorisider, bør du oppdatere søkeresultatmodulene som brukes på disse sidene, slik at egenskapen **Inkluder produktattributter i søkeresultater** er aktivert. Hvis du vil ha mer informasjon, se [Modul for søkeresultater](../search-result-module.md).
 
+## <a name="inventory-awareness-on-swatches"></a>Lagerkjennskap om prøver
+
+Prøver har en valgfri mulighet til å vise lagertilgjengeligheten av en produktvariantfarge eller -dimensjon. Et produkt selges for eksempel i flere størrelser, men noen størrelser er ikke på lager. I så fall gjengis søketegnene for produkter som ikke er på lager, på en annen måte for å angi at de ikke er tilgjengelige. Denne funksjonen bidrar til å redusere antall kundeklikk som kreves for å fastslå produkttilgjengelighet.
+
+Funksjonen for prøvelagertilgjengelighet kan konfigureres for bruk både på PDP-er og søke- eller kategorilistesider der prøver vises. For å aktivere den må du sette egenskapen **Oppdateringsmediet for dimensjonsvalg** til **Sann** i [mediegallerimodulen](../media-gallery-module.md). Denne innstillingen gjør det mulig å oppdatere bilder med medier når dimensjonene er valgt. 
+
+> [!IMPORTANT]
+> Funksjonen for prøvelagertilgjengelighet er tilgjengelig fra Commerce, versjon 10.0.21. Den krever at Commerce-modulbibliotekpakken versjon 9.31 er installert.
+
+Illustrasjonen nedenfor viser et eksempel på forståelse av lagerbeholdning om størrelsesprøver på en PDP.
+
+![Eksempel på lagerkjennskap om størrelsesprøvene på en PDP](../dev-itpro/media/swatch_inventory.png)
+
 ## <a name="display-swatches-in-pos-and-other-channels"></a>Vise prøver i POS og andre kanaler
 
-Commerce har for øyeblikket ikke en standardimplementering som støtter visningen av prøver på salgsstedet og andre kanaler. Du kan imidlertid implementere prøvevisningsfunksjonaliteten som en utvidelse som gjør at kanal-APIer returnerer heksakoder og bilde-URLer som kreves for å gjengi prøver.
+Commerce har for øyeblikket ikke en standardimplementering som støtter visningen av prøver på salgsstedet og andre kanaler. Du kan imidlertid implementere prøvevisningsfunksjonaliteten som en utvidelse fordi kanal-API-er returnerer heksakoder og bilde-URL-er som kreves for å gjengi prøver.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
