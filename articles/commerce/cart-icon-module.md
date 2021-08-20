@@ -2,7 +2,7 @@
 title: Handlekurvikonmodul
 description: Dette emnet dekker handlekurvikonmodulen og beskriver hvordan du legger den til på områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 07/08/2021
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d9e3850d98e716d1bbea2017f6e8c9d75f19adc9
-ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
+ms.openlocfilehash: 5cf86876ba03d510b03237c9c89a1fc069a73482b755a1d72227037c91439e86
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "6638007"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6735684"
 ---
 # <a name="cart-icon-module"></a>Handlekurvikonmodul
 
@@ -35,9 +35,14 @@ Bildet nedenfor viser et eksempel på en handlekurv-ikonmodul som viser en minih
 
 ## <a name="module-properties"></a>Modulegenskaper
 
-- **Vis minikurv** – Hvis Sann aktiverer denne egenskapen at det vises et handlekurvsammendrag (minikurv) når pekeren holdes over handlekurvikonet. Denne funksjonaliteten støttes bare for skrivebordsvisningsporter.
+- **Vis minikurv** – Når denne egenskapen er satt til **Sann**, vises et handlekurvsammendrag (minikurv) når brukeren holder pekeren over handlekurvikonet. Denne funksjonaliteten støttes bare for skrivebordsvisningsporter.
+- **Tillat anonym betaling** – Når denne egenskapen er satt til **Sann**, lar minihandlekurven brukere som ikke er logget inn, bruke en gjestekasse til betaling. Denne egenskapen er tilgjengelig i Commerce, versjon 10.0.21, som en del av Commerce-modulbibliotekpakken.
+- **Varerekkefølge** – Denne egenskapen kontrollerer i hvilken rekkefølge varer vises i minihandlekurven. Når alternativet **Nye varer legges til øverst i listen** er valgt, vises nye varer som legges til i handlekurven, øverst i listen over minihandlekurvvarer. Når standardalternativet **Nye varer legges til nederst i listen** er valgt, vises nye varer som legges til i handlekurven, nederst i listen over minihandlekurvvarer. Denne egenskapen er tilgjengelig fra og med Commerce, versjon 10.0.21, som en del av Commerce-modulbibliotekpakken.
 
-## <a name="module-properties-in-the-adventure-works-theme"></a>Modulegenskaper i Adventure Works-emnet
+> [!IMPORTANT]
+> Egenskapene **Tillat anonym betaling** og **Varerekkefølge** er tilgjengelige fra og med Commerce, versjon 10.0.21. De krever at Commerce-modulbibliotekpakken versjon 9.31 er installert.
+
+## <a name="module-properties-and-slots-in-the-adventure-works-theme"></a>Modulegenskaper og spor i Adventure Works-emnet
 
 I Adventure Works-emnet inneholder handlekurvikonmodulen to ekstra spor for minikurven. Disse sporene er inkludert som moduldefinisjonsforlengelse.
 

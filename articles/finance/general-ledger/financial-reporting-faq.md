@@ -2,7 +2,7 @@
 title: Vanlige spørsmål om finansrapportering
 description: Dette emnet gir svar på vanlige spørsmål om finansrapportering.
 author: jiwo
-ms.date: 01/13/2021
+ms.date: 07/07/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: e1b67f86446403933005008a9a1e2cc6739dc516
-ms.sourcegitcommit: ecabf43282a3e55f1db40341aa3f3c7950b9e94c
+ms.openlocfilehash: dd493e855e45362c1681dc9cdfbbcb71f7627d64624cd093eadab32fd966c174
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "6266639"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6733617"
 ---
 # <a name="financial-reporting-faq"></a>Vanlige spørsmål om finansrapportering
 
@@ -77,5 +77,29 @@ Meldingen indikerer at det oppstod et problem da systemet forsøkte å hente øk
 
 - Gå gjennom integreringsstatusen for dataene ved å gå til **Verktøy \> Integreringsstatus** i Report Designer. Hvis integreringen ikke er fullført, må du vente til den er fullført. Deretter prøver du det du gjorde da du mottok meldingen.
 - Kontakt kundestøtte for å identifisere og arbeide deg gjennom problemet. Det kan være inkonsekvente data i systemet. Støtteteknikere kan hjelpe deg med å identifisere problemet på serveren og finne bestemte data som kan kreve en oppdatering.
+
+## <a name="how-does-the-selection-of-historical-rate-translation-affect-report-performance"></a>Hvordan påvirker valg av historisk kursomregning rapportytelsen?
+
+Den historiske kursen brukes vanligvis med opptjente inntekter, eiendom, anlegg og utstyr og egenkapitalkonti. Den historiske kursen kan være nødvendig, basert på retningslinjer fra styret for regnskapsstandarder (FASB) eller god regnskapsskikk (GAAP). Hvis du vil ha mer informasjon, kan du se [Valutafunksjoner i finansrapportering](financial-reporting-currency-capability.md).
+
+## <a name="how-many-types-of-currency-rate-are-there"></a>Hvor mange typer valutakurser finnes det?
+
+Det finnes tre typer:
+
+- **Gjeldende kurs** – Denne typen brukes vanligvis med balansekonti. Den er vanligvis kjent som *spotvalutakursen* og kan være kursen på den siste dagen i måneden eller en annen forhåndsbestemt dato.
+- **Gjennomsnittskurs** – Denne typen brukes vanligvis med resultatkonti. Du kan konfigurere gjennomsnittskursen for å utføre enten et enkelt gjennomsnitt eller et avveid gjennomsnitt.
+- **Historisk kurs** – Denne typen brukes vanligvis med opptjente inntekter, eiendom, anlegg og utstyr og egenkapitalkonti. Disse kontiene kan være nødvendige, basert på FASB- eller GAAP-retningslinjer.
+
+## <a name="how-does-historical-currency-translation-work"></a>Hvordan fungerer historisk valutaomregning?
+
+Kursene er spesifikke for transaksjonsdatoen. Derfor omregnes hver transaksjon individuelt, basert på den nærmeste valutakursen.
+
+For historisk valutaomregning kan de forhåndsberegnede periodesaldoene brukes i stedet for individuelle transaksjonsdetaljer. Denne virkemåten er forskjellig fra virkemåten for gjeldende kursomregning.
+
+## <a name="how-does-historical-currency-translation-affect-performance"></a>Hvordan påvirker historisk valutaomregning ytelsen?
+
+Når data som presenteres i rapportene, oppdateres, kan det være en forsinkelse fordi beløp må beregnes på nytt ved å kontrollere transaksjonsdetaljer. Denne forsinkelsen utløses hver gang kursene oppdateres eller flere transaksjoner posteres. Hvis for eksempel tusenvis av konti er konfigurert for historisk omregning et par ganger om dagen, kan det være en forsinkelse på opptil en time før dataene i rapporten oppdateres. På den andre siden, hvis det er et mindre antall spesifikke konti, kan behandlingstidene for oppdateringer av rapportdataene reduseres til minutter eller mindre.
+
+På samme måte, når rapporter genereres ved hjelp av valutaomregning for historiske typekonti, vil det være ekstra beregninger per transaksjon. Avhengig av antall konti kan rapportgenereringstiden dobles eller mer.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
