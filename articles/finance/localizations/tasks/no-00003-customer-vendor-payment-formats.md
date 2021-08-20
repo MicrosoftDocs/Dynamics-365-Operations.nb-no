@@ -13,12 +13,12 @@ ms.search.region: Norway
 ms.author: epodkolz
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 59c17799d0645b48be7fc43ce4eb2789904daf07
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 78ff1085a40c65b7ad65d18c79a9f2cf79141481c9a17180a7786923918fc42c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5834353"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6754151"
 ---
 # <a name="no-00003-customer-and-vendor-payment-formats"></a>NO-00003 Betalingsformater for kunde og leverandør
 

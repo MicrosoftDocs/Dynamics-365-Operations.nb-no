@@ -2,7 +2,7 @@
 title: Samsvar for informasjonskapsel
 description: Dette emnet beskriver vurderinger for overholdelse av informasjonskapsler og standardpolicyene som er inkludert i Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 07/01/2021
+ms.date: 07/30/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 71b2e0e8d0a7db6cbbc8b9b4024b067bd5c6a2a1
-ms.sourcegitcommit: 43962e6fedaf55aab2f28f53bc38a69d2ff58403
+ms.openlocfilehash: 509ae998b4d0fa8ab6dd5e3d242dfb4abc492952cd66addc04050fbaff949326
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "6333075"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6747703"
 ---
 # <a name="cookie-compliance"></a>Informasjonskapselsamsvar
 
@@ -54,6 +54,10 @@ Tabellen nedenfor viser gjeldende referanseliste over informasjonskapsler for Dy
 | \_msdyn365___muid_                            | Brukes hvis eksperimentering er aktivert for miljøet, brukt som bruker-ID til eksperimenteringsformål. | 1 år |
 | \_msdyn365___exp_                             | Brukes hvis eksperimentering er aktivert for miljøet, brukes til å måle ytelsesbelastningsfordeling.         | 1 time |
 | d365mkt                                       | Brukes hvis lokasjonsbasert registrering for å spore en brukers IP-adresse for butikklokasjonsforslag er aktivert i Commerce-områdebygger ved **Områdeinnstillinger \> Generelt \> Aktiver lokasjonsbasert butikkregistrering**.      | 1 time |
+| \_msdyn365___tuid_                           | Brukes bare hvis eksperimentering er aktivert for et miljø. Genererer en GUID som skal fungere som en brukeridentifikator. Verdien endres hvis en brukers påloggingsstatus endres.      | 1 år |
+| \_msdyn365___aud_0                          | Lagrer segmentverdier som brukes av målretting, og brukes bare hvis målretting er konfigurert på en side eller et fragment forespurt av en områdebruker. Informasjonskapselen plasseres bare når segmentverdiene kommer fra en tredjeparts segmenteringsleverandør.      | 7 dager |
+| \_msdyn365___aud_1                           | Lagrer segmentverdier som brukes av målretting, og brukes bare hvis målretting er konfigurert på en side eller et fragment forespurt av en områdebruker. Informasjonskapselen plasseres bare når segmentverdiene kommer fra en tredjeparts segmenteringsleverandør.      | 7 dager |
+| \_msdyn365___aud_2                           | Lagrer segmentverdier som brukes av målretting, og brukes bare hvis målretting er konfigurert på en side eller et fragment forespurt av en områdebruker. Informasjonskapselen plasseres bare når segmentverdiene kommer fra en tredjeparts segmenteringsleverandør.      | 7 dager |
 
 Hvis en områdebruker velger noen koblinger på sosiale medier på et område, vil informasjonskapslene som ligger i tabellen nedenfor, også spores i nettleseren.
 

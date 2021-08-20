@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: ecf8caa7f31c560af2cbc929a37f3ca02bd0da44
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: d4503b6939e3d01ae5bcf1d79c1f85d39348fbb6233cfb7a965f84f3a3b0699a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021206"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6744804"
 ---
 # <a name="goods-in-transit-processing"></a>Behandling av varer i transitt
 
@@ -104,6 +104,7 @@ Du kan også motta varer ved å opprette en ankomstjournal. Du kan opprette en a
 1. Åpne sjøreisen, containeren eller folioen.
 1. Velg **Opprett ankomstjournal** i gruppen **Funksjoner** i fanen **Behandle** i handlingsruten.
 1. I dialogboksen **Opprett ankomstjournal** angir du følgende verdier:
+
     - **Initialiser antall** – Sett dette alternativet til *Ja* for å angi antallet fra transittantallet. Hvis du setter dette alternativet til *Nei*, angis det ikke noe standard antall fra linjene i transitt for varer.
     - **Opprett fra varer i transitt** – Sett dette alternativet til *Ja* for å ta antall fra de valgte transittlinjene for den valgte sjøreisen, containeren eller folioen.
     - **Opprett fra ordrelinjer** – Sett dette alternativet til *Ja* for å angi standardantallet i ankomstjournalen fra bestillingslinjene. Standardantallet i ankomstjournalen kan bare defineres på denne måten hvis antallet på bestillingslinjen samsvarer med antallet på ordren for varer i transitt.
@@ -140,4 +141,21 @@ Netto innkjøpspris legger til en ny arbeidsordretype med navnet *Varer i transi
 
 ### <a name="work-templates"></a>Arbeidsmaler
 
+Denne delen beskriver funksjoner som modulen **Netto innkjøpspris** legger til i arbeidsmaler.
+
+#### <a name="goods-in-transit-work-order-type"></a>Varer i arbeidsordretype for varer i transitt
+
 Netto innkjøpspris legger til en ny arbeidsordretype med navnet *Varer i transitt* på siden **Arbeidsmaler**. Denne arbeidsordretypen må konfigureres på samme måte som [arbeidsmaler for bestilling](/dynamicsax-2012/appuser-itpro/create-a-work-template).
+
+#### <a name="work-header-breaks"></a>Arbeidshodeinndelinger
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
+Arbeidsmaler som har arbeidsordretypen *Varer i transitt* kan konfigureres til å dele arbeidshoder. På siden **Arbeidsmaler** gjør du ett av følgende:
+
+- Angi maksimumsverdiene for arbeidshodet i fanen **Generelt** for malen. Disse maksimumsverdiene fungerer på samme måte som de fungerer for arbeidsmaler for bestillinger. (Hvis du vil ha mer informasjon, kan du se [arbeidsmaler for bestilling](/dynamicsax-2012/appuser-itpro/create-a-work-template).)
+- Bruk **Arbeidshodeskift**-knappen til å definere når systemet skal opprette nye arbeidshoder, basert på felter som brukes til sortering. Hvis du for eksempel vil opprette et arbeidshode for hvert beholder-ID, velger du **Rediger spørring** i handlingsruten, og deretter legger du til **Beholdnings-ID**-feltet i **Sortering**-fanen i redigeringsprogrammet for spørring. Felter som legges til i **Sortering**-fanen, kan velges som *grupperingsfelter*. Hvis du vil angi grupperingsfeltene, velger du **Arbeidshodeskift** i handlingsruten, og deretter merker du av i avmerkingsboksen i **Grupper etter dette feltet**-kolonnen for hvert felt du vil bruke som et grupperingsfelt.
+
+Netto innkjøpspris [oppretter en overtransaksjon](over-under-transactions.md) hvis det registrerte antallet overskrider det opprinnelige ordreantallet. Når et arbeidshode er fullført, oppdaterer systemet statusen til lagertransaksjonene for hovedordreantallet. Først oppdaterer det imidlertid antallet som er koblet til overtransaksjonen etter at hovedkontoret er fullstendig kjøpt.
+
+Hvis du avbryter et arbeidshode for en overtransaksjon som allerede er registrert, blir overtransaksjonen først redusert med det annullerte antallet. Når overtransaksjonen reduseres til et antall på 0 (null), fjernes posten, og eventuelle tilleggsantall uregistreres mot hovedordreantallet.
