@@ -2,7 +2,7 @@
 title: Rutenettfunksjoner
 description: Dette emnet beskriver flere kraftfulle funksjoner i rutenettkontrollen. Du må aktivere den nye rutenettfunksjonen for å kunne få tilgang til disse funksjonene.
 author: jasongre
-ms.date: 01/22/2021
+ms.date: 08/04/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: b7a1809a3012af86ad9ba39da8721c63b3c4b885
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: 9bdefeedf8bbbe60f3f76d234f9b393cc8e5dbe8ede7e320e00d0b8e20dbbf73
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923604"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6775248"
 ---
 # <a name="grid-capabilities"></a>Rutenettfunksjoner
 
@@ -158,6 +158,13 @@ Hvis organisasjonen oppdager en side der det er noen problemer med å bruke det 
  ```this.forceLegacyGrid();```
 
 Dette API-et støttes til oktober 2021-versjonen når den nye rutenettkontrollen blir obligatorisk. Hvis problemer gjør at denne APIen brukes, rapporterer du dem til Microsoft.
+
+### <a name="forcing-a-page-to-use-the-new-grid-after-previously-opting-out-the-grid"></a>Tvinge en side til å bruke det nye rutenettet etter tidligere å ha valgt bort rutenettet
+Hvis du har valgt bort en enkeltside fra å bruke det nye rutenettet, kan det hende at du senere vil aktivere det nye rutenettet på nytt etter at de underliggende problemene ble løst. For å gjøre dette må du ganske enkelt fjerne oppkallet til `forceLegacyGrid()`. Endringen trer ikke i kraft før et av følgende skjer:
+
+- **Ny distribusjon av miljø**: Når et miljø oppdateres og distribueres på nytt, tømmes automatisk tabellen som lagrer sidene som har valgt det nye rutenettet (FormControlReactGridState).
+
+- **Manuell fjerning av tabellen**: I utviklingsscenarier må du bruke SQL for å fjerne FormControlReactGridState-tabellen og deretter starte AOS på nytt. Denne kombinasjonen av handlinger tilbakestiller hurtigbufring av sider som ikke er valgt for det nye rutenettet.  
 
 ## <a name="developer-size-to-available-width-columns"></a>[Utvikler] Skaler-til-tilgjengelig-bredde-kolonner
 Hvis en utvikler setter egenskapen **WidthMode** til **SizeToAvailable** for kolonner i det nye rutenettet, har disse kolonnene i utgangspunktet samme bredde som de ville ha hvis egenskapen ble satt til **SizeToContent**. De kan imidlertid strekke seg for å bruke en eventuell ekstra tilgjengelig bredde i rutenettet. Hvis egenskapen er satt til **SizeToAvailable** for flere kolonner, deler alle disse kolonnene tilgjengelig ekstra bredde i rutenettet. Hvis en bruker imidlertid endrer størrelsen på en av disse kolonnene manuelt, blir kolonnen statisk. Den blir stående i denne bredden, og strekker seg ikke lenger til å bruke ekstra tilgjengelig rutenettbredde.  
