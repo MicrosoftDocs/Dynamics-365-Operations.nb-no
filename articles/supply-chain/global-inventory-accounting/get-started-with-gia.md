@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 07d3222680d9d9bff639f34eca5fea64d753ffd1
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 90fcbdc5c9dd4301225952d885794bd4d03ef825fd5590896be13eacfad1f979
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6336985"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6773302"
 ---
 # <a name="get-started-with-global-inventory-accounting"></a>Komme i gang med Globalt lagerregnskap
 
@@ -42,7 +42,7 @@ Globalt lagerregnskap støtter for øyeblikket ikke alle kostnadsstyringsfunksjo
 > [!IMPORTANT]
 > Hvis du vil bruke Globalt lagerregnskap, må du ha et LCS-aktivert miljø med høy tilgjengelighet (ikke et OneBox-miljø). I tillegg må du kjøre Supply Chain Management versjon 10.0.19 eller senere.
 
-Hvis du vil registrere deg for offentlig forhåndsversjon av Globalt lagerregnskap, kan du sende LCS-miljø-IDen med e-post til [Globalt lagerregnskap-teamet](mailto:GlobalInventoryAccounting@service.microsoft.com). Når du er godkjent for programmet, sender teamet deg en oppfølgings-e-post som inneholder en betanøkkel for Globalt lagerregnskap og tjenesteendepunktene. Når du har mottatt betanøkkelen, kan du [installere tillegget](#install).
+Hvis du vil registrere deg for offentlig forhåndsversjon av Globalt lagerregnskap, kan du sende LCS-miljø-IDen med e-post til [Globalt lagerregnskap-teamet](mailto:GlobalInvAccount@microsoft.com). Når du er godkjent for programmet, sender teamet deg en oppfølgings-e-post som inneholder en betanøkkel for Globalt lagerregnskap og tjenesteendepunktene. Når du har mottatt betanøkkelen, kan du [installere tillegget](#install).
 
 ## <a name="licensing"></a>Lisensiering
 

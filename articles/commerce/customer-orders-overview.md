@@ -1,8 +1,8 @@
 ---
-title: Kundeordrer på salgssted (POS)
-description: Dette emnet gir informasjon om kundeordrer på salgssted (POS). Kundeordrer er også kjent som spesialbestillinger. Emnet inneholder en beskrivelse av relaterte parametere og flyter for transaksjonen.
+title: Kundeordrer på salgssted
+description: Dette emnet gir informasjon om kundeordrer på salgssted. Kundeordrer er også kjent som spesialbestillinger. Emnet inneholder en beskrivelse av relaterte parametere og flyter for transaksjonen.
 author: josaw1
-ms.date: 01/06/2021
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -18,18 +18,18 @@ ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 679c8d7895ac82236c12732e1080529f44231947
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 44beb4515bf0d2f8fc7ad75feb3164bf1c7c2d5737552b1a06ce59c2edcaf8fe
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6349632"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6755089"
 ---
-# <a name="customer-orders-in-point-of-sale-pos"></a>Kundeordrer på salgssted (POS)
+# <a name="customer-orders-in-point-of-sale-pos"></a>Kundeordrer på salgssted
 
 [!include [banner](includes/banner.md)]
 
-Dette emnet gir informasjon om hvordan du oppretter og administrerer kundeordrer på salgssted (POS). Kundeordrer kan brukes til å registrere salg der kunder vil hente produkter på en senere dato, hente produkter et annet sted eller få varer tilsendt. 
+Dette emnet gir informasjon om hvordan du oppretter og administrerer kundeordrer i salgsstedsappen. Kundeordrer kan brukes til å registrere salg der kunder vil hente produkter på en senere dato, hente produkter et annet sted eller få varer tilsendt. 
 
 Omnikanal for handel gir mulighet for kundeordrer og spesialordrer, eller spesialordrer, for å møte ulike behov. Her er noen vanlige scenarier:
 
@@ -132,6 +132,10 @@ Detaljhandelsesordre som er opprettet i den nettbaserte kanalen eller butikkanal
 > [!IMPORTANT]
 > Ikke alle detaljordrer kan redigeres via salgsstedsprogrammet. Ordrer som opprettes i en telefonsenterkanal, kan ikke redigeres via POS hvis innstillingen [Aktiver ordreoppfylelse](./set-up-order-processing-options.md#enable-order-completion) er aktivert for telefonsenterkanalen. Hvis du vil sikre riktig betalingsbehandling, må ordrer som kom fra en telefonsenterkanal, og som bruker funksjonen for å aktivere ordreoppfyllelse, redigeres via telefonsenterappen i Commerce Headquarters.
 
+> [!NOTE]
+> Vi anbefaler at du ikke redigerer ordrer og tilbud i salgssted som er opprettet av en ikke-telefonsenterbruker i Commerce Headquarters. Disse bestillingene og tilbudene bruker ikke Commerce-prismotoren, så hvis de redigeres i salgssted, vil Commerce-prismotoren prise dem på nytt.
+
+
 I versjon 10.0.17 og senere kan brukere redigere kvalifiserte ordrer via salgsstedsprogrammet, selv om ordren er delvis oppfylt. Ordrer som er helt fakturert, kan imidlertid fremdeles ikke redigeres via POS. For aktivere denne funksjonen aktiverer du funksjonen **Rediger delvis fullførte ordrer i Point of Sale** i arbeidsområdet **Funksjonsbehandling**. Hvis denne funksjonen ikke er aktivert, eller hvis du bruker versjon 10.0.16 eller tidligere, kan brukere bare redigere kundeordrer på salgsstedet hvis ordren er helt åpen. Hvis funksjonen er aktivert, kan du begrense hvilke butikker som kan redigere delvis fullførte ordrer. Alternativet for å deaktivere denne funksjonen for bestemte butikker kan konfigureres ved hjelp av **Funksjonalitetsprofil** i hurtigfanen **Generelt**.
 
 
@@ -142,7 +146,23 @@ I versjon 10.0.17 og senere kan brukere redigere kvalifiserte ordrer via salgsst
 5. Fullfør redigeringsprosessen ved å velge en betalingsoperasjon.
 6. Hvis du vil avslutte redigeringsprosessen uten å lagre endringer, kan du bruke operasjonen **Annuller transaksjon**.
 
+#### <a name="pricing-impact-when-orders-are-edited"></a>Prispåvirkning når ordrer redigeres
 
+Når bestillinger plasseres i salgssted eller på et Commerce-e-handelsnettsted, forplikter kundene seg til et beløp. Dette beløpet inkluderer en pris, og det kan også inkludere en rabatt. En kunde som legger inn en bestilling og deretter kontakter telefonsenteret senere for å endre ordren (for eksempel for å legge til en annen vare), vil ha spesifikke forventninger til bruken av rabatter. Selv om kampanjene på de eksisterende ordrelinjene er utløpt, forventer kunden at rabattene som opprinnelig ble brukt på disse linjene, fortsatt gjelder. Hvis det imidlertid ikke var noen rabatt da ordren opprinnelig ble lagt inn, men en rabatt har trådt i kraft siden da, forventer kunden at den nye rabatten vil bli brukt på den endrede ordren. Ellers kan kunden bare annullere den eksisterende ordren og deretter opprette en ny ordre der den nye rabatten brukes. Som dette scenariet viser, må priser og rabatter som kunder har forpliktet seg til, bevares. Samtidig må brukere av salgssted og telefonsenter ha fleksibilitet til å beregne priser og rabatter for salgsordrelinjer på nytt etter behov.
+
+Når ordrer tilbakekalles og redigeres i salgssted, anses prisene og rabattene for de eksisterende ordrelinjene som låst. De endres med andre ord ikke, selv om noen ordrelinjer avbrytes eller endres, eller nye ordrelinjer legges til. Hvis du vil endre prisene og rabattene for eksisterende salgslinjer, må salgsstedsbrukeren velge **Beregn på nytt**. Prislåsen fjernes deretter fra de eksisterende ordrelinjene. Før Commerce, versjon 10.0.21 var imidlertid ikke denne funksjonen tilgjengelig i telefonsenteret. Eventuelle endringer i ordrelinjer førte i stedet til at priser og rabatter ble omberegnet.
+
+I Commerce, versjon 10.0.21 er en ny funksjon med navnet **Forhindre utilsiktet prisberegning for handelsordrer** tilgjengelig i arbeidsområdet **Funksjonsbehandling**. Denne funksjonen aktivert som standard. Når den er slått på, er en ny **Pris låst**-egenskap tilgjengelig for alle e-handelsordrer. Når ordreregistrering er fullført for ordrer som er plassert fra en hvilken som helst kanal, aktiveres denne egenskapen automatisk (det er merket av i boksen) for alle ordrelinjene. Commerce-prismotoren utelater deretter disse ordrelinjene fra alle pris- og rabattberegninger. Hvis ordren redigeres, utelates derfor ordrelinjene som standard fra pris- og rabattberegningen. Telefonsenterbrukere kan imidlertid deaktivere egenskapen (det vil være fjerne merket i avmerkingsboksen) for en ordrelinje, og deretter velge **Beregn på nytt** for å inkludere de eksisterende ordrelinjene i prisberegningene.
+
+Selv når de bruker en manuell rabatt på en eksisterende salgslinje, må telefonsenterbrukere deaktivere **Pris låst**-egenskapen for salgslinjen før de bruker den manuelle rabatten.
+
+Telefonsenterbrukere kan også deaktivere egenskapen **Pris låst** for ordrelinjer samlet ved å velge **Fjern prislås** i **Beregn**-gruppen i fanen **Salg** på Handlingsruten på **Salgsordre**-siden. I så fall fjernes prislåsen fra alle ordrelinjer unntatt linjer som ikke kan redigeres (med andre ord linjer som har status **Delvis fakturert** eller **Fakturert**). Etter at endringene i ordren er fullført og er sendt, blir prislåsen brukt på nytt for alle ordrelinjene.
+
+> [!IMPORTANT]
+> Når funksjonen **Hindre utilsiktet prisberegning for handelsordrer** er aktivert, blir oppsettet for evaluering av forretningsavtale ignorert i prisarbeidsflytene. Dialogboksene for evaluering av forretningsavtale viser med andre ord ikke **Prisrelatert**-delen. Dette skjer fordi både oppsettet av handelsavtalen og prislåsfunksjonen har et lignende formål: for å forhindre utilsiktede prisendringer. Brukeropplevelsen for evaluering av handelsavtaler skaleres derimot ikke godt for store ordrer der brukere må velge en eller flere ordrelinjer for ny pris beregning.
+
+> [!NOTE]
+> Egenskapen **Pris låst** kan deaktiveres for en eller flere valgte linjer bare når modulen **Telefonsenter** brukes. Virkemåten til salgsstedet forblir uendret. Salgsstedsbrukeren kan med andre ord ikke låse opp priser for valgte ordrelinjer. De kan imidlertid velge **Beregn på nytt** for å fjerne prislåsen fra alle eksisterende ordrelinjer.
 
 ### <a name="cancel-a-customer-order"></a>Annullere en kundeordre
 

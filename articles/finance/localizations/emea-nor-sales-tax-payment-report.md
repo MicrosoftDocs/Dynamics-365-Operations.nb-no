@@ -12,12 +12,12 @@ ms.reviewer: kfend
 ms.search.region: Norway
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: def7c052bb31baeca7888d136476d06249719e19
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 86b29f9443582cf253a6d3afda0644d92240a9cee1625321ab277110a0ad6618
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5891150"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6750301"
 ---
 # <a name="vat-statement-for-norway"></a>MVA-oppgave for Norge
 

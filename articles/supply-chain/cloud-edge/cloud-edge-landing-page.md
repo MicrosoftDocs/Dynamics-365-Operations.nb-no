@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: ffb1cedc08b033532580fda1349ade32b7dc1eb1
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: dbe5833d4c9d8038fcebf1d9d446af757c834e42a2f77f10c7eb7268e738ed28
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6354815"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6780680"
 ---
 # <a name="cloud-and-edge-scale-units-for-manufacturing-and-warehouse-management-workloads"></a>Skalaenheter for sky og kant for arbeidsbelastninger for produksjons- og lagerstyring
 
@@ -102,7 +102,7 @@ Det gjeldende produksjonsmiljøet må være tagget med **Selvbetjent**-typen i L
 > [!IMPORTANT]
 > Miljøtyper som kjører som infrastruktur som en tjeneste (IaaS), støttes ikke. Disse miljøene merkes vanligvis med typen **Microsoft-administrert** i LCS. Hvis du har miljøer av denne typen, kan du samarbeide med Microsoft-kontakten for å forstå tidslinjen for migrering til typen **Selvbetjent**.
 
-Microsoft er i ferd med en overfang for alle skymiljøer i Supply Chain Management fra en IaaS-modell til en topologi som driftes i Service Fabric. Denne flyttingen gir bedre skalerbarhet og bidrar til å forenkle serviceadministrasjonen. Derfor er distribusjons- og vedlikeholdsoperasjoner raskere. På samme måte migreres servicekomponenter til konseptet med mikrotjenester, og servicevertsmodellen vil [gå over](https://docs.microsoft.com/virtualization/windowscontainers/about/containers-vs-vm) fra en VM-modell (virtuell maskin) til en lett arkitektur med beholdere.
+Microsoft er i ferd med en overfang for alle skymiljøer i Supply Chain Management fra en IaaS-modell til en topologi som driftes i Service Fabric. Denne flyttingen gir bedre skalerbarhet og bidrar til å forenkle serviceadministrasjonen. Derfor er distribusjons- og vedlikeholdsoperasjoner raskere. På samme måte migreres servicekomponenter til konseptet med mikrotjenester, og servicevertsmodellen vil [gå over](/virtualization/windowscontainers/about/containers-vs-vm) fra en VM-modell (virtuell maskin) til en lett arkitektur med beholdere.
 
 I siste instans vil den samme Service Fabric-baserte tjenesteinfrastrukturen som er basert på beholdere, drive både sky- og kantforekomster av tjenesten, uansett om en forekomst ligger i skyen eller en skalaenhet i skyen eller på kanten.
 
