@@ -332,8 +332,6 @@
                       href: database/api/v1/reference-create-export.md
                     - name: Hente status for operasjonsaktivitet
                       href: database/api/v1/reference-get-status.md
-                    - name: Starte og stoppe miljøer
-                      href: database/api/v1/reference-start-stop-environments.md
         - name: Demonstrasjonsdata
           items:
             - name: Oversikt over demonstrasjonsdata
@@ -368,8 +366,10 @@
                       href: deployment/plannedmaintenance-selfservice.md
                     - name: Forretningskontinuitet og nødgjenoppretting
                       href: sysadmin/business-continuity-disaster-recovery.md
-                - name: Fullfør jobbintroduksjon for Azure Resource Manager
+                - name: Fullfør jobbintroduksjonsprosessen for Azure Resource Manager
                   href: deployment/arm-onboarding.md
+                - name: Fullfør jobbintroduksjonsprosessen for Azure Resource Manager for LCS-prosjekter for amerikanske myndigheter
+                  href: deployment/arm-onbarding-us-goverment.md
                 - name: Azure ExpressRoute og Finance and Operations
                   href: deployment/expressroute.md
                 - name: Finance and Operations-arkitektur
@@ -944,6 +944,16 @@
                   href: lifecycle-services/lcs-works-lcs.md
                 - name: LCS for partnere
                   href: lifecycle-services/getting-started-lcs.md
+                - name: RESTful API-er
+                  items:
+                    - name: Start og stopp miljøer
+                      href: lifecycle-services/api/v1/reference-start-stop-environments.md
+                    - name: Hent miljømetadata
+                      href: lifecycle-services/api/v1/reference-environment-metadata.md
+                    - name: Hent miljøhistorikk
+                      href: lifecycle-services/api/v1/reference-environment-history.md
+                    - name: Hent ZIP for miljøets RSAT-sertifikat
+                      href: lifecycle-services/api/v1/reference-download-rsat-certificate.md
                 - name: Nyheter eller endringer i Lifecycle Services
                   href: lifecycle-services/whats-new-lcs.md
             - name: Brukerveiledning for Lifecycle Services
@@ -1134,26 +1144,28 @@
                   items:
                     - name: Støtte for Field Service- og Project Service Automation-løsninger
                       href: data-entities/dual-write/field-service-project-service-automation.md
-                    - name: Migrere kundeemne til kontantdata fra dataintegrator til dobbel skriving
+                    - name: Overfør kundeemne til kontantdata fra dataintegrator til dobbel skriving
                       href: data-entities/dual-write/migrate-prospect-to-cash.md
                     - name: Feilsøking
                       items:
-                        - name: Kontrollere konfigurasjon av dobbel skriving i Finance and Operations-apper og Dataverse
-                          href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
-                        - name: Feilsøke problemer under førstegangsinstallasjon
-                          href: data-entities/dual-write/dual-write-troubleshooting-initial-setup.md
-                        - name: Feilsøke problemer under førstegangssynkronisering
-                          href: data-entities/dual-write/dual-write-troubleshooting-initial-sync.md
-                        - name: Feilsøke problemer med dobbel skriving i Finance and Operations-apper
-                          href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
-                        - name: Feilsøke problemer med direkte synkronisering
-                          href: data-entities/dual-write/dual-write-troubleshooting-live-sync.md
-                        - name: Feilsøke problemer i forbindelse med forståelse av løsningen
-                          href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
-                        - name: Feilsøke problemer fra oppgraderinger av Finance and Operations-apper
-                          href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
                         - name: Generell feilsøking
                           href: data-entities/dual-write/dual-write-troubleshooting.md
+                        - name: Feilsøk problemer under førstegangsinstallasjon
+                          href: data-entities/dual-write/dual-write-troubleshooting-initial-setup.md
+                        - name: Feilsøk problemer under førstegangssynkronisering
+                          href: data-entities/dual-write/dual-write-troubleshooting-initial-sync.md
+                        - name: Feilsøk problemer med direkte synkronisering
+                          href: data-entities/dual-write/dual-write-troubleshooting-live-sync.md
+                        - name: Feilsøk problemer med dobbel skriving i Finance and Operations-apper
+                          href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
+                        - name: Feilsøk problemer med part og global adressebok
+                          href: data-entities/dual-write/dual-write-troubleshooting-party-gab.md
+                        - name: Feilsøk problemer i forbindelse med forståelse av løsningen
+                          href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
+                        - name: Feilsøk problemer fra oppgraderinger av Finance and Operations-apper
+                          href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
+                        - name: Kontroller konfigurasjon av dobbel skriving i Finance and Operations-apper og Dataverse
+                          href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
                 - name: Vanlige spørsmål for dobbel skriving
                   href: data-entities/dual-write/dual-write-faq.md
             - name: Virtuelle enheter

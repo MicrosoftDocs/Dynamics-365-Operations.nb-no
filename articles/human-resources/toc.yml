@@ -5,6 +5,8 @@
       items:
         - name: Nyheter eller endringer i Human Resources
           href: hr-admin-whats-new.md
+        - name: 09. august 2021
+          href: hr-whats-new-2021-08-09.md
         - name: 26. juli 2021
           href: hr-whats-new-2021-07-26.md
         - name: 12. juli 2021
@@ -121,17 +123,17 @@
               href: hr-admin-integration-recurring-data-export.md
             - name: Integrere med LinkedIn Talent Hub
               href: hr-admin-integration-linkedin.md
-            - name: Integrere med Office
+            - name: Integrer med Office
               items:
                 - name: Opplæring i Office-integrering
                   href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                - name: Oppdatere enhetsdata i Excel
+                - name: Oppdater enhetsdata i Excel
                   href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-                - name: Opprett opplevelser for Åpne i Excel
+                - name: Vanlige spørsmål om funksjonen Åpne i Excel
                   href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                 - name: Feilsøk Office-integrering
                   href: ../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
-        - name: Konfigurere databehandling
+        - name: Konfigurer databehandling
           items:
             - name: Oversikt over databehandlingsrammeverk
               href: ../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
@@ -329,11 +331,11 @@
               href: hr-admin-integration-dayforce.md
             - name: Opprette en app for regelmessig dataeksport
               href: hr-admin-integration-recurring-data-export.md
-            - name: Integrere med Office
+            - name: Integrer med Office
               items:
                 - name: Opplæring i Office-integrering
                   href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json
-                - name: Oppdatere enhetsdata i Excel
+                - name: Oppdater enhetsdata i Excel
                   href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json
                 - name: Opprett opplevelser for Åpne i Excel
                   href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json

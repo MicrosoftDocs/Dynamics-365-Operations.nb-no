@@ -2,7 +2,7 @@
 title: Startside for Finance
 description: Dette emnet gir en oversikt over emnene i hjelpen og andre ressurser for funksjonene for økonomistyring i Microsoft Dynamics 365 Finance.
 author: roschlom
-ms.date: 06/20/2018
+ms.date: 08/18/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 85b93f43a599e2da17d873dbe5609347d53af03cbfcaaccde7963b2f1ee97f08
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ad6c671dd48ff482caf1b24a3842d8db0064dc18
+ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779428"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7394569"
 ---
 # <a name="finance-home-page"></a>Startside for Finance
 
@@ -33,8 +33,9 @@ Velg et funksjonsområde du vil finne ut mer om.
 
 :::row:::
     :::column:::
-        - [Leverandører](accounts-payable/accounts-payable.md) 
-        - [Kunder](accounts-receivable/accounts-receivable.md)
+        - [Leverandørreskontro](accounts-payable/accounts-payable.md) 
+        - [Kundereskontro](accounts-receivable/accounts-receivable.md)
+        - [Aktivaleie](asset-leasing/asset-leasing-homepage.md)
         - [Budsjettering](budgeting/budgeting-overview.md) 
         - [Kontant- og bankbehandling](cash-bank-management/cash-bank-management.md)
         - [Kostnadsregnskap](cost-accounting/cost-accounting-home-page.md)
@@ -42,7 +43,8 @@ Velg et funksjonsområde du vil finne ut mer om.
     :::column:::
         - [Reiseregning og utlegg](/dynamics365/project-operations/prod-exp/expense-management)
         - [Finansrapportering](../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=%2ffin-and-ops%2ftoc.json)
-        - [Anleggsmidler](fixed-assets/fixed-assets.md)
+        - [Faste objekter](fixed-assets/fixed-assets.md)
+        - [Finance Insights](finance-insights/finance-insights-home-page.md)
         - [Økonomimodul og Finansrapportering](general-ledger/general-ledger.md) 
         - [Prosjektstyring og regnskap](/dynamics365/project-operations/prod-pma/overview-project-management-accounting)
         - [Offentlig sektor](public-sector/public-sector-functionality.md) 
@@ -57,9 +59,6 @@ Velg et funksjonsområde du vil finne ut mer om.
 - [Microsoft Dynamics 365-blogg](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise)
 - [Financials-blogg](https://community.dynamics.com/365/financeandoperations/b/financials) 
 - [Microsoft Dynamics Operations Partner Community-blogg](https://community.dynamics.com/partner/b/operationspartnercommunityblog)
-
-### <a name="task-guides"></a>Oppgaveveiledninger
-Mer hjelp er tilgjengelig som oppgaveveiledninger i Finance and Operations. For å få tilgang til oppgaveveiledninger klikker du Hjelp-knappen på en side.
 
 ### <a name="videos"></a>Videoer
 

@@ -256,7 +256,7 @@
                       href: dev-itpro/CDX-Troubleshooting.md
                 - name: Arkitektur for Modern POS
                   href: dev-itpro/retail-modern-pos-architecture.md
-                - name: Publiser en kanal for nettbutikk
+                - name: Publiser en nettbutikkatalog
                   href: dev-itpro/retail-online-store-publishing-architecture.md
                 - name: Innhold for Retail Channel Performance Power BI
                   href: ../fin-ops-core/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/dynamics365/commerce/toc.json
@@ -1268,6 +1268,26 @@
                   href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
                 - name: Regulatory Configuration Service – lagringsavvik for Lifecycle Services
                   href: ../finance/localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/commerce/toc.json
+                - name: Last ned ER-konfigurasjoner til Commerce
+                  items:
+                    - name: Last ned konfigurasjoner fra RCS
+                      href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/commerce/toc.json
+                    - name: Importere konfigurasjoner fra RCS
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/commerce/toc.json
+                - name: Globalt repositorium (GR)
+                  items:
+                    - name: Importere konfigurasjoner fra GR
+                      href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/commerce/toc.json
+                    - name: Importere oppdaterte versjoner av ER-konfigurasjoner
+                      href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/commerce/toc.json
+                    - name: Forbedret filtrering for å finne konfigurasjoner i GR
+                      href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/commerce/toc.json
+                    - name: Laste opp konfigurasjoner til GR
+                      href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
+                    - name: Del konfigurasjoner i GR
+                      href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/commerce/toc.json
+                    - name: Avslutt konfigurasjoner i det globale RCS-repositoriet
+                      href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/commerce/toc.json
             - name: Østerrike
               items:
                 - name: Eksempel på integrering av tjenesten for avgiftsmessig transaksjon for Østerrike
@@ -1315,6 +1335,12 @@
                 - name: Kassefunksjonalitet
                   href: localizations/emea-fra-cash-registers.md
                 - name: Retningslinjer for distribusjon for kassaapparater
+                  href: localizations/emea-fra-fi-deployment.md
+                - name: Kontroll av regnskapsarkiv og dataintegritet
+                  href: localizations/emea-fra-fiscal-archive.md
+                - name: Overføring fra eldre funksjonalitet for Frankrike
+                  href: localizations/emea-fra-fi-migration.md
+                - name: Retningslinjer for distribusjon for kassaapparater (gamle)
                   href: localizations/emea-fra-deployment.md
             - name: Tyskland
               items:
@@ -1350,6 +1376,8 @@
               items:
                 - name: Commerce-lokalisering for Russland
                   href: localizations/rus-commerce-localization.md
+                - name: Forenklet kundeadresseformat i Commerce-salgssted for Russland
+                  href: localizations/rus-simplified-address.md
                 - name: Konfigurer Commerce-lokalisering for Russland
                   href: localizations/rus-commerce-setup.md
                 - name: Forskuddsbetalinger i Commerce for Russland
@@ -1856,34 +1884,10 @@
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/dynamics365/commerce/toc.json
                     - name: Importere konfigurasjoner fra LCS
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/dynamics365/commerce/toc.json
-                    - name: Laste ned konfigurasjoner fra LCS
+                    - name: Last ned konfigurasjoner fra LCS
                       href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/commerce/toc.json
-                    - name: Importere konfigurasjoner (LBD)
+                    - name: Importer konfigurasjoner (LBD)
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/commerce/toc.json
-                - name: Regulatory Services (RCS)
-                  items:
-                    - name: Globaliseringsfunksjoner i RCS
-                      href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/commerce/toc.json
-                    - name: Laste ned ER-konfigurasjoner til Commerce
-                      items:
-                        - name: Laste ned konfigurasjoner fra RCS
-                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/commerce/toc.json
-                        - name: Importere konfigurasjoner fra RCS
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/commerce/toc.json
-                    - name: Globalt repositorium (GR)
-                      items:
-                        - name: Importere konfigurasjoner fra GR
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/commerce/toc.json
-                        - name: Importere oppdaterte versjoner av ER-konfigurasjoner
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/commerce/toc.json
-                        - name: Forbedret filtrering for å finne konfigurasjoner i GR
-                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/commerce/toc.json
-                        - name: Laste opp konfigurasjoner til GR
-                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
-                        - name: Dele konfigurasjoner i GR
-                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/commerce/toc.json
-                        - name: Avslutte konfigurasjoner i det globale RCS-repositoriet
-                          href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/commerce/toc.json
             - name: Hurtigstartveiledninger
               items:
                 - name: 'Endre formatet for ER til å generere et egendefinert, elektronisk dokument'
@@ -2110,13 +2114,13 @@
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration.md?toc=/dynamics365/commerce/toc.json
             - name: Opplæring i Office-integrering
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/commerce/toc.json
-            - name: Åpne enhetsdata i Excel og oppdatere dem ved hjelp av Excel-tillegg
+            - name: Åpne enhetsdata i Excel og oppdater dem ved hjelp av Excel-tillegg
               href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/commerce/toc.json
-            - name: Opprett opplevelser for Åpne i Excel
+            - name: Vanlige spørsmål om funksjonen Åpne i Excel
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/commerce/toc.json
-            - name: Legge til maler på menyen Åpne linjer i Excel
+            - name: Legg til maler på menyen Åpne linjer i Excel
               href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/commerce/toc.json
-            - name: Tilpasse menyen Åpne i Microsoft Office
+            - name: Tilpass menyen Åpne i Microsoft Office
               href: ../fin-ops-core/dev-itpro/office-integration/customize-open-office-menu.md?toc=/dynamics365/commerce/toc.json
             - name: Konfigurere og sende e-post
               href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json
@@ -2356,11 +2360,13 @@
                       href: e-commerce-extensibility/mock-sign-in.md
                     - name: Konfigurere modulegenskaper som skal vises basert på kontekst
                       href: e-commerce-extensibility/configure-properties-context.md
-                    - name: Globalisere moduler ved hjelp av CultureInfoFormatter-klassen
+                    - name: Globaliser moduler ved hjelp av CultureInfoFormatter-klassen
                       href: e-commerce-extensibility/globalize-modules.md
-                    - name: Konfigurere Azure Key Vault for sikker nøkkelbehandling
+                    - name: Konfigurer Azure Key Vault for sikker nøkkelbehandling
                       href: e-commerce-extensibility/set-up-key-vault.md
-                - name: Utarbeide datahandlinger
+                    - name: Opprett en programtilleggskrok for forespørsel om forløp
+                      href: e-commerce-extensibility/request-pipeline-hook.md
+                - name: Utarbeid datahandlinger
                   items:
                     - name: Oversikt over datahandlinger
                       href: e-commerce-extensibility/data-actions.md
@@ -2420,8 +2426,14 @@
                       href: e-commerce-extensibility/script-injector.md
                 - name: Koblinger
                   items:
-                    - name: Konfigurer og aktivere koblinger
+                    - name: Konfigurer og aktiver koblinger
                       href: e-commerce-extensibility/connectors.md
+                - name: Ytelse
+                  items:
+                    - name: Konfigurer sidebufring
+                      href: e-commerce-extensibility/page-caching.md
+                    - name: Buffer for datahandlingsforekomst
+                      href: e-commerce-extensibility/instance-cache.md
                 - name: Telemetri og analyse
                   items:
                     - name: Telemetrilogger

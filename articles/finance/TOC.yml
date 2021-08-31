@@ -1170,6 +1170,8 @@
                   href: general-ledger/yec-mssng-open-blnces.md
                 - name: Åpne finansjournalmaler i Office
                   href: general-ledger/open-fincl-jrnls-in-office.md
+                - name: Feil ved journalpostering på grunn av ubalanse
+                  href: general-ledger/posting-fail-imbalance.md
                 - name: Hvorfor kan jeg ikke tilbakeføre denne transaksjonen?
                   href: general-ledger/cant-reverse-transctns.md
         - name: Finansrapportering
@@ -1482,6 +1484,26 @@
                       href: localizations/rcs-delete-environment.md
                     - name: Regulatory Configuration Service – lagringsavvik for Lifecycle Services
                       href: localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/finance/toc.json
+                    - name: Last ned ER-konfigurasjoner til Finance
+                      items:
+                        - name: Last ned konfigurasjoner fra RCS
+                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
+                        - name: Importere konfigurasjoner fra RCS
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/finance/toc.json
+                    - name: Globalt repositorium (GR)
+                      items:
+                        - name: Importere konfigurasjoner fra GR
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/finance/toc.json
+                        - name: Importere oppdaterte versjoner av ER-konfigurasjoner
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/finance/toc.json
+                        - name: Forbedret filtrering for å finne konfigurasjoner i GR
+                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/finance/toc.json
+                        - name: Laste opp konfigurasjoner til GR
+                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
+                        - name: Del konfigurasjoner i GR
+                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/finance/toc.json
+                        - name: Avslutt konfigurasjoner i det globale RCS-repositoriet
+                          href: localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/finance/toc.json
                 - name: Elektronisk fakturering
                   items:
                     - name: Oversikt over elektronisk fakturering
@@ -1520,40 +1542,56 @@
                   items:
                     - name: Oversikt over avgiftsberegning
                       href: localizations/global-tax-calcuation-service-overview.md?toc=/dynamics365/finance/toc.json
-                    - name: Kom i gang med avgiftsberegning
-                      href: localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/finance/toc.json
-                    - name: Bestemmelseslogikk for mva-relevans og mva-gruppe for vare
-                      href: localizations/global-sales-tax-group-determination.md?toc=/dynamics365/finance/toc.json
-                    - name: Støtte for avgiftsfunksjon for overføringsordrer
-                      href: localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/finance/toc.json
-                    - name: Beregning av avgift på toppen av prisen når Priser inkluderer mva. er aktivert
-                      href: localizations/global-exclude-from-tax-base-amount-calculation.md?toc=/dynamics365/finance/toc.json
-                    - name: Legg til datafelter i avgiftskonfigurasjoner
-                      href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
-                    - name: Legg til datafelter i avgiftsintegreringen ved hjelp av tillegg
-                      href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/finance/toc.json
-                    - name: Konfigurer et miljø for hoveddataoppslag
-                      href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
-                    - name: Flere mva-registreringsnumre
-                      href: localizations/emea-multiple-vat-registration-numbers.md
-                    - name: Rapportering for flere mva-registreringer
+                    - name: Installasjon
                       items:
+                        - name: Kom i gang med avgiftsberegning
+                          href: localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/finance/toc.json
+                        - name: Konfigurer et miljø for hoveddataoppslag
+                          href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
+                    - name: Fastsettelse
+                      items:
+                        - name: Bestemmelseslogikk for mva-relevans og mva-gruppe for vare
+                          href: localizations/global-sales-tax-group-determination.md?toc=/dynamics365/finance/toc.json
+                    - name: Beregning
+                      items:
+                        - name: Beregn avgift på priser når Priser inkluderer mva. er aktivert
+                          href: localizations/global-exclude-from-tax-base-amount-calculation.md?toc=/dynamics365/finance/toc.json
+                        - name: Avrundingsregler for avgiftsberegning
+                          href: localizations/tax-calculation-rounding-rules.md
+                    - name: Flere mva-registreringer
+                      items:
+                        - name: Flere mva-registreringsnumre
+                          href: localizations/emea-multiple-vat-registration-numbers.md
                         - name: Rapportering for flere mva-registreringer
                           href: localizations/emea-reporting-for-multiple-vat-registrations.md
                         - name: Fransk rapportering
                           items:
                             - name: Mva-deklarering
-                          href: localizations/emea-fra-VAT-declaration-preview-France.md
+                              href: localizations/emea-fra-VAT-declaration-preview-France.md
                         - name: Nederlandsk rapportering
                           items:
                             - name: Mva-deklarering
                               href: localizations/emea-nl-vat-declaration-netherlands.md
                             - name: EU-salgsliste
                               href: localizations/emea-nl-eu-sales-list.md
+                        - name: Sveitsisk rapportering
+                          items:
+                            - name: Mva-deklarering
+                              href: localizations/emea-che-vat-declaration-switzerland.md
                         - name: Britisk rapportering
                           items:
                             - name: Klargjør for integrering med MTD for mva.
                               href: localizations/emea-gbr-mtd-vat-integration.md
+                    - name: Aktiver avgiftsberegning for overføringsordre
+                      items:
+                        - name: Støtte for avgiftsfunksjon for overføringsordrer
+                          href: localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/finance/toc.json
+                    - name: Utvidelse
+                      items:
+                        - name: Legg til datafelter i avgiftskonfigurasjoner
+                          href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
+                        - name: Legg til datafelter i avgiftsintegreringen ved hjelp av tillegg
+                          href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/finance/toc.json
             - name: Forskriftsmessige oppdateringer
               href: localizations/regulatory-updates.md
             - name: Australia
@@ -1708,8 +1746,10 @@
                       href: localizations/latam-bra-set-up-import-nfe.md
                     - name: Definere føderale NF-e-parametere
                       href: localizations/tasks/br-00053-1-set-up-nf-e-federal-parameters.md
-                    - name: Definere NF-e-parametere for et regnskapsfirma
+                    - name: Definer NF-e-parametere for et regnskapsfirma
                       href: localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
+                    - name: NT2020.005 – Oppsett- og valideringsoppdateringer i det elektroniske regnskapsdokumentet (NF-e)
+                      href: localizations/latam-bra-nfe-nt2020.005.md
                     - name: NT2020.006 – Digital plattform for mellomleddssalg for NF-e
                       href: localizations/latam-bra-nf-e-nt2020-006-v1-00.md
                     - name: NT2019.001 – Skattefordeler og unntaksregler for NF-e/NFC-e
@@ -2328,14 +2368,12 @@
                               href: localizations/apac-ind-GST-map-configuration-tax-types.md
                             - name: Definere pris-og prosenttabeller
                               href: localizations/apac-ind-GST-set-up-rate-percentage-tables.md
-                            - name: Definer et mva-hierarki og utsettelsesregler
+                            - name: Definere et mva-hierarki og utsettelsesregler
                               href: localizations/apac-ind-GST-set-up-activate-tax-hierarchy-tree.md
                             - name: Referansegrupper for India GST
                               href: localizations/apac-ind-gst-reference-groups.md
                         - name: Avgiftstransaksjoner
                           items:
-                            - name: GST TDS på betaling av varer og tjenester
-                              href: localizations/ind-gst-tds-payment-goods-services.md
                             - name: Innkjøpstransaksjoner
                               items:
                                 - name: Innkjøp fra uregistrerte leverandører
@@ -2370,6 +2408,10 @@
                                   href: localizations/apac-ind-GST-purchase-return-order.md
                                 - name: Forskuddsbetaling for leverandør der det finnes snudd avregning
                                   href: localizations/apac-ind-GST-vendor-advance-payment-reverse-charges.md
+                                - name: GST TDS på betaling av varer og tjenester
+                                  href: localizations/ind-gst-tds-payment-goods-services.md
+                                - name: GST TCS på betaling av varer og tjenester
+                                  href: localizations/ind-gst-tcs-payment.md
                             - name: Salgstransaksjoner
                               items:
                                 - name: Salg av avgiftspliktige varer til forbrukere
@@ -3128,18 +3170,20 @@
                           href: localizations/rus-fixed-asset-currency-revaluation.md
                         - name: Revaluere kostnad og avskrivning for anleggsmiddel
                           href: localizations/rus-fixed-assets-revaluation.md
-                        - name: Opprette og postere budsjettjournaler for anskaffelse av anleggsmidler
+                        - name: Opprett og poster budsjettjournaler for anskaffelse av anleggsmidler
                           href: localizations/rus-post-budget-fixed-asset-acquisition.md
-                        - name: Overføre anleggsmidler
+                        - name: Overfør anleggsmidler
                           href: localizations/rus-fixed-asset-transfer.md
+                        - name: Enhetlige utskriftsskjemaer for anleggsmidler
+                          href: localizations/printing-forms-fixed-assets.md
+                        - name: Forespørsler og rapporter
+                          href: localizations/rus-fa-inquiries-reports.md
                     - name: Ikke verdifulle anleggsmidler og arbeidsklær
                       items:
                         - name: NVFA (Not valuable fixed assets) (Russland)
                           href: localizations/rus-not-valuable-assets.md
                         - name: Regnskap for arbeidstøy/spesialutstyr (Russland)
                           href: localizations/rus-working-clothes-instruments-accounting.md
-                        - name: Enhetlige utskriftsskjemaer for anleggsmidler
-                          href: localizations/printing-forms-fixed-assets.md
                 - name: Leverandører og kunder
                   items:
                     - name: Kreditnotakorrigeringer (Russland)
@@ -3326,10 +3370,12 @@
               items:
                 - name: Oversikt over Sveits
                   href: localizations/switzerland.md
-                - name: Importere kundebetalinger i ESR
+                - name: Importer kundebetalinger i ESR
                   href: localizations/emea-che-esr-customer-payments-import.md
                 - name: Sveitsiske QR-veksler
                   href: localizations/emea-che-swiss-qr-bills.md
+                - name: Mva-deklarering
+                  href: localizations/emea-che-VAT-declaration-Switzerland.md
             - name: Thailand
               items:
                 - name: Oversikt over Thailand
@@ -4097,34 +4143,10 @@
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/dynamics365/finance/toc.json
                     - name: Importere konfigurasjoner fra LCS
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/dynamics365/finance/toc.json
-                    - name: Laste ned konfigurasjoner fra LCS
+                    - name: Last ned konfigurasjoner fra LCS
                       href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/finance/toc.json
-                    - name: Importere konfigurasjoner (LBD)
+                    - name: Importer konfigurasjoner (LBD)
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/finance/toc.json
-                - name: Regulatory Services (RCS)
-                  items:
-                    - name: Globaliseringsfunksjoner i RCS
-                      href: localizations/rcs-globalization-feature.md?toc=dynamics365/finance/toc.json
-                    - name: Laste ned ER-konfigurasjoner til Finance
-                      items:
-                        - name: Laste ned konfigurasjoner fra RCS
-                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
-                        - name: Importere konfigurasjoner fra RCS
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/finance/toc.json
-                    - name: Globalt repositorium (GR)
-                      items:
-                        - name: Importere konfigurasjoner fra GR
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/finance/toc.json
-                        - name: Importere oppdaterte versjoner av ER-konfigurasjoner
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/finance/toc.json
-                        - name: Forbedret filtrering for å finne konfigurasjoner i GR
-                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/finance/toc.json
-                        - name: Laste opp konfigurasjoner til GR
-                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
-                        - name: Dele konfigurasjoner i GR
-                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/finance/toc.json
-                        - name: Avslutte konfigurasjoner i det globale RCS-repositoriet
-                          href: localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/finance/toc.json
             - name: Hurtigstartveiledninger
               items:
                 - name: 'Endre formatet for ER til å generere et egendefinert, elektronisk dokument'
@@ -4353,13 +4375,13 @@
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration.md?toc=/dynamics365/finance/toc.json
             - name: Opplæring i Office-integrering
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/finance/toc.json
-            - name: Åpne enhetsdata i Excel og oppdatere dem ved hjelp av Excel-tillegg
+            - name: Åpne enhetsdata i Excel og oppdater dem ved hjelp av Excel-tillegg
               href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/finance/toc.json
-            - name: Opprett opplevelser for Åpne i Excel
+            - name: Vanlige spørsmål om funksjonen Åpne i Excel
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/finance/toc.json
-            - name: Legge til maler på menyen Åpne linjer i Excel
+            - name: Legg til maler på menyen Åpne linjer i Excel
               href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/finance/toc.json
-            - name: Tilpasse menyen Åpne i Microsoft Office
+            - name: Tilpass menyen Åpne i Microsoft Office
               href: ../fin-ops-core/dev-itpro/office-integration/customize-open-office-menu.md?toc=/dynamics365/finance/toc.json
             - name: Konfigurere og sende e-post
               href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/finance/toc.json
