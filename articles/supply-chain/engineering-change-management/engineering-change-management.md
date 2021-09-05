@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 55952a9b1c25b806ee4a21ef1982c5b15a41adeb9c9bfdf2fccb8c9da242ffdb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bb6fd57f200b101cb2df396cb10417feaa9425c1
+ms.sourcegitcommit: 2b04b5a5c883d216072bb91123f9c7709a41f69a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714336"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7384591"
 ---
 # <a name="manage-changes-to-engineering-products"></a>Behandle endringer i tekniske produkter
 
@@ -113,16 +113,16 @@ Hvis du vil gå gjennom berørte transaksjoner, blokkere valgte transaksjoner og
     - **Vis transaksjon** – Åpne den valgte transaksjonsposten.
     - **Blokker ordre** – Denne knappen er bare tilgjengelig i kategorien **Salgsordrer**. Velg den for å sperre den valgte salgsordren.
     - **Blokker linje** – Denne knappen er bare tilgjengelig i kategorien **Bestillinger**. Velg den for å sperre den valgte bestillingslinjen.
-    - **Varsle ansvarlig** – Denne knappen er bare tilgjengelig i kategorien **Salgsordrer**. Velg den for å sende et endringsvarsel til brukeren som er angitt som ansvarlig for den valgte salgsordren.
-    - **Varsle bestiller** – Denne knappen er bare tilgjengelig i kategorien **Bestillinger**. Velg den for å sende et endringsvarsel til brukeren som er angitt som bestiller for den valgte bestillingen.
-    - **Varsle produksjon** – Denne knappen er bare tilgjengelig i kategorien **Produksjonsordrer**. I motsetning til salgsordrer og bestillinger har ikke produksjonsordrer en enkeltbruker som er angitt som ansvarlig for dem fra ende til ende. I stedet tar forskjellige ledere eller planleggere eierskap for et bestemt område eller for en bestemt del av produksjonen (for eksempel for bestemte ressurser eller ressursgrupper). Når du velger denne knappen, får derfor alle brukere som er ansvarlige for ressurser som er relatert til den valgte produksjonsordren, et endringsvarsel.
-    - **Varsle klargjører** – Denne knappen er bare tilgjengelig i kategorien **Innkjøpsrekvisisjon**. Velg den for å sende et endringsvarsel til brukeren som er angitt som klargjører for den valgte innkjøpsrekvisisjonen.
-    - **Varsle salgsansvarlig** – Denne knappen er bare tilgjengelig i kategorien **Tilbud**. Velg den for å sende et endringsvarsel til brukeren som er angitt som ansvarlig for det valgte tilbudet.
+    - **Varsle ansvarlig** – Denne knappen er bare tilgjengelig i kategorien **Salgsordrer**. Velg den for å sende et endringsvarsel til brukeren som er angitt som ansvarlig for den valgte salgsordren. Hvis du vil ha mer informasjon om hvem som kan se meldingene, og hvordan, kan du se [Gå gjennom og behandle endringsvarsler for transaksjoner](#review-notifications).
+    - **Varsle bestiller** – Denne knappen er bare tilgjengelig i kategorien **Bestillinger**. Velg den for å sende et endringsvarsel til brukeren som er angitt som bestiller for den valgte bestillingen. Hvis du vil ha mer informasjon om hvem som kan se meldingene, og hvordan, kan du se [Gå gjennom og behandle endringsvarsler for transaksjoner](#review-notifications).
+    - **Varsle produksjon** – Denne knappen er bare tilgjengelig i kategorien **Produksjonsordrer**. I motsetning til salgsordrer og bestillinger har ikke produksjonsordrer en enkeltbruker som er angitt som ansvarlig for dem fra ende til ende. I stedet tar forskjellige ledere eller planleggere eierskap for et bestemt område eller for en bestemt del av produksjonen (for eksempel for bestemte ressurser eller ressursgrupper). Når du velger denne knappen, får derfor alle brukere som er ansvarlige for ressurser som er relatert til den valgte produksjonsordren, et endringsvarsel. Hvis du vil ha mer informasjon om hvem som kan se meldingene, og hvordan, kan du se [Gå gjennom og behandle endringsvarsler for transaksjoner](#review-notifications).
+    - **Varsle klargjører** – Denne knappen er bare tilgjengelig i kategorien **Innkjøpsrekvisisjon**. Velg den for å sende et endringsvarsel til brukeren som er angitt som klargjører for den valgte innkjøpsrekvisisjonen. Hvis du vil ha mer informasjon om hvem som kan se meldingene, og hvordan, kan du se [Gå gjennom og behandle endringsvarsler for transaksjoner](#review-notifications).
+    - **Varsle salgsansvarlig** – Denne knappen er bare tilgjengelig i kategorien **Tilbud**. Velg den for å sende et endringsvarsel til brukeren som er angitt som ansvarlig for det valgte tilbudet. Hvis du vil ha mer informasjon om hvem som kan se meldingene, og hvordan, kan du se [Gå gjennom og behandle endringsvarsler for transaksjoner](#review-notifications).
     - **Svinn** – Denne knappen er bare tilgjengelig i kategorien **Lager**. Velg det for å kassere det valgte lageret.
     - **Vis logg** – Åpne en logg over handlinger som er utført på den valgte transaksjonen, ved å bruke dialogboksen **Forretningspåvirkning på åpne transaksjoner**. (Historikken viser for eksempel om meldinger er sendt eller om transaksjoner er sperret.) 
     - **Vis alle transaksjoner** – Åpne hele listen over alle transaksjoner, ikke bare de åpne transaksjonene.
 
-#### <a name="review-and-process-change-notifications-for-transactions"></a>Gå gjennom og behandle endringsvarsler for transaksjoner
+#### <a name="review-and-process-change-notifications-for-transactions"></a><a name="review-notifications"></a>Gå gjennom og behandle endringsvarsler for transaksjoner
 
 Du kan lese og behandle endringsmeldingene du mottar på følgende måter:
 

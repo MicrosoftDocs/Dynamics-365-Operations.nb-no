@@ -1,5 +1,5 @@
 ---
-title: Forbedre forutsigelsesmodellen (forhåndsversjon)
+title: Forbedre forutsigelsesmodellen
 description: Dette emnet beskriver funksjoner du kan bruke til å forbedre ytelsen til forutsigelsesmodeller.
 author: ShivamPandey-msft
 ms.date: 07/16/2021
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 0bf4dd0f7edc528393af628eb3776c32957c459d3eaa166b0bc54d9318b54916
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: de753eda43cb358dfa9edc76f102d4b268291b4e
+ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768801"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7386444"
 ---
-# <a name="improve-the-prediction-model-preview"></a>Forbedre forutsigelsesmodellen (forhåndsversjon)
+# <a name="improve-the-prediction-model"></a>Forbedre forutsigelsesmodellen
 
 [!include [banner](../includes/banner.md)]
 

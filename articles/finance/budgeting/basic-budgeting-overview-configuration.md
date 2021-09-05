@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3f2144d2ca9b2f5e06f0a21f6f97b7ca6440ffe8ce300bdbf329279505059459
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 849b1202ea2c0080f5fc5bacba1f95180fc4008a
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720604"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343662"
 ---
 # <a name="budgeting-overview"></a>Oversikt over budsjettering
 
@@ -38,7 +38,7 @@ Det finnes flere metoder for å opprette budsjettregisteroppføringer:
 
 -   Manuelt registrere dokumentinformasjon på siden **Budsjettregisteroppføringer**.
 -   Bruk Microsoft Excel-malen som du kan åpne ved å klikke **Åpne i Excel**-knappen på siden **Budsjettregisteroppføringer**.
--   Bruk dataenheten **Budsjettkontooppføringer** i Databehandling for å importere budsjettregisteroppføringer. Du bør vurdere å bruke denne metoden og aktivere **parameteren** **Settbasert** behandling når du må importere mange budsjettkontooppføringer i systemet.
+-   Bruk dataenheten **Budsjettkontooppføringer** i Databehandling for å importere budsjettregisteroppføringer. Du bør vurdere å bruke denne metoden og aktivere parameteren **Settbasert behandling** når du må importere mange budsjettkontooppføringer i systemet.
 -   Hvis firmaet bruker funksjonaliteten for planlegging av budsjett til å klargjøre budsjettdata, kan du bruke den periodiske prosessen **Generer budsjettregisteroppføring**.
 
 Budsjettregisteroppføringen anses som fullført når budsjettsaldoene har blitt oppdatert. På siden **Budsjettregisteroppføringer** klikker du **Oppdater budsjettsaldoer** for den valgte budsjettregisteroppføringer eller flere oppføringer. Når du har oppdatert budsjettsaldoene, endres statusen for budsjettregisteroppføringen til **Fullført**. Fullført budsjettregisteroppføring kan ikke åpnes for redigering igjen. Hvis budsjettdataene må justeres, må du derfor opprette en ny budsjettregisteroppføring i stedet for å rette data i en fullført budsjettregisteroppføring.

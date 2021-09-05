@@ -4,24 +4,17 @@ description: Dette emnet inneholder feilsøkingsinformasjon som kan hjelpe deg m
 author: RamaKrishnamoorthy
 ms.date: 03/16/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
-ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 0fe319f4c8edd54700b2b32ef80539a8d0ff793aa815cef3813af4c63fd1b0d3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.search.validFrom: 2020-01-06
+ms.openlocfilehash: 985825d3a205f566a94ac7532e45895e7060edf5
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736380"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416987"
 ---
 # <a name="troubleshoot-issues-during-initial-synchronization"></a>Feilsøke problemer under første synkronisering
 
@@ -46,7 +39,7 @@ Når du har aktivert tilordningsmalene, skal statusen for tilordningene være **
 
 Du kan få følgende feilmelding når du prøver å kjøre tilordningen og den innledende synkroniseringen:
 
-*(\[Ugyldig forespørsel\], Den eksterne serveren returnerte en feil: (400) Ugyldig forespørsel.), AX-eksporten oppdaget en feil*
+*(\[Ugyldig forespørsel\], Den eksterne serveren returnerte en feil: (400) Ugyldig forespørsel.), AX-eksporten oppdaget en feil.*
 
 Her er et eksempel på hele feilmeldingen.
 
@@ -198,7 +191,7 @@ Hvis noen rader i kundetabellen har verdier i kolonnene **ContactPersonID** og *
 
         ![Dataintegrasjonsprosjekt for å oppdatere CustomerAccount og ContactPersonId.](media/cust_selfref6.png)
 
-    2. Legg til firmakriteriene i filteret på Dataverse-siden, slik at bare radene som samsvarer med filterkriteriene, blir oppdatert i Finance and Operations-appen. Velg filterknappen for å legge til et filter. Deretter, i dialogboksen **Rediger spørring**, kan du legge til en filterspørring som for eksempel **\_msdyn\_company\_value eq '\<guid\>'**. 
+    2. Legg til firmakriteriene i filteret på Dataverse-siden, slik at bare radene som samsvarer med filterkriteriene, blir oppdatert i Finance and Operations-appen. Velg filterknappen for å legge til et filter. Deretter, i dialogboksen **Rediger spørring**, kan du legge til en filterspørring som for eksempel **\_msdyn\_company\_value eq '\<guid\>'**.
 
         > [MERK] Hvis filterknappen ikke finnes, oppretter du en støtteforespørsel for å be dataintegreringsgruppen aktivere filterfunksjonen i leieren din.
 
@@ -210,5 +203,36 @@ Hvis noen rader i kundetabellen har verdier i kolonnene **ContactPersonID** og *
 
 8. I Finance and Operations-appen aktiverer du endringssporing på nytt for **Kunder V3**-tabellen.
 
+## <a name="initial-sync-failures-on-maps-with-more-than-10-lookup-fields"></a>Innledende synkroniseringsfeil på kart med mer enn ti oppslagsfelt
+
+Du kan få følgende feilmelding når du prøver å kjøre en innledende synkroniseringsfeil på **Kunder V3 - Kontoer**, **Salgsordrer**-tilordninger eller enhver tilordning med flere enn 10 oppslagsfelter:
+
+*CRMExport: Pakkekjøring fullført. Feilbeskrivelse 5 Forsøk på å hente data fra https://xxxxx//datasets/yyyyy/tables/accounts/items?$select=accountnumber, address2_city, address2_country, ... (msdyn_company/cdm_companyid eq 'id')&$orderby=accountnumber asc mislyktes.*
+
+På grunn av oppslagsbegrensningen på spørringen, mislykkes den innledende synkroniseringen når enhetstilordningen inneholder mer enn ti oppslag. Hvis du vil ha mer informasjon, kan du se [Hent relaterte tabellposter med en spørring](/powerapps/developer/common-data-service/webapi/retrieve-related-entities-query).
+
+Følg fremgangsmåten nedenfor for å løse problemet:
+
+1. Fjern valgfrie oppslagsfelt fra oversikten over dobbel skriving skriving slik at antall oppslag er 10 eller færre.
+2. Lagre tilordningen, og utfør den innledende synkroniseringen.
+3. Når den innledende synkroniseringen for det første trinnet er vellykket, legger du til de gjenværende oppslagsfeltene og fjerner oppslagsfeltene du synkroniserte i første trinn. Kontroller at antall oppslagsfelt er 10 eller færre. Lagre tilordningen, og kjør den innledende synkroniseringen.
+4. Gjenta disse trinnene til alle oppslagsfeltene er synkronisert.
+5. Legg til alle oppslagsfeltene tilbake i tilordningen, lagre tilordningen og kjør tilordningen med **Hopp over innledende synkronisering**.
+
+Denne prosessen aktiverer tilordningen for direktesynkroniseringsmodus.
+
+## <a name="known-issue-during-initial-sync-of-party-postal-addresses-and-party-electronic-addresses"></a>Kjent problem under innledende synkronisering av postadresser til parter og elektroniske adresser til parter
+
+Du kan få følgende feilmelding når du prøver å kjøre det innledende settet med postadresser til parter og elektroniske adresser til parter:
+
+*Finner ikke partnummer i Dataverse .*
+
+Det finnes et områdesett i **DirPartyCDSEntity** i Finance and Operations-apper som filtrerer parter av typen **Person** og **Organisasjon**. Derfor vil en innledende synkronisering av tilordningen **CDS-parter – msdyn_parties** ikke synkronisere parter av andre typer, inkludert **Juridisk enhet** og **Driftsenhet**. Når den innledende synkroniseringen kjører for **Postadressesteder for CDS-part (msdyn_partypostaladdresses)** eller **Partskontakter V3 (msdyn_partyelectronicaddresses)**, kan du få feilen.
+
+Vi jobber med en løsning for å fjerne partstypeutvalget for Finance and Operations-enheten, slik at parter av alle typer kan synkroniseres mot Dataverse.
+
+## <a name="are-there-any-performance-issues-while-running-initial-sync-for-customers-or-contacts-data"></a>Er det noen ytelsesproblemer når du kjører innledende synkronisering for kunde- eller kontaktdata?
+
+Hvis du har kjørt den innledende synkroniseringen for **Kunde**-data og **Kunde**-tilordninger kjører, og du deretter kjører den innledende synkroniseringen for **Kontakter**-data, kan det oppstå ytelsesproblemer under innsettinger og oppdateringer i tabellene **LogisticsPostalAddress** og **LogisticsElectronicAddress** for **Kontakt**-adresser. De samme tabellene for globale postadresser og elektroniske adresser spores for **CustCustomerV3Entity** og **VendVendorV2Entity**, og dobbel skriving prøver å bygge flere spørringer for å skrive data på den andre siden. Hvis du allerede har kjørt den innledende synkroniseringen for **Kunde**, må du stoppe den tilsvarende tilordningen når du kjører innledende synkronisering for **Kontakter**-data. Gjør det samme for **Leverandør**-dataene. Når den innledende synkroniseringen er fullført, kan du kjøre alle tilordningene ved å hoppe over den innledende synkroniseringen.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

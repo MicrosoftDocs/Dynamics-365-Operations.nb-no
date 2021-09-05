@@ -2,7 +2,7 @@
 title: Laste opp bilder
 description: Dette emnet beskriver hvordan du laster opp bilder i områdebyggeren for Microsoft Dynamics 365 Commerce.
 author: psimolin
-ms.date: 03/03/2020
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5f4f84c41e6af23483ccb74a9189cb713016f4ac9d0d9981bf918ca8a71743eb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a5607fa70f5d5d28d10bcbd50da11bb96cbf75de
+ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757404"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "7423261"
 ---
 # <a name="upload-images"></a>Laste opp bilder
 
@@ -52,10 +52,17 @@ Standard navnekonvensjon varierer avhengig av kategorien:
 - Kategori bilder bør ha navnet "**/Categories/\{CategoryName\}.png**"
 - Kundebilder bør gis navnet "**/Customers/\{CustomerNumber\}.jpg**"
 - Bilde for ansatte bør ha navnet "**/Workers/\{WorkerNumber\}.jpg**"
-- Produktbilder bør ha navnet "**/Products/\{ProductNumber\}_000_001.png**"
+- Produktbilder bør ha navnet "**/Products/\{ProductNumber\}\_000_001.png**"
     - 001 er bildesekvensen, og det kan være 001, 002, 003, 004 eller 005
 - Produktvariantbilder bør ha navnet "**/Produkter/\{Produktnummer\} \^ \{Stil\} \^ \{Størrelse\} \^ \{Farge\} \^\_000_001.png**"
-    - For eksempel: 93039 \^ \^ 2 \^ Svart \^_000_001.png
+    - For eksempel: 93039 \^ &nbsp;\^ 2 \^ Black \^\_000_001.png
+- Produktvariantbilder med konfigurasjonsdimensjon bør ha navnet "**/Products/\{ProductNumber\} \^ \{Configuration\}\_000_001.png**"
+    - For eksempel: 93039 \^ LB8017_000_001.png
+
+> [!NOTE]
+> For produktvariantbilder må det være to mellomrom mellom karetene i filnavnet hvis dimensjonsverdien er tom.
+
+I eksemplene ovenfor brukes standardkonfigurasjonen. Skilletegnet og dimensjonene kan konfigureres, og den nøyaktige navngivningen som kreves, kan variere mellom distribusjonene. En metode som kan brukes til å identifisere den nøyaktige navngivningskonvensjonen som kreves, er å bruke utviklerkonsollen i webleseren til å kontrollere bildeforespørsler for produktvariantene mens du endrer produktdimensjonene på siden med produktdetaljer (PDP) for produktmodeller.
 
 ## <a name="upload-an-image"></a>Laste opp et bilde
 

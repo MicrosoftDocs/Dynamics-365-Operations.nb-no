@@ -1,8 +1,8 @@
 ---
 title: Oversikt over fordelsbehandling
-description: Oversikt over funksjonen Fordelsbehandling i Dynamics 365 Human Resources. Gi de ansatte utvidede fordelsalternativer med en brukervennlig Internett-opplevelse.
-author: andreabichsel
-ms.date: 07/13/2021
+description: Dette emnet gir en oversikt over funksjonen Fordelsbehandling i Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,17 +12,17 @@ ms.search.scope: Human Resources
 ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a1e00bb3fa227eab62b6e530a32f0eae0bd871c1cfe5bb3d29e09a06a707ce17
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7c4709a63201dd1a02c8879151762886f644ce22
+ms.sourcegitcommit: 4f9c889e5cf72f34dd9746a322f8c0d6b983037b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719149"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "7417415"
 ---
-# <a name="benefits-management-overview"></a>Oversikt over Fordelsbehandling
+# <a name="benefits-management-overview"></a>Oversikt over fordelsbehandling
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -37,13 +37,13 @@ For å være konkurransedyktig må du tilby et stort utvalg av fordeler for å t
 Hvis du vil ha tilgang til demonstrasjonsdataene, må du distribuere sandkassemiljøet på nytt.
 
 > [!NOTE]
-> Du kan nå tilpasse skjemaer for Fordelsbehandling. Du kan nå legge til egendefinerte felt relatert til dekningssatser i **Dekningsalternativ**-skjemaet for fordelsplaner. Hvis du vil ha mer informasjon om å arbeide med egendefinerte felt, kan du se [Egendefinerte felt](hr-developer-custom-fields.md).
+> Du kan nå tilpasse sider i Fordelsbehandling. Egendefinerte felter relatert til dekningssatser kan legges til på siden **Dekningsalternativ** for fordelsplaner. Hvis du vil ha mer informasjon om å arbeide med egendefinerte felt, kan du se [Egendefinerte felt](hr-developer-custom-fields.md).
 >
 > ![Egendefinerte felt for fordelsbehandling](media/hr-benefits-management-custom-fields.png)
 
 ## <a name="enable-benefits-management"></a>Aktivere Fordelsbehandling
 
-Dette emnet beskriver hvordan du aktiverer funksjoner i Human Resources. Den forteller også hvilke eksisterende funksjoner i Human Resources som Fordelsbehandling erstatter, eller som deaktiveres når du aktiverer Fordelsbehandling.
+Dette emnet beskriver hvordan du aktiverer funksjoner i Human Resources. Den forklarer også hvilke eksisterende funksjoner i Human Resources som Fordelsbehandling erstatter, og som deaktiveres når du aktiverer Fordelsbehandling.
 
 > [!IMPORTANT]
 > Du kan ikke deaktivere Fordelsbehandling i et **produksjonsmiljø** etter at du har aktivert det. Det anbefales at du aktiverer og tester Fordelsbehandling i et **Sandkasse**-miljø før du aktiverer det i et **Produksjon**-miljø. Det er store forskjeller mellom den eldre Fordel-funksjonaliteten og den nye Fordelsbehandling-funksjonaliteten, som krever ekstra oppsett, og som bør testes før den blir satt i produksjon.

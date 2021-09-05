@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: fd37c98b64e6074d54b40e20f87f24912abcdd75575aa92e1e2b7345d3cce5a5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ccf2a78a5ffdb95b334f751944fdd010bf8cbf01
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730483"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7345203"
 ---
 # <a name="get-started-with-electronic-invoicing-for-brazil"></a>Komme i gang med Elektronisk fakturering for Brasil 
 
@@ -55,7 +55,7 @@ Fullfør disse trinnene før du distribuerer programoppsettet til det tilkoblede
 
 Denne delen utfyller delen **Landspesifikk konfigurasjon for programoppsett** i emnet [Komme i gang med elektronisk fakturering](e-invoicing-get-started.md).
 
-1. I RCS, i delen **Funksjoner**, i arbeidsområdet **Globaliseringsfunksjon** velger du flisen **Elektronisk fakturering**.
+1. I RCS, i **Funksjoner**-delen i arbeidsområdet **Globaliseringsfunksjon** velger du flisen **Elektronisk fakturering**.
 2. På siden **Funksjoner for elektronisk fakturering** kontrollerer du at funksjonen for elektronisk fakturering for **brasiliansk NF-e (BR)** er valgt.
 3. I fanen **Versjoner** kontrollerer du at versjonen **Utkast** er valgt.
 4. I fanen **Oppsett** velger du **Programopsett**, og i feltet **Tilkoblet program** velger du programmet der du vil distribuere.

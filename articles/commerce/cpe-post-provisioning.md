@@ -2,7 +2,7 @@
 title: Konfigurere et evalueringsmiljø for Dynamics 365 Commerce
 description: Dette emnet forklarer hvordan du konfigurerer et evalueringsmiljø i Microsoft Dynamics 365 Commerce etter klargjøring.
 author: psimolin
-ms.date: 07/16/2020
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 87933c57ee5f626b224b1edc92da13906e3edc2613f61c5b4a917d8cc5d1dcd3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2e98ea9e98380ee63f6cc1eb6dfc7b84d38c7dbb
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742446"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416485"
 ---
 # <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurere et evalueringsmiljø for Dynamics 365 Commerce
 
@@ -128,7 +128,7 @@ Hvis du vil kjøre full datasynkronisering i Commerce, gjør du følgende i Comm
 Hvis du skal utføre testtransaksjoner på området, kan du bruke denne testkredittkortinformasjonen:
 
 - **Kortnummer:** 4111-1111-1111-1111
-- **Utløpsdato:** 10/20
+- **Utløpsdato:** 10/30
 - **Verdi for kortbekreftelse (CVV-kode):** 737
 
 > [!IMPORTANT]
@@ -139,6 +139,9 @@ Hvis du skal utføre testtransaksjoner på området, kan du bruke denne testkred
 Når klargjøringen og konfigurasjonstrinnene er fullført, er du klar til å bruke evalueringsmiljøet. Bruk URL-adressen for Commerce-områdebygger for å gå til redigeringsopplevelsen. Bruk URL-adressen for Commerce-området for å gå til kundeområdet for detaljhandel.
 
 Hvis du vil konfigurere valgfrie funksjoner for Commerce-evalueringsmiljøet, kan du se [Konfigurere valgfrie funksjoner for et Commerce-evalueringsmiljø](cpe-optional-features.md).
+
+> [!NOTE]
+> Commerce-evalueringsmiljøer leveres med en forhåndslastet Azure Active Directory (Azure AD) B2C-leier (business-to-consumer) til demonstrasjonsformål. Det er ikke nødvendig å konfigurere din egen Azure AD B2C-leier for evalueringsmiljøer. Hvis du imidlertid konfigurerer evalueringsmiljøet til å bruke din egen Azure AD B2C-leier, må du legge til ``https://login.commerce.dynamics.com/_msdyn365/authresp`` som en svar-URL i Azure AD B2C-appen via Azure Portal.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
@@ -159,6 +162,8 @@ Hvis du vil konfigurere valgfrie funksjoner for Commerce-evalueringsmiljøet, ka
 [Microsoft Azure-portal](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce-webområde](https://aka.ms/Dynamics365CommerceWebsite)
+
+[Konfigurer en B2C-leier i Commerce](set-up-B2C-tenant.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,8 +1,8 @@
 ---
-title: Konfigurere virtuelle Dataverse-tabeller
-description: Dette emnet beskriver hvordan du konfigurerer virtuelle tabeller for Dynamics 365 Human Resources. Generer og oppdater eksisterende virtuelle tabeller og analyser genererte og tilgjengelige tabeller.
-author: andreabichsel
-ms.date: 01/25/2021
+title: Konfigurer virtuelle Dataverse-tabeller
+description: Dette emnet viser hvordan du konfigurerer, genererer, oppdaterer eksisterende virtuelle tabeller og analyserer genererte og tilgjengelige tabeller for Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,17 +12,17 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4461b072c12848220c48d3a711cc2d4991c98f068e1ba477becf6d0be068fca8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9e26a2fb65564cb4a1d2f9ba4b0d621177207545
+ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721613"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7414670"
 ---
-# <a name="configure-dataverse-virtual-tables"></a>Konfigurere virtuelle Dataverse-tabeller
+# <a name="configure-dataverse-virtual-tables"></a>Konfigurer virtuelle Dataverse-tabeller
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -140,6 +140,9 @@ Det neste trinnet er å konfigurere datakilden for den virtuelle tabellen i Powe
 
      >[!NOTE]
      >Pass på at du inkluderer tegnet **/** på slutten av URL-adressen for å unngå å motta en feil.
+
+     >[!NOTE]
+     >Mål-URL-adressen bestemmer Human Resources-miljøet som virtuelle tabeller vil peke til for data. Hvis du oppretter et sandkassemiljø ved å opprette en kopi av produksjonsmiljøet, oppdaterer du denne verdien til navneområde-URL-en for det nye sandkassemiljøet. Dette sikrer at de virtuelle tabellene er koblet til dataene fra sandkassemiljøet i stedet for fortsatt å peke på produksjonsmiljøet.
 
    - **Leier-ID**: Leier-ID for Azure Active Directory ( Azure AD).
 

@@ -12,20 +12,20 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 8cbeba336438d5ad6365e26500ca8c53edd9fb829a30c075c34674b49cdf1946
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 96e2cf45296d937db9b136f1472374ae7254e10e
+ms.sourcegitcommit: 3d7905627ce5260ce1e6a6d5c9fdfc4c92c3163d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723557"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7415327"
 ---
 # <a name="product-readiness"></a>Produktklargjøring
 
 [!include [banner](../includes/banner.md)]
 
-Du an bruke klargjøringskontroller til å sikre at alle de nødvendige hoveddataene er angitt for et produkt før det brukes i transaksjoner. Når det brukes klargjøringskontroller, er en bruker eller et team ansvarlig for å validere bestemte forhåndsdefinerte produktrelaterte data. Hvis det er en åpen klargjøringskontroll for et produkt, kan ikke produktet frigis eller brukes i transaksjoner.
+Du an bruke klargjøringskontroller til å sikre at alle de nødvendige hoveddataene er angitt for et produkt før det brukes i transaksjoner. Når det brukes klargjøringskontroller, er en bruker eller et team ansvarlig for å validere bestemte forhåndsdefinerte produktrelaterte data. Hvis det er en åpen klargjøringskontroll for et produkt, kan ikke produktet brukes i transaksjoner.
 
-Avmerkingsboksen **Aktiv** for et teknisk produkt, en variant eller en versjon er bare tilgjengelig etter at alle de påkrevde dataene er angitt og kontrollert, og etter at alle klargjøringskontrollene er behandlet. På dette tidspunktet kan produktet, versjonen eller varianten frigis til andre firmaer og brukes i transaksjoner. Du kan opprette klargjøringskontroller for nye produkter, nye varianter og nye tekniske versjoner.
+Avmerkingsboksen **Aktiv** for et teknisk produkt, en variant eller en versjon er bare tilgjengelig etter at alle de påkrevde dataene er angitt og kontrollert, og etter at alle klargjøringskontrollene er behandlet. På dette tidspunktet kan produktet, versjonen eller varianten brukes i transaksjoner. Du kan opprette klargjøringskontroller for nye produkter, nye varianter og nye tekniske versjoner.
 
 Du kan også bruke beredskapskontroller på standardprodukter (ikke-tekniske). Hvis du vil ha mer informasjon, kan du se [Klargjøringskontroller for standardprodukter](#standard-products) senere i dette emnet.
 

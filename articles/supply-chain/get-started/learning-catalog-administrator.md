@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 3fee88c9822956672469968c3f4fa171a65e1cf301d61d48d5d31e08949797a3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ff9d4d0c1d72d3002f84f895f67d3c9cb347f1e8
+ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764890"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "7402231"
 ---
 # <a name="learning-catalog-for-dynamics-365-supply-chain-management-administrators"></a>Opplæringskatalog for Dynamics 365 Supply Chain Management-administratorer
 
@@ -61,6 +61,14 @@ Katalogen nedenfor er ordnet fra kjernekunnskap til bestemte områder, og fra de
 | [Finance and Operations: Oppgradere fra 7.x til 8+ (DYN519PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-upgrading-from-7-x-to-8-10-30-18) | Delta på vårt neste tekniske foredrag der vi beskriver prosessen for oppgradering fra 7.X til 8.X. Vi beskriver en rekke scenarier og trinn som kan utføres for oppdatering av kode og data. Vi beskriver også oppdage scenarioer for forespørsler om utvidelsesmuligheter og hvordan du registrerer dem der det er nødvendig. | Gratis opptak av en webkonferanse | 61 minutter |
 | [Slik oppgraderer du til 7.2 (juli 2017) fra 7.0 (RTW)/7.1 (utgivelse 1611) (DYN338PAL2)](https://community.dynamics.com/365/b/techtalks/posts/how-to-upgrade-to-7-2-july-2017-from-7-0-rtw-7-1-release-1611-august-3-2017) | I denne økten vil vi beskrive hvordan du oppgraderer fra Dynamics 365 Finance and Operations-programmet v7.0 (RTW) og v7.1 (1611) til v7.2 (2017). Vi skiller tydelig mellom aktive kunder og pågående prosjekter (er aktive ennå). | Gratis opptak av en webkonferanse | 58 minutter |
 | [Oppgradere AX2012 til Dynamics 365 for Operations (VIR817PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/ax2012-to-dynamics-365-for-operations-upgrade-april-20-2017) | Dette tekniske foredraget gir en oversikt over hvordan du oppgraderer kode og data fra Dynamics AX 2012 til Dynamics 365 for Operations. | Gratis opptak av en webkonferanse | 45 minutter |
+| [Overføringsverktøy for AX2009 til Dynamics 365 for Operations (VIR809PAL) ](https://community.dynamics.com/365/b/techtalks/posts/ax2009-to-dynamics-365-for-operations-migration-tools-march-2-2017) | Denne økten beskriver verktøy som er tilgjengelige for å hjelpe deg med overføring fra AX2009 til D365 for Operations. | Gratis opptak av en webkonferanse | 55 minutter |
+| [AX2009-migrasjonsverktøy](https://community.dynamics.com/365/b/techtalks/posts/ax2009-migration-tool-may-11-2017) | Denne økten beskriver verktøy som er tilgjengelige for å hjelpe deg med overføring fra AX2009 til D365 for Operations. | Gratis opptak av en webkonferanse | 55 minutter |
+
+## <a name="supply-chain-management"></a>Supply Chain Management<a name="scm"></a>
+
+| Innhold | beskrivelse | Format | Lengde |
+|---------|-------------|--------|--------|
+| [Konfigurer Engineering Change Management for Dynamics 365 Supply Chain Management](/learn/paths/set-up-engineering-change-management/) | Dagens produsenter krever sterk produktdataadministrasjon, versjonskontroll og behandling av teknisk endring for å lykkes i en verden med stadig reduserende produktlivssykluser, økte krav til kvalitet og pålitelighet og et større fokus på produktsikkerhet. Lær hvordan du konfigurerer administrasjon av tekniske endringer i dette læreprogrammet. | Gratis, selvbetjent elektronisk læringsforløp | 4 timer |
 
 ## <a name="servicing"></a>Service<a name="servicing"></a>
 
@@ -69,6 +77,7 @@ Katalogen nedenfor er ordnet fra kjernekunnskap til bestemte områder, og fra de
 | [Finance and Operations: Funksjonsbehandling (DYN641PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-feature-management-may-17-2019) | Teknisk foredrag om funksjonsbehandlingen. Det omfatter et arbeidsområde der du kan vise, aktivere, deaktivere og planlegge funksjoner som er levert i hver utgivelse. Nye funksjoner er deaktivert som standard. Du kan bruke arbeidsområdet til å aktivere dem og vise dokumentasjonen for dem. Delta på dette møtet for å se hva som leveres i 10.0.3 og våre planer for fremtidige utgivelser. | Gratis opptak av en webkonferanse | 47 minutter |
 | [Finance and Operations: Vedlikeholde, støtte og opprettholde produksjon (DYN651PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-servicing-supporting-and-maintaining-production-june-27-2019) | Teknisk foredrag om hvordan du effektivt kan støtte, opprettholde og vedlikeholde Dynamics 365 for Finance and Operations-produksjonsmiljøet ditt. | Gratis opptak av en webkonferanse | 53 minutter |
 | [Finance And Operations: Microsoft-administrerte kontinuerlige oppdateringer (DYN610PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-microsoft-managed-continuous-updates-april-2-2019) | Frekvensen for kontinuerlige oppdateringer for Finance and Operations har begynt! Bli med oss denne timen for å diskutere Microsoft-administrerte kontinuerlige oppdateringer. Brukeropplevelsen er allerede tilgjengelig i Lifecycle Services og kommende oppdateringer. | Gratis opptak av en webkonferanse | 61 minutter |
+| [Finance And Operations: Microsoft-administrerte kontinuerlige oppdateringer: Nyheter – 1. november 2018 (DYN533cust)](https://community.dynamics.com/Techtalks-FinOps-Videos/MicrosoftManagedContinuousUpdates-WhatsNew-DYN533cust.mp4) | I løpet av denne timen skal vi diskutere oppdateringer for frekvensen av Microsofts-administrerte kontinuerlige oppdateringer og ta en titt på brukeropplevelsen i Lifecycle Services. | Gratis opptak av en webkonferanse | 59 minutter |
 | [Microsoft-administrerte kontinuerlige oppdateringer: Nyheter (DYN543PAL2)](https://community.dynamics.com/365/b/techtalks/posts/microsoft-managed-continuous-updates-what-39-s-new-12-13-18) | I løpet av denne timen skal vi forklare hva som er nytt etter våre innledende kunngjøringer om Microsoft-administrerte kontinuerlige oppdateringer. Vi vil diskutere frekvensen av oppdateringer, hvordan vi har svart på dine verdifulle tilbakemeldinger om prosessen, og ta en titt på den kommende Lifecycle Services-brukeropplevelsen, der du kan administrere oppdateringene. | Gratis opptak av en webkonferanse | 56 minutter |
 | [Microsoft-administrerte kontinuerlige oppdateringer (DYN474PAL2)](https://community.dynamics.com/365/b/techtalks/posts/microsoft-managed-continuous-updates-september-5-2018) | Vi vil diskutere Microsofts planer for å holde systemet oppdaterte med den nyeste versjonen. Vi beskriver tidslinjer, hyppighet for hovedoppdateringer og mindre oppdateringer, de planlagte prosedyrene, konsekvensene og hva du bør gjøre for å oppnå optimale resultater. | Gratis opptak av en webkonferanse | 62 minutter |
 | [Overvåking, Optimaliseringsrådgiver og kritiske KB-er (DYN456PAL2)](https://community.dynamics.com/365/b/techtalks/posts/monitoring-optimization-advisor-amp-critical-kbs-july-13-2018) | Vi vil beskrive overvåkingsfunksjoner og hva Microsoft overvåker for deg i ditt produksjonsmiljø, optimaliseringsrådgiveren og hvordan den kan utvides, opplevelsen Kritiske X++-oppdateringer i LCS, og anbefalte fremgangsmåter for alternativet Rapporter produksjonsnedetid i LCS. | Gratis opptak av en webkonferanse | 40 minutter |
@@ -86,6 +95,5 @@ Katalogen nedenfor er ordnet fra kjernekunnskap til bestemte områder, og fra de
 | Innhold  | beskrivelse  | Formater  |
 |----------|--------------|---------|
 | [Grunnleggende om Dynamics 365](/learn/certifications/d365-fundamentals?wt.mc_id=learningredirect_certs-web-wwl) | Vis at du forstår Microsoft Dynamics 365, Power Platform, skybegreper, lisensieringsalternativer og alternativer for distribusjon og frigivelse. | Eksamen: kostnaden varierer etter område |
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

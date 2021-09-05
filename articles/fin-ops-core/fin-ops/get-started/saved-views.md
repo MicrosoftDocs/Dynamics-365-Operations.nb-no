@@ -2,7 +2,7 @@
 title: Lagrede visninger
 description: Dette emnet beskriver hvordan du bruker lagrede visninger-funksjonene.
 author: jasongre
-ms.date: 05/17/2021
+ms.date: 08/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,17 +13,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: dd658aeb8964907fe9f950fe2a6474c5df7e80b74986ddf332286a2f89bc0aeb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9cca56a108177520f4aebea03f7f4d776f46fa3f
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752307"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344350"
 ---
 # <a name="saved-views"></a>Lagrede visninger
 
 [!include [banner](../includes/banner.md)]
-
+[!include [preview banner](../includes/preview-banner.md)]
 
 ## <a name="introduction"></a>Innledning
 
@@ -48,6 +48,8 @@ Visningsvelgeren har to størrelsesvariasjoner:
  
 Hvis du velger visningsnavnet, åpnes visningsvelgeren og viser listen over tilgjengelige visninger for siden.
 
+**Versjon 10.0.21 eller senere:** Hvis funksjonen **Forbedret støtte for juridiske enheter for lagrede visninger** er aktivert, viser visningsvelgeren de tilgjengelige visningene i to deler. Den første delen viser alle visninger som gjelder for gjeldende juridiske enhet, og den andre viser visninger som er tilgjengelige for alle juridiske enheter. Den første delen er bare synlig hvis det finnes visninger for siden som er spesifikke for juridiske enheter.
+
 - **Standardvisning** – **Standard**-visningen er standardvisningen av siden, der ingen tilpasninger er brukt.
 - **Personlige visninger** – Visningene uten hengelås representerer dine personlige visninger. Dette er visninger som enten du har opprettet, eller som en administrator har gitt deg.
 - **Låste visninger** – Noen visninger (for eksempel **Standard**-visningen og alle visninger som publiseres til din rolle) har et hengelåssymbol ved siden av seg i visningsvelgeren. Dette symbolet angir at du ikke kan redigere disse visningene. Endringer som gjenspeiler sidebruk, lagres imidlertid automatisk. Disse endringene omfatter endringer i bredden på en rutenettkolonne, og endringer i den utvidede eller skjulte tilstanden til en hurtigfane. Du kan imidlertid opprette en personlig visning basert på en låst visning ved hjelp av handlingen **Lagre som** hvis du har rettigheter til personalisering.
@@ -68,15 +70,18 @@ Hvis du vil lagre disse endringene, følger du disse trinnene.
 3. Slik oppretter du en ny visning:
 
     1. Velg **Lagre som**. 
-    2. Skriv inn et visningsnavn og (eventuelt) en beskrivelse.
-    3. Velg **Lagre**.
+    2. I ruten **Lagre visning som** angir du et navn og eventuelt en beskrivelse for visningen.
+    3. Hvis du vil at denne visningen skal være standardvisningen, velger du **Bruk som standard**. Hvis du vil ha mer informasjon om standardvisninger, kan du se delen [Endre standardvisningen](#changing-the-default-view) som følger. 
+    4. **Versjon 10.0.21 eller senere:** Hvis funksjonen **Forbedret støtte for juridiske enheter for lagrede visninger** er aktivert, kan du velge om du vil at denne visningen skal være tilgjengelig for alle juridiske enheter, eller bare et delsett av dem.
+    5. Velg **Lagre**.
 
 ## <a name="changing-the-default-view"></a>Endre standardvisningen
 
 Standardvisningen er visningen systemet prøver å åpne når du først åpner siden. Du bør angi standardvisningen til visningen som du forventer å bruke oftest. 
 
 > [!NOTE]
-> Det finnes en enkel, global standardvisning på tvers av firmaer. Hvis du endrer standardvisningen, vil denne visningen åpnes som standard, uansett hvilken juridisk enhet du befinner deg i for øyeblikket. 
+> - I basisfunksjonen **Lagrede visninger** finnes det én enkelt, global standardvisning på tvers av juridiske enheter. Hvis du endrer standardvisningen, vil denne visningen åpnes som standard, uansett hvilken juridisk enhet du befinner deg i for øyeblikket.
+> - **Versjon 10.0.21 eller senere:** Når funksjonen **Forbedret støtte for juridiske enheter for lagrede visninger** er aktivert, kan hver juridiske enhet ha sin egen standardvisning per side.
 
 Følg disse trinnene for å endre standardvisningen for en side:
 
@@ -86,20 +91,23 @@ Følg disse trinnene for å endre standardvisningen for en side:
 
 Når du oppretter en ny visning (ved hjelp av **Lagre som**-handling), kan du gjøre denne nye visningen til standardvisning ved å velge **Bruk som standard**-valget før du lagrer visningen.
 
-Vær oppmerksom på at i noen tilfeller vil spørringen som er knyttet til standardvisningen, ikke kjøres første gang du åpner en side. Hvis du for eksempel åpner siden via en flis, blir flisens spørring kjørt uansett hvilken spørring som er knyttet til standardvisningen. Hvis du åpner en side som har en **Standard**-visning som allerede har en definert spørring, vil den opprinnelige spørringen kjøres i stedet for standardvisningens spørring. I dette tilfellet vil du motta en informasjonsmelding når visningen lastes inn. Hvis du bytter visning etter at siden er lastet, skal visningsspørringen kunne kjøres som forventet. I versjon 10.0.10 og senere vil informasjonsmeldingen du mottar, ha en innebygd handling som gir deg muligheten til å laste inn spørringen til standardvisningen direkte.
+> [!WARNING]
+> I noen tilfeller vil spørringen som er knyttet til standardvisningen, ikke kjøres første gang du åpner en side. Hvis du for eksempel åpner siden via en flis, blir flisens spørring kjørt uansett hvilken spørring som er knyttet til standardvisningen. Hvis du åpner en side som har en **Standard**-visning som allerede har en definert spørring, vil den opprinnelige spørringen kjøres i stedet for standardvisningens spørring. I dette tilfellet vil du motta en informasjonsmelding når visningen lastes inn. Hvis du bytter visning etter at siden er lastet, skal visningsspørringen kunne kjøres som forventet. I versjon 10.0.10 og senere vil informasjonsmeldingen du mottar, ha en innebygd handling som gir deg muligheten til å laste inn spørringen til standardvisningen direkte.
 
 ## <a name="managing-personal-views"></a>Behandle personlige visninger
 
 Dialogboksen **Behandle mine visninger** gir deg grunnleggende vedlikeholdsfunksjoner for personlige visninger og rekkefølgen på visningene i visningsvelgeren. Hvis du vil åpne denne siden, velger du visningsnavnet for å åpne rullegardinmenyen, velger **Mer** og deretter **Behandle mine visninger**.
 
+**Versjon 10.0.21 eller senere:** Hvis funksjonen **Forbedret støtte for juridiske enheter for lagrede visninger** er aktivert, viser delen **Mine visninger** i dialogboksen **Behandle mine visninger** de tilgjengelige visningene for siden i deler. Alle visninger som er spesifikke for gjeldende juridiske enhet, vises i sin egen del. Delen **Globale visninger** vises alltid, slik at du kan styre visningene som er tilgjengelige for siden, i alle juridiske enheter. 
+
 Hvis du vil ha en liste over tilgjengelige visninger for denne siden, er følgende sett med handlinger tilgjengelige.
 
-- **Endre standardvisning** – Bruk funksjonen **Bruk som standard** for å gjøre den merkede visningen til standardvisning for denne siden.
+- **Endre standardvisning** – Bruk funksjonen **Bruk som standard** for å gjøre den merkede visningen til standardvisning for denne siden. Hvis funksjonen **Importer støtte for juridiske enheter for lagrede visninger** er aktivert, kan du i delen **Globale visninger** se standardvisningen for den gjeldende juridiske enheten eller for alle juridiske enheter.
 - **Endre rekkefølgen på visningene** – Bruk handlingene **Flytt opp** og **Flytt ned** for å omorganisere visningene i en bestemt rekkefølge.
 - **Gi en visning nytt navn** – Bruk **Gi nytt navn**-handlingen for å endre navnet på den valgte personlige visningen. Denne handlingen er deaktivert for låste visninger. 
 - **Slette en visning** – Bruk **Slett**-handlingen for å slette gjeldende valgte visning fra siden permanent. Det er ikke mulig å gjenopprette en visning etter at du har fjernet den.
 
-Endringer som gjøres i denne dialogboksen, vil tre i kraft når du har valgt **Lagre**-knappen.
+Endringer som gjøres i denne dialogboksen, vil tre i kraft når du har valgt **Oppdater**-knappen.
 
 ## <a name="managing-personalizations-at-an-organizational-level-with-views"></a>Administrere personlige tilpasninger på et organisasjonsnivå med visninger
 
@@ -128,24 +136,28 @@ Hvis du vil publisere en visning, gjør du følgende:
 6. Avgjør om visningen skal publiseres som standardvisning for de valgte brukerne. Når en visning blir gjort til standardvisning, ser brukerne den neste gang de åpner målsiden. Den enkle, globale standardvisningen for hver målbruker vil bli endret. Brukerne kan imidlertid fremdeles endre standardvisningen sin etter at publiseringen har skjedd.
 
     > [!NOTE]
-    > Vær oppmerksom på følgende ved publisering av en visning som standardvisning: 
-    > -  Hvis du publiserer en visning som standardvisning for noen eller alle juridiske enheter, endrer du den **globale** standardvisningen for alle målbrukere. 
-    > -  Hvis en bruker har roller der flere visninger publiseres som standardvisningen, brukes den siste visningen som ble publisert, som brukerens standardvisning. 
+    > Vær oppmerksom på følgende atferd når du publiserer en visning som standardvisning:
+    >
+    > - Hvis du publiserer en visning som standardvisning for noen eller alle juridiske enheter, skjer følgende:
+    >
+    >    - Hvis bare basisfunksjonen **Lagrede visninger** er aktivert, endres den enkelte, globale standardvisningen for hver målbruker. 
+    >    - **Versjon 10.0.21 eller senere:** Hvis funksjonen **Forbedret støtte for juridiske enheter for lagrede visninger** er aktivert, og du publiserer visningen i et delsett av juridiske enheter, endres standardvisningen for disse juridiske enhetene for hver målbruker.
+    >
+    > - Hvis en bruker har roller der flere visninger publiseres som standardvisningen, brukes den siste visningen som ble publisert, som brukerens standardvisning. 
 
 8. Legg til sikkerhetsrollene som samsvarer med brukerne som målrettes av denne visningen. 
 9. Avgjør om du vil publisere visningen til de underordnede rollene for hver sikkerhetsrolle som er valgt. Hvis du gjør dette, merker du av for **Inkluder underordnede roller** i raden for de aktuelle sikkerhetsrollene. Vær oppmerksom på at denne avmerkings boksen ikke er tilgjengelig for roller som ikke har underordnede roller.
 10. Legg til de juridiske enhetene som denne visningen skal være tilgjengelig for. 
 
     > [!NOTE]
-    > Vær oppmerksom på følgende forventninger når du publiserer en visning for en juridisk enhet.
-    > 
-    > Hvis du publiserer en visning til en juridisk enhet, men du ikke publiserer den som standardvisning, vil brukerne først bare se visningen i visningsvelgeren for de angitte juridiske enhetene. Når visningen er lastet inn for første gang, vil den alltid være i brukerens visningsvelger for siden, uavhengig av den juridiske enheten.
+    > Vær oppmerksom på følgende atferd hvis du publiserer en visning til en spesifikk juridisk enhet, men når du ikke publiserer denne visningen som standardvisning.
+    >
+    > - Hvis bare basisfunksjonen **Lagrede visninger** er aktivert, viser brukerens visningsvelger for siden først visningen bare for de angitte juridiske enhetene. Når visningen er lastet inn for første gang, vil visningsvelgeren for siden alltid vise den, uavhengig av den juridiske enheten.
+    > - **Versjon 10.0.21 eller senere:** Hvis funksjonen **Forbedret støtte for juridiske enheter for lagrede visninger** er aktivert, viser visningsvelgeren kun visningen for de angitte juridiske enheten.
 
 11. Velg **Publiser**.
 
 Legg merke til at i noen miljøer kan det ta litt tid (opptil en time) før brukerne ser den publiserte visningen.
-
- 
 
 ## <a name="modifying-a-published-view"></a>Endre en publisert visning
 
@@ -193,6 +205,7 @@ Selv om enkelte administrasjonsfunksjoner vises på alle sidene, som angitt i de
 Brukere som har tilgang til siden **Tilpasning**, kan også importere personlige visninger eller organisasjonsvisninger ved hjelp av **Importer visninger**-knappen i handlingsruten. For organisasjonsvisninger kan du velge **Publiser umiddelbart** for å gjøre visningene tilgjengelige for brukere uten en eksplisitt publisering i tillegg.
 
 ## <a name="known-issues"></a>Kjente problemer
+
 Hvis du vil ha en liste over kjente problemer med lagrede visninger, kan du se [Bygge skjemaer som benytter lagrede visninger fullt ut](../../dev-itpro/user-interface/understanding-saved-views.md).
 
 ## <a name="frequently-asked-questions"></a>Vanlige spørsmål
@@ -232,5 +245,11 @@ For sider med store visningsvelgere (både personlige tilpasninger og spørringe
 - Hvis du navigerer til en side fra en flis, vil flisspørring utføres uansett hvilken spørring som er knyttet til standardvisningen. Hvis du opprettet denne flisen etter at visninger var aktivert, vil valg av en flis åpne siden med visningen som er knyttet til flisen.
 - Hvis du navigerer til en side, og det inngangspunktet inkluderer en spørring, vil den opprinnelige spørringen utføres opprinnelig i stedet for standardvisningens spørring. Når dette skjer, skal di bli varslet av en informasjonsmelding når visningen lastes inn. Du kan også bekrefte ved å bytte til denne visningen etter at siden er lastet inn, som gjør at visningsspørringen kan kjøres uansett.
 
+### <a name="why-is-a-view-that-was-published-for-a-specific-legal-entity-visible-in-all-legal-entities"></a>Hvorfor er en visning som er publisert for en bestemt juridisk enhet, synlig i alle juridiske enheter?
+
+Hvis du publiserer en visning til en spesifikk juridisk enhet, men når du ikke publiserer denne visningen som standardvisning, inntreffer følgende atferd:
+
+- Hvis bare basisfunksjonen **Lagrede visninger** er aktivert, viser brukerens visningsvelger for siden først visningen bare for de angitte juridiske enhetene. Når visningen er lastet inn for første gang, vil visningsvelgeren for siden alltid vise den, uavhengig av den juridiske enheten. Dette skjer fordi brukere får sin egen personlige kopi av den publiserte visningen når den lastes inn, og personlige visninger er globale.
+- **Versjon 10.0.21 eller senere:** Hvis funksjonen **Forbedret støtte for juridiske enheter for lagrede visninger** er aktivert, viser visningsvelgeren kun visningen for de angitte juridiske enheten. Dette skjer fordi funksjonen gjør det mulig å koble visninger (inkludert personlige visninger) til bestemte juridiske enheter.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

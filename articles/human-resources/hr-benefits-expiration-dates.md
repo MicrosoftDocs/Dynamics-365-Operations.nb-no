@@ -1,8 +1,8 @@
 ---
 title: Administrere utløpsdatoer for fordel
-description: Denne fremgangsmåten beskriver hvordan du kan la en fordel utløpe eller utvide den, og styre registreringsdatoene til arbeidere som er registrert i fordelen.
-author: andreabichsel
-ms.date: 02/03/2020
+description: Denne fremgangsmåten beskriver hvordan fordeler kan utløpe eller forlenges, og hvordan du styrer registreringsdatoene til arbeidere.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,21 +10,21 @@ ms.search.form: HcmBenefit, HcmMassBenefitExpiration, HcmMassBenefitExpirationRe
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: ccd3126ba45cf90b6fa55f0a3853531fd0e43ed48a9e715bb1692726482fb432
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fa3f5b1c1ada243b351fc8c809eee6cea37e5955
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727118"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416411"
 ---
 # <a name="manage-benefit-expiration-dates"></a>Administrere utløpsdatoer for fordel
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Denne fremgangsmåten beskriver hvordan du kan la en fordel utløpe eller utvide den, og styre registreringsdatoene til arbeidere som er registrert i fordelen. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
+Denne fremgangsmåten beskriver hvordan fordeler kan utløpe eller forlenges, og hvordan du styrer registreringsdatoene til arbeidere. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
 
 ## <a name="benefit-expiration-dates"></a>Utløpsdatoer for fordel
 

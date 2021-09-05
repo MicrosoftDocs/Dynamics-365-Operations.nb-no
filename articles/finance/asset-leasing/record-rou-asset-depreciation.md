@@ -15,16 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 40af957582f9cdf4e1caf3ab03ead41f2823b42d59d427c7e7623cd8688e1827
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 02364a0871e9a54f52c7c526cd1897165d52ec68
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778368"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7345376"
 ---
 # <a name="record-right-of-use-asset-depreciation-preview"></a>Postere avskrivning for bruksrettseiendel (forhåndsversjon)
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
 
 For leieavtaler som er oppført i balansen til en organisasjon, nedbetales bruksrettseiendelen på månedlig basis. Dette emnet forklarer hvordan du oppretter journaloppføringen for nedbetalingen. Nedbetalingen debiterer utgiftsfinanskontoen og kreditere den akkumulerte avskrivningsfinanskontoen basert på oppsettet av posteringsprofilen og leietypen. Disse oppføringene kan opprettes for hver leieavtale, eller de kan opprettes for flere leieavtaler ved å bruke funksjonen for satsvis journal.
 
@@ -36,6 +38,9 @@ For leieavtaler som er oppført i balansen til en organisasjon, nedbetales bruks
 
 2. Velg avskrivningsperioden, og velg deretter **Opprett Journal**. Du får en melding som angir at journalen som skal brukes til å registrere avskrivning, er opprettet.
 3. Velg **Journaler \> Journaler for aktivaleie** for å åpne siden **Journaler for aktivaleie**, der du kan se journaloppføringen for avskrivningsutgift som ble opprettet.
+
+   Systemet låser bestemte økonomiske felt fra å bli redigert for å forhindre avvik mellom transaksjonene og planene. Noen av feltene som er låst, inkluderer: **Konto**, **Beløp**, **Finansdimensjoner**, **Valuta** og **Transaksjonstype**. I tillegg kan du ikke legge til eller slette journaloppføringslinjer i noen journaloppføringer for anleggsmiddelleasing, fordi dette kan føre til avvik mellom planene og transaksjonene.
+
 4. Velg journaloppføringen, og velg deretter **Poster** for å registrere avskrivningsoppføringen til økonomimodulen.
 
 ## <a name="calculation-of-rou-asset-amortization-expense-for-operating-leases"></a>Beregning av nedbetalingsutgift for bruksrettseiendel for gjeldende leie

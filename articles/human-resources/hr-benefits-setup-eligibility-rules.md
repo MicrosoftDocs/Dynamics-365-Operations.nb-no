@@ -1,8 +1,8 @@
 ---
 title: Konfigurere rettighetsregler og -alternativer
-description: Angi rettighetsregler og alternativer i Fordelsbehandling i Microsoft Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 06/25/2021
+description: Dette emnet beskriver hvordan du angir rettighetsregler og alternativer i Fordelsbehandling i Microsoft Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3aae50b8f7fac6991f187ced44f7d122eb7ed40824bd2d53265fa06bfa87dd6a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 034957628580c468ed00b14afeb7e49af15c45cc
+ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6756130"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "7423477"
 ---
 # <a name="configure-eligibility-rules-and-options"></a>Konfigurere rettighetsregler og -alternativer 
 
@@ -155,7 +155,7 @@ Reglene kan utvides ytterligere for å bruke flere betingelser innenfor ett enke
 ### <a name="eligibility-conditions-within-a-custom-field-criterion"></a>Rettighetsbetingelser innenfor et egendefinert feltkriterium 
 I likhet ovenstående kan egendefinerte felt brukes ved oppretting av rettighetsregler og arbeid på samme måte. Det kan for eksempel hende at du vil tilby internettrefusjon til de ansatte i Fargo og København som jobber hjemmefra, fordi internettkostnadene er høyere på disse stedene. Du gjør dette ved å opprette to egendefinerte felt: **Kontoradresse** (plukkliste) og **Jobber hjemmefra** (avmerkingsboks). Deretter oppretter du en regel som kalles **WFH-ansatte**. Kriteriet for regelen er der **Kontoradresse = Fargo** eller **København**, *og* der arbeid **Jobber hjemmefra = Ja**.
 
-Egendefinerte rettighetsregler må defineres som angitt i følgende bilde. 
+De egendefinerte rettighetsreglene må defineres som angitt i følgende bilde. 
 
 ![Rettighetsbetingelser innenfor et egendefinert feltkriterium.](media/EligibilityConditionsWithinACustomFieldCriterion.png) 
  
@@ -217,13 +217,13 @@ Du kan bruke fleksible kredittprogrammer til å registrere ansatte i fordeler i 
 
    | Felt | beskrivelse |
    | --- | --- |
-   | ID for fordelskreditt | Den unike ID-en til det fleksible kredittprogrammet. |
-   | Beskrivelse | En beskrivelse av det fleksible kredittprogrammet. | 
-   | Fra dato | Datoen da de fleksible kreditt programmet blir aktivt. |
-   | Til dato | Sluttdatoen for det fleksible kredittprogrammet. Du kan la standardverdien (12/31/2154) bli værende for å angi at det fleksible kredittprogrammet ikke har en planlagt utløpsdato. |
-   | Kredittverdi totalt | Antall kreditter som hver ansatt skal ha for deres fordeler. |
-   | Fordelingsregel | Regelen som skal brukes for å fordele fleksible kreditter når en ansatt blir ansatt i midt i en periode for fleksibel kreditt. </br></br><ul><li>**Ingen** – den ansatte får ingen fleksibel kreditt hvis de blir ansatt etter at perioden for det fleksible kredittprogrammet begynner.</li><li>**Full kreditt** – den ansatte mottar hele beløpet med fleksibel kreditt, uansett når de er ansatt.</li><li>**Fordelt** – den ansatte får en fordelt mengde fleksibel kreditt, basert på startdatoen.</li></ul> |
-   | Fordelingsformel for fleksikreditt | Regelen som skal brukes for å fordele fleksible kreditter for ansatte som blir ansatt i midt i en fordelsperiode for det fleksible kredittprogrammet. Fordelingen er basert på startdatoen for ansettelsen. Feltet brukes bare hvis du velger **Fordeling** i **Fordelingsregel**-feltet. </br></br><ul><li>**Daglig** – Fordeler antallet fleksible kreditter en ansatt mottar til dagsnivået. Det totale antallet fleksible kreditter deles på antall dager i perioden. Hvis fordelsperioden for eksempel er på 400 dager, vil systemet dele det totale antallet fleksible kreditter med 400 for å beregne antallet fleksible kreditter som de ansatte mottar per dag.</li><li>**Gjeldende måned** – Fordeler antallet fleksible kreditter en ansatt mottar til månedsnivået, avrundet til gjeldende måned. Det totale antallet fleksible kreditter deles på antall måneder i perioden. Hvis fordelsperioden for eksempel er på 15 måneder, vil systemet dele det totale antallet fleksible kreditter med 15 for å beregne antallet fleksible kreditter som de ansatte mottar per måned.</li><li>**Følgende måned** – Fordeler antallet fleksible kreditter en ansatt mottar til månedsnivået, avrundet til neste måned. Det totale antallet fleksible kreditter deles på antall måneder i perioden. Hvis fordelsperioden for eksempel er på 15 måneder, deler systemet det totale antallet fleksible kreditter med 15 for å beregne antallet fleksible kreditter som de ansatte mottar per måned.</li></ul> |
+   | **ID for fordelskreditt** | Den unike ID-en til det fleksible kredittprogrammet. |
+   | **Beskrivelse** | En beskrivelse av det fleksible kredittprogrammet. | 
+   | **Fra dato** | Datoen da de fleksible kreditt programmet blir aktivt. |
+   | **Til dato** | Sluttdatoen for det fleksible kredittprogrammet. Du kan la standardverdien (12/31/2154) bli værende for å angi at det fleksible kredittprogrammet ikke har en planlagt utløpsdato. |
+   | **Kredittverdi totalt** | Antall kreditter som hver ansatt skal ha for deres fordeler. |
+   | **Fordelingsregel** | Regelen som skal brukes for å fordele fleksible kreditter når en ansatt blir ansatt i midt i en periode for fleksibel kreditt. </br></br><ul><li>**Ingen** – den ansatte får ingen fleksibel kreditt hvis de blir ansatt etter at perioden for det fleksible kredittprogrammet begynner.</li><li>**Full kreditt** – den ansatte mottar hele beløpet med fleksibel kreditt, uansett når de er ansatt.</li><li>**Fordelt** – den ansatte får en fordelt mengde fleksibel kreditt, basert på startdatoen.</li></ul> |
+   | **Fordelingsformel for fleksikreditt** | Regelen som skal brukes for å fordele fleksible kreditter for ansatte som blir ansatt i midt i en fordelsperiode for det fleksible kredittprogrammet. Fordelingen er basert på startdatoen for ansettelsen. Feltet brukes bare hvis du velger **Fordeling** i **Fordelingsregel**-feltet. </br></br><ul><li>**Daglig** – Fordeler antallet fleksible kreditter en ansatt mottar til dagsnivået. Det totale antallet fleksible kreditter deles på antall dager i perioden. Hvis fordelsperioden for eksempel er på 400 dager, vil systemet dele det totale antallet fleksible kreditter med 400 for å beregne antallet fleksible kreditter som de ansatte mottar per dag.</li><li>**Gjeldende måned** – Fordeler antallet fleksible kreditter en ansatt mottar til månedsnivået, avrundet til gjeldende måned. Det totale antallet fleksible kreditter deles på antall måneder i perioden. Hvis fordelsperioden for eksempel er på 15 måneder, vil systemet dele det totale antallet fleksible kreditter med 15 for å beregne antallet fleksible kreditter som de ansatte mottar per måned.</li><li>**Følgende måned** – Fordeler antallet fleksible kreditter en ansatt mottar til månedsnivået, avrundet til neste måned. Det totale antallet fleksible kreditter deles på antall måneder i perioden. Hvis fordelsperioden for eksempel er på 15 måneder, deler systemet det totale antallet fleksible kreditter med 15 for å beregne antallet fleksible kreditter som de ansatte mottar per måned.</li></ul> |
    
    Pass på at hver fordelsplan bare registreres i ett fleksibelt kredittprogram per fordelsperiode. Ellers vet ikke systemet hvilket fleksibelt kredittprogram som skal brukes til å gi fleksible kreditter, og du vil få problemer. 
 

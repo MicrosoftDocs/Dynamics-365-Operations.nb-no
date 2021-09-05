@@ -1,8 +1,8 @@
 ---
 title: Unngå avkorting av tekst i stillingshierarki og eksport til Visio
-description: Denne artikkelen forklarer hvordan du løser et problem der navn på personer og stillinger avkortes når kunder viser stillingshierarkiet i Microsoft Dynamics 365 Human Resources. Avkorting av teksten kan gjøre det vanskelig å ta et skjermbilde eller skrive ut hierarkiet.
-author: andreabichsel
-ms.date: 02/03/2020
+description: Dette emnet forklarer hvordan du løser et problem med avkortede navn på personer og stillinger i stillingshierarkiet i Microsoft Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -11,17 +11,17 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 36fc7684cf0351a10ab5910d46f6d56d46d78921143c537269699c11a38ae12b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8a9a8d22df0416ef417a6216c3131bfb6d40d200
+ms.sourcegitcommit: 7e32e5e39e762a4b1606161cb603a450d13b5251
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779332"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "7413541"
 ---
-# <a name="avoid-text-truncation-on-the-position-hierarchy-and-export-to-visio"></a>Unngå avkorting av tekst på stillingshierarki og eksport til Visio
+# <a name="avoid-text-truncation-on-the-position-hierarchy-and-export-to-visio"></a>Unngå avkorting av tekst i stillingshierarki og eksport til Visio
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -43,7 +43,7 @@ Følg denne fremgangsmåten for å eksportere til Visio.
 
 1. I Human Resources åpner du **Stillinger**-listesiden.
 
-    Hvis du vil inkludere mer informasjon i organisasjonsstrukturdiagrammet, legger du til felt i **Stillinger**-listen, slik at de er tilgjengelige når du bruker veiviseren senere i denne fremgangsmåten.
+    Hvis du vil inkludere mer informasjon i organisasjonsstrukturdiagrammet, legger du til felt i **Stillinger**-listen, slik at de er tilgjengelige når du bruker **Veiviser for organisasjonskart** senere i denne fremgangsmåten.
 
 2. I handlingsruten velger du Åpne i **Microsoft Office**-knappen, og deretter, under **Eksporter til Excel**, velger du **Stillinger**. Du kan også trykke på Ctrl+T.
 

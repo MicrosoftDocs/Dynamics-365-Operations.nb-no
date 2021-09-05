@@ -1,12 +1,12 @@
 ---
-title: Avgiftsberegning (forhåndsversjon)
+title: Oversikt over avgiftsberegning
 description: Dette emnet forklarer det helhetlige omfanget og funksjonene i avgiftsberegning.
 author: wangchen
-ms.date: 06/03/2021
+ms.date: 08/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: TaxIntegrationTaxServiceParameters
 audience: Application user
 ms.reviewer: kfend
 ms.search.scope: Core, Operations
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 4e01247cddad4201760fd56e00e05a8373a1ca6ef7c26ae5e1f5cca63bd8a456
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 72895cc18368ebf38818f30510cec999391c7910
+ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775100"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7394592"
 ---
-# <a name="tax-calculation-preview"></a>Avgiftsberegning (forhåndsversjon)
+# <a name="tax-calculation-overview"></a>Oversikt over avgiftsberegning
 
 [!include [banner](../includes/banner.md)]
 
@@ -33,44 +33,59 @@ Avgiftsberegning er en hyperskalerbar flerleiertjeneste som gjør det mulig for 
 Avgiftsberegning er integrert med Dynamics 365 Finance og Dynamics 365 Supply Chain Management. Til slutt vil den også integreres med Dynamics 365 Project Operations, Dynamics 365 Commerce og andre førsteparts- og tredjepartsprogrammer.
 
 > [!IMPORTANT]
-> Når du aktiverer avgiftsberegningstjenesten, kan det hende at enkelte operasjoner på tilknyttede data utføres i et annet datasenter enn datasenteret som vedlikeholder tjenestedataene. Gå gjennom [Vilkår og betingelser](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md) før du aktiverer avgiftsberegningstjenesten. Personvernet er viktig for oss. Les [personvernerklæringen](https://go.microsoft.com/fwlink/?LinkId=521839) for å finne ut mer.
+> Når du aktiverer avgiftsberegning, kan det hende at enkelte operasjoner på tilknyttede data utføres i et annet datasenter enn datasenteret som vedlikeholder tjenestedataene. Gå gjennom [Vilkår og betingelser](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md) før du aktiverer avgiftsberegning. Personvernet er viktig for oss. Les [personvernerklæringen](https://go.microsoft.com/fwlink/?LinkId=521839) for å finne ut mer.
 
-Avgiftsberegning er en Microsoft-basert avgiftsmotor på mikrotjenestenivå som tilbyr eksponenentiell skalerbarhet. Den kan hjelpe dem med å utføre følgende oppgaver:
+Avgiftsberegning er en mikroservicebasert avgiftsmotor som tilbyr eksponentiell skalerbarhet, og kan hjelpe deg med å utføre følgende oppgaver:
 
-- Konfigurer avgiftsberegning via RCS (Regulatory Configuration Service). RCS er en utvidet versjon av ER-designeren (elektronisk rapportering) og er tilgjengelig som en frittstående tjeneste.
-- Konfigurer avgiftsmatrisen slik at avgiftskoder og -satser bestemmes automatisk.
-- Konfigurer avgiftsmatrisen slik at avgiftsregistreringsnummeret bestemmes automatisk.
-- Konfigurer avgiftsberegningsdesigneren for å definere formler og betingelser.
-- Del løsningen for avgiftsfastsettelse og -beregning på tvers av juridiske enheter.
+- Fastgjør automatisk riktig mva-gruppe, mva-gruppe for vare og avgiftskoder ved hjelp av en utvidet bestemmelsesmekanisme.
+- Støtte flere avgiftsregistreringsnumre i én juridisk enhet, og fastsetter automatisk det riktige avgiftsregistreringsnummeret på avgiftspliktige transaksjoner.
+- Støtte fastsettelse av skatt, beregning, postering og utligning for overføringsordrer.
+- Definer formler og betingelser for avgiftsberegning som kan konfigureres for dine bestemte forretningsbehov.
+- Del løsningen for fastsettelse av skatt og beregning på tvers av juridiske enheter for å spare vedlikeholdsarbeid og unngå feil.
+- Støtte fastsettelse av kundens og leverandørens avgiftsregistreringsnummer.
+- Støtte fastsettelse av listekode.
+- Støtte avgiftsberegningsparametere på mva-jurisdiksjonsnivå.
 
-Hvis du vil bruke tjenesten for avgiftsberegning, installerer du tillegget for avgiftsberegningstjenesten fra prosjektet i Microsoft Dynamics Lifecycle Services (LCS). Deretter fullfører du oppsettet i RCS og aktiverer avgiftsberegningstjenesten i Finance og Supply Chain Management. Hvis du vil ha mer informasjon, kan du se [Komme i gang med avgiftstjenesten](./global-get-started-with-tax-calculation-service.md).
+Hvis du vil avgiftsberegning, installerer du tillegget for avgiftsberegning fra prosjektet i Microsoft Dynamics Lifecycle Services. Deretter fullfører du oppsettet i [Regulatory Configuration Service](https://marketing.configure.global.dynamics.com/) og aktiverer Avgiftsberegning i Finance og Supply Chain Management. Hvis du vil ha mer informasjon, kan du se [Komme i gang med avgiftstjenesten](global-get-started-with-tax-calculation-service.md).
 
 ## <a name="availability"></a>Tilgjengelighet
 
-Avgiftsberegning er bare tilgjengelig i sandkassemiljøer og for utvalgte kunder via et program som offentlig forhåndsversjon. Til slutt vil det bli allment tilgjengelig for alle kunder og i produksjonsmiljøer.
+Avgiftsberegning er vanligvis tilgjengelig i produksjonsmiljøer for alle kunder per versjon 10.0.21.
 
-Nye funksjoner vil bli levert fortløpende, så pass derfor på at du ofte kontrollerer den mest oppdaterte dokumentasjonen for å finne ut om dekningen og omfanget av funksjoner som støttes.
+Nye funksjoner vil fortsatt bli levert. Sjekk den mest oppdaterte lanseringsplanen ofte for å finne ut om dekningen og omfanget av funksjoner som støttes.
 
-Avgiftsberegning distribueres i følgende Azure-geografier. Det vil også bli distribuert til flere Azure-geografier, basert på kundebehov:
+Avgiftsberegning distribueres i følgende Azure-geografier. Flere Azure-geografier blir lagt til, basert på kundebehov.
 
-- USA
+- Asia/Stillehavskysten
+- Australia
+- Canada
 - Europa
+- Japan
+- Storbritannia
+- USA
 
 > [!NOTE]
-> Avgiftsberegning støtter ikke lokale distribusjoner av Dynamics 365. Den støtter heller ikke tidligere versjoner, for eksempel Dynamics AX 2012.
+> Avgiftsberegning støtter ikke en tidligere versjon av Dynamics 365, for eksempel Dynamics AX 2012, eller lokale distribusjoner av Dynamics 365.
 
-## <a name="feature-highlights"></a>Funksjonsfremhevinger
+## <a name="data-flow"></a>Dataflyt
 
-- En konfigurerbare avgiftsmatrise for automatisk bestemming og beregning av avgifter
-- Støtte for flere mva-registreringsnumre
-- Overføringsordrestøtte for fastsettelse og beregning av avgift
-- Støtte for overføringsordre for fastsettelse av flere mva-registreringsnumre
+Her er en oversikt over dataflytprosessen for Avgiftsberegning. 
+
+1. I RCS kan du vise og importere avgiftspliktige dokumentmodellkonfigurasjoner og modelltilordningskonfigurasjoner. Hvis du må utvide konfigurasjoner for et avansert scenario, kan du se [Legg til datafelt i avgiftskonfigurasjoner](tax-service-add-data-fields-tax-configurations.md).
+2. I RCS oppretter eller vedlikeholder du skattefunksjoner. Du kan bruke avgiftsfunksjoner til å vedlikeholde skattesatser og regler for avgiftspliktig bruk.
+3. Når oppsettet for avgiftsfunksjonen er fullført, publiserer du mva-konfigurasjonene og avgiftsfunksjonene fra RCS til det globale repositoriet.
+4. I Finance velger du hvilken oppsettversjon for avgiftsfunksjonen som skal brukes for en bestemt juridisk enhet.
+5. Bruk transaksjoner på vanlig måte i Finance og Supply Chain Management. Når det er nødvendig med avgiftsberegning, vil klienten samle inn informasjon fra transaksjonen, for eksempel salgsordren eller bestillingen, og pakke informasjonen som nyttelast. Deretter sendes en forespørsel om å beregne avgiften.
+6. Forespørselen om avgiftsberegning mottas fra klienten og beregningen er fullført. Resultatet av avgiften returneres deretter til klienten.
+7. Dynamics 365-klienten mottar avgiftsresultatet og presenterer resultatet av avgiftsberegningen på en mva-side.
 
 ## <a name="supported-transactions"></a>Transaksjoner som støttes
 
-Avgiftsberegning kan aktiveres ved hjelp av juridisk enhet og transaksjon. Følgende transaksjoner støttes:
+Avgiftsberegning kan aktiveres via transaksjoner. 
 
-- Salgsprosess
+Følgende transaksjoner støttes i versjon 10.0.21: 
+
+- Salg
 
     - Salgstilbud
     - Salgsordre
@@ -83,7 +98,7 @@ Avgiftsberegning kan aktiveres ved hjelp av juridisk enhet og transaksjon. Følg
     - Diverse tillegg for overskrift
     - Diverse linjetillegg
 
-- Innkjøpsprosess
+- Kjøp
 
     - Bestilling
     - Bekreftelse
@@ -100,10 +115,36 @@ Avgiftsberegning kan aktiveres ved hjelp av juridisk enhet og transaksjon. Følg
     - Diverse tillegg på tilbudsforespørselshode
     - Diverse tillegg på tilbudsforespørselslinje
 
-- Beholdningsprosess
+- Lager
 
     - Overføringsordre – send
     - Overføringsordre – motta
+
+## <a name="supported-countriesregions"></a>Støttede land/områder
+
+Avgiftsberegning kan aktiveres etter juridisk enhet. 
+
+Følgende land/områder for primæradressen til en juridisk enhet støttes i versjon 10.0.21:
+
+- Østerrike
+- Belgia
+- Danmark
+- Estland
+- Finland
+- Frankrike
+- Tyskland
+- Ungarn
+- Island
+- Italia
+- Latvia
+- Litauen
+- Nederland
+- Norge
+- Polen
+- Sverige
+- Sveits
+- Storbritannia
+- USA
 
 ## <a name="related-resources"></a>Relaterte ressurser
 

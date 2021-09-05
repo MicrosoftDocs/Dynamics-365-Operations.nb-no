@@ -2,7 +2,7 @@
 title: Konfigurer Oppslag-datakilder for å bruke ER-programspesifikke parametere
 description: Dette emnet forklarer hvordan du kan konfigurere Oppslag-datakilder i ER-formater (elektronisk rapportering) for å bruker parametere som er spesifikek for ER-programmet.
 author: NickSelin
-ms.date: 04/02/2021
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 2849df85c37c4ed00754be91b9a9708db1bb16b7d0eb49d3a61d169037687196
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c028b01aa2889a517bee69de46411ada12d6fe25
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723195"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343435"
 ---
 # <a name="configure-lookup-data-sources-to-use-er-application-specific-parameters"></a>Konfigurer Oppslag-datakilder for å bruke ER-programspesifikke parametere 
 
@@ -69,7 +69,7 @@ Du kan definere oppslagsreglene for det valgte ER-formatet ved å bruke grensesn
 Illustrasjonen nedenfor viser hvordan `Model.Data.Summary.LevelByLookup`-datakilden av typen **Beregnet felt** kan konfigureres til å kalle den konfigurerte **Oppslag**-datakilden ved å oppgi de nødvendige parameterne. For å behandle dette kallet ved kjøretid går ER gjennom listen over konfigurerte regler i den definerte rekkefølgen for å finne den første regelen som oppfyller betingelsene som er angitt. I dette eksemplet er det regelen som inneholder avgiftskoden som samsvarer med den angitte. Da blir den mest passende regelen funnet, og opplistingsverdien som er konfigurert for regelen som blir funnet, blir returnert av denne datakilden.
 
 > [!NOTE]
-> Et unntak opprettes når ingen gjeldende regel blir funnet. Du kan forhindre disse unntakene ved å konfigurere flere regler på slutten av regellisten for å håndtere tilfeller når en ikke-konfigurert verdi eller ingen verdi oppgis. Bruk alternativene **\*Ikke tom\*** og **\*Tom\*** i henhold til dette.  
+> Et unntak opprettes når ingen gjeldende regel blir funnet. Du kan forhindre disse unntakene ved å konfigurere flere regler på slutten av regellisten for å håndtere tilfeller når en ikke-konfigurert verdi eller ingen verdi oppgis. Bruk alternativene **\*Ikke tom**\* og **\*Tom**\* i henhold til dette.  
 >
 > ![Legge til en datakilde for å kalle den konfigurerte oppslagsdatakilden.](./media/er-lookup-data-sources-img7.png)
 

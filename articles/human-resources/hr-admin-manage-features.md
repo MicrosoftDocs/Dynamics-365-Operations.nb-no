@@ -1,8 +1,8 @@
 ---
 title: Vedlikeholde funksjoner i Human Resources
-description: Lær hvordan du aktiverer eller deaktiverer nye funksjoner i Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 04/06/2020
+description: Dette emnet beskriver funksjonen Funksjonsbehandling og hvordan du kan bruke den.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a9c459b2b34164a9be3ed609a99deb4c5b710d340ef560e6f991e760375d6146
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 61e40f7177a1c8cf3d60a9a991ecbb0ed4d93aa1
+ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738373"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7414639"
 ---
 # <a name="manage-features-in-human-resources"></a>Vedlikeholde funksjoner i Human Resources
 
@@ -69,7 +69,7 @@ Fordelsbehandling erstatter funksjonalitet i arbeidsområdet **Fordeler**. Når 
 - **Policyer for fordelsrettigheter**
 - **Rettighetshendelser**
 
-Du kan vise informasjonen i disse skjemaene i skrivebeskyttet modus. Hvis du vil redigere informasjonen, må du først deaktivere Fordelsbehandling (gjelder kun for **Sandkasse**-miljøer).
+Du kan vise informasjonen på disse sidene i skrivebeskyttet modus. Hvis du vil redigere informasjonen, må du først deaktivere Fordelsbehandling (gjelder kun for **Sandkasse**-miljøer).
 
 ## <a name="enable-or-disable-leave-and-absence"></a>Aktivere eller deaktivere permisjon og fravær
 

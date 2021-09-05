@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 338c3129d81fa0428f3470808bc13fc76483ff3aaf19b06708a986aec64b4030
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e93aff4914314ea99798415a0bacc7b844169bc2
+ms.sourcegitcommit: 2b04b5a5c883d216072bb91123f9c7709a41f69a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782353"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7384617"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Installere og koble til mobilappen Lagerstyring
 
@@ -150,7 +150,7 @@ Du kan importere tilkoblingsinnstillinger fra enten en fil eller en QR-kode. I b
 | ConnectionName | Angi navnet på tilkoblingsstrengen. Maksimumslengden er 20 tegn. Ettersom denne verdien er den unike identifikatoren for en tilkoblingsinnstilling, må du kontrollere at den er unik i listen. Hvis det allerede finnes en tilkobling med samme navn på enheten, vil den bli overstyrt av innstillingene fra den importerte filen. |
 | ActiveDirectoryClientAppId | Angi klient-ID-en du noterte deg da du konfigurerte Azure AD i delen [Opprette en webtjenesteapp i Azure Active Directory](#create-service). |
 | ActiveDirectoryResource | Angi rot-URL-adressen til Supply Chain Management. |
-| ActiveDirectoryTenant | Angi Azure AD-leieren du bruker med Supply Chain Management-serveren. Denne verdien har formen `https://login.windows.net/<your-Azure-AD-tenant-ID>`. Her er et eksempel: `https://login.windows.net/contosooperations.onmicrosoft.com`. |
+| ActiveDirectoryTenant | Angi Azure AD-domenenavnet du bruker med Supply Chain Management-serveren. Denne verdien har formen `https://login.windows.net/<your-Azure-AD-domain-name>`. Her er et eksempel: `https://login.windows.net/contosooperations.onmicrosoft.com`. Hvis du vil ha mer informasjon om hvordan du finner Azure AD-domenenavnet, kan du se [Finn viktige ID-er for en bruker](/partner-center/find-ids-and-domain-names). |
 | Bedrift | Angi den juridiske enheten i Supply Chain Management du vil koble appen til. |
 | ConnectionType | (Valgfritt) Angi om tilkoblingsinnstillingen skal bruke et sertifikat eller klienthemmelighet til å koble til et miljø. Gyldige verdier er *certificate* og *clientsecret*. Standardverdien er *certificate*.<p>**Obs!** Klienthemmeligheter kan ikke importeres.</p> |
 | IsEditable | (Valgfritt) Angi om appbrukeren skal kunne redigere tilkoblingsinnstillingen. Gyldige verdier er *true* og *false*. Standardverdien er *true*. |
@@ -268,7 +268,7 @@ Hvis du ikke har en fil eller QR-kode, kan du konfigurere appen manuelt på enhe
         > [!IMPORTANT]
         > Ikke avslutt denne verdien med en skråstrek (/).
 
-    - **Active Directory-leier** – Angi Azure AD-leieren du bruker med Supply Chain Management-serveren. Denne verdien har formen `https://login.windows.net/<your-Azure-AD-tenant-ID>`. Her er et eksempel: `https://login.windows.net/contosooperations.onmicrosoft.com`.
+    - **Active Directory-leier** – Angi Azure AD-domenenavnet du bruker med Supply Chain Management-serveren. Denne verdien har formen `https://login.windows.net/<your-Azure-AD-domain-name>`. Her er et eksempel: `https://login.windows.net/contosooperations.onmicrosoft.com`. Hvis du vil ha mer informasjon om hvordan du finner Azure AD-domenenavnet, kan du se [Finn viktige ID-er for en bruker](/partner-center/find-ids-and-domain-names).
 
         > [!IMPORTANT]
         > Ikke avslutt denne verdien med en skråstrek (/).

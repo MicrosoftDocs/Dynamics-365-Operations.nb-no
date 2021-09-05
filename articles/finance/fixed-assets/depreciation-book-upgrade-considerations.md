@@ -16,12 +16,12 @@ ms.search.region: global
 ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 757c8b9f2b57374e4b6d35c9be95b9e1dfe7f249c9ea903009cc26e16711bead
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b1d14154cd2e9bd18a886ba490891a02afeb0b05
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713810"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344720"
 ---
 # <a name="depreciation-book-upgrade-overview"></a>Oversikt over oppgradering av avskrivningstablå
 
@@ -45,16 +45,16 @@ Alternativ 1: **Systemdefinert nummerserie** – Dette er standardalternativet f
     -   Konstantnavn: **NumberSequenceDefaultParameterAlpanumericLength**
     -   Standardverdi: 9
 -   **Startnummer** – Det første tallet som skal brukes i nummerserien.
-    -   Konstantnavn: **NumberSequenceDefaultParameterStartNumber **
+    -   Konstantnavn: **NumberSequenceDefaultParameterStartNumber**
     -   Standardverdi: 1
 
 Alternativ 2: **Eksisterende brukerdefinert nummerserie** - Dette alternativet lar deg definere nummerserien som skal brukes for oppgraderingen. Vurder å bruke dette alternativet hvis du har behov for avansert nummerseriekonfigurasjon. Hvis du vil bruke en nummerserie, må du endre oppgraderingsklassen ReleaseUpdateDB70\_FixedAssetJournalDepBookRemovalDepBookJournalTrans med følgende informasjon:
 
 -   **Nummerseriekode** – Koden til nummerserien.
-    -   Konstantnavn: **NumberSequenceExistingCode **
+    -   Konstantnavn: **NumberSequenceExistingCode**
     -   Standardverdi: Ingen standard. Dette må oppdateres til nummerseriekoden.
 -   **Felles nummerserie** – En boolsk verdi for å identifisere omfanget for nummerserien. Bruk "true" for nummerserier som deles på tvers av alle firmaer, og "false" for et firmaomfang. Når du bruker "false", må nummerserien med det angitte navnet finnes i hvert firma som inneholder avskrivningstablåtransaksjoner. Det finnes delte nummerserier i hver partisjon som inneholder avskrivningstablåtransaksjoner.
-    -   Konstantnavn: **NumberSequenceExistingIsShared **
+    -   Konstantnavn: **NumberSequenceExistingIsShared**
     -   Standardverdi: true
 
 Parameterne er plassert i begynnelsen av klassen ReleaseUpdateDB70\_FixedAssetJournalDepBookRemovalDepBookJournalTrans. 

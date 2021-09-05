@@ -1,8 +1,8 @@
 ---
-title: Konfigurere integrasjon med Finance
-description: Denne artikkelen beskriver funksjonaliteten som er tilgjengelig for integrering fra Dynamics 365 Human Resources og Dynamics 365 Finance.
-author: andreabichsel
-ms.date: 03/26/2020
+title: Konfigurer integrering med Finance
+description: Dette emnet beskriver integreringen mellom Dynamics 365 Human Resources og Dynamics 365 Finance .
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,17 +12,17 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8d4bbd0c95126bd869fafccc3e7c63f65f939d8c6b2a1afec8ff95f8519fe9af
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ba984d26c5c0b1376c0ad85e5c0665da004a46a5
+ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6756178"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7414694"
 ---
-# <a name="configure-integration-with-finance"></a>Konfigurere integrering med Finance
+# <a name="configure-integration-with-finance"></a>Konfigurer integrering med Finance
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

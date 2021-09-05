@@ -1,8 +1,8 @@
 ---
 title: Oversikt over administrasjon
-description: Denne administratorveiledningen hjelper deg med å sette opp, administrere og feilsøke Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 02/03/2020
+description: Dette emnet gir en oversikt over emnene i hjelpen og andre ressurser for konfigurasjon, administrasjon og feilsøking i Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3b2cefd0281abfc94df05a1ae929e0b65bc533b292a6c4779a4fbc7ba1134a0e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6b4ceba9f071f73813eb9e79c5d8e2a00779c915
+ms.sourcegitcommit: 49f7528d3268abe15e40f719956e1ec8696a6f4e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765620"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7393577"
 ---
 # <a name="administration-overview"></a>Oversikt over administrasjon
 
@@ -28,11 +28,11 @@ ms.locfileid: "6765620"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Denne administratorveiledningen hjelper deg med å sette opp, administrere og feilsøke Dynamics 365 Human Resources.
+Dette emnet gir en oversikt over emnene i hjelpen og andre ressurser for konfigurasjon, administrasjon og feilsøking i Dynamics 365 Human Resources.
 
 - [Systemkrav](hr-admin-system-requirements.md)
 
-- Definere og administrere forekomster
+- Konfigurere og administrere forekomster
   - [Klargjøre Human Resources](hr-admin-setup-provision.md)
   - [Kopier en forekomst](hr-admin-setup-copy-instance.md)
   - [Fjerne en forekomst](hr-admin-setup-remove-instance.md)
@@ -96,9 +96,18 @@ Denne administratorveiledningen hjelper deg med å sette opp, administrere og fe
   - [Rapporteringsalternativer](hr-admin-troubleshooting-reporting.md)
   - [Vanlige spørsmål om integrering](hr-admin-troubleshooting-integration.md)
 
+## <a name="additional-resources"></a>Tilleggsressurser
+
+### <a name="elearning-courses"></a>e-læringskurs
+Gå til [Dynamics 365 Human Resources på Microsoft Learn](//learn/browse/?products=dynamics-human-resources&resource_type=learning%20path) for elektroniske kurs og opplæring.
+
+### <a name="videos"></a>Videoer
+
+Se instruksjonsvideoene som nå er tilgjengelige på [Microsoft Dynamics 365 YouTube-kanalen](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
+
 ## <a name="see-also"></a>Se også
 
-- [Hva er nytt eller endret i Human Resources](hr-admin-whats-new.md)
+- [Nyheter eller endringer i Human Resources](hr-admin-whats-new.md)
 - [Utviklerveiledning](hr-developer-overview.md)
 - [Brukerveiledning](hr-hrpro-overview.md)
 

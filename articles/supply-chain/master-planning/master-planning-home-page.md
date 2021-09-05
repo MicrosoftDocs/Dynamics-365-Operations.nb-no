@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 135c8bf66f4bbd7bdbc06b50ab2a8630c934c50bc0a51c7cdb2575d3c8f5d5ae
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7dd25fdd1549fb2fddff57dc2d9cf8762cfd6823
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6766661"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416533"
 ---
 # <a name="master-planning-home-page"></a>Startside for hovedplanlegging
 
@@ -84,7 +84,7 @@ Mer hjelp er tilgjengelig som oppgaveveiledninger. For å få tilgang til oppgav
 
 - [Utvide funksjonaliteten for behovsprognose](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
 - [Hovedplanlegging – tips og triks for feilsøkingsytelse](https://youtu.be/7v8BPmEs9Dg)
-- [Hjelp! MRP er treg!](https://youtu.be/RLXybx20B5o)
+- [Finjustering av MRP-ytelse](https://youtu.be/RLXybx20B5o)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

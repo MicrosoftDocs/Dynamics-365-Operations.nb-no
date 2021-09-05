@@ -1,8 +1,8 @@
 ---
 title: Konfigurere fradrag
 description: Bruk fradrag i Microsoft Dynamics 365 Human Resources for å fastslå hvor mye hvis det er, hvis noe, å trekke fra en ansatts lønn for hver fordel.
-author: andreabichsel
-ms.date: 04/06/2020
+author: twheeloc
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 914f3348982cb10874ab585badb8bbba2885ea6970fda7cbe1c73e56c8d447a2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a865f109379064ae8829532af9253238e203c322
+ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762004"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "7423503"
 ---
 # <a name="configure-deductions"></a>Konfigurere fradrag
 
@@ -45,7 +45,7 @@ Bruk fradrag i Microsoft Dynamics 365 Human Resources for å fastslå hvor mye h
    | **Beløpsoverskrift** | Overskriftskoden fra lønnssystemet som dette fradragsbeløpet vil bruke for den ansattes del av fradraget, ved behandling av fordelene til lønn. Dette brukes normalt når du bruker en tredjeparts lønnsleverandør. |
    | **Kan slette** | Angir om en eksportert verdi fra Dynamics 365 for Finance and Operations kan føre til at verdien slettes i lønningssystemet. |
    | **Parede kolonner** | Angir om overskrift og fradragsbeløp skal eksporteres i parede sammenliggende kolonner til et lønningssystemet. |
-   | **Ikrafttredelsesdato for endring** | Datoen når endringen av fordelsfradraget settes i kraft. På denne datoen endrer systemet automatisk fordelsfradraget og oppdaterer alle fordelsplanene som er knyttet til dette fradraget, så lenge du kjører behandling av **oppdatering av fradragsendring**. |
+   | **Ikrafttredelsesdato for endring** | Datoen når endringen av fordelsfradraget settes i kraft. På denne datoen endres fordelsfradraget og alle fordelsplanene som er knyttet til dette fradraget, blir oppdatert, så lenge du kjører behandling av **oppdatering av fradragsendring**. |
    | **Fradragsendring fullført** | Avmerkingsboksen for **Fradragsendring fullført** blir valgt automatisk når fordelsfradragsendringene er fullført av fradrag av oppdaterings endrings behandling. |
    
 4. Hvis du vil spore og vedlikeholde endringer i fordelssatsoppsettet, velger du **Handlinger** og deretter **Vedlikehold versjoner**.

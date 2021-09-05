@@ -2,26 +2,19 @@
 title: Feilsøke problemer med dobbel skriving i Finance and Operations-apper
 description: Dette emnet inneholder feilsøkingsinformasjon som kan hjelpe deg med å løse problemer med dobbel skriving-modulen i Finance and Operations-apper.
 author: RamaKrishnamoorthy
-ms.date: 03/16/2020
+ms.date: 08/10/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 6689fae215937f58c93cce72df3fa0a1b5aecd3a5ac9913981b253344a1ba13f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 90ff55540c153ef4f3ac07bf5316a3abb4755f2c
+ms.sourcegitcommit: caa41c076f731f1e02586bc129b9bc15a278d280
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720742"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7380146"
 ---
 # <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>Feilsøke problemer med dobbel skriving i Finance and Operations-apper
 
@@ -44,8 +37,7 @@ Hvis du ikke kan åpne **Dobbel skriving**-siden ved å velge **Dobbel skriving*
 
 Du kan få følgende feilmelding når du prøver å konfigurere en ny tabell for dobbel skriving. Den eneste brukeren som kan opprette en tilordning, er brukeren som konfigurere dobbelt skriving-forbindelsen.
 
-*Svarstatuskoden indikerer ikke fullført: 401 (uautorisert)*
-
+*Svarstatuskoden indikerer ikke fullført: 401 (uautorisert).*
 
 ## <a name="error-when-you-open-the-dual-write-user-interface"></a>Feil når du åpner bruker grensesnittet for dobbel skriving
 
@@ -61,7 +53,11 @@ Du kan løse problemet ved å logge på ved å bruke et InPrivate-vindu i Micros
 
 Du kan støte på følgende feilmelding når du kobler eller oppretter tilordninger:
 
-*Svarstatuskoden indikerer ikke fullført: 403 (tokenexchange).<br> Økt-ID: \<your session id\><br> Rotaktivitet-ID: \<your root activity id\>*
+```dos
+Response status code does not indicate success: 403 (tokenexchange).
+Session ID: \<your session id\>
+Root activity ID: \<your root activity\> id
+```
 
 Denne feilen kan oppstå hvis du ikke har tilstrekkelige tillatelser til å koble dobbel skriving eller opprette tilordninger. Denne feilen kan også oppstå hvis Dataverse-miljøet ble tilbakestilt uten å koble fra dobbel skriving. Alle brukere med rollen systemansvarlig i både Finance and Operations-apper og Dataverse kan koble sammen miljøer. Bare brukeren som konfigurerte dobbel skriving-tilkoblingen, kan legge til nye tabelltilordninger. Etter installasjonen kan alle brukere med rollen systemansvarlig overvåke statusen og redigere tilordningene.
 
@@ -75,16 +71,29 @@ Denne feilen oppstår når det koblede Dataverse-miljøet ikke er tilgjengelig.
 
 Du kan løse problemet ved å opprette en støtteforespørsel for data integrasjonsgruppen. Knytt til nettverkssporingen slik at dataintegrasjonsgruppen kan merke tilordningene som **Kjører ikke** i serverdelen.
 
-## <a name="error-while-trying-to-start-a-table-mapping"></a>Feil under forsøk på å starte en tabelltilordning
+## <a name="errors-while-trying-to-start-a-table-mapping"></a>Feil under forsøk på å starte en tabelltilordning
 
-Det kan hende du får en feilmelding som nedenfor når du forsøker å angi denne tilstanden for en tilordning til **Kjører**:
+### <a name="unable-to-complete-initial-data-sync"></a>Kan ikke fullføre innledende datasynkronisering
+
+Du kan få en feil søm følgende når du prøver å kjøre den innledende datasynkroniseringen:
 
 *Kan ikke fullføre den opprinnelige datasynkroniseringen. Feil: dobbelt skriving feil - registrering av plugin-modul mislyktes: kan ikke opprette metadata for oppslag med dobbel skriving. Feilobjektreferanse er ikke satt til en forekomst av et objekt.*
 
-Hurtigreparasjonen for denne feilen er avhengig av årsaken til feilen:
+Når du forsøker å angi denne tilstanden for en tilordning til **Kjører**, kan du få følgende feil: Hurtigreparasjonen er avhengig av årsaken til feilen:
 
 + Hvis tilordningen har avhengige tilordninger, må du sørge for å aktivere de avhengige tilordningene for denne tabelltilordningen.
 + Tilordningen kan mangle kilde- eller målkolonner. Hvis en kolonne i Finance and Operations-appen mangler, følger du trinnene i delen [Problemer med manglende tabellkolonner i tilordninger](dual-write-troubleshooting-finops-upgrades.md#missing-table-columns-issue-on-maps). Hvis det mangler en kolonne i Dataverse, klikker du på **Oppdater tabeller**-knappen for tilordningen, slik at kolonnene fylles ut automatisk i tilordningen på nytt.
 
+### <a name="version-mismatch-error-and-upgrading-dual-write-solutions"></a>Feil med versjonskonflikt og oppgradering av løsninger for skrivefeil for skriveversjon
+
+Du kan få følgende feilmeldinger når du prøver å kjøre tabelltilordningene:
+
++ *Kundegrupper (msdyn_customergroups): Dobbel skriving-feil – Dynamics 365 for Sales-løsningen "Dynamics365Company" har versjonskonflikt. Versjon: 2.0.2.10, påkrevd versjon: 2.0.133*
++ *Dynamics 365 for Sales-løsningen Dynamics365FinanceExtended har versjonskonflikt. Versjon: 1.0.0.0, påkrevd versjon: 2.0.227*
++ *Dynamics 365 for Sales-løsningen Dynamics365FinanceAndOperationsCommon har versjonskonflikt. Versjon: 1.0.0.0, påkrevd versjon: 2.0.133*
++ *Dynamics 365 for Sales-løsningen CurrencyExchangeRates har versjonskonflikt. Versjon: 1.0.0.0, påkrevd versjon: 2.0.133*
++ *Dynamics 365 for Sales-løsningen Dynamics365SupplyChainExtended har versjonskonflikt. Versjon: 1.0.0.0, påkrevd versjon: 2.0.227*
+
+For å løse problemene må du oppdatere dobbel skriving-løsningene i Dataverse. Sørg for å oppgradere til den nyeste løsningen som samsvarer med den nødvendige løsningsversjonen.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: c1930a47bc133c411a0e6054aa766322a261064a06ac4cec8dcdd12c126dc7cd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 74720e387d5db7de841228e6573fb40c5d22588b
+ms.sourcegitcommit: 2b04b5a5c883d216072bb91123f9c7709a41f69a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773543"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7384665"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10019-june-2021"></a>Hva er nytt eller endret i Dynamics 365 Supply Chain Management versjon 10.0.19 (juni 2021)
 
@@ -41,7 +41,7 @@ De fleste av disse funksjonene må aktiveres ved hjelp av [Funksjonsbehandling](
 | Lager og logistikk | [Oppslagsfunksjonalitet for Dokumentinnledning- og Dokumentkonklusjon-felt på salgstilbudsside](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/lookup-functionality-document-introduction-document-conclusion-fields-sales-quotation-page) | Denne funksjonen legger til oppslagsfunksjonalitet for **Dokumentinnledning**- og **Dokumentkonklusjon**-feltene på **Salgstilbud**-siden.<br><br>Denne funksjonen er aktivert som standard. |
 | Lager og logistikk | [Lagerutførelse med skalenheter for kant på den egendefinerte maskinvaren](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-edge-scale-units-custom-hardware) | [Distribuere skalenheter for kant på egendefinert maskinvare ved hjelp av LBD](../cloud-edge/cloud-edge-edge-scale-units-lbd.md) |
 | Produksjon | [Produksjonsutførelse med skalenheter for kant på den egendefinerte maskinvaren](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-edge-scale-units-custom-hardware) | [Distribuer kantskalaenheter på egendefinert maskinvare ved hjelp av LBD](../cloud-edge/cloud-edge-edge-scale-units-lbd.md) |
-| Planlegging | [Uendelig kapasitetsplanlegging for Planleggingsoptimalisering](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/schedule-infinite-capacity-support-planning-optimization) | Denne funksjonen aktiverer kapasitetsplanlegging med ubegrenset kapasitet for Planleggingsoptimalisering. Uten denne funksjonen får planlagte produksjonsordrer leveringstid fra leveringstiden for frigitte produkter, uansett planleggingshorisonten. |
+| Planlegging | [Uendelig kapasitetsplanlegging for Planleggingsoptimalisering](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/schedule-infinite-capacity-support-planning-optimization) | [Planlegging med ubegrenset kapasitet](../master-planning/planning-optimization/infinite-capacity-planning.md) |
 | Planlegging | Spørringsbasert autorisering av planlagt bestilling | [Autoriser planlagte ordrer](../master-planning/planning-optimization/planned-order-firming.md) |
 | Behandling av produktinformasjon | [Sideforbedringer for variantforslag](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/variant-suggestions-page-improvements) | [Opprett forhåndsdefinerte produktvarianter](../pim/tasks/create-predefined-product-variants.md) |
 

@@ -2,7 +2,7 @@
 title: Bygge inn lerretsapper fra Power Apps
 description: Dette emnet forklarer hvordan du bygger inn lerretsapper fra Microsoft Power Apps i klienten for å øke produktets funksjonalitet.
 author: jasongre
-ms.date: 04/23/2021
+ms.date: 08/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: 4031be484c13136369803ad1c502c4998496143985d84835168a887bd474db0e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 37ef6101a5a69e9c820347dd6f61c987467d40b3
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767681"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344535"
 ---
 # <a name="embed-canvas-apps-from-power-apps"></a>Bygge inn lerretsapper fra Power Apps
 
@@ -31,49 +31,79 @@ Hvis du vil vite mer om innebygging av lerretsapper, kan du se den korte videoen
 
 ## <a name="adding-an-embedded-canvas-app-from-power-apps-to-a-page"></a>Legge til en innebygd lerretsapp fra Power Apps på en side
 
-### <a name="overview"></a>Oversikt
-
 Før du bygger inn en lerretsapp fra Power Apps i klienten, må du først finne eller lage en app med ønskede visuelle effekter og/eller funksjonalitet. Dette emnet inneholder ikke en detaljert beskrivelse av prosessen for bygging av apper. Hvis du ikke har brukt Power Apps, se [Power Apps-dokumentasjonen](/powerapps/).
 
-Det finnes to måter å få tilgang til en bestemt lerretsapp på en side når du er klar til å bygge inn appen. Du kan velge den metoden som passer best til ditt scenario. Den første måten er via **Power Apps**-knappen som er lagt til i standardhandlingsruten. Apper du legger til ved hjelp av denne fremgangsmåten, vises som elementer på **Power Apps**-menyknappen. Når du velger et av disse elementene, vises en siderute som inneholder den innebygde appen. Du kan også bygge inn en app direkte på en side som en ny fane, hurtigfane eller blad eller som en ny inndeling i et arbeidsområde.
+Det finnes tre måter å bygge inn en app på i en Finance and Operations-app. Du kan bruke fremgangsmåten som passer best til scenariet. 
+
+- Bygg inn lerretsappen i **Power Apps**-knappen i den standard handlingsruten på en side. Apper du legger til på denne måten, vises som elementer på **Power Apps**-menyknappen, og appene åpnes i sideruter. 
+- Bygg inn lerretsappen direkte på en eksisterende side som en ny kategoriside (pivotfane, hurtigfane, blad eller arbeidsområde).
+- Opprett en ny fullsideopplevelse for lerretsappen fra instrumentbordet.
 
 Når du konfigurerer den innebygde lerretsappen, kan du velge ett felt du vil sende som kontekst til appen. Dette trinnet gjør at appen kan svare på grunnlag av dataene som vises nå.
 
 > [!NOTE]
-> Du kan for øyeblikket ikke bruke denne mekanismen til å bygge inn modelldrevne apper.  
+> Du kan ikke bruke denne mekanismen til å bygge inn modelldrevne apper.
 
-### <a name="details"></a>Detaljer
+### <a name="embedding-a-canvas-app-on-an-existing-page"></a>Bygg inn en lerretsapp på en eksisterende side
 
-Fremgangsmåten nedenfor viser hvordan du bygger inn en lerretsapp fra Power Apps i nettklienten.
+Fremgangsmåten nedenfor viser hvordan du bygger inn en lerretsapp på en eksisterende side fra Power Apps.
 
-1. Gå til siden der du vil bygge inn lerretsappen. Denne siden er siden som inneholder data som må sendes til appen som inndata.
+1. Gå til siden der du vil bygge inn lerretsappen. Denne siden inneholder data som må sendes til appen som inndata.
 2. Åpne **Legg til en app fra Power Apps**-ruten:
 
-    - Klikk på **Alternativer**, og velg deretter **Tilpass denne siden**. Under **Sett inn**-menyen velger du **Power Apps**. Velg til slutt området der du vil legge til appen. Hvis du vil bygge inn appen under Power Apps-menyknappen, velger du handlingsruten. Hvis du vil bygge inn appen direkte på siden, velger du den aktuelle fanen, hurtigfanen, bladet eller delen (hvis du er koblet til et arbeidsområde).
-    - Hvis appen åpnes ved hjelp av Power Apps-menyknappen, kan du også klikke på **Power Apps**-menyknappen i standardhandlingsruten, og deretter velger du **Legg til en app**.
+    - Hvis appen skal bygges inn direkte på siden, velger du **Alternativer** \> **Tilpass denne siden** \> **Mer**, og deretter følger du ett av disse trinnene:
 
-3. Konfigurer den innebygde appen:
+        - Hvis funksjonen **Fullsideapper** er aktivert, velger du **Legg til en side** og velger deretter området der du vil legge til appen. Hvis du vil bygge inn appen i **Power Apps**-menyknappen, velger du handlingsruten. Hvis du vil bygge inn appen direkte på siden, velger du den aktuelle fanen, hurtigfanen, bladet eller delen (hvis du er koblet til et arbeidsområde). Deretter velger du en **Power Apps**-app i ruten **Legg til en app**.
+        - Hvis funksjonen **Fullsideapper** er deaktivert, velger du **Legg til en app fra Power Apps** og velger deretter området der du vil legge til appen. Hvis du vil bygge inn appen i **Power Apps**-menyknappen, velger du handlingsruten. Hvis du vil bygge inn appen direkte på siden, velger du den aktuelle fanen, hurtigfanen, bladet eller delen (hvis du er koblet til et arbeidsområde).
 
-    - Feltet **Navn** angir teksten for knappen eller fanen som inneholder den innebygde appen. Ofte vil du kanskje gjenta navnet på appen i dette feltet.
-    - **App-ID**-feltet angir GUIDen (globalt unik identifikator) for lerretsappen du vil bygge inn. Hvis du vil hente denne verdien, finner du appen på [make.powerapps.com](https://make.powerapps.com), og deretter ser du i feltet **App-ID** under **Detaljer**.
-    - For **Inndatakontekst for appen** kan du også velge feltet som inneholder dataene du vil sende til appen som inndata. Hvis du vil ha mer informasjon om hvordan appen får tilgang til data sendt fra Finance and Operations-apper, kan du se delen senere i dette emnet som heter [Bygge en app som benytter data som sendes fra Finance and Operations-apper](#building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps). 
-        - Fra og med versjon 10.0.19 blir også den gjeldende juridiske enheten sendt som kontekst til lerretsappen via URL-parameteren **cmp**. Dette vil ikke ha noen innvirkning på mållerretsappen før appen benytter seg av denne informasjonen. 
-    - Velg **programstørrelsen** som samsvarer med apptypen du bygger inn. Velg **Tynn** for apper bygget for mobilenheter, og **Bred** for apper bygget for nettbrett. Dette sørger for at tilstrekkelig mengde plass blir tildelt til den innebygde appen.
-    - Hurtigfanen **Juridiske enheter** gir muligheten til å velge hvilke juridiske enheter appen er tilgjengelig for. Standardpraksis er å gjøre appen tilgjengelig for alle juridiske enheter. Dette alternativet er bare tilgjengelig når funksjonen [Lagrede visninger](saved-views.md) er deaktivert. 
+    - Hvis appen åpnes ved hjelp av **Power Apps**-menyknappen, kan du også velge **Power Apps**-menyknappen i standardhandlingsruten, og deretter velger du **Legg til en app**.
 
-4. Når du har bekreftet at konfigurasjonen er riktig, klikker du **Sett inn** for å bygge inn PowerApp på siden. Du blir bedt om å oppdatere leseren for å vise den innebygde appen.
+3. Konfigurer den innebygde appen. Hvis du vil ha mer informasjon, kan du se delen [Konfigurer en lerretsapp](#configuring-a-canvas-app) senere i dette emnet.
+4. Når du har bekreftet at konfigurasjonen er riktig, velger du **Sett inn**.
+
+    - Hvis funksjonen **Lagrede visninger** er slått av, blir du bedt om å oppdatere webleseren for å se den innebygde appen.
+    - Hvis funksjonen **Lagrede visninger** er aktivert, må du lagre visningen for at endringen skal vedvare.
+
+### <a name="embedding-a-canvas-app-as-a-full-page-experience-from-the-dashboard"></a>Bygg inn en lerretsapp som en helsideopplevelse fra instrumentbordet
+
+Det kan hende at du vil bygge inn en lerretsapp fra instrumentbordet hvis appen ikke er relatert til en eksisterende side, eller hvis du bare vil legge inn appen som en fullsideopplevelse i Finance and Operations-appen.
+
+> [!NOTE]
+> Du må aktivere funksjonen **Fullsideapper** i funksjonsadministrasjon for å gjøre denne funksjonen tilgjengelig. 
+
+1. Åpne instrumentbordet.
+2. Velg og hold siden nede (eller høyreklikk), velg **Tilpass**, og velg deretter **Legg til en side**.
+3. I ruten **Legg til en side** velger du **Power Apps**.
+4. Konfigurer den innebygde appen. Hvis du vil ha mer informasjon, kan du se delen [Konfigurer en lerretsapp](#configuring-a-canvas-app) senere i dette emnet.
+5. Velg **Lagre** for å legge til appen på instrumentbordet som en ny flis.
+6. Velg den nye flisen på instrumentbordet, og bekreft at lerretsappen vises som forventet.
+
+### <a name="configuring-a-canvas-app"></a>Konfigurer en lerretsapp
+
+Når du bygger inn en lerretsapp, må du angi følgende parametere:
+
+- **Navn** – Angi teksten som skal vises for knappen eller fanen som skal inneholde den innebygde appen. Ofte vil du kanskje gjenta navnet på appen i dette feltet.
+- **App-ID** – Angi GUID-en (globalt unik identifikator) for lerretsappen du vil bygge inn. Hvis du vil hente denne verdien, finner du appen på [make.powerapps.com](https://make.powerapps.com), og deretter ser du i feltet **App-ID** under **Detaljer**.
+- **Inndatakontekst for app** – Du kan også velge feltet som inneholder dataene du vil sende til appen som inndata. Hvis du vil ha mer informasjon om hvordan appen får tilgang til data som er sendt fra Finance and Operations-apper, kan du se delen [Bygg en app som benytter data som sendes fra Finance and Operations-apper](#building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps) senere i dette emnet.
+
+    Fra og med versjon 10.0.19 blir også den gjeldende juridiske enheten sendt som kontekst til lerretsappen via URL-parameteren **cmp**. Denne virkemåten vil ikke påvirke lerretsappen før appen bruker denne informasjonen.
+
+- **Appstørrelse** – Velg typen app du bygger inn. Velg **Tynn** for apper som er bygd for mobilenheter, eller **Bred** for apper som er bygd for nettbrett. Denne parameteren sørger for at nok plass blir tildelt til den innebygde appen.
+- **Juridiske enheter** – Du kan velge de juridiske enhetene som appen skal være tilgjengelig for. Som standard er appen tilgjengelig for alle juridiske enheter. Dette alternativet er bare tilgjengelig når du bygger inn direkte på en eksisterende side, og funksjonen **[Lagrede visninger](saved-views.md)** er deaktivert.
 
 ## <a name="sharing-an-embedded-app"></a>Dele en innebygd app
 
-Når du har bygd inn en lerretsapp på en side og bekreftet at det fungerer med enhver datakontekst sendt fra siden, kan det hende at du vil dele appen med andre brukere i systemet. Følg disse trinnene for å dele en innebygd lerretsapp.
+Når du har bygd inn en lerretsapp på en side og bekreftet at den fungerer som den skal, kan det hende at du vil dele appen med andre brukere i systemet. Følg disse trinnene for å dele en innebygd lerretsapp.
 
-1. [Del lerretsappen](/powerapps/maker/canvas-apps/share-app) med de riktige brukerne, slik at de får tilgang til appen i Power Apps. 
+1. [Del lerretsappen i Power Apps](/powerapps/maker/canvas-apps/share-app) med de aktuelle brukerne, slik at de kan få tilgang til appen direkte i Power Apps.
+2. Del tilpasningene som er knyttet til den innebygde appen, med de ønskede brukerne. Du kan bruke en av følgende tilnærminger:
 
-2. Kontroller at de angitte brukerne har de riktige tilpasningene, slik at den innebygde appen vises når disse brukerne viser siden. Du kan bruke en av følgende tilnærminger:
+    - **Publiser visningen (anbefalt):** Hvis funksjonen **[Lagrede visninger](saved-views.md)** er aktivert, er den anbefalte og foretrukne tilnærmingen å opprette en visning som omfatter den innebygde appen, og deretter publisere visningen til de ønskede brukerne. Denne fremgangsmåten sikrer at alle brukere som har sikkerhetsroller som er målrettet av den publiserte visningen, vil se lerretsappen på siden.
 
-    - Anbefalt: Bruk [Lagrede visninger](saved-views.md)-funksjonen for å opprette og publisere en visning som inneholder den innebygde appen. Denne fremgangsmåten sikrer at alle brukere som har sikkerhetsroller som er målrettet av den publiserte visningen, vil se appen i Finance and Operations-apper. 
-    - Hvis du ikke har aktivert funksjonen for lagrede visninger, kan du få systemadministrator til å pushe en personalisering som inkluderer den innebygde appen for alle brukere eller et delsett av brukere. Du kan også eksportere personlige tilpasninger for siden og sende dem til én eller flere brukere. Hver av disse brukerne kan deretter importere tilpasningene. Tilpasning-verktøylinjen inneholder handlinger som lar deg eksportere og importere tilpasninger. 
-    
+        Du kan også publisere en lerretsapp som er innebygd som en helsideopplevelse fra instrumentbordet. Velg og hold (eller høyreklikk) flisen som er tilknyttet appen, på instrumentbordet, velg **Tilpass**, og velg deretter **Publiser side**. En opplevelse som ligner på *publiseringsvisninger* vises, og du kan velge sikkerhetsrollene du vil publisere til. Hvis funksjonen **Forbedret støtte for juridiske enheter for lagrede visninger**, i oppdatering 10.0.21 eller senere, er aktivert, kan du også publisere appen til de ønskede juridiske enhetene.
+
+    - Hvis funksjonen **Lagrede visninger** er deaktivert, kan systemadministratoren gi en tilpasning som inkluderer lerretsappen, til det aktuelle settet med brukere via **Tilpasning**-siden. Du kan også eksportere personlige tilpasninger for siden og sende dem til én eller flere brukere. Hver av disse brukerne kan deretter importere tilpasningen. Tilpasning-verktøylinjen inneholder knapper som lar deg eksportere og importere tilpasninger.
+
 > [!NOTE]
 > Hvis lerretsappen er delt med eksterne brukere, kan ikke disse brukerne bruke den innebygde appen i Finance and Operations-apper. De kan imidlertid få tilgang til appen direkte i Power Apps. Eksterne brukere inkluderer gjester og brukere som ikke hører til i Microsoft 365 Azure Directory der Finance and Operations-appen distribueres.
 
@@ -103,16 +133,18 @@ Følg denne fremgangsmåten for å redigere konfigurasjonen av en innebygd app:
 
 1. Gå til **Rediger appen**-ruten.
 
-    - Hvis den innebygde appen er tilgjengelig via Power Apps-menyknappen, høyreklikker du på Power Apps-menyknappen og velger **Tilpass**. Velg appen du vil konfigurere, fra rullegardinlisten **Velg en app**.
+    - Hvis den innebygde appen er tilgjengelig via Power Apps-menyknappen, velger du og holder (eller høyreklikker på) Power Apps-menyknappen og velger **Tilpass**. Velg appen du vil konfigurere, fra rullegardinlisten **Velg en app**.
     - Hvis den innebygde appen vises direkte på siden, velger du **Alternativer**, og deretter velger du **Tilpass denne siden**. Ved hjelp av verktøyet **Velg** klikker du den innebygde appen.
+    - Hvis den innebygde appen ble lagt til fra instrumentbordet, åpner du instrumentbordet, velger og holder (eller høyreklikker på) flisen som er knyttet til lerretsappen, velger **Tilpass** og velger deretter **Rediger side**.
 
 2. Gjør nødvendige endringer i appkonfigurasjonen, og klikk deretter på **Lagre**.
 
 ## <a name="removing-an-app"></a>Fjerne en app
 
-Når en app er innebygd på en side, er det to måter å fjerne den på om nødvendig:
+Når en app er innebygd på en side, er det noen måter å fjerne den på om nødvendig:
 
 - Gå til ruten **Rediger en app** ved hjelp av instruksjonene fra delen [Redigere en innebygd app](#editing-an-embedded-app) tidligere i dette emnet. Bekreft at ruten viser informasjon for den innebygde app som du vil fjerne, og klikk deretter på **Slett**-knappen.
+- Hvis den innebygde appen ble lagt til fra instrumentbordet, åpner du instrumentbordet, velger og holder (eller høyreklikker på) flisen som er knyttet til lerretsappen, velger **Tilpass** og velger deretter **Fjern side**. 
 - Fordi den innebygde appen lagres som tilpasningsdata, vil fjerning av sidetilpasningen også fjerne alle innebygde apper på denne siden. Legg merke til at fjerning av personlige data på siden er permanent og ikke kan angres. Hvis du vil fjerne tilpasningene dine på en side, velger du **Alternativer**, velger deretter **Tilpass denne siden**, og velger til slutt **Tøm**-knappen. Når du har oppdatert leseren, er alle tidligere tilpassinger for denne siden fjernet. Se [Tilpasse brukeropplevelsen](personalize-user-experience.md) for mer informasjon om hvordan du optimaliserer sider ved hjelp av tilpassing.
 
 ## <a name="appendix"></a>Tillegg
@@ -120,7 +152,6 @@ Når en app er innebygd på en side, er det to måter å fjerne den på om nødv
 ### <a name="developer-modeling-a-canvas-app-on-a-form"></a>[Utvikler] Modellere en lerretsapp på et skjema
 
 Mens dette emnet fokuserer på å bygge inn lerretsapper innen personalisering, har utviklerne også muligheten til å legge til en lerretsapp i et skjema ved hjelp av Visual Studio-utviklingserfaringen. Du gjør dette ved å legge til en PowerAppsHostControl i skjemaet. Metadataegenskapene som er tilgjengelige for kontrollen, har de samme egenskapene som tilpasningserfaringen.
-
 
 ### <a name="developer-specifying-where-an-app-can-be-embedded"></a>[Utvikler] Angi hvor en app kan bygges inn
 
@@ -149,6 +180,5 @@ public final class ClassTest_Extension
     }
 }
 ```
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

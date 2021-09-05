@@ -2,7 +2,7 @@
 title: Økonomisk analyse
 description: Økonomisk analyse bruker Microsoft Power BI til å sette sammen økonomiske nøkkelindikatorer (KPI-er), diagrammer og regnskapsoppgjør.
 author: kweekley
-ms.date: 04/22/2021
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 4937235dddaf5c1c8d6d504542f161fa232c86213eb6ac4274349e02d18fb8b3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4dc6cb7c0d6c04371ada611626415d87e9f149f0
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767833"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416311"
 ---
 # <a name="financial-analysis"></a>Økonomisk analyse
 
@@ -36,9 +36,9 @@ ms.locfileid: "6767833"
 > - **Side** – En kategori i en enkelt .pbix-fil. Hver side kan inneholde én eller flere visuelle effekter.
 > - **Visuelt** – Én enkelt kilde med data, for eksempel kort, KPI, diagram, graf, matrise og regnskapsoppgjør. En side som har et regnskapsoppgjør som en visuell effekt, kan ikke ha flere andre visuelle effekter på grunn av størrelsen på dataene som rapporteres.
 
-For øyeblikket brukes **økonomisk analyse** til å vise data for den aktive juridiske enheten eller alle juridiske enheter. I fremtidige versjoner utvikles arbeidsområdet til et sted der du kan bruke Power BI til å redigere og opprette visuelle effekter.
+Arbeidsområdet **Økonomisk analyse** er fokusert på å la deg vise og filtrere dataene på eksisterende rapporter. Du kan legge til nye visuelle effekter i arbeidsområdet **Økonomisk analyse**. Arbeidsområdet **Økonomisk analyse** er tilgjengelig for det gjeldende firmaet og alle firmaer for å vise data for alle juridiske enheter, uansett hvilke juridiske enheter rollen har tilgang til.
 
-Arbeidsområdet **CFO-oversikt** viser samme visuelle effekter som **Økonomisk analyse**, men fokuserer på at du kan vise og filtrere dataene i eksisterende rapporter. I fremtidige versjoner vil du kunne legge til nye visuelle effekter i arbeidsområdet **Økonomisk analyse**. De nye visuelle effektene kan også være tilgjengelige i arbeidsområder som fokuserer på andre roller, for eksempel prosjektledere eller regnskapssjefer for leverandørreskontro. **CFO-oversikt**-arbeidsområdet fortsetter å vise data for alle juridiske enheter, uavhengig av de juridiske enhetene som rollen har tilgang til.
+- [Legg til eller rediger visuelle Power BI-effekter på instrumentbordet](/powerapps-docs/user/add-powerbi-dashboards.md)
 
 ## <a name="dynamics-365-finance-setup"></a>Oppsett av Dynamics 365 Finance
 **Økonomimodul**

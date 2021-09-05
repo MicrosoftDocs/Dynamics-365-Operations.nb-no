@@ -1,8 +1,8 @@
 ---
 title: Vanlige spørsmål om integrasjon med Finance
-description: Denne artikkelen beskriver hvilke data som synkroniseres i en integrasjon med Human Resources og Finance.
-author: andreabichsel
-ms.date: 02/03/2020
+description: Dette emnet beskriver hvilke data som synkroniseres i en integrasjon med Human Resources og Finance.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -11,15 +11,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3f6a3141f1c7f4e488af0318569118be10da106a035f29e1752f0a0da5a1637f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8c368f916a199c7472f6f886d143048487a38ecc
+ms.sourcegitcommit: 7e32e5e39e762a4b1606161cb603a450d13b5251
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782150"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "7413417"
 ---
 # <a name="integration-with-finance-faq"></a>Vanlige spørsmål om integrasjon med Finance
 
@@ -158,8 +158,7 @@ Kontroller at du velger Dynamics 365 Finance og Dataverse når du oppretter tilk
 
 ## <a name="when-syncing-employments-i-get-the-errors-companyinfo_fk-doesnt-exist-or-the-value-12312154-115959-pm-in-field-employment-end-date-is-not-found-in-the-related-table-employment-what-should-i-do"></a>Under synkronisering av distribusjoner får jeg feilen "CompanyInfo_FK finnes ikke" eller "Verdien '12/31/2154 11:59:59 pm' i feltet 'Sluttdato for ansettelse' finnes ikke i den relaterte tabellen 'Ansettelse'". Hva gjør jeg?
 
-Kontroller at du tilordner til de riktige juridiske enhetene. Den juridiske enheten er ikke en del av standardmalen, så det forventes at hver juridiske enhet som finnes i Human Resources og Dataverse, også finnes i Finance.
-Kontroller også at du velger de riktige juridiske enhetene for det tilknyttede tilkoblingssettet.
+Kontroller at du tilordner til de riktige juridiske enhetene. Den juridiske enheten er ikke en del av standardmalen, så det forventes at hver juridiske enhet som finnes i Human Resources og Dataverse, også finnes i Finance. Kontroller også at du velger de riktige juridiske enhetene for det tilknyttede tilkoblingssettet.
 
 ## <a name="after-setting-up-my-project-the-field-mapping-for-finance-appears-to-be-empty-what-should-i-do"></a>Når jeg har definert prosjektet, ser det ut til at felttilordningen for Finance er tomt. Hva gjør jeg?
 

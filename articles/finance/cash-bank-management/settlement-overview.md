@@ -1,8 +1,8 @@
 ---
 title: Oversikt over utligning
 description: Dette emnet inneholder generell informasjon om utligningsprosessen. Den beskriver hvilke transaksjonstyper som kan utlignes, og tidsberegningen og prosessen for å utligne dem. Den beskriver også resultatene av utligningsprosessen.
-author: kweekley
-ms.date: 04/10/2020
+author: panolte
+ms.date: 07/30/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,16 +17,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 30a96b377d70c74a29e9e90699ccb077c727b20758378b5336660c6c056c6022
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6b4a4fd0756a4516b0c14e136730d21d062a106a
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6755696"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344817"
 ---
 # <a name="settlement-overview"></a>Oversikt over utligning
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
 
 Dette emnet inneholder generell informasjon om utligningsprosessen. Den beskriver hvilke transaksjonstyper som kan utlignes, og tidsberegningen og prosessen for å utligne dem. Den beskriver også resultatene av utligningsprosessen.
 
@@ -74,9 +76,25 @@ Utligninger kan også generere transaksjoner. Utligningen av en faktura og en be
 
 Når du prøver å utligne en transaksjon, kan det hende at du legger merke til et symbol som angir at transaksjonen er merket et annet sted. I dette tilfellet kan du velge transaksjonen på siden **Utligne transaksjoner** og deretter velge **Forespørsel \> Utligning fra utligningsvinduet**. Visningen for denne forespørselen viser journaler, salgsordrer, fakturaer, betalingsforslag og kundelokasjoner som kanskje blokkerer transaksjonen fra utligning. Hvis du vil løse problemet, kan du velge koblingen for å gå direkte fra forespørselen til den blokkerte plasseringen. Du kan deretter oppdatere dokumentet med justeringene som kreves for å utligne det. Du kan også bruke **Merket**-indikatoren til å identifisere andre dokumenter som er inkludert i samme blokkeringslokasjon.
 
+## <a name="resolve-issues-with-transactions-that-cant-be-settled"></a>Løs problemer med transaksjoner som ikke kan utlignes
+
+Noen ganger kan du ikke utligne transaksjoner fordi en annen aktivitet for tiden behandler dokumentet. Hvis du prøver å utligne transaksjonene, oppstår det en feil fordi disse transaksjonene blir brukt. Du kan løse dette problemet ved å bruke siden **Merkede transaksjonsdetaljer** til å finne transaksjoner som er merket for utligning, og identifisere alle andre prosesser som gir tilgang til dem.
+
+Transaksjoner er merket for utligning enten når leverandørfakturaer betales, eller når kunder betaler sine åpne fakturaer. Noen ganger kan det hende at disse fakturaene allerede er merket for utligning. Brukerne kan derfor ikke velge dem for betaling. Fakturaene kan være merket av en annen journal for kundebetaling, salgsordre, leverandørbetalingsjournal eller bestilling i gjeldende juridisk enhet eller en annen juridisk enhet.
+
+Hvis en transaksjon er blokkert for utligning når du angir en kundebetaling, åpner du siden **Kundemerkede transaksjonsdetaler** (**Kundereskontro \> Periodiske oppgaver \> Kundemerkede transaksjonsdetaler**). Du kan raskt identifisere hvor en transaksjon er blokkert, ved å angi følgende valgparametere: **Kundekonto**, **Bilag**, **Dato** eller **Faktura**. Hvis du ikke angir noen utvalgsparametere, viser systemet alle blokkerte dokumenter fra gjeldende firma eller et annet firma som du velger. Når transaksjonen som er blokkert for utligning, er identifisert, kan du velge den og deretter velge **Fjern markering av valgte transaksjoner**. Den valgte transaksjonen fjernes deretter fra alle journaler som inkluderer den. Dokumentet fjernes imidlertid ikke fra den andre lokasjonen. Bare merkingsinformasjonen blir fjernet fra denne journalen.
+
+Hvis en transaksjon er blokkert for utligning når du angir en leverandørbetaling, åpner du siden **Leverandørmerkede transaksjonsdetaler** (**Leverandørreskontro \> Periodiske oppgaver \> Leverandørmerkede transaksjonsdetaler**). Du kan raskt identifisere hvor en transaksjon er blokkert, ved å angi følgende valgparametere: **Leverandørkonto**, **Bilag**, **Dato** eller **Faktura**. Hvis du ikke angir noen utvalgsparametere, viser systemet alle blokkerte dokumenter fra gjeldende firma eller et annet firma som du velger. Når transaksjonen er identifisert, kan du velge den og deretter velge **Fjern markering av valgte transaksjoner** for å løse problemet med blokkeringen. Den valgte transaksjonen fjernes deretter fra alle andre journaler der den er valgt. Dokumentet fjernes imidlertid ikke fra den andre lokasjonen. Bare merkingsinformasjonen blir fjernet fra denne journalen.
+
+Hvis du vil identifisere alle blokkerte dokumenter, åpner du siden **Alle merkede transaksjonsdetaljer** (**Kundereskontro \> Periodiske oppgaver \> Alle merkede transaksjonsdetaljer** eller **Leverandørreskontro \> Periodiske oppgaver \> Alle merkede transaksjonsdetaljer**). Du kan raskt identifisere hvor en transaksjon er blokkert, ved å angi følgende valgparametere: **Kundekonto**, **Leverandørkonto**, **Bilag**, **Dato** eller **Faktura**. Hvis du ikke angir noen utvalgsparametere, viser systemet alle blokkerte dokumenter fra gjeldende firma eller et annet firma som du velger. Når transaksjonen er identifisert, kan du velge den og deretter velge **Fjern markering av valgte transaksjoner** for å løse problemet med blokkeringen. Den valgte transaksjonen fjernes deretter fra alle andre journaler der den er valgt. Dokumentet fjernes imidlertid ikke fra den andre lokasjonen. Bare merkingsinformasjonen blir fjernet fra denne journalen.
+
+Før du kan bruke denne funksjonen, må den være aktivert i systemet. Administratorer kan bruke **Funksjonsbehandling**-arbeidsområdet til å kontrollere funksjonsstatusen og aktivere den hvis den kreves. Funksjonen vises på følgende måte:
+
+- **Modul:** Kontant- og bankbehandling
+- **Funksjonsnavn:** Skjema for merkede transaksjonsdetaljer
+
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 - [Utlign rest](settle-remainder.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

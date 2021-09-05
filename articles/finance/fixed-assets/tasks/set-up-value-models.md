@@ -1,8 +1,8 @@
 ---
 title: Definere verdimodeller
 description: Denne fremgangsmåten viser hvordan du oppretter et nytt anleggsmiddeltablå og knytter det til en anleggsmiddelgruppe.
-author: saraschi2
-ms.date: 08/29/2018
+author: moaamer
+ms.date: 08/12/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,19 +13,20 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 923c3d0c7a2d54f616452a8b927681603f4955c2d7e5ff306971561b73355743
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 46c26e5fad3c5c60d87c2fea2b29043c69b82b5d
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741542"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344664"
 ---
 # <a name="set-up-value-models"></a>Definere verdimodeller
 
 [!include [banner](../../includes/banner.md)]
+[!include [preview banner](../../includes/preview-banner.md)]
+
 
 Denne fremgangsmåten viser hvordan du oppretter et nytt anleggsmiddeltablå og knytter det til en anleggsmiddelgruppe. Den bruker regnskapsførerrollen og demodataene for den juridiske enheten USMF.
-
 
 ## <a name="create-a-book"></a>Opprette et tablå
 1. Gå til Anleggsmidler > Oppsett > Tablåer.
@@ -48,9 +49,10 @@ Denne fremgangsmåten viser hvordan du oppretter et nytt anleggsmiddeltablå og 
 1. Klikk Anleggsmiddelgrupper.
 2. Angi eller velg en verdi i feltet Anleggsmiddelgruppe.
 3. Angi et tall i Levetid-feltet.
-    * Merk at Avskrivningsperioder beregnes etter at levetiden er angitt.  
-    * Du kan angi avskrivningskonvensjonen etter behov for skatte-og avgiftsformål.  
 
+  - Avskrivningsperioder beregnes etter at levetiden til aktivumet er angitt.  
+  - Avskrivningskonvensjonen kan angis etter behov for skatte-og avgiftsformål.
+  - For anleggsmidler som er knyttet til utleie, vil verdien i **Levetid**-feltet overstyres av det som er minst av utleieperioden i anleggsmiddeltablået eller anleggsmidlets levetid. Hvis feltet **Overføring av eierskap** er satt til **Ja** for leieboken, blir verdien i **Levetid**-feltet alltid levetiden til aktivumet.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,8 +1,8 @@
 ---
 title: Behandle levetidshendelser
 description: I løpet av den ansattes livssyklus i Microsoft Dynamics 365 Human Resources kan hver ansatt støte på forskjellige endringer av levetidshendelser.
-author: andreabichsel
-ms.date: 04/06/2020
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e6bfbb9e31a7d8973c2b993f3792a7216f41924e0ff4c24b08c0dd954ab327c7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 688a47d77dbd75ecd12af23f22a1d401703ed672
+ms.sourcegitcommit: 4f9c889e5cf72f34dd9746a322f8c0d6b983037b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775023"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "7417554"
 ---
 # <a name="process-life-events"></a>Behandle levetidshendelser
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-I løpet av den ansattes livssyklus i Microsoft Dynamics 365 Human Resources kan hver ansatt støte på forskjellige endringer av levetidshendelser. For eksempel giftermål, endring i ansettelse eller endring av avhengig/mottaker. Hvis du vil bruke levetidhendelser, må du aktivere levetidshendelser i skjemaet for fordelsparametere, definere livshendelsestyper og konfigurere livshendelsesalternativer for plantyper.
+I løpet av den ansattes livssyklus i Microsoft Dynamics 365 Human Resources kan hver ansatt støte på forskjellige endringer av levetidshendelser. For eksempel giftermål, endring i ansettelse eller endring av avhengig/mottaker. Hvis du vil bruke levetidhendelser, må du aktivere levetidshendelser på siden **Fordelsparametere**, definere livshendelsestyper og konfigurere livshendelsesalternativer for plantyper.
 
 Før du kan behandle livshendelser, må du allerede kjøre åpen registrering minst én gang i løpet av en tidsramme for ansettelsen. I USA blir det vanligvis åpen registrering én gang per år. Utenfor USA kan åpen registrering kjøres på ansettelsestidspunktet. En arbeider trenger ikke å velge en fordelsplan for at levetidshendelser skal behandles, men de må være inkludert i åpen registreringsbehandling. 
 

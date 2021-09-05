@@ -1,8 +1,8 @@
 ---
 title: Konfigurere selvbetjening for ansatte
 description: I Microsoft Dynamics 365 Human Resources kan du konfigurere fliser for navigasjon på øverste nivå i Ansattselvbetjening.
-author: andreabichsel
-ms.date: 04/06/2020
+author: twheeloc
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: cafd89d30ca3876953df099e2e7b7cc9c3e1fdc0f69bb039310434f8d770f6f1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 92a788dd436f4efc16946a47731c9dbce36ab0e9
+ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721589"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "7423324"
 ---
 # <a name="configure-employee-self-service"></a>Konfigurere selvbetjening for ansatte
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-I Microsoft Dynamics 365 Human Resources kan du konfigurere fliser for navigasjon på øverste nivå i Ansattselvbetjening. Fordelsplanfliser dirigerer brukere til fordelsplaner de er berettiget for.
+I Microsoft Dynamics 365 Human Resources kan du konfigurere fliser for navigasjon på øverste nivå i **Ansattselvbetjening**. Fordelsplanfliser dirigerer brukere til fordelsplaner de er berettiget for.
 
 ## <a name="set-up-a-benefit-plans-tile"></a>Definere en fordelsplanflis
 
@@ -39,9 +39,9 @@ I Microsoft Dynamics 365 Human Resources kan du konfigurere fliser for navigasjo
    | Felt | Beskrivelse |
    | --- | --- |
    | **Flis-ID** | Den unike ID-en for flisen. |
-   | **Etikettekst for flis** | Teksten som vises for flisen i selvbetjeningen. |
+   | **Etikettekst for flis** | Teksten som vises for flisen i **Ansattselvbetjening**. |
    | **Beskrivelse** | En beskrivelse av flisen. |
-   | **Internett-adresse** | Skriv inn URL-adressen til siden Ansattselvbetjening. |
+   | **Internett-adresse** | Skriv inn URL-adressen til siden **Ansattselvbetjening**. |
    | **Flisstørrelse** | Størrelsen på flisen: liten, middels eller stor. |
    | **Mål** | Angir om siden skal åpnes i et nytt vindu eller det gjeldende vinduet. |
    | **Bilde for flisbakgrunn** | URL-adressen for bildet som skal brukes for flisen (valgfritt). |
@@ -61,9 +61,9 @@ I Microsoft Dynamics 365 Human Resources kan du konfigurere fliser for navigasjo
    | Felt | Beskrivelse |
    | --- | --- |
    | **Flis-ID** | Den unike ID-en for flisen. |
-   | **Etikettekst for flis** | Teksten som vises for flisen i selvbetjeningen. |
+   | **Etikettekst for flis** | Teksten som vises for flisen i **Ansattselvbetjening**. |
    | **Beskrivelse** | En beskrivelse av flisen. |
-   | **Internett-adresse** | Skriv inn URL-adressen til siden Ansattselvbetjening. |
+   | **Internett-adresse** | Skriv inn URL-adressen til siden **Ansattselvbetjening**. |
    | **Flisstørrelse** | Størrelsen på flisen: liten, middels eller stor. |
    | **Mål** | Angir om siden skal åpnes i et nytt vindu eller det gjeldende vinduet. |
    | **Bilde for flisbakgrunn** | URL-adressen for bildet som skal brukes for flisen (valgfritt). |

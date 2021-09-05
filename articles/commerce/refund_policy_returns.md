@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-01-21
 ms.dyn365.ops.version: Retail 10.0.9 update
-ms.openlocfilehash: 5c32156aea5f43d41b51f34b45b5b6dfedb5cad0f948924ecea9b3d89e6bb402
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4346f9eefa04688c80ce2512a7972bfd4627942c
+ms.sourcegitcommit: 53fad4d4b5fb67aa75550956ec205f456a5be01d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763698"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "7388939"
 ---
 # <a name="create-and-update-a-returns-and-refunds-policy-for-a-channel"></a>Opprette og oppdatere en retur- og refunderingspolicy for en kanal
 
@@ -42,15 +42,6 @@ Hvis du vil aktivere funksjonen for kanalreturpolicy i Commerce Headquarters, gj
 1. Søk etter funksjonen **Aktiver kanalreturpolicyer** i listen over funksjonsnavn.
 1. Velg **Aktiver nå**.
 1. På **Distribusjonsplan**-siden kjører du **1110**-jobben (global konfigurasjon) for å distribuere funksjonsendringen.
-
-## <a name="initialize-the-commerce-scheduler"></a>Initialisere handelsplanleggeren
-
-Når du har aktivert funksjonen **Aktiver kanalreturpolicy**, må du initialisere handelsplanleggeren for å sikre at endringer i funksjonsdatabasen blir lagt til via Commerce Data Exchange (CDX)-synkronisering. 
-
-Følg denne fremgangsmåten for å starte handelsplanleggeren i Commerce Headquarters.
-
-- Gå til **Retail og Commerce \> Hovedkvarteroppsett \> Handelsplanlegger \> Initialiser handelsplanlegger**. Du kan også søke etter "Initialiser handelsplanlegger".
-- I dialogboksen **Initialiser handelsplanlegger** kontrollerer du at alternativet **Slett eksisterende konfigurasjon** er satt til **Nei**, og deretter velger du **OK**.
 
 ## <a name="configure-return-policy"></a>Konfigurere returpolicy
 

@@ -1,8 +1,9 @@
 ---
 title: Oversikt over regnskapsintegrering for handelskanaler
 description: Dette emnet gir en oversikt over funksjonene for regnskapsintegrering som er tilgjengelige i Dynamics 365 Commerce.
-author: josaw
-ms.date: 02/01/2019
+author: EvgenyPopovMBS
+manager: annbe
+ms.date: 08/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,26 +16,26 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 6545f3ee488cdd98530839f546ca2e6a434194437dfa98712a1a6ac3407afdbf
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 35612714f9443f1f37b744d87eda373df84aaadd
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733947"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343293"
 ---
 # <a name="overview-of-fiscal-integration-for-commerce-channels"></a>Oversikt over regnskapsintegrering for handelskanaler
 
 [!include [banner](../includes/banner.md)]
 
-## <a name="introduction"></a>Innledning
+Dette emnet er en oversikt over funksjonene for regnskapsintegrering som er tilgjengelige i Dynamics 365 Commerce. 
 
-Dette emnet er en oversikt over funksjonene for regnskapsintegrering som er tilgjengelige i Dynamics 365 Commerce. Regnskapsintegrering omfatter integrering med ulike regnskapsenheter og -tjenester som gir mulighet for bilagsregistrering av salg i samsvar med lokale regnskapslover som er rettet mot å hindre avgiftssvindel i detaljhandelen. Her er noen vanlige scenarier som kan dekkes ved å bruke regnskapsintegrering:
+Regnskapsintegrering omfatter integrering med ulike regnskapsenheter og -tjenester som gir mulighet for bilagsregistrering av salg i samsvar med lokale regnskapslover som er rettet mot å hindre avgiftssvindel i detaljhandelen. Her er noen vanlige scenarier som kan dekkes ved å bruke regnskapsintegrering:
 
 - Registrer et salg på en regnskapsenhet som er koblet til salgsstedet, for eksempel en bilagsskriver, og skriv ut en bilagskvittering for kunden.
 - Send informasjon som er knyttet til salg og returer som er fullført i Retail POS, sikkert til en ekstern webtjeneste som styres av skattemyndighetene.
 - Bidra til å sikre at salgstransaksjonsdata ikke kan endres, gjennom digitale signaturer.
 
-Funksjonen for regnskapsintegrering er et rammeverk som gir en felles løsning for videre utvikling og tilpassing av integreringen mellom Retail POS og regnskapsenheter og -tjenester. Funksjonen inneholder også eksempler på regnskapsintegrering som støtter grunnleggende scenarioer for bestemte land eller områder, og som fungerer med bestemte regnskapsenheter eller -tjenester. Et eksempel på regnskapsintegrering består av flere utvidelser for handelskomponenter og er inkludert i software development kit (SDK). Hvis du vil ha mer informasjon om eksemplene på regnskapsintegrering, kan du se [Eksempler på regnskapsintegrering i SDK for Retail](#fiscal-integration-samples-in-the-retail-sdk). Hvis du vil ha informasjon om hvordan du installerer og bruker Retail SDK, se [Retail SDK-arkitektur](../dev-itpro/retail-sdk/retail-sdk-overview.md).
+Funksjonen for regnskapsintegrering er et rammeverk som gir en felles løsning for videre utvikling og tilpassing av integreringen mellom Retail POS og regnskapsenheter og -tjenester. Funksjonen inneholder også eksempler på regnskapsintegrering som støtter grunnleggende scenarioer for bestemte land eller områder, og som fungerer med bestemte regnskapsenheter eller -tjenester. Et eksempel på regnskapsintegrering består av flere utvidelser for handelskomponenter og er inkludert i software development kit (SDK). Hvis du vil ha mer informasjon om eksemplene på regnskapsintegrering, kan du se [Eksempler på regnskapsintegrering i SDK for Commerce](#fiscal-integration-samples-in-the-commerce-sdk). Hvis du vil ha informasjon om hvordan du installerer og bruker Commerce SDK, se [Retail SDK-arkitektur](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
 For å støtte andre scenarier som ikke støttes av et regnskapsintegreringseksempel, for å integrere Retail POS med andre regnskapsenheter eller -tjenester, eller for å oppfylle kravene til andre land eller regioner, må du enten utvide et eksisterende regnskapsintegreringseksempel eller lage et nytt eksempel ved hjelp av et eksisterende eksempel.
 
@@ -55,13 +56,13 @@ En bilagsregistreringsprosess for en bestemt salgsstedskasse er definert av en t
 Følgende eksempel viser en vanlig kjøringsflyt for bilagsregistrering for en regnskapsenhet. Flyten starter med en hendelse på salgsstedet (for eksempel fullføring av en salgstransaksjon) og implementerer følgende trinnrekkefølge:
 
 1. Salgsstedet ber om et regnskapsdokument fra CRT.
-2. CRT bestemmer om den gjeldende hendelsen krever bilagsregistrering.
-3. Basert på innstillingene for bilagsregistreringsprosessen identifiserer CRT en regnskapskobling og tilsvarende regnskapsdokumentleverandør som skal brukes i bilagsregistreringen.
-4. CRT kjører regnskapsdokumentleverandøren som genererer et regnskapsdokument (for eksempel et XML-dokument) som representerer transaksjonen eller hendelsen.
-5. POS sender regnskapsdokumentet som CRT klargjør, til en maskinvarestasjon.
-6. Maskinvarestasjonen kjører regnskapskoblingen som behandler regnskapsdokumentet, og kommuniserer den til regnskapsenheten eller -tjenesten.
-7. Salgsstedet analyserer svaret fra regnskapsenheten eller -tjenesten for å bestemme om bilagsregistreringen var vellykket.
-8. CRT lagrer svaret i kanaldatabasen.
+1. CRT bestemmer om den gjeldende hendelsen krever bilagsregistrering.
+1. Basert på innstillingene for bilagsregistreringsprosessen identifiserer CRT en regnskapskobling og tilsvarende regnskapsdokumentleverandør som skal brukes i bilagsregistreringen.
+1. CRT kjører regnskapsdokumentleverandøren som genererer et regnskapsdokument (for eksempel et XML-dokument) som representerer transaksjonen eller hendelsen.
+1. POS sender regnskapsdokumentet som CRT klargjør, til en maskinvarestasjon.
+1. Maskinvarestasjonen kjører regnskapskoblingen som behandler regnskapsdokumentet, og kommuniserer den til regnskapsenheten eller -tjenesten.
+1. Salgsstedet analyserer svaret fra regnskapsenheten eller -tjenesten for å bestemme om bilagsregistreringen var vellykket.
+1. CRT lagrer svaret i kanaldatabasen.
 
 ![Løsningsskjema.](media/emea-fiscal-integration-solution.png "Løsningsskjema")
 
@@ -117,6 +118,8 @@ En regnskapstransaksjon lagrer følgende detaljer:
 - Statusen for bilagsregistreringen: **Fullført** for vellykket registrering, **Hoppet over** hvis operatøren merket av for **Hopp over**-alternativet for en mislykket registrering, eller **Merket som registrert** hvis operatøren merket av for **Merk som registrert**.
 - Informasjonskodetransaksjoner som er knyttet til en valgt regnskapstransaksjon. Hvis du vil vise informasjonskodetransaksjonene i hurtigfanen **Finansielle transaksjoner**, velger du en regnskapstransaksjon med statusen **Hoppet over** eller **Merket som registrert**, og velger deretter **Informasjonskodetransaksjoner**.
 
+Hvis du velger **Utvidede data**, kan du også vise noen egenskaper for regnskapstransaksjonen. Listen over egenskaper som kan vises, er spesifikk for regnskapsregistreringsfunksjonaliteten som genererte regnskapstransaksjonen. Du kan for eksempel vise den digitale signaturen, det sekvensielle nummeret, identiteten til sertifikatutførelse, nummeralgoritme-ID og andre regnskapstransaksjonsegenskaper for funksjonaliteten for digital signering for Frankrike.
+
 ## <a name="fiscal-texts-for-discounts"></a>Bilagstekster for rabatter
 
 Noen land/områder har spesielle krav til ekstra tekst som må skrives på bilagskvitteringer når det brukes ulike typer rabatter. Med funksjonen for regnskapsintegrasjon kan du definere en spesiell tekst for en rabatt som skrives etter en rabattlinje på en bilagskvittering. For manuelle rabatter kan du konfigurere en bilagstekst for informasjonskoden som er angitt som **Produktrabatt**-informasjonskoden, i funksjonsprofilen for salgssted. Hvis du vil ha mer informasjon om hvordan du konfigurerer bilagstekster for rabatter, se [Konfigurere bilagstekster for rabatter](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-texts-for-discounts).
@@ -128,26 +131,29 @@ Funksjonen for regnskapsintegrasjon støtter generering av dagsoppgjørsutdrag s
 - Nye knapper som utfører tilsvarende operasjoner, må legges til skjermoppsettet for salgssted. Hvis du vil ha mer informasjon, se [Konfigurere X-/Z-regnskapsrapporter fra salgsstedet](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-xz-reports-from-the-pos).
 - I regnskapsintegreringseksemplet må disse operasjonene samsvares med tilsvarende operasjoner i regnskapsenheten.
 
-## <a name="fiscal-integration-samples-in-the-retail-sdk"></a>Eksempler på regnskapsintegrering i SDK for detaljhandel
+## <a name="fiscal-integration-samples-in-the-commerce-sdk"></a>Eksempler på regnskapsintegrering i SDK for Commerce
 
-Følgende eksempler på regnskapsintegrering er for øyeblikket tilgjengelige i SDK for Retail:
+Følgende eksempler på regnskapsintegrering er for øyeblikket tilgjengelige i SDK for Commerce:
 
-- [Eksempel på integrering av bilagsskriver for Italia](emea-ita-fpi-sample.md)
-- [Eksempel på integrering av bilagsskriver for Polen](emea-pol-fpi-sample.md)
-- [Eksempel på integrering av tjenesten for avgiftsmessig transaksjon for Østerrike](emea-aut-fi-sample.md)
-- [Eksempel på integrering av tjenesten for avgiftsmessig transaksjon for Tsjekkia](emea-cze-fi-sample.md)
+- [Eksempel på integrering av bilagsskriver for Italia](./emea-ita-fpi-sample.md)
+- [Eksempel på integrering av bilagsskriver for Polen](./emea-pol-fpi-sample.md)
+- [Eksempel på integrering av tjenesten for avgiftsmessig transaksjon for Østerrike](./emea-aut-fi-sample.md)
+- [Eksempel på integrering av tjenesten for avgiftsmessig transaksjon for Tsjekkia](./emea-cze-fi-sample.md)
 - [Eksempel på integrering med kontrollenheter for Sverige](./emea-swe-fi-sample.md)
 - [Eksempel på integrering av tjenesten for avgiftsmessig transaksjon for Tyskland](./emea-deu-fi-sample.md)
 
-Følgende funksjon for regnskapsintegrering er også tilgjengelig i detaljhandel-SDK-et, men drar for øyeblikket ikke nytte av regnskapsintegreringsrammeverket. Overføring av denne funksjonaliteten til rammeverket for regnskapsintegrering er planlagt i senere oppdateringer.
+Følgende regnskapsintegreringsfunksjonalitet implementeres også ved hjelp av rammeverket for regnskapsintegrering, men er tilgjengelig ut av boksen og innhold som ikke er inkludert i Commerce SDK:
 
+- [Avgiftsregistrering for Brasil](./latam-bra-commerce-localization.md#fiscal-registration-for-brazil)
+- [Digital signatur for Frankrike](./emea-fra-cash-registers.md)
 
-- [Digital signatur for Frankrike](emea-fra-cash-registers.md)
-- [Digital signatur for Norge](emea-nor-cash-registers.md)
+Følgende funksjon for regnskapsintegrering er også tilgjengelig i SDK for Commerce, men drar for øyeblikket ikke nytte av regnskapsintegreringsrammeverket. Overføring av denne funksjonaliteten til rammeverket for regnskapsintegrering er planlagt i senere oppdateringer.
 
-Følgende eldre funksjonalitet for økonomisk integrasjon som er tilgjengelig i Retail SDK bruker ikke rammeverket for økonomisk integrasjon og vil bli avskrevet i senere oppdateringer:
+- [Digital signatur for Norge](./emea-nor-cash-registers.md)
+
+Følgende eldre funksjonalitet for økonomisk integrasjon som er tilgjengelig i SDK for Commerce bruker ikke rammeverket for økonomisk integrasjon og vil bli avskrevet i senere oppdateringer:
 
 - [Eksempel på integrering med kontrollenheter for Sverige (eldre)](./retail-sdk-control-unit-sample.md)
-
+- [Digital signatur for Frankrike (eldre)](./emea-fra-deployment.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

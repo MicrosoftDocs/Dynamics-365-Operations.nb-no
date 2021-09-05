@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 81aac53cca91a75cde811c314bd6f7039852d32505fe6540921e17f3d1bbc7ad
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 98d6ceb794716f39c6ae47b300bdb7618a8e688b
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739316"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7345234"
 ---
 # <a name="attach-tds-tax-codes-to-tds-tax-groups-and-define-the-formula-for-calculating-tds"></a>Knytte TDS-avgiftskoder til TDS-avgiftsgrupper og definere formelen for beregning av TDS
 
@@ -55,7 +55,7 @@ Følg denne fremgangsmåten for å konfigurere en TDS-avgiftsgruppe, knytte TDS-
     > [!NOTE]
     > Feltet **Skattbart grunnlag** kan ikke settes til **Ekskl. bruttobeløp** for TDS-avgiftskoden som har prioritets-ID-en **1**.
 
-12. TDS-beregningen er basert på formelen som er definert i feltet **Beregningsuttrykk** for hver avgiftskode som er knyttet til TDS-avgiftsgruppen. Velg plusstegnet (**+**), minustegnet (**-**), multiplikasjonstegnet (**\**_) eller divisjonstegnet (_*/**) for å angi beregningsuttrykket for den valgte TDS-avgiftskoden i feltet **Beregningsuttrykk**.
+12. TDS-beregningen er basert på formelen som er definert i feltet **Beregningsuttrykk** for hver avgiftskode som er knyttet til TDS-avgiftsgruppen. Velg plusstegnet (+), minustegnet (-), multiplikasjonstegnet (\*) eller divisjonstegnet (/) for å angi beregningsuttrykket for den valgte TDS-avgiftskoden i feltet **Beregningsuttrykk**.
 
     > [!NOTE]
     > Ingen beregningsuttrykk kan defineres for TDS-avgiftskoden som har prioritets-ID-en **1**.

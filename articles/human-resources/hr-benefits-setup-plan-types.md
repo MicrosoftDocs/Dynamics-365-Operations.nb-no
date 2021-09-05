@@ -1,8 +1,8 @@
 ---
 title: Oversikt over plantype
-description: En plantype i Microsoft Dynamics 365 Human Resources er en gruppering på høyt nivå av bestemte typer fordeler. Hver plantype har en plantypekode som bestemmer regler for plantypen.
-author: andreabichsel
-ms.date: 06/25/2021
+description: En plantype i Microsoft Dynamics 365 Human Resources er en gruppering på høyt nivå av bestemte typer fordeler.
+author: twheeloc
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8966b0aa01795ff00832e480a186c05fa129e7c728112f81cf4f78b6b0915463
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e5d66d205d2a987310cd592a00feb10ad0dcd90e
+ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732735"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "7423397"
 ---
 # <a name="plan-type-overview"></a>Oversikt over plantype
 
@@ -32,10 +32,10 @@ Hver plantype angir om en ansatt kan registrere seg i én plan av typen eller fl
 
 Hvis en plantype omfatter kontakter, angir plantypen om kontakter er mottakere eller avhengige. En Enkelt liv-plantype vil for eksempel ha mottakere, mens en Enkel medisin-plantype vil ha avhengige. I noen tilfeller kan det hende at en plan ikke har noen personlige kontakter. For eksempel en fleksibel forbrukskonto eller et parkeringsfradrag.
 
-En plantype kan definere dekningsalternativer. Dekningsalternativene er definert i skjemaet Dekningsalternativ. Et dekningsalternativ kan angi fordelsbeløpet eller hvilke kontakter som er berettiget til plantypen. Hvis kontakttypen for eksempel er Mottaker, bør dekningsalternativet definere vilkårene for hva mottakeren kan motta når fordelen utnyttes. Hvis kontakt typen er Avhengig, bør dekningsalternativet definere forholdet mellom den avhengige og den ansatte. 
+En plantype kan definere dekningsalternativer. Dekningsalternativene er definert på siden **Dekningsalternativ**. Et dekningsalternativ kan angi fordelsbeløpet eller hvilke kontakter som er berettiget til plantypen. Hvis kontakttypen for eksempel er Mottaker, bør dekningsalternativet definere vilkårene for hva mottakeren kan motta når fordelen utnyttes. Hvis kontakt typen er Avhengig, bør dekningsalternativet definere forholdet mellom den avhengige og den ansatte. 
 
 > [!IMPORTANT]
-> Skjemaet inneholder nøkkeldata som påvirker alternativene som er tilgjengelige når en ny fordelsplan opprettes:
+> Siden inneholder nøkkeldata som påvirker alternativene som er tilgjengelige når en ny fordelsplan opprettes:
 >
 > - **Plantypekode** – Dette feltet påvirker hva som vises i kategorien **Konfigurasjon** når den faktiske fordelen er definert.  
 > - **Samtidig registrering** – Dette feltet avgjør om flere registreringer er tillatt. (For en medisinsk plan er dette feltet vanligvis satt til **Én registrering**.)

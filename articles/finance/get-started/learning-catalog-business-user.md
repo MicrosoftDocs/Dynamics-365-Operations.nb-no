@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 75fbf177cd74739b35e72f2cae56a6c46fe69540145f16c80766b3ec260e8d0b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bc4067ff395042ec30bdb6a846d12509a1436256
+ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713762"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "7402550"
 ---
 # <a name="learning-catalog-for-users-of-dynamics-365-finance"></a>Opplæringskatalog for brukere av Dynamics 365 Finance
 
@@ -32,6 +32,7 @@ Katalogen nedenfor er ordnet fra kjernekunnskap til bestemte områder, og fra de
 | [Finn ut mer om forretningsverdien til Microsoft Dynamics 365 og Power Platform](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Er du interessert i å finne ut mer om forretningsprogrammer? Kanskje du ikke vet hvor du skal begynne med Microsoft Dynamics 365 Power Platform-programmer? Lær hvordan mulighetene til forretningsprogrammer kan bidra til å forvandle virksomheten din. | Gratis, selvbetjent elektronisk læringsforløp | 8 timer |
 | [Grunnleggende om Dynamics 365 og Power Platform](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Er du interessert i å finne ut mer om forretningsprogrammer? Start med dette læringsforløpet for å se hvordan Dynamics 365-apper brukes. Finn ut mer om skybegreper, Power Platform og hvordan du kommer i gang med Dynamics 365-apper. | Gratis, selvbetjent elektronisk læringsforløp | 5.5 timer   |
 | [Komme i gang med Finance and Operations-apper](/learn/paths/get-started-finance-operations/) | Finn ut hvordan Finance and Operations-apper lar virksomheter administrere sine globale, økonomiske systemer, driftsforretningsprosesser og strømlinjeformede forsyningskjeder for å gi brukerne mulighet til å ta raske, informerte avgjørelser.   Ditt første trinn i karrieren med Finance and Operations-apper er å gjøre deg kjent med funksjonene og funksjonaliteten, uansett hvilken rolle du har. | Gratis, selvbetjent elektronisk læringsforløp | 2 timer |
+| [Komme i gang med Dynamics 365 Intelligent Order Management](/learn/modules/get-started-intelligent-order-management/) | Med Dynamics 365 Intelligent Order Management kan kunder styre sortering av ordrer frem til oppfyllelse. Ved bruk av disse funksjonene kan organisasjoner organisere ordreflyter på tvers av ulike plattformer og apper. | Gratis, selvbetjent elektronisk læringsmodul | 30 minutter |
 | [Kurs MB-900T01-A: Grunnleggende om Dynamics 365](https://www.microsoft.com/learning/course.aspx?cid=MB-900T01) | Dette kurset vil gi opplæring om Dynamics 365-funksjonalitet og forretningsverdi. Kurset dekker Dynamics 365-programmer, Power Platform, skybegreper, sikkerhetsmodellen og lisensieringshensyn. | Instruktørledet, personlig eller elektronisk opplæring. Kostnaden varierer etter område og partner. | 1 dag |
 
 ## <a name="core-platform-knowledge"></a>Kunnskap om kjerneplattform<a name="core-platform-knowledge"></a>

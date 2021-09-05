@@ -2,7 +2,7 @@
 title: Definere en B2C-leier i Commerce
 description: Dette emnet beskriver hvordan du konfigurerer Azure Active Directory (Azure AD) bedrift-til-kunde (B2C)-leietakere for godkjenning av brukerområde i Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 03/17/2021
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 13dad5f3b82914514688bfa0c7e4f82b8b85b8dd73458618d2fcfddb169927c9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 107e06d44d159152b260897dfba456a525f19e27
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772258"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344504"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Definere en B2C-leier i Commerce
 
@@ -34,6 +34,9 @@ Dynamics 365 Commerce bruker Azure AD B2C til å støtte brukerlegitimasjon og g
  
  > [!NOTE]
  > Commerce-evalueringsmiljøer leveres med en forhåndslastet Azure AD B2C-leier til demonstrasjonsformål. Det er ikke nødvendig å laste inn din egen Azure AD B2C-leier med trinnene nedenfor i evalueringsmiljøet.
+
+> [!TIP]
+> Du kan beskytte områdebrukerne ytterligere og forbedre sikkerheten til Azure AD B2C-leierne med identitetsbeskyttelse og betinget tilgang i Azure AD. Hvis du vil gå gjennom funksjonene som er tilgjengelige for Azure AD B2C Premium P1- og Premium P2-leiere, kan du se [Identitetsbeskyttelse og betinget tilgang for Azure AD B2C](/azure/active-directory-b2c/conditional-access-identity-protection-overview).
 
 ## <a name="create-or-link-to-an-existing-aad-b2c-tenant-in-the-azure-portal"></a>Opprett eller koble til en eksisterende AAD B2C-leier i Azure-portalen
 

@@ -1,8 +1,8 @@
 ---
-title: Velge en dataintegreringsteknologi
-description: Denne artikkelen inneholder informasjon om integrering med data som administreres av Human Resources. Den beskriver forskjellige typer integreringsteknologi som hjelper deg med å finne ut hvilke typer som passer best til dine behov.
-author: andreabichsel
-ms.date: 02/28/2020
+title: Velg en dataintegreringsteknologi
+description: Dette emnet inneholder informasjon om integrering med data som administreres av Human Resources.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,27 +15,26 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5f7942d08459455192f816b2a06251d0f756b8de521d958eb38a84fa2e5616d4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d58a42236b07bf177e09aee50a207ffdf2ed1435
+ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720474"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7414720"
 ---
-# <a name="choose-a-data-integration-technology"></a>Velge en dataintegreringsteknologi
+# <a name="choose-a-data-integration-technology"></a>Velg en dataintegreringsteknologi
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Denne artikkelen inneholder informasjon om integrering med data som administreres av Dynamics 365 Human Resources. Den beskriver forskjellige typer integreringsteknologi som hjelper deg med å finne ut hvilke typer som passer best til dine behov.
+Dette emnet inneholder informasjon om integrering med data som administreres av Dynamics 365 Human Resources. Den beskriver forskjellige typer integreringsteknologi som hjelper deg med å finne ut hvilke typer som passer best til dine behov.
 
 ## <a name="data-integration-background"></a>Bakgrunn for dataintegrering
 
 Forretningsdata er et viktig aktivum som gjør firmaet ditt unikt. Bedriftens data er svært verdifulle. Du kan bruke forholdene mellom data som samles inn i hele virksomheten, til å forbedre forretningsprosesser og forretningsintelligens på tvers av organisasjonen. Vi arbeider med å gi enkel, sikker og stabil tilgang til forretningsdataene dine, uansett hvilket system de kommer fra.
 
-Det har historiske sett vært vanskelig å integrere data mellom flere systemer.
-Microsoft utfører tiltak for å gjøre dataintegrering enklere, og et stort trinn i det aktuelle målet realiseres via [Dataverse](/powerapps/maker/common-data-service/data-platform-intro).
+Det har historiske sett vært vanskelig å integrere data mellom flere systemer. Microsoft utfører tiltak for å gjøre dataintegrering enklere, og et stort trinn i det aktuelle målet realiseres via [Dataverse](/powerapps/maker/common-data-service/data-platform-intro).
 
 Human Resources sørger for at Dataverse blir det foretrukne offentlige grensesnittet for Human Resources-data. Over tid forventer vi at alle de viktigste dataene som administreres av personalavdelingen, vil bli vist i Dataverse. Det anbefales Dataverse som den foretrukne teknologien for de fleste typer integrering.
 

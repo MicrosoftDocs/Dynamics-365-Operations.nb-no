@@ -2,7 +2,7 @@
 title: Tilpasse brukeropplevelsen
 description: Dette emnet forklarer hvordan du kan tilpasse appen.
 author: jasongre
-ms.date: 04/22/2021
+ms.date: 08/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8f71a94a6a5780f8a59590008f6370cb6897fa644e7fd826bacd0fb6206d159c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e3d126bf9ec5687d97dacc8763a221da656fdef1
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719307"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344380"
 ---
 # <a name="personalize-the-user-experience"></a>Tilpasse brukeropplevelsen
 
@@ -169,7 +169,7 @@ Instrumentbordet er ofte den første siden som vises når du åpner appen. Den k
 Én unik tilpasningskapasitet som er tilgjengelig på instrumentbordet, er muligheten til å legge til fliser. 
 
 - Hvis funksjonen **Helside-apper** er slått av, legger du til en ny flis ved å høyreklikke et element på instrumentbordet og deretter velge **Legg til et arbeidsområde**. En ny arbeidsområdeflis opprettes nederst på instrumentbordet. Du kan endre navn på denne nye arbeidsområdeflisen slik du vil. Du kan også legge til lister, fliser og koblinger til arbeidsområdet, som beskrevet i [Legge til fliser, lister eller koblinger i et arbeidsområde](personalize-user-experience.md#adding-tiles-lists-and-links-to-a-workspace)-delen i dette emnet.
-- Hvis funksjonen **Helside-apper** er slått på, legger du til en ny flis ved å høyreklikke et element på instrumentbordet og deretter velge **Legg til en app**. I dialogboksen velger du om du vil legge til en flis for et nytt arbeidsområde eller en flis med innhold fra Power Apps eller et nettsted. Deretter følger du trinnene for å konfigurere alternativet du valgte. En ny flis opprettes nederst på instrumentbordet. 
+- Hvis funksjonen **Helside-apper** er slått på, legger du til en ny flis ved å høyreklikke et element på instrumentbordet og deretter velge **Legg til en app**. I dialogboksen velger du om du vil legge til en flis for et nytt arbeidsområde eller en flis med innhold fra Power Apps eller et nettsted. Deretter følger du trinnene for å konfigurere alternativet du valgte. En ny flis opprettes nederst på instrumentbordet. Hvis du vil ha mer informasjon om hvordan du legger til, redigerer, sletter og deler disse innebygde appene, kan du se [Bygg inn lerretsapper fra Power Apps](embed-power-apps.md) og [Bygg inn tredjepartsapper](embed-website.md).
 
 ## <a name="sharing-personalizations"></a>Dele tilpasninger
 

@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 4811c65a32e27668d1247086d962366eb8369d5e9fe28a105e1d6a020bca325d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bd55d433b0961b8b210b9c28d7340ff880635a85
+ms.sourcegitcommit: 3af457fc216bd0020843291ca57fd379acb53c96
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737755"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "7392480"
 ---
 # <a name="associate-fixed-assets-with-leases"></a>Knytte anleggsmidler til leieavtaler
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Emnet forklarer hvordan du knytter et eksisterende anleggsmiddel til en ny leieavtale. Når du knytter et anleggsmiddel til en leieavtale, er verdien til bruksrettseiendelen ved opprinnelig føring anskaffelseskostnaden til anleggsmidlet.
 
@@ -49,8 +50,18 @@ Når du har postert journaloppføringen for opprinnelig føring, vises transaksj
 
 Anleggsmidlet kan nå avskrives ved hjelp av standard avskrivningsfunksjonalitet i Anleggsmidler. Hvis du vil ha mer informasjon om avskrivning, kan du se [Avskrivningsmetoder og -konvensjoner](../fixed-assets/depreciation-methods-conventions.md).
 
+Når en leie er knyttet til et anleggsmiddel, oppdateres **Levetid**-feltet i anleggsmiddelboken slik at det justeres til den minste verdien av følgende kriterier: 
+
+ - Anleggsmiddelets levetid
+ - Leievilkårene fra den tilknyttede leieboken
+
+Hvis feltet **Overføring av eierskap** er satt til **Ja** for leieboken, blir verdien i **Levetid**-feltet alltid levetiden til aktivumet. 
+ 
+Levetiden blir oppdatert hver gang leien justeres for å sikre at bruksrettseiendelen blir avskrevet i løpet av leieperioden, som om det ble avskrevet i leie av anleggsmidler.
+
 > [!NOTE]
 > Hvis du knytter et anleggsmiddel til en leieavtale, deaktiveres knappene **Avskrivning av anleggsmiddel** og **Verdiforringelse for leieavtale** i Aktivaleie. Du kan vise transaksjoner for avskrivning av aktiva og verdiforringelse for leieavtale fra Anleggsmidler. Knappen **Aktivatransaksjoner**, som brukes til å åpne et forespørselsskjema, blir også deaktivert. Du kan også åpne forespørselsskjemaet **Aktivatransaksjoner** i Anleggsmidler.  
 
+Sidene **Anleggsmidler** og **Anleggsmiddeltablå** viser leie-ID-en som er knyttet til et anleggsmiddel. Hvis et anleggsmiddel er knyttet til en leieavtale, vises leie-ID-en og leiebeskrivelsen i hurtigkategorien **Leieinformasjon** på **Anleggsmidler**-siden. Når det gjelder anleggsmiddelbøker som er knyttet til leiebøker, viser feltene **Leie-ID**, **Leiebeskrivelse** og **Tablåtype** informasjon om det valgte anleggsmiddeltablået på hurtigfanen **Leieinformasjon**, for å angi at den er knyttet til en leiebok.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,8 +1,8 @@
 ---
 title: Alternativer for transaksjon av anleggsmiddel
 description: Dette emnet beskriver de ulike metodene som er tilgjengelige for oppretting av anleggsmiddeltransaksjoner.
-author: ShylaThompson
-ms.date: 02/07/2019
+author: moaamer
+ms.date: 08/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b1857d68a0dfaa25386f19344e4cb3ddc9ffd39b8a75860a1642773d6bd59cce
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c9e2d7f21d8c88185383e252f8f6324208493c81
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764269"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344696"
 ---
 # <a name="fixed-asset-transaction-options"></a>Alternativer for transaksjon av anleggsmiddel
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Dette emnet beskriver de ulike metodene som er tilgjengelige for oppretting av anleggsmiddeltransaksjoner.
 
@@ -57,15 +58,17 @@ Alle typer anleggsmiddeltransaksjoner kan posteres på siden Økonomijournal. Du
 |                                     | Innkjøp og leverandører | Bestilling                            |
 | Avskrivning                        | Anleggsmidler             | Anleggsmidler                              |
 |                                     | Økonomimodul           | Økonomijournal                           |
-| Avhending                            | Anleggsmidler             | Anleggsmidler                              |
-| ** **                               | Økonomimodul           | Økonomijournal                           |
-| ** **                               | Kundereskontro      | Fritekstfaktura                         |
+| Avhending                            | Faste objekter             | Faste objekter                              |
+|                                     | Økonomimodul           | Økonomijournal                           |
+|                                     | Kundereskontro      | Fritekstfaktura                         |
 
-Den gjenværende verdien for nedskrivningsperioder for anleggsmiddelet oppdateres ikke når en journallinje for avskrivningstransaksjonstype opprettes manuelt eller importeres via en dataenhet. Denne verdien oppdateres når avskrivningsforslagsprosessen brukes til å opprette journallinjen.
+Den gjenværende verdien oppdateres ikke for nedskrivningsperioder for et anleggsmiddel når en journallinje for avskrivningstransaksjonstype opprettes manuelt eller importeres via en dataenhet. Den gjenværende verdien oppdateres når avskrivningsforslagsprosessen brukes til å opprette journallinjen.
 
 Hvis du vil ha mer informasjon, se [Integrering av anleggsmidler](fixed-asset-integration.md).
 
-### <a name="transactions-that-require-different-voucher-numbers"></a>Transaksjoner som krever ulike bilagsnumre
+Systemet hindrer postering av avskrivning til samme periode to ganger. Hvis for eksempel to brukere oppretter avskrivningsforslag separat for januar, posteres avskrivningen fra den første brukeren i den første journalen. Når den andre brukeren posterer avskrivning i den andre journalen, kontrollerer systemet datoen da avskrivningen sist ble kjørt, og vil ikke postere avskrivningen for samme periode en gang til.
+
+### <a name="transactions-that-require-a-different-voucher-number"></a>Transaksjoner som krever ulike bilagsnumre
 
 Følgende anleggsmiddeltransaksjoner bruker forskjellige bilagsnumre:
 

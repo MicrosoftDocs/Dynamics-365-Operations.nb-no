@@ -1,6 +1,6 @@
 ---
 title: Oversikt over leverandørbetaling
-description: Denne oppgaveveiledningen leder deg gjennom forskjellige metoder som brukes til å opprette leverandørbetalinger, inkludert hvordan du bruker et betalingsforslag eller angir en engangsbetaling manuelt.
+description: Denne prosedyren leder deg gjennom forskjellige metoder som brukes til å opprette leverandørbetalinger, inkludert hvordan du bruker et betalingsforslag eller angir en engangsbetaling manuelt.
 author: kweekley
 ms.date: 06/25/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 997d505cc89eaa39b2bac273a5ae381c1c892a9537cbaa9b45156ecbb6fd237c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 73fd1b46bbf73bb3e65f381289e0b3efa12392b4
+ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721833"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7394444"
 ---
 # <a name="vendor-payment-overview"></a>Oversikt over leverandørbetaling
 
 [!include [banner](../../includes/banner.md)]
 
-Denne oppgaveveiledningen leder deg gjennom forskjellige metoder som brukes til å opprette leverandørbetalinger, inkludert hvordan du bruker et betalingsforslag eller angir en engangsbetaling manuelt. Denne fremgangsmåten bruker demonstrasjonsfirmaet USMF.
+Denne prosedyren leder deg gjennom forskjellige metoder som brukes til å opprette leverandørbetalinger, inkludert hvordan du bruker et betalingsforslag eller angir en engangsbetaling manuelt. Denne fremgangsmåten bruker demonstrasjonsfirmaet USMF.
 
 1. Gå til **Navigasjonsrute > Moduler > Leverandører > Betalinger > Betalingsjournal**.
 2. Klikk på **Ny**.

@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 08ece85c773538283fa31ed72e8af61e2da03845fbaa4e6b0507a65626bce803
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 978d0dc28f86860335a782bd2ddaa141ed639fe5
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720532"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344064"
 ---
 # <a name="one-voucher"></a>Ett bilag
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 
 ## <a name="what-is-one-voucher"></a>Hva er Ett bilag?
@@ -81,7 +82,7 @@ Basert på samtaler med kunder har Microsoft kompilert følgende liste over scen
 
 Følgende scenarier kan gjennomføre bare ved hjelp av funksjonen Ett bilag. Hvis organisasjonen har noen av disse scenariene, må du aktivere flere transaksjoner som skal angis i et bilag, ved å endre innstillingen for parameteren **Tillat flere transaksjoner i ett bilag** på siden **Parametere for økonomimodul**. Disse funksjonshullene vil bli fylt med andre funksjoner i senere versjoner.
 
-> [!Note]
+> [!NOTE]
 > [For hvert av følgende scenarier må feltet **Tillat flere transaksjoner i ett bilag** settes til Ja i hurtigfanen **Generelt** på siden **Parametere for økonomimodul**.]
 
 ### <a name="post-vendor-or-customer-payments-in-summary-form-to-a-bank-account"></a>Postere leverandør- eller kundebetalinger i forenklet form til en bankkonto
@@ -115,15 +116,7 @@ I dette scenariet er kundene på enkeltbilaget den samme kunden, fordi transaksj
 Hvis refusjonens periodiske oppgave kjøres fra kundemodulen, opprettes det en transaksjon for å flytte saldoen fra en kunde til en leverandør. I dette scenariet må Ett bilag brukes til å refundere kunden.
 
 ### <a name="fixed-asset-maintenance-catch-up-depreciation-split-asset-calculate-depreciation-on-disposal"></a>Vedlikehold av anleggsmiddel: oppsamlingsavskrivning, delt anleggsmiddel, beregn avskrivning ved avhending
-Følgende anleggsmiddeltransaksjoner oppretter også flere transaksjoner i et enkelt bilag:
-
-- En ekstra anskaffelse gjøres på et anleggsmiddel og "oppsamlingsavskrivning" beregnes.
-- Et anleggsmiddel er delt.
-- En parameter for å beregne avskrivning ved avhending aktiveres, og deretter avhendes anleggsmiddelet.
-- Servicedatoen for et anleggsmiddel er før anskaffelsesdatoen. Derfor posteres en avskrivningsjustering.
-
-> [!Note]
-> Når du angir transaksjoner, må du kontrollere at alle transaksjonene gjelder det samme anleggsmidlet. Bilaget blir ikke postert hvis det inneholder mer enn ett anleggsmiddel, selv om **Nytt bilag**-feltet er satt til Bare ett bilagsnummer på **Journalnavn**-siden i økonomimodulen. Hvis du tar med flere anleggsmidler i bilaget, vises meldingen **Det kan bare være én anleggsmiddeltransaksjon per bilag**, og du vil ikke kunne postere bilaget.  
+Med versjon 10.0.21 og senere opprettes anleggsmiddeltransaksjoner for oppfangingsavskrivning, deling av et anleggsmiddel og beregning av avskrivning for avhending av et anleggsmiddel ved hjelp av ulike bilagsnumre.
 
 ### <a name="bills-of-exchange-and-promissory-notes"></a> Veksel og egenveksler
 Veksler og egenveksler krever at Ett bilag brukes, fordi transaksjonene flytter kunde- eller leverandørsaldoen fra én Kunder/Leverandører-finanskonto til en annen basert på statusen for betalingen.

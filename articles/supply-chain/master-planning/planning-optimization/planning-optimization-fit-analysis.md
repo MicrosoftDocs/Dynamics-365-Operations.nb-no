@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 52048ea6cced6f670faf13ef07f1288183e6d9b67a016608030f9e192a98faa7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fd0fdd677824db823f9bc42f0ad1bdd90cf3b16d
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751104"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344984"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Analyse for tilpassing av planleggingsoptimalisering
 
@@ -51,6 +51,9 @@ Hvis du vil se resultatet for analyse for tilpassing av planleggingsoptimaliseri
 ## <a name="overview-of-possible-results-from-the-fit-analysis"></a>Oversikt over mulige resultater fra tilpassingsanalysen
 
 Følgende tabell viser de ulike resultatene som kan vises etter en tilpassingsanalyse. Nummertegn (_\#_) erstattes med et tall som angir antallet poster som har det angitte problemet. Funksjoner som støttes eller er i forhåndsversjon, er tilgjengelige i versjon 10.0.9 eller nyere (med mindre et høyere versjonsnummer er oppført i kolonnen Forventet tilgjengelighet).
+
+> [!NOTE]
+> Noen inkonsekvenser kan ikke identifiseres av Analyse for tilpasning av planleggingsoptimalisering. For mer informasjon, se [Forskjeller mellom klassisk hovedplanlegging og planleggingsoptimalisering](planning-optimization-differences-with-built-in.md).
 
 | Funksjon | Oppført problem | Forklaring | Forventet tilgjengelighet |
 | --- | --- | --- | --- |
@@ -104,9 +107,13 @@ Følgende tabell viser de ulike resultatene som kan vises etter en tilpassingsan
 
 [Oversikt over planleggingsoptimalisering](planning-optimization-overview.md)
 
-[Komme i gang med planleggingsoptimalisering](get-started.md)
+[Kom i gang med planleggingsoptimalisering](get-started.md)
 
-[Vise planhistorikk og planleggingslogger](plan-history-logs.md)
+[Forskjeller mellom klassisk hovedplanlegging og planleggingsoptimalisering](planning-optimization-differences-with-built-in.md)
+
+[Parametere som ikke brukes av planleggingsoptimalisering](not-used-parameters.md)
+
+[Vis planhistorikk og planleggingslogger](plan-history-logs.md)
 
 [Bruke filtre på en plan](plan-filters.md)
 

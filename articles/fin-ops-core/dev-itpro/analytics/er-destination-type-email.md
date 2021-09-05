@@ -2,7 +2,7 @@
 title: Sende ER-måltype per e-post
 description: Dette emnet forklarer hvordan du konfigurerer et e-postmål for hver MAPPE- eller FIL-komponent i et ER-format (Elektronisk rapportering).
 author: NickSelin
-ms.date: 07/27/2021
+ms.date: 08/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 46817197f3b0938fb325b2b3ebefbee41b5e4583092e521e6a8dae70d78b0970
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4ee1ae4d8a106e467640a8cbcf5986e770395431
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769325"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343866"
 ---
 # <a name="email-er-destination-type"></a>Sende ER-måltype per e-post
 
@@ -53,9 +53,22 @@ Følg denne fremgangsmåten for å sende en eller flere utdatafiler med e-post.
 
 ## <a name="configure-an-email-destination"></a>Konfigurere et e-postmål
 
-Du kan angi e-postavsenderen og -mottakere, og du kan redigere emnet og brødteksten i e-postmeldingen. Du kan definere konstant tekst for e-postemnet og meldingsteksten, eller du kan bruke ER-[formler](er-formula-language.md) for å opprette e-posttekster dynamisk.
+### <a name="email-content"></a>E-postinnhold
 
-Som standard sendes det en e-post på vegne av den gjeldende brukeren. Hvis du vil angi en annen e-post sender, må du konfigurere **Fra**-feltet.
+Du kan redigere emnet og brødteksten i e-postmeldingen.
+
+I **Emne**-feltet skriver du inn teksten i e-postemnet som skal vises i emnefeltet til en elektronisk melding som genereres ved kjøretid. I **Brødtekst**-feltet skriver du inn brødteksten i e-posten som skal vises i brødtekstfeltet for en elektronisk melding. Du kan definere konstant tekst for e-postemnet og meldingsteksten, eller du kan bruke ER-[formler](er-formula-language.md) for å opprette e-posttekst ved kjøretid. Den konfigurerte formelen må returnere en verdi av typen [Streng](er-formula-supported-data-types-primitive.md#string).
+
+Teksten i e-postmeldingen skrives i testkformat eller HTML-format, avhengig av e-postklienten. Du kan bruke alle oppsett, stiler og merking som HTML og linjebundne gjennomgripende stilark (CSS) er tillatt for.
+
+> [!NOTE]
+> E-postklienter bruker oppsetts- og stilbegrensninger som kan kreve endringer i HTML-koden, og CSS som du bruker til meldingsteksten. Det anbefales at du gjør deg kjent med de anbefalte fremgangsmåtene for å opprette HTML som de mest populære e-postklientene støtter.
+>
+> Bruk riktig koding til å implementere en vognretur, avhengig av tekstformateringen. Hvis du vil ha mer informasjon, kan du se definisjonen av datatypen [Streng](er-formula-supported-data-types-primitive.md#string).
+
+### <a name="email-addresses"></a>E-postadresser
+
+Du kan angi e-postsenderen og e-postmottakerne. Som standard sendes det en e-post på vegne av den gjeldende brukeren. Hvis du vil angi en annen e-post sender, må du konfigurere **Fra**-feltet.
 
 > [!NOTE]
 > Når et e-postmål er konfigurert, er **Fra**-feltet bare synlig for brukere som har sikkerhetsprivilegium `ERFormatDestinationSenderEmailConfigure`, **Konfigurer avsender-e-postadressen for ER-formatmål**.

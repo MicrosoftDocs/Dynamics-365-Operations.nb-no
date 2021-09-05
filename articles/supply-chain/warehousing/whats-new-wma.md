@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: ivanv
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 43d1381e73d5659bfd6ae6c6d944b7e6918b681a4f89df7ad23abbed5b4a0d3c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6d98cea29f4c25319caed6680966f61c660778f0
+ms.sourcegitcommit: 3d05bb2a423fe130700686ff73daa355d15b0e09
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720090"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7386105"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Hva er nytt eller endret i mobilappen Warehouse Management
 
@@ -23,7 +23,23 @@ ms.locfileid: "6720090"
 
 Dette emnet inneholder en liste over nye funksjoner, reparasjoner, forbedringer og kjente problemer for hver utgitte versjon av mobilappen Warehouse Management for Microsoft Dynamics 365 Supply Chain Management.
 
-## <a name="2070"></a>2.0.7.0
+## <a name="version-2090"></a>Versjon 2.0.9.0
+
+Denne versjonen løser et problem der appen kan slutte å svare hvis brukere velger "Page Up" fra toppen av en liste.
+
+## <a name="version-2080"></a>Versjon 2.0.8.0
+
+Denne versjonen inneholder følgende nye funksjoner, reparasjoner og forbedringer:
+
+- Lagt til støtte for [trinninstruksjonsfunksjonen](mobile-app-titles-instructions.md) som ble lansert i Supply Chain Management versjon 10.0.21.
+- Lagt til hintanimasjon for å vise brukere at de kan lukke overlegg ved å sveipe ned.
+- Lagt til støtte for funksjonstaster på handlingslister og menyer. Brukere kan holde nede en hvilken som helst funksjonstast i tre sekunder for å få en liste over tilgjengelige kommandoer.
+- Løste et problem som forårsaket at følgende feilmelding ble vist på enkelte enheter: "Kan ikke finne en passende visning for den angitte størrelsen."
+- Løste et problem der fullskjermmodus ikke alltid fungerte når skjermtastaturet ble brukt.
+- Løste et problem der sidesveiping ikke fungerte på Windows-enheter.
+- Løste ulike problemer som førte til at systemet sluttet å svare.
+
+## <a name="version-2070"></a>Versjon 2.0.7.0
 
 ### <a name="new-features-fixes-and-improvements-in-version-2070"></a>Nye funksjoner, reparasjoner og forbedringer i versjon 2.0.7.0
 
