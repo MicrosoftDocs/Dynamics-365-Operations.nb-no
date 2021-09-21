@@ -1,8 +1,8 @@
 ---
 title: Definer årsakskoder
 description: Dynamics 365 Human Resources bruker årsaks koder til å forklare hvorfor en ansatts fordeler blir endret.
-author: andreabichsel
-ms.date: 01/25/2021
+author: twheeloc
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bd7c5a35a6d4b40eb376eee2580af681f7bfd7f8f93aab8aad67f238fc40470b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5f89d6158f351e30376fc3f80c793f29734cdcbb
+ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732687"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "7431348"
 ---
 # <a name="set-up-reason-codes"></a>Definer årsakskoder
 
@@ -29,11 +29,11 @@ ms.locfileid: "6732687"
 Dynamics 365 Human Resources bruker årsaks koder til å forklare hvorfor en ansatts fordeler blir endret.
 
 > [!NOTE]
-> Per januar 2021 migrerer årsakskoder til arbeidsområdet for **Personaladministrasjon** i stedet for arbeidsområdet for **Fordelsbehandling**. Hvis du vil ha mer informasjon, kan du se [Migrere årsakskoder manuelt til Personaladministrasjon](hr-benefits-setup-reason-codes.md#manually-migrate-reason-codes-to-personnel-management).
+> Per januar 2021 ble årsakskoder migrert til arbeidsområdet for **Personaladministrasjon** i stedet for arbeidsområdet for **Fordelsbehandling**. Hvis du vil ha mer informasjon, kan du se [Migrere årsakskoder manuelt til Personaladministrasjon](hr-benefits-setup-reason-codes.md#manually-migrate-reason-codes-to-personnel-management).
 
 ## <a name="create-reason-codes"></a>Opprette årsakskoder
 
-1. I arbeidsområdet **Personaladministrasjon** (eller **Fordelsbehandling** hvis årsakskodene ennå ikke er migrert), velger du **Koblinger**, og deretter velger du **Årsakskoder**.
+1. I arbeidsområdet **Personaladministrasjon** (eller **Fordelsbehandling** hvis årsakskodene ikke er migrert), velger du **Koblinger**, og deretter velger du **Årsakskoder**.
 
 2. Velg **Ny**.
 
@@ -44,13 +44,13 @@ Dynamics 365 Human Resources bruker årsaks koder til å forklare hvorfor en ans
    | **Årsakskode** | Et unikt navn som identifiserer årsaken til at en ansatt ville endre en fordelsplanregistrering. |
    | **Beskrivelse** | En beskrivelse av årsakskoden. |
 
-4. Under **Gjeldende scenarier** angir du **Fordelsbehandling** til **Ja**. (Gjelder ikke hvis årsakskodene enda ikke er migrert til **Personaladministrasjon**-arbeidsområdet.)
+4. Under **Gjeldende scenarier** angir du **Fordelsbehandling** til **Ja**. (Gjelder ikke hvis årsakskodene ikke er migrert til **Personaladministrasjon**-arbeidsområdet.)
 
 5. Velg **Lagre**.
 
 ## <a name="manually-migrate-reason-codes-to-personnel-management"></a>Migrere årsakskoder manuelt til Personaladministrasjon
 
-I januar 2021 migrerer årsakskoder til arbeidsområdet for **Personaladministrasjon** i stedet for arbeidsområdet for **Fordelsbehandling**. De fleste årsakskodedata migreres automatisk i miljøet ditt. Det kan hende at enkelte årsakskodedata ikke migreres. Årsakskoder har for eksempel nå en maksimumsgrense på 15 tegn, slik at alle årsakskoder som er lengre enn 15 tegn, ikke migrerer automatisk.
+I januar 2021 ble årsakskoder migrert til arbeidsområdet for **Personaladministrasjon** i stedet for arbeidsområdet for **Fordelsbehandling**. De fleste årsakskodedata migreres automatisk i miljøet ditt. Det kan hende at enkelte årsakskodedata ikke migreres. Årsakskoder har for eksempel nå en maksimumsgrense på 15 tegn, slik at alle årsakskoder som er lengre enn 15 tegn, ikke migrerer automatisk.
 
 Du vil se et banner på **Koblinger**-siden i arbeidsområdet **Fordelsadministrasjon** som informerer deg om migrering og om årsakskoder ikke migreres.
 

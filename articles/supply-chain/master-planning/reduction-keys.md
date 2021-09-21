@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 555f75df1b28d374f2a46481857902c2f9315809c082699355190c54e856899b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 32d1c7efaefaecae12031073d67b0e4c2cf78a78
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736629"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474778"
 ---
 # <a name="forecast-reduction-keys"></a>Prognosereduksjonsnøkler
 
@@ -86,7 +86,18 @@ I dette tilfellet, hvis du kjører prognoseplanlegging 1. januar, forbrukes beho
 
 ### <a name="transactions--reduction-key"></a>Transaksjoner – reduksjonsnøkkel
 
-Hvis du velger **Transaksjoner - reduksjonsnøkkel**, reduseres prognosebehovene av transaksjonene som skjer i periodene som er definert av reduksjonsnøkkelen.
+Hvis du angir **metoden som brukes til å redusere prognosebehov**-feltet til *Transaksjoner - reduksjonsnøkkel*, reduseres prognosekravene av kvalifiserte behovstransaksjoner som oppstår i periodene som er definert reduksjonsnøkkelen.
+
+Det kvalifiserte behovet defineres av feltet **Reduser prognose etter**-feltet på **Dekningsgrupper**-siden. Hvis du setter feltet **Reduser prognose etter** til *Ordrer*, betraktes bare salgsordretransaksjoner som kvalifisert behov. Hvis du setter den til *Alle transaksjoner*, betraktes alle ikke-konserninterne avgangslagertransaksjoner som kvalifisert behov. Hvis konserninterne salgsordrer også skal vurderes som kvalifisert behov, angir du alternativet **Ta med konserninterne ordrer** til *Ja*.
+
+Prognosereduksjon starter med den første (tidligste) behovsprognoseposten i reduksjonsnøkkelperioden. Hvis antallet kvalifiserte lagertransaksjoner er mer enn antallet behovsprognoselinjer i samme reduksjonsnøkkelperiode, vil saldoen i lagertransaksjonsantallet brukes til å redusere behovsprognoseantallet i forrige periode (hvis det er en prognose som ikke er brukt).
+
+Hvis det ikke gjenstår en prognose som ikke er forbrukt, i den forrige reduksjonsnøkkelperioden, blir saldoen for lagertransaksjonsantall brukt til å redusere prognoseantallet i neste måned (hvis det finnes en ikke-brukt prognose).
+
+Verdien til **Prosent**-feltet på reduksjonsnøkkellinjene vil ikke brukes når **Metode som brukes til å redusere prognosebehov**-feltet er satt til *Transaksjoner – reduksjonsnøkkel*. Bare datoene brukes til å definere reduksjonsnøkkelperioden.
+
+> [!NOTE]
+> Alle prognoser som posteres på eller før dagens dato, blir ignorert og vil ikke bli brukt til å opprette planlagte bestillinger. Hvis for eksempel behovsprognosen for måneden genereres 1. januar, og du kjører hovedplanlegging som omfatter behovsprognoser 2. januar, vil beregningen ignorere behovsprognoselinjen som er datert 1. januar.
 
 #### <a name="example-transactions--reduction-key"></a>Eksempel: Transaksjoner – reduksjonsnøkkel
 

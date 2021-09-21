@@ -2,7 +2,7 @@
 title: Komme i gang med tjenesteadministrasjon for elektronisk fakturering
 description: Dette emnet beskriver hvordan du kommer i gang med elektronisk fakturering.
 author: gionoder
-ms.date: 05/24/2021
+ms.date: 08/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: feb8160cd920906765f7ef4a393e15c2be5d8c2cd60c3646e15648980ff27a06
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f77c8fd1696b74f852d04cc0a696d4816ef9af1f
+ms.sourcegitcommit: baf82100f0aa7d5f5f47c7f54bc155d8a07beab5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765650"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7463815"
 ---
 # <a name="get-started-with-electronic-invoicing-service-administration"></a>Komme i gang med tjenesteadministrasjon for elektronisk fakturering
 
@@ -33,7 +33,7 @@ ms.locfileid: "6765650"
 Før du kan fullføre trinnene i dette emnet må følgende forutsetninger være på plass:
 
 - Du må ha tilgang til kontoen for Microsoft Dynamics Lifecycle Services (LCS).
-- Du må ha et LCS-prosjekt som inkluderer versjon 10.0.17 eller senere av Microsoft Dynamics 365 Finance og Dynamics 365 Supply Chain Management. I tillegg må disse appene distribueres i én av følgende Azure-geografier:
+- Du må ha et LCS-prosjekt som inkluderer versjon 10.0.17 eller senere av Microsoft Dynamics 365 Finance eller Dynamics 365 Supply Chain Management. I tillegg må disse appene distribueres i én av følgende Azure-geografier:
 
     - USA
     - Europa
@@ -47,20 +47,20 @@ Før du kan fullføre trinnene i dette emnet må følgende forutsetninger være 
 ## <a name="install-the-add-in-for-microservices-in-lifecycle-services"></a>Installere tilleggsprogrammet for mikrotjenester i Lifecycle Services
 
 1. Logg på LCS-kontoen, og velg LCS-prosjektet på LCS-prosjektbordet.
-2. Velg LCS-distribusjonsprosjektet på miljøinstrumentbordet i prosjektet. Prosjektet du velger, må kjøre.
+2. Velg distribusjonsprosjektet på **Miljøer**-instrumentbordet i prosjektet. Miljøet du velger, må kjøre.
 3. I fanen **Power Platform-integrasjon** i feltgruppen **Miljøtillegg** velger du **Installer et nytt tillegg**.
 4. Velg **Elektronisk fakturering**.
 5. I feltet **App-ID for AAD** angir du **091c98b0-a1c9-4b02-b62c-7753395ccabe**. Dettee er en fast verdi.
-6. I feltet **AAD-leier-ID** angir du leier-IDen for kontoen for Azure-abonnementet.
+6. I feltet **AAD-leier-ID** angir du leier-IDen for kontoen for Azure-abonnementet. Leietakeren Azure Active Directory (Azure AD) du angir, skal være den samme leietakeren som brukes for RCS.
 7. Gå gjennom vilkårene og betingelsene og merk deretter av i avmeringsboksen.
-8. Velg **Installer**.
+8. Velg **Installer**. Installasjonen kan ta opptil flere minutter.
 
 
 ## <a name="set-up-the-parameters-for-rcs-integration-with-electronic-invoicing"></a>Konfigurere parametere for RCS-integrasjon med elektronisk fakturering
 
 1. Logg på RCS-kontoen.
-2. I delen **Relaterte koblinger** i arbeidsområdet **Elektronisk rapportering** velger du **Parametere for elektronisk rapportering**.
-3. I kategorien **E-faktureringstjeneste**, i feltet **URI for endepunkt for tjeneste**, angir du riktig tjenesteendepunkt for Azure-geografien, som vist i følgende tabell.
+2. I arbeidsområdet **Globaliseringsfunksjoner** i delen **Relaterte innstillinger** velger du koblingen **Parametere for elektronisk rapportering**.
+3. I kategorien **Elektronisk fakturering**, i feltet **URI for endepunkt for tjeneste**, angir du riktig tjenesteendepunkt for Azure-geografien, som vist i følgende tabell.
 
     | Datasenter Azure-geografi | URI for tjenestesluttpunkt                                                       |
     |----------------------------|----------------------------------------------------------------------------|
@@ -113,12 +113,14 @@ Før du kan fullføre trinnene i dette emnet må følgende forutsetninger være 
 8. I **Bruker-ID**-feltet angir du aliaset til brukeren. Angi brukerens e-postadresse i feltet **E-post**.
 9. Velg **Lagre**.
 10. Hvis den land/område-spesifikke fakturaen krever en sertifikatkjede for å bruke digitale signaturer, velger du **Kjede av sertifikater** og deretter, i handlingsruten, velger du **Key Vault-hemmeligheter**, og følg deretter denne fremgangsmåten:
+
     1. Velg **Ny** for å opprette en kjede av sertifikater.
     2. I **Navn**-feltet angir du navnet på kjeden av sertifikater. Angi en beskrivelse i **Beskrivelse**-feltet.
     3. I delen **Sertifikater** velger du **Legg til** for å legge til et sertifikat i kjeden.
     4. Bruk knappene **Opp** eller **Ned** for å endre posisjonen til sertifikatene i kjeden.
     5. Velg **Lagre**, og lukk deretter siden.
     6. Lukk siden.
+
 11. På siden **Tjenestemiljø**, i handlingsruten, velger du **Publiser** for å publisere miljøet til skyen. Verdien i feltet **Status** endres til **Publisert**.
 
 ## <a name="create-a-connected-application"></a>Opprette et tilkoblet program
@@ -149,7 +151,7 @@ Før du kan fullføre trinnene i dette emnet må følgende forutsetninger være 
 ### <a name="set-up-the-service-endpoint-url"></a>Konfigurer URL-adressen for endepunkt for tjeneste
 
 1. Gå til **Organisasjonsstyring \> Oppsett \> parametere for elektronisk dokument**.
-2. I kategorien **Innsendingstjeneste**, i feltet **URL for endepunkt for tjeneste**, angir du riktig tjenesteendepunkt for Azure-geografien, som vist i følgende tabell.
+2. I kategorien **Elektronisk fakturering**, i feltet **URL for endepunkt**, angir du riktig tjenesteendepunkt for Azure-geografien, som vist i følgende tabell.
 
     | Datasenter Azure-geografi | URI for tjenestesluttpunkt                                                       |
     |----------------------------|----------------------------------------------------------------------------|
@@ -161,15 +163,14 @@ Før du kan fullføre trinnene i dette emnet må følgende forutsetninger være 
 3. I **Miljø**-feltet angir du navnet på tjenestemiljøet som er publisert i Elektronisk fakturering.
 4. Velg **Lagre**, og lukk deretter siden.
 
-### <a name="enable-flighting-keys"></a>Aktiver testversjoneringsnøkler
+### <a name="enable-flighting-keys-for-finance-or-supply-chain-management-version-10017"></a>Aktivere testversjoneringsnøkler for Finance eller Supply Chain Management versjon 10.0.17
 
-Aktiver testversjoneringsnøkler for Microsoft Dynamics 365 Finance eller Microsoft Dynamics 365 Supply Chain Management, versjon 10.0.17 eller tidligere. 
 1. Utfør følgende SQL-kommando:
 
     INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('BusinessDocumentSubmissionServiceEnabled', 1)
     
     INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('ElectronicInvoicingServiceIntegrationFeature', 1)
 
-2. Utfør en IISreset-kommando for alle AOS'-er.
+2. Utfør en IISreset-kommando for alle AOS-er.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

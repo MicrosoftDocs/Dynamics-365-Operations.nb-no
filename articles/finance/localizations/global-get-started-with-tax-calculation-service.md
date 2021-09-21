@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 1ddbb22d4f7c6108ca93b415276c53794b5450dd
-ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
+ms.openlocfilehash: b180a8cee1c5b7e9dda837915e6fdf94af30d06a
+ms.sourcegitcommit: 8246ba3872a1f3eaa18c8bb1ba86d3c2142a6e10
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7394518"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7465083"
 ---
 # <a name="get-started-with-tax-calculation"></a>Kom i gang med avgiftsberegning
 
@@ -49,13 +49,9 @@ For et produksjonsmiljø må følgende forutsetninger være oppfylt:
 - Du må opprette et RCS-miljø for din organisasjon, og du må ha tilgang til kontoen. Hvis du vil ha mer informasjon om hvordan du oppretter et RCS-miljø, kan du se [Oversikt over Regulatory Configuration Service](rcs-overview.md).
 - Følgende funksjoner må være aktivert i arbeidsområdet **Funksjonsbehandling** i det distribuerte Finance- eller Supply Chain Management-miljøet, basert på dine forretningsbehov:
 
-    - Avgiftsberegning
+    - Avgiftsberegningstjeneste
     - Støtte for flere mva-registreringsnumre
     - Avgift i overføringsordre
-    - Overføring av liste over salg i EU bare basert på avgiftstransaksjoner
-    - Intrastat-rapportering etter flere avgifts-ID-er
-    - Rapportering av EU-salgsliste etter flere avgifts-ID-er
-    - MVA-deklarering med flere MVA-ID-er
 
 - Følgende funksjoner må være aktivert i arbeidsområdet **Funksjonsbehandling** i det distribuerte RCS-miljøet.
 
@@ -65,18 +61,14 @@ For et produksjonsmiljø må følgende forutsetninger være oppfylt:
 
 For et testmiljø må følgende forutsetninger være oppfylt:
 
-- Du må ha tilgang til LCS-kontoen din, og du må ha distribuert et LCS-prosjekt som har et nivå 2-miljø (eller over) som kjører Dynamics 365 versjon 10.0.18 med KB4616360, eller en senere versjon.
+- Du må ha tilgang til LCS-kontoen din, og du må ha distribuert et LCS-prosjekt som har et nivå 2-miljø (eller over) som kjører Dynamics 365 versjon 10.0.21 eller senere versjon.
 - Du må opprette et RCS-miljø for din organisasjon, og du må ha tilgang til kontoen. Hvis du vil ha mer informasjon om hvordan du oppretter et RCS-miljø, kan du se [Oversikt over Regulatory Configuration Service](rcs-overview.md).
 - Du må kontakte Microsoft, ved å sende en e-post til <taxcalc@microsoft.com>, for å aktivere testversjonering i det distribuerte Finance- eller Supply Chain Management-miljøet.
 - Følgende funksjoner må være aktivert i arbeidsområdet **Funksjonsbehandling** i det distribuerte Finance- eller Supply Chain Management-miljøet, basert på dine forretningsbehov:
 
-    - Avgiftsberegning
+    - Avgiftsberegningstjeneste
     - Støtte for flere mva-registreringsnumre
     - Avgift i overføringsordre
-    - Overføring av liste over salg i EU bare basert på avgiftstransaksjoner
-    - Intrastat-rapportering etter flere avgifts-ID-er
-    - Rapportering av EU-salgsliste etter flere avgifts-ID-er
-    - MVA-deklarering med flere MVA-ID-er
 
 - Følgende funksjoner må være aktivert i arbeidsområdet **Funksjonsbehandling** i det distribuerte RCS-miljøet.
 
@@ -103,12 +95,12 @@ Trinnene i denne delen er ikke knyttet til en bestemt juridisk enhet. Du må bar
 7. Gå til **Avgiftsdatamodell**, utvid filtreet, og velg deretter **Avgiftskonfigurasjon**.
 8. Velg riktig versjon av avgiftskonfigurasjone for avgift, basert på Finance-versjonen, og velg deretter **Importer**.
 
-    | Versjon | Avgiftskonfigurasjon                       | Modelltilordning                   |
-    | --------------- | --------------------------------------- | ------------------------------- |
-    | 10.0.18         | Avgiftskonfigurasjon - Europa 30.12.82     |                                 |
-    | 10.0.19         | Konfigurasjon 36.38.193 for avgiftsberegning |                                 |
-    | 10.0.20         | Konfigurasjon 40.43.208 for avgiftsberegning |                                 |
-    | 10.0.21         | Konfigurasjon 40.46.212 for avgiftsberegning | Dataverse-modelltilordning 40.46.9 |
+    | Versjon | Avgiftskonfigurasjon                       |
+    | --------------- | --------------------------------------- |
+    | 10.0.18         | Avgiftskonfigurasjon - Europa 30.12.82     |
+    | 10.0.19         | Konfigurasjon 36.38.193 for avgiftsberegning |
+    | 10.0.20         | Konfigurasjon 40.43.208 for avgiftsberegning |
+    | 10.0.21         | Konfigurasjon 40.46.212 for avgiftsberegning |
 
 9. I arbeidsområdet **Globaliseringsfunksjoner** velger du **Funksjoner**, flisen **Avgiftsberegning** og deretter **Legg til**.
 10. Velg en av følgende funksjonstyper:

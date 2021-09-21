@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 6c87018cbfbe22fbbc441a1a23aee0ac44af9ddc
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: acc5d5f93f3f625892aac37780a44e221b6eb5ac
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345155"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7475042"
 ---
 # <a name="inventory-visibility-reservations"></a>Lagersynlighetsreservasjoner
 
@@ -32,19 +32,20 @@ Du kan eventuelt konfigurere Microsoft Dynamics 365 Supply Chain Management (og 
 
 Når du slår på reservasjonsfunksjonen, blir Supply Chain Management automatisk klart til å motpostere reserveringer som gjøres ved hjelp av Lagersynlighet.
 
-> [!NOTE]
-> Motposteringsfunksjonaliteten krever Supply Chain Management versjon 10.0.22 eller senere. Hvis du vil bruke reservasjoner i Lagersynlighet, anbefaler vi at du venter til du har oppgradert Supply Chain Management til versjon 10.0.22 eller senere.
-
-## <a name="turn-on-the-reservation-feature"></a>Aktiver reservasjonsfunksjonen
+## <a name="turn-on-and-set-up-the-reservation-feature"></a><a name="turn-on"></a>Aktiver og konfigurer reservasjonsfunksjonen
 
 Følg denne fremgangsmåten for å aktivere reservasjonsfunksjonen.
 
-1. I Power Apps åpner du **Lagersynlighet**.
+1. Logg deg på Power Apps og åpne **Lagersynlighet**.
 1. Åpne **Konfigurasjon**-siden.
 1. På fanen **Funksjonsbehandling** aktiverer du funksjonen *OnHandReservation*.
 1. Logg på Supply Chain Management.
-1. Gå til **Lagerstyring \> Oppsett \> Parametere for integrering av lagersynlighet**.
-1. Under **Motpostering av reservasjon** setter du alternativet **Aktiver motpostering av reservasjon** til *Ja*.
+1. Gå til arbeidsområdet **[Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** og aktiver funksjonen *Integrering av lagersynlighet med motpostering av reservasjon* (krever versjon 10.0.22 eller senere).
+1. Gå til **Lagerstyring \> Oppsett \> Parametere for integrering av lagersynlighet**, åpne fanen **Motpostering av reservasjon** og gjør følgende innstilling:
+    - **Aktiver motpostering av reservasjon** – Sett til *Ja* for å aktivere denne funksjonaliteten.
+    - **Motposteringsmodifikator for reservasjon** – Velg lagertransaksjonsstatusen som motposterer reserveringer som gjøres i lagersynligheten. Denne innstillingen bestemmer ordrebehandlingsstadiet som utløser motregninger. Fasen spores etter ordrens lagertransaksjonsstatus. Velg ett av følgende:
+        - *I ordre/bestilling* – Når det gjelder statusen *I transaksjon*, sender en ordre en motposteringsforespørsel når den opprettes. Motposteringsantallet vil være antallet i den opprettede ordren.
+        - *Reserver* – For statusen *Reserver bestilt transaksjon* sender en ordre en motforespørsel når den er reservert, plukket, følgeseddelpostert eller fakturert. Forespørselen utløses bare én gang, for første trinn når den nevnte prosessen inntreffer. Motposteringsantallet vil være antallet der lagertransaksjonsstatusen endres fra *I ordre/bestilling* til *Reservert av bestilt* (eller senere status) på den tilsvarende ordrelinjen.
 
 ## <a name="use-the-reservation-feature-in-inventory-visibility"></a>Bruk reservasjonsfunksjonen i Lagersynlighet
 
@@ -56,13 +57,21 @@ Reservasjonshierarkiet beskriver serien med dimensjoner som må angis når det o
 
 Reservasjonshierarkiet kan være forskjellig fra indekshierarkiet. Denne uavhengigheten lar deg implementere kategoriadministrasjon der brukere kan dele inn dimensjonene i detaljer for å angi krav til å lage mer presise reservasjoner.
 
-Hvis du vil konfigurere et hierarki for ikke-forpliktende reservasjoner i Power Apps, åpner du **Konfigurasjon**-siden og går deretter til fanen **Tilordning av ikke-forpliktende reservasjon**, der du kan konfigurere reservasjonshierarkiet ved å legge til og/eller endre dimensjoner og deres hierarkinivåer.
+Hvis du vil konfigurere et hierarki for ikke-forpliktende reservasjoner i Power Apps, åpner du **Konfigurasjon**-siden og går deretter til fanen **Hierarki for ikke-forpliktende reservasjon**, der du kan konfigurere reservasjonshierarkiet ved å legge til og/eller endre dimensjoner og deres hierarkinivåer.
+
+Mykt reservasjonshierarki bør inneholde `SiteId` og `LocationId` som komponenter fordi de konstruerer partisjonskonfigurasjonen.
+
+Hvis du vil ha mer informasjon om hvordan du konfigurerer reservasjoner, kan du se [Reservasjonskonfigurasjon](inventory-visibility-configuration.md#reservation-configuration).
 
 ### <a name="call-the-reservation-api"></a>Kall opp API-en for reservasjon
 
 Reservasjoner gjøres i Lagersynlighet-tjenesten ved å sende en POSTER-forespørsel til tjenestens URL-adresse, for eksempel `/api/environment/{environment-ID}/onhand/reserve`.
 
 For en reservasjon må forespørselsteksten inneholde en organisasjons-ID, en produkt-ID, reservert antall og dimensjoner. Forespørselen genererer en unik reservasjons-ID for hver reservasjonspost. Reservasjonsposten inneholder den unike kombinasjonen av produkt-ID-en og dimensjonene.
+
+Når du kaller reservasjons-API, kan du styre reservasjonsvalideringen ved å angi den boolske `ifCheckAvailForReserv` parameteren i forespørselsteksten. Verdien `True` betyr at valideringen kreves, mens en verdi å `False` betyr at valideringen ikke er nødvendig. Standardverdien er `True`.
+
+Hvis du vil avbryte en reservering eller ikke reservere angitte lagerantall, angir du antallet til en negativ verdi og angir parameteren `ifCheckAvailForReserv` til `False` for å hoppe over valideringen.
 
 Her er et eksempel på forespørselsteksten, til referanse.
 
@@ -108,18 +117,9 @@ For lagertransaksjonsstatuser som har en angitt motposteringsmodifikator for res
 
 Motposteringsantallet følger lagerantallet som er angitt på lagertransaksjoner. Motposteringen trer ikke i kraft hvis det ikke gjenstår et reservert antall i Lagersynlighet-tjenesten.
 
-> [!NOTE]
-> Motposteringsfunksjonaliteten er tilgjengelig fra versjon 10.0.22
+### <a name="set-up-the-reservation-offset-modifier"></a>Definer motposteringsmodifikatoren for reservasjon
 
-### <a name="set-up-the-reserve-offset-modifier"></a>Definer motposteringsmodifikatoren for reservasjon
-
-Motposteringsmodifikatoren for reservasjon avgjør ordrebehandlingsfasen som utløser motposteringer. Fasen spores etter ordrens lagertransaksjonsstatus. Hvis du vil motposteringsmodifikatoren for reservasjon, gjør du følgende.
-
-1. Gå til **Lagerstyring \> Oppsett \> Parametere for integrering av lagersynlighet \> Motpostering av reservasjon**.
-1. Sett feltet **Motposteringsmodifikator for reservasjon** til en av følgende verdier:
-
-    - *I ordre/bestilling* – Når det gjelder statusen *I transaksjon*, sender en ordre en motposteringsforespørsel når den opprettes.
-    - *Reserver* – For statusen *Reserver bestilt transaksjon* sender en ordre en motforespørsel når den er reservert, plukket, følgeseddelpostert eller fakturert. Forespørselen utløses bare én gang, for første trinn når den nevnte prosessen inntreffer.
+Hvis du ikke allerede har gjort det, konfigurerer du reservasjonsmodifikatoren som beskrevet i [Aktiver og konfigurer reservasjonsfunksjonen](#turn-on).
 
 ### <a name="set-up-reservation-ids"></a>Konfigurer reservasjons-ID-er
 

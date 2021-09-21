@@ -1,5 +1,5 @@
 ---
-title: Definer lagersynlighet
+title: Installer tillegget for lagersynlighet
 description: Dette emnet beskriver hvordan du installerer tillegget for lagersynlighet for Microsoft Dynamics 365 Supply Chain Management.
 author: yufeihuang
 ms.date: 08/02/2021
@@ -11,14 +11,14 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 8573fe01abb1c6092012baf85e8b7df40b74a31f
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: b2b85f533a3318701ed08857b899cf9bdd103863
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7343590"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474826"
 ---
-# <a name="set-up-inventory-visibility"></a>Definer lagersynlighet
+# <a name="install-and-set-up-inventory-visibility"></a>Installere og definere lagersynlighet
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
@@ -41,7 +41,7 @@ Før du kan installere lagersynlighet, må du gjøre følgende:
     - `Inventory Visibility Integration.zip` (hvis versjonen av Supply Chain Management du kjører, er eldre enn versjon 10.0.18)
 
 > [!NOTE]
-> Landene og regionene som for øyeblikket støttes, omfatter Canada (CCA, ECA), USA (WUS, EUS), EU (NEU, WEU), Storbritannia (SUK, WUK) og Australia (EAU, SEAU).
+> Landene og regionene som for øyeblikket støttes, omfatter Canada (CCA, ECA), USA (WUS, EUS), EU (NEU, WEU), Storbritannia (SUK, WUK), Australia (EAU, SEAU), Japan (EJP, WJP) og Brasil (SBR, SCUS).
 
 Hvis du har spørsmål om disse forutsetningene, kan du ta kontakt med produktteamet for lagersynlighet.
 
@@ -119,6 +119,9 @@ Når du har registrert en app og lagt til en klienthemmelighet i Azure AD, følg
 1. Godta vilkåret og betingelsen ved å merke av for **Vilkår og betingelser**.
 1. Velg **Installer**. Statusen for tillegget vises som **Installerer**. Når installasjonen er fullført, oppdaterer du siden. Statusen skal endres til **Installert**.
 
+> [!IMPORTANT]
+> Hvis du har mer enn ett LCS-miljø, oppretter du et annet Azure AD program for hvert miljø. Hvis du bruker samme program-ID og leie-ID til å installere tillegget for lagersynlighet for forskjellige miljøer, vil det oppstå et tokenproblem for eldre miljøer. Bare den siste som ble installert, vil være gyldig.
+
 ## <a name="uninstall-the-inventory-visibility-add-in"></a><a name="uninstall-add-in"></a>Avinstaller tillegget for lagersynlighet
 
 Hvis du vil avinstallere tillegget for lagersynlighet, velger du **Avinstaller** på LCS-siden. Avinstalleringsprosessen avslutter tillegget for lagersynlighet, fjerner registreringen av tillegget fra LCS og sletter alle midlertidige data som er lagret i hurtigbufferen i tillegget for lagersynlighet. De primære lagerdataene som er lagret i Dataverse-abonnementet, slettes imidlertid ikke.
@@ -133,7 +136,7 @@ Hvis du vil avinstallere lagerdata som er lagret i Dataverse-abonnementet, åpne
 
 Når du har slettet disse løsningene, blir dataene som er lagret i tabeller, også slettet.
 
-## <a name="set-up-supply-chain-management"></a><a name="setup-dynamics-scm"></a>Konfigurer Supply Chain Management
+## <a name="set-up-inventory-visibility-in-supply-chain-management"></a><a name="setup-dynamics-scm"></a>Definere lagersynlighet i Supply Chain Management
 
 ### <a name="deploy-the-inventory-visibility-integration-package"></a><a name="deploy-inventory-visibility-package"></a>Distribuere integreringspakken for lagersynlighet
 
@@ -153,8 +156,23 @@ Sørg for at følgende funksjoner er aktivert i miljøet i Supply Chain Manageme
 
 ### <a name="set-up-inventory-visibility-integration"></a><a name="setup-inventory-visibility-integration"></a>Definer integrering av lagersynlighet
 
-1. I Supply Chain Management åpner du arbeidsområdet **[Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** og aktiverer funksjonen *Integrering av lagersynlighet*.
-1. Gå til **Lagerstyring \> Konfigurere \> Parametere for integrering av lagersynlighet**, og angi URL-adressen for miljøet der du kjører Lagersynlighet. Hvis du ønsker mer informasjon, se [Finn endepunkt for tjeneste](inventory-visibility-power-platform.md#get-service-endpoint).
+Når du har installert tillegget, forbereder du Supply Chain Management-systemet slik at du kan arbeide med det ved å gjøre følgende:
+
+1. I Supply Chain Management åpner du arbeidsområdet **[Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** og aktiverer følgende funksjoner:
+    - *Integrering av lagersynlighet* – Obligatorisk.
+    - *Integrering av lagersynlighet med motpostering av reservasjon* – Anbefales, men valgfritt. Krever versjon 10.0.22 eller nyere. Hvis du vil ha mer informasjon, kan du se [Lagersynlighetsreservasjoner](inventory-visibility-reservations.md).
+
+1. Gå til **Lagerstyring \> Oppsett \> Parametere for integrering av lagersynlighet**.
+1. Åpne kategorien **Generelt**, og gjør følgende innstillinger:
+    - **Endepunkt for lagersynlighet** – Angi URL-adressen til miljøet der du kjører Lagersynlighet. Hvis du ønsker mer informasjon, se [Finn endepunkt for tjeneste](inventory-visibility-configuration.md#get-service-endpoint).
+    - **Maksimalt antall poster i en enkelt forespørsel** – Angi til det maksimale antallet poster som skal inkluderes i en enkelt forespørsel. Du må angi et positivt heltall som er mindre enn eller lik 1 000. Standardverdien er 512. Vi anbefaler på det sterkeste at du ikke beholder standardverdien med mindre du har mottatt råd fra Microsoft Kundestøtte eller på annen måte er sikker på at du må endre den.
+
+1. Hvis du aktiverte den valgfrie funksjonen *Integrering av lagersynlighet med motpostering av reservasjon*, åpner du fanen **Motpostering av reservasjon** og gjør følgende innstillinger:
+    - **Aktiver motpostering av reservasjon** – Sett til *Ja* for å aktivere denne funksjonaliteten.
+    - **Motposteringsmodifikator for reservasjon** – Velg lagertransaksjonsstatusen som motposterer reserveringer som gjøres i lagersynligheten. Denne innstillingen bestemmer ordrebehandlingsstadiet som utløser motregninger. Fasen spores etter ordrens lagertransaksjonsstatus. Velg ett av følgende:
+        - *I ordre/bestilling* – Når det gjelder statusen *I transaksjon*, sender en ordre en motposteringsforespørsel når den opprettes. Motposteringsantallet vil være antallet i den opprettede ordren.
+        - *Reserver* – For statusen *Reserver bestilt transaksjon* sender en ordre en motforespørsel når den er reservert, plukket, følgeseddelpostert eller fakturert. Forespørselen utløses bare én gang, for første trinn når den nevnte prosessen inntreffer. Motposteringsantallet vil være antallet der lagertransaksjonsstatusen endres fra *I ordre/bestilling* til *Reservert av bestilt* (eller senere status) på den tilsvarende ordrelinjen.
+
 1. Gå til **Lagerstyring \> Periodisk \> Integrering av lagersynlighet** og aktiver jobben. Alle lagerendringshendelser fra Supply Chain Management posteres nå til Lagersynlighet.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

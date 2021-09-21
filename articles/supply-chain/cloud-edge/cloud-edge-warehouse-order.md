@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 4a77b157e9dd5ee1f551cbb59abbc89aaa28d325cc74a77e6624f25902c5b19e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bd3c72f2c008b936ceda53a3fcdde79df1e6b1b7
+ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731895"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7471698"
 ---
 # <a name="warehouse-orders-for-cloud-and-edge-scale-units"></a>Lagerordrer for sky- og kantskalaenheter
 
@@ -27,16 +27,18 @@ ms.locfileid: "6731895"
 
 ## <a name="what-are-warehouse-orders"></a>Hva er lagerordrer?
 
-*Lagerordrer* er en type ordre som ble opprettet for å støtte lagerdistribusjoner for senter og skalaenhet. De gjør at du kan motta beholdning når du kjører en lagerarbeidsbelastning på en skalaenhet. De brukes for øyeblikket bare med bestillinger.
+*Lagerordrer* er en type ordre som brukes for å støtte lagerdistribusjoner for senter og skalaenhet. De gjør at du kan motta og sende beholdning når du kjører en lagerarbeidsbelastning på en skalaenhet.
 
-Lagerordrer brukes som en del av lagerstyringsbehandling, for eksempel når mobilappen Lagerstyring brukes til å registrere fysisk lagerbeholdning under behandling av en innkommende bestilling. Lagerordrer opprettes som en del av prosessen *Frigi til lager*, som er tilgjengelig for bestillinger som angir et skalaenhetslager, og varer som er aktivert for å bruke lagerstyringsprosesser.
+Lagerordrer brukes som en del av behandling av både innkommende og utgående lagerstyring. De opprettes som en del av *Frigi til lager*-prosessen, som initialiseres på senteret.
+For innkommende behandling brukes Warehouse Mobile App til å registrere fysisk lagerbeholdning under behandling av innkommende ordrer. Dette er tilgjengelig for bestillinger og produksjonsordrer som angir et skalaenhetslager og varer som er aktivert til å bruke lagerstyringsprosesser.
+De utgående lagerordrene brukes som en del av forsendelsesbølgeprosessen for overføring og salgsordrer.
 
 > [!IMPORTANT]
 > Lagerordrer er bare tilgjengelige i distribusjoner som bruker [arbeidsbelastninger for lagerstyring for sky- og kantskalaenheter](cloud-edge-workload-warehousing.md).
 
-## <a name="create-a-warehouse-order"></a>Opprette en lagerordre
+## <a name="create-an-inbound-warehouse-order"></a>Opprette en innkommende lagerordre
 
-Følg denne fremgangsmåten for å opprette en lagerordre.
+Følg denne fremgangsmåten for å opprette en innkommende lagerordre for en bestillingsprosess.
 
 1. Logg deg på forekomsten av Microsoft Dynamics 365 Supply Chain Management som kjører i senteret. (Du må starte prosessen *Frigi til lager* mens du er logget på senteret.)
 1. Gå til **Innkjøp og leverandører \> Bestillinger \> Alle bestillinger**.

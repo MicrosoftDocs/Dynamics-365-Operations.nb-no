@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 052311e15aeb20b927cbed217a2bda600dad60a5
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 4102f8036c0aede7c8a2adcaa9b8799a71ac7ada
+ms.sourcegitcommit: 696796ca5635863850ae9ef16fc1fb0fc46ce8f0
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345656"
+ms.lasthandoff: 08/28/2021
+ms.locfileid: "7441295"
 ---
 # <a name="maintain-bar-code-types"></a>Opprettholde strekkodetyper
 
@@ -32,7 +32,8 @@ Denne fremgangsmåten viser hvordan du definerer en ny definisjon for strekkode 
 1. Skriv inn en verdi i feltet **Strekkodeoppsett**.
 1. Skriv inn en verdi i **Beskrivelse**-feltet.
 1. Velg et alternativ i **Strekkodetype**-feltet.
-    * Hvis du bruker USMF, kan du velge "Kode 39".  
+    * Hvis du bruker USMF, kan du velge "Kode 39".
+1. I **Maske-ID**-feltet angir du IDen til strekkodemasken. Strekkodemasker brukes til å opprette strekkoder og raskt identifisere strekkoder som skannes inn på et salgsstedssystem. Hvis du vil ha mer informasjon, kan du se [Definere strekkodemasker](../../../commerce/set-up-bar-code-masks.md).
 1. Angi et tall i feltet **Størrelse**.
 1. Angi et tall i feltet **Maksimumslengde**.
 1. Velg **Lagre**.

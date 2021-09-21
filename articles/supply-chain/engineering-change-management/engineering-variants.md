@@ -10,18 +10,29 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 57eda6a833df6ff8e91c006bbc5096554eff6c503a8b7ba2bd0b13e2f8e98f56
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4e2133263f4bee09a3365236601e0d2fdd08a7ae
+ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6766162"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7471842"
 ---
 # <a name="generate-variants-for-engineering-products"></a>Generer varianter for tekniske produkter
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 Dette emnet beskriver hvordan du genererer varianter for tekniske produkter.
+
+## <a name="turn-on-variant-generation-for-engineering-products"></a>Slå på variantgenerering for tekniske produkter
+
+Før du kan bruke denne funksjonen, må den være aktivert i systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
+
+- **Modul:** *Behandling av teknisk endring*
+- **Funksjonsnavn:** *Variantgenerering for tekniske produkter*
+
+> [!IMPORTANT]
+> Funksjonen *Variantgenerering for tekniske produkter* vil bare være synlig i systemet etter at du har aktivert konfigurasjonsnøkkelen *Behandling av teknisk endring*. Hvis du vil ha mer informasjon, kan du se [Oversikt over behandling av teknisk endring](product-engineering-overview.md).
 
 ## <a name="generate-one-or-more-new-variants-of-an-engineering-product"></a>Generere en eller flere nye varianter av et teknisk produkt
 
@@ -38,10 +49,15 @@ Følgende fremgangsmåte gir et eksempel på hvordan du oppretter flere variante
 1. Legg til en stykkliste og rute til varianten etter behov.
 1. I handlingsruten åpner du **Produkt**-fanen og fra **Produktstandard**-gruppen, velger du **Produktdimensjoner**.
 1. Siden **Produktdimensjoner** åpnes. Denne siden inneholder en fane for hver tilgjengelige dimensjon. Legg til en rad for hver verdi du vil støtte for hver relevante dimensjon, i hver fane. (I dette eksemplet kan du legge til rader i fanen **Farge** for *hvit*, *gul* og *grønn*).
-1. Lukk siden og velg **Frigitte produktvarianter**. Legg merke til at den første opprettede varianten (hvit V-1) vises.
-1. Velg **Variantforslag**.
-1. Systemet foreslår varianter med de opprettede fargeverdiene (for eksempel hvit V-1, gul V-1 og grønn V-1).
-1. Velg de foreslåtte variantene, og velg **OK** for å frigi variantene til det tekniske firmaet. Vær oppmerksom på at følgende betingelser gjelder: 
+1. Lukk siden, og velg deretter **Frigitte produktvarianter**. Legg merke til at den første varianten du har opprettet (blå V-1), vises.
+1. Velg **Variantforslag** i fanen **Produktvariant** i handlingsruten.
+1. Følg et av disse trinnene i dialogboksen **Variantforslag**:
+
+    - Øverst i dialogboksen finner du en del for hver tilgjengelige dimensjon. For hver dimensjon merker du av for hver verdi du vil generere et variantforslag for, og deretter velger du **Foreslå** på verktøylinjen. Relevante forslag legges til i **Foreslåtte varianter**-delen.
+    - Velg **Foreslå alle** på verktøylinjen for å generere variantforslag for alle tilgjengelige kombinasjoner av dimensjonsverdier. Forslagene legges til i **Foreslåtte varianter**-delen.
+
+1. Merk av for hver variant du vil opprette, i delen **Foreslåtte varianter**. Velg deretter **Opprett** for å generere og frigi de valgte variantene til det tekniske firmaet. Følgende betingelser gjelder:
+
     - Ingen av de opprettede variantene vil ha en stykkliste eller rute.
     - Attributtene for disse variantene hentes som standard fra den tekniske kategorien, og kopieres ikke fra den forrige varianten.
 

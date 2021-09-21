@@ -2,7 +2,7 @@
 title: Komme i gang med Elektronisk fakturering
 description: Dette emnet inneholder informasjon som vil hjelpe deg med å komme i gang med Elektronisk fakturering i Microsoft Dynamics 365 Finance og Dynamics 365 Supply Chain Management.
 author: gionoder
-ms.date: 03/29/2021
+ms.date: 08/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 3a62f68718a9bd46cdf15146bbb6a4e5166bfcc7abcf99b24d3fbc7e3e6c94ab
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3ba0b68ee61b130b8d0304d0bac6d1d720af8139
+ms.sourcegitcommit: baf82100f0aa7d5f5f47c7f54bc155d8a07beab5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732987"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7463846"
 ---
 # <a name="get-started-with-electronic-invoicing"></a>Komme i gang med Elektronisk fakturering
 
@@ -40,14 +40,14 @@ Før du kan fullføre trinnene i dette emnet må følgende forutsetninger være 
 ## <a name="import-an-electronic-invoicing-feature-from-the-microsoft-configuration-provider"></a>Importere en funksjon for elektronisk fakturering fra Microsoft-konfigurasjonsleverandøren 
 
 1. Logg deg på kontoen for Regulatory Configuration Service (RCS).
-2. I arbeidsområdet **Globaliseringsfunksjon**, i **Funksjoner**-delen velger du flisen **Elektronisk fakturering**.
+2. I arbeidsområdet **Globaliseringsfunksjoner**, i **Funksjoner**-delen velger du flisen **Elektronisk fakturering**.
 3. Velg **Importer**, og velg deretter **Synkroniser**.
 4. Filtrer **Konfigurasjonsleverandør**-kolonnen etter termen **Microsoft**.
-5. Velg navnet på en funksjon for elektronisk fakturering fra tabellen i begynnelsen av dette emnet, og velg deretter **Importer**.
+5. Velg navnet på en funksjon for elektronisk fakturering fra tabellen, og velg deretter **Importer**.
 
 ## <a name="create-an-electronic-invoicing-feature-under-your-organization-provider"></a>Opprette en funksjon for Elektronisk fakturering under organisasjonsleverandøren
 
-1. I RCS, i **Funksjoner**-delen i arbeidsområdet **Globaliseringsfunksjon** velger du flisen **Elektronisk fakturering**.
+1. I RCS, i **Funksjoner**-delen i arbeidsområdet **Globaliseringsfunksjoner** velger du flisen **Elektronisk fakturering**.
 2. Velg **Legg til** > **Basert på eksisterende funksjon**, og i feltet **Navn** angir du navnet på funksjonen for Elektronisk fakturering.
 3. I **Beskrivelse**-feltet skriver du inn en beskrivelse av funksjonen.
 4. I **Basefunksjonsfeltet** velger du den importerte funksjonen for elektronisk fakturering fra Microsofts konfigurasjonsleverandør.
@@ -113,7 +113,7 @@ Hvis du vil ha mer informasjon om disse trinnene, kan du se i "Komme i gang"-dok
     | Spansk elektronisk faktura (ES)      | <p>Salgsfaktura</p><p>Prosjektfaktura</p> | <p>Kundefakturajournal</p><p>Prosjektfaktura</p> |
     | Elektronisk faktura i PEPPOL-format            | <p>Salgsfaktura</p><p>Prosjektfaktura</p> | <p>Kundefakturajournal</p><p>Prosjektfaktura</p> |
 
-7. For hvert tabellnavn du oppretter, velger og angir du en kontekstverdi i henhold til følgende tabell.
+6. For hvert tabellnavn du oppretter, velger og angir du en kontekstverdi i henhold til følgende tabell.
 
     | Funksjonsnavn                         | Forretningsdokument | Kontekst |
     |--------------------------------------|-------------------|---------|
@@ -134,7 +134,7 @@ Hvis du vil ha mer informasjon om disse trinnene, kan du se i "Komme i gang"-dok
     | Spansk elektronisk faktura (ES)      | <p>Salgsfaktura</p><p>Prosjektfaktura</p> | <p>Kontekstmodell for kundefaktura – kundefakturakontekst</p><p>Kontekstmodell for kundefaktura – projektfakturakontekst</p> |
     | Elektronisk faktura i PEPPOL-format            | <p>Salgsfaktura</p><p>Prosjektfaktura</p> | <p>Kontekstmodell for kundefaktura – kundefakturakontekst</p><p>Kontekstmodell for kundefaktura – projektfakturakontekst</p> |
 
-8. For hvert taballnavn og kontekst velger og angir du en verdi for tilordning av forretningsdokument i henhold til følgende tabell.
+7. For hvert taballnavn og kontekst velger og angir du en verdi for tilordning av forretningsdokument i henhold til følgende tabell.
 
     | Funksjonsnavn                         | Forretningsdokument | Tilordning av forretningsdokument |
     |--------------------------------------|-------------------|---------------------------|
@@ -177,11 +177,11 @@ Hvis du vil ha mer informasjon om disse trinnene, kan du se i "Komme i gang"-dok
 ## <a name="deploy-the-electronic-invoicing-feature-to-connected-application"></a>Distribuere funksjonen for elektronisk fakturering til et tilkoblet program
 
 1. Velg en versjon av funksjonen for Elektronisk fakturering du vil distribuere, i kategorien **Versjoner**.
-4. Velg **Distribuer**.
-5. Sett alternativet **Distribuer til tilkoblet program** til **Ja**.
-6. Velg tilkoblingen som er knyttet til forekomsten av Finance eller Supply Chain Management i feltet **Koble til program**.
-7. Sett alternativet **Distribuer til servicemiljø** til **Nei**.
-10. Velg **OK**.
+2. Velg **Distribuer**.
+3. Sett alternativet **Distribuer til tilkoblet program** til **Ja**.
+4. Velg tilkoblingen som er knyttet til forekomsten av Finance eller Supply Chain Management i feltet **Koble til program**.
+5. Sett alternativet **Distribuer til servicemiljø** til **Nei**.
+6. Velg **OK**.
 
 ## <a name="turn-on-the-electronic-invoicing-feature-in-finance-or-supply-chain-management"></a>Slå på funksjonen for Elektronisk fakturering i Finance eller Supply Chain Management
 
@@ -213,7 +213,7 @@ Hvis du vil ha mer informasjon om disse trinnene, kan du se i "Komme i gang"-dok
 ## <a name="issue-electronic-invoices"></a>Utstede elektroniske fakturaer
 
 1. Gå til **Organisasjonsstyring** \> **Periodiske** \> **Elektroniske dokumenter** \> **Send elektroniske dokumenter**.
-2. Velg **Filtrer** i hurtigfanen **Post som skal inkluderes** .
+2. Velg **Filtrer** i hurtigfanen **Poster som skal inkluderes** .
 3. Velg **Legg til** for å legge til et tabellnavn i spørringsfilteret.
 4. Velg tabellen som inneholder fakturaene.
 

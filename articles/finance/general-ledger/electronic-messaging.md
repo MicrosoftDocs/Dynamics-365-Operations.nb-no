@@ -2,7 +2,7 @@
 title: Elektroniske meldinger
 description: Dette emnet gir oversikt og oppsettinformasjon for elektroniske meldinger i Microsoft Dynamics 365 Finance.
 author: liza-golub
-ms.date: 06/29/2021
+ms.date: 08/20/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: elgolu
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 191abc37b7c349aaf3c9e871fe2f1885eec9fc896271d6fac27e5caa0b0fe3b0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 16b0e0fa74109f1c63ed47606bebe2fefc604fc5
+ms.sourcegitcommit: efcb853a68a77037cca23582d9f6f96ea573727a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768345"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7478730"
 ---
 # <a name="electronic-messaging"></a>Elektronisk meldingssystem
 
@@ -57,6 +57,16 @@ EM-funksjonen for elektroniske meldinger støtter følgende scenarioer:
 - Lagre og gå gjennom alle rapportene som genereres.
 - Lagre og gå gjennom all logginformasjon som er knyttet til handlinger som utføres for en melding eller et meldingselement.
 - Styre behandlingen gjennom forskjellige meldingsstatuser og meldingselementstatuser.
+
+## <a name="security-privileges"></a>Sikkerhetsrettigheter
+
+Følgende sikkerhetsrettigheter er tilgjengelige for elektroniske meldinger:
+
+| Sikkerhetsrettigheter           | Tilgangsnivå | Tilknytning |
+|------------------------------|--------------|-------------|
+| Oppretthold elektroniske meldinger | Denne rettigheten gir full tilgang til EM-funksjonaliteten. Hvis du har dette privilegiet, kan du definere elektroniske meldinger og kjøre all behandlingen. | Dette privilegiet er inkludert i sikkerhetsplikten **Vedlikeholde mva-transaksjoner**. Denne avgiften er igjen inkludert i sikkerhetsrollen **Regnskapsfører**. |
+| Vis elektroniske meldinger     | Denne rettigheten gir lesetilgang til EM-funksjonaliteten. Hvis du har dette privilegiet, kan du vise innstillinger og meldinger for elektroniske meldinger. Du kan imidlertid ikke definere eller kjøre noe. | Dette privilegiet er inkludert i sikkerhetsplikten **Forespørsel om status for mva-transaksjoner**. Denne avgiften er igjen inkludert i følgende sikkerhetsroller:<ul><li>Innkrevingsleder</li><li>Regnskapsmedarbeider</li><li>Regnskapssjef kundereskontro</li><li>Revisor</li><li>Regnskapsfører</li><li>Regnskapssjef</li><li>Regnskapsansvarlig</li><li>Salgssjef</li><li>Regnskapsassistent</li></ul> |
+| Bruk elektroniske meldinger  | Dette privilegiet gir bare tilgang til sidene **Elektroniske meldinger** og **Elektroniske meldingselementer**. Hvis du har denne rettigheten, kan du kjøre all behandling som kalles fra disse sidene. | Dette privilegiet er inkludert i sikkerhetsplikten **Operere elektroniske meldinger**. Denne avgiften er igjen inkludert i sikkerhetsrollen **Operatør av elektroniske meldinger**. |
 
 ## <a name="country-specific-regulatory-features-supported-by-the-em-functionality"></a>Landspesifikke forskriftsmessige funksjoner som støttes av EM-funksjonaliteten
 

@@ -1,5 +1,5 @@
 ---
-title: Sky- og kantskalaenheter for arbeidsbelastninger for produksjon og lagerstyring
+title: Skaleringsenheter i en distribuert hybridtopologi
 description: Dette emnet inneholder informasjon om sky- og kantskalaenheter for arbeidsbelastninger for produksjon og lagerstyring.
 author: cabeln
 ms.date: 04/22/2021
@@ -10,14 +10,14 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: dbe5833d4c9d8038fcebf1d9d446af757c834e42a2f77f10c7eb7268e738ed28
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 59d246dd348bca6c00dc90b19353a382986841f2
+ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6780680"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7471746"
 ---
-# <a name="cloud-and-edge-scale-units-for-manufacturing-and-warehouse-management-workloads"></a>Skalaenheter for sky og kant for arbeidsbelastninger for produksjons- og lagerstyring
+# <a name="scale-units-in-a-distributed-hybrid-topology"></a>Skaleringsenheter i en distribuert hybridtopologi
 
 [!include [banner](../includes/banner.md)]
 
@@ -26,11 +26,11 @@ ms.locfileid: "6780680"
 >
 > Når du aktiverer sky- og kantskalaenheter, blir du bedt om å bekrefte at du forstår at noen data som er knyttet til konfigurasjonen og behandling av sky- og kantskalaenheter, kan lagres i et datasenter som er plassert i USA. Hvis du vil lære mer om databehandling for sky- og kantskalaenheter, kan du se [Databehandling under behandling av skalaenheter](#data-processing-management) senere i dette emnet.
 
-## <a name="core-value-proposition-for-scale-units"></a>Kjerneverdiforslag for skalaenheter
+## <a name="core-value-proposition-for-a-distributed-hybrid-topology"></a>Hovedverdiforslag for en distribuert hybridtopologi
 
-Firmaer som jobber med produksjon og distribusjon, må kunne kjøre viktige forretningsprosesser hele døgnet, uten avbrudd og ved skala. Med sky- og kantskalaenheter kan firmaer kjøre viktige produksjons- og lagerprosesser uten avbrudd, selv når det gjelder nettverkstilkobling eller forsinkelsesproblemer.
+Firmaer som jobber med produksjon og distribusjon, må kunne kjøre viktige forretningsprosesser hele døgnet, uten avbrudd og ved skala. Med en distribuert hybridtopologi kan firmaer kjøre viktige produksjons- og lagerprosesser uten avbrudd, selv når det gjelder nettverkstilkobling eller forsinkelsesproblemer.
 
-Sky- og kantskalaenheter muliggjør distribusjon av arbeidsmengder for produksjon og lagerkjøring blant ulike miljøer. Denne funksjonaliteten kan bidra til å forbedre ytelsen, forhindre tjenesteavbrudd og gi maksimal oppetid. Skalaenheter leveres ved hjelp av følgende tillegg for Supply Chain Management-abonnementet:
+En distribuert hybridtopologi introduserer konseptet med *skalaenheter*, som gjør det mulig å distribuere arbeidsmengder for shop floor og lagerutførelse mellom forskjellige miljøer. Denne funksjonaliteten kan bidra til å forbedre ytelsen, forhindre tjenesteavbrudd og gi maksimal oppetid. Skalaenheter leveres ved hjelp av følgende tillegg for Supply Chain Management-abonnementet:
 
 - Cloud Scale Unit-tillegget for Dynamics 365 Supply Chain Management (*tilgjengelig april 2021*)
 - Edge Scale Unit-tillegget for Dynamics 365 Supply Chain Management (*tilgjengelig snart*)

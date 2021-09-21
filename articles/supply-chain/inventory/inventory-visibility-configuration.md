@@ -1,5 +1,5 @@
 ---
-title: Konfigurasjon av Lagersynlighet
+title: Konfigurer lagersynlighet
 description: Dette emnet beskriver hvordan du konfigurerer Lagersynlighet.
 author: yufeihuang
 ms.date: 08/02/2021
@@ -11,19 +11,19 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 92e42b22d424ab80303d771f760cfcf0599b9f4c
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 27dfc3f431fdfc1ec5c2cad2c3458b11c94189c3
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345039"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474682"
 ---
-# <a name="inventory-visibility-configuration"></a>Konfigurasjon av Lagersynlighet
+# <a name="configure-inventory-visibility"></a>Konfigurer lagersynlighet
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
 
-Dette emnet beskriver hvordan du konfigurerer Lagersynlighet.
+Dette emnet beskriver hvordan du konfigurerer lagersynlighet ved hjelp av tillegget for lagersynlighet i Power Apps.
 
 ## <a name="introduction"></a><a name="introduction"></a>Innledning
 
@@ -35,27 +35,58 @@ Før du begynner å arbeide med Lagersynlighet, må du fullføre følgende konfi
 - [Reservasjonskonfigurasjon (valgfritt)](#reservation-configuration)
 - [Eksempel på standard konfigurasjon](#default-configuration-sample)
 
-> [!NOTE]
-> Du kan vise og redigere Lagersynlighet-konfigurasjoner i [Microsoft Power Apps](./inventory-visibility-power-platform.md#configuration). Når konfigurasjonen er fullført, velger du **Oppdater konfigurasjon** i appen.
+## <a name="prerequisites"></a>Forutsetninger
 
-## <a name="data-source-configuration"></a><a name="data-source-configuration"></a>Konfigurasjon av datakilde
+Før du begynner, må du installere og konfigurere tillegget Lagersynlighet som beskrevet i [Installere og definere lagersynlighet](inventory-visibility-setup.md).
 
-Datakilden representerer systemet som dataene kommer fra. Eksempler inkluderer `fno` (som betyr "Dynamics 365 Finance and Operations-apper") og `pos` (som betyr "salgssted").
+## <a name="enable-inventory-visibility-features-in-power-apps-feature-management"></a><a name="feature-switch"></a>Aktivere funksjoner for Lagersynlighet i Power Apps funksjonsbehandling
 
-Konfigurasjonen for datakilden omfatter følgende deler:
+Tillegget for lagersynlighet legger til flere nye funksjoner i Power Apps installasjonen. Disse funksjonene er deaktivert som standard. Hvis du vil bruke dem, åpner du **Konfigurasjon**-siden i Power Apps og aktiverer deretter følgende funksjoner på fanen **Funksjonsbehandling**.
 
-- Dimensjon (dimensjonstilordning)
-- Fysisk mål
-- Beregnet mål
+- *OnHandReservation*
+- *OnHandMostSpecificBackgroundService*
+
+## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>Finn endepunkt for tjeneste
+
+Hvis du ikke kjenner til det korrekte endepunktet for Lagersynlighet-tjenesten, åpner du **Konfigurasjon**-siden i Power Apps og velger deretter **Vis endepunkt for tjeneste** øverst til høyre. Siden vil vise det riktige endepunktet for tjenesten.
+
+## <a name="the-configuration-page-of-the-inventory-visibility-app"></a><a name="configuration"></a>Konfigurasjonssiden for Lagersynlighet-appen
+
+I Power Apps hjelper **Konfigurasjon** siden i [Lagersynlighet-appen](inventory-visibility-power-platform.md) deg med konfigurasjon av lagerbeholdning og konfigurasjon av ikke-forpliktende reservasjon. Når tillegget er installert, inkluderer standardkonfigurasjonen verdien fra Microsoft Dynamics 365 Supply Chain Management (datakilden `fno`). Du kan gå gjennom standardinnstillingene. I tillegg kan du, basert på forretningskravene og lagerposteringskravene i det eksterne systemet, endre konfigurasjonen for å standardisere hvordan lagerendringer kan posteres, organiseres og spørres i alle systemene. Resten av delene i dette emnet forklarer hvordan du bruker hver del av **Konfigurasjon**-siden.
+
+Når konfigurasjonen er fullført, velger du **Oppdater konfigurasjon** i appen.
+
+## <a name="data-source-configuration"></a>Konfigurasjon av datakilde
+
+Hver datakilde representerer et system som dataene kommer fra. Eksempler på datakildenavn inkluderer `fno` (som betyr "Dynamics 365 Finance and Operations-apper") og `pos` (som betyr "salgssted"). Som standard er Supply Chain Management definert som en standard datakilde (`fno`) i Lagersynlighet.
 
 > [!NOTE]
 > Datakilden `fno` er reservert for Dynamics 365 Supply Chain Management.
 
-### <a name="dimension-dimension-mapping"></a><a name="data-source-configuration-dimension"></a>Dimensjon (dimensjonstilordning)
+Følg fremgangsmåten nedenfor for å legge til en datakilde.
 
-Formålet med dimensjonskonfigurasjonen er å standardisere integreringen med flere systemer for postering av hendelser og spørringer, basert på kombinasjoner av dimensjoner.
+1. Logg deg på Power Apps-miljøet, og åpne **Lagersynlighet**.
+1. Åpne **Konfigurasjon**-siden.
+1. På **Datakilde**-fanen velger du **Ny datakilde** for å legge til en datakilde.
 
-Lagersynlighet støtter følgende generelle basisdimensjoner.
+> [!NOTE]
+> Når du legger til en datakilde, må du validere datakildenavnet, de fysiske målene og dimensjonstilordningene før du oppdaterer konfigurasjonen for Lagersynlighet-tjenesten. Du kan ikke endre disse innstillingene etter at du har valgt **Oppdater konfigurasjon**.
+
+Konfigurasjonen for datakilden omfatter følgende deler:
+
+- Dimensjoner (dimensjonstilordning)
+- Fysiske mål
+- Beregnede mål
+
+### <a name="dimensions-dimension-mapping"></a><a name="data-source-configuration-dimension"></a>Dimensjoner (dimensjonstilordning)
+
+Formålet med dimensjonskonfigurasjonen er å standardisere integreringen med flere systemer for postering av hendelser og spørringer, basert på kombinasjoner av dimensjoner. Lagersynlighet har en liste over basisdimensjoner som kan tilordnes fra dimensjonene til datakilden. 33 dimensjoner er tilgjengelige for tilordning.
+
+- Hvis du bruker Supply Chain Management som én av datakildene, tilordnes 13 dimensjoner til standarddimensjonene i Supply Chain Management. 12 andre dimensjoner (`inventDimension1` til `inventDimension12`) tilordnes til egendefinerte dimensjoner i Supply Chain Management. De gjenværende åtte dimensjonene er utvidede dimensjoner som du kan tilordne til eksterne datakilder.
+- Hvis du ikke bruker Supply Chain Management som en av datakildene, kan du fritt tilordne dimensjonene. Følgende tabell viser den fullstendige listen over tilgjengelige dimensjoner.
+
+> [!NOTE]
+> Hvis dimensjonen din ikke er angitt i standarddimensjonslisten, og du bruker en ekstern datakilde, anbefaler vi at du bruker `ExtendedDimension1` til `ExtendedDimension8` for å utføre tilordningen.
 
 | Dimensjonstype | Basisdimensjon |
 |---|---|
@@ -73,7 +104,8 @@ Lagersynlighet støtter følgende generelle basisdimensjoner.
 | Lagerspesifikk | `LicensePlateId` |
 | Annet | `VersionId` |
 | Lager (egendefinert) | `InventDimension1` til `InventDimension12` |
-| Direktenummer | `ExtendedDimension1` til `ExtendedDimension8` |
+| Utvidelse | `ExtendedDimension1` til `ExtendedDimension8` |
+| System | `Empty` |
 
 > [!NOTE]
 > Dimensjonstypenen som er oppført i den forrige tabellen, er bare for referanse. Du trenger ikke definere dem i Lagersynlighet.
@@ -92,11 +124,24 @@ Eksterne systemer kan få tilgang til Lagersynlighet via sine RESTful-API-er. Fo
 
 Ved å konfigurere en dimensjonstilordning kan du sende de eksterne dimensjonene direkte til Lagersynlighet. Lagersynlighet konverterer deretter automatisk eksterne dimensjoner til basisdimensjoner.
 
+Følg fremgangsmåten nedenfor for å legge til dimensjonstilordninger.
+
+1. Logg deg på Power Apps-miljøet, og åpne **Lagersynlighet**.
+1. Åpne **Konfigurasjon**-siden.
+1. På **Datakilde**-fanen i delen **Dimensjonstilordninger** velger du **Legg til** for å legge til dimensjonstilordninger.
+    ![Legg til dimensjonstilordninger](media/inventory-visibility-dimension-mapping.png "Legg til dimensjonstilordninger")
+
+1. I **Dimensjonsnavn**-feltet angir du kildedimensjonen.
+1. I feltet **Til basisdimensjon** velger du dimensjonen i Lagersynlighet som du vil tilordne.
+1. Velg **Lagre**.
+
+Hvis datakilden for eksempel inneholder en produktfargedimensjon, kan du tilordne den til basisdimensjonen `ColorId` for å legge til en egendefinert `ProductColor`-dimensjon i `exterchannel`-datakilden. Deretter tilordnes den til `ColorId`-basisdimensjonen.
+
 ### <a name="physical-measures"></a>Fysiske mål
 
-Fysiske mål endrer antallet og gjenspeiler lagerstatusen. Du kan definere dine egne fysiske mål basert på dine krav.
+Når en datakilde posterer en lagerendring til Lagersynlighet, posteres denne endringen ved hjelp av *fysiske mål*. Fysiske mål endrer antallet og gjenspeiler lagerstatusen. Du kan definere dine egne fysiske mål basert på dine krav. Spørringer kan være basert på de fysiske målene.
 
-Lagersynlighet gir en liste over standard fysiske mål som er koblet til Supply Chain Management (datakilden `fno`). Følgende tabell inneholder et eksempel på fysiske mål.
+Lagersynlighet gir en liste over standard fysiske mål som er koblet til Supply Chain Management (datakilden `fno`). Disse standard fysiske målene hentes fra lagertransaksjonsstatusene på siden **Beholdningsliste** i Supply Chain Management (**Lagerstyring \> Forespørsler og rapporter \> Beholdningsliste**). Følgende tabell inneholder et eksempel på fysiske mål.
 
 | Navn på fysisk mål | beskrivelse |
 |---|---|
@@ -117,9 +162,31 @@ Lagersynlighet gir en liste over standard fysiske mål som er koblet til Supply 
 | `ReservOrdered` | Reservert av bestilt |
 | `ReservPhysical` | Fysisk reservert |
 
-### <a name="calculated-measures"></a><a name="data-source-configuration-calculated-measure"></a>Beregnede mål
+Hvis datakilden er Supply Chain Management, trenger du ikke å opprette standard fysiske mål på nytt. For eksterne datakilder kan du imidlertid opprette nye fysiske mål ved å følge disse trinnene.
 
-Beregnede mål gir en tilpasset beregningsformel som består av en kombinasjon av fysiske mål. Med denne funksjonaliteten kan du definere et sett med fysiske mål som skal legges til, eller et sett med fysiske mål som skal trekkes fra, for å kunne lage det egendefinerte målet.
+1. Logg deg på Power Apps-miljøet, og åpne **Lagersynlighet**.
+1. Åpne **Konfigurasjon**-siden.
+1. På **Datakilde**-fanen i delen **Fysiske mål** velger du **Legg til**, angir et navn på kildemålet og lagrer endringene.
+
+### <a name="calculated-measures"></a>Beregnede mål
+
+Du kan bruke Lagersynlighet til å spørre både på fysiske lagermål og *egendefinerte beregnede mål*. Beregnede mål gir en tilpasset beregningsformel som består av en kombinasjon av fysiske mål. Med denne funksjonaliteten kan du definere et sett med fysiske mål som skal legges til, eller et sett med fysiske mål som skal trekkes fra, for å kunne lage det egendefinerte målet.
+
+Ved hjelp av konfigurasjonen kan du definere et sett med modifikatorer som legges til eller trekkes fra for å få totalt akkumulert utdataantall.
+
+Hvis du vil konfigurere et egendefinert beregnet mål, gjør du følgende.
+
+1. Logg deg på Power Apps-miljøet, og åpne **Lagersynlighet**.
+1. Åpne **Konfigurasjon**-siden.
+1. På fanen **Beregnet mål** velger du **Nytt beregnet mål** for å legge til et beregnet mål. Deretter angir du feltene som beskrevet i følgende tabell.
+
+    | Felt | Verdi |
+    |---|---|
+    | Navn på nytt beregnet mål | Angi navnet på det beregnede målet. |
+    | Datakilde | Spørringssystemet er en datakilde. |
+    | Datakilde for modifikator | Angi datakilden for modifikatoren. |
+    | Modifikator | Angi navnet på modifikatoren. |
+    | Modifikatortype | Velg modifikatortypen (*Addisjon* eller *Subtraksjon*). |
 
 Du har for eksempel følgende spørringsresultat.
 
@@ -202,7 +269,7 @@ Når denne beregningsformelen brukes, vil det nye resultatet av spørringen inne
 ]
 ```
 
-`MyCustomAvailableforReservation`-utdataene, basert på beregningsinnstillingen i de egendefinerte målene, er 100 + 50 + 80 + 90 + 30 – 10 – 20 – 60 – 40 = 220.
+`MyCustomAvailableforReservation`-utdataene, basert på beregningsinnstillingen i de egendefinerte målene, er 100 + 50 – 10 + 80 – 20 + 90 + 30 – 60 – 40 = 220.
 
 ## <a name="partition-configuration"></a><a name="partition-configuration"></a>Partisjonskonfigurasjon
 
@@ -230,11 +297,21 @@ Lagersynlighet gir fleksibilitet ved å la deg definere _indeksene_. Disse indek
 | Dimensjon | Basisdimensjoner som resultatet av spørringen samles opp på. |
 | Hierarki | Hierarkiet brukes til å definere dimensjonskombinasjonene som støttes, som det kan spørres om. Du kan for eksempel definere et dimensjonssett som har en hierarkisekvens av `(ColorId, SizeId, StyleId)`. I dette tilfellet støtter systemet spørringer for fire dimensjonskombinasjoner. Den første kombinasjonen er tom, den andre er `(ColorId)`, den tredje er `(ColorId, SizeId)` og den fjerde er `(ColorId, SizeId, StyleId)`. De andre kombinasjonene støttes ikke. Hvis du vil ha mer informasjon, kan du se eksemplet nedenfor. |
 
+Gjør følgende for å konfigurere produkthierarkiindeksen.
+
+1. Logg deg på Power Apps-miljøet, og åpne **Lagersynlighet**.
+1. Åpne **Konfigurasjon**-siden.
+1. På fanen **Produkthierarkiindeks** i delen **Dimensjonstilordninger** velger du **Legg til** for å legge til dimensjonstilordninger.
+1. Som standard vises det en liste over indekser. Hvis du vil endre en eksisterende indeks, velger du **Rediger** eller **Legg til** i delen for den relevante indeksen. Hvis du vil opprette et nytt indekssett, velger du **Nytt indekssett**. For hver rad i hvert indekssett velger du fra listen over basisdimensjoner i **Dimensjon**-feltet. Verdier for følgende felter genereres automatisk:
+
+    - **Settnummer** – Dimensjoner som tilhører samme gruppe (indeks), blir gruppert sammen, og det samme settnummeret tilordnes dem.
+    - **Hierarki** – Hierarkiet brukes til å definere dimensjonskombinasjonene som støttes, som det kan spørres om i en dimensjonsgruppe (indeks). Hvis du for eksempel definerer en dimensjonsgruppe som har hierarkisekvensen *Stil*, *Farge* og *Størrelse*, støtter systemet resultatet av tre spørringsgrupper. Den første gruppen er kun stil. Den andre gruppen er en kombinasjon av stil og farge. Og den tredje gruppen er en kombinasjon av stil, farge og størrelse. De andre kombinasjonene støttes ikke.
+
 ### <a name="example"></a>Eksempel
 
 Denne delen inneholder et eksempel som viser hvordan hierarkiet fungerer.
 
-Du har følgende varer i beholdningen.
+Følgende tabell inneholder en liste over tilgjengelig beholdning for dette eksemplet.
 
 | Element | ColorId | SizeId | StyleId | Antall |
 |---|---|---|---|---|
@@ -246,7 +323,7 @@ Du har følgende varer i beholdningen.
 | T-skjorte | Rød | Liten | Vanlig | 6 |
 | T-skjorte | Rød | Stor | Vanlig | 7 |
 
-Her er indeksen.
+Tabellen nedenfor viser hvordan indekshierarkiet er satt opp.
 
 | Settnummer | Dimensjon | Hierarki |
 |---|---|---|
@@ -284,6 +361,8 @@ Ved hjelp av indeksen kan du utføre spørringer på lagerbeholdningen på følg
 
 > [!NOTE]
 > Basisdimensjoner som er definert i partisjonskonfigurasjonen, bør ikke defineres i indekskonfigurasjoner.
+> 
+> Hvis du bare må spørre etter lager som samles opp av alle dimensjonskombinasjonene, kan du definere en enkelt indeks som inneholder basisdimensjonen `Empty`.
 
 ## <a name="reservation-configuration-optional"></a><a name="reservation-configuration"></a>Reservasjonskonfigurasjon (valgfritt)
 
@@ -296,22 +375,37 @@ Reservasjonskonfigurasjon er nødvendig hvis du vil bruke funksjonen for ikke-fo
 
 ### <a name="soft-reservation-mapping"></a>Tilordning av ikke-forpliktende reservasjon
 
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
 Når du foretar en reservasjon, ønsker du kanskje å vite om lagerbeholdningen for øyeblikket er tilgjengelig for reservasjon. Valideringen er koblet til et beregnet mål som representerer en beregningsformel for en kombinasjon av fysiske mål.
 
-Et reservasjonsmål er for eksempel basert på det fysiske målet `SoftReservOrdered` fra datakilden `iv` (Lagersynlighet). I dette tilfellet kan du definere det beregnede målet `AvailableToReserve` for datakilden `iv`, som vist her.
+Når du definerer tilordningen fra det fysiske målet til det beregnede målet, kan Lagersynlighet-tjenesten automatisk validere tilgjengelighet for reservering, basert på det fysiske målet.
 
-| Beregningstype | Datakilde | Fysisk mål |
-|---|---|---|
-| Tillegg | `fno` | `AvailPhysical` |
-| Tillegg | `pos` | `Inbound` |
-| Subtraksjon | `pos` | `Outbound` |
-| Subtraksjon | `iv` | `SoftReservOrdered` |
+Før du kan sette opp denne tilordningen, må de fysiske målene, de beregnede målene og datakildene være definert på fanene **Datakilde** og **Beregnet mål** på **Konfigurasjon**-siden i Power Apps (som beskrevet tidligere i dette emnet).
 
-Deretter konfigurerer du en tilordning for ikke-forpliktende reservasjon for å angi en tilordning fra reservasjonsmålet `SoftReservOrdered` til det beregnede målet `AvailableToReserve`.
+Følg denne fremgangsmåten for å definere tilordningen for ikke-forpliktende reservasjon.
 
-| Datakilde for fysisk mål | Fysisk mål | Tilgjengelig for datakilde for reservasjon | Tilgjengelig for beregnet mål for reservasjon |
-|---|---|---|---|
-| `iv` | `SoftReservOrdered` | `iv` | `AvailableToReserve` |
+1. Definer det fysiske målet som fungerer som mål for ikke-forpliktende reservasjon (for eksempel `SoftReservOrdered`).
+1. På fanen **Beregnet mål** på **Konfigurasjon**-siden definerer du det beregnede målet *Tilgjengelig for reservasjon* (TFR) som inneholder AFR-beregningsformelen som du ønsker å tilordne til det fysiske målet. Du kan for eksempel definere `AvailableToReserve` (tilgjengelig for reservasjon), slik at det er tilordnet det tidligere definerte fysiske målet `SoftReservOrdered`. På denne måten kan du finne ut hvilke antall som har beholdningsstatusen `SoftReservOrdered`, og som er tilgjengelige for reservering. Tabellen nedenfor viser TFR-beregningsformelen.
+
+    | Beregningstype | Datakilde | Fysisk mål |
+    |---|---|---|
+    | Tillegg | `fno` | `AvailPhysical` |
+    | Tillegg | `pos` | `Inbound` |
+    | Subtraksjon | `pos` | `Outbound` |
+    | Subtraksjon | `iv` | `SoftReservOrdered` |
+
+    Vi anbefaler at du definerer det beregnede målet slik at det inneholder det fysiske målet som reservasjonsmålet er basert på. På denne måten påvirkes det beregnede målingsantallet av reservasjonsmålingsantallet. I dette eksemplet bør derfor den `AvailableToReserve` beregnede målingen for `iv` datakilden inneholde det `SoftReservOrdered` fysiske målet fra `iv` som en komponent.
+
+1. Åpne **Konfigurasjon**-siden.
+1. På fanen **Tilordning av ikke-forpliktende reservasjon** konfigurerer du tilordningen fra det fysiske målet til det beregnede målet. For det forrige eksemplet kan du bruke følgende innstillinger til å tilordne `AvailableToReserve` til det tidligere definerte fysiske målet `SoftReservOrdered`.
+
+    | Datakilde for fysisk mål | Fysisk mål | Tilgjengelig for datakilde for reservasjon | Tilgjengelig for beregnet mål for reservasjon |
+    |---|---|---|---|
+    | `iv` | `SoftReservOrdered` | `iv` | `AvailableToReserve` |
+
+    > [!NOTE]
+    > Hvis ikke kan redigere fanen **Tilordning av ikke-forpliktende reservasjon**, må du kanskje aktivere funksjonen *OnHandReservation* på **Funksjonsbehandling**-fanen.
 
 Når du nå reserverer i `SoftReservOrdered`, vil Lagersynlighet automatisk finne `AvailableToReserve`, og den relaterte beregningsformelen brukes til å validere reservasjonen.
 
@@ -348,11 +442,16 @@ I dette tilfellet gjelder følgende beregning:
 
 Hvis du prøver å gjøre reservasjoner på `iv.SoftReservOrdered` og antallet er mindre enn eller lik `AvailableToReserve` (10), kan du derfor gjøre reservasjonen.
 
+> [!NOTE]
+> Når du kaller reservasjons-API, kan du styre reservasjonsvalideringen ved å angi den boolske `ifCheckAvailForReserv` parameteren i forespørselsteksten. Verdien `True` betyr at valideringen kreves, mens en verdi å `False` betyr at valideringen ikke er nødvendig. Standardverdien er `True`.
+
 ### <a name="soft-reservation-hierarchy"></a>Hierarki for ikke-forpliktende reservasjon
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Reservasjonshierarkiet beskriver serien med dimensjoner som må angis når det opprettes reservasjoner. Det fungerer på samme måte som produktindekshierarkiet fungerer for lagerbeholdningsspørringer.
 
-Reservasjonshierarkiet er uavhengig av produktindekshierarkiet. Denne uavhengigheten lar deg implementere kategoriadministrasjon der brukere kan dele inn dimensjonene i detaljer for å angi krav til å lage mer presise reservasjoner.
+Reservasjonshierarkiet er uavhengig av produktindekshierarkiet. Denne uavhengigheten lar deg implementere kategoriadministrasjon der brukere kan dele inn dimensjonene i detaljer for å angi krav til å lage mer presise reservasjoner. Mykt reservasjonshierarki bør inneholde `SiteId` og `LocationId` som komponenter fordi de konstruerer partisjonskonfigurasjonen. Når du gjør reservasjonen, må du angi en partisjon for produktet.
 
 Her er et eksempel på et hierarki for ikke-forpliktende reservasjon.
 
@@ -364,10 +463,8 @@ Her er et eksempel på et hierarki for ikke-forpliktende reservasjon.
 | `SizeId` | 4 |
 | `StyleId` | 5 |
 
-I dette eksemplet kan du reservere i følgende dimensjonssekvenser:
+I dette eksemplet kan du reservere i følgende dimensjonssekvenser. Når du gjør reservasjonen, må du angi en partisjon for produktet. Derfor er `(SiteId, LocationId)` det grunnleggende hierarkiet du kan bruke.
 
-- `()` – Ingen dimensjon er angitt.
-- `(SiteId)`
 - `(SiteId, LocationId)`
 - `(SiteId, LocationId, ColorId)`
 - `(SiteId, LocationId, ColorId, SizeId)`
@@ -375,9 +472,24 @@ I dette eksemplet kan du reservere i følgende dimensjonssekvenser:
 
 En gyldig dimensjonssekvens skal følge reservasjonshierarkiet, dimensjonen for dimensjon. Hierarkisekvensen `(SiteId, LocationId, SizeId)` er for eksempel ikke gyldig, fordi `ColorId` mangler.
 
+## <a name="complete-and-update-the-configuration"></a>Fullfør og oppdater konfigurasjonen
+
+Når du har fullført konfigurasjonen, må du aktivere alle endringene i Lagersynlighet. Du aktiverer endringer ved å velge **Oppdater konfigurasjon** øverst til høyre på **Konfigurasjon**-siden i Power Apps.
+
+Første gang du velger **Oppdater konfigurasjon**, ber systemet deg om legitimasjon.
+
+- **Klient-ID** – ID-en for Azure-app som du opprettet for Lagersynlighet.
+- **Leier-ID** – ID-en til Azure-leieren.
+- **Klienthemmelighet** – Hemmeligheten for Azure-app som du opprettet for Lagersynlighet.
+
+Når du har logget deg på, blir konfigurasjonen oppdatert i Lagersynlighet-tjenesten.
+
+> [!NOTE]
+> Du må validere datakildenavnet, de fysiske målene og dimensjonstilordningene før du oppdaterer konfigurasjonen for Lagersynlighet-tjenesten. Du kan ikke endre disse innstillingene etter at du har valgt **Oppdater konfigurasjon**.
+
 ## <a name="default-configuration-sample"></a><a name="default-configuration-sample"></a>Eksempel på standard konfigurasjon
 
-I løpet av initialiseringsstadiet definerer Lagersynlighet en standardkonfigurasjon. Du kan endre konfigurasjonen etter behov.
+I løpet av initialiseringsstadiet definerer Lagersynlighet en standardkonfigurasjon, som er forklart her. Du kan endre denne konfigurasjonen etter behov.
 
 ### <a name="data-source-configuration"></a>Konfigurasjon av datakilde
 

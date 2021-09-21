@@ -2,7 +2,7 @@
 title: Utforme flerspråklige rapporter i elektronisk rapportering
 description: Dette emnet beskriver hvordan du kan bruke etiketter for elektronisk rapportering (ER) til å utforme og generere flerspråklige rapporter.
 author: NickSelin
-ms.date: 04/21/2021
+ms.date: 09/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 86facc26f57b3ab166d6274689d774adbac50e46aa7759cfd079a0ef5a45456e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e199b350101e10ba3e424894f4dc9881d05c9558
+ms.sourcegitcommit: 81bc42551e6c9af6ad38908afb606ee1f8d3c44b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718435"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7473411"
 ---
 # <a name="design-multilingual-reports-in-electronic-reporting"></a>Utforme flerspråklige rapporter i elektronisk rapportering
 
 [!include[banner](../includes/banner.md)]
+
+[!include[banner](../includes/preview-banner.md)]
 
 ## <a name="overview"></a>Oversikt
 
@@ -229,10 +231,14 @@ Som beskrevet tidligere i dette emnet kan attributene **Etikett** og **Beskrivel
 - Verdien av en ER-etikett som er koblet til **Etikett**-attributtene, lagres i **Etikett**-feltet for den returnerte posten.
 - Verdien av en ER-etikett som er koblet til **Beskrivelse**-attributtene, lagres i **Beskrivelse**-feltet for den returnerte posten.
 
+## <a name="performance"></a><a name=performance></a>Ytelse
+
+Når du konfigurerer en ER-formatkomponent til å generere en rapport på ditt foretrukne [språk](#language), eller til å importere et innkommende dokument der innholdet analyseres etter foretrukket språk, anbefaler vi at du aktiverer funksjonen for å **hurtigbufre foretrukket språk for gjeldende bruker for ER-kjøring** i arbeidsområdet [Funksjonsbehandling](../../fin-ops/get-started/feature-management/feature-management-overview.md). Denne funksjonen bidrar til å forbedre ytelsen, spesielt for ER-formatkomponenter som inneholder flere referanser til etiketter i ER-formler og bindinger, og mange [validering](general-electronic-reporting-formula-designer.md#TestFormula)-regler for å generere brukermeldinger på ønsket språk.
+
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 - [Oversikt over elektronisk rapportering](general-electronic-reporting.md)
-- [Funksjoner for elektronisk rapportering](er-formula-language.md#functions)
+- [Funksjoner for elektronisk rapportering](er-formula-language.md#Functions)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

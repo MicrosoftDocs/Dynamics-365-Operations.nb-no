@@ -2,7 +2,7 @@
 title: Administrasjonskomponenter for elektronisk fakturering
 description: Dette emnet inneholder informasjon om komponentene som er knyttet til administrasjon av Elektronisk fakturering.
 author: gionoder
-ms.date: 04/29/2021
+ms.date: 08/31/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 6582a0a9eda19fe69ead853ea5d79d763afcb8a468717fde84a32146fd0f79af
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d187e8a03552258099d7021ff056d0726ea60ca1
+ms.sourcegitcommit: baf82100f0aa7d5f5f47c7f54bc155d8a07beab5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721732"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7463887"
 ---
 # <a name="electronic-invoicing-administration-components"></a>Administrasjonskomponenter for elektronisk fakturering
 
@@ -31,14 +31,14 @@ Dette emnet inneholder informasjon om komponentene som er knyttet til administra
 
 ## <a name="azure"></a>Azure
 
-Bruk Microsoft Azure for å opprette key vault-hemmelighetene og lagringskontoen. Deretter bruker du konfigurasjonen av Elektronisk fakturering.
+Bruk Microsoft Azure for å opprette Key Vault-hemmelighetene og konfigurere en lagringskonto. Deretter kan du bruke Key Vault-hemmelighetene og SAS-tokenet for lagringskontoen i konfigurasjonen av Elektronisk fakturering.
 
 ## <a name="lifecycle-services"></a>Lifecycle Services
 
-Bruk Microsoft Dynamics Lifecycle Services (LCS) til å aktivere mikrotjenestene på LCS-distribusjonsprosjektet.
+Bruk Microsoft Dynamics Lifecycle Services (LCS) til å aktivere tillegget for elektronisk fakturering på LCS-distribusjonsprosjektet.
 
 > [!NOTE]
-> Installasjonen av mikrotjenesten i LCS krever minst en virtuell maskin på nivå 2. Hvis du vil ha mer informasjon om miljøplanlegging, kan du se [Miljøplanlegging](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
+> Installasjonen av tilleggstjenesten i LCS krever minst et **miljø på lag 2**. Hvis du vil ha mer informasjon om miljøplanlegging, kan du se [Miljøplanlegging](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
  
 
 ## <a name="regulatory-configuration-services"></a>Regulatory Configuration Services
@@ -53,20 +53,21 @@ Hvis du vil ha mer informasjon om RCS, kan du se [Regulatory Configuration Servi
 
 Før du kan bruke RCS til å konfigurere elektroniske fakturaer, må du konfigurere RCS til å tillate kommunikasjon med Elektronisk fakturering. Du fyller ut denne konfigurasjonen i kategorien **Elektronisk fakturering** på siden **Parametere for elektronisk rapportering**.
 
-#### <a name="service-endpoint"></a>Tjenestesluttpunkt
+#### <a name="service-endpoint"></a><a id='svc-endpoint-uris'></a>Tjenestesluttpunkt
 
 Elektronisk fakturering er tilgjengelig i flere geografiske områder for Azure-datasenteret. I tabellen nedenfor finner du en oversikt over tilgjengelighet per område.
 
-| Azure-datasentergeografi |
-|----------------------------|
-| USA              |
-| Europa                     |
-| Storbritannia             |
-| Asia                       |
+
+| Datasenter Azure-geografi | URI for tjenestesluttpunkt                                                       |
+|----------------------------|----------------------------------------------------------------------------|
+| USA              | <p>https://gw.us-il101.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il102.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il103.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il104.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il105.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il106.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il107.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il108.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il109.gateway.prod.island.powerapps.com/electronicinvoicing</p> |
+| Europa                     | <p>https://gw.eu-il101.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il102.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il103.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il104.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il105.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il106.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il107.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il108.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il109.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il110.gateway.prod.island.powerapps.com/electronicinvoicing/</p> |
+| Storbritannia             | <p>https://gw.uk-il101.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.uk-il102.gateway.prod.island.powerapps.com/electronicinvoicing/</p> |
+| Asia                       | <p>https://gw.as-il101.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.as-il102.gateway.prod.island.powerapps.com/electronicinvoicing/</p> |
 
 ### <a name="service-environments"></a>Tjenestemiljøer
 
-Tjenestemiljøer er logiske partisjoner som opprettes for å støtte utføring av funksjonene for elektronisk fakturering i Elektronisk fakturering. Sikkserhetshemmelighetene og de digitale sertifikatene, og styringen (det vil si tilgangstillatelser), må konfigureres på tjenestemiljønivå.
+Tjenestemiljøer er logiske partisjoner som opprettes for å støtte utføring av globaliseringsfunksjonene i Elektronisk fakturering. Sikkserhetshemmelighetene og de digitale sertifikatene, og styringen (det vil si tilgangstillatelser), må konfigureres på tjenestemiljønivå.
 
 Kunder kan opprette så mange tjenestemiljøer de vil. Alle tjenestemiljøene som en kunde oppretter, er uavhengige av hverandre.
 
@@ -84,8 +85,8 @@ Tjenestemiljøer kan administreres via status. Mulige alternativer er:
 
 Tjenesten Elektronisk fakturering er ansvarlig for lagring av alle forretningsdata i Azure-ressursene som firmaet ditt eier. For å sikre at tjenesten fungerer som den skal, og at det blir gitt tilgang til alle forretningsdataene som trengs for og genereres av Elektronisk fakturering, på riktig måte, må du opprette to hoved-Azure-ressurser:
 
-- En Azure Storage-konto (blob-lagring) som lagrer elektroniske fakturaer
-- Et Azure Key Vault som lagrer sertifikater og URIen (Uniform Resource Identifier) for lagringskontoen
+- En Azure Storage-konto (Blob Storage) som lagrer elektroniske dokumenter, inkludert elektroniske fakturaer, resultater av dokumenttransformasjoner og svar fra eksterne webtjenester.
+- Et Azure Key Vault som lagrer sertifikater og URIen (Uniform Resource Identifier) for lagringskontoen (SAS-token).
 
 
 En dedikert Key Vault- og kundelagringskonto må tilordnes spesifikt for bruk med Elektronisk fakturering. Hvis du vil ha mer informasjon, kan du se [Opprette en Azure Storage-konto og et Key Vault](e-invoicing-create-azure-storage-account-key-vault.md).
@@ -122,13 +123,13 @@ Hvis du vil aktivere kommunikasjon mellom Finance og Supply Chain Management og 
 
 Endepunktet for tjeneste er URL-adressen der Elektronisk fakturering er plassert. Før du elektroniske fakturaer kan utstedet må endepunktet for tjenesten konfigurere i Finance og Supply Chain Management, slik at det er tillatt å kommunisere med tjenesten.
 
-For å konfigurere tjenestesluttpunktet, kan du gå til **Organisasjonsadministrasjon \> Oppsett \> parametere for elektronisk dokument**, og deretter, i fanen **Innsendingstjenester** i feltet **URL for Elektronisk faktura**, angir du URL-en som beskrevet i tabellen som er beskrevet i delen **Tjenestesluttpunkt**.
+For å konfigurere tjenestesluttpunktet, kan du gå til **Organisasjonsadministrasjon \> Oppsett \> Parametere for elektronisk dokument**, og deretter, i fanen **Elektronisk fakturering** i feltet **URL for endepunkt**, angir du den passende URL-en fra tabellen i delen [Tjenestesluttpunkt](#svc-endpoint-uris) som er beskrevet tidligere i dette emnet.
 
 #### <a name="environments"></a>Miljøer
 
 Miljønavnet som angis i Finance og Supply Chain Management, refererer til navnet på miljøet som opprettes i RCS og publiseres i Elektronisk fakturering.
 
-Miljøet må konfigureres i kategorien **Innsendingstjenester** på siden **Parameter for elektronisk dokument**, slik at hver forespørsel om å utstede elektroniske fakturaer, inneholder miljøet der Elektronisk fakturering kan fastslå hvilken elektronisk faktureringsfunksjon som må behandle forespørselen.
+Miljøet må konfigureres i kategorien **Elektronisk fakturering** på siden **Parametere for elektronisk dokument**. På den måten inneholder alle forespørsler om å utstede elektroniske fakturaer, miljøet der elektronisk fakturering kan bestemme hvilken elektronisk faktureringsfunksjon som må behandle forespørselen.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

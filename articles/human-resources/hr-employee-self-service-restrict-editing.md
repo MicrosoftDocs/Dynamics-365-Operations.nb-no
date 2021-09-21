@@ -1,8 +1,8 @@
 ---
 title: Begrense redigering av personlige opplysninger
 description: Du kan hindre at ansatte redigerer kontaktdetaljer i Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 03/03/2020
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 87977ff004e0785ec1d31fe3abac2728f87e7083348895b58e58f46cd3e79925
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c4a13818103434df5005ad2805ac2ea7495bb767
+ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748889"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "7431411"
 ---
 # <a name="restrict-editing-of-personal-information"></a>Begrense redigering av personlige opplysninger
 
@@ -54,7 +54,7 @@ Dette emnet beskriver hvordan du begrenser ansatte fra å redigere kontaktdetalj
 
 Når du har begrenset ansatte fra å legge til eller redigere kontaktdetaljer, kan de se informasjonen, men kan ikke endre den.
 
-I dette eksemplet hvor ansatte er begrenset fra å redigere kontaktdetaljer for **Virksomhet**, kan de likevel se informasjonen i Selvbetjening for ansatte:
+I dette eksemplet hvor ansatte er begrenset fra å redigere kontaktdetaljer for **Virksomhet**, kan de likevel se informasjonen i **Selvbetjening for ansatte**:
 
 ![Vise detaljer for forretningskontakter.](./media/hr-employee-self-service-restrict-view.png)
 

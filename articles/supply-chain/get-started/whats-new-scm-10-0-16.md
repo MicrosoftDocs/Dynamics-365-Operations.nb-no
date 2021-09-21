@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-11-30
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 58a69907bdd1b03ea2e025b736dbbf84eed73c76d54bd5c93386ba8a627f095f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4c5c8e1d13a58b5ebc68315c75e5245cb10377f3
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712055"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474922"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10016-february-2021"></a>Hva er nytt eller endret i Dynamics 365 Supply Chain Management 10.0.16 (februar 2021)
 
@@ -56,30 +56,6 @@ Vi har nylig lagt til eller betydelig oppdatert følgende hjelpeemner. De er ikk
 - [Oversikt over farlige materialer](../pim/hazmat-overview.md) (og beslektede emner)
 - [Overføring til planleggingsoptimalisering for hovedplanlegging](../master-planning/new-master-planning-engine.md)
 - [Kjøp av cXML-forbedringer](../procurement/purchasing-cxml-enhancements.md)
-- [Feilsøke kostnadsstyring](../cost-management/troubleshoot-costmanagement.md)
-- [Feilsøke innkommende lageroperasjoner](../warehousing/troubleshoot-warehouse-inbound.md)
-- [Feilsøke lastplanlegging og forsendelser](../warehousing/troubleshoot-warehouse-loads-shipments.md)
-- [Feilsøke hovedplanlegging](../master-planning/troubleshoot-masterplanning.md)
-- [Feilsøke utgående lageroperasjoner](../warehousing/troubleshoot-warehouse-outbound.md)
-- [Feilsøke delvise frigivelser og delvise leveringer](../warehousing/troubleshoot-warehouse-partial-release-shipment.md)
-- [Feilsøke produktkonfiguratoren](../pim/troubleshooting-productconfigurator.md)
-- [Feilsøke produktinformasjon](../pim/troubleshooting-productinformation.md)
-- [Feilsøke arbeidsflyter for innkjøp og leverandører](../procurement/troubleshoot-procurementworkflows.md)
-- [Feilsøke bestillinger](../procurement/troubleshoot-purchaseorders.md)
-- [Feilsøke priser, rabatter og avtaler](../procurement/troubleshooting-pricediscountagreements.md)
-- [Feilsøke mottakssedler og fakturering](../procurement/troubleshooting-productreceiptinvoicing.md)
-- [Feilsøke stykkproduksjon](../production-control/troubleshoot-discretemanufacturing.md)
-- [Feilsøke plukking og pakking](../warehousing/troubleshoot-warehouse-picking-packing.md)
-- [Feilsøke prosessproduksjon](../production-control/troubleshoot-processmanufacturing.md)
-- [Feilsøke reserveringer i lagerstyring](../warehousing/troubleshoot-warehouse-reservations.md)
-- [Feilsøke salgsordrer](../sales-marketing/troubleshooting-sales.md)
-- [Feilsøke salgstilbud](../sales-marketing/troubleshooting-salesquotation.md)
-- [Feilsøke oppgradering og overføring til avansert lagerstyring](../warehousing/troubleshoot-warehouse-upgrade-migration.md)
-- [Feilsøke problemer med tilkobling til mobilappen Lagerstyring](../warehousing/troubleshoot-warehouse-app-connection.md)
-- [Feilsøk lagerkonfigurasjon](../warehousing/troubleshoot-warehouse-configuration.md)
-- [Feilsøke lageretterfylling](../warehousing/troubleshoot-warehouse-replenishment.md)
-- [Feilsøke lageroppsett](../warehousing/troubleshoot-warehouse-setup.md)
-- [Feilsøke lagerarbeid](../warehousing/troubleshoot-warehouse-work.md)
 - [Plasseringsklynger](../warehousing/putaway-clusters.md)
 - [Etterfyllingsstrategier](../warehousing/replenishment-strategies.md)
 - [Oppdelt arbeid](../warehousing/work-split.md)

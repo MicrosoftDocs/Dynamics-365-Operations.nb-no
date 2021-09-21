@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2021-04-21
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 76a3cc316da322c7997072c00780f2fc133bfd2a02274b1e53f5cd06cfb1277e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 685c8951b7c0d8524091cf06306388736d894f58
+ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748865"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7471650"
 ---
 # <a name="message-processor-messages"></a>Meldinger for meldingsprosessor
 
@@ -44,7 +44,7 @@ Du kan bruke feltene øverst på **Meldinger for meldingsprosessor** for å finn
   - *Satt i kø* – Meldingen er klar til å behandles av meldingsprosessoren.
   - *Behandlet* – Meldingen ble behandlet av meldingsprosessoren.
   - *Annullert* – Meldingen ble behandlet, men behandling mislyktes.
-- **Meldingsinnhold** – Dette filteret utfører et fullstendig tekstsøk av meldingsinnholdet. (Meldingsinnhold vises ikke i rutenettet). Filteret behandler de fleste spesielle symboler (for eksempel «-») som mellomrom, og behandler alle mellomromstegn som boolske OR-operatorer. T=Dette betyr for eksempel at hvis du søker etter en bestemt `journalid`-verdi som er lik "USMF-123456", vil systemet finne alle meldinger som inneholder "USMF" eller "123456", som sannsynligvis vil være en lang liste. Derfor vil det være bedre å angi bare "123456" alene, fordi det vil gi mer spesifikke resultater.
+- **Meldingsinnhold** – Dette filteret utfører et fullstendig tekstsøk av meldingsinnholdet. (Meldingsinnhold vises ikke i rutenettet). Filteret behandler de fleste spesielle symboler (for eksempel «-») som mellomrom, og behandler alle mellomromstegn som boolske OR-operatorer. Dette betyr for eksempel at hvis du søker etter en bestemt `journalid`-verdi som er lik "USMF-123456", vil systemet finne alle meldinger som inneholder "USMF" eller "123456", som sannsynligvis vil være en lang liste. Derfor vil det være bedre å angi bare "123456" alene, fordi det vil gi mer spesifikke resultater.
 
 ## <a name="example-message-type-request-inventory-adjustment-financial-update"></a>Eksempel på meldingstype: Be om økonomisk oppdatering av lagerjustering
 
@@ -65,7 +65,7 @@ Verktøylinjen i kategorien **Logg** inneholder følgende knapper:
 
 ## <a name="message-processor-batch-job"></a>Satsvis jobb for meldingsbehandler
 
-Når du kjører en sky- og kantdistribusjon, aktiveres den satsvise jobben for *Meldingsbehandler* automatisk når det opprettes en ny melding for behandling, slik at du ikke behøver å planlegge denne jobben manuelt.
+Når du kjører en distribuert hybridtopologi, aktiveres den satsvise jobben for *Meldingsbehandler* automatisk når det opprettes en ny melding for behandling, slik at du ikke behøver å planlegge denne jobben manuelt.
 
 Hvis nødvendig kan du få tilgang til den satsvise jobben ved å gå til **Systemadministrasjon > Meldingsbehandling > Meldingsbehandling**.
 

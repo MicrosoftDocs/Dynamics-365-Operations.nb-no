@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-06-15
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 96a644bf129de6dd3f78098bcb6415d17058d6decbd7d904a99bb6f050d3a9e0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c30df23debed9e2ab90745e6ea9d0e6b8a05b6d5
+ms.sourcegitcommit: 4d11061f5de0ddba1f968bd5c3fd694a8b104ccc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730448"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "7429273"
 ---
 # <a name="payroll-variable-compensation-plan"></a>Variabel kompensasjonsplan for lønn
 
@@ -36,44 +36,51 @@ Fysisk navn: mshr_payrollvariablecompensationawardentity.
 
 | Egenskap</br>**Fysisk navn**</br>**_Type_** | Bruk | beskrivelse |
 | --- | --- | --- |
-| **Personalnummer**</br>mshr_personnelnumber</br>*Streng* | Skrivebeskyttet</br>Obligatorisk |Det unike personalnummeret til den ansatte.  |
-| **Belønningsdato**</br>mshr_awarddate</br>*Motregning av dato/klokkeslett* | Skrivebeskyttet</br>Obligatorisk | Dato for belønningen. |
-| **Belønningstype**</br>mshr_awardtype</br>*[mshr_HrmCompVarAwardEmplType-alternativsett](hr-admin-integration-payroll-api-award-type.md)* | Skrivebeskyttet</br>Obligatorisk | Belønningstypen som er definert for den variable kompensasjonsplanen. |
-| **Valuta.**</br>mshr_unitcurrencycode</br>*Streng* | Skrivebeskyttet </br>Obligatorisk |Valutaen som er definert for den variable kompensasjonsplanen.   |
+| **Personalnummer**</br>mshr_personnelnumber</br>*Streng* | Skrivebeskyttet | Det unike personalnummeret til den ansatte.  |
+| **Belønningsdato**</br>mshr_awarddate</br>*Motregning av dato/klokkeslett* | Skrivebeskyttet | Dato for belønningen. |
+| **Belønningstype**</br>mshr_awardtype</br>*[mshr_HrmCompVarAwardEmplType-alternativsett](hr-admin-integration-payroll-api-award-type.md)* | Skrivebeskyttet | Belønningstypen som er definert for den variable kompensasjonsplanen. |
+| **Valuta.**</br>mshr_unitcurrencycode</br>*Streng* | Skrivebeskyttet |Valutaen som er definert for den variable kompensasjonsplanen.   |
 | **Fast kompensasjonsplan-ID**</br>mshr_fixedplanid</br>*Streng* | Skrivebeskyttet | Den faste kompensasjonsplanen som brukes som basis for beregningen av belønningen. |
 | **Enhetsverdi**</br>mshr_awardamount</br>*Desimal* | Skrivebeskyttet | Verdien på enheten |
 | **Prosesstype**</br>mshr_processtype</br>*[mshr_hrmCompProcessType-alternativsett](hr-admin-integration-payroll-api-process-type.md)* | Skrivebeskyttet | Prosesstypen. |
 | **Variabel kompensasjonsplantype**</br>Streng</br>*mshr_typeid* | Skrivebeskyttet | Typen variabel kompensasjonsplan. |
 | **ID for variabel kompensasjonsplan**</br>Streng</br>*mshr_planid* | Skrivebeskyttet | ID-en for den variable kompensasjonsplanen. |
+| **Antall enheter**</br>Desimal</br>*mshr_numberofunits* | Skrivebeskyttet | Antall enheter av belønningen. |
 | **Primærfelt**</br>mshr_primaryfield</br>*GUID* | Skrivebeskyttet</br>Systemgenerert. | |
-| **Ansatt-ID**</br>mshr_fk_employee_id_value</br>*GUID* | Skrivebeskyttet</br>Obligatorisk</br>Sekundærnøkkel: mshr_Employee_id av mshr_payrollemployeeentity-enheten  | Ansatt-ID. |
-| **Variabel kompensasjonsplan for lønn-enhet**</br>mshr_payrollvariablecompensationawardentityid</br>*GUID* | Obligatorisk</br>Systemgenerert | En systemgenerert GUID-verdi som entydig identifiserer kompensasjonsplanen. |
+| **Variabel kompensasjonsplan for lønn-enhet**</br>mshr_payrollvariablecompensationawardentityid</br>*GUID* | Systemgenerert | En systemgenerert GUID-verdi som entydig identifiserer kompensasjonsplanen. |
 
+## <a name="relations"></a>Relasjoner 
+
+|Egenskapsverdi | Relatert enhet | Navigasjonsegenskap | Samlingstype |
+| --- | --- | --- | --- |
+| _mshr_fk_employee_id_value | [mshr_payrollemployeeentity](hr-admin-integration-payroll-api-payroll-employee.md) | mshr_FK_Employee_id | mshr_FK_PayrollEmployeeEntity_VariableCompAward |
+| _mshr_fk_fixedcomp_id_value | [mshr_payrollfixedcompensationplanentity](hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md) | mshr_FK_FixedComp_id | mshr_FK_PayrollFixedCompensationPlanEntity_VariableCompAward |
 
 ## <a name="example-query"></a>Eksempelspørring
 
 **Forespørsel**
 
 ```http
-GET [Organizaton URI]/api/data/v9.1/mshr_payrollvariablecompensationawardentities?$filter=mshr_personnelnumber eq '000001'
+GET [Organizaton URI]/api/data/v9.1/mshr_payrollvariablecompensationawardentities?$filter=mshr_personnelnumber eq '000046'
 ```
 
 **Svar**
 
 ```json
 {
-    "mshr_personnelnumber": "000001",
+    "mshr_personnelnumber": "000046",
     "mshr_awarddate": "2015-01-15T00:00:00Z",
     "mshr_awardtype": 200000000,
     "mshr_unitcurrencycode": "USD",
     "mshr_fixedplanid": "",
-    "mshr_awardamount": 1,
+    "mshr_unitvalue": 1,
     "mshr_processtype": 200000003,
     "mshr_typeid": "Bonus",
     "mshr_planid": "MgBonus",
-    "mshr_primaryfield": "000001 | MgBonus | Bonus | 1/15/2015",
-    "_mshr_fk_employee_id_value": "00000655-0000-0000-adff-004105000000",
-    "mshr_payrollvariablecompensationawardentityid": "000001a1-0000-0000-adff-004105000000",
+    "mshr_numberofunits": 1500,
+    "mshr_primaryfield": "000046 | MgBonus | Bonus | 1/15/2015",
+    "_mshr_fk_employee_id_value": "00000666-0000-0000-daff-004105000000",
+    "mshr_payrollvariablecompensationawardentityid": "000001a4-0000-0000-0d00-005001000000",
     "_mshr_fk_fixedcomp_id_value": null
 }
 ```

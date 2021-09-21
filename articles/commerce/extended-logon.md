@@ -1,8 +1,8 @@
 ---
 title: Definere utvidet påloggingsfunksjonalitet for MPOS og Cloud POS
 description: Dette emnet dekker alternativene for å definere utvidet pålogging for Cloud POS og Retail Modern POS (MPOS).
-author: rubencdelgado
-ms.date: 06/20/2017
+author: boycezhu
+ms.date: 09/07/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,15 +13,15 @@ ms.custom: 92353
 ms.assetid: 7473e237-fbc8-41d5-8ba0-920242747488
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 45284ddb3ec082e3bac8a95ed3ba7901cbce2bf303a8523b9c0a7af56938d560
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0cc3d3a3cadbc614e82b8cc7ae0b78406247cece
+ms.sourcegitcommit: efcb853a68a77037cca23582d9f6f96ea573727a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748552"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7478677"
 ---
 # <a name="set-up-extended-logon-functionality-for-mpos-and-cloud-pos"></a>Definere funksjonalitet for utvidet pålogging MPOS og Cloud POS
 
@@ -58,6 +58,8 @@ Som standard kan bare ledere tilordne utvidet pålogging til arbeidere. Hvis du 
 Du kan slette den utvidede påloggingen som er tilordnet til en arbeider, ved å søke etter arbeideren ved hjelp av **Utvidet pålogging** operasjonen. Velg arbeideren, og klikk deretter **Ikke tilordnet**. All utvidet påloggingslegitimasjon som er knyttet til denne arbeider fjernes.
 
 ## <a name="extending-extended-logon"></a>Utvide utvidet pålogging
+
+Utvidet pålogging gjør at bare fem signifikante tegn kan være den unike identifikatoren ut av boksen. Hvis du for eksempel konfigurerer to kort med IDene "1234567" og "1234578", anses begge å være "12345". Du kan lage en utvidelse for å støtte flere tegn. Hvis du vil ha detaljerte instruksjoner, kan du kontrollere [Utvide den utvidede påloggingsfunksjonen for MPOS og Cloud POS](https://cloudblogs.microsoft.com/dynamics365/no-audience/2018/12/14/extending-the-extended-logon-functionality-for-mpos-and-cloud-pos/).
 
 Påloggingstjenesten kan utvides for å støtte flere utvidede påloggingsenheter, for eksempel håndholdte skannere. Hvis du vil ha mer informasjon, kan du se i dokumentasjonen for utvidelsesmuligheter for salgssted.
 

@@ -2,7 +2,7 @@
 title: Fjernede eller avskrevne Platform-funksjoner
 description: Dette emnet beskriver funksjoner som er fjernet eller som er planlagt for fjerning i plattformoppdateringer av Finance and Operations-apper.
 author: sericks007
-ms.date: 05/26/2021
+ms.date: 08/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 7bd5a64553afa04517633ed03d8bbd6077208c0b511d8fa131dc9a2849998708
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 68114989ab96d175b534a31a7115420ee4adbcfb
+ms.sourcegitcommit: b294840b8e12aaa2775dd73b2ba9481ecc3d91d5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774415"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7463635"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Fjernede eller avskrevne Platform-funksjoner
 
@@ -32,7 +32,29 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 
 Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekniske referanserapporter](/dynamics/s-e/global/axtechrefrep_61). Du kan sammenligne de ulike versjonene av disse rapportene for å lære om objekter som er endret eller fjernet i hver versjon av Finance and Operations-apper.
 
-## <a name="feature-deprecation-notice-effective-may-2021"></a>Varsel om funksjonsavvik gjelder fra mai 2021
+## <a name="feature-deprecation-effective-august-2021"></a>Varsel om funksjonsavvik gjelder fra august 2021
+
+### <a name="microsoft-azure-sql-reports-in-lifecycle-services-lcs"></a>Microsoft Azure SQL-rapporter i Lifecycle Services (LCS)
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Vi avskriver noen SQL-rapporter i LCS. Du trenger ikke lenger å overvåke rapportene fordi denne funksjonen er erstattet av andre tjenester. |
+| **Erstattet med en annen funksjon?**   | Ingen |
+| **Berørte produktområder**         | SQL-rapporter: Gjeldende DTU, Gjeldende DTU-detaljer, Hent låsedetaljer, Liste over gjeldende planveiledning, Hent liste over spørrings-IDer, Hent SQL-spørringsplanen for en gitt plan-ID, Hent spørringsplaner og utførelsesstatus, Hent begrensningskonfigurasjon, Hent ventestatistikk, Vis dyreste spørringer |
+| **Distribusjonsalternativ**              | Skydistribusjon – påvirker Microsoft-administrerte produksjonsmiljøer og sandkassemiljøer på lag 2 til og med lag 5. |
+| **Status**                         | Avskrevet: Planlagt fjerningsdato i oktober 2021. |
+
+### <a name="azure-sql-actions-in-lcs"></a>Azure SQL-handlinger i LCS
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Vi avskriver noen SQL-handlinger i LCS.  |
+| **Erstattet med en annen funksjon?**   | Ingen |
+| **Berørte produktområder**         | SQL-handlinger: Opprett en planhåndbok for å fremtvinge plan-ID, Opprett en planhåndbok for å legge til tabellreferanser, Fjern planveiledning, Deaktiver/aktiver sidelåser og låsskalering, Oppdater statistikk i en tabell, Bygg indeks på nytt, Opprett indeks |
+| **Distribusjonsalternativ**              | Skydistribusjon – påvirker Microsoft-administrerte produksjonsmiljøer og sandkassemiljøer på lag 2 til og med lag 5. |
+| **Status**                         | Avskrevet: Planlagt fjerningsdato i oktober 2021. |
+
+## <a name="feature-deprecation-effective-may-2021"></a>Varsel om funksjonsavvik gjelder fra mai 2021
 
 ### <a name="globalization-portal-in-lifecycle-services-lcs"></a>Globaliseringsportal i Lifecycle Services (LCS)
 

@@ -2,7 +2,7 @@
 title: Beregne lagertilgjengelighet for detaljhandelskanaler
 description: Dette emnet beskriver hvordan et firma kan bruke Microsoft Dynamics 365 Commerce til å vise estimert beholdningstilgjengelighet for produkter i nett- og butikkanaler.
 author: hhainesms
-ms.date: 04/23/2021
+ms.date: 09/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: da79aadace09ad480fa34bc03220831023e469645bb7d53af1647bd2d35af0ea
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d3cfd8c2f0b88a4e634cee0398283a51eddf60b2
+ms.sourcegitcommit: d420b96d37093c26f0e99c548f036eb49a15ec30
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741818"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7472177"
 ---
 # <a name="calculate-inventory-availability-for-retail-channels"></a>Beregne lagertilgjengelighet for detaljhandelskanaler
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Dette emnet beskriver hvordan et firma kan bruke Microsoft Dynamics 365 Commerce til å vise estimert beholdningstilgjengelighet for produkter i nett- og butikkanaler.
 
@@ -43,6 +44,21 @@ Følgende lagerendringer vurderes for øyeblikket i logikken for lagerberegning 
 - Lager solgt via kundeordrer i butikk eller online-kanal
 - Lager returnert til butikk
 - Lager oppfylt (plukk, pakke, forsendelse) fra butikklager
+
+Hvis du vil bruke lagerberegningen på kanalsiden, må du aktivere funksjonen **Beregning av optimalisert produkttilgjengelighet**.
+
+Hvis Commerce-miljøet er i versjon **10.0.8 til 10.0.11**, kan du gjøre følgende:
+
+1. I Commerce Headquarters går du til **Retail og Commerce** \> **Delte handelsparametere**.
+1. I kategorien **Beholdning** i feltet **Produkttilgjengelighetsjobb** velger du **Bruk optimalisert prosess for produkttilgjengelighetsjobb**.
+
+Hvis Commerce-miljøet er i versjon **10.0.12 eller senere**, kan du gjøre følgende:
+
+1. I Commerce Headquarters går du til **Arbeidsområder \> Funksjonsbehandling** og aktiverer funksjonen **Beregning av optimalisert produkttilgjengelighet**.
+1. Hvis nettkanalene og butikkkanalene bruker de samme oppfyllelseslagrene, må du også aktivere funksjonen for **utvidet logikk for lagerberegning på e-handelskanalene**. På den måten vil beregningslogikken på kanalsiden vurdere de uposterte transaksjonene som opprettes i butikkkanalen. (Disse transaksjonene kan være hentesalgstransaksjoner, kundeordrer og returer.)
+1. Kjør jobben **1070** (**Kanalkonfigurasjon**).
+
+Hvis Commerce-miljøet ble oppgradert fra en versjon som er tidligere enn Commerce versjon 10.0.8, etter at du har aktivert funksjonen **Beregning av optimalisert produkttilgjengelighet**, må du også kjøre **Initialiser handelsplanlegger** for at funksjonen skal tre i kraft. For å kjøre initialisering går du til **Retail og Commerce** \> **Hovedkvarteroppsett** \> **Handel-planlegger**.
 
 Før du kan bruke lagerberegningen på kanalsiden, må du sende et periodisk øyeblikksbilde av lagerdata fra hovedkontoret som opprettes av **Produkttilgjengelighet**-jobben, til kanaldatabasene. Det statiske utvalget representerer informasjonen som Headquarters har om beholdningstilgjengelighet for en bestemt kombinasjon av et produkt eller en produktvariant og et lager. Det omfatter bare lagertransaksjonene som ble behandlet og postert i Headquarters da øyeblikksbildet ble tatt, og det kan hende at det ikke er 100 prosent nøyaktig i sanntid på grunn av den konstante salgsbehandlingen som skjer på tvers av distribuerte servere.
 
@@ -75,8 +91,6 @@ Begge APIer brukes internt i beregningslogikken på kanalsiden og returner estim
 
 Selv om andre API-er som er tilgjengelige på Commerce-serveren, kan gå direkte til headquarters for å hente lagerbeholdningsantall for produkter, anbefaler vi ikke at de brukes i et miljø med e-handel, på grunn av potensielle ytelsesproblemer og den relaterte innvirkningen som disse hyppige forespørslene kan ha på Headquarters-serverne. Med beregning på kanalsiden kan de to APIene som er nevnt ovenfor, i tillegg gi et mer nøyaktig estimat over tilgjengeligheten til et produkt ved å ta hensyn til transaksjonene som er opprettet i kanalene som ennå ikke er kjent for headquarters.
 
-For å bruke de to APIene må du aktivere funksjonen **Beregning av optimalisert produkttilgjengelighet** via arbeidsområdet **Funksjonsbehandling** i hovedkontoret. Hvis de elektroniske kanalene og butikkanalene bruker samme oppfyllelseslagrene, må du også aktivere funksjonen for **utvidet logikk for lagerberegning på e-handelskanalene** for å ha beregningslogikken på kanalsiden i de to APIene for å angi faktorer i de uposterte transaksjonene (kontantoverføring, kundeordrer og returer) som opprettes i butikkanalen. Du må kjøre jobben **1070** (**Kanalkonfigurasjon**) etter at du har aktivert disse funksjonene.
-
 Følg denne fremgangsmåten for å definere hvordan produktantallet skal returneres i API-resultatet.
 
 1. Gå til **Detaljhandel og handel \> Hovedkvarteroppsett \> Parametere \> Handelsparametere**.
@@ -85,17 +99,17 @@ Følg denne fremgangsmåten for å definere hvordan produktantallet skal returne
 
 Innstillingen **Antall i API-utdata** gir tre alternativer:
 
-- **Returlagerantall** - Fysisk tilgjengelig og totalt tilgjengelig antall for et forespurt produkt returneres i API-utdata.
-- **Returlagerantall som trekker fra lagerbufferen** - Antallet som returneres i API-utdataene, justeres ved å trekke fra lagerbufferverdien. Hvis du vil ha mer informasjon om lagerbufferen, kan du se [Konfigurere lagerbuffere og lagernivåer](inventory-buffers-levels.md).
-- **Ikke returlagerantall** - Bare lagernivået returneres i API-utdataene. Hvis du vil ha mer informasjon om lagernivå, kan du se [Konfigurere lagerbuffere og lagernivåer](inventory-buffers-levels.md).
+- **Returlagerantall** – Fysisk tilgjengelig og totalt tilgjengelig antall for et forespurt produkt returneres i API-utdata.
+- **Returlagerantall som trekker fra lagerbufferen** – Antallet som returneres i API-utdataene, justeres ved å trekke fra lagerbufferverdien. Hvis du vil ha mer informasjon om lagerbufferen, kan du se [Konfigurere lagerbuffere og lagernivåer](inventory-buffers-levels.md).
+- **Ikke returlagerantall** – Bare lagernivået returneres i API-utdataene. Hvis du vil ha mer informasjon om lagernivå, kan du se [Konfigurere lagerbuffere og lagernivåer](inventory-buffers-levels.md).
 
 Du kan bruke `QuantityUnitTypeValue`-API-parameteren til å angi enhetstypen du vil at APIene skal returnere antall i. Denne parameteren støtter alternativene **lagerenheten** (standard), **innkjøpsenhet** og **salgsenhet**. Det returnerte antallet avrundes til den definerte presisjonen i tilsvarende måleenhet (måleenhet) i hovedkontoret.
 
 **GetEstimatedAvailability**-API-en tilbyr følgende inndataparametere som støtter forskjellige spørringsscenarier:
 
 - `DefaultWarehouseOnly` – Bruk denne parameteren til å spørre etter lagerbeholdning for et produkt i den elektroniske k+analens standardlager. 
-- `FilterByChannelFulfillmentGroup` og `SearchArea` - Bruk disse to parameterne til å spørre etter lager for et produkt fra alle plukklokasjoner innenfor et bestemt søkeområde, basert på `longitude`, `latitude` og `radius`. 
-- `FilterByChannelFulfillmentGroup` og `DeliveryModeTypeFilterValue` - Bruk disse to parameterne til å spørre etter lagerbeholdning for et produkt fra bestemte lagre som er koblet til innfrielsesgruppen for en online-kanal, og er konfigurert til å støtte bestemte leveringsmåter. Parameteren `DeliveryModeTypeFilterValue` støtter alternativene **alle** (standard), **forsendelse** og **henting**. I et scenario der en nettordre kan oppfylles fra flere forsendelseslagre, kan du for eksempel bruke disse to parameterne til å utføre spørringer mot tilgjengelighet av et produkts lager i alle disse forsendelseslagrene. API-en i dette tilfellet returnerer produktets beholdningsantall og lagernivå i hvert forsendelseslager, pluss et aggregert antall og et akkumulert lagernivå fra alle forsendelseslagre i spørringsområdet.
+- `FilterByChannelFulfillmentGroup` og `SearchArea` – Bruk disse to parameterne til å spørre etter lager for et produkt fra alle plukklokasjoner innenfor et bestemt søkeområde, basert på `longitude`, `latitude` og `radius`. 
+- `FilterByChannelFulfillmentGroup` og `DeliveryModeTypeFilterValue` – Bruk disse to parameterne til å spørre etter lagerbeholdning for et produkt fra bestemte lagre som er koblet til innfrielsesgruppen for en online-kanal, og er konfigurert til å støtte bestemte leveringsmåter. Parameteren `DeliveryModeTypeFilterValue` støtter alternativene **alle** (standard), **forsendelse** og **henting**. I et scenario der en nettordre kan oppfylles fra flere forsendelseslagre, kan du for eksempel bruke disse to parameterne til å utføre spørringer mot tilgjengelighet av et produkts lager i alle disse forsendelseslagrene. API-en i dette tilfellet returnerer produktets beholdningsantall og lagernivå i hvert forsendelseslager, pluss et aggregert antall og et akkumulert lagernivå fra alle forsendelseslagre i spørringsområdet.
  
 Commerce-modulene kjøpsboks, butikkvelger, ønskerliste, handlekurv og handlekurvikon bruker APIene og parameterne som er nevnt ovenfor, for å vise lagernivåmeldinger for hele e-handelområdet. Commerce-områdebygger inneholder ulike lagerinnstillinger for å kontrollere salgs- og innkjøpsvirkemåten. For mer informasjon, se [Bruke beholdningsinnstillinger](inventory-settings.md).
 
@@ -136,6 +150,5 @@ Hvis du vil sikre det best mulige estimatet for lageret, er det viktig at du bru
 > - Av hensyn til ytelsen vil beregningen bruke en hurtigbuffer for å finne ut om det er gått lang nok tid til å rettferdiggjøre kjøring av logikken på nytt, når beregninger av beholdningstilgjengelighet på kanalsiden brukes til å lage en forespørsel om beholdningstilgjengelighet ved hjelp av API-er for e-handel eller beholdningslogikken på POS-kanalsiden. Standard hurtigbuffer er satt til 60 sekunder. Du har for eksempel slått på beregning på kanalsiden for butikken og vist lagerbeholdningen for et produkt på siden oppslags **Beholdningsoppslag**. Hvis én enhet av produktet deretter blir solgt, vil ikke siden **Beholdningsoppslag** vise den reduserte beholdningen før hurtigbufferen er tømt. Når brukere har postert transaksjoner i POS, skal de vente 60 sekunder før de kontrollerer at lagerbeholdningen er redusert.
 
 Hvis forretnings krever mindre buffertid, kan du kontakte kundestøtterepresentanten for å få assistanse.
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

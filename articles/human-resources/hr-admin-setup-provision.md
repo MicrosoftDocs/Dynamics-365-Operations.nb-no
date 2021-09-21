@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5b0f04f27c95b2498ea2b5ad66c3df19bc8df0d9
-ms.sourcegitcommit: 49f7528d3268abe15e40f719956e1ec8696a6f4e
+ms.openlocfilehash: 2eb2f7c0f35eb05263644248ecf16c5874547de9
+ms.sourcegitcommit: 696796ca5635863850ae9ef16fc1fb0fc46ce8f0
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7393529"
+ms.lasthandoff: 08/28/2021
+ms.locfileid: "7441171"
 ---
 # <a name="provision-human-resources"></a>Klargjøre Human Resources
 
@@ -43,6 +43,11 @@ Før du kan begynne med å klargjøre et nytt produksjonsmiljø, må følgende f
 Før du klargjør den første sandkasse- eller produksjonsmiljøet, kan det hende at du vil klargjøre et [Human Resources-prøvemiljø](https://go.microsoft.com/fwlink/p/?LinkId=2115962) for å validere Human Resources-funksjonaliteten. Prøvemiljøer inneholder fiktive data som kan brukes til å utforske programmet på en sikker måte. Selv om et prøvemiljø eies av brukeren som ba om det, kan andre brukere inviteres gjennom systemadministrasjonsopplevelsen for Human Resources. 
 
 Prøvemiljøene er ikke ment å brukes som produksjonsmiljøer. De er begrenset til en 60-dagers prøveperiode. Når prøveperioden utløper, kan ikke miljøet alle dataene slettes eller gjenopprettes. Miljøet kan ikke konverteres til et sandkasse- eller produksjonsmiljø. Du kan registrere deg for et nytt prøvemiljø etter det eksisterende miljøet er utløpt.
+
+Når du oppretter et prøvemiljø for Human Resources, opprettes det også et Power Apps prøvemiljø i leieren og knyttes til Human Resources-miljøet. Miljøet Power Apps, kalt "TestDrive", har den samme prøveperioden som Human Resources-miljøet.
+
+> [!NOTE]
+> Klargjøring av et prøvemiljø for Human Resources vil mislykkes hvis den godkjente brukeren ikke har tillatelse til å opprette Power Apps prøvemiljøer. Brukeren må være inkludert i brukergruppen som kan opprette prøvemiljøer i Power Platform administrasjonssenteret. Hvis du vil ha mer informasjon, kan du se [Kontrollere hvem som kan opprette og administrere miljøer i Power Platform administrasjonssenteret](//power-platform/admin/control-environment-creation).
 
 ## <a name="plan-human-resources-environments"></a>Planlegge Human Resources-miljøer
 
@@ -69,7 +74,7 @@ Hvis du vil bruke LCS til å administrere Human Resources-miljøene dine, må du
 1. Logg på [LCS](https://lcs.dynamics.com/Logon/Index) ved hjelp av kontoen du brukte til å abonnere på Human Resources.
 
    > [!NOTE]
-   > For å sikre en vellykket klargjøring må kontoen du bruker til klargjøring av personalmiljøet, være tilordnet enten **Systemadministrator**- eller **Systemtilpasser**-rollen i Power Apps-miljøet som er knyttet til personalmiljøet. Se [Konfigurere brukersikkerhet på ressurser](/power-platform/admin/database-security) hvis du vil ha mer informasjon om tilordning av sikkerhetsroller til brukere i Power Platform.
+   > For å sikre en vellykket klargjøring må kontoen du bruker til klargjøring av personalmiljøet, være tilordnet enten **Systemadministrator**- eller **Systemtilpasser**-rollen i Power Apps-miljøet som er knyttet til personalmiljøet. Hvis du vil ha mer informasjon om tilordning av sikkerhetsroller til brukere i Power Platform, kan du se [Konfigurere brukersikkerhet på ressurser](/power-platform/admin/database-security).
 
 2. Velg plusstegnet (**+**) for å opprette et prosjekt.
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: bb6fd57f200b101cb2df396cb10417feaa9425c1
-ms.sourcegitcommit: 2b04b5a5c883d216072bb91123f9c7709a41f69a
+ms.openlocfilehash: 2fe94ea1afb74520ee97268f62d42832bad5c3df
+ms.sourcegitcommit: 07fada750de54e2907377df2a9f7dae497c3b66e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7384591"
+ms.lasthandoff: 09/01/2021
+ms.locfileid: "7467428"
 ---
 # <a name="manage-changes-to-engineering-products"></a>Behandle endringer i tekniske produkter
 
@@ -122,6 +122,9 @@ Hvis du vil gå gjennom berørte transaksjoner, blokkere valgte transaksjoner og
     - **Vis logg** – Åpne en logg over handlinger som er utført på den valgte transaksjonen, ved å bruke dialogboksen **Forretningspåvirkning på åpne transaksjoner**. (Historikken viser for eksempel om meldinger er sendt eller om transaksjoner er sperret.) 
     - **Vis alle transaksjoner** – Åpne hele listen over alle transaksjoner, ikke bare de åpne transaksjonene.
 
+> [!IMPORTANT]
+> Knappen **Varsle produksjon** er bare tilgjengelig hvis funksjonen *Teknisk melding for produksjon* er aktivert i systemet. Hvis du vil ha mer informasjon, kan du se [Oversikt over behandling av teknisk endring](product-engineering-overview.md).
+
 #### <a name="review-and-process-change-notifications-for-transactions"></a><a name="review-notifications"></a>Gå gjennom og behandle endringsvarsler for transaksjoner
 
 Du kan lese og behandle endringsmeldingene du mottar på følgende måter:
@@ -131,6 +134,9 @@ Du kan lese og behandle endringsmeldingene du mottar på følgende måter:
 - For produksjonsordrer kan du velge å gå gjennom bare endringsvarslene som gjelder produksjonsressursene du administrerer. Velg arbeidsområdet for **Produksjonsstyring** i handlingsruten, og velg **Konfigurer mitt arbeidsområde** for å filtrere siden, slik at den bare viser informasjon om produksjonsenhetene, gruppene og/eller ressursene som du administrerer. I **Sammendrag**-delen viser en fane med navnet **Produksjonsordrer med endrede produkter** et antall varslinger som samsvarer med filterinnstillingene. Velg denne flisen for å åpne **Teknisk melding**-siden, som viser den fullstendige listen over transaksjoner som oppfyller kriteriene i filteret.
 
 Når du går gjennom produksjonsordrevarslinger på **Teknisk melding**-siden, kan du følge koblinger til tilknyttede endringsordrer eller produksjonsordrer ved å velge kolonneverdier eller bruke de relaterte kommandoene i handlingsruten. Når du er ferdig med å evaluere en endring, og etter at du har annullert eller endret produksjonsordrer etter behov, kan du merke et varsel som løst. Velg meldingen, og velg deretter **Løs** i handlingsruten. Meldingen fjernes fra visningene til alle brukere.
+
+> [!IMPORTANT]
+> Muligheten til å sende meldinger for produksjonsordrer krever at funksjonen *Tekniske varslinger for produksjon* er aktivert i systemet. Hvis du vil ha mer informasjon, kan du se [Oversikt over behandling av teknisk endring](product-engineering-overview.md).
 
 ### <a name="create-a-change-order-from-a-change-request"></a>Opprette en endringsordre fra en endringsforespørsel
 

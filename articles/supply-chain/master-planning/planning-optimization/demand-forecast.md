@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 71e651afc83e0c2ea147a4657c0f2ce1865ec50efcd932127b4918266d3d7cd8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0f322dd63cb2dee6a9048e6ed086dc075cc0e1b9
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778682"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474850"
 ---
 # <a name="master-planning-with-demand-forecasts"></a>Hovedplanlegging med behovsprognoser
 
@@ -137,32 +137,85 @@ I dette tilfellet, hvis du kjører prognoseplanlegging 1. januar, forbrukes beho
 
 #### <a name="transactions--reduction-key"></a>Transaksjoner – reduksjonsnøkkel
 
-Hvis du velger **Transaksjoner - reduksjonsnøkkel**, reduseres prognosebehovene av transaksjonene som skjer i periodene som er definert av reduksjonsnøkkelen.
+Hvis du angir **metoden som brukes til å redusere prognosebehov**-feltet til *Transaksjoner - reduksjonsnøkkel*, reduseres prognosekravene av kvalifiserte behovstransaksjoner som oppstår i periodene som er definert reduksjonsnøkkelen.
+
+Det kvalifiserte behovet defineres av feltet **Reduser prognose etter**-feltet på **Dekningsgrupper**-siden. Hvis du setter feltet **Reduser prognose etter** til *Ordrer*, betraktes bare salgsordretransaksjoner som kvalifisert behov. Hvis du setter den til *Alle transaksjoner*, betraktes alle ikke-konserninterne avgangslagertransaksjoner som kvalifisert behov. Hvis konserninterne salgsordrer også skal vurderes som kvalifisert behov, angir du alternativet **Ta med konserninterne ordrer** til *Ja*.
+
+Prognosereduksjon starter med den første (tidligste) behovsprognoseposten i reduksjonsnøkkelperioden. Hvis antallet kvalifiserte lagertransaksjoner er mer enn antallet behovsprognoselinjer i samme reduksjonsnøkkelperiode, vil saldoen i lagertransaksjonsantallet brukes til å redusere behovsprognoseantallet i forrige periode (hvis det er en prognose som ikke er brukt).
+
+Hvis det ikke gjenstår en prognose som ikke er forbrukt, i den forrige reduksjonsnøkkelperioden, blir saldoen for lagertransaksjonsantall brukt til å redusere prognoseantallet i neste måned (hvis det finnes en ikke-brukt prognose).
+
+Verdien til **Prosent**-feltet på reduksjonsnøkkellinjene vil ikke brukes når **Metode som brukes til å redusere prognosebehov**-feltet er satt til *Transaksjoner – reduksjonsnøkkel*. Bare datoene brukes til å definere reduksjonsnøkkelperioden.
+
+> [!NOTE]
+> Alle prognoser som posteres på eller før dagens dato, blir ignorert og vil ikke bli brukt til å opprette planlagte bestillinger. Hvis for eksempel behovsprognosen for måneden genereres 1. januar, og du kjører hovedplanlegging som omfatter behovsprognoser 2. januar, vil beregningen ignorere behovsprognoselinjen som er datert 1. januar.
 
 ##### <a name="example-transactions--reduction-key"></a>Eksempel: Transaksjoner – reduksjonsnøkkel
 
 Dette eksemplet viser hvordan faktiske ordrer som skjer i periodene som er definert av reduksjonsnøkkelen, reduserer behovene i behovsprognosen.
 
-Du velger for eksempel **Transaksjoner – reduksjonsnøkkel** i feltet **Metode som brukes til å redusere prognosebehov** -feltet på siden **Hovedplaner**.
+[![Faktiske ordrer og prognose før hovedplanlegging kjøres.](media/forecast-reduction-keys-1-small.png)](media/forecast-reduction-keys-1.png)
 
-Følgende salgsordrer finnes den 1. januar.
+Du velger for eksempel *Transaksjoner – reduksjonsnøkkel* i feltet **Metode som brukes til å redusere prognosebehov** -feltet på siden **Hovedplaner**.
 
-| Måned    | Antall stykker som er bestilt |
-|----------|--------------------------|
-| Januar  | 956                      |
-| Februar | 1,176                    |
-| Mars    | 451                      |
-| April    | 119                      |
+Følgende behovsprognoselinjer finnes den 1. april.
 
-Hvis du bruker den samme behovsprognosen på 1 000 stykker per måned som ble brukt i forrige eksempel, overføres følgende behovsantall til hovedplanen:
+| Dato     | Antall stykker som anslått |
+|----------|-----------------------------|
+| 5. april  | 100                         |
+| 12. april | 100                         |
+| 19. april | 100                         |
+| 26. april | 100                         |
+| 3. mai    | 100                         |
+| 10. mai   | 100                         |
+| 17. mai   | 100                         |
 
-| Måned                | Antall stykker som kreves |
-|----------------------|---------------------------|
-| Januar              | 44                        |
-| Februar             | 0                         |
-| Mars                | 549                       |
-| April                | 881                       |
-| Mai til desember | 1 000                     |
+Følgende salgsordrelinjer finnes i april.
+
+| Dato     | Antall stykker som er forespurt |
+|----------|----------------------------|
+| 27. april | 240                        |
+
+[![Planlagt forsyning generert basert på aprilordrer.](media/forecast-reduction-keys-2-small.png)](media/forecast-reduction-keys-2.png)
+
+Følgende behovsantall overføres til hovedplanen når hovedplanleggingen kjøres 1. april. Som du ser, ble prognosetransaksjonene for april redusert med behovsantallet på 240 i en serie, fra og med den første av disse transaksjonene.
+
+| Dato     | Antall stykker som kreves |
+|----------|---------------------------|
+| 5. april  | 0                         |
+| 12. april | 0                         |
+| 19. april | 60                        |
+| 26. april | 100                       |
+| 27. april | 240                       |
+| 3. mai    | 100                       |
+| 10. mai   | 100                       |
+| 17. mai   | 100                       |
+
+Anta nå at nye ordrer ble importert for maiperioden.
+
+Følgende salgsordrelinjer finnes i mai.
+
+| Dato   | Antall stykker som er forespurt |
+|--------|----------------------------|
+| 4. mai  | 80                         |
+| 11. mai | 130                        |
+
+[![Planlagt forsyning generert basert på april- og mai-ordrer.](media/forecast-reduction-keys-3-small.png)](media/forecast-reduction-keys-3.png)
+
+Følgende behovsantall overføres til hovedplanen når hovedplanleggingen kjøres 1. april. Som du ser, ble prognosetransaksjonene for april redusert med behovsantallet på 240 i en serie, fra og med den første av disse transaksjonene. I mai ble imidlertid prognosetransaksjonene redusert med totalt 210, fra og med den første behovsprognosetransaksjonen i mai. Totalene per periode beholdes imidlertid (400 i april og 300 i mai).
+
+| Dato     | Antall stykker som kreves |
+|----------|---------------------------|
+| 5. april  | 0                         |
+| 12. april | 0                         |
+| 19. april | 60                        |
+| 26. april | 100                       |
+| 27. april | 240                       |
+| 3. mai    | 0                         |
+| 4. mai    | 80                        |
+| 10. mai   | 0                         |
+| 11. mai   | 130                       |
+| 17. mai   | 90                        |
 
 #### <a name="transactions--dynamic-period"></a>Transaksjoner – dynamisk periode
 

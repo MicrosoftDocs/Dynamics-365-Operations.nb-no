@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 67240491bba5a81455bff00be22908670880803c3e08091d76e037fa0b5f49ec
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ef6b7c619cfce70c2f0b3f676d3cae988674c858
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760520"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474609"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10017-april-2021"></a>Hva er nytt eller endret i Dynamics 365 Supply Chain Management 10.0.17. (april 2021)
 
@@ -99,10 +99,6 @@ De fleste av disse funksjonene må aktiveres ved hjelp av [Funksjonsbehandling](
 
 Vi har nylig lagt til eller betydelig oppdatert følgende hjelpeemner. De er ikke nødvendigvis knyttet til de nye funksjonene som er lagt til for denne versjonen, som oppført i den forrige delen, men de kan hjelpe deg med å få mer ut av eksisterende funksjoner.
 
-### <a name="cost-management"></a>Kostnadsstyring
-
-- [Feilsøke kostnadsstyring](../cost-management/troubleshoot-costmanagement.md)
-
 ### <a name="asset-management"></a>Ressursbehandling
 
 - [Konfigurere mobilt arbeidsområde for aktivabehandling](../asset-management/set-up-asset-management-mobile.md)
@@ -114,8 +110,6 @@ Vi har nylig lagt til eller betydelig oppdatert følgende hjelpeemner. De er ikk
 - [Delvis lokasjonssyklustelling](../warehousing/partial-location-cycle-counting.md)
 
 - [Plukklinjegruppering](../warehousing/pick-line-grouping.md)
-
-- [Feilsøke lageroperasjoner](../inventory/troubleshoot-inventory-operations.md)
 
 - [Lagersporing](../warehousing/warehouse-slotting.md)
 

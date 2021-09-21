@@ -10,13 +10,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-08
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a0919706ddcc70fecd15df6bf1cbdd58fe9a8e337b2d45cd61a4fb9d821e4114
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: 10.0.21
+ms.openlocfilehash: b9c82f28dcc7ebd223b2483ca257ba934024d755
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757812"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7475090"
 ---
 # <a name="inventory-forecasts"></a>Lagerprognoser
 
@@ -94,7 +94,7 @@ Tabellen nedenfor beskriver kommandoene som er tilgjengelige på verktøylinjen 
 
 | Kommando | beskrivelse |
 |---|---|
-| Fordel prognose | Hvis du bruker en tildelingsmetode, genererer du de individuelle tidsplanlinjene for prognosetransaksjonen. Linjeantallet distribueres deretter etter dato (i samsvar med de valgte tidsintervallene), antall og beløp for hele tidshorisonten. |
+| Fordel prognose | Hvis du bruker en tildelingsmetode, genererer du de individuelle tidsplanlinjene for prognosetransaksjonen. Linjeantallet distribueres deretter etter dato (i samsvar med de valgte tidsintervallene), antall og beløp for hele tidshorisonten. (Se delen [Fordel prognose](#allocate-forecast) senere i dette emnet.) |
 | Masseoppdatering | Åpne siden **Rediger prognosetransaksjoner**. (Se delen [Masseoppdatere prognosetransaksjoner](#bulk-update) senere i dette emnet.) |
 | Lagerprognose | Åpne en visning av **Lagerprognose**-siden som er filtrert for den valgte vare-/modellkombinasjonen. (Se delen [Lagerprognose](#inventory-forecast) senere i dette emnet.) |
 | Opprett varebehov | Åpne en dialogboks der du kan opprette varebehov og salgsordre- eller varejournallinjer for prosjektrelaterte prognosetransaksjoner. Selv om denne kommandoen er tilgjengelig for både forsynings- og behovsprognoselinjer, kan den ikke brukes på **Forsyningsprognose**-siden. |
@@ -201,7 +201,7 @@ Tabellen nedenfor beskriver kommandoene som er tilgjengelige på verktøylinjen 
 
 | Kommando | beskrivelse |
 |---|---|
-| Fordel prognose | Hvis du bruker en tildelingsmetode, genererer du de individuelle tidsplanlinjene for prognosetransaksjonen. Linjeantallet distribueres deretter etter dato (i samsvar med de valgte tidsintervallene), antall og beløp for hele tidshorisonten. |
+| Fordel prognose | Hvis du bruker en tildelingsmetode, genererer du de individuelle tidsplanlinjene for prognosetransaksjonen. Linjeantallet distribueres deretter etter dato (i samsvar med de valgte tidsintervallene), antall og beløp for hele tidshorisonten. (Se delen [Fordel prognose](#allocate-forecast) senere i dette emnet.)|
 | Masseoppdatering | Åpne siden **Rediger prognosetransaksjoner**. (Se delen [Masseoppdatere prognosetransaksjoner](#bulk-update) senere i dette emnet.) |
 | Lagerprognose | Åpne en visning av **Lagerprognose**-siden som er filtrert for den valgte vare-/modellkombinasjonen. (Se delen [Lagerprognose](#inventory-forecast) senere i dette emnet.) |
 | Opprett varebehov | Åpne en dialogboks der du kan opprette varebehov og salgsordre- eller varejournallinjer for prosjektrelaterte prognosetransaksjoner. |
@@ -296,7 +296,7 @@ Tabellen nedenfor beskriver feltene i **Oversikt**-fanen på **Behovsprognose**-
 
 ### <a name="the-allocation-grid-on-the-demand-forecast-page"></a>Rutenettet Tildeling på Behovsprognose-siden
 
-Hvis du bruker en varefordelingsnøkkel eller har angitt en vareprognose for én eller flere fremtidige perioder, kan du tildele prognosen ved å velge **Fordel prognose** på verktøylinjen i **Oversikt**-fanen. Antallet distribueres deretter på måten som angis av linjene i rutenettet **Tildeling**.
+Hvis du bruker en varefordelingsnøkkel eller har angitt en vareprognose for én eller flere fremtidige perioder, kan du tildele prognosen ved å velge **Fordel prognose** på verktøylinjen i **Oversikt**-fanen. Antallet distribueres deretter på måten som angis av linjene i rutenettet **Tildeling**. (Se delen [Fordel prognose](#allocate-forecast) senere i dette emnet.)
 
 ## <a name="inventory-forecast"></a><a name="inventory-forecast"></a>Lagerprognose
 
@@ -328,6 +328,25 @@ I tabellen nedenfor beskrives feltene i rutenettet på **Lagerprognose**-siden.
 | **Understykkliste** | Stykklistenummeret til en bestemt understykkliste. |
 | **Underrute** | Rutenummeret til en bestemt underrute. |
 | (Andre dimensjoner) | Ytterligere dimensjoner kan vises som kolonner i rutenettet. Hvis du vil velge de ytterligere dimensjonene som vises, velger du **Lager \> Vis dimensjoner** i handlingsruten. |
+
+## <a name="allocate-forecast"></a><a name="allocate-forecast"></a>Fordel prognose
+
+Bruk denne fremgangsmåten til å behandle valgte prognosetransaksjonslinjer. Når du tildeler en prognose, distribueres antallet slik det er angitt av linjene i **Tildeling**-rutenettet.
+
+1. Åpne en forsynings- eller behovsprognoseside som beskrevet i [Vise og angi prognoselinjer manuelt](#manual-entry), avhengig av enhetstypen du oppretter en prognose for.
+1. Velg en prognoselinje på siden for forsynings- eller behovsprognoselinjer, og velg deretter **Fordel prognose** på verktøylinjen i **Oversikt**-fanen.
+1. I dialogboksen **Fordel prognose** angir du feltene som beskrives i følgende tabell. (Verdien du velger i **Metode**-feltet, bestemmer andre felt som er tilgjengelige.)
+
+    | Felt | beskrivelse |
+    |---|---|
+    | Metode | <p>Velg metoden du vil bruke til å tildele prognosetransaksjonen:</p><ul><li>**Ingen** – Ingen tildeling finner sted.</li><li>**Periode** – Prognoseberegn det samme antallet for hver periode. Hvis du velger denne verdien, angir du et antall i **Per**-feltet og en tidsenhet i **Enhet**-feltet.</li><li>**Nøkkel** – Tildel prognosen i samsvar med periodetildelingsnøkkelen du angir i **Periodenøkkel**-feltet. Du kan bruke denne metoden når du vil ta hensyn til sesongvariasjoner.</li><ul>|
+    | Per | <p>Angi hvor mange fremtidige tidsintervaller prognosen skal gjelde for. Dette feltet er bare tilgjengelig hvis du velger *Periode* i **Metode**-feltet.</p><p>La oss si at du velger *Periode* i **Metode**-feltet, angir *1* i **Per**-feltet og velger *Måneder* i **Enhet**-feltet. Deretter angir du en sluttdato i **Slutt**-feltet som er ett år frem i tid. I dette tilfellet blir én prognoselinje opprettet for hver måned i det kommende året, basert på varen og antallet som er angitt i hodelinjen. |
+    | Enhet | Velg enheten for tidsintervallet: *Dager*, *Måneder* eller *År*. Tildeling tilsvarer da antallet dager, måneder eller år du angir i **Per**-feltet.|
+    | Periodenøkkel | Angi periodetilordningsnøkkelen som skal brukes til å tilordne prognosen. Hvis du vil ha mer informasjon, kan du se [Tildeling av data for budsjettplanlegging](../../finance/budgeting/budget-planning-data-allocation.md). |
+    | Slutt | Angi sluttdatoen som gjelder for innstillingene i **Per** og **Enhet**-feltene. |
+
+1. Velg **OK** for å bekrefte innstillingene.
+1. Du kan se gjennom resultatene i kategorien **Tildeling** for samme linje.
 
 ## <a name="bulk-update-forecast-transactions"></a><a name="bulk-update"></a>Masseoppdatere prognosetransaksjoner
 

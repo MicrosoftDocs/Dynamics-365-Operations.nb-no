@@ -1,8 +1,8 @@
 ---
 title: Opprette prestasjonsvurderinger
 description: Dette emnet viser hvordan du oppretter en prestasjonsvurdering og beskriver formålet med hver del i vurderingen.
-author: andreabichsel
-ms.date: 05/05/2020
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,15 +10,15 @@ ms.search.form: DefaultDashboard, EssWorkspace, HcmDiscussionNewDialog, HcmDiscu
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0a4a9f83c2b6cb30888ed5a797fb72b9f382187cb8f119d15a5fa437ed5aba1f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1340653c1e9a21d41743b8e3c0b81a4285245d5a
+ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732255"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "7431166"
 ---
 # <a name="create-performance-reviews"></a>Opprette prestasjonsvurderinger
 
@@ -65,13 +65,13 @@ Dette emnet viser hvordan du oppretter en prestasjonsvurdering og beskriver form
 30. Velg kategorien **Vurderinger**.  
 
     - I **Vurderingsdetaljer**-hurtigfanen kan ansatte vurdere seg selv og lederen vurdere den ansatte. Hvis det brukes vekter, beregnes vektverdien av poengsummene automatisk.  
-    - Hvis du vil se denne delen, kan du aktivere parameterinnstillingene til å vise ansattvurderinger.  
+    - Hvis du vil vise denne delen, aktiverer du parameterinnstillingene for å vise ansattvurderinger på siden **Delte parametere for Human resources**.  
 
-31. Velg fanen **Godkjenninger**. Hvis vurderingen bruker arbeidsflyt, vises godkjenningene bare etter at arbeidsflyten er fullført. Hvis det ikke brukes arbeidsflyt, er både arbeideren og lederen oppført her. Avmerkingsboksen for nødvendig merkes på basis av innstillingene for vurderingstypen.  
-32. Velg kategorien **Generelt**.
+31. Velg fanen **Godkjenninger**. Hvis vurderingen bruker arbeidsflyt, vises godkjenningene bare etter at arbeidsflyten er fullført. Hvis det ikke brukes arbeidsflyt, er både arbeideren og lederen oppført her. Avmerkingsboksen **Obligatorisk** for **Godkjenninger** merkes på basis av innstillingene for vurderingstypen.  
+32. Velg fanen **Generelt**.
 
     - Ytelsesperioden oppretter standard start- og sluttdatoer. Disse datoene kan redigeres.  
-    - Statusene kontrollerer tilgangen til vurderingen. **Ikke startet**-statusen tillater alle å redigere vurderingen. **Pågår**-statusen lar bare den ansatte vise og redigere vurderingen. **Klar til vurdering** lar bare lederen vise og redigere vurderingen. **Endelig vurdering**-statusen lar både den ansatte og lederen vise vurderingen og også redigere den hvis dette er angitt for vurderingstypen. Statusen **Fullført** og **Annullert** gjør at vurderingen blir skrivebeskyttet. Hvis en gjennomgang blir **Avvist** og sendes tilbake til den ansatte, kan både den ansatte og den overordnede utføre nødvendige endringer, slik at den ansatte kan sende på nytt.
+    - Statusene kontrollerer tilgangen til vurderingen. **Ikke startet**-statusen tillater alle å redigere vurderingen. **Pågår**-statusen lar bare den ansatte vise og redigere vurderingen. **Klar til vurdering** lar bare lederen vise og redigere vurderingen. Med **Endelig vurdering**-statusen kan begge ansatte og lederen vise og redigere gjennomgangen hvis alternativet **Tillat redigering i endelig vurdering** er valgt i gjennomgangstype. Statusen **Fullført** og **Annullert** gjør at vurderingen blir skrivebeskyttet. Hvis en gjennomgang blir **Avvist** og sendes tilbake til den ansatte, kan både den ansatte og den overordnede utføre nødvendige endringer, slik at den ansatte kan sende på nytt.
 
 33. Skriv inn en verdi i feltet **Oversikt**.
 34. Velg fanen **Gjennomgang**. Etter hvert som vurderingen endrer status, kan den ansatte og lederen legge til kommentarer for hvert mål eller hver kompetanse.  
