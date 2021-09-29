@@ -1006,8 +1006,12 @@
                   href: lifecycle-services/submit-request-dynamics-service-engineering-team.md
                 - name: Vanlige spørsmål om vinduet Planlagt vedlikehold
                   href: lifecycle-services/planned-maintenance-window-faq.md
-            - name: Overvåke og diagnostisere
-              href: lifecycle-services/monitoring-diagnostics.md
+            - name: Overvåkning og diagnose
+              items:
+                - name: Verktøy for overvåking og diagnose
+                  href: lifecycle-services/monitoring-diagnostics.md
+                - name: Bruke Azure Data Explorer til å søke i råinformasjonslogger
+                  href: lifecycle-services/azure-data-explorer.md
             - name: Starte miljøtjenester på nytt
               href: lifecycle-services/restart-environment-services.md
             - name: "Rapportere en\_produksjonsnedetid"

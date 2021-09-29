@@ -80,8 +80,6 @@
                       href: get-started/whats-new-scm-10-0-21.md
                     - name: Supply Chain Management 10.0.20 (august 2021)
                       href: get-started/whats-new-scm-10-0-20.md
-                    - name: Supply Chain Management 10.0.19 (juni 2021)
-                      href: get-started/whats-new-scm-10-0-19.md
                 - name: Funksjoner som er fjernet eller avskrevet
                   items:
                     - name: Funksjoner som er fjernet eller avskrevet på startsiden
@@ -1669,6 +1667,8 @@
                   href: master-planning/planning-optimization/production-planning.md
                 - name: Planlegging med ubegrenset kapasitet
                   href: master-planning/planning-optimization/infinite-capacity-planning.md
+                - name: Planlegging med ressursvalg basert på evner
+                  href: master-planning/planning-optimization/capability-based-scheduling.md
                 - name: Lagermerking med planleggingsoptimalisering
                   href: master-planning/planning-optimization/marking.md
                 - name: Konsernintern planlegging
@@ -2015,11 +2015,13 @@
               items:
                 - name: Oversikt over tilbudsforespørsler (RFQ-er)
                   href: procurement/request-quotations.md
-                - name: Opprette en tilbudsforespørsel
+                - name: Opprett en tilbudsforespørsel
                   href: procurement/tasks/create-request-quotation.md
-                - name: Opprette en rekvisisjon som bruker en tilbudsforespørsel
+                - name: Forseglede bud for tilbudsforespørsler
+                  href: procurement/sealed-bidding.md
+                - name: Opprett en rekvisisjon som bruker en tilbudsforespørsel
                   href: procurement/tasks/create-requisition-uses-rfq.md
-                - name: Opprette en poengsummetode for tilbudsforespørsler
+                - name: Opprett en poengsummetode for tilbudsforespørsler
                   href: procurement/tasks/create-scoring-method-rfqs.md
                 - name: Opprette forespørselstyper og poengkriterier for tilbudsforespørsler
                   href: procurement/tasks/create-solicitation-types-scoring-criteria-rfqs.md

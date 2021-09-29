@@ -2,7 +2,7 @@
 title: Ny tildeling av inntektsføring
 description: Dette emnet gir informasjon om ny tildeling, noe som gjør det mulig for organisasjoner å beregne inntektspriser på nytt når betingelsene for et kontraktsmessig salg endres. Emnet inneholder koblinger til andre emner som beskriver hvordan du fører inntekt i flere scenarioer.
 author: kweekley
-ms.date: 12/21/2020
+ms.date: 09/09/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 50ae395c370947e348714ce5685123328849966f3a67903e9ddf8c27dee42f5f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 53304842bdbe7dadb435ab3a0381f3835c2c443a
+ms.sourcegitcommit: 3f6cbf4fcbe0458b1515c98a1276b5d875c7eda7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745043"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "7487024"
 ---
 # <a name="revenue-recognition-reallocation"></a>Ny tildeling av inntektsføring
 
@@ -35,14 +35,26 @@ Organisasjonen må selv bestemme om det kreves ny tildeling. Det kan hende at ti
 Det er noen viktige begrensninger på prosessen for ny tildeling:
 
 - Prosessen kan bare kjøres én gang. Det er derfor viktig at du kjører den først når alle endringene er ferdigstilt.
+
+    - Denne begrensningen fjernes i versjon 10.0.17 og senere.
+
 - Prosessen kan ikke kjøres på prosjektsalgsordrer.
+
+    - Denne begrensningen fjernes i versjon 10.0.17 og senere.
+
 - Hvis det gjelder flere salgsordrer, må de være for samme kundekonto.
 - Alle salgsordrer som er tildelt på nytt, må ha samme transaksjonsvaluta.
 - Prosessen kan ikke tilbakeføres eller angres etter at den er kjørt.
 
+    - Denne begrensningen fjernes i versjon 10.0.17 og senere.
+
+- Tildeling på nytt kan bare utføres for enten salgsordrer eller prosjektsalgsordrer. Det kan ikke gjøres for en kombinasjon av salgsordrer og prosjektsalgsordrer.
+
+    - Denne begrensningen fjernes i versjon 10.0.17 og senere.
+
 ## <a name="set-up-reallocation"></a>Oppsett av ny tildeling
 
-Én parameter påvirker prosessen for ny deling.
+Én parameter påvirker prosessen for ny tildeling.
 
 Ettersom ny tildeling kan utføres på en salgsordre som er delvis eller fullstendig fakturert, må alle tidligere regnskapsoppføringer for fakturaen rettes opp ved hjelp av de nye inntektsprisene som er tildelt på nytt. Denne rettelsen gjøres ved å tilbakeføre den opprinnelige fakturaens regnskapsoppføring og postere en ny regnskapsoppføring som er basert på inntektsprisene som er omforhandlet.
 
@@ -78,7 +90,7 @@ Hvis du vil starte prosessen for ny tildeling, velger du **Tildeling av pris på
 
 [![Siden Tildel pris på nytt med nye ordrelinjer.](./media/02_RevRecScenarios.png)](./media/02_RevRecScenarios.png)
 
-Det øvre rutenettet på siden **Tildel pris på nytt med nye ordrelinjer** kalles **Salg**. Det viser en liste over salgsordrene for kunden. Velg salgsordrene som må tildeles på nytt. Du kan ikke velge prosjektsalgsordrer, fordi prosjektsalgsordrer ikke kan tildeles på nytt. Du kan heller ikke velge salgsordrer som allerede har en ny tildelings-ID, fordi salgsordrer som ikke er prosjekter, bare kan tildeles på nytt én gang. Hvis en salgsordre har en ny tildelings-ID, er den allerede merket for ny tildeling av en annen bruker.
+Det øvre rutenettet på siden **Tildel pris på nytt med nye ordrelinjer** kalles **Salg**. Det viser en liste over salgsordrene for kunden. Velg salgsordrene som må tildeles på nytt. Hvis en salgsordre har en ID for ny tildeling, er den allerede merket for ny tildeling av en annen bruker. Hvis én eller flere salgsordrer tidligere ble tildelt på nytt, og må inkluderes i en annen ny tildeling, må du først angre den nye tildelingen av disse salgsordrene. Deretter kan den tas med i en ny tildeling. Hvis du vil ha mer informasjon, kan du se delene [Angre en ny tildeling](#undo-a-reallocation) og [Ny tildeling flere ganger](#reallocate-multiple-times) senere i dette emnet.
 
 Det nederste rutenettet på siden kalles **Linjer**. Når du har valgt én eller flere salgsordrer i rutenettet **Salg**, viser rutenettet **Linjer** salgsordrelinjene. Velg salgsordrelinjene som må tildeles på nytt. Hvis du bare har valgt én salgsordre, må linjer i den samme salgsordren tildeles på nytt. Denne situasjonen kan oppstå når en av salgsordrelinjene tidligere er fakturert, og deretter ble en ny linje lagt til, eller en eksisterende linje ble fjernet eller avbrutt. Hvis en linje er fjernet, vises den ikke i rutenettet. Derfor kan den ikke velges. Den vil imidlertid fortsatt bli tatt hensyn til når prosessen for ny tildeling kjøres.
 
@@ -104,6 +116,26 @@ Når du er ferdig med å velge de nødvendige salgsordrelinjene, bruker du knapp
 
 - **Tilbakestill data for valgt kunde** – Hvis prosessen for ny tildeling ble startet, men du ikke har fullført prosessen, fjerner du dataene i tabellen for ny tildeling for den valgte kunden. Hvis du for eksempel merker flere salgsordrelinjer for ny tildeling, lar du siden være åpen uten å velge **Behandle**, og deretter blir siden tidsavbrutt. I dette tilfellet vil salgsordrelinjene forbli markert, og de vil ikke være tilgjengelige før en annen bruker kan fullføre prosessen for ny tildeling. Siden kan til og med være tom når den åpnes. I slike situasjoner kan knappen **Tilbakestill data for valgt kunde** brukes til å fjerne ubehandlede salgsordrer, slik at en annen bruker kan fullføre prosessen for ny tildeling.
 
+## <a name="undo-a-reallocation"></a>Angre en ny tildeling
+
+Du angrer en ny tildeling ved å kjøre en annen ny tildeling. Ny tildeling blir utført på nytt, og brukeren velger ulike salgsordrelinjer som skal tas med i den andre tildelingsprosessen.
+
+Hvis en ny tildeling blir utført på tvers av to eller flere atskilte salgsordrer, kan den omgjøres ved å velge **Tildel pris på nytt med nye ordrelinjer** fra en hvilken som helst salgsordre som er inkludert i den nye tildelingen. Du kan ikke gå til **Inntektsføring \> Periodiske oppgaver \> Tildel pris på nytt med nye ordrelinjer** for å angre den nye tildelingen, ettersom siden som åpnes på denne måten, viser bare salgsordrer som ikke har noen ID for ny tildeling. ID-en for ny tildeling tilordnes etter at dokumentet er tildelt på nytt.
+
+Fjern merket for alle salgsordrer som skal utelates fra kontraktsavtalen, på siden **Ny tildeling av pris med nye ordrelinjer**. Bruk de aktuelle knappene i handlingsruten, for eksempel **Oppdater ny tildeling** og **Prosess** til å behandle den nye tildelingen. Hvis alle salgsordrer, bortsett fra den aktive salgsordren, ikke er merket, fjernes ID-en for ny tildeling når endringen behandles.
+
+Hvis en ny tildeling er utført ved å legge til en ny linje i en fullstendig eller delvis fakturert salgsordre, kan du bare omgjøre den nye tildelingen ved å fjerne denne linjen fra salgsordren, og deretter kjøre ny tildeling på nytt. Salgsordrelinjen må fjernes, fordi alle linjer i en salgsordre antas å være del av den samme kontrakten. Du kan ikke fjerne merket for en salgsordrelinje når du er på siden **Tildel pris på nytt med nye ordrelinjer**.
+
+## <a name="reallocate-multiple-times"></a>Tildel på nytt flere ganger
+
+Du kan gjøre flere nye tildelinger mot den samme salgsordren hvis det er gjort flere endringer i kontrakten. Hver nye tildeling utløser tilordningen av en ID for ny tildeling til salgsordren eller gruppen av salgsordrer, for å gruppere endringene. Hvis flere nye tildelinger er utført, bruker hver nye tildeling samme ID for ny tildeling som den første nye tildelingen.
+
+Salgsordre 00045 registreres for eksempel, og har flere linjer. Når salgsordren er ferdigfakturert, legges det til en ny salgsordrelinje. Den nye tildelingen kjøres deretter ved å åpne siden **Tildel pris på nytt med nye ordrelinjer** fra salgsordre 00045 eller ved å gå til **Inntektsføring \> Periodiske oppgaver \> Tildel pris på nytt med nye ordrelinjer**. ID-en for ny tildeling, **Reall000001**, blir tilordnet til salgsordren.
+
+En sekundær salgsordre, 00052, blir opprettet for den samme kontrakten. Du kan kjøre den nye tildelingen en gang til ved å åpne siden **Tildel pris på nytt med nye ordrelinjer** fra salgsordre 00045, men ikke fra salgsordre 00052. Hvis du åpner siden **Tildel pris på nytt med nye ordrelinjer** fra salgsordre 00052, vil ikke salgsordre 00045 vises, fordi en ID for ny tildeling er tilordnet til den. Siden viser bare salgsordrer som ikke har noen ID for ny tildeling.
+
+Det er to måter å gjøre den andre nye tildelingen på. Du kan angre den nye tildelingen av salgsordre 00045. I dette tilfellet fjernes ID-en for ny plassering, og du kan deretter flytte på nytt fra salgsordre 00045 eller salgsordre 00052. Du kan eventuelt åpne siden **Tildel pris på nytt med nye ordrelinjer** fra salgsordre 00045 og legge til den andre salgsordren. Når tildelingen på nytt blir behandlet, blir ID-en **Reall000001** for ny tildeling tilordnet til både salgsordre 00045 og salgsordre 00052.
+
 ## <a name="scenarios-for-reallocation"></a>Scenarioer for ny tildeling
 
 Følgende emner går gjennom ulike scenarioer for inntektsføring:
@@ -112,6 +144,5 @@ Følgende emner går gjennom ulike scenarioer for inntektsføring:
 - [Ny tildeling av inntektsføring – scenario 2](rev-rec-reallocation-scenario-2.md) – To salgsordrer blir angitt, og deretter legger kunden til en vare i kontrakten etter at den første salgsordren er fakturert.
 - [Ny tildeling av inntektsføring – scenario 3](rev-rec-reallocation-scenario-3.md) – En ny linje legges til i en eksisterende, fakturert salgsordre.
 - [Ny tildeling av inntektsføring – scenario 4](rev-rec-reallocation-scenario-4.md) – En linje fjernes fra en eksisterende, delvis fakturert salgsordre.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
