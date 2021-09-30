@@ -2,7 +2,7 @@
 title: Bygge inn lerretsapper fra Power Apps
 description: Dette emnet forklarer hvordan du bygger inn lerretsapper fra Microsoft Power Apps i klienten for å øke produktets funksjonalitet.
 author: jasongre
-ms.date: 08/09/2021
+ms.date: 09/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,17 +13,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: 37ef6101a5a69e9c820347dd6f61c987467d40b3
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 32bf477bb42657b06f22f7677dcb580b38f0a55c
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344535"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488060"
 ---
 # <a name="embed-canvas-apps-from-power-apps"></a>Bygge inn lerretsapper fra Power Apps
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 Microsoft Power Apps er en tjeneste som lar utviklere og ikke-tekniske brukere lage egendefinerte forretningsprogrammer for mobilenheter, nettbrett og nettet uten å måtte skrive kode. Finance and Operations-apper støtter integrasjon med Power Apps. Lerretsapper som du, organisasjon din eller det videre økosystemet utvikler, kan bygges inn i Finance and Operations-apper for å øke produktets funksjonalitet. Du kan for eksempel bygge en lerretsapp fra Power Apps for å supplere en Finance and Operations-app med informasjon som hentes fra et annet system.
 

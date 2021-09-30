@@ -12,22 +12,24 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 96e2cf45296d937db9b136f1472374ae7254e10e
-ms.sourcegitcommit: 3d7905627ce5260ce1e6a6d5c9fdfc4c92c3163d
+ms.openlocfilehash: 12707774c780a0f805deed532af27c3705ea1f55
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7415327"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500604"
 ---
 # <a name="product-readiness"></a>Produktklargjøring
 
 [!include [banner](../includes/banner.md)]
 
-Du an bruke klargjøringskontroller til å sikre at alle de nødvendige hoveddataene er angitt for et produkt før det brukes i transaksjoner. Når det brukes klargjøringskontroller, er en bruker eller et team ansvarlig for å validere bestemte forhåndsdefinerte produktrelaterte data. Hvis det er en åpen klargjøringskontroll for et produkt, kan ikke produktet brukes i transaksjoner.
+Du an bruke klargjøringskontroller til å sikre at alle de nødvendige hoveddataene er angitt for et produkt før det brukes i transaksjoner. Når det brukes klargjøringskontroller, er en bruker eller et team ansvarlig for å validere bestemte forhåndsdefinerte produktrelaterte data.
 
-Avmerkingsboksen **Aktiv** for et teknisk produkt, en variant eller en versjon er bare tilgjengelig etter at alle de påkrevde dataene er angitt og kontrollert, og etter at alle klargjøringskontrollene er behandlet. På dette tidspunktet kan produktet, versjonen eller varianten brukes i transaksjoner. Du kan opprette klargjøringskontroller for nye produkter, nye varianter og nye tekniske versjoner.
+Du kan merke av for **Aktiv** for et teknisk produkt, en variant eller en versjon etter at alle de påkrevde dataene er angitt og kontrollert, og etter at alle klargjøringskontrollene er behandlet. Hvis én eller flere sjekker ikke er behandlet for produktet, versjonen eller varianten, vil du få en ledetekst om at ikke alle kontrollene er fullført når du prøver å merke av for **Aktiv**.
 
-Du kan også bruke beredskapskontroller på standardprodukter (ikke-tekniske). Hvis du vil ha mer informasjon, kan du se [Klargjøringskontroller for standardprodukter](#standard-products) senere i dette emnet.
+Du kan opprette klargjøringskontroller for tekniske produkter, varianter og versjoner. Du kan også bruke beredskapskontroller på standardprodukter (ikke-tekniske produkter) (se også [Beredskapskontroller av standardprodukter](#standard-products)). 
+
+Du kan bruke standardprodukter i transaksjoner selv om ikke alle beredskapskontroller er fullført. Hvis du har behov for å blokkere et produkt fra å bli brukt i transaksjoner, bruker du livssyklusstatusen. Du kan tilordne en livssyklusstatus som blokkerer et produkt fra å brukes i transaksjoner, og deretter tilordne en ny livssyklusstatus som tillater de nødvendige transaksjonene, når alle beredskapskontroller er fullført.
 
 ## <a name="types-of-readiness-checks"></a>Typer klargjøringskontroller
 

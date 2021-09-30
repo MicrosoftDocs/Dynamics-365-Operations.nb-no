@@ -9,12 +9,12 @@ ms.reviewer: kfender
 ms.search.region: Global
 ms.author: v-aosipov
 ms.search.validFrom: ''
-ms.openlocfilehash: 404fb8dff1519aefb2f4af25eb95dfa6fce75b7c
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: 152bfd24843867685b1d303484ed61ad98ec652a
+ms.sourcegitcommit: 3f6cbf4fcbe0458b1515c98a1276b5d875c7eda7
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7417088"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "7486952"
 ---
 # <a name="swedish-intrastat"></a>Svensk Intrastat
 
@@ -48,7 +48,7 @@ For mer informasjon, se [Last ned ER-konfigurasjoner fra det globale repositorie
 3. I feltet **Rapportformatkartlegging** velger du **Intrastat-rapport**.
 4. I hurtigfanen **Artikkelkodehierarki** i feltet **Kategorihierarki** velger du **Intrastat**.
 5. I feltet **Transaksjonskode** velger du transaksjonskoden for egenskapsoverføringer. Du kan bruke denne koden for transaksjoner som forårsaker faktiske eller planlagte overføringer av eiendeler mot kompensasjon (økonomisk eller annen). Du bruker det også til korrigeringer. Firmaer i Sverige bruker ensifrede transaksjonskoder.
-6. I feltet **Kreditnota** velger du transaksjonskoden for retur av varer. Du bruker denne koden til retur av varer etter at transaksjonen som opprinnelig ble registrert under transaksjonskoden. Firmaer i Sverige bruker ensifrede transaksjonskoder.
+6. I feltet **Kreditnota** velger du transaksjonskoden for retur av varer.
 7. I fanen **Land-/områdeegenskaper** i feltet **Land/område** viser du alle landene eller områdene som firmaet gjør forretninger med. For hvert land som er en del av EU, velger du **EU** i feltet **Type land/område**, slik at landet vises i Intrastat-rapporten.
 
 ## <a name="set-up-the-product-parameters-for-the-intrastat-declaration"></a>Definere produktparameterne for Intrastat-deklarering
@@ -108,7 +108,7 @@ Dette eksemplet viser hvordan du posterer ankomster og fordelinger for Intrastat
 
 1. Gå til **Avgift** > **Oppsett** > **Utenrikshandel** > **Transaksjonskoder**.
 2. Velg **Ny** i handlingsruten.
-3. I **Transaksjonskode**-feltet skriver du inn **1**.
+3. I **Transaksjonskode**-feltet angir du **1**.
 4. I **Navn**-feltet angir du **Vanlige transaksjoner**.
 5. Velg **Lagre** i handlingsruten.
 

@@ -1,27 +1,39 @@
 ---
 title: Hva er nytt eller endret i mobilappen Warehouse Management
 description: Dette emnet inneholder en liste over de nye og endrede funksjonene for hver utgitte versjon av mobilappen Warehouse Management for Microsoft Dynamics 365 Supply Chain Management.
-author: ivanv-microsoft
-ms.date: 07/30/2021
+author: MarkusFogelberg
+ms.date: 09/09/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: ivanv
+ms.author: mafoge
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 6d98cea29f4c25319caed6680966f61c660778f0
-ms.sourcegitcommit: 3d05bb2a423fe130700686ff73daa355d15b0e09
+ms.openlocfilehash: ac3ea6a088b2086054eb692cd0688b269dafca51
+ms.sourcegitcommit: e7eeca05d738e9e46d6185d1ba349836ebafc1a4
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386105"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "7485628"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Hva er nytt eller endret i mobilappen Warehouse Management
 
 [!include [banner](../includes/banner.md)]
 
 Dette emnet inneholder en liste over nye funksjoner, reparasjoner, forbedringer og kjente problemer for hver utgitte versjon av mobilappen Warehouse Management for Microsoft Dynamics 365 Supply Chain Management.
+
+## <a name="version-20100"></a>Versjon 2.0.10.0
+
+Denne versjonen inneholder følgende nye funksjoner, reparasjoner og forbedringer:
+
+- Ny animasjon når du går gjennom lister og sider.
+- Teksten brytes nå riktig på tilkoblingsfeilsiden.
+- Kombinasjonsbokser uten standardverdier vises nå riktig.
+- Informasjon i underoverskriftområdet vises nå bare på siden med fullstendige opplysninger.
+- Tomme inndatafelt vises ikke lenger på detaljkortet.
+- Bekreftelsesverdier dupliseres ikke lenger på detaljkortet.
+- Løste ulike problemer som førte til at systemet sluttet å svare.
 
 ## <a name="version-2090"></a>Versjon 2.0.9.0
 

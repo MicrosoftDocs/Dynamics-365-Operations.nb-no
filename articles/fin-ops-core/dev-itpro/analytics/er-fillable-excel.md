@@ -2,7 +2,7 @@
 title: Utforme en konfigurasjon til å generere dokumenter i Excel-format
 description: Dette emnet beskriver hvordan du utformer et format for elektronisk rapportering (ER) for å fylle ut en Excel-mal, og deretter generere utgående dokumenter i Excel-format.
 author: NickSelin
-ms.date: 03/10/2021
+ms.date: 09/14/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2d737c3a58bf94079b8b674238ed7dd651e238752a2bd992f57c9be4b95aedae
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fd3171ad24f9c06f04372b30f2682b6da516bcb6
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748478"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488144"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Utforme en konfigurasjon til å generere dokumenter i Excel-format
 
@@ -138,6 +138,55 @@ Hvis du vil finne ut mer om hvordan du bygger inn bilder og figurer, kan du se [
 
 Komponenten **PageBreak** tvinger Excel til å starte en ny side. Denne komponenten er ikke nødvendig når du vil bruke standard sideveksling i Excel, men du bør bruke den når du vil at ER-formatet skal strukturere sideveksling for Excel.
 
+## <a name="page-component"></a><a name="page-component"></a>Sidekomponent
+
+### <a name="overview"></a>Oversikt
+
+Du kan bruke **Side**-komponenten når du vil at Excel skal følge ER-formatet og strukturpagineringen i et generert utgående dokument. Når et ER-format kjører komponenter som er under **Side**-komponenten, legges de nødvendige sideskiftene til automatisk. I løpet av denne prosessen vurderes størrelsen på det genererte innholdet, sideoppsettet i Excel-malen og papirstørrelsen som er valgt i Excel-malen.
+
+Hvis du må dele et generert dokument i forskjellige deler, der hver del har forskjellig sidepaginering, kan du konfigurere flere **Side**-komponenter i hver [Ark](er-fillable-excel.md#sheet-component)-komponent.
+
+### <a name="structure"></a><a name="page-component-structure"></a>Struktur
+
+Hvis den første komponenten under **Side**-komponenten er en [Område](er-fillable-excel.md#range-component)-komponent der egenskapen for **Replikeringsretning** er satt til **Ingen replikering**, regnes dette området som sidehodet for paginering som er basert på innstillingene til den gjeldende **Side**-komponenten. Excel-området som er knyttet til denne formatkomponenten, gjentas øverst på hver side som genereres ved hjelp av innstillingene for gjeldende **Side**-komponent.
+
+> [!NOTE]
+> For riktig paginering, hvis [Radene som skal gjentas øverst](https://support.microsoft.com/office/repeat-specific-rows-or-columns-on-every-printed-page-0d6dac43-7ee7-4f34-8b08-ffcc8b022409) i området, er konfigurert i Excel-malen, må adressen for dette Excel-området tilsvare adressen til Excel-området som er tilknyttet den tidligere beskrevne **Område**-komponenten.
+
+Hvis den siste komponenten under **Side**-komponenten er en **Område**-komponent der egenskapen for **Replikeringsretning** er satt til **Ingen replikering**, regnes dette området som sidebunntekst for paginering som er basert på innstillingene til den gjeldende **Side**-komponenten. Excel-området som er knyttet til denne formatkomponenten, gjentas nederst på hver side som genereres ved hjelp av innstillingene for gjeldende **Side**-komponent.
+
+> [!NOTE]
+> For riktig sideginering bør du ikke endre størrelsen på Excel-områdene som er knyttet til **Område**-komponentene ved kjøretid. Vi anbefaler ikke at du formaterer celler i dette området ved å bruke Excel-[alternativene](https://support.microsoft.com/office/wrap-text-in-a-cell-2a18cff5-ccc1-4bce-95e4-f0d4f3ff4e84) **Bryt tekst i en celle** og **Beste tilpassing av radhøyde**.
+
+Du kan legge til flere andre **Område**-komponenter mellom de valgfrie **Område**-komponentene for å angi hvordan et generert dokument fylles ut.
+
+Hvis settet med nestede **Område**-komponenter i **Side**-komponenten ikke samsvarer med strukturen som beskrives tidligere, oppstår det en validerings[feil](er-components-inspections.md#i17) ved utformingen i ER-formatutformingen. Feilmeldingen informerer deg om at problemet kan forårsake problemer ved kjøretid.
+
+> [!NOTE]
+> Hvis du vil generere riktig utdata, angir du ikke en binding for **Område**-komponenter under **Side**-komponenten hvis egenskapen for **Replikeringsretning** for **Område**-komponenten er satt til **Ingen replikering**, og området er konfigurert til å generere sidetopptekster- eller bunntekster.
+
+Hvis du vil ha pagineringsrelatert summering og opptelling for å beregne kjørende totaler og totaler per side, anbefaler vi at du konfigurerer de nødvendige [Datainnsamling](er-data-collection-data-sources.md)-datakildene. Hvis du vil lære hvordan du bruker **Side**-komponenten for å paginere et generert Excel-dokument, kan du fullføre fremgangsmåtene i [Utforme et ER-format for å paginere genererte dokumenter i Excel](er-paginate-excel-reports.md).
+
+### <a name="limitations"></a><a name="page-component-limitations"></a>Begrensninger
+
+Når du bruker **Side**-komponenten for Excel-sidenummerering, vet du ikke det endelige antallet sider i et generert dokument før sidenummereringen er fullført. Derfor kan du ikke beregne det totale antall sider ved å bruke ER-formler, og skrive ut det riktige antallet sider for et generert dokument på en hvilken som helst side før den siste siden.
+
+> [!TIP]
+> Hvis du vil oppnå dette resultatet i en Excel-topptekst eller -bunntekst ved hjelp av spesiell [Excel](/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers)-formatering for topptekst og bunntekst.
+
+Konfigurerte **Side**-komponenter vurderes ikke når du oppdaterer en Excel-mal i det redigerbare formatet i Dynamics 365 Finance versjon 10.0.22. Denne funksjonaliteten vurderes for ytterligere versjoner av Finance.
+
+Hvis du konfigurerer Excel-malen til å bruke [betinget formatering](/office/dev/add-ins/excel/excel-add-ins-conditional-formatting), vil den kanskje ikke fungere som forventet i noen tilfeller.
+
+### <a name="applicability"></a>Relevans
+
+**Side**-komponenten fungerer bare for [Excel-fil](er-fillable-excel.md#excel-file-component)-formatkomponenten når denne komponenten er konfigurert til å bruke en mal i Excel. Hvis du [erstatter](tasks/er-design-configuration-word-2016-11.md) Excel-malen med en Word-mal og deretter kjører det redigerbare ER-formatet, blir **Side**-komponenten ignorert.
+
+**Side**-komponenten fungerer bare når funksjonen **Aktivere bruken av EPPlus-bibliotek i Rammeverk for elektronisk rapportering** er aktivert. Et unntak skjer ved kjøretid hvis ER prøver å behandle **Side**-komponenten mens denne funksjonen er deaktivert.
+
+> [!NOTE]
+> Et unntak skjer ved kjøretid hvis et ER-format behandler **Side**-komponenten for en Excel-mal som inneholder minst én formel som refererer til en celle som ikke er gyldig. For å forhindre kjøretidsfeil kan du korrigere Excel-malen slik det beskrives under [Hvordan du retter en #REF!-feil](https://support.microsoft.com/office/how-to-correct-a-ref-error-822c8e46-e610-4d02-bf29-ec4b8c5ff4be).
+
 ## <a name="footer-component"></a>Bunntekstkomponent
 
 Komponenten **Bunntekst** brukes til å fylle ut bunntekster nederst i et generert regneark i en Excel-arbeidsbok.
@@ -197,9 +246,12 @@ Når du validerer et ER-format som kan redigeres, utføres det en konsekvenskont
 Når et utgående dokument i et Microsoft Excel-arbeidsbokformat genereres, kan noen celler i dokumentet inneholde Excel-formler. Når funksjonen for **Aktivere bruken av EPPlus-bibliotek i Rammeverk for elektronisk rapportering** er aktivert, kan du styre når formlene skal beregnes, ved å endre verdien for **Beregningsalternativer**-[parameteren](https://support.microsoft.com/office/change-formula-recalculation-iteration-or-precision-in-excel-73fc7dac-91cf-4d36-86e8-67124f6bcce4#ID0EAACAAA=Windows) i Excel-malen som brukes:
 
 - Velg **Automatisk** for å omberegne alle avhengige formler hver gang et generert dokument føyes til av nye områder, celler osv.
+
     >[!NOTE]
     > Dette kan føre til ytelsesproblemer for Excel-maler som inneholder flere relaterte formler.
+
 - Velg **Manuell** for å unngå omberegning av formler når et dokument genereres.
+
     >[!NOTE]
     > Omberegning av formler tvinges manuelt når et generert dokument åpnes for forhåndsvisning ved hjelp av Excel.
     > Ikke bruk dette alternativet hvis du konfigurerer et ER-mål som forutsetter bruken av et generert dokument uten forhåndsvisningen i Excel (PDF-konvertering, e-post og så videre), fordi det genererte dokumentet kanskje ikke inneholder verdier i celler som inneholder formler.

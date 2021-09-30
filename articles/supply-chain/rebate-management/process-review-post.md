@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 1a9603df8fd3b2c81c37ca95fd1b13d0b6f4004a38b0cf86846486e3b5d41bfa
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: db3c7561a7249930def2e519f3b6718c429fa3ba
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729416"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500481"
 ---
 # <a name="process-review-and-post-rebates"></a>Behandle, gjennomgå og postere rabatter
 
@@ -43,8 +43,6 @@ Den periodiske oppgaven **Beregn FIFO-innkjøpspriser** må kjøres for å bereg
 Gå til **Rabattbehandling \> Periodiske oppgaver \> Beregn FIFO-innkjøpspriser**. Velg **OK** i dialogboksen som vises, for å kjøre beregningen.
 
 ## <a name="create-source-transactions"></a>Opprett kildetransaksjoner
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Du kan opprette salgsordrer eller bestillinger som har kildetransaksjoner enten før eller etter at du har opprettet en gjeldende rabattbehandlingsavtale.
 
@@ -158,8 +156,6 @@ I stedet for å behandle bestemte avtaler eller avtalelinjer kan du kjøre en sa
 
 ### <a name="process-deals-by-using-the-rebate-workbench"></a>Behandle avtaler ved hjelp av arbeidsområdet for rabatt
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 I stedet for å behandle bestemte avtaler eller avtalelinjer kan du bruke *arbeidsområdet for rabatt* til å behandle flere avtaler samtidig. Du kan eventuelt bruke postfiltre og/eller definere en gjentakende plan. Du trenger ikke merke noen rader. Systemet behandler alle linjer som oppfyller dato- og filterkravene du definerer.
 
 Følg denne fremgangsmåten for å behandle avtaler ved hjelp av området for rabatt.
@@ -213,8 +209,6 @@ For å vise og redigere transaksjoner for rabattbehandling ved å bruke listesid
 > Hvis du bruker en kravprosess når du behandler den neste perioden, vil transaksjonslisten inneholde alle transaksjoner det ikke er gjort krav på, fra den forrige posteringen, i tillegg til eventuelle nye transaksjoner for den valgte perioden.
 
 ### <a name="view-and-edit-rebate-management-transactions-by-using-the-rebate-workbench"></a>Vis og rediger transaksjoner for rabattbehandling ved å bruke arbeidsområdet for rabatt
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 For å vise og redigere transaksjoner for rabattbehandling ved å bruke arbeidsområdet for rabatt gjør du følgende.
 
@@ -295,8 +289,6 @@ I stedet for å postere transaksjoner for bestemte avtaler eller avtalelinjer ka
 
 ### <a name="post-transactions-by-using-the-rebate-workbench"></a>Poster transaksjoner ved hjelp av arbeidsområdet for rabatt
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 Når du har behandlet avsetnings-, rabatt- eller avskrivingstransaksjoner, følger du denne fremgangsmåten for å bruke arbeidsområdet for rabatt til å gå gjennom og postere de genererte transaksjonene for en eller flere bestemte transaksjonslinjer for alle avtaler.
 
 1. Gå til **Rabattbehandling \> Rabattbehandlingsavtaler \> Arbeidsområde for rabatt**.
@@ -332,8 +324,6 @@ Følg denne fremgangsmåten for å gå gjennom journaloppføringene som er knytt
 
 ### <a name="review-journals-by-using-the-rebate-workbench"></a>Gå gjennom journaler ved hjelp av arbeidsområdet for rabatt
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 Følg denne fremgangsmåten for å gå gjennom journaler ved hjelp av området for rabatt.
 
 1. Gå til **Rabattbehandling \> Rabattbehandlingsavtaler \> Arbeidsområde for rabatt**.
@@ -342,8 +332,6 @@ Følg denne fremgangsmåten for å gå gjennom journaler ved hjelp av området f
 1. En liste over relevante journaler, dokumenter eller varer vises. Hvis du vil vise mer informasjon om en journal, et dokument eller et element, merker du den aktuelle raden og velger deretter **Vis detaljer** i handlingsruten.
 
 ## <a name="rebate-management-transactions-on-the-deduction-workbench"></a>Transaksjoner for rabattbehandling på arbeidsområdet for fradrag
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Når du posterer en rabattbehandlingstransaksjon som har en av følgende **betalingstypeverdier**, oppretter systemet en kundefradragsjournal eller en fritekstfaktura for den aktuelle kundekontoen:
 
@@ -358,8 +346,6 @@ Hvis du vil ha mer informasjon, kan du se [Behandle fradrag med arbeidsområdet 
 
 ## <a name="purge-unposted-transactions"></a>Slett ikke-posterte transaksjoner
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 Når du har behandlet avsetnings-, rabatt- eller avskrivingstransaksjoner, følger du denne fremgangsmåten for å slette valgte ikke-posterte transaksjoner.
 
 1. Gå til **Rabattbehandling \> Rabattbehandlingsavtaler \> Arbeidsområde for rabatt**.
@@ -368,8 +354,6 @@ Når du har behandlet avsetnings-, rabatt- eller avskrivingstransaksjoner, følg
 4. Velg **OK** for å slette de ikke-posterte transaksjonene.
 
 ## <a name="cancel-a-posted-provision"></a>Avbryt en postert avsetning
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Når du har behandlet og postert en avsetning, følger du denne fremgangsmåten for å avbryte de posterte avsetningstransaksjonene.
 

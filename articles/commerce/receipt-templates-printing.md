@@ -2,7 +2,7 @@
 title: Definer og utforme kvitteringsformater
 description: Denne artikkelen beskriver hvordan du oppretter og endrer skjemaoppsett for å styre hvordan kvitteringer, fakturaer og andre dokumenter blir skrevet ut. Dynamics 365 Commerce inneholder en skjemaoppsettutforming der du enkelt og grafisk kan opprette og endre ulike typer skjemaoppsett.
 author: rubencdelgado
-ms.date: 06/20/2017
+ms.date: 09/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 7f70918e6fd274ac8e3476d6c309eac40744b0dd24a8b79f531d8627bb4a68e6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a2107670cb5dbac3b8f28c4e3caa357102932291
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715364"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500177"
 ---
 # <a name="set-up-and-design-receipt-formats"></a>Definer og utforme kvitteringsformater
 
@@ -46,7 +46,12 @@ Denne artikkelen beskriver hvordan du oppretter og endrer skjemaoppsett for å s
 
 ## <a name="print-images"></a>Skrive ut bilder
 
-Kvitteringsutformingen inneholder en **Logo**-variabel som kan brukes til å angi bilder som skal skrives ut på kvitteringen. Bilder som tas med i kvitteringer med **Logo**-variabelen, bør være monokrome punktgrafikkfiltyper (BMP). Hvis et BMP-bilde er angitt i kvitteringsutformingen, men ikke skrives ut når den sendes til skriveren, kan filstørrelsen være for stor, eller pikseldimensjonene på bildet er ikke kompatible med skriveren. Hvis dette skjer, kan du forsøke å redusere bildefiloppløsningen.   
+Kvitteringsutformingen inneholder en **Logo**-variabel. Du kan bruke denne variabelen til å angi et bilde som skal skrives ut på kvitteringer. Bilder som skrives ut på kvitteringer ved å bruke **Logo**-variabelen, bør være monokrome punktgrafikkfiltyper (BMP). Hvis et punktgrafikkbilde er angitt i kvitteringsdesigneren, men du ikke skriver ut dokumentet når kvitteringen sendes til skriveren, kan det være ett av følgende problemer:
+
+- Filstørrelsen er for stor, eller pikslersdimensjonene til bildets størrelse er ikke kompatibel med skriveren. I dette tilfellet kan du forsøke å redusere oppløsningen eller dimensjonene i bildefilen.
+- Noen OPOS-skriverdrivere (Object Linking and Embedding for Point of Sale) implementerer ikke **PrintMemoryBitmap**-metoden som maskinvarestasjoner bruker til å skrive ut logobilder. I dette tilfellet kan du prøve å legge til følgende flagg i **HardwareStation.Extension.config**-filen for den dedikerte eller delte maskinvarestasjonen:
+
+    `<add name="HardwareStation.UsePrintBitmapMethod" value="true"/>`
 
 ## <a name="design-a-receipt-format"></a>Utforme et kvitteringsformat
 

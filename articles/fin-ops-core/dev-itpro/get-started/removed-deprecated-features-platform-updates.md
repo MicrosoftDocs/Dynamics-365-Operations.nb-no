@@ -2,7 +2,7 @@
 title: Fjernede eller avskrevne Platform-funksjoner
 description: Dette emnet beskriver funksjoner som er fjernet eller som er planlagt for fjerning i plattformoppdateringer av Finance and Operations-apper.
 author: sericks007
-ms.date: 08/27/2021
+ms.date: 09/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 68114989ab96d175b534a31a7115420ee4adbcfb
-ms.sourcegitcommit: b294840b8e12aaa2775dd73b2ba9481ecc3d91d5
+ms.openlocfilehash: 8910fc338f822e6b6b59acb0e6ee7a90db2b5007
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "7463635"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500115"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Fjernede eller avskrevne Platform-funksjoner
 
@@ -38,7 +38,7 @@ Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekni
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Årsak til avskrivning/fjerning** | Vi avskriver noen SQL-rapporter i LCS. Du trenger ikke lenger å overvåke rapportene fordi denne funksjonen er erstattet av andre tjenester. |
+| **Årsak til avskrivning/fjerning** |   Alle aktiviteter og all overvåking vil bli utført internt, av plattformen, gjennom automasjon. Dette krever ikke manuell inngripen.|
 | **Erstattet med en annen funksjon?**   | Ingen |
 | **Berørte produktområder**         | SQL-rapporter: Gjeldende DTU, Gjeldende DTU-detaljer, Hent låsedetaljer, Liste over gjeldende planveiledning, Hent liste over spørrings-IDer, Hent SQL-spørringsplanen for en gitt plan-ID, Hent spørringsplaner og utførelsesstatus, Hent begrensningskonfigurasjon, Hent ventestatistikk, Vis dyreste spørringer |
 | **Distribusjonsalternativ**              | Skydistribusjon – påvirker Microsoft-administrerte produksjonsmiljøer og sandkassemiljøer på lag 2 til og med lag 5. |
@@ -181,7 +181,7 @@ Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekni
 | **Erstattet med en annen funksjon?**   | Den [nye rutenettkontrollen](../..//fin-ops/get-started/grid-capabilities.md) |
 | **Berørte produktområder**         | Webklient |
 | **Distribusjonsalternativ**              | Alle |
-| **Status**                         | I versjon 10.0.13 er den nye rutenettkontrollen generelt tilgjengelig, og kunder kan eventuelt slå på denne funksjonen. Den nye rutenettkontrollen blir obligatorisk i oktober 2021-versjonen. Når den nye rutenettkontrollen blir obligatorisk, støttes ikke API-et **forceLegacyGrid()** lenger. |
+| **Status**                         | I versjon 10.0.13 er den nye rutenettkontrollen generelt tilgjengelig, og kunder kan eventuelt slå på denne funksjonen. Den nye rutenettkontrollen vil bli aktivert som standard med versjonen for oktober 2021 og er for øyeblikket obligatorisk i april 2022. Når den nye rutenettkontrollen blir obligatorisk, støttes ikke API-et **forceLegacyGrid()** lenger. |
 
 ### <a name="personalization-without-saved-views"></a>Tilpasning uten lagrede visninger 
 

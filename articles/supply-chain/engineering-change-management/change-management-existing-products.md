@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-05-02
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 2fd3d2e4f4c3e53913bd811728b0950c63b38bc5afe6fe5282b4cfb05f414619
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 45c5774ac1f6db5845d6be6bf2f5d8f99063ea07
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744184"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488208"
 ---
 # <a name="enable-change-management-on-existing-products"></a>Aktiver endringsstyring på eksisterende produkter
 
@@ -47,7 +47,9 @@ Hvis du har et atskilt produkt, kan du derfor bare endre det til et teknisk prod
 
 En *kategori for teknisk produkt* må tilordnes hvert tekniske produkt. Du gjør denne tilordningen når du kjører veiviseren **Konverter til teknisk produkt**. Kategorier for teknisk produkt må finnes for alle relevante standardprodukter *før* du kan konvertere disse produktene.
 
-Kategorien for teknisk produkt danner et grunnlag for oppretting av et teknisk produkt, og den fastsetter et sett med standardverdier og policyer. Kategorien for det tekniske produktet må samsvare produktet du tilordner den til. Produkttypen og dimensjonsgruppen må for eksempel samsvare med både produktet og dens kategori for teknisk produkt. Hvis du vil ha mer informasjon, kan du se [Tekniske versjoner og kategorier for teknisk produkt](engineering-versions-product-category.md).
+Kategorien for teknisk produkt danner et grunnlag for oppretting av et teknisk produkt, og den fastsetter et sett med standardverdier og policyer. Tekniske attributter og deres standardverdier (som definert for den tekniske kategorien) brukes også for det resulterende tekniske produktet. Du kan redigere attributtverdiene og/eller legge til flere tekniske attributter i det resulterende produktet etter behov.
+
+Kategorien for det tekniske produktet må samsvare produktet du tilordner den til. Produkttypen og dimensjonsgruppen må for eksempel samsvare med både produktet og dens kategori for teknisk produkt. Hvis du vil ha mer informasjon, kan du se [Tekniske versjoner og kategorier for teknisk produkt](engineering-versions-product-category.md).
 
 > [!IMPORTANT]
 > Veiviseren **Konverter til teknisk produkt** kan bare konvertere produkt til tekniske produkter der versjonen ikke er spores i transaksjoner. Derfor må alternativet **Spor versjon i transaksjoner** settes til *Nei* for kategorier for teknisk produkt som du oppretter for å konvertere eksisterende produkter.

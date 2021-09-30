@@ -2,7 +2,7 @@
 title: Gjøre skilletegnet for kontoplan unikt
 description: Dette emnet beskriver hvordan du ikke kan ha samme skilletegn for kontoplanen og dimensjonsverdier. Du må endre skilletegnverdier etter oppgraderingen.
 author: panolte
-ms.date: 03/30/2018
+ms.date: 09/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,23 +14,18 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 5887eb2fb6a5849058981b93b3ae39be3f75a5e6ae0a8da15170ecb81792553a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a19dc8926df0efeac242e2e42ac37fdad91df9f8
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719824"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500509"
 ---
 # <a name="make-the-chart-of-accounts-delimiter-unique"></a>Gjøre skilletegnet for kontoplan unikt
 
 [!include [banner](../includes/banner.md)]
 
 Du kunne bruke samme skilletegn for kontoplanene og dimensjonsverdiene i Microsoft Dynamics AX 2012. Du kan ikke ha samme skilletegn for kontoplan og dimensjonsverdier i gjeldende versjon av Finance and Operations. Hvis det finnes dupliserte skilletegn, kan du endre dem etter oppgraderingen. 
-
-Denne funksjonen er ikke tilgjengelig i følgende versjoner:
-- Finance and Operations versjon 8.0
-- Finance and Operations versjon 7.1, KB 4094701 Kan ikke angi finansdimensjonene når dimensjonsverdiene inneholder skilletegn for kontoplan
-- Finance and Operations versjon 7.2, KB 4092967 Kan ikke velge underprosjektet som dimensjon når underprosjektformatet inneholder skilletegn for dimensjon
 
 ## <a name="update-delimiter"></a>Oppdatere skilletegn
 Hvis det er en konflikt med kontoplanen, kan skilletegn for kontoplanen og formatet for prosjekt/underprosjekt-ID endres. Ingen andre dimensjonsskilletegn kan endres. 

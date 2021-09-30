@@ -2,7 +2,7 @@
 title: Frigivelsesprosess for planleggingsoptimalisering og utgivelseslogg
 description: Dette emnet inneholder informasjon om utgivelsesprosessen og utgivelsesloggen for planleggingsoptimalisering.
 author: crytt
-ms.date: 09/02/2021
+ms.date: 09/21/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: d0f7a9f59d1034451c5c2dec1150c017bda27ad4
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: 1bf08fc75aa2c05b2f2974ee46ec16609505f696
+ms.sourcegitcommit: b5f2d88ff4e0a234fa6b9ee33516425e54ff2c3b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474706"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "7506789"
 ---
 # <a name="planning-optimization-release-process-and-release-history"></a>Frigivelsesprosess for planleggingsoptimalisering og utgivelseslogg
 
@@ -33,6 +33,7 @@ Siden varslinger ikke vises når planleggingsoptimalisering oppdateres i miljøe
 
 | Endringer | Detaljer for funksjonsbehandling | Frigivelsesdatoer |
 |---|---|---|
+| <p>Lagt til støtte for hovedplaner med **Planleggingsmetode** satt til *Grovplanlegging*.</p><p>På **Rutegrupper**-siden overholder du innstillingene for avmerkingsboksene **Aktivering**, **Driftstid** og **Kapasitet** for rader med **Rute-/jobbtype** *Oppsett* eller *Prosess*. </p><p>Generelle ytelses-, kvalitets- og stabilitetsforbedringer. | <p>Grovplanlegging er tilgjengelig i funksjonsbehandling fra og med versjon 10.0.20.</p><p>Funksjonsnavn: *Uendelig kapasitetsplanlegging for Planleggingsoptimalisering*</p>  | 9.-17. september 2021 |
 | Generelle ytelses-, kvalitets- og stabilitetsforbedringer. | Ingen funksjonsbehandling er nødvendig. | 25.–30. august 2021 |
 | <p>La til feltet **Leveringstid** i planlagte bestillinger.</p><p>Generelle ytelses-, kvalitets- og stabilitetsforbedringer.</p> | Ingen funksjonsbehandling er nødvendig. | 12.–17. august 2021 |
 | <p>La til ressurstypekrav for uendelig kapasitetsplanlegging.</p><p>Forbedret ressurseffektivitet og kalendereffektivitet for uendelig kapasitetsplanlegging.</p><p>Hvis du vil ha mer informasjon, kan du se [Planlegge med uendelig kapasitet](infinite-capacity-planning.md). | <p>Tilgjengelig i funksjonsbehandling fra og med versjon 10.0.20.</p><p>Funksjonsnavn: *Uendelig kapasitetsplanlegging for Planleggingsoptimalisering*</p> | 6.–12. juli 2021 |

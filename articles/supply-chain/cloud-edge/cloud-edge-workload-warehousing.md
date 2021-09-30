@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: f3de160cb4e62f9b30c01c56fa6fe5a4dfad5229
-ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
+ms.openlocfilehash: c3f703e39e5e9d475dcb4f96dfb400a961ae2dcf
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7471722"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500434"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Skalaenheter for sky og kant for arbeidsbelastninger for lagerstyring
 
@@ -157,6 +157,7 @@ Følgende lagerstyringsfunksjonalitet støttes ikke for øyeblikket for arbeidsb
 
 - Inngående behandling av bestillingslinjer som er tilordnet til en last.
 - Inngående behandling av bestillinger for et prosjekt.
+- Administrere netto innkjøpspris, bruke reiser og spore varer i transitt.
 - Inngående og utgående behandling for varer som har den aktive sporingsdimensjonen **Eier** og/eller **Serienummer**.
 - Behandling av lager som har en statusverdi for blokkering.
 - Endring av en lagerstatus under enhver arbeidsflyttingsprosess.
@@ -187,6 +188,7 @@ Følgende tabell viser hvilke utgående funksjoner som støttes, og hvor de stø
 |--------------------------------------------------------------|-----|------------------------------|
 | Behandling av kildedokument                                   | Ja | Ingen |
 | Last- og transportstyringsbehandling                | Ja, men bare lastplanleggingsprosessen. Behandling av transportstyring støttes ikke  | Ingen |
+| Mottak av varer i transitt og landingskostnad                                         | Ja | Ingen |
 | Frigi til lager                                         | Ja | Ingen |
 | Planlagt direkteoverføring                                        | Ingen  | Ingen |
 | Forsendelseskonsolidering                                       | Ja, når du bruker lastplanlegging | Ja |

@@ -1,8 +1,8 @@
 ---
-title: Legge til ytelsesjournalen og sende ros til noen
-description: Ytelsesjournalen inneholder informasjon som er relatert til hvordan du oppfylte målene dine eller hvordan du gjorde det i en periode.
-author: andreabichsel
-ms.date: 08/29/2018
+title: Legge til i ytelsesjournal og sende ros til noen
+description: Ytelsesjournalen inneholder informasjon som er relatert til hvordan ansatte oppfylte målene sine, eller hvordan de gjorde det i en periode.
+author: twheeloc
+ms.date: 08/25/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,48 +10,47 @@ ms.search.form: EssWorkspace, HcmPerfJournal, HcmPerfJournalAddLink, HcmPerfPrai
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b147ee6cd2b674d6d251230420929dff948c6203ec015833396ab1ec468c0573
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fe20b5a5e30ff91f787cc6ac23781adc8cc35119
+ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732279"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7483982"
 ---
-# <a name="add-to-your-performance-journal-and-send-praise-to-someone"></a>Legge til ytelsesjournalen og sende ros til noen
+# <a name="add-to-your-performance-journal-and-send-praise-to-someone"></a>Legge til i ytelsesjournal og sende ros til noen
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Ytelsesjournalen inneholder informasjon som er relatert til hvordan du oppfylte målene dine eller hvordan du gjorde det i en periode. Du kan også rose handlingene til en kollega fra journalen. Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten. Denne fremgangsmåten gjelder for en funksjon som ble lagt til i Dynamics 365 for Operations versjon 1611.
 
-1. Gå til Alle arbeidsområder > Ansattselvbetjening.
-2. Klikk Ytelsesjournal.
-3. Klikk Ny.
-4. Skriv inn en verdi i Tittel-feltet.
-5. Skriv inn en verdi i feltet Beskrivelse.
+1. Gå til **Alle arbeidsområder** > **Ansattselvbetjening**.
+2. Klikk **Ytelsesjournal**.
+3. Klikk på **Ny**.
+4. Skriv inn en verdi i **Tittel**-feltet.
+5. Skriv inn en verdi i **Beskrivelse**-feltet.
     * Ytelsesjournaldatoen er datoen da journalen ble opprettet.  
-    * Kilden representerer stedet der ytelsesjournalen kom fra. Når du oppretter en, kommer den fra Min journal. Hvis lederen oppretter en, kommer den fra lederjournalen.  
-    * Du kan dele denne journalen med din overordnede eller bare gjøre den synlig for deg.  
-6. Angi en dato i Startdato-feltet.
-7. Angi en dato i Fullført dato-feltet.
-8. Velg Ja i Utviklingsplan-feltet.
-9. Skriv inn en verdi i feltet Nøkkelord.
-10. Klikk Legg til ekstern kobling.
-11. Skriv inn "Envision" i Beskrivelse-feltet.
-12. Skriv inn https://www.microsoft.com/en/envision/default i feltet Internett-adresse.
-13. Klikk tittelen under Lagre-knappen med navnet Ytelsesjournal for å gå tilbake til rutenettet.
-    * Du kan legge til den valgte journalen eller journalene i et mål, slik at de vises når du åpner målet. En kobling vil bli lagt til i kategorien Hurtigkoblinger. Hvis du legger til en journal til et mål, og deretter legger målet til en vurdering, vises journalen automatisk i vurderingen.  
-    * Du kan legge til den valgte journalen eller journalene i en vurdering, slik at de vises når du åpner vurderingen.    En kobling vil bli lagt til i hurtigfanen Koblinger.  
-14. Klikk Legg til raskt.
-15. Skriv inn en verdi i Tittel-feltet.
-16. Skriv inn en verdi i feltet Beskrivelse.
-17. Klikk Lagre.
-18. Klikk Send ros.
+    * Kilden representerer stedet der ytelsesjournalen kom fra. Når du oppretter en, kommer den fra Min journal. Hvis lederen oppretter en, kommer den fra lederjournalen.      * Du kan dele denne journalen med din overordnede eller bare gjøre den synlig for deg.  
+6. Angi en dato i **Startdato**-feltet.
+7. Angi en dato i **Fullført dato**-feltet.
+8. Velg **Ja** i **Utviklingsplan**-feltet.
+9. Skriv inn en verdi i feltet **Nøkkelord**.
+10. Klikk **Legg til ekstern kobling**.
+11. Skriv inn "Envision" i **Beskrivelse**-feltet.
+12. Skriv inn https://www.microsoft.com/en/envision/default i feltet **Internett-adresse**.
+13. Klikk tittelen under **Lagre**-knappen med navnet **Ytelsesjournal** for å gå tilbake til rutenettet.
+    * Du kan legge til den valgte journalen eller journalene i et mål, slik at de vises når du åpner målet. En kobling vil bli lagt til i hurtigfanen **Koblinger**. Hvis du legger til en journal til et mål, og deretter legger målet til en vurdering, vises journalen automatisk i vurderingen.  
+    * Du kan legge til den valgte journalen eller journalene i en vurdering, slik at de vises når du åpner vurderingen. En kobling vil bli lagt til i hurtigfanen **Koblinger**.  
+14. Klikk **Legg til raskt**.
+15. Skriv inn en verdi i **Tittel**-feltet.
+16. Skriv inn en verdi i **Beskrivelse**-feltet.
+17. Klikk på **Lagre**.
+18. Klikk **Send ros**.
 19. Velg en person fra listen over ansatte i firmaet.
-20. I Beskrivelse-feltet skriver du "Takk for all hjelp på konferansen!"
-21. Klikk Send.
+20. I **Beskrivelse**-feltet skriver du **Takk for all hjelp på konferansen!**.
+21. Klikk **Send**.
 
 
 

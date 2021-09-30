@@ -2,7 +2,7 @@
 title: Planlegging med ubegrenset kapasitet
 description: Dette emnet gir informasjon om ubegrenset kapasitetsplanlegging for planleggingsoptimalisering. Den beskriver også gjeldende funksjonsbegrensninger.
 author: crytt
-ms.date: 09/02/2021
+ms.date: 09/21/2021
 ms.topic: article
 ms.search.form: RouteInventProd
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 2e730340cddac107b04a6b5877e51b84f4dd7b21
-ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
+ms.openlocfilehash: 9e1e423aaed06f6bb2b42e27d41c2aef46ffe104
+ms.sourcegitcommit: b5f2d88ff4e0a234fa6b9ee33516425e54ff2c3b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7471674"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "7506813"
 ---
 # <a name="scheduling-with-infinite-capacity"></a>Planlegging med ubegrenset kapasitet
 
@@ -27,7 +27,12 @@ Funksjonen *Ubegrenset kapasitetsplanlegging for planleggingsoptimalisering* int
 
 ## <a name="turn-on-the-infinite-capacity-scheduling-feature"></a>Slå på funksjonen for ubegrenset kapasitetsplanlegging
 
-Hvis systemet ikke allerede inneholder funksjonen som er beskrevet i dette emnet, kan du åpne arbeidsområdet [Funksjonsstyring](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) og aktivere funksjonen *Ubegrenset kapasitetsplanlegging for planleggingsoptimalisering*.
+Før du kan bruke denne funksjonen, må den være aktivert i systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
+
+- **Modul:** *Hovedplanlegging*
+- **Funksjonsnavn:** *Uendelig kapasitetsplanlegging for Planleggingsoptimalisering*
+
+Hvis du vil ha mer informasjon om denne funksjonen, kan du se [ Planlegging med ressursvalg basert på funksjoner](capability-based-scheduling.md).
 
 ## <a name="added-functionality"></a>Tillagt funksjonalitet
 
@@ -42,7 +47,7 @@ Under planleggingsprosessen vurderer systemet også *ressursbehovene* som er ang
 - Ressurstype
 - Ressurs
 - Ressursgruppe
-- Funksjon
+- Funksjon (Hvis du vil ha mer informasjon, kan du se [Planlegging med ressursvalg basert på funksjoner](capability-based-scheduling.md).)
 
 > [!NOTE]
 > Krav som er knyttet til personale, for eksempel ferdigheter eller sertifikatkrav, støttes ennå ikke.
@@ -55,7 +60,6 @@ Kort oppsummert støtter planleggingsoptimalisering de mest brukte scenariene. D
 
 Følgende begrensninger gjelder når du bruker planlegging for planleggingsoptimalisering:
 
-- Funksjonen støtter bare jobbplanlegging. Innstillinger som er knyttet til grovplanlegging, vurderes ikke under planlegging, uavhengig av planleggingsmetoden for hovedplaner.
 - Funksjonen støtter bare ubegrenset kapasitet.
 - Funksjonen støtter ikke funksjonalitet for ressursbelastning.
 - Funksjonen vurderer ikke rutesvinn.

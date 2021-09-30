@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a57b51870d5738d906ca779474e0591dc16395cc992b3f79d37d1f45782bf66a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7b240038a946a7f34a3c69df18329edbe1df6be0
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715340"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500309"
 ---
 # <a name="peripherals"></a>Eksterne enheter
 
@@ -562,7 +562,7 @@ Denne konfigurasjonen kan brukes for alle Modern POS-klienter som deler maskinva
 > Hvis enheter ofte bruker forskjellig maskinvarestasjoner, anbefaler vi at du konfigurerer Modern POS til å spørre kasserere å velge en maskinvarestasjon når de begynner betalingsprosessen. Klikk **Retail og Commerce** &gt; **Kanaloppsett** &gt; **Salgsstedsoppsett** &gt; **Kasser**. Velg kassen, og sett deretter alternativet **Velg ved betalingen** til **Ja**. Bruk distribusjonsplanen **1090** for å synkronisere endringer i kanaldatabasen.
 
 ## <a name="extensibility"></a>Utvidelsesmuligheter
-Hvis du vil ha informasjon om scenarier for utvidelsesmuligheter for maskinvarestasjonen, kan du se [Utvidelsesmuligheter for maskinvarestasjon](dev-itpro/hardware-station-extensibility.md).
+Hvis du vil ha informasjon om utvidbarhetsscenarier for maskinvarehendelsen, kan du se [Integrere salgssted med en ny maskinvareenhet og generere installering av utvidelsen](dev-itpro/hardware-device-extension.md).
 
 ## <a name="security"></a>Sikkerhet
 Følgende innstillinger skal brukes i et produksjonsmiljø i henhold til gjeldende sikkerhetsstandarder: 

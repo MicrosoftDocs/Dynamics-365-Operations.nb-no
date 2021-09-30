@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 6fc4b9d0a0f5319c8a75e7d687ee82ea81497844
-ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
+ms.openlocfilehash: c4aac62b36cd271e1c5fc3bcbbfdd785963fc368
+ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7471866"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7484078"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10022-november-2021"></a>Forhåndsversjon av Dynamics 365 Supply Chain Management 10.0.22 (november 2021)
 
@@ -34,7 +34,7 @@ Denne tabellen viser funksjonene i denne versjonen. *Funksjon*-kolonnen gir kobl
 
 | Funksjonsområde | Funksjon | Mer informasjon | Aktivert av   |
 |---|---|---|---|
-| Planlegging | [Planlegge optimaliseringsstøtte for funksjonsbasert ressurstildeling](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-capability-based-resource-allocation) | [Planlegging med ubegrenset kapasitet](../master-planning/planning-optimization/infinite-capacity-planning.md) | Funksjonsbehandling (*Uendelig kapasitetsplanlegging for Planleggingsoptimalisering*) |
+| Planlegging | [Planlegge optimaliseringsstøtte for funksjonsbasert ressurstildeling](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-capability-based-resource-allocation) | [Planlegging med ressursvalg basert på funksjoner](../master-planning/planning-optimization/capability-based-scheduling.md) | Funksjonsbehandling (*Uendelig kapasitetsplanlegging for Planleggingsoptimalisering*) |
 
 ## <a name="feature-enhancements-included-in-this-release"></a>Funksjonsforbedringer inkludert i denne versjonen
 

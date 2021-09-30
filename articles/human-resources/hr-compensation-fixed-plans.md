@@ -1,8 +1,8 @@
 ---
-title: Opprette faste kompensasjonsplaner
-description: Fast kompensasjon refererer til en ansatts vanlige bruttolønn eller lønn. Denne artikkelen beskriver komponentene som må defineres før du kan opprette en fast kompensasjonsplan og registrere ansatte.
-author: andreabichsel
-ms.date: 06/20/2017
+title: Opprette planer for fast kompensasjon
+description: Dette emnet beskriver komponentene som må defineres før du kan opprette en fast kompensasjonsplan og registrere ansatte.
+author: twheeloc
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 15991
 ms.assetid: ef8cf992-176c-4c98-9dff-6510e1eb9f1c
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: ae6f31db40c792c9b65a6f21395e05528a053acbc4b9dc8b56978675c635e0f4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 141666963ca70e320f6acd02a0344f00c780dcac
+ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732495"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7484149"
 ---
 # <a name="create-a-fixed-compensation-plans"></a>Opprette en plan for fast kompensasjon
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Fast kompensasjon refererer til en ansatts vanlige bruttolønn eller lønn. Denne artikkelen beskriver komponentene som må defineres før du kan opprette en fast kompensasjonsplan og registrere ansatte.
+Fast kompensasjon refererer til en ansatts vanlige bruttolønn eller lønn. Dette emnet beskriver komponentene som må defineres før du kan opprette en fast kompensasjonsplan og registrere ansatte.
 
 Beløp for fast kompensasjon kan beregnes for de ansatte basert på ulike faktorer, for eksempel ytelse, område og budsjettøkninger. Dynamics 365 Human Resources støtter kompensasjon av typene trinn, klasse og segment.
 
@@ -41,7 +41,7 @@ Du kan bruke **Kompensasjonsnivåer** til å angi kompensasjon for ulike jobber,
 
 ### <a name="compensation-grids"></a>Kompensasjonsrutenett
 
-Når du definerer nivåene og referansepunktene, kan de kombineres slik at de danner et **kompensasjonsrutenett**. På siden **Kompensasjonsrutenett** definerer du informasjon om rutenettet. Angi for eksempel hva rutenettet skal brukes til, hvilken type plan det skal brukes med, og hvilke referansepunkt eller kolonner som kreves i rutenettet. Når du er ferdig med å registrere denne informasjonen, klikker du **Kompensasjonsstruktur** for å legge til nivåer og beløp i rutenettet. 
+Når du definerer nivåene og referansepunktene, kan de kombineres slik at de danner et **Kompensasjonsrutenett**. På siden **Kompensasjonsrutenett** definerer du informasjon om rutenettet. Angi for eksempel hva rutenettet skal brukes til, hvilken type plan det skal brukes med, og hvilke referansepunkt eller kolonner som kreves i rutenettet. Når du er ferdig med å registrere denne informasjonen, klikker du **Kompensasjonsstruktur** for å legge til nivåer og beløp i rutenettet. 
 
 **Tips!** Bruk **Masseendring**-funksjonen på kompensasjonsstrukturen for å angi startbeløp, og øk dem deretter med prosent eller beløp over alle nivåene eller referansepunktene.
 
@@ -56,13 +56,13 @@ Du kan bruke innstillingen **Utenfor område-toleranse** til å angi hvor streng
 
 Innstillingen for **Ansettelsesregel** lar deg angi om alle de ansatte skal få den samme økningen, uavhengig av ansettelsesdatoen (**Ansettelsesregel** = **Ingen**), eller om ansatte skal få en prosent av belønningen, basert på hvor lenge de var ansatt i syklusen (**Ansettelsesregel** = **Prosent**). 
 
-En **områdeutnyttelsesmatrise** er nyttig hvis du ønsker å redusere tiden det tar for ansatte å nå midtpunktet i området, eller å øke tiden det tar for ansatte å nå det største referansepunktet i området. La oss si at du vil gi ansatte som er i de nederste 25 prosentene av området, 110 prosent av målbelønningen deres, men vil gi ansatte som er i de øverste 25 prosentene av området, bare 80 prosent av målbelønningen, for å unngå at de når maksimumet så raskt. 
+En **Områdeutnyttelsesmatrise** er nyttig hvis du ønsker å redusere tiden det tar for ansatte å nå midtpunktet i området, eller å øke tiden det tar for ansatte å nå det største referansepunktet i området. La oss si at du vil gi ansatte som er i de nederste 25 prosentene av området, 110 prosent av målbelønningen deres, men vil gi ansatte som er i de øverste 25 prosentene av området, bare 80 prosent av målbelønningen, for å unngå at de når maksimumet så raskt. 
 
 Når du har definert alt det grunnleggende i den faste kompensasjonsplanen, kan du definere en kompensasjonsstruktur for planen. Klikk **Angi kompensasjon**. En dialogboks med en glidebryter åpnes og inneholder tre alternativer:
 
--   Opprett et nytt kompensasjonsrutenett ved å velge et referansepunktoppsett og gi rutenettet et navn.
--   Opprett et nytt kompensasjonsrutenett ved å kopiere et eksisterende rutenett du kan bruke som utgangspunkt.
--   Bruk et eksisterende kompensasjonsrutenett som allerede er definert. Alle kompensasjonsplaner som bruker samme rutenett, oppdateres hvis dette rutenettet endres.
+-   **Opprett et nytt kompensasjonsmatrise** ved å velge et referansepunktoppsett og gi rutenettet et navn.
+-   **Opprett et nytt kompensasjonsrutenett** ved å kopiere et eksisterende rutenett du kan bruke som utgangspunkt.
+-   **Bruk et eksisterende kompensasjonsrutenett** som allerede er definert. Alle kompensasjonsplaner som bruker samme rutenett, oppdateres hvis dette rutenettet endres.
 
 Når du har valgt et alternativ, åpnes siden **Kompensasjonsstruktur**, og du kan gjøre endringer i det nye eller det eksisterende kompensasjonsrutenettet.
 
@@ -73,7 +73,7 @@ Det første trinnet i registreringen av ansatte i en fast kompensasjonsplan, er 
 
 **Obs!** Rettighetsregler brukes til å fastsette berettigelse for både faste og variable kompensasjonsplaner. 
 
-Rettighetsregelen vurderer verdien i bestemte felt i postene Jobb, Stilling og Ansatt til å avgjøre om en ansatt har rett til en kompensasjonsplan:
+Rettighetsregelen vurderer verdien i bestemte felt i postene **Jobb**, **Stilling** og **Ansatt** til å avgjøre om en ansatt har rett til en kompensasjonsplan:
 
 -   Rettighetsregelen vurderer følgende felt på **Jobb**-siden:
     -   **Jobb**-feltet
@@ -93,9 +93,9 @@ Når den faste kompensasjonen er definert for en ansatt, kan bare handlinger av 
 
 Nå kan du tilordne en ansatt til en fast kompensasjonsplan. Åpne **Ansatte**-siden, og velg den ansatte du vil registrere i kompensasjonsplanen. I handlingsruten klikker du **Kompensasjon** &gt; **Fast plan**. Nå kan du opprette en ny handling for fast kompensasjon. for den ansatte. 
 
-**Obs!** Feltet for kompensasjonsplan viser bare planene som en ansatt har rett til i henhold til rettighetsreglene som ble definert for hver plan. Hvis ingen rettighetsregel er definert for en plan, har ingen ansatte rett til denne planen. 
+**Obs!** Feltet for **Kompensasjonsplan** viser bare planene som en ansatt har rett til i henhold til rettighetsreglene som ble definert for hver plan. Hvis ingen rettighetsregel er definert for en plan, har ingen ansatte rett til denne planen. 
 
-Systemet kontrollerer at kompensasjonsbeløpet som er angitt for en kompensasjonsplan av typen klasse eller segment, er innenfor de minste og største referansepunktene for gitt kompensasjonsnivå i den ansattes jobb. Hvis kompensasjonsbeløpet er utenfor tillatt område, vises en advarsel eller feilmelding, avhengig av toleransenivået som er angitt i den faste kompensasjonsplanen.
+Kompensasjonsbeløpet som er angitt for en kompensasjonsplan av typen gradering eller sjikt, er kontrollert at det er innenfor de minste og største referansepunktene for gitt kompensasjonsnivå i den ansattes jobb. Hvis kompensasjonsbeløpet er utenfor tillatt område, vises en advarsel eller feilmelding, avhengig av toleransenivået som er angitt i den faste kompensasjonsplanen.
 
 
 

@@ -11,17 +11,16 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ef28fcaf308225a78bcbac42f591e6b24b21b1b1
-ms.sourcegitcommit: 2b04b5a5c883d216072bb91123f9c7709a41f69a
+ms.openlocfilehash: 8f438e18356a6c16cc75bb59153ae7353d984a5a
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7384543"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500336"
 ---
 # <a name="gs1-bar-codes-and-qr-codes"></a>GS1-strekkoder og QR-koder
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 Lagerarbeidere må ofte utføre flere oppgaver når de bruker en mobilenhetskanner for å registrere bevegelser av en vare, palett eller container. Disse oppgavene kan omfatte både å skanne strekkoder og legge inn informasjon manuelt på mobilenheten. Strekkodene bruker et firmaspesifikt format som du definerer og administrerer ved hjelp av Microsoft Dynamics 365 Supply Chain Management.
 

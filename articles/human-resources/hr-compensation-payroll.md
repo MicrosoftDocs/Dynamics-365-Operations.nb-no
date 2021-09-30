@@ -2,7 +2,7 @@
 title: Klar til betaling
 description: Dette emnet viser hvordan du merker en ansatt som klar til betaling i Dynamics 365 Human Resources.
 author: marcelbf
-ms.date: 07/13/2020
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-07-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 70b3f31db459fe021caf08fe09b2e44a597294d1992ee16a69efd8745941a4bd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 80bba5446eb7a87d96a7da4ae856cb5ca114ce52
+ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732423"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7483788"
 ---
 # <a name="ready-to-pay"></a>Klar til betaling
 
@@ -39,7 +39,7 @@ Innsamling og validering av ansattinformasjon kan være tidkrevende og utsatt fo
 
 Slik merker du en ansatt som Klar til betaling:
 
-1. Åpne **Kompensasjonsstyring**. Det er to fliser i arbeidsområdet 
+1. Åpne **Kompensasjonsstyring**. Det er to fliser i arbeidsområdet: 
     - **Ansatte er klare til betaling**
     - **Ansatte som ikke er klare til å betale**
     ![Arbeidsområdet Kompensasjonsstyring.](./media/hr-ready-to-pay-1-workspace.png)
@@ -53,22 +53,20 @@ Slik merker du en ansatt som Klar til betaling:
 
 ## <a name="validation"></a>Validering
 
-Før en ansatt merkes som klar til betaling, validerer systemet en grunnleggende validering av profilens fullføring.
+Før en ansatt merkes som klar til betaling, valideres ansattes profil for fullføring.
 
 ![Valider resultatene.](./media/hr-ready-to-pay-3-results.png)
 
-Tabellen nedenfor inneholder mer informasjon om hver av valideringene som utføres. 
-
 | Validering | Detaljer |
 | --- | --- |
-| Parameter for adresseformål | Validerer hvis parameteren **Bruk lønnsadresser-formål** er på. |
-| Lønnsadresse | Validerer hvis arbeiderprofilen har minst én adresse med formålet "lønnsbosted" eller "lønnsarbeidssted", og det er bare én adresse per formål. |
-| Ansettelse | Kontroller om arbeideren har minst ett ansettelsesforhold (gjeldende, forrige eller fremtidig). |
-| Identifikasjonsnummer | Validerer hvis parameteren "Bruk identifikasjonstyper i lønnsbehandling" er ja, og hvis identifikasjonstypen som er angitt i parameteren, er fylt ut i arbeidsprofilen. |
-| For- og etternavn | Validerer om arbeiderprofilen er gyldig, og kontrollerer om feltene **Navn** og **Etternavn** er fylt ut.|
-| Plassering | Kontroller om arbeideren har en stilling tilordnet. |
-| Fødselsdato | Validerer om arbeiderprofilen er gyldig, og kontrollerer om feltet **Fødselsdag** er fylt ut. |
-| Kompensasjon | Kontroller om arbeideren er registrert i en fast kompensasjonsplan. |
+| **Parameter for adresseformål** | Bekrefter parameteren **Bruk lønnsadresser-formål** er valgt. |
+| **Lønnsadresse** | Bekrefter at arbeiderprofilen har minst én adresse med formålet **lønnsbosted** eller **lønnsarbeidssted**, og det er bare én adresse per formål. |
+| **Ansettelse** | Bekrefter om arbeideren har minst ett ansettelsesforhold (gjeldende, forrige eller fremtidig). |
+| **Identifikasjonsnummer** | Bekrefter at feltet **Bruk identifikasjonstyper i lønnsbehandling** er **Ja** på siden **Human Resources-parametere**, og om identifikasjonstypen som er angitt i parameteren, er fylt ut i arbeidsprofilen. |
+| **For- og etternavn** | Bekrefter at feltene **Navn** og **Etternavn** er fylt ut.|
+| **Plassering** | Bekrefter at arbeideren har en stilling tilordnet. |
+| **Fødselsdato** | Bekrefter at **Fødselsdag**-feltet er fylt ut. |
+| **Kompensasjon** | Bekrefter at arbeideren er registrert i en fast kompensasjonsplan. |
 
 Hvis én av disse valideringene mislykkes, kan du ikke merke den ansatte som klar til betaling.
 
@@ -77,7 +75,7 @@ Hvis **Klar til betaling**-feltet er **Nei**, betyr det at du må utføre en han
 ## <a name="known-issues"></a>Kjente problemer
 
 - Du må deaktivere funksjonen **Strømlinjeformet ansattoppføring** i funksjonsbehandling. Flisene i arbeidsområdet for kompensasjonsstyring fungerer ikke riktig hvis du bruker denne funksjonen.
-- I arbeiderskjemaet er **kategorien Lønn**, gruppen **Klar til betaling** tilgjengelig for alle brukerroller. 
+- På siden **Arbeider** er gruppen **kategorien Lønn**, **Klar til betaling**-gruppen tilgjengelig for alle brukerroller. 
 
 ## <a name="see-also"></a>Se også
 

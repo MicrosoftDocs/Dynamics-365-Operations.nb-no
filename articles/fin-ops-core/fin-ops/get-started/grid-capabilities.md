@@ -2,7 +2,7 @@
 title: Rutenettfunksjoner
 description: Dette emnet beskriver flere kraftfulle funksjoner i rutenettkontrollen. Du må aktivere den nye rutenettfunksjonen for å kunne få tilgang til disse funksjonene.
 author: jasongre
-ms.date: 08/04/2021
+ms.date: 09/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 9bdefeedf8bbbe60f3f76d234f9b393cc8e5dbe8ede7e320e00d0b8e20dbbf73
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9aa79e6e61f3a53073dffa5f3030892cc921d246
+ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775248"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7483860"
 ---
 # <a name="grid-capabilities"></a>Rutenettfunksjoner
 
@@ -30,7 +30,7 @@ Den nye rutenettkontrollen byr på flere nyttige og kraftfulle funksjoner du kan
 -  Beregner totaler
 -  Skriving i forkant av systemet
 -  Evaluering av matematiske uttrykk 
--  Grupperetabelldata (aktivert separat ved hjelp av **funksjonen (Forhåndsvisning) Gruppering i rutenett**)
+-  Grupperetabelldata (aktivert separat ved hjelp av funksjonen **Gruppering i rutenett**)
 -  Låse kolonner
 
 ## <a name="calculating-totals"></a>Beregner totaler
@@ -93,7 +93,7 @@ Som en produktivitetsforsterkning kan brukeren legge inn matematiske formler i n
 Hvis du vil at systemet skal gjenkjenne en verdi som et uttrykk, starter du verdien med et likhetstegn (**=**). Hvis du vil ha mer informasjon om de støttede operatorene og syntaksen, kan du se [Støttede matematiske symboler](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).
 
 ## <a name="grouping-tabular-data"></a>Gruppere tabelldata
-Bedriftsbrukere må ofte utføre ad hoc-analyse av data. Selv om dette kan utføres ved å eksportere data til Microsoft Excel og bruke pivottabeller, gjør funksjonen **Gruppering i rutenett**, som er generelt tilgjengelig i versjon 10.0.16/Platform update 40 og er avhengig av den nye rutenettkontrollfunksjonen, det mulig for brukere å organisere sine tabelldata på interessante måter i Finance and Operations-apper. Ettersom denne funksjonen utvider **Totalverdier**-funksjonen, gjør **Gruppering** det mulig å få meningsfulle innsikter i dataene takket være oppgivelse av subtotalverdier på gruppenivå.
+Bedriftsbrukere må ofte utføre ad hoc-analyse av data. Selv om dette kan utføres ved å eksportere data til Microsoft Excel og bruke pivottabeller, gjør funksjonen **Gruppering i rutenett**, som er avhengig av den nye rutenettkontrollfunksjonen, det mulig for brukere å organisere sine tabelldata på interessante måter i Finance and Operations-apper. Ettersom denne funksjonen utvider **Totalverdier**-funksjonen, gjør **Gruppering** det mulig å få meningsfulle innsikter i dataene takket være oppgivelse av subtotalverdier på gruppenivå.
 
 Hvis du vil bruke denne funksjonen, høyreklikker du kolonnen du vil gruppere etter, og velger **Grupper etter denne kolonnen**. Denne handlingen sorterer dataene etter den valgte kolonnen, legger til en ny **Grupper etter**-kolonne i begynnelsen av rutenettet og setter inn "topptekstrader" i begynnelsen av hver gruppe. Disse topptekstradene inneholder følgende informasjon om hver gruppe: 
 -  Dataverdi for gruppen 
@@ -108,9 +108,6 @@ Når du har gruppert data etter én enkelt kolonne, kan du gruppere dataene ette
 
 Du kan når som helst fjerne grupperingen på en kolonne ved å høyreklikke denne kolonnen og velge **Del opp gruppe**. Du kan også fjerne grupperingen fra alle kolonnene ved å velge **Alternativer for rutenett** og deretter velge **Del opp alle grupper**.   
 
-Vær oppmerksom på at før versjon 10.0.16/Platform update 40, støttes bare ett nivå av gruppering. Hvis dataene er gruppert i disse versjonene, og du velger **Grupper etter denne kolonnen** for en annen kolonne, erstattes den opprinnelige grupperingen.  
-
-
 ### <a name="expanding-and-collapsing-groups"></a>Vise og skjule grupper
 Den innledende grupperingen av data vil få alle grupper vist. Du kan opprette sammendragsvisninger av dataene ved å skjule enkeltstående grupper, eller du kan bruke gruppevisning og -skjuling for å hjelpe til med å navigere gjennom dataene. Hvis du vil vise eller skjule en gruppe, velger du knappen med vinkeltegnet (>) i den tilsvarende topptekstraden for gruppe. Legg merke til at vis/skjul-statusen til enkelt grupper **ikke** lagres i tilpassing.
 
@@ -118,10 +115,10 @@ Den innledende grupperingen av data vil få alle grupper vist. Du kan opprette s
 På samme måte som du kan merke (eller oppheve) alle radene i rutenettet ved å merke av øverst i den første kolonnen i rutenettet, kan du også raskt merke av for (eller oppheve merking) for alle radene i en gruppe ved å merke av i den tilsvarende topptekstraden for gruppe. Avmerkingsboksen i topptekstraden for gruppe vil alltid gjenspeile den gjeldende valgstatusen for rader i denne gruppen, uavhengig av om alle rader er merket, ingen rader er merket, eller bare enkelte rader er merket.
 
 ### <a name="hiding-column-names"></a>Skjule kolonnenavn
-Når du grupperer data, er standard virkemåte å vise kolonnenavnet i topptekstraden for gruppe. Fra og med versjon 10.0.14/plattformoppdatering 38, kan du velge å skjule kolonnenavnet i topptekstrader for gruppe ved å velge **Alternativer for rutenett** > **Skjul gruppekolonnenavn**.
+Når du grupperer data, er standard virkemåte å vise kolonnenavnet i topptekstraden for gruppe. Du kan velge å skjule kolonnenavnet i topptekstrader for gruppe ved å velge **Alternativer for rutenett** > **Skjul gruppekolonnenavn**.
 
 ## <a name="freezing-columns"></a>Låse kolonner
-Noen kolonner i et rutenett kan så viktige for konteksten at du ikke vil at de kan rulle ut av visningen. Du vil i stedet at verdiene i disse kolonnene alltid vises. I versjon 10.0.17 får brukerne denne fleksibiliteten med funksjonen **Lås kolonner i rutenett**. 
+Noen kolonner i et rutenett kan så viktige for konteksten at du ikke vil at de kan rulle ut av visningen. Du vil i stedet kanskje at verdiene i disse kolonnene alltid vises. Med funksjonen **Lås kolonner i rutenett** får brukerne denne fleksibiliteten. 
 
 Du låser en kolonne ved å høyreklikke på kolonneoverskriften og deretter velge **Lås kolonne**. Første gang du fullfører dette trinnet, blir den valgte kolonnen den første kolonnen og ruller ikke lenger ut av visningen. Alle påfølgende kolonner du låser, blir lagt til til høyre for den sist låste kolonnen. Du kan bruke standardfunksjonen for flytting til å endre rekkefølgen på låste kolonner etter behov. Låste kolonner kan imidlertid ikke flyttes slik at de vises blant settet med ulåste kolonner. Ulåste kolonner kan likeledes ikke flyttes slik at de vises blant settet med låste kolonner.
 
@@ -132,32 +129,16 @@ Merk at kolonnen for radvalg og radstatus i det nye rutenettet alltid låses som
 ## <a name="frequently-asked-questions"></a>Vanlige spørsmål
 ### <a name="how-do-i-enable-the-new-grid-control-in-my-environment"></a>Hvordan aktiverer jeg den nye rutenettkontrollen i miljøet? 
 
-**10.0.9 / Platform update 33 og senere**
+Funksjonen **Ny rutenettkontroll** er tilgjengelig direkte i funksjonsbehandling i et hvilket som helst miljø. Når funksjonen er aktivert i Funksjonsstyring, vil alle etterfølgende brukerøkter bruke den nye rutenettkontrollen. 
 
-Funksjonen **Ny rutenettkontroll** er tilgjengelig direkte i funksjonsbehandling i et hvilket som helst miljø. I likhet med andre forhåndsvisningsfunksjoner er aktivering av denne funksjonen i produksjonen underlagt [Ekstra vilkår for bruksavtalen](public-preview-terms.md).  
-
-**10.0.8 / Platform update 32 og 10.0.7 / Platform update 31**
-
-Funksjonen **Ny rutenettkontroll** kan aktiveres i lag 1 (dev/test) og lag 2 (sandkasse) for å ytterligere testing og utformingsendringer ved å følge fremgangsmåten nedenfor.
-
-1.  **Aktiver testversjonen**: Kjør følgende SQL-setning: 
-
-    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, enabled, FLIGHTSERVICEID, PARTITION) VALUES('CLIReactGridEnableFeature', 1, 0, 5637144576);`
-
-2. **Tilbakestill IIS** for å tømme statisk buffer for testversjonering. 
-
-3.  **Finn funksjonen**: Gå til arbeidsområdet **Funksjonsbehandling**. Hvis **Ny rutenettkontroll** ikke vises i listen over alle funksjoner, velger du **Se etter oppdateringer**.   
-
-4.  **Aktiver funksjonen**: Finn funksjonen **Ny rutenettkontroll** i listen over funksjoner, og velg **Aktiver nå** i detaljruten. Vær oppmerksom på at det kreves en oppdatering av nettleseren. 
-
-Alle etterfølgende brukerøkter starter med at den nye rutenettkontrollen er aktivert.
+Denne funksjonen er aktivert som standard i versjon 10.0.21 og har som mål å bli obligatorisk med versjon 10.0.25. 
 
 ## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Utvikler] Velge bort enkeltsider fra å bruke det nye rutenettet 
-Hvis organisasjonen oppdager en side der det er noen problemer med å bruke det nye rutenettet, er det tilgjengelig et API fra og med versjon 10.0.13 / Platform update 37 for å tillate at et enkelt skjema bruker den gamle rutenettkontrollen samtidig som resten av systemet brukes til å utnytte den nye rutenettkontrollen. Hvis du vil velge bort en enkelt side fra det nye rutenettet, legger du til følgende oppkallspost `super()` i skjemaets `run()`-metode.
+Hvis organisasjonen oppdager en side der det er noen problemer med å bruke det nye rut nettet, er det tilgjengelig et API for å tillate at et enkelt skjema bruker den gamle rutenettkontrollen samtidig som resten av systemet brukes til å utnytte den nye rutenettkontrollen. Hvis du vil velge bort en enkelt side fra det nye rutenettet, legger du til følgende oppkallspost `super()` i skjemaets `run()`-metode.
 
  ```this.forceLegacyGrid();```
 
-Dette API-et støttes til oktober 2021-versjonen når den nye rutenettkontrollen blir obligatorisk. Hvis problemer gjør at denne APIen brukes, rapporterer du dem til Microsoft.
+Denne API-en vil bli innfridd helt til den nye rutenettkontrollen blir obligatorisk, noe som for øyeblikket er rettet mot april 2022. Hvis problemer gjør at denne APIen brukes, rapporterer du dem til Microsoft.
 
 ### <a name="forcing-a-page-to-use-the-new-grid-after-previously-opting-out-the-grid"></a>Tvinge en side til å bruke det nye rutenettet etter tidligere å ha valgt bort rutenettet
 Hvis du har valgt bort en enkeltside fra å bruke det nye rutenettet, kan det hende at du senere vil aktivere det nye rutenettet på nytt etter at de underliggende problemene ble løst. For å gjøre dette må du ganske enkelt fjerne oppkallet til `forceLegacyGrid()`. Endringen trer ikke i kraft før et av følgende skjer:

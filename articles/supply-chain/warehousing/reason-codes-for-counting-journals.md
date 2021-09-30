@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 95f7ceb39d2afef1871f395ed562632865022b39
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 4c178ddf342b13a0ef8fee8b8b958554a9a31069
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345272"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500606"
 ---
 # <a name="reason-codes-for-inventory-counting"></a>Årsakskoder for lagertelling
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 Med årsakskoder kan du analysere resultatene av tellingen og eventuelle avvik som oppstår under denne prosessen. Du kan angi årsaken for å gjøre tellingen, for eksempel en skadet pall eller en lagerjustering som er basert på lagereksempler. Samtidig kan du bruke justeringsfunksjonaliteten til å postere verdien av lagerbeholdningsjusteringer til den aktuelle motkontoen, basert på årsaken til hver lagerjustering.
 
@@ -42,8 +41,6 @@ Før du definerer systemet, anbefaler vi at du definerer en strategi for å arbe
 - Bør årsakskodene drive økonomisk motkontopostering?
 
 ## <a name="turn-on-reason-code-features-in-your-system"></a>Aktiver årsakskodefunksjoner i systemet
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Hvis du ikke ser alle funksjonene som er beskrevet i dette emnet i systemet, må du sannsynligvis aktivere funksjonen *Justeringer av poster i lagerbeholdning ved hjelp av konfigurerbare årsakskoder som er koblet til motkonto*. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den hvis den kreves. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
 

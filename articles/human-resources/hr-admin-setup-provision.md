@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2eb2f7c0f35eb05263644248ecf16c5874547de9
-ms.sourcegitcommit: 696796ca5635863850ae9ef16fc1fb0fc46ce8f0
+ms.openlocfilehash: 766e807ee9061f52b692cf3436ba393b334e67c4
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/28/2021
-ms.locfileid: "7441171"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488089"
 ---
 # <a name="provision-human-resources"></a>Klargjøre Human Resources
 
@@ -41,6 +41,8 @@ Før du kan begynne med å klargjøre et nytt produksjonsmiljø, må følgende f
 ## <a name="provision-a-human-resources-trial-environment"></a>Klargjøre et Human Resources-prøvemiljø
 
 Før du klargjør den første sandkasse- eller produksjonsmiljøet, kan det hende at du vil klargjøre et [Human Resources-prøvemiljø](https://go.microsoft.com/fwlink/p/?LinkId=2115962) for å validere Human Resources-funksjonaliteten. Prøvemiljøer inneholder fiktive data som kan brukes til å utforske programmet på en sikker måte. Selv om et prøvemiljø eies av brukeren som ba om det, kan andre brukere inviteres gjennom systemadministrasjonsopplevelsen for Human Resources. 
+
+Prøvemiljøer gir muligheten til å evaluere personalfunksjonaliteten for personer som ikke allerede har tilgang til et Personale-miljø. Hvis du klargjør et prøvemiljø, og den godkjente brukeren allerede har tilgang til ett eller flere eksisterende Personale-miljøer, blir brukeren sendt videre til det eksisterende miljøet eller listen over miljøer.
 
 Prøvemiljøene er ikke ment å brukes som produksjonsmiljøer. De er begrenset til en 60-dagers prøveperiode. Når prøveperioden utløper, kan ikke miljøet alle dataene slettes eller gjenopprettes. Miljøet kan ikke konverteres til et sandkasse- eller produksjonsmiljø. Du kan registrere deg for et nytt prøvemiljø etter det eksisterende miljøet er utløpt.
 
@@ -135,7 +137,12 @@ Bruk følgende retningslinjer når du skal avgjøre hvilket Power Apps-miljø Hu
    
     - **Ikke-støttede geografier** – Miljøet må være i en geografi som støttes. Hvis du vil ha mer informasjon, kan du se [Støttede geografier](hr-admin-setup-provision.md#supported-geographies).
 
-6. Når du har valgt det riktige miljøet som skal brukes, kan du fortsette med klargjøringsprosessen. 
+6. Skrivefunksjoner for dobbel skriving for integrering av Personale-data med Power Apps-miljøet kan bare brukes hvis alternativet **Aktiver Dynamics 365-apper** er valgt for miljøet. Se [Startside for dobbel skriving](../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md) for å få mer informasjon om dobbel skriving.
+
+    > [!NOTE]
+    > Alternativet **Aktiver Dynamics 365-apper** må være valgt når Power Apps-miljøet opprettes. Hvis alternativet ikke er valgt samtidig som klargjøringen, kan du ikke bruke dobbel skriving for å integrere data mellom Dynamics 365 Human Resources og Power Apps-miljøet, eller installere Dynamics 365-apper som Dynamics 365 Sales og Field Service i miljøet. Dette alternativet kan ikke tilbakeføres. Hvis du vil ha mer informasjon, kan du se [Noen viktige hensyn når du oppretter et nytt miljø](//power-platform/admin/create-environment#some-important-considerations-when-creating-a-new-environment) på Power Platform-dokumentasjonsområdet.
+
+7. Når du har valgt det riktige miljøet som skal brukes, kan du fortsette med klargjøringsprosessen. 
 
 ### <a name="supported-geographies"></a>Geografier som støttes
 

@@ -1,8 +1,8 @@
 ---
 title: Konfigurere permisjons- og fraværstyper
 description: Definer permisjonstyper som de ansatte kan ta i Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 07/16/2021
+author: twheeloc
+ms.date: 09/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0ca474fe12867ae767db936ad0b2995c4437bdf0ee94831450fda825b9e075dc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b616d1f2c8b0bc8131045424b01dbfaa82f41f84
+ms.sourcegitcommit: a73df4ddc7f8ddc9e37269c0236dc1bb9b7c7966
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730424"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "7485813"
 ---
 # <a name="configure-leave-and-absence-types"></a>Konfigurere permisjons- og fraværstyper
 
@@ -65,9 +65,9 @@ Permisjonstyper i Dynamics 365 Human Resources definerer de ulike typene fravær
 
 1. Angi avrundingsalternativer for permisjonstypen. Alternativene omfatter **Ingen**, **Opp**, **Ned** og **Nærmest**. Du kan også angi avrundingspresisjonen for permisjonstypen.
 
-2. Angi **Helligdagskorrigering** for permisjonstypen. Når du velger dette alternativet, bruker Human Resources antallet helligdager som faller på en arbeidsdag, for å bestemme hvordan det skal avsettes avspasering for permisjonstypen. Hvis for eksempel første juledag faller på en mandag, vil Human Resources trekke én dag fra permisjonstypen ved behandling av avsetninger.
+2. Angi **Helligdagskorrigering** for permisjonstypen. Når du velger dette alternativet, brukes antallet helligdager som faller på en arbeidsdag, for å bestemme hvordan det skal avsettes avspasering for permisjonstypen. Hvis for eksempel første juledag faller på en mandag, vil Human Resources trekke én dag fra permisjonstypen ved behandling av avsetninger.
 
-   Du angir helligdager i arbeidstidskalenderen. Hvis du vil ha mer informasjon, kan du se [Opprette en driftstidskalender](hr-leave-and-absence-working-time-calendar.md)
+   Du angir helligdager i arbeidstidskalenderen. Hvis du vil ha mer informasjon, kan du se [Opprette en driftstidskalender](hr-leave-and-absence-working-time-calendar.md).
    
  3. Angi **Permisjonstypen overføring** som permisjonstype. Når du velger dette alternativet, blir alle overføringssaldoer overført til den angitte permisjonstypen. Permisjonstypen for overføring må også være inkludert i permisjons- og fraværsplanen. 
  
@@ -76,7 +76,7 @@ Permisjonstyper i Dynamics 365 Human Resources definerer de ulike typene fravær
 ## <a name="configure-the-required-attachment-per-leave-type"></a>Konfigurere nødvendig vedlegg per permisjonstype
 
 > [!NOTE]
-> For å bruke feltet **Vedlegg kreves** må du først slå på funksjonen for å **(forhåndsversjon) konfigurere nødvendige vedlegg for permisjonsforespørsler** i Funksjonsbehandling. Hvis du vil ha mer informasjon om å aktivere forhåndsversjonsfunksjoner, kan du se [Behandle funksjoner](hr-admin-manage-features.md).
+> For å bruke feltet **Vedlegg kreves** må du først slå på funksjonen for å **konfigurere nødvendige vedlegg for permisjonsforespørsler** i Funksjonsbehandling. Hvis du vil ha mer informasjon om å aktivere funksjoner, kan du se [Behandle funksjoner](hr-admin-manage-features.md).
 
 1. På siden **Permisjon og fravær**, i kategorien **Koblinger** under **Oppsett**, velger du **Permisjons- og fraværstyper**.
 
@@ -87,7 +87,7 @@ Ansatte må laste opp et vedlegg når de sender en ny permisjonsforespørsel som
 ## <a name="configure-leave-units-hoursdays-per-leave-type"></a>Konfigurer permisjonsenheter (timer/dager) per permisjonstype
 
 > [!NOTE]
-> Hvis du vil bruke permisjonsenhetene per permisjonstype-funksjonalitet, må du først aktivere funksjonen **(Forhåndsversjon) Konfigurer permisjonsenheter per permisjonstype** i Funksjonsbehandling. Hvis du vil ha mer informasjon om å aktivere forhåndsversjonsfunksjoner, kan du se [Behandle funksjoner](hr-admin-manage-features.md).
+> Hvis du vil bruke permisjonsenhetene per permisjonstype-funksjonalitet, må du først aktivere funksjonen **Konfigurer permisjonsenheter per permisjonstype** i Funksjonsbehandling. Hvis du vil ha mer informasjon om å aktivere funksjoner, kan du se [Behandle funksjoner](hr-admin-manage-features.md).
 
 > [!IMPORTANT]
 > Som standard bruker permisjonstypene i en juridisk enhet permisjonsenhetene fra konfigurasjonen av permisjonsparametere på juridisk enhet-nivå.

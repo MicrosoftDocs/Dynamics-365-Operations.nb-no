@@ -2,7 +2,7 @@
 title: Kontrollere den konfigurerte ER-komponenten for å forhindre kjøretidsproblemer
 description: Dette emnet forklarer hvordan du undersøker de konfigurerte komponentene for elektronisk rapportering (ER) for å forhindre kjøretidsproblemer som kan oppstå.
 author: NickSelin
-ms.date: 03/04/2021
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dd4f2b00dd7634a44b75c76753f5d864b039391f4fcb29e750fb17e8a03e9b77
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a855619ebd1c41dc3ca583912f758ed8a8f9ceef
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718629"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488120"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>Kontrollere den konfigurerte ER-komponenten for å forhindre kjøretidsproblemer
 
@@ -229,6 +229,12 @@ Tabellen nedenfor gir en oversikt over inspeksjonene som ER gir. Hvis du vil ha 
 <p>Topptekst/bunntekst (&lt;komponenttype: Topptekst eller Bunntekst&gt;) er inkonsekvent</p>
 <p><b>Kjøretid:</b> Den sist konfigurerte komponenten brukes i kjøretid hvis utkastversjonen av det konfigurerte ER-formatet utføres.</p>
 </td>
+</tr>
+<tr>
+<td><a href='#i17'>Inkonsekvent innstilling av sidekomponent</a></td>
+<td>Dataintegritet</td>
+<td>Feil</td>
+<td>Det er mer enn to områdekomponenter uten replikering. Fjern unødvendige komponenter.</td>
 </tr>
 </tbody>
 </table>
@@ -866,6 +872,26 @@ Endre det konfigurerte formatet ved å slette en av de inkonsekvente komponenten
 #### <a name="option-2"></a>Alternativ 2
 
 Endre verdien for egenskapen **Utseende for topptekst/bunntekst** for en av de inkonsekvente komponentene av typen **Excel\\Topptekst** eller **Excel\\Bunntekst**.
+
+## <a name="inconsistent-setting-of-page-component"></a><a id="i17"></a>Inkonsekvent innstilling av sidekomponent
+
+Når du [konfigurerer](er-fillable-excel.md) en ER-formatkomponent til å bruke en Excel-mal til å generere et utgående dokument, kan du legge til **Excel\\-side**-komponenten for å paginere et generert dokument ved å bruke ER-formler. For hver **Excel\\-side**-komponent du legger til, kan du legge til mange nestede [Område](er-fillable-excel.md#range-component)-komponenter og likevel være kompatibel med følgende [struktur](er-fillable-excel.md#page-component-structure):
+
+- Den første nestede **Område**-komponenten kan konfigureres slik at egenskapen **Replikeringsretning** settes til **Ingen replikasjon**. Dette området brukes til å lage sidehoder i genererte dokumenter.
+- Du kan legge til mange andre nestede **Område**-komponenter der egenskapen **Replikeringsretning** er satt til **Loddrett**. Disse områdene brukes til å fylle ut genererte dokumenter.
+- Den siste nestede **Område**-komponenten kan konfigureres slik at egenskapen **Replikeringsretning** settes til **Ingen replikasjon**. Dette området brukes til å lage bunntekster på sider i genererte dokumenter og til å legge til de nødvendige sideskiftene.
+
+Hvis du ikke følger denne strukturen for et ER-format i ER-formatdesigneren ved utforming, oppstår det en valideringsfeil, og du får følgende feilmelding: "Det er mer enn to områdekomponenter uten replikering. Fjern unødvendige komponenter".
+
+### <a name="automatic-resolution"></a>Automatisk løsning
+
+Ingen alternativer for automatisk korrigering av dette problemet er tilgjengelig.
+
+### <a name="manual-resolution"></a>Manuell løsing
+
+#### <a name="option-1"></a>Alternativ 1
+
+Endre det konfigurerte formatet ved å endre egenskapen **Replikeringsretning** for alle inkonsekvente **Excel\\-område**-komponenter.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: d4503b6939e3d01ae5bcf1d79c1f85d39348fbb6233cfb7a965f84f3a3b0699a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: af7ac416053a90766138f999ce69d9993ee2ff6c
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744804"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500285"
 ---
 # <a name="goods-in-transit-processing"></a>Behandling av varer i transitt
 
@@ -148,8 +148,6 @@ Denne delen beskriver funksjoner som modulen **Netto innkjøpspris** legger til 
 Netto innkjøpspris legger til en ny arbeidsordretype med navnet *Varer i transitt* på siden **Arbeidsmaler**. Denne arbeidsordretypen må konfigureres på samme måte som [arbeidsmaler for bestilling](/dynamicsax-2012/appuser-itpro/create-a-work-template).
 
 #### <a name="work-header-breaks"></a>Arbeidshodeinndelinger
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Arbeidsmaler som har arbeidsordretypen *Varer i transitt* kan konfigureres til å dele arbeidshoder. På siden **Arbeidsmaler** gjør du ett av følgende:
 
