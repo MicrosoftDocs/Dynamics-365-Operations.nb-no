@@ -1398,12 +1398,16 @@
               items:
                 - name: Commerce-lokalisering for Russland
                   href: localizations/rus-commerce-localization.md
-                - name: Forenklet kundeadresseformat i Commerce-salgssted for Russland
-                  href: localizations/rus-simplified-address.md
                 - name: Konfigurer Commerce-lokalisering for Russland
                   href: localizations/rus-commerce-setup.md
                 - name: Forskuddsbetalinger i Commerce for Russland
                   href: localizations/rus-commerce-prepayments.md
+                - name: Forenklet kundeadresseformat i Commerce-salgssted for Russland
+                  href: localizations/rus-simplified-address.md
+                - name: Eksempel på integrering av bilagsskriver for Russland
+                  href: localizations/rus-fpi-sample.md
+                - name: Kundeinformasjonsbehandling for Russland
+                  href: localizations/rus-customer-information.md
             - name: Sverige
               items:
                 - name: Kassefunksjonalitet
@@ -2220,6 +2224,8 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/commerce/toc.json
                 - name: Konfigurere den globale adresseboken
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/commerce/toc.json
+                - name: Adresseoppsett
+                  href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/commerce/toc.json
                 - name: Vanlige spørsmål om adressebøker
                   href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/commerce/toc.json
                 - name: Konfigurere adressebøker
@@ -2328,8 +2334,12 @@
               href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/commerce/toc.json
         - name: Utvidelsesmulighet
           items:
-            - name: Utvikling og utvidelse av handel
-              href: dev-itpro/dev-retail-home-page.md
+            - name: Commerce-utvikling og -utvidelse
+              items:
+                - name: Commerce for IT-eksperter og utviklere
+                  href: dev-itpro/dev-retail-home-page.md
+                - name: Definere et lokalt utviklingsmiljø
+                  href: dev-itpro/setup-local-dev-env.md
             - name: Utvidelsesmulighet for Internett-kanal
               items:
                 - name: Oversikt over utvidelsesmulighet for Internett-kanal

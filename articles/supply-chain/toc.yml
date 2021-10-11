@@ -1651,6 +1651,8 @@
                   href: master-planning/planning-optimization/planning-optimization-differences-with-built-in.md
                 - name: Parametere som ikke brukes av planleggingsoptimalisering
                   href: master-planning/planning-optimization/not-used-parameters.md
+                - name: Forsyningsplan
+                  href: master-planning/supply-schedule.md
                 - name: Bruk filtre på en plan
                   href: master-planning/planning-optimization/plan-filters.md
                 - name: Hovedplanlegging med behovsprognose
@@ -1757,10 +1759,8 @@
                   href: master-planning/more-about-dynamic-negative-days.md
                 - name: Opprette en konsernintern plan
                   href: master-planning/tasks/create-intercompany-plan.md
-                - name: Vis utgående planlagt konsernintern etterspørsel
+                - name: Vise utgående planlagt konsernintern etterspørsel
                   href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
-                - name: Samarbeid med kunder for intern forsyningskjede
-                  href: master-planning/tasks/collaborate-internal-supply-chain-customers.md
                 - name: Nettobehov og utligningsinformasjon med innebygd hovedplanlegging
                   href: master-planning/net-requirements-built-in-master-planning.md
             - name: Prognose
@@ -2037,9 +2037,13 @@
                   href: procurement/purchase-order-approval-confirmation.md
                 - name: Mobilt arbeidsområde for bestillingsgodkjenning
                   href: procurement/purchase-order-mobile-workspace.md
+                - name: Opprette og fakturere en konsernintern bestilling til intern bruk
+                  href: sales-marketing/intercompany-purchase-order-for-internal-use.md
+                - name: Kontroller prisavvik for konsernintern bestilling
+                  href: sales-marketing/intercompany-check-price-discrepancies.md
                 - name: Registrere mottaket av varene i bestillingen
-                  href: ../supply-chain/procurement/tasks/record-receipt-goods-purchase-order.md
-            - name: Opprett bestilling
+                  href: procurement/tasks/record-receipt-goods-purchase-order.md
+            - name: Opprette bestilling
               items:
                 - name: Opprette bestillinger manuelt
                   href: procurement/purchase-order-creation.md
@@ -2725,10 +2729,66 @@
               items:
                 - name: Prissimulering
                   href: sales-marketing/price-simulation.md
-                - name: Masseopprette salgstilbud
+                - name: Masseopprett salgstilbud
                   href: sales-marketing/tasks/mass-sales-quotations.md
                 - name: Opprette og redigere salgstilbud
                   href: sales-marketing/tasks/create-edit-sales-quotations.md
+            - name: Konsernintern handel
+              items:
+                - name: Definere konsernintern handel
+                  items:
+                    - name: Definere konsernintern handel
+                      href: sales-marketing/intercompany-trade-set-up.md
+                    - name: Konserninterne parametere
+                      href: sales-marketing/intercompany-parameters.md
+                    - name: 'Definere leverandører, kunder og varer for konsernintern handel'
+                      href: sales-marketing/intercompany-set-up-vendors-customers-items.md
+                    - name: Definere tillegg i konserninterne ordrer
+                      href: sales-marketing/intercompany-set-up-charges.md
+                    - name: Definere parametere for å postere en konsernintern ordre
+                      href: sales-marketing/intercompany-set-up-parameters-to-post-order.md
+                - name: Synkronisere konsernintern informasjon
+                  items:
+                    - name: Synkronisere konserninterne priser og rabatter
+                      href: sales-marketing/intercompany-sync-prices-discounts.md
+                    - name: Synkronisere konserninterne tillegg
+                      href: sales-marketing/intercompany-sync-charges.md
+                    - name: Synkronisere konsernintern kundeinformasjon
+                      href: sales-marketing/intercompany-synch-customer-information.md
+                    - name: Synkronisere konserninterne disposisjonskoder
+                      href: sales-marketing/intercompany-synchronize-disposition-codes.md
+                - name: Konserninterne salgsordrer og fakturaer
+                  items:
+                    - name: Opprette konserninterne bestillinger og salgsordrer i flere firmaer
+                      href: sales-marketing/intercompany-orders-in-several-companies.md
+                    - name: Konserninterne ordrer og returordrer
+                      href: sales-marketing/intercompany-orders-and-return-orders.md
+                    - name: Opprette en konsernintern salgsordre for intern bruk
+                      href: sales-marketing/intercompany-sales-order-for-internal-use.md
+                    - name: Opprette og fakturere en konsernintern salgsordre for en ekstern kunde
+                      href: sales-marketing/intercompany-sales-order-for-external-customer.md
+                    - name: Konserninterne reservasjoner
+                      href: sales-marketing/intercompany-reservations.md
+                    - name: Endre eller slette en opprinnelig konsernintern salgsordre
+                      href: sales-marketing/intercompany-change-delete-original-sales-order.md
+                    - name: Endre konserninterne ordrer
+                      href: sales-marketing/intercompany-change-orders.md
+                    - name: Konserninterne parti- og serienumre
+                      href: sales-marketing/intercompany-batch-serial-numbers.md
+                    - name: Konserninterne følgesedler
+                      href: sales-marketing/intercompany-packing-slips.md
+                    - name: Registrere betalinger automatisk for konserninterne kundefakturaer
+                      href: sales-marketing/intercompany-register-customer-payments-automatically.md
+                - name: Konsernintern bestillinger
+                  items:
+                    - name: Opprette og fakturere en konsernintern bestilling til intern bruk
+                      href: sales-marketing/intercompany-purchase-order-for-internal-use.md
+                    - name: Kontroller prisavvik for konsernintern bestilling
+                      href: sales-marketing/intercompany-check-price-discrepancies.md
+                - name: Konserninterne valutaomregninger
+                  href: sales-marketing/intercompany-currency-conversions.md
+                - name: Konsernintern hovedplanlegging
+                  href: sales-marketing/intercompany-master-scheduling.md
             - name: Returer
               items:
                 - name: Salgsreturer
@@ -3067,6 +3127,8 @@
               href: landed-cost/landed-cost-vs-tms.md
             - name: Sette opp og konfigurere modulen Netto innkjøpspris
               items:
+                - name: Aktiver modulen for netto innkjøpspris for systemet ditt
+                  href: landed-cost/landed-cost-enable.md
                 - name: Parametere for netto innkjøpspris
                   href: landed-cost/landed-cost-parameters.md
                 - name: Innkjøps- og kildeparametre for netto innkjøpspris
@@ -3185,6 +3247,8 @@
                       href: warehousing/warehouse-slotting.md
                     - name: Aldersfordeling for lagerplukking for lokasjonsdirektiv
                       href: warehousing/location-directive-inventory-picking-aging.md
+                    - name: Forankring
+                      href: warehousing/anchoring.md
                     - name: Utgående sortering
                       href: warehousing/outbound-sorting.md
                     - name: Plasser til vegg – plasser til butikk
@@ -3337,10 +3401,12 @@
                       href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
                     - name: Mottak av kombinerte nummerskilt på en mobilenhet
                       href: warehousing/mixed-license-plate-receiving.md
-                    - name: Konfigurer Vis eldre partier i lageret på en mobilenhet
+                    - name: Konfigurere Vis eldre partier i lageret på en mobilenhet
                       href: warehousing/display-older-batches-within-warehouses.md
-                    - name: Plukk eldste parti på en mobilenhet
+                    - name: Plukke eldste parti på en mobilenhet
                       href: warehousing/pick-oldest-batch.md
+                - name: Globale mobilenhetsparametere
+                  href: warehousing/mobile-device-parameters.md
                 - name: Brukinnstillinger for mobilenhet
                   href: warehousing/mobile-device-user-settings.md
                 - name: Behandling av lagerapphendelse

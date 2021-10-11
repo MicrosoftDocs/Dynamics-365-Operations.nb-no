@@ -5,6 +5,8 @@
       items:
         - name: Nyheter eller endringer i Human Resources
           href: hr-admin-whats-new.md
+        - name: 20. september 2021
+          href: hr-whats-new-2021-09-20.md
         - name: 06. september 2021
           href: hr-whats-new-2021-09-06.md
         - name: 23. august 2021
@@ -291,6 +293,8 @@
               href: hr-admin-troubleshooting-batch-history.md
             - name: Tilbakestille satsvise jobber som står fast
               href: hr-admin-troubleshooting-batch-execution.md
+            - name: Tilbakestille Dataverse-synkronisering
+              href: hr-admin-troubleshooting-dataverse-sync.md
             - name: Analyserapporter blir ikke oppdatert
               href: hr-admin-troubleshooting-analytic-reports.md
             - name: Kan ikke opprette et miljø i administrasjonssenteret for Power Apps
@@ -485,6 +489,12 @@
               items:
                 - name: Fordelsplan for lønnsarbeider
                   href: hr-admin-integration-payroll-api-payroll-worker-benefit-plan.md
+            - name: Andre enheter
+              items:
+                - name: Historikk for personnavn
+                  href: hr-admin-integration-payroll-api-person-name-history.md
+                - name: Omregningssats
+                  href: hr-admin-integration-payroll-api-compensation-pay-frequency.md
             - name: Alternativsett
               items:
                 - name: Kjønn
@@ -543,6 +553,8 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/human-resources/toc.json
                 - name: Konfigurere den globale adresseboken
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/human-resources/toc.json
+                - name: Adresseoppsett
+                  href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/human-resources/toc.json
                 - name: Vanlige spørsmål om adressebøker
                   href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/human-resources/toc.json
                 - name: Konfigurere adressebøker
@@ -781,6 +793,8 @@
                       href: hr-benefits-process-rate-changes.md
                 - name: ACA-rapportering
                   href: hr-benefits-management-aca-reports.md
+                - name: Fordelsoppgave
+                  href: hr-benefits-statement.md
             - name: Definere og administrere et fordelsprogram
               href: hr-benefits-manage-program.md
             - name: Policyer for fordelsrettighet

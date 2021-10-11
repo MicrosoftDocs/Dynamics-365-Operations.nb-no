@@ -284,9 +284,11 @@
               href: accounts-payable/broker-contract.md
             - name: Behandling av Royalty-kontrakt
               href: accounts-payable/royalty-contract.md
+            - name: Referanse til opprinnelige fakturaer i kreditnotaer (leverandørfakturaer)
+              href: accounts-payable/gbl-original-invoice-numbers-credit-notes-ap.md
             - name: Betalinger og utligninger
               items:
-                - name: Sentraliserte betalinger for Leverandører
+                - name: Sentraliserte betalinger for leverandører
                   href: accounts-payable/centralized-payments-accounts-payable.md
                 - name: Konfigurere utligning
                   href: cash-bank-management/configure-settlement.md
@@ -1272,6 +1274,8 @@
                   href: finance-insights/use-customer-payment-predictions.md
                 - name: Oversikt over øyeblikksbilder
                   href: finance-insights/payment-snapshots.md
+            - name: Vanlige spørsmål for feilsøking for Finance Insights
+              href: finance-insights/finance-insights-troubleshooting-faq.md
         - name: Prosjektstyring og regnskap
           items:
             - name: Oversikt over prosjektstyring og regnskap
@@ -1574,6 +1578,10 @@
                           href: localizations/emea-multiple-vat-registration-numbers.md
                         - name: Rapportering for flere mva-registreringer
                           href: localizations/emea-reporting-for-multiple-vat-registrations.md
+                        - name: Østerriksk rapportering
+                          items:
+                            - name: Mva-deklarering
+                              href: localizations/emea-aut-vat-declaration-austria.md
                         - name: Fransk rapportering
                           items:
                             - name: Mva-deklarering
@@ -1636,10 +1644,12 @@
                   href: localizations/emea-aut-vat-statement-details.md
                 - name: Rapport for tjenester over grenser
                   href: localizations/emea-aut-vat-statement-details.md
-                - name: Intrastat-rapport
+                - name: Østerriksk Intrastat
                   href: localizations/emea-aut-intrastat.md
                 - name: Innkjøpsavgifter
                   href: localizations/emea-aut-purchase-duties.md
+                - name: Mva-deklarering
+                  href: localizations/emea-aut-vat-declaration-austria.md
             - name: Bahrain
               items:
                 - name: Oversikt over Bahrain
@@ -2676,8 +2686,6 @@
                   href: localizations/emea-ita-vat-statements-details.md
                 - name: Kvartalsvis mva-kommunikasjonsrapport
                   href: localizations/emea-ita-quarterly-vat-communication.md
-                - name: Svartelisterapport
-                  href: localizations/emea-ita-black-list-report.md
                 - name: Kompetansedato og regnskapsjournal
                   href: localizations/emea-ita-competence-date.md
                 - name: Avskrivning av anleggsmidler
@@ -3801,6 +3809,8 @@
           items:
             - name: Oversikt over elektronisk rapportering
               href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md?toc=/dynamics365/finance/toc.json
+            - name: Komponenter for elektronisk rapportering
+              href: ../fin-ops-core/dev-itpro/analytics/er-overview-components.md?toc=/dynamics365/finance/toc.json
             - name: Konfigurasjoner
               items:
                 - name: Opprette konfigurasjoner
@@ -4509,6 +4519,8 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurere den globale adresseboken
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/finance/toc.json
+                - name: Adresseoppsett
+                  href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/finance/toc.json
                 - name: Vanlige spørsmål om adressebøker
                   href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurere adressebøker
