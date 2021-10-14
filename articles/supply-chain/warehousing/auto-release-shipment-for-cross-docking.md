@@ -1,7 +1,7 @@
 ---
 title: Automatisk frigivelse av forsendelse for direkteoverføring
 description: Dette emnet beskriver en kryssoverføringsstrategi som lar deg automatisk frigi en behovsordre til lageret når produksjonsordren som leverer behovsantallet, rapporteres som ferdig, slik at antallet flyttes direkte fra produksjonsutleveringsstedet til den utgående lokasjonen.
-author: omulvad
+author: Mirzaab
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: WHSCrossDockingTemplate
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: mirzaab
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 74e26953fc964a3cfdee182433a017bb53fa45d62beab442b2c224e8365adef0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1315bda1fd284eb326d4f08bf36bfea59074fde3
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6755960"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7577942"
 ---
 # <a name="auto-release-shipment-for-cross-docking"></a>Automatisk frigivelse av forsendelse for direkteoverføring
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: b180a8cee1c5b7e9dda837915e6fdf94af30d06a
-ms.sourcegitcommit: 8246ba3872a1f3eaa18c8bb1ba86d3c2142a6e10
+ms.openlocfilehash: a849343cda54745f5ba3afc53e2082e79f71a29a
+ms.sourcegitcommit: 86f0574363fb869482ef73ff294f345f81d17c5b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "7465083"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7562132"
 ---
 # <a name="get-started-with-tax-calculation"></a>Kom i gang med avgiftsberegning
 
@@ -100,7 +100,7 @@ Trinnene i denne delen er ikke knyttet til en bestemt juridisk enhet. Du må bar
     | 10.0.18         | Avgiftskonfigurasjon - Europa 30.12.82     |
     | 10.0.19         | Konfigurasjon 36.38.193 for avgiftsberegning |
     | 10.0.20         | Konfigurasjon 40.43.208 for avgiftsberegning |
-    | 10.0.21         | Konfigurasjon 40.46.212 for avgiftsberegning |
+    | 10.0.21         | Konfigurasjon 40.48.215 for avgiftsberegning |
 
 9. I arbeidsområdet **Globaliseringsfunksjoner** velger du **Funksjoner**, flisen **Avgiftsberegning** og deretter **Legg til**.
 10. Velg en av følgende funksjonstyper:

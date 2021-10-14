@@ -1,7 +1,7 @@
 ---
 title: Synkronisere kontakter direkte fra Sales til kontakter eller kunder i Supply Chain Management
 description: Dette emnet beskriver malene og de underliggende oppgavene som brukes til å synkronisere enhetene Kontakt (kontakter) og Kontakt (kunder) fra Dynamics 365 Sales til Dynamics 365 Supply Chain Management.
-author: ChristianRytt
+author: Henrikan
 ms.date: 10/25/2018
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 084030ab6ff06a1140621bb91435edf6cff4f82cc4bbc13813ab46f76e42174d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ef51a97c38f446cd267ac8a621ce2a1f66efad18
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6756853"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7579046"
 ---
 # <a name="synchronize-contacts-directly-from-sales-to-contacts-or-customers-in-supply-chain-management"></a>Synkronisere kontakter direkte fra Sales til kontakter eller kunder i Supply Chain Management
 
@@ -117,13 +117,13 @@ Følgende illustrasjoner viser et eksempel på en tilordning av malen i Datainte
 > [!NOTE]
 > Tilordningen viser hvilken kolonneinformasjon som vil bli synkronisert fra Sales til Supply Chain Management.
 
-### <a name="contact-to-contact"></a>Kontakt til kontakt
+### <a name="contact-to-contact-example"></a>Eksempel på kontakt til kontakt
 
-![Maltilordning i Dataintegrator.](./media/contacts-direct-template-mapping-data-integrator-1.png)
+![Tilordning av mal for kontakt til kontakt i dataintegrator.](./media/contacts-direct-template-mapping-data-integrator-1.png)
 
-### <a name="contact-to-customer"></a>Kontakt til kunde
+### <a name="contact-to-customer-example"></a>Eksempel på kontakt til kunde
 
-![Maltilordning i Dataintegrator.](./media/contacts-direct-template-mapping-data-integrator-2.png)
+![Tilordning av mal for kontakt til kunde i dataintegrator.](./media/contacts-direct-template-mapping-data-integrator-2.png)
 
 
 ## <a name="related-topics"></a>Relaterte emner

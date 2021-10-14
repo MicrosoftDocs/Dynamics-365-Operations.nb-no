@@ -1,7 +1,7 @@
 ---
 title: Integrere Dynamics 365 Supply Chain Management (Aktivabehandling) med Dynamics 365 Guides
 description: Dette emnet forklarer hvordan du integrerer Aktivabehandling-modulen i Microsoft Dynamics 365 Supply Chain Management med Dynamics 365 Guides for å dra nytte av veiledninger for to virkelighet i de daglige tjeneste- og vedlikeholdsarbeidsflytene.
-author: kamaybac
+author: johanhoffmann
 ms.date: 04/28/2020
 ms.topic: article
 ms.prod: ''
@@ -9,17 +9,19 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: dabourq
+ms.author: johanho
 ms.search.validFrom: 2020-04-28
-ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 94d98aa011d0db3991c14596f5d6bdecc0fb6c831915ae124f623fa57277fcfe
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: 10.0.12
+ms.openlocfilehash: 4132992eb5f4b42d43d9ff72cada616fe0573c2f
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721541"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7568261"
 ---
 # <a name="integrate-dynamics-365-supply-chain-management-asset-management-with-dynamics-365-guides"></a>Integrere Dynamics 365 Supply Chain Management (Aktivabehandling) med Dynamics 365 Guides
+
+[!include [banner](../includes/banner.md)]
 
 Du kan integrere **Aktivabehandling**-modulen i Microsoft Dynamics 365 Supply Chain Management med Dynamics 365 Guides for å dra nytte av veiledninger for to virkelighet i de daglige tjeneste- og vedlikeholdsarbeidsflytene. Hvis en veiledning er knyttet til en arbeidsordre for aktivastyring, vil en arbeider som åpner kontrolliste for vedlikehold for arbeidsordren i mobilappen for Supply Chain Management (Dynamics 365), se at en veiledning er tilgjengelig. Arbeideren kan deretter finne og åpne veiledningen i Dynamics 365 Guides HoloLens-appen.
 

@@ -2,7 +2,7 @@
 title: Funksjoner som er fjernet eller avskrevet i Dynamics 365 Commerce
 description: Dette emnet beskriver funksjoner som er fjernet eller som er planlagt for fjerning fra Dynamics 365 Commerce.
 author: josaw
-ms.date: 08/16/2021
+ms.date: 09/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 3ac08a409284681ba9bcc4825b936c0330d14e04
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: b582b8b95fcf2ad45aa1bb49eb5594d30874e0f4
+ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386747"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "7559565"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Funksjoner som er fjernet eller avskrevet i Dynamics 365 Commerce
 
@@ -36,6 +36,18 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 ## <a name="features-removed-or-deprecated-in-the-commerce-10021-release"></a>Fjernede eller avskrevne funksjoner i Commerce 10.0.21
 
 [!include [banner](../includes/preview-banner.md)]
+
+### <a name="overlapping-discounts-handling-setting-in-commerce-parameters"></a>Håndtering av overlappende rabatter i Commerce-parametere
+
+Innstillingen **Håndtering av overlappende rabatter** på siden **Commerce-parametere** er avskrevet i Commerce-versjon 10.0.21. Fremover vil Commerce-prissettingsmotoren bruke en enkelt algoritme til å bestemme den optimale kombinasjonen av overlappende rabatter.
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | <p>Innstillingen **Håndtering av overlappende rabatter** i Commerce-parametere styrer hvordan Commerce-prissettingsmotoren søker etter og fastsetter den optimale kombinasjonen av overlappende rabatter. I øyeblikket har det tre alternativer:<p><ul><li> **Beste ytelse** – Dette alternativet bruker en avansert heuristisk algoritme og en [marginal verdirangering](../optimal-combination-overlapping-discounts.md)-metode for å prioritere, evaluere og fastslå den beste rabattkombinasjonen til rett tid.</li><li>**Balansert beregning**– I det gjeldende kodegrunnlaget fungerer dette alternativet på samme måten som alternativet for **Best ytelse**. Derfor er det egentlig et duplisert alternativ.</li><li>**Fullstendig beregning** – Dette alternativet bruker en gammel algoritme som går gjennom alle mulige rabattkombinasjoner under prisberegningen. For ordrer som har store linjer og antall, kan dette alternativet forårsake ytelsesproblemer.</li></ul><p>For å forenkle konfigurasjonen, forbedre ytelsen og redusere hendelser som forårsakes av den gamle algoritmen, fjerner vi fullstendig innstillingen **Håndtering av overlappende rabatter** og oppdaterer den interne logikken i Commerce-prissettingsmotoren slik at den nå bruker den avanserte algoritmen (det vil si algoritmen bak alternativet **Beste ytelse**).</p> |
+| **Erstattet med en annen funksjon?**   | Nei. Vi anbefaler at organisasjoner som bruker alternativet **Balansert beregning** eller **Fullstendig beregning**, bytter til alternativet **Best ytelse** før denne funksjonen fjernes. |
+| **Berørte produktområder**         | Priser og rabatter |
+| **Distribusjonsalternativ**              | Alle |
+| **Status**                         | Per 10.0.21-versjonen fjernes innstillingen **Håndtering av overlappende rabatter** fra Commerce-parametere i oktober 2022. |
 
 ### <a name="retail-sdk-distributed-by-using-lifecycle-services"></a>SDK for Retail distribuert ved hjelp av Lifecycle Services
 

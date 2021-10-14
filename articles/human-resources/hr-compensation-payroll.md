@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-07-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 80bba5446eb7a87d96a7da4ae856cb5ca114ce52
-ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
+ms.openlocfilehash: b9536a6e12b4037458910b7a2d27450ac175fd9d
+ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7483788"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "7559613"
 ---
 # <a name="ready-to-pay"></a>Klar til betaling
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-[!include [preview feature](./includes/preview-feature.md)]
 
 > [!NOTE]
 > Hvis du vil merke en ansatt som klar til betaling, må du først aktivere funksjonaliteten for **(forhåndsversjon) lønnsintegrering** i funksjonsbehandling. Hvis du vil ha mer informasjon om hvordan du aktiverer forhåndsvisningsfunksjoner, kan du se [Behandle funksjoner](hr-admin-manage-features.md).
@@ -72,10 +70,9 @@ Hvis én av disse valideringene mislykkes, kan du ikke merke den ansatte som kla
 
 Hvis **Klar til betaling**-feltet er **Nei**, betyr det at du må utføre en handling for å sikre at arbeidsprofilen er fullført. Dette vil ikke stoppe dataene fra å vises i en dataenhet. 
 
-## <a name="known-issues"></a>Kjente problemer
+## <a name="process-automation"></a>Prosessautomatisering
 
-- Du må deaktivere funksjonen **Strømlinjeformet ansattoppføring** i funksjonsbehandling. Flisene i arbeidsområdet for kompensasjonsstyring fungerer ikke riktig hvis du bruker denne funksjonen.
-- På siden **Arbeider** er gruppen **kategorien Lønn**, **Klar til betaling**-gruppen tilgjengelig for alle brukerroller. 
+Du kan automatisere valideringen av alle ansatte ved hjelp av [Prosessautomatisering](/dynamics365/fin-ops-core/dev-itpro/sysadmin/process-automation). I arbeidsområdet **Kompensasjonsstyring** går du til **Koblinger** \> **Parametere** \> **Prosessautomatiseringer**.
 
 ## <a name="see-also"></a>Se også
 

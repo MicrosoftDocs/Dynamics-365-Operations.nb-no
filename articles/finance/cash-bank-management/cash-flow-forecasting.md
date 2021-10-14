@@ -1,8 +1,8 @@
 ---
 title: Kontantstrømprognose
 description: Dette emnet gir en oversikt over prosessen for kontantstrømprognose. Det forklarer også hvordan kontantstrømprognose er integrert med andre moduler i systemet.
-author: JodiChristiansen
-ms.date: 12/16/2020
+author: panolte
+ms.date: 09/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: b9455d132a928185bdfeb49c01c141b4c9b2c52e3b3beb9f8a3c96a38238f296
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 83f8e5b03a2222884758dc567688da2a756421da
+ms.sourcegitcommit: fcfd85a508c0de52cfe11d1986892219e39ef406
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779452"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "7547961"
 ---
 # <a name="cash-flow-forecasting"></a>Kontantstrømprognose
 
@@ -83,9 +83,12 @@ Du kan overstyre standardinnstillingen for **Likviditetskonto**-feltet for beste
 
 ### <a name="budgeting"></a>Budsjettering
 
-Budsjetter som opprettes fra budsjettmodeller, kan tas med i kontantstrømprognoser. Velg budsjettmodellene som skal tas med i prognosen, i **Budsjettering**-fanen på siden **Oppsett for kontantstrømprognose**. Nye budsjettregisteroppføringer tas som standard med i prognoser etter at budsjettmodellen er aktivert for kontantstrømprognose. Inkludering i kontantstrømprognoser kan overskrives i individuelle budsjettregisteroppføringer.
+Budsjetter som opprettes fra budsjettmodeller, kan tas med i kontantstrømprognoser. Velg budsjettmodellene som skal tas med i prognosen, i **Budsjettering**-fanen på siden **Oppsett for kontantstrømprognose**. Nye budsjettregisteroppføringer tas som standard med i prognoser etter at budsjettmodellen er aktivert for kontantstrømprognose.
 
-### <a name="inventory-management"></a>Lagerstyring
+Budsjettregisteroppføringer kan inkluderes i kontantstrømprognosen enkeltvis ved tilpasning. Når du legger til kolonnen "Ta med i kontantstrømprognoser" på siden **Budsjettregisteroppføring**, overskrives innstillingene på siden **Oppsett for kontantstrømprognose** slik at den inkluderer en individuell budsjettregisteroppføring i prognosen.
+
+
+### <a name="inventory-management"></a>Beholdningsstyring
 
 Prognoser for lagerforsyning og -behov kan tas med i kontantstrømprognoser. Velg prognosemodellen som skal tas med i kontantstrømprognosen, i **Lagerstyring**-fanen på siden **Oppsett for kontantstrømprognose**. Inkludering i kontantstrømprognoser kan overskrives på individuelle forsynings- og behovsprognoselinjer.
 
@@ -144,7 +147,7 @@ Arbeidsområdet **Kontantstrømoversikt – alle firmaer** viser analyse for kon
 
 Arbeidsområdet **Kontantstrømoversikt – gjeldende firma** viser analyse for kontantstrømprognose i firmaets definerte regnskapsvaluta. Regnskapsvalutaen som brukes for analysen, er definert på **Finans**-siden. Arbeidsområdet viser en oversikt over kontantstrømprognose og bankkontosaldoer for gjeldende firma. Et diagram over kontant innflyt og utflyt gir en oversikt over fremtidige kontantbevegelser og -saldoer i regnskapsvalutaen, sammen med detaljert informasjon om de anslåtte transaksjonene. De anslåtte valutasaldoene vises også.
 
-Hvis du vil ha mer informasjon om analyse for kontantstrømprognose, kan du se emnet [Power BI-innholdet Kontantstrømoversikt](./cash-overview-power-bi-content.md).
+Hvis du vil ha mer informasjon om analyse for kontantstrømprognose, kan du se [Power BI-innholdet Kontantstrømoversikt](Cash-Overview-Power-BI-content.md).
 
 Du kan også vise kontantstrømprognosedata for bestemte kontoer, ordrer og varer på følgende sider:
 

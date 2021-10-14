@@ -1,7 +1,7 @@
 ---
 title: Oversikt over å utvikle og etablere serviceavtaler
 description: Serviceavtaler lar deg definere ressursene som brukes ved et vanlig servicebesøk, og hvordan disse ressursene skal faktureres til kunden.
-author: ShylaThompson
+author: kamaybac
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e90161e7fa599fc76013277d3c80919fc144b77d3477e5d0318bdb5ef6da422c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 54a3612d11976c86ec1412bb0a599c772d7edeb5
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771257"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7573255"
 ---
 # <a name="develop-and-establish-service-agreements-overview"></a>Oversikt over å utvikle og etablere serviceavtaler
 

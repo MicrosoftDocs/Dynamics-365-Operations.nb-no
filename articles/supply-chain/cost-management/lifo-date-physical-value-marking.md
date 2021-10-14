@@ -13,15 +13,15 @@ ms.custom: 51592
 ms.assetid: d9f13274-3268-444f-85c8-b686fd39286d
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: kamaybac
+ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f033dee70f3423ec560885d59e2db1bc61cb6009e9c9c151c15c0ecd8d697862
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 72e1dab8bbbb830619629d1fb62a89413d388a7f
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748015"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7567565"
 ---
 # <a name="lifo-date-with-physical-value-and-marking"></a>LIFO-dato med fysisk verdi og merking
 
@@ -55,7 +55,9 @@ I dette eksemplet er det ikke merket av for Ta med fysisk verdi for varemodellgr
 
 Det nye glidende gjennomsnittet for kostpris gjenspeiler gjennomsnittet for økonomisk oppdaterte transaksjoner, det vil si USD 15,00. 
 
-Illustrasjonen nedenfor viser virkningene av LIFO-datolagermodellen når alternativet **Ta med fysisk verdi** ikke brukes. ![LIFO-dato med ta med fysisk verdi.](./media/lifodatewithoutincludephysicalvalue.gif) 
+Illustrasjonen nedenfor viser virkningene av LIFO-datolagermodellen når alternativet **Ta med fysisk verdi** ikke brukes. 
+
+![LIFO-dato når alternativet Ta med fysisk verdi ikke brukes.](./media/lifodatewithoutincludephysicalvalue.gif) 
 
 **Nøkkel til diagrammet**
 
@@ -90,7 +92,9 @@ Illustrasjonen nedenfor viser disse transaksjonene:
 
 Det nye glidende gjennomsnittet for kostpris gjenspeiler gjennomsnittet for økonomisk oppdaterte transaksjoner, det vil si USD 20,00. 
 
-Illustrasjonen nedenfor viser virkningene av LIFO-lagermodellen når alternativet **Ta med fysisk verdi** brukes. ![LIFO-dato med ta med fysisk verdi.](./media/lifodatewithincludephysicalvalue.gif) 
+Illustrasjonen nedenfor viser virkningene av LIFO-lagermodellen når alternativet **Ta med fysisk verdi** brukes. 
+
+![LIFO-dato når alternativet Ta med fysisk verdi brukes.](./media/lifodatewithincludephysicalvalue.gif) 
 
 **Nøkkel til diagrammet**
 
