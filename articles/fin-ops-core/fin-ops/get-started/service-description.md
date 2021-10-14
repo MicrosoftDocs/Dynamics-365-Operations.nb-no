@@ -2,19 +2,19 @@
 title: Tjenestebeskrivelse for Finance and Operations apper
 description: Dette emnet inneholder tjenestebeskrivelsen for Finance and Operations apper.
 author: tomhig
-ms.date: 09/03/2021
+ms.date: 09/29/2021
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: 4df681641490fe3b43f4d927ad09e43007f83367
-ms.sourcegitcommit: d420b96d37093c26f0e99c548f036eb49a15ec30
+ms.openlocfilehash: a1547f0cc6c6f705cd0e2ff6e5be751cb97b946a
+ms.sourcegitcommit: 79d19924ed736c9210fa9ae4e0d4c41c53c27eb5
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7472511"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "7581822"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>Tjenestebeskrivelse for Finance and Operations apper
 
@@ -28,7 +28,7 @@ Finance and Operations-apper er ERP-programvare (Enterprise Resource Planning) p
 - [Dynamics 365 Commerce](/dynamics365/commerce/)
 - [Dynamics 365 Project Operations](/dynamics365/project-operations/)
 
-Sammen med [forretningsintelligens](/power-bi/fundamentals/power-bi-service-overview), [infrastruktur](https://azure.microsoft.com/global-infrastructure/), [databehandling](/azure/service-fabric/service-fabric-overview) og [databasetjenester](/azure/azure-sql/azure-sql-iaas-vs-paas-what-is-overview), gjør disse appene det mulig for organisasjoner å kjøre bransjespesifikke prosesser og driftsforretningsprosesser. Kunder som støttes av implementeringspartneren, fastslår konfigurasjonen til forretningsprogramlogikken som passer best til de unike forretningsprosessene. Funksjonalitet og forretningsprosesser kan forsterkes og utvides gjennom én eller en kombinasjon av følgende løsninger:
+Sammen med [forretningsintelligens](/power-bi/fundamentals/power-bi-service-overview), [infrastruktur](https://azure.microsoft.com/global-infrastructure/), [databehandling](/azure/service-fabric/service-fabric-overview) og [databasetjenester](https://devblogs.microsoft.com/azure-sql/running-1m-databases-on-azure-sql-for-a-large-saas-provider-microsoft-dynamics-365-and-power-platform/), gjør disse appene det mulig for organisasjoner å kjøre bransjespesifikke prosesser og driftsforretningsprosesser. Kunder som støttes av implementeringspartneren, fastslår konfigurasjonen til forretningsprogramlogikken som passer best til de unike forretningsprosessene. Funksjonalitet og forretningsprosesser kan forsterkes og utvides gjennom én eller en kombinasjon av følgende løsninger:
 
 - Innebygd [tilpasningserfaring](personalize-user-experience.md)
 - [Microsoft Power Platform](../../dev-itpro/power-platform/overview.md)-verktøy
@@ -197,17 +197,17 @@ Tabellen nedenfor beskriver vanlige scenarier og aktiviteter for tjenesten. Den 
 | Klargjør alle produksjonsforekomster og ikke-produksjonsforekomster. | X | |
 | Valider de distribuerte produksjonsforekomstene og ikke-produksjonsforekomstene. | | X |
 | **Serviceoppdateringer** | |
-| Microsoft bruker serviceoppdateringer for utpekte ikke-produksjons- og produksjonsforekomster. | X | X |
-| Last ned oppdateringen fra LCS, definer, utvikle og test oppdateringen, og gi kodeoppdateringspakken tilbake til LCS. | | X |
-| Be om at det brukes utvidelsesoppdateringer for produksjonsforekomsten. | | X |
+| Bruk serviceoppdateringer for utpekte ikke-produksjons- og produksjonsforekomster. | X | |
+| Bruk serviceoppdateringer fra LCS manuelt i sandkasseforekomster. Definer, utvikle, test oppdateringen og gi pakke med kodeoppdatering tilbake til LCS. | | X |
+| Be om og planlegg at det brukes utvidelsesoppdateringer for produksjonsforekomsten. | | X |
 | Opprett en kode og en datasikkerhetskopi for produksjonsforekomsten før det blir brukt oppdateringer. | X | |
 | Hvis det oppstår feil, tilbakeruller du produksjonsforekomsten til koden og datasikkerhetskopien. | X | |
 | **Dataadministrasjon (sikkerhetskopier, gjenopprett og oppdater)** | | |
 | Sikkerhetskopier databasen. | X | |
 | Fastslå høy tilgjengelighet og en nødgjenopprettingsplan. | X | |
-| Overvåk ytelsen til produksjonsforekomstdatabasen. | X | X |
-| Juster ytelsen til produksjonsforekomstdatabasen. | X | X |
-| Start kopiering av produksjonsforekomstdatabasen til en forekomst som ikke er i produksjon. | | X |
+| Overvåk ytelsen til produksjonsforekomstdatabasen. | X | |
+| Juster ytelsen til produksjonsforekomstdatabasen. | X | |
+| Utfør databasepunktoppdatering av produksjonsforekomst til en forekomst som ikke gjelder produksjon. | | X |
 | **Oppdatere infrastrukturen** | | |
 | Planlegge regelmessige infrastrukturoppdateringer. | X | |
 | **Skalere opp og ned (brukere, lagring og forekomster)** | | |
@@ -215,7 +215,7 @@ Tabellen nedenfor beskriver vanlige scenarier og aktiviteter for tjenesten. Den 
 | Oppdater bruksendringer i verktøyet for LCS-abonnementsberegner. | | X |
 | Rapporter eventuelle vesentlige ytelsesproblemer som påvirker bruken av tjenesten. | | X |
 | Behandle ressursene som kreves for den aktuelle tjenesten, proaktivt. | X | |
-| Undersøk og feilsøk hendelser. | X | X |
+| Undersøk og feilsøk hendelser. | X | |
 | **Sikkerhet (brukertilgang)** | | |
 | Gi brukeren tilgang til tjenesten. | | X |
 | Gi LCS-prosjekttilgang til administrasjon og drift av forekomster som ble distribuert gjennom LCS. | | X |

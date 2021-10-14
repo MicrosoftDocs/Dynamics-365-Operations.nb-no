@@ -16,14 +16,16 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 62a42e2403fe024bd7ea49bff5bef139964e944727a245a480bc240c112154cf
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1d6fd4be0ee1913264c4a565234cfdf711365792
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738993"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7570870"
 ---
 # <a name="purchase-requisitions"></a>Innkjøpsrekvisisjoner
+
+[!include [banner](../../includes/banner.md)]
 
 Hovedplanlegging kan etterfylle godkjente innkjøpsrekvisisjoner. Brukere trenger derfor ikke å bruke en arbeidsflyt til å opprette bestillinger for å dekke innkjøpsrekvisisjoner. Innkjøpsrekvisisjoner kan i stedet dekkes av hovedplanlegging. På grunn av denne funksjonaliteten kan en innkjøpsrekvisisjon produsere en bestilling, en overføringsordre eller en produksjonsordre, avhengig av verdien for **Type planlagt bestilling** som er angitt for det tilknyttede produktet.
 

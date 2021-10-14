@@ -1,7 +1,7 @@
 ---
 title: Malstykklister
 description: En malstykkliste gir en standardisert liste over komponentene for serviceobjekter som blir vedlikeholdt regelmessig.
-author: ShylaThompson
+author: kamaybac
 ms.date: 09/19/2018
 ms.topic: article
 ms.prod: ''
@@ -15,25 +15,23 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ab8586f81dc4a897d243b9d289109f039c390fcbf90c5c205125cf49eb5e8e39
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d34502d74590595f26ba5aae78158ed893a095df
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724754"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7571313"
 ---
-# <a name="template-boms"></a>Malstykklister    
+# <a name="template-boms"></a>Malstykklister
 
 [!include [banner](../includes/banner.md)]
-
 
 En malstykkliste gir deg en standardisert liste over komponentene for serviceobjekter som blir vedlikeholdt regelmessig. Komponentene som er oppført i malstykklisten, representerer de individuelle delkomponentene til serviceobjektet. Ved å bruke en malstykkliste på et serviceobjekt, kan du holde oversikt over delkomponentene som er erstattet på serviceobjektet.
 
 Du kan bruke en malstykkliste på en serviceavtale eller en serviceordre ved å knytte den til en serviceobjektforbindelse.
 
-
 > [!NOTE]
-> <P>Du kan bare bruke én malstykkliste på et serviceobjekt.</P>
+> Du kan bare bruke én malstykkliste på et serviceobjekt.
 
 ## <a name="create-a-template-bom"></a>Opprette en malstykkliste
 
@@ -41,8 +39,8 @@ Tabellen nedenfor inneholder informasjon om de forskjellige metodene du kan bruk
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -70,7 +68,6 @@ Tabellen nedenfor inneholder informasjon om de forskjellige metodene du kan bruk
 </tbody>
 </table>
 
-
 ## <a name="apply-the-template-bom-to-a-service-agreement-or-service-order"></a>Bruk malstykklisten på en serviceavtale eller en serviceordre
 
 Du kan bruke en malstykkliste kan brukes for en serviceavtale og en serviceordre, eller begge deler. Serviceavtalen dekker vanligvis et langsiktig forhold med en kunde. Loggen for erstatninger som er registrert i servicestykkmalen, er nyttige data å ha for serviceavtalen.
@@ -81,7 +78,7 @@ Du kan også bruke en malstykkliste på en serviceordre for å registrere histor
 
 Du kan kopiere loggen til en servicestykklistelinje fra en serviceavtale til en annen serviceavtale. Når du kopierer serviceloggen mellom serviceavtaler, kan du beholde erstatningsoppføringen for en vare.
 
-**Eksempel**
+### <a name="example"></a>Eksempel
 
 Du har angitt en serviceavtale på tre år for bilen til en kunde. I den perioden blir kunden vant til firmaets gode service som firmaet tilbyr. Derfor når avtalen utløper, ønsker kunden å sette opp en ny. Du kan nå forhandle bedre betingelser for firmaet. Ettersom oppføringen av erstattede komponenter kan være nyttig i fremtiden, kopierer du loggen for servicestykklisten til den nye avtalen.
 
@@ -99,26 +96,18 @@ Du kan endre hvordan informasjonen på stykklistelinjen vises for alle maler og 
 
 Hvis du vil bruke malstykklister, må du angi to nummerserier. Definer en nummerserie for malstykklisten og en for linjenummeret for stykklistelogg.
 
-
 > [!NOTE]
-> <P>Nummerserier brukes til å tildele identifikatorer oppføringer som krever det. Før du kan tilordne en nummerserie for en malstykkliste eller et linjenummer for stykklistelogg, må du definere nummerseriekoder.</P>
-
+> Nummerserier brukes til å tildele identifikatorer oppføringer som krever det. Før du kan tilordne en nummerserie for en malstykkliste eller et linjenummer for stykklistelogg, må du definere nummerseriekoder.
 
 ## <a name="set-up-number-sequences"></a>Definer nummerserier
 
-1.  På listesiden **Nummerserier** oppretter du nummerserier for malstykklister og linjenummeret for stykklisteloggen. 
-
-2.  Klikk på **Servicestyring** \> **Oppsett** \> **Servicestyringsparametere**.
-
-3.  Klikk på **Nummerserier**, og velg en nummerseriekode for nummerseriereferansene du har opprettet i skjemaet **Nummerserier**.
-
-4.  Lukk skjemaet for å lagre endringene.
-
+1. På listesiden **Nummerserier** oppretter du nummerserier for malstykklister og linjenummeret for stykklisteloggen.
+1. Klikk på **Servicestyring** \> **Oppsett** \> **Servicestyringsparametere**.
+1. Klikk på **Nummerserier**, og velg en nummerseriekode for nummerseriereferansene du har opprettet i skjemaet **Nummerserier**.
+1. Lukk skjemaet for å lagre endringene.
 
 > [!NOTE]
-> <P>Linjenummeret for stykklisteloggen brukes av systemet til å knytte transaksjonene i stykklisteloggen til en serviceavtale eller serviceordre. Nummeret vises ikke i brukergrensesnittet.</P>
-
-
+> Linjenummeret for stykklisteloggen brukes av systemet til å knytte transaksjonene i stykklisteloggen til en serviceavtale eller serviceordre. Nummeret vises ikke i brukergrensesnittet.
 
 ## <a name="see-also"></a>Se også
 
@@ -127,10 +116,5 @@ Hvis du vil bruke malstykklister, må du angi to nummerserier. Definer en nummer
 [Behandle malstykklister på objektrelasjoner](manage-template-boms-on-object-relations.md)
 
 [Endre en servicestykkliste](modify-service-bom.md)
-
- 
-
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

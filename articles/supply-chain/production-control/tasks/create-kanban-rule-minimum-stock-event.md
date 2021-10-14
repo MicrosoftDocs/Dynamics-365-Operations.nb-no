@@ -1,7 +1,7 @@
 ---
 title: Opprette en Kanban-regel ved hjelp av en hendelse for minste beholdning
 description: Denne fremgangsmåten fokuserer på oppsettet for å opprette en Kanban-regel som bruker en minste beholdning-hendelse for å sikre at et bestemt produkt alltid er tilgjengelig på em bestemt lokasjon.
-author: ChristianRytt
+author: johanhoffmann
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -11,15 +11,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: johanho
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3213fac9875a1fd7824be71236cc0d2efb3274a81b33335756a0dd7391fcbfdb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: bd7e02a8a3bf62606c680dad91d46658775138df
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745532"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566629"
 ---
 # <a name="create-a-kanban-rule-using-a-minimum-stock-event"></a>Opprette en Kanban-regel ved hjelp av en hendelse for minste beholdning
 

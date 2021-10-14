@@ -4,18 +4,18 @@ description: Dette emnet beskriver funksjoner som enten er nye eller endret i Dy
 author: kamaybac
 ms.date: 08/09/2021
 ms.topic: article
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 3f586a00943e23b458ede1470b353d7c018ba923
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 894686446436a390ec2d019672e3a2b8b0e5f5ef
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500561"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7579742"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10021-october-2021"></a>Nyheter eller endringer i Dynamics 365 Supply Chain Management 10.0.21 (oktober 2021)
 
@@ -26,20 +26,6 @@ Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynam
 - **Forhåndsversjon:** august 2021
 - **Allmenn tilgjengelighet for versjon (selvoppdatering):** september 2021
 - **Allmenn tilgjengelighet for versjon (automatisk oppdatering):** oktober 2021
-
-## <a name="known-deployment-issue"></a>Kjent distribusjonsproblem
-
-Når du distribuerer versjon 10.0.21 på IaaS, kan du få følgende distribusjonsvarsel:
-
-**Advarselskode:** 95017
-
-**Advarselsmelding:** Skript \[SetupDiagnostics\] mislyktes i utførelsen mot VM
-
-Distribusjonen vil fungere med advarselen. Følgende kjente problemer kan imidlertid forekomme i Lifecycle Services (LCS):
-
-- På siden **Miljøovervåking** vises ikke koblingen **Vis detaljert versjonsinformasjon**, så du kan ikke se de spesifikke versjonene av modulene som er installert i miljøet ditt. Uten disse dataene kan hurtigreparasjoner mislykkes fordi prosessen som gjelder disse metodene, bruker disse dataene til å kontrollere at forutsetningene for modulversjonen er oppfylt. Siden det ikke er mulig å bruke PEAP/Forhåndsversjon-build i produksjon eller ta i bruk hurtigreparasjoner, bør virkningen være minimal.
-- Fanene **Ytelsesmåledata** og **Indeksanalyse** på siden **Miljøovervåking** under SQL Insights viser ingen data. Alle andre funksjoner for **Miljøovervåking** vil fungere etter hensikten.
-- Siden **Fullstendig systemdiagnose** vil ikke være tilgjengelig. De tilknyttede dataene om statusen til nattlig innkrever kjører og problemer som oppdages av reglene, vises heller ikke.
 
 ## <a name="features-included-in-this-release"></a>Funksjoner inkludert i denne versjonen
 

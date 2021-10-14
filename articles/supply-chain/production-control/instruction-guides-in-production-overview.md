@@ -1,7 +1,7 @@
 ---
 title: Formidle veiledninger for blandet virkelighet for arbeidere i produksjonen
 description: Dette emnet beskriver hvordan du integrerer produksjonsstyringsmodulen i Microsoft Dynamics 365 Supply Chain Management med Dynamics 365 Guides.
-author: cabeln
+author: johanhoffmann
 ms.date: 11/13/2020
 ms.topic: article
 ms.prod: ''
@@ -15,18 +15,19 @@ ms.custom:
 ms.assetid: a3847f07-fca4-4140-a26f-d83c6ac68dde
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: cabeln
+ms.author: johanho
 ms.search.validFrom: 2020-08-01
 ms.dyn365.ops.version: AX 10.0.15
-ms.openlocfilehash: 801d2671d238e2cd616bfc59448b2c91c7c1347de6066033a377a807a56bd633
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: edb4d1217617ee3bcb7f528da4aad42fb4fb6b82
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717130"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7576910"
 ---
 # <a name="provide-mixed-reality-guides-for-workers-in-production"></a>Formidle veiledninger for blandet virkelighet for arbeidere i produksjonen
 
+[!include [banner](../includes/banner.md)]
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Arbeidere i produksjonsprosesser vil dra nytte av relevante instruksjoner som gis til riktig tid i sammenheng med arbeidet. *Instruksjoner* gjelder for flere arbeidsområder, inkludert: samling, tjeneste, operasjoner, sertifisering og sikkerhet. På tvers av alle disse kjernefunksjonene kan pågående opplæringsinstruksjoner bidra til å gi ansatte muligheten til å oppnå mer og arbeide bedre.

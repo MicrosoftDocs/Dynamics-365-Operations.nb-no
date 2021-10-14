@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: e29a5295cd3c334aef88dc7a2a36b2eb8a6f636b159c0f69874fc51298a1ab7c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3641e1974ffc277a690ca8b8d15399ac883b0132
+ms.sourcegitcommit: 89906aa2f18f16e622fd280433c8fc9fe74d2aec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772284"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7581144"
 ---
 # <a name="outbound-inventory-operation-in-pos"></a>Utgående lageroperasjon i salgsstedet
 
@@ -116,7 +116,7 @@ I visningen **Fullstendig ordreliste** kan du manuelt velge en linje i listen og
 
 ### <a name="over-delivery-shipping-validations"></a>Valideringer av overleveringsforsendelser
 
-Valideringer skjer under mottaksprosessen for dokumentlinjene. De omfatter valideringer for overlevering. Hvis en bruker prøver å motta mer beholdning enn det som ble bestilt på en bestilling, men enten overlevering ikke er konfigurert, eller hvis antallet som er mottatt, overskrider den overleveringstoleransen som er konfigurert for bestillingslinjen, får brukeren en feil og ikke tillatt å motta det overflødige antallet.
+Valideringer skjer under fullføringsprosessen for dokumentlinjene. De omfatter valideringer for overlevering. Hvis en bruker prøver å semde mer beholdning enn det som ble bestilt på en overføringsordre, men enten overlevering ikke er konfigurert, eller hvis antallet som sendes, overskrider den overleveringstoleransen som er konfigurert for overføringslinjen, får brukeren en feil og ikke tillatt å levere det overflødige antallet.
 
 ### <a name="underdelivery-close-lines"></a>Lukke linjer for underlevering
 

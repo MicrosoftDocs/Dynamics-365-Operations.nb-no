@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 28a5451f4932669fb66d5e47fd2f574eb3648428
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: 0b16cfdce801e8a63b47397526b47995018b99c9
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386344"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594837"
 ---
 # <a name="model-management-lifecycle"></a>Livssyklus for modelladministrasjon
 
@@ -32,4 +32,4 @@ Vi anbefaler at du lærer opp AI-modellen i et sandkassemiljø og deretter bruke
 
 Siden AI-modellen er basert på de tilgjengelige faktura- og kundedataene, er det viktig at sandkassemiljøet har en ny kopi av produksjonsdataene. Du kan begynne å lære opp modellen ved å følge trinnene i [Bruke kundebetalingsforutsigelser](use-customer-payment-predictions.md). Når modellen er blitt lært opp på nytt, kan du evaluere resultatene slik det beskrives under [Evaluere den opprinnelige forutsigelsesmodellen for kundebetaling](evaluate-payment-prediction.md). Bruk informasjonen i [Forbedre forutsigelsesmodellen](improve-model.md) til å eksperimentere med funksjons- og filterkombinasjoner som kan bidra til å forbedre modellen.
 
-Når du er fornøyd med opplæringsresultatene, følger du trinnene i [Distribuere AI-modellen](https://docs.microsoft.com/ai-builder/distribute-model) for å overføre modellen til produksjonsmiljøet.
+Når du er fornøyd med opplæringsresultatene, følger du trinnene i [Distribuere AI-modellen](/ai-builder/distribute-model) for å overføre modellen til produksjonsmiljøet.

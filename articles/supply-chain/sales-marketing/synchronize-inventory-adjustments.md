@@ -1,7 +1,7 @@
 ---
 title: Synkronisere lageroverføringer og -justeringer fra Field Service til Supply Chain Management
 description: Dette emnet omhandler malene og de underliggende oppgavene som brukes til å synkronisere lagerjusteringer og -overføringer fra Dynamics 365 Supply Chain Management til Dynamics 365 Field Service.
-author: ChristianRytt
+author: Henrikan
 ms.date: 04/30/2019
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: f1fc4b65fefcc050591f721cf5271fdd79f1b648d992be988af7ac02e220850c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 83ab46904815b177640c87fef58ce208d00d800a
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717897"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566389"
 ---
 # <a name="synchronize-inventory-transfers-and-adjustments-from-field-service-to-supply-chain-management"></a>Synkronisere lageroverføringer og -justeringer fra Field Service til Supply Chain Management
 
@@ -72,12 +72,12 @@ Følgende illustrasjoner viser en tilordning av malen i Dataintegrering.
 
 ### <a name="inventory-adjustment-field-service-to-supply-chain-management-inventory-adjustment"></a>Lagerjustering (Field Service til Supply Chain Management): Lagerjustering
 
-[![Maltilordning i Dataintegrering.](./media/FSAdj1.png)](./media/FSAdj1.png)
+[![Maltilordning i dataintegrering, lagerjustering (Field Service to Supply Chain Management): Lagerjustering.](./media/FSAdj1.png)](./media/FSAdj1.png)
 
 
 ### <a name="inventory-transfer-field-service-to-supply-chain-management-inventory-transfer"></a>Lageroverføring (Field Service til Supply Chain Management): Lageroverføring
 
-[![Maltilordning i Dataintegrering.](./media/FSTrans1.png)](./media/FSTrans1.png)
+[![Maltilordning i dataintegrering, lageroverføring (Field Service to Supply Chain Management): Lageroverføring.](./media/FSTrans1.png)](./media/FSTrans1.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

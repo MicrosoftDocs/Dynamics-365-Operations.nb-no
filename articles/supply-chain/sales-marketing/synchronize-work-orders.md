@@ -1,7 +1,7 @@
 ---
 title: Synkronisere arbeidsordrer med prosjekt fra Field Service til Supply Chain Management
 description: Dette emnet drøfter maler og underliggende oppgave som brukes til å synkronisere arbeidsordrer med et prosjektnummer fra Dynamics 365 Field Service til Dynamics 365 Supply Chain Management.
-author: ChristianRytt
+author: Henrikan
 ms.date: 03/12/2019
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 1b953e7649e0a88a31b40aa21de9296f4591904d7629cb12eb10f36091c33bc6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f0b3214aba5882a585664030d6c1aebe34de455c
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779986"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7572535"
 ---
 # <a name="synchronize-work-orders-with-project-from-field-service-to-supply-chain-management"></a>Synkronisere arbeidsordrer med prosjekt fra Field Service til Supply Chain Management
 
@@ -61,19 +61,19 @@ Følgende illustrasjoner viser en tilordning av malen i Dataintegrering.
 
 ### <a name="work-orders-with-project-field-service-to-supply-chain-management-workorderheader"></a>Arbeidsordrer med prosjekt (Field Service til Supply Chain Management): WorkOrderHeader
 
-[![Maltilordning i Dataintegrering.](./media/FSWOP1.png)](./media/FSWOP1.png)
+[![Maltilordning i dataintegrering, Arbeidsordrer med prosjekt (Field Service til Supply Chain Management): WorkOrderHeader.](./media/FSWOP1.png)](./media/FSWOP1.png)
 
 ### <a name="work-orders-with-project-field-service-to-supply-chain-management-workorderheaderproject"></a>Arbeidsordrer med prosjekt (Field Service til Supply Chain Management): WorkOrderHeaderProject
 
-[![Maltilordning i Dataintegrering.](./media/FSWOP2.png)](./media/FSWOP2.png)
+[![Maltilordning i dataintegrering, Arbeidsordrer med prosjekt (Field Service til Supply Chain Management): WorkOrderHeaderProject.](./media/FSWOP2.png)](./media/FSWOP2.png)
 
 ### <a name="work-orders-with-project-field-service-to-supply-chain-management-workorderproduct"></a>Arbeidsordrer med prosjekt (Field Service til Supply Chain Management): WorkOrderProduct
 
-[![Maltilordning i Dataintegrering.](./media/FSWOP3.png)](./media/FSWOP3.png)
+[![Maltilordning i dataintegrering, Arbeidsordrer med prosjekt (Field Service til Supply Chain Management): WorkOrderProduct.](./media/FSWOP3.png)](./media/FSWOP3.png)
 
 ### <a name="work-orders-with-project-field-service-to-supply-chain-management-workorderservice"></a>Arbeidsordrer med prosjekt (Field Service til Supply Chain Management): WorkOrderService
 
-[![Maltilordning i Dataintegrering.](./media/FSWOP4.png)](./media/FSWOP4.png)
+[![Maltilordning i dataintegrering, Arbeidsordrer med prosjekt (Field Service til Supply Chain Management): WorkOrderService.](./media/FSWOP4.png)](./media/FSWOP4.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

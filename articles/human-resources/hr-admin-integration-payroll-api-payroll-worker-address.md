@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 898ca7b33e39ec33990fecc4c3a7229620fbfddd5ce8ad14423af38047187e55
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bf3fc5f333333b9a832ecb9c185473e476ac231d
+ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761980"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "7559515"
 ---
 # <a name="payroll-worker-address"></a>Adresse til lønnsarbeider
 
@@ -34,22 +34,28 @@ Denne enheten gir stedet for lønnsbostedet og lønnsarbeidsstedet for en angitt
 
 ## <a name="properties"></a>Egenskaper
 
-| Egenskap</br>**Fysisk navn**</br>**_Type_** | Bruk | beskrivelse |
+| Egenskap</br>**Fysisk navn**</br>**_Type_** | Bruk | Beskrivelse |
 | --- | --- | --- |
-| **Poststed**</br>mshr_city</br>*Streng* | Skrivebeskyttet</br>Obligatorisk | Poststedet definert for adressen.   |
-| **Personalnummer**</br>mshr_personnelnumber</br>*Streng* | Skrivebeskyttet</br>Obligatorisk | Det unike personalnummeret til den ansatte.  |
-| **Land/område**</br>mshr_countryregionid</br>*Streng* | Skrivebeskyttet</br>Obligatorisk | Landet eller området definert for adressen.  |
-| **Gyldig fra**</br>mshr_postaladdressvalidfrom</br>*Motregning av dato/klokkeslett* | Skrivebeskyttet </br>Obligatorisk | Datoen som adressen gjelder fra. |
-| **Arbeidet i adresse** </br> mshr_isworkedinaddressbr </br>*[mshr_NoYes-alternativsett](hr-admin-integration-payroll-api-no-yes.md)* | Skrivebeskyttet</br>Obligatorisk | Angir om adressen er der den ansatte arbeider. |
-| **Kommune**</br>mshr_county</br>*Streng* | Skrivebeskyttet</br>Obligatorisk | Landet definert for adressen.  |
-| **Adresse-ID for lønnsarbeider**</br>mshr_payrollworkeraddressentityid</br>*GUID* | Obligatorisk</br>Systemgenerert | En systemgenerert GUID-verdi som entydig identifiserer adressen.  |
-| **Primærfelt**</br>mshr_primaryfield</br>*Streng* | Skrivebeskyttet</br>Obligatorisk |  |
-| **Gate**</br>mshr_street</br>*Streng* | Skrivebeskyttet</br>Obligatorisk | Gaten definert for adressen. |
-| **Gyldig til**</br>mshr_postaladdressvalidto</br>*Motregning av dato/klokkeslett* | Skrivebeskyttet </br>Obligatorisk | Datoen som adressen gjelder til.  |
-| **Plasserings-ID**</br>mshr_locationidbr>*Streng* | Skrivebeskyttet <br>Obligatorisk | ID-en for adressen.  |
-| **Postnummer**</br>mshr_zipcode<br>*Streng* | Skrivebeskyttet <br>Obligatorisk |Identifikasjonsnummeret som er definert for den ansatte.  |
-| **Bodde i adresse**</br>mshr_islivedinaddressbr </br> *[mshr_NoYes-alternativsett](hr-admin-integration-payroll-api-no-yes.md)* | Skrivebeskyttet</br>Obligatorisk | Angir om adressen er der den ansatte bor. |
-| **Delstat**</br>mshr_state</br>*Streng* | Skrivebeskyttet</br>Obligatorisk | Delstaten definert for adressen.  |
+| **Personalnummer**</br>mshr_personnelnumber</br>*Streng* | Skrivebeskyttet | Det unike personalnummeret til den ansatte. |
+| **Plasserings-ID**</br>mshr_locationidbr>*Streng* | Skrivebeskyttet | ID-en for adressen. |
+| **Bodde i adresse**</br>mshr_islivedinaddressbr </br> *[mshr_NoYes-alternativsett](hr-admin-integration-payroll-api-no-yes.md)* | Skrivebeskyttet | En verdi som angir om adressen er der den ansatte bor. |
+| **Arbeidet i adresse** </br> mshr_isworkedinaddressbr </br>*[mshr_NoYes-alternativsett](hr-admin-integration-payroll-api-no-yes.md)* | Skrivebeskyttet | En verdi som angir om adressen er der den ansatte arbeider. |
+| **Land/område**</br>mshr_countryregionid</br>*Streng* | Skrivebeskyttet</br>Obligatorisk | Landet eller området definert for adressen. |
+| **Postnummer**</br>mshr_zipcode<br>*Streng* | Skrivebeskyttet | Identifikasjonsnummeret som er definert for den ansatte. |
+| **Gate**</br>mshr_street</br>*Streng* | Skrivebeskyttet | Gaten definert for adressen. |
+| **Poststed**</br>mshr_city</br>*Streng* | Skrivebeskyttet | Poststedet definert for adressen. |
+| **Delstat**</br>mshr_state</br>*Streng* | Skrivebeskyttet | Delstaten eller området definert for adressen. |
+| **Kommune**</br>mshr_county</br>*Streng* | Skrivebeskyttet | Fylket definert for adressen. |
+| **Gyldig fra**</br>mshr_postaladdressvalidfrom</br>*Motregning av dato/klokkeslett* | Skrivebeskyttet | Datoen som adressen gjelder fra. |
+| **Gyldig til**</br>mshr_postaladdressvalidto</br>*Motregning av dato/klokkeslett* | Skrivebeskyttet | Datoen som adressen gjelder til. |
+| **Primærfelt**</br>mshr_primaryfield</br>*Streng* | Skrivebeskyttet | Primærfeltet. |
+| **Adresse-ID for lønnsarbeider**</br>mshr_payrollworkeraddressentityid</br>*GUID* | Systemgenerert | En systemgenerert globalt unik identifikator (GUID)-verdi som identifiserer adressen entydig. |
+
+## <a name="relations"></a>Relasjoner
+
+| Egenskapsverdi | Relatert enhet | Navigasjonsegenskap | Samlingstype |
+| --- | --- | --- | --- |
+| _mshr_fk_worker_id_value | [mshr_payrollemployeeentity](hr-admin-integration-payroll-api-payroll-employee.md) | mshr_FK_Worker_id | mshr_FK_PayrollEmployeeEntity_Address |
 
 ## <a name="example-query"></a>Eksempelspørring
 

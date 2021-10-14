@@ -1,8 +1,8 @@
 ---
 title: Arbeidsområde for fordelsbehandling
 description: Dette emnet beskriver arbeidsområdet Fordelsbehandling i Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 02/24/2021
+author: twheeloc
+ms.date: 09/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-24
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 49393ab65c2f0020af5b246f7c18a152d613725f5b31be89cb57f244b28003f3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e6cc1432e108c74706dea124a62024272e65b6c1
+ms.sourcegitcommit: 47a3ad71210c7ac84d0c25e913c440b5ba205282
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719098"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "7512480"
 ---
 # <a name="benefits-management-workspace"></a>Arbeidsområde for fordelsbehandling
 
@@ -47,7 +47,7 @@ Arbeidsområdet **Fordelsbehandling** gir deg rask oversikt over fordeler som kr
 
 ## <a name="view-action-items"></a>Vise handlingselementer
 
-Du kan vise handlingselementene ved å velge en flis eller en fane. Hvis du velger en fane, kan du vise og velge arbeidere direkte på arbeidsområdesiden.
+Du kan vise handlingselementene ved å velge en flis eller en fane. Hvis du velger en fane, kan du vise og velge arbeidere fra arbeidsområdesiden.
 
 ![Handlingselementer.](./media/hr-benefits-management-workspace-action-items.png)
 
@@ -64,7 +64,7 @@ Hvis du velger flisen **Aktive livshendelser** eller **Fremtidige livshendelser*
 
 ![Levetidshendelser.](./media/hr-benefits-management-workspace-life-events.png)
 
-## <a name="processing"></a>Behandles
+## <a name="processing"></a>Behandler
 
 Hvis du vil behandle registreringsrettighet, livshendelser eller endringsoppdateringer for satser, velger du det riktige elementet i navigasjonslinjen.
 
@@ -88,9 +88,42 @@ Hvis du vil vise en annen fordelsperiode, velger du den fra rullegardinlisten **
 
 ![Endre periode.](./media/hr-benefits-management-workspace-period.png)
 
+
+## <a name="open-enrollment-tab"></a>Åpne registreringsfanen
+
+Du kan vise handlingselementene ved å velge en flis eller en fane. Hvis du velger en fane, kan du vise og velge arbeidere på arbeidsområdesiden.
+Kategorien **Åpne registrering** gir hovedmetrikk for den åpne registreringsprosessen. 
+
+Informasjon om åpen registrering vises 30 dager før **startdatoen for registrering**. Dette er definert i **Perioder**-oppsettet i **Fordelsbehandling** > **Koblinger** > **Perioder**, i feltet **Startdato for registrering**.  Hvis du vil endre denne innstillingen, kan du gå til **Delte parametere for Human Resources** > **Fordelsbehandling** > **Åpne registreringsalternativer** og oppdetere **Antall**-feltet.  
+
+Følgende informasjon er tilgjengelig i kategorien **Åpne registrering**:
+ - Ansatte som ikke har startet den åpne innmeldingsprosessen
+ - Ansatte som har pågående valg
+ - Ansatte som har fullført valgprosessen
+ - Ubekreftede valg
+
+**Sammendrag-fliser**
+
+- **Ikke startet** – **Ikke startet**-flisen viser en telling av ansatte som ikke har startet registreringsprosessen. **Ikke startet**-flisen er en filtrert liste som bare viser de ansatte som ikke har planer valgt, frafalt eller sjekket ut for den åpne registreringsplanperioden. Obligatoriske planer ignoreres og tas ikke med fordi de er valgt som standard for den ansatte.  Du kan drille tilbake på denne flisen for å se en liste over ansatte som ikke har startet den åpne registreringsprosessen på siden **Forselsplaner for arbeider**.
+
+  > [!NOTE]
+  > Hvis du ikke vil spore den åpne registreringsfremdriften for en **Plantype**, kan du utelate den ved å gå **Fordelsbehandling** > **Lenker** > **Parametere for ansattselvbetjening** > **Oppsett av fordelsplanflis** og oppdatere feltet **Spor åpen registreringsfremdrift**.  Du kan for eksempel ha planer opprettet der **Plantype** = **Annet**. Disse planene kan være valgfrie planer som du ikke vil spore fremdriften for registrering for. Hvis du ikke velger denne plantypen, blir planer av disse typene ignorert ved sporing av fremdrift for registrering eller fullføring i kategorien **Åpne registrering**. Denne innstillingen gjelder for plantypen som er valgt for alle perioder og juridiske enheter.
+
+- **Pågår** – **Pågår**-flisen viser antall ansatte som har valg som pågår. Flisen **Pågår** er en filtrert liste som bare viser ansatte som har minst én plan som er fratatt eller valgt. Obligatoriske planer ignoreres og tas ikke med fordi de er valgt som standard for den ansatte. Du kan drille tilbake fra denne flisen for å se de valgte og frafalte planene på siden for **masseoppdatering av fordeler for fordelsplaner**.
+
+- **Registrert i fordeler** – Flisen **Registrert i fordeler** viser et antall ansatte som er fullt registrert i fordeler. Flisen **Registrert i fordeler** er en filtrert liste som viser ansatte som enten har valgt eller fratatt seg alle planer. Spørringen ekskluderer planer som ikke spores for åpen registrering på siden **Parametere for ansattselvbetjening**. Du kan drille tilbake fra denne flisen for å se en liste over ansatte på siden **Fordelsplaner for arbeider**.
+
+- **Ubekreftede valg** – Flisen **Ubekreftede valg** viser antallet ansatte som har planer som er valgt eller frafalt og som må bekreftes. Du kan drille tilbake fra denne flisen for å se siden for **masseoppdatering av fordeler for fordelsplaner**.
+
+**Aktivitet**
+
+- **Ikke startet** – **Ikke startet**-fanen viser en liste over ansatte som ikke har startet registreringsprosessen. **Ikke startet**-flisen er en filtrert liste som bare viser ansatte som ikke har planer valgt, frafalt eller sjekket ut for den åpne registreringsplanperioden. Obligatoriske planer ignoreres og tas ikke med fordi de er valgt som standard for den ansatte. Du kan drille ned på arbeideren for å vise detaljsiden for **Fordelsplaner for arbeider**.
+
+- **Valg som pågår** – Flisen **Valg som pågår** viser en liste over ansatte som har valg som pågår. Flisen **Valg som pågår** er en filtrert liste som viser ansatte som har minst én plan som er fratatt eller valgt. Obligatoriske planer ignoreres og tas ikke med fordi de er valgt som standard for den ansatte. Du kan drille ned på arbeideren for å vise detaljsiden for **Fordelsplaner for arbeider**.
+
 ## <a name="view-more-options"></a>Vise flere alternativer
 
-Hvis du vil vise mer informasjon og handlinger du kan utføre, velger du **Koblinger**.
+Hvis du vil vise mer informasjon og flere handlinger, velger du **Koblinger**.
 
 ![Koblinger.](./media/hr-benefits-management-workspace-links.png)
 

@@ -1,7 +1,7 @@
 ---
 title: Oversikt over integrering med Microsoft Dynamics 365 Field Service
 description: Dette emnet inneholder en oversikt over integreringen med Microsoft Dynamics 365 Field Service.
-author: ChristianRytt
+author: Henrikan
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: ecfd19cf79b9547c67b5bb90cef451d4aeab8f5ee775e50578161783e370462f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 23661bca91ccd7b7a04c763e60cfca9a99d62bfa
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761764"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566461"
 ---
 # <a name="integration-with-microsoft-dynamics-365-field-service-overview"></a>Oversikt over integrering med Microsoft Dynamics 365 Field Service
 
@@ -58,7 +58,7 @@ Den ekstra funksjonaliteten i andre fase fokuserer på å gi teknikere innsikt i
 - Supply Chain Management-prosjekter koblet til Dynamics 365 Field Service-arbeidsordrer
 - Dynamics 365 Field Service-arbeidsordrer med kobling til Supply Chain Management-prosjekter bruker dette prosjektnummeret i salgsordren for å tillate fakturering fra prosjektet. 
 
-![Synkronisering av forretningsprosesser mellom Supply Chain Management og Field Service.](./media/FSv2overview.png)
+![Synkronisering av forretningsprosesser mellom Supply Chain Management og Field Service, inkludert lager- og prosjektinformasjon.](./media/FSv2overview.png)
 
 ### <a name="the-second-phase-of-the-integration-between-field-service-and-supply-chain-management-enables-synchronization-with-the-following-templates"></a>Den andre fasen av integreringen mellom Field Service og Supply Chain Management gjør det mulig med synkronisering med følgende maler:
 - Lagre (Supply Chain Management til Field Service) – Lagre fra Supply Chain Management til Field Service [Avansert spørring] 

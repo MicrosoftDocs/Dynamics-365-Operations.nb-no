@@ -12,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 70ebe47997f3b5945a433150ae66de6eb41ff12acf4f4f3c8268351116bdd313
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: 10.0.8
+ms.openlocfilehash: 4c366d2f9091ee46ac3b1b6eff72e178932da18e
+ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767957"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7592634"
 ---
 # <a name="confirm-and-transfer"></a>Bekreft og overfør
 
@@ -45,8 +45,8 @@ Du kan bare dele last som oppfyller alle disse kriteriene:
 
 - Én eller flere lastlinjer har plukket antall.
 - Laststatusen er mindre enn lastet inn.
-- Det finnes ingen lastlinjedata. (Disse dataene opprettes via nummerskiltkonsolidering på oppsamlingslokasjonen, og *Bekreft og overfør*-funksjonen støtter ikke nummerskiltkonsolidering.)
-- Ingen beholdning venter på pakking på en pakkelokasjon. (*Bekreft og overfør*-funksjonen støtter ikke beholdning som er plukket til pakkestasjonen, men som ennå ikke er pakket.)
+- Det finnes ingen lastlinjedata. (Disse dataene opprettes via nummerskiltkonsolidering på oppsamlingslokasjonen, og Bekreft og overfør-funksjonen støtter ikke nummerskiltkonsolidering.)
+- Ingen beholdning venter på pakking på en pakkelokasjon. (*Bekreft og overfør*-funksjonen støtter ikke lager som er plukket til pakkestasjonen, men er ennå ikke pakket med mindre containere som er pakket, plasseres ved oppsamlingslokasjoner med lastearbeid opprettet.)
 
 > [!NOTE]
 > Denne funksjonaliteten er forskjellig fra transportlastfunksjonaliteten, som skal brukes i lagre som aldri kan planlegge og opprette last før plukking, men som i stedet laster inn tilgjengelig transportplass etter at plukkingen er fullført.

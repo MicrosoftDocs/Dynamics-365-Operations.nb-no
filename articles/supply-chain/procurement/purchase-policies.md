@@ -1,7 +1,7 @@
 ---
 title: Oversikt over innkjøpspolicyer
 description: Denne artikkelen inneholder informasjon om innkjøpspolicyer. En innkjøpspolicy er en samling av regler som styrer rekvisisjonsprosessen. Innkjøpspolicyer hjelpe innkjøpsadministratorer med å implementere sin innkjøpsstrategi ved å opprette en policystruktur som er i samsvar med organisasjonens krav til strategiske innkjøp.
-author: kamaybac
+author: Henrikan
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
@@ -14,15 +14,15 @@ ms.custom:
 - intro-internal
 ms.assetid: 729a304d-0f3f-4ccb-bd5b-46ee0976c57f
 ms.search.region: Global
-ms.author: dabourq
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4fd090f6e8b91c6a75eced17fadd76f686c5441f1526736534ad1a947d80cea0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3d3c35cabc9b5b8c69dbf4d597388192b4130d49
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761788"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7575494"
 ---
 # <a name="purchasing-policies-overview"></a>Oversikt over innkjøpspolicyer
 
@@ -63,7 +63,7 @@ Policyen 123 er definert for organisasjonshierarkiet Avdeling for Salg Storbrita
 
 Policyen 456 er definert for organisasjonshierarkiet Global innkjøpskontroll for salgs- og markedsføringsavdelingen. I policyen 456 angir ikke kontrollregelen for innkjøpsrekvisisjon at det må iverksettes begrensninger for minimum ordreantall. I denne regelen er valget av alternativet **Benytt begrensninger for minimumsbestillingsantall** opphevet.  
 
-Erik arbeider i Salg Storbritannia – salgsavdeling i Contoso Storbritannia-kontoret. Policyene for både organisasjonshierarkiene Avdeling og Global innkjøpskontroll gjelder for hans avdeling. Når Erik oppretter en innkjøpsrekvisisjon, må systemet bestemme hvilken policy som skal brukes. Systemansvarlig konfigurerer innkjøpspolicyparametere for å angi at innkjøpspolicyer må brukes i den følgende prioritetsrekkefølgen:
+Erik arbeider i Salg Storbritannia – salgsavdeling i Contoso Storbritannia kontoret. Policyene for både organisasjonshierarkiene Avdeling og Global innkjøpskontroll gjelder for hans avdeling. Når Erik oppretter en innkjøpsrekvisisjon, må systemet bestemme hvilken policy som skal brukes. Systemansvarlig konfigurerer innkjøpspolicyparametere for å angi at innkjøpspolicyer må brukes i den følgende prioritetsrekkefølgen:
 
 1.  Global innkjøpskontroll
 2.  Avdeling

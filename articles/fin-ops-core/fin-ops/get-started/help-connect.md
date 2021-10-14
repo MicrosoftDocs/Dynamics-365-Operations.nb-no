@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f793068a5d4df6206229249c5b37bee0ef34da8d
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 3a6c37822e84ba08fa0720ed2b3912cbec1448e3
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7343818"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594863"
 ---
 # <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Konfigurere hjelpeopplevelsen for Finance and Operations-apper
 
@@ -30,7 +30,7 @@ I dette emnet vil du finne en oversikt over komponentene i hjelpesystemet for Fi
 
 ## <a name="help-architecture"></a>Hjelpearkitektur
 
-Finance and Operations-apper omfatter begrepsmessige oversikter og andre emner som publiseres til nettstedet for [https://docs.microsoft.com/dynamics365](/dynamics365/). Du får tilgang til dette innholdet fra **Hjelp**-ruten i produktet. Illustrasjonen nedenfor viser delene av hjelpesystemet.
+Finance and Operations-apper omfatter begrepsmessige oversikter og andre emner som publiseres til nettstedet for [Microsoft Dynamics 365-dokumentasjon](/dynamics365/). Du får tilgang til dette innholdet fra **Hjelp**-ruten i produktet. Illustrasjonen nedenfor viser delene av hjelpesystemet.
 
 [![Hjelpearkitektur.](./media/help-architecture.png)](./media/help-architecture.png)
 
@@ -39,7 +39,7 @@ Hjelpesystemet i produktet trekker ut artikler fra docs.microsoft.com og andre t
 ## <a name="adding-task-guides"></a>Legge til oppgaveveiledninger
 
 > [!NOTE]
-> fanen **Oppgaveveiledninger** er for øyeblikket ikke tilgjengelig i Human Resources eller Commerce. <!--We are currently working to enable this functionality in a future release.--> Oppgaveveiledningene i opplevelsen Komme i gang i Human Resources vil imidlertid fortsatt være tilgjengelige for å dekke grunnleggende funksjonalitet. For både Human Resources og Commerce er prosedyremessig hjelp tilgjengelig på nettstedet for [https://docs.microsoft.com/dynamics365](/dynamics365/).
+> fanen **Oppgaveveiledninger** er for øyeblikket ikke tilgjengelig i Human Resources eller Commerce. <!--We are currently working to enable this functionality in a future release.--> Oppgaveveiledningene i opplevelsen Komme i gang i Human Resources vil imidlertid fortsatt være tilgjengelige for å dekke grunnleggende funksjonalitet. For både Human Resources og Commerce er prosedyremessig hjelp tilgjengelig på nettstedet for [Microsoft Dynamics 365-dokumentasjon](/dynamics365/).
 
 På siden **Systemparametere** kan systemadministratorer konfigurere tilgang til de relevante oppgavelinjebibliotekene for en implementering.
 

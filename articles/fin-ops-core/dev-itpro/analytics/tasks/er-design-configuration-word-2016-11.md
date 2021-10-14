@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 83e75eee54516539be939e9547a8b637bbf2ab107ae96c07c4bbefaad75f1022
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4d4eb4fd4ea32db5aa19e9d2b1300818b3aaf6fc
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768447"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594990"
 ---
 # <a name="reuse-er-configurations-with-excel-templates-to-generate-reports-in-word-format"></a>Bruke ER-konfigurasjoner på nytt med Excel-maler for å generere rapporter i Word-format
 
@@ -90,7 +90,7 @@ For øyeblikket brukes Excel-dokumentet som en mal til å generere utdataene i O
 
 Du kan nå tilordne elementene i den egendefinerte XML-delen **Rapport** til innholdskontrollene for Word-dokumentet.
 
-Hvis du har erfaring med utforming av Word-dokumenter som skjemaer som inneholder [innholdskontroller](/office/client-developer/word/content-controls-in-word) som er tilordnet til elementer med [egendefinerte XML-deler](/visualstudio/vsto/custom-xml-parts-overview?view=vs-2019), fullfører du alle trinnene i den neste fremgangsmåten for å opprette dokumentet. Hvis du vil ha mer informasjon, kan du se [Opprette skjemaer som brukere fullfører eller skriver ut i Word](https://support.office.com/article/Create-forms-that-users-complete-or-print-in-Word-040c5cc1-e309-445b-94ac-542f732c8c8b). Ellers hopper du over neste fremgangsmåte.
+Hvis du har erfaring med utforming av Word-dokumenter som skjemaer som inneholder [innholdskontroller](/office/client-developer/word/content-controls-in-word) som er tilordnet til elementer med [egendefinerte XML-deler](/visualstudio/vsto/custom-xml-parts-overview), fullfører du alle trinnene i den neste fremgangsmåten for å opprette dokumentet. Hvis du vil ha mer informasjon, kan du se [Opprette skjemaer som brukere fullfører eller skriver ut i Word](https://support.office.com/article/Create-forms-that-users-complete-or-print-in-Word-040c5cc1-e309-445b-94ac-542f732c8c8b). Ellers hopper du over neste fremgangsmåte.
 
 ## <a name="get-a-word-document-that-has-a-custom-xml-part-and-do-data-mapping"></a><a id='get-word-doc'></a>Hente et Word-dokument som har en egendefinert XML-del, og foreta datatilordning
 

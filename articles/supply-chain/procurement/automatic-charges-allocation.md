@@ -1,23 +1,23 @@
 ---
 title: Automatisk tilordning av tillegg
 description: Med gebyrer-funksjonen i Microsoft Dynamics 365 Supply Chain Management kan du automatisk tilordne tillegg til bestillinger eller salgsordrer.
-author: dasani-madipalli
-ms.date: 10/01/2020
+author: Henrikan
+ms.date: 09/30/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: damadipa
+ms.author: henrikan
 ms.search.validFrom: 2020-10-01
-ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 04e17947073fca63ab68f0b5d0d72eb8366a1600117f61851179e8b0ed2c8184
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: 10.0.15
+ms.openlocfilehash: 6032539e57961998e7130e9cb6578248aaa2843e
+ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753945"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7592546"
 ---
 # <a name="automatic-allocation-of-charges"></a>Automatisk tilordning av tillegg
 
@@ -26,6 +26,16 @@ ms.locfileid: "6753945"
 Avhengig av hvilken kunde du jobber med eller varen du selger, kan det hende at du vil bruke bestemte tilleggskostnader. Med *gebyrer*-funksjonen i Microsoft Dynamics 365 Supply Chain Management kan du automatisk tilordne tillegg til bestillinger eller salgsordrer.
 
 Automatiske tillegg brukes automatisk når du oppretter en salgsordre eller bestilling. Du kan definere automatiske gebyrer for bestemte leverandører, kunder, grupper med leverandører, kunder eller varer. Du kan også definere automatiske gebyrer som gjelder for alle leverandører, kunder eller varer.
+
+## <a name="set-up-parameters"></a>Konfigurer parametere
+
+Siden **Innkjøps- og leverandørparametere** har et par innstillinger som er spesielt relevante når du vil fordele tillegg automatisk. Følg fremgangsmåten nedenfor for å fullføre dette oppsettet.
+
+1. Gå til **Innkjøp og leverandører** \> Oppsett \> Parametere for innkjøp og leverandører.
+1. Åpne **Priser**-fanen.
+1. Foreta følgende innstillinger på hurtigfanen **Priser**:
+    - **Finn automatiske tillegg for hode** – Angir om tillegg automatisk skal fordeles for bestillingshoder. Sett dette til *Ja* for å bruke automatisk tilordning av tillegg.
+    - **Finn automatiske tillegg for linje** – Angir om tillegg automatisk skal fordeles for bestillingslinjer. Sett dette til *Ja* for å bruke automatisk tilordning av tillegg.
 
 ## <a name="set-up-charges-codes"></a>Definere gebyrkoder
 

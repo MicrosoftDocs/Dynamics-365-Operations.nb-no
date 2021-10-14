@@ -1,7 +1,7 @@
 ---
 title: Reduksjonsdager – eksempel
 description: Reduksjonsdager – eksempel.
-author: ShylaThompson
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
@@ -15,30 +15,29 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6ba0cfde66476d052f0c9a048977026341a5295c21603385c5b3774a15be5232
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 97fb032d02df1dbedaeccec14496cb1d63e8cf70
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727804"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7567949"
 ---
-# <a name="reduction-days-example"></a>Reduksjonsdager – eksempel 
+# <a name="reduction-days-example"></a>Reduksjonsdager – eksempel
 
 [!include [banner](../includes/banner.md)]
-
 
 Du har opprettet en abonnementstransaksjon for en kundes vedlikeholdsabonnement som beskrevet i følgende tabell.
 
 <table>
 <colgroup>
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -66,21 +65,20 @@ Du har opprettet en abonnementstransaksjon for en kundes vedlikeholdsabonnement 
 </tbody>
 </table>
 
-
 Kunden rapporterer at det ikke behov for service to dager (10. og 11. mars). Dere avtaler å trekke fra disse to dagene på abonnementet.
 
 Du oppretter en ny transaksjon av typen **Reduksjonsdager** som beskrevet i følgende tabell.
 
 <table>
 <colgroup>
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
-<col style="width: 12%" />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -108,16 +106,10 @@ Du oppretter en ny transaksjon av typen **Reduksjonsdager** som beskrevet i føl
 </tbody>
 </table>
 
-
 Når transaksjonene for mars 2011 blir fakturert, blir salgsprisen på EUR 200 redusert med EUR 12,90. Det fakturerbare beløpet for abonnementstransaksjonen er derfor EUR 187,10, og to transaksjoner faktureres for totalt EUR 187,10.
 
 ## <a name="see-also"></a>Se også
 
 [Redusere dagene på abonnementsgebyr](reduce-the-days-on-subscription-fees.md)
-
-  
-
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
