@@ -11,15 +11,17 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-04-02
-ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 241892e8f6ea04616aa9c605b4a2019d2de0ebe868ee7ebc1d5b56f5ce172bd5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: 10.0.10
+ms.openlocfilehash: d81441fcc8cb86927923e76bd1a4d16a141ddc75
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723509"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7571887"
 ---
 # <a name="quality-management-for-warehouse-processes"></a>Kvalitetsstyring for lagerprosesser
+
+[!include [banner](../includes/banner.md)]
 
 Med funksjonen _Kvalitetsstyring for lagerprosesser_ kan du integrere vareprøvekontroller i lagermottaksprosessen ved hjelp av avansert lagerstyring. Lagerarbeid kan genereres automatisk for å flytte lager til kvalitetskontroll-lokasjonen, basert på en prosent eller et fast antall, eller basert på hvert *n*-te nummerskilt. Etter at en kvalitetsordre er fullført, kan det genereres arbeid automatisk for å flytte lageret til neste sted i prosessen, avhengig av kvalitetsresultatet.
 

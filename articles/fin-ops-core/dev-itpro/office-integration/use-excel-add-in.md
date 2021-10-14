@@ -2,7 +2,7 @@
 title: Vise og oppdatere enhetsdata med Excel
 description: Dette emnet forklarer hvordan du kan åpne enhetsdata i Microsoft Excel, og deretter vise, oppdatere og redigere dataene ved hjelp av Excel-tillegget for Microsoft Dynamics.
 author: jasongre
-ms.date: 01/22/2021
+ms.date: 10/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aefebe094a0429f22a1a7038a55ab2190e41da6348447850148b8b98e082e743
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d1902e80313c5460ac38896bc2f46d83897e3a58
+ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761360"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7592671"
 ---
 # <a name="view-and-update-entity-data-with-excel"></a>Vise og oppdatere enhetsdata med Excel 
 
@@ -60,7 +60,7 @@ Excel-tillegg leser automatisk dataene for enheten du valgte. Legg merke til at 
 
 6. Velg **OK**, og velg deretter **Ja** for å bekrefte endringen. Excel-tillegget startes på nytt og laster inn metadata.
 
-    **Utforming**-knappen er nå tilgjengelig. Hvis Excel-tillegget har en **Laste inn appleter**-knapp, er du sannsynligvis ikke logget på som riktig bruker. Hvis du vil ha mer informasjon, kan du se "Laste inn appleter-knappen vises" i delen [Feilsøking](../office-integration/use-excel-add-in.md#troubleshooting) i dette emnet.
+    **Utforming**-knappen er nå tilgjengelig. Hvis Excel-tillegget har koblingen **Laste inn appleter**-knapp, er du sannsynligvis ikke logget på som riktig bruker. Hvis du vil ha mer informasjon om hvordan du håndterer dette problemet, kan du se feilsøkingsoppføringen [Laste inn appleter](../office-integration/office-integration-troubleshooting.md#issue-the-excel-add-in-loads-but-instead-of-showing-data-it-displays-load-applets-in-the-task-pane).
 
 7. Velg **Utforming**. Excel-tillegget henter metadata for enhet.
 8. Velg **Legg til tabell**. Det vises en liste over enheter. Enhetene vises i formatet "Navn – Etikett".
@@ -136,7 +136,7 @@ Dataene som leses inn i arbeidsboken fra ett miljø kan kopieres til et annet mi
 ## <a name="troubleshooting"></a>Feilsøking
 Det finnes enkelte problemer som kan løses ved hjelp av noen enkle trinn.
 
-- **Laste inn appleter-knappen vises** – Hvis Excel-tillegget har en **Laste inn appleter**-knapp etter pålogging, er du sannsynligvis ikke logget på som riktig bruker. Hvis du vil løse dette problemet, kontrollerer du at riktig brukernavn vises øverst til høyre i Excel-tillegget. Hvis feil brukernavn vises, velger du det, logger av og på igjen.
+- **Koblingen "Last inn appleter" vises** – Hvis du vil ha mer informasjon om dette problemet, kan du se feilsøkingsoppføringen [Laste inn appleter](../office-integration/office-integration-troubleshooting.md#issue-the-excel-add-in-loads-but-instead-of-showing-data-it-displays-load-applets-in-the-task-pane). 
 - **Du får feilmeldingen "Forbudt"** – Hvis du får feilmeldingen "Forbudt" når Excel-tillegget laster inn metadata, har kontoen som er logget Excel-tillegget, ikke tillatelse til å bruke tjenesten, forekomsten eller databasen. Hvis du vil løse dette problemet, kontrollerer du at riktig brukernavn vises øverst til høyre i Excel-tillegget. Hvis feil brukernavn vises, velger du det, logger av og på igjen.
 - **En tom nettside vises over Excel** – Hvis det åpnes en tom nettside i løpet av påloggingsprosessen, krever kontoen AD FS, men versjonen av Excel som kjører Excel-tillegget, er ikke ny nok til å laste inn dialogboksen for pålogging. Hvis du vil løse dette problemet, oppdaterer du Excel-versjonen du bruker. Hvis du vil oppdatere versjonen av Excel når du er i en virksomhet som er på den utsatte kanalen, kan du bruke [distribusjonsverktøyet for Office](/deployoffice/overview-office-deployment-tool) til [flytte fra den utsatte kanalen til gjeldende kanal](/deployoffice/overview-update-channels).
 - **Du får et tidsavbrudd når du publiserer dataendringer** – Hvis du får tidsavbruddsmeldinger mens du prøver å publisere dataendringer til en enhet, bør du vurdere å redusere størrelsen på publiseringspartiet for den berørte arbeidsboken. Enheter som utløser større mengder logikk for postendringer, kan kreve at oppdateringer sendes i mindre partier, slik at tidsavbrudd kan unngås.

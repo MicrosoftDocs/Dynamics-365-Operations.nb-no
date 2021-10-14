@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 255cc612ef727153be70b755745eed9ad679b839
-ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
+ms.openlocfilehash: f92850a741f2a0d4d1c2636cbbdf21fe95f307df
+ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7414590"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "7559467"
 ---
 # <a name="configure-integration-with-dayforce"></a>Konfigurer integrering med Dayforce
 
@@ -64,7 +64,6 @@ Aktivering av lønnsintegrasjonen har to hovedvirkninger:
 
 > [!NOTE]
 > Datapakken som overføres til SFTP-endepunktet, krypteres ved hjelp av en nøkkel som er unik for pakken. Nøkkelen er i et Azure Key Vault som bare Ceridian har tilgang til. Det går ikke an å dekryptere og undersøke innholdet i datapakken. Hvis du må undersøke innholdet i datapakken, må du eksportere dataprosjektet «Eksport av lønnsintegrasjon» manuelt, laste det ned, og deretter åpne det. Pakken verken krypteres eller overføres når du foretar manuell eksport.
-> For forekomster der integreringsfilene sendes fra et Dynamics 365 Human Resources UAT-miljø eller et sandkassemiljø til et Ceridian Dayforce-testmiljø, kan du bruke følgende Key Vault-URL: https://payrollintegrationprod.vault.azure.net.
 
 ## <a name="configure-your-data"></a>Konfigurere dataene dine 
 

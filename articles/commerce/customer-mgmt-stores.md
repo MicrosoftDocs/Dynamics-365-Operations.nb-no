@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 09caa7fa8f10d1afc44bb9343550bc633b8ec99a
-ms.sourcegitcommit: d420b96d37093c26f0e99c548f036eb49a15ec30
+ms.openlocfilehash: 4fd6039843be09ec706e45746d5724faa99a95e6
+ms.sourcegitcommit: 3f59b15ba7b4c3050f95f2b32f5ae6d7b96e1392
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7472231"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7563067"
 ---
 # <a name="customer-management-in-stores"></a>Kundebehandling i butikker
 
@@ -45,7 +45,8 @@ Salgsmedarbeidere kan registrere flere adresser for en kunde. Kundens navn og te
 
 ## <a name="sync-customers-and-async-customers"></a>Synkronisere kunder og Async-kunder
 
-> [VIKTIG] Hvis POS kobles fra, oppretter systemet automatisk kundene asynkront, selv om opprettingsmodus for Async-kunde er deaktivert. Uansett hva du velger mellom synkron og asynkron kundeoppretting, må derfor Commerce Headquarters-administratorer opprette og planlegge en gjentakende satsvis jobb for **P-jobben**, jobben **Synkroniser kunder og forretningspartnere fra asynkron modus** (tidligere kalt jobben **Synkronisere kunder og forretningspartnere fra asynkron modus**), og **1010**-jobben, slik at alle Async-kunder blir konvertert til Synkroniser-kunder i Commerce Headquarters.
+> [!IMPORTANT]
+> Hvis POS kobles fra, oppretter systemet automatisk kundene asynkront, selv om opprettingsmodus for Async-kunde er deaktivert. Uansett hva du velger mellom synkron og asynkron kundeoppretting, må derfor Commerce Headquarters-administratorer opprette og planlegge en gjentakende satsvis jobb for **P-jobben**, jobben **Synkroniser kunder og forretningspartnere fra asynkron modus** (tidligere kalt jobben **Synkronisere kunder og forretningspartnere fra asynkron modus**), og **1010**-jobben, slik at alle Async-kunder blir konvertert til Synkroniser-kunder i Commerce Headquarters.
 
 I Commerce finnes det to måter å opprette kunder på: Synkron (eller Synkron) og Asynkron (eller Asynkron). Som standard opprettes kunder synkront. De opprettes med andre ord i Commerce Headquarters i sanntid. Det kan være nyttig å synkronisere kundeopprettingsmodus, fordi nye kunder umiddelbart kan søke på tvers av kanaler. Den har imidlertid også en tilbaketrekking. Ettersom modusen genererer kall i [Commerce Data Exchange: Real-time Service](dev-itpro/define-retail-channel-communications-cdx.md#realtime-service) til Commerce Headquarters, kan ytelsen påvirkes hvis det utføres mange samtidige kundeopprettingsanrop.
 

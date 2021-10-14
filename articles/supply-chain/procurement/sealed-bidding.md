@@ -1,22 +1,22 @@
 ---
 title: Forseglede bud for tilbudsforespørsler
 description: Dette emnet beskriver hvordan du konfigurerer forseglet budgivning for å holde svarene på leverandørbudene forseglet til de ikke er forseglet av innkjøpspersonale.
-author: yanansong
+author: Henrikan
 ms.date: 08/02/2021
 ms.topic: article
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: yanansong
+ms.author: henrikan
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 02cbe9d6a6d157208d73ed756efae24df2a082de
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 96549b6053ba75f2d5b9a85bcd5b7feb006f0f1b
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500640"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7578086"
 ---
 # <a name="sealed-bidding-for-rfqs"></a>Forseglede bud for tilbudsforespørsler
 
@@ -53,7 +53,11 @@ Før du starter å definere eller bruke denne funksjonen må du kontrollere at d
 Supply Chain Management bruker krypteringsnøkler til å beskytte alle forseglede bud, og holde dem sammen til riktig tid. Det benytter seg av funksjonene i Key Vault til å generere og behandle de nødvendige nøklene. Derfor må du sette opp en tilkobling fra Supply Chain Management til et nøkkelhvelv for å aktivere systemet.
 
 > [!IMPORTANT]
-> Nøkkelhvelvet må opprettes i et Azure-abonnement som eies av organisasjonen (ikke abonnementet der du kjører Supply Chain Management).
+> Nøkkelhvelvene du bruker til forseglet budgivning, må oppfylle følgende krav:
+>
+> - Hvis du bruker en sandkasse til utvikling og testing, må du ha et dedikert nøkkelhvelv for sandkassen og en separat nøkkel for produksjon.
+> - Hvert nøkkelhvelv må opprettes i et Azure-abonnement som eies av organisasjonen (ikke abonnementet der du kjører Supply Chain Management).
+> - Hvert nøkkelhvelv må brukes utelukkende for forseglet budgivning. Du må ikke bruke nøkkelhvelv for forseglet budgivning til noe annet formål.
 
 Hvert bud henter sin egen hurtigtast. Denne nøkkelen brukes hver gang en bruker viser, oppdaterer eller opphever budet.
 

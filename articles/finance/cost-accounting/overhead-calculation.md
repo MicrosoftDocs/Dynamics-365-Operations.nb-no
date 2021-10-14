@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 98fd0b4a18b02ed58034ec6e22763ed7c66f567f5c9eeeed124996757470c419
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 60bce611ae1f6ed5d63860793cd5d1da3c421a9e
+ms.sourcegitcommit: e3290eb58ae569a59d6ae2e6922e7d8be8f1980f
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6766295"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "7551810"
 ---
 # <a name="overhead-calculation"></a>Beregning av indirekte kostnader
 
@@ -1328,83 +1328,12 @@ Tabellen nedenfor viser resultatet når emballasjetjenestene brukes som tildelin
 ## <a name="conclusion"></a>Konklusjon
 I finansbokføring blir en kostnad på 10 000,00 for strøm postert til en midlertidig kostnadssenter-ID. Derfor vet regnskapsførere at denne kostnaden må tildeles. I kostnadsregnskap flyter kostnadene på tvers av organisasjonsenheter og -nivåer, basert på policyene og reglene som brukes. Hver kostnad er tilknyttet et tildelingsgrunnlag som gir best mulig vurdering for kostnadsfordelingen.
 
-<table>
-<thead>
-<tr>
-<th colspan="2" rowspan="2">Kostnadselement</th>
-<th colspan="9">Kostnadsobjekt</th>
-<th rowspan="2">Sum</th>
-</tr>
-<tr>
-<th>CC099</th>
-<th>CC001</th>
-<th>CC002</th>
-<th>CC003</th>
-<th>CC004</th>
-<th>Prosj 1</th>
-<th>Prosj 2</th>
-<th>Prod 1</th>
-<th>Prod 2</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td colspan="2">10001 Strøm</td>
-<td style="text-align: right;"><strong>0,00</strong></td>
-<td style="text-align: right;"><strong>0,00</strong></td>
-<td style="text-align: right;"><strong>0,00</strong></td>
-<td style="text-align: right;"><strong>0,00</strong></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"><strong>30,00</strong></td>
-<td style="text-align: right;"><strong>10,00</strong></td>
-<td style="text-align: right;"><strong>7.770,57</strong></td>
-<td style="text-align: right;"><strong>2.189,43</strong></td>
-<td style="text-align: right;"><strong>10.000,00</strong></td>
-</tr>
-<tr>
-<td></td>
-<td style="text-align: left;">Uklassifisert</td>
-<td style="text-align: right;">0,00</td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-</tr>
-<tr>
-<td style="text-align: right;"></td>
-<td style="text-align: left;">Fast kostnad</td>
-<td style="text-align: right;">0,00</td>
-<td style="text-align: right;">0,00</td>
-<td style="text-align: right;">0,00</td>
-<td style="text-align: right;">0,00</td>
-<td style="text-align: right;">0,00</td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;">776.36</td>
-<td style="text-align: right;">223.64</td>
-<td style="text-align: right;"><strong>1.000,00</strong></td>
-</tr>
-<tr>
-<td style="text-align: right;"></td>
-<td style="text-align: left;">Variabel kostnad</td>
-<td style="text-align: right;">000</td>
-<td style="text-align: right;">0,00</td>
-<td style="text-align: right;">0,00</td>
-<td style="text-align: right;">0,00</td>
-<td style="text-align: right;">0,00</td>
-<td style="text-align: right;">30,00</td>
-<td style="text-align: right;">10,00</td>
-<td style="text-align: right;">6,994.21</td>
-<td style="text-align: right;">1,965.79</td>
-<td style="text-align: right;"><strong>9.000,00</strong></td>
-</tr>
-</tbody>
-</table>
+Kostnadselement | Kostnadsobjekt<br>CC099 | Kostnadsobjekt<br>CC001 | Kostnadsobjekt<br>CC002 | Kostnadsobjekt<br>CC003 | Kostnadsobjekt<br>CC004 | Kostnadsobjekt<br>Prosj 1 | Kostnadsobjekt<br>Prosj 2 | Kostnadsobjekt<br>Prod 1 | Kostnadsobjekt<br>Prod 2 | Sum
+---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:
+10001 Strøm | 0.00 | 0.00 | 0.00 | 0.00 |  | 30.00 | 10,00 | 7,770.57 | 2,189.43 | 10,000.00 |
+Uklassifisert | 0,00 |  |  |  |  |  |  |  |  |  |
+Fast kostnad | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 |  |  | 776.36 | 223.64 | 1,000.00 |
+Variabel kostnad | 000 | 0,00 | 0,00 | 0,00 | 0,00 | 30,00 | 10,00 | 6,994.21 | 1,965.79 | 9,000.00 |
 
 > [!NOTE]
 > Dette emnet beskriver hvordan et primærkostnadselementet, 10001 Strøm, flyter gjennom kostnadsobjektene. Denne indirekte kostnaden tildeles derfor til det laveste nivået i organisasjonen. Med andre ord vil kostnadsobjektene på laveste nivå bære kostnaden. Hvis du trenger en visuell flyt for kostnaden mellom kostnadsobjektene, kan du bruke policyreglene for kostnadsakkumulering til å visualisere kostnadsflyten. Hvis du vil ha mer informasjon, se [Policy for opprullet kost og beregning av administrasjonskostnader](cost-rollup.md)

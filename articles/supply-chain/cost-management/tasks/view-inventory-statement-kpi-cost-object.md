@@ -1,6 +1,6 @@
 ---
 title: Vise beholdningsoppgave og KPI etter kostnadsobjekt
-description: Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten.
+description: Dette emnet angir hvordan du viser beholdningsoppgave og KPI etter kostnadsobjekt.
 author: AndersGirke
 ms.date: 08/29/2018
 ms.topic: business-process
@@ -13,13 +13,13 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f6bc60baa723cee91b219bc078f4486e971d2c99fc89b9c42e2d4472d161a163
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: f813b0e04a2450cb64e92128d36495a483ad14e1
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721350"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7568165"
 ---
 # <a name="view-inventory-statement-and-kpi-by-cost-object"></a>Vise beholdningsoppgave og KPI etter kostnadsobjekt
 
@@ -27,14 +27,14 @@ ms.locfileid: "6721350"
 
 Demonstrasjonsdatafirmaet USMF brukes til å opprette denne fremgangsmåten. Denne fremgangsmåten er ment for Lagermedarbeideren.
 
-1. Klikk på Kostnadsadministrasjon.
-2. Klikk på Frigitte produkter.
-3. Bruk hurtigfilteret for å søke etter poster. Du kan for eksempel filtrere på Varenummer-feltet med verdien d0005.
-4. Klikk på Styr kostnader i handlingsruten.
-5. Klikk på Kostnadsobjekter.
-6. Klikk på Beholdningsoppgave og KPI-er.
-7. Angi en dato i Fra dato-feltet.
-8. Angi en dato i Til dato-feltet.
+1. Velg **Kostnadsadministrasjon**.
+2. Velg **Frigitte produkter**.
+3. Bruk hurtigfilteret for å søke etter poster. Du kan for eksempel filtrere på **Varenummer**-feltet med verdien *d0005*.
+4. Velg **Styr kostnader** på handlingsruten.
+5. Velg **Kostnadsobjekter**.
+6. Velg **Beholdningsoppgave og KPI-er**.
+7. Angi en dato i **Fra dato**-feltet.
+8. Angi en dato i **Til dato**-feltet.
 
 
 

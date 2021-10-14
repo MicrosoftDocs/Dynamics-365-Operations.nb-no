@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: de753eda43cb358dfa9edc76f102d4b268291b4e
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: 804c18c1b165fff99390db1fda22da0137249373
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386444"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595043"
 ---
 # <a name="improve-the-prediction-model"></a>Forbedre forutsigelsesmodellen
 
@@ -75,6 +75,6 @@ Følgende felt bør ikke velges for opplæring:
 
 Du kan filtrere fakturaene som brukes til opplæring, ved å definere filterkriterier for felt på fakturaen eller i kundetabellene. Du kan for eksempel angi at en terskel bare skal inkludere fakturaer der summen er lik eller overskrider et bestemt beløp. Du kan også utelate fakturaer som er knyttet til kunder i en bestemt kundegruppe.
 
-Hvis du vil ha mer informasjon om filtrering av dataene, kan du se [Opprette en forutsigelsesmodell](https://docs.microsoft.com/ai-builder/prediction-create-model#filter-your-data).
+Hvis du vil ha mer informasjon om filtrering av dataene, kan du se [Opprette en forutsigelsesmodell](/ai-builder/prediction-create-model#filter-your-data).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

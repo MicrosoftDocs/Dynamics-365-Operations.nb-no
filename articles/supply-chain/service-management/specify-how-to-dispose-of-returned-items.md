@@ -1,7 +1,7 @@
 ---
 title: Angi hvordan du kvitter deg med returnerte varer
 description: Angi hvordan du kvitter deg med returnerte varer.
-author: ShylaThompson
+author: kamaybac
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: ''
@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 594832f4d89a630bd88b18f665a6afbc7a918f0e5c9627f835f18d4b1a4d2cab
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e609c1c285b34a5416a2058809b2fc4fafb73fca
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722253"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7571335"
 ---
-# <a name="specify-how-to-dispose-of-returned-items"></a>Angi hvordan du kvitter deg med returnerte varer 
+# <a name="specify-how-to-dispose-of-returned-items"></a>Angi hvordan du kvitter deg med returnerte varer
 
 [!include [banner](../includes/banner.md)]
-
 
 Når du håndterer en returordre, må du angi en returårsakskode for å identifisere produktet som returneres. Du må også angi en disposisjonskode og en disposisjonshandling for å avgjøre hva som skal gjøres med det returnerte produktet.
 
@@ -35,9 +34,9 @@ Du kan angi hvilken som helst disposisjonskode for å støtte forretningsprosess
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -125,8 +124,8 @@ Du må velge en disposisjonshandling for hver ny disposisjonskode du angir. Disp
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -162,24 +161,15 @@ Du må velge en disposisjonshandling for hver ny disposisjonskode du angir. Disp
 </tbody>
 </table>
 
-
 ## <a name="select-a-disposition-code-for-a-quarantine-order"></a>Velg en disposisjonskode for en karanteneordre
 
-1.  Klikk på **Lagerstyring** \> **Periodisk** \> **Kvalitetsstyring** \> **Karanteneordrer**.
-
-2.  Velg en handling fra feltet **Disposisjonskode** i fanen **Oversikt** hvis det gjelder en eksisterende karanteneordre.
-
-
+1. Gå til **Lagerstyring** \> **Periodisk** \> **Kvalitetsstyring** \> **Karanteneordrer**.
+1. Velg en handling fra feltet **Disposisjonskode** i fanen **Oversikt** hvis det gjelder en eksisterende karanteneordre.
 
 ## <a name="see-also"></a>Se også
 
 [Karanteneordre (skjema)](/dynamicsax-2012//quarantine-order-form)
 
 [Disposisjonskoder (skjema)](https://technet.microsoft.com/library/hh597113\(v=ax.60\))
-
-  
-
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 05e9d6441cf99dce3f4663b9d5ba57e2b386e8c2f3060f75550270083f3b98b3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 76131b6cc7ee58d4a095da4ac56cd97124e42587
+ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741459"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "7559368"
 ---
 # <a name="payroll-position"></a>Lønnsstilling
 
@@ -32,22 +32,29 @@ Fysisk navn: mshr_payrollpositionentity.
 
 Denne enheten gir stillingsrelatert informasjon for en gitt ansatt.
 
-Fysisk navn: 
+Fysisk navn: mshr_payrollpositionentity.
 
 ## <a name="properties"></a>Egenskaper
 
-| Egenskap<br>**Fysisk navn**<br>**_Type_** | Bruk | beskrivelse |
+| Egenskap</br>**Fysisk navn**</br>**_Type_** | Bruk | Beskrivelse |
 | --- | --- | --- |
-| **Årlige vanlige timer**<br>annualregularhours<br>*Desimal* | Skrivebeskyttet<br>Obligatorisk | Årlige faste timer definert i stillingen.  |
-| **Enhets-ID for lønnsstillingsdetaljer**<br>payrollpositiondetailsentityid<br>*Guid* | Obligatorisk<br>Systemgenerert. | En systemgenerert GUID-verdi som entydig identifiserer stillingen.  |
-| **Primærfelt**<br>mshr_primaryfield<br>*Streng* | Obligatorisk<br>Systemgenerert |  |
-| **ID-verdi for stillingsjobb**<br>_mshr_fk_positionjob_id_value<br>*GUID* | Skrivebeskyttet<br>Obligatorisk<br>Sekundærnøkkel: mshr_PayrollPositionJobEntity av mshr_payrollpositionjobentity |ID-en for jobben som er knyttet til stillingen.|
-| **ID-verdi for fast kompensasjonsplan**<br>_mshr_fk_fixedcompplan_id_value<br>*GUID* | Skrivebeskyttet<br>Obligatorisk<br>Sekundærnøkkel: mshr_FixedCompPlan_id av mshr_payrollfixedcompensationplanentity  | ID-en for den faste kompensasjonsplanen som er knyttet til stillingen. |
-| **ID for lønnssyklus**<br>mshr_primaryfield<br>*Streng* | Skrivebeskyttet<br>Obligatorisk | Lønnssyklusen som er definert for stillingen. |
-| **Betalt av juridisk enhet**<br>paidbylegalentity<br>*Streng* | Skrivebeskyttet<br>Obligatorisk | Den juridiske enheten som er definert i stillingen som er ansvarlig for utstedelse av betaling. |
-| **Stillings-ID**<br>mshr_positionid<br>*Streng* | Skrivebeskyttet<br>Obligatorisk | ID-en for stillingen. |
-| **Gyldig til**<br>validto<br>*Motregning av dato/klokkeslett* | Skrivebeskyttet<br>Obligatorisk |Datoen stillingsdetaljene er gyldige fra.  |
-| **Gyldig fra**<br>validfrom<br>*Motregning av dato/klokkeslett* | Skrivebeskyttet<br>Obligatorisk |Datoen stillingsdetaljene er gyldige til.  |
+| **Stillings-ID**</br>mshr_positionid</br>*Streng* | Skrivebeskyttet | ID-en for stillingen. |
+| **ID for lønnssyklus**</br>mshr_paycycleid</br>*Streng* | Skrivebeskyttet | Lønnssyklusen som er definert for stillingen. |
+| **Årlige vanlige timer**</br>annualregularhours</br>*Desimal* | Skrivebeskyttet | Årlige faste timer definert i stillingen. |
+| **Betalt av juridisk enhet**</br>paidbylegalentity</br>*Streng* | Skrivebeskyttet | Den juridiske enheten som er definert i stillingen, og som er ansvarlig for utstedelse av betaling. |
+| **Gyldig til**</br>validto</br>*Motregning av dato/klokkeslett* | Skrivebeskyttet | Datoen stillingsdetaljene er gyldige til. |
+| **Gyldig fra**</br>validfrom</br>*Motregning av dato/klokkeslett* | Skrivebeskyttet | Datoen stillingsdetaljene er gyldige fra. |
+| **Primærfelt**</br>mshr_primaryfield</br>*Streng* | Systemgenerert | Primærfeltet. |
+| **Enhets-ID for lønnsstillingsdetaljer**</br>payrollpositiondetailsentityid</br>*Guid* | Obligatorisk</br>Systemgenerert. | En systemgenerert globalt unik identifikator (GUID)-verdi som identifiserer stillingen entydig. |
+
+## <a name="relations"></a>Relasjoner
+
+| Egenskapsverdi | Relatert enhet | Navigasjonsegenskap | Samlingstype |
+| --- | --- | --- | --- |
+| _mshr_fk_fixedcompplan_id_value | [mshr_payrollfixedcompensationplanentity](hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md) | mshr_FK_FixedCompPlan_id | mshr_FK_PayrollFixedCompensationPlanEntity_PayrollPosition |
+| _mshr_fk_hcmpositionhierarchy_id_value | mshr_hcmpositionhierarchyentity | mshr_FK_HcmPositionHierarchy_id | Gjelder ikke |
+| _mshr_fk_job_id_value | mshr_payrollpositionjobentity | mshr_FK_Job_id | mshr_FK_PayrollPositionJobEntity_Payroll |
+| _mshr_fk_positionassignmentv2_id_value | mshr_hcmpositionworkerassignmentv2entity | mshr_FK_PositionAssignmentV2_id | Gjelder ikke |
 
 ## <a name="example-query"></a>Eksempelspørring
 
