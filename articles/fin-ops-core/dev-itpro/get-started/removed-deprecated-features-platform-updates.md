@@ -2,7 +2,7 @@
 title: Fjernede eller avskrevne Platform-funksjoner
 description: Dette emnet beskriver funksjoner som er fjernet eller som er planlagt for fjerning i plattformoppdateringer av Finance and Operations-apper.
 author: sericks007
-ms.date: 09/17/2021
+ms.date: 09/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 8910fc338f822e6b6b59acb0e6ee7a90db2b5007
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 956ead503d426bb6cdfd136957c7f9dfa157bc08
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500115"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595151"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Fjernede eller avskrevne Platform-funksjoner
 
@@ -32,14 +32,26 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 
 Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekniske referanserapporter](/dynamics/s-e/global/axtechrefrep_61). Du kan sammenligne de ulike versjonene av disse rapportene for å lære om objekter som er endret eller fjernet i hver versjon av Finance and Operations-apper.
 
+## <a name="platform-updates-for-version-10021-of-finance-and-operations-apps"></a>Plattformoppdateringer for versjon 10.0.21 av Finance and Operations-apper
+
+### <a name="skype-for-business-online-support"></a>Støtte for Skype for Business Online
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Skype for Business Online er trukket tilbake. Hvis du vil ha mer informasjon, kan du se [Skype Business Online-tjenesten er trukket tilbake](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/the-skype-for-business-online-service-has-retired/ba-p/2596601). |
+| **Erstattet med en annen funksjon?**   | Ikke i øyeblikket, men vi kan vurdere å legge til tilstedeværelse fra Teams i fremtiden.|
+| **Berørte produktområder**         | Webklient |
+| **Distribusjonsalternativ**              | Alle |
+| **Status**                         | Avskrevet. Innstillingen **Skype-aktivert** er slått av fra og med versjon 10.0.21. Fjerning av denne innstillingen er rettet mot april 2022. Funksjonen vil imidlertid slutte å fungere etter at Skype-teamet avslutter tjenesten. |
+ 
 ## <a name="feature-deprecation-effective-august-2021"></a>Varsel om funksjonsavvik gjelder fra august 2021
 
 ### <a name="microsoft-azure-sql-reports-in-lifecycle-services-lcs"></a>Microsoft Azure SQL-rapporter i Lifecycle Services (LCS)
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Årsak til avskrivning/fjerning** |   Alle aktiviteter og all overvåking vil bli utført internt, av plattformen, gjennom automasjon. Dette krever ikke manuell inngripen.|
-| **Erstattet med en annen funksjon?**   | Ingen |
+| **Årsak til avskrivning/fjerning** | Alle aktiviteter og all overvåking vil bli utført internt, av plattformen, gjennom automasjon. Dette krever ikke manuell inngripen.|
+| **Erstattet med en annen funksjon?**   | Ja, det er nå et automatisert system som gjør disse funksjonene foreldet. |
 | **Berørte produktområder**         | SQL-rapporter: Gjeldende DTU, Gjeldende DTU-detaljer, Hent låsedetaljer, Liste over gjeldende planveiledning, Hent liste over spørrings-IDer, Hent SQL-spørringsplanen for en gitt plan-ID, Hent spørringsplaner og utførelsesstatus, Hent begrensningskonfigurasjon, Hent ventestatistikk, Vis dyreste spørringer |
 | **Distribusjonsalternativ**              | Skydistribusjon – påvirker Microsoft-administrerte produksjonsmiljøer og sandkassemiljøer på lag 2 til og med lag 5. |
 | **Status**                         | Avskrevet: Planlagt fjerningsdato i oktober 2021. |
@@ -48,8 +60,8 @@ Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekni
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Årsak til avskrivning/fjerning** | Vi avskriver noen SQL-handlinger i LCS.  |
-| **Erstattet med en annen funksjon?**   | Ingen |
+| **Årsak til avskrivning/fjerning** | Vi avskriver noen SQL-handlinger i LCS. Alle aktiviteter og all overvåking vil bli utført internt, av plattformen, gjennom automasjon. Dette krever ikke manuell inngripen. |
+| **Erstattet med en annen funksjon?**   | Ja, det er nå et automatisert system som gjør disse funksjonene foreldet. |
 | **Berørte produktområder**         | SQL-handlinger: Opprett en planhåndbok for å fremtvinge plan-ID, Opprett en planhåndbok for å legge til tabellreferanser, Fjern planveiledning, Deaktiver/aktiver sidelåser og låsskalering, Oppdater statistikk i en tabell, Bygg indeks på nytt, Opprett indeks |
 | **Distribusjonsalternativ**              | Skydistribusjon – påvirker Microsoft-administrerte produksjonsmiljøer og sandkassemiljøer på lag 2 til og med lag 5. |
 | **Status**                         | Avskrevet: Planlagt fjerningsdato i oktober 2021. |
@@ -158,7 +170,7 @@ Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekni
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Vanligvis tilbyr egendefinert kode begrensede fordeler og krever samtidig betydelige ressurser og databehandling for å støtte. Egendefinert kode brukes hovedsakelig av rapportforfattere for å kalle felles metoder fra en egendefinert kodesamling. Skybaserte tjenester støtter imidlertid ikke referanser til egendefinerte samlinger for SSRS-rapporter. |
-| **Erstattet med en annen funksjon?**   | Rapportforfattere kan velge å fortsette å referere til offentlige .NET-API-er for matematiske operasjoner, konverteringsoperasjoner og formateringsoperasjoner fra et hvilket som helst tekstboksuttrykk. Hvis du vil ha mer informasjon, kan du se [Legge til kode i en rapport (SSRS)](/sql/reporting-services/report-design/add-code-to-a-report-ssrs?view=sql-server-ver15).  |
+| **Erstattet med en annen funksjon?**   | Rapportforfattere kan velge å fortsette å referere til offentlige .NET-API-er for matematiske operasjoner, konverteringsoperasjoner og formateringsoperasjoner fra et hvilket som helst tekstboksuttrykk. Hvis du vil ha mer informasjon, kan du se [Legge til kode i en rapport (SSRS)](/sql/reporting-services/report-design/add-code-to-a-report-ssrs).  |
 | **Berørte produktområder**         | Delsett av apprapportutforminger som er definert i RDL, som inneholder egendefinert kode. |
 | **Distribusjonsalternativ**              | Alle |
 | **Status**                         | Med versjon 10.0.13 vil kompilatoren begynne å sende en advarsel for forekomster der egendefinert kode oppdages i en SSRS-rapportdefinisjon. Du kan løse problemet ved å åpne rapportutformingsdefinisjonen og fjerne alle egendefinerte kodeartefakter. Denne advarselen vil bli erstattet med en kompilatorfeil i en fremtidig oppdatering.   |

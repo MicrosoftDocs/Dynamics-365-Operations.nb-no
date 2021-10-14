@@ -2,7 +2,6 @@
 title: Mva-rapport for Finland
 description: Dette emnet gir informasjon om hvordan du definerer og genererer mva-rapporten for juridiske enheter i Finland.
 author: anasyash
-ms.author: AnnBe
 ms.date: 03/23/2020
 ms.topic: article
 ms.prod: ''
@@ -10,14 +9,15 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Norway
+ms.author: anasyash
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: bca0313870a1e91ed03a1769c7281e1070e1677501253d8e44a8dd7ba068ccd7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3e640333d067cdc977b2dbffac2395e47faf1cf9
+ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752112"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7592507"
 ---
 # <a name="sales-tax-report-for-finland"></a>Mva-rapport for Finland
 

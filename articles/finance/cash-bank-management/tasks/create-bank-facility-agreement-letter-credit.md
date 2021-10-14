@@ -1,7 +1,7 @@
 ---
 title: Opprette en fasilitetsavtale for en remburs
 description: Denne oppgaven hjelper deg med å opprette en bankfasilitetsavtale for å behandle en remburs.
-author: ShylaThompson
+author: panolte
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f978c02e269ca67f50af1d1588d765a9a986f66d7d76164d36f6aaece0e4b018
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 607d9688aebb6288735cc04f6b4d8e7b8f7362b9
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754911"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595019"
 ---
 # <a name="create-a-bank-facility-agreement-for-a-letter-of-credit"></a>Opprette en fasilitetsavtale for en remburs
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 4ee1ae4d8a106e467640a8cbcf5986e770395431
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: dc89e7ff43e5df358f6d41bd295e981c883085bc
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7343866"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595209"
 ---
 # <a name="email-er-destination-type"></a>Sende ER-måltype per e-post
 
@@ -75,7 +75,7 @@ Du kan angi e-postsenderen og e-postmottakerne. Som standard sendes det en e-pos
 >
 > Når et e-postmål tilbys for endring ved [kjøretid](electronic-reporting-destinations.md#security-considerations), er **Fra**-feltet bare synlig for brukere som har sikkerhetsprivilegium `ERFormatDestinationSenderEmailMaintain`, **Vedlikehold avsender-e-postadressen for ER-formatmål**.
 >
-> Når **Fra**-feltet er konfigurert til å bruke en annen e-postadresse enn den gjeldende brukerens, må enten **Send som** eller **Send på vegne av**-tillatelse [angis](/microsoft-365/solutions/allow-members-to-send-as-or-send-on-behalf-of-group?view=o365-worldwide) riktig på forhånd. Ellers skjer dette unntaket ved kjøretid: Kan ikke sende e-post som \<from email account\> fra kontoen \<current user account\>. Kontroller Send som-tillatelsene på \<from email account\>.
+> Når **Fra**-feltet er konfigurert til å bruke en annen e-postadresse enn den gjeldende brukerens, må enten **Send som** eller **Send på vegne av**-tillatelse [angis](/microsoft-365/solutions/allow-members-to-send-as-or-send-on-behalf-of-group) riktig på forhånd. Ellers skjer dette unntaket ved kjøretid: Kan ikke sende e-post som \<from email account\> fra kontoen \<current user account\>. Kontroller Send som-tillatelsene på \<from email account\>.
 
 Du kan konfigurere **Fra**-feltet til å returnere mer enn én e-postadresse. I dette tilfellet brukes den første adressen i listen som en e-postsenderadresse.
 
