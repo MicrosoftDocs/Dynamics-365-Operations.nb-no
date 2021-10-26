@@ -802,6 +802,8 @@
                   href: POS-serial-returns.md
                 - name: Sammenkoblede refunderinger
                   href: dev-itpro/linked-refunds.md
+                - name: Behandle ikke-sammenkoblede refunderinger med Dynamics 365 Commerce Payment Connector for Adyen
+                  href: dev-itpro/unlinked-refunds.md
                 - name: Selg og gå tilbake til produkter som ikke er inkludert i et butikksortiment
                   href: sell-return-outside-assortments.md
                 - name: Konfigurere og behandle en utveksling i en returordre

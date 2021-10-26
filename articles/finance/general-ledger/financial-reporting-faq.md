@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: dd493e855e45362c1681dc9cdfbbcb71f7627d64624cd093eadab32fd966c174
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3690a541b503281f204221a72bfb5a371984d9e4
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733617"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605285"
 ---
 # <a name="financial-reporting-faq"></a>Vanlige spørsmål om finansrapportering
 
@@ -101,5 +101,28 @@ For historisk valutaomregning kan de forhåndsberegnede periodesaldoene brukes i
 Når data som presenteres i rapportene, oppdateres, kan det være en forsinkelse fordi beløp må beregnes på nytt ved å kontrollere transaksjonsdetaljer. Denne forsinkelsen utløses hver gang kursene oppdateres eller flere transaksjoner posteres. Hvis for eksempel tusenvis av konti er konfigurert for historisk omregning et par ganger om dagen, kan det være en forsinkelse på opptil en time før dataene i rapporten oppdateres. På den andre siden, hvis det er et mindre antall spesifikke konti, kan behandlingstidene for oppdateringer av rapportdataene reduseres til minutter eller mindre.
 
 På samme måte, når rapporter genereres ved hjelp av valutaomregning for historiske typekonti, vil det være ekstra beregninger per transaksjon. Avhengig av antall konti kan rapportgenereringstiden dobles eller mer.
+
+## <a name="what-are-the-estimated-data-mart-integration-intervals"></a>Hva er de estimerte intervallene for data mart-integrering?
+
+Financial Reporter bruker 16 oppgaver til å kopiere data fra Dynamics 365 Finance til finansrapporteringsdatabasen. Tabellen nedenfor viser disse 16 oppgavene og viser intervallet som angir hvor ofte hver oppgave skal kjøres. Intervallene kan ikke endres.
+
+| Navn                                                       | Intervall | Intervalltid |
+|------------------------------------------------------------|----------|-----------------|
+| AX 2012 Kontokategorier til kontokategori            | 41       | minutter         |
+| AX 2012 Kontoer til konto                                | 7        | minutter         |
+| AX 2012 Firmaer til firma                               | 300      | sekunder         |
+| AX 2012 Firmaer til organisasjon                          | 23       | minutter         |
+| AX 2012 Dimensjonskombinasjoner til dimensjonskombinasjon    | 1        | minutt         |
+| AX 2012 Dimensjonsverdier til dimensjonsverdi                | 11       | minutter         |
+| AX 2012 Dimensjoner til dimensjon                            | 31       | minutter         |
+| AX 2012 Valutakurser til valutakurs                    | 17       | minutter         |
+| AX 2012 Regnskapsår til regnskapsår                        | 13       | minutter         |
+| AX 2012 Økonomimodultransaksjoner til fakta                | 1        | minutter         |
+| AX 2012 Organisasjonshierarkier til tre                   | 3 600    | sekunder         |
+| AX 2012 Scenarioer til scenario                              | 29       | minutter         |
+| AX 2012 Transaksjonstypekvalifikatorer til faktatypekvalifikator | 19       | minutter         |
+| Vedlikeholdsoppgave                                           | 1        | minutt         |
+| MR-rapportdefinisjoner til AX7-finansrapporter             | 45       | sekunder         |
+| MR-rapportversjoner til AX-finansrapportversjoner         | 45       | sekunder         |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
