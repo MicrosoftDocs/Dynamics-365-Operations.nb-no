@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 091c953146850166ef1c93749d9bc2ec0b6a80fe58bdcb3c3d3b00bf45e7b0fe
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8681ef80166f7d5f108c9424b53fa5c6f5324467
+ms.sourcegitcommit: fcb1aa39e933216dea9e586b552bce6057f416a6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761836"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "7645788"
 ---
 # <a name="get-started-with-planning-optimization"></a>Komme i gang med planleggingsoptimalisering
 
@@ -40,7 +40,7 @@ Før du slår på planleggingsoptimalisering, anbefaler vi på det sterkeste at 
 
 ## <a name="availability"></a>Tilgjengelighet
 
-Planleggingsoptimalisering er for øyeblikket tilgjengelig i følgende Azure-områder: USA, Canada, Europa, Storbritannia, Australia og Asia/Stillehavskysten. Hvis du prøver å installere tillegget fra et annet geografisk område, vil LCS vise en melding om at dette området ikke støttes.
+Planleggingsoptimalisering er for øyeblikket tilgjengelig i følgende Azure-områder: USA, Canada, Europa, Storbritannia, Australia, Asia/Stillehavskysten og Japan. Hvis du prøver å installere tillegget fra et annet geografisk område, vil LCS vise en melding om at dette området ikke støttes. Hvis du vil ha mer informasjon om geografiske områder for Azure og tilknyttede områder, kan du se [Azure-geografier](https://azure.microsoft.com/global-infrastructure/geographies/#geographies).
 
 Legg merke til at planleggingsoptimalisering ikke støtter lokale distribusjoner av Dynamics 365 Supply Chain Management.
 

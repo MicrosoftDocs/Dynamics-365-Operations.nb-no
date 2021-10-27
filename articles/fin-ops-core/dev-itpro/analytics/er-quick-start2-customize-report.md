@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2ec7f5bcf9f01512d22f502a4b512f2919b3caf348eb1f5c4365238d6fd3f476
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 47d8091e9199597857791f58f14587e2dea027e0
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770026"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605236"
 ---
 # <a name="adjust-an-er-format-to-generate-a-custom-electronic-document"></a>Endre et ER-formatet for å generere et egendefinert elektronisk dokument
 
@@ -160,7 +160,7 @@ Hvis du vil legge til standard ER-konfigurasjoner i den gjeldende forekomsten av
     - **Betalingsmodelltilordning 1611** – denne konfigurasjonen inneholder ER-komponenten for [modelltilordning](general-electronic-reporting.md#data-model-and-model-mapping-components) som beskriver hvordan datamodellen fylles ut med programdata ved kjøring.
     - **BBS (Storbritannia)** – denne konfigurasjonen inneholder ER-komponenter for [format](general-electronic-reporting.md#FormatComponentOutbound) og formattilordning. Formatkomponenten angir rapportoppsettet. Formattilordningskomponenten inneholder modelldatakilden og angir hvordan rapportoppsettet fylles ut ved hjelp av denne datakilden under kjøring.
 
-![Siden Konfigurasjoner.](./media/er-quick-start2-imported-solution1.png)
+![Konfigurasjonssiden med angitte ER-konfigurasjoner som er tilgjengelige i treet.](./media/er-quick-start2-imported-solution1.png)
 
 ## <a name="prepare-a-vendor-payment-for-processing"></a><a id="PrepareVendorPayment"></a>Klargjøre en leverandørbetaling for behandling
 
@@ -222,7 +222,7 @@ Du må konfigurere den elektroniske betalingsmåten slik at den bruker den impor
 4. I hurtigfanen **Filformater** setter du alternativet **Generelt elektronisk eksportformat** til **Ja**.
 5. I feltet **Eksportformatkonfigurasjon** velger du formatkonfigurasjonen **BBS (Storbritannia)**.
 
-    ![Siden Betalingsmåter – leverandører.](./media/er-quick-start2-method-of-payment1.png)
+    ![Betalingsmåter – leverandørsiden for å definere en elektronisk betalingsmåte for å behandle leverandørbetalinger ved hjelp av et standardformat.](./media/er-quick-start2-method-of-payment1.png)
 
 6. Velg **Lagre**.
 
@@ -273,7 +273,7 @@ I dette tilfellet må du som representanten for Litware, Inc., opprette (avlede)
 
 Versjon 1.1.1 av ER-formatkonfigurasjonen **BBS (Storbritannia egendefinert)** er opprettet. Denne versjonen har [statusen](general-electronic-reporting.md#component-versioning) **Utkast** og kan redigeres. Det gjeldende innholdet i egendefinert ER-format samsvarer med innholdet i formatet som leveres av Microsoft.
 
-![Siden Konfigurasjoner.](./media/er-quick-start2-derived-format-configuration1.png)
+![Konfigurasjonsside med Versjon 1.1.1 av ER-formatkonfigurasjonen BBS (Storbritannia egendefinert).](./media/er-quick-start2-derived-format-configuration1.png)
 
 ### <a name="edit-a-custom-format"></a><a id="ConfigureDerivedFormat"></a>Redigere et egendefinert format
 
@@ -349,7 +349,7 @@ Du må konfigurere den elektroniske betalingsmåten slik at det egendefinerte ER
 4. I hurtigfanen **Filformat** setter du alternativet **Generelt elektronisk eksportformat** til **Ja**.
 5. I feltet **Eksportformatkonfigurasjon** velger du formatkonfigurasjonen **BBS (Storbritannia egendefinert)**.
 
-    ![Siden Betalingsmåter – leverandører.](./media/er-quick-start2-method-of-payment2.png)
+    ![Betalingsmåter – leverandørsiden for å definere en elektronisk betalingsmåte for å behandle leverandørbetalinger ved hjelp av et egendefinert format.](./media/er-quick-start2-method-of-payment2.png)
 
 6. Velg **Lagre**.
 
@@ -378,7 +378,7 @@ Du må konfigurere den elektroniske betalingsmåten slik at det egendefinerte ER
 
         Legg merke til at i henhold til strukturen i egendefinert ER-format, [starter](#PositionSWIFTCode) betalingslinjen i den genererte filen nå med SWIFT-koden som ble [angitt](#DefineSWIFTCode) for bankkontoen til leverandøren som har utført betalingen.
 
-        ![Betalingsfil i TXT-format.](./media/er-quick-start2-payment-file2.png)
+        ![Betalingsfil i TXT-format som brukes til å behandle leverandørbetalingen.](./media/er-quick-start2-payment-file2.png)
 
 ## <a name="import-new-versions-of-the-standard-er-format-configurations"></a><a id="ImportERSolution2"></a>Importer nye versjoner av standard ER-formatkonfigurasjoner
 
@@ -395,7 +395,7 @@ Hvis du vil legge til nye versjoner av ER-konfigurasjoner i den gjeldende Financ
 5. I **Versjoner**-hurtigkategorien velger du versjon **3.3** for den valgte ER-formatkonfigurasjonen.
 6. Velg **Importer** for å laste ned den valgte versjonen fra det globale repositoriet til den gjeldende forekomsten av Finance.
 
-![Konfigurasjonsrepositorium-side.](./media/er-quick-start2-import-solution2.png)
+![Siden for konfigurasjonsrepositorium, Versjoner-hurtigfane, Importer-knapp.](./media/er-quick-start2-import-solution2.png)
 
 > [!TIP]
 > Hvis du har problemer med å få tilgang til det [globale repositoriet](er-download-configurations-global-repo.md), kan du [laste ned konfigurasjoner](download-electronic-reporting-configuration-lcs.md) fra LCS i stedet.
@@ -507,7 +507,7 @@ Hvis du vil begynne å bruke den nye funksjonaliteten i versjon 3.3 av **BBS (St
 
         Legg merke til at betalingslinjen i den genererte filen nå starter med SWIFT-koden som ble angitt for bankkontoen til en leverandør som har utført betalingen.
 
-        ![Betalingsfil i TXT-format.](./media/er-quick-start2-payment-file3.png)
+        ![Betalingsfil i TXT-format som brukes til å behandle leverandørbetalingen ved å bruke et rebasert ER-format.](./media/er-quick-start2-payment-file3.png)
 
 ## <a name="additional-resources"></a><a id="References"></a>Tilleggsressurser
 

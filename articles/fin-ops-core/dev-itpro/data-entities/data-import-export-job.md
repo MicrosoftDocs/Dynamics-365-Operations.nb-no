@@ -2,7 +2,7 @@
 title: Oversikt over dataimport- og -eksportjobber
 description: Bruk arbeidsområdet for dataadministrasjon for å opprette og administrere dataimport- og -eksportjobber.
 author: peakerbl
-ms.date: 04/22/2021
+ms.date: 10/07/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4f9ae06893a8247828fa4d3c2cb40b9155043c87
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: dec8270417cb7237081aa49203ca93d76c0d02ed
+ms.sourcegitcommit: 132c3dbdd66bceb7596d329c34b2256c581a20fa
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7404040"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "7612370"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Oversikt over dataimport- og -eksportjobber
 
@@ -198,16 +198,10 @@ Når du planlegger oppryddingsprosessen, må du angi følgende parametere for å
 > [!NOTE]
 > Hvis poster i oppsamlingstabellene ikke ryddes opp fullstendig, kontrollerer du at oppryddingsjobben er planlagt å kjøres i regelmessighet. Som forklart ovenfor, vil jobben bare rydde opp så mange utførelses-ID-er som mulig i løpet av de angitte maksimale timene, i alle oppryddingskjøringer. Hvis du vil fortsette oppryddingen av alle gjenværende oppsamlingsposter, må jobben planlegges å kjøre med jevne mellomrom.
 
-## <a name="job-history-clean-up-and-archival-available-for-preview-in-platform-update-39-or-version-10015"></a>Opprydding i og arkivering av jobblogg (tilgjengelig som forhåndsversjon i Platform update 39 eller versjon 10.0.15)
+## <a name="job-history-clean-up-and-archival"></a>Opprydding og arkivering av jobbhistorikk 
 Funksjonen for opprydding i og arkivering av jobblogg erstatter de tidligere versjonene av oppryddingsfunksjonen. Denne delen forklarer disse nye funksjonene.
 
-En av hovedendringene i oppryddingsfunksjonen er bruken av systemets satsvise jobb for å rydde opp i loggen. Bruken av systemets satsvise jobb gjør at Finance and Operations-apper kan få den satsvise jobben for opprydding planlagt automatisk så snart systemet er klart. Det er ikke lenger nødvendig å planlegge den satsvise jobben manuelt. I denne standardmodusen for kjøring kjøres den satsvise jobben hver time fra kl. 00:00, og kjøringsloggen for de siste sju dagene beholdes. Den tømte loggen arkiveres for fremtidig henting.
-
-> [!NOTE]
-> Siden denne funksjonaliteten er en forhåndsversjon, vil ikke systemets satsvise jobb slette noen kjøringslogger før den aktiveres via testversjonen DMFEnableExecutionHistoryCleanupSystemJob. Når funksjonen er allment tilgjengelig i en fremtidig versjon, er ikke denne testversjonen nødvendig, og systemets satsvise jobb begynner å tømme og arkivere etter at systemet er klart, basert på den definerte tidsplanen som forklart ovenfor. 
-
-> [!NOTE]
-> I en fremtidig versjon blir de tidligere versjonene av oppryddingsfunksjonen fjernet fra Finance and Operations-apper.
+En av hovedendringene i oppryddingsfunksjonen er bruken av systemets satsvise jobb for å rydde opp i loggen. Bruken av systemets satsvise jobb gjør at Finance and Operations-apper kan få den satsvise jobben for opprydding planlagt automatisk så snart systemet er klart. Det er ikke lenger nødvendig å planlegge den satsvise jobben manuelt. I denne standardmodusen for kjøring kjøres den satsvise jobben hver time fra midnatt, og kjøringsloggen for de siste sju dagene beholdes. Den tømte loggen arkiveres for fremtidig henting. Fra og med versjon 10.0.20 er denne funksjonen alltid på.
 
 Den andre endringen i oppryddingsprosessen er arkivering av den tømte kjøringsloggen. Oppryddingsjobben arkiverer de slettede postene i BLOB-lageret som DIXF bruker til vanlige integreringer. Den arkiverte filen er i DIXF-pakkeformatet, og er tilgjengelig i sju dager i BLOB-lageret, der det kan lastes ned. Standardlevetiden på sju dager for den arkiverte filen kan endres til maksimalt 90 dager i parameterne.
 

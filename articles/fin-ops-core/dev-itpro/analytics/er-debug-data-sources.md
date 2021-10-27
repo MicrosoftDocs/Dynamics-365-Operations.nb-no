@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: ea8b99461ae741391198cc219651f6c2928f27daac94554ada3001f66674b78e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ba8f20e7b4ca6579016fa60d0bbf69f7b4e9c7d3
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718459"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605387"
 ---
 # <a name="debug-data-sources-of-an-executed-er-format-to-analyze-data-flow-and-transformation"></a>Feilsøke datakilder for et utført ER-format for å analysere dataflyt og transformasjon
 
@@ -234,7 +234,7 @@ Hvis noen av de tidligere angitte konfigurasjonene mangler i konfigurasjonstreet
 
     Merk at formatelementet under **Dokument** \> **CstmrCdtTrfInitn** \> **PmtInf** \> **CdtTrfTxInf** \> **CdtrAcct** \> **Id** \> **IBAN** \> **BankIBAN** er konfigurert til å angi IBAN-koden for leverandørkontoen i betalingsfilen.
 
-    ![BankIBAN-elementet på Formatutforming-siden.](./media/er-data-debugger-format.png)
+    ![BankIBAN-formatelement på Formatutforming-siden.](./media/er-data-debugger-format.png)
 
 ## <a name="appendix-2-configure-accounts-payable"></a><a name="appendix2"></a>Tillegg 2: Konfigurere leverandører
 

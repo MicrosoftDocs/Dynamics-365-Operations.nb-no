@@ -1,8 +1,8 @@
 ---
 title: Definere kuponger for detaljhandelssalg
-description: Dette emnet gir en oversikt over kuponger, og forklarer hvordan du foretar oppsettet.
-author: scott-tucker
-ms.date: 06/04/2020
+description: Dette emnet gir en oversikt over kuponger, og forklarer hvordan du foretar oppsettet i Dynamics 365 Commerce.
+author: josaw1
+ms.date: 10/05/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.reviewer: josaw
 ms.custom: ''
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: scotttuc
+ms.author: josaw
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: bc79970528e23397b756fa15a715fba834edcc06e4522c6c35b64aede4976300
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6a2ee38139f20b883bdfa5f0776951246f763f5f
+ms.sourcegitcommit: f699dbc21a06dbfb3fb299b789b428ea8d643868
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745314"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "7603129"
 ---
 # <a name="set-up-coupons-for-retail-sales"></a>Definere kuponger for detaljhandelssalg
 
@@ -40,6 +40,8 @@ Hvis du vil opprette en kupong, oppretter du rabatten og kupongen separat. Deret
 > Når en kupong er koblet til en rabatt, blir flere felt på rabattsiden i Commerce skrivebeskyttet, fordi de styres av kuponginnstillingene. Disse feltene omfatter feltene for status og standard datointervall.
 > 
 > Når du bruker kupongen i telefonsenterkanalen, må du velge **Omberegn**-knappen **(Selg-fanen > Beregn > Omberegn)** for at rabatten som er knyttet til kupongen, skal bli brukt. Dette tilleggstrinnet blir fjernet i en fremtidig versjon.
+
+Hvis du vil bruke en kupong på en salgstransaksjon i salgssted, kan du bruke **kupongkode** eller **kupongstrekkode**. Hvis du vil bruke **kupongkode**, må operasjonen **Legg til kupongkode** være konfigurert i **salgsstedstransaksjonens** [skjermoppsett](pos-screen-layouts.md). Velg **Legg til kupongkode**, og angi kupongkoden. Du kan også bruke **kupongstrekkode** ved å skanne strekkoden eller angi strekkoden ved hjelp av det numeriske tastaturet på **Transaksjon**-skjermbildet.
 
 ### <a name="limited-use-coupons"></a>Kuponger med begrenset bruk
 

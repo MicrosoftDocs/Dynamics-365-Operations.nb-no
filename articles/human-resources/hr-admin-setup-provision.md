@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 766e807ee9061f52b692cf3436ba393b334e67c4
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: c84fdb3c5c61598dfd0934e769f4a7262ce74052
+ms.sourcegitcommit: 8439ce2d4ad5ee5c1ec870640b52b5d2e947a671
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488089"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "7644533"
 ---
 # <a name="provision-human-resources"></a>Klargjøre Human Resources
 
@@ -49,7 +49,7 @@ Prøvemiljøene er ikke ment å brukes som produksjonsmiljøer. De er begrenset 
 Når du oppretter et prøvemiljø for Human Resources, opprettes det også et Power Apps prøvemiljø i leieren og knyttes til Human Resources-miljøet. Miljøet Power Apps, kalt "TestDrive", har den samme prøveperioden som Human Resources-miljøet.
 
 > [!NOTE]
-> Klargjøring av et prøvemiljø for Human Resources vil mislykkes hvis den godkjente brukeren ikke har tillatelse til å opprette Power Apps prøvemiljøer. Brukeren må være inkludert i brukergruppen som kan opprette prøvemiljøer i Power Platform administrasjonssenteret. Hvis du vil ha mer informasjon, kan du se [Kontrollere hvem som kan opprette og administrere miljøer i Power Platform administrasjonssenteret](//power-platform/admin/control-environment-creation).
+> Klargjøring av et prøvemiljø for Human Resources vil mislykkes hvis den godkjente brukeren ikke har tillatelse til å opprette Power Apps prøvemiljøer. Brukeren må være inkludert i brukergruppen som kan opprette prøvemiljøer i Power Platform administrasjonssenteret. Hvis du vil ha mer informasjon, kan du se [Kontrollere hvem som kan opprette og administrere miljøer i Power Platform administrasjonssenteret](/power-platform/admin/control-environment-creation).
 
 ## <a name="plan-human-resources-environments"></a>Planlegge Human Resources-miljøer
 

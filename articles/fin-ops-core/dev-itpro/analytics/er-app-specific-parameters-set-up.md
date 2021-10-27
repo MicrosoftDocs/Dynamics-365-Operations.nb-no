@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 28fea4a09d7c105096859495d9b4a43f4c86c834184809827fe77ce1bbff5b84
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: baa3cab78574ac3779aaea000f0b2b88ff625c37
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749830"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605261"
 ---
 # <a name="set-up-the-parameters-of-an-er-format-per-legal-entity"></a>Definere parameterne for et ER-format per juridisk enhet
 
@@ -58,8 +58,6 @@ Du kan bruke ER-rammeverket til å definere programspesifikke parametere for et 
 1.  Velg den juridiske enheten **DEMF**.
 2.  I konfigurasjonstreet velger du formatet **Format for å lære hvordan du slår opp LE-data**.
 3.  På Handling-panelet, i kategorien **Konfigurasjoner**, i gruppen **Programspesifikke parametere**, velg **Oppsett**.
-
-    ![Siden ER-programspesifikke parametere.](./media/GER-AppSpecParms-LookupForm.PNG)
     
     På siden **Programspesifikke parametere** kan du konfigurere reglene for **Velger**-datakilden for **Format for å lære hvordan du slår opp LE-data**.
     
@@ -75,14 +73,14 @@ Du kan bruke ER-rammeverket til å definere programspesifikke parametere for et 
 
     Oppslaget viser listen over avgiftskoder for valg. Denne listen er returnert av **Model.Data.Tax**-datakilden som er konfigurert i det grunnleggende ER-formatet. Siden denne datakilden inneholder **navn** -feltet, vises navnet på hver avgiftskode i oppslaget.
 
-    ![Siden ER-programspesifikke parametere.](./media/GER-AppSpecParms-LookupForm-CodeFldPicker.PNG)
+    ![Siden ER-programspesifikke parametere, Kodefeltoppslag.](./media/GER-AppSpecParms-LookupForm-CodeFldPicker.PNG)
     
 7.  Velg mva-koden **VAT19**.
 8.  Klikk på rullegardinpilen i **Oppslagsresultat**-feltet for den nye posten for å åpne oppslaget. Oppslaget presenterer listen med verdier for formatopplistingen for TaxationLevel for utvalg.
 
     Legg merke til at hvis tysk er valgt som foretrukket språk for brukeren du er logget på som, vil etikettene for verdiene i oppslaget være på tysk, forutsatt at de er oversatt i grunnleggende ER-format. Hvis etiketten til en oppslagsdatakilde for eksempel er oversatt, vil denne etiketten vises på brukerens foretrukne språk i **Oppslag**-kategorien.
 
-    ![Siden ER-programspesifikke parametere.](./media/GER-AppSpecParms-LookupForm-LookupFldPicker.PNG)
+    ![Siden ER-programspesifikke parametere, oppslagsresultater som vises når foretrukket språk er tysk.](./media/GER-AppSpecParms-LookupForm-LookupFldPicker.PNG)
 
 9.  Velg **Vanlig avgift**-verdien.
 
@@ -120,7 +118,7 @@ Du kan bruke ER-rammeverket til å definere programspesifikke parametere for et 
     
     Ved å legge til den siste posten definerer du følgnde regel: Her gang avgiftskoden som sendes som et argument, ikke oppfyller noen av de tidligere reglene, returnerer oppslagsdatakilden **Annet** som forespurt avgiftsnivå.
 
-    ![Siden ER-programspesifikke parametere.](./media/GER-AppSpecParms-LookupForm-RulesSet.PNG)
+    ![Siden ER-programspesifikke parametere, Hurtigtabell for betingelser med siste post i Annet.](./media/GER-AppSpecParms-LookupForm-RulesSet.PNG)
     
 16. Velg **Fullført** i **Status**-feltet.
 
@@ -160,7 +158,7 @@ Du kan bruke ER-rammeverket til å definere programspesifikke parametere for et 
 
     Oppslaget viser nå en liste over mva-koder for **USMF** selskapsavgiften for valg.
 
-    ![Siden ER-programspesifikke parametere.](./media/GER-AppSpecParms-LookupForm-CodeFldPicker2.PNG)
+    ![Siden ER-programspesifikke parametere, kodefeltoppslag som viser liste over avgiftskoder for USMF-firma.](./media/GER-AppSpecParms-LookupForm-CodeFldPicker2.PNG)
     
 8.  Velg mva-koden **EXEMPT**.
 9.  Velg **Ingen avgift**-verdien i **Oppslagsresultat**-feltet for den nye posten.
@@ -225,13 +223,13 @@ I det forrige eksemplet har du fått tilgang til programspesifikke parametere i 
 
 1.  Bruk et eksisterende **ERSolutionAppSpecificParametersDesigner**-menyelement, eller implementer ditt eget **ERSolutionAppSpecificParametersDesigner**-menyelement.
 
-    ![Visual studio-side.](./media/GER-AppSpecParms-LookupForm-Access1.PNG)
+    ![Visual Studio-side, Egenskaper-rute.](./media/GER-AppSpecParms-LookupForm-Access1.PNG)
     
 2.  Følg ett av disse trinnene:
 
     1.  Opprett en ny menyelementknapp, og koble den til den tilsvarende posten fra **ERSolutionTable**-tabellen ved å sette **Datakilde**-egenskapen til **ERSolutionTable**.
     
-        ![Visual studio-side.](./media/GER-AppSpecParms-LookupForm-Access2.PNG)
+        ![Visual Studio-side, utformingsruter.](./media/GER-AppSpecParms-LookupForm-Access2.PNG)
         
     2.  Opprett en enkel knapp, og overstyr **Klikket**-metoden, som vist i følgende eksempel.
     

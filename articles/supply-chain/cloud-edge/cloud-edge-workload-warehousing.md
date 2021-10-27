@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: c3f703e39e5e9d475dcb4f96dfb400a961ae2dcf
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 2c2d2604dc1948d067311a12d00422ef074ac61a
+ms.sourcegitcommit: 42bd701179e664947b6eafcd1804c83a5e64abcb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500434"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "7641167"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Skalaenheter for sky og kant for arbeidsbelastninger for lagerstyring
 
@@ -171,7 +171,8 @@ Følgende lagerstyringsfunksjonalitet støttes ikke for øyeblikket for arbeidsb
 - Behandling med negativ lagerbeholdning.
 - Lagerarbeidsbehandling med forsendelsesmerknader.
 - Lagerarbeidsbehandling med materialhåndtering/lagerautomatisering.
-- Bruk av avbildning av produktstandarddata (for eksempel i Warehouse Management-mobilappen).
+- Avbildninger av produktstandarddata (for eksempel i Warehouse Management-mobilappen).
+- Datadeling om produkter mellom firmaer.
 
 > [!WARNING]
 > Enkelte lagerfunksjoner blir ikke tilgjengelige for lagre som kjører arbeidsbelastninger for lagerstyring på en skalaenhet, og støttes heller ikke i senteret eller i arbeidsbelastningen for skalaenhet.
@@ -188,7 +189,6 @@ Følgende tabell viser hvilke utgående funksjoner som støttes, og hvor de stø
 |--------------------------------------------------------------|-----|------------------------------|
 | Behandling av kildedokument                                   | Ja | Ingen |
 | Last- og transportstyringsbehandling                | Ja, men bare lastplanleggingsprosessen. Behandling av transportstyring støttes ikke  | Ingen |
-| Mottak av varer i transitt og landingskostnad                                         | Ja | Ingen |
 | Frigi til lager                                         | Ja | Ingen |
 | Planlagt direkteoverføring                                        | Ingen  | Ingen |
 | Forsendelseskonsolidering                                       | Ja, når du bruker lastplanlegging | Ja |
@@ -224,6 +224,7 @@ Følgende tabell viser hvilke inngående funksjoner som støttes, og hvor de st�
 |------------------------------------------------------------------|-----|----------------------------------------------------------------------------------|
 | Behandling&nbsp;av&nbsp;kildedokument                             | Ja | Nei |
 | Last- og transportstyringsbehandling                    | Ja | Nei |
+| Mottak av varer i transitt og landingskostnad                       | Ja | Nei |
 | Bekreftelse av inngående forsendelse                                    | Ja | Nei |
 | Bestillingsfrigivelse til lager (lagerordrebehandling) | Ja | Nei |
 | Annullering av lagerordrelinjer<p>Merk at dette bare støttes når det ikke er foretatt noen registrering mot linjen</p> | Ja | Nei |

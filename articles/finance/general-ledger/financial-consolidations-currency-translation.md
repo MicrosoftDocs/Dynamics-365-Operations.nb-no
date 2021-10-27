@@ -1,8 +1,8 @@
 ---
 title: Oversikt over finanskonsolideringer og valutaomveksling
 description: Dette emnet beskriver finanskonsolideringer og valutaomveksling i Økonomimodul.
-author: aprilolson
-ms.date: 07/25/2019
+author: jiwo
+ms.date: 10/07/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 0df16db842c159b4db469139a0b5463a82e3fe07b4e23f8f7cf0272caaf23602
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c9ec8e6a371f08ad7eab0d133e1b71861943274e
+ms.sourcegitcommit: f76fecbc28c9a6048366e8ead70060b1f5d21a97
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748986"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7615941"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Oversikt over finanskonsolideringer og valutaomveksling
 
@@ -182,5 +182,17 @@ Her er noen av konsolideringsscenariene som Finansrapportering støtter:
 ## <a name="generating-consolidated-financial-statements"></a>Generere konsoliderte regnskapsoppgjør
 For informasjon om situasjoner der du kan generere konsoliderte regnskapsoppgjør, kan du se [Generere konsoliderte regnskapsoppgjør](./generating-consolidated-financial-statements.md).
 
+## <a name="performance-enhancement-for-large-consolidations"></a>Ytelsesforbedringer for store konsolideringer
+
+Miljøer som har mange økonomimodultransaksjoner, kan gå tregere enn det som er optimalt. Hvis du vil løse dette problemet, kan du definere parallell behandling av bunker som bruker et brukerdefinert antall datoer. For å sikre at løsningen fungerer som tiltenkt, legger du til et utvidelsespunkt i konsolideringen for å returnere en container med datoområder. Basisimplementeringen skal inneholde ett datoområde for start- og sluttdatoen for konsolideringen. Datoområder i basisimplementeringen valideres for å sikre at de ikke inneholder huller eller overlapping. Datointervallene brukes til å opprette parallelle partibunker for hvert firma.
+
+Du kan tilpasse antall datoområder for å oppfylle organisasjonens krav. Ved å tilpasse antall datoområder kan du forenkle testing og redusere virkningen av eksisterende kode, fordi det ikke er noen fordelingslogikk. De eneste nye testene som kreves, validerer opprettelsen av satsvise grupper, validerer datoområder og tester et delsett med datoområder for å bekrefte at partiene kan samles for den endelige satsvise oppgaven. 
+
+Denne funksjonen forbedrer konsolideringsprosessen i økonomimodulen når prosessen kjøres som en satsvis jobb. Forbedringen forbedrer ytelsen til konsolideringsprosessen i økonomimodulen ved å dele konsolideringen inn i flere oppgaver som kan behandles parallelt. I standardmetoden for å kjøre en konsolidering behandler hver oppgave åtte dagers aktivitet i økonomimodulen. Et utvidelsespunkt er imidlertid lagt til slik at du kan tilpasse antall oppgaver som opprettes.
+
+Før du kan bruke denne funksjonen, må den være aktivert i systemet. Administratorer kan bruke **Funksjonsbehandling**-arbeidsområdet til å kontrollere funksjonsstatusen og aktivere den hvis den kreves. Funksjonen vises på følgende måte:
+
+- **Modul:** Økonomimodul
+- **Funksjonsnavn:** Ytelsesforbedringer for store konsolideringer
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

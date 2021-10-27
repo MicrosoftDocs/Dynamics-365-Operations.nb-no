@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 59b2cc1dae5774322d47f76e1213f0e8c8a0b8b244a68c113e34484c1e59b209
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 395282eb267e7e356fca6087f99c6f193741ac9d
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767224"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605163"
 ---
 # <a name="allow-users-to-set-up-an-er-format-reference-inquiring-a-format-from-the-global-repository"></a>Tillate brukere å konfigurere en ER-formatreferanse som forespør et format fra det globale repositoriet
 
@@ -34,27 +34,27 @@ Når du konfigurerer [utenrikshandelparametere](../../../finance/localizations/e
 
 Hvis gjeldende Finans-forekomst ikke inneholder noen ER-formater relatert til Intrastat-forretningsprosess, vil dette oppslagsfeltet være tomt.
 
-[![Utenrikshandelsparametere-siden.](./media/ER-ExtLookup-Lookup1.gif)](./media/ER-ExtLookup-Lookup1.gif).
+[![Utenrikshandelsparametere-side, tomt rapportformattilordningsfelt.](./media/ER-ExtLookup-Lookup1.gif)](./media/ER-ExtLookup-Lookup1.gif)
 
 Hvis gjeldende Finans-forekomst inneholder ER-formater relatert til Intrastat-forretningsprosess, tilbyr dette oppslagsfeltet ER-formatene.
 
-[![Utenrikshandelsparametere-siden.](./media/ER-ExtLookup-Lookup2.png)](./media/ER-ExtLookup-Lookup2.png).
+[![Utenrikshandelsparametere-side, rapportformattilordningsfelt med alternativer.](./media/ER-ExtLookup-Lookup2.png)](./media/ER-ExtLookup-Lookup2.png)
 
 Dette oppslaget tilbyr bare ER-formater som allerede er importert til gjeldende Finans-forekomst. Hvis du vil [importere](./tasks/er-import-configuration-lifecycle-services.md) ER-løsninger til gjeldende Finans-forekomst, må du ha tillatelser for å kjøre den aktuelle funksjonen til ER-rammeverket som støtter [livssyklusen](general-electronic-reporting-manage-configuration-lifecycle.md) til ER-løsninger som inneholder ER-formater.
 
 Fra og med i Finans-versjonen 10.0.9 (utgitt april 2020) har brukergrensesnittet til ER-formatoppslaget som implementeres ved bruk av ER-rammeverks-API-et, utvidet. Du kan fortsatt velge de eksisterende ER-formatene, som **Velg formatkonfigurasjon**-hurtigfanen. I tillegg tilbyr det utvidede oppslaget det nye alternativet for å søke etter bestemte ER-formater i det globale repositoriet (GR). Alle ER-formatene i det globale repositoriet tilbys på **Importer fra global database**-hurtigfanen.
 
-[![Utenrikshandelsparametere-siden.](./media/ER-ExtLookup-Lookup3.png)](./media/ER-ExtLookup-Lookup3.png).
+[![Utenrikshandelsparametere-side, import fra Globalt repositorium-hurtigfane.](./media/ER-ExtLookup-Lookup3.png)](./media/ER-ExtLookup-Lookup3.png)
 
 Tilsvarende som for **Velg formatkonfigurasjon**-hurtigfanen viser **Importer fra globalt repositorium**-hurtigfanen bare ER-formatene som er aktuelle for forretningsprosessen som et ER-format er valgt for i dette oppslagsfeltet. I dette eksempelet er det genereringen av Intrastat-deklarasjon. ER-formatet gjelder for selskapet som brukeren for øyeblikket er logget på, avhengig av selskapets landskontekst.
 
 Når du velger et ER-format på **Import fra globalt repositorium**-hurtigfanen, importeres det valgte ER-formatets [konfigurasjon](general-electronic-reporting.md#Configuration) fra det globale repositoriet til gjeldende Finans-forekomst.
 
-[![Utenrikshandelsparametere-siden.](./media/ER-ExtLookup-FormatImport.png)](./media/ER-ExtLookup-FormatImport.png).
+[![Utenrikshandelsparametere-siden, merknad om behandlingsoperasjon.](./media/ER-ExtLookup-FormatImport.png)](./media/ER-ExtLookup-FormatImport.png)
 
 Hvis importen fullføres, lagres referansen til det importerte ER-formatet så i dette oppslagsfeltet. Når du åpner det globale repositoriet (GR) for første gang, må du følge koblingen til registrering for [Regulatory Configuration Service](https://aka.ms/rcs) (RCS), som brukes til å styre tilgangen til GR-lageret.
 
-[![Utenrikshandelsparametere-siden.](./media/ER-ExtLookup-RepoSignUp.png)](./media/ER-ExtLookup-RepoSignUp.png).
+[![Utenrikshandelsparametere-side, kobling til registrering for RCS.](./media/ER-ExtLookup-RepoSignUp.png)](./media/ER-ExtLookup-RepoSignUp.png)
 
 Som standard viser **Importer fra globalt repositorium**-hurtigfanen listen over ER-formater fra den midlertidige lagringsplassen, som opprettes automatisk basert på GR-innholdet for ytelsesforbedringer. Dette skjer når **Importer fra globalt repositorium**-hurtigfanen åpnes for første gang, noe som kan ta flere sekunder.
 

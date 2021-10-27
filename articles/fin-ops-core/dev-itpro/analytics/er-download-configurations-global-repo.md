@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 6923954e2d287a16425a9f823e8f8800503735ec0b3837cff764cf8d6e752039
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 32eb5206fadefbd024f2dd2af888d166c81b950f
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724423"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605337"
 ---
 # <a name="download-er-configurations-from-the-global-repository-of-configuration-service"></a>Last ned ER-konfigurasjoner fra det globale repositoriet for konfigurasjonstjenesten
 
@@ -63,7 +63,7 @@ Dette emnet forklarer hvordan du laster ned [elektroniske rapporteringskonfigura
     > [!NOTE]
     > **Importer**-knappen er ikke tilgjengelig for ER-konfigurasjonsversjoner som allerede finnes i den gjeldende Finance-forekomsten.
 
-    ![Konfigurasjonsrepositorium-side.](./media/er-download-configurations-global-repo-repository-content.png)
+    ![Side for konfigurasjonsrepositorium, Konfigurasjoner-hurtigfane.](./media/er-download-configurations-global-repo-repository-content.png)
 
 ## <a name="import-filtered-configurations"></a>Importere filtrerte konfigurasjoner
 
@@ -77,7 +77,7 @@ Dette emnet forklarer hvordan du laster ned [elektroniske rapporteringskonfigura
 4. I **Konfigurasjoner**-hurtigkategorien velger du **Importer** for å laste ned de filtrerte konfigurasjonene fra det globale repositoriet til den gjeldende forekomsten.
 5. I **Konfigurasjoner**-hurtigkategorien velger du **Nullstill filter** for å tømme de angitte utvalgsbetingelsene.
 
-    ![Konfigurasjonsrepositorium-side.](./media/er-download-configurations-global-repo-filtered-configurations.png)
+    ![Siden for konfigurasjonsrepositorium, Versjoner-hurtigfane, Importer-knapp.](./media/er-download-configurations-global-repo-filtered-configurations.png)
 
 > [!NOTE]
 > Avhengig av ER-innstillingene valideres konfigurasjonene når de er importert. Du kan få beskjed om eventuelle problemer som oppdages. Du må løse problemene før du kan bruke den importerte konfigurasjonsversjonen. Hvis du vil ha mer informasjon, se listen over relaterte ressurser for dette emnet.
