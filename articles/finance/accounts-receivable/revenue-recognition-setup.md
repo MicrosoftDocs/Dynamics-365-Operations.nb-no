@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: c395aabfc8705b4713cf1041b5644ac478d8c1a4c4c211334aea3572f1618b84
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b5ffd86d736cb7b6b5c270663c2b774e14556a6b
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759023"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7675184"
 ---
 # <a name="revenue-recognition-setup"></a>Inntektsføringsoppsett
 [!include [banner](../includes/banner.md)]
@@ -26,9 +26,9 @@ ms.locfileid: "6759023"
 Den nye modulen **Inntektsføring** har blitt lagt til, og den omfatter menyelementer for alle nødvendige oppsett. Dette emnet beskriver alternativene for oppsett og deres betydning.
 
 > [!NOTE]
-> Funksjonen Inntektsføring kan ikke aktiveres via Funksjonsbehandling. For øyeblikket må du bruke konfigurasjonsnøkler for å aktivere den.
-
-> Inntektsføring, inkludert buntfunksjonalitet, innhold som ikke støttes for bruk i Commerce-kanaler (e-handel, salgssted, telefonsenter). Varer som konfigureres med inntektsføring, bør ikke legges til i ordrer eller transaksjoner som er opprettet i Commerce-kanaler.
+> Funksjonen Inntektsføring er nå aktivert som standard via Funksjonsbehandling. Hvis organisasjonen ikke bruker denne funksjonen, kan du deaktivere den i arbeidsområdet **Funksjonsbehandling**.
+>
+> Inntektsføring, inkludert buntfunksjonalitet, innhold som ikke støttes i Commerce-kanaler (e-handel, salgssted og telefonsenter). Varer som konfigureres for inntektsføring, bør ikke legges til i ordrer eller transaksjoner som er opprettet i Commerce-kanaler.
 
 Modulen **Inntektsføring** har følgende alternativer for oppsett:
 
@@ -40,12 +40,16 @@ Modulen **Inntektsføring** har følgende alternativer for oppsett:
     - Varegrupper og frigitte produkter
     - Definere inntektsplan
     - Definere inntektspris
+    - Lageroppsett
 
-        - Posteringsprofiler
-        - Bunter
+        - Definere inntektsplan
+        - Definere inntektspris
 
-    - Buntkomponenter
-    - Buntvare
+    - Posteringsprofiler
+    - Bunter
+
+        - Buntkomponenter
+        - Buntvare
 
 - Prosjektoppsett
 
@@ -91,20 +95,27 @@ Angi beskrivende verdier i feltene **Inntektsplan** og **Beskrivelse**. Følgend
 - **Automatiske kontraktsbetingelser** – merk av i denne avmerkingsboksen hvis start- og slutt datoene for kontrakten skal angis automatisk. Disse datoene angis automatisk for frigitte produkter av inntektstypen **Støtte etter kontrakt**. Start datoen for kontrakten settes automatisk til salgsordrelinjens ønskede forsendelsesdato, og kontraktens sluttdato settes automatisk til startdatoen pluss antall måneder eller forekomster som er definert i oppsettet til inntektsplanen. Produktet på salgsordrelinjen er for eksempel for en garanti i ett år. Standard inntektsplan er **12M** (12 måneder), og det er merket av for **Automatiske kontraktsbetingelser** for denne inntektsplanen. Hvis salgsordrelinjen har en ønsket forsendelsesdato på 16. desember 2019, er startdatoen for standardkontrakten 16. desember 2019, og standardkontraktens sluttdato er 15. desember 2020.
 - **Føringsgrunnlag** – føringsgrunnlaget bestemmer hvordan inntektsprisen skal tildeles på tvers av forekomstene.
 
-    - **Månedlig etter dato** – beløpet blir tildelt basert på de faktiske dagene i hver måned.
+    - **Månedlig etter dager** – beløpet blir tildelt basert på de faktiske dagene i hver kalendermåned.
     - **Månedlig** – beløpet fordeles likt på tvers av antallet måneder som er definert i forekomstene.
     - **Forekomster** – beløpet tildeles likt på tvers av forekomstene, men kan inkludere en ekstra periode hvis du velger **Faktisk startdato** som føringens konvensjon.
+    - **Regnskapsperiode etter dager** – beløpet blir tildelt basert på de faktiske dagene i hver regnskapsperiode. 
 
-- **Føringskonvensjon** – føringskonvensjonen bestemmer standarddatoene som angis i inntektsplanen for fakturaen.
+    Resultatene i **Månedlig etter dager** og **Regnskapsperiode etter dager** vil være de samme når regnskapsperiodene følger kalendermåneder. Det eneste unntaket er når føringskonvensjonen er satt til **Slutten av måned/periode**, og feltene **Kontraktens startdato** og **Sluttdato** er tomme på en salgsordrelinje.
+
+- **Føringskonvensjon** – føringskonvensjonen bestemmer datoene som angis i inntektsplanen for fakturaen.
 
     - **Faktisk startdato** – planen blir opprettet ved hjelp av startdatoen for kontrakten (for \[PCS\]-varer som har støtte etter kontrakten) eller fakturadatoen (for viktige og uviktige varer).
-    - **1. i måned** – datoen på den første tidsplanlinjen er kontraktens startdato (eller fakturadato). Alle etterfølgende tidsplanlinjer opprettes imidlertid for den første i måneden.
+    - **1. dag i måned/periode** – datoen på den første tidsplanlinjen er kontraktens startdato (eller fakturadato). Alle etterfølgende tidsplanlinjer opprettes imidlertid for den første i måneden eller regnskapsperioden.
     - **Delt midt i måneden** – datoen på den første planleggingslinjen er avhengig av fakturadatoen. Hvis fakturaen er postert mellom den 1. og 15. i måneden, opprettes inntektsplanen ved hjelp av den første dagen i måneden. Hvis fakturaen er postert den 16. eller senere, opprettes inntektsplanen ved hjelp av den første dagen i neste måned.
-    - **1. neste måned** – datoen i tidsplanen er den første dagen i neste måned.
 
-Velg knappen **Detaljer for inntektsplan** for å vise de generelle periodene og prosentandelene som føres i hver periode. Som standard er verdien for **Føringsprosent** likt tildelt på tvers av antall perioder. Hvis føringsgrunnlaget er satt til **Månedlig** eller **Forekomster**, kan føringsprosenten endres. Når du endrer føringsprosenten, får du melding om at totalen ikke er lik 100 prosent. Hvis du mottar meldingen, kan du fortsette å redigere linjer. Den totale prosenten må imidlertid være lik 100 før du lukker siden.
+        **Delt midt i måneden** kan ikke velges hvis føringsgrunnlaget er satt til **Regnskapsperiode etter dager**.
 
-[![Detaljer for inntektsplan.](./media/revenue-recognition-revenue-schedule-details.png)](./media/revenue-recognition-revenue-schedule-details.png)
+    - **1. dag i neste måned/periode** – datoen som tidsplanen starter på er den første dagen i neste måned eller regnskapsperiode.
+    - **Slutten av måned/periode** – datoen på den første tidsplanlinjen er kontraktens startdato (eller fakturadato). Alle etterfølgende tidsplanlinjer opprettes imidlertid for den siste dagen i måneden eller regnskapsperioden. 
+
+Velg knappen **Detaljer for inntektsplan** for å vise de generelle periodene og prosentandelene som føres i hver periode. Som standard er verdien for **Føringsprosent** likt tildelt på tvers av antall perioder. Hvis føringsgrunnlaget er satt til **Månedlig**, kan føringsprosenten endres. Når du endrer føringsprosenten, får du melding om at totalen ikke er lik 100 prosent. Hvis du mottar denne meldingen, kan du fortsette å redigere linjer. Den totale prosenten må imidlertid være lik 100 før du lukker siden.
+
+[![Detaljer for inntektsplan.](./media/revenue-schedule-details-2nd-scrn.png)](./media/revenue-schedule-details-2nd-scrn.png)
 
 ## <a name="inventory-setup"></a>Lageroppsett
 
