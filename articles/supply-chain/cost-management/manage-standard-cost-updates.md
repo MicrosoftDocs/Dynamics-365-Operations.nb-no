@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 942b144c78176e9a00cdc12101e2948e8aa4685e
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 3485f0722b8b99d7dc2d6dab470fdcc465b1da3d
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579766"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678671"
 ---
 # <a name="manage-standard-cost-updates"></a>Administrere oppdateringer av standardkostnader
 
@@ -43,8 +43,6 @@ Følgende eksempel viser hvordan enversjons- og toversjonsmåten kan brukes til 
 Dette eksemplet brukte en ekstra kostnadsberegningsversjon til å håndtere oppdateringer gjennom hele 2020. Det er også mulig å bruke flere ekstra kostnadsberegningsversjoner, for eksempel en egen versjon for hvert sett med oppdateringer. Når mer enn én ekstra etterkalkulering brukes, må tilbakefallsprinsippet uttrykkes som de aktive kostprisene fordi de aktive kostprisene er spredt over flere etterkalkuleringsversjoner.
 
 ## <a name="financial-dimensions-for-the-standard-cost-revaluation"></a>Finansdimensjoner for revalueringen av standardkostnad
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Hvis du aktiverer en ny standardpris, revalueres vanligvis lagerbeholdningsverdien av transaksjoner med revaluering av standardkostnad. Finansdimensjonene for varen blir vanligvis deretter postert i transaksjonene. Hvis du imidlertid vil kontrollere om og hvordan finansdimensjonene posteres, bruker du [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å aktivere funksjonen kalt *Alternativer for å angi standard finansdimensjoner for revaluering av standardkostnad for lager*. Etter at du har konfigurert denne funksjonen, kan du gå til **Kostnadsstyring > Oppsett av policy for lagerregnskap > Parametere** og angi en av følgende verdier i rullegardinlisten **Opprinnelse til finansdimensjon**:
 

@@ -1,7 +1,7 @@
 ---
 title: Avskrivningseffekter av tilbakeføringer
 description: Denne artikkelen beskriver potensielle konsekvenser av å tilbakeføre en anleggsmiddeltransaksjon.
-author: ShylaThompson
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: roschlom
 ms.custom: 2961
 ms.assetid: 63a3ac92-c321-4379-a86a-b1b14915f340
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37f0412166404e6903819840debcdd0ab0630115dcdb68297e0072723adacb53
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9a8e5b1b7d468dbc37b295087815937fb49ad44f
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760668"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674556"
 ---
 # <a name="depreciation-effects-with-reversals"></a>Avskrivningseffekter av tilbakeføringer
 
@@ -30,14 +30,14 @@ Denne artikkelen beskriver potensielle konsekvenser av å tilbakeføre en anlegg
 
 Du kan tilbakeføre anleggsmiddeltransaksjoner, og transaksjoner som er tilknyttet et anleggsmiddel. Du kan også oppheve en tilbakeført transaksjon. 
 
-Du kan tilbakeføre eller oppheve en transaksjon som ikke har den nyeste transaksjonen postert til tablået for anleggsmiddelet. Først må du bestemme om det er postert avskrivningstransaksjoner etter transaksjonen du tilbakefører. Dette er fordi avskrivning ikke omberegnes når du tilbakefører en transaksjon. Derfor er avskrivning ofte overvurdert eller undervurdert etter tilbakeføringen, som vist i eksemplene. 
+Du kan tilbakeføre eller oppheve en transaksjon som ikke har den nyeste transaksjonen postert til tablået for anleggsmiddelet. Først bestemmer du om det er postert avskrivningstransaksjoner etter transaksjonen du tilbakefører. Dette trinnet er nødvendig fordi avskrivning ikke omberegnes når du tilbakefører en transaksjon. Derfor er avskrivning ofte overvurdert eller undervurdert etter tilbakeføringen, som vist i eksemplene. 
 
 For å sikre at avskrivningen er riktig når du tilbakefører en transaksjon, må du ikke gå videre med tilbakeføringen hvis du får en melding som sier at avskrivningen ikke blir omberegnet. Da må du i stedet tilbakeføre den avskrivningstransaksjonen som ble postert etter den transaksjonen du forsøkte å tilbakeføre, og deretter gå videre med tilbakeføringen. Du vil ikke få noen advarsel om avskrivningsomberegning, og du kan gå videre med tilbakeføringen. 
 
 Eksemplene nedenfor viser beregningene som skjer hvis du fortsetter etter meldingen uten å tilbakeføre avskrivningstransaksjonene først.
 
 ## <a name="example-1-depreciation-is-overstated"></a> Eksempel 1: Avskrivning overvurdert
-Et anleggsmiddelet er definert med 5 års levetid og lineær avskrivning (60 avskrivningsperioder). I dette eksemplet er avskrivningen overvurdert.
+Et anleggsmiddelet er definert med fem års levetid og lineær avskrivning (60 avskrivningsperioder). I dette eksemplet er avskrivningen overvurdert.
 #### <a name="asset-transaction-history"></a>Transaksjonshistorikk for anleggsmiddel
 
 | Dato       | Transaksjonstype                                                          | Beløp                                    |
@@ -61,7 +61,7 @@ Et anleggsmiddelet er definert med 5 års levetid og lineær avskrivning (60 avs
 Avskrivningen er overvurdert med 16,95 (1 000 - 983,05).
 
 ## <a name="example-2-depreciation-is-understated"></a> Eksempel 2: Avskrivning undervurdert
-Et anleggsmiddelet er definert med 5 års levetid og lineær avskrivning (60 avskrivningsperioder). I dette eksemplet er avskrivningen undervurdert.
+Et anleggsmiddelet er definert med fem års levetid og lineær avskrivning (60 avskrivningsperioder). I dette eksemplet er avskrivningen undervurdert.
 #### <a name="asset-transaction-history"></a>Transaksjonshistorikk for anleggsmiddel
 
 | Dato       | transaksjonstype                                                          | Beløp                                      |

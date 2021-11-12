@@ -2,7 +2,7 @@
 title: Rutenettfunksjoner
 description: Dette emnet beskriver flere kraftfulle funksjoner i rutenettkontrollen. Du må aktivere den nye rutenettfunksjonen for å kunne få tilgang til disse funksjonene.
 author: jasongre
-ms.date: 09/08/2021
+ms.date: 10/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,16 +13,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 9aa79e6e61f3a53073dffa5f3030892cc921d246
-ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
+ms.openlocfilehash: a21a41399b5884fda9cce214f99851ffa93bbc43
+ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7483860"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "7700143"
 ---
 # <a name="grid-capabilities"></a>Rutenettfunksjoner
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 
 Den nye rutenettkontrollen byr på flere nyttige og kraftfulle funksjoner du kan bruke til å forbedre brukerproduktivitet, konstruere mer interessante visninger av dataene og få meningsfull innsikt i dataene. Denne artikkelen dekker følgende funksjoner: 
@@ -32,6 +33,8 @@ Den nye rutenettkontrollen byr på flere nyttige og kraftfulle funksjoner du kan
 -  Evaluering av matematiske uttrykk 
 -  Grupperetabelldata (aktivert separat ved hjelp av funksjonen **Gruppering i rutenett**)
 -  Låse kolonner
+-  Beste tilpassing av kolonnebredde
+-  Kolonnene som kan strekkes
 
 ## <a name="calculating-totals"></a>Beregner totaler
 I Finance and Operations-apper har brukere muligheten til å se totalverdier nederst i numeriske kolonner i rutenett. Disse totalverdiene vises i en bunntekstinndeling nederst i rutenettet. 
@@ -43,7 +46,7 @@ Det er et bunntekstområde nederst i alle tabellrutenett i Finance and Operation
 - Hovedsummer nederst i konfigurerte numeriske kolonner
 - Antallet rader i datasettet 
 
-Denne bunnteksten er skjult som standard, men du kan aktivere den. Hvis du vil vise bunnteksten for et rutenett, høyreklikker du på en kolonneoverskrift i rutenettet og velger **Vis bunntekst**-alternativet. Etter at du har aktivert bunnteksten for et bestemt rutenett, gjelder denne innstillingen til brukeren velger å skjule bunnteksten. Hvis du vil skjule bunnteksten, høyreklikker du på en kolonneoverskrift og velger **Skjul bunntekst**.  (Handlingen **Vis bunntekst / Skjul bunntekst** blir kanskje flyttet til et annet sted i en fremtidig oppdatering.) 
+Denne bunnteksten er skjult som standard, men du kan aktivere den. Hvis du vil vise bunnteksten for et rutenett, velger du **Alternativer for rutenett**-knappen i rutenettoverskriften og velger deretter **Vis bunntekst**-alternativet. Etter at du har aktivert bunnteksten for et bestemt rutenett, gjelder denne innstillingen til brukeren velger å skjule bunnteksten. Hvis du vil skjule bunnteksten, velger du **Skjul bunntekst** på menyen **Rutenettalternativer**.  
 
 ### <a name="specifying-columns-with-totals"></a>Angi kolonner med totalverdier
 For øyeblikket viser ingen kolonner totaler som standard. I stedet betraktes dette som en engangsoppsettsaktivitet, som tilsvarer justering av bredden på kolonnene i rutenett. Når du har angitt at du vil se totalverdier for en kolonne, vil denne innstillingen bli husket neste gang du besøker siden.  
@@ -82,7 +85,7 @@ For å støtte denne nye virkemåten, er det lagt til en ny kolonne for radstatu
 Når brukere angir data før serveren behandles, kan de forvente seg noen reduksjoner i dataregistreringsopplevelsen, for eksempel mangel på oppslag, validering på kontrollnivå og oppføring av standardverdier. Brukere som trenger en rullegardinliste for å finne en verdi, oppfordres til å vente til serveren blir oppdatert til gjeldende rad. Kontrollnivå-validering og registrering av standardverdier vil også forekomme når serveren behandler denne raden.   
 
 ### <a name="pasting-from-excel"></a>Lime inn fra Excel
-Brukere har alltid hatt muligheten til å eksportere data fra rutenett i Finance and Operations-apper til Excel ved hjelp av funksjonen **Eksporter til Excel**. Muligheten til å angi data før systemet gjør imidlertid at det nye rutenettet kan støtte kopiering av tabeller fra Excel og lime dem direkte inn i rutenett i Finance and Operations-apper. Rutenettcellen som innlimingen startes fra, bestemmer hvor den kopierte tabellen begynner å limes inn. Innholdet i rutenettet overskrives av innholdet i den kopierte tabellen, med unntak av to tilfeller:
+Brukere har alltid hatt muligheten til å eksportere data fra rutenett i Finance and Operations-apper til Microsoft Excel ved hjelp av funksjonen **Eksporter til Excel**. Muligheten til å angi data før systemet gjør imidlertid at det nye rutenettet kan støtte kopiering av tabeller fra Excel og lime dem direkte inn i rutenett i Finance and Operations-apper. Rutenettcellen som innlimingen startes fra, bestemmer hvor den kopierte tabellen begynner å limes inn. Innholdet i rutenettet overskrives av innholdet i den kopierte tabellen, med unntak av to tilfeller:
 
 - Hvis antallet kolonner i den kopierte tabellen overskrider antall kolonner som beholdes i rutenettet, med start fra innlimingen, varsles brukeren om at de ekstra kolonnene er ignorert. 
 - Hvis antall rader i den kopierte tabellen overskrider antall rader i rutenettet, med start fra innlimingen, blir de eksisterende cellene overskrevet av det innlimte innholdet, og eventuelle ekstra rader fra den kopierte tabellen blir satt inn som nye rader nederst i rutenettet. 
@@ -125,6 +128,9 @@ Du låser en kolonne ved å høyreklikke på kolonneoverskriften og deretter vel
 Du låser opp en kolonne ved å høyreklikke på den låste kolonneoverskriften og deretter velge **Lås opp kolonne**. 
 
 Merk at kolonnen for radvalg og radstatus i det nye rutenettet alltid låses som de to første kolonnene. Når disse kolonnene tas med i et rutenett, er de derfor alltid synlige for brukere, uavhengig av den vannrette rulleplasseringen i rutenettet. Du kan ikke endre rekkefølgen på disse to kolonnene.
+
+## <a name="autofit-column-width"></a>Beste tilpassing av kolonnebredde
+I likhet med Excel kan brukere automatisk tvinge en kolonne til å endre størrelsen på basert på innholdet som vises i den kolonnen. Dobbeltklikk størrelseshåndtakene i kolonnen for å gjøre dette, eller ved å legge fokus i kolonneoverskriften og trykke **A** (for automatisk tilpassing). Denne funksjonen er tilgjengelig fra og med versjon 10.0.23.  
 
 ## <a name="frequently-asked-questions"></a>Vanlige spørsmål
 ### <a name="how-do-i-enable-the-new-grid-control-in-my-environment"></a>Hvordan aktiverer jeg den nye rutenettkontrollen i miljøet? 

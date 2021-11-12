@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: d77e1f3b5f8d558643b078dbe8e829e62f85120e4931d60224116a33f171fab3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c630580dd75a86085746b36726e9ee55a9db2af5
+ms.sourcegitcommit: 6bf9e18989e6d77497a9dda1c362f324b3c2fbf2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721013"
+ms.lasthandoff: 10/27/2021
+ms.locfileid: "7713754"
 ---
 # <a name="set-up-a-b2b-e-commerce-site"></a>Definere et e-handelsområde for B2B
 
@@ -37,7 +37,7 @@ E-handelsområder for bedrift-til-bedrift (B2B) har noen nøkkelfunksjoner som o
 
 Du kan få tilgang til innstillinger på områdenivå i områdekonfigurator ved **Områdeinnstillinger \> Tillegg**. Følgende to innstillinger på områdenivå gjelder for B2B-scenarier:
 
-- **Aktiver kundekontobetalinger** – Ved hjelp av kundekontoer kan brukere betale for ordrer. De tilgjengelige verdiene er **Aktivert for B2B-kunder**, **Aktivert B2C-kunder**, **Aktivert for alle kunder** og **Deaktivert for alle kunder**. Hvis B2B-området støtter kundekontoer, bør du velge **Aktivert for B2C-kunder**.
+- **Aktiver kundekontobetalinger** – Ved hjelp av kundekontoer kan brukere betale for ordrer. De tilgjengelige verdiene er **Aktivert for B2B-kunder**, **Aktivert B2C-kunder**, **Aktivert for alle kunder** og **Deaktivert for alle kunder**. Hvis B2B-området støtter kundekontoer, bør du velge **Aktivert for B2B-kunder**.
 - **Aktiver antallsgrenser for ordre** – Med denne egenskapen kan du angi grenser for antall varer som kan bestilles for hvert produkt eller hver kategori. De tilgjengelige verdiene er **Aktivert for B2B-kunder**, **Aktivert B2C-kunder**, **Aktivert for alle kunder** og **Deaktivert for alle kunder**.
 
 > [!NOTE]

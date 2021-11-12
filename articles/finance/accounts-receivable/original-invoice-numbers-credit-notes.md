@@ -2,7 +2,7 @@
 title: Referanser til opprinnelige fakturaer i kreditnotaer
 description: Dette emnet beskriver hvordan du definerer og skriver ut de opprinnelige fakturanumrene i tilknyttede kreditnotaer.
 author: ilkond
-ms.date: 01/12/2021
+ms.date: 10/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-03-19
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 6a5ac50c996f92f5cfa569ad00fa4b911827fd4ec8bddb2442bbd6ac67d1f33f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7147c5bea5273f385b004effe0844b5f4541a881
+ms.sourcegitcommit: 2113678369f47944f8725ca656f461fa159f87f6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723853"
+ms.lasthandoff: 10/27/2021
+ms.locfileid: "7700361"
 ---
 # <a name="references-to-original-invoices-in-credit-notes"></a>Referanser til opprinnelige fakturaer i kreditnotaer
 
@@ -95,5 +95,10 @@ Når du skriver ut kreditnotaer for fritekst, kunde og prosjekt, inneholder de r
 > [!NOTE]
 > Pass på at de utskriftsbare formatene til dokumentene er riktig konfigurert, under forutsetning av at referanser til opprinnelige fakturaer blir skrevet ut.
 
+## <a name="references-to-original-invoices-in-debit-notes"></a>Referanser til opprinnelige fakturaer i debetnotaer
+
+Som standard kan referanser til opprinnelige fakturaer angis for kreditnotaer. Du kan for eksempel angi referanser når du foretar negative (synkende) rettelser av opprinnelige fakturaer.
+
+Hvis du vil angi referanser når du foretar positive (økende) rettelser av opprinnelige fakturaer, må du aktivere funksjonen **Referanser til opprinnelige fakturaer i debetnotaer** i arbeidsområdet for **Funksjonsbehandling**.  
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

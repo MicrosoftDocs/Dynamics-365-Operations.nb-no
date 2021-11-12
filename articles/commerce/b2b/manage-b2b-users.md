@@ -2,7 +2,7 @@
 title: Administrere forretningspartnerbrukere på B2B-e-handelssider
 description: Dette emnet beskriver hvordan administratorer kan legge til, redigere og slette forretningspartnere på forretnings-til-bedrift-e-handelsområder (B2B).
 author: josaw1
-ms.date: 07/22/2021
+ms.date: 10/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: f6cc1d5dfeb48fd00216fc1908e9e8be24f07131b3e5f1eaeefb10396efbebc3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 090dc9af49840e559b4c1ad1500718fde9764aa2
+ms.sourcegitcommit: 6bf9e18989e6d77497a9dda1c362f324b3c2fbf2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734949"
+ms.lasthandoff: 10/27/2021
+ms.locfileid: "7713699"
 ---
 # <a name="manage-business-partner-users-on-b2b-e-commerce-websites"></a>Administrere forretningspartnerbrukere på B2B-e-handelssider
 
@@ -69,6 +69,18 @@ Følg denne fremgangsmåten for å godkjenne og definere en forretningspartnerad
 
 Når forespørselen er godkjent, og kunde- og kundehierarkipostene er synkronisert med kanaldatabasen, kan anmoderen logge seg på e-handelsstedet for B2B ved hjelp av e-postadressen som ble oppgitt da forespørselen ble sendt. Brukerne kan bruke registreringsflyten til å definere passordet for kontoen. Hvis du vil aktivere identitetsleverandør (Azure AD B2C)-posten som skal knyttes til B2B-kundeposten som ble opprettet ved registrering eller pålogging, følger du instruksjonene i [Aktiver automatisk kobling av identitetsposter til kundekontoer](../identity-record-linking.md).
 
+## <a name="notify-b2b-prospects-when-they-are-approved-or-rejected"></a>Varsle B2B-kundeemner når de godkjennes eller avvises
+
+Når du godkjenner eller avviser en forespørsel fra B2B-kundeemnet, kan du automatisk sende et e-postvarsel til kundeemnet. 
+
+Følg denne fremgangsmåten i Commerce Headquarters for hendelser av varslingstypen B2B-kundeemne godkjent eller B2B-kundeemne avvist.
+
+1. Opprett e-postmaler for e-postmeldinger som skal sendes til kundeemner når varslingstypen godkjent B2B-kundeemne eller avvist B2B-kundeemne utløses.
+
+    Hvis du vil ha informasjon om plassholdere som varslingstypen godkjent B2B-kundeemne og avvist B2B-kundeemne støtter, kan du se [Varslingstyper](../email-templates-transactions.md#notification-types). Se [Opprett en e-postmal](../email-templates-transactions.md#create-an-email-template) hvis du vil ha mer informasjon om hvordan du oppretter e-postmaler. 
+
+1. Legg til varslingstypen godkjent B2B-kundeemne og avvist B2B-kundeemnet i e-postvarslingsprofilen, og tilordne dem til e-postmalene du opprettet. Hvis du vil ha mer informasjon varslingsprofiler, kan du se [Definere en e-postvarslingsprofil](../email-notification-profiles.md). 
+
 ## <a name="onboard-additional-business-partner-users"></a>Pålaste flere forretningspartnerbrukere
 
 Forretningspartneradministratorbrukeren kan sende flere forretningspartnerbrukere til webområdet for B2B-e-handel etter behov.
@@ -112,7 +124,7 @@ Følg disse trinnene for å pålaste forretningspartnere og brukere direkte i Co
 
 1. Opprett en **Type Organisasjon**-kundepost for forretningspartnerorganisasjonen.
 1. Opprett **Type Person**-kundeposter for forretningspartnerbrukere. Kontroller at det er angitt en primær e-postadresse for hver kunde.
-1. For hver **Type Person**-kundepost som må angis som administratorbruker i forretningspartnerorganisasjonen, angir du alternativet **B2B-administrator** til **Ja** i hurtigkategorien **Detaljhandel**.
+1. For hver **Type Person**-kundepost som må angis som administratorbruker i forretningspartnerorganisasjonen, angir du alternativet **B2B-administrator** til **Ja** i hurtigfanen **Detaljhandel**.
 1. Opprett en ID for kundehierarki. Angi et navn i **Navn**-feltet.
 1. I **Organisasjon**-feltet angir du forretningspartnerorganisasjonsbrukeren.
 1. Velg **Legg til**, og velg deretter en kunde i feltet **Navn**.

@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: mafoge
 ms.search.validFrom: 2021-02-09
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e20367f4261d0112855f36c69c25cd732c78be7bb23d7c6333aea84db437d735
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 51c530fd0043a4ec5a82660af72c001be25b7e62
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769425"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647491"
 ---
 # <a name="mobile-device-user-settings"></a>Brukinnstillinger for mobilenhet
 
@@ -54,7 +54,7 @@ Du kan også definere en innstillingsprofil som gjelder for alle enhetsmerker, e
 
 Følg denne fremgangsmåten for å opprette og administrere brukerinnstillinger for mobilenhetene.
 
-1. Gå til **Lagerstyring \> Mobil enhet \> Brukerinnstillinger for mobil enhet**.
+1. Gå til **Warehouse management \> Oppsett \> Mobil enhet \> Brukerinnstillinger for mobil enhet**.
 1. Velg en eksisterende brukerinnstillingerprofil i listeruten for å åpne posten. Du kan også velge **Ny** i handlingsruten for å opprette en ny profil.
 
     Hver profil i listeruten kalles for å angi merket, modellen og/eller bruker-IDen som profilen gjelder for. Mer generelle profiler har verdien *Alle* for noen av eller alle disse egenskapene.
@@ -83,7 +83,7 @@ Bruk siden **Mobilenhetsmerker** til å vise, opprette og administrere enhetsmer
 
 Følg denne fremgangsmåten for å opprette og administrere mobilenhetsmerker og -modeller.
 
-1. Gå til **Lagerstyring \> Mobilenhet \> Mobilenhetsmerker**.
+1. Gå til **Warehouse management \> Oppsett \> Mobilenhet \> Mobilenhetsmerker**.
 1. I listeruten velger du et mobilenehtsmerke for å åpne dets post. Du kan også velge **Nytt** i handlingsruten for å opprette et nytt merke.
 1. I hodedelen av posten for den nye eller valgte enhetsmerke angir du følgende felt:
 

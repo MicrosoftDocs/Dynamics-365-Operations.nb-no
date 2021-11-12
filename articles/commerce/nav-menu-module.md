@@ -2,7 +2,7 @@
 title: Navigasjonsmenymodul
 description: Dette emnet dekker navigasjonsmenymoduler og beskriver hvordan du legger dem til områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 01/28/2021
+ms.date: 10/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 486f20c26f97c236dfde2cbaedd8df434fe762947a6caa1c7cc03e4d244f4d47
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5379aa4496c1c448d147bb260689ebe38aaf903f
+ms.sourcegitcommit: 6bf9e18989e6d77497a9dda1c362f324b3c2fbf2
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761592"
+ms.lasthandoff: 10/27/2021
+ms.locfileid: "7713858"
 ---
 # <a name="navigation-menu-module"></a>Navigasjonsmenymodul
 
@@ -41,8 +41,8 @@ Følgende illustrasjon viser et eksempel på en navigasjonsmeny for området Fab
 |---------------------------|-----------------------|-------------|
 | Kilde                  | **Detaljhandel**, **Manuell redigering**, **Detaljhandel og manuell redigering** | Verdien for **Detaljhandel** gjør at kanalnavigasjonshierarkiet fra Commerce-hovedkontoret vises på navigasjonsmenyen. Veridn for **Manuell redigering** tillater at statiske menyelementer blir kuratert. Verdien for **Detaljhandel og manuell redigering** tilbyr en kombinasjon av begge. |
 | Vise kategoribilder | **Sann** eller **Usann**    | Når denne egenskapen er aktivert, vises kategoribilder på navigasjonsmenyen, som definert i Commerce Headquarters for hver kategori. Lagt til i Commerce-versjon 10.0.14. |
-| Vis kampanjer | **Sann** eller **Usann** | Når denne egenskapen er aktivert, kan kampanjer konfigureres ved hjelp av bilder, koblinger og tekst. Denne egenskapen ble lagt til i Commerce versjon 10.0.17-versjonen. |
-| Legge til kampanjer | Tekst, bilde eller kobling | Når egenskapen **Vis kampanjer** er aktivert, kan du legge til tekst, et bilde eller en kobling som kampanjeinnhold på navigasjonsmenyen. |
+| Vis kampanjebilder | **Sann** eller **Usann** | Når denne egenskapen er aktivert, kan kampanjer konfigureres ved hjelp av bilder, koblinger og tekst. Denne egenskapen ble lagt til i Commerce versjon 10.0.17-versjonen. |
+|Legge til kampanjeinnhold for kategori | Tekst, bilde eller kobling | Når egenskapen **Vis kampanjebilder** er aktivert, kan du legge til tekst, et bilde eller en kobling som kampanjeinnhold på navigasjonsmenyen. |
 | Aktiver navigasjonsmeny med flere nivåer | **Sann** eller **Usann** | Når denne egenskapen er aktivert, kan navigasjonsmenyen vise flere nivåer i navigasjonshierarkiet. Denne funksjonen er tilgjengelig i Commerce versjon 10.0.15-versjonen. |
 | Antall nivåer | heltall | Denne egenskapen definerer antall nivåer som skal vises hvis egenskapen **Aktiver navigasjonsmeny med flere nivåer** er satt til **sann**. |
 | Statisk menyelement| Matrise med verdier| Statiske menyelementer som knytter et menyelementnavn til en kobling til en statisk områdeside. Du kan opprette menyelementer under andre menyelementer. Som standard vises statiske menyer på rotnivå, og de blir lagt ved kanalnavigasjonshierarkiet hvis det finnes. |

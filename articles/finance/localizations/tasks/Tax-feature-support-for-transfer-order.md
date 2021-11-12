@@ -2,7 +2,7 @@
 title: Støtte for avgiftsfunksjon for overføringsordrer
 description: Dette emnet forklarer den nye avgiftsfunksjonsstøtten for overføringsordrer ved å bruke avgiftsberegningstjenesten.
 author: Kai-Cloud
-ms.date: 09/15/2021
+ms.date: 10/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 01bf7c251fe57072f042c9187b9f5b6b6687ab0f
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 2f68a3d7ed4384fe5a97f1e59903e3191df6b741
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500082"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647719"
 ---
 # <a name="tax-feature-support-for-transfer-orders"></a>Støtte for avgiftsfunksjon for overføringsordrer
 
@@ -31,7 +31,7 @@ Dette emnet gir informasjon om beregning av avgift og posteringsintegrering i ov
 Hvis du vil konfigurere og bruke denne funksjonaliteten, må du gå gjennom tre hovedtrinn:
 
 1. **RCS-oppsett:** I Regulatory Configuration Service setter du opp avgiftsfunksjonen, avgiftskoder og relevans for avgiftskoder for å bestemme avgiftskoden i overføringsordrer.
-2. **Finance-oppsett:** I Microsoft Dynamics 365 Finance aktiverer du funksjonen **Avgift i overføringsordre**, setter opp avgiftstjenesteparametere for beholdningen og setter opp kjerneavgiftsparametere.
+2. **Dynamics 365 Finance oppsett:** I Finance aktiverer du funksjonen **Avgift i overføringsordre**, setter opp parametere for avgiftsberegningstjeneste for lager, og setter opp kjerneavgiftsparametere.
 3. **Beholdningsoppsett:** Definer beholdningskonfigurasjonen for overføringsordretransaksjoner.
 
 ## <a name="set-up-rcs-for-tax-and-transfer-order-transactions"></a>Konfigurer RCS for avgifts- og overføringsordretransaksjoner
@@ -39,8 +39,6 @@ Hvis du vil konfigurere og bruke denne funksjonaliteten, må du gå gjennom tre 
 Følg denne fremgangsmåten for å definere avgiften som er involvert i en overføringsordre. I eksemplet som vises her, er overføringsordren fra Nederland til Belgia.
 
 1. På siden **Avgiftsfunksjoner**, på **Versjoner**-fanen velger du utkastfunksjonsversjonen, og deretter velger du **Rediger**.
-
-    ![Valg av Rediger.](../media/tax-feature-support-01.png)
 
 2. På siden **Oppsett av avgiftsfunksjoner**, på fanen **Avgiftskoder**, velger du **Legg til** for å opprette nye avgiftskoder. For dette eksemplet opprettes det tre avgiftskoder: **NL-Exempt**, **BE-RC-21** og **BE-RC+21**.
 
@@ -51,9 +49,8 @@ Følg denne fremgangsmåten for å definere avgiften som er involvert i en overf
         2. Velg **Etter nettobeløp** i feltet **Avgiftskomponent**.
         3. Velg **Lagre**.
         4. Velg **Legg til** i **Sats**-tabellen.
-        5. Bytt **Er Fritak** til **Ja** i **Generelt**-delen.
-
-           ![Avgiftskoden NL-Exempt.](../media/tax-feature-support-02.png)
+        5. Sett **Er Fritak** til **Ja** i **Generelt**-delen.
+        6. I **Fritakskoder**-feltet skriver du inn **EU**.
 
     - Når en overføringsordre mottas ved et lager i Belgia, brukes mekanismen for snudd avregning ved hjelp av avgiftskodene **BE-RC-21** og **BE-RC+21**.
         
@@ -63,10 +60,8 @@ Følg denne fremgangsmåten for å definere avgiften som er involvert i en overf
         3. Velg **Lagre**.
         4. Velg **Legg til** i **Sats**-tabellen.
         5. Angi **-21** i **Avgiftssats**-feltet.
-        6. Bytt **Er Snudd avregning** til **Ja** i **Generelt**-delen.
+        6. Sett **Er Snudd avregning** til **Ja** i **Generelt**-delen.
         7. Velg **Lagre**.
-
-           ![BE-RC-21-avgiftskoden for snudd avregning.](../media/tax-feature-support-03.png)
         
         Opprett avgiftskoden **BE-RC+21**.
         1. Velg **Legg til**, angi **BE-RC-21** i feltet **Mva-kode**.
@@ -76,16 +71,26 @@ Følg denne fremgangsmåten for å definere avgiften som er involvert i en overf
         5. Angi **21** i **Avgiftssats**-feltet.
         6. Velg **Lagre**.
 
-           ![BE-RC+21-avgiftskoden for snudd avregning.](../media/tax-feature-support-04.png)
-
-3. Definer relevansen for avgiftskodene.
+3. Definer mva-gruppen.
+    1. Velg **Administrer kolonner**, og velg deretter linjefeltet **Mva-gruppe**.
+    2. Velg **->**, og velg deretter **OK**.
+    3. Velg **Legg til** for å legge til en mva-gruppe.
+    4. I **Mva-gruppe**-kolonnen angir du **AR-EU**, og deretter velger du **NL-Exempt**-avgiftskoden.
+    5. Velg **Legg til** for å legge til en mva-gruppe.
+    6. I **Mva-gruppe**-kolonnen angir du **RC-VAT**, og deretter velger du avgiftskodene **BE-RC-21** og **BE-RC+21**.
+4. Definer vareavgiftsgruppen.
+    1. Velg **Administrer kolonner**, og velg deretter linjefeltet **Vareavgiftsgruppe**.
+    2. Velg **->**, og velg deretter **OK**.
+    3. Velg **Legg til** for å legge til en vareavgiftsgruppe.
+    4. Angi **FULL** i kolonnen **Vareavgiftsgruppe**. Velg avgiftskodene **BE-RC-21**, **BE-RC+21** og **NL-Exempt**.
+5. Definer relevansen for avgiftsgruppen.
 
     1. Velg **Administrer kolonner**, og velg deretter kolonner som skal brukes til å bygge opp relevanstabellen.
 
         > [!NOTE]
         > Legg til kolonnene **Forretningsprosess** og **Avgiftsretninger** i tabellen. Begge kolonnene er vesentlige for funksjonaliteten for avgift i overføringsordrer.
 
-    2. Legg til relevansregler. Ikke la feltene **Avgiftskoder**, **Avgiftsgruppe** og **Vareavgiftsgruppe** være tomme.
+    2. Legg til relevansregler. Ikke la feltet **Avgiftsgruppe** stå tomt.
         
         Legg til en ny regel for forsendelse av overføringsordren.
         1. Velg **Legg til** i **Relevansregler**-tabellen.
@@ -93,8 +98,7 @@ Følg denne fremgangsmåten for å definere avgiften som er involvert i en overf
         3. I feltet **Send fra land/område** angir du **NLD**.
         4. I feltet **Send til land/område** angir du **BEL**.
         5. I feltet **Avgiftsretning** velger du **Utgang** for å gjøre regelen aktuell for overføringsordreforsendelsen.
-        6. I **Avgiftskoder**-feltet velger du **NL-Exempt**.
-        7. I **Avgiftsgruppe**-feltet og i **Vareavgiftsgruppe** angir du den relatert mva-gruppen og vareavgiftsgruppen som er definert i Finance-systemet ditt.
+        6. I **Avgiftsgruppe**-feltet velger du **AR-EU**.
         
         Legg til en annen regel for mottak av overføringsordren.
         
@@ -103,14 +107,19 @@ Følg denne fremgangsmåten for å definere avgiften som er involvert i en overf
         3. I feltet **Send fra land/område** angir du **NLD**.
         4. I feltet **Send til land/område** angir du **BEL**.
         5. I feltet **Avgiftsretning** velger du **Innkommende** for å gjøre regelen aktuell for overføringsordremottaket.
-        6. I **Avgiftskoder**-feltet velger du **BE-RC+21** og **BE-RC-21**.
-        7. I **Avgiftsgruppe**-feltet og i **Vareavgiftsgruppe** angir du den relatert mva-gruppen og vareavgiftsgruppen som er definert i Finance-systemet ditt.
+        6. I **Avgiftsgruppe**-feltet velger du **RC-VAT**.
 
-           ![Relevansregler.](../media/image5.png)
+6. Definer relevansen for vareavgiftsgruppen.
 
-4. Fullfør og publiser den nye avgiftsfunksjonsversjonen.
+    1. Velg **Administrer kolonner**, og velg deretter kolonner som skal brukes til å bygge opp relevanstabellen.
+    2. Legg til relevansregler. Ikke la feltet **Vareavgiftsgruppe** stå tomt.
+        
+        Legg til en ny regel for forsendelse og mottak av overføringsordren.
+        1. Velg **Legg til** på siden **Relevansregler**.
+        2. I feltet **Forretningsprosess** velger du **Beholdning** for å gjøre regelen aktuall for overføringsordren.
+        3. I **Vareavgiftsgruppe**-feltet velger du **FULL**.
+7. Fullfør og publiser den nye avgiftsfunksjonsversjonen.
 
-    [![Endring av statusen for den nye versjonen.](../media/image6.png)](../media/image6.png)
 
 ## <a name="set-up-finance-for-transfer-order-transactions"></a>Konfigurer Finance for avgiftsordretransaksjoner
 
@@ -120,28 +129,26 @@ Følg disse trinnene for å aktivere og konfigurere avgifter for overføringsord
 2. I listen finner du og velger funksjonen **Avgift i overføringsordre**, og deretter velger du **Aktiver nå** for å aktivere den.
 
     > [!IMPORTANT]
-    > Funksjonen **Avgift i overføringsordre** er fullstendig avhengig av avgiftstjenesten. Derfor kan den bare aktiveres etter at du har installert avgiftstjenesten.
+    > Funksjonen **Avgift i overføringsordre** er fullstendig avhengig av avgiftsberegningstjenesten. Derfor kan den bare aktiveres etter at du har installert avgiftsberegningstjenesten.
 
     ![Funksjonen Avgift i overføringsordre.](../media/image7.png)
 
-3. Aktiver avgiftstjenesten, og velg forretningsprosessen **Beholdning**.
+3. Aktiver avgiftsberegningstjenesten, og velg forretningsprosessen **Beholdning**.
 
     > [!IMPORTANT]
-    > Du må fullføre dette trinnet for hver juridiske enhet i Finance der du vil at avgiftstjenesten og funksjonaliteten for avgift i overføringsordrer skal være tilgjengelig.
+    > Du må fullføre dette trinnet for hver juridiske enhet i Finance der du vil at avgiftsberegningstjenesten og funksjonaliteten for avgift i overføringsordrer skal være tilgjengelig.
 
-    1. Gå til **Avgift** > **Oppsett** > **Avgiftskonfigurasjon** > **Oppsett av avgiftstjeneste**.
+    1. Gå til **Avgift** > **Oppsett** > **Avgiftskonfigurasjon** > **Parametere for avgiftsberegning**.
     2. I **Forretningsprosess**-feltet velger du **Beholdning**.
-
-      ![Angi Forretningsprosess-feltet.](../media/image8.png)
 
 4. Kontroller at mekanismen for snudd avregning er konfigurert. Gå til **Økonomimodul** \> **Oppsett** \> **Parametere**, og gå deretter til fanen **Snudd avregning** og bekreft at **Aktiver snudd avregning** er satt til **Ja**.
 
     ![Aktiver alternativet for snudd avregning.](../media/image9.png)
 
-5. Kontroller at de tilknyttede avgiftskodene, avgiftsgruppene, vareavgiftsgruppene og mva-registreringsnumrene er definert i Finance i henhold til retningslinjene for avgiftstjenesten.
+5. Kontroller at de tilknyttede avgiftskodene, avgiftsgruppene, vareavgiftsgruppene og mva-registreringsnumrene er definert i Finance i henhold til retningslinjene for avgiftsberegningstjenesten.
 6. Definer en midlertidig transittkonto. Dette trinnet er bare nødvendig når avgiften som brukes på overføringsordrer, ikke gjelder for en mekanisme for avgiftsfritak eller snudd avregning.
 
-    1. Gå til **Avgift** > **Oppsett** > **Merverdiavgift** \ **Finansposteringsgrupper**.
+    1. Gå til **Avgift** > **Oppsett** > **Merverdiavgift** > **Finansposteringsgrupper**.
     2. I feltet **Midlertidig transitt** velger du en finanskonto.
 
        ![Velge en midlertidig transittkonto.](../media/image10.png)

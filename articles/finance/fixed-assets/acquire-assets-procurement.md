@@ -1,7 +1,7 @@
 ---
 title: Skaffe aktiva ved hjelp av innkjøp
 description: Dette emnet beskriver hvordan du kan sette opp integrering mellom anleggsmidler og leverandører, slik at anleggsmidler opprettes automatisk fra bestillinger eller leverandørfakturaer, eller automatisk postere anskaffelses- og anskaffelsesjusteringstransaksjoner for anleggsmidler.
-author: ShylaThompson
+author: moaamer
 ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: roschlom
 ms.custom: 3481
 ms.assetid: d4e73a3f-633b-48b2-b8db-7a4a59a4d7ec
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4b1834f0087931760d223a018c93decdea1ddfddca219fdca57c97181d37084c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1c51abd3ce380f0cb1ad688ffab16b239460bc45
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728013"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674753"
 ---
 # <a name="acquire-assets-through-procurement"></a>Skaffe aktiva ved hjelp av innkjøp
 
@@ -71,7 +71,7 @@ I dette scenariet er systemet satt opp slik:
 -   Kapitaliseringsterskelen for anleggsmiddelgruppen Datamaskiner (COMP) er 1 500.
 -   Din oppgave er å registrere en bestilling av en ny bærbar datamaskin som en ansatt skal bruke, postere bestillingen, kontrollere at spedisjonsassistenten posterer en produktkvittering, postere leverandørfakturaen og til slutt kontrollere at regnskapsføreren oppdaterer status for aktivaet bærbar datamaskin til Åpen.
 
-Det første du må gjøre, er å bruke siden Bestilling til å registrere opplysninger om den bærbare datamaskinen, som koster 1 600. Du velger alternativet Nytt anleggsmiddel? i hurtigkategorien Anleggsmidler i bestillingslinjene, velger COMP som anleggsmiddelgruppen, og lagrer bestillingen. 
+Det første du må gjøre, er å bruke siden Bestilling til å registrere opplysninger om den bærbare datamaskinen, som koster 1 600. Du velger alternativet Nytt anleggsmiddel? i hurtigfanen Anleggsmidler i bestillingslinjene, velger COMP som anleggsmiddelgruppen, og lagrer bestillingen. 
 
 Når den bærbare datamaskinen mottas, registrerer og posterer en spedisjonsassistent en produktkvittering for å registrere mottaket av den bærbare datamaskinen. Den bærbare datamaskinen opprettes og har statusen Ennå ikke anskaffet. Beløpet overskrider kapitaliseringsterskelen. Derfor er alternativet Avskrivning valgt i tablåene for aktivaet bærbar datamaskin. Følgende transaksjoner skjer:
 

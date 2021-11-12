@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: db1d9d2cddfab5ca5abb50cc3ecb9c841e06b8b7
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a8f46165a89f064878d2e8af1b0b174b04eca37e
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580990"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647320"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10020-august-2021"></a>Hva er nytt eller endret i Dynamics 365 Supply Chain Management (10.0.20. august 2021)
 
@@ -46,7 +46,7 @@ De fleste av disse funksjonene må aktiveres ved hjelp av [Funksjonsbehandling](
 
 Denne tabellen viser funksjonsforbedringer i denne versjonen. Hvert av disse gir en trinnvis forbedring av en eksisterende funksjon. Siden de bare er forbedringer vises de ikke i [frigivelsesplanen](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features). For å sikre at disse forbedringene ikke kommer i konflikt med eksisterende tilpasninger eller innstillinger, er imidlertid hver av dem slått av som standard (med mindre annet er angitt). Hvis du vil bruke noen av disse funksjonene, må du uttrykkelig aktivere dem i [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-| Funksjonsområde | Funksjons&nbsp;navn&nbsp; i funksjons&nbsp;behandling | Mer informasjon |
+| Modul | Funksjons&nbsp;navn&nbsp; i funksjons&nbsp;behandling | Mer informasjon |
 |---|---|---|
 | Hovedplanlegging | Parallell autorisasjon av justert behovsprognose | Denne funksjonen tillater parallell autorisasjon av justert behovsprognose fra siden **Justert behovsprognose**. Hensikten med denne funksjonen er å øke ytelsen når et høyt antall prognoser godkjennes. Ved autorisasjon kan brukeren angi **Antall tråder** i den autorisasjonsdialogboksen. |
 | Hovedplanlegging | (Forhåndsversjon) Autorisasjon og konsolidering av planlagte masse- og pakkepartiordrer | Med denne funksjonen kan du bruke satsvise jobber til å autorisere og konsolidere planlagte masse- og pakkeordrer. |

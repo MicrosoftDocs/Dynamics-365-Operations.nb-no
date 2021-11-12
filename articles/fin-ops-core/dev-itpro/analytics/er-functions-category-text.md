@@ -2,7 +2,7 @@
 title: Liste over ER-funksjoner for tekstkategorien
 description: Dette emnet inneholder informasjon om tekstfunksjonene som støttes i elektronisk rapportering (ER).
 author: NickSelin
-ms.date: 04/02/2020
+ms.date: 09/09/2021
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b51fc00ba512677ccac9fcfbd26d2b0650f36f3b42eb81fc07d37417fb6d4d4d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b69b16e4a40b5370c3a73f2aee40a8a86b952d9e
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741020"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647566"
 ---
 # <a name="list-of-er-functions-of-the-text-category"></a>Liste over ER-funksjoner for tekstkategorien
 
@@ -40,7 +40,8 @@ Tekstfunksjoner for elektronisk rapportering (ER) kan brukes til å utføre oper
 | [Venstre](er-functions-text-left.md) | Denne funksjonen returnerer en *streng*-verdi som viser det angitte antallet tegn fra starten av den angitte strengen. |
 | [Len](er-functions-text-len.md) | Denne funksjonen returnerer en *heltall*-verdi som viser det angitte antallet tegn i den angitte strengen. |
 | [Lower](er-functions-text-lower.md) | Denne funksjonen returnerer den angitte tekststrengen som en *streng*-verdi etter at den er konvertert til små bokstaver. |
-| [Mid](er-functions-text-mid.md) | Denne funksjonen returnerer en *streng*-verdi som viser det angitte antallet tegn fra den angitte strengen, og begynner fra den angitte posisjonen. |
+| [Mid](er-functions-text-mid.md) | Denne funksjonen returnerer en *[streng](er-formula-supported-data-types-primitive.md#string)*-verdi som viser det angitte antallet tegn fra den angitte strengen, og begynner fra den angitte posisjonen. |
+| [NewGUID](er-functions-text-newguid.md) | Denne funksjonen returnerer en *nygenerert [GUID](er-formula-supported-data-types-primitive.md#guid)*-verdi. |
 | [NumberFormat](er-functions-text-numberformat.md) | Denne funksjonen returnerer en *streng*-verdi som viser det angitte tallet i angitt format og i en valgfri angitt kultur. |
 | [NumeralsToText](er-functions-text-numeralstotext.md) | Denne funksjonen returnerer det angitte tallet som en *streng*-verdi etter at det er skrevet ut (det vil si konvertert til tekststrenger) på det angitte språket. |
 | [PadLeft](er-functions-text-padleft.md) | Denne funksjonen returnerer en *streng*-verdi med den angitte lengden der begynnelsen av den angitte strengen fylles ut med ett eller flere forekomster av de angitte tegnene. |

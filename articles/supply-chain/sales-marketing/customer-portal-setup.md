@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 3b415252ef93987765d8970cde6b45f397136afd
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: b24aa8c342a3de647acc9cf0b4ec175ca24cef43
+ms.sourcegitcommit: e891a6cc0674d27b7e218fdf22ca5ba8ac3310d0
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572655"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7648384"
 ---
 # <a name="install-set-up-and-update-the-customer-portal"></a>Installere, konfigurere og oppdatere kundeportalen
 
@@ -41,7 +41,7 @@ Til forskjell fra andre funksjoner fra Supply Chain Management, ligger kundeport
 
 ## <a name="required-setup-to-enable-the-customer-portal"></a><a name="required-setup"></a>Nødvendig konfigurasjon for å aktivere kundeportalen
 
-Når du er sikker på at du har de nødvendige lisensene, kan du konfigurere dobbeltskriving som beskrevet i [instruksjoner for innledende synkronisering med dobbeltskriving](/dynamics365/supply-chain/sales-marketing/enable-entity-map).
+Når du er sikker på at du har de nødvendige lisensene, kan du konfigurere dobbeltskriving som beskrevet i [instruksjoner for innledende synkronisering med dobbeltskriving](../../fin-ops-core/dev-itpro/data-entities/dual-write/enable-entity-map.md).
 
 Pass på at du aktiverer følgende tabelltilordninger i dobbel skriving:
 

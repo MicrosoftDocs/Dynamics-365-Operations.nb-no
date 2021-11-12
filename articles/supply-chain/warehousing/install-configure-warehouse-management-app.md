@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e93aff4914314ea99798415a0bacc7b844169bc2
-ms.sourcegitcommit: 2b04b5a5c883d216072bb91123f9c7709a41f69a
+ms.openlocfilehash: 3a0a8555ac7c523af03401ab84af30f577777995
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7384617"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647631"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>Installere og koble til mobilappen Lagerstyring
 
@@ -109,7 +109,7 @@ Hvis du vil ha mer informasjon om hvordan du definerer webtjenesteapper i Azure 
     - [Hurtigstart: Registrere en app med Microsoft-identitetsplattformen](/azure/active-directory/develop/quickstart-register-app)
     - [Fremgangsmåte: Bruke portalen til å opprette en Azure AD-app og tjenestekontohaver som har tilgang til ressurser](/azure/active-directory/develop/howto-create-service-principal-portal)
 
-## <a name="create-and-configure-a-user-account-in-supply-chain-management"></a>Opprette og konfigurere en brukerkonto i Supply Chain Management
+## <a name="create-and-configure-a-user-account-in-supply-chain-management"></a><a name="user-azure-ad"></a>Opprette og konfigurere en brukerkonto i Supply Chain Management
 
 Hvis du vil at Supply Chain Management skal kunne bruke Azure AD-appen, gjør du følgende.
 
@@ -117,17 +117,24 @@ Hvis du vil at Supply Chain Management skal kunne bruke Azure AD-appen, gjør du
 
     1. I Supply Chain Management går du til **Systemadministrasjon \> Brukere \> Brukere**.
     1. Opprett en bruker.
-    1. Tilordne mobilenhetsbrukeren for lagerstyring.
+    1. Tilordne rollen som *bruker av lagermobilenhet* til brukeren.
 
     ![Tilordne mobilenhetsbrukeren for lagerstyring.](media/app-connect-app-users.png "Tilordne mobilenhetsbrukeren for lagerstyring")
 
 1. Knytt Azure AD-programmet til brukeren av mobilappen Lagerstyring:
 
     1. Gå til **Systemadministrasjon \> Oppsett \> Azure Active Directory-apper**.
-    1. Opprett en linje.
-    1. Angi klient-ID-en som du noterte i den forrige delen, gi den et navn, og velg brukeren du nettopp opprettet. Det anbefales at du merker alle enhetene dine. Hvis en enhet går tapt, kan du enkelt fjerne dens tilgang til Supply Chain Management fra denne siden.
+    1. Velg **Ny** i handlingsruten for å opprette en linje.
+    1. I **Klient-ID**-feltet angir du klient-IDen du noterte deg i forrige del.
+    1. Angi et navn i **Navn**-feltet.
+    1. Velg bruker-IDen du nettopp opprettet i **Bruker-ID**-feltet.
 
     ![Azure Active Directory-apper.](media/app-connect-aad-apps.png "Azure Active Directory-bruksområder")
+
+> [!TIP]
+> En måte å bruke disse innstillingene på, er å opprette en klient-ID i Azure for hver av de fysiske enhetene dine, og deretter legge til hver klient-ID på **Azure Active Directory-programmer**-siden. Hvis en enhet går tapt, kan du enkelt fjerne dens tilgang til Supply Chain Management ved å fjerne klient-ID fra denne siden. (Denne fremgangsmåten fungerer fordi tilkoblingslegitimasjonen som lagres på hver enhet, også angir en klient-ID, som beskrevet senere i dette emnet.)
+>
+> I tillegg er standardspråket, nummerformatet og tidssoneinnstillingene for hver klient-ID fastsatt av innstillingene som er angitt for **bruker-ID**-verdien som er tilordnet her. Derfor kan du bruke disse innstillingene til å opprette standardinnstillinger for hver enhet eller samling enheter, basert på klient-IDen. Disse standardinnstillingene vil imidlertid overstyres hvis de også er definert for *lagerappbrukerkontoen* som en arbeider bruker til å logge på enheten. (Hvis du vil ha mer informasjon, kan du se [Brukerkontoer for mobilenhet](mobile-device-work-users.md).)
 
 ## <a name="authenticate-by-using-a-certificate-or-client-secret"></a><a name="authenticate"></a>Godkjenne ved hjelp av et sertifikat eller en klienthemmelighet
 

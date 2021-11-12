@@ -14,17 +14,16 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2021-08-15
 ms.dyn365.ops.version: Release 10.0.22
-ms.openlocfilehash: fa61a20ffd9a31f800c48b71832be7547952119f
-ms.sourcegitcommit: d420b96d37093c26f0e99c548f036eb49a15ec30
+ms.openlocfilehash: 0ae5c8a2eea84a9aa707f7c2f6f29950f2f48faa
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7472655"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7675123"
 ---
 # <a name="order-lookup-module"></a>Ordreoppslagsmodul
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Dette emnet dekker ordreoppslagsmodulen og forklarer hvordan du konfigurerer den i Microsoft Dynamics 365 Commerce.
 
@@ -34,11 +33,11 @@ Illustrasjonen nedenfor viser et eksempel på skjemaet som gjengis av ordreoppsl
 
 ![Skjema for ordreoppslagsmodulen på en side.](./media/OrderLookup_module.PNG)
 
-## <a name="order-lookup-module-properties&quot;></a>Egenskaper for Ordreoppslagsmodul
+## <a name="order-lookup-module-properties"></a>Egenskaper for Ordreoppslagsmodul
 
 | Egenskapsnavn     | Verdi     | beskrivelse |
 |-------------------|-----------|-------------|
-| Overskrift           | Tekst      | Overskriften som vises øverst i skjemaet (for eksempel &quot;Finn din ordre"). |
+| Overskrift           | Tekst      | Overskriften som vises øverst i skjemaet (for eksempel "Finn din ordre"). |
 | Rik tekst         | Rik tekst | Valgfri, forklarende tekst som vises under overskriften. |
 | Type ordrestatus | Opplisting      | <p>Velg typen informasjon som skjemaet vil be om fra kunden i tillegg til ordrebekreftelses-IDen. Følgende verdier støttes for øyeblikket:</p><ul><li><b>E-post</b> – Skjemaet inneholder et felt der kunder kan angi e-postadressen de brukte da de la inn ordren.</li><li><b>Ingen</b> – Skjemaet vil ikke be om noen informasjon i tillegg til ordrebekreftelses-IDen.</li></ul> |
 

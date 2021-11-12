@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 27dfc3f431fdfc1ec5c2cad2c3458b11c94189c3
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: 53cc457c788d24adfe3c523719ccffc6d445fb61
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474682"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678477"
 ---
 # <a name="configure-inventory-visibility"></a>Konfigurer lagersynlighet
 
@@ -366,16 +366,12 @@ Ved hjelp av indeksen kan du utføre spørringer på lagerbeholdningen på følg
 
 ## <a name="reservation-configuration-optional"></a><a name="reservation-configuration"></a>Reservasjonskonfigurasjon (valgfritt)
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 Reservasjonskonfigurasjon er nødvendig hvis du vil bruke funksjonen for ikke-forpliktende reservasjon. Konfigurasjonen består av to grunnleggende deler:
 
 - Tilordning av ikke-forpliktende reservasjon
 - Hierarki for ikke-forpliktende reservasjon
 
 ### <a name="soft-reservation-mapping"></a>Tilordning av ikke-forpliktende reservasjon
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Når du foretar en reservasjon, ønsker du kanskje å vite om lagerbeholdningen for øyeblikket er tilgjengelig for reservasjon. Valideringen er koblet til et beregnet mål som representerer en beregningsformel for en kombinasjon av fysiske mål.
 
@@ -446,8 +442,6 @@ Hvis du prøver å gjøre reservasjoner på `iv.SoftReservOrdered` og antallet e
 > Når du kaller reservasjons-API, kan du styre reservasjonsvalideringen ved å angi den boolske `ifCheckAvailForReserv` parameteren i forespørselsteksten. Verdien `True` betyr at valideringen kreves, mens en verdi å `False` betyr at valideringen ikke er nødvendig. Standardverdien er `True`.
 
 ### <a name="soft-reservation-hierarchy"></a>Hierarki for ikke-forpliktende reservasjon
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Reservasjonshierarkiet beskriver serien med dimensjoner som må angis når det opprettes reservasjoner. Det fungerer på samme måte som produktindekshierarkiet fungerer for lagerbeholdningsspørringer.
 
@@ -747,8 +741,6 @@ Følgende tabell viser standard indekskonfigurasjon.
 Denne delen beskriver standard reservasjonskonfigurasjon.
 
 #### <a name="reservation-mapping"></a>Reservasjonstilordning
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Følgende tabell viser standard reservasjonstilordning.
 

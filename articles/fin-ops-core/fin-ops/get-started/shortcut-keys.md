@@ -2,7 +2,7 @@
 title: Hurtigtaster
 description: Dette emnet gir en oversikt over hurtigtastkombinasjonene du kan bruke når du arbeider med Finance and Operations-apper.
 author: jasongre
-ms.date: 10/05/2020
+ms.date: 10/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 749fc3655b1ad41fbe7dd4794fc4ca907f1c86b9ee4e92e2415e924058191ffa
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7e700b841014e1e12560bf0ce9e5e012361ec397
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743177"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647542"
 ---
 # <a name="keyboard-shortcuts"></a>Hurtigtaster
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Følgende hurtigtaster kan bidra til at du kan registrerer data raskt og effektivt i Finance and Operations-apper.
 
@@ -147,15 +148,16 @@ Fra og med plattformoppdatering 11 kan brukere finne hurtigtaster som er tilgjen
 | Utfør standardhandling i et rutenett<blockquote>[!NOTE] Denne snarveien er aktivert når fokus er på en celle som inneholder en hyperkobling, og alle celler i den kolonnen har hyperkoblinger.</blockquote> | Enter                           |
 | Bytte fokus mellom den merkede raden, og overskriftsraden                                                               | Alt+Skift+H                     |
 | Gjøre den gjeldende kolonnen større/mindre (med fokus i overskriftsraden)                                                  | Pil høyre / pil venstre        |
-| Åpne rutenettfiltrering for den gjeldende kolonnen (med fokus i overskriftsraden)                                              | Enter                           |
+| Åpne rutenettfiltrering for den gjeldende kolonnen (med fokus i overskriftsraden)                                              | Angi                           |
+| Endre størrelsen på den gjeldende kolonnen for å få plass til innholdet (med fokus i overskriftsraden)                                           | A                               |
 
 ## <a name="input-control-shortcuts"></a>Snarveier for inndatakontroller
 
-| Hvis du vil gjøre dette                                                                   | Trykk                         |
+| Hvis du vil gjøre dette                                                                   | Trykk                          |
 |------------------------------------------------------------------------------|-------------------------------|
 | Åpne hyperkoblingen                                                           | Ctrl+Enter                    |
-| Angi øktdatoen i et datofelt                                       | D                         |
-| Angi gjeldende dato i et datofelt                                       | T                         |
+| Angi øktdatoen i et datofelt                                       | D                             |
+| Angi gjeldende dato i et datofelt                                       | T                             |
 | Åpne oppslag, kombinasjonsboks, datovelger, rullegardinboks                         | Alt+Pil ned                |
 | Lukk oppslag, kombinasjonsboks, datovelger, rullegardinboks                        | ESC                           |
 | Flytt fokus til et oppslag (når oppslaget allerede er åpent)                   | Alt+Pil ned                |
@@ -202,8 +204,8 @@ Fra og med plattformoppdatering 11 kan brukere finne hurtigtaster som er tilgjen
 | Bruk Flytteverktøyet (når du er i personliggjøringsmodus)                                                                       | M                                   |
 | Velg den nåværende kontrollen som den som skal flyttes (når du bruker Flytteverktøyet, og ingen kontroll er valgt for å flytte ennå)  | Mellomrom eller Enter                      |
 | Fjern kontrollen som skal flyttes (når du bruker Flytteverktøyet)                                                                   | ESC                                 |
-| Flytt til neste posisjon for den valgte kontrollen (når du bruker Flytteverktøyet)                                          | Tab eller Pil høyre eller Pil ned    |
-| Flytt til forrige posisjon for den valgte kontrollen (når du bruker Flytteverktøyet)                                      | Skift + Tab eller Pil venstre eller Pil opp |
+| Flytt den valgte kontrollen til neste posisjon (når du bruker Flytteverktøyet)                                              | Tab eller Pil høyre eller Pil ned    |
+| Flytt den valgte kontrollen til forrige posisjon (når du bruker Flytteverktøyet)                                          | Skift + Tab eller Pil venstre eller Pil opp |
 | Bruk Skjulverktøyet (når du er i personliggjøringsmodus)                                                                       | H                                   |
 | Bytt om for om nåværende kontroll er synlig eller skjult (når du bruker skjermverktøyet)                                     | Mellomrom eller Enter                      |
 | Bruk Hopp over-verktøyet (når du er i personliggjøringsmodus)                                                                       | K                                   |

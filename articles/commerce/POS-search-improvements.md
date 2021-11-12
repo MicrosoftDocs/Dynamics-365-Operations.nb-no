@@ -2,7 +2,7 @@
 title: Produkt- og kundesøk på salgssted
 description: Dette emnet gir en oversikt over forbedringer som har blitt gjort for produkt- og kundesøkfunksjonalitet i Dynamics 365 Commerce.
 author: ShalabhjainMSFT
-ms.date: 03/10/2021
+ms.date: 10/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 043a630408d6b03e528f0afd5443de73ad5f3802c968b9d9bd7a5c51bfe1fb03
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 022dcaca9bb3c9e7e749ee143702325367e5149b
+ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716401"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "7700095"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Produkt- og kundesøk på salgssted
 
@@ -45,9 +45,9 @@ Et lokalt produktsøk søker i følgende produktegenskaper:
 - beskrivelse
 - Dimensjoner
 - Strekkode
-- Søk etter navn
+- Søkenavn
 
-### <a name="additional-local-product-search-capabilities"></a>Flere funksjoner for lokalt produktsøk
+### <a name="additional-local-product-search-capabilities-conventional-sql-full-text-search"></a>Flere funksjoner for lokalt produktsøk (vanlig SQL-fulltekstsøk) 
 
 - For søk med flere søkeord kan forhandlere konfigurere om søkeresultatene skal inneholde resultater som samsvarer med et *hvilket som helst* søkeord, eller bare resultater som samsvarer med *alle* søkeordene. Innstillingen for denne funksjonaliteten er tilgjengelig i POS-funksjonalitetsprofilen, i en ny gruppe kalt **Produktsøk**. Standardinnstillingen er **Match et hvilket som helst søkeord**. Dette er også den anbefalte innstillingen. Når **Samsvar alle søkeord**-innstillingen brukes, returneres alle produkter som helt eller delvis samsvarer med ett eller flere søkeord. Disse resultatene sorteres automatisk i stigende rekkefølge for produkter som har de fleste nøkkelordtreffene (fullstendig eller delvis).
 
@@ -55,6 +55,8 @@ Et lokalt produktsøk søker i følgende produktegenskaper:
 
     - Søket er gjort på individuelle produktegenskaper. For eksempel returneres kun produkter som har alle søkte søkeord i minst én produktegenskap.
     - Det søkes ikke i dimensjoner.
+> [!NOTE]
+> Følgende konfigurasjoner av **Samsvar alle søkeord**/**Match alle søkeord** i POS-funksjonalitetsprofiler gjelder bare for **lokale** produktsøk (vanlig SQL-fulltekstsøk). Denne konfigurasjonen har ingen innvirkning på den skydrevne søkefunksjonen. Den nye søkemotoren har sin egen avanserte algoritme som gir en relevans av søk etter produktsøkeresultater. 
 
 - Forhandlere kan konfigurere produktsøk for å vise søkeforslag når brukere skriver inn produktnavn. En ny innstilling for denne funksjonaliteten er tilgjengelig i POS-funksjonalitetsprofilen, i en gruppe som heter **Produktsøk**. Innstillingen heter **Vis søkeforslag under skriving**. Denne funksjonaliteten kan hjelpe ansatte å raskt å finne produktet de søker etter, fordi de ikke trenger å skrive hele navnet manuelt.
 - Produktsøkalgoritmen søker nå også etter de søkevilkårene i **Søkenavn**-egenskapen for produktet.
@@ -147,7 +149,5 @@ Listen nedenfor viser hvordan funksjonaliteten for skybasert kundesøk er forskj
 > Funksjoner for kundesøk ved hjelp av tjenesten Azure Cognitive Search, er tilgjengelig i begrensede områder for forhåndsvisning. Funksjonen for kundesøk er *ikke* tilgjengelig i følgende områder:
 > - Brasil
 > - India
-> - Canada
-> - Storbritannia
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: Mål for elektronisk rapportering (ER)
 description: Dette emnet inneholder informasjon om administrasjon av mål for elektronisk rapportering, måltypene som støttes, og sikkerhetshensyn.
 author: nselin
-ms.date: 05/19/2021
+ms.date: 09/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: df617ad476d8210c658f60569656292df22670df44cc094bf0d61b4ee6a19775
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e8e176b8d4e14eee2050b3c66f7547ff878b5174
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743317"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647099"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Mål for elektronisk rapportering (ER)
 
@@ -164,12 +164,12 @@ Hvis du vil gjøre alternativet PDF-konvertering tilgjengelig i gjeldende Finans
 
 ### <a name="applicability"></a>Relevans
 
-Alternativet PDF-konvertering kan bare aktiveres for filkomponenter som brukes til å generere utdata i Office-format (Excel eller Word) (**Excel-fil**). Når dette alternativet er aktivert, konverteres utdata som genereres i Office-format, automatisk til PDF-format. I versjoner av Finance **før versjon 10.0.18** kan du aktivere dette alternativet bare for komponenter av typen **Excel\\Fil** som blir brukt til å generere utdata i [Excel](er-fillable-excel.md)- eller [Word](er-design-configuration-word.md)-format. I **versjon 10.0.18 og senere** kan du imidlertid også aktivere dette alternativet for komponenter av typen **Felles\\Fil**.
+I versjoner av Finance **før versjon 10.0.18** kan PDF-konverteringsalternativet bare slås på for **Excel\\Fil**-komponentene som blir brukt til å generere utdata i Office-format (Excel eller Word). Når dette alternativet er aktivert, konverteres utdata som genereres i Office-format, automatisk til PDF-format. I **versjon 10.0.18 og senere** kan du imidlertid også aktivere dette alternativet for komponenter av typen **Felles\\Fil**.
 
 > [!NOTE]
 > Vær oppmerksom på advarselsmeldingen du mottar når du aktiverer PDF-konverteringsalternativet for en ER-komponent av **Felles\\Fil**. Denne meldingen informerer deg om at det ikke finnes noen måte å garantere at den valgte filkomponenten vil eksponere innholdet i PDF-format eller PDF-konverterbart innhold ved kjøretid. Du bør derfor bare aktivere alternativet hvis du er sikker på at den valgte filkomponenten er konfigurert til å vise innholdet i PDF-format eller PDF-konverterbart innhold ved kjøretid.
 > 
-> Hvis du aktiverer PDF-konverteringsalternativet for en komponent av typen **Excel\\Fil**, hvis komponenten viser innhold i et annet format enn PDF-format, og hvis det viste innholdet ikke kan konverteres til PDF-format, vil det oppstå et unntak ved kjøretid. Meldingen du mottar, informerer deg om at det genererte innholdet ikke kan konverteres til PDF-format.
+> Hvis du aktiverer PDF-konverteringsalternativet for en formatkomponent, hvis komponenten viser innhold i et annet format enn PDF-format, og hvis det viste innholdet ikke kan konverteres til PDF-format, vil det oppstå et unntak ved kjøretid. Meldingen du mottar, informerer deg om at det genererte innholdet ikke kan konverteres til PDF-format.
 
 ### <a name="limitations"></a>Begrensninger
 
@@ -189,16 +189,26 @@ Hvis du vil aktivere PDF-konvertering for et filmål, merker du av i **Konverter
 
 ### <a name=""></a><a name="SelectPdfPageOrientation">Velg en sideretning for PDF-konvertering</a>
 
-Hvis du genererer en ER-konfigurasjon i Excel-format og vil konvertere den til PDF-format, kan du angi papirretningen til PDF-dokumentet. Når du merker av for **Konverter til PDF** for å slå på PDF-konvertering for en fildestinasjon som produserer en utdatafil i Excel-format, blir **Sresultatproduktideretning**-feltet tilgjengelig på hurtigfanen **PDF-konverteringsinnstillinger**. Velg den foretrukne retningen i **Sideretning**-feltet.
+Hvis du genererer en ER-konfigurasjon i Excel-format og vil konvertere den til PDF-format, kan du eksplisitt angi papirretningen til PDF-dokumentet. Når du merker av for **Konverter til PDF** for å slå på PDF-konvertering for en fildestinasjon som produserer en utdatafil i Excel-format, blir **Sresultatproduktideretning**-feltet tilgjengelig på hurtigfanen **PDF-konverteringsinnstillinger**. Velg den foretrukne retningen i **Sideretning**-feltet.
 
 [![Velge en sideretning for PDF-konvertering.](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)
 
-> [!NOTE]
-> Hvis du vil ha muligheten til å velge PDF-papirretningen, må du installere Finance versjon 10.0.10 eller nyere.
->
-> Den valgte sideretningen brukes på alle ER-konfigurasjoner som genereres i Excel-format, og deretter konverteres til PDF-format.
->
-> Hvis en ER-konfigurasjon i Word-format konverteres til PDF-format, hentes papirretningen for PDF-dokumentet fra Word-dokumentet.
+Hvis du vil ha muligheten til å velge PDF-papirretningen, installerer du Finance versjon 10.0.10 eller nyere. I versjoner av Finance **før versjon 10.0.23** tilbyr dette alternativet følgende alternativer for sideretning:
+
+- Stående
+- Liggende
+
+Den valgte sideretningen brukes på alle sider for et utgående dokument som genereres i Excel-format, og deretter konverteres til PDF-format.
+
+I **versjon 10.0.23 og senere** er imidlertid listen over alternativer for sideretning utvidet slik:
+
+- Stående
+- Liggende
+- Regnearkspesifikk
+
+Når du velger alternativet **Regnearkspesifikk**, konverteres hvert regneark i en generert Excel-arbeidsbok til PDF-format ved hjelp av en sideretning som er konfigurert for dette regnearket i den brukte Excel-malen. Det kan derfor hende at du har et endelig PDF-dokument som inneholder stående og liggende sider. 
+
+Hvis en ER-konfigurasjon i Word-format konverteres til PDF-format, hentes papirretningen for PDF-dokumentet alltid fra Word-dokumentet.
 
 ## <a name="output-unfolding"></a>Oppheve folding av utdata
 
@@ -210,7 +220,7 @@ Hvis du vil gjøre alternativet for oppheving av folding tilgjengelig i gjeldend
 
 ### <a name="applicability"></a>Relevans
 
-Alternativet for oppheving av folding av utdata kan bare konfigureres for formatkomponentene for **Mappe**-typen. Når du begynner å konfigurere en **Mappe**-komponent, blir hurtigkategorien **Generelt** tilgjengelig på siden **Mål for elektronisk rapportering**. 
+Alternativet for oppheving av folding av utdata kan bare konfigureres for formatkomponentene for **Mappe**-typen. Når du begynner å konfigurere en **Mappe**-komponent, blir hurtigfanen **Generelt** tilgjengelig på siden **Mål for elektronisk rapportering**. 
 
 ### <a name="use-the-output-unfolding-option"></a>Bruke alternativet for oppheving av folding av utdata
 

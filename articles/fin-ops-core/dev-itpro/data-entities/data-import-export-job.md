@@ -2,7 +2,7 @@
 title: Oversikt over dataimport- og -eksportjobber
 description: Bruk arbeidsområdet for dataadministrasjon for å opprette og administrere dataimport- og -eksportjobber.
 author: peakerbl
-ms.date: 10/07/2021
+ms.date: 10/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dec8270417cb7237081aa49203ca93d76c0d02ed
-ms.sourcegitcommit: 132c3dbdd66bceb7596d329c34b2256c581a20fa
+ms.openlocfilehash: 51c7d678017bdd9388767500735e21e5374c9f29
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "7612370"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7675375"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Oversikt over dataimport- og -eksportjobber
 
@@ -67,7 +67,10 @@ Når du velger et foretak, må du velge formatet for dataene som skal eksportere
 |------------------------|--------------------------------------------|---------------------------|
 | Excel                  | Excel                                      | \-I/T-                     |
 | XML                    | \-I/T-                                      | XML-attributt for XML-element |
-| Skilletegn, fastsatt bredde | Komma, semikolon, tab, loddrett strek, kolon | \-I/T                     |
+| Skilletegn, fastsatt bredde | Komma, semikolon, tab, loddrett strek, kolon | \-I/T-                     |
+
+> [!NOTE]
+> Det er viktig å velge riktig verdi for **Radskilletegn**, **Kolonneskilletegn** og **Tekstkvalifikator** hvis **Filformat**-alternativet er satt til **Avgrenset**. Kontroller at dataene ikke inneholder tegnet som brukes som skilletegn eller kvalifikator, da dette kan føre til feil under import og eksport.
 
 ### <a name="sequence-the-entities"></a>Sekvenser enhetene
 Enheter kan sekvenseres i et dataskjema, eller i import- og eksportjobber. Når du kjører en jobb som inneholder mer enn én dataenhet, må du sørge for at dataenhetene er riktig sekvensert. Du sekvenserer enhetene primært for å adressere noen funksjonelle avhengigheter mellom enheter. Hvis enheter ikke har noen funksjonelle avhengigheter, kan de planlegges for parallell import eller eksport.

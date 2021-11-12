@@ -1,7 +1,7 @@
 ---
-title: Oversikt over oppgradering for avskrivningstablå
-description: I tidligere versjoner var det to vurderingskonsepter for anleggsmidler, verdimodeller og avskrivningstablåer.
-author: ShylaThompson
+title: Oversikt over oppgradering av avskrivningstablå
+description: Dette emnet beskriver den gjeldende tablåfunksjonaliteten i Anleggsmidler. Denne funksjonen er basert på verdimodellfunksjonalitet som var tilgjengelig i tidligere versjoner, men inneholder også all funksjonalitet som tidligere ble angitt i avskrivningstablåer.
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -13,25 +13,25 @@ ms.custom:
 - intro-internal
 ms.assetid: cf434099-36f9-4b0f-a7c8-bed091e34f39
 ms.search.region: global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b1d14154cd2e9bd18a886ba490891a02afeb0b05
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: c36e0ab53f8a10e81e1bed207417861066dd6917
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344720"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7675159"
 ---
 # <a name="depreciation-book-upgrade-overview"></a>Oversikt over oppgradering av avskrivningstablå
 
 [!include [banner](../includes/banner.md)]
 
-I tidligere versjoner var det to vurderingskonsepter for anleggsmidler: verdimodeller og avskrivningstablåer. I Microsoft Dynamics 365 for Operations (1611) er verdimodellfunksjonaliteten og funksjonaliteten for avskrivningstablå slått sammen til ett enkelt konsept som kalles et tablå. Dette emnet inneholder noen ting å ta hensyn til for oppgraderingen. 
+Dette emnet beskriver den gjeldende tablåfunksjonaliteten i Anleggsmidler. Denne funksjonen er basert på verdimodellfunksjonalitet som var tilgjengelig i tidligere versjoner, men inneholder også all funksjonalitet som tidligere ble angitt i avskrivningstablåer. Verdimodellfunksjonaliteten og funksjonaliteten for avskrivningstablå slått sammen til ett enkelt konsept som kalles et tablå. Med tablåfunksjonalitet kan du bruke ett enkelt sett med sider, forespørsler og rapporter for alle organisasjonens anleggsmiddelprosesser. Dette emnet inneholder noe du bør vurdere før du oppgraderer. 
 
-Oppgraderingsprosessen flytter eksisterende oppsett og alle eksisterende transaksjoner til den nye tablåstrukturen. Verdimodeller forblir slik de er for øyeblikket, som et tablå som posterer til økonomimodulen. Avskrivningstablåer flyttes til et tablå bok med alternativet **Poster til økonomimodul** satt til **Ingen**. Journalnavn for avskrivningstablå flyttes til et journalnavn for økonomimodul med posteringslaget satt til **Ingen**. Avskrivningstablåtransaksjoner vil bli flyttet til anleggsmiddeltransaksjoner. 
+Oppgraderingsprosessen flytter eksisterende oppsett og alle eksisterende transaksjoner til den nye tablåstrukturen. Verdimodeller forblir slik de er for øyeblikket, som et tablå som posterer til økonomimodulen. Avskrivningstablåer flyttes til et tablå bok med alternativet Poster til økonomimodul satt til Ingen. Journalnavn for avskrivningstablå flyttes til et journalnavn for økonomimodul med posteringslaget satt til Ingen. Avskrivningstablåtransaksjoner vil bli flyttet til anleggsmiddeltransaksjoner.
 
-Før du kjører dataoppgraderingen, må du forstå de to alternativene som er tilgjengelige for oppgradering av journallinjer for avskrivningstablå til transaksjonsbilag, og nummerserien som brukes for bilagsserien. 
+Før du kjører dataoppgraderingen, må du forstå de to alternativene som er tilgjengelige for oppgradering av journallinjer for avskrivningstablå til transaksjonsbilag, og nummerserien som brukes for bilagsserien.
 
 Alternativ 1: **Systemdefinert nummerserie** – Dette er standardalternativet for å optimalisere ytelsen til dataoppgraderingen. Oppgraderingen kan ikke bruke rammeverket for nummerserie, men vil i stedet tildele bilag med en settbasert tilnærmingsmåte. Etter oppgraderingen vil den nye nummerserien opprettes med **Neste nummerserie** basert på riktig måte på de oppgraderte transaksjonene Nummerserien brukes som standard i formatet FADBUpgr\#\#\#\#\#\#\#\#\#. Det finnes noen få tilgjengelige parametere for å justere formatet når du bruker denne fremgangsmåten:
 

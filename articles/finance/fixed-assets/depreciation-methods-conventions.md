@@ -1,7 +1,7 @@
 ---
 title: Avskrivningsmetoder og -konvensjoner
 description: Denne artikkelen gir en oversikt over avskrivningskonvensjoner og avskrivningsmetoder som støttes av Microsoft Dynamics 365 Finance.
-author: ShylaThompson
+author: moaamer
 ms.date: 04/25/2017
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: roschlom
 ms.custom: 3441
 ms.assetid: 1d8267b1-86a8-44bf-8814-f56b5d45a0ae
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: daa8f70e12a8c837a599ead5ef8b98aaf13e8cc827853de8b0332611ed2e257e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e6abf98b4c1eee3657960a1912445171acc0686a
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713240"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674532"
 ---
 # <a name="depreciation-methods-and-conventions"></a>Avskrivningsmetoder og -konvensjoner
 
@@ -32,7 +32,7 @@ Du kan velge forskjellige avskrivningsmetoder og -konvensjoner. Formålet med me
 
 Hvis du bruker avskrivningskonvensjoner, og du endrer den siste avskrivningskjøringsdatoen for en vare, noe som hopper over visse avskrivninger, kan avskrivningen for forrige år være større eller mindre enn forventet. Avskrivningen justeres etter hvor mange avskrivningsperioder som påvirkes av endringen i den siste avskrivningskjøringsdatoen.
 
-Hvis du for eksempel bruker konvensjonen med halvårlig avskrivning over tre år, skjer avskrivningen vanligvis over 3,5 år. Hvis du endrer den siste avskrivningskjøringsdatoen i løpet av de 3,5 årene, fjernes de periodene som påvirkes, fra det siste avskrivningsåret. Hvis du flytter datoen med tre måneder, får du ni måneder med avskrivning det siste året i motsetning til de vanlige seks månedene.
+Hvis du for eksempel bruker konvensjonen med halvårlig avskrivning over tre år, skjer avskrivningen vanligvis over tre og et halv år. Hvis du endrer den siste avskrivningskjøringsdatoen i løpet av de tre og et halvt årene, fjernes de periodene som påvirkes, fra det siste avskrivningsåret. Hvis du flytter datoen med tre måneder, får du ni måneder med avskrivning det siste året i motsetning til de vanlige seks månedene.
 
 Du kan velge mellom følgende avskrivningskonvensjoner.
 
@@ -46,10 +46,10 @@ Du kan velge mellom følgende avskrivningskonvensjoner.
 -   Halvår (neste år)
 
 Du kan velge mellom følgende avskrivningsmetoder:
--   Lineær levetid
+-   Lineær avskrivning over servicelevetiden
 -   Saldoverdi
--   Manuelt
--   Faktor
+-   Manuell
+-   Omregningsfaktor
 -   Forbruk
 -   Lineær levetid som gjenstår
 -   200 % saldoverdi
@@ -63,7 +63,7 @@ Du kan velge mellom følgende avskrivningsmetoder:
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
-[Avskrivning av anleggsmiddel](fixed-asset-depreciation.md)
+[Avskrivning av anleggsmidler](fixed-asset-depreciation.md)
 
 [Lineær levetidsavskrivning](Straight-line-service-life-depreciation.md)
 
@@ -77,7 +77,7 @@ Du kan velge mellom følgende avskrivningsmetoder:
 
 [Gjenstående lineær levetidsavskrivning](straight-line-life-remaining-depreciation.md)
 
-[125 prosent redusert saldoavskrivning](125-percent-reducing-balance-depreciation.md)
+[125 % redusert saldoavskrivning](125-percent-reducing-balance-depreciation.md)
 
 [150 prosent redusert saldoavskrivning](150-percent-reducing-balance-depreciation.md)
 

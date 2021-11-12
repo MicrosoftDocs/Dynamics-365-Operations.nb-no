@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 63e26004b28f1ff6c760476933e1d524c0b40451
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 72fe7f8a6b05bd7c6fa242ef599e506a1178d913
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569343"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678695"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Hvordan arbeidere bruker grensesnittet for produksjonsutførelse
 
@@ -93,7 +93,6 @@ I **Min maskin**-fanen kan arbeidere velge et aktivum som er koblet til en maski
 1. **Registrer nedetid** – Velg denne knappen for å åpne en dialogboks der du kan registrere nedetid for maskin. Du kan velge en årsakskode og angi en dato / et tidsrom for nedetiden. Registreringen av nedetid for maskin brukes til å beregne effektiviteten til maskinaktivumet.
 1. **Vis eller rediger** – Velg denne knappen for å åpne en dialogboks der du kan redigere eller vise eksisterende poster for nedetid.
 
-
 ## <a name="starting-and-completing-production-jobs"></a>Starte og fullføre produksjonsjobber
 
 Arbeidere starter en produksjonsjobb ved å velge en jobb i **Alle jobber**-fanen og deretter velge **Start jobb** for å åpne **Start jobb**-dialogboksen.
@@ -109,6 +108,32 @@ Arbeidere kan starte en jobb som har en hvilken som helst status. Når en arbeid
 Når en arbeider fullfører eller delvis fullfører en jobb, kan de rapportere korrekte antall som ble produsert ved å velge en jobb i fanen **Aktive jobber** og deretter velge **Rapportfremdrift**. I dialogboksen **Rapportfremdrift** angir arbeideren deretter det korrekte antallet ved hjelp av det numeriske tastaturet. Antallet er tomt som standard. Når et antall er angitt, kan arbeideren oppdatere statusen for jobben til *pågår*, *stoppet* eller *fullført*.
 
 ![Dialogboksen Rapportfremdrift.](media/pfei-report-progress-dialog.png "Dialogboksen Rapportfremdrift")
+
+## <a name="reporting-good-quantities-on-batch-orders-that-have-co-products-and-by-products"></a>Rapportering korrekte antall varer på partiordrer som har koprodukter og biprodukter
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)] <!--KFM: GA with 10.0.23 -->
+
+Ansatte kan å bruke grensesnittet for produksjonsgulvutførelse til å rapportere fremdrift for partiordrer. Denne rapporten inkluderer rapportering på koprodukter og biprodukter.
+
+Noen produsenter, spesielt i prosessindustri, bruker partiordrer til å administrere produksjonsprosessene. Partiordrer opprettes fra formler, og disse formlene kan defineres slik at de har koprodukter og biprodukter som utlevering. Når tilbakemelding om disse partiordrene er rapportert, må mengden utlevering registreres på formelvaren, og også på koproduktene og biproduktene.
+
+Når en arbeider fullfører eller delvis fullfører en jobb i en partiordre, kan de rapportere korrekt antall eller svinn for hvert produkt som er definert som utlevering for ordren. Produkter som er definert som utlevering for en partiordre, kan være av typen *Formel*, *Koprodukt* eller *Biprodukt*.
+
+Hvis en arbeider skal rapportere korrekt antall varer på produktene, velger han eller hun en jobb i kategorien **Aktive jobber**, og velger deretter **Rapportfremgang**.
+
+I dialogboksen **Rapportfremgang** kan deretter arbeideren velge blant produktene som er definert som utdata for partiordren det skal rapporteres om. Arbeideren kan velge ett eller flere produkter i listen, og deretter velge **Rapportfremdrift**. For hvert produkt er antallet tomt som standard, og arbeideren kan bruke det numeriske tastaturet til å angi antallet. Arbeideren kan bruke knappene **Forrige** og **Neste** til å flytte mellom de valgte produktene. Når antallet er angitt for hvert produkt, kan arbeideren oppdatere statusen for jobben til *Pågår*, *Stoppet* eller *Fullført*.
+
+![Rapporter koprodukter og biprodukter.](media/report-co-by-products.png "Rapportere koprodukter og biprodukter")
+
+### <a name="reporting-on-batch-orders-for-planning-items"></a>Rapportering av partiordrer for planleggingselementer
+
+Når en arbeider fullfører en jobb i en partiordre for et planleggingselement, rapporterer de bare antall på koprodukter og biprodukter, fordi planleggingselementer ikke inneholder en vare av *Formel*-typen.
+
+### <a name="reporting-co-product-variation"></a>Rapportering av koproduktvariasjon
+
+Hvis det opprettes en partiordre fra en formelversjon der alternativet **Koproduktvariasjoner** er satt til *Ja*, kan arbeideren rapportere på koprodukter som ikke er en del av definisjonen for partiordrene. Denne funksjonaliteten brukes i scenarier der uventede produktutdata kan forekomme i produksjonsprosessen.
+
+I dette tilfellet kan arbeideren angi koproduktet og antallet som skal rapporteres, ved å velge **Koproduktvariasjoner** i dialogboksen Rapportfremgang. Arbeideren kan deretter velge blant alle de frigitte produktene som er definert som koprodukter.
 
 ## <a name="reporting-scrap"></a>Rapportere svinn
 

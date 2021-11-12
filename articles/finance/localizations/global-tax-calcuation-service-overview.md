@@ -2,7 +2,7 @@
 title: Oversikt over avgiftsberegning
 description: Dette emnet forklarer det helhetlige omfanget og funksjonene i avgiftsberegning.
 author: wangchen
-ms.date: 08/17/2021
+ms.date: 10/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 72895cc18368ebf38818f30510cec999391c7910
-ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
+ms.openlocfilehash: caa7e458763b6ba6b2b85ab016a1aa2e53cee89a
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7394592"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647063"
 ---
 # <a name="tax-calculation-overview"></a>Oversikt over avgiftsberegning
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 Avgiftsberegning er en hyperskalerbar flerleiertjeneste som gjør det mulig for Global Tax Engine å automatisere og forenkle fastsettelses- og beregningsprosessen for avgifter. Avgiftsmotoren er fullt konfigurerbar. Elementene som kan konfigureres, inkluderer, men er ikke begrenset til avgiftspliktig datamodell, avgiftskode, relevansmatrise og avgiftsberegningsformel. Avgiftsmotoren kjører på Microsoft Azure-kjernetjenesteplattformen og tilbyr teknologi og eksponentiell skalerbarhet.
 
@@ -120,6 +118,10 @@ Følgende transaksjoner støttes i versjon 10.0.21:
     - Overføringsordre – send
     - Overføringsordre – motta
 
+Følgende transaksjoner støttes i versjon 10.0.23: 
+
+- Fritekstfaktura
+
 ## <a name="supported-countriesregions"></a>Støttede land/områder
 
 Avgiftsberegning kan aktiveres etter juridisk enhet. 
@@ -145,6 +147,28 @@ Følgende land/områder for primæradressen til en juridisk enhet støttes i ver
 - Sveits
 - Storbritannia
 - USA
+
+Følgende land/områder for primæradressen til en juridisk enhet støttes i versjon 10.0.22:
+
+- Australia
+- Bahrain
+- Canada
+- Egypt
+- Hongkong SAR
+- Kuwait
+- New Zealand
+- Oman
+- Qatar
+- Saudi-Arabia
+- Sør-Afrika
+- De forente arabiske emirater
+
+Følgende land/områder for primæradressen til en juridisk enhet støttes i versjon 10.0.23:
+
+- Thailand
+- Japan
+- Malaysia
+- Singapore
 
 ## <a name="related-resources"></a>Relaterte ressurser
 

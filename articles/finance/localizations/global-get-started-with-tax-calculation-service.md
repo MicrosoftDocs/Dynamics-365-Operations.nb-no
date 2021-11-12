@@ -2,7 +2,7 @@
 title: Kom i gang med avgiftsberegning
 description: Dette emnet forklarer hvordan du konfigurerer avgiftsberegning.
 author: wangchen
-ms.date: 08/17/2021
+ms.date: 10/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: a849343cda54745f5ba3afc53e2082e79f71a29a
-ms.sourcegitcommit: 86f0574363fb869482ef73ff294f345f81d17c5b
+ms.openlocfilehash: 2f26f8e5eafe29e88c26d3fb6cfa950466ec6be9
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7562132"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647440"
 ---
 # <a name="get-started-with-tax-calculation"></a>Kom i gang med avgiftsberegning
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 Dette emnet gir informasjon om hvordan du kommer i gang med avgiftsberegning. Den veileder deg gjennom konfigurasjonstrinnene i Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Service (RCS), Dynamics 365 Finance og Dynamics 365 Supply Chain Management. Deretter gjennomgås de vanlige prosessen for bruk av funksjonene for avgiftsberegning i Finance- og Supply Chain Management-transaksjoner.
 
@@ -41,29 +39,10 @@ Oppsettet består av fire hovedtrinn:
 
 Før du kan fullføre trinnene i dette emnet må forutsetninger være på plass for hver miljøtype:
 
-### <a name="for-a-production-environment"></a>For et produksjonsmiljø
-
-For et produksjonsmiljø må følgende forutsetninger være oppfylt:
+Følgende forutsetninger må være oppfylt:
 
 - Du må ha tilgang til LCS-kontoen din, og du må ha distribuert et LCS-prosjekt som har et nivå 2-miljø (eller over) som kjører Dynamics 365 versjon 10.0.21 eller senere.
 - Du må opprette et RCS-miljø for din organisasjon, og du må ha tilgang til kontoen. Hvis du vil ha mer informasjon om hvordan du oppretter et RCS-miljø, kan du se [Oversikt over Regulatory Configuration Service](rcs-overview.md).
-- Følgende funksjoner må være aktivert i arbeidsområdet **Funksjonsbehandling** i det distribuerte Finance- eller Supply Chain Management-miljøet, basert på dine forretningsbehov:
-
-    - Avgiftsberegningstjeneste
-    - Støtte for flere mva-registreringsnumre
-    - Avgift i overføringsordre
-
-- Følgende funksjoner må være aktivert i arbeidsområdet **Funksjonsbehandling** i det distribuerte RCS-miljøet.
-
-    - Globaliseringsfunksjoner
-
-### <a name="for-a-test-environment-public-preview"></a>For et testmiljø (offentlig forhåndsversjon)
-
-For et testmiljø må følgende forutsetninger være oppfylt:
-
-- Du må ha tilgang til LCS-kontoen din, og du må ha distribuert et LCS-prosjekt som har et nivå 2-miljø (eller over) som kjører Dynamics 365 versjon 10.0.21 eller senere versjon.
-- Du må opprette et RCS-miljø for din organisasjon, og du må ha tilgang til kontoen. Hvis du vil ha mer informasjon om hvordan du oppretter et RCS-miljø, kan du se [Oversikt over Regulatory Configuration Service](rcs-overview.md).
-- Du må kontakte Microsoft, ved å sende en e-post til <taxcalc@microsoft.com>, for å aktivere testversjonering i det distribuerte Finance- eller Supply Chain Management-miljøet.
 - Følgende funksjoner må være aktivert i arbeidsområdet **Funksjonsbehandling** i det distribuerte Finance- eller Supply Chain Management-miljøet, basert på dine forretningsbehov:
 
     - Avgiftsberegningstjeneste

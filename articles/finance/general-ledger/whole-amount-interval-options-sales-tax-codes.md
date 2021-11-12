@@ -1,7 +1,7 @@
 ---
 title: Hele beløp og alternativer for intervallberegning for mva-koder
-description: Denne artikkelen beskriver alternativene for feltet Beregningsmåte når det gjelder mva-koder og hvordan mva beregnes for intervaller og hele beløp.
-author: ShylaThompson
+description: Dette emnet beskriver alternativene for feltet Beregningsmåte når det gjelder mva-koder og hvordan mva beregnes for intervaller og hele beløp.
+author: kailiang
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,23 +12,23 @@ ms.reviewer: roschlom
 ms.custom: 5624
 ms.assetid: 96166db4-b7ca-470b-aeb7-0a66fe0554c4
 ms.search.region: Global
-ms.author: roschlom
+ms.author: kailiang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bb3d622f8a81c0eabc84fb165203aa193f5e7dd6ad148ff50a9f55c87453be9c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 44c4ce480de470b623f6faeff5a763bfcb05aecc
+ms.sourcegitcommit: 4f8465729d7ae0bf5150a2785a6140c984c7030e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731482"
+ms.lasthandoff: 10/31/2021
+ms.locfileid: "7726852"
 ---
 # <a name="whole-amount-and-interval-calculation-options-for-sales-tax-codes"></a>Hele beløp og alternativer for intervallberegning for mva-koder
 
 [!include [banner](../includes/banner.md)]
 
-Denne artikkelen beskriver alternativene for feltet Beregningsmåte når det gjelder mva-koder og hvordan mva beregnes for intervaller og hele beløp.
+Dette emnet beskriver alternativene for feltet **Beregningsmåte** når det gjelder mva-koder og hvordan mva beregnes for intervaller og hele beløp.
 
-Du kan definere en mva-kode som skal beregnes basert på et helt beløp eller et fakturabeløp. Bruk Beregningsmåte-feltet på hurtigfanen Beregning på Mva-kode-siden for å velge hvordan du vil beregne en mva-kode.
+Du kan definere en mva-kode som skal beregnes basert på et helt beløp eller et fakturabeløp. På siden **Mva-koder** bruker du feltet **Beregningsmetode** på hurtigfanen **Beregning** for å velge beregningsmetoden for en mva-kode.
 - Hele beløp – mva-satsen brukes for hele det avgiftspliktige beløpet.
 - Intervall – Det avgiftspliktige beløpet er inndelt i deler, og hver del er innenfor et intervall som har en bestemt mva-sats. Den delen av beløpet som ligger innen et gitt intervall blir avgiftsbelagt i henhold til mva-satsen for det intervallet. Mva er summen av mva-beløpene som beregnes for hvert beløpsintervall.
   > [!NOTE]                                                                                                                              
