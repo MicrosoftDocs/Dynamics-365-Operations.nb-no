@@ -1,25 +1,25 @@
 ---
 title: Dokumentasjon for Finance and Operations-app
 description: Dokumentasjon for Finance and Operations-apper.
-author: robinarh
+author: tonyafehr
 ms.date: 04/13/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
 ms.search.form: DefaultDashboard
 audience: Application User
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: intro-internal
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0746b420d770896ee6010c0e5f5fe17d2e6e52bf0b5d10bf831df7901060c983
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fe029d6a3eb2555e0d77035b089c7cb3e710ee85
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739437"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782138"
 ---
 # <a name="finance-and-operations-application-documentation"></a>Dokumentasjon for Finance and Operations-app
 
@@ -74,7 +74,7 @@ Mye av dette innholdet gjelder også for de tilknyttede produktene: Dynamics 365
 <p><a href="../../finance/cash-bank-management/cash-bank-management.md">Kontant- og bankbehandling</a></p>
 <p><a href="../../finance/general-ledger/audit-policy-rules.md">Samsvar</a></p>
 <p><a href="../../finance/cost-accounting/cost-accounting-home-page.md">Kostnadsregnskap</a></p>
-<p><a href="../../finance/fixed-assets/fixed-assets.md">Anleggsmidler</a></p>
+<p><a href="../../finance/fixed-assets/fixed-assets.md">Faste objekter</a></p>
 <p><a href="../../finance/general-ledger/general-ledger.md">Økonomimodul</a></p>
 <p><a href="/dynamics365/project-operations/prod-pma/overview-project-management-accounting">Prosjektstyring</a></p>
 <p><a href="../../finance/public-sector/public-sector-functionality.md">Offentlig sektor</a></p>

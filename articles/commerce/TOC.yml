@@ -2042,15 +2042,15 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md?toc=/dynamics365/commerce/toc.json
                     - name: Komprimere store utgående dokumenter
                       href: ../fin-ops-core/dev-itpro/analytics/er-compress-outbound-files.md?toc=/dynamics365/commerce/toc.json
-                - name: Kontrollere konfigurerte ER-komponenter
+                - name: Kontroller konfigurerte ER-komponenter
                   href: ../fin-ops-core/dev-itpro/analytics/er-components-inspections.md?toc=/dynamics365/commerce/toc.json
                 - name: Relativ bane i databindinger
                   href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=/dynamics365/commerce/toc.json
             - name: Bruke ER-løsninger i Commerce
               items:
-                - name: Konfigurere rammeverket
+                - name: Konfigurer rammeverket
                   items:
-                    - name: Konfigurere rammeverket for elektronisk rapportering
+                    - name: Konfigurer rammeverket for elektronisk rapportering
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/dynamics365/commerce/toc.json
                     - name: Sikkerhetskopiere og gjenopprette ER-maler
                       items:
@@ -2534,13 +2534,15 @@
                       href: e-commerce-extensibility/best-practices-dev.md
                     - name: Vanlige spørsmål om SDK for Dynamics 365 Commerce online
                       href: e-commerce-extensibility/sdk-faq.md
-                    - name: Feilsøke anbefalte fremgangsmåter for utvikling av Dynamics 365 Commerce
+                    - name: Feilsøking av anbefalte fremgangsmåter for utvikling av Dynamics 365 Commerce
                       href: e-commerce-extensibility/debugging-best-practices.md
             - name: SDK for Retail
               items:
+                - name: Overfør til SDK for Commerce
+                  href: dev-itpro/retail-sdk/migrate-commerce-sdk.md
                 - name: Arkitektur for SDK for Retail
                   href: dev-itpro/retail-sdk/retail-sdk-overview.md
-                - name: Konfigurere en kompileringskontroll for uavhengig emballasje-SDK
+                - name: Konfigurer en kompileringskontroll for uavhengig emballasje-SDK
                   href: dev-itpro/build-pipeline.md
                 - name: Overføre SDK for Retail fra Visual Studio 2015 til Visual Studio 2017
                   href: dev-itpro/retail-sdk/migrate-sdk.md

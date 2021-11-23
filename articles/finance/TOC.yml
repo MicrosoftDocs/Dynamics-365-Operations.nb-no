@@ -708,53 +708,11 @@
               href: general-ledger/electronic-messaging-work-with-em.md
             - name: Kall opp et enkelt eksporterings-ER-format for å generere en Excel-rapport
               href: general-ledger/electronic-messaging-example.md
-        - name: Reiseregning og utlegg
-          items:
-            - name: Oversikt over reiseregning og utlegg
-              href: /dynamics365/project-operations/prod-exp/expense-management
-            - name: Ny utforming av utgiftsrapporter
-              href: /dynamics365/project-operations/prod-exp/ExpenseWorkspaceNew
-            - name: Planlegge reiseregninger og utlegg
-              href: /dynamics365/project-operations/prod-exp/plan-expense-management
-            - name: Parametere for reiseregning og utlegg
-              href: /dynamics365/project-operations/prod-exp/Expense-Management-Parameters
-            - name: Mobilt arbeidsområde for reiseregninger og utlegg
-              href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace
-            - name: Konfigurere arbeidsflyter for reiseregning og utlegg
-              href: /dynamics365/project-operations/prod-exp/expense-workflows
-            - name: Arbeidsflyt for reiseregninger og utlegg
-              href: /dynamics365/project-operations/prod-exp/expense-workflow
-            - name: Behandle utgiftsdelegering
-              href: /dynamics365/project-operations/prod-exp/manage-expense-delegation
-            - name: Behandling av utgiftsmottak
-              href: /dynamics365/project-operations/prod-exp/expense-receipt-processing
-            - name: Importere og opprettholde kredittkorttransaksjoner
-              href: /dynamics365/project-operations/prod-exp/import-credit-card
-            - name: Distribusjoner i en reiseregning
-              href: /dynamics365/project-operations/prod-exp/expense-report-distributions
-            - name: Konserninterne utgifter
-              href: /dynamics365/project-operations/prod-exp/intercompany-expense
-            - name: Definere utgiftspolicyer
-              href: /dynamics365/project-operations/prod-exp/travel-expense-policies
-            - name: Vise en reiseregning
-              href: /dynamics365/project-operations/prod-exp/view-expense-report
-            - name: Redigere en reiseregning
-              href: /dynamics365/project-operations/prod-exp/post-expense
-            - name: Reiseregninger og flere godkjennere
-              href: /dynamics365/project-operations/prod-exp/expense-report-multiple-approvers
-            - name: Mva-fradrag i Reiseregning
-              href: /dynamics365/project-operations/prod-exp/VAT-expense-report
-            - name: Kostgodtgjørelsesregler
-              href: /dynamics365/project-operations/prod-exp/per-diem
-            - name: Reiserekvisisjoner
-              href: /dynamics365/project-operations/prod-exp/travel-req
-            - name: Personlige utgifter i en reiseregningsrapport
-              href: /dynamics365/project-operations/prod-exp/personal-expenses
         - name: Faste objekter
           items:
-            - name: Startside for anleggsmidler
+            - name: Startside for faste objekter
               href: fixed-assets/fixed-assets.md
-            - name: Opprette et anleggsmiddel
+            - name: Opprett et fast objekt
               href: fixed-assets/tasks/create-fixed-asset.md
             - name: Legge inn et tillegg til et anleggsmiddel
               href: fixed-assets/tasks/enter-addition-fixed-asset.md
@@ -1248,9 +1206,7 @@
               href: finance-insights/finance-insights-home-page.md
             - name: Konfigurasjon og administrasjon
               items:
-                - name: Konfigurer Finance Insights for offentlig forhåndsversjon
-                  href: finance-insights/configure-for-fin-insites-PubPrvw.md
-                - name: Konfigurer Finance Insights for privat forhåndsvisning
+                - name: Konfigurer Finance Insights
                   href: finance-insights/configure-for-fin-insites.md
                 - name: Aktiver kundebetalingsprognoser
                   href: finance-insights/enable-cust-paymnt-prediction.md
@@ -1288,93 +1244,11 @@
                   href: finance-insights/payment-snapshots.md
             - name: Vanlige spørsmål for feilsøking for Finance Insights
               href: finance-insights/finance-insights-troubleshooting-faq.md
-        - name: Prosjektstyring og regnskap
-          items:
-            - name: Oversikt over prosjektstyring og regnskap
-              href: /dynamics365/project-operations/prod-pma/overview-project-management-accounting
-            - name: Konsernintern fakturering
-              href: /dynamics365/project-operations/prod-pma/intercompany-invoicing
-            - name: Konfigurere konsernintern prosjektfakturering
-              href: /dynamics365/project-operations/prod-pma/configure-intercompany-project-invoicing
-            - name: Konfigurere standardkostnader for arbeid og utgifter
-              href: /dynamics365/project-operations/prod-pma/configure-standard-costs-labor-expenses
-            - name: Opprette og bruke betingelser for tilbakeholdelse av leverandørbetaling
-              href: /dynamics365/project-operations/prod-pma/create-and-apply-vendor-payment-retention-terms
-            - name: Definere og bruke leverandørbetalinger med metoden betal-når-betalt
-              href: /dynamics365/project-operations/prod-pma/setup-manage-vendor-payments
-            - name: Kjøpsmottak for avsetning av prosjektkostnad
-              href: accounts-payable/project-cost-accrual-purchase-receipts.md
-            - name: Prosjektfakturering
-              href: accounts-payable/project-invoicing.md
-            - name: Prosjektkontrakter
-              href: /dynamics365/project-operations/prod-pma/project-contracts
-            - name: Opprette avanserte kontrakter for fakturering basert på fremdriften
-              href: /dynamics365/project-operations/prod-pma/project-create-advanced-contracts-for-billing-based-progress
-            - name: Prosjektprognoser og budsjetter
-              href: /dynamics365/project-operations/prod-pma/project-forecasts-budgets
-            - name: Opprette prognosemodeller for prosjektbudsjetter
-              href: /dynamics365/project-operations/prod-pma/create-forecast-models-project-budgets
-            - name: Overføre prosjektbudsjetter ved regnskapsårets avslutning
-              href: /dynamics365/project-operations/prod-pma/process-project-budgets-for-fiscal-year-end
-            - name: Prosjektsalgsordrer
-              href: /dynamics365/project-operations/prod-pma/project-sales-orders
-            - name: Bestillinger for et prosjekt
-              href: /dynamics365/project-operations/prod-pma/project-purchase-orders
-            - name: Prosjekttilbud
-              href: /dynamics365/project-operations/prod-pma/project-quotations
-            - name: 'Bekrefte, oppdatere og sende et prosjekttilbud'
-              href: /dynamics365/project-operations/prod-pma/confirm-update-send-project-quotation
-            - name: Overføre et tilbud til et prosjekt
-              href: /dynamics365/project-operations/prod-pma/transfer-quote-new-existing-project
-            - name: Prosjektressurser
-              items:
-                - name: Oversikt over prosjektressurser
-                  href: /dynamics365/project-operations/prod-pma/project-resourcing
-                - name: Definere prosjektressurser
-                  href: /dynamics365/project-operations/prod-pma/set-up-project-resources
-                - name: Administrere ressurskompetanser
-                  href: /dynamics365/project-operations/prod-pma/manage-resource-competencies
-                - name: Opprett nytt prosjekt
-                  href: /dynamics365/project-operations/prod-pma/create-new-project
-                - name: Definere rollebasert prising
-                  href: /dynamics365/project-operations/prod-pma/set-up-role-based-pricing
-                - name: Opprette et prosjektteam
-                  href: /dynamics365/project-operations/prod-pma/create-project-team
-                - name: Synkronisere ressurskapasitet
-                  href: /dynamics365/project-operations/prod-pma/synchronize-resource-capacity
-                - name: Ytelse for planlegging av prosjektressurs
-                  href: /dynamics365/project-operations/prod-pma/project-scheduling-performance
-                - name: Definere roller i maler for arbeidsnedbrytingsstruktur
-                  href: /dynamics365/project-operations/prod-pma/set-up-roles-wbs-template
-                - name: Ressursoppfyllelse av planlagte ressurser
-                  href: /dynamics365/project-operations/prod-pma/resource-fulfillment-planned-resources
-            - name: Motta varer i bestilling fra varebehov
-              href: /dynamics365/project-operations/prod-pma/receive-items-purchase-order-item-requirement
-            - name: Arbeidsnedbrytningsstruktur
-              items:
-                - name: Oversikt over arbeidsnedbrytningsstruktur
-                  href: /dynamics365/project-operations/prod-pma/work-breakdown-structures
-                - name: Integrering av Microsoft Project Client
-                  href: /dynamics365/project-operations/prod-pma/project-integration
-                - name: Oversikt over mobilapper for Project
-                  href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview
-                - name: Mobilt arbeidsområde for registrering av prosjekttid
-                  href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace
-                - name: Mobilappen Project Timesheet
-                  href: /dynamics365/project-operations/prod-pma/project-timesheet
-                - name: Timeregistreringer for prosjekt på en mobilenhet
-                  href: /dynamics365/project-operations/prod-pma/Mobile-timesheets
-                - name: Implementere egendefinerte felt for mobilappen Project Timesheet
-                  href: /dynamics365/project-operations/prod-pma/custom-fields-mobile
-            - name: Prosjekttilskudd
-              href: /dynamics365/project-operations/prod-pma/project-grants
-            - name: Eliminere et prosjektestimat
-              href: /dynamics365/project-operations/prod-pma/eliminate-project-estimate
         - name: Offentlig sektor
           items:
             - name: Startside for offentlig sektor
               href: public-sector/public-sector-functionality.md
-            - name: Planlegge for funksjonalitet for offentlig sektor
+            - name: Planlegg for funksjonalitet for offentlig sektor
               href: public-sector/plan-public-sector-functionality.md
             - name: Opprette forside og signatursider for en betalingsrapport for offentlig sektor
               href: public-sector/tasks/create-cover-signature-pages-payments-report-public-sector.md
@@ -1800,10 +1674,12 @@
                       href: localizations/nf-e-custom-certificate-validation.md
                     - name: 'Definere, importere og kontrollere XML-dokumenter og DANFE for NF-e'
                       href: localizations/latam-bra-set-up-import-nfe.md
-                    - name: Definere føderale NF-e-parametere
+                    - name: Definer føderale NF-e-parametere
                       href: localizations/tasks/br-00053-1-set-up-nf-e-federal-parameters.md
                     - name: Definer NF-e-parametere for et regnskapsfirma
                       href: localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
+                    - name: Flytt NF-e XML-filer som vedlegg
+                      href: localizations/latam-bra-nf-e-move-xml-as-attachment.md
                     - name: NT2020.005 – Oppsett- og valideringsoppdateringer i det elektroniske regnskapsdokumentet (NF-e)
                       href: localizations/latam-bra-nfe-nt2020.005.md
                     - name: NT2020.006 – Digital plattform for mellomleddssalg for NF-e
@@ -2186,10 +2062,12 @@
                       href: localizations/emea-tax-point-date.md
                     - name: Mva-rapportering
                       href: localizations/emea-vat-reporting.md
-                    - name: Opprette og sende inn mva-rapport
+                    - name: Opprett og send inn mva-rapport
                       href: localizations/tasks/create-submit-vat-report.md
-                - name: Vise transaksjoner ved utligning
+                - name: Vis transaksjoner ved utligning
                   href: localizations/emea-transactions-settlement-form.md
+                - name: Finansårsak
+                  href: localizations/emea-financial-reason.md
             - name: Finland
               items:
                 - name: Oversikt over Finland
@@ -2750,10 +2628,14 @@
                   href: localizations/emea-ita-exil-zero-invoice-posting.md
                 - name: Forbedring av brukervennligheten til bankdata
                   href: localizations/emea-ita-exil-bank-accounts-setup.md
-                - name: Italiensk Intrastat
-                  href: localizations/emea-ita-intrastat.md
-                - name: Postere ankomster og fordelinger for Intrastat
-                  href: localizations/emea-ita-post-arrivals-and-dispatches-for-intrastat.md
+                - name: Intrastat
+                  items:
+                    - name: Italiensk Intrastat
+                      href: localizations/emea-ita-intrastat.md
+                    - name: Poster ankomster og fordelinger for Intrastat
+                      href: localizations/emea-ita-post-arrivals-and-dispatches-for-intrastat.md
+                    - name: Intrastat-filformat (IT)
+                      href: /dynamics/s-e/365business/dynamices365finance_itintrastatfile
                 - name: Diverse tillegg per kilo i en Intrastat-deklarering
                   href: localizations/emea-ita-exil-misc-charges-intrastat.md
                 - name: Formålsbrev – fakturering av vanlige eksportører
@@ -3108,9 +2990,11 @@
                   href: localizations/emea-foreign-currency-revaluation.md
                 - name: Returnerbar emballasje
                   href: localizations/emea-pol-returnable-packages.md
-                - name: Merverdiavgiftsrapporter
+                - name: Merverdiavgiftrapporter
                   href: localizations/emea-pol-sales-tax-reports.md
-                - name: Definere nummerserier etter lager
+                - name: Polsk Intrastat
+                  href: localizations/emea-pol-intrastat.md
+                - name: Definer nummerserier etter lager
                   href: localizations/emea-pol-number-sequence-warehouses.md
                 - name: Standard revisjonsfil
                   href: localizations/emea-pol-standard-audit-file-saf.md
@@ -4371,15 +4255,17 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md?toc=/dynamics365/finance/toc.json
                     - name: Komprimere store utgående dokumenter
                       href: ../fin-ops-core/dev-itpro/analytics/er-compress-outbound-files.md?toc=/dynamics365/finance/toc.json
-                - name: Kontrollere konfigurerte ER-komponenter
+                - name: Kontroller konfigurerte ER-komponenter
                   href: ../fin-ops-core/dev-itpro/analytics/er-components-inspections.md?toc=/dynamics365/finance/toc.json
                 - name: Relativ bane i databindinger
                   href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=/dynamics365/finance/toc.json
-            - name: Bruke ER-løsninger i Finance
+                - name: Utform uttrykk til å kalle opp programklassemetoder
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/design-expressions-app-class-er.md?toc=/dynamics365/finance/toc.json
+            - name: Bruk ER-løsninger i Finance
               items:
-                - name: Konfigurere rammeverket
+                - name: Konfigurer rammeverket
                   items:
-                    - name: Konfigurere rammeverket for elektronisk rapportering
+                    - name: Konfigurer rammeverket for elektronisk rapportering
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/dynamics365/finance/toc.json
                     - name: Sikkerhetskopiere og gjenopprette ER-maler
                       items:

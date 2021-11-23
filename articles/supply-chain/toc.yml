@@ -711,10 +711,12 @@
                   href: cost-management/weighted-average-physical-value-marking.md
                 - name: Lagerlukking
                   href: cost-management/inventory-close.md
-                - name: Justere kostnadsverdier for lagerbeholdning
+                - name: Juster kostnadsverdier for lagerbeholdning
                   href: cost-management/adjust-hand-inventory-cost-values.md
-                - name: Rapport for oppbevaring av lagerverdi
+                - name: Lagerverdirapporter
                   href: cost-management/inventory-value-report-storage.md
+                - name: Eksempler og logikk for lagerverdirapport
+                  href: cost-management/inventory-value-report-examples.md
                 - name: Lagring av rapport for aldersfordeling for lager
                   href: cost-management/inventory-aging-report-storage.md
                 - name: Eksempler og logikk for rapport for aldersfordeling for lager
@@ -1371,15 +1373,15 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Komprimere store utgående dokumenter
                       href: ../fin-ops-core/dev-itpro/analytics/er-compress-outbound-files.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Kontrollere konfigurerte ER-komponenter
+                - name: Kontroller konfigurerte ER-komponenter
                   href: ../fin-ops-core/dev-itpro/analytics/er-components-inspections.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Relativ bane i databindinger
                   href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=/dynamics365/supply-chain/toc.json
             - name: Bruke ER-løsninger i Supply Chain Management
               items:
-                - name: Konfigurere rammeverket
+                - name: Konfigurer rammeverket
                   items:
-                    - name: Konfigurere rammeverket for elektronisk rapportering
+                    - name: Konfigurer rammeverket for elektronisk rapportering
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Sikkerhetskopiere og gjenopprette ER-maler
                       items:
@@ -1673,6 +1675,8 @@
                   href: master-planning/planning-optimization/infinite-capacity-planning.md
                 - name: Planlegging med ressursvalg basert på evner
                   href: master-planning/planning-optimization/capability-based-scheduling.md
+                - name: Prioritetsbasert planlegging
+                  href: master-planning/planning-optimization/priority-based-planning.md
                 - name: Lagermerking med planleggingsoptimalisering
                   href: master-planning/planning-optimization/marking.md
                 - name: Konsernintern planlegging
@@ -1715,15 +1719,17 @@
                   href: master-planning/tasks/constrained-plan.md
                 - name: Opprette en materialplan for koprodukter
                   href: master-planning/tasks/create-material-plan-co-products.md
-                - name: Vedlikeholde planlagte ordrer
+                - name: Vedlikehold planlagte ordrer
                   href: master-planning/maintain-planned-orders.md
                 - name: Fullføring av sikkerhetslager for varer
                   href: master-planning/safety-stock-replenishment.md
+                - name: Bruk sikkerhetslagerjournalen til å oppdatere minste dekning for varer
+                  href: master-planning/safety-stock-journal.md
                 - name: Forsinkelser
                   href: master-planning/delays.md
-                - name: Avbryte en hovedplanleggingsjobb
+                - name: Avbryt en hovedplanleggingsjobb
                   href: master-planning/cancel-master-planning-job.md
-                - name: Bruke sporing for nedbryting
+                - name: Bruk sporing for nedbryting
                   href: master-planning/trace-explosion.md
                 - name: Handlingsmeldinger
                   href: master-planning/action-messages.md
@@ -2351,6 +2357,8 @@
               href: production-control/unified-job-ids.md
             - name: Start prosessautomeringsflyter for å opprette kvalitetsordrer
               href: production-control/process-automation-quality-orders.md
+            - name: Integrer med tredjeparts produksjonsutførelsessystemer
+              href: production-control/mes-integration.md
             - name: Stykkproduksjon
               items:
                 - name: Oppretthold produksjonshoveddata
@@ -2649,6 +2657,8 @@
                   href: production-control/production-floor-execution-use.md
                 - name: Utform grensesnittet for produksjonsutførelse
                   href: production-control/production-floor-execution-styles.md
+                - name: Tilpass grensesnittet for produksjonsutførelse
+                  href: production-control/production-floor-execution-customize.md
         - name: Rabattbehandling
           items:
             - name: Oversikt over rabattbehandlingsmodul

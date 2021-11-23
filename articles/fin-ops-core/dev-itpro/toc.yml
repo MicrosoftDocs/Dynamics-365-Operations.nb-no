@@ -1172,6 +1172,8 @@
               items:
                 - name: Oversikt over forretningshendelser
                   href: business-events/home-page.md
+                - name: Administrering av endepunkt for forretningshendelser
+                  href: business-events/managing-business-event-endpoints.md
                 - name: Forretningshendelser for applikasjon
                   href: business-events/app-business-events.md
                 - name: Forretningshendelser for arbeidsflyt
@@ -1198,12 +1200,16 @@
                       href: business-events/how-to/how-to-eventgrid.md
                     - name: Forretningshendelser og Azure Service Bus
                       href: business-events/how-to/how-to-servicebus.md
+                    - name: Forretningshendelser og Azure Service Bus-kø
+                      href: business-events/how-to/how-to-servicebus-queue.md
                     - name: Forretningshendelser og arbeidsflytgodkjenninger
                       href: business-events/how-to/how-to-workflow.md
                     - name: Forretningshendelser og Microsoft Forms Pro
                       href: business-events/how-to/FormsPro.md
                     - name: Forretningshendelser og Azure Event Hubs
                       href: business-events/how-to/event-hub.md
+                    - name: Abonner på hendelser i Dataverse
+                      href: business-events/how-to/how-to-dataverse-events.md
                     - name: Forretningshendelser i regnskapsperiodeavslutning
                       href: business-events/how-to/period-close.md
             - name: Tilleggsprogrammer
@@ -1654,8 +1660,6 @@
                   items:
                     - name: Gjør skilletegnet for kontoplan unikt
                       href: migration-upgrade/chart-accounts-delimiter-unique.md
-                    - name: Oppgradere enkeltjournalbilag og valutarevalueringer
-                      href: migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md
                     - name: Datamodell for planlegging av prosjektressurs
                       href: migration-upgrade/data-model-changes-resource-management.md
                     - name: Endringer i delsystem for arbeidsflyt
