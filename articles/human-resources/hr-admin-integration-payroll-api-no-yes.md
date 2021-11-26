@@ -34,7 +34,7 @@ Denne opplistingen gir alternativsettet for vanlige boolske egenskaper i virtuel
 
 | Verdi | Etikett | beskrivelse |
 | --- | --- | --- |
-| 200000000 | Ingen | Nei. |
+| 200000000 | Nei | Nei. |
 | 200000001 | Ja | Ja. |
 
 ## <a name="see-also"></a>Se også

@@ -42,8 +42,8 @@ Et vanlig TV-produkt kan for eksempel ha følgende attributter.
 |            | DVI-innganger               | 0–10                        | 1             |
 |            | Komposittinnganger         | 0–10                        | 2             |
 |            | Komponentinnganger         | 0–10                        | 1             |
-| LCD-SKJERM        | 3D Ready                 | Ja eller No                   | Ja           |
-|            | 3D Enabled               | Ja eller No                   | Antall            |
+| LCD-SKJERM        | 3D Ready                 | Ja eller Nei                   | Ja           |
+|            | 3D Enabled               | Ja eller Nei                   | Nei            |
 | Plasma     | Driftstemperatur fra      | 0–43 grader              | 32            |
 |            | Driftstemperatur til        | 0–43 grader              | 100           |
 | Projektor | Garanti for projiseringsrør | 6, 12 eller 18 måneder         | 12            |

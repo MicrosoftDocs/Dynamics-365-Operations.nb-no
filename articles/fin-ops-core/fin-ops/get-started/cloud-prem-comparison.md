@@ -48,7 +48,7 @@ Tabellene nedenfor viser programområdene. Søttte for sky og lokalt er oppført
 |                                      | Dataintegreringer                                                                         | Ja       | Ja             |
 | Dokumentstyring                  |                                                                                           | Ja       | Ja             |
 | Økonomistyring                 |                                                                                           | Ja       | Ja             |
-| Hjelp                                 |                                                                                           | Ja       | Antall              |
+| Hjelp                                 |                                                                                           | Ja       | Nei              |
 | Personale                      |                                                                                           | Ja       | Ja             |
 | Intelligens                         |                                                                                           | Ja       | Ja             |
 |                                      | Elektronisk rapportering (ER)                                                                 | Ja       | Ja             |
@@ -62,7 +62,7 @@ Tabellene nedenfor viser programområdene. Søttte for sky og lokalt er oppført
 |                                      | Intelligent forretningsprosess: Anbefalinger                                             | Ja       | Nei              |
 |                                      | Forfatte Power BI-rapporter med OData ved hjelp av Power BI-skrivebords- eller Excel PowerQuery-verktøy    | Ja       | Nei              |
 |                                      | SQL Server Reporting Services (SSRS) støtter skalering ut                                 | Ja       | Ja             |
-|                                      | Telemetri overføres til skyen                                                   | Ja       | Ingen              |
+|                                      | Telemetri overføres til skyen                                                   | Ja       | Nei              |
 | Livssyklustjenester                   |                                                                                           | Ja       | Ja             |
 |                                      | Konfigurerbare forretningsprosesser                                                           | Ja       | Nei              |
 | Lokaliseringer                        |                                                                                           | Ja       | Ja             |
@@ -75,7 +75,7 @@ Tabellene nedenfor viser programområdene. Søttte for sky og lokalt er oppført
 | Sikkerhet                             |                                                                                           | Ja       | Ja             |
 | Servicestyring                   |                                                                                           | Ja       | Ja             |
 | Webklient                           |                                                                                           | Ja       | Ja             |
-|                                      | Oppgaveopptaker – Lagre eller last inn oppgavepptak fra BPM-biblioteket                         | Ja       | Antall              |
+|                                      | Oppgaveopptaker – Lagre eller last inn oppgavepptak fra BPM-biblioteket                         | Ja       | Nei              |
 | Støtte                              |                                                                                           | Ja       | Ja             |
 |                                      | Tilgang til support via hjelp- og støttemeny                                             | Ja       | Nei              |
 |                                      | Forretningshendelser                                                                           | Ja       | Ja (enten kreves en Internett-tilkobling, eller det må implementeres egendefinerte endepunkter for å sende/motta forretningshendelser i intranettet)              |
@@ -93,7 +93,7 @@ Tabellene nedenfor viser programområdene. Søttte for sky og lokalt er oppført
 | Kostnadsstyring                      |                                                                                           | Ja       | Ja             |
 |                                      | Innholdspakke for kostnadsstyring for Power BI                                                 | Ja       | Nei              |
 | Databehandling og integrering      |                                                                                           | Ja       | Ja             |
-|                                      | Konfigurasjonsdrevet utvidelse                                                            | Ja       | Antall              |
+|                                      | Konfigurasjonsdrevet utvidelse                                                            | Ja       | Nei              |
 |                                      | Eksporter data til ditt eget datalager                                                    | Ja       | Ja             |
 |                                      | Aktiver eksport av inkrementelle oppdateringer til en dataenhet                                 | Ja       | Ja             |
 |                                      | Dataintegreringer                                                                         | Ja       | Ja             |
@@ -111,10 +111,10 @@ Tabellene nedenfor viser programområdene. Søttte for sky og lokalt er oppført
 |                                      | Intelligent forretningsprosess: Anbefalinger                                             | Ja       | Nei              |
 |                                      | Forfatte Power BI-rapporter med OData ved hjelp av Power BI-skrivebords- eller Excel PowerQuery-verktøy    | Ja       | Nei              |
 |                                      | SQL Server Reporting Services (SSRS) støtter skalering ut                                 | Ja       | Ja             |
-|                                      | Telemetri overføres til skyen                                                   | Ja       | Ingen              |
+|                                      | Telemetri overføres til skyen                                                   | Ja       | Nei              |
 | Beholdningsstyring                 |                                                                                           | Ja       | Ja             |
 | Livssyklustjenester                   |                                                                                           | Ja       | Ja             |
-|                                      | Konfigurerbare forretningsprosesser                                                           | Ja       | Antall              |
+|                                      | Konfigurerbare forretningsprosesser                                                           | Ja       | Nei              |
 | Lokaliseringer                        |                                                                                           | Ja       | Ja             |
 | Produksjon                        |                                                                                           | Ja       | Ja             |
 | Hovedplanlegging og prognostisering      |                                                                                           | Ja       | Ja             |
@@ -136,12 +136,12 @@ Tabellene nedenfor viser programområdene. Søttte for sky og lokalt er oppført
 | Servicestyring                   |                                                                                           | Ja       | Ja             |
 | Forsyningskjedeadministrasjon              |                                                                                           | Ja       | Ja             |
 | Transportstyring            |                                                                                           | Ja       | Ja             |
-| Leverandørsamarbeid                 |                                                                                           | Ja       | Antall              |
+| Leverandørsamarbeid                 |                                                                                           | Ja       | Nei              |
 | Lagerstyring                 |                                                                                           | Ja       | Ja             |
 |                                      | Lagerapp for mobil                                                                      | Ja       | Ja             |
 |                                      | Power BI-rapporter for lager                                                              | Ja       | Nei              |
 | Webklient                           |                                                                                           | Ja       | Ja             |
-|                                      | Oppgaveopptaker – Lagre eller last inn oppgavepptak fra BPM-biblioteket                         | Ja       | Antall              |
+|                                      | Oppgaveopptaker – Lagre eller last inn oppgavepptak fra BPM-biblioteket                         | Ja       | Nei              |
 | Støtte                              |                                                                                           | Ja       | Ja             |
 |                                      | Tilgang til support via hjelp- og støttemeny                                             | Ja       | Nei              |
 

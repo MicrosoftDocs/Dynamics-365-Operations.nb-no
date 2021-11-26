@@ -344,7 +344,7 @@ I produksjon, hvis du du angir feltet **Hendelsestype** til *Ferdigmeld* og felt
 </tr>
 <tr>
 <td>Fast antall: 1</td>
-<td>Ingen</td>
+<td>Nei</td>
 <td>
 <p>Partinummer: Nei</p>
 <p>Serienummer: Nei</p>
@@ -399,7 +399,7 @@ I produksjon, hvis du du angir feltet **Hendelsestype** til *Ferdigmeld* og felt
 </tr>
 <tr>
 <td>Fast antall: 2</td>
-<td>Ingen</td>
+<td>Nei</td>
 <td>
 <p>Partinummer: Ja</p>
 <p>Serienummer: Ja</p>

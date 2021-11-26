@@ -75,8 +75,8 @@ Følgende tabell viser eksempler på hvordan ulike innstillinger for et frigitt 
 
 | Frigitt produkt: Leverandør | Standard ordreinnstillinger: Leveringstid | Varedekning: Overstyr leverandør | Varedekning: Overstyr leveringstid | Forretningsavtale: Leverandør | Forretningsavtale: Leveringstid | Forretningsavtale: Ignorer leveringstid | Resulterende leverandør | Resulterende leveringstid |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| ***US001** _ | _*_1_*_ | Nr. | Nr. | US003 | 3 | Nr. | _ *US001** | **1** |
-| US001 | 1 | ***Ja: US002** _ | _*_Ja: 2_*_ | US003 | 3 | Nr. | _ *US002** | **2** |
+| ***US001** _ | _*_1_*_ | Nei | Nei | US003 | 3 | Nei | _ *US001** | **1** |
+| US001 | 1 | ***Ja: US002** _ | _*_Ja: 2_*_ | US003 | 3 | Nei | _ *US002** | **2** |
 | *(Tom)* | 1 | Nei | Nei | ***US003** _ | _*_3_*_ | Nei | _ *US003** | **3** |
 | *(Tom)* | ***1** _ | Nei | Nei | _*_US003_*_ | 3 | Ja | _ *US003** | **1** |
 | *(Tom)* | ***1** _ | _*_Ja: US002_*_ | Nei | US003 | 3 | Nei | _ *US002** | **1** |

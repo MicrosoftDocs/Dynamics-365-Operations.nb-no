@@ -187,34 +187,34 @@ Følgende tabell viser hvilke utgående funksjoner som støttes, og hvor de stø
 
 | Behandle                                                      | Hub | Lagerkjøringsbelastning på en skalaehet |
 |--------------------------------------------------------------|-----|------------------------------|
-| Behandling av kildedokument                                   | Ja | Ingen |
-| Last- og transportstyringsbehandling                | Ja, men bare lastplanleggingsprosessen. Behandling av transportstyring støttes ikke  | Ingen |
-| Frigi til lager                                         | Ja | Ingen |
-| Planlagt direkteoverføring                                        | Ingen  | Ingen |
+| Behandling av kildedokument                                   | Ja | Nei |
+| Last- og transportstyringsbehandling                | Ja, men bare lastplanleggingsprosessen. Behandling av transportstyring støttes ikke  | Nei |
+| Frigi til lager                                         | Ja | Nei |
+| Planlagt direkteoverføring                                        | Nei  | Nei |
 | Forsendelseskonsolidering                                       | Ja, når du bruker lastplanlegging | Ja |
-| Forsendelsesbølgebehandling                                     | Ingen  |Ja, bortsett fra **Lastplanlegging og sortering** |
-| Vedlikehold forsendelser for bølge                                  | Ingen  | Ja|
-| Lagerarbeidsbehandling (inkl. nummerskiltutskrift)        | Ingen  | Ja, men bare for de de tidligere nevnte funksjonene som støttes |
-| Gruppeplukking                                              | Ingen  | Ja|
+| Forsendelsesbølgebehandling                                     | Nei  |Ja, bortsett fra **Lastplanlegging og sortering** |
+| Vedlikehold forsendelser for bølge                                  | Nei  | Ja|
+| Lagerarbeidsbehandling (inkl. nummerskiltutskrift)        | Nei  | Ja, men bare for de de tidligere nevnte funksjonene som støttes |
+| Gruppeplukking                                              | Nei  | Ja|
 | Manuell emballasjebehandling, inkludert arbeidsbehandlingen Plukking av containerpakking | Nei <P>En del behandling kan gjøres etter at en innledende plukkeprosess er håndtert av en skalaenhet, men anbefales ikke på grunn av blokkerte operasjoner.</p>  | Nei |
 | Fjern container fra gruppe                                  | Nei  | Nei |
-| Utgående sorteringsbehandling                                  | Ingen  | Ingen |
+| Utgående sorteringsbehandling                                  | Nei  | Nei |
 | Utskrift av belastningsrelaterte dokumenter                           | Ja | Ja|
-| Fraktbrev og ved generering av forhåndsvarsel for forsendelse                            | Ingen  | Ja|
-| Forsendelsesbekreftelse                                             | Ingen  | Ja|
-| Forsendelsesbekreftelse med Bekreft og overfør            | Ingen  | Ingen |
-| Behandling av følgeseddel og fakturering                        | Ja | Ingen |
-| Plukking med mangler (salgs- og overføringsordrer)                    | Ingen  | Ja, uten å fjerne reserveringer for kildedokumenter|
-| Overplukking (salgs- og overføringsordrer)                     | Ingen  | Ja|
-| Endring av arbeidslokasjoner (salgs- og overføringsordrer)         | Ingen  | Ja|
-| Fullføre arbeid (salgs- og overføringsordrer)                    | Ingen  | Ja|
+| Fraktbrev og ved generering av forhåndsvarsel for forsendelse                            | Nei  | Ja|
+| Forsendelsesbekreftelse                                             | Nei  | Ja|
+| Forsendelsesbekreftelse med Bekreft og overfør            | Nei  | Nei |
+| Behandling av følgeseddel og fakturering                        | Ja | Nei |
+| Plukking med mangler (salgs- og overføringsordrer)                    | Nei  | Ja, uten å fjerne reserveringer for kildedokumenter|
+| Overplukking (salgs- og overføringsordrer)                     | Nei  | Ja|
+| Endring av arbeidslokasjoner (salgs- og overføringsordrer)         | Nei  | Ja|
+| Fullføre arbeid (salgs- og overføringsordrer)                    | Nei  | Ja|
 | Skriv ut arbeidsrapport                                            | Ja | Ja|
-| Bølgeetikett                                                   | Ingen  | Ja|
-| Oppdelt arbeid                                                   | Ingen  | Ja|
+| Bølgeetikett                                                   | Nei  | Ja|
+| Oppdelt arbeid                                                   | Nei  | Ja|
 | Arbeidsbehandling – styrt av Transportlasting            | Nei  | Nei |
-| Reduser plukket antall                                       | Ingen  | Ingen |
-| Tilbakefør arbeid                                                 | Ingen  | Ingen |
-| Reverser forsendelsesbekreftelse                                | Ingen  | Ja|
+| Reduser plukket antall                                       | Nei  | Nei |
+| Tilbakefør arbeid                                                 | Nei  | Nei |
+| Reverser forsendelsesbekreftelse                                | Nei  | Ja|
 
 ### <a name="inbound"></a>Innlevering
 
@@ -246,7 +246,7 @@ Følgende tabell viser hvilke inngående funksjoner som støttes, og hvor de st�
 | Mottak med oppretting av arbeidstypen *Kvalitet i kvalitetskontroll*       | <p>Ja, når det ikke er en lagerordre</p><p>Nei, når det er en lagerordre</p> | Nei |
 | Mottak med oppretting av kvalitetsordre                            | <p>Ja, når det ikke er en lagerordre</p><p>Nei, når det er en lagerordre</p> | Nei |
 | Arbeidsbehandling – styrt av *Gruppeplassering*                 | Ja | Nei |
-| Arbeidsbehandling med *Plukk med mangler*                               | Ja | Ingen |
+| Arbeidsbehandling med *Plukk med mangler*                               | Ja | Nei |
 | Nummerskiltlasting                                           | Ja | Ja |
 
 ### <a name="warehouse-operations-and-exception-handing"></a>Lageroperasjoner og unntaksbehandling
@@ -262,9 +262,9 @@ Følgende tabell viser hvilke funksjoner for lageroperatsjoner og unntaksbehandl
 | Bevegelse                                           | Ja | Ja                          |
 | Flytting etter mal                               | Ja | Ja                          |
 | Lageroverføring                                 | Ja | Nei                           |
-| Opprett overføringsordre fra lagerapp           | Ja | Ingen                           |
+| Opprett overføringsordre fra lagerapp           | Ja | Nei                           |
 | Justering (inn/ut)                                | Ja | Ja, men ikke for justeringsscenariet der lagerreservering må fjernes ved hjelp av innstillingen **Fjern reserveringer** i lagerjusteringstypene</p>                           |
-| Endring av beholdningsstatus                            | Ja | Ingen                           |
+| Endring av beholdningsstatus                            | Ja | Nei                           |
 | Syklustelling og behandling av tellingsavvik | Ja | Ja                           |
 | Skrive ut etikett på nytt (nummerskilteutskrift)             | Ja | Ja                          |
 | Nummerskilt-build                                | Ja | Nei                           |
@@ -290,8 +290,8 @@ Tabellen nedenfor oppsummerer hvilke produksjonsscenarioer med lagerstyring som 
 |---------|-----|------------------------------|
 | Ferdigmeld og Plasser ferdigvarer | Ja | Ja |
 | Plasser koprodukt og biprodukt | Ja | Ja |
-| <p>Alle andre lagerstyringsprosesser som er knyttet til produksjon, inkludert følgende:</p><li>Frigi til lager</li><li>Produksjonsbølgebehandling</li><li>Råvareplukking</li><li>Kanban plassert</li><li>Kanban-plukking</li><li>Start produksjonsordre</li><li>Produksjonssvinn</li><li>Siste produksjonspall</li><li>Registrer materialforbruk</li><li>Tøm Kanban</li></ul> | Ja | Ingen |
-| Etterfylling av råvarer | Ingen | Ingen |
+| <p>Alle andre lagerstyringsprosesser som er knyttet til produksjon, inkludert følgende:</p><li>Frigi til lager</li><li>Produksjonsbølgebehandling</li><li>Råvareplukking</li><li>Kanban plassert</li><li>Kanban-plukking</li><li>Start produksjonsordre</li><li>Produksjonssvinn</li><li>Siste produksjonspall</li><li>Registrer materialforbruk</li><li>Tøm Kanban</li></ul> | Ja | Nei |
+| Etterfylling av råvarer | Nei | Nei |
 
 ## <a name="maintaining-scale-units-for-warehouse-execution"></a>Vedlikeholde skalaenheter for lagerkjøring
 

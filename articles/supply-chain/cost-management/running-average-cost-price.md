@@ -38,9 +38,9 @@ Følgende tabell viser når systemet posterer lagertransaksjoner ved bruk av lø
 
 | Betingelse                                               | Systemet bruker den estimerte løpende gjennomsnittlige kostprisen | Systemet bruker kostprisen som er definert i hovedposten for varen |
 |---------------------------------------------------------|----------------------------------------------------------|-------------------------------------------------------------------|
-| Både telleren\* og nevneren\*\* er positive.  | Ja                                                      | Ingen                                                                |
-| Telleren\*, nevneren\*\* eller begge deler er negative. | Ingen                                                       | Ja                                                               |
-| Nevneren\*\* er 0 (null).                        | Ingen                                                       | Ja                                                               |
+| Både telleren\* og nevneren\*\* er positive.  | Ja                                                      | Nei                                                                |
+| Telleren\*, nevneren\*\* eller begge deler er negative. | Nei                                                       | Ja                                                               |
+| Nevneren\*\* er 0 (null).                        | Nei                                                       | Ja                                                               |
 
 \* Teller = (fysisk beløp + finansielt beløp) \*\* Nevner = (fysisk antall + finansielt antall) 
 

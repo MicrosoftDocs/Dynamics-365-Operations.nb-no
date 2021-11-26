@@ -47,7 +47,7 @@ IFRS 16-tablået konfigureres slik at det er i samsvar med IFRS 16-regnskapsstan
 | Konfigurasjon av nåværende verdi / virkelig verdi på aktivum | 0,00           |
 | Korttidsterskel                    | 12             |
 | Lavverditerskel                     | 5 000,00       |
-| Betal til leverandør                           | Nr.             |
+| Betal til leverandør                           | Nei             |
 
 **Lovbestemt tablå**
 
@@ -64,7 +64,7 @@ Det lovbestemte tablået er et kontantprinsipptablå der firmaet gjør rede for 
 | Konfigurasjon av nåværende verdi / virkelig verdi på aktivum | 0,00        |
 | Korttidsterskel                    | 0           |
 | Lavverditerskel                     | 0           |
-| Betal til leverandør                           | Nr.          |
+| Betal til leverandør                           | Nei          |
 
 **Lovbestemt tilbakeføringstablå**
 
@@ -81,7 +81,7 @@ Det lovbestemte tilbakeføringstablået konfigureres på samme måte som det lov
 | Konfigurasjon av nåværende verdi / virkelig verdi på aktivum | 0,00                           |
 | Korttidsterskel                    | 0                              |
 | Lavverditerskel                     | 0                              |
-| Betal til leverandør                           | Nr.                             |
+| Betal til leverandør                           | Nei                             |
 
 I dette eksemplet er det opprettet en leieavtale som har følgende innstillinger i fanene **Generelt** og **Linjer i betalingsplan**.
 

@@ -47,11 +47,11 @@ Tabellen nedenfor viser noen vanlige eksempler på oppsett av rabattreduksjonspr
 
 | Prinsipp for rabattreduksjon | beskrivelse | Bruk reduksjon | Reduksjonsgrunnlag | Ekskluder fra reduksjon |
 |---|---|---|---|---|
-| Utsatt | Reduser rabatt | Ja | Begge | Ingen |
+| Utsatt | Reduser rabatt | Ja | Begge | Nei |
 | Exclreb | Ekskluder rabatt | Ja | Rabatt | Ja |
 | Flere | Flere rabatter | Ja | Begge | Ja |
-| None | Bare avs. og rabatt | Ingen | Begge | Ja |
-| Klargjør | Bare avsetning | Ja | Klargjør | Ingen |
+| None | Bare avs. og rabatt | Nei | Begge | Ja |
+| Klargjør | Bare avsetning | Ja | Klargjør | Nei |
 | Rabatt | Bare rabatt | Ja | Rabatt | Ja |
 
 ## <a name="examples-of-rebate-reduction-principle-calculations"></a>Eksempler på beregninger av rabattreduksjonsprinsipper

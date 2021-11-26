@@ -101,7 +101,7 @@ Utvikling av POS-utvidelser ved hjelp av ModernPos.sln, CloudPOs.sln, POS.Extens
 |  &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Fra og med denne versjonen, i skjemaet **Parametre for planlegging av handel** i Dynamics 365-hovedkontoret, blir feltet **Fullstendig datasettgenereringsintervall i dager** avskrevet. Hvis du også starter i denne versjonen, fjernes feltet visuelt, slik at verdien ikke kan redigeres. Dette blir stående som verdien **0**. |
-| **Erstattet med en annen funksjon?**   | Nr. |
+| **Erstattet med en annen funksjon?**   | Nei |
 | **Berørte produktområder**         | Dynamics 365 Commerce |
 | **Distribusjonsalternativ**              | Alle|
 | **Status**                         | Avskrevet. Ikke bruk dette feltet eller endre verdien i det.|

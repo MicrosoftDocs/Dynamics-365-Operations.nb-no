@@ -69,7 +69,7 @@ Et dimensjonshierarki som oppfyller organisasjonens rapporteringskrav, kan defin
 
 | Dimensjonshierarkinavn | Dimensjon    | Navn på dimensjonshierarkitype      | Hierarki for tilgangsliste |
 |--------------------------|--------------|------------------------------------|-----------------------|
-| Organisasjon             | Kostsentre | Hierarki for dimensjonsklassifisering | Ingen                    |
+| Organisasjon             | Kostsentre | Hierarki for dimensjonsklassifisering | Nei                    |
 
 **Dimensjonshierarki**
 

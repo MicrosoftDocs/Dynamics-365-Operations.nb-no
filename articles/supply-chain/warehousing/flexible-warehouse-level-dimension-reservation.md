@@ -421,7 +421,7 @@ Følgende tabeller inneholder en oversikt som viser hvordan systemet håndterer 
 <td>Gjelder ikke</td>
 </tr>
 <tr>
-<td>Ingen</td>
+<td>Nei</td>
 <td>
 <ol>
 <li>Velg <strong>Overstyr plassering</strong>-menyelementet i mobilappen Lagerstyring når du begynner plukkarbeid.</li>
@@ -719,7 +719,7 @@ Følgende tabeller inneholder en oversikt som viser hvordan systemet håndterer 
 </tr>
 <tr>
 <td>Et arbeidsunntak av <strong>Plukk med mangler</strong>-typen settes opp, der <strong>Ny fordeling av vare</strong> = <strong>Manuell</strong>, <strong>Juster beholdning</strong> = <strong>Ja</strong> og <strong>Fjern reservasjoner</strong> = <strong>Nei</strong>. I tillegg er <strong>Tillat manuell omfordeling av varer</strong>-alternativet aktivert for arbeideren.</td>
-<td>Ingen</td>
+<td>Nei</td>
 <td>
 <ol>
 <li>Velg menyelementet <strong>Plukk med mangler</strong> i mobilappen Lagerstyring når du kjører plukkarbeid.</li>
@@ -732,7 +732,7 @@ Følgende tabeller inneholder en oversikt som viser hvordan systemet håndterer 
 </tr>
 <tr>
 <td>Et arbeidsunntak av <strong>Plukk med mangler</strong>-typen settes opp, der <strong>Ny fordeling av vare</strong> = <strong>Manuell</strong>, <strong>Juster beholdning</strong> = <strong>Ja</strong> og <strong>Fjern reservasjoner</strong> = <strong>Ja</strong>. I tillegg er <strong>Tillat manuell omfordeling av varer</strong>-alternativet aktivert for arbeideren.</td>
-<td>Ingen</td>
+<td>Nei</td>
 <td>
 <ol>
 <li>Velg menyelementet <strong>Plukk med mangler</strong> i mobilappen Lagerstyring når du kjører plukkarbeid.</li>

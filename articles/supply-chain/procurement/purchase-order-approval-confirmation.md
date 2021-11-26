@@ -41,8 +41,8 @@ Når endringsadministrasjon er aktivert, går bestillinger gjennom seks godkjenn
 | Godkjenningsstatus | Beskrivelse                                                                      | Be om endring er aktivert |
 |-----------------|----------------------------------------------------------------------------------|---------------------------|
 | Utkast           | Bestillingen er et utkast og er ikke sendt til godkjenning i arbeidsflyten for bestilling.     | Nei                        |
-| Til vurdering       | Bestillingen ble sendt til godkjenning i arbeidsflyten for bestilling. Venter på godkjenning.       | Antall                        |
-| Avslått        | Bestillingen ble avvist under godkjenningsprosessen.                                 | Antall                        |
+| Til vurdering       | Bestillingen ble sendt til godkjenning i arbeidsflyten for bestilling. Venter på godkjenning.       | Nei                        |
+| Avslått        | Bestillingen ble avvist under godkjenningsprosessen.                                 | Nei                        |
 | Godkjent        | Bestillingen ble godkjent.                                                             | Ja                       |
 | Bekreftet       | Bestillingen ble bekreftet. En bestilling kan ikke bekreftes før den er godkjent.        | Ja                       |
 | Sluttført       | Bestillingen ble gjort endelig. Den er nå økonomisk lukket og kan ikke lenger endres. | Nei                        |

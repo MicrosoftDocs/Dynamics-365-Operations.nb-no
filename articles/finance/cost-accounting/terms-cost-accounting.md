@@ -128,7 +128,7 @@ De fleste kildesystemer kan gi data som samsvarer med en eller flere datakilder 
 |---|---|---|---|
 | Medlemmer av dimensjon for kostnadselement  |  Ja | Ja  | Ja  |
 |  Medlemmer av dimensjon for kostnadsobjekt |  Ja | Ja  | Ja  |
-|  Statistiske medlemmer av dimensjon | Ja  | Antall  | Antall  |
+|  Statistiske medlemmer av dimensjon | Ja  | Nei  | Nei  |
 |  Økonomimodul | Ja  | Ja  | Ja  |
 |  Budsjettoppføringer  | Ja  | Ja  | Ja  |
 |  Statistiske målinger | Ja  | Ja  | Ja  |

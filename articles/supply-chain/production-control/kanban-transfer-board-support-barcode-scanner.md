@@ -90,7 +90,7 @@ Statusen for den valgte jobben og statusen for tilknyttede jobber for hendelses-
 <td>Ja</td>
 <td>Ja</td>
 <td>Ja</td>
-<td>Antall</td>
+<td>Nei</td>
 <td>Ja</td>
 </tr>
 <tr class="even">
@@ -100,61 +100,61 @@ Statusen for den valgte jobben og statusen for tilknyttede jobber for hendelses-
 <li>Den tilknyttede jobben er ikke fullført</li>
 </ul></td>
 <td>Ja</td>
-<td>Antall</td>
+<td>Nei</td>
 <td>Ja</td>
-<td>Antall</td>
-<td>Antall</td>
-<td>Antall</td>
+<td>Nei</td>
+<td>Nei</td>
+<td>Nei</td>
 </tr>
 <tr class="odd">
 <td>Overføring</td>
 <td>Pågår</td>
 <td>Ja</td>
-<td>Antall</td>
+<td>Nei</td>
 <td>Ja</td>
 <td>Ja</td>
-<td>Antall</td>
-<td>Antall</td>
+<td>Nei</td>
+<td>Nei</td>
 </tr>
 <tr class="even">
 <td>Overføring</td>
 <td>Fullført</td>
-<td>Antall</td>
-<td>Antall</td>
-<td>Antall</td>
-<td>Antall</td>
+<td>Nei</td>
+<td>Nei</td>
+<td>Nei</td>
+<td>Nei</td>
 <td>Ja</td>
-<td>Antall</td>
+<td>Nei</td>
 </tr>
 <tr class="odd">
 <td>Overføring eller behandling</td>
 <td>Tom</td>
-<td>Antall</td>
-<td>Antall</td>
-<td>Antall</td>
-<td>Antall</td>
-<td>Antall</td>
-<td>Antall</td>
+<td>Nei</td>
+<td>Nei</td>
+<td>Nei</td>
+<td>Nei</td>
+<td>Nei</td>
+<td>Nei</td>
 </tr>
 <tr class="even">
 <td>Overføring eller behandling</td>
 <td>Finner ikke et Kanban-kort</td>
-<td>Antall</td>
-<td>Antall</td>
-<td>Antall</td>
-<td>Antall</td>
-<td>Antall</td>
-<td>Antall</td>
+<td>Nei</td>
+<td>Nei</td>
+<td>Nei</td>
+<td>Nei</td>
+<td>Nei</td>
+<td>Nei</td>
 </tr>
 <tr class="odd">
 <td>Overføring eller behandling</td>
 <td>Det er funnet et Kanban-kort, men det er ikke tilordnet til en Kanban</td>
-<td>Antall</td>
-<td>Antall</td>
-<td>Antall</td>
-<td>Antall</td>
-<td>Antall</td>
-<td>Antall</td>
+<td>Nei</td>
+<td>Nei</td>
+<td>Nei</td>
+<td>Nei</td>
+<td>Nei</td>
+<td>Nei</td>
 </tr>
 <tr class="even">
 <td>Behandle</td>
@@ -163,22 +163,22 @@ Statusen for den valgte jobben og statusen for tilknyttede jobber for hendelses-
 <li>Klargjort</li>
 <li>Pågår</li>
 </ul></td>
-<td>Antall</td>
-<td>Antall</td>
-<td>Antall</td>
-<td>Antall</td>
-<td>Antall</td>
-<td>Antall</td>
+<td>Nei</td>
+<td>Nei</td>
+<td>Nei</td>
+<td>Nei</td>
+<td>Nei</td>
+<td>Nei</td>
 </tr>
 <tr class="odd">
 <td>Behandle</td>
 <td>Fullført</td>
-<td>Antall</td>
-<td>Antall</td>
-<td>Antall</td>
-<td>Antall</td>
-<td>Antall</td>
-<td>Antall</td>
+<td>Nei</td>
+<td>Nei</td>
+<td>Nei</td>
+<td>Nei</td>
+<td>Nei</td>
+<td>Nei</td>
 </tr>
 </tbody>
 </table>

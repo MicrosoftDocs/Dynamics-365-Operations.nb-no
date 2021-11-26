@@ -40,7 +40,7 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 | &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Årsak til avskrivning/fjerning** | Utelatt fra behandling av elektroniske meldinger for samhandling med ungarsk elektronisk faktureringssystem |
-| **Erstattet med en annen funksjon?**   | Ingen |
+| **Erstattet med en annen funksjon?**   | Nei |
 | **Berørte produktområder**         | Søknad |
 | **Distribusjonsalternativ**              | Alle |
 | **Status**                         | Avskrevet: Etter 15. april 2022 planlegger vi ikke lenger å støtte formatkonfigurasjonen "RTIR-spørring om fakturadataforespørsel (HU)". |

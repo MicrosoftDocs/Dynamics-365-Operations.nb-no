@@ -89,16 +89,16 @@ Sammenligningsdiagrammet nedenfor vil hjelpe deg med å skille mellom de to alte
 
 | Funksjon                                                   | Financial Reporting                                               | Økonomisk analyse |
 |----------------------------------------------------------|-------------------------------------------------------------------|--------------------|
-| **Rediger standardrapporter**                                 | Ja                                                               | Nr. |
-| **Opprett nye rapporter**                                   | Ja                                                               | Nr. |
-| **Skriv ut rapporter**                                        | Ja                                                               | Antall |
+| **Rediger standardrapporter**                                 | Ja                                                               | Nei |
+| **Opprett nye rapporter**                                   | Ja                                                               | Nei |
+| **Skriv ut rapporter**                                        | Ja                                                               | Nei |
 | **Eksporter til Excel**                                      | Ja                                                               | Begrenset Eksporterer rådata til Excel, ikke en formatert rapport |
-| **Støtt rapporteringshierarki/organisasjonshierarki**   | Ja                                                               | Antall |
+| **Støtt rapporteringshierarki/organisasjonshierarki**   | Ja                                                               | Nei |
 | **Rapporter om underfinansdata**                             | Ja Begrenset til bare leverandør, kunde                              | Ja Leverandør, kunde, leverandør-/kundegrupper, leverandør-/kundeadresser og så videre. |
 | **Rapporteringsvaluta**                                   | Ja Regnskapsvaluta og omveksle til rapporteringsvaluta       | Nei Bare regnskapsvaluta |
 | **Sikkerhet**                                             | Ja Samsvarer med Finance- og rapporteringstresikkerhet | Begrenset Vis rapporter for alle firmaer (uansett Finance and Operations-sikkerhet) eller bare aktivt selskap |
-| **Støtt ulike kontoplaner og regnskapsår** | Ja                                                               | Antall |
-| **rapporter om eksterne data**                              | Antall                                                                | Antall |
+| **Støtt ulike kontoplaner og regnskapsår** | Ja                                                               | Nei |
+| **rapporter om eksterne data**                              | Nei                                                                | Nei |
 | **Støtt konsolideringer**                               | Ja                                                               | Begrenset Kan rapportere om flere firmaer, men bare bruke regnskapsvaluta |
 
 Følgende regnskapsoppgjør er tilgjengelige:

@@ -92,8 +92,8 @@ Tabellene nedenfor viser verdiene som er angitt i fanene **Generelt** og **Linje
     | Transaksjonsdato       | 1/1/2022 |
     | Gjenstående perioder      | 84       |
     | Poster                   | Ja      |
-    | Forhåndsvis for postering | Nr.       |
-    | Lukk tablå             | Nr.       |
+    | Forhåndsvis for postering | Nei       |
+    | Lukk tablå             | Nei       |
 
 6. En journaloppføringen for verdiforringelsesutgift er opprettet og postert. For å vise det går du til journalen for aktivaleie i leietablået. Legg merke til at beløpet for verdiforringelsen ble debitert til posteringskontoen for verdiforringelsesutgift, og at posteringskontoen for bruksrettseiendel ble kreditert.
 7. Hvis du vil vise nettoinnvirkning for verdiforringelsen, går du til tabellene for gjeld og anleggsmiddeltransaksjoner. Legg merke til at verdiforringelseutgiften har redusert bruksrettseiendelen, men det indirekte beløpet for leieforpliktelse er ikke endret.

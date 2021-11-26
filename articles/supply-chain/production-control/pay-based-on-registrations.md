@@ -170,7 +170,7 @@ På siden **Beregningsparametere** velger du **Overtid** som profilspesifikasjon
 
 | Reg. spesifikasjon | Type profilspesifikasjon | Beregning   | Innstilling | Betalt         | Innstilling |
 |--------------------|----------------------------|---------------|-----|--------------|-----|
-| Driftstid       | Overtid                   | Normaltid | Ja | Lønnstid     | Ingen  |
+| Driftstid       | Overtid                   | Normaltid | Ja | Lønnstid     | Nei  |
 |                    |                            | Lønnstid      | Ja | Lønn overtid | Ja |
 
 Når du har justert beregningsparameterne, genereres følgende lønnsposter.

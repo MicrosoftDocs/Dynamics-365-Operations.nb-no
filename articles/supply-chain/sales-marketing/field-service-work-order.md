@@ -88,21 +88,21 @@ Tabellen nedenfor gir en oversikt over de forskjellige kombinasjonene for produk
 | Systemstatus <br>(Field Service) | Linjestatus <br>(Field Service) | Tilordnet <br>(Field Service) |Synkroniseringsverdi <br>(Supply Chain Management) |
 |--------------------|-------------|-----------|---------------------------------|
 | Åpen – planlagt   | Estimert   | Ja       | Estimert                       |
-| Åpen – planlagt   | Estimert   | Antall        | Brukt                            |
+| Åpen – planlagt   | Estimert   | Nei        | Brukt                            |
 | Åpen – planlagt   | Brukt        | Ja       | Brukt                            |
-| Åpen – planlagt   | Brukt        | Antall        | Brukt                            |
+| Åpen – planlagt   | Brukt        | Nei        | Brukt                            |
 | Åpen – pågår | Estimert   | Ja       | Estimert                       |
-| Åpen – pågår | Estimert   | Antall        | Brukt                            |
+| Åpen – pågår | Estimert   | Nei        | Brukt                            |
 | Åpen – pågår | Brukt        | Ja       | Brukt                            |
-| Åpen – pågår | Brukt        | Antall        | Brukt                            |
+| Åpen – pågår | Brukt        | Nei        | Brukt                            |
 | Åpne – fullført   | Estimert   | Ja       | Estimert                       |
-| Åpne – fullført   | Estimert   | Antall        | Brukt                            |
+| Åpne – fullført   | Estimert   | Nei        | Brukt                            |
 | Åpne – fullført   | Brukt        | Ja       | Brukt                            |
-| Åpne – fullført   | Brukt        | Antall        | Brukt                            |
+| Åpne – fullført   | Brukt        | Nei        | Brukt                            |
 | Lukket – postert    | Estimert   | Ja       | Brukt                            |
-| Lukket – postert    | Estimert   | Antall        | Brukt                            |
+| Lukket – postert    | Estimert   | Nei        | Brukt                            |
 | Lukket – postert    | Brukt        | Ja       | Brukt                            |
-| Lukket – postert    | Brukt        | Antall        | Brukt                            |
+| Lukket – postert    | Brukt        | Nei        | Brukt                            |
 
 Tabellen nedenfor gir en oversikt over de forskjellige kombinasjonene for servicelinjer.
 

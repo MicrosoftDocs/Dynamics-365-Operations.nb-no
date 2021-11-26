@@ -34,7 +34,7 @@ Denne opplistingen gir alternativsett for ja/nei-egenskaper som også tillater m
 | --- | --- | --- |
 | 200000000 | Blank | Ingen verdi er valgt. |
 | 200000001 | Ja | Ja. |
-| 200000002 | Nr. | Nr. |
+| 200000002 | Nei | Nei |
 
 ## <a name="see-also"></a>Se også
 
