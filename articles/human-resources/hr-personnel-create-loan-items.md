@@ -1,8 +1,8 @@
 ---
 title: Opprett utlånsvarer
 description: Utlånsvarer er poster som hjelper deg med å spore fysiske varer, for eksempel telefoner eller datamaskiner, som firmaet låner ut til arbeidere.
-author: andreabichsel
-ms.date: 08/29/2018
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,15 +10,15 @@ ms.search.form: HcmLoanType, DefaultDashboard, HcmLoanItem, HcmWorkerLookUp, Hcm
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5fb303015c3616bd2d033517bc21fda0834e9135b92e16374df26a98188c75ea
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0a812887f20a8ae5ae3b677ac452a498230c244a
+ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718089"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731742"
 ---
 # <a name="create-loan-items"></a>Opprett utlånsvarer
 
@@ -30,32 +30,32 @@ Utlånsvarer er poster som hjelper deg med å spore fysiske varer, for eksempel 
 
 
 ## <a name="create-loan-types"></a>Opprette utlånstyper
-1. Gå til Personale > Arbeidere > Utlånsvarer > Utlånstyper.
-2. Klikk Ny.
-3. Skriv inn en verdi i feltet Utlånstype.
-4. Skriv inn en verdi i feltet Beskrivelse.
+1. Gå til **Personale** > **Arbeidere** > **Utlånsvarer** > **Utlånstyper**.
+2. Klikk på **Ny**.
+3. Skriv inn en verdi i feltet **Utlånstype**.
+4. Skriv inn en verdi i **Beskrivelse**-feltet.
 5. Definer antall dager som varer som er tilordnet til denne utlånstypen, kan være forfalt med. 
-6. Klikk Lagre.
+6. Klikk på **Lagre**.
 7. Lukk siden.
 8. Oppdater siden.
 
 ## <a name="create-loan-items"></a>Opprette utlånsvarer
-1. Gå til Personale > Arbeidere > Utlånsvarer > Utlånsvarer.
-2. Klikk Opprett utlånsvarer.
-3. I Antall-feltet angir du et nummer.
-4. Skriv inn en verdi i feltet Beskrivelse.
-5. Klikk rullegardinknappen i Utlånstype-feltet for å åpne oppslaget.
+1. Gå til **Personale** > **Arbeidere** > **Utlånsvarer** > **Utlånsvarer**.
+2. Klikk **Opprett utlånsvarer**.
+3. Angi et tall i **Antall**-feltet.
+4. Skriv inn en verdi i **Beskrivelse**-feltet.
+5. Klikk på rullegardinknappen i **Utlånstype**-feltet for å åpne oppslaget.
 6. Finn og velg ønsket post i listen.
 7. Klikk koblingen i den valgte raden i listen.
 8. Angi antallet dager varen kan være på utlån.
     * Standardverdien for Planlagt retur-feltet på siden Lånt utstyr blir beregnet som gjeldende dato pluss dette antallet.  
-9. Klikk rullegardinknappen i Ansvarlig-feltet for å åpne oppslaget.
-10. Klikk Velg.
-11. Angi et tall i Startverdi-feltet.
-12. Angi et tall i Intervall-feltet.
-13. Skriv inn en verdi i Format-feltet.
-    * Hvis startnummeret for en utlånsvare for eksempel er 10, angir du to nummersymboler i Format-feltet.  
-14. Klikk OK.
+9. Klikk på rullegardinknappen i **Ansvarlig**-feltet for å åpne oppslaget.
+10. Klikk på **Velg**.
+11. Angi et tall i **Startverdi**-feltet.
+12. Angi et tall i **Intervall**-feltet.
+13. Skriv inn en verdi i **Format**-feltet.
+    * Hvis startnummeret for en utlånsvare for eksempel er 10, angir du to nummersymboler i **Format**-feltet.  
+14. Klikk på **OK**.
 15. Oppdater siden.
 
 

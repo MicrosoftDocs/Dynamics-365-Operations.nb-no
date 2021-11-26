@@ -2,7 +2,7 @@
 title: Oversikt over organisasjoner og organisasjonshierarkier
 description: Organisasjonshierarkier representerer relasjonene mellom organisasjonene som utgjør virksomheten.
 author: sericks007
-ms.date: 07/25/2019
+ms.date: 11/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 74aa2736b4cfb11039ea1cee3f62e74cf4928a1b27cea16e7e0e86f66bdddd59
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6f0388b6e7c22c339d26b82c35f1bbb1ef54cdb5
+ms.sourcegitcommit: ba10ba2cd4fb4267afb5aacae4f6a52aa2456e7e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715995"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "7798352"
 ---
 # <a name="organizations-and-organizational-hierarchies-overview"></a>Oversikt over organisasjoner og organisasjonshierarkier
 
@@ -64,9 +64,19 @@ Et team er en organisasjon der medlemmene deler et felles ansvar, en felles inte
 
 Definer organisasjonshierarkier for å vise og rapportere for bedriften fra ulike perspektiver. Du kan for eksempel definere et hierarki av juridiske enheter for avgiftsrapportering, juridisk eller lovpålagt rapportering. Definer et hierarki som er basert på driftsenheter, for å rapportere finansinformasjon som ikke er lovpålagt, men som brukes til internkontroll. Du kan for eksempel opprette et innkjøpshierarki for å styre innkjøpspolicyer, -regler og -forretningsprosesser.
 
+> [!NOTE]
+> Når en driftsenhet er lagt til i et hierarki, kan ikke driftsenheten slettes. 
+
 Hvert hierarki er tilordnet et formål. Formålet med et hierarki bestemmer hvilke organisasjonstyper som kan inkluderes i hierarkiet. Formålet bestemmer også bruksscenariene for hierarkiet.
 
 Organisasjoner i et hierarki kan dele parametere, policyer og transaksjoner. En organisasjon kan arve eller overstyre parameterne for den overordnede organisasjonen. Delte hoveddata, for eksempel produkter og adressebøker, gjelder imidlertid for hele organisasjonen og kan ikke overstyres for individuelle organisasjoner. Oppretting av organisasjoner og hierarkier krever nøye planlegging. Hvis du vil ha mer informasjon, kan du se [Planlegge organisasjonshierarkiet](plan-organizational-hierarchy.md).
+
+## <a name="additional-resources"></a>Tilleggsressurser
+- [Planlegge organisasjonshierarkiet](plan-organizational-hierarchy.md)
+- [Opprette et organisasjonshierarki](tasks/create-organization-hierarchy.md)
+- [Opprette en ny juridisk enhet](tasks/create-legal-entity.md)
+- [Opprette en driftsenhet](tasks/create-operating-unit.md)
+
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

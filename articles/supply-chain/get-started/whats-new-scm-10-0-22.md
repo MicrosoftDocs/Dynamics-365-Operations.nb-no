@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: a4f9e5a4a318ceaa45b6919e394e1ff335bfb193
-ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
+ms.openlocfilehash: a795f88aed78582ad4a2faa90ab1c2529017850f
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/25/2021
-ms.locfileid: "7678841"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778163"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10022-november-2021"></a>Hva er nytt eller endret i Dynamics 365 Supply Chain Management 10.0.22. (november 2021)
 
@@ -41,7 +41,6 @@ Denne tabellen viser funksjonsforbedringer i denne versjonen. Hvert av disse for
 
 | Modul | Funksjonsnavn i funksjonsbehandling | Mer informasjon |
 |---|---|---|
-| Kostnadsstyring | Opprette tilknyttede bilag for standard kostnadsavrundingsrevalueringer | <p>Når det utføres en økonomisk lagerpostering (for eksempel en salgsordrefaktura eller lagertransaksjon), fører denne funksjonen til at systemet oppretter et separat bilag for eventuelle relaterte standard kostnadsavrundingsrevalueringer og knytter det til det økonomiske posteringsbilaget som et tilknyttet bilag.</p><p>Uten denne funksjonen registrerer systemet standard kostnadsavrundingsrevalueringer på samme bilagspostering. Denne virkemåten kan noen ganger forårsake motstridende datoinformasjon, fordi revalueringene bruker økt- eller systemdatoen, mens økonomiske posteringer bruker posteringsdatoen.</p> |
 | Distribuert hybridtopologi | *(Ingen funksjonsbehandling er nødvendig.)* | <p>Denne versjonen utvider funksjonene for utgående belastningsplanlegging for lagerstyringens arbeidsmengde for sky- og kantskaleringsenheter.</p><p>Hvis du vil ha mer informasjon, kan du se [Arbeidsbelastninger for lagerstyring for sky- og kantskalaenheter](../cloud-edge/cloud-edge-workload-warehousing.md).</p> |
 | Styring av teknisk endring | Variantgenerering for tekniske produkter | <p>Ved hjelp av denne funksjonen kan du generere flere varianter for et teknisk produkt, basert på farge-, størrelses-, stil- eller konfigurasjonsdimensjoner.</p><p>Hvis du vil ha mer informasjon, kan du se [Generere varianter for tekniske produkter](../engineering-change-management/engineering-variants.md).</p> |
 | Lagerstyring | Integrering av lagersynlighet med reservasjonsmotkonto | <p>Denne funksjonen kan bare aktiveres etter at funksjonen *Integrering av lagersynlighet* er aktivert. Den gir funksjonalitet for å motpostere reserveringer som gjøres på lagersynlighet.</p><p>Hvis du vil ha mer informasjon, kan du se [Lagersynlighetsreservasjoner](../inventory/inventory-visibility-reservations.md).</p> |

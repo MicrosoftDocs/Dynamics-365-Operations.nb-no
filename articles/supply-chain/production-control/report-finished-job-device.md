@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 19c4e3c6ad682f3814d334f88c0653c4e7a51d23
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 2fa82c721316fb21442e1cfc00ba00ff8cb2b750
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569293"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778237"
 ---
 # <a name="report-as-finished-from-the-job-card-device"></a>Ferdigmelde fra jobbkortenheten
 
@@ -218,7 +218,7 @@ Avanserte lagerprosesser kan bruke nummerskiltdimensjonen til å spore beholdnin
 
 Hvis du vil bruke funksjonene som beskrives i denne delen, må du bruke [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) for å aktivere følgende funksjoner (i denne rekkefølgen):
 
-1. Nummerskilt for ferdigmelding lagt til i jobbkortenheten
+1. Nummerskilt for ferdigmelding som er lagt til jobbkortenheten (per Supply Chain Management versjon 10.0.21 er denne funksjonen aktivert som standard.)
 1. Aktiver automatisk generering av nummerskiltnummer ved ferdigrapportering i jobbkortenheten
 1. Skriv ut etikett fra jobbkortenhet
 

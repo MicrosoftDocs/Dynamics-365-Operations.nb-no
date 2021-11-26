@@ -1,8 +1,8 @@
 ---
 title: Utvikle en rekkefølgeplan
 description: Etter hvert som organisasjonen vokser, må du starte rekkefølgeplanlegging.
-author: andreabichsel
-ms.date: 08/29/2018
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,15 +10,15 @@ ms.search.form: HcmSkillMapping, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ca1d9dda75038d937e2a3dad4582feefa617aac9f7f3f1a75ffd274c69c68ae9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ed10813c30b9a49b84a7e8e333fbac3d1e26720a
+ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768221"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731522"
 ---
 # <a name="develop-a-succession-plan"></a>Utvikle en rekkefølgeplan
 
@@ -35,8 +35,8 @@ Etter hvert som organisasjonen vokser, må du starte rekkefølgeplanlegging. Und
 7. Velg **Person**.
 8. Skriv inn et navn i **Person**-feltet, eller velg rullegardinlisten.
 9. Velg **OK**.
-10. Vis hurtigkategorien **Sertifikater** for å vise eller redigere sertifikatene som er inkludert i kompetansesøket.
-11. Vis hurtigkategorien **Ferdigheter** for å vise eller redigere kompetansen som skal inkluderes.
+10. Vis hurtigfanen **Sertifikater** for å vise eller redigere sertifikatene som er inkludert i kompetansesøket.
+11. Vis hurtigfanen **Ferdigheter** for å vise eller redigere kompetansen som skal inkluderes.
 12. Merk den første raden i listen. Eksempel: Regnskapsfører.
 13. Merk av for **Valgfritt**.
 14. Velg et alternativ i **Betydning**-feltet. Når du merker en kompetanse som valgfritt, må du velge kompetansens betydning.  
@@ -48,8 +48,8 @@ Etter hvert som organisasjonen vokser, må du starte rekkefølgeplanlegging. Und
 20. Velg et alternativ i **Betydning**-feltet.
 21. Velg rad 4 i listen.
 22. Merk av for **Valgfritt**.
-23. Velg et alternativ i Betydning-feltet.
-24. Vis hurtigkategorien **Utdanning** for å vise eller redigere utdanningskompetansene som skal tas med i kompetansesøket.
+23. Velg et alternativ i **Betydning**-feltet.
+24. Vis hurtigfanen **Utdanning** for å vise eller redigere utdanningskompetansene som skal tas med i kompetansesøket.
 25. Velg **Utfør**.
 26. Velg **OK**.
 27. Velg **Resultat**.

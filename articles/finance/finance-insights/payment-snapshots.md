@@ -2,7 +2,7 @@
 title: Oversikt over øyeblikksbilder
 description: Dette emnet beskriver øyeblikksbildefunksjonen, som gjør at du kan lagre en kontantflytprognose for analyse eller sammenligning med faktiske data senere. Når du genererer en kontantstrømprognose, kan du lagre denne prognosen som et øyeblikksbilde. Du kan deretter bruke disse øyeblikksbildene til å redigere kontoene som var inkludert i prognosen, eller sammenligne prognosen i øyeblikksbildet med faktiske data.
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,16 +17,17 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-19
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: bcaaa9fe13e36bbe71e29d82c9f22a4fff9248ef
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: a91300ac17b36d890840e6c0c3104fad5fce68f0
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386569"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752773"
 ---
 # <a name="snapshots-overview"></a>Oversikt over øyeblikksbilder
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Ved hjelp av øyeblikksbilder kan organisasjoner redigere og lagre informasjon om likviditetsbeholdningen og kontantstrømprognoser på et tidspunkt. Du kan sammenligne øyeblikksbildet med faktisk finans, undersøke avviket og bruke denne informasjonen til å forbedre kontantstrømprognoser over tid. Mer spesifikt kan øyeblikksbilder brukes på følgende måter:
 
@@ -40,8 +41,6 @@ Du kan opprette et øyeblikksbilde ved å velge **Nytt øyeblikksbilde** enten i
 
 Kontantinnflytene og -utflytene i øyeblikksbilder kan redigeres når som helst. Når et innflytbeløp eller et utflytbeløp redigeres, blir det oppdaterte beløpet fordelt til likviditetskontoene som opprettet den opprinnelige saldoen. Når du er ferdig med å redigere et øyeblikksbilde, velger du **Lagre** for å lagre endringene.
 
-Hvis du vil sammenligne flere øyeblikksbilder, velger du **Sammenlign øyeblikksbilder**. Du kan sammenligne to øyeblikksbilder om gangen. Velg de to øyeblikksbildene som skal sammenlignes, og velg deretter **OK**. Siden **Sammenlign øyeblikksbilde** vil vise en sammenligning av de valgte øyeblikksbildene. Diagrammet på den øvre delen av siden viser en sammenligning av kontantinnflytene, kontantutflytene og banksaldoer i de overlappende periodene mellom de to øyeblikksbildene. Rutenettet i den nedre delen viser en detaljert sammenligning av de to prognosene for hvert likviditetsbeløp. **Avvik**-kolonnen i rutenettet viser differansen mellom saldoene i en periode.
-
-Hvis du vil sammenligne faktiske økonomiske resultater med en prognose som ble lagret som et øyeblikksbilde, velger du **Sammenlign med faktiske data**. Siden **Sammenlign øyeblikksbilde** vil vise en sammenligning av de faktiske beløpene og prognosen. Diagrammet på den øvre delen av siden viser en sammenligning av kontantinnflytene, kontantutflytene og banksaldoer i de overlappende periodene mellom de to øyeblikksbildene. Rutenettet i den nedre delen viser en detaljert sammenligning av faktiske saldoer per periode og prognosesaldoen for hver likviditetsbeløp. **Avvik**-kolonnen i rutenettet viser differansen mellom den faktiske balansen i en periode og prognosesaldoen.
+Hvis du vil sammenligne faktiske økonomiske resultater med en prognose som ble lagret som et øyeblikksbilde, velger du **Sammenlign med faktiske data**. Siden **Sammenlign med faktiske data** vil vise en sammenligning av de faktiske beløpene og prognosen. Diagrammet på den øvre delen av siden viser en sammenligning av kontantinnflytene, kontantutflytene og banksaldoer i de overlappende periodene mellom de to øyeblikksbildene. Rutenettet i den nedre delen viser en detaljert sammenligning av faktiske saldoer per periode og prognosesaldoen for hver likviditetsbeløp. **Avvik**-kolonnen i rutenettet viser differansen mellom den faktiske balansen i en periode og prognosesaldoen.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

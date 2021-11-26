@@ -2,7 +2,7 @@
 title: Aktiver kundebetalingsprognoser
 description: Dette emnet forklarer hvordan du aktiverer og konfigurerer funksjonen for kundebetalingsprognoser i Finance Insights.
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,46 +15,38 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: b1a40db34d42c3f25e910309a9e5ef7b0e7e0361
-ms.sourcegitcommit: db80edbe0c32e3a5f22aae6154781f3ff8a2ab2a
+ms.openlocfilehash: 16ccd7f2e11f0b46aaa646de272e668d29ccc0c0
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "7599382"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752934"
 ---
 # <a name="enable-customer-payment-predictions"></a>Aktiver kundebetalingsprognoser
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
-Dette emnet forklarer hvordan du aktiverer og konfigurerer funksjonen for kundebetalingsprognoser i Finance Insights. Du aktiverer funksjonen i arbeidsområdet **Funksjonsbehandling** og angir konfigurasjonsinnstillinger på siden **Parametere for økonomisk innsikt**. Dette emnet inneholder også informasjon som kan hjelpe deg å bruke funksjonen på en effektiv måte.
+Dette emnet forklarer hvordan du aktiverer og konfigurerer funksjonen for kundebetalingsprognoser i Finance Insights. Du aktiverer funksjonen i arbeidsområdet **Funksjonsbehandling** og angir konfigurasjonsinnstillinger på siden **Finance Insights-konfigurasjon**. Dette emnet inneholder også informasjon som kan hjelpe deg å bruke funksjonen på en effektiv måte.
 
 > [!NOTE]
 > Før du fullfører trinnene nedenfor, må du fullføre de nødvendige trinnene i emnet [Konfigurere for Finance Insights](configure-for-fin-insites.md).
 
-1. Bruk informasjon fra miljøsiden i Microsoft Dynamics Lifecycle Services (LCS) til å koble til den primære forekomsten av Azure SQL for dette miljøet. Kjør følgende Transact-SQL-kommando (T-SQL) for å aktivere testversjoner for sandkassemiljøet. (Det kan hende at du må aktivere tilgang for IP-adressen din i LCS før du kan koble til Application Object Server \[AOS\] eksternt.)
+1. Slik aktiverer du funksjonen for kundebetalingsforutsigelser:
 
-    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('PayPredEnableFeature', 1)`
+    1. Åpne arbeidsområdet **Funksjonsbehandling**.
+    2. Velg **Se etter oppdateringer**.
+    3. Gå til **Alle**-fanen, og søk etter **Kundebetalingsforutsigelser**. Hvis du ikke funner denne funksjonen, søker du etter **(Forhåndsversjon) Kundebetalingsforutsigelser**. 
+    4. Aktivere funksjonen.
 
-    > [!NOTE]
-    > Hopp over dette trinnet hvis du bruker versjon 10.0.20 eller nyere, eller hvis du bruker en Service Fabric-distribusjon. Finance Insights-teamet skal allerede ha aktivert testversjonen for deg. Hvis du ikke ser funksjonen i arbeidsområdet **Funksjonsbehandling** eller får problemer når du prøver å aktivere den, kontakter du <fiap@microsoft.com>. 
+    Funksjonen Kundebetalingsforutsigelser er nå aktivert og klar til å konfigureres.
 
-2. Slik aktiverer du funksjonen for innsikt i kundebetaling:
+2. Slik konfigurerer du funksjonen for innsikt i kundebetaling:
 
-    1. Gå til **Systemadministrasjon \> Arbeidsområder \> Funksjonsbehandling**.
-    2. Finn funksjonen kalt **(Forhåndsversjon) Innsikt i kundebetaling**.
-    3. Velg **Aktiver nå**.
+    1. Gå til **Kreditt og innkreving \> Oppsett \> Finance Insights \> Kundebetalingsforutsigelser**.
+    2. Velg koblingen **Vis datafeltene som brukes i prognosemodellen** på fanen **Kundebetalingsforutsigelser** på siden **Finance Insights-konfigurasjon** for å åpne siden **Datafelter for prognosemodell**. Der kan du vise standardlisten over felt som brukes til å opprette en prognosemodell basert på kunstig intelligens (AI) for kundebetalingsprognoser.
 
-    Funksjonen for innsikt i kundebetaling er nå aktivert og klar til å konfigureres.
-
-3. Slik konfigurerer du funksjonen for innsikt i kundebetaling:
-
-    1. Gå til **Kreditt og innkreving \> Oppsett \> Finance Insights \> Parametere for økonomisk innsikt**.
-
-        [![Siden Parametere for økonomisk innsikt før funksjonen er konfigurert.](./media/finance-insights-parameters.png)](./media/finance-insights-parameters.png)
-
-    2. Velg koblingen **Vis datafeltene som brukes i prognosemodellen** i fanen **Innsikt i kundebetaling** på siden **Parametere for økonomisk innsikt** for å åpne siden **Datafelter for prognosemodell**. Der kan du vise standardlisten over felt som brukes til å opprette en prognosemodell basert på kunstig intelligens (AI) for kundebetalingsprognoser.
-
-        Hvis du vil bruke standardlisten over felt til å opprette en prognosemodell, lukker du siden **Datafelter for prognosemodell**, og deretter setter du alternativet **Aktiver funksjon** til **Ja** på siden **Parametere for økonomisk innsikt**.
+        Hvis du vil bruke standardlisten over felt til å opprette en prognosemodell, lukker du siden **Datafelter for prognosemodell**, og deretter setter du alternativet **Aktiver funksjon** til **Ja** på siden **Finance Insights-konfigurasjon**.
 
     3. Angi transaksjonsperioden «svært sent» for å definere hva prognosesamlingen **Svært sent** betyr for firmaet.
 
@@ -67,21 +59,13 @@ Dette emnet forklarer hvordan du aktiverer og konfigurerer funksjonen for kundeb
         > [!NOTE]
         > Hvis du endrer transaksjonsperioden Svært sent og velger **Endre terskel for For sent** etter at AI-prognosemodellen for kundebetalinger er opprettet, slettes den eksisterende prognosemodellen, og det opprettes en ny modell. Den nye prognosemodellen flytter transaksjoner til Svært sent-perioden, basert på innstillingene som ble angitt for å definere den.
 
-    4. Når du er ferdig å definere transaksjonsperioden Svært sent, velger du **Opprett prognosemodell** for å opprette en prognosemodell. **Prognosemodell**-delen på siden **Parametere for økonomisk innsikt** viser statusen for prognosemodellen.
+    4. Når du er ferdig å definere transaksjonsperioden Svært sent, velger du **Opprett prognosemodell** for å opprette en prognosemodell. **Prognosemodell**-delen på siden **Finance Insights-konfigurasjon** viser statusen for prognosemodellen.
 
         > [!NOTE]
         > Når du oppretter en prognosemodell, kan du når som helst velge **Tilbakestill modellopprettelse** for å starte prosessen på nytt.
 
     Funksjonen er nå konfigurert og klar til bruk.
 
-Etter at funksjonen er aktivert og konfigurert, og prognosemodellen er opprettet og fungerer, viser **Prognosemodell**-delen på siden **Parametere for økonomisk innsikt** nøyaktigheten til modellen, som vist i illustrasjonen nedenfor.
-
-[![Nøyaktigheten til prognosemodellen på siden Parametere for økonomisk innsikt.](./media/finance-insights-parameters-accuracy.png)](./media/finance-insights-parameters-accuracy.png)
-
-## <a name="release-details"></a>Frigivelsesdetaljer
-
-Den offentlige forhåndsversjonen av Finance Insights er tilgjengelig for prøvedistribusjoner i USA, Europa og Storbritannia. Microsoft legger gradvis til støtte for flere områder.
-
-Funksjoner i offentlige forhåndsversjoner kan og bør bare aktiveres i sandkassemiljøer på lag 2. Oppsett og modeller for kunstig intelligens som er opprettet i et sandkassemiljø, kan ikke overføres til et produksjonsmiljø. Hvis du vil ha mer informasjon, kan du se [Ekstra vilkår for bruk for Microsoft Dynamics 365-forhåndsversjoner](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md).
+Etter at funksjonen er aktivert og konfigurert, og prognosemodellen er opprettet og fungerer, viser **Prognosemodell**-delen på siden **Finance Insights-konfigurasjon** nøyaktigheten til modellen, som vist i illustrasjonen nedenfor.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

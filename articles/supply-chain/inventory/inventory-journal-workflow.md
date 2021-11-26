@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 7d1bd846dae767b47280310fc8d9ca5ee82337ad
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: fd73c515c653de9160301e069fb25d995db40741
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568861"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778311"
 ---
 # <a name="inventory-journal-approval-workflows"></a>Godkjenningsarbeidsflyter for lagerjournal
 
@@ -31,7 +31,7 @@ Dette emnet beskriver hvordan du setter opp og bruker godkjenningsarbeidsflyter 
 
 ## <a name="turn-on-the-inventory-journal-approval-workflows-feature"></a>Aktivere funksjonen for godkjenningsarbeidsflyter for lagerjournal
 
-Før du kan bruke denne funksjonen, må den være aktivert i systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
+Per Supply Chain Management versjon 10.0.21 er denne funksjonen aktivert som standard. Administratorer kan bruke siden [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere eller deaktivere den hvis det er nødvendig. Her vises funksjonen som:
 
 - **Modul:** *Lagerstyring*
 - **Funksjonsnavn:** *Godkjenningsarbeidsflyt for lagerjournal*

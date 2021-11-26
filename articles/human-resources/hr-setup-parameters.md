@@ -1,8 +1,8 @@
 ---
 title: Konfigurere parametere for Human Resources
 description: Dette emnet forklarer hvordan du konfigurerer firmaspesifikke parametere i Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 06/23/2021
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 51941
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 476f44c665adb2918e7cd882d4ea873b4b4f94fa33a74dc96d3eccc74b676ce5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fd9bb907f95ba4c368871a470ca9b2bc807646ee
+ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739257"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7771441"
 ---
 # <a name="configure-human-resources-parameters"></a>Konfigurere parametere for Human Resources
 
@@ -65,7 +65,7 @@ Innstillingene i kategorien **Generelt** definerer utseendet til informasjon om 
 
 Innstillingene i fanen **Rekruttering** definerer dokumenttypene som brukes til korrespondanse, som automatisk sendes til søkere. Du kan også angi rekrutteringsprosjektet som brukes til uanførte søknader.
 
-Perioden som er definert for aldersfordeling for rekrutteringsprosjekt bestemmer rekrutteringsprosjektene som er inkludert i flisen **Aldersfordelingsprosjekter** i arbeidsområdet **Rekrutteringsstyring**. Perioden som er definert for advarselen for tidsfrist for søknad, brukes til å vise rekrutteringsprosjekter som nærmer seg sin søknadsfrist på flisen **Søknadsfristen nærmer seg** i arbeidsområdet **Rekruttering**.
+Perioden som er definert i **Aldersfordeling for rekrutteringsprosjekt**, bestemmer hvilke rekrutteringsprosjekter som er inkludert på flisen **Aldersfordelingsprosjekter** i arbeidsområdet **Rekrutteringsstyring**. Perioden som er definert for advarselen for tidsfrist for søknad brukes til å vise rekrutteringsprosjekter som nærmer seg sin Søknadsfrist på flisen **Søknadsfristen nærmer seg** i arbeidsområdet **Rekruttering**.
 
 Hvis du vil ha mer informasjon om rekruttering, kan du se [Rekruttere jobbkandidater](hr-personnel-recruit.md).
 
@@ -107,20 +107,20 @@ I fanen FMLA definerer du FMLA-rettighetskravene og FMLA-rettighetstimene. Hvis 
 
 ## <a name="employee-self-service"></a>Ansattselvbetjening
 
-Innstillingene i fanen **Selvbetjening for ansatte** påvirker hvordan Selvbetjening for ansatte vises for ansatte. I denne fanen kan du:
+Innstillingene i fanen **Selvbetjening for ansatte** påvirker hvordan **Selvbetjening for ansatte** vises for ansatte. På denne fanen kan du utføre følgende oppgaver:
 
-- Angi et navn for arbeidsområdet Selvbetjening for ansatte
+- Angi et navn for arbeidsområdet **Selvbetjening for ansatte**
 - Velge hvilken informasjon en leder kan legge inn for ansatte
 - Legge til nyttige koblinger for ansatte
 - Hindre at ansatte legger til eller redigerer kontaktdetaljer for virksomhet. Hvis du vil ha mer informasjon, kan du se [Begrense redigering av personlige opplysninger](hr-employee-self-service-restrict-editing.md).
 
-Hvis du vil ha mer informasjon om hvordan du konfigurerer Selvbetjening for ansatte, kan du se [Oversikt over selvbetjening for ansatte og ledere](hr-employee-manager-self-service-overview.md).
+Hvis du vil ha mer informasjon om hvordan du konfigurerer **Selvbetjening for ansatte**, kan du se [Oversikt over selvbetjening for ansatte og ledere](hr-employee-manager-self-service-overview.md).
 
 ![Fanen Selvbetjening for ansatte.](./media/hr-setup-parameters-employee-self-service.png)
 
 ## <a name="manager-self-service"></a>Lederselvbetjening
 
-Innstillingene i fanen **Selvbetjening for leder** påvirker hva ledere ser i Selvbetjening for leder. I denne fanen kan du konfigurere følgende alternativer:
+Innstillingene på fanen **Selvbetjening for leder** påvirker hva ledere ser i **Selvbetjening for leder**. I denne fanen kan du konfigurere følgende alternativer:
 
 - Området for utløpsposter
 - Informasjon som ledere kan vise i utløpsposter
@@ -128,13 +128,13 @@ Innstillingene i fanen **Selvbetjening for leder** påvirker hva ledere ser i Se
 - Visninger av eksisterende arbeidere
 - Nyttige koblinger for ledere
 
-Hvis du vil ha mer informasjon om hvordan du konfigurerer Selvbetjening for leder, kan du se [Oversikt over selvbetjening for ansatte og ledere](hr-employee-manager-self-service-overview.md).
+Hvis du vil ha mer informasjon om hvordan du konfigurerer **Selvbetjening for leder**, kan du se [Oversikt over selvbetjening for ansatte og ledere](hr-employee-manager-self-service-overview.md).
 
 ![Fanen Selvbetjening for leder.](./media/hr-setup-parameters-manager-self-service.png)
 
 ## <a name="benefits-management"></a>Fordelsbehandling
 
-I fanen Fordelsstyring kan du konfigurere e-postalternativer for Fordelsstyring. Hvis du vil ha informasjon om hvordan du konfigurerer og bruker Fordelsbehandling, kan du se [Oversikt over fordelsbehandling](hr-benefits-management-overview.md).
+På fanen **Fordelsstyring** kan du konfigurere e-postalternativer for Fordelsstyring. Hvis du vil ha informasjon om hvordan du konfigurerer og bruker Fordelsbehandling, kan du se [Oversikt over fordelsbehandling](hr-benefits-management-overview.md).
 
 ![Fanen Fordelsbehandling.](./media/hr-setup-parameters-benefits-management.png)
 

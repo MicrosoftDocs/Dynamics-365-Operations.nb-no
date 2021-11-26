@@ -2,7 +2,7 @@
 title: Tilpasse brukeropplevelsen
 description: Dette emnet forklarer hvordan du kan tilpasse appen.
 author: jasongre
-ms.date: 09/27/2021
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a1f24ff1a0730f13af6231510c8e6b3cb46fde48
-ms.sourcegitcommit: 89906aa2f18f16e622fd280433c8fc9fe74d2aec
+ms.openlocfilehash: 6256765c41ff128b067cda9107c790691c5b376a
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7581071"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777991"
 ---
 # <a name="personalize-the-user-experience"></a>Tilpasse brukeropplevelsen
 
@@ -219,6 +219,9 @@ Hvis lagrede visninger ikke er aktivert, følger du fremgangsmåten nedenfor for
 ### <a name="export-and-import-views-or-personalizations"></a>Eksporter og importer visninger eller tilpasninger
 
 En annen måte å dele tilpasninger på, er ved eksport og import. Enkeltbrukere, eller en administrator som handler på deres vegne, kan bruke denne metoden til å eksportere tilpasningene eller visningene, og deretter gi den eksporterte filen til andre brukere for å importere. Brukere kan eventuelt gi sine eksporterte tilpasninger til en bruker med administratorrettigheter, og denne brukeren kan deretter bruke **Tilpassing**-administrasjonssiden til å bruke tilpasningsfilen for mange brukere samtidig.
+
+> [!IMPORTANT]
+> Etter hvert som tilpasningene beholdes på tvers av oppdateringer, er det unødvendig og svært lite anbefalt å importere alle tilpasninger etter en serviceoppdatering eller andre tidspunkt.   
 
 #### <a name="export"></a>Eksporter
 

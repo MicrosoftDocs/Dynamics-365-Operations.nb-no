@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: fa5a618527ce5a20b59902e7397000bf0796cbbb
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: f852779d43beb3a43c6921a25d393ee00dff96d1
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647195"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777967"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>Konfigurere grensesnittet for produksjonsutførelse
 
@@ -39,7 +39,7 @@ Selve grensesnittet for produksjonsutførelse, pluss flere av de valgfrie innsti
 
 ### <a name="the-production-floor-execution-interface"></a>Grensesnittet for produksjonsutførelse
 
-Dette er primærfunksjonen som beskrives i dette emnet. Det legger til grensesnittet for produksjonsutførelse i systemet. Aktiver følgende funksjon i [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) for å aktivere det:
+Dette er primærfunksjonen som beskrives i dette emnet. Per Supply Chain Management versjon 10.0.21 er dette aktivert som standard. Det legger til grensesnittet for produksjonsutførelse i systemet. Aktiver følgende funksjon i [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) for å aktivere det:
 
 - Produksjonsutførelse
 
@@ -47,19 +47,19 @@ Dette er primærfunksjonen som beskrives i dette emnet. Det legger til grensesni
 
 Disse funksjonene gjør nummerskiltfunksjoner tilgjengelige for grensesnittet for produksjonsutførelse. Hvis du vil bruke dem, aktiverer du følgende funksjoner i [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (i denne rekkefølgen):
 
-1. Nummerskilt for ferdigmelding lagt til i jobbkortenheten
+1. Nummerskilt for ferdigmelding som er lagt til jobbkortenheten (per Supply Chain Management versjon 10.0.21 er denne funksjonen aktivert som standard.)
 1. Aktiver automatisk generering av nummerskiltnummer ved ferdigrapportering i jobbkortenheten
 
 ### <a name="print-labels"></a>Skriv ut etiketter
 
 Disse funksjonene gjør etikettutskriftsfunksjoner tilgjengelige for grensesnittet for produksjonsutførelse. Hvis du vil bruke dem, aktiverer du følgende funksjoner i [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (i denne rekkefølgen):
 
-1. Nummerskilt for ferdigmelding lagt til i jobbkortenheten
+1. Nummerskilt for ferdigmelding som er lagt til jobbkortenheten (per Supply Chain Management versjon 10.0.21 er denne funksjonen aktivert som standard.)
 1. Skriv ut etikett fra jobbkortenhet
 
 ### <a name="allow-locking-the-touch-screen"></a>Tillate låsing av berøringsskjermen
 
-Denne funksjonen legger til en knapp i grensesnittet for produksjonsutførelse, som gjør at ansatte kan rengjøres på berøringsskjermen. Hvis du vil bruke den, aktiverer du følgende funksjon i [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Per Supply Chain Management versjon 10.0.21 er denne funksjonen aktivert som standard. Den legger til en knapp i grensesnittet for produksjonsutførelse, som gjør at ansatte kan rengjøre berøringsskjermen. Hvis du vil bruke den, må du aktivere følgende funksjon i [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - Funksjon for låsing av jobbkortenheten og jobbkortterminal slik at de kan rengjøres
 

@@ -2,7 +2,7 @@
 title: Feilsøke konfigurasjonsproblemer for Finance Insights
 description: Dette emnet viser problemer som kan oppstå når du bruker Finance Insights-funksjoner. Det forklarer også hvordan du retter disse problemene.
 author: panolte
-ms.date: 08/20/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,16 +17,17 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-20
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 7ff42ffc334147c1a4c6b6349c86580df7f1955b
-ms.sourcegitcommit: 47a3ad71210c7ac84d0c25e913c440b5ba205282
+ms.openlocfilehash: f3cac30a66ff3a74a7f67c11dd9fa14af79d10af
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "7512896"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752623"
 ---
 # <a name="troubleshoot-finance-insights-setup-issues"></a>Feilsøke konfigurasjonsproblemer for Finance Insights
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Dette emnet viser problemer som kan oppstå når du bruker Finance Insights-funksjoner. Det forklarer også hvordan du retter disse problemene.
 
@@ -53,6 +54,12 @@ Følg denne fremgangsmåten i [Power Platform administrasjonssenteret](https://a
 
 1. Hvis du bruker en forhåndsvisningsversjon av Finance Insights, fjerner du DI-prosjektet som er knyttet til malen **Resultater av innsikt i kundebetaling (CDS til Fin and Ops)**.
 2. Følg trinnene i [Opprett et dataintegratorprosjekt](create-data-integrate-project.md). Bruk malen **Resultater av innsikt i kundebetaling (CDS til Fin and Ops 10.0.17 og senere)**.
+
+## <a name="symptom-when-i-try-to-open-ai-builder-by-using-the-links-on-the-customer-payment-predictions-setup-page-why-do-i-receive-the-following-error-message-sorry-theres-been-a-disconnect"></a>Symptom: Når jeg prøver å åpne AI Builder ved hjelp av koblingene på konfigurasjonssiden for kundebetalingsforutsigelser, hvorfor får jeg følgende feilmelding: "Beklager, det har vært en frakobling"?
+
+### <a name="resolution"></a>Oppløsning
+
+Dynamics 365 Finance-brukere må ha en Microsoft Power Apps-brukerkonto for miljøet, og denne brukerkontoen må ha systemtilpasserrollen. Microsoft Power Apps-systemadministratoren kan opprette brukerkontoen og tilordne rollen. Deretter kan du gå til <https://make.preview.powerapps.com/>, logge deg på ved hjelp av denne brukerkontoen og prøve koblingene på nytt.
 
 ## <a name="symptom-why-doesnt-the-cash-forecast-tab-in-the-cash-flow-forecast-workspace-show-any-data"></a>Symptom: Hvorfor viser ikke kategorien Kontantprognose i arbeidsområdet for kontantstrømprognoser noen data?
 

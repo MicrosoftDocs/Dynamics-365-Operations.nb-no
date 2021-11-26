@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 2544591773bea7d54b4da4ac25ed3fed3f9e3594c5f791a0975c0349583b695c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 943eee819c08704212ceb5e02921c36e7f1032dc
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728633"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777845"
 ---
 # <a name="standard-saved-views-for-supply-chain-management"></a>Standard lagrede visninger for Supply Chain Management
 
@@ -47,15 +47,15 @@ Tabellen nedenfor beskriver de lagrede visningene som er tilgjengelige for lager
 
 | Side | Visningsnavn | Vis beskrivelse | Funksjonsnavn |
 |---|---|---|---|
-| Beholdningsliste | Finans | Med denne forenklede visningen kan du fokusere på økonomisk informasjon mens du administrerer lagerbeholdning. | Lagrede visninger for lagerstyring |
-| Beholdningsliste | Kvalitetskontroll | Med denne forenklede visningen kan du fokusere på kvalitetskontroll mens du administrerer lagerbeholdning. | Lagrede visninger for lagerstyring |
-| Beholdningsliste | Mottak | Med denne forenklede visningen kan du fokusere på mottaksoperasjoner mens du administrerer lagerbeholdning. | Lagrede visninger for lagerstyring |
-| Beholdningsliste | Levering | Med denne forenklede visningen kan du fokusere på forsendelsesoperasjoner mens du administrerer lagerbeholdning. | Lagrede visninger for lagerstyring |
-| Transaksjoner | Forenklet | Med denne forenklede visningen kan du se gjennom lagerstatusen uten å bli distrahert av økonomisk informasjon og andre felter som ikke brukes så ofte. | Lagrede visninger for lagerstyring |
-| Overføringsordrer | Levering | Med denne forenklede visningen kan du fokusere på forsendelsesoperasjoner mens du administrerer overføringsordrer. | Lagrede visninger for lagerstyring |
-| Overføringsordrer | Mottak | Med denne forenklede visningen kan du fokusere på mottaksoperasjoner mens du administrerer overføringsordrer. | Lagrede visninger for lagerstyring |
-| Overføringsordrer | Kvalitetskontroll | Med denne forenklede visningen kan du fokusere på kvalitetskontroll mens du administrerer overføringsordrer. | Lagrede visninger for lagerstyring |
-| Overføringsordrer | Finans | Med denne forenklede visningen kan du fokusere på økonomisk informasjon mens du administrerer overføringsordrer. | Lagrede visninger for lagerstyring |
+| Beholdningsliste | Finans | Med denne forenklede visningen kan du fokusere på økonomisk informasjon mens du administrerer lagerbeholdning. | Lagrede visninger for lagerstyring (aktivert som standard fra og med versjon 10.0.21). |
+| Beholdningsliste | Kvalitetskontroll | Med denne forenklede visningen kan du fokusere på kvalitetskontroll mens du administrerer lagerbeholdning. | Lagrede visninger for lagerstyring (aktivert som standard fra og med versjon 10.0.21). |
+| Beholdningsliste | Mottak | Med denne forenklede visningen kan du fokusere på mottaksoperasjoner mens du administrerer lagerbeholdning. | Lagrede visninger for lagerstyring (aktivert som standard fra og med versjon 10.0.21). |
+| Beholdningsliste | Levering | Med denne forenklede visningen kan du fokusere på forsendelsesoperasjoner mens du administrerer lagerbeholdning. | Lagrede visninger for lagerstyring (aktivert som standard fra og med versjon 10.0.21). |
+| Transaksjoner | Forenklet | Med denne forenklede visningen kan du se gjennom lagerstatusen uten å bli distrahert av økonomisk informasjon og andre felter som ikke brukes så ofte. | Lagrede visninger for lagerstyring (aktivert som standard fra og med versjon 10.0.21). |
+| Overføringsordrer | Levering | Med denne forenklede visningen kan du fokusere på forsendelsesoperasjoner mens du administrerer overføringsordrer. | Lagrede visninger for lagerstyring (aktivert som standard fra og med versjon 10.0.21). |
+| Overføringsordrer | Mottak | Med denne forenklede visningen kan du fokusere på mottaksoperasjoner mens du administrerer overføringsordrer. | Lagrede visninger for lagerstyring (aktivert som standard fra og med versjon 10.0.21). |
+| Overføringsordrer | Kvalitetskontroll | Med denne forenklede visningen kan du fokusere på kvalitetskontroll mens du administrerer overføringsordrer. | Lagrede visninger for lagerstyring (aktivert som standard fra og med versjon 10.0.21). |
+| Overføringsordrer | Finans | Med denne forenklede visningen kan du fokusere på økonomisk informasjon mens du administrerer overføringsordrer. | Lagrede visninger for lagerstyring (aktivert som standard fra og med versjon 10.0.21). |
 
 ## <a name="saved-views-for-the-master-planning-module"></a>Lagrede visninger for hovedplanleggingsmodulen
 
@@ -83,11 +83,11 @@ Tabellen nedenfor beskriver de lagrede visningene som er tilgjengelige for Produ
 
 | Side | Visningsnavn | Vis beskrivelse | Funksjonsnavn |
 |---|---|---|---|
-| Liste over frigitte produkter | Produktoppretting | En forenklet sidevisning som bare inneholder feltene som oftest brukes ved oppretting av produkter. | Lagrede visninger for frigitte produkter |
-| Detaljer om frigitt produkt | Produktoppretting | En forenklet sidevisning som bare inneholder feltene som oftest brukes ved oppretting av produkter. | Lagrede visninger for frigitte produkter |
-| Detaljer om frigitt produkt | Administrasjon av logistikkinformasjon | En forenklet sidevisning som bare inneholder feltene som oftest brukes ved administrering av logistikkinformasjon for produkter. | Lagrede visninger for frigitte produkter |
-| Detaljer om frigitt produkt | Behandling av innkjøpsinformasjon | En forenklet sidevisning som bare inneholder feltene som oftest brukes ved administrering av innkjøpsinformasjon for produkter. | Lagrede visninger for frigitte produkter |
-| Detaljer om frigitt produkt | Behandling av salgsinformasjon | En forenklet sidevisning som bare inneholder feltene som oftest brukes ved administrering av salgsrelatert informasjon for produkter. | Lagrede visninger for frigitte produkter |
+| Liste over frigitte produkter | Produktoppretting | En forenklet sidevisning som bare inneholder feltene som oftest brukes ved oppretting av produkter. | Lagrede visninger for frigitte produkter (aktivert som standard fra og med versjon 10.0.21). |
+| Detaljer om frigitt produkt | Produktoppretting | En forenklet sidevisning som bare inneholder feltene som oftest brukes ved oppretting av produkter. | Lagrede visninger for frigitte produkter (aktivert som standard fra og med versjon 10.0.21). |
+| Detaljer om frigitt produkt | Administrasjon av logistikkinformasjon | En forenklet sidevisning som bare inneholder feltene som oftest brukes ved administrering av logistikkinformasjon for produkter. | Lagrede visninger for frigitte produkter (aktivert som standard fra og med versjon 10.0.21). |
+| Detaljer om frigitt produkt | Behandling av innkjøpsinformasjon | En forenklet sidevisning som bare inneholder feltene som oftest brukes ved administrering av innkjøpsinformasjon for produkter. | Lagrede visninger for frigitte produkter (aktivert som standard fra og med versjon 10.0.21). |
+| Detaljer om frigitt produkt | Behandling av salgsinformasjon | En forenklet sidevisning som bare inneholder feltene som oftest brukes ved administrering av salgsrelatert informasjon for produkter. | Lagrede visninger for frigitte produkter (aktivert som standard fra og med versjon 10.0.21). |
 
 ## <a name="saved-views-for-the-production-control-module"></a>Lagrede visninger for modulen Produksjonskontroll
 
@@ -95,10 +95,10 @@ Tabellen nedenfor beskriver de lagrede visningene som er tilgjengelige for modul
 
 | Side | Visningsnavn | Vis beskrivelse | Funksjonsnavn |
 |---|---|---|---|
-| Side for stykkliste for produksjonsordre | Forenklet | Denne forenklede visningen omfatter bare feltene som brukes oftest. Dermed får du en raskere oversikt og en effektivisert arbeidsprosess. | Lagrede visninger for produksjonskontroll |
-| Side for produksjonsordredetaljer | Forenklet | Denne forenklede visningen omfatter bare feltene som brukes oftest. Dermed får du en raskere oversikt og en effektivisert arbeidsprosess. | Lagrede visninger for produksjonskontroll |
-| Side for plukkliste for produksjonsordre | Forenklet | Denne forenklede visningen omfatter bare feltene som brukes oftest. Dermed får du en raskere oversikt og en effektivisert arbeidsprosess. | Lagrede visninger for produksjonskontroll |
-| Listeside for produksjonsordrer | Forenklet | Denne forenklede visningen omfatter bare feltene som brukes oftest. Dermed får du en raskere oversikt og en effektivisert arbeidsprosess. | Lagrede visninger for produksjonskontroll |
+| Side for stykkliste for produksjonsordre | Forenklet | Denne forenklede visningen omfatter bare feltene som brukes oftest. Dermed får du en raskere oversikt og en effektivisert arbeidsprosess. | Lagrede visninger for produksjonskontroll (aktivert som standard fra og med versjon 10.0.21). |
+| Side for produksjonsordredetaljer | Forenklet | Denne forenklede visningen omfatter bare feltene som brukes oftest. Dermed får du en raskere oversikt og en effektivisert arbeidsprosess. | Lagrede visninger for produksjonskontroll (aktivert som standard fra og med versjon 10.0.21). |
+| Side for plukkliste for produksjonsordre | Forenklet | Denne forenklede visningen omfatter bare feltene som brukes oftest. Dermed får du en raskere oversikt og en effektivisert arbeidsprosess. | Lagrede visninger for produksjonskontroll (aktivert som standard fra og med versjon 10.0.21). |
+| Listeside for produksjonsordrer | Forenklet | Denne forenklede visningen omfatter bare feltene som brukes oftest. Dermed får du en raskere oversikt og en effektivisert arbeidsprosess. | Lagrede visninger for produksjonskontroll (aktivert som standard fra og med versjon 10.0.21). |
 
 ## <a name="saved-views-for-the-sales-and-marketing-module"></a>Lagrede visninger for modulen Salg og markedsføring
 

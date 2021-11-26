@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 0df6aee6a5ec1ecc751713c19c659c5471cc4146
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 872a08241f3d0156d0ccf1f89443e3a894656404
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576046"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777608"
 ---
 # <a name="license-plate-receiving-via-the-warehouse-management-mobile-app"></a>Nummerskiltmottak via mobilappen Lagerstyring
 
@@ -77,7 +77,7 @@ Når denne funksjonen er aktivert, vil menyelementer på mobilenheter for mottak
 - **Vis et detaljert sammendrag** – Ved nummerskiltmottak får arbeiderne se en ekstra side som viser hele forhåndsvarselet om forsendelse.
 - **Hopp over sammendrag** – Arbeiderne ser ikke hele forhåndsvarselet om forsendelse. Lagerarbeiderne kan heller ikke angi en disposisjonskode eller legge til unntak under mottaksprosessen.
 
-Hvis du vil gjøre denne funksjonaliteten tilgjengelig på systemet, må du aktivere funksjonen *Kontroller om det skal vises en mottakssammendragsside på mobilenheter* i [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Hvis du vil gjøre denne funksjonaliteten tilgjengelig på systemet, må funksjonen *Kontroller om det skal vises en mottakssammendragsside på mobilenheter* være aktivert i [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). (Per Supply Chain Management versjon 10.0.21 er denne funksjonen aktivert som standard.)
 
 ## <a name="prevent-transfer-ordershipped-license-plates-from-being-used-at-warehouses-other-than-the-destination-warehouse"></a>Forhindre nummerskilt sendt via overføringsordre fra å brukes på andre lagre enn destinasjonslageret
 

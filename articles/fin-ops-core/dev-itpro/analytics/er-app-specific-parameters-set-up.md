@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 0fce566bea6340b4016e559b1f5f1764a6881e28
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: 9b57c6165e5de4a115818a135ed1455e3b05e3f0
+ms.sourcegitcommit: 4b7e9d074e368a08d2f75482b722dce0c69a4bbd
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675400"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7733469"
 ---
 # <a name="set-up-the-parameters-of-an-er-format-per-legal-entity"></a>Definere parameterne for et ER-format per juridisk enhet
 
@@ -226,15 +226,6 @@ Du kan også bruke denne eksport-import-fremgangsmåten til å overføre ER-form
 Hvis du konfigurerer programspesifikke parametere for en versjon av et ER-format og deretter importerer en senere versjon av det samme formatet til den gjeldende finansforekomsten, vil ikke de eksisterende programspesifikke parameterne brukes på den importerte versjonen med mindre du bruker funksjonen **Bruk programspesifikke parametere fra tidligere versjoner av ER-formater**. Hvis du vil ha mer informasjon, kan du se delen [Bruke eksisterende parametere på nytt](#reuse-existing-parameters) senere i dette emnet.
 
 Når du velger en fil for import, sammenlignes strukturen til programspesifikke parametere i den aktuelle filen med strukturen til de tilsvarende datakildene for **Oppslag**-typen i ER-formatet som er valgt for import. Som standard fullføres importen bare hvis strukturen til hver programspesifikk parameter samsvarer med strukturen til den tilsvarende datakilden i ER-formatet som er valgt for import. Hvis strukturene ikke samsvarer, får du en advarsel som informerer deg om at importen ikke kan fullføres. Hvis du fremtvinger importen, ryddes det opp i de eksisterende programspesifikke parameterne for det valgte ER-formatet, og du må definere dem fra begynnelsen.
-
-Fra og med Dynamics 365 Finance versjon 10.0.23 kan du endre standardvalget og unngå å motta en advarsel ved å aktivere funksjonen **Juster ER-programspesifikke parametere under import** i arbeidsområdet for **Funksjonsbehandling**. Når denne funksjonen er aktivert, hvis strukturen for programspesifikke parametere du importerer, avviker fra strukturen til de tilsvarende datakildene i mål-ER-formatet som er valgt for import, vil importen bli vellykket i følgende tilfeller:
-
-- Strukturen til mål-ER-formatet er endret ved å legge til nye betingelseskolonner i en eksisterende datakilder av typen **Oppslag**. Når importen er fullført, oppdateres de programspesifikke parameterne. I alle de importerte postene med programspesifikke parametere initialiseres verdiene i hver tilføyde betingelseskolonne med standardverdien for [datatypen](er-formula-supported-data-types-primitive.md) for denne kolonnen.
-- Strukturen til mål-ER-formatet er endret ved å fjerne noen betingelseskolonner fra eksisterende datakilder av typen **Oppslag**. Når importen er fullført, oppdateres de programspesifikke parameterne. I alle de importerte postene med programspesifikke parametere slettes verdiene i alle kolonner for fjernet betingelse.
-- Strukturen til mål-ER-formatet er endret ved å legge til nye datakilder av typen **Oppslag**. Når importen er fullført, legges de tillagte oppslagene til i de programspesifikke parameterne.
-- Strukturen til mål-ER-formatet er endret ved å fjerne noen av de eksisterende datakildene av typen **Oppslag**. Når importen er fullført, slettes alle artefakter som er relatert til datakildene av typen **Oppslag** som ble fjernet fra ER-formatet for mål, fra de importerte programspesifikke parameterne.
-
-Når importen er fullført, i tillegg til endringene som nettopp ble beskrevet, endres statusen for de importerte programspesifikke parameterne til **Pågår**. En advarsel gir deg beskjed om at de automatisk justerte programspesifikke parameterne må redigeres manuelt.
 
 ### <a name="reuse-existing-parameters"></a>Bruke eksisterende parametere på nytt
 

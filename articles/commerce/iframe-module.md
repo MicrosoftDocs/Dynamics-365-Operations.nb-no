@@ -2,7 +2,7 @@
 title: Iframe-modul
 description: Dette emnet dekker iFrame-modulen og beskriver hvordan du legger den til på områdesider i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 09/15/2020
+ms.date: 11/04/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 570901e3afca82abd21172df4c0b6fc575b57262f2b5d1decad11cabc00db31d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bce6a50e8c145f8961bd0c839fe16c1f4d69e811
+ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767296"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7754020"
 ---
 # <a name="iframe-module"></a>Iframe-modul
 
@@ -66,7 +66,10 @@ Følg denne fremgangsmåten for å legge til en iFrame-modul på en side for å 
 1. Angi andre egenskaper, for eksempel **Overskrift** og **Høyde** etter behov.
 1. Velg **Lagre**, velg **Fullfør redigering** for å sjekke inn siden, og velg deretter **Publiser** for å publisere den.
 1. Gå til markedsføringssiden på området. Du skal se at videoen gjengis i iFrame-modulen.
- 
+
+> [!NOTE]
+> Siden iFrame-modulen er vert for eksternt innhold, må forfattere på området kontrollere at innhold som er vert for en iFrame-modul, ikke bryter policyene for innholdsbegrensning i det aktuelle markedet. Hvis det er et innholdsbrudd på en side som bruker iFrame-modulen, kan forfatter av området fjerne iFrame-modulen ved å åpne siden i områdekonfiguratoren, velge **Fjern modul** i iFrame-modulsporet og deretter lagre og publisere siden på nytt.
+
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Oversikt over modulbibliotek](starter-kit-overview.md)

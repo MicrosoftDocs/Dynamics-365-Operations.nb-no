@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: v-savanh
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 024bbaad45f320b8c82b20a52ced05322371e337
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 9ad7f116f979d571a5e34eee67beb7218a271522
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575393"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777627"
 ---
 # <a name="vendor-collaboration-with-customers"></a>Leverandørsamarbeid med kunder
 
@@ -102,7 +102,7 @@ Personer som arbeider i offentlig sektor, kan se åpne og utløpte tilbudsforesp
 
     Hvis du er invitert til å by, finner du den samme tilbudsforespørselen på siden **Invitasjoner til nytt bud**. Noen ganger vil du kanskje by på en åpen tilbudsforespørsel, men du har ikke blitt invitert til å by. Du kan i så fall kanskje invitere deg selv, forutsatt at kunden har aktivert personlig invitasjon for tilbudsforespørselssaken.
 
-    Forbedre tilgjengeligheten til koblingen **Åpne publiserte tilbudsforespørsler** ved å aktivere funksjonen **Vis Åpne publiserte tilbudsforespørsler-koblingen som en flis**. Denne funksjonen konverterer koblingen til en flis og flytter den til en fremtredende plassering, slik at den er lett å finne.
+    Forbedre tilgjengeligheten til koblingen **Åpne publiserte tilbudsforespørsler** ved å aktivere funksjonen **Vis Åpne publiserte tilbudsforespørsler-koblingen som en flis**. Denne funksjonen konverterer koblingen til en flis og flytter den til en fremtredende plassering, slik at den er lett å finne. (Per Supply Chain Management versjon 10.0.21 er denne funksjonen aktivert som standard.)
 
 - Velg koblingen **Lukkede publiserte tilbudsforespørsler** for å se en liste over lukkede tilbudsforespørsler som er tilgjengelige for offentligheten. En lukket tilbudsforespørsel er en tilbudsforespørsel som er utløpt. Du kan finne utløpsdatoen og -klokkeslettet i hodet i tilbudsforespørselen.
 

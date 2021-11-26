@@ -2,7 +2,7 @@
 title: Aktiver kontantstrømprognose
 description: Dette emnet forklarer hvordan du aktiverer funksjonen for kontantstrømprognoser i Finance Insights.
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,45 +15,37 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: b5e54772b132b4098df8259e954a484a0838ee38
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: d968f28126cf205a487d84301aa28f1251713386
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386717"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752694"
 ---
 # <a name="enable-cash-flow-forecasting"></a>Aktiver kontantstrømprognose
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Dette emnet forklarer hvordan du aktiverer funksjonen for kontantstrømprognoser i Finance Insights.
 
 > [!NOTE]
 > For å kunne bruke betalingsprognoser i kontantstrømmen må du konfigurere funksjonen for kundebetalingsprognoser som beskrevet i [Aktivere kundebetalingsprognoser](enable-cust-paymnt-prediction.md).
-
-1. Bruk informasjon fra miljøsiden i Microsoft Dynamics Lifecycle Services (LCS) til å koble til den primære forekomsten av Azure SQL for dette miljøet. Kjør følgende Transact-SQL-kommando (T-SQL) for å aktivere testversjoner for sandkassemiljøet. (Det kan hende at du må aktivere tilgang for IP-adressen din i LCS før du kan koble til Application Object Server \[AOS\] eksternt.)
-
-    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('CashflowInsightsFeature', 1)`
-
-    > [!NOTE]
-    > Hopp over dette trinnet hvis du bruker versjon 10.0.20 eller nyere, eller hvis du bruker en Service Fabric-distribusjon. Finance Insights-teamet skal allerede ha aktivert testversjonen for deg. Hvis du ikke ser funksjonen i arbeidsområdet **Funksjonsbehandling** eller får problemer når du prøver å aktivere den, kontakter du <fiap@microsoft.com>.
   
-2. Åpne arbeidsområdet **Funksjonsbehandling**, og følg denne fremgangsmåten:
+1. Åpne arbeidsområdet **Funksjonsbehandling**, og følg denne fremgangsmåten:
 
     1. Velg **Se etter oppdateringer**.
-    2. Aktiver følgende funksjoner:
+    2. På **Alle**-fanen søker du etter **Kontantstrømprognoser**. Hvis du ikke funner denne funksjonen, søker du etter **(Forhåndsversjon) Kontantstrømprognoser**. 
+    3. Aktivere funksjonen.
 
-        - Ny rutenettkontroll
-        - Gruppering i rutenett (forhåndsversjon) 
-        - Kundebetalingsforutsigelser (forhåndsversjon)
-        - Kontantstrømprognoser (forhåndsversjon)
-
-3. Gå til **Kontant- og bankbehandling \> Oppsett for kontantstrømprognose**, og legg til likviditetskontoene som skal tas med i prognosene.
+2. Gå til **Kontant- og bankbehandling \> Oppsett for kontantstrømprognose**, og legg til likviditetskontoene som skal tas med i prognosene. Definer også likviditetskontoen for betalinger på fanene **Kunder** og **Leverandører**. Pass på at kontantstrømprognosen beregnes på nytt.
 
     > [!NOTE]
     > Hvis likviditetskontoer ikke er opprettet, kan ikke kontantstrømmen genereres.
+    >
+    > Hvis du vil ha mer informasjon om hvordan du definerer kontantstrømprognoser, kan du se [Kontantstrømprognose](../cash-bank-management/cash-flow-forecasting.md).
 
-4. Gå til **Kontant- og bankbehandling \> Oppsett \> Finance Insights (forhåndsversjon) \> Kontantstrømprognoser (forhåndsversjon)**, og følg denne fremgangsmåten:
+3. Gå til **Kontant- og bankbehandling \> Oppsett \> Finance Insights (forhåndsversjon) \> Kontantstrømprognoser (forhåndsversjon)**, og følg denne fremgangsmåten:
 
     1. Velg **Aktiver funksjon** i fanen **Kontantstrømprognose**.
     2. Velg **Opprett prognosemodell**.

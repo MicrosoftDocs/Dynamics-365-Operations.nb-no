@@ -1,8 +1,8 @@
 ---
 title: Arbeidere uten ansettelse
-description: Arbeidere som ikke har en fremtidig, aktiv eller historisk ansettelse i organisasjonen, vises i skjemaet Arbeidere uten ansettelse.
-author: andreabichsel
-ms.date: 04/06/2021
+description: Arbeidere som ikke har en fremtidig, aktiv eller historisk ansettelse i organisasjonen, vises på siden Arbeidere uten ansettelse.
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: ''
 ms.prod: ''
 ms.technology: ''
@@ -10,23 +10,23 @@ ms.search.form: HcmWorkerV2, HRMMassHireProject, HRMMassHireLine, HcmPersonnelMa
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2021-04-06
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 45841c35780960f524cc232dad16f94dbc8ec1c2df75fa2a5c2520e5522d4e3a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d282c0fac00d6bc410717dd156aef9ffce352c6d
+ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724970"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7771296"
 ---
 # <a name="workers-without-employment"></a>Arbeidere uten ansettelse
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Arbeidere som ikke har en fremtidig, aktiv eller historisk ansettelse i organisasjonen, vises i skjemaet **Arbeidere uten ansettelse**. Arbeidere med denne statusen kan vises når du importerer arbeidere uten en ansettelsespost, eller når du sletter en arbeiders ansettelse via **Arbeidere > Ansettelseshistorikk**.
+Arbeidere som ikke har en fremtidig, aktiv eller historisk ansettelse i organisasjonen, vises på siden **Arbeidere uten ansettelse**. Arbeidere av denne typen kan vises når du importerer arbeidere uten en ansettelsespost, eller når du sletter en arbeiders ansettelse via **Arbeidere \> Ansettelseshistorikk**.
 
-Som standard er skjemaet **Arbeidere uten ansettelse** tilgjengelig for følgende roller:
+Som standard er siden **Arbeidere uten ansettelse** tilgjengelig for følgende roller:
 
 - Personalassistent
 - Personalsjef

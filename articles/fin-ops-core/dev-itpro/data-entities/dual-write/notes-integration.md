@@ -5,16 +5,16 @@ author: RamaKrishnamoorthy
 ms.date: 02/22/2021
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: e850b44479d36c16db3c993e196cd6bfdbc52ee7
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: d52ff69cfd7a81eb9f19a0ef498c6ceeea77b360
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7416607"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782362"
 ---
 # <a name="note-integration"></a>Merknadsintegrering
 
@@ -26,9 +26,9 @@ I forretningsprosesser samler Microsoft Dynamics 365-brukere ofte inn informasjo
 
 Kundeopplysninger kan klassifiseres på følgende måter:
 
-+ **Handlingsbar informasjon som en Dynamics 365-bruker håndterer på vegne av en kunde** –  Contoso (en Dynamics 365-bruker) arrangerer for eksempel en spørrekonkurranse. En av Contoso-kundene (en kunde) ønsker å delta i spørrekonkkurransen. Kunden ber en Contoso-ansatt om å reservere en plass i spørrekonkkurranse for dem. Reservasjonen skjer i Contoso sin hendelseskalender for deltakeren.
++ **Handlingsbar informasjon som en Dynamics 365-bruker håndterer på vegne av en kunde** – Contoso (en Dynamics 365-bruker) arrangerer for eksempel en spørrekonkkurranse. En av Contoso-kundene (en kunde) ønsker å delta i spørrekonkkurransen. Kunden ber en Contoso-ansatt om å reservere en plass i spørrekonkkurranse for dem. Reservasjonen skjer i Contosos hendelseskalender for deltakeren.
 + **Informasjon som kan behandles for en Dynamics 365-bruker** – En kunde som kjøper en Surface-enhet, legger for eksempel inn spesielle instruksjoner som indikerer at enheten skal pakkes inn i gave før levering. Disse instruksjonene er informasjon som kan behandles, og som bør behandles av Contoso-ansatte som er ansvarlig for emballasje.
-+ **Informasjon som ikke kan behandles** – En kunde besøker for eksempel Contoso-butikken, og uttrykker interesse for *Halo*-spill og spilltilbehør i samtalen med butikkmedarbeideren. Butikkmedarbeideren noterer seg denne informasjonen. Produktanbefalingsmotoren bruker deretter informasjonen til å foreta anbefalinger til kunden.
++ **Informasjon som ikke kan behandles**– En kunde besøker for eksempel Contoso-butikken, og uttrykker interesse for *Halo*-spill og spilltilbehør i samtalen med butikkmedarbeideren. Butikkmedarbeideren noterer seg denne informasjonen. Produktanbefalingsmotoren bruker deretter informasjonen til å foreta anbefalinger til kunden.
 
 Som regel registreres informasjon som kan behandles, som *aktiviteter* i Finance and Operations-apper og Customer Engagement-apper. Informasjon som ikke kan behandles, blir lagret som *merknader* i Finance and Operations-apper, og som *kommentarer* i Customer Engagement-apper.
 

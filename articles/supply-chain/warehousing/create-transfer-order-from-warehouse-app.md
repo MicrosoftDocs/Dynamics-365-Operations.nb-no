@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 986abfaef81474571de7db179253c4d76f65d4bec180fa9f355f3218ddbb96ba
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4ceedd8b42383dc1334f472ba754ac3e18261b9d
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746825"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777821"
 ---
 # <a name="create-transfer-orders-from-the-warehouse-app"></a>Opprette overføringsordrer fra lagerappen
 
@@ -36,7 +36,7 @@ Før du kan bruke denne funksjonen, må den og forutsetningene være aktivert i 
 1. Deretter aktiverer du funksjonen *Opprett overføringsordrer fra lagerappen*, som er oppført som:
     - **Modul** – lagerstyring
     - **Funksjonsnavn** – Opprette og behandle overføringsordre fra lagerappen
-1. Hvis du vil automatisere behandlingen av de utgående forsendelsene, må du også aktivere funksjonen [Bekreft utgående forsendelser fra satsvise jobber](confirm-outbound-shipments-from-batch-jobs.md). Denne funksjonen er oppført som:
+1. Hvis du vil automatisere behandlingen av de utgående forsendelsene, må du også aktivere funksjonen [Bekreft utgående forsendelser fra satsvise jobber](confirm-outbound-shipments-from-batch-jobs.md). Per Supply Chain Management versjon 10.0.21 er denne funksjonen aktivert som standard. Administratorer kan bruke siden [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere eller deaktivere den hvis det er nødvendig. Her vises funksjonen som:
     - **Modul** – lagerstyring
     - **Funksjonsnavn** – Bekreft utgående forsendelser fra satsvise jobber
 

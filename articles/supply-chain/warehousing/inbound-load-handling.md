@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: c2d7f140c0199b4b81a7b42220d5800d427be680
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 464d49f4e096fdd4fe47f73efc253c97200f4de3
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577846"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778065"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Lagerhåndtering av innkommende laster for bestillinger
 
@@ -267,7 +267,7 @@ Disse scenarioene krever funksjonen _Flere produktkviteringsposteringer per last
 
 1. Åpne arbeidsområdet **Funksjonsbehandling**. (Hvis du vil ha fullstendig informasjon om hvordan du finner og bruker dette arbeidsområdet, kan du se [Oversikt over funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).)
 
-1. Aktiver funksjonen _Tilknytt lagertransaksjoner for bestilling med last_, som er oppført på følgende måte:
+1. Kontroller at funksjonen _Tilknytt lagertransaksjoner for bestilling med last_ er aktivert. Per Supply Chain Management versjon 10.0.21 er denne funksjonen obligatorisk, så den er aktivert som standard, og kan ikke deaktiveres igjen. Funksjonen er imidlertid fortsatt oppført i [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) på følgende måte:
 
     - **Modul:** _Lagerstyring_
     - **Funksjonsnavn:** _Tilknytt lagertransaksjoner for bestilling med last_

@@ -2,7 +2,7 @@
 title: Likviditetsbeholdning
 description: Dette emnet beskriver hvordan funksjonen Kontantstrømprognose forutsier en organisasjons likviditetsbeholdning for bestemte tider. Det beskriver også alternativene som er tilgjengelige for å vise prognoser for forskjellige perioder.
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: e54caee1e7d703bb134593412bdad77b3af5ab38
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: bf99ce5c9de00061cba2f49d00cc9dbc728753a8
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386320"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752886"
 ---
 # <a name="cash-position"></a>Likviditetsbeholdning
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Likviditetsbeholdning er prosjekteringen av kontantstrøm som forutsies på kort sikt. Den er basert på prosjekteringen av kontantkvitteringer fra kunder som betaler utestående fakturaer og ordrer, og også på prosjekteringen av kontantutbetalinger som betales til leverandører for innkjøpsfakturaer og -ordrer.
 
@@ -44,8 +45,5 @@ Den nedre delen av fanen **Likviditetsbeholdning** viser detaljer for stillingen
 - Rutenettet **Bankkonto** viser innvirkningen av forventede inngående og utgående kontantstrømmer på banksaldoen.
 
 Hvis du vil lagre og redigere likviditetsbeholdningen, oppretter du et øyeblikksbilde. Du finner mer informasjon om hvordan du arbeider med øyeblikksbilder, ved å se [Oversikt over øyeblikksbilder](payment-snapshots.md).
-
-#### <a name="privacy-notice"></a>Personvernerklæring
-Forhåndsversjoner (1) kan ha redusert personvern og færre sikkerhetstiltak enn Dynamics 365 Finance and Operations-tjenesten, (2) er ikke inkludert i serviceavtalen (SLA) for denne tjenesten, (3) må ikke brukes til å behandle personlige data eller andre data som er underlagt juridiske eller forskriftsmessige krav, og (4) har begrenset støtte.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

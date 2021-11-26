@@ -1,8 +1,8 @@
 ---
 title: Behandle permisjonsforespørsler i Teams
 description: Dette emnet viser hvordan du ber om fridager Dynamics 365 Human Resources-appen i Microsoft Teams.
-author: andreabichsel
-ms.date: 07/16/2021
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 94fa4dca7ff8372d4cf1aeee225e821574f4104048db5ad8a816be2bce496de8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 10538c96a7637a95c60beef40a02fdb5432959ec
+ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6725872"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7771537"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Behandle permisjonsforespørsler i Teams
 
@@ -41,7 +41,7 @@ Du finner Dynamics 365 Human Resources-appen i Teams-butikken.
 Hvis appen ikke logger deg på automatisk, velger du kategorien **Innstillinger** for å logge på.
 
 > [!NOTE]
-> Hvis du ikke ser en påloggingsdialogboks, må du kontrollere innstillingene for nettleseren for å tillate popup-vinduer. 
+> Hvis du ikke ser en påloggingsdialogboks, må du oppdatere innstillingene for nettleseren for å tillate popup-vinduer. 
 
 Hvis du har tilgang til mer enn én forekomst av Human Resources, kan du velge hvilket miljø du vil koble til, i kategorien **Innstillinger**.
 
@@ -53,7 +53,7 @@ Hvis du har tilgang til mer enn én forekomst av Human Resources, kan du velge h
 Når appen er installert, vises det en velkomstmelding med informasjon om hvilke handlingstyper roboten kan utføre på dine vegne.
 
 > [!NOTE]
-> Når du først samhandler med roboten, må du kanskje logge på. Hvis du ikke ser en påloggingsdialogboks, må du kontrollere innstillingene for nettleseren for å tillate popup-vinduer.
+> Når du først samhandler med roboten, må du kanskje logge på. Hvis du ikke ser en påloggingsdialogboks, må du oppdatere innstillingene for nettleseren for å tillate popup-vinduer.
 
 Du kan be roboten om å:
 
@@ -113,11 +113,11 @@ I kategorien **Fridager** kan du vise:
    
 ### <a name="respond-to-teams-notifications"></a>Svare på Teams-varslinger
 
-Når du eller en arbeider du er godkjenner for, sender en permisjonsforespørsel, vil du motta en melding i Human Resources-appen i Teams. Du kan merke varslingen for å vise den. Varslinger vises også i **Chat**-området.
+Når du eller en arbeider du er godkjenner for, sender en permisjonsforespørsel, vil du motta en melding i Human Resources-appen i Teams. Du kan merke varslingen for å vise permisjonsforespørselen. Varslinger vises også i **Chat**-området.
 
 Hvis du er godkjenner, kan du velge **Godkjenn** eller **Avvis** i varslingen. Du kan også angi en valgfri melding.
 
-## <a name="send-upcoming-time-off-information-to-your-coworkers"></a>Sende kommende informasjon om fritid til kollegene
+## <a name="send-upcoming-time-off-information-to-your-coworkers"></a>Send kommende informasjon om fritid til kollegene
 
 Når du har installert Human Resources-appen for Teams, kan du enkelt sende informasjon om kommende fritid til kollegene i grupper eller samtaler.
 
@@ -199,7 +199,7 @@ Hvis du får en feilmelding under forsøk på å godkjenne permisjonsforespørsl
 
 2. Kontroller at brukere blir logget på **Chatter**-kategorien med samme legitimasjon som de bruker for godkjenning av permisjonsforespørsler. Bruk meldingene "logg av" og deretter "logg på" for å logge deg på med riktig legitimasjon.
 
-3. Hvis problemet vedvarer, må du kontrollere statusen til den satsvise jobben for forretningshendelser som systemadministrator. Hvis den er i et ventende stadium eller utførelsesstadium, må du sjekke tilbake om et par minutter. Hvis statusen forblir uendret, kan du logge en støtteforespørsel, slik at teamet kan bidra til å løse problemet.
+3. Hvis problemet vedvarer, må du kontrollere statusen til den satsvise jobben for **forretningshendelsessystem** som systemadministrator. Hvis den er i et **ventende stadium** eller **utførelsesstadium**, må du sjekke tilbake om et par minutter. Hvis statusen forblir uendret, kan du logge en støtteforespørsel, slik at teamet kan bidra til å løse problemet.
 
 ## <a name="known-accessibility-issues"></a>Kjente tilgjengelighetsproblemer
 
@@ -208,7 +208,7 @@ Human Resources-appen i Teams har følgende tilgjengelighetsproblemer som vi job
 | Problem | Midlertidig løsning eller forklaring |
 | --- | --- |
 | Hvis du zoomer til 400 % på skrivebordet, skjules noen av handlingsknappene fra visningen. | Det anbefales bruk av et forstørrelsesprogram i stedet til vi kan støtte dette zoomenivået. |
-| I fanen **Fridager** annonserer VoiceOver en knappehandling ved å lese toppteksen for fridagerrutenettet. | Toppteksten og elementene i rutenettet er gruppert etter år, og de kan skjules. VoiceOver tolker dette som et handlingselement, men det er ikke det. |
+| I fanen **Fridager** annonserer VoiceOver en knappehandling mens toppteksen for fridagerrutenettet blir lest. | Toppteksten og elementene i rutenettet er gruppert etter år, og de kan skjules. VoiceOver tolker denne presentasjonen som et handlingselement, men det er ikke det. |
 | I fanen **Fridager** er det en ekstra sveipebevegelse når du navigerer til **Årsakskode** i en ny forespørsel. | Det finnes ingen skjult kontroll som sveipenavigeringen prøver å komme til. |
 | På fanen **Fridager** hvis du sveiper mens kalenderen er åpen, kan du havne utenfor kontrollen i stedet for øverst i en ny forespørsel eller mens du redigerer en forespørsel. | Når du kommer **Gå til i dag**, bør du anse det som slutten på kontrollen, og sveipe i motsatt retning for å komme tilbake toppen. |
 | I fanen **Chat** hopper fokuset tilbake til toppen når du angir en dato ved bruk av hjelpeverktøyet eller tastaturnavigasjonen. | Bruk tabulator til du kommer til inndataområdet igjen. |
@@ -219,7 +219,7 @@ Human Resources-appen i Teams har følgende tilgjengelighetsproblemer som vi job
 
 Ved hjelp av Dynamics 365 Human Resources-roboten i Microsoft Teams blir brukerens tekstinndata analysert for å forstå den underliggende spørringen/hensikten. Brukerens inndata, for eksempel "Søk i konto i Contoso", rutes til en av Microsofts kognitive tjenester, kalt Language Understanding Intelligent Service (LUIS). Les mer om LUIS  [her](https://www.luis.ai/). LUIS-tjenesten skiller eller forstår gjengivelsen av brukerens inndata (i dette tilfellet er hensikten å finne informasjon) og målenheten (i dette tilfellet er den tiltenkte enheten en konto kalt Contoso). Denne informasjonen sendes deretter videre til Microsofts  [Azure Bot Framework](https://azure.microsoft.com/services/bot-service/), som kommuniserer med data fra Dynamics 365 Human Resources og henter den ønskede informasjonen for brukerspørringen. 
 
-Ved å installere og tillate tilgang til bruk av robot, godtar du at LUIS-tjenesten og Azure-robotrammeverket behandler hensikten bak inndataene, noe som resulterer i en forbedret samtalebasert brukeropplevelse. LUIS-tjenesten og Azure-robotrammeverket kan ha forskjellige samsvarsnivåer sammenlignet med Dynamics 365 Human Resources. Selv om LUIS-tjenesten har tilgang bare til brukerspørringene og ikke er utformet for å være koblet til brukerens Dynamics 365 Human Resources-data eller konto, kan en bruker av Dynamics 365 Human Resources-roboten frivillig angi en spørring som inneholder kundedata, personlige data eller andre data, og denne typen spørringsinnhold kan sendes til LUIS-tjenesten og det profesjonelle Azure-robotrammeverket. 
+Ved å installere og tillate tilgang til bruk av robot, godtar du at LUIS-tjenesten og Azure-robotrammeverket behandler hensikten bak inndataene, noe som resulterer i en forbedret samtalebasert brukeropplevelse. LUIS-tjenesten og Azure-robotrammeverket kan ha forskjellige samsvarsnivåer sammenlignet med Dynamics 365 Human Resources. Selv om LUIS-tjenesten har tilgang bare til brukerspørringene og ikke er utformet for å være koblet til brukerens Dynamics 365 Human Resources-data eller konto, kan en bruker av Dynamics 365 Human Resources-roboten frivillig angi en spørring som inneholder kundedata, personlige data eller andre data, og denne typen spørringsinnhold kan sendes til LUIS-tjenesten og det profesjonelle Azure Bot Framework. 
 
 Innholdet i brukerens spørringer og meldinger beholdes i LUIS-systemet i maksimalt 30 dager, blir kryptert når inaktive, og brukes ikke til opplæring eller forbedring av tjenesten. Les mer om kognitive tjenester [her](https://azure.microsoft.com/services/cognitive-services/language-understanding-intelligent-service/). 
 

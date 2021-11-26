@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 6b75dcb7d56648f3be291cb1c09ec57a53477ec0
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 59c4c100275917f3f9bf489c7d64b276275f1872
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344180"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778089"
 ---
 # <a name="wave-label-printing"></a>Bølgeetikettutskrift
 
@@ -53,7 +53,7 @@ Disse forbedringene gjør det mer effektivt å merke kartonger før lagring på 
 
 ## <a name="turn-on-the-wave-label-printing-feature"></a>Aktivere funksjonen Bølgeetikettutskrift
 
-Før du kan bruke *Bølgeetikettutskrift*-funksjonen, må den aktiveres i systemet. Administratorer kan bruke [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)-arbeidsområdet til å kontrollere funksjonsstatusen og aktivere den hvis den kreves. Funksjonen vises på følgende måte:
+Per Supply Chain Management versjon 10.0.21 er denne funksjonen obligatorisk, så den er aktivert som standard, og kan ikke deaktiveres igjen. Funksjonen er imidlertid fortsatt oppført i [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) på følgende måte:
 
 - **Modul:** *Lagerstyring*
 - **Funksjonsnavn:** *Bølgeetikettutskrift*

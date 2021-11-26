@@ -1,8 +1,8 @@
 ---
 title: Opprette og åpne jobbrekvisisjon
 description: Rekrutteringsprosjekter hjelper deg med å administrere rekrutteringsprosessen.
-author: andreabichsel
-ms.date: 02/03/2021
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,15 +10,15 @@ ms.search.form: HRMRecruitingTable, HcmWorkerLookUp, HcmJobLookup, HRMRecruiting
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: df60f6461c52e45849d3de89fde4ae53f915dbc3cce417a30790acf443c5fecc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0d59ccb88b8a76de6e2f00453f185fec2f149873
+ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778778"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731567"
 ---
 # <a name="create-and-open-job-requisition"></a>Opprette og åpne jobbrekvisisjon
 
@@ -39,7 +39,7 @@ Rekrutteringsprosjekter hjelper deg med å administrere rekrutteringsprosessen. 
 6. Finn og velg posten din i listen.
 7. Velg koblingen i den valgte raden i listen.
 8. Velg **Velg**.
-9. Velg rullegardinknappen i Avdeling-feltet for å åpne oppslaget.
+9. Velg rullegardinknappen i **Avdeling**-feltet for å åpne oppslaget.
 10. Velg koblingen i den valgte raden i listen.
 11. Klikk på rullegardinknappen i **Jobb**-feltet for å åpne oppslaget.
 12. Finn og velg posten din i listen.
@@ -58,10 +58,10 @@ Rekrutteringsprosjekter hjelper deg med å administrere rekrutteringsprosessen. 
 25. Angi en dato i **Sluttdato**-feltet.
 26. Velg **Lagre**.
 27. Lukk siden.
-28. Velg stillingsannonser.
+28. Velg **Stillingsannonser**.
 29. Velg **Lagre**.
 30. Lukk siden.
-31. Merk av eller fjern merket for **Vis på ansattselvbetjening**. Merk av for **Vis på ansattselvbetjening**. Dette valget gjør rekrutteringsprosjektet synlig for ansatte på selvbetjeningssidene for ansatte.
+31. Merk av eller fjern merket for **Vis på ansattselvbetjening**. Merk av for **Vis på ansattselvbetjening**. Dette valget gjør rekrutteringsprosjektet synlig for ansatte på siden **Ansattselvbetjening**.
 32. Velg **Rekrutteringsprosjektstatus**.
 33. Velg **Start**. Statusen **Startet** betyr at prosjektet er klar til å motta programmer.  
 34. Velg **OK**.

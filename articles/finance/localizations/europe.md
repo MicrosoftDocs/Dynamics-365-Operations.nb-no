@@ -13,12 +13,12 @@ ms.search.region: global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37017a082c33b83b78569b748e3d266da4f0df3bc03402ff4cf4a53e415d4f2c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e3c5e57bb115e27880c2fee888be4ab02c51462a
+ms.sourcegitcommit: 4946b7f250f8b5cd3d09098b08e74bc5763d1c86
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750285"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "7792615"
 ---
 # <a name="europe-overview"></a>Oversikt over Europa
 
@@ -94,6 +94,7 @@ Dette emnet inneholder informasjon og koblinger til ressursene som kan hjelpe de
   - [Opprette og sende inn mva-rapport](tasks/create-submit-vat-report.md)
   - [Vise transaksjoner ved utligning for Øst-Europa](emea-transactions-settlement-form.md)
   - [Avgiftspunktdato (dato i mva-register)](emea-tax-point-date.md)
+- [Utvidelse av funksjonen Finansårsak](emea-financial-reason.md)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

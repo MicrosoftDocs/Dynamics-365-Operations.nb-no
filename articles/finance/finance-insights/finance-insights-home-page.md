@@ -2,7 +2,7 @@
 title: Startside for Finance Insights
 description: Finance Insights gir konfigurerbare og utvidbare modeller som hjelper deg med å forutse firmaets kontantstrøm nøyaktig og intelligent, forutser når du skal motta betaling for utestående fordringer, og genererer et budsjettforslag som kan gjøre budsjettprosessen raskere. Alle disse funksjonene er basert på intelligente maskinlæringsmodeller.
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,24 +17,22 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 4b77b7872ed163a94ab57e4efea8fe0fbca22156
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: 3c6320043000dc07eea3128a10c16cfd54b13334
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386392"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752862"
 ---
 # <a name="finance-insights-home-page"></a>Startside for Finance Insights
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
-Finance Insights gir konfigurerbare og utvidbare modeller som hjelper deg med å forutse firmaets kontantstrøm nøyaktig og intelligent, forutser når du skal motta betaling for utestående fordringer, og genererer et budsjettforslag som kan gjøre budsjettprosessen raskere. Alle disse funksjonene er basert på intelligente maskinlæringsmodeller. Når disse nye funksjonene kombineres med automatisering i leverandørbetalinger og -innkrevinger, gir de et rikholdig og intelligent økonomisystem som styrer beslutningsprosessen og hjelper deg med å iverksette handling for å svare effektivt på gjeldende og forventede forretningsutfordringer.
-
-> [!NOTE]
-> Forhåndsversjonen av Finance Insights er tilgjengelig for distribusjoner i USA, Canada, Storbritannia, Europa, Asia/Stillehavskysten, Australia og New Zealand. Microsoft legger gradvis til støtte for flere områder. Hvis du vil aktivere Finance Insights i produksjonsmiljøer, bør funksjoner for [Eksporter til Data Lake](../../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md) aktiveres i produksjonsmiljøet først.
+Finance Insights gir konfigurerbare og utvidbare modeller som hjelper deg med å forutse firmaets kontantstrøm på en intelligent måte, forutser når du skal motta betaling for utestående fordringer, og genererer et budsjettforslag som kan gjøre budsjettprosessen raskere. Alle disse funksjonene er basert på intelligente maskinlæringsmodeller. Når disse nye funksjonene kombineres med automatisering i leverandørbetalinger og -innkrevinger, gir de et rikholdig og intelligent økonomisystem som styrer beslutningsprosessen og hjelper deg med å iverksette handling for å svare effektivt på gjeldende og forventede forretningsutfordringer.
 
 > [!NOTE]
-> Denne funksjonaliteten tilbys som et sett med forhåndsvisningsfunksjoner. Under kjøring av en forhåndsversjonsfunksjon bør du ikke bruke de resulterende maskinopplæringsmodellene til å kjøre eller påvirke forretningsavgjørelser eller budsjetteringsforslag. Bruken av denne funksjonen styres av [Ekstra vilkår for bruk](https://go.microsoft.com/fwlink/?linkid=2105274).
+> Forhåndsversjonen av Finance Insights er tilgjengelig for distribusjoner i USA, Canada, Storbritannia, Europa, Asia/Stillehavskysten, Japan, Australia og New Zealand. Microsoft legger gradvis til støtte for flere områder.
 
 ## <a name="prerequisites"></a>Forutsetninger
 
@@ -50,28 +48,15 @@ Et lag 2-miljø (flerboks) kreves for å forhåndsvise Finance Insights. Hvis du
 
 ### <a name="version-requirements"></a>Versjonskrav
 
-Dette dokumentet gjelder versjon 10.0.11 av Finance and Operations-apper (Platform update 35) og senere versjoner.
+Dette emnet gjelder for Microsoft Dynamics 365 Finance versjon 10.0.21 og senere.
 
 ### <a name="historical-data-requirements"></a>Historiske datakrav
 
-Minst ett års med kundefakturaer kreves for å lære opp maskinlæringsmodellen som brukes for funksjonen for kundebetalingspredisjoner.
+Minst ett års med kundefakturaer kreves for å lære opp maskinlæringsmodellen som brukes for funksjonen for kundebetalingspredisjoner. Det anbefales tre år med historiske data for kontantstrømprognoser. Det anbefales at du bruker tre år med historisk budsjett og/eller faktiske budsjettforslag.
 
-### <a name="role-and-permission-requirements"></a>Krav til roller og tillatelser
+## <a name="configure-finance-insights"></a>Konfigurer Finance Insights
 
-Endringer vil bli gjort i Microsoft Dynamics 365 Finance, Microsoft Dynamics Lifecycle Services (LCS) Power Apps og Azure. Riktige tillatelser kreves i disse miljøene. Her er noen eksempler på endringer som vil bli utført:
-
-- Et nytt miljø vil bli opprettet i Microsoft Power Platform.
-- En lagringskonto, et nøkkelhvelv og et program vil bli opprettet i Azure.
-- Administratoren for Active Directory-leietakeren må godkjenne AI Builder-programmet for å få tilgang til Data Lake.
-- Funksjonen blir slått på i Dynamics 365.
-
-Kjennskap til prosessen med å opprette og behandle ressurser i Azure, Microsoft Dataverse og LCS vil være nyttig når du fullfører denne prosessen.
-
-## <a name="configure-finance-insights"></a>Konfigurere Finance Insights
-
-Du må fullføre noen konfigurasjonstrinn før du kan bruke Finance Insights. Hvis du vil ha mer informasjon om hvordan du konfigurerer Finance Insights, kan du se følgende:
-  - For versjoner opptil 10.0.19: [Konfigurasjon for Finance Insights (forhåndsversjon) – versjoner opptil 10.0.19](configure-for-fin-insites.md).
-  - For versjon 10.0.20 og nyere: [Konfigurasjon for Finance Insights (forhåndsversjon) – versjon 10.0.20 og nyere](configure-for-fin-insites-PubPrvw.md).
+Du må fullføre noen konfigurasjonstrinn før du kan bruke Finance Insights. Hvis du vil ha mer informasjon om hvordan du konfigurerer Finance Insights, kan du se [Konfigurasjon for Finance Insights](configure-for-fin-insites.md).
 
 ## <a name="create-a-data-integrator-project"></a>Opprette et dataintegreringsprosjekt
 
@@ -97,17 +82,14 @@ Budsjettforslagsfunksjonen bruker en maskinlæringsmodell sammen med organisasjo
 
 ### <a name="using-customer-payment-predictions"></a>Bruke kundebetalingsforutsigelser
 
-Intelligent kontantstrømprognose er bygd på toppen av eksisterende funksjonalitet for kontantstrømprognose i Dynamics 365 Finance. Hvis du vil se gjennom den eksisterende muligheten, se [Kontantstrømprognose](../cash-bank-management/cash-flow-forecasting.md).
-
-- Hvis du vil vite hvordan kundebetalingsprediksjoner kan gi informasjonen som er nødvendig for proaktivt å samle inn kundebetalinger, se [Bruke kundebetalingsprediksjoner](use-customer-payment-predictions.md).
+- Hvis du vil vite hvordan kundebetalingsprediksjoner kan gi informasjonen som kreves for proaktivt å samle inn kundebetalinger, se [Bruke kundebetalingsprediksjoner](use-customer-payment-predictions.md).
 - Hvis du vil ha informasjon som kan hjelpe deg med å vurdere effektiviteten av forutsigelsesmodellen etter at du har begynt å bruke funksjonen, kan du se [Evaluere den opprinnelige forutsigelsesmodellen for kundebetaling](evaluate-payment-prediction.md).
 - Hvis du vil ha informasjon som kan hjelpe deg med å justere dataene som brukes til å bygge opp forutsigelsen, og dermed forbedre effektiviteten, kan du se [Forbedre forutsigelsesmodellen](improve-model.md).
-
-Hvis du vil ha mer informasjon om resultatene av AI-prediksjonsmodellene, kan du se [Resultat av maskinlæringsmodeller](confusion-matrix.md).
+- Hvis du vil ha mer informasjon om resultatene av AI-prediksjonsmodellene, kan du se [Resultat av maskinlæringsmodeller](confusion-matrix.md).
 
 ### <a name="using-cash-flow-forecasts"></a>Bruke kontantstrømprognoser
 
-Funksjonen for kontantstrømprognose kan hjelpe deg å anslå likviditetsbeholdningen på en mer nøyaktig måte. 
+Funksjonen for kontantstrømprognose kan hjelpe deg å anslå likviditetsbeholdningen på en mer nøyaktig måte. Intelligent kontantstrømprognose er bygd på toppen av eksisterende funksjonalitet for kontantstrømprognose i Dynamics 365 Finance. Hvis du vil se gjennom den eksisterende muligheten, se [Kontantstrømprognose](../cash-bank-management/cash-flow-forecasting.md).
 
 - Hvis du vil ha informasjon om de nye funksjonene i kontantstrømprognoser, kan du se [Kontantstrømprognose](cash-flow-forecast-intro.md).
 - Hvis du vil ha informasjon om hvordan du importerer eksterne data som skal inkluderes i kontantstrømprognosen her, kan du se [Bruke eksterne data i kontantstrømprognoser](external-data-in-cash-flow.md). 
@@ -120,6 +102,6 @@ Hvis du vil ha informasjon om hvordan du gjør opprettelsen av et budsjett raske
 
 ## <a name="feedback-and-support"></a>Tilbakemelding og støtte
 
-Send en e-postmelding til [Innsikt i kundebetaling (forhåndsversjon)](mailto:fiap@microsoft.com) hvis du er interessert i å gi tilbakemelding eller trenger støtte.
+Hvis du er interessert i å gi tilbakemelding eller trenger kundestøtte, kan du sende en e-postmelding til [Finance Insights](mailto:fiap@microsoft.com).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

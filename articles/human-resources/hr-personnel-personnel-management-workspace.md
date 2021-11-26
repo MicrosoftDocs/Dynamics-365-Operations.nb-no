@@ -1,43 +1,43 @@
 ---
 title: Arbeidsområde for personaladministrasjon
 description: Dette emnet beskriver de konseptuelle elementene i arbeidsområdet for personaladministrasjon.
-author: andreabichsel
-ms.date: 07/01/2021
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: HcmPosition, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.author: anbichse
-ms.reviewer: anbichse
+ms.author: twheeloc
+ms.reviewer: twheeloc
 ms.search.scope: Human Resources
 ms.custom: 269054
 ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 923d4a980c3f8f9b3bf5be1f77d8910081123fa08b068f1fd8fa935312d3a101
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4332be972ab3dc81e7e4f3cc297a91cd247e721e
+ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754829"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7771344"
 ---
 # <a name="personnel-management-workspace"></a>Arbeidsområde for personaladministrasjon
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Arbeidsområdet **Personaladministrasjon** inneholder en omfattende mengde innhold. Det inneholder personalbevegelser, det sporer ansattendringer, ledige stillinger, adresseendringer, utløpsposter og analyse, og det inneholder koblinger til bestemt informasjon. Dette emnet inneholder detaljert informasjon om hver del av arbeidsområdet.
+Arbeidsområdet **Personaladministrasjon** inneholder en omfattende mengde innhold. Det inneholder personalbevegelser, sporer ansattendringer, ledige stillinger, adresseendringer, utløpsposter og analyse og inneholder koblinger til bestemt informasjon. Dette emnet inneholder detaljert informasjon om hver del av arbeidsområdet.
 
 ## <a name="activity-tab"></a>Kategorien Aktivitet
 
 Kategorien **Aktivitet** inneholder deler som grupperer arbeidere basert på stadiet deres i ansettelsesprosessen:
 
-- Kandidater som skal ansettes
-- Starter snart
-- Nyansettelser
-- Avslutter
-- Avsluttet
+- **Kandidater som skal ansettes**
+- **Starter snart**
+- **Nyansettelser**
+- **Avslutter**
+- **Avsluttet**
 
 Når en arbeider er i ett av disse stadiene, er bestemte handlinger tilgjengelige som en knapp på kortet, eller på menyen som vises når du velger (**...**) i øvre høyre hjørne. De følgende underdelene beskriver delene i kategorien **Aktivitet**, og viser hvilke handlinger som er tilgjengelige.
 
@@ -51,9 +51,9 @@ Delen **Kandidater som skal ansettes** i arbeidsområdet er fylt ut fra flere ki
 
 Når kandidater vises i delen **Kandidater som skal ansettes**, kan du utføre følgende handlinger ved å velge ellipsen på kandidatkortet:
 
-- Forkast kandidat
-- Ikke ansett
-- Ansett
+- **Forkast kandidat**
+- **Ikke ansett**
+- **Ansett**
 
 > [!NOTE]
 > Hvis kandidatlisten fylles ut fra Microsoft Dataverse, vises de samme kandidatene i alle juridiske enheter, fordi en juridisk enhet ikke er tilknyttet kandidaten.
@@ -65,7 +65,7 @@ Delen **Starter snart** viser arbeidere som har en startdato i fremtiden. Listen
 Hvis lederen ikke vises på kortet, er det ikke tilordnet en stilling for arbeideren.
 
 > [!NOTE] 
-> Vi anbefaler at du tilordner en stilling til en arbeider før du bruker en sjekkliste, fordi det av og til tilordnes oppgaver til nyansattes overordnede. Hvis en stilling ikke er tilordnet en stilling, kan imidlertid ikke den nye ansattes overordnede bestemmes. I så fall blir de planlagte oppgavene som er beregnet på lederen, tilordnet kontrollistens eier i stedet.
+> Vi anbefaler at du tilordner en stilling til en arbeider før du bruker en sjekkliste. Enkelte ganger tilordnes de ansatte oppgaver som nyansattes overordnede. Hvis en stilling ikke er tilordnet en stilling, kan imidlertid ikke den nye ansattes overordnede bestemmes. I så fall blir de planlagte oppgavene som er beregnet på lederen, tilordnet kontrollistens eier i stedet.
 
 Når arbeidere vises i **Starter snart**-delen, er følgende handlinger tilgjengelige for dem:
 
@@ -132,13 +132,9 @@ Når arbeiderne vises i **Avsluttet**-delen, er følgende handlinger tilgjengeli
 
 Kategorien **Ansattendringer** viser en liste over alle ansattes handlinger. Denne listen er ikke tilgjengelig som standard. Hvis du vil aktivere funksjonaliteten, setter du alternativet **Aktiver ansatthandlinger** på siden **Delte parametere for personaladministrasjon** på fanen **personalhandlinger** til **Ja**.
 
-Hvis du vil ha mer informasjon om personalhandlinger, kan du se (Kobling til Personalhandlinger-siden).
-
 ## <a name="position-changes-tab"></a>Kategorien Stillingsendringer
 
 Kategorien **Stillingsendringer** viser en liste over alle stillingspersonalhandlinger. Denne listen er ikke tilgjengelig som standard. Hvis du vil aktivere funksjonaliteten, setter du alternativet **Aktiver stillingshandlinger** på siden **Delte parametere for personaladministrasjon** på fanen **personalhandlinger** til **Ja**.
-
-Hvis du vil ha mer informasjon om personalhandlinger, kan du se (Kobling til Personalhandlinger-siden).
 
 ## <a name="open-positions-tab"></a>Fanen Åpne stillinger
 
@@ -151,11 +147,11 @@ Fanen **Åpne stillinger** viser alle åpne stillinger. Stillinger må ha en akt
 
 Kategorien **Utløpende poster** viser alle elementer som er utløpt eller vil utløpe for arbeiderne i firmaet som brukeren er logget på. Følgende elementer vises i listen:
 
-- Attester
-- Identifikasjon
-- Prøveperioder
-- Screeninger
-- Tester
+- **Attester**
+- **Identifikasjon**
+- **Prøveperioder**
+- **Screeninger**
+- **Tester**
 
 Hvis du vil angi om listen viser utløpte poster eller utløpende poster, definererer du en tidsramme på siden **Parametere for Personal** på **Generelt**-fanen for enten **Utløpende poster** eller **Utløpte poster**. Dataene i kategorien **Utløpende poster** kan vises i et bestemt antall dager. Hvis du for eksempel vil vise listen over poster som vil utløpe i de neste 14 dagene, setter du **Antall dager**-feltet til **14**.
 

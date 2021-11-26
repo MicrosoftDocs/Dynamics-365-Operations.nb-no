@@ -1,8 +1,8 @@
 ---
-title: Organisere arbeidsstyrken ved bruk av avdelinger, jobber og stillinger
-description: Avdelinger, jobber og stillinger er organisasjonselementer som vedlikeholdes i Personale. Denne artikkelen beskriver konseptuell informasjon om disse elementene.
-author: andreabichsel
-ms.date: 06/20/2017
+title: Organisere arbeidsstyrken ved hjelp av avdelinger, jobber og stillinger
+description: Dette emnet beskriver konseptuell informasjon om avdelinger, jobber og stillinger, som er organisasjonselementer som vedlikeholdes i Personale.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 87933
 ms.assetid: eb5dcacb-a5fe-451d-b30a-7ef14da65d81
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: cd50bf7e8e03d72d6d0e1e2b0b065a5d9c7a3ef44e96f92a5fc342a0d820d8e1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 51335cba0e0dce755ce36fbe13c6294fca58d797
+ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778802"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731814"
 ---
 # <a name="organize-your-workforce-by-using-departments-jobs-and-positions"></a>Organisere arbeidsstyrken ved hjelp av avdelinger, jobber og stillinger
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Avdelinger, jobber og stillinger er organisasjonselementer som vedlikeholdes i Personale. Denne artikkelen beskriver konseptuell informasjon om disse elementene. 
+Avdelinger, jobber og stillinger er organisasjonselementer som vedlikeholdes i Personale. Dette emnet beskriver konseptuell informasjon om disse elementene. 
 
 Eksemplet nedenfor brukes til å illustrere begreper som er beskrevet i denne artikkelen.
 
@@ -49,7 +49,6 @@ En avdeling er en driftsenhet som representerer en kategori eller et funksjonsom
 ## <a name="jobs-and-positions"></a>Jobber og stillinger
 En jobb er en samling oppgaver og ansvarsområder som kreves av en person som utfører en jobb. En stilling er én enkeltforekomst av en jobb. Ansvarsområder, jobboppgaver, jobbfunksjoner, ferdigheter, utdanningsinformasjon og sertifikater som kreves for en jobb, er også nødvendig for stillinger som er tilknyttet en jobb.
 ### <a name="job-tasks"></a>Jobboppgaver
-
 Du kan opprette jobboppgaver som beskriver de grunnleggende oppgavene som må fullføres av en arbeider i en stilling for jobben. Den samme jobboppgaven kan legges til flere jobber, og stillinger for disse jobbene arver disse jobboppgavene. Eksempler på jobboppgaver er oppført i tabellen nedenfor.
 
 <table>
@@ -106,24 +105,21 @@ Stillinger er et viktig element i det nederste nivået i et organisasjonshierark
 -   Du kan angi en arbeidsflyt slik stillingstillegg og -endringer kan kreve godkjenning.
 
 ### <a name="position-duration"></a>Stillingsvarighet
-
 Hver stilling har et tidsrom som stillingen er gyldig i. Dette tidsrommet kalles varighet. Sommerstillinger kan for eksempel ha varighet fra 1. mai 2015 til 31. august 2015.
 
 ### <a name="worker-assignments"></a>Arbeidertilordninger
-
 Når du tilordner en arbeider til en stilling, fyller du denne stillingen. Du kan tilordne arbeidere til flere stillinger, men bare én arbeider kan tilordnes til en stilling på samme tid.
 
 ### <a name="reporting-relationships"></a>Rapporteringsrelasjoner
+Stillinger er viktige elementer i det nederste nivået i et organisasjonshierarki. Du kan angi stillingen en stilling rapporterer til, på **Stilling**-siden. Når du tilordner en arbeider til en stilling som rapporterer til en annen stilling, oppretter du en rapporteringsrelasjon mellom arbeidere som er tilordnet de to stillingene. Stillingen "Regnskapsfører-A" rapporterer for eksempel til stillingen "Regnskapsansvarlig". Ana Bowman tilordnes stillingen "Regnskapsansvarlig", og Felix Henderson tilordnes stillingen "Regnskapsfører-A". Det betyr at Felix Henderson rapporterer til Ana Bowman. 
 
-Stillinger er viktige elementer i det nederste nivået i et organisasjonshierarki. Du kan angi stillingen en stilling rapporterer til, i stillingsskjemaet. Når du tilordner en arbeider til en stilling som rapporterer til en annen stilling, oppretter du en rapporteringsrelasjon mellom arbeidere som er tilordnet de to stillingene. Stillingen "Regnskapsfører-A" rapporterer for eksempel til stillingen "Regnskapsansvarlig". Kim Akers tilordnes stillingen "Regnskapsansvarlig", og Sanjay Patel tilordnes stillingen "Regnskapsfører-A". Dette betyr at Sanjay Patel rapporterer til Kim Akers. 
+Hvis organisasjonen bruker et matrisehierarki eller et annet egendefinert hierarki, kan du konfigurere stillingshierarkityper og deretter legge til rapporteringsrelasjoner i stillinger for hver hierarkitype som du definerer. Olivia Wilson er for eksempel en daglig leder hos Adventure Works, og tilordnes stillingen "Leder". Olivia administrerer utviklingen av et produkt som brukes til å rengjøre noe. Olivia trenger en regnskapsfører for å hjelpe til med økonomien for utvikling av produktet. Hun har derfor rekruttert Felix Henderson som regnskapsfører. Felix rapporterer direkte til Ana Bowman, men arbeider også sammen med Olivia Wilson på arbeidet sitt knyttet til Økonomi for å utvikle ryddeverktøyet. 
 
-Hvis organisasjonen bruker et matrisehierarki eller et annet egendefinert hierarki, kan du konfigurere stillingshierarkityper og deretter legge til rapporteringsrelasjoner i stillinger for hver hierarkitype som du definerer. Lori Penor er for eksempel en daglig leder hos Adventure Works, og tilordnes stillingen "Leder". Lori administrerer utviklingen av et produkt som brukes til å rengjøre noe. Lori trenger en regnskapsfører for å hjelpe til med økonomien for utvikling av produktet. Hun har derfor rekruttert Sanjay Patel som regnskapsfører. Sanjay rapporterer direkte til Kim Akers, men arbeider også sammen med Lori Penor på arbeidet sitt knyttet til Økonomi for å utvikle ryddeverktøyet. 
-
-For det forrige eksemplet ville du fullført følgende oppgaver for å definere relasjonen mellom Sanjay Patel og Lori Penor:
+For det forrige eksemplet ville du fullført følgende oppgaver for å definere relasjonen mellom Felix Henderson og Ana Bowman:
 1.  Opprett en egendefinert stillingshierarkitype kalt "Gjenstand" for å opprette et hierarki som inkluderer stillinger som er ansvarlig for å arbeide med oppryddingsproduktet.
 2.  Tilordne lederstillingen til stillingen som regnskapsfører-A-stillingen rapporterer til i gjenstand-hierarkiet.
 
-Bruk stillingshierarkiet til å vise rapporteringsstrukturen til stillinger. Hvis du har flere stillingshierarkier, kan du vise hierarkiet for hver hierarkitype i stillingshierarkiet. Du kan også søke etter en stilling etter stillings-ID eller etter navnet på arbeideren som er tilordnet til stillingen. Stillingshierarkiet er et organisasjonshierarki.
+Bruk siden **Stillingshierarki** til å vise rapporteringsstrukturen til stillinger. Hvis du har flere stillingshierarkier, kan du vise hierarkiet for hver hierarkitype i **stillingshierarkiet**. Du kan også søke etter en stilling etter stillings-ID eller etter navnet på arbeideren som er tilordnet til stillingen. **Stillingshierarkiet** er et organisasjonshierarki.
 
 ## <a name="date-effective-records"></a>Poster med gyldighet fra dato
 For noen poster kan du angi fremtidige endringer i posten. Følgende informasjon er gyldig dato.
@@ -155,13 +151,5 @@ For noen poster kan du angi fremtidige endringer i posten. Følgende informasjon
 </tr>
 </tbody>
 </table>
-
-Du kan endre informasjonen som er nevnt i den forrige tabellen for en stilling eller en jobb og angi en dato når endringene i stillingen eller jobben skal tre i kraft. En stilling kan for eksempel bare tilordnes én arbeider, men Sanjay Patel, som er tilordnet til stillingen regnskapsfører-A, skal slutte om to uker. Joe Healy erstatter Sanjay Patel når Sanjay slutter. Selv om Sanjay fremdeles er tilordnet stillingen sin, kan du tilordne Joe Healy til samme stilling slik at tilordningen bare gjelder etter Sanjays siste dag.
-
-
-
-
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

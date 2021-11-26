@@ -1,26 +1,26 @@
 ---
 title: Definere komponentene for en jobb
-description: Denne artikkelen beskriver de grunnleggende elementene som en jobb kan inneholde, og gir eksempler på hvordan du kan bruke disse elementene i organisasjonen.
-author: andreabichsel
-ms.date: 06/24/2021
+description: Dette emnet beskriver de grunnleggende elementene som en jobb kan inneholde, og gir eksempler på hvordan du kan bruke disse elementene i organisasjonen.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: HcmJob, HcmJobFunction, HcmJobTask, HcmTitle, HcmPersonnelManagementWorkspace, HCMJobFamily
 audience: Application User
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.scope: Human Resources
 ms.custom: 269054
 ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 55f3edb53236734045e94ddd71461c739d3b5a8e0a2ac07a804dc2dfafabda57
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0b3d56b3d19bd671d0015e87eefdf8ae62f4cee0
+ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754782"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731546"
 ---
 # <a name="set-up-the-components-of-a-job"></a>Definere komponentene for en jobb
 
@@ -60,7 +60,7 @@ Jobbfunksjoner beskriver funksjonskategori på høynivåplan og relaterer avgift
 Du vedlikeholder jobbfunksjoner ved hjelp av **Jobbfunksjoner**-siden. Angi en ID-kode og en kort beskrivelse av jobbfunksjonen på siden **Jobbfunksjoner**.
 
 ## <a name="compensation"></a>Kompensasjon
-Hvis du vil tilordne en fast kompensasjonsplan til en ansatt som har en stilling i en jobb, må du angi kompensasjonsnivåer for jobben. Kompensasjonsnivået brukes når minimums-, midtpunkt- og maksimumsbeløp er angitt i en kompensasjonsstruktur (kompensasjonsrutenett). Når det opprettes en fast kompensasjonsplan, velges kompensasjonsstrukturen. Kompensasjonsstrukturen omfatter også kompensasjonsnivået. Når du velger en fast kompensasjonsplan for en ansatt, avhenger kompensasjonsnivåene som kan velges, av jobben som den ansattes stilling er knyttet til. Hvis du vil ha mer informasjon om hvordan du konfigurerer kompensasjon, kan du se [Kompensasjonsplaner](hr-compensation-overview.md).
+Hvis du vil tilordne en fast kompensasjonsplan til en ansatt som har en stilling i en jobb, må du angi kompensasjonsnivåer for jobben. **Kompensasjonsnivået** brukes når minimums-, midtpunkt- og maksimumsbeløp er angitt i en kompensasjonsstruktur (kompensasjonsrutenett). Når det opprettes en fast kompensasjonsplan, velges kompensasjonsstrukturen. Kompensasjonsstrukturen omfatter også kompensasjonsnivået. Når du velger en fast kompensasjonsplan for en ansatt, avhenger kompensasjonsnivåene som kan velges, av jobben som den ansattes stilling er knyttet til. Hvis du vil ha mer informasjon om hvordan du konfigurerer kompensasjon, kan du se [Kompensasjonsplaner](hr-compensation-overview.md).
 
 ## <a name="job-skills"></a>Jobbkompetanse
 Jobbkompetanse beskriver ferdighetene som kreves for å utføre en jobb. Et kompetansenivå må knyttes til hver jobbkompetanse. Kompetansenivåene er brukerdefinert. De angir hvor stor kunnskap eller kompetanse som kreves for ferdigheten. Firmaer kan for eksempel definere numeriske nivåer, for eksempel 1 til og med 5, der **1** indikerer en nybegynner og **5** indikerer en ekspert. Firmaer kan eventuelt sette opp nivåer som er merket **Nybegynner**, **Mellomnivå** eller **Ekspert**. Når kompetansenivået er definert, kan du også angi viktigheten av kompetanse. Hvis en regnskapsfører for eksempel må ha stor kunnskap om Microsoft Excel, kan du opprette en kompetanse med navnet **Excel-kunnskap**. Kompetansenivået kan deretter angis til **Mellomnivå**, og viktigheten kan settes til **Mest**.

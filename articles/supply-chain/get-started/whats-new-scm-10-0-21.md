@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 64abe953f42519d508f547f22f1f2b94a7fa16ab
-ms.sourcegitcommit: 477efa4cb138f41d4f68bcd82552af3473bcc3d9
+ms.openlocfilehash: 3b5f0c6947944ec875c30fa912f830f245b5a48e
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/29/2021
-ms.locfileid: "7715260"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777943"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10021-october-2021"></a>Nyheter eller endringer i Dynamics 365 Supply Chain Management 10.0.21 (oktober 2021)
 
@@ -70,10 +70,10 @@ Denne tabellen viser funksjonene som er aktivert som standard i 10.0.21. De fles
 | Annullering av overføringsordre | 01.09.2021 | 13.07.2020 | Aktivert som standard | Lagerstyring |
 | Lås opp lagerjournal | 01.09.2021 | 17.08.2020 | Aktivert som standard | Lagerstyring |
 | Lagrede visninger for lagerstyring | 01.09.2021 | 30.09.2020 | Aktivert som standard | Lagerstyring |
-| Navigasjon til stykklisteversjon fra stykklistelinjer. | 01.09.2021 | 11.11.2019 | Aktivert som standard | Lagerstyring |
-| Bruker måleenhet og enhetsantall i lagerjournaler. | 01.09.2021 | 11.11.2019 | Aktivert som standard | Lagerstyring |
+| Navigasjon til stykklisteversjon fra stykklistelinjer | 01.09.2021 | 11.11.2019 | Aktivert som standard | Lagerstyring |
+| Bruker måleenhet og enhetsantall i lagerjournaler | 01.09.2021 | 11.11.2019 | Aktivert som standard | Lagerstyring |
 | Tillat tomme verdier for partiattributter | 01.09.2021 | 11.11.2019 | Aktivert som standard | Lagerstyring |
-| Øk linjenumre automatisk for ordrelinjer for lageroverføring. | 01.09.2021 | 11.10.2019 | Aktivert som standard | Lagerstyring |
+| Øk linjenumre automatisk for ordrelinjer for lageroverføring | 01.09.2021 | 11.10.2019 | Aktivert som standard | Lagerstyring |
 | Beholdningsjournal - godkjenn - arbeidsflyt | 01.09.2021 | 06.01.2020 | Aktivert som standard | Lagerstyring |
 | Aktiver funksjon for advarsel om parametere for lagerkvalitetsstyring | 01.09.2021 | 07.10.2019 | Aktivert som standard | Lagerstyring |
 | Opprett overføringsordre fra salgslinje | 01.09.2021 | 31.08.2019 | Aktivert som standard | Lagerstyring |
@@ -93,12 +93,12 @@ Denne tabellen viser funksjonene som er aktivert som standard i 10.0.21. De fles
 | Lagrede visninger for frigitte produkter | 01.09.2021 | 30.09.2020 | Aktivert som standard | Behandling av produktinformasjon |
 | Forbedringer i dialogboksene Godkjenn og Overfør jobber | 01.09.2021 | 11.10.2019 | Aktivert som standard | Produksjonskontroll |
 | Nummerskilt for ferdigmelding lagt til i jobbkortenheten | 01.09.2021 | 31.08.2019 | Aktivert som standard | Produksjonskontroll |
-| Den nye knappen Stopp pause er lagt til på siden Jobbkortterminal. | 01.09.2021 | 19.02.2020 | Aktivert som standard | Produksjonskontroll |
+| Den nye knappen Stopp pause er lagt til på siden Jobbkortterminal | 01.09.2021 | 19.02.2020 | Aktivert som standard | Produksjonskontroll |
 | Aktiver delvis mottak av underleveransevarer, og rett opp et problem med beregning av svinn for stykklistelinjer av typen Leverandør. | 01.09.2021 | 11.11.2019 | Aktivert som standard | Produksjonskontroll |
 | Lagrede visninger for produksjonskontroll | 01.09.2021 | 17.08.2020 | Aktivert som standard | Produksjonskontroll |
 | Dynamics 365 Guides for Produksjon | 01.09.2021 | 13.07.2020 | Aktivert som standard | Produksjonskontroll |
 | Produksjonsutførelse | 01.09.2021 | 30.09.2020 | Aktivert som standard | Produksjonskontroll |
-| Funksjon for låsing av jobbkortenheten og jobbkortterminalen slik at de kan rengjøres. | 01.09.2021 | 10.05.2020 | Aktivert som standard | Produksjonskontroll |
+| Funksjon for låsing av jobbkortenheten og jobbkortterminal slik at de kan rengjøres | 01.09.2021 | 10.05.2020 | Aktivert som standard | Produksjonskontroll |
 | Gebyrtildeling i en salgsordre | 01.09.2021 | 30.09.2020 | Aktivert som standard | Salg og markedsføring |
 | Begrens antall salgsordrer som kan velges for postering | 01.09.2021 | 01.09.2021 | Aktivert som standard | Salg og markedsføring |
 | Rydd opp i oppdateringshistorikk for salgsordre | 01.09.2021 | 01.09.2021 | Aktivert som standard | Salg og markedsføring |

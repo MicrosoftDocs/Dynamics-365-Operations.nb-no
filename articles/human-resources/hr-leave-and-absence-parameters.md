@@ -1,8 +1,8 @@
 ---
 title: Konfigurere permisjons- og fraværsparametere
-description: Du kan definere personalparametere for permisjon og fravær i Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 11/02/2020
+description: Dette emnet beskriver hvordan du definerer personalparametere for permisjon og fravær i Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ab4b2b3adefa388acfadc77c7b25a6b47d01571f0e58f6ab81101e25d1b548e6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 59d89c4b22d71057fd3b398c91e1fbf04112e4a9
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777965"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7728863"
 ---
 # <a name="configure-leave-and-absence-parameters"></a>Konfigurere permisjons- og fraværsparametere
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Før du definerer permisjons- og fraværsplaner i Dynamics 365 Human Resources, kan det være lurt å kontrollere innstillingene for alle relaterte personaleparametere, inkludert:
+Før du definerer permisjons- og fraværsplaner i Dynamics 365 Human Resources, kan det være lurt å kontrollere innstillingene for alle relaterte **personaleparametere, inkludert**:
 
 - Nummerserie for permisjonsforespørsler
 - Innstillinger for sykemelding og permisjon (FMLA)
@@ -74,7 +74,7 @@ Før du definerer permisjons- og fraværsplaner i Dynamics 365 Human Resources, 
 
     - Velg **Saldoberegning** for å vise saldoer per dag eller per avsetningsperiode. Hvis du velger **Saldo per i dag**, viser saldoen summen av alle avsetningene, justeringene og forespørslene per i dag. Hvis du velger **Saldo per avsetningsperiode**, viser saldoen summen av alle avsetningene, justeringene og forespørslene fra avsetningsperioden som er definert av frekvensen i permisjonsplanen. 
 
-    - Angi starttidspunktet for den satsvise jobben for utløpet av overføring.  
+    - Angi **starttidspunktet** for den satsvise jobben for **utløpet av overføring**.  
     
     - Velg **Ja** for **Tillat ansatte å kjøpe permisjon** og **Tillat ansatte å selge permisjon**. Hvis du velger **Ja** for disse alternativene, kan du opprette policyer for kjøp og salg av permisjoner og gjøre det mulig for ansatte å sende inn og selge permisjonsforespørsler.
 

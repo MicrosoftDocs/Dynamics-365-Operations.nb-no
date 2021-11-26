@@ -1,8 +1,8 @@
 ---
 title: Betalingsmåter
 description: Hver betalingstype en forhandler godtar, må konfigureres når systemet defineres. Denne artikkelen beskriver betalingstypene som du kan sette opp og beskriver fremgangsmåten for hvordan du definerer dem.
-author: rubencdelgado
-ms.date: 06/17/2020
+author: BrianShook
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: yabinl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c174dd136cecedc9b23bdaa778885f75e51c9aa556a9e2709bc7da171faa8617
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0450dbaa37365705ca59fd2223c9d3866054c12a
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713972"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779576"
 ---
 # <a name="payment-methods"></a>Betalingsmåter
 
@@ -47,5 +47,10 @@ Du må fullføre følgende oppgaver hvis du vil definere betalingsmåter.
 3. Definere betalingsmåte i butikker Knytt betalingsmåter til hver butikk, og angi deretter de butikkspesifikke innstillingene for hvert betalingsmåte.
 4. Definer kortbetalingsmåter for butikker. Fullfør kortoppsettet for alle kortbetalingsmåter som butikken godtar.
 
+## <a name="handle-change-tendering-for-payment-methods"></a>Håndter endring av betaling for betalingsmetoder
+
+Noen betalingsmetoder støtter ikke direkte endring av betaling hvis midler forfaller tilbake til kunder under salgsstedstransaksjoner. Det er bare betalingsmetodene **Kontant** og **Valuta** som kan brukes til endring av betaling. 
+
+For å håndtere tilfeller der endring av betaling kreves under en transaksjon, men betalingsmetoden ikke støtter dette, kan du definere en betalingsmetode for **endring av betaling**. Når du definerer betalingsmetoder for butikken, velger du betalingsmetoden som skal brukes. Deretter, i **Endre**-delen, i feltet **Endre betaling**, angir du et betalingsalternativ for å endre betaling. Du kan for eksempel angi **1** for å angi at kontanter kan brukes som et alternativ for endring av betaling.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

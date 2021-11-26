@@ -13,12 +13,12 @@ ms.search.industry: WHSWorkTableListPage
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-15
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: e3f14dd25a60f8d185f0e58a0612a322c5175ab2
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 8b06164a81a18548cf9d98ea2f577b5783145100
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579886"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778263"
 ---
 # <a name="work-split"></a>Oppdelt arbeid
 
@@ -33,7 +33,7 @@ Med funksjonen for oppdelt arbeid kan du dele opp store arbeids-ID-er (det vil s
 
 Før du kan bruke funksjonen for oppdelt arbeid, må du aktivere funksjonen og den nødvendige funksjonen i systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonene og aktivere dem hvis den kreves.
 
-Først aktiverer du den nødvendige funksjonen *Organisasjonsomfattende arbeidsblokkering* hvis den ikke allerede er aktivert. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
+Først aktiverer du den nødvendige funksjonen *Organisasjonsomfattende arbeidsblokkering* hvis den ikke allerede er aktivert. Per Supply Chain Management versjon 10.0.21 er denne funksjonen obligatorisk, så den er aktivert som standard, og kan ikke deaktiveres igjen. Funksjonen er imidlertid fortsatt oppført i [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) på følgende måte:
 
 - **Modul:** *Lagerstyring*
 - **Funksjonsnavn:** *Organisasjonsomfattende arbeidsblokkering*

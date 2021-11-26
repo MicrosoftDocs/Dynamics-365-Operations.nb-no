@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37d78e97a6c7f9152ab0b893a35a3ae70d5adabc
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d8a29e93b252c5d4ec68dfcd9ffe2f63ac1b6af2
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579646"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778039"
 ---
 # <a name="make-manual-adjustments-to-the-baseline-forecast"></a>Foreta manuelle justeringer i basislinjeprognosen
 
@@ -67,7 +67,7 @@ Siden **Detaljer om behovsprognose** viser følgende informasjon i grafisk forma
 
 **Merknader:**
 
--   Hvis du aktiverer **Prognosemodellvalg på detaljer om behovsprognose** fra Funksjonsbehandling, vil du kunne velge prognosemodeller som skal inkluderes for den historiske prognosen, på siden **Detaljer om behovsprognose**.
+-   Hvis du aktiverer **Prognosemodellvalg på detaljer om behovsprognose** fra Funksjonsbehandling, vil du kunne velge prognosemodeller som skal inkluderes for den historiske prognosen, på siden **Detaljer om behovsprognose**. (Per Supply Chain Management versjon 10.0.21 er denne funksjonen aktivert som standard.)
 -   Konfidensintervallet som vises i delen **Prognose** på siden, representerer forskjellen mellom den øvre grensen for konfidensintervallet og den nedre grensen for konfidensintervallet. Hvis du vil se verdiene for øvre og nedre grense, holder du musepekeren over diagrammet i delen **Grafisk presentasjon av historisk behov og prognose**.
 -   Hvis du bruker behovsprognose og Microsoft Azure Machine Learning, kan du angi konfidensnivåprosenten som prognosen som genereres, skal ha. Konfidensintervallet består av et verdiområde som fungerer som gode estimater for behovsprognosen. En konfidensnivåprosent på 95 angir at det er 5 prosent risiko for at behovsprognosen faller utenfor området for konfidensintervallet.
 

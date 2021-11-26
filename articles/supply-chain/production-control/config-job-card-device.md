@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 259ed49b9bdfb70ea357a7d20ea7ae8b141978cd
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 0382e34664f20389c43e8dec4437f0078fa1f60a
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576958"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777746"
 ---
 # <a name="configure-job-card-for-devices"></a>Konfigurer jobbkort for enheter
 
@@ -34,19 +34,19 @@ Noen få av innstillingene som er beskrevet i dette emnet, må være aktivert i 
 
 For å gjøre denne funksjonen tilgjengelig aktiverer du følgende funksjoner i [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (i denne rekkefølgen):
 
-1. Nummerskilt for ferdigmelding lagt til i jobbkortenheten
+1. Nummerskilt for ferdigmelding som er lagt til jobbkortenheten (per Supply Chain Management versjon 10.0.21 er denne funksjonen aktivert som standard.)
 1. Aktiver automatisk generering av nummerskiltnummer ved ferdigrapportering i jobbkortenheten
 
 ### <a name="print-label"></a>Skriv ut etikett
 
 For å gjøre denne funksjonen tilgjengelig aktiverer du følgende funksjoner i [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (i denne rekkefølgen):
 
-1. Nummerskilt for ferdigmelding lagt til i jobbkortenheten
+1. Nummerskilt for ferdigmelding som er lagt til jobbkortenheten (per Supply Chain Management versjon 10.0.21 er denne funksjonen aktivert som standard.)
 1. Skriv ut etikett fra jobbkortenhet
 
 ### <a name="allow-locking-of-touch-screen"></a>Tillate låsing av berøringsskjerm
 
-For å gjøre denne funksjonen tilgjengelig aktiverer du følgende funksjon i [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Per Supply Chain Management versjon 10.0.21 er denne funksjonen aktivert som standard. Hvis du vil bruke den, må du aktivere følgende funksjon i [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - Funksjon for låsing av jobbkortenheten og jobbkortterminal slik at de kan rengjøres
 

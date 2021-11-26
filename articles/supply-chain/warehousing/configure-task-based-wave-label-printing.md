@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-obaranov
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 652e6fb3f586fc873ffabf2c741e5c99216931461f159a42f08f9922e756280f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4883f8a548645436e17b933d87d4ee6330570d48
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6735902"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777871"
 ---
 # <a name="schedule-wave-label-printing-during-wave"></a>Planlegge bølgeetikettutskrift under bølge
 
@@ -33,7 +33,7 @@ Når du bruker funksjonen *Oppgavebasert bølgeetikettutskrift*, oppretter syste
 Hvis du vil bruke funksjonene som beskrives i dette emnet, må de være aktivert på systemet. Bruk arbeidsområdet [Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å aktivere funksjonene i følgende rekkefølge:
 
 1. *Bølgeetikettutskrift* – Denne funksjonen er nødvendig for å aktivere bølgeprosessmetoden for utskrift av bølgeetiketter.
-1. *Organisasjonsomfattende arbeidsblokkering* – Denne funksjonen kreves for både manuell og automatisk konfigurasjon av planlagt arbeidsopprettelse.
+1. *Organisasjonsomfattende arbeidsblokkering* – Denne funksjonen kreves for både manuell og automatisk konfigurasjon av planlagt arbeidsopprettelse. (Per Supply Chain Management versjon 10.0.21 er denne funksjonen obligatorisk, så den er aktivert som standard, og kan ikke deaktiveres igjen.)
 1. *Oppgavebasert bølgeetikettutskrift* – Denne funksjonen kreves for å dele opp utskrift av bølgeetiketter til et separat transaksjonsområde.
 
 ## <a name="manually-enable-the-new-wave-step-method"></a>Aktivere den nye bølgetrinnmetoden manuelt

@@ -2,7 +2,7 @@
 title: Konfigurere elektronisk fakturering i RCS (Regulatory Configuration Services)
 description: Dette emnet beskriver hvordan du konfigurerer elektronisk fakturering i Dynamics 365 Regulatory Configuration Services (RCS).
 author: gionoder
-ms.date: 07/29/2021
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 98ba40da7b365e46e1c624ba70c7dc048144e2c7137e8fd8eb5abe348028ce35
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 640244612a2a553ec09661635787cb7f8694283b
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757980"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779676"
 ---
 # <a name="configure-electronic-invoicing-in-regulatory-configuration-services-rcs"></a>Konfigurere elektronisk fakturering i RCS (Regulatory Configuration Services)
 
@@ -28,7 +28,7 @@ ms.locfileid: "6757980"
 
 Dette emnet inneholder informasjon om konfigurasjonsfunksjonene i elektronisk fakturering i Dynamics 365 Regulatory Configuration Services (RCS).
 
-Via konfigurasjonsfunksjonene hjelper elektronisk fakturering deg med å oppfylle forretningsmessige og forskriftsmessige krav til elektroniske fakturaer uten at du trenger å bruke koding. I scenarioer der elektroniske fakturaer må godkjennes elektronisk av en webtjeneste, hjelper konfigurasjonsfunksjonene deg også med å oppfylle kravene til utveksling av meldinger med en webtjenester, uten å gjøre noen kode.
+Via konfigurasjonsfunksjonene hjelper elektronisk fakturering deg med å oppfylle forretningsmessige og forskriftsmessige krav til elektroniske fakturaer uten at du trenger å bruke koding. I scenarioer der elektroniske fakturaer må godkjennes elektronisk av en webtjeneste, hjelper konfigurasjonsfunksjonene deg også med å oppfylle kravene til utveksling av meldinger med en webtjeneste, uten å gjøre noen kode.
 
 ## <a name="electronic-reporting"></a>Elektronisk rapportering
 
@@ -73,6 +73,7 @@ Følgende tabell viser funksjonene for elektronisk fakturering som for er allmen
 | Spania          | Spansk elektronisk faktura (ES)      | Salgs- og prosjektfakturaer |
 | Europa         | Elektronisk faktura i PEPPOL-format            | PEPPOL salgsfakturaer og projektfakturaer |
 | Europa         | PEPPOL-leverandørfaktura                | PEPPOL-import av leverandørfakturaer |
+| Saudi-Arabia   | Elektroniske fakturaer for Saudi-Arabia (SA)| Salgs- og prosjektfakturaer |
 
 ### <a name="preview-features"></a>Forhåndsvisningsfunksjoner
 
@@ -196,6 +197,11 @@ Listene nedenfor viser ER-formatkonfigurasjonene som er tilgjengelige for funksj
 
 - Salgsfaktura (ES)
 - Prosjektfaktura (ES)
+
+#### <a name="saudi-arabian-sa-electronic-invoice-sales-and-project-invoices-for-saudi-arabia"></a>Saudiarabisk (SA) elektronisk faktura: Salgs- og prosjektfakturaer for Saudi-Arabia
+
+- Salgs-e-faktura (SA)
+- Prosjekt-e-faktura (SA)
 
 I tillegg til ER-formatkonfigurasjonene som er tilgjengelige som standard for bruk med tjenesten for elektronisk fakturering, kan du også opprette dine egne ER-formatkonfigurasjoner. Formatkonfigurasjonene som opprettes for bruk med funksjonene for elektronisk fakturering, støtter imidlertid ikke direkte referanse til tabeller for Finance eller Supply Chain Management eller noen av de tilsvarende metadataene. Bare referanser til ER-modelltilordningen støttes.
 

@@ -1,8 +1,8 @@
 ---
-title: Opprette et dataintegreringsprosjekt
-description: Dette emnet forklarer hvordan du oppretter et dataintegratorprosjekt.
+title: Opprett et dataintegreringsprosjekt
+description: Dette emnet forklarer hvordan du oppretter et dataintegreringsprosjekt.
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,25 +15,26 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: b08af906c18f6c0790ca56c69a833733f48cd88c
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: 7841f8b31e0ac1a40dce9acaac747f5f378236e0
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386368"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752670"
 ---
-# <a name="create-a-data-integrator-project"></a>Opprette et dataintegreringsprosjekt
+# <a name="create-a-data-integration-project"></a>Opprett et dataintegreringsprosjekt
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
-Dette emnet forklarer hvordan du oppretter et dataintegratorprosjekt.
+Dette emnet forklarer hvordan du oppretter et dataintegreringsprosjekt.
 
 1. Logg på Microsoft Dynamics 365 Finance.
 2. Gå til **Arbeidsområder \> Databehandling**, og velg **Dataenheter**. Vent til alle dataenhetene er oppdatert før du går videre til neste trinn.
 3. Åpne [Power Apps-portalen](https://make.powerapps.com/), og følg denne fremgangsmåten:
 
     1. Velg det aktuelle miljøet.
-    2. Velg **Data \> Tilkoblinger** i venstre navigasjonsrute.
+    2. I den venstre navigasjonsruten velger du **Dataverse \> Tilkoblinger**.
     3. Koble til riktige forekomster av følgende elementer:
 
         - Dynamics 365
@@ -41,7 +42,7 @@ Dette emnet forklarer hvordan du oppretter et dataintegratorprosjekt.
 
 4. Åpne [Power Apps-miljøene](https://admin.powerapps.com/environments), og følg denne fremgangsmåten:
 
-    1. Velg **Dataintegrator**.
+    1. Velg **Dataintegrering**.
     2. Velg **Tilkoblingssett**.
     3. Velg **Nytt tilkoblingssett**.
     4. Skriv inn et navn for tilkoblingen.
@@ -57,8 +58,7 @@ Dette emnet forklarer hvordan du oppretter et dataintegratorprosjekt.
 
     1. Opprett dataintegrasjonsprosjekter for følgende maler ved hjelp av tilkoblingssettet du nettopp opprettet:
 
-        - Resultater av innsikt i kundebetaling (CDS til Fin and Ops)
-            - Hvis du bruker versjon 10.0.17 eller senere, må du bruke malen med navnet Resultater av innsikt i kundebetaling (CDS til Fin and Ops 10.0.17+).
+        - Resultater av innsikt i kundebetaling (CDS til Fin and Ops 10.0.17+)
         - Resultater av tidsserie for kontantstrøm (CDS til Fin and Ops)
         - Resultater av tidsserie for budsjett (CDS til Fin and Ops)
 

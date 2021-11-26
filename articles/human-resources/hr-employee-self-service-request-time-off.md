@@ -1,8 +1,8 @@
 ---
 title: Be om avspasering
 description: Be om avspasering i Dynamics 365 Human Resources.
-author: andreabichsel
-ms.date: 07/16/2021
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f8fead1105412e5fe967a19632e1875058f4026c722140eaed056c5412c6558f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6e12ac21e80c46f5cb5f231aadab7272fc279194
+ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6756106"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7771418"
 ---
 # <a name="request-time-off"></a>Be om avspasering
 
@@ -42,11 +42,11 @@ Du kan sende inn forespørsler om avspasering, vise ferie- og og permisjonssaldo
 
 6. Velg **Send inn** når du er klar til å sende inn forespørselen. Ellers velger du **Lagre utkast**.
 
-Ansatte som sender inn en ny permisjonsforespørsel, kan velge ulike permisjonstyper for å konstruere permisjonsforespørselen. Alle permisjonstyper som er valgt som del av én enkelt permisjonsforespørsel, bør imidlertid ha samme permisjonsenhet. Ansatte kan vise permisjonsenheten for hver permisjonstype i **Be om fridager**-skjemaet.
+Ansatte som sender inn en ny permisjonsforespørsel, kan velge ulike permisjonstyper for å konstruere permisjonsforespørselen. Alle permisjonstyper som er valgt som del av én enkelt permisjonsforespørsel, bør imidlertid ha samme permisjonsenhet. Ansatte kan vise permisjonsenheten for hver permisjonstype på siden **Be om fridager**.
 
 ## <a name="add-an-attachment-to-an-existing-request"></a>Legge til et vedlegg i en eksisterende forespørsel
 
-Når du oppdaterer en eksisterende permisjonsforespørsel, kan du legge til et vedlegg. Du kan også se alle relaterte forespørsler for en bestemt dato.
+Når du oppdaterer en eksisterende permisjonsforespørsel, kan du legge til et vedlegg. Du kan også se alle de relaterte forespørslene for en bestemt dato.
 
 ## <a name="view-leave-balances"></a>Vis permisjonssaldoer
 
@@ -60,11 +60,11 @@ Når du oppdaterer en eksisterende permisjonsforespørsel, kan du legge til et v
 
 2. Hvis du vil vise de godkjente avspaseringsforespørslene, velger du **Godkjent avspasering**. Hvis du vil vise de ventende avspaseringsforespørslene, velger du **Avspaseringsforespørsler**.
 
-## <a name="cancel-time-off-requests"></a>Avbryte fritidsforespørsler
+## <a name="cancel-time-off-requests"></a>Avbryt fritidsforespørsler
 
 1. I arbeidsområdet **Ansattselvbetjening** velger du **Vis fravær** på flisen **Fravær til gode**.
 
-2. Velg én eller flere fraværsforespørsler for annullering i **Fravær**-skjemaet.
+2. Velg én eller flere fraværsforespørsler for annullering på **Fravær**-siden.
 
 3. Velg **Avbryt**-knappen.
 

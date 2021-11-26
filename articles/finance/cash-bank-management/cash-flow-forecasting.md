@@ -2,7 +2,7 @@
 title: Kontantstrømprognose
 description: Dette emnet gir en oversikt over prosessen for kontantstrømprognose. Det forklarer også hvordan kontantstrømprognose er integrert med andre moduler i systemet.
 author: panolte
-ms.date: 09/23/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,16 +13,17 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 83f8e5b03a2222884758dc567688da2a756421da
-ms.sourcegitcommit: fcfd85a508c0de52cfe11d1986892219e39ef406
+ms.openlocfilehash: 5ad3b2444f194f8324a309df32612a5377851995
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "7547961"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752910"
 ---
 # <a name="cash-flow-forecasting"></a>Kontantstrømprognose
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Du kan bruke verktøy for kontantstrømprognose til å analysere kommende kontantstrøm- og valutabehov, slik at kan du estimere firmaets fremtidige behov for kontanter. Hvis du vil ha en prognose over kontantstrømmen, må du utføre følgende oppgaver:
 
@@ -93,9 +94,12 @@ Budsjettregisteroppføringer kan inkluderes i kontantstrømprognosen enkeltvis v
 Prognoser for lagerforsyning og -behov kan tas med i kontantstrømprognoser. Velg prognosemodellen som skal tas med i kontantstrømprognosen, i **Lagerstyring**-fanen på siden **Oppsett for kontantstrømprognose**. Inkludering i kontantstrømprognoser kan overskrives på individuelle forsynings- og behovsprognoselinjer.
 
 ### <a name="setting-up-dimensions-for-cash-flow-forecasting"></a>Definere dimensjoner for kontantstrømprognoser
-En ny fane på siden **Oppsett for kontantstrømprognose** lar deg styre hvilke finansdimensjoner du vil bruke i arbeidsområdet **Kontantstrømprognose**. Denne fanen vises bare når funksjonen for kontantstrømprognose er aktivert. 
+En ny fane på siden **Oppsett for kontantstrømprognose** lar deg styre hvilke finansdimensjoner som skal brukes i arbeidsområdet **Kontantstrømprognose**. Denne fanen vises bare når funksjonen for kontantstrømprognose i Finance Insights er aktivert. 
 
 I fanen **Dimensjoner** velger du dimensjoner som skal brukes til filtrering, fra listen over dimensjoner, og bruker piltastene til å flytte dem til høyre kolonne. Du kan bare velge to dimensjoner til filtrering av data for kontantstrømprognose. 
+
+### <a name="setting-up-external-source"></a>Definering av ekstern kilde
+Eksterne data kan registreres eller importeres til kontantstrømprognoser. Før eksterne data legges inn eller importeres, må eksterne kilder defineres. Definer eksterne kontantstrømkategorier i kategorien **Ekstern kilde**. En kategori kan enten være **Utgående** eller **Innkommende**. **Likviditet** må velges som posteringstype. I rutenettet **Innstillinger for juridisk enhet** velger du de juridiske enhetene og de tilsvarende hovedkontoene som de eksterne kontantstrømkategoriene gjelder for.
 
 ### <a name="project-management-and-accounting"></a>Prosjektstyring og regnskap
 

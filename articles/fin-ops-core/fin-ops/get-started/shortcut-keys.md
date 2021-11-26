@@ -2,7 +2,7 @@
 title: Hurtigtaster
 description: Dette emnet gir en oversikt over hurtigtastkombinasjonene du kan bruke når du arbeider med Finance and Operations-apper.
 author: jasongre
-ms.date: 10/12/2021
+ms.date: 11/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7e700b841014e1e12560bf0ce9e5e012361ec397
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: 969cd6aaf2d7c4cee7bb95029f19741372f915eb
+ms.sourcegitcommit: ab32fc90ea498ce3b629384f78cbe1aee747f157
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647542"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "7800199"
 ---
 # <a name="keyboard-shortcuts"></a>Hurtigtaster
 
@@ -128,8 +128,10 @@ Fra og med plattformoppdatering 11 kan brukere finne hurtigtaster som er tilgjen
 
 ## <a name="grid-shortcuts"></a>Rutenettsnarveier
 
-| Hvis du vil gjøre dette                                                                                                             | Trykk                           |
+| Hvis du vil gjøre dette                                                                                                             | Trykk                            |
 |------------------------------------------------------------------------------------------------------------------------|---------------------------------|
+| Loddrett rulling                                                                                                     | Musehjul                     |
+| Vannrett rulling                                                                                                   | Skift + musehjul             |
 | Gå til neste/forrige kolonne                                                                                       | Tab / Skift+Tab                 |
 | Gå til neste/forrige rad                                                                                          | Pil ned / Pil opp           |
 | Flytt til neste/forrige rad uten å velge<blockquote>[!NOTE] Denne snarveien gjelder kun for flere valgscenarier.</blockquote> | Ctrl+Pil opp / Ctrl+Pil ned |
@@ -141,15 +143,15 @@ Fra og med plattformoppdatering 11 kan brukere finne hurtigtaster som er tilgjen
 | Gå til den første posten                                                                                               | CTRL+HOME                       |
 | Gå til den siste posten                                                                                                | CTRL+END                        |
 | Merk eller tøm alle rader                                                                                               | Ctrl+Skift+M                    |
-| Gå til den første markerte raden                                                                                           | Alt+Skift+M, F                    |
-| Gå til den neste markerte raden                                                                                            | Alt+Skift+M, L                    |
-| Gå til den forrige markerte raden                                                                                        | Alt+Skift+M, P                    |
-| Gå til den siste markerte raden                                                                                           | Alt+Skift+M, N                    |
+| Gå til den første markerte raden                                                                                           | Alt+Skift+M, F                  |
+| Gå til den neste markerte raden                                                                                            | Alt+Skift+M, L                  |
+| Gå til den forrige markerte raden                                                                                        | Alt+Skift+M, P                  |
+| Gå til den siste markerte raden                                                                                           | Alt+Skift+M, N                  |
 | Utfør standardhandling i et rutenett<blockquote>[!NOTE] Denne snarveien er aktivert når fokus er på en celle som inneholder en hyperkobling, og alle celler i den kolonnen har hyperkoblinger.</blockquote> | Enter                           |
 | Bytte fokus mellom den merkede raden, og overskriftsraden                                                               | Alt+Skift+H                     |
 | Gjøre den gjeldende kolonnen større/mindre (med fokus i overskriftsraden)                                                  | Pil høyre / pil venstre        |
 | Åpne rutenettfiltrering for den gjeldende kolonnen (med fokus i overskriftsraden)                                              | Angi                           |
-| Endre størrelsen på den gjeldende kolonnen for å få plass til innholdet (med fokus i overskriftsraden)                                           | A                               |
+| Endre størrelsen på den gjeldende kolonnen for å få plass til innholdet (med fokus i overskriftsraden)                                           | A (eller dobbeltklikk på kolonneskaleringshåndtaket) |
 
 ## <a name="input-control-shortcuts"></a>Snarveier for inndatakontroller
 

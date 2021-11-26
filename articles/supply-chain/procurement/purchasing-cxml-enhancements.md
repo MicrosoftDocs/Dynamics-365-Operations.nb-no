@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-08-03
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: f4a7ee091d73e2104571ac9134a9de9bab0a7074
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 210d92b9fd962708b141b79f3634f142cca9787a
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575470"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777773"
 ---
 # <a name="purchasing-cxml-enhancements"></a>Kjøp av cXML-forbedringer
 
@@ -28,7 +28,7 @@ Funksjonen _Kjøp av cXML-forbedringer_ bygger på den [eksisterende eksterne ka
 
 ## <a name="turn-on-the-purchasing-cxml-enhancements-feature"></a>Slå på funksjonen Kjøp av cXML-forbedringer
 
-Du aktiverer funksjonen ved å åpne **[Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)**-siden og søke etter funksjonen som heter *Kjøp av cXML-forbedringer*. Velg funksjonen, og velg deretter **Aktiver nå** for å slå den på.
+Du aktiverer funksjonen ved å åpne **[Funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)**-siden og søke etter funksjonen som heter *Kjøp av cXML-forbedringer*. Velg funksjonen, og velg deretter **Aktiver nå** for å slå den på. (Per Supply Chain Management versjon 10.0.21 er denne funksjonen aktivert som standard.)
 
 Når du har aktivert funksjonen, bør du konfigurere innstillingene i følgende tre områder:
 
