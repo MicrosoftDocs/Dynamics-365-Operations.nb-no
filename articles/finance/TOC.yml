@@ -60,12 +60,8 @@
                   href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/finance/toc.json
                 - name: Kjøpe Finance + Operations (on-premises)
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/finance/toc.json
-                - name: Konfigurere lager for lokale distribusjoner
+                - name: Konfigurer lager for lokale distribusjoner
                   href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/finance/toc.json
-                - name: Finance and Operations-apper styrt av 21Vianet i Kina
-                  href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/finance/toc.json
-                - name: Finance and Operations-apper i Frankrike
-                  href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/finance/toc.json
             - name: Nyheter eller endringer
               items:
                 - name: Nyheter eller endringer i Finance and Operations-apper
@@ -500,6 +496,8 @@
               href: accounts-receivable/customer-aging-snapshot.md
             - name: Aldersfordelt saldoliste for kunder
               href: accounts-receivable/customer-aging.md
+            - name: Lagring av kundealdersfordelingsdata
+              href: accounts-receivable/customer-aging-data-storage.md
             - name: Opprett en avskrivningsjournal for en kunde
               href: accounts-receivable/tasks/create-write-off-journal-customer.md
             - name: Behandling av avanserte merknader
@@ -1476,6 +1474,10 @@
                           items:
                             - name: Mva-deklarering
                               href: localizations/emea-fra-VAT-declaration-preview-France.md
+                        - name: Tysk rapportering
+                          items:
+                            - name: Mva-deklarering
+                              href: /localizations/emea-deu-vat-declaration-germany.md
                         - name: Nederlandsk rapportering
                           items:
                             - name: Mva-deklarering
@@ -2160,11 +2162,13 @@
                       href: localizations/emea-deu-gdpdu-data-filtering.md
                 - name: Avskrivningsjusteringer for tilleggsanskaffelser i det andre året
                   href: localizations/tasks/de-00002-depreciation.md
+                - name: Mva-deklarering
+                  href: localizations/emea-deu-vat-declaration-germany.md
                 - name: Elektronisk overføring av mva-deklarering (ELSTER)
                   href: localizations/tasks/de-00003-electronic-transmission-elster.md
                 - name: Tysk Intrastat
                   href: localizations/emea-deu-intrastat.md
-                - name: Mva-deklarering for Tyskland
+                - name: Mva-oppgave
                   href: localizations/emea-de-vat-declaration.md
                 - name: Rapport om elektroniske fakturaer for kunde
                   href: localizations/emea-deu-e-invoices.md

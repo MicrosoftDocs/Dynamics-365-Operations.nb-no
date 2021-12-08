@@ -74,10 +74,6 @@
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/commerce/toc.json
                 - name: Implementeringsveiledning for Commerce Data Exchange
                   href: dev-itpro/implementation-considerations-cdx.md
-                - name: Finance and Operations-apper styrt av 21Vianet i Kina
-                  href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/commerce/toc.json
-                - name: Finance and Operations-apper i Frankrike
-                  href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/commerce/toc.json
             - name: Få kundestøtte
               href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/commerce/toc.json
             - name: Oppgradering og N-1-støtte
@@ -1274,6 +1270,8 @@
               href: set-up-rfm-analysis.md
             - name: Konfigurer Microsoft Clarity i Dynamics 365 Commerce
               href: set-up-clarity.md
+            - name: Commerce-analyse (forhåndsversjon)
+              href: commerce-analytics.md
         - name: Globalisering
           items:
             - name: Oversikt over økonomisk integrering for Commerce-kanal
@@ -1412,6 +1410,10 @@
                   href: localizations/rus-fpi-sample.md
                 - name: Kundeinformasjonsbehandling for Russland
                   href: localizations/rus-customer-information.md
+            - name: Saudi-Arabia
+              items:
+                - name: Generer QR-koder og skriv dem ut på kvitteringer for Saudi-Arabia
+                  href: localizations/emea-sau-qr-code.md
             - name: Sverige
               items:
                 - name: Kassefunksjonalitet
@@ -2536,6 +2538,8 @@
                       href: e-commerce-extensibility/sdk-faq.md
                     - name: Feilsøking av anbefalte fremgangsmåter for utvikling av Dynamics 365 Commerce
                       href: e-commerce-extensibility/debugging-best-practices.md
+                    - name: Test e-handelsnettsteder for minnelekkasjer
+                      href: e-commerce-extensibility/memory-leak-detection.md
             - name: SDK for Retail
               items:
                 - name: Overfør til SDK for Commerce

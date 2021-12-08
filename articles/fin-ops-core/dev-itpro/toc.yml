@@ -456,9 +456,19 @@
                       href: help/migrate-dynamicsax2012.md
                 - name: Språk og nasjonale beskrivelser på tvers av produkter og hjelp
                   href: help/language-locale.md
-                - name: 'Utvide, tilpasse og samarbeide om hjelpen'
+                - name: 'Utvid, tilpass og samarbeid om hjelpen'
                   href: help/contributor-guide.md
-        - name: Utvikle og tilpasse
+            - name: Distribusjonshensyn
+              items:
+                - name: Distribusjonsalternativer for nasjonal og lokal sky for Dynamics 365 Finance og Dynamics 365 Supply Chain Management
+                  href: deployment/deployment-options-geo.md
+                - name: Finance og Supply Chain Management i Government Community Cloud (GCC) for USA
+                  href: deployment/us-gcc-deployment.md
+                - name: Finance and Supply Chain Management styrt av 21Vianet i Kina
+                  href: deployment/china-local-deployment.md
+                - name: Finance and Operations-apper i Frankrike
+                  href: deployment/france-local-deployment.md
+        - name: Utvikle og tilpass
           items:
             - name: Startside for å utvikle og tilpasse
               href: dev-tools/developer-home-page.md
@@ -1118,6 +1128,8 @@
                       href: data-entities/dual-write/party-gab-portal.md
                     - name: Oppgrader til parten og den globale adressebokmodellen
                       href: data-entities/dual-write/upgrade-party-gab.md
+                    - name: Vis partdata
+                      href: data-entities/dual-write/view-party.md
                     - name: Merknadsintegrering
                       href: data-entities/dual-write/notes-integration.md
                     - name: Tilordningsreferanse
@@ -1584,7 +1596,7 @@
                   href: sysadmin/batch-server-overview.md
                 - name: Opprett satsvise jobber
                   href: sysadmin/tasks/create-batch-job.md
-                - name: Aktivering av automatiske nye forsøk på satsvise jobber
+                - name: Aktiver satsvise nye forsøk
                   href: sysadmin/retryable-batch.md
                 - name: Kopier en satsvis jobb
                   href: sysadmin/copy-batch-job.md
