@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 792245e7821fe2ecb147e2b4756f3178fcdb17d1
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 1a311b4a304984044a1c3bd3924c129821afbbb9
+ms.sourcegitcommit: f11ad8d7ee8a4d2ee1a1bb601622b50e14955c4a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569679"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "7825381"
 ---
 # <a name="product-identifiers"></a>Produktidentifikatorer
 
@@ -39,7 +39,7 @@ I Dynamics 365 Supply Chain Management er den primære ID-en for et produkt prod
 
 I mange tilfeller er ikke produktnummeret opprinnelig opprettet i Dynamics 365 Supply Chain Management. Det er derimot tilknyttet et produkt i et system for administrasjon av produktlivssyklus (PLM) eller administrasjon av produktdata (PDM). Du bruker i dette tilfellet dataenheter for å importere produkter og produktvarianter. Supply Chain Management bruker deretter tallene i alle operasjoner.
 
-Når du implementerer Supply Chain Management, bør du gi særlige hensyn til din strategi for produktnumre. Et godt nummereringssystem forbedrer logistikkflyter og bidrar til å forhindre feil. En god produkt-ID har opptil 15 tegn. Ideelt sett har den færre enn 10 tegn og inneholder ikke mer enn fem klassifiseringstegn. Du kan også bruke søkenavn for å aktivere hurtigsøk. Et søkenavn er et ekstra navn som representerer klassifiseringene av et produkt.
+Når du implementerer Supply Chain Management, bør du gi særlige hensyn til din strategi for produktnumre. Et godt nummereringssystem forbedrer logistikkflyter og bidrar til å forhindre feil. En god produkt-ID bør vanligvis ha 20 tegn eller mindre, men vi anbefaler vanligvis bruk av færre enn 10 tegn og ikke mer enn 5 klassifiseringstegn. Du kan også bruke søkenavn for å aktivere hurtigsøk. Et søkenavn er et ekstra navn som representerer klassifiseringene av et produkt.
 
 Når du bruker Microsoft Dataverse, er produktnummeret i Supply Chain Management også produktnummeret i Microsoft Dataverse. Produktvarianter synkroniseres til Dataverse som forskjellige produkter.
 

@@ -2,19 +2,19 @@
 title: Tjenestebeskrivelse for Finance and Operations apper
 description: Dette emnet inneholder tjenestebeskrivelsen for Finance and Operations apper.
 author: tomhig
-ms.date: 09/29/2021
+ms.date: 11/17/2021
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: a1547f0cc6c6f705cd0e2ff6e5be751cb97b946a
-ms.sourcegitcommit: 79d19924ed736c9210fa9ae4e0d4c41c53c27eb5
+ms.openlocfilehash: 262cf00bdca63876c284be40954ca5de559b993a
+ms.sourcegitcommit: f11ad8d7ee8a4d2ee1a1bb601622b50e14955c4a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "7581822"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "7825406"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>Tjenestebeskrivelse for Finance and Operations apper
 
@@ -50,7 +50,7 @@ Driftsmodellen for Finance and Operations apper definerer bestemte roller og ans
 
 ### <a name="customer-activities"></a>Kundeaktiviteter
 
-Kunder samarbeider med partneren sin og [Microsoft FastTrack](/dynamics365/fasttrack/) etter [Success by Design](/dynamics365/fasttrack/success-by-design-overview) rammeverket, og bruker verktøy og maler for beste fremgangsmåte som tilbys i [Lifecycle Services](../../dev-itpro/lifecycle-services/lcs.md) for å implementere løsningen. Vanlige aktiviteter inkluderer:
+Kunder samarbeider med partneren sin og [Microsoft FastTrack](/dynamics365/fasttrack/) etter [Dynamics 365 Implementation Guide](https://community.dynamics.com/365/dynamics-365-fasttrack/p/dynamics365implementationguide), rammeverket [Success by Design](/dynamics365/fasttrack/success-by-design-overview), og verktøyene og malene for beste fremgangsmåte som tilbys i [Lifecycle Services](../../dev-itpro/lifecycle-services/lcs.md) for å implementere løsningen. Vanlige aktiviteter inkluderer:
 
 - Brukeridentitet og sikkerhetsadministrasjon
 - Definere, utvikle og operere forretningsprosesser

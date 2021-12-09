@@ -2,7 +2,7 @@
 title: Konfigurasjon for Finance Insights
 description: Dette emnet forklarer konfigurasjonstrinnene som gjør at systemet kan bruke funksjonene i Finance Insights.
 author: ShivamPandey-msft
-ms.date: 1/03/2021
+ms.date: 11/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 5668d3ddff777645b4f1c6608f025d0c5a63208a
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 6183e8a7500e9deff0ebf6b5dec8842ad4ca94cb
+ms.sourcegitcommit: 6a9f068b59b62c95a507d1cc18b23f9fd80a859b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752984"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "7827034"
 ---
 # <a name="configuration-for-finance-insights"></a>Konfigurasjon for Finance Insights
 
@@ -43,14 +43,34 @@ Følg denne fremgangsmåten for å distribuere miljøene.
 
 2. Hvis du konfigurerer Finance Insights i et sandkassemiljø, må du kanskje kopiere produksjonsdata til dette miljøet før prediksjoner kan fungere. Prediksjonsmodellen bruker flere år med data til å bygge prediksjoner. Contoso-demodataene inneholder ikke nok historiske data til at prediksjonsmodellen kan læres opp tilstrekkelig. 
 
+## <a name="configure-your-azure-ad-tenant"></a>Konfigurere Azure AD-leieren
+
+Azure Active Directory (Azure AD) må konfigureres slik at den kan brukes med Dataverse og Microsoft Power Platform programmene. Denne konfigurasjonen krever at enten rollen **Prosjekteier** eller **Miljøleder** tilordnes brukeren i feltet **Prosjektsikkerhetsrolle** i LCS.
+
+Kontroller at følgende oppsett er fullført:
+
+- Du har **Systemadministrator** og **Systemtilpasser** tilgang i administrasjonssenteret for Power Portal.
+- En Dynamics 365 Finance eller tilsvarende lisens brukes for brukeren som installerer Finance Insights-tillegget.
+
+Følgende Azure AD apper er registrert i Azure AD.
+
+|  Program                             | App-ID                               |
+|------------------------------------------|--------------------------------------|
+| Microsoft Dynamics ERP Microservices CDS | 703e2651-d3fc-48f5-942c-74274233dba8 |
+    
 ## <a name="configure-dataverse"></a>Konfigurer Dataverse
 
 Følg fremgangsmåten nedenfor til å konfigurere Dataverse for Finance Insights.
 
 - Åpne miljøsiden i LCS, og kontroller at **Power Platform-integrering** allerede er konfigurert.
 
-    - Hvis den allerede er konfigurert, skal Dataverse-miljønavnet som er koblet til Finance-miljøet, vises.
-    - Hvis det ikke er konfigurert, velger du **Installasjon**. Konfigurasjonen av Dataverse-miljøet kan ta opptil en time. Når konfigurasjonen er fullført, skal navnet på Dataverse-miljøet som er koblet til Finance-miljøet, vises.
+    - Hvis Dataverse allerede er konfigurert, skal Dataverse-miljønavnet som er koblet til Finance-miljøet, vises.
+    - Hvis Dataverse ikke er konfigurert ennå, velger du **Installasjon**. Konfigurasjonen av Dataverse-miljøet kan ta opptil en time. Når konfigurasjonen er fullført, skal navnet på Dataverse-miljøet som er koblet til Finance-miljøet, vises.
+    - Hvis denne integreringen er definert med et eksisterende Microsoft Power Platform miljø, bør du ta kontakt med administratoren for å være sikker på at det koblede miljøet ikke er deaktivert.
+
+        Hvis du vil ha mer informasjon, kan du se [Aktivere Power Platform-integrasjon](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md). 
+
+        Hvis du vil ha tilgang til Microsoft Power Platform administrasjonsområdet, kan du gå til <https://admin.powerplatform.microsoft.com/environments>.
 
 ## <a name="configure-the-finance-insights-add-in"></a>Konfigurere Finance Insights-tillegget
 

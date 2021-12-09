@@ -2,7 +2,7 @@
 title: Startside for Finance Insights
 description: Finance Insights gir konfigurerbare og utvidbare modeller som hjelper deg med å forutse firmaets kontantstrøm nøyaktig og intelligent, forutser når du skal motta betaling for utestående fordringer, og genererer et budsjettforslag som kan gjøre budsjettprosessen raskere. Alle disse funksjonene er basert på intelligente maskinlæringsmodeller.
 author: ShivamPandey-msft
-ms.date: 11/03/2021
+ms.date: 11/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,19 +17,19 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 3c6320043000dc07eea3128a10c16cfd54b13334
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: dfc4d9cb5be4d8d287122fd33bf09b0570498169
+ms.sourcegitcommit: a46f0bf9f58f559bbb2fa3d713ad86875770ed59
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752862"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "7813753"
 ---
 # <a name="finance-insights-home-page"></a>Startside for Finance Insights
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Finance Insights gir konfigurerbare og utvidbare modeller som hjelper deg med å forutse firmaets kontantstrøm på en intelligent måte, forutser når du skal motta betaling for utestående fordringer, og genererer et budsjettforslag som kan gjøre budsjettprosessen raskere. Alle disse funksjonene er basert på intelligente maskinlæringsmodeller. Når disse nye funksjonene kombineres med automatisering i leverandørbetalinger og -innkrevinger, gir de et rikholdig og intelligent økonomisystem som styrer beslutningsprosessen og hjelper deg med å iverksette handling for å svare effektivt på gjeldende og forventede forretningsutfordringer.
+Finance Insights gir konfigurerbare og utvidbare løsninger som hjelper deg med å forutse firmaets kontantstrøm på en intelligent måte, forutser når du skal motta betaling for utestående fordringer, og genererer et budsjettforslag som kan gjøre budsjettprosessen raskere. Disse funksjonene bruker intelligente maskinlæringsmaler for å bygge modeller ved hjelp av data du tilbyr (inkludert data fra en tredjepart, for eksempel informasjon om forbrukerrapport fra et byrå). Disse intelligente funksjonene informerer beslutningstakere, og hjelper deg med å gjøre noe for å respondere effektivt på aktuelle og forventede forretningsutfordringer. Du er ansvarlig for alle data som brukes med, eller utdata fra, Finance Insights.
 
 > [!NOTE]
 > Forhåndsversjonen av Finance Insights er tilgjengelig for distribusjoner i USA, Canada, Storbritannia, Europa, Asia/Stillehavskysten, Japan, Australia og New Zealand. Microsoft legger gradvis til støtte for flere områder.

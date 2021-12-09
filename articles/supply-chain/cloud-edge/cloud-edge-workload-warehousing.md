@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 2c2d2604dc1948d067311a12d00422ef074ac61a
-ms.sourcegitcommit: 42bd701179e664947b6eafcd1804c83a5e64abcb
+ms.openlocfilehash: 081b6968575a8a057903d96de2833a98552ed123
+ms.sourcegitcommit: a46f0bf9f58f559bbb2fa3d713ad86875770ed59
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "7641167"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "7813732"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Skalaenheter for sky og kant for arbeidsbelastninger for lagerstyring
 
@@ -290,7 +290,8 @@ Tabellen nedenfor oppsummerer hvilke produksjonsscenarioer med lagerstyring som 
 |---------|-----|------------------------------|
 | Ferdigmeld og Plasser ferdigvarer | Ja | Ja |
 | Plasser koprodukt og biprodukt | Ja | Ja |
-| <p>Alle andre lagerstyringsprosesser som er knyttet til produksjon, inkludert følgende:</p><li>Frigi til lager</li><li>Produksjonsbølgebehandling</li><li>Råvareplukking</li><li>Kanban plassert</li><li>Kanban-plukking</li><li>Start produksjonsordre</li><li>Produksjonssvinn</li><li>Siste produksjonspall</li><li>Registrer materialforbruk</li><li>Tøm Kanban</li></ul> | Ja | Nei |
+| Start produksjonsordre | Ja | Ja |
+| <p>Alle andre lagerstyringsprosesser som er knyttet til produksjon, inkludert følgende:</p><li>Frigi til lager</li><li>Produksjonsbølgebehandling</li><li>Råvareplukking</li><li>Kanban plassert</li><li>Kanban-plukking</li><li>Produksjonssvinn</li><li>Siste produksjonspall</li><li>Registrer materialforbruk</li><li>Tøm Kanban</li></ul> | Ja | Nei |
 | Etterfylling av råvarer | Nei | Nei |
 
 ## <a name="maintaining-scale-units-for-warehouse-execution"></a>Vedlikeholde skalaenheter for lagerkjøring

@@ -2,7 +2,7 @@
 title: Definere elektroniske meldinger
 description: Dette emnet gir informasjon om hvordan du konfigurerer EM-funksjonalitet (Elektroniske meldinger).
 author: liza-golub
-ms.date: 07/07/2021
+ms.date: 11/18/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: elgolu
 ms.search.validFrom: 2021-06-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 2b62efabfae26a6cc004604e687a49bce992d78a30f0d441aa74fa5cde70e063
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a9d623c712de34afd1b38dbc6a8738ebf9613d49
+ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752181"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "7860564"
 ---
 # <a name="set-up-electronic-messages"></a>Definere elektroniske meldinger
 
@@ -34,6 +34,7 @@ Hvis du ikke importerer en dataenhetspakke, kan du manuelt definere EM-funksjone
 - [Tilleggsfelt](#additional)
 - [Innstillinger for kjørbar klasse](#executable)
 - [Handlinger for Fyll ut poster](#populate)
+- [Fylle ut poster fra flere firmaer](#multiple-companies-populate)
 - [Webprogrammer](#applications)
 - [Innstillinger for webtjeneste](#settings)
 - [Handlinger for meldingsbehandling](#actions)
@@ -139,6 +140,38 @@ På hurtigfanen **Oppsett av datakilder** legger du til en linje for hver dataki
 | Bedrift                | Dette feltet er tilgjengelig når funksjonen **Spørringer på tvers av firmaer for Handlinger for fyll ut poster** er aktivert i arbeidsområdet **Funksjonsbehandling**. Bruk denne funksjonen til å definere datakilder på tvers av firmaer for de fylle ut posthandlingene. Data kan hentes fra flere firmaer. |
 | Brukerspørring             | <p>Hvis du definerer en spørring ved å velge **Rediger spørring** over rutenettet, og du angir kriteriene som må brukes på den valgte hovedtabellen som data fylles ut fra, merkes det automatisk av for denne avmerkingsboksen. Hvis ikke fylles alle postene ut fra den valgte hovedtabellkilden.</p><p>Når funksjonen **Spørringer på tvers av firmaer for Handlinger for fyll ut poster** er aktivert i arbeidsområdet **Funksjonsbehandling**, og poster må samles inn fra flere firmaer, legger du til en linje for hver ekstra juridiske enhet som må inkluderes i rapportering. For hver nye linje velger du **Rediger spørring** og angir et tilknyttet kriterium som er spesifikk for den juridiske enheten som er angitt i **Firma**-feltet i linjen. Når du er ferdig, vil rutenettet **Oppsett av datakilder** inneholde linjer for alle juridiske enheter som må inkluderes i rapportering.</p> |
 
+## <a name="populate-records-from-multiple-companies"></a><a id="multiple-companies-populate"></a>Fylle ut poster fra flere firmaer
+
+Hvis firmaet må rapportere fra flere juridiske enheter i den samme Finance-databasen, definerer du [Handlinger for Fyll ut poster](#populate) for alle juridiske enheter som data må inkluderes fra i rapportering.
+
+Følg disse trinnene for å aktivere denne funksjonen i Finance-miljøet. 
+
+1. Gå til **Arbeidsområder** \> **Funksjonsbehandling**.
+2. Søk etter og velg funksjonen **Spørringer på tvers av firmaer for Handlinger for fyll ut poster** i listen.
+3. Velg **Aktiver nå**. 
+
+Følg denne fremgangsmåten for å definere [handlinger for Fyll ut poster](#populate) for flere firmaer som det må inkluderes data fra i rapportering.
+
+1. Gå til **Mva** \> **Oppsett** \> **Elektroniske meldinger** \> **Handlinger for Fyll ut poster**.
+
+    Når funksjonen **pørringer på tvers av firmaer for Handlinger for fyll ut poster** er aktivert, inkluderer **Oppsett av datakilder**-rutenettet på siden **Handling for Fyll ut poster** et **Firma**-felt. For eksisterende poster som ble opprettet under det generelle oppsettet for [handlinger for Fyll ut poster](#populate), viser dette feltet IDen til den gjeldende juridiske enheten.
+
+2. I rutenettet **Oppsett av datakilder** legger du til en linje for hver juridiske enhet for datterselskap som må inkluderes i rapportering, og definerer følgende felt:
+
+    | Feltnavn             | Verdi |
+    |------------------------|-------|
+    | Navn                   | Angi en tekstverdi som vil hjelpe deg med å forstå hvor denne posten kommer fra. Skriv for eksempel inn **Datakildenavn - Datterselskap 1**. |
+    | Type meldingselement      | Velg meldingselementtypen som er nødvendig for EM-behandlingen. |
+    | Kontotype           | Angi kontotypen som er nødvendig for EM-behandlingen. Hvis EM-behandlingen ikke har noen bestemte kontotyper, velger du **Alle**. |
+    | Navn på hovedtabell      | Angi navnet på hovedtabellen som kreves for EM-behandlingen. |
+    | Feltet Dokumentnummer  | Angi feltet som inneholder dokumentnummeret i poster for EM-behandlingen. |
+    | Feltet Dokumentdato    | Angi feltet som inneholder dokumentdatoen i poster for EM-behandlingen. |
+    | Feltet Dokumentkonto | Angi feltet som inneholder dokumentkontoen i poster for EM-behandlingen. |
+    | Selskap                | Velg IDen for den juridiske enheten for datterselskap. |
+    | Brukerspørring             | Denne boksen blir automatisk merket når du definerer kriterier ved å velge **Rediger spørring**. |
+
+3. For hver nye linje velger du **Rediger spørring** og angir et tilknyttede kriterier for den juridiske enheten som er angitt i **Firma**-feltet i linjen.
+
 ## <a name="web-applications"></a><a id="applications"></a>Webprogrammer
 
 Bruk webprograminnstillingene til å definere et webprogram, slik at det støtter Open Authorization (OAuth) 2.0. OAuth er den åpne standarden som gjør at brukere kan gi "sikker delegert tilgang" til programmet på sine vegne, uten å dele tilgangslegitimasjonen. Du kan også gå gjennom godkjenningsprosessen ved å få en autorisasjonskode og tilgangtoken. Du kan definere innstillinger for webprogram ved å gå til **Mva** \> **Oppsett** \> **Elektroniske meldinger** \> **Webprogrammer**.
@@ -214,6 +247,7 @@ Tabellen nedenfor beskriver feltene på siden **Handlinger for meldingsbehandlin
 | Kjørbar klasse                          | Velg en eksisterende utførbar klasseinnstilling. Dette feltet er bare tilgjengelig for handlingene av typen **Utføringsnivå for meldingselement** og **Utføringsnivå for meldingselement**. |
 | Handling for Fyll ut poster                   | Velg en eksisterende handling for ut fylle ut poster. Dette feltet er bare tilgjengelig for handlingene av typen **Fyll ut poster**. |
 | Webtjeneste                               | Velg en eksisterende webtjeneste. Dette feltet er bare tilgjengelig for handlingene av typen **Webtjeneste**. |
+| Filnavn som skal sendes                         | Angi navnet på vedlegget til en elektronisk melding som må sendes av denne handlingen. Hvis flere vedlegg har samme opprinnelige filnavn, blir det nyeste vedlegget sendt. Hvis det ikke blir funnet noe vedlegg med det angitte opprinnelige filnavnet, sendes forespørselen uten innhold. Dette feltet er bare tilgjengelig for handlingene av typen **Webtjeneste**. |
 | Filnavn                                 | Angi navnet på filen som blir resultatet av handlingen. Denne filen kan være svar fra webserveren eller rapporten som genereres. Dette feltet er bare tilgjengelig for handlinger av typene **Webtjeneste** og **Melding om eksport av elektronisk rapportering**. |
 | Knytt filer til kildedokumenter          | Merk av i denne avmerkingsboksen for å knytte genererte filer til poster i en referert hovedtabell for EM-varer. Dette feltet er bare tilgjengelig for handlinger av typene **Eksport av elektronisk rapportering** og **Webtjeneste**. |
 | Legg til filer fra utdataarkiv til elementer | Merk av i denne boksen for å trekke ut separate XML-filer fra utdataarkivfilen og legge dem ved de tilsvarende elektroniske meldingselementene. Dette feltet er bare tilgjengelig for handlinger av typen **Eksport av elektronisk rapportering**. |

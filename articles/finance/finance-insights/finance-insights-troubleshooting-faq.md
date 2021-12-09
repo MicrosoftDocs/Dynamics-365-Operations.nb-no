@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-20
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: f3cac30a66ff3a74a7f67c11dd9fa14af79d10af
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 68115d484abcdc3c37357ae441e9f9ccb5212659
+ms.sourcegitcommit: 6a9f068b59b62c95a507d1cc18b23f9fd80a859b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752623"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "7827059"
 ---
 # <a name="troubleshoot-finance-insights-setup-issues"></a>Feilsøke konfigurasjonsproblemer for Finance Insights
 
@@ -70,3 +70,26 @@ Kontantstrømprognosefunksjonen i Kontant- og bankbehandling og kontantstrømpro
 Først setter du opp og aktiverer kontantstrømprognosene og likviditetskontoene. Hvis du vil ha mer informasjon, kan du se [Kontantstrømprognose](../cash-bank-management/cash-flow-forecasting.md). Hvis dette oppsettet er fullført, men du ikke ser resultatene du forventer, kan du se [Feilsøke konfigurasjon av kontantstrømprognose](../cash-bank-management/cash-flow-forecasting-tsg.md) for å få mer informasjon.
 
 Deretter bekrefter du at kontantstrømprognosefunksjonen i Finance Insights (**Kontant- og bankbehandling \> Oppsett \> Finance Insights \> Kontantstrømprognoser**) er aktivert, og at opplæring av AI-modellen er fullført. Hvis opplæringen ikke er fullført, velger du **Prognose nå** for å starte modellopplæringsprosessen.
+
+## <a name="symptom-why-isnt-the-install-a-new-add-in-button-visible-in-microsoft-dynamics-lifecycle-services"></a>Symptom: Hvorfor trenger du ikke installere en ny tilleggsknapp som vises i Microsoft Dynamics Lifecycle Services?
+
+### <a name="resolution"></a>Oppløsning
+
+Bekreft først at rollen **Miljøleder** eller **Prosjekteier** er tilordnet den påloggede brukeren i feltet **Prosjektsikkerhetsrolle** i Microsoft Dynamics Lifecycle Services (LCS). Installasjon av de nye tilleggene krever en av disse prosjektsikkerhetsrollene.
+
+Hvis du har fått tildelt den riktige prosjektsikkerhetsrollen, må du kanskje oppdatere webleservinduet for å se knappen **Installer nytt tillegg**.
+
+## <a name="symptom-the-finance-insights-add-in-doesnt-seem-to-be-installing-why-is-that"></a>Symptom: Finance Insights-tillegget virker ikke som det installeres. Hvorfor det?
+
+### <a name="resolution"></a>Oppløsning
+
+Trinnene nedenfor bør være fullført.
+
+- Bekreft at du har **Systemadministrator** og **Systemtilpasser** tilgang i administrasjonssenteret for Power Portal.
+- Bekreft at en Dynamics 365 Finance eller tilsvarende lisens brukes for brukeren som installerer tillegget.
+- Kontroller at følgende Azure AD app er registrert i Azure AD: 
+
+  | Program                  | App-ID           |
+  | ---------------------------- | ---------------- |
+  | Microsoft Dynamics ERP Microservices CDS | 703e2651-d3fc-48f5-942c-74274233dba8 | 
+  

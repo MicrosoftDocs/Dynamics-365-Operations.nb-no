@@ -11,17 +11,18 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: cfba2b8320399cc2eb3f2231e8a172d902633f16
-ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
+ms.openlocfilehash: f5b3c013996253de75cd85c4bcfc52ed159e8f9d
+ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/25/2021
-ms.locfileid: "7678865"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "7860515"
 ---
 # <a name="get-started-with-global-inventory-accounting"></a>Komme i gang med Globalt lagerregnskap
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)] <!--KFM: Until 4/30/2022 -->
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!--KFM: Preview until 4/30/2022 -->
 
 Ved hjelp av Globalt lagerregnskap kan du utføre flere lagerregnskap i Globalt lagerregnskap-finanskontoer du har definert. Du må knytte hver finanskonto for Globalt lagerregnskap til en *konvensjon*. En konvensjon er en samling av følgende typer regnskapspolicyer:
 

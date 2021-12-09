@@ -1,59 +1,45 @@
 ---
-title: Sende og godkjenne prosjektbudsjett
+title: Arbeidflyten Opprette og sende et prosjektbudsjett
 description: Denne prosedyren viser hvordan du oppretter og sender inn budsjettet for et prosjekt.
 author: Henrikan
-ms.date: 08/13/2019
-ms.topic: business-process
-ms.prod: ''
-ms.technology: ''
+ms.date: 11/22/2021
+ms.topic: article
 ms.search.form: ProjProjectsListPage, ProjTable, ProjBudget, WorkflowSubmitDialog
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.search.industry: Service industries
 ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a16a4f8102a954fa8337aa7f5de0f8dcd2b3a288
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 6f410d824be717537e6dfb5dbd8b71ff7d992e0a
+ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569376"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "7860431"
 ---
-# <a name="submit-and-approve-project-budget"></a>Sende og godkjenne prosjektbudsjett
+# <a name="create-and-submit-a-project-budget-workflow"></a>Arbeidflyten Opprette og sende et prosjektbudsjett
 
 [!include [banner](../../includes/banner.md)]
 
-Denne prosedyren viser hvordan du oppretter og sender inn budsjettet for et prosjekt. 
+Når du oppretter et prosjektbudsjett, kan du angi estimerte inntekter og kostnader for prosjektet, og bruke verdiene til å kontrollere de faktiske prosjekttransaksjonene. Prosjektbudsjettering krever at alle opprinnelige budsjetter og endringer sendes til en projektarbeidsflyt for godkjenning. Arbeidsflyten gir deg bedre kontroll over budsjetteringen og oppretter en endringshistorikkpost. Når du har [opprettet et proskelt](/dynamicsax-2012/appuser-itpro/create-a-project), bruker du denne prosedyren til å opprette og sende inn budsjettet.
 
-Når du oppretter et prosjektbudsjett, kan du angi estimerte inntekter og kostnader for et prosjekt, og deretter bruke disse til å kontrollere faktiske prosjekttransaksjoner. I prosjektbudsjettering må alle opprinnelige budsjetter og endringer sendes til en projektarbeidsflyt for godkjenning. Arbeidsflyt gir deg bedre kontroll over prosessen og oppretter en endringshistorikkpost.
-
-Denne oppgaven ble opprettet med USSI-datasettet.
-
-1. Gå til **Moduler > Prosjektstyring og regnskap > Prosjekter > Alle prosjekter** i **navigasjonsruten**.
-2. Finn og velg ønsket post i listen.
-3. Klikk på koblingen i den valgte raden i listen.
-4. Klikk på **Plan** i **handlingsruten**.
-5. Klikk på **Prosjektbudsjett**.
-6. Skriv inn en verdi i **Beskrivelse**-feltet.
-7. Utvid **Kostnad**-hurtigfanen.
-8. Klikk på **Ny**.
-9. Velg et alternativ i **Transaksjonstype**-feltet.
-10. Angi eller velg en verdi i **Kategori**-feltet.
-11. Angi et tall i feltet **Opprinnelig budsjett**.
-12. Vis hurtigfanen **Omsetning**.
-13. Klikk på **Ny**.
-14. Merk den valgte raden i listen.
-15. Velg et alternativ i **Transaksjonstype**-feltet.
-16. Angi eller velg en verdi i **Kategori**-feltet.
-17. Angi et tall i feltet **Opprinnelig budsjett**.
-18. Klikk på **Lagre**.
-19. Klikk på **Arbeidsflyt**.
-20. Klikk på **Send**.
-21. Skriv inn en verdi i feltet **Kommentar**.
-22. Klikk på **Send**.
-
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+1. Gå til **Moduler** > **Prosjektstyring og regnskap** > **Prosjekter** > **Alle prosjekter**.
+1. Velg prosjektet fra prosjektlisten.
+1. Velg kategorien **Plan** på prosjektets detaljside.
+1. Velg **Prosjektbudsjett** under **Budsjett**-gruppe.
+1. På **Generelt**-hurtigfanen angir du informasjonen nedenfor:
+   - Skriv inn en verdi i **Beskrivelse**-boksen.
+   - Velg alternativ for **Opprinnelig budsjett**.
+   - Velg alternativ for **Gjenstående budsjett**.
+1. Utvid hurtigfanen **Kostnader**, og velg **Ny**. Deretter kan du utføre følgende innstillinger:
+   - Velg et alternativ for **Transaksjonstype**.
+   - Velg en passende **Kategori**.
+   - Angi en verdi i **Opprinnelig budsjett**.
+1. Utvid hurtigfanen **Omsetning**, og velg **Ny**. Deretter kan du utføre følgende innstillinger:
+   - Velg et alternativ for **Transaksjonstype**.
+   - Velg en **Kategori**.
+   - Angi en verdi for **Opprinnelig budsjett**.
+1. Velg **Lagre**.
+1. Velg **Arbeidsflyt \> Send inn**.
+1. På siden **Se gjennom arbeidsflyt for opprinnelig budsjett - Send inn** angir du en **Kommentar**, og velger **Send inn**.
