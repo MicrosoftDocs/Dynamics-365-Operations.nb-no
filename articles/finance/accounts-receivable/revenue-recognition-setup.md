@@ -2,7 +2,7 @@
 title: Inntektsføringsoppsett
 description: Dette emnet beskriver alternativene for inntektsføringsoppsett og deres betydning.
 author: kweekley
-ms.date: 08/24/2018
+ms.date: 11/24/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: b5ffd86d736cb7b6b5c270663c2b774e14556a6b
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: e8e29ec1ca5a02db67bb4baf522da96ec23c740f
+ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675184"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "7867226"
 ---
 # <a name="revenue-recognition-setup"></a>Inntektsføringsoppsett
 [!include [banner](../includes/banner.md)]
@@ -61,7 +61,7 @@ Det første scenariet skjer etter at alle de kontraktsforpliktelsene er oppfylt,
 
 Det andre scenariet forekommer når en journal opprettes etter ny tildeling. Ny tildeling skjer når en salgsordrelinje legges til en salgsordre som allerede er fakturert, eller når det opprettes en ny salgsordre som inkluderer en linje som er en del av den opprinnelige kontrakten. Hvis en faktura ble postert før den nye salgsordrelinjen er lagt til, må det opprettes en korreksjonsregnskapsoppføring for den posterte kundefakturaen.
 
-Journalen defineres på siden **Journalnavn** (**Inntektsføring \> Oppsett \> Journalnavn**). Journaltypen må settes til **Inntektsføring**. Med journalen for inntektsføring kan du velge posteringslaget du vil postere til.
+Journalen defineres på siden **Journalnavn** (**Inntektsføring \> Oppsett \> Journalnavn**). Journaltypen må settes til **Inntektsføring**. 
 
 ## <a name="parameters-for-revenue-recognition"></a>Parametere for inntektsføring
 

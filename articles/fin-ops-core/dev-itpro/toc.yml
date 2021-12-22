@@ -14,12 +14,12 @@
               items:
                 - name: Nyheter eller endringer på startsiden for Plattformoppdateringer
                   href: get-started/whats-new-home-page.md
-                - name: Plattformoppdateringer for versjon 10.0.23
+                - name: Plattformoppdateringer for versjon 10.0.24 (februar 2022)
+                  href: get-started/whats-new-platform-updates-10-0-24.md
+                - name: Plattformoppdateringer for versjon 10.0.23 (januar 2022)
                   href: get-started/whats-new-platform-updates-10-0-23.md
                 - name: Plattformoppdateringer for versjon 10.0.22 (november 2021)
                   href: get-started/whats-new-platform-updates-10-0-22.md
-                - name: Plattformoppdateringer for versjon 10.0.21 (oktober 2021)
-                  href: get-started/whats-new-platform-updates-10-0-21.md
             - name: Funksjoner som er fjernet eller avskrevet
               items:
                 - name: Funksjoner som er fjernet eller avskrevet på startsiden
@@ -232,9 +232,9 @@
               href: data-entities/dm-error-descriptions.md
         - name: Azure Data Lake
           items:
-            - name: Oversikt over Azure Data Lake
-              href: data-entities/azure-data-lake-overview.md
-            - name: Konfigurere eksport til Azure Data Lake
+            - name: Oversikt over Eksporter til Azure Data Lake
+              href: data-entities/Azure-Data-Lake-GA-version-overview.md
+            - name: Installer tillegget Eksporter til Azure Data Lake
               href: data-entities/configure-export-data-lake.md
             - name: Finance and Operations-apper i Azure Data Lake
               href: data-entities/finance-data-azure-data-lake.md
@@ -402,10 +402,12 @@
                       href: lifecycle-services/reconfigure-environment.md
                     - name: Distribuere lokale distribusjoner på nytt
                       href: deployment/redeploy-on-prem.md
-                    - name: 'Fjerne og installere på nytt, eller legge til en AOS-node'
+                    - name: 'Fjern og installer på nytt, eller legg til en AOS-node'
                       href: deployment/onprem-remove-reinstall-AOS-node.md
-                    - name: Bruke den samme AD FS-forekomsten på nytt for flere miljøer
+                    - name: Bruk den samme AD FS-forekomsten på nytt for flere miljøer
                       href: deployment/onprem-reuseadfs.md
+                    - name: Oppgrader SQL Server-forekomsten av miljøer for Microsoft Dynamics 365 Finance + Operations (on-premises)
+                      href: deployment/onprem-upgrade-sqlserver.md
                 - name: Lokal agent
                   items:
                     - name: Kompatibilitet med AD FS Microsoft 365
@@ -1006,15 +1008,15 @@
                   href: lifecycle-services/translation-service-overview.md
                 - name: Oversette brukergrensesnittfiler
                   href: lifecycle-services/use-translation-service.md
-                - name: Oversette dokumentasjonsfiler
+                - name: Oversett dokumentasjonsfiler
                   href: lifecycle-services/use-translation-service-ua.md
                 - name: Filer for oversettelsesminne
                   href: lifecycle-services/use-translation-service-tm.md
         - name: Microsoft Power Platform-integrering
           items:
-            - name: Microsoft Power Platform-integrering med Finance and Operations
+            - name: Oversikt
               href: power-platform/overview.md
-            - name: Aktivere Power Platform-integreringen
+            - name: Aktiver Power Platform-integreringen
               href: power-platform/enable-power-platform-integration.md
             - name: Godkjenning og autorisasjon
               href: power-platform/authentication-and-authorization.md

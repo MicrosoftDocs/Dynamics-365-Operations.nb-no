@@ -4,6 +4,8 @@
     - name: Nyheter
       items:
         - name: Nyheter eller endringer i Human Resources
+          href: hr-whats-new-2021-11-29.md
+        - name: 29. november 2021
           href: hr-admin-whats-new.md
         - name: 5. oktober 2021
           href: hr-whats-new-2021-10-04.md
@@ -793,11 +795,13 @@
                       href: hr-benefits-process-life-event-eligibility.md
                     - name: Behandle satsendringer
                       href: hr-benefits-process-rate-changes.md
+                - name: Valg av ansattfordel
+                  href: employee-select-benefits-ess.md
                 - name: ACA-rapportering
                   href: hr-benefits-management-aca-reports.md
                 - name: Fordelsoppgave
                   href: hr-benefits-statement.md
-            - name: Definere og administrere et fordelsprogram
+            - name: Definer og administrer et fordelsprogram
               href: hr-benefits-manage-program.md
             - name: Policyer for fordelsrettighet
               href: hr-benefits-eligibility-policies.md

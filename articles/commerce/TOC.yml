@@ -92,7 +92,9 @@
                   items:
                     - name: Nyheter eller endringer på startsiden for Commerce
                       href: get-started/whats-new-home-page.md
-                    - name: Commerce 10.0.23
+                    - name: Commerce 10.0.24 (februar 2022)
+                      href: get-started/whats-new-commerce-10-0-24.md
+                    - name: Commerce 10.0.23 (januar 2022)
                       href: get-started/whats-new-commerce-10-0-23.md
                     - name: Commerce 10.0.22 (november 2021)
                       href: get-started/whats-new-commerce-10-0-22.md
@@ -544,6 +546,8 @@
                       href: duplicate-payment-protection.md
                     - name: Oversikt over betalinger for omnikanal
                       href: omni-channel-payments.md
+                    - name: Flere tilgjengelige betalingsmåter for henting i butikk
+                      href: dev-itpro/multiple-payments-pickup.md
                     - name: Commerce-ordrebetalinger for omnikanal
                       href: dev-itpro/commerce-payments.md
                     - name: Arkiver transaksjonsdata for kredittkort
@@ -808,17 +812,21 @@
                   href: payment-methods-restrictions.md
                 - name: 'Returnere varer på tvers av flere kunder, ordrer og fakturaer'
                   href: multireturn.md
-                - name: Opprette og oppdatere en retur- og refunderingspolicy for en kanal
+                - name: Opprett og oppdater en retur- og refunderingspolicy for en kanal
                   href: refund_policy_returns.md
         - name: Behandle kundene dine
           items:
             - name: Kundeadministrasjon i butikker
               href: customer-mgmt-stores.md
+            - name: Opprettingsmodus for asynkron kunde
+              href: async-customer-mode.md
+            - name: Konverter asynkrone kunder til synkrone kunder
+              href: convert-async-to-sync.md
             - name: Kundeaktiviteter
               items:
                 - name: Oversikt over kundeaktiviteter
                   href: clienteling-overview.md
-            - name: Lojalitet
+            - name: Fordeler
               items:
                 - name: Fordelsoversikt
                   href: set-up-customer-loyalty-program.md
@@ -1330,6 +1338,8 @@
                   href: localizations/latam-bra-nfce-contingency-mode.md
                 - name: Poster brasilianske regnskapsdokumenter via detaljhandelsutdrag i Commerce Headquarters
                   href: localizations/latam-bra-retail-statements.md
+                - name: Funksjonaliteten for CF-e-regnskapsdokument og integrering med SAT i Commerce POS for Brasil
+                  href: localizations/latam-bra-cf-e-sat.md
                 - name: Dynamics 365 Payment Connector for Adyen i Commerce POS for Brasil
                   href: localizations/latam-bra-adyen.md
             - name: Øst-Europa
@@ -1378,8 +1388,10 @@
                   href: localizations/apac-ind-loc-deployment-guidelines.md
                 - name: Støtte for oppgradering og N-1 for India
                   href: localizations/apac-ind-n-1-for-india.md
-                - name: Generere QR-koder og skrive dem ut på kvitteringer
+                - name: Generer QR-koder og skrive dem ut på kvitteringer for India
                   href: localizations/ind-generate-qr-code-print-receipt.md
+                - name: GST-integrering (Goods and Services Tax) for e-handelsområder
+                  href: localizations/apac-ind-e-commerce.md
             - name: Italia
               items:
                 - name: Eksempel på integrering av bilagsskriver for Italia
@@ -1616,6 +1628,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/commerce/toc.json
                         - name: Today
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-today.md?toc=/dynamics365/commerce/toc.json
+                        - name: WeekNum
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-weeknum.md?toc=/dynamics365/commerce/toc.json
                     - name: List
                       items:
                         - name: Listefunksjoner
