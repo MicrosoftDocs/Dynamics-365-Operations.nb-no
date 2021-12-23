@@ -2,7 +2,7 @@
 title: Utforme en konfigurasjon til å generere dokumenter i Excel-format
 description: Dette emnet beskriver hvordan du utformer et format for elektronisk rapportering (ER) for å fylle ut en Excel-mal, og deretter generere utgående dokumenter i Excel-format.
 author: NickSelin
-ms.date: 10/29/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cfacc2232201b85a49068ee724b55e71b60eb2be
-ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
+ms.openlocfilehash: ebe2647bb382421921aa6ffc733953f379a8af10
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7731644"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890879"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Utforme en konfigurasjon til å generere dokumenter i Excel-format
 
 [!include[banner](../includes/banner.md)]
 
-Du kan utforme en konfigurasjon av format for [Elektronisk rapportering (ER)](general-electronic-reporting.md) som har en [formatkomponent](general-electronic-reporting.md#FormatComponentOutbound) for ER som du kan konfigurere til å generere et utgående dokument i et Microsoft Excel-arbeidsbokformat. Spesielle formatkomponenter for ER må brukes til dette formålet.
+Du kan utforme en formatkonfigurasjon for [Elektronisk rapportering (ER)](general-electronic-reporting.md) som har en ER-formatkomponent som du kan konfigurere til å generere et utgående dokument i et Microsoft Excel-arbeidsbokformat. Spesielle formatkomponenter for ER må brukes til dette formålet.
 
 Hvis du vil ha mer informasjon om denne funksjonen, kan du følge fremgangsmåten i emnet [Utforme en konfigurasjon for generering av rapporter i OPENXML-format](tasks/er-design-reports-openxml-2016-11.md).
 
@@ -330,6 +330,40 @@ Når et utgående dokument i et Microsoft Excel-arbeidsbokformat genereres, kan 
 6. Generer et utskrivbart FTI-dokument, og gå gjennom bunnteksten til det genererte dokumentet.
 
     ![Gjennomgang av bunnteksten til et generert dokument i Excel-format.](./media/er-fillable-excel-footer-4.gif)
+
+## <a name="example-2-fixing-the-merged-cells-epplus-issue"></a><a name="example-2"></a>Eksempel 2: Ordne EPPlus-problem med flettede celler
+
+Du kan kjøre et ER-format for å generere et utgående dokument i et Excel-arbeidsbokformat. Når funksjonen **Aktivere bruken av EPPlus-bibliotek i Rammeverk for elektronisk rapportering** er aktivert i arbeidsområdet **Funksjonsbehandling**, brukes [EPPlus-biblioteket](https://www.nuget.org/packages/epplus/4.5.2.1) til å lage Excel-utdata. På grunn av kjent [Excel-virkemåte](https://answers.microsoft.com/msoffice/forum/all/deleting-a-range-of-cells-that-includes-merged/8601462c-4e2c-48e0-bd23-848eecb872a9) og en begrensning av EPPlus-biblioteket, kan du imidlertid oppleve følgende unntak: "Kan ikke slette/overskrive sammenslåtte celler. Et område er delvis flettet med det andre flettede området." Hvis du vil vite hva slags Excel-maler som kan forårsake dette unntaket, og hvordan du kan løse problemet, kan du fullføre eksemplet nedenfor.
+
+1. Opprett en ny Excel-arbeidsbok i Excel-skrivebordsprogrammet.
+2. I regnearket **Ark1** legger du til **ReportTitle**-navnet for cellen **A2**.
+3. Slå sammen cellene **A1** og **A2**.
+
+    ![Gå gjennom resultatene av å flette cellene A1 og A2 i den utformede Excel-arbeidsboken i skrivebordsprogrammet i Excel.](./media/er-fillable-excel-example2-1.png)
+
+3. På siden **Konfigurasjoner** [leger du til et nytt ER-format](er-fillable-excel.md#add-a-new-er-format) for å generere et utgående dokument i Excel-arbeidsbokformat.
+4. På siden **Formatutforming**-siden [importerer](er-fillable-excel.md#template-import) du den utformede Excel-arbeidsboken til det tillagte ER-formatet som en ny mal for utgående dokumenter.
+5. I fanen **Tilordninge** konfigurerer du bindingen for komponenten **ReportTitle** for [Celle](er-fillable-excel.md#cell-component)-typen.
+6. Kjøre det konfigurerte ER-formatet. Legg merke til at følgende unntak: "Kan ikke slette/overskrive sammenslåtte celler. Et område er delvis flettet med det andre flettede området."
+
+    ![Ser gjennom resultatene av å kjøre det konfigurerte ER-formatet på Formatutforming-siden.](./media/er-fillable-excel-example2-2.png)
+
+Du kan løse problemet på en av følgende måter:
+
+- **Enklere, men ikke anbefalt**: I arbeidsområdet for **Funksjonsbehandling** kan du slå av funksjonen **Aktivere bruken av EPPlus-bibliotek i Rammeverk for elektronisk rapportering**. Selv om denne fremgangsmåten er enklere, kan du oppleve andre problemer hvis du bruker den, fordi enkelte ER-funksjoner bare støttes når funksjonen **Aktivere bruken av EPPlus-bibliotek i Rammeverk for elektronisk rapportering** er aktivert.
+- **Anbefalt:** Følg disse trinnene:
+
+    1. I Excel-skrivebordsprogrammet endrer du Excel-arbeidsboken på en av følgende måter:
+
+        - I regnearket **Ark1** fjerner du sammenslåing av celler **A1** og **A2**.
+        - Endre referansen for **ReportTitle**-navnet fra **=Sheet1!$A$2** til **=Sheet1!$A$1**.
+
+        ![Gå gjennom resultatene av å endre referansen i den utformede Excel-arbeidsboken i Excel-skrivebordsprogrammet.](./media/er-fillable-excel-example2-3.png)
+
+    2. På **Formatutforming**-siden [importerer](er-fillable-excel.md#template-import) du den endrede Excel-arbeidsboken til det redigerbare ER-formatet for å oppdatere den eksisterende malen.
+    3. Kjør det modifiserte ER-formatet.
+
+        ![Se gjennom det generert dokumentet i Excel-skrivebordprogrammet.](./media/er-fillable-excel-example2-4.png)
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

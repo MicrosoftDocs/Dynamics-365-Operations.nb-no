@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-8-03
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: fc413f8230849653aef8c2951f1749823edded6e
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: 0f1f49a7da2f015d90987587fc251a36cfe82d49
+ms.sourcegitcommit: cd7f1c63f48542a8ebcace7b3d512eb810d4b56e
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605435"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "7903256"
 ---
 # <a name="journal-posting-failure-because-of-imbalance"></a>Feil ved journalpostering på grunn av ubalanse
 
@@ -52,13 +52,13 @@ I ett støttet scenario kan et bilag ha mer enn én transaksjonsvaluta. I dette 
 
 Hvis alle linjene i et bilag har samme transaksjonsvaluta, og hvis transaksjonsvalutabeløpene er balansert, bekrefter systemet at regnskapsvalutabeløpene er balansert. Hvis bilaget er angitt i en fremmed valuta, brukes valutakursen på bilagslinjene til å regne om transaksjonsvalutabeløpene til regnskapsvalutaen. Først oversettes og avrundes hver linje i bilaget til to desimalplasser. Deretter blir linjene summert for å bestemme total debet og totale kredit. Fordi hver linje er omregnet, er det ikke sikkert at total debet og total kredit er balansert. Men hvis absoluttverdien for forskjellen er innenfor verdien for **Maksimal øredifferanse** som er definert på siden **Parametere for økonomimodul**, posteres bilaget, og differansen posteres automatisk til øredifferansekontoen.
 
-Hvis bilaget har mer enn én transaksjonsvaluta, blir hver linje i bilaget omregnet til regnskapsvalutaen og avrundet til to desimalplasser, og linjene summeres for å fastsette total debet og total kredit. Hvis de skal anses som balansert, må debetbeløpene og kredittbeløpene balanseres, enten som omregning eller når avrundingsdifferansen for regnskapsvalutaen er inkludert.
+Hvis bilaget har mer enn én transaksjonsvaluta, blir hver linje i bilaget omregnet til regnskapsvalutaen og avrundet til to desimalplasser, og linjene summeres for å fastsette total debet og total kredit. For å anses som i balanse må debet og kredit være balansert i regnskapsvalutaen.  En øredifferansekonto blir aldri lagt til bilaget i regnskapsvalutaen for å bringe debeter og krediter i balanse. 
 
 ### <a name="reporting-currency"></a>Rapporteringsvaluta
 
 Hvis alle linjene i et bilag har samme transaksjonsvaluta, og hvis transaksjonsvalutabeløpene er balansert, bekrefter systemet at rapporteringsvalutabeløpene er balansert. Hvis bilaget er angitt i en fremmed valuta, brukes valutakursen på bilagslinjene til å regne om transaksjonsvalutabeløpene til rapporteringsvalutaen. Først oversettes og avrundes hver linje i bilaget til to desimalplasser. Deretter blir linjene summert for å bestemme total debet og totale kredit. Fordi hver linje er omregnet, er det ikke sikkert at total debet og total kredit er balansert. Men hvis forskjellen er innenfor verdien for **Maksimal øresavrunding i rapporteringsvaluta** som er definert på siden **Parametere for økonomimodul**, posteres bilaget, og differansen posteres automatisk til øredifferansekontoen.
 
-Hvis bilaget har mer enn én transaksjonsvaluta, blir hver linje i bilaget omregnet til rapporteringsvalutaen og avrundet til to desimalplasser, og linjene summeres for å fastsette total debet og total kredit. Hvis de skal anses som balansert, må debetbeløpene og kredittbeløpene balanseres, enten som omregning eller når avrundingsdifferansen for rapporteringsvalutaen er inkludert.
+Hvis bilaget har mer enn én transaksjonsvaluta, blir hver linje i bilaget omregnet til rapporteringsvalutaen og avrundet til to desimalplasser, og linjene summeres for å fastsette total debet og total kredit. For å anses som i balanse må debet og kredit være balansert i rapporteringvalutaen.  En øredifferansekonto blir aldri lagt til bilaget i rapporteringsvalutaen for å bringe debeter og krediter i balanse.
 
 ### <a name="example-for-an-accounting-currency-imbalance"></a>Eksempel på ubalanse i regnskapsvaluta
 

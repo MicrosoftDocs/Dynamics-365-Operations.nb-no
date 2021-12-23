@@ -1,7 +1,7 @@
 ---
 title: Definere posteringsprofiler for anleggsmidler
-description: Denne oppgaveveiledninegn definerer posteringsprofiler for anleggsmiddel.
-author: saraschi2
+description: Denne fremgangsmåten viser hvordan du definerer posteringsprofiler for anleggsmidler.
+author: moaamer
 ms.date: 07/22/2019
 ms.topic: business-process
 ms.prod: ''
@@ -10,21 +10,21 @@ ms.search.form: AssetPosting
 audience: Application User
 ms.reviewer: roschlom
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a2708997848352205cab2e425c9ae1fb531b8a566ba86a65ba2cbeb7e0b5c2b8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ee0006c9588a22d720687e7aceb49acc756b83e1
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767629"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883774"
 ---
 # <a name="set-up-fixed-asset-posting-profiles"></a>Definere posteringsprofiler for anleggsmidler
 
 [!include [banner](../../includes/banner.md)]
 
-Denne oppgaveveiledninegn definerer posteringsprofiler for anleggsmiddel.  Den bruker regnskapsførerrollen og demodataene for den juridiske enheten USMF.  Eksemplene i oppgaveveiledningen er for en enkel posteringsprofil, men posteringsprofiler må opprettes for den bestemte kontoplanen og kravene til økonomisk rapportering.
+Denne fremgangsmåten viser hvordan du definerer posteringsprofiler for anleggsmidler. Eksemplene i emnet er for en enkel posteringsprofil, men posteringsprofiler må opprettes for den bestemte kontoplanen og kravene til økonomisk rapportering.
 
 1. I navigasjonsruten går du til **Moduler > Anleggsmidler > Oppsett > Posteringsprofiler for anleggsmidler**.
 2. Klikk på **Ny**.

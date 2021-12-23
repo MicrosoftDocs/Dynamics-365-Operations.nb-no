@@ -1,5 +1,5 @@
 ---
-title: Forhåndsversjon av Dynamics 365 Supply Chain Management 10.0.23
+title: Forhåndsvisning av Dynamics 365 Supply Chain Management 10.0.23 (januar 2022)
 description: Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynamics 365 Supply Chain Management 10.0.23.
 author: kamaybac
 ms.date: 10/15/2021
@@ -10,14 +10,14 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 7950d225bd528c05c14df108f4d44cef3e348ebb
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: fd6483c86b34d355e3727a95794b7876dc54ec32
+ms.sourcegitcommit: 96515ddbe2f65905140b16088ba62e9b258863fa
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777797"
+ms.lasthandoff: 12/04/2021
+ms.locfileid: "7891799"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10023"></a>Forhåndsversjon av Dynamics 365 Supply Chain Management 10.0.23
+# <a name="preview-of-dynamics-365-supply-chain-management-10023-january-2022"></a>Forhåndsvisning av Dynamics 365 Supply Chain Management 10.0.23 (januar 2022)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
@@ -26,6 +26,7 @@ Dette emnet beskriver funksjoner som enten er nye eller endret i Microsoft Dynam
 
 - **Forhåndsversjon:** oktober 2021
 - **Allmenn tilgjengelighet for versjon (selvoppdatering):** desember 2021
+- **Allmenn tilgjengelighet for versjon (automatisk oppdatering):** januar 2022
 
 ## <a name="features-included-in-this-release"></a>Funksjoner inkludert i denne versjonen
 
@@ -53,6 +54,7 @@ Hvis du vil slå noen av disse funksjonene på eller av, må du gjøre det i [fu
 | Lagerstyring | \[Russland\] Poster økonomiske lagertransaksjoner for Storno i henhold til korrigeringsårsaken i finansbilaget for salgsordrer | Denne funksjonen påvirker funksjonaliteten for kreditnotakorrigeringer for Russland. Dette gjør det mulig å postere lagertransaksjoner for salgsfakturaer i henhold til rettelsesalternativet i økonomimodulen. Når denne funksjonen er aktivert, er det ingen flere avvik mellom **Korrigering**-flagget på finansbilaget for lagertransaksjonen og **Storno**-flagget på lagertransaksjoner. |
 | Lagerstyring | (Russland) Kjør rapportberegning av beholdningssaldoomsetning i parti | For russiske lokaliseringer av Supply Chain Management gir denne funksjonen mulighet til å kjøre rapporten *Rapport for beholdningssaldoomsetning* i parti, for å lagre den og vise rapportene som ble generert tidligere. |
 | Lagerstyring | (Russland) Bruk oversettelser til lokalt språk i lands- eller områdespesifikke primære skjemaer i lagerstyring | For russiske lokaliseringer av Supply Chain Management gjør funksjonen det mulig å bruke russiske oversettelser for produkt-/varenavn og måleenheter i følgende russiskspesifikke lagerutskrifter: tellingsliste (INV-3),tellingsliste (INV-5), og tellingsliste (INV-6). |
+| Hovedplanlegging | Azure Machine Learning Service for behovsprognose | Ved hjelp av denne funksjonen kan Azure Machine Learning Service generere etterspørselsprognoser basert på historiske data. Hvis du vil ha mer informasjon, kan du se [Oppsett av behovsprognose](../master-planning/demand-forecasting-setup.md). |
 | Innkjøp og leverandører | Rydd opp i oppdateringshistorikk for bestilling | Ved hjelp av denne funksjonen kan du rydde opp i midlertidige historiske poster i forbindelse med bestillingsoppdateringer. Den legger til en ny knapp kalt **Opprydding av oppdateringshistorikk for innkjøp** i handlingsruten på siden **Alle bestillinger**. Denne funksjonen er aktivert som standard. |
 | Produksjonskontroll | (Forhåndsversjon) Automatisk plukking av lageraktiverte materialer for automatisk posterte plukklister | Med denne funksjonen kan du plukke og løse lagerdimensjoner for automatisk posterte, avledede/etterkalkulerte plukklistejournaler. |
 | Produksjonskontroll | Valider utløp av råvarer mot dato for planlagt forbruk | Denne funksjonen endrer hvordan utløpsdatoer for partier valideres når du reserverer et parti råvarer som skal brukes under produksjonen. Når denne funksjonen er aktivert, valideres utløpsdatoen for partiet mot den planlagte forbruksdatoen (råvaredatoen), slik den er fastsatt på produksjonsstykklistelinjen eller formellinjen for partiordren. Når denne funksjonen deaktiveres, valideres utløpsdatoen for partiet mot den planlagte leveringsdatoen til produksjons- eller partiordren (som tidligere). |

@@ -13,12 +13,12 @@ ms.search.region: Norway
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 256dd3c506ae60807c6db78cb7b8a71397b2e30619710ba79f7196b590f11d4d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 93378e8430d793ffa94a886fb0af0ff9d48dd05e
+ms.sourcegitcommit: a11e8f4e764ff0bb210875401ae0671bc6412bde
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733587"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "7866779"
 ---
 # <a name="norway-overview"></a>Oversikt over Norge
 
@@ -30,6 +30,7 @@ Dette emnet inneholder koblinger til dokumentasjonsressurser for Norge.
 - [Kundebetaling basert på betalings-ID](tasks/no-00002-customer-payment-based-payment-id.md)
 - [Format for nettoimport](emea-nor-nets-import-format.md)
 - [Mva-oppgave](emea-nor-sales-tax-payment-report.md)
+- [Mva-retur med direkte innsending til Altinn](emea-nor-vat-return.md)
 - [Standard revisjonsfil for avgift (SAF-T)](emea-nor-satndard-audit-file-for-tax.md)
 - [Kassefunksjonalitet](../../commerce/localizations/emea-nor-cash-registers.md)
 - [Retningslinjer for distribusjon for kassaapparater](../../commerce/localizations/emea-nor-loc-deployment-guidelines.md)

@@ -2,19 +2,19 @@
 title: Tjenestebeskrivelse for Finance and Operations apper
 description: Dette emnet inneholder tjenestebeskrivelsen for Finance and Operations apper.
 author: tomhig
-ms.date: 11/17/2021
+ms.date: 12/07/2021
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: 262cf00bdca63876c284be40954ca5de559b993a
-ms.sourcegitcommit: f11ad8d7ee8a4d2ee1a1bb601622b50e14955c4a
+ms.openlocfilehash: f7ce73018fda79156cc7ef3d4e1faa3fedf966f8
+ms.sourcegitcommit: b101c21f972fdad2667431f712222e040cd69d43
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "7825406"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "7898395"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>Tjenestebeskrivelse for Finance and Operations apper
 
@@ -314,7 +314,7 @@ Microsofts planer og prosedyrer for nødgjenoppretting undersøkes regelmessig g
 | Microsoft klargjør et sekundært miljø i det Azure-parede datasenteret når den primære produksjonsforekomsten distribueres. Hvis du vil ha mer informasjon, kan du se [Forretningskontinuitet og nødgjenoppretting (BCDR): Azure-parede områder](/azure/best-practices-availability-paired-regions). | None |
 | Microsoft aktiverer geo-redundans for Azure SQL og Azure Blob Storage når den primære produksjonsforekomsten distribueres. | None |
 | Microsoft aktiverer automatisk sikkerhetskopiering på Azure SQL-databaser. | None |
-| <p>Når strømbrudd oppstår, avgjør Microsoft om det må utføres en failover for kunden, og om det vil bli tap av data. Tap av data kan være opptil fem sekunder. Hvis du vil ha mer informasjon, kan du se [Azure SQL Database - geo-gjenoppretting](https://azure.microsoft.com/blog/azure-sql-database-geo-restore).</p><p>Hvis det oppstår tap av data, vil Microsoft be om kundens godkjenning for en failover.</p> | Hvis det oppstår tap av data, kan det hende at kunden må gi skriftlig godkjenning for å utløse failoveren. |
+| <p>Når strømbrudd oppstår, avgjør Microsoft om det må utføres en failover for kunden, og om det vil bli tap av data. Kunder kan oppleve tap av data på opptil 15 minutter, avhengig av arten og tidsberegningen for avbruddet. | Hvis det oppstår tap av data, kan det hende at kunden må gi skriftlig godkjenning for å utløse failoveren. |
 | Når en failover forekommer, fungerer den gjeldende tjenesten i begrenset modus. Oppdatering av vedlikehold kan ikke utløses i failover-modus. | Kunden kan ikke be om pakkedistribusjoner eller andre regelmessige vedlikeholdsforespørsler i failover-modus. |
 | Når datasenteret blir operativt, gjør Microsoft en failback tilbake til produksjonsforekomsten i det primære Azure-området. Normale operasjoner gjenopptas. | Det kan hende at kunden må godkjenne failback til produksjonsforekomst i det primære Azure-området. |
 

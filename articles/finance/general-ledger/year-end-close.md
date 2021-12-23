@@ -2,7 +2,7 @@
 title: Årsavslutning
 description: Dette emnet beskriver den nødvendige konfigurasjonen og fremgangsmåten for å kjøre årsavslutningsprosessen i økonomimodulen.
 author: kweekley
-ms.date: 07/10/2021
+ms.date: 12/06/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5677ebeee6b8260280d4c9c7c8a7a0e18e7bd78f68a42d23967948a2e75120cd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 04eeb8886d74fa8c633d2ac4e9e47aa28a12ee30
+ms.sourcegitcommit: e06b7d4de6d5ee7ae491d437d6c0365608a5380b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778272"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "7892483"
 ---
 # <a name="year-end-close"></a>Årsavslutning
 
@@ -44,7 +44,7 @@ På **Hovedkonto**-siden:
 På siden **Parametere for økonomimodul** under **Årsavslutning**:
 
 - Alternativet **Slett eksisterende årsavslutningsoppføringer når du avslutter året på nytt** brukes til å angi om den systemgenererte åpningstransaksjonen fra en tidligere årsavslutning skal slettes når årsavslutningen kjøres på nytt. Hvis dette alternativet er satt til **Ja**, slettes den forrige åpningstransaksjonen og den valgfrie avslutningstransaksjonen, og en ny åpnings- og avslutningstransaksjon opprettes basert på gjeldende saldoer. Hvis dette alternativet er satt til **Nei**, beholdes den forrige åpningstransaksjonen og en valgfri åpningstransaksjon, og en ekstra åpnings- eller avslutningstransaksjon opprettes for å flytte saldoene fremover fra justeringstransaksjoner som er postert etter den forrige årsavslutningen.
-- Alternativet **Opprett avslutningstransaksjoner under overføring** brukes til å opprette avslutningstransaksjoner i regnskapsåret som lukkes, for å bringe saldoene i resultatkontoene til 0 (null). Hvis dette alternativet er satt til **Ja**, opprettes både åpningstransaksjonen og avslutningstransaksjonen. Hvis dette alternativet er satt til **Nei**, opprettes bare åpningstransaksjonen i det neste regnskapsåret for å overføre saldoene. Saldoene for resultatkonti beholdes på slutten av regnskapsåret.
+- Alternativet **Opprett avslutningstransaksjoner under overføring** brukes til å opprette avslutningstransaksjoner i regnskapsåret som lukkes, for å bringe saldoene i alle hovedkontoer til 0 (null). Hvis dette alternativet er satt til **Ja**, opprettes både åpningstransaksjonen og avslutningstransaksjonen. Hvis dette alternativet er satt til **Nei**, opprettes bare åpningstransaksjonen i det neste regnskapsåret for å overføre saldoene. Saldoene for hovedkontoen beholdes på slutten av regnskapsåret.
 - Alternativet **Sett regnskapsårsstatusen til permanent lukket** brukes til å angi en permanent lukketstatus for regnskapsåret. Bruk dette alternativet nøye, fordi perioder med status permanent lukket, ikke kan åpnes på nytt. Justeringer kan derfor ikke posteres til regnskapsåret. Anbefalt fremgangsmåte er å sette alternativet til **Nei**.
 - Alternativet **Bilagsnummeret må fylles ut** er fjernet. Et bilag er nå nødvendig når årsavslutningsprosessen kjøres. Da angis bilagsnummeret manuelt.
 

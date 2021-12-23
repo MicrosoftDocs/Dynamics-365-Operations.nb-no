@@ -2,7 +2,7 @@
 title: Oversikt over fordelsbehandling
 description: Dette emnet gir en oversikt over funksjonen Fordelsbehandling i Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 08/23/2021
+ms.date: 12/06/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7c4709a63201dd1a02c8879151762886f644ce22
-ms.sourcegitcommit: 4f9c889e5cf72f34dd9746a322f8c0d6b983037b
+ms.openlocfilehash: dc06fd2ef4992b4ef2e20ace4f5c6bcc0bffb9d2
+ms.sourcegitcommit: e06b7d4de6d5ee7ae491d437d6c0365608a5380b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "7417415"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "7892508"
 ---
 # <a name="benefits-management-overview"></a>Oversikt over fordelsbehandling
 
@@ -109,21 +109,29 @@ Du kan bruke fleksible kredittprogrammer til å registrere ansatte i fordeler i 
 
 ## <a name="configure-required-employee-information"></a>Konfigurere nødvendig ansattinformasjon
 
-Før du kan registrere ansatte i fordeler, må du angi nødvendig informasjon for dem. Hver ansatt må ha en stilling. Du må registrere ansatte i en fast kompensasjonsplan på startdatoen, eller de må ha et årlig lønnsbeløp. I delen **Ansattdetaljer** på **Arbeider**-siden må du også velge en verdi i feltet **Frekvens for fordelsbetaling**.
+Før du kan registrere ansatte i fordeler, må du angi nødvendig informasjon for dem. 
 
-Hvis du har en ansatt som får tilleggskompensasjon som provisjon, kan du legge til et **årlig lønnsbeløp for fordeler** fra ansattposten. Human Resources bruker **årlig lønnsbeløp for fordeler** når de fastsetter dekningsbeløp i stedet for det årlige beløpet for fast kompensasjonen. **Årlig lønnsbeløp for fordeler** må være gyldig per den ansattes startdato eller starte av fordelsperioden, avhengig av hva som er sist. Hvis både fast kompensasjon og årlig lønnsbeløp for fordeler registreres for en ansatt, blir årlig lønnsbeløp for fordeler brukt til å bestemme dekningsbeløp.
+Den ansatte må ha tilordnet en **Stilling**. En **Stilling** kan tilordnes den ansatte på sidene **Arbeider** eller **Stilling** ved å oppdatere **Arbeidertilordning**. 
+
+Deretter må ansatte registreres i en fast kompensasjonsplan på startdatoen eller ha en et **Årlig lønnsbeløp for fordeler**. Før du tilordner **Fast kompensasjon** til en ansatt, må en **Stilling** tilordnes. 
+
+> [!NOTE] 
+> Startdatoen for **Startdato for fast kompensasjon** kan ikke komme før **Dato for stillingstilordning**.
+
+Alternativt, hvis du har en ansatt som får tilleggskompensasjon som provisjon, kan du legge til en **Årlig fordelslønn** fra ansattposten. Personaladministrasjon bruker **Årlig fordelslønn** til å fastsette dekningsbeløp i stedet for **Fast kompensasjon**. **Årlig lønnsbeløp for fordeler** må være gyldig per den ansattes startdato eller starte av fordelsperioden, avhengig av hva som er sist. Det er imidlertid ikke påkrevd å tilordne **Årlig fordelslønn** til en stilling. Hvis du vil aktivere funksjonen **Årlig fordelslønn**, går du til siden **Delte parametere for Human Resources** i fanen **Fordelsbehandling**. Denne funksjonen er slått av som standard.
+
+> [!IMPORTANT]
+> Hvis både **Fast kompensasjon** og **Årlig fordelslønn** er registrert for en ansatt, blir **Årlig fordelslønn** brukt til å bestemme dekningsbeløp. I delen **Ansattdetaljer** på **Arbeider**-siden må du velge en verdi i feltet **Frekvens for fordelsbetaling**.
 
 ## <a name="configure-optional-employee-information"></a>Konfigurere valgfri ansattinformasjon
-
 Når du oppretter en fordelsplan som bruker satser som er basert på kjønn eller alder, må du angi en fødselsdato og et kjønn for den ansatte for å beregne fordelskostnaden.
 
 ## <a name="process-employees-to-determine-eligibility"></a>Behandle ansatte for å fastslå rettigheten
+Før ansatte kan registreres i planer, kjøres rettighetsbehandling for å bestemme hvilke planer de er kvalifisert for. Du kan vise resultatene av rettighetsprosessen i **visningsprogrammet for prosessresultater**. Hvis du vil ha mer informasjon, kan du se [Behandle registreringsberettigelse](hr-benefits-process-enrollment-eligibility.md).
 
-Før ansatte kan registreres i planer, kjøres rettighetsbehandling for å bestemme hvilke planer de er kvalifisert for. Du kan vise resultatene av rettighetsprosessen i visningsprogrammet for prosessresultater. Hvis du vil ha mer informasjon, kan du se [Behandle registreringsberettigelse](hr-benefits-process-enrollment-eligibility.md).
+## <a name="employees-select-plans-using-employee-self-service-optional"></a>Ansatte velger planer ved å bruke **Ansattselvbetjening** (valgfritt)
 
-## <a name="employees-select-plans-via-employee-self-service-optional"></a>Ansatte velger planer via ansattselvbetjening (valgfritt)
-
-Når en åpen registrering forekommer, ansettes de ansatte nylig, eller når en livshendelse forekommer, kan ansatte velge eller oppdatere fordeler via selvbetjening for ansatte. Hvis du vil ha mer informasjon, kan du se [Konfigurere selvbetjening for ansatte](hr-benefits-setup-employee-self-service.md).
+Når en åpen registrering forekommer, ansettes de ansatte nylig, eller når en livshendelse forekommer, kan ansatte velge eller oppdatere fordeler ved hjelp av **Ansattselvbetjening**. Hvis du vil ha mer informasjon, kan du se [Konfigurere selvbetjening for ansatte](hr-benefits-setup-employee-self-service.md).
 
 ## <a name="confirm-employee-plan-selections"></a>Bekreft valg av ansattplan
 

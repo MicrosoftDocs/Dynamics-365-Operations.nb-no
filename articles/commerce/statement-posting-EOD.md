@@ -1,8 +1,8 @@
 ---
 title: Forbedringer for utdragsposteringsfunksjonalitet
 description: Dette emnet beskriver forbedringene som er gjort i funksjonen for utdragspostering.
-author: josaw1
-ms.date: 05/14/2019
+author: analpert
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -10,19 +10,20 @@ audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: anpurush
+ms.author: analpert
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 49fc9003eae562a155fd8e30345ba4590d36e15b61f9f6a3f0b5896cb720f414
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e7e88511ac3d0044c7e590f43f4486929f691ce9
+ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772210"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7891449"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Forbedringer for utdragsposteringsfunksjonalitet
 
 [!include [banner](includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Dette emnet beskriver det første settet med forbedringer som er gjort i funksjonen for utdragspostering. Disse forbedringene er tilgjengelige i Microsoft Dynamics 365 for Finance and Operations 7.3.2.
 
@@ -116,9 +117,17 @@ Et utdrag går gjennom ulike operasjoner (for eksempel, Opprett, Beregn, Slett o
 
 ### <a name="aggregated-transactions"></a>Aggregerte transaksjoner
 
-Under posteringsprosessen samles salgstransaksjonene basert på konfigurasjonen. Disse samlede transaksjonene lagres i systemet og brukes til å opprette salgsordrer. Hver samlet transaksjon oppretter én tilsvarende salgsordre i systemet. Du kan vise de samlede transaksjonene ved hjelp av **Aggregerte transaksjoner**-knappen i gruppen **Utførelsesdetaljer** av utdraget.
+I løpet av posteringsprosessen samles hentesalgstransaksjoner etter kunde og produkt. Derfor reduseres antall salgsordrer og linjer som opprettes. De samlede transaksjonene lagres i systemet og brukes til å opprette salgsordrer. Hver samlet transaksjon oppretter én tilsvarende salgsordre i systemet. 
 
-Kategorien **Salgsordredetaljer** for en aggregert transaksjon viser følgende informasjon:
+Hvis et utdrag ikke er postert fullt ut, kan du vise oppsamlete transaksjoner i utdraget. Velg **Aggregerte transaksjoner** i gruppen **Utførelsesdetaljer** i fanen **Utdrag** i handlingsruten.
+
+![Akkumulerte transaksjoner-knappen for et utdrag som ikke er postert helt.](media/aggregated-transactions.png)
+
+For posterte utdrag kan du vise aggregerte transaksjoner på siden **Posterte utdrag**. I handlingsruten velger du **Forespørsler** og deretter **Aggregerte transaksjoner**.
+
+![Aggregerte transaksjoner-kommando for posterte utdrag.](media/aggregated-transactions-posted-statements.png)
+
+Hurtigfanen **Salgsordredetaljer** for en aggregert transaksjon viser følgende informasjon:
 
 - **Post-ID** – ID-en for den aggregerte transaksjonen.
 - **Utdragsnummer** – utdraget som den aggregerte transaksjonen tilhører.
@@ -127,10 +136,26 @@ Kategorien **Salgsordredetaljer** for en aggregert transaksjon viser følgende i
 - **Antall aggregerte linjer** – totalt antall linjer for den aggregerte transaksjonen og salgsordren.
 - **Statusr** – forrige status for den aggregerte transaksjonen.
 - **Faktura-ID** – når salgsordren for den aggregerte transaksjonen er fakturert, er dette ID-en for salgsfakturaen. Hvis dette feltet er tomt, er fakturaen for salgsordren ikke postert.
+- **Feilkode** – Dette feltet er angitt hvis aggregeringen har en feilstatus.
+- **Feilmelding** – Dette feltet er angitt hvis aggregeringen har en feilstatus. Den viser detaljer om hva som forårsaket at prosessen mislyktes. Du kan bruke informasjonen i feilkoden til å løse problemet, og deretter starte prosessen på nytt manuelt. Alt etter løsningstypen kan det hende at akkumulert salg må slettes og behandles på et nytt utdrag.
 
-Kategorien **Transaksjonsdetaljer** for en aggregert transaksjon viser alle transaksjoner som har blitt hentet til den aggregerte transaksjonen. De aggregerte linjene på den aggregerte transaksjonen viser alle de aggregerte postene fra transaksjoner. De aggregerte linjene viser også detaljer, for eksempel vare, variant, antall, pris, nettobeløp, enhet og lager. I utgangspunktet tilsvarer hver aggregerte linje én salgsordrelinje.
+![Felt i hurtigfanen Salgsordredetaljer for en akkumulert transaksjon.](media/aggregated-transactions-error-message-view.png)
 
-Fra siden **Aggregerte transaksjoner** kan du laste ned XML for en bestemt aggregert transaksjon ved hjelp av knappen **Eksporter XML for salgsordre**. Du kan bruke XML-filen til å feilsøke problemer som involverer oppretting av salgsordre og postering. Bare last ned XML-filen, last den opp til et testmiljø og feilsøk problemet i testmiljøet. Funksjonen for å laste ned XML for aggregerte transaksjoner er ikke tilgjengelig for utdrag som er postert.
+Hurtigfanen **Transaksjonsdetaljer** for en aggregert transaksjon viser alle transaksjoner som har blitt hentet til den aggregerte transaksjonen. De aggregerte linjene på den aggregerte transaksjonen viser alle de aggregerte postene fra transaksjoner. De aggregerte linjene viser også detaljer, for eksempel vare, variant, antall, pris, nettobeløp, enhet og lager. I utgangspunktet tilsvarer hver aggregerte linje én salgsordrelinje.
+
+![Hurtigfanen Transaksjonsdetaljer for en akkumulert transaksjon.](media/aggregated-transactions-sales-details.png)
+
+I noen situasjoner kan aggregerte transaksjoner ikke postere den konsoliderte salgsordren. I disse situasjonene vil en feilkode bli knyttet til utdragsstatusen. Hvis du bare vil vise aggregerte transaksjoner som har feil, kan du aktivere filteret **Vis bare feil** i visningen for aggregerte transaksjoner ved å merke av for boksen. Ved å aktivere dette filteret begrenser du resultatene til aggregerte transaksjoner som har feil som krever løsning. Hvis du vil ha informasjon om hvordan du løser disse feilene, kan du se [Redigere og overvåke nettordretransaksjoner og asynkrone kundeordretransaksjoner](edit-order-trans.md).
+
+![Merk av for filteret Vis bare feil i visningen for akkumulerte transaksjoner.](media/aggregated-transactions-failure-view.png)
+
+På siden **Aggregerte transaksjoner** kan du laste ned XML for en bestemt aggregert transaksjon ved å velge **Eksporter aggregerte data**. Du kan se gjennom XMLen i et hvilket som helst XML-format for å se de faktiske dataene som omfatter oppretting og postering av salgsordrer. Funksjonen for å laste ned XML for aggregerte transaksjoner er ikke tilgjengelig for utdrag som er postert.
+
+![Eksporter aggregerte data-knappen på siden Aggregerte transaksjoner.](media/aggregated-transactions-export.png)
+
+Hvis du ikke kan reparere feilen ved å rette data i salgsordren eller dataene som støtter salgsordren, er knappen **Slett kundeordre** tilgjengelig. Hvis du vil slette en ordre, velger du den oppsamlede transaksjonen som mislyktes, og deretter velger du **Slett kundeordre**. Både dem aggregerte transaksjonen og den tilsvarende salgsordren slettes. Nå kan du se gjennom transaksjonene ved hjelp av redigerings- og revisjonsfunksjonen. Et alternativ er å behandling på nytt via et nytt utdrag. Når alle feil er løst, kan du fortsette utdragsposteringen ved å kjøre funksjonen for postering av utdrag for det relevante utdraget.
+
+![Slett kundeordre-knappen i den akkumulerte transaksjonsvisningen.](media/aggregated-transactions-delete-cust-order.png)
 
 Visningen av aggregerte transaksjoner gir følgende fordeler:
 

@@ -2,7 +2,7 @@
 title: Overføring av underfinans til økonomimodul
 description: Dette emnet beskriver funksjoner som er knyttet til overføring av underfinans i økonomimodulen.
 author: rcarlson
-ms.date: 07/20/2021
+ms.date: 12/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2020-01-18
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 03c04a5eb8b544b582019ddd204382900b162d952842c901f69ed4a853bd8183
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 213bbc2541c614aa26b0c830431818fb99c7682d
+ms.sourcegitcommit: f5885999e008a49fe072d95f15e239905c24918a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716651"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "7900736"
 ---
 # <a name="subledger-transfer-to-the-general-ledger"></a>Overføring av underfinans til økonomimodul
 
@@ -39,7 +39,7 @@ I versjon 10.0.8 ble det gjort forbedringer for å forbedre ytelsen til **Asynkr
 
 Funksjonaliteten for asynkron overføring av underfinansbunker bidrar til å forbedre overføringen av data fra underregnskapet til økonomimodulen. Ved å gruppere sett med mindre transaksjoner og overføre transaksjonene i grupper, behandler funksjonaliteten transaksjoner mer effektivt. Når transaksjoner grupperes, brukes ressursene på den satsvise serveren mer effektivt.
 
-Asynkron overføring av underfinansbunker krever at den satsvise serveren er konfigurert, tilkoblet og fungerer. Hvis ikke vil ikke overføringsalternativet **Asynkron** fungere.
+Asynkron overføring av underfinansbunker krever at den satsvise serveren konfigureres, er tilkoblet og fungerer, fordi satsvise oppgaver opprettes for umiddelbar utføring på den satsvise serveren. Når funksjonen **Ytelsesoptimalisering for overføring av underfinans til økonomimodul** er aktivert, må også den satsvise systemjobben **Prosessautomasjon** med navnet **Avspørringssystem for prosessautomatisering** være aktivert. Hvis du vil ha mer informasjon, se [Prosessautomatisering](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
 
 Effektivitetsendringen på det satsvise nivået bruker en enkelt gjentakende satsvis jobb for alle juridiske enheter i systemet. Ved kjøretid opprettes det en ny satsvis jobb for å behandle de nødvendige postene som ennå ikke er overført. Du kan styre flere innstillinger fra siden **Prosessautomatisering** i systemadministrasjon. På den siden kan du endre bakgrunnsprosessen, endre frekvensen og definere en hvilemodusperiode.
 

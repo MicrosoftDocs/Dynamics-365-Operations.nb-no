@@ -2,7 +2,7 @@
 title: Laste opp bilder
 description: Dette emnet beskriver hvordan du laster opp bilder i områdebyggeren for Microsoft Dynamics 365 Commerce.
 author: psimolin
-ms.date: 08/25/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a5607fa70f5d5d28d10bcbd50da11bb96cbf75de
-ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
+ms.openlocfilehash: 3b99aeff7eafd788c19204e22dbfc61f45b25408
+ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "7423261"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7891528"
 ---
 # <a name="upload-images"></a>Laste opp bilder
 
@@ -41,7 +41,8 @@ Når du laster opp et bilde, kan følgende informasjon angis.
 - **Publiser aktiva etter opplasting**: Når det er merket av i denne avmerkingsboksen, publiseres bildet eller bildene umiddelbart etter opplastingen.
 
 > [!NOTE]
-> Bilderessurser med en kategori som er tilordnet, blir også automatisk merket med kategorien som et nøkkelord for å hjelpe å søke etter anleggsmidler for en bestemt kategori.
+> - Bilderessurser med en kategori som er tilordnet, blir også automatisk merket med kategorien som et nøkkelord for å hjelpe å søke etter anleggsmidler for en bestemt kategori.
+> - Produktdetaljsider genererer **alt-tekst** dynamisk ved hjelp av produktnavnet, slik at endring av **alt-tekst** for et produktbilde ikke har noen innvirkning på det gjengitte bildet.
 
 ### <a name="naming-conventions-for-omni-channel-images"></a>Navnekonvensjoner for omni-kanals bilder 
 

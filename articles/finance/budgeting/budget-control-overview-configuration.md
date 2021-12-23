@@ -2,7 +2,7 @@
 title: Oversikt over budsjettkontroll
 description: Dette emnet introduserer budsjettkontrollfunksjonen, og gir informasjon som hjelper deg med å konfigurere budsjettkontroll for å optimalisere administrasjon av organisasjonens finansressurser.
 author: panolte
-ms.date: 06/25/2021
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0c8e7a08796a7f1c537978e406f53531e0f0682e6b5a769ced9d771063c30d5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 21277361a3d05c57be7aeaa05348723e23873ef6
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772885"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890731"
 ---
 # <a name="budget-control-overview"></a>Oversikt over budsjettkontroll
 
@@ -78,9 +78,7 @@ I kategorien **Tillatelser for budsjettoverskridelse** kan du deretter angi bruk
 I kategorien **Tilgjengelige budsjettmidler** kan du deretter angi formelen som brukes til å beregne tilgjengelige budsjettmidler. Avhengig av hvor konservativt en organisasjon styrer de økonomiske ressursene sine eller bestemmelser eller bransjekrav, kan beregningen omfatte utkast eller dokumenter som ikke er bokførte. 
 
 > [!NOTE]
-> Hvis denne beregningen endres i løpet av en budsjettsyklus, vil ikke endringene ha innvirkning på dokumenter som allerede har bestått kontroller i budsjettkontrollen og er postert eller fullført. I 10.0.17-programversjonen ble en ny funksjon kalt **Bare spor beløp i beregning for tilgjengelige budsjettmidler** tilgjengelig for begrensede kunder. Ved hjelp av denne funksjonen kan du endre hvilke data som spores i BudgetSourceTracking-tabeller. Når denne funksjonen er aktivert, lagres beløp bare hvis de er valgt for bruk i beregningen av tilgjengelige budsjettmidler. Hvis du vil be om å aktivere funksjonen **Bare spor beløp i beregning for tilgjengelige budsjettmidler**, kan du kontakte kundestøtte. 
-
-### <a name="documents-and-journals"></a>Dokumenter og journaler
+> Hvis denne beregningen endres i løpet av en budsjettsyklus, vil ikke endringene ha innvirkning på dokumenter som allerede har bestått kontroller i budsjettkontrollen og er postert eller fullført. Ved hjelp av en funksjon med navnet **Bare spor beløp i beregning for tilgjengelige budsjettmidler** kan du endre hvilke data som spores i BudgetSourceTracking-tabellene. Når denne funksjonen er aktivert, lagres beløp bare hvis de er valgt for bruk i beregningen av tilgjengelige budsjettmidler. Hvis du vil ha mer informasjon, se [Budsjettmidler tilgjengelig](budget-funds-available.md).
 
 I kategorien **Dokumenter og kladder** kan du deretter velge hvilke kildedokumenter og kladder som skal underlegges kontroller i budsjettkontrollen og om kontrollene utføres på linjeoppføringene eller på hele dokumentet. 
 

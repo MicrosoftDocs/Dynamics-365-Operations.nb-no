@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 706331eaadf602aba46463fdcfc0d38f1fc94e08
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: 0a0322e5490474e21ad91076ecc486f38a776e32
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647269"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890783"
 ---
 # <a name="list-of-er-functions-in-the-date-and-time-category"></a>Liste over ER-funksjoner i kategorien Dato og klokkeslett
 
@@ -37,8 +37,8 @@ Dato- og klokkeslettfunksjoner for elektronisk rapportering (ER) kan brukes til 
 | [DateTimeFormat](er-functions-datetime-datetimeformat.md) | Denne funksjonen returnerer en *streng*-verdi som viser en gitt dato/klokkeslett-verdi som tekst i angitt format og i en valgfri angitt kultur. |
 | [DateTimeValue](er-functions-datetime-datetimevalue.md) | Denne funksjonen returnerer en *DateTime*-verdi som konverteres fra en gitt tekstverdi i angitt format og i en valgfri angitt kultur til en dato/klokkeslett-verdi. |
 | [DateToDateTime](er-functions-datetime-datetodatetime.md) | Denne funksjonen returnerer en *Datetime*-verdi som konverteres fra en gitt datoverdi til en dato/klokkeslett-verdi i Coordinated Universal Time (Greenwich middeltid \[GMT\]). |
-| [DateValue](er-functions-datetime-datevalue.md) | Denne funksjonen returnerer en *Date*-verdi som konverteres fra en gitt tekstverdi i angitt format og i en valgfri angitt kultur til en dato/klokkeslett-verdi. |
-| [DayOfYear](er-functions-datetime-dayofyear.md) | Denne funksjonen returnerer en *Heltall*-verdi som representerer antall dager mellom 1. januar og den angitte datoen. |
+| [DateValue](er-functions-datetime-datevalue.md) | Denne funksjonen returnerer en *[Date](er-formula-supported-data-types-primitive.md#date)*-verdi som konverteres fra en gitt tekstverdi i angitt format og i en valgfri angitt kultur til en dato/klokkeslett-verdi. |
+| [DayOfYear](er-functions-datetime-dayofyear.md) | Denne funksjonen returnerer en *[Heltall](er-formula-supported-data-types-primitive.md#integer)*-verdi som representerer antall dager mellom 1. januar og den angitte datoen. |
 | [Dager](er-functions-datetime-days.md) | Denne funksjonen returnerer en *Heltall*-verdi som representerer antall dager mellom en angitt dato og en annen angitt dato. |
 | [Now](er-functions-datetime-now.md) | Denne funksjonen returnerer en *Datetime*-verdi som representerer gjeldende dato og klokkeslett for programserveren. |
 | [NullDate](er-functions-datetime-nulldate.md) | Denne funksjonen returnerer en *dato*-verdi som representerer **null**-datoen (1. januar 1900). |
@@ -46,6 +46,7 @@ Dato- og klokkeslettfunksjoner for elektronisk rapportering (ER) kan brukes til 
 | [SessionNow](er-functions-datetime-sessionnow.md) | Denne funksjonen returnerer en *Datetime*-verdi som representerer gjeldende dato og klokkeslett for programøkt. |
 | [SessionToday](er-functions-datetime-sessiontoday.md) | Denne funksjonen returnerer en *dato*-verdi som representerer gjeldende dato for programøkt. |
 | [I dag](er-functions-datetime-today.md) | Denne funksjonen returnerer en *dato*-verdi som representerer gjeldende dato for programserveren. |
+| [WeekNum](er-functions-datetime-weeknum.md) | Denne funksjonen returnerer en *Heltall*-verdi som representerer uken i året. |
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

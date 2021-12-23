@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b31f949304dfc9cf8723c29c1354c35ff41dbe17
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ab825227e7cd8848dbad58c58f5c6d7afc338f9c
+ms.sourcegitcommit: 7cbd53617af179a0de74aae30c149edc95e86684
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566701"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "7891959"
 ---
 # <a name="routes-and-operations"></a>Ruter og operasjoner
 
@@ -223,7 +223,7 @@ Når du bruker denne fremgangsmåten, blir siden **Operasjonsrelasjoner** det pr
 Hvis du ikke angir en operasjonsressurs eller ressursgruppe som en del av ressurskravene for en operasjon, kan gjeldende ressurser operere med ulike hastigheter. Tiden som kreves for å behandle en operasjon kan derfor variere. Hvis du vil løse dette problemet, kan du bruke **Formel**-feltet på operasjonsrelasjonen for å angi hvordan behandlingstiden beregnes. Følgende alternativer er tilgjengelige:
 
 - **Standard** – (Standardalternativ) Beregningen bruker bare feltene fra operasjonsrelasjonen og multipliserer den angitte operasjonstiden med ordreantallet.
-- **Kapasitet** – Beregningen inkluderer **Kapasitet**-feltet fra operasjonsressursen. Derfor er tiden ressursavhengige. Verdien som angis for operasjonsressursen er kapasitet per time. **Prosesstid** beregnes som **Ordreantall** delt på **Kapasitet**.
+- **Kapasitet** – Beregningen inkluderer **Kapasitet**-feltet fra operasjonsressursen. Derfor er tiden ressursavhengige. Verdien som angis for operasjonsressursen er kapasitet per time. **Prosesstid** beregnes som **Ordreantall** delt på **Kapasitet**. Kapasitetsverdien er ikke spesifikk for en bestemt måleenhet, som derfor ikke konverteres basert på **Kapasitetsenhet**-feltet, som bare er et beskrivende felt som ikke brukes i beregninger.
 - **Bunke** – En partikapasitet beregnes ved hjelp av informasjon fra operasjonsrelasjonen. Antall satsvise jobber, og derfor behandlingstiden, kan deretter beregnes basert på ordreantallet.
 - **Ressursbunke** – Dette alternativet er stort sett den samme som **Bunke**-alternativet. Beregningen inkluderer imidlertid **Bunkekapasitet**-feltet fra operasjonsressursen. Derfor er tiden ressursavhengige.
 

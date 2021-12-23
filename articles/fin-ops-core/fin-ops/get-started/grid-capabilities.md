@@ -2,7 +2,7 @@
 title: Rutenettfunksjoner
 description: Dette emnet beskriver flere kraftfulle funksjoner i rutenettkontrollen. Du må aktivere den nye rutenettfunksjonen for å kunne få tilgang til disse funksjonene.
 author: jasongre
-ms.date: 10/25/2021
+ms.date: 12/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: a21a41399b5884fda9cce214f99851ffa93bbc43
-ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
+ms.openlocfilehash: ba3640cf13fecc54f4cc58cd8996e434cd16cf60
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "7700143"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890875"
 ---
 # <a name="grid-capabilities"></a>Rutenettfunksjoner
 
@@ -119,6 +119,9 @@ På samme måte som du kan merke (eller oppheve) alle radene i rutenettet ved å
 
 ### <a name="hiding-column-names"></a>Skjule kolonnenavn
 Når du grupperer data, er standard virkemåte å vise kolonnenavnet i topptekstraden for gruppe. Du kan velge å skjule kolonnenavnet i topptekstrader for gruppe ved å velge **Alternativer for rutenett** > **Skjul gruppekolonnenavn**.
+
+### <a name="grouping-on-date-and-time-columns"></a>Gruppere etter dato- og klokkeslettkolonner
+Fra og med versjon 10.0.24, er det for Dato- eller DateTime-felt lagt til et alternativet for å gruppere etter år, måned eller dag. Gruppens verdi i den tilsvarende overskriftsraden vil samsvare med formatet fra dette feltet. I tillegg vil du for DateTime- og Klokkeslett-feltene kunne gruppere etter time, minutt eller sekund.    
 
 ## <a name="freezing-columns"></a>Låse kolonner
 Noen kolonner i et rutenett kan så viktige for konteksten at du ikke vil at de kan rulle ut av visningen. Du vil i stedet kanskje at verdiene i disse kolonnene alltid vises. Med funksjonen **Lås kolonner i rutenett** får brukerne denne fleksibiliteten. 

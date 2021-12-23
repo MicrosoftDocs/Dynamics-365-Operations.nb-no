@@ -2,7 +2,7 @@
 title: Oversikt over avgiftsberegning
 description: Dette emnet forklarer det helhetlige omfanget og funksjonene i avgiftsberegning.
 author: wangchen
-ms.date: 10/15/2021
+ms.date: 11/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: caa7e458763b6ba6b2b85ab016a1aa2e53cee89a
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: 28b14eba7dd870e80a83f8d31671525b593a09c9
+ms.sourcegitcommit: e06b7d4de6d5ee7ae491d437d6c0365608a5380b
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647063"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "7892430"
 ---
 # <a name="tax-calculation-overview"></a>Oversikt over avgiftsberegning
 
@@ -64,6 +64,20 @@ Avgiftsberegning distribueres i følgende Azure-geografier. Flere Azure-geografi
 
 > [!NOTE]
 > Avgiftsberegning støtter ikke en tidligere versjon av Dynamics 365, for eksempel Dynamics AX 2012, eller lokale distribusjoner av Dynamics 365.
+
+## <a name="versions"></a>Versjoner
+Vi anbefaler at du importerer og konfigurerer avgiftsberegningskonfigurasjonen med versjonen som samsvarer med Finance- eller Supply Chain Management-versjonen.
+
+| Finance- eller Supply Chain Management-versjon | Avgiftskonfigurasjonsversjon               |
+| --------------- | --------------------------------------- |
+| 10.0.18         | Avgiftskonfigurasjon - Europa 30.12.82     |
+| 10.0.19         | Konfigurasjon 36.38.193 for avgiftsberegning |
+| 10.0.20         | Konfigurasjon 40.43.208 for avgiftsberegning |
+| 10.0.21         | Konfigurasjon 40.48.215 for avgiftsberegning |
+| 10.0.22         | Konfigurasjon 40.48.215 for avgiftsberegning |
+| 10.0.23         | Konfigurasjon 40.50.221 for avgiftsberegning |
+| 10.0.24         | Konfigurasjon 40.50.225 for avgiftsberegning |
+
 
 ## <a name="data-flow"></a>Dataflyt
 
@@ -169,6 +183,10 @@ Følgende land/områder for primæradressen til en juridisk enhet støttes i ver
 - Japan
 - Malaysia
 - Singapore
+
+Følgende land/områder for primæradressen til en juridisk enhet støttes i versjon 10.0.24:
+
+- Mexico
 
 ## <a name="related-resources"></a>Relaterte ressurser
 

@@ -2,7 +2,7 @@
 title: Hurtigtaster
 description: Dette emnet gir en oversikt over hurtigtastkombinasjonene du kan bruke når du arbeider med Finance and Operations-apper.
 author: jasongre
-ms.date: 11/12/2021
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,17 +14,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 969cd6aaf2d7c4cee7bb95029f19741372f915eb
-ms.sourcegitcommit: ab32fc90ea498ce3b629384f78cbe1aee747f157
+ms.openlocfilehash: 6e6f6faf75bb9dc2b11b3a27a886b1674cc7b339
+ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "7800199"
+ms.lasthandoff: 12/11/2021
+ms.locfileid: "7913524"
 ---
 # <a name="keyboard-shortcuts"></a>Hurtigtaster
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Følgende hurtigtaster kan bidra til at du kan registrerer data raskt og effektivt i Finance and Operations-apper.
 
@@ -150,6 +149,7 @@ Fra og med plattformoppdatering 11 kan brukere finne hurtigtaster som er tilgjen
 | Utfør standardhandling i et rutenett<blockquote>[!NOTE] Denne snarveien er aktivert når fokus er på en celle som inneholder en hyperkobling, og alle celler i den kolonnen har hyperkoblinger.</blockquote> | Enter                           |
 | Bytte fokus mellom den merkede raden, og overskriftsraden                                                               | Alt+Skift+H                     |
 | Gjøre den gjeldende kolonnen større/mindre (med fokus i overskriftsraden)                                                  | Pil høyre / pil venstre        |
+| Flytt den gjeldende kolonnen til neste/forrige posisjon (med fokus i overskriftsraden)                                   | Ctrl+Skift+Pil høyre / Ctrl+Skift+Pil venstre |
 | Åpne rutenettfiltrering for den gjeldende kolonnen (med fokus i overskriftsraden)                                              | Angi                           |
 | Endre størrelsen på den gjeldende kolonnen for å få plass til innholdet (med fokus i overskriftsraden)                                           | A (eller dobbeltklikk på kolonneskaleringshåndtaket) |
 

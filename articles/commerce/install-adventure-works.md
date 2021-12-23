@@ -2,7 +2,7 @@
 title: Installere Adventure Works-temaet
 description: Dette emnet beskriver hvordan du installerer Adventure Works-temaet i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 07/21/2021
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: ad704c6c3b95abcfd52e449a0ffbb4b82b236498ae8d2775c4e65811de3ef503
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d9d0d04c1a698c765b5effcca88624e6fb99da64
+ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763842"
+ms.lasthandoff: 12/11/2021
+ms.locfileid: "7913708"
 ---
 # <a name="install-the-adventure-works-theme"></a>Installere Adventure Works-temaet
 
@@ -32,7 +32,7 @@ Dette emnet beskriver hvordan du installerer Adventure Works-temaet i Microsoft 
 
 ## <a name="prerequisites"></a>Forutsetninger
 
-Før du installerer Adventure Works-temaet, må du ha et Dynamics 365 Commerce-miljø (Commerce versjon 10.0.20 eller senere) som inkluderer Retail Cloud Scale Unit (RCSU), Commerce Online Software Development Kit (SDK), og Commerce-modulbiblioteket. Hvis du vil ha informasjon om hvordan du installerer Commerce SDK og modulbiblioteket, kan du se [Oppdateringer for SDK og modulbibliotek](e-commerce-extensibility/sdk-updates.md). 
+Før du installerer Adventure Works-temaet, må du ha et Dynamics 365 Commerce-miljø (Commerce versjon 10.0.20 eller senere) som inkluderer Retail Cloud Scale Unit (RCSU), Commerce Online Software Development Kit (SDK), og Commerce-modulbiblioteket. Hvis du vil ha informasjon om hvordan du installerer Commerce SDK og modulbiblioteket, kan du se [Definere et utviklingsmiljø](e-commerce-extensibility/setup-dev-environment.md). 
 
 ## <a name="installation-steps"></a>Installasjonstrinn
 
@@ -48,11 +48,19 @@ Adventure Works-temapakken er tilgjengelig i **dynamics365-commerce**-feed, som 
 
     `"@msdyn365-commerce-theme:registry" "https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/npm/registry/"`  
     
-Hvis du vil installere pakken i det lokale miljøet, kjører du følgende kommando fra ledeteksten. Denne kommandoen oppdaterer automatisk filen package.json slik at den inkluderer avhengigheten.
+Hvis du vil installere pakken i ditt lokale miljø, kjører du `yarn add THEME_PACKAGE@VERSION`-kommandoen fra ledeteksten, der **THEME_PACKAGE** er temapakken (@msdyn365-commerce-theme/adventureworks-theme-kit) og **VERSJON** er versjonsnummeret til modulbiblioteket som brukes. Det er viktig at versjonene av temapakken og modulbiblioteket samsvarer. Hvis du vil finne det riktige versjonsnummeret for modulbiblioteket som skal brukes, åpner du filen package.json og finner verdien **starter-pack** under **avhengigheter**-delen. I følgende eksempel bruker filen package.json versjon 9.32 av modulbiblioteket som tilordnes til Dynamics 365 Commerce 10.0.22-versjonen.  
 
-`yarn add @msdyn365-commerce-theme/adventureworks-theme-kit`
+```json
+"dependencies": {
+    "@msdyn365-commerce-modules/starter-pack": "9.32",
+}
+```
 
-I **package.json**-filen bør du oppdatere temaversjonen til en bestemt versjon.
+Følgende eksempel viser hvordan du kjører kommandoen `yarn add` for å legge til versjon 9.32 av Adventure Works-temaet. Kommandoen oppdaterer automatisk filen package.json slik at den inkluderer avhengigheten.
+
+`yarn add @msdyn365-commerce-theme/adventureworks-theme-kit@9.32`
+
+Hvis du vil ha mer informasjon om oppdatering av modulbibliotekversjonen, se [Oppdateringer for SDK og modulbibliotek](e-commerce-extensibility/sdk-updates.md). 
 
 > [!IMPORTANT]
 > - Temaversjonen bør samsvare med modulbibliotekversjonen for å sikre at alle funksjoner fungerer som forventet. 

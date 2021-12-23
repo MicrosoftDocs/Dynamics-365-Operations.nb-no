@@ -2,7 +2,7 @@
 title: Konfigurere selvbetjening for ansatte
 description: I Microsoft Dynamics 365 Human Resources kan du konfigurere fliser for navigasjon på øverste nivå i Ansattselvbetjening.
 author: twheeloc
-ms.date: 08/24/2021
+ms.date: 12/06/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 92a788dd436f4efc16946a47731c9dbce36ab0e9
-ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
+ms.openlocfilehash: 1e0c59eb8db5a97405e87922cc65f3eb74bee48e
+ms.sourcegitcommit: b101c21f972fdad2667431f712222e040cd69d43
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "7423324"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "7898446"
 ---
 # <a name="configure-employee-self-service"></a>Konfigurere selvbetjening for ansatte
 
@@ -34,19 +34,16 @@ I Microsoft Dynamics 365 Human Resources kan du konfigurere fliser for navigasjo
 
 2. Velg kategorien **Oppsett av fordelsplanflis**, og velg deretter **Ny**.
 
-3. Angi verdier for de følgende feltene:
+3. Angi verdier for de følgende feltene.
 
    | Felt | Beskrivelse |
    | --- | --- |
+   | **Kode for plantype** | Plantypen som vises når denne flisen er valgt i **Selvbetjeningsfordeler**. |
    | **Flis-ID** | Den unike ID-en for flisen. |
-   | **Etikettekst for flis** | Teksten som vises for flisen i **Ansattselvbetjening**. |
+   | **Etikettekst for flis** | Teksten som vises for flisen i **Selvbetjeningsfordeler**. |
    | **Beskrivelse** | En beskrivelse av flisen. |
-   | **Internett-adresse** | Skriv inn URL-adressen til siden **Ansattselvbetjening**. |
-   | **Flisstørrelse** | Størrelsen på flisen: liten, middels eller stor. |
-   | **Mål** | Angir om siden skal åpnes i et nytt vindu eller det gjeldende vinduet. |
    | **Bilde for flisbakgrunn** | URL-adressen for bildet som skal brukes for flisen (valgfritt). |
-   | **Start** | Startdatoen og klokkeslettet flisen skal være tilgjengelig. |
-   | **End** | Sluttdatoen og klokkeslettet flisen skal være tilgjengelig. |
+   | **Spor åpen registrering** | Velg dette alternativet for å spore den åpne registreringsfremdriften for denne plantypen. Du kan for eksempel ha planer opprettet der **Plantype = Annet**. Disse planene kan være valgfrie planer som du ikke vil spore fremdriften for registrering for. Hvis du ikke velger denne plantypen, blir denne plantypen ignorert ved sporing av fremdrift for registrering eller fullføring av avregistrering i kategorien **Åpne registrering**. Denne innstillingen gjelder for plantypen som er valgt for alle perioder og juridiske enheter. |
 
 4. Velg **Lagre**.
 
@@ -56,19 +53,16 @@ I Microsoft Dynamics 365 Human Resources kan du konfigurere fliser for navigasjo
 
 2. Velg kategorien **Oppsett av flis for fleksibel kredittplan**, og velg deretter **Ny**.
 
-3. Angi verdier for de følgende feltene:
+3. Angi verdier for de følgende feltene.
 
    | Felt | Beskrivelse |
    | --- | --- |
+   | **ID for fordelskreditt** | Planene for fleksibelt kredittprogram vises når denne flisen er valgt i **Selvbetjeningsfordeler**. |
    | **Flis-ID** | Den unike ID-en for flisen. |
-   | **Etikettekst for flis** | Teksten som vises for flisen i **Ansattselvbetjening**. |
+   | **Etikettekst for flis** | Teksten som vises for flisen i **Selvbetjeningsfordeler**. |
    | **Beskrivelse** | En beskrivelse av flisen. |
-   | **Internett-adresse** | Skriv inn URL-adressen til siden **Ansattselvbetjening**. |
-   | **Flisstørrelse** | Størrelsen på flisen: liten, middels eller stor. |
-   | **Mål** | Angir om siden skal åpnes i et nytt vindu eller det gjeldende vinduet. |
    | **Bilde for flisbakgrunn** | URL-adressen for bildet som skal brukes for flisen (valgfritt). |
-   | **Start** | Startdatoen og klokkeslettet flisen skal være tilgjengelig. |
-   | **End** | Sluttdatoen og klokkeslettet flisen skal være tilgjengelig. |
+   | **Spor åpen registrering** | Velg dette alternativet for å spore den åpne registreringsfremdriften for denne plantypen. Du kan for eksempel ha planer opprettet der **Plantype = Annet**. Disse planene kan være valgfrie planer som du ikke vil spore fremdriften for registrering for. Hvis du ikke velger denne plantypen, blir denne plantypen ignorert ved sporing av fremdrift for registrering eller fullføring av avregistrering i kategorien **Åpne registrering**. Denne innstillingen gjelder for plantypen som er valgt for alle perioder og juridiske enheter. |
 
 4. Velg **Lagre**.
 

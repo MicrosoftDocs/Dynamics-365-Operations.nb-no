@@ -2,7 +2,7 @@
 title: Aktivere ordreoppslag for gjestebetalinger
 description: Dette emnet beskriver hvordan du aktiverer ordreoppslag for gjestebetalinger i Microsoft Dynamics 365 Commerce.
 author: stuharg
-ms.date: 09/01/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2021-08-15
 ms.dyn365.ops.version: Release 10.0.22
-ms.openlocfilehash: 639ee670b83198423425d03dad308306c9eed25c
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: a2a10b122faae354b0ea002e43a9bd60157f6216
+ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7674982"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7891506"
 ---
 # <a name="enable-order-lookup-for-guest-checkouts"></a>Aktivere ordreoppslag for gjestebetalinger
 
@@ -63,6 +63,16 @@ Når du endrer verdien til feltet **Ta med personlige data i oppslagsfeltet for 
 ## <a name="configure-the-order-lookup-module"></a>Konfigurere ordreoppslagsmodulen
 
 Ordreoppslagsmodulen i Commerce-modulbiblioteket brukes til å lage skjemaet som gjestebrukere bruker til å slå opp ordrer. Ordreoppslagsmodulen kan inkluderes i hovedsporet til en hvilken som helst side som ikke krever kundepålogging. Hvis du vil ha mer informasjon om hvordan du konfigurerer modulen, kan du se [Ordreoppslagsmodul](order-lookup-module.md).
+
+## <a name="configure-the-order-details-page"></a>Konfigurere siden med ordredetaljer
+
+Før gjestebrukere kan vise ordredetaljene, må ordredetaljersiden på e-handelsområdet konfigureres slik at den ikke krever pålogging. Hvis du vil slå av påloggingskravet for ordredetaljersiden, kan du åpne siden i Commerce-områdebygger, velge **Standardside (påkrevd)** i trevisningen og fjerne merket for **Krever pålogging?** nederst i egenskapsruten til høyre.
+
+## <a name="add-a-link-to-order-details-in-transactional-emails"></a>Legge til en kobling til ordredetaljer i transaksjons-e-postmeldinger
+
+I ordrerelaterte e-poster kan du oppgi en kobling eller knapp som tar kundene til ordredetaljersiden for ordren. Hvis du vil legge til denne koblingen eller knappen, oppretter du en HTML-hyperkobling som peker til ordredetaljersiden på e-handelsområdet, og sender ordrebekreftelses-IDen og kundens e-postadresse som URL-parametere, som vist i følgende eksempel.
+
+`<a href="https://[domain]/[orderdetailspage]?confirmationId=%orderconfirmationid%&propertyName=email&propertyValue=%customeremailaddress%" target="_blank">View my order status</a>`
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

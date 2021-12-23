@@ -2,7 +2,7 @@
 title: Avskrivning av anleggsmidler
 description: Dette emnet gir en oversikt over avskrivning for Anleggsmidler.
 author: moaamer
-ms.date: 10/30/2017
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,20 +15,23 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 54da35a39791a9e528896f3decd10476ad5af2d9
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: 2442830766ef1dccc109db5569bfbbbc8182f027
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675006"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890986"
 ---
 # <a name="fixed-asset-depreciation"></a>Avskrivning av anleggsmidler
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Dette emnet gir en oversikt over avskrivning for Anleggsmidler.
 
 Avskrivning er en periodisk transaksjon som vanligvis reduserer verdien til anleggsmidlene i balansen, og kostnadsføres som en utgift i en resultatkonto. Derfor brukes vanligvis en hovedkonto til å kreditere den periodiske avskrivningen i balansen. En motkonto er en konto i resultatdelen av kontoplanen.
+
+Per versjon 10.0.24 muliggjør konfigurasjonsalternativet **Beregn positiv avskrivning**-tablået på siden **Tablåer** at avskrivning kan debitere et anleggsmiddel som anskaffes med negativ bokført verdi (kredit).
 
 ## <a name="depreciation-adjustment"></a>Avskrivningsjustering
 Vanligvis posteres kun en korrigering til en postert avskrivningstransaksjon som en avskrivningsjustering. Derfor konfigureres både hovedkontoen og motkontoen på samme måte som avskrivningskontoen. En avskrivningsjustering kan være et positivt eller negativt beløp, men funksjonaliteten for hovedkontoen (som en balansekonto) og motkontoen (vanligvis som en resultatkonto) er den samme.

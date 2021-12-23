@@ -2,7 +2,7 @@
 title: Definere et B2B-e-handelsområde
 description: Dette emnet beskriver hvordan du konfigurerer et bedrift-til-bedrift-e-handelsområde (B2B) i Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 04/23/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: c630580dd75a86085746b36726e9ee55a9db2af5
-ms.sourcegitcommit: 6bf9e18989e6d77497a9dda1c362f324b3c2fbf2
+ms.openlocfilehash: 171e518258e9600bd7526cf52e3e456d272e6bce
+ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/27/2021
-ms.locfileid: "7713754"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7891391"
 ---
 # <a name="set-up-a-b2b-e-commerce-site"></a>Definere et e-handelsområde for B2B
 
 [!include [banner](../../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 E-handelsområder for bedrift-til-bedrift (B2B) har noen nøkkelfunksjoner som optimaliserer arbeidsflyten for en B2B-bruker. Dette emnet beskriver hvordan du konfigurerer et B2B-e-handelsområde i Microsoft Dynamics 365 Commerce. Det går gjennom modulene og områdeinnstillingene som må konfigureres for å aktivere B2B-spesifikke scenarier.
 
@@ -306,6 +307,30 @@ Følg denne fremgangsmåten for å legge til en Hurtigtillegg-modul på handleku
 
 > [!NOTE] 
 > Hurtigtillegg-modulen er tilgjengelig fra Commerce versjon 10.0.17-versjonen. Hvis du oppdaterer fra en eldre versjon av Commerce, må du manuelt oppdatere appsettings.json-filen. Hvis du vil ha instruksjoner, kan du se [Oppdateringer for SDK og modulbibliotek](../e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
+
+## <a name="add-a-bulk-purchase-module-to-a-product-details-page"></a>Legge til en massekjøpsmodul på en produktdetaljside
+
+Massekjøpsmodulen på en produktdetaljside (PDP) gir en matrisebasert erfaring som gjør at en kjøper raskt kan legge til flere varianter av et produkt i handlekurven. Når en områdebruker må bestille flere varianter av det samme produktet, eliminerer denne erfaringen behovet for å velge kombinasjonen av produktdimensjoner, definere antallet, legge til varianten i handlekurven og deretter gjenta prosessen for andre kombinasjoner av produktdimensjoner.
+
+Følg disse trinnene for å legge til en massekjøpsmodul i en PDP i Commerce-områdebygger.
+
+1. Gå til **Maler**, og velg områdets PDP-mal.
+1. Velg **Rediger**.
+1. På **Hoved**-sporet på **Standardside**-modulen velger du ellipseknappen (**...**), og deretter velger du **Legg til modul**.
+1. I dialogboksen **Legg til modul** velger du **Beholder**-modulen, og deretter velger du **OK**.
+1. I **Beholder**-sporet velger du ellipsen (**…**), og deretter velger du **Legg til modul**.
+1. I dialogboksen **Legg til modul** velger du **massekjøp**-modulen, og deretter velger du **OK**.
+1. Velg **Lagre**, velg **Fullfør redigering** for å sjekke inn malen, og velg deretter **Publiser** for å publisere den.
+1. Gå til **Sider**, og velg områdets PDP.
+1. På **Hoved**-sporet på **Standardside**-modulen velger du ellipseknappen (**...**), og deretter velger du **Legg til modul**.
+1. I dialogboksen **Legg til modul** velger du **Beholder**-modulen, og deretter velger du **OK**.
+1. I egenskapsruten for **Container**-modulen under **Bredde** velger du **Fyll container**.
+1. I **Beholder**-sporet velger du ellipsen (**…**), og deretter velger du **Legg til modul**.
+1. I dialogboksen **Legg til modul** velger du **massekjøp**-modulen, og deretter velger du **OK**.
+1. Velg **Lagre**, velg **Fullfør redigering** for å sjekke inn siden, og velg deretter **Publiser** for å publisere den.
+
+> [!NOTE] 
+> Massekjøpsmodulen er tilgjengelig fra Commerce versjon 10.0.24-versjonen. Hvis du oppdaterer fra en eldre versjon av Commerce, må du manuelt oppdatere appsettings.json-filen. Hvis du vil ha instruksjoner, kan du se [Oppdateringer for SDK og modulbibliotek](../e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

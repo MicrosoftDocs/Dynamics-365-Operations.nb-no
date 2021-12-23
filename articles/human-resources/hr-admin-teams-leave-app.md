@@ -2,7 +2,7 @@
 title: Human Resources-app i Teams
 description: Dette emnet gir en innføring i Microsoft Dynamics 365 Human Resources-appen i Microsoft Teams.
 author: twheeloc
-ms.date: 11/03/2021
+ms.date: 12/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5e44b9fa40971710d8316c055c4d2ac51f9ab266
-ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
+ms.openlocfilehash: 8eebe154a19dd8476f6e9d75ebfd69fdc5b9e2b7
+ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7771513"
+ms.lasthandoff: 12/11/2021
+ms.locfileid: "7913495"
 ---
 # <a name="human-resources-app-in-teams"></a>Human Resources-app i Teams
 
@@ -111,6 +111,9 @@ Følgende arbeidselementer er planlagt for fremtidige versjoner:
 ## <a name="troubleshooting"></a>Feilsøking
 
 Hvis en bruker har problemer med å logge på eller bruke Human Resources Teams-appen, kan du prøve å følge disse instruksjonene for feilsøking. Hvis du fortsatt har problemer etter feilsøking, kontakter du kundestøtte. For mer informasjon, se [Få kundestøtte](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md).
+
+### <a name="ensure-the-teams-human-resources-application-is-up-to-date"></a>Sikre at Teams Personale-app er oppdatert
+Hvis du oppdager problemer med Teams Personale-app, må du bekrefte at du kjører den siste versjonen. Minimumsversjonen som støttes, er 1.1.5. Hvis du vil ha instruksjoner om hvordan du oppdaterer en Teams-app, kan du se [Teams-dokumentasjon](/MicrosoftTeams/apps-update-experience).
 
 ### <a name="cant-sign-into-the-human-resources-app-in-teams"></a>Kan ikke logge på Human Resources-appen i Teams
 

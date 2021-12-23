@@ -2,7 +2,7 @@
 title: Aktivere innsjekkingsmeldinger for kunde på salgsstedet
 description: Dette emnet beskriver hvordan du aktiverer innsjekkingsmeldinger for kunde på Microsoft Dynamics 365 Commerce-salgsstedet.
 author: bicyclingfool
-ms.date: 04/23/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +15,17 @@ ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: cf9331e1da54520787686a3f190e2ef6d150c0c10bd521919407f5e6c74551d1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 320e9d73ca98bf4ed22ac9bdff2fc34ae83223ec
+ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774589"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7891418"
 ---
 # <a name="enable-customer-check-in-notifications-in-point-of-sale-pos"></a>Aktivere innsjekkingsmeldinger for kunde på salgsstedet
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Dette emnet beskriver hvordan du aktiverer innsjekkingsmeldinger for kunde på Microsoft Dynamics 365 Commerce-salgsstedet.
 
@@ -50,17 +51,48 @@ På e-handelområdet må du opprette en ny side som skal fungere som opplevelse 
 
 Du må legge til en **Jeg er her**-kobling eller -knapp i malen for den transaksjonsbaserte e-posten som kunder mottar når ordren er klar til plukking. Kunder vil bruke denne koblingen eller knappen til å varsle butikken om at de er ankommet for å hente ordren. 
 
-Legg til koblingen eller knappen i malen som er tilordnet varslingstypen **Pakking fullført** og leveringsmåten du bruker til innfrielse av bestillinger utenfor butikk. I malen oppretter du en HTML-kobling eller -knapp som peker til URL-adressen til innsjekkingsbekreftelsessiden du opprettet. Her er et eksempel:
+Legg til koblingen eller knappen i malen som er tilordnet varslingstypen **Pakking fullført** og leveringsmåten du bruker til innfrielse av bestillinger utenfor butikk. I malen oppretter du en HTML-kobling eller -knapp som peker til URLen for innsjekkingsbekreftelsessiden du har opprettet, og som inkluderer parameternavnene og -verdiene, som vist i følgende eksempel.
 
-```
-<a href="https://[YOUR_SITE_DOMAIN]/[CHECK-IN_CONFIRMATION_PAGE]?channelReferenceId=%channelreferenceid%&channelId=%channelid%&packingSlipId=%packingslipid%" target="_blank">I am here!</a>
-```
+`<a href="https://[YOUR_SITE_DOMAIN]/[CHECK-IN_CONFIRMATION_PAGE]?channelReferenceId=%confirmationid%&channelId=%channelid%&packingSlipId=%packingslipid%" target="_blank">I am here!</a>`
+
 Hvis du vil ha mer informasjon om hvordan du konfigurerer e-postmaler, kan du se [Tilpasse transaksjons-e-postmeldinger etter leveringsmåte](customize-email-delivery-mode.md). 
 
 ## <a name="a-check-in-confirmation-task-is-created-in-pos"></a>En innsjekkingsbekreftelsesoppgave opprettes på salgsstedet
 
-Når en kunde har varslet butikken om at de er til stede for plukking, mottar de et varsel om innsjekkingsbekreftelse, og det opprettes en oppgave i oppgavelisten på salgsstedet for butikken der kunden plukker opp ordren. Oppgaven inneholder all kunde- og ordreinformasjon som kreves for å oppfylle ordren. I oppgaven viser instruksjonersfeltet all informasjon som ble samlet inn fra kunden via tilleggsinformasjonsskjemaet. 
+Når en kunde har varslet butikken om at de er til stede for plukking, viser innsjekkingssiden en bekreftelsesmelding og en valgfri QR-kode som inneholder kundens bestillingsbekreftelses-ID. Samtidig opprettes det en oppgave i oppgavelisten på salgsstedet for butikken der kunden plukker opp ordren. Oppgaven inneholder all kunde- og ordreinformasjon som kreves for å oppfylle ordren. Instruksjonsfeltet for oppgaven viser all informasjon som ble samlet inn fra kunden via tilleggsinformasjonsskjemaet.
+
+## <a name="end-to-end-testing"></a>Ende-til-ende-testing
+
+Kundens innsjekking krever at bestemte parametere og verdier sendes til innsjekkingssiden og deretter til kundens innsjekkings-API. Derfor er den enkleste tilnærmingen å teste funksjonen i et miljø der en testordre kan opprettes og pakkes. På den måten kan det genereres en Ordre klar for plukking-e-post, som har en URL-adresse som inneholder de nødvendige parameternavnene og -verdiene.
+
+Følg denne fremgangsmåten for å teste kundens innsjekkingsfunksjon.
+
+1. Opprett kundens innsjekkingsside, og legg deretter til og konfigurer kundens innsjekkingsmodul. Hvis du vil ha mer informasjon, kan du se [Innsjekking for plukkmodul](check-in-pickup-module.md). 
+1. Sjekk inn siden, men ikke publiser den.
+1. Legg til koblingen nedenfor i en e-postmal som startes med pakking fullført-varslingstypen for leveringsmåten henting. Hvis du vil ha mer informasjon, kan du se [Opprette e-postmaler for transaksjonshendelser](email-templates-transactions.md).
+
+    - **For UAT-miljøer (før produksjon):** Legg til kodesnutten fra delen [Konfigurere den transaksjonsbaserte e-postmalen](#configure-the-transactional-email-template) tidligere i dette emnet.
+    - **For produksjonsmiljøer:** Legg til følgende kommenterte kode, slik at eksisterende kunder ikke berøres.
+
+        `<!-- https://[DOMAIN]/[CHECK_IN_PAGE]?channelReferenceId=%confirmationid%&channelId=%pickupchannelid%&packingSlipId=%packingslipid%&preview=inprogress -->`
+
+1. Opprett en ordre der hentemåten er angitt.
+1. Når du mottar e-postmeldingen som blir utløst av varslingstypen for pakking fullført, kan du teste innsjekkingsflyten ved å åpne innsjekkingssiden med URL-adressen du la til tidligere. Fordi URL-adressen inneholder flagget `&preview=inprogress`, blir du bedt om å godkjenne før du kan vise siden.
+1. Angi eventuell tilleggsinformasjon som kreves for å konfigurere modulen.
+1. Kontroller at bekreftelsesvisningen for innsjekkingen vises riktig.
+1. Åpne salgsstedsterminalen for butikken der ordren blir hentet.
+1. Velg flisen **Bestillinger som skal plukkes opp**, og kontroller at ordren vises.
+1. Kontroller at eventuell tilleggsinformasjon som ble konfigurert i innsjekkingsmodulen, vises i detaljer-ruten.
+
+Når du har kontrollert at funksjonen for innsjekk av kunde fungerer fra ende til ende, følger du denne fremgangsmåten.
+
+1. Publiser innsjekkingssiden.
+1. Hvis du tester i et produksjonsmiljø, må du fjerne kommentar for URL-adressen i e-postmalen "ordre klar til plukk", slik at **Jeg er her**-koblingen eller -knappen vises. Last deretter opp malen på nytt.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 
 [Innsjekking for plukkmodul](check-in-pickup-module.md)
+
+[Tilpasse transaksjons-e-poster etter leveringsmåte](customize-email-delivery-mode.md)
+
+[Opprette e-postmaler for transaksjonshendelser](email-templates-transactions.md)

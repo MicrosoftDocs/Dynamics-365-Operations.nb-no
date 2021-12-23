@@ -2,7 +2,7 @@
 title: Opprette e-postmaler for transaksjonshendelser
 description: Dette emnet beskriver hvordan du oppretter, laster opp og konfigurerer e-postmaler for transaksjonshendelser i Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
-ms.date: 10/26/2021
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 69ba8821cde6788d6e0accb37288f92acdfc776c
-ms.sourcegitcommit: 6bf9e18989e6d77497a9dda1c362f324b3c2fbf2
+ms.openlocfilehash: 25d7fcb803645f50ee4f5c608f5b6e789dfe3c31
+ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/27/2021
-ms.locfileid: "7713803"
+ms.lasthandoff: 12/11/2021
+ms.locfileid: "7913758"
 ---
 # <a name="create-email-templates-for-transactional-events"></a>Opprette e-postmaler for transaksjonshendelser
 
@@ -136,7 +136,7 @@ Varslingstypen B2B-kundeemne godkjent støtter følgende ekstra plassholdere.
 | `storename`        | Navnet på kanalen der kundeemnet ble opprettet. |
 | `storeurl`         | Tom som standard. En egendefinert utvidelse må opprettes for å bruke denne plassholderen. |
 
-### <a name="b2b-prospect-approved"></a>B2B-kundeemne godkjent
+### <a name="b2b-prospect-rejected"></a>B2B-kundeemne avvist
 
 Varslingstypen for *B2B-kundeemne avvist* utløses når et kundeemnes pålastingsforespørsel avvises i Commerce Headquarters. Hvis du vil ha mer informasjon om hvordan du godkjenner eller avviser B2B-kundeemner, kan du se [Konfigurere administratorbrukeren for en ny forretningspartner](b2b/manage-b2b-users.md#set-up-the-administrator-user-for-a-new-business-partner). 
 

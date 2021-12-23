@@ -2,7 +2,7 @@
 title: Konfigurere et evalueringsmiljø for Dynamics 365 Commerce
 description: Dette emnet forklarer hvordan du konfigurerer et evalueringsmiljø i Microsoft Dynamics 365 Commerce etter klargjøring.
 author: psimolin
-ms.date: 08/24/2021
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2e98ea9e98380ee63f6cc1eb6dfc7b84d38c7dbb
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: 5883a6e68628d706fa19d7d23b68f17007c32890
+ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7416485"
+ms.lasthandoff: 12/11/2021
+ms.locfileid: "7913733"
 ---
 # <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a>Konfigurere et evalueringsmiljø for Dynamics 365 Commerce
 
@@ -39,6 +39,7 @@ Når evalueringsmiljøet i Commerce er klargjort ende til ende, må du fullføre
 1. Velg miljøet fra listen.
 1. Velg **Logg på miljøet** i miljøinformasjonen til høyre. Du vil bli sendt til Commerce Headquarters.
 1. Kontroller at den juridiske enheten **USRT** er valgt i øvre høyre hjørne.
+2. Gå til **Handelsparametere > Konfigurasjonsparametre**, og kontroller at det finnes en oppføring for **ProductSearch.UseAzureSearch** satt til **sann**. Hvis denne oppføringen mangler, kan du legge til denne oppføringen og kjøre **kanaldatabase > fullstendig synkronisering** for Commerce Scale Unit som er knyttet til webområdet for eCommerce.
 
 Under aktiviteter etter klargjøring i Commerce Headquarters må du kontrollere at den juridiske enheten **USRT** alltid er valgt.
 
@@ -105,6 +106,12 @@ Følg disse trinnene for å aktivere jobber i Commerce.
     1. Velg posten.
     1. Velg **Endre status** i kategorien **Satsvis jobb** i handlingsruten.
     1. Velg **Avbryt**, og velg deretter **OK**.
+
+1. Hvis statusen for jobben er **Holdt tilbake**, utfører du følgende trinn:
+
+    1. Velg posten.
+    1. Velg **Endre status** i kategorien **Satsvis jobb** i handlingsruten.
+    1. Velg **Venter**, og velg deretter **OK**.
 
 Du kan også angi et intervall for regelmessighet til ett (1) minutt for følgende jobber:
 

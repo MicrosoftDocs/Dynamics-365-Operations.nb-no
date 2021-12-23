@@ -2,7 +2,7 @@
 title: Funksjoner som er fjernet eller avskrevet i Dynamics 365 Finance
 description: Dette emnet beskriver funksjoner som er fjernet eller som er planlagt for fjerning fra Dynamics 365 Finance.
 author: roschlom
-ms.date: 04/14/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 7ce7353de5795fd82e53bb1b7919c95dae4fe0ab6b8f536361613a7bcae19101
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ad3df2ee9c10972dac8258b6ee41ae0a6eabfbea
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6781207"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890959"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Funksjoner som er fjernet eller avskrevet i Dynamics 365 Finance
 
@@ -32,6 +32,58 @@ Denne listen er ment å hjelpe deg med å vurdere disse fjerningene og avskrivni
 
 > [!NOTE]
 > Detaljert informasjon om objekter i Finance and Operations-apper finnes i [Tekniske referanserapporter](/dynamics/s-e/global/axtechrefrep_61). Du kan sammenligne de ulike versjonene av disse rapportene for å lære om objekter som er endret eller fjernet i hver versjon av Finance and Operations-apper.
+
+## <a name="features-removed-or-deprecated-in-the-finance-10024-release"></a>Fjernede eller avskrevne funksjoner i Finance 10.0.24
+
+### <a name="sales-tax-report-for-sweden-design-based-on-reporting-codes"></a>Rapport for mva-betaling for Sverige (utforming basert på rapporteringskoder)
+
+[Mva-rapport for Sverige](../localizations/emea-swe-sales-tax-payment-report-sweden.md)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Erstattet med en ny mva-deklareringsutforming, [mva-deklarering for Sverige](../localizations/emea-swe-vat-declaration-sweden.md) |
+| **Erstattet med en annen funksjon?**   | Ja |
+| **Berørte produktområder**         | Program |
+| **Distribusjonsalternativ**              | Alle |
+| **Status**                         | Avskrevet: Innen 1. desember 2022 planlegger vi å ikke lenger å støtte mva-rapporten for Sverige (svensk rapportoppsett). Nye ER-formater for **MVA-deklarering XML (SE**) og **MVA-deklarering Excel (SE)** introduseres under **Avgiftsdeklarering**-modellen. |
+
+### <a name="vat-statement-for-austria-design-based-on-reporting-codes"></a>Mva-oppgave for Østerrike (utforming basert på rapporteringskoder)
+
+[Mva-oppgavedetaljer for Østerrike](../localizations/emea-aut-vat-statement-details.md)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Erstattet med en ny mva-deklareringsutforming, [mva-deklarering for Østerrike](../localizations/emea-aut-vat-declaration-austria.md) |
+| **Erstattet med en annen funksjon?**   | Ja |
+| **Berørte produktområder**         | Program |
+| **Distribusjonsalternativ**              | Alle |
+| **Status**                         | Avskrevet: Innen 1. desember 2022 planlegger vi ikke lenger å støtte ER-formatet **Mva-deklarering (AT)** under **MVA-deklarasjonsmodell**. Nye formater for **MVA-deklarering XML (AT)** og **MVA-deklarering Excel (AT)** introduseres under **Avgiftsdeklarering**-modellen. |
+
+### <a name="elster-declaration-for-germany-design-based-on-reporting-codes"></a>ELSTER-deklarering for Tyskland (design basert på rapporteringskoder)
+
+[Mva-oppgave](../localizations/emea-de-vat-declaration.md)</br>
+[Oppsett for elektronisk avgiftsdeklarering for Tyskland](../../fin-ops-core/dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md)</br>
+[Elektronisk overføring av mva-deklarering (ELSTER)](../localizations/tasks/de-00003-electronic-transmission-elster.md)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Erstattet med en ny mva-deklareringsutforming, [mva-deklarering for Tyskland](../localizations/emea-deu-vat-declaration-germany.md) |
+| **Erstattet med en annen funksjon?**   | Ja |
+| **Berørte produktområder**         | Program |
+| **Distribusjonsalternativ**              | Alle |
+| **Status**                         | Avskrevet: Innen 1. desember 2022 planlegger vi ikke lenger å støtte ER-formatet **Elster (DE)** og **Elster-modell**. Nye formater for **MVA-deklarering XML (DE)** og **MVA-deklarering Excel (DE)** introduseres under **Avgiftsdeklarering**-modellen. |
+
+### <a name="ob-declaration-for-netherlands-design-based-on-reporting-codes"></a>OB-deklarering for Nederland (design basert på rapporteringskoder)
+
+[OB-deklarering](../localizations/emea-nl-vat-declaration.md)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Årsak til avskrivning/fjerning** | Erstattet med en ny mva-deklareringsutforming, [Mva-deklarering for Nederland](../localizations/emea-nl-vat-declaration-netherlands.md) |
+| **Erstattet med en annen funksjon?**   | Ja |
+| **Berørte produktområder**         | Program |
+| **Distribusjonsalternativ**              | Alle |
+| **Status**                         | Avskrevet: Innen 1. desember 2022 planlegger vi ikke lenger å støtte ER-formatene **OB-deklarering (NL)** og **OB-deklareringsmodell**. Nye formater for **MVA-deklarering XML (NL)** og **MVA-deklarering Excel (NL)** introduseres under **Avgiftsdeklarering**-modellen. |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10020-release"></a>Fjernede eller avskrevne funksjoner i Finance 10.0.20
 

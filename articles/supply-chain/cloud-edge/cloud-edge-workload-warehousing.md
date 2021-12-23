@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 081b6968575a8a057903d96de2833a98552ed123
-ms.sourcegitcommit: a46f0bf9f58f559bbb2fa3d713ad86875770ed59
+ms.openlocfilehash: ae8e9791b590a32581b66853f55ea11bc389bb19
+ms.sourcegitcommit: 96515ddbe2f65905140b16088ba62e9b258863fa
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "7813732"
+ms.lasthandoff: 12/04/2021
+ms.locfileid: "7891777"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Skalaenheter for sky og kant for arbeidsbelastninger for lagerstyring
 
@@ -50,6 +50,11 @@ Avhengig av forretningsprosessene kan den samme dataposten endre eierskap mellom
 > Det kan opprettes data både på senteret og skalaenheten. Eksempler inkluderer **Nummerskilt** og **Partinumre**. Dedikert konflikthåndtering angis i tilfelle et scenario der den samme unike posten blir opprettet for både senteret og skaleringsenheten under samme synkroniseringssyklus. Når dette skjer, vil neste synkronisering mislykkes, og du må gå til **Systemadministrasjon > Forespørsler > Arbeidsmengdeforespørsler > Dupliserte poster**, der du kan vise og flette dataene.
 
 ## <a name="outbound-process-flow"></a>Utgående prosessflyt
+
+Før du distribuerer en lagerstyringsarbeidsmengde i en sky- eller kantskalaenhet, må du sørge for at funksjonen *Skaler enhetsstøtte for frigivelse til lager av utgående ordrer* aktivert i bedriftshuben. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den hvis den kreves. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
+
+- **Modul:** *Lagerstyring*
+- **Funksjonsnavn:** *Skaler enhetsstøtte for frigivelse til lager av utgående ordrer*
 
 Prosessen for utgående dataeierskap avhenger av om du bruker prosessen for lastplanlegging. I alle tilfeller eier senteret *kildedokumentene*, for eksempel salgsordrer og overføringsordrer, i tillegg til ordrefordelingsprosessen og de tilknyttede ordretransaksjonsdataene. Men når du bruker prosessen for lastplanlegging, vil belastningen bli opprettet på senteret og eies derfor i utgangspunktet av senteret. Som en del av *Frigi til lager*-prosessen blir eierskap av belastningsdataene overført til den dedikerte skalaenhetsdistribusjonen, som blir eier av den etterfølgende *forsendelsesbølgebehandlingen* (som arbeidstildeling, etterfyllingsarbeid og opprettelse av etterspørsel). Lagerarbeidere kan derfor bare behandle utgående salgs- og overføringsordrearbeid ved hjelp av en Warehouse Management-mobilapp som er koblet til distribusjonen som kjører den bestemte skalaenhetsarbeidsmengde.
 
@@ -202,7 +207,7 @@ Følgende tabell viser hvilke utgående funksjoner som støttes, og hvor de stø
 | Utskrift av belastningsrelaterte dokumenter                           | Ja | Ja|
 | Fraktbrev og ved generering av forhåndsvarsel for forsendelse                            | Nei  | Ja|
 | Forsendelsesbekreftelse                                             | Nei  | Ja|
-| Forsendelsesbekreftelse med Bekreft og overfør            | Nei  | Nei |
+| Forsendelsesbekreftelse med Bekreft og overfør            | Nei  | Ja|
 | Behandling av følgeseddel og fakturering                        | Ja | Nei |
 | Plukking med mangler (salgs- og overføringsordrer)                    | Nei  | Ja, uten å fjerne reserveringer for kildedokumenter|
 | Overplukking (salgs- og overføringsordrer)                     | Nei  | Ja|
@@ -212,8 +217,8 @@ Følgende tabell viser hvilke utgående funksjoner som støttes, og hvor de stø
 | Bølgeetikett                                                   | Nei  | Ja|
 | Oppdelt arbeid                                                   | Nei  | Ja|
 | Arbeidsbehandling – styrt av Transportlasting            | Nei  | Nei |
-| Reduser plukket antall                                       | Nei  | Nei |
-| Tilbakefør arbeid                                                 | Nei  | Nei |
+| Reduser plukket antall                                       | Nei  | Ja|
+| Tilbakefør arbeid                                                 | Nei  | Ja|
 | Reverser forsendelsesbekreftelse                                | Nei  | Ja|
 
 ### <a name="inbound"></a>Innlevering
@@ -227,7 +232,7 @@ Følgende tabell viser hvilke inngående funksjoner som støttes, og hvor de st�
 | Mottak av varer i transitt og landingskostnad                       | Ja | Nei |
 | Bekreftelse av inngående forsendelse                                    | Ja | Nei |
 | Bestillingsfrigivelse til lager (lagerordrebehandling) | Ja | Nei |
-| Annullering av lagerordrelinjer<p>Merk at dette bare støttes når det ikke er foretatt noen registrering mot linjen</p> | Ja | Nei |
+| Annullering av lagerordrelinjer<p>Merk at dette bare støttes når det ikke er foretatt noen registrering mot linjen under behandling av *forespørsel om å avbryte*-operasjonen</p> | Ja | Nei |
 | Motta og plassere bestillingsvarer                       | <p>Ja,&nbsp;når&nbsp;det&nbsp;ikke er en lagerordre</p><p>Nei, når det er en lagerordre</p> | <p>Ja, når en bestilling ikke er en del av en <i>last</i></p> |
 | Bestillingslinjen er mottatt og plassert                       | <p>Ja, når det ikke er en lagerordre</p><p>Nei, når det er en lagerordre</p> | <p>Ja, når en bestilling ikke er en del av en <i>last</i></p></p> |
 | Mottak og plassering av returordre                              | Ja | Nei |
@@ -246,7 +251,7 @@ Følgende tabell viser hvilke inngående funksjoner som støttes, og hvor de st�
 | Mottak med oppretting av arbeidstypen *Kvalitet i kvalitetskontroll*       | <p>Ja, når det ikke er en lagerordre</p><p>Nei, når det er en lagerordre</p> | Nei |
 | Mottak med oppretting av kvalitetsordre                            | <p>Ja, når det ikke er en lagerordre</p><p>Nei, når det er en lagerordre</p> | Nei |
 | Arbeidsbehandling – styrt av *Gruppeplassering*                 | Ja | Nei |
-| Arbeidsbehandling med *Plukk med mangler*                               | Ja | Nei |
+| Arbeidsbehandling med *Plukk med mangler*                               | Ja | Ja |
 | Nummerskiltlasting                                           | Ja | Ja |
 
 ### <a name="warehouse-operations-and-exception-handing"></a>Lageroperasjoner og unntaksbehandling

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 013a5b1ac5b99c6a8ac75885e6d65067d5ed4c2ffd5cc5f625a73963666c0a81
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e1ade9af06848b125fb6253ea1182f6098588150
+ms.sourcegitcommit: 88f8a0369ce66b82314db9639491b695e18a7e5c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779513"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "7902513"
 ---
 # <a name="close-the-fiscal-year"></a>Lukke regnskapsåret
 
@@ -36,7 +36,7 @@ Denne prosedyren går gjennom årsavslutningsprosessen som overfører saldoer ti
 
 4. Velg Ja eller Nei for **Opprett avslutningstransaksjoner under overføring**.
 
-    Hvis satt til Ja, opprettes to transaksjoner. Ett bilag opprettes i regnskapsåret som lukkes, slik at saldoene for resultatfinanskontoene blir null og et ekstra bilag opprettes i det neste regnskapsåret for startsaldoene. Hvis satt til Nei, opprettet et enkelt bilag i det neste regnskapsåret for startsaldoene.  
+    Hvis satt til Ja, opprettes to transaksjoner. Ett bilag opprettes i regnskapsåret som lukkes, slik at saldoene for alle finanskontoene blir null og et ekstra bilag opprettes i det neste regnskapsåret for startsaldoene. Hvis satt til Nei, opprettet et enkelt bilag i det neste regnskapsåret for startsaldoene.  
 
 5. Velg Ja eller Nei for **Sett regnskapsårsstatusen til permanent lukket**.
 
