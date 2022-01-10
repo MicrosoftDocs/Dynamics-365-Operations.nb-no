@@ -2,7 +2,7 @@
 title: Oppsett av parametere for kredittbehandling
 description: Dette emnet beskriver alternativene du kan bruke til å konfigurere kredittbehandling for å dekke bedriftens behov.
 author: JodiChristiansen
-ms.date: 08/03/2020
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 768fb5121ae6be513c4a533a20027cf784640b2a
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: 745a51617f8c87c0f757aee0304ec3efb55d0f98
+ms.sourcegitcommit: f82372b1e9bf67d055fd265b68ee6d0d2f10d533
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753471"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7921221"
 ---
 # <a name="credit-management-parameters-setup"></a>Oppsett av parametere for kredittbehandling
 
@@ -31,7 +31,7 @@ Det finnes fire hurtigfaner i **Kreditt**-delen der du kan endre parameterne som
 
 ### <a name="credit-holds"></a>Kredittsperrer
 
-- Sett alternativet **Tillat redigering av salgsordreverdi etter at ordresperre er frigitt** til **Nei** for å kreve at posteringsreglene sjekkes på nytt hvis salgsordreverdien (utvidet pris) er økt etter at salgsordren ble frigitt fra på vent-listen. .
+- Sett alternativet **Tillat redigering av salgsordreverdi etter at ordresperre er frigitt** til **Nei** for å kreve at posteringsreglene sjekkes på nytt hvis salgsordreverdien (utvidet pris) er økt etter at salgsordren ble frigitt fra på vent-listen.
 - I feltet **Årsaker til kansellerte ordrer** velger du frigivelsesårsaken som skal brukes som standard når en salgsordre som var på vent i kredittbehandling, avbrytes.
 - Sett alternativet **Kontroller kredittgrense for kundekredittgrupper** til **Ja** for å kontrollere kredittgrensen til en kundekredittgruppe når kunden på en salgsordre tilhører en kundekredittgruppe. Kredittgrensen for gruppen vil bli kontrollert, og deretter, hvis den er tilstrekkelig, blir kredittgrensen for kunden kontrollert.
 - Sett alternativet **Kontroller kredittgrense når betalingsbetingelser økes** til **Ja** for å kontrollere rangeringene for betalingsbetingelser for å avgjøre om betalingsbetingelsene i salgsordren er forskjellige fra standard betalingsbetingelser for kunden. Hvis de nye betalingsbetingelsene har en høyere rangering enn de opprinnelige betalingsbetingelsene, settes ordren på vent for kredittbehandling.
@@ -72,6 +72,10 @@ Flere kredittbehandlingsstatistikker er inkludert i faktaboksen **Statistikk for
 
 - I kredittbehandling vises kundekredittgrensen i kundens valuta. Du må definere valutakurstypen for kredittgrensen i kundens valuta. I feltet **Valutakurstype for kredittgrense** velger du valutakurstypen som skal brukes til å konvertere den primære kredittgrensen til kundens kredittgrense.
 - Sett alternativet **Tillat manuell redigering av kredittgrenser** til **Nei** for å hindre brukere i å redigere kredittgrenser på **Kunde**-siden. Hvis dette alternativet settes til **Nei**, kan endringer i kundens kredittgrense bare gjøres ved å postere justeringstransaksjoner for kredittgrense.
+- Sett alternativet **Omgå lagerreserveringer** til **Ja** for å ignorere lagerreserveringer når blokkeringsregler for kredittstyring er kontrollert. I dette tilfellet kontrollerer systemet fullstendig linjeantall og aktiverer respittperioder for sjekkpunkt, uansett lagerreserveringsantall.
+- Når Kredittstyring er aktivert, brukes innstillingen for **Meldingen ved kredittgrenseoverskridelse** bare til behandling av fritekstfakturaer. Selv om meldinger fremdeles legges til i salgsordrer når kunder har overskredet kredittgrensen, vil ikke tilstedeværelsen av disse meldingene blokkere bekreftelse, utskrift av plukklister og følgesedler eller postering av fakturaer.
+
+    Kredittstyring er aktivert som standard, men du kan deaktivere den. Hvis den er aktivert, bruker du blokkeringsregler og kontrollpunkt for kredittstyring til å identifisere når kunder har overskredet kredittgrensen. Hvis den er deaktivert, kan meldingene som legges til i salgsordrer basert på innstillingen for feltet **Meldingen ved kredittgrenseoverskridelse**, hjelpe deg med å identifisere når kunder har overskredet kredittgrensen.
 
 ### <a name="number-sequences-and-shared-number-sequence-parameters"></a>Nummerserier og parametere for delt nummerserie
 

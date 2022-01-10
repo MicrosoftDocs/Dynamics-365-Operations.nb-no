@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 5e9dc9b7cf33f9393f408d8f8a458e9b0ea47639
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 5b1e798ac0558e7c5b0bbe4b6a732cbdcf5729a1
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778383"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920119"
 ---
 # <a name="schedule-work-creation-during-wave"></a>Planlegge arbeidsopprettelse under bølge
 
@@ -54,7 +54,7 @@ De eksisterende konfigurasjonene for oppgave- og bølgebehandling vil også bli 
 Om nødvendig kan du manuelt tilbakestille noen av eller alle innstillingene som ble gjort automatisk da du aktiverte funksjonen *Organisasjonsomfattende "Planlegg arbeidsopprettelse"-bølgemetode* ved å gjøre følgende:
 
 - For bølgemaler går du til **Lagerstyring \> Oppsett \> Bølger \> Bølgemaler**. Erstatt metoden *Planlegg arbeidsopprettelse* med *Opprett arbeid*.
-- For lagerparametere går du til **Lagerstyring \> Oppsett \> Lagerstyringsparametere**. På **Bølgebehandling**-fanen bruker du de foretrukne verdiene for **Behandle bølger satsvis** og **Vent på lås (ms)**.
+- For lagerparametere går du til **Lagerstyring \> Oppsett \> Lagerstyringsparametere**. På **Bølgebehandling**-fanen bruker du de foretrukne verdiene for **Behandle bølger satsvis** og **Vent på lås (ms)**.
 - For bølgemetodene går du til **Lagerstyring \> Oppsett \> Bølger \> Bølgebehandlingsmetoder**. Velg `WHSScheduleWorkCreationWaveStepMethod`, og velg **Oppgavekonfigurasjon** i handlingsruten. Endre eller slett antall satsvise oppgaver og den tilordnede bølgegruppen for hvert oppførte lager etter behov.
 
 ## <a name="manually-configure-scheduled-work-creation"></a>Konfigurer planlagt arbeidsopprettelse manuelt
@@ -65,7 +65,7 @@ Hvis du ikke aktiverte [funksjonen *Organisasjonsomfattende "Planlegg arbeidsopp
 
 For å kunne dra nytte av en parallell, asynkron metode for opprettelse av lagerarbeid må bølgeprosessen kjøre satsvis. Slik konfigurerer du dette:
 
-1. Gå til **Lagerstyring \> Oppsett \> Lagerstyringsparametere**.
+1. Gå til **Lagerstyring \> Oppsett \> Lagerstyringsparametere**.
 1. Angi *Ja* for **Behandle bølger satsvis** i **Generelt**-fanen. Du kan eventuelt også velge en dedikert **Satsvis gruppe for bølgebehandling** for å unngå at behandlingen av den satsvise køen kjører samtidig som andre prosesser.
 1. Angi **Vent på lås (ms)**, som brukes når systemet behandler flere bølger samtidig. Det anbefales en verdi på *60000* for de fleste større bølgeprosessene.
 
@@ -73,8 +73,8 @@ For å kunne dra nytte av en parallell, asynkron metode for opprettelse av lager
 
 Begynn med å opprette den nye bølgetrinnmetoden og aktivere den for parallell, asynkron oppgavebehandling.
 
-1. Gå til **Lagerstyring \> Oppsett \> Bølger \> Bølgebehandlingsmetoder**.
-1. Velg  **Generer metoder på nytt** og legg merke til at metoden *WHSScheduleWorkCreaveStepMethod* er lagt til i listen over bølgeprosessmetoder du kan bruke i forsendelsesbølgemalene.
+1. Gå til **Lagerstyring \> Oppsett \> Bølger \> Bølgebehandlingsmetoder**.
+1. Velg **Generer metoder på nytt** og legg merke til at metoden *WHSScheduleWorkCreationWaveStepMethod* er lagt til i listen over bølgeprosessmetoder du kan bruke i forsendelsesbølgemalene.
 1. Velg posten med **Metodenavn** *WHSScheduleWorkCreationWaveStepMethod*, og velg **Oppgavekonfigurasjon**.
 1. Du kan legge til en ny rad i rutenettet ved å velg **Ny** i handlingsruten og bruke følgende innstillinger:
 
@@ -84,7 +84,7 @@ Begynn med å opprette den nye bølgetrinnmetoden og aktivere den for parallell,
 
 Du er nå klar til å oppdatere en eksisterende bølgemal (eller opprette en ny) for å bruke bølgebehandlingsmetoden *Planlegg arbeidsopprettelse*.
 
-1. Gå til **Lagerstyring \> Oppsett \> Bølger \> Bølgemaler**.
+1. Gå til **Lagerstyring \> Oppsett \> Bølger \> Bølgemaler**.
 1. Velg **Rediger** i handlingsruten.
 1. I listeruten velger du bølgemalen du vil oppdatere (hvis du tester ved hjelp av demonstrasjonsdata, kan du bruke *24 Standardforsendelse*).
 1. Utvid hurtigfanen **Metoder**, og velg raden der **Navn** er *Planlegg arbeidsopprettelse* i rutenettet **Gjenstående metoder**.

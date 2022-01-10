@@ -2,7 +2,7 @@
 title: Konfigurer lagersynlighet
 description: Dette emnet beskriver hvordan du konfigurerer Lagersynlighet.
 author: yufeihuang
-ms.date: 08/02/2021
+ms.date: 12/09/2021
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 53cc457c788d24adfe3c523719ccffc6d445fb61
-ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
+ms.openlocfilehash: fcbace2bd28a843fca8aa2f4f998c08f238c29d6
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/25/2021
-ms.locfileid: "7678477"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920304"
 ---
 # <a name="configure-inventory-visibility"></a>Konfigurer lagersynlighet
 
@@ -61,7 +61,7 @@ Når konfigurasjonen er fullført, velger du **Oppdater konfigurasjon** i appen.
 Hver datakilde representerer et system som dataene kommer fra. Eksempler på datakildenavn inkluderer `fno` (som betyr "Dynamics 365 Finance and Operations-apper") og `pos` (som betyr "salgssted"). Som standard er Supply Chain Management definert som en standard datakilde (`fno`) i Lagersynlighet.
 
 > [!NOTE]
-> Datakilden `fno` er reservert for Dynamics 365 Supply Chain Management.
+> Datakilden `fno` er reservert for Supply Chain Management. Hvis tillegget for lagersynlighet er integrert med et Supply Chain Management-miljø, anbefaler vi at du ikke sletter konfigurasjoner som er relatert til `fno` i datakilden.
 
 Følg fremgangsmåten nedenfor for å legge til en datakilde.
 
@@ -273,17 +273,17 @@ Når denne beregningsformelen brukes, vil det nye resultatet av spørringen inne
 
 ## <a name="partition-configuration"></a><a name="partition-configuration"></a>Partisjonskonfigurasjon
 
-Partisjonskonfigurasjonen består av en kombinasjon av basisdimensjoner. Den definerer datadistribusjonsmønsteret. Dataoperasjoner i samme partisjon støtter høy ytelse og koster ikke for mye. Derfor kan gode partisjonsmønstre gi store fordeler.
-
-Lagersynlighet har følgende standard partisjonskonfigurasjon.
+Partisjonskonfigurasjonen består for øyeblikket av to basisdimensjoner (`SiteId` og `LocationId`) som angir hvordan dataene skal distribueres. Operasjoner under samme partisjon kan levere høyere ytelse til lavere kostnad. Følgende tabell viser standard partisjonskonfigurasjon som tillegget for lagersynlighet gir.
 
 | Basisdimensjon | Hierarki |
 |---|---|
 | `SiteId` | 1 |
 | `LocationId` | 2 |
 
-> [!NOTE]
-> Standard partisjonskonfigurasjon er bare til referanse. Du trenger ikke definere den i Lagersynlighet. For øyeblikket støttes ikke oppgraderingen av partisjonskonfigurasjon.
+Løsningen inkluderer denne partisjonskonfigurasjonen som standard. Derfor *trenger du ikke å omberegne manuelt*.
+
+> [!IMPORTANT]
+> Ikke tilpass standard partisjonskonfigurasjon. Hvis du sletter eller endrer den, vil du sannsynligvis forårsake en uventet feil.
 
 ## <a name="product-index-hierarchy-configuration"></a><a name="index-configuration"></a>Konfigurasjon av produktindekshierarki
 

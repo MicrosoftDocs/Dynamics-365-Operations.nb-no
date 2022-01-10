@@ -2,7 +2,7 @@
 title: VALUEIN ER-funksjonen
 description: Dette emnet gir generell informasjon om hvordan du bruker ER-funksjonen VALUEIN.
 author: NickSelin
-ms.date: 08/18/2020
+ms.date: 12/14/2021
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f230b05cd88554d30106337ae3e3f684c958c76eaf8ad8eae0dceda53f0b6862
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: efa811df360b2ca38eb59bac849e70041405fa81
+ms.sourcegitcommit: b1c758ec4abfcf3bf9e50f18c1102d4a9c1316d0
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729077"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "7922368"
 ---
 # <a name="valuein-er-function"></a>VALUEIN ER-funksjonen
 
@@ -62,6 +62,9 @@ Generelt oversettes `VALUEIN`-funksjonen til et sett med **OR**-betingelser. Hvi
 ```
 
 I noen tilfeller kan den oversettes til en database SQL-setning ved hjelp av `EXISTS JOIN`-operatoren.
+
+> [!NOTE]
+> Verdien som `VALUEIN`-funksjonen returnerer, [brukes på ulik måte](er-functions-list-filter.md#usage-notes), avhengig av om denne funksjonen brukes til å angi utvalgskriterier for [`FILTER`](er-functions-list-filter.md)-funksjonen eller [`WHERE`](er-functions-list-where.md)-funksjonen.
 
 ## <a name="example-1"></a>Eksempel 1
 

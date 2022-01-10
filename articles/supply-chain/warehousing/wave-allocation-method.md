@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: fd874f3c6c1f4d25b3257d6465686dcb8e95b933
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 541e6c42ae1fa7d803b5becc1b52e34860777594
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576022"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920604"
 ---
 # <a name="wave-allocation"></a>Bølgetildeling
 
@@ -77,7 +77,7 @@ Parallell tildelingsbehandling krever bølgebehandling for å kjøre satsvis. De
 
 Om nødvendig kan du angre hver av innstillingene som er gjort som standard, når funksjonen *Bølgeparallellisering for Tildel bølge-metoden* er aktivert automatisk for forekomsten. Slik gjør du det:
 
-- Gå til **Lagerstyring \> Oppsett \> Lagerstyringsparametere**. På **Bølgebehandling**-fanen bruker du de foretrukne verdiene for **Behandle bølger satsvis** og **Vent på lås (ms)**.
+- Gå til **Lagerstyring \> Oppsett \> Lagerstyringsparametere**. På **Bølgebehandling**-fanen bruker du de foretrukne verdiene for **Behandle bølger satsvis** og **Vent på lås (ms)**.
 - Gå til **Lagerstyring \> Oppsett \> Bølger \> Bølgebehandlingsmetoder**. Velg `allocateWave`-metoden. I handlingsruten velger du **Oppgavekonfigurasjon** for å åpne en side som fører opp hvert lager, der metoden er angitt til å kjøre parallelt. Endre eller slett antall satsvise oppgaver og den tilordnede bølgegruppen for hvert oppførte lager etter behov.
 
 ## <a name="troubleshooting"></a>Feilsøking

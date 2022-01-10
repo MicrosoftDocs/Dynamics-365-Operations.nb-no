@@ -2,7 +2,7 @@
 title: Kontrolliste for oppsett av elektroniske meldinger for mva-returer med direkte innsending til Altinn
 description: Dette emnet inneholder en kontrolliste for oppsett av funksjonen Elektroniske meldinger for mva-returer for Norge.
 author: liza-golub
-ms.date: 11/28/2021
+ms.date: 12/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Norway
 ms.author: elgolu
 ms.search.validFrom: 2021-11-18
 ms.dyn365.ops.version: AX 10.0.22
-ms.openlocfilehash: b5373c52a8c255e1823347381b5bd3e8a755c9eb
-ms.sourcegitcommit: a11e8f4e764ff0bb210875401ae0671bc6412bde
+ms.openlocfilehash: b4ddef09e1a2a925b3d534d47a87d371bdbe2e5f
+ms.sourcegitcommit: b1c758ec4abfcf3bf9e50f18c1102d4a9c1316d0
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "7866809"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "7922380"
 ---
 # <a name="checklist-for-electronic-messages-setup-for-vat-returns-with-direct-submission-to-altinn"></a>Kontrolliste for oppsett av elektroniske meldinger for mva-returer med direkte innsending til Altinn
 
@@ -45,7 +45,7 @@ Selv om dette emnet inneholder den viktigste informasjonen om oppsettet, innhold
     | NO Altinn | Webprogram for samhandling med Altinn-APIer. |
     | NO ID-Porten | Webprogram for samarbeid med integreringspunktet som du opprettet i ID-porten. |
 
-Tabellen nedenfor viser parametrene for webprogrammene som **NO mva-retur** bruker.
+Tabellen nedenfor viser nettprogramparametere som behandlingen **NO mva-retur** bruker til å fungere sammen med *API-ene for sandkasse* som norske skattemyndighetene tilbyr.
 
 | Parameter | Verdi for NO Altinn | Verdi for NO ID-Porten |
 |---|---|---|
@@ -61,7 +61,7 @@ Tabellen nedenfor viser parametrene for webprogrammene som **NO mva-retur** bruk
 > [!IMPORTANT]
 > Hvis du vil aktivere tilgangstoken og samarbeid med ID-porten og Altinn-APIer for forretningsbrukere, må du definere sikkerhetsroller for begge webprogrammene.
 
-Internett-adresser (basis-URL) kan endres av norske skattemyndigheter. Vi anbefaler at du ser etter faktiske URL-adresser på det offisielle Altinn- og ID-porten-webområdet.
+Internett-adresser (basis-URL) kan endres av norske skattemyndigheter. Vi anbefaler at du ser etter faktiske nettadresser på det offisielle Altinn- og ID-porten-nettstedet. For faktiske nettadresser til nettprogrammet **NO ID-Porten** kan du gå til <https://docs.digdir.no/oidc_func_wellknown.html>.
 
 ## <a name="web-service-settings"></a>Innstillinger for webtjeneste
 
@@ -75,7 +75,7 @@ Internett-adresser (basis-URL) kan endres av norske skattemyndigheter. Vi anbefa
     - NO Altinn PUT XML
     - NO Valider mva-retur
 
-Tabellene nedenfor viser parametrene og parameterverdiene for webtjenestene som **NO mva-retur** bruker.
+Tabellen nedenfor viser parametere og parameterverdier for nettjenestene som behandlingen **NO mva-retur** bruker til å fungere sammen med *API-ene for sandkasse* som norske skattemyndighetene tilbyr.
 
 ### <a name="web-service-no-altinn-get-attachments"></a>Webtjeneste: NO Altinn GET-vedlegg
 
@@ -117,6 +117,8 @@ Tabellene nedenfor viser parametrene og parameterverdiene for webtjenestene som 
 | Formattilordning for forespørselshode | **Format for webforespørselshoder for Altinn mva (NO)** |
 | Kode for fullført svar | **200** |
 
+For *produksjonssamsvar* bruker du følgende nettadresse: `https://skd.apps.altinn.no/skd/mva-melding-innsending-v1/instances`.
+
 ### <a name="web-service-no-altinn-post-json"></a>Webtjeneste: NO Altinn POST JSON
 
 | Parameternavn | Parameterverdi |
@@ -136,6 +138,8 @@ Tabellene nedenfor viser parametrene og parameterverdiene for webtjenestene som 
 | Innholdstype | **program/json** |
 | Formattilordning for forespørselshode | **Format for webforespørselshoder for Altinn mva (NO)** |
 | Kode for fullført svar | **201** |
+
+For *produksjonssamsvar* bruker du følgende nettadresse: `https://skd.apps.altinn.no/skd/mva-melding-innsending-v1/instances`.
 
 ### <a name="web-service-no-altinn-post-xml"></a>Webtjeneste: NO Altinn POST XML
 
@@ -157,6 +161,8 @@ Tabellene nedenfor viser parametrene og parameterverdiene for webtjenestene som 
 | Formattilordning for forespørselshode | **Format for webforespørselshoder for Altinn mva (NO)** |
 | Kode for fullført svar | **201** |
 
+For *produksjonssamsvar* bruker du følgende nettadresse: `https://skd.apps.altinn.no/skd/mva-melding-innsending-v1/instances`.
+
 ### <a name="web-service-no-altinn-put-json"></a>Webtjeneste: NO Altinn PUT JSON
 
 | Parameternavn | Parameterverdi |
@@ -176,6 +182,8 @@ Tabellene nedenfor viser parametrene og parameterverdiene for webtjenestene som 
 | Innholdstype | **program/json** |
 | Formattilordning for forespørselshode | **Format for webforespørselshoder for Altinn mva (NO)** |
 | Kode for fullført svar | **200** |
+
+For *produksjonssamsvar* bruker du følgende nettadresse: `https://skd.apps.altinn.no/skd/mva-melding-innsending-v1/instances`.
 
 ### <a name="web-service-no-altinn-put-xml"></a>Webtjeneste: NO Altinn PUT XML
 
@@ -197,6 +205,8 @@ Tabellene nedenfor viser parametrene og parameterverdiene for webtjenestene som 
 | Formattilordning for forespørselshode | **Format for webforespørselshoder for Altinn mva (NO)** |
 | Kode for fullført svar | **201** |
 
+For *produksjonssamsvar* bruker du følgende nettadresse: `https://skd.apps.altinn.no/skd/mva-melding-innsending-v1/instances`.
+
 ### <a name="web-service-no-validate-vat-return"></a>Webtjeneste: NO Valider mva-retur
 
 | Parameternavn | Parameterverdi |
@@ -217,6 +227,8 @@ Tabellene nedenfor viser parametrene og parameterverdiene for webtjenestene som 
 | Formattilordning for forespørselshode | **Format for webforespørselshoder for Altinn mva (NO)** |
 | Kode for fullført svar | **200** |
 
+For *produksjonssamsvar* bruker du følgende nettadresse: `https://idporten.api.skatteetaten.no/api/mva/grensesnittstoette/mva-melding/valider`.
+
 ## <a name="additional-fields"></a>Tilleggsfelter
 
 - Gå til **Mva** \> **Oppsett** \> **Elektroniske meldinger** \> **Tilleggsfelt**, og se gjennom oppsettet. **NO mva-retur** bruker følgende tilleggsfelt.
@@ -231,6 +243,7 @@ Tabellene nedenfor viser parametrene og parameterverdiene for webtjenestene som 
     | NO mva Kvittering | Kvittering | Nei | Nei | Ja |
     | NO mva Valideringsresultat | Valideringsresultat | Nei | Nei | Ja |
     | Avgiftsregistreringsnummer | Skatteregistreringsnummer | Nei | Nei | Ja |
+    | NO mva-betalings-ID | KundeIdentifikasjonsnummer. Nummer som brukes ved regningsbetaling i Norge for å identifisere kunden og fakturaen, KID-nummer. | Ja | Nei | Nei |
 
     > [!NOTE]
     > Brukeren kan ikke endre innstillingene i noen av disse feltene.

@@ -1,8 +1,8 @@
 ---
 title: Konfigurere og administrere databaselogging
 description: Du kan spore endringer i tabeller og felt i Dynamics 365 Human Resources med databaselogging.
-author: andreabichsel
-ms.date: 06/10/2020
+author: twheeloc
+ms.date: 12/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4fd0f69df4a141e509c8c250f767cbbc3a20ef4ab7ac3dcec2bc6faa15eababb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 10591abee7890d54d721c9324101a4b4bd0a74d2
+ms.sourcegitcommit: 70ac76be31bab7ed5e93f92f4683e65031fbdf85
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6781663"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "7924826"
 ---
 # <a name="configure-and-manage-database-logging"></a>Konfigurere og administrere databaselogging
 
@@ -93,14 +93,14 @@ Du kan slette hele eller deler av databaseloggene ved hjelp av følgende alterna
 Gjør følgende for å konfigurere opprydding i databaselogg: 
 
 1. Gå til **Systemadministrasjon > Koblinger > Database > Databaselogg**. Velg **Opprydding i logg**.
-
-2. Velg en metode for valg av logger du vil slette, ved å angi ett av følgende alternativer:
+2. Velg **Filtrer** under overskriften **Poster som skal inkluderes**.
+3. Velg metoden som skal brukes til å velge loggene som skal slettes. Angi et av følgende alternativer:
 
    - Tabell-ID
    - Loggtype
    - Opprettingsdato og -klokkeslett
 
-3. Bruk kategorien **Opprydding i databaselogg** for å bestemme når du vil kjøre loggoppryddingsoppgaven. Som standard er databaselogger tilgjengelige i 30 dager.
+4. Bruk kategorien **Opprydding i databaselogg** for å bestemme når du vil kjøre loggoppryddingsoppgaven. Som standard er databaselogger tilgjengelige i 30 dager.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

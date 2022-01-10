@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: ae02846c0ec937ebaff440dc5272a135e16c8aa7355ecc303929e760a54b6627
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7cdc22eeabda6cf9f08484d698e5096f66af4a12
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760304"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920704"
 ---
 # <a name="quantity-exceeds-under-delivery-percentage-during-packing-slip-generation"></a>Antallet overskrider underleveringsprosenten under generering av følgeseddel
 
@@ -49,8 +49,8 @@ Bruk fremgangsmåten nedenfor til å justere underleveringsprosenten.
 
 1. Gå til **Kunder \> Ordrer \> Alle ordrer**.
 1. Velg salgsordren du ikke kan postere en følgeseddel for lasten for.
-1. I fanen  **Salgsordrelinjer** velger du salgsordrelinjen for varen som overskrider underleveringsprosenten.
-1. Velg  **Levering** i kategorien **Linjedetaljer**.
+1. I fanen **Salgsordrelinjer** velger du salgsordrelinjen for varen som overskrider underleveringsprosenten.
+1. Velg **Levering** i fanen **Linjedetaljer**.
 1. Sett **Underlevering**-feltet til en større prosent som legger til rette for antallet som er plukket mot lastantallet, slik at generering av følgeseddel kan fortsette.
 
 ### <a name="reverse-and-make-adjustments"></a>Reversere og foreta justeringer
@@ -60,14 +60,14 @@ Tilbakefør alt som er postert for lasten (for eksempel følgeseddel, forsendels
 Bruk fremgangsmåten nedenfor til å avbryte en følgeseddel.
 
 1. Gå til **Lagerstyring \> Laster \> Alle laster**.
-1. I handlingsruten, i fanen **Send og motta** i gruppen  **Omvendt**, velger du  **Annuller følgesedler**.
+1. I handlingsruten, i fanen **Send og motta** i gruppen **Omvendt**, velger du **Annuller følgesedler**.
 
 Bruk fremgangsmåten nedenfor til å tilbakeføre en forsendelsesbekreftelse.
 
 1. Gå til **Lagerstyring \> Laster \> Alle laster**.
-1. I handlingsruten, i fanen **Send og motta** i gruppen  **Omvendt**, velger du  **Reverser forsendelsesbekreftelse**.
+1. I handlingsruten, i fanen **Send og motta** i gruppen **Omvendt**, velger du **Reverser forsendelsesbekreftelse**.
 
 Bruk fremgangsmåten nedenfor for å reversere arbeid.
 
 1. Gå til **Lagerstyring \> Laster \> Alle laster**.
-1. I handlingsruten velger du **Reverser arbeid** i fanen  **Laster** i gruppen  **Arbeid**.
+1. I handlingsruten velger du **Reverser arbeid** i fanen **Laster** i gruppen **Arbeid**.

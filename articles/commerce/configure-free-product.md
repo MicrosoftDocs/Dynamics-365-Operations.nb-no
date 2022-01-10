@@ -15,17 +15,17 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2ad96a3dde93a48694aee418ecfbbd33dc9830d6
-ms.sourcegitcommit: 6bf9e18989e6d77497a9dda1c362f324b3c2fbf2
+ms.openlocfilehash: 760b97a895758073c8ffd1209be4a5f7df0f13a8
+ms.sourcegitcommit: 9c2bc045eafc05b39ed1a6b601ccef48bd62ec55
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/27/2021
-ms.locfileid: "7713891"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7919456"
 ---
 # <a name="configure-a-product-to-be-purchased-for-free"></a>Konfigurere et produkt som skal kjøpes gratis
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+
 
 Dette emnet beskriver hvordan du konfigurerer et produkt slik at det kan kjøpes gratis i Microsoft Dynamics 365 Commerce.
 

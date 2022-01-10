@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 93eff7a54f9d3851c59b83a28d3aa61a8de7bc41f2a845be21c8bf4d1c6401d4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8d5bcf3a0d36e323ee96c1f37829a95b60f529bc
+ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731037"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "7944719"
 ---
 # <a name="refund-payment-processing-in-call-centers"></a>Refunderingsbehandling i telefonsentre
 
@@ -33,11 +33,14 @@ Telefonsenterlogikken bestemmer betalingsmåten for betalingslinjen for refusjon
 
 Telefonsenteret bruker betalingsmåten til den opprinnelige ordren for å bestemme betalingsmåten som skal brukes på en returordre. Her ser du hvordan denne prosessen fungerer for følgende opprinnelige betalingsmåter:
 
-- **Vanlig** (kontant) eller **Sjekk** – Når en returordre som opprettes, refererer til en original ordre som ble betalt ved hjelp av den vanlig (kontant) betalingstype eller sjekkbetalingstypen, refererer samtalesenterprogrammet til konfigurasjoner på siden **Refunderingsmetoder for telefonsenter**. På denne siden kan organisasjoner definere, i ordrevalutaen, hvordan refusjoner utstedes til kunder for ordrer som opprinnelig ble betalt ved hjelp av vanlig betalingstype eller sjekk. Ved hjelp av siden **Refunderingsmetoder for telefonsenter** kan organisasjoner velge om de skal sendes en systemgenerert refunderingskontroll til kunden, eller om det opprettes en kundekontokreditt mot den interne kundekontosaldoen. I disse scenarioene refererer samtalesenterlogikken til valutaen til returordren, og deretter brukes verdien for **betalingsmåte for detaljhandel** for den valutaen for å opprette en refunderingsbetalingslinje på retursalgsordren. Senere kobles en kundebetalingsjournal for kunder (AR) som bruker den tilordnede AR-betalingsmetoden, til valutaen.
+- **Vanlig** (kontant) eller **Sjekk** – Når en returordre som opprettes, refererer til en original ordre som ble betalt ved hjelp av den vanlig (kontant) betalingstype eller sjekkbetalingstypen, refererer samtalesenterprogrammet til konfigurasjoner på siden **Refunderingsmetoder for telefonsenter**. På denne siden kan organisasjoner definere, i ordrevalutaen, hvordan refusjoner utstedes til kunder for ordrer som opprinnelig ble betalt ved hjelp av vanlig betalingstype eller sjekk. Ved hjelp av siden **Refunderingsmetoder for telefonsenter** kan også organisasjoner velge om det skal sendes en systemgenerert refunderingskontroll til kunden. I disse scenarioene refererer samtalesenterlogikken til valutaen til returordren, og deretter brukes verdien for **betalingsmåte for detaljhandel** for den valutaen for å opprette en refunderingsbetalingslinje på retursalgsordren. Senere kobles en kundebetalingsjournal for kunder (AR) som bruker den tilordnede AR-betalingsmetoden, til valutaen.
 
     Illustrasjonen nedenfor viser konfigurasjonen for et scenario der en kunde returnerer produkter fra en salgsordre som er koblet til valutaen USD, og som opprinnelig ble betalt for ved hjelp av betalingstypen vanlig eller sjekk. I dette scenariet vil en refusjon bli utstedt til kunden via en systemgenerert refunderingskontroll. AR-betalingsmåten **REF-CHK** er konfigurert som en betalingstype for refundering av sjekk.
 
     ![Konfigurasjon av tilbakebetalingsmetoder for telefonsenter for opprinnelige betalinger for vanlig betaling og sjekkbetaling.](media/callcenterrefundmethods.png)
+
+    > [!NOTE]
+    > Kundekontoer støttes ikke som refunderingsmetode for kontant- eller sjekkbetalinger.
 
 - **Kredittkort** – Når en returordre som opprettes, refererer til original ordre som ble betalt ved hjelp av et kredittkort, bruker samtalesenterlogikken for refusjonsbetalinger samme opprinnelige kredittkort for returordren.
 - **Fordelskort** – Når en returordre som opprettes, refererer til en original ordre som ble betalt ved hjelp av et kundefordelskort, bruker samtalesenterlogikken for refusjonsbetalinger refusjonen på samme fordelskort.
