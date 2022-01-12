@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: ec4265f0433fbbce1e00eda206c297b54f9b8df8
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: a709528b04e82c32f644073f79513b7ef11bb6bf
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778527"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920729"
 ---
 # <a name="firm-planned-orders"></a>Autoriser planlagte ordrer
 
@@ -80,6 +80,9 @@ Hvis du vil autorisere planlagte bestillinger manuelt, finner du og velger de pl
     - **Grupper etter innkjøpsavtale** – Sett dette alternativet til *Ja* for å gruppere planlagte bestillinger som har samme leverandør som eksisterende innkjøpsavtaler, og opprett én bestilling per bestillingsavtale. Dette alternativet blir automatisk aktivert når **Grupper etter leverandør** er aktivert. Hvis du vil bruke **Grupper etter kjøpsavtale**, må **Søk etter kjøpsavtaler** være satt til *Ja* på siden **Parametere for hovedplanlegging**.
     - **Grupper etter periode** (i **Bestillinger**-delen) – Velg perioden du vil gruppere planlagte bestillinger etter. Hvis du vil velge dette alternativet, må du også velge alternativet **Grupper etter leverandør**.
     - **Grupper etter periode** (i **Overføringer**-delen) – Velg perioden du vil gruppere planlagte overføringer etter. Ordrene blir gruppert basert på verdiene **Fra lager** og **Til lager**.
+
+    > [!NOTE]
+    > Hvert av alternativene Grupper etter fører til at systemet konverterer hver planlagte bestilling til en linje i den enkelte bestillingen som er resultatet av grupperingen.
 
     ![Parametere-hurtigfanen i dialogboksen Autorisasjon.](./media/manual-firming.png "Parametere-hurtigfanen i dialogboksen Autorisasjon")
 

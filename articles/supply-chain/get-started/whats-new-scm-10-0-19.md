@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 2c14101099473025f88632245553da0bf50d4622
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: 03ed2d52f44bd38910b01ffbd3767f750da2cbf8
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647221"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920579"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10019-june-2021"></a>Hva er nytt eller endret i Dynamics 365 Supply Chain Management versjon 10.0.19 (juni 2021)
 
@@ -50,7 +50,7 @@ Denne tabellen viser funksjonsforbedringer i denne versjonen. Hvert av disse gir
 
 | Modul | Funksjons&nbsp;navn&nbsp; i funksjons&nbsp;behandling | Mer informasjon |
 |---|---|---|
-| Salg og markedsføring | Ytelsesforbedringer for salgshistorikkopprydding | Opprydding i salgshistorikk kan ta lang tid hvis det kjøres sjelden i miljøer med høyt volum på salgsoppdateringer. For å redusere varigheten og forbedre påliteligheten deler denne funksjonen opprydding i satsvis behandling som kjører i en begrenset varighet. Der det er mulig, vil databasefunksjoner utnyttes for å minimere låsing og unngå å slå sammen transaksjonstabeller under opprydding. Hvis du vil ha mer informasjon, kan du se [Forbedringer av ytelse for opprydding i salgshistorikk](../sales-marketing/sales-update-history-cleanup-performance-improvements.md). |
+| Salg og markedsføring | Ytelsesforbedringer for salgshistorikkopprydding | Opprydding i salgshistorikk kan ta lang tid hvis det kjøres sjelden i miljøer med høyt volum på salgsoppdateringer. For å redusere varigheten og forbedre påliteligheten deler denne funksjonen opprydding i satsvis behandling som kjører i en begrenset varighet. Der det er mulig, vil databasefunksjoner utnyttes for å minimere låsing og unngå å slå sammen transaksjonstabeller under opprydding. Hvis du vil ha mer informasjon, kan du se [Forbedringer av ytelse for opprydding i salgshistorikk](../sales-marketing/sales-update-history-cleanup-performance-improvements.md). |
 | Salg og markedsføring | Oppdater Ønsket leveringsdato med Bekreftet dato for konserninterne ordrer | Ved hjelp av denne funksjonen kan du styre hva som skjer med feltverdiene for salgs- og innkjøpsdato ved bruk av konsernintern direktelevering. Du kan velge om systemet skal oppdatere ønskede datoer eller hoppe over oppdatering av dem. Hvis du hopper over oppdateringen, vil de ønskede datoene representere det kunden har bedt om. Hvis du aktiverer oppdatering, representerer de ønskede datoene (ved bruk av leveringsdatokontroll) bare i utgangspunktet hva kunden har bedt om. Leveringsdatokontroll, når en annen enn *Ingen*, vil overstyre det som opprinnelig ble forespurt. Du kan angi dette alternativet ved å bruke den nye innstillingen **Oppdater ønsket mottaksdato med Bekreftet dato** i innstillingene for den konserninterne leverandøren eller kunden.<br><br>Hvis funksjonen er deaktivert, overskrives den ønskede mottaksdatoen på opprinnelige salgsordrer basert på regelen for leveringsdatokontroll, men den ønskede forsendelsesdatoen vil bli værende som den er. |
 | Lagerstyring | Rund antall ned til nærmeste salgsenhet ved frigivelse til lager | Denne funksjonen legger til et alternativ som kan begrense ordreantall ved frigivelse til lager. Når dette er aktivert, blir ordreantallet rundet ned til nærmeste hele salgsenhet, og ordrer som omfatter antall for mindre enn én salgsenhet, vil bli avvist for frigivelse. |
 | Lagerstyring | Bølgemetoden Planlegg arbeidsopprettelse i hele organisasjonen | Når denne funksjonen aktiveres, vil bølgemetoden *Planlegg arbeidsoppretting* konfigureres til å kjøre parallelt på tvers av alle juridiske enheter. Flere tilleggsinnstillinger vil også bli påvirket. Hvis du vil ha all informasjon, kan du se [Planlegge arbeidsopprettelse under bølge](../warehousing/configure-wave-schedule-work-creation.md). |

@@ -4,13 +4,41 @@
       items:
         - name: Startside for Dynamics 365 Supply Chain Management
           href: index.md
-        - name: Komme i gang
+        - name: Nyheter eller endringer
+          items:
+            - name: Nyheter eller endringer i Finance and Operations-apper
+              href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Nyheter eller endringer i Supply Chain Management
+              items:
+                - name: Nyheter eller endringer på startsiden for Supply Chain Management
+                  href: get-started/whats-new-home-page.md
+                - name: Supply Chain Management 10.0.24 (februar 2022)
+                  href: get-started/whats-new-scm-10-0-24.md
+                - name: Supply Chain Management 10.0.23 (januar 2022)
+                  href: get-started/whats-new-scm-10-0-23.md
+                - name: Supply Chain Management 10.0.22 (november 2021)
+                  href: get-started/whats-new-scm-10-0-22.md
+                - name: Supply Chain Management 10.0.21 (oktober 2021)
+                  href: get-started/whats-new-scm-10-0-21.md
+            - name: Funksjoner som er fjernet eller avskrevet
+              items:
+                - name: Funksjoner som er fjernet eller avskrevet på startsiden
+                  href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Funksjoner som er fjernet eller avskrevet i Dynamics 365 Supply Chain Management
+                  href: get-started/removed-deprecated-features-scm-updates.md
+                - name: Fjernede eller avskrevne funksjoner i tidligere versjoner
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
+            - name: AX 2012-funksjoner som er utsatt
+              href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Slutten av vanlig støtte for Microsoft Dynamics AX 2009 og 2012
+              href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Kom i gang
           items:
             - name: Tjenestebeskrivelse
               href: ../fin-ops-core/fin-ops/get-started/service-description.md?toc=/dynamics365/supply-chain/toc.json
             - name: Før du kjøper
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Registrere deg for forhåndsvisningsabonnementer
+            - name: Registrer deg for forhåndsversjonsabonnementer
               href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/supply-chain/toc.json
             - name: Oppdatering av én versjonstjeneste
               items:
@@ -58,38 +86,10 @@
                   href: ../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Systemkrav for lokale distribusjoner
                   href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Kjøpe Finance + Operations (on-premises)
+                - name: Kjøp Finance + Operations (on-premises)
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurer lager for lokale distribusjoner
                   href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Nyheter eller endringer
-              items:
-                - name: Nyheter eller endringer i Finance and Operations-apper
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Nyheter eller endringer i Supply Chain Management
-                  items:
-                    - name: Nyheter eller endringer på startsiden for Supply Chain Management
-                      href: get-started/whats-new-home-page.md
-                    - name: Supply Chain Management 10.0.24 (februar 2022)
-                      href: get-started/whats-new-scm-10-0-24.md
-                    - name: Supply Chain Management 10.0.23 (januar 2022)
-                      href: get-started/whats-new-scm-10-0-23.md
-                    - name: Supply Chain Management 10.0.22 (november 2021)
-                      href: get-started/whats-new-scm-10-0-22.md
-                    - name: Supply Chain Management 10.0.21 (oktober 2021)
-                      href: get-started/whats-new-scm-10-0-21.md
-                - name: Funksjoner som er fjernet eller avskrevet
-                  items:
-                    - name: Funksjoner som er fjernet eller avskrevet på startsiden
-                      href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Funksjoner som er fjernet eller avskrevet i Dynamics 365 Supply Chain Management
-                      href: get-started/removed-deprecated-features-scm-updates.md
-                    - name: Fjernede eller avskrevne funksjoner i tidligere versjoner
-                      href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
-                - name: AX 2012-funksjoner som er utsatt
-                  href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Slutten av vanlig støtte for Microsoft Dynamics AX 2009 og 2012
-                  href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/supply-chain/toc.json
             - name: Dokumentasjonsressurser
               items:
                 - name: Hjelpesystem
@@ -256,7 +256,7 @@
                       href: ../finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Instrumentbord for bruksstyring
                       href: ../finance/localizations/e-invoicing-usage-management-dashboard.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Komme i gang
+                    - name: Kom i gang
                       items:
                         - name: Kom i gang med tjenesteadministrasjon for elektronisk fakturering
                           href: ../finance/localizations/e-invoicing-get-started-service-administration.md?toc=/dynamics365/supply-chain/toc.json
@@ -1617,6 +1617,8 @@
                   href: inventory/inventory-visibility-reservations.md
                 - name: Offentlige API-er for lagersynlighet
                   href: inventory/inventory-visibility-api.md
+                - name: Tips for lagersynlighet
+                  href: inventory/inventory-visibility-tips.md
         - name: IoT-intelligens
           items:
             - name: Startside for IoT-intelligens
@@ -2827,7 +2829,7 @@
               href: sales-marketing/trade-allowance.md
             - name: Opprett en ny forretningsavtale
               href: sales-marketing/tasks/create-new-trade-agreement.md
-            - name: Forbedringer av ytelse for opprydding i salgshistorikk
+            - name: Forbedringer av ytelse for opprydding i salgshistorikk
               href: sales-marketing/sales-update-history-cleanup-performance-improvements.md
         - name: Servicestyring
           items:
@@ -3573,6 +3575,8 @@
                   href: troubleshooting/inventory/while-splitting-the.md
             - name: Hovedplanlegging
               items:
+                - name: Systemet finner ikke en planlagt bestilling når det opererer på flere bestillinger
+                  href: troubleshooting/planning/planned-order-not-exist.md
                 - name: Stykklistenedbryting fungerer ulikt for autoriserte og estimerte produksjonsordrer
                   href: troubleshooting/planning/bom-explosion-works-differently.md
                 - name: Forsinkelsesverdien oppdateres ikke når du planlegger en planlagt ordre på nytt

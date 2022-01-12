@@ -2,7 +2,7 @@
 title: Behandle permisjonsforespørsler i Teams
 description: Dette emnet viser hvordan du ber om fridager Dynamics 365 Human Resources-appen i Microsoft Teams.
 author: twheeloc
-ms.date: 11/03/2021
+ms.date: 12/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 10538c96a7637a95c60beef40a02fdb5432959ec
-ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
+ms.openlocfilehash: d004e33d01dbd171626d7e23f93df081bc0210a9
+ms.sourcegitcommit: 70ac76be31bab7ed5e93f92f4683e65031fbdf85
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7771537"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "7924753"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Behandle permisjonsforespørsler i Teams
 
@@ -35,6 +35,9 @@ Du finner Dynamics 365 Human Resources-appen i Teams-butikken.
 1. I Microsoft Teams navigerer du til listen over apper.
  
 2. Søk etter Dynamics 365 Human Resources, og velg deretter flisen **Human Resources**.
+
+> [!NOTE]
+> Fra og med 20. desember 2021 avvikles robottjenestene i Human Resources-appen (versjon 1.1.4) som Microsoft-leietakeren er vert for. Det mest oppdaterte utvidelsen (versjon 1.1.5) er tilgjengelig for installasjon. Hvis du vil ha mer informasjon, kan du se [Administrer fraværsforespørsel i Teams](hr-admin-teams-leave-app.md#update-app).
 
 3. Velg **Legg til** for å installere appen.
 

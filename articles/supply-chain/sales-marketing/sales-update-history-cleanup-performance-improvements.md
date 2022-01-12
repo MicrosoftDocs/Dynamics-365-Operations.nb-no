@@ -1,5 +1,5 @@
 ---
-title: Forbedringer av ytelse for opprydding i salgshistorikk
+title: Forbedringer av ytelse for opprydding i salgshistorikk
 description: Dette emnet beskriver forbedringer av ytelsen for funksjonen for salgshistorikkopprydding, og hvordan du aktiverer den.
 author: myvakalo
 ms.date: 10/05/2021
@@ -11,14 +11,14 @@ ms.search.region: Global
 ms.author: myvakalo
 ms.search.validFrom: 2021-09-29
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 1b2de9d6a7b1b7793b6bb753dd580d052d3c2841
-ms.sourcegitcommit: 96515ddbe2f65905140b16088ba62e9b258863fa
+ms.openlocfilehash: 610f0d4e0448dd21d10765400f25cd89e3c7a84b
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/04/2021
-ms.locfileid: "7891774"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920279"
 ---
-# <a name="saleshistorycleanupperformanceimprovements"></a>Forbedringer av ytelse for opprydding i salgshistorikk
+# <a name="sales-history-cleanup-performance-improvements"></a>Forbedringer av ytelse for opprydding i salgshistorikk
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
@@ -34,7 +34,7 @@ Funksjonen forbedrer den eksisterende oppryddingsjobben på følgende måter:
 
 Etter at funksjonen er aktivert, kjøres den satsvise jobben **Opprydding av salgoppdateringshistorikk** (**Salg og markedsføring \> Opprydding \> Periodeoppgaver \> Opprydding av salgsoppdateringshistorikk**) som den gjorde før, men med bedre ytelse og maksimum 2 timer. Det betyr at det kan hende at det må kjøres flere ganger for å rydde opp i alle dataene for en bestemt oppbevaringstidsramme.
 
-## <a name="turn-on-the-saleshistorycleanupperformanceimprovements-feature"></a>Aktiver funksjonen for forbedringer av ytelse for opprydding i salgshistorikk
+## <a name="turn-on-the-sales-history-cleanup-performance-improvements-feature"></a>Aktiver funksjonen for forbedringer av ytelse for opprydding i salgshistorikk
 
 Før du kan bruke denne funksjonen, må den være aktivert i systemet. Administratorer kan bruke innstillingene for [funksjonsbehandling](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) til å kontrollere funksjonsstatusen og aktivere den. I **Funksjonsadministrering**-arbeidsområdet er denne funksjonen oppført på følgende måte:
 

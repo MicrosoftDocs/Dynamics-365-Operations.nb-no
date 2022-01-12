@@ -2,7 +2,7 @@
 title: Likviditetsbeholdning
 description: Dette emnet beskriver hvordan funksjonen Kontantstrømprognose forutsier en organisasjons likviditetsbeholdning for bestemte tider. Det beskriver også alternativene som er tilgjengelige for å vise prognoser for forskjellige perioder.
 author: ShivamPandey-msft
-ms.date: 11/03/2021
+ms.date: 12/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: bf99ce5c9de00061cba2f49d00cc9dbc728753a8
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 6bb99084a2ffef067dd0d7158ecb5e57d6d97d75
+ms.sourcegitcommit: c8dc60bb760553f166409c2e06dd2377f601c006
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752886"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "7945807"
 ---
 # <a name="cash-position"></a>Likviditetsbeholdning
 
@@ -45,5 +45,17 @@ Den nedre delen av fanen **Likviditetsbeholdning** viser detaljer for stillingen
 - Rutenettet **Bankkonto** viser innvirkningen av forventede inngående og utgående kontantstrømmer på banksaldoen.
 
 Hvis du vil lagre og redigere likviditetsbeholdningen, oppretter du et øyeblikksbilde. Du finner mer informasjon om hvordan du arbeider med øyeblikksbilder, ved å se [Oversikt over øyeblikksbilder](payment-snapshots.md).
+
+## <a name="details-of-the-cash-position-capability"></a>Detaljer om likviditetsbeholdningsfunksjonen 
+
+Funksjonen for likviditetsbeholdning omfatter følgende funksjonalitet. 
+
+- Likviditetsbeholdningsfunksjonen viser kontantstrømmen basert på eksisterende dokumenter i systemet, og kontantstrøm inn og utflytlinjer som er importert fra eksterne systemer.
+- Gjør det enkelt å integrere kontantstrømdata fra eksterne systemer i Dynamics 365 Finance. Likviditetsbeholdning kan også bruke rammeverket for import/eksport av data. Dette rammeverket gjør det enkelt å integrere med Excel OData. Du kan også kombinere data fra flere kilder for å opprette en omfattende likviditetsbeholdningsløsning.
+- Innfører intelligent likviditetsbeholdning. Likviditetsbeholdning opprettes på grunnlag av kundens betalingsatferd for å forutsi når et firma kan forvente kontanter på kontoene.
+- For kundeordrer og fakturaer brukes KI-funksjonaliteten for kundebetalingsforutsigelse til å fastslå den historiske kundebetalingsvirkemåten når en ordre eller faktura vil bli betalt.
+- For leverandørordrer og fakturaer bruker vi gjennomsnittstiden mellom forsendelse og faktura og betaling av en faktura per leverandør til å finne ut når en leverandørordre eller faktura vil bli betalt for å gjøre kontantstrømmen mer nøyaktig.
+
+Dette gir en mer nøyaktig visning av kontantstrømmen basert på historisk betalingsoppførsel for ekskredøren. 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

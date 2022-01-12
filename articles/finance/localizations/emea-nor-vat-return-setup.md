@@ -2,7 +2,7 @@
 title: Klargjøre miljøet for samarbeid med nettjenestene ID-porten og Altinn
 description: Dette emnet forklarer hvordan du klargjør miljøet for samarbeid med nettjenestene ID-porten og Altinn.
 author: liza-golub
-ms.date: 11/28/2021
+ms.date: 12/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Norway
 ms.author: elgolu
 ms.search.validFrom: 2021-11-18
 ms.dyn365.ops.version: AX 10.0.22
-ms.openlocfilehash: a5dd46119ab487c3baef3c0c7cae1a5ae8116727
-ms.sourcegitcommit: a11e8f4e764ff0bb210875401ae0671bc6412bde
+ms.openlocfilehash: 1a40666261e7908430fba254f8375ece7ea68e46
+ms.sourcegitcommit: b1c758ec4abfcf3bf9e50f18c1102d4a9c1316d0
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "7866810"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "7922376"
 ---
 # <a name="prepare-your-environment-to-interoperate-with-id-porten-and-altinn-web-services"></a>Klargjøre miljøet for samarbeid med nettjenestene ID-porten og Altinn
 
@@ -431,10 +431,17 @@ Når du [registrerer et integreringspunkt i webportalen ID-porten](emea-nor-vat-
 
 Internett-adresser (URL) kan endres av norske skattemyndigheter. Vi anbefaler at du ser etter faktiske URL-adresser på det offisielle Altinn- og ID-porten-webområdet. 
 
-Følg denne fremgangsmåten for å sette opp en URL-adresse som brukes av *test*-miljøet i ID-porten.
+Følg denne fremgangsmåten for å konfigurere URL som brukes i ID-porten.
 
 1. Gå til **Avgift** \> **Oppsett** \> **Parametere** \> **Elektroniske meldinger** \> **Webprogrammer**, og velg webprogrammet **NO ID-Porten** i listen til venstre.
-2. I feltet **Primær URL-adresse** angir du `https://oidc-ver2.difi.no/idporten-oidc-provider`.
+2. I feltet **Base-URL** angir du en av følgende nettadresser:
+
+    - `https://oidc-ver2.difi.no/idporten-oidc-provider` for å fungere sammen med *sandkasseendepunktet* for ID-porten
+    - `https://oidc.difi.no/idporten-oidc-provider/` å interoperatisere med *produksjonsendepunktet* for ID-porten
+
+    > [!IMPORTANT]
+    > For faktiske Internett-adresser går du til <https://docs.digdir.no/oidc_func_wellknown.html>.
+
 3. I feltet **URL-bane til autorisasjon** angir du **/authorize**.
 4. I feltet **URL-bane til token** angir du **/token**.
 5. Kopier den fullstendige URL-adressen til den gjeldende siden fra webleserens adresselinje, og lim den inn i feltet **URL-adresse for omadressering**.
@@ -445,7 +452,7 @@ Følg denne fremgangsmåten for å definere en Internett-adresse som brukes av A
 
 1. Gå til **Avgift** \> **Oppsett** \> **Parametere** \> **Elektroniske meldinger** \> **Webprogrammer**, og velg webprogrammet **NO Altinn** i listen til venstre.
 2. I feltet **Primær URL-adresse** angir du `https://platform.tt02.altinn.no/authentication/api/v1/exchange/id-porten`.
-3. Gå til **Avgift** \> **Oppsett** \> **Parametere** \> **Elektroniske meldinger** \> **Innstillinger for webtjeneste**, og angi følgende informasjon for å definere Internett-adressen for webtjenester.
+3. Gå til **Avgift** \> **Oppsett** \> **Parametere** \> **Elektroniske meldinger** \> **Nettjenesteinnstillinger**, og angi følgende informasjon for å definere nettadressen for nettjenestene som skal fungere sammen med *API-ene for sandkasse* som norske skattemyndigheter tilbyr.
 
     | Webtjenestenavn | Internett-adresse |
     |---|---|
@@ -457,7 +464,16 @@ Følg denne fremgangsmåten for å definere en Internett-adresse som brukes av A
     | NO Altinn GET-vedlegg | La dette feltet stå tomt. |
     | NO Valider mva-retur | `https://mp-test.sits.no/api/mva/grensesnittstoette/mva-melding/valider` |
 
-> [!IMPORTANT]
-> For faktiske Internett-adresser går du til <https://docs.digdir.no/oidc_func_wellknown.html>.
+For *produksjonssamsvar* med nettjenester som norske skattemyndigheter tilbyr bruker du følgende nettadresser.
+
+| Webtjenestenavn | Internett-adresse |
+|---|---|
+| NO Altinn GET JSON        | `https://skd.apps.altinn.no/skd/mva-melding-innsending-v1/instances` |
+| NO Altinn POST JSON       | `https://skd.apps.altinn.no/skd/mva-melding-innsending-v1/instances` |
+| NO Altinn POST XML        | `https://skd.apps.altinn.no/skd/mva-melding-innsending-v1/instances` |
+| NO Altinn PUT JSON        | `https://skd.apps.altinn.no/skd/mva-melding-innsending-v1/instances` |
+| NO Altinn PUT XML         | `https://skd.apps.altinn.no/skd/mva-melding-innsending-v1/instances` |
+| NO Altinn GET-vedlegg | La dette feltet stå tomt. |
+| NO Valider mva-retur    | `https://idporten.api.skatteetaten.no/api/mva/grensesnittstoette/mva-melding/valider` |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

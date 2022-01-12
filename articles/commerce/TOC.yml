@@ -4,7 +4,7 @@
       items:
         - name: Startside for Dynamics 365 Commerce
           href: index.md
-        - name: Komme i gang
+        - name: Kom i gang
           items:
             - name: Tjenestebeskrivelse
               href: ../fin-ops-core/fin-ops/get-started/service-description.md?toc=/dynamics365/commerce/toc.json
@@ -70,7 +70,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/commerce/toc.json
                 - name: Installasjonstrinn for komponenter i Retail-kanal i et lokalt miljø
                   href: ../fin-ops-core/dev-itpro/deployment/deploy-retail-onprem.md?toc=/dynamics365/commerce/toc.json
-                - name: Kjøpe Finance + Operations (on-premises)
+                - name: Kjøp Finance + Operations (on-premises)
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/commerce/toc.json
                 - name: Implementeringsveiledning for Commerce Data Exchange
                   href: dev-itpro/implementation-considerations-cdx.md
@@ -98,8 +98,6 @@
                       href: get-started/whats-new-commerce-10-0-23.md
                     - name: Commerce 10.0.22 (november 2021)
                       href: get-started/whats-new-commerce-10-0-22.md
-                    - name: Commerce 10.0.21 (oktober 2021)
-                      href: get-started/whats-new-commerce-10-0-21.md
                 - name: Funksjoner som er fjernet eller avskrevet
                   items:
                     - name: Funksjoner som er fjernet eller avskrevet på startsiden
@@ -838,15 +836,15 @@
                   href: tasks/define-loyalty-schemes.md
                 - name: Behandle justeringer av fordelspoeng
                   href: tasks/process-loyalty-reward-point-adjustments.md
-        - name: Styre økonomien din
+        - name: Styr økonomien din
           items:
             - name: Oversikt over kontoutdrag
               href: retail-statements.md
-            - name: Konsekvenskontroll for transaksjon
+            - name: Valider butikktransaksjoner for utdragsberegning
               href: valid-checker.md
-            - name: Deaktivere regler i konsekvenskontroll for detaljhandelstransaksjon
+            - name: Deaktiver regler i konsekvenskontroll for detaljhandelstransaksjon
               href: disable-consistency-check-rule.md
-            - name: Redigere og overvåke detaljhandelstransaksjoner
+            - name: Rediger og overvåk detaljhandelstransaksjoner
               items:
                 - name: Redigere og overvåke hentesalgs- og kassastyringstransaksjoner
                   href: edit-cash-trans.md
@@ -858,7 +856,7 @@
                   href: create-excel-edit.md
                 - name: Legge til felt i en Excel-arbeidsbok for å redigere detaljhandelstransaksjoner
                   href: add-fields-excel.md
-            - name: Fordele feedbasert ordreoppretting for detaljhandelstransaksjoner
+            - name: Fordel feedbasert ordreoppretting for detaljhandelstransaksjoner
               href: trickle-feed.md
             - name: 'Opprette, beregne og postere utdrag for en detaljhandel'
               href: tasks/create-calculate-post-statement-retail-store.md
@@ -1286,6 +1284,8 @@
               href: localizations/fiscal-integration-for-retail-channel.md
             - name: Definer økonomisk integrering for Commerce-kanal
               href: localizations/setting-up-fiscal-integration-for-retail-channel.md
+            - name: Definer kompileringskontroll for eksempel på økonomisk integrering
+              href: localizations/fiscal-integration-sample-build-pipeline.md
             - name: Brukerdefinerte sertifikatprofiler for detaljhandelsbutikker
               href: localizations/certificate-profiles-for-retail-stores.md
             - name: Regulatory Configuration Service (RCS)
@@ -1322,6 +1322,8 @@
               items:
                 - name: Eksempel på integrering av tjenesten for avgiftsmessig transaksjon for Østerrike
                   href: localizations/emea-aut-fi-sample.md
+                - name: Retningslinjer for distribusjon av eksempel på økonomisk integrering for Østerrike (eldre)
+                  href: localizations/emea-aut-fi-sample-sdk.md
             - name: Brasil
               items:
                 - name: Commerce-lokalisering for Brasil
@@ -1358,12 +1360,16 @@
                   items:
                     - name: Eksempel på integrering av tjenesten for avgiftsmessig transaksjon for Tsjekkia
                       href: localizations/emea-cze-fi-sample.md
+                    - name: Retningslinjer for distribusjon av eksempel på økonomisk integrering for Tsjekkia (gamle)
+                      href: localizations/emea-cze-fi-sample-sdk.md
                 - name: Polen
                   items:
                     - name: Eksempel på integrering av bilagsskriver for Polen
                       href: localizations/emea-pol-fpi-sample.md
                     - name: Kundeinformasjonsbehandling for Polen
                       href: localizations/emea-pol-customer-information.md
+                    - name: Retningslinjer for distribusjon av eksempel på økonomisk integrering for Polen (gamle)
+                      href: localizations/emea-pol-fpi-sample-sdk.md
             - name: Frankrike
               items:
                 - name: Kassefunksjonalitet
@@ -1380,6 +1386,8 @@
               items:
                 - name: Eksempel på integrering av tjenesten for avgiftsmessig transaksjon for Tyskland
                   href: localizations/emea-deu-fi-sample.md
+                - name: Retningslinjer for distribusjon av eksempel på økonomisk integrering for Tyskland (gamle)
+                  href: localizations/emea-deu-fi-sample-sdk.md
             - name: India
               items:
                 - name: GST-integrering (Goods and Services Tax) for kasser
@@ -1398,6 +1406,8 @@
                   href: localizations/emea-ita-fpi-sample.md
                 - name: Kundeinformasjonsbehandling for Italia
                   href: localizations/emea-ita-customer-information.md
+                - name: Retningslinjer for distribusjon av eksempel på økonomisk integrering for Italia (gamle)
+                  href: localizations/emea-ita-fpi-sample-sdk.md
             - name: Mexico
               items:
                 - name: Globale CFDI-e-fakturaer for Mexico
@@ -1407,6 +1417,8 @@
                 - name: Kassefunksjonalitet
                   href: localizations/emea-nor-cash-registers.md
                 - name: Retningslinjer for distribusjon for kassaapparater
+                  href: localizations/emea-nor-fi-deployment.md
+                - name: Retningslinjer for distribusjon for kassaapparater (gamle)
                   href: localizations/emea-nor-loc-deployment-guidelines.md
             - name: Russland
               items:
@@ -1432,6 +1444,8 @@
                   href: localizations/emea-swe-cash-registers.md
                 - name: Eksempel på integrering med kontrollenheter for Sverige
                   href: localizations/emea-swe-fi-sample.md
+                - name: Retningslinjer for distribusjon av eksempel integrering med kontrollenheter for Sverige (gamle)
+                  href: localizations/emea-swe-fi-sample-sdk.md
                 - name: Eksempel for Retail POS-integrering med kontrollenheter (eldre)
                   href: localizations/retail-sdk-control-unit-sample.md
         - name: Rapportering og Power BI-integreringer
@@ -2376,7 +2390,7 @@
               items:
                 - name: Oversikt over utvidelsesmulighet for Internett-kanal
                   href: e-commerce-extensibility/overview.md
-                - name: Komme i gang
+                - name: Kom i gang
                   items:
                     - name: Komme i gang med omfattende elektronisk utvikling av e-handel
                       href: e-commerce-extensibility/sdk-getting-started.md
@@ -2466,6 +2480,8 @@
                       href: e-commerce-extensibility/set-up-key-vault.md
                     - name: Opprett en programtilleggskrok for forespørsel om forløp
                       href: e-commerce-extensibility/request-pipeline-hook.md
+                    - name: Bildekomponenter
+                      href: e-commerce-extensibility/image-component.md
                 - name: Utarbeid datahandlinger
                   items:
                     - name: Oversikt over datahandlinger
@@ -2570,10 +2586,12 @@
                   href: dev-itpro/retail-sdk/retail-sdk-packaging.md
                 - name: Utvikling i skydriftede miljøer uten administratortilgang
                   href: dev-itpro/cloud-dev-box.md
-                - name: Konfigurere versjonsforløp for SDK for Commerce
+                - name: Konfigurer kompileringskontroll for SDK for Commerce
                   href: dev-itpro/retail-sdk/SDK-build-pipeline.md
                 - name: Last ned eksempler og pakker fra GitHub og NuGet
                   href: dev-itpro/retail-sdk/sdk-github.md
+                - name: Konfigurer en build-agent for Visual Studio 2017 for å bygge Modern POS
+                  href: dev-itpro/retail-sdk/mpos-build-agent.md
                 - name: Vanlige spørsmål om SDK for Retail
                   href: dev-itpro/retail-sdk/sdk-faq.md
             - name: Utvidelsesmulighet for salgssted

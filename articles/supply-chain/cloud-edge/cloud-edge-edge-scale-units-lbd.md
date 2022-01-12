@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 8913debd614827ef66ded88e0da61663ca9c6b3d
-ms.sourcegitcommit: 29d34f2fd509e2bb27d8572cd57c397d014a8e38
+ms.openlocfilehash: 2407d4e3c6adaf5df2e8f5440ee8336f86012caf
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "7894724"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920679"
 ---
 # <a name="deploy-edge-scale-units-on-custom-hardware-using-lbd"></a>Distribuer kantskalaenheter på egendefinert maskinvare ved hjelp av LBD
 
@@ -142,7 +142,7 @@ Dette trinnet oppretter et funksjonelt LBD-miljø. Miljøet har imidlertid ikke 
     1. Kjør følgende SQL-kommandoer på forretningsdatabasen (AXDB).
 
         ```sql
-        ALTER TABLE dbo.NUMBERSEQUENCETABLE ENABLE CHANGE_TRACKING WITH (TRACK_COLUMNS_UPDATED = ON)
+        ALTER TABLE dbo.NUMBERSEQUENCETABLE ENABLE CHANGE_TRACKING WITH (TRACK_COLUMNS_UPDATED = ON)
         delete from NumberSequenceTable
         delete from NumberSequenceReference
         delete from NumberSequenceScope

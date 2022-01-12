@@ -1,22 +1,22 @@
 ---
 title: Planlegge bølgeetikettutskrift under bølge
 description: Dette emnet beskriver hvordan du definerer og bruker funksjonaliteten for oppgavebasert bølgeetikettutskrift.
-author: MSFTGarm
+author: perlynne
 ms.date: 06/09/2021
 ms.topic: article
 ms.search.form: WHSPostMethod, WHSWavePostMethodTaskConfig, WHSWaveTemplateTable, WHSParameters, WHSWaveTableListPage, WHSWorkTableListPage, WHSWorkTable, BatchJobEnhanced, WHSPlannedWorkOrder
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: v-obaranov
+ms.author: perlynne
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 4883f8a548645436e17b933d87d4ee6330570d48
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 1323538765308ec3dd366456e31f5e08b08ce5ab
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777871"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920155"
 ---
 # <a name="schedule-wave-label-printing-during-wave"></a>Planlegge bølgeetikettutskrift under bølge
 
@@ -40,7 +40,7 @@ Hvis du vil bruke funksjonene som beskrives i dette emnet, må de være aktivert
 
 Du må først opprette den nye bølgetrinnmetoden og aktivere den for parallell, asynkron oppgavebehandling.
 
-1. Gå til **Lagerstyring \> Oppsett \> Bølger \> Bølgebehandlingsmetoder**.
+1. Gå til **Lagerstyring \> Oppsett \> Bølger \> Bølgebehandlingsmetoder**.
 1. Velg **Generer metoder på nytt** i handlingsruten. Legg merke til at *waveLabelPrinting* legges til i listen over bølgeprosessmetoder som du kan bruke i forsendelsesbølgemaler.
 1. Velg posten der feltet **Metodenavn** er satt til *waveLabelPrinting*, og velg deretter **Oppgavekonfigurasjon** i handlingsruten.
 1. I handlingsruten velger du **Ny** for å legge til en rad i rutenettet. Angi deretter følgende felter for den nye raden:
@@ -51,7 +51,7 @@ Du må først opprette den nye bølgetrinnmetoden og aktivere den for parallell,
 
 Du kan nå oppdatere en eksisterende bølgemal, slik at den bruker bølgebehandlingsmetoden *Bølgeetikettutskrift*. Du kan også opprette en ny bølgemal som bruker den.
 
-1. Gå til **Lagerstyring \> Oppsett \> Bølger \> Bølgemaler**.
+1. Gå til **Lagerstyring \> Oppsett \> Bølger \> Bølgemaler**.
 1. I handlingsruten velger du **Rediger**.
 1. Velg bølgemalen du vil oppdatere, i listeruten. (Hvis du bruker demodata til testing, kan du velge *24 Standardforsendelse*.)
 1. I hurtigfanen **Metoder** i kolonnen **Gjenværende metoder** velger du raden der feltet **Navn** er satt til *waveLabelPrinting*.

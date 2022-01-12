@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: ddfac7106eb0e8b934516ca10e3950891d10910a2ccdef1868faf25812243159
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a9e0475aab452daa9e1a6f012e17a59e611010da
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726567"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920479"
 ---
 # <a name="decimal-rounding-of-the-physical-updating-quantity-is-incorrect"></a>Desimalrunding av det fysiske oppdateringsantallet er feil
 
@@ -49,10 +49,10 @@ Bruk følgende prosedyre til å gå gjennom lastlinjene, og gjør justeringer fo
 
 1. Gå til **Lagerstyring \> Laster \> Alle laster**.
 1. Velg lasten som følgeseddelen ikke kan genereres for.
-1. I handlingsruten, i fanen **Send og motta** i gruppen  **Omvendt**, velger du  **Reverser forsendelsesbekreftelse**.
-1. I fanen  **Lastlinjer** velger du lastlinjen for varen som forårsaker problemet.
+1. I handlingsruten, i fanen **Send og motta** i gruppen **Omvendt**, velger du **Reverser forsendelsesbekreftelse**.
+1. I fanen **Lastlinjer** velger du lastlinjen for varen som forårsaker problemet.
 1. Velg **Reduser plukket antall** for å justere det plukkede antallet.
-1. Velg  **Ordre** i kategorien **Linjedetaljer**.
+1. Velg **Ordre** i fanen **Linjedetaljer**.
 1. Angi **Antall**-feltet til det plukkede antallet (det vil si til verdien til feltet **Antall for arbeid opprettet**), slik at generering av følgeseddel kan fortsette.
 
 ### <a name="review-your-load-lines-and-make-adjustments-to-ensure-that-the-unit-and-quantity-are-aligned-with-the-decimal-precision-of-the-unit"></a>Gjennomgå lastlinjene, og juster for å sikre at enheten og mengden justeres med desimalpresisjonen til enheten

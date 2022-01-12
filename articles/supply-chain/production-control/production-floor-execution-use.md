@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: e84df8aa4f3e4079cf97d35b0d67a75d68dbb4b2
-ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
+ms.openlocfilehash: e872600222ad23bf3de62c0f2d6cda74942d5b55
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "7860539"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920654"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>Hvordan arbeidere bruker grensesnittet for produksjonsutførelse
 
@@ -110,9 +110,6 @@ Når en arbeider fullfører eller delvis fullfører en jobb, kan de rapportere k
 ![Dialogboksen Rapportfremdrift.](media/pfei-report-progress-dialog.png "Dialogboksen Rapportfremdrift")
 
 ## <a name="reporting-good-quantities-on-batch-orders-that-have-co-products-and-by-products"></a>Rapportering korrekte antall varer på partiordrer som har koprodukter og biprodukter
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)] 
-<!--KFM: Preview until GA with 10.0.23 -->
 
 Ansatte kan å bruke grensesnittet for produksjonsgulvutførelse til å rapportere fremdrift for partiordrer. Denne rapporten inkluderer rapportering på koprodukter og biprodukter.
 

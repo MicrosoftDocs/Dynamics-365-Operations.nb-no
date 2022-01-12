@@ -2,7 +2,7 @@
 title: Offentlige API-er for lagersynlighet
 description: Dette emnet beskriver de offentlige API-ene som leveres av Lagersynlighet.
 author: yufeihuang
-ms.date: 09/30/2021
+ms.date: 12/09/2021
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 1899969ddbbccafde3f7bb06a897ea7c0f2d656b
-ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
+ms.openlocfilehash: d676191f921d74a5a0ced934f3692dacbe7cd7b4
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/25/2021
-ms.locfileid: "7678793"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920124"
 ---
 # <a name="inventory-visibility-public-apis"></a>Offentlige API-er for lagersynlighet
 
@@ -41,8 +41,8 @@ Følgende tabell viser API-ene som er tilgjengelige for øyeblikket:
 | /api/environment/{environmentId}/setonhand/{inventorySystem}/bulk | Poster | [Angi/overstyre lagerbeholdninger](#set-onhand-quantities) |
 | /api/environment/{environmentId}/onhand/reserve | Poster | [Opprett én reservasjonshendelse](#create-one-reservation-event) |
 | /api/environment/{environmentId}/onhand/reserve/bulk | Poster | [Opprett flere reservasjonshendelser](#create-multiple-reservation-events) |
-| /api/environment/{environmentId}/onhand/indexquery | Hent | [Spør ved å bruke posteringsmetoden](#query-with-post-method) |
-| /api/environment/{environmentId}/onhand/indexquery | Poster | [Spør ved å bruke hentemetoden](#query-with-get-method) |
+| /api/environment/{environmentId}/onhand/indexquery | Poster | [Spør ved å bruke posteringsmetoden](#query-with-post-method) |
+| /api/environment/{environmentId}/onhand | Hent | [Spør ved å bruke hentemetoden](#query-with-get-method) |
 
 Microsoft har levert en *Postman*-forespørselssamling ut av boksen. Du kan importere denne samlingen til *Postman*-programvaren ved hjelp av følgende delte kobling: <https://www.getpostman.com/collections/90bd57f36a789e1f8d4c>.
 
@@ -476,7 +476,7 @@ Body:
 
 ## <a name="query-on-hand"></a>Spør om beholdning
 
-API-en _Spør om beholdning_ brukes til å hente gjeldende lagerbeholdningsdata for produktene dine.
+Bruk API-en _Spør om beholdning_ til å hente gjeldende lagerbeholdningsdata for produktene dine. API støtter for øyeblikket spørringer på opptil 100 individuelle varer etter `ProductID`-verdi. Flere `SiteID`- og `LocationID`-verdier kan også angis i hver spørring. Maksimumsgrensen defineres som `NumOf(SiteID) * NumOf(LocationID) <= 100`.
 
 ### <a name="query-by-using-the-post-method"></a><a name="query-with-post-method"></a>Spør ved å bruke posteringsmetoden
 
@@ -551,7 +551,7 @@ Eksemplene nedenfor viser hvordan du spør på alle produkter på et bestemt omr
 
 ```txt
 Path:
-    /api/environment/{environmentId}/onhand/indexquery
+    /api/environment/{environmentId}/onhand
 Method:
     Get
 Headers:
@@ -568,7 +568,7 @@ Query(Url Parameters):
 Her er et eksempel på henting av en URL-adresse. Denne hentforespørselen er nøyaktig den samme som posteringseksemplet som ble angitt tidligere.
 
 ```txt
-/api/environment/{environmentId}/onhand/indexquery?organizationId=usmf&productId=T-shirt&SiteId=1&LocationId=11&ColorId=Red&groupBy=ColorId,SizeId&returnNegative=true
+/api/environment/{environmentId}/onhand?organizationId=usmf&productId=T-shirt&SiteId=1&LocationId=11&ColorId=Red&groupBy=ColorId,SizeId&returnNegative=true
 ```
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,19 +2,19 @@
 title: Migrering av valutadatatype for dobbelt skriving
 description: Dette emnet beskriver hvordan du endrer antallet desimaler som dobbelt skriving støtter for valuta.
 author: RamaKrishnamoorthy
-ms.date: 04/06/2020
+ms.date: 12/08/2021
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-04-06
-ms.openlocfilehash: eaf0cd931e763f31faa334d5353ae6950ed7ee4f
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: bce58631ecd54bb90993bd552d529d3b379de1b1
+ms.sourcegitcommit: 6762a674a552353d9f53587923c9acba9b43cb56
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782813"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "7917736"
 ---
 # <a name="currency-data-type-migration-for-dual-write"></a>Migrering av valutadatatype for dobbelt skriving
 
@@ -83,9 +83,20 @@ Hvis du krever at valutapresisjonen for en bestemt valuta er forskjellig fra val
 
 ![Valutainnstillinger for en bestemt nasjonal innstilling.](media/specific-currency.png)
 
-### <a name="tables-currency-column"></a>tabeller: Valuta-kolonne
+### <a name="tables-currency-column"></a>Tabeller: Valuta-kolonne
 
 Antallet desimaler som kan konfigureres for bestemte valutakolonner, er begrenset til fire.
 
+### <a name="default-currency-decimal-precision"></a>Standard valutadesimalpresisjon
+Hvis du vil ha forventet virkemåte for standard valutadesimalpresisjon under overførings- og ikke-overføringsscenarioer, kan du se følgende tabell. 
+
+| Opprettingsdato  | Valutadesimalfelt    | Eksisterende organisasjon (Valuta-feltet ikke overført) | Eksisterende organisasjon (Valuta-feltet overført) | Ny organisasjonsopprettede poster build 9.2.21062.00134 |
+|---------------------------------------------------------|-------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------|------------------------------------------------|
+| Valutafelt opprettet før build 9.2.21111.00146  |     |  |       |
+|    | Maks presisjon synlig i grensesnitt   | 4 sifre    | 10 sifre    | I/T    |
+| | Maks presisjon synlig i resultatgrensesnittet for database og DB-spørringer         | 4 sifre   | 10 sifre   | I/T    |
+| Valutafelt opprettet etter build 9.2.21111.00146 |    |  |     |   |
+|   | Maks desimalpresisjon synlig i grensesnitt     | 4 sifre   | 10 sifre   | 10 sifre     |
+|          | Maks desimalpresisjon synlig i resultatgrensesnittet for database og DB-spørringer | 10 sifre. Bare 4 er imidlertid signifikante med alle nuller utover de 4 desimaltallene. Dette gjør det mulig med en enklere og raskere overføring av organisasjon om nødvendig. | 10 sifre      | 10 sifre     |
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

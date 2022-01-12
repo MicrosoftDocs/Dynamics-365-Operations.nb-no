@@ -1,29 +1,24 @@
 ---
 title: Kassefunksjoner for Norge
-description: Dette emnet gir en oversikt over hvilke kasse-funksjoner som er tilgjengelige for Norge. Det inneholder også retningslinjer for hvordan du konfigurerer funksjonen.
+description: Dette emnet gir en oversikt over hvilke kassefunksjoner som er tilgjengelige for Norge i Microsoft Dynamics 365 Commerce. og gir retningslinjer for konfigurering av funksjonaliteten.
 author: EvgenyPopovMBS
-ms.date: 09/28/2020
+ms.date: 12/20/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: RetailPosPermissionGroup, RetailFunctionalityProfile, RetailFormLayout, RetailParameters
-audience: Application User
-ms.reviewer: josaw
-ms.search.region: Norway
-ms.search.industry: Retail
+audience: Application User, Developer, IT Pro
+ms.reviewer: v-chgriffin
+ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2017-10-31
-ms.dyn365.ops.version: Application update 4
-ms.openlocfilehash: 168e2d6a7da0deda5f510680c9db9378b5f4ef651ee4c50481dc0039acd76610
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bb87b3a7405ef3d8435748813fa66db74b8f0971
+ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716208"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "7944946"
 ---
 # <a name="cash-register-functionality-for-norway"></a>Kassefunksjoner for Norge
 
-[!include [banner](../includes/banner.md)]
+[!include[banner](../includes/banner.md)]
 
 Dette emnet gir en oversikt over hvilke kasse-funksjoner som er tilgjengelige for Norge i Dynamics 365 Commerce. Det inneholder også retningslinjer for hvordan du konfigurerer funksjonen. Funksjonaliteten består av følgende deler:
 
@@ -174,6 +169,9 @@ På siden **Egendefinerte felt** legger du til følgende poster for de egendefin
 | AmountPerTaxExt                 | Tilgang | 900016          |
 | CashTransactionSequentialNumber | Tilgang | 900017          |
 
+> [!NOTE]
+> Det er viktig at du angir riktige egendefinerte feltnavn, som vist i tabellen ovenfor. Et feil egendefinert feltnavn vil forårsake manglende data i kvitteringer.
+
 ### <a name="configure-receipt-formats"></a>Konfigurere mottaksformater
 
 For alle nødvendige kvitteringsformater endrer du verdien for feltet **Utskriftsatferd** til **Skriv alltid ut** for kvitteringsformatet.
@@ -203,21 +201,19 @@ Hvis du vil ha mer informasjon om hvordan du arbeider med kvitteringsformater, k
 Konfigurasjon av SAF-T-kasse er tilgjengelig for nedlasting fra Microsoft Dynamics Lifecycle Services (LCS). Hvis du vil ha mer informasjon, kan du se [Importere elektroniske rapporteringskonfigurasjoner](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md). Du må laste ned følgende konfigurasjoner:
 
 - **Data for detaljhandelskanal.versjon.1** – Datamodellkonfigurasjonen.
-- **Data for DMM Retail-kanal versjon 1.12** – Konfigurasjonen av datamodelltilordningen.
-- **NO SAF T-kasse.version.1.15** – Formatkonfigurasjonen.
+- **DMM Retail channel data.version.1.14** – Konfigurasjonen av datamodelltilordningen.
+- **NO SAF T-kasse.version.1.20** – Formatkonfigurasjonen.
 
 Når du har importert konfigurasjonene på siden **Handelsparametere**, går du til kategorien **Elektroniske dokumenter** og velger navnet på formatkonfigurasjonen som ble importert, i feltet **Format for eksport av SAF-T-kasse**.
 
 Du må også tilordne nødvendige hoveddata til forhåndsdefinerte SAF-T-standardkoder. Hvis du vil ha mer informasjon, kan du se dokumentasjonen for SAF-T-kasse som leveres av den norske skatteetaten. Hvis du vil opprette tilordningen, må du angi feltet **SAF-T-kassekode** på følgende sider:
 
 - Varegrupper
-- Betalingsmåter
+- Betalingsmetoder
 - Mva-koder
 
 ### <a name="configure-channel-components"></a>Konfigurere kanalkomponenter
 
-Hvis du vil aktivere spesifikke funksjoner for Norge, må du konfigurere utvidelser for komponenter for kanal. Hvis du vil ha mer informasjon, kan du se [retningslinjene for distribusjon](./emea-nor-loc-deployment-guidelines.md).
-
-
+Hvis du vil aktivere spesifikke funksjoner for Norge, må du konfigurere komponenter for kanal. Hvis du vil ha mer informasjon, kan du se [retningslinjene for distribusjon](emea-nor-fi-deployment.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

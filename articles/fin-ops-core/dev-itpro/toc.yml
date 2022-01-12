@@ -478,7 +478,7 @@
               href: dev-tools/application-stack-server-architecture.md
             - name: Få evalueringskopier
               href: dev-tools/get-evaluation-copy.md
-            - name: Registrere deg for forhåndsvisningsabonnementer
+            - name: Registrer deg for forhåndsversjonsabonnementer
               href: dev-tools/sign-up-preview-subscription.md
             - name: Distribuere og få tilgang til utviklingsmiljøer
               items:
@@ -1006,12 +1006,14 @@
               items:
                 - name: Oversikt over Dynamics 365 Translation Service
                   href: lifecycle-services/translation-service-overview.md
-                - name: Oversette brukergrensesnittfiler
+                - name: Oversett brukergrensesnittfiler
                   href: lifecycle-services/use-translation-service.md
                 - name: Oversett dokumentasjonsfiler
                   href: lifecycle-services/use-translation-service-ua.md
-                - name: Filer for oversettelsesminne
+                - name: Filer for oversettingsminne
                   href: lifecycle-services/use-translation-service-tm.md
+                - name: Azure DevOps-utvidelse (forhåndsversjon)
+                  href: lifecycle-services/dts-devops-extension.md
         - name: Microsoft Power Platform-integrering
           items:
             - name: Oversikt
@@ -1236,7 +1238,7 @@
           items:
             - name: Ressurser for mobil plattform
               href: mobile-apps/platform/mobile-platform-home-page.md
-            - name: Komme i gang
+            - name: Kom i gang
               items:
                 - name: Kom i gang med mobil plattform
                   href: mobile-apps/platform/mobile-platform-getting-started.md
@@ -1602,6 +1604,8 @@
                   href: sysadmin/retryable-batch.md
                 - name: Kopier en satsvis jobb
                   href: sysadmin/copy-batch-job.md
+                - name: Prioritetsbasert partiplanlegging
+                  href: sysadmin/priority-based-batch-scheduling.md
                 - name: Aktive satsvise perioder
                   href: sysadmin/activeperiod.md
                 - name: Støtte for sommertid for aktive partiperioder
