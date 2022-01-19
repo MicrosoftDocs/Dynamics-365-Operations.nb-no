@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 02364a0871e9a54f52c7c526cd1897165d52ec68
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: a766247e5482677429706a324c09cc9be4386c0b
+ms.sourcegitcommit: 304a482dfcc31dcb61849f710ae73432324ddef3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345376"
+ms.lasthandoff: 12/29/2021
+ms.locfileid: "7947321"
 ---
 # <a name="record-right-of-use-asset-depreciation-preview"></a>Postere avskrivning for bruksrettseiendel (forhåndsversjon)
 
@@ -35,7 +35,7 @@ For leieavtaler som er oppført i balansen til en organisasjon, nedbetales bruks
 1. Velg en leieavtale på siden **Leiesammendrag**. Deretter velger du **Tablåer \> Avskrivningsplan for aktiva** for å åpne siden **Avskrivningsplan for aktiva**.
 
     Journaloppføring for avskrivningskostnad for bruksrettseiendel er basert på beløpet i kolonnen **Avskrivningsutgift**. Hvis du vil ha et eksempel på retningslinjene for regnskapsstandardsamsvar, kan du se [Beregning av nedbetalingsutgift for bruksrettseiendel for finansiell leie](#calculation-of-rou-asset-amortization-expense-for-finance-leases) senere i dette emnet.
-
+    
 2. Velg avskrivningsperioden, og velg deretter **Opprett Journal**. Du får en melding som angir at journalen som skal brukes til å registrere avskrivning, er opprettet.
 3. Velg **Journaler \> Journaler for aktivaleie** for å åpne siden **Journaler for aktivaleie**, der du kan se journaloppføringen for avskrivningsutgift som ble opprettet.
 
@@ -70,6 +70,8 @@ Som tidligere nevnt beregnes den lineære leieutgiften som summen av alle betali
 
 > [!NOTE]
 > I henhold til ASC 842 klassifiseres avskrivningen av bruksrettseiendelen for gjeldende leie som en leieutgift i resultat regnskapet. For synlighet beskriver aktivaleie posten som avskrivning av bruksrettseiendelen. Debetposten bør imidlertid tilordnes til en utgiftskonto for gjeldende leie, og kreditposten bør tilordnes direkte til bruksrettseiendelen for den gjeldende leien. Men i leieparameterne kan du angi at kreditposter skal opprettes til en akkumulert avskrivningskonto for bruksrettseiendeler.
+
+Hvis leien klassifiseres som gjeldende leie, beregnes den månedlige avskrivningen etter verdiforringelse ved hjelp av lineær avskrivning.
 
 ## <a name="calculation-of-rou-asset-amortization-expense-for-finance-leases"></a>Beregning av nedbetalingsutgift for bruksrettseiendel for finansiell leie
 

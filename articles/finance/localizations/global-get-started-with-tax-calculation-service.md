@@ -2,7 +2,7 @@
 title: Kom i gang med avgiftsberegning
 description: Dette emnet forklarer hvordan du konfigurerer avgiftsberegning.
 author: wangchen
-ms.date: 10/15/2021
+ms.date: 01/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,31 +15,74 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 2f26f8e5eafe29e88c26d3fb6cfa950466ec6be9
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: ae2c20fe79c2f8fd8d102740441230ae443f16a3
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647440"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952527"
 ---
 # <a name="get-started-with-tax-calculation"></a>Kom i gang med avgiftsberegning
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet gir informasjon om hvordan du kommer i gang med avgiftsberegning. Den veileder deg gjennom konfigurasjonstrinnene i Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Service (RCS), Dynamics 365 Finance og Dynamics 365 Supply Chain Management. Deretter gjennomgås de vanlige prosessen for bruk av funksjonene for avgiftsberegning i Finance- og Supply Chain Management-transaksjoner.
+Dette emnet gir informasjon om hvordan du kommer i gang med avgiftsberegning. Delene i dette emnet veileder deg gjennom utforming på høyt nivå og konfigurasjonstrinnene i Microsoft Dynamics Lifecycle Services (LCS), Regulatory Configuration Service (RCS) og Dynamics 365 Finance og Dynamics 365 Supply Chain Management. 
 
-Oppsettet består av fire hovedtrinn:
+Oppsettet består av tre hovedtrinn.
 
 1. I LCS installerer du tillegget for avgiftsberegning.
 2. I RCS konfigurerer du funksjonen for avgiftsberegning. Dette oppsettet er ikke spesifikt for en juridisk enhet. Det kan deles på tvers av juridiske enheter i Finance og Supply Chain Management.
 3. I Finance og Supply Chain Management definerer du parametere for avgiftsberegning etter juridisk enhet.
-4. I Finance og Supply Chain Management oppretter du transaksjoner, for eksempel salgsordrer, og bruker avgiftsberegning til å bestemme og beregne avgifter.
+
+## <a name="high-level-design"></a>Utforming på høyt nivå
+
+### <a name="runtime-design"></a>Kjøretidsutforming
+
+Illustrasjonen nedenfor viser kjøretidsutforming på høyt nivå av avgiftsberegning. Fordi avgiftsberegning kan integreres med flere Dynamics 365-apper, bruker illustrasjonen integreringen med Finance som et eksempel.
+
+1. En transaksjon, for eksempel en salgsordre eller en bestilling, opprettes i Finance.
+2. Finance bruker automatisk standardverdiene for mva-gruppen og mva-gruppen for vare.
+3. Når **Utgående merverdiavgift**-knappen er valgt for transaksjonen, utløses avgiftsberegningen. Finance sender deretter nyttelasten til avgiftsberegningstjenesten.
+4. Avgiftsberegningstjenesten samsvarer med nyttelasten med forhåndsdefinerte regler i avgiftsfunksjonen for å finne en mer nøyaktig mva-gruppe og mva-gruppe for vare samtidig.
+
+    - Hvis nyttelasten kan samsvares med matrisen for **Anvendelse av avgiftsgruppe**, overstyrer den mva-gruppeverdien med verdien i mva-gruppen som samsvarer i relevansregelen. Ellers fortsetter den å bruke mva-gruppeverdien fra Finance.
+    - Hvis nyttelasten kan samsvares med matrisen for **Anvendelse av vareavgiftsgruppe**, overstyrer den varens mva-gruppeverdi med den samsvarende mva-gruppen for vare i relevansregelen. Ellers fortsetter den å bruke mva-gruppeverdien for vare fra Finance.
+
+5. Avgiftsberegningstjenesten fastsetter endelige avgiftskoder ved å bruke skjæringspunktet mellom mva-gruppen og varens mva-gruppe.
+6. Avgiftsberegningstjenesten beregner avgift basert på de endelige avgiftskodene som er bestemt.
+7. Avgiftsberegningstjeneste returnerer resultatet av avgiftsberegningen til Finance.
+
+![Kjøretidsutforming for avgiftsberegning.](media/tax-calculation-runtime-logic.png)
+
+### <a name="high-level-configuration"></a>Konfigurasjon på høyt nivå
+
+Følgende trinn gir en oversikt på høyt nivå over konfigurasjonsprosessen for avgiftsberegningstjenesten.
+
+1. I LCS installerer du tillegget **Avgiftsberegning** i LCS-prosjekt.
+2. I RCS oppretter du funksjonen for **Avgiftsberegning**.
+3. I RCS konfigurerer du funksjonen for **Avgiftsberegning**:
+
+    1. Velg avgiftskonfigurasjonsversjonen.
+    2. Opprett avgiftskoder.
+    3. Opprett en avgiftsgruppe.
+    4. Opprett en vareavgiftgruppe.
+    5. Valgfritt: Opprett avgiftsgrupperelevans hvis du vil overstyre standard mva-gruppe som angis fra hoveddataene for kunde eller leverandør.
+    6. Valgfritt: Opprett varegrupperelevans hvis du vil overstyre standard mva-gruppe for vare som angis fra hoveddataene for vare.
+
+4. I RCS fullfører og publiserer du funksjonen **Avgiftsberegning**.
+5. Velg den publiserte funksjonen **Avgiftsberegning** i Finance.
+
+Når du har fullført disse trinnene, blir følgende oppsett automatisk synkronisert fra RCS til Finance.
+
+- Mva-koder
+- Mva-grupper
+- Vare, mva-grupper
+
+De gjenværende delene i dette emnet gir mer detaljerte konfigurasjonstrinn.
 
 ## <a name="prerequisites"></a>Forutsetninger
 
-Før du kan fullføre trinnene i dette emnet må forutsetninger være på plass for hver miljøtype:
-
-Følgende forutsetninger må være oppfylt:
+Før du kan fullføre de gjenværende trinnene i dette emnet må følgende forutsetninger være på plass:<!--TO HERE-->
 
 - Du må ha tilgang til LCS-kontoen din, og du må ha distribuert et LCS-prosjekt som har et nivå 2-miljø (eller over) som kjører Dynamics 365 versjon 10.0.21 eller senere.
 - Du må opprette et RCS-miljø for din organisasjon, og du må ha tilgang til kontoen. Hvis du vil ha mer informasjon om hvordan du oppretter et RCS-miljø, kan du se [Oversikt over Regulatory Configuration Service](rcs-overview.md).
@@ -72,15 +115,7 @@ Trinnene i denne delen er ikke knyttet til en bestemt juridisk enhet. Du må bar
 5. Velg **Global** i **Type**-feltet.
 6. Velg **Åpne**.
 7. Gå til **Avgiftsdatamodell**, utvid filtreet, og velg deretter **Avgiftskonfigurasjon**.
-8. Velg riktig versjon av avgiftskonfigurasjone for avgift, basert på Finance-versjonen, og velg deretter **Importer**.
-
-    | Versjon | Avgiftskonfigurasjon                       |
-    | --------------- | --------------------------------------- |
-    | 10.0.18         | Avgiftskonfigurasjon - Europa 30.12.82     |
-    | 10.0.19         | Konfigurasjon 36.38.193 for avgiftsberegning |
-    | 10.0.20         | Konfigurasjon 40.43.208 for avgiftsberegning |
-    | 10.0.21         | Konfigurasjon 40.48.215 for avgiftsberegning |
-
+8. Velg riktig [versjon av avgiftskonfigurasjonen](global-tax-calcuation-service-overview.md#versions) basert på Finance-versjonen, og velg deretter **Importer**.
 9. I arbeidsområdet **Globaliseringsfunksjoner** velger du **Funksjoner**, flisen **Avgiftsberegning** og deretter **Legg til**.
 10. Velg en av følgende funksjonstyper:
 
@@ -209,42 +244,3 @@ Oppsettet i denne delen utføres av en juridisk enhet. Du må konfigurere det fo
 
 5. På fanen **Flere mva-registreringer** kan du aktivere mva-deklarering, EU-salgsliste og Intrastat separat for å fungere i et scenario med flere mva-registreringer. Hvis du vil ha mer informasjon om mva-rapportering for flere mva-registreringer, kan du se [Rapportering for flere mva-registreringer](emea-reporting-for-multiple-vat-registrations.md).
 6. Lagre oppsettet, og gjenta de forrige trinnene for hver juridiske enhet. Når en ny versjon blir publisert, og du vil at den skal brukes, angir du feltet **Funksjonsoppsett** på **Generelt**-fanen på siden **Parametere for avgiftsberegning** (se trinn 2).
-
-## <a name="transaction-processing"></a>Transaksjonsbehandling
-
-Når du har fullført alle oppsettprosedyrene, kan du bruke avgiftsberegning til å bestemme og beregne avgifter i Finance. Fremgangsmåten for å behandle transaksjoner forblir de samme. Følgende transaksjoner støttes i Finance versjon 10.0.21:
-
-- Salgsprosess
-
-    - Salgstilbud
-    - Salgsordre
-    - Bekreftelse
-    - Plukkliste
-    - Følgeseddel
-    - Salgsfaktura
-    - Kreditnota
-    - Returordre
-    - Hodegebyr
-    - Linjetillegg
-
-- Innkjøpsprosess
-
-    - Bestilling
-    - Bekreftelse
-    - Tilgangsliste
-    - Produktkvittering
-    - Innkjøpsfaktura
-    - Hodegebyr
-    - Linjetillegg
-    - Kreditnota
-    - Returordre
-    - Innkjøpsrekvisisjon
-    - Belastning på innkjøpsrekvisisjonslinje
-    - Tilbudsforespørsel
-    - Belastning på tilbudsforespørselshode
-    - Belastning på tilbudsforespørselslinje
-
-- Beholdningsprosess
-
-    - Overføringsordre – send
-    - Overføringsordre – motta

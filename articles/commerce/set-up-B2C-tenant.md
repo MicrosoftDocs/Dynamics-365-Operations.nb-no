@@ -2,7 +2,7 @@
 title: Definere en B2C-leier i Commerce
 description: Dette emnet beskriver hvordan du konfigurerer Azure Active Directory (Azure AD) bedrift-til-kunde (B2C)-leietakere for godkjenning av brukerområde i Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 08/31/2021
+ms.date: 01/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d54de9025926d2c1908ce29d2b680a48172f46a4
-ms.sourcegitcommit: 98061a5d096ff4b9078d1849e2ce6dd7116408d1
+ms.openlocfilehash: 8e0fa2c4f22a1854a449a14aac3552313e808cf3
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/01/2021
-ms.locfileid: "7466274"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952450"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>Definere en B2C-leier i Commerce
 
@@ -58,7 +58,9 @@ Før du begynner, må du sørge for at Dynamics 365 Commerce miljøet og e-hande
 
 Etter at Dynamics 365 Commerce miljøet er distriburert, anbefales det også å [Initialisere data for utgangsverdi](enable-configure-retail-functionality.md) i miljøet.
 
-## <a name="create-or-link-to-an-existing-aad-b2c-tenant-in-the-azure-portal"></a>Opprett eller koble til en eksisterende AAD B2C-leier i Azure-portalen
+## <a name="create-or-link-to-an-existing-azure-ad-b2c-tenant-in-the-azure-portal"></a>Opprette eller koble til en eksisterende Azure AD B2C-leier i Azure-portalen
+
+Denne delen dekker oppretting eller kobling av en Azure AD B2C-leier for bruk i Commerce-området. Hvis du vil ha mer informasjon, kan du se [Opplæring: Opprette en Azure Active Directory B2B-leier](/azure/active-directory-b2c/tutorial-create-tenant).
 
 1. Logg på [Azure-portalen](https://portal.azure.com/).
 1. Velg **Opprett en ressurs** fra menyen for Azure-portal. Pass på at du bruker abonnementet og katalogen som skal kobles til Commerce-miljøet.
@@ -68,7 +70,7 @@ Etter at Dynamics 365 Commerce miljøet er distriburert, anbefales det også å 
 1. Gå til **Identitet \> Azure Active Directory B2C**.
 1. På siden **Opprett ny B2C-leier eller koble til en eksisterende leier** bruker du et av alternativene nedenfor som passer best til firmaets behov:
 
-    - **Opprett en ny Azure AD B2C-leier**: Bruk dette alternativet til å opprette en ny AAD B2C-leier.
+    - **Opprett en ny Azure AD B2C-leier**: Bruk dette alternativet til å opprette en ny Azure AD B2C-leier.
         1. Velg **Opprett en ny Azure AD B2C-leier**.
         1. Under **Organisasjonsnavn** angir du organisasjonsnavnet.
         1. Skriv inn det opprinnelige domenenavnet under **Opprinnelig domenenavn**.
@@ -86,7 +88,7 @@ Etter at Dynamics 365 Commerce miljøet er distriburert, anbefales det også å 
 
 1. Når den nye Azure AD B2C-katalogen er opprettet (dette kan ta litt tid), vil det vises en kobling til den nye katalogen på instrumentbordet. Denne koblingen fører deg til siden "Velkommen til Azure Active Directory B2C".
 
-    ![Kobling til ny AAD-katalog.](./media/B2CImage_4.png)
+    ![Koble til ny Azure AD-katalog](./media/B2CImage_4.png)
 
 > [!NOTE]
 > Hvis du har flere abonnementer i Azure-kontoen eller har konfigurert B2C-leieren uten å koble til et aktivt abonnement, vil et **Feilsøking**-banner gi deg beskjed om å koble leieren til et abonnement. Velg feilsøkingsmeldingen, og følg instruksjonene for å løse problemet med abonnement.
@@ -104,11 +106,11 @@ Hvis du vil opprette B2C-programmet, gjør du følgende:
 1. I Azure-portalen velger du **Appregistreringer** og deretter **Ny registrering**.
 1. Under **Navn** angir du navnet du vil gi dette Azure AD B2C-programmet.
 1. Under **Støttede kontotyper** velger du **Kontoer i enhver identitetsleverandør- eller organisasjonskatalog (for godkjenning av brukere med brukerflyter)**.
-1. For **URI for omadressering** angir du de dedikerte svar-URL-ene som typen **Web**. For informasjon om URL-adresser for svar, og hvordan du kan formatere dem, se [URL-adresser for svar](#reply-urls) nedenfor.
+1. For **URI for omadressering** angir du de dedikerte svar-URL-ene som typen **Web**. For informasjon om URL-adresser for svar, og hvordan du kan formatere dem, se [URL-adresser for svar](#reply-urls) nedenfor. En URL-adresse for omdirigering av URI/svar må angis for å aktivere omdirigeringer fra Azure AD B2C tilbake til området når en bruker godkjenner det. Svar/URLen kan legges til under registreringsprosessen, eller den kan legges til senere ved å velge koblingen **Legg til en omdirigerings-URI** fra **Oversikt**-menyen i B2C-programmets **Oversikt**-del.
 1. For **Tillatelser** velger du **Gi administratorsamtykke til openid- og offline_access-tillatelser**.
 1. Velg **Registrer**.
-1. Velg det nyopprettede programmet, og naviger til **Godkjenning**-menyen. Her kan du legge til flere **URI-er for omadressering** hvis det er nødvendig (nå eller senere). Fortsett til neste trinn hvis det ikke er nødvendig.
-1. Under **Implisitt tildeling** velger du både **Tilgangstokener** og **ID-tokener** for å aktivere dem for programmet. Velg **Lagre**.
+1. Velg det nyopprettede programmet, og naviger til **API-tillatelser**-menyen. 
+1. Hvis det angis en svar-URL-adresse, går du til **Implisitt tildeling og hybridflyter** og velger både **Tilgangstokener** og **ID-tokener**-alternativene for å aktivere dem for programmet, og deretter velger du **Lagre**. Hvis en URL-adresse for svar ikke ble lagt inn under registreringen, kan den også legges til på denne siden ved å velge **Legg til en plattform**, velge **Web** og deretter angi omadresserings-URI for programmet. Delen **Implisitt tildeling og hybridflyt** vil deretter være tilgjengelig for å velge både alternativene **Tilgangstokener** og **ID-tokener**.
 1. Gå til **Oversikt**-menyen i Azure-portalen, og kopier **Program-ID-en (klient)**. Noter denne ID-en for senere trinn i oppsettet (som blir referert til senere som **Klient-GUID**).
 
 Hvis du vil ha mer informasjon om appregistreringer i Azure AD B2C, kan du se [Den nye appregistreringsopplevelsen for Azure Active Directory B2C](/azure/active-directory-b2c/app-registrations-training-guide)
@@ -131,7 +133,7 @@ Azure AD B2C gir tre enkle flyttyper for brukere:
 - Profilredigering
 - Tilbakestill passord
 
-Du kan velge å bruke standard brukerflyter i Azure AD, som vil vise en side som ligger på AAD-B2C. Du kan også opprette en HTML-side for å kontrollere utseendet og funksjonaliteten til brukerflytopplevelsene. 
+Du kan velge å bruke standard brukerflyter i Azure AD, som vil vise en side som ligger på Azure AD B2C. Du kan også opprette en HTML-side for å kontrollere utseendet og funksjonaliteten til brukerflytopplevelsene. 
 
 Hvis du vil tilpasse brukerpolicysidene med sider som er bygd i Dynamics 365 Commerce, kan du se [Definere egendefinerte sider for brukerpålogginger](custom-pages-user-logins.md). Hvis du vil ha mer informasjon, se [Tilpasse grensesnittet til brukeropplevelser i Azure Active Directory B2C](/azure/active-directory-b2c/tutorial-customize-ui).
 
@@ -143,9 +145,9 @@ Følg denne fremgangsmåten for å opprette en brukerflytpolicy for registrering
 1. På siden **Azure AD B2C – brukerflyter (policyer)** velger du **Ny brukerflyt**.
 1. Velg policyen **Registrering og pålogging**, og velg deretter den **anbefalte** versjonen.
 1. Under **Navn** skriver du inn et policynavn. Dette navnet vil vises etterpå med et prefiks som portalen tilordner (for eksempel "B2C_1_").
-1. Under **Identitetsleverandører** merker du av for den aktuelle avmerkingsboksen.
+1. Under **Identitetsleverandører** i delen **Lokale kontoer**-delen velger du **E-postregistrering**. E-postgodkjenning brukes i de vanligste scenariene for Commerce. Hvis du også bruker godkjenning av leverandør av sosiale identiteter, kan disse også velges på dette tidspunktet.
 1. Velg ønsket valg for firmaet under **Godkjenning med flere faktorer**. 
-1. Under **Brukerattributter og krav** velger du alternativer for å samle attributter eller returkrav etter behov. Commerce krever følgende standard alternativer:
+1. Under **Brukerattributter og krav** velger du alternativer for å samle attributter eller returkrav etter behov. Velg **Vis mer...** for å få hele listen over attributter og kravalternativer. Commerce krever følgende standard alternativer:
 
     | **Innhent attributt** | **Returkrav** |
     | ---------------------- | ----------------- |
@@ -161,9 +163,6 @@ Bildet nedenfor er et eksempel på brukerflyt for Azure AD B2C registrering og p
 
 ![Policyinnstillinger for registrering og pålogging.](./media/B2CImage_11.png)
 
-Bildet nedenfor viser alternativet **Kjør brukerflyt** i brukerflyten Azure AD B2C registering og pålogging.
-
-![Kjør brukerflyt-alternativet policyflyt.](./media/B2CImage_23.png)
    
 ### <a name="create-a-profile-editing-user-flow-policy"></a>Opprette en brukerflytpolicy for profilredigering
 
@@ -173,18 +172,22 @@ Følg denne fremgangsmåten for å opprette en brukerflytpolicy for profilredige
 1. På siden **Azure AD B2C – brukerflyter (policyer)** velger du **Ny brukerflyt**.
 1. Velg **Profilredigering**, og velg deretter den **anbefalte** versjonen.
 1. Under **Navn** angir du brukerflyten for profilredigering. Dette navnet vil vises etterpå med et prefiks som portalen tilordner (for eksempel "B2C_1_").
-1. Under **Identitetsleverandører** velger du **Logg på via e-post**.
+1. Under **Identitetsleverandører** i delen **Lokale kontoer**-delen velger du **Logg på via e-post**.
 1. Under **Brukerattributter** merker du av følgende avmerkingsbokser:
-    - **E-postadresser** (bare **Returkrav**)
-    - **Gitt navn** (**Innhent attributt** og **Returkrav**)
-    - **Identitetsleverandør** (bare **Returkrav**)
-    - **Etternavn** (**Innhent attributt** og **Returkrav**)
-    - **Brukers objekt-ID** (**bare Returkrav**)
+    
+    | **Innhent attributt** | **Returkrav** |
+    | ---------------------- | ----------------- |
+    |                        | E-postadresser   |
+    | Gitt navn             | Gitt navn        |
+    |                        | Identitetsleverandør |
+    | Etternavn                | Etternavn           |
+    |                        | Brukers objekt-ID  |
+    
 1. Velg **Opprett**.
 
 Det følgende bildet viser et eksempel på brukerflyten for Azure AD B2C-profilredigering.
 
-![Opprette brukerflyten for profilredigering.](./media/B2CImage_12.png)
+![Eksempel på Azure AD B2C-profil som redigerer brukerflyt](./media/B2CImage_12.png)
 
 ### <a name="create-a-password-reset-user-flow-policy"></a>Opprette en brukerflytpolicy for tilbakestilling av passord
 
@@ -324,11 +327,11 @@ Bildet nedenfor viser et eksempel på brukerflytpolicyer på siden **Azure AD B2
 
 ![Samle navnene på hver B2C-policyflyt.](./media/B2CImage_22.png)
 
-### <a name="enter-your-aad-b2c-tenant-application-information-into-commerce"></a>Skriv inn programinformasjon om AAD-B2C-leieren i Commerce
+### <a name="enter-your-azure-ad-b2c-tenant-application-information-into-commerce"></a>Skriv inn programinformasjon om Azure AD-B2C-leieren i Commerce
 
 Du må angi detaljer for Azure AD B2C-leieren i Commerce-områdebygger før du knytter B2C-leieren til områdene.
 
-Følg denne fremgangsmåten for å legge til programinformasjon om AAD-B2C-leier i Commerce.
+Følg denne fremgangsmåten for å legge til programinformasjon om Azure AD B2C-leieren i Commerce.
 
 1. Logg på som administrator for Commerce-områdebygger for miljøet.
 1. Velg **Leierinnstillinger** i navigasjonsruten til venstre for å utvide den.

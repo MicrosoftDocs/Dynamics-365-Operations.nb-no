@@ -4,13 +4,13 @@
       items:
         - name: Startside for Dynamics 365 Finance
           href: index.md
-        - name: Komme i gang
+        - name: Kom i gang
           items:
             - name: Tjenestebeskrivelse
               href: ../fin-ops-core/fin-ops/get-started/service-description.md?toc=/dynamics365/finance/toc.json
             - name: Før du kjøper
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/finance/toc.json
-            - name: Registrere deg for forhåndsvisningsabonnementer
+            - name: Registrer deg for forhåndsversjonsabonnementer
               href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/finance/toc.json
             - name: Oppdatering av én versjonstjeneste
               items:
@@ -58,7 +58,7 @@
                   href: ../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/dynamics365/finance/toc.json
                 - name: Systemkrav for lokale distribusjoner
                   href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/finance/toc.json
-                - name: Kjøpe Finance + Operations (on-premises)
+                - name: Kjøp Finance + Operations (on-premises)
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurer lager for lokale distribusjoner
                   href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/finance/toc.json
@@ -1208,10 +1208,12 @@
               items:
                 - name: Konfigurer Finance Insights
                   href: finance-insights/configure-for-fin-insites.md
-                - name: Aktiver kundebetalingsprognoser
+                - name: Aktiver kundebetalingsforutsigelser
                   href: finance-insights/enable-cust-paymnt-prediction.md
                 - name: Aktiver kontantstrømprognose
                   href: finance-insights/enable-cash-flow-forecasting.md
+                - name: Eksterne data i kontantstrømprognoser
+                  href: finance-insights/external-data-in-cash-flow.md
                 - name: Aktiver budsjettforslag
                   href: finance-insights/enable-budget-proposal.md
                 - name: Opprett dataintegreringsprosjekt
@@ -1232,10 +1234,8 @@
                   href: finance-insights/budget-proposals.md
                 - name: Likviditetsbeholdning
                   href: finance-insights/cash-position.md
-                - name: Kontantstrømprognose
+                - name: Kontantprognose
                   href: finance-insights/cash-flow-forecast-intro.md
-                - name: Bruke eksterne data i kontantstrømprognoser
-                  href: finance-insights/external-data-in-cash-flow.md
                 - name: Kundebetalingsforutsigelser
                   href: finance-insights/payment-insights-overview.md
                 - name: Bruk kundebetalingsforutsigelser
@@ -1416,7 +1416,7 @@
                       href: localizations/e-invoicing-create-azure-storage-account-key-vault.md?toc=/dynamics365/finance/toc.json
                     - name: Instrumentbord for bruksstyring
                       href: localizations/e-invoicing-usage-management-dashboard.md?toc=/dynamics365/finance/toc.json
-                    - name: Komme i gang
+                    - name: Kom i gang
                       items:
                         - name: Kom i gang med tjenesteadministrasjon for elektronisk fakturering
                           href: localizations/e-invoicing-get-started-service-administration.md?toc=/dynamics365/finance/toc.json
@@ -1432,6 +1432,8 @@
                           href: localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: Kom i gang med elektronisk fakturering for Saudi-Arabia
                           href: localizations/e-invoicing-sa-get-started.md
+                        - name: Konfigurer direkte integrering av italiensk FatturaPA med SDI
+                          href: localizations/e-invoicing-ita-fatturapa-get-started.md
                         - name: Bruk den elektroniske faktureringstjenesten til å importere leverandørfakturaer
                           href: localizations/e-invoicing-get-started-import-vendor-invoices.md
                         - name: Definer elektronisk fakturering
@@ -1512,6 +1514,10 @@
                           items:
                             - name: Mva-deklarering
                               href: localizations/emea-gbr-vat-declaration.md
+                        - name: Norsk rapportering
+                          items:
+                            - name: Mva-deklarering
+                              href: localizations/emea-nor-vat-declaration.md
                     - name: Aktiver avgiftsberegning for overføringsordre
                       items:
                         - name: Støtte for avgiftsfunksjon for overføringsordrer
@@ -1557,7 +1563,7 @@
                 - name: Mva-oppgave
                   href: localizations/emea-aut-vat-statement-details.md
                 - name: Rapport for tjenester over grenser
-                  href: localizations/emea-aut-vat-statement-details.md
+                  href: localizations/emea-aut-cross-border-services-report.md
                 - name: Østerriksk Intrastat
                   href: localizations/emea-aut-intrastat.md
                 - name: Innkjøpsavgifter
@@ -1824,11 +1830,11 @@
                   href: localizations/tasks/golden-tax-integration-export-setup.md
                 - name: Metoder for avskrivning av anleggsmidler
                   href: localizations/apac-chn-depreciation-methods-fixed-assets.md
-                - name: Importere dataenheten Chinese Golden Tax
+                - name: Importer filene for kinesisk merverdiavgift
                   href: localizations/apac-chn-import-golden-tax-data-entity.md
                 - name: Kostmodell med månedlig gjennomsnitt
                   href: localizations/apac-chn-monthly-average-cost-model.md
-                - name: Bokføre lagerhovedkontoer etter område
+                - name: Poster lagerhovedkontoer etter område
                   href: localizations/apac-chn-post-inventory-main-accounts-by-site.md
                 - name: Postere bilag fra andre moduler
                   href: localizations/tasks/post-vouchers-other-modules-like-sales-invoices.md
@@ -2088,6 +2094,8 @@
                   href: localizations/finland.md
                 - name: Rapport for mva-betaling for Finland
                   href: localizations/emea-fin-sales-tax-payment-report-finland.md
+                - name: Finsk Intrastat
+                  href: localizations/emea-fin-intrastat.md
             - name: Frankrike
               items:
                 - name: Oversikt over Frankrike
@@ -2610,6 +2618,8 @@
                   href: localizations/apac-idn-invoicing.md
                 - name: Mva-deklarering for Indonesia
                   href: localizations/apac-idn-ppn-declaration.md
+                - name: Kildeskattrapport for Indonesia
+                  href: localizations/apac-idn-wht-declaration.md
             - name: Italia
               items:
                 - name: Oversikt over Italia

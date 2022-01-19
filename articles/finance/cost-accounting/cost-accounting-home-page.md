@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 88dea2724f574383298c5deac9b76b4cd1d802b5427c8ec2a59a9d1ab0de4e0c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ab125f963b8f2e00c8d937c6eea091970feaef65
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741590"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952552"
 ---
 # <a name="cost-accounting-home-page"></a>Startside for kostnadsregnskap
 
@@ -38,7 +38,7 @@ De følgende opplæringskart viser de store konseptene og oppgavene som utgjør 
 
 | &nbsp; | &nbsp;  |
 |------|---|
-|  [Konfigurere grunnenheter (e-læring)](https://mbspartner.microsoft.com/Home) (krever CustomerSource-konto)  |[Kostnadselementdimensjoner](cost-elements.md)  |
+|  [Komme i gang med kostnadsregnskap (Learn)](https://docs.microsoft.com/learn/modules/get-started-cost-accounting-dyn365-finance/)  |[Kostnadselementdimensjoner](cost-elements.md)  |
 |  [Dimensjonshierarki](dimension-hierarchy.md)  |[Definere kostnadskontrollenheter](./tasks/define-cost-control-units.md)| 
 | [Tildelingsgrunnlag](allocation-bases.md)|[Opprette og tilordne en kostnadsfordelingspolicy til en kostnadskontrollenhet](./tasks/create-assign-cost-allocation-policy-cost-control-unit.md) | 
 | [Administrere en datakilde for kostnadsregnskapsfinansen](./tasks/manage-data-source-cost-accounting-ledger.md) |                                           [Behandle og spore kildedata](./tasks/process-trace-source-data.md)     | 

@@ -2478,9 +2478,7 @@
                       href: e-commerce-extensibility/globalize-modules.md
                     - name: Konfigurer Azure Key Vault for sikker nøkkelbehandling
                       href: e-commerce-extensibility/set-up-key-vault.md
-                    - name: Opprett en programtilleggskrok for forespørsel om forløp
-                      href: e-commerce-extensibility/request-pipeline-hook.md
-                    - name: Bildekomponenter
+                    - name: Bildekomponent
                       href: e-commerce-extensibility/image-component.md
                 - name: Utarbeid datahandlinger
                   items:

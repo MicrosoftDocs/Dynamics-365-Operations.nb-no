@@ -2,7 +2,7 @@
 title: Klargjøre Human Resources
 description: Dette emnet forklarer prosessen med å klargjøre et nytt produksjonsmiljø for Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 08/11/2021
+ms.date: 01/07/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c84fdb3c5c61598dfd0934e769f4a7262ce74052
-ms.sourcegitcommit: 8439ce2d4ad5ee5c1ec870640b52b5d2e947a671
+ms.openlocfilehash: b5ea27c6650df0b94284902eb37e2169ea36261a
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "7644533"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952708"
 ---
 # <a name="provision-human-resources"></a>Klargjøre Human Resources
 
@@ -44,7 +44,7 @@ Før du klargjør den første sandkasse- eller produksjonsmiljøet, kan det hend
 
 Prøvemiljøer gir muligheten til å evaluere personalfunksjonaliteten for personer som ikke allerede har tilgang til et Personale-miljø. Hvis du klargjør et prøvemiljø, og den godkjente brukeren allerede har tilgang til ett eller flere eksisterende Personale-miljøer, blir brukeren sendt videre til det eksisterende miljøet eller listen over miljøer.
 
-Prøvemiljøene er ikke ment å brukes som produksjonsmiljøer. De er begrenset til en 60-dagers prøveperiode. Når prøveperioden utløper, kan ikke miljøet alle dataene slettes eller gjenopprettes. Miljøet kan ikke konverteres til et sandkasse- eller produksjonsmiljø. Du kan registrere deg for et nytt prøvemiljø etter det eksisterende miljøet er utløpt.
+Prøvemiljøene er ikke ment å brukes som produksjonsmiljøer. De er begrenset til en 30-dagers prøveperiode. Når prøveperioden utløper, kan ikke miljøet alle dataene slettes eller gjenopprettes. Miljøet kan ikke konverteres til et sandkasse- eller produksjonsmiljø. Du kan registrere deg for et nytt prøvemiljø etter det eksisterende miljøet er utløpt.
 
 Når du oppretter et prøvemiljø for Human Resources, opprettes det også et Power Apps prøvemiljø i leieren og knyttes til Human Resources-miljøet. Miljøet Power Apps, kalt "TestDrive", har den samme prøveperioden som Human Resources-miljøet.
 

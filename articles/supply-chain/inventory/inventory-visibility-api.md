@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: d676191f921d74a5a0ced934f3692dacbe7cd7b4
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 92c427d3063c34f263d5bc449be6fac695b5912d
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920124"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952633"
 ---
 # <a name="inventory-visibility-public-apis"></a>Offentlige API-er for lagersynlighet
 
@@ -48,6 +48,8 @@ Microsoft har levert en *Postman*-forespørselssamling ut av boksen. Du kan impo
 
 > [!NOTE]
 > Delen {environmentId} av banen er miljø-IDen i Microsoft Dynamics Lifecycle Services (LCS).
+> 
+> Bulk-API-en kan returnere maksimalt 512 poster for hver forespørsel.
 
 ## <a name="find-the-endpoint-according-to-your-lifecycle-services-environment"></a>Finn sluttpunktet i henhold til Lifecycle Services-miljøet
 
@@ -249,7 +251,7 @@ Følgende eksempel viser eksempeltekstinnholdet uten `dimensionDataSource`. I de
 
 ### <a name="create-multiple-change-events"></a><a name="create-multiple-onhand-change-events"></a>Opprett flere endringshendelser
 
-Denne API-en kan opprette flere poster samtidig. De eneste forskjellene mellom denne API-en og [API-en for én hendelse](#create-one-onhand-change-event) er verdiene for `Path` og `Body`. For denne API-en inneholder `Body` en matrise med poster.
+Denne API-en kan opprette flere poster samtidig. De eneste forskjellene mellom denne API-en og [API-en for én hendelse](#create-one-onhand-change-event) er verdiene for `Path` og `Body`. For denne API-en inneholder `Body` en matrise med poster. Det maksimale antallet poster er 512, noe som betyr at parti-API for lagerendring kan støtte opptil 512 endringshendelser om gangen.
 
 ```txt
 Path:

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: fd79880dc8aa77eea8c16f350c0853013c6ad17b
-ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
+ms.openlocfilehash: b104cec399a368ada64a73688c42476e6fbd9e52
+ms.sourcegitcommit: 304a482dfcc31dcb61849f710ae73432324ddef3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7890836"
+ms.lasthandoff: 12/29/2021
+ms.locfileid: "7947346"
 ---
 # <a name="impair-right-of-use-assets"></a>Forringe bruksrettseiendeler
 
@@ -44,6 +44,8 @@ Den gjenstående saldoen for bruksrettseiendelen vil bli nedbetalt lineært for 
 
     > [!NOTE]
     > Når transaksjonen for nedskrivning er postert, opprettes en ny bokversjon.
+
+    > Hvis leien klassifiseres som gjeldende leie, beregnes den månedlige avskrivningen etter verdiforringelse ved hjelp av lineær avskrivning.
 
 9. Hvis du vil vise avskrivningsplanen for det forringede aktivaet, åpner du avskrivningsplanen for aktivaet for leietablået. Aktivaet blir nå avskrevet på et lineært grunnlag over det antallet måneder du har angitt i feltet **Gjenstående perioder**.
 10. Hvis du vil vise journaloppføringen for verdiforringelsesutgiften, velger du **Journal for aktivaleie** i handlingsruten i tablået for forringet leieavtale. Systemet oppretter en journaloppføring som debiterer posteringskontoen for verdiforringelsesutgiften og krediterer posteringskontoen for leieaktiva. 
@@ -100,6 +102,7 @@ Tabellene nedenfor viser verdiene som er angitt i fanene **Generelt** og **Linje
     | Lukk tablå             | Nei       |
 
 6. En journaloppføringen for verdiforringelsesutgift er opprettet og postert. For å vise det går du til journalen for aktivaleie i leietablået. Legg merke til at beløpet for verdiforringelsen ble debitert til posteringskontoen for verdiforringelsesutgift, og at posteringskontoen for bruksrettseiendel ble kreditert.
+
 7. Hvis du vil vise nettoinnvirkning for verdiforringelsen, går du til tabellene for gjeld og anleggsmiddeltransaksjoner. Legg merke til at verdiforringelseutgiften har redusert bruksrettseiendelen, men det indirekte beløpet for leieforpliktelse er ikke endret.
 
 Verdiforringelsen har én annen effekt som du bør vurdere. Fordi beløpet for bruksrettseiendelen nå er mye mindre enn leieforpliktelsen, må beløpet avskrives på en annen måte enn før. Spesielt avskrives aktivaet nå på en lineær måte i løpet av de gjenværende 84 månedene i leieavtalen, som begynner på transaksjonsdatoen.

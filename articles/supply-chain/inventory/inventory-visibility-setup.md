@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: d6f58eab38d1aee97a5d39704255bf06a168b36c
-ms.sourcegitcommit: 79d19924ed736c9210fa9ae4e0d4c41c53c27eb5
+ms.openlocfilehash: 26f8820fe707b8a2dff0dcc1a24884ef02e5616f
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "7581871"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952502"
 ---
 # <a name="install-and-set-up-inventory-visibility"></a>Installere og definere lagersynlighet
 
@@ -71,6 +71,9 @@ Når du har registrert en app og lagt til en klienthemmelighet i Azure AD, følg
 1. Godta vilkåret og betingelsen ved å merke av for **Vilkår og betingelser**.
 1. Velg **Installer**. Statusen for tillegget vises som **Installerer**. Når installasjonen er fullført, oppdaterer du siden. Statusen skal endres til **Installert**.
 1. I Dataverse merker du **Apper**-delen i venstre navigasjon, og kontrollerer at **lagersynligheten** Power Apps er installert. Hvis **Apper**-deler ikke finnes, kontakter du produktteamet til Lagersynlighet på [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com).
+
+> [!TIP]
+> Vi anbefaler at du blir med i brukergruppen Tillegg for lagersynlighet, der du kan finne nyttige guider, få de siste oppdateringene og postere eventuelle spørsmål du måtte ha om bruk av lagersynlighet. Hvis du vil delta, kan du sende en e-postmelding til produktgruppen Lagersynlighet på [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) og inkludere miljø-IDen for Supply Chain Management.
 
 > [!IMPORTANT]
 > Hvis du har mer enn ett LCS-miljø, oppretter du et annet Azure AD program for hvert miljø. Hvis du bruker samme program-ID og leie-ID til å installere tillegget for lagersynlighet for forskjellige miljøer, vil det oppstå et tokenproblem for eldre miljøer. Bare den siste som ble installert, vil være gyldig.

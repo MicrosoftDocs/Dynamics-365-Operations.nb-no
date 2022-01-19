@@ -2,7 +2,7 @@
 title: Betalingsmodul
 description: Dette emnet dekker betalingsmodulen og forklarer hvordan du konfigurerer den i Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 11/18/2020
+ms.date: 01/07/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 303b5f0bdfdb00accab2598acc2545bca69660412e170202152303c8ed81314e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: de92e137815cb79944a2793fc4841c949ed43346
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774563"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952475"
 ---
 # <a name="payment-module"></a>Betalingsmodul
 
@@ -90,7 +90,24 @@ På samme måte som betalingsmoduler er en egenskap for **Støttede betalingsmid
 
 En betalingsmodul kan bare legges til i en kassemodul. Hvis du vil ha mer informasjon om hvordan du konfigurerer en betalingsmodul for en kasseside, se [Kassemodul](add-checkout-module.md).
 
-Hvis det er behov for både Adyen- og PayPal-betalingskoblingene, legger du til begge modulene i betalingsdelen. Kontroller at egenskapsverdien **Støttede betalingsmiddeltyper** er konfigurert for PayPal, og la den stå tom for Adyen. Sett også egenskapen **Er primærbetaling** til **Sann** for Adyen.
+## <a name="configure-the-adyen-and-paypal-payment-connectors-when-both-are-used"></a>Konfigurere betalingskontaktene Adyen og PayPal når begge brukes
+
+Hvis betalingskontaktene Adyen og PayPal vil bli brukt for området, følger du denne fremgangsmåten i Commerce-områdebyggeren for å legge til betalingsmoduler for hver kobling i utsjekkingsmodulen, og deretter konfigurere egenskapene for hver modul.
+
+1. Følg denne fremgangsmåten i egenskapsruten for PayPal-betalingsmodulen:
+
+    1. I feltet for egenskapen **Støttede betalingsmiddeltyper**, angir du **PayPal**.
+    1. Fjern merket i avmerkingsboksen for egenskapen **Er primærbetaling**.
+    1. Merk av for egenskapen **Bruk koblings-ID**.
+
+1. Følg denne fremgangsmåten i egenskapsruten for Adyen-betalingsmodulen:
+
+    1. La feltet for egenskapen **Støttede betalingsmiddeltyper** stå tom.
+    1. Merk av i avmerkingsboksen for egenskapen **Er primærbetaling**.
+    1. Merk av for egenskapen **Bruk koblings-ID**.
+
+> [!NOTE]
+> Når du konfigurerer Adyen- og PayPal-koblingene som skal brukes sammen, må konfigurasjonen **Dynamics 365 Payment Connector for Adyen** være i første posisjon i den elektroniske kanalens koblingskonfigurasjon for **Betalingskontoer** i Commerce Headquarters. Hvis du vil bekrefte eller endre koblingsrekkefølgen, kan du gå til **Nettbutikker** og velge kanalen for området. I kategorien for **Oppsett** i hurtigkategorien **Betalingskontoer** under **Kobling** kontrollerer du at **Dynamics 365 Payment Connector for Adyen**-konfigurasjonen er i første posisjon (det vil si på den øverste linjen), og at **Dynamics 365 Payment Connector for PayPal**-konfigurasjonen står på den andre linjen. Legg til eller fjern koblinger etter behov for å bestille dem på nytt.
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

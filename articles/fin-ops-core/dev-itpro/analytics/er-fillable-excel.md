@@ -2,7 +2,7 @@
 title: Utforme en konfigurasjon til å generere dokumenter i Excel-format
 description: Dette emnet beskriver hvordan du utformer et format for elektronisk rapportering (ER) for å fylle ut en Excel-mal, og deretter generere utgående dokumenter i Excel-format.
 author: NickSelin
-ms.date: 12/15/2021
+ms.date: 01/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 87d5929557e5120a5339ee46eac655fd399679d1
-ms.sourcegitcommit: f51e74ee9162fe2b63c6ce236e514840795acfe1
+ms.openlocfilehash: 9b1c83894d93789a270ed4521ba7f80da70285ac
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7943618"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952658"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>Utforme en konfigurasjon til å generere dokumenter i Excel-format
 
@@ -379,7 +379,7 @@ Hvis en av malene inneholder en pivottabell som er basert på en PowerPivot-mode
     2. Bruk ER til å generere en ny Excel-arbeidsbok (arbeidsbok B) fra Finance som inneholder de nødvendige detaljene. 
     3. Se i arbeidsbok B i arbeidsbok A så snart arbeidsbok B er generert.
 
-- Bruk et annet alternativ enn EPPlus for å slå av funksjonen. 
+- Slå av funksjonen **Aktivere bruken av EPPlus-bibliotek i Rammeverk for elektronisk rapportering** for å bruke et annet alternativ enn EPPlus. 
 
 ## <a name="additional-resources"></a>Tilleggsressurser
 

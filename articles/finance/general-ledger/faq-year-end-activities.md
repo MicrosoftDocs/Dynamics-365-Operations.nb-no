@@ -1,8 +1,8 @@
 ---
 title: Vanlige spørsmål om årssluttaktiviteter
-description: Dette emnet er kompilert for å bidra med aktiviteter for årsavslutning.
-author: kweekley
-ms.date: 01/25/2021
+description: Dette emnet viser spørsmål som kan oppstå ved avslutning av et år, og svarene som kan hjelpe til med aktiviteter for årsavslutning.
+author: moaamer
+ms.date: 12/21/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -13,20 +13,32 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 1b7606314b9cf7050a565822b5b9e23beb0cb4978b20e88596c5002d918cfcd9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b0560024d87ad72c7ab77eaff52a305a4ab5a089
+ms.sourcegitcommit: cd0ba5f0ac7c44d36559a3e6e0fffb6ed18f9a20
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6725080"
+ms.lasthandoff: 12/28/2021
+ms.locfileid: "7947268"
 ---
 # <a name="year-end-activities-faq"></a>Vanlige spørsmål om årssluttaktiviteter 
 
 [!include [banner](../includes/banner.md)]
 
-Dette emnet er kompilert for å bidra med aktiviteter for årsavslutning. Informasjonen i dette emnet fokuserer først og fremst på spørsmål som gjelder lukkeaktiviteter ved årsavslutning for økonomi- og leverandørmodulen.
+Dette emnet viser spørsmål som kan oppstå ved avslutning av et år, og svarene som kan hjelpe til med aktiviteter for årsavslutning. Informasjonen i dette emnet fokuserer først og fremst på spørsmål som gjelder lukkeaktiviteter ved årsavslutning for økonomi- og leverandørmodulen.
 
-## <a name="general-ledger-how-do-i-know-that-were-running-year-end-close-and-not-undoing-year-end-close"></a>Økonomi: Hvordan vet jeg at vi kjører årsavslutning og ikke angrer årsavslutning?
+## <a name="general-ledger-year-end-enhancements"></a>Forbedringer ved årsavslutning for økonomimodul 
+Versjon 10.0.20 innførte en forbedring av årsavslutning, som er aktivert som standard fra og med versjon 10.0.25. Hvis organisasjonen bruker en versjon som er tidligere enn 10.0.25, anbefaler vi at du aktiverer denne funksjonen før du starter årsavslutningsprosessen. Før du kan bruke denne funksjonen, må den være aktivert i systemet. Administratorer kan bruke arbeidsområdet Funksjonsbehandling til å kontrollere funksjonsstatusen og aktivere den hvis den kreves. Funksjonen vises på følgende måte:
+
+ - Modul: Økonomimodul
+ - Funksjonsnavn: Forbedringer ved årsavslutning for økonomimodul
+
+Oppsettet av årsavslutningsmalene er flyttet til den nye oppsettsiden **Konfigurasjon av årsavslutningsmal**. Den eksisterende siden for årsavslutning endres på en måte som ligner på revaluering av utenlandsk valuta i økonomimodulen, der en liste vises hver gang årsavslutningen kjøres eller tilbakeføres. En regnskapsansvarlig kan starte årsavslutningen fra den nye siden. 
+
+Hvis du vil tilbakeføre årsavslutningen, velger du det nyeste regnskapsåret for den aktuelle juridiske enheten og velger knappen **Tilbakefør årsavslutning**. Tilbakeføringen sletter regnskapsoppføringene for forrige årsavslutning og kjører ikke årsavslutningen på nytt automatisk. 
+
+Du kan kjøre årsavslutningen på nytt ved å starte prosessen for regnskapsåret og den juridiske enheten på nytt. Prosessen fortsetter å bruke parameterinnstillingen for økonomimodulen til å finne ut om årsavslutningen skal ta hensyn til bare de nye eller endrede transaksjonene, eller om den skal fullstendig tilbakeføre den forrige avslutningen og kjøre prosessen på nytt for alle transaksjoner.  
+
+## <a name="general-ledger-how-do-i-know-that-were-running-year-end-close-and-not-undoing-year-end-close"></a>Økonomimodul: Hvordan vet jeg at vi kjører årsavslutning og ikke angrer årsavslutning?
 Vi har sett at organisasjoner prøver å kjøre årsavslutningen, men i stedet utførte vi opphevet årsavslutning. Hvis årsavslutningen avsluttes ganske raskt, eller årsavslutningen ikke genererer åpningssaldoer, validerer du innstillingen **Angre forrige avslutning** i **Årsavslutning** (**Økonomimodul > Periodeslutt > Årsavslutning > Kjør årsavslutning**). 
 
 [![Kjøring av årsavslutning i forhold til å angre årsavslutning.](./media/faq-2020-yr-end-01.png)](./media/faq-2020-yr-end-01.png)
@@ -65,53 +77,82 @@ Unødvendige dimensjonssett påvirker også den satsvise jobben **BudgetDimensio
 ### <a name="year-end-close-template-configuration"></a>Konfigurasjon av årsavslutningsmal
 Ved hjelp av årsavslutningsmalen kan organisasjonene velge finansdimensjonsnivået som skal vedlikeholdes ved overføring av resultatsaldoer til opptjente inntekter. Innstillingene gjør at en organisasjon kan vedlikeholde de detaljerte finansdimensjonene (**Avslutt alle**) når saldoene flyttes til opptjente inntekter eller velger å summere beløpene til én dimensjonsverdi (**Avslutt én**). Dette kan defineres for hver finansdimensjon. Hvis du vil ha mer informasjon om disse innstillingene, kan du se emnet [Årsavslutning](year-end-close.md).
 
-Det anbefales at du evaluerer organisasjonens krav, og lukker så mange dimensjoner som mulig ved hjelp av årsavslutningsalternativet **Avslutt én** for å forbedre ytelsen. Ved å avslutte til én dimensjonsverdi (som også kan være en tom verdi), beregner systemet mindre detaljer når det skal fastsettes saldoer for kontooppføringer for opptjent egenkapital.
+Det anbefales at du evaluerer organisasjonens krav, og lukker så mange dimensjoner som mulig ved hjelp av årsavslutningsalternativet **Avslutt én** for å forbedre ytelsen. Ved å avslutte til én dimensjonsverdi (som også kan være en tom verdi) beregner systemet mindre detaljer når det skal fastsettes saldoer for kontooppføringer for opptjent egenkapital.
 
-### <a name="10013-update-or-later"></a>10.0.13-oppdatering eller senere
-Hvis du har oppdatert til versjon 10.0.13 eller senere siden forrige gang organisasjonen kjørte en årsavslutning, kan årsavslutningsprosessen ta lengre tid på grunn av [HashV2-funksjonsimplementeringen](https://community.dynamics.com/365/financeandoperations/b/dynamics-365-finance-blog/posts/verify-hash-function-changes-after-update-to-dynamics-365-finance-2020-release-wave-2). (Begrepet *hash* refererer til et felt som beregnes fra andre strengfelter. API-en for å beregne GUID-verdien for hash ble oppdatert for å forbedre sikkerheten.) For at årsavslutningsprosessen skal gå raskere, anbefales det at du bygger opp saldoene på dimensjonssettene på nytt før du kjører årsavslutningen. Hvis du allerede har utført en gjenoppbygging av dimensjonssettsaldoene etter å ha utført 10.0.13-oppdateringen, er det ikke nødvendig å kjøre gjenoppbyggingsprosessen på nytt.
- 
-## <a name="general-ledger--what-does-the-period-close--year-end-close-do"></a>Økonomimodul – Hva gjør periodeavslutningen – årsavslutningen?
+## <a name="degenerate-dimensions"></a>Degenerer dimensjoner
+
+En degenert dimensjon gir liten eller ingen mulighet til å gjenbruke den i seg selv og i kombinasjon med andre dimensjoner. Det finnes to typer degenererte dimensjoner. Den første typen er en dimensjon som degenereres individuelt. Denne typen degenerert dimensjon vises vanligvis bare på en enkelt transaksjon eller på små sett med transaksjoner. Den andre typen er en dimensjon som blir degenerert i kombinasjon med en eller flere tilleggsdimensjoner som har det samme potensialet, basert på mulige unntak som kan genereres. En degenerert dimensjon kan ha en betydelig innvirkning på ytelsen til årsavslutningsprosessen. Hvis du vil redusere ytelsesproblemer, kan du definere alle degenererte dimensjoner som **Avslutt én** i årsavslutningsoppsettet, som beskrevet i den forrige delen.
+
+## <a name="general-ledger-what-does-the-period-close-year-end-close-do"></a>Økonomimodul: Hva gjør periodeavslutning, årsavslutning?
  
 [![Periodeavslutning, årsavslutning.](./media/faq-2020-yr-end-05.png)](./media/faq-2020-yr-end-05.png)
 
-### <a name="performance-improvements-for-rebuilding-financial-dimension-sets-new-feature"></a>Ytelsesforbedringer for gjenoppbygging av finansdimensjonssett (ny funksjon)
-En ny funksjon som er lagt til i versjon 10.0.16, forbedrer ytelsen til årsavslutnings- og konsolideringsprosessene. Funksjonen får navnet Ytelsesforbedringer for gjenoppbygging av finansdimensjonssett. Denne funksjonen endrer hvordan dimensjonssett bygges opp på nytt, slik at de bare bygges opp på nytt for et relevant tidsrom. I de tidligere versjonene ble dimensjonssettene bygget opp på nytt for alle datoer. Hvis du for eksempel avslutter 2020, vil systemet bare bygge opp saldoene på nytt for transaksjoner i regnskapsåret 2020. Hvis du kjører konsolidering for et datointervall på 1. november 2020 til 30. november 2020, vil systemet bare bygge opp saldoene på nytt for dette datoområdet.
+### <a name="performance-improvements-for-rebuilding-financial-dimension-sets"></a>Ytelsesforbedringer for å gjenoppbygge finansdimensjonssett
+En ny funksjon som ble lagt til i versjon 10.0.16, forbedrer ytelsen til årsavslutnings- og konsolideringsprosessene. Funksjonen får navnet Ytelsesforbedringer for gjenoppbygging av finansdimensjonssett. Denne funksjonen endrer hvordan dimensjonssett bygges opp på nytt, slik at de bare bygges opp på nytt for et relevant tidsrom. I de tidligere versjonene ble dimensjonssettene bygget opp på nytt for alle datoer. Hvis du for eksempel avslutter 2020, vil systemet bare bygge opp saldoene på nytt for transaksjoner i regnskapsåret 2020. Hvis du kjører konsolidering for et datointervall på 1. november 2020 til 30. november 2020, bygger systemet bare opp saldoene på nytt for dette datoområdet.
 
-Ettersom denne funksjonen betraktes som en endring som brytes, må du aktivere den ved hjelp av arbeidsområdet for **Funksjonsbehandling**.
+Før du kan bruke denne funksjonen, må den være aktivert i systemet. Administratorer kan bruke arbeidsområdet Funksjonsbehandling til å kontrollere funksjonsstatusen og aktivere den hvis den kreves. Funksjonen vises på følgende måte:
  
-[![Årsavslutning.](./media/faq-2020-yr-end-06.png)](./media/faq-2020-yr-end-06.png)
+- Modul: Økonomimodul
+- Funksjonsnavn: Ytelsesforbedringer for gjenoppbygging av finansdimensjonssett
 
-## <a name="accounts-payable-what-changes-have-been-made-to-support-1099-year-end-reporting-for-2020"></a>Leverandør: Hvilke endringer er gjort for å støtte 1099-årsavslutningsrapportering for 2020?
+## <a name="accounts-payable-what-changes-have-been-made-to-support-1099-year-end-reporting-for-2021"></a>Leverandør: Hvilke endringer er gjort for å støtte 1099-årsavslutningsrapportering for 2021?
 
-To nye reguleringsfunksjoner er lagt til for 1099-årsavslutningsendringer i 2020. Den første funksjonen, **Bruk endringer i 1099-NEC- og 1099-MISC-skjemaer for 2020**, ble lansert halvveis i året som en obligatorisk funksjon. Formålet er å sikre at 1099-transaksjonsdata for året 2020 kan spores for det nye 1099-NEC-skjemaet. Denne funksjonen la til 1099-feltene som kreves for å støtte de nye 1099-NEC- og oppdaterte 1099-MISC-feltene. Denne oppdateringen oppgraderte også leverandørpostdata for 1099-boksinformasjonen. 
+I 2021 er skjemaene DIV, NEC og MISC endret litt og noen ekstra felter er lagt til.
 
-Den andre reguleringsfunksjonen, **1099-kontoutdrag som er oppdatert for 2020-avgiftslovgivningen**, inneholder følgende endringer.
+#### <a name="div-new-box2e-2f"></a>DIV: nytt felt 2e, 2f
+ 
+- Felt 2e. Viser delen av beløpet i felt 1a som er del 897 for gevinst som kan tilskrives disposisjon av interesser i amerikanske reelle eiendommer (USRPI).  
+- Felt 2f. Viser delen av beløpet i felt 2a som er del 897 for gevinst som kan tilskrives disposisjon av USRPI. Legg merke til at feltene 2e og 2f bare gjelder utenlandske personer og enheter med inntekt som opprettholder sin karakter når de går gjennom eller distribueres til sine direkte eller indirekte utenlandske eiere eller mottakere. Den behandles generelt som direkte koblet til en virksomhet eller et foretak i USA. Se instruksjonene for selvangivelsen. 
+ 
+#### <a name="nec-new-box-2"></a>NEC: nytt felt 2 
+ 
+Hvis felt 2 er merket, rapporterer du forbruksprodukter på totalt $ 5 000 eller mer som ble solgt til deg for videresalg, på grunnlag av kjøp–salg, innbetalingsprovisjon eller et annet grunnlag. Som regel rapporterer du inntekter fra salget av disse produktene i Plan C (skjema 1040). 
+ 
+Skjemastørrelsen til NEC er også endret. Det finnes tre skjemaer per side under utskrift. 
+ 
+#### <a name="misc-new-box-11"></a>MISC: nytt felt 11 
+ 
+Felt 11 viser beløpet som er betalt for kjøp av fisk for videresalg fra en hvilken som helst person som er involvert i en virksomhet eller et foretak som fanger fisk. Se instruksjonene for selvangivelsen for å rapportere denne inntekten. 
+ 
+#### <a name="electronic-filing"></a>Elektronisk innsending 
+Hvis du vil ha informasjon om elektronisk innsending, kan du se [Publikasjon for krav til elektronisk innsending](https://www.irs.gov/pub/irs-pdf/p1220.pdf).
 
-- 1099-OID – IRS har konvertert skjemaet til sammenhengende bruk.
-   - Rapporteringsårets 3. og 4. siffer må fylles ut ved utskrift. Bruk 3. og 4. siffer for feltet **Rapporteringsår** fra **Utskriftsalternativer for 1099-avgift**. 
-
-- 1099-NEC – Et nytt skjema for 2020. Dette registrerer ingen kompensasjon. 
-
--   1099-MISC – På grunn av opprettingen av Skjema 1099-NEC har IRS endret skjema 1099-MISC og ordnet boksnumre for rapportering av bestemte inntekter.
-Endringer i inntektsrapporteringen og skjemaets boksnumre vises nedenfor.
-   - Betaler utførte direkte salg på USD 5 000 eller mer (avmerkingsboks) i boks 7.
-   - Avlingsforsikringsprovenyen rapporteres i boks 9.
-   - Bruttoproveny til en advokat rapporteres i boks 10.
-   - Del 409A-periodiseringer rapporteres i boks 12.
-   - Ikke-kvalifisert, periodisert kompensasjonsinntekt rapporteres i boks 14.
-   - Boks 15, 16 og 17 rapporterer henholdsvis delstatlige avgifter, identifikasjonsnummer for delstat og inntektsbeløp som er inntekt for delstaten.
-
-- Ingen endringer i 1099-DIV eller 1099-INT i 2020.
-
-- Elektronisk arkivering – Formatet er endret for å legge til rette for det nye NEC-skjemaet og MISC-boksen som er beskrevet ovenfor. Hvis du vil ha bestemt informasjon om krav til elektronisk arkivering, kan du se [IRS-publikasjon 1220](https://www.irs.gov/pub/irs-pdf/p1220.pdf).
+Oppdater formatspesifikasjoner og postoppsett for 2021-e-rapport 
+- Del 2 A-post for utsteder. 
+- Beløpskoder – økte lengden til 18 for feltposisjon 28–45. 
+ 
+#### <a name="sec-2-issuer-a-record-for-reporting-payments-on-form-1099-div"></a>Del 2 A-post for utsteder, for rapportering av betalinger på skjema 1099-DIV: 
+- Beløpstype – la til del 897 Ordinært utbytte og la til beløpskode H. 
+- Beløpstype – la til del 897 Kapitalgevinst og la til beløpskode J. 
+ 
+#### <a name="sec-3-payee-b-record"></a>Del 3 B-post for betalingsmottaker 
+- Generelle informasjonsposter – oppdaterte tredje punkt fra 16 til 18 felter for betalingsbeløp. 
+- Felttittel for betaling H – oppdaterte felttittel, lengde og generell feltbeskrivelse for feltposisjon 247–258. 
+- Felttittel for betaling J – oppdaterte felttittel, lengde og generell feltbeskrivelse for feltposisjon 259–270. 
+- Oppdaterte tomt felt til feltposisjon 271–286. 
+- Oppdaterte indikator for utenlandsk land til feltposisjon 287. 
+- Oppdaterte linjefeltet for navn på første betalingsmottaker til feltposisjon 288–327. 
+- Oppdaterte linjefeltet for navnet på andre betalingsmottaker til feltposisjon 328–367. 
+- Oppsettposisjoner for post, skjema 1099-MISC – slettet feltposisjon 548 og felttittelen Kravindikator for FATCA-innsending. 
+- Oppsettposisjoner for post, skjema 1099-NEC – oppdaterte 545–546 til tomt, oppdaterte feltet 547 til direktesalgsindikator, lengde, beskrivelse og merknader, oppdaterte feltet 548–722 til tomt. 
+ 
+#### <a name="sec-4-end-of-issuer-c-record"></a>Del 4 Slutt på C-post for utsteder 
+- Felttittel for betaling H – oppdaterte felttittel, lengde og generell feltbeskrivelse for feltposisjon 304–321. 
+- Felttittel for betaling J – oppdaterte felttittel, lengde og generell feltbeskrivelse for feltposisjon 322–339. 
+- Felttittel 340–499 – oppdaterte lengden til 160. 
+ 
+#### <a name="sec-5-state-totals-k-record"></a>Del 5 K-post for delstatstotaler 
+- Felttittel for betaling H – oppdaterte felttittel, lengde og generell feltbeskrivelse for feltposisjon 304–321. 
+- Felttittel for betaling J – oppdaterte felttittel, lengde og generell feltbeskrivelse for feltposisjon 322–339. 
+- Felttittel 340–499 – oppdaterte lengden til 160.  
 
 ## <a name="accounts-payable-1099--how-do-i-change-the-1099-box-and-values-for-a-vendor-that-wasnt-tracking-1099-information-throughout-the-year"></a>Leverandører: 1099 – Hvordan endrer jeg 1099-boksen og -verdiene for en leverandør som ikke sporer 1099-informasjon hele året?
 Bruk funksjonaliteten Oppdater 1099 (**Leverandør > Leverandører >Alle leverandører > Velg en leverandør > Leverandør-fane på båndet > Update 1099**) for å gå gjennom tidligere betalte fakturatransaksjoner for å tilordne 1099-dataene på nytt på riktig måte i henhold til innstillingene i fanen **1099-avgift** på siden **Leverandør**.
 
 ## <a name="can-i-run-the-update-1099-for-all-my-vendors-at-once"></a>Kan jeg kjøre Update 1099 for alle leverandørene samtidig?
-Nei. Update 1099-rutinen utføres mot én leverandør om gangen. Hvis dette kravet kreves av organisasjonen, kan du stemme på ideen kalt [Satsvis prosess for oppdatering av leverandørens 1099-data](https://experience.dynamics.com/ideas/idea/?ideaid=5493d608-350e-eb11-b5d9-0003ff68ded8).
+Nei. Update 1099-rutinen utføres mot én leverandør om gangen. Hvis dette kravet kreves av organisasjonen, kan du stemme på forslaget kalt [Partiprosess for oppdatering av leverandørens 1099-data](https://experience.dynamics.com/ideas/idea/?ideaid=5493d608-350e-eb11-b5d9-0003ff68ded8).
 
-## <a name="accounts-payable-1099--recalculate-existing-1099-amounts-vs-update-all-in-the-update-1099-utility"></a>Leverandør: 1099 – Omberegn eksisterende 1099-beløp i forhold til Oppdater alle i verktøyet for Update 1099.
+## <a name="accounts-payable-1099--recalculate-existing-1099-amounts-versus-update-all-in-the-update-1099-utility"></a>Leverandør: 1099 – Omberegn eksisterende 1099-beløp i forhold til Oppdater alle i verktøyet for Update 1099
 Hvis du merker av for **Beregn eksisterende 1099-beløp å nytt** tilbakestilles 1099-beløpet til det totale antallet betalte verdier, når dette antallet brukes sammen med avmerkingsboksen **Oppdater alle**. 
 
 [![1099-avgiftstransaksjoner: Før kjøring av oppdateringsrutine.](./media/faq-2020-yr-end-07.png)](./media/faq-2020-yr-end-07.png)

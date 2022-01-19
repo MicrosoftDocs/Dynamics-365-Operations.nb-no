@@ -510,9 +510,11 @@
                   href: dev-tools/pipeline-asset-upload.md
                 - name: Distribuere aktiva ved hjelp av Azure Pipelines
                   href: dev-tools/pipeline-deploy-asset.md
-                - name: Opprette en LCS-tilkobling (Lifecycle Services) i Azure Pipelines
+                - name: Opprett en LCS-tilkobling (Lifecycle Services) i Azure Pipelines
                   href: dev-tools/pipeline-lcs-connection.md
-                - name: Oppdatere den driftede forekomsten av Azure Pipeline for nye NuGet-pakker
+                - name: Oppdater LCS-tilkoblingsgodkjenningsoppgaver til MSAL i Azure Pipelines
+                  href: dev-tools/pipeline-lcs-connection-update.md
+                - name: Oppdater den driftede forekomsten av Azure Pipeline for nye NuGet-pakker
                   href: dev-tools/pipeline-nuget-split.md
                 - name: Oppdatere et eldre forløp i Azure Pipelines
                   href: dev-tools/pipeline-msbuild-update.md
@@ -1484,9 +1486,11 @@
               href: perf-test/rsat/rsat-best-practices.md
             - name: Dataagnostisk testing ved hjelp av Regression Suite Automation Tool
               href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md
+            - name: Kjør Regression Suite Automation Tool (RSAT) med parallell utføring
+              href: perf-test/rsat/rsat-parallel-execution.md
             - name: Feilsøking
               href: perf-test/rsat/rsat-troubleshooting.md
-        - name: Utgaveløsninger ved hjelp av Lifecycle Services
+        - name: Frigi løsninger ved hjelp av Lifecycle Services
           items:
             - name: Utvikle og frigi
               href: lcs-solutions/lcs-solutions-app-source.md
