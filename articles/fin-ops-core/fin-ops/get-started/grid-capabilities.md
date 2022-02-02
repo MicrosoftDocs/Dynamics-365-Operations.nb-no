@@ -13,18 +13,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: ba3640cf13fecc54f4cc58cd8996e434cd16cf60
-ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
+ms.openlocfilehash: 37484ce022085dfac66edba31b7adf9af4095df8
+ms.sourcegitcommit: bbe8ab054ad7cc00a63c63e02dc90bfa8ede15bb
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7890875"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "7974387"
 ---
 # <a name="grid-capabilities"></a>Rutenettfunksjoner
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
-
 
 Den nye rutenettkontrollen byr på flere nyttige og kraftfulle funksjoner du kan bruke til å forbedre brukerproduktivitet, konstruere mer interessante visninger av dataene og få meningsfull innsikt i dataene. Denne artikkelen dekker følgende funksjoner: 
 
@@ -40,7 +38,7 @@ Den nye rutenettkontrollen byr på flere nyttige og kraftfulle funksjoner du kan
 I Finance and Operations-apper har brukere muligheten til å se totalverdier nederst i numeriske kolonner i rutenett. Disse totalverdiene vises i en bunntekstinndeling nederst i rutenettet. 
 
 ### <a name="showing-the-grid-footer"></a>Vise rutenettbunnteksten
-Det er et bunntekstområde nederst i alle tabellrutenett i Finance and Operations -apper. Bunnteksten kan vise nyttig informasjon som er knyttet til dataene som vises i rutenettet. Her er noen eksempler på denne informasjonen:
+Det er et bunntekstområde nederst i alle tabellrutenett i Finance and Operations-apper. Bunnteksten kan vise nyttig informasjon som er knyttet til dataene som vises i rutenettet. Her er noen eksempler på denne informasjonen:
 
 - Antallet valgte rader i tabellen (når du velger flere oppføringer)
 - Hovedsummer nederst i konfigurerte numeriske kolonner

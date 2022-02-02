@@ -8,7 +8,7 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom:
 - "14151"
 - intro-internal
@@ -17,22 +17,21 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: dfc4d9cb5be4d8d287122fd33bf09b0570498169
-ms.sourcegitcommit: a46f0bf9f58f559bbb2fa3d713ad86875770ed59
+ms.openlocfilehash: 8cc7b2d733cdcf1adef2885b7900ea312a10d98c
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "7813753"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968816"
 ---
 # <a name="finance-insights-home-page"></a>Startside for Finance Insights
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Finance Insights gir konfigurerbare og utvidbare løsninger som hjelper deg med å forutse firmaets kontantstrøm på en intelligent måte, forutser når du skal motta betaling for utestående fordringer, og genererer et budsjettforslag som kan gjøre budsjettprosessen raskere. Disse funksjonene bruker intelligente maskinlæringsmaler for å bygge modeller ved hjelp av data du tilbyr (inkludert data fra en tredjepart, for eksempel informasjon om forbrukerrapport fra et byrå). Disse intelligente funksjonene informerer beslutningstakere, og hjelper deg med å gjøre noe for å respondere effektivt på aktuelle og forventede forretningsutfordringer. Du er ansvarlig for alle data som brukes med, eller utdata fra, Finance Insights.
 
 > [!NOTE]
-> Forhåndsversjonen av Finance Insights er tilgjengelig for distribusjoner i USA, Canada, Storbritannia, Europa, Asia/Stillehavskysten, Japan, Australia og New Zealand. Microsoft legger gradvis til støtte for flere områder.
+> Finance Insights er tilgjengelig for distribusjoner i USA, Canada, Storbritannia, Europa, Asia/Stillehavskysten, Japan, Australia og New Zealand. Microsoft legger gradvis til støtte for flere områder.
 
 ## <a name="prerequisites"></a>Forutsetninger
 

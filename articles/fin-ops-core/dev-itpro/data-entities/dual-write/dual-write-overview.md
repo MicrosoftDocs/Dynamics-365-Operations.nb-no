@@ -1,21 +1,20 @@
 ---
 title: Oversikt over dobbel skriving
-description: Dette emnet gir en oversikt over dobbel skriving, som er en integrert infrastruktur som gir interaksjon med minimal forsinkelse mellom kundeengasjementsapper og Finance and Operations-apper.
+description: Dette emnet gir en oversikt over dobbel skriving, som er en integrert infrastruktur som gir interaksjon med minimal forsinkelse mellom Customer Engagement-apper og Finance and Operations-apper.
 author: RamaKrishnamoorthy
 ms.date: 02/06/2020
-ms.topic: article
+ms.topic: overview
 audience: Application User, IT Pro
 ms.reviewer: tfehr
-ms.custom: intro-internal
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 131c002000ee6ebed81a23f45ce17b7a7fff0b95
-ms.sourcegitcommit: 9f8da0ae3dcf3861e8ece2c2df4f693490563d5e
+ms.openlocfilehash: e71d1496da24b21949259e8f43a32cd4ff60249c
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "7817367"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984147"
 ---
 # <a name="dual-write-overview"></a>Oversikt over dobbel skriving
 
@@ -27,9 +26,9 @@ ms.locfileid: "7817367"
 
 ## <a name="what-is-dual-write"></a>Hva er dobbel skriving?
 
-Dobbel skriving er en integrert infrastruktur som gir nær sanntids interaksjon mellom Customer Engagement-apper og Finance and Operations-apper. Når data om kunder, produkter, personer og operasjoner flyter utenfor applikasjonens grenser, kan alle avdelingene i en organisasjon være på.
+Dobbel skriving er en bruksklar infrastruktur som gir interaksjon med minimal forsinkelse mellom Customer Engagement-apper og Finance and Operations-apper. Når data om kunder, produkter, personer og operasjoner flyter utenfor applikasjonens grenser, kan alle avdelingene i en organisasjon være på.
 
-Dobbel skriving gir tett sammenkoblet, toveis integrering mellom Finance and Operations-apper og Dataverse. Alle dataendringer i Finance and Operations-apper fører til skriving til Dataverse, og alle dataendringer i Dataverse fører til skriving til Finance and Operations-apper. Denne automatiserte dataflyten gir en integrert brukeropplevelse på tvers av appene.
+Dobbel skriving gir tett sammenkoblet toveisintegrering mellom Finance and Operations-apper og Dataverse. Alle dataendringer i Finance and Operations-apper fører til skriving til Dataverse, og alle dataendringer i Dataverse fører til skriving til Finance and Operations-apper. Denne automatiserte dataflyten gir en integrert brukeropplevelse på tvers av appene.
 
 ![Datarelasjon mellom apper.](media/dual-write-overview.jpg)
 
@@ -50,7 +49,7 @@ Infrastrukturen for dobbel skriving er utvidbar og pålitelig, og inneholder fø
 + Pålitelig livssyklus administrasjon for app
 + Integrert installasjonsopplevelse for nye kunder
 
-### <a name="application"></a>Søknad
+### <a name="application"></a>Program
 
 Ved dobbel skriving opprettes det en tilordning mellom konsepter i Finance and Operations-apper og konsepter i Customer Engagement-apper. Denne integreringen støtter følgende scenarier:
 
@@ -83,7 +82,7 @@ Dobbel skriving gir dataintegrering på tvers av Microsoft Dynamics 365-apper. D
 
 Dobbel skriving automatiserer dataflyten mellom Finance and Operations-apper og Customer Engagement-apper. Dobbel skriving består av to AppSource-løsninger som er installert på Dataverse. Løsningene utvider tabellskjemaet, programtilleggene og arbeidsflytene på Dataverse slik at de kan skaleres til ERP-størrelse. For å få en vellykket implementering, må utviklere og utarbeidere av Customer Engagement-apper forstå disse endringene og samarbeide med sine motparter om Finance and Operations-apper.
 
-For å opprette paritet med Finance and Operations-apper, gjør dobbelt skriving noen viktige endringer i Dataverse-skjemaet. Hvis du forstår planen, kan du unngå noe utformings- og utviklingsarbeid er i fremtiden.
+For å opprette paritet med Finance and Operations-apper gjør dobbel skriving noen viktige endringer i Dataverse-skjemaet. Hvis du forstår planen, kan du unngå noe utformings- og utviklingsarbeid er i fremtiden.
 
 + Når du har installert pakken for dobbel skriving AppSource, vil Dataverse ha de nye begrepene, for eksempel firma og part. Disse konseptene hjelper apper som er bygget på Dataverse, inkludert Dynamics 365 Sales, Dynamics 365 Marketing, Dynamics 365 Customer Service og Dynamics 365 Field Service, til å samhandle sømløst med Finance and Operations-apper.
 

@@ -3,24 +3,23 @@ title: Oversikt over administrasjon
 description: Dette emnet gir en oversikt over emnene i hjelpen og andre ressurser for konfigurasjon, administrasjon og feilsøking i Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 08/11/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
 ms.search.scope: Human Resources
-ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6b4ceba9f071f73813eb9e79c5d8e2a00779c915
-ms.sourcegitcommit: 49f7528d3268abe15e40f719956e1ec8696a6f4e
+ms.openlocfilehash: a62fdf1936f36332a00818a1e1c706256aecafa9
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7393577"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984777"
 ---
 # <a name="administration-overview"></a>Oversikt over administrasjon
 
@@ -44,7 +43,7 @@ Dette emnet gir en oversikt over emnene i hjelpen og andre ressurser for konfigu
   - [Konfigurere integrering med Finance](hr-admin-integration-finance.md)
   - [Konfigurere integrering med Dayforce](hr-admin-integration-dayforce.md)
   - [Opprette en app for regelmessig dataeksport](hr-admin-integration-recurring-data-export.md)
-  - Integrere med Office
+  - Integrer med Office
     - [Opplæring i Office-integrering](../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
     - [Oppdatere enhetsdata i Excel](../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
     - [Opprette opplevelser for Åpne i Excel](../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)

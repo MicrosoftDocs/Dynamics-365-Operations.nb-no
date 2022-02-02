@@ -2,7 +2,7 @@
   items:
     - name: Utvikling og administrasjon for Finance and Operations-apper
       items:
-        - name: Dokumentasjon for Finance and Operations-app
+        - name: Dokumentasjon for programmet Finance and Operations
           href: ../fin-ops/index.md
         - name: Utvikling og administrasjon for Finance and Operations-apper
           href: index.md
@@ -18,8 +18,6 @@
                   href: get-started/whats-new-platform-updates-10-0-24.md
                 - name: Plattformoppdateringer for versjon 10.0.23 (januar 2022)
                   href: get-started/whats-new-platform-updates-10-0-23.md
-                - name: Plattformoppdateringer for versjon 10.0.22 (november 2021)
-                  href: get-started/whats-new-platform-updates-10-0-22.md
             - name: Funksjoner som er fjernet eller avskrevet
               items:
                 - name: Funksjoner som er fjernet eller avskrevet på startsiden
@@ -96,7 +94,7 @@
                       items:
                         - name: Kundeemne til kontanter
                           href: ../../supply-chain/sales-marketing/prospect-to-cash.md
-                        - name: Synkronisere kontoer direkte fra Sales til kunder i Finance and Operations
+                        - name: Synkroniser kontoer direkte fra Sales til kunder i Finance and Operations
                           href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md
                         - name: Synkronisere produkter direkte fra Finance and Operations til produkter i Sales
                           href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md
@@ -106,13 +104,13 @@
                           href: ../../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md
                         - name: Synkronisering av salgsordrer direkte mellom Sales og Finance and Operations
                           href: ../../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md
-                        - name: Synkronisere fakturahoder og -linjer direkte fra Finance and Operations til Sales
+                        - name: Synkronisere salgsfakturahoder og -linjer direkte fra Finance and Operations til Sales
                           href: ../../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md
                     - name: Konfigurere integrering med Field Service
                       items:
                         - name: Oversikt over å konfigurere integrering med Field Service
                           href: ../../supply-chain/sales-marketing/field-service.md
-                        - name: Synkronisere produkter i Finance and Operations til produkter i Field Service
+                        - name: "Synkronisere produkter\_i Finance and Operations til produkter i Field Service"
                           href: ../../supply-chain/sales-marketing/field-service-product.md
                         - name: Synkronisere arbeidsordrer i Field Service til salgsordrer i Finance and Operations
                           href: ../../supply-chain/sales-marketing/field-service-work-order.md
@@ -188,9 +186,9 @@
                   href: data-entities/data-import-export-job.md
                 - name: Synkronisere dato og klokkeslett i importjobber
                   href: data-entities/data-synchronize-date-and-time.md
-                - name: Importere bilag ved hjelp av enheten Økonomijournal
+                - name: Importer bilag ved hjelp av enheten Økonomijournal
                   href: data-entities/tips-tricks-import-general-journal-entity.md
-                - name: Optimalisere dataoverføring for Finance and Operations-apper
+                - name: Optimaliser dataoverføring for Finance and Operations-apper
                   href: sysadmin/optimize-data-migration.md
             - name: Utvikling for dataenheter
               items:
@@ -336,7 +334,7 @@
                   href: deployment/arm-onbarding-us-goverment.md
                 - name: Azure ExpressRoute og Finance and Operations
                   href: deployment/expressroute.md
-                - name: Finance and Operations-arkitektur
+                - name: Arkitektur for Finance and Operations
                   href: ../fin-ops/imp-lifecycle/architecture-overview.md
                 - name: Ta i bruk oppdateringer i skymiljøer
                   href: deployment/apply-deployable-package-system.md
@@ -364,11 +362,11 @@
                       href: deployment/onprem-compatibility.md
                     - name: Krav til maskinvarestørrelse
                       href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
-                    - name: Godkjenning i Dynamics 365 Finance + Operations (on-premises)
+                    - name: Autentisering i Dynamics 365 Finance + Operations (on-premises)
                       href: deployment/authentication-onprem.md
-                - name: Konfigurere og distribuere lokale miljøer
+                - name: Konfigurer og distribuer lokale miljøer
                   items:
-                    - name: Konfigurere lokale prosjekter i LCS
+                    - name: Konfigurer lokale prosjekter i LCS
                       href: lifecycle-services/lbd-create-lcs-on-prem-project.md
                     - name: "Definere og distribuere lokale miljøer (Platform update\_41 og nyere)"
                       href: deployment/setup-deploy-on-premises-pu41.md
@@ -406,7 +404,7 @@
                       href: deployment/onprem-remove-reinstall-AOS-node.md
                     - name: Bruk den samme AD FS-forekomsten på nytt for flere miljøer
                       href: deployment/onprem-reuseadfs.md
-                    - name: Oppgrader SQL Server-forekomsten av miljøer for Microsoft Dynamics 365 Finance + Operations (on-premises)
+                    - name: Oppgrader SQL Server-forekomsten for miljøer i Microsoft Dynamics 365 Finance + Operations (on-premises)
                       href: deployment/onprem-upgrade-sqlserver.md
                 - name: Lokal agent
                   items:
@@ -560,7 +558,7 @@
                   href: dev-tools/metadata-search-visual-studio.md
                 - name: Modeller og pakker
                   href: dev-tools/models.md
-                - name: Prosjekttype for Finance and Operations
+                - name: Prosjekttype i Finance and Operations
                   href: dev-tools/projects.md
                 - name: Verktøytillegg for Visual Studio
                   href: dev-tools/developer-tools-add-ins.md
@@ -1044,19 +1042,21 @@
                       href: data-entities/dual-write/sync-limits.md
                     - name: Oppsett av dobbel skriving fra Lifecycle Services
                       href: data-entities/dual-write/lcs-setup.md
-                    - name: Aktivere dobbel skriving for eksisterende apper i Finance and Operations
+                    - name: Aktiver dobbel skriving for eksisterende Finance and Operations-apper
                       items:
-                        - name: Aktivere dobbel skriving for eksisterende apper i Finance and Operations
+                        - name: Aktiver dobbel skriving for eksisterende Finance and Operations-apper
                           href: data-entities/dual-write/enable-dual-write.md
                         - name: Systemkrav og forutsetninger
                           href: data-entities/dual-write/requirements-and-prerequisites.md
-                        - name: Bruke veiviseren for dobbel skriving til å koble miljøer
+                        - name: Bruk veiviseren for dobbel skriving til å koble miljøer
                           href: data-entities/dual-write/link-your-environment.md
-                        - name: Aktivere enhetstilordning for dobbel skriving
+                        - name: Aktiver enhetstilordning for dobbel skriving
                           href: data-entities/dual-write/enable-entity-map.md
+                    - name: Separert programiverksettingspakke med dobbel skriving
+                      href: data-entities/dual-write/separated-solutions.md
                     - name: Overføring av valutadatatype for dobbel skriving
                       href: data-entities/dual-write/currrency-decimal-places.md
-                    - name: Definere tilordningen for salgsordrens statusfelt
+                    - name: Definer tilordningen for salgsordrens statusfelter
                       href: data-entities/dual-write/sales-status-map.md
                     - name: Filtrere konserninterne ordrer for å unngå synkronisering av ordrer og ordrelinjer
                       href: data-entities/dual-write/filtering-intercompany-orders.md
@@ -1164,7 +1164,7 @@
                           href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
                         - name: Feilsøk problemer fra oppgraderinger av Finance and Operations-apper
                           href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
-                        - name: Kontroller konfigurasjon av dobbel skriving i Finance and Operations-apper og Dataverse
+                        - name: Bekreft konfigurasjon av dobbel skriving i Finance and Operations-apper og Dataverse
                           href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
                         - name: Feilkoder for tilstandskontroll for tabelltilordning
                           href: data-entities/dual-write/table-map-health-check.md
@@ -1178,9 +1178,9 @@
                   href: power-platform/entity-modeling.md
                 - name: Håndtering av applivssyklus
                   href: power-platform/application-lifecycle-management.md
-                - name: Konfigurere virtuelle enheter i Dataverse
+                - name: Konfigurer virtuelle enheter i Dataverse
                   href: power-platform/admin-reference.md
-                - name: Aktivere virtuelle enheter for Dataverse
+                - name: Aktiver virtuelle enheter for Dataverse
                   href: power-platform/enable-virtual-entities.md
                 - name: Power Apps-portaler med Finance and Operations
                   href: power-platform/power-portal-reference.md
@@ -1530,11 +1530,11 @@
               href: lifecycle-services/lcs-support.md
             - name: Oversikt over Dynamics 365-støtte
               href: /power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
-            - name: Få støtte for Finance and Operations som styres av 21Vianet i Kina
+            - name: Få støtte for Finance and Operations styrt av 21Vianet i Kina
               href: lifecycle-services/21vianet-support.md
-            - name: Konfigurer kundestøtte for Finance and Operations-apper
+            - name: Konfigurer teknisk støtte for Finance and Operations-apper
               href: lifecycle-services/support-experience.md
-            - name: Behandle kundestøtteopplevelser for Finance and Operations-apper
+            - name: Administrer støtteopplevelser for Finance and Operations-apper
               href: lifecycle-services/cloud-powered-support-lcs.md
             - name: Produksjonsstøtte og -overvåking
               href: ../fin-ops/imp-lifecycle/production-support-monitoring.md

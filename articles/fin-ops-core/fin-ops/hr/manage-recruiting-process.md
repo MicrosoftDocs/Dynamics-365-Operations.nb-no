@@ -1,8 +1,8 @@
 ---
 title: Administrere rekrutteringsprosesser
-description: Denne artikkelen beskriver et konsept som rekrutteringspersoner kan bruke til å spore trinnene i en rekrutteringsprosess.
+description: Dette emnet beskriver et konsept som rekrutteringspersoner kan bruke til å spore trinnene i en rekrutteringsprosess.
 author: andreabichsel
-ms.date: 06/20/2017
+ms.date: 01/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: adf873a58900fa86d068d9ebc75f4f389e7d8359cc685d4635e083437c55ae56
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c9a5e89e700858ed9e625fbdee630fa14ebea26e
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752996"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7965070"
 ---
 # <a name="manage-recruiting-processes"></a>Administrere rekrutteringsprosesser
 
@@ -42,7 +42,7 @@ Med rekrutteringsprosjekter kan bemanningskonsulenter følge opp fremdriften mot
 - Søknadsfristen
 - Den beregnede startdatoen
 
-Rekrutteringsprosjektet inneholder **stillingsannonsen** som brukes i **Ansattselvbetjening** for å annonsere den ledige stillingen. For å vise den ledige stillingen til ansatte må rekrutteringsprosjektet må ha en **stillingsannonse**, feltet **Vis på ansattselvbetjening** må settes til Ja, **Søknadsfristen** må være satt til en fremtidig dato, og rekrutteringsprosjektet må ha **prosjektstatusen** Startet. Tabellen nedenfor viser de mulige rekrutteringsprosjektstatusene og tilhørende beskrivelser.
+Rekrutteringsprosjektet inneholder verdien for **Stillingsannonse** som brukes på siden **Ansattselvbetjening** for å annonsere den ledige stillingen. Den ledige stillingen kan bare vises til ansatte hvis rekrutteringsprosjektet har en verdi for **Stillingsannonse**, hvis feltet **Vis på ansattselvbetjening** er satt til **Ja**, feltet **Søknadsfrist** er satt til en fremtidig dato, og rekrutteringsprosjektet har **Prosjektstatus**-verdien **Startet**. Tabellen nedenfor viser de mulige rekrutteringsprosjektstatusene og tilhørende beskrivelser.
 
 | Status    | Viser at ...                                                                         |
 |-----------|-----------------------------------------------------------------------------------------|
@@ -55,7 +55,7 @@ Rekrutteringspersoner kan også registrere **mediene** som brukes til å annonse
 
 ## <a name="applicants"></a>Søkere
 
-En søker er en person som søker på en jobb i bedriften. Søkere deles mellom alle juridiske enheter i organisasjonen og gir deg et stort utvalg av medarbeidere til å søke fra. Du kan opprettholde kompetanse, referanser, overnattingsforespørsler og personlige opplysninger for søkere. Når du oppretter en søkerpost, opprettes en personpost for den søkeren i den globale adresseboken. Du kan bruke siden **Søker** siden for å oppdatere følgende globale adressebokinformasjon for personer som er søkere:
+En søker er en person som søker på en jobb i bedriften. Søkere deles mellom alle juridiske enheter i organisasjonen. Derfor har du en stor gruppe med talenter å søke i. Du kan opprettholde kompetanse, referanser, overnattingsforespørsler og personlige opplysninger for søkere. Når du oppretter en søkerpost, opprettes en personpost for den søkeren i den globale adresseboken. Du kan bruke siden **Søker** siden for å oppdatere følgende globale adressebokinformasjon for personer som er søkere:
 
 - Adresseinformasjon
 - Kontaktinformasjon
@@ -84,7 +84,7 @@ Søknadsstatus angir hvor en søknad er i rekrutteringsprosessen. Tabellen neden
 
 ### <a name="correspondence-actions"></a>Korrespondansehandlinger
 
-En **søknads** korrespondansehandling bestemmer dokument- eller e-postmalen du bruker til å kommunisere med søkeren som sendte inn søknaden. Du kan knytte til **søknadsbokmerker** med korrespondansehandlinger, slik at du kan bruke verdier fra søknaden, søkeren, intervjuet og rekrutteringsprosjektet i kommunikasjon med søkere. **E-postmaler for søknad** kan opprettes for korrespondansehandlinger for raskt å sende e-postmeldinger til søkere som har en søknad med en bestemt status og korrespondansehandlingskombinasjon. Du kan for eksempel sende en e-postmelding med bekreftelse for alle programmer med en **Status** mottatt og en **korrespondansehandling** som er mottatt. Etter sending av e-post, har du muligheten til å automatisk oppdatere status for søknadene.
+En søknads korrespondansehandling bestemmer dokument- eller e-postmalen du bruker til å kommunisere med søkeren som sendte inn søknaden. Ved å knytte til **søknadsbokmerker** med korrespondansehandlinger kan du bruke verdier fra sidene **Søknad**, **Søker**, **Intervjuv** og **Rekrutteringsprosjekt** i kommunikasjonen med søkerne. Ved å opprette **e-postmaler for søknad** for korrespondansehandlinger kan du raskt sende e-postmeldinger til søkere som har en søknad med en spesifikk kombinasjon av en status- og korrespondansehandling. Du kan for eksempel sende en e-postmelding med bekreftelse for alle søknader med **Status**-verdien **Mottatt** og **Korrespondansehandling**-verdien **Mottatt**. Når du har sendt e-posten, har du muligheten til å automatisk oppdatere status for søknadene.
 
 ## <a name="application-routing"></a>Søknadsruting
 
@@ -101,6 +101,5 @@ Hvis en søknad må vurderes av flere arbeidere, kan du bruke siden **Søknadsru
 ## <a name="hiring-applicants"></a>Ansette søkere
 
 Bruk siden **Søknader** for å ansette en søker. Når du ansetter en søker, vil søknadsposten ha statusen **Ansatt** og søkerens personoppføring for global adressebok knyttes til den nye arbeiderposten. Endringer i den globale adressebokinformasjon for den nye arbeiderposten vises også i søkerposten. Dette kan redusere dataregistrering hvis den nye arbeideren fortsatt søker på en annen jobb innenfor organisasjonen. For å ansette en eksisterende arbeider til en ny stilling velger du **Endre stilling** i rullegardinmenyen **Søknadsstatus** for å starte overføringsprosessen.
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

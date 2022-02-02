@@ -1,6 +1,6 @@
 ---
-title: Konfigurasjon for Finance Insights for offentlig forhåndsversjon (forhåndsversjon) – versjon 10.0.20 og nyere
-description: Dette emnet forklarer hvordan du konfigurerer systemet slik at det bruker funksjonene i Finance Insights for offentlig forhåndsversjon i versjon 10.0.20 og nyere.
+title: Konfigurasjon for Finance Insights – versjon 10.0.20 og senere
+description: Dette emnet forklarer hvordan du konfigurerer systemet slik at det bruker funksjonene i Finance Insights i versjon 10.0.20 og nyere.
 author: ShivamPandey-msft
 ms.date: 06/16/2021
 ms.topic: article
@@ -16,20 +16,20 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-06-03
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 7e5752b8deffbd2694193494652a0ff808ecbfb0
-ms.sourcegitcommit: a5861c2fef4071e130208ad20e26cb3a42a45cf1
+ms.openlocfilehash: 8ff20334445fba1db435d7005c4ca9ba18f97f72
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "7927410"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968968"
 ---
-# <a name="configuration-for-finance-insights-for-public-preview-preview---version-10020-and-later"></a>Konfigurasjon for Finance Insights for offentlig forhåndsversjon (forhåndsversjon) – versjon 10.0.20 og nyere
+# <a name="configuration-for-finance-insights---version-10020-and-later"></a>Konfigurasjon for Finance Insights – versjon 10.0.20 og senere
 
 [!include [banner](../includes/banner.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Finance Insights kombinerer funksjonalitet fra Microsoft Dynamics 365 Finance med Dataverse, Azure og AI Builder for å gi organisasjonen kraftige prognoseverktøy. Dette emnet forklarer hvordan du konfigurerer Dynamics 365 Finance versjon 10.0.20 slik at systemet kan bruke funksjonene som er tilgjengelige i den offentlige forhåndsversjonen av Finance Insights.
+Finance Insights kombinerer funksjonalitet fra Microsoft Dynamics 365 Finance med Dataverse, Azure og AI Builder for å gi organisasjonen kraftige prognoseverktøy. Dette emnet forklarer hvordan du konfigurerer Dynamics 365 Finance versjon 10.0.20 slik at systemet kan bruke funksjonene som er tilgjengelige i Finance Insights.
 
 > [!NOTE]
 > Konfigurasjonstrinnene som beskrives i dette emnet, gjelder bare for Finance versjon 10.0.20 og nyere. Hvis du vil konfigurere Finance Insights i versjon 10.0.19 og tidligere, kan du se [Konfigurasjon for Finance Insights – versjoner opptil 10.0.19](configure-for-fin-insites.md).
@@ -752,6 +752,6 @@ Det kan ta flere minutter å installere tillegget.
 
 ## <a name="feedback-and-support"></a>Tilbakemelding og støtte
 
-Hvis du er interessert i å gi tilbakemelding eller vil ha kundestøtte, kan du sende en e-postmelding til [Finance Insights (forhåndsversjon)](mailto:fiap@microsoft.com).
+Hvis du er interessert i å gi tilbakemelding eller vil ha kundestøtte, kan du sende en e-postmelding til [Finance Insights](mailto:fiap@microsoft.com).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
