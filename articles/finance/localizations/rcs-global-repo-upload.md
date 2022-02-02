@@ -2,7 +2,7 @@
 title: Opprette ER-konfigurasjoner i RCS og laste dem opp til det globale repositoriet
 description: Dette emnet forklarer hvordan du oppretter en konfigurasjon for elektronisk rapportering (ER) i Microsoft RCS (Regulatory Configuration Services) og laster den opp til det globale repositoriet.
 author: JaneA07
-ms.date: 09/21/2020
+ms.date: 01/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: b8be53c415d3b0c0fd057bb0d9c51b391d1c0c7471610c861909344059803441
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: eb04362d6d7261af56d2940b085fbc8d43c9d662
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727227"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7965095"
 ---
 # <a name="create-er-configurations-in-regulatory-configuration-services-rcs-and-upload-them-to-the-global-repository"></a>Opprette ER-konfigurasjoner i Regulatory Configuration Services (RCS) og laste dem opp til det globale repositoriet
 
@@ -32,24 +32,29 @@ Fremgangsmåtene nedenfor forklarer hvordan en bruker i rollen systemansvarlig e
 
 Før du kan fullføre de prosedyrene, må du gjøre følgende:
 
-- Åpne en RCS-forekomst.
-- Opprette en aktiv konfigurasjonsleverandør. Hvis du ha mer informasjon, kan du se [Opprette konfigurasjonsleverandører og merke dem som aktive](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
+- Ha tilgang til et RCS-miljø for din organisasjon.
+- Opprett en aktiv konfigurasjonsleverandør og gjør den aktiv. Hvis du ha mer informasjon, kan du se [Opprette konfigurasjonsleverandører og merke dem som aktive](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
-Du må også kontrollere at det er klargjort et RCS-miljø for firmaet ditt.
+Du må kontrollere at det er klargjort et RCS-miljø for organisasjonen din. Hvis du ikke har en RCS-forekomst klargjort for organisasjonen, kan du gjøre det ved hjelp av følgende trinn:
 
 1. I en Finance and Operations-app går du til **Organisasjonsstyring** \> **Arbeidsområder** \> **Elektronisk rapportering**.
-2. Hvis et RCS-miljø ikke er klargjort for firmaet ditt, velger du **Regulatory Services – Ekstern konfigurasjon**, og deretter følger du instruksjonene for å klargjøre en.
+2. I **Relaterte koblinger / Eksterne koblinger** velger du **Regulatory Services – Konfigurasjon**, og deretter følger du instruksjonene for **registrering** for å klargjøre.
 
-Hvis et RCS-miljø allerede er klargjort for ditt firma, bruker du URL-adressen for siden til å få tilgang til den ved å velge alternativet for pålogging.
+Hvis et RCS-miljø allerede er klargjort for organisasjonen din, bruker du URL-adressen for siden til å få tilgang til den og velger deretter alternativet for **pålogging**.
 
 ## <a name="create-a-derived-version-of-a-configuration-in-rcs"></a>Opprette en avledet versjon av en konfigurasjon i RCS
 
-1. I arbeidsområdet **Elektronisk rapportering** kontrollerer du at du har en aktiv konfigurasjonsleverandør for organisasjonen. 
-2. Velg **Rapporteringskonfigurasjoner**.
-3. Velg konfigurasjonen du vil avlede en ny versjon fra. Du kan bruke filtreringsfeltet over treet til å begrense søket.
-4. Velg **Opprett konfigurasjon** \> **Avled fra navn**.
-5. Angi et navn og en beskrivelse, og velg deretter **Opprett konfigurasjon** for å opprette en ny avledet versjon.
-6. Velg den nylig avledede konfigurasjonen, legg til en beskrivelse av versjonen, og velg deretter **OK**. Statusen for konfigurasjonen til er endret til **Fullført**.
+> [!NOTE]
+> Hvis dette er første gang du har brukt RCS, vil du ikke ha noen konfigurasjon som er tilgjengelig for deg å avlede fra. Du må importere en konfigurasjon fra det globale repositoriet. For mer informasjon, se [Last ned ER-konfigurasjoner fra det globale repositoriet for konfigurasjonstjenesten](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
+
+1. **Logg på** RCS, og velg arbeidsområdet **Elektronisk rapportering**.
+2. Kontroller at du har en aktiv konfigurasjonsleverandør for organisasjonen som er satt til aktiv (se forhåndskrav). 
+3. Velg **Rapporteringskonfigurasjoner**.
+4. Velg konfigurasjonen du vil avlede en ny versjon fra. Du kan bruke filtreringsfeltet over treet til å begrense søket.
+5. Velg **Opprett konfigurasjon** \> **Avled fra navn**.
+6. Angi et navn og en beskrivelse, og velg deretter **Opprett konfigurasjon** for å opprette en ny avledet versjon med statusen "Utkast".
+7. Velg den nylig avledede konfigurasjonen, og gjør om nødvendig flere endringer i konfigurasjonsformatet. 
+8. Når endringene er fullført, må du angi **Endre status** for konfigurasjonen til **Fullført** for å kunne publisere den i repositoriet. Velg **OK**.
 
 ![Ny konfigurasjonsversjon i RCS.](media/RCS_CompleteConfig.JPG)
 
@@ -58,7 +63,7 @@ Hvis et RCS-miljø allerede er klargjort for ditt firma, bruker du URL-adressen 
 
 ## <a name="upload-a-configuration-to-the-global-repository"></a>Laste opp en konfigurasjon til det globale repositoriet
 
-Hvis du vil dele en ny eller avledet konfigurasjon med organisasjonen, kan du laste den opp til det globale repositoriet.
+Hvis du vil dele en ny eller avledet konfigurasjon med organisasjonen, kan du laste den opp til det globale repositoriet ved å følge disse trinnene:
 
 1. Velg den fullførte versjonen av konfigurasjonen, og velg deretter **Last opp til repositorium**.
 2. Velg alternativet **Globalt (Microsoft)**, og velg deretter **Last opp**.
@@ -66,9 +71,11 @@ Hvis du vil dele en ny eller avledet konfigurasjon med organisasjonen, kan du la
     ![Laste opp til alternativer for repositorium.](media/RCS_Upload_to_GlobalRepo_options.JPG)
 
 3. Velg **Ja** i bekreftelsesboksen. 
-4. Oppdater beskrivelsen av versjonen etter behov, og velg deretter **OK**. 
+4. Oppdater beskrivelsen av versjonen etter behov, og velg deretter **OK**. Du kan også velge å laste opp versjonen til en tilkoblet app eller til et GIT-repositorium.  
 
-Statusen for konfigurasjonen oppdateres til **Dele**, og konfigurasjonen lastes opp til det globale repositoriet. Derfra kan du arbeide med den på følgende måter:
+Statusen for konfigurasjonen oppdateres til **Delt**, og konfigurasjonen lastes opp til det globale repositoriet. Det opprettes også en utkastversjon av konfigurasjonen du lastet opp, og den kan brukes hvis det kreves etterfølgende endringer.
+
+Etter at konfigurasjonen er lastet opp til det globale repositoriet, kan du arbeide med den der på følgende måter:
 
 - Importere den til Dynamics 365-forekomsten. Hvis du vil ha mer informasjon, kan du se [(ER) Importere konfigurasjoner fra RCS](../../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md).
 - Hvis du vil dele den med en tredjepart eller en ekstern organisasjon, kan du se [RCS Dele konfigurasjoner for elektronisk rapportering (ER) med eksterne organisasjoner](rcs-global-repo-share-configuration.md)

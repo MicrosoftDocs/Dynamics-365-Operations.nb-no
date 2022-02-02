@@ -1,5 +1,5 @@
 ---
-title: Evaluere den opprinnelige forutsigelsesmodellen for kundebetaling (forhåndsversjon)
+title: Evaluer den opprinnelige forutsigelsesmodellen for kundebetaling
 description: Dette emnet beskriver fremgangsmåten du kan bruke for å forstå forutsigelsesmodellen for kundebetaling, og vurdere effektiviteten.
 author: ShivamPandey-msft
 ms.date: 07/16/2021
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: f45392d540b6696d23261a6b2197c3185f5ede2b7c646f6b751480145dcacfdc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 874c6e938681537a0420eece6835a4c2124e11fc
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768873"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7969118"
 ---
-# <a name="evaluate-the-initial-customer-payment-prediction-model-preview"></a>Evaluere den opprinnelige forutsigelsesmodellen for kundebetaling (forhåndsversjon)
+# <a name="evaluate-the-initial-customer-payment-prediction-model"></a>Evaluer den opprinnelige forutsigelsesmodellen for kundebetaling
 
 [!include [banner](../includes/banner.md)]
 
@@ -40,7 +40,7 @@ Denne koblingen tar deg til AI Builder, der du kan lære mer om den gjeldende mo
 
 Siden som åpnes, viser følgende informasjon:
 
-- I **Ytelse**-delen gir modellens ytelsesklasse et overslag over modellens kvalitet. Hvis du vil ha mer informasjon om denne klassen, kan du se [Ytelse for prognosemodell](/ai-builder/prediction-performance) i veiviseren for AI Builder.
+- I **Ytelse**-delen gir modellens ytelsesklasse et overslag over modellens kvalitet. Hvis du vil ha mer informasjon om denne klassen, kan du se [Ytelse for prognosemodell](/ai-builder/prediction-performance) i AI Builder-dokumentasjonen.
 - Delen **Data med mest innflytelse** viser hvor viktige forskjellige inndatatyper er for modellen din. Du kan evaluere denne listen og de tilsvarende prosentandelene for å fastslå om informasjonen samsvarer med det du vet om firmaet og markedet.
 
     [![Delene Ytelse og Data med mest innflytelse for forutsigelsesmodellen.](./media/models.png)](./media/models.png)

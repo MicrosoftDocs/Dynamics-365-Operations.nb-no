@@ -2,8 +2,8 @@
 title: Oversikt over organisasjoner og organisasjonshierarkier
 description: Organisasjonshierarkier representerer relasjonene mellom organisasjonene som utgjør virksomheten.
 author: sericks007
-ms.date: 11/10/2021
-ms.topic: article
+ms.date: 01/03/2022
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: OMHierarchyManager, OMOperatingUnit,
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6f0388b6e7c22c339d26b82c35f1bbb1ef54cdb5
-ms.sourcegitcommit: ba10ba2cd4fb4267afb5aacae4f6a52aa2456e7e
+ms.openlocfilehash: c8e8f2c2004582f42c3f464fedf9f3d049b5278f
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "7798352"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7992083"
 ---
 # <a name="organizations-and-organizational-hierarchies-overview"></a>Oversikt over organisasjoner og organisasjonshierarkier
 
@@ -54,7 +54,7 @@ Driftsenhetstypene omfatter kostsentre, forretningsenheter, verdistrømmer, avde
 | Forretningsenhet       | En delvis uavhengig driftsenhet som er opprettet for å nå strategiske forretningsmål. | Brukes for finansrapportering som er basert på bransjer eller produktlinjer som organisasjonen leverer, uavhengig av juridiske enheter. |
 | Verdistrøm        | En driftsenhet som styrer én eller flere produksjonsflyter. | Brukes vanligvis i lean manufacturing til å styre aktivitetene og flytene som kreves for å forsyne forbrukere med et produkt eller en tjeneste. |
 | Avdeling          | En driftsenhet som representerer en kategori eller en funksjonell del i en organisasjon som utfører en bestemt oppgave, for eksempel salg eller regnskap. | Brukes for å rapportere om funksjonsområder. En avdeling kan ha resultatansvar, og kan bestå av en gruppe kostsentre. |
-| Handelskanal      | En driftsenhet som representerer en fysisk butikk, nettbutikk eller markedsplass på Internett. | Brukes for behandling og driftskontroll av én eller flere butikker i eller på tvers av juridiske enheter. |
+| Detaljhandelkanal      | En driftsenhet som representerer en fysisk butikk, nettbutikk, markedsplass eller et telefonsenter. | Brukes for behandling og driftskontroll av én eller flere butikker i eller på tvers av juridiske enheter. |
 
 ### <a name="teams"></a>Team
 

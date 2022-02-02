@@ -3,7 +3,7 @@ title: Datamodell for avgiftsberegning
 description: Dette emnet gir informasjon om avgiftsdatamodellen, og hvordan feltverdiene i hver datamodell bestemmes av konteksten til avgiftsberegningstransaksjoner.
 author: kailiang
 ms.date: 10/15/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 4b9b3e28b9435e9614b06d4fa2855b31d0e38b41
-ms.sourcegitcommit: 93cc9823016c9f2fd568ada0b670a52c8c3bfa33
+ms.openlocfilehash: 2773efaed9ee30ccb27b35f5aa00515ebba1c84a
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "7864266"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985972"
 ---
 # <a name="tax-calculation-data-model"></a>Datamodell for avgiftsberegning
 
 Dette emnet gir informasjon om hvordan feltverdiene i avgiftsdatamodellen bestemmes i avgiftsberegningstransaksjoner.
 
-*Avgiftsdatamodellen* består av felt som er nødvendige for avgiftsberegninger. Microsoft tilbyr *datamodellen for avgiftsberegning*, som inkluderer hodefeltene og linjefeltene i transaksjonsdokumenter i Finance and Operations apper. Feltene som er definert i datamodellen for avgiftsberegning, er de tilgjengelige kolonnene i tabellene for gjeldende regler i konfigurasjonen av mva-beregningsfunksjonen.
+*Avgiftsdatamodellen* består av felt som er nødvendige for avgiftsberegninger. Microsoft tilbyr *datamodellen for avgiftsberegning*, som inkluderer hodefeltene og linjefeltene i transaksjonsdokumenter i Finance and Operations-apper. Feltene som er definert i datamodellen for avgiftsberegning, er de tilgjengelige kolonnene i tabellene for gjeldende regler i konfigurasjonen av mva-beregningsfunksjonen.
 
 > [!NOTE] 
 > Noen noder som er definert i datamodellen, for eksempel **post-ID** og **tabell-ID**, er for tekniske hensyn. De er ikke tilgjengelige kolonner i konfigurasjonen av mva-beregningsfunksjonen.
@@ -55,7 +55,7 @@ Du kan også vise datamodellen for avgiftsberegningen og de tilgjengelige kolonn
 
     [![Behandle kolonner.](./media/tax-calculation-model-mapping-3.png)](./media/tax-calculation-model-mapping-3.png)
 
-Datamodellen for avgiftsberegning er integrert med Finance and Operations apper. Under hver transaksjon som er relatert til avgiftsberegning, blir verdiene til feltene som er definert i tabellene for relevansregler, samlet inn og sendt til avgiftsberegningstjenesten for beregning. I versjon 40.46 er 57 forhåndsdefinerte datamodeller tilgjengelige for følgende transaksjonstyper: bestillinger, salgsordrer, overføringsordrer, innkjøpsrekvisisjoner, forespørsler om tilbud og salgstilbud.
+Datamodellen for avgiftsberegning er integrert med Finance and Operations-apper. Under hver transaksjon som er relatert til avgiftsberegning, blir verdiene til feltene som er definert i tabellene for relevansregler, samlet inn og sendt til avgiftsberegningstjenesten for beregning. I versjon 40.46 er 57 forhåndsdefinerte datamodeller tilgjengelige for følgende transaksjonstyper: bestillinger, salgsordrer, overføringsordrer, innkjøpsrekvisisjoner, forespørsler om tilbud og salgstilbud.
 
 31 datamodeller kan tas med som felt i overskriften til en transaksjon. Men ikke alle felt gjelder for alle transaksjonstyper. Følgende tabell viser hvilke hodefelt som er tilgjengelige for bestemte transaksjonstyper. I noen tilfeller må felttilordningen bestemmes av forhåndsdefinert logikk. Hvor det er relevant, angis logikken.
 

@@ -2,25 +2,25 @@
 title: Revaluere leiebetalinger som er koblet til en indeksrente
 description: Dette emnet beskriver justeringen som gjøres for leieforpliktelsen for en bruksrettseiendel når variable leiebetalinger endres på grunn av en endring i indeksrenten.
 author: moaamer
-ms.date: 04/12/2021
+ms.date: 01/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: AssetLeaseIndexRevaluation
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 1b3eed28ba6fc5af02c1bbf430cc9779426084f0eaf4e027141bbdd18a70dde4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5abd1f5d265c6e8b53903e6df5c52a06b3468880
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734592"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968062"
 ---
 # <a name="revalue-lease-payments-that-are-linked-to-an-index-rate"></a>Revaluere leiebetalinger som er koblet til en indeksrente
 
@@ -43,7 +43,7 @@ Følg disse trinnene for å revaluere leiebetalinger som er koblet til en indeks
 4. Velg filtrene for å velge leieavtaler som skal inkluderes i bakgrunnsbehandlingen, og velg deretter **OK**.
 
     Dialogboksen for **forhåndsvisning av revaluering av indeksrente** vises og viser leieavtalene som skal revalueres. Den viser også aktiva- og gjeldsjusteringer eller de variable betalingsjusteringene.
-    
+
 5. Hvis du vil hindre at leieavtaler revalueres, velger du leieavtalene som **skal** revalueres. Hvis du ikke velger noen leieavtaler, revalueres alle leieavtalene. Når du er ferdig, velger du **OK** for å revaluere leiebetalingene.
 6. Hvis du vil vise transaksjonene som ble opprettet for en bestemt prosess for revaluering av indeks, velger du prosess-IDen, og deretter velger du **Transaksjoner**.
 
@@ -66,5 +66,7 @@ Du kan vise den nygenererte betalingsplanen som starter på revalueringsdatoen, 
 
 Journaloppføringen har automatisk postert justeringsjournaloppføringen til kontoen for endringen i leiebetalinger som er knyttet til revalueringen av indeks.
 
+> [!NOTE]
+> Hvis alternativet **Oppdeling av betalingsbeløp** er aktivert på hurtigfanen **Generelt** på siden **Leiedetaljer**, og det tilknyttede tablået er IFRS 16, vil indeksrevalueringsprosessen automatisk legge til en post i dialogboksen **Oppdeling av betalingsbeløp**. Beløpet gjenspeiler endringen som ble gjort i betalingen på grunn av indeksrevaluering. Posten merkes som **Brukes til IRFS 16-indeksrevaluering**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

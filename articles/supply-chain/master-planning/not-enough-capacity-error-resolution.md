@@ -1,5 +1,5 @@
 ---
-title: Rett opp feil med at planleggingsmotoren ikke finner nok kapasitet
+title: Rett opp feil med at planleggingsmotoren ikke finner nok kapasitet og begrenset kapasitet
 description: Dette emnet gir informasjon om årsakene og løsningene for "Produksjonsordre %1 kan ikke planlegges. Feilmeldingen om at planleggingsmotoren ikke finner nok kapasitet.
 author: ChristianRytt
 ms.date: 7/29/2021
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-07-19
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 16626a7ee74e89bd129d8435a17d16b41a5e0387
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: becd537d37a8ba8931f2598dccbae8554a4d168e
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565765"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985036"
 ---
 # <a name="fix-the-not-enough-capacity-could-be-found-scheduling-engine-error"></a>Rett opp feil med at planleggingsmotoren ikke finner nok kapasitet
 
@@ -105,5 +105,11 @@ Følg denne fremgangsmåten for å se gjennom tilgjengelig kapasitet på ressurs
 
 1. Gå til **Organisasjonsstyring \> Ressurser \> Ressursgrupper**, og velg en ressursgruppe som er gjeldende for ordren som ikke kan planlegges.
 1. I handlingsruten i **Ressursgruppe**-fanen i **Vis**-gruppen velger du **Kapasitetsbelastning** eller **Kapasitetsbelastning, grafisk**, og kontrollerer at det finnes tilgjengelig kapasitet.
+
+## <a name="master-planning-books-a-resource-when-the-resource-calendar-is-closed"></a>Hovedplanlegging bestiller en ressurs når ressurskalenderen er lukket
+
+Ved bruk av driftsplanlegging vil hovedplanleggingen planlegge kapasitet i henhold til kalenderen for den primære ressursgruppen. Det bestiller den sekundære operasjonen samtidig som den primære operasjonen, og tar ikke hensyn til kalenderne eller kapasiteten til den sekundære operasjonen. Dette kan føre til at produksjonsordren planlegges i en lukket kalender eller på et tidspunkt da den sekundære operasjonen ikke er tilgjengelig (kalender lukket, ingen kapasitet).
+
+Når jobbplanlegging brukes, vil hovedplanleggingen ta hensyn til kapasiteten og kalenderen for både den primære og den sekundære operasjonen ved planlegging av ordren. For at ordren skal kunne planlegges, må kalendere for ressursene i begge operasjonene være åpne og ha tilgjengelig kapasitet.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

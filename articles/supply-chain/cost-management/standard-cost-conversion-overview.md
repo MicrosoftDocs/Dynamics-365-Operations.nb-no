@@ -3,7 +3,7 @@ title: Oversikt  over standard kostnadskonvertering
 description: Denne artikkelen inneholder en prosessoversikt som hjelper deg med å definere og kjøre en standard kostnadskonvertering. Trinnene skal fullføres etter at du har oppfylt forhåndskravene for en standard kostnadskonvertering.
 author: AndersGirke
 ms.date: 06/20/2017
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: CostingVersion, InventStdCostConv
@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c1b1d02660d4cc8de07c9073ca4bc97a7ef4864d04fb2716ac7c80172040adcc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9796449bee4361b2b871af10d30341c2f0760ab1
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6781543"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982695"
 ---
 # <a name="standard-cost-conversion-overview"></a>Oversikt  over standard kostnadskonvertering
 

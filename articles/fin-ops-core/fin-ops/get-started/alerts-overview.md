@@ -3,23 +3,22 @@ title: Varslingsoversikt (inneholder video)
 description: Dette emnet gir generell informasjon om varsler. Du kan bruke varsler til å holde deg informert om hendelser som du vil spore i løpet av arbeidsdagen.
 author: RichdiMSFT
 ms.date: 09/04/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: EventCreateRule
 audience: Application user
 ms.reviewer: sericks
-ms.custom: intro-internal
 ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: 857a837872abff44c8c7af5e938f7610fa61d94e
-ms.sourcegitcommit: ef0dd4245fc499907ffe00e2a32f59a6cd96e45d
+ms.openlocfilehash: c3332bdf7f2edb693c95a4d5a6f95906e14c0a42
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "7937477"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984974"
 ---
 # <a name="alerts-overview"></a>Oversikt over varsler
 
@@ -78,7 +77,7 @@ En varslingsregel har fem komponenter:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3DWZ3]
 
-Videoen [Slik bruker du varsler til å overvåke filtrerte data](https://youtu.be/ZYKMcv6kl9s) (vises over) er inkludert i [Finance and Operations-spillelisten](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) som er tilgjengelig på YouTube.
+Videoen [Slik bruker du varsler til å overvåke filtrerte data](https://youtu.be/ZYKMcv6kl9s) (vises oven) er inkludert i [Finance and Operations-spillelisten](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) som er tilgjengelig på YouTube.
 
 ### <a name="alert-rule-options"></a>Alternativer for varslingsregel
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-09-03
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: d3642392ed2cf231f261b24428756c6e32a79f98
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: c6356f7c085b93e3e3f292e72f813f823e924487
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7674580"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968183"
 ---
 # <a name="ratings-and-reviews-faq"></a>Vanlige spørsmål om rangeringer og anmeldelser
 
@@ -41,5 +41,17 @@ Hvis du vil ha instruksjoner om hvordan du aktiverer og fremtvinger manuell publ
 [Velge å bruke vurderinger og anmeldelser](opt-in-ratings-reviews.md)
 
 [Aktivere manuell publisering av vurderinger og vurderinger av en moderator](manual-publish-rating-reviews.md)
+
+[Administrere vurderinger og anmeldelser](manage-reviews.md)
+
+[Konfigurere vurderinger og anmeldelser](configure-ratings-reviews.md)
+
+[Synkronisere produktvurderinger](sync-product-ratings.md)
+
+[Aktivere manuell publisering av vurderinger og vurderinger av en moderator](manual-publish-rating-reviews.md)
+
+[Importer og eksporter vurderinger og omtaler](import-export-reviews.md)
+
+[Konfigurer tjeneste-til-tjeneste-godkjenning](service-to-service-auth.md)
 
 [Filtrering av vurderinger vises på søkeresultater og kategorisider når vurderinger og anmeldelser av løsningsforklaringer ikke er aktivert](troubleshoot/hide-ratings-refiner.md)

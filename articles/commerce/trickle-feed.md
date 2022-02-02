@@ -2,7 +2,7 @@
 title: Fordel feedbasert ordreoppretting for detaljhandelstransaksjoner
 description: Dette emnet beskriver den fordelte, feedbaserte ordreopprettingen for butikktransaksjoner i Microsoft Dynamics 365 Commerce.
 author: analpert
-ms.date: 12/14/2021
+ms.date: 01/11/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3a7fd8698d7123403cf9092a4a4bf810595d795b
-ms.sourcegitcommit: f82372b1e9bf67d055fd265b68ee6d0d2f10d533
+ms.openlocfilehash: 67b66cd4bf2a77f3ab7f33f691156e38cc13770a
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7921251"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7964635"
 ---
 # <a name="trickle-feed-based-order-creation-for-retail-store-transactions"></a>Fordel feedbasert ordreoppretting for detaljhandelstransaksjoner
 
 [!include [banner](includes/banner.md)]
 
-I Microsoft Dynamics 365 Commerce, versjon 10.0.5 og nyere anbefaler vi at du går over alle utdragsposteringsprosesser til prosessene for å fordele feedbasert utdragspostering. Betydelige ytelses- og forretningsfordeler knyttes til bruk av funksjonen for fordelingsfeed. Salgstransaksjoner behandles gjennom hele dagen. Transaksjoner for betalingsmiddel og kontantstyring behandles i regnskapsoppgjøret på slutten av dagen. Funksjonalitet for fordelingsfeed gjør det mulig å behandle salgsordrer, fakturaer og betalinger fortløpende. Derfor kan beholdning, inntekt og betalinger oppdateres og gjenkjennes med minimal forsinkelse.
+I Microsoft Dynamics 365 Commerce, versjon 10.0.5 og nyere anbefaler vi at du går over alle utdragsposteringsprosesser til prosessene for å fordele feedbasert utdragspostering. Betydelige ytelses- og forretningsfordeler knyttes til bruk av funksjonen for fordelingsfeed. Salgstransaksjoner behandles gjennom hele dagen. Transaksjoner for betalingsmiddel og kontantstyring behandles i regnskapsoppgjøret på slutten av dagen. Funksjonalitet for fordelingsfeed gjør det mulig å behandle salgsordrer, fakturaer og betalinger fortløpende. Derfor oppdateres beholdning, inntekt og betalinger og gjenkjennes med minimal forsinkelse.
 
 ## <a name="use-trickle-feed-based-posting"></a>Bruk postering basert på fordelingsfeed
 
@@ -47,6 +47,10 @@ Planlegg følgende jobber for å kjøre med høy frekvens:
 ### <a name="financial-statements"></a>Regnskapsoppgjør
 
 Behandling av regnskapsoppgjør er ment å være en dagsoppgjørsprosess. Denne typen utdragsbehandling støtter bare **Skift**-lukkingsmetoden og plukker bare opp lukkede skift. Utdrag er begrenset til økonomisk avstemming. De oppretter bare journaler for de ulike beholdningsbeløpene mellom telt beløp og transaksjonsbeløp for betalingsmidlene og journaler for andre kontantstyringstransaksjoner.
+
+Regnskapsoppgjør gjør det også mulig å gjennomgå følgende transaksjoner: transaksjoner for kasseoppgjør, betalingstransaksjoner og sikre betalingsmiddeltransaksjoner. Siden med betalingsmiddeldetaljer vises bare når et regnskapsoppgjør er valgt.
+
+![Et bilde som viser delen om betalingsmiddeldetaljer i skjemaet for posterte utdrag bare når et regnskapsoppgjør er valgt.](./media/Trickle-feed-posted-statements-transaction-view.png)
 
 Planlegg start- og sluttidspunktene for følgende regnskapsoppgjørsjobber basert på forventet dagsoppgjør:
 

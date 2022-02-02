@@ -3,7 +3,7 @@ title: Kundebetalingsforutsigelser
 description: Dette emnet beskriver funksjonene for betalingsprediksjoner som kan hjelpe deg med å forstå de vanlige betalingspraksisene til en kunde. Denne funksjonen kan også hjelpe til med å identifisere omstendigheter som skal føre til at du starter innkrevingsprosesser tidligere enn du ellers ville starte dem.
 author: ShivamPandey-msft
 ms.date: 11/03/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
@@ -17,17 +17,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 300c835c835a5c653b75b9e151462337dfbe49a5
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 04897e3a7765264ab2e664422caa928c49b9cc61
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752743"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982045"
 ---
 # <a name="customer-payment-predictions"></a>Kundebetalingsforutsigelser
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Dette emnet beskriver funksjonene for betalingsprediksjoner som kan hjelpe deg med å forstå de vanlige betalingspraksisene til en kunde. Denne funksjonen kan også hjelpe til med å identifisere omstendigheter som skal føre til at du starter innkrevingsprosesser tidligere enn du ellers ville starte dem.
 
@@ -39,7 +38,7 @@ For organisasjoner er det ofte vanskelig å forutse når kunder betaler fakturae
 - Innkrevingsprosesser som starter for sent
 - Ordrer som blir frigitt til kunder som kan være på etterskudd med betalingen
 
-Kundebetalingsprediksjoner (forhåndsversjon) hjelper organisasjoner med å forutse når en kundefaktura skal betales. Derfor kan de opprette strategier for innkreving som bidrar til å øke sjansene for at de vil bli betalt i tide.
+Kundebetalingsprediksjoner hjelper organisasjoner med å forutse når en kundefaktura skal betales. Derfor kan de opprette strategier for innkreving som bidrar til å øke sjansene for at de vil bli betalt i tide.
 
 ## <a name="predictions"></a>Prognoser
 

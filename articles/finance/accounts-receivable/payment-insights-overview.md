@@ -3,7 +3,7 @@ title: Innsikt i kundebetaling (forhåndsvisning)
 description: Dette emnet beskriver funksjonene for betalingsinnsikt som hjelper deg med å forstå de vanlige betalingspraksisene til en kunde. Funksjonen kan også hjelpe til med å identifisere omstendigheter som fører til at du starter innkrevingsprosesser tidligere enn du ellers ville starte dem.
 author: ShivamPandey-msft
 ms.date: 11/06/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: ecd368237f949b6cbfbbb7293f6ddc5b1199d6fc0aef7e0bf44f4a2a808a6ccb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d359e3ceef0fb7213d52aeb265da2e75120ae223
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737779"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984008"
 ---
 # <a name="customer-payment-insights-preview"></a>Innsikt i kundebetaling (forhåndsvisning)
 
@@ -69,7 +69,7 @@ Hvis du er interessert i å prøve Kundebetalingsinnsikt (forhåndsvisning), kan
 
 ## <a name="privacy-notice"></a>Personvernerklæring
 
-Forhåndsvisninger (1) kan bruke mindre personvern og færre sikkerhetstiltak enn Dynamics 365 Finance and Operations-tjenesten, (2) er ikke inkludert i tjenestenivåavtalen for denne tjenesten, (3) må ikke brukes til å behandle personlige data eller andre data som er underlagt juridiske eller forskriftsmessige krav, og (4) har begrenset støtte.
+Forhåndsversjoner (1) kan bruke mindre personvern og færre sikkerhetstiltak enn Dynamics 365 Finance and Operations-tjenesten, (2) er ikke inkludert i tjenestenivåavtalen for denne tjenesten, (3) må ikke brukes til å behandle personlige data eller andre data som er underlagt juridiske eller forskriftsmessige krav, og (4) har begrenset støtte.
 
 
 

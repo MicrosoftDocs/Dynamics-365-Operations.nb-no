@@ -2,23 +2,22 @@
 title: Oversikt over behandling av teknisk endring (inneholder video)
 description: Dette emnet gir en oversikt over behandling av teknisk endring, som hjelper deg med å planlegge og administrere produktversjonering og administrere produktlivssykluser og tekniske endringer.
 author: t-benebo
-ms.date: 08/26/2021
-ms.topic: article
+ms.date: 01/11/2022
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: intro-internal
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: d667aef827addcf7c34075b08afffffe3fd71935
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: 8c200796d587d77c0f4d2344524a890ba964ab39
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952604"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985218"
 ---
 # <a name="engineering-change-management-overview"></a>Oversikt over behandling av teknisk endring
 
@@ -39,7 +38,7 @@ Behandling av teknisk endring hjelper deg med å planlegge og administrere produ
 - Forespørsler om teknisk endring som støttes av arbeidsflyter
 - Ordrer om teknisk endring som støttes av arbeidsflyter
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4HE6B]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4HE6B]
 
 Den forrige videoen ([Endre administrasjonsfunksjoner i Dynamics 365 Supply Chain Management](https://youtu.be/N313FqvRuBc)) er inkludert i [Finance and Operations-spillelisten](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) som er tilgjengelig på YouTube.
 
@@ -71,7 +70,9 @@ Deretter aktiverer du konfigurasjonsnøklene ved å følge disse trinnene.
 
 1. Hvis du også vil bruke versjonsdimensjonen, merker du av for **Produktdimensjon – Versjon**. (Denne avmerkingsboksen er lengre nede i listen, og ikke nestet under noden **Behandling av teknisk endring**.)
 1. Deaktiver vedlikeholdsmodus, som beskrevet i [Vedlikeholdsmodus](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
-1. Kjør en databasesynkronisering for å sikre at konfigurasjonsnøklene er riktig aktivert.
+1. Databasen må synkroniseres for å sikre at konfigurasjonsnøklene er riktig aktivert. Gjør ett av følgende, avhengig av hvilken type miljø du arbeider i:
+    - **For miljøer på nivå 1 (utvikling)**: Åpne prosjektet i Microsoft Visual Studio, og velg deretter **Dynamics 365 \> Synkroniser database \> Synkroniser**.
+    - **For miljøer på nivå 2 (og høyere)**: Databasen synkroniseres automatisk etter at du har satt miljøet inn i og ut av vedlikeholdsmodus, så du kan hoppe over dette trinnet.
 
 > [!IMPORTANT]
 > Fra og med april 2022 blir lisensnøklene for både **Behandling av teknisk endring** og **Produktdimensjon – Versjon** aktivert som standard for alle nye installasjoner, men du kan fremdeles deaktivere dem hvis du ønsker det.

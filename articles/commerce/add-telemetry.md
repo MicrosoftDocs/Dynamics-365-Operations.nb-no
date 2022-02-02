@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e3916b18c797222c300957fb25cabad78c4fcb9744a29d611a81b0bda3e9834d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f796a3e10345da41ff461b656d88affb3adbdf9e
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724610"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7964535"
 ---
 # <a name="add-script-code-to-site-pages-to-support-telemetry"></a>Legge til skript kode i områdes ID-er for å støtte telemetri
 
@@ -111,8 +111,6 @@ Hvis du vil legge til et eksternt skript direkte i en mal i områdebygger, følg
 [Arbeide med CSS-overstyringsfiler](css-override-files.md)
 
 [Legge til et favorittikon](add-favicon.md)
-
-[Legge til en velkomstmelding](add-welcome-message.md)
 
 [Legge til en opphavsrettserklæring](add-copyright-notice.md)
 
