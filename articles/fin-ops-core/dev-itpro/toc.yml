@@ -12,8 +12,10 @@
               href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Nyheter eller endringer i Plattformoppdateringer
               items:
-                - name: Nyheter eller endringer på startsiden for Plattformoppdateringer
+                - name: Nyheter eller endringer på startsiden for plattformoppdateringer
                   href: get-started/whats-new-home-page.md
+                - name: Plattformoppdateringer for versjon 10.0.25 (april 2022)
+                  href: get-started/whats-new-platform-updates-10-0-25.md
                 - name: Plattformoppdateringer for versjon 10.0.24 (februar 2022)
                   href: get-started/whats-new-platform-updates-10-0-24.md
                 - name: Plattformoppdateringer for versjon 10.0.23 (januar 2022)
@@ -426,13 +428,15 @@
               items:
                 - name: Opprette distribuerbare pakker med modeller
                   href: deployment/create-apply-deployable-package.md
-                - name: Installere distribuerbare pakker fra kommandolinjen
+                - name: Installer distribuerbare pakker fra kommandolinjen
                   href: deployment/install-deployable-package.md
-                - name: Avinstallere en pakke
+                - name: Avinstaller en pakke
                   href: deployment/uninstall-deployable-package.md
-                - name: Feilsøke problemer med pakkeprogram
+                - name: Kjør egendefinerte X++-skript uten nedetid
+                  href: deployment/run-custom-scripts.md
+                - name: Feilsøk problemer med pakkeprogram
                   href: deployment/deployable-package-troubleshooting.md
-            - name: Distribuere tilpasset hjelp
+            - name: Distribuer tilpasset hjelp
               items:
                 - name: Oversikt over tilpasset hjelp
                   href: help/custom-help-overview.md
@@ -850,13 +854,15 @@
                   href: perf-test/testing-validation.md
                 - name: Teste prosjekter i Visual Studio
                   href: perf-test/testing-support.md
-                - name: Distribuere og bruke et miljø som støtter sammenhengende automatisering av bygging og testing
+                - name: Distribuer og bruk et miljø som støtter sammenhengende automatisering av bygging og testing
                   href: perf-test/continuous-build-test-automation.md
                 - name: SysTest-filtrering ved hjelp av klasse- og metodeattributter
                   href: perf-test/systest-filtering.md
+                - name: SysTestRow-attributt for testing av flere verdier
+                  href: perf-test/systest-row.md
                 - name: Bibliotek for aksepttest
                   items:
-                    - name: Biblioteksressurser for aksepttest
+                    - name: Bibliotekressurser for aksepttest
                       href: perf-test/acceptance-test-library.md
                     - name: Navigasjonskonsepter
                       href: perf-test/concepts-navigation.md

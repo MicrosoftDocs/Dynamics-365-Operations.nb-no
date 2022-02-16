@@ -12,6 +12,8 @@
               items:
                 - name: Nyheter eller endringer på startsiden for Finance
                   href: get-started/whats-new-home-page.md
+                - name: Finance 10.0.25 (april)
+                  href: get-started/whats-new-changed-10-0-25.md
                 - name: Finance 10.0.24 (februar)
                   href: get-started/whats-new-changed-10-0-24.md
                 - name: Finance 10.0.23 (januar)
@@ -98,12 +100,10 @@
                   href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/finance/toc.json
                 - name: Oppgaveregistrering
                   href: ../fin-ops-core/dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/finance/toc.json
-                - name: Lage dokumentasjon eller opplæring med Oppgaveregistrering
+                - name: Lag dokumentasjon eller opplæring med oppgaveopptaker
                   href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/finance/toc.json
                 - name: Videoer
                   href: ../fin-ops-core/fin-ops/get-started/videos.md?toc=/dynamics365/finance/toc.json
-                - name: Ordliste
-                  href: ../fin-ops-core/fin-ops/get-started/glossary.md?toc=/dynamics365/finance/toc.json
             - name: Læringskatalog
               items:
                 - name: Startside for læringskatalog
@@ -164,7 +164,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/finance/toc.json
                 - name: Endre datoen for en økt
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/change-date-session.md?toc=/dynamics365/finance/toc.json
-                - name: Angi en brukers foretrukkede tidssone
+                - name: Angi en brukers foretrukne tidssone
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/finance/toc.json
                 - name: Forstå Lifecycle Services
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/dynamics365/finance/toc.json
@@ -214,11 +214,13 @@
                   href: accounts-payable/tasks/key-invoice-data-into-ap-system-approval-journal.md
                 - name: Registrere fakturadata i AP-systemet ved hjelp av fakturapulje
                   href: accounts-payable/tasks/key-invoice-data-into-ap-system-invoice-pool.md
-                - name: Kopiere leverandører ved hjelp av delte nummerserier
+                - name: Kopier leverandører ved hjelp av delte nummerserier
                   href: accounts-payable/vendor-copy.md
-                - name: Registrere en leverandørfaktura i fakturajournalen
+                - name: Registrer en leverandørfaktura i fakturajournalen
                   href: accounts-payable/tasks/record-vendor-invoice-invoice-journal.md
-            - name: Revidere fakturaer og nøkkeldata i Leverandører
+                - name: Utlign en betaling i fakturajournalen
+                  href: accounts-payable/payment-invoice-journal.md
+            - name: Revider fakturaer og nøkkeldata i Leverandører
               href: general-ledger/tasks/audit-invoices-key-data-ap-system.md
             - name: Treveis kontrollpolicyer
               href: accounts-payable/three-way-matching-policies.md
@@ -1028,102 +1030,30 @@
                   href: general-ledger/currency-revaluation-consolidation-company.md
                 - name: Revaluering av utenlandsk valuta for økonomimodul
                   href: general-ledger/foreign-currency-revaluation-general-ledger.md
-                - name: Importere valutakurser
+                - name: Importer valutakurser
                   href: general-ledger/import-currency-exchange-rates.md
                 - name: Ett bilag
                   href: general-ledger/one-voucher.md
                 - name: Vanlige spørsmål om ett bilag
                   href: general-ledger/one-voucher-faq.md
-                - name: Finansutligninger
+                - name: Utligninger
                   href: general-ledger/ledger-settlements.md
+                - name: Forståelse av finansutligning og årsavslutning
+                  href: general-ledger/awareness-between-ledger-settlement-year-end-close.md
             - name: Lukking av periodeslutt
               items:
-                - name: Lukke økonomimodulen ved periodeslutt
+                - name: Lukk økonomimodulen ved periodeslutt
                   href: general-ledger/close-general-ledger-at-period-end.md
                 - name: Arbeidsområde for regnskapsperiodeavslutning
                   href: general-ledger/financial-period-close-workspace.md
                 - name: Årsavslutning
                   href: general-ledger/year-end-close.md
-                - name: Lukke regnskapsåret
+                - name: Lukk regnskapsåret
                   href: general-ledger/tasks/close-fiscal-year.md
-                - name: Lukke masseregnskapsperiode
+                - name: Lukk masseregnskapsperiode
                   href: general-ledger/tasks/mass-financial-period-close.md
                 - name: Vanlige spørsmål om årssluttaktiviteter
                   href: general-ledger/faq-year-end-activities.md
-            - name: Merverdiavgift
-              items:
-                - name: Oversikt over merverdiavgift
-                  href: general-ledger/indirect-taxes-overview.md
-                - name: Mva-satser basert på grensegrunnlaget og beregningsmetodene
-                  href: general-ledger/marginal-base-field.md
-                - name: Mva-betalinger og avrundingsregler
-                  href: general-ledger/round-sales-tax-payments.md
-                - name: Beregningsmåter for merverdiavgift i grunnlagsfeltet
-                  href: general-ledger/sales-tax-calculation-methods-origin-field.md
-                - name: Hele beløp og alternativer for intervallberegning for mva-koder
-                  href: general-ledger/whole-amount-interval-options-sales-tax-codes.md
-                - name: Mva-beregning på generelle journallinjer
-                  href: general-ledger/sales-tax-calculation-on-general-journal.md
-                - name: Beregne og justere merverdiavgift på en leverandørfaktura
-                  href: general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
-                - name: Aktiver forsinket avgiftsberegning i journal
-                  href: general-ledger/enable-delayed-tax-calculation.md
-                - name: Opprette en mva-betaling
-                  href: general-ledger/tasks/create-sales-tax-payment.md
-                - name: Avrunding av avgiftsutligning basert på egendefinert antall desimaler for valuta
-                  href: localizations/global-tax-settlement-rounding-based-customized-currency-decimal-places.md
-                - name: Opprette mva-transaksjoner på dokumenter
-                  href: general-ledger/tasks/create-sales-tax-transactions-documents.md
-                - name: Definere finansposteringsgrupper for merverdiavgift
-                  href: general-ledger/tasks/set-up-ledger-posting-groups-sales-tax.md
-                - name: Definere skattemyndigheter
-                  href: general-ledger/tasks/set-up-sales-tax-authorities.md
-                - name: Definer mva-koder
-                  href: general-ledger/tasks/set-up-sales-tax-codes.md
-                - name: Definere mva-grupper og mva-grupper for vare
-                  href: general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md
-                - name: Definere mva-rapporteringskoder
-                  href: general-ledger/tasks/set-up-sales-tax-reporting-codes.md
-                - name: Støtte for dobbel valuta for merverdiavgift
-                  href: general-ledger/dual-currency-for-tax.md
-                - name: Mva-spesifikasjon etter finanstransaksjonsrapport
-                  href: general-ledger/Sales-tax-specification-by-ledger-transaction-report.md
-                - name: Definer mva-utligningsperioder
-                  href: general-ledger/tasks/set-up-sales-tax-settlement-periods.md
-                - name: Vis posterte mva-transaksjoner
-                  href: general-ledger/tasks/view-posted-sales-tax-transactions.md
-                - name: Skriv ut Mva-betaling etter kode-rapporten
-                  href: general-ledger/print-sales-tax-payment-by-code-report.md
-                - name: Feilsøking av merverdiavgift
-                  items:
-                    - name: Avgift beregnes ikke eller avgiftsbeløpet er null
-                      href: general-ledger/sales-tax-troubleshooting-tax-not-calculated-amount-zero.md
-                    - name: Ytelse for avgiftsberegning påvirker transaksjoner
-                      href: general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md
-                    - name: Feil feltverdi i TaxTrans
-                      href: general-ledger/sales-tax-troubleshooting-field-value-taxtrans-incorrect.md
-                    - name: TaxTrans-posten genereres ikke
-                      href: general-ledger/sales-tax-troubleshooting-taxtrans-record-not-generated.md
-                    - name: Avgift posteres til feil finanskonto i bilaget
-                      href: general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md
-                    - name: Bilaget genereres ikke
-                      href: general-ledger/sales-tax-troubleshooting-voucher-not-generated.md
-            - name: Kildeskatt
-              items:
-                - name: Definer kildeskatt
-                  href: general-ledger/tasks/set-up-withholding-tax.md
-                - name: Global kildeskatt
-                  items:
-                    - name: Oversikt over global kildeskatt
-                      href: general-ledger/global-withholding-tax-overview.md
-                    - name: Definere global kildeskatt
-                      href: general-ledger/set-up-global-withholding-tax.md
-                    - name: Kildeskatt i innkjøpstransaksjoner
-                      href: general-ledger/withholding-tax-in-purchase-transactions.md
-                    - name: Kildeskatt i salgstransaksjoner
-                      href: general-ledger/withholding-tax-in-sales-transactions.md
-                    - name: Opprette en kildeskattbetaling
-                      href: general-ledger/create-a-withholding-tax-payment.md
             - name: Arbeidsområde for overvåking
               items:
                 - name: Regler for overvåkingspolicy
@@ -1538,6 +1468,82 @@
                           href: localizations/customize-tax-configurations-master-data-lookup.md
                     - name: Vanlige spørsmål om avgiftsberegning
                       href: localizations/global-tax-calcuation-service-faq.md?toc=/dynamics365/finance/toc.json
+            - name: Avgift
+              items:
+                - name: Merverdiavgift
+                  items:
+                    - name: Oversikt over merverdiavgift
+                      href: general-ledger/indirect-taxes-overview.md
+                    - name: Mva-satser basert på grensegrunnlaget og beregningsmetodene
+                      href: general-ledger/marginal-base-field.md
+                    - name: Mva-betalinger og avrundingsregler
+                      href: general-ledger/round-sales-tax-payments.md
+                    - name: Beregningsmåter for merverdiavgift i grunnlagsfeltet
+                      href: general-ledger/sales-tax-calculation-methods-origin-field.md
+                    - name: Hele beløp og alternativer for intervallberegning for mva-koder
+                      href: general-ledger/whole-amount-interval-options-sales-tax-codes.md
+                    - name: Mva-beregning på generelle journallinjer
+                      href: general-ledger/sales-tax-calculation-on-general-journal.md
+                    - name: Beregne og justere merverdiavgift på en leverandørfaktura
+                      href: general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
+                    - name: Aktiver forsinket avgiftsberegning i journal
+                      href: general-ledger/enable-delayed-tax-calculation.md
+                    - name: Opprette en mva-betaling
+                      href: general-ledger/tasks/create-sales-tax-payment.md
+                    - name: Avrunding av avgiftsutligning basert på egendefinert antall desimaler for valuta
+                      href: localizations/global-tax-settlement-rounding-based-customized-currency-decimal-places.md
+                    - name: Opprette mva-transaksjoner på dokumenter
+                      href: general-ledger/tasks/create-sales-tax-transactions-documents.md
+                    - name: Definere finansposteringsgrupper for merverdiavgift
+                      href: general-ledger/tasks/set-up-ledger-posting-groups-sales-tax.md
+                    - name: Definere skattemyndigheter
+                      href: general-ledger/tasks/set-up-sales-tax-authorities.md
+                    - name: Definer mva-koder
+                      href: general-ledger/tasks/set-up-sales-tax-codes.md
+                    - name: Definere mva-grupper og mva-grupper for vare
+                      href: general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md
+                    - name: Definere mva-rapporteringskoder
+                      href: general-ledger/tasks/set-up-sales-tax-reporting-codes.md
+                    - name: Støtte for dobbel valuta for merverdiavgift
+                      href: general-ledger/dual-currency-for-tax.md
+                    - name: Mva-spesifikasjon etter finanstransaksjonsrapport
+                      href: general-ledger/Sales-tax-specification-by-ledger-transaction-report.md
+                    - name: Definer mva-utligningsperioder
+                      href: general-ledger/tasks/set-up-sales-tax-settlement-periods.md
+                    - name: Vis posterte mva-transaksjoner
+                      href: general-ledger/tasks/view-posted-sales-tax-transactions.md
+                    - name: Skriv ut Mva-betaling etter kode-rapporten
+                      href: general-ledger/print-sales-tax-payment-by-code-report.md
+                    - name: Feilsøking av merverdiavgift
+                      items:
+                        - name: Avgift beregnes ikke eller avgiftsbeløpet er null
+                          href: general-ledger/sales-tax-troubleshooting-tax-not-calculated-amount-zero.md
+                        - name: Ytelse for avgiftsberegning påvirker transaksjoner
+                          href: general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md
+                        - name: Feil feltverdi i TaxTrans
+                          href: general-ledger/sales-tax-troubleshooting-field-value-taxtrans-incorrect.md
+                        - name: TaxTrans-posten genereres ikke
+                          href: general-ledger/sales-tax-troubleshooting-taxtrans-record-not-generated.md
+                        - name: Avgift posteres til feil finanskonto i bilaget
+                          href: general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md
+                        - name: Bilaget genereres ikke
+                          href: general-ledger/sales-tax-troubleshooting-voucher-not-generated.md
+                - name: Kildeskatt
+                  items:
+                    - name: Definer kildeskatt
+                      href: general-ledger/tasks/set-up-withholding-tax.md
+                    - name: Global kildeskatt
+                      items:
+                        - name: Oversikt over global kildeskatt
+                          href: general-ledger/global-withholding-tax-overview.md
+                        - name: Definere global kildeskatt
+                          href: general-ledger/set-up-global-withholding-tax.md
+                        - name: Kildeskatt i innkjøpstransaksjoner
+                          href: general-ledger/withholding-tax-in-purchase-transactions.md
+                        - name: Kildeskatt i salgstransaksjoner
+                          href: general-ledger/withholding-tax-in-sales-transactions.md
+                        - name: Opprett en kildeskattbetaling
+                          href: general-ledger/create-a-withholding-tax-payment.md
             - name: Forskriftsmessige oppdateringer
               href: localizations/regulatory-updates.md
             - name: Søk etter forskriftsmessige oppdateringer
@@ -3106,11 +3112,15 @@
                       href: localizations/rus-turnover-balance-statement-reports.md
                     - name: Rapporter for kontoaktivitet
                       href: localizations/rus-account-activity-reports.md
+                    - name: Føderal regnskapsstandard 27-2021
+                      href: localizations/emea-rus-federal-accounting-standard-27-2021.md
+                    - name: Aktiver mål for elektronisk rapportering for å lagre russiske regnskapsdokumenter
+                      href: localizations/rus-enable-er-destinations-ru-accounting-documents.md
                 - name: Forskuddsinnehavere
                   items:
                     - name: Oversikt over forskuddsinnehavere i Russland
                       href: localizations/rus-advance-holders.md
-                    - name: Opprette en forskuddsinnehaver
+                    - name: Opprett en forskuddsinnehaver
                       href: localizations/emea-advance-holders.md#create-an-advance-holder
                     - name: Daglig drift for forskuddsinnehavere
                       href: localizations/rus-advance-holders-daily-operations.md
@@ -3208,6 +3218,8 @@
                           href: localizations/rus-not-valuable-assets.md
                         - name: Regnskap for arbeidstøy/spesialutstyr (Russland)
                           href: localizations/rus-working-clothes-instruments-accounting.md
+                    - name: Integrering av anleggsmidler med modulen for aktivabehandling
+                      href: localizations/rus-integration-eam-with-fixed-asset.md
                 - name: Leverandører og kunder
                   items:
                     - name: Kreditnotakorrigeringer (Russland)
@@ -3242,6 +3254,8 @@
                           href: localizations/rus-purchases-on-commission.md
                         - name: Salg på provisjon
                           href: localizations/rus-sales-on-commission.md
+                    - name: Lokale rapporter og hovedskjemaer i Kunder og Leverandører
+                      href: localizations/rus-local-reports-primary-forms-ar-ap.md
                 - name: Lager
                   items:
                     - name: Varer i transitt fra leverandør
@@ -3486,170 +3500,6 @@
                   href: localizations/noam-usa-form-1099-public-sector.md
                 - name: Definer leverandører for 1099-rapportering
                   href: localizations/noam-usa-set-up-vndrs-1099-rprtg.md
-        - name: Human Resources
-          items:
-            - name: Oversikt over Human Resources
-              href: ../fin-ops-core/fin-ops/hr/hr-landing-page.md
-            - name: Infrastrukturfrigivelse 10.0.25
-              href: ../human-resources/hr-infrastructure.md?toc=/dynamics365/finance/toc.json
-            - name: Definer Human Resources
-              items:
-                - name: Konfigurer parametere for Human Resources
-                  href: ../human-resources/hr-setup-parameters.md?toc=/dynamics365/finance/toc.json
-                - name: Konfigurere delte parametere for Human Resources
-                  href: ../human-resources/hr-setup-shared-parameters.md?toc=/dynamics365/finance/toc.json
-                - name: Konfigurere arbeidsflyter for Human Resources
-                  href: ../human-resources/hr-workflow-manage-employee-information.md?toc=/dynamics365/finance/toc.json
-                - name: Forstå felt for dato og klokkeslett
-                  href: ../human-resources/hr-setup-date-time-fields.md?toc=/dynamics365/finance/toc.json
-            - name: Administrer medarbeidere
-              items:
-                - name: Organiser arbeidsstyrken
-                  href: ../human-resources/hr-personnel-departments-jobs-positions.md?toc=/dynamics365/finance/toc.json
-                - name: Definer komponentene for en jobb
-                  href: ../human-resources/hr-personnel-jobs.md?toc=/dynamics365/finance/toc.json
-                - name: Definer avdelinger
-                  href: ../human-resources/hr-personnel-define-departments.md?toc=/dynamics365/finance/toc.json
-                - name: Legg til en avdeling i et hierarki
-                  href: ../human-resources/hr-personnel-add-department-hierarchy.md?toc=/dynamics365/finance/toc.json
-                - name: Definer jobber
-                  href: ../human-resources/hr-personnel-define-jobs.md?toc=/dynamics365/finance/toc.json
-                - name: Opprett en arbeidstidskalender
-                  href: ../human-resources/hr-personnel-create-working-time-calendar.md?toc=/dynamics365/finance/toc.json
-                - name: Vanlige spørsmål om medarbeiderhandlinger
-                  href: ../human-resources/hr-personnel-actions-faq.md?toc=/dynamics365/finance/toc.json
-                - name: Bruke arbeidsflyter til å administrere informasjon om ansatte
-                  href: ../human-resources/hr-workflow-manage-employee-information.md?toc=/dynamics365/finance/toc.json
-                - name: Endre rapporteringsrelasjoner for en stilling
-                  href: ../human-resources/hr-personnel-modify-reporting-relationships-position.md?toc=/dynamics365/finance/toc.json
-                - name: Angi arbeiderinformasjon
-                  href: ../human-resources/hr-personnel-enter-worker-information.md?toc=/dynamics365/finance/toc.json
-                - name: Utlånsvarer til arbeidere
-                  href: ../human-resources/hr-personnel-loan-item-worker.md?toc=/dynamics365/finance/toc.json
-                - name: Opprett utlånsvarer
-                  href: ../human-resources/hr-personnel-create-loan-items.md?toc=/dynamics365/finance/toc.json
-                - name: Behandle utlånsvarer
-                  href: ../human-resources/hr-personnel-loan-items.md?toc=/dynamics365/finance/toc.json
-                - name: Utvikle en rekkefølgeplan
-                  href: ../human-resources/hr-personnel-develop-succession-plan.md?toc=/dynamics365/finance/toc.json
-                - name: Angi prosjekttimeregistreringer
-                  href: ../fin-ops-core/fin-ops/hr/tasks/hr-enter-project-timesheets.md
-                - name: Masseansettelsesprosjekter
-                  href: ../human-resources/hr-personnel-mass-hire-projects.md?toc=/dynamics365/finance/toc.json
-                - name: Opprette et masseansettelsesprosjekt
-                  href: ../human-resources/hr-personnel-create-mass-hire-project.md?toc=/dynamics365/finance/toc.json
-                - name: Definere stillinger
-                  href: ../human-resources/hr-personnel-set-up-positions.md?toc=/dynamics365/finance/toc.json
-                - name: Definere informasjon om skade og sykdom
-                  href: ../human-resources/hr-personnel-set-up-injury-illness-information.md?toc=/dynamics365/finance/toc.json
-                - name: Vedlikeholde informasjon om ansattskade og -sykdom
-                  href: ../human-resources/hr-personnel-maintain-employee-injury-illness-information.md?toc=/dynamics365/finance/toc.json
-            - name: Rekruttere kandidater
-              items:
-                - name: Administrere rekrutteringsprosesser
-                  href: ../fin-ops-core/fin-ops/hr/manage-recruiting-process.md
-                - name: Masseansettelsesprosjekter
-                  href: ../human-resources/hr-personnel-mass-hire-projects.md
-                - name: Opprette masseansettelsesprosjekter
-                  href: ../human-resources/hr-personnel-create-mass-hire-project.md
-                - name: Angi søker- og søknadsdata manuelt
-                  href: ../fin-ops-core/fin-ops/hr/tasks/enter-applicant-application-data-manually.md
-                - name: Utvikle og åpne jobbrekvisisjoner
-                  href: ../fin-ops-core/fin-ops/hr/tasks/develop-open-job-requisition.md
-                - name: Definere stillinger
-                  href: ../human-resources/hr-personnel-set-up-positions.md
-                - name: Ansette kandidater via rekruttering
-                  href: ../fin-ops-core/fin-ops/hr/tasks/hire-candidate-through-recruiting.md
-                - name: Ansette en eksisterende ansatt via rekruttering
-                  href: ../fin-ops-core/fin-ops/hr/tasks/hire-existing-employee-through-recruiting.md
-                - name: Identifisere og distribuere verktøy for kandidatvalg
-                  href: ../fin-ops-core/fin-ops/hr/tasks/identify-deploy-candidate-selection-tools.md
-            - name: Konfigurere kompensasjonsplaner
-              items:
-                - name: Oversikt over kompensasjonsplaner
-                  href: ../human-resources/hr-compensation-overview.md?toc=/dynamics365/finance/toc.json
-                - name: Definere kompensasjonsrutenett
-                  href: ../human-resources/hr-compensation-grids.md?toc=/dynamics365/finance/toc.json
-                - name: Utvikle en struktur og plan for kompensasjon
-                  href: ../human-resources/hr-compensation-structure.md?toc=/dynamics365/finance/toc.json
-                - name: Opprette planer for fast kompensasjon
-                  href: ../human-resources/hr-compensation-fixed-plans.md?toc=/dynamics365/finance/toc.json
-                - name: Opprette variable kompensasjonsplaner
-                  href: ../human-resources/hr-compensation-variable-plans.md?toc=/dynamics365/finance/toc.json
-                - name: Registrere ansatte i en fast kompensasjonsplan
-                  href: ../human-resources/hr-compensation-enroll-employees-fixed.md?toc=/dynamics365/finance/toc.json
-                - name: Registrere ansatte i en variabel kompensasjonsplan
-                  href: ../human-resources/hr-compensation-enroll-employees-variable.md?toc=/dynamics365/finance/toc.json
-                - name: Definer kompensasjonsprosess og beregn resultater
-                  href: ../human-resources/hr-compensation-define-process.md?toc=/dynamics365/finance/toc.json
-                - name: Behandle kompensasjonsplaner
-                  href: ../human-resources/hr-compensation-process.md?toc=/dynamics365/finance/toc.json
-            - name: Administrer fordeler
-              items:
-                - name: Definer og administrer et fordelsprogram
-                  href: ../human-resources/hr-benefits-manage-program.md?toc=/dynamics365/finance/toc.json
-                - name: Policyer for fordelsrettighet
-                  href: ../human-resources/hr-benefits-eligibility-policies.md?toc=/dynamics365/finance/toc.json
-                - name: Fordelsrettighetsprosess
-                  href: ../human-resources/hr-benefits-eligibility-process.md?toc=/dynamics365/finance/toc.json
-                - name: Definere rettighetsregler og policyer for fordel
-                  href: ../human-resources/hr-benefits-define-eligibility-rules.md?toc=/dynamics365/finance/toc.json
-                - name: Levere et program for ansattfordeler
-                  href: ../human-resources/hr-benefits-deliver-employee-benefits-program.md?toc=/dynamics365/finance/toc.json
-                - name: Opprette nye fordeler
-                  href: ../human-resources/hr-benefits-create.md?toc=/dynamics365/finance/toc.json
-                - name: Registrere arbeidere i fordeler
-                  href: ../human-resources/hr-benefits-enroll-workers.md?toc=/dynamics365/finance/toc.json
-                - name: Administrere utløpsdatoer for fordel
-                  href: ../human-resources/hr-benefits-expiration-dates.md?toc=/dynamics365/finance/toc.json
-                - name: Generere ACA-rapporter
-                  href: ../human-resources/hr-benefits-aca-reports.md?toc=/dynamics365/finance/toc.json
-            - name: Utvikle ansatte
-              items:
-                - name: Oversikt over ytelsesstyring
-                  href: ../human-resources/hr-develop-performance-management-overview.md?toc=/dynamics365/finance/toc.json
-                - name: Justere kompetanser for arbeidsstyrke
-                  href: ../human-resources/hr-develop-skills.md?toc=/dynamics365/finance/toc.json
-                - name: Legg til i ytelsesjournalen
-                  href: ../human-resources/hr-develop-add-performance-journal.md?toc=/dynamics365/finance/toc.json
-                - name: Opprett et mål
-                  href: ../human-resources/hr-develop-create-goal.md?toc=/dynamics365/finance/toc.json
-                - name: Opprett en prestasjonsvurdering
-                  href: ../human-resources/hr-develop-create-performance-review.md?toc=/dynamics365/finance/toc.json
-            - name: Opprett kurs
-              items:
-                - name: Definere opplæringskurs
-                  href: ../human-resources/hr-learning-courses.md?toc=/dynamics365/finance/toc.json
-                - name: Oversikt over spørreskjemaer
-                  href: ../human-resources/hr-learning-questionnaires.md?toc=/dynamics365/finance/toc.json
-                - name: Utforme spørreskjemaer
-                  href: ../human-resources/hr-learning-design-questionnaires.md?toc=/dynamics365/finance/toc.json
-                - name: Distribuere og planlegge spørreskjemaer
-                  href: ../human-resources/hr-learning-distribute-questionnaires.md?toc=/dynamics365/finance/toc.json
-                - name: Distribuere spørreskjemaer ved hjelp av planlegging
-                  href: ../human-resources/hr-learning-distribute-questionnaires-scheduling.md?toc=/dynamics365/finance/toc.json
-                - name: Vis resultater av spørreskjema
-                  href: ../human-resources/hr-learning-evaluate-questionnaire-results.md?toc=/dynamics365/finance/toc.json
-                - name: Analysere resultater av spørreskjema
-                  href: ../human-resources/hr-learning-analyze-questionnaire-results.md?toc=/dynamics365/finance/toc.json
-                - name: Opprette et åpent spørsmål
-                  href: ../human-resources/hr-learning-create-open-ended-question.md?toc=/dynamics365/finance/toc.json
-                - name: Opprette et lukket spørsmål
-                  href: ../human-resources/hr-learning-create-closed-ended-question.md?toc=/dynamics365/finance/toc.json
-                - name: Opprette et avhengig spørsmål
-                  href: ../human-resources/hr-learning-depending-question.md?toc=/dynamics365/finance/toc.json
-            - name: Sikkerhet og overholdelse på arbeidsplassen (USA)
-              items:
-                - name: Verifisering av skjema I-9
-                  href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-form-i-9-verification.md
-                - name: Bekrefte ansettelsesrett ved hjelp av skjema I-9
-                  href: ../fin-ops-core/fin-ops/hr/localizations/tasks/employment-verification-i9-verification.md
-                - name: Definere dokumenttyper for skjema I-9
-                  href: ../fin-ops-core/fin-ops/hr/localizations/tasks/set-up-i9-document-types.md
-                - name: Overholde den amerikanske loven mot diskriminering av funksjonshemmede (Americans with Disabilities Act)
-                  href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-comply-ada.md
-                - name: Behandle arbeidertilpassinger
-                  href: ../fin-ops-core/fin-ops/hr/localizations/tasks/manage-worker-accommodations.md
         - name: Rapportering og Power BI-integreringer
           items:
             - name: Rapportering og analyse med Power BI
@@ -4005,6 +3855,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-format.md?toc=/dynamics365/finance/toc.json
                         - name: GetEnumValueByName
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-getenumvaluebyname.md?toc=/dynamics365/finance/toc.json
+                        - name: GetLabelText
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-getlabeltext.md?toc=/dynamics365/finance/toc.json
                         - name: GuidValue
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-guidvalue.md?toc=/dynamics365/finance/toc.json
                         - name: JsonValue
@@ -4189,11 +4041,13 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-parse-incoming-documents.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurere dataimport fra manuelt valgte filer
                   items:
-                    - name: Opprette konfigurasjoner for å importere data fra en ekstern XML-fil
+                    - name: Opprett konfigurasjoner for å importere data fra en ekstern XML-fil
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/dynamics365/finance/toc.json
-                - name: Konfigurere dataimport i satsvis modus fra SharePoint-plasserte filer
+                    - name: Importer data fra manuelt valgte filer i satsvis modus
+                      href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-batch.md?toc=/dynamics365/finance/toc.json
+                - name: Konfigurer dataimport i satsvis modus fra SharePoint-plasserte filer
                   href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/dynamics365/finance/toc.json
-                - name: Importere filer i XML-format
+                - name: Importer filer i XML-format
                   items:
                     - name: Importere filer i XML-format med valgfrie attributter
                       href: ../fin-ops-core/dev-itpro/analytics/rcs-optional-attributes.md?toc=/dynamics365/finance/toc.json
@@ -4267,11 +4121,13 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/dynamics365/finance/toc.json
                         - name: Tilordne modeller for å bruke finansdimensjoner
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/dynamics365/finance/toc.json
-                        - name: Utforme rapporter
+                        - name: Utform rapporter
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/dynamics365/finance/toc.json
-                        - name: Kjøre rapporter
+                        - name: Kjør rapporter
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/dynamics365/finance/toc.json
-                    - name: Bruke de genererte utdataene som en datakilde til å utføre opptelling og summering
+                    - name: Grupper poster og utfør opptelling og summering ved hjelp av GROUPBY-datakilder
+                      href: ../fin-ops-core/dev-itpro/analytics/er-groupby-data-sources.md?toc=/dynamics365/finance/toc.json
+                    - name: Bruk de genererte utdataene som en datakilde til å utføre opptelling og summering
                       items:
                         - name: Opprette formater
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/dynamics365/finance/toc.json
@@ -4411,18 +4267,20 @@
                   href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/dynamics365/finance/toc.json
                 - name: API-endringer
                   items:
-                    - name: Application update 7.3
+                    - name: Programoppdatering 7.3
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/finance/toc.json
-                    - name: Application update 10.0.11
+                    - name: Programoppdatering 10.0.11
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/finance/toc.json
-                    - name: Application update 10.0.17
+                    - name: Programoppdatering 10.0.17
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?toc=/dynamics365/finance/toc.json
-                    - name: Application update 10.0.19
+                    - name: Programoppdatering 10.0.19
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/finance/toc.json
-                    - name: Application update 10.0.21
+                    - name: Programoppdatering 10.0.21
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/finance/toc.json
-                    - name: Application update 10.0.23
+                    - name: Programoppdatering 10.0.23
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-23.md?toc=/dynamics365/finance/toc.json
+                    - name: Programoppdatering 10.0.25
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-25.md?toc=/dynamics365/finance/toc.json
                 - name: Angi en egendefinert lagerplassering for genererte dokumenter
                   items:
                     - name: Abonnere på en hendelse for å be om svar fra abonnementsbehandlingen
@@ -4487,7 +4345,7 @@
               href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/finance/toc.json
             - name: Tilpass menyen Åpne i Microsoft Office
               href: ../fin-ops-core/dev-itpro/office-integration/customize-open-office-menu.md?toc=/dynamics365/finance/toc.json
-            - name: Konfigurere og sende e-post
+            - name: Konfigurer og send e-post
               href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/finance/toc.json
             - name: Utvikle e-posterfaringer
               href: ../fin-ops-core/dev-itpro/dev-tools/sysmailer-develop.md?toc=/dynamics365/finance/toc.json
@@ -4627,9 +4485,9 @@
                   href: ../fin-ops-core/dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/dynamics365/finance/toc.json
                 - name: Bruke en postmal til å opprette en ny post
                   href: ../fin-ops-core/dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/dynamics365/finance/toc.json
-            - name: Konfigurere dokumentstyring
+            - name: Konfigurer dokumentstyring
               href: ../fin-ops-core/fin-ops/organization-administration/configure-document-management.md?toc=/dynamics365/finance/toc.json
-            - name: Konfigurere og sende e-post
+            - name: Konfigurer og send e-post
               href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/finance/toc.json
             - name: Dato-/klokkeslettdata og tidssoner
               href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/finance/toc.json
@@ -4753,9 +4611,11 @@
                   href: ../fin-ops-core/dev-itpro/financial/create-exchange-rate-8.md
             - name: 'Utligne transaksjoner ved hjelp av CustTrans::settleTransaction'
               href: ../fin-ops-core/dev-itpro/financial/settletransact-obsolete.md
-    - name: Utvikling og administrasjon for Finance and Operations-apper
+    - name: Utvikling og administrasjon for økonomi- og driftsapper
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Supply Chain Management
       href: ../supply-chain/index.md
     - name: Dynamics 365 Commerce
       href: ../commerce/index.md
+    - name: Dynamics 365 Human Resources
+      href: ../human-resources/index.md

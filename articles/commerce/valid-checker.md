@@ -2,7 +2,7 @@
 title: Valider butikktransaksjoner for utdragsberegning
 description: Dette emnet beskriver funksjonaliteten for validering av butikktransaksjoner i Microsoft Dynamics 365 Commerce.
 author: analpert
-ms.date: 12/15/2021
+ms.date: 01/31/2022
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: analpert
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 008368ae32aa92682d578b75b148e0587fcc94e0
-ms.sourcegitcommit: 70ac76be31bab7ed5e93f92f4683e65031fbdf85
+ms.openlocfilehash: f51b1f39aa212fe8587761721194db7791bec5bc
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: nb-NO
-ms.lasthandoff: 12/16/2021
-ms.locfileid: "7924777"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087455"
 ---
 # <a name="validate-store-transactions-for-statement-calculation"></a>Valider butikktransaksjoner for utdragsberegning
 
@@ -51,7 +51,7 @@ Partiprosessen **Valider butikktransaksjoner** kontrollerer konsekvensen i hande
 
 Tabellen nedenfor viser valideringsreglene for transaksjonstopptekst som blir kontrollert mot toppteksten til handelstransaksjoner, før disse transaksjonene sendes til utdragspostering.
 
-| Tittel | Beskrivelse |
+| Regel | Beskrivelse |
 |-------|-------------|
 | Forretningsdato | Denne regelen validerer at forretningsdatoen for transaksjonen er knyttet til en åpen regnskapsperiode i finans. |
 | Valutaavrunding | Denne regelen validerer at transaksjonsbeløpene avrundes i henhold til avrundingsregelen for valuta. |
@@ -72,7 +72,7 @@ Tabellen nedenfor viser valideringsreglene for transaksjonstopptekst som blir ko
 
 Tabellen nedenfor viser valideringsreglene for transaksjonslinje som blir kontrollert mot linjedetaljene til handelstransaksjoner, før disse transaksjonene sendes til utdragspostering.
 
-| Tittel | Beskrivelse |
+| Regel | Beskrivelse |
 |-------|-------------|
 | Strekkode | Denne regelen validerer at alle varestrekkodene som brukes på transaksjonslinjene, finnes i databasen. |
 | Gebyrlinjer | Denne regelen validerer at summen av det beregnede beløpet og det fritatte avgiftsbeløpet på gebyrlinjene er lik det opprinnelige beregnede beløpet. |

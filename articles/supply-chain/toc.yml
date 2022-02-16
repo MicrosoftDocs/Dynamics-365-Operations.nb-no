@@ -12,6 +12,8 @@
               items:
                 - name: Nyheter eller endringer på startsiden for Supply Chain Management
                   href: get-started/whats-new-home-page.md
+                - name: Supply Chain Management 10.0.25 (april 2022)
+                  href: get-started/whats-new-scm-10-0-25.md
                 - name: Supply Chain Management 10.0.24 (februar 2022)
                   href: get-started/whats-new-scm-10-0-24.md
                 - name: Supply Chain Management 10.0.23 (januar 2022)
@@ -98,12 +100,10 @@
                   href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Oppgaveregistrering
                   href: ../fin-ops-core/dev-itpro/user-interface/task-recorder.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Lage dokumentasjon eller opplæring med Oppgaveregistrering
+                - name: Lag dokumentasjon eller opplæring med oppgaveopptaker
                   href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Videoer
                   href: ../fin-ops-core/fin-ops/get-started/videos.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Ordliste
-                  href: ../fin-ops-core/fin-ops/get-started/glossary.md?toc=/dynamics365/supply-chain/toc.json
             - name: Læringskatalog
               items:
                 - name: Startside for læringskatalog
@@ -166,7 +166,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Endre datoen for en økt
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/change-date-session.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Angi en brukers foretrukkede tidssone
+                - name: Angi en brukers foretrukne tidssone
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Forstå Lifecycle Services
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/fin-and-ops/toc.json?toc=/dynamics365/supply-chain/toc.json
@@ -306,8 +306,10 @@
               href: cloud-edge/cloud-edge-edge-scale-units-lbd.md
             - name: Skalaenheter for sky og kant for arbeidsbelastninger for produksjonsutførelse
               href: cloud-edge/cloud-edge-workload-manufacturing.md
-            - name: Skalaenheter for sky og kant for arbeidsbelastninger for Lagerstyring
+            - name: Skalaenheter for sky og kant for arbeidsbelastninger for lagerstyring
               href: cloud-edge/cloud-edge-workload-warehousing.md
+            - name: Konfigurer Warehouse Management-mobilappen for skalaenheter for sky og kant
+              href: cloud-edge/cloud-edge-workload-setup-warehouse-app.md
             - name: Lagerordrer for skalaenheter for sky og kant
               href: cloud-edge/cloud-edge-warehouse-order.md
             - name: Lagerbeholdningsjustering
@@ -1231,11 +1233,13 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-parse-incoming-documents.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Konfigurere dataimport fra manuelt valgte filer
                   items:
-                    - name: Opprette konfigurasjoner for å importere data fra en ekstern XML-fil
+                    - name: Opprett konfigurasjoner for å importere data fra en ekstern XML-fil
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Konfigurere dataimport i satsvis modus fra SharePoint-plasserte filer
+                    - name: Importer data fra manuelt valgte filer i satsvis modus
+                      href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-batch.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurer dataimport i satsvis modus fra SharePoint-plasserte filer
                   href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Importere filer i XML-format
+                - name: Importer filer i XML-format
                   items:
                     - name: Importere filer i XML-format med valgfrie attributter
                       href: ../fin-ops-core/dev-itpro/analytics/rcs-optional-attributes.md?toc=/dynamics365/supply-chain/toc.json
@@ -1309,11 +1313,11 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Tilordne modeller for å bruke finansdimensjoner
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Utforme rapporter
+                        - name: Utform rapporter
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Kjøre rapporter
+                        - name: Kjør rapporter
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Bruke de genererte utdataene som en datakilde til å utføre opptelling og summering
+                    - name: Bruk de genererte utdataene som en datakilde til å utføre opptelling og summering
                       items:
                         - name: Opprette formater
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/dynamics365/supply-chain/toc.json
@@ -1451,16 +1455,20 @@
                   href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/dynamics365/supply-chain/toc.json
                 - name: API-endringer
                   items:
-                    - name: Application update 7.3
+                    - name: Programoppdatering 7.3
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Application update 10.0.11
+                    - name: Programoppdatering 10.0.11
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Application update 10.0.17
+                    - name: Programoppdatering 10.0.17
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Application update 10.0.19
+                    - name: Programoppdatering 10.0.19
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Application update 10.0.21
+                    - name: Programoppdatering 10.0.21
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Programoppdatering 10.0.23
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-23.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Programoppdatering 10.0.25
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-25.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Angi en egendefinert lagerplassering for genererte dokumenter
                   items:
                     - name: Abonnere på en hendelse for å be om svar fra abonnementsbehandlingen
@@ -1691,13 +1699,17 @@
                   href: master-planning/planning-optimization/approved-planned-order.md
                 - name: Autoriser planlagte ordrer
                   href: master-planning/planning-optimization/planned-order-firming.md
+                - name: Planlagte ordrer forenklet
+                  href: master-planning/planning-optimization/planned-orders-simplified.md
                 - name: Planlegging med negative lagerbeholdningsantall
                   href: master-planning/planning-optimization/negative-on-hand.md
                 - name: Vis planhistorikk og planleggingslogger
                   href: master-planning/planning-optimization/plan-history-logs.md
-                - name: Avbryte en planleggingsjobb
+                - name: Avbryt en planleggingsjobb
                   href: master-planning/planning-optimization/cancel-planning-job.md
-                - name: Feilsøke planleggingsoptimalisering
+                - name: Handlingsmeldinger
+                  href: master-planning/action-messages.md
+                - name: Feilsøk planleggingsoptimalisering
                   href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
                 - name: Utvidelse av planleggingsoptimalisering
                   href: master-planning/planning-optimization/extensibility.md
@@ -1729,13 +1741,11 @@
                   href: master-planning/cancel-master-planning-job.md
                 - name: Bruk sporing for nedbryting
                   href: master-planning/trace-explosion.md
-                - name: Handlingsmeldinger
-                  href: master-planning/action-messages.md
-                - name: Overvåke en kjøring av hovedplanlegging
+                - name: Overvåk en kjøring av hovedplanlegging
                   href: master-planning/tasks/monitor-master-planning-run.md
-                - name: Opprette en tidsplan for et område
+                - name: Opprett en tidsplan for et område
                   href: master-planning/tasks/create-schedule-site.md
-                - name: Opprette en plan for et område
+                - name: Opprett en plan for et område
                   href: master-planning/tasks/create-plan-site.md
                 - name: Kalendere og hovedplanlegging
                   href: master-planning/supply-chain-calendars-master-planning.md
@@ -1851,7 +1861,7 @@
               href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/supply-chain/toc.json
             - name: Tilpass menyen Åpne i Microsoft Office
               href: ../fin-ops-core/dev-itpro/office-integration/customize-open-office-menu.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Konfigurere og sende e-post
+            - name: Konfigurer og send e-post
               href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/supply-chain/toc.json
             - name: Utvikle e-posterfaringer
               href: ../fin-ops-core/dev-itpro/dev-tools/sysmailer-develop.md?toc=/dynamics365/supply-chain/toc.json
@@ -1993,9 +2003,9 @@
                   href: ../fin-ops-core/dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Bruke en postmal til å opprette en ny post
                   href: ../fin-ops-core/dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Konfigurere dokumentstyring
+            - name: Konfigurer dokumentstyring
               href: ../fin-ops-core/fin-ops/organization-administration/configure-document-management.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Konfigurere og sende e-post
+            - name: Konfigurer og send e-post
               href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/supply-chain/toc.json
             - name: Dato-/klokkeslettdata og tidssoner
               href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/supply-chain/toc.json
@@ -3763,6 +3773,8 @@
                       href: troubleshooting/warehousing/certification-path-app-connection-error.md
                     - name: Klareringsanker for sertifiseringsbane ble ikke funnet under oppdatering og overføring til WMS
                       href: troubleshooting/warehousing/upgrade-migration-certification-path-error.md
+                - name: Behandlingsproblemer oppstår etter installasjon av arbeidsmengde for storskalaenhetslager
+                  href: troubleshooting/warehousing/Scale-unit-warehouse-workload-installation-issues.md
                 - name: Automatisk reserveringsledetekst for partinummer vises også med tilgjengelig lager
                   href: troubleshooting/warehousing/auto-reservation-prompt-shown.md
                 - name: Plukkarbeid kan ikke oppheves på grunn av uferdig etterfyllingsarbeid
@@ -3901,9 +3913,11 @@
                   href: troubleshooting/warehousing/work-remains-blocked.md
                 - name: Du kan ikke annullere arbeid som er på en bruker
                   href: troubleshooting/warehousing/you-cannot-cancel-wo.md
-    - name: Utvikling og administrasjon for Finance and Operations-apper
+    - name: Utvikling og administrasjon for økonomi- og driftsapper
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Finance
       href: ../finance/index.md
     - name: Dynamics 365 Commerce
       href: ../commerce/index.md
+    - name: Dynamics 365 Human Resources
+      href: ../human-resources/index.md
